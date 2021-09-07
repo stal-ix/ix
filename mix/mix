@@ -1,0 +1,27 @@
+#!/usr/bin/env python3
+
+import os
+import sys
+import traceback
+
+sys.dont_write_bytecode = True
+sys.excepthook = traceback.print_exception
+
+import core.main as cm
+import core.error as ce
+
+
+def main():
+    try:
+        cm.main(sys.argv[1:], os.path.normpath(os.path.abspath(__file__)))
+    except ce.Error as e:
+        print(str(e))
+
+        return 1
+    except KeyboardInterrupt:
+        return 1
+
+    return 0
+
+
+sys.exit(main())

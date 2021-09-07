@@ -1,0 +1,46 @@
+diff --git a/mesonbuild/compilers/mixins/clike.py b/mesonbuild/compilers/mixins/clike.py
+index 70dde60..8862b18 100644
+--- a/mesonbuild/compilers/mixins/clike.py
++++ b/mesonbuild/compilers/mixins/clike.py
+@@ -94,8 +94,9 @@ class CLikeCompilerArgs(arglist.CompilerArgs):
+                     group_start = i
+             if group_start >= 0:
+                 # Last occurrence of a library
+-                new.insert(group_end + 1, '-Wl,--end-group')
+-                new.insert(group_start, '-Wl,--start-group')
++                # new.insert(group_end + 1, '-Wl,--end-group')
++                # new.insert(group_start, '-Wl,--start-group')
++                pass
+         # Remove system/default include paths added with -isystem
+         default_dirs = self.compiler.get_default_include_dirs()
+         if default_dirs:
+diff --git a/mesonbuild/linkers.py b/mesonbuild/linkers.py
+index acb2c44..18e47f0 100644
+--- a/mesonbuild/linkers.py
++++ b/mesonbuild/linkers.py
+@@ -598,7 +598,7 @@ class GnuLikeDynamicLinkerMixin:
+         m = env.machines[self.for_machine]
+         if m.is_windows() or m.is_cygwin():
+             return self._apply_prefix('--export-all-symbols')
+-        return self._apply_prefix('-export-dynamic')
++        return self._apply_prefix('-export_dynamic')
+ 
+     def import_library_args(self, implibname: str) -> T.List[str]:
+         return self._apply_prefix('--out-implib=' + implibname)
+@@ -617,6 +617,7 @@ class GnuLikeDynamicLinkerMixin:
+     def get_soname_args(self, env: 'Environment', prefix: str, shlib_name: str,
+                         suffix: str, soversion: str, darwin_versions: T.Tuple[str, str],
+                         is_shared_module: bool) -> T.List[str]:
++        return []
+         m = env.machines[self.for_machine]
+         if m.is_windows() or m.is_cygwin():
+             # For PE/COFF the soname argument has no effect
+@@ -819,7 +820,7 @@ class LLVMDynamicLinker(GnuLikeDynamicLinkerMixin, PosixDynamicLinkerMixin, Dyna
+ 
+         # Some targets don't seem to support this argument (windows, wasm, ...)
+         _, _, e = mesonlib.Popen_safe(self.exelist + self._apply_prefix('--allow-shlib-undefined'))
+-        self.has_allow_shlib_undefined = not ('unknown argument: --allow-shlib-undefined' in e)
++        self.has_allow_shlib_undefined = not ('--allow-shlib-undefined' in e)
+ 
+     def get_allow_undefined_args(self) -> T.List[str]:
+         if self.has_allow_shlib_undefined:

@@ -1,0 +1,26 @@
+diff --git a/SConstruct b/SConstruct
+index 4358a23..ea768e2 100644
+--- a/SConstruct
++++ b/SConstruct
+@@ -163,9 +163,9 @@ env.Append(BUILDERS = {
+               suffix='.def', src_suffix='.h')
+   })
+ 
+-match = re.search('SERF_MAJOR_VERSION ([0-9]+).*'
+-                  'SERF_MINOR_VERSION ([0-9]+).*'
+-                  'SERF_PATCH_VERSION ([0-9]+)',
++match = re.search(b'SERF_MAJOR_VERSION ([0-9]+).*'
++                  b'SERF_MINOR_VERSION ([0-9]+).*'
++                  b'SERF_PATCH_VERSION ([0-9]+)',
+                   env.File('serf.h').get_contents(),
+                   re.DOTALL)
+ MAJOR, MINOR, PATCH = [int(x) for x in match.groups()]
+@@ -183,7 +183,7 @@ CALLOUT_OKAY = not (env.GetOption('clean') or env.GetOption('help'))
+ 
+ unknown = opts.UnknownVariables()
+ if unknown:
+-  print 'Warning: Used unknown variables:', ', '.join(unknown.keys())
++  print('Warning: Used unknown variables:', ', '.join(unknown.keys()))
+ 
+ apr = str(env['APR'])
+ apu = str(env['APU'])

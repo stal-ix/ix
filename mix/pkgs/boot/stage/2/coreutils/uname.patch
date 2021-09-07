@@ -1,0 +1,14 @@
+diff --git a/src/uname.c b/src/uname.c
+index 4065bf2..6782c7a 100644
+--- a/src/uname.c
++++ b/src/uname.c
+@@ -338,6 +338,9 @@ main (int argc, char **argv)
+ # endif
+         }
+ #endif
++      if (strcmp(element, "arm64") == 0) {
++        element = "aarch64";
++      }
+       if (! (toprint == UINT_MAX && element == unknown))
+         print_element (element);
+     }

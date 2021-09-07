@@ -1,0 +1,78 @@
+diff --git a/SConstruct b/SConstruct
+index ea768e2..b985841 100644
+--- a/SConstruct
++++ b/SConstruct
+@@ -8,9 +8,9 @@
+ #    to you under the Apache License, Version 2.0 (the
+ #    "License"); you may not use this file except in compliance
+ #    with the License.  You may obtain a copy of the License at
+-# 
++#
+ #      http://www.apache.org/licenses/LICENSE-2.0
+-# 
++#
+ #    Unless required by applicable law or agreed to in writing,
+ #    software distributed under the License is distributed on an
+ #    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+@@ -116,7 +116,7 @@ opts.AddVariables(
+   RawListVariable('LINKFLAGS', "Extra flags for the linker (space-separated)",
+                   None),
+   RawListVariable('CPPFLAGS', "Extra flags for the C preprocessor "
+-                  "(space separated)", None), 
++                  "(space separated)", None),
+   )
+ 
+ if sys.platform == 'win32':
+@@ -158,7 +158,7 @@ env = Environment(variables=opts,
+                   )
+ 
+ env.Append(BUILDERS = {
+-    'GenDef' : 
++    'GenDef' :
+       Builder(action = sys.executable + ' build/gen_def.py $SOURCES > $TARGET',
+               suffix='.def', src_suffix='.h')
+   })
+@@ -290,7 +290,6 @@ if sys.platform == 'win32':
+ SOURCES = Glob('*.c') + Glob('buckets/*.c') + Glob('auth/*.c')
+ 
+ lib_static = env.StaticLibrary(LIBNAMESTATIC, SOURCES)
+-lib_shared = env.SharedLibrary(LIBNAME, SOURCES + SHARED_SOURCES)
+ 
+ if aprstatic:
+   env.Append(CPPDEFINES=['APR_DECLARE_STATIC', 'APU_DECLARE_STATIC'])
+@@ -404,7 +403,7 @@ pkgconfig = env.Textfile('serf-%d.pc' % (MAJOR,),
+                                                        env.get('GSSAPI_LIBS', '')),
+                            })
+ 
+-env.Default(lib_static, lib_shared, pkgconfig)
++env.Default(lib_static, pkgconfig)
+ 
+ if CALLOUT_OKAY:
+   conf = Configure(env)
+@@ -417,25 +416,8 @@ if CALLOUT_OKAY:
+ # INSTALLATION STUFF
+ 
+ install_static = env.Install(libdir, lib_static)
+-install_shared = env.InstallVersionedLib(libdir, lib_shared)
+ 
+-if sys.platform == 'darwin':
+-  # Change the shared library install name (id) to its final name and location.
+-  # Notes:
+-  # If --install-sandbox=<path> is specified, install_shared_path will point
+-  # to a path in the sandbox. We can't use that path because the sandbox is
+-  # only a temporary location. The id should be the final target path.
+-  # Also, we shouldn't use the complete version number for id, as that'll
+-  # make applications depend on the exact major.minor.patch version of serf.
+-
+-  install_shared_path = install_shared[0].abspath
+-  target_install_shared_path = os.path.join(libdir, '%s.dylib' % LIBNAME)
+-  env.AddPostAction(install_shared, ('install_name_tool -id %s %s'
+-                                     % (target_install_shared_path,
+-                                        install_shared_path)))
+-
+-env.Alias('install-lib', [install_static, install_shared,
+-                          ])
++env.Alias('install-lib', [install_static])
+ env.Alias('install-inc', env.Install(incdir, HEADER_FILES))
+ env.Alias('install-pc', env.Install(os.path.join(libdir, 'pkgconfig'),
+                                     pkgconfig))

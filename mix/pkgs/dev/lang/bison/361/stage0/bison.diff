@@ -1,0 +1,89 @@
+--- parse-gram.y	2021-06-23 01:27:08.000000000 +0300
++++ src/parse-gram.y	2021-06-23 01:29:21.000000000 +0300
+@@ -125,7 +125,7 @@
+ %define api.token.raw
+ %define api.value.type union
+ %define locations
+-%define parse.error custom
++//%define parse.error custom
+ %define parse.lac full
+ %define parse.trace
+ %defines
+@@ -141,8 +141,8 @@
+ }
+ 
+ %token
+-  STRING              _("string")
+-  TSTRING             _("translatable string")
++  STRING              "string"
++  TSTRING             "translatable string"
+ 
+   PERCENT_TOKEN       "%token"
+   PERCENT_NTERM       "%nterm"
+@@ -188,18 +188,18 @@
+ 
+   BRACED_CODE       "{...}"
+   BRACED_PREDICATE  "%?{...}"
+-  BRACKETED_ID      _("[identifier]")
+-  CHAR              _("character literal")
++  BRACKETED_ID      "[identifier]"
++  CHAR              "character literal"
+   COLON             ":"
+-  EPILOGUE          _("epilogue")
++  EPILOGUE          "epilogue"
+   EQUAL             "="
+-  ID                _("identifier")
+-  ID_COLON          _("identifier:")
++  ID                "identifier"
++  ID_COLON          "identifier:"
+   PERCENT_PERCENT   "%%"
+   PIPE              "|"
+   PROLOGUE          "%{...%}"
+   SEMICOLON         ";"
+-  TAG               _("<tag>")
++  TAG               "<tag>"
+   TAG_ANY           "<*>"
+   TAG_NONE          "<>"
+ 
+@@ -224,7 +224,7 @@
+ %printer { fprintf (yyo, "%%%s", $$); } PERCENT_FLAG
+ %printer { fprintf (yyo, "<%s>", $$); } TAG tag
+ 
+-%token <int> INT _("integer literal")
++%token <int> INT "integer literal"
+ %printer { fprintf (yyo, "%d", $$); } <int>
+ 
+ %type <symbol*> id id_colon string_as_id symbol token_decl token_decl_for_prec
+@@ -797,32 +797,6 @@
+ 
+ %%
+ 
+-int
+-yyreport_syntax_error (const yypcontext_t *ctx)
+-{
+-  int res = 0;
+-  /* Arguments of format: reported tokens (one for the "unexpected",
+-     one per "expected"). */
+-  enum { ARGS_MAX = 5 };
+-  const char *argv[ARGS_MAX];
+-  int argc = 0;
+-  yysymbol_kind_t unexpected = yypcontext_token (ctx);
+-  if (unexpected != YYSYMBOL_YYEMPTY)
+-    {
+-      argv[argc++] = yysymbol_name (unexpected);
+-      yysymbol_kind_t expected[ARGS_MAX - 1];
+-      int nexpected = yypcontext_expected_tokens (ctx, expected, ARGS_MAX - 1);
+-      if (nexpected < 0)
+-        res = nexpected;
+-      else
+-        for (int i = 0; i < nexpected; ++i)
+-          argv[argc++] = yysymbol_name (expected[i]);
+-    }
+-  syntax_error (*yypcontext_location (ctx), argc, argv);
+-  return res;
+-}
+-
+-
+ /* Return the location of the left-hand side of a rule whose
+    right-hand side is RHS[1] ... RHS[N].  Ignore empty nonterminals in
+    the right-hand side, and return an empty location equal to the end
