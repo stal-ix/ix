@@ -1,10 +1,10 @@
-# url https://github.com/pg83/zm/archive/bbb08bb69488750d2fe90a9c5a34cf1813abc495.zip
-# md5 3a0a43051a644fa3a3e48d17fb97bcef
+# url https://github.com/pg83/ted/archive/3c3f54a69b806bd7eb96f4c56189ce2a7f0507c5.zip
+# md5 qw
 # lib dev/lang/python3 pypi/pygments shell/dash/minimal
 # dep env/std
 
 build() {
-    $untar $src/*.zip && mv zm*/ted $out/ && cd $out
+    $untar $src/*.zip && mv ted* $out/ted && cd $out
 
     mkdir bin && cd bin
 
