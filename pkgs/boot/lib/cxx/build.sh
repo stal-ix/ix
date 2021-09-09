@@ -1,6 +1,6 @@
 $untar $src/llvm* && cd llvm* && cd libcxx
 
-CXXFLAGS="-w $CPPFLAGS -D_LIBCPP_BUILDING_LIBRARY -D_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER -iquote src -I$out/include -DLIBCXXRT -std=c++14 $CXXFLAGS"
+CPPFLAGS="-w -D_LIBCPP_BUILDING_LIBRARY -D_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER -iquote src -I$out/include -DLIBCXXRT -std=c++14 $CPPFLAGS"
 
 cp -R include $out
 
@@ -19,7 +19,7 @@ SRCS2=$(ls src/filesystem/*.cpp)
 (
 for s in $SRCS1 $SRCS2; do
     out=$(echo $s | tr '/' '_' | tr -d '\n').o
-    g++ $CXXFLAGS -c $s -o obj/$out
+    g++ $CPPFLAGS $CFLAGS $CXXFLAGS -c $s -o obj/$out
 done
 )
 

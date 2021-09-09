@@ -6,7 +6,9 @@
 build() {
     $untar $src/libidn2* && cd libidn2*
 
+{% if mix.platform.target.os == 'darwin' %}
     export CPPFLAGS="-Derror=idna2_error $CPPFLAGS"
+{% endif %}
 
     dash ./configure $COFLAGS --prefix=$out
     make -j $make_thrs

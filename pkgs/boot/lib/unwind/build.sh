@@ -1,8 +1,8 @@
 $untar $src/llvm* && cd llvm* && cd libunwind
 
-COMMON="-I./src -I./include -D_LIBUNWIND_HAS_COMMENT_LIB_PRAGMA -funwind-tables -D_DEBUG -D_LIBUNWIND_IS_NATIVE_ONLY $CPPFLAGS"
-CXXFLAGS="$COMMON -std=c++11 -fstrict-aliasing -fno-exceptions -fno-rtti $CXXFLAGS"
-CFLAGS="$COMMON -std=c99 $CFLAGS"
+export CPPFLAGS="-I./src -I./include -D_LIBUNWIND_HAS_COMMENT_LIB_PRAGMA -funwind-tables -D_DEBUG -D_LIBUNWIND_IS_NATIVE_ONLY $CPPFLAGS"
+export CXXFLAGS="-std=c++11 -fstrict-aliasing -fno-exceptions -fno-rtti $CXXFLAGS"
+export CFLAGS="-std=c99 $CFLAGS"
 
 mkdir obj
 
@@ -11,11 +11,11 @@ c_srcs=$(ls src/*.c)
 asm_srcs=$(ls src/*.S)
 
 for s in $cxx_src; do
-    g++ $CXXFLAGS -c $s -o obj/$(basename $s).o
+    g++ $CPPFLAGS $CFLAGS $CXXFLAGS -c $s -o obj/$(basename $s).o
 done
 
 for s in $c_srcs $asm_srcs; do
-    gcc $CFLAGS -c $s -o obj/$(basename $s).o
+    gcc $CPPFLAGS $CFLAGS -c $s -o obj/$(basename $s).o
 done
 
 ar q obj/libunwind.a obj/*.o

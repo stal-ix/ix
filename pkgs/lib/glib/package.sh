@@ -1,12 +1,15 @@
 # url https://download-fallback.gnome.org/sources/glib/2.68/glib-2.68.4.tar.xz
 # md5 07ba0e946bf6dcad36388675d2f2876f
 # lib lib/z lib/pcre lib/iconv lib/ffi lib/intl
+{% if mix.platform.target.os == 'darwin' %}
 # lib sys/framework/CoreServices sys/framework/Foundation
+{% endif %}
 # dep dev/build/meson boot/final/pkg-config env/std
 
 build() {
     $untar $src/glib* && cd glib*
 
+    ln -s $(which dash) sh
     export CPPFLAGS="-w -D_GNU_SOURCE=1 -I$(pwd)/inc $CPPFLAGS"
 
     setup_compiler
@@ -15,11 +18,15 @@ build() {
     echo 'int main() {}' > tests/cxx-test.cpp
 
     meson \
+        --libdir "$out/lib" \
         -Ddefault_library=static \
         -Dprefix=$out \
+        _build \
+{% if mix.platform.target.os == 'darwin' %}
         -Db_asneeded=false \
         -Db_lundef=false \
-        _build
+{% endif %}
+
 
     (
         cd _build

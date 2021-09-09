@@ -5,6 +5,9 @@
 build() {
     $untar $src/perl* && cd perl*
 
+    # too much warnings with clang
+    export CPPFLAGS="-w $CPPFLAGS"
+
     echo > empty.c
     gcc -c empty.c -o empty.o
     ar q libdl.a empty.o
@@ -29,8 +32,8 @@ EOF
         -Uusesfio \
         -Duseshrplib=false \
         -Dusedl=false \
-        -Dcc=gcc \
-        -Duserelocatableinc
+        -Dcc=gcc
+#        -Duserelocatableinc
 
     make -j $make_thrs
     make install

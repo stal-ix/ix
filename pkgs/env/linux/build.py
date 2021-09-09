@@ -5,6 +5,7 @@ out = os.environ['out']
 
 data = r'''
 export CPPFLAGS="-isystem {sdk}/include $CPPFLAGS"
+export CFLAGS="-fPIC $CFLAGS"
 export LDFLAGS="-L{sdk}/lib $LDFLAGS"
 '''.format(sdk=out)
 

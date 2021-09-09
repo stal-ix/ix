@@ -20,6 +20,10 @@ dash ./configure $COFLAGS \
 
 make -j $make_thrs
 
+if test -f python; then
+    ln -s python python.exe
+fi
+
 ./python.exe ./fix.py patch ./setup.py
 DUMP=1 ./python.exe ./setup.py build > data.json
 ./python.exe ./fix.py ./data.json > Modules/Setup.local

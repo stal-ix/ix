@@ -10,8 +10,14 @@ build() {
 
     setup_compiler
 
+    PLATFORM_darwin_arm64="darwin64-arm64-cc"
+    PLATFORM_darwin_x86_64="darwin64-x86_64-cc"
+    PLATFORM_linux_x86_64="linux-x86_64-clang"
+
+    PLATFORM=$PLATFORM_{{mix.platform.target.os}}_{{mix.platform.target.arch}}
+
     perl ./Configure \
-        {{mix.platform.target.os}}{{mix.platform.target.bits}}-{{mix.platform.target.arch}}-cc \
+        $PLATFORM \
         no-asm \
         threads \
         no-shared \
@@ -30,6 +36,9 @@ export OPENSSL_INCLUDES="-I$out/include"
 export OPENSSL_LIBS="-L$out/lib -lssl -lcrypto"
 export OPENSSL_DIR="$out"
 export CPPFLAGS="\$OPENSSL_INCLUDES \$CPPFLAGS"
+{% if mix.platform.target.os == 'linux' %}
+export LDFLAGS="-lpthread \$LDFLAGS"
+{% endif %}
 export LDFLAGS="\$OPENSSL_LIBS \$LDFLAGS"
 export PKG_CONFIG_PATH="$out/lib/pkgconfig:\$PKG_CONFIG_PATH"
 export CMFLAGS="-DOPENSSL_ROOT_DIR=$out -DOPENSSL_INCLUDE_DIR=$out/include \$CMFLAGS"

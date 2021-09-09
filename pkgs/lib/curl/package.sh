@@ -1,6 +1,9 @@
 # url https://github.com/curl/curl/releases/download/curl-7_78_0/curl-7.78.0.tar.xz
 # md5 419c2461366cf404160a820f7a902b7e
-# lib lib/z lib/idn2 lib/zstd lib/brotli lib/nghttp2 lib/openssl sys/framework/SystemConfiguration
+# lib lib/z lib/idn2 lib/zstd lib/brotli lib/nghttp2 lib/openssl
+{% if mix.platform.target.os == 'darwin' %}
+# lib sys/framework/SystemConfiguration
+{% endif %}
 # dep dev/build/make dev/build/pkg-config env/std
 
 build() {
