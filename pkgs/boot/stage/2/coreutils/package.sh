@@ -16,6 +16,7 @@ build() {
     PATH="$(pwd)/src:$PATH"
     make LN_S=ln -j $make_thrs
 
+{% if mix.platform.target.os == 'darwin' %}
     (
         cd src
 
@@ -25,5 +26,7 @@ EOF
     )
 
     make
+{% endif %}
+
     make install
 }

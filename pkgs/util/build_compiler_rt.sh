@@ -4,7 +4,7 @@ build() {
     $untar $src/llvm* && cd llvm* && cd compiler-rt
 
     for x in lib/builtins/*.c; do
-        clang $CPPFLAGS $CFLAGS -c $x
+        clang $CPPFLAGS $CFLAGS -c $x || true
     done
 
     ar q libcompiler_rt.a *.o

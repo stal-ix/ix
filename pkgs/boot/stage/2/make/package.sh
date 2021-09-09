@@ -4,7 +4,8 @@
 build() {
     $untar $src/make-* && cd make-*
 
-    export CPPFLAGS="-I./glob -Dglob=make_glob -Dglobfree=make_globfree -Dfnmatch=make_fnmatch $CPPFLAGS"
+    export CPPFLAGS="-I./glob $CPPFLAGS"
+    #export CPPFLAGS="-Dglob=make_glob -Dglobfree=make_globfree -Dfnmatch=make_fnmatch $CPPFLAGS"
 
     dash ./configure $COFLAGS \
         --prefix=$out \

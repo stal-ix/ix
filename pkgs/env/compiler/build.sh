@@ -1,12 +1,12 @@
 setup_compiler() {
     cat << EOF > clang
 #!$(which dash)
-$(which clang) $CPPFLAGS $CFLAGS $CONLYFLAGS $LDFLAGS -Wno-unused-command-line-argument "\$@"
+$(which clang) $CPPFLAGS $CFLAGS $CONLYFLAGS -Wno-unused-command-line-argument "\$@" $LDFLAGS
 EOF
 
     cat << EOF > clang++
 #!$(which dash)
-$(which clang++) $CPPFLAGS $CFLAGS $CXXFLAGS $LDFLAGS -Wno-unused-command-line-argument "\$@"
+$(which clang++) $CPPFLAGS $CFLAGS $CXXFLAGS -Wno-unused-command-line-argument "\$@" $LDFLAGS
 EOF
 
     chmod +x clang clang++

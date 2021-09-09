@@ -4,9 +4,17 @@
 build() {
     $untar $src/llvm* && cd llvm*
 
+{% if mix.platform.target.os == 'darwin' %}
     export LDFLAGS="-Wl,-w $LDFLAGS"
-    ln -s $(which dash) sh
-    export PATH="$(pwd):$PATH"
+{% endif %}
+
+    (
+        mkdir b && cd b
+        ln -s $(which dash) sh
+        setup_compiler
+    )
+
+    export PATH="$(pwd)/b:$PATH"
 
     {% block prebuild %}{% endblock %}
 

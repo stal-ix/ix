@@ -1,6 +1,6 @@
 $untar $src/llvm* && cd llvm* && cd libcxx
 
-CXXFLAGS="$CPPFLAGS -D_LIBCPP_BUILDING_LIBRARY -D_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER -iquote src -I$out/include -DLIBCXXRT -std=c++14 -nostdinc++ -fvisibility-inlines-hidden $CXXFLAGS"
+CXXFLAGS="-w $CPPFLAGS -D_LIBCPP_BUILDING_LIBRARY -D_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER -iquote src -I$out/include -DLIBCXXRT -std=c++14 $CXXFLAGS"
 
 cp -R include $out
 
@@ -26,9 +26,25 @@ done
 ar q obj/libc++.a obj/*.o
 ranlib obj/libc++.a
 
-mkdir $out/lib && mv obj/libc++.a $out/lib/
+mkdir $out/lib && cp obj/libc++.a $out/lib/
 
 cat << EOF > $out/env
 export CPPFLAGS="-I$out/include \$CPPFLAGS"
-export LDFLAGS="-L$out/lib -lc++ \$LDFLAGS"
+export LDFLAGS="$out/lib/libc++.a \$LDFLAGS -lpthread -ldl"
 EOF
+
+(
+    . $out/env
+
+    cat << EOF > qw.cpp
+#include <iostream>
+
+int main() {
+    std::cout << "helo" << std::endl;
+}
+EOF
+
+    clang++ $CPPFLAGS $CXXFLAGS ./qw.cpp $LDFLAGS
+
+    ./a.out
+)

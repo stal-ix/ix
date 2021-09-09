@@ -8,9 +8,8 @@ sdk = '/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk'
 data = r'''
 export MACOSX_DEPLOYMENT_TARGET=11.0
 export OSX_SDK="{sdk}"
-export CLANG_TARGET="--target={{mix.platform.target.arch}}-{{mix.platform.target.vendor}}-{{mix.platform.target.os}}"
-export CPPFLAGS="--sysroot $OSX_SDK -isystem$OSX_SDK/usr/include -F$OSX_SDK -nostdlib++ -Wno-stdlibcxx-not-found $CLANG_TARGET $CPPFLAGS"
-export LDFLAGS="--sysroot $OSX_SDK -L$OSX_SDK/usr/lib -F$OSX_SDK -nostdlib++ -Wl,-platform_version -Wl,macos -Wl,$MACOSX_DEPLOYMENT_TARGET -Wl,$MACOSX_DEPLOYMENT_TARGET $CLANG_TARGET $LDFLAGS"
+export CPPFLAGS="--sysroot $OSX_SDK -isystem$OSX_SDK/usr/include -F$OSX_SDK $CPPFLAGS"
+export LDFLAGS="--sysroot $OSX_SDK -L$OSX_SDK/usr/lib -F$OSX_SDK -Wl,-platform_version -Wl,macos -Wl,$MACOSX_DEPLOYMENT_TARGET -Wl,$MACOSX_DEPLOYMENT_TARGET $LDFLAGS"
 '''.format(sdk=out)
 
 os.chdir(out)

@@ -27,7 +27,8 @@ class Parser:
             elif l.startswith('# '):
                 self.on_key(keys, l[2:].strip())
             else:
-                body = l + '\n'
+                if l.strip():
+                    body = l + '\n'
 
         if 'build()' in body:
             keys['build']['script'] = {

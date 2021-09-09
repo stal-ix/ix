@@ -5,7 +5,9 @@
 build() {
     $untar $src/dash-* && cd dash-*
 
+{% if mix.platform.target.os == 'darwin' %}
     export CPPFLAGS="-Dstat64=stat $CPPFLAGS"
+{% endif %}
 
     setup_compiler
 

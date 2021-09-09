@@ -4,6 +4,24 @@ import platform
 import core.utils as cu
 
 
+ARCHES = {
+    'darwin-arm64': {
+        'arch': 'arm64',
+        'gnu_arch': 'aarch64',
+        'os': 'darwin',
+        'vendor': 'apple',
+        'bits': '64',
+    },
+    'linux-x86_64': {
+        'arch': 'x86_64',
+        'gnu_arch': 'x86_64',
+        'os': 'linux',
+        'vendor': 'linus',
+        'bits': '64',
+    },
+}
+
+
 class Config:
     def __init__(self, binary, where):
         self.binary = binary
@@ -26,11 +44,5 @@ class Config:
     @cu.cached_method
     def platform(self):
         return {
-            'target': {
-                'arch': platform.machine(),
-                'gnu_arch': 'aarch64',
-                'os': 'darwin',
-                'vendor': 'apple',
-                'bits': '64',
-            },
+            'target': ARCHES[platform.system().lower() + '-' + platform.machine()],
         }

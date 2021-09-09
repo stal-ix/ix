@@ -1,4 +1,5 @@
 # dep boot/final/cmake boot/final/python boot/final/env
+# run env/clang
 {% extends '//util/build_clang.sh' %}
 
 {% block prebuild %}

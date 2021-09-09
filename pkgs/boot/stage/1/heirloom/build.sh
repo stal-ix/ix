@@ -8,7 +8,7 @@ export AR=ar
 export CC=clang
 export LD=clang
 export RANLIB=ranlib
-export CPPFLAGS="-w -Dgetopt=h_getopt -Doptarg=h_optarg -Doptind=h_optind -Dopterr=h_opterr -Doptopt=h_optopt -I../libcommon $CPPFLAGS"
+export CPPFLAGS="-w -Dgetopt=h_getopt -Doptarg=h_optarg -Doptind=h_optind -Dopterr=h_opterr -Doptopt=h_optopt -I../libcommon $CPPFLAGS -O0 -g"
 
 export MANDIR=$out/man
 export SV3BIN=$out/sv3
@@ -39,7 +39,7 @@ cd heirloom
 )
 
 export PRFLAGS="$LDFLAGS"
-export LDFLAGS="../libcommon/sysv3.o ../libcommon/pfmt_label.o ../libcommon/libcommon.a $LDFLAGS"
+export LDFLAGS="../libcommon/asciitype.o ../libcommon/getdir.o ../libcommon/getopt.o ../libcommon/gmatch.o ../libcommon/ib_alloc.o ../libcommon/ib_close.o ../libcommon/ib_free.o ../libcommon/ib_getlin.o ../libcommon/ib_getw.o ../libcommon/ib_open.o ../libcommon/ib_popen.o ../libcommon/ib_read.o ../libcommon/ib_seek.o ../libcommon/pathconf.o ../libcommon/pfmt_label.o ../libcommon/pfmt.o ../libcommon/regexpr.o ../libcommon/setlabel.o ../libcommon/setuxlabel.o ../libcommon/sighold.o ../libcommon/sigignore.o ../libcommon/signal.o ../libcommon/sigpause.o ../libcommon/sigrelse.o ../libcommon/sigset.o ../libcommon/strtol.o ../libcommon/sysv3.o ../libcommon/utmpx.o ../libcommon/vpfmt.o $PRFLAGS"
 
 (
     cd rm && $MAKE -f Makefile.mk
@@ -59,6 +59,8 @@ done
 
 (
     export PATH="$PWD/rm:$PATH"
+    export CPPFLAGS="-DDflag=0 $CPPFLAGS"
+    export LDFLAGS="../libcommon/*.o $PRFLAGS"
 
     cd cp && $MAKE -f Makefile.mk cp
 )
@@ -98,7 +100,16 @@ cp chmod/chmod $out/bin
 
 export LNS=cp
 
-for i in cp rm mkdir _install chmod; do
+(
+    cd cp
+
+    export CPPFLAGS="-DDflag=0 $CPPFLAGS"
+    export LDFLAGS="../libcommon/*.o $PRFLAGS"
+
+    $MAKE -f Makefile.mk install
+)
+
+for i in rm mkdir _install chmod; do
     (
         cd $i && $MAKE -f Makefile.mk install
     )
@@ -107,9 +118,25 @@ done
 export LNS=ln
 export PATH="$DEFBIN:$UCBBIN:$SUSBIN:$S42BIN:$SV3BIN:$SU3BIN:$PATH"
 
-for i in echo cat pwd env rmdir touch basename dirname chown wc tr ln xargs uniq time test tee tail head sort sleep; do
+for i in echo pwd env rmdir touch basename dirname chown wc tr ln xargs uniq time test tee tail head sort sleep; do
     (
         cd $i && $MAKE -f Makefile.mk install
+    )
+done
+
+echo 'extern void* memalign(size_t, size_t);' > libcommon/memalign.h
+
+(
+    cd libcommon && rm *.o *.a && $MAKE -f Makefile.mk
+)
+
+for i in cp cat copy; do
+    (
+        cd $i
+
+        export LDFLAGS="../libcommon/sfile.o ../libcommon/oblok.o $LDFLAGS"
+
+        $MAKE -f Makefile.mk install
     )
 done
 
@@ -118,20 +145,32 @@ export MAGIC="$out/share/magic"
 export PRCPPFLAGS="$CPPFLAGS"
 export CPPFLAGS="-Dcompile=sed_x_compile -Dstep=sed_step -Dadvance=sed_advance -Dnodelim=sed_nodelim -Dsed=sed_sed -Dnbra=sed_nbra -Dloc1=sed_loc1 -Dbraslist=sed_braslist -Dbraelist=sed_braelist -Dloc2=sed_loc2 -Dlocs=sed_locs $CPPFLAGS"
 
-for i in sed cksum cmp col copy cut date dc df dircmp du ed expand file find fmt fold getopt hostname id join kill line logname mkfifo mknod nice nohup printenv printf uname whoami yes; do
+{% if mix.platform.target.os == 'linux' %}
+mkdir sys
+
+cat << EOF > sys/mkdev.h
+#include <sys/sysmacros.h>
+EOF
+
+export CPPFLAGS="-I$PWD $CPPFLAGS"
+{% endif %}
+
+for i in file find sed cksum cmp col cut dc df dircmp du ed expand fmt fold getopt hostname id join kill line logname mkfifo mknod nice nohup printenv printf uname whoami yes; do
     (
         cd $i && $MAKE -f Makefile.mk && $MAKE -f Makefile.mk install
     )
 done
 
+export LDFLAGS
+
 (
     export CPPFLAGS="-DUSE_TERMCAP=1 $CPPFLAGS"
-    cd ls && $MAKE -f Makefile.mk && $MAKE -f Makefile.mk install
+    cd ls && $MAKE LDFLAGS="$LDFLAGS" -f Makefile.mk && $MAKE -f Makefile.mk install
 )
 
 (
     export CPPFLAGS="-DEXTERN=extern $CPPFLAGS"
-    cd diff && $MAKE -f Makefile.mk && $MAKE -f Makefile.mk install
+    cd diff && $MAKE LDFLAGS="$LDFLAGS" -f Makefile.mk && $MAKE -f Makefile.mk install
 )
 
 (
@@ -152,7 +191,7 @@ export CPPFLAGS="$PRCPPFLAGS"
 
 for i in bc expr factor grep; do
     (
-        cd $i && $MAKE -f Makefile.mk && $MAKE -f Makefile.mk install
+        cd $i && $MAKE LDFLAGS="$LDFLAGS" -f Makefile.mk && $MAKE -f Makefile.mk install
     )
 done
 
@@ -175,10 +214,10 @@ done
     cd nawk
 
     export LDFLAGS="../libuxre/libuxre.a $LDFLAGS"
-    export CPPFLAGS="-I../libuxre $CPPFLAGS"
+    export CPPFLAGS="-I../libuxre -Dvpfmt=nawk_vpfmt $CPPFLAGS"
     export HOSTCC="$CC $CPPFLAGS $CFLAGS $LDFLAGS"
 
-    $MAKE -f Makefile.mk && $MAKE -f Makefile.mk install
+    $MAKE LDFLAGS="$LDFLAGS" -f Makefile.mk && $MAKE -f Makefile.mk install
 )
 
 mv $out/bin $out/tmp && mkdir/mkdir $out/bin

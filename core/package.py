@@ -31,6 +31,7 @@ def exec_mod(text, iface):
 
 BUILD_SH_SCRIPT = '''
 set -e
+set -x
 
 (rm -rf "$out" || true) && mkdir -p "$out"
 (rm -rf "$tmp" || true) && mkdir -p "$tmp"
@@ -39,7 +40,7 @@ cd "$tmp" && mkdir tmp && echo > tmpenv
 
 export TMPDIR="$tmp/tmp"
 
-echo "$PATH" | tr ':' '\n' | tac | while read p; do
+(IFS=":"; for i in $PATH; do echo $i; done) | tac | while read p; do
     env=$(dirname "$p")/env
 
     if test -f "$env"; then

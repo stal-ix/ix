@@ -17,8 +17,28 @@ EOF
 {% include 'config.h' %}
 EOF
 
+./tool << EOF > strlcpy.c
+EOF
+
+{% if mix.platform.target.os == 'linux' %}
+./tool << EOF >> make.h
+#undef MAKE_RCSID
+#define MAKE_RCSID(x)
+#define __COPYRIGHT(x)
+EOF
+
+./tool << EOF > strlcpy.c
+#include <string.h>
+#include <stdlib.h>
+
+size_t strlcpy(char* dst, const char* src, size_t dstsize) {
+        return snprintf(dst, dstsize, "%s", src);
+}
+EOF
+{% endif %}
+
 clang \
-    $CPPFLAGS $CFLAGS $LDFLAGS -I. \
+    -w $CPPFLAGS $CFLAGS $LDFLAGS -I. \
     -DHAVE_CONFIG_H \
     -DMAKE_NATIVE \
     -DUSE_META \
@@ -27,4 +47,5 @@ clang \
     arch.c buf.c compat.c cond.c dir.c enum.c for.c getopt.c \
     hash.c job.c lst.c main.c make.c make_malloc.c meta.c metachar.c \
     parse.c sigcompat.c str.c stresep.c suff.c targ.c trace.c util.c var.c \
+    strlcpy.c \
     -o bmake
