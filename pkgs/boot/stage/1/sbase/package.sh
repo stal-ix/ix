@@ -9,6 +9,6 @@ build() {
     ln -s $(which clang) cc
     export PATH="$(pwd):$PATH"
 
-    bmake
+    bmake LDFLAGS="$LDFLAGS"
     bmake PREFIX="$out" install
 }

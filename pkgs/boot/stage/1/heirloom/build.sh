@@ -103,10 +103,7 @@ export LNS=cp
 (
     cd cp
 
-    export CPPFLAGS="-DDflag=0 $CPPFLAGS"
-    export LDFLAGS="../libcommon/*.o $PRFLAGS"
-
-    $MAKE -f Makefile.mk install
+    $MAKE LDFLAGS="../libcommon/*.o $PRFLAGS" CPPFLAGS="-DDflag=0 $CPPFLAGS" -f Makefile.mk install
 )
 
 for i in rm mkdir _install chmod; do
@@ -134,9 +131,7 @@ for i in cp cat copy; do
     (
         cd $i
 
-        export LDFLAGS="../libcommon/sfile.o ../libcommon/oblok.o $LDFLAGS"
-
-        $MAKE -f Makefile.mk install
+        $MAKE LDFLAGS="../libcommon/sfile.o ../libcommon/oblok.o $LDFLAGS" -f Makefile.mk install
     )
 done
 
@@ -157,29 +152,28 @@ export CPPFLAGS="-I$PWD $CPPFLAGS"
 
 for i in file find sed cksum cmp col cut dc df dircmp du ed expand fmt fold getopt hostname id join kill line logname mkfifo mknod nice nohup printenv printf uname whoami yes; do
     (
-        cd $i && $MAKE -f Makefile.mk && $MAKE -f Makefile.mk install
+        cd $i
+
+        $MAKE LDFLAGS="$LDFLAGS" -f Makefile.mk && $MAKE -f Makefile.mk install
     )
 done
 
-export LDFLAGS
-
 (
-    export CPPFLAGS="-DUSE_TERMCAP=1 $CPPFLAGS"
-    cd ls && $MAKE LDFLAGS="$LDFLAGS" -f Makefile.mk && $MAKE -f Makefile.mk install
+    export CPPFLAGS="-DUSE_TERMCAP=1 -D_AIX $CPPFLAGS"
+    cd ls
+    $MAKE LDFLAGS="$LDFLAGS" -f Makefile.mk && $MAKE -f Makefile.mk install
 )
 
 (
     export CPPFLAGS="-DEXTERN=extern $CPPFLAGS"
-    cd diff && $MAKE LDFLAGS="$LDFLAGS" -f Makefile.mk && $MAKE -f Makefile.mk install
+    cd diff
+    $MAKE LDFLAGS="$LDFLAGS" -f Makefile.mk && $MAKE -f Makefile.mk install
 )
 
 (
     cd ../heirloom-devtools/yacc
 
-    export INSTALL=install
-    export LDFLAGS="$PRFLAGS"
-
-    $MAKE -f Makefile.mk && $MAKE -f Makefile.mk install
+    $MAKE LDFLAGS="$PRFLAGS" -f Makefile.mk && $MAKE INSTALL=install -f Makefile.mk install
 )
 
 export YACC=yacc
@@ -198,10 +192,7 @@ done
 (
     cd ../heirloom-devtools/lex
 
-    export INSTALL=install
-    export LDFLAGS="$PRFLAGS"
-
-    $MAKE -f Makefile.mk && $MAKE -f Makefile.mk install
+    $MAKE LDFLAGS="$PRFLAGS" -f Makefile.mk && $MAKE INSTALL=install -f Makefile.mk install
 )
 
 (

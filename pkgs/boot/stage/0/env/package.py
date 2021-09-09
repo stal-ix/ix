@@ -1,7 +1,7 @@
 def package(mix):
     deps = [
-        #'boot/stage/0/mix',
-        'boot/stage/0/{{mix.platform.target.os}}',
+        'boot/stage/0/mix',
+        #'boot/stage/0/{{mix.platform.target.os}}',
     ]
 
     return {

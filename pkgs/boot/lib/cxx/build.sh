@@ -5,10 +5,10 @@ CPPFLAGS="-w -D_LIBCPP_BUILDING_LIBRARY -D_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER -i
 cp -R include $out
 
 cat << EOF > $out/include/__config_site
-#if !defined(uiygfuiertyuiwetuyt)
-#define uiygfuiertyuiwetuyt
+#pragma once
+
 #define _LIBCPP_HAS_MERGED_TYPEINFO_NAMES_DEFAULT 0
-#endif
+#define _LIBCPP_DISABLE_AVAILABILITY 1
 EOF
 
 mkdir obj
