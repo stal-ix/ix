@@ -1,4 +1,5 @@
 import os
+import io
 import tarfile
 
 
@@ -31,8 +32,22 @@ def iter_files():
                     if os.path.isfile(f):
                         yield f, 'bin/' + x
 
+ver = os.environ['CLANG_VERSION']
 
-with tarfile.open('bootstrap-{{mix.platform.target.os}}-{{mix.platform.target.arch}}.tar.gz', 'w|gz') as tar:
+data = f'''
+export CLANG_VERSION={ver}
+export CPPFLAGS="-isystem :prefix:/lib/clang/$CLANG_VERSION/include $CPPFLAGS"
+'''.strip()
+
+with tarfile.open(f'bootstrap-{{mix.platform.target.os}}-{{mix.platform.target.arch}}-clang-{ver}.tar.gz', 'w|gz') as tar:
     for p, n in iter_files():
         print('add', p, n)
         tar.add(p, n)
+
+    buf = io.StringIO()
+    buf.write(data)
+
+    info = tarfile.TarInfo(name="env.template")
+    info.size = len(buf.buf)
+
+    tar.addfile(tarinfo=info, fileobj=buf)

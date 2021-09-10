@@ -1,1 +1,1 @@
-# run boot/stage/2/make
+# run boot/stage/3/make

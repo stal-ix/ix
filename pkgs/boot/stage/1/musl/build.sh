@@ -21,7 +21,7 @@ EOF
 >include/sys/cdefs.h
 >include/sys/sysctl.h
 
-export CPPFLAGS="-D_XOPEN_SOURCE=700 -U_GNU_SOURCE $CPPFLAGS"
+export CPPFLAGS="-D__STDC_HOSTED__ -D_XOPEN_SOURCE=700 -U_GNU_SOURCE $CPPFLAGS"
 export CPPFLAGS="-isystem $PWD/arch/x86_64 -isystem $PWD/arch/generic -isystem $PWD/src/include -isystem $PWD/src/internal -isystem $PWD/include $CPPFLAGS"
 export CPPFLAGS="-iquote $PWD/arch/x86_64 -iquote $PWD/src/internal $CPPFLAGS"
 export CFLAGS="-w $CPPFLAGS -ffreestanding -nostdinc -std=c99 $CFLAGS"

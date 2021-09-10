@@ -1,1 +1,1 @@
-# run boot/stage/4/cmake
+# run boot/stage/6/cmake

@@ -28,4 +28,9 @@ build() {
         -DLLVM_DYLIB_COMPONENTS='' \
         -DBUILD_SHARED_LIBS=OFF \
         ../llvm
+
+    cat << EOF > $out/env
+export CLANG_VERSION=13.0.0
+export CPPFLAGS="-isystem $out/lib/clang/\$CLANG_VERSION/include \$CPPFLAGS"
+EOF
 }

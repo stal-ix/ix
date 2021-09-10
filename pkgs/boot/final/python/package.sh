@@ -1,1 +1,1 @@
-# run boot/stage/4/python
+# run boot/stage/6/python
