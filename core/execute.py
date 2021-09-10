@@ -13,10 +13,29 @@ def execute_cmd(c):
     except KeyError:
         descr = str(c)
 
+    stdin = c.get('stdin', '')
+
     try:
-        return subprocess.run(c['args'], input=c.get('stdin', '').encode(), env=env, check=True)
+        return subprocess.run(c['args'], input=stdin.encode(), env=env, check=True)
     except Exception as e:
-        raise ce.Error(f'{descr} failed, {e}')
+        def iter_lines():
+            show = False
+
+            for i, l in enumerate(stdin.split('\n')):
+                if '# suc' in l:
+                    show = True
+                    continue
+
+                if '# euc' in l:
+                    show = False
+                    continue
+
+                if show:
+                    yield str(i + 1) + '\t| ' + l
+
+        script = '\n'.join(iter_lines()).strip()
+
+        raise ce.Error(f'{script}\n{descr} failed, {e}')
 
 
 def iter_in(c):

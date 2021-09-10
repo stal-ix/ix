@@ -53,7 +53,9 @@ done
 
 set -x
 
+# suc
 {build_script}
+# euc
 
 set +x
 
