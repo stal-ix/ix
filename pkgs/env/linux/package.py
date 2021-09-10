@@ -1,6 +1,5 @@
-def package(mix):
-    return {
-        'build': {
-            'script': mix.files.build_py,
-        },
-    }
+{% extends '//util/env.py' %}
+
+{% block env %}
+export CFLAGS="-fPIC $CFLAGS"
+{% endblock %}

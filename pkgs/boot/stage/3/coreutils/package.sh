@@ -1,8 +1,10 @@
-# dep boot/stage/2/make boot/stage/1/env
+# dep boot/stage/3/make boot/stage/2/env
 {% include '//tool/gnu/coreutils/version.sh' %}
 
 build() {
     $untar $src/coreutils-* && cd coreutils-*
+
+    export CPPFLAGS="-I$PWD/lib $CPPFLAGS"
 
     setup_compiler
 

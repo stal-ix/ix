@@ -18,8 +18,11 @@ EOF
 EOF
 ) > src/internal/version.h
 
+>include/sys/cdefs.h
+>include/sys/sysctl.h
+
 export CPPFLAGS="-D_XOPEN_SOURCE=700 -U_GNU_SOURCE $CPPFLAGS"
-export CPPFLAGS="-I$PWD/arch/x86_64 -I$PWD/arch/generic -I$PWD/src/include -I$PWD/src/internal -I$PWD/include $CPPFLAGS"
+export CPPFLAGS="-isystem $PWD/arch/x86_64 -isystem $PWD/arch/generic -isystem $PWD/src/include -isystem $PWD/src/internal -isystem $PWD/include $CPPFLAGS"
 export CPPFLAGS="-iquote $PWD/arch/x86_64 -iquote $PWD/src/internal $CPPFLAGS"
 export CFLAGS="-w $CPPFLAGS -ffreestanding -nostdinc -std=c99 $CFLAGS"
 
@@ -86,5 +89,5 @@ EOF
 ./tool << EOF > $out/env
 export CPPFLAGS="$CPPFLAGS \$CPPFLAGS"
 export CFLAGS="-ffreestanding -nostdinc \$CFLAGS"
-export LDFLAGS="-L$out -lmusl \$LDFLAGS"
+export LDFLAGS="-L$PWD -lmusl \$LDFLAGS"
 EOF

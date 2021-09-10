@@ -1,6 +1,7 @@
 #include <string.h>
 #include <stdlib.h>
 #include <stdio.h>
+#include <string.h>
 
 // memory leaks here, but who care?
 int main(int argc, char** argv) {

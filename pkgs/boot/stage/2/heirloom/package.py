@@ -9,8 +9,8 @@ def package(mix):
                 },
             ],
             'depends': [
-                'boot/stage/1/bmake',
-                'boot/stage/0/env',
+                'boot/stage/2/bmake',
+                'boot/stage/1/env',
             ],
         },
     }

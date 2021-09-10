@@ -1,2 +1,3 @@
-# run boot/stage/3/dash boot/stage/3/diffutils boot/stage/3/findutils 
-# run boot/stage/2/env
+# run boot/stage/2/make boot/stage/2/coreutils boot/stage/2/gawk boot/stage/2/grep boot/stage/2/sed
+# run boot/stage/1/which
+# run boot/stage/0/env

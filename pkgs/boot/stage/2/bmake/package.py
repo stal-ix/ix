@@ -9,7 +9,7 @@ def package(mix):
                 },
             ],
             'depends': [
-                'boot/stage/0/env',
+                'boot/stage/1/env',
             ],
         },
     }

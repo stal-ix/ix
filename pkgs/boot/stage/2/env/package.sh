@@ -1,3 +1,7 @@
-# run boot/stage/2/make boot/stage/2/coreutils boot/stage/2/gawk boot/stage/2/grep boot/stage/2/sed
-# run boot/stage/1/which
-# run boot/stage/0/env
+{% if mix.platform.target.os == 'linux' %}
+# run boot/stage/2/sbase
+{% endif %}
+{% if mix.platform.target.os == 'darwin' %}
+# run boot/stage/2/bsdpatch
+{% endif %}
+# run boot/stage/2/heirloom boot/stage/2/bmake boot/stage/2/which boot/stage/1/env

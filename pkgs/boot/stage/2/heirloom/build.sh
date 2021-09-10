@@ -8,7 +8,7 @@ export AR=ar
 export CC=clang
 export LD=clang
 export RANLIB=ranlib
-export CPPFLAGS="-w -Dgetopt=h_getopt -Doptarg=h_optarg -Doptind=h_optind -Dopterr=h_opterr -Doptopt=h_optopt -I../libcommon $CPPFLAGS -O0 -g"
+export CPPFLAGS="-D_BSD_SOURCE -w -Dgetopt=h_getopt -Doptarg=h_optarg -Doptind=h_optind -Dopterr=h_opterr -Doptopt=h_optopt -I../libcommon $CPPFLAGS -O0 -g"
 
 export MANDIR=$out/man
 export SV3BIN=$out/sv3
@@ -59,7 +59,6 @@ done
 
 (
     export PATH="$PWD/rm:$PATH"
-    export CPPFLAGS="-DDflag=0 $CPPFLAGS"
     export LDFLAGS="../libcommon/*.o $PRFLAGS"
 
     cd cp && $MAKE -f Makefile.mk cp
@@ -103,7 +102,7 @@ export LNS=cp
 (
     cd cp
 
-    $MAKE LDFLAGS="../libcommon/*.o $PRFLAGS" CPPFLAGS="-DDflag=0 $CPPFLAGS" -f Makefile.mk install
+    $MAKE LDFLAGS="../libcommon/*.o $PRFLAGS" -f Makefile.mk install
 )
 
 for i in rm mkdir _install chmod; do
@@ -117,7 +116,7 @@ export PATH="$DEFBIN:$UCBBIN:$SUSBIN:$S42BIN:$SV3BIN:$SU3BIN:$PATH"
 
 for i in echo pwd env rmdir touch basename dirname chown wc tr ln xargs uniq time test tee tail head sort sleep; do
     (
-        cd $i && $MAKE -f Makefile.mk install
+        cd $i && $MAKE CPPFLAGS="-Dmode_t=int $CPPFLAGS" -f Makefile.mk install
     )
 done
 
@@ -198,17 +197,18 @@ done
 (
     cd libuxre
 
-    $MAKE -f Makefile.mk
+    $MAKE CFLAGS="-I. $CPPFLAGS $CFLAGS" CPPFLAGS="" -f Makefile.mk
 )
 
 (
     cd nawk
 
     export LDFLAGS="../libuxre/libuxre.a $LDFLAGS"
-    export CPPFLAGS="-I../libuxre -Dvpfmt=nawk_vpfmt $CPPFLAGS"
+    export CPPFLAGS="-I../libuxre -Dvpfmt=nawk_vpfmt $CPPFLAGS $CFLAGS"
     export HOSTCC="$CC $CPPFLAGS $CFLAGS $LDFLAGS"
 
-    $MAKE LDFLAGS="$LDFLAGS" -f Makefile.mk && $MAKE -f Makefile.mk install
+    $MAKE LDFLAGS="$LDFLAGS" -f Makefile.mk
+    $MAKE -f Makefile.mk install
 )
 
 mv $out/bin $out/tmp && mkdir/mkdir $out/bin
