@@ -18,6 +18,8 @@ build() {
 
     {% block prebuild %}{% endblock %}
 
+    echo > llvm/unittests/Support/DynamicLibrary/CMakeLists.txt
+
     build_cmake_ninja \
         -DLLVM_BUILD_LLVM_DYLIB=OFF \
         -DLLVM_LINK_LLVM_DYLIB=OFF \

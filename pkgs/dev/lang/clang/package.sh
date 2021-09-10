@@ -1,4 +1,5 @@
 # dep boot/final/cmake boot/final/python boot/final/env
+# dep lib/linux
 # run env/clang
 {% extends '//util/build_clang.sh' %}
 
