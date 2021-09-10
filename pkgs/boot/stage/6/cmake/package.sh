@@ -1,7 +1,10 @@
 # lib env/cmake
+{% if mix.platform.target.os == 'linux' %}
+# dep boot/lib/linux
+{% endif %}
 # dep boot/lib/cxx
-# dep boot/stage/3/env
-# run boot/stage/4/samurai
+# dep boot/stage/5/env
+# run boot/stage/6/samurai
 {% include '//util/fetch_cmake.sh' %}
 
 build() {

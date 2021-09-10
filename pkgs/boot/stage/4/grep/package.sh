@@ -1,4 +1,4 @@
-# dep boot/stage/2/make boot/stage/2/coreutils boot/stage/1/env
+# dep boot/stage/4/coreutils boot/stage/3/env
 {% include '//tool/text/gnu/grep/version.sh' %}
 
 build() {

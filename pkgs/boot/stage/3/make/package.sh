@@ -1,10 +1,10 @@
-# dep boot/stage/2/env
+# dep boot/stage/1/musl boot/stage/2/env
 {% include '//dev/build/make/version.sh' %}
 
 build() {
     $untar $src/make-* && cd make-*
 
-    export CPPFLAGS="-I$PWD/glob -I$PWD/lib $CPPFLAGS"
+    export CPPFLAGS="-I$(pwd)/glob -I$(pwd)/lib $CPPFLAGS"
 
 {% if mix.platform.target.os == 'darwin' %}
     export CPPFLAGS="-Dglob=make_glob -Dglobfree=make_globfree -Dfnmatch=make_fnmatch $CPPFLAGS"

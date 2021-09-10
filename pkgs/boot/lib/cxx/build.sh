@@ -9,6 +9,7 @@ cat << EOF > $out/include/__config_site
 
 #define _LIBCPP_HAS_MERGED_TYPEINFO_NAMES_DEFAULT 0
 #define _LIBCPP_DISABLE_AVAILABILITY 1
+#define _LIBCPP_HAS_MUSL_LIBC 1
 EOF
 
 mkdir obj

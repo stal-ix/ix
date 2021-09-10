@@ -1,6 +1,9 @@
 {% include '//util/fetch_llvm.sh' %}
 # lib boot/lib/cxxrt
-# dep boot/stage/2/env
+{% if mix.platform.target.os == 'linux' %}
+# dep boot/lib/linux
+{% endif %}
+# dep boot/stage/5/env
 
 build() {
     {% include 'build.sh' %}

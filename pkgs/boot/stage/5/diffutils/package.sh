@@ -1,4 +1,4 @@
-# dep boot/stage/2/env
+# dep boot/stage/4/env
 {% include '//tool/text/gnu/diffutils/version.sh' %}
 
 build() {
