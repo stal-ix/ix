@@ -13,7 +13,6 @@ CLIS = [
     ('core.gc_cmd', 'gc', False),
     ('core.sh_cmd', 'sh', True),
     ('core.misc_cmd', 'misc_runpy', True),
-    ('core.misc_cmd', 'misc_runph', True),
     ('core.misc_cmd', 'misc_untar', True),
     ('core.misc_cmd', 'misc_unzip', True),
 ]

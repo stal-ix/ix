@@ -103,18 +103,6 @@ for f in sys.argv[1:]:
 '''.strip()
 
 
-BUILD_PH_SCRIPT = '''
-newdir $out
-newdir $tmp
-
-cd $tmp
-
-{build_script}
-
-rm $tmp
-'''.strip()
-
-
 def compile_sh(script):
     return cs.parse(script)
 
@@ -275,13 +263,6 @@ class Package:
             'env': env,
         }
 
-    def build_ph_script(self, data, env, args=[]):
-        return {
-            'args': [sys.executable, self.config.binary, 'misc', 'runph'] + args,
-            'stdin': BUILD_PH_SCRIPT.format(build_script=data),
-            'env': env,
-        }
-
     def build_script(self):
         def iter_env():
             yield from self.iter_env()
@@ -301,7 +282,6 @@ class Package:
         return {
             'sh': self.build_sh_script,
             'py': self.build_py_script,
-            'ph': self.build_ph_script,
         }[build['kind']](build['data'], dict(iter_env()))
 
     def fetch_src_script(self, urls, out, md5):

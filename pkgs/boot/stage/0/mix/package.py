@@ -7,7 +7,7 @@ def package(mix):
 
     return {
         'build': {
-            'script': mix.files.build_ph,
+            'script': mix.files.build_py,
             'fetch': [
                 {
                     'url': 'https://storage.yandexcloud.net/mix-cache/bootstrap-{{mix.platform.target.os}}-{{mix.platform.target.arch}}.tar.gz',

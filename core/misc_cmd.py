@@ -3,7 +3,6 @@ import sys
 import shutil
 import hashlib
 
-import core.shell as cs
 import core.error as ce
 import core.shell_cmd as csc
 
@@ -70,16 +69,6 @@ def cli_misc_runpy(ctx):
     }
 
     exec(sys.stdin.read(), g, g)
-
-
-def cli_misc_runph(ctx):
-    def iter_env():
-        yield from os.environ.items()
-
-        for k, v in enumerate(['runph'] + ctx['args']):
-            yield str(k), v
-
-    cs.interpret(sys.stdin.read(), dict(iter_env()))
 
 
 def cli_misc_untar(ctx):
