@@ -1,27 +1,42 @@
+{% extends '//util/autohell.sh' %}
+
+{% block deps %}
 # dep lib/intl lib/iconv lib/sigsegv
 # dep env/c tool/text/gnu/patch boot/final/env
-{% include 'version.sh' %}
+{% endblock %}
 
-build() {
-    $untar $src/coreutils-* && cd coreutils-*
+{% block fetch %}
+# url https://ftp.gnu.org/gnu/coreutils/coreutils-8.32.tar.xz
+# md5 022042695b7d5bcf1a93559a9735e668
+{% endblock %}
 
-    export FORCE_UNSAFE_CONFIGURE=1
+{% block cflags %}
+export CPPFLAGS="-I$(pwd)/lib $CPPFLAGS"
+export FORCE_UNSAFE_CONFIGURE=1
+export PATH="$(pwd)/src:$PATH"
+{% endblock %}
 
-    (base64 -d | patch -p1) << EOF
-{% include  '//boot/stage/2/coreutils/uname.patch/base64' %}
+{% block coflags %}
+--libexecdir="$out/bin"
+--without-gmp
+--enable-no-install-program=stdbuf
+--enable-single-binary=symlinks
+{% endblock %}
+
+{% block postconf %}
+cat Makefile | grep -v 'LIBINTL = ' > tmp && mv tmp Makefile
+{% endblock %}
+
+{% block prebuild %}
+make LN_S=ln -j $make_thrs
+
+{% if mix.platform.target.os == 'darwin' %}
+(
+    cd src
+
+    (base64 -d | patch) << EOF
+{% include 'uname.patch/base64' %}
 EOF
-
-    setup_compiler
-
-    dash ./configure $COFLAGS \
-        --prefix=$out \
-        --libexecdir=$out/bin \
-        --without-gmp \
-        --enable-no-install-program=stdbuf \
-        --enable-single-binary=symlinks
-
-    cat Makefile | grep -v 'LIBINTL = ' > tmp && mv tmp Makefile
-
-    make -j $make_thrs
-    make install
-}
+)
+{% endif %}
+{% endblock %}

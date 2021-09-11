@@ -16,7 +16,11 @@ export CPPFLAGS="-D__libc_realloc=realloc -D__libc_free=free -D__libc_malloc=mal
 
 {% block postinstall %}
 {% block relinkmusl %}
+ar q $out/lib/libmuslalloc.a $(find obj/src/malloc -type f | sort)
+ranlib $out/lib/libmuslalloc.a
+
 rm -rf obj/src/malloc
+
 ar q $out/lib/libmusl.a $(find obj -type f | sort)
 ranlib $out/lib/libmusl.a
 {% endblock %}
@@ -26,12 +30,6 @@ cd $out/lib
 ar q libcrt.a crt1.o crti.o crtn.o
 ranlib libcrt.a
 {% block extractalloc %}
-#ar d \
-#    libc.a calloc.lo free.lo free.o memalign.lo realloc.o \
-#    posix_memalign.lo realloc.lo reallocarray.lo \
-#    aligned_alloc.lo donate.lo malloc.lo \
-#    malloc_usable_size.lo
-#ranlib libc.a
 rm libc.a && mv libmusl.a libc.a
 {% endblock %}
 {% endblock %}

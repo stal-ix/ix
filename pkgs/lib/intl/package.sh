@@ -1,7 +1,8 @@
 # url https://ftp.gnu.org/pub/gnu/gettext/gettext-0.21.tar.gz
 # md5 28b1cd4c94a74428723ed966c38cf479
+# lib lib/iconv
 {% if mix.platform.target.os == 'darwin' %}
-# lib lib/iconv sys/framework/CoreFoundation
+# lib sys/framework/CoreFoundation
 {% endif %}
 # dep env/c boot/final/env
 

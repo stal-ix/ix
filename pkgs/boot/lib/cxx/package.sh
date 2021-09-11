@@ -1,5 +1,5 @@
 {% include '//util/fetch_llvm.sh' %}
-# lib boot/lib/cxxrt
+# lib boot/lib/cxx/rt
 {% if mix.platform.target.os == 'linux' %}
 # dep boot/lib/linux
 {% endif %}

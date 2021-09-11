@@ -1,4 +1,4 @@
 {% if mix.platform.target.os == 'linux' %}
-# run boot/stage/7/musl
-# run boot/stage/7/mimalloc
+# run boot/stage/7/lib/musl
+# run boot/stage/7/lib/mimalloc
 {% endif %}

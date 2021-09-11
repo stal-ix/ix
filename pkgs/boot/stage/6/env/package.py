@@ -11,6 +11,7 @@ def package(mix):
         'runtime': {
             'depends': deps + [
                 'boot/stage/2/which',
+                'boot/stage/3/make',
                 'boot/stage/4/sed',
                 'boot/stage/4/gawk',
                 'boot/stage/4/grep',
