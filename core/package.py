@@ -127,6 +127,16 @@ class Package:
     def prepare_deps(self, v):
         return v.replace('\n', ' ').strip()
 
+    def dep_list(self, v, prefix):
+        def iter_lines():
+            for l in v.splitlines():
+                l = l.strip()
+
+                if l:
+                    yield '# ' + prefix + ' ' + l
+
+        return '\n'.join(iter_lines()).strip() + '\n'
+
     @property
     def os(self):
         return self.platform['target']['os']

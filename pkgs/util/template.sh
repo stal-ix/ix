@@ -4,6 +4,25 @@
 {% block fetch %}
 {% endblock %}
 
+{% set run_deps %}
+{% block run_deps %}
+{% endblock %}
+{% endset %}
+
+{% set bld_deps %}
+{% block bld_deps %}
+{% endblock %}
+{% endset %}
+
+{% set lib_deps %}
+{% block lib_deps %}
+{% endblock %}
+{% endset %}
+
+{{mix.dep_list(run_deps, 'run')}}
+{{mix.dep_list(lib_deps, 'lib')}}
+{{mix.dep_list(bld_deps, 'bld')}}
+
 do_unpack() {
 {% block preunpack%}
 {% endblock %}
@@ -38,7 +57,12 @@ echo 'configure stage'
 {% endblock %}
 
 {% block preconf %}
-mkdir .tools && cd .tools && setup_compiler && cd ..
+mkdir .tools && cd .tools
+{% block toolconf %}
+ln -s $(which dash) sh
+{% endblock %}
+setup_compiler
+cd ..
 {% endblock %}
 
 {% block configure %}
