@@ -1,6 +1,8 @@
 # url https://ftp.gnu.org/gnu/gdbm/gdbm-1.19.tar.gz
 # md5 aeb29c6a90350a4c959cd1df38cd0a7e
-# dep lib/intl lib/iconv lib/readline dev/build/make env/std
+# lib lib/intl lib/iconv
+# dep lib/readline
+# dep dev/build/make env/std
 
 build() {
     $untar $src/gdbm* && cd gdbm*

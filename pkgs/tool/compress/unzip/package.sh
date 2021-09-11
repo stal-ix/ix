@@ -11,6 +11,10 @@ build() {
         cat "$i" | patch -p1
     done
 
+    for f in fileio.c list.c zipinfo.c; do
+        (echo '#include <time.h>'; cat $f) > tmp && mv tmp $f
+    done
+
     ln -s $(which dash) sh
     ln -s $(which true) strip
 

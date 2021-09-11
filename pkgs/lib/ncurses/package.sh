@@ -3,6 +3,7 @@
 # dep env/std boot/final/env
 
 build() {
+    which bsdcat
     $untar $src/ncurses* && cd ncurses*
 
     mkdir tool && cd tool

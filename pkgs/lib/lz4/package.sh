@@ -5,7 +5,7 @@
 build() {
     $untar $src/v* && cd lz4*
 
-    make PREFIX=$out CC=gcc CXX=g++ -j $make_thrs install
+    make PREFIX=$out CC=gcc CXX=g++ BUILD_SHARED=no -j $make_thrs allmost install
 
     cat << EOF > $out/env
 export CPPFLAGS="-I$out/include \$CPPFLAGS"

@@ -5,7 +5,8 @@
 build() {
     $untar $src/zstd* && cd zstd*
 
-    make PREFIX=$out CC=gcc CXX=g++ -j $make_thrs install
+    (cd lib && make PREFIX=$out CC=gcc CXX=g++ -j $make_thrs install-static)
+    (cd programs && make PREFIX=$out CC=gcc CXX=g++ -j $make_thrs install)
 
     cat << EOF > $out/env
 export CPPFLAGS="-I$out/include \$CPPFLAGS"
