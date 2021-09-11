@@ -218,7 +218,7 @@ for p in "$SV3BIN" "$SU3BIN" "$S42BIN" "$SUSBIN" "$UCBBIN" "$out/tmp"; do
 done
 
 (
-    cd $out/bin && ln -s cat tac && ln -s nawk awk && rm dircmp
+    cd $out/bin && ln -s nawk awk && rm dircmp
 )
 
 cat << EOF > $out/env

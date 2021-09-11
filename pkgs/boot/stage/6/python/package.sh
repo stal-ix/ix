@@ -28,5 +28,8 @@ EOF
     mv Modules/Setup qw && (cat qw | ./python ./fix.py | sed -e 's|-l.*||' | grep -v readline | grep -v capi | grep -v nis) > Modules/Setup
 
     make -j $make_thrs
+
+    ./python -c 'import zlib'
+
     make install
 }

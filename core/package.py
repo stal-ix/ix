@@ -40,7 +40,7 @@ cd "$tmp" && mkdir tmp && echo > tmpenv
 
 export TMPDIR="$tmp/tmp"
 
-(IFS=":"; for i in $PATH; do echo $i; done) | tac | while read p; do
+(IFS=":"; for i in $PATH; do line="$i:$line"; done; for i in $line; do echo "$i"; done) | while read p; do
     env=$(dirname "$p")/env
 
     if test -f "$env"; then
@@ -48,6 +48,8 @@ export TMPDIR="$tmp/tmp"
         echo >> "$tmp/tmpenv"
     fi
 done
+
+cat "$tmp/tmpenv"
 
 . "$tmp/tmpenv" && rm "$tmp/tmpenv"
 

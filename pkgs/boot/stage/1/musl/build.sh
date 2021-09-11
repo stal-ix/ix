@@ -21,10 +21,15 @@ EOF
 >include/sys/cdefs.h
 >include/sys/sysctl.h
 
-export CPPFLAGS="-D__STDC_HOSTED__ -D_XOPEN_SOURCE=700 -U_GNU_SOURCE $CPPFLAGS"
-export CPPFLAGS="-isystem $PWD/arch/x86_64 -isystem $PWD/arch/generic -isystem $PWD/src/include -isystem $PWD/src/internal -isystem $PWD/include $CPPFLAGS"
-export CPPFLAGS="-iquote $PWD/arch/x86_64 -iquote $PWD/src/internal $CPPFLAGS"
-export CFLAGS="-w $CPPFLAGS -ffreestanding -nostdinc -std=c99 $CFLAGS"
+export MFLAGS="$MFLAGS -iquote $PWD/arch/x86_64"
+export MFLAGS="$MFLAGS -iquote $PWD/src/internal"
+export MFLAGS="$MFLAGS -isystem $PWD/arch/x86_64"
+export MFLAGS="$MFLAGS -isystem $PWD/arch/generic"
+export MFLAGS="$MFLAGS -isystem $PWD/src/include"
+export MFLAGS="$MFLAGS -isystem $PWD/src/internal"
+export MFLAGS="$MFLAGS -isystem $PWD/include"
+
+export CFLAGS="-w $MFLAGS -D__STDC_HOSTED__ -D_XOPEN_SOURCE=700 -U_GNU_SOURCE $CPPFLAGS -ffreestanding -nostdinc -std=c99 $CFLAGS"
 
 objs=""
 
@@ -87,7 +92,7 @@ int main() {
 EOF
 
 ./tool << EOF > $out/env
-export CPPFLAGS="$CPPFLAGS \$CPPFLAGS"
+export CPPFLAGS="$MFLAGS \$CPPFLAGS"
 export CFLAGS="-ffreestanding -nostdinc \$CFLAGS"
 export LDFLAGS="-L$PWD -lmusl \$LDFLAGS"
 EOF

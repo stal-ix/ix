@@ -96,8 +96,8 @@ do_unpack
 
 (do_configure)
 (do_build)
-(do_test)
 (do_install)
+(do_test)
 
 echo "$out complete"
 }
