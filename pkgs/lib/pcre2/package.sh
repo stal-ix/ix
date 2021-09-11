@@ -1,6 +1,6 @@
 # url https://ftp.pcre.org/pub/pcre/pcre2-10.36.tar.gz
 # md5 a5d9aa7d18b61b0226696510e60c9582
-# dep lib/z lib/bzip2 dev/build/make boot/final/pkg-config env/std
+# dep lib/z lib/bzip2 env/c boot/final/env
 
 build() {
     $untar $src/pcre* && cd pcre*

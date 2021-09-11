@@ -1,4 +1,4 @@
-# dep lib/intl lib/iconv lib/sigsegv dev/build/make env/c boot/final/env
+# dep lib/intl lib/iconv lib/sigsegv env/c boot/final/env
 {% include 'version.sh' %}
 
 build() {

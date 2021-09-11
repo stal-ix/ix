@@ -1,6 +1,6 @@
 # url https://ftp.gnu.org/pub/gnu/ncurses/ncurses-6.2.tar.gz
 # md5 e812da327b1c2214ac1aed440ea3ae8d
-# dep boot/final/pkg-config dev/build/make env/std
+# dep env/std boot/final/env
 
 build() {
     $untar $src/ncurses* && cd ncurses*

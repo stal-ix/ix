@@ -1,7 +1,7 @@
 # url https://ftp.gnu.org/gnu/libunistring/libunistring-0.9.10.tar.xz
 # md5 db08bb384e81968957f997ec9808926e
 # lib lib/iconv
-# dep env/c boot/final/make boot/final/env
+# dep env/c boot/final/env
 
 build() {
     $untar $src/lib* && cd lib*

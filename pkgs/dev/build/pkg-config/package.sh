@@ -1,4 +1,4 @@
-# dep lib/glib lib/iconv dev/build/make boot/final/pkg-config env/std
+# dep lib/glib lib/iconv env/std boot/final/env
 {% include 'version.sh' %}
 
 build() {

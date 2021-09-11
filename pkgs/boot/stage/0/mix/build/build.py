@@ -16,7 +16,7 @@ def walk(d):
 
 def iter_files():
     for p in reversed(os.environ['PATH'].split(':')):
-        if ('-dash-minimal/' in p) or ('-clang/' in p):
+        if ('-dash-minimal/' in p) or ('-lang-clang/' in p):
             base = os.path.dirname(p)
 
             print(base)

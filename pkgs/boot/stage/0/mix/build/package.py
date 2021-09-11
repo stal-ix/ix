@@ -6,7 +6,6 @@ def package(mix):
                 'shell/dash/minimal',
                 'dev/lang/clang',
                 'boot/final/env',
-                'boot/final/python',
             ],
         },
     }

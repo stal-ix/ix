@@ -1,5 +1,4 @@
-# dep boot/final/cmake boot/final/python boot/final/env/full
-# dep lib/linux
+# dep {{mix.if_linux('lib/linux')}} boot/final/cxx boot/final/env
 # run env/clang
 {% extends '//util/build_clang.sh' %}
 

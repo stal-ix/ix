@@ -4,7 +4,7 @@
 {% if mix.platform.target.os == 'darwin' %}
 # lib sys/framework/CoreServices sys/framework/Foundation
 {% endif %}
-# dep dev/build/meson boot/final/pkg-config env/std
+# dep dev/build/meson env/std boot/final/env
 
 build() {
     $untar $src/glib* && cd glib*

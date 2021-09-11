@@ -1,5 +1,5 @@
 # dep lib/intl lib/iconv lib/sigsegv
-# dep env/c dev/build/make tool/text/gnu/patch boot/final/env
+# dep env/c tool/text/gnu/patch boot/final/env
 {% include 'version.sh' %}
 
 build() {

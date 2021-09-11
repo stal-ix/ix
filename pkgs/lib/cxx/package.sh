@@ -1,7 +1,7 @@
 {% extends '//util/template.sh' %}
 
 {% block deps %}
-# dep boot/final/cmake env/c env/tools env/bootstrap
+# dep env/c boot/final/env
 {% endblock %}
 
 {% block fetch%}

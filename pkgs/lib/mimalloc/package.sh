@@ -9,7 +9,7 @@
 {% if mix.platform.target.os == 'linux' %}
 # dep lib/musl
 {% endif %}
-# dep env/c/nort boot/final/cmake boot/final/env
+# dep env/c/nort boot/final/env
 {% endblock %}
 
 {% block cmflags %}

@@ -1,5 +1,6 @@
 {% extends '//lib/cxx/package.sh' %}
 
 {% block deps %}
-# dep boot/final/6/cmake boot/stage/7/env
+# lib boot/stage/7/lib
+# dep boot/stage/6/cmake boot/stage/7/env
 {% endblock %}
