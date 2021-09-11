@@ -1,2 +1,2 @@
-# run boot/stage/7/lib
 # run boot/stage/6/env/clang
+# run boot/final/env

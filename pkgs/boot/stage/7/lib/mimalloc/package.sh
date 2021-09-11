@@ -2,5 +2,5 @@
 
 {% block deps %}
 # lib boot/stage/7/lib/musl
-# dep boot/stage/6/cmake boot/stage/6/env
+# dep boot/stage/6/cmake boot/stage/6/env/clang
 {% endblock %}

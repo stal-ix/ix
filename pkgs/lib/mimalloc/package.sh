@@ -6,9 +6,7 @@
 {% endblock %}
 
 {% block deps %}
-{% if mix.platform.target.os == 'linux' %}
-# dep lib/musl
-{% endif %}
+# dep {{mix.if_linux('lib/musl')}}
 # dep env/c/nort boot/final/env
 {% endblock %}
 

@@ -1,7 +1,5 @@
 # lib env/cmake
-{% if mix.platform.target.os == 'linux' %}
-# dep boot/lib/linux
-{% endif %}
+# {{mix.if_linux('dep boot/lib/linux')}}
 # dep boot/lib/cxx
 # dep boot/stage/5/env
 # run boot/stage/6/samurai
