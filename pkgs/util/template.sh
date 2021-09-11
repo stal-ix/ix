@@ -38,7 +38,7 @@ echo 'configure stage'
 {% endblock %}
 
 {% block preconf %}
-setup_compiler
+mkdir .tools && cd .tools && setup_compiler && cd ..
 {% endblock %}
 
 {% block configure %}

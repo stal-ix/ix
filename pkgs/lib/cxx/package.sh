@@ -1,6 +1,7 @@
 {% extends '//util/template.sh' %}
 
 {% block deps %}
+# dep lib/linux
 # dep env/c boot/final/env
 {% endblock %}
 

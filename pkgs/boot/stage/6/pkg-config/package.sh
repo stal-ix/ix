@@ -1,5 +1,5 @@
 # dep boot/lib/iconv
-# dep boot/stage/6/env
+# dep boot/stage/5/env
 {% include '//dev/build/pkg-config/version.sh' %}
 
 build() {
