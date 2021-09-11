@@ -1,4 +1,14 @@
 import os
+
+try:
+    import beautysh
+
+    def bsh(s):
+        return beautysh.Beautify().beautify_string(s)[0]
+except ImportError:
+    def bsh(s):
+        return s
+
 import subprocess
 
 import core.error as ce
@@ -21,7 +31,7 @@ def execute_cmd(c):
         def iter_lines():
             show = False
 
-            for i, l in enumerate(stdin.strip().splitlines()):
+            for i, l in enumerate(bsh(stdin).strip().splitlines()):
                 if '# suc' in l:
                     show = True
                     continue

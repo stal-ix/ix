@@ -111,6 +111,9 @@ class Parser:
         self.on_dep(k, v)
         self.on_run(k, v)
 
+    def on_bld(self, k, v):
+        self.on_dep(k, v)
+
 
 def parse(s):
     return Parser().parse(s)

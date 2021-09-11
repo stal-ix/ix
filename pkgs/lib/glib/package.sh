@@ -17,16 +17,20 @@ build() {
     echo 'int main() {}' > glib/tests/cxx.cpp
     echo 'int main() {}' > tests/cxx-test.cpp
 
+    gcc -c -o main.o -x c - << EOF
+int main() {}
+EOF
+
+    ar q libmain.a main.o
+
+    export LDFLAGS="-L$(pwd) -lmain $LDFLAGS"
+
     meson \
         --libdir "$out/lib" \
         -Ddefault_library=static \
         -Dprefix=$out \
-        _build \
-{% if mix.platform.target.os == 'darwin' %}
-        -Db_asneeded=false \
-        -Db_lundef=false \
-{% endif %}
-
+        -Diconv=external \
+        _build {{mix.if_darwin('-Db_asneeded=false -Db_lundef=false')}}
 
     (
         cd _build

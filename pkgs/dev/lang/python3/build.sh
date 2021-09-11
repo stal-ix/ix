@@ -26,7 +26,7 @@ fi
 
 ./python.exe ./fix.py patch ./setup.py
 DUMP=1 ./python.exe ./setup.py build > data.json
-./python.exe ./fix.py ./data.json > Modules/Setup.local
+./python.exe ./fix.py ./data.json | grep -v 'nis' > Modules/Setup.local
 
 rm ./python.exe*
 

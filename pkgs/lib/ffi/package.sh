@@ -1,5 +1,6 @@
 # url https://github.com/libffi/libffi/releases/download/v3.4.2/libffi-3.4.2.tar.gz
 # md5 294b921e6cf9ab0fbaea4b639f8fdbe8
+# dep {{mix.if_linux('lib/linux')}}
 # dep dev/build/make tool/text/gnu/sed env/tools env/c env/bootstrap
 
 build() {
