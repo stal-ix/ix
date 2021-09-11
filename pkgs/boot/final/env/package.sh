@@ -1,1 +1,1 @@
-# run boot/final/musl boot/stage/6/env
+# run boot/stage/6/env

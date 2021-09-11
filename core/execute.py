@@ -35,10 +35,8 @@ def execute_cmd(c):
                         ss = str(i + 1)
 
                         yield ss + ' ' * (4 - len(ss)) + '| ' + l
-                    else:
-                        yield '----|'
 
-        script = '\n'.join(iter_lines()).strip().removesuffix('----|').strip()
+        script = '\n'.join(iter_lines()).strip()
 
         raise ce.Error(f'{descr} failed', context=script, exception=e)
 

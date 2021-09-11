@@ -34,6 +34,9 @@ cd *
 do_configure() {
 echo 'configure stage'
 
+{% block cflags %}
+{% endblock %}
+
 {% block preconf %}
 setup_compiler
 {% endblock %}

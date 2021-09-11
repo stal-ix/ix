@@ -3,10 +3,10 @@ def package(mix):
         'runtime': {
             'depends': [
                 'env/c/nort',
-                'lib/compiler_rt',
 {% if mix.platform.target.os == 'linux' %}
-                'lib/musl',
+                'lib/musl/full',
 {% endif %}
+                'lib/compiler_rt',
             ],
         },
     }
