@@ -127,6 +127,22 @@ class Package:
     def prepare_deps(self, v):
         return v.replace('\n', ' ').strip()
 
+    @property
+    def os(self):
+        return self.platform['target']['os']
+
+    def if_linux(self, v):
+        if self.os == 'linux':
+            return v
+
+        return ''
+
+    def if_darwin(self, v):
+        if self.os == 'darwin':
+            return v
+
+        return ''
+
     def template(self, name):
         path = os.path.join(self.name, name)
         tmpl = self.manager.env.get_template(path)

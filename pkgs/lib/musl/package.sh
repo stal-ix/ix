@@ -10,14 +10,14 @@
 {% endblock %}
 
 {% block cflags %}
-export CPPFLAGS="-D__libc_realloc=realloc -D__libc_free=free -D__libc_malloc=malloc $CPPFLAGS"
+export CPPFLAGS="-D__libc_realloc=realloc -D__libc_free=free -D__libc_malloc=malloc -D__libc_calloc=calloc $CPPFLAGS"
 >src/malloc/lite_malloc.c
 {% endblock %}
 
 {% block postinstall %}
 {% block relinkmusl %}
-find -type f obj | grep malloc | xargs rm
-ar q $out/lib/libmusl.a $(find -type f obj)
+rm -rf obj/src/malloc
+ar q $out/lib/libmusl.a $(find obj -type f | sort)
 ranlib $out/lib/libmusl.a
 {% endblock %}
 
