@@ -70,6 +70,8 @@ cd ..
 
 {% block postconf %}
 {% endblock %}
+
+export -p > $tmp/confenv
 }
 
 do_build() {
@@ -122,6 +124,7 @@ echo "build $out"
 do_unpack
 
 (do_configure)
+. $tmp/confenv
 (do_build)
 (do_install)
 (do_test)
