@@ -68,7 +68,9 @@ rm -rf "$tmp"
 BUILD_PY_SCRIPT = '''
 mix.header()
 
+# suc
 {build_script}
+# euc
 
 mix.footer()
 '''.strip()
@@ -123,14 +125,25 @@ class Package:
 
         self._u = cu.struct_hash([self._d, list(self.iter_env())])
 
+    def prepare_deps(self, v):
+        return v.replace('\n', ' ').strip()
+
     def template(self, name):
         path = os.path.join(self.name, name)
         tmpl = self.manager.env.get_template(path)
 
         try:
-            return tmpl.render(mix=self)
+            return self.strip_template(tmpl.render(mix=self))
         except Exception as e:
             raise ce.Error(f'can not render {path}: {e}')
+
+    def strip_template(self, v):
+        vv = v.replace('\n\n\n', '\n\n')
+
+        if vv == v:
+            return v
+
+        return self.strip_template(vv)
 
     @property
     def platform(self):
@@ -281,7 +294,10 @@ class Package:
 
             yield 'make_thrs', str(multiprocessing.cpu_count() + 2)
 
-        build = self._d['build']['script']
+        try:
+            build = self._d['build']['script']
+        except KeyError:
+            raise ce.Error(f'expect build script for {self.name}')
 
         return {
             'sh': self.build_sh_script,

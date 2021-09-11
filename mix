@@ -15,7 +15,13 @@ def main():
     try:
         cm.main(sys.argv[1:], os.path.normpath(os.path.abspath(__file__)))
     except ce.Error as e:
-        print(str(e))
+        if e.context:
+            print(f'Context:\n{e.context}')
+
+        if e.exception:
+            print(f'{e.exception.__class__.__name__}: {e.exception}')
+
+        print(f'{e}')
 
         return 1
     except KeyboardInterrupt:

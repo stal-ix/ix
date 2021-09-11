@@ -16,12 +16,12 @@ def execute_cmd(c):
     stdin = c.get('stdin', '')
 
     try:
-        return subprocess.run(c['args'], input=stdin.encode(), env=env, check=True)
+        return subprocess.run(c['args'], input=stdin.encode() or None, env=env, check=True)
     except Exception as e:
         def iter_lines():
             show = False
 
-            for i, l in enumerate(stdin.split('\n')):
+            for i, l in enumerate(stdin.strip().splitlines()):
                 if '# suc' in l:
                     show = True
                     continue
@@ -31,11 +31,16 @@ def execute_cmd(c):
                     continue
 
                 if show:
-                    yield str(i + 1) + '\t| ' + l
+                    if l.strip():
+                        ss = str(i + 1)
 
-        script = '\n'.join(iter_lines()).strip()
+                        yield ss + ' ' * (4 - len(ss)) + '| ' + l
+                    else:
+                        yield '----|'
 
-        raise ce.Error(f'{script}\n{descr} failed, {e}')
+        script = '\n'.join(iter_lines()).strip().removesuffix('----|').strip()
+
+        raise ce.Error(f'{descr} failed', context=script, exception=e)
 
 
 def iter_in(c):

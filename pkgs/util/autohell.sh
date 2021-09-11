@@ -1,7 +1,8 @@
 {% extends '//util/template.sh' %}
 
 {% block configure %}
-dash ./configure $COFLAGS --prefix="$out" {{self.coflags().replace('\n', ' ').strip()}}
+{% set coflags %}{% block coflags %}{% endblock %}{% endset %}
+dash ./configure $COFLAGS --prefix="$out" {{mix.prepare_deps(coflags)}}
 {% endblock %}
 
 {% block build %}
