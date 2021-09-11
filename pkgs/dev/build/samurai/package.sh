@@ -4,6 +4,8 @@
 build() {
     $unzip $src/*.zip && cd sam*
 
+    export CPPFLAGS="-Dwarn=samu_warn $CPPFLAGS"
+
     setup_compiler
 
     make PREFIX=$out CC=clang
