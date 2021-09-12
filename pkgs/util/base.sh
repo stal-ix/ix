@@ -34,6 +34,9 @@ for s in $src/*; do
     case $s in
         *touch)
         ;;
+        *zip)
+            $unzip $s
+        ;;
         *)
             $untar $s
         ;;

@@ -12,7 +12,11 @@ EOF
     chmod +x clang clang++
 
     ln -s clang gcc
+    ln -s clang c99
+    ln -s clang cc
+
     ln -s clang++ g++
+    ln -s clang++ c++
 
     export PATH="$(pwd):$PATH"
     export CC=$(which clang)
