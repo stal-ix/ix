@@ -1,7 +1,5 @@
-{% extends '//shell/dash/template/template.sh' %}
+{% extends '//shell/dash/minimal/package.sh' %}
 
 {% block deps %}
 # bld boot/stage/4/env
 {% endblock %}
-
-{% block conf %}{% endblock %}
