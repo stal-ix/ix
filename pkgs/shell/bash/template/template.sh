@@ -14,7 +14,6 @@ build() {
     dash ./configure $COFLAGS \
         --prefix=$out \
         --without-bash-malloc \
-        --disable-extended-glob-default \
         --enable-extended-glob \
         --enable-job-control \
         {{self.conf().replace('\n', ' ').strip()}}
