@@ -8,6 +8,10 @@
 {% include '//util/fetch_llvm.sh' %}
 {% endblock %}
 
+{% block postunpack %}
+cd compiler-rt
+{% endblock %}
+
 {% block build %}
 for x in lib/builtins/*.c; do
     clang $CPPFLAGS $CFLAGS -c $x
