@@ -1,2 +1,5 @@
+{% extends '//lib/compiler_rt/package.sh' %}
+
+{% block deps %}
 # bld boot/stage/5/env
-{% include '//util/build_compiler_rt.sh' %}
+{% endblock %}

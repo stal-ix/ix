@@ -1,5 +1,27 @@
-# bld env/c/nort boot/final/env
-{% if mix.platform.target.os == 'linux' %}
-# bld lib/musl
-{% endif %}
-{% include '//util/build_compiler_rt.sh' %}
+{% extends '//util/template.sh' %}
+
+{% block deps %}
+# bld {{'lib/musl' | linux}} env/c/nort boot/final/env
+{% endblock %}
+
+{% block fetch %}
+{% include '//util/fetch_llvm.sh' %}
+{% endblock %}
+
+{% block build %}
+for x in lib/builtins/*.c; do
+    clang $CPPFLAGS $CFLAGS -c $x
+done
+
+ar q libcompiler_rt.a *.o
+ranlib libcompiler_rt.a
+{% endblock %}
+
+{% block install %}
+mkdir $out/lib && cp libcompiler_rt.a $out/lib/
+{% endblock %}
+
+{% block env %}
+export CPPFLAGS="-I$out/include \$CPPFLAGS"
+export LDFLAGS="-L$out/lib -lcompiler_rt \$LDFLAGS"
+{% endblock %}
