@@ -1,29 +1,18 @@
+{% extends '//dev/build/pkg-config/package.sh' %}
+
+{% block deps %}
 # bld boot/lib/iconv
 # bld boot/stage/5/env
-{% include '//dev/build/pkg-config/version.sh' %}
+{% endblock %}
 
-build() {
-    $untar $src/pkg* && cd pkg*
+{% block pkgflags %}
+--with-internal-glib
+{% endblock %}
 
-    ln -s $(which dash) sh
-    setup_compiler
+{% block postconf %}
+cd glib && dash ./configure $COFLAGS --prefix=$out --with-libiconv=gnu --srcdir=.
+{% endblock %}
 
-    dash ./configure $COFLAGS \
-        --prefix=$out \
-        --with-internal-glib \
-        --disable-host-tool
-
-    (
-        cd glib
-
-        dash ./configure $COFLAGS \
-            --prefix=$out \
-            --with-libiconv=gnu \
-            --srcdir=.
-
-        make -j $make_thrs
-    )
-
-    make -j $make_thrs
-    make install
-}
+{% block prebuild %}
+cd glib && make -j $make_thrs
+{% endblock %}

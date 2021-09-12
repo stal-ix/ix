@@ -1,19 +1,21 @@
-# bld lib/glib lib/iconv env/std boot/final/env
-{% include 'version.sh' %}
+{% extends '//util/autohell.sh' %}
 
-build() {
-    $untar $src/pkg* && cd pkg*
+{% block fetch %}
+# url https://pkg-config.freedesktop.org/releases/pkg-config-0.29.2.tar.gz
+# md5 f6e931e319531b736fadc017f470e68a
+{% endblock %}
 
-    ln -s $(which dash) sh
-    export PATH="$(pwd):$PATH"
+{% block deps %}
+# bld boot/lib/iconv
+# bld boot/stage/5/env
+{% endblock %}
 
-    setup_compiler
+{% block coflags %}
+--disable-host-tool
+{% block pkgflags %}
+{% endblock %}
+{% endblock %}
 
-    dash ./configure $COFLAGS --prefix=$out --disable-host-tool
-    make -j $make_thrs
-    make install
-
-    cat << EOF > $out/env
+{% block env %}
 export PKG_CONFIG="$out/bin/pkg-config"
-EOF
-}
+{% endblock %}
