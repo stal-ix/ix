@@ -5,8 +5,9 @@
 # md5 e3059851715a7747f9813f37eaaf4c1d
 {% endblock %}
 
-{% block deps %}
-# dep boot/stage/2/shutil boot/stage/1/env
+{% block bld_deps %}
+boot/stage/2/shutil
+boot/stage/1/env
 {% endblock %}
 
 {% block unpack %}
