@@ -20,8 +20,6 @@ build() {
 
     setup_compiler
 
-    ln -s gcc cc
-
     make -f unix/Makefile macosx || true
     make prefix=$out MANDIR=$out/share/man/man1 -f unix/Makefile install
 }

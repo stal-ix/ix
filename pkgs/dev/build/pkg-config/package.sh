@@ -6,8 +6,11 @@
 {% endblock %}
 
 {% block deps %}
-# bld boot/lib/iconv
-# bld boot/stage/5/env
+# bld env/std
+# bld lib/intl
+# bld lib/glib
+# bld lib/iconv
+# bld boot/final/env
 {% endblock %}
 
 {% block coflags %}
