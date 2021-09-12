@@ -84,7 +84,7 @@ class Parser:
     def on_md5(self, k, v):
         k['build']['fetch'][-1]['md5'] = v
 
-    def on_dep(self, k, v):
+    def on_bld(self, k, v):
         self.on_build_depends(k, v)
 
     def on_build_depends(self, k, v):
@@ -125,11 +125,8 @@ class Parser:
         k.append(v)
 
     def on_lib(self, k, v):
-        self.on_dep(k, v)
+        self.on_bld(k, v)
         self.on_run(k, v)
-
-    def on_bld(self, k, v):
-        self.on_dep(k, v)
 
 
 def parse(s):
