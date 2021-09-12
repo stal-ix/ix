@@ -1,7 +1,5 @@
 # lib env/cmake
-# {{mix.if_linux('dep boot/lib/linux')}}
-# bld boot/lib/cxx
-# bld boot/stage/5/env
+# bld {{'boot/lib/linux' | linux}} boot/lib/cxx boot/stage/5/env
 # run boot/stage/6/samurai
 {% include '//util/fetch_cmake.sh' %}
 
