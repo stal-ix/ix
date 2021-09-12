@@ -1,7 +1,7 @@
 # url https://common-lisp.net/project/ecl/static/files/release/ecl-21.2.1.tgz
 # md5 0c9e0437dbf3a7f1b00da32b7794a3b0
-# dep lib/boehmgc lib/gmp lib/ffi
-# dep dev/build/make env/std
+# bld lib/boehmgc lib/gmp lib/ffi
+# bld dev/build/make env/std
 
 build() {
     $untar $src/ecl* && cd ecl*

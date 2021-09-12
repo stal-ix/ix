@@ -1,7 +1,7 @@
 # url https://ftp.gnu.org/gnu/mpc/mpc-1.2.1.tar.gz
 # md5 9f16c976c25bb0f76b50be749cd7a3a8
 # lib lib/gmp lib/mpfr
-# dep dev/build/make env/std
+# bld dev/build/make env/std
 
 build() {
     $untar $src/mpc* && cd mpc*

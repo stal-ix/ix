@@ -1,7 +1,7 @@
 # url https://github.com/git/git/archive/refs/tags/v2.32.0-rc1.tar.gz
 # md5 5977037fe36445a5b57872cb48335004
-# dep lib/z lib/curl lib/iconv lib/expat lib/pcre2 lib/openssl
-# dep dev/build/make dev/lang/perl5 dev/lang/python3 tool/text/gnu/gettext env/std
+# bld lib/z lib/curl lib/iconv lib/expat lib/pcre2 lib/openssl
+# bld dev/build/make dev/lang/perl5 dev/lang/python3 tool/text/gnu/gettext env/std
 # run shell/openssh
 
 build() {

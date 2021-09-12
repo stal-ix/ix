@@ -1,4 +1,4 @@
-# dep boot/stage/5/env
+# bld boot/stage/5/env
 {% include '//dev/build/samurai/version.sh' %}
 
 build() {

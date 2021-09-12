@@ -1,6 +1,6 @@
 # url http://ftp.gnu.org/gnu/screen/screen-4.8.0.tar.gz
 # md5 d276213d3acd10339cd37848b8c4ab1e
-# dep lib/ncurses dev/build/make env/std
+# bld lib/ncurses dev/build/make env/std
 
 build() {
     $untar $src/screen* && cd screen*

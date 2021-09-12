@@ -2,7 +2,7 @@
 # md5 07ba0e946bf6dcad36388675d2f2876f
 # lib lib/z lib/pcre lib/iconv lib/ffi lib/intl
 # lib {{'sys/framework/CoreServices sys/framework/Foundation' | darwin}}
-# dep dev/build/meson env/std boot/final/env
+# bld dev/build/meson env/std boot/final/env
 
 build() {
     $untar $src/glib* && cd glib*

@@ -1,6 +1,6 @@
 # url https://www.bytereef.org/software/mpdecimal/releases/mpdecimal-2.5.1.tar.gz
 # md5 18599e4ffcfe8cd93e0efa8f14f027eb
-# dep dev/build/make env/std
+# bld dev/build/make env/std
 
 build() {
     $untar $src/mpdecimal* && cd mpdecimal*

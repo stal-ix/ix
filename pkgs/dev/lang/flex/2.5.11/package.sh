@@ -2,8 +2,8 @@
 # md5 4e57770c7dfc2b1d113729f62d6ae3b6
 # url https://raw.githubusercontent.com/fosslinux/live-bootstrap/master/sysa/flex-2.5.11/patches/scan_l.patch
 # md5 ab3764132c0ed5b7f5829b78eb5a849a
-# dep dev/build/make dev/lang/lex dev/lang/byacc env/std
-# dep dev/build/automake dev/build/autoconf dev/build/libtool
+# bld dev/build/make dev/lang/lex dev/lang/byacc env/std
+# bld dev/build/automake dev/build/autoconf dev/build/libtool
 
 build() {
     $untar $src/flex* && cd flex*

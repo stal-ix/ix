@@ -2,6 +2,6 @@
 
 {% block deps %}
 # lib boot/stage/7/lib
-# dep {{'boot/lib/linux' | linux}}
-# dep boot/stage/6/cmake boot/stage/7/env
+# bld {{'boot/lib/linux' | linux}}
+# bld boot/stage/6/cmake boot/stage/7/env
 {% endblock %}

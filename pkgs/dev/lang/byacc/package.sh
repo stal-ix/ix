@@ -1,6 +1,6 @@
 # url https://invisible-island.net/datafiles/release/byacc.tar.gz
 # md5 ad027e9a1a78666e3e27924ce6854f97
-# dep dev/build/make env/std
+# bld dev/build/make env/std
 
 build() {
     $untar $src/byacc* && cd byacc*

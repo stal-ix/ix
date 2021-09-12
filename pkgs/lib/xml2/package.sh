@@ -1,6 +1,6 @@
 # url http://xmlsoft.org/sources/libxml2-2.9.12.tar.gz
 # md5 f433a39be087a9f0b197eb2307ad9f75
-# dep lib/iconv boot/final/env
+# bld lib/iconv boot/final/env
 
 build() {
     $untar $src/libxml* && cd libxml*

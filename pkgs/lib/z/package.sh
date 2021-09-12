@@ -6,7 +6,7 @@
 {% endblock %}
 
 {% block deps %}
-# dep env/c boot/final/env
+# bld env/c boot/final/env
 {% endblock %}
 
 {% block configure %}

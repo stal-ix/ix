@@ -1,7 +1,7 @@
 # url https://github.com/gabime/spdlog/archive/refs/tags/v1.8.5.tar.gz
 # md5 8755cdbc857794730a022722a66d431a
 # lib lib/cxx
-# dep dev/build/cmake env/std
+# bld dev/build/cmake env/std
 
 build() {
     $untar $src/v* && cd spdlog*

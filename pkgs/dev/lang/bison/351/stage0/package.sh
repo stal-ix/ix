@@ -1,6 +1,6 @@
 # url https://ftp.gnu.org/gnu/bison/bison-3.5.1.tar.xz
 # md5 6fc5fa4488832a65db934b9e93bd5d4c
-# dep lib/intl dev/lang/m4 dev/lang/flex dev/lang/perl5 dev/lang/bison/341 dev/build/make env/std
+# bld lib/intl dev/lang/m4 dev/lang/flex dev/lang/perl5 dev/lang/bison/341 dev/build/make env/std
 
 build() {
     $untar $src/bison* && cd bison*

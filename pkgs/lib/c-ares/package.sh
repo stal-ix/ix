@@ -1,6 +1,6 @@
 # url https://c-ares.haxx.se/download/c-ares-1.17.2.tar.gz
 # md5 3802264830c6886411dac606c66fdbf8
-# dep dev/build/make env/std
+# bld dev/build/make env/std
 
 build() {
     $untar $src/c* && cd c*

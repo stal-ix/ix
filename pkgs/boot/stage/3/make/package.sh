@@ -1,4 +1,4 @@
-# dep boot/stage/1/musl boot/stage/2/env
+# bld boot/stage/1/musl boot/stage/2/env
 {% include '//dev/build/make/version.sh' %}
 
 build() {

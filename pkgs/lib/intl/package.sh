@@ -4,7 +4,7 @@
 {% if mix.platform.target.os == 'darwin' %}
 # lib sys/framework/CoreFoundation
 {% endif %}
-# dep env/c boot/final/env
+# bld env/c boot/final/env
 
 build() {
     $untar $src/gettext* && cd gettext* && cd gettext-runtime

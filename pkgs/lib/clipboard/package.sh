@@ -3,7 +3,7 @@
 {% if mix.platform.target.os == 'darwin' %}
 # lib sys/framework/AppKit
 {% endif %}
-# dep dev/build/cmake dev/build/pkg-config env/std
+# bld dev/build/cmake dev/build/pkg-config env/std
 
 build() {
     $untar $src/v* && cd lib*

@@ -1,7 +1,7 @@
 # url https://www.apache.org/dist/serf/serf-1.3.9.tar.bz2
 # md5 370a6340ff20366ab088012cd13f2b57
 # lib lib/z lib/apr lib/openssl lib/apr-util
-# dep dev/build/scons tool/text/gnu/patch env/std
+# bld dev/build/scons tool/text/gnu/patch env/std
 
 build() {
     $untar $src/serf* && cd serf*

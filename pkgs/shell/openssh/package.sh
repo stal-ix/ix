@@ -4,7 +4,7 @@
 # md5 33cc7e83ce4fe6ecadd1283967f795c3
 # url https://raw.githubusercontent.com/Homebrew/patches/d8b2d8c2612fd251ac6de17bf0cc5174c3aab94c/openssh/patch-sshd.c-apple-sandbox-named-external.diff
 # md5 a50fb1d7c40ac7fac3360218cb37a38b
-# dep lib/z lib/edit lib/ldns lib/openssl dev/build/make dev/build/pkg-config tool/text/gnu/patch env/std
+# bld lib/z lib/edit lib/ldns lib/openssl dev/build/make dev/build/pkg-config tool/text/gnu/patch env/std
 
 build() {
     $untar $src/open* && cd open*

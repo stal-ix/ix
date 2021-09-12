@@ -1,8 +1,8 @@
 # url https://github.com/elfmz/far2l/archive/b246b95118c0d7c6d10b4e94ec9b3bc7e24c3a7c.zip
 # md5 26e676988fa5b47ed211281e6140d371
-# dep lib/ssh lib/pcre lib/spdlog lib/archive lib/xerces-c
-# dep lib/uchardet lib/fmt {{mix.if_linux('lib/linux')}}
-# dep dev/build/pkg-config dev/build/cmake dev/lang/m4 env/std
+# bld lib/ssh lib/pcre lib/spdlog lib/archive lib/xerces-c
+# bld lib/uchardet lib/fmt {{mix.if_linux('lib/linux')}}
+# bld dev/build/pkg-config dev/build/cmake dev/lang/m4 env/std
 
 build() {
     $unzip $src/*.zip && cd far*

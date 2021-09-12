@@ -1,4 +1,4 @@
-# dep lib/archive env/tools
+# bld lib/archive env/tools
 
 build() {
     cd $out && cp -R $(dirname $(which bsdtar)) ./

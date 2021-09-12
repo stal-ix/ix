@@ -195,7 +195,7 @@ def gen_sh(p):
             yield '# lib ' + ' '.join(lib)
 
         if dep:
-            yield '# dep ' + ' '.join(dep)
+            yield '# bld ' + ' '.join(dep)
 
         if run:
             yield '# run ' + ' '.join(run)

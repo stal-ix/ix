@@ -1,7 +1,7 @@
 # url https://ftp.gnu.org/pub/gnu/gettext/gettext-0.21.tar.gz
 # md5 28b1cd4c94a74428723ed966c38cf479
 # lib lib/iconv
-# dep dev/build/make env/std
+# bld dev/build/make env/std
 
 build() {
     $untar $src/gettext* && cd gettext* && cd libtextstyle

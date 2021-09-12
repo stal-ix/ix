@@ -1,6 +1,6 @@
 # url https://www.kernel.org/pub/linux/kernel/v5.x/linux-5.13.12.tar.xz
 # md5 6e1728b2021ca19cc9273f080e6c44c7
-# dep boot/stage/5/env
+# bld boot/stage/5/env
 
 build() {
     $untar $src/linux* && cd linux*

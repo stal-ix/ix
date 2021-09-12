@@ -1,7 +1,7 @@
 # url https://nlnetlabs.nl/downloads/ldns/ldns-1.7.1.tar.gz
 # md5 166262a46995d9972aba417fd091acd5
 # lib lib/openssl
-# dep dev/build/make env/std
+# bld dev/build/make env/std
 
 build() {
     $untar $src/ldns* && cd ldns*

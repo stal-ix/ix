@@ -4,7 +4,7 @@
 {% if mix.platform.target.os == 'darwin' %}
 # lib sys/framework/SystemConfiguration
 {% endif %}
-# dep dev/build/make dev/build/pkg-config env/std
+# bld dev/build/make dev/build/pkg-config env/std
 
 build() {
     $untar $src/curl* && cd curl*

@@ -7,7 +7,7 @@
 
 {% block deps %}
 # lib lib/z lib/xz lib/lz4 lib/intl lib/zstd lib/bzip2 lib/iconv lib/expat
-# dep dev/build/make env/tools env/c env/bootstrap
+# bld dev/build/make env/tools env/c env/bootstrap
 {% endblock %}
 
 {% block coflags %}

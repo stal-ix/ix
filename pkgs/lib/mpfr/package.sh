@@ -1,7 +1,7 @@
 # url https://www.mpfr.org/mpfr-current/mpfr-4.1.0.tar.xz
 # md5 bdd3d5efba9c17da8d83a35ec552baef
 # lib lib/gmp
-# dep dev/build/make env/std
+# bld dev/build/make env/std
 
 build() {
     $untar $src/mpfr* && cd mpfr*

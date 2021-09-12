@@ -3,7 +3,7 @@
 # url https://github.com/ivmai/bdwgc/commit/5668de71107022a316ee967162bc16c10754b9ce.patch?full_index=1
 # md5 10435b33b8cf10ff0afa043f04ccc324
 # lib lib/cxx lib/atomicops
-# dep dev/build/make dev/build/pkg-config env/std
+# bld dev/build/make dev/build/pkg-config env/std
 
 build() {
     $untar $src/gc* && cd gc*

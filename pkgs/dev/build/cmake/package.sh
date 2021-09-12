@@ -1,7 +1,7 @@
 # lib dev/build/samurai
-# dep lib/z lib/xz lib/uv lib/cxx lib/curl lib/bzip2
-# dep lib/expat lib/archive {{mix.if_linux('lib/linux')}}
-# dep env/std boot/final/env
+# bld lib/z lib/xz lib/uv lib/cxx lib/curl lib/bzip2
+# bld lib/expat lib/archive {{mix.if_linux('lib/linux')}}
+# bld env/std boot/final/env
 # run env/cmake
 {% include '//util/fetch_cmake.sh' %}
 

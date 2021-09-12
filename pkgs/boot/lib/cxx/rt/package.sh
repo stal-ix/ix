@@ -1,7 +1,7 @@
 # url https://github.com/libcxxrt/libcxxrt/archive/refs/heads/master.zip
 # md5 3b43179e518dd0a54362267b255b9d24
 # lib boot/lib/cxx/unwind
-# dep boot/stage/5/env
+# bld boot/stage/5/env
 
 build() {
     {% include 'build.sh' %}

@@ -1,7 +1,7 @@
 {% if mix.platform.target.os == 'linux' %}
-# dep boot/lib/linux
+# bld boot/lib/linux
 {% endif %}
-# dep boot/lib/z boot/lib/compiler_rt boot/stage/5/env
+# bld boot/lib/z boot/lib/compiler_rt boot/stage/5/env
 {% include '//dev/lang/python3/version.sh' %}
 
 build() {

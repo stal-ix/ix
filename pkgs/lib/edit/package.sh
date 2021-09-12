@@ -1,7 +1,7 @@
 # url http://thrysoee.dk/editline/libedit-20210522-3.1.tar.gz
 # md5 6ad9e9208daf031adf1ebc64441769e0
 # lib lib/ncurses
-# dep dev/build/make env/std
+# bld dev/build/make env/std
 
 build() {
     $untar $src/libedit* && cd libedit*

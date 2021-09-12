@@ -1,8 +1,8 @@
 {% extends '//util/template.sh' %}
 
 {% block deps %}
-# dep {{'lib/linux' | linux}}
-# dep env/c boot/final/env
+# bld {{'lib/linux' | linux}}
+# bld env/c boot/final/env
 {% endblock %}
 
 {% block fetch%}

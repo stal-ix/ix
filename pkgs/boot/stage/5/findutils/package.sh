@@ -1,4 +1,4 @@
-# dep boot/stage/4/env
+# bld boot/stage/4/env
 {% include '//tool/gnu/findutils/version.sh' %}
 
 build() {

@@ -1,5 +1,5 @@
-# dep env/c/nort boot/final/env
+# bld env/c/nort boot/final/env
 {% if mix.platform.target.os == 'linux' %}
-# dep lib/musl
+# bld lib/musl
 {% endif %}
 {% include '//util/build_compiler_rt.sh' %}

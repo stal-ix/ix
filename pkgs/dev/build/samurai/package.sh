@@ -1,4 +1,4 @@
-# dep dev/build/make env/std
+# bld dev/build/make env/std
 {% include 'version.sh' %}
 
 build() {

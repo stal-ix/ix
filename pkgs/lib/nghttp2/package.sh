@@ -1,7 +1,7 @@
 # url https://github.com/nghttp2/nghttp2/releases/download/v1.43.0/nghttp2-1.43.0.tar.xz
 # md5 c1d607bf3830000acd7a51f0058f4bd2
 # lib lib/z lib/c-ares lib/openssl
-# dep dev/build/make dev/build/pkg-config env/std
+# bld dev/build/make dev/build/pkg-config env/std
 
 build() {
     $untar $src/nghttp2* && cd nghttp2*

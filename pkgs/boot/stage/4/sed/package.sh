@@ -1,4 +1,4 @@
-# dep boot/stage/4/coreutils boot/stage/3/env
+# bld boot/stage/4/coreutils boot/stage/3/env
 {% include '//tool/text/gnu/sed/version.sh' %}
 
 build() {

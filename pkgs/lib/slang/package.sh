@@ -1,7 +1,7 @@
 # url https://storage.yandexcloud.net/mix-cache/slang-2.3.2.tar.bz2
 # md5 c2d5a7aa0246627da490be4e399c87cb
 # lib lib/z lib/pcre lib/iconv lib/readline lib/oniguruma
-# dep dev/build/make env/std
+# bld dev/build/make env/std
 
 build() {
     $untar $src/slang* && cd slang*

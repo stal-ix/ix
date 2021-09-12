@@ -1,7 +1,7 @@
 {% extends '//util/cmake.sh' %}
 
 {% block extradeps %}
-# dep {{mix.if_linux('lib/linux')}} boot/final/cxx boot/final/env/clang
+# bld {{mix.if_linux('lib/linux')}} boot/final/cxx boot/final/env/clang
 {% endblock %}
 
 {% block deps %}

@@ -1,7 +1,7 @@
 # url https://github.com/libevent/libevent/releases/download/release-2.1.12-stable/libevent-2.1.12-stable.tar.gz
 # md5 b5333f021f880fe76490d8a799cd79f4
 # lib lib/openssl
-# dep dev/build/pkg-config dev/build/make dev/lang/python3 env/std
+# bld dev/build/pkg-config dev/build/make dev/lang/python3 env/std
 
 build() {
     $untar $src/libevent* && cd libevent*

@@ -1,4 +1,4 @@
-# dep lib/z boot/final/env
+# bld lib/z boot/final/env
 
 build() {
     mkdir $out/bin && cd $out/bin && cp $(which minigzip) minigzip

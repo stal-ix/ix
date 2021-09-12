@@ -1,7 +1,7 @@
 # url https://ftp.gnu.org/gnu/readline/readline-8.1.tar.gz
 # md5 e9557dd5b1409f5d7b37ef717c64518e
 # lib lib/ncurses
-# dep dev/build/make env/std
+# bld dev/build/make env/std
 
 build() {
     $untar $src/readline* && cd readline*

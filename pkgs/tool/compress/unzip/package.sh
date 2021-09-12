@@ -2,7 +2,7 @@
 # md5 62b490407489521db863b523a7f86375
 # url https://deb.debian.org/debian/pool/main/u/unzip/unzip_6.0-26.debian.tar.xz
 # md5 e2bf7537e1ca821f6059ee84e7ae76a5
-# dep dev/build/make tool/text/gnu/patch env/tools env/c env/bootstrap
+# bld dev/build/make tool/text/gnu/patch env/tools env/c env/bootstrap
 
 build() {
     $untar $src/unzip* && cd unzip*

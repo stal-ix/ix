@@ -1,8 +1,8 @@
 {% extends '//util/autohell.sh' %}
 
 {% block deps %}
-# dep lib/intl lib/iconv lib/sigsegv
-# dep env/c tool/text/gnu/patch boot/final/env
+# bld lib/intl lib/iconv lib/sigsegv
+# bld env/c tool/text/gnu/patch boot/final/env
 {% endblock %}
 
 {% block fetch %}

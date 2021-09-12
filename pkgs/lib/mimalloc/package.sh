@@ -6,8 +6,8 @@
 {% endblock %}
 
 {% block deps %}
-# dep {{mix.if_linux('lib/musl')}}
-# dep env/c/nort boot/final/env
+# bld {{mix.if_linux('lib/musl')}}
+# bld env/c/nort boot/final/env
 {% endblock %}
 
 {% block cmflags %}

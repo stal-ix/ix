@@ -6,7 +6,7 @@
 {% endblock %}
 
 {% block deps %}
-# dep env/c/nort boot/final/env
+# bld env/c/nort boot/final/env
 {% endblock %}
 
 {% block cflags %}

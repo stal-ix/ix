@@ -1,5 +1,5 @@
 {% include '//util/fetch_llvm.sh' %}
-# dep boot/stage/5/env
+# bld boot/stage/5/env
 
 build() {
     {% include 'build.sh' %}
