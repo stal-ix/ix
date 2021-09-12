@@ -8,5 +8,4 @@
 --with-installed-readline
 --enable-readline
 --with-curses
---enable-prompt-string-decoding
 {% endblock %}

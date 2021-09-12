@@ -18,5 +18,6 @@ rm y.tab.* parser-built
 --enable-extended-glob
 --enable-job-control
 --enable-static-link
+--enable-prompt-string-decoding
 {% block bashflags %}{% endblock %}
 {% endblock %}

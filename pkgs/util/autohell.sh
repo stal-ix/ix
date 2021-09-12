@@ -6,7 +6,7 @@ dash ./configure $COFLAGS --prefix="$out" {{mix.prepare_deps(coflags)}}
 {% endblock %}
 
 {% block build %}
-make -j $make_thrs
+make $MAKE_FLAGS -j $make_thrs || make $MAKE_FLAGS
 {% endblock %}
 
 {% block install %}

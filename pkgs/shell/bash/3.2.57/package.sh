@@ -8,3 +8,9 @@
 {% block bashdeps %}
 # bld lib/readline lib/ncurses lib/intl lib/iconv
 {% endblock %}
+
+{% block bashflags %}
+--with-installed-readline
+--enable-readline
+--with-curses
+{% endblock %}
