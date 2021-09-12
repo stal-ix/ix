@@ -1,13 +1,14 @@
+{% extends '//util/autohell.sh' %}
+
+{% block fetch %}
+# url https://ftp.gnu.org/gnu/diffutils/diffutils-3.7.tar.xz
+# md5 4824adc0e95dbbf11dfbdfaad6a1e461
+{% endblock %}
+
+{% block deps %}
 # bld lib/intl lib/iconv lib/sigsegv env/c boot/final/env
-{% include 'version.sh' %}
+{% endblock %}
 
-build() {
-    $untar $src/diffutils-* && cd diffutils-*
-
-    dash ./configure $COFLAGS --prefix=$out --disable-gcc-warnings
-
-    echo 'all install:' > man/Makefile
-
-    make -j $make_thrs
-    make install
-}
+{% block postconf %}
+echo 'all install:' > man/Makefile
+{% endblock %}
