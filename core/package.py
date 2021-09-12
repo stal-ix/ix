@@ -40,11 +40,7 @@ cd "$tmp" && mkdir tmp && echo > tmpenv
 export TMPDIR="$tmp/tmp"
 
 (IFS=":"; for i in $PATH; do line="$i:$line"; done; for i in $line; do echo "$i"; done) | while read p; do
-    which dirname
-    dirname qw
     env=$(dirname "$p")/env
-
-    which test
 
     if test -f "$env"; then
         cat "$env" >> "$tmp/tmpenv"
