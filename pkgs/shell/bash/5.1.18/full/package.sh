@@ -1,11 +1,10 @@
-{% extends '//shell/bash/template/template.sh' %}
+{% extends '//shell/bash/5.1.18/template/template.sh' %}
 
-{% block deps %}
+{% block bashdeps %}
 # dep lib/readline lib/ncurses lib/iconv lib/intl
-# dep dev/lang/byacc dev/build/make env/std
 {% endblock %}
 
-{% block conf %}
+{% block bashflags %}
 --with-installed-readline
 --enable-readline
 --with-curses
