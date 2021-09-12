@@ -5,6 +5,11 @@
 # bld boot/stage/2/env
 {% endblock %}
 
-{% block relinkmusl %}{% endblock %}
-{% block cflags %}{% endblock %}
-{% block extractalloc %}{% endblock %}
+{% block relinkmusl %}
+{% endblock %}
+
+{% block cflags %}
+{% endblock %}
+
+{% block extractalloc %}
+{% endblock %}
