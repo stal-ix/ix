@@ -16,8 +16,6 @@ build() {
 
     >lib/fnmatch.c
 
-    dash ./build.sh
-
-    ./make -j $make_thrs
-    ./make install
+    make -j $make_thrs
+    make install
 }

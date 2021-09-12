@@ -25,7 +25,7 @@ export UCBINST=install
 export MANINST=install
 
 export PATH="$DEFBIN:$PATH"
-export MAKE="bmake RANLIB=$RANLIB"
+export MAKE="make RANLIB=$RANLIB"
 
 cd heirloom
 

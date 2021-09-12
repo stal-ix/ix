@@ -9,6 +9,6 @@ build() {
     setup_compiler
     ln -s $(which clang) cc
 
-    bmake
-    bmake PREFIX="$out" install
+    make
+    make PREFIX="$out" install
 }
