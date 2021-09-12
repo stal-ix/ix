@@ -235,8 +235,6 @@ class Package:
         return self.src_dir_for(self._d['build']['fetch'])
 
     def load_package(self, name):
-        print(name)
-
         try:
             return self.manager.load_package(name)
         except FileNotFoundError:
