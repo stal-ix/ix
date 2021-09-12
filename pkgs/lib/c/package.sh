@@ -1,1 +1,1 @@
-# run {{mix.if_linux('lib/musl lib/mimalloc')}}
+# run {{'lib/musl lib/mimalloc' | linux}}

@@ -1,7 +1,16 @@
 import os
 
+import core.error as ce
 import core.manager as cm
 import core.cmd_line as cc
+
+
+class Error(Exception):
+    def __init__(self, slave, line, lineno):
+        Exception.__init__(self)
+        self.slave = slave
+        self.line = line
+        self.lineno = lineno
 
 
 def tokens(s):
@@ -21,14 +30,17 @@ class Parser:
         body = ''
         keys = {}
 
-        for l in s.split('\n'):
-            if body:
-                body += l + '\n'
-            elif l.startswith('# '):
-                self.on_key(keys, l[2:].strip())
-            else:
-                if l.strip():
-                    body = l + '\n'
+        for no, l in enumerate(s.split('\n')):
+            try:
+                if body:
+                    body += l + '\n'
+                elif l.startswith('# '):
+                    self.on_key(keys, l[2:].strip())
+                else:
+                    if l.strip():
+                        body = l + '\n'
+            except Exception as e:
+                raise Error(e, l, no + 1)
 
         if 'build()' in body:
             keys['build']['script'] = {
@@ -40,10 +52,15 @@ class Parser:
 
     def on_key(self, keys, l):
         p = l.find(' ')
-        k = l[:p].replace('-', '_')
-        v = l[p + 1:].strip()
 
-        getattr(self, 'on_' + k)(keys, v)
+        if p > 0:
+            k = l[:p]
+            v = l[p + 1:]
+        else:
+            k = l
+            v = ''
+
+        getattr(self, 'on_' + k.replace('-', '_'))(keys, v.strip())
 
     def on_build_fetch_url(self, k, v):
         self.on_url(k, v)

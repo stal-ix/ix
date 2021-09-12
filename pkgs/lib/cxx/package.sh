@@ -1,7 +1,7 @@
 {% extends '//util/template.sh' %}
 
 {% block deps %}
-# dep {{mix.if_linux('lib/linux')}}
+# dep {{'lib/linux' | linux}}
 # dep env/c boot/final/env
 {% endblock %}
 

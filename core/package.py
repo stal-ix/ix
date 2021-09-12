@@ -120,7 +120,13 @@ class Package:
         try:
             self._d = exec_mod(self.template('package.py'), self)
         except FileNotFoundError:
-            self._d = compile_sh(self.template('package.sh'))
+            try:
+                self._d = compile_sh(self.template('package.sh'))
+            except cs.Error as e:
+                text = f'can not render {self.name}'
+                context = f'{e.lineno}: {e.line}'
+
+                raise ce.Error(text, context=context, exception=e.slave)
 
         self._u = cu.struct_hash([self._d, list(self.iter_env())])
 

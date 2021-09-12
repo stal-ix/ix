@@ -1,9 +1,7 @@
 # url https://download-fallback.gnome.org/sources/glib/2.68/glib-2.68.4.tar.xz
 # md5 07ba0e946bf6dcad36388675d2f2876f
 # lib lib/z lib/pcre lib/iconv lib/ffi lib/intl
-{% if mix.platform.target.os == 'darwin' %}
-# lib sys/framework/CoreServices sys/framework/Foundation
-{% endif %}
+# lib {{'sys/framework/CoreServices sys/framework/Foundation' | darwin}}
 # dep dev/build/meson env/std boot/final/env
 
 build() {

@@ -1,4 +1,5 @@
 import sys
+import profile
 import importlib
 
 
@@ -56,4 +57,8 @@ def main(args, binary):
         'binary': binary,
     }
 
-    importlib.import_module(k).__dict__['cli_' + v](ctx)
+    def run():
+        importlib.import_module(k).__dict__['cli_' + v](ctx)
+
+    #profile.runctx('run()', locals(), globals())
+    run()
