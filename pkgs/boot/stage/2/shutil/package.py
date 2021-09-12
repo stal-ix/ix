@@ -4,8 +4,8 @@ def package(mix):
             'script': mix.files.build_py,
             'fetch': [
                 {
-                    'url': 'https://www.crufty.net/ftp/pub/sjg/bmake.tar.gz',
-                    'md5': 'e3059851715a7747f9813f37eaaf4c1d',
+                    'url': 'https://github.com/pg83/shutil/archive/23f679883ebe41fe225f44202bb9ebd49db9a162.zip',
+                    'md5': '956db4f88a97fc1582f6b324ed5686cc',
                 },
             ],
             'depends': [

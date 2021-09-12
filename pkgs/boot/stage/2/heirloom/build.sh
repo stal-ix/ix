@@ -153,7 +153,7 @@ for i in file find sed cksum cmp col cut dc df dircmp du ed expand fmt fold geto
     (
         cd $i
 
-        $MAKE LDFLAGS="$LDFLAGS" -f Makefile.mk && $MAKE -f Makefile.mk install
+        $MAKE PATH="$PATH" LDFLAGS="$LDFLAGS" -f Makefile.mk && $MAKE -f Makefile.mk install
     )
 done
 
@@ -178,13 +178,15 @@ done
 export YACC=yacc
 export PATH="$(pwd):$PATH"
 
-ln -s $SHELL sh
+# for factor
+ln -s $(which dash) sh
+export PATH="$PWD:$PATH"
 
 export CPPFLAGS="$PRCPPFLAGS"
 
 for i in bc expr factor grep; do
     (
-        cd $i && $MAKE LDFLAGS="$LDFLAGS" -f Makefile.mk && $MAKE -f Makefile.mk install
+        cd $i && $MAKE PATH="$PATH" LDFLAGS="$LDFLAGS" -f Makefile.mk && $MAKE -f Makefile.mk install
     )
 done
 

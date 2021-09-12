@@ -4,30 +4,19 @@ cd $out && $untar $src/bmake* && cd bmake
 export CPPFLAGS="-Imissing $CPPFLAGS"
 {% endif %}
 
-clang $CPPFLAGS $CFLAGS $LDFLAGS -o tool -x c - << EOF
-#include <stdio.h>
-
-int main() {
-    char buf[1024];
-    ssize_t n;
-
-    while ((n = fread(buf, 1, sizeof(buf), stdin)) > 0) {
-        fwrite(buf, 1, n, stdout);
-    }
-}
-EOF
-
-./tool << EOF > config.h
+cat << EOF > config.h
 {% include 'config.h' %}
 EOF
 
 {% if mix.platform.target.os == 'linux' %}
-./tool << EOF >> make.h
+cat << EOF >> make.h
 #undef MAKE_RCSID
 #define MAKE_RCSID(x)
 #define __COPYRIGHT(x)
 EOF
 {% endif %}
+
+mkdir $out/bin
 
 clang \
     -w $CPPFLAGS $CFLAGS $LDFLAGS -I. \
@@ -39,4 +28,4 @@ clang \
     arch.c buf.c compat.c cond.c dir.c enum.c for.c getopt.c \
     hash.c job.c lst.c main.c make.c make_malloc.c meta.c metachar.c \
     parse.c sigcompat.c str.c stresep.c suff.c targ.c trace.c util.c var.c \
-    -o bmake
+    -o $out/bin/bmake
