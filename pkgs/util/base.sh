@@ -45,8 +45,18 @@ cd *
 
 {% block postunpack%}
 {% endblock %}
+}
+
+do_patch() {
+echo 'patch step'
+
+{% block prepatch %}
+{% endblock %}
 
 {% block patch %}
+{% endblock %}
+
+{% block postpatch %}
 {% endblock %}
 }
 
@@ -117,6 +127,7 @@ echo "build $out"
 
 do_unpack
 
+(do_patch)
 (do_configure)
 . $tmp/confenv
 (do_build)
