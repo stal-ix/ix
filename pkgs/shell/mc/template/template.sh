@@ -6,7 +6,7 @@
 {% endblock %}
 
 {% block deps %}
-# bld lib/intl lib/glib lib/iconv lib/{{self.typ()}}
+# bld lib/intl lib/glib lib/iconv lib/{{self.typ().strip()}}
 # bld dev/build/make dev/build/pkg-config env/std
 # run tool/compress/bsdtar tool/compress/bzip2 tool/compress/gzip
 # run tool/compress/p7zip tool/compress/unrar tool/compress/unzip
@@ -18,6 +18,6 @@ export CPPFLAGS="-Dupdate_panels=update_panels_mc -Dtilde_expand=tilde_expand_mc
 {% endblock %}
 
 {% block coflags %}
---with-screen={{self.typ()}}
+--with-screen={{self.typ().strip()}}
 --with-search-engine=glib
 {% endblock %}
