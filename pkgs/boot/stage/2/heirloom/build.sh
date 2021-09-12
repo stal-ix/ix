@@ -120,11 +120,13 @@ for i in echo pwd env rmdir touch basename dirname chown wc tr ln xargs uniq tim
     )
 done
 
+{% if mix.platform.target.os == 'linux' %}
 echo 'extern void* memalign(size_t, size_t);' > libcommon/memalign.h
 
 (
     cd libcommon && rm *.o *.a && $MAKE -f Makefile.mk
 )
+{% endif %}
 
 for i in cp cat copy; do
     (
