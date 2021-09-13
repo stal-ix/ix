@@ -10,7 +10,7 @@
 {% endblock %}
 
 {% block cflags %}
-export CPPFLAGS="-Dwarn=samu_warn $CPPFLAGS"
+export CPPFLAGS="-Dwarn=samu_warn ${CPPFLAGS}"
 {% endblock %}
 
 {% block build %}

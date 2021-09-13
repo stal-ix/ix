@@ -13,7 +13,7 @@ build() {
     ln -s $(which dash) sh
     setup_compiler
 
-    dash ../src/configure $COFLAGS \
+    dash ../src/configure ${COFLAGS} \
         --enable-threads=yes \
         --enable-libatomic=system \
         --enable-gmp=system \

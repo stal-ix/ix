@@ -5,7 +5,7 @@
 build() {
     $untar ${src}/p7zip* && cd p7zip*
 
-    export CXXFLAGS="-std=c++03 $CXXFLAGS"
+    export CXXFLAGS="-std=c++03 ${CXXFLAGS}"
 
     setup_compiler
 

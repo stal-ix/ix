@@ -8,16 +8,16 @@ build() {
     export LD=ld
 
 {% if mix.platform.target.os == 'darwin' %}
-    export CPPFLAGS="-Dstat64=stat -Dfstat64=fstat -Dlstat64=lstat $CPPFLAGS"
+    export CPPFLAGS="-Dstat64=stat -Dfstat64=fstat -Dlstat64=lstat ${CPPFLAGS}"
 {% else %}
     ln -s $(which ld.lld) ld
 {% endif %}
 
     ln -s $(which dash) sh
 
-    export PATH="$(pwd):$PATH"
+    export PATH="$(pwd):${PATH}"
 
-    dash ./configure $COFLAGS --prefix="${out}"
+    dash ./configure ${COFLAGS} --prefix="${out}"
     make -j ${make_thrs}
     make install
 }

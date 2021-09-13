@@ -6,11 +6,11 @@
 build() {
     $unzip ${src}/*.zip && cd cctools* && cd cctools
 
-    export CPPFLAGS="-D__crashreporter_info__=__crashreporter_info_ld__ $CPPFLAGS"
+    export CPPFLAGS="-D__crashreporter_info__=__crashreporter_info_ld__ ${CPPFLAGS}"
 
     sed -e 's/__arm__/__eat_shit__/' -i configure
 
-    dash ./configure $COFLAGS \
+    dash ./configure ${COFLAGS} \
         --prefix=${out} \
         --with-sysroot=$OSX_SDK
 

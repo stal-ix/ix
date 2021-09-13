@@ -17,7 +17,7 @@ EOF
 
     cd ..
 
-    dash ./configure $COFLAGS \
+    dash ./configure ${COFLAGS} \
         --prefix=${out} \
         --without-shared \
         --without-debug \
@@ -38,8 +38,8 @@ EOF
     cd ${out}/lib && (for i in `ls *.a`; do q=`echo $i | tr -d 'w'`; ln -s $i $q; done)
 
     cat << EOF > ${out}/env
-export COFLAGS="--with-curses=${out} --with-ncurses=${out} \$COFLAGS"
-export CPPFLAGS="-I${out}/include \$CPPFLAGS"
-export LDFLAGS="-L${out}/lib -lncurses -ltinfo -lpanel -lmenu -lform \$LDFLAGS"
+export COFLAGS="--with-curses=${out} --with-ncurses=${out} \${COFLAGS}"
+export CPPFLAGS="-I${out}/include \${CPPFLAGS}"
+export LDFLAGS="-L${out}/lib -lncurses -ltinfo -lpanel -lmenu -lform \${LDFLAGS}"
 EOF
 }

@@ -15,7 +15,7 @@ build() {
     sed -e 's|/usr|/eat/shit|' -i ./setup.py
     sed -e 's|/usr|/eat/shit|' -i ./Makefile.pre.in
 
-    dash ./configure $COFLAGS \
+    dash ./configure ${COFLAGS} \
         --prefix=${out} \
         --with-ensurepip=no
 

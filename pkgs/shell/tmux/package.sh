@@ -16,7 +16,7 @@ rm cmd-parse.c
 {% endblock %}
 
 {% block cflags %}
-export COFLAGS=$(echo $COFLAGS | tr ' ' '\n' | grep -v 'static' | tr '\n' ' ')
+export COFLAGS=$(echo ${COFLAGS} | tr ' ' '\n' | grep -v 'static' | tr '\n' ' ')
 {% endblock %}
 
 {% block coflags %}

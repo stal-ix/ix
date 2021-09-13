@@ -6,12 +6,12 @@ EOF
 
 setup_compiler
 
-export COFLAGS=$(echo "$COFLAGS" | tr ' ' '\n' | grep -v 'with-system-ffi' | tr '\n' ' ')
+export COFLAGS=$(echo "${COFLAGS}" | tr ' ' '\n' | grep -v 'with-system-ffi' | tr '\n' ' ')
 
 sed -e 's/MULTIARCH=\$.*/MULTIARCH=/' -i ./configure
 sed -e 's/ffi_type ffi_type.*//' -e 's/FFI_TYPE_LONGDOUBLE }.*//' -i Modules/_ctypes/cfield.c
 
-dash ./configure $COFLAGS \
+dash ./configure ${COFLAGS} \
      --prefix=${out} \
      --with-ensurepip=no \
      --with-system-libmpdec \

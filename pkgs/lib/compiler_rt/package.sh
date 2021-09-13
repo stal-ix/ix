@@ -14,7 +14,7 @@ cd compiler-rt
 
 {% block build %}
 for x in lib/builtins/*.c; do
-    clang $CPPFLAGS $CFLAGS -c $x
+    clang ${CPPFLAGS} ${CFLAGS} -c $x
 done
 
 ar q libcompiler_rt.a *.o
@@ -26,6 +26,6 @@ mkdir ${out}/lib && cp libcompiler_rt.a ${out}/lib/
 {% endblock %}
 
 {% block env %}
-export CPPFLAGS="-I${out}/include \$CPPFLAGS"
-export LDFLAGS="-L${out}/lib -lcompiler_rt \$LDFLAGS"
+export CPPFLAGS="-I${out}/include \${CPPFLAGS}"
+export LDFLAGS="-L${out}/lib -lcompiler_rt \${LDFLAGS}"
 {% endblock %}

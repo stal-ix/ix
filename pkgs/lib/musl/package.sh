@@ -10,7 +10,7 @@
 {% endblock %}
 
 {% block cflags %}
-export CPPFLAGS="-D__libc_realloc=realloc -D__libc_free=free -D__libc_malloc=malloc -D__libc_calloc=calloc $CPPFLAGS"
+export CPPFLAGS="-D__libc_realloc=realloc -D__libc_free=free -D__libc_malloc=malloc -D__libc_calloc=calloc ${CPPFLAGS}"
 >src/malloc/lite_malloc.c
 {% endblock %}
 
@@ -35,14 +35,14 @@ rm libc.a && mv libmusl.a libc.a
 {% endblock %}
 
 {% block env %}
-export CPPFLAGS="-nostdinc -isystem ${out}/include \$CPPFLAGS"
-export LDFLAGS="-L${out}/lib -lcrt -lc \$LDFLAGS"
+export CPPFLAGS="-nostdinc -isystem ${out}/include \${CPPFLAGS}"
+export LDFLAGS="-L${out}/lib -lcrt -lc \${LDFLAGS}"
 {% endblock %}
 
 {% block test %}
 . ${out}/env
 
-gcc $CPPFLAGS $CFLAGS $LDFLAGS -x c -o main - << EOF
+gcc ${CPPFLAGS} ${CFLAGS} ${LDFLAGS} -x c -o main - << EOF
 #include <stdio.h>
 
 int main() {

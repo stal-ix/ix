@@ -10,7 +10,7 @@
 {% endblock %}
 
 {% block cflags %}
-export CPPFLAGS="-DNDEBUG -U__SSE2__ -I${out}/include/c++/v1 $CPPFLAGS"
+export CPPFLAGS="-DNDEBUG -U__SSE2__ -I${out}/include/c++/v1 ${CPPFLAGS}"
 {% endblock %}
 
 {% block build %}
@@ -25,6 +25,6 @@ export LIBS="${out}/lib/libc++abi.a $LIBS"
 {% endblock %}
 
 {% block env %}
-export CPPFLAGS="-I${out}/include/c++/v1 \$CPPFLAGS"
-export LDFLAGS="-L${out}/lib -lunwind -lc++abi -lc++ \$LDFLAGS"
+export CPPFLAGS="-I${out}/include/c++/v1 \${CPPFLAGS}"
+export LDFLAGS="-L${out}/lib -lunwind -lc++abi -lc++ \${LDFLAGS}"
 {% endblock %}

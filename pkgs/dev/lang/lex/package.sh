@@ -5,7 +5,7 @@
 build() {
     $untar ${src}/*.zip && cd heirloom* && cd heirloom-devtools/lex
 
-    export CFLAGS="-w $CFLAGS"
+    export CFLAGS="-w ${CFLAGS}"
 
     setup_compiler
 

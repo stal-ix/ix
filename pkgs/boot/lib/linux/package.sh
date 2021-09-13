@@ -16,6 +16,6 @@ build() {
     cp -rv usr/include ${out}/
 
     cat << EOF > ${out}/env
-export CPPFLAGS="-isystem ${out}/include \$CPPFLAGS"
+export CPPFLAGS="-isystem ${out}/include \${CPPFLAGS}"
 EOF
 }

@@ -5,7 +5,7 @@
 build() {
     $untar ${src}/apr* && cd apr*
 
-    dash ./configure $COFLAGS \
+    dash ./configure ${COFLAGS} \
         --prefix=${out} \
         --disable-dso
 
@@ -13,9 +13,9 @@ build() {
     make install
 
     cat << EOF > ${out}/env
-export CPPFLAGS="-I${out}/include \$CPPFLAGS"
-export LDFLAGS="-L${out}/lib -lapr-1 \$LDFLAGS"
-export COFLAGS="--with-apr=${out} --with-libapr=${out} \$COFLAGS"
+export CPPFLAGS="-I${out}/include \${CPPFLAGS}"
+export LDFLAGS="-L${out}/lib -lapr-1 \${LDFLAGS}"
+export COFLAGS="--with-apr=${out} --with-libapr=${out} \${COFLAGS}"
 export PKG_CONFIG_PATH="${out}/lib/pkgconfig:\$PKG_CONFIG_PATH"
 EOF
 }

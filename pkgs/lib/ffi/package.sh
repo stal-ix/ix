@@ -22,8 +22,8 @@ sed -e '/^includedir/ s/=.*$/=@includedir@/' \
 {% block env %}
 export LIBFFI_CFLAGS="-I${out}/include"
 export LIBFFI_LIBS="-L${out}/lib -lffi"
-export CPPFLAGS="\$LIBFFI_CFLAGS \$CPPFLAGS"
-export LDFLAGS="\$LIBFFI_LIBS \$LDFLAGS"
-export COFLAGS="--with-system-ffi=${out} \$COFLAGS"
+export CPPFLAGS="\$LIBFFI_CFLAGS \${CPPFLAGS}"
+export LDFLAGS="\$LIBFFI_LIBS \${LDFLAGS}"
+export COFLAGS="--with-system-ffi=${out} \${COFLAGS}"
 export PKG_CONFIG_PATH="${out}/lib/pkgconfig:\$PKG_CONFIG_PATH"
 {% endblock %}

@@ -11,10 +11,10 @@
 
 {% block cflags %}
 {% if mix.platform.target.os == 'darwin' %}
-export CPPFLAGS="-Dstat64=stat $CPPFLAGS"
+export CPPFLAGS="-Dstat64=stat ${CPPFLAGS}"
 {% endif %}
 
-export COFLAGS=$(echo $COFLAGS | tr ' ' '\n' | grep -v 'static' | grep -v 'libedit' | tr '\n' ' ')
+export COFLAGS=$(echo ${COFLAGS} | tr ' ' '\n' | grep -v 'static' | grep -v 'libedit' | tr '\n' ' ')
 {% endblock %}
 
 {% block coflags %}

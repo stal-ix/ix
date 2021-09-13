@@ -5,7 +5,7 @@
 build() {
     $untar ${src}/bison* && cd bison*
 
-    dash ./configure $COFLAGS --prefix=${out} --enable-relocatable
+    dash ./configure ${COFLAGS} --prefix=${out} --enable-relocatable
 
     (
         cd src

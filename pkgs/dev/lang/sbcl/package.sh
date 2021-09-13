@@ -19,7 +19,7 @@ build() {
     sed -e 's/lispobj \*static_code_space_free_pointer/extern lispobj \*static_code_space_free_pointer/' -i src/runtime/globals.h
     sed -e 's/size_t os_vm_page_size/extern size_t os_vm_page_size/' -i src/runtime/arm64-bsd-os.c
 
-    export PATH="$(pwd)/xxx:$PATH"
+    export PATH="$(pwd)/xxx:${PATH}"
 
     dash ./make.sh \
         --xc-host=sbcl \

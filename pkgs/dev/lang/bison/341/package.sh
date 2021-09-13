@@ -11,7 +11,7 @@ build() {
     cp bb/parse-gram.y src/
     cp bb/parse-gram.c bb/parse-gram.h src/
 
-    dash ./configure $COFLAGS --prefix=${out} --enable-relocatable
+    dash ./configure ${COFLAGS} --prefix=${out} --enable-relocatable
     make
     touch src/parse-gram.y && rm src/parse-gram.c src/parse-gram.h
     make

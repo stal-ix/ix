@@ -14,7 +14,7 @@ rm ${out}/lib/libcharset.a
 {% endblock %}
 
 {% block env %}
-export CPPFLAGS="-I${out}/include \$CPPFLAGS"
-export LDFLAGS="-L${out}/lib -liconv \$LDFLAGS"
-export COFLAGS="--with-libiconv-prefix=${out} --with-iconv=${out} \$COFLAGS"
+export CPPFLAGS="-I${out}/include \${CPPFLAGS}"
+export LDFLAGS="-L${out}/lib -liconv \${LDFLAGS}"
+export COFLAGS="--with-libiconv-prefix=${out} --with-iconv=${out} \${COFLAGS}"
 {% endblock %}

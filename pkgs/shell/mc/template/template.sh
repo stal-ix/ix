@@ -14,7 +14,7 @@
 {% endblock %}
 
 {% block cflags %}
-export CPPFLAGS="-Dupdate_panels=update_panels_mc -Dtilde_expand=tilde_expand_mc $CPPFLAGS"
+export CPPFLAGS="-Dupdate_panels=update_panels_mc -Dtilde_expand=tilde_expand_mc ${CPPFLAGS}"
 {% endblock %}
 
 {% block coflags %}

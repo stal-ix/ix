@@ -10,10 +10,10 @@
 {% endblock %}
 
 {% block cflags %}
-export CPPFLAGS="-I./glob $CPPFLAGS"
+export CPPFLAGS="-I./glob ${CPPFLAGS}"
 
 {% if mix.platform.target.os == 'darwin' %}
-export CPPFLAGS="-Dglob=make_glob -Dglobfree=make_globfree -Dfnmatch=make_fnmatch $CPPFLAGS"
+export CPPFLAGS="-Dglob=make_glob -Dglobfree=make_globfree -Dfnmatch=make_fnmatch ${CPPFLAGS}"
 {% endif %}
 {% endblock %}
 

@@ -1,12 +1,12 @@
 setup_compiler() {
     cat << EOF > clang
 #!$(which dash)
-$(which clang) $CPPFLAGS $CFLAGS $CONLYFLAGS -Wno-unused-command-line-argument "\$@" $LDFLAGS
+$(which clang) ${CPPFLAGS} ${CFLAGS} $CONLYFLAGS -Wno-unused-command-line-argument "\$@" ${LDFLAGS}
 EOF
 
     cat << EOF > clang++
 #!$(which dash)
-$(which clang++) $CPPFLAGS $CFLAGS $CXXFLAGS -Wno-unused-command-line-argument "\$@" $LDFLAGS
+$(which clang++) ${CPPFLAGS} ${CFLAGS} ${CXXFLAGS} -Wno-unused-command-line-argument "\$@" ${LDFLAGS}
 EOF
 
     chmod +x clang clang++
@@ -18,7 +18,7 @@ EOF
     ln -s clang++ g++
     ln -s clang++ c++
 
-    export PATH="$(pwd):$PATH"
+    export PATH="$(pwd):${PATH}"
     export CC=$(which clang)
     export CXX=$(which clang++)
 }

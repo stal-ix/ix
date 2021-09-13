@@ -7,7 +7,7 @@ ar q librt.a empty.o
 cp librt.a libstdc++.a
 cp librt.a libgcc_s.a
 
-export LDFLAGS="-L$(pwd) $LDFLAGS"
+export LDFLAGS="-L$(pwd) ${LDFLAGS}"
 
 setup_compiler
 

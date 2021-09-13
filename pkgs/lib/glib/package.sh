@@ -8,7 +8,7 @@ build() {
     $untar ${src}/glib* && cd glib*
 
     ln -s $(which dash) sh
-    export CPPFLAGS="-w -D_GNU_SOURCE=1 -I$(pwd)/inc $CPPFLAGS"
+    export CPPFLAGS="-w -D_GNU_SOURCE=1 -I$(pwd)/inc ${CPPFLAGS}"
 
     setup_compiler
 
@@ -21,7 +21,7 @@ EOF
 
     ar q libmain.a main.o
 
-    export LDFLAGS="-L$(pwd) -lmain $LDFLAGS"
+    export LDFLAGS="-L$(pwd) -lmain ${LDFLAGS}"
 
     meson \
         --libdir "${out}/lib" \
@@ -38,8 +38,8 @@ EOF
     )
 
     cat << EOF > ${out}/env
-export CPPFLAGS="-I${out}/include \$CPPFLAGS"
-export LDFLAGS="-L${out}/lib -lglib-2.0 -lgobject-2.0 -lgio-2.0 -lgmodule-2.0 -lgthread-2.0 \$LDFLAGS"
+export CPPFLAGS="-I${out}/include \${CPPFLAGS}"
+export LDFLAGS="-L${out}/lib -lglib-2.0 -lgobject-2.0 -lgio-2.0 -lgmodule-2.0 -lgthread-2.0 \${LDFLAGS}"
 export PKG_CONFIG_PATH="${out}/lib/pkgconfig:\$PKG_CONFIG_PATH"
 EOF
 }

@@ -13,7 +13,7 @@ dev/build/make
 {% endblock %}
 
 {% block cflags %}
-export CPPFLAGS="-Dwordfree=yash_wordfree -Dadd_history=yash_add_history $CPPFLAGS"
+export CPPFLAGS="-Dwordfree=yash_wordfree -Dadd_history=yash_add_history ${CPPFLAGS}"
 {% endblock %}
 
 {% block configure %}

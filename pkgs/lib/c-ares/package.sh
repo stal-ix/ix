@@ -5,7 +5,7 @@
 build() {
     $untar ${src}/c* && cd c*
 
-    dash ./configure $COFLAGS \
+    dash ./configure ${COFLAGS} \
         --prefix=${out} \
         --disable-tests
 
@@ -13,8 +13,8 @@ build() {
     make install
 
     cat << EOF > ${out}/env
-export CPPFLAGS="-I${out}/include \$CPPFLAGS"
-export LDFLAGS="-L${out}/lib -lresolv -lcares \$LDFLAGS"
+export CPPFLAGS="-I${out}/include \${CPPFLAGS}"
+export LDFLAGS="-L${out}/lib -lresolv -lcares \${LDFLAGS}"
 export PKG_CONFIG_PATH="${out}/lib/pkgconfig:\$PKG_CONFIG_PATH"
 EOF
 }

@@ -6,7 +6,7 @@ build() {
     $untar ${src}/perl* && cd perl*
 
     # too much warnings with clang
-    export CPPFLAGS="-w $CPPFLAGS"
+    export CPPFLAGS="-w ${CPPFLAGS}"
 
     echo > empty.c
     gcc -c empty.c -o empty.o
@@ -20,8 +20,8 @@ EOF
 
     ln -s $(which bash) sh
 
-    export PATH="$(pwd):$PATH"
-    export LDFLAGS="-L$(pwd) $LDFLAGS"
+    export PATH="$(pwd):${PATH}"
+    export LDFLAGS="-L$(pwd) ${LDFLAGS}"
 
     setup_compiler
 

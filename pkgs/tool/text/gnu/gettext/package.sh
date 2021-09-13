@@ -9,9 +9,9 @@ build() {
     ln -s $(which dash) sh
     ln -s $(which minigzip) gzip
 
-    export PATH="$(pwd):$PATH"
+    export PATH="$(pwd):${PATH}"
 
-    dash ./configure $COFLAGS \
+    dash ./configure ${COFLAGS} \
         --prefix=${out} \
         --with-installed-libtextstyle
 

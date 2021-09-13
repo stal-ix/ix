@@ -9,7 +9,7 @@ build() {
 {% include 'p00.diff/base64' %}
 EOF
 
-    dash ./configure $COFLAGS \
+    dash ./configure ${COFLAGS} \
         --prefix=${out} \
         --without-all \
         --without-x \

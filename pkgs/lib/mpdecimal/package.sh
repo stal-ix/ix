@@ -7,7 +7,7 @@ build() {
 
     setup_compiler
 
-    dash ./configure $COFLAGS \
+    dash ./configure ${COFLAGS} \
         --prefix=${out} \
         --enable-cxx=no
 
@@ -15,7 +15,7 @@ build() {
     make install
 
     cat << EOF > ${out}/env
-export CPPFLAGS="-I${out}/include \$CPPFLAGS"
-export LDFLAGS="-L${out}/lib -lmpdec \$LDFLAGS"
+export CPPFLAGS="-I${out}/include \${CPPFLAGS}"
+export LDFLAGS="-L${out}/lib -lmpdec \${LDFLAGS}"
 EOF
 }

@@ -7,7 +7,7 @@ build() {
 
     echo 'install(TARGETS turbo DESTINATION bin)' >> CMakeLists.txt
 
-    export CPPFLAGS="-I$tool_gnu_file/include $CPPFLAGS"
+    export CPPFLAGS="-I$tool_gnu_file/include ${CPPFLAGS}"
 
     build_cmake_ninja \
         -DTURBO_USE_SYSTEM_DEPS=ON \

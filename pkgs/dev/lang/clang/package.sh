@@ -15,7 +15,7 @@
 
 {% block cflags %}
 {% if mix.platform.target.os == 'darwin' %}
-export LDFLAGS="-Wl,-w $LDFLAGS"
+export LDFLAGS="-Wl,-w ${LDFLAGS}"
 {% endif %}
 {% endblock %}
 
@@ -37,5 +37,5 @@ echo > llvm/unittests/Support/DynamicLibrary/CMakeLists.txt
 
 {% block env %}
 export CLANG_VERSION=13.0.0
-export CPPFLAGS="-isystem ${out}/lib/clang/\$CLANG_VERSION/include \$CPPFLAGS"
+export CPPFLAGS="-isystem ${out}/lib/clang/\$CLANG_VERSION/include \${CPPFLAGS}"
 {% endblock %}

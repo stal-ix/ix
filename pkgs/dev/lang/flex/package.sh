@@ -5,7 +5,7 @@
 build() {
     $untar ${src}/flex* && cd flex*
 
-    dash ./configure $COFLAGS --prefix=${out}
+    dash ./configure ${COFLAGS} --prefix=${out}
 
     (
         cd src

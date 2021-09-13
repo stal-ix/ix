@@ -20,7 +20,7 @@ export AR=ar
 export CC=clang
 export LD=clang
 export RANLIB=ranlib
-export CPPFLAGS="-D_BSD_SOURCE -w -Dgetopt=h_getopt -Doptarg=h_optarg -Doptind=h_optind -Dopterr=h_opterr -Doptopt=h_optopt -I../libcommon $CPPFLAGS -O0 -g"
+export CPPFLAGS="-D_BSD_SOURCE -w -Dgetopt=h_getopt -Doptarg=h_optarg -Doptind=h_optind -Dopterr=h_opterr -Doptopt=h_optopt -I../libcommon ${CPPFLAGS} -O0 -g"
 
 export MANDIR=${out}/man
 export SV3BIN=${out}/sv3
@@ -36,7 +36,7 @@ export LIBDIR=${out}/lib
 export UCBINST=install
 export MANINST=install
 
-export PATH="$DEFBIN:$PATH"
+export PATH="$DEFBIN:${PATH}"
 export MAKE="make RANLIB=$RANLIB"
 
 cd heirloom
@@ -50,7 +50,7 @@ cd heirloom
     $MAKE -f Makefile.mk
 )
 
-export PRFLAGS="$LDFLAGS"
+export PRFLAGS="${LDFLAGS}"
 export LDFLAGS="../libcommon/asciitype.o ../libcommon/getdir.o ../libcommon/getopt.o ../libcommon/gmatch.o ../libcommon/ib_alloc.o ../libcommon/ib_close.o ../libcommon/ib_free.o ../libcommon/ib_getlin.o ../libcommon/ib_getw.o ../libcommon/ib_open.o ../libcommon/ib_popen.o ../libcommon/ib_read.o ../libcommon/ib_seek.o ../libcommon/pathconf.o ../libcommon/pfmt_label.o ../libcommon/pfmt.o ../libcommon/regexpr.o ../libcommon/setlabel.o ../libcommon/setuxlabel.o ../libcommon/sighold.o ../libcommon/sigignore.o ../libcommon/signal.o ../libcommon/sigpause.o ../libcommon/sigrelse.o ../libcommon/sigset.o ../libcommon/strtol.o ../libcommon/sysv3.o ../libcommon/utmpx.o ../libcommon/vpfmt.o $PRFLAGS"
 
 (
@@ -70,7 +70,7 @@ for i in $S42BIN $SUSBIN $SV3BIN $UCBBIN $SU3BIN; do
 done
 
 (
-    export PATH="$PWD/rm:$PATH"
+    export PATH="${PWD}/rm:${PATH}"
     export LDFLAGS="../libcommon/*.o $PRFLAGS"
 
     cd cp && $MAKE -f Makefile.mk cp
@@ -82,13 +82,13 @@ cp rm/rm ${out}/bin
 (
     cd true
 
-    clang $CPPFLAGS $CFLAGS $LDFLAGS -o ${out}/bin/true -x c - << EOF
+    clang ${CPPFLAGS} ${CFLAGS} ${LDFLAGS} -o ${out}/bin/true -x c - << EOF
 int main() {
     return 0;
 }
 EOF
 
-    clang $CPPFLAGS $CFLAGS $LDFLAGS -o ${out}/bin/false -x c - << EOF
+    clang ${CPPFLAGS} ${CFLAGS} ${LDFLAGS} -o ${out}/bin/false -x c - << EOF
 int main() {
     return 1;
 }
@@ -124,11 +124,11 @@ for i in rm mkdir _install chmod; do
 done
 
 export LNS=ln
-export PATH="$DEFBIN:$UCBBIN:$SUSBIN:$S42BIN:$SV3BIN:$SU3BIN:$PATH"
+export PATH="$DEFBIN:$UCBBIN:$SUSBIN:$S42BIN:$SV3BIN:$SU3BIN:${PATH}"
 
 for i in echo pwd env rmdir touch basename dirname chown wc tr ln xargs uniq time test tee tail head sort sleep; do
     (
-        cd $i && $MAKE CPPFLAGS="-Dmode_t=int $CPPFLAGS" -f Makefile.mk install
+        cd $i && $MAKE CPPFLAGS="-Dmode_t=int ${CPPFLAGS}" -f Makefile.mk install
     )
 done
 
@@ -144,13 +144,13 @@ for i in cp cat copy; do
     (
         cd $i
 
-        $MAKE LDFLAGS="../libcommon/sfile.o ../libcommon/oblok.o $LDFLAGS" -f Makefile.mk install
+        $MAKE LDFLAGS="../libcommon/sfile.o ../libcommon/oblok.o ${LDFLAGS}" -f Makefile.mk install
     )
 done
 
 export MAGIC="${out}/share/magic"
-export PRCPPFLAGS="$CPPFLAGS"
-export CPPFLAGS="-Dcompile=sed_x_compile -Dstep=sed_step -Dadvance=sed_advance -Dnodelim=sed_nodelim -Dsed=sed_sed -Dnbra=sed_nbra -Dloc1=sed_loc1 -Dbraslist=sed_braslist -Dbraelist=sed_braelist -Dloc2=sed_loc2 -Dlocs=sed_locs $CPPFLAGS"
+export PRCPPFLAGS="${CPPFLAGS}"
+export CPPFLAGS="-Dcompile=sed_x_compile -Dstep=sed_step -Dadvance=sed_advance -Dnodelim=sed_nodelim -Dsed=sed_sed -Dnbra=sed_nbra -Dloc1=sed_loc1 -Dbraslist=sed_braslist -Dbraelist=sed_braelist -Dloc2=sed_loc2 -Dlocs=sed_locs ${CPPFLAGS}"
 
 {% if mix.platform.target.os == 'linux' %}
 mkdir sys
@@ -159,27 +159,27 @@ cat << EOF > sys/mkdev.h
 #include <sys/sysmacros.h>
 EOF
 
-export CPPFLAGS="-I$PWD $CPPFLAGS"
+export CPPFLAGS="-I${PWD} ${CPPFLAGS}"
 {% endif %}
 
 for i in file find sed cksum cmp col cut dc df dircmp du ed expand fmt fold getopt hostname id join kill line logname mkfifo mknod nice nohup printenv printf uname whoami yes; do
     (
         cd $i
 
-        $MAKE PATH="$PATH" LDFLAGS="$LDFLAGS" -f Makefile.mk && $MAKE -f Makefile.mk install
+        $MAKE PATH="${PATH}" LDFLAGS="${LDFLAGS}" -f Makefile.mk && $MAKE -f Makefile.mk install
     )
 done
 
 (
-    export CPPFLAGS="-DUSE_TERMCAP=1 -D_AIX $CPPFLAGS"
+    export CPPFLAGS="-DUSE_TERMCAP=1 -D_AIX ${CPPFLAGS}"
     cd ls
-    $MAKE LDFLAGS="$LDFLAGS" -f Makefile.mk && $MAKE -f Makefile.mk install
+    $MAKE LDFLAGS="${LDFLAGS}" -f Makefile.mk && $MAKE -f Makefile.mk install
 )
 
 (
-    export CPPFLAGS="-DEXTERN=extern $CPPFLAGS"
+    export CPPFLAGS="-DEXTERN=extern ${CPPFLAGS}"
     cd diff
-    $MAKE LDFLAGS="$LDFLAGS" -f Makefile.mk && $MAKE -f Makefile.mk install
+    $MAKE LDFLAGS="${LDFLAGS}" -f Makefile.mk && $MAKE -f Makefile.mk install
 )
 
 (
@@ -189,17 +189,17 @@ done
 )
 
 export YACC=yacc
-export PATH="$(pwd):$PATH"
+export PATH="$(pwd):${PATH}"
 
 # for factor
 ln -s $(which dash) sh
-export PATH="$PWD:$PATH"
+export PATH="${PWD}:${PATH}"
 
 export CPPFLAGS="$PRCPPFLAGS"
 
 for i in bc expr factor grep; do
     (
-        cd $i && $MAKE PATH="$PATH" LDFLAGS="$LDFLAGS" -f Makefile.mk && $MAKE -f Makefile.mk install
+        cd $i && $MAKE PATH="${PATH}" LDFLAGS="${LDFLAGS}" -f Makefile.mk && $MAKE -f Makefile.mk install
     )
 done
 
@@ -212,21 +212,21 @@ done
 (
     cd libuxre
 
-    $MAKE CFLAGS="-I. $CPPFLAGS $CFLAGS" CPPFLAGS="" -f Makefile.mk
+    $MAKE CFLAGS="-I. ${CPPFLAGS} ${CFLAGS}" CPPFLAGS="" -f Makefile.mk
 )
 
 (
     cd nawk
 
-    export LDFLAGS="../libuxre/libuxre.a $LDFLAGS"
-    export CPPFLAGS="-I../libuxre -Dvpfmt=nawk_vpfmt $CPPFLAGS $CFLAGS"
-    export HOSTCC="$CC $CPPFLAGS $CFLAGS $LDFLAGS"
+    export LDFLAGS="../libuxre/libuxre.a ${LDFLAGS}"
+    export CPPFLAGS="-I../libuxre -Dvpfmt=nawk_vpfmt ${CPPFLAGS} ${CFLAGS}"
+    export HOSTCC="$CC ${CPPFLAGS} ${CFLAGS} ${LDFLAGS}"
 
-    $MAKE LDFLAGS="$LDFLAGS" -f Makefile.mk
+    $MAKE LDFLAGS="${LDFLAGS}" -f Makefile.mk
     $MAKE -f Makefile.mk install
 )
 
-export PATH="${out}/tmp:$PATH"
+export PATH="${out}/tmp:${PATH}"
 
 mv ${out}/bin ${out}/tmp && mkdir $out/bin
 

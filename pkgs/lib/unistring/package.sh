@@ -7,16 +7,16 @@ build() {
     $untar ${src}/lib* && cd lib*
 
     ln -s $(which dash) sh
-    export PATH="$(pwd):$PATH"
-    export CPPFLAGS="-Dlocale_charset=unistring_locale_charset $CPPFLAGS"
+    export PATH="$(pwd):${PATH}"
+    export CPPFLAGS="-Dlocale_charset=unistring_locale_charset ${CPPFLAGS}"
 
-    dash ./configure $COFLAGS --prefix=${out}
+    dash ./configure ${COFLAGS} --prefix=${out}
     make -j ${make_thrs}
     make install
 
     cat << EOF > ${out}/env
-export COFLAGS="--with-libunistring-prefix=${out} \$COFLAGS"
-export LDFLAGS="-L${out}/lib -lunistring \$LDFLAGS"
-export CPPFLAGS="-I${out}/include \$CPPFLAGS"
+export COFLAGS="--with-libunistring-prefix=${out} \${COFLAGS}"
+export LDFLAGS="-L${out}/lib -lunistring \${LDFLAGS}"
+export CPPFLAGS="-I${out}/include \${CPPFLAGS}"
 EOF
 }

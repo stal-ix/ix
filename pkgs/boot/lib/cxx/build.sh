@@ -1,6 +1,6 @@
 $untar ${src}/llvm* && cd llvm* && cd libcxx
 
-CPPFLAGS="-w -D_LIBCPP_BUILDING_LIBRARY -D_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER -iquote src -I${out}/include -DLIBCXXRT -std=c++14 $CPPFLAGS"
+CPPFLAGS="-w -D_LIBCPP_BUILDING_LIBRARY -D_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER -iquote src -I${out}/include -DLIBCXXRT -std=c++14 ${CPPFLAGS}"
 
 cp -R include ${out}
 
@@ -20,7 +20,7 @@ SRCS2=$(ls src/filesystem/*.cpp)
 (
 for s in $SRCS1 $SRCS2; do
     out=$(echo $s | tr '/' '_' | tr -d '\n').o
-    g++ $CPPFLAGS $CFLAGS $CXXFLAGS -c $s -o obj/${out}
+    g++ ${CPPFLAGS} ${CFLAGS} ${CXXFLAGS} -c $s -o obj/${out}
 done
 )
 
@@ -30,8 +30,8 @@ ranlib obj/libc++.a
 mkdir ${out}/lib && cp obj/libc++.a ${out}/lib/
 
 cat << EOF > ${out}/env
-export CPPFLAGS="-I${out}/include \$CPPFLAGS"
-export LDFLAGS="${out}/lib/libc++.a \$LDFLAGS -lpthread -ldl"
+export CPPFLAGS="-I${out}/include \${CPPFLAGS}"
+export LDFLAGS="${out}/lib/libc++.a \${LDFLAGS} -lpthread -ldl"
 EOF
 
 (
@@ -45,7 +45,7 @@ int main() {
 }
 EOF
 
-    clang++ $CPPFLAGS $CXXFLAGS ./qw.cpp $LDFLAGS
+    clang++ ${CPPFLAGS} ${CXXFLAGS} ./qw.cpp ${LDFLAGS}
 
     ./a.out
 )

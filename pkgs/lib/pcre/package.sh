@@ -5,7 +5,7 @@
 build() {
     $untar ${src}/pcre* && cd pcre*
 
-    dash ./configure $COFLAGS \
+    dash ./configure ${COFLAGS} \
         --prefix=${out} \
         --enable-pcregrep-libz \
         --enable-pcregrep-libbz2 \
@@ -19,10 +19,10 @@ build() {
     make install
 
     cat << EOF > ${out}/env
-export CPPFLAGS="-I${out}/include \$CPPFLAGS"
-export LDFLAGS="-L${out}/lib -lpcre \$LDFLAGS"
+export CPPFLAGS="-I${out}/include \${CPPFLAGS}"
+export LDFLAGS="-L${out}/lib -lpcre \${LDFLAGS}"
 export PKG_CONFIG_PATH="${out}/lib/pkgconfig:\$PKG_CONFIG_PATH"
-export COFLAGS="--with-pcre=${out} \$COFLAGS"
-export CMFLAGS="-DPCRE_LIBRARY=${out}/lib/libpcre.a -DPCRE_INCLUDE_DIR=${out}/include \$CMFLAGS"
+export COFLAGS="--with-pcre=${out} \${COFLAGS}"
+export CMFLAGS="-DPCRE_LIBRARY=${out}/lib/libpcre.a -DPCRE_INCLUDE_DIR=${out}/include \${CMFLAGS}"
 EOF
 }

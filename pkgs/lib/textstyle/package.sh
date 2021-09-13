@@ -6,13 +6,13 @@
 build() {
     $untar ${src}/gettext* && cd gettext* && cd libtextstyle
 
-    dash ./configure $COFLAGS --prefix=${out}
+    dash ./configure ${COFLAGS} --prefix=${out}
     make -j ${make_thrs}
     make install
 
     cat << EOF > ${out}/env
-export CPPFLAGS="-I${out}/include \$CPPFLAGS"
-export LDFLAGS="-L${out}/lib -ltextstyle \$LDFLAGS"
-export COFLAGS="--with-libtextstyle-prefix=${out} \$COFLAGS"
+export CPPFLAGS="-I${out}/include \${CPPFLAGS}"
+export LDFLAGS="-L${out}/lib -ltextstyle \${LDFLAGS}"
+export COFLAGS="--with-libtextstyle-prefix=${out} \${COFLAGS}"
 EOF
 }

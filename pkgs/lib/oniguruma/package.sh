@@ -5,12 +5,12 @@
 build() {
     $untar ${src}/oni* && cd oni*
 
-    build_cmake_ninja $CMFLAGS -DBUILD_SHARED_LIBS=OFF ..
+    build_cmake_ninja ${CMFLAGS} -DBUILD_SHARED_LIBS=OFF ..
 
     cat << EOF > ${out}/env
-export CPPFLAGS="-I${out}/include \$CPPFLAGS"
-export LDFLAGS="-L${out}/lib -lonig \$LDFLAGS"
-export COFLAGS="--with-onig=${out} \$COFLAGS"
+export CPPFLAGS="-I${out}/include \${CPPFLAGS}"
+export LDFLAGS="-L${out}/lib -lonig \${LDFLAGS}"
+export COFLAGS="--with-onig=${out} \${COFLAGS}"
 export PKG_CONFIG_PATH="${out}/lib/pkgconfig:\$PKG_CONFIG_PATH"
 EOF
 }

@@ -10,7 +10,7 @@ build() {
 
     setup_compiler
 
-    dash ./configure $COFLAGS \
+    dash ./configure ${COFLAGS} \
         --prefix=${out} \
         --with-readline=gnu \
         --without-png
@@ -20,8 +20,8 @@ build() {
     cat << EOF > ${out}/env
 export SLANG_CFLAGS="-I${out}/include"
 export SLANG_LIBS="-L${out}/lib -lslang"
-export CPPFLAGS="\$SLANG_CFLAGS \$CPPFLAGS"
-export LDFLAGS="\$SLANG_LIBS \$LDFLAGS"
+export CPPFLAGS="\$SLANG_CFLAGS \${CPPFLAGS}"
+export LDFLAGS="\$SLANG_LIBS \${LDFLAGS}"
 export PKG_CONFIG_PATH="${out}/lib/pkgconfig:\$PKG_CONFIG_PATH"
 EOF
 }

@@ -11,7 +11,7 @@ build() {
     build_cmake_ninja ..
 
     cat << EOF > ${out}/env
-export CPPFLAGS="-I${out}/include \$CPPFLAGS"
-export LDFLAGS="-L${out}/lib -ltvision \$LDFLAGS"
+export CPPFLAGS="-I${out}/include \${CPPFLAGS}"
+export LDFLAGS="-L${out}/lib -ltvision \${LDFLAGS}"
 EOF
 }

@@ -12,13 +12,13 @@
 
 {% block cflags %}
 {% if mix.platform.target.os == 'darwin' %}
-export CPPFLAGS="-Derror=idna2_error $CPPFLAGS"
+export CPPFLAGS="-Derror=idna2_error ${CPPFLAGS}"
 {% endif %}
 {% endblock %}
 
 {% block env %}
-export CPPFLAGS="-I${out}/include \$CPPFLAGS"
-export LDFLAGS="-L${out}/lib -lidn2 \$LDFLAGS"
-export COFLAGS="--with-libidn2=${out} \$COFLAGS"
+export CPPFLAGS="-I${out}/include \${CPPFLAGS}"
+export LDFLAGS="-L${out}/lib -lidn2 \${LDFLAGS}"
+export COFLAGS="--with-libidn2=${out} \${COFLAGS}"
 export PKG_CONFIG_PATH="${out}/lib/pkgconfig:\$PKG_CONFIG_PATH"
 {% endblock %}
