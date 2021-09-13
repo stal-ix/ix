@@ -14,7 +14,7 @@ export CPPFLAGS="-Dwarn=samu_warn $CPPFLAGS"
 {% endblock %}
 
 {% block build %}
-make PREFIX=${out} CC=clang
+make PREFIX=${out}
 {% endblock %}
 
 {% block install %}
