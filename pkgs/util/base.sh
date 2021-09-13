@@ -34,6 +34,10 @@ for s in $src/*; do
     case $s in
         *touch)
         ;;
+        *.diff)
+        ;;
+        *.patch)
+        ;;
         *zip)
             $unzip $s
         ;;
