@@ -29,6 +29,11 @@ def execute_cmd(c):
         return subprocess.run(c['args'], input=stdin.encode() or None, env=env, check=True)
     except Exception as e:
         def iter_lines():
+            yield '____|' + descr
+
+            for k, v in env.items():
+                yield f'env | export {k}={v}'
+
             show = False
 
             for i, l in enumerate(bsh(stdin).strip().splitlines()):

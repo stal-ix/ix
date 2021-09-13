@@ -31,6 +31,7 @@ def exec_mod(text, iface):
 
 BUILD_SH_SCRIPT = '''
 set -e
+set -x
 
 (rm -rf "$out" || true) && mkdir -p "$out"
 (rm -rf "$tmp" || true) && mkdir -p "$tmp"

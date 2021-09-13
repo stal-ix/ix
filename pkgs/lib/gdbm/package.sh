@@ -6,7 +6,8 @@
 {% endblock %}
 
 {% block deps %}
-# bld lib/intl lib/iconv bld lib/readline
+# lib lib/intl lib/iconv
+# bld lib/readline
 # bld dev/build/make env/std
 {% endblock %}
 

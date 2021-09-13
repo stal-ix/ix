@@ -5,9 +5,9 @@
 # md5 294b921e6cf9ab0fbaea4b639f8fdbe8
 {% endblock %}
 
-{% block build %}
+{% block deps %}
 # bld {{'lib/linux' | linux}}
-# bld dev/build/make tool/text/gnu/sed env/tools env/c env/bootstrap
+# bld dev/build/make tool/text/gnu/sed env/std
 {% endblock %}
 
 {% block patch %}
