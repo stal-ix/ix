@@ -17,7 +17,7 @@ def package(mix):
         },
         'runtime': {
             'depends': [
-                'env/lld',
+                'env/lld/{{mix.platform.target.os}}',
                 'env/clang',
             ],
         },

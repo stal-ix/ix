@@ -36,7 +36,7 @@ rm libc.a && mv libmusl.a libc.a
 
 {% block env %}
 export CPPFLAGS="-nostdinc -isystem ${out}/include \$CPPFLAGS"
-export LDFLAGS="-static -nostdlib -nostdlib++ -L${out}/lib -lcrt -lc \$LDFLAGS"
+export LDFLAGS="-L${out}/lib -lcrt -lc \$LDFLAGS"
 {% endblock %}
 
 {% block test %}

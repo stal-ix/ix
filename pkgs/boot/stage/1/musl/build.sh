@@ -94,5 +94,5 @@ EOF
 ./tool << EOF > ${out}/env
 export CPPFLAGS="$MFLAGS \$CPPFLAGS"
 export CFLAGS="-ffreestanding -nostdinc \$CFLAGS"
-export LDFLAGS="-L$PWD -lmusl \$LDFLAGS"
+export LDFLAGS="-static -nostdlib -nostdlib++ -L$PWD -lmusl \$LDFLAGS"
 EOF

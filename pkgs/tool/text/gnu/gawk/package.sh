@@ -15,7 +15,5 @@ export CPPFLAGS="-Derr=gawk_err -Dxmalloc=gawk_xmalloc -Dxrealloc=Dgawk_xrealloc
 
 {% block coflags %}
 --libexecdir=${out}/bin/awk_exec
---disable-shared
---enable-static
 --disable-extensions
 {% endblock %}
