@@ -1,15 +1,20 @@
+{% extends '//util/make.sh' %}
+
+{% block fetch %}
 # url https://github.com/lz4/lz4/archive/refs/tags/v1.9.3.tar.gz
 # md5 3a1ab1684e14fc1afc66228ce61b2db3
+{% endblock %}
+
+{% block deps %}
 # bld dev/build/make env/tools env/c env/bootstrap
+{% endblock %}
 
-build() {
-    $untar $src/v* && cd lz4*
+{% block build %}
+make PREFIX=$out BUILD_SHARED=no -j $make_thrs allmost
+{% endblock %}
 
-    make PREFIX=$out CC=gcc CXX=g++ BUILD_SHARED=no -j $make_thrs allmost install
-
-    cat << EOF > $out/env
+{% block env %}
 export CPPFLAGS="-I$out/include \$CPPFLAGS"
 export LDFLAGS="-L$out/lib -llz4 \$LDFLAGS"
 export PKG_CONFIG_PATH="$out/lib/pkgconfig:\$PKG_CONFIG_PATH"
-EOF
-}
+{% endblock %}
