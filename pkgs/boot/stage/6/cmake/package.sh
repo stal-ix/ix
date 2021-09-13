@@ -10,8 +10,8 @@ build_cmake_ps
 {% endblock %}
 
 {% block build %}
-dash ./bootstrap --prefix=$out --parallel=$make_thrs -- -DCMAKE_USE_OPENSSL=OFF -Dfortran=OFF -DBUILD_TESTING=OFF
-make -j $make_thrs
+dash ./bootstrap --prefix=${out} --parallel=${make_thrs} -- -DCMAKE_USE_OPENSSL=OFF -Dfortran=OFF -DBUILD_TESTING=OFF
+make -j ${make_thrs}
 {% endblock %}
 
 {% block install %}

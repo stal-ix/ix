@@ -4,7 +4,7 @@
 
 build() {
     which bsdcat
-    $untar $src/ncurses* && cd ncurses*
+    $untar ${src}/ncurses* && cd ncurses*
 
     mkdir tool && cd tool
 
@@ -18,7 +18,7 @@ EOF
     cd ..
 
     dash ./configure $COFLAGS \
-        --prefix=$out \
+        --prefix=${out} \
         --without-shared \
         --without-debug \
         --without-ada \
@@ -32,14 +32,14 @@ EOF
         --without-cxx \
         --without-cxx-binding
 
-    make -j $make_thrs
+    make -j ${make_thrs}
     make install
 
-    cd $out/lib && (for i in `ls *.a`; do q=`echo $i | tr -d 'w'`; ln -s $i $q; done)
+    cd ${out}/lib && (for i in `ls *.a`; do q=`echo $i | tr -d 'w'`; ln -s $i $q; done)
 
-    cat << EOF > $out/env
-export COFLAGS="--with-curses=$out --with-ncurses=$out \$COFLAGS"
-export CPPFLAGS="-I$out/include \$CPPFLAGS"
-export LDFLAGS="-L$out/lib -lncurses -ltinfo -lpanel -lmenu -lform \$LDFLAGS"
+    cat << EOF > ${out}/env
+export COFLAGS="--with-curses=${out} --with-ncurses=${out} \$COFLAGS"
+export CPPFLAGS="-I${out}/include \$CPPFLAGS"
+export LDFLAGS="-L${out}/lib -lncurses -ltinfo -lpanel -lmenu -lform \$LDFLAGS"
 EOF
 }

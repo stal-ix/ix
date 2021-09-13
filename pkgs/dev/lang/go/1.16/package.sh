@@ -3,7 +3,7 @@
 # bld tool/gnu/tar dev/lang/go/1.4 dev/lang/python3 dev/lang/perl5 shell/bash/minimal env/std
 
 build() {
-    cd $out && tar xf $src/go* && cd go*
+    cd ${out} && tar xf ${src}/go* && cd go*
 
     cat << EOF > xcrun
 #!$(which python3)
@@ -22,9 +22,9 @@ EOF
 
     bash all.bash
 
-    cd $out && ln -s go/bin ./
+    cd ${out} && ln -s go/bin ./
 
-    cat << EOF > $out/env
-export GOROOT_BOOTSTRAP="$out/go"
+    cat << EOF > ${out}/env
+export GOROOT_BOOTSTRAP="${out}/go"
 EOF
 }

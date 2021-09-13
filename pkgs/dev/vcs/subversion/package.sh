@@ -5,12 +5,12 @@
 # run shell/openssh
 
 build() {
-    $untar $src/sub* && cd sub*
+    $untar ${src}/sub* && cd sub*
 
     export COFLAGS=$(echo "$COFLAGS" | tr ' ' '\n' | grep -v expat | tr '\n' ' ')
     export COFLAGS="$COFLAGS --with-expat=$lib_expat/include:$lib_expat/lib:-lexpat"
 
-    dash ./configure $COFLAGS --prefix=$out
-    make -j $make_thrs
+    dash ./configure $COFLAGS --prefix=${out}
+    make -j ${make_thrs}
     make install
 }

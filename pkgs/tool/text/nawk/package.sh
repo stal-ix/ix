@@ -3,9 +3,9 @@
 # bld dev/lang/bison dev/build/make env/std
 
 build() {
-    $unzip $src/*.zip && cd awk*
+    $unzip ${src}/*.zip && cd awk*
 
     setup_compiler
     make
-    mkdir $out/bin && cp a.out $out/bin/nawk
+    mkdir ${out}/bin && cp a.out ${out}/bin/nawk
 }

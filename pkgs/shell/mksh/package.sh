@@ -14,5 +14,5 @@ dash ./Build.sh
 {% endblock %}
 
 {% block install %}
-mkdir $out/bin && cp mksh $out/bin
+mkdir ${out}/bin && cp mksh ${out}/bin
 {% endblock %}

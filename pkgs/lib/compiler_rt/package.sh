@@ -22,10 +22,10 @@ ranlib libcompiler_rt.a
 {% endblock %}
 
 {% block install %}
-mkdir $out/lib && cp libcompiler_rt.a $out/lib/
+mkdir ${out}/lib && cp libcompiler_rt.a ${out}/lib/
 {% endblock %}
 
 {% block env %}
-export CPPFLAGS="-I$out/include \$CPPFLAGS"
-export LDFLAGS="-L$out/lib -lcompiler_rt \$LDFLAGS"
+export CPPFLAGS="-I${out}/include \$CPPFLAGS"
+export LDFLAGS="-L${out}/lib -lcompiler_rt \$LDFLAGS"
 {% endblock %}

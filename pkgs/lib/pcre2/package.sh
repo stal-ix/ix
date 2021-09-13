@@ -3,10 +3,10 @@
 # bld lib/z lib/bzip2 env/c boot/final/env
 
 build() {
-    $untar $src/pcre* && cd pcre*
+    $untar ${src}/pcre* && cd pcre*
 
     dash ./configure $COFLAGS \
-        --prefix=$out \
+        --prefix=${out} \
         --enable-pcre2grep-libz \
         --enable-pcre2grep-libbz2 \
         --enable-newline-is-anycrlf \
@@ -14,12 +14,12 @@ build() {
         --enable-jit \
         --enable-c++
 
-    make -j $make_thrs
+    make -j ${make_thrs}
     make install
 
-    cat << EOF > $out/env
-export CPPFLAGS="-I$out/include \$CPPFLAGS"
-export LDFLAGS="-L$out/lib -lpcre2-8 \$LDFLAGS"
-export PKG_CONFIG_PATH="$out/lib/pkgconfig:\$PKG_CONFIG_PATH"
+    cat << EOF > ${out}/env
+export CPPFLAGS="-I${out}/include \$CPPFLAGS"
+export LDFLAGS="-L${out}/lib -lpcre2-8 \$LDFLAGS"
+export PKG_CONFIG_PATH="${out}/lib/pkgconfig:\$PKG_CONFIG_PATH"
 EOF
 }

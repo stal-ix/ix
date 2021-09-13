@@ -20,5 +20,5 @@
 {% endblock %}
 
 {% block env %}
-export PKG_CONFIG="$out/bin/pkg-config"
+export PKG_CONFIG="${out}/bin/pkg-config"
 {% endblock %}

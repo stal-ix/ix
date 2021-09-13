@@ -4,24 +4,24 @@
 # bld dev/build/make env/std
 
 build() {
-    $untar $src/slang* && cd slang*
+    $untar ${src}/slang* && cd slang*
 
     ln -s $(which dash) sh
 
     setup_compiler
 
     dash ./configure $COFLAGS \
-        --prefix=$out \
+        --prefix=${out} \
         --with-readline=gnu \
         --without-png
 
     make install-static
 
-    cat << EOF > $out/env
-export SLANG_CFLAGS="-I$out/include"
-export SLANG_LIBS="-L$out/lib -lslang"
+    cat << EOF > ${out}/env
+export SLANG_CFLAGS="-I${out}/include"
+export SLANG_LIBS="-L${out}/lib -lslang"
 export CPPFLAGS="\$SLANG_CFLAGS \$CPPFLAGS"
 export LDFLAGS="\$SLANG_LIBS \$LDFLAGS"
-export PKG_CONFIG_PATH="$out/lib/pkgconfig:\$PKG_CONFIG_PATH"
+export PKG_CONFIG_PATH="${out}/lib/pkgconfig:\$PKG_CONFIG_PATH"
 EOF
 }

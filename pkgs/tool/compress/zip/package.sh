@@ -3,10 +3,10 @@
 # bld dev/build/make env/std
 
 build() {
-    $untar $src/zip* && cd zip*
+    $untar ${src}/zip* && cd zip*
 
     setup_compiler
 
-    make -j $make_thrs -f unix/Makefile CC="gcc" CPP="gcc -E" CFLAGS="-I. -DUNIX" zips
-    make -f unix/Makefile BINDIR="$out/bin" MANDIR="$out/man" install
+    make -j ${make_thrs} -f unix/Makefile CC="gcc" CPP="gcc -E" CFLAGS="-I. -DUNIX" zips
+    make -f unix/Makefile BINDIR="${out}/bin" MANDIR="${out}/man" install
 }

@@ -16,7 +16,7 @@ build_cmake_prepare() {
     cmake                                                                   \
         $CMFLAGS                                                            \
         -Wno-dev                                                            \
-        -DCMAKE_INSTALL_PREFIX="$out"                                       \
+        -DCMAKE_INSTALL_PREFIX="${out}"                                       \
         -DCMAKE_EXE_LINKER_FLAGS="$LDFLAGS $LIBS"                           \
         -DCMAKE_C_COMPILER="gcc"                                            \
         -DCMAKE_CXX_COMPILER="g++"                                          \
@@ -31,7 +31,7 @@ build_cmake_prepare() {
 build_cmake_make() {
     (
         build_cmake_prepare $@
-        make VERBOSE=1 -j $make_thrs
+        make VERBOSE=1 -j ${make_thrs}
         make install
     )
 }
@@ -39,7 +39,7 @@ build_cmake_make() {
 build_cmake_ninja() {
     (
         build_cmake_prepare -G Ninja $@
-        ninja -j $make_thrs all
+        ninja -j ${make_thrs} all
         ninja install
     )
 }

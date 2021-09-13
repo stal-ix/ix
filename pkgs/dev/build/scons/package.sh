@@ -4,7 +4,7 @@
 # run dev/lang/python3
 
 build() {
-    cd $out && mkdir bin && cd bin && $untar $src/SCons* && ln -s SCons* sconsdir
+    cd ${out} && mkdir bin && cd bin && $untar ${src}/SCons* && ln -s SCons* sconsdir
 
     cat << EOF > scons
 #!$(which dash)

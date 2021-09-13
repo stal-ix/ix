@@ -3,9 +3,9 @@
 # bld lib/cxx dev/lang/python3 env/std
 
 build() {
-    $untar $src/v* && cd ninja*
+    $untar ${src}/v* && cd ninja*
 
     setup_compiler
     python3 ./configure.py --bootstrap
-    mkdir -p $out/bin && cp ninja $out/bin/
+    mkdir -p ${out}/bin && cp ninja ${out}/bin/
 }

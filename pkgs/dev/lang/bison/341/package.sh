@@ -5,13 +5,13 @@
 # bld lib/intl dev/lang/m4 dev/lang/flex dev/lang/perl5 dev/build/make env/std
 
 build() {
-    $untar $src/bison-3* && cd bison* && $untar $src/bison-b* && ln -s bison-b* bb
+    $untar ${src}/bison-3* && cd bison* && $untar ${src}/bison-b* && ln -s bison-b* bb
 
     cp src/parse-gram.y parse-gram.y.orig
     cp bb/parse-gram.y src/
     cp bb/parse-gram.c bb/parse-gram.h src/
 
-    dash ./configure $COFLAGS --prefix=$out --enable-relocatable
+    dash ./configure $COFLAGS --prefix=${out} --enable-relocatable
     make
     touch src/parse-gram.y && rm src/parse-gram.c src/parse-gram.h
     make

@@ -5,7 +5,7 @@
 # bld dev/build/pkg-config dev/build/cmake dev/lang/m4 env/std
 
 build() {
-    $unzip $src/*.zip && cd far*
+    $unzip ${src}/*.zip && cd far*
 
 {% if mix.platform.target.os == 'linux' %}
     cat << EOF > execinfo.h

@@ -4,7 +4,7 @@
 # bld dev/build/scons tool/text/gnu/patch env/std
 
 build() {
-    $untar $src/serf* && cd serf*
+    $untar ${src}/serf* && cd serf*
 
     (base64 -d | patch -p1) << EOF
 {% include 'p00.patch/base64' %}
@@ -16,7 +16,7 @@ EOF
 
     setup_compiler
 
-    scons PREFIX=$out \
+    scons PREFIX=${out} \
         OPENSSL="$lib_openssl" \
         ZLIB="$lib_z" \
         APR="$lib_apr" \
@@ -24,10 +24,10 @@ EOF
 
     scons install
 
-    cat << EOF > $out/env
-export CPPFLAGS="-I$out/include \$CPPFLAGS"
-export LDFLAGS="-L$out/lib -lserf-1 \$LDFLAGS"
-export COFLAGS="--with-serf=$out --with-libserf=$out \$COFLAGS"
-export PKG_CONFIG_PATH="$out/lib/pkgconfig:\$PKG_CONFIG_PATH"
+    cat << EOF > ${out}/env
+export CPPFLAGS="-I${out}/include \$CPPFLAGS"
+export LDFLAGS="-L${out}/lib -lserf-1 \$LDFLAGS"
+export COFLAGS="--with-serf=${out} --with-libserf=${out} \$COFLAGS"
+export PKG_CONFIG_PATH="${out}/lib/pkgconfig:\$PKG_CONFIG_PATH"
 EOF
 }

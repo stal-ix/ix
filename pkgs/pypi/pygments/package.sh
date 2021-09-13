@@ -3,7 +3,7 @@
 # bld env/std
 
 build() {
-    cd $out && $untar $src/*.whl && cat << EOF > $out/env
+    cd ${out} && $untar ${src}/*.whl && cat << EOF > ${out}/env
 export PYTHONPATH="$(pwd):\$PYTHONPATH"
 EOF
 }

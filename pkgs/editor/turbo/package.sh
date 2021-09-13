@@ -3,7 +3,7 @@
 # bld lib/cxx lib/fmt lib/tvision lib/clipboard dev/build/cmake env/std
 
 build() {
-    $unzip $src/*.zip && cd turbo*
+    $unzip ${src}/*.zip && cd turbo*
 
     echo 'install(TARGETS turbo DESTINATION bin)' >> CMakeLists.txt
 

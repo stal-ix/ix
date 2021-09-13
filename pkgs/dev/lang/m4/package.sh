@@ -5,11 +5,11 @@
 # bld lib/intl lib/sigsegv dev/build/make dev/build/help2man env/std
 
 build() {
-    $untar $src/m4* && cd m4*
+    $untar ${src}/m4* && cd m4*
 
-    #patch -p0 < $src/secure_snprintf.patch
+    #patch -p0 < ${src}/secure_snprintf.patch
 
-    dash ./configure $COFLAGS --prefix=$out --disable-c++
-    make -j $make_thrs
+    dash ./configure $COFLAGS --prefix=${out} --disable-c++
+    make -j ${make_thrs}
     make install
 }

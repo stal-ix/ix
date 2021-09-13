@@ -10,12 +10,12 @@
 {% endblock %}
 
 {% block build %}
-(cd lib && make PREFIX=$out -j $make_thrs install-static)
-(cd programs && make PREFIX=$out -j $make_thrs install)
+(cd lib && make PREFIX=${out} -j ${make_thrs} install-static)
+(cd programs && make PREFIX=${out} -j ${make_thrs} install)
 {% endblock %}
 
 {% block env %}
-export CPPFLAGS="-I$out/include \$CPPFLAGS"
-export LDFLAGS="-L$out/lib -lzstd \$LDFLAGS"
-export PKG_CONFIG_PATH="$out/lib/pkgconfig:\$PKG_CONFIG_PATH"
+export CPPFLAGS="-I${out}/include \$CPPFLAGS"
+export LDFLAGS="-L${out}/lib -lzstd \$LDFLAGS"
+export PKG_CONFIG_PATH="${out}/lib/pkgconfig:\$PKG_CONFIG_PATH"
 {% endblock %}

@@ -1,5 +1,5 @@
 # bld lib/archive env/tools
 
 build() {
-    cd $out && cp -R $(dirname $(which bsdtar)) ./
+    cd ${out} && cp -R $(dirname $(which bsdtar)) ./
 }

@@ -3,15 +3,15 @@
 # bld dev/build/make env/std
 
 build() {
-    $untar $src/lib* && cd lib*
+    $untar ${src}/lib* && cd lib*
 
-    dash ./configure $COFLAGS --prefix="$out"
-    make -j $make_thrs
+    dash ./configure $COFLAGS --prefix="${out}"
+    make -j ${make_thrs}
     make install
 
-    cat << EOF > $out/env
-export CPPFLAGS="-I$out/include \$CPPFLAGS"
-export LDFLAGS="-L$out/lib -latomic_ops \$LDFLAGS"
-export PKG_CONFIG_PATH="$out/lib/pkgconfig:\$PKG_CONFIG_PATH"
+    cat << EOF > ${out}/env
+export CPPFLAGS="-I${out}/include \$CPPFLAGS"
+export LDFLAGS="-L${out}/lib -latomic_ops \$LDFLAGS"
+export PKG_CONFIG_PATH="${out}/lib/pkgconfig:\$PKG_CONFIG_PATH"
 EOF
 }

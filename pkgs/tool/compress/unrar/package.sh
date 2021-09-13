@@ -3,10 +3,10 @@
 # bld lib/cxx dev/build/make env/std
 
 build() {
-    $untar $src/unrar* && cd unrar*
+    $untar ${src}/unrar* && cd unrar*
 
     setup_compiler
-    make CXX=g++ CC=gcc -j $make_thrs -f makefile
-    mkdir -p $out/bin
-    install -v -m755 unrar $out/bin/
+    make CXX=g++ CC=gcc -j ${make_thrs} -f makefile
+    mkdir -p ${out}/bin
+    install -v -m755 unrar ${out}/bin/
 }

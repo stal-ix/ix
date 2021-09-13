@@ -4,14 +4,14 @@
 # bld dev/build/cmake env/std
 
 build() {
-    $untar $src/*.gz && cd fmt*
+    $untar ${src}/*.gz && cd fmt*
 
     build_cmake_ninja ..
 
-    cat << EOF > $out/env
-export CPPFLAGS="-I$out/include \$CPPFLAGS"
-export LDFLAGS="-L$out/lib -lfmt \$LDFLAGS"
-export PKG_CONFIG_PATH="$out/lib/pkgconfig:\$PKG_CONFIG_PATH"
-export CMFLAGS="-Dfmt_INCLUDE_DIR=$out/include -Dfmt_LIBRARY=$out/lib/libfmt.a \$CMFLAGS"
+    cat << EOF > ${out}/env
+export CPPFLAGS="-I${out}/include \$CPPFLAGS"
+export LDFLAGS="-L${out}/lib -lfmt \$LDFLAGS"
+export PKG_CONFIG_PATH="${out}/lib/pkgconfig:\$PKG_CONFIG_PATH"
+export CMFLAGS="-Dfmt_INCLUDE_DIR=${out}/include -Dfmt_LIBRARY=${out}/lib/libfmt.a \$CMFLAGS"
 EOF
 }

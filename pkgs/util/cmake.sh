@@ -6,7 +6,7 @@ build_cmake_prepare -G Ninja {{mix.prepare_deps(cmflags)}}
 {% endblock %}
 
 {% block build %}
-cd build && ninja -j $make_thrs all
+cd build && ninja -j ${make_thrs} all
 {% endblock %}
 
 {% block install %}

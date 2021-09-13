@@ -3,9 +3,9 @@
 # bld dev/lang/perl5 dev/build/autoconf dev/build/make env/std
 
 build() {
-    $untar $src/automake* && cd automake*
+    $untar ${src}/automake* && cd automake*
 
-    dash ./configure $COFLAGS --prefix=$out
-    make -j $make_thrs
+    dash ./configure $COFLAGS --prefix=${out}
+    make -j ${make_thrs}
     make install
 }

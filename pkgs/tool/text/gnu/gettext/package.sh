@@ -4,7 +4,7 @@
 # bld dev/build/make tool/compress/minigzip env/std
 
 build() {
-    $untar $src/gettext* && cd gettext* && cd gettext-tools
+    $untar ${src}/gettext* && cd gettext* && cd gettext-tools
 
     ln -s $(which dash) sh
     ln -s $(which minigzip) gzip
@@ -12,9 +12,9 @@ build() {
     export PATH="$(pwd):$PATH"
 
     dash ./configure $COFLAGS \
-        --prefix=$out \
+        --prefix=${out} \
         --with-installed-libtextstyle
 
-    make -j $make_thrs
+    make -j ${make_thrs}
     make install
 }

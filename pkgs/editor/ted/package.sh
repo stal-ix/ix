@@ -4,7 +4,7 @@
 # bld env/std
 
 build() {
-    $untar $src/*.zip && mv ted* $out/ted && cd $out
+    $untar ${src}/*.zip && mv ted* ${out}/ted && cd ${out}
 
     mkdir bin && cd bin
 
@@ -13,7 +13,7 @@ build() {
 export PYTHONPATH="$PYTHONPATH"
 export PYTHONDONTWRITEBYTECODE=1
 
-exec $(which python3) "$out/ted/ted" "\$@"
+exec $(which python3) "${out}/ted/ted" "\$@"
 EOF
 
     chmod +x ted

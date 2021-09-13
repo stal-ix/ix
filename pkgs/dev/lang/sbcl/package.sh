@@ -4,7 +4,7 @@
 # bld dev/lang/sbcl/boot dev/build/make env/std
 
 build() {
-    $untar $src/sbcl* && cd sbcl*
+    $untar ${src}/sbcl* && cd sbcl*
 
     (
         mkdir xxx && cd xxx
@@ -23,7 +23,7 @@ build() {
 
     dash ./make.sh \
         --xc-host=sbcl \
-        --prefix=$out \
+        --prefix=${out} \
         --with-sb-ldb \
         --with-sb-thread \
         --with-sb-core-compression \

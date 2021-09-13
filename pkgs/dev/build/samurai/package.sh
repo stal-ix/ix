@@ -14,11 +14,11 @@ export CPPFLAGS="-Dwarn=samu_warn $CPPFLAGS"
 {% endblock %}
 
 {% block build %}
-make PREFIX=$out CC=clang
+make PREFIX=${out} CC=clang
 {% endblock %}
 
 {% block install %}
-make PREFIX=$out install
+make PREFIX=${out} install
 
-cd $out/bin && ln -s samu ninja
+cd ${out}/bin && ln -s samu ninja
 {% endblock %}

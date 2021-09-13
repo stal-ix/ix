@@ -17,5 +17,5 @@ export CPPFLAGS="-Dwordfree=yash_wordfree -Dadd_history=yash_add_history $CPPFLA
 {% endblock %}
 
 {% block configure %}
-dash ./configure --prefix="$out" --with-term-lib=ncurses
+dash ./configure --prefix="${out}" --with-term-lib=ncurses
 {% endblock %}

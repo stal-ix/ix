@@ -3,18 +3,18 @@
 # bld shell/bash/minimal env/std
 
 build() {
-    cd $out && $untar $src/go* && cd go*
+    cd ${out} && $untar ${src}/go* && cd go*
 
     setup_compiler
 
     (
-        export GOROOT_FINAL="$out/go"
+        export GOROOT_FINAL="${out}/go"
         cd src && cat run.bash | grep -v 'time go test' > qw && mv qw run.bash && bash ./all.bash
     )
 
-    cd $out && ln -s go/bin ./
+    cd ${out} && ln -s go/bin ./
 
-    cat << EOF > $out/env
-export GOROOT_BOOTSTRAP="$out/go"
+    cat << EOF > ${out}/env
+export GOROOT_BOOTSTRAP="${out}/go"
 EOF
 }

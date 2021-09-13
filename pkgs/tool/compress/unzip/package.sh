@@ -5,7 +5,7 @@
 # bld dev/build/make tool/text/gnu/patch env/tools env/c env/bootstrap
 
 build() {
-    $untar $src/unzip* && cd unzip*
+    $untar ${src}/unzip* && cd unzip*
 
     for i in `ls ../debian/patches/*.patch`; do
         cat "$i" | patch -p1
@@ -21,5 +21,5 @@ build() {
     setup_compiler
 
     make -f unix/Makefile macosx || true
-    make prefix=$out MANDIR=$out/share/man/man1 -f unix/Makefile install
+    make prefix=${out} MANDIR=${out}/share/man/man1 -f unix/Makefile install
 }

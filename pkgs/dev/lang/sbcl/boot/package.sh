@@ -4,7 +4,7 @@
 # bld dev/lang/ecl dev/build/make env/std
 
 build() {
-    $untar $src/sbcl* && cd sbcl*
+    $untar ${src}/sbcl* && cd sbcl*
 
     (
         mkdir xxx && cd xxx
@@ -25,7 +25,7 @@ build() {
 
     dash ./make.sh \
         --xc-host='ecl -norc' \
-        --prefix=$out \
+        --prefix=${out} \
         --with-sb-ldb \
         --with-sb-thread \
         --with-sb-core-compression \

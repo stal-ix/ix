@@ -3,8 +3,8 @@
 # bld boot/stage/2/shutil boot/stage/1/env
 
 build() {
-    $untar $src/patch* && cd patch* && cd patch
+    $untar ${src}/patch* && cd patch* && cd patch
 
-    mkdir -p $out/bin
-    clang $CPPFLAGS $CFLAGS $LDFLAGS *.c -o $out/bin/patch
+    mkdir -p ${out}/bin
+    clang $CPPFLAGS $CFLAGS $LDFLAGS *.c -o ${out}/bin/patch
 }

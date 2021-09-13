@@ -3,9 +3,9 @@
 # bld lib/intl lib/iconv env/c boot/final/env
 
 build() {
-    $untar $src/which* && cd which*
+    $untar ${src}/which* && cd which*
 
-    dash ./configure $COFLAGS --prefix=$out
-    make -j $make_thrs
+    dash ./configure $COFLAGS --prefix=${out}
+    make -j ${make_thrs}
     make install
 }

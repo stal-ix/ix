@@ -3,9 +3,9 @@
 # bld env/c boot/final/env
 
 build() {
-    $untar $src/file* && cd file*
+    $untar ${src}/file* && cd file*
 
-    dash ./configure $COFLAGS --prefix=$out
-    make -j $make_thrs
+    dash ./configure $COFLAGS --prefix=${out}
+    make -j ${make_thrs}
     make install
 }

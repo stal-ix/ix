@@ -17,5 +17,5 @@ chmod +x getconf.sh
 {% endblock %}
 
 {% block install %}
-make PREFIX="$out" install
+make PREFIX="${out}" install
 {% endblock %}

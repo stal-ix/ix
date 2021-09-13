@@ -1,4 +1,4 @@
-$unzip $src/*.zip && cd mrust* && cp $src/rustc* ./
+$unzip ${src}/*.zip && cd mrust* && cp ${src}/rustc* ./
 
 echo > empty.c
 gcc -c empty.c -o empty.o
@@ -39,8 +39,8 @@ set -e
 set -x
 
 make RUSTCSRC
-make V= CC=$(which clang) RUSTC_TARGET={{mix.platform.target.arch}}-apple-darwin -j $make_thrs -f minicargo.mk || true
-make V= CC=$(which clang) RUSTC_TARGET={{mix.platform.target.arch}}-apple-darwin -j $make_thrs -f minicargo.mk
+make V= CC=$(which clang) RUSTC_TARGET={{mix.platform.target.arch}}-apple-darwin -j ${make_thrs} -f minicargo.mk || true
+make V= CC=$(which clang) RUSTC_TARGET={{mix.platform.target.arch}}-apple-darwin -j ${make_thrs} -f minicargo.mk
 make V= CC=$(which clang) RUSTC_TARGET={{mix.platform.target.arch}}-apple-darwin -C run_rustc
 
 exit 1

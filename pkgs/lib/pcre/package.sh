@@ -3,10 +3,10 @@
 # bld lib/z lib/bzip2 env/std boot/final/env
 
 build() {
-    $untar $src/pcre* && cd pcre*
+    $untar ${src}/pcre* && cd pcre*
 
     dash ./configure $COFLAGS \
-        --prefix=$out \
+        --prefix=${out} \
         --enable-pcregrep-libz \
         --enable-pcregrep-libbz2 \
         --enable-unicode-properties \
@@ -15,14 +15,14 @@ build() {
         --enable-jit \
         --disable-cpp
 
-    make -j $make_thrs
+    make -j ${make_thrs}
     make install
 
-    cat << EOF > $out/env
-export CPPFLAGS="-I$out/include \$CPPFLAGS"
-export LDFLAGS="-L$out/lib -lpcre \$LDFLAGS"
-export PKG_CONFIG_PATH="$out/lib/pkgconfig:\$PKG_CONFIG_PATH"
-export COFLAGS="--with-pcre=$out \$COFLAGS"
-export CMFLAGS="-DPCRE_LIBRARY=$out/lib/libpcre.a -DPCRE_INCLUDE_DIR=$out/include \$CMFLAGS"
+    cat << EOF > ${out}/env
+export CPPFLAGS="-I${out}/include \$CPPFLAGS"
+export LDFLAGS="-L${out}/lib -lpcre \$LDFLAGS"
+export PKG_CONFIG_PATH="${out}/lib/pkgconfig:\$PKG_CONFIG_PATH"
+export COFLAGS="--with-pcre=${out} \$COFLAGS"
+export CMFLAGS="-DPCRE_LIBRARY=${out}/lib/libpcre.a -DPCRE_INCLUDE_DIR=${out}/include \$CMFLAGS"
 EOF
 }

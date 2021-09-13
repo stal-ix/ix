@@ -17,7 +17,7 @@ export PATH="$(pwd)/src:$PATH"
 {% endblock %}
 
 {% block coflags %}
---libexecdir="$out/bin"
+--libexecdir="${out}/bin"
 --without-gmp
 --enable-no-install-program=stdbuf
 --enable-single-binary=symlinks
@@ -28,7 +28,7 @@ cat Makefile | grep -v 'LIBINTL = ' > tmp && mv tmp Makefile
 {% endblock %}
 
 {% block prebuild %}
-make LN_S=ln -j $make_thrs
+make LN_S=ln -j ${make_thrs}
 
 {% if mix.platform.target.os == 'darwin' %}
 (

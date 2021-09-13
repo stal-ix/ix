@@ -3,14 +3,14 @@
 # bld dev/build/make env/tools env/c env/bootstrap
 
 build() {
-    $untar $src/bz* && cd bz*
+    $untar ${src}/bz* && cd bz*
 
     setup_compiler
 
-    make -j $make_thrs PREFIX="$out" install
+    make -j ${make_thrs} PREFIX="${out}" install
 
-    cat << EOF > $out/env
-export CPPFLAGS="-I$out/include \$CPPFLAGS"
-export LDFLAGS="-L$out/lib -lbz2 \$LDFLAGS"
+    cat << EOF > ${out}/env
+export CPPFLAGS="-I${out}/include \$CPPFLAGS"
+export LDFLAGS="-L${out}/lib -lbz2 \$LDFLAGS"
 EOF
 }

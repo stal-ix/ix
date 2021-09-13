@@ -5,7 +5,7 @@
 # bld dev/build/meson env/std boot/final/env
 
 build() {
-    $untar $src/glib* && cd glib*
+    $untar ${src}/glib* && cd glib*
 
     ln -s $(which dash) sh
     export CPPFLAGS="-w -D_GNU_SOURCE=1 -I$(pwd)/inc $CPPFLAGS"
@@ -24,22 +24,22 @@ EOF
     export LDFLAGS="-L$(pwd) -lmain $LDFLAGS"
 
     meson \
-        --libdir "$out/lib" \
+        --libdir "${out}/lib" \
         -Ddefault_library=static \
-        -Dprefix=$out \
+        -Dprefix=${out} \
         -Diconv=external \
         _build {{mix.if_darwin('-Db_asneeded=false -Db_lundef=false')}}
 
     (
         cd _build
 
-        ninja -j $make_thrs
+        ninja -j ${make_thrs}
         ninja install
     )
 
-    cat << EOF > $out/env
-export CPPFLAGS="-I$out/include \$CPPFLAGS"
-export LDFLAGS="-L$out/lib -lglib-2.0 -lgobject-2.0 -lgio-2.0 -lgmodule-2.0 -lgthread-2.0 \$LDFLAGS"
-export PKG_CONFIG_PATH="$out/lib/pkgconfig:\$PKG_CONFIG_PATH"
+    cat << EOF > ${out}/env
+export CPPFLAGS="-I${out}/include \$CPPFLAGS"
+export LDFLAGS="-L${out}/lib -lglib-2.0 -lgobject-2.0 -lgio-2.0 -lgmodule-2.0 -lgthread-2.0 \$LDFLAGS"
+export PKG_CONFIG_PATH="${out}/lib/pkgconfig:\$PKG_CONFIG_PATH"
 EOF
 }

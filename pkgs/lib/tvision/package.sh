@@ -4,14 +4,14 @@
 # bld dev/build/cmake env/std
 
 build() {
-    $unzip $src/*.zip && cd tvision*
+    $unzip ${src}/*.zip && cd tvision*
 
     setup_compiler
 
     build_cmake_ninja ..
 
-    cat << EOF > $out/env
-export CPPFLAGS="-I$out/include \$CPPFLAGS"
-export LDFLAGS="-L$out/lib -ltvision \$LDFLAGS"
+    cat << EOF > ${out}/env
+export CPPFLAGS="-I${out}/include \$CPPFLAGS"
+export LDFLAGS="-L${out}/lib -ltvision \$LDFLAGS"
 EOF
 }

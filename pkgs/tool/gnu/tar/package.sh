@@ -3,9 +3,9 @@
 # bld lib/z lib/xz lib/intl lib/bzip2 lib/iconv dev/build/make env/std
 
 build() {
-    $untar $src/tar* && cd tar*
+    $untar ${src}/tar* && cd tar*
 
-    dash ./configure $COFLAGS --prefix=$out
-    make -j $make_thrs
+    dash ./configure $COFLAGS --prefix=${out}
+    make -j ${make_thrs}
     make install
 }

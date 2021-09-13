@@ -4,7 +4,7 @@
 # bld dev/build/make env/std
 
 build() {
-    $untar $src/ecl* && cd ecl*
+    $untar ${src}/ecl* && cd ecl*
 
     srcdir="$(pwd)/src"
 
@@ -23,9 +23,9 @@ build() {
         --with-libgc-prefix=$lib_boehmgc \
         --disable-shared \
         --enable-static \
-        --prefix=$out \
-        --srcdir=$srcdir
+        --prefix=${out} \
+        --srcdir=${srcdir}
 
-    make -j $make_thrs
+    make -j ${make_thrs}
     make install
 }

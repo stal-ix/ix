@@ -4,10 +4,10 @@
 # run {{mix.if_darwin('dev/lang/cctools')}} dev/lang/python3 dev/build/samurai
 
 build() {
-    cd $out
+    cd ${out}
 
     (
-        $untar $src/meson*
+        $untar ${src}/meson*
 
         ln -s meson* meson
         mkdir bin && cd bin

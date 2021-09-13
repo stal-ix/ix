@@ -3,14 +3,14 @@
 # bld env/c boot/final/env
 
 build() {
-    $untar $src/lib* && cd lib*
+    $untar ${src}/lib* && cd lib*
 
-    dash ./configure $COFLAGS --prefix=$out
-    make -j $make_thrs
+    dash ./configure $COFLAGS --prefix=${out}
+    make -j ${make_thrs}
     make install
 
-    cat << EOF > $out/env
-export CPPFLAGS="-I$out/include \$CPPFLAGS"
-export LDFLAGS="-L$out/lib -lsigsegv \$LDFLAGS"
+    cat << EOF > ${out}/env
+export CPPFLAGS="-I${out}/include \$CPPFLAGS"
+export LDFLAGS="-L${out}/lib -lsigsegv \$LDFLAGS"
 EOF
 }

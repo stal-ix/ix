@@ -3,9 +3,9 @@
 # bld lib/intl dev/lang/m4 dev/lang/flex dev/lang/perl5 dev/lang/bison/376/stage0 dev/build/make env/std
 
 build() {
-    $untar $src/bison* && cd bison*
+    $untar ${src}/bison* && cd bison*
 
-    dash ./configure $COFLAGS --prefix=$out --enable-relocatable
+    dash ./configure $COFLAGS --prefix=${out} --enable-relocatable
 
     (
         cd src
@@ -15,6 +15,6 @@ build() {
         mv parse-gram.tab.c parse-gram.c && mv parse-gram.tab.h parse-gram.h
     )
 
-    make -j $make_thrs
+    make -j ${make_thrs}
     make install
 }

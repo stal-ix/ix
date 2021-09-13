@@ -4,9 +4,9 @@
 # bld dev/build/make env/std
 
 build() {
-    $untar $src/help* && cd help*
+    $untar ${src}/help* && cd help*
 
-    dash ./configure $COFLAGS --prefix=$out
-    make -j $make_thrs
+    dash ./configure $COFLAGS --prefix=${out}
+    make -j ${make_thrs}
     make install
 }

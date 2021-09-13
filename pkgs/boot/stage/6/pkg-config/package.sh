@@ -10,9 +10,9 @@
 {% endblock %}
 
 {% block postconf %}
-cd glib && dash ./configure $COFLAGS --prefix=$out --with-libiconv=gnu --srcdir=.
+cd glib && dash ./configure $COFLAGS --prefix=${out} --with-libiconv=gnu --srcdir=.
 {% endblock %}
 
 {% block prebuild %}
-cd glib && make -j $make_thrs
+cd glib && make -j ${make_thrs}
 {% endblock %}

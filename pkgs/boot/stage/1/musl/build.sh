@@ -1,4 +1,4 @@
-cd $out && $untar $src/musl* && cd musl*
+cd ${out} && $untar ${src}/musl* && cd musl*
 
 (
     (while read l; do printf "$l\n"; done) << EOF
@@ -91,7 +91,7 @@ int main() {
 }
 EOF
 
-./tool << EOF > $out/env
+./tool << EOF > ${out}/env
 export CPPFLAGS="$MFLAGS \$CPPFLAGS"
 export CFLAGS="-ffreestanding -nostdinc \$CFLAGS"
 export LDFLAGS="-L$PWD -lmusl \$LDFLAGS"

@@ -22,16 +22,16 @@ export LD=clang
 export RANLIB=ranlib
 export CPPFLAGS="-D_BSD_SOURCE -w -Dgetopt=h_getopt -Doptarg=h_optarg -Doptind=h_optind -Dopterr=h_opterr -Doptopt=h_optopt -I../libcommon $CPPFLAGS -O0 -g"
 
-export MANDIR=$out/man
-export SV3BIN=$out/sv3
-export SU3BIN=$out/su3
-export S42BIN=$out/s42
-export SUSBIN=$out/sus
-export UCBBIN=$out/ucb
-export DEFBIN=$out/bin
-export DEFLIB=$out/lib
-export BINDIR=$out/bin
-export LIBDIR=$out/lib
+export MANDIR=${out}/man
+export SV3BIN=${out}/sv3
+export SU3BIN=${out}/su3
+export S42BIN=${out}/s42
+export SUSBIN=${out}/sus
+export UCBBIN=${out}/ucb
+export DEFBIN=${out}/bin
+export DEFLIB=${out}/lib
+export BINDIR=${out}/bin
+export LIBDIR=${out}/lib
 
 export UCBINST=install
 export MANINST=install
@@ -62,7 +62,7 @@ export LDFLAGS="../libcommon/asciitype.o ../libcommon/getdir.o ../libcommon/geto
 )
 
 for i in lib bin share man man/man1 man/man1b man/man2 man/man1n man/man1m; do
-    mkdir/mkdir $out/$i
+    mkdir/mkdir ${out}/$i
 done
 
 for i in $S42BIN $SUSBIN $SV3BIN $UCBBIN $SU3BIN; do
@@ -76,19 +76,19 @@ done
     cd cp && $MAKE -f Makefile.mk cp
 )
 
-cp/cp cp/cp $out/bin
-cp rm/rm $out/bin
+cp/cp cp/cp ${out}/bin
+cp rm/rm ${out}/bin
 
 (
     cd true
 
-    clang $CPPFLAGS $CFLAGS $LDFLAGS -o $out/bin/true -x c - << EOF
+    clang $CPPFLAGS $CFLAGS $LDFLAGS -o ${out}/bin/true -x c - << EOF
 int main() {
     return 0;
 }
 EOF
 
-    clang $CPPFLAGS $CFLAGS $LDFLAGS -o $out/bin/false -x c - << EOF
+    clang $CPPFLAGS $CFLAGS $LDFLAGS -o ${out}/bin/false -x c - << EOF
 int main() {
     return 1;
 }
@@ -101,13 +101,13 @@ export STRIP=true
     cd _install && $MAKE -f Makefile.mk
 )
 
-cp _install/install_ucb $out/bin/install
+cp _install/install_ucb ${out}/bin/install
 
 (
     cd chmod && $MAKE -f Makefile.mk
 )
 
-cp chmod/chmod $out/bin
+cp chmod/chmod ${out}/bin
 
 export LNS=cp
 
@@ -148,7 +148,7 @@ for i in cp cat copy; do
     )
 done
 
-export MAGIC="$out/share/magic"
+export MAGIC="${out}/share/magic"
 export PRCPPFLAGS="$CPPFLAGS"
 export CPPFLAGS="-Dcompile=sed_x_compile -Dstep=sed_step -Dadvance=sed_advance -Dnodelim=sed_nodelim -Dsed=sed_sed -Dnbra=sed_nbra -Dloc1=sed_loc1 -Dbraslist=sed_braslist -Dbraelist=sed_braelist -Dloc2=sed_loc2 -Dlocs=sed_locs $CPPFLAGS"
 
@@ -226,16 +226,16 @@ done
     $MAKE -f Makefile.mk install
 )
 
-export PATH="$out/tmp:$PATH"
+export PATH="${out}/tmp:$PATH"
 
-mv $out/bin $out/tmp && mkdir $out/bin
+mv ${out}/bin ${out}/tmp && mkdir $out/bin
 
-for p in "$SV3BIN" "$SU3BIN" "$S42BIN" "$SUSBIN" "$UCBBIN" "$out/tmp"; do
-    cp $p/* $out/bin
+for p in "$SV3BIN" "$SU3BIN" "$S42BIN" "$SUSBIN" "$UCBBIN" "${out}/tmp"; do
+    cp $p/* ${out}/bin
 done
 
 (
-    cd $out/bin && ln -s nawk awk && rm dircmp
+    cd ${out}/bin && ln -s nawk awk && rm dircmp
 )
 {% endblock %}
 

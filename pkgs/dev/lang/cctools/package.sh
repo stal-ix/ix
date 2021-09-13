@@ -4,18 +4,18 @@
 # bld dev/build/make env/c env/tools env/bootstrap
 
 build() {
-    $unzip $src/*.zip && cd cctools* && cd cctools
+    $unzip ${src}/*.zip && cd cctools* && cd cctools
 
     export CPPFLAGS="-D__crashreporter_info__=__crashreporter_info_ld__ $CPPFLAGS"
 
     sed -e 's/__arm__/__eat_shit__/' -i configure
 
     dash ./configure $COFLAGS \
-        --prefix=$out \
+        --prefix=${out} \
         --with-sysroot=$OSX_SDK
 
-    make -j $make_thrs || touch ld64/src/other/ObjectDump
-    make -j $make_thrs
+    make -j ${make_thrs} || touch ld64/src/other/ObjectDump
+    make -j ${make_thrs}
 
     make install
 }

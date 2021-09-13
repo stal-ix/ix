@@ -5,7 +5,7 @@
 # run shell/openssh
 
 build() {
-    $untar $src/v* && cd git*
+    $untar ${src}/v* && cd git*
 
     ln -s $(which dash) sh
     ln -s $(which bsdtar) tar
@@ -13,5 +13,5 @@ build() {
 
     setup_compiler
 
-    make prefix=$out V=1 CC=gcc INSTALL_SYMLINKS=yes -j $make_thrs install
+    make prefix=${out} V=1 CC=gcc INSTALL_SYMLINKS=yes -j ${make_thrs} install
 }

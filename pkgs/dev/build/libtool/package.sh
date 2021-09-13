@@ -3,9 +3,9 @@
 # bld dev/lang/m4 dev/build/make env/std
 
 build() {
-    $untar $src/libtool* && cd libtool*
+    $untar ${src}/libtool* && cd libtool*
 
-    dash ./configure $COFLAGS --prefix=$out
-    make -j $make_thrs
+    dash ./configure $COFLAGS --prefix=${out}
+    make -j ${make_thrs}
     make install
 }

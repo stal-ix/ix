@@ -20,10 +20,10 @@ sed -e '/^includedir/ s/=.*$/=@includedir@/' \
 {% endblock %}
 
 {% block env %}
-export LIBFFI_CFLAGS="-I$out/include"
-export LIBFFI_LIBS="-L$out/lib -lffi"
+export LIBFFI_CFLAGS="-I${out}/include"
+export LIBFFI_LIBS="-L${out}/lib -lffi"
 export CPPFLAGS="\$LIBFFI_CFLAGS \$CPPFLAGS"
 export LDFLAGS="\$LIBFFI_LIBS \$LDFLAGS"
-export COFLAGS="--with-system-ffi=$out \$COFLAGS"
-export PKG_CONFIG_PATH="$out/lib/pkgconfig:\$PKG_CONFIG_PATH"
+export COFLAGS="--with-system-ffi=${out} \$COFLAGS"
+export PKG_CONFIG_PATH="${out}/lib/pkgconfig:\$PKG_CONFIG_PATH"
 {% endblock %}

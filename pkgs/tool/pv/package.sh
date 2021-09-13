@@ -3,7 +3,7 @@
 # bld {{'dev/lang/cctools' | darwin}} dev/build/make env/tools env/c env/bootstrap
 
 build() {
-    $untar $src/pv* && cd pv*
+    $untar ${src}/pv* && cd pv*
 
     export LD=ld
 
@@ -17,7 +17,7 @@ build() {
 
     export PATH="$(pwd):$PATH"
 
-    dash ./configure $COFLAGS --prefix="$out"
-    make -j $make_thrs
+    dash ./configure $COFLAGS --prefix="${out}"
+    make -j ${make_thrs}
     make install
 }

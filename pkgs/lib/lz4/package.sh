@@ -10,11 +10,11 @@
 {% endblock %}
 
 {% block build %}
-make PREFIX=$out BUILD_SHARED=no -j $make_thrs allmost
+make PREFIX=${out} BUILD_SHARED=no -j ${make_thrs} allmost
 {% endblock %}
 
 {% block env %}
-export CPPFLAGS="-I$out/include \$CPPFLAGS"
-export LDFLAGS="-L$out/lib -llz4 \$LDFLAGS"
-export PKG_CONFIG_PATH="$out/lib/pkgconfig:\$PKG_CONFIG_PATH"
+export CPPFLAGS="-I${out}/include \$CPPFLAGS"
+export LDFLAGS="-L${out}/lib -llz4 \$LDFLAGS"
+export PKG_CONFIG_PATH="${out}/lib/pkgconfig:\$PKG_CONFIG_PATH"
 {% endblock %}

@@ -3,7 +3,7 @@
 # bld dev/build/make dev/lang/byacc env/std
 
 build() {
-    $untar $src/*.zip && cd heirloom* && cd heirloom-devtools/lex
+    $untar ${src}/*.zip && cd heirloom* && cd heirloom-devtools/lex
 
     export CFLAGS="-w $CFLAGS"
 
@@ -11,9 +11,9 @@ build() {
 
     export ROOT=
 
-    export BINDIR="$out/bin"
-    export LIBDIR="$out/lib"
-    export MANDIR="$out/man"
+    export BINDIR="${out}/bin"
+    export LIBDIR="${out}/lib"
+    export MANDIR="${out}/man"
 
     make -f Makefile.mk CC=gcc AR=ar RANLIB=ranlib
     make -f Makefile.mk INSTALL=install STRIP=true install

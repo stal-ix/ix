@@ -3,9 +3,9 @@
 # bld dev/lang/m4 dev/lang/byacc dev/build/make env/std
 
 build() {
-    $untar $src/flex* && cd flex*
+    $untar ${src}/flex* && cd flex*
 
-    dash ./configure $COFLAGS --prefix=$out
+    dash ./configure $COFLAGS --prefix=${out}
 
     (
         cd src
@@ -15,6 +15,6 @@ build() {
         echo 'extern int yylval;' >> parse.h
     )
 
-    make -j $make_thrs
+    make -j ${make_thrs}
     make install
 }

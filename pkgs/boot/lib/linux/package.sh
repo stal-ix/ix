@@ -3,7 +3,7 @@
 # bld boot/stage/5/env
 
 build() {
-    $untar $src/linux* && cd linux*
+    $untar ${src}/linux* && cd linux*
 
     ln -s $(which dash) sh
     setup_compiler
@@ -13,9 +13,9 @@ build() {
 
     find usr/include -name '.*' -delete
     rm usr/include/Makefile
-    cp -rv usr/include $out/
+    cp -rv usr/include ${out}/
 
-    cat << EOF > $out/env
-export CPPFLAGS="-isystem $out/include \$CPPFLAGS"
+    cat << EOF > ${out}/env
+export CPPFLAGS="-isystem ${out}/include \$CPPFLAGS"
 EOF
 }

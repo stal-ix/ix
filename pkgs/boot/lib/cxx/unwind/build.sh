@@ -1,4 +1,4 @@
-$untar $src/llvm* && cd llvm* && cd libunwind
+$untar ${src}/llvm* && cd llvm* && cd libunwind
 
 export CPPFLAGS="-I./src -I./include -D_LIBUNWIND_HAS_COMMENT_LIB_PRAGMA -funwind-tables -D_DEBUG -D_LIBUNWIND_IS_NATIVE_ONLY $CPPFLAGS"
 export CXXFLAGS="-std=c++11 -fstrict-aliasing -fno-exceptions -fno-rtti $CXXFLAGS"
@@ -21,11 +21,11 @@ done
 ar q obj/libunwind.a obj/*.o
 ranlib obj/libunwind.a
 
-mkdir $out/lib
-cp obj/libunwind.a $out/lib
-cp -R include $out/
+mkdir ${out}/lib
+cp obj/libunwind.a ${out}/lib
+cp -R include ${out}/
 
-cat << EOF > $out/env
-export CPPFLAGS="-I$out/include \$CPPFLAGS"
-export LDFLAGS="$out/lib/libunwind.a \$LDFLAGS"
+cat << EOF > ${out}/env
+export CPPFLAGS="-I${out}/include \$CPPFLAGS"
+export LDFLAGS="${out}/lib/libunwind.a \$LDFLAGS"
 EOF

@@ -6,7 +6,7 @@
 # bld dev/build/automake dev/build/autoconf dev/build/libtool
 
 build() {
-    $untar $src/flex* && cd flex*
+    $untar ${src}/flex* && cd flex*
 
     (
         mkdir tool && cd tool
@@ -15,13 +15,13 @@ build() {
         setup_compiler
     )
 
-    patch < $src/scan_l.patch || true
+    patch < ${src}/scan_l.patch || true
 
     export PATH="$(pwd)/tool:$PATH"
 
     echo 'all:' > po/Makefile.in.in
     dash ./autogen.sh 2>1 > ./autogen.log
-    dash ./configure $COFLAGS --prefix="$out"
+    dash ./configure $COFLAGS --prefix="${out}"
     make flex
     make install
 }

@@ -6,24 +6,24 @@
 # bld dev/build/make dev/build/pkg-config env/std
 
 build() {
-    $untar $src/gc* && cd gc*
+    $untar ${src}/gc* && cd gc*
 
-    cat $src/*.patch* | patch -p1
+    cat ${src}/*.patch* | patch -p1
 
     dash ./configure $COFLAGS \
         --disable-debug \
         --disable-dependency-tracking \
-        --prefix=$out \
+        --prefix=${out} \
         --enable-cplusplus \
         --enable-large-config
 
-    make -j $make_thrs
+    make -j ${make_thrs}
     make tests
     make install
 
-    cat << EOF > $out/env
-export CPPFLAGS="-I$out/include \$CPPFLAGS"
-export LDFLAGS="-L$out/lib -lgc \$LDFLAGS"
-export PKG_CONFIG_PATH="$out/lib/pkgconfig:\$PKG_CONFIG_PATH"
+    cat << EOF > ${out}/env
+export CPPFLAGS="-I${out}/include \$CPPFLAGS"
+export LDFLAGS="-L${out}/lib -lgc \$LDFLAGS"
+export PKG_CONFIG_PATH="${out}/lib/pkgconfig:\$PKG_CONFIG_PATH"
 EOF
 }

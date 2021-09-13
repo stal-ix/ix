@@ -3,9 +3,9 @@
 # bld lib/readline dev/build/make env/std
 
 build() {
-    $untar $src/mawk* && cd mawk*
+    $untar ${src}/mawk* && cd mawk*
 
-    dash ./configure $COFLAGS --prefix=$out
-    make -j $make_thrs
+    dash ./configure $COFLAGS --prefix=${out}
+    make -j ${make_thrs}
     make install
 }

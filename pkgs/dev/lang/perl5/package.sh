@@ -3,7 +3,7 @@
 # bld lib/z lib/gdbm lib/iconv dev/build/make tool/gnu/coreutils shell/bash/minimal env/std
 
 build() {
-    $untar $src/perl* && cd perl*
+    $untar ${src}/perl* && cd perl*
 
     # too much warnings with clang
     export CPPFLAGS="-w $CPPFLAGS"
@@ -27,7 +27,7 @@ EOF
 
     bash ./Configure -des \
         -Dusethreads \
-        -Dprefix="$out" \
+        -Dprefix="${out}" \
         -Duseperlio \
         -Uusesfio \
         -Duseshrplib=false \
@@ -35,6 +35,6 @@ EOF
         -Dcc=gcc
 #        -Duserelocatableinc
 
-    make -j $make_thrs
+    make -j ${make_thrs}
     make install
 }

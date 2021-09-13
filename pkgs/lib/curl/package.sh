@@ -16,8 +16,8 @@ export LIBS=$(echo "$LDFLAGS" | tr ' ' '\n' | grep '^-l' | tr '\n' ' ')
 {% endblock %}
 
 {% block env %}
-export CPPFLAGS="-I$out/include \$CPPFLAGS"
-export LDFLAGS="-L$out/lib -lcurl \$LDFLAGS"
-export PKG_CONFIG_PATH="$out/lib/pkgconfig:\$PKG_CONFIG_PATH"
-export CMFLAGS="-DCURL_LIBRARY=$out/lib/libcurl.a -DCURL_INCLUDE_DIR=$out/include \$CMFLAGS"
+export CPPFLAGS="-I${out}/include \$CPPFLAGS"
+export LDFLAGS="-L${out}/lib -lcurl \$LDFLAGS"
+export PKG_CONFIG_PATH="${out}/lib/pkgconfig:\$PKG_CONFIG_PATH"
+export CMFLAGS="-DCURL_LIBRARY=${out}/lib/libcurl.a -DCURL_INCLUDE_DIR=${out}/include \$CMFLAGS"
 {% endblock %}

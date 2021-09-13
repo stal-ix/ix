@@ -30,7 +30,7 @@ do_unpack() {
 {% block unpack %}
 mkdir bld && cd bld
 
-for s in $src/*; do
+for s in ${src}/*; do
     case $s in
         *touch)
         ;;
@@ -82,7 +82,7 @@ echo 'configure stage'
 {% block postconf %}
 {% endblock %}
 
-export -p > $tmp/confenv
+export -p > ${tmp}/confenv
 }
 
 do_build() {
@@ -123,23 +123,23 @@ echo 'install stage'
 {% block postinstall%}
 {% endblock %}
 
-cat << EOF > $out/env
+cat << EOF > ${out}/env
 {% block env %}
 {% endblock %}
 EOF
 }
 
 build() {
-echo "build $out"
+echo "build ${out}"
 
 do_unpack
 
 (do_patch)
 (do_configure)
-. $tmp/confenv
+. ${tmp}/confenv
 (do_build)
 (do_install)
 (do_test)
 
-echo "$out complete"
+echo "${out} complete"
 }

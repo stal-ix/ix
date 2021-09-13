@@ -30,10 +30,10 @@ export CPPFLAGS="-D__APPLE_SANDBOX_NAMED_EXTERNAL__ $CPPFLAGS"
 {% endblock %}
 
 {% block patch %}
-cat $src/*.diff | patch -p1
+cat ${src}/*.diff | patch -p1
 {% endblock %}
 
 {% block coflags %}
 --disable-strip
---with-privsep-path=$out/tmp/privsep
+--with-privsep-path=${out}/tmp/privsep
 {% endblock %}

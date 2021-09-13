@@ -15,11 +15,11 @@
 {% endblock %}
 
 {% block env %}
-export LDFLAGS="-L$out/lib/mimalloc-2.0 -lmimalloc \$LDFLAGS"
+export LDFLAGS="-L${out}/lib/mimalloc-2.0 -lmimalloc \$LDFLAGS"
 {% endblock %}
 
 {% block test %}
-. $out/env
+. ${out}/env
 
 gcc $CPPFLAGS $CFLAGS $LDFLAGS -o main -x c - << EOF
 #include <stdlib.h>

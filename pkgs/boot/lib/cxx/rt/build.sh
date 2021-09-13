@@ -1,4 +1,4 @@
-$unzip $src/master* && cd libcxxrt*
+$unzip ${src}/master* && cd libcxxrt*
 
 mkdir obj
 
@@ -18,13 +18,13 @@ done
 ar q obj/libcxxrt.a obj/*.o
 ranlib obj/libcxxrt.a
 
-mkdir $out/lib
-mkdir $out/include
+mkdir ${out}/lib
+mkdir ${out}/include
 
-cp obj/libcxxrt.a $out/lib/
-cp src/*.h $out/include/
+cp obj/libcxxrt.a ${out}/lib/
+cp src/*.h ${out}/include/
 
-cat << EOF > $out/env
-export CPPFLAGS="-I$out/include \$CPPFLAGS"
-export LDFLAGS="$out/lib/libcxxrt.a \$LDFLAGS"
+cat << EOF > ${out}/env
+export CPPFLAGS="-I${out}/include \$CPPFLAGS"
+export LDFLAGS="${out}/lib/libcxxrt.a \$LDFLAGS"
 EOF

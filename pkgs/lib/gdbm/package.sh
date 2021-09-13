@@ -17,11 +17,11 @@
 {% endblock %}
 
 {% block postinstall %}
-cd $out/lib && ln -s libgdbm_compat.a libdbm.a
+cd ${out}/lib && ln -s libgdbm_compat.a libdbm.a
 {% endblock %}
 
 {% block env %}
-export CPPFLAGS="-I$out/include \$CPPFLAGS"
-export LDFLAGS="-L$out/lib -lgdbm -lgdbm_compat \$LDFLAGS"
-export COFLAGS="--with-gdbm=$out \$COFLAGS"
+export CPPFLAGS="-I${out}/include \$CPPFLAGS"
+export LDFLAGS="-L${out}/lib -lgdbm -lgdbm_compat \$LDFLAGS"
+export COFLAGS="--with-gdbm=${out} \$COFLAGS"
 {% endblock %}

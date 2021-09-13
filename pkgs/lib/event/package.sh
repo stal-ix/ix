@@ -15,8 +15,8 @@ ln -s $(which python3) python
 {% endblock %}
 
 {% block env %}
-export COFLAGS="--with-libevent=$out \$COFLAGS"
-export CPPFLAGS="-I$out/include \$CPPFLAGS"
-export LDFLAGS="-L$out/lib -levent -levent_core -levent_extra -levent_pthreads \$LDFLAGS"
-export PKG_CONFIG_PATH="$out/lib/pkgconfig:\$PKG_CONFIG_PATH"
+export COFLAGS="--with-libevent=${out} \$COFLAGS"
+export CPPFLAGS="-I${out}/include \$CPPFLAGS"
+export LDFLAGS="-L${out}/lib -levent -levent_core -levent_extra -levent_pthreads \$LDFLAGS"
+export PKG_CONFIG_PATH="${out}/lib/pkgconfig:\$PKG_CONFIG_PATH"
 {% endblock %}

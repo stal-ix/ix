@@ -11,7 +11,7 @@ boot/stage/1/env
 {% endblock %}
 
 {% block unpack %}
-cd $out && $untar $src/bmake* && cd bmake
+cd ${out} && $untar ${src}/bmake* && cd bmake
 {% endblock %}
 
 {% block configure %}
@@ -35,7 +35,7 @@ EOF
 {% endblock %}
 
 {% block install %}
-mkdir $out/bin && cat ./make > $out/bin/make && chmod 493 $out/bin/make
+mkdir ${out}/bin && cat ./make > ${out}/bin/make && chmod 493 $out/bin/make
 {% endblock %}
 
 {% block build %}
