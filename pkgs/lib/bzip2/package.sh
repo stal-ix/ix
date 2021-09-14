@@ -1,4 +1,4 @@
-{% extends '//util/make.sh' %}
+{% extends '//util/template.sh' %}
 
 {% block fetch %}
 # url https://www.sourceware.org/pub/bzip2/bzip2-latest.tar.gz
@@ -10,7 +10,11 @@
 {% endblock %}
 
 {% block build %}
-make -j ${make_thrs} PREFIX="${out}" install
+make -j ${make_thrs} PREFIX="${out}"
+{% endblock %}
+
+{% block install %}
+make PREFIX="${out}" install
 {% endblock %}
 
 {% block env %}
