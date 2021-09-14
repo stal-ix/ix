@@ -1,0 +1,131 @@
++ build
++ echo build /home/pg/mix/store/8d07dc45b6e5ecf133c984a75c44896f-dev-lang-lex
++ do_unpack
++ mkdir bld
++ cd bld
++ do_untar /home/pg/mix/store/6376d7f16e75ef37a7b0d71d59aeb565/a47c4acf9fb43b89f9fb0afdcf9008121d50d806.zip
++ unzip /home/pg/mix/store/6376d7f16e75ef37a7b0d71d59aeb565/a47c4acf9fb43b89f9fb0afdcf9008121d50d806.zip
++ cd heirloom-a47c4acf9fb43b89f9fb0afdcf9008121d50d806
++ cd heirloom-devtools/lex
++ do_patch
++ echo patch step
++ do_configure
++ echo configure stage
++ export ROOT=
++ export CPPFLAGS=-Dgetopt=heirloom_getopt -I/home/pg/mix/store/c35df47f0fd91a2ab556375da8bd0f44-lib-compiler_rt/include -nostdinc -isystem /home/pg/mix/store/00997d096ba6db28fa13c952db8857e1-lib-musl/include -isystem /home/pg/mix/store/3704cac2dc06bc252223dc5d23755f81-dev-lang-clang/lib/clang/13.0.0/include -nostdinc --target=x86_64-linus-linux -DNDEBUG 
++ export CFLAGS=-w -fcolor-diagnostics -O2 
++ export BINDIR=/home/pg/mix/store/8d07dc45b6e5ecf133c984a75c44896f-dev-lang-lex/bin
++ export LIBDIR=/home/pg/mix/store/8d07dc45b6e5ecf133c984a75c44896f-dev-lang-lex/lib
++ export MANDIR=/home/pg/mix/store/8d07dc45b6e5ecf133c984a75c44896f-dev-lang-lex/man
++ mkdir .tools
++ cd .tools
++ which dash
++ ln -s /home/pg/mix/store/14eba0dcf6a44eb2ebffca4f691d8bb2-shell-dash-minimal/bin/dash sh
++ setup_compiler
++ which dash
++ which clang
++ cat
++ which dash
++ which clang++
++ cat
++ chmod +x clang clang++
++ ln -s clang gcc
++ ln -s clang c99
++ ln -s clang cc
++ ln -s clang++ g++
++ ln -s clang++ c++
++ pwd
++ export PATH=/home/pg/mix/build/8d07dc45b6e5ecf133c984a75c44896f/bld/heirloom-a47c4acf9fb43b89f9fb0afdcf9008121d50d806/heirloom-devtools/lex/.tools:/nowhere:/home/pg/mix/store/bbb0d86dec25fbe881ae0082337df118-dev-build-make/bin:/home/pg/mix/store/4e24bb22e734032aa58583d75122f9d5-dev-lang-byacc/bin:/home/pg/mix/store/cb876469db0c76f84885ca4c9c1efcd7-env-std/bin:/home/pg/mix/store/75117c6b438955dcd977bf35a18bb279-env-c/bin:/home/pg/mix/store/ee472463ade673aba1140952b933b7ff-env-tools/bin:/home/pg/mix/store/2bfb1c6815443a5f510c989379319ca0-env-compress/bin:/home/pg/mix/store/ee993333e28a93979557f3de6c83841f-lib-c/bin:/home/pg/mix/store/c35df47f0fd91a2ab556375da8bd0f44-lib-compiler_rt/bin:/home/pg/mix/store/b0570fd6377b698c9b48e4999acc508c-env-c-nort/bin:/home/pg/mix/store/00997d096ba6db28fa13c952db8857e1-lib-musl/bin:/home/pg/mix/store/1e323af482ee6c70b3aa0cb01a7da55e-lib-mimalloc/bin:/home/pg/mix/store/3704cac2dc06bc252223dc5d23755f81-dev-lang-clang/bin:/home/pg/mix/store/01322e24848361b77e5b46d91b9e4d81-env-clang/bin:/home/pg/mix/store/664a25bed256973ab6cda9ad73069519-env-lld-linux/bin:/home/pg/mix/store/be5d9650818ecb1ba1fe5e9a14a5bd76-env-compiler/bin:/home/pg/mix/store/350c366278adbb07c1ed8893a7a2a197-env-system/bin:/home/pg/mix/store/1213d89b17f70573b1445d543349d2ef-env-release/bin:/home/pg/mix/store/8ec8785436e5b4461490662b5377ed84-env-autoconf/bin:/home/pg/mix/store/f0da2e9b2f20c6a0fcf1117a4b505632-env-linux/bin:/home/pg/mix/store/e85729010f052818e3444ac3a286e9a8-tool-gnu-file/bin:/home/pg/mix/store/0c859d047285141d57e161d7827dcfa6-tool-gnu-which/bin:/home/pg/mix/store/b92568ab99d21b6590a8e78ef558f601-tool-gnu-coreutils/bin:/home/pg/mix/store/203f91f3a2931528c1b54b6a92752626-tool-gnu-findutils/bin:/home/pg/mix/store/7063988c8959fbffc1963dc15d5bce53-tool-text-gnu-sed/bin:/home/pg/mix/store/5f421d77f3732f5ad1bd84653100106c-tool-text-gnu-gawk/bin:/home/pg/mix/store/67ccd4bd10127700203ea4fe4720e6c1-tool-text-gnu-grep/bin:/home/pg/mix/store/01b53d913d0bc87ba922a99d38fe9ce7-tool-text-gnu-patch/bin:/home/pg/mix/store/050bba72cc5db0316e58d43889aee94b-tool-text-gnu-diffutils/bin:/home/pg/mix/store/14eba0dcf6a44eb2ebffca4f691d8bb2-shell-dash-minimal/bin:/home/pg/mix/store/0d999ef1ced0cf2d79990300b5e86d77-tool-pv/bin:/home/pg/mix/store/cbfbcf18353e4ea7e1deb75b62f24ae7-tool-compress-unzip/bin:/home/pg/mix/store/7f9dc91cf18c7f0a54b35978c8f985da-tool-compress-bsdtar/bin
++ which clang
++ export CC=/home/pg/mix/build/8d07dc45b6e5ecf133c984a75c44896f/bld/heirloom-a47c4acf9fb43b89f9fb0afdcf9008121d50d806/heirloom-devtools/lex/.tools/clang
++ which clang++
++ export CXX=/home/pg/mix/build/8d07dc45b6e5ecf133c984a75c44896f/bld/heirloom-a47c4acf9fb43b89f9fb0afdcf9008121d50d806/heirloom-devtools/lex/.tools/clang++
++ cd ..
++ export -p
++ . /home/pg/mix/build/8d07dc45b6e5ecf133c984a75c44896f/confenv
++ export BINDIR=/home/pg/mix/store/8d07dc45b6e5ecf133c984a75c44896f-dev-lang-lex/bin
++ export CC=/home/pg/mix/build/8d07dc45b6e5ecf133c984a75c44896f/bld/heirloom-a47c4acf9fb43b89f9fb0afdcf9008121d50d806/heirloom-devtools/lex/.tools/clang
++ export CFLAGS=-w -fcolor-diagnostics -O2 
++ export CLANG_TARGET=--target=x86_64-linus-linux
++ export CLANG_VERSION=13.0.0
++ export COFLAGS=--disable-dependency-tracking --enable-static --disable-shared 
++ export CPPFLAGS=-Dgetopt=heirloom_getopt -I/home/pg/mix/store/c35df47f0fd91a2ab556375da8bd0f44-lib-compiler_rt/include -nostdinc -isystem /home/pg/mix/store/00997d096ba6db28fa13c952db8857e1-lib-musl/include -isystem /home/pg/mix/store/3704cac2dc06bc252223dc5d23755f81-dev-lang-clang/lib/clang/13.0.0/include -nostdinc --target=x86_64-linus-linux -DNDEBUG 
++ export CXX=/home/pg/mix/build/8d07dc45b6e5ecf133c984a75c44896f/bld/heirloom-a47c4acf9fb43b89f9fb0afdcf9008121d50d806/heirloom-devtools/lex/.tools/clang++
++ export CXXFLAGS=-fcolor-diagnostics -Wno-stdlibcxx-not-found -O2 
++ export LD=clang
++ export LDFLAGS=-L/home/pg/mix/store/c35df47f0fd91a2ab556375da8bd0f44-lib-compiler_rt/lib -lcompiler_rt -L/home/pg/mix/store/00997d096ba6db28fa13c952db8857e1-lib-musl/lib -lcrt -lc -L/home/pg/mix/store/1e323af482ee6c70b3aa0cb01a7da55e-lib-mimalloc/lib/mimalloc-2.0 -lmimalloc -nostdlib++ -fcolor-diagnostics --target=x86_64-linus-linux -static -nostdlib -nostdlib++ -fuse-ld=lld 
++ export LIBDIR=/home/pg/mix/store/8d07dc45b6e5ecf133c984a75c44896f-dev-lang-lex/lib
++ export MANDIR=/home/pg/mix/store/8d07dc45b6e5ecf133c984a75c44896f-dev-lang-lex/man
++ export OLDPWD=/home/pg/mix/build/8d07dc45b6e5ecf133c984a75c44896f/bld/heirloom-a47c4acf9fb43b89f9fb0afdcf9008121d50d806/heirloom-devtools/lex/.tools
++ export PATH=/home/pg/mix/build/8d07dc45b6e5ecf133c984a75c44896f/bld/heirloom-a47c4acf9fb43b89f9fb0afdcf9008121d50d806/heirloom-devtools/lex/.tools:/nowhere:/home/pg/mix/store/bbb0d86dec25fbe881ae0082337df118-dev-build-make/bin:/home/pg/mix/store/4e24bb22e734032aa58583d75122f9d5-dev-lang-byacc/bin:/home/pg/mix/store/cb876469db0c76f84885ca4c9c1efcd7-env-std/bin:/home/pg/mix/store/75117c6b438955dcd977bf35a18bb279-env-c/bin:/home/pg/mix/store/ee472463ade673aba1140952b933b7ff-env-tools/bin:/home/pg/mix/store/2bfb1c6815443a5f510c989379319ca0-env-compress/bin:/home/pg/mix/store/ee993333e28a93979557f3de6c83841f-lib-c/bin:/home/pg/mix/store/c35df47f0fd91a2ab556375da8bd0f44-lib-compiler_rt/bin:/home/pg/mix/store/b0570fd6377b698c9b48e4999acc508c-env-c-nort/bin:/home/pg/mix/store/00997d096ba6db28fa13c952db8857e1-lib-musl/bin:/home/pg/mix/store/1e323af482ee6c70b3aa0cb01a7da55e-lib-mimalloc/bin:/home/pg/mix/store/3704cac2dc06bc252223dc5d23755f81-dev-lang-clang/bin:/home/pg/mix/store/01322e24848361b77e5b46d91b9e4d81-env-clang/bin:/home/pg/mix/store/664a25bed256973ab6cda9ad73069519-env-lld-linux/bin:/home/pg/mix/store/be5d9650818ecb1ba1fe5e9a14a5bd76-env-compiler/bin:/home/pg/mix/store/350c366278adbb07c1ed8893a7a2a197-env-system/bin:/home/pg/mix/store/1213d89b17f70573b1445d543349d2ef-env-release/bin:/home/pg/mix/store/8ec8785436e5b4461490662b5377ed84-env-autoconf/bin:/home/pg/mix/store/f0da2e9b2f20c6a0fcf1117a4b505632-env-linux/bin:/home/pg/mix/store/e85729010f052818e3444ac3a286e9a8-tool-gnu-file/bin:/home/pg/mix/store/0c859d047285141d57e161d7827dcfa6-tool-gnu-which/bin:/home/pg/mix/store/b92568ab99d21b6590a8e78ef558f601-tool-gnu-coreutils/bin:/home/pg/mix/store/203f91f3a2931528c1b54b6a92752626-tool-gnu-findutils/bin:/home/pg/mix/store/7063988c8959fbffc1963dc15d5bce53-tool-text-gnu-sed/bin:/home/pg/mix/store/5f421d77f3732f5ad1bd84653100106c-tool-text-gnu-gawk/bin:/home/pg/mix/store/67ccd4bd10127700203ea4fe4720e6c1-tool-text-gnu-grep/bin:/home/pg/mix/store/01b53d913d0bc87ba922a99d38fe9ce7-tool-text-gnu-patch/bin:/home/pg/mix/store/050bba72cc5db0316e58d43889aee94b-tool-text-gnu-diffutils/bin:/home/pg/mix/store/14eba0dcf6a44eb2ebffca4f691d8bb2-shell-dash-minimal/bin:/home/pg/mix/store/0d999ef1ced0cf2d79990300b5e86d77-tool-pv/bin:/home/pg/mix/store/cbfbcf18353e4ea7e1deb75b62f24ae7-tool-compress-unzip/bin:/home/pg/mix/store/7f9dc91cf18c7f0a54b35978c8f985da-tool-compress-bsdtar/bin
++ export PWD=/home/pg/mix/build/8d07dc45b6e5ecf133c984a75c44896f/bld/heirloom-a47c4acf9fb43b89f9fb0afdcf9008121d50d806/heirloom-devtools/lex
++ export ROOT=
++ export TMPDIR=/home/pg/mix/build/8d07dc45b6e5ecf133c984a75c44896f/tmp
++ export dev_build_make=/home/pg/mix/store/bbb0d86dec25fbe881ae0082337df118-dev-build-make
++ export dev_lang_byacc=/home/pg/mix/store/4e24bb22e734032aa58583d75122f9d5-dev-lang-byacc
++ export dev_lang_clang=/home/pg/mix/store/3704cac2dc06bc252223dc5d23755f81-dev-lang-clang
++ export env_autoconf=/home/pg/mix/store/8ec8785436e5b4461490662b5377ed84-env-autoconf
++ export env_c=/home/pg/mix/store/75117c6b438955dcd977bf35a18bb279-env-c
++ export env_c_nort=/home/pg/mix/store/b0570fd6377b698c9b48e4999acc508c-env-c-nort
++ export env_clang=/home/pg/mix/store/01322e24848361b77e5b46d91b9e4d81-env-clang
++ export env_compiler=/home/pg/mix/store/be5d9650818ecb1ba1fe5e9a14a5bd76-env-compiler
++ export env_compress=/home/pg/mix/store/2bfb1c6815443a5f510c989379319ca0-env-compress
++ export env_linux=/home/pg/mix/store/f0da2e9b2f20c6a0fcf1117a4b505632-env-linux
++ export env_lld_linux=/home/pg/mix/store/664a25bed256973ab6cda9ad73069519-env-lld-linux
++ export env_release=/home/pg/mix/store/1213d89b17f70573b1445d543349d2ef-env-release
++ export env_std=/home/pg/mix/store/cb876469db0c76f84885ca4c9c1efcd7-env-std
++ export env_system=/home/pg/mix/store/350c366278adbb07c1ed8893a7a2a197-env-system
++ export env_tools=/home/pg/mix/store/ee472463ade673aba1140952b933b7ff-env-tools
++ export exe=/home/pg/.venv/bin/python3
++ export lib_c=/home/pg/mix/store/ee993333e28a93979557f3de6c83841f-lib-c
++ export lib_compiler_rt=/home/pg/mix/store/c35df47f0fd91a2ab556375da8bd0f44-lib-compiler_rt
++ export lib_mimalloc=/home/pg/mix/store/1e323af482ee6c70b3aa0cb01a7da55e-lib-mimalloc
++ export lib_musl=/home/pg/mix/store/00997d096ba6db28fa13c952db8857e1-lib-musl
++ export make_thrs=80
++ export mix=/home/pg/sources/mix/mix
++ export out=/home/pg/mix/store/8d07dc45b6e5ecf133c984a75c44896f-dev-lang-lex
++ export shell_dash_minimal=/home/pg/mix/store/14eba0dcf6a44eb2ebffca4f691d8bb2-shell-dash-minimal
++ export src=/home/pg/mix/store/6376d7f16e75ef37a7b0d71d59aeb565
++ export tmp=/home/pg/mix/build/8d07dc45b6e5ecf133c984a75c44896f
++ export tool_compress_bsdtar=/home/pg/mix/store/7f9dc91cf18c7f0a54b35978c8f985da-tool-compress-bsdtar
++ export tool_compress_unzip=/home/pg/mix/store/cbfbcf18353e4ea7e1deb75b62f24ae7-tool-compress-unzip
++ export tool_gnu_coreutils=/home/pg/mix/store/b92568ab99d21b6590a8e78ef558f601-tool-gnu-coreutils
++ export tool_gnu_file=/home/pg/mix/store/e85729010f052818e3444ac3a286e9a8-tool-gnu-file
++ export tool_gnu_findutils=/home/pg/mix/store/203f91f3a2931528c1b54b6a92752626-tool-gnu-findutils
++ export tool_gnu_which=/home/pg/mix/store/0c859d047285141d57e161d7827dcfa6-tool-gnu-which
++ export tool_pv=/home/pg/mix/store/0d999ef1ced0cf2d79990300b5e86d77-tool-pv
++ export tool_text_gnu_diffutils=/home/pg/mix/store/050bba72cc5db0316e58d43889aee94b-tool-text-gnu-diffutils
++ export tool_text_gnu_gawk=/home/pg/mix/store/5f421d77f3732f5ad1bd84653100106c-tool-text-gnu-gawk
++ export tool_text_gnu_grep=/home/pg/mix/store/67ccd4bd10127700203ea4fe4720e6c1-tool-text-gnu-grep
++ export tool_text_gnu_patch=/home/pg/mix/store/01b53d913d0bc87ba922a99d38fe9ce7-tool-text-gnu-patch
++ export tool_text_gnu_sed=/home/pg/mix/store/7063988c8959fbffc1963dc15d5bce53-tool-text-gnu-sed
++ export untar=do_untar
++ export unzip=do_untar
++ do_build
++ echo build stage
++ make -f Makefile.mk CC=gcc AR=ar RANLIB=ranlib
+ld.lld: error: duplicate symbol: optind
+>>> defined at getopt.c
+>>>            getopt.o:(optind) in archive /home/pg/mix/store/00997d096ba6db28fa13c952db8857e1-lib-musl/lib/libc.a
+>>> defined at getopt.c
+>>>            getopt.o:(.data+0x0)
+
+ld.lld: error: duplicate symbol: optopt
+>>> defined at getopt.c
+>>>            getopt.o:(optopt) in archive /home/pg/mix/store/00997d096ba6db28fa13c952db8857e1-lib-musl/lib/libc.a
+>>> defined at getopt.c
+>>>            getopt.o:(.bss+0x8)
+
+ld.lld: error: duplicate symbol: optarg
+>>> defined at getopt.c
+>>>            getopt.o:(optarg) in archive /home/pg/mix/store/00997d096ba6db28fa13c952db8857e1-lib-musl/lib/libc.a
+>>> defined at getopt.c
+>>>            getopt.o:(.bss+0x0)
+
+ld.lld: error: duplicate symbol: opterr
+>>> defined at getopt.c
+>>>            getopt.o:(opterr) in archive /home/pg/mix/store/00997d096ba6db28fa13c952db8857e1-lib-musl/lib/libc.a
+>>> defined at getopt.c
+>>>            getopt.o:(.data+0x4)
+clang-13: [0;1;31merror: [0m[1mlinker command failed with exit code 1 (use -v to see invocation)[0m
+make: *** [Makefile.mk:16: lex] Error 1

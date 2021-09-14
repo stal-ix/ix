@@ -1,8 +1,6 @@
-{% if mix.platform.target.os == 'linux' %}
-# bld boot/lib/linux
-{% endif %}
-# bld boot/lib/z boot/lib/compiler_rt boot/stage/5/env
-{% include '//dev/lang/python3/version.sh' %}
+# url https://www.python.org/ftp/python/3.9.5/Python-3.9.5.tar.xz
+# md5 71f7ada6bec9cdbf4538adc326120cfd
+# bld {{'boot/lib/linux' | linux}} boot/lib/z boot/lib/compiler_rt boot/stage/5/env
 
 build() {
     $untar ${src}/Python* && cd Python*
