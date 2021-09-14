@@ -1,14 +1,19 @@
+{% extends '//util/cmake.sh' %}
+
+{% block fetch %}
 # url https://github.com/elfmz/far2l/archive/b246b95118c0d7c6d10b4e94ec9b3bc7e24c3a7c.zip
 # md5 26e676988fa5b47ed211281e6140d371
+{% endblock %}
+
+{% block deps %}
 # bld lib/ssh lib/pcre lib/spdlog lib/archive lib/xerces-c
 # bld lib/uchardet lib/fmt {{mix.if_linux('lib/linux')}}
 # bld dev/build/pkg-config dev/build/cmake dev/lang/m4 env/std
+{% endblock %}
 
-build() {
-    $unzip ${src}/*.zip && cd far*
-
+{% block patch %}
 {% if mix.platform.target.os == 'linux' %}
-    cat << EOF > execinfo.h
+cat << EOF > execinfo.h
 int backtrace(void**, int) {
     return 0;
 }
@@ -16,11 +21,14 @@ int backtrace(void**, int) {
 void backtrace_symbols_fd(void* const*, int, int) {
 }
 EOF
-
-    export CPPFLAGS="-I$(pwd) ${CPPFLAGS}"
 {% endif %}
+{% endblock %}
 
-    export CPPFLAGS="-DPpmd8_RangeDec_Init=Ppmd8_RangeDec_InitXX -DPpmd8_Init=Ppmd8_InitXX -DPpmd8_Construct=Ppmd8_ConstructXX -DPpmd8_MakeEscFreq=Ppmd8_MakeEscFreqXX -DPpmd8_UpdateBin=Ppmd8_UpdateBinXX -DPpmd8_DecodeSymbol=Ppmd8_DecodeSymbolXX -DPPMD8_kExpEscape=PPMD8_kExpEscapeXX -DPpmd8_Free=Ppmd8_FreeXX -DPpmd8_Alloc=Ppmd8_AllocXX -DPpmd8_Update2=Ppmd8_Update2XX -DPpmd8_Update1=Ppmd8_Update1XX -DPpmd8_Update1_0=Ppmd8_Update1_0XX ${CPPFLAGS}"
+{% block cflags %}
+export CPPFLAGS="-I$(pwd) ${CPPFLAGS}"
+export CPPFLAGS="-DPpmd8_RangeDec_Init=Ppmd8_RangeDec_InitXX -DPpmd8_Init=Ppmd8_InitXX -DPpmd8_Construct=Ppmd8_ConstructXX -DPpmd8_MakeEscFreq=Ppmd8_MakeEscFreqXX -DPpmd8_UpdateBin=Ppmd8_UpdateBinXX -DPpmd8_DecodeSymbol=Ppmd8_DecodeSymbolXX -DPPMD8_kExpEscape=PPMD8_kExpEscapeXX -DPpmd8_Free=Ppmd8_FreeXX -DPpmd8_Alloc=Ppmd8_AllocXX -DPpmd8_Update2=Ppmd8_Update2XX -DPpmd8_Update1=Ppmd8_Update1XX -DPpmd8_Update1_0=Ppmd8_Update1_0XX ${CPPFLAGS}"
+{% endblock %}
 
-    build_cmake_ninja -DUSEWX=no ..
-}
+{% block cmflags %}
+-DUSEWX=no
+{% endblock %}
