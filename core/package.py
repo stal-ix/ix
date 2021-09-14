@@ -32,36 +32,39 @@ def exec_mod(text, iface):
 BUILD_SH_SCRIPT = '''
 set -e
 
-(rm -rf "$out" || true) && mkdir -p "$out"
-(rm -rf "$tmp" || true) && mkdir -p "$tmp"
+(rm -rf ${out} || true) && mkdir -p ${out}
+(rm -rf ${tmp} || true) && mkdir -p ${tmp}
 
-cd "$tmp" && mkdir tmp && echo > tmpenv
+cd ${tmp} && mkdir tmp
 
-export TMPDIR="$tmp/tmp"
+export TMPDIR=${tmp}/tmp
 
-(IFS=":"; for i in $PATH; do line="$i:$line"; done; for i in $line; do echo "$i"; done) | while read p; do
-    env=$(dirname "$p")/env
+OFS=${IFS}
 
-    if test -f "$env"; then
-        cat "$env" >> "$tmp/tmpenv"
-        echo >> "$tmp/tmpenv"
+IFS=":"; for i in $PATH; do
+    line="${i}:${line}"
+done
+
+IFS=":"; for p in ${line}; do
+    env=${p%/bin}/env
+
+    if test -f ${env}; then
+        . ${env}
     fi
 done
 
-. "$tmp/tmpenv" && rm "$tmp/tmpenv"
+IFS=${OFS}
 
 set -x
 
 # suc
-echo $out
 {build_script}
 # euc
 
 set +x
 
-rm -rf $out/lib/*.so* $out/lib/*.la* $out/lib/*.dylib* || true
-
-rm -rf "$tmp"
+rm -rf ${out}/lib/*.so* ${out}/lib/*.la* ${out}/lib/*.dylib* || true
+rm -rf ${tmp}
 '''.strip()
 
 
@@ -310,14 +313,14 @@ class Package:
     def build_sh_script(self, data, env):
         return {
             'args': ['dash', '-s'],
-            'stdin': BUILD_SH_SCRIPT.format(build_script=data),
+            'stdin': BUILD_SH_SCRIPT.replace('{build_script}', data),
             'env': env,
         }
 
     def build_py_script(self, data, env, args=[]):
         return {
             'args': [sys.executable, self.config.binary, 'misc', 'runpy'] + args,
-            'stdin': BUILD_PY_SCRIPT.format(build_script=data),
+            'stdin': BUILD_PY_SCRIPT.replace('{build_script}', data),
             'env': env,
         }
 
