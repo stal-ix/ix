@@ -1,45 +1,43 @@
+{% extends '//util/autohell.sh' %}
+
+{% block fetch %}
 # url https://ftp.gnu.org/pub/gnu/ncurses/ncurses-6.2.tar.gz
 # md5 e812da327b1c2214ac1aed440ea3ae8d
+{% endblock %}
+
+{% block deps %}
 # bld env/std boot/final/env/tools
+{% endblock %}
 
-build() {
-    which bsdcat
-    $untar ${src}/ncurses* && cd ncurses*
-
-    mkdir tool && cd tool
-
-    cat << EOF > strip
+{% block toolconf %}
+cat << EOF > strip
 #!$(which dash)
 EOF
 
-    chmod +x strip
-    setup_compiler
+chmod +x strip
+{% endblock %}
 
-    cd ..
+{% block coflags %}
+--without-shared
+--without-debug
+--without-ada
+--enable-widec
+--enable-pc-files
+--enable-overwrite
+--enable-ext-colors
+--enable-termcap
+--with-pkg-config
+--with-termlib
+--without-cxx
+--without-cxx-binding
+{% endblock %}
 
-    dash ./configure ${COFLAGS} \
-        --prefix=${out} \
-        --without-shared \
-        --without-debug \
-        --without-ada \
-        --enable-widec \
-        --enable-pc-files \
-        --enable-overwrite \
-        --enable-ext-colors \
-        --enable-termcap \
-        --with-pkg-config \
-        --with-termlib \
-        --without-cxx \
-        --without-cxx-binding
+{% block postinstall %}
+cd ${out}/lib && (for i in `ls *.a`; do q=`echo $i | tr -d 'w'`; ln -s $i $q; done)
+{% endblock %}
 
-    make -j ${make_thrs}
-    make install
-
-    cd ${out}/lib && (for i in `ls *.a`; do q=`echo $i | tr -d 'w'`; ln -s $i $q; done)
-
-    cat << EOF > ${out}/env
+{% block env %}
 export COFLAGS="--with-curses=${out} --with-ncurses=${out} \${COFLAGS}"
 export CPPFLAGS="-I${out}/include \${CPPFLAGS}"
 export LDFLAGS="-L${out}/lib -lncurses -ltinfo -lpanel -lmenu -lform \${LDFLAGS}"
-EOF
-}
+{% endblock %}
