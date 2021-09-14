@@ -95,7 +95,7 @@ def fetch():
             print(f'fetch failed: {e}')
 
 if not fetch():
-    raise Exception('can not fetch {out}, all attemps failed')
+    raise Exception(f'can not fetch {out}, all attemps failed')
 
 mix.check_md5(out, md5)
 '''.strip()
