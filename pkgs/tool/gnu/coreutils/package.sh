@@ -12,7 +12,6 @@
 
 {% block cflags %}
 export CPPFLAGS="-I$(pwd)/lib ${CPPFLAGS}"
-export FORCE_UNSAFE_CONFIGURE=1
 export PATH="$(pwd)/src:${PATH}"
 {% endblock %}
 
