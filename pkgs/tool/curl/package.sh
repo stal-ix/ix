@@ -1,5 +1,9 @@
-# bld lib/curl env/std
+{% extends '//util/base.sh' %}
 
-build() {
-    cd ${out} && cp -R $(dirname $(which curl)) ./
-}
+{% block deps %}
+# bld lib/curl env/std
+{% endblock %}
+
+{% block install %}
+cd ${out} && cp -R $(dirname $(which curl)) ./
+{% endblock %}

@@ -1,23 +1,24 @@
+{% extends '//util/autohell.sh' %}
+
+{% block fetch %}
 # url http://www.ivarch.com/programs/sources/pv-1.6.6.tar.bz2
 # md5 ff3564fddcc2b9bd4a9c1d143aba4b4c
+{% endblock %}
+
+{% block deps %}
 # bld {{'dev/lang/cctools' | darwin}} dev/build/make env/tools env/c env/bootstrap
+{% endblock %}
 
-build() {
-    $untar ${src}/pv* && cd pv*
-
-    export LD=ld
-
+{% block cflags %}
 {% if mix.platform.target.os == 'darwin' %}
-    export CPPFLAGS="-Dstat64=stat -Dfstat64=fstat -Dlstat64=lstat ${CPPFLAGS}"
-{% else %}
-    ln -s $(which ld.lld) ld
+export CPPFLAGS="-Dstat64=stat -Dfstat64=fstat -Dlstat64=lstat ${CPPFLAGS}"
 {% endif %}
 
-    ln -s $(which dash) sh
+export LD=ld
+{% endblock %}
 
-    export PATH="$(pwd):${PATH}"
-
-    dash ./configure ${COFLAGS} --prefix="${out}"
-    make -j ${make_thrs}
-    make install
-}
+{% block toolconf %}
+{% if mix.platform.target.os == 'linux' %}
+ln -s $(which ld.lld) ld
+{% endif %}
+{% endblock %}
