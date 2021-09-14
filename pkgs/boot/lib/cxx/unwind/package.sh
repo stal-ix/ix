@@ -14,13 +14,17 @@ export CXXFLAGS="-std=c++11 -fstrict-aliasing -fno-exceptions -fno-rtti ${CXXFLA
 export CFLAGS="-std=c99 ${CFLAGS}"
 {% endblock %}
 
+{% block postunpack %}
+cd libunwind
+{% endblock %}
+
 {% block build %}
 for s in src/*.cpp; do
-    g++ ${CPPFLAGS} ${CFLAGS} ${CXXFLAGS} -c $s
+    g++ -c $s
 done
 
 for s in src/*.c src/*.S; do
-    gcc ${CPPFLAGS} ${CFLAGS} -c $s
+    gcc -c $s
 done
 
 ar q libunwind.a *.o
@@ -29,7 +33,7 @@ ranlib libunwind.a
 
 {% block install %}
 mkdir ${out}/lib
-cp obj/libunwind.a ${out}/lib
+cp libunwind.a ${out}/lib
 cp -R include ${out}/
 {% endblock %}
 

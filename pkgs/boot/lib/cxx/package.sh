@@ -11,36 +11,38 @@
 {% endblock %}
 
 {% block cflags %}
-export CPPFLAGS="-w -D_LIBCPP_BUILDING_LIBRARY -D_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER -iquote src -I${out}/include -DLIBCXXRT -std=c++14 ${CPPFLAGS}"
+export CPPFLAGS="-w -D_LIBCPP_BUILDING_LIBRARY -D_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER -iquote src -Iinclude -DLIBCXXRT -std=c++14 ${CPPFLAGS}"
 {% endblock %}
 
-{% block build %}
-cp -R include ${out}
+{% block postunpack %}
+cd libcxx
+{% endblock %}
 
-cat << EOF > ${out}/include/__config_site
+{% block patch %}
+cat << EOF > include/__config_site
 #pragma once
 
 #define _LIBCPP_HAS_MERGED_TYPEINFO_NAMES_DEFAULT 0
 #define _LIBCPP_DISABLE_AVAILABILITY 1
+{% if mix.platform.target.os == 'linux' %}
 #define _LIBCPP_HAS_MUSL_LIBC 1
+{% endif %}
 EOF
+{% endblock %}
 
-mkdir obj
-
-SRCS1=$(ls src/*.cpp)
-SRCS2=$(ls src/filesystem/*.cpp)
-
-(
-for s in $SRCS1 $SRCS2; do
+{% block build %}
+for s in src/*.cpp src/filesystem/*.cpp; do
     out=$(echo $s | tr '/' '_' | tr -d '\n').o
-    g++ ${CPPFLAGS} ${CFLAGS} ${CXXFLAGS} -c $s -o obj/${out}
+    clang++ -c $s -o ${out}
 done
-)
 
-ar q obj/libc++.a obj/*.o
-ranlib obj/libc++.a
+ar q libc++.a *.o
+ranlib libc++.a
+{% endblock %}
 
-mkdir ${out}/lib && cp obj/libc++.a ${out}/lib/
+{% block install %}
+cp -R include ${out}
+mkdir ${out}/lib && cp libc++.a ${out}/lib/
 {% endblock %}
 
 {% block env %}
@@ -49,9 +51,7 @@ export LDFLAGS="${out}/lib/libc++.a \${LDFLAGS} -lpthread -ldl"
 {% endblock %}
 
 {% block test %}
-. ${out}/env
-
-clang++ ${CPPFLAGS} ${CXXFLAGS} ${LDFLAGS} -o test -x cpp - << EOF
+cat << EOF > test.cpp
 #include <iostream>
 
 int main() {
@@ -59,5 +59,7 @@ int main() {
 }
 EOF
 
-./test
+clang++ -o test_main ${out}/lib/libc++.a test.cpp
+
+./test_main
 {% endblock %}

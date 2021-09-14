@@ -12,11 +12,11 @@
 
 {% block build %}
 for s in src/*.cc; do
-    g++ ${CPPFLAGS} ${CFLAGS} ${CXXFLAGS} -c $s
+    g++ -c $s
 done
 
 for s in src/*.c; do
-    gcc ${CPPFLAGS} ${CFLAGS} -c $s
+    gcc -c $s
 done
 
 ar q libcxxrt.a *.o
@@ -34,4 +34,22 @@ cp src/*.h ${out}/include/
 {% block env %}
 export CPPFLAGS="-I${out}/include \${CPPFLAGS}"
 export LDFLAGS="${out}/lib/libcxxrt.a \${LDFLAGS}"
-{% endblokc %}
+{% endblock %}
+
+{% block notest %}
+. ${out}/env
+
+clang++ ${CPPFLAGS} ${CFLAGS} ${CXXFLAGS} ${LDFLAGS} -o test -x c++ - << EOF
+int main() {
+    try {
+        throw 1;
+    } catch (...) {
+        return 0;
+    }
+
+    return 1;
+}
+EOF
+
+./main
+{% endblock %}
