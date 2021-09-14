@@ -131,15 +131,17 @@ class Package:
         self._m = mngr
 
         try:
-            self._d = exec_mod(self.template('package.py'), self)
-        except FileNotFoundError:
             try:
+                self._d = exec_mod(self.template('package.py'), self)
+            except FileNotFoundError:
                 self._d = compile_sh(self.template('package.sh'))
-            except cs.Error as e:
-                text = f'can not render {self.name}'
-                context = f'{e.lineno}: {e.line}'
+        except FileNotFoundError as e:
+            raise ce.Error(f'can not load {self.name}', exception=e)
+        except cs.Error as e:
+            text = f'can not render {self.name}'
+            context = f'{e.lineno}: {e.line}'
 
-                raise ce.Error(text, context=context, exception=e.slave)
+            raise ce.Error(text, context=context, exception=e.slave)
 
         self._u = cu.struct_hash([self._d, list(self.iter_env())])
 
@@ -179,7 +181,7 @@ class Package:
         try:
             return self.strip_template(tmpl.render(mix=self))
         except Exception as e:
-            raise ce.Error(f'can not render {path}: {e}')
+            raise ce.Error(f'can not render {path}', exception=e)
 
     def strip_template(self, v):
         vv = v.replace('\n\n\n', '\n\n')
