@@ -32,7 +32,7 @@ echo > llvm/unittests/Support/DynamicLibrary/CMakeLists.txt
 -DLLVM_ENABLE_PIC=OFF
 -DLLVM_DYLIB_COMPONENTS=''
 -DBUILD_SHARED_LIBS=OFF
-../llvm
+{% block cmdir %}../llvm{% endblock %}
 {% endblock %}
 
 {% block env %}

@@ -11,7 +11,10 @@
 {% endblock %}
 
 {% block cmflags %}
--DMI_OVERRIDE=ON -DMI_BUILD_STATIC=ON -DMI_BUILD_SHARED=OFF -DMI_BUILD_TESTS=OFF ..
+-DMI_OVERRIDE=ON
+-DMI_BUILD_STATIC=ON
+-DMI_BUILD_SHARED=OFF
+-DMI_BUILD_TESTS=OFF
 {% endblock %}
 
 {% block env %}

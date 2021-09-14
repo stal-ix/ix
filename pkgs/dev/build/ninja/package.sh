@@ -8,7 +8,3 @@
 {% block deps %}
 # bld lib/cxx dev/lang/python3 dev/build/cmake env/std
 {% endblock %}
-
-{% block cmflags %}
-..
-{% endblock %}

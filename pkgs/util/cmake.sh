@@ -2,7 +2,8 @@
 
 {% block configure %}
 {% set cmflags %}{% block cmflags %}{% endblock %}{% endset %}
-build_cmake_prepare -G Ninja {{mix.prepare_deps(cmflags)}}
+{% set cmdir %}{% block cmdir %}..{% endblock %}{% endset %}
+build_cmake_prepare -G Ninja {{mix.prepare_deps(cmflags)}} {{cmdir.strip()}}
 {% endblock %}
 
 {% block build %}

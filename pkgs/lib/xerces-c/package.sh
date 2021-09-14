@@ -21,7 +21,6 @@ export CXXFLAGS="-w ${CXXFLAGS}"
 -Dtranscoder=iconv
 -Dmessage-loader=inmemory
 -Dmutex-manager=standard
-..
 {% endblock %}
 
 {% block env %}

@@ -113,6 +113,15 @@ def compile_sh(script):
     return cs.parse(script)
 
 
+def cononize(v):
+    s = v.replace('\n', ' ').replace('\\', ' ').strip()
+
+    while '  ' in s:
+        s = s.replace('  ', ' ')
+
+    return s
+
+
 class Package:
     def __init__(self, name, mngr):
         self._n = name
@@ -132,7 +141,7 @@ class Package:
         self._u = cu.struct_hash([self._d, list(self.iter_env())])
 
     def prepare_deps(self, v):
-        return v.replace('\n', ' ').strip()
+        return cononize(v)
 
     def dep_list(self, v, prefix):
         def iter_lines():
