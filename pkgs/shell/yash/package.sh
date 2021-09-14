@@ -5,11 +5,11 @@
 # md5 91d0c0fa548c9c9a081893f515b4f049
 {% endblock %}
 
-{% block bld_deps %}
-lib/ncurses
-lib/edit
-env/std
-dev/build/make
+{% block deps %}
+# bld lib/ncurses
+# bld lib/edit
+# bld env/std
+# bld dev/build/make
 {% endblock %}
 
 {% block cflags %}

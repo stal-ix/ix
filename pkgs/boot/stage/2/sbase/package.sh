@@ -5,11 +5,11 @@
 # md5 f723abda51962a5f8d2656820b1ce71a
 {% endblock %}
 
-{% block bld_deps %}
-boot/stage/2/heirloom
-boot/stage/2/bmake
-boot/stage/2/shutil
-boot/stage/1/env
+{% block deps %}
+# bld boot/stage/2/heirloom
+# bld boot/stage/2/bmake
+# bld boot/stage/2/shutil
+# bld boot/stage/1/env
 {% endblock %}
 
 {% block patch %}

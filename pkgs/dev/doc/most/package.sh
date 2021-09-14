@@ -5,10 +5,10 @@
 # md5 0dc19e6045f689686e8579b2835cfdc6
 {% endblock %}
 
-{% block bld_deps %}
-lib/slang
-env/std
-dev/build/make
+{% block deps %}
+# bld lib/slang
+# bld env/std
+# bld dev/build/make
 {% endblock %}
 
 {% block coflags %}

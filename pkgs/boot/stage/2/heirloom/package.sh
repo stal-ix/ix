@@ -5,10 +5,10 @@
 # md5 19b59804cf21bf9bd266d9cb261ecb2c
 {% endblock %}
 
-{% block bld_deps %}
-boot/stage/2/bmake
-boot/stage/2/shutil
-boot/stage/1/env
+{% block deps %}
+# bld boot/stage/2/bmake
+# bld boot/stage/2/shutil
+# bld boot/stage/1/env
 {% endblock %}
 
 {% block build %}

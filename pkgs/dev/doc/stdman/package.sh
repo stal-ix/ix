@@ -1,9 +1,9 @@
 {% extends '//util/template.sh' %}
 
-{% block bld_deps %}
-shell/bash/minimal
-dev/build/make
-env/std
+{% block deps %}
+# bld shell/bash/minimal
+# bld dev/build/make
+# bld env/std
 {% endblock %}
 
 {% block fetch %}
