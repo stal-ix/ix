@@ -1,12 +1,19 @@
+{% extends '//util/template.sh' %}
+
+{% block fetch %}
 # url https://storage.yandexcloud.net/mix-cache/unrarsrc-6.0.6.tar.gz
 # md5 4c89e2e5ecfe72a9d96478fb80f38c34
+{% endblock %}
+
+{% block deps %}
 # bld lib/cxx dev/build/make env/std
+{% endblock %}
 
-build() {
-    $untar ${src}/unrar* && cd unrar*
+{% block build %}
+make CXX=g++ CC=gcc -j ${make_thrs} -f makefile
+{% endblock %}
 
-    setup_compiler
-    make CXX=g++ CC=gcc -j ${make_thrs} -f makefile
-    mkdir -p ${out}/bin
-    install -v -m755 unrar ${out}/bin/
-}
+{% block install %}
+mkdir -p ${out}/bin
+install -v -m755 unrar ${out}/bin/
+{% endblock %}

@@ -1,5 +1,9 @@
-# bld lib/xz env/tools
+{% extends '//util/base.sh' %}
 
-build() {
-    cd ${out} && cp -R $(dirname $(which xz)) ./
-}
+{% block deps %}
+# bld lib/xz env/tools
+{% endblock %}
+
+{% block install %}
+cd ${out} && cp -R $(dirname $(which xz)) ./
+{% endblock %}

@@ -1,5 +1,9 @@
-# bld lib/archive env/tools
+{% extends '//util/base.sh' %}
 
-build() {
-    cd ${out} && cp -R $(dirname $(which bsdtar)) ./
-}
+{% block deps %}
+# bld lib/archive env/tools
+{% endblock %}
+
+{% block install %}
+cd ${out} && cp -R $(dirname $(which bsdtar)) ./
+{% endblock %}

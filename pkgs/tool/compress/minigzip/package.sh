@@ -1,5 +1,9 @@
-# bld lib/z boot/final/env/tools
+{% extends '//util/base.sh' %}
 
-build() {
-    mkdir ${out}/bin && cd ${out}/bin && cp $(which minigzip) minigzip
-}
+{% block deps %}
+# bld lib/z boot/final/env/tools
+{% endblock %}
+
+{% block install %}
+mkdir ${out}/bin && cd ${out}/bin && cp $(which minigzip) minigzip
+{% endblock %}
