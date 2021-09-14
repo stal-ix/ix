@@ -26,12 +26,12 @@ cat << EOF > install_name_tool
 EOF
 
 chmod +x install_name_tool
-{% block build %}
+{% endblock %}
 
 {% block configure %}
 bash ./Configure -des \
     -Dusethreads \
-    -Dprefix="${out}" \
+    -Dprefix=${out} \
     -Duseperlio \
     -Uusesfio \
     -Duseshrplib=false \
