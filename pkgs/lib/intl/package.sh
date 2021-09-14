@@ -7,7 +7,7 @@
 
 {% block deps %}
 # lib lib/iconv {{'sys/framework/CoreFoundation' | darwin}}
-# bld env/c boot/final/env
+# bld env/c boot/final/env/tools
 {% endblock %}
 
 {% block postunpack %}

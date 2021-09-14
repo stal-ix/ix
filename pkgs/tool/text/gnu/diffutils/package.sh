@@ -6,7 +6,7 @@
 {% endblock %}
 
 {% block deps %}
-# bld lib/intl lib/iconv lib/sigsegv env/c boot/final/env
+# bld lib/intl lib/iconv lib/sigsegv env/c boot/final/env/tools
 {% endblock %}
 
 {% block postconf %}

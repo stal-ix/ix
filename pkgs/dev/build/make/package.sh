@@ -1,7 +1,7 @@
 {% extends '//util/autohell.sh' %}
 
 {% block deps %}
-# bld lib/intl lib/iconv env/c boot/final/env
+# bld lib/intl lib/iconv env/c boot/final/env/tools
 {% endblock %}
 
 {% block fetch %}

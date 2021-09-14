@@ -10,7 +10,7 @@
 # bld lib/intl
 # bld lib/glib
 # bld lib/iconv
-# bld boot/final/env
+# bld boot/final/env/tools
 {% endblock %}
 
 {% block coflags %}

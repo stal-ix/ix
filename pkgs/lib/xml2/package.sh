@@ -6,7 +6,7 @@
 {% endblock %}
 
 {% block deps %}
-# bld lib/iconv boot/final/env
+# bld lib/iconv boot/final/env/tools
 {% endblock %}
 
 {% block coflags %}

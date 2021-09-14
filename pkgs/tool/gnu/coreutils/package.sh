@@ -2,7 +2,7 @@
 
 {% block deps %}
 # bld lib/intl lib/iconv lib/sigsegv
-# bld env/c tool/text/gnu/patch boot/final/env
+# bld env/c tool/text/gnu/patch boot/final/env/tools
 {% endblock %}
 
 {% block fetch %}

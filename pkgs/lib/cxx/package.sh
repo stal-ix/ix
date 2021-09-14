@@ -2,7 +2,7 @@
 
 {% block deps %}
 # bld {{'lib/linux' | linux}}
-# bld env/c boot/final/env
+# bld env/c boot/final/env/tools
 {% endblock %}
 
 {% block fetch%}

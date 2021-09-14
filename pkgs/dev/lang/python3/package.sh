@@ -1,7 +1,7 @@
 # bld lib/z lib/xz lib/ffi lib/intl lib/gdbm lib/bzip2 lib/iconv
 # bld lib/expat lib/sqlite3 lib/ncurses lib/openssl lib/readline
 # bld lib/mpdecimal {{mix.if_linux('lib/linux')}}
-# bld env/std boot/final/env
+# bld env/std boot/final/env/tools
 {% include 'version.sh' %}
 
 build() {

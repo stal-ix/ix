@@ -1,6 +1,6 @@
 # url https://ftp.gnu.org/pub/gnu/ncurses/ncurses-6.2.tar.gz
 # md5 e812da327b1c2214ac1aed440ea3ae8d
-# bld env/std boot/final/env
+# bld env/std boot/final/env/tools
 
 build() {
     which bsdcat

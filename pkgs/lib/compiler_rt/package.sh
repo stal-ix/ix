@@ -1,7 +1,7 @@
 {% extends '//util/template.sh' %}
 
 {% block deps %}
-# bld {{'lib/musl' | linux}} env/c/nort boot/final/env
+# bld {{'lib/musl' | linux}} env/c/nort boot/final/env/tools
 {% endblock %}
 
 {% block fetch %}

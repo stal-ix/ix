@@ -1,6 +1,6 @@
 # url https://ftp.pcre.org/pub/pcre/pcre-8.44.tar.gz
 # md5 3bcd2441024d00009a5fee43f058987c
-# bld lib/z lib/bzip2 env/std boot/final/env
+# bld lib/z lib/bzip2 env/std boot/final/env/tools
 
 build() {
     $untar ${src}/pcre* && cd pcre*
