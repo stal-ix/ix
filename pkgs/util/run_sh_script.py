@@ -21,6 +21,3 @@ def iter_lines():
 
 
 subprocess.run([mix.which('dash')], input=('\n'.join(iter_lines())).encode(), check=True)
-
-
-{% block body %}{% endblock %}

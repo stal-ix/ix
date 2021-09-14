@@ -5,8 +5,11 @@
 # md5 cd0e7735f1e51f30ee3b0844390a464a
 {% endblock %}
 
-{% block deps %}
+{% block moredeps %}
 # run env/cmake
+{% endblock %}
+
+{% block deps %}
 # lib dev/build/samurai
 # bld lib/z lib/xz lib/uv lib/cxx lib/curl lib/bzip2
 # bld lib/expat lib/archive {{mix.if_linux('lib/linux')}}

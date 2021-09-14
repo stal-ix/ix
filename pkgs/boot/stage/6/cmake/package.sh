@@ -1,7 +1,6 @@
 {% extends '//dev/build/cmake/package.sh' %}
 
 {% block deps %}
-# lib env/cmake
 # bld {{'boot/lib/linux' | linux}} boot/lib/cxx boot/stage/5/env
 # run boot/stage/6/samurai
 {% endblock %}

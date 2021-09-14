@@ -1,6 +1,9 @@
 {% block deps %}
 {% endblock %}
 
+{% block moredeps %}
+{% endblock %}
+
 {% block fetch %}
 {% endblock %}
 
