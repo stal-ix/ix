@@ -57,7 +57,7 @@ def use_file(f):
 
 
 data = f'''
-export CLANG_VERSION={os.environ['CLANG_VERSION']}
+export CLANG_VERSION={sys.argv[2]}
 export CPPFLAGS="-isystem :prefix:/lib/clang/$CLANG_VERSION/include $CPPFLAGS"
 '''.strip()
 
