@@ -6,7 +6,7 @@
 {% endblock %}
 
 {% block moredeps %}
-# run env/cmake
+# lib env/cmake
 {% endblock %}
 
 {% block deps %}
