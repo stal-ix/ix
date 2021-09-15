@@ -30,13 +30,14 @@ def exec_mod(text, iface):
 
 
 BUILD_PY_SCRIPT = '''
+import atexit
+
 mix.header()
+atexit.register(mix.footer)
 
 # suc
 {build_script}
 # euc
-
-mix.footer()
 '''.strip()
 
 
@@ -62,6 +63,7 @@ try:
     mix.check_md5(out, md5)
 except Exception as e:
     print(f'can not fetch {out}: {e}')
+    sys.exit(1)
 '''.strip()
 
 

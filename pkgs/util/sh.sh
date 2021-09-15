@@ -20,6 +20,7 @@ export CXXFLAGS=
 export CPPFLAGS=
 export LDFLAGS=
 export CONLYFLAGS=
+export PKG_CONFIG_PATH=
 
 export TMPDIR=${tmp}/tmp
 
