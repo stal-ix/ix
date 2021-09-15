@@ -26,10 +26,11 @@ cd *
 {% endblock %}
 
 {% block preconf %}
-mkdir .tools && cd .tools
+cur_dir=$(pwd)
+mkdir ${tmp}/tools && cd ${tmp}/tools
 {% block toolconf %}
 {% endblock %}
-ln -s $(which dash) sh
+cp $(which dash) sh
 setup_compiler
-cd ..
+cd ${cur_dir}
 {% endblock %}

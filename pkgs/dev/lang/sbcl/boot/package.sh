@@ -7,7 +7,11 @@
 
 {% block deps %}
 # bld lib/z
-# bld dev/lang/ecl dev/build/make env/std
+# bld dev/build/make env/std
+{% endblock %}
+
+{% block more_deps %}
+# bld dev/lang/ecl
 {% endblock %}
 
 {% block patch %}

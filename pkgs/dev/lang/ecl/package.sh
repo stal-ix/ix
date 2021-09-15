@@ -26,5 +26,5 @@ dash ../src/configure ${COFLAGS} \
     --disable-shared \
     --enable-static \
     --prefix=${out} \
-    --srcdir="$(pwd)/../"
+    --srcdir="$(pwd)/../src"
 {% endblock %}
