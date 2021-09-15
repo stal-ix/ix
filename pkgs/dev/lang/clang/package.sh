@@ -1,11 +1,9 @@
 {% extends '//util/cmake.sh' %}
 
+{% block deps %}
 {% block extradeps %}
 # bld {{'lib/linux' | linux}} boot/final/cxx boot/final/env/clang
 {% endblock %}
-
-{% block deps %}
-{{self.extradeps()}}
 # run env/clang env/lld/{{mix.platform.target.os}} env/compiler env/system
 {% endblock %}
 
