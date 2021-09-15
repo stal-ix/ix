@@ -1,14 +1,16 @@
 {% block deps %}
 {% endblock %}
 
-{% block moredeps %}
+{% block more_deps %}
 {% endblock %}
 
 {% block fetch %}
 {% endblock %}
 
+{% block sh_script_begin %}
+{% endblock %}
+
 set -e
-set -u
 set -x
 
 # init
@@ -52,7 +54,7 @@ IFS=${OFS}
 set -x
 
 # suc
-{% block shscript %}
+{% block sh_script %}
 {% endblock %}
 # euc
 
@@ -60,3 +62,6 @@ set +x
 
 rm -rf ${out}/lib/*.so* ${out}/lib/*.la* ${out}/lib/*.dylib* || true
 rm -rf ${tmp}
+
+{% block sh_script_end %}
+{% endblock %}

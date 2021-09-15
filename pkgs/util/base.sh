@@ -1,16 +1,16 @@
 {% extends '//util/sh.sh' %}
 
-{% block shscript %}
+{% block sh_script %}
 step_unpack() {
 echo 'unpack step'
 
-{% block preunpack%}
+{% block preunpack %}
 {% endblock %}
 
 {% block unpack %}
 {% endblock %}
 
-{% block postunpack%}
+{% block postunpack %}
 {% endblock %}
 }
 

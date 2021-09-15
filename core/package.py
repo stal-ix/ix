@@ -129,13 +129,13 @@ class Package:
         return self.platform['target']['os']
 
     def if_linux(self, v):
-        if self.os == 'linux':
-            return v
-
-        return ''
+        return self.if_os(v, 'linux')
 
     def if_darwin(self, v):
-        if self.os == 'darwin':
+        return self.if_os(v, 'darwin')
+
+    def if_os(self, v, os):
+        if self.os == os:
             return v
 
         return ''

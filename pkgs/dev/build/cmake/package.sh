@@ -5,7 +5,7 @@
 # md5 cd0e7735f1e51f30ee3b0844390a464a
 {% endblock %}
 
-{% block moredeps %}
+{% block more_deps %}
 # lib env/cmake
 {% endblock %}
 
