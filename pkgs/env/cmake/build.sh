@@ -28,14 +28,6 @@ build_cmake_prepare() {
         $@
 }
 
-build_cmake_make() {
-    (
-        build_cmake_prepare $@
-        make VERBOSE=1 -j ${make_thrs}
-        make install
-    )
-}
-
 build_cmake_ninja() {
     (
         build_cmake_prepare -G Ninja $@
