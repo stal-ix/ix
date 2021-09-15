@@ -1,44 +1,20 @@
-{% block deps %}
-{% endblock %}
+{% extends '//util/sh.sh' %}
 
-{% block moredeps %}
-{% endblock %}
+{% block shscript %}
+step_unpack() {
+echo 'unpack step'
 
-{% block fetch %}
-{% endblock %}
-
-do_unpack() {
 {% block preunpack%}
 {% endblock %}
 
 {% block unpack %}
-mkdir bld && cd bld
-
-for s in ${src}/*; do
-    case $s in
-        *touch)
-        ;;
-        *.diff)
-        ;;
-        *.patch)
-        ;;
-        *zip)
-            $unzip $s
-        ;;
-        *)
-            $untar $s
-        ;;
-    esac
-done
-
-cd *
 {% endblock %}
 
 {% block postunpack%}
 {% endblock %}
 }
 
-do_patch() {
+step_patch() {
 echo 'patch step'
 
 {% block prepatch %}
@@ -51,7 +27,7 @@ echo 'patch step'
 {% endblock %}
 }
 
-do_configure() {
+step_configure() {
 echo 'configure stage'
 
 {% block cflags %}
@@ -65,11 +41,9 @@ echo 'configure stage'
 
 {% block postconf %}
 {% endblock %}
-
-export -p > ${tmp}/confenv
 }
 
-do_build() {
+step_build() {
 echo 'build stage'
 
 {% block prebuild %}
@@ -82,7 +56,7 @@ echo 'build stage'
 {% endblock %}
 }
 
-do_test() {
+step_test() {
 echo 'test stage'
 
 {% block pretest%}
@@ -95,7 +69,7 @@ echo 'test stage'
 {% endblock %}
 }
 
-do_install() {
+step_install() {
 echo 'install stage'
 
 {% block preinstall%}
@@ -113,17 +87,35 @@ cat << EOF > ${out}/env
 EOF
 }
 
-build() {
-echo "build ${out}"
-
-do_unpack
-
-(do_patch)
-(do_configure)
-. ${tmp}/confenv
-(do_build)
-(do_install)
-(do_test)
-
-echo "${out} complete"
+do_unpack() {
+    step_unpack
 }
+
+do_patch() {
+    do_unpack && (step_patch)
+}
+
+do_configure() {
+    do_patch && step_configure
+}
+
+do_build() {
+    do_configure && (step_build)
+}
+
+do_install() {
+    do_build && (step_install)
+}
+
+do_test() {
+    do_install && (step_test)
+}
+
+do_execute() {
+    echo "execute ${out}"
+    do_test
+    echo "done ${out}"
+}
+
+(do_execute)
+{% endblock %}

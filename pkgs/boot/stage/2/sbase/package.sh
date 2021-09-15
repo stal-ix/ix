@@ -1,4 +1,4 @@
-{% extends '//util/make.sh' %}
+{% extends '//util/template.sh' %}
 
 {% block fetch %}
 # url https://github.com/michaelforney/sbase/archive/3eb89c44aa788c1b122e7967f4a7a9a3b98322e9.zip
@@ -14,6 +14,10 @@
 
 {% block patch %}
 chmod +x getconf.sh
+{% endblock %}
+
+{% block build %}
+make PREFIX="${out}"
 {% endblock %}
 
 {% block install %}

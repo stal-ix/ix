@@ -11,6 +11,10 @@
 # bld dev/build/make tool/text/gnu/patch env/tools env/c env/bootstrap
 {% endblock %}
 
+{% block postunpack %}
+cd ../unzip*
+{% endblock %}
+
 {% block patch %}
 for i in ../debian/patches/*.patch; do
     cat "$i" | patch -p1

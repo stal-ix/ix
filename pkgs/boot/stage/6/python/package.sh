@@ -1,32 +1,42 @@
+{% extends '//util/autohell.sh' %}
+
+{% block fetch %}
 # url https://www.python.org/ftp/python/3.9.5/Python-3.9.5.tar.xz
 # md5 71f7ada6bec9cdbf4538adc326120cfd
+{% endblock %}
+
+{% block deps %}
 # bld {{'boot/lib/linux' | linux}} boot/lib/z boot/lib/compiler_rt boot/stage/5/env
+{% endblock %}
 
-build() {
-    $untar ${src}/Python* && cd Python*
+{% block patch %}
+sed -e 's/MULTIARCH=\$.*/MULTIARCH=/' -i ./configure
 
-    setup_compiler
+sed -e 's|/usr|/eat/shit|' -i ./configure
+sed -e 's|/usr|/eat/shit|' -i ./setup.py
+sed -e 's|/usr|/eat/shit|' -i ./Makefile.pre.in
+{% endblock %}
 
-    sed -e 's/MULTIARCH=\$.*/MULTIARCH=/' -i ./configure
+{% block coflags %}
+--with-ensurepip=no
+{% endblock %}
 
-    sed -e 's|/usr|/eat/shit|' -i ./configure
-    sed -e 's|/usr|/eat/shit|' -i ./setup.py
-    sed -e 's|/usr|/eat/shit|' -i ./Makefile.pre.in
+{% block build %}
+make -j ${make_thrs} 2>log
 
-    dash ./configure ${COFLAGS} \
-        --prefix=${out} \
-        --with-ensurepip=no
-
-    make -j ${make_thrs} 2>log
-
-    base64 -d << EOF > fix.py
+base64 -d << EOF > fix.py
 {% include 'fix.py/base64' %}
 EOF
 
-    mv Modules/Setup qw && (cat qw | ./python ./fix.py | sed -e 's|-l.*||' | grep -v readline | grep -v capi | grep -v nis) > Modules/Setup
+mv Modules/Setup qw && (cat qw | ./python ./fix.py | sed -e 's|-l.*||' | grep -v readline | grep -v capi | grep -v nis) > Modules/Setup
 
-    make -j ${make_thrs}
-    make install
+make -j ${make_thrs}
+{% endblock %}
 
-    $out/bin/python3 -c 'import zlib'
-}
+{% block install %}
+make install
+{% endblock %}
+
+{% block test %}
+$out/bin/python3 -c 'import zlib'
+{% endblock %}

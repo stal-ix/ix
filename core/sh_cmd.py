@@ -42,9 +42,9 @@ class Parser:
             except Exception as e:
                 raise Error(e, l, no + 1)
 
-        if 'build()' in body:
+        if 'do_execute()' in body:
             keys['build']['script'] = {
-                'data': body + '\nbuild',
+                'data': body,
                 'kind': 'sh',
             }
 

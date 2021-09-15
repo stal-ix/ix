@@ -29,45 +29,6 @@ def exec_mod(text, iface):
     return g['package'](iface)
 
 
-BUILD_SH_SCRIPT = '''
-set -e
-
-(rm -rf ${out} || true) && mkdir -p ${out}
-(rm -rf ${tmp} || true) && mkdir -p ${tmp}
-
-cd ${tmp} && mkdir tmp
-
-export TMPDIR=${tmp}/tmp
-
-OFS=${IFS}
-
-IFS=":"; for i in $PATH; do
-    line="${i}:${line}"
-done
-
-IFS=":"; for p in ${line}; do
-    env=${p%/bin}/env
-
-    if test -f ${env}; then
-        . ${env}
-    fi
-done
-
-IFS=${OFS}
-
-set -x
-
-# suc
-{build_script}
-# euc
-
-set +x
-
-rm -rf ${out}/lib/*.so* ${out}/lib/*.la* ${out}/lib/*.dylib* || true
-rm -rf ${tmp}
-'''.strip()
-
-
 BUILD_PY_SCRIPT = '''
 mix.header()
 
@@ -94,10 +55,13 @@ def fetch():
         except Exception as e:
             print(f'fetch failed: {e}')
 
-if not fetch():
-    raise Exception(f'can not fetch {out}, all attemps failed')
+try:
+    if not fetch():
+        raise Exception(f'all attemps failed')
 
-mix.check_md5(out, md5)
+    mix.check_md5(out, md5)
+except Exception as e:
+    print(f'can not fetch {out}: {e}')
 '''.strip()
 
 
@@ -315,7 +279,7 @@ class Package:
     def build_sh_script(self, data, env):
         return {
             'args': ['dash', '-s'],
-            'stdin': BUILD_SH_SCRIPT.replace('{build_script}', data),
+            'stdin': data,
             'env': env,
         }
 
