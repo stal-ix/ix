@@ -17,11 +17,11 @@ base64 -d << EOF > fix.py
 {% include 'fix.py/base64' %}
 EOF
 
-sed -e 's/MULTIARCH=\$.*/MULTIARCH=/'
+sed -e 's/MULTIARCH=\$.*/MULTIARCH=/' \
     -i ./configure
 
-sed -e 's/ffi_type ffi_type.*//'
-    -e 's/FFI_TYPE_LONGDOUBLE }.*//'
+sed -e 's/ffi_type ffi_type.*//'      \
+    -e 's/FFI_TYPE_LONGDOUBLE }.*//'  \
     -i Modules/_ctypes/cfield.c
 {% endblock %}
 

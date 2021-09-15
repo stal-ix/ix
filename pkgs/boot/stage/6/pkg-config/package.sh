@@ -10,7 +10,7 @@
 {% endblock %}
 
 {% block postconf %}
-cd glib && dash ./configure ${COFLAGS} --prefix=${out} --with-libiconv=gnu --srcdir=.
+(cd glib && dash ./configure ${COFLAGS} --prefix=${out} --with-libiconv=gnu --srcdir=.)
 {% endblock %}
 
 {% block prebuild %}

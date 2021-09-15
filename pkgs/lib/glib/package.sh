@@ -12,7 +12,6 @@
 {% endblock %}
 
 {% block cflags %}
-export CPPFLAGS="-w -D_GNU_SOURCE=1 -I$(pwd)/inc ${CPPFLAGS}"
 gcc -c -o main.o -x c - << EOF
 
 int main() {}
@@ -21,6 +20,7 @@ EOF
 ar q libmain.a main.o
 
 export LDFLAGS="-L$(pwd) -lmain ${LDFLAGS}"
+export CPPFLAGS="-w -D_GNU_SOURCE=1 -I$(pwd)/inc ${CPPFLAGS}"
 {% endblock %}
 
 {% block patch %}
@@ -30,7 +30,7 @@ echo 'int main() {}' > tests/cxx-test.cpp
 
 {% block build %}
 meson \
-    --libdir "${out}/lib" \
+    --libdir=${out}/lib \
     -Ddefault_library=static \
     -Dprefix=${out} \
     -Diconv=external \
