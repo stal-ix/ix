@@ -9,14 +9,19 @@ EOF
 $(which clang++) ${CPPFLAGS} ${CFLAGS} ${CONLYFLAGS} ${CXXFLAGS} -Wno-unused-command-line-argument "\$@" ${LDFLAGS}
 EOF
 
-    chmod +x clang clang++
+    cat << EOF > cpp
+#!$(which dash)
+$(which cpp) ${CPPFLAGS} "\$@"
+EOF
 
-    cp clang gcc
-    cp clang c99
-    cp clang cc
+    chmod +x clang clang++ cpp
 
-    cp clang++ g++
-    cp clang++ c++
+    ln -s clang gcc
+    ln -s clang c99
+    ln -s clang cc
+
+    ln -s clang++ g++
+    ln -s clang++ c++
 
     export PATH="$(pwd):${PATH}"
     export CC=$(which clang)

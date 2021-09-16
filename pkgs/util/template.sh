@@ -30,7 +30,7 @@ cur_dir=$(pwd)
 mkdir ${tmp}/tools && cd ${tmp}/tools
 {% block toolconf %}
 {% endblock %}
-cp $(which dash) sh
+ln -s $(which dash) sh
 setup_compiler
 cd ${cur_dir}
 {% endblock %}

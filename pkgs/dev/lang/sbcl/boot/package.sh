@@ -6,7 +6,7 @@
 {% endblock %}
 
 {% block deps %}
-# bld lib/z
+# bld lib/z {{'lib/linux' | linux}}
 # bld dev/build/make env/std
 {% endblock %}
 
@@ -23,6 +23,10 @@ sed -e 's/size_t os_vm_page_size/extern size_t os_vm_page_size/' -i src/runtime/
 ecl -norc
 {% endblock %}
 
+{% block cflags %}
+export CPPFLAGS="-DRTLD_DEFAULT=RTLD_LOCAL ${CPPFLAGS}"
+{% endblock %}
+
 {% block build %}
 ulimit -s 60000
 
@@ -31,9 +35,7 @@ dash ./make.sh \
     --xc-host='{{self.boot_lisp().strip()}}' \
     --with-sb-ldb \
     --with-sb-thread \
-    --with-sb-core-compression \
-    --without-avx2 \
-    --without-sse
+    --with-sb-core-compression
 {% endblock %}
 
 {% block install %}
