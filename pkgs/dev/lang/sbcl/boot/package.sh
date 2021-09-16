@@ -21,6 +21,26 @@ export CPPFLAGS="-DLISP_FEATURE_OS_PROVIDES_DLOPEN ${CPPFLAGS}"
 {% block patch %}
 sed -e 's/lispobj \*static_code_space_free_pointer/extern lispobj \*static_code_space_free_pointer/' -i src/runtime/globals.h
 sed -e 's/size_t os_vm_page_size/extern size_t os_vm_page_size/' -i src/runtime/arm64-bsd-os.c
+
+cat << EOF > symbols
+{% include 'lst' %}
+EOF
+
+(
+    echo '#include <dlfcn.h>'
+
+    cat symbols | while read l; do
+        echo 'extern "C" void* '$l';'
+    done
+
+    echo 'DL_LIB("sbcl")'
+
+    cat symbols | while read l; do
+        echo 'DL_S_2("'$l'", '$l')';
+    done
+
+    echo 'DL_END()'
+) > symbols.cpp
 {% endblock %}
 
 {% block boot_lisp %}
@@ -28,6 +48,10 @@ ecl -norc
 {% endblock %}
 
 {% block build %}
+gcc -c symbols.cpp -o ${tmp}/symbols.o
+
+export LDLIBS="${tmp}/symbols.o"
+
 ulimit -s 60000
 
 dash ./make.sh \

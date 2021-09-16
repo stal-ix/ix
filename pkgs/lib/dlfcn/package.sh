@@ -1,12 +1,12 @@
 {% extends '//util/template.sh' %}
 
 {% block fetch %}
-# url https://github.com/pg83/dlopen/archive/069ed3be796527c36455b94b448939aeacda3a92.zip
-# md5 024ccae9d27f2460c802434ea8f3ad3b
+# url https://github.com/pg83/dlopen/archive/69bafdb256c8abc810e590889b8e019fff6c7aa7.zip
+# md5 7f05ae68e09f7a25a7ed4f5d126a4cac
 {% endblock %}
 
 {% block deps %}
-# lib lib/musl lib/cxx
+# lib lib/cxx
 # bld dev/build/make env/std
 {% endblock %}
 
@@ -16,9 +16,10 @@ make
 
 {% block install %}
 make PREFIX=${out} install
+mkdir $out/lib && mv $out/bin/libdl.a $out/lib/libdlstub.a
 {% endblock %}
 
 {% block env %}
 export CPPFLAGS="-I${out}/include \${CPPFLAGS}"
-export LDFLAGS="-L${out}/lib -ldl \${LDFLAGS}"
+export LDFLAGS="-L${out}/lib -ldlstub \${LDFLAGS}"
 {% endblock %}
