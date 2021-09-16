@@ -6,8 +6,12 @@
 {% endblock %}
 
 {% block deps %}
-# bld lib/z {{'lib/linux' | linux}}
+# bld lib/dlfcn lib/z {{'lib/linux' | linux}}
 # bld dev/build/make env/std
+{% endblock %}
+
+{% block cflags %}
+export CPPFLAGS="-DLISP_FEATURE_OS_PROVIDES_DLOPEN ${CPPFLAGS}"
 {% endblock %}
 
 {% block more_deps %}
@@ -21,10 +25,6 @@ sed -e 's/size_t os_vm_page_size/extern size_t os_vm_page_size/' -i src/runtime/
 
 {% block boot_lisp %}
 ecl -norc
-{% endblock %}
-
-{% block cflags %}
-export CPPFLAGS="-DRTLD_DEFAULT=RTLD_LOCAL ${CPPFLAGS}"
 {% endblock %}
 
 {% block build %}

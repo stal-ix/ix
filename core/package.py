@@ -217,6 +217,11 @@ class Package:
         except FileNotFoundError:
             raise ce.Error(f'can not load dependant package {name} of {self.name}')
 
+    def filter_buildable(self, it):
+        for n in it:
+            if self.load_package(n).buildable():
+                yield n
+
     # build
     def build_depends(self):
         return self.descr.get('build', {}).get('depends', [])
@@ -229,7 +234,7 @@ class Package:
             for d in self.build_depends():
                 yield from self.load_package(d).all_runtime_depends()
 
-        return cu.uniq_list(iter_deps())
+        return cu.uniq_list(self.filter_buildable(iter_deps()))
 
     def iter_all_build_depends(self):
         for d in self.all_build_depends():
@@ -247,7 +252,7 @@ class Package:
             for d in self.runtime_depends():
                 yield from self.load_package(d).all_runtime_depends()
 
-        return cu.uniq_list(iter_deps())
+        return cu.uniq_list(self.filter_buildable(iter_deps()))
 
     def iter_all_runtime_depends(self):
         for d in self.all_runtime_depends():
@@ -306,10 +311,7 @@ class Package:
 
             yield 'make_thrs', str(multiprocessing.cpu_count() + 2)
 
-        try:
-            build = self._d['build']['script']
-        except KeyError:
-            raise ce.Error(f'expect build script for {self.name}')
+        build = self._d['build']['script']
 
         return {
             'sh': self.build_sh_script,
@@ -345,8 +347,16 @@ class Package:
 
         return self.build_py_script(LINK_SRCS_SCRIPT, dict(iter_env()), files)
 
+    def buildable(self):
+        try:
+            self._d['build']['script']
+        except KeyError:
+            return False
+
+        return True
+
     def iter_commands(self):
-        if 'build' not in self._d:
+        if not self.buildable():
             yield self.empty_command()
 
             return
