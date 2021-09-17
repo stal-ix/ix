@@ -26,13 +26,13 @@ sed -e 's|/usr|/eat/shit|' -i ./configure
 sed -e 's|/usr|/eat/shit|' -i ./setup.py
 sed -e 's|/usr|/eat/shit|' -i ./Makefile.pre.in
 
-base64 -d << EOF > fix.py
-{% include 'fix.py/base64' %}
+(base64 -d | gcc ${CPPFLAGS} ${CFLAGS} ${CONLYFLAGS} ${LDFLAGS} -o fix -x c -) << EOF
+{% include 'fix.c/base64' %}
 EOF
 
-cat Modules/Setup | python3 ./fix.py | sed -e 's|-l.*||' | grep -v capi | grep -v nis > Modules/Setup.local
+cat Modules/Setup | ./fix | sed -e 's|-l.*||' | grep -v capi | grep -v nis > Modules/Setup.local
 
-# by hand
+# some hand job
 cat << EOF >> Modules/Setup.local
 _ctypes _ctypes/_ctypes.c _ctypes/callbacks.c _ctypes/callproc.c _ctypes/stgdict.c _ctypes/cfield.c _ctypes/malloc_closure.c -DPy_BUILD_CORE_MODULE
 _lsprof _lsprof.c rotatingtree.c
