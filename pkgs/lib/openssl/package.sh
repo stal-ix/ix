@@ -41,6 +41,6 @@ export OPENSSL_LIBS="-L${out}/lib -lssl -lcrypto"
 export OPENSSL_DIR="${out}"
 export CPPFLAGS="\$OPENSSL_INCLUDES \${CPPFLAGS}"
 export LDFLAGS="\$OPENSSL_LIBS \${LDFLAGS}"
-export PKG_CONFIG_PATH="${out}/lib/pkgconfig:\$PKG_CONFIG_PATH"
+export PKG_CONFIG_PATH="${out}/lib/pkgconfig:\${PKG_CONFIG_PATH}"
 export CMFLAGS="-DOPENSSL_ROOT_DIR=${out} -DOPENSSL_INCLUDE_DIR=${out}/include \${CMFLAGS}"
 {% endblock %}
