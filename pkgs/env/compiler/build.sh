@@ -23,7 +23,13 @@ EOF
     ln -s clang++ g++
     ln -s clang++ c++
 
-    export PATH="$(pwd):${PATH}"
+    export PATH="${PWD}:${PATH}"
+    export LDFLAGS=
+    export LIBS=
     export CC=$(which clang)
     export CXX=$(which clang++)
+    export CFLAGS=
+    export CPPFLAGS=
+    export CXXFLAGS=
+    export CONLYFLAGS=
 }

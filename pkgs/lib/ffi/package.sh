@@ -10,15 +10,6 @@
 # bld dev/build/make tool/text/gnu/sed env/std
 {% endblock %}
 
-{% block patch %}
-sed -e '/^includesdir/ s/$(libdir).*$/$(includedir)/' \
-    -i include/Makefile.in
-
-sed -e '/^includedir/ s/=.*$/=@includedir@/' \
-    -e 's/^Cflags: -I${includedir}/Cflags:/' \
-    -i libffi.pc.in
-{% endblock %}
-
 {% block env %}
 export LIBFFI_CFLAGS="-I${out}/include"
 export LIBFFI_LIBS="-L${out}/lib -lffi"

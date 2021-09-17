@@ -6,23 +6,44 @@
 {% endblock %}
 
 {% block deps %}
-# bld lib/z lib/xz lib/ffi lib/intl lib/gdbm lib/bzip2 lib/iconv
+# bld lib/dlfcn lib/z lib/xz lib/ffi lib/intl lib/gdbm lib/bzip2 lib/iconv
 # bld lib/expat lib/sqlite3 lib/ncurses lib/openssl lib/readline
-# bld lib/mpdecimal {{mix.if_linux('lib/linux')}}
+# bld lib/mpdecimal {{'lib/linux' | linux}}
 # bld env/std boot/final/env/tools
 {% endblock %}
 
 {% block patch %}
-base64 -d << EOF > fix.py
-{% include 'fix.py/base64' %}
-EOF
-
 sed -e 's/MULTIARCH=\$.*/MULTIARCH=/' \
     -i ./configure
 
 sed -e 's/ffi_type ffi_type.*//'      \
     -e 's/FFI_TYPE_LONGDOUBLE }.*//'  \
     -i Modules/_ctypes/cfield.c
+
+>Modules/_ctypes/malloc_closure.c
+
+sed -e 's|/usr|/eat/shit|' -i ./configure
+sed -e 's|/usr|/eat/shit|' -i ./setup.py
+sed -e 's|/usr|/eat/shit|' -i ./Makefile.pre.in
+
+base64 -d << EOF > fix.py
+{% include 'fix.py/base64' %}
+EOF
+
+cat Modules/Setup | python3 ./fix.py | sed -e 's|-l.*||' | grep -v capi | grep -v nis > Modules/Setup.local
+
+# by hand
+cat << EOF >> Modules/Setup.local
+_ctypes _ctypes/_ctypes.c _ctypes/callbacks.c _ctypes/callproc.c _ctypes/stgdict.c _ctypes/cfield.c _ctypes/malloc_closure.c -DPy_BUILD_CORE_MODULE
+_lsprof _lsprof.c rotatingtree.c
+_opcode _opcode.c
+_posixshmem _multiprocessing/posixshmem.c -I$(srcdir)/Modules/_multiprocessing
+_multiprocessing _multiprocessing/multiprocessing.c _multiprocessing/semaphore.c -I$(srcdir)/Modules/_multiprocessing
+_hashlib _hashopenssl.c
+_queue _queuemodule.c
+EOF
+
+>setup.py
 {% endblock %}
 
 {% block cflags %}
@@ -36,17 +57,6 @@ export COFLAGS=$(echo "${COFLAGS}" | tr ' ' '\n' | grep -v 'with-system-ffi' | t
 --with-system-ffi
 {% endblock %}
 
-{% block build %}
-make -j ${make_thrs}
-
-if test -f python; then
-    ln -s python python.exe
-fi
-
-./python.exe ./fix.py patch ./setup.py
-DUMP=1 ./python.exe ./setup.py build > data.json
-./python.exe ./fix.py ./data.json | grep -v 'nis' > Modules/Setup.local
-
-rm ./python.exe*
-make -j ${make_thrs}
+{% block test %}
+$out/bin/python3 -c 'import zlib; import hashlib; import multiprocessing; import cProfile;'
 {% endblock %}

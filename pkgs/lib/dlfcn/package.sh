@@ -2,7 +2,7 @@
 
 {% block fetch %}
 # url https://github.com/pg83/dlopen/archive/414a0b4dd7cc1a96f4d69b594d1e61237b6cdcde.zip
-# md5 7f05ae68e09f7a25a7ed4f5d126a4c
+# md5 dccf60b402fa2b075d9227ec9403c8af
 {% endblock %}
 
 {% block deps %}
@@ -16,7 +16,8 @@ make
 
 {% block install %}
 make PREFIX=${out} install
-mv $out/lib/libdl.a $out/lib/libdlstub.a
+mkdir $out/lib
+mv $out/bin/libdl.a $out/lib/libdlstub.a
 {% endblock %}
 
 {% block env %}
