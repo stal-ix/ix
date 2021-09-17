@@ -11,7 +11,6 @@
 {% endblock %}
 
 set -e
-set -x
 
 # init
 export COFLAGS=

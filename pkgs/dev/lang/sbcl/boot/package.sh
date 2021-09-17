@@ -24,7 +24,7 @@ sed -e 's/lispobj \*static_code_space_free_pointer/extern lispobj \*static_code_
 sed -e 's/size_t os_vm_page_size/extern size_t os_vm_page_size/' -i src/runtime/arm64-bsd-os.c
 
 cat << EOF > symbols
-{% include 's' %}
+{% include 's1' %}
 EOF
 
 (

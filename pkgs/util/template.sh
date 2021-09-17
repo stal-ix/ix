@@ -1,8 +1,6 @@
 {% extends '//util/base.sh' %}
 
 {% block unpack %}
-echo $PWD
-echo > $PWD/qqq
 mkdir bld && cd bld
 
 for s in ${src}/*; do
