@@ -22,6 +22,6 @@ sed -e 's/__arm__/__eat_shit__/' -i configure
 --with-sysroot=$OSX_SDK
 {% endblock %}
 
-{% blcok build %}
+{% block build %}
 make -j ${make_thrs} || touch ld64/src/other/ObjectDump
 {% endblock %}
