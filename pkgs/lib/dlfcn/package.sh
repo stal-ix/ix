@@ -1,8 +1,8 @@
 {% extends '//util/template.sh' %}
 
 {% block fetch %}
-# url https://github.com/pg83/dlopen/archive/414a0b4dd7cc1a96f4d69b594d1e61237b6cdcde.zip
-# md5 dccf60b402fa2b075d9227ec9403c8af
+# url https://github.com/pg83/dlopen/archive/d2c2bd39dbecb6f3d130e291e9487ebb5a475f14.zip
+# md5 7ca8bde3f89f0252cb55d4e6ace26838
 {% endblock %}
 
 {% block deps %}
@@ -16,8 +16,7 @@ make
 
 {% block install %}
 make PREFIX=${out} install
-mkdir $out/lib
-mv $out/bin/libdl.a $out/lib/libdlstub.a
+mv $out/lib/libdl.a $out/lib/libdlstub.a
 {% endblock %}
 
 {% block env %}
