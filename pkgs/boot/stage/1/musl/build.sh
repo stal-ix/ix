@@ -80,6 +80,7 @@ ranlib libmusl.a
 
 gcc ${CFLAGS} ${LDFLAGS} ./libmusl.a -o tool -x c - << EOF
 #include <stdio.h>
+#include <errno.h>
 
 int main() {
     char buf[1024];
@@ -88,6 +89,8 @@ int main() {
     while ((n = fread(buf, 1, sizeof(buf), stdin)) > 0) {
         fwrite(buf, 1, n, stdout);
     }
+
+    exit(errno = 0);
 }
 EOF
 

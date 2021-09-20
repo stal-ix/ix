@@ -23,6 +23,7 @@ cat << EOF > include/__config_site
 #pragma once
 
 #define _LIBCPP_HAS_MERGED_TYPEINFO_NAMES_DEFAULT 0
+#define _LIBCPP_HAS_NO_INT128 1
 #define _LIBCPP_DISABLE_AVAILABILITY 1
 {% if mix.platform.target.os == 'linux' %}
 #define _LIBCPP_HAS_MUSL_LIBC 1

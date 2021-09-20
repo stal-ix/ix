@@ -1,8 +1,8 @@
 {% extends '//util/template.sh' %}
 
 {% block fetch %}
-# url https://github.com/pg83/dlopen/archive/d2c2bd39dbecb6f3d130e291e9487ebb5a475f14.zip
-# md5 7ca8bde3f89f0252cb55d4e6ace26838
+# url https://github.com/pg83/dlopen/archive/43ff7bf7df67c01c7dc4a1b7608c16e4597cb2ab.zip
+# md5 5bc95a3f3980ccdb61fec3313ce7b6f3
 {% endblock %}
 
 {% block deps %}

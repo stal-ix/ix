@@ -17,6 +17,10 @@ sed -e 's|/usr|/eat/shit|' -i ./setup.py
 sed -e 's|/usr|/eat/shit|' -i ./Makefile.pre.in
 {% endblock %}
 
+{% block cflags %}
+export ax_cv_c_float_words_bigendian=no
+{% endblock %}
+
 {% block coflags %}
 --with-ensurepip=no
 {% endblock %}

@@ -37,7 +37,7 @@ EOF
     echo 'DL_LIB("sbcl")'
 
     cat symbols | while read l; do
-        echo 'DL_S_2("'$l'", '$l')';
+        echo 'DL_S_2("'$l'", &'$l')';
     done
 
     echo 'DL_END()'

@@ -4,8 +4,8 @@ def package(mix):
             'script': mix.files.build_py,
             'fetch': [
                 {
-                    'url': 'https://github.com/pg83/shutil/archive/23f679883ebe41fe225f44202bb9ebd49db9a162.zip',
-                    'md5': '956db4f88a97fc1582f6b324ed5686cc',
+                    'url': 'https://github.com/pg83/shutil/archive/cf434c92b54583865ce10c556c81ab51c3230141.zip',
+                    'md5': 'd877127f9e043a100188dfec48f1b8a3',
                 },
             ],
             'depends': [
