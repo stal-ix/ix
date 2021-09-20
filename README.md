@@ -2,6 +2,7 @@
 statically build packages, for darwin/linux, with clang
 
 Goals:
+* lto
 * clang
 * full static
 * musl on linux
