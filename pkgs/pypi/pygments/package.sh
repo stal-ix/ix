@@ -16,3 +16,7 @@ cd ${out} && $untar ${src}/*.whl
 {% block env %}
 export PYTHONPATH="${out}:\${PYTHONPATH}"
 {% endblock %}
+
+{% block test %}
+#PYTHONPATH="${out}:${PYTHONPATH}" python3 -c 'import pygments'
+{% endblock %}

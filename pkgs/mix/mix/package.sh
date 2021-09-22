@@ -24,3 +24,7 @@ EOF
 
 chmod +x mix
 {% endblock %}
+
+{% block test %}
+python3 -c 'import jinja2; import pygments;'
+{% endblock %}
