@@ -6,7 +6,7 @@
 {% endblock %}
 
 {% block deps %}
-# lib dev/lang/python3 pypi/pygments shell/dash/minimal
+# lib dev/lang/python3 pypi/pygments pypi/jinja2 shell/dash/minimal
 # bld env/std
 {% endblock %}
 

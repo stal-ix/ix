@@ -1,8 +1,8 @@
 {% extends '//util/template.sh' %}
 
 {% block fetch %}
-# url https://files.pythonhosted.org/packages/78/c8/8d9be2f72d8f465461f22b5f199c04f7ada933add4dae6e2468133c17471/Pygments-2.10.0-py3-none-any.whl
-# md5 23ad6b4ae954b138728c09d8668f225e
+# url https://files.pythonhosted.org/packages/80/21/ae597efc7ed8caaa43fb35062288baaf99a7d43ff0cf66452ddf47604ee6/Jinja2-3.0.1-py3-none-any.whl
+# md5 b377af8123a32e992984222bff51e152
 {% endblock %}
 
 {% block deps %}
