@@ -1,4 +1,3 @@
-set -e
 set -x
 
 adduser -h /mix -S -D mix
@@ -17,12 +16,10 @@ cd /mix && mkdir bootstrap && cd bootstrap
 python3 -m venv venv
 python3 -m pip install jinja2
 
-python3 /bootstrap/mix realm add stable \
-    dev/lang/python3   \
-    shell/dash/minimal \
-    tool/gnu/coreutils
+python3 /bootstrap/mix realm add stable mix/mix
 
-python3 /bootstrap/mix gc
+mix realm add stable mix/mix
+mix gc
 EOF
 
 rm -rf /bootstrap /mix/bootstrap  \
