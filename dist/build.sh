@@ -16,9 +16,12 @@ cd /mix && mkdir bootstrap && cd bootstrap
 python3 -m venv venv
 python3 -m pip install jinja2
 
-python3 /bootstrap/mix realm add stable mix/mix
+python3 /bootstrap/mix realm add stable \
+    mix/mix \
+    shell/dash/minimal \
+    tool/gnu/coreutils
 
-mix realm add stable mix/mix
+mix realm upgrade
 mix gc
 EOF
 
