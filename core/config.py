@@ -26,7 +26,7 @@ class Config:
     def __init__(self, binary, where):
         self.binary = binary
         self.where = where
-        self.mix_dir = os.path.expanduser('~/mix')
+        self.mix_dir = os.path.expanduser('~/mix').replace('/mix/mix', '/mix')
 
     @property
     def store_dir(self):

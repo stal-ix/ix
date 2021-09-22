@@ -94,6 +94,15 @@ int main() {
 }
 EOF
 
+>empty.c
+
+clang -o empty.o -c ./empty.c
+
+for x in m pthread dl; do
+    ar q lib${x}.a empty.o
+    ranlib lib${x}.a
+done
+
 ./tool << EOF > ${out}/env
 export CPPFLAGS="$MFLAGS \${CPPFLAGS}"
 export CFLAGS="-ffreestanding -nostdinc \${CFLAGS}"

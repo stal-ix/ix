@@ -215,7 +215,7 @@ done
 (
     cd libuxre
 
-    $MAKE CFLAGS="-I. ${CPPFLAGS} ${CFLAGS}" CPPFLAGS="" -f Makefile.mk
+    $MAKE CPPFLAGS="-I. ${CFLAGS} ${CPPFLAGS}" -f Makefile.mk
 )
 
 (
@@ -240,6 +240,7 @@ done
 (
     cd ${out}/bin && ln -s nawk awk && rm dircmp
 )
+
 {% endblock %}
 
 {% block env %}
