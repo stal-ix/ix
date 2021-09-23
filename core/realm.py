@@ -1,12 +1,33 @@
 import os
 import json
 import shutil
+import itertools
 
 import core.utils as cu
 
 
 def realm_path(mngr, name):
     return os.path.join(mngr.config.realm_dir, name)
+
+
+def dict_update(o, n):
+    return dict(itertools.chain(o.items(), n.items()))
+
+
+def collapse_pkgs(pkgs):
+    v = []
+    d = {}
+
+    for p in pkgs:
+        n = p['name']
+
+        if n in d:
+            d[n] = dict_update(d[n], p.get('flags', {}))
+        else:
+            v.append(n)
+            d[n] = p.get('flags', {})
+
+    return [{'name': x, 'flags': d[x]} for x in v]
 
 
 class Realm:
@@ -33,11 +54,11 @@ class Realm:
         return prepare_realm(self.mngr, self.name, pkgs)
 
     def add(self, pkgs):
-        return self.new_version(cu.uniq_list(self.pkgs + pkgs))
+        return self.new_version(collapse_pkgs(self.pkgs + pkgs))
 
     def remove(self, pkgs):
         # TODO
-        return self.new_version(cu.uniq_list(frozenset(self.pkgs) - frozenset(pkgs)))
+        raise Exception('unimplemented')
 
     def upgrade(self):
         return self.new_version(self.pkgs)
@@ -68,10 +89,11 @@ def load_realm(mngr, name):
 
 
 def prepare_realm(mngr, name, pkgs):
-    pkgs = cu.uniq_list(pkgs)
+    print(name, pkgs)
+
     mngr.build_packages(pkgs)
     handles = list(mngr.iter_runtime_packages(pkgs))
-    uid = cu.struct_hash([10, name] + cu.uniq_list([p.uid for p in handles]))
+    uid = cu.struct_hash([10, name, pkgs] + cu.uniq_list([p.uid for p in handles]))
     path = os.path.join(mngr.config.store_dir, uid)
     touch = os.path.join(path, 'touch')
     meta = os.path.join(path, 'meta.json')

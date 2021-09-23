@@ -98,6 +98,7 @@ def cononize(v):
 class Package:
     def __init__(self, selector, mngr):
         print(selector)
+
         self.selector = selector
         self.manager = mngr
 

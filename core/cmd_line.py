@@ -28,4 +28,27 @@ def parse_pkgs(ctx):
 
         pkgs = [pkg]
 
-    return cfg, [{'name': x} for x in pkgs]
+    def iter_pkgs():
+        cur = {}
+
+        for p in pkgs:
+            if p.startswith('-D'):
+                k, v = p[2:].split('=')
+
+                cur['flags'][k] = v
+            else:
+                if cur:
+                    yield cur
+
+                cur = {
+                    'name': p,
+                    'flags': {
+                    },
+                }
+
+        if cur:
+            yield cur
+
+    print(list(iter_pkgs()))
+
+    return cfg, list(iter_pkgs())
