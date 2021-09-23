@@ -39,9 +39,11 @@ _lsprof _lsprof.c rotatingtree.c
 _opcode _opcode.c
 _posixshmem _multiprocessing/posixshmem.c -I$(srcdir)/Modules/_multiprocessing
 _multiprocessing _multiprocessing/multiprocessing.c _multiprocessing/semaphore.c -I$(srcdir)/Modules/_multiprocessing
-_hashlib _hashopenssl.c
 _queue _queuemodule.c
+_hashlib _hashopenssl.c
 _ssl _ssl.c -DUSE_SLL
+_lzma _lzmamodule.c
+_bz2 _bz2module.c
 EOF
 
 >setup.py
@@ -60,5 +62,5 @@ export COFLAGS=$(echo "${COFLAGS}" | tr ' ' '\n' | grep -v 'with-system-ffi' | t
 
 {% block test %}
 $out/bin/python3 -c 'import zlib; import hashlib; import multiprocessing; import cProfile;'
-$out/bin/python3 -c 'import hashlib; import ssl;'
+$out/bin/python3 -c 'import hashlib; import ssl; import lzma; import bz2;'
 {% endblock %}
