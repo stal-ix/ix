@@ -18,8 +18,7 @@ python3 -m pip install jinja2
 
 python3 /bootstrap/mix realm add stable \
     mix/mix \
-    shell/dash/minimal \
-    tool/gnu/coreutils
+    sys/linux/busybox
 
 mix realm upgrade
 mix gc
