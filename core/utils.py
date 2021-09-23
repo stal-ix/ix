@@ -22,8 +22,10 @@ def iter_uniq_list(lst):
     v = set()
 
     for l in lst:
-        if l not in v:
-            v.add(l)
+        k = struct_hash(l)
+
+        if k not in v:
+            v.add(k)
 
             yield l
 

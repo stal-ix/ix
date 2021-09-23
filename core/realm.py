@@ -5,10 +5,6 @@ import shutil
 import core.utils as cu
 
 
-def uniq_list(l):
-    return list(sorted(frozenset(l)))
-
-
 def realm_path(mngr, name):
     return os.path.join(mngr.config.realm_dir, name)
 
@@ -37,10 +33,11 @@ class Realm:
         return prepare_realm(self.mngr, self.name, pkgs)
 
     def add(self, pkgs):
-        return self.new_version(uniq_list(self.pkgs + pkgs))
+        return self.new_version(cu.uniq_list(self.pkgs + pkgs))
 
     def remove(self, pkgs):
-        return self.new_version(uniq_list(frozenset(self.pkgs) - frozenset(pkgs)))
+        # TODO
+        return self.new_version(cu.uniq_list(frozenset(self.pkgs) - frozenset(pkgs)))
 
     def upgrade(self):
         return self.new_version(self.pkgs)
@@ -71,10 +68,10 @@ def load_realm(mngr, name):
 
 
 def prepare_realm(mngr, name, pkgs):
-    pkgs = uniq_list(pkgs)
+    pkgs = cu.uniq_list(pkgs)
     mngr.build_packages(pkgs)
     handles = list(mngr.iter_runtime_packages(pkgs))
-    uid = cu.struct_hash([9, name] + uniq_list([p.uid for p in handles]))
+    uid = cu.struct_hash([10, name] + cu.uniq_list([p.uid for p in handles]))
     path = os.path.join(mngr.config.store_dir, uid)
     touch = os.path.join(path, 'touch')
     meta = os.path.join(path, 'meta.json')

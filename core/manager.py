@@ -28,47 +28,50 @@ class Manager:
         with open(os.path.join(self.config.where, path)) as f:
             return f.read()
 
-    def load_package(self, name):
+    def load_package(self, selector):
+        key = cu.struct_hash(selector)
+
         while True:
             try:
-                return self._p[name]
+                return self._p[key]
             except KeyError:
                 pass
 
-            self._p[name] = cp.Package(name, self)
+            self._p[key] = cp.Package(selector, self)
 
-    def iter_packages(self, names):
+    def iter_packages(self, selectors):
         def iter_deps():
-            for name in names:
-                yield name
-                yield from self.load_package(name).all_depends()
+            for sel in selectors:
+                yield sel
+                yield from self.load_package(sel).all_depends()
 
         for d in cu.iter_uniq_list(iter_deps()):
             yield self.load_package(d)
 
-    def iter_runtime_packages(self, names):
+    def iter_runtime_packages(self, selectors):
         def iter_deps():
-            for name in names:
-                yield name
-                yield from self.load_package(name).all_runtime_depends()
+            for sel in selectors:
+                yield sel
+                yield from self.load_package(sel).all_runtime_depends()
 
         for d in cu.iter_uniq_list(iter_deps()):
             yield self.load_package(d)
 
-    def iter_build_commands(self, names):
-        for pkg in self.iter_packages(names):
+    def iter_build_commands(self, selectors):
+        for pkg in self.iter_packages(selectors):
             yield from pkg.commands()
 
-    def build_graph(self, names):
+    def build_graph(self, selectors):
         return {
-            'nodes': list(self.iter_build_commands(names)),
-            'targets': [self.load_package(x).out_dir + '/touch' for x in names],
+            'nodes': list(self.iter_build_commands(selectors)),
+            'targets': [self.load_package(x).out_dir + '/touch' for x in selectors],
         }
 
+    # do not account flags
     def all_packages(self):
         for x in cu.iter_dir(self.config.where):
             if os.path.basename(x) in ('package.py', 'package.sh'):
-                yield self.load_package(os.path.dirname(x))
+                yield self.load_package({'name': os.path.dirname(x)})
 
     def build_packages(self, pkgs):
         tmp = os.path.join(self.config.store_dir, 'build.' + str(random.random()))

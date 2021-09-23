@@ -21,6 +21,10 @@ class FileLoader:
         }
 
 
+def fmt_sel(s):
+    return str(s)
+
+
 def exec_mod(text, iface):
     g = {}
 
@@ -92,9 +96,10 @@ def cononize(v):
 
 
 class Package:
-    def __init__(self, name, mngr):
-        self._n = name
-        self._m = mngr
+    def __init__(self, selector, mngr):
+        print(selector)
+        self.selector = selector
+        self.manager = mngr
 
         try:
             try:
@@ -110,6 +115,10 @@ class Package:
             raise ce.Error(text, context=context, exception=e.slave)
 
         self._u = cu.struct_hash([self._d, list(self.iter_env())])
+
+    @property
+    def flags(self):
+        return self.selector.get('flags', {})
 
     def prepare_deps(self, v):
         return cononize(v)
@@ -166,12 +175,8 @@ class Package:
         return self._d
 
     @property
-    def manager(self):
-        return self._m
-
-    @property
     def name(self):
-        return self._n
+        return self.selector['name']
 
     @property
     def config(self):
@@ -209,22 +214,36 @@ class Package:
 
     @property
     def src_dir(self):
-        return self.src_dir_for(self._d['build']['fetch'])
+        return self.src_dir_for(self.descr['build']['fetch'])
 
-    def load_package(self, name):
+    def load_package(self, selector):
         try:
-            return self.manager.load_package(name)
+            return self.manager.load_package(selector)
         except FileNotFoundError:
-            raise ce.Error(f'can not load dependant package {name} of {self.name}')
+            s1 = fmt_sel(selector)
+            s2 = fmt_sel(self.selector)
+
+            raise ce.Error(f'can not load dependant package {s1} of {s2}')
 
     def filter_buildable(self, it):
         for n in it:
             if self.load_package(n).buildable():
                 yield n
 
+    def make_selector(self, lst):
+        def make(v):
+            try:
+                v['name']
+            except Exception:
+                v = {'name': v}
+
+            return v
+
+        return [make(x) for x in lst]
+
     # build
     def build_depends(self):
-        return self.descr.get('build', {}).get('depends', [])
+        return self.make_selector(self.descr.get('build', {}).get('depends', []))
 
     @cu.cached_method
     def all_build_depends(self):
@@ -242,7 +261,7 @@ class Package:
 
     # runtime
     def runtime_depends(self):
-        return self.descr.get('runtime', {}).get('depends', [])
+        return self.make_selector(self.descr.get('runtime', {}).get('depends', []))
 
     @cu.cached_method
     def all_runtime_depends(self):
@@ -311,7 +330,7 @@ class Package:
 
             yield 'make_thrs', str(multiprocessing.cpu_count() + 2)
 
-        build = self._d['build']['script']
+        build = self.descr['build']['script']
 
         return {
             'sh': self.build_sh_script,
@@ -349,7 +368,7 @@ class Package:
 
     def buildable(self):
         try:
-            self._d['build']['script']
+            self.descr['build']['script']
         except KeyError:
             return False
 
@@ -363,7 +382,7 @@ class Package:
 
         extra = []
 
-        for ui in self._d['build'].get('fetch', []):
+        for ui in self.descr['build'].get('fetch', []):
             md5 = ui.get('md5', '')
             url = ui['url']
             urls = ['https://storage.yandexcloud.net/mix-cache/cache/' + md5, url]

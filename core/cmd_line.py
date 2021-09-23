@@ -28,4 +28,4 @@ def parse_pkgs(ctx):
 
         pkgs = [pkg]
 
-    return cfg, pkgs
+    return cfg, [{'name': x} for x in pkgs]
