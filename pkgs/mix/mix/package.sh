@@ -1,8 +1,8 @@
 {% extends '//util/template.sh' %}
 
 {% block fetch %}
-# url https://github.com/pg83/mix/archive/daaf6bb01932b7d51d37968637286130066c3b3b.zip
-# md5 5335f11a1c13e01d3d3cd8afaf89df41
+# url https://github.com/pg83/mix/archive/a7e460335bc5aac7ae39ee961bbe0bb262255826.zip
+# md5 3df98d191147f102337381a97998d9fd
 {% endblock %}
 
 {% block deps %}
