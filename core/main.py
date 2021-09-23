@@ -16,6 +16,7 @@ CLIS = [
     ('core.misc_cmd', 'misc_runpy', True),
     ('core.misc_cmd', 'misc_untar', True),
     ('core.misc_cmd', 'misc_unzip', True),
+    ('core.misc_cmd', 'misc_fetch', True),
 ]
 
 

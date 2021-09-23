@@ -1,13 +1,18 @@
 set -x
 
+cat << EOF > /etc/resolv.conf
+nameserver 2001:4860:4860::6464
+nameserver 2001:4860:4860::64
+EOF
+
 adduser -h /mix -S -D mix
 
-apk add python3
+apk add python3 dash
 
 export REALM="/mix/realm/stable"
 export PATH="${REALM}/bin:/mix/bootstrap/venv/bin:${PATH}"
 
-su mix -s /bin/sh << EOF
+su mix -s $(which dash) << EOF
 set -e
 set -x
 
@@ -15,6 +20,8 @@ cd /mix && mkdir bootstrap && cd bootstrap
 
 python3 -m venv venv
 python3 -m pip install jinja2
+
+python3 /bootstrap/mix misc fetch https://github.com/pg83/mix/archive/856161cdb1b867bf65c1bdc776dee9a13065bcf6.zip
 
 python3 /bootstrap/mix realm add stable \
     mix/mix \

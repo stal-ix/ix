@@ -79,3 +79,8 @@ def cli_misc_untar(ctx):
 def cli_misc_unzip(ctx):
     for a in ctx['args']:
         csc.unzip(a)
+
+
+def cli_misc_fetch(ctx):
+    for a in ctx['args']:
+        csc.fetch_url(a, os.path.basename(a))
