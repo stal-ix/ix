@@ -89,8 +89,6 @@ def load_realm(mngr, name):
 
 
 def prepare_realm(mngr, name, pkgs):
-    print(name, pkgs)
-
     mngr.build_packages(pkgs)
     handles = list(mngr.iter_runtime_packages(pkgs))
     uid = cu.struct_hash([10, name, pkgs] + cu.uniq_list([p.uid for p in handles]))

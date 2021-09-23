@@ -49,6 +49,4 @@ def parse_pkgs(ctx):
         if cur:
             yield cur
 
-    print(list(iter_pkgs()))
-
     return cfg, list(iter_pkgs())
