@@ -92,7 +92,10 @@ do_unpack() {
 }
 
 do_patch() {
-    do_unpack && (step_patch)
+    do_unpack && (
+        set -eu
+        step_patch
+    )
 }
 
 do_configure() {
@@ -100,15 +103,24 @@ do_configure() {
 }
 
 do_build() {
-    do_configure && (step_build)
+    do_configure && (
+        set -eu
+        step_build
+    )
 }
 
 do_install() {
-    do_build && (step_install)
+    do_build && (
+        set -eu
+        step_install
+    )
 }
 
 do_test() {
-    do_install && (step_test)
+    do_install && (
+        set -eu
+        step_test
+    )
 }
 
 do_execute() {
@@ -117,5 +129,9 @@ do_execute() {
     echo "done ${out}"
 }
 
-(do_execute)
+(
+    set -eu
+
+    do_execute
+)
 {% endblock %}

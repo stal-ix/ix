@@ -11,6 +11,7 @@
 {% endblock %}
 
 set -e
+set -u
 
 # init
 export COFLAGS=
@@ -36,7 +37,7 @@ cd ${tmp} && mkdir tmp
 line=
 OFS=${IFS}
 
-IFS=":"; for i in $PATH; do
+IFS=":"; for i in ${PATH}; do
     line="${i}:${line}"
 done
 
