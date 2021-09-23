@@ -19,6 +19,12 @@ def untar(path):
         f.extractall()
 
 
+def fetch_url_data(url):
+    ssl._create_default_https_context = ssl._create_unverified_context
+
+    return ur.urlopen(url).read()
+
+
 def fetch_url(url, out):
     print('fetch ' + url + ' into ' + out)
 

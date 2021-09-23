@@ -1,4 +1,5 @@
 import os
+import io
 import hashlib
 
 import core.utils as cu
@@ -24,11 +25,15 @@ def list_cache():
             yield k[6:]
 
 
-def store_cache(path):
-    client().upload_file(path, 'mix-cache', 'cache/' + os.path.basename(path))
+def store_cache(data, key):
+    client().upload_fileobj(io.BytesIO(data), 'mix-cache', 'cache/' + key)
 
 
-def cli_cache(ctx):
+def data_md5(data):
+    return hashlib.md5(data).hexdigest()
+
+
+def cli_cache_all(ctx):
     def iter_urls():
         for p in cm.Manager(cc.config_from(ctx)).all_packages():
             yield from p.urls
@@ -49,17 +54,32 @@ def cli_cache(ctx):
             continue
 
         url = el['url']
+        data = cs.fetch_url_data(url)
 
-        try:
-            cs.fetch_url(url, md5)
+        if data_md5(data) != md5:
+            print(f'incorrect md5 in {el}, skip')
 
-            if hashlib.md5(open(md5, 'rb').read()).hexdigest() != md5:
-                print(f'incorrect md5 in {el}, skip')
+            continue
 
-                continue
+        store_cache(data, md5)
 
-            store_cache(md5)
-        finally:
-            os.unlink(md5)
+        in_cache.add(md5)
+
+
+def cli_cache_url(ctx):
+    in_cache = set(list_cache())
+
+    for url in ctx['args']:
+        data = cs.fetch_url_data(url)
+        md5 = data_md5(data)
+
+        print(f'{md5} {url}')
+
+        if md5 in in_cache:
+            print(f'skip {url}')
+
+            continue
+
+        store_cache(data, md5)
 
         in_cache.add(md5)
