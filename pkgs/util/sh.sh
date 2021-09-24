@@ -24,6 +24,7 @@ export LDFLAGS=
 export CONLYFLAGS=
 export PKG_CONFIG_PATH=
 export PYTHONPATH=
+export PYTHONDONTWRITEBYTECODE=1
 
 export TMPDIR=${tmp}/tmp
 
