@@ -1,8 +1,8 @@
 {% extends '//util/autohell.sh' %}
 
 {% block fetch %}
-# url https://www.python.org/ftp/python/3.9.5/Python-3.9.5.tar.xz
-# md5 71f7ada6bec9cdbf4538adc326120cfd
+# url https://www.python.org/ftp/python/3.9.7/Python-3.9.7.tar.xz
+# md5 fddb060b483bc01850a3f412eea1d954
 {% endblock %}
 
 {% block deps %}
