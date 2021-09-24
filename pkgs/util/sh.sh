@@ -23,6 +23,7 @@ export CPPFLAGS=
 export LDFLAGS=
 export CONLYFLAGS=
 export PKG_CONFIG_PATH=
+export PYTHONPATH=
 
 export TMPDIR=${tmp}/tmp
 

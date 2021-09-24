@@ -21,12 +21,10 @@ cd /mix && mkdir bootstrap && cd bootstrap
 python3 -m venv venv
 python3 -m pip install jinja2
 
-python3 /bootstrap/mix misc fetch https://github.com/pg83/mix/archive/856161cdb1b867bf65c1bdc776dee9a13065bcf6.zip
-
 python3 /bootstrap/mix realm add stable \
     mix/mix \
-        -Dmix_ver=856161cdb1b867bf65c1bdc776dee9a13065bcf6 \
-        -Dmix_md5=0a87df966ee4066ffa43046793147332 \
+        -Dmix_ver=b1b9950345513a523d7b54f40ea7dde847339277 \
+        -Dmix_md5=85cf7d07ab5e8f5163c4b84f401dd3cc \
     sys/linux/busybox
 
 mix realm upgrade
