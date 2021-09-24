@@ -1,8 +1,8 @@
 {% extends '//util/base.sh' %}
 
 {% block fetch %}
-# url https://www.crufty.net/ftp/pub/sjg/bmake.tar.gz
-# md5 e3059851715a7747f9813f37eaaf4c1d
+# url https://www.crufty.net/ftp/pub/sjg/bmake-20210808.tar.gz
+# md5 e4432f5e3add4459aef28ec2017aaf05
 {% endblock %}
 
 {% block deps %}
@@ -16,7 +16,7 @@ cd ${out} && $untar ${src}/bmake* && cd bmake
 
 {% block configure %}
 {% if mix.platform.target.os == 'linux' %}
-export CPPFLAGS="-Imissing ${CPPFLAGS}"
+export CPPFLAGS="-Imissing -Dstrtoul=bmake_strtoul ${CPPFLAGS}"
 {% endif %}
 {% endblock %}
 

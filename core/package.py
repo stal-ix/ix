@@ -384,7 +384,7 @@ class Package:
         for ui in self.descr['build'].get('fetch', []):
             md5 = ui.get('md5', '')
             url = ui['url']
-            urls = ['https://storage.yandexcloud.net/mix-cache/cache/' + md5, url]
+            urls = ['https://storage.yandexcloud.net/mix-cache/cache/src/' + md5, url]
             script = self.fetch_src_script(urls, os.path.basename(url), md5)
             path = script['args'][-2]
 

@@ -1,8 +1,8 @@
 {% extends '//util/template.sh' %}
 
 {% block fetch %}
-# url https://github.com/libcxxrt/libcxxrt/archive/refs/heads/master.zip
-# md5 3b43179e518dd0a54362267b255b9d24
+# url https://github.com/libcxxrt/libcxxrt/archive/14bf5d5526056ae1cc16f03b7b8e96108a1e38d0.zip
+# md5 d5724a37b8d640f67f09cbbdd831a528
 {% endblock %}
 
 {% block deps %}

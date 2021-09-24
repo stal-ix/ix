@@ -33,7 +33,7 @@ mix gc
 EOF
 
 rm -rf /bootstrap \
-    /mix/bootstrap /mix/cache     \
+    /mix/bootstrap /mix/.cache    \
     /bin /lib /mnt /run /srv /tmp \
     /var /home /media /opt /root  \
     /sbin /usr

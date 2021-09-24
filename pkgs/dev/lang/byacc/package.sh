@@ -2,7 +2,7 @@
 
 {% block fetch %}
 # url https://invisible-island.net/datafiles/release/byacc.tar.gz
-# md5 ad027e9a1a78666e3e27924ce6854f97
+# md5 c66b26a5dbce291e5c3c531e8d692834
 {% endblock %}
 
 {% block deps %}
