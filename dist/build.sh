@@ -23,8 +23,8 @@ python3 -m pip install jinja2
 
 python3 /bootstrap/mix realm add stable \
     mix/mix \
-        -Dmix_ver=b1b9950345513a523d7b54f40ea7dde847339277 \
-        -Dmix_md5=85cf7d07ab5e8f5163c4b84f401dd3cc \
+        -Dmix_ver=eadb02f6ac003734ce6501ee4c65252c26693fbf \
+        -Dmix_md5=56cfe9dda89c45027bde1045a069d0c8 \
     sys/linux/busybox
 
 mix realm upgrade

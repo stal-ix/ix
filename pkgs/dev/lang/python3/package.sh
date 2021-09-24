@@ -16,11 +16,13 @@
 sed -e 's/MULTIARCH=\$.*/MULTIARCH=/' \
     -i ./configure
 
+{% block patch_ffi %}
 sed -e 's/ffi_type ffi_type.*//'      \
     -e 's/FFI_TYPE_LONGDOUBLE }.*//'  \
     -i Modules/_ctypes/cfield.c
 
 >Modules/_ctypes/malloc_closure.c
+{% endblock %}
 
 sed -e 's|/usr|/eat/shit|' -i ./configure
 sed -e 's|/usr|/eat/shit|' -i ./setup.py
@@ -30,20 +32,22 @@ sed -e 's|/usr|/eat/shit|' -i ./Makefile.pre.in
 {% include 'fix.c/base64' %}
 EOF
 
-cat Modules/Setup | ./fix | sed -e 's|-l.*||' | grep -v capi | grep -v nis > Modules/Setup.local
+cat Modules/Setup | ./fix | sed -e 's|-l.*||' | grep -v capi | grep -v nis | grep -v readline > Modules/Setup.local
 
 # some hand job
 cat << EOF >> Modules/Setup.local
-_ctypes _ctypes/_ctypes.c _ctypes/callbacks.c _ctypes/callproc.c _ctypes/stgdict.c _ctypes/cfield.c _ctypes/malloc_closure.c -DPy_BUILD_CORE_MODULE
 _lsprof _lsprof.c rotatingtree.c
 _opcode _opcode.c
 _posixshmem _multiprocessing/posixshmem.c -I$(srcdir)/Modules/_multiprocessing
 _multiprocessing _multiprocessing/multiprocessing.c _multiprocessing/semaphore.c -I$(srcdir)/Modules/_multiprocessing
 _queue _queuemodule.c
+{% block extra_modules %}
+_ctypes _ctypes/_ctypes.c _ctypes/callbacks.c _ctypes/callproc.c _ctypes/stgdict.c _ctypes/cfield.c _ctypes/malloc_closure.c -DPy_BUILD_CORE_MODULE
 _hashlib _hashopenssl.c
 _ssl _ssl.c -DUSE_SLL
 _lzma _lzmamodule.c
 _bz2 _bz2module.c
+{% endblock %}
 EOF
 
 >setup.py
@@ -61,6 +65,15 @@ export COFLAGS=$(echo "${COFLAGS}" | tr ' ' '\n' | grep -v 'with-system-ffi' | t
 {% endblock %}
 
 {% block test %}
-$out/bin/python3 -c 'import zlib; import hashlib; import multiprocessing; import cProfile;'
+$out/bin/python3 -c 'import zlib; import multiprocessing; import cProfile;'
+{% block extra_tests %}
 $out/bin/python3 -c 'import hashlib; import ssl; import lzma; import bz2;'
+{% endblock %}
+{% endblock %}
+
+{% block postinstall %}
+rm -rf ${out}/lib/python*/config*
+rm -rf ${out}/lib/python*/test
+
+find ${out} | grep __pycache__ | xargs rm -rf
 {% endblock %}
