@@ -19,10 +19,7 @@ def client():
 
 def list_cache():
     for key in client().list_objects(Bucket='mix-cache')['Contents']:
-        k = key['Key']
-
-        if k.startswith('cache/'):
-            yield k[6:]
+        yield os.path.basename(key['Key'])
 
 
 def store_cache(data, key):
@@ -61,7 +58,7 @@ def cli_cache_all(ctx):
 
             continue
 
-        store_cache(data, md5)
+        store_cache(data, 'src/' + md5)
 
         in_cache.add(md5)
 
@@ -80,6 +77,6 @@ def cli_cache_url(ctx):
 
             continue
 
-        store_cache(data, md5)
+        store_cache(data, 'src/' + md5)
 
         in_cache.add(md5)
