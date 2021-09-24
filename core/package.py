@@ -322,6 +322,7 @@ class Package:
             if 'fetch' in self._d['build']:
                 yield 'src', self.src_dir
 
+            yield 'uid', self.uid
             yield 'out', self.out_dir
             yield 'tmp', self.tmp_dir
             yield 'mix', self.config.binary

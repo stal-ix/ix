@@ -31,6 +31,16 @@ export TMPDIR=${tmp}/tmp
 rm -rf ${out} || true
 mkdir -p ${out}
 
+{% block fetch_cached_pkg %}
+cd ${out}
+
+if ${exe} ${mix} misc fetch https://storage.yandexcloud.net/mix-cache/cache/pkg/${uid}; then
+    ${exe} ${mix} misc untar ${uid}
+
+    exit 0
+fi
+{% endblock %}
+
 rm -rf ${tmp} || true
 mkdir -p ${tmp}
 
@@ -63,6 +73,12 @@ set -x
 set +x
 
 rm -rf ${out}/lib/*.so* ${out}/lib/*.la* ${out}/lib/*.dylib* || true
+
+{% block cache_pkg %}
+${exe} ${mix} misc tar ${out} ${tmp}/${uid}
+${exe} ${mix} cache upload ${tmp}/${uid} pkg/${uid}
+{% endblock %}
+
 rm -rf ${tmp}
 
 {% block sh_script_end %}

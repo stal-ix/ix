@@ -10,12 +10,16 @@ CLIS = [
     ('core.realm_cmd', 'realm_list', False),
     ('core.realm_cmd', 'realm_purge', False),
     ('core.build_cmd', 'build', False),
-    ('core.cache_cmd', 'cache_all', False),
-    ('core.cache_cmd', 'cache_url', False),
+
     ('core.gc_cmd', 'gc', False),
     ('core.sh_cmd', 'sh', True),
-    ('core.misc_cmd', 'misc_runpy', True),
+
+    ('core.cache_cmd', 'cache_all', True),
+    ('core.cache_cmd', 'cache_url', True),
+
+    ('core.misc_cmd', 'misc_tar', True),
     ('core.misc_cmd', 'misc_untar', True),
+    ('core.misc_cmd', 'misc_runpy', True),
     ('core.misc_cmd', 'misc_unzip', True),
     ('core.misc_cmd', 'misc_fetch', True),
 ]
