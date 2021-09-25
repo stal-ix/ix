@@ -80,3 +80,10 @@ def cli_cache_url(ctx):
         store_cache(data, 'src/' + md5)
 
         in_cache.add(md5)
+
+
+def cli_cache_upload(ctx):
+    a = ctx['args']
+
+    with open(a[0], 'rb') as f:
+        store_cache(f.read(), a[1])

@@ -82,6 +82,90 @@ for f in sys.argv[1:]:
 '''.strip()
 
 
+class ScriptBuilder:
+    def __init__(self, config):
+        self.config = config
+
+    def build_sh_script(self, data, env):
+        return {
+            'args': ['dash', '-s'],
+            'stdin': data,
+            'env': env,
+        }
+
+    def build_py_script(self, data, env, args=[]):
+        return {
+            'args': [sys.executable, self.config.binary, 'misc', 'runpy'] + args,
+            'stdin': BUILD_PY_SCRIPT.replace('{build_script}', data),
+            'env': env,
+        }
+
+
+class CmdBuild:
+    def __init__(self, package):
+        self.package = package
+
+    @property
+    def config(self):
+        return self.package.config
+
+    @property
+    def name(self):
+        return self.package.name
+
+    @property
+    @cu.cached_method
+    def out_dir(self):
+        return self.config.store_dir + '/' + self.uid + '-' + self.name.replace('/', '-')
+
+    @property
+    @cu.cached_method
+    def tmp_dir(self):
+        return self.config.build_dir + '/' + self.uid
+
+    def src_dir_for(self, url):
+        return self.config.store_dir + '/' + cu.struct_hash(url)
+
+    @property
+    def src_dir(self):
+        return self.src_dir_for(self.package.descr['build']['fetch'])
+
+    def build_script(self):
+        def iter_env():
+            yield from self.iter_env()
+
+            if 'fetch' in self._d['build']:
+                yield 'src', self.src_dir
+
+            yield 'uid', self.uid
+            yield 'out', self.out_dir
+            yield 'tmp', self.tmp_dir
+            yield 'mix', self.config.binary
+            yield 'exe', sys.executable
+
+            yield 'make_thrs', str(multiprocessing.cpu_count() + 2)
+
+        build = self.package.descr['build']['script']
+        sb = ScriptBuilder(self.config)
+
+        return {
+            'sh': sb.build_sh_script,
+            'py': sb.build_py_script,
+        }[build['kind']](build['data'], dict(iter_env()))
+
+    def iter_env(self):
+        path = ['/nowhere']
+
+        for p in self.package.iter_all_build_depends():
+            od = p.out_dir
+
+            yield p.name.replace('-', '_').replace('/', '_'), od
+
+            path.append(od + '/bin')
+
+        yield 'PATH', ':'.join(path)
+
+
 def compile_sh(script):
     return cs.parse(script)
 
@@ -198,23 +282,6 @@ class Package:
     def uid(self):
         return self._u
 
-    @property
-    @cu.cached_method
-    def out_dir(self):
-        return self.config.store_dir + '/' + self.uid + '-' + self.name.replace('/', '-')
-
-    @property
-    @cu.cached_method
-    def tmp_dir(self):
-        return self.config.build_dir + '/' + self.uid
-
-    def src_dir_for(self, url):
-        return self.config.store_dir + '/' + cu.struct_hash(url)
-
-    @property
-    def src_dir(self):
-        return self.src_dir_for(self.descr['build']['fetch'])
-
     def load_package(self, selector):
         try:
             return self.manager.load_package(selector)
@@ -288,54 +355,6 @@ class Package:
                 yield from self.load_package(d).all_depends()
 
         return cu.uniq_list(iter_deps())
-
-    def iter_env(self):
-        path = ['/nowhere']
-
-        for p in self.iter_all_build_depends():
-            od = p.out_dir
-
-            yield p.name.replace('-', '_').replace('/', '_'), od
-
-            path.append(od + '/bin')
-
-        yield 'PATH', ':'.join(path)
-
-    def build_sh_script(self, data, env):
-        return {
-            'args': ['dash', '-s'],
-            'stdin': data,
-            'env': env,
-        }
-
-    def build_py_script(self, data, env, args=[]):
-        return {
-            'args': [sys.executable, self.config.binary, 'misc', 'runpy'] + args,
-            'stdin': BUILD_PY_SCRIPT.replace('{build_script}', data),
-            'env': env,
-        }
-
-    def build_script(self):
-        def iter_env():
-            yield from self.iter_env()
-
-            if 'fetch' in self._d['build']:
-                yield 'src', self.src_dir
-
-            yield 'uid', self.uid
-            yield 'out', self.out_dir
-            yield 'tmp', self.tmp_dir
-            yield 'mix', self.config.binary
-            yield 'exe', sys.executable
-
-            yield 'make_thrs', str(multiprocessing.cpu_count() + 2)
-
-        build = self.descr['build']['script']
-
-        return {
-            'sh': self.build_sh_script,
-            'py': self.build_py_script,
-        }[build['kind']](build['data'], dict(iter_env()))
 
     def fetch_src_script(self, urls, out, md5):
         path = os.path.join(self.src_dir_for([out, md5]), out)

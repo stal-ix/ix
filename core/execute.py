@@ -9,10 +9,17 @@ except ImportError:
     def bsh(s):
         return s
 
+import itertools
 import subprocess
 
 import core.error as ce
 import core.par_exec as cp
+
+
+def mine_secrets():
+    for x, y in os.environ.items():
+        if x.startswith('AWS_'):
+            yield x, y
 
 
 def execute_cmd(c):
@@ -24,9 +31,10 @@ def execute_cmd(c):
         descr = str(c)
 
     stdin = c.get('stdin', '')
+    secret_env = dict(itertools.chain(env.items(), mine_secrets()))
 
     try:
-        return subprocess.run(c['args'], input=stdin.encode() or None, env=env, check=True)
+        return subprocess.run(c['args'], input=stdin.encode() or None, env=secret_env, check=True)
     except Exception as e:
         def iter_lines():
             yield '____|' + descr

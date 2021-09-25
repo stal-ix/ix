@@ -1,3 +1,4 @@
+import os
 import ssl
 import zipfile
 import tarfile
@@ -23,11 +24,13 @@ def untar(path):
 
 
 def tar(fr, to):
-    print('tar {fr} into to')
+    print(f'tar {fr} into {to}')
 
-    with tarfile.open(to, 'x:xz') as f:
-        for x in os.listdir(to):
-            f.add(os.path.join(to, x), x)
+    with tarfile.open(to + '.tmp', 'x:xz') as f:
+        for x in os.listdir(fr):
+            f.add(os.path.join(fr, x), x)
+
+    os.rename(to + '.tmp', to)
 
 
 def fetch_url_data(url):

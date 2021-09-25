@@ -26,25 +26,23 @@ export PKG_CONFIG_PATH=
 export PYTHONPATH=
 export PYTHONDONTWRITEBYTECODE=1
 
-export TMPDIR=${tmp}/tmp
-
 rm -rf ${out} || true
 mkdir -p ${out}
-
-{% block fetch_cached_pkg %}
-cd ${out}
-
-if ${exe} ${mix} misc fetch https://storage.yandexcloud.net/mix-cache/cache/pkg/${uid}; then
-    ${exe} ${mix} misc untar ${uid}
-
-    exit 0
-fi
-{% endblock %}
 
 rm -rf ${tmp} || true
 mkdir -p ${tmp}
 
 cd ${tmp} && mkdir tmp
+
+export TMPDIR=${PWD}/tmp
+
+{% block fetch_cached_pkg %}
+if ${exe} ${mix} misc fetch https://storage.yandexcloud.net/mix-cache/cache/pkg/${uid}; then
+    cd ${out} && ${exe} ${mix} misc untar ${tmp}/${uid}
+
+    exit 0
+fi
+{% endblock %}
 
 line=
 OFS=${IFS}
@@ -63,14 +61,10 @@ done
 
 IFS=${OFS}
 
-set -x
-
 # suc
 {% block sh_script %}
 {% endblock %}
 # euc
-
-set +x
 
 rm -rf ${out}/lib/*.so* ${out}/lib/*.la* ${out}/lib/*.dylib* || true
 
