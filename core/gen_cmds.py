@@ -156,10 +156,7 @@ def cmd_fetch(sb, ui):
 
 
 def cmd_link_script(sb, files, out):
-    def iter_env():
-        yield 'out', out
-
-    return sb.build_py_script(LINK_SRCS_SCRIPT, dict(iter_env()), files)
+    return sb.build_py_script(LINK_SRCS_SCRIPT, dict(out=out), files)
 
 
 def cmd_link(sb, extra):
