@@ -36,14 +36,6 @@ cd ${tmp} && mkdir tmp
 
 export TMPDIR=${PWD}/tmp
 
-{% block fetch_cached_pkg %}
-if ${exe} ${mix} misc fetch https://storage.yandexcloud.net/mix-cache/cache/pkg/${uid}; then
-    cd ${out} && ${exe} ${mix} misc untar ${tmp}/${uid}
-
-    exit 0
-fi
-{% endblock %}
-
 line=
 OFS=${IFS}
 
@@ -67,12 +59,6 @@ IFS=${OFS}
 # euc
 
 rm -rf ${out}/lib/*.so* ${out}/lib/*.la* ${out}/lib/*.dylib* || true
-
-{% block cache_pkg %}
-${exe} ${mix} misc tar ${out} ${tmp}/${uid}
-${exe} ${mix} cache upload ${tmp}/${uid} pkg/${uid}
-{% endblock %}
-
 rm -rf ${tmp}
 
 {% block sh_script_end %}

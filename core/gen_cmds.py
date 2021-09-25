@@ -23,26 +23,21 @@ atexit.register(mix.footer)
 FETCH_SRC_SCRIPT = '''
 import sys
 
-md5 = sys.argv[-1]
-out = sys.argv[-2]
+mix.fetch_url(sys.argv[-2], sys.argv[-1])
+'''.strip()
 
-def fetch():
-    for url in sys.argv[1:-2]:
-        try:
-            mix.fetch_url(url, out)
 
-            return True
-        except Exception as e:
-            print(f'fetch failed: {e}')
+CHECK_MD5_SCRIPT = '''
+import os
+import sys
 
-try:
-    if not fetch():
-        raise Exception(f'all attemps failed')
+old = sys.argv[1]
+new = sys.argv[2]
+md5 = sys.argv[3]
 
-    mix.check_md5(out, md5)
-except Exception as e:
-    print(f'can not fetch {out}: {e}')
-    sys.exit(1)
+print(f'check {old} checksum, expect {md5}')
+mix.check_md5(old, md5)
+os.link(old, new)
 '''.strip()
 
 
@@ -50,9 +45,11 @@ LINK_SRCS_SCRIPT = '''
 import sys
 import os
 
-os.chdir(os.environ['out'])
+out = os.environ['out']
+os.chdir(out)
 
 for f in sys.argv[1:]:
+    print(f'link {f} into {out}')
     os.link(f, os.path.basename(f))
 '''.strip()
 
@@ -81,30 +78,14 @@ class CmdBuild:
         self.package = package
 
     def script(self, sb, src_dir):
-        def iter_env():
-            yield from self.iter_env()
-
-            if src_dir:
-                yield 'src', src_dir
-
-            uid = self.package.uid
-
-            yield 'uid', uid
-            yield 'out', self.package.out_dir
-            yield 'tmp', self.package.config.build_dir + '/tmp-' + uid
-            yield 'mix', self.package.config.binary
-            yield 'exe', sys.executable
-
-            yield 'make_thrs', str(multiprocessing.cpu_count() + 2)
-
         build = self.package.descr['build']['script']
 
         return {
             'sh': sb.build_sh_script,
             'py': sb.build_py_script,
-        }[build['kind']](build['data'], dict(iter_env()))
+        }[build['kind']](build['data'], dict(self.iter_env(src_dir)))
 
-    def iter_env(self):
+    def iter_env(self, src_dir):
         path = ['/nowhere']
 
         for p in self.package.iter_all_build_depends():
@@ -116,27 +97,42 @@ class CmdBuild:
 
         yield 'PATH', ':'.join(path)
 
+        if src_dir:
+            yield 'src', src_dir
 
-def cmd_fetch_script(sb, urls, out, md5):
-    path = os.path.join(sb.config.store_dir, cu.struct_hash([urls, md5, out]), out)
+        uid = self.package.uid
 
-    def iter_env():
-        yield 'out', os.path.dirname(path)
+        yield 'uid', uid
+        yield 'out', self.package.out_dir
+        yield 'tmp', self.package.config.build_dir + '/' + uid
+        yield 'mix', self.package.config.binary
+        yield 'exe', sys.executable
 
-    return sb.build_py_script(FETCH_SRC_SCRIPT, dict(iter_env()), urls + [path, md5])
+        yield 'make_thrs', str(multiprocessing.cpu_count() + 2)
 
 
-def cmd_fetch(sb, ui):
-    md5 = ui.get('md5', '')
-    url = ui['url']
-    urls = ['https://storage.yandexcloud.net/mix-cache/cache/src/' + md5, url]
-    script = cmd_fetch_script(sb, urls, os.path.basename(url), md5)
-    path = script['args'][-2]
+def cmd_fetch(sb, url):
+    out_dir = os.path.join(sb.config.store_dir, cu.struct_hash([url, FETCH_SRC_SCRIPT]))
+    path = os.path.join(out_dir, os.path.basename(url))
+    script = sb.build_py_script(FETCH_SRC_SCRIPT, dict(out=out_dir), [url, path])
 
     return {
-        'out_dir': [os.path.dirname(path)],
+        'out_dir': [out_dir],
         'cmd': [script],
         'path': path,
+    }
+
+
+def cmd_check(sb, path, md5):
+    out_dir = os.path.join(sb.config.store_dir, cu.struct_hash([path, CHECK_MD5_SCRIPT]))
+    new_path = os.path.join(out_dir, os.path.basename(path))
+    script = sb.build_py_script(CHECK_MD5_SCRIPT, dict(out=out_dir), [path, new_path, md5])
+
+    return {
+        'in_dir': [os.path.dirname(path)],
+        'out_dir': [out_dir],
+        'cmd': [script],
+        'path': new_path,
     }
 
 
@@ -145,7 +141,7 @@ def cmd_link_script(sb, files, out):
 
 
 def cmd_link(sb, extra):
-    out_dir = os.path.join(sb.config.store_dir, cu.struct_hash(extra))
+    out_dir = os.path.join(sb.config.store_dir, cu.struct_hash([extra, LINK_SRCS_SCRIPT]))
     script = cmd_link_script(sb, [x['path'] for x in extra], out_dir)
 
     return {
@@ -155,30 +151,33 @@ def cmd_link(sb, extra):
     }
 
 
-def cmd_empty(sb, out):
-    script = sb.build_py_script('', dict(out=out))
-
-    return {
-        'out_dir': [script['env']['out']],
-        'cmd': [script],
-    }
-
-
 def iter_build_commands(self):
     sb = ScriptBuilder(self.config)
-    cb = CmdBuild(self)
+    out_dir = self.out_dir
 
     if not self.buildable():
-        yield cmd_empty(sb, cb.package.out_dir)
+        yield {
+            'out_dir': [out_dir],
+            'cmd': [sb.build_py_script('', dict(out=out_dir))],
+        }
 
         return
 
     urls = self.descr['build'].get('fetch', [])
 
     if urls:
-        extra = [cmd_fetch(sb, ui) for ui in urls]
+        extra = []
 
-        yield from extra
+        for ui in urls:
+            f = cmd_fetch(sb, ui['url'])
+
+            yield f
+
+            c = cmd_check(sb, f['path'], ui['md5'])
+
+            yield c
+
+            extra.append(c)
 
         cmd = cmd_link(sb, extra)
 
@@ -192,6 +191,6 @@ def iter_build_commands(self):
 
     yield {
         'in_dir': [x.out_dir for x in self.iter_all_build_depends()] + extra,
-        'out_dir': [self.out_dir],
-        'cmd': [cb.script(sb, src_dir)],
+        'out_dir': [out_dir],
+        'cmd': [CmdBuild(self).script(sb, src_dir)],
     }

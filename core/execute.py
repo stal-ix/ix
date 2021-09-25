@@ -1,25 +1,15 @@
 import os
-
-try:
-    import beautysh
-
-    def bsh(s):
-        return beautysh.Beautify().beautify_string(s)[0]
-except ImportError:
-    def bsh(s):
-        return s
-
 import itertools
 import subprocess
+
+import beautysh
 
 import core.error as ce
 import core.par_exec as cp
 
 
-def mine_secrets():
-    for x, y in os.environ.items():
-        if x.startswith('AWS_'):
-            yield x, y
+def bsh(s):
+    return beautysh.Beautify().beautify_string(s)[0]
 
 
 def execute_cmd(c):
@@ -31,10 +21,9 @@ def execute_cmd(c):
         descr = str(c)
 
     stdin = c.get('stdin', '')
-    secret_env = dict(itertools.chain(env.items(), mine_secrets()))
 
     try:
-        return subprocess.run(c['args'], input=stdin.encode() or None, env=secret_env, check=True)
+        return subprocess.run(c['args'], input=stdin.encode() or None, env=env, check=True)
     except Exception as e:
         def iter_lines():
             yield '____|' + descr
@@ -137,31 +126,5 @@ def incomplete_nodes(g):
 
 
 def execute(g):
-    if 1:
-        for n in incomplete_nodes(g):
-            execute_node(n)
-
-        return
-
-    by_uid = {}
-    by_out = {}
-
-    for i, n in enumerate(incomplete_nodes(g)):
-        by_uid[i] = {'uid': i, 'n': n}
-
-        for o in iter_out(n):
-            by_out[o] = i
-
-    def iter_deps(n):
-        for i in iter_in(n):
-            if i in by_out:
-                yield by_out[i]
-
-    for i in list(by_uid):
-        by_uid[i]['deps'] = list(iter_deps(by_uid[i]['n']))
-
-    class Builder(cp.Builder):
-        def build_command(self, n):
-           execute_node(n['n'])
-
-    Builder(list(by_uid.values())).build_parallel(2)
+    for n in incomplete_nodes(g):
+        execute_node(n)
