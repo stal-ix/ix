@@ -80,23 +80,6 @@ class CmdBuild:
     def __init__(self, package):
         self.package = package
 
-    @property
-    def config(self):
-        return self.package.config
-
-    @property
-    def name(self):
-        return self.package.name
-
-    @property
-    def uid(self):
-        return self.package.uid
-
-    @property
-    @cu.cached_method
-    def tmp_dir(self):
-        return self.config.build_dir + '/tmp-' + self.uid
-
     def script(self, sb, src_dir):
         def iter_env():
             yield from self.iter_env()
@@ -104,10 +87,12 @@ class CmdBuild:
             if src_dir:
                 yield 'src', src_dir
 
-            yield 'uid', self.uid
+            uid = self.package.uid
+
+            yield 'uid', uid
             yield 'out', self.package.out_dir
-            yield 'tmp', self.tmp_dir
-            yield 'mix', self.config.binary
+            yield 'tmp', self.package.config.build_dir + '/tmp-' + uid
+            yield 'mix', self.package.config.binary
             yield 'exe', sys.executable
 
             yield 'make_thrs', str(multiprocessing.cpu_count() + 2)
