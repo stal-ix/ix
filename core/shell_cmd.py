@@ -23,16 +23,6 @@ def untar(path):
         f.extractall()
 
 
-def tar(fr, to):
-    print(f'tar {fr} into {to}')
-
-    with tarfile.open(to + '.tmp', 'x:xz') as f:
-        for x in os.listdir(fr):
-            f.add(os.path.join(fr, x), x)
-
-    os.rename(to + '.tmp', to)
-
-
 def fetch_url_data(url):
     ssl._create_default_https_context = ssl._create_unverified_context
 

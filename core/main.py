@@ -12,13 +12,7 @@ CLIS = [
     ('core.build_cmd', 'build', False),
 
     ('core.gc_cmd', 'gc', False),
-    ('core.sh_cmd', 'sh', True),
 
-    ('core.cache_cmd', 'cache_all', True),
-    ('core.cache_cmd', 'cache_url', True),
-    ('core.cache_cmd', 'cache_upload', True),
-
-    ('core.misc_cmd', 'misc_tar', True),
     ('core.misc_cmd', 'misc_untar', True),
     ('core.misc_cmd', 'misc_runpy', True),
     ('core.misc_cmd', 'misc_unzip', True),

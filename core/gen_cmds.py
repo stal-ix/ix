@@ -120,6 +120,7 @@ def cmd_fetch(sb, url):
         'out_dir': [out_dir],
         'cmd': [script],
         'path': path,
+        'cache': True,
     }
 
 
@@ -193,4 +194,5 @@ def iter_build_commands(self):
         'in_dir': [x.out_dir for x in self.iter_all_build_depends()] + extra,
         'out_dir': [out_dir],
         'cmd': [CmdBuild(self).script(sb, src_dir)],
+        'cache': True,
     }

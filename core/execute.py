@@ -91,6 +91,14 @@ def execute_node(n):
         if not os.path.isfile(i):
             raise Exception(f'{i} not ready')
 
+    cached = n.get('cache', False)
+
+    if cached:
+        for d in n['out_dir']:
+            restore_cache(d)
+
+        return
+
     for c in iter_cmd(n):
         execute_cmd(c)
 

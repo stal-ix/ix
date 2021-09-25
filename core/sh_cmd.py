@@ -1,9 +1,5 @@
 import os
 
-import core.error as ce
-import core.manager as cm
-import core.cmd_line as cc
-
 
 class Error(Exception):
     def __init__(self, slave, line, lineno):
@@ -23,9 +19,6 @@ def tokens(s):
 
 
 class Parser:
-    def __init__(self):
-        pass
-
     def parse(self, s):
         body = ''
         keys = {}
@@ -131,84 +124,3 @@ class Parser:
 
 def parse(s):
     return Parser().parse(s)
-
-
-def gen_sh(p):
-    d = p.descr
-
-    fetch = []
-    lib = []
-    dep = []
-    run = []
-    script = ''
-
-    if 'build' in d:
-        b = d['build']
-
-        if 'script' in b:
-            script = b['script']['data']
-
-        if 'fetch' in b:
-            fetch.extend(b['fetch'])
-
-        if 'depends' in b:
-            dep.extend(b['depends'])
-
-    if 'runtime' in d:
-        r = d['runtime']
-
-        if 'depends' in r:
-            run.extend(r['depends'])
-
-    common = frozenset(dep) & frozenset(run)
-
-    def iter_lib():
-        for d in dep:
-            if d in common:
-                yield d
-
-    lib = list(iter_lib())
-
-    def iter_dep():
-        for d in dep:
-            if d not in common:
-                yield d
-
-    dep = list(iter_dep())
-
-    def iter_run():
-        for d in run:
-            if d not in common:
-                yield d
-
-    run = list(iter_run())
-
-    def iter_lines():
-        for f in fetch:
-            yield '# url ' + f['url']
-            yield '# md5 ' + f['md5']
-
-        if lib:
-            yield '# lib ' + ' '.join(lib)
-
-        if dep:
-            yield '# bld ' + ' '.join(dep)
-
-        if run:
-            yield '# run ' + ' '.join(run)
-
-        if script:
-            yield ''
-
-            yield 'build() {'
-            yield script.strip()
-            yield '}'
-
-    return '\n'.join(iter_lines())
-
-
-def cli_sh(ctx):
-    config, pkgs = cc.parse_pkgs(ctx)
-
-    for p in pkgs:
-        print(gen_sh(cm.Manager(config).load_package(p)))

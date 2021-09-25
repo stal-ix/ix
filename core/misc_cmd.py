@@ -76,12 +76,6 @@ def cli_misc_untar(ctx):
         csc.untar(a)
 
 
-def cli_misc_tar(ctx):
-    a = ctx['args']
-
-    csc.tar(a[0], a[1])
-
-
 def cli_misc_unzip(ctx):
     for a in ctx['args']:
         csc.unzip(a)
