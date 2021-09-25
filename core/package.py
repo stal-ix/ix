@@ -6,6 +6,7 @@ import multiprocessing
 import core.sh_cmd as cs
 import core.utils as cu
 import core.error as ce
+import core.gen_cmds as cg
 
 
 class FileLoader:
@@ -33,139 +34,6 @@ def exec_mod(text, iface):
     return g['package'](iface)
 
 
-BUILD_PY_SCRIPT = '''
-import atexit
-
-mix.header()
-atexit.register(mix.footer)
-
-# suc
-{build_script}
-# euc
-'''.strip()
-
-
-FETCH_SRC_SCRIPT = '''
-import sys
-
-md5 = sys.argv[-1]
-out = sys.argv[-2]
-
-def fetch():
-    for url in sys.argv[1:-2]:
-        try:
-            mix.fetch_url(url, out)
-
-            return True
-        except Exception as e:
-            print(f'fetch failed: {e}')
-
-try:
-    if not fetch():
-        raise Exception(f'all attemps failed')
-
-    mix.check_md5(out, md5)
-except Exception as e:
-    print(f'can not fetch {out}: {e}')
-    sys.exit(1)
-'''.strip()
-
-
-LINK_SRCS_SCRIPT = '''
-import sys
-import os
-
-os.chdir(os.environ['out'])
-
-for f in sys.argv[1:]:
-    os.link(f, os.path.basename(f))
-'''.strip()
-
-
-class ScriptBuilder:
-    def __init__(self, config):
-        self.config = config
-
-    def build_sh_script(self, data, env):
-        return {
-            'args': ['dash', '-s'],
-            'stdin': data,
-            'env': env,
-        }
-
-    def build_py_script(self, data, env, args=[]):
-        return {
-            'args': [sys.executable, self.config.binary, 'misc', 'runpy'] + args,
-            'stdin': BUILD_PY_SCRIPT.replace('{build_script}', data),
-            'env': env,
-        }
-
-
-class CmdBuild:
-    def __init__(self, package):
-        self.package = package
-
-    @property
-    def config(self):
-        return self.package.config
-
-    @property
-    def name(self):
-        return self.package.name
-
-    @property
-    @cu.cached_method
-    def out_dir(self):
-        return self.config.store_dir + '/' + self.uid + '-' + self.name.replace('/', '-')
-
-    @property
-    @cu.cached_method
-    def tmp_dir(self):
-        return self.config.build_dir + '/' + self.uid
-
-    def src_dir_for(self, url):
-        return self.config.store_dir + '/' + cu.struct_hash(url)
-
-    @property
-    def src_dir(self):
-        return self.src_dir_for(self.package.descr['build']['fetch'])
-
-    def build_script(self):
-        def iter_env():
-            yield from self.iter_env()
-
-            if 'fetch' in self._d['build']:
-                yield 'src', self.src_dir
-
-            yield 'uid', self.uid
-            yield 'out', self.out_dir
-            yield 'tmp', self.tmp_dir
-            yield 'mix', self.config.binary
-            yield 'exe', sys.executable
-
-            yield 'make_thrs', str(multiprocessing.cpu_count() + 2)
-
-        build = self.package.descr['build']['script']
-        sb = ScriptBuilder(self.config)
-
-        return {
-            'sh': sb.build_sh_script,
-            'py': sb.build_py_script,
-        }[build['kind']](build['data'], dict(iter_env()))
-
-    def iter_env(self):
-        path = ['/nowhere']
-
-        for p in self.package.iter_all_build_depends():
-            od = p.out_dir
-
-            yield p.name.replace('-', '_').replace('/', '_'), od
-
-            path.append(od + '/bin')
-
-        yield 'PATH', ':'.join(path)
-
-
 def compile_sh(script):
     return cs.parse(script)
 
@@ -186,9 +54,9 @@ class Package:
 
         try:
             try:
-                self._d = exec_mod(self.template('package.py'), self)
+                self.descr = exec_mod(self.template('package.py'), self)
             except FileNotFoundError:
-                self._d = compile_sh(self.template('package.sh'))
+                self.descr = compile_sh(self.template('package.sh'))
         except FileNotFoundError as e:
             raise ce.Error(f'can not load {self.name}', exception=e)
         except cs.Error as e:
@@ -197,7 +65,10 @@ class Package:
 
             raise ce.Error(text, context=context, exception=e.slave)
 
-        self._u = cu.struct_hash([self._d, list(self.iter_env())])
+        self.uid = cu.struct_hash({
+            'descr': self.descr,
+            'deps': [x.out_dir for x in self.iter_all_build_depends()],
+        })
 
     @property
     def flags(self):
@@ -254,10 +125,6 @@ class Package:
         return self.config.platform
 
     @property
-    def descr(self):
-        return self._d
-
-    @property
     def name(self):
         return self.selector['name']
 
@@ -279,8 +146,9 @@ class Package:
         return FileLoader(self)
 
     @property
-    def uid(self):
-        return self._u
+    @cu.cached_method
+    def out_dir(self):
+        return self.config.store_dir + '/' + self.uid + '-' + self.name.replace('/', '-')
 
     def load_package(self, selector):
         try:
@@ -356,89 +224,8 @@ class Package:
 
         return cu.uniq_list(iter_deps())
 
-    def fetch_src_script(self, urls, out, md5):
-        path = os.path.join(self.src_dir_for([out, md5]), out)
-
-        def iter_env():
-            yield from self.iter_env()
-
-            yield 'out', os.path.dirname(path)
-
-        return self.build_py_script(FETCH_SRC_SCRIPT, dict(iter_env()), urls + [path, md5])
-
-    def empty_script(self):
-        return self.build_py_script('', dict(out=self.out_dir))
-
-    def empty_command(self):
-        script = self.empty_script()
-
-        return {
-            'out_dir': [script['env']['out']],
-            'cmd': [script],
-        }
-
-    def link_srcs_script(self, files, out):
-        def iter_env():
-            yield from self.iter_env()
-
-            yield 'out', out
-
-        return self.build_py_script(LINK_SRCS_SCRIPT, dict(iter_env()), files)
-
-    def buildable(self):
-        try:
-            self.descr['build']['script']
-        except KeyError:
-            return False
-
-        return True
-
-    def iter_commands(self):
-        if not self.buildable():
-            yield self.empty_command()
-
-            return
-
-        extra = []
-
-        for ui in self.descr['build'].get('fetch', []):
-            md5 = ui.get('md5', '')
-            url = ui['url']
-            urls = ['https://storage.yandexcloud.net/mix-cache/cache/src/' + md5, url]
-            script = self.fetch_src_script(urls, os.path.basename(url), md5)
-            path = script['args'][-2]
-
-            cmd = {
-                'out_dir': [os.path.dirname(path)],
-                'cmd': [script],
-                'path': path,
-            }
-
-            yield cmd
-
-            extra.append(cmd)
-
-        if extra:
-            script = self.link_srcs_script([x['path'] for x in extra], self.src_dir)
-
-            cmd = {
-                'in_dir': sum([x['out_dir'] for x in extra], []),
-                'out_dir': [script['env']['out']],
-                'cmd': [script],
-            }
-
-            yield cmd
-
-            extra = cmd['out_dir']
-
-        yield {
-            'in_dir': [x.out_dir for x in self.iter_all_build_depends()] + extra,
-            'out_dir': [self.out_dir],
-            'cmd': [self.build_script()],
-        }
-
     def commands(self):
-        return list(self.iter_commands())
+        return list(cg.iter_build_commands(self))
 
     def install(self, to):
         fr = self.out_dir
@@ -460,3 +247,11 @@ class Package:
                 pass
 
             os.symlink(os.path.join(fr, x), p)
+
+    def buildable(self):
+        try:
+            self.descr['build']['script']
+
+            return True;
+        except KeyError:
+            pass
