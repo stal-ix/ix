@@ -36,7 +36,8 @@ def compress_dir(d):
 
 
 def path_hash(d):
-    return cu.struct_hash([1, d])
+    # if you want uniqness for path, encode path in basename
+    return cu.struct_hash([1, os.path.basename(d)])
 
 
 def store_dir(d):

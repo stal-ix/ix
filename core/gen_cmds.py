@@ -112,6 +112,7 @@ class CmdBuild:
 
 
 def cmd_fetch(sb, url):
+    # do not encode full path to output, for proper caching
     out_dir = os.path.join(sb.config.store_dir, cu.struct_hash([url, FETCH_SRC_SCRIPT]))
     path = os.path.join(out_dir, os.path.basename(url))
     script = sb.build_py_script(FETCH_SRC_SCRIPT, dict(out=out_dir), [url, path])
