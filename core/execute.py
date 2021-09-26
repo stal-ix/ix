@@ -1,10 +1,10 @@
 import os
+import beautysh
 import itertools
 import subprocess
 
-import beautysh
-
 import core.error as ce
+import core.cache as cc
 import core.par_exec as cp
 
 
@@ -94,10 +94,14 @@ def execute_node(n):
     cached = n.get('cache', False)
 
     if cached:
-        for d in n['out_dir']:
-            restore_cache(d)
+        try:
+            for d in n['out_dir']:
+                cc.restore_dir(d)
 
-        return
+            return
+        except Exception as e:
+            if '404' not in str(e):
+                raise e
 
     for c in iter_cmd(n):
         execute_cmd(c)
@@ -106,6 +110,10 @@ def execute_node(n):
         if not os.path.isfile(o):
             with open(o, 'w') as f:
                 pass
+
+    if cached:
+        for d in n['out_dir']:
+            cc.store_dir(d)
 
 
 def incomplete_nodes(g):
