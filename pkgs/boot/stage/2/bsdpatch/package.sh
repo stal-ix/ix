@@ -9,7 +9,10 @@
 # bld boot/stage/2/shutil boot/stage/1/env
 {% endblock %}
 
+{% block preconf %}
+{% endblock %}
+
 {% block build %}
 mkdir -p ${out}/bin
-clang ${CPPFLAGS} ${CFLAGS} ${LDFLAGS} *.c -o ${out}/bin/patch
+clang ${CPPFLAGS} ${CFLAGS} ${LDFLAGS} patch/*.c -o ${out}/bin/patch
 {% endblock %}

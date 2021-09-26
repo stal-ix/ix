@@ -39,30 +39,40 @@ export LIBDIR=${out}/lib
 export UCBINST=install
 export MANINST=install
 
-export PATH="$DEFBIN:${PATH}"
-export MAKE="make RANLIB=$RANLIB"
+export PATH="${DEFBIN}:${PATH}"
+export MAKE="make RANLIB=${RANLIB}"
+
+>malloc.h
+
+export CPPFLAGS="-I${PWD} ${CPPFLAGS}"
 
 cd heirloom
 
 (
+    set -eu
+
     cd libcommon
 
     >CHECK
     >malloc.h
 
     $MAKE -f Makefile.mk
-)
+) || exit 1
 
 export PRFLAGS="${LDFLAGS}"
-export LDFLAGS="../libcommon/asciitype.o ../libcommon/getdir.o ../libcommon/getopt.o ../libcommon/gmatch.o ../libcommon/ib_alloc.o ../libcommon/ib_close.o ../libcommon/ib_free.o ../libcommon/ib_getlin.o ../libcommon/ib_getw.o ../libcommon/ib_open.o ../libcommon/ib_popen.o ../libcommon/ib_read.o ../libcommon/ib_seek.o ../libcommon/pathconf.o ../libcommon/pfmt_label.o ../libcommon/pfmt.o ../libcommon/regexpr.o ../libcommon/setlabel.o ../libcommon/setuxlabel.o ../libcommon/sighold.o ../libcommon/sigignore.o ../libcommon/signal.o ../libcommon/sigpause.o ../libcommon/sigrelse.o ../libcommon/sigset.o ../libcommon/strtol.o ../libcommon/sysv3.o ../libcommon/utmpx.o ../libcommon/vpfmt.o $PRFLAGS"
+export LDFLAGS="../libcommon/asciitype.o ../libcommon/getdir.o ../libcommon/getopt.o ../libcommon/gmatch.o ../libcommon/ib_alloc.o ../libcommon/ib_close.o ../libcommon/ib_free.o ../libcommon/ib_getlin.o ../libcommon/ib_getw.o ../libcommon/ib_open.o ../libcommon/ib_popen.o ../libcommon/ib_read.o ../libcommon/ib_seek.o ../libcommon/pathconf.o ../libcommon/pfmt_label.o ../libcommon/pfmt.o ../libcommon/regexpr.o ../libcommon/setlabel.o ../libcommon/setuxlabel.o ../libcommon/sighold.o ../libcommon/sigignore.o ../libcommon/signal.o ../libcommon/sigpause.o ../libcommon/sigrelse.o ../libcommon/sigset.o ../libcommon/strtol.o ../libcommon/sysv3.o ../libcommon/utmpx.o ../libcommon/vpfmt.o {{'../libcommon/memalign.o' | darwin}} $PRFLAGS"
 
 (
+    set -eu
+
     cd rm && $MAKE -f Makefile.mk
-)
+) || exit 1
 
 (
+    set -eu
+
     cd mkdir && $MAKE -f Makefile.mk
-)
+) || exit 1
 
 for i in lib bin share man man/man1 man/man1b man/man2 man/man1n man/man1m; do
     mkdir/mkdir ${out}/$i
@@ -73,16 +83,20 @@ for i in $S42BIN $SUSBIN $SV3BIN $UCBBIN $SU3BIN; do
 done
 
 (
+    set -eu
+
     export PATH="${PWD}/rm:${PATH}"
     export LDFLAGS="../libcommon/*.o $PRFLAGS"
 
     cd cp && $MAKE -f Makefile.mk cp
-)
+) || exit 1
 
 cp/cp cp/cp ${out}/bin
 cp rm/rm ${out}/bin
 
 (
+    set -eu
+
     cd true
 
     clang ${CPPFLAGS} ${CFLAGS} ${LDFLAGS} -o ${out}/bin/true -x c - << EOF
@@ -96,34 +110,42 @@ int main() {
     return 1;
 }
 EOF
-)
+) || exit 1
 
 export STRIP=true
 
 (
+    set -eu
+
     cd _install && $MAKE -f Makefile.mk
-)
+) || exit 1
 
 cp _install/install_ucb ${out}/bin/install
 
 (
+    set -eu
+
     cd chmod && $MAKE -f Makefile.mk
-)
+) || exit 1
 
 cp chmod/chmod ${out}/bin
 
 export LNS=cp
 
 (
+    set -eu
+
     cd cp
 
     $MAKE LDFLAGS="../libcommon/*.o $PRFLAGS" -f Makefile.mk install
-)
+) || exit 1
 
 for i in rm mkdir _install chmod; do
     (
+        set -eu
+
         cd $i && $MAKE -f Makefile.mk install
-    )
+    ) || exit 1
 done
 
 export LNS=ln
@@ -131,24 +153,30 @@ export PATH="$DEFBIN:$UCBBIN:$SUSBIN:$S42BIN:$SV3BIN:$SU3BIN:${PATH}"
 
 for i in echo pwd env rmdir touch basename dirname chown wc tr ln xargs uniq time test tee tail head sort sleep; do
     (
-        cd $i && $MAKE CPPFLAGS="-Dmode_t=int ${CPPFLAGS}" -f Makefile.mk install
-    )
+        set -eu
+
+        cd $i && $MAKE CPPFLAGS="{{'-Dmode_t=int' | linux}} ${CPPFLAGS}" -f Makefile.mk install
+    ) || exit 1
 done
 
 {% if mix.platform.target.os == 'linux' %}
 echo 'extern void* memalign(size_t, size_t);' > libcommon/memalign.h
 
 (
+    set -eu
+
     cd libcommon && rm *.o *.a && $MAKE -f Makefile.mk
-)
+) || exit 1
 {% endif %}
 
 for i in cp cat copy; do
     (
+        set -eu
+
         cd $i
 
         $MAKE LDFLAGS="../libcommon/sfile.o ../libcommon/oblok.o ${LDFLAGS}" -f Makefile.mk install
-    )
+    ) || exit 1
 done
 
 export MAGIC="${out}/share/magic"
@@ -167,29 +195,37 @@ export CPPFLAGS="-I${PWD} ${CPPFLAGS}"
 
 for i in file find sed cksum cmp col cut dc df dircmp du ed expand fmt fold getopt hostname id join kill line logname mkfifo mknod nice nohup printenv printf uname whoami yes; do
     (
+        set -eu
+
         cd $i
 
         $MAKE PATH="${PATH}" LDFLAGS="${LDFLAGS}" -f Makefile.mk && $MAKE -f Makefile.mk install
-    )
+    ) || exit 1
 done
 
 (
-    export CPPFLAGS="-DUSE_TERMCAP=1 -D_AIX ${CPPFLAGS}"
+    set -eu
+
+    export CPPFLAGS="-DUSE_TERMCAP=1 {{'-D_AIX' | linux}} ${CPPFLAGS}"
     cd ls
     $MAKE LDFLAGS="${LDFLAGS}" -f Makefile.mk && $MAKE -f Makefile.mk install
-)
+) || exit 1
 
 (
+    set -eu
+
     export CPPFLAGS="-DEXTERN=extern ${CPPFLAGS}"
     cd diff
     $MAKE LDFLAGS="${LDFLAGS}" -f Makefile.mk && $MAKE -f Makefile.mk install
-)
+)|| exit 1
 
 (
+    set -eu
+
     cd ../heirloom-devtools/yacc
 
     $MAKE LDFLAGS="$PRFLAGS" -f Makefile.mk && $MAKE INSTALL=install -f Makefile.mk install
-)
+) || exit 1
 
 export YACC=yacc
 export PATH="$(pwd):${PATH}"
@@ -202,23 +238,31 @@ export CPPFLAGS="$PRCPPFLAGS"
 
 for i in bc expr factor grep; do
     (
+        set -eu
+
         cd $i && $MAKE PATH="${PATH}" LDFLAGS="${LDFLAGS}" -f Makefile.mk && $MAKE -f Makefile.mk install
-    )
+    ) || exit 1
 done
 
 (
+    set -eu
+
     cd ../heirloom-devtools/lex
 
     $MAKE LDFLAGS="$PRFLAGS" -f Makefile.mk && $MAKE INSTALL=install -f Makefile.mk install
-)
+) || exit 1
 
 (
+    set -eu
+
     cd libuxre
 
     $MAKE CPPFLAGS="-I. ${CFLAGS} ${CPPFLAGS}" -f Makefile.mk
-)
+) || exit 1
 
 (
+    set -eu
+
     cd nawk
 
     export LDFLAGS="../libuxre/libuxre.a ${LDFLAGS}"
@@ -227,7 +271,7 @@ done
 
     $MAKE LDFLAGS="${LDFLAGS}" -f Makefile.mk
     $MAKE -f Makefile.mk install
-)
+) || exit 1
 
 export PATH="${out}/tmp:${PATH}"
 
@@ -238,8 +282,10 @@ for p in "$SV3BIN" "$SU3BIN" "$S42BIN" "$SUSBIN" "$UCBBIN" "${out}/tmp"; do
 done
 
 (
+    set -eu
+
     cd ${out}/bin && ln -s nawk awk && rm dircmp
-)
+) || exit 1
 
 {% endblock %}
 
