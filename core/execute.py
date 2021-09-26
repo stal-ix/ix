@@ -76,71 +76,82 @@ def iter_cmd(c):
         yield from c['cmd']
 
 
-def check_complete(n):
-    for o in iter_out(n):
-        if os.path.exists(o):
-            print(o + ' complete')
-        else:
-            return False
+class Executor:
+    def __init__(self, g):
+        self.c = set()
 
-    return True
+        by_out = {}
 
+        for n in g['nodes']:
+            for o in iter_out(n):
+                by_out[o] = n
 
-def execute_node(n):
-    for i in iter_in(n):
-        if not os.path.isfile(i):
-            raise Exception(f'{i} not ready')
+        self.o = by_out
 
-    cached = n.get('cache', False)
+    def visit_all(self, l):
+        for n in l:
+            self.visit_node(self.o[n])
 
-    if cached:
+    def visit_node(self, n):
+        if all(self.exists(x) for x in iter_out(n)):
+            return
+
+        cached = n.get('cache', False)
+
+        if cached:
+            if self.load(n):
+                return
+
+        for x in iter_in(n):
+            self.visit_node(self.o[x])
+
+        self.execute_node(n)
+
+        if cached:
+            self.store(n)
+
+    def execute_node(self, n):
+        for i in iter_in(n):
+            if not self.exists(i):
+                raise ce.Error(f'{i} does not exixts')
+
+        for c in iter_cmd(n):
+            execute_cmd(c)
+
+        for o in iter_out(n):
+            if not os.path.isfile(o):
+                with open(o, 'w') as f:
+                    pass
+
+    def load(self, n):
         try:
             for d in n['out_dir']:
                 cc.restore_dir(d)
 
-            return
+            return True
         except Exception as e:
             if '404' not in str(e):
                 raise e
 
-    for c in iter_cmd(n):
-        execute_cmd(c)
+        return False
 
-    for o in iter_out(n):
-        if not os.path.isfile(o):
-            with open(o, 'w') as f:
-                pass
-
-    if cached:
+    def store(self, n):
         for d in n['out_dir']:
             cc.store_dir(d)
 
+    def exists(self, p):
+        if p in self.c:
+            return True
 
-def incomplete_nodes(g):
-    by_out = {}
+        if os.path.isfile(p):
+            print(f'{p} complete')
 
-    for n in g['nodes']:
-        for o in iter_out(n):
-            by_out[o] = n
+            self.c.add(p)
 
-    v = set()
+            return True
 
-    def visit(n):
-        if n not in v:
-            v.add(n)
-
-            t = by_out[n]
-
-            if not check_complete(t):
-                for x in iter_in(t):
-                    yield from visit(x)
-
-                yield t
-
-    for t in g['targets']:
-        yield from visit(t)
+        return False
 
 
 def execute(g):
-    for n in incomplete_nodes(g):
-        execute_node(n)
+    Executor(g).visit_all(g['targets'])

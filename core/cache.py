@@ -41,10 +41,19 @@ def path_hash(d):
 
 
 def store_dir(d):
-    store_cache(compress_dir(d), path_hash(d))
+    k = path_hash(d)
+
+    print(f'store {d} into {k}')
+
+    store_cache(compress_dir(d), k)
 
 
 def restore_dir(d):
+    k = path_hash(d)
+    u = f'https://storage.yandexcloud.net/mix-cache/cache/{k}'
+
+    print(f'load {u} into {d}')
+
     try:
         shutil.rmtree(d)
     except Exception:
@@ -52,7 +61,7 @@ def restore_dir(d):
 
     os.makedirs(d)
 
-    data = cs.fetch_url_data(f'https://storage.yandexcloud.net/mix-cache/cache/{path_hash(d)}')
+    data = cs.fetch_url_data(u)
 
     with tarfile.open(fileobj=io.BytesIO(data)) as tf:
         tf.extractall(d)
