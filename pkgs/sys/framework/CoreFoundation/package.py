@@ -1,5 +1,5 @@
 {% extends '//util/env.py' %}
 
 {% block env %}
-export LDFLAGS="-framework CoreFoundation $LDFLAGS"
+export LDFLAGS="-F${OSX_SDK}/System/Library/Frameworks -framework CoreFoundation ${LDFLAGS}"
 {% endblock %}

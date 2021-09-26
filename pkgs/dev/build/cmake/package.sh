@@ -11,6 +11,7 @@
 
 {% block deps %}
 # lib dev/build/samurai
+# bld {{'sys/framework/CoreFoundation' | darwin}}
 # bld lib/z lib/xz lib/uv lib/cxx lib/curl lib/bzip2
 # bld lib/expat lib/archive {{mix.if_linux('lib/linux')}}
 # bld env/std boot/final/env/tools

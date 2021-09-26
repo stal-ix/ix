@@ -12,6 +12,12 @@
 # bld env/std boot/final/env/tools
 {% endblock %}
 
+{% block toolconf %}
+{% if mix.platform.target.os == 'darwin' %}
+ln -s /usr/bin/arch ./
+{% endif %}
+{% endblock %}
+
 {% block patch %}
 sed -e 's/MULTIARCH=\$.*/MULTIARCH=/' \
     -i ./configure
@@ -24,6 +30,8 @@ sed -e 's/ffi_type ffi_type.*//'      \
 >Modules/_ctypes/malloc_closure.c
 {% endblock %}
 
+sed -e 's|/usr/bin/arch|arch|' -i ./configure
+
 sed -e 's|/usr|/eat/shit|' -i ./configure
 sed -e 's|/usr|/eat/shit|' -i ./setup.py
 sed -e 's|/usr|/eat/shit|' -i ./Makefile.pre.in
@@ -32,7 +40,7 @@ sed -e 's|/usr|/eat/shit|' -i ./Makefile.pre.in
 {% include 'fix.c/base64' %}
 EOF
 
-cat Modules/Setup | ./fix | sed -e 's|-l.*||' | grep -v capi | grep -v nis | grep -v readline > Modules/Setup.local
+cat Modules/Setup | ./fix | sed -e 's|-l.*||' | grep -v capi | grep -v nis | grep -v readline | grep -v spwd > Modules/Setup.local
 
 # some hand job
 cat << EOF >> Modules/Setup.local
