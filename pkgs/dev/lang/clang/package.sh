@@ -2,7 +2,9 @@
 
 {% block deps %}
 {% block extradeps %}
-# bld {{'lib/linux' | linux}} boot/final/cxx boot/final/env/clang
+# bld {{'lib/linux' | linux}}
+# bld {{'sys/framework/CoreFoundation' | darwin}}
+# bld boot/final/cxx boot/final/env/clang
 {% endblock %}
 # run env/clang env/lld/{{mix.platform.target.os}} env/compiler env/system
 {% endblock %}
