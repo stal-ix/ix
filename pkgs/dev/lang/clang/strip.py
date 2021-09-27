@@ -15,6 +15,7 @@ IN_USE = frozenset([
     'clang++',
     'clang-13',
     'clang-cpp',
+    'dsymutil',
     'llvm-ar',
     'llvm-as',
     'llvm-nm',

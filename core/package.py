@@ -3,126 +3,30 @@ import sys
 import jinja2
 import multiprocessing
 
-import core.sh_cmd as cs
 import core.utils as cu
 import core.error as ce
 import core.gen_cmds as cg
-
-
-class FileLoader:
-    def __init__(self, pkg):
-        self._p = pkg
-
-    def __getattr__(self, name):
-        fname = name.replace('_', '.')
-
-        return {
-            'kind': fname.split('.')[-1],
-            'data': self._p.template(fname),
-        }
+import core.render_ctx as cr
 
 
 def fmt_sel(s):
     return str(s)
 
 
-def exec_mod(text, iface):
-    g = {}
-
-    exec(text, g)
-
-    return g['package'](iface)
-
-
-def compile_sh(script):
-    return cs.parse(script)
-
-
-def cononize(v):
-    s = v.replace('\n', ' ').replace('\\', ' ').strip()
-
-    while '  ' in s:
-        s = s.replace('  ', ' ')
-
-    return s
-
-
 class Package:
     def __init__(self, selector, mngr):
         self.selector = selector
         self.manager = mngr
-
-        try:
-            try:
-                self.descr = exec_mod(self.template('package.py'), self)
-            except FileNotFoundError:
-                self.descr = compile_sh(self.template('package.sh'))
-        except FileNotFoundError as e:
-            raise ce.Error(f'can not load {self.name}', exception=e)
-        except cs.Error as e:
-            text = f'can not render {self.name}'
-            context = f'{e.lineno}: {e.line}'
-
-            raise ce.Error(text, context=context, exception=e.slave)
-
+        self.descr = cr.RenderContext(self).render()
         self.uid = cu.struct_hash({
             'descr': self.descr,
             'deps': [x.out_dir for x in self.iter_all_build_depends()],
         })
+        self.out_dir = self.config.store_dir + '/' + self.uid + '-' + self.name.replace('/', '-')
 
     @property
     def flags(self):
         return self.selector.get('flags', {})
-
-    def prepare_deps(self, v):
-        return cononize(v)
-
-    def dep_list(self, v, prefix):
-        def iter_lines():
-            for l in v.splitlines():
-                l = l.strip()
-
-                if l:
-                    yield '# ' + prefix + ' ' + l
-
-        return '\n'.join(iter_lines()).strip() + '\n'
-
-    @property
-    def os(self):
-        return self.platform['target']['os']
-
-    def if_linux(self, v):
-        return self.if_os(v, 'linux')
-
-    def if_darwin(self, v):
-        return self.if_os(v, 'darwin')
-
-    def if_os(self, v, os):
-        if self.os == os:
-            return v
-
-        return ''
-
-    def template(self, name):
-        path = os.path.join(self.name, name)
-        tmpl = self.manager.env.get_template(path)
-
-        try:
-            return self.strip_template(tmpl.render(mix=self))
-        except Exception as e:
-            raise ce.Error(f'can not render {path}', exception=e)
-
-    def strip_template(self, v):
-        vv = v.replace('\n\n\n', '\n\n')
-
-        if vv == v:
-            return v
-
-        return self.strip_template(vv)
-
-    @property
-    def platform(self):
-        return self.config.platform
 
     @property
     def name(self):
@@ -135,20 +39,6 @@ class Package:
     @property
     def where(self):
         return os.path.join(self.config.where, self.name)
-
-    @property
-    def urls(self):
-        return self.descr.get('build', {}).get('fetch', [])
-
-    @property
-    @cu.cached_method
-    def files(self):
-        return FileLoader(self)
-
-    @property
-    @cu.cached_method
-    def out_dir(self):
-        return self.config.store_dir + '/' + self.uid + '-' + self.name.replace('/', '-')
 
     def load_package(self, selector):
         try:
