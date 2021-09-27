@@ -10,6 +10,10 @@
 # bld dev/build/make env/c env/tools env/bootstrap
 {% endblock %}
 
+{% block postunpack %}
+cd cctools
+{% endblock %}
+
 {% block cflags %}
 export CPPFLAGS="-D__crashreporter_info__=__crashreporter_info_ld__ ${CPPFLAGS}"
 {% endblock %}
@@ -19,7 +23,7 @@ sed -e 's/__arm__/__eat_shit__/' -i configure
 {% endblock %}
 
 {% block coflags %}
---with-sysroot=$OSX_SDK
+--with-sysroot=${OSX_SDK}
 {% endblock %}
 
 {% block build %}
