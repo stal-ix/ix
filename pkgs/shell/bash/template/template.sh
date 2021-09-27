@@ -17,7 +17,6 @@ rm y.tab.* parser-built
 --without-bash-malloc
 --enable-extended-glob
 --enable-job-control
---enable-static-link
 --enable-prompt-string-decoding
 {% block bashflags %}{% endblock %}
 {% endblock %}

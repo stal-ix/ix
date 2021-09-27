@@ -3,6 +3,8 @@
 {% block deps %}
 # bld lib/intl lib/iconv lib/sigsegv
 # bld env/c tool/text/gnu/patch boot/final/env/tools
+{% block coreutils_deps_extra %}
+{% endblock %}
 {% endblock %}
 
 {% block fetch %}
@@ -17,9 +19,11 @@ export PATH="$(pwd)/src:${PATH}"
 
 {% block coflags %}
 --libexecdir="${out}/bin"
---without-gmp
 --enable-no-install-program=stdbuf
 --enable-single-binary=symlinks
+{% block coreutils_coflags_extra %}
+--without-gmp
+{% endblock %}
 {% endblock %}
 
 {% block postconf %}

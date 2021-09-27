@@ -6,7 +6,7 @@
 {% endblock %}
 
 {% block deps %}
-# bld lib/z lib/gdbm lib/iconv dev/build/make tool/gnu/coreutils shell/bash/minimal env/std
+# bld lib/z lib/gdbm lib/iconv dev/build/make tool/gnu/coreutils/8.32 shell/bash/minimal env/std
 {% endblock %}
 
 {% block cflags %}

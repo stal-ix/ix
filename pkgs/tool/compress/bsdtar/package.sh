@@ -1,5 +1,9 @@
 {% extends '//util/base.sh' %}
 
+{% block sh_script_begin %}
+export OSX_SDK=
+{% endblock %}
+
 {% block deps %}
 # bld lib/archive env/tools
 {% endblock %}

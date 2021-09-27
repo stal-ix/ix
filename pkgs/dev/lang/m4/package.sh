@@ -13,7 +13,7 @@
 
 {% block patch %}
 {% if mix.platform.target.os == 'darwin' %}
-patch -p0 < ${src}/secure_snprintf.patch
+#patch -p0 < ${src}/secure_snprintf.patch
 {% endif %}
 {% endblock %}
 
