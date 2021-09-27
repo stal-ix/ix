@@ -11,5 +11,4 @@
 
 {% block coreutils_coflags_extra %}
 --with-openssl=yes
---with-libgmp-prefix=${lib_gmp}
 {% endblock %}
