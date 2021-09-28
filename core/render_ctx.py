@@ -87,6 +87,10 @@ class RenderContext:
         return self.package.name
 
     @property
+    def flags(self):
+        return self.package.flags
+
+    @property
     def os(self):
         return self.platform['target']['os']
 

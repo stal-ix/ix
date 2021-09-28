@@ -21,7 +21,7 @@ set -x
 cd /mix && mkdir bootstrap && cd bootstrap
 
 python3 -m venv venv
-python3 -m pip install jinja2
+python3 -m pip install jinja2 beautysh boto3
 
 python3 /bootstrap/mix realm add stable \
     mix/mix \
