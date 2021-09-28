@@ -6,7 +6,8 @@
 {% endblock %}
 
 {% block deps %}
-# lib dev/lang/python3 pypi/pygments pypi/jinja2 shell/dash/minimal
+# lib dev/lang/python3 shell/dash/minimal
+# lib pypi/pygments pypi/jinja2 pypi/beautysh pypi/boto3
 # bld env/std
 {% endblock %}
 
@@ -26,5 +27,5 @@ chmod +x mix
 {% endblock %}
 
 {% block test %}
-python3 -c 'import jinja2; import pygments;'
+python3 -c 'import jinja2; import pygments; import boto3; import beautysh;'
 {% endblock %}

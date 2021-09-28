@@ -9,6 +9,9 @@ CLIS = [
     ('core.realm_cmd', 'realm_upgrade', False),
     ('core.realm_cmd', 'realm_list', False),
     ('core.realm_cmd', 'realm_purge', False),
+
+    ('core.pypi_cmd', 'pypi_gen', False),
+
     ('core.build_cmd', 'build', False),
 
     ('core.gc_cmd', 'gc', False),

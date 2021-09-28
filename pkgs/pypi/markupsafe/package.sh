@@ -17,7 +17,3 @@ ln -s Ma*/src/markupsafe ./
 {% block env %}
 export PYTHONPATH="${out}:\${PYTHONPATH}"
 {% endblock %}
-
-{% block test %}
-#PYTHONPATH="${out}:${PYTHONPATH}" python3 -c 'import markupsafe'
-{% endblock %}
