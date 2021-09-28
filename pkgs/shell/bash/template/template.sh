@@ -18,5 +18,8 @@ rm y.tab.* parser-built
 --enable-extended-glob
 --enable-job-control
 --enable-prompt-string-decoding
+{% if mix.platform.target.os == 'linux' %}
+--enable-static-link
+{% endif %}
 {% block bashflags %}{% endblock %}
 {% endblock %}
