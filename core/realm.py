@@ -89,8 +89,8 @@ def load_realm(mngr, name):
 
 
 def prepare_realm(mngr, name, pkgs):
-    mngr.build_packages(pkgs)
     handles = list(mngr.iter_runtime_packages(pkgs))
+    mngr.build_packages([p.selector for p in handles])
     uid = cu.struct_hash([10, name, pkgs] + cu.uniq_list([p.uid for p in handles]))
     path = os.path.join(mngr.config.store_dir, uid)
     touch = os.path.join(path, 'touch')
