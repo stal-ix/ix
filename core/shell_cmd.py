@@ -59,7 +59,9 @@ def fetch_url_impl(url, out):
 
 
 def fetch_url(url, out):
-    try:
-        return fetch_url_impl(url, out)
-    except ue.HTTPError as e:
-        raise ce.Error(f'can not fetch {url} into {out}', exception=e)
+    while True:
+        try:
+            return fetch_url_impl(url, out)
+        except Exception as e:
+            if '404' in str(e):
+                raise ce.Error(f'can not fetch {url} into {out}', exception=e)

@@ -1,11 +1,7 @@
+set -e
 set -x
 
 . /run/secrets/aws
-
-cat << EOF > /etc/resolv.conf
-nameserver 2001:4860:4860::6464
-nameserver 2001:4860:4860::64
-EOF
 
 adduser -h /mix -S -D mix
 
