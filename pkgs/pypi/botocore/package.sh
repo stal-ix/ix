@@ -7,3 +7,7 @@ https://files.pythonhosted.org/packages/59/06/e898175032e5f877cc44c83c0635d1e081
 {% block md5 %}
 76e322350c8df9ff5d0ae840763d9c05
 {% endblock %}
+
+{% block wheel_deps %}
+# run pypi/six pypi/dateutil pypi/urllib3
+{% endblock %}

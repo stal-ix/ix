@@ -5,5 +5,9 @@ https://files.pythonhosted.org/packages/36/c8/23a1c06e462cb107f29d741ffd8851bf54
 {% endblock %}
 
 {% block md5 %}
-2
+0edfde5715fcb643db59724c61365d0f
+{% endblock %}
+
+{% block wheel_deps %}
+# run pypi/setuptools
 {% endblock %}

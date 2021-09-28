@@ -21,8 +21,8 @@ python3 -m pip install jinja2 beautysh boto3
 
 python3 /bootstrap/mix realm add stable \
     mix/mix \
-        -Dmix_ver=f6a20ae2f0b711d2994ce6d14bb38fc267cee990 \
-        -Dmix_md5=27ab4a7cc5ae22aa18e8f3c393557652 \
+        -Dmix_ver=6c9a24864c2d68b9fde6368e2478abef5c6fa03f \
+        -Dmix_md5=27ab4a7cc5ae22aa18e8f3c3935576 \
     sys/linux/busybox
 
 mix realm upgrade

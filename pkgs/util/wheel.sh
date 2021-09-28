@@ -11,6 +11,9 @@
 {% endblock %}
 {% endblock %}
 
+{% block unpack %}
+{% endblock %}
+
 {% block build %}
 cd ${out} && mkdir module && cd module && ${untar} ${src}/*.whl
 {% endblock %}
