@@ -26,9 +26,7 @@ python3 /bootstrap/mix realm add stable mix/mix \
 mix realm upgrade
 mix realm upgrade
 
-mix realm add stable  \
-    sys/linux/busybox \
-    tool/curl
+mix realm add stable sys/linux/busybox
 
 mix gc
 EOF
