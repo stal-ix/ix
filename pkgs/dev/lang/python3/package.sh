@@ -73,15 +73,17 @@ export COFLAGS=$(echo "${COFLAGS}" | tr ' ' '\n' | grep -v 'with-system-ffi' | t
 {% endblock %}
 
 {% block test %}
-$out/bin/python3 -c 'import zlib; import multiprocessing; import cProfile;'
+${out}/bin/python3 -c 'import zlib; import multiprocessing; import cProfile;'
 {% block extra_tests %}
-$out/bin/python3 -c 'import hashlib; import ssl; import lzma; import bz2;'
+${out}/bin/python3 -c 'import hashlib; import ssl; import lzma; import bz2;'
 {% endblock %}
 {% endblock %}
 
 {% block postinstall %}
-rm -rf ${out}/lib/python*/config*
+rm -rf ${out}/lib/python*/config-*
 rm -rf ${out}/lib/python*/test
+
+${out}/bin/python3 -c 'import configparser;'
 
 find ${out} | grep __pycache__ | xargs rm -rf
 {% endblock %}
