@@ -136,8 +136,12 @@ class Executor:
         return False
 
     def store(self, n):
-        for d in n['out_dir']:
-            cc.store_dir(d)
+        try:
+            for d in n['out_dir']:
+                cc.store_dir(d)
+        except Exception as e:
+            if 'Unable to locate credentials' not in str(e):
+                raise e
 
     def exists(self, p):
         if p in self.c:

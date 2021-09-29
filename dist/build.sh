@@ -20,8 +20,8 @@ python3 -m venv venv
 python3 -m pip install jinja2 beautysh boto3
 
 python3 /bootstrap/mix realm add stable mix/mix \
-    -Dmix_ver=0f64ec97c3fac42909723c16289aeed99872cf15 \
-    -Dmix_md5=2f6f7a9f678696ed0913d54c4622b3ce
+    -Dmix_ver=956f440dc889656bb33c7269b79dbef2b855f4e4 \
+    -Dmix_md5=ba94917bff67c45b3c38412013404686
 
 mix realm upgrade
 mix realm upgrade
