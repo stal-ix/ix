@@ -5,7 +5,6 @@ import subprocess
 
 import core.error as ce
 import core.cache as cc
-import core.par_exec as cp
 
 
 def bsh(s):
