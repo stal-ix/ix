@@ -1,6 +1,9 @@
+import os
 import sys
 import profile
 import importlib
+
+import core.error as ce
 
 
 CLIS = [
@@ -47,7 +50,7 @@ def print_help():
             print('    ' + v.replace('_', ' '))
 
 
-def main(args, binary):
+def main_func(args, binary):
     hndl = find_handler(args)
 
     if not hndl:
@@ -66,3 +69,25 @@ def main(args, binary):
 
     #profile.runctx('run()', locals(), globals())
     run()
+
+
+def main(argv):
+    try:
+        main_func(argv[1:], os.path.dirname(os.path.normpath(os.path.abspath(__file__))))
+    except ce.Error as e:
+        if e.context:
+            if '\n' in e.context:
+                print(f'Context:\n{e.context}')
+            else:
+                print(f'Context: {e.context}')
+
+        if e.exception:
+            print(f'{e.exception.__class__.__name__}: {e.exception}')
+
+        print(f'{e}')
+
+        return 1
+    except KeyboardInterrupt:
+        return 1
+
+    return 0

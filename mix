@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 
-import os
 import sys
 import traceback
 
@@ -8,29 +7,5 @@ sys.dont_write_bytecode = True
 sys.excepthook = traceback.print_exception
 
 import core.main as cm
-import core.error as ce
 
-
-def main():
-    try:
-        cm.main(sys.argv[1:], os.path.normpath(os.path.abspath(__file__)))
-    except ce.Error as e:
-        if e.context:
-            if '\n' in e.context:
-                print(f'Context:\n{e.context}')
-            else:
-                print(f'Context: {e.context}')
-
-        if e.exception:
-            print(f'{e.exception.__class__.__name__}: {e.exception}')
-
-        print(f'{e}')
-
-        return 1
-    except KeyboardInterrupt:
-        return 1
-
-    return 0
-
-
-sys.exit(main())
+sys.exit(cm.main(sys.argv))
