@@ -71,9 +71,9 @@ def main_func(args, binary):
     run()
 
 
-def main(argv):
+def main(argv, mix):
     try:
-        main_func(argv[1:], os.path.dirname(os.path.normpath(os.path.abspath(__file__))))
+        main_func(argv[1:], mix)
     except ce.Error as e:
         if e.context:
             if '\n' in e.context:

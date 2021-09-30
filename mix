@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 
+import os
 import sys
 import traceback
 
@@ -8,4 +9,6 @@ sys.excepthook = traceback.print_exception
 
 import core.main as cm
 
-sys.exit(cm.main(sys.argv))
+
+if __name__ == '__main__':
+    sys.exit(cm.main(sys.argv, os.path.normpath(os.path.abspath(__file__))))
