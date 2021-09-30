@@ -2,7 +2,7 @@ import os
 
 import core.utils as cu
 import core.error as ce
-import core.sh_cmd as cs
+import core.parse_sh as cs
 
 
 class FileLoader:

@@ -3,7 +3,6 @@ import sys
 import jinja2
 import multiprocessing
 
-import core.sh_cmd as cs
 import core.utils as cu
 import core.error as ce
 
