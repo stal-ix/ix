@@ -6,7 +6,7 @@
 {% endblock %}
 
 {% block deps %}
-# bld env/std boot/final/env/tools
+# bld env/std tool/compress/minigzip boot/final/env/tools
 {% endblock %}
 
 {% block toolconf %}
@@ -15,6 +15,8 @@ cat << EOF > strip
 EOF
 
 chmod +x strip
+
+ln -s $(which minigzip) gzip
 {% endblock %}
 
 {% block coflags %}
