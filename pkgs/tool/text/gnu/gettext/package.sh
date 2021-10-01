@@ -10,10 +10,6 @@
 # bld dev/build/make tool/compress/minigzip env/std
 {% endblock %}
 
-{% block toolconf %}
-ln -s $(which minigzip) gzip
-{% endblock %}
-
 {% block coflags %}
 --with-installed-libtextstyle
 {% endblock %}

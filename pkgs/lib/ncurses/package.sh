@@ -15,8 +15,6 @@ cat << EOF > strip
 EOF
 
 chmod +x strip
-
-ln -s $(which minigzip) gzip
 {% endblock %}
 
 {% block coflags %}
