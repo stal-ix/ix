@@ -6,5 +6,6 @@
 {% endblock %}
 
 {% block deps %}
-# bld dev/lang/perl5 dev/build/autoconf dev/build/make env/std
+# lib dev/build/autoconf dev/lang/perl5 dev/lang/m4
+# bld dev/build/make env/std
 {% endblock %}

@@ -15,6 +15,10 @@
 export LIBS=$(echo "${LDFLAGS}" | tr ' ' '\n' | grep '^-l' | tr '\n' ' ')
 {% endblock %}
 
+{% block coflags %}
+--enable-manual
+{% endblock %}
+
 {% block env %}
 export CPPFLAGS="-I${out}/include \${CPPFLAGS}"
 export LDFLAGS="-L${out}/lib -lcurl \${LDFLAGS}"

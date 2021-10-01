@@ -7,13 +7,17 @@
 
 {% block deps %}
 # lib lib/intl lib/iconv lib/unistring
-# bld dev/build/make dev/build/pkg-config env/std
+# bld dev/build/automake/1.16.1 dev/build/make dev/build/pkg-config env/std
 {% endblock %}
 
 {% block cflags %}
 {% if mix.platform.target.os == 'darwin' %}
 export CPPFLAGS="-Derror=idna2_error ${CPPFLAGS}"
 {% endif %}
+{% endblock %}
+
+{% block prebuild %}
+automake --add-missing
 {% endblock %}
 
 {% block env %}

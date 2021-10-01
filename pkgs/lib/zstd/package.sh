@@ -10,12 +10,17 @@
 {% endblock %}
 
 {% block build %}
-(cd lib && make PREFIX=${out} -j ${make_thrs} install-static)
+(cd lib && make PREFIX=${out} -j ${make_thrs} install-static install-includes)
 (cd programs && make PREFIX=${out} -j ${make_thrs} install)
 {% endblock %}
 
 {% block env %}
+export COFLAGS="--with-zstd=${out} \${COFLAGS}"
 export CPPFLAGS="-I${out}/include \${CPPFLAGS}"
 export LDFLAGS="-L${out}/lib -lzstd \${LDFLAGS}"
 export PKG_CONFIG_PATH="${out}/lib/pkgconfig:\${PKG_CONFIG_PATH}"
+{% endblock %}
+
+{% block test %}
+test -f ${out}/include/zstd.h
 {% endblock %}
