@@ -9,10 +9,6 @@
 # bld dev/build/cmake env/std
 {% endblock %}
 
-{% block cmflags %}
--DBUILD_SHARED_LIBS=OFF
-{% endblock %}
-
 {% block env %}
 export CPPFLAGS="-I${out}/include \${CPPFLAGS}"
 export LDFLAGS="-L${out}/lib -lonig \${LDFLAGS}"

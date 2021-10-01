@@ -2,6 +2,7 @@
 
 {% block configure %}
 {% set cmflags %}
+-DBUILD_SHARED_LIBS=OFF
 {% block cmflags %}
 {% endblock %}
 {% endset %}

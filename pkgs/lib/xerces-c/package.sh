@@ -16,7 +16,6 @@ export CXXFLAGS="-w ${CXXFLAGS}"
 {% endblock %}
 
 {% block cmflags %}
--DBUILD_SHARED_LIBS=OFF
 -Dnetwork-accessor=curl
 -Dtranscoder=iconv
 -Dmessage-loader=inmemory
