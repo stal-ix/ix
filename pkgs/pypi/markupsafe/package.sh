@@ -10,10 +10,10 @@
 {% endblock %}
 
 {% block build %}
-cd ${out} && $untar $src/M*
+cd ${out} && mkdir module && cd module && ${untar} ${src}/M*
 ln -s Ma*/src/markupsafe ./
 {% endblock %}
 
 {% block env %}
-export PYTHONPATH="${out}:\${PYTHONPATH}"
+export PYTHONPATH="${out}/module:\${PYTHONPATH}"
 {% endblock %}

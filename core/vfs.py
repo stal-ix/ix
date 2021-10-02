@@ -2,11 +2,9 @@ import os
 
 
 class VFS:
-    def __init__(self, root):
-        self.root = root
-
-        with open(os.path.join(root, 'mount.py'), 'r') as f:
-            self.mod = exec(f.read(), self.__dict__)
+    def __init__(self, parent):
+        self.parent = parent
+        self.mod = exec(parent.serve('mount.py'), self.__dict__)
 
     def serve(self, path):
         return self.mod['serve'](path)
@@ -29,8 +27,20 @@ class FS:
             raise e
 
 
-def vfs(root):
+def load_vfs(root):
+    fs = FS(root)
+
     try:
-        return VFS(root)
+        return VFS(fs)
     except FileNotFoundError:
-        return FS(root)
+        return fs
+
+
+def vfs(root):
+    while True:
+        try:
+            return vfs.__cache__[root]
+        except AttributeError:
+            vfs.__cache__ = {}
+        except KeyError:
+            vfs.__cache__[root] = load_vfs(root)
