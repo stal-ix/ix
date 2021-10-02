@@ -17,4 +17,13 @@ dash ./autogen.sh
 --enable-all
 --enable-opensslextra
 --enable-opensslall
+--enable-base64encode
+--enable-pkcs11
+--enable-reproducible-build
+--enable-tls13
+{% endblock %}
+
+{% block env %}
+export CPPFLAGS="-I${out}/include \${CPPFLAGS}"
+export LDFLAGS="-L${out}/lib -lwolfssl \${LDFLAGS}"
 {% endblock %}
