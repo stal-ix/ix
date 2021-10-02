@@ -6,7 +6,7 @@
 {% endblock %}
 
 {% block deps %}
-# bld dev/build/automake/1.16.3 dev/build/libtool dev/build/make env/std
+# bld dev/build/automake/1.16.3 dev/build/make env/std
 {% endblock %}
 
 {% block preconf %}
