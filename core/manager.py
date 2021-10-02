@@ -15,7 +15,7 @@ class Manager:
     def __init__(self, config):
         self._c = config
         self._p = {}
-        self._e = cj.Env(cv.FS(config.where))
+        self._e = cj.Env(cv.vfs(config.where))
 
     @property
     def env(self):
