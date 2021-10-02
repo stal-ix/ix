@@ -6,7 +6,7 @@
 {% endblock %}
 
 {% block deps %}
-# bld lib/cxx dev/build/cmake env/std
+# bld lib/cxx env/std boot/final/env/tools
 {% endblock %}
 
 {% block env %}

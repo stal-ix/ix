@@ -8,7 +8,7 @@
 {% block deps %}
 # lib lib/z lib/c-ares lib/idn2 lib/zstd lib/brotli lib/nghttp2 lib/openssl
 # lib {{'sys/framework/SystemConfiguration' | darwin}}
-# bld dev/build/make dev/build/pkg-config env/std
+# bld dev/doc/groff dev/build/make dev/build/pkg-config env/std
 {% endblock %}
 
 {% block coflags %}
