@@ -1,8 +1,8 @@
 {% extends '//util/autohell.sh' %}
 
 {% block fetch %}
-# url https://github.com/curl/curl/releases/download/curl-7_78_0/curl-7.78.0.tar.xz
-# md5 419c2461366cf404160a820f7a902b7e
+# url https://github.com/curl/curl/releases/download/curl-7_79_1/curl-7.79.1.tar.xz
+# md5 74d3c4ca8aaa6c0619806d6e246e65fb
 {% endblock %}
 
 {% block deps %}

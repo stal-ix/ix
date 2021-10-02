@@ -12,5 +12,5 @@
 {% endblock %}
 
 {% block coflags %}
---with-slang=$lib_slang
+--with-slang=${lib_slang}
 {% endblock %}
