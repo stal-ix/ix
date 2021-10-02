@@ -1,5 +1,7 @@
+import os
+import sys
 import json
-import pprint
+import itertools
 
 import urllib.request as ur
 
@@ -23,5 +25,20 @@ def iter_recs(args):
                 }
 
 
-def cli_pypi_gen(ctx):
-    pprint.pprint(dict(iter_recs(ctx['args'])))
+def dict_merge(it):
+    res = {}
+
+    for k, v in it:
+        res[k] = dict(itertools.chain(res.get(k, {}).items(), v.items()))
+
+    return res
+
+
+def cli_pypi_update(ctx):
+    cur = json.loads(sys.stdin.read())
+    pkg = ctx['args']
+
+    if not pkg:
+        pkg = [os.path.dirname(x) for x in cur]
+
+    print(json.dumps(dict_merge(itertools.chain(cur.items(), iter_recs(pkg))), indent=4, sort_keys=True))

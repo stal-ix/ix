@@ -13,7 +13,7 @@ CLIS = [
     ('core.realm_cmd', 'realm_list', False),
     ('core.realm_cmd', 'realm_purge', False),
 
-    ('core.pypi_cmd', 'pypi_gen', False),
+    ('core.pypi_cmd', 'pypi_update', False),
 
     ('core.build_cmd', 'build', False),
 
