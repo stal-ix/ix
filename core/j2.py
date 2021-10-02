@@ -18,9 +18,9 @@ def j2_darwin(ctx, v):
 
 
 class Env(jinja2.Environment, jinja2.BaseLoader):
-    def __init__(self, where):
+    def __init__(self, vfs):
         jinja2.Environment.__init__(self, loader=self, auto_reload=False, keep_trailing_newline=True)
-        self.where = where
+        self.vfs = vfs
         self.filters["linux"] = j2_linux
         self.filters["darwin"] = j2_darwin
 
@@ -33,8 +33,7 @@ class Env(jinja2.Environment, jinja2.BaseLoader):
 
             return b64(d), n, f
 
-        with open(os.path.join(self.where, name)) as f:
-            return f.read().strip(), name, lambda: True
+        return self.vfs.serve(name).strip(), name, lambda: True
 
     def join_path(self, tmpl, parent):
         if tmpl.startswith('//'):

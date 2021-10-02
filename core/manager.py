@@ -3,6 +3,7 @@ import shutil
 import random
 
 import core.j2 as cj
+import core.vfs as cv
 import core.error as er
 import core.utils as cu
 import core.realm as cr
@@ -14,7 +15,7 @@ class Manager:
     def __init__(self, config):
         self._c = config
         self._p = {}
-        self._e = cj.Env(config.where)
+        self._e = cj.Env(cv.FS(config.where))
 
     @property
     def env(self):
