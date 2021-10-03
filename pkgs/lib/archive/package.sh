@@ -1,8 +1,8 @@
 {% extends '//util/autohell.sh' %}
 
 {% block fetch %}
-# url https://libarchive.org/downloads/libarchive-3.5.1.tar.xz
-# md5 1f8c29149832baff8bae232fd2f9b0ec
+# url https://libarchive.org/downloads/libarchive-3.5.2.tar.xz
+# md5 2ba9f1f8c169aa9caf8e2d34dde323be
 {% endblock %}
 
 {% block deps %}

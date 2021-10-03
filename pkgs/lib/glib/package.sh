@@ -28,18 +28,22 @@ echo 'int main() {}' > glib/tests/cxx.cpp
 echo 'int main() {}' > tests/cxx-test.cpp
 {% endblock %}
 
-{% block build %}
+{% block configure %}
 meson \
     --libdir=${out}/lib \
     -Ddefault_library=static \
     -Dprefix=${out} \
     -Diconv=external \
     _build {{'-Db_asneeded=false -Db_lundef=false' | darwin}}
+{% endblock %}
 
-cd _build
+{% block build %}
+cd _build && ninja -j ${make_thrs}
+{% endblock %}
 
-ninja -j ${make_thrs}
-ninja install
+{% block install %}
+cd _build && ninja install
+rm -rf ${out}/bin
 {% endblock %}
 
 {% block env %}

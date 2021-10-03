@@ -8,3 +8,7 @@
 {% block deps %}
 # bld env/c boot/final/env/tools
 {% endblock %}
+
+{% block postinstall %}
+rm -rf ${out}/lib ${out}/include
+{% endblock %}

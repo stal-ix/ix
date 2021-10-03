@@ -2,11 +2,11 @@
 
 {% block fetch %}
 # url https://github.com/elfmz/far2l/archive/b246b95118c0d7c6d10b4e94ec9b3bc7e24c3a7c.zip
-# md5 26e676988fa5b47ed211281e6140d371
+# md5 8fb228fd04476f5143163b9cca27366e
 {% endblock %}
 
 {% block deps %}
-# bld lib/ssh lib/pcre lib/spdlog lib/archive lib/xerces-c
+# bld lib/ssh lib/pcre lib/spdlog lib/archive lib/xerces-c lib/magic
 # bld lib/uchardet lib/fmt {{mix.if_linux('lib/linux')}}
 # bld dev/build/pkg-config dev/build/cmake dev/lang/m4 env/std
 {% endblock %}
