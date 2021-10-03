@@ -16,7 +16,7 @@ mkdir bin && cd bin
 
 cat << EOF > ted
 #!$(which dash)
-export PYTHONPATH="$PYTHONPATH"
+export PYTHONPATH="${PYTHONPATH}"
 export PYTHONDONTWRITEBYTECODE=1
 
 exec $(which python3) "${out}/ted/ted" "\$@"

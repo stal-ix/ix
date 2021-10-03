@@ -13,18 +13,19 @@ TMPL = '''
 {% endblock %}
 
 {% block deps %}
-# bld env/std {run}
+# bld env/std
+# run {run}
 {% endblock %}
 
 {% block unpack %}
 {% endblock %}
 
 {% block build %}
-cd ${out} && mkdir module && cd module && ${untar} ${src}/*.whl
+mkdir -p ${out}/lib/python && cd ${out}/lib/python && ${untar} ${src}/*.whl
 {% endblock %}
 
 {% block env %}
-export PYTHONPATH="${out}/module:\${PYTHONPATH}"
+export PYTHONPATH="${out}/lib/python:\${PYTHONPATH}"
 {% endblock %}
 '''
 
