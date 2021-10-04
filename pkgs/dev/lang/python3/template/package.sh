@@ -49,14 +49,24 @@ _opcode _opcode.c
 _posixshmem _multiprocessing/posixshmem.c -I$(srcdir)/Modules/_multiprocessing
 _multiprocessing _multiprocessing/multiprocessing.c _multiprocessing/semaphore.c -I$(srcdir)/Modules/_multiprocessing
 _queue _queuemodule.c
+EOF
+
+# extra hand job
 {% block extra_modules %}
+cat << EOF >> Modules/Setup.local
 _ctypes _ctypes/_ctypes.c _ctypes/callbacks.c _ctypes/callproc.c _ctypes/stgdict.c _ctypes/cfield.c _ctypes/malloc_closure.c -DPy_BUILD_CORE_MODULE
 _hashlib _hashopenssl.c
 _ssl _ssl.c -DUSE_SLL
 _lzma _lzmamodule.c
 _bz2 _bz2module.c
-{% endblock %}
+_sqlite3 _sqlite/cache.c _sqlite/connection.c _sqlite/cursor.c _sqlite/microprotocols.c _sqlite/module.c _sqlite/prepare_protocol.c _sqlite/row.c _sqlite/statement.c _sqlite/util.c -DSQLITE_OMIT_LOAD_EXTENSION
 EOF
+
+# more hand job
+for path in Modules/_sqlite/*; do
+    sed -e 's|MODULE_NAME|"sqlite3"|' -i ${path}
+done
+{% endblock %}
 
 >setup.py
 
@@ -77,7 +87,7 @@ export COFLAGS=$(echo "${COFLAGS}" | tr ' ' '\n' | grep -v 'with-system-ffi' | t
 {% block test %}
 ${out}/bin/python3 -c 'import zlib; import multiprocessing; import cProfile;'
 {% block extra_tests %}
-${out}/bin/python3 -c 'import hashlib; import ssl; import lzma; import bz2;'
+${out}/bin/python3 -c 'import hashlib; import ssl; import lzma; import bz2; import sqlite3;'
 {% endblock %}
 {% endblock %}
 
