@@ -6,21 +6,17 @@
 {% endblock %}
 
 {% block deps %}
-# lib dev/lang/python3 pypi/pygments shell/dash/minimal
-# bld env/std
+# bld lib/dlfcn lib/z lib/xz lib/ffi lib/intl lib/gdbm lib/bzip2 lib/iconv
+# bld lib/expat lib/sqlite3 lib/ncurses lib/openssl lib/readline lib/mpdecimal
+# bld dev/lang/python3 pypi/pygments dev/build/make env/std
 {% endblock %}
 
 {% block build %}
-mkdir ${out}/ted && mv * ${out}/ted/ && cd ${out}
-mkdir bin && cd bin
+where=$(which python3)
+python3 $(dirname ${where})/freeze/freeze.py ted
+make CC=clang -j ${make_thrs}
+{% endblock %}
 
-cat << EOF > ted
-#!$(which dash)
-export PYTHONPATH="${PYTHONPATH}"
-export PYTHONDONTWRITEBYTECODE=1
-
-exec $(which python3) "${out}/ted/ted" "\$@"
-EOF
-
-chmod +x ted
+{% block install %}
+mkdir -p ${out}/bin && cp ted.bin ${out}/bin/ted
 {% endblock %}
