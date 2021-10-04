@@ -12,6 +12,10 @@
 {% endblock %}
 
 {% block patch %}
+find . | grep CMakeLists.txt | while read l; do
+    sed -e 's/ MODULE / STATIC /' -i ${l}
+done
+
 {% if mix.platform.target.os == 'linux' %}
 cat << EOF > execinfo.h
 int backtrace(void**, int) {
