@@ -24,7 +24,7 @@ cd *
 {% endblock %}
 
 {% block preconf %}
-cur_dir=$(pwd)
+cur_dir=${PWD}
 mkdir ${tmp}/tools && cd ${tmp}/tools
 {% block toolconf %}
 {% endblock %}

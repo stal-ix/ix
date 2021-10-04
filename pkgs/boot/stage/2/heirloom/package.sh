@@ -228,7 +228,7 @@ done
 ) || exit 1
 
 export YACC=yacc
-export PATH="$(pwd):${PATH}"
+export PATH="${PWD}:${PATH}"
 
 # for factor
 ln -s $(which dash) sh

@@ -19,8 +19,8 @@ EOF
 
 ar q libmain.a main.o
 
-export LDFLAGS="-L$(pwd) -lmain ${LDFLAGS}"
-export CPPFLAGS="-w -D_GNU_SOURCE=1 -I$(pwd)/inc ${CPPFLAGS}"
+export LDFLAGS="-L${PWD} -lmain ${LDFLAGS}"
+export CPPFLAGS="-w -D_GNU_SOURCE=1 -I${PWD}/inc ${CPPFLAGS}"
 {% endblock %}
 
 {% block patch %}

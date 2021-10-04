@@ -17,7 +17,7 @@ echo > empty.c
 gcc -c empty.c -o empty.o
 ar q libdl.a empty.o
 
-export LDFLAGS="-L$(pwd) ${LDFLAGS}"
+export LDFLAGS="-L${PWD} ${LDFLAGS}"
 {% endblock %}
 
 {% block toolconf %}

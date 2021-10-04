@@ -1,6 +1,6 @@
 build_cmake_ps() {
     echo '' > ps && chmod +x ps
-    export PATH="$(pwd):${PATH}"
+    export PATH="${PWD}:${PATH}"
 }
 
 build_cmake_prepare() {

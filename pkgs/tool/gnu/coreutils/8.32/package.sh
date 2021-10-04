@@ -13,8 +13,8 @@
 {% endblock %}
 
 {% block cflags %}
-export CPPFLAGS="-I$(pwd)/lib ${CPPFLAGS}"
-export PATH="$(pwd)/src:${PATH}"
+export CPPFLAGS="-I${PWD}/lib ${CPPFLAGS}"
+export PATH="${PWD}/src:${PATH}"
 {% endblock %}
 
 {% block coflags %}

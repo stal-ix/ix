@@ -17,7 +17,7 @@ build() {
 
     patch < ${src}/scan_l.patch || true
 
-    export PATH="$(pwd)/tool:${PATH}"
+    export PATH="${PWD}/tool:${PATH}"
 
     echo 'all:' > po/Makefile.in.in
     dash ./autogen.sh 2>1 > ./autogen.log

@@ -22,7 +22,7 @@ EOF
 chmod +x strip
 
 ln -s $lib_ncurses/lib/libncurses.a libcurses.a
-export LDFLAGS="-L$(pwd) ${LDFLAGS}"
+export LDFLAGS="-L${PWD} ${LDFLAGS}"
 {% endblock %}
 
 {% block cflags %}

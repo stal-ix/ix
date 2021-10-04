@@ -15,7 +15,7 @@ cd ${out} && mkdir bin && cd bin && $untar ${src}/SCons* && ln -s SCons* sconsdi
 
 cat << EOF > scons
 #!$(which dash)
-PYTHONPATH=$(pwd)/sconsdir python3 $(pwd)/sconsdir/SCons/__main__.py "\$@"
+PYTHONPATH=${PWD}/sconsdir python3 $(pwd)/sconsdir/SCons/__main__.py "\$@"
 EOF
 
 chmod +x scons
