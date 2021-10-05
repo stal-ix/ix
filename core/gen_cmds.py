@@ -153,17 +153,11 @@ def cmd_link(sb, extra):
 
 
 def iter_build_commands(self):
-    sb = ScriptBuilder(self.config)
-    out_dir = self.out_dir
-
     if not self.buildable():
-        yield {
-            'out_dir': [out_dir],
-            'cmd': [sb.build_py_script('', dict(out=out_dir))],
-        }
-
         return
 
+    sb = ScriptBuilder(self.config)
+    out_dir = self.out_dir
     urls = self.descr['build'].get('fetch', [])
 
     if urls:
