@@ -19,6 +19,7 @@ make -j ${make_thrs} TEST_LDFLAGS="-L. libz.a"
 
 {% block postinstall %}
 mkdir ${out}/bin && cp minigzip ${out}/bin/
+echo q
 {% endblock %}
 
 {% block env %}

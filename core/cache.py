@@ -13,6 +13,7 @@ import core.shell_cmd as cs
 def client():
     pool = urllib3.PoolManager(
         timeout=urllib3.util.Timeout(connect=1000, read=1000),
+        cert_reqs='CERT_NONE',
         maxsize=10,
         retries=urllib3.Retry(
             total=5,
