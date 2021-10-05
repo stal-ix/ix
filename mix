@@ -13,6 +13,7 @@ import urllib3
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 import os
+os.environ['SSL_CERT_FILE'] = 'nowhere'
 
 import core.main as cm
 
