@@ -1,4 +1,8 @@
 {
+    "appdirs/package.sh": {
+        "md5": "1d638a5913a8d8ed8e7c7d789ece149c",
+        "url": "https://files.pythonhosted.org/packages/3b/00/2344469e2084fb287c2e0b57b72910309874c3245463acd6cf5e3db69324/appdirs-1.4.4-py2.py3-none-any.whl"
+    },
     "beautysh/package.sh": {
         "md5": "0edfde5715fcb643db59724c61365d0f",
         "run": [
@@ -35,9 +39,17 @@
         "md5": "a066efd76c72debc36775316e34a70bc",
         "url": "https://files.pythonhosted.org/packages/07/cb/5f001272b6faeb23c1c9e0acc04d48eaaf5c862c17709d20e3469c6e0139/jmespath-0.10.0-py2.py3-none-any.whl"
     },
+    "packaging/package.sh": {
+        "md5": "650984360b6e8c0946f0b5a13751b988",
+        "url": "https://files.pythonhosted.org/packages/3c/77/e2362b676dc5008d81be423070dd9577fa03be5da2ba1105811900fda546/packaging-21.0-py3-none-any.whl"
+    },
     "pygments/package.sh": {
         "md5": "23ad6b4ae954b138728c09d8668f225e",
         "url": "https://files.pythonhosted.org/packages/78/c8/8d9be2f72d8f465461f22b5f199c04f7ada933add4dae6e2468133c17471/Pygments-2.10.0-py3-none-any.whl"
+    },
+    "pyparsing/package.sh": {
+        "md5": "dbfd0a241aad2595f43377ec7f1836ea",
+        "url": "https://files.pythonhosted.org/packages/8a/bb/488841f56197b13700afd5658fc279a2025a39e22449b7cf29864669b15d/pyparsing-2.4.7-py2.py3-none-any.whl"
     },
     "python-dateutil/package.sh": {
         "md5": "95743ca628ad14d4aeb3628907f017bd",
@@ -52,6 +64,11 @@
     },
     "setuptools/package.sh": {
         "md5": "f1dbc68b4f2eee6db47a77764db5cc2f",
+        "run": [
+            "pypi/appdirs",
+            "pypi/packaging",
+            "pypi/pyparsing"
+        ],
         "url": "https://files.pythonhosted.org/packages/41/f4/a7ca4859317232b1efb64a826b8d2d7299bb77fb60bdb08e2bd1d61cf80d/setuptools-58.2.0-py3-none-any.whl"
     },
     "six/package.sh": {

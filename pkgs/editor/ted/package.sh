@@ -6,9 +6,8 @@
 {% endblock %}
 
 {% block deps %}
-# bld lib/dlfcn lib/z lib/xz lib/ffi lib/intl lib/gdbm lib/bzip2 lib/iconv
-# bld lib/expat lib/sqlite3 lib/ncurses lib/openssl lib/readline lib/mpdecimal
-# bld dev/lang/python3 pypi/pygments dev/build/make tool/compress/upx env/std
+# bld dev/lang/python3/libs pypi/pygments
+# bld dev/lang/python3 dev/build/make tool/compress/upx env/std
 {% endblock %}
 
 {% block build %}
@@ -24,8 +23,7 @@ for x in ps.STYLE_MAP.values():
     print(f'pygments.styles.{mod}')
 EOF
 
-where=$(which python3)
-python3 $(dirname ${where})/freeze/freeze.py -m ./ted $(cat modules)
+python3 $(dirname $(which python3))/freeze/freeze.py -m ./ted $(cat modules)
 make CC=clang -j ${make_thrs}
 strip ./ted
 upx ./ted

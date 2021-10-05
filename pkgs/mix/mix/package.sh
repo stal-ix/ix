@@ -6,26 +6,37 @@
 {% endblock %}
 
 {% block deps %}
-# lib dev/lang/python3 shell/dash/minimal
-# lib pypi/pygments pypi/jinja2 pypi/beautysh pypi/boto3
-# bld env/std
+# bld dev/lang/python3 dev/lang/python3/libs
+# bld pypi/pygments pypi/jinja2 pypi/beautysh pypi/boto3
+# bld dev/build/make tool/compress/upx env/std
 {% endblock %}
 
 {% block build %}
-mkdir ${out}/mix && mv * ${out}/mix/ && cd ${out}
-mkdir bin && cd bin
+ls core/*.py | grep -v __ | sed -e 's|\.py||' | sed -e 's|\/|\.|' | sort | uniq > modules
 
-cat << EOF > mix
-#!$(which dash)
-export PYTHONPATH="${PYTHONPATH}"
-export PYTHONDONTWRITEBYTECODE=1
-
-exec $(which python3) "${out}/mix/mix" "\$@"
+cat << EOF >> modules
+appdirs
+pyparsing
+packaging
 EOF
 
-chmod +x mix
+#packaging.version
+#packaging.specifiers
+#packaging.requirements
+#EOF
+
+cat - mix << EOF > mix_bin
+__file__ = "${out}/bin/mix"
+EOF
+
+python3 $(dirname $(which python3))/freeze/freeze.py -m ./mix_bin $(cat modules)
+make CC=clang -j ${make_thrs}
+strip ./mix_bin
+upx ./mix_bin
 {% endblock %}
 
-{% block test %}
-python3 -c 'import jinja2; import pygments; import boto3; import beautysh;'
+{% block install %}
+mkdir -p ${out}/bin
+cp -R pkgs ${out}/bin/
+cp mix_bin ${out}/bin/mix
 {% endblock %}
