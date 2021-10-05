@@ -1,5 +1,6 @@
 import os
 import sys
+import code
 import shutil
 import hashlib
 
@@ -84,3 +85,7 @@ def cli_misc_unzip(ctx):
 def cli_misc_fetch(ctx):
     for a in ctx['args']:
         csc.fetch_url(a, os.path.basename(a))
+
+
+def cli_misc_repl(ctx):
+    code.interact()

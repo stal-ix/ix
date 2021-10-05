@@ -20,6 +20,7 @@ class Package:
         self.descr = cr.RenderContext(self).render()
         self.uid = cu.struct_hash({
             'descr': self.descr,
+            'root': self.config.store_dir,
             'deps': [x.out_dir for x in self.iter_all_build_depends()],
         })
         self.out_dir = self.config.store_dir + '/' + self.uid + '-' + self.name.replace('/', '-')

@@ -23,6 +23,7 @@ CLIS = [
     ('core.misc_cmd', 'misc_runpy', True),
     ('core.misc_cmd', 'misc_unzip', True),
     ('core.misc_cmd', 'misc_fetch', True),
+    ('core.misc_cmd', 'misc_repl', True),
 ]
 
 
@@ -51,6 +52,9 @@ def print_help():
 
 
 def main_func(args, binary):
+    if args and '/' in args[0]:
+        args = args[1:]
+
     hndl = find_handler(args)
 
     if not hndl:

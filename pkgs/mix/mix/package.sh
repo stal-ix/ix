@@ -16,14 +16,17 @@ ls core/*.py | grep -v __ | sed -e 's|\.py||' | sed -e 's|\/|\.|' | sort | uniq 
 
 cat << EOF >> modules
 appdirs
-pyparsing
-packaging
-EOF
 
-#packaging.version
-#packaging.specifiers
-#packaging.requirements
-#EOF
+pyparsing
+
+packaging
+packaging.version
+packaging.specifiers
+packaging.requirements
+
+encodings.idna
+encodings.unicode_escape
+EOF
 
 cat - mix << EOF > mix_bin
 __file__ = "${out}/bin/mix"
