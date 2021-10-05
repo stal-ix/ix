@@ -13,7 +13,7 @@
     "boto3/package.sh": {
         "md5": "bdb7e3b4a283624e7ee773c888ddeeb6",
         "run": [
-            "pypi/botocore/bin",
+            "pypi/botocore",
             "pypi/s3transfer",
             "pypi/jmespath"
         ],
@@ -26,7 +26,7 @@
             "pypi/python-dateutil",
             "pypi/urllib3"
         ],
-        "url": "https://files.pythonhosted.org/packages/79/94/b035eaf361b426421563f63fcf4df9fe14091913705c1eb16f6ce2d4aa90/botocore-1.21.53-py3-none-any.whl"
+        "url": "https://files.pythonhosted.org/packages/79/94/b035eaf361b426421563f63fcf4df9fe14091913705c1eb16f6ce2d4aa90/ybotocore-1.21.53-py3-none-any.whl"
     },
     "certifi/package.sh": {
         "md5": "ee66fb12729b9e8ea4bb5b4b92f5ce2d",
@@ -70,7 +70,7 @@
     "s3transfer/package.sh": {
         "md5": "d662ab6d1f330cc3c6db025093c28bf8",
         "run": [
-            "pypi/botocore/bin"
+            "pypi/botocore"
         ],
         "url": "https://files.pythonhosted.org/packages/ab/84/fc3717a7b7f0f6bb08af593127171f08e3e0087c197922da09c01bfe7c3a/s3transfer-0.5.0-py3-none-any.whl"
     },
