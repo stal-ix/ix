@@ -25,7 +25,7 @@ packaging.specifiers
 packaging.requirements
 
 encodings.idna
-encodings.us_ascii
+encodings.ascii
 encodings.unicode_escape
 EOF
 
