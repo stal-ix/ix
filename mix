@@ -9,6 +9,9 @@ sys.excepthook = traceback.print_exception
 import ssl
 ssl._create_default_https_context = ssl._create_unverified_context
 
+import urllib3
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
+
 import os
 
 import core.main as cm

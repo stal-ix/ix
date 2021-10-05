@@ -21,7 +21,7 @@ make defconfig
 make install
 
 mkdir ${out}/bin
-mv _install/bin/busybox ${out}/bin
+mv _install/bin/busybox ${out}/bin/
 cd ${out}/bin
 
 ./busybox --list-full | while read l; do
