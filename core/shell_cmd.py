@@ -1,5 +1,4 @@
 import os
-import ssl
 import zipfile
 import tarfile
 
@@ -24,15 +23,11 @@ def untar(path):
 
 
 def fetch_url_data(url):
-    ssl._create_default_https_context = ssl._create_unverified_context
-
     return ur.urlopen(url).read()
 
 
 def fetch_url_impl(url, out):
     print(f'fetch {url} into {out}')
-
-    ssl._create_default_https_context = ssl._create_unverified_context
 
     def iter_chunks():
         r = ur.urlopen(url)

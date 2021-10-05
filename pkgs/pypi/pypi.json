@@ -46,7 +46,8 @@
     "minio/package.sh": {
         "md5": "8ed0e1fdb05f5a4e50394dce8bc9ef51",
         "run": [
-            "pypi/certifi"
+            "pypi/certifi",
+            "pypi/urllib3"
         ],
         "url": "https://files.pythonhosted.org/packages/b3/b4/4281ab6be6c7bae210b86956fc2d71e0848f2a37e95f102401fc1317529f/minio-7.1.0-py3-none-any.whl"
     },
