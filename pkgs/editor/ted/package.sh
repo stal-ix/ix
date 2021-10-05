@@ -6,8 +6,8 @@
 {% endblock %}
 
 {% block deps %}
-# bld dev/lang/python3/libs pypi/pygments
-# bld dev/lang/python3 dev/build/make tool/compress/upx env/std
+# bld dev/lang/python/3/libs pypi/pygments
+# bld dev/lang/python/3/10 dev/build/make tool/compress/upx env/std
 {% endblock %}
 
 {% block build %}

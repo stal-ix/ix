@@ -12,7 +12,7 @@
 {% block deps %}
 # bld lib/z lib/cxx lib/curl lib/iconv lib/openssl
 # bld tool/curl shell/bash/minimal dev/vcs/git tool/gnu/tar tool/gnu/time
-# bld dev/lang/python3 dev/build/make dev/build/cmake env/std
+# bld dev/lang/python/3/minimal dev/build/make dev/build/cmake env/std
 {% endblock %}
 
 {% block postunpack %}

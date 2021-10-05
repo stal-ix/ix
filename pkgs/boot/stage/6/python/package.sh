@@ -1,4 +1,4 @@
-{% extends '//dev/lang/python3/template/package.sh' %}
+{% extends '//dev/lang/python/3/9/package.sh' %}
 
 {% block deps %}
 # bld {{'boot/lib/linux' | linux}} boot/lib/z boot/lib/compiler_rt boot/stage/5/env

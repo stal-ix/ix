@@ -1,12 +1,7 @@
 {% extends '//util/autohell.sh' %}
 
-{% block fetch %}
-# url https://www.python.org/ftp/python/3.9.7/Python-3.9.7.tar.xz
-# md5 fddb060b483bc01850a3f412eea1d954
-{% endblock %}
-
 {% block deps %}
-# bld dev/lang/python3/libs {{'lib/linux' | linux}}
+# bld dev/lang/python/libs {{'lib/linux' | linux}}
 # bld env/std boot/final/env/tools
 {% endblock %}
 
@@ -60,10 +55,8 @@ _bz2 _bz2module.c
 _sqlite3 _sqlite/cache.c _sqlite/connection.c _sqlite/cursor.c _sqlite/microprotocols.c _sqlite/module.c _sqlite/prepare_protocol.c _sqlite/row.c _sqlite/statement.c _sqlite/util.c -DSQLITE_OMIT_LOAD_EXTENSION
 EOF
 
-# more hand job
-for path in Modules/_sqlite/*; do
-    sed -e 's|MODULE_NAME|"sqlite3"|' -i ${path}
-done
+{% block patch_sqlite_defines %}
+{% endblock %}
 {% endblock %}
 
 >setup.py

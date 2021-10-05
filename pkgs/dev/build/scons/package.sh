@@ -7,7 +7,7 @@
 
 {% block deps %}
 # bld env/std
-# run dev/lang/python3
+# run dev/lang/python/3/minimal
 {% endblock %}
 
 {% block build %}
