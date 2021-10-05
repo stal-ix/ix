@@ -17,11 +17,11 @@ set -x
 cd /mix && mkdir bootstrap && cd bootstrap
 
 python3 -m venv venv
-python3 -m pip install jinja2 beautysh boto3
+python3 -m pip install jinja2 beautysh minio
 
 python3 /bootstrap/mix realm add stable mix/mix \
-    -Dmix_ver=956f440dc889656bb33c7269b79dbef2b855f4e4 \
-    -Dmix_md5=ba94917bff67c45b3c38412013404686
+    -Dmix_ver=e940b51be5315ed0b7516364c54dc2f72123c686 \
+    -Dmix_md5=
 
 mix realm upgrade
 mix realm upgrade

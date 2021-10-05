@@ -6,7 +6,7 @@
 {% endblock %}
 
 {% block deps %}
-# bld dev/lang/python/3/10 dev/lang/python3/libs
+# bld dev/lang/python/3/10 dev/lang/python/libs
 # bld pypi/jinja2 pypi/beautysh pypi/minio
 # bld dev/build/make tool/compress/upx env/std
 {% endblock %}
