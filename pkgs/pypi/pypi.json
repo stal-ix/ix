@@ -13,7 +13,7 @@
     "boto3/package.sh": {
         "md5": "bdb7e3b4a283624e7ee773c888ddeeb6",
         "run": [
-            "pypi/botocore",
+            "pypi/botocore/bin",
             "pypi/s3transfer",
             "pypi/jmespath"
         ],
@@ -28,6 +28,10 @@
         ],
         "url": "https://files.pythonhosted.org/packages/79/94/b035eaf361b426421563f63fcf4df9fe14091913705c1eb16f6ce2d4aa90/botocore-1.21.53-py3-none-any.whl"
     },
+    "certifi/package.sh": {
+        "md5": "ee66fb12729b9e8ea4bb5b4b92f5ce2d",
+        "url": "https://files.pythonhosted.org/packages/05/1b/0a0dece0e8aa492a6ec9e4ad2fe366b511558cdc73fd3abc82ba7348e875/certifi-2021.5.30-py2.py3-none-any.whl"
+    },
     "jinja2/package.sh": {
         "md5": "b377af8123a32e992984222bff51e152",
         "run": [
@@ -38,6 +42,13 @@
     "jmespath/package.sh": {
         "md5": "a066efd76c72debc36775316e34a70bc",
         "url": "https://files.pythonhosted.org/packages/07/cb/5f001272b6faeb23c1c9e0acc04d48eaaf5c862c17709d20e3469c6e0139/jmespath-0.10.0-py2.py3-none-any.whl"
+    },
+    "minio/package.sh": {
+        "md5": "8ed0e1fdb05f5a4e50394dce8bc9ef51",
+        "run": [
+            "pypi/certifi"
+        ],
+        "url": "https://files.pythonhosted.org/packages/b3/b4/4281ab6be6c7bae210b86956fc2d71e0848f2a37e95f102401fc1317529f/minio-7.1.0-py3-none-any.whl"
     },
     "packaging/package.sh": {
         "md5": "650984360b6e8c0946f0b5a13751b988",
@@ -58,7 +69,7 @@
     "s3transfer/package.sh": {
         "md5": "d662ab6d1f330cc3c6db025093c28bf8",
         "run": [
-            "pypi/botocore"
+            "pypi/botocore/bin"
         ],
         "url": "https://files.pythonhosted.org/packages/ab/84/fc3717a7b7f0f6bb08af593127171f08e3e0087c197922da09c01bfe7c3a/s3transfer-0.5.0-py3-none-any.whl"
     },

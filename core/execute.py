@@ -139,7 +139,7 @@ class Executor:
             for d in n['out_dir']:
                 cc.store_dir(d)
         except Exception as e:
-            if 'Unable to locate credentials' not in str(e):
+            if 'AWS_' not in str(e):
                 raise e
 
     def exists(self, p):

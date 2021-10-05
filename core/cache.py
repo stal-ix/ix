@@ -1,7 +1,9 @@
 import os
 import io
+import minio
 import shutil
 import tarfile
+import urllib3
 
 import core.utils as cu
 import core.shell_cmd as cs
@@ -9,20 +11,21 @@ import core.shell_cmd as cs
 
 @cu.singleton
 def client():
-    import boto3
+    pool = urllib3.PoolManager(
+        timeout=urllib3.util.Timeout(connect=1000, read=1000),
+        maxsize=10,
+        retries=urllib3.Retry(
+            total=5,
+            backoff_factor=0.2,
+            status_forcelist=[500, 502, 503, 504]
+        )
+    )
 
-    session = boto3.session.Session()
-
-    return session.client(service_name='s3', endpoint_url='https://storage.yandexcloud.net')
-
-
-def list_cache():
-    for key in client().list_objects(Bucket='mix-cache')['Contents']:
-        yield os.path.basename(key['Key'])
+    return minio.Minio('storage.yandexcloud.net', access_key=os.environ['AWS_ACCESS_KEY_ID'], secret_key=os.environ['AWS_SECRET_ACCESS_KEY'], http_client=pool)
 
 
 def store_cache(data, key):
-    client().upload_fileobj(io.BytesIO(data), 'mix-cache', 'cache/' + key)
+    client().put_object('mix-cache', f'cache/{key}', io.BytesIO(data), len(data))
 
 
 def compress_dir(d):
