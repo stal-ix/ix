@@ -6,13 +6,16 @@
 {% endblock %}
 
 {% block deps %}
-# bld lib/iconv boot/final/env/tools
+# lib lib/iconv
+# bld dev/build/make dev/build/pkg-config env/std
 {% endblock %}
 
 {% block coflags %}
 --with-ftp=off
 --with-http=off
 --with-modules=off
+--disable-python
+--without-python
 {% endblock %}
 
 {% block env %}
