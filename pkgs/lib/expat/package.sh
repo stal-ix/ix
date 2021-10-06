@@ -14,7 +14,7 @@
 {% endblock %}
 
 {% block env %}
-export COFLAGS="--with-expat=${out} \${COFLAGS}"
+export COFLAGS="--with-expat=${out} --with-libexpat-prefix=${out} \${COFLAGS}"
 export CPPFLAGS="-I${out}/include \${CPPFLAGS}"
 export LDFLAGS="-L${out}/lib -lexpat \${LDFLAGS}"
 export PKG_CONFIG_PATH="${out}/lib/pkgconfig:\${PKG_CONFIG_PATH}"

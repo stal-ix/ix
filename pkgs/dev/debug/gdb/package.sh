@@ -6,10 +6,10 @@
 {% endblock %}
 
 {% block deps %}
-# bld {{'lib/linux' | linux}}
+# bld {{'lib/linux' | linux}} lib/intel-pt
 # bld lib/intl lib/expat lib/ncurses lib/iconv lib/readline
 # bld lib/cxx lib/z lib/xz lib/gmp lib/mpfr lib/mpc
-# bld dev/build/make dev/doc/texinfo env/std
+# bld dev/build/make dev/doc/texinfo env/std dev/build/pkg-config
 {% endblock %}
 
 {% block cflags %}
@@ -27,9 +27,6 @@ export ac_cv_search_tgetent=no
 --with-curses
 --with-system-zlib
 --with-system-readline
-{% endblock %}
-
-{% block build %}
-make -j ${make_thrs} || echo > gdbserver/libinproctrace.so
-make -j ${make_thrs}
+--disable-inprocess-agent
+--with-intel-pt
 {% endblock %}

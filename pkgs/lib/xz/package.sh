@@ -12,6 +12,6 @@
 {% block env %}
 export CPPFLAGS="-I${out}/include \${CPPFLAGS}"
 export LDFLAGS="-L${out}/lib -llzma \${LDFLAGS}"
-export COFLAGS="--with-lzma=${out} \${COFLAGS}"
+export COFLAGS="--with-lzma=${out} --with-liblzma-prefix=${out} \${COFLAGS}"
 export PKG_CONFIG_PATH="${out}/lib/pkgconfig:\${PKG_CONFIG_PATH}"
 {% endblock %}

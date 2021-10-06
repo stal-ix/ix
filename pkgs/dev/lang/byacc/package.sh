@@ -12,3 +12,7 @@
 {% block postinstall %}
 cd ${out}/bin && ln -s yacc byacc
 {% endblock %}
+
+{% block env %}
+export YACC=byacc
+{% endblock %}
