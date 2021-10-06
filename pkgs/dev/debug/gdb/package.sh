@@ -28,5 +28,9 @@ export ac_cv_search_tgetent=no
 --with-system-zlib
 --with-system-readline
 --disable-inprocess-agent
---with-intel-pt
+--with-intel-pt=yes
+--with-xxhash=yes
+--with-lzma=yes
+--with-expat=yes
+--with-mpfr=yes
 {% endblock %}
