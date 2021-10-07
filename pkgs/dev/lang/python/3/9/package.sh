@@ -12,3 +12,7 @@ for path in Modules/_sqlite/*; do
     sed -e 's|MODULE_NAME|"sqlite3"|' -i ${path}
 done
 {% endblock %}
+
+{% block cflags %}
+export COFLAGS=$(echo "${COFLAGS}" | tr ' ' '\n' | grep -v 'with-system-ffi' | tr '\n' ' ')
+{% endblock %}

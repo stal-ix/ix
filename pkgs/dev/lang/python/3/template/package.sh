@@ -2,7 +2,7 @@
 
 {% block deps %}
 # bld dev/lang/python/libs {{'lib/linux' | linux}}
-# bld env/std boot/final/env/tools
+# bld dev/build/make dev/build/pkg-config env/std
 {% endblock %}
 
 {% block toolconf %}
@@ -23,9 +23,6 @@ sed -e 's/ffi_type ffi_type.*//'      \
 >Modules/_ctypes/malloc_closure.c
 {% endblock %}
 
-sed -e 's|/usr/bin/arch|arch|' -i ./configure
-
-sed -e 's|/usr|/eat/shit|' -i ./configure
 sed -e 's|/usr|/eat/shit|' -i ./setup.py
 sed -e 's|/usr|/eat/shit|' -i ./Makefile.pre.in
 
@@ -47,6 +44,7 @@ EOF
 # extra hand job
 {% block extra_modules %}
 cat << EOF >> Modules/Setup.local
+readline readline.c
 _ctypes _ctypes/_ctypes.c _ctypes/callbacks.c _ctypes/callproc.c _ctypes/stgdict.c _ctypes/cfield.c _ctypes/malloc_closure.c -DPy_BUILD_CORE_MODULE
 _hashlib _hashopenssl.c
 _ssl _ssl.c -DUSE_SLL
@@ -64,10 +62,6 @@ EOF
 sed -e 's|spec is None|spec is None or spec.loader is None|' -i Lib/modulefinder.py
 {% endblock %}
 
-{% block cflags %}
-export COFLAGS=$(echo "${COFLAGS}" | tr ' ' '\n' | grep -v 'with-system-ffi' | tr '\n' ' ')
-{% endblock %}
-
 {% block coflags %}
 --with-ensurepip=no
 --with-system-libmpdec
@@ -78,7 +72,7 @@ export COFLAGS=$(echo "${COFLAGS}" | tr ' ' '\n' | grep -v 'with-system-ffi' | t
 {% block test %}
 ${out}/bin/python3 -c 'import zlib; import multiprocessing; import cProfile;'
 {% block extra_tests %}
-${out}/bin/python3 -c 'import hashlib; import ssl; import lzma; import bz2; import sqlite3;'
+${out}/bin/python3 -c 'import hashlib; import ssl; import lzma; import bz2; import sqlite3; import readline;'
 {% endblock %}
 {% endblock %}
 
