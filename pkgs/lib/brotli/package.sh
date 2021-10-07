@@ -10,7 +10,7 @@
 {% endblock %}
 
 {% block build %}
-make CC=gcc -j ${make_thrs} lib
+make -j ${make_thrs} lib
 {% endblock %}
 
 {% block install %}

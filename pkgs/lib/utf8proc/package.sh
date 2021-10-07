@@ -10,16 +10,12 @@
 {% endblock %}
 
 {% block build %}
-make CC=gcc prefix=${out} -j ${make_thrs} libutf8proc.a
+make prefix=${out} -j ${make_thrs} libutf8proc.a
 
 >libutf8proc.so.2.4.1
 >libutf8proc.dylib
 
-make CC=gcc prefix=${out} -j ${make_thrs}
-{% endblock %}
-
-{% block install %}
-make CC=gcc prefix=${out} -j ${make_thrs} install
+make prefix=${out} -j ${make_thrs}
 {% endblock %}
 
 {% block env %}

@@ -1,4 +1,4 @@
-{% extends '//util/template.sh' %}
+{% extends '//util/make.sh' %}
 
 {% block fetch %}
 # url https://www.sourceware.org/pub/bzip2/bzip2-latest.tar.gz
@@ -7,14 +7,6 @@
 
 {% block deps %}
 # bld dev/build/make env/tools env/c env/bootstrap
-{% endblock %}
-
-{% block build %}
-make -j ${make_thrs} PREFIX="${out}"
-{% endblock %}
-
-{% block install %}
-make PREFIX="${out}" install
 {% endblock %}
 
 {% block env %}
