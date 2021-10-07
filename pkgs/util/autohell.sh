@@ -16,5 +16,20 @@ cat ./configure \
     | sed -e "s|/bin/universe|universe|g" \
     > _ && mv _ ./configure
 
+export ac_cv_build="{{mix.platform.target.gnu_arch}}-{{mix.platform.target.hw_vendor}}-{{mix.platform.target.kernel}}-{{mix.platform.target.vendor}}"
+export ac_cv_host="${ac_cv_build}"
+export ac_cv_target="${ac_cv_build}"
+
+(
+    find . | grep 'config.guess'
+    find . | grep 'config.sub'
+) | while read l; do
+    cat << EOF > ${l}
+#!$(which dash)
+echo ${ac_cv_build}
+EOF
+    chmod +x ${l}
+done
+
 dash ./configure ${COFLAGS} --prefix="${out}" {{mix.prepare_deps(coflags)}}
 {% endblock %}

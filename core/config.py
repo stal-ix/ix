@@ -9,15 +9,21 @@ ARCHES = {
         'arch': 'arm64',
         'gnu_arch': 'aarch64',
         'os': 'darwin',
+        'kernel': 'xnu',
         'vendor': 'apple',
         'bits': '64',
+        'hw_vendor': 'apple',
+        'obj_fmt': 'mach-o',
     },
     'linux-x86_64': {
         'arch': 'x86_64',
         'gnu_arch': 'x86_64',
         'os': 'linux',
-        'vendor': 'linus',
+        'kernel': 'linux',
+        'vendor': 'mix',
         'bits': '64',
+        'hw_vendor': 'pc',
+        'obj_fmt': 'elf',
     },
 }
 
