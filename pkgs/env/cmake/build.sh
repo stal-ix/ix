@@ -13,18 +13,21 @@ build_cmake_prepare() {
 
     build_cmake_ps
 
-    cmake                                                                   \
-        ${CMFLAGS}                                                          \
-        -Wno-dev                                                            \
-        -DCMAKE_INSTALL_PREFIX="${out}"                                     \
-        -DCMAKE_EXE_LINKER_FLAGS="${LDFLAGS}"                               \
-        -DCMAKE_C_COMPILER="gcc"                                            \
-        -DCMAKE_CXX_COMPILER="g++"                                          \
-        -DCMAKE_BUILD_TYPE=Release                                          \
-        -DCMAKE_C_FLAGS_RELEASE="${CFLAGS} ${LDFLAGS}"                      \
-        -DCMAKE_CXX_FLAGS_RELEASE="${CXXFLAGS} ${LDFLAGS}"                  \
-        -DBUILD_SHARED_LIBS=OFF                                             \
-        -DCMAKE_PREFIX_PATH="${CMPATH}"                                     \
+    cmake \
+        ${CMFLAGS}                                         \
+        -Wno-dev                                           \
+        -DCMAKE_INSTALL_PREFIX="${out}"                    \
+        -DCMAKE_EXE_LINKER_FLAGS="${LDFLAGS}"              \
+        -DCMAKE_C_COMPILER="gcc"                           \
+        -DCMAKE_CXX_COMPILER="g++"                         \
+        -DCMAKE_BUILD_TYPE=Release                         \
+        -DCMAKE_C_FLAGS_RELEASE="${CFLAGS} ${LDFLAGS}"     \
+        -DCMAKE_CXX_FLAGS_RELEASE="${CXXFLAGS} ${LDFLAGS}" \
+        -DBUILD_SHARED_LIBS=OFF                            \
+        -DCMAKE_PREFIX_PATH="${CMPATH}"                    \
+        -DCMAKE_FIND_USE_CMAKE_SYSTEM_PATH=NO              \
+        -DCMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH=NO        \
+        -DCMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY=NO        \
         $@
 }
 
