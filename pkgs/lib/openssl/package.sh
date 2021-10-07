@@ -35,7 +35,7 @@ perl ./Configure \
 {% endblock %}
 
 {% block env %}
-export COFLAGS="--with-openssl=${out} --with-openssldir=${out} --with-ssl-dir=$out \${COFLAGS}"
+export COFLAGS="--with-ssl=${out} --with-openssl=${out} --with-openssldir=${out} --with-ssl-dir=$out \${COFLAGS}"
 export OPENSSL_INCLUDES="-I${out}/include"
 export OPENSSL_LIBS="-L${out}/lib -lssl -lcrypto"
 export OPENSSL_DIR="${out}"

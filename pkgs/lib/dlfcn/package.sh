@@ -1,4 +1,4 @@
-{% extends '//util/template.sh' %}
+{% extends '//util/make.sh' %}
 
 {% block fetch %}
 # url https://github.com/pg83/dlopen/archive/afbcfbf6f7c7fdd8215e8a694500608f7776c0bb.zip
@@ -10,12 +10,7 @@
 # bld dev/build/make env/std
 {% endblock %}
 
-{% block build %}
-make
-{% endblock %}
-
-{% block install %}
-make PREFIX=${out} install
+{% block postinstall %}
 mv $out/lib/libdl.a $out/lib/libdlstub.a
 {% endblock %}
 

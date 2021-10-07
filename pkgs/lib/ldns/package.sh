@@ -11,7 +11,6 @@
 {% endblock %}
 
 {% block coflags %}
---with-ssl=$lib_openssl
 --with-drill
 {% endblock %}
 
