@@ -9,11 +9,6 @@
 # bld env/std dev/build/make
 {% endblock %}
 
-{% block install %}
-make PREFIX=${out} install
-#exit 1
-{% endblock %}
-
 {% block env %}
 export CPPFLAGS="-I${out}/include \${CPPFLAGS}"
 export LDFLAGS="-L${out}/lib -ltommath \${LDFLAGS}"

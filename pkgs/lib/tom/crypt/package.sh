@@ -10,12 +10,8 @@
 # bld env/std dev/build/make
 {% endblock %}
 
-{% block build %}
-make CFLAGS="-DUSE_LTM -DLTM_DESC ${CFLAGS}" -j ${make_thrs}
-{% endblock %}
-
-{% block install %}
-make PREFIX=${out} install
+{% block cflags %}
+export CFLAGS="-DUSE_LTM -DLTM_DESC ${CFLAGS}"
 {% endblock %}
 
 {% block env %}

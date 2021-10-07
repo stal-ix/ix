@@ -8,6 +8,7 @@
 
 cat ./configure \
     | sed -e "s|/usr/bin/||g"             \
+    | sed -e "s|/usr/|/nowhere/|g"        \
     | sed -e "s|/bin/sh|$(which dash)|g"  \
     | sed -e "s|/bin/arch|arch|g"         \
     | sed -e "s|/bin/uname|uname|g"       \
