@@ -10,5 +10,5 @@
 {% endblock %}
 
 {% block env %}
-export ACLOCAL_PATH="${out}/share/aclocal"
+export ACLOCAL_PATH="${out}/share/aclocal:${ACLOCAL_PATH}"
 {% endblock %}

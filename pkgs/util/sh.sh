@@ -24,6 +24,7 @@ export LDFLAGS=
 export CONLYFLAGS=
 export PKG_CONFIG_PATH=
 export PYTHONPATH=
+export ACLOCAL_PATH=
 export PYTHONDONTWRITEBYTECODE=1
 
 rm -rf ${out} || true

@@ -21,4 +21,5 @@
 
 {% block env %}
 export PKG_CONFIG="${out}/bin/pkg-config"
+export ACLOCAL_PATH="${out}/share/aclocal:${ACLOCAL_PATH}"
 {% endblock %}

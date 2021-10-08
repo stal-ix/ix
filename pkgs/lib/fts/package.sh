@@ -1,0 +1,20 @@
+{% extends '//util/autohell.sh' %}
+
+{% block fetch %}
+# url https://github.com/void-linux/musl-fts/archive/refs/tags/v1.2.7.tar.gz
+# md5 bce0b5de0cf2519a74fbfacead60369d
+{% endblock %}
+
+{% block deps %}
+# bld dev/build/automake/1.16.3 dev/build/make dev/build/pkg-config env/std
+{% endblock %}
+
+{% block preconf %}
+dash ./bootstrap.sh
+{% endblock %}
+
+{% block env %}
+export CPPFLAGS="-I${out}/include \${CPPFLAGS}"
+export LDFLAGS="-L${out}/lib -lfts \${LDFLAGS}"
+export PKG_CONFIG_PATH="${out}/lib/pkgconfig:\${PKG_CONFIG_PATH}"
+{% endblock %}
