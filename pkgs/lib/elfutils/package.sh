@@ -33,23 +33,13 @@ sed -e 's|#include <error.h>|#define error(status, errno, ...) err(status, __VA_
 
 {% block build %}
 for l in backends lib libcpu libebl libdwelf libdwfl libelf libdw; do
-    (
-        cd ${l}
-        make -j ${make_thrs} || (echo > libdw.so; echo > libelf.so)
-    )
+    (cd ${l} && (make -j ${make_thrs} || (echo > libdw.so; echo > libelf.so)))
 done
 {% endblock %}
 
 {% block install %}
-for l in backends lib libcpu libdw libdwelf libdwfl libebl libelf; do
-    (
-        cd ${l}
-        make install
-    )
-done
-
-find . | grep \\.a | while read l; do
-    cp ${l} ${out}/lib
+for l in backends lib libcpu libebl libdwelf libdwfl libelf libdw; do
+    (cd ${l} && make install)
 done
 
 cp version.h ${out}/include/elfutils/
