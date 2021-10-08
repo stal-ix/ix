@@ -1,4 +1,4 @@
-{% extends '//util/template.sh' %}
+{% extends '//util/freeze.sh' %}
 
 {% block fetch %}
 # url https://github.com/pg83/ted/archive/3c3f54a69b806bd7eb96f4c56189ce2a7f0507c5.zip
@@ -6,29 +6,12 @@
 {% endblock %}
 
 {% block deps %}
-# bld dev/lang/python/libs pypi/pygments
-# bld dev/lang/python/3/10 dev/build/make tool/compress/upx env/std
+# bld pypi/pygments dev/lang/python/3/10
 {% endblock %}
 
-{% block build %}
-python3 << EOF | sort | uniq > modules
-import pygments.lexers._mapping as pm
-import pygments.styles as ps
+{% block bin %}ted.bin{% endblock %}
+{% block entry_point %}ted{% endblock %}
 
-for x in pm.LEXERS.values():
-    print(x[0])
-
-for x in ps.STYLE_MAP.values():
-    mod, cls = x.split('::')
-    print(f'pygments.styles.{mod}')
-EOF
-
-python3 $(dirname $(which python3))/freeze/freeze.py -m ./ted $(cat modules)
-make CC=clang -j ${make_thrs}
-strip ./ted
-upx ./ted
-{% endblock %}
-
-{% block install %}
-mkdir -p ${out}/bin && cp ted ${out}/bin/ted
+{% block postinstall %}
+cd ${out}/bin && mv ted.bin ted
 {% endblock %}

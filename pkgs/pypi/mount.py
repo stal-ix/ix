@@ -22,6 +22,7 @@ TMPL = '''
 
 {% block build %}
 mkdir -p ${out}/lib/python && cd ${out}/lib/python && ${untar} ${src}/*.whl
+find . | grep \\.py | sed -e 's|\.\/||' -e 's|\.py$||' -e 's|/|.|g' | grep -v '__main__' | grep -v '__init__' > exports
 {% endblock %}
 
 {% block env %}
