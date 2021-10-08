@@ -7,10 +7,15 @@
 
 {% block build %}
 (
+    set -eu
+
     cat << EOF
 {% block extra_modules %}
 {% endblock %}
 EOF
+
+{% block more_modules %}
+{% endblock %}
 
     IFS=":"; for l in ${PYTHONPATH}; do
         p="${l}/exports"
@@ -23,8 +28,8 @@ EOF
 
 python3 $(dirname $(which python3))/freeze/freeze.py -m {{self.entry_point()}} $(cat modules)
 make CC=clang -j ${make_thrs}
-strip ./{{self.bin()}}
-upx ./{{self.bin()}}
+strip {{self.bin()}}
+upx {{self.bin()}}
 {% endblock %}
 
 {% block install %}
