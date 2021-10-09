@@ -6,9 +6,8 @@
 {% endblock %}
 
 {% block deps %}
-# lib dev/lang/python/3/10
+# lib dev/lang/python/3/10/lib
 # bld pypi/pygments
-# run dev/lang/python/libs
 {% endblock %}
 
 {% block cflags %}
