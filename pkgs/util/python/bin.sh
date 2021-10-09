@@ -1,4 +1,4 @@
-{% extends '//util/python/freeze.sh' %}
+{% extends 'freeze.sh' %}
 
 {% block more_deps %}
 # bld dev/lang/python/libs

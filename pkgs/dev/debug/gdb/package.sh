@@ -6,7 +6,7 @@
 {% endblock %}
 
 {% block deps %}
-# bld dev/lang/python/3/10 dev/lang/python/libs
+# bld dev/debug/gdb/py
 # bld {{'lib/linux' | linux}} lib/intel-pt
 # bld lib/intl lib/expat lib/ncurses lib/iconv lib/readline
 # bld lib/cxx lib/z lib/xz lib/gmp lib/mpfr lib/mpc lib/xxhash

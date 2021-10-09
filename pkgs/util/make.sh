@@ -1,4 +1,4 @@
-{% extends '//util/template.sh' %}
+{% extends 'template.sh' %}
 
 {% block build %}
 make PREFIX="${out}" prefix="${out}" ${MAKE_FLAGS} -j ${make_thrs} || make PREFIX="${out}" prefix="${out}" ${MAKE_FLAGS}

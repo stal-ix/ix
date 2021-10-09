@@ -1,4 +1,4 @@
-{% extends '//util/make.sh' %}
+{% extends 'make.sh' %}
 
 {% block configure %}
 {% set coflags %}

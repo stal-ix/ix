@@ -1,4 +1,4 @@
-{% extends '//util/base.sh' %}
+{% extends 'base.sh' %}
 
 {% block unpack %}
 mkdir bld && cd bld

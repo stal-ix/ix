@@ -1,4 +1,4 @@
-{% extends '//utils/template.sh' %}
+{% extends '//util/python/lib.sh' %}
 
 {% block fetch %}
 # url https://ftp.gnu.org/gnu/gdb/gdb-11.1.tar.xz
@@ -6,6 +6,15 @@
 {% endblock %}
 
 {% block deps %}
-# bld dev/lang/python/3/10 dev/lang/python/libs
-# bld dev/build/make env/std
+# lib dev/lang/python/3/10
+# bld pypi/pygments
+# run dev/lang/python/libs
+{% endblock %}
+
+{% block cflags %}
+export PYTHONPATH="${PWD}/gdb/python/lib:${PYTHONPATH}"
+{% endblock %}
+
+{% block more_modules %}
+cd gdb/python/lib && find . | grep '\.py$' | sed -e 's|./||' -e 's|\.py||' -e 's|/|.|g'
 {% endblock %}

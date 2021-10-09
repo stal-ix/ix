@@ -1,4 +1,4 @@
-{% extends '//util/template.sh' %}
+{% extends 'template.sh' %}
 
 {% block configure %}
 {% set cmflags %}

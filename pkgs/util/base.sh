@@ -1,4 +1,4 @@
-{% extends '//util/sh.sh' %}
+{% extends 'sh.sh' %}
 
 {% block sh_script %}
 step_unpack() {

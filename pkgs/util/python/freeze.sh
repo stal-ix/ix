@@ -9,8 +9,11 @@
 {% endblock %}
 EOF
 
+    (
+        set -eu
 {% block more_modules %}
 {% endblock %}
+    )
 
     IFS=":"; for l in ${PYTHONPATH}; do
         p="${l}/exports"
