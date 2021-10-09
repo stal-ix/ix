@@ -36,3 +36,7 @@ export ac_cv_search_tgetent=no
 --with-mpfr=yes
 --with-python=$(which python3)
 {% endblock %}
+
+{% block test %}
+echo 'python print("na gorshke" + " sidel korol")' | ${out}/bin/gdb | grep "na gorshke sidel korol"
+{% endblock %}
