@@ -1,5 +1,6 @@
 cat << EOF > ${out}/env
-{{env}}
+{% block env %}
+{% endblock %}
 EOF
 
 (

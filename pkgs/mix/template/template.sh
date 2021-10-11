@@ -8,16 +8,6 @@
 {% include 'blocks/preconf.sh' %}
 {% endblock %}
 
-{% set env %}
-{% block env %}
-{% endblock %}
-{% endset %}
-
-{% set toolconf %}
-{% block toolconf %}
-{% endblock %}
-{% endset %}
-
 {% block prepare_env %}
 {% include 'blocks/env.sh' %}
 {% endblock %}
