@@ -1,4 +1,4 @@
-{% extends '//mix/template/base.sh' %}
+{% extends '//mix/template/proxy.sh' %}
 
 {% block deps %}
 # bld lib/bzip2 env/tools

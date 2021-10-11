@@ -1,4 +1,4 @@
-{% extends '//mix/template/base.sh' %}
+{% extends '//mix/template/proxy.sh' %}
 
 {% block sh_script_begin %}
 export OSX_SDK=
