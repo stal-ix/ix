@@ -1,4 +1,4 @@
-{% extends '//util/autohell.sh' %}
+{% extends '//mix/template/autohell.sh' %}
 
 {% block deps %}
 # bld lib/intl lib/iconv env/c boot/final/env/tools

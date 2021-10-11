@@ -1,4 +1,4 @@
-{% extends '//util/autohell.sh' %}
+{% extends '//mix/template/autohell.sh' %}
 
 {% block fetch %}
 # url https://ftpmirror.gnu.org/libtool/libtool-2.4.6.tar.gz

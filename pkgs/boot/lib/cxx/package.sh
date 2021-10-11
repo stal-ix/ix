@@ -1,7 +1,7 @@
-{% extends '//util/template.sh' %}
+{% extends '//mix/template/template.sh' %}
 
 {% block fetch %}
-{% include '//util/fetch_llvm.sh' %}
+{% include '//mix/template/fetch_llvm.sh' %}
 {% endblock %}
 
 {% block deps %}

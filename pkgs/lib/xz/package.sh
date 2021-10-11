@@ -1,4 +1,4 @@
-{% extends '//util/autohell.sh' %}
+{% extends '//mix/template/autohell.sh' %}
 
 {% block fetch %}
 # url https://tukaani.org/xz/xz-5.2.5.tar.xz

@@ -1,4 +1,4 @@
-{% extends '//util/base.sh' %}
+{% extends '//mix/template/base.sh' %}
 
 {% block deps %}
 # lib lib/wolfssl

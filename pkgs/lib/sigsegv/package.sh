@@ -1,4 +1,4 @@
-{% extends '//util/autohell.sh' %}
+{% extends '//mix/template/autohell.sh' %}
 
 {% block fetch %}
 # url https://ftp.gnu.org/gnu/libsigsegv/libsigsegv-2.13.tar.gz

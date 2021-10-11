@@ -1,4 +1,4 @@
-{% extends '//util/make.sh' %}
+{% extends '//mix/template/make.sh' %}
 
 {% block fetch %}
 # url https://github.com/landley/toybox/archive/refs/tags/0.8.5.tar.gz

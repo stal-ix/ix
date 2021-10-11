@@ -1,4 +1,4 @@
-{% extends '//util/template.sh' %}
+{% extends '//mix/template/template.sh' %}
 
 {% block fetch %}
 # url https://downloads.sourceforge.net/project/infozip/UnZip%206.x%20%28latest%29/UnZip%206.0/unzip60.tar.gz

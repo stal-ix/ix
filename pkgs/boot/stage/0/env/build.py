@@ -1,1 +1,1 @@
-{% include '//util/build_stdenv.py' %}
+{% include '//mix/template/build_stdenv.py' %}

@@ -1,4 +1,4 @@
-{% extends '//util/base.sh' %}
+{% extends '//mix/template/base.sh' %}
 
 {% block deps %}
 # bld lib/bzip2 env/tools

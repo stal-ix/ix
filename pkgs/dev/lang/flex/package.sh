@@ -1,4 +1,4 @@
-{% extends '//util/autohell.sh' %}
+{% extends '//mix/template/autohell.sh' %}
 
 {% block fetch %}
 # url https://github.com/westes/flex/releases/download/v2.6.4/flex-2.6.4.tar.lz

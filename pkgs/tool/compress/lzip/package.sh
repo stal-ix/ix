@@ -1,4 +1,4 @@
-{% extends '//util/autohell.sh' %}
+{% extends '//mix/template/autohell.sh' %}
 
 {% block fetch %}
 # url https://download.savannah.gnu.org/releases/lzip/lzip-1.22.tar.gz

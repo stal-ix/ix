@@ -1,4 +1,4 @@
-{% extends '//util/template.sh' %}
+{% extends '//mix/template/template.sh' %}
 
 {% block fetch %}
 # url http://www.mirbsd.org/MirOS/dist/mir/mksh/mksh-R59c.tgz

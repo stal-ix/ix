@@ -1,4 +1,4 @@
-{% extends '//util/template.sh' %}
+{% extends '//mix/template/template.sh' %}
 
 {% block fetch %}
 # url https://github.com/Cyan4973/xxHash/archive/refs/tags/v0.8.0.tar.gz

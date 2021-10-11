@@ -1,4 +1,4 @@
-{% extends '//util/template.sh' %}
+{% extends '//mix/template/template.sh' %}
 
 {% block fetch %}
 # url https://github.com/michaelforney/sbase/archive/3eb89c44aa788c1b122e7967f4a7a9a3b98322e9.zip

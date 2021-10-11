@@ -1,4 +1,4 @@
-{% extends '//util/autohell.sh' %}
+{% extends '//mix/template/autohell.sh' %}
 
 {% block fetch %}
 # url https://github.com/void-linux/musl-obstack/archive/refs/tags/v1.2.2.tar.gz

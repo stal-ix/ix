@@ -1,4 +1,4 @@
-{% extends '//util/template.sh' %}
+{% extends '//mix/template/template.sh' %}
 
 {% block fetch %}
 # url https://github.com/facebook/zstd/releases/download/v1.5.0/zstd-1.5.0.tar.gz

@@ -1,4 +1,4 @@
-{% extends '//util/cmake.sh' %}
+{% extends '//mix/template/cmake.sh' %}
 
 {% block fetch %}
 # url https://github.com/Kitware/CMake/releases/download/v3.20.2/cmake-3.20.2.tar.gz

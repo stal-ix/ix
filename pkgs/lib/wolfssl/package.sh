@@ -1,4 +1,4 @@
-{% extends '//util/autohell.sh' %}
+{% extends '//mix/template/autohell.sh' %}
 
 {% block fetch %}
 # url https://github.com/wolfSSL/wolfssl/archive/refs/tags/v4.8.1-stable.tar.gz

@@ -1,4 +1,4 @@
-{% extends '//util/make.sh' %}
+{% extends '//mix/template/make.sh' %}
 
 {% block fetch %}
 # url https://www.openssl.org/source/old/1.1.1/openssl-1.1.1j.tar.gz

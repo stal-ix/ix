@@ -1,4 +1,4 @@
-{% extends '//util/template.sh' %}
+{% extends '//mix/template/template.sh' %}
 
 {% block fetch %}
 # url https://storage.yandexcloud.net/mix-cache/unrarsrc-6.0.6.tar.gz

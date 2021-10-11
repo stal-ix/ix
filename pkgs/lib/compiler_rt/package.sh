@@ -1,11 +1,11 @@
-{% extends '//util/template.sh' %}
+{% extends '//mix/template/template.sh' %}
 
 {% block deps %}
 # bld {{'lib/musl' | linux}} env/c/nort boot/final/env/tools
 {% endblock %}
 
 {% block fetch %}
-{% include '//util/fetch_llvm.sh' %}
+{% include '//mix/template/fetch_llvm.sh' %}
 {% endblock %}
 
 {% block postunpack %}

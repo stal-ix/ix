@@ -1,4 +1,4 @@
-{% extends '//util/autohell.sh' %}
+{% extends '//mix/template/autohell.sh' %}
 
 {% block fetch %}
 # url https://www.mpfr.org/mpfr-current/mpfr-4.1.0.tar.xz

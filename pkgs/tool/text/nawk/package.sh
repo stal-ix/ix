@@ -1,4 +1,4 @@
-{% extends '//util/make.sh' %}
+{% extends '//mix/template/make.sh' %}
 
 {% block fetch %}
 # url https://github.com/onetrueawk/awk/archive/c0f4e97e4561ff42544e92512bbaf3d7d1f6a671.zip

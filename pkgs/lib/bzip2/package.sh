@@ -1,4 +1,4 @@
-{% extends '//util/make.sh' %}
+{% extends '//mix/template/make.sh' %}
 
 {% block fetch %}
 # url https://www.sourceware.org/pub/bzip2/bzip2-latest.tar.gz

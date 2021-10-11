@@ -1,4 +1,4 @@
-{% extends '//util/autohell.sh' %}
+{% extends '//mix/template/autohell.sh' %}
 
 {% block fetch %}
 # url https://www.lysator.liu.se/~nisse/misc/argp-standalone-1.3.tar.gz

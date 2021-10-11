@@ -1,4 +1,4 @@
-{% extends '//util/cmake.sh' %}
+{% extends '//mix/template/cmake.sh' %}
 
 {% block fetch %}
 # url https://github.com/jtanx/libclipboard/archive/refs/tags/v1.1.tar.gz

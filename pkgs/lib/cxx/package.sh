@@ -1,4 +1,4 @@
-{% extends '//util/template.sh' %}
+{% extends '//mix/template/template.sh' %}
 
 {% block deps %}
 # bld {{'lib/linux' | linux}}
@@ -6,7 +6,7 @@
 {% endblock %}
 
 {% block fetch%}
-{% include '//util/fetch_llvm.sh' %}
+{% include '//mix/template/fetch_llvm.sh' %}
 {% endblock %}
 
 {% block cflags %}

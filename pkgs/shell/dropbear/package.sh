@@ -1,4 +1,4 @@
-{% extends '//util/autohell.sh' %}
+{% extends '//mix/template/autohell.sh' %}
 
 {% block fetch %}
 # url https://storage.yandexcloud.net/mix-cache/dropbear-2020.81.tar.bz2

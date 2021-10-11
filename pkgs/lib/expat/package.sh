@@ -1,4 +1,4 @@
-{% extends '//util/autohell.sh' %}
+{% extends '//mix/template/autohell.sh' %}
 
 {% block fetch %}
 # url https://github.com/libexpat/libexpat/releases/download/R_2_4_1/expat-2.4.1.tar.xz

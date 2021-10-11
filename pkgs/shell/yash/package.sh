@@ -1,4 +1,4 @@
-{% extends '//util/autohell.sh' %}
+{% extends '//mix/template/autohell.sh' %}
 
 {% block fetch %}
 # url https://github.com/magicant/yash/releases/download/2.51/yash-2.51.tar.xz

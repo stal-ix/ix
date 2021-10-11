@@ -1,4 +1,4 @@
-{% extends '//util/template.sh' %}
+{% extends '//mix/template/template.sh' %}
 
 {% block fetch %}
 # url https://github.com/git/git/archive/refs/tags/v2.32.0-rc1.tar.gz

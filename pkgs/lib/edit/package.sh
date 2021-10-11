@@ -1,4 +1,4 @@
-{% extends '//util/autohell.sh' %}
+{% extends '//mix/template/autohell.sh' %}
 
 {% block fetch %}
 # url http://thrysoee.dk/editline/libedit-20210522-3.1.tar.gz

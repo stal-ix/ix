@@ -1,4 +1,4 @@
-{% extends '//util/template.sh' %}
+{% extends '//mix/template/template.sh' %}
 
 {% block deps %}
 # bld shell/dash/minimal dev/lang/clang boot/final/env/tools

@@ -1,4 +1,4 @@
-{% extends '//util/cmake.sh' %}
+{% extends '//mix/template/cmake.sh' %}
 
 {% block fetch %}
 # url https://github.com/gabime/spdlog/archive/refs/tags/v1.8.5.tar.gz

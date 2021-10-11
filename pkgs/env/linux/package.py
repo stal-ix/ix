@@ -1,4 +1,4 @@
-{% extends '//util/env.py' %}
+{% extends '//mix/template/env.py' %}
 
 {% block env %}
 {% endblock %}

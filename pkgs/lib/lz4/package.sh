@@ -1,4 +1,4 @@
-{% extends '//util/make.sh' %}
+{% extends '//mix/template/make.sh' %}
 
 {% block fetch %}
 # url https://github.com/lz4/lz4/archive/refs/tags/v1.9.3.tar.gz

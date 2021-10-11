@@ -1,4 +1,4 @@
-{% extends '//util/freeze.sh' %}
+{% extends '//mix/template/freeze.sh' %}
 
 {% block fetch %}
 # url https://github.com/pg83/mix/archive/{{mix.flags.mix_ver}}.zip

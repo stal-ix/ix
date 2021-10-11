@@ -1,4 +1,4 @@
-{% extends '//util/autohell.sh' %}
+{% extends '//mix/template/autohell.sh' %}
 
 {% block fetch %}
 # url http://mandoc.bsd.lv/snapshots/mandoc-1.14.6.tar.gz

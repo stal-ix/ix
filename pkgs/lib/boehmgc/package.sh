@@ -1,4 +1,4 @@
-{% extends '//util/autohell.sh' %}
+{% extends '//mix/template/autohell.sh' %}
 
 {% block fetch %}
 # url https://github.com/ivmai/bdwgc/releases/download/v8.0.4/gc-8.0.4.tar.gz

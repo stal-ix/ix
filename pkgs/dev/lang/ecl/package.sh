@@ -1,4 +1,4 @@
-{% extends '//util/make.sh' %}
+{% extends '//mix/template/make.sh' %}
 
 {% block fetch %}
 # url https://common-lisp.net/project/ecl/static/files/release/ecl-21.2.1.tgz

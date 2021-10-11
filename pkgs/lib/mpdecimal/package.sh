@@ -1,4 +1,4 @@
-{% extends '//util/autohell.sh' %}
+{% extends '//mix/template/autohell.sh' %}
 
 {% block fetch %}
 # url https://www.bytereef.org/software/mpdecimal/releases/mpdecimal-2.5.1.tar.gz

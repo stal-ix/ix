@@ -1,4 +1,4 @@
-{% extends '//util/autohell.sh' %}
+{% extends '//mix/template/autohell.sh' %}
 
 {% block fetch %}
 # url https://nlnetlabs.nl/downloads/ldns/ldns-1.7.1.tar.gz

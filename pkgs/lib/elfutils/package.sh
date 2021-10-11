@@ -1,4 +1,4 @@
-{% extends '//util/autohell.sh' %}
+{% extends '//mix/template/autohell.sh' %}
 
 {% block fetch %}
 # url https://sourceware.org/elfutils/ftp/0.185/elfutils-0.185.tar.bz2

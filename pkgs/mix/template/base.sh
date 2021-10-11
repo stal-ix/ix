@@ -33,12 +33,8 @@ echo 'configure stage'
 {% block cflags %}
 {% endblock %}
 
-(
-    set -eu
-
-    {% block preconf %}
-    {% endblock %}
-)
+{% block preconf %}
+{% endblock %}
 
 {% block configure %}
 {% endblock %}

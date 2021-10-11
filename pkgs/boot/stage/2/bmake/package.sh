@@ -1,4 +1,4 @@
-{% extends '//util/base.sh' %}
+{% extends '//mix/template/base.sh' %}
 
 {% block fetch %}
 # url https://www.crufty.net/ftp/pub/sjg/bmake-20210808.tar.gz

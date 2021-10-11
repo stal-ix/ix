@@ -1,4 +1,4 @@
-{% extends '//util/autohell.sh' %}
+{% extends '//mix/template/autohell.sh' %}
 
 {% block fetch %}
 # url https://github.com/libffi/libffi/releases/download/v3.4.2/libffi-3.4.2.tar.gz

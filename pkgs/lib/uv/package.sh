@@ -1,4 +1,4 @@
-{% extends '//util/autohell.sh' %}
+{% extends '//mix/template/autohell.sh' %}
 
 {% block fetch %}
 # url https://dist.libuv.org/dist/v1.41.0/libuv-v1.41.0.tar.gz

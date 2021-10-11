@@ -1,4 +1,4 @@
-{% extends '//util/template.sh' %}
+{% extends '//mix/template/template.sh' %}
 
 {% block fetch %}
 # url https://opensource.apple.com/tarballs/patch_cmds/patch_cmds-17.tar.gz

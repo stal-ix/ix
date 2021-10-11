@@ -1,4 +1,4 @@
-{% extends '//util/autohell.sh' %}
+{% extends '//mix/template/autohell.sh' %}
 
 {% block fetch %}
 # url http://gondor.apana.org.au/~herbert/dash/files/dash-0.5.11.3.tar.gz

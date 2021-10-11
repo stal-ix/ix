@@ -1,4 +1,4 @@
-{% extends '//util/template.sh' %}
+{% extends '//mix/template/template.sh' %}
 
 {% block fetch %}
 # url https://www.kernel.org/pub/linux/kernel/v5.x/linux-5.13.12.tar.xz

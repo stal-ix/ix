@@ -1,4 +1,4 @@
-{% extends '//util/template.sh' %}
+{% extends '//mix/template/template.sh' %}
 
 {% block fetch %}
 # url https://download-fallback.gnome.org/sources/glib/2.68/glib-2.68.4.tar.xz

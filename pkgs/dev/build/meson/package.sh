@@ -1,4 +1,4 @@
-{% extends '//util/template.sh' %}
+{% extends '//mix/template/template.sh' %}
 
 {% block fetch %}
 # url https://github.com/mesonbuild/meson/releases/download/0.58.0/meson-0.58.0.tar.gz

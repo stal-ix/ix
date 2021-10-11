@@ -1,6 +1,6 @@
-{% extends '//util/env.py' %}
+{% extends '//mix/template/env.py' %}
 
 {% block env %}
-export untar="$exe $mix misc untar"
-export unzip="$exe $mix misc unzip"
+export untar="${exe} ${mix} misc untar"
+export unzip="${exe} ${mix} misc unzip"
 {% endblock %}

@@ -1,4 +1,4 @@
-{% extends '//util/autohell.sh' %}
+{% extends '//mix/template/autohell.sh' %}
 
 {% block deps %}
 # bld dev/lang/python/libs {{'lib/linux' | linux}}
