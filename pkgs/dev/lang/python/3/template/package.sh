@@ -79,8 +79,6 @@ ${out}/bin/python3 -c 'import hashlib; import ssl; import lzma; import bz2; impo
 {% block postinstall %}
 cp -R Tools/freeze ${out}/bin/
 rm -rf ${out}/lib/python*/test
-{% block extra_postinstall %}
-{% endblock %}
 ${out}/bin/python3 -c 'import configparser;'
 find ${out} | grep __pycache__ | xargs rm -rf
 {% endblock %}

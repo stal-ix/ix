@@ -33,8 +33,12 @@ echo 'configure stage'
 {% block cflags %}
 {% endblock %}
 
-{% block preconf %}
-{% endblock %}
+(
+    set -eu
+
+    {% block preconf %}
+    {% endblock %}
+)
 
 {% block configure %}
 {% endblock %}
@@ -81,10 +85,8 @@ echo 'install stage'
 {% block postinstall %}
 {% endblock %}
 
-cat << EOF > ${out}/env
-{% block env %}
+{% block prepare_env %}
 {% endblock %}
-EOF
 }
 
 do_unpack() {

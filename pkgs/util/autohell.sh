@@ -1,6 +1,9 @@
 {% extends 'make.sh' %}
 
 {% block configure %}
+{% block autoreconf %}
+{% endblock %}
+
 {% set coflags %}
 {% block coflags %}
 {% endblock %}

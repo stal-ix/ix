@@ -17,7 +17,6 @@ set -u
 export COFLAGS=
 export CMFLAGS=
 export CFLAGS=
-export MAKE_FLAGS=
 export CXXFLAGS=
 export CPPFLAGS=
 export LDFLAGS=

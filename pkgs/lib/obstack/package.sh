@@ -9,7 +9,7 @@
 # bld dev/build/automake/1.16.3 dev/build/make dev/build/pkg-config env/std
 {% endblock %}
 
-{% block preconf %}
+{% block autoreconf %}
 dash ./bootstrap.sh
 {% endblock %}
 

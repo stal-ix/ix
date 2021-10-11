@@ -57,7 +57,7 @@ cd heirloom
     >malloc.h
 
     $MAKE -f Makefile.mk
-) || exit 1
+)
 
 export PRFLAGS="${LDFLAGS}"
 export LDFLAGS="../libcommon/asciitype.o ../libcommon/getdir.o ../libcommon/getopt.o ../libcommon/gmatch.o ../libcommon/ib_alloc.o ../libcommon/ib_close.o ../libcommon/ib_free.o ../libcommon/ib_getlin.o ../libcommon/ib_getw.o ../libcommon/ib_open.o ../libcommon/ib_popen.o ../libcommon/ib_read.o ../libcommon/ib_seek.o ../libcommon/pathconf.o ../libcommon/pfmt_label.o ../libcommon/pfmt.o ../libcommon/regexpr.o ../libcommon/setlabel.o ../libcommon/setuxlabel.o ../libcommon/sighold.o ../libcommon/sigignore.o ../libcommon/signal.o ../libcommon/sigpause.o ../libcommon/sigrelse.o ../libcommon/sigset.o ../libcommon/strtol.o ../libcommon/sysv3.o ../libcommon/utmpx.o ../libcommon/vpfmt.o {{'../libcommon/memalign.o' | darwin}} $PRFLAGS"
@@ -66,13 +66,13 @@ export LDFLAGS="../libcommon/asciitype.o ../libcommon/getdir.o ../libcommon/geto
     set -eu
 
     cd rm && $MAKE -f Makefile.mk
-) || exit 1
+)
 
 (
     set -eu
 
     cd mkdir && $MAKE -f Makefile.mk
-) || exit 1
+)
 
 for i in lib bin share man man/man1 man/man1b man/man2 man/man1n man/man1m; do
     mkdir/mkdir ${out}/$i
@@ -89,7 +89,7 @@ done
     export LDFLAGS="../libcommon/*.o $PRFLAGS"
 
     cd cp && $MAKE -f Makefile.mk cp
-) || exit 1
+)
 
 cp/cp cp/cp ${out}/bin
 cp rm/rm ${out}/bin
@@ -110,7 +110,7 @@ int main() {
     return 1;
 }
 EOF
-) || exit 1
+)
 
 export STRIP=true
 
@@ -118,7 +118,7 @@ export STRIP=true
     set -eu
 
     cd _install && $MAKE -f Makefile.mk
-) || exit 1
+)
 
 cp _install/install_ucb ${out}/bin/install
 
@@ -126,7 +126,7 @@ cp _install/install_ucb ${out}/bin/install
     set -eu
 
     cd chmod && $MAKE -f Makefile.mk
-) || exit 1
+)
 
 cp chmod/chmod ${out}/bin
 
@@ -138,14 +138,14 @@ export LNS=cp
     cd cp
 
     $MAKE LDFLAGS="../libcommon/*.o $PRFLAGS" -f Makefile.mk install
-) || exit 1
+)
 
 for i in rm mkdir _install chmod; do
     (
         set -eu
 
         cd $i && $MAKE -f Makefile.mk install
-    ) || exit 1
+    )
 done
 
 export LNS=ln
@@ -156,7 +156,7 @@ for i in echo pwd env rmdir touch basename dirname chown wc tr ln xargs uniq tim
         set -eu
 
         cd $i && $MAKE CPPFLAGS="{{'-Dmode_t=int' | linux}} ${CPPFLAGS}" -f Makefile.mk install
-    ) || exit 1
+    )
 done
 
 {% if mix.platform.target.os == 'linux' %}
@@ -166,7 +166,7 @@ echo 'extern void* memalign(size_t, size_t);' > libcommon/memalign.h
     set -eu
 
     cd libcommon && rm *.o *.a && $MAKE -f Makefile.mk
-) || exit 1
+)
 {% endif %}
 
 for i in cp cat copy; do
@@ -176,7 +176,7 @@ for i in cp cat copy; do
         cd $i
 
         $MAKE LDFLAGS="../libcommon/sfile.o ../libcommon/oblok.o ${LDFLAGS}" -f Makefile.mk install
-    ) || exit 1
+    )
 done
 
 export MAGIC="${out}/share/magic"
@@ -200,7 +200,7 @@ for i in file find sed cksum cmp col cut dc df dircmp du ed expand fmt fold geto
         cd $i
 
         $MAKE PATH="${PATH}" LDFLAGS="${LDFLAGS}" -f Makefile.mk && $MAKE -f Makefile.mk install
-    ) || exit 1
+    )
 done
 
 (
@@ -209,7 +209,7 @@ done
     export CPPFLAGS="-DUSE_TERMCAP=1 {{'-D_AIX' | linux}} ${CPPFLAGS}"
     cd ls
     $MAKE LDFLAGS="${LDFLAGS}" -f Makefile.mk && $MAKE -f Makefile.mk install
-) || exit 1
+)
 
 (
     set -eu
@@ -217,7 +217,7 @@ done
     export CPPFLAGS="-DEXTERN=extern ${CPPFLAGS}"
     cd diff
     $MAKE LDFLAGS="${LDFLAGS}" -f Makefile.mk && $MAKE -f Makefile.mk install
-)|| exit 1
+)
 
 (
     set -eu
@@ -225,7 +225,7 @@ done
     cd ../heirloom-devtools/yacc
 
     $MAKE LDFLAGS="$PRFLAGS" -f Makefile.mk && $MAKE INSTALL=install -f Makefile.mk install
-) || exit 1
+)
 
 export YACC=yacc
 export PATH="${PWD}:${PATH}"
@@ -233,7 +233,6 @@ export PATH="${PWD}:${PATH}"
 # for factor
 ln -s $(which dash) sh
 export PATH="${PWD}:${PATH}"
-
 export CPPFLAGS="$PRCPPFLAGS"
 
 for i in bc expr factor grep; do
@@ -241,7 +240,7 @@ for i in bc expr factor grep; do
         set -eu
 
         cd $i && $MAKE PATH="${PATH}" LDFLAGS="${LDFLAGS}" -f Makefile.mk && $MAKE -f Makefile.mk install
-    ) || exit 1
+    )
 done
 
 (
@@ -250,7 +249,7 @@ done
     cd ../heirloom-devtools/lex
 
     $MAKE LDFLAGS="$PRFLAGS" -f Makefile.mk && $MAKE INSTALL=install -f Makefile.mk install
-) || exit 1
+)
 
 (
     set -eu
@@ -258,7 +257,7 @@ done
     cd libuxre
 
     $MAKE CPPFLAGS="-I. ${CFLAGS} ${CPPFLAGS}" -f Makefile.mk
-) || exit 1
+)
 
 (
     set -eu
@@ -271,7 +270,7 @@ done
 
     $MAKE LDFLAGS="${LDFLAGS}" -f Makefile.mk
     $MAKE -f Makefile.mk install
-) || exit 1
+)
 
 export PATH="${out}/tmp:${PATH}"
 
@@ -285,8 +284,7 @@ done
     set -eu
 
     cd ${out}/bin && ln -s nawk awk && rm dircmp
-) || exit 1
-
+)
 {% endblock %}
 
 {% block env %}

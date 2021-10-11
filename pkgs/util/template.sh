@@ -12,10 +12,10 @@ for s in ${src}/*; do
         *.patch)
         ;;
         *zip)
-            $unzip $s
+            ${unzip} ${s}
         ;;
         *)
-            $untar $s
+            ${untar} ${s}
         ;;
     esac
 done
@@ -24,11 +24,43 @@ cd *
 {% endblock %}
 
 {% block preconf %}
-cur_dir=${PWD}
 mkdir ${tmp}/tools && cd ${tmp}/tools
-{% block toolconf %}
-{% endblock %}
+
+cat << EOF > strip
+#!$(which dash)
+EOF
+
+chmod +x strip
+
+cat << EOF > arch
+#!$(which dash)
+echo '{{mix.platform.target.arch}}'
+EOF
+
+chmod +x arch
+
 ln -s $(which dash) sh
+
 setup_compiler
-cd ${cur_dir}
+
+(
+    set -eu
+
+    {% block toolconf %}
+    {% endblock %}
+)
+{% endblock %}
+
+{% block prepare_env %}
+cat << EOF > ${out}/env
+{% block env %}
+{% endblock %}
+EOF
+
+(
+    set -eu
+
+    {% block autoenv %}
+    {% endblock %}
+)>> ${out}/env
 {% endblock %}
