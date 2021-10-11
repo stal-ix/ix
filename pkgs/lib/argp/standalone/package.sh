@@ -24,6 +24,5 @@ cp argp.h ${out}/include
 {% endblock %}
 
 {% block env %}
-export CPPFLAGS="-I${out}/include \${CPPFLAGS}"
 export LDFLAGS="-L${out}/lib -largp \${LDFLAGS}"
 {% endblock %}

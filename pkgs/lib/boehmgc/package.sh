@@ -24,6 +24,5 @@ cat ${src}/*.patch* | patch -p1
 {% endblock %}
 
 {% block env %}
-export CPPFLAGS="-I${out}/include \${CPPFLAGS}"
 export LDFLAGS="-L${out}/lib -lgc \${LDFLAGS}"
 {% endblock %}

@@ -18,6 +18,5 @@ make PREFIX=${out} BUILD_SHARED=no install
 {% endblock %}
 
 {% block env %}
-export CPPFLAGS="-I${out}/include \${CPPFLAGS}"
 export LDFLAGS="-L${out}/lib -llz4 \${LDFLAGS}"
 {% endblock %}

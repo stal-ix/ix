@@ -16,6 +16,5 @@ export CPPFLAGS="-D__STDC_ISO_10646__=1 ${CPPFLAGS}"
 
 {% block env %}
 export COFLAGS="--with-libedit=${out} \${COFLAGS}"
-export CPPFLAGS="-I${out}/include \${CPPFLAGS}"
 export LDFLAGS="-L${out}/lib -ledit \${LDFLAGS}"
 {% endblock %}

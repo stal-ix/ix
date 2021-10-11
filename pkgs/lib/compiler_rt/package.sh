@@ -26,6 +26,5 @@ mkdir ${out}/lib && cp libcompiler_rt.a ${out}/lib/
 {% endblock %}
 
 {% block env %}
-export CPPFLAGS="-I${out}/include \${CPPFLAGS}"
 export LDFLAGS="-L${out}/lib -lcompiler_rt \${LDFLAGS}"
 {% endblock %}

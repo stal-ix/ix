@@ -16,7 +16,6 @@
 {% endblock %}
 
 {% block env %}
-export CPPFLAGS="-I${out}/include \${CPPFLAGS}"
 export LDFLAGS="-L${out}/lib -laprutil-1 \${LDFLAGS}"
 export COFLAGS="--with-apr-util=${out} --with-libapr-util=${out} \${COFLAGS}"
 {% endblock %}

@@ -15,6 +15,5 @@ export CFLAGS="-DUSE_LTM -DLTM_DESC ${CFLAGS}"
 {% endblock %}
 
 {% block env %}
-export CPPFLAGS="-I${out}/include \${CPPFLAGS}"
 export LDFLAGS="-L${out}/lib -ltomcrypt \${LDFLAGS}"
 {% endblock %}

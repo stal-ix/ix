@@ -19,7 +19,6 @@
 {% endblock %}
 
 {% block env %}
-export CPPFLAGS="-I${out}/include \${CPPFLAGS}"
 export LDFLAGS="-L${out}/lib -lxml2 \${LDFLAGS}"
 export COFLAGS="--with-libxml2-prefix=${out} \${COFLAGS}"
 {% endblock %}

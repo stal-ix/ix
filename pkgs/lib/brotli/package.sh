@@ -19,6 +19,5 @@ mkdir ${out}/lib && cp libbrotli.a ${out}/lib/
 {% endblock %}
 
 {% block env %}
-export CPPFLAGS="-I${out}/include \${CPPFLAGS}"
 export LDFLAGS="-L${out}/lib -lbrotli \${LDFLAGS}"
 {% endblock %}

@@ -15,6 +15,5 @@
 {% endblock %}
 
 {% block env %}
-export CPPFLAGS="-I${out}/include \${CPPFLAGS}"
 export LDFLAGS="-L${out}/lib -lmetalink \${LDFLAGS}"
 {% endblock %}

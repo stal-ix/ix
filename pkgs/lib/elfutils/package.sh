@@ -46,6 +46,5 @@ cp version.h ${out}/include/elfutils/
 {% endblock %}
 
 {% block env %}
-export CPPFLAGS="-I${out}/include \${CPPFLAGS}"
 export LDFLAGS="-L${out}/lib -ldw -lelf \${LDFLAGS}"
 {% endblock %}

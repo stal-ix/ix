@@ -12,6 +12,5 @@
 
 {% block env %}
 export COFLAGS="--with-mpfr=${out} --with-libmpfr-prefix=${out} \${COFLAGS}"
-export CPPFLAGS="-I${out}/include \${CPPFLAGS}"
 export LDFLAGS="-L${out}/lib -lmpfr \${LDFLAGS}"
 {% endblock %}

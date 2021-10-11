@@ -19,6 +19,5 @@ make prefix=${out} -j ${make_thrs}
 {% endblock %}
 
 {% block env %}
-export CPPFLAGS="-I${out}/include \${CPPFLAGS}"
 export LDFLAGS="-L${out}/lib -lutf8proc \${LDFLAGS}"
 {% endblock %}

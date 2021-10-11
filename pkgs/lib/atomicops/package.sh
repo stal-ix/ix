@@ -10,6 +10,5 @@
 {% endblock %}
 
 {% block env %}
-export CPPFLAGS="-I${out}/include \${CPPFLAGS}"
 export LDFLAGS="-L${out}/lib -latomic_ops \${LDFLAGS}"
 {% endblock %}

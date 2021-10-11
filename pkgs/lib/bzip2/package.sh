@@ -10,6 +10,5 @@
 {% endblock %}
 
 {% block env %}
-export CPPFLAGS="-I${out}/include \${CPPFLAGS}"
 export LDFLAGS="-L${out}/lib -lbz2 \${LDFLAGS}"
 {% endblock %}

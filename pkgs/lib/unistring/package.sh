@@ -17,5 +17,4 @@ export CPPFLAGS="-Dlocale_charset=unistring_locale_charset ${CPPFLAGS}"
 {% block env %}
 export COFLAGS="--with-libunistring-prefix=${out} \${COFLAGS}"
 export LDFLAGS="-L${out}/lib -lunistring \${LDFLAGS}"
-export CPPFLAGS="-I${out}/include \${CPPFLAGS}"
 {% endblock %}

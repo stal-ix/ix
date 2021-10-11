@@ -10,7 +10,6 @@
 {% endblock %}
 
 {% block env %}
-export CPPFLAGS="-I${out}/include \${CPPFLAGS}"
 export LDFLAGS="-L${out}/lib -lonig \${LDFLAGS}"
 export COFLAGS="--with-onig=${out} \${COFLAGS}"
 {% endblock %}

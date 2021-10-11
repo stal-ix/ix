@@ -26,7 +26,6 @@ export CPPFLAGS="-Dlocale_charset=intl_locale_charset ${CPPFLAGS}"
 {% endblock %}
 
 {% block env %}
-export CPPFLAGS="-I${out}/include \${CPPFLAGS}"
 export LDFLAGS="-L${out}/lib -lintl \${LDFLAGS}"
 export COFLAGS="--with-libintl-prefix=${out} \${COFLAGS}"
 {% endblock %}

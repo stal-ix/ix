@@ -15,6 +15,5 @@ mv $out/lib/libdl.a $out/lib/libdlstub.a
 {% endblock %}
 
 {% block env %}
-export CPPFLAGS="-I${out}/include \${CPPFLAGS}"
 export LDFLAGS="-L${out}/lib -ldlstub \${LDFLAGS}"
 {% endblock %}
