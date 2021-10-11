@@ -2,7 +2,7 @@
 
 {% block deps %}
 # bld dev/lang/python/libs {{'lib/linux' | linux}}
-# bld dev/build/make dev/build/pkg-config env/std
+# bld dev/build/make dev/lang/lua dev/build/pkg-config env/std
 {% endblock %}
 
 {% block toolconf %}
@@ -26,11 +26,11 @@ sed -e 's/ffi_type ffi_type.*//'      \
 sed -e 's|/usr|/eat/shit|' -i ./setup.py
 sed -e 's|/usr|/eat/shit|' -i ./Makefile.pre.in
 
-(base64 -d | gcc ${CPPFLAGS} ${CFLAGS} ${CONLYFLAGS} ${LDFLAGS} -o fix -x c -) << EOF
-{% include 'fix.c/base64' %}
+base64 -d << EOF > fix.lua
+{% include 'fix.lua/base64' %}
 EOF
 
-cat Modules/Setup | ./fix | sed -e 's|-l.*||' | grep -v capi | grep -v nis | grep -v readline | grep -v spwd > Modules/Setup.local
+cat Modules/Setup | lua fix.lua | sed -e 's|-l.*||' | grep -v capi | grep -v nis | grep -v readline | grep -v spwd > Modules/Setup.local
 
 # some hand job
 cat << EOF >> Modules/Setup.local
