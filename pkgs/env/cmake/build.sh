@@ -1,8 +1,3 @@
-build_cmake_ps() {
-    echo '' > ps && chmod +x ps
-    export PATH="${PWD}:${PATH}"
-}
-
 build_cmake_prepare() {
     export CPPFLAGS="-Wno-unused-command-line-argument ${CPPFLAGS}"
     export CXXFLAGS="${CPPFLAGS} ${CFLAGS} ${CXXFLAGS}"
@@ -10,15 +5,15 @@ build_cmake_prepare() {
 
     (rm -rf build || true) && mkdir build && cd build
 
-    build_cmake_ps
-
     cmake \
         ${CMFLAGS}                                         \
         -Wno-dev                                           \
         -DCMAKE_INSTALL_PREFIX="${out}"                    \
         -DCMAKE_EXE_LINKER_FLAGS="${LDFLAGS}"              \
-        -DCMAKE_C_COMPILER="gcc"                           \
-        -DCMAKE_CXX_COMPILER="g++"                         \
+        -DCMAKE_C_COMPILER="$(which clang)"                \
+        -DCMAKE_CXX_COMPILER="$(which clang++)"            \
+        -DCMAKE_AR="$(which ar)"                           \
+        -DCMAKE_RANLIB="$(which ranlib)"                   \
         -DCMAKE_BUILD_TYPE=Release                         \
         -DCMAKE_C_FLAGS_RELEASE="${CFLAGS} ${LDFLAGS}"     \
         -DCMAKE_CXX_FLAGS_RELEASE="${CXXFLAGS} ${LDFLAGS}" \

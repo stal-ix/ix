@@ -7,7 +7,6 @@
 {% endblock %}
 
 {% block configure %}
-build_cmake_ps
 {% endblock %}
 
 {% block build %}
