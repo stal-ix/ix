@@ -30,7 +30,6 @@ ln -s $(which dash) sh
 
 setup_compiler
 
-{% block toolconf %}
-{% endblock %}
+{{toolconf}}
 
 cd ${cur_dir}

@@ -19,3 +19,5 @@ EOF
 
     echo 'export CMPATH="'${out}';${CMPATH}"'
 ) >> ${out}/env
+
+cat ${out}/env

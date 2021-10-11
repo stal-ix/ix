@@ -1,7 +1,7 @@
 mkdir bld && cd bld
 
 for s in ${src}/*; do
-    case $s in
+    case ${s} in
         *touch)
         ;;
         *.diff)
