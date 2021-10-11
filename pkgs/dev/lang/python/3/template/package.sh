@@ -5,12 +5,6 @@
 # bld dev/build/make dev/lang/lua dev/build/pkg-config env/std
 {% endblock %}
 
-{% block toolconf %}
-{% if mix.platform.target.os == 'darwin' %}
-ln -s /usr/bin/arch ./
-{% endif %}
-{% endblock %}
-
 {% block patch %}
 sed -e 's/MULTIARCH=\$.*/MULTIARCH=/' \
     -i ./configure

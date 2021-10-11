@@ -25,10 +25,6 @@ for f in fileio.c list.c zipinfo.c; do
 done
 {% endblock %}
 
-{% block toolconf %}
-ln -s $(which true) strip
-{% endblock %}
-
 {% block build %}
 make -f unix/Makefile macosx || true
 {% endblock %}

@@ -9,14 +9,6 @@
 # bld env/std tool/compress/minigzip boot/final/env/tools
 {% endblock %}
 
-{% block toolconf %}
-cat << EOF > strip
-#!$(which dash)
-EOF
-
-chmod +x strip
-{% endblock %}
-
 {% block coflags %}
 --without-shared
 --without-debug

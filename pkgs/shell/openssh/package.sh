@@ -15,12 +15,6 @@
 {% endblock %}
 
 {% block toolconf %}
-echo << EOF > strip
-#!$(which dash)
-EOF
-
-chmod +x strip
-
 ln -s $lib_ncurses/lib/libncurses.a libcurses.a
 export LDFLAGS="-L${PWD} ${LDFLAGS}"
 {% endblock %}
