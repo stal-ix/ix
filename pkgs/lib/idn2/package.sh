@@ -24,5 +24,4 @@ automake --add-missing
 export CPPFLAGS="-I${out}/include \${CPPFLAGS}"
 export LDFLAGS="-L${out}/lib -lidn2 \${LDFLAGS}"
 export COFLAGS="--with-libidn2=${out} \${COFLAGS}"
-export PKG_CONFIG_PATH="${out}/lib/pkgconfig:\${PKG_CONFIG_PATH}"
 {% endblock %}

@@ -27,5 +27,4 @@ export SLANG_CFLAGS="-I${out}/include"
 export SLANG_LIBS="-L${out}/lib -lslang"
 export CPPFLAGS="\${SLANG_CFLAGS} \${CPPFLAGS}"
 export LDFLAGS="\${SLANG_LIBS} \${LDFLAGS}"
-export PKG_CONFIG_PATH="${out}/lib/pkgconfig:\${PKG_CONFIG_PATH}"
 {% endblock %}

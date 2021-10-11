@@ -18,7 +18,6 @@
 export COFLAGS="--with-zstd=${out} \${COFLAGS}"
 export CPPFLAGS="-I${out}/include \${CPPFLAGS}"
 export LDFLAGS="-L${out}/lib -lzstd \${LDFLAGS}"
-export PKG_CONFIG_PATH="${out}/lib/pkgconfig:\${PKG_CONFIG_PATH}"
 {% endblock %}
 
 {% block test %}

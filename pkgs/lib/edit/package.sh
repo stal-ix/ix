@@ -18,5 +18,4 @@ export CPPFLAGS="-D__STDC_ISO_10646__=1 ${CPPFLAGS}"
 export COFLAGS="--with-libedit=${out} \${COFLAGS}"
 export CPPFLAGS="-I${out}/include \${CPPFLAGS}"
 export LDFLAGS="-L${out}/lib -ledit \${LDFLAGS}"
-export PKG_CONFIG_PATH="${out}/lib/pkgconfig:\${PKG_CONFIG_PATH}"
 {% endblock %}

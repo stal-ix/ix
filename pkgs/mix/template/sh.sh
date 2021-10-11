@@ -14,6 +14,7 @@ set -e
 set -u
 
 # init
+export CMPATH=
 export COFLAGS=
 export CMFLAGS=
 export CFLAGS=

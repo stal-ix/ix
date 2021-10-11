@@ -8,7 +8,3 @@
 {% block deps %}
 # bld dev/lang/m4 dev/build/make env/std
 {% endblock %}
-
-{% block env %}
-export ACLOCAL_PATH="${out}/share/aclocal:${ACLOCAL_PATH}"
-{% endblock %}

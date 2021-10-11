@@ -7,7 +7,6 @@ build_cmake_prepare() {
     export CPPFLAGS="-Wno-unused-command-line-argument ${CPPFLAGS}"
     export CXXFLAGS="${CPPFLAGS} ${CFLAGS} ${CXXFLAGS}"
     export CFLAGS="${CPPFLAGS} ${CONLYFLAGS} ${CFLAGS}"
-    export CMPATH="$(echo ${PATH} | tr ':' ';' | sed -e 's|/bin;|;|g')"
 
     (rm -rf build || true) && mkdir build && cd build
 

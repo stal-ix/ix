@@ -17,5 +17,4 @@
 export CPPFLAGS="-I${out}/include \${CPPFLAGS}"
 export LDFLAGS="-L${out}/lib -lapr-1 \${LDFLAGS}"
 export COFLAGS="--with-apr=${out} --with-libapr=${out} \${COFLAGS}"
-export PKG_CONFIG_PATH="${out}/lib/pkgconfig:\${PKG_CONFIG_PATH}"
 {% endblock %}

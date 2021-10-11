@@ -16,5 +16,4 @@ export LIBFFI_LIBS="-L${out}/lib -lffi"
 export CPPFLAGS="\$LIBFFI_CFLAGS \${CPPFLAGS}"
 export LDFLAGS="\$LIBFFI_LIBS \${LDFLAGS}"
 export COFLAGS="--with-system-ffi=${out} \${COFLAGS}"
-export PKG_CONFIG_PATH="${out}/lib/pkgconfig:\${PKG_CONFIG_PATH}"
 {% endblock %}

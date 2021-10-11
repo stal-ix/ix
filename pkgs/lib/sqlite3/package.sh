@@ -18,5 +18,4 @@ export SQLITE3_ROOT="${out}"
 export CPPFLAGS="-I${out}/include \${CPPFLAGS}"
 export LDFLAGS="-L${out}/lib -lsqlite3 \${LDFLAGS}"
 export COFLAGS="--with-sqlite3=${out} \${COFLAGS}"
-export PKG_CONFIG_PATH="${out}/lib/pkgconfig:\${PKG_CONFIG_PATH}"
 {% endblock %}

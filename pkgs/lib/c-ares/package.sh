@@ -17,5 +17,4 @@
 export COFLAGS="--with-ares=${out} --enable-ares=${out} \${COFLAGS}"
 export CPPFLAGS="-I${out}/include \${CPPFLAGS}"
 export LDFLAGS="-L${out}/lib -lresolv -lcares \${LDFLAGS}"
-export PKG_CONFIG_PATH="${out}/lib/pkgconfig:\${PKG_CONFIG_PATH}"
 {% endblock %}

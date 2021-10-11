@@ -19,5 +19,4 @@
 export CPPFLAGS="-I${out}/include \${CPPFLAGS}"
 export LDFLAGS="-L${out}/lib -laprutil-1 \${LDFLAGS}"
 export COFLAGS="--with-apr-util=${out} --with-libapr-util=${out} \${COFLAGS}"
-export PKG_CONFIG_PATH="${out}/lib/pkgconfig:\${PKG_CONFIG_PATH}"
 {% endblock %}
