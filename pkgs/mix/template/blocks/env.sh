@@ -1,11 +1,9 @@
 cat << EOF > ${out}/env
-{% block env %}
-{% endblock %}
+{{env}}
 EOF
 
 (
     set -eu
 
-    {% block autoenv %}
-    {% endblock %}
+
 ) >> ${out}/env
