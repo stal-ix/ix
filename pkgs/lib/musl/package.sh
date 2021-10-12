@@ -25,6 +25,7 @@ cd ${out}/lib
 
 ar q libcrt.a crt1.o crti.o crtn.o
 ranlib libcrt.a
+
 {% block extractalloc %}
 rm libc.a && mv libmusl.a libc.a
 {% endblock %}

@@ -20,3 +20,7 @@ make INSTALL_TOP=${out} install
 {% block test %}
 make test
 {% endblock %}
+
+{% block postinstall %}
+rm -rf ${out}/lib ${out}/include
+{% endblock %}
