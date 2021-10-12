@@ -30,7 +30,3 @@ mkdir ${out}/include
 cp libcxxrt.a ${out}/lib/
 cp src/*.h ${out}/include/
 {% endblock %}
-
-{% block env %}
-export LDFLAGS="${out}/lib/libcxxrt.a \${LDFLAGS}"
-{% endblock %}

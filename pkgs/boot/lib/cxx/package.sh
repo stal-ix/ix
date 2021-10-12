@@ -47,7 +47,7 @@ mkdir ${out}/lib && cp libc++.a ${out}/lib/
 {% endblock %}
 
 {% block env %}
-export LDFLAGS="${out}/lib/libc++.a \${LDFLAGS} -lpthread -ldl"
+export LDFLAGS="-lpthread -ldl \${LDFLAGS}"
 {% endblock %}
 
 {% block test %}

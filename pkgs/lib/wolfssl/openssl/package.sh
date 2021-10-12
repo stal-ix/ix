@@ -17,5 +17,4 @@ mkdir ${out}/lib && cp libcrypto.a ${out}/lib/
 
 {% block env %}
 export CPPFLAGS="-I${lib_wolfssl}/include/wolfssl \${CPPFLAGS}"
-export LDFLAGS="-L${out}/lib \${LDFLAGS}"
 {% endblock %}

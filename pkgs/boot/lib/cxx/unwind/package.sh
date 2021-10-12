@@ -36,7 +36,3 @@ mkdir ${out}/lib
 cp libunwind.a ${out}/lib
 cp -R include ${out}/
 {% endblock %}
-
-{% block env %}
-export LDFLAGS="${out}/lib/libunwind.a \${LDFLAGS}"
-{% endblock %}

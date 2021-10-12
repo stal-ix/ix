@@ -17,8 +17,10 @@
 -DMI_BUILD_TESTS=OFF
 {% endblock %}
 
-{% block env %}
-export LDFLAGS="-L${out}/lib/mimalloc-2.0 -lmimalloc \${LDFLAGS}"
+{% block postinstall %}
+cd ${out}/lib
+mv mimalloc-*/* ./
+rm mimalloc-*
 {% endblock %}
 
 {% block test %}
