@@ -17,7 +17,3 @@ make prefix=${out} -j ${make_thrs} libutf8proc.a
 
 make prefix=${out} -j ${make_thrs}
 {% endblock %}
-
-{% block env %}
-export LDFLAGS="-L${out}/lib -lutf8proc \${LDFLAGS}"
-{% endblock %}

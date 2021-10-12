@@ -15,6 +15,5 @@
 
 {% block env %}
 export COFLAGS="--with-expat=${out} --with-libexpat-prefix=${out} \${COFLAGS}"
-export LDFLAGS="-L${out}/lib -lexpat \${LDFLAGS}"
 export CMFLAGS="-DCMAKE_USE_SYSTEM_EXPAT=ON -DEXPAT_LIBRARY=${out}/lib/libexpat.a -DEXPAT_INCLUDE_DIR=${out}/include \${CMFLAGS}"
 {% endblock %}

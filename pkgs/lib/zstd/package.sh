@@ -16,7 +16,6 @@
 
 {% block env %}
 export COFLAGS="--with-zstd=${out} \${COFLAGS}"
-export LDFLAGS="-L${out}/lib -lzstd \${LDFLAGS}"
 {% endblock %}
 
 {% block test %}

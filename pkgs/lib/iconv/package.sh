@@ -14,6 +14,5 @@ rm ${out}/lib/libcharset.a
 {% endblock %}
 
 {% block env %}
-export LDFLAGS="-L${out}/lib -liconv \${LDFLAGS}"
 export COFLAGS="--with-libiconv-prefix=${out} --with-iconv=${out} \${COFLAGS}"
 {% endblock %}

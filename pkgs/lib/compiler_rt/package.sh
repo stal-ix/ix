@@ -24,7 +24,3 @@ ranlib libcompiler_rt.a
 {% block install %}
 mkdir ${out}/lib && cp libcompiler_rt.a ${out}/lib/
 {% endblock %}
-
-{% block env %}
-export LDFLAGS="-L${out}/lib -lcompiler_rt \${LDFLAGS}"
-{% endblock %}

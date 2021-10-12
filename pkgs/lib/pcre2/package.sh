@@ -17,7 +17,3 @@
 --enable-jit
 --enable-c++
 {% endblock %}
-
-{% block env %}
-export LDFLAGS="-L${out}/lib -lpcre2-8 \${LDFLAGS}"
-{% endblock %}

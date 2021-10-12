@@ -8,7 +8,3 @@
 {% block deps %}
 # bld dev/build/make env/std
 {% endblock %}
-
-{% block env %}
-export LDFLAGS="-L${out}/lib -latomic_ops \${LDFLAGS}"
-{% endblock %}

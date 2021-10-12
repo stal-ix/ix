@@ -39,6 +39,5 @@ export COFLAGS="--with-ssl=${out} --with-openssl=${out} --with-openssldir=${out}
 export OPENSSL_INCLUDES="-I${out}/include"
 export OPENSSL_LIBS="-L${out}/lib -lssl -lcrypto"
 export OPENSSL_DIR="${out}"
-export LDFLAGS="\${OPENSSL_LIBS} \${LDFLAGS}"
 export CMFLAGS="-DOPENSSL_ROOT_DIR=${out} -DOPENSSL_INCLUDE_DIR=${out}/include \${CMFLAGS}"
 {% endblock %}

@@ -11,6 +11,5 @@
 {% endblock %}
 
 {% block env %}
-export LDFLAGS="-L${out}/lib -lspdlog \${LDFLAGS}"
 export CMFLAGS="-DSPDLOG_INCLUDE_DIR=${out}/include \${CMFLAGS}"
 {% endblock %}

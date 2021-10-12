@@ -38,6 +38,5 @@ cp -R include ${out}/
 {% endblock %}
 
 {% block env %}
-export CPPFLAGS="-I${out}/include \${CPPFLAGS}"
 export LDFLAGS="${out}/lib/libunwind.a \${LDFLAGS}"
 {% endblock %}

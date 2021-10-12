@@ -16,7 +16,3 @@ make PREFIX=${out} BUILD_SHARED=no -j ${make_thrs} allmost
 {% block install %}
 make PREFIX=${out} BUILD_SHARED=no install
 {% endblock %}
-
-{% block env %}
-export LDFLAGS="-L${out}/lib -llz4 \${LDFLAGS}"
-{% endblock %}

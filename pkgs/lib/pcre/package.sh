@@ -20,7 +20,6 @@
 {% endblock %}
 
 {% block env %}
-export LDFLAGS="-L${out}/lib -lpcre \${LDFLAGS}"
 export COFLAGS="--with-pcre=${out} \${COFLAGS}"
 export CMFLAGS="-DPCRE_LIBRARY=${out}/lib/libpcre.a -DPCRE_INCLUDE_DIR=${out}/include \${CMFLAGS}"
 {% endblock %}

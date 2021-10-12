@@ -25,5 +25,4 @@ make install-static
 {% block env %}
 export SLANG_CFLAGS="-I${out}/include"
 export SLANG_LIBS="-L${out}/lib -lslang"
-export LDFLAGS="\${SLANG_LIBS} \${LDFLAGS}"
 {% endblock %}

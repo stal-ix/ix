@@ -16,3 +16,9 @@
 {% block coflags %}
 --with-ensurepip=no
 {% endblock %}
+
+{% block extra_postinstall %}
+rm -rf ${out}/include
+rm -rf ${out}/lib/pkgconfig
+find ${out}/lib/ | grep '\.a$' | xargs rm
+{% endblock %}

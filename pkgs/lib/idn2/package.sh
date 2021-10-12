@@ -21,6 +21,5 @@ automake --add-missing
 {% endblock %}
 
 {% block env %}
-export LDFLAGS="-L${out}/lib -lidn2 \${LDFLAGS}"
 export COFLAGS="--with-libidn2=${out} \${COFLAGS}"
 {% endblock %}

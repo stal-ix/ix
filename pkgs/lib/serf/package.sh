@@ -33,7 +33,5 @@ scons install
 {% endblock %}
 
 {% block env %}
-export CPPFLAGS="-I${out}/include \${CPPFLAGS}"
-export LDFLAGS="-L${out}/lib -lserf-1 \${LDFLAGS}"
 export COFLAGS="--with-serf=${out} --with-libserf=${out} \${COFLAGS}"
 {% endblock %}

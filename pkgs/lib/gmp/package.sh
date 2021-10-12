@@ -11,5 +11,4 @@
 
 {% block env %}
 export COFLAGS="--with-gmp=${out} --with-libgmp-prefix=${out} \${COFLAGS}"
-export LDFLAGS="-L${out}/lib -lgmp \${LDFLAGS}"
 {% endblock %}

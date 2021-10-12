@@ -12,7 +12,3 @@
 {% block coflags %}
 --enable-cxx=no
 {% endblock %}
-
-{% block env %}
-export LDFLAGS="-L${out}/lib -lmpdec \${LDFLAGS}"
-{% endblock %}

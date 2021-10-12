@@ -15,5 +15,5 @@
 
 {% block env %}
 export COFLAGS="--with-ares=${out} --enable-ares=${out} \${COFLAGS}"
-export LDFLAGS="-L${out}/lib -lresolv -lcares \${LDFLAGS}"
+export LDFLAGS="-lresolv \${LDFLAGS}"
 {% endblock %}

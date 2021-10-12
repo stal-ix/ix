@@ -22,7 +22,3 @@ cat ${src}/*.patch* | patch -p1
 --enable-cplusplus
 --enable-large-config
 {% endblock %}
-
-{% block env %}
-export LDFLAGS="-L${out}/lib -lgc \${LDFLAGS}"
-{% endblock %}

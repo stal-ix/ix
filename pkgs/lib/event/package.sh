@@ -16,5 +16,4 @@ ln -s $(which python3) python
 
 {% block env %}
 export COFLAGS="--with-libevent=${out} \${COFLAGS}"
-export LDFLAGS="-L${out}/lib -levent -levent_core -levent_extra -levent_pthreads \${LDFLAGS}"
 {% endblock %}

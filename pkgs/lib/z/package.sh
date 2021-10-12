@@ -22,7 +22,6 @@ mkdir ${out}/bin && cp minigzip ${out}/bin/
 {% endblock %}
 
 {% block env %}
-export LDFLAGS="-L${out}/lib -lz \${LDFLAGS}"
 export COFLAGS="--with-z=${out} \${COFLAGS}"
 export CMFLAGS="-DZLIB_LIBRARY=${out}/lib/libz.a -DZLIB_INCLUDE_DIR=${out}/include -DCMAKE_USE_SYSTEM_ZLIB=ON \${CMFLAGS}"
 {% endblock %}

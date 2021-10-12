@@ -16,6 +16,5 @@
 {% endblock %}
 
 {% block env %}
-export LDFLAGS="-L${out}/lib -lcurl \${LDFLAGS}"
 export CMFLAGS="-DCURL_LIBRARY=${out}/lib/libcurl.a -DCURL_INCLUDE_DIR=${out}/include \${CMFLAGS}"
 {% endblock %}

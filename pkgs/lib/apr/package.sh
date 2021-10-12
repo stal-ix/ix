@@ -14,6 +14,5 @@
 {% endblock %}
 
 {% block env %}
-export LDFLAGS="-L${out}/lib -lapr-1 \${LDFLAGS}"
 export COFLAGS="--with-apr=${out} --with-libapr=${out} \${COFLAGS}"
 {% endblock %}

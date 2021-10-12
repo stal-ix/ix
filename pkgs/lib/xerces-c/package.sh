@@ -23,6 +23,5 @@ export CXXFLAGS="-w ${CXXFLAGS}"
 {% endblock %}
 
 {% block env %}
-export LDFLAGS="-L${out}/lib -lxerces-c \${LDFLAGS}"
 export CMFLAGS="-DXERCESC_INCLUDE_DIR=${out}/include \${CMFLAGS}"
 {% endblock %}

@@ -10,6 +10,5 @@
 {% endblock %}
 
 {% block env %}
-export LDFLAGS="-L${out}/lib -lipt \${LDFLAGS}"
 export COFLAGS="--with-libipt-prefix=${out} \${COFLAGS}"
 {% endblock %}

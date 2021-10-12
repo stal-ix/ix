@@ -13,7 +13,3 @@
 {% block cflags %}
 export CFLAGS="-DUSE_LTM -DLTM_DESC ${CFLAGS}"
 {% endblock %}
-
-{% block env %}
-export LDFLAGS="-L${out}/lib -ltomcrypt \${LDFLAGS}"
-{% endblock %}

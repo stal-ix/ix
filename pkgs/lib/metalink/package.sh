@@ -13,7 +13,3 @@
 {% block coflags %}
 --with-libexpat=yes
 {% endblock %}
-
-{% block env %}
-export LDFLAGS="-L${out}/lib -lmetalink \${LDFLAGS}"
-{% endblock %}

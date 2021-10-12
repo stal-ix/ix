@@ -22,7 +22,3 @@ dash ./autogen.sh
 --enable-reproducible-build
 --enable-tls13
 {% endblock %}
-
-{% block env %}
-export LDFLAGS="-L${out}/lib -lwolfssl \${LDFLAGS}"
-{% endblock %}

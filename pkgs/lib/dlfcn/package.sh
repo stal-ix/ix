@@ -13,7 +13,3 @@
 {% block postinstall %}
 mv $out/lib/libdl.a $out/lib/libdlstub.a
 {% endblock %}
-
-{% block env %}
-export LDFLAGS="-L${out}/lib -ldlstub \${LDFLAGS}"
-{% endblock %}

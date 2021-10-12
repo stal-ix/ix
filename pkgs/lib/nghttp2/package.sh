@@ -13,7 +13,3 @@
 {% block coflags %}
 --enable-lib-only
 {% endblock %}
-
-{% block env %}
-export LDFLAGS="-L${out}/lib -lnghttp2 \${LDFLAGS}"
-{% endblock %}

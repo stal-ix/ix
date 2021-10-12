@@ -8,7 +8,3 @@
 {% block deps %}
 # bld env/c boot/final/env/tools
 {% endblock %}
-
-{% block env %}
-export LDFLAGS="-L${out}/lib -lsigsegv \${LDFLAGS}"
-{% endblock %}

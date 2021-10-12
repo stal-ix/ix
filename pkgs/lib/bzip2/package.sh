@@ -8,7 +8,3 @@
 {% block deps %}
 # bld dev/build/make env/tools env/c env/bootstrap
 {% endblock %}
-
-{% block env %}
-export LDFLAGS="-L${out}/lib -lbz2 \${LDFLAGS}"
-{% endblock %}

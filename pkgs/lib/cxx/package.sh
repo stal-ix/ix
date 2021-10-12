@@ -26,5 +26,4 @@ export LIBS="${out}/lib/libc++abi.a ${LIBS}"
 
 {% block env %}
 export CPPFLAGS="-I${out}/include/c++/v1 \${CPPFLAGS}"
-export LDFLAGS="-L${out}/lib -lunwind -lc++abi -lc++ \${LDFLAGS}"
 {% endblock %}

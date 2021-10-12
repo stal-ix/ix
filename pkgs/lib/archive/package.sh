@@ -15,6 +15,5 @@
 {% endblock %}
 
 {% block env %}
-export LDFLAGS="-L${out}/lib -larchive \${LDFLAGS}"
 export CMFLAGS="-DCMAKE_USE_SYSTEM_LIBARCHIVE=ON -DLibArchive_LIBRARY=${out}/lib/libarchive.a -DLibArchive_INCLUDE_DIR=${out}/include \${CMFLAGS}"
 {% endblock %}

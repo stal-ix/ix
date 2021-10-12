@@ -15,6 +15,5 @@ cd libtextstyle
 {% endblock %}
 
 {% block env %}
-export LDFLAGS="-L${out}/lib -ltextstyle \${LDFLAGS}"
 export COFLAGS="--with-libtextstyle-prefix=${out} \${COFLAGS}"
 {% endblock %}

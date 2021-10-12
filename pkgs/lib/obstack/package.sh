@@ -12,7 +12,3 @@
 {% block autoreconf %}
 dash ./bootstrap.sh
 {% endblock %}
-
-{% block env %}
-export LDFLAGS="-L${out}/lib -lobstack \${LDFLAGS}"
-{% endblock %}

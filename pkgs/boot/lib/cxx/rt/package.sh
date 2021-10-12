@@ -32,24 +32,5 @@ cp src/*.h ${out}/include/
 {% endblock %}
 
 {% block env %}
-export CPPFLAGS="-I${out}/include \${CPPFLAGS}"
 export LDFLAGS="${out}/lib/libcxxrt.a \${LDFLAGS}"
-{% endblock %}
-
-{% block notest %}
-. ${out}/env
-
-clang++ ${CPPFLAGS} ${CFLAGS} ${CXXFLAGS} ${LDFLAGS} -o test -x c++ - << EOF
-int main() {
-    try {
-        throw 1;
-    } catch (...) {
-        return 0;
-    }
-
-    return 1;
-}
-EOF
-
-./main
 {% endblock %}

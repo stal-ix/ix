@@ -7,7 +7,3 @@
 {% block postinstall %}
 rm -rf ${out}/bin
 {% endblock %}
-
-{% block env %}
-export LDFLAGS="-L${out}/lib -lmagic \${LDFLAGS}"
-{% endblock %}

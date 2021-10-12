@@ -15,6 +15,5 @@
 {% endblock %}
 
 {% block env %}
-export LDFLAGS="-L${out}/lib -lldns \${LDFLAGS}"
 export COFLAGS="--with-ldns=${out} \${COFLAGS}"
 {% endblock %}

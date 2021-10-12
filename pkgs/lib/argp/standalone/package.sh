@@ -22,7 +22,3 @@ mkdir ${out}/include
 cp libargp.a ${out}/lib
 cp argp.h ${out}/include
 {% endblock %}
-
-{% block env %}
-export LDFLAGS="-L${out}/lib -largp \${LDFLAGS}"
-{% endblock %}

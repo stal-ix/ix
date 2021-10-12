@@ -9,7 +9,3 @@
 # {{'lib sys/framework/AppKit' | darwin}}
 # bld dev/build/cmake dev/build/pkg-config env/std
 {% endblock %}
-
-{% block env %}
-export LDFLAGS="-L${out}/lib -lclipboard \${LDFLAGS}"
-{% endblock %}

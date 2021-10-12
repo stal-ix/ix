@@ -44,7 +44,3 @@ done
 
 cp version.h ${out}/include/elfutils/
 {% endblock %}
-
-{% block env %}
-export LDFLAGS="-L${out}/lib -ldw -lelf \${LDFLAGS}"
-{% endblock %}

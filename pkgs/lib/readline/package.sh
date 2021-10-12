@@ -19,6 +19,5 @@ export CPPFLAGS="-Dxmalloc=rl_xmalloc -Dxrealloc=Drl_xrealloc ${CPPFLAGS}"
 {% endblock %}
 
 {% block env %}
-export LDFLAGS="-L${out}/lib -lreadline \${LDFLAGS}"
 export COFLAGS="--with-installed-readline=${out} --with-readline=${out} \${COFLAGS}"
 {% endblock %}

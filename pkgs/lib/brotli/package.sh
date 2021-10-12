@@ -17,7 +17,3 @@ make -j ${make_thrs} lib
 cp -R ./c/include ${out}/
 mkdir ${out}/lib && cp libbrotli.a ${out}/lib/
 {% endblock %}
-
-{% block env %}
-export LDFLAGS="-L${out}/lib -lbrotli \${LDFLAGS}"
-{% endblock %}

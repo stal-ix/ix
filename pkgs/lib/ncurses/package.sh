@@ -30,5 +30,4 @@ cd ${out}/lib && (for i in `ls *.a`; do q=`echo $i | tr -d 'w'`; ln -s $i $q; do
 
 {% block env %}
 export COFLAGS="--with-curses=${out} --with-ncurses=${out} \${COFLAGS}"
-export LDFLAGS="-L${out}/lib -lncurses -ltinfo -lpanel -lmenu -lform \${LDFLAGS}"
 {% endblock %}

@@ -9,7 +9,3 @@
 # lib lib/cxx lib/ncurses
 # bld dev/build/cmake env/std
 {% endblock %}
-
-{% block env %}
-export LDFLAGS="-L${out}/lib -ltvision \${LDFLAGS}"
-{% endblock %}

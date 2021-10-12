@@ -8,7 +8,3 @@
 {% block deps %}
 # bld env/std dev/build/make
 {% endblock %}
-
-{% block env %}
-export LDFLAGS="-L${out}/lib -ltommath \${LDFLAGS}"
-{% endblock %}

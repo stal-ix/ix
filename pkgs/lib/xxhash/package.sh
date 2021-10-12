@@ -24,5 +24,4 @@ make NO_C90_TEST=true test
 
 {% block env %}
 export COFLAGS="--with-xxhash=${out} --with-libxxhash-prefix=${out} \${COFLAGS}"
-export LDFLAGS="-L${out}/lib -lxxhash \${LDFLAGS}"
 {% endblock %}

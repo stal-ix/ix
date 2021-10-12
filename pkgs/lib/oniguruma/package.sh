@@ -10,6 +10,5 @@
 {% endblock %}
 
 {% block env %}
-export LDFLAGS="-L${out}/lib -lonig \${LDFLAGS}"
 export COFLAGS="--with-onig=${out} \${COFLAGS}"
 {% endblock %}

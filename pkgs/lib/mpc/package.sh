@@ -12,5 +12,4 @@
 
 {% block env %}
 export COFLAGS="--with-mpc=${out} \${COFLAGS}"
-export LDFLAGS="-L${out}/lib -lmpc \${LDFLAGS}"
 {% endblock %}
