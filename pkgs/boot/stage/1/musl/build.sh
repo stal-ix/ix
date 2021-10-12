@@ -21,15 +21,15 @@ EOF
 >include/sys/cdefs.h
 >include/sys/sysctl.h
 
-export MFLAGS="$MFLAGS -iquote ${PWD}/arch/x86_64"
-export MFLAGS="$MFLAGS -iquote ${PWD}/src/internal"
-export MFLAGS="$MFLAGS -isystem ${PWD}/arch/x86_64"
-export MFLAGS="$MFLAGS -isystem ${PWD}/arch/generic"
-export MFLAGS="$MFLAGS -isystem ${PWD}/src/include"
-export MFLAGS="$MFLAGS -isystem ${PWD}/src/internal"
-export MFLAGS="$MFLAGS -isystem ${PWD}/include"
+export MFLAGS="${MFLAGS} -iquote ${PWD}/arch/x86_64"
+export MFLAGS="${MFLAGS} -iquote ${PWD}/src/internal"
+export MFLAGS="${MFLAGS} -isystem ${PWD}/arch/x86_64"
+export MFLAGS="${MFLAGS} -isystem ${PWD}/arch/generic"
+export MFLAGS="${MFLAGS} -isystem ${PWD}/src/include"
+export MFLAGS="${MFLAGS} -isystem ${PWD}/src/internal"
+export MFLAGS="${MFLAGS} -isystem ${PWD}/include"
 
-export CFLAGS="-w $MFLAGS -D__STDC_HOSTED__ -D_XOPEN_SOURCE=700 -U_GNU_SOURCE ${CPPFLAGS} -ffreestanding -nostdinc -std=c99 ${CFLAGS}"
+export CFLAGS="-w ${MFLAGS} -D__STDC_HOSTED__ -D_XOPEN_SOURCE=700 -U_GNU_SOURCE ${CPPFLAGS} -ffreestanding -nostdinc -std=c99 ${CFLAGS}"
 
 objs=""
 
@@ -104,7 +104,6 @@ for x in m pthread dl; do
 done
 
 ./tool << EOF > ${out}/env
-export CPPFLAGS="$MFLAGS \${CPPFLAGS}"
-export CFLAGS="-ffreestanding -nostdinc \${CFLAGS}"
-export LDFLAGS="-static -nostdlib -nostdlib++ -L${PWD} -lmusl \${LDFLAGS}"
+export CPPFLAGS="${MFLAGS} \${CPPFLAGS}"
+export LDFLAGS="-L${PWD} -lmusl \${LDFLAGS}"
 EOF

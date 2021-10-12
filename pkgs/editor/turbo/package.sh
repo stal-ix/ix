@@ -6,15 +6,12 @@
 {% endblock %}
 
 {% block deps %}
-# bld lib/cxx lib/fmt lib/tvision lib/clipboard dev/build/cmake env/std
+# bld lib/cxx lib/fmt lib/magic lib/tvision lib/clipboard
+# bld dev/build/cmake env/std
 {% endblock %}
 
 {% block patch %}
 echo 'install(TARGETS turbo DESTINATION bin)' >> CMakeLists.txt
-{% endblock %}
-
-{% block cflags %}
-export CPPFLAGS="-I$tool_gnu_file/include ${CPPFLAGS}"
 {% endblock %}
 
 {% block cmflags %}

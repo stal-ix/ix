@@ -6,6 +6,6 @@
 {% endblock %}
 
 {% block deps %}
-# {{'lib sys/framework/AppKit' | darwin}}
+# lib {{'sys/framework/AppKit' | darwin}}
 # bld dev/build/cmake dev/build/pkg-config env/std
 {% endblock %}
