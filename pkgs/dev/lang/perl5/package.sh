@@ -6,18 +6,13 @@
 {% endblock %}
 
 {% block deps %}
-# bld lib/z lib/gdbm lib/iconv dev/build/make tool/gnu/coreutils/8.32 shell/bash/minimal env/std
+# bld lib/z lib/dlfcn lib/gdbm lib/iconv
+# bld dev/build/make tool/gnu/coreutils/8.32 shell/bash/minimal env/std
 {% endblock %}
 
 {% block cflags %}
 # too much warnings with clang
 export CPPFLAGS="-w ${CPPFLAGS}"
-
-echo > empty.c
-gcc -c empty.c -o empty.o
-ar q libdl.a empty.o
-
-export LDFLAGS="-L${PWD} ${LDFLAGS}"
 {% endblock %}
 
 {% block toolconf %}
