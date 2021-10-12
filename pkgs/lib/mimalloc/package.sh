@@ -20,7 +20,7 @@
 {% block postinstall %}
 cd ${out}/lib
 mv mimalloc-*/* ./
-rm mimalloc-*
+rm -rf mimalloc-*
 {% endblock %}
 
 {% block test %}
