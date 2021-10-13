@@ -1,7 +1,7 @@
-{% extends '//dev/lang/bison/351/stage0/package.sh' %}
+{% extends '//dev/lang/bison/341/stage1/package.sh' %}
 
 {% block bison %}
-# bld dev/lang/bison/351/stage0
+# bld dev/lang/bison/341/stage1
 {% endblock %}
 
 {% block patch %}

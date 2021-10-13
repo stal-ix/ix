@@ -23,8 +23,15 @@ EOF
 chmod +x install_name_tool
 {% endblock %}
 
+{% block patch %}
+sed -e "s|/usr/bin/||g"             \
+    -e "s|/usr/|/nowhere/|g"        \
+    -e "s|/bin/sh|$(which dash)|g"  \
+    -i Configure
+{% endblock %}
+
 {% block configure %}
-bash ./Configure -des \
+bash Configure -des \
     -Dusethreads \
     -Dprefix=${out} \
     -Duseperlio \
