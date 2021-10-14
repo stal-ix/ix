@@ -21,9 +21,14 @@ export ac_cv_search_tgetent=no
 >gdbsupport/new-op.cc
 >gdb/stub-termcap.c
 
-#find . | grep \\.y | while read l; do
-#    touch ${l}
-#done
+find . | grep \\.y | while read l; do
+    touch ${l}
+done
+
+(
+    echo 'realto=$3; trap "mv \$to \$realto" exit'
+    cat ylwrap
+) > _ && mv _ ylwrap
 {% endblock %}
 
 {% block coflags %}
