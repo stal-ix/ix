@@ -7,7 +7,7 @@
 
 {% block deps %}
 # bld lib/intl lib/glib lib/iconv lib/{{self.typ().strip()}}
-# bld dev/build/make dev/build/pkg-config env/std
+# bld dev/build/make dev/build/pkg-config dev/lang/perl5 env/std
 # run tool/compress/bsdtar tool/compress/bzip2 tool/compress/gzip
 # run tool/compress/p7zip tool/compress/unrar tool/compress/unzip
 # run tool/compress/xz tool/compress/zip

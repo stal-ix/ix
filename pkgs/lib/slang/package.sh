@@ -6,8 +6,17 @@
 {% endblock %}
 
 {% block deps %}
-# lib lib/z lib/pcre lib/iconv lib/readline lib/oniguruma
+# lib lib/z lib/pcre lib/iconv lib/readline lib/ncurses lib/oniguruma
 # bld dev/build/make env/std
+{% endblock %}
+
+{% block toolconf %}
+cat << EOF > ncurses5-config
+#!$(which dash)
+echo ${lib_ncurses}/share/terminfo
+EOF
+
+chmod +x ncurses5-config
 {% endblock %}
 
 {% block coflags %}

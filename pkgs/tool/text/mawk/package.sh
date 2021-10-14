@@ -6,5 +6,6 @@
 {% endblock %}
 
 {% block deps %}
-# bld lib/readline dev/build/make env/std
+# bld lib/readline
+# bld dev/lang/byacc dev/build/make env/std
 {% endblock %}
