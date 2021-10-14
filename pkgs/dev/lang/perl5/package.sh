@@ -7,7 +7,7 @@
 
 {% block deps %}
 # bld lib/z lib/dlfcn lib/gdbm lib/iconv
-# bld dev/build/make tool/gnu/coreutils/8.32 shell/bash/minimal env/std
+# bld dev/build/make shell/bash/minimal env/std
 {% endblock %}
 
 {% block cflags %}

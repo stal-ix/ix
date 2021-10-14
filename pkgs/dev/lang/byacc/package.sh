@@ -6,7 +6,7 @@
 {% endblock %}
 
 {% block deps %}
-# bld dev/build/make env/std
+# bld env/c boot/final/env/tools
 {% endblock %}
 
 {% block postinstall %}

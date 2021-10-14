@@ -1,4 +1,4 @@
-{% extends '//tool/gnu/coreutils/8.32/package.sh' %}
+{% extends '//tool/gnu/coreutils/template/package.sh' %}
 
 {% block fetch %}
 # url https://ftp.gnu.org/gnu/coreutils/coreutils-9.0.tar.xz
@@ -6,7 +6,7 @@
 {% endblock %}
 
 {% block coreutils_deps_extra %}
-# bld lib/openssl lib/gmp dev/lang/perl5
+# bld lib/openssl lib/gmp dev/lang/bison dev/lang/perl5
 {% endblock %}
 
 {% block coreutils_coflags_extra %}

@@ -8,7 +8,7 @@
 {% block deps %}
 # lib lib/ncurses
 # bld lib/event lib/utf8proc
-# bld dev/build/make dev/lang/byacc dev/build/pkg-config env/std
+# bld dev/build/make dev/lang/bison dev/build/pkg-config env/std
 {% endblock %}
 
 {% block patch %}

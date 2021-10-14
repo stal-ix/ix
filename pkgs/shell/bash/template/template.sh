@@ -5,12 +5,8 @@ export CPPFLAGS="-Dsh_unset_nodelay_mode=bash_sh_unset_nodelay_mode -Dsh_get_env
 {% endblock %}
 
 {% block deps %}
-# bld dev/lang/byacc dev/build/make env/std
+# bld dev/build/make env/std boot/final/env/bison
 {% block bashdeps %}{% endblock %}
-{% endblock %}
-
-{% block patch %}
-rm y.tab.* parser-built
 {% endblock %}
 
 {% block coflags %}

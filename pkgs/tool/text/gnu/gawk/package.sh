@@ -6,7 +6,7 @@
 {% endblock %}
 
 {% block deps %}
-# bld lib/intl lib/iconv lib/sigsegv env/c boot/final/env/tools
+# bld lib/intl lib/iconv lib/sigsegv env/c boot/final/env/tools boot/final/env/bison
 {% endblock %}
 
 {% block cflags %}
@@ -16,4 +16,10 @@ export CPPFLAGS="-Derr=gawk_err -Dxmalloc=gawk_xmalloc -Dxrealloc=Dgawk_xrealloc
 {% block coflags %}
 --libexecdir=${out}/bin/awk_exec
 --disable-extensions
+{% endblock %}
+
+{% block test %}
+export PATH="${out}/bin:${PATH}"
+cd test
+make basic
 {% endblock %}

@@ -8,7 +8,7 @@
 {% block deps %}
 # lib lib/intl lib/iconv
 # bld lib/readline
-# bld dev/build/make env/std
+# bld dev/build/make env/std boot/final/env/bison
 {% endblock %}
 
 {% block coflags %}

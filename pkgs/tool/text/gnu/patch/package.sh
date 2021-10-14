@@ -6,5 +6,5 @@
 {% endblock %}
 
 {% block deps %}
-# bld lib/intl lib/iconv env/c boot/final/env/tools
+# bld lib/intl lib/iconv env/c boot/final/env/bison boot/final/env/tools
 {% endblock %}
