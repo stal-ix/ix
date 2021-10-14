@@ -28,11 +28,6 @@ EOF
 chmod +x help2man
 {% endblock %}
 
-{% block postconf %}
-rm tests/bison
-ln -s $(which bison) tests/
-{% endblock %}
-
 {% block build %}
 make
 {% endblock %}
