@@ -10,7 +10,3 @@
 # bld env/std
 # bld dev/build/make
 {% endblock %}
-
-{% block coflags %}
---with-slang=${lib_slang}
-{% endblock %}
