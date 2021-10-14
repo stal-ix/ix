@@ -9,6 +9,10 @@
 # bld env/std dev/build/make lib/linux
 {% endblock %}
 
+{% block toolconf %}
+rm strip
+{% endblock %}
+
 {% block cflags %}
 export CFLAGS="-w ${CFLAGS}"
 {% endblock %}
