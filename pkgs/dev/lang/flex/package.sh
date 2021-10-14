@@ -6,5 +6,6 @@
 {% endblock %}
 
 {% block deps %}
-# bld dev/lang/m4 dev/build/make env/std boot/final/env/bison
+# lib dev/lang/m4
+# bld dev/build/make env/std boot/final/env/bison
 {% endblock %}
