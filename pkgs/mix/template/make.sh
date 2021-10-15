@@ -1,9 +1,16 @@
 {% extends 'template.sh' %}
 
+{% set make_flags %}
+PREFIX="${out}"
+prefix="${out}"
+{% block make_flags %}
+{% endblock %}
+{% endset %}
+
 {% block build %}
-make PREFIX="${out}" prefix="${out}" -j ${make_thrs} || make PREFIX="${out}" prefix="${out}"
+make {{mix.fix_list(make_flags)}} -j ${make_thrs} || make {{mix.fix_list(make_flags)}}
 {% endblock %}
 
 {% block install %}
-make PREFIX="${out}" prefix="${out}" install
+make {{mix.fix_list(make_flags)}} install
 {% endblock %}

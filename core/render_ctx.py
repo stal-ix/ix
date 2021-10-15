@@ -70,6 +70,9 @@ class RenderContext:
 
         return '\n'.join(iter_lines()).strip() + '\n'
 
+    def fix_list(self, lst):
+        return cononize(lst)
+
     @property
     def platform(self):
         return self.config.platform
