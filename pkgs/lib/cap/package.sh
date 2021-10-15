@@ -6,7 +6,7 @@
 {% endblock %}
 
 {% block deps %}
-# bld lib/linux
+# lib lib/linux
 # bld dev/build/make env/std
 {% endblock %}
 

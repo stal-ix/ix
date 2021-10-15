@@ -6,7 +6,7 @@
 {% endblock %}
 
 {% block deps %}
-# bld dev/lang/bison dev/build/make env/std
+# bld dev/lang/bison/3.7.6 dev/build/make env/std
 {% endblock %}
 
 {% block install %}

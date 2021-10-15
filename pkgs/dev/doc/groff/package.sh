@@ -7,7 +7,8 @@
 
 {% block deps %}
 # bld lib/cxx lib/uchardet
-# bld dev/lang/perl5 dev/lang/bison dev/doc/texinfo dev/build/make dev/build/pkg-config env/std
+# bld dev/lang/perl5 dev/lang/bison/3.7.6 dev/doc/texinfo
+# bld dev/build/make dev/build/pkg-config env/std
 {% endblock %}
 
 {% block patch %}

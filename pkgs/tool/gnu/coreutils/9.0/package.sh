@@ -6,7 +6,7 @@
 {% endblock %}
 
 {% block coreutils_deps_extra %}
-# bld lib/openssl lib/gmp dev/lang/bison dev/lang/perl5
+# bld lib/openssl lib/gmp dev/lang/bison/3.7.6 dev/lang/perl5
 {% endblock %}
 
 {% block coreutils_coflags_extra %}

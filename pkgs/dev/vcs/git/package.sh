@@ -1,4 +1,4 @@
-{% extends '//mix/template/template.sh' %}
+{% extends '//mix/template/make.sh' %}
 
 {% block fetch %}
 # url https://github.com/git/git/archive/refs/tags/v2.32.0-rc1.tar.gz
@@ -16,10 +16,7 @@ ln -s $(which bsdtar) tar
 ln -s $(which bsdcpio) cpio
 {% endblock %}
 
-{% block build %}
-make prefix=${out} V=1 CC=gcc INSTALL_SYMLINKS=yes -j ${make_thrs}
-{% endblock %}
-
-{% block install %}
-make prefix=${out} V=1 CC=gcc INSTALL_SYMLINKS=yes install
+{% block make_flags %}
+INSTALL_SYMLINKS=yes
+NO_REGEX=NeedsStartEnd
 {% endblock %}

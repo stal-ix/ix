@@ -7,9 +7,17 @@
 
 {% block deps %}
 # bld lib/iconv lib/intl lib/unistring lib/xml2 lib/textstyle
-# bld dev/build/make tool/compress/minigzip env/std
+# bld dev/build/make dev/lang/bison/3.6.4 tool/compress/minigzip env/std
+{% endblock %}
+
+{% block postunpack %}
+cd gettext-tools
 {% endblock %}
 
 {% block coflags %}
 --with-installed-libtextstyle
+{% endblock %}
+
+{% block postinstall %}
+rm -rf ${out}/lib ${out}/include
 {% endblock %}

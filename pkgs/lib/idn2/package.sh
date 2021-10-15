@@ -11,8 +11,8 @@
 {% endblock %}
 
 {% block cflags %}
-{% if mix.platform.target.os == 'darwin' %}
 export CPPFLAGS="-Derror=idna2_error ${CPPFLAGS}"
+{% if mix.platform.target.os == 'darwin' %}
 {% endif %}
 {% endblock %}
 
