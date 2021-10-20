@@ -2,7 +2,7 @@
 
 {% block deps %}
 # bld {{'boot/lib/linux' | linux}} boot/lib/z boot/lib/compiler_rt
-# bld boot/stage/6/lua boot/stage/5/env
+# bld boot/stage/5/env
 {% endblock %}
 
 {% block extra_modules %}

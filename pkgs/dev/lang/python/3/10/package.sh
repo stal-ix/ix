@@ -7,10 +7,10 @@
 
 {% block cflags %}
 {% block fix_readline %}
+export COFLAGS=$(echo "${COFLAGS}" | tr ' ' '\n' | grep -v 'with-readline' | tr '\n' ' ')
+
 {% if mix.flags.get('readline', '') == 'edit' %}
 export COFLAGS="--with-readline=edit ${COFLAGS}"
-{% else %}
-export COFLAGS=$(echo "${COFLAGS}" | tr ' ' '\n' | grep -v 'with-readline' | tr '\n' ' ')
 {% endif %}
 {% endblock %}
 {% endblock %}
