@@ -11,10 +11,6 @@
 # bld dev/build/make dev/lang/byacc dev/build/pkg-config env/std
 {% endblock %}
 
-{% block patch %}
-rm cmd-parse.c
-{% endblock %}
-
 {% block cflags %}
 export COFLAGS=$(echo ${COFLAGS} | tr ' ' '\n' | grep -v 'static' | tr '\n' ' ')
 {% endblock %}
