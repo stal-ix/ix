@@ -6,7 +6,7 @@
 {% endblock %}
 
 {% block deps %}
-# lib lib/z lib/pcre lib/iconv lib/readline lib/ncurses lib/oniguruma
+# lib lib/z lib/pcre lib/iconv lib/readline lib/curses/any lib/oniguruma
 # bld dev/build/make env/std
 {% endblock %}
 

@@ -7,7 +7,7 @@
 {% block deps %}
 # bld dev/debug/gdb/py
 # bld {{'lib/linux' | linux}} lib/intel-pt
-# bld lib/intl lib/expat lib/ncurses lib/iconv lib/readline
+# bld lib/intl lib/expat lib/curses/any lib/iconv lib/readline
 # bld lib/cxx lib/z lib/xz lib/gmp lib/mpfr lib/mpc lib/xxhash
 # bld dev/build/make dev/lang/byacc dev/lang/flex dev/doc/texinfo env/std dev/build/pkg-config
 {% endblock %}

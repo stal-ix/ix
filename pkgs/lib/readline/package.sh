@@ -6,7 +6,7 @@
 {% endblock %}
 
 {% block deps %}
-# lib lib/ncurses
+# lib lib/curses/any
 # bld dev/build/make env/std
 {% endblock %}
 

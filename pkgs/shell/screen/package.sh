@@ -6,7 +6,7 @@
 {% endblock %}
 
 {% block deps %}
-# bld lib/ncurses dev/build/make env/std
+# bld lib/curses/any dev/build/make env/std
 {% endblock %}
 
 {% block coflags %}

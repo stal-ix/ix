@@ -6,7 +6,7 @@
 {% endblock %}
 
 {% block bashdeps %}
-# bld lib/readline lib/ncurses lib/intl lib/iconv
+# bld lib/readline lib/curses/any lib/intl lib/iconv
 {% endblock %}
 
 {% block bashflags %}

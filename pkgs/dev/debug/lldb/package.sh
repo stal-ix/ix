@@ -6,7 +6,7 @@
 
 {% block deps %}
 # bld {{'lib/linux' | linux}} {{'sys/framework/CoreFoundation' | darwin}}
-# bld lib/cxx lib/ncurses lib/edit lib/xz lib/xml2
+# bld lib/cxx lib/curses/any lib/edit lib/xz lib/xml2
 # bld dev/lang/python/3/10/lib(readline=edit)
 # bld dev/build/cmake dev/tool/swig/4 env/std
 {% endblock %}
