@@ -5,10 +5,10 @@
 {% endblock %}
 
 {% block deps %}
-# bld {{'lib/linux' | linux}}
-# bld {{'sys/framework/CoreFoundation' | darwin}}
+# bld {{'lib/linux' | linux}} {{'sys/framework/CoreFoundation' | darwin}}
 # bld lib/cxx lib/ncurses lib/edit lib/xz lib/xml2
-# bld dev/lang/python/3/minimal dev/build/cmake env/std
+# bld dev/lang/python/3/10/lib(readline=edit)
+# bld dev/build/cmake dev/tool/swig/4 env/std
 {% endblock %}
 
 {% block patch %}
@@ -28,6 +28,7 @@ sed -e 's|libkind SHARED|libkind STATIC|' -i lldb/cmake/modules/AddLLDB.cmake
 -DLLDB_ENABLE_CURSES=ON
 -DLLDB_ENABLE_LZMA=ON
 -DLLDB_ENABLE_LIBXML2=ON
+-DLLDB_ENABLE_PYTHON=ON
 ../llvm
 {% endblock %}
 

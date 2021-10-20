@@ -7,15 +7,8 @@
 
 {% block deps %}
 # bld lib/intl lib/yajl lib/cap lib/seccomp lib/argp/standalone
-# bld dev/build/make dev/build/automake/1.16.3 dev/build/pkg-config dev/lang/python/3/minimal
+# bld dev/build/make dev/build/pkg-config dev/lang/python/3/minimal
 # bld env/std
-{% endblock %}
-
-{% block toolconf %}
-#cat << EOF > git
-#EOF
-#
-#chmod +x git
 {% endblock %}
 
 {% block coflags %}

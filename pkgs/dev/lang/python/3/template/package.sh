@@ -66,7 +66,7 @@ sed -e 's|spec is None|spec is None or spec.loader is None|' -i Lib/modulefinder
 {% block test %}
 ${out}/bin/python3 -c 'import zlib; import multiprocessing; import cProfile;'
 {% block extra_tests %}
-${out}/bin/python3 -c 'import hashlib; import ssl; import lzma; import bz2; import sqlite3; import readline;'
+${out}/bin/python3 -c 'import hashlib; import ssl; import lzma; import bz2; import sqlite3;'
 {% endblock %}
 {% endblock %}
 

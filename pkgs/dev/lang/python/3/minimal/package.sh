@@ -13,6 +13,9 @@
 {% block patch_ffi %}
 {% endblock %}
 
+{% block fix_readline %}
+{% endblock %}
+
 {% block coflags %}
 --with-ensurepip=no
 {% endblock %}

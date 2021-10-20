@@ -1,6 +1,7 @@
 import os
 import sys
 import jinja2
+import itertools
 import multiprocessing
 
 import core.utils as cu
@@ -11,6 +12,29 @@ import core.render_ctx as cr
 
 def fmt_sel(s):
     return str(s)
+
+
+def parse_pkg_flags(v):
+    def it():
+        for x in v.split(','):
+            a, b, c = x.partition('=')
+
+            yield a, c
+
+    return dict(it())
+
+
+def parse_pkg_name(v):
+    a, b, c = v.partition('(')
+
+    r = {
+        'name': a,
+    }
+
+    if b:
+        r['flags'] = parse_pkg_flags(c[:-1])
+
+    return r
 
 
 class Package:
@@ -55,20 +79,25 @@ class Package:
             if self.load_package(n).buildable():
                 yield n
 
-    def make_selector(self, lst):
-        def make(v):
-            try:
-                v['name']
-            except Exception:
-                v = {'name': v}
+    def make_selector(self, v):
+        try:
+            v['name']
+        except Exception:
+            v = parse_pkg_name(v)
 
-            return v
+        if 'flags' not in v:
+            v['flags'] = {}
 
-        return [make(x) for x in lst]
+        v['flags'] = dict(itertools.chain(self.flags.items(), v['flags'].items()))
+
+        return v
+
+    def make_selectors(self, lst):
+        return [self.make_selector(x) for x in lst]
 
     # build
     def build_depends(self):
-        return self.make_selector(self.descr.get('build', {}).get('depends', []))
+        return self.make_selectors(self.descr.get('build', {}).get('depends', []))
 
     @cu.cached_method
     def all_build_depends(self):
@@ -86,7 +115,7 @@ class Package:
 
     # runtime
     def runtime_depends(self):
-        return self.make_selector(self.descr.get('runtime', {}).get('depends', []))
+        return self.make_selectors(self.descr.get('runtime', {}).get('depends', []))
 
     @cu.cached_method
     def all_runtime_depends(self):
