@@ -5,7 +5,7 @@
 {% endblock %}
 
 {% block deps %}
-# bld dev/debug/gdb/py
+# bld dev/debug/gdb/py(edit=readline)
 # bld {{'lib/linux' | linux}} lib/intel-pt
 # bld lib/intl lib/expat lib/curses/any lib/iconv lib/readline
 # bld lib/cxx lib/z lib/xz lib/gmp lib/mpfr lib/mpc lib/xxhash

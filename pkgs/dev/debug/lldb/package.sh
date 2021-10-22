@@ -7,7 +7,7 @@
 {% block deps %}
 # bld {{'lib/linux' | linux}} {{'sys/framework/CoreFoundation' | darwin}}
 # bld lib/cxx lib/curses/any lib/edit lib/xz lib/xml2
-# bld dev/lang/python/3/10/lib(readline=edit)
+# bld dev/lang/python/3/10/lib
 # bld dev/build/cmake dev/tool/swig/4 env/std
 {% endblock %}
 
@@ -37,10 +37,10 @@ cd build && ninja lldb
 {% endblock %}
 
 {% block postinstall %}
-cd ${out}
+#cd ${out}
 
-mkdir new
-mv bin/lldb* new/
-rm -rf bin lib share include libexec
-mv new bin
+#mkdir new
+#mv bin/lldb* new/
+#rm -rf bin lib share include libexec
+#mv new bin
 {% endblock %}
