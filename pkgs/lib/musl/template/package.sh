@@ -9,9 +9,6 @@
 {% block musl_postinstall %}
 {% endblock %}
 
-cat << EOF > ${out}/include/sys/cdefs.h
-EOF
-
 cat << EOF > ${out}/include/error.h
 #pragma once
 
