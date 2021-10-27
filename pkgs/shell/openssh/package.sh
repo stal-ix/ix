@@ -11,7 +11,7 @@
 
 {% block deps %}
 # bld lib/z lib/edit lib/ldns lib/openssl
-# bld dev/build/make dev/build/pkg-config tool/text/gnu/patch env/std
+# bld dev/build/make dev/build/pkg-config gnu/patch env/std
 {% endblock %}
 
 {% block toolconf %}

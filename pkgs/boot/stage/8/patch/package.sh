@@ -1,4 +1,4 @@
-{% extends '//tool/text/gnu/patch/package.sh' %}
+{% extends '//gnu/patch/package.sh' %}
 
 {% block deps %}
 # bld boot/stage/7/lib

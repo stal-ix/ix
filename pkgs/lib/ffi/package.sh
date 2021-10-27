@@ -7,7 +7,7 @@
 
 {% block deps %}
 # bld {{'lib/linux' | linux}}
-# bld dev/build/make tool/text/gnu/sed env/std
+# bld dev/build/make gnu/sed env/std
 {% endblock %}
 
 {% block env %}

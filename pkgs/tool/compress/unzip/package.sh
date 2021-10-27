@@ -8,7 +8,7 @@
 {% endblock %}
 
 {% block deps %}
-# bld dev/build/make tool/text/gnu/patch env/tools env/c env/bootstrap
+# bld dev/build/make gnu/patch env/tools env/c env/bootstrap
 {% endblock %}
 
 {% block postunpack %}

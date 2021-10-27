@@ -1,6 +1,6 @@
 # url https://golang.org/dl/go1.16.5.src.tar.gz
 # md5 f3c06704e536dcca1814b16dbcdc4a36
-# bld tool/gnu/tar dev/lang/go/1.4 dev/lang/python/3/minimal
+# bld gnu/tar dev/lang/go/1.4 dev/lang/python/3/minimal
 # bld dev/lang/perl5 shell/bash/minimal env/std
 
 build() {

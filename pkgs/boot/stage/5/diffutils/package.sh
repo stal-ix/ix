@@ -1,4 +1,4 @@
-{% extends '//tool/text/gnu/diffutils/package.sh' %}
+{% extends '//gnu/diffutils/package.sh' %}
 
 {% block deps %}
 # bld boot/stage/4/env

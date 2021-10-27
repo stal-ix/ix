@@ -7,7 +7,7 @@
 
 {% block deps %}
 # lib lib/z lib/apr lib/openssl lib/apr-util
-# bld dev/build/scons tool/text/gnu/patch env/std
+# bld dev/build/scons gnu/patch env/std
 {% endblock %}
 
 {% block patch %}

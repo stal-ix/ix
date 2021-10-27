@@ -1,4 +1,4 @@
-{% extends '//tool/gnu/file/package.sh' %}
+{% extends '//gnu/file/package.sh' %}
 
 {% block deps %}
 # bld dev/build/make env/std

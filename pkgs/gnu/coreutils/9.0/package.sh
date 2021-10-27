@@ -1,4 +1,4 @@
-{% extends '//tool/gnu/coreutils/template/package.sh' %}
+{% extends '//gnu/coreutils/template/package.sh' %}
 
 {% block fetch %}
 # url https://ftp.gnu.org/gnu/coreutils/coreutils-9.0.tar.xz

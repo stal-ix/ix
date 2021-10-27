@@ -7,7 +7,7 @@
 
 {% block deps %}
 # bld lib/z lib/curl lib/iconv lib/expat lib/pcre2 lib/openssl
-# bld dev/build/make dev/lang/perl5 dev/lang/python/3/minimal tool/text/gnu/gettext env/std
+# bld dev/build/make dev/lang/perl5 dev/lang/python/3/minimal gnu/gettext env/std
 # run shell/openssh
 {% endblock %}
 
