@@ -1,7 +1,7 @@
 {% extends '//mix/template/template.sh' %}
 
 {% block deps %}
-# bld shell/dash/minimal dev/lang/clang boot/final/env/tools
+# bld shell/cli/dash/minimal dev/lang/clang boot/final/env/tools
 {% endblock %}
 
 {% block unpack %}

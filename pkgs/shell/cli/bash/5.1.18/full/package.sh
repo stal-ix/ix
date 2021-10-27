@@ -1,4 +1,4 @@
-{% extends '//shell/bash/5.1.18/template/template.sh' %}
+{% extends '//shell/cli/bash/5.1.18/template/template.sh' %}
 
 {% block bashdeps %}
 # bld lib/readline lib/curses/any lib/iconv lib/intl

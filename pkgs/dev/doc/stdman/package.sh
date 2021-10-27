@@ -1,7 +1,7 @@
 {% extends '//mix/template/template.sh' %}
 
 {% block deps %}
-# bld shell/bash/minimal
+# bld shell/cli/bash/minimal
 # bld dev/build/make
 # bld env/std
 {% endblock %}

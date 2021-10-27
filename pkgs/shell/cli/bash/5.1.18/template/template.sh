@@ -1,4 +1,4 @@
-{% extends '//shell/bash/template/template.sh' %}
+{% extends '//shell/cli/bash/template/template.sh' %}
 
 {% block fetch %}
 # url https://ftp.gnu.org/gnu/bash/bash-5.1.8.tar.gz

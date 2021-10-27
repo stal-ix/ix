@@ -1,4 +1,4 @@
-{% extends '//shell/dash/minimal/package.sh' %}
+{% extends '//shell/cli/dash/minimal/package.sh' %}
 
 {% block deps %}
 # bld boot/stage/4/env
