@@ -1,1 +1,1 @@
-# run env/release env/autoconf env/{{mix.platform.target.os}}
+# run env/release env/{{mix.platform.target.os}}

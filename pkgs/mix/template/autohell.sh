@@ -34,5 +34,10 @@ EOF
     chmod +x ${l}
 done
 
-dash ./configure ${COFLAGS} --prefix="${out}" {{mix.prepare_deps(coflags)}}
+dash ./configure ${COFLAGS} \
+    --disable-dependency-tracking \
+    --enable-static               \
+    --disable-shared              \
+    --prefix="${out}"             \
+    {{mix.prepare_deps(coflags)}}
 {% endblock %}
