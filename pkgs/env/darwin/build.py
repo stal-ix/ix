@@ -1,7 +1,6 @@
 import os
 
 
-
 out = os.environ['out']
 sdk = '/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk'
 

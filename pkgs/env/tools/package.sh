@@ -1,3 +1,3 @@
-# run gnu/file tool/gnu/which tool/gnu/coreutils/8.31 tool/gnu/findutils gnu/sed
-# run gnu/gawk tool/text/gnu/grep tool/text/gnu/patch tool/text/gnu/diffutils
+# run gnu/file gnu/which gnu/coreutils/8.31 gnu/findutils gnu/sed
+# run gnu/gawk gnu/grep gnu/patch gnu/diffutils
 # run shell/cli/dash/minimal
