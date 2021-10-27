@@ -1,7 +1,7 @@
 {% extends '//mix/template/env.py' %}
 
 {% block env %}
-export CFLAGS="-fdiagnostics-color $CFLAGS"
-export CXXFLAGS="-nostdinc++ -fdiagnostics-color $CXXFLAGS"
-export LDFLAGS="-fdiagnostics-color $LDFLAGS"
+export CFLAGS="-fdiagnostics-color ${CFLAGS}"
+export CXXFLAGS="-nostdinc++ -fdiagnostics-color ${CXXFLAGS}"
+export LDFLAGS="-fdiagnostics-color ${LDFLAGS}"
 {% endblock %}
