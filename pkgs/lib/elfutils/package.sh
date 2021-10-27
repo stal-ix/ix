@@ -16,16 +16,6 @@ export CPPFLAGS="-I${PWD} ${CPPFLAGS}"
 export ac_cv_c99=yes
 {% endblock %}
 
-{% block patch %}
-mkdir sys && echo > sys/cdefs.h
-
-cat - lib/system.h << EOF > _ && mv _ lib/system.h
-#include <err.h>
-EOF
-
-sed -e 's|#include <error.h>|#define error(status, errno, ...) err(status, __VA_ARGS__)|' -i lib/system.h
-{% endblock %}
-
 {% block coflags %}
 --disable-libdebuginfod
 --disable-debuginfod
