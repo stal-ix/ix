@@ -11,5 +11,5 @@
 {% endblock %}
 
 {% block cflags %}
-export CPPFLAGS="-I.. -isystem ../include/bsd/ ${CPPFLAGS}"
+export CPPFLAGS="-Dreallocarray=bsd_reallocarray -I.. -isystem ../include/bsd/ ${CPPFLAGS}"
 {% endblock %}
