@@ -6,7 +6,7 @@
 {% endblock %}
 
 {% block build %}
-python3 $(dirname $(which python3))/freeze/freeze.py -m {{self.entry_point()}} $(cat modules)
+python3 $(dirname $(command -v python3))/freeze/freeze.py -m {{self.entry_point()}} $(cat modules)
 make CC=clang -j ${make_thrs}
 strip {{self.bin()}}
 upx {{self.bin()}}

@@ -12,7 +12,7 @@
 cat ./configure \
     | sed -e "s|/usr/bin/||g"             \
     | sed -e "s|/usr/|/nowhere/|g"        \
-    | sed -e "s|/bin/sh|$(which dash)|g"  \
+    | sed -e "s|/bin/sh|$(command -v dash)|g"  \
     | sed -e "s|/bin/arch|arch|g"         \
     | sed -e "s|/bin/uname|uname|g"       \
     | sed -e "s|/bin/machine|machine|g"   \
@@ -28,7 +28,7 @@ export ac_cv_target="${ac_cv_build}"
     find . | grep 'config.sub'
 ) | while read l; do
     cat << EOF > ${l}
-#!$(which dash)
+#!$(command -v dash)
 echo ${ac_cv_build}
 EOF
     chmod +x ${l}

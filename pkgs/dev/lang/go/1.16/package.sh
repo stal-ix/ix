@@ -7,7 +7,7 @@ build() {
     cd ${out} && tar xf ${src}/go* && cd go*
 
     cat << EOF > xcrun
-#!$(which python3)
+#!$(command -v python3)
 {% include 'xcrun.py' %}
 EOF
 

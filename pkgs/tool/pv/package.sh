@@ -19,6 +19,6 @@ export LD=ld
 
 {% block toolconf %}
 {% if mix.platform.target.os == 'linux' %}
-ln -s $(which ld.lld) ld
+ln -s $(command -v ld.lld) ld
 {% endif %}
 {% endblock %}

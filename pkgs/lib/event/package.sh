@@ -11,7 +11,7 @@
 {% endblock %}
 
 {% block toolconf %}
-ln -s $(which python3) python
+ln -s $(command -v python3) python
 {% endblock %}
 
 {% block env %}

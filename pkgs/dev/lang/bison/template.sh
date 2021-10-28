@@ -20,5 +20,5 @@ export CPPFLAGS="-Derror=b_error -Derror_at_line=b_error_at_line -Derror_message
 
 {% block postconf %}
 rm tests/bison
-ln -s $(which bison) tests/
+ln -s $(command -v bison) tests/
 {% endblock %}

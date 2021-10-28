@@ -10,10 +10,10 @@ build_cmake_prepare() {
         -Wno-dev                                           \
         -DCMAKE_INSTALL_PREFIX="${out}"                    \
         -DCMAKE_EXE_LINKER_FLAGS="${LDFLAGS}"              \
-        -DCMAKE_C_COMPILER="$(which clang)"                \
-        -DCMAKE_CXX_COMPILER="$(which clang++)"            \
-        -DCMAKE_AR="$(which ar)"                           \
-        -DCMAKE_RANLIB="$(which ranlib)"                   \
+        -DCMAKE_C_COMPILER="$(command -v clang)"                \
+        -DCMAKE_CXX_COMPILER="$(command -v clang++)"            \
+        -DCMAKE_AR="$(command -v ar)"                           \
+        -DCMAKE_RANLIB="$(command -v ranlib)"                   \
         -DCMAKE_BUILD_TYPE=Release                         \
         -DCMAKE_C_FLAGS_RELEASE="${CFLAGS} ${LDFLAGS}"     \
         -DCMAKE_CXX_FLAGS_RELEASE="${CXXFLAGS} ${LDFLAGS}" \

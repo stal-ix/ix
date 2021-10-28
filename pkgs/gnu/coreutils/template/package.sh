@@ -23,7 +23,7 @@ export PATH="${PWD}/src:${PATH}"
 
 {% block toolconf %}
 cat << EOF > makeinfo
-#!$(which dash)
+#!$(command -v dash)
 EOF
 
 chmod +x makeinfo

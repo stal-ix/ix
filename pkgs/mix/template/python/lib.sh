@@ -7,7 +7,7 @@
 {% block build %}
 >frozen.py
 
-python3 $(dirname $(which python3))/freeze/freeze.py -m frozen.py $(cat modules)
+python3 $(dirname $(command -v python3))/freeze/freeze.py -m frozen.py $(cat modules)
 
 python3 << EOF | clang -o frozen.o -c -x c -
 {% include 'preprocess.py' %}

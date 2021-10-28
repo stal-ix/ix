@@ -5,5 +5,5 @@
 {% endblock %}
 
 {% block install %}
-cd ${out} && cp -R $(dirname $(which curl)) ./
+cd ${out} && cp -R $(dirname $(command -v curl)) ./
 {% endblock %}

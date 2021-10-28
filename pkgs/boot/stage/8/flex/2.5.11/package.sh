@@ -11,7 +11,7 @@ build() {
     (
         mkdir tool && cd tool
 
-        ln -s $(which lex) flex
+        ln -s $(command -v lex) flex
         setup_compiler
     )
 

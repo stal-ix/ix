@@ -17,7 +17,7 @@ export CPPFLAGS="-w ${CPPFLAGS}"
 
 {% block toolconf %}
 cat << EOF > install_name_tool
-#!$(which dash)
+#!$(command -v dash)
 EOF
 
 chmod +x install_name_tool
@@ -26,7 +26,7 @@ chmod +x install_name_tool
 {% block patch %}
 sed -e "s|/usr/bin/||g"             \
     -e "s|/usr/|/nowhere/|g"        \
-    -e "s|/bin/sh|$(which dash)|g"  \
+    -e "s|/bin/sh|$(command -v dash)|g"  \
     -i Configure
 {% endblock %}
 

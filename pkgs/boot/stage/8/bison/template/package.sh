@@ -20,7 +20,7 @@ EOF
 chmod +x makeinfo
 
 cat << EOF > help2man
-#!$(which dash)
+#!$(command -v dash)
 
 touch doc/bison.1.tmp
 EOF

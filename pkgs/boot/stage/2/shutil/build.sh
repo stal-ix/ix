@@ -11,6 +11,6 @@ cp() {
 
 ./mkdir ${out}/bin
 
-for i in mkdir cat tr dirname echo which chmod rm test; do
+for i in mkdir cat tr dirname echo chmod rm test; do
     cp $i ${out}/bin/$i
 done

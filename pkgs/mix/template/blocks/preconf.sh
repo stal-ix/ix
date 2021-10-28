@@ -6,27 +6,27 @@ export PATH="${PWD}:${PATH}"
 
 for x in ps strip; do
     cat << EOF > ${x}
-#!$(which dash)
+#!$(command -v dash)
 EOF
 
     chmod +x ${x}
 done
 
 cat << EOF > arch
-#!$(which dash)
+#!$(command -v dash)
 echo '{{mix.platform.target.arch}}'
 EOF
 
 chmod +x arch
 
 cat << EOF > hostname
-#!$(which dash)
+#!$(command -v dash)
 echo localhost
 EOF
 
 chmod +x hostname
 
-ln -s $(which dash) sh
+ln -s $(command -v dash) sh
 
 setup_compiler
 

@@ -7,6 +7,6 @@
 {% block install %}
 mkdir ${out}/bin && cd ${out}/bin
 
-cp $(which minigzip) minigzip
+cp $(command -v minigzip) minigzip
 ln -s minigzip gzip
 {% endblock %}

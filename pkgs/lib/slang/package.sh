@@ -12,7 +12,7 @@
 
 {% block toolconf %}
 cat << EOF > ncurses5-config
-#!$(which dash)
+#!$(command -v dash)
 echo ${lib_ncurses}/share/terminfo
 EOF
 

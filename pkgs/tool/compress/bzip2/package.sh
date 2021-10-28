@@ -5,5 +5,5 @@
 {% endblock %}
 
 {% block install %}
-cd ${out} && cp -R $(dirname $(which bzip2)) ./
+cd ${out} && cp -R $(dirname $(command -v bzip2)) ./
 {% endblock %}

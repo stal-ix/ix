@@ -5,5 +5,5 @@
 {% endblock %}
 
 {% block install %}
-cd ${out} && cp -R $(dirname $(which xz)) ./
+cd ${out} && cp -R $(dirname $(command -v xz)) ./
 {% endblock %}

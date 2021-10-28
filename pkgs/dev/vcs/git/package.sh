@@ -12,8 +12,8 @@
 {% endblock %}
 
 {% block toolconf %}
-ln -s $(which bsdtar) tar
-ln -s $(which bsdcpio) cpio
+ln -s $(command -v bsdtar) tar
+ln -s $(command -v bsdcpio) cpio
 {% endblock %}
 
 {% block make_flags %}

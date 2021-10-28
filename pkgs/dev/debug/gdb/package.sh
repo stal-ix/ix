@@ -33,7 +33,7 @@ export ac_cv_search_tgetent=no
 --with-lzma=yes
 --with-expat=yes
 --with-mpfr=yes
---with-python=$(which python3)
+--with-python=$(command -v python3)
 {% endblock %}
 
 {% block test %}

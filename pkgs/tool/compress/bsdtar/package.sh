@@ -9,5 +9,5 @@ export OSX_SDK=
 {% endblock %}
 
 {% block install %}
-cd ${out} && cp -R $(dirname $(which bsdtar)) ./
+cd ${out} && cp -R $(dirname $(command -v bsdtar)) ./
 {% endblock %}
