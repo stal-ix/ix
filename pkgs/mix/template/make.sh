@@ -1,6 +1,7 @@
 {% extends 'template.sh' %}
 
 {% set make_flags %}
+SHELL="$(command -v dash)"
 PREFIX="${out}"
 prefix="${out}"
 {% block make_flags %}
