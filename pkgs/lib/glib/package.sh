@@ -1,4 +1,4 @@
-{% extends '//mix/template/template.sh' %}
+{% extends '//mix/template/meson.sh' %}
 
 {% block fetch %}
 # url https://download-fallback.gnome.org/sources/glib/2.68/glib-2.68.4.tar.xz
@@ -28,20 +28,12 @@ echo 'int main() {}' > glib/tests/cxx.cpp
 echo 'int main() {}' > tests/cxx-test.cpp
 {% endblock %}
 
-{% block configure %}
-meson \
-    --libdir=${out}/lib \
-    -Ddefault_library=static \
-    -Dprefix=${out} \
-    -Diconv=external \
-    _build {{'-Db_asneeded=false -Db_lundef=false' | darwin}}
+{% block meson_flags %}
+--libdir=${out}/lib
+-Ddefault_library=static
+-Diconv=external
 {% endblock %}
 
-{% block build %}
-cd _build && ninja -j ${make_thrs}
-{% endblock %}
-
-{% block install %}
-cd _build && ninja install
+{% block postinstall %}
 rm -rf ${out}/bin
 {% endblock %}
