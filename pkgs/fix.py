@@ -9,8 +9,8 @@ def fix_line(l):
         return
 
     for x in l[6:].split(' '):
-        if os.path.isfile(x + '/package.sh'):
-            yield l[:6] + x + '/package.sh'
+        if os.path.isfile(x + '/mix.sh'):
+            yield l[:6] + x + '/mix.sh'
         else:
             yield l[:6] + x + '/package.py'
 

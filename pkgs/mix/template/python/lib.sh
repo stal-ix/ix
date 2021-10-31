@@ -1,7 +1,7 @@
 {% extends 'freeze.sh' %}
 
 {% block more_deps %}
-# bld env/std/package.sh
+# bld env/std/mix.sh
 {% endblock %}
 
 {% block build %}

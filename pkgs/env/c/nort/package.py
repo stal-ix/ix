@@ -1,6 +1,6 @@
 def package(mix):
     deps = [
-        'dev/lang/clang/package.sh',
+        'dev/lang/clang/mix.sh',
     ]
 
     return {

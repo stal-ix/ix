@@ -11,7 +11,7 @@ def package(mix):
         },
         'runtime': {
             'depends': deps + [
-                'env/system/package.sh',
+                'env/system/mix.sh',
                 'env/compiler/package.py',
                 'env/bootstrap/package.py',
             ],

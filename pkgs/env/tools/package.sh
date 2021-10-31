@@ -1,9 +1,0 @@
-# run gnu/file/package.sh
-# run gnu/findutils/package.sh
-# run gnu/sed/package.sh
-# run gnu/gawk/package.sh
-# run gnu/grep/package.sh
-# run gnu/patch/package.sh
-# run gnu/diffutils/package.sh
-# run gnu/coreutils/8.31/package.sh
-# run shell/cli/dash/minimal/package.sh

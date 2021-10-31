@@ -1,4 +1,4 @@
-{% extends '//boot/stage/8/bison/template/package.sh' %}
+{% extends '//boot/stage/8/bison/template/mix.sh' %}
 
 {% block fetch %}
 # url https://ftp.gnu.org/gnu/bison/bison-3.4.1.tar.xz

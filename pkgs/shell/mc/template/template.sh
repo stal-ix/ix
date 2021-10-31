@@ -6,22 +6,22 @@
 {% endblock %}
 
 {% block deps %}
-# bld lib/intl/package.sh
-# bld lib/glib/package.sh
-# bld lib/iconv/package.sh
-# bld lib/{{self.typ().strip()}}/package.sh
-# bld dev/build/make/package.sh
-# bld dev/build/pkg-config/package.sh
-# bld dev/lang/perl5/package.sh
-# bld env/std/package.sh
-# run tool/compress/bsdtar/package.sh
-# run tool/compress/bzip2/package.sh
-# run tool/compress/gzip/package.sh
-# run tool/compress/p7zip/package.sh
-# run tool/compress/unrar/package.sh
-# run tool/compress/unzip/package.sh
-# run tool/compress/xz/package.sh
-# run tool/compress/zip/package.sh
+# bld lib/intl/mix.sh
+# bld lib/glib/mix.sh
+# bld lib/iconv/mix.sh
+# bld lib/{{self.typ().strip()}}/mix.sh
+# bld dev/build/make/mix.sh
+# bld dev/build/pkg-config/mix.sh
+# bld dev/lang/perl5/mix.sh
+# bld env/std/mix.sh
+# run tool/compress/bsdtar/mix.sh
+# run tool/compress/bzip2/mix.sh
+# run tool/compress/gzip/mix.sh
+# run tool/compress/p7zip/mix.sh
+# run tool/compress/unrar/mix.sh
+# run tool/compress/unzip/mix.sh
+# run tool/compress/xz/mix.sh
+# run tool/compress/zip/mix.sh
 {% endblock %}
 
 {% block cflags %}
