@@ -6,8 +6,11 @@
 {% endblock %}
 
 {% block deps %}
-# bld lib/linux
-# bld dev/build/make dev/tool/gperf dev/build/automake/1.16.3 env/std
+# bld lib/linux/package.sh
+# bld dev/build/make/package.sh
+# bld dev/tool/gperf/package.sh
+# bld dev/build/automake/1.16.3/package.sh
+# bld env/std/package.sh
 {% endblock %}
 
 {% block autoreconf %}

@@ -6,8 +6,9 @@
 {% endblock %}
 
 {% block deps %}
-# lib lib/cxx
-# bld dev/build/cmake env/std
+# lib lib/cxx/package.sh
+# bld dev/build/cmake/package.sh
+# bld env/std/package.sh
 {% endblock %}
 
 {% block env %}

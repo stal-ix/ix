@@ -6,7 +6,10 @@
 {% endblock %}
 
 {% block bashdeps %}
-# bld lib/readline lib/curses/any lib/intl lib/iconv
+# bld lib/readline/package.sh
+# bld lib/curses/any/package.sh
+# bld lib/intl/package.sh
+# bld lib/iconv/package.sh
 {% endblock %}
 
 {% block bashflags %}

@@ -6,7 +6,10 @@
 {% endblock %}
 
 {% block deps %}
-# lib dev/build/autoconf/2.71 dev/lang/perl5
-# bld dev/build/make env/std
-# run dev/build/libtool dev/lang/m4
+# lib dev/build/autoconf/2.71/package.sh
+# lib dev/lang/perl5/package.sh
+# bld dev/build/make/package.sh
+# bld env/std/package.sh
+# run dev/build/libtool/package.sh
+# run dev/lang/m4/package.sh
 {% endblock %}

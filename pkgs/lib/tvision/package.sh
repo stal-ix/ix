@@ -6,6 +6,9 @@
 {% endblock %}
 
 {% block deps %}
-# lib lib/cxx {{'lib/linux' | linux}} lib/curses/any
-# bld dev/build/cmake env/std
+# lib lib/cxx/package.sh
+# lib {{'lib/linux/package.sh' | linux}}
+# lib lib/curses/any
+# bld dev/build/cmake/package.sh
+# bld env/std/package.sh
 {% endblock %}

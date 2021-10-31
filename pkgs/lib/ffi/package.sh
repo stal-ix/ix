@@ -6,8 +6,10 @@
 {% endblock %}
 
 {% block deps %}
-# bld {{'lib/linux' | linux}}
-# bld dev/build/make gnu/sed env/std
+# bld {{'lib/linux/package.sh' | linux}}
+# bld dev/build/make/package.sh
+# bld gnu/sed/package.sh
+# bld env/std/package.sh
 {% endblock %}
 
 {% block env %}

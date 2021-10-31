@@ -6,8 +6,11 @@
 {% endblock %}
 
 {% block deps %}
-# lib lib/cxx lib/curl lib/iconv
-# bld dev/build/cmake env/std
+# lib lib/cxx/package.sh
+# lib lib/curl/package.sh
+# lib lib/iconv/package.sh
+# bld dev/build/cmake/package.sh
+# bld env/std/package.sh
 {% endblock %}
 
 {% block cflags %}

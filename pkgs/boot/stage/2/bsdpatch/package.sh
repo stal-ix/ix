@@ -6,7 +6,8 @@
 {% endblock %}
 
 {% block deps %}
-# bld boot/stage/2/shutil boot/stage/1/env
+# bld boot/stage/2/shutil/package.py
+# bld boot/stage/1/env/package.sh
 {% endblock %}
 
 {% block preconf %}

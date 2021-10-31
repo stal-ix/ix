@@ -6,7 +6,9 @@
 {% endblock %}
 
 {% block deps %}
-# bld lib/readline dev/build/make env/std
+# bld lib/readline/package.sh
+# bld dev/build/make/package.sh
+# bld env/std/package.sh
 {% endblock %}
 
 {% block cflags %}

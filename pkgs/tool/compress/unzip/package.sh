@@ -8,7 +8,11 @@
 {% endblock %}
 
 {% block deps %}
-# bld dev/build/make gnu/patch env/tools env/c env/bootstrap
+# bld dev/build/make/package.sh
+# bld gnu/patch/package.sh
+# bld env/tools/package.sh
+# bld env/c/package.sh
+# bld env/bootstrap/package.py
 {% endblock %}
 
 {% block postunpack %}

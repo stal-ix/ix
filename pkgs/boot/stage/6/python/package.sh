@@ -1,8 +1,10 @@
 {% extends '//dev/lang/python/3/minimal/package.sh' %}
 
 {% block deps %}
-# bld {{'boot/lib/linux' | linux}} boot/lib/z boot/lib/compiler_rt
-# bld boot/stage/5/env
+# bld {{'boot/lib/linux/package.sh' | linux}}
+# bld boot/lib/z/package.sh
+# bld boot/lib/compiler_rt/package.sh
+# bld boot/stage/5/env/package.sh
 {% endblock %}
 
 {% block extra_modules %}

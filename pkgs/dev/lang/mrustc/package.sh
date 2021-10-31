@@ -10,9 +10,20 @@
 {% endblock %}
 
 {% block deps %}
-# bld lib/z lib/cxx lib/curl lib/iconv lib/openssl
-# bld tool/curl shell/cli/bash/minimal dev/vcs/git gnu/tar tool/gnu/time
-# bld dev/lang/python/3/minimal dev/build/make dev/build/cmake env/std
+# bld lib/z/package.sh
+# bld lib/cxx/package.sh
+# bld lib/curl/package.sh
+# bld lib/iconv/package.sh
+# bld lib/openssl/package.sh
+# bld tool/curl/package.sh
+# bld shell/cli/bash/minimal/package.sh
+# bld dev/vcs/git/package.sh
+# bld gnu/tar/package.sh
+# bld tool/gnu/time/package.py
+# bld dev/lang/python/3/minimal/package.sh
+# bld dev/build/make/package.sh
+# bld dev/build/cmake/package.sh
+# bld env/std/package.sh
 {% endblock %}
 
 {% block postunpack %}

@@ -6,8 +6,13 @@
 {% endblock %}
 
 {% block deps %}
-# bld lib/intl
-# lib dev/lang/m4
-# bld dev/lang/flex dev/lang/perl5 dev/build/make
-# bld dev/build/help2man dev/doc/texinfo env/std boot/final/env/bison
+# bld lib/intl/package.sh
+# lib dev/lang/m4/package.sh
+# bld dev/lang/flex/package.sh
+# bld dev/lang/perl5/package.sh
+# bld dev/build/make/package.sh
+# bld dev/build/help2man/package.sh
+# bld dev/doc/texinfo/package.sh
+# bld env/std/package.sh
+# bld boot/final/env/bison/package.sh
 {% endblock %}

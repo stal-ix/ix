@@ -13,8 +13,9 @@ TMPL = '''
 {% endblock %}
 
 {% block deps %}
-# bld dev/lang/python/3/minimal env/std
-# run {run}
+# bld dev/lang/python/3/minimal/package.sh
+# bld env/std/package.sh
+# run {run}/package.py
 {% endblock %}
 
 {% block unpack %}

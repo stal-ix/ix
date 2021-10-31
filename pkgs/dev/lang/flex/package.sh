@@ -6,6 +6,9 @@
 {% endblock %}
 
 {% block deps %}
-# lib dev/lang/m4
-# bld dev/build/make dev/doc/texinfo env/std boot/final/env/bison
+# lib dev/lang/m4/package.sh
+# bld dev/build/make/package.sh
+# bld dev/doc/texinfo/package.sh
+# bld env/std/package.sh
+# bld boot/final/env/bison/package.sh
 {% endblock %}

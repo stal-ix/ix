@@ -6,7 +6,10 @@
 {% endblock %}
 
 {% block deps %}
-# bld lib/linux lib/elfutils dev/build/make env/std
+# bld lib/linux/package.sh
+# bld lib/elfutils/package.sh
+# bld dev/build/make/package.sh
+# bld env/std/package.sh
 {% endblock %}
 
 {% block coflags %}

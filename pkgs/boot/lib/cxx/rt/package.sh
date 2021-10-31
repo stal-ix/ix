@@ -6,8 +6,8 @@
 {% endblock %}
 
 {% block deps %}
-# lib boot/lib/cxx/unwind
-# bld boot/stage/5/env
+# lib boot/lib/cxx/unwind/package.sh
+# bld boot/stage/5/env/package.sh
 {% endblock %}
 
 {% block build %}

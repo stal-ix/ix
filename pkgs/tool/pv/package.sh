@@ -6,7 +6,11 @@
 {% endblock %}
 
 {% block deps %}
-# bld {{'dev/lang/cctools' | darwin}} dev/build/make env/tools env/c env/bootstrap
+# bld {{'dev/lang/cctools/package.sh' | darwin}}
+# bld dev/build/make/package.sh
+# bld env/tools/package.sh
+# bld env/c/package.sh
+# bld env/bootstrap/package.py
 {% endblock %}
 
 {% block cflags %}

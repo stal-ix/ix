@@ -6,8 +6,9 @@
 {% endblock %}
 
 {% block deps %}
-# bld {{mix.if_linux('lib/musl')}}
-# bld env/c/nort boot/final/env/tools
+# bld {{'lib/musl/package.sh' | linux}}
+# bld env/c/nort/package.py
+# bld boot/final/env/tools/package.sh
 {% endblock %}
 
 {% block cmflags %}

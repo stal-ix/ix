@@ -5,10 +5,17 @@
 {% endblock %}
 
 {% block deps %}
-# bld {{'lib/linux' | linux}} {{'sys/framework/CoreFoundation' | darwin}}
-# bld lib/cxx lib/curses/any lib/edit lib/xz lib/xml2
-# bld dev/lang/python/3/10/lib
-# bld dev/build/cmake dev/tool/swig/4 env/std
+# bld {{'lib/linux/package.sh' | linux}}
+# bld {{'sys/framework/CoreFoundation/package.py' | darwin}}
+# bld lib/cxx/package.sh
+# bld lib/curses/any/package.sh
+# bld lib/edit/package.sh
+# bld lib/xz/package.sh
+# bld lib/xml2/package.sh
+# bld dev/lang/python/3/10/lib/package.sh
+# bld dev/build/cmake/package.sh
+# bld dev/tool/swig/4/package.sh
+# bld env/std/package.sh
 {% endblock %}
 
 {% block patch %}

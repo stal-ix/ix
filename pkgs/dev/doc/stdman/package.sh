@@ -1,9 +1,9 @@
 {% extends '//mix/template/template.sh' %}
 
 {% block deps %}
-# bld shell/cli/bash/minimal
-# bld dev/build/make
-# bld env/std
+# bld shell/cli/bash/minimal/package.sh
+# bld dev/build/make/package.sh
+# bld env/std/package.sh
 {% endblock %}
 
 {% block fetch %}

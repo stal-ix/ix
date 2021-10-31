@@ -5,7 +5,9 @@ export CPPFLAGS="-Dsh_unset_nodelay_mode=bash_sh_unset_nodelay_mode -Dsh_get_env
 {% endblock %}
 
 {% block deps %}
-# bld dev/build/make env/std boot/final/env/bison
+# bld dev/build/make/package.sh
+# bld env/std/package.sh
+# bld boot/final/env/bison/package.sh
 {% block bashdeps %}{% endblock %}
 {% endblock %}
 

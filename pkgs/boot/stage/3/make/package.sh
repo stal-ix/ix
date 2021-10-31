@@ -1,7 +1,8 @@
 {% extends '//dev/build/make/package.sh' %}
 
 {% block deps %}
-# bld {{'boot/stage/1/musl' | linux}} boot/stage/2/env
+# bld {{'boot/stage/1/musl/package.py' | linux}}
+# bld boot/stage/2/env/package.sh
 {% endblock %}
 
 {% block patch %}

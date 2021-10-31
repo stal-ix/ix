@@ -6,8 +6,10 @@
 {% endblock %}
 
 {% block deps %}
-# lib lib/md
-# bld lib/linux dev/build/make env/std
+# lib lib/md/package.sh
+# bld lib/linux/package.sh
+# bld dev/build/make/package.sh
+# bld env/std/package.sh
 {% endblock %}
 
 {% block cflags %}

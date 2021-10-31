@@ -6,8 +6,11 @@
 {% endblock %}
 
 {% block deps %}
-# bld lib/cxx lib/pcre
-# bld dev/build/make dev/lang/bison/3.7.6 env/std
+# bld lib/cxx/package.sh
+# bld lib/pcre/package.sh
+# bld dev/build/make/package.sh
+# bld dev/lang/bison/3.7.6/package.sh
+# bld env/std/package.sh
 {% endblock %}
 
 {% block coflags %}

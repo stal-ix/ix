@@ -6,9 +6,17 @@
 {% endblock %}
 
 {% block deps %}
-# bld lib/ssh lib/pcre lib/spdlog lib/archive lib/xerces-c lib/magic
+# bld lib/ssh/package.sh
+# bld lib/pcre/package.sh
+# bld lib/spdlog/package.sh
+# bld lib/archive/package.sh
+# bld lib/xerces-c/package.sh
+# bld lib/magic/package.sh
 # bld lib/uchardet lib/fmt {{mix.if_linux('lib/linux')}}
-# bld dev/build/pkg-config dev/build/cmake dev/lang/m4 env/std
+# bld dev/build/pkg-config/package.sh
+# bld dev/build/cmake/package.sh
+# bld dev/lang/m4/package.sh
+# bld env/std/package.sh
 {% endblock %}
 
 {% block patch %}

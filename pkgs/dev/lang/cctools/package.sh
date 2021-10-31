@@ -6,8 +6,11 @@
 {% endblock %}
 
 {% block deps %}
-# bld lib/cxx
-# bld dev/build/make env/c env/tools env/bootstrap
+# bld lib/cxx/package.sh
+# bld dev/build/make/package.sh
+# bld env/c/package.sh
+# bld env/tools/package.sh
+# bld env/bootstrap/package.py
 {% endblock %}
 
 {% block postunpack %}

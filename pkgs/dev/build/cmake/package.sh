@@ -6,15 +6,23 @@
 {% endblock %}
 
 {% block more_deps %}
-# lib env/cmake
+# lib env/cmake/package.py
 {% endblock %}
 
 {% block deps %}
-# lib dev/build/samurai
-# bld {{'sys/framework/CoreFoundation' | darwin}}
-# bld lib/z lib/xz lib/uv lib/cxx lib/curl lib/bzip2
-# bld lib/expat lib/archive {{mix.if_linux('lib/linux')}}
-# bld env/std boot/final/env/tools
+# lib dev/build/samurai/package.sh
+# bld {{'sys/framework/CoreFoundation/package.py' | darwin}}
+# bld lib/z/package.sh
+# bld lib/xz/package.sh
+# bld lib/uv/package.sh
+# bld lib/cxx/package.sh
+# bld lib/curl/package.sh
+# bld lib/bzip2/package.sh
+# bld lib/expat/package.sh
+# bld lib/archive/package.sh
+# bld {{'lib/linux/package.sh' | linux}}
+# bld env/std/package.sh
+# bld boot/final/env/tools/package.sh
 {% endblock %}
 
 {% block cmflags %}

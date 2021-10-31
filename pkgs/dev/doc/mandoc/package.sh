@@ -6,7 +6,9 @@
 {% endblock %}
 
 {% block deps %}
-# bld lib/z dev/build/make env/std
+# bld lib/z/package.sh
+# bld dev/build/make/package.sh
+# bld env/std/package.sh
 {% endblock %}
 
 {% block postconf %}

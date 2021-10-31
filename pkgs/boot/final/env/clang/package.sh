@@ -1,2 +1,2 @@
-# run boot/stage/6/env/clang
-# run boot/final/env/tools
+# run boot/stage/6/env/clang/package.py
+# run boot/final/env/tools/package.sh

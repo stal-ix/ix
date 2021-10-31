@@ -6,5 +6,11 @@
 {% endblock %}
 
 {% block deps %}
-# bld lib/z lib/xz lib/intl lib/bzip2 lib/iconv dev/build/make env/std
+# bld lib/z/package.sh
+# bld lib/xz/package.sh
+# bld lib/intl/package.sh
+# bld lib/bzip2/package.sh
+# bld lib/iconv/package.sh
+# bld dev/build/make/package.sh
+# bld env/std/package.sh
 {% endblock %}

@@ -6,5 +6,6 @@
 {% endblock %}
 
 {% block deps %}
-# bld env/c boot/final/env/tools
+# bld env/c/package.sh
+# bld boot/final/env/tools/package.sh
 {% endblock %}

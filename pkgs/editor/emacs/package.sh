@@ -6,7 +6,13 @@
 {% endblock %}
 
 {% block deps %}
-# bld lib/z lib/curses/any dev/build/make dev/build/pkg-config gnu/patch gnu/tar env/std
+# bld lib/z/package.sh
+# bld lib/curses/any/package.sh
+# bld dev/build/make/package.sh
+# bld dev/build/pkg-config/package.sh
+# bld gnu/patch/package.sh
+# bld gnu/tar/package.sh
+# bld env/std/package.sh
 {% endblock %}
 
 {% block patch %}

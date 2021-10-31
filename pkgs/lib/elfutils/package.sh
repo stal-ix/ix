@@ -6,9 +6,18 @@
 {% endblock %}
 
 {% block deps %}
-# lib lib/argp/standalone lib/fts lib/obstack
-# lib lib/z lib/bzip2 lib/xz lib/zstd lib/iconv lib/intl
-# bld dev/lang/m4 dev/build/make env/std
+# lib lib/argp/standalone/package.sh
+# lib lib/fts/package.sh
+# lib lib/obstack/package.sh
+# lib lib/z/package.sh
+# lib lib/bzip2/package.sh
+# lib lib/xz/package.sh
+# lib lib/zstd/package.sh
+# lib lib/iconv/package.sh
+# lib lib/intl/package.sh
+# bld dev/lang/m4/package.sh
+# bld dev/build/make/package.sh
+# bld env/std/package.sh
 {% endblock %}
 
 {% block cflags %}

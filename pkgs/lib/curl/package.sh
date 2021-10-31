@@ -6,9 +6,18 @@
 {% endblock %}
 
 {% block deps %}
-# lib lib/z lib/c-ares lib/idn2 lib/zstd lib/brotli lib/nghttp2 lib/openssl
-# lib {{'sys/framework/SystemConfiguration' | darwin}}
-# bld dev/doc/groff dev/build/make dev/build/pkg-config env/std
+# lib lib/z/package.sh
+# lib lib/c-ares/package.sh
+# lib lib/idn2/package.sh
+# lib lib/zstd/package.sh
+# lib lib/brotli/package.sh
+# lib lib/nghttp2/package.sh
+# lib lib/openssl/package.sh
+# lib {{'sys/framework/SystemConfiguration/package.py' | darwin}}
+# bld dev/doc/groff/package.sh
+# bld dev/build/make/package.sh
+# bld dev/build/pkg-config/package.sh
+# bld env/std/package.sh
 {% endblock %}
 
 {% block coflags %}

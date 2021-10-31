@@ -6,8 +6,10 @@
 {% endblock %}
 
 {% block deps %}
-# bld env/std
-# run {{mix.if_darwin('dev/lang/cctools')}} dev/lang/python/3/minimal dev/build/samurai
+# bld env/std/package.sh
+# run {{'dev/lang/cctools/package.sh' | darwin}}
+# run dev/lang/python/3/minimal/package.sh
+# run dev/build/samurai/package.sh
 {% endblock %}
 
 {% block build %}

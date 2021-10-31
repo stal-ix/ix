@@ -1,7 +1,9 @@
 {% extends '//mix/template/template.sh' %}
 
 {% block deps %}
-# bld {{'lib/musl' | linux}} env/c/nort boot/final/env/tools
+# bld lib/c/package.sh
+# bld env/c/nort/package.py
+# bld boot/final/env/tools/package.sh
 {% endblock %}
 
 {% block fetch %}

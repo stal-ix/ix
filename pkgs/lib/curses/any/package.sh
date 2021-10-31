@@ -1,1 +1,1 @@
-# run lib/curses/{{mix.flags.get('curses', 'n')}}
+# run lib/curses/{{mix.flags.get('curses', 'n')}}/package.sh

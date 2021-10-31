@@ -6,7 +6,8 @@
 {% endblock %}
 
 {% block deps %}
-# bld pypi/pygments dev/lang/python/3/10
+# bld pypi/pygments/package.py
+# bld dev/lang/python/3/10/package.sh
 {% endblock %}
 
 {% block bin %}ted.bin{% endblock %}

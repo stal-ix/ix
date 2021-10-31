@@ -6,8 +6,11 @@
 {% endblock %}
 
 {% block deps %}
-# bld lib/boehmgc lib/gmp lib/ffi
-# bld dev/build/make env/std
+# bld lib/boehmgc/package.sh
+# bld lib/gmp/package.sh
+# bld lib/ffi/package.sh
+# bld dev/build/make/package.sh
+# bld env/std/package.sh
 {% endblock %}
 
 {% block postunpack %}

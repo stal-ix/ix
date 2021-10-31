@@ -6,5 +6,7 @@
 {% endblock %}
 
 {% block deps %}
-# bld lib/cxx dev/build/make env/std
+# bld lib/cxx/package.sh
+# bld dev/build/make/package.sh
+# bld env/std/package.sh
 {% endblock %}

@@ -6,11 +6,22 @@
 {% endblock %}
 
 {% block deps %}
-# bld lib/intl lib/glib lib/iconv lib/{{self.typ().strip()}}
-# bld dev/build/make dev/build/pkg-config dev/lang/perl5 env/std
-# run tool/compress/bsdtar tool/compress/bzip2 tool/compress/gzip
-# run tool/compress/p7zip tool/compress/unrar tool/compress/unzip
-# run tool/compress/xz tool/compress/zip
+# bld lib/intl/package.sh
+# bld lib/glib/package.sh
+# bld lib/iconv/package.sh
+# bld lib/{{self.typ().strip()}}/package.sh
+# bld dev/build/make/package.sh
+# bld dev/build/pkg-config/package.sh
+# bld dev/lang/perl5/package.sh
+# bld env/std/package.sh
+# run tool/compress/bsdtar/package.sh
+# run tool/compress/bzip2/package.sh
+# run tool/compress/gzip/package.sh
+# run tool/compress/p7zip/package.sh
+# run tool/compress/unrar/package.sh
+# run tool/compress/unzip/package.sh
+# run tool/compress/xz/package.sh
+# run tool/compress/zip/package.sh
 {% endblock %}
 
 {% block cflags %}

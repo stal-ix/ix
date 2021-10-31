@@ -6,8 +6,11 @@
 {% endblock %}
 
 {% block deps %}
-# lib {{'lib/bsd' | linux}}
-# bld dev/build/automake/1.16.3 dev/build/make dev/build/pkg-config env/std
+# lib {{'lib/bsd/package.sh' | linux}}
+# bld dev/build/automake/1.16.3/package.sh
+# bld dev/build/make/package.sh
+# bld dev/build/pkg-config/package.sh
+# bld env/std/package.sh
 {% endblock %}
 
 {% block autoreconf %}

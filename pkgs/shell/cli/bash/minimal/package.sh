@@ -1,1 +1,1 @@
-# run shell/cli/bash/5.1.18/minimal
+# run shell/cli/bash/5.1.18/minimal/package.sh

@@ -47,7 +47,7 @@ class Package:
             'root': self.config.store_dir,
             'deps': [x.out_dir for x in self.iter_all_build_depends()],
         })
-        self.out_dir = self.config.store_dir + '/' + self.uid + '-' + self.name.replace('/', '-')
+        self.out_dir = self.config.store_dir + '/' + self.uid + '-' + os.path.dirname(self.name).replace('/', '-').replace('.', '-')
 
     @property
     def flags(self):
@@ -60,10 +60,6 @@ class Package:
     @property
     def config(self):
         return self.manager.config
-
-    @property
-    def where(self):
-        return os.path.join(self.config.where, self.name)
 
     def load_package(self, selector):
         try:

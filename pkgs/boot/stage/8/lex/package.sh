@@ -6,7 +6,9 @@
 {% endblock %}
 
 {% block deps %}
-# bld dev/build/make dev/lang/byacc env/std
+# bld dev/build/make/package.sh
+# bld dev/lang/byacc/package.sh
+# bld env/std/package.sh
 {% endblock %}
 
 {% block postunpack %}

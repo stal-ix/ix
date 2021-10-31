@@ -1,6 +1,6 @@
 def package(mix):
     deps = [
-        'boot/stage/6/clang',
+        'boot/stage/6/clang/package.sh',
     ]
 
     return {
@@ -10,7 +10,7 @@ def package(mix):
         },
         'runtime': {
             'depends': deps + [
-                'boot/stage/6/env/tools',
+                'boot/stage/6/env/tools/package.sh',
             ],
         },
     }

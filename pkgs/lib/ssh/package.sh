@@ -6,6 +6,9 @@
 {% endblock %}
 
 {% block deps %}
-# lib lib/z lib/cxx lib/openssl
-# bld dev/build/cmake env/std
+# lib lib/z/package.sh
+# lib lib/cxx/package.sh
+# lib lib/openssl/package.sh
+# bld dev/build/cmake/package.sh
+# bld env/std/package.sh
 {% endblock %}

@@ -36,6 +36,7 @@ class Manager:
             try:
                 return self._p[key]
             except KeyError:
+                print(selector)
                 self._p[key] = cp.Package(selector, self)
 
     def iter_packages(self, selectors):

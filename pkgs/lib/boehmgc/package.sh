@@ -8,8 +8,11 @@
 {% endblock %}
 
 {% block deps %}
-# lib lib/cxx lib/atomicops
-# bld dev/build/make dev/build/pkg-config env/std
+# lib lib/cxx/package.sh
+# lib lib/atomicops/package.sh
+# bld dev/build/make/package.sh
+# bld dev/build/pkg-config/package.sh
+# bld env/std/package.sh
 {% endblock %}
 
 {% block patch %}

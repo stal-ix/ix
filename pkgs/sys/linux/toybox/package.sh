@@ -6,7 +6,9 @@
 {% endblock %}
 
 {% block deps %}
-# bld lib/linux env/c boot/final/env/tools
+# bld lib/linux/package.sh
+# bld env/c/package.sh
+# bld boot/final/env/tools/package.sh
 {% endblock %}
 
 {% block cflags %}

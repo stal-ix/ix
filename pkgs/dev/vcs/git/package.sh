@@ -6,9 +6,18 @@
 {% endblock %}
 
 {% block deps %}
-# bld lib/z lib/curl lib/iconv lib/expat lib/pcre2 lib/openssl
-# bld dev/build/make dev/lang/perl5 dev/lang/python/3/minimal gnu/gettext env/std
-# run shell/openssh
+# bld lib/z/package.sh
+# bld lib/curl/package.sh
+# bld lib/iconv/package.sh
+# bld lib/expat/package.sh
+# bld lib/pcre2/package.sh
+# bld lib/openssl/package.sh
+# bld dev/build/make/package.sh
+# bld dev/lang/perl5/package.sh
+# bld dev/lang/python/3/minimal/package.sh
+# bld gnu/gettext/package.sh
+# bld env/std/package.sh
+# run shell/openssh/package.sh
 {% endblock %}
 
 {% block toolconf %}

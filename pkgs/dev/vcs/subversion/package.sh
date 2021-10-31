@@ -6,9 +6,19 @@
 {% endblock %}
 
 {% block deps %}
-# bld lib/z lib/lz4 lib/apr lib/intl lib/serf lib/expat lib/sqlite3
-# bld lib/apr-util lib/utf8proc dev/build/make dev/build/pkg-config env/std
-# run shell/openssh
+# bld lib/z/package.sh
+# bld lib/lz4/package.sh
+# bld lib/apr/package.sh
+# bld lib/intl/package.sh
+# bld lib/serf/package.sh
+# bld lib/expat/package.sh
+# bld lib/sqlite3/package.sh
+# bld lib/apr-util/package.sh
+# bld lib/utf8proc/package.sh
+# bld dev/build/make/package.sh
+# bld dev/build/pkg-config/package.sh
+# bld env/std/package.sh
+# run shell/openssh/package.sh
 {% endblock %}
 
 {% block cflags %}

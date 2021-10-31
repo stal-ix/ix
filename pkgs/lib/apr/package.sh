@@ -6,7 +6,9 @@
 {% endblock %}
 
 {% block deps %}
-# bld dev/build/make dev/build/pkg-config env/std
+# bld dev/build/make/package.sh
+# bld dev/build/pkg-config/package.sh
+# bld env/std/package.sh
 {% endblock %}
 
 {% block coflags %}

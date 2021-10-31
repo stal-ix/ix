@@ -6,9 +6,15 @@
 {% endblock %}
 
 {% block deps %}
-# lib lib/z lib/pcre lib/iconv lib/ffi lib/intl
-# lib {{'sys/framework/CoreServices sys/framework/Foundation' | darwin}}
-# bld dev/build/meson env/std boot/final/env/tools
+# lib lib/z/package.sh
+# lib lib/pcre/package.sh
+# lib lib/iconv/package.sh
+# lib lib/ffi/package.sh
+# lib lib/intl/package.sh
+# lib {{'sys/framework/CoreServices/package.py sys/framework/Foundation/package.py' | darwin}}
+# bld dev/build/meson/package.sh
+# bld env/std/package.sh
+# bld boot/final/env/tools/package.sh
 {% endblock %}
 
 {% block cflags %}

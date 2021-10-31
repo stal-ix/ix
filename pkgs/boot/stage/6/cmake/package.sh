@@ -1,9 +1,11 @@
 {% extends '//dev/build/cmake/package.sh' %}
 
 {% block deps %}
-# bld {{'sys/framework/CoreFoundation' | darwin}}
-# bld {{'boot/lib/linux' | linux}} boot/lib/cxx boot/stage/5/env
-# run boot/stage/6/samurai
+# bld {{'sys/framework/CoreFoundation/package.py' | darwin}}
+# bld {{'boot/lib/linux/package.sh' | linux}}
+# bld boot/lib/cxx/package.sh
+# bld boot/stage/5/env/package.sh
+# run boot/stage/6/samurai/package.sh
 {% endblock %}
 
 {% block configure %}

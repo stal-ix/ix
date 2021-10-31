@@ -6,8 +6,15 @@
 {% endblock %}
 
 {% block deps %}
-# bld lib/iconv lib/intl lib/unistring lib/xml2 lib/textstyle
-# bld dev/build/make dev/lang/bison/3.6.4 tool/compress/minigzip env/std
+# bld lib/iconv/package.sh
+# bld lib/intl/package.sh
+# bld lib/unistring/package.sh
+# bld lib/xml2/package.sh
+# bld lib/textstyle/package.sh
+# bld dev/build/make/package.sh
+# bld dev/lang/bison/3.6.4/package.sh
+# bld tool/compress/minigzip/package.sh
+# bld env/std/package.sh
 {% endblock %}
 
 {% block postunpack %}

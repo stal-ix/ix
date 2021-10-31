@@ -6,8 +6,18 @@
 {% endblock %}
 
 {% block deps %}
-# lib lib/z lib/xz lib/lz4 lib/intl lib/zstd lib/bzip2 lib/iconv lib/expat
-# bld dev/build/make env/tools env/c env/bootstrap
+# lib lib/z/package.sh
+# lib lib/xz/package.sh
+# lib lib/lz4/package.sh
+# lib lib/intl/package.sh
+# lib lib/zstd/package.sh
+# lib lib/bzip2/package.sh
+# lib lib/iconv/package.sh
+# lib lib/expat/package.sh
+# bld dev/build/make/package.sh
+# bld env/tools/package.sh
+# bld env/c/package.sh
+# bld env/bootstrap/package.py
 {% endblock %}
 
 {% block coflags %}

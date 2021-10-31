@@ -6,7 +6,15 @@
 {% endblock %}
 
 {% block deps %}
-# bld {{'lib/linux lib/fts lib/rpmatch' | linux}}
-# bld lib/cxx lib/xo lib/edit lib/openssl lib/curses/any
-# bld dev/build/meson dev/build/pkg-config dev/lang/flex dev/lang/byacc env/std
+# bld {{'lib/linux/package.sh lib/fts/package.sh lib/rpmatch/package.sh' | linux}}
+# bld lib/cxx/package.sh
+# bld lib/xo/package.sh
+# bld lib/edit/package.sh
+# bld lib/openssl/package.sh
+# bld lib/curses/any/package.sh
+# bld dev/build/meson/package.sh
+# bld dev/build/pkg-config/package.sh
+# bld dev/lang/flex/package.sh
+# bld dev/lang/byacc/package.sh
+# bld env/std/package.sh
 {% endblock %}

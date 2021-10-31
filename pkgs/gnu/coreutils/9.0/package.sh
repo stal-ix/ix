@@ -6,7 +6,10 @@
 {% endblock %}
 
 {% block coreutils_deps_extra %}
-# bld lib/openssl lib/gmp dev/lang/bison/3.7.6 dev/lang/perl5
+# bld lib/openssl/package.sh
+# bld lib/gmp/package.sh
+# bld dev/lang/bison/3.7.6/package.sh
+# bld dev/lang/perl5/package.sh
 {% endblock %}
 
 {% block coreutils_coflags_extra %}

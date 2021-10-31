@@ -1,8 +1,9 @@
 {% extends '//mix/template/template.sh' %}
 
 {% block deps %}
-# bld {{'lib/linux' | linux}}
-# bld env/c boot/final/env/tools
+# bld {{'lib/linux/package.sh' | linux}}
+# bld env/c/package.sh
+# bld boot/final/env/tools/package.sh
 {% endblock %}
 
 {% block fetch%}

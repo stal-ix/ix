@@ -6,11 +6,11 @@
 {% endblock %}
 
 {% block deps %}
-# bld env/std
-# bld lib/intl
-# bld lib/glib
-# bld lib/iconv
-# bld boot/final/env/tools
+# bld env/std/package.sh
+# bld lib/intl/package.sh
+# bld lib/glib/package.sh
+# bld lib/iconv/package.sh
+# bld boot/final/env/tools/package.sh
 {% endblock %}
 
 {% block coflags %}

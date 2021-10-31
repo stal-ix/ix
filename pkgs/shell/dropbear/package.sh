@@ -6,7 +6,11 @@
 {% endblock %}
 
 {% block deps %}
-# bld lib/z lib/tom/math lib/tom/crypt env/std dev/build/make
+# bld lib/z/package.sh
+# bld lib/tom/math/package.sh
+# bld lib/tom/crypt/package.sh
+# bld env/std/package.sh
+# bld dev/build/make/package.sh
 {% endblock %}
 
 {% block coflags %}

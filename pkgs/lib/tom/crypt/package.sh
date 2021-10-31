@@ -6,8 +6,9 @@
 {% endblock %}
 
 {% block deps %}
-# lib lib/tom/math
-# bld env/std dev/build/make
+# lib lib/tom/math/package.sh
+# bld env/std/package.sh
+# bld dev/build/make/package.sh
 {% endblock %}
 
 {% block cflags %}

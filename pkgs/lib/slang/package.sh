@@ -6,8 +6,15 @@
 {% endblock %}
 
 {% block deps %}
-# lib lib/z lib/pcre lib/iconv lib/readline lib/curses/any lib/curses/terminfo lib/oniguruma
-# bld dev/build/make env/std
+# lib lib/z/package.sh
+# lib lib/pcre/package.sh
+# lib lib/iconv/package.sh
+# lib lib/readline/package.sh
+# lib lib/curses/any/package.sh
+# lib lib/curses/terminfo/package.sh
+# lib lib/oniguruma/package.sh
+# bld dev/build/make/package.sh
+# bld env/std/package.sh
 {% endblock %}
 
 {% block toolconf %}

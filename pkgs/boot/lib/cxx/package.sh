@@ -5,9 +5,9 @@
 {% endblock %}
 
 {% block deps %}
-# lib boot/lib/cxx/rt
-# bld {{'boot/lib/linux' | linux}}
-# bld boot/stage/5/env
+# lib boot/lib/cxx/rt/package.sh
+# bld {{'boot/lib/linux/package.sh' | linux}}
+# bld boot/stage/5/env/package.sh
 {% endblock %}
 
 {% block cflags %}

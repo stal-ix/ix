@@ -10,8 +10,14 @@
 {% endblock %}
 
 {% block deps %}
-# bld lib/z lib/edit lib/ldns lib/openssl
-# bld dev/build/make dev/build/pkg-config gnu/patch env/std
+# bld lib/z/package.sh
+# bld lib/edit/package.sh
+# bld lib/ldns/package.sh
+# bld lib/openssl/package.sh
+# bld dev/build/make/package.sh
+# bld dev/build/pkg-config/package.sh
+# bld gnu/patch/package.sh
+# bld env/std/package.sh
 {% endblock %}
 
 {% block toolconf %}

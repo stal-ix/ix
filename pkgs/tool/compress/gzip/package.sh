@@ -6,7 +6,7 @@
 {% endblock %}
 
 {% block deps %}
-# bld env/std
+# bld env/std/package.sh
 {% endblock %}
 
 {% block coflags %}

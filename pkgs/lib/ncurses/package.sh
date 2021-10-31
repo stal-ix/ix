@@ -6,7 +6,9 @@
 {% endblock %}
 
 {% block deps %}
-# bld env/std tool/compress/minigzip boot/final/env/tools
+# bld env/std/package.sh
+# bld tool/compress/minigzip/package.sh
+# bld boot/final/env/tools/package.sh
 {% endblock %}
 
 {% block coflags %}

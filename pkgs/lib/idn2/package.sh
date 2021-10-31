@@ -6,8 +6,13 @@
 {% endblock %}
 
 {% block deps %}
-# lib lib/intl lib/iconv lib/unistring
-# bld dev/build/automake/1.16.1 dev/build/make dev/build/pkg-config env/std
+# lib lib/intl/package.sh
+# lib lib/iconv/package.sh
+# lib lib/unistring/package.sh
+# bld dev/build/automake/1.16.1/package.sh
+# bld dev/build/make/package.sh
+# bld dev/build/pkg-config/package.sh
+# bld env/std/package.sh
 {% endblock %}
 
 {% block cflags %}

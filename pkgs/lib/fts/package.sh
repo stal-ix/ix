@@ -6,7 +6,10 @@
 {% endblock %}
 
 {% block deps %}
-# bld dev/build/automake/1.16.3 dev/build/make dev/build/pkg-config env/std
+# bld dev/build/automake/1.16.3/package.sh
+# bld dev/build/make/package.sh
+# bld dev/build/pkg-config/package.sh
+# bld env/std/package.sh
 {% endblock %}
 
 {% block autoreconf %}

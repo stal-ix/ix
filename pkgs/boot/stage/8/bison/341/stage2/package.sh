@@ -1,7 +1,7 @@
 {% extends '//boot/stage/8/bison/341/stage1/package.sh' %}
 
 {% block bison %}
-# bld boot/stage/8/bison/341/stage1
+# bld boot/stage/8/bison/341/stage1/package.sh
 {% endblock %}
 
 {% block patch %}

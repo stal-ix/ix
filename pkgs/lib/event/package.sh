@@ -6,8 +6,11 @@
 {% endblock %}
 
 {% block deps %}
-# lib lib/openssl
-# bld dev/build/pkg-config dev/build/make dev/lang/python/3/minimal env/std
+# lib lib/openssl/package.sh
+# bld dev/build/pkg-config/package.sh
+# bld dev/build/make/package.sh
+# bld dev/lang/python/3/minimal/package.sh
+# bld env/std/package.sh
 {% endblock %}
 
 {% block toolconf %}

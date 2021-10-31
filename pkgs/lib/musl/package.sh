@@ -1,7 +1,8 @@
 {% extends '//lib/musl/template/package.sh' %}
 
 {% block deps %}
-# bld env/c/nort boot/final/env/tools
+# bld env/c/nort/package.py
+# bld boot/final/env/tools/package.sh
 {% endblock %}
 
 {% block cflags %}

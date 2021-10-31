@@ -2,11 +2,15 @@
 
 {% block deps %}
 {% block extradeps %}
-# bld {{'lib/linux' | linux}}
-# bld {{'sys/framework/CoreFoundation' | darwin}}
-# bld boot/final/cxx boot/final/env/clang
+# bld {{'lib/linux/package.sh' | linux}}
+# bld {{'sys/framework/CoreFoundation/package.py' | darwin}}
+# bld boot/final/cxx/package.sh
+# bld boot/final/env/clang/package.sh
 {% endblock %}
-# run env/clang env/lld/{{mix.platform.target.os}} env/compiler env/system
+# run env/clang/package.py
+# run env/lld/{{mix.platform.target.os}}/package.py
+# run env/compiler/package.py
+# run env/system/package.sh
 {% endblock %}
 
 {% block fetch %}

@@ -6,5 +6,5 @@
 {% endblock %}
 
 {% block coreutils_deps_extra %}
-# bld dev/lang/byacc
+# bld dev/lang/byacc/package.sh
 {% endblock %}

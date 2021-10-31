@@ -5,11 +5,27 @@
 {% endblock %}
 
 {% block deps %}
-# bld dev/debug/gdb/py(edit=readline)
-# bld {{'lib/linux' | linux}} lib/intel-pt
-# bld lib/intl lib/expat lib/curses/any lib/iconv lib/readline
-# bld lib/cxx lib/z lib/xz lib/gmp lib/mpfr lib/mpc lib/xxhash
-# bld dev/build/make dev/lang/byacc dev/lang/flex dev/doc/texinfo env/std dev/build/pkg-config
+# bld dev/debug/gdb/py/package.sh(edit=readline)
+# bld {{'lib/linux/package.sh' | linux}}
+# bld lib/intel-pt/package.sh
+# bld lib/intl/package.sh
+# bld lib/expat/package.sh
+# bld lib/curses/any/package.sh
+# bld lib/iconv/package.sh
+# bld lib/readline/package.sh
+# bld lib/cxx/package.sh
+# bld lib/z/package.sh
+# bld lib/xz/package.sh
+# bld lib/gmp/package.sh
+# bld lib/mpfr/package.sh
+# bld lib/mpc/package.sh
+# bld lib/xxhash/package.sh
+# bld dev/build/make/package.sh
+# bld dev/lang/byacc/package.sh
+# bld dev/lang/flex/package.sh
+# bld dev/doc/texinfo/package.sh
+# bld env/std/package.sh
+# bld dev/build/pkg-config/package.sh
 {% endblock %}
 
 {% block cflags %}

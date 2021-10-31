@@ -6,8 +6,12 @@
 {% endblock %}
 
 {% block deps %}
-# lib lib/z lib/c-ares lib/openssl
-# bld dev/build/make dev/build/pkg-config env/std
+# lib lib/z/package.sh
+# lib lib/c-ares/package.sh
+# lib lib/openssl/package.sh
+# bld dev/build/make/package.sh
+# bld dev/build/pkg-config/package.sh
+# bld env/std/package.sh
 {% endblock %}
 
 {% block coflags %}

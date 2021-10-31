@@ -6,8 +6,9 @@
 {% endblock %}
 
 {% block deps %}
-# lib lib/iconv
-# bld env/c boot/final/env/tools
+# lib lib/iconv/package.sh
+# bld env/c/package.sh
+# bld boot/final/env/tools/package.sh
 {% endblock %}
 
 {% block cflags %}

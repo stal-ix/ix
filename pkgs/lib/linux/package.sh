@@ -6,7 +6,8 @@
 {% endblock %}
 
 {% block deps %}
-# bld boot/final/cxx boot/final/env/clang
+# bld boot/final/cxx/package.sh
+# bld boot/final/env/clang/package.sh
 {% endblock %}
 
 {% block build %}

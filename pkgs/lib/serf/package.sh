@@ -6,8 +6,13 @@
 {% endblock %}
 
 {% block deps %}
-# lib lib/z lib/apr lib/openssl lib/apr-util
-# bld dev/build/scons gnu/patch env/std
+# lib lib/z/package.sh
+# lib lib/apr/package.sh
+# lib lib/openssl/package.sh
+# lib lib/apr-util/package.sh
+# bld dev/build/scons/package.sh
+# bld gnu/patch/package.sh
+# bld env/std/package.sh
 {% endblock %}
 
 {% block patch %}

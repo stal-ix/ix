@@ -6,5 +6,8 @@
 {% endblock %}
 
 {% block deps %}
-# bld lib/intl lib/iconv env/c boot/final/env/tools
+# bld lib/intl/package.sh
+# bld lib/iconv/package.sh
+# bld env/c/package.sh
+# bld boot/final/env/tools/package.sh
 {% endblock %}

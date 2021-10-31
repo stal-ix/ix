@@ -1,8 +1,11 @@
 {% extends '//mix/template/autohell.sh' %}
 
 {% block deps %}
-# bld dev/lang/python/libs {{'lib/linux' | linux}}
-# bld dev/build/make dev/build/pkg-config env/std
+# bld dev/lang/python/libs/package.sh
+# bld {{'lib/linux/package.sh' | linux}}
+# bld dev/build/make/package.sh
+# bld dev/build/pkg-config/package.sh
+# bld env/std/package.sh
 {% endblock %}
 
 {% block patch %}

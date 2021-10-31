@@ -6,7 +6,9 @@
 {% endblock %}
 
 {% block deps %}
-# bld lib/curses/any dev/build/make env/std
+# bld lib/curses/any/package.sh
+# bld dev/build/make/package.sh
+# bld env/std/package.sh
 {% endblock %}
 
 {% block coflags %}

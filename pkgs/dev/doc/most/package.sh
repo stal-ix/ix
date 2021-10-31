@@ -6,7 +6,7 @@
 {% endblock %}
 
 {% block deps %}
-# bld lib/slang
-# bld env/std
-# bld dev/build/make
+# bld lib/slang/package.sh
+# bld env/std/package.sh
+# bld dev/build/make/package.sh
 {% endblock %}

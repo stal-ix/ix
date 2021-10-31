@@ -6,8 +6,13 @@
 {% endblock %}
 
 {% block deps %}
-# bld lib/cxx lib/fmt lib/magic lib/tvision lib/clipboard
-# bld dev/build/cmake env/std
+# bld lib/cxx/package.sh
+# bld lib/fmt/package.sh
+# bld lib/magic/package.sh
+# bld lib/tvision/package.sh
+# bld lib/clipboard/package.sh
+# bld dev/build/cmake/package.sh
+# bld env/std/package.sh
 {% endblock %}
 
 {% block patch %}

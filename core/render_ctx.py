@@ -7,14 +7,14 @@ import core.parse_sh as cs
 
 class FileLoader:
     def __init__(self, pkg):
-        self._p = pkg
+        self.pkg = pkg
 
     def __getattr__(self, name):
         fname = name.replace('_', '.')
 
         return {
             'kind': fname.split('.')[-1],
-            'data': self._p.template(fname),
+            'data': self.pkg.template(os.path.join(os.path.dirname(self.pkg.name), fname)),
         }
 
 
@@ -45,10 +45,12 @@ class RenderContext:
 
     def render(self):
         try:
-            try:
-                return exec_mod(self.template('package.py'), self)
-            except FileNotFoundError:
-                return compile_sh(self.template('package.sh'))
+            path = self.name
+
+            if path.endswith('.sh'):
+                return compile_sh(self.template(path))
+
+            return exec_mod(self.template(path), self)
         except FileNotFoundError as e:
             raise ce.Error(f'can not load {self.name}', exception=e)
         except cs.Error as e:
@@ -109,8 +111,7 @@ class RenderContext:
 
         return ''
 
-    def template(self, name):
-        path = os.path.join(self.name, name)
+    def template(self, path):
         tmpl = self.package.manager.env.get_template(path)
 
         try:

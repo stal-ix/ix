@@ -1,1 +1,3 @@
-# run lib/c lib/compiler_rt env/c/nort
+# run lib/c/package.sh
+# run lib/compiler_rt/package.sh
+# run env/c/nort/package.py

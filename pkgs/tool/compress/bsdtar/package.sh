@@ -5,7 +5,8 @@ export OSX_SDK=
 {% endblock %}
 
 {% block deps %}
-# bld lib/archive env/tools
+# bld lib/archive/package.sh
+# bld env/tools/package.sh
 {% endblock %}
 
 {% block install %}

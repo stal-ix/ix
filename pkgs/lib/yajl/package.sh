@@ -6,7 +6,8 @@
 {% endblock %}
 
 {% block deps %}
-# bld dev/build/cmake env/std
+# bld dev/build/cmake/package.sh
+# bld env/std/package.sh
 {% endblock %}
 
 {% block patch %}

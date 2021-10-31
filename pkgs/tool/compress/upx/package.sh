@@ -6,7 +6,13 @@
 {% endblock %}
 
 {% block deps %}
-# bld lib/z lib/cxx lib/ucl dev/build/make shell/cli/bash/minimal dev/lang/perl5 env/std
+# bld lib/z/package.sh
+# bld lib/cxx/package.sh
+# bld lib/ucl/package.sh
+# bld dev/build/make/package.sh
+# bld shell/cli/bash/minimal/package.sh
+# bld dev/lang/perl5/package.sh
+# bld env/std/package.sh
 {% endblock %}
 
 {% block cflags %}

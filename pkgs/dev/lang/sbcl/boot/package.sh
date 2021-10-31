@@ -6,8 +6,11 @@
 {% endblock %}
 
 {% block deps %}
-# bld lib/dlfcn lib/z {{'lib/linux' | linux}}
-# bld dev/build/make env/std
+# bld lib/dlfcn/package.sh
+# bld lib/z/package.sh
+# bld {{'lib/linux/package.sh' | linux}}
+# bld dev/build/make/package.sh
+# bld env/std/package.sh
 {% endblock %}
 
 {% block cflags %}
@@ -16,7 +19,7 @@ export LDFLAGS="-Wl,-error-limit=0 ${LDFLAGS}"
 {% endblock %}
 
 {% block more_deps %}
-# bld dev/lang/ecl
+# bld dev/lang/ecl/package.sh
 {% endblock %}
 
 {% block patch %}

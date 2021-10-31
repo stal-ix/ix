@@ -6,9 +6,15 @@
 {% endblock %}
 
 {% block deps %}
-# bld lib/intl lib/yajl lib/cap lib/seccomp lib/argp/standalone
-# bld dev/build/make dev/build/pkg-config dev/lang/python/3/minimal
-# bld env/std
+# bld lib/intl/package.sh
+# bld lib/yajl/package.sh
+# bld lib/cap/package.sh
+# bld lib/seccomp/package.sh
+# bld lib/argp/standalone/package.sh
+# bld dev/build/make/package.sh
+# bld dev/build/pkg-config/package.sh
+# bld dev/lang/python/3/minimal/package.sh
+# bld env/std/package.sh
 {% endblock %}
 
 {% block coflags %}

@@ -6,7 +6,9 @@
 {% endblock %}
 
 {% block deps %}
-# bld lib/cxx env/std boot/final/env/tools
+# bld lib/cxx/package.sh
+# bld env/std/package.sh
+# bld boot/final/env/tools/package.sh
 {% endblock %}
 
 {% block env %}

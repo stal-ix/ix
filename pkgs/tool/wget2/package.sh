@@ -6,9 +6,21 @@
 {% endblock %}
 
 {% block deps %}
-# bld lib/brotli lib/zstd lib/nghttp2 lib/xz lib/z lib/intl lib/iconv
-# bld lib/wolfssl lib/bzip2 lib/idn2 lib/pcre
-# bld dev/build/make dev/build/pkg-config dev/doc/texinfo env/std
+# bld lib/brotli/package.sh
+# bld lib/zstd/package.sh
+# bld lib/nghttp2/package.sh
+# bld lib/xz/package.sh
+# bld lib/z/package.sh
+# bld lib/intl/package.sh
+# bld lib/iconv/package.sh
+# bld lib/wolfssl/package.sh
+# bld lib/bzip2/package.sh
+# bld lib/idn2/package.sh
+# bld lib/pcre/package.sh
+# bld dev/build/make/package.sh
+# bld dev/build/pkg-config/package.sh
+# bld dev/doc/texinfo/package.sh
+# bld env/std/package.sh
 {% endblock %}
 
 {% block coflags %}

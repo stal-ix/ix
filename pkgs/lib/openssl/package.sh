@@ -6,8 +6,10 @@
 {% endblock %}
 
 {% block deps %}
-# bld {{'lib/linux' | linux}}
-# bld dev/build/make dev/lang/perl5 env/std
+# bld {{'lib/linux/package.sh' | linux}}
+# bld dev/build/make/package.sh
+# bld dev/lang/perl5/package.sh
+# bld env/std/package.sh
 {% endblock %}
 
 {% block cflags %}

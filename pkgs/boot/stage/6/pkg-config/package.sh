@@ -1,8 +1,8 @@
 {% extends '//dev/build/pkg-config/package.sh' %}
 
 {% block deps %}
-# bld boot/lib/iconv
-# bld boot/stage/5/env
+# bld boot/lib/iconv/package.sh
+# bld boot/stage/5/env/package.sh
 {% endblock %}
 
 {% block pkgflags %}

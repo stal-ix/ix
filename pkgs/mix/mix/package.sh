@@ -6,7 +6,10 @@
 {% endblock %}
 
 {% block deps %}
-# bld dev/lang/python/3/10 pypi/jinja2 pypi/beautysh pypi/minio
+# bld dev/lang/python/3/10/package.sh
+# bld pypi/jinja2/package.py
+# bld pypi/beautysh/package.py
+# bld pypi/minio/package.py
 {% endblock %}
 
 {% block extra_modules %}

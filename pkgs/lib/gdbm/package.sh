@@ -6,9 +6,12 @@
 {% endblock %}
 
 {% block deps %}
-# lib lib/intl lib/iconv
-# bld lib/readline
-# bld dev/build/make env/std boot/final/env/bison
+# lib lib/intl/package.sh
+# lib lib/iconv/package.sh
+# bld lib/readline/package.sh
+# bld dev/build/make/package.sh
+# bld env/std/package.sh
+# bld boot/final/env/bison/package.sh
 {% endblock %}
 
 {% block coflags %}

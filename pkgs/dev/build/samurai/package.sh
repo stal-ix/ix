@@ -6,7 +6,8 @@
 {% endblock %}
 
 {% block deps %}
-# bld dev/build/make env/std
+# bld dev/build/make/package.sh
+# bld env/std/package.sh
 {% endblock %}
 
 {% block cflags %}

@@ -6,7 +6,10 @@
 {% endblock %}
 
 {% block deps %}
-# bld lib/z lib/bzip2 env/c boot/final/env/tools
+# bld lib/z/package.sh
+# bld lib/bzip2/package.sh
+# bld env/c/package.sh
+# bld boot/final/env/tools/package.sh
 {% endblock %}
 
 {% block coflags %}

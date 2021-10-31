@@ -6,8 +6,9 @@
 {% endblock %}
 
 {% block deps %}
-# lib lib/expat
-# bld dev/build/make env/std
+# lib lib/expat/package.sh
+# bld dev/build/make/package.sh
+# bld env/std/package.sh
 {% endblock %}
 
 {% block coflags %}

@@ -6,8 +6,13 @@
 {% endblock %}
 
 {% block deps %}
-# bld lib/z lib/dlfcn lib/gdbm lib/iconv
-# bld dev/build/make shell/cli/bash/minimal env/std
+# bld lib/z/package.sh
+# bld lib/dlfcn/package.sh
+# bld lib/gdbm/package.sh
+# bld lib/iconv/package.sh
+# bld dev/build/make/package.sh
+# bld shell/cli/bash/minimal/package.sh
+# bld env/std/package.sh
 {% endblock %}
 
 {% block cflags %}

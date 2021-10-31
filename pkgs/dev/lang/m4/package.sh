@@ -6,7 +6,11 @@
 {% endblock %}
 
 {% block deps %}
-# bld lib/intl lib/sigsegv dev/build/make dev/build/help2man env/std
+# bld lib/intl/package.sh
+# bld lib/sigsegv/package.sh
+# bld dev/build/make/package.sh
+# bld dev/build/help2man/package.sh
+# bld env/std/package.sh
 {% endblock %}
 
 {% block coflags %}

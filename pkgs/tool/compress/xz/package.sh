@@ -1,7 +1,8 @@
 {% extends '//mix/template/proxy.sh' %}
 
 {% block deps %}
-# bld lib/xz env/tools
+# bld lib/xz/package.sh
+# bld env/tools/package.sh
 {% endblock %}
 
 {% block install %}

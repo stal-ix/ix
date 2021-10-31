@@ -5,9 +5,9 @@ def package(mix):
         },
         'runtime': {
             'depends': [
-                'tool/pv',
-                'tool/compress/unzip',
-                'tool/compress/bsdtar',
+                'tool/pv/package.sh',
+                'tool/compress/unzip/package.sh',
+                'tool/compress/bsdtar/package.sh',
             ],
         },
     }

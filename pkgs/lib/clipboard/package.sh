@@ -6,6 +6,8 @@
 {% endblock %}
 
 {% block deps %}
-# lib {{'sys/framework/AppKit' | darwin}}
-# bld dev/build/cmake dev/build/pkg-config env/std
+# lib {{'sys/framework/AppKit/package.py' | darwin}}
+# bld dev/build/cmake/package.sh
+# bld dev/build/pkg-config/package.sh
+# bld env/std/package.sh
 {% endblock %}

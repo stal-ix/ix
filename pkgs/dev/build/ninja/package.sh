@@ -6,5 +6,8 @@
 {% endblock %}
 
 {% block deps %}
-# bld lib/cxx dev/lang/python/3/minimal dev/build/cmake env/std
+# bld lib/cxx/package.sh
+# bld dev/lang/python/3/minimal/package.sh
+# bld dev/build/cmake/package.sh
+# bld env/std/package.sh
 {% endblock %}

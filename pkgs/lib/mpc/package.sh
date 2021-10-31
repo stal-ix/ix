@@ -6,8 +6,10 @@
 {% endblock %}
 
 {% block deps %}
-# lib lib/gmp lib/mpfr
-# bld dev/build/make env/std
+# lib lib/gmp/package.sh
+# lib lib/mpfr/package.sh
+# bld dev/build/make/package.sh
+# bld env/std/package.sh
 {% endblock %}
 
 {% block env %}

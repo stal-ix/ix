@@ -6,8 +6,8 @@
 {% endblock %}
 
 {% block deps %}
-# bld env/std
-# run dev/lang/python/3/minimal
+# bld env/std/package.sh
+# run dev/lang/python/3/minimal/package.sh
 {% endblock %}
 
 {% block build %}

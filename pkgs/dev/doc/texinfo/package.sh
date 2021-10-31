@@ -6,5 +6,7 @@
 {% endblock %}
 
 {% block deps %}
-# bld dev/build/make dev/lang/perl5 env/std
+# bld dev/build/make/package.sh
+# bld dev/lang/perl5/package.sh
+# bld env/std/package.sh
 {% endblock %}

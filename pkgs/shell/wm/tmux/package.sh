@@ -6,9 +6,13 @@
 {% endblock %}
 
 {% block deps %}
-# lib lib/curses/any
-# bld lib/event lib/utf8proc
-# bld dev/build/make dev/lang/byacc dev/build/pkg-config env/std
+# lib lib/curses/any/package.sh
+# bld lib/event/package.sh
+# bld lib/utf8proc/package.sh
+# bld dev/build/make/package.sh
+# bld dev/lang/byacc/package.sh
+# bld dev/build/pkg-config/package.sh
+# bld env/std/package.sh
 {% endblock %}
 
 {% block cflags %}

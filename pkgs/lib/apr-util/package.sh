@@ -6,8 +6,15 @@
 {% endblock %}
 
 {% block deps %}
-# lib lib/apr lib/gdbm lib/iconv lib/expat lib/sqlite3 lib/openssl
-# bld dev/build/make dev/build/pkg-config env/std
+# lib lib/apr/package.sh
+# lib lib/gdbm/package.sh
+# lib lib/iconv/package.sh
+# lib lib/expat/package.sh
+# lib lib/sqlite3/package.sh
+# lib lib/openssl/package.sh
+# bld dev/build/make/package.sh
+# bld dev/build/pkg-config/package.sh
+# bld env/std/package.sh
 {% endblock %}
 
 {% block coflags %}

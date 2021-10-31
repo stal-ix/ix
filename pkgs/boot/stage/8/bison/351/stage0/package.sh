@@ -6,7 +6,7 @@
 {% endblock %}
 
 {% block bison %}
-# bld boot/stage/8/bison/341/stage2
+# bld boot/stage/8/bison/341/stage2/package.sh
 {% endblock %}
 
 {% block patch %}

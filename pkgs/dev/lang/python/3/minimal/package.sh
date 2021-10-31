@@ -1,7 +1,10 @@
 {% extends '//dev/lang/python/3/10/package.sh' %}
 
 {% block deps %}
-# bld {{'lib/linux' | linux}} lib/z env/std boot/final/env/tools
+# bld {{'lib/linux/package.sh' | linux}}
+# bld lib/z/package.sh
+# bld env/std/package.sh
+# bld boot/final/env/tools/package.sh
 {% endblock %}
 
 {% block extra_modules %}
