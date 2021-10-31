@@ -45,10 +45,9 @@ class RenderContext:
 
     def render(self):
         try:
-            path = self.name
-            data = self.template(path)
+            data = self.template(self.name)
 
-            if path.endswith('.sh'):
+            if data.strip().startswith('#'):
                 return compile_sh(data)
 
             return exec_mod(data, self)

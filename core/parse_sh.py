@@ -29,9 +29,10 @@ class Parser:
                     body += l + '\n'
                 elif l.startswith('# '):
                     self.on_key(keys, l[2:].strip())
-                else:
-                    if l.strip():
-                        body = l + '\n'
+                elif l.startswith('#'):
+                    pass
+                elif l.strip():
+                    body = l + '\n'
             except Exception as e:
                 raise Error(e, l, no + 1)
 
