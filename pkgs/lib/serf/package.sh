@@ -11,21 +11,21 @@
 {% endblock %}
 
 {% block patch %}
-(base64 -d | patch -p1) << EOF
-{% include 'p00.patch/base64' %}
+patch -p1 << EOF
+{% include 'p00.patch' %}
 EOF
 
-(base64 -d | patch -p1) << EOF
-{% include 'p01.patch/base64' %}
+patch -p1 << EOF
+{% include 'p01.patch' %}
 EOF
 {% endblock %}
 
 {% block build %}
-scons PREFIX=${out} \
-    OPENSSL="$lib_openssl" \
-    ZLIB="$lib_z" \
-    APR="$lib_apr" \
-    APU="$lib_apr_util"
+scons PREFIX=${out}          \
+    OPENSSL="${lib_openssl}" \
+    ZLIB="${lib_z}"          \
+    APR="${lib_apr}"         \
+    APU="${lib_apr_util}"
 {% endblock %}
 
 {% block install %}

@@ -6,14 +6,14 @@
 {% endblock %}
 
 {% block deps %}
-# lib lib/z lib/pcre lib/iconv lib/readline lib/curses/any lib/oniguruma
+# lib lib/z lib/pcre lib/iconv lib/readline lib/curses/any lib/curses/terminfo lib/oniguruma
 # bld dev/build/make env/std
 {% endblock %}
 
 {% block toolconf %}
 cat << EOF > ncurses5-config
 #!$(command -v dash)
-echo ${lib_ncurses}/share/terminfo
+echo ${TERMINFO}
 EOF
 
 chmod +x ncurses5-config
@@ -32,7 +32,5 @@ make install-static
 {% endblock %}
 
 {% block env %}
-export SLANG_CFLAGS="-I${out}/include"
-export SLANG_LIBS="-L${out}/lib -lslang"
 export COFLAGS="--with-slang=${out} \${COFLAGS}"
 {% endblock %}

@@ -1,3 +1,3 @@
-# run gnu/file gnu/coreutils/8.31 gnu/findutils gnu/sed
-# run gnu/gawk gnu/grep gnu/patch gnu/diffutils
+# run gnu/file gnu/findutils gnu/sed gnu/gawk gnu/grep gnu/patch gnu/diffutils
+# run tool/b64 tool/sbase
 # run shell/cli/dash/minimal

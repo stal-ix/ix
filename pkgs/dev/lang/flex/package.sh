@@ -7,5 +7,5 @@
 
 {% block deps %}
 # lib dev/lang/m4
-# bld dev/build/make env/std boot/final/env/bison
+# bld dev/build/make dev/doc/texinfo env/std boot/final/env/bison
 {% endblock %}

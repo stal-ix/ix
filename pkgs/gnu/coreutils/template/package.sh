@@ -33,16 +33,10 @@ chmod +x makeinfo
 cat Makefile | grep -v 'LIBINTL = ' > tmp && mv tmp Makefile
 {% endblock %}
 
-{% block prebuild %}
-make LN_S=ln -j ${make_thrs}
-
+{% block patch %}
 {% if mix.platform.target.os == 'darwin' %}
-(
-    cd src
-
-    (base64 -d | patch) << EOF
-{% include 'uname.patch/base64' %}
+(cd src && patch) << EOF
+{% include 'uname.patch' %}
 EOF
-)
 {% endif %}
 {% endblock %}

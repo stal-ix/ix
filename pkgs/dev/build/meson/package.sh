@@ -24,8 +24,8 @@ cd ${out}
 (
     cd meson
 
-    (base64 -d | patch -p1) << EOF
-{% include '00.diff/base64' %}
+    patch -p1 << EOF
+{% include '00.diff' %}
 EOF
 )
 {% endblock %}
