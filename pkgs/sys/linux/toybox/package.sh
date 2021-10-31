@@ -6,7 +6,11 @@
 {% endblock %}
 
 {% block deps %}
-# bld env/std dev/build/make lib/linux
+# bld lib/linux env/c boot/final/env/tools
+{% endblock %}
+
+{% block cflags %}
+export NOSTRIP=yes
 {% endblock %}
 
 {% block configure %}
