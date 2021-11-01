@@ -5,10 +5,13 @@
 # md5 166262a46995d9972aba417fd091acd5
 {% endblock %}
 
-{% block deps %}
-# lib lib/openssl/mix.sh
-# bld dev/build/make/mix.sh
-# bld env/std/mix.sh
+{% block lib_deps %}
+lib/openssl/mix.sh
+{% endblock %}
+
+{% block bld_deps %}
+dev/build/make/mix.sh
+env/std/mix.sh
 {% endblock %}
 
 {% block coflags %}

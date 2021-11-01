@@ -5,10 +5,10 @@
 # md5 d990b0770dd2b15f7a8399580d55d32c
 {% endblock %}
 
-{% block deps %}
-# bld dev/build/automake/1.16.3/mix.sh
-# bld dev/build/make/mix.sh
-# bld env/std/mix.sh
+{% block bld_deps %}
+dev/build/automake/1.16.3/mix.sh
+dev/build/make/mix.sh
+env/std/mix.sh
 {% endblock %}
 
 {% block autoreconf %}

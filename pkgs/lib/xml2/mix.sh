@@ -5,11 +5,14 @@
 # md5 f433a39be087a9f0b197eb2307ad9f75
 {% endblock %}
 
-{% block deps %}
-# lib lib/iconv/mix.sh
-# bld dev/build/make/mix.sh
-# bld dev/build/pkg-config/mix.sh
-# bld env/std/mix.sh
+{% block lib_deps %}
+lib/iconv/mix.sh
+{% endblock %}
+
+{% block bld_deps %}
+dev/build/make/mix.sh
+dev/build/pkg-config/mix.sh
+env/std/mix.sh
 {% endblock %}
 
 {% block coflags %}

@@ -5,9 +5,9 @@
 # md5 6e1728b2021ca19cc9273f080e6c44c7
 {% endblock %}
 
-{% block deps %}
-# bld boot/final/cxx/mix.sh
-# bld boot/final/env/clang/mix.sh
+{% block bld_deps %}
+boot/final/cxx/mix.sh
+boot/final/env/clang/mix.sh
 {% endblock %}
 
 {% block build %}

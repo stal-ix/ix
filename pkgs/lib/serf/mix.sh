@@ -5,14 +5,17 @@
 # md5 370a6340ff20366ab088012cd13f2b57
 {% endblock %}
 
-{% block deps %}
-# lib lib/z/mix.sh
-# lib lib/apr/mix.sh
-# lib lib/openssl/mix.sh
-# lib lib/apr-util/mix.sh
-# bld dev/build/scons/mix.sh
-# bld gnu/patch/mix.sh
-# bld env/std/mix.sh
+{% block lib_deps %}
+lib/z/mix.sh
+lib/apr/mix.sh
+lib/openssl/mix.sh
+lib/apr-util/mix.sh
+{% endblock %}
+
+{% block bld_deps %}
+dev/build/scons/mix.sh
+gnu/patch/mix.sh
+env/std/mix.sh
 {% endblock %}
 
 {% block patch %}

@@ -5,10 +5,10 @@
 # md5 e812da327b1c2214ac1aed440ea3ae8d
 {% endblock %}
 
-{% block deps %}
-# bld env/std/mix.sh
-# bld tool/compress/minigzip/mix.sh
-# bld boot/final/env/tools/mix.sh
+{% block bld_deps %}
+env/std/mix.sh
+tool/compress/minigzip/mix.sh
+boot/final/env/tools/mix.sh
 {% endblock %}
 
 {% block coflags %}

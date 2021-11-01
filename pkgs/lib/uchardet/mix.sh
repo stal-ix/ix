@@ -5,10 +5,10 @@
 # md5 f1ac05da2edfc17b12d1f942695f59b8
 {% endblock %}
 
-{% block deps %}
-# bld lib/cxx/mix.sh
-# bld env/std/mix.sh
-# bld boot/final/env/tools/mix.sh
+{% block bld_deps %}
+lib/cxx/mix.sh
+env/std/mix.sh
+boot/final/env/tools/mix.sh
 {% endblock %}
 
 {% block env %}

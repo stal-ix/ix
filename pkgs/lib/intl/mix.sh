@@ -5,11 +5,14 @@
 # md5 28b1cd4c94a74428723ed966c38cf479
 {% endblock %}
 
-{% block deps %}
-# lib lib/iconv/mix.sh
-# lib {{'sys/framework/CoreFoundation/mix.sh' | darwin}}
-# bld env/c/mix.sh
-# bld boot/final/env/tools/mix.sh
+{% block lib_deps %}
+lib/iconv/mix.sh
+{{'sys/framework/CoreFoundation/mix.sh' | darwin}}
+{% endblock %}
+
+{% block bld_deps %}
+env/c/mix.sh
+boot/final/env/tools/mix.sh
 {% endblock %}
 
 {% block postunpack %}

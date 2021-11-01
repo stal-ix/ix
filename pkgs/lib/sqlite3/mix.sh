@@ -5,10 +5,10 @@
 # md5 d1d1aba394c8e0443077dc9f1a681bb8
 {% endblock %}
 
-{% block deps %}
-# bld lib/readline/mix.sh
-# bld dev/build/make/mix.sh
-# bld env/std/mix.sh
+{% block bld_deps %}
+lib/readline/mix.sh
+dev/build/make/mix.sh
+env/std/mix.sh
 {% endblock %}
 
 {% block cflags %}

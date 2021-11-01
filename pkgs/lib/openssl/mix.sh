@@ -5,11 +5,11 @@
 # md5 cccaa064ed860a2b4d1303811bf5c682
 {% endblock %}
 
-{% block deps %}
-# bld {{'lib/linux/mix.sh' | linux}}
-# bld dev/build/make/mix.sh
-# bld dev/lang/perl5/mix.sh
-# bld env/std/mix.sh
+{% block bld_deps %}
+{{'lib/linux/mix.sh' | linux}}
+dev/build/make/mix.sh
+dev/lang/perl5/mix.sh
+env/std/mix.sh
 {% endblock %}
 
 {% block cflags %}
@@ -25,13 +25,13 @@ PLATFORM_linux_x86_64="linux-x86_64-clang"
 PLATFORM=$PLATFORM_{{mix.platform.target.os}}_{{mix.platform.target.arch}}
 
 perl ./Configure \
-    $PLATFORM \
-    no-asm \
-    threads \
-    no-shared \
-    no-dso \
-    no-hw \
-    no-tests \
+    ${PLATFORM}       \
+    no-asm            \
+    threads           \
+    no-shared         \
+    no-dso            \
+    no-hw             \
+    no-tests          \
     --prefix="${out}" \
     --openssldir="${out}"
 {% endblock %}

@@ -1,8 +1,11 @@
 {% extends '//mix/template/proxy.sh' %}
 
-{% block deps %}
-# lib lib/wolfssl/mix.sh
-# bld env/std/mix.sh
+{% block lib_deps %}
+lib/wolfssl/mix.sh
+{% endblock %}
+
+{% block bld_deps %}
+env/std/mix.sh
 {% endblock %}
 
 {% block build %}

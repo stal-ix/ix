@@ -5,10 +5,13 @@
 # md5 e9557dd5b1409f5d7b37ef717c64518e
 {% endblock %}
 
-{% block deps %}
-# lib lib/curses/any/mix.sh
-# bld dev/build/make/mix.sh
-# bld env/std/mix.sh
+{% block lib_deps %}
+lib/curses/any/mix.sh
+{% endblock %}
+
+{% block bld_deps %}
+dev/build/make/mix.sh
+env/std/mix.sh
 {% endblock %}
 
 {% block cflags %}

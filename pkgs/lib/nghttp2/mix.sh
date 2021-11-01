@@ -5,13 +5,16 @@
 # md5 c1d607bf3830000acd7a51f0058f4bd2
 {% endblock %}
 
-{% block deps %}
-# lib lib/z/mix.sh
-# lib lib/c-ares/mix.sh
-# lib lib/openssl/mix.sh
-# bld dev/build/make/mix.sh
-# bld dev/build/pkg-config/mix.sh
-# bld env/std/mix.sh
+{% block lib_deps %}
+lib/z/mix.sh
+lib/c-ares/mix.sh
+lib/openssl/mix.sh
+{% endblock %}
+
+{% block bld_deps %}
+dev/build/make/mix.sh
+dev/build/pkg-config/mix.sh
+env/std/mix.sh
 {% endblock %}
 
 {% block coflags %}

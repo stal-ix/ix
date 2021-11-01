@@ -5,10 +5,13 @@
 # md5 8755cdbc857794730a022722a66d431a
 {% endblock %}
 
-{% block deps %}
-# lib lib/cxx/mix.sh
-# bld dev/build/cmake/mix.sh
-# bld env/std/mix.sh
+{% block lib_deps %}
+lib/cxx/mix.sh
+{% endblock %}
+
+{% block bld_deps %}
+dev/build/cmake/mix.sh
+env/std/mix.sh
 {% endblock %}
 
 {% block env %}

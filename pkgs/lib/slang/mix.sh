@@ -5,16 +5,19 @@
 # md5 c2d5a7aa0246627da490be4e399c87cb
 {% endblock %}
 
-{% block deps %}
-# lib lib/z/mix.sh
-# lib lib/pcre/mix.sh
-# lib lib/iconv/mix.sh
-# lib lib/readline/mix.sh
-# lib lib/curses/any/mix.sh
-# lib lib/curses/terminfo/mix.sh
-# lib lib/oniguruma/mix.sh
-# bld dev/build/make/mix.sh
-# bld env/std/mix.sh
+{% block lib_deps %}
+lib/z/mix.sh
+lib/pcre/mix.sh
+lib/iconv/mix.sh
+lib/readline/mix.sh
+lib/curses/any/mix.sh
+lib/curses/terminfo/mix.sh
+lib/oniguruma/mix.sh
+{% endblock %}
+
+{% block bld_deps %}
+dev/build/make/mix.sh
+env/std/mix.sh
 {% endblock %}
 
 {% block toolconf %}

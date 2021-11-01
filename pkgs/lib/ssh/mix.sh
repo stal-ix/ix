@@ -5,10 +5,13 @@
 # md5 6211e47ba4dfd7f7e9f8a17a601245f4
 {% endblock %}
 
-{% block deps %}
-# lib lib/z/mix.sh
-# lib lib/cxx/mix.sh
-# lib lib/openssl/mix.sh
-# bld dev/build/cmake/mix.sh
-# bld env/std/mix.sh
+{% block lib_deps %}
+lib/z/mix.sh
+lib/cxx/mix.sh
+lib/openssl/mix.sh
+{% endblock %}
+
+{% block bld_deps %}
+dev/build/cmake/mix.sh
+env/std/mix.sh
 {% endblock %}
