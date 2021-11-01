@@ -10,7 +10,7 @@ dev/build/samurai/mix.sh
 {% endblock %}
 
 {% block bld_deps %}
-{{'sys/framework/CoreFoundation/package.py' | darwin}}
+{{'sys/framework/CoreFoundation/mix.sh' | darwin}}
 {{'lib/linux/mix.sh' | linux}}
 lib/z/mix.sh
 lib/xz/mix.sh

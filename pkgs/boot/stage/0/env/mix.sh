@@ -1,6 +1,6 @@
 def package(mix):
     deps = [
-        'boot/stage/0/mix/package.py',
+        'boot/stage/0/mix/mix.sh',
         #'boot/stage/0/{{mix.platform.target.os}}',
     ]
 
@@ -12,8 +12,8 @@ def package(mix):
         'runtime': {
             'depends': deps + [
                 'env/system/mix.sh',
-                'env/compiler/package.py',
-                'env/bootstrap/package.py',
+                'env/compiler/mix.sh',
+                'env/bootstrap/mix.sh',
             ],
         },
     }

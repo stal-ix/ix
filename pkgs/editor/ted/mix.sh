@@ -6,7 +6,7 @@
 {% endblock %}
 
 {% block deps %}
-# bld pypi/pygments/package.py
+# bld pypi/pygments/mix.sh
 # bld dev/lang/python/3/10/mix.sh
 {% endblock %}
 

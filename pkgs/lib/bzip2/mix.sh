@@ -9,5 +9,5 @@
 # bld dev/build/make/mix.sh
 # bld env/tools/mix.sh
 # bld env/c/mix.sh
-# bld env/bootstrap/package.py
+# bld env/bootstrap/mix.sh
 {% endblock %}

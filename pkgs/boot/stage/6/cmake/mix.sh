@@ -1,7 +1,7 @@
 {% extends '//dev/build/cmake/mix.sh' %}
 
 {% block deps %}
-# bld {{'sys/framework/CoreFoundation/package.py' | darwin}}
+# bld {{'sys/framework/CoreFoundation/mix.sh' | darwin}}
 # bld {{'boot/lib/linux/mix.sh' | linux}}
 # bld boot/lib/cxx/mix.sh
 # bld boot/stage/5/env/mix.sh

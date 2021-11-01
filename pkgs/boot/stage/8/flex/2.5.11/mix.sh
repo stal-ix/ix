@@ -3,11 +3,11 @@
 # url https://raw.githubusercontent.com/fosslinux/live-bootstrap/master/sysa/flex-2.5.11/patches/scan_l.patch
 # md5 ab3764132c0ed5b7f5829b78eb5a849a
 # bld dev/build/make/mix.sh
-# bld dev/lang/lex/package.py
+# bld dev/lang/lex/mix.sh
 # bld dev/lang/byacc/mix.sh
 # bld env/std/mix.sh
-# bld dev/build/automake/package.py
-# bld dev/build/autoconf/package.py
+# bld dev/build/automake/mix.sh
+# bld dev/build/autoconf/mix.sh
 # bld dev/build/libtool/mix.sh
 
 build() {

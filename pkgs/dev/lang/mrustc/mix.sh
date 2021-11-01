@@ -19,7 +19,7 @@
 # bld shell/cli/bash/minimal/mix.sh
 # bld dev/vcs/git/mix.sh
 # bld gnu/tar/mix.sh
-# bld tool/gnu/time/package.py
+# bld tool/gnu/time/mix.sh
 # bld dev/lang/python/3/minimal/mix.sh
 # bld dev/build/make/mix.sh
 # bld dev/build/cmake/mix.sh

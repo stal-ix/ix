@@ -2,7 +2,7 @@
 
 {% block extradeps %}
 # bld {{'boot/lib/linux/mix.sh' | linux}}
-# bld {{'sys/framework/CoreFoundation/package.py' | darwin}}
+# bld {{'sys/framework/CoreFoundation/mix.sh' | darwin}}
 # bld boot/lib/cxx/mix.sh
 # bld boot/stage/6/cmake/mix.sh
 # bld boot/stage/6/python/mix.sh

@@ -7,4 +7,4 @@
 # run boot/stage/5/diffutils/mix.sh
 # run boot/stage/5/findutils/mix.sh
 # run boot/stage/2/shutil/mix.sh
-# run env/bootstrap/package.py
+# run env/bootstrap/mix.sh

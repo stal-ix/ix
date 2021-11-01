@@ -13,7 +13,7 @@ lib/zstd/mix.sh
 lib/brotli/mix.sh
 lib/nghttp2/mix.sh
 lib/openssl/mix.sh
-{{'sys/framework/SystemConfiguration/package.py' | darwin}}
+{{'sys/framework/SystemConfiguration/mix.sh' | darwin}}
 {% endblock %}
 
 {% block bld_deps %}

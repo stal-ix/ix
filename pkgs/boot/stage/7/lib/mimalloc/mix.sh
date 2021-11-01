@@ -3,5 +3,5 @@
 {% block deps %}
 # lib boot/stage/7/lib/musl/mix.sh
 # bld boot/stage/6/cmake/mix.sh
-# bld boot/stage/6/env/clang/package.py
+# bld boot/stage/6/env/clang/mix.sh
 {% endblock %}

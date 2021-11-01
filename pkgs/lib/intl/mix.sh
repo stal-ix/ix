@@ -7,7 +7,7 @@
 
 {% block deps %}
 # lib lib/iconv/mix.sh
-# lib {{'sys/framework/CoreFoundation/package.py' | darwin}}
+# lib {{'sys/framework/CoreFoundation/mix.sh' | darwin}}
 # bld env/c/mix.sh
 # bld boot/final/env/tools/mix.sh
 {% endblock %}

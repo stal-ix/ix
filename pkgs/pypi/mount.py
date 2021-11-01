@@ -15,7 +15,7 @@ TMPL = '''
 {% block deps %}
 # bld dev/lang/python/3/minimal/mix.sh
 # bld env/std/mix.sh
-# run {run}/package.py
+# run {run}/mix.sh
 {% endblock %}
 
 {% block unpack %}

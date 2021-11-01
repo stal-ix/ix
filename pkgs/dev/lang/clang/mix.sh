@@ -3,13 +3,13 @@
 {% block deps %}
 {% block extradeps %}
 # bld {{'lib/linux/mix.sh' | linux}}
-# bld {{'sys/framework/CoreFoundation/package.py' | darwin}}
+# bld {{'sys/framework/CoreFoundation/mix.sh' | darwin}}
 # bld boot/final/cxx/mix.sh
 # bld boot/final/env/clang/mix.sh
 {% endblock %}
 # run env/clang/mix.sh
-# run env/lld/{{mix.platform.target.os}}/package.py
-# run env/compiler/package.py
+# run env/lld/{{mix.platform.target.os}}/mix.sh
+# run env/compiler/mix.sh
 # run env/system/mix.sh
 {% endblock %}
 

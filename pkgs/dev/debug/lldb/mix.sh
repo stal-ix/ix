@@ -6,7 +6,7 @@
 
 {% block deps %}
 # bld {{'lib/linux/mix.sh' | linux}}
-# bld {{'sys/framework/CoreFoundation/package.py' | darwin}}
+# bld {{'sys/framework/CoreFoundation/mix.sh' | darwin}}
 # bld lib/cxx/mix.sh
 # bld lib/curses/any/mix.sh
 # bld lib/edit/mix.sh

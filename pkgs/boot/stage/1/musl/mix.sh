@@ -8,7 +8,7 @@
 {% endblock %}
 
 {% block bld_deps %}
-boot/stage/0/env/package.py
+boot/stage/0/env/mix.sh
 {% endblock %}
 
 {% block script %}

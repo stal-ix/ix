@@ -9,7 +9,7 @@
 dev/build/make/mix.sh
 env/tools/mix.sh
 env/c/mix.sh
-env/bootstrap/package.py
+env/bootstrap/mix.sh
 {% endblock %}
 
 {% block make_flags %}

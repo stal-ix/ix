@@ -6,7 +6,7 @@
 
 {% block deps %}
 # lib dev/lang/python/3/10/lib/mix.sh
-# bld pypi/pygments/package.py
+# bld pypi/pygments/mix.sh
 {% endblock %}
 
 {% block cflags %}

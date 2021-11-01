@@ -6,7 +6,7 @@
 {% endblock %}
 
 {% block deps %}
-# lib {{'sys/framework/AppKit/package.py' | darwin}}
+# lib {{'sys/framework/AppKit/mix.sh' | darwin}}
 # bld dev/build/cmake/mix.sh
 # bld dev/build/pkg-config/mix.sh
 # bld env/std/mix.sh

@@ -2,5 +2,5 @@
 
 {% block deps %}
 # bld boot/stage/4/make/mix.sh
-# bld boot/stage/6/env/clang/package.py
+# bld boot/stage/6/env/clang/mix.sh
 {% endblock %}

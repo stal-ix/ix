@@ -5,7 +5,7 @@
 # lib boot/stage/8/m4/mix.sh
 # bld boot/stage/4/make/mix.sh
 # bld boot/stage/8/flex/mix.sh
-# bld boot/stage/6/env/clang/package.py
+# bld boot/stage/6/env/clang/mix.sh
 {% block bison %}
 {% endblock %}
 {% endblock %}

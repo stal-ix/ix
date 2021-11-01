@@ -7,9 +7,9 @@
 
 {% block deps %}
 # bld dev/lang/python/3/10/mix.sh
-# bld pypi/jinja2/package.py
-# bld pypi/beautysh/package.py
-# bld pypi/minio/package.py
+# bld pypi/jinja2/mix.sh
+# bld pypi/beautysh/mix.sh
+# bld pypi/minio/mix.sh
 {% endblock %}
 
 {% block extra_modules %}

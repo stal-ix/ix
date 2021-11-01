@@ -11,7 +11,7 @@
 # lib lib/iconv/mix.sh
 # lib lib/ffi/mix.sh
 # lib lib/intl/mix.sh
-# lib {{'sys/framework/CoreServices/package.py sys/framework/Foundation/package.py' | darwin}}
+# lib {{'sys/framework/CoreServices/mix.sh sys/framework/Foundation/package.py' | darwin}}
 # bld dev/build/meson/mix.sh
 # bld env/std/mix.sh
 # bld boot/final/env/tools/mix.sh

@@ -3,4 +3,4 @@
 # run boot/stage/2/heirloom/mix.sh
 # run boot/stage/2/bmake/mix.sh
 # run boot/stage/2/shutil/mix.sh
-# run boot/stage/0/env/package.py
+# run boot/stage/0/env/mix.sh
