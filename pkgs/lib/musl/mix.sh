@@ -1,8 +1,8 @@
 {% extends '//lib/musl/template/mix.sh' %}
 
-{% block deps %}
-# bld env/c/nort/package.py
-# bld boot/final/env/tools/mix.sh
+{% block bld_deps %}
+env/c/nort/package.py
+boot/final/env/tools/mix.sh
 {% endblock %}
 
 {% block cflags %}

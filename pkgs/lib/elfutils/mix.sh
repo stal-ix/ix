@@ -5,19 +5,29 @@
 # md5 2b6e94c2eebc1f2194173e31bca9396e
 {% endblock %}
 
-{% block deps %}
-# lib lib/argp/standalone/mix.sh
-# lib lib/fts/mix.sh
-# lib lib/obstack/mix.sh
-# lib lib/z/mix.sh
-# lib lib/bzip2/mix.sh
-# lib lib/xz/mix.sh
-# lib lib/zstd/mix.sh
-# lib lib/iconv/mix.sh
-# lib lib/intl/mix.sh
-# bld dev/lang/m4/mix.sh
-# bld dev/build/make/mix.sh
-# bld env/std/mix.sh
+{% block lib_deps %}
+lib/argp/standalone/mix.sh
+lib/fts/mix.sh
+lib/obstack/mix.sh
+lib/z/mix.sh
+lib/bzip2/mix.sh
+lib/xz/mix.sh
+lib/zstd/mix.sh
+lib/iconv/mix.sh
+lib/intl/mix.sh
+{% endblock %}
+
+{% block bld_deps %}
+dev/lang/m4/mix.sh
+dev/build/make/mix.sh
+env/std/mix.sh
+{% endblock %}
+
+{% block patch %}
+mkdir sys
+
+cat << EOF > sys/cdefs.h
+EOF
 {% endblock %}
 
 {% block cflags %}

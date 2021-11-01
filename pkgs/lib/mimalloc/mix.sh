@@ -5,10 +5,10 @@
 # md5 40c75843e55e5c02d47fc5b1fda30124
 {% endblock %}
 
-{% block deps %}
-# bld {{'lib/musl/mix.sh' | linux}}
-# bld env/c/nort/package.py
-# bld boot/final/env/tools/mix.sh
+{% block bld_deps %}
+{{'lib/musl/mix.sh' | linux}}
+env/c/nort/package.py
+boot/final/env/tools/mix.sh
 {% endblock %}
 
 {% block cmflags %}
