@@ -5,12 +5,12 @@
 # md5 ff3564fddcc2b9bd4a9c1d143aba4b4c
 {% endblock %}
 
-{% block deps %}
-# bld {{'dev/lang/cctools/mix.sh' | darwin}}
-# bld dev/build/make/mix.sh
-# bld env/tools/mix.sh
-# bld env/c/mix.sh
-# bld env/bootstrap/mix.sh
+{% block bld_deps %}
+{{'dev/lang/cctools/mix.sh' | darwin}}
+dev/build/make/mix.sh
+env/tools/mix.sh
+env/c/mix.sh
+env/bootstrap/mix.sh
 {% endblock %}
 
 {% block cflags %}

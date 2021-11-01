@@ -5,22 +5,22 @@
 # md5 b774bb0da9cb84cb9f5bbbcbcc31d00e
 {% endblock %}
 
-{% block deps %}
-# bld lib/brotli/mix.sh
-# bld lib/zstd/mix.sh
-# bld lib/nghttp2/mix.sh
-# bld lib/xz/mix.sh
-# bld lib/z/mix.sh
-# bld lib/intl/mix.sh
-# bld lib/iconv/mix.sh
-# bld lib/wolfssl/mix.sh
-# bld lib/bzip2/mix.sh
-# bld lib/idn2/mix.sh
-# bld lib/pcre/mix.sh
-# bld dev/build/make/mix.sh
-# bld dev/build/pkg-config/mix.sh
-# bld dev/doc/texinfo/mix.sh
-# bld env/std/mix.sh
+{% block bld_deps %}
+lib/brotli/mix.sh
+lib/zstd/mix.sh
+lib/nghttp2/mix.sh
+lib/xz/mix.sh
+lib/z/mix.sh
+lib/intl/mix.sh
+lib/iconv/mix.sh
+lib/wolfssl/mix.sh
+lib/bzip2/mix.sh
+lib/idn2/mix.sh
+lib/pcre/mix.sh
+dev/build/make/mix.sh
+dev/build/pkg-config/mix.sh
+dev/doc/texinfo/mix.sh
+env/std/mix.sh
 {% endblock %}
 
 {% block coflags %}

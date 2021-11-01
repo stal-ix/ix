@@ -33,16 +33,17 @@ set -u
 
 # init
 export CMPATH=
+export CFLAGS=
+export OSX_SDK=
 export COFLAGS=
 export CMFLAGS=
-export CFLAGS=
+export LDFLAGS=
 export CXXFLAGS=
 export CPPFLAGS=
-export LDFLAGS=
 export CONLYFLAGS=
-export PKG_CONFIG_PATH=
 export PYTHONPATH=
 export ACLOCAL_PATH=
+export PKG_CONFIG_PATH=
 export PYTHONDONTWRITEBYTECODE=1
 
 rm -rf ${out} || true
