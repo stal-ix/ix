@@ -1,12 +1,12 @@
 {% extends '//mix/template/template.sh' %}
 
-{% block deps %}
-# bld {{'lib/linux/mix.sh' | linux}}
-# bld env/c/mix.sh
-# bld boot/final/env/tools/mix.sh
+{% block bld_deps %}
+{{'lib/linux/mix.sh' | linux}}
+env/c/mix.sh
+boot/final/env/tools/mix.sh
 {% endblock %}
 
-{% block fetch%}
+{% block fetch %}
 {% include '//mix/template/fetch_llvm.sh' %}
 {% endblock %}
 

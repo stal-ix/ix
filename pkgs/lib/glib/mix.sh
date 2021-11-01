@@ -5,16 +5,19 @@
 # md5 07ba0e946bf6dcad36388675d2f2876f
 {% endblock %}
 
-{% block deps %}
-# lib lib/z/mix.sh
-# lib lib/pcre/mix.sh
-# lib lib/iconv/mix.sh
-# lib lib/ffi/mix.sh
-# lib lib/intl/mix.sh
-# lib {{'sys/framework/CoreServices/mix.sh sys/framework/Foundation/package.py' | darwin}}
-# bld dev/build/meson/mix.sh
-# bld env/std/mix.sh
-# bld boot/final/env/tools/mix.sh
+{% block lib_deps %}
+lib/z/mix.sh
+lib/pcre/mix.sh
+lib/iconv/mix.sh
+lib/ffi/mix.sh
+lib/intl/mix.sh
+{{'sys/framework/CoreServices/mix.sh sys/framework/Foundation/package.py' | darwin}}
+{% endblock %}
+
+{% block bld_deps %}
+dev/build/meson/mix.sh
+env/std/mix.sh
+boot/final/env/tools/mix.sh
 {% endblock %}
 
 {% block cflags %}

@@ -5,20 +5,21 @@
 # md5 cda07f5ac55fccfafdf7ee01828adad5
 {% endblock %}
 
-{% block deps %}
-# lib lib/intl/mix.sh
-# lib lib/iconv/mix.sh
-# lib lib/unistring/mix.sh
-# bld dev/build/automake/1.16.1/mix.sh
-# bld dev/build/make/mix.sh
-# bld dev/build/pkg-config/mix.sh
-# bld env/std/mix.sh
+{% block lib_deps %}
+lib/intl/mix.sh
+lib/iconv/mix.sh
+lib/unistring/mix.sh
+{% endblock %}
+
+{% block bld_deps %}
+dev/build/automake/1.16.1/mix.sh
+dev/build/make/mix.sh
+dev/build/pkg-config/mix.sh
+env/std/mix.sh
 {% endblock %}
 
 {% block cflags %}
 export CPPFLAGS="-Derror=idna2_error ${CPPFLAGS}"
-{% if mix.platform.target.os == 'darwin' %}
-{% endif %}
 {% endblock %}
 
 {% block prebuild %}

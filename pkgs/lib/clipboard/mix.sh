@@ -5,9 +5,12 @@
 # md5 bddc22070b6804ed63994af49b778b70
 {% endblock %}
 
-{% block deps %}
-# lib {{'sys/framework/AppKit/mix.sh' | darwin}}
-# bld dev/build/cmake/mix.sh
-# bld dev/build/pkg-config/mix.sh
-# bld env/std/mix.sh
+{% block lib_deps %}
+{{'sys/framework/AppKit/mix.sh' | darwin}}
+{% endblock %}
+
+{% block bld_deps %}
+dev/build/cmake/mix.sh
+dev/build/pkg-config/mix.sh
+env/std/mix.sh
 {% endblock %}

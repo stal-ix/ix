@@ -5,11 +5,11 @@
 # md5 a4fb91a9441bcaec576d4c4a56fa3aa6
 {% endblock %}
 
-{% block deps %}
-# bld dev/build/make/mix.sh
-# bld env/tools/mix.sh
-# bld env/c/mix.sh
-# bld env/bootstrap/mix.sh
+{% block bld_deps %}
+dev/build/make/mix.sh
+env/tools/mix.sh
+env/c/mix.sh
+env/bootstrap/mix.sh
 {% endblock %}
 
 {% block coflags %}

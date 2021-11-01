@@ -5,11 +5,11 @@
 # md5 294b921e6cf9ab0fbaea4b639f8fdbe8
 {% endblock %}
 
-{% block deps %}
-# bld {{'lib/linux/mix.sh' | linux}}
-# bld dev/build/make/mix.sh
-# bld gnu/sed/mix.sh
-# bld env/std/mix.sh
+{% block bld_deps %}
+{{'lib/linux/mix.sh' | linux}}
+dev/build/make/mix.sh
+gnu/sed/mix.sh
+env/std/mix.sh
 {% endblock %}
 
 {% block env %}

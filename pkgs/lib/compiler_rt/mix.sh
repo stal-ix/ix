@@ -1,9 +1,9 @@
 {% extends '//mix/template/template.sh' %}
 
-{% block deps %}
-# bld lib/c/mix.sh
-# bld env/c/nort/mix.sh
-# bld boot/final/env/tools/mix.sh
+{% block bld_deps %}
+lib/c/mix.sh
+env/c/nort/mix.sh
+boot/final/env/tools/mix.sh
 {% endblock %}
 
 {% block fetch %}
@@ -16,7 +16,7 @@ cd compiler-rt
 
 {% block build %}
 for x in lib/builtins/*.c; do
-    clang ${CPPFLAGS} ${CFLAGS} -c $x
+    clang ${CPPFLAGS} ${CFLAGS} -c ${x}
 done
 
 ar q libcompiler_rt.a *.o

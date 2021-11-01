@@ -5,12 +5,15 @@
 # md5 b5333f021f880fe76490d8a799cd79f4
 {% endblock %}
 
-{% block deps %}
-# lib lib/openssl/mix.sh
-# bld dev/build/pkg-config/mix.sh
-# bld dev/build/make/mix.sh
-# bld dev/lang/python/3/minimal/mix.sh
-# bld env/std/mix.sh
+{% block lib_deps %}
+lib/openssl/mix.sh
+{% endblock %}
+
+{% block bld_deps %}
+dev/build/pkg-config/mix.sh
+dev/build/make/mix.sh
+dev/lang/python/3/minimal/mix.sh
+env/std/mix.sh
 {% endblock %}
 
 {% block toolconf %}
