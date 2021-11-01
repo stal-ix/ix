@@ -7,7 +7,7 @@
 
 {% block bld_deps %}
 {{'lib/musl/mix.sh' | linux}}
-env/c/nort/package.py
+env/c/nort/mix.sh
 boot/final/env/tools/mix.sh
 {% endblock %}
 

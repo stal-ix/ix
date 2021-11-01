@@ -2,7 +2,7 @@
 
 {% block deps %}
 # bld lib/c/mix.sh
-# bld env/c/nort/package.py
+# bld env/c/nort/mix.sh
 # bld boot/final/env/tools/mix.sh
 {% endblock %}
 

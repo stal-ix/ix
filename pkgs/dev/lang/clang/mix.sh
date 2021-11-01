@@ -7,7 +7,7 @@
 # bld boot/final/cxx/mix.sh
 # bld boot/final/env/clang/mix.sh
 {% endblock %}
-# run env/clang/package.py
+# run env/clang/mix.sh
 # run env/lld/{{mix.platform.target.os}}/package.py
 # run env/compiler/package.py
 # run env/system/mix.sh

@@ -26,7 +26,7 @@ def package(mix):
         'runtime': {
             'depends': [
                 'env/lld/{{mix.platform.target.os}}/package.py',
-                'env/clang/package.py',
+                'env/clang/mix.sh',
             ],
         },
     }
