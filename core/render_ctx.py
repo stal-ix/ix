@@ -75,6 +75,16 @@ class RenderContext:
     def fix_list(self, lst):
         return cononize(lst)
 
+    def py_string_list(self, lst):
+        def it():
+            for x in cononize(lst).split(' '):
+                x = x.strip()
+
+                if x:
+                    yield x
+
+        return ', '.join(f"'{x}'" for x in it())
+
     @property
     def platform(self):
         return self.config.platform

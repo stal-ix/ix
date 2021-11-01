@@ -1,5 +1,5 @@
-{% extends '//mix/template/env.py' %}
+{% extends '//mix/template/py.py' %}
 
 {% block env %}
-export LDFLAGS="-framework AppKit $LDFLAGS"
+export LDFLAGS="-framework AppKit ${LDFLAGS}"
 {% endblock %}

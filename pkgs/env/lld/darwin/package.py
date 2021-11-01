@@ -1,4 +1,4 @@
-{% extends '//mix/template/env.py' %}
+{% extends '//mix/template/py.py' %}
 
 {% block env %}
 export LD=clang

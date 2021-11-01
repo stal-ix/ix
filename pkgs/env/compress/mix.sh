@@ -1,7 +1,12 @@
-import os
+{% extends '//mix/template/py.py' %}
 
+{% block run_deps %}
+tool/pv/mix.sh
+tool/compress/unzip/mix.sh
+tool/compress/bsdtar/mix.sh
+{% endblock %}
 
-data = r'''
+{% block env %}
 do_untar() {
     case $1 in
         *.zip)
@@ -15,7 +20,4 @@ do_untar() {
 
 export untar="do_untar"
 export unzip="do_untar"
-'''
-
-with open(os.environ['out'] + '/env', 'w') as f:
-    f.write(data.strip() + '\n')
+{% endblock %}
