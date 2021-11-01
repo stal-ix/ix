@@ -5,18 +5,20 @@
 # md5 8fb228fd04476f5143163b9cca27366e
 {% endblock %}
 
-{% block deps %}
-# bld lib/ssh/mix.sh
-# bld lib/pcre/mix.sh
-# bld lib/spdlog/mix.sh
-# bld lib/archive/mix.sh
-# bld lib/xerces-c/mix.sh
-# bld lib/magic/mix.sh
-# bld lib/uchardet lib/fmt {{mix.if_linux('lib/linux')}}
-# bld dev/build/pkg-config/mix.sh
-# bld dev/build/cmake/mix.sh
-# bld dev/lang/m4/mix.sh
-# bld env/std/mix.sh
+{% block bld_deps %}
+lib/ssh/mix.sh
+lib/pcre/mix.sh
+lib/spdlog/mix.sh
+lib/archive/mix.sh
+lib/xerces-c/mix.sh
+lib/magic/mix.sh
+lib/uchardet/mix.sh
+lib/fmt/mix.sh
+{{'lib/linux/mix.sh' | linux}}
+dev/build/pkg-config/mix.sh
+dev/build/cmake/mix.sh
+dev/lang/m4/mix.sh
+env/std/mix.sh
 {% endblock %}
 
 {% block patch %}

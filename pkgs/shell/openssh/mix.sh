@@ -9,19 +9,19 @@
 # md5 a50fb1d7c40ac7fac3360218cb37a38b
 {% endblock %}
 
-{% block deps %}
-# bld lib/z/mix.sh
-# bld lib/edit/mix.sh
-# bld lib/ldns/mix.sh
-# bld lib/openssl/mix.sh
-# bld dev/build/make/mix.sh
-# bld dev/build/pkg-config/mix.sh
-# bld gnu/patch/mix.sh
-# bld env/std/mix.sh
+{% block bld_deps %}
+lib/z/mix.sh
+lib/edit/mix.sh
+lib/ldns/mix.sh
+lib/openssl/mix.sh
+dev/build/make/mix.sh
+dev/build/pkg-config/mix.sh
+gnu/patch/mix.sh
+env/std/mix.sh
 {% endblock %}
 
 {% block toolconf %}
-ln -s $lib_ncurses/lib/libncurses.a libcurses.a
+ln -s ${lib_ncurses}/lib/libncurses.a libcurses.a
 export LDFLAGS="-L${PWD} ${LDFLAGS}"
 {% endblock %}
 

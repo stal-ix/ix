@@ -5,16 +5,16 @@
 # md5 cbfee6db4d034bfa62effe695da2bbd6
 {% endblock %}
 
-{% block deps %}
-# bld lib/intl/mix.sh
-# bld lib/yajl/mix.sh
-# bld lib/cap/mix.sh
-# bld lib/seccomp/mix.sh
-# bld lib/argp/standalone/mix.sh
-# bld dev/build/make/mix.sh
-# bld dev/build/pkg-config/mix.sh
-# bld dev/lang/python/3/minimal/mix.sh
-# bld env/std/mix.sh
+{% block bld_deps %}
+lib/intl/mix.sh
+lib/yajl/mix.sh
+lib/cap/mix.sh
+lib/seccomp/mix.sh
+lib/argp/standalone/mix.sh
+dev/build/make/mix.sh
+dev/build/pkg-config/mix.sh
+dev/lang/python/3/minimal/mix.sh
+env/std/mix.sh
 {% endblock %}
 
 {% block coflags %}
