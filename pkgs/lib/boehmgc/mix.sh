@@ -7,12 +7,15 @@
 # md5 10435b33b8cf10ff0afa043f04ccc324
 {% endblock %}
 
-{% block deps %}
-# lib lib/cxx/mix.sh
-# lib lib/atomicops/mix.sh
-# bld dev/build/make/mix.sh
-# bld dev/build/pkg-config/mix.sh
-# bld env/std/mix.sh
+{% block lib_deps %}
+lib/cxx/mix.sh
+lib/atomicops/mix.sh
+{% endblock %}
+
+{% block bld_deps %}
+dev/build/make/mix.sh
+dev/build/pkg-config/mix.sh
+env/std/mix.sh
 {% endblock %}
 
 {% block patch %}

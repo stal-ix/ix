@@ -5,16 +5,19 @@
 # md5 8ff5dc36fa39a2a3db1df196d3ed6086
 {% endblock %}
 
-{% block deps %}
-# lib lib/apr/mix.sh
-# lib lib/gdbm/mix.sh
-# lib lib/iconv/mix.sh
-# lib lib/expat/mix.sh
-# lib lib/sqlite3/mix.sh
-# lib lib/openssl/mix.sh
-# bld dev/build/make/mix.sh
-# bld dev/build/pkg-config/mix.sh
-# bld env/std/mix.sh
+{% block lib_deps %}
+lib/apr/mix.sh
+lib/gdbm/mix.sh
+lib/iconv/mix.sh
+lib/expat/mix.sh
+lib/sqlite3/mix.sh
+lib/openssl/mix.sh
+{% endblock %}
+
+{% block bld_deps %}
+dev/build/make/mix.sh
+dev/build/pkg-config/mix.sh
+env/std/mix.sh
 {% endblock %}
 
 {% block coflags %}

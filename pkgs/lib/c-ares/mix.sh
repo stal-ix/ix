@@ -5,9 +5,9 @@
 # md5 3802264830c6886411dac606c66fdbf8
 {% endblock %}
 
-{% block deps %}
-# bld dev/build/make/mix.sh
-# bld env/std/mix.sh
+{% block bld_deps %}
+dev/build/make/mix.sh
+env/std/mix.sh
 {% endblock %}
 
 {% block coflags %}

@@ -5,19 +5,22 @@
 # md5 2ba9f1f8c169aa9caf8e2d34dde323be
 {% endblock %}
 
-{% block deps %}
-# lib lib/z/mix.sh
-# lib lib/xz/mix.sh
-# lib lib/lz4/mix.sh
-# lib lib/intl/mix.sh
-# lib lib/zstd/mix.sh
-# lib lib/bzip2/mix.sh
-# lib lib/iconv/mix.sh
-# lib lib/expat/mix.sh
-# bld dev/build/make/mix.sh
-# bld env/tools/mix.sh
-# bld env/c/mix.sh
-# bld env/bootstrap/mix.sh
+{% block lib_deps %}
+lib/z/mix.sh
+lib/xz/mix.sh
+lib/lz4/mix.sh
+lib/intl/mix.sh
+lib/zstd/mix.sh
+lib/bzip2/mix.sh
+lib/iconv/mix.sh
+lib/expat/mix.sh
+{% endblock %}
+
+{% block bld_deps %}
+dev/build/make/mix.sh
+env/tools/mix.sh
+env/c/mix.sh
+env/bootstrap/mix.sh
 {% endblock %}
 
 {% block coflags %}
@@ -25,5 +28,5 @@
 {% endblock %}
 
 {% block env %}
-export CMFLAGS="-DCMAKE_USE_SYSTEM_LIBARCHIVE=ON -DLibArchive_LIBRARY=${out}/lib/libarchive.a -DLibArchive_INCLUDE_DIR=${out}/include \${CMFLAGS}"
+export CMFLAGS="-DCMAKE_USE_SYSTEM_LIBARCHIVE=ON \${CMFLAGS}"
 {% endblock %}
