@@ -5,14 +5,14 @@
 # md5 53d2cdb6a47cad1796d32dc5839726e8
 {% endblock %}
 
-{% block deps %}
-# bld lib/cxx/mix.sh
-# bld lib/fmt/mix.sh
-# bld lib/magic/mix.sh
-# bld lib/tvision/mix.sh
-# bld lib/clipboard/mix.sh
-# bld dev/build/cmake/mix.sh
-# bld env/std/mix.sh
+{% block bld_deps %}
+lib/cxx/mix.sh
+lib/fmt/mix.sh
+lib/magic/mix.sh
+lib/tvision/mix.sh
+lib/clipboard/mix.sh
+dev/build/cmake/mix.sh
+env/std/mix.sh
 {% endblock %}
 
 {% block patch %}

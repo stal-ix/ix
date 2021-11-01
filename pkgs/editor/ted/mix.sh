@@ -5,9 +5,9 @@
 # md5 fe51001993fc27ecd2156b2eee5616e1
 {% endblock %}
 
-{% block deps %}
-# bld pypi/pygments/mix.sh
-# bld dev/lang/python/3/10/mix.sh
+{% block bld_deps %}
+pypi/pygments/mix.sh
+dev/lang/python/3/10/mix.sh
 {% endblock %}
 
 {% block bin %}ted.bin{% endblock %}

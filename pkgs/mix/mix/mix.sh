@@ -5,11 +5,11 @@
 # md5 {{mix.flags.mix_md5}}
 {% endblock %}
 
-{% block deps %}
-# bld dev/lang/python/3/10/mix.sh
-# bld pypi/jinja2/mix.sh
-# bld pypi/beautysh/mix.sh
-# bld pypi/minio/mix.sh
+{% block bld_deps %}
+dev/lang/python/3/10/mix.sh
+pypi/jinja2/mix.sh
+pypi/beautysh/mix.sh
+pypi/minio/mix.sh
 {% endblock %}
 
 {% block extra_modules %}

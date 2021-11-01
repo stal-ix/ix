@@ -5,14 +5,14 @@
 # md5 4c3d9ff35b2ab2fe518dc7eb3951e128
 {% endblock %}
 
-{% block deps %}
-# bld lib/z/mix.sh
-# bld lib/curses/any/mix.sh
-# bld dev/build/make/mix.sh
-# bld dev/build/pkg-config/mix.sh
-# bld gnu/patch/mix.sh
-# bld gnu/tar/mix.sh
-# bld env/std/mix.sh
+{% block bld_deps %}
+lib/z/mix.sh
+lib/curses/any/mix.sh
+dev/build/make/mix.sh
+dev/build/pkg-config/mix.sh
+gnu/patch/mix.sh
+gnu/tar/mix.sh
+env/std/mix.sh
 {% endblock %}
 
 {% block patch %}

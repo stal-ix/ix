@@ -12,10 +12,13 @@ TMPL = '''
 # md5 {md5}
 {% endblock %}
 
-{% block deps %}
-# bld dev/lang/python/3/minimal/mix.sh
-# bld env/std/mix.sh
-# run {run}/mix.sh
+{% block bld_deps %}
+dev/lang/python/3/minimal/mix.sh
+env/std/mix.sh
+{% endblock %}
+
+{% block run_deps %}
+{run}/mix.sh
 {% endblock %}
 
 {% block unpack %}
