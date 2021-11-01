@@ -5,9 +5,9 @@
 # md5 4740086061c91069efcfbf4fde458ead
 {% endblock %}
 
-{% block deps %}
-# bld boot/stage/2/shutil/mix.sh
-# bld boot/stage/1/env/mix.sh
+{% block bld_deps %}
+boot/stage/2/shutil/mix.sh
+boot/stage/1/env/mix.sh
 {% endblock %}
 
 {% block preconf %}
