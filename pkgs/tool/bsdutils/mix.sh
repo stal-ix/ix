@@ -5,16 +5,16 @@
 # md5 f3a640fd2b0939d0c17a2eb17801919c
 {% endblock %}
 
-{% block deps %}
-# bld {{'lib/linux/mix.sh lib/fts/package.sh lib/rpmatch/package.sh' | linux}}
-# bld lib/cxx/mix.sh
-# bld lib/xo/mix.sh
-# bld lib/edit/mix.sh
-# bld lib/openssl/mix.sh
-# bld lib/curses/any/mix.sh
-# bld dev/build/meson/mix.sh
-# bld dev/build/pkg-config/mix.sh
-# bld dev/lang/flex/mix.sh
-# bld dev/lang/byacc/mix.sh
-# bld env/std/mix.sh
+{% block bld_deps %}
+{{'lib/linux/mix.sh lib/fts/package.sh lib/rpmatch/package.sh' | linux}}
+lib/cxx/mix.sh
+lib/xo/mix.sh
+lib/edit/mix.sh
+lib/openssl/mix.sh
+lib/curses/any/mix.sh
+dev/build/meson/mix.sh
+dev/build/pkg-config/mix.sh
+dev/lang/flex/mix.sh
+dev/lang/byacc/mix.sh
+env/std/mix.sh
 {% endblock %}

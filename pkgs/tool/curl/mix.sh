@@ -1,8 +1,8 @@
 {% extends '//mix/template/proxy.sh' %}
 
-{% block deps %}
-# bld lib/curl/mix.sh
-# bld env/std/mix.sh
+{% block bld_deps %}
+lib/curl/mix.sh
+env/std/mix.sh
 {% endblock %}
 
 {% block install %}

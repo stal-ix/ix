@@ -1,27 +1,29 @@
-{% extends '//mix/template/template.sh' %}
+{% extends '//mix/template/make.sh' %}
 
 {% block fetch %}
 # url https://downloads.sourceforge.net/project/p7zip/p7zip/16.02/p7zip_16.02_src_all.tar.bz2
 # md5 a0128d661cfe7cc8c121e73519c54fbf
 {% endblock %}
 
-{% block deps %}
-# bld lib/cxx/mix.sh
-# bld dev/build/make/mix.sh
-# bld env/std/mix.sh
+{% block bld_deps %}
+lib/cxx/mix.sh
+dev/build/make/mix.sh
+env/std/mix.sh
 {% endblock %}
 
 {% block cflags %}
 export CXXFLAGS="-std=c++03 ${CXXFLAGS}"
 {% endblock %}
 
-{% block build %}
-make -j ${make_thrs} -f makefile DEST_DIR=${out} 7za
+{% block make_flags %}
+-f makefile DEST_DIR=${out}
 {% endblock %}
 
-{% block install %}
-make -j ${make_thrs} -f makefile DEST_DIR=${out} install
+{% block make_target %}
+7za
+{% endblock %}
 
+{% block postinstall %}
 (
     cd ${out}/usr/local/ && mv * ${out}/
     rm -rf ${out}/usr

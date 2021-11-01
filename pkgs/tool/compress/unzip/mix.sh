@@ -7,12 +7,12 @@
 # md5 e2bf7537e1ca821f6059ee84e7ae76a5
 {% endblock %}
 
-{% block deps %}
-# bld dev/build/make/mix.sh
-# bld gnu/patch/mix.sh
-# bld env/tools/mix.sh
-# bld env/c/mix.sh
-# bld env/bootstrap/mix.sh
+{% block bld_deps %}
+dev/build/make/mix.sh
+gnu/patch/mix.sh
+env/tools/mix.sh
+env/c/mix.sh
+env/bootstrap/mix.sh
 {% endblock %}
 
 {% block postunpack %}
@@ -21,7 +21,7 @@ cd ../unzip*
 
 {% block patch %}
 for i in ../debian/patches/*.patch; do
-    cat "$i" | patch -p1
+    cat "${i}" | patch -p1
 done
 
 for f in fileio.c list.c zipinfo.c; do

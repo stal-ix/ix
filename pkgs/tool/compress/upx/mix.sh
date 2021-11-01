@@ -5,14 +5,14 @@
 # md5 bf5564f33fe9062bc48b53abd4b34223
 {% endblock %}
 
-{% block deps %}
-# bld lib/z/mix.sh
-# bld lib/cxx/mix.sh
-# bld lib/ucl/mix.sh
-# bld dev/build/make/mix.sh
-# bld shell/cli/bash/minimal/mix.sh
-# bld dev/lang/perl5/mix.sh
-# bld env/std/mix.sh
+{% block bld_deps %}
+lib/z/mix.sh
+lib/cxx/mix.sh
+lib/ucl/mix.sh
+dev/build/make/mix.sh
+shell/cli/bash/minimal/mix.sh
+dev/lang/perl5/mix.sh
+env/std/mix.sh
 {% endblock %}
 
 {% block cflags %}

@@ -5,14 +5,14 @@
 # md5 4c89e2e5ecfe72a9d96478fb80f38c34
 {% endblock %}
 
-{% block deps %}
-# bld lib/cxx/mix.sh
-# bld dev/build/make/mix.sh
-# bld env/std/mix.sh
+{% block bld_deps %}
+lib/cxx/mix.sh
+dev/build/make/mix.sh
+env/std/mix.sh
 {% endblock %}
 
 {% block build %}
-make CXX=g++ CC=gcc -j ${make_thrs} -f makefile
+make -j ${make_thrs} -f makefile
 {% endblock %}
 
 {% block install %}
