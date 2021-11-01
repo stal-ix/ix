@@ -5,9 +5,9 @@
 # md5 dc02ea0324279df0ecdc23d519dbcaa0
 {% endblock %}
 
-{% block deps %}
-# bld env/c/mix.sh
-# bld boot/final/env/tools/mix.sh
+{% block bld_deps %}
+env/c/mix.sh
+boot/final/env/tools/mix.sh
 {% endblock %}
 
 {% block toolconf %}

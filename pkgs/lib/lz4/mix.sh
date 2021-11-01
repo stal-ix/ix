@@ -5,17 +5,17 @@
 # md5 3a1ab1684e14fc1afc66228ce61b2db3
 {% endblock %}
 
-{% block deps %}
-# bld dev/build/make/mix.sh
-# bld env/tools/mix.sh
-# bld env/c/mix.sh
-# bld env/bootstrap/package.py
+{% block bld_deps %}
+dev/build/make/mix.sh
+env/tools/mix.sh
+env/c/mix.sh
+env/bootstrap/package.py
 {% endblock %}
 
-{% block build %}
-make PREFIX=${out} BUILD_SHARED=no -j ${make_thrs} allmost
+{% block make_flags %}
+BUILD_SHARED=no
 {% endblock %}
 
-{% block install %}
-make PREFIX=${out} BUILD_SHARED=no install
+{% block make_target %}
+allmost
 {% endblock %}

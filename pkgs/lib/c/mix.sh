@@ -1,1 +1,1 @@
-# run {{'lib/musl/mix.sh lib/mimalloc/package.sh' | linux}}
+# run {{'lib/musl/mix.sh lib/mimalloc/mix.sh' | linux}}

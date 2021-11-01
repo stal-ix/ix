@@ -1,4 +1,22 @@
 {% block deps %}
+{% set bld_deps %}
+{% block bld_deps %}
+{% endblock %}
+{% endset %}
+
+{% set lib_deps %}
+{% block lib_deps %}
+{% endblock %}
+{% endset %}
+
+{% set run_deps %}
+{% block run_deps %}
+{% endblock %}
+{% endset %}
+
+# bld {{bld_deps.replace('\n', ' ')}}
+# lib {{lib_deps.replace('\n', ' ')}}
+# run {{run_deps.replace('\n', ' ')}}
 {% endblock %}
 
 {% block more_deps %}
