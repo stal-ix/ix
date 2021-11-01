@@ -11,7 +11,7 @@
 {% endblock %}
 
 {% block build %}
-cd ${out} && mkdir bin && cd bin && $untar ${src}/SCons* && ln -s SCons* sconsdir
+cd ${out} && mkdir bin && cd bin && ${untar} ${src}/SCons* && ln -s SCons* sconsdir
 
 cat << EOF > scons
 #!$(command -v dash)

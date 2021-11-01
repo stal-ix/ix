@@ -4,7 +4,7 @@
 # bld env/std/mix.sh
 
 build() {
-    cd ${out} && $untar ${src}/go* && cd go*
+    cd ${out} && ${untar} ${src}/go* && cd go*
 
     setup_compiler
 

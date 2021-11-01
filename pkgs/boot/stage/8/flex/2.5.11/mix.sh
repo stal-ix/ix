@@ -11,7 +11,7 @@
 # bld dev/build/libtool/mix.sh
 
 build() {
-    $untar ${src}/flex* && cd flex*
+    ${untar} ${src}/flex* && cd flex*
 
     (
         mkdir tool && cd tool

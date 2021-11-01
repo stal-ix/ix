@@ -16,7 +16,7 @@
 cd ${out}
 
 (
-    $untar ${src}/meson*
+    ${untar} ${src}/meson*
 
     ln -s meson* meson
     mkdir bin && cd bin
