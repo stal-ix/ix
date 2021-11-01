@@ -10,3 +10,6 @@
 >lib/fnmatch.c
 {% endif %}
 {% endblock %}
+
+{% block check_tools %}
+{% endblock %}

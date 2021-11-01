@@ -9,14 +9,18 @@
 {% endblock %}
 {% endset %}
 
+{% block check_tools %}
+command -v pkg-config
+{% endblock %}
+
 cat ./configure \
-    | sed -e "s|/usr/bin/||g"             \
-    | sed -e "s|/usr/|/nowhere/|g"        \
-    | sed -e "s|/bin/sh|$(command -v dash)|g"  \
-    | sed -e "s|/bin/arch|arch|g"         \
-    | sed -e "s|/bin/uname|uname|g"       \
-    | sed -e "s|/bin/machine|machine|g"   \
-    | sed -e "s|/bin/universe|universe|g" \
+    | sed -e "s|/usr/bin/||g"                 \
+    | sed -e "s|/usr/|/nowhere/|g"            \
+    | sed -e "s|/bin/sh|$(command -v dash)|g" \
+    | sed -e "s|/bin/arch|arch|g"             \
+    | sed -e "s|/bin/uname|uname|g"           \
+    | sed -e "s|/bin/machine|machine|g"       \
+    | sed -e "s|/bin/universe|universe|g"     \
     > _ && mv _ ./configure
 
 export ac_cv_build="{{mix.platform.target.gnu_arch}}-{{mix.platform.target.hw_vendor}}-{{mix.platform.target.kernel}}-{{mix.platform.target.vendor}}"

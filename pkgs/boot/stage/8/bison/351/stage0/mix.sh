@@ -6,7 +6,7 @@
 {% endblock %}
 
 {% block bison %}
-# bld boot/stage/8/bison/341/stage2/mix.sh
+boot/stage/8/bison/341/stage2/mix.sh
 {% endblock %}
 
 {% block patch %}

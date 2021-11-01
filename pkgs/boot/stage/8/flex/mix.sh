@@ -1,11 +1,13 @@
 {% extends '//dev/lang/flex/mix.sh' %}
 
-{% block deps %}
-# bld boot/stage/7/lib/mix.sh
-# bld boot/stage/8/m4/mix.sh
-# bld boot/stage/4/make/mix.sh
-# bld boot/stage/4/byacc/mix.sh
-# bld boot/stage/6/env/clang/mix.sh
+{% block lib_deps %}
+boot/stage/8/m4/mix.sh
+{% endblock %}
+
+{% block bld_deps %}
+boot/stage/7/lib/mix.sh
+boot/stage/4/byacc/mix.sh
+boot/stage/6/env/clang/mix.sh
 {% endblock %}
 
 {% block patch %}

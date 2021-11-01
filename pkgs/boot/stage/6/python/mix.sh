@@ -4,6 +4,7 @@
 # bld {{'boot/lib/linux/mix.sh' | linux}}
 # bld boot/lib/z/mix.sh
 # bld boot/lib/compiler_rt/mix.sh
+# bld boot/stage/6/pkg-config/mix.sh
 # bld boot/stage/5/env/mix.sh
 {% endblock %}
 

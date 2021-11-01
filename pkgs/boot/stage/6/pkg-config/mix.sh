@@ -1,8 +1,8 @@
 {% extends '//dev/build/pkg-config/mix.sh' %}
 
-{% block deps %}
-# bld boot/lib/iconv/mix.sh
-# bld boot/stage/5/env/mix.sh
+{% block bld_deps %}
+boot/lib/iconv/mix.sh
+boot/stage/5/env/mix.sh
 {% endblock %}
 
 {% block pkgflags %}
@@ -15,4 +15,7 @@
 
 {% block prebuild %}
 cd glib && make -j ${make_thrs}
+{% endblock %}
+
+{% block check_tools %}
 {% endblock %}
