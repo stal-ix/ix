@@ -5,13 +5,13 @@
 # md5 8470c34eeecc41c1aa0c5d89e630df50
 {% endblock %}
 
-{% block deps %}
-# bld lib/intl/mix.sh
-# bld lib/iconv/mix.sh
-# bld lib/sigsegv/mix.sh
-# bld env/c/mix.sh
-# bld boot/final/env/tools/mix.sh
-# bld boot/final/env/bison/mix.sh
+{% block bld_deps %}
+lib/intl/mix.sh
+lib/iconv/mix.sh
+lib/sigsegv/mix.sh
+env/c/mix.sh
+boot/final/env/tools/mix.sh
+boot/final/env/bison/mix.sh
 {% endblock %}
 
 {% block cflags %}

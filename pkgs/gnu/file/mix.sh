@@ -5,9 +5,9 @@
 # md5 1c450306053622803a25647d88f80f25
 {% endblock %}
 
-{% block deps %}
-# bld env/c/mix.sh
-# bld boot/final/env/tools/mix.sh
+{% block bld_deps %}
+env/c/mix.sh
+boot/final/env/tools/mix.sh
 {% endblock %}
 
 {% block postinstall %}

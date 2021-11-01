@@ -5,16 +5,16 @@
 # md5 28b1cd4c94a74428723ed966c38cf479
 {% endblock %}
 
-{% block deps %}
-# bld lib/iconv/mix.sh
-# bld lib/intl/mix.sh
-# bld lib/unistring/mix.sh
-# bld lib/xml2/mix.sh
-# bld lib/textstyle/mix.sh
-# bld dev/build/make/mix.sh
-# bld dev/lang/bison/3.6.4/mix.sh
-# bld tool/compress/minigzip/mix.sh
-# bld env/std/mix.sh
+{% block bld_deps %}
+lib/iconv/mix.sh
+lib/intl/mix.sh
+lib/unistring/mix.sh
+lib/xml2/mix.sh
+lib/textstyle/mix.sh
+dev/build/make/mix.sh
+dev/lang/bison/3.6.4/mix.sh
+tool/compress/minigzip/mix.sh
+env/std/mix.sh
 {% endblock %}
 
 {% block postunpack %}

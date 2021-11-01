@@ -5,10 +5,10 @@
 # md5 eeefe2e6380931a77dfa6d9350b43186
 {% endblock %}
 
-{% block deps %}
-# bld env/c/mix.sh
-# bld lib/iconv/mix.sh
-# bld boot/final/env/tools/mix.sh
+{% block bld_deps %}
+env/c/mix.sh
+lib/iconv/mix.sh
+boot/final/env/tools/mix.sh
 {% endblock %}
 
 {% block patch %}
