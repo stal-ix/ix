@@ -5,12 +5,12 @@
 # md5 7c3e46cb5af2b469722cafa0d91e127b
 {% endblock %}
 
-{% block deps %}
-# bld lib/cxx/mix.sh
-# bld lib/pcre/mix.sh
-# bld dev/build/make/mix.sh
-# bld dev/lang/bison/3.7.6/mix.sh
-# bld env/std/mix.sh
+{% block bld_deps %}
+lib/cxx/mix.sh
+lib/pcre/mix.sh
+dev/build/make/mix.sh
+dev/lang/bison/3.7.6/mix.sh
+env/std/mix.sh
 {% endblock %}
 
 {% block coflags %}

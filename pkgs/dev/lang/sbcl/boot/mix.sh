@@ -5,12 +5,12 @@
 # md5 3f21dbcab14b4aa51b9a9f03c2b78b9c
 {% endblock %}
 
-{% block deps %}
-# bld lib/dlfcn/mix.sh
-# bld lib/z/mix.sh
-# bld {{'lib/linux/mix.sh' | linux}}
-# bld dev/build/make/mix.sh
-# bld env/std/mix.sh
+{% block bld_deps %}
+lib/dlfcn/mix.sh
+lib/z/mix.sh
+{{'lib/linux/mix.sh' | linux}}
+dev/build/make/mix.sh
+env/std/mix.sh
 {% endblock %}
 
 {% block cflags %}

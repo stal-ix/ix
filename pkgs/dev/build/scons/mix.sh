@@ -5,9 +5,12 @@
 # md5 2b1daf6c83e467ae41c742f546c2fe5a
 {% endblock %}
 
-{% block deps %}
-# bld env/std/mix.sh
-# run dev/lang/python/3/minimal/mix.sh
+{% block bld_deps %}
+env/std/mix.sh
+{% endblock %}
+
+{% block run_deps %}
+dev/lang/python/3/minimal/mix.sh
 {% endblock %}
 
 {% block build %}

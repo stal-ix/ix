@@ -5,15 +5,15 @@
 # md5 08fb04335e2f5e73f23ea4c3adbf0c5f
 {% endblock %}
 
-{% block deps %}
-# bld lib/cxx/mix.sh
-# bld lib/uchardet/mix.sh
-# bld dev/lang/perl5/mix.sh
-# bld dev/lang/bison/3.7.6/mix.sh
-# bld dev/doc/texinfo/mix.sh
-# bld dev/build/make/mix.sh
-# bld dev/build/pkg-config/mix.sh
-# bld env/std/mix.sh
+{% block bld_deps %}
+lib/cxx/mix.sh
+lib/uchardet/mix.sh
+dev/lang/perl5/mix.sh
+dev/lang/bison/3.7.6/mix.sh
+dev/doc/texinfo/mix.sh
+dev/build/make/mix.sh
+dev/build/pkg-config/mix.sh
+env/std/mix.sh
 {% endblock %}
 
 {% block patch %}

@@ -4,28 +4,28 @@
 {% include 'version.sh' %}
 {% endblock %}
 
-{% block deps %}
-# bld dev/debug/gdb/py/mix.sh(edit=readline)
-# bld {{'lib/linux/mix.sh' | linux}}
-# bld lib/intel-pt/mix.sh
-# bld lib/intl/mix.sh
-# bld lib/expat/mix.sh
-# bld lib/curses/any/mix.sh
-# bld lib/iconv/mix.sh
-# bld lib/readline/mix.sh
-# bld lib/cxx/mix.sh
-# bld lib/z/mix.sh
-# bld lib/xz/mix.sh
-# bld lib/gmp/mix.sh
-# bld lib/mpfr/mix.sh
-# bld lib/mpc/mix.sh
-# bld lib/xxhash/mix.sh
-# bld dev/build/make/mix.sh
-# bld dev/lang/byacc/mix.sh
-# bld dev/lang/flex/mix.sh
-# bld dev/doc/texinfo/mix.sh
-# bld env/std/mix.sh
-# bld dev/build/pkg-config/mix.sh
+{% block bld_deps %}
+dev/debug/gdb/py/mix.sh(edit=readline)
+{{'lib/linux/mix.sh' | linux}}
+lib/intel-pt/mix.sh
+lib/intl/mix.sh
+lib/expat/mix.sh
+lib/curses/any/mix.sh
+lib/iconv/mix.sh
+lib/readline/mix.sh
+lib/cxx/mix.sh
+lib/z/mix.sh
+lib/xz/mix.sh
+lib/gmp/mix.sh
+lib/mpfr/mix.sh
+lib/mpc/mix.sh
+lib/xxhash/mix.sh
+dev/build/make/mix.sh
+dev/lang/byacc/mix.sh
+dev/lang/flex/mix.sh
+dev/doc/texinfo/mix.sh
+env/std/mix.sh
+dev/build/pkg-config/mix.sh
 {% endblock %}
 
 {% block cflags %}

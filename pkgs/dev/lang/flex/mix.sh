@@ -5,10 +5,13 @@
 # md5 2882e3179748cc9f9c23ec593d6adc8d
 {% endblock %}
 
-{% block deps %}
-# lib dev/lang/m4/mix.sh
-# bld dev/build/make/mix.sh
-# bld dev/doc/texinfo/mix.sh
-# bld env/std/mix.sh
-# bld boot/final/env/bison/mix.sh
+{% block lib_deps %}
+dev/lang/m4/mix.sh
+{% endblock %}
+
+{% block bld_deps %}
+dev/build/make/mix.sh
+dev/doc/texinfo/mix.sh
+env/std/mix.sh
+boot/final/env/bison/mix.sh
 {% endblock %}

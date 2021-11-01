@@ -5,14 +5,17 @@
 # md5 d61aa92e3562cb7292b004ce96173cf7
 {% endblock %}
 
-{% block deps %}
-# bld lib/intl/mix.sh
-# lib dev/lang/m4/mix.sh
-# bld dev/lang/flex/mix.sh
-# bld dev/lang/perl5/mix.sh
-# bld dev/build/make/mix.sh
-# bld dev/build/help2man/mix.sh
-# bld dev/doc/texinfo/mix.sh
-# bld env/std/mix.sh
-# bld boot/final/env/bison/mix.sh
+{% block lib_deps %}
+dev/lang/m4/mix.sh
+{% endblock %}
+
+{% block bld_deps %}
+lib/intl/mix.sh
+dev/lang/flex/mix.sh
+dev/lang/perl5/mix.sh
+dev/build/make/mix.sh
+dev/build/help2man/mix.sh
+dev/doc/texinfo/mix.sh
+env/std/mix.sh
+boot/final/env/bison/mix.sh
 {% endblock %}

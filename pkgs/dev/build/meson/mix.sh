@@ -5,11 +5,14 @@
 # md5 18ac55e3d6a5acb17b5737eb2a15bb5b
 {% endblock %}
 
-{% block deps %}
-# bld env/std/mix.sh
-# run {{'dev/lang/cctools/mix.sh' | darwin}}
-# run dev/lang/python/3/minimal/mix.sh
-# run dev/build/samurai/mix.sh
+{% block bld_deps %}
+env/std/mix.sh
+{% endblock %}
+
+{% block run_deps %}
+{{'dev/lang/cctools/mix.sh' | darwin}}
+dev/lang/python/3/minimal/mix.sh
+dev/build/samurai/mix.sh
 {% endblock %}
 
 {% block build %}

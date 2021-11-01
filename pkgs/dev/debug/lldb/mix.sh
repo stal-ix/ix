@@ -4,18 +4,18 @@
 {% include '//mix/template/fetch_llvm.sh' %}
 {% endblock %}
 
-{% block deps %}
-# bld {{'lib/linux/mix.sh' | linux}}
-# bld {{'sys/framework/CoreFoundation/mix.sh' | darwin}}
-# bld lib/cxx/mix.sh
-# bld lib/curses/any/mix.sh
-# bld lib/edit/mix.sh
-# bld lib/xz/mix.sh
-# bld lib/xml2/mix.sh
-# bld dev/lang/python/3/10/lib/mix.sh
-# bld dev/build/cmake/mix.sh
-# bld dev/tool/swig/4/mix.sh
-# bld env/std/mix.sh
+{% block bld_deps %}
+{{'lib/linux/mix.sh' | linux}}
+{{'sys/framework/CoreFoundation/mix.sh' | darwin}}
+lib/cxx/mix.sh
+lib/curses/any/mix.sh
+lib/edit/mix.sh
+lib/xz/mix.sh
+lib/xml2/mix.sh
+dev/lang/python/3/10/lib/mix.sh
+dev/build/cmake/mix.sh
+dev/tool/swig/4/mix.sh
+env/std/mix.sh
 {% endblock %}
 
 {% block patch %}

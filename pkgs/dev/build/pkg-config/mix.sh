@@ -5,12 +5,12 @@
 # md5 f6e931e319531b736fadc017f470e68a
 {% endblock %}
 
-{% block deps %}
-# bld env/std/mix.sh
-# bld lib/intl/mix.sh
-# bld lib/glib/mix.sh
-# bld lib/iconv/mix.sh
-# bld boot/final/env/tools/mix.sh
+{% block bld_deps %}
+env/std/mix.sh
+lib/intl/mix.sh
+lib/glib/mix.sh
+lib/iconv/mix.sh
+boot/final/env/tools/mix.sh
 {% endblock %}
 
 {% block coflags %}

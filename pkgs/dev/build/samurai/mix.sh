@@ -5,21 +5,15 @@
 # md5 2321662d68a58456cc9ac9a2605beb59
 {% endblock %}
 
-{% block deps %}
-# bld dev/build/make/mix.sh
-# bld env/std/mix.sh
+{% block bld_deps %}
+dev/build/make/mix.sh
+env/std/mix.sh
 {% endblock %}
 
 {% block cflags %}
 export CPPFLAGS="-Dwarn=samu_warn ${CPPFLAGS}"
 {% endblock %}
 
-{% block build %}
-make PREFIX=${out}
-{% endblock %}
-
-{% block install %}
-make PREFIX=${out} install
-
+{% block postinstall %}
 cd ${out}/bin && ln -s samu ninja
 {% endblock %}

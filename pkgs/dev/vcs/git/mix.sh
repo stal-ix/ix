@@ -5,19 +5,22 @@
 # md5 5977037fe36445a5b57872cb48335004
 {% endblock %}
 
-{% block deps %}
-# bld lib/z/mix.sh
-# bld lib/curl/mix.sh
-# bld lib/iconv/mix.sh
-# bld lib/expat/mix.sh
-# bld lib/pcre2/mix.sh
-# bld lib/openssl/mix.sh
-# bld dev/build/make/mix.sh
-# bld dev/lang/perl5/mix.sh
-# bld dev/lang/python/3/minimal/mix.sh
-# bld gnu/gettext/mix.sh
-# bld env/std/mix.sh
-# run shell/openssh/mix.sh
+{% block bld_deps %}
+lib/z/mix.sh
+lib/curl/mix.sh
+lib/iconv/mix.sh
+lib/expat/mix.sh
+lib/pcre2/mix.sh
+lib/openssl/mix.sh
+dev/build/make/mix.sh
+dev/lang/perl5/mix.sh
+dev/lang/python/3/minimal/mix.sh
+gnu/gettext/mix.sh
+env/std/mix.sh
+{% endblock %}
+
+{% block run_deps %}
+shell/openssh/mix.sh
 {% endblock %}
 
 {% block toolconf %}

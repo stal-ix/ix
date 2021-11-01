@@ -5,12 +5,12 @@
 # md5 3ba3b9f5e6ebc2afe77cdafeaaeeb981
 {% endblock %}
 
-{% block deps %}
-# bld lib/cxx/mix.sh
-# bld dev/build/make/mix.sh
-# bld env/c/mix.sh
-# bld env/tools/mix.sh
-# bld env/bootstrap/mix.sh
+{% block bld_deps %}
+lib/cxx/mix.sh
+dev/build/make/mix.sh
+env/c/mix.sh
+env/tools/mix.sh
+env/bootstrap/mix.sh
 {% endblock %}
 
 {% block postunpack %}

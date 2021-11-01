@@ -5,9 +5,9 @@
 # md5 639f75bc2e3b19ab893eaf2c810d4eb4
 {% endblock %}
 
-{% block deps %}
-# bld lib/cxx/mix.sh
-# bld dev/lang/python/3/minimal/mix.sh
-# bld dev/build/cmake/mix.sh
-# bld env/std/mix.sh
+{% block bld_deps %}
+lib/cxx/mix.sh
+dev/lang/python/3/minimal/mix.sh
+dev/build/cmake/mix.sh
+env/std/mix.sh
 {% endblock %}

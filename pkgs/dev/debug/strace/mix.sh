@@ -5,11 +5,11 @@
 # md5 36c1c17f31855617b7898d2fd5abb9e2
 {% endblock %}
 
-{% block deps %}
-# bld lib/linux/mix.sh
-# bld lib/elfutils/mix.sh
-# bld dev/build/make/mix.sh
-# bld env/std/mix.sh
+{% block bld_deps %}
+lib/linux/mix.sh
+lib/elfutils/mix.sh
+dev/build/make/mix.sh
+env/std/mix.sh
 {% endblock %}
 
 {% block coflags %}

@@ -5,11 +5,17 @@
 # md5 c27f608a4e1f302ec7ce42f1251c184e
 {% endblock %}
 
-{% block deps %}
-# lib dev/build/autoconf/2.71/mix.sh
-# lib dev/lang/perl5/mix.sh
-# bld dev/build/make/mix.sh
-# bld env/std/mix.sh
-# run dev/build/libtool/mix.sh
-# run dev/lang/m4/mix.sh
+{% block lib_deps %}
+dev/build/autoconf/2.71/mix.sh
+dev/lang/perl5/mix.sh
+{% endblock %}
+
+{% block bld_deps %}
+dev/build/make/mix.sh
+env/std/mix.sh
+{% endblock %}
+
+{% block run_deps %}
+dev/build/libtool/mix.sh
+dev/lang/m4/mix.sh
 {% endblock %}

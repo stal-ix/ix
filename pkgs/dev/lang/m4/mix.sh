@@ -5,12 +5,12 @@
 # md5 0d90823e1426f1da2fd872df0311298d
 {% endblock %}
 
-{% block deps %}
-# bld lib/intl/mix.sh
-# bld lib/sigsegv/mix.sh
-# bld dev/build/make/mix.sh
-# bld dev/build/help2man/mix.sh
-# bld env/std/mix.sh
+{% block bld_deps %}
+lib/intl/mix.sh
+lib/sigsegv/mix.sh
+dev/build/make/mix.sh
+dev/build/help2man/mix.sh
+env/std/mix.sh
 {% endblock %}
 
 {% block coflags %}

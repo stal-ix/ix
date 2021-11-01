@@ -9,21 +9,21 @@
 # md5 75e779670ac79edf023497a9c37eb35d
 {% endblock %}
 
-{% block deps %}
-# bld lib/z/mix.sh
-# bld lib/cxx/mix.sh
-# bld lib/curl/mix.sh
-# bld lib/iconv/mix.sh
-# bld lib/openssl/mix.sh
-# bld tool/curl/mix.sh
-# bld shell/cli/bash/minimal/mix.sh
-# bld dev/vcs/git/mix.sh
-# bld gnu/tar/mix.sh
-# bld tool/gnu/time/mix.sh
-# bld dev/lang/python/3/minimal/mix.sh
-# bld dev/build/make/mix.sh
-# bld dev/build/cmake/mix.sh
-# bld env/std/mix.sh
+{% block bld_deps %}
+lib/z/mix.sh
+lib/cxx/mix.sh
+lib/curl/mix.sh
+lib/iconv/mix.sh
+lib/openssl/mix.sh
+tool/curl/mix.sh
+shell/cli/bash/minimal/mix.sh
+dev/vcs/git/mix.sh
+gnu/tar/mix.sh
+tool/gnu/time/mix.sh
+dev/lang/python/3/minimal/mix.sh
+dev/build/make/mix.sh
+dev/build/cmake/mix.sh
+env/std/mix.sh
 {% endblock %}
 
 {% block postunpack %}

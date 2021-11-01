@@ -4,9 +4,12 @@
 {% include '//dev/debug/gdb/version.sh' %}
 {% endblock %}
 
-{% block deps %}
-# lib dev/lang/python/3/10/lib/mix.sh
-# bld pypi/pygments/mix.sh
+{% block lib_deps %}
+dev/lang/python/3/10/lib/mix.sh
+{% endblock %}
+
+{% block bld_deps %}
+pypi/pygments/mix.sh
 {% endblock %}
 
 {% block cflags %}

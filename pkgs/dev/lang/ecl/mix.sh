@@ -5,12 +5,12 @@
 # md5 0c9e0437dbf3a7f1b00da32b7794a3b0
 {% endblock %}
 
-{% block deps %}
-# bld lib/boehmgc/mix.sh
-# bld lib/gmp/mix.sh
-# bld lib/ffi/mix.sh
-# bld dev/build/make/mix.sh
-# bld env/std/mix.sh
+{% block bld_deps %}
+lib/boehmgc/mix.sh
+lib/gmp/mix.sh
+lib/ffi/mix.sh
+dev/build/make/mix.sh
+env/std/mix.sh
 {% endblock %}
 
 {% block postunpack %}

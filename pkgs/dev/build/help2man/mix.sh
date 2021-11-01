@@ -5,8 +5,11 @@
 # md5 b51001b5d6c9fc929291d5ae8e6caafc
 {% endblock %}
 
-{% block deps %}
-# lib dev/lang/perl5/mix.sh
-# bld dev/build/make/mix.sh
-# bld env/std/mix.sh
+{% block lib_deps %}
+dev/lang/perl5/mix.sh
+{% endblock %}
+
+{% block bld_deps %}
+dev/build/make/mix.sh
+env/std/mix.sh
 {% endblock %}

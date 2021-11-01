@@ -5,14 +5,14 @@
 # md5 2acf2ef147e41730e572251ed079bc1a
 {% endblock %}
 
-{% block deps %}
-# bld lib/z/mix.sh
-# bld lib/dlfcn/mix.sh
-# bld lib/gdbm/mix.sh
-# bld lib/iconv/mix.sh
-# bld dev/build/make/mix.sh
-# bld shell/cli/bash/minimal/mix.sh
-# bld env/std/mix.sh
+{% block bld_deps %}
+lib/z/mix.sh
+lib/dlfcn/mix.sh
+lib/gdbm/mix.sh
+lib/iconv/mix.sh
+dev/build/make/mix.sh
+shell/cli/bash/minimal/mix.sh
+env/std/mix.sh
 {% endblock %}
 
 {% block cflags %}
@@ -29,19 +29,19 @@ chmod +x install_name_tool
 {% endblock %}
 
 {% block patch %}
-sed -e "s|/usr/bin/||g"             \
-    -e "s|/usr/|/nowhere/|g"        \
-    -e "s|/bin/sh|$(command -v dash)|g"  \
+sed -e "s|/usr/bin/||g"                 \
+    -e "s|/usr/|/nowhere/|g"            \
+    -e "s|/bin/sh|$(command -v dash)|g" \
     -i Configure
 {% endblock %}
 
 {% block configure %}
-bash Configure -des \
-    -Dusethreads \
-    -Dprefix=${out} \
-    -Duseperlio \
-    -Uusesfio \
+bash Configure -des    \
+    -Dusethreads       \
+    -Dprefix="${out}"  \
+    -Duseperlio        \
+    -Uusesfio          \
     -Duseshrplib=false \
-    -Dusedl=false \
+    -Dusedl=false      \
     -Dcc=gcc
 {% endblock %}
