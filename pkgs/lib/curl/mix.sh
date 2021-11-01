@@ -5,19 +5,22 @@
 # md5 74d3c4ca8aaa6c0619806d6e246e65fb
 {% endblock %}
 
-{% block deps %}
-# lib lib/z/mix.sh
-# lib lib/c-ares/mix.sh
-# lib lib/idn2/mix.sh
-# lib lib/zstd/mix.sh
-# lib lib/brotli/mix.sh
-# lib lib/nghttp2/mix.sh
-# lib lib/openssl/mix.sh
-# lib {{'sys/framework/SystemConfiguration/package.py' | darwin}}
-# bld dev/doc/groff/mix.sh
-# bld dev/build/make/mix.sh
-# bld dev/build/pkg-config/mix.sh
-# bld env/std/mix.sh
+{% block lib_deps %}
+lib/z/mix.sh
+lib/c-ares/mix.sh
+lib/idn2/mix.sh
+lib/zstd/mix.sh
+lib/brotli/mix.sh
+lib/nghttp2/mix.sh
+lib/openssl/mix.sh
+{{'sys/framework/SystemConfiguration/package.py' | darwin}}
+{% endblock %}
+
+{% block bld_deps %}
+dev/doc/groff/mix.sh
+dev/build/make/mix.sh
+dev/build/pkg-config/mix.sh
+env/std/mix.sh
 {% endblock %}
 
 {% block coflags %}

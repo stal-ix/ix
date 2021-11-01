@@ -5,24 +5,23 @@
 # md5 cd0e7735f1e51f30ee3b0844390a464a
 {% endblock %}
 
-{% block more_deps %}
-# lib env/cmake/package.py
+{% block lib_deps %}
+dev/build/samurai/mix.sh
 {% endblock %}
 
-{% block deps %}
-# lib dev/build/samurai/mix.sh
-# bld {{'sys/framework/CoreFoundation/package.py' | darwin}}
-# bld lib/z/mix.sh
-# bld lib/xz/mix.sh
-# bld lib/uv/mix.sh
-# bld lib/cxx/mix.sh
-# bld lib/curl/mix.sh
-# bld lib/bzip2/mix.sh
-# bld lib/expat/mix.sh
-# bld lib/archive/mix.sh
-# bld {{'lib/linux/mix.sh' | linux}}
-# bld env/std/mix.sh
-# bld boot/final/env/tools/mix.sh
+{% block bld_deps %}
+{{'sys/framework/CoreFoundation/package.py' | darwin}}
+{{'lib/linux/mix.sh' | linux}}
+lib/z/mix.sh
+lib/xz/mix.sh
+lib/uv/mix.sh
+lib/cxx/mix.sh
+lib/curl/mix.sh
+lib/bzip2/mix.sh
+lib/expat/mix.sh
+lib/archive/mix.sh
+env/std/mix.sh
+boot/final/env/tools/mix.sh
 {% endblock %}
 
 {% block cmflags %}
@@ -31,4 +30,10 @@
 -DCMAKE_USE_SYSTEM_CURL=ON
 -DCMAKE_USE_SYSTEM_BZIP2=ON
 -DCMAKE_USE_SYSTEM_LIBLZMA=ON
+{% endblock %}
+
+{% block more_env %}
+base64 -d << EOF
+{% include 'cmake.sh/base64' %}
+EOF
 {% endblock %}

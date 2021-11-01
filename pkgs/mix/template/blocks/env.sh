@@ -32,6 +32,9 @@ EOF
     )
 
     echo 'export CMPATH="'${out}';${CMPATH}"'
+
+{% block more_env %}
+{% endblock %}
 ) >> ${out}/env
 
 cat ${out}/env
