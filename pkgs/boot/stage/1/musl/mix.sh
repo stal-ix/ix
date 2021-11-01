@@ -1,4 +1,18 @@
-cd ${out} && $untar ${src}/musl* && cd musl*
+{% extends '//mix/template/py.py' %}
+
+{% block fetch %}
+{
+    'url': 'https://musl.libc.org/releases/musl-1.2.2.tar.gz',
+    'md5': 'aed8ae9e2b0898151b36a204088292dd',
+}
+{% endblock %}
+
+{% block bld_deps %}
+boot/stage/0/env/package.py
+{% endblock %}
+
+{% block script %}
+cd ${out} && ${untar} ${src}/musl* && cd musl*
 
 (
     (while read l; do printf "$l\n"; done) << EOF
@@ -107,3 +121,4 @@ done
 export CPPFLAGS="${MFLAGS} \${CPPFLAGS}"
 export LDFLAGS="-L${PWD} -lmusl \${LDFLAGS}"
 EOF
+{% endblock %}

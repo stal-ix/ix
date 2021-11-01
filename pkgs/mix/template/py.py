@@ -15,6 +15,7 @@
 
 {% set build_script %}
 {% block build %}
+{% include 'run_sh_script.py' %}
 {% endblock %}
 
 import os
@@ -24,24 +25,28 @@ env_data = r"""
 {% endblock %}
 """
 
-with open(os.environ['out'] + '/env', 'w') as f:
+with open(os.environ['out'] + '/env', 'a') as f:
     f.write(env_data)
 {% endset %}
 
 def package(mix):
     return {
         'build': {
+            'fetch': [
+{% block fetch %}
+{% endblock %}
+            ],
             'script': {
                 'data': r'''{{build_script}}''',
                 'kind': 'py',
             },
             'depends': [
-                {{mix.py_string_list(lib_deps + bld_deps)}}
+                {{mix.py_string_list(lib_deps + ' ' + bld_deps)}}
             ],
         },
         'runtime': {
             'depends': [
-                {{mix.py_string_list(lib_deps + run_deps)}}
+                {{mix.py_string_list(lib_deps + ' ' + run_deps)}}
             ],
         },
     }

@@ -4,5 +4,5 @@
 # run boot/stage/4/gawk/mix.sh
 # run boot/stage/4/grep/mix.sh
 # run boot/stage/4/sed/mix.sh
-# run boot/stage/2/shutil/package.py
+# run boot/stage/2/shutil/mix.sh
 # run boot/stage/0/env/package.py
