@@ -1,19 +1,16 @@
-def package(mix):
-    deps = [
-        'boot/stage/0/mix/mix.sh',
-        #'boot/stage/0/{{mix.platform.target.os}}',
-    ]
+{% extends '//mix/template/py.py' %}
 
-    return {
-        'build': {
-            'script': mix.files.build_py,
-            'depends': deps,
-        },
-        'runtime': {
-            'depends': deps + [
-                'env/system/mix.sh',
-                'env/compiler/mix.sh',
-                'env/bootstrap/mix.sh',
-            ],
-        },
-    }
+{% block lib_deps %}
+boot/stage/0/mix/mix.sh
+{% endblock %}
+
+{% block run_deps %}
+env/system/mix.sh
+env/compiler/mix.sh
+env/bootstrap/mix.sh
+{% endblock %}
+
+{% block build %}
+# boot/stage/0/{{mix.platform.target.os}}
+{% include '//mix/template/build_stdenv.py' %}
+{% endblock %}

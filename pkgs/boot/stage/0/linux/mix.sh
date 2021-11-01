@@ -1,11 +1,29 @@
-def package(mix):
-    return {
-        'build': {
-            'script': mix.files.build_py,
-        },
-        'runtime': {
-            'depends': [
-                'env/gcc',
-            ],
-        },
-    }
+{% extends '//mix/template/py.py' %}
+
+{% block run_deps %}
+env/gcc
+{% endblock %}
+
+{% block build %}
+import os
+
+os.chdir(os.environ['out'])
+os.makedirs('bin')
+os.chdir('bin')
+
+F = (
+    ('/usr/bin/ld', 'ld'),
+    ('/usr/bin/dash', 'dash'),
+    ('/usr/bin/gcc', 'clang'),
+    ('/usr/bin/g++', 'clang++'),
+    ('/usr/bin/cpp', 'clang-cpp'),
+    ('/usr/bin/ar', 'llvm-ar'),
+    ('/usr/bin/ranlib', 'llvm-ranlib'),
+    ('/usr/bin/nm', 'llvm-nm'),
+    ('/usr/bin/strip', 'llvm-strip'),
+    ('/usr/bin/as', 'as'),
+)
+
+for f, bn in F:
+    os.symlink(f, bn)
+{% endblock %}
