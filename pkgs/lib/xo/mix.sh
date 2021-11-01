@@ -5,12 +5,15 @@
 # md5 6d29d5ca45cb469b9ccd3bb962dbee5a
 {% endblock %}
 
-{% block deps %}
-# lib {{'lib/bsd/mix.sh' | linux}}
-# bld dev/build/automake/1.16.3/mix.sh
-# bld dev/build/make/mix.sh
-# bld dev/build/pkg-config/mix.sh
-# bld env/std/mix.sh
+{% block lib_deps %}
+{{'lib/bsd/mix.sh' | linux}}
+{% endblock %}
+
+{% block bld_deps %}
+dev/build/automake/1.16.3/mix.sh
+dev/build/make/mix.sh
+dev/build/pkg-config/mix.sh
+env/std/mix.sh
 {% endblock %}
 
 {% block autoreconf %}

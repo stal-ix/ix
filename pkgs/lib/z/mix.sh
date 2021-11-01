@@ -5,17 +5,17 @@
 # md5 85adef240c5f370b308da8c938951a68
 {% endblock %}
 
-{% block deps %}
-# bld env/c/mix.sh
-# bld boot/final/env/tools/mix.sh
+{% block bld_deps %}
+env/c/mix.sh
+boot/final/env/tools/mix.sh
 {% endblock %}
 
 {% block configure %}
 dash ./configure --static --64 --prefix="${out}"
 {% endblock %}
 
-{% block build %}
-make -j ${make_thrs} TEST_LDFLAGS="-L. libz.a"
+{% block make_flags %}
+TEST_LDFLAGS="-L. libz.a"
 {% endblock %}
 
 {% block postinstall %}

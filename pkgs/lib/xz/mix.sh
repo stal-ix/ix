@@ -5,13 +5,13 @@
 # md5 aa1621ec7013a19abab52a8aff04fe5b
 {% endblock %}
 
-{% block deps %}
-# bld lib/intl/mix.sh
-# bld lib/iconv/mix.sh
-# bld dev/build/make/mix.sh
-# bld env/tools/mix.sh
-# bld env/c/mix.sh
-# bld env/bootstrap/mix.sh
+{% block bld_deps %}
+lib/intl/mix.sh
+lib/iconv/mix.sh
+dev/build/make/mix.sh
+env/tools/mix.sh
+env/c/mix.sh
+env/bootstrap/mix.sh
 {% endblock %}
 
 {% block env %}
