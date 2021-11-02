@@ -8,9 +8,11 @@
 {% block bld_deps %}
 lib/cxx/mix.sh
 lib/pcre/mix.sh
-dev/build/make/mix.sh
 dev/lang/bison/3.7.6/mix.sh
-env/std/mix.sh
+env/autohell/mix.sh
+{% endblock %}
+
+{% block make_target %}
 {% endblock %}
 
 {% block coflags %}
