@@ -1,9 +1,15 @@
 {% extends '//mix/template/proxy.sh' %}
 
-{% block deps %}
-# lib dev/lang/python/3/10/mix.sh
-# run dev/lang/python/libs/mix.sh
-# bld env/std/mix.sh
+{% block lib_deps %}
+dev/lang/python/3/10/mix.sh
+{% endblock %}
+
+{% block bld_deps %}
+env/std/mix.sh
+{% endblock %}
+
+{% block run_deps %}
+dev/lang/python/libs/mix.sh
 {% endblock %}
 
 {% block env %}

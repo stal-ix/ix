@@ -1,10 +1,10 @@
 {% extends '//dev/lang/python/3/10/mix.sh' %}
 
-{% block deps %}
-# bld {{'lib/linux/mix.sh' | linux}}
-# bld lib/z/mix.sh
-# bld env/std/mix.sh
-# bld boot/final/env/tools/mix.sh
+{% block bld_deps %}
+{{'lib/linux/mix.sh' | linux}}
+lib/z/mix.sh
+env/std/mix.sh
+boot/final/env/tools/mix.sh
 {% endblock %}
 
 {% block extra_modules %}

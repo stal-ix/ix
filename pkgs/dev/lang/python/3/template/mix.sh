@@ -1,9 +1,9 @@
 {% extends '//mix/template/autohell.sh' %}
 
-{% block deps %}
-# bld dev/lang/python/libs/mix.sh
-# bld {{'lib/linux/mix.sh' | linux}}
-# bld env/autohell/mix.sh
+{% block bld_deps %}
+dev/lang/python/libs/mix.sh
+{{'lib/linux/mix.sh' | linux}}
+env/autohell/mix.sh
 {% endblock %}
 
 {% block patch %}
