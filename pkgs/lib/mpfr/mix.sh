@@ -10,8 +10,7 @@ lib/gmp/mix.sh
 {% endblock %}
 
 {% block bld_deps %}
-dev/build/make/mix.sh
-env/std/mix.sh
+env/autohell/mix.sh
 {% endblock %}
 
 {% block env %}
