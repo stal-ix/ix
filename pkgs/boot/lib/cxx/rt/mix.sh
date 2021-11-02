@@ -5,9 +5,12 @@
 # md5 d5724a37b8d640f67f09cbbdd831a528
 {% endblock %}
 
-{% block deps %}
-# lib boot/lib/cxx/unwind/mix.sh
-# bld boot/stage/5/env/mix.sh
+{% block lib_deps %}
+boot/lib/cxx/unwind/mix.sh
+{% endblock %}
+
+{% block bld_deps %}
+boot/stage/5/env/mix.sh
 {% endblock %}
 
 {% block build %}

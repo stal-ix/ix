@@ -4,10 +4,13 @@
 {% include '//mix/template/fetch_llvm.sh' %}
 {% endblock %}
 
-{% block deps %}
-# lib boot/lib/cxx/rt/mix.sh
-# bld {{'boot/lib/linux/mix.sh' | linux}}
-# bld boot/stage/5/env/mix.sh
+{% block lib_deps %}
+boot/lib/cxx/rt/mix.sh
+{% endblock %}
+
+{% block bld_deps %}
+{{'boot/lib/linux/mix.sh' | linux}}
+boot/stage/5/env/mix.sh
 {% endblock %}
 
 {% block cflags %}

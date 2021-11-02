@@ -1,7 +1,10 @@
 {% extends '//lib/cxx/mix.sh' %}
 
-{% block deps %}
-# lib boot/stage/7/lib/mix.sh
-# bld {{'boot/lib/linux/mix.sh' | linux}}
-# bld boot/final/env/clang/mix.sh
+{% block lib_deps %}
+boot/stage/7/lib/mix.sh
+{% endblock %}
+
+{% block bld_deps %}
+{{'boot/lib/linux/mix.sh' | linux}}
+boot/final/env/clang/mix.sh
 {% endblock %}
