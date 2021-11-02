@@ -7,6 +7,5 @@
 
 {% block bld_deps %}
 lib/slang/mix.sh
-env/std/mix.sh
-dev/build/make/mix.sh
+env/autohell/mix.sh
 {% endblock %}

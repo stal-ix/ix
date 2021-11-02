@@ -9,8 +9,7 @@
 lib/z/mix.sh
 lib/tom/math/mix.sh
 lib/tom/crypt/mix.sh
-env/std/mix.sh
-dev/build/make/mix.sh
+env/autohell/mix.sh
 {% endblock %}
 
 {% block coflags %}

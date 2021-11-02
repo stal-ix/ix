@@ -11,8 +11,7 @@ lib/md/mix.sh
 
 {% block bld_deps %}
 lib/linux/mix.sh
-dev/build/make/mix.sh
-env/std/mix.sh
+env/autohell/mix.sh
 {% endblock %}
 
 {% block cflags %}

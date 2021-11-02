@@ -7,10 +7,8 @@
 
 {% block bld_deps %}
 lib/cxx/mix.sh
-dev/build/make/mix.sh
 env/c/mix.sh
-env/tools/mix.sh
-env/bootstrap/mix.sh
+boot/final/env/tools/mix.sh
 {% endblock %}
 
 {% block postunpack %}

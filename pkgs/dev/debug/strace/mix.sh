@@ -8,8 +8,7 @@
 {% block bld_deps %}
 lib/linux/mix.sh
 lib/elfutils/mix.sh
-dev/build/make/mix.sh
-env/std/mix.sh
+env/autohell/mix.sh
 {% endblock %}
 
 {% block coflags %}

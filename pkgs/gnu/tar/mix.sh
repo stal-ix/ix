@@ -11,6 +11,5 @@ lib/xz/mix.sh
 lib/intl/mix.sh
 lib/bzip2/mix.sh
 lib/iconv/mix.sh
-dev/build/make/mix.sh
-env/std/mix.sh
+env/autohell/mix.sh
 {% endblock %}

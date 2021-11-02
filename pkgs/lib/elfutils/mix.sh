@@ -19,8 +19,7 @@ lib/intl/mix.sh
 
 {% block bld_deps %}
 dev/lang/m4/mix.sh
-dev/build/make/mix.sh
-env/std/mix.sh
+env/autohell/mix.sh
 {% endblock %}
 
 {% block patch %}

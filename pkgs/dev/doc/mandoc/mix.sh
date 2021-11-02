@@ -7,8 +7,7 @@
 
 {% block bld_deps %}
 lib/z/mix.sh
-dev/build/make/mix.sh
-env/std/mix.sh
+env/autohell/mix.sh
 {% endblock %}
 
 {% block postconf %}

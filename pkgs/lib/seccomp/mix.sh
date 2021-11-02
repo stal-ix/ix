@@ -7,10 +7,9 @@
 
 {% block bld_deps %}
 lib/linux/mix.sh
-dev/build/make/mix.sh
 dev/tool/gperf/mix.sh
 dev/build/automake/1.16.3/mix.sh
-env/std/mix.sh
+env/autohell/mix.sh
 {% endblock %}
 
 {% block autoreconf %}

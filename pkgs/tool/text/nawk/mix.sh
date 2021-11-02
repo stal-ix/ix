@@ -7,8 +7,7 @@
 
 {% block bld_deps %}
 dev/lang/bison/3.7.6/mix.sh
-dev/build/make/mix.sh
-env/std/mix.sh
+env/autohell/mix.sh
 {% endblock %}
 
 {% block install %}

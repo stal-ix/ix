@@ -11,10 +11,9 @@ lib/intl/mix.sh
 lib/unistring/mix.sh
 lib/xml2/mix.sh
 lib/textstyle/mix.sh
-dev/build/make/mix.sh
 dev/lang/bison/3.6.4/mix.sh
 tool/compress/minigzip/mix.sh
-env/std/mix.sh
+env/autohell/mix.sh
 {% endblock %}
 
 {% block postunpack %}
