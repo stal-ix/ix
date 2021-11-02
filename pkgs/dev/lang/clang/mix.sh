@@ -1,16 +1,17 @@
 {% extends '//mix/template/cmake.sh' %}
 
-{% block deps %}
-{% block extradeps %}
-# bld {{'lib/linux/mix.sh' | linux}}
-# bld {{'sys/framework/CoreFoundation/mix.sh' | darwin}}
-# bld boot/final/cxx/mix.sh
-# bld boot/final/env/clang/mix.sh
+{% block bld_deps %}
+{{'lib/linux/mix.sh' | linux}}
+{{'sys/framework/CoreFoundation/mix.sh' | darwin}}
+boot/final/cxx/mix.sh
+boot/final/env/clang/mix.sh
 {% endblock %}
-# run env/clang/mix.sh
-# run env/lld/{{mix.platform.target.os}}/mix.sh
-# run env/compiler/mix.sh
-# run env/system/mix.sh
+
+{% block run_deps %}
+env/clang/mix.sh
+env/lld/{{mix.platform.target.os}}/mix.sh
+env/compiler/mix.sh
+env/system/mix.sh
 {% endblock %}
 
 {% block fetch %}

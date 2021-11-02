@@ -1,10 +1,10 @@
 {% extends '//dev/lang/clang/mix.sh' %}
 
-{% block extradeps %}
-# bld {{'boot/lib/linux/mix.sh' | linux}}
-# bld {{'sys/framework/CoreFoundation/mix.sh' | darwin}}
-# bld boot/lib/cxx/mix.sh
-# bld boot/stage/6/cmake/mix.sh
-# bld boot/stage/6/python/mix.sh
-# bld boot/stage/5/env/mix.sh
+{% block bld_deps %}
+{{'boot/lib/linux/mix.sh' | linux}}
+{{'sys/framework/CoreFoundation/mix.sh' | darwin}}
+boot/lib/cxx/mix.sh
+boot/stage/6/cmake/mix.sh
+boot/stage/6/python/mix.sh
+boot/stage/5/env/mix.sh
 {% endblock %}
