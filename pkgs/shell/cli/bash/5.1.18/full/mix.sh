@@ -1,10 +1,10 @@
 {% extends '//shell/cli/bash/5.1.18/template/template.sh' %}
 
 {% block bashdeps %}
-# bld lib/readline/mix.sh
-# bld lib/curses/any/mix.sh
-# bld lib/iconv/mix.sh
-# bld lib/intl/mix.sh
+lib/readline/mix.sh
+lib/curses/any/mix.sh
+lib/iconv/mix.sh
+lib/intl/mix.sh
 {% endblock %}
 
 {% block bashflags %}
