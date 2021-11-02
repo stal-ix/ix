@@ -9,6 +9,9 @@
 lib/dlfcn/mix.sh
 lib/z/mix.sh
 {{'lib/linux/mix.sh' | linux}}
+{% block boot_lisp_dep %}
+dev/lang/ecl/mix.sh
+{% endblock %}
 dev/build/make/mix.sh
 env/std/mix.sh
 {% endblock %}
@@ -16,10 +19,6 @@ env/std/mix.sh
 {% block cflags %}
 export CPPFLAGS="-DLISP_FEATURE_OS_PROVIDES_DLOPEN ${CPPFLAGS}"
 export LDFLAGS="-Wl,-error-limit=0 ${LDFLAGS}"
-{% endblock %}
-
-{% block more_deps %}
-# bld dev/lang/ecl/mix.sh
 {% endblock %}
 
 {% block patch %}
