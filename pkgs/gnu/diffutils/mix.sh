@@ -12,7 +12,3 @@ lib/sigsegv/mix.sh
 env/c/mix.sh
 boot/final/env/tools/mix.sh
 {% endblock %}
-
-{% block postconf %}
-echo 'all install:' > man/Makefile
-{% endblock %}
