@@ -8,11 +8,7 @@
 {% endblock %}
 
 {% block bld_deps %}
-dev/build/make/mix.sh
-gnu/patch/mix.sh
-env/tools/mix.sh
-env/c/mix.sh
-env/bootstrap/mix.sh
+env/std/0/mix.sh
 {% endblock %}
 
 {% block postunpack %}

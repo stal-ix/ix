@@ -12,8 +12,7 @@ lib/iconv/mix.sh
 
 {% block bld_deps %}
 lib/readline/mix.sh
-env/c/mix.sh
-boot/final/env/tools/mix.sh
+env/std/0/mix.sh
 boot/final/env/bison/mix.sh
 {% endblock %}
 

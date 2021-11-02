@@ -8,8 +8,7 @@
 {% block bld_deps %}
 lib/z/mix.sh
 lib/bzip2/mix.sh
-env/c/mix.sh
-boot/final/env/tools/mix.sh
+env/std/0/mix.sh
 {% endblock %}
 
 {% block coflags %}

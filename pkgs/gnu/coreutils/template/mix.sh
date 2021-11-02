@@ -4,9 +4,8 @@
 lib/intl/mix.sh
 lib/iconv/mix.sh
 lib/sigsegv/mix.sh
-env/c/mix.sh
 gnu/patch/mix.sh
-boot/final/env/tools/mix.sh
+env/std/0/mix.sh
 {% block coreutils_deps_extra %}
 {% endblock %}
 {% endblock %}

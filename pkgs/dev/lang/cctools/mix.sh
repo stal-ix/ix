@@ -7,8 +7,7 @@
 
 {% block bld_deps %}
 lib/cxx/mix.sh
-env/c/mix.sh
-boot/final/env/tools/mix.sh
+env/std/0/mix.sh
 {% endblock %}
 
 {% block postunpack %}

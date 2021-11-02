@@ -8,6 +8,5 @@
 {% block bld_deps %}
 lib/intl/mix.sh
 lib/iconv/mix.sh
-env/c/mix.sh
-boot/final/env/tools/mix.sh
+env/std/0/mix.sh
 {% endblock %}
