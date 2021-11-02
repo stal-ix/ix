@@ -8,6 +8,7 @@
 {% endblock %}
 
 {% block bld_deps %}
+gnu/patch/mix.sh
 env/std/0/mix.sh
 {% endblock %}
 
