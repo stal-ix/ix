@@ -1,10 +1,8 @@
 {% extends '//mix/template/py.py' %}
 
 {% block fetch %}
-{
-    'url': 'https://github.com/pg83/shutil/archive/cf434c92b54583865ce10c556c81ab51c3230141.zip',
-    'md5': 'd877127f9e043a100188dfec48f1b8a3',
-}
+# url https://github.com/pg83/shutil/archive/cf434c92b54583865ce10c556c81ab51c3230141.zip
+# md5 d877127f9e043a100188dfec48f1b8a3
 {% endblock %}
 
 {% block bld_deps %}

@@ -83,6 +83,9 @@ class RenderContext:
 
         return ', '.join(f"'{x}'" for x in it())
 
+    def parse_sh(self, sh):
+        return compile_sh(sh)
+
     @property
     def platform(self):
         return self.config.platform

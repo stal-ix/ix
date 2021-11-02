@@ -30,12 +30,11 @@ with open(os.environ['out'] + '/env', 'a') as f:
 {% endset %}
 
 def package(mix):
+    fetch = r'''{% block fetch %}{% endblock %}'''
+
     return {
         'build': {
-            'fetch': [
-{% block fetch %}
-{% endblock %}
-            ],
+            'fetch': mix.parse_sh(fetch).get('build', {}).get('fetch', []),
             'script': {
                 'data': r'''{{build_script}}''',
                 'kind': 'py',

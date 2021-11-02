@@ -1,10 +1,8 @@
 {% extends '//mix/template/py.py' %}
 
 {% block fetch %}
-{
-    'url': 'https://musl.libc.org/releases/musl-1.2.2.tar.gz',
-    'md5': 'aed8ae9e2b0898151b36a204088292dd',
-}
+# url https://musl.libc.org/releases/musl-1.2.2.tar.gz
+# md5 aed8ae9e2b0898151b36a204088292dd
 {% endblock %}
 
 {% block bld_deps %}

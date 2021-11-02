@@ -1,10 +1,8 @@
 {% extends '//mix/template/py.py' %}
 
 {% block fetch %}
-{
-    'url': 'https://storage.yandexcloud.net/mix-cache/{{self.link().strip()}}',
-    'md5': '{{self.md5().strip()}}',
-}
+# url https://storage.yandexcloud.net/mix-cache/{{self.link().strip()}}
+# md5 {{self.md5().strip()}}
 {% endblock %}
 
 {% block run_deps %}
