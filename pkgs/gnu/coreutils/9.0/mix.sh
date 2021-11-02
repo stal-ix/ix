@@ -6,10 +6,10 @@
 {% endblock %}
 
 {% block coreutils_deps_extra %}
-# bld lib/openssl/mix.sh
-# bld lib/gmp/mix.sh
-# bld dev/lang/bison/3.7.6/mix.sh
-# bld dev/lang/perl5/mix.sh
+lib/openssl/mix.sh
+lib/gmp/mix.sh
+dev/lang/bison/3.7.6/mix.sh
+dev/lang/perl5/mix.sh
 {% endblock %}
 
 {% block coreutils_coflags_extra %}

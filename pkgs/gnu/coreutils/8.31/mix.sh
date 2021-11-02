@@ -6,5 +6,5 @@
 {% endblock %}
 
 {% block coreutils_deps_extra %}
-# bld dev/lang/byacc/mix.sh
+dev/lang/byacc/mix.sh
 {% endblock %}

@@ -1,12 +1,12 @@
 {% extends '//mix/template/autohell.sh' %}
 
-{% block deps %}
-# bld lib/intl/mix.sh
-# bld lib/iconv/mix.sh
-# bld lib/sigsegv/mix.sh
-# bld env/c/mix.sh
-# bld gnu/patch/mix.sh
-# bld boot/final/env/tools/mix.sh
+{% block bld_deps %}
+lib/intl/mix.sh
+lib/iconv/mix.sh
+lib/sigsegv/mix.sh
+env/c/mix.sh
+gnu/patch/mix.sh
+boot/final/env/tools/mix.sh
 {% block coreutils_deps_extra %}
 {% endblock %}
 {% endblock %}
