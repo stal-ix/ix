@@ -10,8 +10,7 @@ dev/lang/m4/mix.sh
 {% endblock %}
 
 {% block bld_deps %}
-dev/build/make/mix.sh
 dev/doc/texinfo/mix.sh
-env/std/mix.sh
+env/autohell/mix.sh
 boot/final/env/bison/mix.sh
 {% endblock %}

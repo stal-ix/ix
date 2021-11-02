@@ -5,9 +5,11 @@
 # md5 18599e4ffcfe8cd93e0efa8f14f027eb
 {% endblock %}
 
+{% block make_target %}
+{% endblock %}
+
 {% block bld_deps %}
-dev/build/make/mix.sh
-env/std/mix.sh
+env/autohell/mix.sh
 {% endblock %}
 
 {% block coflags %}

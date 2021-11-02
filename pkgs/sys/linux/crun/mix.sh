@@ -11,10 +11,8 @@ lib/yajl/mix.sh
 lib/cap/mix.sh
 lib/seccomp/mix.sh
 lib/argp/standalone/mix.sh
-dev/build/make/mix.sh
-dev/build/pkg-config/mix.sh
 dev/lang/python/3/minimal/mix.sh
-env/std/mix.sh
+env/autohell/mix.sh
 {% endblock %}
 
 {% block coflags %}

@@ -9,9 +9,7 @@
 # bld lib/intl/mix.sh
 # bld lib/edit/mix.sh
 # bld lib/iconv/mix.sh
-# bld dev/build/make/mix.sh
-# bld dev/build/pkg-config/mix.sh
-# bld env/std/mix.sh
+# bld env/autohell/mix.sh
 {% endblock %}
 
 {% block cflags %}

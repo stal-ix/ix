@@ -8,11 +8,9 @@
 {% block bld_deps %}
 lib/z/mix.sh
 lib/curses/any/mix.sh
-dev/build/make/mix.sh
-dev/build/pkg-config/mix.sh
 gnu/patch/mix.sh
 gnu/tar/mix.sh
-env/std/mix.sh
+env/autohell/mix.sh
 {% endblock %}
 
 {% block patch %}

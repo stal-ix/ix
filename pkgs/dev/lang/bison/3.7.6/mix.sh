@@ -13,9 +13,8 @@ dev/lang/m4/mix.sh
 lib/intl/mix.sh
 dev/lang/flex/mix.sh
 dev/lang/perl5/mix.sh
-dev/build/make/mix.sh
 dev/build/help2man/mix.sh
 dev/doc/texinfo/mix.sh
-env/std/mix.sh
+env/autohell/mix.sh
 boot/final/env/bison/mix.sh
 {% endblock %}

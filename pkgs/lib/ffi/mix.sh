@@ -7,9 +7,9 @@
 
 {% block bld_deps %}
 {{'lib/linux/mix.sh' | linux}}
-dev/build/make/mix.sh
 gnu/sed/mix.sh
-env/std/mix.sh
+env/c/mix.sh
+boot/final/env/tools/mix.sh
 {% endblock %}
 
 {% block env %}

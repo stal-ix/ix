@@ -4,7 +4,7 @@ import json
 PYPI = json.loads(parent.serve('pypi.json'))
 
 
-TMPL = '''
+TMPL = r'''
 {% extends '//mix/template/template.sh' %}
 
 {% block fetch %}
@@ -18,7 +18,7 @@ env/std/mix.sh
 {% endblock %}
 
 {% block run_deps %}
-{run}/mix.sh
+{run}
 {% endblock %}
 
 {% block unpack %}
@@ -60,7 +60,7 @@ def gen_pkg(rec):
 
     t = t.replace('{url}', rec['url'])
     t = t.replace('{md5}', rec['md5'])
-    t = t.replace('{run}', ' '.join(rec.get('run', [])))
+    t = t.replace('{run}', ' '.join(x + '/mix.sh' for x in rec.get('run', [])))
 
     return t
 

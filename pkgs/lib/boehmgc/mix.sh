@@ -13,9 +13,7 @@ lib/atomicops/mix.sh
 {% endblock %}
 
 {% block bld_deps %}
-dev/build/make/mix.sh
-dev/build/pkg-config/mix.sh
-env/std/mix.sh
+env/autohell/mix.sh
 {% endblock %}
 
 {% block patch %}

@@ -15,9 +15,7 @@ lib/expat/mix.sh
 lib/sqlite3/mix.sh
 lib/apr-util/mix.sh
 lib/utf8proc/mix.sh
-dev/build/make/mix.sh
-dev/build/pkg-config/mix.sh
-env/std/mix.sh
+env/autohell/mix.sh
 {% endblock %}
 
 {% block run_deps %}

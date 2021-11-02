@@ -11,9 +11,7 @@ lib/uchardet/mix.sh
 dev/lang/perl5/mix.sh
 dev/lang/bison/3.7.6/mix.sh
 dev/doc/texinfo/mix.sh
-dev/build/make/mix.sh
-dev/build/pkg-config/mix.sh
-env/std/mix.sh
+env/autohell/mix.sh
 {% endblock %}
 
 {% block patch %}

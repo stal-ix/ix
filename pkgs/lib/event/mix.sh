@@ -10,10 +10,8 @@ lib/openssl/mix.sh
 {% endblock %}
 
 {% block bld_deps %}
-dev/build/pkg-config/mix.sh
-dev/build/make/mix.sh
 dev/lang/python/3/minimal/mix.sh
-env/std/mix.sh
+env/autohell/mix.sh
 {% endblock %}
 
 {% block toolconf %}

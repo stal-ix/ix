@@ -51,8 +51,6 @@ class RenderContext:
                 return compile_sh(data)
 
             return exec_mod(data, self)
-        except FileNotFoundError as e:
-            raise ce.Error(f'can not load {self.name}', exception=e)
         except cs.Error as e:
             text = f'can not render {self.name}'
             context = f'{e.lineno}: {e.line}'

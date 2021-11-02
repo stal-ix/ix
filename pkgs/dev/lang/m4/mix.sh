@@ -8,9 +8,8 @@
 {% block bld_deps %}
 lib/intl/mix.sh
 lib/sigsegv/mix.sh
-dev/build/make/mix.sh
 dev/build/help2man/mix.sh
-env/std/mix.sh
+env/autohell/mix.sh
 {% endblock %}
 
 {% block coflags %}

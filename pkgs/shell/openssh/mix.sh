@@ -14,10 +14,8 @@ lib/z/mix.sh
 lib/edit/mix.sh
 lib/ldns/mix.sh
 lib/openssl/mix.sh
-dev/build/make/mix.sh
-dev/build/pkg-config/mix.sh
 gnu/patch/mix.sh
-env/std/mix.sh
+env/autohell/mix.sh
 {% endblock %}
 
 {% block toolconf %}

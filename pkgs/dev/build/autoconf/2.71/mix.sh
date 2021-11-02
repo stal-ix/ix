@@ -11,6 +11,5 @@ dev/lang/m4/mix.sh
 
 {% block bld_deps %}
 dev/lang/perl5/mix.sh
-dev/build/make/mix.sh
-env/std/mix.sh
+env/autohell/mix.sh
 {% endblock %}

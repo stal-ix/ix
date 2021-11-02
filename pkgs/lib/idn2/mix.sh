@@ -13,9 +13,7 @@ lib/unistring/mix.sh
 
 {% block bld_deps %}
 dev/build/automake/1.16.1/mix.sh
-dev/build/make/mix.sh
-dev/build/pkg-config/mix.sh
-env/std/mix.sh
+env/autohell/mix.sh
 {% endblock %}
 
 {% block cflags %}

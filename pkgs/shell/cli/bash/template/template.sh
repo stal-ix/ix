@@ -5,8 +5,7 @@ export CPPFLAGS="-Dsh_unset_nodelay_mode=bash_sh_unset_nodelay_mode -Dsh_get_env
 {% endblock %}
 
 {% block deps %}
-# bld dev/build/make/mix.sh
-# bld env/std/mix.sh
+# bld env/autohell/mix.sh
 # bld boot/final/env/bison/mix.sh
 {% block bashdeps %}{% endblock %}
 {% endblock %}

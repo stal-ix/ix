@@ -3,9 +3,7 @@
 {% block deps %}
 # bld dev/lang/python/libs/mix.sh
 # bld {{'lib/linux/mix.sh' | linux}}
-# bld dev/build/make/mix.sh
-# bld dev/build/pkg-config/mix.sh
-# bld env/std/mix.sh
+# bld env/autohell/mix.sh
 {% endblock %}
 
 {% block patch %}

@@ -17,10 +17,8 @@ lib/wolfssl/mix.sh
 lib/bzip2/mix.sh
 lib/idn2/mix.sh
 lib/pcre/mix.sh
-dev/build/make/mix.sh
-dev/build/pkg-config/mix.sh
 dev/doc/texinfo/mix.sh
-env/std/mix.sh
+env/autohell/mix.sh
 {% endblock %}
 
 {% block coflags %}

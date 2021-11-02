@@ -20,12 +20,10 @@ lib/gmp/mix.sh
 lib/mpfr/mix.sh
 lib/mpc/mix.sh
 lib/xxhash/mix.sh
-dev/build/make/mix.sh
 dev/lang/byacc/mix.sh
 dev/lang/flex/mix.sh
 dev/doc/texinfo/mix.sh
-env/std/mix.sh
-dev/build/pkg-config/mix.sh
+env/autohell/mix.sh
 {% endblock %}
 
 {% block cflags %}

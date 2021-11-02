@@ -11,4 +11,4 @@
 # run lib/curses/any/mix.sh
 # run lib/openssl/mix.sh
 # run lib/mpdecimal/mix.sh
-# run lib/{{mix.flags.get('edit', 'edit')}}
+# run lib/{{mix.flags.get('edit', 'edit')}}/mix.sh
