@@ -2,5 +2,5 @@
 
 {% block bld_deps %}
 {{'boot/stage/7/lib/linux/mix.sh' | linux}}
-boot/stage/8/std/env/mix.sh
+boot/stage/8/env/std/mix.sh
 {% endblock %}
