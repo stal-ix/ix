@@ -5,7 +5,7 @@ boot/8/clang/mix.sh
 {% endblock %}
 
 {% block run_deps %}
-boot/6/env/box/mix.sh
+boot/8/env/box/mix.sh
 {% endblock %}
 
 {% block build %}
