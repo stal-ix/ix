@@ -1,12 +1,9 @@
-{% extends '//mix/template/template.sh' %}
+{% extends '//mix/template/proxy.sh' %}
 
 {% block bld_deps %}
 shell/cli/dash/minimal/mix.sh
 dev/lang/clang/mix.sh
 boot/final/env/tools/mix.sh
-{% endblock %}
-
-{% block unpack %}
 {% endblock %}
 
 {% block install %}
