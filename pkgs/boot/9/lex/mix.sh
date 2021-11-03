@@ -1,4 +1,4 @@
-{% extends '//mix/template/template.sh' %}
+{% extends '//mix/template/make.sh' %}
 
 {% block fetch %}
 # url https://github.com/pg83/heirloom/archive/a47c4acf9fb43b89f9fb0afdcf9008121d50d806.zip
@@ -6,9 +6,8 @@
 {% endblock %}
 
 {% block bld_deps %}
-dev/build/make/mix.sh
-dev/lang/byacc/mix.sh
-env/std/mix.sh
+boot/4/byacc/mix.sh
+boot/8/env/std/mix.sh
 {% endblock %}
 
 {% block postunpack %}
@@ -24,10 +23,11 @@ export LIBDIR="${out}/lib"
 export MANDIR="${out}/man"
 {% endblock %}
 
-{% block build %}
-make -f Makefile.mk CC=gcc AR=ar RANLIB=ranlib
-{% endblock %}
-
-{% block install %}
-make -f Makefile.mk INSTALL=install STRIP=true install
+{% block make_flags %}
+-f Makefile.mk
+CC=gcc
+AR=ar
+RANLIB=ranlib
+INSTALL=install
+STRIP=true
 {% endblock %}
