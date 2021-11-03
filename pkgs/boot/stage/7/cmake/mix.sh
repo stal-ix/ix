@@ -4,7 +4,7 @@
 {{'sys/framework/CoreFoundation/mix.sh' | darwin}}
 {{'boot/lib/linux/mix.sh' | linux}}
 boot/lib/cxx/mix.sh
-boot/stage/6/env/mix.sh
+boot/stage/6/env/std/mix.sh
 {% endblock %}
 
 {% block lib_deps %}

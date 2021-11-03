@@ -10,7 +10,7 @@ boot/lib/cxx/rt/mix.sh
 
 {% block bld_deps %}
 {{'boot/lib/linux/mix.sh' | linux}}
-boot/stage/6/env/mix.sh
+boot/stage/6/env/std/mix.sh
 {% endblock %}
 
 {% block cflags %}

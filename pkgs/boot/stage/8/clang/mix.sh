@@ -6,5 +6,5 @@
 boot/lib/cxx/mix.sh
 boot/stage/7/cmake/mix.sh
 boot/stage/7/python/mix.sh
-boot/stage/6/env/mix.sh
+boot/stage/6/env/std/mix.sh
 {% endblock %}

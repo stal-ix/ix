@@ -4,7 +4,7 @@
 {{'boot/lib/linux/mix.sh' | linux}}
 boot/lib/z/mix.sh
 boot/lib/compiler_rt/mix.sh
-boot/stage/6/env/mix.sh
+boot/stage/6/env/std/mix.sh
 {% endblock %}
 
 {% block extra_modules %}
