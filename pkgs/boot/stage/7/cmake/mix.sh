@@ -2,8 +2,8 @@
 
 {% block bld_deps %}
 {{'sys/framework/CoreFoundation/mix.sh' | darwin}}
-{{'boot/lib/linux/mix.sh' | linux}}
-boot/lib/cxx/mix.sh
+{{'boot/stage/7/lib/linux/mix.sh' | linux}}
+boot/stage/7/lib/cxx/mix.sh
 boot/stage/6/env/std/mix.sh
 {% endblock %}
 

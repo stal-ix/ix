@@ -5,11 +5,11 @@
 {% endblock %}
 
 {% block lib_deps %}
-boot/lib/cxx/rt/mix.sh
+boot/stage/7/lib/cxx/rt/mix.sh
 {% endblock %}
 
 {% block bld_deps %}
-{{'boot/lib/linux/mix.sh' | linux}}
+{{'boot/stage/7/lib/linux/mix.sh' | linux}}
 boot/stage/6/env/std/mix.sh
 {% endblock %}
 

@@ -1,7 +1,7 @@
 {% extends '//dev/build/pkg-config/mix.sh' %}
 
 {% block bld_deps %}
-boot/lib/iconv/mix.sh
+boot/stage/6/lib/iconv/mix.sh
 boot/stage/6/diffutils/mix.sh
 boot/stage/6/findutils/mix.sh
 boot/stage/5/env/std/mix.sh

@@ -6,7 +6,7 @@
 {% endblock %}
 
 {% block lib_deps %}
-boot/lib/cxx/unwind/mix.sh
+boot/stage/7/lib/cxx/unwind/mix.sh
 {% endblock %}
 
 {% block bld_deps %}
