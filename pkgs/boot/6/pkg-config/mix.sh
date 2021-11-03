@@ -2,8 +2,6 @@
 
 {% block bld_deps %}
 boot/6/lib/iconv/mix.sh
-boot/6/diffutils/mix.sh
-boot/6/findutils/mix.sh
 boot/5/env/std/mix.sh
 {% endblock %}
 
