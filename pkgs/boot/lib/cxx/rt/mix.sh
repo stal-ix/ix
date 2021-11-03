@@ -10,7 +10,7 @@ boot/lib/cxx/unwind/mix.sh
 {% endblock %}
 
 {% block bld_deps %}
-boot/stage/5/env/mix.sh
+boot/stage/6/env/mix.sh
 {% endblock %}
 
 {% block build %}
