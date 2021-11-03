@@ -2,7 +2,7 @@
 
 {% block bld_deps %}
 boot/lib/iconv/mix.sh
-boot/stage/6/env/mix.sh
+boot/stage/5/env/mix.sh
 {% endblock %}
 
 {% block pkgflags %}

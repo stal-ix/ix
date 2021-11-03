@@ -4,7 +4,6 @@
 {{'boot/lib/linux/mix.sh' | linux}}
 boot/lib/z/mix.sh
 boot/lib/compiler_rt/mix.sh
-boot/stage/7/pkg-config/mix.sh
 boot/stage/6/env/mix.sh
 {% endblock %}
 
