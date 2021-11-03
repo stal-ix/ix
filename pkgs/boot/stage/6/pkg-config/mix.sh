@@ -16,6 +16,3 @@ boot/stage/5/env/mix.sh
 {% block prebuild %}
 cd glib && make -j ${make_thrs}
 {% endblock %}
-
-{% block check_tools %}
-{% endblock %}

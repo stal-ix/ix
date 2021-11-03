@@ -10,7 +10,9 @@
 {% endset %}
 
 {% block check_tools %}
+{% if not mix.name.startswith('boot/') %}
 command -v pkg-config
+{% endif %}
 {% endblock %}
 
 cat ./configure \

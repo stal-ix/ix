@@ -10,6 +10,3 @@ all:
 install:
 EOF
 {% endblock %}
-
-{% block check_tools %}
-{% endblock %}

@@ -10,6 +10,3 @@ boot/stage/2/env/mix.sh
 >lib/fnmatch.c
 {% endif %}
 {% endblock %}
-
-{% block check_tools %}
-{% endblock %}

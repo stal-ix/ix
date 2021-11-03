@@ -4,6 +4,3 @@
 boot/stage/3/make/mix.sh
 boot/stage/2/env/mix.sh
 {% endblock %}
-
-{% block check_tools %}
-{% endblock %}
