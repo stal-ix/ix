@@ -11,6 +11,10 @@ env/std/0/mix.sh
 
 {% block cflags %}
 export CPPFLAGS="-Dreallocarray=sbase_reallocarray ${CPPFLAGS}"
+
+{% if mix.platform.target.os == 'darwin' %}
+export CPPFLAGS="-D_DARWIN_C_SOURCE=1 -Dst_atim=st_atimespec -Dst_mtim=st_mtimespec -Dst_ctim=st_ctimespec ${CPPFLAGS}"
+{% endif %}
 {% endblock %}
 
 {% block patch %}

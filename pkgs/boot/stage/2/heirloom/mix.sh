@@ -94,23 +94,21 @@ done
 cp/cp cp/cp ${out}/bin
 cp rm/rm ${out}/bin
 
-(
-    set -eu
-
-    cd true
-
-    clang ${CPPFLAGS} ${CFLAGS} ${LDFLAGS} -o ${out}/bin/true -x c - << EOF
+clang ${CPPFLAGS} ${CFLAGS} ${PRFLAGS} -o ${tmp}/true -x c - << EOF
 int main() {
     return 0;
 }
 EOF
 
-    clang ${CPPFLAGS} ${CFLAGS} ${LDFLAGS} -o ${out}/bin/false -x c - << EOF
+clang ${CPPFLAGS} ${CFLAGS} ${PRFLAGS} -o ${tmp}/false -x c - << EOF
 int main() {
     return 1;
 }
 EOF
-)
+
+for i in true false; do
+    cp ${tmp}/${i} ${out}/bin/
+done
 
 export STRIP=true
 
@@ -277,7 +275,7 @@ export PATH="${out}/tmp:${PATH}"
 mv ${out}/bin ${out}/tmp && mkdir $out/bin
 
 for p in "$SV3BIN" "$SU3BIN" "$S42BIN" "$SUSBIN" "$UCBBIN" "${out}/tmp"; do
-    cp $p/* ${out}/bin
+    cp ${p}/* ${out}/bin/
 done
 
 (
