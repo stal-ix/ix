@@ -1,2 +1,1 @@
-# run boot/stage/8/env/mix.sh
-# run boot/final/env/tools/mix.sh
+# run boot/stage/8/env/std/mix.sh
