@@ -1,2 +1,3 @@
 # run boot/stage/6/env/cur/mix.sh
-# run boot/stage/5/env/mix.sh
+# run boot/stage/5/env/cur/mix.sh
+# run boot/stage/0/env/mix.sh
