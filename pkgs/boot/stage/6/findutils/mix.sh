@@ -4,7 +4,7 @@
 boot/stage/5/env/mix.sh
 {% endblock %}
 
-{% block patch %}
+{% block patch_findutils %}
 cat << EOF > doc/Makefile.in
 all:
 install:

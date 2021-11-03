@@ -6,14 +6,17 @@
 {% endblock %}
 
 {% block bld_deps %}
-boot/stage/2/shutil/mix.sh
-boot/stage/1/env/mix.sh
+boot/stage/3/env/mix.sh
 {% endblock %}
 
-{% block preconf %}
+{% block postunpack %}
+cd patch
 {% endblock %}
 
 {% block build %}
-mkdir -p ${out}/bin
-clang ${CPPFLAGS} ${CFLAGS} ${LDFLAGS} patch/*.c -o ${out}/bin/patch
+clang -o patch *.c
+{% endblock %}
+
+{% block install %}
+mkdir ${out}/bin && cp patch ${out}/bin/
 {% endblock %}

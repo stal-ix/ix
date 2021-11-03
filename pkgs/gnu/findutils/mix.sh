@@ -11,7 +11,11 @@ env/std/0/mix.sh
 {% endblock %}
 
 {% block patch %}
-echo '#define __nonnull(x)' > tmp
-cat gl/lib/malloc/dynarray-skeleton.c >> tmp
-mv tmp gl/lib/malloc/dynarray-skeleton.c
+cat - gl/lib/malloc/dynarray-skeleton.c << EOF > _
+#define __nonnull(x)
+EOF
+mv _ gl/lib/malloc/dynarray-skeleton.c
+
+{% block patch_findutils %}
+{% endblock %}
 {% endblock %}

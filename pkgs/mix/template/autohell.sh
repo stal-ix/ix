@@ -4,11 +4,6 @@
 {% block autoreconf %}
 {% endblock %}
 
-{% set coflags %}
-{% block coflags %}
-{% endblock %}
-{% endset %}
-
 {% block check_tools %}
 {% if not mix.name.startswith('boot/') %}
 command -v pkg-config
@@ -40,10 +35,17 @@ EOF
     chmod +x ${l}
 done
 
+{% block invoke_configure %}
+{% set coflags %}
+{% block coflags %}
+{% endblock %}
+{% endset %}
+
 dash ./configure ${COFLAGS} \
     --disable-dependency-tracking \
     --enable-static               \
     --disable-shared              \
     --prefix="${out}"             \
     {{mix.prepare_deps(coflags)}}
+{% endblock %}
 {% endblock %}
