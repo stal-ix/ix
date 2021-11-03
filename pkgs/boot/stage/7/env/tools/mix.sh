@@ -1,10 +1,10 @@
-# run boot/stage/5/make/mix.sh
 # run boot/stage/5/sed/mix.sh
+# run boot/stage/5/make/mix.sh
 # run boot/stage/5/gawk/mix.sh
 # run boot/stage/5/grep/mix.sh
-# run boot/stage/5/coreutils/mix.sh
 # run boot/stage/6/dash/mix.sh
 # run boot/stage/6/diffutils/mix.sh
 # run boot/stage/6/findutils/mix.sh
+# run boot/stage/6/coreutils/mix.sh
 # run boot/stage/7/pkg-config/mix.sh
 # run env/bootstrap/mix.sh
