@@ -86,9 +86,6 @@ class RenderContext:
             if x:
                 yield x
 
-    def py_string_list(self, lst):
-        return ', '.join(f"'{x}'" for x in self.parse_list(lst))
-
     def list_to_json(self, lst):
         return json.dumps(list(self.parse_list(lst)))
 

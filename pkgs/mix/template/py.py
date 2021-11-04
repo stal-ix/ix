@@ -39,13 +39,9 @@ def package(mix):
                 'data': r'''{{build_script}}''',
                 'kind': 'py',
             },
-            'depends': [
-                {{mix.py_string_list(lib_deps + ' ' + bld_deps)}}
-            ],
+            'depends': {{mix.list_to_json(lib_deps + ' ' + bld_deps)}},
         },
         'runtime': {
-            'depends': [
-                {{mix.py_string_list(lib_deps + ' ' + run_deps)}}
-            ],
+            'depends': {{mix.list_to_json(lib_deps + ' ' + run_deps)}},
         },
     }
