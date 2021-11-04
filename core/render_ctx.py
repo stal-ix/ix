@@ -19,14 +19,6 @@ class FileLoader:
         }
 
 
-def exec_mod(text, iface):
-    g = {}
-
-    exec(text, g)
-
-    return g['package'](iface)
-
-
 def compile_sh(script):
     return cs.parse(script)
 
@@ -53,10 +45,7 @@ class RenderContext:
             except Exception:
                 pass
 
-            if data.strip().startswith('#'):
-                return compile_sh(data)
-
-            return exec_mod(data, self)
+            return compile_sh(data)
         except cs.Error as e:
             text = f'can not render {self.name}'
             context = f'{e.lineno}: {e.line}'
