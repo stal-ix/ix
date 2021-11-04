@@ -1,8 +1,8 @@
 {% extends '//mix/template/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/Kitware/CMake/releases/download/v3.20.2/cmake-3.20.2.tar.gz
-cd0e7735f1e51f30ee3b0844390a464a
+https://github.com/Kitware/CMake/releases/download/v3.21.4/cmake-3.21.4.tar.gz
+9d399e7a5032ef8cbe8eb23aad17e3c6
 {% endblock %}
 
 {% block lib_deps %}
