@@ -46,6 +46,6 @@ dash ./configure ${COFLAGS} \
     --enable-static               \
     --disable-shared              \
     --prefix="${out}"             \
-    {{mix.prepare_deps(coflags)}}
+    {{mix.fix_list(coflags)}}
 {% endblock %}
 {% endblock %}

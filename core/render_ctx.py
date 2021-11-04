@@ -45,19 +45,6 @@ class RenderContext:
 
             raise ce.Error(text, context=context, exception=e.slave)
 
-    def prepare_deps(self, v):
-        return cononize(v)
-
-    def dep_list(self, v, prefix):
-        def iter_lines():
-            for l in v.splitlines():
-                l = l.strip()
-
-                if l:
-                    yield '# ' + prefix + ' ' + l
-
-        return '\n'.join(iter_lines()).strip() + '\n'
-
     def fix_list(self, lst):
         return cononize(lst)
 

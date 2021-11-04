@@ -14,7 +14,7 @@
 {% endset %}
 
 (
-    build_cmake_prepare -G Ninja {{mix.prepare_deps(cmflags)}} {{cmdir.strip()}}
+    build_cmake_prepare -G Ninja {{mix.fix_list(cmflags)}} {{cmdir.strip()}}
 )
 {% endblock %}
 
