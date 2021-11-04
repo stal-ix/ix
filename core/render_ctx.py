@@ -18,8 +18,21 @@ class FileLoader:
         }
 
 
+def preproc(d):
+    for x in d.split('\n'):
+        x = x.strip()
+
+        if not x:
+            continue
+
+        if x[0] == '#':
+            continue
+
+        yield x
+
+
 def cononize(v):
-    s = v.replace('\n', ' ').replace('\\', ' ').strip()
+    s = ' '.join(preproc(v))
 
     while '  ' in s:
         s = s.replace('  ', ' ')
@@ -30,16 +43,13 @@ def cononize(v):
 def parse_urls(urls):
     cur = {}
 
-    for l in urls.split('\n'):
-        l = l.strip()
-
-        if not l:
-            continue
-
+    for l in cononize(urls).split(' '):
         if ':' in l:
             cur['url'] = l
         else:
             cur['md5'] = l
+
+        if len(cur) == 2:
             yield cur
             cur = {}
 
