@@ -36,7 +36,6 @@ class Manager:
             try:
                 return self._p[key]
             except KeyError:
-                print(selector)
                 self._p[key] = cp.Package(selector, self)
 
     def iter_packages(self, selectors):
@@ -59,7 +58,10 @@ class Manager:
 
     def iter_build_commands(self, selectors):
         for pkg in self.iter_packages(selectors):
-            yield from pkg.commands()
+            try:
+                yield from pkg.commands()
+            except Exception as e:
+                raise er.Error(f'can not render build commands for {pkg.name}: {e}')
 
     def build_graph(self, selectors):
         return {

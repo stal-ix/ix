@@ -3,7 +3,6 @@ import json
 
 import core.utils as cu
 import core.error as ce
-import core.parse_sh as cs
 
 
 class FileLoader:
@@ -19,10 +18,6 @@ class FileLoader:
         }
 
 
-def compile_sh(script):
-    return cs.parse(script)
-
-
 def cononize(v):
     s = v.replace('\n', ' ').replace('\\', ' ').strip()
 
@@ -32,24 +27,38 @@ def cononize(v):
     return s
 
 
+def parse_urls(urls):
+    cur = {}
+
+    for l in urls.split('\n'):
+        l = l.strip()
+
+        if not l:
+            continue
+
+        if l[0] == '#':
+            l = l[6:]
+
+        if ':' in l:
+            cur['url'] = l
+        else:
+            cur['md5'] = l
+            yield cur
+            cur = {}
+
+
 class RenderContext:
     def __init__(self, package):
         self.package = package
 
     def render(self):
-        try:
-            return json.loads(self.template(self.name))
-        except cs.Error as e:
-            text = f'can not render {self.name}'
-            context = f'{e.lineno}: {e.line}'
-
-            raise ce.Error(text, context=context, exception=e.slave)
+        return json.loads(self.template(self.name))
 
     def fix_list(self, lst):
         return cononize(lst)
 
     def parse_list(self, lst):
-        for x in cononize(lst).split(' '):
+        for x in self.fix_list(lst).split(' '):
             x = x.strip()
 
             if x:
@@ -59,13 +68,10 @@ class RenderContext:
         return json.dumps(s)
 
     def urls_to_json(self, urls):
-        return json.dumps(self.parse_sh(urls).get('build', {}).get('fetch', []))
+        return json.dumps(list(parse_urls(urls)))
 
     def list_to_json(self, lst):
         return json.dumps(list(self.parse_list(lst)))
-
-    def parse_sh(self, sh):
-        return compile_sh(sh)
 
     @property
     def platform(self):
