@@ -1,30 +1,6 @@
-{% block deps %}
-{% set bld_deps %}
-{% block bld_deps %}
-{% endblock %}
-{% endset %}
+{% extends 'mix.json' %}
 
-{% set lib_deps %}
-{% block lib_deps %}
-{% endblock %}
-{% endset %}
-
-{% set run_deps %}
-{% block run_deps %}
-{% endblock %}
-{% endset %}
-
-# bld {{bld_deps.replace('\n', ' ')}}
-# lib {{lib_deps.replace('\n', ' ')}}
-# run {{run_deps.replace('\n', ' ')}}
-{% endblock %}
-
-{% block more_deps %}
-{% endblock %}
-
-{% block fetch %}
-{% endblock %}
-
+{% block script_body %}
 {% block sh_script_begin %}
 {% endblock %}
 
@@ -83,3 +59,6 @@ rm -rf ${tmp}
 
 {% block sh_script_end %}
 {% endblock %}
+{% endblock %}
+
+{% block script_kind %}sh{% endblock %}

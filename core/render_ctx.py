@@ -38,14 +38,7 @@ class RenderContext:
 
     def render(self):
         try:
-            data = self.template(self.name)
-
-            try:
-                return json.loads(data)
-            except Exception:
-                pass
-
-            return compile_sh(data)
+            return json.loads(self.template(self.name))
         except cs.Error as e:
             text = f'can not render {self.name}'
             context = f'{e.lineno}: {e.line}'
