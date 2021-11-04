@@ -1,8 +1,8 @@
 {% extends '//mix/template/autohell.sh' %}
 
 {% block fetch %}
-# url http://xmlsoft.org/sources/libxml2-2.9.12.tar.gz
-# md5 f433a39be087a9f0b197eb2307ad9f75
+http://xmlsoft.org/sources/libxml2-2.9.12.tar.gz
+f433a39be087a9f0b197eb2307ad9f75
 {% endblock %}
 
 {% block lib_deps %}

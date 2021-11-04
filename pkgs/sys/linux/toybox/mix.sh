@@ -1,8 +1,8 @@
 {% extends '//mix/template/make.sh' %}
 
 {% block fetch %}
-# url https://github.com/landley/toybox/archive/refs/tags/0.8.5.tar.gz
-# md5 04f2c748df18e46e100f697193925d1b
+https://github.com/landley/toybox/archive/refs/tags/0.8.5.tar.gz
+04f2c748df18e46e100f697193925d1b
 {% endblock %}
 
 {% block bld_deps %}

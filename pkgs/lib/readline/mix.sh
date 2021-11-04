@@ -1,8 +1,8 @@
 {% extends '//mix/template/autohell.sh' %}
 
 {% block fetch %}
-# url https://ftp.gnu.org/gnu/readline/readline-8.1.tar.gz
-# md5 e9557dd5b1409f5d7b37ef717c64518e
+https://ftp.gnu.org/gnu/readline/readline-8.1.tar.gz
+e9557dd5b1409f5d7b37ef717c64518e
 {% endblock %}
 
 {% block lib_deps %}

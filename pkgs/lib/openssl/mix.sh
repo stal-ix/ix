@@ -1,8 +1,8 @@
 {% extends '//mix/template/make.sh' %}
 
 {% block fetch %}
-# url https://www.openssl.org/source/old/1.1.1/openssl-1.1.1j.tar.gz
-# md5 cccaa064ed860a2b4d1303811bf5c682
+https://www.openssl.org/source/old/1.1.1/openssl-1.1.1j.tar.gz
+cccaa064ed860a2b4d1303811bf5c682
 {% endblock %}
 
 {% block bld_deps %}

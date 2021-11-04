@@ -1,8 +1,8 @@
 {% extends '//mix/template/autohell.sh' %}
 
 {% block fetch %}
-# url https://github.com/tpoechtrager/cctools-port/archive/236a426c1205a3bfcf0dbb2e2faf2296f0a100e5.zip
-# md5 3ba3b9f5e6ebc2afe77cdafeaaeeb981
+https://github.com/tpoechtrager/cctools-port/archive/236a426c1205a3bfcf0dbb2e2faf2296f0a100e5.zip
+3ba3b9f5e6ebc2afe77cdafeaaeeb981
 {% endblock %}
 
 {% block bld_deps %}

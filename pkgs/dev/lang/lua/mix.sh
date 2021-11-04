@@ -1,8 +1,8 @@
 {% extends '//mix/template/make.sh' %}
 
 {% block fetch %}
-# url https://www.lua.org/ftp/lua-5.4.3.tar.gz
-# md5 ef63ed2ecfb713646a7fcc583cf5f352
+https://www.lua.org/ftp/lua-5.4.3.tar.gz
+ef63ed2ecfb713646a7fcc583cf5f352
 {% endblock %}
 
 {% block bld_deps %}

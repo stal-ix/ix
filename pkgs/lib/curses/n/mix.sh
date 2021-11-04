@@ -1,8 +1,8 @@
 {% extends '//mix/template/autohell.sh' %}
 
 {% block fetch %}
-# url https://ftp.gnu.org/pub/gnu/ncurses/ncurses-6.2.tar.gz
-# md5 e812da327b1c2214ac1aed440ea3ae8d
+https://ftp.gnu.org/pub/gnu/ncurses/ncurses-6.2.tar.gz
+e812da327b1c2214ac1aed440ea3ae8d
 {% endblock %}
 
 {% block bld_deps %}

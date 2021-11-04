@@ -1,8 +1,8 @@
 {% extends '//mix/template/autohell.sh' %}
 
 {% block fetch %}
-# url https://www.lysator.liu.se/~nisse/misc/argp-standalone-1.3.tar.gz
-# md5 720704bac078d067111b32444e24ba69
+https://www.lysator.liu.se/~nisse/misc/argp-standalone-1.3.tar.gz
+720704bac078d067111b32444e24ba69
 {% endblock %}
 
 {% block bld_deps %}

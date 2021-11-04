@@ -1,8 +1,8 @@
 {% extends '//mix/template/template.sh' %}
 
 {% block fetch %}
-# url https://github.com/aklomp/base64/archive/refs/tags/v0.4.0.tar.gz
-# md5 dc02ea0324279df0ecdc23d519dbcaa0
+https://github.com/aklomp/base64/archive/refs/tags/v0.4.0.tar.gz
+dc02ea0324279df0ecdc23d519dbcaa0
 {% endblock %}
 
 {% block bld_deps %}

@@ -8,8 +8,8 @@ TMPL = r'''
 {% extends '//mix/template/template.sh' %}
 
 {% block fetch %}
-# url {url}
-# md5 {md5}
+{url}
+{md5}
 {% endblock %}
 
 {% block bld_deps %}

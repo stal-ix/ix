@@ -1,8 +1,8 @@
 {% extends '//dev/lang/go/template/mix.sh' %}
 
 {% block fetch %}
-# url https://golang.org/dl/go1.16.5.src.tar.gz
-# md5 f3c06704e536dcca1814b16dbcdc4a36
+https://golang.org/dl/go1.16.5.src.tar.gz
+f3c06704e536dcca1814b16dbcdc4a36
 {% endblock %}
 
 {% block go_bld_deps %}

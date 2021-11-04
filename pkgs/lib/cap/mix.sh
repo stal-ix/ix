@@ -1,8 +1,8 @@
 {% extends '//mix/template/make.sh' %}
 
 {% block fetch %}
-# url https://git.kernel.org/pub/scm/libs/libcap/libcap.git/snapshot/libcap-cap/v1.2.59.tar.gz
-# md5 5fd93353891d721402c84aa1bc4dad77
+https://git.kernel.org/pub/scm/libs/libcap/libcap.git/snapshot/libcap-cap/v1.2.59.tar.gz
+5fd93353891d721402c84aa1bc4dad77
 {% endblock %}
 
 {% block lib_deps %}

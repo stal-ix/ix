@@ -1,8 +1,8 @@
 {% extends '//mix/template/autohell.sh' %}
 
 {% block fetch %}
-# url https://ftp.gnu.org/pub/gnu/gettext/gettext-0.21.tar.gz
-# md5 28b1cd4c94a74428723ed966c38cf479
+https://ftp.gnu.org/pub/gnu/gettext/gettext-0.21.tar.gz
+28b1cd4c94a74428723ed966c38cf479
 {% endblock %}
 
 {% block bld_deps %}

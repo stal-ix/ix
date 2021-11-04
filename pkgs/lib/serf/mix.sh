@@ -1,8 +1,8 @@
 {% extends '//mix/template/template.sh' %}
 
 {% block fetch %}
-# url https://www.apache.org/dist/serf/serf-1.3.9.tar.bz2
-# md5 370a6340ff20366ab088012cd13f2b57
+https://www.apache.org/dist/serf/serf-1.3.9.tar.bz2
+370a6340ff20366ab088012cd13f2b57
 {% endblock %}
 
 {% block lib_deps %}

@@ -1,8 +1,8 @@
 {% extends '//mix/template/autohell.sh' %}
 
 {% block fetch %}
-# url https://ftp.gnu.org/gnu/gdbm/gdbm-1.19.tar.gz
-# md5 aeb29c6a90350a4c959cd1df38cd0a7e
+https://ftp.gnu.org/gnu/gdbm/gdbm-1.19.tar.gz
+aeb29c6a90350a4c959cd1df38cd0a7e
 {% endblock %}
 
 {% block lib_deps %}

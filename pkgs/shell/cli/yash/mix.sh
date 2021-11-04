@@ -1,8 +1,8 @@
 {% extends '//mix/template/autohell.sh' %}
 
 {% block fetch %}
-# url https://github.com/magicant/yash/releases/download/2.51/yash-2.51.tar.xz
-# md5 91d0c0fa548c9c9a081893f515b4f049
+https://github.com/magicant/yash/releases/download/2.51/yash-2.51.tar.xz
+91d0c0fa548c9c9a081893f515b4f049
 {% endblock %}
 
 {% block bld_deps %}

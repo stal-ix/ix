@@ -1,8 +1,8 @@
 {% extends '//mix/template/cmake.sh' %}
 
 {% block fetch %}
-# url https://github.com/elfmz/far2l/archive/b246b95118c0d7c6d10b4e94ec9b3bc7e24c3a7c.zip
-# md5 8fb228fd04476f5143163b9cca27366e
+https://github.com/elfmz/far2l/archive/b246b95118c0d7c6d10b4e94ec9b3bc7e24c3a7c.zip
+8fb228fd04476f5143163b9cca27366e
 {% endblock %}
 
 {% block bld_deps %}

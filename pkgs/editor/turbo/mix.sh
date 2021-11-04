@@ -1,8 +1,8 @@
 {% extends '//mix/template/cmake.sh' %}
 
 {% block fetch %}
-# url https://github.com/magiblot/turbo/archive/971aad35d4b705228caa8852114438ee71d488d8.zip
-# md5 53d2cdb6a47cad1796d32dc5839726e8
+https://github.com/magiblot/turbo/archive/971aad35d4b705228caa8852114438ee71d488d8.zip
+53d2cdb6a47cad1796d32dc5839726e8
 {% endblock %}
 
 {% block bld_deps %}

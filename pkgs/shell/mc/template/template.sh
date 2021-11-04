@@ -1,8 +1,8 @@
 {% extends '//mix/template/autohell.sh' %}
 
 {% block fetch %}
-# url http://ftp.midnight-commander.org/mc-4.8.27.tar.xz
-# md5 e51cd40a897d9aa01af251d191637ca4
+http://ftp.midnight-commander.org/mc-4.8.27.tar.xz
+e51cd40a897d9aa01af251d191637ca4
 {% endblock %}
 
 {% block bld_deps %}

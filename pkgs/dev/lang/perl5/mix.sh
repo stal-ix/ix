@@ -1,8 +1,8 @@
 {% extends '//mix/template/make.sh' %}
 
 {% block fetch %}
-# url https://www.cpan.org/src/5.0/perl-5.34.0.tar.gz
-# md5 2acf2ef147e41730e572251ed079bc1a
+https://www.cpan.org/src/5.0/perl-5.34.0.tar.gz
+2acf2ef147e41730e572251ed079bc1a
 {% endblock %}
 
 {% block bld_deps %}

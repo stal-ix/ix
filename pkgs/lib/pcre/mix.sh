@@ -1,8 +1,8 @@
 {% extends '//mix/template/autohell.sh' %}
 
 {% block fetch %}
-# url https://ftp.pcre.org/pub/pcre/pcre-8.44.tar.gz
-# md5 3bcd2441024d00009a5fee43f058987c
+https://ftp.pcre.org/pub/pcre/pcre-8.44.tar.gz
+3bcd2441024d00009a5fee43f058987c
 {% endblock %}
 
 {% block bld_deps %}

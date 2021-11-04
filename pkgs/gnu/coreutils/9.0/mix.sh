@@ -1,8 +1,8 @@
 {% extends '//gnu/coreutils/template/mix.sh' %}
 
 {% block fetch %}
-# url https://ftp.gnu.org/gnu/coreutils/coreutils-9.0.tar.xz
-# md5 0d79ae8a6124546e3b94171375e5e5d0
+https://ftp.gnu.org/gnu/coreutils/coreutils-9.0.tar.xz
+0d79ae8a6124546e3b94171375e5e5d0
 {% endblock %}
 
 {% block coreutils_deps_extra %}

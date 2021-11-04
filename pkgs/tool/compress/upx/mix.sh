@@ -1,8 +1,8 @@
 {% extends '//mix/template/template.sh' %}
 
 {% block fetch %}
-# url https://github.com/upx/upx/releases/download/v3.96/upx-3.96-src.tar.xz
-# md5 bf5564f33fe9062bc48b53abd4b34223
+https://github.com/upx/upx/releases/download/v3.96/upx-3.96-src.tar.xz
+bf5564f33fe9062bc48b53abd4b34223
 {% endblock %}
 
 {% block bld_deps %}

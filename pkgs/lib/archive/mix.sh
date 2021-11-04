@@ -1,8 +1,8 @@
 {% extends '//mix/template/autohell.sh' %}
 
 {% block fetch %}
-# url https://libarchive.org/downloads/libarchive-3.5.2.tar.xz
-# md5 2ba9f1f8c169aa9caf8e2d34dde323be
+https://libarchive.org/downloads/libarchive-3.5.2.tar.xz
+2ba9f1f8c169aa9caf8e2d34dde323be
 {% endblock %}
 
 {% block lib_deps %}

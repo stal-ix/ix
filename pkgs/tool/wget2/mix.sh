@@ -1,8 +1,8 @@
 {% extends '//mix/template/autohell.sh' %}
 
 {% block fetch %}
-# url https://ftp.gnu.org/gnu/wget/wget2-2.0.0.tar.gz
-# md5 b774bb0da9cb84cb9f5bbbcbcc31d00e
+https://ftp.gnu.org/gnu/wget/wget2-2.0.0.tar.gz
+b774bb0da9cb84cb9f5bbbcbcc31d00e
 {% endblock %}
 
 {% block bld_deps %}

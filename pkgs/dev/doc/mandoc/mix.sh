@@ -1,8 +1,8 @@
 {% extends '//mix/template/autohell.sh' %}
 
 {% block fetch %}
-# url http://mandoc.bsd.lv/snapshots/mandoc-1.14.6.tar.gz
-# md5 f0adf24e8fdef5f3e332191f653e422a
+http://mandoc.bsd.lv/snapshots/mandoc-1.14.6.tar.gz
+f0adf24e8fdef5f3e332191f653e422a
 {% endblock %}
 
 {% block bld_deps %}

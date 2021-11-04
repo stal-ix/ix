@@ -1,8 +1,8 @@
 {% extends '//mix/template/autohell.sh' %}
 
 {% block fetch %}
-# url https://ftp.gnu.org/gnu/findutils/findutils-4.8.0.tar.xz
-# md5 eeefe2e6380931a77dfa6d9350b43186
+https://ftp.gnu.org/gnu/findutils/findutils-4.8.0.tar.xz
+eeefe2e6380931a77dfa6d9350b43186
 {% endblock %}
 
 {% block bld_deps %}

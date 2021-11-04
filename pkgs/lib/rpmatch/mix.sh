@@ -1,8 +1,8 @@
 {% extends '//mix/template/autohell.sh' %}
 
 {% block fetch %}
-# url https://github.com/pullmoll/musl-rpmatch/archive/refs/tags/v1.0.tar.gz
-# md5 8f5a5022fa66d94b7b0934618dfa6350
+https://github.com/pullmoll/musl-rpmatch/archive/refs/tags/v1.0.tar.gz
+8f5a5022fa66d94b7b0934618dfa6350
 {% endblock %}
 
 {% block bld_deps %}

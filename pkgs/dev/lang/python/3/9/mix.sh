@@ -1,8 +1,8 @@
 {% extends '//dev/lang/python/3/template/mix.sh' %}
 
 {% block fetch %}
-# url https://www.python.org/ftp/python/3.9.7/Python-3.9.7.tar.xz
-# md5 fddb060b483bc01850a3f412eea1d954
+https://www.python.org/ftp/python/3.9.7/Python-3.9.7.tar.xz
+fddb060b483bc01850a3f412eea1d954
 {% endblock %}
 
 {% block patch_sqlite_defines %}

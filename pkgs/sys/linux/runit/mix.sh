@@ -1,8 +1,8 @@
 {% extends '//mix/template/template.sh' %}
 
 {% block fetch %}
-# url http://smarden.org/runit/runit-2.1.2.tar.gz
-# md5 6c985fbfe3a34608eb3c53dc719172c4
+http://smarden.org/runit/runit-2.1.2.tar.gz
+6c985fbfe3a34608eb3c53dc719172c4
 {% endblock %}
 
 {% block bld_deps %}

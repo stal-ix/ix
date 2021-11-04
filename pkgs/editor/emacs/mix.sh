@@ -1,8 +1,8 @@
 {% extends '//mix/template/autohell.sh' %}
 
 {% block fetch %}
-# url https://ftp.gnu.org/gnu/emacs/emacs-27.2.tar.xz
-# md5 4c3d9ff35b2ab2fe518dc7eb3951e128
+https://ftp.gnu.org/gnu/emacs/emacs-27.2.tar.xz
+4c3d9ff35b2ab2fe518dc7eb3951e128
 {% endblock %}
 
 {% block bld_deps %}

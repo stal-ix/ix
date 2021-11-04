@@ -1,8 +1,8 @@
 {% extends '//mix/template/cmake.sh' %}
 
 {% block fetch %}
-# url https://github.com/microsoft/mimalloc/archive/refs/tags/v2.0.2.tar.gz
-# md5 40c75843e55e5c02d47fc5b1fda30124
+https://github.com/microsoft/mimalloc/archive/refs/tags/v2.0.2.tar.gz
+40c75843e55e5c02d47fc5b1fda30124
 {% endblock %}
 
 {% block bld_deps %}

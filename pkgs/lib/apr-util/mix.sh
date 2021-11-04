@@ -1,8 +1,8 @@
 {% extends '//mix/template/autohell.sh' %}
 
 {% block fetch %}
-# url https://archive.apache.org/dist/apr/apr-util-1.6.1.tar.bz2
-# md5 8ff5dc36fa39a2a3db1df196d3ed6086
+https://archive.apache.org/dist/apr/apr-util-1.6.1.tar.bz2
+8ff5dc36fa39a2a3db1df196d3ed6086
 {% endblock %}
 
 {% block lib_deps %}

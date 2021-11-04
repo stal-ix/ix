@@ -1,8 +1,8 @@
 {% extends '//mix/template/meson.sh' %}
 
 {% block fetch %}
-# url https://download-fallback.gnome.org/sources/glib/2.68/glib-2.68.4.tar.xz
-# md5 07ba0e946bf6dcad36388675d2f2876f
+https://download-fallback.gnome.org/sources/glib/2.68/glib-2.68.4.tar.xz
+07ba0e946bf6dcad36388675d2f2876f
 {% endblock %}
 
 {% block lib_deps %}

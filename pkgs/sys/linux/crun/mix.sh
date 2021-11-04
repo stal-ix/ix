@@ -1,8 +1,8 @@
 {% extends '//mix/template/autohell.sh' %}
 
 {% block fetch %}
-# url https://github.com/containers/crun/releases/download/1.2/crun-1.2.tar.xz
-# md5 cbfee6db4d034bfa62effe695da2bbd6
+https://github.com/containers/crun/releases/download/1.2/crun-1.2.tar.xz
+cbfee6db4d034bfa62effe695da2bbd6
 {% endblock %}
 
 {% block bld_deps %}

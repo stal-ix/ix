@@ -1,8 +1,8 @@
 {% extends '//mix/template/template.sh' %}
 
 {% block fetch %}
-# url http://www.mirbsd.org/MirOS/dist/mir/mksh/mksh-R59c.tgz
-# md5 99f8ac3c1d8a30b913d509f1969a4aaa
+http://www.mirbsd.org/MirOS/dist/mir/mksh/mksh-R59c.tgz
+99f8ac3c1d8a30b913d509f1969a4aaa
 {% endblock %}
 
 {% block bld_deps %}

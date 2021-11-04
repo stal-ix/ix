@@ -1,8 +1,8 @@
 {% extends '//mix/template/template.sh' %}
 
 {% block fetch %}
-# url https://github.com/Cyan4973/xxHash/archive/refs/tags/v0.8.0.tar.gz
-# md5 62310678857c30fcef4128f41f711f49
+https://github.com/Cyan4973/xxHash/archive/refs/tags/v0.8.0.tar.gz
+62310678857c30fcef4128f41f711f49
 {% endblock %}
 
 {% block bld_deps %}

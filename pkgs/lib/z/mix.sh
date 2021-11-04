@@ -1,8 +1,8 @@
 {% extends '//mix/template/autohell.sh' %}
 
 {% block fetch %}
-# url http://zlib.net/zlib-1.2.11.tar.xz
-# md5 85adef240c5f370b308da8c938951a68
+http://zlib.net/zlib-1.2.11.tar.xz
+85adef240c5f370b308da8c938951a68
 {% endblock %}
 
 {% block bld_deps %}

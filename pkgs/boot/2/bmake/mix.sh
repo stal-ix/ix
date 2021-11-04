@@ -1,8 +1,8 @@
 {% extends '//mix/template/base.sh' %}
 
 {% block fetch %}
-# url https://www.crufty.net/ftp/pub/sjg/bmake-20210808.tar.gz
-# md5 e4432f5e3add4459aef28ec2017aaf05
+https://www.crufty.net/ftp/pub/sjg/bmake-20210808.tar.gz
+e4432f5e3add4459aef28ec2017aaf05
 {% endblock %}
 
 {% block bld_deps %}

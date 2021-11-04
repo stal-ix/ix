@@ -1,11 +1,11 @@
 {% extends '//mix/template/template.sh' %}
 
 {% block fetch %}
-# url https://github.com/westes/flex/archive/refs/tags/flex-2-5-10.tar.gz
-# md5 4e57770c7dfc2b1d113729f62d6ae3b6
+https://github.com/westes/flex/archive/refs/tags/flex-2-5-10.tar.gz
+4e57770c7dfc2b1d113729f62d6ae3b6
 {% block flex_extra_fetch %}
-# url https://gitlab.com/giomasce/flex/-/raw/506e9605baf4638ba47d37133c348df1385ef06c/scan.lex.l
-# md5 3a8bef1b4d0b0823aff29ff0dc76d8c3
+https://gitlab.com/giomasce/flex/-/raw/506e9605baf4638ba47d37133c348df1385ef06c/scan.lex.l
+3a8bef1b4d0b0823aff29ff0dc76d8c3
 {% endblock %}
 {% endblock %}
 

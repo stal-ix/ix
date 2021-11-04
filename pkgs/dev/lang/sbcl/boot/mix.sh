@@ -1,8 +1,8 @@
 {% extends '//mix/template/template.sh' %}
 
 {% block fetch %}
-# url https://nav.dl.sourceforge.net/project/sbcl/sbcl/2.1.7/sbcl-2.1.7-source.tar.bz2
-# md5 3f21dbcab14b4aa51b9a9f03c2b78b9c
+https://nav.dl.sourceforge.net/project/sbcl/sbcl/2.1.7/sbcl-2.1.7-source.tar.bz2
+3f21dbcab14b4aa51b9a9f03c2b78b9c
 {% endblock %}
 
 {% block bld_deps %}
