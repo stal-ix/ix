@@ -16,7 +16,8 @@ export CXXFLAGS="-std=c++03 ${CXXFLAGS}"
 {% endblock %}
 
 {% block make_flags %}
--f makefile DEST_DIR=${out}
+-f makefile
+DEST_DIR=${out}
 {% endblock %}
 
 {% block make_target %}

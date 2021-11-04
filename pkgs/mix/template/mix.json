@@ -20,11 +20,6 @@
 {% endblock %}
 {% endset %}
 
-{% set script_body %}
-{% block script_body %}
-{% endblock %}
-{% endset %}
-
 {% block build_depends %}
 {{mix.list_to_json(lib_deps + ' ' + bld_deps)}}
 {% endblock %}
@@ -39,7 +34,7 @@
 
 {% block build_script %}
 {
-    "data": {{mix.string_to_json(script_body)}},
-    "kind": "{% block script_kind %}{% endblock %}"
+    "data": {{mix.string_to_json(self.script_body())}},
+    "kind": "{{self.script_kind().strip()}}"
 }
 {% endblock %}

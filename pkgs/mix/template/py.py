@@ -16,4 +16,6 @@ with open(os.environ['out'] + '/env', 'a') as f:
     f.write(env_data)
 {% endblock %}
 
-{% block script_kind %}py{% endblock %}
+{% block script_kind %}
+py
+{% endblock %}

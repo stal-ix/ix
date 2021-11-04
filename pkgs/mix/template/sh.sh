@@ -61,4 +61,6 @@ rm -rf ${tmp}
 {% endblock %}
 {% endblock %}
 
-{% block script_kind %}sh{% endblock %}
+{% block script_kind %}
+sh
+{% endblock %}
