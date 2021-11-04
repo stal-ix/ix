@@ -10,12 +10,10 @@ boot/9/bison/351/stage1/mix.sh
 boot/4/patch/mix.sh
 {% endblock %}
 
-{% block patch %}
+{% block bison_patch %}
 (base64 -d | patch -p0) << EOF
 {% include 'bison.diff/base64' %}
 EOF
-
-rm src/parse-gram.c src/parse-gram.h
 {% endblock %}
 
 {% block bison_cflags %}

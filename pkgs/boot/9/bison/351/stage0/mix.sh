@@ -9,9 +9,8 @@
 boot/9/bison/341/stage2/mix.sh
 {% endblock %}
 
-{% block patch %}
+{% block bison_patch %}
 cd src
 
-rm parse-gram.c parse-gram.h
 cat parse-gram.y | grep -v 'define api.token.raw' > _ && mv _ parse-gram.y
 {% endblock %}

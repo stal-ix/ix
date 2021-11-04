@@ -4,8 +4,7 @@
 boot/9/bison/361/stage0/mix.sh
 {% endblock %}
 
-{% block patch %}
-rm src/parse-gram.c src/parse-gram.h
+{% block bison_patch %}
 {% endblock %}
 
 {% block bison_cflags %}

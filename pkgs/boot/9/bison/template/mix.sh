@@ -12,15 +12,10 @@ boot/8/env/std/mix.sh
 {% endblock %}
 
 {% block toolconf %}
-cat << EOF > perl
-EOF
-
-chmod +x perl
-
-cat << EOF > makeinfo
-EOF
-
-chmod +x makeinfo
+for x in perl makeinfo; do
+    echo > ${x}
+    chmod +x ${x}
+done
 
 cat << EOF > help2man
 #!$(command -v dash)

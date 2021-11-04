@@ -13,9 +13,16 @@ boot/8/env/std/mix.sh
 {% endblock %}
 
 {% block patch %}
-cd src
+cd src && rm parse.c parse.h scan.c skel.c
+{% endblock %}
 
-rm parse.c parse.h scan.c skel.c
-byacc -d parse.y && mv y.tab.c parse.c && mv y.tab.h parse.h
-echo 'extern int yylval;' >> parse.h
+{% block prebuild %}
+(
+    set -eu
+
+    cd src
+
+    byacc -d parse.y && mv y.tab.c parse.c && mv y.tab.h parse.h
+    echo 'extern int yylval;' >> parse.h
+)
 {% endblock %}
