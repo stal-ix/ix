@@ -23,6 +23,8 @@ tool/compress/unrar/mix.sh
 tool/compress/unzip/mix.sh
 tool/compress/xz/mix.sh
 tool/compress/zip/mix.sh
+{% block mc_run_deps %}
+{% endblock %}
 {% endblock %}
 
 {% block cflags %}
