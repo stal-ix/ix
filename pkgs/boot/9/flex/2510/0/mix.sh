@@ -47,8 +47,9 @@ cat << EOF > config.h
 EOF
 
 byacc -d parse.y
-cp y.tab.h parse.h
-cp y.tab.c parse.c
+
+mv y.tab.h parse.h
+mv y.tab.c parse.c
 
 {% block invoke_lex %}
 lex ${src}/scan.lex.l
