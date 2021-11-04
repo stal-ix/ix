@@ -1,4 +1,4 @@
-{% extends '//gnu/coreutils/8.31/mix.sh' %}
+{% extends '//boot/4/coreutils/mix.sh' %}
 
 {% block bld_deps %}
 boot/5/env/std/mix.sh

@@ -6,6 +6,7 @@
 
 {% block env %}
 export YACC="${out}/bin/bison"
+export YFLAGS=-Wnone
 {% endblock %}
 
 {% block cflags %}
