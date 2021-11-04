@@ -36,9 +36,6 @@ def parse_urls(urls):
         if not l:
             continue
 
-        if l[0] == '#':
-            l = l[6:]
-
         if ':' in l:
             cur['url'] = l
         else:
