@@ -1,19 +1,6 @@
-{% set bld_deps %}
-{% block bld_deps %}
-{% endblock %}
-{% endset %}
+{% extends 'mix.json' %}
 
-{% set lib_deps %}
-{% block lib_deps %}
-{% endblock %}
-{% endset %}
-
-{% set run_deps %}
-{% block run_deps %}
-{% endblock %}
-{% endset %}
-
-{% set build_script %}
+{% block script_body %}
 {% block build %}
 {% include 'run_sh_script.py' %}
 {% endblock %}
@@ -27,21 +14,6 @@ env_data = r"""
 
 with open(os.environ['out'] + '/env', 'a') as f:
     f.write(env_data)
-{% endset %}
+{% endblock %}
 
-def package(mix):
-    fetch = r'''{% block fetch %}{% endblock %}'''
-
-    return {
-        'build': {
-            'fetch': mix.parse_sh(fetch).get('build', {}).get('fetch', []),
-            'script': {
-                'data': r'''{{build_script}}''',
-                'kind': 'py',
-            },
-            'depends': {{mix.list_to_json(lib_deps + ' ' + bld_deps)}},
-        },
-        'runtime': {
-            'depends': {{mix.list_to_json(lib_deps + ' ' + run_deps)}},
-        },
-    }
+{% block script_kind %}py{% endblock %}

@@ -86,6 +86,12 @@ class RenderContext:
             if x:
                 yield x
 
+    def string_to_json(self, s):
+        return json.dumps(s)
+
+    def urls_to_json(self, urls):
+        return json.dumps(self.parse_sh(urls).get('build', {}).get('fetch', []))
+
     def list_to_json(self, lst):
         return json.dumps(list(self.parse_list(lst)))
 

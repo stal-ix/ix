@@ -1,0 +1,45 @@
+{% extends 'base.json' %}
+
+{% set bld_deps %}
+{% block bld_deps %}
+{% endblock %}
+{% endset %}
+
+{% set lib_deps %}
+{% block lib_deps %}
+{% endblock %}
+{% endset %}
+
+{% set run_deps %}
+{% block run_deps %}
+{% endblock %}
+{% endset %}
+
+{% set fetch %}
+{% block fetch %}
+{% endblock %}
+{% endset %}
+
+{% set script_body %}
+{% block script_body %}
+{% endblock %}
+{% endset %}
+
+{% block build_depends %}
+{{mix.list_to_json(lib_deps + ' ' + bld_deps)}}
+{% endblock %}
+
+{% block runtime_depends %}
+{{mix.list_to_json(lib_deps + ' ' + run_deps)}}
+{% endblock %}
+
+{% block build_fetch %}
+{{mix.urls_to_json(fetch)}}
+{% endblock %}
+
+{% block build_script %}
+{
+    "data": {{mix.string_to_json(script_body)}},
+    "kind": "{% block script_kind %}{% endblock %}"
+}
+{% endblock %}
