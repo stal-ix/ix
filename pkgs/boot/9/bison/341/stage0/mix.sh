@@ -5,6 +5,7 @@ set -x
 {% endblock %}
 
 {% block bison_patch %}
+sleep 1
 cp bb/parse-gram.* src/
 {% endblock %}
 

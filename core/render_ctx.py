@@ -66,8 +66,6 @@ class RenderContext:
 
     def parse_list(self, lst):
         for x in self.fix_list(lst).split(' '):
-            x = x.strip()
-
             if x:
                 yield x
 
