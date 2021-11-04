@@ -1,4 +1,5 @@
 import os
+import json
 
 import core.utils as cu
 import core.error as ce
@@ -47,6 +48,11 @@ class RenderContext:
         try:
             data = self.template(self.name)
 
+            try:
+                return json.loads(data)
+            except Exception:
+                pass
+
             if data.strip().startswith('#'):
                 return compile_sh(data)
 
@@ -73,15 +79,18 @@ class RenderContext:
     def fix_list(self, lst):
         return cononize(lst)
 
+    def parse_list(self, lst):
+        for x in cononize(lst).split(' '):
+            x = x.strip()
+
+            if x:
+                yield x
+
     def py_string_list(self, lst):
-        def it():
-            for x in cononize(lst).split(' '):
-                x = x.strip()
+        return ', '.join(f"'{x}'" for x in self.parse_list(lst))
 
-                if x:
-                    yield x
-
-        return ', '.join(f"'{x}'" for x in it())
+    def list_to_json(self, lst):
+        return json.dumps(list(self.parse_list(lst)))
 
     def parse_sh(self, sh):
         return compile_sh(sh)
