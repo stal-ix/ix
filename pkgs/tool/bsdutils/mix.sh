@@ -6,7 +6,11 @@ f3a640fd2b0939d0c17a2eb17801919c
 {% endblock %}
 
 {% block bld_deps %}
-{{'lib/linux/mix.sh lib/fts/package.sh lib/rpmatch/package.sh' | linux}}
+{% if mix.platform.target.os == 'linux' %}
+lib/linux/mix.sh
+lib/fts/mix.sh
+lib/rpmatch/mix.sh
+{% endif %}
 lib/cxx/mix.sh
 lib/xo/mix.sh
 lib/edit/mix.sh
