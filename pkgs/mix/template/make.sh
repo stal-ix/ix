@@ -10,7 +10,6 @@ prefix="${out}"
 
 {% set make_target %}
 {% block make_target %}
-all
 {% endblock %}
 {% endset %}
 

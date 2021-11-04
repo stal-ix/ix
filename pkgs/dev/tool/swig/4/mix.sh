@@ -12,9 +12,6 @@ dev/lang/bison/3.7.6/mix.sh
 env/autohell/mix.sh
 {% endblock %}
 
-{% block make_target %}
-{% endblock %}
-
 {% block coflags %}
 --with-boost=no
 {% endblock %}
