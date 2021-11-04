@@ -1,2 +1,6 @@
-# run boot/6/env/box/mix.sh
-# run env/bootstrap/mix.sh
+{% extends '//mix/template/hub.sh' %}
+
+{% block deps %}
+boot/6/env/box/mix.sh
+env/bootstrap/mix.sh
+{% endblock %}

@@ -1,14 +1,18 @@
-# run lib/dlfcn/mix.sh
-# run lib/z/mix.sh
-# run lib/xz/mix.sh
-# run lib/ffi/mix.sh
-# run lib/intl/mix.sh
-# run lib/gdbm/mix.sh
-# run lib/bzip2/mix.sh
-# run lib/iconv/mix.sh
-# run lib/expat/mix.sh
-# run lib/sqlite3/mix.sh
-# run lib/curses/any/mix.sh
-# run lib/openssl/mix.sh
-# run lib/mpdecimal/mix.sh
-# run lib/{{mix.flags.get('edit', 'edit')}}/mix.sh
+{% extends '//mix/template/hub.sh' %}
+
+{% block deps %}
+lib/dlfcn/mix.sh
+lib/z/mix.sh
+lib/xz/mix.sh
+lib/ffi/mix.sh
+lib/intl/mix.sh
+lib/gdbm/mix.sh
+lib/bzip2/mix.sh
+lib/iconv/mix.sh
+lib/expat/mix.sh
+lib/sqlite3/mix.sh
+lib/curses/any/mix.sh
+lib/openssl/mix.sh
+lib/mpdecimal/mix.sh
+lib/{{mix.flags.get('edit', 'edit')}}/mix.sh
+{% endblock %}

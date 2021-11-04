@@ -1,3 +1,7 @@
-# run env/c/mix.sh
-# run env/tools/mix.sh
-# run env/compress/mix.sh
+{% extends '//mix/template/hub.sh' %}
+
+{% block deps %}
+env/c/mix.sh
+env/tools/mix.sh
+env/compress/mix.sh
+{% endblock %}

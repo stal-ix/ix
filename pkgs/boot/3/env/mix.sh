@@ -1,3 +1,7 @@
-# run boot/3/lib/c/mix.sh
-# run boot/3/make/mix.sh
-# run boot/2/env/mix.sh
+{% extends '//mix/template/hub.sh' %}
+
+{% block deps %}
+boot/3/lib/c/mix.sh
+boot/3/make/mix.sh
+boot/2/env/mix.sh
+{% endblock %}
