@@ -1,4 +1,4 @@
-{% extends 'template.sh' %}
+{% extends 'ninja.sh' %}
 
 {% set meson_flags %}
 -Dprefix=${out}
@@ -12,12 +12,4 @@
 
 {% block configure %}
 meson {{mix.fix_list(meson_flags)}} _build
-{% endblock %}
-
-{% block build %}
-cd _build && ninja -j ${make_thrs}
-{% endblock %}
-
-{% block install %}
-cd _build && ninja install
 {% endblock %}

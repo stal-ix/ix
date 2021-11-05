@@ -1,5 +1,5 @@
 build_cmake_prepare() {
-    (rm -rf build || true) && mkdir build && cd build
+    (rm -rf _build || true) && mkdir _build && cd _build
 
     cmake \
         ${CMFLAGS}                                   \

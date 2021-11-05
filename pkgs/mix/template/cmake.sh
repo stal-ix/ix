@@ -1,4 +1,4 @@
-{% extends 'template.sh' %}
+{% extends 'ninja.sh' %}
 
 {% block configure %}
 {% set cmflags %}
@@ -13,12 +13,4 @@
 (
     build_cmake_prepare -G Ninja {{mix.fix_list(cmflags)}}
 )
-{% endblock %}
-
-{% block build %}
-cd build && ninja -j ${make_thrs} all
-{% endblock %}
-
-{% block install %}
-cd build && ninja install
 {% endblock %}
