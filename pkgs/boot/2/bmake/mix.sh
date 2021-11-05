@@ -14,7 +14,7 @@ boot/1/env/mix.sh
 cd ${out} && ${untar} ${src}/bmake* && cd bmake
 {% endblock %}
 
-{% block configure %}
+{% block cflags %}
 {% if mix.platform.target.os == 'linux' %}
 export CPPFLAGS="-Imissing -Dstrtoul=bmake_strtoul ${CPPFLAGS}"
 {% endif %}
