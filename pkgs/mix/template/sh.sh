@@ -49,10 +49,13 @@ done
 
 IFS=${OFS}
 
+(
+    set -eu
 # suc
 {% block sh_script %}
 {% endblock %}
 # euc
+)
 
 rm -rf ${out}/lib/*.so* ${out}/lib/*.la* ${out}/lib/*.dylib* || true
 rm -rf ${tmp}

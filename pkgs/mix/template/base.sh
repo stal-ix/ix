@@ -122,13 +122,11 @@ do_test() {
     step_test
 }
 
-do_execute() (
-    set -eu
-
+do_execute() {
     echo "execute ${out}"
     do_test
     echo "done ${out}"
-)
+}
 
 do_execute
 {% endblock %}
