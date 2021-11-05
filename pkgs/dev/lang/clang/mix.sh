@@ -36,8 +36,10 @@ echo > llvm/unittests/Support/DynamicLibrary/CMakeLists.txt
 -DLLVM_POLLY_LINK_INTO_TOOLS=ON
 -DLLVM_ENABLE_PIC=OFF
 -DLLVM_DYLIB_COMPONENTS=''
--DBUILD_SHARED_LIBS=OFF
-{% block cmdir %}../llvm{% endblock %}
+{% endblock %}
+
+{% block cmdir %}
+../llvm
 {% endblock %}
 
 {% block postinstall %}

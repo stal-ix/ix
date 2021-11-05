@@ -2,19 +2,16 @@
 
 {% block configure %}
 {% set cmflags %}
--DBUILD_SHARED_LIBS=OFF
 {% block cmflags %}
 {% endblock %}
-{% endset %}
 
-{% set cmdir %}
 {% block cmdir %}
 ..
 {% endblock %}
 {% endset %}
 
 (
-    build_cmake_prepare -G Ninja {{mix.fix_list(cmflags)}} {{cmdir.strip()}}
+    build_cmake_prepare -G Ninja {{mix.fix_list(cmflags)}}
 )
 {% endblock %}
 

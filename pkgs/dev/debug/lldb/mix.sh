@@ -36,6 +36,9 @@ sed -e 's|libkind SHARED|libkind STATIC|' -i lldb/cmake/modules/AddLLDB.cmake
 -DLLDB_ENABLE_LZMA=ON
 -DLLDB_ENABLE_LIBXML2=ON
 -DLLDB_ENABLE_PYTHON=ON
+{% endblock %}
+
+{% block cmdir %}
 ../llvm
 {% endblock %}
 
