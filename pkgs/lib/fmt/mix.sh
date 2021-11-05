@@ -13,7 +13,3 @@ lib/cxx/mix.sh
 dev/build/cmake/mix.sh
 env/std/mix.sh
 {% endblock %}
-
-{% block env %}
-export CMFLAGS="-Dfmt_INCLUDE_DIR=${out}/include -Dfmt_LIBRARY=${out}/lib/libfmt.a \${CMFLAGS}"
-{% endblock %}

@@ -11,7 +11,10 @@ lib/pcre/mix.sh
 lib/iconv/mix.sh
 lib/ffi/mix.sh
 lib/intl/mix.sh
-{{'sys/framework/CoreServices/mix.sh sys/framework/Foundation/package.py' | darwin}}
+{% if mix.platform.target.os == 'darwin' %}
+sys/framework/CoreServices/mix.sh
+sys/framework/Foundation/mix.sh
+{% endif %}
 {% endblock %}
 
 {% block bld_deps %}

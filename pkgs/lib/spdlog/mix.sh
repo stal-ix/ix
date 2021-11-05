@@ -13,7 +13,3 @@ lib/cxx/mix.sh
 dev/build/cmake/mix.sh
 env/std/mix.sh
 {% endblock %}
-
-{% block env %}
-export CMFLAGS="-DSPDLOG_INCLUDE_DIR=${out}/include \${CMFLAGS}"
-{% endblock %}
