@@ -1,4 +1,4 @@
-{% extends '//mix/template/template.sh' %}
+{% extends '//mix/template/make.sh' %}
 
 {% block fetch %}
 https://github.com/sabotage-linux/netbsd-curses/archive/refs/tags/v0.3.2.tar.gz
@@ -10,12 +10,16 @@ dev/build/make/mix.sh
 env/std/mix.sh
 {% endblock %}
 
-{% block build %}
-make STATIC_BINS=yes PREFIX=${out} all-static
+{% block make_flags %}
+STATIC_BINS=yes
 {% endblock %}
 
-{% block install %}
-make STATIC_BINS=yes PREFIX=${out} install-static
+{% block make_target %}
+all-static
+{% endblock %}
+
+{% block install_target %}
+install-static
 {% endblock %}
 
 {% block env %}

@@ -16,7 +16,7 @@ cd compiler-rt
 
 {% block build %}
 for x in lib/builtins/*.c; do
-    clang ${CPPFLAGS} ${CFLAGS} -c ${x}
+    clang -c ${x}
 done
 
 ar q libcompiler_rt.a *.o

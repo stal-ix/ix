@@ -19,5 +19,5 @@ make -j ${make_thrs} {{real_flags}} || make {{real_flags}}
 {% endblock %}
 
 {% block install %}
-make {{real_flags}} install
+make {{real_flags}} {% block install_target %}install{% endblock %}
 {% endblock %}

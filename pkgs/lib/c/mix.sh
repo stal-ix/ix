@@ -1,5 +1,8 @@
 {% extends '//mix/template/hub.sh' %}
 
 {% block deps %}
-{{'lib/musl/mix.sh lib/mimalloc/mix.sh' | linux}}
+{% if mix.platform.target.os == 'linux' %}
+lib/musl/mix.sh
+lib/mimalloc/mix.sh
+{% endif %}
 {% endblock %}
