@@ -29,11 +29,15 @@ echo 'patch step'
 {% endblock %}
 )
 
-step_configure() {
-echo 'configure stage'
+step_setup() {
+echo 'setup stage'
 
 {% block cflags %}
 {% endblock %}
+}
+
+step_configure() {
+echo 'configure stage'
 
 {% block preconf %}
 {% endblock %}
@@ -102,8 +106,13 @@ do_patch() {
     step_patch
 }
 
-do_configure() {
+do_setup() {
     do_patch
+    step_setup
+}
+
+do_configure() {
+    do_setup
     step_configure
 }
 
