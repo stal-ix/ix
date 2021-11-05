@@ -27,7 +27,3 @@ export CXXFLAGS="-w ${CXXFLAGS}"
 -Dmessage-loader=inmemory
 -Dmutex-manager=standard
 {% endblock %}
-
-{% block env %}
-export CMFLAGS="-DXERCESC_INCLUDE_DIR=${out}/include \${CMFLAGS}"
-{% endblock %}

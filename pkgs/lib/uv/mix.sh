@@ -17,5 +17,5 @@ dash ./autogen.sh
 {% endblock %}
 
 {% block env %}
-export CMFLAGS="-DCMAKE_USE_SYSTEM_LIBUV=ON -DLibUV_LIBRARY=${out}/lib/libuv.a -DLibUV_INCLUDE_DIR=${out}/include \${CMFLAGS}"
+export CMFLAGS="-DCMAKE_USE_SYSTEM_LIBUV=ON \${CMFLAGS}"
 {% endblock %}
