@@ -12,7 +12,5 @@ env/std/0/mix.sh
 {% endblock %}
 
 {% block env %}
-export LIBFFI_CFLAGS="-I${out}/include"
-export LIBFFI_LIBS="-L${out}/lib -lffi"
 export COFLAGS="--with-system-ffi=${out} \${COFLAGS}"
 {% endblock %}

@@ -15,5 +15,5 @@ env/std/0/mix.sh
 
 {% block env %}
 export COFLAGS="--with-expat=${out} --with-libexpat-prefix=${out} \${COFLAGS}"
-export CMFLAGS="-DCMAKE_USE_SYSTEM_EXPAT=ON -DEXPAT_LIBRARY=${out}/lib/libexpat.a -DEXPAT_INCLUDE_DIR=${out}/include \${CMFLAGS}"
+export CMFLAGS="-DCMAKE_USE_SYSTEM_EXPAT=ON \${CMFLAGS}"
 {% endblock %}
