@@ -14,7 +14,9 @@ echo 'unpack step'
 {% endblock %}
 }
 
-step_patch() {
+step_patch() (
+set -eu
+
 echo 'patch step'
 
 {% block prepatch %}
@@ -25,7 +27,7 @@ echo 'patch step'
 
 {% block postpatch %}
 {% endblock %}
-}
+)
 
 step_configure() {
 echo 'configure stage'
@@ -43,7 +45,9 @@ echo 'configure stage'
 {% endblock %}
 }
 
-step_build() {
+step_build() (
+set -eu
+
 echo 'build stage'
 
 {% block prebuild %}
@@ -54,9 +58,11 @@ echo 'build stage'
 
 {% block postbuild %}
 {% endblock %}
-}
+)
 
-step_test() {
+step_test() (
+set -eu
+
 echo 'test stage'
 
 {% block pretest %}
@@ -67,9 +73,11 @@ echo 'test stage'
 
 {% block posttest %}
 {% endblock %}
-}
+)
 
-step_install() {
+step_install() (
+set -eu
+
 echo 'install stage'
 
 {% block preinstall %}
@@ -83,7 +91,7 @@ echo 'install stage'
 
 {% block prepare_env %}
 {% endblock %}
-}
+)
 
 do_unpack() {
     step_unpack
@@ -91,11 +99,7 @@ do_unpack() {
 
 do_patch() {
     do_unpack
-
-    (
-        set -eu
-        step_patch
-    )
+    step_patch
 }
 
 do_configure() {
@@ -105,40 +109,26 @@ do_configure() {
 
 do_build() {
     do_configure
-
-    (
-        set -eu
-        step_build
-    )
+    step_build
 }
 
 do_install() {
     do_build
-
-    (
-        set -eu
-        step_install
-    )
+    step_install
 }
 
 do_test() {
     do_install
-
-    (
-        set -eu
-        step_test
-    )
+    step_test
 }
 
-do_execute() {
+do_execute() (
+    set -eu
+
     echo "execute ${out}"
     do_test
     echo "done ${out}"
-}
-
-(
-    set -eu
-
-    do_execute
 )
+
+do_execute
 {% endblock %}

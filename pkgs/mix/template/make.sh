@@ -4,19 +4,20 @@
 SHELL="$(command -v dash)"
 PREFIX="${out}"
 prefix="${out}"
+
 {% block make_flags %}
 {% endblock %}
-{% endset %}
 
-{% set make_target %}
 {% block make_target %}
 {% endblock %}
 {% endset %}
 
+{% set real_flags %}{{mix.fix_list(make_flags)}}{% endset %}
+
 {% block build %}
-make {{mix.fix_list(make_flags)}} -j ${make_thrs} {{make_target.strip()}} || make {{mix.fix_list(make_flags)}} {{make_target.strip()}}
+make -j ${make_thrs} {{real_flags}} || make {{real_flags}}
 {% endblock %}
 
 {% block install %}
-make {{mix.fix_list(make_flags)}} install
+make {{real_flags}} install
 {% endblock %}
