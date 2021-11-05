@@ -23,7 +23,7 @@ ln -s ${lib_ncurses}/lib/libncurses.a libcurses.a
 export LDFLAGS="-L${PWD} ${LDFLAGS}"
 {% endblock %}
 
-{% block cflags %}
+{% block setup %}
 export CPPFLAGS="-D__APPLE_SANDBOX_NAMED_EXTERNAL__ ${CPPFLAGS}"
 {% endblock %}
 

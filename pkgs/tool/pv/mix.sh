@@ -10,7 +10,7 @@ ff3564fddcc2b9bd4a9c1d143aba4b4c
 env/std/0/mix.sh
 {% endblock %}
 
-{% block cflags %}
+{% block setup %}
 {% if mix.platform.target.os == 'darwin' %}
 export CPPFLAGS="-Dstat64=stat -Dfstat64=fstat -Dlstat64=lstat ${CPPFLAGS}"
 {% endif %}

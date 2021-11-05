@@ -13,7 +13,7 @@ lib/curses/any/mix.sh
 env/autohell/mix.sh
 {% endblock %}
 
-{% block cflags %}
+{% block setup %}
 export CPPFLAGS="-D__STDC_ISO_10646__=1 ${CPPFLAGS}"
 {% endblock %}
 

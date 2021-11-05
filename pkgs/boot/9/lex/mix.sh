@@ -14,7 +14,7 @@ boot/8/env/std/mix.sh
 cd heirloom-devtools/lex
 {% endblock %}
 
-{% block cflags %}
+{% block setup %}
 export ROOT=
 export CPPFLAGS="-Dgetopt=h_getopt -Doptarg=h_optarg -Doptind=h_optind -Doptopt=h_optopt -Dopterr=h_opterr ${CPPFLAGS}"
 export CFLAGS="-w ${CFLAGS}"

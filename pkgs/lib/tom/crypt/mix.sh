@@ -14,6 +14,6 @@ dev/build/make/mix.sh
 env/std/mix.sh
 {% endblock %}
 
-{% block cflags %}
+{% block setup %}
 export CFLAGS="-DUSE_LTM -DLTM_DESC ${CFLAGS}"
 {% endblock %}

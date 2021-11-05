@@ -15,7 +15,7 @@ dev/lang/perl5/mix.sh
 env/std/mix.sh
 {% endblock %}
 
-{% block cflags %}
+{% block setup %}
 export CFLAGS="-w ${CFLAGS}"
 {% endblock %}
 

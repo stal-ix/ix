@@ -11,7 +11,7 @@ lib/iconv/mix.sh
 env/std/0/mix.sh
 {% endblock %}
 
-{% block cflags %}
+{% block setup %}
 export CPPFLAGS="-I./glob ${CPPFLAGS}"
 
 {% if mix.platform.target.os == 'darwin' %}

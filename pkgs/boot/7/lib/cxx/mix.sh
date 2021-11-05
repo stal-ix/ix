@@ -13,7 +13,7 @@ boot/7/lib/cxx/rt/mix.sh
 boot/6/env/std/mix.sh
 {% endblock %}
 
-{% block cflags %}
+{% block setup %}
 export CPPFLAGS="-w -D_LIBCPP_BUILDING_LIBRARY -D_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER -iquote src -Iinclude -DLIBCXXRT -std=c++14 ${CPPFLAGS}"
 {% endblock %}
 

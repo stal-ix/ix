@@ -13,7 +13,7 @@ env/std/0/mix.sh
 boot/final/env/bison/mix.sh
 {% endblock %}
 
-{% block cflags %}
+{% block setup %}
 export CPPFLAGS="-Derr=gawk_err -Dxmalloc=gawk_xmalloc -Dxrealloc=Dgawk_xrealloc -Dregcomp=gawk_regcomp -Dregfree=gawk_regfree ${CPPFLAGS}"
 {% endblock %}
 

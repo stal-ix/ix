@@ -10,7 +10,7 @@ lib/readline/mix.sh
 env/autohell/mix.sh
 {% endblock %}
 
-{% block cflags %}
+{% block setup %}
 export CPPFLAGS="-DSQLITE_OMIT_LOAD_EXTENSION=1 ${CPPFLAGS}"
 {% endblock %}
 

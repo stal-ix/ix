@@ -11,7 +11,7 @@ lib/edit/mix.sh
 env/autohell/mix.sh
 {% endblock %}
 
-{% block cflags %}
+{% block setup %}
 export CPPFLAGS="-Dwordfree=yash_wordfree -Dadd_history=yash_add_history ${CPPFLAGS}"
 {% endblock %}
 

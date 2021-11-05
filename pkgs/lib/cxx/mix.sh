@@ -9,7 +9,7 @@ env/std/0/mix.sh
 {% include '//mix/template/fetch_llvm.sh' %}
 {% endblock %}
 
-{% block cflags %}
+{% block setup %}
 export CPPFLAGS="-I${out}/include/c++/v1 ${CPPFLAGS}"
 {% endblock %}
 

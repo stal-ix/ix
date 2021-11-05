@@ -18,7 +18,7 @@ env/system/mix.sh
 {% include '//mix/template/fetch_llvm.sh' %}
 {% endblock %}
 
-{% block cflags %}
+{% block setup %}
 {% if mix.platform.target.os == 'darwin' %}
 export LDFLAGS="-Wl,-w ${LDFLAGS}"
 {% endif %}

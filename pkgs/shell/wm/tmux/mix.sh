@@ -16,7 +16,7 @@ dev/lang/byacc/mix.sh
 env/autohell/mix.sh
 {% endblock %}
 
-{% block cflags %}
+{% block setup %}
 export COFLAGS=$(echo ${COFLAGS} | tr ' ' '\n' | grep -v 'static' | tr '\n' ' ')
 {% endblock %}
 

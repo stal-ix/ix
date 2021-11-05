@@ -29,7 +29,7 @@ cat << EOF > sys/cdefs.h
 EOF
 {% endblock %}
 
-{% block cflags %}
+{% block setup %}
 export CPPFLAGS="-I${PWD} ${CPPFLAGS}"
 export ac_cv_c99=yes
 {% endblock %}

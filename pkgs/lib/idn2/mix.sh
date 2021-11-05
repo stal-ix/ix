@@ -16,7 +16,7 @@ dev/build/automake/1.16.1/mix.sh
 env/autohell/mix.sh
 {% endblock %}
 
-{% block cflags %}
+{% block setup %}
 export CPPFLAGS="-Derror=idna2_error ${CPPFLAGS}"
 {% endblock %}
 

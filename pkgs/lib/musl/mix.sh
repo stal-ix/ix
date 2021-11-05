@@ -5,7 +5,7 @@ env/c/nort/mix.sh
 boot/final/env/tools/mix.sh
 {% endblock %}
 
-{% block cflags %}
+{% block setup %}
 export CPPFLAGS="-D__libc_realloc=realloc -D__libc_free=free -D__libc_malloc=malloc -D__libc_calloc=calloc ${CPPFLAGS}"
 {% endblock %}
 

@@ -15,7 +15,7 @@ shell/cli/bash/minimal/mix.sh
 env/std/mix.sh
 {% endblock %}
 
-{% block cflags %}
+{% block setup %}
 # too much warnings with clang
 export CPPFLAGS="-w ${CPPFLAGS}"
 {% endblock %}

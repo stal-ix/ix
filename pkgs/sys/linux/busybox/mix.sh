@@ -14,7 +14,7 @@ env/std/0/mix.sh
 rm strip
 {% endblock %}
 
-{% block cflags %}
+{% block setup %}
 export CFLAGS="-w ${CFLAGS}"
 {% endblock %}
 

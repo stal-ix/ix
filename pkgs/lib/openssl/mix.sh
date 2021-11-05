@@ -12,7 +12,7 @@ dev/lang/perl5/mix.sh
 env/std/mix.sh
 {% endblock %}
 
-{% block cflags %}
+{% block setup %}
 export AR=ar
 export RANLIB=ranlib
 {% endblock %}

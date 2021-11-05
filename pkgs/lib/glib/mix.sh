@@ -20,7 +20,7 @@ env/std/mix.sh
 boot/final/env/tools/mix.sh
 {% endblock %}
 
-{% block cflags %}
+{% block setup %}
 gcc -c -o main.o -x c - << EOF
 
 int main() {}

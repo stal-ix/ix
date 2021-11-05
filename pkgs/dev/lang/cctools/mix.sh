@@ -14,7 +14,7 @@ env/std/0/mix.sh
 cd cctools
 {% endblock %}
 
-{% block cflags %}
+{% block setup %}
 export CPPFLAGS="-D__crashreporter_info__=__crashreporter_info_ld__ ${CPPFLAGS}"
 {% endblock %}
 

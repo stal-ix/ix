@@ -12,7 +12,7 @@ lib/iconv/mix.sh
 env/autohell/mix.sh
 {% endblock %}
 
-{% block cflags %}
+{% block setup %}
 {% if mix.platform.target.os == 'darwin' %}
 export CPPFLAGS="-Dstat64=stat ${CPPFLAGS}"
 {% endif %}

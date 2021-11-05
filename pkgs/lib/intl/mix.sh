@@ -18,7 +18,7 @@ env/std/0/mix.sh
 cd gettext-runtime
 {% endblock %}
 
-{% block cflags %}
+{% block setup %}
 export CPPFLAGS="-Dlocale_charset=intl_locale_charset ${CPPFLAGS}"
 {% endblock %}
 

@@ -15,7 +15,7 @@ EOF
 chmod +x makeinfo
 {% endblock %}
 
-{% block cflags %}
+{% block setup %}
 export CPPFLAGS="-I${PWD}/lib ${CPPFLAGS}"
 export PATH="${PWD}/src:${PATH}"
 {% endblock %}

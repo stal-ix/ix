@@ -13,6 +13,6 @@ for path in Modules/_sqlite/*; do
 done
 {% endblock %}
 
-{% block cflags %}
+{% block setup %}
 export COFLAGS=$(echo "${COFLAGS}" | tr ' ' '\n' | grep -v 'with-system-ffi' | tr '\n' ' ')
 {% endblock %}

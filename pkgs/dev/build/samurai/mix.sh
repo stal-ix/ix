@@ -10,7 +10,7 @@ dev/build/make/mix.sh
 env/std/mix.sh
 {% endblock %}
 
-{% block cflags %}
+{% block setup %}
 export CPPFLAGS="-Dwarn=samu_warn ${CPPFLAGS}"
 {% endblock %}
 

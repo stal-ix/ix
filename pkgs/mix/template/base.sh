@@ -32,7 +32,7 @@ echo 'patch step'
 step_setup() {
 echo 'setup stage'
 
-{% block cflags %}
+{% block setup %}
 {% endblock %}
 }
 

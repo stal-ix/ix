@@ -12,7 +12,7 @@ env/std/mix.sh
 cd src
 {% endblock %}
 
-{% block cflags %}
+{% block setup %}
 export GOROOT_FINAL="${out}"
 {% block go_cflags %}
 {% endblock %}

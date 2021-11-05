@@ -30,7 +30,7 @@ env/std/mix.sh
 cp ${src}/rustc* ./
 {% endblock %}
 
-{% block cflags %}
+{% block setup %}
 echo > empty.c
 gcc -c empty.c -o empty.o
 ar q librt.a empty.o

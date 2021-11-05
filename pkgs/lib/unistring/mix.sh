@@ -13,7 +13,7 @@ lib/iconv/mix.sh
 env/std/0/mix.sh
 {% endblock %}
 
-{% block cflags %}
+{% block setup %}
 export CPPFLAGS="-Dlocale_charset=unistring_locale_charset ${CPPFLAGS}"
 {% endblock %}
 

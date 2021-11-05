@@ -9,7 +9,7 @@ https://github.com/pg83/sbase/archive/2c2a7f54ab55a022a617e510b6e00c3e2736fabd.z
 env/std/0/mix.sh
 {% endblock %}
 
-{% block cflags %}
+{% block setup %}
 export CPPFLAGS="-Dreallocarray=sbase_reallocarray ${CPPFLAGS}"
 
 {% if mix.platform.target.os == 'darwin' %}

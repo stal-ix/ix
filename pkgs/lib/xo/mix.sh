@@ -18,7 +18,7 @@ env/autohell/mix.sh
 dash ./bin/setup.sh
 {% endblock %}
 
-{% block cflags %}
+{% block setup %}
 export CPPFLAGS="-I${lib_bsd}/include/bsd -DLIBBSD_OVERLAY=1 ${CPPFLAGS}"
 {% endblock %}
 

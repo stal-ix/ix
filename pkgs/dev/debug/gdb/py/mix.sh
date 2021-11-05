@@ -12,7 +12,7 @@ dev/lang/python/3/10/lib/mix.sh
 pypi/pygments/mix.sh
 {% endblock %}
 
-{% block cflags %}
+{% block setup %}
 export PYTHONPATH="${PWD}/gdb/python/lib:${PYTHONPATH}"
 {% endblock %}
 

@@ -8,7 +8,7 @@
 boot/6/env/std/mix.sh
 {% endblock %}
 
-{% block cflags %}
+{% block setup %}
 export CPPFLAGS="-I./src -I./include -D_LIBUNWIND_HAS_COMMENT_LIB_PRAGMA -funwind-tables -D_DEBUG -D_LIBUNWIND_IS_NATIVE_ONLY ${CPPFLAGS}"
 export CXXFLAGS="-std=c++11 -fstrict-aliasing -fno-exceptions -fno-rtti ${CXXFLAGS}"
 export CFLAGS="-std=c99 ${CFLAGS}"

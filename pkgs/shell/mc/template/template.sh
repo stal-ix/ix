@@ -27,7 +27,7 @@ tool/compress/zip/mix.sh
 {% endblock %}
 {% endblock %}
 
-{% block cflags %}
+{% block setup %}
 export CPPFLAGS="-Dupdate_panels=update_panels_mc -Dtilde_expand=tilde_expand_mc ${CPPFLAGS}"
 {% endblock %}
 
