@@ -10,6 +10,7 @@ dev/lang/python/3/10/lib/mix.sh
 
 {% block bld_deps %}
 pypi/pygments/mix.sh
+env/std/mix.sh
 {% endblock %}
 
 {% block setup %}

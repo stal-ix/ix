@@ -6,6 +6,7 @@ http://www.mirbsd.org/MirOS/dist/mir/mksh/mksh-R59c.tgz
 {% endblock %}
 
 {% block bld_deps %}
+dev/doc/groff/mix.sh
 env/std/mix.sh
 {% endblock %}
 

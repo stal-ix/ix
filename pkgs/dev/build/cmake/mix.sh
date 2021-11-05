@@ -20,12 +20,12 @@ lib/curl/mix.sh
 lib/bzip2/mix.sh
 lib/expat/mix.sh
 lib/archive/mix.sh
+lib/curses/any/mix.sh
 env/std/mix.sh
 boot/final/env/tools/mix.sh
 {% endblock %}
 
 {% block cmflags %}
--Dfortran=OFF
 -DBUILD_TESTING=OFF
 -DCMAKE_USE_SYSTEM_CURL=ON
 -DCMAKE_USE_SYSTEM_BZIP2=ON

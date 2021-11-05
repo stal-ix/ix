@@ -38,8 +38,4 @@ perl ./Configure \
 
 {% block env %}
 export COFLAGS="--with-ssl=${out} --with-openssl=${out} --with-openssldir=${out} --with-ssl-dir=$out \${COFLAGS}"
-export OPENSSL_INCLUDES="-I${out}/include"
-export OPENSSL_LIBS="-L${out}/lib -lssl -lcrypto"
-export OPENSSL_DIR="${out}"
-export CMFLAGS="-DOPENSSL_ROOT_DIR=${out} -DOPENSSL_INCLUDE_DIR=${out}/include \${CMFLAGS}"
 {% endblock %}
