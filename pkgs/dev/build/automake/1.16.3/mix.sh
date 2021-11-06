@@ -6,11 +6,11 @@ c27f608a4e1f302ec7ce42f1251c184e
 {% endblock %}
 
 {% block lib_deps %}
-dev/build/autoconf/2.71/mix.sh
 dev/lang/perl5/mix.sh
 {% endblock %}
 
 {% block bld_deps %}
+dev/build/autoconf/2.71/mix.sh
 env/autohell/mix.sh
 {% endblock %}
 

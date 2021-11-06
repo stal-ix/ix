@@ -6,6 +6,7 @@ d990b0770dd2b15f7a8399580d55d32c
 {% endblock %}
 
 {% block bld_deps %}
+dev/build/autoconf/2.71/mix.sh
 dev/build/automake/1.16.3/mix.sh
 env/autohell/mix.sh
 {% endblock %}

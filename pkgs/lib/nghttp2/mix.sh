@@ -15,6 +15,7 @@ lib/openssl/mix.sh
 lib/cxx/mix.sh
 lib/xml2/mix.sh
 lib/jansson/mix.sh
+dev/build/autoconf/2.71/mix.sh
 dev/build/automake/1.16.3/mix.sh
 env/autohell/mix.sh
 {% endblock %}

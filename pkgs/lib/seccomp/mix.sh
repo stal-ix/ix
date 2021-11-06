@@ -8,6 +8,7 @@ https://github.com/seccomp/libseccomp/archive/refs/tags/v2.5.2.tar.gz
 {% block bld_deps %}
 lib/linux/mix.sh
 dev/tool/gperf/mix.sh
+dev/build/autoconf/2.71/mix.sh
 dev/build/automake/1.16.3/mix.sh
 env/autohell/mix.sh
 {% endblock %}
