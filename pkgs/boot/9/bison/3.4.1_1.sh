@@ -1,4 +1,4 @@
-{% extends '//boot/9/bison/341/template.sh' %}
+{% extends '//boot/9/bison/3.4.1_t.sh' %}
 
 {% block bison %}
 boot/9/bison/3.4.1_0.sh
