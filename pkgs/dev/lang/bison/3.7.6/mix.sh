@@ -16,5 +16,7 @@ dev/lang/perl5/mix.sh
 dev/build/help2man/mix.sh
 dev/doc/texinfo/mix.sh
 env/autohell/mix.sh
+{% block bison_bootstrap %}
 boot/final/env/bison/mix.sh
+{% endblock %}
 {% endblock %}
