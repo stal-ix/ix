@@ -1,4 +1,4 @@
-{% extends '//mix/template/template.sh' %}
+{% extends '//mix/template/cmake.sh' %}
 
 {% block bld_deps %}
 {{'lib/linux/mix.sh' | linux}}
@@ -9,19 +9,38 @@ env/std/0/mix.sh
 {% include '//mix/template/fetch_llvm.sh' %}
 {% endblock %}
 
-{% block setup %}
-export CPPFLAGS="-I${out}/include/c++/v1 ${CPPFLAGS}"
+{% block cmflags %}
+-DLIBCXXABI_ENABLE_SHARED=NO
+-DLIBCXXABI_ENABLE_STATIC=YES
+
+-DLIBUNWIND_ENABLE_SHARED=NO
+-DLIBUNWIND_ENABLE_STATIC=YES
+
+-DLIBCXX_ENABLE_SHARED=NO
+-DLIBCXX_ENABLE_STATIC=YES
+-DLIBCXX_CXX_ABI=libcxxabi
+-DLIBCXX_USE_COMPILER_RT=yes
+{% if mix.platform.target.os == 'linux' %}
+-DLIBCXX_HAS_MUSL_LIBC=yes
+{% endif %}
+
+-DLLVM_ENABLE_RUNTIMES="libcxx;libcxxabi;libunwind"
 {% endblock %}
 
-{% block build %}
-build_cmake_ninja -DLIBUNWIND_ENABLE_SHARED=NO -DLIBUNWIND_ENABLE_STATIC=YES ../libunwind
-export LIBS="${out}/lib/libunwind.a"
+{% block cmdir %}
+../runtimes
+{% endblock %}
 
-build_cmake_ninja -DLIBCXX_ENABLE_SHARED=NO -DLIBCXX_ENABLE_STATIC=YES -DLIBCXX_CXX_ABI=libcxxabi -DLIBCXX_USE_COMPILER_RT=yes {{'-DLIBCXX_HAS_MUSL_LIBC=yes' | linux}} ../libcxx
-export LIBS="${out}/lib/libc++.a ${LIBS}"
+{% block ninja_targets %}
+cxx
+cxxabi
+unwind
+{% endblock %}
 
-build_cmake_ninja -DLIBCXXABI_ENABLE_SHARED=NO -DLIBCXXABI_ENABLE_STATIC=YES -DLIBCXXABI_LIBCXX_INCLUDES="${out}/include/c++/v1" ../libcxxabi
-export LIBS="${out}/lib/libc++abi.a ${LIBS}"
+{% block ninja_install_targets %}
+install-cxx
+install-cxxabi
+install-unwind
 {% endblock %}
 
 {% block env %}
