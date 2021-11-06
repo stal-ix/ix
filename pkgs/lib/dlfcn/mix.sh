@@ -15,5 +15,5 @@ env/std/mix.sh
 {% endblock %}
 
 {% block postinstall %}
-mv $out/lib/libdl.a $out/lib/libdlstub.a
+mv ${out}/lib/libdl.a ${out}/lib/libdlstub.a
 {% endblock %}

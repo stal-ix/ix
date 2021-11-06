@@ -1,8 +1,8 @@
 {% extends '//mix/template/autohell.sh' %}
 
 {% block fetch %}
-https://github.com/libevent/libevent/releases/download/release-2.1.12-stable/libevent-2.1.12-stable.tar.gz
-b5333f021f880fe76490d8a799cd79f4
+https://github.com/libevent/libevent/archive/refs/tags/release-2.1.12-stable.tar.gz
+0d5a27436bf7ff8253420c8cf09f47ca
 {% endblock %}
 
 {% block lib_deps %}
@@ -10,8 +10,14 @@ lib/openssl/mix.sh
 {% endblock %}
 
 {% block bld_deps %}
+dev/build/autoconf/2.69/mix.sh
+dev/build/automake/1.16.3/mix.sh
 dev/lang/python/3/minimal/mix.sh
 env/autohell/mix.sh
+{% endblock %}
+
+{% block autoreconf %}
+dash ./autogen.sh
 {% endblock %}
 
 {% block toolconf %}

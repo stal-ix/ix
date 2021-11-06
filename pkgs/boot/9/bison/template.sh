@@ -25,7 +25,3 @@ EOF
 
 chmod +x help2man
 {% endblock %}
-
-{% block build %}
-make
-{% endblock %}
