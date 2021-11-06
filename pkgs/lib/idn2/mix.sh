@@ -12,6 +12,7 @@ lib/unistring/mix.sh
 {% endblock %}
 
 {% block bld_deps %}
+dev/build/autoconf/2.69/mix.sh
 dev/build/automake/1.16.1/mix.sh
 env/autohell/mix.sh
 {% endblock %}
@@ -20,7 +21,7 @@ env/autohell/mix.sh
 export CPPFLAGS="-Derror=idna2_error ${CPPFLAGS}"
 {% endblock %}
 
-{% block prebuild %}
+{% block autoreconf %}
 automake --add-missing
 {% endblock %}
 
