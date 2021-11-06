@@ -1,8 +1,8 @@
 {% extends '//mix/template/autohell.sh' %}
 
 {% block fetch %}
-https://github.com/nghttp2/nghttp2/releases/download/v1.43.0/nghttp2-1.43.0.tar.xz
-c1d607bf3830000acd7a51f0058f4bd2
+https://github.com/nghttp2/nghttp2/archive/refs/tags/v1.46.0.tar.gz
+77c54df8072bb387b39cffb194e2c818
 {% endblock %}
 
 {% block lib_deps %}
@@ -12,7 +12,14 @@ lib/openssl/mix.sh
 {% endblock %}
 
 {% block bld_deps %}
+lib/xml2/mix.sh
+lib/jansson/mix.sh
+dev/build/automake/1.16.3/mix.sh
 env/autohell/mix.sh
+{% endblock %}
+
+{% block autoreconf %}
+autoreconf -i
 {% endblock %}
 
 {% block coflags %}
