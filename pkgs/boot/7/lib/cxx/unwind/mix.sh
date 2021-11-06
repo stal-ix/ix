@@ -9,7 +9,7 @@ boot/6/env/std/mix.sh
 {% endblock %}
 
 {% block setup %}
-export CPPFLAGS="-I./src -I./include -D_LIBUNWIND_HAS_COMMENT_LIB_PRAGMA -funwind-tables -D_DEBUG -D_LIBUNWIND_IS_NATIVE_ONLY ${CPPFLAGS}"
+export CPPFLAGS="-Isrc -Iinclude -D_LIBUNWIND_HAS_COMMENT_LIB_PRAGMA -funwind-tables -D_DEBUG -D_LIBUNWIND_IS_NATIVE_ONLY ${CPPFLAGS}"
 export CXXFLAGS="-std=c++11 -fstrict-aliasing -fno-exceptions -fno-rtti ${CXXFLAGS}"
 export CFLAGS="-std=c99 ${CFLAGS}"
 {% endblock %}
@@ -20,11 +20,11 @@ cd libunwind
 
 {% block build %}
 for s in src/*.cpp; do
-    g++ -c $s
+    g++ -c ${s}
 done
 
 for s in src/*.c src/*.S; do
-    gcc -c $s
+    gcc -c ${s}
 done
 
 ar q libunwind.a *.o

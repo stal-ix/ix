@@ -15,6 +15,5 @@ export CPPFLAGS="-DSQLITE_OMIT_LOAD_EXTENSION=1 ${CPPFLAGS}"
 {% endblock %}
 
 {% block env %}
-export SQLITE3_ROOT="${out}"
 export COFLAGS="--with-sqlite3=${out} \${COFLAGS}"
 {% endblock %}

@@ -23,7 +23,6 @@ dash ./bootstrap \
     --parallel=${make_thrs} \
     --                      \
     -DCMAKE_USE_OPENSSL=OFF \
-    -Dfortran=OFF           \
     -DBUILD_TESTING=OFF
 
 make -j ${make_thrs}

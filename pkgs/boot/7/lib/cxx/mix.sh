@@ -36,8 +36,8 @@ EOF
 
 {% block build %}
 for s in src/*.cpp src/filesystem/*.cpp; do
-    out=$(echo $s | tr '/' '_' | tr -d '\n').o
-    clang++ -c $s -o ${out}
+    out=$(echo ${s} | tr '/' '_' | tr -d '\n').o
+    clang++ -c ${s} -o ${out}
 done
 
 ar q libc++.a *.o
