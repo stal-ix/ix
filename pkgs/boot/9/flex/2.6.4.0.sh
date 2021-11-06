@@ -6,7 +6,7 @@ boot/9/m4/mix.sh
 
 {% block bld_deps %}
 {% block boot_flex %}
-boot/9/flex/2510/1/mix.sh
+boot/9/flex/2.5.10.1.sh
 boot/4/byacc/mix.sh
 {% endblock %}
 boot/8/env/std/mix.sh
