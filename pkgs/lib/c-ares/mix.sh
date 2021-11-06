@@ -1,16 +1,18 @@
-{% extends '//mix/template/autohell.sh' %}
+{% extends '//mix/template/cmake.sh' %}
 
 {% block fetch %}
-https://c-ares.haxx.se/download/c-ares-1.17.2.tar.gz
-3802264830c6886411dac606c66fdbf8
+https://github.com/c-ares/c-ares/archive/refs/tags/cares-1_18_1.tar.gz
+a0ec0dd35fd6c06544333d250e21ab22
 {% endblock %}
 
 {% block bld_deps %}
-env/autohell/mix.sh
+env/std/mix.sh
+boot/final/env/tools/mix.sh
 {% endblock %}
 
-{% block coflags %}
---disable-tests
+{% block cmflags %}
+-DCARES_STATIC=ON
+-DCARES_SHARED=OFF
 {% endblock %}
 
 {% block env %}
