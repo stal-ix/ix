@@ -6,5 +6,5 @@ https://ftp.gnu.org/gnu/coreutils/coreutils-8.32.tar.xz
 {% endblock %}
 
 {% block coreutils_deps_extra %}
-boot/9/bison/341/stage2/mix.sh
+boot/9/bison/./3.4.1_2.sh
 {% endblock %}

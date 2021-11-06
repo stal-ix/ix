@@ -1,7 +1,7 @@
 {% extends '//boot/9/bison/341/template.sh' %}
 
 {% block bison %}
-boot/9/bison/341/stage0/mix.sh
+boot/9/bison/./3.4.1_0.sh
 {% endblock %}
 
 {% block bison_patch %}

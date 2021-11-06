@@ -6,7 +6,7 @@ https://ftp.gnu.org/gnu/bison/bison-3.5.1.tar.xz
 {% endblock %}
 
 {% block bison %}
-boot/9/bison/341/stage2/mix.sh
+boot/9/bison/./3.4.1_2.sh
 {% endblock %}
 
 {% block bison_patch %}
