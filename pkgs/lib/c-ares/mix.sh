@@ -6,8 +6,7 @@ a0ec0dd35fd6c06544333d250e21ab22
 {% endblock %}
 
 {% block bld_deps %}
-env/std/mix.sh
-boot/final/env/tools/mix.sh
+env/std/0/mix.sh
 {% endblock %}
 
 {% block cmflags %}
