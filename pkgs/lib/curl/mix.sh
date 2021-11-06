@@ -1,8 +1,8 @@
 {% extends '//mix/template/autohell.sh' %}
 
 {% block fetch %}
-https://github.com/curl/curl/releases/download/curl-7_79_1/curl-7.79.1.tar.xz
-74d3c4ca8aaa6c0619806d6e246e65fb
+https://github.com/curl/curl/archive/refs/tags/curl-7_79_1.tar.gz
+7a6ac0611e8fc77aa8b49d6b4bbdbbdc
 {% endblock %}
 
 {% block lib_deps %}
@@ -18,7 +18,12 @@ lib/openssl/mix.sh
 
 {% block bld_deps %}
 dev/doc/groff/mix.sh
+dev/build/automake/1.16.3/mix.sh
 env/autohell/mix.sh
+{% endblock %}
+
+{% block autoreconf %}
+autoreconf -fi
 {% endblock %}
 
 {% block coflags %}
