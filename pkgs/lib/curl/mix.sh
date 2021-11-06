@@ -24,7 +24,3 @@ env/autohell/mix.sh
 {% block coflags %}
 --enable-manual
 {% endblock %}
-
-{% block env %}
-export CMFLAGS="-DCURL_LIBRARY=${out}/lib/libcurl.a -DCURL_INCLUDE_DIR=${out}/include \${CMFLAGS}"
-{% endblock %}
