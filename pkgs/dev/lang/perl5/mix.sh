@@ -10,9 +10,8 @@ lib/z/mix.sh
 lib/dlfcn/mix.sh
 lib/gdbm/mix.sh
 lib/iconv/mix.sh
-dev/build/make/mix.sh
 shell/cli/bash/minimal/mix.sh
-env/std/mix.sh
+env/std/0/mix.sh
 {% endblock %}
 
 {% block setup %}

@@ -9,7 +9,7 @@ https://ftp.gnu.org/gnu/m4/m4-1.4.19.tar.xz
 lib/intl/mix.sh
 lib/sigsegv/mix.sh
 dev/build/help2man/mix.sh
-env/autohell/mix.sh
+env/std/0/mix.sh
 {% endblock %}
 
 {% block coflags %}

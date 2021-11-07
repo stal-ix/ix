@@ -10,7 +10,7 @@ lib/curses/any/mix.sh
 {% endblock %}
 
 {% block bld_deps %}
-env/autohell/mix.sh
+env/std/0/mix.sh
 {% endblock %}
 
 {% block setup %}

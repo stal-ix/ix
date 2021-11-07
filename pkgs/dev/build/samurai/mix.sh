@@ -6,8 +6,7 @@ https://github.com/michaelforney/samurai/archive/edeec43d638c826d9e446917f97e951
 {% endblock %}
 
 {% block bld_deps %}
-dev/build/make/mix.sh
-env/std/mix.sh
+env/std/0/mix.sh
 {% endblock %}
 
 {% block setup %}

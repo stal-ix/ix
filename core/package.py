@@ -62,6 +62,8 @@ class Package:
         return self.manager.config
 
     def load_package(self, selector):
+        print(self.name, selector)
+
         try:
             return self.manager.load_package(selector)
         except FileNotFoundError:

@@ -19,8 +19,7 @@ sys/framework/Foundation/mix.sh
 
 {% block bld_deps %}
 dev/build/meson/mix.sh
-env/std/mix.sh
-boot/final/env/tools/mix.sh
+env/std/0/mix.sh
 {% endblock %}
 
 {% block setup %}

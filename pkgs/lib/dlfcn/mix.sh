@@ -10,8 +10,7 @@ lib/cxx/mix.sh
 {% endblock %}
 
 {% block bld_deps %}
-dev/build/make/mix.sh
-env/std/mix.sh
+env/std/0/mix.sh
 {% endblock %}
 
 {% block postinstall %}

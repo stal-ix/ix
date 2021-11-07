@@ -3,8 +3,7 @@
 {% block bld_deps %}
 {{'lib/linux/mix.sh' | linux}}
 lib/z/mix.sh
-env/std/mix.sh
-boot/final/env/tools/mix.sh
+env/std/0/mix.sh
 {% endblock %}
 
 {% block extra_modules %}

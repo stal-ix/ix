@@ -6,9 +6,8 @@ e812da327b1c2214ac1aed440ea3ae8d
 {% endblock %}
 
 {% block bld_deps %}
-env/std/mix.sh
 tool/compress/minigzip/mix.sh
-boot/final/env/tools/mix.sh
+env/std/0/mix.sh
 {% endblock %}
 
 {% block coflags %}

@@ -7,5 +7,5 @@ addf44b646ddb4e3919805aa88fa7c5e
 
 {% block bld_deps %}
 dev/lang/m4/mix.sh
-env/autohell/mix.sh
+env/std/0/mix.sh
 {% endblock %}

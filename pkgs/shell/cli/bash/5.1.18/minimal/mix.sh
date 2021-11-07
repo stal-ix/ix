@@ -4,3 +4,8 @@
 --disable-nls
 --disable-readline
 {% endblock %}
+
+{% block bld_deps %}
+env/std/0/mix.sh
+boot/final/env/bison/mix.sh
+{% endblock %}
