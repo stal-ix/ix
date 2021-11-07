@@ -1,8 +1,8 @@
 {% extends '//mix/template/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/kkos/oniguruma/releases/download/v6.9.7.1/onig-6.9.7.1.tar.gz
-d39409a103dcd44425e37b88d642f22c
+https://github.com/kkos/oniguruma/archive/refs/tags/v6.9.7.1.tar.gz
+e46bd3ba7f88460e5610035951e2e56d
 {% endblock %}
 
 {% block bld_deps %}
