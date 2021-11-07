@@ -6,6 +6,7 @@ https://github.com/mesonbuild/meson/releases/download/0.58.0/meson-0.58.0.tar.gz
 {% endblock %}
 
 {% block bld_deps %}
+gnu/patch/mix.sh
 env/std/0/mix.sh
 {% endblock %}
 
