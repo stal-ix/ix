@@ -1,4 +1,4 @@
-{% extends '//mix/template/template.sh' %}
+{% extends '//mix/template/make.sh' %}
 
 {% block fetch %}
 https://github.com/upx/upx/releases/download/v3.96/upx-3.96-src.tar.xz
@@ -19,10 +19,10 @@ env/std/mix.sh
 export CFLAGS="-w ${CFLAGS}"
 {% endblock %}
 
-{% block build %}
-make -j ${make_thrs} -C src all
+{% block postunpack %}
+cd src
 {% endblock %}
 
 {% block install %}
-mkdir ${out}/bin && cp src/upx.out ${out}/bin/upx
+mkdir ${out}/bin && cp upx.out ${out}/bin/upx
 {% endblock %}
