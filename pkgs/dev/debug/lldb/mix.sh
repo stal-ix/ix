@@ -39,7 +39,7 @@ sed -e 's|libkind SHARED|libkind STATIC|' -i lldb/cmake/modules/AddLLDB.cmake
 {% endblock %}
 
 {% block cmdir %}
-../llvm
+llvm
 {% endblock %}
 
 {% block build %}

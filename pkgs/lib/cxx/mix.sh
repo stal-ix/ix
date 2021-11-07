@@ -28,7 +28,7 @@ env/std/0/mix.sh
 {% endblock %}
 
 {% block cmdir %}
-../runtimes
+runtimes
 {% endblock %}
 
 {% block ninja_targets %}

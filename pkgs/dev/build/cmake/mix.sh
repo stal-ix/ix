@@ -31,9 +31,3 @@ boot/final/env/tools/mix.sh
 -DCMAKE_USE_SYSTEM_BZIP2=ON
 -DCMAKE_USE_SYSTEM_LIBLZMA=ON
 {% endblock %}
-
-{% block more_env %}
-base64 -d << EOF
-{% include 'cmake.sh/base64' %}
-EOF
-{% endblock %}

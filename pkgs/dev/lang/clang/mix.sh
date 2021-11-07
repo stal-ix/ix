@@ -39,7 +39,7 @@ echo > llvm/unittests/Support/DynamicLibrary/CMakeLists.txt
 {% endblock %}
 
 {% block cmdir %}
-../llvm
+llvm
 {% endblock %}
 
 {% block postinstall %}
