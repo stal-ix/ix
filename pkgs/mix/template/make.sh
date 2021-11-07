@@ -12,6 +12,12 @@ prefix="${out}"
 {% endblock %}
 {% endset %}
 
+{% set make_install_target %}
+{% block make_install_target %}
+install
+{% endblock %}
+{% endset %}
+
 {% set real_flags %}{{mix.fix_list(make_flags)}}{% endset %}
 
 {% block build %}
@@ -19,5 +25,5 @@ make -j ${make_thrs} {{real_flags}} || make {{real_flags}}
 {% endblock %}
 
 {% block install %}
-make {{real_flags}} {% block install_target %}install{% endblock %}
+make {{real_flags}} {{make_install_target.strip()}}
 {% endblock %}

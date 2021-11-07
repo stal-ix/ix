@@ -18,7 +18,9 @@ STATIC_BINS=yes
 all-static
 {% endblock %}
 
-{% block install_target %}install-static{% endblock %}
+{% block make_install_target %}
+install-static
+{% endblock %}
 
 {% block env %}
 export COFLAGS="--with-curses=${out} --with-ncurses=${out} \${COFLAGS}"

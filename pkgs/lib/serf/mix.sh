@@ -29,10 +29,11 @@ EOF
 {% endblock %}
 
 {% block build %}
-scons PREFIX=${out}          \
-    OPENSSL="${lib_openssl}" \
-    ZLIB="${lib_z}"          \
-    APR="${lib_apr}"         \
+scons \
+    PREFIX=${out}         \
+    OPENSSL="${SSL_DIR}"  \
+    ZLIB="${lib_z}"       \
+    APR="${lib_apr}"      \
     APU="${lib_apr_util}"
 {% endblock %}
 
