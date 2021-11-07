@@ -1,8 +1,8 @@
 {% extends '//mix/template/autohell.sh' %}
 
 {% block fetch %}
-https://github.com/wolfSSL/wolfssl/archive/refs/tags/v4.8.1-stable.tar.gz
-f3b2b4fdfe2ad53fd38bcd2ba6c821d2
+https://github.com/wolfSSL/wolfssl/archive/refs/tags/v5.0.0-stable.tar.gz
+d2044f756db0853dd2da0a90dd42ab62
 {% endblock %}
 
 {% block bld_deps %}
