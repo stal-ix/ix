@@ -13,7 +13,7 @@ lib/xz/mix.sh
 lib/z/mix.sh
 lib/intl/mix.sh
 lib/iconv/mix.sh
-lib/wolfssl/mix.sh
+lib/gnutls/mix.sh
 lib/bzip2/mix.sh
 lib/idn2/mix.sh
 lib/pcre/mix.sh
@@ -23,5 +23,9 @@ env/autohell/mix.sh
 
 {% block coflags %}
 --without-plugin-support
---with-ssl=wolfssl
+--with-ssl=gnutls
+{% endblock %}
+
+{% block patch %}
+cat lib/xalloc-die.c | grep -v 'memory ex' > _ && mv _ lib/xalloc-die.c
 {% endblock %}
