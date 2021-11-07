@@ -1,16 +1,21 @@
-{% extends '//mix/template/autohell.sh' %}
+{% extends '//mix/template/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/libexpat/libexpat/releases/download/R_2_4_1/expat-2.4.1.tar.xz
-a4fb91a9441bcaec576d4c4a56fa3aa6
+https://github.com/libexpat/libexpat/archive/refs/tags/R_2_4_1.tar.gz
+3bbf3f4d6a1ab1a82ca1dbafda68ed5f
 {% endblock %}
 
 {% block bld_deps %}
 env/std/0/mix.sh
 {% endblock %}
 
-{% block coflags %}
---without-examples
+{% block postunpack %}
+cd expat
+{% endblock %}
+
+{% block cmflags %}
+-DEXPAT_BUILD_EXAMPLES=OFF
+-DEXPAT_SHARED_LIBS=OFF
 {% endblock %}
 
 {% block env %}
