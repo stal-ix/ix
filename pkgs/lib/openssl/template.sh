@@ -36,9 +36,9 @@ PLATFORM_darwin_arm64="darwin64-arm64-cc"
 PLATFORM_darwin_x86_64="darwin64-x86_64-cc"
 PLATFORM_linux_x86_64="linux-x86_64-clang"
 
-PLATFORM=${PLATFORM_{{mix.platform.target.os}}_{{mix.platform.target.arch}}}
-
-perl ./Configure ${PLATFORM} {{mix.fix_list(openssl_conf_opts)}}
+perl ./Configure \
+    ${PLATFORM_{{mix.platform.target.os}}_{{mix.platform.target.arch}}} \
+    {{mix.fix_list(openssl_conf_opts)}}
 {% endblock %}
 
 {% block env %}
