@@ -37,15 +37,15 @@ done
 
 {% block invoke_configure %}
 {% set coflags %}
+--disable-dependency-tracking
+--enable-static
+--disable-shared
+--prefix="${out}"
+
 {% block coflags %}
 {% endblock %}
 {% endset %}
 
-dash ./configure ${COFLAGS} \
-    --disable-dependency-tracking \
-    --enable-static               \
-    --disable-shared              \
-    --prefix="${out}"             \
-    {{mix.fix_list(coflags)}}
+dash ./configure ${COFLAGS} {{mix.fix_list(coflags)}}
 {% endblock %}
 {% endblock %}
