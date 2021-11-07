@@ -18,3 +18,7 @@ ar q libcrypto.a empty.o
 mkdir ${out}/lib && cp libcrypto.a ${out}/lib/
 cp -R ${lib_wolfssl}/include/wolfssl ${out}/include
 {% endblock %}
+
+{% block env %}
+export COFLAGS="--with-ssl=${out} --with-openssl=${out} --with-openssldir=${out} --with-ssl-dir=${out} \${COFLAGS}"
+{% endblock %}

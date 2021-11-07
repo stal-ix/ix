@@ -24,3 +24,7 @@ dash ./autogen.sh
 --enable-reproducible-build
 --enable-tls13
 {% endblock %}
+
+{% block env %}
+export COFLAGS="--with-wolfssl=${out} \${COFLAGS}"
+{% endblock %}
