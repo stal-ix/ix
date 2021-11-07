@@ -1,4 +1,4 @@
-{% extends '//lib/openssl/template.sh' %}
+{% extends '//lib/openssl/t/mix.sh' %}
 
 {% block fetch %}
 https://www.openssl.org/source/openssl-3.0.0.tar.gz

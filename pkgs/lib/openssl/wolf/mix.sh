@@ -16,8 +16,5 @@ ar q libcrypto.a empty.o
 
 {% block install %}
 mkdir ${out}/lib && cp libcrypto.a ${out}/lib/
-{% endblock %}
-
-{% block env %}
-export CPPFLAGS="-I${lib_wolfssl}/include/wolfssl \${CPPFLAGS}"
+cp -R ${lib_wolfssl}/include/wolfssl ${out}/include
 {% endblock %}
