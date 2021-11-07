@@ -29,3 +29,7 @@ env/autohell/mix.sh
 {% block patch %}
 cat lib/xalloc-die.c | grep -v 'memory ex' > _ && mv _ lib/xalloc-die.c
 {% endblock %}
+
+{% block postinstall %}
+rm -rf ${out}/lib ${out}/include ${out}/bin/wget2_noinstall
+{% endblock %}
