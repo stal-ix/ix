@@ -1,8 +1,8 @@
 {% extends '//mix/template/autohell.sh' %}
 
 {% block fetch %}
-https://nlnetlabs.nl/downloads/ldns/ldns-1.7.1.tar.gz
-166262a46995d9972aba417fd091acd5
+https://github.com/NLnetLabs/ldns/archive/refs/tags/release-1.7.1.tar.gz
+a84a680e92618b8c236626c192e5a15b
 {% endblock %}
 
 {% block lib_deps %}
@@ -10,7 +10,14 @@ lib/openssl/mix.sh
 {% endblock %}
 
 {% block bld_deps %}
+dev/build/autoconf/2.69/mix.sh
+dev/build/automake/1.16.3/mix.sh
 env/autohell/mix.sh
+{% endblock %}
+
+{% block autoreconf %}
+libtoolize -ci
+autoreconf -fi
 {% endblock %}
 
 {% block coflags %}
