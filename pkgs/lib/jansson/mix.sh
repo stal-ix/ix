@@ -6,6 +6,7 @@ bc78f39c7cd7fab1dd5fc4a2c3be1661
 {% endblock %}
 
 {% block bld_deps %}
+gnu/file/mix.sh
 dev/build/autoconf/2.69/mix.sh
 dev/build/automake/1.16.3/mix.sh
 env/std/0/mix.sh
