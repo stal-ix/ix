@@ -1,4 +1,4 @@
-{% extends '//mix/template/autohell.sh' %}
+{% extends '//mix/template/make.sh' %}
 
 {% block fetch %}
 http://zlib.net/zlib-1.2.11.tar.xz
