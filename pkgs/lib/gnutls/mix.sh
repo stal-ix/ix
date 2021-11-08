@@ -32,3 +32,7 @@ cat << EOF > src/gl/error.h
 #include_next <error.h>
 EOF
 {% endblock %}
+
+{% block env %}
+export COFLAGS="--with-gnutls=${out} \${COFLAGS}"
+{% endblock %}
