@@ -12,6 +12,9 @@ lib/tom/crypt/mix.sh
 env/autohell/mix.sh
 {% endblock %}
 
+{% block enable_static %}
+{% endblock %}
+
 {% block coflags %}
 --disable-bundled-libtom
 {% endblock %}

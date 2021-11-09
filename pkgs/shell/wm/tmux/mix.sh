@@ -1,4 +1,4 @@
-{% extends '//mix/template/make.sh' %}
+{% extends '//mix/template/autohell.sh' %}
 
 {% block fetch %}
 https://github.com/tmux/tmux/releases/download/3.2a/tmux-3.2a.tar.gz
@@ -16,6 +16,9 @@ dev/lang/byacc/mix.sh
 env/autohell/mix.sh
 {% endblock %}
 
-{% block configure %}
-dash ./configure --prefix="${out}" --enable-utf8proc
+{% block coflags %}
+--enable-utf8proc
+{% endblock %}
+
+{% block enable_static %}
 {% endblock %}

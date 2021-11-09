@@ -38,7 +38,9 @@ done
 {% block invoke_configure %}
 {% set coflags %}
 --disable-dependency-tracking
+{% block enable_static %}
 --enable-static
+{% endblock %}
 --disable-shared
 --prefix="${out}"
 
