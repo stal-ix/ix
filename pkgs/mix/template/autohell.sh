@@ -48,6 +48,6 @@ done
 {% endblock %}
 {% endset %}
 
-dash ./configure ${COFLAGS} {{mix.fix_list(coflags)}}
+{% block autoconf_shell %}dash{% endblock %} ./configure ${COFLAGS} {{mix.fix_list(coflags)}}
 {% endblock %}
 {% endblock %}

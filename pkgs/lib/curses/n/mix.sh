@@ -1,11 +1,12 @@
 {% extends '//mix/template/autohell.sh' %}
 
 {% block fetch %}
-https://ftp.gnu.org/pub/gnu/ncurses/ncurses-6.2.tar.gz
-e812da327b1c2214ac1aed440ea3ae8d
+https://ftp.gnu.org/pub/gnu/ncurses/ncurses-6.3.tar.gz
+a2736befde5fee7d2b7eb45eb281cdbe
 {% endblock %}
 
 {% block bld_deps %}
+shell/cli/bash/minimal/mix.sh
 tool/compress/minigzip/mix.sh
 env/std/0/mix.sh
 {% endblock %}
@@ -23,6 +24,14 @@ env/std/0/mix.sh
 --with-termlib
 --without-cxx
 --without-cxx-binding
+--with-pkg-config="$(command -v pkg-config)"
+--with-pkg-config-libdir="${out}/lib/pkg-config"
+{% endblock %}
+
+{% block autoconf_shell %}bash{% endblock %}
+
+{% block setup %}
+export PKG_CONFIG_LIBDIR=${out}/lib/pkg-config
 {% endblock %}
 
 {% block postinstall %}
