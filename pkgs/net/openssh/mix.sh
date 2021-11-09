@@ -10,16 +10,13 @@ a50fb1d7c40ac7fac3360218cb37a38b
 {% endblock %}
 
 {% block bld_deps %}
-lib/z/mix.sh
-lib/edit/mix.sh
-lib/ldns/mix.sh
-lib/openssl/mix.sh
+net/openssh/libs/mix.sh(openssl=1)
 gnu/patch/mix.sh
 env/autohell/mix.sh
 {% endblock %}
 
 {% block toolconf %}
-ln -s ${lib_ncurses}/lib/libncurses.a libcurses.a
+ln -s ${lib_curses_n}/lib/libncurses.a libcurses.a
 export LDFLAGS="-L${PWD} ${LDFLAGS}"
 {% endblock %}
 
