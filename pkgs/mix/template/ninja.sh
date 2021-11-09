@@ -1,5 +1,7 @@
 {% extends 'template.sh' %}
 
+{% set ninja_build_dir %}{% block ninja_build_dir %}${tmp}/obj{% endblock %}{% endset %}
+
 {% set ninja_build_targets %}
 {% block ninja_build_targets %}
 {% endblock %}
@@ -12,9 +14,9 @@ install
 {% endset %}
 
 {% block build %}
-ninja -C _build -j ${make_thrs} {{mix.fix_list(ninja_build_targets)}}
+ninja -C {{ninja_build_dir}} -j ${make_thrs} {{mix.fix_list(ninja_build_targets)}}
 {% endblock %}
 
 {% block install %}
-ninja -C _build {{mix.fix_list(ninja_install_targets)}}
+ninja -C {{ninja_build_dir}} {{mix.fix_list(ninja_install_targets)}}
 {% endblock %}

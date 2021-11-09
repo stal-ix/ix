@@ -1,7 +1,6 @@
 {% extends 'ninja.sh' %}
 
 {% set cmflags %}
--Wno-dev
 -DCMAKE_INSTALL_PREFIX="${out}"
 -DCMAKE_C_COMPILER="$(command -v clang)"
 -DCMAKE_CXX_COMPILER="$(command -v clang++)"
@@ -23,5 +22,5 @@
 {% endset %}
 
 {% block configure %}
-cmake -B _build -G Ninja ${CMFLAGS} {{mix.fix_list(cmflags)}}
+cmake -B {{ninja_build_dir}} -G Ninja -Wno-dev ${CMFLAGS} {{mix.fix_list(cmflags)}}
 {% endblock %}

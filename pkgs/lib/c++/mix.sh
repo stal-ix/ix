@@ -40,6 +40,6 @@ install-cxxabi
 install-unwind
 {% endblock %}
 
-{% block env %}
-export CPPFLAGS="-I${out}/include/c++/v1 \${CPPFLAGS}"
+{% block postinstall %}
+cd ${out} && mv include/c++/v1/* include/
 {% endblock %}
