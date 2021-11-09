@@ -5,23 +5,23 @@ dev/lang/python/3/minimal/mix.sh
 {% endblock %}
 
 {% block postinstall %}
-cd ${out}/lib/python/docutils-*data/scripts
+mkdir ${out}/bin
+
+cd ${out}/lib/python && cd docutils-*data/scripts
 
 for x in *.py; do
     cat - ${x} << EOF > _
 #!$(command -v python3)
 EOF
-    mv _ ${x}
-    chmod +x ${x}
+    chmod +x _
+    mv _ ${out}/bin/${x}
 done
-{% endblock %}
-
-{% block extra_env %}
-export PATH="${out}/lib/python/docutils-0.18.data/scripts:\${PATH}"
 {% endblock %}
 
 {% block test %}
 . ${out}/env
+
+export PATH="${out}/bin:${PATH}"
 
 rst2html.py --help
 {% endblock %}
