@@ -19,7 +19,7 @@ env/autohell/mix.sh
 {% endblock %}
 
 {% block run_deps %}
-shell/openssh/mix.sh
+net/openssh/mix.sh
 {% endblock %}
 
 {% block setup %}
