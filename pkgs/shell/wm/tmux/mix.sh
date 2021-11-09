@@ -1,4 +1,4 @@
-{% extends '//mix/template/autohell.sh' %}
+{% extends '//mix/template/make.sh' %}
 
 {% block fetch %}
 https://github.com/tmux/tmux/releases/download/3.2a/tmux-3.2a.tar.gz
@@ -16,10 +16,6 @@ dev/lang/byacc/mix.sh
 env/autohell/mix.sh
 {% endblock %}
 
-{% block setup %}
-export COFLAGS=$(echo ${COFLAGS} | tr ' ' '\n' | grep -v 'static' | tr '\n' ' ')
-{% endblock %}
-
-{% block coflags %}
---enable-utf8proc
+{% block configure %}
+dash ./configure --prefix="${out}" --enable-utf8proc
 {% endblock %}

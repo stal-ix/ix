@@ -16,6 +16,10 @@ dev/lang/python/3/minimal/mix.sh
 env/autohell/mix.sh
 {% endblock %}
 
+{% block patch %}
+sed -e 's|glibtoolize|libtoolize|' -i autogen.sh
+{% endblock %}
+
 {% block autoreconf %}
 dash ./autogen.sh
 {% endblock %}
