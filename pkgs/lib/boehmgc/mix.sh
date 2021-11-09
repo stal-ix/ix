@@ -8,7 +8,7 @@ https://github.com/ivmai/bdwgc/commit/5668de71107022a316ee967162bc16c10754b9ce.p
 {% endblock %}
 
 {% block lib_deps %}
-lib/cxx/mix.sh
+lib/c++/mix.sh
 lib/atomicops/mix.sh
 {% endblock %}
 

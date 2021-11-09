@@ -6,7 +6,7 @@ https://github.com/pg83/dlopen/archive/afbcfbf6f7c7fdd8215e8a694500608f7776c0bb.
 {% endblock %}
 
 {% block lib_deps %}
-lib/cxx/mix.sh
+lib/c++/mix.sh
 {% endblock %}
 
 {% block bld_deps %}

@@ -6,7 +6,7 @@ a0128d661cfe7cc8c121e73519c54fbf
 {% endblock %}
 
 {% block bld_deps %}
-lib/cxx/mix.sh
+lib/c++/mix.sh
 dev/build/make/mix.sh
 env/std/mix.sh
 {% endblock %}

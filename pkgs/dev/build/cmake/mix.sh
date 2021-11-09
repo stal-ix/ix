@@ -15,7 +15,7 @@ dev/build/samurai/mix.sh
 lib/z/mix.sh
 lib/xz/mix.sh
 lib/uv/mix.sh
-lib/cxx/mix.sh
+lib/c++/mix.sh
 lib/curl/mix.sh
 lib/bzip2/mix.sh
 lib/expat/mix.sh

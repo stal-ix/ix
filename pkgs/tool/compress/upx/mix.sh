@@ -7,7 +7,7 @@ bf5564f33fe9062bc48b53abd4b34223
 
 {% block bld_deps %}
 lib/z/mix.sh
-lib/cxx/mix.sh
+lib/c++/mix.sh
 lib/ucl/mix.sh
 dev/build/make/mix.sh
 shell/cli/bash/minimal/mix.sh

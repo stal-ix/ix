@@ -11,7 +11,7 @@ lib/linux/mix.sh
 lib/fts/mix.sh
 lib/rpmatch/mix.sh
 {% endif %}
-lib/cxx/mix.sh
+lib/c++/mix.sh
 lib/xo/mix.sh
 lib/edit/mix.sh
 lib/openssl/mix.sh

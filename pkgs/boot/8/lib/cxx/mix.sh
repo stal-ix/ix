@@ -1,4 +1,4 @@
-{% extends '//lib/cxx/mix.sh' %}
+{% extends '//lib/c++/mix.sh' %}
 
 {% block bld_deps %}
 {{'boot/7/lib/linux/mix.sh' | linux}}

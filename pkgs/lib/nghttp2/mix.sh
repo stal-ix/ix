@@ -12,7 +12,7 @@ lib/openssl/mix.sh
 {% endblock %}
 
 {% block bld_deps %}
-lib/cxx/mix.sh
+lib/c++/mix.sh
 lib/xml2/mix.sh
 lib/jansson/mix.sh
 dev/build/autoconf/2.71/mix.sh

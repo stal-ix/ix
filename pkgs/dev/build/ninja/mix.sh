@@ -6,7 +6,7 @@ https://github.com/ninja-build/ninja/archive/refs/tags/v1.10.2.tar.gz
 {% endblock %}
 
 {% block bld_deps %}
-lib/cxx/mix.sh
+lib/c++/mix.sh
 dev/lang/python/3/minimal/mix.sh
 dev/build/cmake/mix.sh
 env/std/mix.sh

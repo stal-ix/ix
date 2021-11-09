@@ -7,7 +7,7 @@
 {% block bld_deps %}
 {{'lib/linux/mix.sh' | linux}}
 {{'sys/framework/CoreFoundation/mix.sh' | darwin}}
-lib/cxx/mix.sh
+lib/c++/mix.sh
 lib/curses/any/mix.sh
 lib/edit/mix.sh
 lib/xz/mix.sh

@@ -6,6 +6,6 @@ f062faf68595d594a28fade73a43c001
 {% endblock %}
 
 {% block bld_deps %}
-lib/cxx/mix.sh
+lib/c++/mix.sh
 env/autohell/mix.sh
 {% endblock %}

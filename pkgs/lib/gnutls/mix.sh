@@ -6,7 +6,7 @@ https://www.gnupg.org/ftp/gcrypt/gnutls/v3.7/gnutls-3.7.2.tar.xz
 {% endblock %}
 
 {% block lib_deps %}
-lib/cxx/mix.sh
+lib/c++/mix.sh
 lib/gmp/mix.sh
 lib/idn2/mix.sh
 lib/tasn1/mix.sh

@@ -6,7 +6,7 @@ https://github.com/fmtlib/fmt/archive/refs/tags/7.1.3.tar.gz
 {% endblock %}
 
 {% block lib_deps %}
-lib/cxx/mix.sh
+lib/c++/mix.sh
 {% endblock %}
 
 {% block bld_deps %}
