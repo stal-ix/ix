@@ -22,6 +22,7 @@ dash ./bootstrap \
     --prefix=${out}         \
     --parallel=${make_thrs} \
     --                      \
+    ${CMFLAGS}              \
     -DCMAKE_USE_OPENSSL=OFF \
     -DBUILD_TESTING=OFF
 

@@ -20,9 +20,6 @@ env/std/0/mix.sh
 -DLIBCXX_ENABLE_STATIC=YES
 -DLIBCXX_CXX_ABI=libcxxabi
 -DLIBCXX_USE_COMPILER_RT=yes
-{% if mix.platform.target.os == 'linux' %}
--DLIBCXX_HAS_MUSL_LIBC=yes
-{% endif %}
 
 -DLLVM_ENABLE_RUNTIMES="libcxx;libcxxabi;libunwind"
 {% endblock %}

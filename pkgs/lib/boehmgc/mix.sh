@@ -22,7 +22,6 @@ cat ${src}/*.patch* | patch -p1
 
 {% block coflags %}
 --disable-debug
---disable-dependency-tracking
 --enable-cplusplus
 --enable-large-config
 {% endblock %}

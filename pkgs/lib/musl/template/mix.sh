@@ -24,6 +24,7 @@ ranlib libcrt.a
 {% endblock %}
 
 {% block env %}
+export CMFLAGS="-DLIBCXX_HAS_MUSL_LIBC=yes \${CMFLAGS}"
 export CPPFLAGS="-isystem ${out}/include \${CPPFLAGS}"
 {% endblock %}
 
