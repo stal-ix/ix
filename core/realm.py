@@ -57,8 +57,14 @@ class Realm:
         return self.new_version(collapse_pkgs(self.pkgs + pkgs))
 
     def remove(self, pkgs):
-        # TODO
-        raise Exception('unimplemented')
+        pkgs = frozenset([x['name'] for x in pkgs])
+
+        def it():
+            for x in self.pkgs:
+                if x['name'] not in pkgs:
+                    yield x
+
+        return self.new_version(list(it()))
 
     def upgrade(self):
         return self.new_version(self.pkgs)
