@@ -18,6 +18,11 @@ lib/openssl/mix.sh
 env/autohell/mix.sh
 {% endblock %}
 
+{% block setup %}
+export CC=clang
+export CPP=cpp
+{% endblock %}
+
 {% block coflags %}
 --with-dbm=gdbm
 --disable-util-dso

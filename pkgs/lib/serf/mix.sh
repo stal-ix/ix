@@ -19,12 +19,12 @@ env/std/mix.sh
 {% endblock %}
 
 {% block patch %}
-patch -p1 << EOF
-{% include 'p00.patch' %}
+(base64 -d | patch -p1) << EOF
+{% include 'p00.patch/base64' %}
 EOF
 
-patch -p1 << EOF
-{% include 'p01.patch' %}
+(base64 -d | patch -p1) << EOF
+{% include 'p01.patch/base64' %}
 EOF
 {% endblock %}
 

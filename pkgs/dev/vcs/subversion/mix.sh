@@ -6,15 +6,7 @@ https://archive.apache.org/dist/subversion/subversion-1.14.1.tar.bz2
 {% endblock %}
 
 {% block bld_deps %}
-lib/z/mix.sh
-lib/lz4/mix.sh
-lib/apr/mix.sh
-lib/intl/mix.sh
-lib/serf/mix.sh
-lib/expat/mix.sh
-lib/sqlite3/mix.sh
-lib/apr-util/mix.sh
-lib/utf8proc/mix.sh
+dev/vcs/subversion/libs/mix.sh(openssl=1)
 env/autohell/mix.sh
 {% endblock %}
 

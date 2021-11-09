@@ -13,6 +13,21 @@ env/autohell/mix.sh
 --disable-dso
 {% endblock %}
 
+{% block postinstall %}
+cd ${out}/build-1
+
+for x in libtool apr_rules.mk; do
+(
+    cat << EOF
+CC=clang
+LTCC=clang
+EOF
+
+    cat ${x} | grep -v 'CC='
+) > _ && mv _ ${x} && chmod +x ${x}
+done
+{% endblock %}
+
 {% block env %}
 export COFLAGS="--with-apr=${out} --with-libapr=${out} \${COFLAGS}"
 {% endblock %}
