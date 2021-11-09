@@ -1,8 +1,8 @@
 {% extends '//mix/template/autohell.sh' %}
 
 {% block fetch %}
-https://storage.yandexcloud.net/mix-cache/openvpn-2.5.4.tar.xz
-336be3b2388cdc65dd8c81f22b1c2836
+https://github.com/OpenVPN/openvpn/archive/refs/tags/v2.5.4.tar.gz
+33
 {% endblock %}
 
 {% set ssl %}{{mix.flags.get('openvpnssl', 'openssl')}}{% endset %}
@@ -11,7 +11,15 @@ https://storage.yandexcloud.net/mix-cache/openvpn-2.5.4.tar.xz
 lib/lz4/mix.sh
 lib/lzo/mix.sh
 lib/{{ssl}}/mix.sh
+pypi/docutils/scripts/mix.sh
+dev/build/autoconf/2.69/mix.sh
+dev/build/automake/1.16.3/mix.sh
 env/autohell/mix.sh
+{% endblock %}
+
+{% block autoreconf %}
+libtoolize -c
+autoreconf -i
 {% endblock %}
 
 {% block coflags %}

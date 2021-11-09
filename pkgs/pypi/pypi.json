@@ -32,6 +32,10 @@
         "md5": "ee66fb12729b9e8ea4bb5b4b92f5ce2d",
         "url": "https://files.pythonhosted.org/packages/05/1b/0a0dece0e8aa492a6ec9e4ad2fe366b511558cdc73fd3abc82ba7348e875/certifi-2021.5.30-py2.py3-none-any.whl"
     },
+    "docutils/mix.sh": {
+        "md5": "c511ce27cc0f13fca32b01e4a6c197b4",
+        "url": "https://files.pythonhosted.org/packages/4c/42/5aefc2ffc563ef8456276430da8f045f55176c45746b0c3434c0c474c746/docutils-0.18-py2.py3-none-any.whl"
+    },
     "jinja2/mix.sh": {
         "md5": "b377af8123a32e992984222bff51e152",
         "run": [

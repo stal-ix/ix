@@ -72,8 +72,8 @@ class Manager:
     # do not account flags
     def all_packages(self):
         for x in cu.iter_dir(self.config.where):
-            if os.path.basename(x) in ('package.py', 'package.sh'):
-                yield self.load_package({'name': os.path.dirname(x)})
+            if os.path.basename(x) == 'mix.sh':
+                yield self.load_package({'name': x})
 
     def build_packages(self, pkgs):
         tmp = os.path.join(self.config.store_dir, 'build.' + str(random.random()))
