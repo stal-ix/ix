@@ -15,3 +15,7 @@ dev/lang/perl5/mix.sh
 {% block coreutils_coflags_extra %}
 --with-openssl=yes
 {% endblock %}
+
+{% block postconf %}
+cat Makefile | grep -v 'LIBINTL = ' > _ && mv _ Makefile
+{% endblock %}

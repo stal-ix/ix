@@ -14,6 +14,9 @@ lib/nettle/mix.sh
 {% if mix.platform.target.os == 'linux' %}
 lib/seccomp/mix.sh
 {% endif %}
+{% if mix.platform.target.os == 'darwin' %}
+sys/framework/Security/mix.sh
+{% endif %}
 lib/unistring/mix.sh
 {% endblock %}
 
@@ -23,14 +26,19 @@ env/autohell/mix.sh
 {% endblock %}
 
 {% block coflags %}
+{% if mix.platform.target.os == 'darwin' %}
+--disable-hardware-acceleration
+{% endif %}
 --disable-tests
 --without-p11-kit
 {% endblock %}
 
 {% block patch %}
+{% if mix.platform.target.os == 'linux' %}
 cat << EOF > src/gl/error.h
 #include_next <error.h>
 EOF
+{% endif %}
 {% endblock %}
 
 {% block env %}
