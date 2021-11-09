@@ -20,6 +20,13 @@ export CPPFLAGS="-w ${CPPFLAGS}"
 {% endblock %}
 
 {% block toolconf %}
+cat << EOF > sw_vers
+echo 'ProductName:	macOS'
+echo 'ProductVersion:	10.0'
+EOF
+
+chmod +x sw_vers
+
 cat << EOF > install_name_tool
 #!$(command -v dash)
 EOF

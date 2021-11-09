@@ -6,7 +6,7 @@ https://ftp.gnu.org/gnu/gzip/gzip-1.10.tar.xz
 {% endblock %}
 
 {% block bld_deps %}
-env/std/mix.sh
+env/autohell/mix.sh
 {% endblock %}
 
 {% block coflags %}

@@ -7,6 +7,8 @@ https://github.com/tpoechtrager/cctools-port/archive/236a426c1205a3bfcf0dbb2e2fa
 
 {% block bld_deps %}
 lib/cxx/mix.sh
+dev/build/autoconf/2.69/mix.sh
+dev/build/automake/1.16.3/mix.sh
 env/std/0/mix.sh
 {% endblock %}
 
@@ -14,11 +16,24 @@ env/std/0/mix.sh
 cd cctools
 {% endblock %}
 
+{% block autoreconf %}
+libtoolize -c --force
+autoreconf -i
+{% endblock %}
+
 {% block setup %}
 export CPPFLAGS="-D__crashreporter_info__=__crashreporter_info_ld__ ${CPPFLAGS}"
 {% endblock %}
 
 {% block patch %}
+{% if mix.platform.target.os == 'darwin' %}
+cat << EOF > libobjc2/Makefile.am
+noinst_LTLIBRARIES = libobjc.la
+libobjc_la_LDFLAGS = -lobjc
+libobjc_la_SOURCES =
+EOF
+{% endif %}
+
 sed -e 's/__arm__/__eat_shit__/' -i configure
 {% endblock %}
 

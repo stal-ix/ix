@@ -2,6 +2,7 @@
 
 {% block bld_deps %}
 {{'lib/linux/mix.sh' | linux}}
+{{'sys/framework/SystemConfiguration/mix.sh' | darwin}}
 lib/z/mix.sh
 env/std/0/mix.sh
 {% endblock %}

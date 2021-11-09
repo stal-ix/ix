@@ -18,6 +18,13 @@ cd expat
 -DEXPAT_SHARED_LIBS=OFF
 {% endblock %}
 
+{% block toolconf %}
+cat << EOF > install_name_tool
+EOF
+
+chmod +x install_name_tool
+{% endblock %}
+
 {% block env %}
 export COFLAGS="--with-expat=${out} --with-libexpat-prefix=${out} \${COFLAGS}"
 export CMFLAGS="-DCMAKE_USE_SYSTEM_EXPAT=ON \${CMFLAGS}"

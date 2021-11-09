@@ -3,6 +3,7 @@
 {% block bld_deps %}
 dev/lang/python/libs/mix.sh
 {{'lib/linux/mix.sh' | linux}}
+{{'sys/framework/SystemConfiguration/mix.sh' | darwin}}
 env/autohell/mix.sh
 {% endblock %}
 
@@ -34,6 +35,7 @@ _opcode _opcode.c
 _posixshmem _multiprocessing/posixshmem.c -I$(srcdir)/Modules/_multiprocessing
 _multiprocessing _multiprocessing/multiprocessing.c _multiprocessing/semaphore.c -I$(srcdir)/Modules/_multiprocessing
 _queue _queuemodule.c
+_scproxy _scproxy.c
 EOF
 
 # extra hand job

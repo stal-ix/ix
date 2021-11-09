@@ -8,5 +8,5 @@ d48752f402d7371d9eb5f68de3da05d4
 {% block bld_deps %}
 lib/readline/mix.sh
 dev/lang/byacc/mix.sh
-env/autohell/mix.sh
+env/std/0/mix.sh
 {% endblock %}

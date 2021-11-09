@@ -20,7 +20,7 @@ cat ./configure \
     | sed -e "s|/bin/universe|universe|g"     \
     > _ && mv _ ./configure
 
-export ac_cv_build="{{mix.platform.target.gnu_arch}}-{{mix.platform.target.hw_vendor}}-{{mix.platform.target.kernel}}-{{mix.platform.target.vendor}}"
+export ac_cv_build="{{mix.platform.target.gnu_arch}}-{{mix.platform.target.hw_vendor}}-{{mix.platform.target.os}}"
 export ac_cv_host="${ac_cv_build}"
 export ac_cv_target="${ac_cv_build}"
 

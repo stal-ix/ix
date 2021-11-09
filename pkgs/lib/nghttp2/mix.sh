@@ -23,3 +23,9 @@ env/autohell/mix.sh
 {% block autoreconf %}
 autoreconf -i
 {% endblock %}
+
+{% block coflags %}
+--enable-python-bindings=no
+--disable-python-bindings
+{% endblock %}
+

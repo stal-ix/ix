@@ -24,7 +24,7 @@ cat << EOF > config.h
 #define HAVE_DCGETTEXT 1
 #define HAVE_GETTEXT 1
 #define HAVE_INTTYPES_H 1
-#define HAVE_MALLOC_H 1
+//#define HAVE_MALLOC_H 1
 #define HAVE_MEMORY_H 1
 #define HAVE_STDBOOL_H 1
 #define HAVE_STDINT_H 1

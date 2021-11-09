@@ -26,10 +26,11 @@ DEST_DIR=${out}
 
 {% block postinstall %}
 (
+    set -eu
+    
     cd ${out}/usr/local/ && mv * ${out}/
     rm -rf ${out}/usr
 )
 
-mkdir ${out}/bin
 install bin/7za ${out}/bin/
 {% endblock %}
