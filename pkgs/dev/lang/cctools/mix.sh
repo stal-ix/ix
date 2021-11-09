@@ -19,6 +19,7 @@ cd cctools
 {% block autoreconf %}
 libtoolize -c --force
 autoreconf -i
+sed -e 's/__arm__/__eat_shit__/' -i configure
 {% endblock %}
 
 {% block setup %}
@@ -33,8 +34,6 @@ libobjc_la_LDFLAGS = -lobjc
 libobjc_la_SOURCES =
 EOF
 {% endif %}
-
-sed -e 's/__arm__/__eat_shit__/' -i configure
 {% endblock %}
 
 {% block coflags %}
