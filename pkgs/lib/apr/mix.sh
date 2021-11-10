@@ -13,14 +13,7 @@ https://archive.apache.org/dist/apr/apr-1.7.0.tar.bz2
 cd ${out}/build-1
 
 for x in libtool apr_rules.mk; do
-(
-    cat << EOF
-CC=clang
-LTCC=clang
-EOF
-
-    cat ${x} | grep -v 'CC='
-) > _ && mv _ ${x} && chmod +x ${x}
+    cat ${x} | grep -v 'build.*tools' > _ && mv _ ${x} && chmod +x ${x}
 done
 {% endblock %}
 
