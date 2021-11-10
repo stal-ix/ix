@@ -15,10 +15,6 @@ lib/curses/terminfo/mix.sh
 lib/oniguruma/mix.sh
 {% endblock %}
 
-{% block bld_deps %}
-env/autohell/mix.sh
-{% endblock %}
-
 {% block toolconf %}
 cat << EOF > ncurses5-config
 #!$(command -v dash)

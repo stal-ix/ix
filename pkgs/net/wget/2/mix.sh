@@ -18,7 +18,7 @@ lib/bzip2/mix.sh
 lib/idn2/mix.sh
 lib/pcre/mix.sh
 dev/doc/texinfo/mix.sh
-env/autohell/mix.sh
+{{super()}}
 {% endblock %}
 
 {% block coflags %}

@@ -12,10 +12,6 @@ lib/c++/mix.sh
 lib/atomicops/mix.sh
 {% endblock %}
 
-{% block bld_deps %}
-env/autohell/mix.sh
-{% endblock %}
-
 {% block patch %}
 cat ${src}/*.patch* | patch -p1
 {% endblock %}

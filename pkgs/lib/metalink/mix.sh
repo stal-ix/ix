@@ -9,10 +9,6 @@ f2c097557e2487313cd0be62d55952de
 lib/expat/mix.sh
 {% endblock %}
 
-{% block bld_deps %}
-env/autohell/mix.sh
-{% endblock %}
-
 {% block coflags %}
 --with-libexpat=yes
 {% endblock %}

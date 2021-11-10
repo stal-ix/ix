@@ -9,10 +9,6 @@ http://thrysoee.dk/editline/libedit-20210522-3.1.tar.gz
 lib/curses/any/mix.sh
 {% endblock %}
 
-{% block bld_deps %}
-env/autohell/mix.sh
-{% endblock %}
-
 {% block setup %}
 export CPPFLAGS="-D__STDC_ISO_10646__=1 ${CPPFLAGS}"
 {% endblock %}

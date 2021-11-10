@@ -8,7 +8,7 @@ https://github.com/magicant/yash/releases/download/2.51/yash-2.51.tar.xz
 {% block bld_deps %}
 lib/curses/any/mix.sh
 lib/edit/mix.sh
-env/autohell/mix.sh
+{{super()}}
 {% endblock %}
 
 {% block setup %}

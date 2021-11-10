@@ -19,7 +19,7 @@ lib/intl/mix.sh
 
 {% block bld_deps %}
 dev/lang/m4/mix.sh
-env/autohell/mix.sh
+{{super()}}
 {% endblock %}
 
 {% block patch %}

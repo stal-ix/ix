@@ -20,7 +20,7 @@ lib/{{mix.flags.get('curlssl', 'openssl')}}/mix.sh
 dev/doc/groff/mix.sh
 dev/build/autoconf/2.71/mix.sh
 dev/build/automake/1.16.3/mix.sh
-env/autohell/mix.sh
+{{super()}}
 {% endblock %}
 
 {% block autoreconf %}

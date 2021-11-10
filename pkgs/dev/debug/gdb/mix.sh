@@ -23,7 +23,7 @@ lib/xxhash/mix.sh
 dev/lang/byacc/mix.sh
 dev/lang/flex/mix.sh
 dev/doc/texinfo/mix.sh
-env/autohell/mix.sh
+{{super()}}
 {% endblock %}
 
 {% block setup %}

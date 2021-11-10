@@ -22,7 +22,7 @@ lib/unistring/mix.sh
 
 {% block bld_deps %}
 gnu/which/mix.sh
-env/autohell/mix.sh
+{{super()}}
 {% endblock %}
 
 {% block coflags %}

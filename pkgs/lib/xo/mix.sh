@@ -12,7 +12,7 @@ https://github.com/Juniper/libxo/archive/refs/tags/1.6.0.tar.gz
 {% block bld_deps %}
 dev/build/autoconf/2.71/mix.sh
 dev/build/automake/1.16.3/mix.sh
-env/autohell/mix.sh
+{{super()}}
 {% endblock %}
 
 {% block autoreconf %}

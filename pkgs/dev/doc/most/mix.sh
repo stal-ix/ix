@@ -7,5 +7,5 @@ https://www.jedsoft.org/releases/most/most-5.1.0.tar.gz
 
 {% block bld_deps %}
 lib/slang/mix.sh
-env/autohell/mix.sh
+{{super()}}
 {% endblock %}

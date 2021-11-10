@@ -1,5 +1,11 @@
 {% extends 'make.sh' %}
 
+{% block bld_deps %}
+{{super()}}
+dev/build/pkg-config/mix.sh
+env/std/mix.sh
+{% endblock %}
+
 {% block configure %}
 {% block autoreconf %}
 {% endblock %}

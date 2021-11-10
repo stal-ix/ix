@@ -7,7 +7,7 @@ d276213d3acd10339cd37848b8c4ab1e
 
 {% block bld_deps %}
 lib/curses/any/mix.sh
-env/autohell/mix.sh
+{{super()}}
 {% endblock %}
 
 {% block coflags %}

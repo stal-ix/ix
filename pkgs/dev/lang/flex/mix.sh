@@ -11,6 +11,6 @@ dev/lang/m4/mix.sh
 
 {% block bld_deps %}
 dev/doc/texinfo/mix.sh
-env/autohell/mix.sh
+{{super()}}
 boot/final/env/bison/mix.sh
 {% endblock %}

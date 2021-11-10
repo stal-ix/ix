@@ -12,7 +12,7 @@ lib/cap/mix.sh
 lib/seccomp/mix.sh
 lib/argp/standalone/mix.sh
 dev/lang/python/3/minimal/mix.sh
-env/autohell/mix.sh
+{{super()}}
 {% endblock %}
 
 {% block coflags %}

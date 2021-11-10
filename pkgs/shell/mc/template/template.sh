@@ -11,7 +11,7 @@ lib/glib/mix.sh
 lib/iconv/mix.sh
 lib/{{self.typ().strip()}}/mix.sh
 dev/lang/perl5/mix.sh
-env/autohell/mix.sh
+{{super()}}
 {% endblock %}
 
 {% block run_deps %}

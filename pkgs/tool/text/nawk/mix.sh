@@ -7,7 +7,7 @@ https://github.com/onetrueawk/awk/archive/c0f4e97e4561ff42544e92512bbaf3d7d1f6a6
 
 {% block bld_deps %}
 dev/lang/bison/3.7.6/mix.sh
-env/autohell/mix.sh
+{{super()}}
 {% endblock %}
 
 {% block install %}

@@ -9,7 +9,7 @@ c7016b513f701d88c70b3082eb183581
 lib/intl/mix.sh
 lib/edit/mix.sh
 lib/iconv/mix.sh
-env/autohell/mix.sh
+{{super()}}
 {% endblock %}
 
 {% block setup %}

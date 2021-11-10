@@ -12,7 +12,7 @@ a50fb1d7c40ac7fac3360218cb37a38b
 {% block bld_deps %}
 net/openssh/libs/mix.sh(openssl=1)
 gnu/patch/mix.sh
-env/autohell/mix.sh
+{{super()}}
 {% endblock %}
 
 {% block toolconf %}

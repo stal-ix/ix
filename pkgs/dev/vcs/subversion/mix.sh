@@ -7,7 +7,7 @@ https://archive.apache.org/dist/subversion/subversion-1.14.1.tar.bz2
 
 {% block bld_deps %}
 dev/vcs/subversion/libs/mix.sh(openssl=1)
-env/autohell/mix.sh
+{{super()}}
 {% endblock %}
 
 {% block run_deps %}

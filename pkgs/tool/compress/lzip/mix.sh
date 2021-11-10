@@ -7,5 +7,5 @@ f062faf68595d594a28fade73a43c001
 
 {% block bld_deps %}
 lib/c++/mix.sh
-env/autohell/mix.sh
+{{super()}}
 {% endblock %}

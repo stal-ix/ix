@@ -7,7 +7,7 @@ https://gmplib.org/download/gmp/gmp-6.2.1.tar.lz
 
 {% block bld_deps %}
 dev/lang/m4/mix.sh
-env/autohell/mix.sh
+{{super()}}
 {% endblock %}
 
 {% block env %}

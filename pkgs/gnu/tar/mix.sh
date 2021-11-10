@@ -11,5 +11,5 @@ lib/xz/mix.sh
 lib/intl/mix.sh
 lib/bzip2/mix.sh
 lib/iconv/mix.sh
-env/autohell/mix.sh
+{{super()}}
 {% endblock %}

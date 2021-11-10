@@ -13,7 +13,7 @@ lib/curses/any/mix.sh
 lib/event/mix.sh
 lib/utf8proc/mix.sh
 dev/lang/byacc/mix.sh
-env/autohell/mix.sh
+{{super()}}
 {% endblock %}
 
 {% block coflags %}

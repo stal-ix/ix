@@ -7,5 +7,5 @@ http://ftp.gnu.org/pub/gnu/gperf/gperf-3.1.tar.gz
 
 {% block bld_deps %}
 lib/c++/mix.sh
-env/autohell/mix.sh
+{{super()}}
 {% endblock %}

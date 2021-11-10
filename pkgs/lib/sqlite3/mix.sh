@@ -7,7 +7,7 @@ d1d1aba394c8e0443077dc9f1a681bb8
 
 {% block bld_deps %}
 lib/readline/mix.sh
-env/autohell/mix.sh
+{{super()}}
 {% endblock %}
 
 {% block setup %}

@@ -10,7 +10,7 @@ lib/z/mix.sh
 lib/curses/any/mix.sh
 gnu/patch/mix.sh
 gnu/tar/mix.sh
-env/autohell/mix.sh
+{{super()}}
 {% endblock %}
 
 {% block patch %}

@@ -14,7 +14,7 @@ lib/unistring/mix.sh
 {% block bld_deps %}
 dev/build/autoconf/2.69/mix.sh
 dev/build/automake/1.16.1/mix.sh
-env/autohell/mix.sh
+{{super()}}
 {% endblock %}
 
 {% block setup %}

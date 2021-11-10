@@ -8,7 +8,7 @@ https://strace.io/files/5.14/strace-5.14.tar.xz
 {% block bld_deps %}
 lib/linux/mix.sh
 lib/elfutils/mix.sh
-env/autohell/mix.sh
+{{super()}}
 {% endblock %}
 
 {% block coflags %}

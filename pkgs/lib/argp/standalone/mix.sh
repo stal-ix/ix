@@ -5,10 +5,6 @@ https://www.lysator.liu.se/~nisse/misc/argp-standalone-1.3.tar.gz
 720704bac078d067111b32444e24ba69
 {% endblock %}
 
-{% block bld_deps %}
-env/autohell/mix.sh
-{% endblock %}
-
 {% block patch %}
 cat << EOF | patch -p0
 {% include 'patch-argp-fmtstream.h' %}

@@ -10,10 +10,6 @@ lib/gmp/mix.sh
 lib/mpfr/mix.sh
 {% endblock %}
 
-{% block bld_deps %}
-env/autohell/mix.sh
-{% endblock %}
-
 {% block env %}
 export COFLAGS="--with-mpc=${out} \${COFLAGS}"
 {% endblock %}

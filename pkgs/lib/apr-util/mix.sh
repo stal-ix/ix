@@ -14,10 +14,6 @@ lib/sqlite3/mix.sh
 lib/openssl/mix.sh
 {% endblock %}
 
-{% block bld_deps %}
-env/autohell/mix.sh
-{% endblock %}
-
 {% block setup %}
 export CC=clang
 export CPP=cpp

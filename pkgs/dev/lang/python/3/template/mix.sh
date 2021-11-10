@@ -4,7 +4,7 @@
 dev/lang/python/libs/mix.sh
 {{'lib/linux/mix.sh' | linux}}
 {{'sys/framework/SystemConfiguration/mix.sh' | darwin}}
-env/autohell/mix.sh
+{{super()}}
 {% endblock %}
 
 {% block patch %}

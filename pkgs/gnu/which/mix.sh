@@ -8,5 +8,5 @@ https://ftp.gnu.org/gnu/which/which-2.21.tar.gz
 {% block bld_deps %}
 lib/intl/mix.sh
 lib/iconv/mix.sh
-env/autohell/mix.sh
+{{super()}}
 {% endblock %}

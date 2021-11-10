@@ -8,7 +8,7 @@ d2044f756db0853dd2da0a90dd42ab62
 {% block bld_deps %}
 dev/build/autoconf/2.71/mix.sh
 dev/build/automake/1.16.3/mix.sh
-env/autohell/mix.sh
+{{super()}}
 {% endblock %}
 
 {% block autoreconf %}

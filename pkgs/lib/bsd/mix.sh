@@ -11,7 +11,7 @@ lib/md/mix.sh
 
 {% block bld_deps %}
 lib/linux/mix.sh
-env/autohell/mix.sh
+{{super()}}
 {% endblock %}
 
 {% block setup %}

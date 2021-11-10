@@ -9,10 +9,6 @@ https://ftp.gnu.org/pub/gnu/gettext/gettext-0.21.tar.gz
 lib/iconv/mix.sh
 {% endblock %}
 
-{% block bld_deps %}
-env/autohell/mix.sh
-{% endblock %}
-
 {% block postunpack %}
 cd libtextstyle
 {% endblock %}

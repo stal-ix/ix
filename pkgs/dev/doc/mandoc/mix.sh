@@ -7,7 +7,7 @@ f0adf24e8fdef5f3e332191f653e422a
 
 {% block bld_deps %}
 lib/z/mix.sh
-env/autohell/mix.sh
+{{super()}}
 {% endblock %}
 
 {% block postconf %}

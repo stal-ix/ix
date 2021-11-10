@@ -9,7 +9,7 @@ a07438a6159a24c61f98f1bce2d479c0
 lib/z/mix.sh
 lib/tom/math/mix.sh
 lib/tom/crypt/mix.sh
-env/autohell/mix.sh
+{{super()}}
 {% endblock %}
 
 {% block enable_static %}

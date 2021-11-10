@@ -1,5 +1,10 @@
 {% extends 'template.sh' %}
 
+{% block bld_deps %}
+{{super()}}
+dev/build/make/mix.sh
+{% endblock %}
+
 {% set make_flags %}
 SHELL="$(command -v dash)"
 PREFIX="${out}"

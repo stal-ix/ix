@@ -10,5 +10,5 @@ lib/intl/mix.sh
 lib/pcre2/mix.sh
 lib/gnutls/mix.sh
 lib/metalink/mix.sh
-env/autohell/mix.sh
+{{super()}}
 {% endblock %}
