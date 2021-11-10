@@ -5,10 +5,6 @@ https://github.com/Kitware/CMake/releases/download/v3.21.4/cmake-3.21.4.tar.gz
 9d399e7a5032ef8cbe8eb23aad17e3c6
 {% endblock %}
 
-{% block lib_deps %}
-dev/build/samurai/mix.sh
-{% endblock %}
-
 {% block bld_deps %}
 {{'sys/framework/CoreFoundation/mix.sh' | darwin}}
 {{'lib/linux/mix.sh' | linux}}

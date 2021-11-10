@@ -1,6 +1,8 @@
 {% extends 'ninja.sh' %}
 
 {% block bld_deps %}
+{{super()}}
+{{'dev/lang/cctools/mix.sh' | darwin}}
 dev/build/meson/mix.sh
 {% endblock %}
 

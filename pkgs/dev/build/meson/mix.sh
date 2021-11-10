@@ -11,9 +11,7 @@ env/std/0/mix.sh
 {% endblock %}
 
 {% block run_deps %}
-{{'dev/lang/cctools/mix.sh' | darwin}}
 dev/lang/python/3/minimal/mix.sh
-dev/build/samurai/mix.sh
 {% endblock %}
 
 {% block build %}

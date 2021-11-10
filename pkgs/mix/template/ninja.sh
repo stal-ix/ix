@@ -1,5 +1,10 @@
 {% extends 'template.sh' %}
 
+{% block bld_deps %}
+{{super()}}
+dev/build/samurai/mix.sh
+{% endblock %}
+
 {% set ninja_build_dir %}{% block ninja_build_dir %}${tmp}/obj{% endblock %}{% endset %}
 
 {% set ninja_build_targets %}
