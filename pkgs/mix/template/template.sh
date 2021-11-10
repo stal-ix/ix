@@ -1,4 +1,4 @@
-{% extends 'base.sh' %}
+{% extends 'blocks.sh' %}
 
 {% block unpack %}
 {% include 'blocks/unpack.sh' %}
