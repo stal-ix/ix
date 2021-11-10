@@ -1,7 +1,7 @@
 {% extends '//mix/template/py.py' %}
 
 {% block run_deps %}
-env/gcc
+env/toolchain/cc/gcc/mix.sh
 {% endblock %}
 
 {% block build %}

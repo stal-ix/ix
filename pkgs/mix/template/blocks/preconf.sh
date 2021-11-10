@@ -28,7 +28,7 @@ chmod +x hostname
 
 ln -s $(command -v dash) sh
 
-setup_compiler
+setup_toolchain
 
 {% block toolconf %}
 {% endblock %}

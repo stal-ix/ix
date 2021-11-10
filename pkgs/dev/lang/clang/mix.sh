@@ -8,9 +8,7 @@ boot/final/env/clang/mix.sh
 {% endblock %}
 
 {% block run_deps %}
-env/clang/mix.sh
-env/lld/{{mix.platform.target.os}}/mix.sh
-env/compiler/mix.sh
+env/toolchain/mix.sh
 env/system/mix.sh
 {% endblock %}
 

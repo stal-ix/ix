@@ -1,3 +1,13 @@
+{% extends '//mix/template/py.py' %}
+
+{% block env %}
+export CLANG_LTO=""
+export CLANG_TARGET="--target={{mix.platform.target.arch}}-{{mix.platform.target.vendor}}-{{mix.platform.target.os}}"
+export CPPFLAGS="${CLANG_LTO} -nostdinc -nostdinc++ ${CLANG_TARGET} ${CPPFLAGS}"
+export CFLAGS="${CLANG_LTO} -fcolor-diagnostics ${CFLAGS}"
+export CXXFLAGS="${CLANG_LTO} -fcolor-diagnostics -Wno-stdlibcxx-not-found ${CXXFLAGS}"
+export LDFLAGS="${CLANG_LTO} -nostdlib++ -fcolor-diagnostics ${CLANG_TARGET} ${LDFLAGS}"
+
 setup_compiler() {
     cat << EOF > clang
 #!$(command -v dash)
@@ -23,18 +33,7 @@ EOF
     ln -s clang++ g++
     ln -s clang++ c++
 
-    ln -s "$(command -v llvm-ar)" ar
-    ln -s "$(command -v llvm-ranlib)" ranlib
-    ln -s "$(command -v llvm-nm)" nm
-
-    export LDFLAGS=
-    export LIBS=
-    export AR="$(command -v ar)"
-    export RANLIB="$(command -v ranlib)"
-    export CC="$(command -v clang)"
-    export CXX="$(command -v clang++)"
-    export CFLAGS=
-    export CPPFLAGS=
-    export CXXFLAGS=
-    export CONLYFLAGS=
+    export CC=clang
+    export CXX=clang++
 }
+{% endblock %}
