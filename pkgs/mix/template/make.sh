@@ -3,6 +3,7 @@
 {% block bld_deps %}
 {{super()}}
 dev/build/make/mix.sh
+env/std/mix.sh
 {% endblock %}
 
 {% set make_flags %}

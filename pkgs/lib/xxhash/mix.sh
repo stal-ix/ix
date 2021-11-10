@@ -1,4 +1,4 @@
-{% extends '//mix/template/template.sh' %}
+{% extends '//mix/template/make.sh' %}
 
 {% block fetch %}
 https://github.com/Cyan4973/xxHash/archive/refs/tags/v0.8.0.tar.gz
@@ -7,17 +7,12 @@ https://github.com/Cyan4973/xxHash/archive/refs/tags/v0.8.0.tar.gz
 
 {% block bld_deps %}
 lib/c++/mix.sh
-env/std/mix.sh
-dev/build/make/mix.sh
+{{super()}}
 {% endblock %}
 
 {% block build %}
 make -j ${make_thrs} all || echo > libxxhash.so.0.8.0
 make all
-{% endblock %}
-
-{% block install %}
-make prefix=${out} install
 {% endblock %}
 
 {% block test %}

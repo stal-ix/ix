@@ -9,11 +9,6 @@ e8d22351b7c95bef423c1cd02dcf836d
 lib/tom/math/mix.sh
 {% endblock %}
 
-{% block bld_deps %}
-dev/build/make/mix.sh
-env/std/mix.sh
-{% endblock %}
-
 {% block setup %}
 export CFLAGS="-DUSE_LTM -DLTM_DESC ${CFLAGS}"
 {% endblock %}

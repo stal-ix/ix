@@ -7,9 +7,8 @@ https://www.openssl.org/source/openssl-3.0.0.tar.gz
 
 {% block bld_deps %}
 {{'lib/linux/mix.sh' | linux}}
-dev/build/make/mix.sh
 dev/lang/perl5/mix.sh
-env/std/mix.sh
+{{super()}}
 {% endblock %}
 
 {% block setup %}

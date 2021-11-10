@@ -1,4 +1,4 @@
-{% extends '//mix/template/template.sh' %}
+{% extends '//mix/template/make.sh' %}
 
 {% block fetch %}
 https://storage.yandexcloud.net/mix-cache/unrarsrc-6.0.6.tar.gz
@@ -7,12 +7,11 @@ https://storage.yandexcloud.net/mix-cache/unrarsrc-6.0.6.tar.gz
 
 {% block bld_deps %}
 lib/c++/mix.sh
-dev/build/make/mix.sh
-env/std/mix.sh
+{{super()}}
 {% endblock %}
 
-{% block build %}
-make -j ${make_thrs} -f makefile
+{% block make_flags %}
+-f makefile
 {% endblock %}
 
 {% block install %}

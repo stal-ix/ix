@@ -12,11 +12,10 @@ lib/iconv/mix.sh
 lib/expat/mix.sh
 lib/pcre2/mix.sh
 lib/openssl/mix.sh
-dev/build/make/mix.sh
 dev/lang/perl5/mix.sh
 dev/lang/python/3/minimal/mix.sh
 gnu/gettext/mix.sh
-env/std/mix.sh
+{{super()}}
 {% endblock %}
 
 {% block run_deps %}

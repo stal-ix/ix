@@ -9,11 +9,6 @@ https://git.kernel.org/pub/scm/libs/libcap/libcap.git/snapshot/libcap-cap/v1.2.5
 lib/linux/mix.sh
 {% endblock %}
 
-{% block bld_deps %}
-dev/build/make/mix.sh
-env/std/mix.sh
-{% endblock %}
-
 {% block postunpack %}
 cd v*/libcap
 {% endblock %}

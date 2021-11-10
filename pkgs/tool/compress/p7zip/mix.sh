@@ -7,8 +7,7 @@ a0128d661cfe7cc8c121e73519c54fbf
 
 {% block bld_deps %}
 lib/c++/mix.sh
-dev/build/make/mix.sh
-env/std/mix.sh
+{{super()}}
 {% endblock %}
 
 {% block setup %}
@@ -27,7 +26,7 @@ DEST_DIR=${out}
 {% block postinstall %}
 (
     set -eu
-    
+
     cd ${out}/usr/local/ && mv * ${out}/
     rm -rf ${out}/usr
 )

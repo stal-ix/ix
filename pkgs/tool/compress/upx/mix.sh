@@ -9,10 +9,9 @@ bf5564f33fe9062bc48b53abd4b34223
 lib/z/mix.sh
 lib/c++/mix.sh
 lib/ucl/mix.sh
-dev/build/make/mix.sh
 shell/cli/bash/minimal/mix.sh
 dev/lang/perl5/mix.sh
-env/std/mix.sh
+{{super()}}
 {% endblock %}
 
 {% block setup %}

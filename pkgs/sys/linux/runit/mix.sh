@@ -5,11 +5,6 @@ http://smarden.org/runit/runit-2.1.2.tar.gz
 6c985fbfe3a34608eb3c53dc719172c4
 {% endblock %}
 
-{% block bld_deps %}
-env/std/mix.sh
-dev/build/make/mix.sh
-{% endblock %}
-
 {% block postunpack %}
 cd runit*
 {% endblock %}

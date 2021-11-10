@@ -1,4 +1,4 @@
-{% extends '//mix/template/template.sh' %}
+{% extends '//mix/template/make.sh' %}
 
 {% block fetch %}
 https://github.com/jeaye/stdman/archive/478d353c73bec79bbbad833a31c50eecd4578b46.zip
@@ -7,14 +7,12 @@ https://github.com/jeaye/stdman/archive/478d353c73bec79bbbad833a31c50eecd4578b46
 
 {% block bld_deps %}
 shell/cli/bash/minimal/mix.sh
-dev/build/make/mix.sh
-env/std/mix.sh
+{{super()}}
 {% endblock %}
 
 {% block configure %}
 bash ./configure --prefix="${out}"
 {% endblock %}
 
-{% block install %}
-make install
+{% block build %}
 {% endblock %}

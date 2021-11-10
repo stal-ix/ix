@@ -12,8 +12,7 @@ lib/z/mix.sh
 {% block boot_lisp_dep %}
 dev/lang/ecl/mix.sh
 {% endblock %}
-dev/build/make/mix.sh
-env/std/mix.sh
+{{super()}}
 {% endblock %}
 
 {% block setup %}
