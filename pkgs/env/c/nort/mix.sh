@@ -8,7 +8,6 @@ dev/lang/clang/mix.sh
 import os
 import sys
 
-
 os.chdir(os.environ['out'])
 os.makedirs('bin')
 os.chdir('bin')
