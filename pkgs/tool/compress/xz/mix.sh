@@ -2,7 +2,7 @@
 
 {% block bld_deps %}
 lib/xz/mix.sh
-env/tools/mix.sh
+env/std/0/mix.sh
 {% endblock %}
 
 {% block install %}
