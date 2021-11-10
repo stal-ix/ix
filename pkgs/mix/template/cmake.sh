@@ -2,7 +2,6 @@
 
 {% block bld_deps %}
 dev/build/cmake/mix.sh
-{{super()}}
 env/std/mix.sh
 {% endblock %}
 

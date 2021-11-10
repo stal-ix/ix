@@ -2,7 +2,6 @@
 
 {% block bld_deps %}
 dev/build/meson/mix.sh
-{{super()}}
 {% endblock %}
 
 {% set meson_flags %}
