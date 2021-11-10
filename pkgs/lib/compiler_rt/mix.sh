@@ -2,7 +2,7 @@
 
 {% block bld_deps %}
 lib/c/mix.sh
-env/c/nort/mix.sh
+dev/lang/clang/mix.sh
 boot/final/env/tools/mix.sh
 {% endblock %}
 

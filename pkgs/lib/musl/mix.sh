@@ -1,7 +1,7 @@
 {% extends '//lib/musl/template/mix.sh' %}
 
 {% block bld_deps %}
-env/c/nort/mix.sh
+dev/lang/clang/mix.sh
 boot/final/env/tools/mix.sh
 {% endblock %}
 

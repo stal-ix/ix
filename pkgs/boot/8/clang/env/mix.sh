@@ -1,9 +1,6 @@
-{% extends '//env/c/nort/mix.sh' %}
+{% extends '//mix/template/hub.sh' %}
 
-{% block lib_deps %}
+{% block deps %}
 boot/8/clang/mix.sh
-{% endblock %}
-
-{% block run_deps %}
 boot/8/env/box/mix.sh
 {% endblock %}

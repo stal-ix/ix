@@ -11,7 +11,7 @@ EOF
 
     cat << EOF > cpp
 #!$(command -v dash)
-$(command -v cpp) ${CPPFLAGS} "\$@"
+$(command -v clang-cpp) ${CPPFLAGS} "\$@"
 EOF
 
     chmod +x clang clang++ cpp
@@ -23,10 +23,16 @@ EOF
     ln -s clang++ g++
     ln -s clang++ c++
 
+    ln -s "$(command -v llvm-ar)" ar
+    ln -s "$(command -v llvm-ranlib)" ranlib
+    ln -s "$(command -v llvm-nm)" nm
+
     export LDFLAGS=
     export LIBS=
-    export CC=$(command -v clang)
-    export CXX=$(command -v clang++)
+    export AR="$(command -v ar)"
+    export RANLIB="$(command -v ranlib)"
+    export CC="$(command -v clang)"
+    export CXX="$(command -v clang++)"
     export CFLAGS=
     export CPPFLAGS=
     export CXXFLAGS=

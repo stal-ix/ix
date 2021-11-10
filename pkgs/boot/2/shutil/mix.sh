@@ -12,7 +12,7 @@ boot/1/env/mix.sh
 {% block script %}
 ${unzip} ${src}/*.zip && cd shutil*
 
-export CC=gcc
+export CC=clang
 
 . ./build.sh
 

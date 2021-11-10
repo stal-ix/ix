@@ -7,7 +7,7 @@ https://github.com/microsoft/mimalloc/archive/refs/tags/v2.0.2.tar.gz
 
 {% block bld_deps %}
 {{'lib/musl/mix.sh' | linux}}
-env/c/nort/mix.sh
+dev/lang/clang/mix.sh
 boot/final/env/tools/mix.sh
 {% endblock %}
 

@@ -19,10 +19,10 @@ export SHELL="$0"
 
 export ROOT=
 
-export AR=ar
+export AR=llvm-ar
 export CC=clang
 export LD=clang
-export RANLIB=ranlib
+export RANLIB=llvm-ranlib
 export CPPFLAGS="-D_BSD_SOURCE -w -Dgetopt=h_getopt -Doptarg=h_optarg -Doptind=h_optind -Dopterr=h_opterr -Doptopt=h_optopt -I../libcommon ${CPPFLAGS} -O0 -g"
 
 export MANDIR=${out}/man
@@ -40,7 +40,7 @@ export UCBINST=install
 export MANINST=install
 
 export PATH="${DEFBIN}:${PATH}"
-export MAKE="make RANLIB=${RANLIB}"
+export MAKE="make LD=${LD} CC=${CC} AR=${AR} RANLIB=${RANLIB}"
 
 >malloc.h
 
