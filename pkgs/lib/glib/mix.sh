@@ -23,7 +23,7 @@ env/std/0/mix.sh
 {% endblock %}
 
 {% block setup %}
-gcc -c -o main.o -x c - << EOF
+clang -c -o main.o -x c - << EOF
 
 int main() {}
 EOF

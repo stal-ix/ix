@@ -1,4 +1,4 @@
-{% extends '//mix/template/make.sh' %}
+{% extends '//mix/template/autohell.sh' %}
 
 {% block fetch %}
 https://common-lisp.net/project/ecl/static/files/release/ecl-21.2.1.tgz
@@ -9,7 +9,7 @@ https://common-lisp.net/project/ecl/static/files/release/ecl-21.2.1.tgz
 lib/boehmgc/mix.sh
 lib/gmp/mix.sh
 lib/ffi/mix.sh
-env/autohell/mix.sh
+{{super()}}
 {% endblock %}
 
 {% block postunpack %}
@@ -21,10 +21,7 @@ dash ../src/configure ${COFLAGS} \
     --enable-threads=yes \
     --enable-libatomic=system \
     --enable-gmp=system \
-    --with-gmp-prefix=$lib_gmp \
-    --with-libffi-prefix=$lib_ffi \
     --enable-boehm=yes \
-    --with-libgc-prefix=$lib_boehmgc \
     --disable-shared \
     --enable-static \
     --prefix=${out} \

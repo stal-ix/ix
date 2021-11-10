@@ -21,3 +21,7 @@ cat ${src}/*.patch* | patch -p1
 --enable-cplusplus
 --enable-large-config
 {% endblock %}
+
+{% block env %}
+export COFLAGS="--with-libgc-prefix=${out} \${COFLAGS}"
+{% endblock %}
