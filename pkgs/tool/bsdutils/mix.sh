@@ -16,9 +16,9 @@ lib/xo/mix.sh
 lib/edit/mix.sh
 lib/openssl/mix.sh
 lib/curses/any/mix.sh
-dev/build/meson/mix.sh
 dev/build/pkg-config/mix.sh
 dev/lang/flex/mix.sh
 dev/lang/byacc/mix.sh
+{{super()}}
 env/std/mix.sh
 {% endblock %}

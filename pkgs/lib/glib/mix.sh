@@ -18,7 +18,7 @@ sys/framework/Foundation/mix.sh
 {% endblock %}
 
 {% block bld_deps %}
-dev/build/meson/mix.sh
+{{super()}}
 env/std/0/mix.sh
 {% endblock %}
 
