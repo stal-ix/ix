@@ -1,7 +1,7 @@
 {% extends '//mix/template/py.py' %}
 
 {% block run_deps %}
-env/darwin/mix.sh
+env/os/darwin/mix.sh
 {% endblock %}
 
 {% block env %}

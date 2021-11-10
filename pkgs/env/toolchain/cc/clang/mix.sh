@@ -3,7 +3,7 @@
 {% block env %}
 export CLANG_LTO=""
 export CLANG_TARGET="--target={{mix.platform.target.arch}}-{{mix.platform.target.vendor}}-{{mix.platform.target.os}}"
-export CPPFLAGS="${CLANG_LTO} -nostdinc -nostdinc++ ${CLANG_TARGET} ${CPPFLAGS}"
+export CPPFLAGS="${CLANG_LTO} -Wno-unused-command-line-argument -nostdinc -nostdinc++ ${CLANG_TARGET} ${CPPFLAGS}"
 export CFLAGS="${CLANG_LTO} -fcolor-diagnostics ${CFLAGS}"
 export CXXFLAGS="${CLANG_LTO} -fcolor-diagnostics -Wno-stdlibcxx-not-found ${CXXFLAGS}"
 export LDFLAGS="${CLANG_LTO} -nostdlib++ -fcolor-diagnostics ${CLANG_TARGET} ${LDFLAGS}"
@@ -11,12 +11,12 @@ export LDFLAGS="${CLANG_LTO} -nostdlib++ -fcolor-diagnostics ${CLANG_TARGET} ${L
 setup_compiler() {
     cat << EOF > clang
 #!$(command -v dash)
-$(command -v clang) ${CPPFLAGS} ${CFLAGS} ${CONLYFLAGS} -Wno-unused-command-line-argument "\$@" ${LDFLAGS}
+$(command -v clang) ${CPPFLAGS} ${CFLAGS} ${CONLYFLAGS} "\$@" ${LDFLAGS}
 EOF
 
     cat << EOF > clang++
 #!$(command -v dash)
-$(command -v clang++) ${CPPFLAGS} ${CFLAGS} ${CONLYFLAGS} ${CXXFLAGS} -Wno-unused-command-line-argument "\$@" ${LDFLAGS}
+$(command -v clang++) ${CPPFLAGS} ${CFLAGS} ${CONLYFLAGS} ${CXXFLAGS} "\$@" ${LDFLAGS}
 EOF
 
     cat << EOF > cpp

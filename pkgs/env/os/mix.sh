@@ -2,5 +2,5 @@
 
 {% block deps %}
 env/release/mix.sh
-env/{{mix.platform.target.os}}/mix.sh
+env/os/{{mix.platform.target.os}}/mix.sh
 {% endblock %}

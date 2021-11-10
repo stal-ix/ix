@@ -9,7 +9,7 @@ boot/final/env/clang/mix.sh
 
 {% block run_deps %}
 env/toolchain/mix.sh
-env/system/mix.sh
+env/os/mix.sh
 {% endblock %}
 
 {% block fetch %}
