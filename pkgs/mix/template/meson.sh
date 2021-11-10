@@ -10,10 +10,8 @@
 
 {% block meson_flags %}
 {% endblock %}
-
-{{ninja_build_dir}}
 {% endset %}
 
 {% block configure %}
-meson {{mix.fix_list(meson_flags)}}
+meson {{mix.fix_list(meson_flags)}} {{ninja_build_dir}}
 {% endblock %}

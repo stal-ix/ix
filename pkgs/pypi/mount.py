@@ -19,8 +19,6 @@ env/std/mix.sh
 
 {% block run_deps %}
 {run}
-{% block extra_run_deps %}
-{% endblock %}
 {% endblock %}
 
 {% block unpack %}
@@ -53,8 +51,6 @@ cat exports
 
 {% block env %}
 export PYTHONPATH="${out}/lib/python:\${PYTHONPATH}"
-{% block extra_env %}
-{% endblock %}
 {% endblock %}
 '''
 
