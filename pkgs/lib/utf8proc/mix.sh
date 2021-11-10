@@ -6,7 +6,7 @@ https://github.com/JuliaStrings/utf8proc/archive/v2.6.1.tar.gz
 {% endblock %}
 
 {% block bld_deps %}
-env/autohell/mix.sh
+env/std/0/mix.sh
 {% endblock %}
 
 {% block build %}
