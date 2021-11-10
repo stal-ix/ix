@@ -1,5 +1,11 @@
 {% extends 'ninja.sh' %}
 
+{% block bld_deps %}
+dev/build/cmake/mix.sh
+{{super()}}
+env/std/mix.sh
+{% endblock %}
+
 {% set cmflags %}
 -DCMAKE_INSTALL_PREFIX="${out}"
 -DCMAKE_C_COMPILER="$(command -v clang)"

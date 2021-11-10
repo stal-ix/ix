@@ -16,9 +16,8 @@ lib/uchardet/mix.sh
 lib/fmt/mix.sh
 {{'lib/linux/mix.sh' | linux}}
 dev/build/pkg-config/mix.sh
-dev/build/cmake/mix.sh
 dev/lang/m4/mix.sh
-env/std/mix.sh
+{{super()}}
 {% endblock %}
 
 {% block patch %}

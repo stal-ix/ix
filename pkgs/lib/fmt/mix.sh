@@ -8,8 +8,3 @@ https://github.com/fmtlib/fmt/archive/refs/tags/7.1.3.tar.gz
 {% block lib_deps %}
 lib/c++/mix.sh
 {% endblock %}
-
-{% block bld_deps %}
-dev/build/cmake/mix.sh
-env/std/mix.sh
-{% endblock %}

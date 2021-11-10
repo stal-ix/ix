@@ -2,8 +2,7 @@
 
 {% block bld_deps %}
 dev/lang/python/3/minimal/mix.sh
-dev/build/cmake/mix.sh
-env/std/mix.sh
+{{super()}}
 {% endblock %}
 
 {% block cmflags %}

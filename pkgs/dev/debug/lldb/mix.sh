@@ -13,9 +13,8 @@ lib/edit/mix.sh
 lib/xz/mix.sh
 lib/xml2/mix.sh
 dev/lang/python/3/10/lib/mix.sh
-dev/build/cmake/mix.sh
 dev/tool/swig/4/mix.sh
-env/std/mix.sh
+{{super()}}
 {% endblock %}
 
 {% block patch %}

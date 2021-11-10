@@ -11,11 +11,6 @@ lib/curl/mix.sh
 lib/iconv/mix.sh
 {% endblock %}
 
-{% block bld_deps %}
-dev/build/cmake/mix.sh
-env/std/mix.sh
-{% endblock %}
-
 {% block setup %}
 export CPPFLAGS="-Dstricmp=xerces_stricmp -Dstrnicmp=xerces_strnicmp ${CPPFLAGS}"
 export CXXFLAGS="-w ${CXXFLAGS}"

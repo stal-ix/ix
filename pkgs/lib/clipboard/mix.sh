@@ -10,7 +10,6 @@ bddc22070b6804ed63994af49b778b70
 {% endblock %}
 
 {% block bld_deps %}
-dev/build/cmake/mix.sh
 dev/build/pkg-config/mix.sh
-env/std/mix.sh
+{{super()}}
 {% endblock %}

@@ -11,8 +11,7 @@ lib/fmt/mix.sh
 lib/magic/mix.sh
 lib/tvision/mix.sh
 lib/clipboard/mix.sh
-dev/build/cmake/mix.sh
-env/std/mix.sh
+{{super()}}
 {% endblock %}
 
 {% block patch %}

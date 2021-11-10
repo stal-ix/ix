@@ -10,8 +10,3 @@ lib/c++/mix.sh
 {{'lib/linux/mix.sh' | linux}}
 lib/curses/any
 {% endblock %}
-
-{% block bld_deps %}
-dev/build/cmake/mix.sh
-env/std/mix.sh
-{% endblock %}

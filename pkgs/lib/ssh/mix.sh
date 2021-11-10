@@ -10,8 +10,3 @@ lib/z/mix.sh
 lib/c++/mix.sh
 lib/openssl/mix.sh
 {% endblock %}
-
-{% block bld_deps %}
-dev/build/cmake/mix.sh
-env/std/mix.sh
-{% endblock %}
