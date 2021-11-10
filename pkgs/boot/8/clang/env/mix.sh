@@ -1,4 +1,4 @@
-{% extends '//mix/template/py.py' %}
+{% extends '//env/c/nort/mix.sh' %}
 
 {% block lib_deps %}
 boot/8/clang/mix.sh
@@ -6,8 +6,4 @@ boot/8/clang/mix.sh
 
 {% block run_deps %}
 boot/8/env/box/mix.sh
-{% endblock %}
-
-{% block build %}
-{% include '//mix/template/build_stdenv.py' %}
 {% endblock %}
