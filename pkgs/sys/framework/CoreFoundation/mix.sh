@@ -1,5 +1,5 @@
-{% extends '//mix/template/py.py' %}
+{% extends '//sys/framework/mix.sh' %}
 
-{% block env %}
-export LDFLAGS="-F${OSX_SDK}/System/Library/Frameworks -framework CoreFoundation ${LDFLAGS}"
+{% block framework %}
+CoreFoundation
 {% endblock %}

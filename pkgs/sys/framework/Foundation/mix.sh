@@ -1,5 +1,5 @@
-{% extends '//mix/template/py.py' %}
+{% extends '//sys/framework/mix.sh' %}
 
-{% block env %}
-export LDFLAGS="-framework Foundation ${LDFLAGS}"
+{% block framework %}
+Foundation
 {% endblock %}

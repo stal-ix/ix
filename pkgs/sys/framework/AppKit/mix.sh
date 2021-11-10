@@ -1,5 +1,5 @@
-{% extends '//mix/template/py.py' %}
+{% extends '//sys/framework/mix.sh' %}
 
-{% block env %}
-export LDFLAGS="-framework AppKit ${LDFLAGS}"
+{% block framework %}
+AppKit
 {% endblock %}
