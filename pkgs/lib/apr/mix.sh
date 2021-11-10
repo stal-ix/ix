@@ -10,9 +10,9 @@ https://archive.apache.org/dist/apr/apr-1.7.0.tar.bz2
 {% endblock %}
 
 {% block postinstall %}
-cd ${out}/build-1
+cd ${out}
 
-for x in libtool apr_rules.mk; do
+for x in "bin/apr-1-config" "build-1/libtool" "build-1/apr_rules.mk"; do
     cat ${x} | grep -v 'build.*tools' > _ && mv _ ${x} && chmod +x ${x}
 done
 {% endblock %}

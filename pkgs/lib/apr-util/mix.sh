@@ -14,11 +14,6 @@ lib/sqlite3/mix.sh
 lib/openssl/mix.sh
 {% endblock %}
 
-{% block setup %}
-export CC=clang
-export CPP=cpp
-{% endblock %}
-
 {% block coflags %}
 --with-dbm=gdbm
 --disable-util-dso
