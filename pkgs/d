@@ -1,0 +1,1449 @@
+diff --git a/pkgs/boot/2/sbase/mix.sh b/pkgs/boot/2/sbase/mix.sh
+index c3ada9b..a3b50e9 100644
+--- a/pkgs/boot/2/sbase/mix.sh
++++ b/pkgs/boot/2/sbase/mix.sh
+@@ -1,5 +1,8 @@
+ {% extends '//tool/sbase/mix.sh' %}
+ 
++{% block bin_deps %}
++{% endblock %}
++
+ {% block bld_deps %}
+ boot/2/heirloom/mix.sh
+ boot/2/bmake/mix.sh
+diff --git a/pkgs/boot/3/lib/musl/mix.sh b/pkgs/boot/3/lib/musl/mix.sh
+index f7a1e08..53a063a 100644
+--- a/pkgs/boot/3/lib/musl/mix.sh
++++ b/pkgs/boot/3/lib/musl/mix.sh
+@@ -1,5 +1,8 @@
+ {% extends '//lib/musl/template/mix.sh' %}
+ 
++{% block bin_deps %}
++{% endblock %}
++
+ {% block bld_deps %}
+ boot/3/make/mix.sh
+ boot/2/env/mix.sh
+diff --git a/pkgs/boot/3/make/mix.sh b/pkgs/boot/3/make/mix.sh
+index 5a230dc..5a52944 100644
+--- a/pkgs/boot/3/make/mix.sh
++++ b/pkgs/boot/3/make/mix.sh
+@@ -1,7 +1,10 @@
+ {% extends '//dev/build/make/mix.sh' %}
+ 
+-{% block bld_deps %}
++{% block bin_deps %}
+ {{'boot/1/musl/mix.sh' | linux}}
++{% endblock %}
++
++{% block bld_deps %}
+ boot/2/env/mix.sh
+ {% endblock %}
+ 
+diff --git a/pkgs/boot/4/byacc/mix.sh b/pkgs/boot/4/byacc/mix.sh
+index b251fc4..685ce27 100644
+--- a/pkgs/boot/4/byacc/mix.sh
++++ b/pkgs/boot/4/byacc/mix.sh
+@@ -1,5 +1,8 @@
+ {% extends '//dev/lang/byacc/mix.sh' %}
+ 
++{% block bin_deps %}
++{% endblock %}
++
+ {% block bld_deps %}
+ boot/3/env/mix.sh
+ {% endblock %}
+diff --git a/pkgs/boot/4/coreutils/mix.sh b/pkgs/boot/4/coreutils/mix.sh
+index 5f05b23..8811bef 100644
+--- a/pkgs/boot/4/coreutils/mix.sh
++++ b/pkgs/boot/4/coreutils/mix.sh
+@@ -1,5 +1,8 @@
+ {% extends '//gnu/coreutils/8.31/mix.sh' %}
+ 
++{% block bin_deps %}
++{% endblock %}
++
+ {% block bld_deps %}
+ boot/4/patch/mix.sh
+ boot/4/byacc/mix.sh
+diff --git a/pkgs/boot/4/mawk/mix.sh b/pkgs/boot/4/mawk/mix.sh
+index 9facd5a..5f41d27 100644
+--- a/pkgs/boot/4/mawk/mix.sh
++++ b/pkgs/boot/4/mawk/mix.sh
+@@ -1,5 +1,8 @@
+ {% extends '//tool/text/mawk/mix.sh' %}
+ 
++{% block bin_deps %}
++{% endblock %}
++
+ {% block bld_deps %}
+ boot/4/byacc/mix.sh
+ boot/3/env/mix.sh
+diff --git a/pkgs/boot/4/patch/mix.sh b/pkgs/boot/4/patch/mix.sh
+index 0d412f7..00ddb6d 100644
+--- a/pkgs/boot/4/patch/mix.sh
++++ b/pkgs/boot/4/patch/mix.sh
+@@ -1,5 +1,8 @@
+ {% extends '//gnu/patch/mix.sh' %}
+ 
++{% block bin_deps %}
++{% endblock %}
++
+ {% block bld_deps %}
+ boot/4/mawk/mix.sh
+ boot/4/byacc/mix.sh
+diff --git a/pkgs/boot/5/gawk/mix.sh b/pkgs/boot/5/gawk/mix.sh
+index ad4c1d6..49720de 100644
+--- a/pkgs/boot/5/gawk/mix.sh
++++ b/pkgs/boot/5/gawk/mix.sh
+@@ -1,5 +1,8 @@
+ {% extends '//gnu/gawk/mix.sh' %}
+ 
++{% block bin_deps %}
++{% endblock %}
++
+ {% block bld_deps %}
+ boot/4/byacc/mix.sh
+ boot/4/env/mix.sh
+diff --git a/pkgs/boot/5/grep/mix.sh b/pkgs/boot/5/grep/mix.sh
+index 64a9462..6d2356c 100644
+--- a/pkgs/boot/5/grep/mix.sh
++++ b/pkgs/boot/5/grep/mix.sh
+@@ -1,5 +1,8 @@
+ {% extends '//gnu/grep/mix.sh' %}
+ 
++{% block bin_deps %}
++{% endblock %}
++
+ {% block bld_deps %}
+ boot/4/env/mix.sh
+ {% endblock %}
+diff --git a/pkgs/boot/5/make/mix.sh b/pkgs/boot/5/make/mix.sh
+index 8df510a..3c2fd71 100644
+--- a/pkgs/boot/5/make/mix.sh
++++ b/pkgs/boot/5/make/mix.sh
+@@ -1,5 +1,8 @@
+ {% extends '//dev/build/make/mix.sh' %}
+ 
++{% block bin_deps %}
++{% endblock %}
++
+ {% block bld_deps %}
+ boot/4/env/mix.sh
+ {% endblock %}
+diff --git a/pkgs/boot/5/sed/mix.sh b/pkgs/boot/5/sed/mix.sh
+index 6d7b883..5562401 100644
+--- a/pkgs/boot/5/sed/mix.sh
++++ b/pkgs/boot/5/sed/mix.sh
+@@ -1,5 +1,8 @@
+ {% extends '//gnu/sed/mix.sh' %}
+ 
++{% block bin_deps %}
++{% endblock %}
++
+ {% block bld_deps %}
+ boot/4/env/mix.sh
+ {% endblock %}
+diff --git a/pkgs/dev/build/cmake/mix.sh b/pkgs/dev/build/cmake/mix.sh
+index 51ea2b6..c6d67a0 100644
+--- a/pkgs/dev/build/cmake/mix.sh
++++ b/pkgs/dev/build/cmake/mix.sh
+@@ -5,7 +5,7 @@ https://github.com/Kitware/CMake/releases/download/v3.21.4/cmake-3.21.4.tar.gz
+ 9d399e7a5032ef8cbe8eb23aad17e3c6
+ {% endblock %}
+ 
+-{% block bld_deps %}
++{% block bin_deps %}
+ {{'sys/framework/CoreFoundation/mix.sh' | darwin}}
+ {{'lib/linux/mix.sh' | linux}}
+ lib/z/mix.sh
+@@ -17,6 +17,9 @@ lib/bzip2/mix.sh
+ lib/expat/mix.sh
+ lib/archive/mix.sh
+ lib/curses/any/mix.sh
++{% endblock %}
++
++{% block bld_deps %}
+ env/std/mix.sh
+ boot/final/env/tools/mix.sh
+ {% endblock %}
+diff --git a/pkgs/dev/build/make/mix.sh b/pkgs/dev/build/make/mix.sh
+index 88bd6df..e0faefc 100644
+--- a/pkgs/dev/build/make/mix.sh
++++ b/pkgs/dev/build/make/mix.sh
+@@ -5,9 +5,12 @@ https://ftp.gnu.org/gnu/make/make-4.3.tar.gz
+ fc7a67ea86ace13195b0bce683fd4469
+ {% endblock %}
+ 
+-{% block bld_deps %}
++{% block bin_deps %}
+ lib/intl/mix.sh
+ lib/iconv/mix.sh
++{% endblock %}
++
++{% block bld_deps %}
+ env/std/0/mix.sh
+ {% endblock %}
+ 
+diff --git a/pkgs/dev/build/ninja/mix.sh b/pkgs/dev/build/ninja/mix.sh
+index 79880ca..832de89 100644
+--- a/pkgs/dev/build/ninja/mix.sh
++++ b/pkgs/dev/build/ninja/mix.sh
+@@ -5,8 +5,11 @@ https://github.com/ninja-build/ninja/archive/refs/tags/v1.10.2.tar.gz
+ 639f75bc2e3b19ab893eaf2c810d4eb4
+ {% endblock %}
+ 
+-{% block bld_deps %}
++{% block bin_deps %}
+ lib/c++/mix.sh
++{% endblock %}
++
++{% block bld_deps %}
+ dev/lang/python/3/minimal/mix.sh
+ {{super()}}
+ {% endblock %}
+diff --git a/pkgs/dev/build/pkg-config/mix.sh b/pkgs/dev/build/pkg-config/mix.sh
+index 3c388af..99888cb 100644
+--- a/pkgs/dev/build/pkg-config/mix.sh
++++ b/pkgs/dev/build/pkg-config/mix.sh
+@@ -5,11 +5,14 @@ https://pkg-config.freedesktop.org/releases/pkg-config-0.29.2.tar.gz
+ f6e931e319531b736fadc017f470e68a
+ {% endblock %}
+ 
+-{% block bld_deps %}
+-env/std/mix.sh
++{% block bin_deps %}
+ lib/intl/mix.sh
+ lib/glib/mix.sh
+ lib/iconv/mix.sh
++{% endblock %}
++
++{% block bld_deps %}
++env/std/mix.sh
+ boot/final/env/tools/mix.sh
+ {% endblock %}
+ 
+diff --git a/pkgs/dev/debug/gdb/mix.sh b/pkgs/dev/debug/gdb/mix.sh
+index 38c9992..4fa1c94 100644
+--- a/pkgs/dev/debug/gdb/mix.sh
++++ b/pkgs/dev/debug/gdb/mix.sh
+@@ -4,7 +4,7 @@
+ {% include 'version.sh' %}
+ {% endblock %}
+ 
+-{% block bld_deps %}
++{% block bin_deps %}
+ dev/debug/gdb/py/mix.sh(edit=readline)
+ {{'lib/linux/mix.sh' | linux}}
+ lib/intel-pt/mix.sh
+@@ -20,6 +20,9 @@ lib/gmp/mix.sh
+ lib/mpfr/mix.sh
+ lib/mpc/mix.sh
+ lib/xxhash/mix.sh
++{% endblock %}
++
++{% block bld_deps %}
+ dev/lang/byacc/mix.sh
+ dev/lang/flex/mix.sh
+ dev/doc/texinfo/mix.sh
+diff --git a/pkgs/dev/debug/gdb/py/mix.sh b/pkgs/dev/debug/gdb/py/mix.sh
+index 09d0cdd..a1de880 100644
+--- a/pkgs/dev/debug/gdb/py/mix.sh
++++ b/pkgs/dev/debug/gdb/py/mix.sh
+@@ -8,8 +8,11 @@
+ dev/lang/python/3/10/lib/mix.sh
+ {% endblock %}
+ 
+-{% block bld_deps %}
++{% block bin_deps %}
+ pypi/pygments/mix.sh
++{% endblock %}
++
++{% block bld_deps %}
+ env/std/mix.sh
+ {% endblock %}
+ 
+diff --git a/pkgs/dev/debug/lldb/mix.sh b/pkgs/dev/debug/lldb/mix.sh
+index a255e5d..3098219 100644
+--- a/pkgs/dev/debug/lldb/mix.sh
++++ b/pkgs/dev/debug/lldb/mix.sh
+@@ -4,7 +4,7 @@
+ {% include '//mix/template/fetch_llvm.sh' %}
+ {% endblock %}
+ 
+-{% block bld_deps %}
++{% block bin_deps %}
+ {{'lib/linux/mix.sh' | linux}}
+ {{'sys/framework/CoreFoundation/mix.sh' | darwin}}
+ lib/c++/mix.sh
+@@ -13,6 +13,9 @@ lib/edit/mix.sh
+ lib/xz/mix.sh
+ lib/xml2/mix.sh
+ dev/lang/python/3/10/lib/mix.sh
++{% endblock %}
++
++{% block bld_deps %}
+ dev/tool/swig/4/mix.sh
+ {{super()}}
+ {% endblock %}
+diff --git a/pkgs/dev/debug/strace/mix.sh b/pkgs/dev/debug/strace/mix.sh
+index 810b950..a56b568 100644
+--- a/pkgs/dev/debug/strace/mix.sh
++++ b/pkgs/dev/debug/strace/mix.sh
+@@ -5,10 +5,9 @@ https://strace.io/files/5.14/strace-5.14.tar.xz
+ 36c1c17f31855617b7898d2fd5abb9e2
+ {% endblock %}
+ 
+-{% block bld_deps %}
++{% block bin_deps %}
+ lib/linux/mix.sh
+ lib/elfutils/mix.sh
+-{{super()}}
+ {% endblock %}
+ 
+ {% block coflags %}
+diff --git a/pkgs/dev/doc/groff/mix.sh b/pkgs/dev/doc/groff/mix.sh
+index 91c4173..5fcf9b0 100644
+--- a/pkgs/dev/doc/groff/mix.sh
++++ b/pkgs/dev/doc/groff/mix.sh
+@@ -5,9 +5,12 @@ https://ftp.gnu.org/gnu/groff/groff-1.22.4.tar.gz
+ 08fb04335e2f5e73f23ea4c3adbf0c5f
+ {% endblock %}
+ 
+-{% block bld_deps %}
++{% block bin_deps %}
+ lib/c++/mix.sh
+ lib/uchardet/mix.sh
++{% endblock %}
++
++{% block bld_deps %}
+ dev/lang/perl5/mix.sh
+ dev/lang/bison/3.7.6/mix.sh
+ dev/doc/texinfo/mix.sh
+diff --git a/pkgs/dev/doc/mandoc/mix.sh b/pkgs/dev/doc/mandoc/mix.sh
+index 9420310..6456989 100644
+--- a/pkgs/dev/doc/mandoc/mix.sh
++++ b/pkgs/dev/doc/mandoc/mix.sh
+@@ -5,9 +5,8 @@ http://mandoc.bsd.lv/snapshots/mandoc-1.14.6.tar.gz
+ f0adf24e8fdef5f3e332191f653e422a
+ {% endblock %}
+ 
+-{% block bld_deps %}
++{% block bin_deps %}
+ lib/z/mix.sh
+-{{super()}}
+ {% endblock %}
+ 
+ {% block configure %}
+diff --git a/pkgs/dev/doc/most/mix.sh b/pkgs/dev/doc/most/mix.sh
+index abf7d1b..dac801e 100644
+--- a/pkgs/dev/doc/most/mix.sh
++++ b/pkgs/dev/doc/most/mix.sh
+@@ -5,7 +5,6 @@ https://www.jedsoft.org/releases/most/most-5.1.0.tar.gz
+ 0dc19e6045f689686e8579b2835cfdc6
+ {% endblock %}
+ 
+-{% block bld_deps %}
++{% block bin_deps %}
+ lib/slang/mix.sh
+-{{super()}}
+ {% endblock %}
+diff --git a/pkgs/dev/doc/texinfo/mix.sh b/pkgs/dev/doc/texinfo/mix.sh
+index e5d776f..b4e2b7c 100644
+--- a/pkgs/dev/doc/texinfo/mix.sh
++++ b/pkgs/dev/doc/texinfo/mix.sh
+@@ -5,8 +5,11 @@ https://ftp.gnu.org/gnu/texinfo/texinfo-6.8.tar.xz
+ a91b404e30561a5df803e6eb3a53be71
+ {% endblock %}
+ 
+-{% block bld_deps %}
++{% block bin_deps %}
+ lib/curses/any/mix.sh
++{% endblock %}
++
++{% block bld_deps %}
+ dev/lang/perl5/mix.sh
+ env/std/0/mix.sh
+ {% endblock %}
+diff --git a/pkgs/dev/lang/bison/3.7.6/mix.sh b/pkgs/dev/lang/bison/3.7.6/mix.sh
+index a9d2843..0242019 100644
+--- a/pkgs/dev/lang/bison/3.7.6/mix.sh
++++ b/pkgs/dev/lang/bison/3.7.6/mix.sh
+@@ -9,8 +9,11 @@ d61aa92e3562cb7292b004ce96173cf7
+ dev/lang/m4/mix.sh
+ {% endblock %}
+ 
+-{% block bld_deps %}
++{% block bin_deps %}
+ lib/intl/mix.sh
++{% endblock %}
++
++{% block bld_deps %}
+ dev/lang/m4/mix.sh
+ dev/lang/flex/mix.sh
+ dev/lang/perl5/mix.sh
+diff --git a/pkgs/dev/lang/cctools/mix.sh b/pkgs/dev/lang/cctools/mix.sh
+index b5b5a8b..fa24186 100644
+--- a/pkgs/dev/lang/cctools/mix.sh
++++ b/pkgs/dev/lang/cctools/mix.sh
+@@ -5,8 +5,11 @@ https://github.com/tpoechtrager/cctools-port/archive/236a426c1205a3bfcf0dbb2e2fa
+ 3ba3b9f5e6ebc2afe77cdafeaaeeb981
+ {% endblock %}
+ 
+-{% block bld_deps %}
++{% block bin_deps %}
+ lib/c++/mix.sh
++{% endblock %}
++
++{% block bld_deps %}
+ dev/build/autoconf/2.69/mix.sh
+ dev/build/automake/1.16.3/mix.sh
+ env/std/0/mix.sh
+diff --git a/pkgs/dev/lang/clang/mix.sh b/pkgs/dev/lang/clang/mix.sh
+index 3b8f421..4703d6e 100644
+--- a/pkgs/dev/lang/clang/mix.sh
++++ b/pkgs/dev/lang/clang/mix.sh
+@@ -1,9 +1,12 @@
+ {% extends '//mix/template/cmake.sh' %}
+ 
+-{% block bld_deps %}
++{% block bin_deps %}
+ {{'lib/linux/mix.sh' | linux}}
+ {{'sys/framework/CoreFoundation/mix.sh' | darwin}}
+ boot/final/cxx/mix.sh
++{% endblock %}
++
++{% block bld_deps %}
+ boot/final/env/clang/mix.sh
+ {% endblock %}
+ 
+diff --git a/pkgs/dev/lang/ecl/mix.sh b/pkgs/dev/lang/ecl/mix.sh
+index 042d1d6..196e3b7 100644
+--- a/pkgs/dev/lang/ecl/mix.sh
++++ b/pkgs/dev/lang/ecl/mix.sh
+@@ -5,11 +5,10 @@ https://common-lisp.net/project/ecl/static/files/release/ecl-21.2.1.tgz
+ 0c9e0437dbf3a7f1b00da32b7794a3b0
+ {% endblock %}
+ 
+-{% block bld_deps %}
++{% block bin_deps %}
+ lib/boehmgc/mix.sh
+ lib/gmp/mix.sh
+ lib/ffi/mix.sh
+-{{super()}}
+ {% endblock %}
+ 
+ {% block unpack %}
+diff --git a/pkgs/dev/lang/m4/mix.sh b/pkgs/dev/lang/m4/mix.sh
+index 6afa4f4..11a690f 100644
+--- a/pkgs/dev/lang/m4/mix.sh
++++ b/pkgs/dev/lang/m4/mix.sh
+@@ -5,9 +5,12 @@ https://ftp.gnu.org/gnu/m4/m4-1.4.19.tar.xz
+ 0d90823e1426f1da2fd872df0311298d
+ {% endblock %}
+ 
+-{% block bld_deps %}
++{% block bin_deps %}
+ lib/intl/mix.sh
+ lib/sigsegv/mix.sh
++{% endblock %}
++
++{% block bld_deps %}
+ dev/build/help2man/mix.sh
+ env/std/0/mix.sh
+ {% endblock %}
+diff --git a/pkgs/dev/lang/mrustc/mix.sh b/pkgs/dev/lang/mrustc/mix.sh
+index db0f83e..65b32c0 100644
+--- a/pkgs/dev/lang/mrustc/mix.sh
++++ b/pkgs/dev/lang/mrustc/mix.sh
+@@ -9,12 +9,15 @@ https://static.rust-lang.org/dist/rustc-1.19.0-src.tar.gz
+ 75e779670ac79edf023497a9c37eb35d
+ {% endblock %}
+ 
+-{% block bld_deps %}
++{% block bin_deps %}
+ lib/z/mix.sh
+ lib/c++/mix.sh
+ lib/curl/mix.sh
+ lib/iconv/mix.sh
+ lib/openssl/mix.sh
++{% endblock %}
++
++{% block bld_deps %}
+ tool/curl/mix.sh
+ shell/cli/bash/minimal/mix.sh
+ dev/vcs/git/mix.sh
+diff --git a/pkgs/dev/lang/perl5/mix.sh b/pkgs/dev/lang/perl5/mix.sh
+index c05d81c..1c47a3a 100644
+--- a/pkgs/dev/lang/perl5/mix.sh
++++ b/pkgs/dev/lang/perl5/mix.sh
+@@ -5,11 +5,14 @@ https://www.cpan.org/src/5.0/perl-5.34.0.tar.gz
+ 2acf2ef147e41730e572251ed079bc1a
+ {% endblock %}
+ 
+-{% block bld_deps %}
++{% block bin_deps %}
+ lib/z/mix.sh
+ lib/dlfcn/mix.sh
+ lib/gdbm/mix.sh
+ lib/iconv/mix.sh
++{% endblock %}
++
++{% block bld_deps %}
+ shell/cli/bash/minimal/mix.sh
+ env/std/0/mix.sh
+ {% endblock %}
+diff --git a/pkgs/dev/lang/python/3/minimal/mix.sh b/pkgs/dev/lang/python/3/minimal/mix.sh
+index fdc4abd..8f73137 100644
+--- a/pkgs/dev/lang/python/3/minimal/mix.sh
++++ b/pkgs/dev/lang/python/3/minimal/mix.sh
+@@ -1,9 +1,12 @@
+ {% extends '//dev/lang/python/3/10/mix.sh' %}
+ 
+-{% block bld_deps %}
++{% block bin_deps %}
+ {{'lib/linux/mix.sh' | linux}}
+ {{'sys/framework/SystemConfiguration/mix.sh' | darwin}}
+ lib/z/mix.sh
++{% endblock %}
++
++{% block bld_deps %}
+ env/std/0/mix.sh
+ {% endblock %}
+ 
+diff --git a/pkgs/dev/lang/python/3/template/mix.sh b/pkgs/dev/lang/python/3/template/mix.sh
+index a7cec2d..5a7b75d 100644
+--- a/pkgs/dev/lang/python/3/template/mix.sh
++++ b/pkgs/dev/lang/python/3/template/mix.sh
+@@ -1,10 +1,9 @@
+ {% extends '//mix/template/autohell.sh' %}
+ 
+-{% block bld_deps %}
++{% block bin_deps %}
+ dev/lang/python/libs/mix.sh
+ {{'lib/linux/mix.sh' | linux}}
+ {{'sys/framework/SystemConfiguration/mix.sh' | darwin}}
+-{{super()}}
+ {% endblock %}
+ 
+ {% block patch %}
+diff --git a/pkgs/dev/lang/sbcl/boot/mix.sh b/pkgs/dev/lang/sbcl/boot/mix.sh
+index e9de527..6780819 100644
+--- a/pkgs/dev/lang/sbcl/boot/mix.sh
++++ b/pkgs/dev/lang/sbcl/boot/mix.sh
+@@ -5,10 +5,13 @@ https://nav.dl.sourceforge.net/project/sbcl/sbcl/2.1.7/sbcl-2.1.7-source.tar.bz2
+ 3f21dbcab14b4aa51b9a9f03c2b78b9c
+ {% endblock %}
+ 
+-{% block bld_deps %}
++{% block bin_deps %}
+ lib/dlfcn/mix.sh
+ lib/z/mix.sh
+ {{'lib/linux/mix.sh' | linux}}
++{% endblock %}
++
++{% block bld_deps %}
+ {% block boot_lisp_dep %}
+ dev/lang/ecl/mix.sh
+ {% endblock %}
+diff --git a/pkgs/dev/tool/gperf/mix.sh b/pkgs/dev/tool/gperf/mix.sh
+index ef407a0..0b923a2 100644
+--- a/pkgs/dev/tool/gperf/mix.sh
++++ b/pkgs/dev/tool/gperf/mix.sh
+@@ -5,7 +5,6 @@ http://ftp.gnu.org/pub/gnu/gperf/gperf-3.1.tar.gz
+ 9e251c0a618ad0824b51117d5d9db87e
+ {% endblock %}
+ 
+-{% block bld_deps %}
++{% block bin_deps %}
+ lib/c++/mix.sh
+-{{super()}}
+ {% endblock %}
+diff --git a/pkgs/dev/tool/protoc/mix.sh b/pkgs/dev/tool/protoc/mix.sh
+index fcedd78..bf24613 100644
+--- a/pkgs/dev/tool/protoc/mix.sh
++++ b/pkgs/dev/tool/protoc/mix.sh
+@@ -1,7 +1,10 @@
+ {% extends '//mix/template/proxy.sh' %}
+ 
+-{% block bld_deps %}
++{% block bin_deps %}
+ lib/protobuf/mix.sh
++{% endblock %}
++
++{% block bld_deps %}
+ env/std/0/mix.sh
+ {% endblock %}
+ 
+diff --git a/pkgs/dev/tool/swig/4/mix.sh b/pkgs/dev/tool/swig/4/mix.sh
+index 29d9ac5..8a4456b 100644
+--- a/pkgs/dev/tool/swig/4/mix.sh
++++ b/pkgs/dev/tool/swig/4/mix.sh
+@@ -5,9 +5,12 @@ https://downloads.sourceforge.net/project/swig/swig/swig-4.0.2/swig-4.0.2.tar.gz
+ 7c3e46cb5af2b469722cafa0d91e127b
+ {% endblock %}
+ 
+-{% block bld_deps %}
++{% block bin_deps %}
+ lib/c++/mix.sh
+ lib/pcre/mix.sh
++{% endblock %}
++
++{% block bld_deps %}
+ dev/lang/bison/3.7.6/mix.sh
+ {{super()}}
+ {% endblock %}
+diff --git a/pkgs/dev/vcs/git/mix.sh b/pkgs/dev/vcs/git/mix.sh
+index 257c0c6..b7f40ec 100644
+--- a/pkgs/dev/vcs/git/mix.sh
++++ b/pkgs/dev/vcs/git/mix.sh
+@@ -5,13 +5,16 @@ https://github.com/git/git/archive/refs/tags/v2.32.0-rc1.tar.gz
+ 5977037fe36445a5b57872cb48335004
+ {% endblock %}
+ 
+-{% block bld_deps %}
++{% block bin_deps %}
+ lib/z/mix.sh
+ lib/curl/mix.sh
+ lib/iconv/mix.sh
+ lib/expat/mix.sh
+ lib/pcre2/mix.sh
+ lib/openssl/mix.sh
++{% endblock %}
++
++{% block bld_deps %}
+ dev/lang/perl5/mix.sh
+ dev/lang/python/3/minimal/mix.sh
+ gnu/gettext/mix.sh
+diff --git a/pkgs/dev/vcs/subversion/mix.sh b/pkgs/dev/vcs/subversion/mix.sh
+index d80971b..28b3a4d 100644
+--- a/pkgs/dev/vcs/subversion/mix.sh
++++ b/pkgs/dev/vcs/subversion/mix.sh
+@@ -5,9 +5,8 @@ https://archive.apache.org/dist/subversion/subversion-1.14.1.tar.bz2
+ 2eccc2c7451397e01a13682600af9563
+ {% endblock %}
+ 
+-{% block bld_deps %}
++{% block bin_deps %}
+ dev/vcs/subversion/libs/mix.sh(openssl=1)
+-{{super()}}
+ {% endblock %}
+ 
+ {% block run_deps %}
+diff --git a/pkgs/editor/emacs/mix.sh b/pkgs/editor/emacs/mix.sh
+index e0920f8..9a3bc43 100644
+--- a/pkgs/editor/emacs/mix.sh
++++ b/pkgs/editor/emacs/mix.sh
+@@ -5,9 +5,12 @@ https://ftp.gnu.org/gnu/emacs/emacs-27.2.tar.xz
+ 4c3d9ff35b2ab2fe518dc7eb3951e128
+ {% endblock %}
+ 
+-{% block bld_deps %}
++{% block bin_deps %}
+ lib/z/mix.sh
+ lib/curses/any/mix.sh
++{% endblock %}
++
++{% block bld_deps %}
+ gnu/patch/mix.sh
+ gnu/tar/mix.sh
+ {{super()}}
+diff --git a/pkgs/editor/ted/mix.sh b/pkgs/editor/ted/mix.sh
+index ffb950e..0bd8465 100644
+--- a/pkgs/editor/ted/mix.sh
++++ b/pkgs/editor/ted/mix.sh
+@@ -5,10 +5,13 @@ https://github.com/pg83/ted/archive/3c3f54a69b806bd7eb96f4c56189ce2a7f0507c5.zip
+ fe51001993fc27ecd2156b2eee5616e1
+ {% endblock %}
+ 
+-{% block bld_deps %}
++{% block bin_deps %}
+ {{'sys/framework/SystemConfiguration/mix.sh' | darwin}}
+ pypi/pygments/mix.sh
+ dev/lang/python/3/10/lib/mix.sh
++{% endblock %}
++
++{% block bld_deps %}
+ tool/compress/upx/mix.sh
+ env/std/0/mix.sh
+ {% endblock %}
+diff --git a/pkgs/editor/turbo/mix.sh b/pkgs/editor/turbo/mix.sh
+index ba0814a..ba23505 100644
+--- a/pkgs/editor/turbo/mix.sh
++++ b/pkgs/editor/turbo/mix.sh
+@@ -5,13 +5,12 @@ https://github.com/magiblot/turbo/archive/971aad35d4b705228caa8852114438ee71d488
+ 53d2cdb6a47cad1796d32dc5839726e8
+ {% endblock %}
+ 
+-{% block bld_deps %}
++{% block bin_deps %}
+ lib/c++/mix.sh
+ lib/fmt/mix.sh
+ lib/magic/mix.sh
+ lib/tvision/mix.sh
+ lib/clipboard/mix.sh
+-{{super()}}
+ {% endblock %}
+ 
+ {% block patch %}
+diff --git a/pkgs/gnu/coreutils/template/mix.sh b/pkgs/gnu/coreutils/template/mix.sh
+index d90236c..95c49ef 100644
+--- a/pkgs/gnu/coreutils/template/mix.sh
++++ b/pkgs/gnu/coreutils/template/mix.sh
+@@ -1,9 +1,12 @@
+ {% extends '//mix/template/autohell.sh' %}
+ 
+-{% block bld_deps %}
++{% block bin_deps %}
+ lib/intl/mix.sh
+ lib/iconv/mix.sh
+ lib/sigsegv/mix.sh
++{% endblock %}
++
++{% block bld_deps %}
+ gnu/patch/mix.sh
+ env/std/0/mix.sh
+ {% block coreutils_deps_extra %}
+diff --git a/pkgs/gnu/diffutils/mix.sh b/pkgs/gnu/diffutils/mix.sh
+index 9197451..4f4579e 100644
+--- a/pkgs/gnu/diffutils/mix.sh
++++ b/pkgs/gnu/diffutils/mix.sh
+@@ -5,9 +5,12 @@ https://ftp.gnu.org/gnu/diffutils/diffutils-3.7.tar.xz
+ 4824adc0e95dbbf11dfbdfaad6a1e461
+ {% endblock %}
+ 
+-{% block bld_deps %}
++{% block bin_deps %}
+ lib/intl/mix.sh
+ lib/iconv/mix.sh
+ lib/sigsegv/mix.sh
++{% endblock %}
++
++{% block bld_deps %}
+ env/std/0/mix.sh
+ {% endblock %}
+diff --git a/pkgs/gnu/findutils/mix.sh b/pkgs/gnu/findutils/mix.sh
+index 88bd478..19e97f7 100644
+--- a/pkgs/gnu/findutils/mix.sh
++++ b/pkgs/gnu/findutils/mix.sh
+@@ -5,8 +5,11 @@ https://ftp.gnu.org/gnu/findutils/findutils-4.8.0.tar.xz
+ eeefe2e6380931a77dfa6d9350b43186
+ {% endblock %}
+ 
+-{% block bld_deps %}
++{% block bin_deps %}
+ lib/iconv/mix.sh
++{% endblock %}
++
++{% block bld_deps %}
+ env/std/0/mix.sh
+ {% endblock %}
+ 
+diff --git a/pkgs/gnu/gawk/mix.sh b/pkgs/gnu/gawk/mix.sh
+index 094186b..abdc3d5 100644
+--- a/pkgs/gnu/gawk/mix.sh
++++ b/pkgs/gnu/gawk/mix.sh
+@@ -5,10 +5,13 @@ https://mirror.tochlab.net/pub/gnu/gawk/gawk-5.1.0.tar.xz
+ 8470c34eeecc41c1aa0c5d89e630df50
+ {% endblock %}
+ 
+-{% block bld_deps %}
++{% block bin_deps %}
+ lib/intl/mix.sh
+ lib/iconv/mix.sh
+ lib/sigsegv/mix.sh
++{% endblock %}
++
++{% block bld_deps %}
+ env/std/0/mix.sh
+ boot/final/env/bison/mix.sh
+ {% endblock %}
+diff --git a/pkgs/gnu/gettext/mix.sh b/pkgs/gnu/gettext/mix.sh
+index 4d16218..5bdd04b 100644
+--- a/pkgs/gnu/gettext/mix.sh
++++ b/pkgs/gnu/gettext/mix.sh
+@@ -5,12 +5,15 @@ https://ftp.gnu.org/pub/gnu/gettext/gettext-0.21.tar.gz
+ 28b1cd4c94a74428723ed966c38cf479
+ {% endblock %}
+ 
+-{% block bld_deps %}
++{% block bin_deps %}
+ lib/iconv/mix.sh
+ lib/intl/mix.sh
+ lib/unistring/mix.sh
+ lib/xml2/mix.sh
+ lib/textstyle/mix.sh
++{% endblock %}
++
++{% block bld_deps %}
+ dev/lang/bison/3.6.4/mix.sh
+ tool/compress/minigzip/mix.sh
+ {{super()}}
+diff --git a/pkgs/gnu/grep/mix.sh b/pkgs/gnu/grep/mix.sh
+index dd546d9..6aab3b6 100644
+--- a/pkgs/gnu/grep/mix.sh
++++ b/pkgs/gnu/grep/mix.sh
+@@ -5,9 +5,12 @@ https://ftp.gnu.org/gnu/grep/grep-3.6.tar.xz
+ f47fe27049510b2249dba7f862ac1b51
+ {% endblock %}
+ 
+-{% block bld_deps %}
++{% block bin_deps %}
+ lib/intl/mix.sh
+ lib/iconv/mix.sh
+ lib/sigsegv/mix.sh
++{% endblock %}
++
++{% block bld_deps %}
+ env/std/0/mix.sh
+ {% endblock %}
+diff --git a/pkgs/gnu/patch/mix.sh b/pkgs/gnu/patch/mix.sh
+index 1c63aea..f85dcb0 100644
+--- a/pkgs/gnu/patch/mix.sh
++++ b/pkgs/gnu/patch/mix.sh
+@@ -5,9 +5,12 @@ https://ftp.gnu.org/gnu/patch/patch-2.7.6.tar.xz
+ 78ad9937e4caadcba1526ef1853730d5
+ {% endblock %}
+ 
+-{% block bld_deps %}
++{% block bin_deps %}
+ lib/intl/mix.sh
+ lib/iconv/mix.sh
++{% endblock %}
++
++{% block bld_deps %}
+ env/std/0/mix.sh
+ boot/final/env/bison/mix.sh
+ {% endblock %}
+diff --git a/pkgs/gnu/sed/mix.sh b/pkgs/gnu/sed/mix.sh
+index f1f0e5d..836fed8 100644
+--- a/pkgs/gnu/sed/mix.sh
++++ b/pkgs/gnu/sed/mix.sh
+@@ -5,8 +5,11 @@ https://ftp.gnu.org/gnu/sed/sed-4.8.tar.xz
+ 6d906edfdb3202304059233f51f9a71d
+ {% endblock %}
+ 
+-{% block bld_deps %}
++{% block bin_deps %}
+ lib/intl/mix.sh
+ lib/iconv/mix.sh
++{% endblock %}
++
++{% block bld_deps %}
+ env/std/0/mix.sh
+ {% endblock %}
+diff --git a/pkgs/gnu/tar/mix.sh b/pkgs/gnu/tar/mix.sh
+index 4237de3..9fd87ae 100644
+--- a/pkgs/gnu/tar/mix.sh
++++ b/pkgs/gnu/tar/mix.sh
+@@ -5,11 +5,10 @@ https://ftp.gnu.org/gnu/tar/tar-1.34.tar.xz
+ 9a08d29a9ac4727130b5708347c0f5cf
+ {% endblock %}
+ 
+-{% block bld_deps %}
++{% block bin_deps %}
+ lib/z/mix.sh
+ lib/xz/mix.sh
+ lib/intl/mix.sh
+ lib/bzip2/mix.sh
+ lib/iconv/mix.sh
+-{{super()}}
+ {% endblock %}
+diff --git a/pkgs/gnu/which/mix.sh b/pkgs/gnu/which/mix.sh
+index 2fba627..343609c 100644
+--- a/pkgs/gnu/which/mix.sh
++++ b/pkgs/gnu/which/mix.sh
+@@ -5,8 +5,7 @@ https://ftp.gnu.org/gnu/which/which-2.21.tar.gz
+ 097ff1a324ae02e0a3b0369f07a7544a
+ {% endblock %}
+ 
+-{% block bld_deps %}
++{% block bin_deps %}
+ lib/intl/mix.sh
+ lib/iconv/mix.sh
+-{{super()}}
+ {% endblock %}
+diff --git a/pkgs/lib/bsd/mix.sh b/pkgs/lib/bsd/mix.sh
+index 3037610..8515781 100644
+--- a/pkgs/lib/bsd/mix.sh
++++ b/pkgs/lib/bsd/mix.sh
+@@ -9,9 +9,8 @@ ec16d126e5f72362d57e0161460fce5e
+ lib/md/mix.sh
+ {% endblock %}
+ 
+-{% block bld_deps %}
++{% block bin_deps %}
+ lib/linux/mix.sh
+-{{super()}}
+ {% endblock %}
+ 
+ {% block setup %}
+diff --git a/pkgs/lib/compiler_rt/mix.sh b/pkgs/lib/compiler_rt/mix.sh
+index 8574aaa..031a9db 100644
+--- a/pkgs/lib/compiler_rt/mix.sh
++++ b/pkgs/lib/compiler_rt/mix.sh
+@@ -1,7 +1,10 @@
+ {% extends '//mix/template/template.sh' %}
+ 
+-{% block bld_deps %}
++{% block bin_deps %}
+ lib/c/mix.sh
++{% endblock %}
++
++{% block bld_deps %}
+ dev/lang/clang/mix.sh
+ boot/final/env/tools/mix.sh
+ {% endblock %}
+diff --git a/pkgs/lib/ffi/mix.sh b/pkgs/lib/ffi/mix.sh
+index 7886370..088ef94 100644
+--- a/pkgs/lib/ffi/mix.sh
++++ b/pkgs/lib/ffi/mix.sh
+@@ -5,8 +5,11 @@ https://github.com/libffi/libffi/archive/refs/tags/v3.4.2.tar.gz
+ f2e272ec793571f28d52006ad14534c4
+ {% endblock %}
+ 
+-{% block bld_deps %}
++{% block bin_deps %}
+ {{'lib/linux/mix.sh' | linux}}
++{% endblock %}
++
++{% block bld_deps %}
+ gnu/file/mix.sh
+ gnu/sed/mix.sh
+ dev/build/autoconf/2.69/mix.sh
+diff --git a/pkgs/lib/gdbm/mix.sh b/pkgs/lib/gdbm/mix.sh
+index 511880a..a930fd1 100644
+--- a/pkgs/lib/gdbm/mix.sh
++++ b/pkgs/lib/gdbm/mix.sh
+@@ -10,8 +10,11 @@ lib/intl/mix.sh
+ lib/iconv/mix.sh
+ {% endblock %}
+ 
+-{% block bld_deps %}
++{% block bin_deps %}
+ lib/readline/mix.sh
++{% endblock %}
++
++{% block bld_deps %}
+ env/std/0/mix.sh
+ boot/final/env/bison/mix.sh
+ {% endblock %}
+diff --git a/pkgs/lib/linux/mix.sh b/pkgs/lib/linux/mix.sh
+index a4dbfae..5f235c3 100644
+--- a/pkgs/lib/linux/mix.sh
++++ b/pkgs/lib/linux/mix.sh
+@@ -5,8 +5,11 @@ https://www.kernel.org/pub/linux/kernel/v5.x/linux-5.13.12.tar.xz
+ 6e1728b2021ca19cc9273f080e6c44c7
+ {% endblock %}
+ 
+-{% block bld_deps %}
++{% block bin_deps %}
+ boot/final/cxx/mix.sh
++{% endblock %}
++
++{% block bld_deps %}
+ boot/final/env/clang/mix.sh
+ {% endblock %}
+ 
+diff --git a/pkgs/lib/mimalloc/mix.sh b/pkgs/lib/mimalloc/mix.sh
+index b5cbde3..4f564c6 100644
+--- a/pkgs/lib/mimalloc/mix.sh
++++ b/pkgs/lib/mimalloc/mix.sh
+@@ -5,8 +5,11 @@ https://github.com/microsoft/mimalloc/archive/refs/tags/v2.0.2.tar.gz
+ 40c75843e55e5c02d47fc5b1fda30124
+ {% endblock %}
+ 
+-{% block bld_deps %}
++{% block bin_deps %}
+ {{'lib/musl/mix.sh' | linux}}
++{% endblock %}
++
++{% block bld_deps %}
+ dev/lang/clang/mix.sh
+ boot/final/env/tools/mix.sh
+ {% endblock %}
+diff --git a/pkgs/lib/nghttp2/mix.sh b/pkgs/lib/nghttp2/mix.sh
+index 5ccc431..dae5d1a 100644
+--- a/pkgs/lib/nghttp2/mix.sh
++++ b/pkgs/lib/nghttp2/mix.sh
+@@ -11,10 +11,13 @@ lib/c-ares/mix.sh
+ lib/openssl/mix.sh
+ {% endblock %}
+ 
+-{% block bld_deps %}
++{% block bin_deps %}
+ lib/c++/mix.sh
+ lib/xml2/mix.sh
+ lib/jansson/mix.sh
++{% endblock %}
++
++{% block bld_deps %}
+ dev/build/autoconf/2.71/mix.sh
+ dev/build/automake/1.16.3/mix.sh
+ {{super()}}
+diff --git a/pkgs/lib/openssl/t/mix.sh b/pkgs/lib/openssl/t/mix.sh
+index cf439ce..1ddda94 100644
+--- a/pkgs/lib/openssl/t/mix.sh
++++ b/pkgs/lib/openssl/t/mix.sh
+@@ -5,8 +5,11 @@ https://www.openssl.org/source/openssl-3.0.0.tar.gz
+ 43c5ab628b7ab899d7cd4a4c7fe4067f
+ {% endblock %}
+ 
+-{% block bld_deps %}
++{% block bin_deps %}
+ {{'lib/linux/mix.sh' | linux}}
++{% endblock %}
++
++{% block bld_deps %}
+ dev/lang/perl5/mix.sh
+ {{super()}}
+ {% endblock %}
+diff --git a/pkgs/lib/pcre/mix.sh b/pkgs/lib/pcre/mix.sh
+index d7eed0a..fa7f251 100644
+--- a/pkgs/lib/pcre/mix.sh
++++ b/pkgs/lib/pcre/mix.sh
+@@ -5,9 +5,12 @@ https://ftp.pcre.org/pub/pcre/pcre-8.44.tar.gz
+ 3bcd2441024d00009a5fee43f058987c
+ {% endblock %}
+ 
+-{% block bld_deps %}
++{% block bin_deps %}
+ lib/z/mix.sh
+ lib/bzip2/mix.sh
++{% endblock %}
++
++{% block bld_deps %}
+ env/std/0/mix.sh
+ {% endblock %}
+ 
+diff --git a/pkgs/lib/pcre2/mix.sh b/pkgs/lib/pcre2/mix.sh
+index b0d9d30..bfc349d 100644
+--- a/pkgs/lib/pcre2/mix.sh
++++ b/pkgs/lib/pcre2/mix.sh
+@@ -5,9 +5,12 @@ https://github.com/PhilipHazel/pcre2/archive/refs/tags/pcre2-10.39.tar.gz
+ c296b9ad214136b814e9ecbbf22d3c42
+ {% endblock %}
+ 
+-{% block bld_deps %}
++{% block bin_deps %}
+ lib/z/mix.sh
+ lib/bzip2/mix.sh
++{% endblock %}
++
++{% block bld_deps %}
+ dev/build/autoconf/2.69/mix.sh
+ dev/build/automake/1.16.3/mix.sh
+ env/std/0/mix.sh
+diff --git a/pkgs/lib/seccomp/mix.sh b/pkgs/lib/seccomp/mix.sh
+index 077e8df..2644731 100644
+--- a/pkgs/lib/seccomp/mix.sh
++++ b/pkgs/lib/seccomp/mix.sh
+@@ -5,8 +5,11 @@ https://github.com/seccomp/libseccomp/archive/refs/tags/v2.5.2.tar.gz
+ 7803456cfac52313e109dae6b57264ec
+ {% endblock %}
+ 
+-{% block bld_deps %}
++{% block bin_deps %}
+ lib/linux/mix.sh
++{% endblock %}
++
++{% block bld_deps %}
+ dev/tool/gperf/mix.sh
+ dev/build/autoconf/2.71/mix.sh
+ dev/build/automake/1.16.3/mix.sh
+diff --git a/pkgs/lib/sqlite3/mix.sh b/pkgs/lib/sqlite3/mix.sh
+index 70aeef6..7b1b33e 100644
+--- a/pkgs/lib/sqlite3/mix.sh
++++ b/pkgs/lib/sqlite3/mix.sh
+@@ -5,9 +5,8 @@ https://www.sqlite.org/2021/sqlite-autoconf-3350500.tar.gz
+ d1d1aba394c8e0443077dc9f1a681bb8
+ {% endblock %}
+ 
+-{% block bld_deps %}
++{% block bin_deps %}
+ lib/readline/mix.sh
+-{{super()}}
+ {% endblock %}
+ 
+ {% block setup %}
+diff --git a/pkgs/lib/uchardet/mix.sh b/pkgs/lib/uchardet/mix.sh
+index c8242ea..16e8b5f 100644
+--- a/pkgs/lib/uchardet/mix.sh
++++ b/pkgs/lib/uchardet/mix.sh
+@@ -5,8 +5,11 @@ https://github.com/freedesktop/uchardet/archive/refs/tags/v0.0.7.tar.gz
+ f1ac05da2edfc17b12d1f942695f59b8
+ {% endblock %}
+ 
+-{% block bld_deps %}
++{% block bin_deps %}
+ lib/c++/mix.sh
++{% endblock %}
++
++{% block bld_deps %}
+ env/std/mix.sh
+ boot/final/env/tools/mix.sh
+ {% endblock %}
+diff --git a/pkgs/lib/xxhash/mix.sh b/pkgs/lib/xxhash/mix.sh
+index 239b4ba..333d5ad 100644
+--- a/pkgs/lib/xxhash/mix.sh
++++ b/pkgs/lib/xxhash/mix.sh
+@@ -5,9 +5,8 @@ https://github.com/Cyan4973/xxHash/archive/refs/tags/v0.8.0.tar.gz
+ 62310678857c30fcef4128f41f711f49
+ {% endblock %}
+ 
+-{% block bld_deps %}
++{% block bin_deps %}
+ lib/c++/mix.sh
+-{{super()}}
+ {% endblock %}
+ 
+ {% block build %}
+diff --git a/pkgs/lib/xz/mix.sh b/pkgs/lib/xz/mix.sh
+index 782d7d9..8df674f 100644
+--- a/pkgs/lib/xz/mix.sh
++++ b/pkgs/lib/xz/mix.sh
+@@ -5,9 +5,12 @@ https://tukaani.org/xz/xz-5.2.5.tar.xz
+ aa1621ec7013a19abab52a8aff04fe5b
+ {% endblock %}
+ 
+-{% block bld_deps %}
++{% block bin_deps %}
+ lib/intl/mix.sh
+ lib/iconv/mix.sh
++{% endblock %}
++
++{% block bld_deps %}
+ env/std/0/mix.sh
+ {% endblock %}
+ 
+diff --git a/pkgs/shell/cli/dash/full/mix.sh b/pkgs/shell/cli/dash/full/mix.sh
+index 1a2b3a2..68ea423 100644
+--- a/pkgs/shell/cli/dash/full/mix.sh
++++ b/pkgs/shell/cli/dash/full/mix.sh
+@@ -5,11 +5,10 @@ http://gondor.apana.org.au/~herbert/dash/files/dash-0.5.11.3.tar.gz
+ c7016b513f701d88c70b3082eb183581
+ {% endblock %}
+ 
+-{% block bld_deps %}
++{% block bin_deps %}
+ lib/intl/mix.sh
+ lib/edit/mix.sh
+ lib/iconv/mix.sh
+-{{super()}}
+ {% endblock %}
+ 
+ {% block setup %}
+diff --git a/pkgs/shell/cli/yash/mix.sh b/pkgs/shell/cli/yash/mix.sh
+index b03bb6d..ef39509 100644
+--- a/pkgs/shell/cli/yash/mix.sh
++++ b/pkgs/shell/cli/yash/mix.sh
+@@ -5,10 +5,9 @@ https://github.com/magicant/yash/releases/download/2.51/yash-2.51.tar.xz
+ 91d0c0fa548c9c9a081893f515b4f049
+ {% endblock %}
+ 
+-{% block bld_deps %}
++{% block bin_deps %}
+ lib/curses/any/mix.sh
+ lib/edit/mix.sh
+-{{super()}}
+ {% endblock %}
+ 
+ {% block setup %}
+diff --git a/pkgs/shell/far2l/mix.sh b/pkgs/shell/far2l/mix.sh
+index 11a684f..e121aa5 100644
+--- a/pkgs/shell/far2l/mix.sh
++++ b/pkgs/shell/far2l/mix.sh
+@@ -5,7 +5,7 @@ https://github.com/elfmz/far2l/archive/b246b95118c0d7c6d10b4e94ec9b3bc7e24c3a7c.
+ 8fb228fd04476f5143163b9cca27366e
+ {% endblock %}
+ 
+-{% block bld_deps %}
++{% block bin_deps %}
+ lib/ssh/mix.sh
+ lib/pcre/mix.sh
+ lib/spdlog/mix.sh
+@@ -15,6 +15,9 @@ lib/magic/mix.sh
+ lib/uchardet/mix.sh
+ lib/fmt/mix.sh
+ {{'lib/linux/mix.sh' | linux}}
++{% endblock %}
++
++{% block bld_deps %}
+ dev/build/pkg-config/mix.sh
+ dev/lang/m4/mix.sh
+ {{super()}}
+diff --git a/pkgs/shell/mc/template/template.sh b/pkgs/shell/mc/template/template.sh
+index 045409f..72e34b2 100644
+--- a/pkgs/shell/mc/template/template.sh
++++ b/pkgs/shell/mc/template/template.sh
+@@ -5,11 +5,14 @@ http://ftp.midnight-commander.org/mc-4.8.27.tar.xz
+ e51cd40a897d9aa01af251d191637ca4
+ {% endblock %}
+ 
+-{% block bld_deps %}
++{% block bin_deps %}
+ lib/intl/mix.sh
+ lib/glib/mix.sh
+ lib/iconv/mix.sh
+ lib/{{self.typ().strip()}}/mix.sh
++{% endblock %}
++
++{% block bld_deps %}
+ dev/lang/perl5/mix.sh
+ {{super()}}
+ {% endblock %}
+diff --git a/pkgs/shell/wm/screen/mix.sh b/pkgs/shell/wm/screen/mix.sh
+index 85bc243..8326d58 100644
+--- a/pkgs/shell/wm/screen/mix.sh
++++ b/pkgs/shell/wm/screen/mix.sh
+@@ -5,9 +5,8 @@ http://ftp.gnu.org/gnu/screen/screen-4.8.0.tar.gz
+ d276213d3acd10339cd37848b8c4ab1e
+ {% endblock %}
+ 
+-{% block bld_deps %}
++{% block bin_deps %}
+ lib/curses/any/mix.sh
+-{{super()}}
+ {% endblock %}
+ 
+ {% block coflags %}
+diff --git a/pkgs/shell/wm/tmux/mix.sh b/pkgs/shell/wm/tmux/mix.sh
+index 82620b1..b96f733 100644
+--- a/pkgs/shell/wm/tmux/mix.sh
++++ b/pkgs/shell/wm/tmux/mix.sh
+@@ -5,10 +5,13 @@ https://github.com/tmux/tmux/releases/download/3.2a/tmux-3.2a.tar.gz
+ 61fba141303aeaf8d9a6931d247f2f4a
+ {% endblock %}
+ 
+-{% block bld_deps %}
++{% block bin_deps %}
+ lib/event/mix.sh
+ lib/utf8proc/mix.sh
+ lib/curses/any/mix.sh
++{% endblock %}
++
++{% block bld_deps %}
+ dev/lang/byacc/mix.sh
+ {{super()}}
+ {% endblock %}
+diff --git a/pkgs/sys/linux/busybox/mix.sh b/pkgs/sys/linux/busybox/mix.sh
+index 316c368..9f5654d 100644
+--- a/pkgs/sys/linux/busybox/mix.sh
++++ b/pkgs/sys/linux/busybox/mix.sh
+@@ -5,8 +5,11 @@ https://busybox.net/downloads/busybox-1.34.0.tar.bz2
+ 9812d59bd5ff22bd424dabded393b52d
+ {% endblock %}
+ 
+-{% block bld_deps %}
++{% block bin_deps %}
+ lib/linux/mix.sh
++{% endblock %}
++
++{% block bld_deps %}
+ env/std/0/mix.sh
+ {% endblock %}
+ 
+diff --git a/pkgs/sys/linux/crun/mix.sh b/pkgs/sys/linux/crun/mix.sh
+index fa03fad..d47de39 100644
+--- a/pkgs/sys/linux/crun/mix.sh
++++ b/pkgs/sys/linux/crun/mix.sh
+@@ -5,12 +5,15 @@ https://github.com/containers/crun/releases/download/1.2/crun-1.2.tar.xz
+ cbfee6db4d034bfa62effe695da2bbd6
+ {% endblock %}
+ 
+-{% block bld_deps %}
++{% block bin_deps %}
+ lib/intl/mix.sh
+ lib/yajl/mix.sh
+ lib/cap/mix.sh
+ lib/seccomp/mix.sh
+ lib/argp/standalone/mix.sh
++{% endblock %}
++
++{% block bld_deps %}
+ dev/lang/python/3/minimal/mix.sh
+ {{super()}}
+ {% endblock %}
+diff --git a/pkgs/sys/linux/toybox/mix.sh b/pkgs/sys/linux/toybox/mix.sh
+index 542f2a6..e8a2352 100644
+--- a/pkgs/sys/linux/toybox/mix.sh
++++ b/pkgs/sys/linux/toybox/mix.sh
+@@ -5,8 +5,11 @@ https://github.com/landley/toybox/archive/refs/tags/0.8.5.tar.gz
+ 04f2c748df18e46e100f697193925d1b
+ {% endblock %}
+ 
+-{% block bld_deps %}
++{% block bin_deps %}
+ lib/linux/mix.sh
++{% endblock %}
++
++{% block bld_deps %}
+ env/std/0/mix.sh
+ {% endblock %}
+ 
+diff --git a/pkgs/tool/bsdutils/mix.sh b/pkgs/tool/bsdutils/mix.sh
+index 90910d2..41f2863 100644
+--- a/pkgs/tool/bsdutils/mix.sh
++++ b/pkgs/tool/bsdutils/mix.sh
+@@ -5,7 +5,7 @@ https://github.com/dcantrell/bsdutils/archive/a1eeb6c8ca7745a28b68ae87b7532d8868
+ f3a640fd2b0939d0c17a2eb17801919c
+ {% endblock %}
+ 
+-{% block bld_deps %}
++{% block bin_deps %}
+ {% if mix.platform.target.os == 'linux' %}
+ lib/linux/mix.sh
+ lib/fts/mix.sh
+@@ -16,6 +16,9 @@ lib/xo/mix.sh
+ lib/edit/mix.sh
+ lib/openssl/mix.sh
+ lib/curses/any/mix.sh
++{% endblock %}
++
++{% block bld_deps %}
+ dev/build/pkg-config/mix.sh
+ dev/lang/flex/mix.sh
+ dev/lang/byacc/mix.sh
+diff --git a/pkgs/tool/compress/bsdtar/mix.sh b/pkgs/tool/compress/bsdtar/mix.sh
+index 99074d9..615b738 100644
+--- a/pkgs/tool/compress/bsdtar/mix.sh
++++ b/pkgs/tool/compress/bsdtar/mix.sh
+@@ -1,7 +1,10 @@
+ {% extends '//mix/template/proxy.sh' %}
+ 
+-{% block bld_deps %}
++{% block bin_deps %}
+ lib/archive/mix.sh
++{% endblock %}
++
++{% block bld_deps %}
+ env/std/0/mix.sh
+ {% endblock %}
+ 
+diff --git a/pkgs/tool/compress/bzip2/mix.sh b/pkgs/tool/compress/bzip2/mix.sh
+index 46f7d92..4b68b7c 100644
+--- a/pkgs/tool/compress/bzip2/mix.sh
++++ b/pkgs/tool/compress/bzip2/mix.sh
+@@ -1,7 +1,10 @@
+ {% extends '//mix/template/proxy.sh' %}
+ 
+-{% block bld_deps %}
++{% block bin_deps %}
+ lib/bzip2/mix.sh
++{% endblock %}
++
++{% block bld_deps %}
+ env/std/0/mix.sh
+ {% endblock %}
+ 
+diff --git a/pkgs/tool/compress/lzip/mix.sh b/pkgs/tool/compress/lzip/mix.sh
+index 5c1c2d9..205bfed 100644
+--- a/pkgs/tool/compress/lzip/mix.sh
++++ b/pkgs/tool/compress/lzip/mix.sh
+@@ -5,7 +5,6 @@ https://download.savannah.gnu.org/releases/lzip/lzip-1.22.tar.gz
+ f062faf68595d594a28fade73a43c001
+ {% endblock %}
+ 
+-{% block bld_deps %}
++{% block bin_deps %}
+ lib/c++/mix.sh
+-{{super()}}
+ {% endblock %}
+diff --git a/pkgs/tool/compress/minigzip/mix.sh b/pkgs/tool/compress/minigzip/mix.sh
+index ed492a4..13a8321 100644
+--- a/pkgs/tool/compress/minigzip/mix.sh
++++ b/pkgs/tool/compress/minigzip/mix.sh
+@@ -1,7 +1,10 @@
+ {% extends '//mix/template/proxy.sh' %}
+ 
+-{% block bld_deps %}
++{% block bin_deps %}
+ lib/z/mix.sh
++{% endblock %}
++
++{% block bld_deps %}
+ env/std/0/mix.sh
+ {% endblock %}
+ 
+diff --git a/pkgs/tool/compress/p7zip/mix.sh b/pkgs/tool/compress/p7zip/mix.sh
+index 0b923aa..f575762 100644
+--- a/pkgs/tool/compress/p7zip/mix.sh
++++ b/pkgs/tool/compress/p7zip/mix.sh
+@@ -5,9 +5,8 @@ https://downloads.sourceforge.net/project/p7zip/p7zip/16.02/p7zip_16.02_src_all.
+ a0128d661cfe7cc8c121e73519c54fbf
+ {% endblock %}
+ 
+-{% block bld_deps %}
++{% block bin_deps %}
+ lib/c++/mix.sh
+-{{super()}}
+ {% endblock %}
+ 
+ {% block setup %}
+diff --git a/pkgs/tool/compress/unrar/mix.sh b/pkgs/tool/compress/unrar/mix.sh
+index 90e5f23..5f106a8 100644
+--- a/pkgs/tool/compress/unrar/mix.sh
++++ b/pkgs/tool/compress/unrar/mix.sh
+@@ -5,9 +5,8 @@ https://storage.yandexcloud.net/mix-cache/unrarsrc-6.0.6.tar.gz
+ 4c89e2e5ecfe72a9d96478fb80f38c34
+ {% endblock %}
+ 
+-{% block bld_deps %}
++{% block bin_deps %}
+ lib/c++/mix.sh
+-{{super()}}
+ {% endblock %}
+ 
+ {% block make_flags %}
+diff --git a/pkgs/tool/compress/upx/mix.sh b/pkgs/tool/compress/upx/mix.sh
+index f8639c7..ac96515 100644
+--- a/pkgs/tool/compress/upx/mix.sh
++++ b/pkgs/tool/compress/upx/mix.sh
+@@ -5,10 +5,13 @@ https://github.com/upx/upx/releases/download/v3.96/upx-3.96-src.tar.xz
+ bf5564f33fe9062bc48b53abd4b34223
+ {% endblock %}
+ 
+-{% block bld_deps %}
++{% block bin_deps %}
+ lib/z/mix.sh
+ lib/c++/mix.sh
+ lib/ucl/mix.sh
++{% endblock %}
++
++{% block bld_deps %}
+ shell/cli/bash/minimal/mix.sh
+ dev/lang/perl5/mix.sh
+ {{super()}}
+diff --git a/pkgs/tool/compress/xz/mix.sh b/pkgs/tool/compress/xz/mix.sh
+index c132856..ba86897 100644
+--- a/pkgs/tool/compress/xz/mix.sh
++++ b/pkgs/tool/compress/xz/mix.sh
+@@ -1,7 +1,10 @@
+ {% extends '//mix/template/proxy.sh' %}
+ 
+-{% block bld_deps %}
++{% block bin_deps %}
+ lib/xz/mix.sh
++{% endblock %}
++
++{% block bld_deps %}
+ env/std/0/mix.sh
+ {% endblock %}
+ 
+diff --git a/pkgs/tool/text/mawk/mix.sh b/pkgs/tool/text/mawk/mix.sh
+index 0b956bd..04f171f 100644
+--- a/pkgs/tool/text/mawk/mix.sh
++++ b/pkgs/tool/text/mawk/mix.sh
+@@ -5,8 +5,11 @@ https://invisible-mirror.net/archives/mawk/mawk-1.3.4-20200120.tgz
+ d48752f402d7371d9eb5f68de3da05d4
+ {% endblock %}
+ 
+-{% block bld_deps %}
++{% block bin_deps %}
+ lib/readline/mix.sh
++{% endblock %}
++
++{% block bld_deps %}
+ dev/lang/byacc/mix.sh
+ env/std/0/mix.sh
+ {% endblock %}

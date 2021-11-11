@@ -39,6 +39,7 @@ def parse_pkg_name(v):
 
 class Package:
     def __init__(self, selector, mngr):
+        print(selector)
         self.selector = selector
         self.manager = mngr
         self.descr = cr.RenderContext(self).render()
@@ -86,7 +87,8 @@ class Package:
         if 'flags' not in v:
             v['flags'] = {}
 
-        v['flags'] = dict(itertools.chain(self.flags.items(), v['flags'].items()))
+        if v['name'].startswith('lib/'):
+            v['flags'] = dict(itertools.chain(self.flags.items(), v['flags'].items()))
 
         return v
 
