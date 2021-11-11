@@ -34,7 +34,8 @@ env/std/0/mix.sh
 export PKG_CONFIG_LIBDIR=${out}/lib/pkg-config
 {% endblock %}
 
-{% block postinstall %}
+{% block install %}
+{{super()}}
 cd ${out}/lib && (for i in `ls *.a`; do q=`echo $i | tr -d 'w'`; ln -s $i $q; done)
 {% endblock %}
 

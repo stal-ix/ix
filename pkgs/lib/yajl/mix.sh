@@ -9,7 +9,8 @@ https://github.com/lloyd/yajl/archive/refs/tags/2.1.0.tar.gz
 sed -e 's| SHARED | STATIC |' -i src/CMakeLists.txt
 {% endblock %}
 
-{% block postinstall %}
+{% block install %}
+{{super()}}
 rm ${out}/lib/libyajl_s.a
 mv ${out}/share/pkgconfig ${out}/lib/
 {% endblock %}

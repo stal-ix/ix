@@ -40,6 +40,7 @@ install-cxxabi
 install-unwind
 {% endblock %}
 
-{% block postinstall %}
+{% block install %}
+{{super()}}
 cd ${out} && mv include/c++/v1/* include/
 {% endblock %}

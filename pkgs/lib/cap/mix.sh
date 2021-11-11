@@ -9,7 +9,8 @@ https://git.kernel.org/pub/scm/libs/libcap/libcap.git/snapshot/libcap-cap/v1.2.5
 lib/linux/mix.sh
 {% endblock %}
 
-{% block postunpack %}
+{% block unpack %}
+{{super()}}
 cd v*/libcap
 {% endblock %}
 

@@ -23,13 +23,6 @@ env/std/0/mix.sh
 {% endblock %}
 
 {% block setup %}
-clang -c -o main.o -x c - << EOF
-
-int main() {}
-EOF
-
-ar q libmain.a main.o
-
 export LDFLAGS="-L${PWD} -lmain ${LDFLAGS}"
 export CPPFLAGS="-w -D_GNU_SOURCE=1 -I${PWD}/inc ${CPPFLAGS}"
 {% endblock %}
@@ -37,6 +30,16 @@ export CPPFLAGS="-w -D_GNU_SOURCE=1 -I${PWD}/inc ${CPPFLAGS}"
 {% block patch %}
 echo 'int main() {}' > glib/tests/cxx.cpp
 echo 'int main() {}' > tests/cxx-test.cpp
+{% endblock %}
+
+{% block configure %}
+${CC} -c -o main.o -x c - << EOF
+int main() {}
+EOF
+
+${AR} q libmain.a main.o
+
+{{super()}}
 {% endblock %}
 
 {% block meson_flags %}

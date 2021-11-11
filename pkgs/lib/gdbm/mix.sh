@@ -21,7 +21,8 @@ boot/final/env/bison/mix.sh
 --with-readline
 {% endblock %}
 
-{% block postinstall %}
+{% block install %}
+{{super()}}
 cd ${out}/lib && ln -s libgdbm_compat.a libdbm.a
 {% endblock %}
 

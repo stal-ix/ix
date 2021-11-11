@@ -17,7 +17,8 @@ dash ./configure --static --64 --prefix="${out}"
 TEST_LDFLAGS="-L. libz.a"
 {% endblock %}
 
-{% block postinstall %}
+{% block install %}
+{{super()}}
 mkdir ${out}/bin && cp minigzip ${out}/bin/
 {% endblock %}
 

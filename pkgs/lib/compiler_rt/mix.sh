@@ -10,7 +10,8 @@ boot/final/env/tools/mix.sh
 {% include '//mix/template/fetch_llvm.sh' %}
 {% endblock %}
 
-{% block postunpack %}
+{% block unpack %}
+{{super()}}
 cd compiler-rt
 {% endblock %}
 

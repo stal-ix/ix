@@ -13,6 +13,7 @@ lib/c++/mix.sh
 env/std/0/mix.sh
 {% endblock %}
 
-{% block postinstall %}
+{% block install %}
+{{super()}}
 mv ${out}/lib/libdl.a ${out}/lib/libdlstub.a
 {% endblock %}

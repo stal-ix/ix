@@ -18,7 +18,9 @@ boot/final/env/tools/mix.sh
 -DMI_BUILD_TESTS=OFF
 {% endblock %}
 
-{% block postinstall %}
+{% block install %}
+{{super()}}
+
 cd ${out}/lib
 mv mimalloc-*/* ./
 rm -rf mimalloc-*

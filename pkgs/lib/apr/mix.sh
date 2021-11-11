@@ -9,7 +9,9 @@ https://archive.apache.org/dist/apr/apr-1.7.0.tar.bz2
 --disable-dso
 {% endblock %}
 
-{% block postinstall %}
+{% block install %}
+{{super()}}
+
 cd ${out}
 
 for x in "bin/apr-1-config" "build-1/libtool" "build-1/apr_rules.mk"; do

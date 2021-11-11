@@ -9,7 +9,8 @@ https://ftp.gnu.org/pub/gnu/gettext/gettext-0.21.tar.gz
 lib/iconv/mix.sh
 {% endblock %}
 
-{% block postunpack %}
+{% block unpack %}
+{{super()}}
 cd libtextstyle
 {% endblock %}
 

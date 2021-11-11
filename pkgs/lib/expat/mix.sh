@@ -9,7 +9,8 @@ https://github.com/libexpat/libexpat/archive/refs/tags/R_2_4_1.tar.gz
 env/std/0/mix.sh
 {% endblock %}
 
-{% block postunpack %}
+{% block unpack %}
+{{super()}}
 cd expat
 {% endblock %}
 

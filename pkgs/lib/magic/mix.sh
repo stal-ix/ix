@@ -1,5 +1,6 @@
 {% extends '//gnu/file/mix.sh' %}
 
-{% block postinstall %}
+{% block install %}
+{{super()}}
 rm -rf ${out}/bin
 {% endblock %}

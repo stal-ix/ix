@@ -9,7 +9,9 @@ https://ftp.gnu.org/pub/gnu/libiconv/libiconv-1.16.tar.gz
 env/std/0/mix.sh
 {% endblock %}
 
-{% block postinstall %}
+{% block install %}
+{{super()}}
+
 rm ${out}/lib/libcharset.a
 {% endblock %}
 
