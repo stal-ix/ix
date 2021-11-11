@@ -1,4 +1,4 @@
-{% extends 'mix.json' %}
+{% extends 'script.json' %}
 
 {% block script_body %}
 import os

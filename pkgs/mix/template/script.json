@@ -1,0 +1,8 @@
+{% extends 'mix.json' %}
+
+{% block build_script %}
+{
+    "data": {{mix.string_to_json(self.script_body())}},
+    "kind": "{{self.script_kind().strip()}}"
+}
+{% endblock %}

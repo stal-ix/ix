@@ -31,10 +31,3 @@
 {% block build_fetch %}
 {{mix.urls_to_json(fetch)}}
 {% endblock %}
-
-{% block build_script %}
-{
-    "data": {{mix.string_to_json(self.script_body())}},
-    "kind": "{{self.script_kind().strip()}}"
-}
-{% endblock %}
