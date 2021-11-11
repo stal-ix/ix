@@ -12,7 +12,8 @@ dev/build/automake/1.16.3/mix.sh
 env/std/0/mix.sh
 {% endblock %}
 
-{% block postunpack %}
+{% block unpack %}
+{{super()}}
 cd cctools
 {% endblock %}
 

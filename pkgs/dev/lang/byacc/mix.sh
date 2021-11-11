@@ -9,7 +9,8 @@ c66b26a5dbce291e5c3c531e8d692834
 env/std/0/mix.sh
 {% endblock %}
 
-{% block postinstall %}
+{% block install %}
+{{super()}}
 cd ${out}/bin && ln -s yacc byacc
 {% endblock %}
 

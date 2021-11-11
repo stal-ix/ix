@@ -13,6 +13,7 @@ env/std/0/mix.sh
 export CPPFLAGS="-Dwarn=samu_warn ${CPPFLAGS}"
 {% endblock %}
 
-{% block postinstall %}
+{% block install %}
+{{super()}}
 cd ${out}/bin && ln -s samu ninja
 {% endblock %}

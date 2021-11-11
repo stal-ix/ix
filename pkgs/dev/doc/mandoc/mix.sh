@@ -10,6 +10,7 @@ lib/z/mix.sh
 {{super()}}
 {% endblock %}
 
-{% block postconf %}
+{% block configure %}
+{{super()}}
 sed -e "s|/usr/local|${out}|" -i Makefile.local
 {% endblock %}

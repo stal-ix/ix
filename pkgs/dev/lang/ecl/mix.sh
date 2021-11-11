@@ -12,7 +12,8 @@ lib/ffi/mix.sh
 {{super()}}
 {% endblock %}
 
-{% block postunpack %}
+{% block unpack %}
+{{super()}}
 mkdir build && cd build
 {% endblock %}
 

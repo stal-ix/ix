@@ -27,6 +27,7 @@ autoreconf -i
 --disable-plugin-down-root
 {% endblock %}
 
-{% block postinstall %}
+{% block install %}
+{{super()}}
 mv ${out}/sbin ${out}/bin
 {% endblock %}

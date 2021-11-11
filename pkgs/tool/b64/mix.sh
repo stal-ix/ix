@@ -13,7 +13,7 @@ env/std/0/mix.sh
 {% endblock %}
 
 {% block build %}
-clang ${src}/b64.c -o base64
+${CC} ${src}/b64.c -o base64
 {% endblock %}
 
 {% block install %}
