@@ -1,10 +1,10 @@
+{% extends 'base.json' %}
+
+{% block runtime_depends %}
 {% set deps %}
 {% block deps %}
 {% endblock %}
 {% endset %}
 
-{
-    "runtime": {
-        "depends": {{mix.list_to_json(deps)}}
-    }
-}
+{{mix.list_to_json(deps)}}
+{% endblock %}

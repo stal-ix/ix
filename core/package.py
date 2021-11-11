@@ -95,7 +95,7 @@ class Package:
 
     # build
     def build_depends(self):
-        return self.make_selectors(self.descr.get('build', {}).get('depends', []))
+        return self.make_selectors(self.descr['build']['depends'])
 
     @cu.cached_method
     def all_build_depends(self):
@@ -113,7 +113,7 @@ class Package:
 
     # runtime
     def runtime_depends(self):
-        return self.make_selectors(self.descr.get('runtime', {}).get('depends', []))
+        return self.make_selectors(self.descr['runtime']['depends'])
 
     @cu.cached_method
     def all_runtime_depends(self):
@@ -167,9 +167,4 @@ class Package:
             os.symlink(os.path.join(fr, x), p)
 
     def buildable(self):
-        try:
-            self.descr['build']['script']
-
-            return True;
-        except KeyError:
-            pass
+        return not not self.descr['build']['script']

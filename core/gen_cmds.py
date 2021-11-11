@@ -158,7 +158,7 @@ def iter_build_commands(self):
 
     sb = ScriptBuilder(self.config)
     out_dir = self.out_dir
-    urls = self.descr['build'].get('fetch', [])
+    urls = self.descr['build']['fetch']
 
     if urls:
         extra = []

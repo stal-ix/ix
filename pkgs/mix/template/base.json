@@ -1,10 +1,10 @@
 {
     "build": {
-        "fetch": {% block build_fetch %}{% endblock %},
-        "script": {% block build_script %}{% endblock %},
-        "depends": {% block build_depends %}{% endblock %}
+        "fetch": {% block build_fetch %}[]{% endblock %},
+        "script": {% block build_script %}{}{% endblock %},
+        "depends": {% block build_depends %}[]{% endblock %}
     },
     "runtime": {
-        "depends": {% block runtime_depends %}{% endblock %}
+        "depends": {% block runtime_depends %}[]{% endblock %}
     }
 }
