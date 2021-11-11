@@ -17,7 +17,8 @@ boot/6/env/std/mix.sh
 export CPPFLAGS="-w -D_LIBCPP_BUILDING_LIBRARY -D_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER -iquote src -Iinclude -DLIBCXXRT -std=c++14 ${CPPFLAGS}"
 {% endblock %}
 
-{% block postunpack %}
+{% block unpack %}
+{{super()}}
 cd libcxx
 {% endblock %}
 

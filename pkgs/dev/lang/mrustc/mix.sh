@@ -26,7 +26,8 @@ dev/build/cmake/mix.sh
 env/std/mix.sh
 {% endblock %}
 
-{% block postunpack %}
+{% block unpack %}
+{{super()}}
 cp ${src}/rustc* ./
 {% endblock %}
 

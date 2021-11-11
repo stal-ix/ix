@@ -10,7 +10,8 @@ boot/4/byacc/mix.sh
 boot/8/env/std/mix.sh
 {% endblock %}
 
-{% block postunpack %}
+{% block unpack %}
+{{super()}}
 cd heirloom-devtools/lex
 {% endblock %}
 

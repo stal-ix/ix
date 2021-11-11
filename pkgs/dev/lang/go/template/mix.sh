@@ -8,7 +8,8 @@ env/std/mix.sh
 {% endblock %}
 {% endblock %}
 
-{% block postunpack %}
+{% block unpack %}
+{{super()}}
 cd src
 {% endblock %}
 

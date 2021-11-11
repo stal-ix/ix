@@ -14,7 +14,8 @@ export CXXFLAGS="-std=c++11 -fstrict-aliasing -fno-exceptions -fno-rtti ${CXXFLA
 export CFLAGS="-std=c99 ${CFLAGS}"
 {% endblock %}
 
-{% block postunpack %}
+{% block unpack %}
+{{super()}}
 cd libunwind
 {% endblock %}
 

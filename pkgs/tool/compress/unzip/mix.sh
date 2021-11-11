@@ -12,7 +12,8 @@ gnu/patch/mix.sh
 env/std/0/mix.sh
 {% endblock %}
 
-{% block postunpack %}
+{% block unpack %}
+{{super()}}
 cd ../unzip*
 {% endblock %}
 

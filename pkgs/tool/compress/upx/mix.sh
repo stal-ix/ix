@@ -18,7 +18,8 @@ dev/lang/perl5/mix.sh
 export CFLAGS="-w ${CFLAGS}"
 {% endblock %}
 
-{% block postunpack %}
+{% block unpack %}
+{{super()}}
 cd src
 {% endblock %}
 
