@@ -14,5 +14,5 @@ lib/sqlite3/mix.sh
 lib/curses/any/mix.sh
 lib/openssl/mix.sh
 lib/mpdecimal/mix.sh
-lib/{{mix.flags.get('edit', 'edit')}}/mix.sh
+lib/{{edit or 'edit'}}/mix.sh
 {% endblock %}

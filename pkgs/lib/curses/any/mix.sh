@@ -1,5 +1,5 @@
 {% extends '//mix/template/hub.sh' %}
 
 {% block deps %}
-lib/curses/{{mix.flags.get('curses', 'n')}}/mix.sh
+lib/curses/{{curses or 'n'}}/mix.sh
 {% endblock %}

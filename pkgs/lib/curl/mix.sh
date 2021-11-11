@@ -12,7 +12,7 @@ lib/idn2/mix.sh
 lib/zstd/mix.sh
 lib/brotli/mix.sh
 lib/nghttp2/mix.sh
-lib/{{mix.flags.get('curlssl', 'openssl')}}/mix.sh
+lib/{{curlssl or 'openssl'}}/mix.sh
 {{'sys/framework/SystemConfiguration/mix.sh' | darwin}}
 {% endblock %}
 

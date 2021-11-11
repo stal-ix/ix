@@ -1,8 +1,8 @@
 {% extends '//mix/template/freeze.sh' %}
 
 {% block fetch %}
-https://github.com/pg83/mix/archive/{{mix.flags.mix_ver}}.zip
-{{mix.flags.mix_md5}}
+https://github.com/pg83/mix/archive/{{mix_ver}}.zip
+{{mix_md5}}
 {% endblock %}
 
 {% block bld_deps %}

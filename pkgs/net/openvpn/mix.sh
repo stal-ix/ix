@@ -5,12 +5,10 @@ https://github.com/OpenVPN/openvpn/archive/refs/tags/v2.5.4.tar.gz
 33
 {% endblock %}
 
-{% set ssl %}{{mix.flags.get('openvpnssl', 'openssl')}}{% endset %}
-
 {% block bld_deps %}
 lib/lz4/mix.sh
 lib/lzo/mix.sh
-lib/{{ssl}}/mix.sh
+lib/{{openvpnssl or 'openssl'}}/mix.sh
 pypi/docutils/scripts/mix.sh
 dev/build/autoconf/2.69/mix.sh
 dev/build/automake/1.16.3/mix.sh

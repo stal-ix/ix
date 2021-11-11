@@ -9,7 +9,7 @@ https://www.python.org/ftp/python/3.10.0/Python-3.10.0.tar.xz
 {% block fix_readline %}
 export COFLAGS=$(echo "${COFLAGS}" | tr ' ' '\n' | grep -v 'with-readline' | tr '\n' ' ')
 
-{% if mix.flags.get('edit', 'edit') == 'readline' %}
+{% if (edit or 'edit') == 'readline' %}
 export COFLAGS="--with-readline=yes ${COFLAGS}"
 {% else %}
 export COFLAGS="--with-readline=edit ${COFLAGS}"
