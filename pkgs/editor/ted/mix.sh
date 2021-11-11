@@ -16,6 +16,7 @@ env/std/0/mix.sh
 {% block bin %}ted.bin{% endblock %}
 {% block entry_point %}ted{% endblock %}
 
-{% block postinstall %}
+{% block install %}
+{{super()}}
 cd ${out}/bin && mv ted.bin ted
 {% endblock %}

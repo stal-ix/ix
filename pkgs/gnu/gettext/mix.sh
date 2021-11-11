@@ -16,7 +16,8 @@ tool/compress/minigzip/mix.sh
 {{super()}}
 {% endblock %}
 
-{% block postunpack %}
+{% block unpack %}
+{{super()}}
 cd gettext-tools
 {% endblock %}
 
@@ -24,6 +25,7 @@ cd gettext-tools
 --with-installed-libtextstyle
 {% endblock %}
 
-{% block postinstall %}
+{% block install %}
+{{super()}}
 rm -rf ${out}/lib ${out}/include
 {% endblock %}

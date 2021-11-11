@@ -4,7 +4,9 @@
 boot/5/env/std/mix.sh
 {% endblock %}
 
-{% block patch_findutils %}
+{% block patch %}
+{{super()}}
+
 cat << EOF > doc/Makefile.in
 all:
 install:

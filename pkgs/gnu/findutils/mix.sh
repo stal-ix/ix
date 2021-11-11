@@ -15,7 +15,4 @@ cat - gl/lib/malloc/dynarray-skeleton.c << EOF > _
 #define __nonnull(x)
 EOF
 mv _ gl/lib/malloc/dynarray-skeleton.c
-
-{% block patch_findutils %}
-{% endblock %}
 {% endblock %}
