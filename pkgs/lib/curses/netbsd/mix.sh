@@ -9,6 +9,19 @@ https://github.com/sabotage-linux/netbsd-curses/archive/refs/tags/v0.3.2.tar.gz
 env/std/0/mix.sh
 {% endblock %}
 
+{% block setup %}
+export CPPFLAGS="-D__pure= ${CPPFLAGS}"
+{% endblock %}
+
+{% block patch %}
+cat << EOF >> netbsd_sys/cdefs.h
+#undef __strong_alias
+#define __strong_alias(a, b)
+EOF
+
+sed -e 's|fpurge|curses_fpurge|' -i libcurses/tty.c
+{% endblock %}
+
 {% block make_flags %}
 STATIC_BINS=yes
 {% endblock %}
