@@ -17,6 +17,10 @@ env/std/0/mix.sh
 export CPPFLAGS="-Dxmalloc=rl_xmalloc -Dxrealloc=Drl_xrealloc ${CPPFLAGS}"
 {% endblock %}
 
+{% block patch %}
+cat terminal.c | grep -v 'char PC' > _ && mv _ terminal.c
+{% endblock %}
+
 {% block coflags %}
 --with-curses
 {% endblock %}
