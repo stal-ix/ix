@@ -20,5 +20,4 @@ dev/build/pkg-config/mix.sh
 dev/lang/flex/mix.sh
 dev/lang/byacc/mix.sh
 {{super()}}
-env/std/mix.sh
 {% endblock %}

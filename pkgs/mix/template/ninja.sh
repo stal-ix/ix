@@ -1,4 +1,4 @@
-{% extends 'template.sh' %}
+{% extends 'std.sh' %}
 
 {% block bld_deps %}
 dev/build/samurai/mix.sh

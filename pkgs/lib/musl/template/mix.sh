@@ -6,9 +6,6 @@ aed8ae9e2b0898151b36a204088292dd
 {% endblock %}
 
 {% block postinstall %}
-{% block musl_postinstall %}
-{% endblock %}
-
 cat << EOF > ${out}/include/error.h
 #pragma once
 

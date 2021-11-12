@@ -17,8 +17,7 @@ sys/framework/Foundation/mix.sh
 {% endif %}
 {% endblock %}
 
-{% block bld_deps %}
-{{super()}}
+{% block std_env %}
 env/std/0/mix.sh
 {% endblock %}
 
