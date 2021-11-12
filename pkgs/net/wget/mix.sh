@@ -7,7 +7,7 @@ https://ftp.gnu.org/gnu/wget/wget-1.21.2.tar.lz
 
 {% block bld_deps %}
 lib/intl/mix.sh
-lib/pcre2/mix.sh
+lib/pcre/2/mix.sh
 lib/gnutls/mix.sh
 lib/metalink/mix.sh
 {{super()}}

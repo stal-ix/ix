@@ -10,7 +10,7 @@ lib/z/mix.sh
 lib/bzip2/mix.sh
 dev/build/autoconf/2.69/mix.sh
 dev/build/automake/1.16.3/mix.sh
-env/std/0/mix.sh
+{{super()}}
 {% endblock %}
 
 {% block autoreconf %}
