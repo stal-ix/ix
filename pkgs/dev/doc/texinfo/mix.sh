@@ -6,7 +6,7 @@ a91b404e30561a5df803e6eb3a53be71
 {% endblock %}
 
 {% block bld_deps %}
-lib/curses/any/mix.sh
+lib/curses/mix.sh
 dev/lang/perl5/mix.sh
 env/std/0/mix.sh
 {% endblock %}

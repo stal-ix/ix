@@ -6,7 +6,7 @@ d276213d3acd10339cd37848b8c4ab1e
 {% endblock %}
 
 {% block bld_deps %}
-lib/curses/any/mix.sh
+lib/curses/mix.sh
 {{super()}}
 {% endblock %}
 

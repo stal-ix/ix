@@ -7,7 +7,7 @@ https://ftp.gnu.org/gnu/bash/bash-3.2.57.tar.gz
 
 {% block bashdeps %}
 lib/readline/mix.sh
-lib/curses/any/mix.sh
+lib/curses/mix.sh
 lib/intl/mix.sh
 lib/iconv/mix.sh
 {% endblock %}

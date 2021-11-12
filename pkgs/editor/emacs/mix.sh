@@ -7,7 +7,7 @@ https://ftp.gnu.org/gnu/emacs/emacs-27.2.tar.xz
 
 {% block bld_deps %}
 lib/z/mix.sh
-lib/curses/any/mix.sh
+lib/curses/mix.sh
 gnu/patch/mix.sh
 gnu/tar/mix.sh
 {{super()}}

@@ -2,7 +2,7 @@
 
 {% block bashdeps %}
 lib/readline/mix.sh
-lib/curses/any/mix.sh
+lib/curses/mix.sh
 lib/iconv/mix.sh
 lib/intl/mix.sh
 {% endblock %}

@@ -10,7 +10,7 @@ dev/debug/gdb/py/mix.sh(edit=readline)
 lib/intel-pt/mix.sh
 lib/intl/mix.sh
 lib/expat/mix.sh
-lib/curses/any/mix.sh
+lib/curses/mix.sh
 lib/iconv/mix.sh
 lib/readline/mix.sh
 lib/c++/mix.sh

@@ -8,7 +8,7 @@
 {{'lib/linux/mix.sh' | linux}}
 {{'sys/framework/CoreFoundation/mix.sh' | darwin}}
 lib/c++/mix.sh
-lib/curses/any/mix.sh
+lib/curses/mix.sh
 lib/edit/mix.sh
 lib/xz/mix.sh
 lib/xml2/mix.sh

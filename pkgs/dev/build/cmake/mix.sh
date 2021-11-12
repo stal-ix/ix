@@ -16,7 +16,7 @@ lib/curl/mix.sh
 lib/bzip2/mix.sh
 lib/expat/mix.sh
 lib/archive/mix.sh
-lib/curses/any/mix.sh
+lib/curses/mix.sh
 env/std/mix.sh
 boot/final/env/tools/mix.sh
 {% endblock %}

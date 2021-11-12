@@ -11,7 +11,7 @@ lib/bzip2/mix.sh
 lib/iconv/mix.sh
 lib/expat/mix.sh
 lib/sqlite3/mix.sh
-lib/curses/any/mix.sh
+lib/curses/mix.sh
 lib/openssl/mix.sh
 lib/mpdecimal/mix.sh
 lib/{{edit or 'edit'}}/mix.sh

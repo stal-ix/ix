@@ -10,7 +10,7 @@ lib/z/mix.sh
 lib/pcre/mix.sh
 lib/iconv/mix.sh
 lib/readline/mix.sh
-lib/curses/any/mix.sh
+lib/curses/mix.sh
 lib/curses/terminfo/mix.sh
 lib/oniguruma/mix.sh
 {% endblock %}

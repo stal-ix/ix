@@ -6,7 +6,7 @@ http://thrysoee.dk/editline/libedit-20210522-3.1.tar.gz
 {% endblock %}
 
 {% block lib_deps %}
-lib/curses/any/mix.sh
+lib/curses/mix.sh
 {% endblock %}
 
 {% block setup %}

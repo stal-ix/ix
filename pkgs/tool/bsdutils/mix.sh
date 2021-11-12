@@ -15,7 +15,7 @@ lib/c++/mix.sh
 lib/xo/mix.sh
 lib/edit/mix.sh
 lib/openssl/mix.sh
-lib/curses/any/mix.sh
+lib/curses/mix.sh
 dev/build/pkg-config/mix.sh
 dev/lang/flex/mix.sh
 dev/lang/byacc/mix.sh

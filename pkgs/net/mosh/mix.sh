@@ -8,7 +8,7 @@ https://github.com/mobile-shell/mosh/archive/refs/tags/mosh-1.3.2.tar.gz
 {% block bld_deps %}
 lib/c++/mix.sh
 lib/protobuf/mix.sh
-lib/curses/any/mix.sh
+lib/curses/mix.sh
 dev/tool/protoc/mix.sh
 dev/build/autoconf/2.69/mix.sh
 dev/build/automake/1.16.3/mix.sh
