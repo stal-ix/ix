@@ -29,7 +29,7 @@ rm -rf mimalloc-*
 {% block test %}
 . ${out}/env
 
-gcc ${CPPFLAGS} ${CFLAGS} ${LDFLAGS} -o main -x c - << EOF
+clang ${CPPFLAGS} ${CFLAGS} ${LDFLAGS} -o main -x c - << EOF
 #include <stdlib.h>
 #include <locale.h>
 

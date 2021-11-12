@@ -15,11 +15,11 @@ boot/6/env/std/mix.sh
 
 {% block build %}
 for s in src/*.cc; do
-    g++ -c ${s}
+    clang++ -c ${s}
 done
 
 for s in src/*.c; do
-    gcc -c ${s}
+    clang -c ${s}
 done
 
 ar q libcxxrt.a *.o

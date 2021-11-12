@@ -10,7 +10,7 @@ env/std/mix.sh
 
 {% block build %}
 >empty.c
-gcc -c empty.c -o empty.o
+clang -c empty.c -o empty.o
 ar q libempty.a empty.o
 {% endblock %}
 

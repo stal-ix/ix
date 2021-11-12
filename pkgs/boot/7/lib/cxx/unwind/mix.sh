@@ -21,11 +21,11 @@ cd libunwind
 
 {% block build %}
 for s in src/*.cpp; do
-    g++ -c ${s}
+    clang++ -c ${s}
 done
 
 for s in src/*.c src/*.S; do
-    gcc -c ${s}
+    clang -c ${s}
 done
 
 ar q libunwind.a *.o

@@ -50,7 +50,7 @@ ecl -norc
 {% endblock %}
 
 {% block build %}
-gcc -c symbols.cpp -o ${tmp}/symbols.o
+clang -c symbols.cpp -o ${tmp}/symbols.o
 
 export LDLIBS="${tmp}/symbols.o"
 

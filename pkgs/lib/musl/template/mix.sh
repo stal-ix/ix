@@ -34,7 +34,7 @@ export CPPFLAGS="-isystem ${out}/include \${CPPFLAGS}"
 {% block test %}
 . ${out}/env
 
-gcc ${CPPFLAGS} ${CFLAGS} ${LDFLAGS} -x c -o main - << EOF
+clang ${CPPFLAGS} ${CFLAGS} ${LDFLAGS} -x c -o main - << EOF
 #include <stdio.h>
 
 int main() {

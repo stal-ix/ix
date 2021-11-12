@@ -54,7 +54,7 @@ for i in src/*; do
                 set +x
                 objs="$s.o $objs"
                 set -x
-                gcc ${CFLAGS} $s -c -o $s.o
+                clang ${CFLAGS} $s -c -o $s.o
             ;;
         esac
     done
@@ -67,7 +67,7 @@ for i in src/*; do
                 set +x
                 objs="$s.o $objs"
                 set -x
-                gcc ${CFLAGS} $s -c -o $s.o
+                clang ${CFLAGS} $s -c -o $s.o
             ;;
         esac
     done
@@ -77,11 +77,11 @@ for s in src/malloc/mallocng/*.c; do
     set +x
     objs="$s.o $objs"
     set -x
-    gcc ${CFLAGS} $s -c -o $s.o
+    clang ${CFLAGS} $s -c -o $s.o
 done
 
 for s in crt/x86_64/*.s crt/crt1.c; do
-    gcc ${CFLAGS} $s -c -o $s.o
+    clang ${CFLAGS} $s -c -o $s.o
     set +x
     objs="$s.o $objs"
     set -x
@@ -90,7 +90,7 @@ done
 ar q libmusl.a $objs
 ranlib libmusl.a
 
-gcc ${CFLAGS} ${LDFLAGS} ./libmusl.a -o tool -x c - << EOF
+clang ${CFLAGS} ${LDFLAGS} ./libmusl.a -o tool -x c - << EOF
 #include <stdio.h>
 #include <errno.h>
 
