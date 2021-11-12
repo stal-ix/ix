@@ -9,3 +9,13 @@ addf44b646ddb4e3919805aa88fa7c5e
 dev/lang/m4/mix.sh
 env/std/0/mix.sh
 {% endblock %}
+
+{% block install %}
+{{super()}}
+
+cd ${out}/bin && ln -s libtoolize glibtoolize
+{% endblock %}
+
+{% block env %}
+export LIBTOOLIZE=libtoolize
+{% endblock %}

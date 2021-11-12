@@ -12,6 +12,8 @@ a50fb1d7c40ac7fac3360218cb37a38b
 {% block bld_deps %}
 net/openssh/libs/mix.sh(openssl=1,curses=netbsd)
 gnu/patch/mix.sh
+dev/doc/groff/mix.sh
+dev/doc/texinfo/mix.sh
 {{super()}}
 {% endblock %}
 

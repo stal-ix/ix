@@ -16,10 +16,6 @@ dev/lang/python/3/minimal/mix.sh
 {{super()}}
 {% endblock %}
 
-{% block patch %}
-sed -e 's|glibtoolize|libtoolize|' -i autogen.sh
-{% endblock %}
-
 {% block autoreconf %}
 dash ./autogen.sh
 {% endblock %}
