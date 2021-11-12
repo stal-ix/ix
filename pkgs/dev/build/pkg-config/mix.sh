@@ -21,4 +21,11 @@ boot/final/env/tools/mix.sh
 
 {% block env %}
 export PKG_CONFIG="${out}/bin/pkg-config"
+export PKG_PROG_PKG_CONFIG="${out}/share/aclocal/pkg.m4"
+{% endblock %}
+
+{% block test %}
+. ${out}/env
+
+cat ${PKG_PROG_PKG_CONFIG}
 {% endblock %}

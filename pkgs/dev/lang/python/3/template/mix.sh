@@ -7,6 +7,22 @@ dev/lang/python/libs/mix.sh
 {{super()}}
 {% endblock %}
 
+{% block toolconf %}
+cat << EOF > which
+#!$(command -v dash)
+command -v \$@
+EOF
+
+chmod +x which
+
+cat << EOF > sw_vers
+#!$(command -v dash)
+echo ${MACOSX_DEPLOYMENT_TARGET}
+EOF
+
+chmod +x sw_vers
+{% endblock %}
+
 {% block patch %}
 sed -e 's/MULTIARCH=\$.*/MULTIARCH=/' \
     -i ./configure
@@ -32,8 +48,8 @@ cat Modules/Setup | awk -f fix.awk | sed -e 's|-l.*||' | grep -v capi | grep -v 
 cat << EOF >> Modules/Setup.local
 _lsprof _lsprof.c rotatingtree.c
 _opcode _opcode.c
-_posixshmem _multiprocessing/posixshmem.c -I$(srcdir)/Modules/_multiprocessing
-_multiprocessing _multiprocessing/multiprocessing.c _multiprocessing/semaphore.c -I$(srcdir)/Modules/_multiprocessing
+_posixshmem _multiprocessing/posixshmem.c -I\$(srcdir)/Modules/_multiprocessing
+_multiprocessing _multiprocessing/multiprocessing.c _multiprocessing/semaphore.c -I\$(srcdir)/Modules/_multiprocessing
 _queue _queuemodule.c
 _scproxy _scproxy.c
 EOF
