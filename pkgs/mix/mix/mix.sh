@@ -44,7 +44,9 @@ mv mix_bin mix
 {% block entry_point %}mix{% endblock %}
 {% block bin %}mix.bin{% endblock %}
 
-{% block postinstall %}
+{% block install %}
+{{super()}}
+
 cp -R pkgs ${out}/bin/
 cd ${out}/bin && mv mix.bin mix
 {% endblock %}
