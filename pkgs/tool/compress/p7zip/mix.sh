@@ -23,7 +23,9 @@ DEST_DIR=${out}
 7za
 {% endblock %}
 
-{% block postinstall %}
+{% block install %}
+{{super()}}
+
 (
     set -eu
 

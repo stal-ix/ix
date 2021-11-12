@@ -9,6 +9,8 @@ https://www.openssl.org/source/openssl-3.0.0.tar.gz
 install_sw
 {% endblock %}
 
-{% block postinstall %}
+{% block install %}
+{{super()}}
+
 cd ${out} && ln -s lib64 lib
 {% endblock %}

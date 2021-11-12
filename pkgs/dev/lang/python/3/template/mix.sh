@@ -91,6 +91,4 @@ cp -R Tools/freeze ${out}/bin/
 rm -rf ${out}/lib/python*/test
 ${out}/bin/python3 -c 'import configparser;'
 find ${out} | grep __pycache__ | xargs rm -rf
-{% block extra_postinstall %}
-{% endblock %}
 {% endblock %}

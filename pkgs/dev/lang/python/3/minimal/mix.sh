@@ -23,7 +23,9 @@ env/std/0/mix.sh
 --with-ensurepip=no
 {% endblock %}
 
-{% block extra_postinstall %}
+{% block postinstall %}
+{{super()}}
+
 rm -rf ${out}/include
 rm -rf ${out}/lib/pkgconfig
 find ${out}/lib/ | grep '\.a$' | xargs rm
