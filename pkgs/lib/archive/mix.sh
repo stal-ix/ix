@@ -29,7 +29,3 @@ autoreconf -i
 {% block coflags %}
 --without-xml2
 {% endblock %}
-
-{% block env %}
-export CMFLAGS="-DCMAKE_USE_SYSTEM_LIBARCHIVE=ON \${CMFLAGS}"
-{% endblock %}

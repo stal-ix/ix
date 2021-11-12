@@ -16,7 +16,3 @@ export LIBTOOLIZE=libtoolize
 
 dash ./autogen.sh
 {% endblock %}
-
-{% block env %}
-export CMFLAGS="-DCMAKE_USE_SYSTEM_LIBUV=ON \${CMFLAGS}"
-{% endblock %}

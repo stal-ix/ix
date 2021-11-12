@@ -24,5 +24,4 @@ mkdir ${out}/bin && cp minigzip ${out}/bin/
 
 {% block env %}
 export COFLAGS="--with-z=${out} \${COFLAGS}"
-export CMFLAGS="-DCMAKE_USE_SYSTEM_ZLIB=ON \${CMFLAGS}"
 {% endblock %}

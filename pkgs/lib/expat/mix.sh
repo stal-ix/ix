@@ -28,5 +28,4 @@ chmod +x install_name_tool
 
 {% block env %}
 export COFLAGS="--with-expat=${out} --with-libexpat-prefix=${out} --with-system-expat=yes \${COFLAGS}"
-export CMFLAGS="-DCMAKE_USE_SYSTEM_EXPAT=ON \${CMFLAGS}"
 {% endblock %}
