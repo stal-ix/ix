@@ -1,10 +1,13 @@
 {% extends '//pypi/docutils/mix.sh' %}
 
-{% block extra_run_deps %}
+{% block run_deps %}
 dev/lang/python/3/minimal/mix.sh
+{{super()}}
 {% endblock %}
 
-{% block postinstall %}
+{% block install %}
+{{super()}}
+
 mkdir ${out}/bin
 
 cd ${out}/lib/python && cd docutils-*data/scripts
