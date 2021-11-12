@@ -5,7 +5,9 @@ https://musl.libc.org/releases/musl-1.2.2.tar.gz
 aed8ae9e2b0898151b36a204088292dd
 {% endblock %}
 
-{% block postinstall %}
+{% block install %}
+{{super()}}
+
 cat << EOF > ${out}/include/error.h
 #pragma once
 
@@ -14,10 +16,14 @@ cat << EOF > ${out}/include/error.h
 #define error(status, errno, ...) err(status, __VA_ARGS__)
 EOF
 
-cd ${out}/lib
+(
+    set -eu
 
-ar q libcrt.a crt1.o crti.o crtn.o
-ranlib libcrt.a
+    cd ${out}/lib
+
+    ar q libcrt.a crt1.o crti.o crtn.o
+    ranlib libcrt.a
+)
 {% endblock %}
 
 {% block env %}
