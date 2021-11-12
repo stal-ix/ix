@@ -1,9 +1,8 @@
-{% extends 'template.sh' %}
+{% extends 'std.sh' %}
 
 {% block bld_deps %}
-{{super()}}
 dev/build/make/mix.sh
-env/std/mix.sh
+{{super()}}
 {% endblock %}
 
 {% set make_flags %}

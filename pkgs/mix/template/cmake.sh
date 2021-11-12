@@ -1,9 +1,8 @@
 {% extends 'ninja.sh' %}
 
 {% block bld_deps %}
-{{super()}}
 dev/build/cmake/mix.sh
-env/std/mix.sh
+{{super()}}
 {% endblock %}
 
 {% set cmflags %}
