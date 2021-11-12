@@ -1,19 +1,24 @@
 {% extends '//mix/template/autohell.sh' %}
 
 {% block fetch %}
-https://github.com/ivmai/bdwgc/releases/download/v8.0.4/gc-8.0.4.tar.gz
-67a5093e2f9f381bd550aa891d00b54b
-https://github.com/ivmai/bdwgc/commit/5668de71107022a316ee967162bc16c10754b9ce.patch?full_index=1
-10435b33b8cf10ff0afa043f04ccc324
+https://github.com/ivmai/bdwgc/archive/refs/tags/v8.0.6.tar.gz
+50c490f2a55f5e747f7cb9f18acb7c68
 {% endblock %}
 
 {% block lib_deps %}
 lib/c++/mix.sh
 lib/atomicops/mix.sh
+{{'sys/framework/Corefoundation/mix.sh' | darwin}}
 {% endblock %}
 
-{% block patch %}
-cat ${src}/*.patch* | patch -p1
+{% block bld_deps %}
+dev/build/autoconf/2.69/mix.sh
+dev/build/automake/1.16.3/mix.sh
+{{super()}}
+{% endblock %}
+
+{% block autoreconf %}
+dash ./autogen.sh
 {% endblock %}
 
 {% block coflags %}
@@ -24,4 +29,8 @@ cat ${src}/*.patch* | patch -p1
 
 {% block env %}
 export COFLAGS="--with-libgc-prefix=${out} \${COFLAGS}"
+{% endblock %}
+
+{% block test %}
+make check
 {% endblock %}

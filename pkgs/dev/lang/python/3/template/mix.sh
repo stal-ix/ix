@@ -77,9 +77,6 @@ sed -e 's|spec is None|spec is None or spec.loader is None|' -i Lib/modulefinder
 
 {% block coflags %}
 --with-ensurepip=no
---with-system-libmpdec
---with-system-expat
---with-system-ffi
 {% endblock %}
 
 {% block test %}
