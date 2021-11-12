@@ -5,6 +5,8 @@ boot/4/byacc/mix.sh
 boot/3/env/mix.sh
 {% endblock %}
 
-{% block postinstall %}
+{% block install %}
+{{super()}}
+
 cd ${out}/bin && ln -s mawk awk
 {% endblock %}
