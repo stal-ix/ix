@@ -11,9 +11,6 @@ boot/6/env/std/mix.sh
 {% block autoreconf %}
 {% endblock %}
 
-{% block extra_modules %}
-{% endblock %}
-
 {% block extra_tests %}
 {% endblock %}
 
