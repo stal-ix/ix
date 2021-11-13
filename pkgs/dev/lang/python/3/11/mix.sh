@@ -40,5 +40,5 @@ EOF
 
 {% block test %}
 {{super()}}
-${out}/bin/python3 -c 'import decimal; import pyexpat; import ctypes;'
+${out}/bin/python3 -c 'import pyexpat'
 {% endblock %}
