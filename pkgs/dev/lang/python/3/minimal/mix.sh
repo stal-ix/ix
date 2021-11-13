@@ -19,11 +19,7 @@ env/std/0/mix.sh
 {% block patch_ffi %}
 {% endblock %}
 
-{% block fix_readline %}
-{% endblock %}
-
-{% block coflags %}
---with-ensurepip=no
+{% block setup %}
 {% endblock %}
 
 {% block postinstall %}
