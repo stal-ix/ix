@@ -13,7 +13,7 @@ lib/expat/mix.sh
 lib/pcre/2/mix.sh
 lib/openssl/mix.sh
 dev/lang/perl5/mix.sh
-dev/lang/python/3/minimal/mix.sh
+dev/build/python/mix.sh
 gnu/gettext/mix.sh
 {{super()}}
 {% endblock %}

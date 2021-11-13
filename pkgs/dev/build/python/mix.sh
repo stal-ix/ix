@@ -1,4 +1,4 @@
-{% extends '//dev/lang/python/3/10/mix.sh' %}
+{% extends '//lib/python/3/10/mix.sh' %}
 
 {% block bld_deps %}
 dev/build/autoconf/2.69/mix.sh

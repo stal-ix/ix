@@ -1,4 +1,4 @@
-{% extends '//dev/lang/python/3/10/mix.sh' %}
+{% extends '//lib/python/3/10/mix.sh' %}
 
 {% block fetch %}
 https://github.com/python/cpython/archive/refs/tags/v3.11.0a2.tar.gz
@@ -6,7 +6,7 @@ f21d7c326ca389e43caf5664a768d745
 {% endblock %}
 
 {% block bld_deps %}
-dev/lang/python/3/minimal/mix.sh
+dev/build/python/mix.sh
 {{super()}}
 {% endblock %}
 

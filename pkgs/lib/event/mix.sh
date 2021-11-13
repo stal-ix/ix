@@ -12,7 +12,7 @@ lib/openssl/mix.sh
 {% block bld_deps %}
 dev/build/autoconf/2.69/mix.sh
 dev/build/automake/1.16.3/mix.sh
-dev/lang/python/3/minimal/mix.sh
+dev/build/python/mix.sh
 {{super()}}
 {% endblock %}
 

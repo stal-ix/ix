@@ -8,7 +8,7 @@ f3c06704e536dcca1814b16dbcdc4a36
 {% block go_bld_deps %}
 gnu/tar/mix.sh
 dev/lang/go/1.4/mix.sh
-dev/lang/python/3/minimal/mix.sh
+dev/build/python/mix.sh
 dev/lang/perl5/mix.sh
 {% endblock %}
 

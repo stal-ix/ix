@@ -7,6 +7,6 @@ https://github.com/ninja-build/ninja/archive/refs/tags/v1.10.2.tar.gz
 
 {% block bld_deps %}
 lib/c++/mix.sh
-dev/lang/python/3/minimal/mix.sh
+dev/build/python/mix.sh
 {{super()}}
 {% endblock %}

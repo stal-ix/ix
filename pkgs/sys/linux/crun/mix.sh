@@ -11,7 +11,7 @@ lib/yajl/mix.sh
 lib/cap/mix.sh
 lib/seccomp/mix.sh
 lib/argp/standalone/mix.sh
-dev/lang/python/3/minimal/mix.sh
+dev/build/python/mix.sh
 {{super()}}
 {% endblock %}
 

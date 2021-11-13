@@ -11,7 +11,7 @@ env/std/0/mix.sh
 {% endblock %}
 
 {% block run_deps %}
-dev/lang/python/3/minimal/mix.sh
+dev/build/python/mix.sh
 {% endblock %}
 
 {% block build %}

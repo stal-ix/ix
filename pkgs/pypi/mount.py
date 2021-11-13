@@ -13,7 +13,7 @@ TMPL = r'''
 {% endblock %}
 
 {% block bld_deps %}
-dev/lang/python/3/minimal/mix.sh
+dev/build/python/mix.sh
 env/std/mix.sh
 {% endblock %}
 

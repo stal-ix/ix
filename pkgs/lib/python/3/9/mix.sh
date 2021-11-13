@@ -1,4 +1,4 @@
-{% extends '//dev/lang/python/3/8/mix.sh' %}
+{% extends '//lib/python/3/8/mix.sh' %}
 
 {% block fetch %}
 https://www.python.org/ftp/python/3.9.8/Python-3.9.8.tar.xz

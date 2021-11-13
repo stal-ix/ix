@@ -1,4 +1,4 @@
-{% extends '//dev/lang/python/3/template/mix.sh' %}
+{% extends '//lib/python/3/template/mix.sh' %}
 
 {% block fetch %}
 https://www.python.org/ftp/python/3.8.5/Python-3.8.5.tgz

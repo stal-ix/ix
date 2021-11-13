@@ -12,7 +12,7 @@ lib/curses/mix.sh
 lib/edit/mix.sh
 lib/xz/mix.sh
 lib/xml2/mix.sh
-dev/lang/python/3/10/lib/mix.sh
+lib/python/3/10/lib/mix.sh
 dev/tool/swig/4/mix.sh
 {{super()}}
 {% endblock %}
