@@ -16,9 +16,7 @@ lib/python/libs/mix.sh
 {% block autoreconf %}
 libtoolize -c
 autoreconf -i
-
-sed -e 's/MULTIARCH=\$.*/MULTIARCH=/' \
-    -i ./configure
+sed -e 's/MULTIARCH=\$.*/MULTIARCH=/' -i ./configure
 {% endblock %}
 
 {% block toolconf %}
@@ -96,12 +94,13 @@ EOF
 {% block test %}
 ${out}/bin/python3 -c 'import zlib; import multiprocessing; import cProfile;'
 {% block extra_tests %}
-${out}/bin/python3 -c 'import hashlib; import ssl; import lzma; import bz2; import sqlite3;'
-${out}/bin/python3 -c 'import decimal; import ctypes;'
+${out}/bin/python3 -c 'import hashlib; import ssl; import lzma; import bz2; import sqlite3; import decimal; import ctypes;'
 {% endblock %}
 {% endblock %}
 
-{% block postinstall %}
+{% block install %}
+{{super()}}
+
 cp -R Tools/freeze ${out}/bin/
 rm -rf ${out}/lib/python*/test
 ${out}/bin/python3 -c 'import configparser;'
