@@ -57,7 +57,7 @@ IFS=${OFS}
 # euc
 )
 
-rm -rf ${out}/lib/*.so* ${out}/lib/*.la* ${out}/lib/*.dylib* || true
+{% block cleanup_pkg %}rm -rf ${out}/lib/*.so* ${out}/lib/*.la* ${out}/lib/*.dylib* || true{% endblock %}
 rm -rf ${tmp}
 
 {% block sh_script_end %}

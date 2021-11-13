@@ -1,15 +1,7 @@
-{% extends 'blocks.sh' %}
-
-{% block unpack %}
-{% include 'blocks/unpack.sh' %}
-{% endblock %}
+{% extends 'pkg.sh' %}
 
 {% block preconf %}
 {% include 'blocks/preconf.sh' %}
-{% endblock %}
-
-{% block prepare_env %}
-{% include 'blocks/env.sh' %}
 {% endblock %}
 
 {% block prepatch %}
