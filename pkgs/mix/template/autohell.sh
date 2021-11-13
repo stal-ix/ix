@@ -1,8 +1,14 @@
 {% extends 'make.sh' %}
 
 {% block bld_deps %}
-dev/build/pkg-config/mix.sh
+{% set bld_deps %}
 {{super()}}
+{% endset %}
+
+{% block autohell_env %}
+dev/build/pkg-config/mix.sh
+{{bld_deps}}
+{% endblock %}
 {% endblock %}
 
 {% block configure %}

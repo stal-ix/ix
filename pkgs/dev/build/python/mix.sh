@@ -1,12 +1,14 @@
 {% extends '//lib/python/3/10/mix.sh' %}
 
+{% block lib_deps %}
+{% endblock %}
+
 {% block bld_deps %}
-dev/build/autoconf/2.69/mix.sh
-dev/build/automake/1.16.3/mix.sh
-dev/build/autoconf/archive/mix.sh
-{{'lib/linux/mix.sh' | linux}}
-{{'sys/framework/SystemConfiguration/mix.sh' | darwin}}
 lib/z/mix.sh
+{{super()}}
+{% endblock %}
+
+{% block autohell_env %}
 env/std/0/mix.sh
 {% endblock %}
 
@@ -22,7 +24,7 @@ env/std/0/mix.sh
 {% block setup %}
 {% endblock %}
 
-{% block postinstall %}
+{% block install %}
 {{super()}}
 
 rm -rf ${out}/include

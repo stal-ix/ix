@@ -5,7 +5,7 @@
 {% endblock %}
 
 {% block lib_deps %}
-lib/python/3/10/lib/mix.sh
+lib/python/3/10/mix.sh
 {% endblock %}
 
 {% block bld_deps %}
