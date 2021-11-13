@@ -6,6 +6,9 @@ a6eb7fb1f2c21fa80030a47993853e92
 {% endblock %}
 
 {% block bld_deps %}
+lib/z/mix.sh
+lib/lz4/mix.sh
+lib/xz/mix.sh
 env/std/0/mix.sh
 {% endblock %}
 
