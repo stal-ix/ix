@@ -55,7 +55,14 @@ base64 -d << EOF > fix.awk
 {% include 'fix.awk/base64' %}
 EOF
 
-cat Modules/Setup | awk -f fix.awk | sed -e 's|-l.*||' | grep -v capi | grep -v nis | grep -v readline | grep -v spwd > Modules/Setup.local
+cat Modules/Setup \
+    | awk -f fix.awk    \
+    | sed -e 's|-l.*||' \
+    | grep -v capi      \
+    | grep -v nis       \
+    | grep -v readline  \
+    | grep -v spwd      \
+    > Modules/Setup.local
 
 # some hand job
 cat << EOF >> Modules/Setup.local
