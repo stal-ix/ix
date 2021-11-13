@@ -1,6 +1,9 @@
 {% extends '//dev/lang/python/3/10/mix.sh' %}
 
 {% block bld_deps %}
+dev/build/autoconf/2.69/mix.sh
+dev/build/automake/1.16.3/mix.sh
+dev/build/autoconf/archive/mix.sh
 {{'lib/linux/mix.sh' | linux}}
 {{'sys/framework/SystemConfiguration/mix.sh' | darwin}}
 lib/z/mix.sh

@@ -8,6 +8,9 @@ boot/7/lib/compiler_rt/mix.sh
 boot/6/env/std/mix.sh
 {% endblock %}
 
+{% block autoreconf %}
+{% endblock %}
+
 {% block extra_modules %}
 {% endblock %}
 
