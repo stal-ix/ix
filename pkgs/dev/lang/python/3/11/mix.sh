@@ -32,7 +32,8 @@ cat Modules/Setup \
     | grep -v ossaudiodev \
     | grep -v pyexpat     \
     | grep -v xxsubtype   \
-    | grep -v _dbmmodule > _
+    | grep -v _dbmmodule  \
+    > _
 
 cat _ - << EOF > Modules/Setup.local
 _decimal _decimal/_decimal.c

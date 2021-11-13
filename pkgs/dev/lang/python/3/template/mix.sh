@@ -76,9 +76,6 @@ _lzma _lzmamodule.c
 _bz2 _bz2module.c
 _sqlite3 _sqlite/cache.c _sqlite/connection.c _sqlite/cursor.c _sqlite/microprotocols.c _sqlite/module.c _sqlite/prepare_protocol.c _sqlite/row.c _sqlite/statement.c _sqlite/util.c -DSQLITE_OMIT_LOAD_EXTENSION
 EOF
-
-{% block patch_sqlite_defines %}
-{% endblock %}
 {% endblock %}
 
 >setup.py
