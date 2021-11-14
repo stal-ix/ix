@@ -34,6 +34,7 @@ cat Modules/Setup \
 
 cat _ - << EOF > Modules/Setup.local
 _decimal _decimal/_decimal.c
+{{'_scproxy _scproxy.c' | darwin}}
 pyexpat pyexpat.c
 EOF
 {% endblock %}
