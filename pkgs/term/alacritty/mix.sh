@@ -1,4 +1,4 @@
-{% extends '//mix/template/std.sh' %}
+{% extends '//mix/template/cargo.sh' %}
 
 {% block fetch %}
 https://github.com/alacritty/alacritty/archive/refs/tags/v0.9.0.tar.gz
@@ -7,12 +7,7 @@ https://github.com/alacritty/alacritty/archive/refs/tags/v0.9.0.tar.gz
 
 {% block bld_deps %}
 lib/iconv/mix.sh
-dev/lang/rustc/1/56/mix.sh
 {{super()}}
-{% endblock %}
-
-{% block build %}
-cargo build --release
 {% endblock %}
 
 {% block install %}
