@@ -30,6 +30,7 @@ dev/doc/texinfo/mix.sh
 cat lib/xalloc-die.c | grep -v 'memory ex' > _ && mv _ lib/xalloc-die.c
 {% endblock %}
 
-{% block postinstall %}
+{% block install %}
+{{super()}}
 rm -rf ${out}/lib ${out}/include ${out}/bin/wget2_noinstall
 {% endblock %}

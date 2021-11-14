@@ -45,11 +45,13 @@ llvm
 cd build && ninja lldb
 {% endblock %}
 
-{% block postinstall %}
-#cd ${out}
+{% block install %}
+{{super()}}
 
-#mkdir new
-#mv bin/lldb* new/
-#rm -rf bin lib share include libexec
-#mv new bin
+cd ${out}
+
+mkdir new
+mv bin/lldb* new/
+rm -rf bin lib share include libexec
+mv new bin
 {% endblock %}
