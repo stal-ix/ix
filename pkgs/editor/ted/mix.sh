@@ -7,7 +7,7 @@ fe51001993fc27ecd2156b2eee5616e1
 
 {% block bld_deps %}
 pypi/pygments/mix.sh
-lib/python/3/10/mix.sh
+lib/python/mix.sh
 tool/compress/upx/mix.sh
 env/std/0/mix.sh
 {% endblock %}
