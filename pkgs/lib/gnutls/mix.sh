@@ -8,7 +8,7 @@ https://www.gnupg.org/ftp/gcrypt/gnutls/v3.7/gnutls-3.7.2.tar.xz
 {% block lib_deps %}
 lib/c++/mix.sh
 lib/gmp/mix.sh
-lib/idn2/mix.sh
+lib/idn/2/mix.sh
 lib/tasn1/mix.sh
 lib/nettle/mix.sh
 {% if mix.platform.target.os == 'linux' %}

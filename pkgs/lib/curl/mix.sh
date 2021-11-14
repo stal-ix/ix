@@ -8,7 +8,7 @@ https://github.com/curl/curl/archive/refs/tags/curl-7_79_1.tar.gz
 {% block lib_deps %}
 lib/z/mix.sh
 lib/c-ares/mix.sh
-lib/idn2/mix.sh
+lib/idn/2/mix.sh
 lib/zstd/mix.sh
 lib/brotli/mix.sh
 lib/nghttp2/mix.sh

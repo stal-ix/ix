@@ -15,7 +15,7 @@ lib/intl/mix.sh
 lib/iconv/mix.sh
 lib/gnutls/mix.sh
 lib/bzip2/mix.sh
-lib/idn2/mix.sh
+lib/idn/2/mix.sh
 lib/pcre/mix.sh
 dev/doc/texinfo/mix.sh
 {{super()}}
