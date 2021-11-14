@@ -26,12 +26,14 @@ EOF
 
 chmod +x which
 
+{% if mix.platform.target.os == 'darwin' %}
 cat << EOF > sw_vers
 #!$(command -v dash)
 echo ${MACOSX_DEPLOYMENT_TARGET}
 EOF
 
 chmod +x sw_vers
+{% endif %}
 {% endblock %}
 
 {% block patch %}
@@ -71,7 +73,7 @@ _opcode _opcode.c
 _posixshmem _multiprocessing/posixshmem.c -I\$(srcdir)/Modules/_multiprocessing
 _multiprocessing _multiprocessing/multiprocessing.c _multiprocessing/semaphore.c -I\$(srcdir)/Modules/_multiprocessing
 _queue _queuemodule.c
-_scproxy _scproxy.c
+{{'_scproxy _scproxy.c' | darwin}}
 
 {% block extra_modules %}
 readline readline.c

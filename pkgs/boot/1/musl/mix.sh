@@ -87,8 +87,8 @@ for s in crt/x86_64/*.s crt/crt1.c; do
     set -x
 done
 
-ar q libmusl.a $objs
-ranlib libmusl.a
+llvm-ar q libmusl.a $objs
+llvm-ranlib libmusl.a
 
 clang ${CFLAGS} ${LDFLAGS} ./libmusl.a -o tool -x c - << EOF
 #include <stdio.h>
@@ -111,8 +111,8 @@ EOF
 clang -o empty.o -c ./empty.c
 
 for x in m pthread dl; do
-    ar q lib${x}.a empty.o
-    ranlib lib${x}.a
+    llvm-ar q lib${x}.a empty.o
+    llvm-ranlib lib${x}.a
 done
 
 ./tool << EOF > ${out}/env
