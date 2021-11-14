@@ -9,7 +9,7 @@ https://www.apache.org/dist/serf/serf-1.3.9.tar.bz2
 lib/z/mix.sh
 lib/apr/mix.sh
 lib/openssl/mix.sh
-lib/apr-util/mix.sh
+lib/apr/util/mix.sh
 {% endblock %}
 
 {% block bld_deps %}

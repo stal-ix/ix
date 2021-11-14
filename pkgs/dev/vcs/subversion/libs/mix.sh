@@ -8,6 +8,6 @@ lib/intl/mix.sh
 lib/serf/mix.sh
 lib/expat/mix.sh
 lib/sqlite3/mix.sh
-lib/apr-util/mix.sh
+lib/apr/util/mix.sh
 lib/utf8proc/mix.sh
 {% endblock %}
