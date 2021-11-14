@@ -15,6 +15,5 @@ lib/c++/mix.sh
 {% endblock %}
 
 {% block install %}
-mkdir -p ${out}/bin
-install -v -m755 unrar ${out}/bin/
+mkdir ${out}/bin && cp unrar ${out}/bin/
 {% endblock %}
