@@ -20,7 +20,7 @@ dash ./bin/setup.sh
 {% endblock %}
 
 {% block setup %}
-{% if.mix.platform.target == 'linux' %}
+{% if mix.platform.target.os == 'linux' %}
 export CPPFLAGS="-I${lib_bsd}/include/bsd -DLIBBSD_OVERLAY=1 ${CPPFLAGS}"
 {% endif %}
 {% endblock %}

@@ -13,7 +13,10 @@ env/std/0/mix.sh
 {% block install %}
 {{super()}}
 
-cd ${out}/bin && ln -s libtoolize glibtoolize
+cd ${out}/bin
+
+ln -s libtoolize glibtoolize
+ln -s libtool glibtool
 {% endblock %}
 
 {% block env %}
