@@ -6,10 +6,9 @@ https://ftp.gnu.org/gnu/coreutils/coreutils-8.32.tar.xz
 {% endblock %}
 
 {% block coreutils_deps_extra %}
-boot/9/bison/./3.4.1_2.sh
+boot/9/bison/3.4.1_2.sh
 {% endblock %}
 
 {% block postconf %}
 cat Makefile | grep -v 'LIBINTL = -lintl' > _ && mv _ Makefile
 {% endblock %}
-

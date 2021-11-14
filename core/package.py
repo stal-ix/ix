@@ -48,7 +48,15 @@ class Package:
             'root': self.config.store_dir,
             'deps': [x.out_dir for x in self.iter_all_build_depends()],
         })
-        self.out_dir = self.config.store_dir + '/' + self.uid + '-' + os.path.dirname(self.name).replace('/', '-').replace('.', '-')
+
+        assert '/./' not in self.name
+
+        print(self.name, self.pkg_name)
+        self.out_dir = self.config.store_dir + '/' + self.uid + '-' + self.pkg_name
+
+    @property
+    def pkg_name(self):
+        return os.path.dirname(self.name).replace('/', '-').replace('.', '-').replace('--', '-')
 
     @property
     def flags(self):
