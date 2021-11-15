@@ -34,6 +34,7 @@ cat Modules/Setup \
     | grep -v _decimal    \
     | grep -v xxsubtype   \
     | grep -v ossaudiodev \
+    | grep -v _uuidmodule \
     > _
 
 cat _ - << EOF > Modules/Setup.local
