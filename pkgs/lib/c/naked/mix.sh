@@ -1,4 +1,4 @@
-{% extends '//mix/template/hub.sh' %}
+{% extends '//mix/template/lib.sh' %}
 
 {% block deps %}
 {% if mix.platform.target.os == 'linux' %}

@@ -1,4 +1,4 @@
-{% extends '//mix/template/hub.sh' %}
+{% extends '//mix/template/lib.sh' %}
 
 {% block deps %}
 lib/c/naked/mix.sh
