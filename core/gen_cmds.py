@@ -77,7 +77,7 @@ class CmdBuild:
         self.package = package
 
     def script(self, sb, src_dir):
-        build = self.package.descr['build']['script']
+        build = self.package.descr['bld']['script']
 
         return {
             'sh': sb.build_sh_script,
@@ -158,7 +158,7 @@ def iter_build_commands(self):
 
     sb = ScriptBuilder(self.config)
     out_dir = self.out_dir
-    urls = self.descr['build']['fetch']
+    urls = self.descr['bld']['fetch']
 
     if urls:
         extra = []

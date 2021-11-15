@@ -21,11 +21,15 @@
 {% endset %}
 
 {% block build_depends %}
-{{mix.list_to_json(lib_deps + ' ' + bld_deps)}}
+{{mix.list_to_json(bld_deps)}}
 {% endblock %}
 
 {% block runtime_depends %}
-{{mix.list_to_json(lib_deps + ' ' + run_deps)}}
+{{mix.list_to_json(run_deps)}}
+{% endblock %}
+
+{% block library_depends %}
+{{mix.list_to_json(lib_deps)}}
 {% endblock %}
 
 {% block build_fetch %}
