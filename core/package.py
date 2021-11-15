@@ -49,14 +49,11 @@ class Package:
             'deps': [x.out_dir for x in self.iter_all_build_depends()],
         })
 
-        assert '/./' not in self.name
-
-        print(self.name, self.pkg_name)
         self.out_dir = self.config.store_dir + '/' + self.uid + '-' + self.pkg_name
 
     @property
     def pkg_name(self):
-        return os.path.dirname(self.name).replace('/', '-').replace('.', '-').replace('--', '-')
+        return self.name.removesuffix('.sh').removesuffix('/mix').replace('/', '-').replace('.', '-').replace('_', '-').replace('--', '-')
 
     @property
     def flags(self):
