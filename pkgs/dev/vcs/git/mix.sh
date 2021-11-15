@@ -1,8 +1,8 @@
 {% extends '//mix/template/make.sh' %}
 
 {% block fetch %}
-https://github.com/git/git/archive/refs/tags/v2.32.0-rc1.tar.gz
-5977037fe36445a5b57872cb48335004
+https://github.com/git/git/archive/refs/tags/v2.33.1.tar.gz
+9d410d4c01e0f1cc53b2ad07faa8147d
 {% endblock %}
 
 {% block bld_deps %}
