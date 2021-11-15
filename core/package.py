@@ -1,5 +1,6 @@
 import os
 import sys
+import json
 import jinja2
 import itertools
 import multiprocessing
@@ -37,9 +38,34 @@ def parse_pkg_name(v):
     return r
 
 
+def make_selector(v, flags):
+    v = parse_pkg_name(v)
+
+    v['flags'] = dict(itertools.chain(flags.items(), v.get('flags', {}).items()))
+
+    return v
+
+
+def uniq_pkgs(l):
+    s = set()
+
+    for x in l:
+        if x.uid not in s:
+            s.add(x.uid)
+
+            yield x
+
+
+def buildable(l):
+    for x in l:
+        if x.buildable():
+            yield x
+
+
 class Package:
     def __init__(self, selector, mngr):
         print(selector)
+
         self.selector = selector
         self.manager = mngr
         self.descr = cr.RenderContext(self).render()
@@ -67,9 +93,18 @@ class Package:
     def config(self):
         return self.manager.config
 
-    def load_package(self, selector):
-        # print(self.name, selector)
+    def load_package(self, n):
+        try:
+            n['name']
+        except TypeError:
+            if n.startswith('lib/'):
+                n = make_selector(n, self.flags)
+            else:
+                n = make_selector(n, {})
 
+        return self.load_package_impl(n)
+
+    def load_package_impl(self, selector):
         try:
             return self.manager.load_package(selector)
         except FileNotFoundError:
@@ -78,76 +113,97 @@ class Package:
 
             raise ce.Error(f'can not load dependant package {s1} of {s2}')
 
-    def filter_buildable(self, it):
-        for n in it:
-            if self.load_package(n).buildable():
-                yield n
+    def load_packages(self, l):
+        return [self.load_package(x) for x in l]
 
-    def make_selector(self, v):
-        try:
-            v['name']
-        except Exception:
-            v = parse_pkg_name(v)
+    def bld_deps(self):
+        return self.descr['bld']['deps']
 
-        if 'flags' not in v:
-            v['flags'] = {}
+    def lib_deps(self):
+        return self.descr['lib']['deps']
 
-        if v['name'].startswith('lib/'):
-            v['flags'] = dict(itertools.chain(self.flags.items(), v['flags'].items()))
+    def run_deps(self):
+        return self.descr['run']['deps']
 
-        return v
+    def bld_lib_deps(self):
+        yield from self.lib_deps()
 
-    def make_selectors(self, lst):
-        return [self.make_selector(x) for x in lst]
+        for x in self.bld_deps():
+            if x.startswith('lib/'):
+                yield x
 
-    # build
-    def build_depends(self):
-        return self.make_selectors(self.descr['lib']['deps'] + self.descr['bld']['deps'])
+        for p in self.bld_bin_closure():
+            for x in p.lib_deps():
+                yield x
+
+            for x in p.run_deps():
+                if x.startswith('lib/'):
+                    yield x
+
+    def bld_bin_deps(self):
+        for x in self.bld_deps():
+            if not x.startswith('lib/'):
+                yield x
 
     @cu.cached_method
-    def all_build_depends(self):
-        def iter_deps():
-            yield from self.build_depends()
+    def bld_bin_closure(self):
+        def it():
+            l = self.load_packages(self.bld_bin_deps())
 
-            for d in self.build_depends():
-                yield from self.load_package(d).all_runtime_depends()
+            yield from l
 
-        return cu.uniq_list(self.filter_buildable(iter_deps()))
+            for p in l:
+                yield from p.run_closure()
+
+        return list(uniq_pkgs(it()))
+
+    @cu.cached_method
+    def lib_closure(self):
+        def it():
+            l = self.load_packages(self.lib_deps())
+
+            yield from l
+
+            for p in l:
+                yield from p.lib_closure()
+
+        return list(uniq_pkgs(it()))
+
+    @cu.cached_method
+    def bld_lib_closure(self):
+        def it():
+            l = self.load_packages(self.bld_lib_deps())
+
+            yield from l
+
+            for p in l:
+                yield from p.lib_closure()
+
+        return list(uniq_pkgs(it()))
 
     def iter_all_build_depends(self):
-        for d in self.all_build_depends():
-            yield self.load_package(d)
+        yield from buildable(self.bld_bin_closure())
+        yield from buildable(self.bld_lib_closure())
 
-    # runtime
-    def runtime_depends(self):
-        return self.make_selectors(self.descr['lib']['deps'] + self.descr['run']['deps'])
+    def run_run_deps(self):
+        for x in self.run_deps():
+            if not x.startswith('lib/'):
+                yield x
 
     @cu.cached_method
-    def all_runtime_depends(self):
-        def iter_deps():
-            yield from self.runtime_depends()
+    def run_closure(self):
+        def it():
+            l = self.load_packages(self.run_run_deps())
 
-            for d in self.runtime_depends():
-                yield from self.load_package(d).all_runtime_depends()
+            yield from l
 
-        return cu.uniq_list(self.filter_buildable(iter_deps()))
+            for p in l:
+                yield from p.run_closure()
+
+        return list(uniq_pkgs(it()))
 
     def iter_all_runtime_depends(self):
-        for d in self.all_runtime_depends():
-            yield self.load_package(d)
-
-    # all
-    def depends(self):
-        return self.build_depends() + self.runtime_depends()
-
-    @cu.cached_method
-    def all_depends(self):
-        def iter_deps():
-            for d in self.depends():
-                yield d
-                yield from self.load_package(d).all_depends()
-
-        return cu.uniq_list(iter_deps())
+        yield from buildable(self.run_closure())
 
     def commands(self):
         return list(cg.iter_build_commands(self))

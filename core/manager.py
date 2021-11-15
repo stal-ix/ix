@@ -38,26 +38,30 @@ class Manager:
             except KeyError:
                 self._p[key] = cp.Package(selector, self)
 
-    def iter_packages(self, selectors):
-        def iter_deps():
-            for sel in selectors:
-                yield sel
-                yield from self.load_package(sel).all_depends()
-
-        for d in cu.iter_uniq_list(iter_deps()):
-            yield self.load_package(d)
+    def load_packages(self, ss):
+        for s in ss:
+            yield self.load_package(s)
 
     def iter_runtime_packages(self, selectors):
         def iter_deps():
-            for sel in selectors:
-                yield sel
-                yield from self.load_package(sel).all_runtime_depends()
+            for p in self.load_packages(selectors):
+                yield p
+                yield from p.iter_all_runtime_depends()
 
-        for d in cu.iter_uniq_list(iter_deps()):
-            yield self.load_package(d)
+        s = set()
+
+        for p in iter_deps():
+            if p.uid not in s:
+                s.add(p.uid)
+
+                yield p
 
     def iter_build_commands(self, selectors):
-        for pkg in self.iter_packages(selectors):
+        list(self.load_packages(selectors))
+
+        for pkg in self._p.values():
+            print(pkg.name, pkg.uid, pkg.buildable())
+
             try:
                 yield from pkg.commands()
             except Exception as e:
