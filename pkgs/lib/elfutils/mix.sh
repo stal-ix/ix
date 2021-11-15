@@ -6,18 +6,18 @@ https://sourceware.org/elfutils/ftp/0.185/elfutils-0.185.tar.bz2
 {% endblock %}
 
 {% block lib_deps %}
-lib/argp/standalone/mix.sh
 lib/fts/mix.sh
 lib/obstack/mix.sh
 lib/z/mix.sh
 lib/bzip2/mix.sh
 lib/xz/mix.sh
 lib/zstd/mix.sh
-lib/iconv/mix.sh
-lib/intl/mix.sh
 {% endblock %}
 
 {% block bld_deps %}
+lib/argp/standalone/mix.sh
+lib/iconv/mix.sh
+lib/intl/mix.sh
 dev/lang/m4/mix.sh
 {{super()}}
 {% endblock %}
