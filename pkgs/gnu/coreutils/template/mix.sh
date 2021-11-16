@@ -6,11 +6,12 @@ lib/iconv/mix.sh
 lib/sigsegv/mix.sh
 {% endblock %}
 
-{% block bld_deps %}
+{% block bld_tool %}
 gnu/patch/mix.sh
-env/std/0/mix.sh
-{% block coreutils_deps_extra %}
 {% endblock %}
+
+{% block std_env %}
+env/std/0/mix.sh
 {% endblock %}
 
 {% block coflags %}
