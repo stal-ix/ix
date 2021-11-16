@@ -5,10 +5,16 @@ https://github.com/tpoechtrager/cctools-port/archive/236a426c1205a3bfcf0dbb2e2fa
 3ba3b9f5e6ebc2afe77cdafeaaeeb981
 {% endblock %}
 
-{% block bld_deps %}
+{% block bld_libs %}
 lib/c++/mix.sh
+{% endblock %}
+
+{% block bld_tool %}
 dev/build/autoconf/2.69/mix.sh
 dev/build/automake/1.16.3/mix.sh
+{% endblock %}
+
+{% block std_env %}
 env/std/0/mix.sh
 {% endblock %}
 

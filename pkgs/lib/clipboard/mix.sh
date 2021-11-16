@@ -9,7 +9,6 @@ bddc22070b6804ed63994af49b778b70
 {{'sys/framework/AppKit/mix.sh' | darwin}}
 {% endblock %}
 
-{% block bld_deps %}
+{% block bld_tool %}
 dev/build/pkg-config/mix.sh
-{{super()}}
 {% endblock %}

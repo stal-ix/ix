@@ -5,9 +5,8 @@ https://github.com/jeaye/stdman/archive/478d353c73bec79bbbad833a31c50eecd4578b46
 7670f4b232aee6b499b937456f8c6132
 {% endblock %}
 
-{% block bld_deps %}
+{% block bld_tool %}
 shell/cli/bash/minimal/mix.sh
-{{super()}}
 {% endblock %}
 
 {% block configure %}

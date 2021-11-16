@@ -5,9 +5,8 @@ https://archive.apache.org/dist/subversion/subversion-1.14.1.tar.bz2
 2eccc2c7451397e01a13682600af9563
 {% endblock %}
 
-{% block bld_deps %}
+{% block bld_libs %}
 dev/vcs/subversion/libs/mix.sh(openssl=1)
-{{super()}}
 {% endblock %}
 
 {% block run_deps %}

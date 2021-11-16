@@ -17,9 +17,7 @@ sys/framework/Foundation/mix.sh
 {% endif %}
 {% endblock %}
 
-{% block std_env %}
-dev/build/meson/mix.sh
-dev/build/samurai/mix.sh
+{% block std_box %}
 env/std/0/mix.sh
 {% endblock %}
 

@@ -5,9 +5,8 @@ http://mandoc.bsd.lv/snapshots/mandoc-1.14.6.tar.gz
 f0adf24e8fdef5f3e332191f653e422a
 {% endblock %}
 
-{% block bld_deps %}
+{% block bld_libs %}
 lib/z/mix.sh
-{{super()}}
 {% endblock %}
 
 {% block configure %}

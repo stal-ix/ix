@@ -16,11 +16,10 @@ lib/{{curlssl or 'openssl'}}/mix.sh
 {{'sys/framework/SystemConfiguration/mix.sh' | darwin}}
 {% endblock %}
 
-{% block bld_deps %}
+{% block bld_tool %}
 dev/doc/groff/mix.sh
 dev/build/autoconf/2.71/mix.sh
 dev/build/automake/1.16.3/mix.sh
-{{super()}}
 {% endblock %}
 
 {% block autoreconf %}

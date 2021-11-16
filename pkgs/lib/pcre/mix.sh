@@ -5,9 +5,12 @@ https://ftp.pcre.org/pub/pcre/pcre-8.44.tar.gz
 3bcd2441024d00009a5fee43f058987c
 {% endblock %}
 
-{% block bld_deps %}
+{% block bld_libs %}
 lib/z/mix.sh
 lib/bzip2/mix.sh
+{% endblock %}
+
+{% block std_env %}
 env/std/0/mix.sh
 {% endblock %}
 

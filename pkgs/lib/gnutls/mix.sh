@@ -20,9 +20,8 @@ sys/framework/Security/mix.sh
 lib/unistring/mix.sh
 {% endblock %}
 
-{% block bld_deps %}
+{% block bld_tool %}
 gnu/which/mix.sh
-{{super()}}
 {% endblock %}
 
 {% block coflags %}

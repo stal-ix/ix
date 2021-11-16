@@ -5,12 +5,18 @@ https://www.cpan.org/src/5.0/perl-5.34.0.tar.gz
 2acf2ef147e41730e572251ed079bc1a
 {% endblock %}
 
-{% block bld_deps %}
+{% block bld_libs %}
 lib/z/mix.sh
 lib/dlfcn/mix.sh
 lib/gdbm/mix.sh
 lib/iconv/mix.sh
+{% endblock %}
+
+{% block bld_tool %}
 shell/cli/bash/minimal/mix.sh
+{% endblock %}
+
+{% block std_env %}
 env/std/0/mix.sh
 {% endblock %}
 
@@ -21,8 +27,8 @@ export CPPFLAGS="-w ${CPPFLAGS}"
 
 {% block toolconf %}
 cat << EOF > sw_vers
-echo 'ProductName:	macOS'
-echo 'ProductVersion:	10.0'
+echo 'ProductName:    macOS'
+echo 'ProductVersion:    10.0'
 EOF
 
 chmod +x sw_vers

@@ -7,7 +7,7 @@ https://raw.githubusercontent.com/macports/macports-ports/edf0ee1e2cf/devel/m4/f
 319c143996239e23d2fe3e7968a7620d
 {% endblock %}
 
-{% block bld_deps %}
+{% block bld_tool %}
 gnu/patch/mix.sh
 dev/doc/texinfo/mix.sh
 {{super()}}

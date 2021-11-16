@@ -5,12 +5,14 @@ https://pkg-config.freedesktop.org/releases/pkg-config-0.29.2.tar.gz
 f6e931e319531b736fadc017f470e68a
 {% endblock %}
 
-{% block bld_deps %}
-env/std/mix.sh
+{% block bld_libs %}
 lib/intl/mix.sh
 lib/glib/mix.sh
 lib/iconv/mix.sh
-boot/final/env/tools/mix.sh
+{% endblock %}
+
+{% block std_env %}
+env/std/0/mix.sh
 {% endblock %}
 
 {% block coflags %}

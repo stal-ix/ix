@@ -5,10 +5,9 @@ https://github.com/wolfSSL/wolfssl/archive/refs/tags/v5.0.0-stable.tar.gz
 d2044f756db0853dd2da0a90dd42ab62
 {% endblock %}
 
-{% block bld_deps %}
+{% block bld_tool %}
 dev/build/autoconf/2.71/mix.sh
 dev/build/automake/1.16.3/mix.sh
-{{super()}}
 {% endblock %}
 
 {% block autoreconf %}

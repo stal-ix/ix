@@ -9,9 +9,8 @@ https://github.com/westes/flex/files/981163/flex-2.6.4.tar.gz
 dev/lang/m4/mix.sh
 {% endblock %}
 
-{% block bld_deps %}
+{% block bld_tool %}
 dev/lang/m4/mix.sh
 dev/doc/texinfo/mix.sh
 boot/final/env/bison/mix.sh
-{{super()}}
 {% endblock %}

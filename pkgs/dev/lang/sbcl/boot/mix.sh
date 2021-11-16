@@ -5,14 +5,16 @@ https://nav.dl.sourceforge.net/project/sbcl/sbcl/2.1.7/sbcl-2.1.7-source.tar.bz2
 3f21dbcab14b4aa51b9a9f03c2b78b9c
 {% endblock %}
 
-{% block bld_deps %}
+{% block bld_libs %}
 lib/dlfcn/mix.sh
 lib/z/mix.sh
 {{'lib/linux/mix.sh' | linux}}
+{% endblock %}
+
+{% block bld_tool %}
 {% block boot_lisp_dep %}
 dev/lang/ecl/mix.sh
 {% endblock %}
-{{super()}}
 {% endblock %}
 
 {% block setup %}

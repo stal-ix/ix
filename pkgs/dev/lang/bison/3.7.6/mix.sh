@@ -9,8 +9,11 @@ d61aa92e3562cb7292b004ce96173cf7
 dev/lang/m4/mix.sh
 {% endblock %}
 
-{% block bld_deps %}
+{% block bld_libs %}
 lib/intl/mix.sh
+{% endblock %}
+
+{% block blt_tool %}
 dev/lang/m4/mix.sh
 dev/lang/flex/mix.sh
 dev/lang/perl5/mix.sh
@@ -19,5 +22,4 @@ dev/doc/texinfo/mix.sh
 {% block bison_bootstrap %}
 boot/final/env/bison/mix.sh
 {% endblock %}
-{{super()}}
 {% endblock %}

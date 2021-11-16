@@ -9,10 +9,9 @@ https://github.com/Juniper/libxo/archive/refs/tags/1.6.0.tar.gz
 {{'lib/bsd/mix.sh' | linux}}
 {% endblock %}
 
-{% block bld_deps %}
+{% block bld_tool %}
 dev/build/autoconf/2.71/mix.sh
 dev/build/automake/1.16.3/mix.sh
-{{super()}}
 {% endblock %}
 
 {% block autoreconf %}

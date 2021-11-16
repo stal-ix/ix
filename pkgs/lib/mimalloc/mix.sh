@@ -5,8 +5,11 @@ https://github.com/microsoft/mimalloc/archive/refs/tags/v2.0.3.tar.gz
 a06e57e9ae10a346ab8a1097c0838fef
 {% endblock %}
 
-{% block bld_deps %}
+{% block bld_libs %}
 lib/c/naked/mix.sh
+{% endblock %}
+
+{% block std_env %}
 dev/lang/clang/mix.sh
 boot/final/env/tools/mix.sh
 {% endblock %}

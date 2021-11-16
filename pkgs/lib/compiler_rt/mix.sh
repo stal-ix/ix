@@ -1,7 +1,10 @@
-{% extends '//mix/template/template.sh' %}
+{% extends '//mix/template/std.sh' %}
 
-{% block bld_deps %}
+{% block bld_libs %}
 lib/c/mix.sh
+{% endblock %}
+
+{% block std_env %}
 dev/lang/clang/mix.sh
 boot/final/env/tools/mix.sh
 {% endblock %}
