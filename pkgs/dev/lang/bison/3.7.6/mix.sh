@@ -13,7 +13,7 @@ dev/lang/m4/mix.sh
 lib/intl/mix.sh
 {% endblock %}
 
-{% block blt_tool %}
+{% block bld_tool %}
 dev/lang/m4/mix.sh
 dev/lang/flex/mix.sh
 dev/lang/perl5/mix.sh
