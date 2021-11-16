@@ -5,8 +5,11 @@ http://www.ivarch.com/programs/sources/pv-1.6.6.tar.bz2
 ff3564fddcc2b9bd4a9c1d143aba4b4c
 {% endblock %}
 
-{% block bld_deps %}
+{% block bld_tool %}
 {{'dev/lang/cctools/mix.sh' | darwin}}
+{% endblock %}
+
+{% block std_env %}
 env/std/0/mix.sh
 {% endblock %}
 

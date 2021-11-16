@@ -5,13 +5,12 @@ https://github.com/magiblot/turbo/archive/971aad35d4b705228caa8852114438ee71d488
 53d2cdb6a47cad1796d32dc5839726e8
 {% endblock %}
 
-{% block bld_deps %}
+{% block bld_libs %}
 lib/c++/mix.sh
 lib/fmt/mix.sh
 lib/magic/mix.sh
 lib/tvision/mix.sh
 lib/clipboard/mix.sh
-{{super()}}
 {% endblock %}
 
 {% block patch %}

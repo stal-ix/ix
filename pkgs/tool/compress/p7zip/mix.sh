@@ -5,9 +5,8 @@ https://downloads.sourceforge.net/project/p7zip/p7zip/16.02/p7zip_16.02_src_all.
 a0128d661cfe7cc8c121e73519c54fbf
 {% endblock %}
 
-{% block bld_deps %}
+{% block bld_libs %}
 lib/c++/mix.sh
-{{super()}}
 {% endblock %}
 
 {% block setup %}

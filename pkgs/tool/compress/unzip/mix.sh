@@ -1,4 +1,4 @@
-{% extends '//mix/template/template.sh' %}
+{% extends '//mix/template/std.sh' %}
 
 {% block fetch %}
 https://downloads.sourceforge.net/project/infozip/UnZip%206.x%20%28latest%29/UnZip%206.0/unzip60.tar.gz
@@ -7,8 +7,11 @@ https://deb.debian.org/debian/pool/main/u/unzip/unzip_6.0-26.debian.tar.xz
 e2bf7537e1ca821f6059ee84e7ae76a5
 {% endblock %}
 
-{% block bld_deps %}
+{% block bld_tool %}
 gnu/patch/mix.sh
+{% endblock %}
+
+{% block std_env %}
 env/std/0/mix.sh
 {% endblock %}
 

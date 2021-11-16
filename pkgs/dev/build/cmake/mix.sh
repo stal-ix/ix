@@ -5,7 +5,7 @@ https://github.com/Kitware/CMake/releases/download/v3.21.4/cmake-3.21.4.tar.gz
 9d399e7a5032ef8cbe8eb23aad17e3c6
 {% endblock %}
 
-{% block bld_deps %}
+{% block bld_libs %}
 {{'sys/framework/CoreFoundation/mix.sh' | darwin}}
 {{'lib/linux/mix.sh' | linux}}
 lib/z/mix.sh
@@ -17,6 +17,9 @@ lib/bzip2/mix.sh
 lib/expat/mix.sh
 lib/archive/mix.sh
 lib/curses/mix.sh
+{% endblock %}
+
+{% block std_env %}
 boot/final/env/tools/mix.sh
 env/std/mix.sh
 {% endblock %}

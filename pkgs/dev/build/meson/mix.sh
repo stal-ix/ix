@@ -1,12 +1,15 @@
-{% extends '//mix/template/template.sh' %}
+{% extends '//mix/template/std.sh' %}
 
 {% block fetch %}
 https://github.com/mesonbuild/meson/releases/download/0.58.0/meson-0.58.0.tar.gz
 18ac55e3d6a5acb17b5737eb2a15bb5b
 {% endblock %}
 
-{% block bld_deps %}
+{% block bld_tool %}
 gnu/patch/mix.sh
+{% endblock %}
+
+{% block std_env %}
 env/std/0/mix.sh
 {% endblock %}
 

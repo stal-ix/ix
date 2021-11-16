@@ -5,7 +5,7 @@ https://github.com/michaelforney/samurai/archive/edeec43d638c826d9e446917f97e951
 2321662d68a58456cc9ac9a2605beb59
 {% endblock %}
 
-{% block bld_deps %}
+{% block std_env %}
 env/std/0/mix.sh
 {% endblock %}
 

@@ -9,7 +9,10 @@ b51001b5d6c9fc929291d5ae8e6caafc
 dev/lang/perl5/mix.sh
 {% endblock %}
 
-{% block bld_deps %}
+{% block bld_tool %}
 dev/lang/perl5/mix.sh
+{% endblock %}
+
+{% block std_env %}
 env/std/0/mix.sh
 {% endblock %}

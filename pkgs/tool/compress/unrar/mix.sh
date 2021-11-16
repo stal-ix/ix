@@ -5,9 +5,8 @@ https://storage.yandexcloud.net/mix-cache/unrarsrc-6.0.6.tar.gz
 4c89e2e5ecfe72a9d96478fb80f38c34
 {% endblock %}
 
-{% block bld_deps %}
+{% block bld_libs %}
 lib/c++/mix.sh
-{{super()}}
 {% endblock %}
 
 {% block make_flags %}

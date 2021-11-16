@@ -5,13 +5,15 @@ https://github.com/upx/upx/releases/download/v3.96/upx-3.96-src.tar.xz
 bf5564f33fe9062bc48b53abd4b34223
 {% endblock %}
 
-{% block bld_deps %}
+{% block bld_libs  %}
 lib/z/mix.sh
 lib/c++/mix.sh
 lib/ucl/mix.sh
+{% endblock %}
+
+{% block bld_tool %}
 shell/cli/bash/minimal/mix.sh
 dev/lang/perl5/mix.sh
-{{super()}}
 {% endblock %}
 
 {% block setup %}

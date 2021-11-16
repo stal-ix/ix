@@ -4,7 +4,7 @@
 {% include 'version.sh' %}
 {% endblock %}
 
-{% block bld_deps %}
+{% block bld_libs %}
 dev/debug/gdb/py/mix.sh(edit=readline)
 {{'lib/linux/mix.sh' | linux}}
 lib/intel-pt/mix.sh
@@ -20,10 +20,12 @@ lib/gmp/mix.sh
 lib/mpfr/mix.sh
 lib/mpc/mix.sh
 lib/xxhash/mix.sh
+{% endblock %}
+
+{% block bld_tool %}
 dev/lang/byacc/mix.sh
 dev/lang/flex/mix.sh
 dev/doc/texinfo/mix.sh
-{{super()}}
 {% endblock %}
 
 {% block setup %}

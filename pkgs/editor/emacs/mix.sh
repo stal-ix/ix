@@ -5,12 +5,14 @@ https://ftp.gnu.org/gnu/emacs/emacs-27.2.tar.xz
 4c3d9ff35b2ab2fe518dc7eb3951e128
 {% endblock %}
 
-{% block bld_deps %}
+{% block bld_libs %}
 lib/z/mix.sh
 lib/curses/mix.sh
+{% endblock %}
+
+{% block bld_tool %}
 gnu/patch/mix.sh
 gnu/tar/mix.sh
-{{super()}}
 {% endblock %}
 
 {% block patch %}

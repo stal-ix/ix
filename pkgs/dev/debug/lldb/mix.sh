@@ -4,7 +4,7 @@
 {% include '//mix/template/fetch_llvm.sh' %}
 {% endblock %}
 
-{% block bld_deps %}
+{% block bld_libs %}
 {{'lib/linux/mix.sh' | linux}}
 {{'sys/framework/CoreFoundation/mix.sh' | darwin}}
 lib/c++/mix.sh
@@ -13,8 +13,10 @@ lib/edit/mix.sh
 lib/xz/mix.sh
 lib/xml2/mix.sh
 lib/python/mix.sh
+{% endblock %}
+
+{% block bld_tool %}
 dev/tool/swig/4/mix.sh
-{{super()}}
 {% endblock %}
 
 {% block patch %}

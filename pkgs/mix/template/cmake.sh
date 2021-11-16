@@ -1,6 +1,6 @@
 {% extends 'ninja.sh' %}
 
-{% block bld_deps %}
+{% block std_env %}
 dev/build/cmake/mix.sh
 {{super()}}
 {% endblock %}

@@ -9,8 +9,11 @@ https://ftp.gnu.org/gnu/autoconf/autoconf-2.71.tar.xz
 dev/lang/m4/mix.sh
 {% endblock %}
 
-{% block bld_deps %}
+{% block bld_tool %}
 dev/lang/m4/mix.sh
 dev/lang/perl5/mix.sh
+{% endblock %}
+
+{% block std_env %}
 env/std/0/mix.sh
 {% endblock %}
