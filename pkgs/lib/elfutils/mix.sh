@@ -14,12 +14,14 @@ lib/xz/mix.sh
 lib/zstd/mix.sh
 {% endblock %}
 
-{% block bld_deps %}
+{% block bld_libs %}
 lib/argp/standalone/mix.sh
 lib/iconv/mix.sh
 lib/intl/mix.sh
+{% endblock %}
+
+{% block bld_tool %}
 dev/lang/m4/mix.sh
-{{super()}}
 {% endblock %}
 
 {% block patch %}

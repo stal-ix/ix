@@ -1,8 +1,7 @@
 {% extends '//mix/template/cmake.sh' %}
 
-{% block bld_deps %}
+{% block bld_tool %}
 dev/build/python/mix.sh
-{{super()}}
 {% endblock %}
 
 {% block cmflags %}

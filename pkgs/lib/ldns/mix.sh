@@ -9,10 +9,9 @@ a84a680e92618b8c236626c192e5a15b
 lib/openssl/mix.sh
 {% endblock %}
 
-{% block bld_deps %}
+{% block bld_tool %}
 dev/build/autoconf/2.69/mix.sh
 dev/build/automake/1.16.3/mix.sh
-{{super()}}
 {% endblock %}
 
 {% block autoreconf %}

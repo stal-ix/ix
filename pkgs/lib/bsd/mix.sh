@@ -9,9 +9,8 @@ ec16d126e5f72362d57e0161460fce5e
 lib/md/mix.sh
 {% endblock %}
 
-{% block bld_deps %}
+{% block bld_libs %}
 lib/linux/mix.sh
-{{super()}}
 {% endblock %}
 
 {% block setup %}

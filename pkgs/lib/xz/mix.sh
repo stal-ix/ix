@@ -10,7 +10,7 @@ lib/intl/mix.sh
 lib/iconv/mix.sh
 {% endblock %}
 
-{% block env_std %}
+{% block std_env %}
 env/std/0/mix.sh
 {% endblock %}
 

@@ -9,7 +9,7 @@ e9557dd5b1409f5d7b37ef717c64518e
 lib/curses/mix.sh
 {% endblock %}
 
-{% block bld_deps %}
+{% block std_env %}
 env/std/0/mix.sh
 {% endblock %}
 
