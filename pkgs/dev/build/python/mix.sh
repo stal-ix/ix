@@ -3,13 +3,19 @@
 {% block lib_deps %}
 {% endblock %}
 
-{% block bld_deps %}
+{% block bld_libs %}
 lib/z/mix.sh
+{{'lib/linux/mix.sh' | linux}}
+{{'sys/framework/SystemConfiguration/mix.sh' | darwin}}
+{% endblock %}
+
+{% block bld_tool %}
 dev/build/autoconf/2.69/mix.sh
 dev/build/automake/1.16.3/mix.sh
 dev/build/autoconf/archive/mix.sh
-{{'lib/linux/mix.sh' | linux}}
-{{'sys/framework/SystemConfiguration/mix.sh' | darwin}}
+{% endblock %}
+
+{% block std_env %}
 env/std/0/mix.sh
 {% endblock %}
 

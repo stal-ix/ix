@@ -10,7 +10,7 @@ lib/gdbm/mix.sh
 {{super()}}
 {% endblock %}
 
-{% block bld_deps %}
+{% block bld_tool %}
 dev/build/python/mix.sh
 {{super()}}
 {% endblock %}
