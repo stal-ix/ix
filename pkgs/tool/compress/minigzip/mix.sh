@@ -4,10 +4,6 @@
 lib/z/mix.sh
 {% endblock %}
 
-{% block std_env %}
-env/std/0/mix.sh
-{% endblock %}
-
 {% block install %}
 mkdir ${out}/bin && cd ${out}/bin
 

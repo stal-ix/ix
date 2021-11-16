@@ -5,10 +5,6 @@ shell/cli/dash/minimal/mix.sh
 dev/lang/clang/mix.sh
 {% endblock %}
 
-{% block std_env %}
-boot/final/env/tools/mix.sh
-{% endblock %}
-
 {% block install %}
 cat << EOF > ${out}/env.template
 export CLANG_VERSION=${CLANG_VERSION}
