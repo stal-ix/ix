@@ -18,15 +18,10 @@ env/std/0/mix.sh
 --libexecdir="${out}/bin"
 --enable-no-install-program=stdbuf
 --enable-single-binary=symlinks
-{% block coreutils_coflags_extra %}
---without-gmp
-{% endblock %}
 {% endblock %}
 
 {% block patch %}
-{% if mix.platform.target.os == 'darwin' %}
 (cd src && patch) << EOF
 {% include 'uname.patch' %}
 EOF
-{% endif %}
 {% endblock %}

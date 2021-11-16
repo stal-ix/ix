@@ -10,6 +10,12 @@ boot/9/bison/3.4.1_2.sh
 {{super()}}
 {% endblock %}
 
-{% block postconf %}
+{% block configure %}
+{{super()}}
 cat Makefile | grep -v 'LIBINTL = -lintl' > _ && mv _ Makefile
+{% endblock %}
+
+{% block coflags %}
+{{super()}}
+--without-gmp
 {% endblock %}

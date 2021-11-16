@@ -9,3 +9,8 @@ https://ftp.gnu.org/gnu/coreutils/coreutils-8.31.tar.xz
 dev/lang/byacc/mix.sh
 {{super()}}
 {% endblock %}
+
+{% block coflags %}
+{{super()}}
+--without-gmp
+{% endblock %}
