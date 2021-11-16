@@ -46,20 +46,33 @@ def make_selector(v, flags):
     return v
 
 
-def uniq_pkgs(l):
-    s = set()
-
-    for x in l:
-        if x.uid not in s:
-            s.add(x.uid)
-
-            yield x
-
-
 def buildable(l):
     for x in l:
         if x.buildable():
             yield x
+
+
+def visit_lst(lst, f):
+    s = set()
+    r = []
+
+    def visit(l):
+        if l.uid not in s:
+            s.add(l.uid)
+
+            for x in f(l):
+                visit(x)
+
+            r.append(l)
+
+    for l in lst:
+        visit(l)
+
+    r = list(reversed(r))
+
+    print([x.name for x in r])
+
+    return r
 
 
 class Package:
@@ -76,6 +89,9 @@ class Package:
         })
 
         self.out_dir = self.config.store_dir + '/' + self.uid + '-' + self.pkg_name
+        print('--->', self.out_dir)
+        for x in self.iter_all_build_depends():
+            print('  ', x.out_dir)
 
     @property
     def pkg_name(self):
@@ -147,39 +163,15 @@ class Package:
 
     @cu.cached_method
     def bld_bin_closure(self):
-        def it():
-            l = self.load_packages(self.bld_bin_deps())
-
-            yield from l
-
-            for p in l:
-                yield from p.run_closure()
-
-        return list(uniq_pkgs(it()))
+        return visit_lst(self.load_packages(self.bld_bin_deps()), lambda x: x.run_closure())
 
     @cu.cached_method
     def lib_closure(self):
-        def it():
-            l = self.load_packages(self.lib_deps())
-
-            yield from l
-
-            for p in l:
-                yield from p.lib_closure()
-
-        return list(uniq_pkgs(it()))
+        return visit_lst(self.load_packages(self.lib_deps()), lambda x: x.lib_closure())
 
     @cu.cached_method
     def bld_lib_closure(self):
-        def it():
-            l = self.load_packages(self.bld_lib_deps())
-
-            yield from l
-
-            for p in l:
-                yield from p.lib_closure()
-
-        return list(uniq_pkgs(it()))
+        return visit_lst(self.load_packages(self.bld_lib_deps()), lambda x: x.lib_closure())
 
     def iter_all_build_depends(self):
         yield from buildable(self.bld_bin_closure())
@@ -192,15 +184,7 @@ class Package:
 
     @cu.cached_method
     def run_closure(self):
-        def it():
-            l = self.load_packages(self.run_run_deps())
-
-            yield from l
-
-            for p in l:
-                yield from p.run_closure()
-
-        return list(uniq_pkgs(it()))
+        return visit_lst(self.load_packages(self.run_run_deps()), lambda x: x.run_closure())
 
     def iter_all_runtime_depends(self):
         yield from buildable(self.run_closure())

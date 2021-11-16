@@ -10,7 +10,6 @@ set -u
 # init
 export CMPATH=
 export CFLAGS=
-export OSX_SDK=
 export COFLAGS=
 export CMFLAGS=
 export LDFLAGS=
