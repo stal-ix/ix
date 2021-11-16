@@ -72,7 +72,7 @@ def visit_lst(lst, f):
 
 
 def is_lib(p):
-    return p.startswith('lib/') or '/lib_hub/' in p
+    return p.startswith('lib/') or '/libs/' in p
 
 
 class Package:
