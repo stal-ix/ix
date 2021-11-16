@@ -5,8 +5,11 @@ https://ftp.gnu.org/gnu/findutils/findutils-4.8.0.tar.xz
 eeefe2e6380931a77dfa6d9350b43186
 {% endblock %}
 
-{% block bld_deps %}
+{% block bld_libs %}
 lib/iconv/mix.sh
+{% endblock %}
+
+{% block std_env %}
 env/std/0/mix.sh
 {% endblock %}
 

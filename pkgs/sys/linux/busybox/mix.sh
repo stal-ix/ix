@@ -1,12 +1,15 @@
-{% extends '//mix/template/template.sh' %}
+{% extends '//mix/template/std.sh' %}
 
 {% block fetch %}
 https://busybox.net/downloads/busybox-1.34.0.tar.bz2
 9812d59bd5ff22bd424dabded393b52d
 {% endblock %}
 
-{% block bld_deps %}
+{% block bld_libs %}
 lib/linux/mix.sh
+{% endblock %}
+
+{% block std_env %}
 env/std/0/mix.sh
 {% endblock %}
 

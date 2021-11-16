@@ -5,11 +5,17 @@ https://mirror.tochlab.net/pub/gnu/gawk/gawk-5.1.0.tar.xz
 8470c34eeecc41c1aa0c5d89e630df50
 {% endblock %}
 
-{% block bld_deps %}
+{% block bld_libs %}
 lib/intl/mix.sh
 lib/iconv/mix.sh
 lib/sigsegv/mix.sh
+{% endblock %}
+
+{% block std_env %}
 env/std/0/mix.sh
+{% endblock %}
+
+{% block bld_tool %}
 boot/final/env/bison/mix.sh
 {% endblock %}
 

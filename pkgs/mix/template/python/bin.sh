@@ -1,10 +1,9 @@
 {% extends 'freeze.sh' %}
 
-{% block more_deps %}
-# bld lib/python/libs/mix.sh
-# bld dev/build/make/mix.sh
-# bld tool/compress/upx/mix.sh
-# bld env/std/mix.sh
+{% block std_env %}
+dev/build/make/mix.sh
+tool/compress/upx/mix.sh
+{{super()}}
 {% endblock %}
 
 {% block build %}
