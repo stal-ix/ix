@@ -68,9 +68,9 @@ def visit_lst(lst, f):
     for l in lst:
         visit(l)
 
-    r = list(reversed(r))
+    #r = list(reversed(r))
 
-    print([x.name for x in r])
+    print([x.name for x in lst], [x.name for x in r])
 
     return r
 
@@ -174,8 +174,7 @@ class Package:
         return visit_lst(self.load_packages(self.bld_lib_deps()), lambda x: x.lib_closure())
 
     def iter_all_build_depends(self):
-        yield from buildable(self.bld_bin_closure())
-        yield from buildable(self.bld_lib_closure())
+        return buildable(itertools.chain(self.bld_bin_closure(), reversed(self.bld_lib_closure())))
 
     def run_run_deps(self):
         for x in self.run_deps():
@@ -187,7 +186,7 @@ class Package:
         return visit_lst(self.load_packages(self.run_run_deps()), lambda x: x.run_closure())
 
     def iter_all_runtime_depends(self):
-        yield from buildable(self.run_closure())
+        return buildable(self.run_closure())
 
     def commands(self):
         return list(cg.iter_build_commands(self))
