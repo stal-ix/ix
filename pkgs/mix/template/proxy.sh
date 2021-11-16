@@ -1,5 +1,10 @@
-{% extends 'blocks.sh' %}
+{% extends 'std.sh' %}
 
-{% block prepare_env %}
-{% include 'blocks/env.sh' %}
+{% block preconf %}
+{% endblock %}
+
+{% block prepatch %}
+{% endblock %}
+
+{% block unpack %}
 {% endblock %}

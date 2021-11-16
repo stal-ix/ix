@@ -1,8 +1,11 @@
 {% extends '//mix/template/proxy.sh' %}
 
-{% block bld_deps %}
+{% block bld_tool %}
 shell/cli/dash/minimal/mix.sh
 dev/lang/clang/mix.sh
+{% endblock %}
+
+{% block std_env %}
 boot/final/env/tools/mix.sh
 {% endblock %}
 

@@ -1,7 +1,10 @@
 {% extends '//mix/template/proxy.sh' %}
 
-{% block bld_deps %}
+{% block bld_libs %}
 lib/z/mix.sh
+{% endblock %}
+
+{% block std_env %}
 env/std/0/mix.sh
 {% endblock %}
 
