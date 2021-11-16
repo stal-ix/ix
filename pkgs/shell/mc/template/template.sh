@@ -5,13 +5,15 @@ http://ftp.midnight-commander.org/mc-4.8.27.tar.xz
 e51cd40a897d9aa01af251d191637ca4
 {% endblock %}
 
-{% block bld_deps %}
+{% block bld_libs %}
 lib/intl/mix.sh
 lib/glib/mix.sh
 lib/iconv/mix.sh
 lib/{{self.typ().strip()}}/mix.sh
+{% endblock %}
+
+{% block bld_tool %}
 dev/lang/perl5/mix.sh
-{{super()}}
 {% endblock %}
 
 {% block run_deps %}
