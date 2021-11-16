@@ -60,8 +60,6 @@ class Manager:
         list(self.load_packages(selectors))
 
         for pkg in self._p.values():
-            print(pkg.name, pkg.uid, pkg.buildable())
-
             try:
                 yield from pkg.commands()
             except Exception as e:

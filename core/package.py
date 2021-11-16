@@ -68,11 +68,11 @@ def visit_lst(lst, f):
     for l in lst:
         visit(l)
 
-    #r = list(reversed(r))
-
-    print([x.name for x in lst], [x.name for x in r])
-
     return r
+
+
+def is_lib(p):
+    return p.startswith('lib/') or '/lib_hub/' in p
 
 
 class Package:
@@ -89,9 +89,6 @@ class Package:
         })
 
         self.out_dir = self.config.store_dir + '/' + self.uid + '-' + self.pkg_name
-        print('--->', self.out_dir)
-        for x in self.iter_all_build_depends():
-            print('  ', x.out_dir)
 
     @property
     def pkg_name(self):
@@ -109,18 +106,22 @@ class Package:
     def config(self):
         return self.manager.config
 
-    def load_package(self, n):
+    def load_package(self, n, reason):
+        print(n, reason)
+
         try:
             n['name']
         except TypeError:
-            if n.startswith('lib/'):
+            if is_lib(n):
                 n = make_selector(n, self.flags)
             else:
                 n = make_selector(n, {})
 
-        return self.load_package_impl(n)
+        return self.load_package_impl(n, reason)
 
-    def load_package_impl(self, selector):
+    def load_package_impl(self, selector, reason):
+        print(self.selector, selector, reason)
+
         try:
             return self.manager.load_package(selector)
         except FileNotFoundError:
@@ -129,8 +130,8 @@ class Package:
 
             raise ce.Error(f'can not load dependant package {s1} of {s2}')
 
-    def load_packages(self, l):
-        return [self.load_package(x) for x in l]
+    def load_packages(self, l, reason):
+        return (self.load_package(x, reason) for x in l)
 
     def bld_deps(self):
         return self.descr['bld']['deps']
@@ -145,45 +146,48 @@ class Package:
         yield from self.lib_deps()
 
         for x in self.bld_deps():
-            if x.startswith('lib/'):
+            if is_lib(x):
                 yield x
 
         for p in self.bld_bin_closure():
-            for x in p.lib_deps():
-                yield x
-
-            for x in p.run_deps():
-                if x.startswith('lib/'):
-                    yield x
+            yield from p.all_lib_deps()
 
     def bld_bin_deps(self):
         for x in self.bld_deps():
-            if not x.startswith('lib/'):
+            if not is_lib(x):
                 yield x
 
     @cu.cached_method
     def bld_bin_closure(self):
-        return visit_lst(self.load_packages(self.bld_bin_deps()), lambda x: x.run_closure())
+        return visit_lst(self.load_packages(self.bld_bin_deps(), "bld bin"), lambda x: x.run_closure())
 
     @cu.cached_method
     def lib_closure(self):
-        return visit_lst(self.load_packages(self.lib_deps()), lambda x: x.lib_closure())
+        return visit_lst(self.load_packages(self.lib_deps(), "lib"), lambda x: x.lib_closure())
 
     @cu.cached_method
     def bld_lib_closure(self):
-        return visit_lst(self.load_packages(self.bld_lib_deps()), lambda x: x.lib_closure())
+        return visit_lst(self.load_packages(self.bld_lib_deps(), "bld lib"), lambda x: x.lib_closure())
 
     def iter_all_build_depends(self):
         return buildable(itertools.chain(self.bld_bin_closure(), reversed(self.bld_lib_closure())))
 
     def run_run_deps(self):
         for x in self.run_deps():
-            if not x.startswith('lib/'):
+            if not is_lib(x):
                 yield x
+
+    def run_lib_deps(self):
+        for x in self.run_deps():
+            if is_lib(x):
+                yield x
+
+    def all_lib_deps(self):
+        return itertools.chain(self.lib_deps(), self.run_lib_deps())
 
     @cu.cached_method
     def run_closure(self):
-        return visit_lst(self.load_packages(self.run_run_deps()), lambda x: x.run_closure())
+        return visit_lst(self.load_packages(self.run_run_deps(), "run"), lambda x: x.run_closure())
 
     def iter_all_runtime_depends(self):
         return buildable(self.run_closure())

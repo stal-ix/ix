@@ -12,3 +12,7 @@ lib/gnutls/mix.sh
 lib/metalink/mix.sh
 {{super()}}
 {% endblock %}
+
+{% block patch %}
+cat lib/xalloc-die.c | grep -v 'memory ex' > _ && mv _ lib/xalloc-die.c
+{% endblock %}

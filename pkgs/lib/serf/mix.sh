@@ -30,10 +30,11 @@ EOF
 
 {% block build %}
 scons \
-    PREFIX=${out}         \
-    OPENSSL="${SSL_DIR}"  \
-    ZLIB="${lib_z}"       \
-    APR="${lib_apr}"      \
+    CC=$(command -v clang) \
+    PREFIX=${out}          \
+    OPENSSL="${SSL_DIR}"   \
+    ZLIB="${lib_z}"        \
+    APR="${lib_apr}"       \
     APU="${lib_apr_util}"
 {% endblock %}
 
