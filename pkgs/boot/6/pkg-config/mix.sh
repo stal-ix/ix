@@ -9,7 +9,8 @@ boot/5/env/std/mix.sh
 --with-internal-glib
 {% endblock %}
 
-{% block postconf %}
+{% block configure %}
+{{super()}}
 (cd glib && dash ./configure ${COFLAGS} --prefix=${out} --with-libiconv=gnu --srcdir=.)
 {% endblock %}
 
