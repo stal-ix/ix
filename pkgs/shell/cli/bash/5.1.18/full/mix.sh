@@ -1,13 +1,15 @@
 {% extends '//shell/cli/bash/5.1.18/template/template.sh' %}
 
-{% block bashdeps %}
+{% block bld_libs %}
 lib/readline/mix.sh
 lib/curses/mix.sh
 lib/iconv/mix.sh
 lib/intl/mix.sh
+{{super()}}
 {% endblock %}
 
-{% block bashflags %}
+{% block coflags %}
+{{super()}}
 --with-installed-readline
 --enable-readline
 --with-curses

@@ -5,7 +5,7 @@ https://ftp.gnu.org/gnu/wget/wget2-2.0.0.tar.gz
 b774bb0da9cb84cb9f5bbbcbcc31d00e
 {% endblock %}
 
-{% block bld_deps %}
+{% block bld_libs %}
 lib/brotli/mix.sh
 lib/zstd/mix.sh
 lib/nghttp2/mix.sh
@@ -17,8 +17,10 @@ lib/gnutls/mix.sh
 lib/bzip2/mix.sh
 lib/idn/2/mix.sh
 lib/pcre/mix.sh
+{% endblock %}
+
+{% block bld_tool %}
 dev/doc/texinfo/mix.sh
-{{super()}}
 {% endblock %}
 
 {% block coflags %}

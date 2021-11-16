@@ -9,12 +9,14 @@ https://raw.githubusercontent.com/Homebrew/patches/d8b2d8c2612fd251ac6de17bf0cc5
 a50fb1d7c40ac7fac3360218cb37a38b
 {% endblock %}
 
-{% block bld_deps %}
+{% block bld_libs %}
 net/openssh/libs/mix.sh(openssl=1,curses=netbsd)
+{% endblock %}
+
+{% block bld_tool %}
 gnu/patch/mix.sh
 dev/doc/groff/mix.sh
 dev/doc/texinfo/mix.sh
-{{super()}}
 {% endblock %}
 
 {% block setup %}

@@ -107,8 +107,6 @@ class Package:
         return self.manager.config
 
     def load_package(self, n, reason):
-        print(n, reason)
-
         try:
             n['name']
         except TypeError:
@@ -120,7 +118,7 @@ class Package:
         return self.load_package_impl(n, reason)
 
     def load_package_impl(self, selector, reason):
-        print(self.selector, selector, reason)
+        # print(self.selector, selector, reason)
 
         try:
             return self.manager.load_package(selector)

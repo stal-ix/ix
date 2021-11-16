@@ -5,12 +5,11 @@ https://ftp.gnu.org/gnu/wget/wget-1.21.2.tar.lz
 2703828579552a5a6749fadfb1bf305d
 {% endblock %}
 
-{% block bld_deps %}
+{% block bld_libs %}
 lib/intl/mix.sh
 lib/pcre/2/mix.sh
 lib/gnutls/mix.sh
 lib/metalink/mix.sh
-{{super()}}
 {% endblock %}
 
 {% block patch %}

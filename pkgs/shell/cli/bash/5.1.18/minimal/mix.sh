@@ -1,11 +1,11 @@
 {% extends '//shell/cli/bash/5.1.18/template/template.sh' %}
 
-{% block bashflags %}
+{% block coflags %}
+{{super()}}
 --disable-nls
 --disable-readline
 {% endblock %}
 
-{% block bld_deps %}
+{% block std_env %}
 env/std/0/mix.sh
-boot/final/env/bison/mix.sh
 {% endblock %}
