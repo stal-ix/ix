@@ -10,7 +10,7 @@ lib/iconv/mix.sh
 {{'sys/framework/CoreFoundation/mix.sh' | darwin}}
 {% endblock %}
 
-{% block bld_deps %}
+{% block std_env %}
 env/std/0/mix.sh
 {% endblock %}
 

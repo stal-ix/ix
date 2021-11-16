@@ -9,11 +9,10 @@ a60273d0fab9c808646fcf5e9edc2e8f
 lib/gmp/mix.sh
 {% endblock %}
 
-{% block bld_deps %}
+{% block bld_tool %}
 dev/doc/texinfo/mix.sh
 dev/build/autoconf/2.69/mix.sh
 dev/build/automake/1.16.3/mix.sh
-{{super()}}
 {% endblock %}
 
 {% block autoreconf %}

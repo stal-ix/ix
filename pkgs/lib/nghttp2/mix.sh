@@ -12,13 +12,15 @@ lib/c-ares/mix.sh
 lib/openssl/mix.sh
 {% endblock %}
 
-{% block bld_deps %}
+{% block bld_libs %}
 lib/c++/mix.sh
 lib/xml2/mix.sh
 lib/jansson/mix.sh
+{% endblock %}
+
+{% block bld_tool %}
 dev/build/autoconf/2.71/mix.sh
 dev/build/automake/1.16.3/mix.sh
-{{super()}}
 {% endblock %}
 
 {% block autoreconf %}

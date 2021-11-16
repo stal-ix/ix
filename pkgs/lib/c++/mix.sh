@@ -1,7 +1,10 @@
 {% extends '//mix/template/cmake.sh' %}
 
-{% block bld_deps %}
+{% block bld_libs %}
 {{'lib/linux/mix.sh' | linux}}
+{% endblock %}
+
+{% block std_env %}
 env/std/0/mix.sh
 {% endblock %}
 

@@ -9,7 +9,7 @@ https://github.com/pg83/dlopen/archive/afbcfbf6f7c7fdd8215e8a694500608f7776c0bb.
 lib/c++/mix.sh
 {% endblock %}
 
-{% block bld_deps %}
+{% block std_env %}
 env/std/0/mix.sh
 {% endblock %}
 

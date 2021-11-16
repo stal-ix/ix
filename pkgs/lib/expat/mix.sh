@@ -5,7 +5,7 @@ https://github.com/libexpat/libexpat/archive/refs/tags/R_2_4_1.tar.gz
 3bbf3f4d6a1ab1a82ca1dbafda68ed5f
 {% endblock %}
 
-{% block bld_deps %}
+{% block std_env %}
 env/std/0/mix.sh
 {% endblock %}
 

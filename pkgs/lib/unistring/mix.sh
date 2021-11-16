@@ -9,7 +9,7 @@ db08bb384e81968957f997ec9808926e
 lib/iconv/mix.sh
 {% endblock %}
 
-{% block bld_deps %}
+{% block std_env %}
 env/std/0/mix.sh
 {% endblock %}
 

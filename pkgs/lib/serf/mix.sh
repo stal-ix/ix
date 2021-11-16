@@ -1,4 +1,4 @@
-{% extends '//mix/template/template.sh' %}
+{% extends '//mix/template/std.sh' %}
 
 {% block fetch %}
 https://www.apache.org/dist/serf/serf-1.3.9.tar.bz2
@@ -12,10 +12,9 @@ lib/openssl/mix.sh
 lib/apr/util/mix.sh
 {% endblock %}
 
-{% block bld_deps %}
+{% block bld_tool %}
 dev/build/scons/mix.sh
 gnu/patch/mix.sh
-env/std/mix.sh
 {% endblock %}
 
 {% block patch %}

@@ -10,9 +10,15 @@ lib/intl/mix.sh
 lib/iconv/mix.sh
 {% endblock %}
 
-{% block bld_deps %}
+{% block bld_libs %}
 lib/readline/mix.sh
+{% endblock %}
+
+{% block std_env %}
 env/std/0/mix.sh
+{% endblock %}
+
+{% block bld_tool %}
 boot/final/env/bison/mix.sh
 {% endblock %}
 
