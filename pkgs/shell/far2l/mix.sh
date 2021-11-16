@@ -5,7 +5,7 @@ https://github.com/elfmz/far2l/archive/b246b95118c0d7c6d10b4e94ec9b3bc7e24c3a7c.
 8fb228fd04476f5143163b9cca27366e
 {% endblock %}
 
-{% block bld_deps %}
+{% block bld_libs %}
 lib/ssh/mix.sh
 lib/pcre/mix.sh
 lib/spdlog/mix.sh
@@ -15,9 +15,11 @@ lib/magic/mix.sh
 lib/uchardet/mix.sh
 lib/fmt/mix.sh
 {{'lib/linux/mix.sh' | linux}}
+{% endblock %}
+
+{% block bld_tool %}
 dev/build/pkg-config/mix.sh
 dev/lang/m4/mix.sh
-{{super()}}
 {% endblock %}
 
 {% block patch %}
