@@ -5,7 +5,7 @@ https://github.com/aklomp/base64/archive/refs/tags/v0.4.0.tar.gz
 dc02ea0324279df0ecdc23d519dbcaa0
 {% endblock %}
 
-{% block bld_deps %}
+{% block std_env %}
 env/std/0/mix.sh
 {% endblock %}
 

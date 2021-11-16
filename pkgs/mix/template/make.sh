@@ -1,6 +1,6 @@
 {% extends 'std.sh' %}
 
-{% block bld_deps %}
+{% block std_env %}
 dev/build/make/mix.sh
 {{super()}}
 {% endblock %}

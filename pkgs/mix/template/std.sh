@@ -4,4 +4,5 @@
 {% block std_env %}
 env/std/mix.sh
 {% endblock %}
+{{super()}}
 {% endblock %}

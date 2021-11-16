@@ -2,6 +2,11 @@
 
 {% set bld_deps %}
 {% block bld_deps %}
+{% block bld_libs %}
+{% endblock %}
+
+{% block bld_tool %}
+{% endblock %}
 {% endblock %}
 {% endset %}
 

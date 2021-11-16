@@ -5,8 +5,14 @@ https://invisible-mirror.net/archives/mawk/mawk-1.3.4-20200120.tgz
 d48752f402d7371d9eb5f68de3da05d4
 {% endblock %}
 
-{% block bld_deps %}
+{% block bld_libs %}
 lib/readline/mix.sh
+{% endblock %}
+
+{% block bld_tool %}
 dev/lang/byacc/mix.sh
+{% endblock %}
+
+{% block std_env %}
 env/std/0/mix.sh
 {% endblock %}

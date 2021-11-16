@@ -5,7 +5,7 @@ http://base64.sourceforge.net/b64.c
 b2294ff8b1cc1de89f7c9073ba866170
 {% endblock %}
 
-{% block bld_deps %}
+{% block std_env %}
 env/std/0/mix.sh
 {% endblock %}
 
