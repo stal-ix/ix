@@ -12,7 +12,7 @@ lib/intl/mix.sh
 
 {% block bld_tool %}
 dev/lang/flex/mix.sh
-dev/lang/bison/3.6.4/mix.sh
+dev/lang/bison/3/6/mix.sh
 {% endblock %}
 
 {% block coflags %}

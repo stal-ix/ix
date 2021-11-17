@@ -1,4 +1,4 @@
-{% extends '//dev/lang/bison/3.7.6/mix.sh' %}
+{% extends '//dev/lang/bison/3/7/mix.sh' %}
 
 {% block fetch %}
 https://ftp.gnu.org/gnu/bison/bison-3.8.2.tar.lz
@@ -6,5 +6,5 @@ https://ftp.gnu.org/gnu/bison/bison-3.8.2.tar.lz
 {% endblock %}
 
 {% block bison_bootstrap %}
-dev/lang/bison/3.8.2/0/mix.sh
+dev/lang/bison/3/8/0/mix.sh
 {% endblock %}

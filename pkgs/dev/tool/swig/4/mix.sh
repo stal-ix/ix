@@ -11,7 +11,7 @@ lib/pcre/mix.sh
 {% endblock %}
 
 {% block bld_tool %}
-dev/lang/bison/3.7.6/mix.sh
+dev/lang/bison/3/7/mix.sh
 {% endblock %}
 
 {% block coflags %}

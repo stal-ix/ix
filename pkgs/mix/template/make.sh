@@ -26,7 +26,7 @@ install
 {% set real_flags %}{{mix.fix_list(make_flags)}}{% endset %}
 
 {% block build %}
-make -j ${make_thrs} {{real_flags}} || make {{real_flags}}
+make -j {% block make_thrs %}${make_thrs}{% endblock %} {{real_flags}} || make {{real_flags}}
 {% endblock %}
 
 {% block install %}

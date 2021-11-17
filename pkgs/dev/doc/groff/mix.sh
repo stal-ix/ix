@@ -12,7 +12,7 @@ lib/uchardet/mix.sh
 
 {% block bld_tool %}
 dev/lang/perl5/mix.sh
-dev/lang/bison/3.7.6/mix.sh
+dev/lang/bison/3/7/mix.sh
 dev/doc/texinfo/mix.sh
 {% endblock %}
 

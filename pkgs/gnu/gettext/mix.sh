@@ -14,7 +14,7 @@ lib/textstyle/mix.sh
 {% endblock %}
 
 {% block bld_tool %}
-dev/lang/bison/3.6.4/mix.sh
+dev/lang/bison/3/6/mix.sh
 tool/compress/minigzip/mix.sh
 {% endblock %}
 
