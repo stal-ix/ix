@@ -13,6 +13,10 @@ dev/lang/m4/mix.sh
 env/std/0/mix.sh
 {% endblock %}
 
+{% block setup %}
+export CFLAGS="-w ${CFLAGS}"
+{% endblock %}
+
 {% block install %}
 {{super()}}
 
