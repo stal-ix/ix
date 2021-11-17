@@ -132,7 +132,7 @@ class Package:
         return (self.load_package(x, reason) for x in l)
 
     def bld_deps(self):
-        return self.descr['bld']['libs'] + self.descr['bld']['deps']
+        return self.descr['bld']['deps']
 
     def lib_deps(self):
         return self.descr['lib']['deps']
@@ -142,18 +142,13 @@ class Package:
 
     def bld_lib_deps(self):
         yield from self.lib_deps()
-
-        for x in self.bld_deps():
-            if is_lib(x):
-                yield x
+        yield from self.descr['bld']['libs']
 
         for p in self.bld_bin_closure():
             yield from p.all_lib_deps()
 
     def bld_bin_deps(self):
-        for x in self.bld_deps():
-            if not is_lib(x):
-                yield x
+        return self.bld_deps()
 
     @cu.cached_method
     def bld_bin_closure(self):
