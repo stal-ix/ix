@@ -9,6 +9,11 @@
 {% block bld_deps %}
 {% block bld_tool %}
 {% endblock %}
+
+{% block std_env %}
+{% block std_box %}
+{% endblock %}
+{% endblock %}
 {% endblock %}
 {% endset %}
 
