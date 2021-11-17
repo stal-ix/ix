@@ -82,6 +82,7 @@ class Package:
         self.selector = selector
         self.manager = mngr
         self.descr = cr.RenderContext(self).render()
+
         self.uid = cu.struct_hash({
             'descr': self.descr,
             'root': self.config.store_dir,
