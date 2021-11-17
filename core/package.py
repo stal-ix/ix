@@ -145,7 +145,7 @@ class Package:
         yield from self.descr['bld']['libs']
 
         for p in self.bld_bin_closure():
-            yield from p.all_lib_deps()
+            yield from p.lib_deps()
 
     @cu.cached_method
     def bld_bin_closure(self):
@@ -162,22 +162,9 @@ class Package:
     def iter_all_build_depends(self):
         return buildable(itertools.chain(self.bld_bin_closure(), reversed(self.bld_lib_closure())))
 
-    def run_run_deps(self):
-        for x in self.run_deps():
-            if not is_lib(x):
-                yield x
-
-    def run_lib_deps(self):
-        for x in self.run_deps():
-            if is_lib(x):
-                yield x
-
-    def all_lib_deps(self):
-        return itertools.chain(self.lib_deps(), self.run_lib_deps())
-
     @cu.cached_method
     def run_closure(self):
-        return visit_lst(self.load_packages(self.run_run_deps(), "run"), lambda x: x.run_closure())
+        return visit_lst(self.load_packages(self.run_deps(), "run"), lambda x: x.run_closure())
 
     def iter_all_runtime_depends(self):
         return buildable(self.run_closure())
