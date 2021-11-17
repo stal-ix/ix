@@ -1,4 +1,4 @@
-{% extends '//mix/template/template.sh' %}
+{% extends '//mix/template/std.sh' %}
 
 {% block fetch %}
 https://github.com/westes/flex/archive/refs/tags/flex-2-5-10.tar.gz
