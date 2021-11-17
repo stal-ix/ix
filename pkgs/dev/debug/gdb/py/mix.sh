@@ -8,9 +8,8 @@
 lib/python/mix.sh
 {% endblock %}
 
-{% block bld_deps %}
+{% block bld_libs %}
 pypi/pygments/mix.sh
-env/std/mix.sh
 {% endblock %}
 
 {% block setup %}

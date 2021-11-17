@@ -1,4 +1,4 @@
-{% extends '//mix/template/template.sh' %}
+{% extends '//mix/template/std.sh' %}
 
 {% block fetch %}
 https://github.com/pg83/mrustc/archive/refs/heads/master.zip
@@ -15,6 +15,9 @@ lib/c++/mix.sh
 lib/curl/mix.sh
 lib/iconv/mix.sh
 lib/openssl/mix.sh
+{% endblock %}
+
+{% block bld_tool %}
 tool/curl/mix.sh
 shell/cli/bash/minimal/mix.sh
 dev/vcs/git/mix.sh
@@ -23,7 +26,6 @@ tool/gnu/time/mix.sh
 dev/build/python/mix.sh
 dev/build/make/mix.sh
 dev/build/cmake/mix.sh
-env/std/mix.sh
 {% endblock %}
 
 {% block unpack %}

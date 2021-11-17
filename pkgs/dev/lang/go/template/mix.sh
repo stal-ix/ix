@@ -1,11 +1,8 @@
-{% extends '//mix/template/template.sh' %}
+{% extends '//mix/template/std.sh' %}
 
-{% block bld_deps %}
+{% block bld_tool %}
 shell/cli/bash/minimal/mix.sh
 dev/build/pkg-config/mix.sh
-env/std/mix.sh
-{% block go_bld_deps %}
-{% endblock %}
 {% endblock %}
 
 {% block unpack %}

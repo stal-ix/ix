@@ -1,9 +1,5 @@
 {% extends 'freeze.sh' %}
 
-{% block more_deps %}
-# bld env/std/mix.sh
-{% endblock %}
-
 {% block build %}
 >frozen.py
 

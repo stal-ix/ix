@@ -5,8 +5,11 @@ https://static.rust-lang.org/dist/rust-1.56.1-aarch64-apple-darwin.pkg
 769d2f6a9c80129582e66de7123b784b
 {% endblock %}
 
-{% block bld_deps %}
+{% block bld_tool %}
 tool/compress/bsdtar/mix.sh
+{% endblock %}
+
+{% block std_env %}
 env/tools/mix.sh
 {% endblock %}
 
