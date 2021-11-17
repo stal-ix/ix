@@ -69,7 +69,7 @@ def visit_lst(lst, f):
 
 class Package:
     def __init__(self, selector, mngr):
-        print(selector)
+        # print(selector)
 
         self.selector = selector
         self.manager = mngr
