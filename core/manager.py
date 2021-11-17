@@ -9,6 +9,7 @@ import core.utils as cu
 import core.realm as cr
 import core.execute as ce
 import core.package as cp
+import core.gen_cmds as cg
 
 
 class Manager:
@@ -61,7 +62,7 @@ class Manager:
 
         for pkg in self._p.values():
             try:
-                yield from pkg.commands()
+                yield from list(cg.iter_build_commands(pkg))
             except Exception as e:
                 raise er.Error(f'can not render build commands for {pkg.name}: {e}')
 

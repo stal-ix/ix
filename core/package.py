@@ -7,7 +7,6 @@ import multiprocessing
 
 import core.utils as cu
 import core.error as ce
-import core.gen_cmds as cg
 import core.render_ctx as cr
 
 
@@ -165,9 +164,6 @@ class Package:
 
     def iter_all_runtime_depends(self):
         return buildable(self.run_closure())
-
-    def commands(self):
-        return list(cg.iter_build_commands(self))
 
     def install(self, to):
         fr = self.out_dir
