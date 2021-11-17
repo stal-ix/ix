@@ -1,9 +1,12 @@
 {% extends '//dev/build/cmake/mix.sh' %}
 
-{% block bld_deps %}
+{% block bld_libs %}
 {{'sys/framework/CoreFoundation/mix.sh' | darwin}}
 {{'boot/7/lib/linux/mix.sh' | linux}}
 boot/7/lib/cxx/mix.sh
+{% endblock %}
+
+{% block bld_deps %}
 boot/6/env/std/mix.sh
 {% endblock %}
 

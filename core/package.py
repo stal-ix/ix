@@ -132,7 +132,7 @@ class Package:
         return (self.load_package(x, reason) for x in l)
 
     def bld_deps(self):
-        return self.descr['bld']['deps']
+        return self.descr['bld']['libs'] + self.descr['bld']['deps']
 
     def lib_deps(self):
         return self.descr['lib']['deps']

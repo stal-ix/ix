@@ -5,6 +5,9 @@ https://musl.libc.org/releases/musl-1.2.2.tar.gz
 aed8ae9e2b0898151b36a204088292dd
 {% endblock %}
 
+{% block bld_libs %}
+{% endblock %
+
 {% block bld_deps %}
 boot/0/env/mix.sh
 {% endblock %}

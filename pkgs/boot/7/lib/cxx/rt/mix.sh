@@ -9,6 +9,9 @@ d5724a37b8d640f67f09cbbdd831a528
 boot/7/lib/cxx/unwind/mix.sh
 {% endblock %}
 
+{% block bld_libs %}
+{% endblock %}
+
 {% block bld_deps %}
 boot/6/env/std/mix.sh
 {% endblock %}

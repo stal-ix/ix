@@ -4,6 +4,9 @@
 boot/9/m4/mix.sh
 {% endblock %}
 
+{% block bld_libs %}
+{% endblock %}
+
 {% block bld_deps %}
 {% block boot_flex %}
 boot/9/flex/2.5.10.1.sh

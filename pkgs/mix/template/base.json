@@ -2,7 +2,8 @@
     "bld": {
         "fetch": {% block build_fetch %}[]{% endblock %},
         "script": {% block build_script %}{}{% endblock %},
-        "deps": {% block build_depends %}[]{% endblock %}
+        "deps": {% block build_depends %}[]{% endblock %},
+        "libs": {% block bld_lib_deps %}[]{% endblock %}
     },
     "run": {
         "deps": {% block runtime_depends %}[]{% endblock %}

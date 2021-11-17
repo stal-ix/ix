@@ -8,8 +8,11 @@
 boot/7/lib/cxx/rt/mix.sh
 {% endblock %}
 
-{% block bld_deps %}
+{% block bld_libs %}
 {{'boot/7/lib/linux/mix.sh' | linux}}
+{% endblock %}
+
+{% block bld_deps %}
 boot/6/env/std/mix.sh
 {% endblock %}
 

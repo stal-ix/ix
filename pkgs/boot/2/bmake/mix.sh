@@ -5,6 +5,9 @@ https://www.crufty.net/ftp/pub/sjg/bmake-20210808.tar.gz
 e4432f5e3add4459aef28ec2017aaf05
 {% endblock %}
 
+{% block bld_libs %}
+{% endblock %}
+
 {% block bld_deps %}
 boot/2/shutil/mix.sh
 boot/1/env/mix.sh

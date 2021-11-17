@@ -1,5 +1,8 @@
 {% extends '//tool/text/mawk/mix.sh' %}
 
+{% block bld_libs %}
+{% endblock %}
+
 {% block bld_deps %}
 boot/4/byacc/mix.sh
 boot/3/env/mix.sh
