@@ -5,16 +5,15 @@ PYPI = json.loads(parent.serve('pypi.json'))
 
 
 TMPL = r'''
-{% extends '//mix/template/template.sh' %}
+{% extends '//mix/template/std.sh' %}
 
 {% block fetch %}
 {url}
 {md5}
 {% endblock %}
 
-{% block bld_deps %}
+{% block bld_tool %}
 dev/build/python/mix.sh
-env/std/mix.sh
 {% endblock %}
 
 {% block run_deps %}

@@ -5,7 +5,7 @@ https://github.com/pg83/mix/archive/{{mix_ver}}.zip
 {{mix_md5}}
 {% endblock %}
 
-{% block bld_deps %}
+{% block bld_libs %}
 lib/python/mix.sh
 pypi/jinja2/mix.sh
 pypi/beautysh/mix.sh

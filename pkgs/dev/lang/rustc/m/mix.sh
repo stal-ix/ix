@@ -9,7 +9,7 @@ https://static.rust-lang.org/dist/rustc-1.19.0-src.tar.gz
 75e779670ac79edf023497a9c37eb35d
 {% endblock %}
 
-{% block bld_deps %}
+{% block bld_libs %}
 lib/z/mix.sh
 lib/c++/mix.sh
 lib/curl/mix.sh
