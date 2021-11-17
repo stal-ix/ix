@@ -71,10 +71,6 @@ def visit_lst(lst, f):
     return r
 
 
-def is_lib(p):
-    return p.startswith('lib/') or '/libs/' in p
-
-
 class Package:
     def __init__(self, selector, mngr):
         print(selector)
@@ -111,7 +107,7 @@ class Package:
         try:
             n['name']
         except TypeError:
-            if is_lib(n):
+            if 'lib' in reason:
                 n = make_selector(n, self.flags)
             else:
                 n = make_selector(n, {})
