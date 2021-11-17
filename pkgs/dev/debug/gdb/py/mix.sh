@@ -1,4 +1,4 @@
-{% extends '//mix/template/python/lib.sh' %}
+{% extends '//mix/template/python/hub.sh' %}
 
 {% block fetch %}
 {% include '//dev/debug/gdb/version.sh' %}

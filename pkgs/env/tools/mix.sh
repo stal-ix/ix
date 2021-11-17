@@ -1,6 +1,6 @@
 {% extends '//mix/template/hub.sh' %}
 
-{% block deps %}
+{% block run_deps %}
 gnu/file/mix.sh
 gnu/findutils/mix.sh
 gnu/sed/mix.sh

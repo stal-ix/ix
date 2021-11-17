@@ -1,6 +1,6 @@
 {% extends '//mix/template/hub.sh' %}
 
-{% block deps %}
+{% block run_deps %}
 boot/2/sbase/mix.sh
 boot/2/heirloom/mix.sh
 boot/2/bmake/mix.sh

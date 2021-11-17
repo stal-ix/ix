@@ -2,12 +2,18 @@ import os
 
 
 def fix(d):
+    if '/lib.sh' in d:
+        d = d.replace('lib.sh', 'hub.sh').replace('block deps', 'block lib_deps')
+
+    if '/hub.sh' in d:
+        d = d.replace('block deps', 'block run_deps')
+
     return d
 
 
 for a, b, c in os.walk('.'):
     for x in c:
-        if x == 'mix.sh':
+        if '.sh' in x:
             p = os.path.join(a, x)
 
             with open(p, 'r') as f:

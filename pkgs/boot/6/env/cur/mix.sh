@@ -1,6 +1,6 @@
 {% extends '//mix/template/hub.sh' %}
 
-{% block deps %}
+{% block run_deps %}
 boot/6/dash/mix.sh
 boot/6/diffutils/mix.sh
 boot/6/findutils/mix.sh
