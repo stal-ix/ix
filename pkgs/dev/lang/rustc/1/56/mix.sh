@@ -1,4 +1,4 @@
-{% extends '//mix/template/pkg.sh' %}
+{% extends '//mix/template/std.sh' %}
 
 {% block fetch %}
 https://static.rust-lang.org/dist/rust-1.56.1-aarch64-apple-darwin.pkg
@@ -7,10 +7,6 @@ https://static.rust-lang.org/dist/rust-1.56.1-aarch64-apple-darwin.pkg
 
 {% block bld_tool %}
 tool/compress/bsdtar/mix.sh
-{% endblock %}
-
-{% block std_env %}
-env/tools/mix.sh
 {% endblock %}
 
 {% block unpack %}

@@ -1,6 +1,6 @@
 {% extends 'std.sh' %}
 
-{% block bld_deps %}
+{% block std_env %}
 dev/lang/rustc/1/56/mix.sh
 {{super()}}
 {% endblock %}
