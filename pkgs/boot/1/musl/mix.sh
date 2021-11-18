@@ -6,7 +6,7 @@ aed8ae9e2b0898151b36a204088292dd
 {% endblock %}
 
 {% block bld_libs %}
-{% endblock %
+{% endblock %}
 
 {% block bld_deps %}
 boot/0/env/mix.sh

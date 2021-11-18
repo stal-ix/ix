@@ -5,9 +5,11 @@ https://ftp.gnu.org/gnu/gdbm/gdbm-1.19.tar.gz
 aeb29c6a90350a4c959cd1df38cd0a7e
 {% endblock %}
 
-{% block bld_libs %}
+{% block lib_deps %}
 lib/intl/mix.sh
-lib/iconv/mix.sh
+{% endblock %}
+
+{% block bld_libs %}
 lib/readline/mix.sh
 {% endblock %}
 

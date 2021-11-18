@@ -5,7 +5,7 @@ boot/8/lib/musl/mix.sh
 {% endblock %}
 
 {% block bld_libs %}
-{% endblock %
+{% endblock %}
 
 {% block bld_deps %}
 boot/7/cmake/mix.sh
