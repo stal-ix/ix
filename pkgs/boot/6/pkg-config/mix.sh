@@ -11,7 +11,6 @@ boot/5/env/std/mix.sh
 {% block coflags %}
 {{super()}}
 --with-internal-glib
---help
 {% endblock %}
 
 {% block configure %}
