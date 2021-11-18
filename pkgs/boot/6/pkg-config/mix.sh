@@ -18,6 +18,7 @@ boot/5/env/std/mix.sh
 (cd glib && dash ./configure ${COFLAGS} --prefix=${out} --with-libiconv=gnu --srcdir=.)
 {% endblock %}
 
-{% block prebuild %}
+{% block build %}
 cd glib && make -j ${make_thrs}
+{{super()}}
 {% endblock %}
