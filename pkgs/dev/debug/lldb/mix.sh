@@ -6,7 +6,7 @@
 
 {% block bld_libs %}
 {{'lib/linux/mix.sh' | linux}}
-{{'sys/framework/CoreFoundation/mix.sh' | darwin}}
+{{'lib/darwin/framework/CoreFoundation/mix.sh' | darwin}}
 lib/c++/mix.sh
 lib/curses/mix.sh
 lib/edit/mix.sh

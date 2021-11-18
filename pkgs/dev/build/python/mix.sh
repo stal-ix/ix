@@ -6,7 +6,7 @@
 {% block bld_libs %}
 lib/z/mix.sh
 {{'lib/linux/mix.sh' | linux}}
-{{'sys/framework/SystemConfiguration/mix.sh' | darwin}}
+{{'lib/darwin/framework/SystemConfiguration/mix.sh' | darwin}}
 {% endblock %}
 
 {% block bld_tool %}

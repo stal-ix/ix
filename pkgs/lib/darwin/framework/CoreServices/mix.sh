@@ -1,4 +1,4 @@
-{% extends '//sys/framework/mix.sh' %}
+{% extends '//lib/darwin/framework/mix.sh' %}
 
 {% block framework %}
 CoreServices

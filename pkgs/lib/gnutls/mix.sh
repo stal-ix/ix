@@ -15,7 +15,7 @@ lib/nettle/mix.sh
 lib/seccomp/mix.sh
 {% endif %}
 {% if mix.platform.target.os == 'darwin' %}
-sys/framework/Security/mix.sh
+lib/darwin/framework/Security/mix.sh
 {% endif %}
 lib/unistring/mix.sh
 {% endblock %}

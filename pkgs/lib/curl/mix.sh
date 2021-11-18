@@ -13,7 +13,7 @@ lib/zstd/mix.sh
 lib/brotli/mix.sh
 lib/nghttp2/mix.sh
 lib/{{curlssl or 'openssl'}}/mix.sh
-{{'sys/framework/SystemConfiguration/mix.sh' | darwin}}
+{{'lib/darwin/framework/SystemConfiguration/mix.sh' | darwin}}
 {% endblock %}
 
 {% block bld_tool %}

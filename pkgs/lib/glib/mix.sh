@@ -12,8 +12,8 @@ lib/iconv/mix.sh
 lib/ffi/mix.sh
 lib/intl/mix.sh
 {% if mix.platform.target.os == 'darwin' %}
-sys/framework/CoreServices/mix.sh
-sys/framework/Foundation/mix.sh
+lib/darwin/framework/CoreServices/mix.sh
+lib/darwin/framework/Foundation/mix.sh
 {% endif %}
 {% endblock %}
 

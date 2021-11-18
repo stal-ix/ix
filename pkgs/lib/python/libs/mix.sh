@@ -15,5 +15,5 @@ lib/curses/mix.sh
 lib/openssl/mix.sh
 lib/mpdecimal/mix.sh
 lib/{{edit or 'edit'}}/mix.sh
-{{'sys/framework/SystemConfiguration/mix.sh' | darwin}}
+{{'lib/darwin/framework/SystemConfiguration/mix.sh' | darwin}}
 {% endblock %}

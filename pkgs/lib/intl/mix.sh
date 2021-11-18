@@ -7,7 +7,7 @@ https://ftp.gnu.org/pub/gnu/gettext/gettext-0.21.tar.gz
 
 {% block lib_deps %}
 lib/iconv/mix.sh
-{{'sys/framework/CoreFoundation/mix.sh' | darwin}}
+{{'lib/darwin/framework/CoreFoundation/mix.sh' | darwin}}
 {% endblock %}
 
 {% block std_env %}

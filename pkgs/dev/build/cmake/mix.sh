@@ -6,7 +6,7 @@ https://github.com/Kitware/CMake/releases/download/v3.21.4/cmake-3.21.4.tar.gz
 {% endblock %}
 
 {% block bld_libs %}
-{{'sys/framework/CoreFoundation/mix.sh' | darwin}}
+{{'lib/darwin/framework/CoreFoundation/mix.sh' | darwin}}
 {{'lib/linux/mix.sh' | linux}}
 lib/z/mix.sh
 lib/xz/mix.sh

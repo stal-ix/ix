@@ -2,7 +2,7 @@
 
 {% block bld_libs %}
 {{'lib/linux/mix.sh' | linux}}
-{{'sys/framework/CoreFoundation/mix.sh' | darwin}}
+{{'lib/darwin/framework/CoreFoundation/mix.sh' | darwin}}
 boot/final/cxx/mix.sh
 {% endblock %}
 

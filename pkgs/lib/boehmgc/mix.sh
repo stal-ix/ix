@@ -8,7 +8,7 @@ https://github.com/ivmai/bdwgc/archive/refs/tags/v8.0.6.tar.gz
 {% block lib_deps %}
 lib/c++/mix.sh
 lib/atomicops/mix.sh
-{{'sys/framework/Corefoundation/mix.sh' | darwin}}
+{{'lib/darwin/framework/Corefoundation/mix.sh' | darwin}}
 {% endblock %}
 
 {% block bld_tool %}
