@@ -20,6 +20,8 @@ export CFLAGS="-w ${CFLAGS}"
 {% block install %}
 {{super()}}
 
+rm -rf ${out}/lib ${out}/include
+
 cd ${out}/bin
 
 ln -s libtoolize glibtoolize
