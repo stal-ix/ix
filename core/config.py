@@ -49,6 +49,9 @@ class Config:
     @property
     @cu.cached_method
     def platform(self):
+        host = ARCHES[platform.system().lower() + '-' + platform.machine()]
+
         return {
-            'target': ARCHES[platform.system().lower() + '-' + platform.machine()],
+            'host': host,
+            'target': host,
         }
