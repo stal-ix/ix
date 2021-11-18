@@ -14,12 +14,6 @@ boot/6/env/std/mix.sh
 {% block autoreconf %}
 {% endblock %}
 
-{% block extra_tests %}
-{% endblock %}
-
-{% block patch_ffi %}
-{% endblock %}
-
 {% block coflags %}
 --with-ensurepip=no
 {% endblock %}
