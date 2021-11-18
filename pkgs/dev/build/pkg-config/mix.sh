@@ -17,8 +17,6 @@ env/std/0/mix.sh
 
 {% block coflags %}
 --disable-host-tool
-{% block pkgflags %}
-{% endblock %}
 {% endblock %}
 
 {% block env %}
