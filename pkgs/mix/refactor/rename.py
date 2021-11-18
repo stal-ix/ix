@@ -10,9 +10,6 @@ for a, b, c in os.walk('.'):
     for x in c:
         p = os.path.join(a, x)
 
-        if 'boot/' in p:
-            continue
-
         with open(p, 'r') as f:
             d = f.read()
 

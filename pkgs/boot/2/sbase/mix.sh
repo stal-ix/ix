@@ -1,4 +1,4 @@
-{% extends '//tool/sbase/mix.sh' %}
+{% extends '//box/sbase/mix.sh' %}
 
 {% block bld_libs %}
 {% endblock %}
