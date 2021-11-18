@@ -1,6 +1,7 @@
 {% extends '//shell/mc/template/template.sh' %}
 
-{% block mc_run_deps %}
+{% block run_deps %}
+{{super()}}
 lib/curses/terminfo/mix.sh
 {% endblock %}
 

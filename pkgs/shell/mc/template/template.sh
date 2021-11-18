@@ -17,16 +17,7 @@ dev/lang/perl5/mix.sh
 {% endblock %}
 
 {% block run_deps %}
-tool/compress/bsdtar/mix.sh
-tool/compress/bzip2/mix.sh
-tool/compress/gzip/mix.sh
-tool/compress/p7zip/mix.sh
-tool/compress/unrar/mix.sh
-tool/compress/unzip/mix.sh
-tool/compress/xz/mix.sh
-tool/compress/zip/mix.sh
-{% block mc_run_deps %}
-{% endblock %}
+tool/compress/all/mix.sh
 {% endblock %}
 
 {% block setup %}
