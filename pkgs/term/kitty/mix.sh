@@ -9,9 +9,7 @@ https://github.com/kovidgoyal/kitty/archive/refs/tags/v0.23.1.tar.gz
 lib/python/mix.sh
 lib/lcms2/mix.sh
 lib/png/mix.sh
-lib/dlfcn/mix.sh
 lib/harfbuzz/mix.sh
-lib/glfw/mix.sh
 {% if mix.platform.target.os == 'darwin' %}
 lib/darwin/framework/IOKit/mix.sh
 lib/darwin/framework/Cocoa/mix.sh
@@ -33,6 +31,8 @@ export CFLAGS="-w ${CFLAGS}"
 {% endblock %}
 
 {% block build %}
+python3 ./setup.py build || true
+
 rm kitty/fontconfig.c
 rm kitty/freetype*
 
@@ -48,6 +48,10 @@ cat - ${lib_python_3_10}/lib/python3.10/config-3.10-darwin/config.c << EOF | sed
 #include <Python.h>
 extern PyObject* PyInit_fast_data_types(void);
 EOF
+
+clang -I${lib_python_3_10}/include/python3.10 kitty/ccc.c ${lib_python_3_10}/lib/python3.10/config-3.10-darwin/python.o build/fast*.o
+
+exit 1
 
 llvm-nm ${lib_glfw}/lib/libglfw3.a | grep glfw | grep ' T ' | grep -v '__' | awk '{print $3}' | tr -d _ > glfw_
 
@@ -70,7 +74,7 @@ DL_END()
 EOF
 ) > kitty/dl.cpp
 
-clang -I${lib_python_3_10}/include/python3.10 -I${lib_harfbuzz}/include/harfbuzz -I${lib_freetype}/include/freetype2 -DXT_VERSION= ${lib_python_3_10}/lib/python3.10/config-3.10-darwin/python.o kitty/*.c kitty/*.m kitty/*.cpp
+#clang -I${lib_python_3_10}/include/python3.10 -I${lib_harfbuzz}/include/harfbuzz -I${lib_freetype}/include/freetype2 -DXT_VERSION= ${lib_python_3_10}/lib/python3.10/config-3.10-darwin/python.o kitty/*.c kitty/*.m kitty/*.cpp
 
 exit 1
 {% endblock %}
