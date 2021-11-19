@@ -10,6 +10,12 @@ lib/python/mix.sh
 lib/lcms2/mix.sh
 lib/png/mix.sh
 lib/harfbuzz/mix.sh
+lib/darwin/framework/IOKit/mix.sh
+lib/darwin/framework/Cocoa/mix.sh
+lib/darwin/framework/AppKit/mix.sh
+lib/darwin/framework/CoreText/mix.sh
+lib/darwin/framework/CoreGraphics/mix.sh
+lib/darwin/framework/UserNotifications/mix.sh
 {% endblock %}
 
 {% block bld_tool %}
