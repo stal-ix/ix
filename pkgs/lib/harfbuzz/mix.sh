@@ -31,8 +31,11 @@ export CFLAGS="-w ${CFLAGS}"
 
 {% block meson_flags %}
 -Ddefault_library=static
+{% if mix.platform.target.os == 'darwin' %}
 -Dcoretext=enabled
+{% endif %}
 -Dglib=enabled
 -Dgobject=disabled
 -Dtests=disabled
+-Dcairo=enabled
 {% endblock %}
