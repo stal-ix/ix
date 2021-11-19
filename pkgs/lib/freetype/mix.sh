@@ -18,7 +18,7 @@ dev/build/automake/1.16.3/mix.sh
 {% endblock %}
 
 {% block autoreconf %}
-cat autogen.sh | grep -v git | sed -e 's|\./configure|\./configure; exit 0|' | dash
+cat autogen.sh | sed -e 's|\./configure|\./configure; exit 0|' | dash
 {% endblock %}
 
 {% block coflags %}

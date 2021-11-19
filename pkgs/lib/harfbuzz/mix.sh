@@ -18,6 +18,7 @@ lib/darwin/framework/ApplicationServices/mix.sh
 {% block bld_tool %}
 dev/build/cmake/mix.sh
 dev/build/pkg-config/mix.sh
+dev/tool/ragel/6/mix.sh
 {% endblock %}
 
 {% block setup %}
