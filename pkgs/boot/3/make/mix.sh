@@ -1,7 +1,7 @@
 {% extends '//dev/build/make/mix.sh' %}
 
 {% block bld_libs %}
-{{'boot/1/musl/mix.sh' | linux}}
+boot/1/lib/c/mix.sh
 {% endblock %}
 
 {% block bld_deps %}

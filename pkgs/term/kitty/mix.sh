@@ -9,7 +9,6 @@ https://github.com/kovidgoyal/kitty/archive/refs/tags/v0.23.1.tar.gz
 lib/python/mix.sh
 lib/lcms2/mix.sh
 lib/png/mix.sh
-lib/dlfcn/mix.sh
 lib/harfbuzz/mix.sh
 {% if mix.platform.target.os == 'darwin' %}
 lib/darwin/framework/IOKit/mix.sh
