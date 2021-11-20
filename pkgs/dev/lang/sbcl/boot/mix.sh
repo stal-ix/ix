@@ -6,7 +6,6 @@ https://nav.dl.sourceforge.net/project/sbcl/sbcl/2.1.7/sbcl-2.1.7-source.tar.bz2
 {% endblock %}
 
 {% block bld_libs %}
-lib/dlfcn/mix.sh
 lib/z/mix.sh
 {{'lib/linux/mix.sh' | linux}}
 {% endblock %}
