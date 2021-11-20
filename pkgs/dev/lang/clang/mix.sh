@@ -12,7 +12,7 @@ boot/final/env/clang/mix.sh
 
 {% block run_deps %}
 env/toolchain/mix.sh
-env/os/mix.sh
+env/release/mix.sh
 {% endblock %}
 
 {% block fetch %}
