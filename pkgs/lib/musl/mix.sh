@@ -1,8 +1,7 @@
 {% extends '//lib/musl/template/mix.sh' %}
 
 {% block std_env %}
-dev/lang/clang/mix.sh
-boot/final/env/tools/mix.sh
+env/std/1/mix.sh
 {% endblock %}
 
 {% block setup %}
