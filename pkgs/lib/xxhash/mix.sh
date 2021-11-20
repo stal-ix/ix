@@ -9,9 +9,14 @@ https://github.com/Cyan4973/xxHash/archive/refs/tags/v0.8.0.tar.gz
 lib/c++/mix.sh
 {% endblock %}
 
+{% block patch %}
+sed -e 's|libxxhash.a libxxhash|libxxhash.a|' -i Makefile
+{% endblock %}
+
 {% block build %}
-make -j ${make_thrs} all || echo > libxxhash.so.0.8.0
-make all
+{{super()}}
+>libxxhash.0.8.0.dylib
+>libxxhash.0.8.0.so
 {% endblock %}
 
 {% block test %}
