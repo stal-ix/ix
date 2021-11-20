@@ -11,6 +11,10 @@ lib/tom/math/mix.sh
 lib/tom/crypt/mix.sh
 {% endblock %}
 
+{% block bld_tool %}
+gnu/which/mix.sh
+{% endblock %}
+
 {% block enable_static %}
 {% endblock %}
 
