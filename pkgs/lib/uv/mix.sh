@@ -1,8 +1,8 @@
 {% extends '//mix/template/autohell.sh' %}
 
 {% block fetch %}
-https://dist.libuv.org/dist/v1.41.0/libuv-v1.41.0.tar.gz
-d990b0770dd2b15f7a8399580d55d32c
+https://github.com/libuv/libuv/archive/refs/tags/v1.42.0.tar.gz
+3f8ede5f30e6cc68b4e6f7d366dc9f00
 {% endblock %}
 
 {% block bld_tool %}
@@ -11,5 +11,5 @@ dev/build/automake/1.16.3/mix.sh
 {% endblock %}
 
 {% block autoreconf %}
-dash ./autogen.sh
+dash autogen.sh
 {% endblock %}
