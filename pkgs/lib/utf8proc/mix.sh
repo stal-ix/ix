@@ -1,4 +1,4 @@
-{% extends '//mix/template/make.sh' %}
+{% extends '//mix/template/cmake.sh' %}
 
 {% block fetch %}
 https://github.com/JuliaStrings/utf8proc/archive/refs/tags/v2.6.1.tar.gz
@@ -7,13 +7,4 @@ https://github.com/JuliaStrings/utf8proc/archive/refs/tags/v2.6.1.tar.gz
 
 {% block std_env %}
 env/std/0/mix.sh
-{% endblock %}
-
-{% block build %}
-make prefix=${out} -j ${make_thrs} libutf8proc.a
-
->libutf8proc.so.2.4.1
->libutf8proc.dylib
-
-make prefix=${out} -j ${make_thrs}
 {% endblock %}
