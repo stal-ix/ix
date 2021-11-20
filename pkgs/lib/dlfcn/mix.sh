@@ -10,7 +10,7 @@ lib/c++/mix.sh
 {% endblock %}
 
 {% block std_env %}
-env/std/0/mix.sh
+env/std/1/mix.sh
 {% endblock %}
 
 {% block install %}
