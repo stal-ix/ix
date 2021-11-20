@@ -9,6 +9,7 @@ https://github.com/kovidgoyal/kitty/archive/refs/tags/v0.23.1.tar.gz
 lib/python/mix.sh
 lib/lcms2/mix.sh
 lib/png/mix.sh
+lib/dlfcn/mix.sh
 lib/harfbuzz/mix.sh
 {% if mix.platform.target.os == 'darwin' %}
 lib/darwin/framework/IOKit/mix.sh
@@ -31,32 +32,27 @@ export CFLAGS="-w ${CFLAGS}"
 {% endblock %}
 
 {% block build %}
-python3 ./setup.py build || true
+sed -e 's|encode_utf8|xxx_encode_utf8|g' -i glfw/input.c
 
-rm kitty/fontconfig.c
-rm kitty/freetype*
+python3 ./setup.py linux-package
 
 cat << EOF > kitty/fast_data_types.py
-from fast_data_types import *
+from _fast_data_types import *
 EOF
 
-cat - kitty/parser.c << EOF > kitty/parser1.c
-#define DUMP_COMMANDS
-EOF
+cd build
 
-cat - ${lib_python_3_10}/lib/python3.10/config-3.10-darwin/config.c << EOF | sed -e 's|.*ADDMODULE MARKER 2.*|{"fast_data_types", PyInit_fast_data_types},|' > kitty/ccc.c
+rm glfw-cocoa-monotonic.c.o
+
+cat - ${lib_python_3_10}/lib/python3.10/config-3.10-darwin/config.c << EOF | sed -e 's|.*ADDMODULE MARKER 2.*|{"_fast_data_types", PyInit_fast_data_types},|' > config.c
 #include <Python.h>
 extern PyObject* PyInit_fast_data_types(void);
 EOF
 
-clang -I${lib_python_3_10}/include/python3.10 kitty/ccc.c ${lib_python_3_10}/lib/python3.10/config-3.10-darwin/python.o build/fast*.o
-
-exit 1
-
-llvm-nm ${lib_glfw}/lib/libglfw3.a | grep glfw | grep ' T ' | grep -v '__' | awk '{print $3}' | tr -d _ > glfw_
+llvm-nm glfw*.o | grep glfw | grep ' T ' | grep -v '__' | awk '{print $3}' | tr -d _ | sort > glfw
 
 (
-    cat glfw_ | while read l; do
+    cat glfw | while read l; do
         echo 'extern "C" void* '$l';'
     done
 
@@ -65,16 +61,16 @@ llvm-nm ${lib_glfw}/lib/libglfw3.a | grep glfw | grep ' T ' | grep -v '__' | awk
 DL_LIB("glfw")
 EOF
 
-    cat glfw_ | while read l; do
+    cat glfw | while read l; do
         echo 'DL_S_1('$l')'
     done
 
     cat << EOF
 DL_END()
 EOF
-) > kitty/dl.cpp
+) > dl.cpp
 
-#clang -I${lib_python_3_10}/include/python3.10 -I${lib_harfbuzz}/include/harfbuzz -I${lib_freetype}/include/freetype2 -DXT_VERSION= ${lib_python_3_10}/lib/python3.10/config-3.10-darwin/python.o kitty/*.c kitty/*.m kitty/*.cpp
+clang -I${lib_python_3_10}/include/python3.10 dl.cpp config.c ${lib_python_3_10}/lib/python3.10/config-3.10-darwin/python.o fast*.o glfw*.o
 
 exit 1
 {% endblock %}
