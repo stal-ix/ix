@@ -1,4 +1,4 @@
-{% extends '//mix/template/mix.json' %}
+{% extends '//mix/template/hub.sh' %}
 
 {% block lib_deps %}
 lib/c/mix.sh
