@@ -6,9 +6,9 @@ https://github.com/kovidgoyal/kitty/archive/refs/tags/v0.23.1.tar.gz
 {% endblock %}
 
 {% block bld_libs %}
-lib/python/mix.sh
-lib/lcms2/mix.sh
 lib/png/mix.sh
+lib/lcms2/mix.sh
+lib/python/mix.sh
 lib/harfbuzz/mix.sh
 {% if mix.platform.target.os == 'darwin' %}
 lib/darwin/framework/IOKit/mix.sh
@@ -30,14 +30,16 @@ dev/build/pkg-config/mix.sh
 export CFLAGS="-w ${CFLAGS}"
 {% endblock %}
 
-{% block build %}
+{% block patch %}
 sed -e 's|encode_utf8|xxx_encode_utf8|g' -i glfw/input.c
-
-python3 ./setup.py linux-package
 
 cat << EOF > kitty/fast_data_types.py
 from _fast_data_types import *
 EOF
+{% endblock %}
+
+{% block build %}
+python3 ./setup.py linux-package
 
 cd build
 
