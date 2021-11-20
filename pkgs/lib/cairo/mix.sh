@@ -26,3 +26,7 @@ dev/build/automake/1.16.3/mix.sh
 libtoolize -c
 autoreconf -i
 {% endblock %}
+
+{% block coflags %}
+--enable-trace=no
+{% endblock %}

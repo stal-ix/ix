@@ -61,7 +61,7 @@ DL_LIB("glfw")
 EOF
 
     cat glfw | while read l; do
-        echo 'DL_S_1('$l')'
+        echo 'DL_S_2("'$l'", &'$l')'
     done
 
     cat << EOF
