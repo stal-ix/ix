@@ -13,12 +13,13 @@ lib/z/mix.sh
 {% block bld_tool %}
 {% block boot_lisp_dep %}
 dev/lang/ecl/mix.sh
+dev/build/make/mix.sh
 {% endblock %}
 {% endblock %}
 
 {% block setup %}
 export CPPFLAGS="-DLISP_FEATURE_OS_PROVIDES_DLOPEN ${CPPFLAGS}"
-export LDFLAGS="-Wl,-error-limit=0 ${LDFLAGS}"
+#export LDFLAGS="-Wl,-error-limit=0 ${LDFLAGS}"
 {% endblock %}
 
 {% block patch %}
@@ -57,7 +58,7 @@ export LDLIBS="${tmp}/symbols.o"
 
 ulimit -s 60000
 
-dash ./make.sh \
+dash make.sh \
     --prefix=${out} \
     --xc-host='{{self.boot_lisp().strip()}}' \
     --with-sb-ldb \
@@ -66,5 +67,5 @@ dash ./make.sh \
 {% endblock %}
 
 {% block install %}
-dash ./install.sh
+dash install.sh
 {% endblock %}
