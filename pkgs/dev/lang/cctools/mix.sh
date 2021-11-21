@@ -7,6 +7,7 @@ https://github.com/tpoechtrager/cctools-port/archive/236a426c1205a3bfcf0dbb2e2fa
 
 {% block bld_libs %}
 lib/c++/mix.sh
+lib/objc/mix.sh
 {% endblock %}
 
 {% block bld_tool %}
@@ -34,17 +35,17 @@ export CPPFLAGS="-D__crashreporter_info__=__crashreporter_info_ld__ ${CPPFLAGS}"
 {% endblock %}
 
 {% block patch %}
-{% if mix.platform.target.os == 'darwin' %}
 cat << EOF > libobjc2/Makefile.am
 noinst_LTLIBRARIES = libobjc.la
-libobjc_la_LDFLAGS = -lobjc
+libobjc_la_LDFLAGS =
 libobjc_la_SOURCES =
 EOF
-{% endif %}
 {% endblock %}
 
 {% block coflags %}
+{% if mix.platform.target.os == 'darwin' %}
 --with-sysroot=${OSX_SDK}
+{% endif %}
 {% endblock %}
 
 {% block build %}

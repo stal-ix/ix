@@ -5,7 +5,7 @@ https://github.com/microsoft/mimalloc/archive/refs/tags/v2.0.3.tar.gz
 a06e57e9ae10a346ab8a1097c0838fef
 {% endblock %}
 
-{% block lib_libs %}
+{% block lib_deps %}
 lib/c/naked/mix.sh
 {% endblock %}
 
