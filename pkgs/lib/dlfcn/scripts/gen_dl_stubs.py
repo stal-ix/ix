@@ -35,6 +35,15 @@ def it_symbols():
         if l.startswith('__'):
             continue
 
+        if l == '_fini':
+            continue
+
+        if l == '_init':
+            continue
+
+        if l == '_start':
+            continue
+
         if l == 'dladdr':
             continue
 

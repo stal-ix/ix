@@ -2046,3 +2046,40 @@
 0000000000338358 b zi
 0000000000276360 T zlibCompileFlags
 0000000000276350 T zlibVersion
+malloc
+free
+rename
+isatty
+mkdir
+dup
+getuid
+gethostname
+setsid
+poll
+select
+getitimer
+setitimer
+gettimeofday
+sin
+cos
+tan
+atan
+atan2
+asin
+cosh
+sinh
+tanh
+asinh
+acosh
+atanh
+hypot
+exp
+log
+log10
+pow
+log1p
+killpg
+rmdir
+pthread_attr_setstack
+pthread_create
+pthread_join
