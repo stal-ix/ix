@@ -6,16 +6,7 @@ f3a640fd2b0939d0c17a2eb17801919c
 {% endblock %}
 
 {% block bld_libs %}
-{% if mix.platform.target.os == 'linux' %}
-lib/linux/mix.sh
-lib/fts/mix.sh
-lib/rpmatch/mix.sh
-{% endif %}
-lib/c++/mix.sh
-lib/xo/mix.sh
-lib/edit/mix.sh
-lib/openssl/mix.sh
-lib/curses/mix.sh
+box/bsdutils/libs/mix.sh(openssl=1)
 {% endblock %}
 
 {% block bld_tool %}
