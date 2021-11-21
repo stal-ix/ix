@@ -23,6 +23,7 @@ lib/darwin/framework/UserNotifications/mix.sh
 {% endblock %}
 
 {% block bld_tool %}
+lib/dlfcn/scripts/mix.sh
 dev/build/pkg-config/mix.sh
 {% endblock %}
 
@@ -39,7 +40,7 @@ EOF
 {% endblock %}
 
 {% block build %}
-python3 ./setup.py linux-package
+python3 setup.py linux-package
 
 cd build
 
@@ -50,26 +51,7 @@ cat - ${lib_python_3_10}/lib/python3.10/config-3.10-darwin/config.c << EOF | sed
 extern PyObject* PyInit_fast_data_types(void);
 EOF
 
-llvm-nm glfw*.o | grep glfw | grep ' T ' | grep -v '__' | awk '{print $3}' | tr -d _ | sort > glfw
-
-(
-    cat glfw | while read l; do
-        echo 'extern "C" void* '$l';'
-    done
-
-    cat << EOF
-#include <dlfcn.h>
-DL_LIB("glfw")
-EOF
-
-    cat glfw | while read l; do
-        echo 'DL_S_2("'$l'", &'$l')'
-    done
-
-    cat << EOF
-DL_END()
-EOF
-) > dl.cpp
+llvm-nm glfw*.o | grep glfw | grep -v '__' | sort | python3 $(command -v gen_dl_stubs.py) > dl.cpp
 
 clang -I${lib_python_3_10}/include/python3.10 dl.cpp config.c ${lib_python_3_10}/lib/python3.10/config-3.10-darwin/python.o fast*.o glfw*.o
 

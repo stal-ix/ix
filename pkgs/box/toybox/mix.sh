@@ -22,8 +22,10 @@ make defconfig
 {% endblock %}
 
 {% block install %}
-make PREFIX="${out}" install
+{{super()}}
+
 cd ${out}
+
 mv sbin/* bin/
 mv usr/bin/* bin/
 mv usr/sbin/* bin/

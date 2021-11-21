@@ -15,6 +15,8 @@ env/std/0/mix.sh
 
 {% block toolconf %}
 rm strip
+
+ln -s $(command -v llvm-strip) strip
 {% endblock %}
 
 {% block setup %}
