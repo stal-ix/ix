@@ -8,9 +8,13 @@ https://github.com/tpoechtrager/cctools-port/archive/236a426c1205a3bfcf0dbb2e2fa
 {% block bld_libs %}
 lib/c++/mix.sh
 lib/objc/mix.sh
+{% if mix.platform.target.os == 'linux' %}
+lib/bsd/overlay/mix.sh
+{% endif %}
 {% endblock %}
 
 {% block bld_tool %}
+gnu/file/mix.sh
 dev/build/autoconf/2.69/mix.sh
 dev/build/automake/1.16.3/mix.sh
 {% endblock %}
@@ -31,7 +35,7 @@ sed -e 's/__arm__/__eat_shit__/' -i configure
 {% endblock %}
 
 {% block setup %}
-export CPPFLAGS="-D__crashreporter_info__=__crashreporter_info_ld__ ${CPPFLAGS}"
+export CPPFLAGS="-D__crashreporter_info__=__crashreporter_info_ld__ -iquote ${PWD}/ld64/src/3rd ${CPPFLAGS}"
 {% endblock %}
 
 {% block patch %}
@@ -40,14 +44,16 @@ noinst_LTLIBRARIES = libobjc.la
 libobjc_la_LDFLAGS =
 libobjc_la_SOURCES =
 EOF
+
+cat << EOF > ld64/src/3rd/BlocksRuntime/Makefile.am
+noinst_LTLIBRARIES = libBlocksRuntime.la
+noinst_HEADERS =
+libBlocksRuntime_la_SOURCES =
+EOF
 {% endblock %}
 
 {% block coflags %}
 {% if mix.platform.target.os == 'darwin' %}
 --with-sysroot=${OSX_SDK}
 {% endif %}
-{% endblock %}
-
-{% block build %}
-make -j ${make_thrs} || touch ld64/src/other/ObjectDump
 {% endblock %}

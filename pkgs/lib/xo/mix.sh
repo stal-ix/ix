@@ -5,8 +5,8 @@ https://github.com/Juniper/libxo/archive/refs/tags/1.6.0.tar.gz
 6d29d5ca45cb469b9ccd3bb962dbee5a
 {% endblock %}
 
-{% block lib_deps %}
-{{'lib/bsd/mix.sh' | linux}}
+{% block bld_libs %}
+{{'lib/bsd/overlay/mix.sh' | linux}}
 {% endblock %}
 
 {% block bld_tool %}
@@ -15,13 +15,7 @@ dev/build/automake/1.16.3/mix.sh
 {% endblock %}
 
 {% block autoreconf %}
-dash ./bin/setup.sh
-{% endblock %}
-
-{% block setup %}
-{% if mix.platform.target.os == 'linux' %}
-export CPPFLAGS="-I${lib_bsd}/include/bsd -DLIBBSD_OVERLAY=1 ${CPPFLAGS}"
-{% endif %}
+dash bin/setup.sh
 {% endblock %}
 
 {% block patch %}
