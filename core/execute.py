@@ -1,4 +1,5 @@
 import os
+import asyncio
 import beautysh
 import itertools
 import subprocess
@@ -75,8 +76,21 @@ def iter_cmd(c):
         yield from c['cmd']
 
 
+def get_lock(n):
+    while True:
+        try:
+            return n['lock']
+        except KeyError:
+            n['lock'] = asyncio.Lock()
+
+
+async def gather(it):
+    return await asyncio.gather(*list(it))
+
+
 class Executor:
     def __init__(self, g):
+        self.s = asyncio.Semaphore(2)
         self.c = set()
 
         by_out = {}
@@ -87,11 +101,14 @@ class Executor:
 
         self.o = by_out
 
-    def visit_all(self, l):
-        for n in l:
-            self.visit_node(self.o[n])
+    async def visit_all(self, l):
+        await gather(self.visit_node(self.o[n]) for n in l)
 
-    def visit_node(self, n):
+    async def visit_node(self, n):
+        async with get_lock(n):
+            await self.visit_node_impl(n)
+
+    async def visit_node_impl(self, n):
         if all(self.exists(x) for x in iter_out(n)):
             return
 
@@ -101,21 +118,20 @@ class Executor:
             if self.load(n):
                 return
 
-        for x in iter_in(n):
-            self.visit_node(self.o[x])
-
-        self.execute_node(n)
+        await gather(self.visit_node(self.o[x]) for x in iter_in(n))
+        await self.execute_node(n)
 
         if cached:
             self.store(n)
 
-    def execute_node(self, n):
+    async def execute_node(self, n):
         for i in iter_in(n):
             if not self.exists(i):
                 raise ce.Error(f'{i} does not exixts')
 
-        for c in iter_cmd(n):
-            execute_cmd(c)
+        async with self.s:
+            for c in iter_cmd(n):
+                await asyncio.to_thread(execute_cmd, c)
 
         for o in iter_out(n):
             if not os.path.isfile(o):
@@ -157,4 +173,4 @@ class Executor:
 
 
 def execute(g):
-    Executor(g).visit_all(g['targets'])
+    asyncio.run(Executor(g).visit_all(g['targets']))
