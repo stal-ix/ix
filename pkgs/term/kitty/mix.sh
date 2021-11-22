@@ -33,6 +33,7 @@ export CFLAGS="-w ${CFLAGS}"
 
 {% block patch %}
 sed -e 's|encode_utf8|xxx_encode_utf8|g' -i glfw/input.c
+cat kitty/boss.py | grep -v 'run_update_check(' > _ && mv _ kitty/boss.py
 
 cat << EOF > kitty/fast_data_types.py
 from _fast_data_types import *
@@ -40,6 +41,8 @@ EOF
 {% endblock %}
 
 {% block build %}
+export PYTHONHOME=${lib_python_3_10}
+
 python3 setup.py linux-package
 
 cd build
@@ -51,7 +54,7 @@ cat - ${lib_python_3_10}/lib/python3.10/config-3.10-darwin/config.c << EOF | sed
 extern PyObject* PyInit_fast_data_types(void);
 EOF
 
-llvm-nm glfw*.o | grep glfw | grep -v '__' | sort | python3 $(command -v gen_dl_stubs.py) > dl.cpp
+llvm-nm glfw*.o | grep glfw | python3 $(command -v gen_dl_stubs.py) kitty {{mix.platform.target.os}} > dl.cpp
 
 clang -I${lib_python_3_10}/include/python3.10 dl.cpp config.c ${lib_python_3_10}/lib/python3.10/config-3.10-darwin/python.o fast*.o glfw*.o
 

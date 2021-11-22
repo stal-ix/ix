@@ -1,6 +1,10 @@
 import sys
 
 
+lib = sys.argv[1]
+tgt = sys.argv[2]
+
+
 def it_symbols():
     for l in sys.stdin.read().splitlines():
         l = l.strip()
@@ -15,7 +19,13 @@ def it_symbols():
             if ' U ' in l:
                 continue
 
-            _, typ, l = l.split(' ')
+            if '[' in l:
+                continue
+
+            try:
+                _, typ, l = l.split(' ')
+            except ValueError:
+                continue
 
             if typ.lower() == typ:
                 continue
@@ -50,6 +60,9 @@ def it_symbols():
         if l == 'main':
             continue
 
+        if tgt == 'darwin':
+            l = l[1:]
+
         yield l
 
 
@@ -60,7 +73,7 @@ print('#include <dlfcn.h>')
 for s in S:
     print(f'extern "C" void* {s};')
 
-print(f'DL_LIB("{sys.argv[1]}")')
+print(f'DL_LIB("{lib}")')
 
 for s in S:
     print(f'DL_S_2("{s}", &{s})')
