@@ -6,6 +6,7 @@ import subprocess
 
 import core.error as ce
 import core.cache as cc
+import core.utils as cu
 
 
 def bsh(s):
@@ -76,37 +77,42 @@ def iter_cmd(c):
         yield from c['cmd']
 
 
-def get_lock(n):
-    while True:
-        try:
-            return n['lock']
-        except KeyError:
-            n['lock'] = asyncio.Lock()
-
-
 async def gather(it):
     return await asyncio.gather(*list(it))
 
 
+def iter_nodes(nodes):
+    for n in cu.iter_uniq_list(nodes):
+        yield {
+            'n': n,
+            'l': asyncio.Lock(),
+        }
+
+
+def group_by_out(nodes):
+    by_out = {}
+
+    for n in iter_nodes(nodes):
+        for o in iter_out(n['n']):
+            assert o not in by_out
+
+            by_out[o] = n
+
+    return by_out
+
+
 class Executor:
-    def __init__(self, g):
+    def __init__(self, nodes):
         self.s = asyncio.Semaphore(2)
         self.c = set()
-
-        by_out = {}
-
-        for n in g['nodes']:
-            for o in iter_out(n):
-                by_out[o] = n
-
-        self.o = by_out
+        self.o = group_by_out(nodes)
 
     async def visit_all(self, l):
         await gather(self.visit_node(self.o[n]) for n in l)
 
     async def visit_node(self, n):
-        async with get_lock(n):
-            await self.visit_node_impl(n)
+        async with n['l']:
+            await self.visit_node_impl(n['n'])
 
     async def visit_node_impl(self, n):
         if all(self.exists(x) for x in iter_out(n)):
@@ -176,4 +182,4 @@ class Executor:
 
 
 def execute(g):
-    asyncio.run(Executor(g).visit_all(g['targets']))
+    asyncio.run(Executor(g['nodes']).visit_all(g['targets']))
