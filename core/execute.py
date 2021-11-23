@@ -127,11 +127,14 @@ class Executor:
     async def execute_node(self, n):
         for i in iter_in(n):
             if not self.exists(i):
-                raise ce.Error(f'{i} does not exixts')
+                raise ce.Error(f'{i} does not exists')
 
         async with self.s:
-            for c in iter_cmd(n):
-                await asyncio.to_thread(execute_cmd, c)
+            await asyncio.to_thread(self.execute_node_impl, n)
+
+    def execute_node_impl(self, n):
+        for c in iter_cmd(n):
+            execute_cmd(c)
 
         for o in iter_out(n):
             if not os.path.isfile(o):

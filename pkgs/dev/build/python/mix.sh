@@ -42,3 +42,6 @@ rm -rf ${out}/include
 rm -rf ${out}/lib/pkgconfig
 find ${out}/lib/ | grep '\.a$' | xargs rm
 {% endblock %}
+
+{% block env %}
+{% endblock %}

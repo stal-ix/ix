@@ -109,3 +109,7 @@ rm -rf ${out}/lib/python*/test
 ${out}/bin/python3 -c 'import configparser;'
 find ${out} | grep __pycache__ | xargs rm -rf
 {% endblock %}
+
+{% block env %}
+export CPPFLAGS="-I$(echo ${out}/include/python*) \${CPPFLAGS}"
+{% endblock %}
