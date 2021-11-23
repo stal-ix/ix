@@ -86,6 +86,7 @@ def iter_nodes(nodes):
         yield {
             'n': n,
             'l': asyncio.Lock(),
+            'v': False,
         }
 
 
@@ -112,7 +113,13 @@ class Executor:
 
     async def visit_node(self, n):
         async with n['l']:
-            await self.visit_node_impl(n['n'])
+            if not n['v']:
+                await self.visit_node_impl(n['n'])
+
+                for x in iter_out(n['n']):
+                    print(f'{x} complete')
+
+                n['v'] = True
 
     async def visit_node_impl(self, n):
         if all(self.exists(x) for x in iter_out(n)):
@@ -125,20 +132,14 @@ class Executor:
                 return
 
         await gather(self.visit_node(self.o[x]) for x in iter_in(n))
-        await self.execute_node(n)
+
+        async with self.s:
+            await asyncio.to_thread(self.execute_node, n)
 
         if cached:
             self.store(n)
 
-    async def execute_node(self, n):
-        for i in iter_in(n):
-            if not self.exists(i):
-                raise ce.Error(f'{i} does not exists')
-
-        async with self.s:
-            await asyncio.to_thread(self.execute_node_impl, n)
-
-    def execute_node_impl(self, n):
+    def execute_node(self, n):
         for c in iter_cmd(n):
             execute_cmd(c)
 
@@ -172,8 +173,6 @@ class Executor:
             return True
 
         if os.path.isfile(p):
-            print(f'{p} complete')
-
             self.c.add(p)
 
             return True
