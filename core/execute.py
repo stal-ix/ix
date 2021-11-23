@@ -107,9 +107,13 @@ class Executor:
         self.s = asyncio.Semaphore(2)
         self.c = set()
         self.o = group_by_out(nodes)
+        self.l = []
 
     async def visit_all(self, l):
         await gather(self.visit_node(self.o[n]) for n in l)
+
+        for x in self.l:
+            await x
 
     async def visit_node(self, n):
         async with n['l']:
@@ -128,7 +132,7 @@ class Executor:
         cached = n.get('cache', False)
 
         if cached:
-            if self.load(n):
+            if await asyncio.to_thread(self.load, n):
                 return
 
         await gather(self.visit_node(self.o[x]) for x in iter_in(n))
@@ -137,7 +141,7 @@ class Executor:
             await asyncio.to_thread(self.execute_node, n)
 
         if cached:
-            self.store(n)
+            self.l.append(asyncio.to_thread(self.store, n))
 
     def execute_node(self, n):
         for c in iter_cmd(n):
