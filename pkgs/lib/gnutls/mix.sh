@@ -11,6 +11,7 @@ lib/gmp/mix.sh
 lib/idn/2/mix.sh
 lib/tasn1/mix.sh
 lib/nettle/mix.sh
+lib/unbound/mix.sh
 {% if mix.platform.target.os == 'linux' %}
 lib/seccomp/mix.sh
 {% endif %}
@@ -22,6 +23,11 @@ lib/unistring/mix.sh
 
 {% block bld_tool %}
 gnu/which/mix.sh
+{% endblock %}
+
+{% block setup %}
+# conflict with libunbound
+export CPPFLAGS="-Dverbose=gnutls_verbose ${CPPFLAGS}"
 {% endblock %}
 
 {% block coflags %}
