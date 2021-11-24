@@ -104,7 +104,7 @@ def group_by_out(nodes):
 
 class Executor:
     def __init__(self, nodes):
-        self.s = asyncio.Semaphore(2)
+        self.s = asyncio.Semaphore(3)
         self.o = group_by_out(nodes)
         self.l = []
 
@@ -140,7 +140,7 @@ class Executor:
             await asyncio.to_thread(self.execute_node, n)
 
         if cached:
-            self.l.append(asyncio.to_thread(self.store, n))
+            self.l.append(asyncio.create_task(asyncio.to_thread(self.store, n)))
 
     def execute_node(self, n):
         for c in iter_cmd(n):
