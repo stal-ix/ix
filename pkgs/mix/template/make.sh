@@ -9,6 +9,7 @@ dev/build/make/mix.sh
 SHELL="$(command -v dash)"
 PREFIX="${out}"
 prefix="${out}"
+V=1
 
 {% block make_flags %}
 {% endblock %}
