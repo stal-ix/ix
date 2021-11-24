@@ -8,3 +8,13 @@ d703ed4913fcfb40021bd3d4d35e00b6
 {% block lib_deps %}
 lib/z/mix.sh
 {% endblock %}
+
+{% block bld_tool %}
+dev/build/automake/1.16.3/mix.sh
+dev/build/autoconf/2.69/mix.sh
+{% endblock %}
+
+{% block autoreconf %}
+libtoolize -c
+autoreconf -i
+{% endblock %}
