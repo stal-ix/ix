@@ -21,7 +21,3 @@ dev/build/automake/1.16.3/mix.sh
 {% block autoreconf %}
 dash bin/setup.sh
 {% endblock %}
-
-{% block patch %}
-cat libxo/xo_syslog.c | grep -v 'sysctl.h' > _ && mv _ libxo/xo_syslog.c
-{% endblock %}
