@@ -105,7 +105,6 @@ def group_by_out(nodes):
 class Executor:
     def __init__(self, nodes):
         self.s = asyncio.Semaphore(2)
-        self.c = set()
         self.o = group_by_out(nodes)
         self.l = []
 
@@ -126,7 +125,7 @@ class Executor:
                 n['v'] = True
 
     async def visit_node_impl(self, n):
-        if all(self.exists(x) for x in iter_out(n)):
+        if all(os.path.isfile(x) for x in iter_out(n)):
             return
 
         cached = n.get('cache', False)
@@ -171,17 +170,6 @@ class Executor:
         except Exception as e:
             if 'AWS_' not in str(e):
                 raise e
-
-    def exists(self, p):
-        if p in self.c:
-            return True
-
-        if os.path.isfile(p):
-            self.c.add(p)
-
-            return True
-
-        return False
 
 
 def execute(g):
