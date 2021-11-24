@@ -7,7 +7,7 @@ c27f608a4e1f302ec7ce42f1251c184e
 
 {% block bld_tool %}
 dev/lang/perl5/mix.sh
-dev/build/autoconf/2.71/mix.sh
+dev/build/autoconf/2/71/mix.sh
 {% endblock %}
 
 {% block std_env %}

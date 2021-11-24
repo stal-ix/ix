@@ -18,7 +18,7 @@ lib/{{curlssl or 'openssl'}}/mix.sh
 
 {% block bld_tool %}
 dev/doc/groff/mix.sh
-dev/build/autoconf/2.71/mix.sh
+dev/build/autoconf/2/71/mix.sh
 dev/build/automake/1.16.3/mix.sh
 {% endblock %}
 

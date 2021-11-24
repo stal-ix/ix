@@ -11,7 +11,7 @@ lib/z/mix.sh
 
 {% block bld_tool %}
 dev/build/automake/1.16.3/mix.sh
-dev/build/autoconf/2.69/mix.sh
+dev/build/autoconf/2/69/mix.sh
 {% endblock %}
 
 {% block autoreconf %}

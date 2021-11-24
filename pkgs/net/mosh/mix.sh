@@ -14,7 +14,7 @@ lib/openssl/mix.sh
 
 {% block bld_tool %}
 dev/tool/protoc/mix.sh
-dev/build/autoconf/2.69/mix.sh
+dev/build/autoconf/2/69/mix.sh
 dev/build/automake/1.16.3/mix.sh
 {% endblock %}
 

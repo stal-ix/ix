@@ -6,7 +6,7 @@ bce0b5de0cf2519a74fbfacead60369d
 {% endblock %}
 
 {% block bld_tool %}
-dev/build/autoconf/2.71/mix.sh
+dev/build/autoconf/2/71/mix.sh
 dev/build/automake/1.16.3/mix.sh
 {% endblock %}
 

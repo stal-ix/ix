@@ -6,7 +6,7 @@ http://www.oberhumer.com/opensource/ucl/download/ucl-1.03.tar.gz
 {% endblock %}
 
 {% block bld_tool %}
-dev/build/autoconf/2.69/mix.sh
+dev/build/autoconf/2/69/mix.sh
 dev/build/automake/1.16.3/mix.sh
 {% endblock %}
 
