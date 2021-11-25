@@ -23,10 +23,6 @@ dev/build/autoconf/2/71/mix.sh
 dev/build/automake/1.16.3/mix.sh
 {% endblock %}
 
-{% block autoreconf %}
-autoreconf -i
-{% endblock %}
-
 {% block coflags %}
 --enable-python-bindings=no
 --disable-python-bindings

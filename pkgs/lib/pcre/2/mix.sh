@@ -16,7 +16,7 @@ dev/build/automake/1.16.3/mix.sh
 {% endblock %}
 
 {% block autoreconf %}
-dash ./autogen.sh
+dash autogen.sh
 {% endblock %}
 
 {% block coflags %}

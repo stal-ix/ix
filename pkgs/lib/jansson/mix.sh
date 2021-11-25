@@ -14,7 +14,3 @@ dev/build/automake/1.16.3/mix.sh
 {% block std_env %}
 env/std/0/mix.sh
 {% endblock %}
-
-{% block autoreconf %}
-autoreconf -i
-{% endblock %}
