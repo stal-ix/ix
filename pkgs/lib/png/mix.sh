@@ -13,8 +13,3 @@ lib/z/mix.sh
 dev/build/automake/1.16.3/mix.sh
 dev/build/autoconf/2/69/mix.sh
 {% endblock %}
-
-{% block autoreconf %}
-libtoolize -c
-autoreconf -i
-{% endblock %}

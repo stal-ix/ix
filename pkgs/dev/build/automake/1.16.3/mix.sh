@@ -19,3 +19,6 @@ dev/lang/perl5/mix.sh
 dev/build/libtool/mix.sh
 dev/lang/m4/mix.sh
 {% endblock %}
+
+{% block autoreconf %}
+{% endblock %}

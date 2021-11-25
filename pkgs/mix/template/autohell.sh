@@ -7,6 +7,15 @@ dev/build/pkg-config/mix.sh
 
 {% block configure %}
 {% block autoreconf %}
+if command -v libtoolize; then
+    echo "RUN LIBTOOLIZE"
+    libtoolize -cif
+fi
+
+if command -v autoreconf; then
+    echo "RUN AUTORECONF"
+    autoreconf -if
+fi
 {% endblock %}
 
 {% block check_tools %}

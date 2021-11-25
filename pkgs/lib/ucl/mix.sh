@@ -11,6 +11,4 @@ dev/build/automake/1.16.3/mix.sh
 {% endblock %}
 
 {% block autoreconf %}
-#libtoolize -c
-#autoreconf -i
 {% endblock %}

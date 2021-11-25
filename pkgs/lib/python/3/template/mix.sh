@@ -15,9 +15,8 @@ dev/build/autoconf/archive/mix.sh
 {% endblock %}
 
 {% block autoreconf %}
-libtoolize -c
-autoreconf -i
-sed -e 's/MULTIARCH=\$.*/MULTIARCH=/' -i ./configure
+{{super()}}
+sed -e 's/MULTIARCH=\$.*/MULTIARCH=/' -i configure
 {% endblock %}
 
 {% block toolconf %}

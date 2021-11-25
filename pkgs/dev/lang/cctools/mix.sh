@@ -29,8 +29,7 @@ cd cctools
 {% endblock %}
 
 {% block autoreconf %}
-libtoolize -c --force
-autoreconf -i
+{{super()}}
 sed -e 's/__arm__/__eat_shit__/' -i configure
 {% endblock %}
 
