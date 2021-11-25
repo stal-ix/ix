@@ -18,5 +18,5 @@ export CPPFLAGS="-Dstat64=stat ${CPPFLAGS}"
 {% endblock %}
 
 {% block invoke_configure %}
-dash ./configure --prefix="${out}" --with-libedit=yes
+dash configure --prefix="${out}" --with-libedit=yes
 {% endblock %}

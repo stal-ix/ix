@@ -10,7 +10,7 @@ env/std/0/mix.sh
 {% endblock %}
 
 {% block configure %}
-dash ./configure --static --64 --prefix="${out}"
+dash configure --static --64 --prefix="${out}"
 {% endblock %}
 
 {% block make_flags %}

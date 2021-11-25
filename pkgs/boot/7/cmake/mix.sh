@@ -21,7 +21,7 @@ boot/7/samurai/mix.sh
 {% endblock %}
 
 {% block build %}
-dash ./bootstrap \
+dash bootstrap \
     --prefix=${out}         \
     --parallel=${make_thrs} \
     --                      \

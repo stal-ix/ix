@@ -15,7 +15,7 @@ boot/5/env/std/mix.sh
 
 {% block configure %}
 {{super()}}
-(cd glib && dash ./configure ${COFLAGS} --prefix=${out} --with-libiconv=gnu --srcdir=.)
+(cd glib && dash configure ${COFLAGS} --prefix=${out} --with-libiconv=gnu --srcdir=.)
 {% endblock %}
 
 {% block build %}

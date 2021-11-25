@@ -10,7 +10,7 @@ dev/doc/groff/mix.sh
 {% endblock %}
 
 {% block build %}
-dash ./Build.sh
+dash Build.sh
 {% endblock %}
 
 {% block install %}

@@ -22,7 +22,7 @@ env/std/0/mix.sh
 {% endblock %}
 
 {% block autoreconf %}
-dash ./autogen.sh
+dash autogen.sh
 {% endblock %}
 
 {% block env %}
