@@ -7,7 +7,7 @@
 {% block bld_libs %}
 dev/debug/gdb/py/mix.sh(edit=readline)
 {{'lib/linux/mix.sh' | linux}}
-lib/intel-pt/mix.sh
+lib/intel/pt/mix.sh
 lib/intl/mix.sh
 lib/expat/mix.sh
 lib/curses/mix.sh
