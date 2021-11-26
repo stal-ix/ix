@@ -7,7 +7,7 @@ https://ftp.gnu.org/gnu/libidn/libidn-1.38.tar.gz
 
 {% block lib_deps %}
 lib/intl/mix.sh
-lib/unistring/mix.sh
+lib/iconv/mix.sh
 {% endblock %}
 
 {% block env %}
