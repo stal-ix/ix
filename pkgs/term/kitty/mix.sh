@@ -34,6 +34,10 @@ export PYTHONHOME=${lib_python_3_10}
 {% endblock %}
 
 {% block patch %}
+(base64 -d | patch -p1) << EOF
+{% include 'p00.diff/base64' %}
+EOF
+
 sed -e 's|encode_utf8|xxx_encode_utf8|g' -i glfw/input.c
 cat kitty/boss.py | grep -v 'run_update_check(' > _ && mv _ kitty/boss.py
 

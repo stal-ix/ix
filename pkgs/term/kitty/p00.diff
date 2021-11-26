@@ -1,0 +1,13 @@
+diff --git a/kitty/fonts/core_text.py b/kitty/fonts/core_text.py
+index f671bca..38dfee5 100644
+--- a/kitty/fonts/core_text.py
++++ b/kitty/fonts/core_text.py
+@@ -75,7 +75,7 @@ def score(candidate: CoreTextFont) -> Tuple[int, int, int, float]:
+     for selector in ('ps_map', 'full_map'):
+         candidates = font_map[selector].get(q)
+         if candidates:
+-            possible = sorted(candidates, key=score)[-1]
++            return sorted(candidates, key=score)[-1]
+             if possible != ignore_face:
+                 return possible
+ 
