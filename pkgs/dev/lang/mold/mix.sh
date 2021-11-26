@@ -7,6 +7,7 @@ https://github.com/rui314/mold/archive/72cea9a0bfcdee7cb17cc34bed9aacdea2f80adf.
 
 {% block bld_libs %}
 lib/z/mix.sh
+lib/c++/mix.sh
 lib/xxhash/mix.sh
 lib/intel/tbb/mix.sh
 lib/openssl/mix.sh
