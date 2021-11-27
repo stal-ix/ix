@@ -24,7 +24,11 @@ def execute_cmd(c):
     stdin = c.get('stdin', '')
 
     try:
-        return subprocess.run(c['args'], input=stdin.encode() or None, env=env, check=True)
+        res = subprocess.run(c['args'], input=stdin.encode() or None, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, env=env)
+
+        print(res.stdout.decode())
+
+        res.check_returncode()
     except Exception as e:
         def iter_lines():
             yield '____|' + descr

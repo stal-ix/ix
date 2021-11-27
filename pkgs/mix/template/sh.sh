@@ -50,13 +50,17 @@ IFS=${OFS}
 
 (
     set -eu
+
 # suc
 {% block sh_script %}
 {% endblock %}
 # euc
 )
 
-{% block cleanup_pkg %}rm -rf ${out}/lib/*.so* ${out}/lib/*.la* ${out}/lib/*.dylib* || true{% endblock %}
+{% block cleanup_pkg %}
+rm -rf ${out}/lib/*.so* ${out}/lib/*.la* ${out}/lib/*.dylib* || true
+{% endblock %}
+
 rm -rf ${tmp}
 
 {% block sh_script_end %}

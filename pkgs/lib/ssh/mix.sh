@@ -10,3 +10,7 @@ lib/z/mix.sh
 lib/c++/mix.sh
 lib/openssl/mix.sh
 {% endblock %}
+
+{% block env %}
+export COFLAGS="--with-libssh=${out} \${COFLAGS}"
+{% endblock %}

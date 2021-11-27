@@ -12,6 +12,7 @@ lib/idn/2/mix.sh
 lib/zstd/mix.sh
 lib/brotli/mix.sh
 lib/nghttp2/mix.sh
+lib/ssh/2/mix.sh
 lib/{{curlssl or 'openssl'}}/mix.sh
 {{'lib/darwin/framework/SystemConfiguration/mix.sh' | darwin}}
 {% endblock %}
