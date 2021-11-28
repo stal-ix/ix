@@ -24,7 +24,7 @@ def execute_cmd(c):
     stdin = c.get('stdin', '')
 
     try:
-        res = subprocess.run(c['args'], input=stdin.encode() or None, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, env=env)
+        return subprocess.run(c['args'], input=stdin.encode() or None, env=env, check=True)
 
         print(res.stdout.decode())
 

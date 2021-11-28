@@ -54,5 +54,7 @@ bash Configure -des    \
     -Uusesfio          \
     -Duseshrplib=false \
     -Dusedl=false      \
-    -Dcc=gcc
+    -Duselibc=c        \
+    -Dlibc=c           \
+    -Dcc=clang
 {% endblock %}
