@@ -42,8 +42,6 @@ ${AR} q libmain.a main.o
 {% endblock %}
 
 {% block meson_flags %}
---libdir=${out}/lib
--Ddefault_library=static
 -Diconv=external
 {% endblock %}
 

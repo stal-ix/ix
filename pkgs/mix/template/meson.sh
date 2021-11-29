@@ -7,7 +7,10 @@ dev/build/meson/mix.sh
 {% endblock %}
 
 {% set meson_flags %}
--Dprefix=${out}
+--libdir="${out}/lib"
+
+-Dprefix="${out}"
+-Ddefault_library=static
 
 {% if mix.platform.target.os == 'darwin' %}
 -Db_asneeded=false
