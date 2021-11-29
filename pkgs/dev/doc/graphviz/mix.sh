@@ -12,10 +12,18 @@ dev/build/automake/1.16.3/mix.sh
 
 {% block bld_libs %}
 lib/z/mix.sh
+lib/gd/mix.sh
 lib/expat/mix.sh
 lib/freetype/mix.sh
 lib/fontconfig/mix.sh
 {% endblock %}
 
 {% block touch_yl %}
+{% endblock %}
+
+{% block install %}
+{{super()}}
+
+cd ${out}/bin && ln -s dot_static dot
+rm -rf ${out}/lib ${out}/include
 {% endblock %}
