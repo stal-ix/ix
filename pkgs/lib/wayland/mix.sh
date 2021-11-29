@@ -12,6 +12,9 @@ dev/build/pkg-config/mix.sh
 
 {% block lib_deps %}
 lib/ffi/mix.sh
+{% endblock %}
+
+{% block bld_libs %}
 lib/expat/mix.sh
 lib/xml2/mix.sh
 {% endblock %}
