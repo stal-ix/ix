@@ -8,9 +8,10 @@ https://wayland.freedesktop.org/releases/wayland-1.19.0.tar.xz
 {% block bld_tool %}
 dev/build/cmake/mix.sh
 dev/build/pkg-config/mix.sh
-dev/doc/doxygen/mix.sh
-dev/doc/graphviz/mix.sh
-dev/doc/xmlto/mix.sh
+#dev/doc/doxygen/mix.sh
+#dev/doc/graphviz/mix.sh
+#dev/doc/xmlto/mix.sh
+#lib/xslt/mix.sh
 {% endblock %}
 
 {% block lib_deps %}
