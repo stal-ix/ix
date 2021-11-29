@@ -7,7 +7,7 @@ dev/build/cmake/mix.sh
 
 {% set cmflags %}
 -DCMAKE_INSTALL_PREFIX="${out}"
--DCMAKE_INSTALL_LIBDIR=lib
+-DCMAKE_INSTALL_LIBDIR="${out}/lib"
 -DCMAKE_C_COMPILER="$(command -v clang)"
 -DCMAKE_CXX_COMPILER="$(command -v clang++)"
 -DCMAKE_AR="$(command -v ar)"

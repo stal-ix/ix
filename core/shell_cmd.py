@@ -1,6 +1,7 @@
 import os
 import zipfile
 import tarfile
+import subprocess
 
 import urllib.error as ue
 import urllib.request as ur
@@ -53,10 +54,21 @@ def fetch_url_impl(url, out):
         print('')
 
 
+def fetch_url_wget(url, out):
+    return subprocess.check_call(['/usr/bin/wget', '-O', out, url], shell=False)
+
+
 def fetch_url(url, out):
-    while True:
+    def iter_meth():
+        while True:
+            yield fetch_url_impl
+            yield fetch_url_wget
+
+    for meth in iter_meth():
         try:
-            return fetch_url_impl(url, out)
+            return meth(url, out)
         except Exception as e:
             if '404' in str(e):
                 raise ce.Error(f'can not fetch {url} into {out}', exception=e)
+
+            print(e)
