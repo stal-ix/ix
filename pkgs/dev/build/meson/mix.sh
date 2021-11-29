@@ -1,8 +1,8 @@
 {% extends '//mix/template/std.sh' %}
 
 {% block fetch %}
-https://github.com/mesonbuild/meson/releases/download/0.58.0/meson-0.58.0.tar.gz
-18ac55e3d6a5acb17b5737eb2a15bb5b
+https://github.com/mesonbuild/meson/archive/refs/tags/0.60.2.tar.gz
+a5d6cfcf776e145f2054d5eefb4bc110
 {% endblock %}
 
 {% block bld_tool %}
@@ -21,7 +21,7 @@ dev/build/python/mix.sh
 cd ${out}
 
 (
-    ${untar} ${src}/meson*
+    ${untar} ${src}/0*
 
     ln -s meson* meson
     mkdir bin && cd bin
