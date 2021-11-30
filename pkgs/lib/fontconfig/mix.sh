@@ -19,5 +19,6 @@ dev/build/automake/1.16.3/mix.sh
 lib/intl/mix.sh
 lib/iconv/mix.sh
 lib/expat/mix.sh
+lib/json/c/mix.sh
 lib/freetype/mix.sh
 {% endblock %}
