@@ -25,27 +25,61 @@ dev/build/pkg-config/mix.sh
 {% endblock %}
 
 {% block meson_flags %}
--Dllvm=disabled
--Dshared-llvm=disabled
 -Ddri-drivers=
+-Dvulkan-drivers=
 -Dgallium-drivers=swrast
--Dgallium-nine=false
--Dshared-glapi=false
--Dglx=disabled
+
 -Dvalgrind=disabled
 -Dlibunwind=disabled
+
 -Dplatforms=wayland
--Dvulkan-drivers=
+
+-Degl=true
+-Dglx=disabled
+-Dgles2=true
+-Dopengl=true
+-Dgallium-nine=false
+
+-Dtools=glsl
+{% endblock %}
+
+{% block setup %}
+export CPPFLAGS="-w ${CPPFLAGS}"
 {% endblock %}
 
 {% block patch %}
+cat << EOF > fix.py
+import sys
+
+for l in sys.stdin.read().split('\n'):
+    l = l.replace('shared_library', 'static_library')
+
+    if 'soversion : ' in l:
+        continue
+
+    if 'darwin_versions' in l:
+        continue
+
+    if 'name_prefix : ' in l:
+        continue
+
+    if 'vs_module_defs : ' in l:
+        continue
+
+    if '  version : ' in l:
+        if '.' in l and "'" in l:
+            continue
+
+        if 'egl_' in l:
+            continue
+
+    print(l)
+EOF
+
 find . | grep meson.build | while read l; do
-    sed -e 's|shared_library|static_library|g' -i ${l}
+    cp ${l} ${l}.old
+    cat ${l}.old | python3 fix.py > ${l}
 done
 
-cat src/gbm/meson.build | grep -v 'version : ' > _ && mv _ src/gbm/meson.build
-{% endblock %}
-
-{% block install %}
 exit 1
 {% endblock %}
