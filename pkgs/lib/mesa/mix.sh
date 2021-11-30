@@ -48,38 +48,7 @@ export CPPFLAGS="-w ${CPPFLAGS}"
 {% endblock %}
 
 {% block patch %}
-cat << EOF > fix.py
-import sys
-
-for l in sys.stdin.read().split('\n'):
-    l = l.replace('shared_library', 'static_library')
-
-    if 'soversion : ' in l:
-        continue
-
-    if 'darwin_versions' in l:
-        continue
-
-    if 'name_prefix : ' in l:
-        continue
-
-    if 'vs_module_defs : ' in l:
-        continue
-
-    if '  version : ' in l:
-        if '.' in l and "'" in l:
-            continue
-
-        if 'egl_' in l:
-            continue
-
-    print(l)
-EOF
-
 find . | grep meson.build | while read l; do
-    cp ${l} ${l}.old
-    cat ${l}.old | python3 fix.py > ${l}
+    sed -e 's|shared_library|library|g' -i ${l}
 done
-
-exit 1
 {% endblock %}
