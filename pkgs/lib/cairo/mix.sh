@@ -13,6 +13,7 @@ lib/darwin/framework/CoreGraphics/mix.sh
 lib/png/mix.sh
 lib/lzo/mix.sh
 lib/freetype/mix.sh
+lib/fontconfig/mix.sh
 lib/pixman/mix.sh
 {% endblock %}
 
@@ -23,5 +24,11 @@ dev/build/automake/1.16.3/mix.sh
 {% endblock %}
 
 {% block coflags %}
+--enable-ft=yes
+--enable-fc=yes
 --enable-trace=no
+{% endblock %}
+
+{% block setup %}
+export ax_cv_c_float_words_bigendian=no
 {% endblock %}

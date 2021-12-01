@@ -22,3 +22,9 @@ lib/wayland/protocols/mix.sh
 -Denable-x11=false
 -Denable-docs=false
 {% endblock %}
+
+{% block install %}
+{{super()}}
+
+mkdir ${out}/share/X11 && cp -R test/data ${out}/share/X11/xkb
+{% endblock %}

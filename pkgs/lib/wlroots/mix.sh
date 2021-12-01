@@ -31,7 +31,3 @@ dev/build/pkg-config/mix.sh
 {% block setup %}
 export CPPFLAGS="-w -DNSEC_PER_SEC=WLR_NSEC_PER_SEC ${CPPFLAGS}"
 {% endblock %}
-
-{% block postinstall %}
-exit 1
-{% endblock %}
