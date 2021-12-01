@@ -22,7 +22,3 @@ lib/glib/bin/mix.sh
 {% block setup %}
 export CPPFLAGS="-w ${CPPFLAGS}"
 {% endblock %}
-
-{% block meson_flags %}
-
-{% endblock %}

@@ -17,6 +17,10 @@ lib/darwin/framework/Foundation/mix.sh
 {% endif %}
 {% endblock %}
 
+{% block bld_libs %}
+lib/c++/mix.sh
+{% endblock %}
+
 {% block std_env %}
 {{'dev/lang/cctools/mix.sh' | darwin}}
 dev/build/meson/mix.sh
@@ -24,27 +28,12 @@ env/std/0/mix.sh
 {% endblock %}
 
 {% block setup %}
-export LDFLAGS="-L${PWD} -lmain ${LDFLAGS}"
 export CPPFLAGS="-w -D_GNU_SOURCE=1 -I${PWD}/inc ${CPPFLAGS}"
-{% endblock %}
-
-{% block patch %}
-echo 'int main() {}' > glib/tests/cxx.cpp
-echo 'int main() {}' > tests/cxx-test.cpp
-{% endblock %}
-
-{% block configure %}
-${CC} -c -o main.o -x c - << EOF
-int main() {}
-EOF
-
-${AR} q libmain.a main.o
-
-{{super()}}
 {% endblock %}
 
 {% block meson_flags %}
 -Diconv=external
+-Dtests=false
 {% endblock %}
 
 {% block postinstall %}

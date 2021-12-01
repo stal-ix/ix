@@ -8,12 +8,12 @@ dc423f8072d20964ea6c05708a647803
 {% block bld_tool %}
 dev/lang/flex/mix.sh
 dev/lang/bison/3/8/mix.sh
+lib/wayland/protocols/mix.sh
 {% endblock %}
 
 {% block lib_deps %}
 lib/xml2/mix.sh
 lib/wayland/mix.sh
-lib/wayland/protocols/mix.sh
 {% endblock %}
 
 {% block meson_flags %}

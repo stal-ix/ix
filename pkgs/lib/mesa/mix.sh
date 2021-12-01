@@ -10,7 +10,7 @@ lib/z/mix.sh
 lib/drm/mix.sh
 lib/zstd/mix.sh
 lib/expat/mix.sh
-lib/wayland/protocols/mix.sh
+lib/wayland/mix.sh
 {% endblock %}
 
 {% block bld_libs %}
@@ -18,8 +18,9 @@ pypi/Mako/mix.sh
 {% endblock %}
 
 {% block bld_tool %}
-dev/lang/bison/3/8/mix.sh
 dev/lang/flex/mix.sh
+dev/lang/bison/3/8/mix.sh
+lib/wayland/protocols/mix.sh
 {% endblock %}
 
 {% block meson_flags %}
