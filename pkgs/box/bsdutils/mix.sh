@@ -10,7 +10,6 @@ box/bsdutils/libs/mix.sh(openssl=1)
 {% endblock %}
 
 {% block bld_tool %}
-dev/build/pkg-config/mix.sh
 dev/lang/flex/mix.sh
 dev/lang/byacc/mix.sh
 {% endblock %}

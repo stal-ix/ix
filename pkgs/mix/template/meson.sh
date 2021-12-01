@@ -3,6 +3,8 @@
 {% block std_env %}
 {{'dev/lang/cctools/mix.sh' | darwin}}
 dev/build/meson/mix.sh
+dev/build/cmake/mix.sh
+dev/build/pkg-config/mix.sh
 {{super()}}
 {% endblock %}
 
@@ -23,4 +25,12 @@ dev/build/meson/mix.sh
 
 {% block configure %}
 meson {{mix.fix_list(meson_flags)}} {{ninja_build_dir}}
+{% endblock %}
+
+{% block prepatch %}
+{{super()}}
+
+find . | grep meson.build | while read l; do
+    sed -e 's|shared_library|library|g' -i ${l}
+done
 {% endblock %}

@@ -6,8 +6,6 @@ dc423f8072d20964ea6c05708a647803
 {% endblock %}
 
 {% block bld_tool %}
-dev/build/cmake/mix.sh
-dev/build/pkg-config/mix.sh
 dev/lang/flex/mix.sh
 dev/lang/bison/3/8/mix.sh
 {% endblock %}

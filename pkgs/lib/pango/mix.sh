@@ -16,8 +16,6 @@ lib/fontconfig/mix.sh
 {% endblock %}
 
 {% block bld_tool %}
-dev/build/cmake/mix.sh
-dev/build/pkg-config/mix.sh
 lib/glib/bin/mix.sh
 {% endblock %}
 

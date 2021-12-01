@@ -9,17 +9,6 @@ https://github.com/linuxwacom/libwacom/archive/refs/tags/libwacom-1.12.tar.gz
 lib/udev/g/mix.sh
 {% endblock %}
 
-{% block bld_tool %}
-dev/build/cmake/mix.sh
-dev/build/pkg-config/mix.sh
-{% endblock %}
-
 {% block meson_flags %}
 -Dtests=disabled
-{% endblock %}
-
-{% block patch %}
-find . | grep meson.build | while read l; do
-    cat ${l} | sed -e 's|shared_library|library|g' > _ && mv _ ${l}
-done
 {% endblock %}

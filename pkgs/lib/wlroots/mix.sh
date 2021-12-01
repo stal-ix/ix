@@ -17,11 +17,6 @@ lib/pixman/mix.sh
 lib/seat/mix.sh
 {% endblock %}
 
-{% block bld_tool %}
-dev/build/cmake/mix.sh
-dev/build/pkg-config/mix.sh
-{% endblock %}
-
 {% block meson_flags %}
 -Dxwayland=disabled
 -Drenderers=gles2

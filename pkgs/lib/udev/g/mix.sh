@@ -6,8 +6,6 @@ a7783083cd74957d3a727ddc4737ee84
 {% endblock %}
 
 {% block bld_tool %}
-dev/build/cmake/mix.sh
-dev/build/pkg-config/mix.sh
 lib/glib/bin/mix.sh
 {% endblock %}
 

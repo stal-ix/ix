@@ -15,11 +15,6 @@ lib/cairo/mix.sh
 lib/pango/mix.sh
 {% endblock %}
 
-{% block bld_tool %}
-dev/build/cmake/mix.sh
-dev/build/pkg-config/mix.sh
-{% endblock %}
-
 {% block setup %}
 export CPPFLAGS="-w -Dlist_insert=sway_list_insert ${CPPFLAGS}"
 {% endblock %}

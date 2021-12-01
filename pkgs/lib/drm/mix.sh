@@ -10,11 +10,6 @@ lib/linux/mix.sh
 lib/atomicops/mix.sh
 {% endblock %}
 
-{% block bld_tool %}
-dev/build/cmake/mix.sh
-dev/build/pkg-config/mix.sh
-{% endblock %}
-
 {% block meson_flags %}
 -Dintel=false
 -Dvalgrind=false

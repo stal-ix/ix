@@ -17,7 +17,9 @@ lib/darwin/framework/Foundation/mix.sh
 {% endif %}
 {% endblock %}
 
-{% block std_box %}
+{% block std_env %}
+{{'dev/lang/cctools/mix.sh' | darwin}}
+dev/build/meson/mix.sh
 env/std/0/mix.sh
 {% endblock %}
 

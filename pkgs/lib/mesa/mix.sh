@@ -20,8 +20,6 @@ pypi/Mako/mix.sh
 {% block bld_tool %}
 dev/lang/bison/3/8/mix.sh
 dev/lang/flex/mix.sh
-dev/build/cmake/mix.sh
-dev/build/pkg-config/mix.sh
 {% endblock %}
 
 {% block meson_flags %}
@@ -47,8 +45,12 @@ dev/build/pkg-config/mix.sh
 export CPPFLAGS="-w ${CPPFLAGS}"
 {% endblock %}
 
-{% block patch %}
-find . | grep meson.build | while read l; do
-    sed -e 's|shared_library|library|g' -i ${l}
-done
+{% block install %}
+{{super()}}
+
+# TODO
+>empty.c
+clang -c empty.c
+ar q empty.a empty.o
+mv empty.a ${out}/lib/libGLESv1_CM.a
 {% endblock %}
