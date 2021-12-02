@@ -33,17 +33,21 @@ lib/wayland/protocols/mix.sh
 
 -Dplatforms=wayland
 
--Degl=true
+-Degl=enabled
 -Dglx=disabled
--Dgles2=true
+-Dgles2=enabled
 -Dopengl=true
 -Dgallium-nine=false
 
 -Dtools=glsl
 {% endblock %}
 
-{% block setup %}
-export CPPFLAGS="-w ${CPPFLAGS}"
+{% block patch %}
+cd src/gallium/frontends/dri
+
+for l in *.c *.h; do
+    sed -e 's|dri2_lookup_egl_image|dri2_lookup_egl_image_xxx|g' -i ${l}
+done
 {% endblock %}
 
 {% block install %}
@@ -54,4 +58,8 @@ export CPPFLAGS="-w ${CPPFLAGS}"
 clang -c empty.c
 ar q empty.a empty.o
 mv empty.a ${out}/lib/libGLESv1_CM.a
+{% endblock %}
+
+{% block env %}
+export COFLAGS="--with-gallium=${out} \${COFLAGS}"
 {% endblock %}

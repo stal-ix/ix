@@ -15,6 +15,23 @@ lib/cairo/mix.sh
 lib/pango/mix.sh
 {% endblock %}
 
+{% block bld_tool %}
+lib/dlfcn/scripts/mix.sh
+{% endblock %}
+
 {% block setup %}
-export CPPFLAGS="-w -Dlist_insert=sway_list_insert ${CPPFLAGS}"
+export CPPFLAGS="-Dlist_insert=sway_list_insert -Dseat_create=sway_seat_create -Dseat_destroy=sway_seat_destroy -Dserver_init=sway_server_init ${CPPFLAGS}"
+
+python3 $(command -v gen_dl_stubs.py) opengl {{mix.platform.target.os}} << EOF > dl.cpp
+__driDriverGetExtensions_kms_swrast
+EOF
+
+cat dl.cpp
+
+clang ${CPPFLAGS} ${CXXFLAGS} ${CFLAGS} -c dl.cpp
+llvm-ar q libxxx.a dl.o
+llvm-nm dl.o
+cp ${lib_mesa}/lib/dri/kms_swrast_dri.so libyyy.a
+llvm-nm libyyy.a | grep __dri
+export LDFLAGS="${PWD}/dl.o ${PWD}/libyyy.a ${LDFLAGS}"
 {% endblock %}

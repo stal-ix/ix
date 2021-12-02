@@ -42,9 +42,6 @@ def it_symbols():
         if 'GCC_' in l:
             continue
 
-        if l.startswith('__'):
-            continue
-
         if l == '_fini':
             continue
 

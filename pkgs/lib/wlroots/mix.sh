@@ -27,5 +27,5 @@ lib/wayland/protocols/mix.sh
 {% endblock %}
 
 {% block setup %}
-export CPPFLAGS="-w -DNSEC_PER_SEC=WLR_NSEC_PER_SEC ${CPPFLAGS}"
+export CPPFLAGS="-DNSEC_PER_SEC=WLR_NSEC_PER_SEC ${CPPFLAGS}"
 {% endblock %}

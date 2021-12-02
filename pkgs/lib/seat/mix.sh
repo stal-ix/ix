@@ -12,3 +12,7 @@ lib/linux/mix.sh
 {% block setup %}
 export CPPFLAGS="-w ${CPPFLAGS}"
 {% endblock %}
+
+{% block meson_flags %}
+-Dlibseat-builtin=enabled
+{% endblock %}

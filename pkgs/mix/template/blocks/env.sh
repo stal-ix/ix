@@ -14,6 +14,10 @@ EOF
         echo 'export PKG_CONFIG_PATH="'${out}'/lib/pkgconfig:${PKG_CONFIG_PATH}"'
     fi
 
+    if test -d ${out}/share/pkgconfig; then
+        echo 'export PKG_CONFIG_PATH="'${out}'/share/pkgconfig:${PKG_CONFIG_PATH}"'
+    fi
+
     if test -d ${out}/share/aclocal; then
         echo 'export ACLOCAL_PATH="'${out}'/share/aclocal:${ACLOCAL_PATH}"'
     fi

@@ -12,9 +12,10 @@ lib/darwin/framework/CoreGraphics/mix.sh
 {% endif %}
 lib/png/mix.sh
 lib/lzo/mix.sh
+lib/pixman/mix.sh
+lib/opengl/mix.sh
 lib/freetype/mix.sh
 lib/fontconfig/mix.sh
-lib/pixman/mix.sh
 {% endblock %}
 
 {% block bld_tool %}
@@ -27,6 +28,8 @@ dev/build/automake/1.16.3/mix.sh
 --enable-ft=yes
 --enable-fc=yes
 --enable-trace=no
+--enable-egl=auto
+--enable-glesv2=auto
 {% endblock %}
 
 {% block setup %}

@@ -12,5 +12,4 @@ sed -e 's| SHARED | STATIC |' -i src/CMakeLists.txt
 {% block install %}
 {{super()}}
 rm ${out}/lib/libyajl_s.a
-mv ${out}/share/pkgconfig ${out}/lib/
 {% endblock %}

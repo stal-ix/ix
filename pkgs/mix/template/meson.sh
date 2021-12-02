@@ -13,6 +13,7 @@ dev/build/pkg-config/mix.sh
 
 -Dprefix="${out}"
 -Ddefault_library=static
+-Dwerror=false
 
 {% if mix.platform.target.os == 'darwin' %}
 -Db_asneeded=false

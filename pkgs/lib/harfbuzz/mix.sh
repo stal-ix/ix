@@ -23,12 +23,7 @@ lib/cairo/mix.sh
 dev/tool/ragel/6/mix.sh
 {% endblock %}
 
-{% block setup %}
-export CFLAGS="-w ${CFLAGS}"
-{% endblock %}
-
 {% block meson_flags %}
--Ddefault_library=static
 {% if mix.platform.target.os == 'darwin' %}
 -Dcoretext=enabled
 {% endif %}

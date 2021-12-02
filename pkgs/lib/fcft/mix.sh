@@ -1,20 +1,19 @@
 {% extends '//mix/template/meson.sh' %}
 
 {% block fetch %}
-https://download.gnome.org/sources/pango/1.49/pango-1.49.4.tar.xz
-190bd00327ba5cff928ca06f13756d4f
+https://codeberg.org/dnkl/fcft/archive/2.5.0.tar.gz
+1f0f7e7e19e298781b93052803a36e56
 {% endblock %}
 
 {% block lib_deps %}
-lib/glib/mix.sh
-lib/cairo/mix.sh
-lib/fribidi/mix.sh
+lib/tllist/mix.sh
+lib/pixman/mix.sh
 lib/freetype/mix.sh
 lib/harfbuzz/mix.sh
-lib/json/glib/mix.sh
+lib/utf8proc/mix.sh
 lib/fontconfig/mix.sh
 {% endblock %}
 
 {% block bld_tool %}
-lib/glib/bin/mix.sh
+dev/doc/scdoc/mix.sh
 {% endblock %}
