@@ -20,3 +20,7 @@ lib/evdev/mix.sh
 -Ddebug-gui=false
 -Dtests=false
 {% endblock %}
+
+{% block setup %}
+export CPPFLAGS="-w ${CPPFLAGS}"
+{% endblock %}
