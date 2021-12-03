@@ -19,7 +19,10 @@ TEST_LDFLAGS="-L. libz.a"
 
 {% block install %}
 {{super()}}
-mkdir ${out}/bin && cp minigzip ${out}/bin/
+mkdir ${out}/bin
+cp minigzip ${out}/bin/
+cd ${out}/bin
+ln -s minigzip gzip
 {% endblock %}
 
 {% block env %}

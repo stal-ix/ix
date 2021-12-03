@@ -6,7 +6,7 @@ https://static.rust-lang.org/dist/rust-1.56.1-{{mix.platform.host.gnu_arch}}-app
 {% endblock %}
 
 {% block bld_tool %}
-tool/compress/bsdtar/mix.sh
+lib/archive/mix.sh
 {% endblock %}
 
 {% block unpack %}

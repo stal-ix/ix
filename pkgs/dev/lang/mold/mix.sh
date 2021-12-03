@@ -14,7 +14,7 @@ lib/openssl/mix.sh
 {% endblock %}
 
 {% block bld_tool %}
-tool/compress/minigzip/mix.sh
+lib/z/mix.sh
 {% endblock %}
 
 {% block make_flags %}

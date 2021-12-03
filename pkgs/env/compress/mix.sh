@@ -3,7 +3,7 @@
 {% block run_deps %}
 tool/pv/mix.sh
 tool/compress/unzip/mix.sh
-tool/compress/bsdtar/mix.sh
+lib/archive/mix.sh
 {% endblock %}
 
 {% block env %}

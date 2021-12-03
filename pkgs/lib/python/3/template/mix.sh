@@ -99,18 +99,22 @@ EOF
 {% endblock %}
 
 {% block test %}
-{% if not lib %}${out}/bin/python3 -c 'import zlib; import multiprocessing; import cProfile;'
+{% if not lib %}
+${out}/bin/python3 -c 'import zlib; import multiprocessing; import cProfile;'
 {% block extra_tests %}
 ${out}/bin/python3 -c 'import hashlib; import ssl; import lzma; import bz2; import sqlite3; import decimal; import ctypes;'
-{% endblock %}{% endif %}
+{% endblock %}
+{% endif %}
 {% endblock %}
 
 {% block install %}
 {{super()}}
 
-cp -R Tools/freeze ${out}/bin/
+cp -R Tools/freeze ${out}/share/
+
 rm -rf ${out}/lib/python*/test
-${out}/bin/python3 -c 'import configparser;'
+rm -rf ${out}/bin/lib/python*/test
+
 find ${out} | grep __pycache__ | xargs rm -rf
 {% endblock %}
 
