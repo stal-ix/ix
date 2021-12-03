@@ -28,3 +28,8 @@ rm src/parse-gram.c src/parse-gram.h
 {% block bison_patch %}
 {% endblock %}
 {% endblock %}
+
+{% block install %}
+{{super()}}
+rm -rf ${out}/lib ${out}/include
+{% endblock %}

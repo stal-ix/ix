@@ -14,3 +14,8 @@ dev/lang/m4/mix.sh
 dev/doc/texinfo/mix.sh
 boot/final/env/bison/mix.sh
 {% endblock %}
+
+{% block install %}
+{{super()}}
+rm -rf ${out}/lib ${out}/include
+{% endblock %}
