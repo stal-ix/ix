@@ -34,10 +34,14 @@ def parse_pkg_name(v):
     return r
 
 
+def dict_update(d, v):
+    return dict(itertools.chain(d.items(), v))
+
+
 def make_selector(v, flags):
     v = parse_pkg_name(v)
 
-    v['flags'] = dict(itertools.chain(flags.items(), v.get('flags', {}).items()))
+    v['flags'] = dict_update(flags, v.get('flags', {}).items())
 
     return v
 
@@ -106,9 +110,9 @@ class Package:
             n['name']
         except TypeError:
             if 'lib' in reason:
-                n = make_selector(n, self.flags)
+                n = make_selector(n, dict_update(self.flags, {'lib': True}.items()))
             else:
-                n = make_selector(n, {})
+                n = make_selector(n, {'bin': True})
 
         return self.load_package_impl(n, reason)
 
@@ -118,10 +122,7 @@ class Package:
         try:
             return self.manager.load_package(selector)
         except FileNotFoundError:
-            s1 = fmt_sel(selector)
-            s2 = fmt_sel(self.selector)
-
-            raise ce.Error(f'can not load dependant package {s1} of {s2}')
+            raise ce.Error(f'can not load dependant package {fmt_sel(selector)} of {fmt_sel(self.selector)}')
 
     def load_packages(self, l, reason):
         return (self.load_package(x, reason) for x in l)

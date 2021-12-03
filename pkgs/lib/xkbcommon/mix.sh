@@ -21,13 +21,6 @@ lib/wayland/mix.sh
 -Denable-docs=false
 {% endblock %}
 
-{% block patch %}
-cat << EOF > test/state.c
-int main() {
-}
-EOF
-{% endblock %}
-
 {% block install %}
 {{super()}}
 cp -R /usr/share/X11 ${out}/share/
