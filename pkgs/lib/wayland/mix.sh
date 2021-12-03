@@ -29,3 +29,8 @@ lib/xml2/mix.sh
 cat tests/test-runner.h | grep -v '#error' > _ && mv _ tests/test-runner.h
 sed -e 's|epoll_create1|xxx_epoll_create1|' -i tests/os-wrappers-test.c
 {% endblock %}
+
+{% block install %}
+{{super()}}
+mv ${out}/lib/pkgconfig ${out}/share/
+{% endblock %}

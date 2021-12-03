@@ -37,10 +37,7 @@ env/std/0/mix.sh
 
 {% block install %}
 {{super()}}
-
-rm -rf ${out}/include
-rm -rf ${out}/lib/pkgconfig
-find ${out}/lib/ | grep '\.a$' | xargs rm
+find ${out}/ | grep '\.a$' | xargs rm
 {% endblock %}
 
 {% block env %}

@@ -16,7 +16,10 @@ lib/openssl/mix.sh
 
 {% block coflags %}
 --with-dbm=gdbm
---disable-util-dso
+{% endblock %}
+
+{% block postinstall %}
+# TODO - make lib/bin, for apr-config
 {% endblock %}
 
 {% block env %}

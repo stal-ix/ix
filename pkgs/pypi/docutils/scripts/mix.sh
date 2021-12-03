@@ -10,7 +10,7 @@ dev/build/python/mix.sh
 
 mkdir ${out}/bin
 
-cd ${out}/lib/python && cd docutils-*data/scripts
+cd ${out}/share && cd docutils-*data/scripts
 
 for x in *.py; do
     cat - ${x} << EOF > _

@@ -90,14 +90,19 @@ EOF
 {% endblock %}
 
 {% block coflags %}
+{% if lib %}
+# use default lib path
+{% else %}
+--with-platlibdir=bin/lib
+{% endif %}
 --with-ensurepip=no
 {% endblock %}
 
 {% block test %}
-${out}/bin/python3 -c 'import zlib; import multiprocessing; import cProfile;'
+{% if not lib %}${out}/bin/python3 -c 'import zlib; import multiprocessing; import cProfile;'
 {% block extra_tests %}
 ${out}/bin/python3 -c 'import hashlib; import ssl; import lzma; import bz2; import sqlite3; import decimal; import ctypes;'
-{% endblock %}
+{% endblock %}{% endif %}
 {% endblock %}
 
 {% block install %}

@@ -1,6 +1,6 @@
 {% extends '//mix/template/proxy.sh' %}
 
-{% block bld_libs %}
+{% block bld_tool %}
 lib/protobuf/mix.sh
 {% endblock %}
 

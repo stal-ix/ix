@@ -43,9 +43,7 @@ echo > llvm/unittests/Support/DynamicLibrary/CMakeLists.txt
 llvm
 {% endblock %}
 
-{% block install %}
-{{super()}}
-
+{% block postinstall %}
 python3 << EOF
 {% include 'strip.py' %}
 EOF

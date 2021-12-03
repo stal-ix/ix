@@ -24,7 +24,7 @@ dev/build/python/mix.sh
 {% endblock %}
 
 {% block build %}
-mkdir -p ${out}/lib/python && cd ${out}/lib/python && ${untar} ${src}/*.whl
+mkdir -p ${out}/share && cd ${out}/share && ${untar} ${src}/*.whl
 
 python3 << EOF > exports
 import os
@@ -49,7 +49,7 @@ cat exports
 {% endblock %}
 
 {% block env %}
-export PYTHONPATH="${out}/lib/python:\${PYTHONPATH}"
+export PYTHONPATH="${out}/share:\${PYTHONPATH}"
 {% endblock %}
 '''
 

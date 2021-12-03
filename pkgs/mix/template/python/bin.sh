@@ -2,11 +2,13 @@
 
 {% block std_env %}
 dev/build/make/mix.sh
+dev/build/python/mix.sh
 tool/compress/upx/mix.sh
 {{super()}}
 {% endblock %}
 
 {% block build %}
+# TODO - cross-compile support
 python3 $(dirname $(command -v python3))/freeze/freeze.py -m {{self.entry_point()}} $(cat modules)
 make CC=clang -j ${make_thrs}
 #strip {{self.bin()}}

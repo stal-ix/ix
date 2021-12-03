@@ -5,6 +5,14 @@ https://wayland.freedesktop.org/releases/wayland-protocols-1.24.tar.xz
 a66fa869543707279fb78a24d42cbb1d
 {% endblock %}
 
-{% block lib_deps %}
+{% block bld_tool %}
+lib/wayland/mix.sh
+{% endblock %}
+
+{% block run_deps %}
+lib/wayland/mix.sh
+{% endblock %}
+
+{% block bld_libs %}
 lib/wayland/mix.sh
 {% endblock %}

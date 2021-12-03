@@ -8,7 +8,6 @@ https://github.com/swaywm/sway/archive/refs/tags/1.6.1.tar.gz
 {% block bld_libs %}
 lib/wlroots/mix.sh
 lib/wayland/mix.sh
-lib/wayland/protocols/mix.sh
 lib/pcre/mix.sh
 lib/json/c/mix.sh
 lib/cairo/mix.sh
@@ -17,6 +16,7 @@ lib/pango/mix.sh
 
 {% block bld_tool %}
 lib/dlfcn/scripts/mix.sh
+lib/wayland/protocols/mix.sh
 {% endblock %}
 
 {% block setup %}

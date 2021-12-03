@@ -35,3 +35,6 @@ RANLIB=ranlib
 INSTALL=install
 STRIP=true
 {% endblock %}
+
+{% block postinstall %}
+{% endblock %}

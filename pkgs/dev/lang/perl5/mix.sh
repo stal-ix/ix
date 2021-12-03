@@ -58,3 +58,7 @@ bash Configure -des    \
     -Dlibc=c           \
     -Dcc=clang
 {% endblock %}
+
+{% block postinstall %}
+# TODO
+{% endblock %}

@@ -13,7 +13,3 @@ boot/6/env/std/mix.sh
 
 {% block autoreconf %}
 {% endblock %}
-
-{% block coflags %}
---with-ensurepip=no
-{% endblock %}

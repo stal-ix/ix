@@ -112,7 +112,7 @@ class Package:
             if 'lib' in reason:
                 n = make_selector(n, dict_update(self.flags, {'lib': True}.items()))
             else:
-                n = make_selector(n, {'bin': True})
+                n = make_selector(n, {})
 
         return self.load_package_impl(n, reason)
 

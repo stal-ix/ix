@@ -35,7 +35,3 @@ export CPPFLAGS="-D_GNU_SOURCE=1 -I${PWD}/inc ${CPPFLAGS}"
 -Diconv=external
 -Dtests=false
 {% endblock %}
-
-{% block postinstall %}
-rm -rf ${out}/bin
-{% endblock %}

@@ -1,6 +1,6 @@
 {% extends '//mix/template/proxy.sh' %}
 
-{% block bld_libs %}
+{% block bld_tool %}
 lib/bzip2/mix.sh
 {% endblock %}
 
