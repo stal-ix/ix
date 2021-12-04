@@ -127,11 +127,7 @@ class Package:
     def load_packages(self, l, reason):
         return (self.load_package(x, reason) for x in l)
 
-    def lib_deps(self):
-        return self.descr['lib']['deps']
-
     def bld_lib_deps(self):
-        yield from self.lib_deps()
         yield from self.descr['bld']['libs']
 
         for p in self.bld_bin_closure():
@@ -143,7 +139,7 @@ class Package:
 
     @cu.cached_method
     def lib_closure(self):
-        return visit_lst(self.load_packages(self.lib_deps(), "lib"), lambda x: x.lib_closure())
+        return visit_lst(self.load_packages(self.descr['lib']['deps'], "lib"), lambda x: x.lib_closure())
 
     @cu.cached_method
     def bld_lib_closure(self):

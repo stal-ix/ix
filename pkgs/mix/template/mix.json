@@ -38,7 +38,7 @@
 {% endset %}
 
 {% block bld_lib_deps %}
-{{mix.list_to_json(bld_libs)}}
+{{mix.list_to_json(lib_deps + ' ' + bld_libs)}}
 {% endblock %}
 
 {% block build_depends %}
