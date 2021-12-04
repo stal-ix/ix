@@ -34,5 +34,5 @@ cat lib/xalloc-die.c | grep -v 'memory ex' > _ && mv _ lib/xalloc-die.c
 
 {% block install %}
 {{super()}}
-rm -rf ${out}/lib ${out}/include ${out}/bin/wget2_noinstall
+rm ${out}/bin/wget2_noinstall
 {% endblock %}

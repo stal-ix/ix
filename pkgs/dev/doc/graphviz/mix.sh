@@ -23,7 +23,5 @@ lib/fontconfig/mix.sh
 
 {% block install %}
 {{super()}}
-
 cd ${out}/bin && ln -s dot_static dot
-rm -rf ${out}/lib ${out}/include
 {% endblock %}

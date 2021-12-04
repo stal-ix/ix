@@ -55,8 +55,3 @@ export ac_cv_search_tgetent=no
 {% block test %}
 echo 'python print("na gorshke" + " sidel korol")' | ${out}/bin/gdb | grep "na gorshke sidel korol"
 {% endblock %}
-
-{% block install %}
-{{super()}}
-rm -rf ${out}/lib ${out}/include
-{% endblock %}

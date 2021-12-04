@@ -26,8 +26,3 @@ cd gettext-tools
 {% block coflags %}
 --with-installed-libtextstyle
 {% endblock %}
-
-{% block install %}
-{{super()}}
-rm -rf ${out}/lib ${out}/include
-{% endblock %}
