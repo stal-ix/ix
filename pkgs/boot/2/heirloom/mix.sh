@@ -285,6 +285,11 @@ done
 )
 {% endblock %}
 
+{% block postinstall %}
+export PATH="${out}/bin:${PATH}"
+{{super()}}
+{% endblock %}
+
 {% block env %}
 export ACCEPT_INFERIOR_RM_PROGRAM=yes
 export FORCE_UNSAFE_CONFIGURE=1

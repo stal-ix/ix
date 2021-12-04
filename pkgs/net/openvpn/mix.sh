@@ -24,8 +24,3 @@ dev/build/automake/1.16.3/mix.sh
 --disable-plugin-auth-pam
 --disable-plugin-down-root
 {% endblock %}
-
-{% block install %}
-{{super()}}
-mv ${out}/sbin ${out}/bin
-{% endblock %}

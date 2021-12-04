@@ -57,6 +57,8 @@ done
 {% endblock %}
 --disable-shared
 --prefix="${out}"
+--sbindir="${out}/bin"
+--libexecdir="${out}/bin/exec"
 
 {% block coflags %}
 {% endblock %}
