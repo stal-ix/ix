@@ -10,6 +10,7 @@ dev/build/pkg-config/mix.sh
 
 {% set meson_flags %}
 --libdir="${out}/lib"
+--libexecdir="${out}/bin/exec"
 
 -Dprefix="${out}"
 -Ddefault_library=static

@@ -30,6 +30,7 @@ ln -s $(command -v bsdcpio) cpio
 {% endblock %}
 
 {% block make_flags %}
+gitexecdir=bin/exec
 INSTALL_SYMLINKS=yes
 NO_REGEX=NeedsStartEnd
 {% endblock %}
