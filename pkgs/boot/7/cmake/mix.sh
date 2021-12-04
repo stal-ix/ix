@@ -10,9 +10,6 @@ boot/7/lib/cxx/mix.sh
 boot/6/env/std/mix.sh
 {% endblock %}
 
-{% block lib_deps %}
-{% endblock %}
-
 {% block run_deps %}
 boot/7/samurai/mix.sh
 {% endblock %}

@@ -22,6 +22,11 @@
 {% endblock %}
 {% endset %}
 
+{% set ind_deps %}
+{% block ind_deps %}
+{% endblock %}
+{% endset %}
+
 {% set run_deps %}
 {% block run_deps %}
 {% endblock %}
@@ -46,6 +51,10 @@
 
 {% block library_depends %}
 {{mix.list_to_json(lib_deps)}}
+{% endblock %}
+
+{% block induced_depends %}
+{{mix.list_to_json(ind_deps)}}
 {% endblock %}
 
 {% block build_fetch %}

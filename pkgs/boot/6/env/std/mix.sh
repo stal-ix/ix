@@ -1,6 +1,6 @@
 {% extends '//mix/template/hub.sh' %}
 
-{% block lib_deps %}
+{% block ind_deps %}
 boot/3/lib/c/mix.sh
 {% endblock %}
 

@@ -10,5 +10,8 @@
     },
     "lib": {
         "deps": {% block library_depends %}[]{% endblock %}
+    },
+    "ind": {
+        "deps": {% block induced_depends %}[]{% endblock %}
     }
 }

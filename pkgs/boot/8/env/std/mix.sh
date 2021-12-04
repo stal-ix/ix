@@ -4,6 +4,6 @@
 boot/8/clang/env/mix.sh
 {% endblock %}
 
-{% block lib_deps %}
+{% block ind_deps %}
 boot/8/lib/c/mix.sh
 {% endblock %}

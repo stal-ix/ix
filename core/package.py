@@ -135,7 +135,7 @@ class Package:
         yield from self.descr['bld']['libs']
 
         for p in self.bld_bin_closure():
-            yield from p.lib_deps()
+            yield from p.descr['ind']['deps']
 
     @cu.cached_method
     def bld_bin_closure(self):
