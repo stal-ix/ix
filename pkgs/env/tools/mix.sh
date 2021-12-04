@@ -1,7 +1,7 @@
 {% extends '//mix/template/hub.sh' %}
 
 {% block run_deps %}
-gnu/file/mix.sh
+lib/magic/mix.sh
 gnu/findutils/mix.sh
 gnu/sed/mix.sh
 gnu/gawk/mix.sh

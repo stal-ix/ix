@@ -10,7 +10,7 @@ f2e272ec793571f28d52006ad14534c4
 {% endblock %}
 
 {% block bld_tool %}
-gnu/file/mix.sh
+lib/magic/mix.sh
 gnu/sed/mix.sh
 dev/build/autoconf/2/69/mix.sh
 dev/build/automake/1.16.3/mix.sh
