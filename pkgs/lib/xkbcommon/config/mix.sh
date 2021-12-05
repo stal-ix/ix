@@ -17,3 +17,7 @@ tool/compress/gzip/mix.sh
 {% block coflags %}
 --disable-runtime-deps
 {% endblock %}
+
+{% block env %}
+export XKB_CONFIG="${out}/share/X11/xkb"
+{% endblock %}

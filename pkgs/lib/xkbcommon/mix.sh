@@ -16,6 +16,10 @@ lib/xml2/mix.sh
 lib/wayland/mix.sh
 {% endblock %}
 
+{% block bld_libs %}
+lib/xkbcommon/config/mix.sh
+{% endblock %}
+
 {% block meson_flags %}
 -Denable-x11=false
 -Denable-docs=false
@@ -23,5 +27,12 @@ lib/wayland/mix.sh
 
 {% block install %}
 {{super()}}
-cp -R /usr/share/X11 ${out}/share/
+
+# NOT cross-compilable
+mkdir -p ${out}/share/X11
+cp -R ${XKB_CONFIG} ${out}/share/X11/
+{% endblock %}
+
+{% block test %}
+test -d ${out}/share/X11/xkb
 {% endblock %}
