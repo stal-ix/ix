@@ -14,7 +14,7 @@ dev/build/autoconf/archive/mix.sh
 {{'lib/linux/mix.sh' | linux}}
 {% endblock %}
 
-{% block autoreconf %}
+{% block patch_configure %}
 {{super()}}
 sed -e 's/MULTIARCH=\$.*/MULTIARCH=/' -i configure
 {% endblock %}
@@ -31,10 +31,9 @@ chmod +x sw_vers
 {% endblock %}
 
 {% block patch %}
-sed -e 's/MULTIARCH=\$.*/MULTIARCH=/' -i ./configure
 sed -e 's|spec is None|spec is None or spec.loader is None|' -i Lib/modulefinder.py
-sed -e 's|/usr|/eat/shit|' -i ./setup.py
-sed -e 's|/usr|/eat/shit|' -i ./Makefile.pre.in
+sed -e 's|/usr|/eat/shit|' -i setup.py
+sed -e 's|/usr|/eat/shit|' -i Makefile.pre.in
 
 >setup.py
 

@@ -28,7 +28,7 @@ env/std/0/mix.sh
 cd cctools
 {% endblock %}
 
-{% block autoreconf %}
+{% block patch_configure %}
 {{super()}}
 sed -e 's/__arm__/__eat_shit__/' -i configure
 {% endblock %}

@@ -5,7 +5,20 @@ dev/build/pkg-config/mix.sh
 {{super()}}
 {% endblock %}
 
+{% block template_setup %}
+export ac_cv_build="{{mix.platform.target.gnu_arch}}-{{mix.platform.target.hw_vendor}}-{{mix.platform.target.os}}"
+export ac_cv_host="${ac_cv_build}"
+export ac_cv_target="${ac_cv_build}"
+{% endblock %}
+
 {% block configure %}
+{% block check_tools %}
+{% if not mix.name.startswith('boot/') %}
+which pkg-config
+{% endif %}
+{% endblock %}
+
+{% block prepare_configure %}
 {% block autoreconf %}
 if which libtoolize; then
     echo "RUN LIBTOOLIZE"
@@ -18,13 +31,8 @@ if which autoreconf; then
 fi
 {% endblock %}
 
-{% block check_tools %}
-{% if not mix.name.startswith('boot/') %}
-which pkg-config
-{% endif %}
-{% endblock %}
-
-cat ./configure \
+{% block patch_configure %}
+cat configure \
     | sed -e "s|/usr/bin/||g"                 \
     | sed -e "s|/usr/|/nowhere/|g"            \
     | sed -e "s|/bin/sh|$(which dash)|g"      \
@@ -32,11 +40,8 @@ cat ./configure \
     | sed -e "s|/bin/uname|uname|g"           \
     | sed -e "s|/bin/machine|machine|g"       \
     | sed -e "s|/bin/universe|universe|g"     \
-    > _ && mv _ ./configure
-
-export ac_cv_build="{{mix.platform.target.gnu_arch}}-{{mix.platform.target.hw_vendor}}-{{mix.platform.target.os}}"
-export ac_cv_host="${ac_cv_build}"
-export ac_cv_target="${ac_cv_build}"
+    > _ && mv _ configure
+{% endblock %}
 
 (
     find . | grep 'config.guess'
@@ -48,6 +53,7 @@ echo ${ac_cv_build}
 EOF
     chmod +x ${l}
 done
+{% endblock %}
 
 {% block invoke_configure %}
 {% set command_args %}

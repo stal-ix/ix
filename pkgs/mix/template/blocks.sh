@@ -20,6 +20,9 @@
 
 
 {% block step_setup %}
+{% block template_setup %}
+{% endblock %}
+
 {% block setup %}
 {% endblock %}
 {% endblock %}
@@ -29,11 +32,15 @@
 {% block preconf %}
 {% endblock %}
 
+(
+    set -eu
+
 {% block configure %}
 {% endblock %}
 
 {% block postconf %}
 {% endblock %}
+)
 {% endblock %}
 
 
