@@ -30,12 +30,9 @@ python3 $(command -v gen_dl_stubs.py) opengl {{mix.platform.target.os}} << EOF >
 __driDriverGetExtensions_kms_swrast
 EOF
 
-cat dl.cpp
-
-clang ${CPPFLAGS} ${CXXFLAGS} ${CFLAGS} -c dl.cpp
+clang ${CPPFLAGS} ${CFLAGS} ${CXXFLAGS} -c dl.cpp
 llvm-ar q libxxx.a dl.o
-llvm-nm dl.o
-cp ${lib_mesa}/lib/dri/kms_swrast_dri.so libyyy.a
-llvm-nm libyyy.a | grep __dri
+ln -s ${lib_mesa}/lib/dri/kms_swrast_dri.so libyyy.a
+
 export LDFLAGS="${PWD}/dl.o ${PWD}/libyyy.a ${LDFLAGS}"
 {% endblock %}
