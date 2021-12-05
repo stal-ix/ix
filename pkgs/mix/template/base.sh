@@ -24,12 +24,12 @@ echo 'setup stage'
 {% endblock %}
 }
 
-step_configure() {
+step_configure() (
 echo 'configure stage'
 
 {% block step_configure %}
 {% endblock %}
-}
+)
 
 step_build() (
 set -eu

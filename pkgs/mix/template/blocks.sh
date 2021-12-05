@@ -25,22 +25,18 @@
 
 {% block setup %}
 {% endblock %}
+
+{% block preconf %}
+{% endblock %}
 {% endblock %}
 
 
 {% block step_configure %}
-{% block preconf %}
-{% endblock %}
-
-(
-    set -eu
-
 {% block configure %}
 {% endblock %}
 
 {% block postconf %}
 {% endblock %}
-)
 {% endblock %}
 
 

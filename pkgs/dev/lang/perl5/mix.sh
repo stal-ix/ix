@@ -40,8 +40,8 @@ chmod +x install_name_tool
 {% endblock %}
 
 {% block patch %}
-sed -e "s|/usr/bin/||g"                 \
-    -e "s|/usr/|/nowhere/|g"            \
+sed -e "s|/usr/bin/||g"            \
+    -e "s|/usr/|/nowhere/|g"       \
     -e "s|/bin/sh|$(which dash)|g" \
     -i Configure
 {% endblock %}
@@ -57,8 +57,18 @@ bash Configure -des    \
     -Duselibc=c        \
     -Dlibc=c           \
     -Dcc=clang
+
+(
+    cat config.h | grep -v 'define SH_PATH'
+
+    cat << EOF
+#define SH_PATH "$(which dash)"
+EOF
+) > _ && mv _ config.h
 {% endblock %}
 
 {% block postinstall %}
-# TODO
+find ${out} | grep Config_heavy.pl | while read l; do
+    cat ${l} | sed -e 's|/.*build.*tools/||' | grep -v 'startsh=' > _ && mv _ ${l}
+done
 {% endblock %}
