@@ -20,16 +20,9 @@ sed -e 's/MULTIARCH=\$.*/MULTIARCH=/' -i configure
 {% endblock %}
 
 {% block toolconf %}
-cat << EOF > which
-#!$(command -v dash)
-command -v \$@
-EOF
-
-chmod +x which
-
 {% if mix.platform.target.os == 'darwin' %}
 cat << EOF > sw_vers
-#!$(command -v dash)
+#!$(which dash)
 echo ${MACOSX_DEPLOYMENT_TARGET}
 EOF
 

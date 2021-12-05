@@ -12,7 +12,7 @@ boot/3/env/mix.sh
 
 {% block toolconf %}
 cat << EOF > makeinfo
-#!$(command -v dash)
+#!$(which dash)
 EOF
 
 chmod +x makeinfo

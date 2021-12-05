@@ -16,14 +16,14 @@ lib/ffi/mix.sh
 mkdir build && cd build
 {% endblock %}
 
-{% block configure %}
-dash ../src/configure ${COFLAGS} \
-    --enable-threads=yes \
-    --enable-libatomic=system \
-    --enable-gmp=system \
-    --enable-boehm=yes \
-    --disable-shared \
-    --enable-static \
-    --prefix=${out} \
-    --srcdir="${PWD}/../src"
+{% block autoconf_script %}
+../src/configure
+{% endblock %}
+
+{% block coflags %}
+--enable-threads=yes
+--enable-libatomic=system
+--enable-gmp=system
+--enable-boehm=yes
+--srcdir="${PWD}/../src"
 {% endblock %}

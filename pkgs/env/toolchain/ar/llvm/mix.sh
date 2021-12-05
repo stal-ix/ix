@@ -2,9 +2,9 @@
 
 {% block env %}
 setup_ar() {
-    ln -s "$(command -v llvm-ar)" ar
-    ln -s "$(command -v llvm-ranlib)" ranlib
-    ln -s "$(command -v llvm-nm)" nm
+    ln -s "$(which llvm-ar)" ar
+    ln -s "$(which llvm-ranlib)" ranlib
+    ln -s "$(which llvm-nm)" nm
 
     export AR=llvm-ar
     export RANLIB=llvm-ranlib

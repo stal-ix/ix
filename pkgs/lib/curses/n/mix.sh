@@ -6,8 +6,8 @@ a2736befde5fee7d2b7eb45eb281cdbe
 {% endblock %}
 
 {% block bld_tool %}
-shell/cli/bash/minimal/mix.sh
 lib/z/mix.sh
+shell/cli/bash/minimal/mix.sh
 {% endblock %}
 
 {% block std_env %}
@@ -27,11 +27,13 @@ env/std/0/mix.sh
 --with-termlib
 --without-cxx
 --without-cxx-binding
---with-pkg-config="$(command -v pkg-config)"
---with-pkg-config-libdir="${out}/lib/pkg-config"
+--with-pkg-config="$(which pkg-config)"
+--with-pkg-config-libdir="${PKG_CONFIG_LIBDIR}"
 {% endblock %}
 
-{% block autoconf_shell %}bash{% endblock %}
+{% block autoconf_shell %}
+bash
+{% endblock %}
 
 {% block setup %}
 export PKG_CONFIG_LIBDIR=${out}/lib/pkg-config

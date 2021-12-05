@@ -17,7 +17,7 @@ lib/oniguruma/mix.sh
 
 {% block toolconf %}
 cat << EOF > ncurses5-config
-#!$(command -v dash)
+#!$(which dash)
 echo ${TERMINFO}
 EOF
 

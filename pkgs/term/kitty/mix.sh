@@ -54,8 +54,8 @@ find . | grep '\.so' | xargs rm
 cd build
 
 rm glfw-cocoa-monotonic.c.o
-python3 $(command -v gen_py_init.py) ${PYTHONHOME} fast_data_types > config.c
-llvm-nm glfw*.o | grep glfw | python3 $(command -v gen_dl_stubs.py) glfw {{mix.platform.target.os}} > dl.cpp
+python3 $(which gen_py_init.py) ${PYTHONHOME} fast_data_types > config.c
+llvm-nm glfw*.o | grep glfw | python3 $(which gen_dl_stubs.py) glfw {{mix.platform.target.os}} > dl.cpp
 clang dl.cpp config.c ${PYTHONHOME}/lib/python*/config-*/python.o fast*.o glfw*.o -o kitty-bin
 {% endblock %}
 
@@ -65,7 +65,7 @@ mkdir ${out}/bin
 cp build/kitty-bin ${out}/bin/
 
 cat << EOF > ${out}/bin/kitty
-#!$(command -v dash)
+#!$(which dash)
 
 PYTHONPATH="${out}/lib" "${out}/bin/kitty-bin" "${out}/lib/kitty/__main__.py" "$@"
 EOF

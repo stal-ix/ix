@@ -14,7 +14,7 @@ cd ${out}/share && cd docutils-*data/scripts
 
 for x in *.py; do
     cat - ${x} << EOF > _
-#!$(command -v python3)
+#!$(which python3)
 EOF
     chmod +x _
     mv _ ${out}/bin/${x}

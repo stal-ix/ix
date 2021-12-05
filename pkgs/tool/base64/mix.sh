@@ -10,7 +10,7 @@ env/std/0/mix.sh
 {% endblock %}
 
 {% block toolconf %}
-ln -s $(command -v llvm-objcopy) objcopy
+ln -s $(which llvm-objcopy) objcopy
 {% endblock %}
 
 {% block build %}

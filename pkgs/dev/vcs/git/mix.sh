@@ -25,8 +25,8 @@ net/openssh/mix.sh
 {% endblock %}
 
 {% block toolconf %}
-ln -s $(command -v bsdtar) tar
-ln -s $(command -v bsdcpio) cpio
+ln -s $(which bsdtar) tar
+ln -s $(which bsdcpio) cpio
 {% endblock %}
 
 {% block make_flags %}

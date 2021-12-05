@@ -10,18 +10,18 @@ export LDFLAGS="${CLANG_LTO} -nostdlib++ -fcolor-diagnostics ${CLANG_TARGET} ${L
 
 setup_compiler() {
     cat << EOF > clang
-#!$(command -v dash)
-$(command -v clang) ${CPPFLAGS} ${CFLAGS} ${CONLYFLAGS} "\$@" ${LDFLAGS}
+#!$(which dash)
+$(which clang) ${CPPFLAGS} ${CFLAGS} ${CONLYFLAGS} "\$@" ${LDFLAGS}
 EOF
 
     cat << EOF > clang++
-#!$(command -v dash)
-$(command -v clang++) ${CPPFLAGS} ${CFLAGS} ${CONLYFLAGS} ${CXXFLAGS} "\$@" ${LDFLAGS}
+#!$(which dash)
+$(which clang++) ${CPPFLAGS} ${CFLAGS} ${CONLYFLAGS} ${CXXFLAGS} "\$@" ${LDFLAGS}
 EOF
 
     cat << EOF > cpp
-#!$(command -v dash)
-$(command -v clang-cpp) ${CPPFLAGS} "\$@"
+#!$(which dash)
+$(which clang-cpp) ${CPPFLAGS} "\$@"
 EOF
 
     chmod +x clang clang++ cpp

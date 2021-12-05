@@ -8,10 +8,10 @@ dev/build/cmake/mix.sh
 {% set cmflags %}
 -DCMAKE_INSTALL_PREFIX="${out}"
 -DCMAKE_INSTALL_LIBDIR="${out}/lib"
--DCMAKE_C_COMPILER="$(command -v clang)"
--DCMAKE_CXX_COMPILER="$(command -v clang++)"
--DCMAKE_AR="$(command -v ar)"
--DCMAKE_RANLIB="$(command -v ranlib)"
+-DCMAKE_C_COMPILER="$(which clang)"
+-DCMAKE_CXX_COMPILER="$(which clang++)"
+-DCMAKE_AR="$(which ar)"
+-DCMAKE_RANLIB="$(which ranlib)"
 -DCMAKE_BUILD_TYPE=Release
 -DBUILD_SHARED_LIBS=OFF
 -DCMAKE_PREFIX_PATH="${CMPATH}"

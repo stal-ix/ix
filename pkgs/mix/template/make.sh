@@ -6,7 +6,7 @@ dev/build/make/mix.sh
 {% endblock %}
 
 {% set make_flags %}
-SHELL="$(command -v dash)"
+SHELL="$(which dash)"
 PREFIX="${out}"
 prefix="${out}"
 V=1

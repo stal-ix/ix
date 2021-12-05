@@ -22,7 +22,7 @@ dev/lang/ecl/mix.sh
 sed -e 's/lispobj \*static_code_space_free_pointer/extern lispobj \*static_code_space_free_pointer/' -i src/runtime/globals.h
 sed -e 's/size_t os_vm_page_size/extern size_t os_vm_page_size/' -i src/runtime/arm64-bsd-os.c
 
-cat << EOF | python3 $(command -v gen_dl_stubs.py) sbcl > symbols.cpp
+cat << EOF | python3 $(which gen_dl_stubs.py) sbcl > symbols.cpp
 {% include 'symbols' %}
 EOF
 {% endblock %}

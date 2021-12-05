@@ -70,9 +70,9 @@ export DEP_OPENSSL_ROOT="$lib_openssl"
 export DEP_OPENSSL_INCLUDE="$lib_openssl/include"
 
 make RUSTCSRC
-make V= CC=$(command -v clang) RUSTC_TARGET={{mix.platform.target.arch}}-apple-darwin -j ${make_thrs} -f minicargo.mk || true
-make V= CC=$(command -v clang) RUSTC_TARGET={{mix.platform.target.arch}}-apple-darwin -j ${make_thrs} -f minicargo.mk
-make V= CC=$(command -v clang) RUSTC_TARGET={{mix.platform.target.arch}}-apple-darwin -C run_rustc
+make V= CC=$(which clang) RUSTC_TARGET={{mix.platform.target.arch}}-apple-darwin -j ${make_thrs} -f minicargo.mk || true
+make V= CC=$(which clang) RUSTC_TARGET={{mix.platform.target.arch}}-apple-darwin -j ${make_thrs} -f minicargo.mk
+make V= CC=$(which clang) RUSTC_TARGET={{mix.platform.target.arch}}-apple-darwin -C run_rustc
 
 exit 1
 EOF

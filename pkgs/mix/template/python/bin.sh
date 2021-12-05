@@ -9,7 +9,7 @@ tool/compress/upx/mix.sh
 
 {% block build %}
 # TODO - cross-compile support
-python3 $(dirname $(command -v python3))/share/freeze/freeze.py -m {{self.entry_point()}} $(cat modules)
+python3 $(dirname $(which python3))/share/freeze/freeze.py -m {{self.entry_point()}} $(cat modules)
 make CC=clang -j ${make_thrs}
 #strip {{self.bin()}}
 #upx {{self.bin()}}

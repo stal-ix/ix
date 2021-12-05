@@ -7,12 +7,12 @@ dev/build/pkg-config/mix.sh
 
 {% block configure %}
 {% block autoreconf %}
-if command -v libtoolize; then
+if which libtoolize; then
     echo "RUN LIBTOOLIZE"
     libtoolize -cif
 fi
 
-if command -v autoreconf; then
+if which autoreconf; then
     echo "RUN AUTORECONF"
     autoreconf -if
 fi
@@ -20,14 +20,14 @@ fi
 
 {% block check_tools %}
 {% if not mix.name.startswith('boot/') %}
-command -v pkg-config
+which pkg-config
 {% endif %}
 {% endblock %}
 
 cat ./configure \
     | sed -e "s|/usr/bin/||g"                 \
     | sed -e "s|/usr/|/nowhere/|g"            \
-    | sed -e "s|/bin/sh|$(command -v dash)|g" \
+    | sed -e "s|/bin/sh|$(which dash)|g"      \
     | sed -e "s|/bin/arch|arch|g"             \
     | sed -e "s|/bin/uname|uname|g"           \
     | sed -e "s|/bin/machine|machine|g"       \
@@ -43,14 +43,24 @@ export ac_cv_target="${ac_cv_build}"
     find . | grep 'config.sub'
 ) | while read l; do
     cat << EOF > ${l}
-#!$(command -v dash)
+#!$(which dash)
 echo ${ac_cv_build}
 EOF
     chmod +x ${l}
 done
 
 {% block invoke_configure %}
-{% set coflags %}
+{% set command_args %}
+{% block autoconf_shell %}
+dash
+{% endblock %}
+
+{% block autoconf_script %}
+configure
+{% endblock %}
+
+${COFLAGS}
+
 --disable-dependency-tracking
 {% block enable_static %}
 --enable-static
@@ -64,6 +74,6 @@ done
 {% endblock %}
 {% endset %}
 
-{% block autoconf_shell %}dash{% endblock %} ./configure ${COFLAGS} {{mix.fix_list(coflags)}}
+{{mix.fix_list(command_args)}}
 {% endblock %}
 {% endblock %}

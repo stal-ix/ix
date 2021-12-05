@@ -10,7 +10,7 @@ lib/c++/mix.sh
 {% endblock %}
 
 {% block toolconf %}
-ln -s $(command -v llvm-install-name-tool) install_name_tool
+ln -s $(which llvm-install-name-tool) install_name_tool
 {% endblock %}
 
 {% block cmflags %}

@@ -13,15 +13,6 @@ boot/final/cxx/mix.sh
 boot/final/env/clang/mix.sh
 {% endblock %}
 
-{% block toolconf %}
-cat << EOF > which
-#!$(command -v dash)
-command -v "\$@"
-EOF
-
-chmod +x which
-{% endblock %}
-
 {% block build %}
 make mrproper
 make headers

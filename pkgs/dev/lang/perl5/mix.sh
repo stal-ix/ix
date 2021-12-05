@@ -33,7 +33,7 @@ EOF
 chmod +x sw_vers
 
 cat << EOF > install_name_tool
-#!$(command -v dash)
+#!$(which dash)
 EOF
 
 chmod +x install_name_tool
@@ -42,7 +42,7 @@ chmod +x install_name_tool
 {% block patch %}
 sed -e "s|/usr/bin/||g"                 \
     -e "s|/usr/|/nowhere/|g"            \
-    -e "s|/bin/sh|$(command -v dash)|g" \
+    -e "s|/bin/sh|$(which dash)|g" \
     -i Configure
 {% endblock %}
 

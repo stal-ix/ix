@@ -15,7 +15,7 @@ dev/build/automake/1.16.3/mix.sh
 {% endblock %}
 
 {% block toolconf %}
-ln -s $(command -v bsdtar) tar
+ln -s $(which bsdtar) tar
 {% endblock %}
 
 {% block autoreconf %}

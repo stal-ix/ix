@@ -36,7 +36,7 @@ EOF
 make -j ${make_thrs} miniperl
 
 cat << EOF > miniperl
-#!$(command -v dash)
+#!$(which dash)
 perl -I${PWD} "\$@"
 EOF
 

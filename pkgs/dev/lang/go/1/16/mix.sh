@@ -15,7 +15,7 @@ dev/lang/perl5/mix.sh
 
 {% block toolconf %}
 cat << EOF > xcrun
-#!$(command -v python3)
+#!$(which python3)
 {% include 'xcrun.py' %}
 EOF
 

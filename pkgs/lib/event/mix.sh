@@ -20,7 +20,7 @@ dash autogen.sh
 {% endblock %}
 
 {% block toolconf %}
-ln -s $(command -v python3) python
+ln -s $(which python3) python
 {% endblock %}
 
 {% block env %}

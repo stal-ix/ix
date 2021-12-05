@@ -29,7 +29,7 @@ EOF
 
 {% block build %}
 scons \
-    CC=$(command -v clang) \
+    CC=$(which clang) \
     PREFIX=${out}          \
     OPENSSL="${SSL_DIR}"   \
     ZLIB="${lib_z}"        \
