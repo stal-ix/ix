@@ -21,3 +21,7 @@ tool/compress/gzip/mix.sh
 {% block env %}
 export XKB_CONFIG="${out}/share/X11/xkb"
 {% endblock %}
+
+{% block postinstall %}
+rm -rf ${out}/lib ${out}/bin ${out}/include
+{% endblock %}
