@@ -18,7 +18,7 @@ os.environ['SSL_CERT_FILE'] = 'nowhere'
 import signal
 
 def on_sigint(*args):
-    sys.exit(1)
+    os._exit(1)
 
 signal.signal(signal.SIGINT, on_sigint)
 
