@@ -5,7 +5,7 @@ https://musl.libc.org/releases/musl-1.2.2.tar.gz
 aed8ae9e2b0898151b36a204088292dd
 {% endblock %}
 
-{% block autoconf_script %}
+{% block configure_script %}
 ./configure
 {% endblock %}
 

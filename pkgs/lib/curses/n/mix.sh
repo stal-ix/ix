@@ -31,7 +31,7 @@ env/std/0/mix.sh
 --with-pkg-config-libdir="${PKG_CONFIG_LIBDIR}"
 {% endblock %}
 
-{% block autoconf_shell %}
+{% block configure_shell %}
 bash
 {% endblock %}
 

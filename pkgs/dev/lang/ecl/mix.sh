@@ -16,7 +16,7 @@ lib/ffi/mix.sh
 mkdir build && cd build
 {% endblock %}
 
-{% block autoconf_script %}
+{% block configure_script %}
 ../src/configure
 {% endblock %}
 

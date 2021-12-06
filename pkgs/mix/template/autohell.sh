@@ -59,11 +59,11 @@ done
 
 {% block invoke_configure %}
 {% set command_args %}
-{% block autoconf_shell %}
+{% block configure_shell %}
 dash
 {% endblock %}
 
-{% block autoconf_script %}
+{% block configure_script %}
 configure
 {% endblock %}
 

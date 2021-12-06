@@ -9,7 +9,7 @@ dev/build/make/mix.sh
 SHELL="$(which dash)"
 PREFIX="${out}"
 prefix="${out}"
-V=1
+V=0
 
 {% block make_flags %}
 {% endblock %}
