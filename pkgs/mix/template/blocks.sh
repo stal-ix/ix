@@ -40,10 +40,4 @@
 {% block step_install %}
 {% block install %}
 {% endblock %}
-
-{% block postinstall %}
-{% endblock %}
-
-{% block prepare_env %}
-{% endblock %}
 {% endblock %}

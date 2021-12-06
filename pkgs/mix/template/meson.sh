@@ -29,7 +29,7 @@ dev/build/pkg-config/mix.sh
 meson {{mix.fix_list(meson_flags)}} {{ninja_build_dir}}
 {% endblock %}
 
-{% block prepatch %}
+{% block step_patch %}
 {{super()}}
 
 find . | grep meson.build | while read l; do

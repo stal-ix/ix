@@ -11,7 +11,8 @@ boot/2/shutil/mix.sh
 boot/1/env/mix.sh
 {% endblock %}
 
-{% block preconf %}
+{% block step_setup %}
+export PATH="${out}/bin:${PATH}"
 {% endblock %}
 
 {% block build %}
@@ -283,11 +284,6 @@ done
 
     cd ${out}/bin && ln -s nawk awk && rm dircmp
 )
-{% endblock %}
-
-{% block postinstall %}
-export PATH="${out}/bin:${PATH}"
-{{super()}}
 {% endblock %}
 
 {% block env %}

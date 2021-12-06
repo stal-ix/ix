@@ -4,10 +4,10 @@
 env/tools/mix.sh
 {% endblock %}
 
-{% block preconf %}
+{% block step_setup %}
 {% endblock %}
 
-{% block prepatch %}
+{% block step_patch %}
 {% endblock %}
 
 {% block unpack %}
