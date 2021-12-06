@@ -6,11 +6,15 @@ https://github.com/Juniper/libxo/archive/refs/tags/1.6.0.tar.gz
 {% endblock %}
 
 {% block lib_deps %}
-{{'lib/bsd/mix.sh' | linux}}
+{% if target.os == 'linux' %}
+lib/bsd/mix.sh
+{% endif %}
 {% endblock %}
 
 {% block bld_libs %}
-{{'lib/bsd/overlay/mix.sh' | linux}}
+{% if target.os == 'linux' %}
+lib/bsd/overlay/mix.sh
+{% endif %}
 {% endblock %}
 
 {% block bld_tool %}

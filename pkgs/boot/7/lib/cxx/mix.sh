@@ -9,7 +9,9 @@ boot/7/lib/cxx/rt/mix.sh
 {% endblock %}
 
 {% block bld_libs %}
-{{'boot/7/lib/linux/mix.sh' | linux}}
+{% if target.os == 'linux' %}
+boot/7/lib/linux/mix.sh
+{% endif %}
 {% endblock %}
 
 {% block bld_deps %}
@@ -32,7 +34,7 @@ cat << EOF > include/__config_site
 #define _LIBCPP_HAS_MERGED_TYPEINFO_NAMES_DEFAULT 0
 #define _LIBCPP_HAS_NO_INT128 1
 #define _LIBCPP_DISABLE_AVAILABILITY 1
-{% if mix.platform.target.os == 'linux' %}
+{% if target.os == 'linux' %}
 #define _LIBCPP_HAS_MUSL_LIBC 1
 {% endif %}
 EOF

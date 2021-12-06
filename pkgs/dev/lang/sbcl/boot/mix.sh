@@ -7,7 +7,9 @@ https://nav.dl.sourceforge.net/project/sbcl/sbcl/2.1.7/sbcl-2.1.7-source.tar.bz2
 
 {% block bld_libs %}
 lib/z/mix.sh
-{{'lib/linux/mix.sh' | linux}}
+{% if target.os == 'linux' %}
+lib/linux/mix.sh
+{% endif %}
 {% endblock %}
 
 {% block bld_tool %}

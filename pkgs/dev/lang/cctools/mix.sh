@@ -8,7 +8,7 @@ https://github.com/tpoechtrager/cctools-port/archive/236a426c1205a3bfcf0dbb2e2fa
 {% block bld_libs %}
 lib/c++/mix.sh
 lib/objc/mix.sh
-{% if mix.platform.target.os == 'linux' %}
+{% if target.os == 'linux' %}
 lib/bsd/overlay/mix.sh
 {% endif %}
 {% endblock %}
@@ -52,7 +52,7 @@ EOF
 {% endblock %}
 
 {% block configure_flags %}
-{% if mix.platform.target.os == 'darwin' %}
+{% if target.os == 'darwin' %}
 --with-sysroot=${OSX_SDK}
 {% endif %}
 {% endblock %}

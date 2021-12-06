@@ -13,7 +13,7 @@ boot/final/env/bison/mix.sh
 --enable-extended-glob
 --enable-job-control
 --enable-prompt-string-decoding
-{% if mix.platform.target.os == 'linux' %}
+{% if target.os == 'linux' %}
 --enable-static-link
 {% endif %}
 {% endblock %}

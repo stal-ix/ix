@@ -12,7 +12,7 @@ lib/iconv/mix.sh
 {% endblock %}
 
 {% block setup %}
-{% if mix.platform.target.os == 'darwin' %}
+{% if target.os == 'darwin' %}
 export CPPFLAGS="-Dstat64=stat ${CPPFLAGS}"
 {% endif %}
 {% endblock %}

@@ -61,7 +61,11 @@ cd heirloom
 )
 
 export PRFLAGS="${LDFLAGS}"
-export LDFLAGS="../libcommon/asciitype.o ../libcommon/getdir.o ../libcommon/getopt.o ../libcommon/gmatch.o ../libcommon/ib_alloc.o ../libcommon/ib_close.o ../libcommon/ib_free.o ../libcommon/ib_getlin.o ../libcommon/ib_getw.o ../libcommon/ib_open.o ../libcommon/ib_popen.o ../libcommon/ib_read.o ../libcommon/ib_seek.o ../libcommon/pathconf.o ../libcommon/pfmt_label.o ../libcommon/pfmt.o ../libcommon/regexpr.o ../libcommon/setlabel.o ../libcommon/setuxlabel.o ../libcommon/sighold.o ../libcommon/sigignore.o ../libcommon/signal.o ../libcommon/sigpause.o ../libcommon/sigrelse.o ../libcommon/sigset.o ../libcommon/strtol.o ../libcommon/sysv3.o ../libcommon/utmpx.o ../libcommon/vpfmt.o {{'../libcommon/memalign.o' | darwin}} $PRFLAGS"
+export LDFLAGS="../libcommon/asciitype.o ../libcommon/getdir.o ../libcommon/getopt.o ../libcommon/gmatch.o ../libcommon/ib_alloc.o ../libcommon/ib_close.o ../libcommon/ib_free.o ../libcommon/ib_getlin.o ../libcommon/ib_getw.o ../libcommon/ib_open.o ../libcommon/ib_popen.o ../libcommon/ib_read.o ../libcommon/ib_seek.o ../libcommon/pathconf.o ../libcommon/pfmt_label.o ../libcommon/pfmt.o ../libcommon/regexpr.o ../libcommon/setlabel.o ../libcommon/setuxlabel.o ../libcommon/sighold.o ../libcommon/sigignore.o ../libcommon/signal.o ../libcommon/sigpause.o ../libcommon/sigrelse.o ../libcommon/sigset.o ../libcommon/strtol.o ../libcommon/sysv3.o ../libcommon/utmpx.o ../libcommon/vpfmt.o ${PRFLAGS}"
+
+{% if target.os == 'darwin' %}
+export LDFLAGS="${LDFLAGS} ../libcommon/memalign.o"
+{% endif %}
 
 (
     set -eu
@@ -154,11 +158,15 @@ for i in echo pwd env rmdir touch basename dirname chown wc tr ln xargs uniq tim
     (
         set -eu
 
-        cd $i && $MAKE CPPFLAGS="{{'-Dmode_t=int' | linux}} ${CPPFLAGS}" -f Makefile.mk install
+{% if target.os == 'linux' %}
+        CPPFLAGS="-Dmode_t=int ${CPPFLAGS}"
+{% endif %}
+
+        cd ${i} && ${MAKE} CPPFLAGS="${CPPFLAGS}"  -f Makefile.mk install
     )
 done
 
-{% if mix.platform.target.os == 'linux' %}
+{% if target.os == 'linux' %}
 echo 'extern void* memalign(size_t, size_t);' > libcommon/memalign.h
 
 (
@@ -182,7 +190,7 @@ export MAGIC="${out}/share/magic"
 export PRCPPFLAGS="${CPPFLAGS}"
 export CPPFLAGS="-Dcompile=sed_x_compile -Dstep=sed_step -Dadvance=sed_advance -Dnodelim=sed_nodelim -Dsed=sed_sed -Dnbra=sed_nbra -Dloc1=sed_loc1 -Dbraslist=sed_braslist -Dbraelist=sed_braelist -Dloc2=sed_loc2 -Dlocs=sed_locs ${CPPFLAGS}"
 
-{% if mix.platform.target.os == 'linux' %}
+{% if target.os == 'linux' %}
 mkdir sys
 
 cat << EOF > sys/mkdev.h
@@ -205,7 +213,12 @@ done
 (
     set -eu
 
-    export CPPFLAGS="-DUSE_TERMCAP=1 {{'-D_AIX' | linux}} ${CPPFLAGS}"
+    export CPPFLAGS="-DUSE_TERMCAP=1 ${CPPFLAGS}"
+
+{% if target.os == 'linux' %}
+    export CPPFLAGS="-D_AIX ${CPPFLAGS}"
+{% endif %}
+
     cd ls
     $MAKE LDFLAGS="${LDFLAGS}" -f Makefile.mk && $MAKE -f Makefile.mk install
 )

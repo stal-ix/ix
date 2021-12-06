@@ -7,7 +7,10 @@ https://ftp.gnu.org/pub/gnu/gettext/gettext-0.21.tar.gz
 
 {% block lib_deps %}
 lib/iconv/mix.sh
-{{'lib/darwin/framework/CoreFoundation/mix.sh' | darwin}}
+
+{% if target.os == 'darwin' %}
+lib/darwin/framework/CoreFoundation/mix.sh
+{% endif %}
 {% endblock %}
 
 {% block std_env %}

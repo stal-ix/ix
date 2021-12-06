@@ -6,8 +6,12 @@ https://github.com/Kitware/CMake/archive/refs/tags/v3.22.0.tar.gz
 {% endblock %}
 
 {% block bld_libs %}
-{{'lib/darwin/framework/CoreFoundation/mix.sh' | darwin}}
-{{'lib/linux/mix.sh' | linux}}
+{% if target.os == 'darwin' %}
+lib/darwin/framework/CoreFoundation/mix.sh
+{% endif %}
+{% if target.os == 'linux' %}
+lib/linux/mix.sh
+{% endif %}
 lib/z/mix.sh
 lib/xz/mix.sh
 lib/uv/mix.sh

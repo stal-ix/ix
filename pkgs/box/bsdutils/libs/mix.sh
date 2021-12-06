@@ -1,7 +1,7 @@
 {% extends '//mix/template/hub.sh' %}
 
 {% block lib_deps %}
-{% if mix.platform.target.os == 'linux' %}
+{% if target.os == 'linux' %}
 lib/linux/mix.sh
 lib/fts/mix.sh
 lib/rpmatch/mix.sh

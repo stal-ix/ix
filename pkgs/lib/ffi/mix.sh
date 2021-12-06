@@ -6,7 +6,9 @@ f2e272ec793571f28d52006ad14534c4
 {% endblock %}
 
 {% block bld_libs %}
-{{'lib/linux/mix.sh' | linux}}
+{% if target.os == 'linux' %}
+lib/linux/mix.sh
+{% endif %}
 {% endblock %}
 
 {% block bld_tool %}

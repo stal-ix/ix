@@ -98,22 +98,6 @@ class RenderContext:
     def flags(self):
         return self.package.flags
 
-    @property
-    def os(self):
-        return self.platform['target']['os']
-
-    def if_linux(self, v):
-        return self.if_os(v, 'linux')
-
-    def if_darwin(self, v):
-        return self.if_os(v, 'darwin')
-
-    def if_os(self, v, os):
-        if self.os == os:
-            return v
-
-        return ''
-
     def template(self, path):
         tmpl = self.package.manager.env.get_template(path)
 

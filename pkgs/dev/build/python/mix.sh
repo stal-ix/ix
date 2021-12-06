@@ -5,8 +5,12 @@
 
 {% block bld_libs %}
 lib/z/mix.sh
-{{'lib/linux/mix.sh' | linux}}
-{{'lib/darwin/framework/SystemConfiguration/mix.sh' | darwin}}
+{% if target.os == 'linux' %}
+lib/linux/mix.sh
+{% endif %}
+{% if target.os == 'darwin' %}
+lib/darwin/framework/SystemConfiguration/mix.sh
+{% endif %}
 {% endblock %}
 
 {% block bld_tool %}

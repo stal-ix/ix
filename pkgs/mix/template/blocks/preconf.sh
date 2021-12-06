@@ -19,7 +19,7 @@ done
 
 cat << EOF > arch
 #!$(which dash)
-echo '{{mix.platform.target.arch}}'
+echo '{{target.arch}}'
 EOF
 
 chmod +x arch
@@ -31,7 +31,7 @@ EOF
 
 chmod +x hostname
 
-{% if mix.platform.target.os == 'darwin' %}
+{% if target.os == 'darwin' %}
 cat << EOF > sw_vers
 #!$(which dash)
 echo ${MACOSX_DEPLOYMENT_TARGET}

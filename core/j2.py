@@ -7,16 +7,6 @@ def b64(data):
     return base64.b64encode(data.encode()).decode()
 
 
-@jinja2.pass_context
-def j2_linux(ctx, v):
-    return ctx.get('mix').if_linux(v)
-
-
-@jinja2.pass_context
-def j2_darwin(ctx, v):
-    return ctx.get('mix').if_darwin(v)
-
-
 def cut_include(l):
     l = l.strip()
 
@@ -32,8 +22,6 @@ class Env(jinja2.Environment, jinja2.BaseLoader):
         jinja2.Environment.__init__(self, loader=self, auto_reload=False, keep_trailing_newline=True)
         self.cache = {}
         self.vfs = vfs
-        self.filters["linux"] = j2_linux
-        self.filters["darwin"] = j2_darwin
 
     def resolve_includes(self, data, name):
         def it():

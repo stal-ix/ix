@@ -4,7 +4,9 @@
 {% endblock %}
 
 {% block bld_libs %}
-{{'boot/7/lib/linux/mix.sh' | linux}}
+{% if target.os == 'linux' %}
+boot/7/lib/linux/mix.sh
+{% endif %}
 {% endblock %}
 
 {% block bld_deps %}

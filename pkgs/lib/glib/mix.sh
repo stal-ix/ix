@@ -11,7 +11,7 @@ lib/pcre/mix.sh
 lib/iconv/mix.sh
 lib/ffi/mix.sh
 lib/intl/mix.sh
-{% if mix.platform.target.os == 'darwin' %}
+{% if target.os == 'darwin' %}
 lib/darwin/framework/CoreServices/mix.sh
 lib/darwin/framework/Foundation/mix.sh
 {% endif %}
@@ -22,7 +22,9 @@ lib/c++/mix.sh
 {% endblock %}
 
 {% block std_env %}
-{{'dev/lang/cctools/mix.sh' | darwin}}
+{% if target.os == 'darwin' %}
+dev/lang/cctools/mix.sh
+{% endif %}
 dev/build/meson/mix.sh
 env/std/0/mix.sh
 {% endblock %}

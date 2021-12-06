@@ -14,7 +14,9 @@ lib/brotli/mix.sh
 lib/nghttp2/mix.sh
 lib/ssh/2/mix.sh
 lib/{{curlssl or 'openssl'}}/mix.sh
-{{'lib/darwin/framework/SystemConfiguration/mix.sh' | darwin}}
+{% if target.os == 'darwin' %}
+lib/darwin/framework/SystemConfiguration/mix.sh
+{% endif %}
 {% endblock %}
 
 {% block bld_tool %}

@@ -9,7 +9,7 @@ boot/2/env/mix.sh
 {% endblock %}
 
 {% block patch %}
-{% if mix.platform.target.os == 'linux' %}
+{% if target.os == 'linux' %}
 >lib/fnmatch.c
 {% endif %}
 {% endblock %}

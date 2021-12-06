@@ -14,7 +14,9 @@ lib/xerces-c/mix.sh
 lib/magic/mix.sh
 lib/uchardet/mix.sh
 lib/fmt/mix.sh
-{{'lib/linux/mix.sh' | linux}}
+{% if target.os == 'linux' %}
+lib/linux/mix.sh
+{% endif %}
 {% endblock %}
 
 {% block bld_tool %}
@@ -27,7 +29,7 @@ find . | grep CMakeLists.txt | while read l; do
     sed -e 's/ MODULE / STATIC /' -i ${l}
 done
 
-{% if mix.platform.target.os == 'linux' %}
+{% if target.os == 'linux' %}
 cat << EOF > execinfo.h
 int backtrace(void**, int) {
     return 0;

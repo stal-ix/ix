@@ -10,7 +10,7 @@ lib/png/mix.sh
 lib/lcms2/mix.sh
 lib/python/mix.sh
 lib/harfbuzz/mix.sh
-{% if mix.platform.target.os == 'darwin' %}
+{% if target.os == 'darwin' %}
 lib/darwin/framework/IOKit/mix.sh
 lib/darwin/framework/Cocoa/mix.sh
 lib/darwin/framework/AppKit/mix.sh
@@ -55,7 +55,7 @@ cd build
 
 rm glfw-cocoa-monotonic.c.o
 python3 $(which gen_py_init.py) ${PYTHONHOME} fast_data_types > config.c
-llvm-nm glfw*.o | grep glfw | python3 $(which gen_dl_stubs.py) glfw {{mix.platform.target.os}} > dl.cpp
+llvm-nm glfw*.o | grep glfw | python3 $(which gen_dl_stubs.py) glfw {{target.os}} > dl.cpp
 clang dl.cpp config.c ${PYTHONHOME}/lib/python*/config-*/python.o fast*.o glfw*.o -o kitty-bin
 {% endblock %}
 

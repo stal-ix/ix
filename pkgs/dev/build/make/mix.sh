@@ -17,7 +17,7 @@ env/std/0/mix.sh
 {% block setup %}
 export CPPFLAGS="-I./glob ${CPPFLAGS}"
 
-{% if mix.platform.target.os == 'darwin' %}
+{% if target.os == 'darwin' %}
 export CPPFLAGS="-Dglob=make_glob -Dglobfree=make_globfree -Dfnmatch=make_fnmatch ${CPPFLAGS}"
 {% endif %}
 {% endblock %}

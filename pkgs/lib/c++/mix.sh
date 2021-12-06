@@ -5,7 +5,9 @@ lib/c/naked/mix.sh
 {% endblock %}
 
 {% block bld_libs %}
-{{'lib/linux/mix.sh' | linux}}
+{% if target.os == 'linux' %}
+lib/linux/mix.sh
+{% endif %}
 {% endblock %}
 
 {% block std_env %}

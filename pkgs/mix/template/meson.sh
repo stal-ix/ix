@@ -1,7 +1,9 @@
 {% extends 'ninja.sh' %}
 
 {% block std_env %}
-{{'dev/lang/cctools/mix.sh' | darwin}}
+{% if target.os == 'darwin' %}
+dev/lang/cctools/mix.sh
+{% endif %}
 dev/build/meson/mix.sh
 dev/build/cmake/mix.sh
 dev/build/pkg-config/mix.sh
@@ -19,7 +21,7 @@ meson
 -Ddefault_library=static
 -Dwerror=false
 
-{% if mix.platform.target.os == 'darwin' %}
+{% if target.os == 'darwin' %}
 -Db_asneeded=false
 -Db_lundef=false
 {% endif %}

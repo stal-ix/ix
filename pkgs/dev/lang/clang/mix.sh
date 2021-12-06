@@ -1,8 +1,12 @@
 {% extends '//mix/template/cmake.sh' %}
 
 {% block bld_libs %}
-{{'lib/linux/mix.sh' | linux}}
-{{'lib/darwin/framework/CoreFoundation/mix.sh' | darwin}}
+{% if target.os == 'linux' %}
+lib/linux/mix.sh
+{% endif %}
+{% if target.os == 'darwin' %}
+lib/darwin/framework/CoreFoundation/mix.sh
+{% endif %}
 boot/final/cxx/mix.sh
 {% endblock %}
 
@@ -20,7 +24,7 @@ env/release/mix.sh
 {% endblock %}
 
 {% block setup %}
-{% if mix.platform.target.os == 'darwin' %}
+{% if target.os == 'darwin' %}
 export LDFLAGS="-Wl,-w ${LDFLAGS}"
 {% endif %}
 {% endblock %}

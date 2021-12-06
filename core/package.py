@@ -73,10 +73,24 @@ def visit_lst(lst, f):
 
 class Package:
     def __init__(self, selector, mngr):
+        self.manager = mngr
+
+        selector = json.loads(json.dumps(selector))
+
+        if 'flags' not in selector:
+            selector['flags'] = {}
+
+        flags = selector['flags']
+
+        if 'host' not in flags:
+            flags['host'] = self.config.platform['host']
+
+        if 'target' not in flags:
+            flags['target'] = self.config.platform['target']
+
         print(selector)
 
         self.selector = selector
-        self.manager = mngr
         self.descr = cr.RenderContext(self).render()
 
         self.uid = cu.struct_hash([
@@ -95,7 +109,7 @@ class Package:
 
     @property
     def flags(self):
-        return self.selector.get('flags', {})
+        return self.selector['flags']
 
     @property
     def name(self):
@@ -112,13 +126,12 @@ class Package:
             if 'lib' in reason:
                 n = make_selector(n, dict_update(self.flags, {'lib': True}.items()))
             else:
-                n = make_selector(n, {})
+                h = self.flags['host']
+                n = make_selector(n, {'host': h, 'target': h})
 
         return self.load_package_impl(n, reason)
 
     def load_package_impl(self, selector, reason):
-        # print(self.selector, selector, reason)
-
         try:
             return self.manager.load_package(selector)
         except FileNotFoundError:

@@ -6,7 +6,7 @@ dev/build/pkg-config/mix.sh
 {% endblock %}
 
 {% block step_setup %}
-export ac_cv_build="{{mix.platform.target.gnu_arch}}-{{mix.platform.target.hw_vendor}}-{{mix.platform.target.os}}"
+export ac_cv_build="{{target.gnu_arch}}-{{target.hw_vendor}}-{{target.os}}"
 export ac_cv_host="${ac_cv_build}"
 export ac_cv_target="${ac_cv_build}"
 

@@ -6,7 +6,7 @@ https://github.com/jarun/nnn/archive/refs/tags/v4.3.tar.gz
 {% endblock %}
 
 {% block bld_libs %}
-{% if mix.platform.target.os == 'linux' %}
+{% if target.os == 'linux' %}
 lib/fts/mix.sh
 {% endif %}
 lib/readline/mix.sh

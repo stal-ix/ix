@@ -18,7 +18,7 @@ cd ${out} && ${untar} ${src}/bmake* && cd bmake
 {% endblock %}
 
 {% block setup %}
-{% if mix.platform.target.os == 'linux' %}
+{% if target.os == 'linux' %}
 export CPPFLAGS="-Imissing -Dstrtoul=bmake_strtoul ${CPPFLAGS}"
 {% endif %}
 {% endblock %}
@@ -28,7 +28,7 @@ cat << EOF > config.h
 {% include 'config.h' %}
 EOF
 
-{% if mix.platform.target.os == 'linux' %}
+{% if target.os == 'linux' %}
 cat << EOF >> make.h
 #undef MAKE_RCSID
 #define MAKE_RCSID(x)

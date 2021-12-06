@@ -12,10 +12,10 @@ lib/idn/2/mix.sh
 lib/tasn1/mix.sh
 lib/nettle/mix.sh
 lib/unbound/mix.sh
-{% if mix.platform.target.os == 'linux' %}
+{% if target.os == 'linux' %}
 lib/seccomp/mix.sh
 {% endif %}
-{% if mix.platform.target.os == 'darwin' %}
+{% if target.os == 'darwin' %}
 lib/darwin/framework/Security/mix.sh
 {% endif %}
 lib/unistring/mix.sh
@@ -31,7 +31,7 @@ export CPPFLAGS="-Dverbose=gnutls_verbose ${CPPFLAGS}"
 {% endblock %}
 
 {% block configure_flags %}
-{% if mix.platform.target.os == 'darwin' %}
+{% if target.os == 'darwin' %}
 --disable-hardware-acceleration
 {% endif %}
 --disable-tests
@@ -39,7 +39,7 @@ export CPPFLAGS="-Dverbose=gnutls_verbose ${CPPFLAGS}"
 {% endblock %}
 
 {% block patch %}
-{% if mix.platform.target.os == 'linux' %}
+{% if target.os == 'linux' %}
 cat << EOF > src/gl/error.h
 #include_next <error.h>
 EOF

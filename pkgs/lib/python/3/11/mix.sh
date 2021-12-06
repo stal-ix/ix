@@ -39,7 +39,11 @@ cat Modules/Setup \
 
 cat _ - << EOF > Modules/Setup.local
 _decimal _decimal/_decimal.c
-{{'_scproxy _scproxy.c' | darwin}}
+
+{% if target.os == 'darwin' %}
+_scproxy _scproxy.c
+{% endif %}
+
 pyexpat pyexpat.c
 EOF
 {% endblock %}

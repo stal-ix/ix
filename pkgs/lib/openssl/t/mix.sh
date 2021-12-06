@@ -6,7 +6,9 @@ https://www.openssl.org/source/openssl-3.0.0.tar.gz
 {% endblock %}
 
 {% block bld_libs %}
-{{'lib/linux/mix.sh' | linux}}
+{% if target.os == 'linux' %}
+lib/linux/mix.sh
+{% endif %}
 {% endblock %}
 
 {% block bld_tool %}
@@ -38,7 +40,7 @@ PLATFORM_darwin_x86_64="darwin64-x86_64-cc"
 PLATFORM_linux_x86_64="linux-x86_64-clang"
 
 perl ./Configure \
-    ${PLATFORM_{{mix.platform.target.os}}_{{mix.platform.target.arch}}} \
+    ${PLATFORM_{{target.os}}_{{target.arch}}} \
     {{mix.fix_list(openssl_conf_opts)}}
 {% endblock %}
 

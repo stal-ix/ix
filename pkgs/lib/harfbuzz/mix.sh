@@ -9,7 +9,7 @@ https://github.com/harfbuzz/harfbuzz/archive/refs/tags/3.1.1.tar.gz
 lib/c++/mix.sh
 lib/glib/mix.sh
 lib/freetype/mix.sh
-{% if mix.platform.target.os == 'darwin' %}
+{% if target.os == 'darwin' %}
 lib/darwin/framework/CoreText/mix.sh
 lib/darwin/framework/ApplicationServices/mix.sh
 {% endif %}
@@ -24,7 +24,7 @@ dev/tool/ragel/6/mix.sh
 {% endblock %}
 
 {% block meson_flags %}
-{% if mix.platform.target.os == 'darwin' %}
+{% if target.os == 'darwin' %}
 -Dcoretext=enabled
 {% endif %}
 -Dglib=enabled

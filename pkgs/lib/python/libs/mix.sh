@@ -14,5 +14,7 @@ lib/curses/mix.sh
 lib/openssl/mix.sh
 lib/mpdecimal/mix.sh
 lib/{{edit or 'edit'}}/mix.sh
-{{'lib/darwin/framework/SystemConfiguration/mix.sh' | darwin}}
+{% if target.os == 'darwin' %}
+lib/darwin/framework/SystemConfiguration/mix.sh
+{% endif %}
 {% endblock %}

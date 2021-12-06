@@ -6,7 +6,9 @@
 
 {% block bld_libs %}
 dev/debug/gdb/py/mix.sh(edit=readline)
-{{'lib/linux/mix.sh' | linux}}
+{% if target.os == 'linux' %}
+lib/linux/mix.sh
+{% endif %}
 lib/intel/pt/mix.sh
 lib/intl/mix.sh
 lib/expat/mix.sh

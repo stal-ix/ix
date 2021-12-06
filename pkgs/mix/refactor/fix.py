@@ -2,14 +2,23 @@ import os
 
 
 def fix(d):
-    if '/lib.sh' in d:
-        d = d.replace('lib.sh', 'hub.sh').replace('block deps', 'block lib_deps')
+    if ' | linux' in d:
+        def it():
+            for l in d.split('\n'):
+                if ' | linux' in l:
+                    yield "{% if target.os == 'linux' %}"
 
-    if '/hub.sh' in d:
-        d = d.replace('block deps', 'block run_deps')
+                    l = l[l.index("'") + 1:]
+                    l = l[:l.index("'")]
+
+                    yield l
+                    yield "{% endif %}"
+                else:
+                    yield l
+
+        return '\n'.join(it()).strip() + '\n'
 
     return d
-
 
 for a, b, c in os.walk('.'):
     for x in c:

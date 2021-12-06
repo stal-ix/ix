@@ -8,7 +8,7 @@ https://github.com/OpenVPN/openvpn/archive/refs/tags/v2.5.4.tar.gz
 {% block bld_libs %}
 lib/lz4/mix.sh
 lib/lzo/mix.sh
-{% if mix.platform.target.os == 'linux' %}
+{% if target.os == 'linux' %}
 lib/linux/mix.sh
 {% endif %}
 lib/{{openvpnssl or 'openssl'}}/mix.sh

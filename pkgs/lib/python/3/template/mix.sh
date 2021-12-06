@@ -11,7 +11,9 @@ dev/build/autoconf/archive/mix.sh
 {% endblock %}
 
 {% block bld_libs %}
-{{'lib/linux/mix.sh' | linux}}
+{% if target.os == 'linux' %}
+lib/linux/mix.sh
+{% endif %}
 {% endblock %}
 
 {% block patch_configure %}
@@ -55,7 +57,10 @@ _opcode _opcode.c
 _posixshmem _multiprocessing/posixshmem.c -I\$(srcdir)/Modules/_multiprocessing
 _multiprocessing _multiprocessing/multiprocessing.c _multiprocessing/semaphore.c -I\$(srcdir)/Modules/_multiprocessing
 _queue _queuemodule.c
-{{'_scproxy _scproxy.c' | darwin}}
+
+{% if target.os == 'darwin' %}
+_scproxy _scproxy.c
+{% endif %}
 
 {% block extra_modules %}
 readline readline.c
