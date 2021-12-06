@@ -1,5 +1,3 @@
-cur_dir=${PWD}
-
 mkdir ${tmp}/tools && cd ${tmp}/tools
 
 export PATH="${PWD}:${PATH}"
@@ -39,5 +37,3 @@ setup_toolchain
 
 {% block toolconf %}
 {% endblock %}
-
-cd ${cur_dir}

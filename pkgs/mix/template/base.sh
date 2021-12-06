@@ -4,7 +4,9 @@
 step_unpack() {
 echo 'unpack step'
 
+{% block step_unpack %}
 {% block unpack %}
+{% endblock %}
 {% endblock %}
 }
 
@@ -55,7 +57,9 @@ set -eu
 
 echo 'test stage'
 
+{% block step_test %}
 {% block test %}
+{% endblock %}
 {% endblock %}
 )
 

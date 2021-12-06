@@ -4,6 +4,13 @@
 {% include 'blocks/unpack.sh' %}
 {% endblock %}
 
+{% block step_setup %}
+CD=${PWD}
+{{super()}}
+{% include 'blocks/preconf.sh' %}
+cd ${CD}
+{% endblock %}
+
 {% block step_install %}
 {{super()}}
 
@@ -14,16 +21,6 @@
 {% block prepare_env %}
 {% include 'blocks/env.sh' %}
 {% endblock %}
-{% endblock %}
-
-{% block step_setup %}
-{{super()}}
-{% include 'blocks/preconf.sh' %}
-{% endblock %}
-
-{% block step_patch %}
-{% include 'blocks/prepatch.sh' %}
-{{super()}}
 {% endblock %}
 
 {% block std_box %}

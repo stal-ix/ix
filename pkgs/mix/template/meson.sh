@@ -30,7 +30,11 @@ meson {{mix.fix_list(meson_flags)}} {{ninja_build_dir}}
 {% endblock %}
 
 {% block step_patch %}
+(
+    set -eu
+
 {{super()}}
+)
 
 find . | grep meson.build | while read l; do
     sed -e 's|shared_library|library|g' -i ${l}

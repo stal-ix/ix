@@ -85,3 +85,14 @@ ${COFLAGS}
 {{mix.fix_list(command_args)}}
 {% endblock %}
 {% endblock %}
+
+{% block step_patch %}
+{% block touch_yl %}
+find . | grep '\.[yl]$' | while read l; do
+    echo "TOUCH ${l}"
+    touch ${l}
+done
+{% endblock %}
+
+{{super()}}
+{% endblock %}

@@ -7,8 +7,5 @@ env/tools/mix.sh
 {% block step_setup %}
 {% endblock %}
 
-{% block step_patch %}
-{% endblock %}
-
-{% block unpack %}
+{% block step_unpack %}
 {% endblock %}
