@@ -5,7 +5,17 @@ dev/build/cmake/mix.sh
 {{super()}}
 {% endblock %}
 
-{% set cmflags %}
+{% block configure %}
+{% set command_args %}
+cmake
+
+-B {{ninja_build_dir}}
+-G Ninja
+
+-Wno-dev
+
+${CMFLAGS}
+
 -DCMAKE_INSTALL_PREFIX="${out}"
 -DCMAKE_INSTALL_LIBDIR="${out}/lib"
 -DCMAKE_C_COMPILER="$(which clang)"
@@ -27,6 +37,5 @@ dev/build/cmake/mix.sh
 {% endblock %}
 {% endset %}
 
-{% block configure %}
-cmake -B {{ninja_build_dir}} -G Ninja -Wno-dev ${CMFLAGS} {{mix.fix_list(cmflags)}}
+{{mix.fix_list(command_args)}}
 {% endblock %}

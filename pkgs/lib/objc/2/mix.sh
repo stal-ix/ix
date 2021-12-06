@@ -19,5 +19,4 @@ ${untar} ${src}/*.gz && mv robin* third_party/robin-map
 
 {% block patch %}
 sed -e 's| SHARED | STATIC |g' -i CMakeLists.txt
-#cat CMakeLists.txt | grep -v 'fobjc-runtime' > _ && mv _ CMakeLists.txt
 {% endblock %}

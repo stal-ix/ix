@@ -78,18 +78,18 @@ do_unpack() {
     step_unpack
 }
 
-do_patch() {
-    do_unpack
-    step_patch
-}
-
 do_setup() {
-    do_patch
+    do_unpack
     step_setup
 }
 
-do_configure() {
+do_patch() {
     do_setup
+    step_patch
+}
+
+do_configure() {
+    do_patch
     step_configure
 }
 

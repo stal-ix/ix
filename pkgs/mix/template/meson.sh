@@ -8,7 +8,10 @@ dev/build/pkg-config/mix.sh
 {{super()}}
 {% endblock %}
 
-{% set meson_flags %}
+{% block configure %}
+{% set command_args %}
+meson
+
 --libdir="${out}/lib"
 --libexecdir="${out}/bin/exec"
 
@@ -23,10 +26,11 @@ dev/build/pkg-config/mix.sh
 
 {% block meson_flags %}
 {% endblock %}
+
+{{ninja_build_dir}}
 {% endset %}
 
-{% block configure %}
-meson {{mix.fix_list(meson_flags)}} {{ninja_build_dir}}
+{{mix.fix_list(command_args)}}
 {% endblock %}
 
 {% block step_patch %}

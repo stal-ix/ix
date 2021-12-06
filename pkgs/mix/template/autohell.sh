@@ -13,14 +13,19 @@ export ac_cv_target="${ac_cv_build}"
 {{super()}}
 {% endblock %}
 
-{% block configure %}
-{% block check_tools %}
-{% if not mix.name.startswith('boot/') %}
-which pkg-config
-{% endif %}
+{% block step_patch %}
+{% block touch_yl %}
+find . | grep '\.[yl]$' | while read l; do
+    echo "TOUCH ${l}"
+    touch ${l}
+done
 {% endblock %}
 
-{% block prepare_configure %}
+(
+    set -eu
+{{super()}}
+)
+
 {% block autoreconf %}
 if which libtoolize; then
     echo "RUN LIBTOOLIZE"
@@ -35,16 +40,17 @@ fi
 
 {% block patch_configure %}
 cat configure \
-    | sed -e "s|/usr/bin/||g"                 \
-    | sed -e "s|/usr/|/nowhere/|g"            \
-    | sed -e "s|/bin/sh|$(which dash)|g"      \
-    | sed -e "s|/bin/arch|arch|g"             \
-    | sed -e "s|/bin/uname|uname|g"           \
-    | sed -e "s|/bin/machine|machine|g"       \
-    | sed -e "s|/bin/universe|universe|g"     \
+    | sed -e "s|/usr/bin/||g"             \
+    | sed -e "s|/usr/|/nowhere/|g"        \
+    | sed -e "s|/bin/sh|$(which dash)|g"  \
+    | sed -e "s|/bin/arch|arch|g"         \
+    | sed -e "s|/bin/uname|uname|g"       \
+    | sed -e "s|/bin/machine|machine|g"   \
+    | sed -e "s|/bin/universe|universe|g" \
     > _ && mv _ configure
 {% endblock %}
 
+{% block patch_gnu %}
 (
     find . | grep 'config.guess'
     find . | grep 'config.sub'
@@ -55,6 +61,14 @@ echo ${ac_cv_build}
 EOF
     chmod +x ${l}
 done
+{% endblock %}
+{% endblock %}
+
+{% block configure %}
+{% block check_tools %}
+{% if not mix.name.startswith('boot/') %}
+which pkg-config
+{% endif %}
 {% endblock %}
 
 {% block invoke_configure %}
@@ -84,15 +98,4 @@ ${COFLAGS}
 
 {{mix.fix_list(command_args)}}
 {% endblock %}
-{% endblock %}
-
-{% block step_patch %}
-{% block touch_yl %}
-find . | grep '\.[yl]$' | while read l; do
-    echo "TOUCH ${l}"
-    touch ${l}
-done
-{% endblock %}
-
-{{super()}}
 {% endblock %}
