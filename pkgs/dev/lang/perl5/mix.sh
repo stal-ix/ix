@@ -24,7 +24,7 @@ env/std/0/mix.sh
 export CPPFLAGS="-w ${CPPFLAGS}"
 {% endblock %}
 
-{% block toolconf %}
+{% block setup_tools %}
 cat << EOF > install_name_tool
 #!$(which dash)
 EOF

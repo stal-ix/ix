@@ -44,5 +44,5 @@ ln -s $(which dash) sh
 
 setup_toolchain
 
-{% block toolconf %}
+{% block setup_tools %}
 {% endblock %}

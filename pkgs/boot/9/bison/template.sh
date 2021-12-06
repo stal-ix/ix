@@ -15,7 +15,7 @@ boot/8/env/std/mix.sh
 boot/9/m4/mix.sh
 {% endblock %}
 
-{% block toolconf %}
+{% block setup_tools %}
 for x in perl makeinfo; do
     echo > ${x}
     chmod +x ${x}

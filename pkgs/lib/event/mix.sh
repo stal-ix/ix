@@ -19,7 +19,7 @@ dev/build/python/mix.sh
 dash autogen.sh
 {% endblock %}
 
-{% block toolconf %}
+{% block setup_tools %}
 ln -s $(which python3) python
 {% endblock %}
 

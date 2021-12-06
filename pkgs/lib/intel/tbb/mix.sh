@@ -9,7 +9,7 @@ fa317f16003e31e33a57ae7d888403e4
 lib/c++/mix.sh
 {% endblock %}
 
-{% block toolconf %}
+{% block setup_tools %}
 ln -s $(which llvm-install-name-tool) install_name_tool
 {% endblock %}
 

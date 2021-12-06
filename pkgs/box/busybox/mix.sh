@@ -13,7 +13,7 @@ lib/linux/mix.sh
 env/std/0/mix.sh
 {% endblock %}
 
-{% block toolconf %}
+{% block setup_tools %}
 rm strip
 
 ln -s $(which llvm-strip) strip

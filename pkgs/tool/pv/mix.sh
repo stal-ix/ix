@@ -21,7 +21,7 @@ export CPPFLAGS="-Dstat64=stat -Dfstat64=fstat -Dlstat64=lstat ${CPPFLAGS}"
 export LD=ld
 {% endblock %}
 
-{% block toolconf %}
+{% block setup_tools %}
 {% if mix.platform.target.os == 'linux' %}
 ln -s $(which ld.lld) ld
 {% endif %}

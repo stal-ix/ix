@@ -24,7 +24,7 @@ gnu/gettext/mix.sh
 net/openssh/mix.sh
 {% endblock %}
 
-{% block toolconf %}
+{% block setup_tools %}
 ln -s $(which bsdtar) tar
 ln -s $(which bsdcpio) cpio
 {% endblock %}

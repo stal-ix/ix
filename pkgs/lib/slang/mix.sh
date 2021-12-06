@@ -15,7 +15,7 @@ lib/curses/terminfo/mix.sh
 lib/oniguruma/mix.sh
 {% endblock %}
 
-{% block toolconf %}
+{% block setup_tools %}
 cat << EOF > ncurses5-config
 #!$(which dash)
 echo ${TERMINFO}

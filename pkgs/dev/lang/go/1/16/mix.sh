@@ -13,7 +13,7 @@ dev/lang/perl5/mix.sh
 {{super()}}
 {% endblock %}
 
-{% block toolconf %}
+{% block setup_tools %}
 cat << EOF > xcrun
 #!$(which python3)
 {% include 'xcrun.py' %}

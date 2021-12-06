@@ -19,7 +19,7 @@ cd expat
 -DEXPAT_SHARED_LIBS=OFF
 {% endblock %}
 
-{% block toolconf %}
+{% block setup_tools %}
 cat << EOF > install_name_tool
 EOF
 
