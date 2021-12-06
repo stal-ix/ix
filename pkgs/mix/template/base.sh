@@ -4,9 +4,7 @@
 step_unpack() {
 echo 'unpack step'
 
-{% block step_unpack %}
 {% block unpack %}
-{% endblock %}
 {% endblock %}
 }
 
@@ -31,6 +29,8 @@ echo 'setup stage'
 }
 
 step_configure() (
+set -eu
+
 echo 'configure stage'
 
 {% block step_configure %}
@@ -55,9 +55,7 @@ set -eu
 
 echo 'test stage'
 
-{% block step_test %}
 {% block test %}
-{% endblock %}
 {% endblock %}
 )
 

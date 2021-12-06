@@ -6,6 +6,7 @@
 
 {% block step_install %}
 {{super()}}
+
 {% block postinstall %}
 {% include 'blocks/postinstall.sh' %}
 {% endblock %}
@@ -21,7 +22,7 @@
 {% endblock %}
 
 {% block step_patch %}
-{% include 'blocks/prepatch.sh'%}
+{% include 'blocks/prepatch.sh' %}
 {{super()}}
 {% endblock %}
 
