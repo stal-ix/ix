@@ -1,4 +1,4 @@
-{% extends 'blocks.sh' %}
+{% extends 'base.sh' %}
 
 {% block unpack %}
 {% include 'blocks/unpack.sh' %}
@@ -6,7 +6,6 @@
 
 {% block step_install %}
 {{super()}}
-
 {% block postinstall %}
 {% include 'blocks/postinstall.sh' %}
 {% endblock %}
