@@ -18,6 +18,6 @@ lib/c++/mix.sh
 dev/build/python/mix.sh
 {% endblock %}
 
-{% block coflags %}
+{% block configure_flags %}
 --with-data-packaging=archive
 {% endblock %}

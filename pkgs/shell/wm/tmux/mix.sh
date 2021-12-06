@@ -15,7 +15,7 @@ lib/curses/mix.sh
 dev/lang/byacc/mix.sh
 {% endblock %}
 
-{% block coflags %}
+{% block configure_flags %}
 --enable-utf8proc
 {% endblock %}
 

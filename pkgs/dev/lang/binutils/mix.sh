@@ -15,7 +15,7 @@ dev/lang/flex/mix.sh
 dev/lang/bison/3/6/mix.sh
 {% endblock %}
 
-{% block coflags %}
+{% block configure_flags %}
 --enable-deterministic-archives
 --disable-werror
 --enable-interwork

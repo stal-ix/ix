@@ -14,7 +14,7 @@ gnu/patch/mix.sh
 env/std/0/mix.sh
 {% endblock %}
 
-{% block coflags %}
+{% block configure_flags %}
 --libexecdir="${out}/bin"
 --enable-no-install-program=stdbuf
 --enable-single-binary=symlinks

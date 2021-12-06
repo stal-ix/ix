@@ -15,7 +15,7 @@ boot/9/bison/3.4.1_2.sh
 cat Makefile | grep -v 'LIBINTL = -lintl' > _ && mv _ Makefile
 {% endblock %}
 
-{% block coflags %}
+{% block configure_flags %}
 {{super()}}
 --without-gmp
 {% endblock %}

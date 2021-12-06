@@ -30,7 +30,7 @@ gnu/which/mix.sh
 export CPPFLAGS="-Dverbose=gnutls_verbose ${CPPFLAGS}"
 {% endblock %}
 
-{% block coflags %}
+{% block configure_flags %}
 {% if mix.platform.target.os == 'darwin' %}
 --disable-hardware-acceleration
 {% endif %}

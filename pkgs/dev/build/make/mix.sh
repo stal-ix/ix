@@ -22,6 +22,6 @@ export CPPFLAGS="-Dglob=make_glob -Dglobfree=make_globfree -Dfnmatch=make_fnmatc
 {% endif %}
 {% endblock %}
 
-{% block coflags %}
+{% block configure_flags %}
 --disable-load
 {% endblock %}

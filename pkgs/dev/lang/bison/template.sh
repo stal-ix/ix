@@ -2,7 +2,7 @@
 
 {% block make_thrs %}1{% endblock %}
 
-{% block coflags %}
+{% block configure_flags %}
 --enable-relocatable
 {% endblock %}
 

@@ -9,6 +9,6 @@ f2c097557e2487313cd0be62d55952de
 lib/expat/mix.sh
 {% endblock %}
 
-{% block coflags %}
+{% block configure_flags %}
 --with-libexpat=yes
 {% endblock %}

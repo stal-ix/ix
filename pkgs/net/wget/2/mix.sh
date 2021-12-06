@@ -23,7 +23,7 @@ lib/pcre/mix.sh
 dev/doc/texinfo/mix.sh
 {% endblock %}
 
-{% block coflags %}
+{% block configure_flags %}
 --without-plugin-support
 --with-ssl=gnutls
 {% endblock %}

@@ -78,7 +78,7 @@ ${COFLAGS}
 --sbindir="${out}/bin"
 --libexecdir="${out}/bin/exec"
 
-{% block coflags %}
+{% block configure_flags %}
 {% endblock %}
 {% endset %}
 

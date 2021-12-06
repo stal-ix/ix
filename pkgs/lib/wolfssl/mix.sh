@@ -14,7 +14,7 @@ dev/build/automake/1.16.3/mix.sh
 dash autogen.sh
 {% endblock %}
 
-{% block coflags %}
+{% block configure_flags %}
 --enable-all
 --enable-opensslextra
 --enable-opensslall

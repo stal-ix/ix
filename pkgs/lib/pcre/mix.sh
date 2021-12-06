@@ -14,7 +14,7 @@ lib/bzip2/mix.sh
 env/std/0/mix.sh
 {% endblock %}
 
-{% block coflags %}
+{% block configure_flags %}
 --enable-pcregrep-libz
 --enable-pcregrep-libbz2
 --enable-unicode-properties

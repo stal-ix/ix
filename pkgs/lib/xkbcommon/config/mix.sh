@@ -14,7 +14,7 @@ gnu/gettext/mix.sh
 tool/compress/gzip/mix.sh
 {% endblock %}
 
-{% block coflags %}
+{% block configure_flags %}
 --disable-runtime-deps
 {% endblock %}
 

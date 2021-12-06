@@ -23,7 +23,7 @@ cd gettext-runtime
 export CPPFLAGS="-Dlocale_charset=intl_locale_charset ${CPPFLAGS}"
 {% endblock %}
 
-{% block coflags %}
+{% block configure_flags %}
 --with-included-gettext
 --enable-relocatable
 --disable-c++

@@ -20,6 +20,6 @@ dev/doc/texinfo/mix.sh
 >src/libs/libgroff/new.cpp
 {% endblock %}
 
-{% block coflags %}
+{% block configure_flags %}
 --with-uchardet=yes
 {% endblock %}

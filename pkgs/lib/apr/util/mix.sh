@@ -14,7 +14,7 @@ lib/sqlite3/mix.sh
 lib/openssl/mix.sh
 {% endblock %}
 
-{% block coflags %}
+{% block configure_flags %}
 --with-dbm=gdbm
 {% endblock %}
 

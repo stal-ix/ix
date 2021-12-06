@@ -16,7 +16,7 @@ dev/lang/flex/mix.sh
 dev/lang/bison/3/8/mix.sh
 {% endblock %}
 
-{% block coflags %}
+{% block configure_flags %}
 --disable-multilib
 --enable-languages=c,c++
 --with-static-standard-libraries=yes

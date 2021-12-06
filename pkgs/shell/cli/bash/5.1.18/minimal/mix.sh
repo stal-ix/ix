@@ -1,6 +1,6 @@
 {% extends '//shell/cli/bash/5.1.18/template/template.sh' %}
 
-{% block coflags %}
+{% block configure_flags %}
 {{super()}}
 --disable-nls
 --disable-readline

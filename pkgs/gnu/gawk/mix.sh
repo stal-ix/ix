@@ -23,7 +23,7 @@ boot/final/env/bison/mix.sh
 export CPPFLAGS="-Derr=gawk_err -Dxmalloc=gawk_xmalloc -Dxrealloc=Dgawk_xrealloc -Dregcomp=gawk_regcomp -Dregfree=gawk_regfree ${CPPFLAGS}"
 {% endblock %}
 
-{% block coflags %}
+{% block configure_flags %}
 --libexecdir=${out}/bin/awk_exec
 --disable-extensions
 {% endblock %}

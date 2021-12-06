@@ -21,7 +21,7 @@ env/std/0/mix.sh
 boot/final/env/bison/mix.sh
 {% endblock %}
 
-{% block coflags %}
+{% block configure_flags %}
 --enable-libgdbm-compat
 --with-readline
 {% endblock %}

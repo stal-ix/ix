@@ -14,7 +14,7 @@ shell/cli/bash/minimal/mix.sh
 env/std/0/mix.sh
 {% endblock %}
 
-{% block coflags %}
+{% block configure_flags %}
 --without-shared
 --without-debug
 --without-ada

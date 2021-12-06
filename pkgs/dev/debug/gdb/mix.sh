@@ -38,7 +38,7 @@ export ac_cv_search_tgetent=no
 >gdb/stub-termcap.c
 {% endblock %}
 
-{% block coflags %}
+{% block configure_flags %}
 --enable-tui
 --with-curses
 --with-system-zlib

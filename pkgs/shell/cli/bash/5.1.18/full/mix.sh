@@ -8,7 +8,7 @@ lib/intl/mix.sh
 {{super()}}
 {% endblock %}
 
-{% block coflags %}
+{% block configure_flags %}
 {{super()}}
 --with-installed-readline
 --enable-readline

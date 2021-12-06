@@ -17,6 +17,6 @@ lib/argp/standalone/mix.sh
 dev/build/python/mix.sh
 {% endblock %}
 
-{% block coflags %}
+{% block configure_flags %}
 --disable-systemd
 {% endblock %}

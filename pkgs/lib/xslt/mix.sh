@@ -14,7 +14,7 @@ dev/build/automake/1.16.3/mix.sh
 lib/xml2/mix.sh
 {% endblock %}
 
-{% block coflags %}
+{% block configure_flags %}
 --with-python=no
 --without-python
 {% endblock %}

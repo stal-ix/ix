@@ -36,7 +36,7 @@ export CPPFLAGS="-I${PWD} ${CPPFLAGS}"
 export ac_cv_c99=yes
 {% endblock %}
 
-{% block coflags %}
+{% block configure_flags %}
 --disable-libdebuginfod
 --disable-debuginfod
 {% endblock %}

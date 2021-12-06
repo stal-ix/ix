@@ -9,7 +9,7 @@ f433a39be087a9f0b197eb2307ad9f75
 lib/iconv/mix.sh
 {% endblock %}
 
-{% block coflags %}
+{% block configure_flags %}
 --with-ftp=off
 --with-http=off
 --with-modules=off

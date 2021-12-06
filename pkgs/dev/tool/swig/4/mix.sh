@@ -14,6 +14,6 @@ lib/pcre/mix.sh
 dev/lang/bison/3/7/mix.sh
 {% endblock %}
 
-{% block coflags %}
+{% block configure_flags %}
 --with-boost=no
 {% endblock %}

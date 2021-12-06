@@ -18,6 +18,6 @@ gnu/which/mix.sh
 {% block enable_static %}
 {% endblock %}
 
-{% block coflags %}
+{% block configure_flags %}
 --disable-bundled-libtom
 {% endblock %}

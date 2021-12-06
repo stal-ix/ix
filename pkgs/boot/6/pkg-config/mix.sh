@@ -8,7 +8,7 @@ boot/6/lib/iconv/mix.sh
 boot/5/env/std/mix.sh
 {% endblock %}
 
-{% block coflags %}
+{% block configure_flags %}
 {{super()}}
 --with-internal-glib
 {% endblock %}

@@ -10,7 +10,7 @@ dev/lang/byacc/mix.sh
 {{super()}}
 {% endblock %}
 
-{% block coflags %}
+{% block configure_flags %}
 {{super()}}
 --without-gmp
 {% endblock %}

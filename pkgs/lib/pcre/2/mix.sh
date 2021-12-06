@@ -19,7 +19,7 @@ dev/build/automake/1.16.3/mix.sh
 dash autogen.sh
 {% endblock %}
 
-{% block coflags %}
+{% block configure_flags %}
 --enable-pcre2grep-libz
 --enable-pcre2grep-libbz2
 --enable-newline-is-anycrlf

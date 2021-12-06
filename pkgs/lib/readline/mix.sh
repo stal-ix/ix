@@ -21,7 +21,7 @@ export CPPFLAGS="-Dxmalloc=rl_xmalloc -Dxrealloc=Drl_xrealloc ${CPPFLAGS}"
 cat terminal.c | grep -v 'char PC' > _ && mv _ terminal.c
 {% endblock %}
 
-{% block coflags %}
+{% block configure_flags %}
 --with-curses
 {% endblock %}
 

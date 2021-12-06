@@ -18,7 +18,7 @@ dev/build/help2man/mix.sh
 env/std/0/mix.sh
 {% endblock %}
 
-{% block coflags %}
+{% block configure_flags %}
 --disable-c++
 {% endblock %}
 

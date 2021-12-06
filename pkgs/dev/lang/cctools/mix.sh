@@ -51,7 +51,7 @@ libBlocksRuntime_la_SOURCES =
 EOF
 {% endblock %}
 
-{% block coflags %}
+{% block configure_flags %}
 {% if mix.platform.target.os == 'darwin' %}
 --with-sysroot=${OSX_SDK}
 {% endif %}

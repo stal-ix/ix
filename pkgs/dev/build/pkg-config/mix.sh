@@ -15,7 +15,7 @@ lib/iconv/mix.sh
 env/std/0/mix.sh
 {% endblock %}
 
-{% block coflags %}
+{% block configure_flags %}
 --disable-host-tool
 {% endblock %}
 

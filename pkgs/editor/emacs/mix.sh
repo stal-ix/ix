@@ -21,7 +21,7 @@ patch -p1 << EOF
 EOF
 {% endblock %}
 
-{% block coflags %}
+{% block configure_flags %}
 --without-all
 --without-x
 --with-dumping=pdumper

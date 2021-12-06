@@ -9,6 +9,6 @@ d276213d3acd10339cd37848b8c4ab1e
 lib/curses/mix.sh
 {% endblock %}
 
-{% block coflags %}
+{% block configure_flags %}
 --enable-colors256
 {% endblock %}

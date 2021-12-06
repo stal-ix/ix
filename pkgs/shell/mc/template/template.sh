@@ -24,7 +24,7 @@ tool/compress/all/mix.sh
 export CPPFLAGS="-w -Dupdate_panels=update_panels_mc -Dtilde_expand=tilde_expand_mc ${CPPFLAGS}"
 {% endblock %}
 
-{% block coflags %}
+{% block configure_flags %}
 --with-screen={{self.typ().strip()}}
 --with-search-engine=glib
 {% endblock %}

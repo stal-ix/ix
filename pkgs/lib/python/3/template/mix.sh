@@ -70,7 +70,7 @@ EOF
 {% endblock %}
 {% endblock %}
 
-{% block coflags %}
+{% block configure_flags %}
 {% if lib %}
 # use default lib path
 {% else %}

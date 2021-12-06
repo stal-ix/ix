@@ -24,7 +24,7 @@ EOF
 chmod +x ncurses5-config
 {% endblock %}
 
-{% block coflags %}
+{% block configure_flags %}
 --with-readline=gnu
 --without-png
 {% endblock %}

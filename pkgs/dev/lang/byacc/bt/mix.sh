@@ -1,5 +1,5 @@
 {% extends '//dev/lang/byacc/mix.sh' %}
 
-{% block coflags %}
+{% block configure_flags %}
 --enable-btyacc
 {% endblock %}

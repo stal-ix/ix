@@ -23,6 +23,6 @@ lib/z/mix.sh
 cd gettext-tools
 {% endblock %}
 
-{% block coflags %}
+{% block configure_flags %}
 --with-installed-libtextstyle
 {% endblock %}

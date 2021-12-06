@@ -20,7 +20,7 @@ mkdir build && cd build
 ../src/configure
 {% endblock %}
 
-{% block coflags %}
+{% block configure_flags %}
 --enable-threads=yes
 --enable-libatomic=system
 --enable-gmp=system

@@ -10,7 +10,7 @@ lib/linux/mix.sh
 lib/elfutils/mix.sh
 {% endblock %}
 
-{% block coflags %}
+{% block configure_flags %}
 --enable-mpers=no
 --with-libdw
 {% endblock %}

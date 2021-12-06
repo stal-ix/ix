@@ -8,7 +8,7 @@ export CPPFLAGS="-Dsh_unset_nodelay_mode=bash_sh_unset_nodelay_mode -Dsh_get_env
 boot/final/env/bison/mix.sh
 {% endblock %}
 
-{% block coflags %}
+{% block configure_flags %}
 --without-bash-malloc
 --enable-extended-glob
 --enable-job-control

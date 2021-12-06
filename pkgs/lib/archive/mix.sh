@@ -25,6 +25,6 @@ dev/build/automake/1.16.3/mix.sh
 env/std/0/mix.sh
 {% endblock %}
 
-{% block coflags %}
+{% block configure_flags %}
 --without-xml2
 {% endblock %}

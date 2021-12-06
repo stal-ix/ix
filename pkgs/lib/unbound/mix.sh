@@ -17,6 +17,6 @@ dev/build/autoconf/2/69/mix.sh
 dev/build/automake/1.16.3/mix.sh
 {% endblock %}
 
-{% block coflags %}
+{% block configure_flags %}
 --with-libunbound-only
 {% endblock %}

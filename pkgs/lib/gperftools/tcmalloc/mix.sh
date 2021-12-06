@@ -18,7 +18,7 @@ dev/build/automake/1.16.3/mix.sh
 sed -e 's|-lstdc++||g' -i Makefile.am
 {% endblock %}
 
-{% block coflags %}
+{% block configure_flags %}
 --enable-minimal
 --enable-sized-delete
 {% endblock %}
