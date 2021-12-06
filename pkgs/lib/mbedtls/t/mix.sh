@@ -4,7 +4,7 @@
 dev/build/python/mix.sh
 {% endblock %}
 
-{% block cmflags %}
+{% block cmake_flags %}
 -DMBEDTLS_FATAL_WARNINGS=OFF
 {% endblock %}
 

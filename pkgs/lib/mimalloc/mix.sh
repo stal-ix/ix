@@ -13,7 +13,7 @@ lib/c/naked/mix.sh
 env/std/1/mix.sh
 {% endblock %}
 
-{% block cmflags %}
+{% block cmake_flags %}
 -DMI_OVERRIDE=ON
 -DMI_BUILD_STATIC=ON
 -DMI_BUILD_SHARED=OFF

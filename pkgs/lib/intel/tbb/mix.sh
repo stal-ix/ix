@@ -13,7 +13,7 @@ lib/c++/mix.sh
 ln -s $(which llvm-install-name-tool) install_name_tool
 {% endblock %}
 
-{% block cmflags %}
+{% block cmake_flags %}
 -DTBB_TEST=OFF
 -DTBB_STRICT=OFF
 -DTBBMALLOC_BUILD=OFF

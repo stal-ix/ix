@@ -9,7 +9,7 @@ a0ec0dd35fd6c06544333d250e21ab22
 env/std/0/mix.sh
 {% endblock %}
 
-{% block cmflags %}
+{% block cmake_flags %}
 -DCARES_STATIC=ON
 -DCARES_SHARED=OFF
 {% endblock %}

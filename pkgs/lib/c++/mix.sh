@@ -16,7 +16,7 @@ env/std/1/mix.sh
 {% include '//mix/template/fetch_llvm.sh' %}
 {% endblock %}
 
-{% block cmflags %}
+{% block cmake_flags %}
 -DLIBCXXABI_ENABLE_SHARED=NO
 -DLIBCXXABI_ENABLE_STATIC=YES
 
@@ -36,7 +36,7 @@ env/std/1/mix.sh
 -DLLVM_ENABLE_RUNTIMES="libcxx;libcxxabi;libunwind"
 {% endblock %}
 
-{% block cmdir %}
+{% block cmake_srcdir %}
 runtimes
 {% endblock %}
 

@@ -16,7 +16,7 @@ export CPPFLAGS="-Dstricmp=xerces_stricmp -Dstrnicmp=xerces_strnicmp ${CPPFLAGS}
 export CXXFLAGS="-w ${CXXFLAGS}"
 {% endblock %}
 
-{% block cmflags %}
+{% block cmake_flags %}
 -Dnetwork-accessor=curl
 -Dtranscoder=iconv
 -Dmessage-loader=inmemory

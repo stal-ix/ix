@@ -10,6 +10,6 @@ d867c3a7e19852974cf402c6f6aeaaf3
 cd source
 {% endblock %}
 
-{% block cmflags %}
+{% block cmake_flags %}
 -DENABLE_SHARED=OFF
 {% endblock %}

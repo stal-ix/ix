@@ -14,7 +14,7 @@ env/std/0/mix.sh
 cd expat
 {% endblock %}
 
-{% block cmflags %}
+{% block cmake_flags %}
 -DEXPAT_BUILD_EXAMPLES=OFF
 -DEXPAT_SHARED_LIBS=OFF
 {% endblock %}

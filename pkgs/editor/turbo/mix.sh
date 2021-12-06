@@ -17,7 +17,7 @@ lib/clipboard/mix.sh
 echo 'install(TARGETS turbo DESTINATION bin)' >> CMakeLists.txt
 {% endblock %}
 
-{% block cmflags %}
+{% block cmake_flags %}
 -DTURBO_USE_SYSTEM_DEPS=ON
 -DTURBO_USE_SYSTEM_TVISION=ON
 {% endblock %}

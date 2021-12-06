@@ -24,7 +24,7 @@ dev/tool/swig/4/mix.sh
 sed -e 's|libkind SHARED|libkind STATIC|' -i lldb/cmake/modules/AddLLDB.cmake
 {% endblock %}
 
-{% block cmflags %}
+{% block cmake_flags %}
 -DLLVM_BUILD_LLVM_DYLIB=OFF
 -DLLVM_LINK_LLVM_DYLIB=OFF
 -DLLVM_ENABLE_PROJECTS="clang;lldb"
@@ -39,7 +39,7 @@ sed -e 's|libkind SHARED|libkind STATIC|' -i lldb/cmake/modules/AddLLDB.cmake
 -DLLDB_ENABLE_PYTHON=ON
 {% endblock %}
 
-{% block cmdir %}
+{% block cmake_srcdir %}
 llvm
 {% endblock %}
 

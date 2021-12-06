@@ -19,10 +19,10 @@ dev/build/cmake/mix.sh
 -DCMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH=NO
 -DCMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY=NO
 
-{% block cmflags %}
+{% block cmake_flags %}
 {% endblock %}
 
-{% block cmdir %}
+{% block cmake_srcdir %}
 .
 {% endblock %}
 {% endset %}

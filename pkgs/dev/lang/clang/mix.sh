@@ -29,7 +29,7 @@ export LDFLAGS="-Wl,-w ${LDFLAGS}"
 echo > llvm/unittests/Support/DynamicLibrary/CMakeLists.txt
 {% endblock %}
 
-{% block cmflags %}
+{% block cmake_flags %}
 -DLLVM_BUILD_LLVM_DYLIB=OFF
 -DLLVM_LINK_LLVM_DYLIB=OFF
 -DLLVM_ENABLE_PROJECTS="clang;lld;polly"
@@ -39,7 +39,7 @@ echo > llvm/unittests/Support/DynamicLibrary/CMakeLists.txt
 -DLLVM_DYLIB_COMPONENTS=''
 {% endblock %}
 
-{% block cmdir %}
+{% block cmake_srcdir %}
 llvm
 {% endblock %}
 

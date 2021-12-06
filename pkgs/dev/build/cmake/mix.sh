@@ -24,7 +24,7 @@ boot/final/env/tools/mix.sh
 env/std/mix.sh
 {% endblock %}
 
-{% block cmflags %}
+{% block cmake_flags %}
 -DBUILD_TESTING=OFF
 -DCMAKE_USE_SYSTEM_EXPAT=ON
 -DCMAKE_USE_SYSTEM_ZLIB=ON

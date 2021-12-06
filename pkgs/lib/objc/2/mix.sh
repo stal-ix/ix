@@ -13,7 +13,7 @@ rm -rf third_party/robin-map
 ${untar} ${src}/*.gz && mv robin* third_party/robin-map
 {% endblock %}
 
-{% block cmflags %}
+{% block cmake_flags %}
 -DTESTS=OFF
 {% endblock %}
 
