@@ -31,6 +31,15 @@ EOF
 
 chmod +x hostname
 
+{% if mix.platform.target.os == 'darwin' %}
+cat << EOF > sw_vers
+#!$(which dash)
+echo ${MACOSX_DEPLOYMENT_TARGET}
+EOF
+
+chmod +x sw_vers
+{% endif %}
+
 ln -s $(which dash) sh
 
 setup_toolchain

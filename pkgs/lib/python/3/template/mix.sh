@@ -19,17 +19,6 @@ dev/build/autoconf/archive/mix.sh
 sed -e 's/MULTIARCH=\$.*/MULTIARCH=/' -i configure
 {% endblock %}
 
-{% block toolconf %}
-{% if mix.platform.target.os == 'darwin' %}
-cat << EOF > sw_vers
-#!$(which dash)
-echo ${MACOSX_DEPLOYMENT_TARGET}
-EOF
-
-chmod +x sw_vers
-{% endif %}
-{% endblock %}
-
 {% block patch %}
 sed -e 's|spec is None|spec is None or spec.loader is None|' -i Lib/modulefinder.py
 sed -e 's|/usr|/eat/shit|' -i setup.py
