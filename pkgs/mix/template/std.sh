@@ -16,8 +16,12 @@
 {% endblock %}
 {% endblock %}
 
+{% block step_patch %}
 {% block prepatch %}
 {% include 'blocks/prepatch.sh'%}
+{% endblock %}
+
+{{super()}}
 {% endblock %}
 
 {% block postinstall %}

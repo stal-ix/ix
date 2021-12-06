@@ -8,9 +8,6 @@
 
 
 {% block step_patch %}
-{% block prepatch %}
-{% endblock %}
-
 {% block patch %}
 {% endblock %}
 {% endblock %}
@@ -29,9 +26,6 @@
 
 
 {% block step_build %}
-{% block prebuild %}
-{% endblock %}
-
 {% block build %}
 {% endblock %}
 {% endblock %}

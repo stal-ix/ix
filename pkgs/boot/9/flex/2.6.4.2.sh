@@ -5,5 +5,5 @@ boot/9/flex/2.6.4.1.sh
 boot/9/bison/3.7.6_1.sh
 {% endblock %}
 
-{% block prebuild %}
+{% block flex_prebuild %}
 {% endblock %}

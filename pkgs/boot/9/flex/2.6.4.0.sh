@@ -20,7 +20,8 @@ boot/8/env/std/mix.sh
 cd src && rm parse.c parse.h scan.c skel.c
 {% endblock %}
 
-{% block prebuild %}
+{% block build %}
+{% block flex_prebuild %}
 (
     set -eu
 
@@ -29,4 +30,7 @@ cd src && rm parse.c parse.h scan.c skel.c
     byacc -d parse.y && mv y.tab.c parse.c && mv y.tab.h parse.h
     echo 'extern int yylval;' >> parse.h
 )
+{% endblock %}
+
+{{super()}}
 {% endblock %}
