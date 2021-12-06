@@ -8,8 +8,12 @@
 {% include 'blocks/env.sh' %}
 {% endblock %}
 
+{% block step_setup %}
+{{super()}}
+
 {% block preconf %}
 {% include 'blocks/preconf.sh' %}
+{% endblock %}
 {% endblock %}
 
 {% block prepatch %}

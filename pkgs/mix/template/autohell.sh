@@ -5,10 +5,12 @@ dev/build/pkg-config/mix.sh
 {{super()}}
 {% endblock %}
 
-{% block template_setup %}
+{% block step_setup %}
 export ac_cv_build="{{mix.platform.target.gnu_arch}}-{{mix.platform.target.hw_vendor}}-{{mix.platform.target.os}}"
 export ac_cv_host="${ac_cv_build}"
 export ac_cv_target="${ac_cv_build}"
+
+{{super()}}
 {% endblock %}
 
 {% block configure %}

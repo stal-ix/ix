@@ -5,5 +5,5 @@ cp bb/parse-gram.* src/
 touch src/*.c src/*.h
 {% endblock %}
 
-{% block postconf %}
+{% block bison_postconf %}
 {% endblock %}

@@ -17,9 +17,13 @@ export CPPFLAGS="-Derror=b_error -Derror_at_line=b_error_at_line -Derror_message
 {% endblock %}
 {% endblock %}
 
-{% block postconf %}
+{% block configure %}
+{{super()}}
+
+{% block bison_postconf %}
 rm tests/bison
 ln -s $(which bison) tests/
+{% endblock %}
 {% endblock %}
 
 {% block patch %}
