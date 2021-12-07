@@ -9,7 +9,7 @@ a66fa869543707279fb78a24d42cbb1d
 lib/wayland/mix.sh
 {% endblock %}
 
-{% block run_deps %}
+{% block ind_deps %}
 lib/wayland/mix.sh
 {% endblock %}
 

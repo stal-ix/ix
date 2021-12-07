@@ -1,6 +1,6 @@
 {% extends '//mix/template/py.py' %}
 
-{% block run_deps %}
+{% block lib_deps %}
 env/toolchain/cc/clang/mix.sh
 env/toolchain/ar/llvm/mix.sh
 env/toolchain/ld/lld/mix.sh

@@ -5,7 +5,7 @@ https://storage.yandexcloud.net/mix-cache/{{self.link().strip()}}
 {{self.md5().strip()}}
 {% endblock %}
 
-{% block run_deps %}
+{% block ind_deps %}
 env/toolchain/mix.sh
 {% endblock %}
 
