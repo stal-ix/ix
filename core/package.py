@@ -82,9 +82,6 @@ class Package:
 
         flags = selector['flags']
 
-        if 'host' not in flags:
-            flags['host'] = self.config.platform['host']
-
         if 'target' not in flags:
             flags['target'] = self.config.platform['target']
 
@@ -119,6 +116,14 @@ class Package:
     def config(self):
         return self.manager.config
 
+    @property
+    def target(self):
+        return self.flags['target']
+
+    @property
+    def host(self):
+        return self.config.platform['host']
+
     def load_package(self, n, reason):
         try:
             n['name']
@@ -126,8 +131,7 @@ class Package:
             if 'lib' in reason:
                 n = make_selector(n, dict_update(self.flags, {'lib': True}.items()))
             else:
-                h = self.flags['host']
-                n = make_selector(n, {'host': h, 'target': h})
+                n = make_selector(n, {'target': self.host})
 
         return self.load_package_impl(n, reason)
 

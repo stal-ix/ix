@@ -79,14 +79,6 @@ class RenderContext:
         return json.dumps(list(self.parse_list(lst)))
 
     @property
-    def platform(self):
-        return self.config.platform
-
-    @property
-    def config(self):
-        return self.package.manager.config
-
-    @property
     def files(self):
         return FileLoader(self)
 
@@ -94,15 +86,12 @@ class RenderContext:
     def name(self):
         return self.package.name
 
-    @property
-    def flags(self):
-        return self.package.flags
-
     def template(self, path):
-        tmpl = self.package.manager.env.get_template(path)
+        pkg = self.package
+        tmpl = pkg.manager.env.get_template(path)
 
         try:
-            return self.strip_template(tmpl.render(mix=self, **self.flags))
+            return self.strip_template(tmpl.render(mix=self, host=pkg.host, **pkg.flags))
         except Exception as e:
             raise ce.Error(f'can not render {path}', exception=e)
 
