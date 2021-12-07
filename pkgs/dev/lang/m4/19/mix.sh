@@ -11,7 +11,7 @@ lib/sigsegv/mix.sh
 {% endblock %}
 
 {% block bld_tool %}
-dev/build/help2man/mix.sh
+dev/doc/help2man/mix.sh
 {% endblock %}
 
 {% block std_env %}

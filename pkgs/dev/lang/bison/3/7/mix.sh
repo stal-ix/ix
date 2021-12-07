@@ -17,7 +17,7 @@ lib/intl/mix.sh
 dev/lang/m4/mix.sh
 dev/lang/flex/mix.sh
 dev/tool/perl/mix.sh
-dev/build/help2man/mix.sh
+dev/doc/help2man/mix.sh
 dev/doc/texinfo/mix.sh
 {% block bison_bootstrap %}
 boot/final/env/bison/mix.sh
