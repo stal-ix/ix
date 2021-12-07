@@ -5,25 +5,14 @@
 
 {% block bld_libs %}
 lib/z/mix.sh
-{% if target.os == 'linux' %}
-lib/linux/mix.sh
-{% endif %}
+lib/ffi/mix.sh
 {% if target.os == 'darwin' %}
 lib/darwin/framework/SystemConfiguration/mix.sh
 {% endif %}
+{{super()}}
 {% endblock %}
 
-{% block bld_tool %}
-dev/build/autoconf/2/69/mix.sh
-dev/build/automake/1.16.3/mix.sh
-dev/build/autoconf/archive/mix.sh
-{% endblock %}
-
-{% block std_env %}
-env/std/0/mix.sh
-{% endblock %}
-
-{% block autohell_env %}
+{% block bld_deps %}
 env/std/0/mix.sh
 {% endblock %}
 
@@ -33,15 +22,7 @@ env/std/0/mix.sh
 {% block extra_tests %}
 {% endblock %}
 
-{% block patch_ffi %}
-{% endblock %}
-
 {% block setup %}
-{% endblock %}
-
-{% block install %}
-{{super()}}
-find ${out}/ | grep '\.a$' | xargs rm
 {% endblock %}
 
 {% block env %}

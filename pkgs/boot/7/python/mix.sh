@@ -1,4 +1,4 @@
-{% extends '//dev/build/python/mix.sh' %}
+{% extends '//lib/python/3/10/mix.sh' %}
 
 {% block bld_libs %}
 {% if target.os == 'linux' %}
@@ -16,4 +16,27 @@ boot/6/env/std/mix.sh
 {% endblock %}
 
 {% block autoreconf %}
+{% endblock %}
+
+{% block lib_deps %}
+{% endblock %}
+
+{% block extra_modules %}
+{% endblock %}
+
+{% block extra_tests %}
+{% endblock %}
+
+{% block patch_ffi %}
+{% endblock %}
+
+{% block setup %}
+{% endblock %}
+
+{% block install %}
+{{super()}}
+find ${out}/ | grep '\.a$' | xargs rm
+{% endblock %}
+
+{% block env %}
 {% endblock %}
