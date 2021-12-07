@@ -21,7 +21,3 @@ lib/wayland/protocols/mix.sh
 lib/curses/n/mix.sh
 dev/doc/scdoc/mix.sh
 {% endblock %}
-
-{% block run_deps %}
-lib/xkbcommon/config/mix.sh
-{% endblock %}

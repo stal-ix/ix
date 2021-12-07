@@ -16,8 +16,7 @@ lib/xml2/mix.sh
 lib/wayland/mix.sh
 {% endblock %}
 
-# TODO - run_data
-{% block bld_libs %}
+{% block run_data %}
 lib/xkbcommon/config/mix.sh
 {% endblock %}
 

@@ -5,7 +5,9 @@ http://www.x.org/releases/individual/data/xkeyboard-config/xkeyboard-config-2.24
 74c4bdf52382127cb5802c3f2ab441e0
 {% endblock %}
 
-{% block make_thrs %}1{% endblock %}
+{% block make_thrs %}
+1
+{% endblock %}
 
 {% block bld_tool %}
 lib/xslt/mix.sh
@@ -20,8 +22,4 @@ tool/compress/gzip/mix.sh
 
 {% block env %}
 export XKB_CONFIG="${out}/share/X11/xkb"
-{% endblock %}
-
-{% block postinstall %}
-rm -rf ${out}/lib ${out}/bin ${out}/include
 {% endblock %}

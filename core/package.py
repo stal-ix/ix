@@ -168,11 +168,26 @@ class Package:
         return self.visit(self.bld_lib_deps(), self.lib_flags(), lambda x: x.lib_closure())
 
     def iter_all_build_depends(self):
-        return buildable(itertools.chain(self.bld_bin_closure(), reversed(self.bld_lib_closure())))
+        return buildable(itertools.chain(self.bld_bin_closure(), self.run_data(), reversed(self.bld_lib_closure())))
+
+    @cu.cached_method
+    def run_deps(self):
+        return list(self.load_packages(self.descr['run']['deps'], {'target': self.target, 'kind': 'bin'}))
+
+    @cu.cached_method
+    def run_data(self):
+        return list(self.load_packages(self.descr['run']['data'], {'target': self.target, 'kind': 'dat'}))
+
+    def all_run_deps(self):
+        yield from self.run_deps()
+        yield from self.run_data()
+
+        for p in self.bld_lib_closure():
+            yield from p.run_data()
 
     @cu.cached_method
     def run_closure(self):
-        return self.visit(self.descr['run']['deps'], self.bin_flags(), lambda x: x.run_closure())
+        return visit_lst(self.all_run_deps(), lambda x: x.run_closure())
 
     def iter_all_runtime_depends(self):
         return buildable(self.run_closure())

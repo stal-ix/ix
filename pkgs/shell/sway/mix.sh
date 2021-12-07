@@ -19,10 +19,6 @@ lib/dlfcn/scripts/mix.sh
 lib/wayland/protocols/mix.sh
 {% endblock %}
 
-{% block run_deps %}
-lib/xkbcommon/config/mix.sh
-{% endblock %}
-
 {% block setup %}
 export CPPFLAGS="-Dlist_insert=sway_list_insert -Dseat_create=sway_seat_create -Dseat_destroy=sway_seat_destroy -Dserver_init=sway_server_init ${CPPFLAGS}"
 

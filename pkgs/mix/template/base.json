@@ -6,7 +6,8 @@
         "libs": {% block bld_lib_deps %}[]{% endblock %}
     },
     "run": {
-        "deps": {% block runtime_depends %}[]{% endblock %}
+        "deps": {% block runtime_depends %}[]{% endblock %},
+        "data": {% block runtime_data %}[]{% endblock %}
     },
     "lib": {
         "deps": {% block library_depends %}[]{% endblock %}

@@ -32,6 +32,11 @@
 {% endblock %}
 {% endset %}
 
+{% set run_data %}
+{% block run_data %}
+{% endblock %}
+{% endset %}
+
 {% set fetch %}
 {% block fetch %}
 {% endblock %}
@@ -47,6 +52,10 @@
 
 {% block runtime_depends %}
 {{mix.list_to_json(run_deps)}}
+{% endblock %}
+
+{% block runtime_data %}
+{{mix.list_to_json(run_data)}}
 {% endblock %}
 
 {% block library_depends %}

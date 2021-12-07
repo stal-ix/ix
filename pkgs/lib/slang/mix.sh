@@ -11,8 +11,11 @@ lib/pcre/mix.sh
 lib/iconv/mix.sh
 lib/readline/mix.sh
 lib/curses/mix.sh
-lib/curses/terminfo/mix.sh
 lib/oniguruma/mix.sh
+{% endblock %}
+
+{% block run_data %}
+lib/curses/n/mix.sh
 {% endblock %}
 
 {% block setup_tools %}

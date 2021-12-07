@@ -1,4 +1,4 @@
-{% extends '//mix/template/autohell.sh' %}
+{% extends '//mix/template/meson.sh' %}
 
 {% block fetch %}
 https://www.freedesktop.org/software/fontconfig/release/fontconfig-2.13.94.tar.xz
@@ -11,8 +11,6 @@ gnu/tar/mix.sh
 gnu/gettext/mix.sh
 dev/tool/gperf/mix.sh
 dev/tool/python/mix.sh
-dev/build/autoconf/2/69/mix.sh
-dev/build/automake/1.16.3/mix.sh
 {% endblock %}
 
 {% block lib_deps %}
@@ -21,4 +19,10 @@ lib/iconv/mix.sh
 lib/expat/mix.sh
 lib/json/c/mix.sh
 lib/freetype/mix.sh
+{% endblock %}
+
+{% block run_data %}
+{% if kind == 'lib' %}
+lib/fontconfig/mix.sh
+{% endif %}
 {% endblock %}
