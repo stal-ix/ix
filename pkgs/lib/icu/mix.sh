@@ -15,7 +15,7 @@ lib/c++/mix.sh
 {% endblock %}
 
 {% block bld_tool %}
-dev/build/python/mix.sh
+dev/tool/python/mix.sh
 {% endblock %}
 
 {% block configure_flags %}

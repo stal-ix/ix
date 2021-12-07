@@ -23,7 +23,7 @@ shell/cli/bash/minimal/mix.sh
 dev/vcs/git/mix.sh
 gnu/tar/mix.sh
 tool/gnu/time/mix.sh
-dev/build/python/mix.sh
+dev/tool/python/mix.sh
 dev/build/make/mix.sh
 dev/build/cmake/mix.sh
 {% endblock %}

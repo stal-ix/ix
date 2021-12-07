@@ -13,7 +13,7 @@ lib/gmp/mix.sh
 
 {% block bld_tool %}
 dev/lang/bison/3/7/mix.sh
-dev/lang/perl5/mix.sh
+dev/tool/perl/mix.sh
 {{super()}}
 {% endblock %}
 

@@ -1,7 +1,7 @@
 {% extends '//mix/template/proxy.sh' %}
 
 {% block run_deps %}
-dev/build/python/mix.sh
+dev/tool/python/mix.sh
 {% endblock %}
 
 {% block install %}

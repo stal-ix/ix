@@ -2,7 +2,7 @@
 
 {% block std_env %}
 dev/build/make/mix.sh
-dev/build/python/mix.sh
+dev/tool/python/mix.sh
 tool/compress/upx/mix.sh
 {{super()}}
 {% endblock %}

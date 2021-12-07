@@ -1,7 +1,7 @@
 {% extends '//pypi/docutils/mix.sh' %}
 
 {% block run_deps %}
-dev/build/python/mix.sh
+dev/tool/python/mix.sh
 {{super()}}
 {% endblock %}
 

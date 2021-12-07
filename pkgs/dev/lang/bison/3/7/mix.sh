@@ -16,7 +16,7 @@ lib/intl/mix.sh
 {% block bld_tool %}
 dev/lang/m4/mix.sh
 dev/lang/flex/mix.sh
-dev/lang/perl5/mix.sh
+dev/tool/perl/mix.sh
 dev/build/help2man/mix.sh
 dev/doc/texinfo/mix.sh
 {% block bison_bootstrap %}

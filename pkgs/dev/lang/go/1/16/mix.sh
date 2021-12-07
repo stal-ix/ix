@@ -8,8 +8,8 @@ f3c06704e536dcca1814b16dbcdc4a36
 {% block bld_tool %}
 gnu/tar/mix.sh
 dev/lang/go/1/4/mix.sh
-dev/build/python/mix.sh
-dev/lang/perl5/mix.sh
+dev/tool/python/mix.sh
+dev/tool/perl/mix.sh
 {{super()}}
 {% endblock %}
 

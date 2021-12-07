@@ -1,4 +1,4 @@
-{% extends '//dev/lang/perl5/mix.sh' %}
+{% extends '//dev/tool/perl/mix.sh' %}
 
 {% block fetch %}
 {{super()}}
@@ -20,7 +20,7 @@ cd ..
 {% endblock %}
 
 {% block bld_tool %}
-dev/lang/perl5/mix.sh
+dev/tool/perl/mix.sh
 {{super()}}
 {% endblock %}
 

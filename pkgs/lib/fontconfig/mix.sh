@@ -10,7 +10,7 @@ tool/compress/gzip/mix.sh
 gnu/tar/mix.sh
 gnu/gettext/mix.sh
 dev/tool/gperf/mix.sh
-dev/build/python/mix.sh
+dev/tool/python/mix.sh
 dev/build/autoconf/2/69/mix.sh
 dev/build/automake/1.16.3/mix.sh
 {% endblock %}

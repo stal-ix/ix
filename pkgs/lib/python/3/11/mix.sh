@@ -11,7 +11,7 @@ lib/gdbm/mix.sh
 {% endblock %}
 
 {% block bld_tool %}
-dev/build/python/mix.sh
+dev/tool/python/mix.sh
 {{super()}}
 {% endblock %}
 

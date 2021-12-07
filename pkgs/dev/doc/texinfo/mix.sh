@@ -10,7 +10,7 @@ lib/curses/mix.sh
 {% endblock %}
 
 {% block bld_tool %}
-dev/lang/perl5/mix.sh
+dev/tool/perl/mix.sh
 {% endblock %}
 
 {% block std_env %}

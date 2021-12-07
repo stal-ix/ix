@@ -6,7 +6,7 @@ https://files.pythonhosted.org/packages/be/d0/bf4e7003369c6d8a6e490741c54791c791
 {% endblock %}
 
 {% block run_deps %}
-dev/build/python/mix.sh
+dev/tool/python/mix.sh
 {% endblock %}
 
 {% block build %}

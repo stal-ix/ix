@@ -6,11 +6,11 @@ b51001b5d6c9fc929291d5ae8e6caafc
 {% endblock %}
 
 {% block run_deps %}
-dev/lang/perl5/mix.sh
+dev/tool/perl/mix.sh
 {% endblock %}
 
 {% block bld_tool %}
-dev/lang/perl5/mix.sh
+dev/tool/perl/mix.sh
 {% endblock %}
 
 {% block std_env %}

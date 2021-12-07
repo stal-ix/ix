@@ -12,7 +12,7 @@ lib/openssl/mix.sh
 {% block bld_tool %}
 dev/build/autoconf/2/69/mix.sh
 dev/build/automake/1.16.3/mix.sh
-dev/build/python/mix.sh
+dev/tool/python/mix.sh
 {% endblock %}
 
 {% block autoreconf %}
