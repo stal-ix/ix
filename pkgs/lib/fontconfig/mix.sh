@@ -22,7 +22,42 @@ lib/freetype/mix.sh
 {% endblock %}
 
 {% block run_data %}
-{% if kind == 'lib' %}
+{% if kind != 'dat' %}
 lib/fontconfig/mix.sh
+{% endif %}
+{% endblock %}
+
+{% block patch %}
+cd fc-cache
+
+cat meson.build \
+    | grep -v 'add_install_script' \
+    > _ && mv _ meson.build
+{% endblock %}
+
+{% block configure %}
+{{super()}}
+
+{% if kind != 'dat' %}
+cd ${tmp}/obj
+
+fr=$(basename ${out})
+to=$(basename ${lib_fontconfig_dat})
+
+sed -e "s|${fr}|${to}|" -i config.h
+{% endif %}
+{% endblock %}
+
+{% block install %}
+{{super()}}
+rm -rf ${out}/var
+{% endblock %}
+
+{% block postinstall %}
+{{super()}}
+
+{% if kind != 'dat' %}
+# ensure it will not be used
+rm -rf ${out}/share
 {% endif %}
 {% endblock %}
