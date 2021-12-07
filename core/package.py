@@ -34,14 +34,10 @@ def parse_pkg_name(v):
     return r
 
 
-def dict_update(d, v):
-    return dict(itertools.chain(d.items(), v))
-
-
 def make_selector(v, flags):
     v = parse_pkg_name(v)
 
-    v['flags'] = dict_update(flags, v.get('flags', {}).items())
+    v['flags'] = cu.dict_dict_update(flags, v.get('flags', {}))
 
     return v
 
@@ -85,6 +81,9 @@ class Package:
         if 'target' not in flags:
             flags['target'] = self.config.platform['target']
 
+        if 'kind' not in flags:
+            flags['kind'] = 'bin'
+
         print(selector)
 
         self.selector = selector
@@ -102,7 +101,7 @@ class Package:
 
     @property
     def pkg_name(self):
-        return self.name.removesuffix('.sh').removesuffix('/mix').replace('/', '-').replace('.', '-').replace('_', '-').replace('--', '-')
+        return self.name.removesuffix('.sh').removesuffix('/mix').replace('/', '-').replace('.', '-').replace('_', '-').replace('--', '-') + '-' + self.flags['kind']
 
     @property
     def flags(self):
@@ -124,25 +123,28 @@ class Package:
     def host(self):
         return self.config.platform['host']
 
-    def load_package(self, n, reason):
+    def lib_flags(self):
+        return cu.dict_dict_update(self.flags, {'kind': 'lib'})
+
+    def bin_flags(self):
+        return {'target': self.host, 'kind': 'bin'}
+
+    def load_package(self, n, flags):
         try:
             n['name']
         except TypeError:
-            if 'lib' in reason:
-                n = make_selector(n, dict_update(self.flags, {'lib': True}.items()))
-            else:
-                n = make_selector(n, {'target': self.host})
+            n = make_selector(n, flags)
 
-        return self.load_package_impl(n, reason)
+        return self.load_package_impl(n)
 
-    def load_package_impl(self, selector, reason):
+    def load_package_impl(self, selector):
         try:
             return self.manager.load_package(selector)
         except FileNotFoundError:
             raise ce.Error(f'can not load dependant package {fmt_sel(selector)} of {fmt_sel(self.selector)}')
 
-    def load_packages(self, l, reason):
-        return (self.load_package(x, reason) for x in l)
+    def load_packages(self, l, flags):
+        return (self.load_package(x, flags) for x in l)
 
     def bld_lib_deps(self):
         yield from self.descr['bld']['libs']
@@ -150,24 +152,27 @@ class Package:
         for p in self.bld_bin_closure():
             yield from p.descr['ind']['deps']
 
+    def visit(self, lst, flags, childf):
+        return visit_lst(self.load_packages(lst, flags), childf)
+
     @cu.cached_method
     def bld_bin_closure(self):
-        return visit_lst(self.load_packages(self.descr['bld']['deps'], "bld bin"), lambda x: x.run_closure())
+        return self.visit(self.descr['bld']['deps'], self.bin_flags(), lambda x: x.run_closure())
 
     @cu.cached_method
     def lib_closure(self):
-        return visit_lst(self.load_packages(self.descr['lib']['deps'], "lib"), lambda x: x.lib_closure())
+        return self.visit(self.descr['lib']['deps'], self.lib_flags(), lambda x: x.lib_closure())
 
     @cu.cached_method
     def bld_lib_closure(self):
-        return visit_lst(self.load_packages(self.bld_lib_deps(), "bld lib"), lambda x: x.lib_closure())
+        return self.visit(self.bld_lib_deps(), self.lib_flags(), lambda x: x.lib_closure())
 
     def iter_all_build_depends(self):
         return buildable(itertools.chain(self.bld_bin_closure(), reversed(self.bld_lib_closure())))
 
     @cu.cached_method
     def run_closure(self):
-        return visit_lst(self.load_packages(self.descr['run']['deps'], "run"), lambda x: x.run_closure())
+        return self.visit(self.descr['run']['deps'], self.bin_flags(), lambda x: x.run_closure())
 
     def iter_all_runtime_depends(self):
         return buildable(self.run_closure())

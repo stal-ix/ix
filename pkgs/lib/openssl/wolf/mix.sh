@@ -15,7 +15,7 @@ mkdir -p ${out}/lib/pkgconfig
 
 cp libempty.a ${out}/lib/libcrypto.a
 cp libempty.a ${out}/lib/libssl.a
-cp -R ${lib_wolfssl}/include/wolfssl ${out}/include
+cp -R ${lib_wolfssl_lib}/include/wolfssl ${out}/include
 
 cat << EOF > ${out}/lib/pkgconfig/openssl.pc
 prefix=${out}

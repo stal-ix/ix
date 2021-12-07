@@ -32,7 +32,7 @@ EOF
 
 clang ${CPPFLAGS} ${CFLAGS} ${CXXFLAGS} -c dl.cpp
 llvm-ar q libxxx.a dl.o
-ln -s ${lib_mesa}/lib/dri/kms_swrast_dri.so libyyy.a
+ln -s ${lib_mesa_lib}/lib/dri/kms_swrast_dri.so libyyy.a
 
 export LDFLAGS="${PWD}/dl.o ${PWD}/libyyy.a ${LDFLAGS}"
 {% endblock %}

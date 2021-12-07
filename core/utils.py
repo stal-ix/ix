@@ -2,6 +2,7 @@ import os
 import json
 import hashlib
 import functools
+import itertools
 
 
 def iter_dir(w):
@@ -62,3 +63,11 @@ def cached_method(m):
             self.__dict__[key] = m(self)
 
     return wrapper
+
+
+def dict_update(d, v):
+    return dict(itertools.chain(d.items(), v))
+
+
+def dict_dict_update(d1, d2):
+    return dict_update(d1, d2.items())

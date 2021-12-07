@@ -10,10 +10,6 @@ def realm_path(mngr, name):
     return os.path.join(mngr.config.realm_dir, name)
 
 
-def dict_update(o, n):
-    return dict(itertools.chain(o.items(), n.items()))
-
-
 def collapse_pkgs(pkgs):
     v = []
     d = {}
@@ -22,7 +18,7 @@ def collapse_pkgs(pkgs):
         n = p['name']
 
         if n in d:
-            d[n] = dict_update(d[n], p.get('flags', {}))
+            d[n] = cu.dict_dict_update(d[n], p.get('flags', {}))
         else:
             v.append(n)
             d[n] = p.get('flags', {})

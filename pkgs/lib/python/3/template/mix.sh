@@ -76,7 +76,7 @@ EOF
 {% endblock %}
 
 {% block configure_flags %}
-{% if lib %}
+{% if kind == 'lib' %}
 # use default lib path
 {% else %}
 --with-platlibdir=bin/lib
@@ -85,7 +85,7 @@ EOF
 {% endblock %}
 
 {% block test %}
-{% if not lib %}
+{% if kind == 'bin' %}
 ${out}/bin/python3 -c 'import zlib; import multiprocessing; import cProfile;'
 {% block extra_tests %}
 ${out}/bin/python3 -c 'import hashlib; import ssl; import lzma; import bz2; import sqlite3; import decimal; import ctypes;'

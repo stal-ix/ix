@@ -5,5 +5,5 @@ lib/bsd/mix.sh
 {% endblock %}
 
 {% block env %}
-export CPPFLAGS="-I${lib_bsd}/include/bsd -DLIBBSD_OVERLAY=1 \${CPPFLAGS}"
+export CPPFLAGS="-I${lib_bsd_lib}/include/bsd -DLIBBSD_OVERLAY=1 \${CPPFLAGS}"
 {% endblock %}
