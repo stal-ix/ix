@@ -37,11 +37,9 @@ EOF
 {% endif %}
 {% endblock %}
 
-{% block install %}
-mkdir ${out}/bin && cat ./make > ${out}/bin/make && chmod 493 ${out}/bin/make
-{% endblock %}
-
 {% block build %}
+mkdir ${out}/bin
+
 clang -w -I. \
     ${CPPFLAGS} ${CFLAGS} ${LDFLAGS}      \
     -DHAVE_CONFIG_H                       \
@@ -55,5 +53,5 @@ clang -w -I. \
     meta.c metachar.c parse.c sigcompat.c \
     str.c stresep.c suff.c targ.c trace.c \
     util.c var.c                          \
-    -o make
+    -o ${out}/bin/bmake
 {% endblock %}

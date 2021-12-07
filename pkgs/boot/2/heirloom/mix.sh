@@ -41,7 +41,7 @@ export UCBINST=install
 export MANINST=install
 
 export PATH="${DEFBIN}:${PATH}"
-export MAKE="make LD=${LD} CC=${CC} AR=${AR} RANLIB=${RANLIB}"
+export MAKE="bmake LD=${LD} CC=${CC} AR=${AR} RANLIB=${RANLIB}"
 
 >malloc.h
 

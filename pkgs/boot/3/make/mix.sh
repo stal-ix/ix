@@ -1,5 +1,9 @@
 {% extends '//dev/build/make/mix.sh' %}
 
+{% block make_bin %}
+bmake
+{% endblock %}
+
 {% block bld_libs %}
 boot/1/lib/c/mix.sh
 {% endblock %}

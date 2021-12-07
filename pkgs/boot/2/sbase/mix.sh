@@ -1,5 +1,9 @@
 {% extends '//box/sbase/mix.sh' %}
 
+{% block make_bin %}
+bmake
+{% endblock %}
+
 {% block bld_libs %}
 {% endblock %}
 

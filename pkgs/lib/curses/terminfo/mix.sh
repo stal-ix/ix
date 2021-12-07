@@ -5,7 +5,5 @@ export TERMINFO="${out}/share/terminfo"
 {% endblock %}
 
 {% block postinstall %}
-rm -rf ${out}/lib
-rm -rf ${out}/bin
-rm -rf ${out}/include
+cd ${out} && rm -rf lib bin include
 {% endblock %}
