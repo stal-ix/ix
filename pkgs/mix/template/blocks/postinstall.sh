@@ -1,7 +1,7 @@
 {%   if kind == 'dat' %}
-rm -rf ${out}/bin ${out}/lib ${out}/include
+rm -rf ${out}/bin ${out}/libexec ${out}/lib ${out}/include
 {% elif kind == 'lib' %}
-rm -rf ${out}/bin
+rm -rf ${out}/bin ${out}/libexec
 {% elif kind == 'bin' %}
 rm -rf ${out}/lib ${out}/include
 {% endif %}

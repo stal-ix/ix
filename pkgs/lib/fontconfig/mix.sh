@@ -51,11 +51,6 @@ sed -e "s|${fr}|${to}|" -i config.h
 {% block install %}
 {{super()}}
 rm -rf ${out}/var
-{% endblock %}
-
-{% block postinstall %}
-{{super()}}
-
 {% if kind != 'dat' %}
 # ensure it will not be used
 rm -rf ${out}/share

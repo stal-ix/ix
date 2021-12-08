@@ -65,3 +65,18 @@ find ${out} | grep Config_heavy.pl | while read l; do
     cat ${l} | sed -e 's|/.*build.*tools/||' | grep -v 'startsh=' > _ && mv _ ${l}
 done
 {% endblock %}
+
+{% block build %}
+if which perl; then
+    make -j ${make_thrs} miniperl
+
+    cat << EOF > miniperl
+#!$(which dash)
+perl -I${PWD} "\$@"
+EOF
+
+    chmod +x miniperl
+fi
+
+{{super()}}
+{% endblock %}

@@ -25,22 +25,9 @@ dev/tool/perl/mix.sh
 {% endblock %}
 
 {% block configure %}
-{{super().strip()}}
+{{super()}}
 
 cat << EOF >> config.sh
 export static_ext="\${static_ext} XML/Parser/Expat"
 EOF
-{% endblock %}
-
-{% block build %}
-make -j ${make_thrs} miniperl
-
-cat << EOF > miniperl
-#!$(which dash)
-perl -I${PWD} "\$@"
-EOF
-
-chmod +x miniperl
-
-make -j ${make_thrs}
 {% endblock %}

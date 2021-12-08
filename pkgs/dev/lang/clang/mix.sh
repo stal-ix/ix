@@ -47,7 +47,12 @@ echo > llvm/unittests/Support/DynamicLibrary/CMakeLists.txt
 llvm
 {% endblock %}
 
-{% block postinstall %}
+{% block install %}
+{{super()}}
+
+mv ${out}/lib/clang/13*/include ${out}/share/
+rm -rf ${out}/libexec
+
 python3 << EOF
 {% include 'strip.py' %}
 EOF
@@ -55,5 +60,5 @@ EOF
 
 {% block env %}
 export CLANG_VERSION=13.0.0
-export CPPFLAGS="-isystem ${out}/lib/clang/\$CLANG_VERSION/include \${CPPFLAGS}"
+export CPPFLAGS="-isystem ${out}/share/include \${CPPFLAGS}"
 {% endblock %}

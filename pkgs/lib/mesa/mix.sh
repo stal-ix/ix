@@ -9,9 +9,9 @@ https://mesa.freedesktop.org/archive/mesa-21.2.5.tar.xz
 lib/z/mix.sh
 lib/drm/mix.sh
 lib/zstd/mix.sh
+lib/llvm/mix.sh
 lib/expat/mix.sh
 lib/wayland/mix.sh
-lib/llvm/mix.sh
 lib/elfutils/mix.sh
 {% endblock %}
 
@@ -22,6 +22,7 @@ pypi/Mako/mix.sh
 {% block bld_tool %}
 dev/lang/flex/mix.sh
 dev/lang/bison/3/8/mix.sh
+dev/build/make/mix.sh
 lib/wayland/protocols/mix.sh
 {% endblock %}
 
@@ -42,6 +43,7 @@ lib/wayland/protocols/mix.sh
 -Dgallium-nine=false
 
 -Dtools=glsl
+
 -Dshared-llvm=disabled
 {% endblock %}
 
