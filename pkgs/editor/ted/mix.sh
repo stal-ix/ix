@@ -1,8 +1,8 @@
 {% extends '//mix/template/python/bin.sh' %}
 
 {% block fetch %}
-https://github.com/pg83/ted/archive/0d363137ed88d7cd8267308671a1e69e04223629.zip
-c244e526beb323d32e25b73d02b905b8
+https://github.com/pg83/ted/archive/a0aa84567efb7ac0760fde048dae0acf805fd188.zip
+f4971b52c9cdaf0bdce0d97cf4e8d337
 {% endblock %}
 
 {% block bld_libs %}

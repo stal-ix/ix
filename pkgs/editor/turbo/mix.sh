@@ -14,7 +14,9 @@ lib/clipboard/mix.sh
 {% endblock %}
 
 {% block patch %}
-echo 'install(TARGETS turbo DESTINATION bin)' >> CMakeLists.txt
+cat << EOF >> CMakeLists.txt
+install(TARGETS turbo DESTINATION bin)
+EOF
 {% endblock %}
 
 {% block cmake_flags %}

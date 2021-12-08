@@ -6,8 +6,15 @@ https://ftp.gnu.org/gnu/coreutils/coreutils-9.0.tar.xz
 {% endblock %}
 
 {% block bld_libs %}
-lib/openssl/mix.sh
 lib/gmp/mix.sh
+lib/openssl/1/mix.sh
+
+{% if target.os == 'linux' %}
+lib/acl/mix.sh
+lib/cap/mix.sh
+lib/attr/mix.sh
+{% endif %}
+
 {{super()}}
 {% endblock %}
 
