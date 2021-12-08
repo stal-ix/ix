@@ -32,9 +32,9 @@ scons \
     CC=$(which clang)    \
     PREFIX=${out}        \
     OPENSSL="${SSL_DIR}" \
-    ZLIB="${lib_z_lib}"  \
-    APR="${lib_apr_lib}" \
-    APU="${lib_apr_util_lib}"
+    ZLIB="${lib_z}"      \
+    APR="${lib_apr}"     \
+    APU="${lib_apr_util}"
 {% endblock %}
 
 {% block install %}

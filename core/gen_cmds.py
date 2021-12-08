@@ -90,7 +90,7 @@ class CmdBuild:
         for p in self.package.iter_all_build_depends():
             od = p.out_dir
 
-            yield p.pkg_name.replace('-', '_'), od
+            yield p.pkg_name.replace('-', '_').replace('l_lib_', 'lib_'), od
 
             path.append(od + '/bin')
 

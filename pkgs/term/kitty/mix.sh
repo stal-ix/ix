@@ -30,7 +30,7 @@ dev/build/pkg-config/mix.sh
 
 {% block setup %}
 export CFLAGS="-w ${CFLAGS}"
-export PYTHONHOME=${lib_python_3_10_lib}
+export PYTHONHOME=${lib_python_3_10}
 {% endblock %}
 
 {% block patch %}

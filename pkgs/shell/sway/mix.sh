@@ -23,12 +23,12 @@ lib/wayland/protocols/mix.sh
 export CPPFLAGS="-Dlist_insert=sway_list_insert -Dseat_create=sway_seat_create -Dseat_destroy=sway_seat_destroy -Dserver_init=sway_server_init ${CPPFLAGS}"
 
 python3 $(command -v gen_dl_stubs.py) opengl {{target.os}} << EOF > dl.cpp
-__driDriverGetExtensions_kms_swrast
+__driDriverGetExtensions_radeonsi
 EOF
 
 clang ${CPPFLAGS} ${CFLAGS} ${CXXFLAGS} -c dl.cpp
 llvm-ar q libxxx.a dl.o
-ln -s ${lib_mesa_lib}/lib/dri/kms_swrast_dri.so libyyy.a
+ln -s ${lib_mesa}/lib/dri/radeonsi_dri.so libyyy.a
 
 export LDFLAGS="${PWD}/dl.o ${PWD}/libyyy.a ${LDFLAGS}"
 {% endblock %}

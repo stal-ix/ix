@@ -101,7 +101,7 @@ class Package:
 
     @property
     def pkg_name(self):
-        return self.name.removesuffix('.sh').removesuffix('/mix').replace('/', '-').replace('.', '-').replace('_', '-').replace('--', '-') + '-' + self.flags['kind']
+        return self.flags['kind'][:1] + '-' + self.name.removesuffix('.sh').removesuffix('/mix').replace('/', '-').replace('.', '-').replace('_', '-').replace('--', '-')
 
     @property
     def flags(self):

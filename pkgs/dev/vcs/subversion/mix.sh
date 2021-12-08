@@ -15,5 +15,5 @@ net/openssh/mix.sh
 
 {% block setup %}
 export COFLAGS=$(echo "${COFLAGS}" | tr ' ' '\n' | grep -v expat | tr '\n' ' ')
-export COFLAGS="${COFLAGS} --with-expat=${lib_expat_lib}/include:${lib_expat_lib}/lib:-lexpat"
+export COFLAGS="${COFLAGS} --with-expat=${lib_expat}/include:${lib_expat}/lib:-lexpat"
 {% endblock %}

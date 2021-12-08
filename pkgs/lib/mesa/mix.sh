@@ -11,6 +11,8 @@ lib/drm/mix.sh
 lib/zstd/mix.sh
 lib/expat/mix.sh
 lib/wayland/mix.sh
+lib/llvm/mix.sh
+lib/elfutils/mix.sh
 {% endblock %}
 
 {% block bld_libs %}
@@ -26,7 +28,7 @@ lib/wayland/protocols/mix.sh
 {% block meson_flags %}
 -Ddri-drivers=
 -Dvulkan-drivers=
--Dgallium-drivers=swrast
+-Dgallium-drivers=swrast,radeonsi
 
 -Dvalgrind=disabled
 -Dlibunwind=disabled
@@ -40,6 +42,11 @@ lib/wayland/protocols/mix.sh
 -Dgallium-nine=false
 
 -Dtools=glsl
+-Dshared-llvm=disabled
+{% endblock %}
+
+{% block setup %}
+export CPPFLAGS="-Dhandle_table_remove=mesa_handle_table_remove ${CPPFLAGS}"
 {% endblock %}
 
 {% block patch %}

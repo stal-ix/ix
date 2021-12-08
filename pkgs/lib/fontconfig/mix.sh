@@ -42,7 +42,7 @@ cat meson.build \
 cd ${tmp}/obj
 
 fr=$(basename ${out})
-to=$(basename ${lib_fontconfig_dat})
+to=$(basename ${d_lib_fontconfig})
 
 sed -e "s|${fr}|${to}|" -i config.h
 {% endif %}
