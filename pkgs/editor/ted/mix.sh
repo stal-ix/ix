@@ -10,10 +10,4 @@ pypi/pygments/mix.sh
 lib/python/mix.sh
 {% endblock %}
 
-{% block bin %}ted.bin{% endblock %}
 {% block entry_point %}ted{% endblock %}
-
-{% block install %}
-{{super()}}
-cd ${out}/bin && mv ted.bin ted
-{% endblock %}
