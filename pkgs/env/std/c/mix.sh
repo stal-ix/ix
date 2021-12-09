@@ -2,7 +2,7 @@
 
 {% block ind_deps %}
 lib/c/mix.sh
-lib/compiler_rt/mix.sh
+lib/compiler_rt/builtins/mix.sh
 {% endblock %}
 
 {% block run_deps %}

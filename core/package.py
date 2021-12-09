@@ -84,7 +84,7 @@ class Package:
         if 'kind' not in flags:
             flags['kind'] = 'bin'
 
-        print(selector)
+        # print(selector)
 
         self.selector = selector
         self.descr = cr.RenderContext(self).render()

@@ -72,7 +72,6 @@ compiler-rt
 install-compiler-rt
 {% endblock %}
 
-{% block install %}
-{{super()}}
-cd ${out}/lib && ln -s */libclang_rt.builtins* libclang_rt_builtins.a
+{% block env %}
+export COMPILER_RT_PATH="${out}"
 {% endblock %}
