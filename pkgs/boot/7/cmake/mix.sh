@@ -11,6 +11,7 @@ boot/7/lib/cxx/mix.sh
 {% endblock %}
 
 {% block bld_deps %}
+boot/7/samurai/mix.sh
 boot/6/env/std/mix.sh
 {% endblock %}
 
@@ -18,21 +19,26 @@ boot/6/env/std/mix.sh
 boot/7/samurai/mix.sh
 {% endblock %}
 
-{% block configure %}
+{% block cmake_binary %}
+Bootstrap.cmk/cmake
 {% endblock %}
 
-{% block build %}
+{% block patch %}
+sed -e 's|# Run bootstrap CMake|exit 0;|' -i bootstrap
+{{super()}}
+{% endblock %}
+
+{% block cmake_flags %}
+-DCMAKE_USE_OPENSSL=OFF
+-DBUILD_TESTING=OFF
+-DCMAKE_BOOTSTRAP=1
+{% endblock %}
+
+{% block configure %}
 dash bootstrap \
     --prefix=${out}         \
     --parallel=${make_thrs} \
-    --                      \
-    ${CMFLAGS}              \
-    -DCMAKE_USE_OPENSSL=OFF \
-    -DBUILD_TESTING=OFF
+    --generator=Ninja
 
-make -j ${make_thrs}
-{% endblock %}
-
-{% block install %}
-make install
+{{super()}}
 {% endblock %}

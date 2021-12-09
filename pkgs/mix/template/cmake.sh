@@ -7,7 +7,9 @@ dev/build/cmake/mix.sh
 
 {% block configure %}
 {% set command_args %}
+{% block cmake_binary %}
 cmake
+{% endblock %}
 
 -B {{ninja_build_dir}}
 -G Ninja

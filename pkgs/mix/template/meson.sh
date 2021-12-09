@@ -10,6 +10,11 @@ dev/build/pkg-config/mix.sh
 {{super()}}
 {% endblock %}
 
+{% block step_setup %}
+{{super()}}
+export CPPFLAGS="-Wno-unknown-warning-option ${CPPFLAGS}"
+{% endblock %}
+
 {% block configure %}
 {% set command_args %}
 meson
