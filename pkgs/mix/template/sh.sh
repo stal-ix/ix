@@ -1,9 +1,7 @@
 {% extends 'script.json' %}
 
 {% block script_body %}
-{% block sh_script_begin %}
-{% endblock %}
-
+{% block prologue %}
 set -e
 set -u
 
@@ -21,10 +19,10 @@ export ACLOCAL_PATH=
 export PKG_CONFIG_PATH=
 export PYTHONDONTWRITEBYTECODE=1
 
-rm -rf ${out} || true
+rm -rf ${out}
 mkdir -p ${out}
 
-rm -rf ${tmp} || true
+rm -rf ${tmp}
 mkdir -p ${tmp}
 
 cd ${tmp} && mkdir tmp
@@ -47,6 +45,7 @@ IFS=":"; for p in ${line}; do
 done
 
 IFS=${OFS}
+{% endblock %}
 
 (
     set -eu
@@ -57,13 +56,11 @@ IFS=${OFS}
 # euc
 )
 
+{% block epilogue %}
 {% block cleanup_pkg %}
 rm -rf ${out}/lib/*.so* ${out}/lib/*.la* ${out}/lib/*.dylib* || true
 {% endblock %}
-
 rm -rf ${tmp}
-
-{% block sh_script_end %}
 {% endblock %}
 {% endblock %}
 

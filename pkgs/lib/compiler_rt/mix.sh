@@ -1,7 +1,13 @@
-{% extends '//mix/template/std.sh' %}
+{% extends '//mix/template/cmake.sh' %}
+
+{% block lib_deps %}
+lib/c++/mix.sh
+{% endblock %}
 
 {% block bld_libs %}
-lib/c/mix.sh
+{% if target.os == 'linux' %}
+lib/linux/mix.sh
+{% endif %}
 {% endblock %}
 
 {% block std_env %}
@@ -13,20 +19,60 @@ boot/final/env/tools/mix.sh
 {% include '//mix/template/fetch_llvm.sh' %}
 {% endblock %}
 
-{% block unpack %}
-{{super()}}
+{% block patch %}
 cd compiler-rt
-{% endblock %}
 
-{% block build %}
-for x in lib/builtins/*.c; do
-    clang -c ${x}
+cat << EOF > fix.py
+import sys
+
+has = None
+
+for l in sys.stdin.read().split('\n'):
+    if 'add_compiler_rt_runtime(' in l:
+        has = l
+    else:
+        if has:
+            if l.strip() == 'SHARED':
+                print('MESSAGE(')
+            else:
+                print(has)
+                print(l)
+
+            has = None
+        else:
+            print(l)
+EOF
+
+find . | grep CMakeLists.txt | while read l; do
+    cat ${l} | python3 fix.py > _ && mv _ ${l}
 done
 
-ar q libcompiler_rt.a *.o
-ranlib libcompiler_rt.a
+for l in cmake/config-ix.cmake; do
+    cat ${l} | grep -v 'HAS_GWP_ASAN TRUE' > _ && mv _ ${l}
+done
+{% endblock %}
+
+{% block cmake_flags %}
+-DLLVM_ENABLE_RUNTIMES="compiler-rt"
+-DLLVM_BINARY_DIR="${out}/lib/cmake"
+-DCOMPILER_RT_BUILD_LIBFUZZER=OFF
+-DCOMPILER_RT_BUILD_MEMPROF=OFF
+-DCOMPILER_RT_BUILD_ORC=OFF
+{% endblock %}
+
+{% block cmake_srcdir %}
+runtimes
+{% endblock %}
+
+{% block ninja_targets %}
+compiler-rt
+{% endblock %}
+
+{% block ninja_install_targets %}
+install-compiler-rt
 {% endblock %}
 
 {% block install %}
-mkdir ${out}/lib && cp libcompiler_rt.a ${out}/lib/
+{{super()}}
+cd ${out}/lib && ln -s */libclang_rt.builtins* libclang_rt_builtins.a
 {% endblock %}
