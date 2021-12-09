@@ -14,8 +14,11 @@ env/std/0/mix.sh
 {% endblock %}
 
 {% block patch %}
-cat - gl/lib/malloc/dynarray-skeleton.c << EOF > _
+cd gl/lib/malloc
+
+cat - dynarray-skeleton.c << EOF > _
 #define __nonnull(x)
 EOF
-mv _ gl/lib/malloc/dynarray-skeleton.c
+
+mv _ dynarray-skeleton.c
 {% endblock %}

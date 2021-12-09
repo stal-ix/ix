@@ -1,8 +1,8 @@
 {% extends '//mix/template/autohell.sh' %}
 
 {% block fetch %}
-https://sourceware.org/elfutils/ftp/0.185/elfutils-0.185.tar.bz2
-2b6e94c2eebc1f2194173e31bca9396e
+https://sourceware.org/elfutils/ftp/0.186/elfutils-0.186.tar.bz2
+2c095e31e35d6be7b3718477b6d52702
 {% endblock %}
 
 {% block lib_deps %}
@@ -25,15 +25,11 @@ dev/lang/m4/mix.sh
 {% endblock %}
 
 {% block patch %}
-mkdir sys
-
-cat << EOF > sys/cdefs.h
-EOF
+mkdir sys && echo > sys/cdefs.h
 {% endblock %}
 
 {% block setup %}
 export CPPFLAGS="-I${PWD} ${CPPFLAGS}"
-export ac_cv_c99=yes
 {% endblock %}
 
 {% block configure_flags %}
@@ -42,15 +38,12 @@ export ac_cv_c99=yes
 {% endblock %}
 
 {% block build %}
-for l in backends lib libcpu libebl libdwelf libdwfl libelf libdw; do
-    (cd ${l} && (make -j ${make_thrs} || (echo > libdw.so; echo > libelf.so)))
-done
+make -C libdw libdw.a
+make -C libelf libelf.a
 {% endblock %}
 
 {% block install %}
-for l in backends lib libcpu libebl libdwelf libdwfl libelf libdw; do
-    (cd ${l} && make install)
-done
-
+make -C libdw install-exec install-data
+make -C libelf install-exec install-data
 cp version.h ${out}/include/elfutils/
 {% endblock %}

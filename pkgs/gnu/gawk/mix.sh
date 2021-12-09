@@ -24,11 +24,10 @@ export CPPFLAGS="-Derr=gawk_err -Dxmalloc=gawk_xmalloc -Dxrealloc=Dgawk_xrealloc
 {% endblock %}
 
 {% block configure_flags %}
---libexecdir=${out}/bin/awk_exec
 --disable-extensions
 {% endblock %}
 
-{% block test %}
+{% block test_bin %}
 export PATH="${out}/bin:${PATH}"
 cd test
 make basic

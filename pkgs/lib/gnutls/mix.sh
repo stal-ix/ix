@@ -21,10 +21,6 @@ lib/darwin/framework/Security/mix.sh
 lib/unistring/mix.sh
 {% endblock %}
 
-{% block bld_tool %}
-gnu/which/mix.sh
-{% endblock %}
-
 {% block setup %}
 # conflict with libunbound
 export CPPFLAGS="-Dverbose=gnutls_verbose ${CPPFLAGS}"

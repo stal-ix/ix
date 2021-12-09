@@ -19,7 +19,6 @@ lib/fontconfig/mix.sh
 {% endblock %}
 
 {% block bld_tool %}
-gnu/which/mix.sh
 dev/build/autoconf/2/69/mix.sh
 dev/build/automake/1.16.3/mix.sh
 {% endblock %}

@@ -1,4 +1,4 @@
-{% extends '//mix/template/std.sh' %}
+{% extends '//mix/template/make.sh' %}
 
 {% block fetch %}
 https://downloads.sourceforge.net/project/infozip/UnZip%206.x%20%28latest%29/UnZip%206.0/unzip60.tar.gz
@@ -26,14 +26,15 @@ for i in ../debian/patches/*.patch; do
 done
 
 for f in fileio.c list.c zipinfo.c; do
-    (echo '#include <time.h>'; cat $f) > tmp && mv tmp $f
+    (echo '#include <time.h>'; cat ${f}) > _ && mv _ ${f}
 done
 {% endblock %}
 
-{% block build %}
-make -f unix/Makefile macosx || true
+{% block make_flags %}
+-f unix/Makefile
+MANDIR=${out}/share/man/man1
 {% endblock %}
 
-{% block install %}
-make prefix=${out} MANDIR=${out}/share/man/man1 -f unix/Makefile install
+{% block make_target %}
+macosx
 {% endblock %}
