@@ -4,6 +4,10 @@
 bmake
 {% endblock %}
 
+{% block make_thrs %}
+1
+{% endblock %}
+
 {% block bld_libs %}
 {% endblock %}
 

@@ -6,6 +6,12 @@ rm -rf ${out}/bin ${out}/libexec
 rm -rf ${out}/lib ${out}/include
 {% endif %}
 
+{% if kind != 'lib' %}
+find ${out}/ | grep '\.[ao]$' | while read l; do
+    rm ${l}
+done
+{% endif %}
+
 if test -d ${out}/man; then
     mkdir -p ${out}/share
     mv ${out}/man ${out}/share/

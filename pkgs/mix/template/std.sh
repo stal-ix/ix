@@ -12,15 +12,27 @@ cd ${CD}
 {% endblock %}
 
 {% block step_install %}
+(
+    set -eu
+
 {{super()}}
+)
+
+(
+    set -eu
 
 {% block postinstall %}
 {% include 'blocks/postinstall.sh' %}
 {% endblock %}
+)
+
+(
+    set -eu
 
 {% block prepare_env %}
 {% include 'blocks/env.sh' %}
 {% endblock %}
+)
 {% endblock %}
 
 {% block std_box %}

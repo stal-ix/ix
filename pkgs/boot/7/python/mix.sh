@@ -33,10 +33,5 @@ boot/6/env/std/mix.sh
 {% block setup %}
 {% endblock %}
 
-{% block install %}
-{{super()}}
-find ${out}/ | grep '\.a$' | xargs rm
-{% endblock %}
-
 {% block env %}
 {% endblock %}
