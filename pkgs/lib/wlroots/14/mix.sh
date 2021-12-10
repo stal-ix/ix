@@ -23,7 +23,6 @@ lib/wayland/protocols/mix.sh
 {% block meson_flags %}
 -Dxwayland=disabled
 -Drenderers=gles2
-#-Dbackends=drm,libinput
 {% endblock %}
 
 {% block setup %}

@@ -11,6 +11,6 @@ lib/c++/mix.sh
 
 {% block bld_tool %}
 dev/lang/flex/mix.sh
-dev/lang/bison/3/6/mix.sh
+dev/lang/bison/3/8/mix.sh
 dev/tool/python/mix.sh
 {% endblock %}

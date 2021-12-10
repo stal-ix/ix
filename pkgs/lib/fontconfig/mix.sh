@@ -6,8 +6,6 @@ ab06ff17524de3f1ddd3c97ed8a02f8d
 {% endblock %}
 
 {% block bld_tool %}
-tool/compress/gzip/mix.sh
-gnu/tar/mix.sh
 gnu/gettext/mix.sh
 dev/tool/gperf/mix.sh
 dev/tool/python/mix.sh
@@ -39,12 +37,8 @@ cat meson.build \
 {{super()}}
 
 {% if kind != 'dat' %}
-cd ${tmp}/obj
-
-fr=$(basename ${out})
-to=$(basename ${d_lib_fontconfig})
-
-sed -e "s|${fr}|${to}|" -i config.h
+sed -e "s|$(basename ${out})|$(basename ${d_lib_fontconfig})|" \
+    -i ${tmp}/obj/config.h
 {% endif %}
 {% endblock %}
 

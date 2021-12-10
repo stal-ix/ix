@@ -6,7 +6,7 @@ https://github.com/djpohly/dwl/archive/refs/tags/v0.2.1.tar.gz
 {% endblock %}
 
 {% block bld_libs %}
-lib/wlroots/mix.sh
+lib/wlroots/14/mix.sh
 lib/wayland/mix.sh
 {% endblock %}
 

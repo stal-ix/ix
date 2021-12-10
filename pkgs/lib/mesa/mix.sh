@@ -1,8 +1,8 @@
 {% extends '//mix/template/meson.sh' %}
 
 {% block fetch %}
-https://mesa.freedesktop.org/archive/mesa-21.2.5.tar.xz
-63ef94beb6677db0c5a43289e7e76ba4
+https://gitlab.freedesktop.org/mesa/mesa/-/archive/c50bdacbda6dc63d4c794e79357ffebf9756aa8a/mesa-c50bdacbda6dc63d4c794e79357ffebf9756aa8a.tar.bz2
+6dcc80901723362551a26584b6057043
 {% endblock %}
 
 {% block lib_deps %}
@@ -13,6 +13,7 @@ lib/llvm/mix.sh
 lib/expat/mix.sh
 lib/wayland/mix.sh
 lib/elfutils/mix.sh
+lib/vulkan/loader/mix.sh
 {% endblock %}
 
 {% block bld_libs %}
@@ -28,8 +29,8 @@ lib/wayland/protocols/mix.sh
 
 {% block meson_flags %}
 -Ddri-drivers=
--Dvulkan-drivers=
--Dgallium-drivers=swrast,radeonsi
+-Dvulkan-drivers=amd
+-Dgallium-drivers=zink,radeonsi
 
 -Dvalgrind=disabled
 -Dlibunwind=disabled
@@ -42,8 +43,11 @@ lib/wayland/protocols/mix.sh
 -Dopengl=true
 -Dgallium-nine=false
 
+{% if kind == 'bin' %}
 -Dtools=glsl
+{% endif %}
 
+-Dcpp_rtti=false
 -Dshared-llvm=disabled
 {% endblock %}
 
@@ -52,11 +56,25 @@ export CPPFLAGS="-Dhandle_table_remove=mesa_handle_table_remove ${CPPFLAGS}"
 {% endblock %}
 
 {% block patch %}
-cd src/gallium/frontends/dri
+(
+    set -eu && cd src/gallium/frontends/dri
 
-for l in *.c *.h; do
-    sed -e 's|dri2_lookup_egl_image|dri2_lookup_egl_image_xxx|g' -i ${l}
-done
+    for l in *.c *.h; do
+        for x in dri2_lookup_egl_image dri2_validate_egl_image; do
+            sed -e "s|${x}|${x}_xxx|g" -i ${l}
+        done
+    done
+)
+
+(
+    set -eu && cd src/gallium/drivers/radeonsi
+
+    for l in *.c *.h *.cpp; do
+        for x in vi_alpha_is_on_msb si_emit_cache_flush si_cp_dma_prefetch si_cp_dma_clear_buffer si_cp_dma_wait_for_idle; do
+            sed -e "s|${x}|${x}_xxx|g" -i ${l}
+        done
+    done
+)
 {% endblock %}
 
 {% block install %}

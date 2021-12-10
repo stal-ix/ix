@@ -13,7 +13,6 @@ http://www.x.org/releases/individual/data/xkeyboard-config/xkeyboard-config-2.24
 lib/xslt/mix.sh
 lib/intl/tool/mix.sh
 gnu/gettext/mix.sh
-tool/compress/gzip/mix.sh
 {% endblock %}
 
 {% block configure_flags %}

@@ -18,6 +18,11 @@ dev/lang/bison/3/6/mix.sh
 lib/z/mix.sh
 {% endblock %}
 
+{% block run_deps %}
+gnu/tar/mix.sh
+tool/compress/gzip/mix.sh
+{% endblock %}
+
 {% block unpack %}
 {{super()}}
 cd gettext-tools

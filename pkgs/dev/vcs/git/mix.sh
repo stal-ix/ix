@@ -24,11 +24,6 @@ gnu/gettext/mix.sh
 net/openssh/mix.sh
 {% endblock %}
 
-{% block setup_tools %}
-ln -s $(which bsdtar) tar
-ln -s $(which bsdcpio) cpio
-{% endblock %}
-
 {% block make_flags %}
 gitexecdir=bin/exec
 INSTALL_SYMLINKS=yes
