@@ -12,11 +12,13 @@ cd ${CD}
 {% endblock %}
 
 {% block step_install %}
+{% if super().strip() %}
 (
     set -eu
 
 {{super()}}
 )
+{% endif %}
 
 (
     set -eu

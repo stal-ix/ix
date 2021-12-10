@@ -41,11 +41,13 @@ meson
 {% endblock %}
 
 {% block step_patch %}
+{% if super().strip() %}
 (
     set -eu
 
 {{super()}}
 )
+{% endif %}
 
 find . | grep meson.build | while read l; do
     sed -e 's|shared_library|library|g' -i ${l}

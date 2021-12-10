@@ -1,4 +1,4 @@
-mkdir bld && cd bld
+mkdir unp && cd unp
 
 for s in ${src}/*; do
     case ${s} in
@@ -17,4 +17,6 @@ for s in ${src}/*; do
     esac
 done
 
-cd *
+{% block unpack_chdir %}
+cd .. && mv unp/* bld && cd bld
+{% endblock %}

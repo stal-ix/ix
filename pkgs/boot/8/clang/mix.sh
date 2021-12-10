@@ -15,3 +15,12 @@ boot/7/cmake/mix.sh
 boot/7/python/mix.sh
 boot/6/env/std/mix.sh
 {% endblock %}
+
+{% block cmake_flags %}
+{{super()}}
+
+-DLLVM_TARGETS_TO_BUILD={{target.llvm_target}}
+
+-DCLANG_ENABLE_STATIC_ANALYZER=OFF
+-DCLANG_ENABLE_ARCMT=OFF
+{% endblock %}

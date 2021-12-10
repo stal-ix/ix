@@ -21,10 +21,12 @@ find . | grep '\.[yl]$' | while read l; do
 done
 {% endblock %}
 
+{% if super().strip() %}
 (
     set -eu
 {{super()}}
 )
+{% endif %}
 
 {% block autoreconf %}
 if which libtoolize; then

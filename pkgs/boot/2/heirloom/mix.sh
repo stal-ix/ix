@@ -11,6 +11,10 @@ boot/2/shutil/mix.sh
 boot/1/env/mix.sh
 {% endblock %}
 
+{% block unpack_chdir %}
+cd *
+{% endblock %}
+
 {% block step_setup %}
 export PATH="${out}/bin:${PATH}"
 {% endblock %}

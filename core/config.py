@@ -14,6 +14,7 @@ ARCHES = {
         'bits': '64',
         'hw_vendor': 'apple',
         'obj_fmt': 'mach-o',
+        'llvm_target': 'AArch64',
     },
     'linux-x86_64': {
         'arch': 'x86_64',
@@ -24,6 +25,7 @@ ARCHES = {
         'bits': '64',
         'hw_vendor': 'pc',
         'obj_fmt': 'elf',
+        'llvm_target': 'X86',
     },
 }
 
