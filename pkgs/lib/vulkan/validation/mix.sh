@@ -1,8 +1,6 @@
 {% extends '//mix/template/cmake.sh' %}
 
 {% block fetch %}
-#https://github.com/KhronosGroup/Vulkan-ValidationLayers/archive/refs/tags/sdk-1.2.198.0.tar.gz
-#b19041a161edcbba9ea4e2fb9eb4cfa0
 https://github.com/KhronosGroup/Vulkan-ValidationLayers/archive/3dfeacfe0ad07415a4cac3122f07991688d97a2a.zip
 57b193272998cdd0563ebc0064a36fe5
 {% endblock %}
