@@ -1,4 +1,4 @@
-{% extends '//mix/template/cmake.sh' %}
+{% extends '//lib/llvm/t/mix.sh' %}
 
 {% block bld_libs %}
 {% if target.os == 'linux' %}
@@ -19,28 +19,9 @@ env/toolchain/mix.sh
 env/release/mix.sh
 {% endblock %}
 
-{% block fetch %}
-{% include '//mix/template/fetch_llvm.sh' %}
-{% endblock %}
-
-{% block setup %}
-{% if target.os == 'darwin' %}
-export LDFLAGS="-Wl,-w ${LDFLAGS}"
-{% endif %}
-{% endblock %}
-
-{% block patch %}
-echo > llvm/unittests/Support/DynamicLibrary/CMakeLists.txt
-{% endblock %}
-
 {% block cmake_flags %}
--DLLVM_BUILD_LLVM_DYLIB=OFF
--DLLVM_LINK_LLVM_DYLIB=OFF
+{{super()}}
 -DLLVM_ENABLE_PROJECTS="clang;lld;polly"
--DCLANG_LINK_CLANG_DYLIB=OFF
--DLLVM_POLLY_LINK_INTO_TOOLS=ON
--DLLVM_ENABLE_PIC=OFF
--DLLVM_DYLIB_COMPONENTS=''
 {% endblock %}
 
 {% block cmake_srcdir %}

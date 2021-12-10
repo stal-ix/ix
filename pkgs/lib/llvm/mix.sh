@@ -1,4 +1,4 @@
-{% extends '//mix/template/cmake.sh' %}
+{% extends '//lib/llvm/t/mix.sh' %}
 
 {% block lib_deps %}
 lib/c++/mix.sh
@@ -8,24 +8,10 @@ lib/c++/mix.sh
 dev/tool/python/mix.sh
 {% endblock %}
 
-{% block fetch %}
-{% include '//mix/template/fetch_llvm.sh' %}
-{% endblock %}
-
-{% block patch %}
-echo > llvm/unittests/Support/DynamicLibrary/CMakeLists.txt
-{% endblock %}
-
 {% block cmake_flags %}
-# common
--DLLVM_BUILD_LLVM_DYLIB=OFF
--DLLVM_LINK_LLVM_DYLIB=OFF
--DLLVM_ENABLE_PROJECTS=
--DLLVM_POLLY_LINK_INTO_TOOLS=ON
--DLLVM_ENABLE_PIC=OFF
--DLLVM_DYLIB_COMPONENTS=
+{{super()}}
 
-# do not build tools
+-DLLVM_ENABLE_PROJECTS=
 -DLLVM_BUILD_TOOLS=OFF
 -DLLVM_BUILD_UTILS=OFF
 {% endblock %}

@@ -1,4 +1,4 @@
-{% extends '//mix/template/cmake.sh' %}
+{% extends '//lib/llvm/t/mix.sh' %}
 
 {% block lib_deps %}
 lib/c/naked/mix.sh
@@ -14,11 +14,9 @@ lib/linux/mix.sh
 env/std/1/mix.sh
 {% endblock %}
 
-{% block fetch %}
-{% include '//mix/template/fetch_llvm.sh' %}
-{% endblock %}
-
 {% block cmake_flags %}
+{{super()}}
+
 -DLIBCXXABI_ENABLE_SHARED=NO
 -DLIBCXXABI_ENABLE_STATIC=YES
 
@@ -55,7 +53,11 @@ install-unwind
 {% endblock %}
 
 {% block patch %}
-cat libcxx/CMakeLists.txt | grep -v 'is reserved for use by libc' > _ && mv _ libcxx/CMakeLists.txt
+{{super()}}
+
+cat libcxx/CMakeLists.txt \
+    | grep -v 'is reserved for use by libc' \
+    > _ && mv _ libcxx/CMakeLists.txt
 {% endblock %}
 
 {% block install %}

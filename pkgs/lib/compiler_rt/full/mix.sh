@@ -1,4 +1,4 @@
-{% extends '//mix/template/cmake.sh' %}
+{% extends '//lib/llvm/t/mix.sh' %}
 
 {% block lib_deps %}
 lib/c++/mix.sh
@@ -15,11 +15,9 @@ dev/lang/clang/mix.sh
 boot/final/env/tools/mix.sh
 {% endblock %}
 
-{% block fetch %}
-{% include '//mix/template/fetch_llvm.sh' %}
-{% endblock %}
-
 {% block patch %}
+{{super()}}
+
 cd compiler-rt
 
 cat << EOF > fix.py
@@ -53,8 +51,11 @@ done
 {% endblock %}
 
 {% block cmake_flags %}
+{{super()}}
+
 -DLLVM_ENABLE_RUNTIMES="compiler-rt"
 -DLLVM_BINARY_DIR="${out}/lib/cmake"
+
 -DCOMPILER_RT_BUILD_LIBFUZZER=OFF
 -DCOMPILER_RT_BUILD_MEMPROF=OFF
 -DCOMPILER_RT_BUILD_ORC=OFF

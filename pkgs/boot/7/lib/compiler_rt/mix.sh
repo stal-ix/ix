@@ -5,7 +5,7 @@ boot/6/env/std/mix.sh
 {% endblock %}
 
 {% block fetch %}
-{% include '//mix/template/fetch_llvm.sh' %}
+{% include '//lib/llvm/t/ver.sh' %}
 {% endblock %}
 
 {% block unpack %}
