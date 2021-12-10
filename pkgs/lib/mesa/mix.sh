@@ -36,6 +36,7 @@ lib/wayland/protocols/mix.sh
 -Dlibunwind=disabled
 
 -Dplatforms=wayland
+-Degl-native-platform=wayland
 
 -Degl=enabled
 -Dglx=disabled
@@ -48,6 +49,8 @@ lib/wayland/protocols/mix.sh
 {% endif %}
 
 -Dcpp_rtti=false
+-Dshader-cache=disabled
+#-Dllvm=disabled
 -Dshared-llvm=disabled
 {% endblock %}
 
@@ -56,25 +59,25 @@ export CPPFLAGS="-Dhandle_table_remove=mesa_handle_table_remove ${CPPFLAGS}"
 {% endblock %}
 
 {% block patch %}
-(
-    set -eu && cd src/gallium/frontends/dri
+CD=${PWD}
 
-    for l in *.c *.h; do
-        for x in dri2_lookup_egl_image dri2_validate_egl_image; do
-            sed -e "s|${x}|${x}_xxx|g" -i ${l}
-        done
+cd src/gallium/frontends/dri
+
+for l in *.c *.h; do
+    for x in dri2_lookup_egl_image dri2_validate_egl_image; do
+        sed -e "s|${x}|${x}_xxx|g" -i ${l}
     done
-)
+done
 
-(
-    set -eu && cd src/gallium/drivers/radeonsi
+cd ${CD}
 
-    for l in *.c *.h *.cpp; do
-        for x in vi_alpha_is_on_msb si_emit_cache_flush si_cp_dma_prefetch si_cp_dma_clear_buffer si_cp_dma_wait_for_idle; do
-            sed -e "s|${x}|${x}_xxx|g" -i ${l}
-        done
+cd src/gallium/drivers/radeonsi
+
+for l in *.c *.h *.cpp; do
+    for x in vi_alpha_is_on_msb si_emit_cache_flush si_cp_dma_prefetch si_cp_dma_clear_buffer si_cp_dma_wait_for_idle; do
+        sed -e "s|${x}|${x}_xxx|g" -i ${l}
     done
-)
+done
 {% endblock %}
 
 {% block install %}
@@ -85,8 +88,14 @@ export CPPFLAGS="-Dhandle_table_remove=mesa_handle_table_remove ${CPPFLAGS}"
 clang -c empty.c
 ar q empty.a empty.o
 mv empty.a ${out}/lib/libGLESv1_CM.a
+
+cd ${out}/lib/dri
+
+mv zink_dri.so drivers.a
+rm *.so
 {% endblock %}
 
 {% block env %}
+export MESA_DRIVERS="${out}/lib/dri/drivers.a"
 export COFLAGS="--with-gallium=${out} \${COFLAGS}"
 {% endblock %}
