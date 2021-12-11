@@ -31,7 +31,7 @@ lib/wayland/protocols/mix.sh
 {% block meson_flags %}
 -Ddri-drivers=
 -Dvulkan-drivers=amd
--Dgallium-drivers=zink,radeonsi
+-Dgallium-drivers=radeonsi,zink
 
 -Dvalgrind=disabled
 -Dlibunwind=disabled
@@ -90,7 +90,7 @@ rm -rf dri
 
 mkdir big && cd big
 
-cat << EOF > fix.py
+cat << EOF > ${tmp}/fix.py
 import os
 import sys
 
@@ -103,7 +103,7 @@ n = sys.argv[1].replace('/', '_').replace('.', '_')
 
 for x in list(os.listdir('.')):
     print(f'got {x}')
-    rn(x, x[:-4].replace('.', '_') + x[-4:])
+    rn(x, x[:-2].replace('.', '_') + x[-2:])
 
 for x in list(os.listdir('.')):
     if x.startswith('___'):
@@ -112,7 +112,14 @@ EOF
 
 for l in ../*.a; do
     llvm-ar x ${l}
-    python3 fix.py ${l}
+    python3 ${tmp}/fix.py ${l}
+done
+
+rm si_state_draw*
+
+for i in 1 2 3 4 5 6; do
+    llvm-ar -xN ${i} ../libdrivers.a si_state_draw.cpp.o
+    mv si_state_draw.cpp.o si_state_draw_cpp_${i}.o
 done
 
 rm *libGLESv1*entry*
@@ -121,7 +128,6 @@ rm *egl_wayland_wayland-drm_linux-dmabuf-unstable-v1-protocol*
 rm *libvulkan_radeon_a___spirv_*
 
 ${AR} q libfullgl.a *.o
-${RANLIB} libfullgl.a
 
 echo > empty.c
 
@@ -134,7 +140,7 @@ for l in *.a; do
     rm ${l} && ln -s big/libempty.a ${l}
 done
 
-ln big/libfullgl.a .
+ln -s big/libfullgl.a .
 {% endblock %}
 
 {% block env %}
