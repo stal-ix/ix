@@ -16,6 +16,7 @@ lib/wlroots/trunk/mix.sh
 {% endblock %}
 
 {% block bld_tool %}
+dev/build/meson/better/mix.sh
 dev/doc/scdoc/mix.sh
 lib/wayland/protocols/mix.sh
 {% endblock %}

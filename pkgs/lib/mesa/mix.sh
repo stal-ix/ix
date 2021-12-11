@@ -56,7 +56,7 @@ lib/wayland/protocols/mix.sh
 {% endblock %}
 
 {% block setup %}
-export CPPFLAGS="-Dhandle_table_remove=mesa_handle_table_remove ${CPPFLAGS}"
+export CPPFLAGS="-Dhandle_table_remove=mesa_handle_table_remove -Dos_create_anonymous_file=os_create_anonymous_file_mesa ${CPPFLAGS}"
 {% endblock %}
 
 {% block patch %}
@@ -84,19 +84,60 @@ done
 {% block install %}
 {{super()}}
 
-# TODO
->empty.c
-clang -c empty.c
-ar q empty.a empty.o
-mv empty.a ${out}/lib/libGLESv1_CM.a
+cd ${out}/lib
 
-cd ${out}/lib/dri
+mv dri/zink_dri.so libdrivers.a
+rm -rf dri
 
-ln zink_dri.so drivers.a
-rm *.so
+mkdir big && cd big
+
+cat << EOF > fix.py
+import os
+import sys
+
+def rn(fr, to):
+    if fr != to:
+        print(f'rename {fr} {to}')
+        os.rename(fr, to)
+
+n = sys.argv[1].replace('/', '_').replace('.', '_')
+
+for x in list(os.listdir('.')):
+    print(f'got {x}')
+    rn(x, x[:-4].replace('.', '_') + x[-4:])
+
+for x in list(os.listdir('.')):
+    if x.startswith('___'):
+        rn(x, 'Z' + n + x)
+EOF
+
+for l in ../*.a; do
+    llvm-ar x ${l}
+    python3 fix.py ${l}
+done
+
+rm *libGLESv1*entry*
+rm meson*vulkan_util*
+rm *egl_wayland_wayland-drm_linux-dmabuf-unstable-v1-protocol*
+rm *libvulkan_radeon_a___spirv_*
+
+${AR} q libfullgl.a *.o
+${RANLIB} libfullgl.a
+
+echo > empty.c
+
+${CC} -c empty.c
+${AR} q libempty.a empty.o
+
+rm *.o *.c && cd ..
+
+for l in *.a; do
+    rm ${l} && ln -s big/libempty.a ${l}
+done
+
+ln big/libfullgl.a .
 {% endblock %}
 
 {% block env %}
-export MESA_DRIVERS="${out}/lib/dri/drivers.a"
 export COFLAGS="--with-gallium=${out} \${COFLAGS}"
 {% endblock %}
