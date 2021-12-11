@@ -15,9 +15,8 @@ gnu/patch/mix.sh
 env/std/0/mix.sh
 {% endblock %}
 
-{% block unpack %}
-{{super()}}
-cd ../unzip*
+{% block unpack_chdir %}
+cd unzip*
 {% endblock %}
 
 {% block patch %}

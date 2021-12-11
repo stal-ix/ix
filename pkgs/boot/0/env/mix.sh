@@ -1,7 +1,7 @@
 {% extends '//mix/template/hub.sh' %}
 
 {% block ind_deps %}
-env/release/mix.sh
+env/bt/mix.sh
 {% endblock %}
 
 {% block run_deps %}

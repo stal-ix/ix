@@ -16,11 +16,11 @@ stubs() {
     python3 "$(which gen_dl_stubs.py)" $1 {{target.os}}
 }
 
-(
-    set -eu
-
-    llvm-nm ${MESA_DRIVERS} | grep __driDriverGetExtensions
-) | stubs opengl > dl.cpp
+llvm-nm ${MESA_DRIVERS} | grep __driDriverGetExtensions | while read l; do
+    stubs "$(echo ${l} | sed -e 's|.*_||')_dri" << EOF >> dl.cpp
+${l}
+EOF
+done
 
 stubs vulkan_intel << EOF >> dl.cpp
 fopen
@@ -30,14 +30,18 @@ stubs vulkan_lvp << EOF >> dl.cpp
 fopen
 EOF
 
+stubs vulkan << EOF >> dl.cpp
+fopen
+EOF
+
 # TODO(pg): if not radeon?
 stubs vulkan_radeon << EOF >> dl.cpp
-vkGetInstanceProcAddr
 vk_icdGetInstanceProcAddr
 vk_icdNegotiateLoaderICDInterfaceVersion
 vk_icdGetPhysicalDeviceProcAddr
 EOF
 
+#vkGetInstanceProcAddr
 cat dl.cpp
 
 cc -c dl.cpp

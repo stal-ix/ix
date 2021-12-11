@@ -44,7 +44,7 @@ export MFLAGS="${MFLAGS} -isystem ${PWD}/src/include"
 export MFLAGS="${MFLAGS} -isystem ${PWD}/src/internal"
 export MFLAGS="${MFLAGS} -isystem ${PWD}/include"
 
-export CFLAGS="-w ${MFLAGS} -D__STDC_HOSTED__ -D_XOPEN_SOURCE=700 -U_GNU_SOURCE ${CPPFLAGS} -ffreestanding -nostdinc -std=c99 ${CFLAGS}"
+export CFLAGS="-w ${MFLAGS} -D__STDC_HOSTED__ -D_XOPEN_SOURCE=700 -U_GNU_SOURCE ${CPPFLAGS} -ffreestanding -nostdinc -std=c99 ${CFLAGS} ${OPTFLAGS}"
 
 objs=""
 

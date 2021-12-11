@@ -22,4 +22,5 @@ lib/wayland/protocols/mix.sh
 
 {% block setup %}
 export CPPFLAGS="-Dlist_insert=sway_list_insert -Dseat_create=sway_seat_create -Dseat_destroy=sway_seat_destroy -Dserver_init=sway_server_init ${CPPFLAGS}"
+export LDFLAGS="-Wl,-z,stack-size=10000000 ${LDFLAGS}"
 {% endblock %}

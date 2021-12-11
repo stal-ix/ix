@@ -9,11 +9,12 @@ https://gitlab.freedesktop.org/mesa/mesa/-/archive/c50bdacbda6dc63d4c794e79357ff
 lib/z/mix.sh
 lib/drm/mix.sh
 lib/zstd/mix.sh
-lib/llvm/mix.sh
+#lib/llvm/mix.sh
 lib/expat/mix.sh
 lib/wayland/mix.sh
 lib/elfutils/mix.sh
 lib/vulkan/loader/mix.sh
+lib/vulkan/headers/mix.sh
 {% endblock %}
 
 {% block bld_libs %}
@@ -30,7 +31,7 @@ lib/wayland/protocols/mix.sh
 {% block meson_flags %}
 -Ddri-drivers=
 -Dvulkan-drivers=amd
--Dgallium-drivers=zink,radeonsi
+-Dgallium-drivers=zink
 
 -Dvalgrind=disabled
 -Dlibunwind=disabled
@@ -50,7 +51,7 @@ lib/wayland/protocols/mix.sh
 
 -Dcpp_rtti=false
 -Dshader-cache=disabled
-#-Dllvm=disabled
+-Dllvm=disabled
 -Dshared-llvm=disabled
 {% endblock %}
 
@@ -91,7 +92,7 @@ mv empty.a ${out}/lib/libGLESv1_CM.a
 
 cd ${out}/lib/dri
 
-mv zink_dri.so drivers.a
+ln zink_dri.so drivers.a
 rm *.so
 {% endblock %}
 

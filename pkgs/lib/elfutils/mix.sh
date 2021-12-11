@@ -12,12 +12,11 @@ lib/z/mix.sh
 lib/bzip2/mix.sh
 lib/xz/mix.sh
 lib/zstd/mix.sh
+lib/intl/mix.sh
 {% endblock %}
 
 {% block bld_libs %}
 lib/argp/standalone/mix.sh
-lib/iconv/mix.sh
-lib/intl/mix.sh
 {% endblock %}
 
 {% block bld_tool %}
