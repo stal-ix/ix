@@ -4,6 +4,18 @@ rm -rf ${out}/bin ${out}/libexec ${out}/lib ${out}/include
 rm -rf ${out}/bin ${out}/libexec
 {% elif kind == 'bin' %}
 rm -rf ${out}/lib ${out}/include
+
+{% block strip_bin %}
+if which llvm-strip; then
+    find ${out}/bin/ | while read l; do
+        if test -f ${l}; then
+            ls -la ${l}
+            llvm-strip ${l} || true
+            ls -la ${l}
+        fi
+    done
+fi
+{% endblock %}
 {% endif %}
 
 {% if kind != 'lib' %}

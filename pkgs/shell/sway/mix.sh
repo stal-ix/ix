@@ -14,7 +14,7 @@ lib/wayland/mix.sh
 lib/wlroots/trunk/mix.sh
 lib/vulkan/driver/mix.sh
 lib/mesa/drivers/gl/zink/mix.sh
-lib/mesa/drivers/gl/radeonsi/mix.sh
+#lib/mesa/drivers/gl/radeonsi/mix.sh
 {% endblock %}
 
 {% block bld_tool %}

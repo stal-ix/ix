@@ -1,15 +1,15 @@
 {% extends '//mix/template/meson.sh' %}
 
 {% block fetch %}
-https://gitlab.freedesktop.org/mesa/mesa/-/archive/c50bdacbda6dc63d4c794e79357ffebf9756aa8a/mesa-c50bdacbda6dc63d4c794e79357ffebf9756aa8a.tar.bz2
-6dcc80901723362551a26584b6057043
+https://archive.mesa3d.org//mesa-21.3.1.tar.xz
+d6efe1ecc0680cd1adb942f05600d884
 {% endblock %}
 
 {% block lib_deps %}
 lib/z/mix.sh
 lib/drm/mix.sh
 lib/zstd/mix.sh
-lib/llvm/mix.sh
+#lib/llvm/mix.sh
 lib/expat/mix.sh
 lib/wayland/mix.sh
 lib/elfutils/mix.sh
@@ -31,7 +31,7 @@ lib/wayland/protocols/mix.sh
 {% block meson_flags %}
 -Ddri-drivers=
 -Dvulkan-drivers=amd
--Dgallium-drivers=radeonsi,zink
+-Dgallium-drivers=zink
 
 -Dvalgrind=disabled
 -Dlibunwind=disabled
@@ -51,6 +51,7 @@ lib/wayland/protocols/mix.sh
 
 -Dcpp_rtti=false
 -Dshader-cache=disabled
+-Dllvm=disabled
 -Dshared-llvm=disabled
 {% endblock %}
 
@@ -115,9 +116,7 @@ for l in ../*.a; do
     python3 ${tmp}/fix.py ${l}
 done
 
-rm si_state_draw*
-
-for i in 1 2 3 4 5 6; do
+rm si_state_draw* && for i in 1 2 3 4 5 6; do
     llvm-ar -xN ${i} ../libdrivers.a si_state_draw.cpp.o
     mv si_state_draw.cpp.o si_state_draw_cpp_${i}.o
 done
