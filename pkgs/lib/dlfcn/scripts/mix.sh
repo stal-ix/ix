@@ -4,6 +4,10 @@
 dev/tool/python/mix.sh
 {% endblock %}
 
+{% block ind_deps %}
+lib/dlfcn/scripts/lib/mix.sh
+{% endblock %}
+
 {% block install %}
 mkdir ${out}/bin
 

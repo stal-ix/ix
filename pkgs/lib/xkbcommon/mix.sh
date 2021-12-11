@@ -25,3 +25,7 @@ lib/xkbcommon/config/mix.sh
 -Denable-docs=false
 -Dxkb-config-root=${XKB_CONFIG}
 {% endblock %}
+
+{% block setup %}
+export CPPFLAGS="-Dparse_string=parse_string_xkbcommon ${CPPFLAGS}"
+{% endblock %}

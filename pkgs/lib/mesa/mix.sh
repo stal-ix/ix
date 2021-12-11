@@ -9,7 +9,7 @@ https://gitlab.freedesktop.org/mesa/mesa/-/archive/c50bdacbda6dc63d4c794e79357ff
 lib/z/mix.sh
 lib/drm/mix.sh
 lib/zstd/mix.sh
-#lib/llvm/mix.sh
+lib/llvm/mix.sh
 lib/expat/mix.sh
 lib/wayland/mix.sh
 lib/elfutils/mix.sh
@@ -31,7 +31,7 @@ lib/wayland/protocols/mix.sh
 {% block meson_flags %}
 -Ddri-drivers=
 -Dvulkan-drivers=amd
--Dgallium-drivers=zink
+-Dgallium-drivers=zink,radeonsi
 
 -Dvalgrind=disabled
 -Dlibunwind=disabled
@@ -51,7 +51,6 @@ lib/wayland/protocols/mix.sh
 
 -Dcpp_rtti=false
 -Dshader-cache=disabled
--Dllvm=disabled
 -Dshared-llvm=disabled
 {% endblock %}
 

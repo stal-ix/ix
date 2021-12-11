@@ -11,17 +11,16 @@ lib/cairo/mix.sh
 lib/pango/mix.sh
 lib/json/c/mix.sh
 lib/wayland/mix.sh
-lib/mesa/drivers/mix.sh
 lib/wlroots/trunk/mix.sh
+lib/mesa/drivers/gl/radeonsi/mix.sh
 {% endblock %}
 
 {% block bld_tool %}
-dev/build/meson/better/mix.sh
 dev/doc/scdoc/mix.sh
 lib/wayland/protocols/mix.sh
+dev/build/meson/better/mix.sh
 {% endblock %}
 
 {% block setup %}
 export CPPFLAGS="-Dlist_insert=sway_list_insert -Dseat_create=sway_seat_create -Dseat_destroy=sway_seat_destroy -Dserver_init=sway_server_init ${CPPFLAGS}"
-export LDFLAGS="-Wl,-z,stack-size=10000000 ${LDFLAGS}"
 {% endblock %}
