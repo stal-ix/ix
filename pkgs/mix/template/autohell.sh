@@ -6,9 +6,11 @@ dev/build/pkg-config/mix.sh
 {% endblock %}
 
 {% block step_setup %}
-export ac_cv_build="{{target.gnu_arch}}-{{target.hw_vendor}}-{{target.os}}"
-export ac_cv_host="${ac_cv_build}"
-export ac_cv_target="${ac_cv_build}"
+{% block setup_gnu_cross %}
+export ac_cv_build="{{host.gnu.three}}"
+export ac_cv_host="{{target.gnu.three}}"
+export ac_cv_target="{{target.gnu.three}}"
+{% endblock %}
 
 {{super()}}
 {% endblock %}

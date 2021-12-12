@@ -42,7 +42,7 @@ chmod +x sw_vers
 
 ln -s $(which dash) sh
 
-setup_toolchain
+{% block setup_compiler %}setup_toolchain{% endblock %}
 
 {% block setup_tools %}
 {% endblock %}

@@ -5,6 +5,10 @@ import functools
 import itertools
 
 
+def copy_dict(d):
+    return json.loads(json.dumps(d))
+
+
 def iter_dir(w):
     for a, b, c in os.walk(w):
         for x in c:

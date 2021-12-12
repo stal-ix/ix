@@ -1,38 +1,35 @@
 {% extends '//mix/template/py.py' %}
 
 {% block env %}
-export CLANG_TARGET="--target={{target.arch}}-{{target.vendor}}-{{target.os}}"
-export CPPFLAGS="-Wno-unused-command-line-argument -nostdinc -nostdinc++ ${CLANG_TARGET} ${CPPFLAGS}"
-export CFLAGS="-fcolor-diagnostics ${CFLAGS}"
-export CXXFLAGS="-fcolor-diagnostics -Wno-stdlibcxx-not-found ${CXXFLAGS}"
-export LDFLAGS="-nostdlib++ -fcolor-diagnostics ${CLANG_TARGET} ${LDFLAGS}"
-
 setup_compiler() {
-    cat << EOF > clang
+B="--target={{target.arch}}-{{target.vendor}}-{{target.os}} -fcolor-diagnostics -Wno-unused-command-line-argument -nostdinc -nostdinc++ ${OPTFLAGS} ${CPPFLAGS} ${CFLAGS}"
+E="-nostdlib++ ${LDFLAGS} ${OPTFLAGS}"
+
+cat << EOF > clang
 #!$(which dash)
-$(which clang) ${OPTFLAGS} ${CPPFLAGS} ${CFLAGS} ${CONLYFLAGS} "\$@" ${LDFLAGS} ${OPTFLAGS}
+exec $(which clang) ${B} ${CONLYFLAGS} "\$@" ${E}
 EOF
 
-    cat << EOF > clang++
+cat << EOF > clang++
 #!$(which dash)
-$(which clang++) ${OPTFLAGS} ${CPPFLAGS} ${CFLAGS} ${CONLYFLAGS} ${CXXFLAGS} "\$@" ${LDFLAGS} ${OPTFLAGS}
+exec $(which clang++) ${B} -Wno-stdlibcxx-not-found ${CXXFLAGS} "\$@" ${E}
 EOF
 
-    cat << EOF > cpp
+cat << EOF > cpp
 #!$(which dash)
-$(which clang-cpp) ${OPTFLAGS} ${CPPFLAGS} "\$@" ${OPTFLAGS}
+exec $(which clang-cpp) ${B} "\$@" ${OPTFLAGS}
 EOF
 
-    chmod +x clang clang++ cpp
+chmod +x clang clang++ cpp
 
-    ln -s clang gcc
-    ln -s clang c99
-    ln -s clang cc
+ln -s clang gcc
+ln -s clang c99
+ln -s clang cc
 
-    ln -s clang++ g++
-    ln -s clang++ c++
+ln -s clang++ g++
+ln -s clang++ c++
 
-    export CC=clang
-    export CXX=clang++
+export CC=clang
+export CXX=clang++
 }
 {% endblock %}

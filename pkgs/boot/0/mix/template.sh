@@ -6,7 +6,7 @@ https://storage.yandexcloud.net/mix-cache/{{self.link().strip()}}
 {% endblock %}
 
 {% block ind_deps %}
-env/toolchain/mix.sh
+env/toolchain/llvm/mix.sh
 {% endblock %}
 
 {% block build %}

@@ -10,7 +10,9 @@ dev/build/make/mix.sh
 make
 {% endblock %}
 
+{% block make_verbose %}
 -s
+{% endblock %}
 
 SHELL="$(which dash)"
 PREFIX="${out}"

@@ -15,7 +15,7 @@ boot/final/env/clang/mix.sh
 {% endblock %}
 
 {% block ind_deps %}
-env/toolchain/mix.sh
+env/toolchain/llvm/mix.sh
 env/bt/mix.sh
 {% endblock %}
 
