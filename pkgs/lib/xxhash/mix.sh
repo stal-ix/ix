@@ -16,7 +16,7 @@ sed -e 's|libxxhash.a libxxhash|libxxhash.a|' -i Makefile
 {% block build %}
 {{super()}}
 >libxxhash.0.8.0.dylib
->libxxhash.0.8.0.so
+>libxxhash.so.0.8.0
 {% endblock %}
 
 {% block test %}
