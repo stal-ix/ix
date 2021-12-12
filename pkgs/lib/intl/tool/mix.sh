@@ -8,7 +8,7 @@ f52d5fa7f128db94e884cd21dd45d2e2
 {% block bld_tool %}
 dev/tool/perl/full/mix.sh
 dev/build/auto/conf/2/69/mix.sh
-dev/build/auto/make/1/16/3/mix.sh
+dev/build/auto/make/1/16/mix.sh
 {% endblock %}
 
 {% block run_deps %}

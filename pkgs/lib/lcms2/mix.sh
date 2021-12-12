@@ -7,5 +7,5 @@ https://github.com/mm2/Little-CMS/archive/refs/tags/lcms2.12.tar.gz
 
 {% block bld_tool %}
 dev/build/auto/conf/2/69/mix.sh
-dev/build/auto/make/1/16/3/mix.sh
+dev/build/auto/make/1/16/mix.sh
 {% endblock %}
