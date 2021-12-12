@@ -7,8 +7,8 @@ https://github.com/netwide-assembler/nasm/archive/refs/tags/nasm-2.15.05.tar.gz
 
 {% block bld_tool %}
 dev/tool/perl/mix.sh
-dev/build/autoconf/2/69/mix.sh
-dev/build/automake/1.16.3/mix.sh
+dev/build/auto/conf/2/69/mix.sh
+dev/build/auto/make/1.16.3/mix.sh
 {% endblock %}
 
 {% block autoreconf %}

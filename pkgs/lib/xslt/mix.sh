@@ -6,8 +6,8 @@ db8765c8d076f1b6caafd9f2542a304a
 {% endblock %}
 
 {% block bld_tool %}
-dev/build/autoconf/2/69/mix.sh
-dev/build/automake/1.16.3/mix.sh
+dev/build/auto/conf/2/69/mix.sh
+dev/build/auto/make/1.16.3/mix.sh
 {% endblock %}
 
 {% block lib_deps %}

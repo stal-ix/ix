@@ -12,8 +12,8 @@ lib/unistring/mix.sh
 {% endblock %}
 
 {% block bld_tool %}
-dev/build/autoconf/2/69/mix.sh
-dev/build/automake/1.16.1/mix.sh
+dev/build/auto/conf/2/69/mix.sh
+dev/build/auto/make/1.16.1/mix.sh
 {% endblock %}
 
 {% block setup %}

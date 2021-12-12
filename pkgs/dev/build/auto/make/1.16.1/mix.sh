@@ -1,4 +1,4 @@
-{% extends '//dev/build/automake/1.16.3/mix.sh' %}
+{% extends '//dev/build/auto/make/1.16.3/mix.sh' %}
 
 {% block fetch %}
 https://ftp.gnu.org/gnu/automake/automake-1.16.1.tar.xz
