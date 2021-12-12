@@ -10,6 +10,8 @@ dev/build/make/mix.sh
 make
 {% endblock %}
 
+-s
+
 SHELL="$(which dash)"
 PREFIX="${out}"
 prefix="${out}"

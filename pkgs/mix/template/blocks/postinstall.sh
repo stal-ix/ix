@@ -9,9 +9,7 @@ rm -rf ${out}/lib ${out}/include
 if which llvm-strip; then
     find ${out}/bin/ | while read l; do
         if test -f ${l}; then
-            ls -la ${l}
             llvm-strip ${l} || true
-            ls -la ${l}
         fi
     done
 fi
