@@ -7,5 +7,5 @@ ad7e40dedc268f97c44e7ee3cd54548a
 
 {% block bld_tool %}
 dev/build/auto/conf/2/69/mix.sh
-dev/build/auto/make/1.16.3/mix.sh
+dev/build/auto/make/1/16/3/mix.sh
 {% endblock %}

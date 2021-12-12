@@ -12,7 +12,7 @@ lib/linux/mix.sh
 {% block bld_tool %}
 dev/tool/gperf/mix.sh
 dev/build/auto/conf/2/71/mix.sh
-dev/build/auto/make/1.16.3/mix.sh
+dev/build/auto/make/1/16/3/mix.sh
 {% endblock %}
 
 {% block autoreconf %}

@@ -8,7 +8,7 @@ https://github.com/xiph/flac/archive/refs/tags/1.3.3.tar.gz
 {% block bld_tool %}
 gnu/gettext/mix.sh
 dev/build/auto/conf/2/69/mix.sh
-dev/build/auto/make/1.16.3/mix.sh
+dev/build/auto/make/1/16/3/mix.sh
 {% endblock %}
 
 {% block setup_tools %}

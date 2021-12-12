@@ -8,7 +8,7 @@ bc78f39c7cd7fab1dd5fc4a2c3be1661
 {% block bld_tool %}
 lib/magic/mix.sh
 dev/build/auto/conf/2/69/mix.sh
-dev/build/auto/make/1.16.3/mix.sh
+dev/build/auto/make/1/16/3/mix.sh
 {% endblock %}
 
 {% block std_env %}

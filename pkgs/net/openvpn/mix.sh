@@ -17,7 +17,7 @@ lib/{{openvpnssl or 'openssl'}}/mix.sh
 {% block bld_tool %}
 pypi/docutils/scripts/mix.sh
 dev/build/auto/conf/2/69/mix.sh
-dev/build/auto/make/1.16.3/mix.sh
+dev/build/auto/make/1/16/3/mix.sh
 {% endblock %}
 
 {% block configure_flags %}
