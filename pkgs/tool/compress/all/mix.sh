@@ -2,7 +2,9 @@
 
 {% block run_deps %}
 lib/xz/mix.sh
+lib/zstd/mix.sh
 lib/bzip2/mix.sh
+lib/brotli/mix.sh
 lib/archive/mix.sh
 tool/compress/gzip/mix.sh
 tool/compress/lzip/mix.sh

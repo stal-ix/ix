@@ -1,19 +1,26 @@
-{% extends '//mix/template/make.sh' %}
+{% extends '//mix/template/cmake.sh' %}
 
 {% block fetch %}
 https://github.com/google/brotli/archive/refs/tags/v1.0.9.tar.gz
 c2274f0c7af8470ad514637c35bcee7d
 {% endblock %}
 
+{% if kind == 'lib' %}
 {% block std_env %}
 env/std/0/mix.sh
 {% endblock %}
+{% endif %}
 
-{% block make_target %}
-lib
+{% block cmake_flags %}
+-DBROTLI_SHARED_LIBS=
+-DBROTLI_DISABLE_TESTS=ON
+{% endblock %}
+
+{% block patch %}
+sed -e 's| SHARED | STATIC |' -i CMakeLists.txt
 {% endblock %}
 
 {% block install %}
-cp -R ./c/include ${out}/
-mkdir ${out}/lib && cp libbrotli.a ${out}/lib/
+{{super()}}
+rm ${out}/lib/lib*static*
 {% endblock %}

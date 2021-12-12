@@ -1,4 +1,4 @@
-{% extends '//mix/template/std.sh' %}
+{% extends '//mix/template/cmake.sh' %}
 
 {% block fetch %}
 https://github.com/facebook/zstd/releases/download/v1.5.0/zstd-1.5.0.tar.gz
@@ -7,23 +7,27 @@ a6eb7fb1f2c21fa80030a47993853e92
 
 {% block bld_libs %}
 lib/z/mix.sh
-lib/lz4/mix.sh
 lib/xz/mix.sh
+lib/lz4/mix.sh
 {% endblock %}
 
+{% block unpack %}
+{{super()}}
+cd build/cmake
+{% endblock %}
+
+{% if kind == 'lib' %}
 {% block std_env %}
 env/std/0/mix.sh
 {% endblock %}
+{% endif %}
 
-{% block build %}
-(cd lib && make PREFIX=${out} -j ${make_thrs} install-static install-includes)
-(cd programs && make PREFIX=${out} -j ${make_thrs} install)
+{% block cmake_flags %}
+-DZSTD_BUILD_SHARED=OFF
+-DZSTD_BUILD_STATIC=ON
+-DZSTD_BUILD_TESTS=OFF
 {% endblock %}
 
 {% block env %}
 export COFLAGS="--with-zstd=${out} \${COFLAGS}"
-{% endblock %}
-
-{% block test %}
-test -f ${out}/include/zstd.h
 {% endblock %}
