@@ -108,7 +108,7 @@ def group_by_out(nodes):
 
 class Executor:
     def __init__(self, nodes):
-        self.s = asyncio.Semaphore(4)
+        self.s = asyncio.Semaphore(1)
         self.o = group_by_out(nodes)
         self.l = []
 
@@ -156,6 +156,8 @@ class Executor:
                     pass
 
     def load(self, n):
+        return False
+
         try:
             for d in n['out_dir']:
                 cc.restore_dir(d)

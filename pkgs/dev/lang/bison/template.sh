@@ -1,6 +1,6 @@
 {% extends '//mix/template/autohell.sh' %}
 
-{% block make_thrs %}1{% endblock %}
+{% block make_no_thrs %}{% endblock %}
 
 {% block configure_flags %}
 --enable-relocatable

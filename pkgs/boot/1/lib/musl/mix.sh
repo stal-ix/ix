@@ -15,6 +15,8 @@ boot/0/env/mix.sh
 {% block script %}
 cd ${out} && ${untar} ${src}/musl* && cd musl*
 
+setup_toolchain_env
+
 (
     (while read l; do printf "$l\n"; done) << EOF
 {% include 'alltypes.h' %}
@@ -44,7 +46,7 @@ export MFLAGS="${MFLAGS} -isystem ${PWD}/src/include"
 export MFLAGS="${MFLAGS} -isystem ${PWD}/src/internal"
 export MFLAGS="${MFLAGS} -isystem ${PWD}/include"
 
-export CFLAGS="-w ${MFLAGS} -D__STDC_HOSTED__ -D_XOPEN_SOURCE=700 -U_GNU_SOURCE ${CPPFLAGS} -ffreestanding -nostdinc -std=c99 ${CFLAGS} ${OPTFLAGS}"
+export CFLAGS="-w ${MFLAGS} -D__STDC_HOSTED__ -D_XOPEN_SOURCE=700 -U_GNU_SOURCE ${CPPFLAGS} -ffreestanding -std=c99 ${CFLAGS}"
 
 objs=""
 
@@ -54,10 +56,8 @@ for i in src/*; do
             *\*.c)
             ;;
             *)
-                set +x
                 objs="$s.o $objs"
-                set -x
-                clang ${CFLAGS} $s -c -o $s.o
+                ${CC} ${CFLAGS} $s -c -o $s.o
             ;;
         esac
     done
@@ -67,33 +67,36 @@ for i in src/*; do
             *\*.s)
             ;;
             *)
-                set +x
                 objs="$s.o $objs"
-                set -x
-                clang ${CFLAGS} $s -c -o $s.o
+                ${CC} ${CFLAGS} $s -c -o $s.o
             ;;
         esac
     done
 done
 
 for s in src/malloc/mallocng/*.c; do
-    set +x
     objs="$s.o $objs"
-    set -x
-    clang ${CFLAGS} $s -c -o $s.o
+    ${CC} ${CFLAGS} $s -c -o $s.o
 done
 
 for s in crt/x86_64/*.s crt/crt1.c; do
-    clang ${CFLAGS} $s -c -o $s.o
-    set +x
+    ${CC} ${CFLAGS} $s -c -o $s.o
     objs="$s.o $objs"
-    set -x
 done
 
-llvm-ar q libmusl.a $objs
-llvm-ranlib libmusl.a
+${AR} q libmusl.a $objs
+${RANLIB} libmusl.a
 
-clang ${CFLAGS} ${LDFLAGS} ./libmusl.a -o tool -x c - << EOF
+>empty.c
+
+${CC} -o empty.o -c ./empty.c
+
+for x in m pthread dl; do
+    ${AR} q lib${x}.a empty.o
+    ${RANLIB} lib${x}.a
+done
+
+${CC} ${CFLAGS} -c -o tool.o -x c - << EOF
 #include <stdio.h>
 #include <errno.h>
 
@@ -109,17 +112,10 @@ int main() {
 }
 EOF
 
->empty.c
-
-clang -o empty.o -c ./empty.c
-
-for x in m pthread dl; do
-    llvm-ar q lib${x}.a empty.o
-    llvm-ranlib lib${x}.a
-done
+${CC} -static -nostdlib ${LDFLAGS} -L${PWD} tool.o -lmusl -o tool
 
 ./tool << EOF > ${out}/env
 export CPPFLAGS="${MFLAGS} \${CPPFLAGS}"
-export LDFLAGS="-L${PWD} -lmusl \${LDFLAGS}"
+export LDFLAGS="-static -nostdlib -L${PWD} -lmusl \${LDFLAGS}"
 EOF
 {% endblock %}

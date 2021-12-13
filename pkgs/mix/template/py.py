@@ -37,6 +37,10 @@ env_data = r"""
 
 with open(os.environ['out'] + '/env', 'a') as f:
     f.write(env_data)
+
+import os
+
+os._exit(0)
 {% endblock %}
 
 {% block script_kind %}

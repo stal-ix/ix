@@ -31,9 +31,8 @@ V=0
 
 {% set cmd_args1 %}
 {{make_cmd_args}}
--j
-{% block make_thrs %}
-${make_thrs}
+{% block make_no_thrs %}
+-j ${make_thrs}
 {% endblock %}
 {{make_target}}
 {% endset %}

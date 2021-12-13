@@ -7,12 +7,16 @@ env/toolchain/ld/lld/mix.sh
 {% endblock %}
 
 {% block env %}
+setup_toolchain_env() {
+    setup_compiler_env
+    setup_ar_env
+}
+
 setup_toolchain() {
     setup_compiler
     setup_ar
 
     export LDFLAGS=
-    export LIBS=
     export CFLAGS=
     export CPPFLAGS=
     export CXXFLAGS=

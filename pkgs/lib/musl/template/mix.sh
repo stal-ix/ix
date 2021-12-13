@@ -33,12 +33,15 @@ EOF
 {% block env %}
 export CMFLAGS="-DLIBCXX_HAS_MUSL_LIBC=yes \${CMFLAGS}"
 export CPPFLAGS="-isystem ${out}/include \${CPPFLAGS}"
+export LDFLAGS="-static \${LDFLAGS}"
 {% endblock %}
 
 {% block test %}
+OLDCC=$(which ${CC})
+
 . ${out}/env
 
-clang ${CPPFLAGS} ${CFLAGS} ${LDFLAGS} -x c -o main - << EOF
+cat << EOF > main.c
 #include <stdio.h>
 
 int main() {
@@ -47,6 +50,10 @@ int main() {
     return 0;
 }
 EOF
+
+env
+
+${OLDCC} -o main main.c ${CPPFLAGS} ${CFLAGS} ${LDFLAGS}
 
 ./main
 {% endblock %}

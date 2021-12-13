@@ -15,7 +15,7 @@ boot/1/env/mix.sh
 {% block script %}
 ${unzip} ${src}/*.zip && cd shutil*
 
-export CC=clang
+setup_toolchain_env
 
 . ./build.sh
 
@@ -27,6 +27,6 @@ cp() {
 ./mkdir ${out}/bin
 
 for i in mkdir cat tr dirname echo chmod rm test; do
-    cp $i ${out}/bin/$i
+    cp ${i} ${out}/bin/${i}
 done
 {% endblock %}

@@ -1,5 +1,9 @@
 {% extends '//mix/template/std.sh' %}
 
+{% block bld_libs %}
+boot/7/lib/cxx/unwind/mix.sh
+{% endblock %}
+
 {% block bld_deps %}
 boot/6/env/std/mix.sh
 {% endblock %}
@@ -10,16 +14,20 @@ boot/6/env/std/mix.sh
 
 {% block unpack %}
 {{super()}}
+cp -R clang/lib/Headers compiler-rt
 cd compiler-rt
+{% endblock %}
+
+{% block patch %}
+rm lib/builtins/atomic*
 {% endblock %}
 
 {% block build %}
 for x in lib/builtins/*.c; do
-    clang -c ${x}
+    cc "-D__has_feature(x)=0" -isystem Headers -c ${x}
 done
 
-ar q libcompiler_rt.a *.o
-ranlib libcompiler_rt.a
+ar qs libcompiler_rt.a *.o
 {% endblock %}
 
 {% block install %}

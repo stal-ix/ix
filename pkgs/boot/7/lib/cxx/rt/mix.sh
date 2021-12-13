@@ -18,15 +18,14 @@ boot/6/env/std/mix.sh
 
 {% block build %}
 for s in src/*.cc; do
-    clang++ -c ${s}
+    c++ -c ${s}
 done
 
 for s in src/*.c; do
-    clang -c ${s}
+    cc -c ${s}
 done
 
-ar q libcxxrt.a *.o
-ranlib libcxxrt.a
+ar qs libcxxrt.a *.o
 {% endblock %}
 
 {% block install %}

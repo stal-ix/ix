@@ -35,22 +35,17 @@ class Iface:
                 raise ce.Error('expected ' + new_md5 + ' checksum')
 
     def header(self):
-        out = os.environ.get('out')
-
-        if out:
+        if out := os.environ.get('out'):
             prepare_dir(out)
 
-        tmp = os.environ.get('tmp')
-
-        if tmp:
+        if tmp := os.environ.get('tmp'):
             prepare_dir(tmp)
             os.chdir(tmp)
 
     def footer(self):
-        tmp = os.environ.get('tmp')
-
-        if tmp:
-            shutil.rmtree(tmp)
+        if tmp := os.environ.get('tmp'):
+            if sys.exc_info()[0]:
+                shutil.rmtree(tmp)
 
     def which(self, x):
         for p in os.environ['PATH'].split(':'):

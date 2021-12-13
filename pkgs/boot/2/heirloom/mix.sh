@@ -16,19 +16,14 @@ cd *
 {% endblock %}
 
 {% block step_setup %}
+setup_toolchain_env
+
 export PATH="${out}/bin:${PATH}"
-{% endblock %}
-
-{% block build %}
 export SHELL="$0"
-
 export ROOT=
 
-export AR=llvm-ar
-export CC=clang
-export LD=clang
-export RANLIB=llvm-ranlib
-export CPPFLAGS="-D_BSD_SOURCE -w -Dgetopt=h_getopt -Doptarg=h_optarg -Doptind=h_optind -Dopterr=h_opterr -Doptopt=h_optopt -I../libcommon ${CPPFLAGS} -O0 -g"
+export CPPFLAGS="-D_BSD_SOURCE -w -Dgetopt=h_getopt -Doptarg=h_optarg -Doptind=h_optind -Dopterr=h_opterr -Doptopt=h_optopt -I../libcommon ${CPPFLAGS}"
+export CPPFLAGS="-I${PWD} ${CPPFLAGS}"
 
 export MANDIR=${out}/man
 export SV3BIN=${out}/sv3
@@ -46,10 +41,10 @@ export MANINST=install
 
 export PATH="${DEFBIN}:${PATH}"
 export MAKE="bmake LD=${LD} CC=${CC} AR=${AR} RANLIB=${RANLIB}"
+{% endblock %}
 
+{% block build %}
 >malloc.h
-
-export CPPFLAGS="-I${PWD} ${CPPFLAGS}"
 
 cd heirloom
 
@@ -61,7 +56,7 @@ cd heirloom
     >CHECK
     >malloc.h
 
-    $MAKE -f Makefile.mk
+    ${MAKE} -f Makefile.mk
 )
 
 export PRFLAGS="${LDFLAGS}"
@@ -74,7 +69,7 @@ export LDFLAGS="${LDFLAGS} ../libcommon/memalign.o"
 (
     set -eu
 
-    cd rm && $MAKE -f Makefile.mk
+    cd rm && ${MAKE} -f Makefile.mk
 )
 
 (
@@ -103,13 +98,13 @@ done
 cp/cp cp/cp ${out}/bin
 cp rm/rm ${out}/bin
 
-clang ${CPPFLAGS} ${CFLAGS} ${PRFLAGS} -o ${tmp}/true -x c - << EOF
+${CC} ${CPPFLAGS} ${CFLAGS} ${PRFLAGS} -o ${tmp}/true -x c - << EOF
 int main() {
     return 0;
 }
 EOF
 
-clang ${CPPFLAGS} ${CFLAGS} ${PRFLAGS} -o ${tmp}/false -x c - << EOF
+${CC} ${CPPFLAGS} ${CFLAGS} ${PRFLAGS} -o ${tmp}/false -x c - << EOF
 int main() {
     return 1;
 }

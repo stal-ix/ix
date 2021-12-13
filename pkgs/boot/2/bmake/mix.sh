@@ -1,4 +1,4 @@
-{% extends '//mix/template/base.sh' %}
+{% extends '//mix/template/std.sh' %}
 
 {% block fetch %}
 https://www.crufty.net/ftp/pub/sjg/bmake-20210808.tar.gz
@@ -14,10 +14,15 @@ boot/1/env/mix.sh
 {% endblock %}
 
 {% block unpack %}
-cd ${out} && ${untar} ${src}/bmake* && cd bmake
+cd ${out}
+mkdir bin && cd bin
+mkdir src && cd src
+${untar} ${src}/bmake* && cd bmake*
 {% endblock %}
 
-{% block setup %}
+{% block step_setup %}
+setup_toolchain_env
+
 {% if target.os == 'linux' %}
 export CPPFLAGS="-Imissing -Dstrtoul=bmake_strtoul ${CPPFLAGS}"
 {% endif %}
@@ -38,9 +43,7 @@ EOF
 {% endblock %}
 
 {% block build %}
-mkdir ${out}/bin
-
-clang -w -I. \
+${CC} -w -I. \
     ${CPPFLAGS} ${CFLAGS} ${LDFLAGS}      \
     -DHAVE_CONFIG_H                       \
     -DMAKE_NATIVE                         \

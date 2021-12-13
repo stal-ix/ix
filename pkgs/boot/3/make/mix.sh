@@ -4,9 +4,7 @@
 bmake
 {% endblock %}
 
-{% block make_thrs %}
-1
-{% endblock %}
+{% block make_no_thrs %}{% endblock %}
 
 {% block bld_libs %}
 boot/1/lib/c/mix.sh

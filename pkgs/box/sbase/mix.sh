@@ -16,10 +16,6 @@ export CPPFLAGS="-D_DARWIN_C_SOURCE=1 -Dst_atim=st_atimespec -Dst_mtim=st_mtimes
 {% endif %}
 {% endblock %}
 
-{% block make_thrs %}
-1
-{% endblock %}
-
 {% block make_target %}
 sbase-box
 {% endblock %}

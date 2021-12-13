@@ -43,11 +43,10 @@ EOF
 {% block build %}
 for s in src/*.cpp src/filesystem/*.cpp; do
     out=$(echo ${s} | tr '/' '_' | tr -d '\n').o
-    clang++ -c ${s} -o ${out}
+    c++ -c ${s} -o ${out}
 done
 
-ar q libc++.a *.o
-ranlib libc++.a
+ar qs libc++.a *.o
 {% endblock %}
 
 {% block install %}
@@ -60,6 +59,10 @@ export LDFLAGS="-lpthread -ldl \${LDFLAGS}"
 {% endblock %}
 
 {% block test %}
+CCC=$(which c++)
+
+. ${out}/env
+
 cat << EOF > test.cpp
 #include <iostream>
 
@@ -68,7 +71,9 @@ int main() {
 }
 EOF
 
-clang++ -o test_main ${out}/lib/libc++.a test.cpp
+set -x
+
+${CCC} ${CPPFLAGS} -o test_main test.cpp ${LDFLAGS}
 
 ./test_main
 {% endblock %}

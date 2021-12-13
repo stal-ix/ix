@@ -1,6 +1,7 @@
 {% extends '//gnu/coreutils/8.31/mix.sh' %}
 
 {% block bld_libs %}
+boot/4/lib/compiler_rt/mix.sh
 {% endblock %}
 
 {% block bld_deps %}

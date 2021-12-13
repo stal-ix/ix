@@ -62,10 +62,10 @@ sed -e 's|yylex|flexscan|g' < lex.yy.c > scan.c
 dash mkskel.sh ./flex.skl > skel.c
 
 for x in ccl dfa ecs gen main misc nfa parse scan skel sym tblcmp yylex options scanopt buf; do
-    clang -c -o ${x}.o ${x}.c
+    ${CC} -c -o ${x}.o ${x}.c
 done
 
-clang -o flex *.o
+${CC} -o flex *.o
 {% endblock %}
 
 {% block install %}

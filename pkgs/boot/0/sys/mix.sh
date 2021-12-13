@@ -1,17 +1,30 @@
 {% extends '//mix/template/py.py' %}
 
-{% block build %}
+{% block run_deps %}
+env/toolchain/auto/mix.sh
+{% endblock %}
+
+{% block script_body %}
 import os
+import subprocess
+
+def run(*args):
+    return subprocess.check_output(list(args)).decode().strip()
 
 out = os.environ['out']
 bin = os.path.join(out, 'bin')
 
 os.makedirs(bin)
+
+print(f'into {os.getcwd()}')
+
 os.chdir(bin)
 
 def which(paths, b):
     for p in paths:
         pp = os.path.join(p, b)
+
+        print(f'try {pp} for {b}')
 
         if os.path.isfile(pp):
             return pp
@@ -21,50 +34,40 @@ def wsys(b):
 
 def wloc(bins):
     for b in bins:
-        if r := which([os.getcwd()], b):
+        if r := which([bin], b):
             return b
 
-    raise Exception(f'can not found one of {bins}')
+    raise Exception(f'can not found one of {bins} in {out}')
 
 SHELLS = ['dash', 'bash', 'sh']
 
 TOOLS = SHELLS + [
     'ld',
-    'gcc', 'g++', 'cpp',
-    'clang', 'clang++',
+    'gcc', 'g++', 'cpp', 'c++',
+    'clang', 'clang++', 'clang-cpp',
     'ar', 'ranlib', 'nm', 'strip', 'as',
     'llvm-ar', 'llvm-ranlib', 'llvm-nm', 'llvm-strip', 'llvm-as',
 ]
 
+def sl(f, t):
+    print(f'symlink {f} into {t}')
+    assert os.path.isfile(f)
+    os.symlink(f, t)
+
 for x in TOOLS:
     if r := wsys(x):
-        os.symlink(x, os.path.basename(x))
+        sl(r, x)
+
+        if x == 'g++':
+            for tool in ('cc1plus', 'collect2', 'cc1'):
+                cc = run(r, f'--print-prog-name={tool}')
+
+                assert os.path.basename(cc) == tool
+
+                sl(cc, tool)
 
 sh = wloc(SHELLS)
 
 if sh != 'dash':
-    os.symlink(sh, 'dash')
-
-S = '''
-setup_toolchain() {
-    export AR="{ar}"
-    export NM="{nm}"
-    export AS="{as}"
-    export CC="{cc}"
-    export CXX="{cxx}"
-    export STRIP="{strip}"
-    export RANLIB="{ranlib}"
-}
-'''
-
-S = S.replace('{ar}', wloc(['llvm-ar', 'ar']))
-S = S.replace('{nm}', wloc(['llvm-nm', 'nm']))
-S = S.replace('{as}', wloc(['llvm-as', 'as']))
-S = S.replace('{cc}', wloc(['clang', 'gcc']))
-S = S.replace('{cxx}', wloc(['clang++', 'g++']))
-S = S.replace('{strip}', wloc(['llvm-strip', 'strip']))
-S = S.replace('{ranlib}', wloc(['llvm-ranlib', 'ranlib']))
-
-with open(os.path.join(out, 'env'), 'w') as f:
-    f.write(SCRIPT)
+    sl(sh, 'dash')
 {% endblock %}

@@ -6,12 +6,14 @@ rm -rf ${out}/bin ${out}/libexec
 rm -rf ${out}/lib ${out}/include
 
 {% block strip_bin %}
-if which llvm-strip; then
-    find ${out}/bin/ | while read l; do
-        if test -f ${l}; then
-            llvm-strip ${l} || true
-        fi
-    done
+if command -v which; then
+    if which llvm-strip; then
+        find ${out}/bin/ | while read l; do
+            if test -f ${l}; then
+                llvm-strip ${l} || true
+            fi
+        done
+    fi
 fi
 {% endblock %}
 {% endif %}
