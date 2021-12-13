@@ -70,4 +70,7 @@ sh = wloc(SHELLS)
 
 if sh != 'dash':
     sl(sh, 'dash')
+
+with open(os.path.join(out, 'env'), 'w') as f:
+    pass
 {% endblock %}

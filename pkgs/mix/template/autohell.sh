@@ -5,16 +5,6 @@ dev/build/pkg-config/mix.sh
 {{super()}}
 {% endblock %}
 
-{% block step_setup %}
-{% block setup_gnu_cross %}
-export ac_cv_build="{{host.gnu.three}}"
-export ac_cv_host="{{target.gnu.three}}"
-export ac_cv_target="{{target.gnu.three}}"
-{% endblock %}
-
-{{super()}}
-{% endblock %}
-
 {% block step_patch %}
 {% block touch_yl %}
 find . | grep '\.[yl]$' | while read l; do
@@ -53,19 +43,6 @@ cat configure \
     | sed -e "s|/bin/universe|universe|g" \
     > _ && mv _ configure
 {% endblock %}
-
-{% block patch_gnu %}
-(
-    find . | grep 'config.guess'
-    find . | grep 'config.sub'
-) | while read l; do
-    cat << EOF > ${l}
-#!$(which dash)
-echo ${ac_cv_build}
-EOF
-    chmod +x ${l}
-done
-{% endblock %}
 {% endblock %}
 
 {% block configure %}
@@ -87,11 +64,31 @@ configure
 
 ${COFLAGS}
 
+{% block configure_cross %}
+#TODO(pg): collapse
+{% if kind == 'bin' %}
+--program-prefix={{bin_prefix or ''}}
+{% else %}
+--program-prefix=
+{% endif %}
+
+--build={{host.gnu.three}}
+--host={{target.gnu.three}}
+
+{% if kind == 'bin' %}
+--target={{for_target or target.gnu.three}}
+{% else %}
+--target={{target.gnu.three}}
+{% endif %}
+{% endblock %}
+
 --disable-dependency-tracking
+
 {% block enable_static %}
 --enable-static
 {% endblock %}
 --disable-shared
+
 --prefix="${out}"
 --sbindir="${out}/bin"
 --libexecdir="${out}/bin/exec"

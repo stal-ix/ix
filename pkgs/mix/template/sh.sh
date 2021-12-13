@@ -29,19 +29,10 @@ cd ${tmp} && mkdir tmp
 
 export TMPDIR=${PWD}/tmp
 
-line=
 OFS=${IFS}
 
-IFS=":"; for i in ${PATH}; do
-    line="${i}:${line}"
-done
-
-IFS=":"; for p in ${line}; do
-    env=${p%/bin}/env
-
-    if test -f ${env}; then
-        . ${env}
-    fi
+IFS=":"; for p in ${MIX_ENVPATH}; do
+    . ${p}
 done
 
 IFS=${OFS}

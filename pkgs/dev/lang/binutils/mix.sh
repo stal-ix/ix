@@ -20,16 +20,12 @@ dev/lang/bison/3/6/mix.sh
 --disable-werror
 --disable-plugins
 --with-system-zlib
+--disable-multilib
 --enable-deterministic-archives
+--target="{{for_target}}"
 {% endblock %}
 
 {% block setup %}
 export CPPFLAGS="-w ${CPPFLAGS}"
 export acx_cv_cc_gcc_supports_ada=no
-{% endblock %}
-
-{% block setup_gnu_cross %}
-export ac_cv_build="{{host.gnu.four}}"
-export ac_cv_host="{{target.gnu.four}}"
-export ac_cv_target="{{for_target or target.gnu.four}}"
 {% endblock %}

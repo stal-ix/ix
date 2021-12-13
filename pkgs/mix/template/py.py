@@ -15,11 +15,8 @@ def iter_lines():
     yield 'set -e'
     yield 'set -x'
 
-    for p in reversed(os.environ['PATH'].split(':')):
-        pp = os.path.normpath(os.path.join(p, '..', 'env'))
-
-        if os.path.isfile(pp):
-            yield '. ' + pp
+    for p in os.environ['MIX_ENVPATH'].split(':'):
+        yield '. ' + os.path.normpath(os.path.join(p, '..', 'env'))
 
     yield DATA
 
@@ -37,10 +34,6 @@ env_data = r"""
 
 with open(os.environ['out'] + '/env', 'a') as f:
     f.write(env_data)
-
-import os
-
-os._exit(0)
 {% endblock %}
 
 {% block script_kind %}

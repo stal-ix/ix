@@ -87,14 +87,28 @@ class CmdBuild:
     def iter_env(self, src_dir):
         path = ['/nowhere']
 
+        lib = []
+        bin = []
+
         for p in self.package.iter_all_build_depends():
-            od = p.out_dir
+            if p.flags['kind'] == 'bin':
+                bin.append(p)
+            else:
+                lib.append(p)
 
-            yield p.pkg_name.replace('-', '_').replace('l_lib_', 'lib_'), od
+            yield p.pkg_name.replace('-', '_').replace('l_lib_', 'lib_'), p.out_dir
 
-            path.append(od + '/bin')
+        bp = ':'.join(p.out_dir + '/bin' for p in bin)
+        lp = ':'.join(p.out_dir + '/lib' for p in lib)
+        ip = ':'.join(p.out_dir + '/include' for p in lib)
+        ep = ':'.join(p.out_dir + '/env' for p in reversed(bin + lib))
 
-        yield 'PATH', ':'.join(path)
+        yield 'MIX_LIBPATH', bp
+        yield 'MIX_LIBPATH', lp
+        yield 'MIX_INCPATH', ip
+        yield 'MIX_ENVPATH', ep
+
+        yield 'PATH', bp
 
         if src_dir:
             yield 'src', src_dir
@@ -107,7 +121,7 @@ class CmdBuild:
         yield 'mix', self.package.config.binary
         yield 'exe', sys.executable
 
-        yield 'make_thrs', str(multiprocessing.cpu_count() + 2)
+        yield 'make_thrs', str(multiprocessing.cpu_count() - 1)
 
 
 def cmd_fetch(sb, url):

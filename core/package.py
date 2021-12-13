@@ -101,7 +101,7 @@ class Package:
 
     @property
     def pkg_name(self):
-        return self.flags['kind'][:1] + '-' + self.name.removesuffix('.sh').removesuffix('/mix').replace('/', '-').replace('.', '-').replace('_', '-').replace('--', '-')
+        return self.flags['kind'][:1].upper() + '-' + self.name.removesuffix('.sh').removesuffix('/mix').replace('/', '-').replace('.', '-').replace('_', '-').replace('--', '-')
 
     @property
     def flags(self):
@@ -168,7 +168,7 @@ class Package:
         return self.visit(self.bld_lib_deps(), self.lib_flags(), lambda x: x.lib_closure())
 
     def iter_all_build_depends(self):
-        return buildable(itertools.chain(self.bld_bin_closure(), self.run_data(), reversed(self.bld_lib_closure())))
+        return buildable(itertools.chain(self.bld_bin_closure(), self.run_data(), self.bld_lib_closure()))
 
     @cu.cached_method
     def run_deps(self):
