@@ -17,7 +17,7 @@ cd libunwind
 {% endblock %}
 
 {% block setup %}
-export CPPFLAGS="-w -I${PWD}/src -I${PWD}/include -D_LIBUNWIND_HAS_COMMENT_LIB_PRAGMA -funwind-tables -D_LIBUNWIND_IS_NATIVE_ONLY ${CPPFLAGS}"
+export CPPFLAGS="-w -I${PWD}/src -I${PWD}/include -D_LIBUNWIND_HAS_COMMENT_LIB_PRAGMA -funwind-tables -D_LIBUNWIND_IS_NATIVE_ONLY -D_DEBUG ${CPPFLAGS}"
 export CXXFLAGS="-std=c++11 -fstrict-aliasing -fno-exceptions -fno-rtti ${CXXFLAGS}"
 export CONLYFLAGS="-std=c99 ${CFLAGS}"
 {% endblock %}

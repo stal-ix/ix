@@ -6,6 +6,7 @@
 
 {% block lib_deps %}
 boot/7/lib/cxx/rt/mix.sh
+boot/7/lib/dso_handle/mix.sh
 {% endblock %}
 
 {% block bld_libs %}
@@ -56,24 +57,4 @@ mkdir ${out}/lib && cp libc++.a ${out}/lib/
 
 {% block env %}
 export LDFLAGS="-lpthread -ldl \${LDFLAGS}"
-{% endblock %}
-
-{% block test %}
-CCC=$(which c++)
-
-. ${out}/env
-
-cat << EOF > test.cpp
-#include <iostream>
-
-int main() {
-    std::cout << "helo" << std::endl;
-}
-EOF
-
-set -x
-
-${CCC} ${CPPFLAGS} -o test_main test.cpp ${LDFLAGS}
-
-./test_main
 {% endblock %}

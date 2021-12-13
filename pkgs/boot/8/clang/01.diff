@@ -1,0 +1,35 @@
+diff --git a/clang/lib/AST/VTableBuilder.cpp b/clang/lib/AST/VTableBuilder.cpp
+index 38d6fc2..4fe55c9 100644
+--- a/clang/lib/AST/VTableBuilder.cpp
++++ b/clang/lib/AST/VTableBuilder.cpp
+@@ -200,7 +200,7 @@ FinalOverriders::FinalOverriders(const CXXRecordDecl *MostDerivedClass,
+         SubobjectLayoutClassOffsets[std::make_pair(OverriderRD,
+                                                    Method.Subobject)];
+ 
+-      OverriderInfo& Overrider = OverridersMap[std::make_pair(MD, BaseOffset)];
++      auto& Overrider = OverridersMap[std::make_pair(MD, BaseOffset)];
+       assert(!Overrider.Method && "Overrider should not exist yet!");
+ 
+       Overrider.Offset = OverriderOffset;
+diff --git a/llvm/lib/Transforms/Scalar/GVNHoist.cpp b/llvm/lib/Transforms/Scalar/GVNHoist.cpp
+index 790d719..c0b1cec 100644
+--- a/llvm/lib/Transforms/Scalar/GVNHoist.cpp
++++ b/llvm/lib/Transforms/Scalar/GVNHoist.cpp
+@@ -887,7 +887,7 @@ void GVNHoist::findHoistableCandidates(OutValuesType &CHIBBs,
+     auto TI = BB->getTerminator();
+     auto B = CHIs.begin();
+     // [PreIt, PHIIt) form a range of CHIs which have identical VNs.
+-    auto PHIIt = llvm::find_if(CHIs, [B](CHIArg &A) { return A != *B; });
++    auto PHIIt = llvm::find_if(CHIs, [B](auto &A) { return A != *B; });
+     auto PrevIt = CHIs.begin();
+     while (PrevIt != PHIIt) {
+       // Collect values which satisfy safety checks.
+@@ -909,7 +909,7 @@ void GVNHoist::findHoistableCandidates(OutValuesType &CHIBBs,
+       // Check other VNs
+       PrevIt = PHIIt;
+       PHIIt = std::find_if(PrevIt, CHIs.end(),
+-                           [PrevIt](CHIArg &A) { return A != *PrevIt; });
++                           [PrevIt](auto &A) { return A != *PrevIt; });
+     }
+   }
+ }

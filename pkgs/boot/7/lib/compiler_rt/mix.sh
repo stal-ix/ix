@@ -14,7 +14,6 @@ boot/6/env/std/mix.sh
 
 {% block unpack %}
 {{super()}}
-cp -R clang/lib/Headers compiler-rt
 cd compiler-rt
 {% endblock %}
 
@@ -22,9 +21,13 @@ cd compiler-rt
 rm lib/builtins/atomic*
 {% endblock %}
 
+{% block setup %}
+export CPPFLAGS="'-D__has_feature(x)=0' -I../clang/lib/Headers -I${CPPFLAGS}"
+{% endblock %}
+
 {% block build %}
 for x in lib/builtins/*.c; do
-    cc "-D__has_feature(x)=0" -isystem Headers -c ${x}
+    cc -c ${x}
 done
 
 ar qs libcompiler_rt.a *.o

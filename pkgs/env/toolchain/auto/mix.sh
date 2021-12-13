@@ -28,14 +28,17 @@ C="${CPPFLAGS} ${CFLAGS} ${LDFLAGS} ${OPTFLAGS}"
 A="${CONLYFLAGS} ${C}"
 B="${CXXFLAGS} ${C}"
 
+S="-Wl,--start-group"
+E="-Wl,--end-group"
+
 cat << EOF > clang
 #!$(which dash)
-exec "$(which ${CC})" ${A} "\$@" ${A}
+exec "$(which ${CC})" ${S} ${A} "\$@" ${A} ${E}
 EOF
 
 cat << EOF > clang++
 #!$(which dash)
-exec "$(which ${CXX})" ${B} "\$@" ${B}
+exec "$(which ${CXX})" ${S} ${B} "\$@" ${B} ${E}
 EOF
 
 cat << EOF > clang-cpp

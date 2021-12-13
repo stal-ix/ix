@@ -25,7 +25,12 @@ Bootstrap.cmk/cmake
 
 {% block patch %}
 sed -e 's|# Run bootstrap CMake|exit 0;|' -i bootstrap
+sed -e 's|.*define.*HAS_INTEL.*||' -i Utilities/cmlibrhash/librhash/byte_order.h
 {{super()}}
+{% endblock %}
+
+{% block setup %}
+export CPPFLAGS="-DZSTD_NO_INTRINSICS=1 ${CPPFLAGS}"
 {% endblock %}
 
 {% block cmake_flags %}
