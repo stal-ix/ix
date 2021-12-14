@@ -1,4 +1,4 @@
-{% extends '//mix/template/std.sh' %}
+{% extends '//mix/template/c_std.sh' %}
 
 {% block fetch %}
 https://github.com/aklomp/base64/archive/refs/tags/v0.4.0.tar.gz

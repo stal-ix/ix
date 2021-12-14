@@ -1,4 +1,4 @@
-{% extends 'std.sh' %}
+{% extends 'c_std.sh' %}
 
 {% block std_env %}
 alt/sh/mix.sh

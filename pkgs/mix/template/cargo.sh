@@ -1,4 +1,4 @@
-{% extends 'std.sh' %}
+{% extends 'c_std.sh' %}
 
 {% block std_env %}
 dev/lang/rustc/1/56/mix.sh

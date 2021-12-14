@@ -12,7 +12,7 @@ DATA = r"""
 """.strip()
 
 EXTR = r"""
-{% include 'blocks/extract.sh' %}
+{% include 'std/extract.sh' %}
 """
 
 def iter_lines():

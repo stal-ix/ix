@@ -1,4 +1,4 @@
-{% extends '//mix/template/std.sh' %}
+{% extends '//mix/template/c_std.sh' %}
 
 {% block fetch %}
 https://www.crufty.net/ftp/pub/sjg/bmake-20210808.tar.gz

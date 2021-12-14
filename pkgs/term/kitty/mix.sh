@@ -1,4 +1,4 @@
-{% extends '//mix/template/std.sh' %}
+{% extends '//mix/template/c_std.sh' %}
 
 {% block fetch %}
 https://github.com/kovidgoyal/kitty/archive/refs/tags/v0.23.1.tar.gz

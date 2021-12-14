@@ -1,4 +1,4 @@
-{% extends '//mix/template/std.sh' %}
+{% extends '//mix/template/c_std.sh' %}
 
 {% block fetch %}
 https://www.kernel.org/pub/linux/kernel/v5.x/linux-5.13.12.tar.xz

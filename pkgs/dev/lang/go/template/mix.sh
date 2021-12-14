@@ -1,4 +1,4 @@
-{% extends '//mix/template/std.sh' %}
+{% extends '//mix/template/c_std.sh' %}
 
 {% block bld_tool %}
 shell/cli/bash/minimal/mix.sh

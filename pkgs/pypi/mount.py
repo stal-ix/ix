@@ -5,7 +5,7 @@ PYPI = json.loads(parent.serve('pypi.json'))
 
 
 TMPL = r'''
-{% extends '//mix/template/std.sh' %}
+{% extends '//mix/template/std/mix.sh' %}
 
 {% block fetch %}
 {url}

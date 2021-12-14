@@ -1,4 +1,4 @@
-{% extends 'std.sh' %}
+{% extends 'c_std.sh' %}
 
 {% block std_env %}
 lib/dlfcn/scripts/mix.sh

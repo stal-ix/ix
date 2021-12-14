@@ -1,4 +1,4 @@
-{% extends '//mix/template/std.sh' %}
+{% extends '//mix/template/c_std.sh' %}
 
 {% block bld_libs %}
 boot/7/lib/cxx/unwind/mix.sh

@@ -1,11 +1,11 @@
-{% extends 'base.sh' %}
+{% extends '//mix/template/base.sh' %}
 
-{% include 'blocks/unpack.sh' %}
+{% include 'unpack.sh' %}
 
 {% block step_setup %}
 CD=${PWD}
 {{super()}}
-{% include 'blocks/preconf.sh' %}
+{% include 'preconf.sh' %}
 cd ${CD}
 {% endblock %}
 
@@ -22,7 +22,7 @@ cd ${CD}
     set -eu
 
 {% block postinstall %}
-{% include 'blocks/postinstall.sh' %}
+{% include 'postinstall.sh' %}
 {% endblock %}
 )
 
@@ -30,7 +30,7 @@ cd ${CD}
     set -eu
 
 {% block prepare_env %}
-{% include 'blocks/env.sh' %}
+{% include 'env.sh' %}
 {% endblock %}
 )
 {% endblock %}
