@@ -13,6 +13,7 @@ lib/apr/util/mix.sh
 {% endblock %}
 
 {% block bld_tool %}
+dev/build/pkg-config/mix.sh
 dev/build/scons/mix.sh
 gnu/patch/mix.sh
 {% endblock %}
@@ -29,12 +30,12 @@ EOF
 
 {% block build %}
 scons \
-    CC=$(which clang)    \
-    PREFIX=${out}        \
-    OPENSSL="${SSL_DIR}" \
-    ZLIB="${lib_z}"      \
+    CC=$(which clang)           \
+    PREFIX=${out}               \
+    OPENSSL="${SSL_DIR}"        \
     APR="$(which apr-1-config)" \
-    APU="$(which apu-1-config)"
+    APU="$(which apu-1-config)" \
+    ZLIB="$(pkg-config --variable=prefix zlib)"
 {% endblock %}
 
 {% block install %}
