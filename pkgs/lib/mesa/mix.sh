@@ -89,7 +89,7 @@ cd ${out}/lib
 mv dri/zink_dri.so libdrivers.a
 rm -rf dri
 
-mkdir big && cd big
+mkdir tmp && cd tmp
 
 cat << EOF > ${tmp}/fix.py
 import os
@@ -133,7 +133,11 @@ echo > empty.c
 ${CC} -c empty.c
 ${AR} q libempty.a empty.o
 
-rm *.o *.c && cd ..
+cd ..
+
+mkdir big
+mv tmp/libempty.a tmp/libfullgl.a big/
+rm -rf tmp
 
 for l in *.a; do
     rm ${l} && ln -s big/libempty.a ${l}

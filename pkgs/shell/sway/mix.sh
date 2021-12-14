@@ -6,15 +6,17 @@ b7a35c2ee8e6f14d1657d3b4c97b7977
 {% endblock %}
 
 {% block bld_libs %}
+# drivers go first
+lib/vulkan/driver/mix.sh
+lib/mesa/drivers/gl/zink/mix.sh
+#lib/mesa/drivers/gl/radeonsi/mix.sh
+
 lib/pcre/mix.sh
 lib/cairo/mix.sh
 lib/pango/mix.sh
 lib/json/c/mix.sh
 lib/wayland/mix.sh
 lib/wlroots/trunk/mix.sh
-lib/vulkan/driver/mix.sh
-lib/mesa/drivers/gl/zink/mix.sh
-#lib/mesa/drivers/gl/radeonsi/mix.sh
 {% endblock %}
 
 {% block bld_tool %}

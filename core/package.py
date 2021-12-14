@@ -90,6 +90,7 @@ class Package:
         self.descr = cr.RenderContext(self).render()
 
         self.uid = cu.struct_hash([
+            1,
             self.descr['bld']['fetch'],
             self.descr['bld']['script'],
             self.pkg_name,

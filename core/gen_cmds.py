@@ -1,6 +1,7 @@
 import os
 import sys
 import jinja2
+import itertools
 import multiprocessing
 
 import core.utils as cu
@@ -101,7 +102,7 @@ class CmdBuild:
         bp = ':'.join(p.out_dir + '/bin' for p in bin)
         lp = ':'.join(p.out_dir + '/lib' for p in lib)
         ip = ':'.join(p.out_dir + '/include' for p in lib)
-        ep = ':'.join(p.out_dir + '/env' for p in reversed(bin + lib))
+        ep = ':'.join(p.out_dir + '/env' for p in itertools.chain(lib, reversed(bin)))
 
         yield 'MIX_LIBPATH', bp
         yield 'MIX_LIBPATH', lp
