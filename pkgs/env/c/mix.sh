@@ -6,5 +6,5 @@ lib/compiler_rt/builtins/mix.sh
 {% endblock %}
 
 {% block run_deps %}
-alt/c/{{cc or 'bsd'}}/mix.sh
+env/c/{{cc or 'bsd'}}/mix.sh
 {% endblock %}

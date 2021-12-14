@@ -1,7 +1,7 @@
 {% extends 'std/mix.sh' %}
 
 {% block std_env %}
-alt/c/mix.sh
+env/c/mix.sh
 {{super()}}
 {% endblock %}
 
