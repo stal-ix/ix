@@ -9,5 +9,4 @@ gnu/grep/mix.sh
 gnu/patch/mix.sh
 gnu/diffutils/mix.sh
 gnu/coreutils/8.32/mix.sh
-shell/cli/dash/minimal/mix.sh
 {% endblock %}
