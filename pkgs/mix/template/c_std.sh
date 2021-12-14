@@ -1,6 +1,6 @@
 {% extends 'std/mix.sh' %}
 
-{% block std_box %}
+{% block std_env %}
 {% block c_compiler %}
 dev/lang/clang/mix.sh
 {% endblock %}
