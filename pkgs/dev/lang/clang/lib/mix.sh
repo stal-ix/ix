@@ -1,5 +1,11 @@
 {% extends '//mix/template/py.py' %}
 
+{% block lib_deps %}
+env/toolchain/ar/llvm/mix.sh
+env/toolchain/ld/lld/mix.sh
+lib/build/mix.sh
+{% endblock %}
+
 {% block env %}
 setup_compiler_env() {
     export CC=clang
@@ -35,5 +41,21 @@ ln -s clang cc
 
 ln -s clang++ g++
 ln -s clang++ c++
+}
+
+setup_toolchain_env() {
+    setup_compiler_env
+    setup_ar_env
+}
+
+setup_toolchain() {
+    setup_compiler
+    setup_ar
+
+    export LDFLAGS=
+    export CFLAGS=
+    export CPPFLAGS=
+    export CXXFLAGS=
+    export CONLYFLAGS=
 }
 {% endblock %}

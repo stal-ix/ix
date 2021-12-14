@@ -2,6 +2,7 @@
 
 {% block ind_deps %}
 boot/0/sys/env/mix.sh
+lib/build/mix.sh
 {% endblock %}
 
 {% block script_body %}

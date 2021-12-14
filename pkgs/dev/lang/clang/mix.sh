@@ -15,8 +15,7 @@ boot/final/env/std/mix.sh
 {% endblock %}
 
 {% block ind_deps %}
-env/toolchain/llvm/mix.sh
-lib/build/mix.sh
+dev/lang/clang/lib/mix.sh
 {% endblock %}
 
 {% block cmake_flags %}
