@@ -1,7 +1,7 @@
 {% extends '//mix/template/py.py' %}
 
-{% block run_deps %}
-env/toolchain/auto/mix.sh
+{% block ind_deps %}
+boot/0/sys/env/mix.sh
 {% endblock %}
 
 {% block script_body %}
