@@ -6,7 +6,7 @@ ceeb95430ec00cc6f8006f746605be1d
 {% endblock %}
 
 {% block bld_libs %}
-env/bt/mix.sh
+lib/build/mix.sh
 lib/c/mix.sh
 lib/linux/mix.sh
 {% endblock %}
