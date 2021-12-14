@@ -1,6 +1,10 @@
 {%   if kind == 'dat' %}
 rm -rf ${out}/bin ${out}/libexec ${out}/lib ${out}/include
 {% elif kind == 'lib' %}
+if test -f ${out}/bin/*-config; then
+    mkdir -p ${out}/lib/bin && mv ${out}/bin/*-config ${out}/lib/bin/
+fi
+
 rm -rf ${out}/bin ${out}/libexec
 {% elif kind == 'bin' %}
 rm -rf ${out}/lib ${out}/include

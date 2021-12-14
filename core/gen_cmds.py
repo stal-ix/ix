@@ -96,7 +96,7 @@ class CmdBuild:
             else:
                 lib.append(p)
 
-            yield p.pkg_name.replace('-', '_').replace('l_lib_', 'lib_'), p.out_dir
+            yield p.pkg_name.replace('-', '_').replace('L_lib_', 'lib_'), p.out_dir
 
         bp = ':'.join(p.out_dir + '/bin' for p in bin)
         lp = ':'.join(p.out_dir + '/lib' for p in lib)

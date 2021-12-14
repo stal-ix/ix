@@ -36,12 +36,3 @@ export CPPFLAGS="-DSDL_VIDEO_OPENGL_EGL=1 ${CPPFLAGS}"
 sed -e 's|CheckEGL()||' -i CMakeLists.txt
 sed -e 's|define SDL_DYNAMIC_API 1|define SDL_DYNAMIC_API 0|' -i src/dynapi/SDL_dynapi.h
 {% endblock %}
-
-{% block install %}
-{{super()}}
-cd ${out} && mkdir lib/bin && mv bin/sdl2-config lib/bin/
-{% endblock %}
-
-{% block env %}
-export PATH="${out}/lib/bin:\${PATH}"
-{% endblock %}

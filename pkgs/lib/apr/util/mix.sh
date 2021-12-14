@@ -18,10 +18,6 @@ lib/openssl/mix.sh
 --with-dbm=gdbm
 {% endblock %}
 
-{% block postinstall %}
-# TODO - make lib/bin, for apr-config
-{% endblock %}
-
 {% block env %}
-export COFLAGS="--with-apr-util=${out} --with-libapr-util=${out} \${COFLAGS}"
+export COFLAGS="--with-apr-util=${out}/lib/bin/apu-1-config \${COFLAGS}"
 {% endblock %}

@@ -33,8 +33,8 @@ scons \
     PREFIX=${out}        \
     OPENSSL="${SSL_DIR}" \
     ZLIB="${lib_z}"      \
-    APR="${lib_apr}"     \
-    APU="${lib_apr_util}"
+    APR="$(which apr-1-config)" \
+    APU="$(which apu-1-config)"
 {% endblock %}
 
 {% block install %}

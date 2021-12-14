@@ -15,10 +15,6 @@ for x in "bin/apr-1-config" "build-1/libtool" "build-1/apr_rules.mk"; do
 done
 {% endblock %}
 
-{% block postinstall %}
-# TODO - make lib/bin, for apr-config
-{% endblock %}
-
 {% block env %}
-export COFLAGS="--with-apr=${out} --with-libapr=${out} \${COFLAGS}"
+export COFLAGS="--with-apr=${out}/lib/bin/apr-1-config \${COFLAGS}"
 {% endblock %}
