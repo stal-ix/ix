@@ -6,11 +6,21 @@ ceeb95430ec00cc6f8006f746605be1d
 {% endblock %}
 
 {% block bld_libs %}
+env/bt/mix.sh
+lib/c/mix.sh
 lib/linux/mix.sh
 {% endblock %}
 
-{% block patch %}
-sed -e 's|-dN|-dM|' -i extra/scripts/gen_bits_syscall_h.sh
+{% block std_box %}
+env/box/mix.sh
+env/compress/mix.sh
+dev/lang/gcc/11/mix.sh
+dev/lang/binutils/mix.sh
+{% endblock %}
+
+{% block prologue %}
+set -x
+{{super()}}
 {% endblock %}
 
 {% block configure %}

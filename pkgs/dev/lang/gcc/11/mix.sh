@@ -25,6 +25,10 @@ dev/lang/binutils/mix.sh(for_target={{host.gnu.three}},bin_prefix=host)
 dev/lang/binutils/mix.sh(for_target={{target.gnu.three}},bin_prefix=target)
 {% endblock %}
 
+{% block run_deps %}
+dev/lang/gcc/env/mix.sh
+{% endblock %}
+
 {% block configure_flags %}
 --with-system-zlib
 
