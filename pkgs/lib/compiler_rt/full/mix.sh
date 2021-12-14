@@ -11,8 +11,7 @@ lib/linux/mix.sh
 {% endblock %}
 
 {% block std_env %}
-dev/lang/clang/mix.sh
-boot/final/env/box/mix.sh
+env/std/1/mix.sh
 {% endblock %}
 
 {% block patch %}
