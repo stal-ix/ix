@@ -10,7 +10,7 @@ boot/final/cxx/mix.sh
 {% endblock %}
 
 {% block std_env %}
-boot/final/env/clang/mix.sh
+boot/final/env/std/mix.sh
 {% endblock %}
 
 {% block build %}

@@ -24,7 +24,7 @@ lib/curses/mix.sh
 {% endblock %}
 
 {% block std_env %}
-boot/final/env/tools/mix.sh
+boot/final/env/box/mix.sh
 env/std/mix.sh
 {% endblock %}
 

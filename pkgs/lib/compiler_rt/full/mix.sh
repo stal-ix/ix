@@ -12,7 +12,7 @@ lib/linux/mix.sh
 
 {% block std_env %}
 dev/lang/clang/mix.sh
-boot/final/env/tools/mix.sh
+boot/final/env/box/mix.sh
 {% endblock %}
 
 {% block patch %}

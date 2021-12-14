@@ -2,6 +2,6 @@
 
 {% block run_deps %}
 env/std/c/mix.sh
-env/tools/mix.sh
+env/box/mix.sh
 env/compress/mix.sh
 {% endblock %}

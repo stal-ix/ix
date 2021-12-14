@@ -11,5 +11,5 @@ lib/c++/mix.sh
 
 {% block std_env %}
 env/std/mix.sh
-boot/final/env/tools/mix.sh
+boot/final/env/box/mix.sh
 {% endblock %}

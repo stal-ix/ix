@@ -1,7 +1,7 @@
 {% extends 'std.sh' %}
 
 {% block std_env %}
-env/tools/mix.sh
+env/box/mix.sh
 {% endblock %}
 
 {% block step_setup %}

@@ -5,7 +5,7 @@ lib/compiler_rt/full/mix.sh
 {% endblock %}
 
 {% block bld_deps %}
-boot/final/env/tools/mix.sh
+boot/final/env/box/mix.sh
 {% endblock %}
 
 {% block install %}
