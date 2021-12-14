@@ -8,5 +8,5 @@ gnu/gawk/mix.sh
 gnu/grep/mix.sh
 gnu/patch/mix.sh
 gnu/diffutils/mix.sh
-gnu/coreutils/8.32/mix.sh
+gnu/coreutils/8/32/mix.sh
 {% endblock %}
