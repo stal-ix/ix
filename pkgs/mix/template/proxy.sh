@@ -1,8 +1,6 @@
-{% extends 'c_std.sh' %}
+{% extends 'std/mix.sh' %}
 
-{% block std_env %}
-alt/sh/mix.sh
-alt/box/mix.sh
+{% block decompressor %}
 {% endblock %}
 
 {% block step_setup %}
