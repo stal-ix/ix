@@ -1,6 +1,6 @@
 {% extends 'c_std.sh' %}
 
-{% block std_env %}
+{% block std_box %}
 dev/lang/rustc/1/56/mix.sh
 {{super()}}
 {% endblock %}

@@ -1,6 +1,6 @@
 {% extends 'ninja.sh' %}
 
-{% block std_env %}
+{% block std_box %}
 {% if target.os == 'darwin' %}
 dev/lang/cctools/mix.sh
 {% endif %}

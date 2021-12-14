@@ -21,12 +21,12 @@ lib/darwin/framework/Foundation/mix.sh
 lib/c++/mix.sh
 {% endblock %}
 
-{% block std_env %}
+{% block std_box %}
 {% if target.os == 'darwin' %}
 dev/lang/cctools/mix.sh
 {% endif %}
 dev/build/meson/mix.sh
-env/std/0/mix.sh
+box/boot/mix.sh
 {% endblock %}
 
 {% block setup %}

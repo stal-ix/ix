@@ -10,8 +10,11 @@ lib/linux/mix.sh
 {% endif %}
 {% endblock %}
 
-{% block std_env %}
-env/std/1/mix.sh
+{% block c_runtime %}
+{% endblock %}
+
+{% block std_box %}
+box/boot/mix.sh
 {% endblock %}
 
 {% block patch %}

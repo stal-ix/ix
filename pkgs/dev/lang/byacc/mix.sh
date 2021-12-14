@@ -5,8 +5,8 @@ https://invisible-island.net/datafiles/release/byacc.tar.gz
 c66b26a5dbce291e5c3c531e8d692834
 {% endblock %}
 
-{% block std_env %}
-env/std/0/mix.sh
+{% block std_box %}
+box/boot/mix.sh
 {% endblock %}
 
 {% block install %}

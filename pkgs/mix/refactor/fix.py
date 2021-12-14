@@ -2,21 +2,8 @@ import os
 
 
 def fix(d):
-    if ' | linux' in d:
-        def it():
-            for l in d.split('\n'):
-                if ' | linux' in l:
-                    yield "{% if target.os == 'linux' %}"
-
-                    l = l[l.index("'") + 1:]
-                    l = l[:l.index("'")]
-
-                    yield l
-                    yield "{% endif %}"
-                else:
-                    yield l
-
-        return '\n'.join(it()).strip() + '\n'
+    if 'box/boot' in d:
+        return d.replace('std/env/0', 'box/boot').replace('std_env', 'std_box')
 
     return d
 

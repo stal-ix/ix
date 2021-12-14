@@ -9,8 +9,8 @@ eeefe2e6380931a77dfa6d9350b43186
 lib/iconv/mix.sh
 {% endblock %}
 
-{% block std_env %}
-env/std/0/mix.sh
+{% block std_box %}
+box/boot/mix.sh
 {% endblock %}
 
 {% block patch %}

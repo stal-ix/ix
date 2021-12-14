@@ -9,8 +9,8 @@ addf44b646ddb4e3919805aa88fa7c5e
 dev/lang/m4/mix.sh
 {% endblock %}
 
-{% block std_env %}
-env/std/0/mix.sh
+{% block std_box %}
+box/boot/mix.sh
 {% endblock %}
 
 {% block setup %}

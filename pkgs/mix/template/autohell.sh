@@ -1,6 +1,6 @@
 {% extends 'make.sh' %}
 
-{% block std_env %}
+{% block std_box %}
 dev/build/pkg-config/mix.sh
 {{super()}}
 {% endblock %}

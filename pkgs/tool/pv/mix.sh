@@ -11,8 +11,8 @@ dev/lang/cctools/mix.sh
 {% endif %}
 {% endblock %}
 
-{% block std_env %}
-env/std/0/mix.sh
+{% block std_box %}
+box/boot/mix.sh
 {% endblock %}
 
 {% block setup %}

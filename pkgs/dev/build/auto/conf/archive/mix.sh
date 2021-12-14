@@ -9,6 +9,6 @@ http://mirror.tochlab.net/pub/gnu/autoconf-archive/autoconf-archive-2021.02.19.t
 dev/doc/texinfo/mix.sh
 {% endblock %}
 
-{% block std_env %}
-env/std/0/mix.sh
+{% block std_box %}
+box/boot/mix.sh
 {% endblock %}

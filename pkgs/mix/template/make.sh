@@ -1,6 +1,6 @@
 {% extends 'c_std.sh' %}
 
-{% block std_env %}
+{% block std_box %}
 dev/build/make/mix.sh
 {{super()}}
 {% endblock %}

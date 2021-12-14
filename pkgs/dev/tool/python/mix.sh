@@ -13,7 +13,7 @@ lib/darwin/framework/SystemConfiguration/mix.sh
 {% endblock %}
 
 {% block bld_deps %}
-env/std/0/mix.sh
+box/boot/mix.sh
 {% endblock %}
 
 {% block extra_modules %}

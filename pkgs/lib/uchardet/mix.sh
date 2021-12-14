@@ -9,6 +9,6 @@ f1ac05da2edfc17b12d1f942695f59b8
 lib/c++/mix.sh
 {% endblock %}
 
-{% block std_env %}
-env/std/0/mix.sh
+{% block std_box %}
+box/boot/mix.sh
 {% endblock %}

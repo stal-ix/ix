@@ -10,8 +10,8 @@ dev/tool/perl/mix.sh
 dev/build/auto/conf/2/71/mix.sh
 {% endblock %}
 
-{% block std_env %}
-env/std/0/mix.sh
+{% block std_box %}
+box/boot/mix.sh
 {% endblock %}
 
 {% block run_deps %}

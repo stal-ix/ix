@@ -11,8 +11,8 @@ e2bf7537e1ca821f6059ee84e7ae76a5
 gnu/patch/mix.sh
 {% endblock %}
 
-{% block std_env %}
-env/std/0/mix.sh
+{% block std_box %}
+box/boot/mix.sh
 {% endblock %}
 
 {% block unpack_chdir %}

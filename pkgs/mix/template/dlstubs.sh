@@ -1,6 +1,6 @@
 {% extends 'c_std.sh' %}
 
-{% block std_env %}
+{% block std_box %}
 lib/dlfcn/scripts/mix.sh
 {{super()}}
 {% endblock %}

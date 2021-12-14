@@ -19,8 +19,8 @@ dev/build/auto/conf/2/69/mix.sh
 dev/build/auto/make/1/16/mix.sh
 {% endblock %}
 
-{% block std_env %}
-env/std/0/mix.sh
+{% block std_box %}
+box/boot/mix.sh
 {% endblock %}
 
 {% block unpack %}

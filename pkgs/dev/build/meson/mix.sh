@@ -9,8 +9,8 @@ a5d6cfcf776e145f2054d5eefb4bc110
 gnu/patch/mix.sh
 {% endblock %}
 
-{% block std_env %}
-env/std/0/mix.sh
+{% block std_box %}
+box/boot/mix.sh
 {% endblock %}
 
 {% block run_deps %}

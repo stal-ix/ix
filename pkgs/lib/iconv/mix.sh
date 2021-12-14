@@ -5,8 +5,8 @@ https://ftp.gnu.org/pub/gnu/libiconv/libiconv-1.16.tar.gz
 7d2a800b952942bb2880efb00cfd524c
 {% endblock %}
 
-{% block std_env %}
-env/std/0/mix.sh
+{% block std_box %}
+box/boot/mix.sh
 {% endblock %}
 
 {% block install %}

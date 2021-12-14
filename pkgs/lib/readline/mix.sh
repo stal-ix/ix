@@ -9,8 +9,8 @@ e9557dd5b1409f5d7b37ef717c64518e
 lib/curses/mix.sh
 {% endblock %}
 
-{% block std_env %}
-env/std/0/mix.sh
+{% block std_box %}
+box/boot/mix.sh
 {% endblock %}
 
 {% block setup %}

@@ -9,8 +9,8 @@ https://busybox.net/downloads/busybox-1.34.0.tar.bz2
 lib/linux/mix.sh
 {% endblock %}
 
-{% block std_env %}
-env/std/0/mix.sh
+{% block std_box %}
+box/boot/mix.sh
 {% endblock %}
 
 {% block setup_tools %}
