@@ -35,6 +35,11 @@ cd ${CD}
 )
 {% endblock %}
 
-{% block std_box %}
-env/std/mix.sh
+{% block std_env %}
+alt/c/mix.sh
+alt/box/mix.sh
+shell/cli/dash/minimal/mix.sh
+tool/pv/mix.sh
+tool/compress/unzip/mix.sh
+lib/archive/mix.sh
 {% endblock %}

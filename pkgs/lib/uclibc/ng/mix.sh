@@ -11,12 +11,6 @@ lib/c/mix.sh
 lib/linux/mix.sh
 {% endblock %}
 
-{% block std_box %}
-alt/box/mix.sh
-dev/lang/gcc/11/mix.sh
-dev/lang/binutils/mix.sh
-{% endblock %}
-
 {% block prologue %}
 set -x
 {{super()}}

@@ -11,8 +11,6 @@
 {% endblock %}
 
 {% block std_env %}
-{% block std_box %}
-{% endblock %}
 {% endblock %}
 {% endblock %}
 {% endset %}
