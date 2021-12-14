@@ -24,8 +24,7 @@ lib/curses/mix.sh
 {% endblock %}
 
 {% block std_env %}
-boot/final/env/box/mix.sh
-env/std/mix.sh
+env/std/0/mix.sh
 {% endblock %}
 
 {% block cmake_flags %}

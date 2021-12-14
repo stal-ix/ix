@@ -10,6 +10,5 @@ lib/c++/mix.sh
 {% endblock %}
 
 {% block std_env %}
-env/std/mix.sh
-boot/final/env/box/mix.sh
+env/std/0/mix.sh
 {% endblock %}
