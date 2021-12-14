@@ -28,3 +28,12 @@ dev/build/auto/make/1/16/mix.sh
 {% block configure_flags %}
 --enable-manual
 {% endblock %}
+
+{% block install %}
+{{super()}}
+cd ${out} && mkdir lib/bin && mv bin/curl-config lib/bin/
+{% endblock %}
+
+{% block env %}
+export PATH="${out}/lib/bin:\${PATH}"
+{% endblock %}
