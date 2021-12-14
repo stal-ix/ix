@@ -1,6 +1,9 @@
 {% extends 'sh.sh' %}
 
 {% block sh_script %}
+{% block functions %}
+{% endblock %}
+
 step_unpack() {
 echo 'unpack step'
 

@@ -1,3 +1,8 @@
+{% block functions %}
+{% include 'extract.sh' %}
+{% endblock %}
+
+{% block unpack %}
 mkdir unp && cd unp
 
 for s in ${src}/*; do
@@ -8,15 +13,13 @@ for s in ${src}/*; do
         ;;
         *.patch)
         ;;
-        *zip)
-            ${unzip} ${s}
-        ;;
         *)
-            ${untar} ${s}
+            do_extract ${s}
         ;;
     esac
 done
 
 {% block unpack_chdir %}
 cd .. && mv unp/* bld && cd bld
+{% endblock %}
 {% endblock %}

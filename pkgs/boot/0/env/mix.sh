@@ -6,5 +6,4 @@ env/bt/mix.sh
 
 {% block run_deps %}
 boot/0/sys/mix.sh
-env/compress/0/mix.sh
 {% endblock %}

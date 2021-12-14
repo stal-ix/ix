@@ -11,6 +11,10 @@ DATA = r"""
 {% endblock %}
 """.strip()
 
+EXTR = r"""
+{% include 'blocks/extract.sh' %}
+"""
+
 def iter_lines():
     yield 'set -e'
     yield 'set -x'
@@ -18,6 +22,7 @@ def iter_lines():
     for p in os.environ['MIX_ENVPATH'].split(':'):
         yield '. ' + os.path.normpath(os.path.join(p, '..', 'env'))
 
+    yield EXTR
     yield DATA
 
 if DATA:

@@ -1,8 +1,6 @@
 {% extends 'base.sh' %}
 
-{% block unpack %}
 {% include 'blocks/unpack.sh' %}
-{% endblock %}
 
 {% block step_setup %}
 CD=${PWD}

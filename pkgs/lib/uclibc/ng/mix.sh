@@ -13,7 +13,6 @@ lib/linux/mix.sh
 
 {% block std_box %}
 env/box/mix.sh
-env/compress/mix.sh
 dev/lang/gcc/11/mix.sh
 dev/lang/binutils/mix.sh
 {% endblock %}
