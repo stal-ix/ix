@@ -37,8 +37,8 @@ cd ${CD}
 
 {% block std_env %}
 alt/c/mix.sh
+alt/sh/mix.sh
 alt/box/mix.sh
-shell/cli/dash/minimal/mix.sh
 tool/pv/mix.sh
 tool/compress/unzip/mix.sh
 lib/archive/mix.sh

@@ -1,8 +1,8 @@
 {% extends 'std.sh' %}
 
 {% block std_env %}
+alt/sh/mix.sh
 alt/box/mix.sh
-shell/cli/dash/minimal/mix.sh
 {% endblock %}
 
 {% block step_setup %}
