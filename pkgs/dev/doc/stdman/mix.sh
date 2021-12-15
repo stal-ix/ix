@@ -17,5 +17,5 @@ bash ./configure --prefix="${out}"
 {% endblock %}
 
 {% block bld_libs %}
-lib/c/mix.sh
+#lib/c/mix.sh
 {% endblock %}

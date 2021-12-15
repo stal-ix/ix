@@ -36,7 +36,3 @@ cd ${out}
 EOF
 )
 {% endblock %}
-
-{% block bld_libs %}
-lib/c/mix.sh
-{% endblock %}
