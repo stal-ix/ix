@@ -6,14 +6,15 @@ ceeb95430ec00cc6f8006f746605be1d
 {% endblock %}
 
 {% block bld_libs %}
-lib/build/mix.sh
-lib/c/mix.sh
 lib/linux/mix.sh
 {% endblock %}
 
-{% block prologue %}
-set -x
-{{super()}}
+{% block c_compiler %}
+dev/lang/gcc/11/mix.sh
+dev/lang/binutils/mix.sh
+{% endblock %}
+
+{% block c_runtime %}
 {% endblock %}
 
 {% block configure %}

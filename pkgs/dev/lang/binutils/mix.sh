@@ -22,7 +22,6 @@ dev/lang/bison/3/6/mix.sh
 --with-system-zlib
 --disable-multilib
 --enable-deterministic-archives
---target="{{for_target}}"
 {% endblock %}
 
 {% block setup %}

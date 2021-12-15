@@ -52,3 +52,17 @@ lib/archive/mix.sh
 {% endblock %}
 {% endblock %}
 {% endblock %}
+
+{% block step_test %}
+{% block test %}
+{% if kind == 'bin' %}
+{% block test_bin %}
+{% endblock %}
+{% endif %}
+
+{% if kind == 'lib' %}
+{% block test_lib %}
+{% endblock %}
+{% endif %}
+{% endblock %}
+{% endblock %}

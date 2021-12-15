@@ -12,7 +12,7 @@ lib/darwin/framework/SystemConfiguration/mix.sh
 {{super()}}
 {% endblock %}
 
-{% block bld_deps %}
+{% block std_box %}
 box/boot/mix.sh
 {% endblock %}
 

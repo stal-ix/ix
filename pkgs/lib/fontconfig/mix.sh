@@ -37,7 +37,7 @@ cat meson.build \
 {{super()}}
 
 {% if kind != 'dat' %}
-sed -e "s|$(basename ${out})|$(basename ${d_lib_fontconfig})|" \
+sed -e "s|$(basename ${out})|$(basename ${D_lib_fontconfig})|" \
     -i ${tmp}/obj/config.h
 {% endif %}
 {% endblock %}
