@@ -6,7 +6,6 @@ https://archive.mesa3d.org/demos/mesa-demos-8.4.0.tar.bz2
 {% endblock %}
 
 {% block bld_libs %}
-lib/c/mix.sh
 lib/drm/mix.sh
 lib/mesa/mix.sh
 lib/mesa/drivers/gl/zink/mix.sh
@@ -33,4 +32,8 @@ dev/build/auto/make/1/16/mix.sh
 ln -s ${lib_mesa}/lib/libEGL.a ./libGL.a
 export LDFLAGS="-L${PWD} ${LDFLAGS}"
 export ac_cv_lib_GL_glBegin=yes
+{% endblock %}
+
+{% block lib_deps %}
+lib/c/mix.sh
 {% endblock %}

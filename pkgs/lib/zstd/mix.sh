@@ -5,8 +5,11 @@ https://github.com/facebook/zstd/releases/download/v1.5.0/zstd-1.5.0.tar.gz
 a6eb7fb1f2c21fa80030a47993853e92
 {% endblock %}
 
-{% block bld_libs %}
+{% block lib_deps %}
 lib/c/mix.sh
+{% endblock %}
+
+{% block bld_libs %}
 lib/z/mix.sh
 lib/xz/mix.sh
 lib/lz4/mix.sh

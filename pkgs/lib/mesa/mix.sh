@@ -6,6 +6,7 @@ d6efe1ecc0680cd1adb942f05600d884
 {% endblock %}
 
 {% block lib_deps %}
+lib/c/mix.sh
 lib/z/mix.sh
 lib/drm/mix.sh
 lib/zstd/mix.sh
@@ -18,7 +19,6 @@ lib/vulkan/headers/mix.sh
 {% endblock %}
 
 {% block bld_libs %}
-lib/c/mix.sh
 pypi/Mako/mix.sh
 {% endblock %}
 

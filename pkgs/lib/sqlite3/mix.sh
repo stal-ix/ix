@@ -5,8 +5,11 @@ https://www.sqlite.org/2021/sqlite-autoconf-3360000.tar.gz
 f5752052fc5b8e1b539af86a3671eac7
 {% endblock %}
 
-{% block bld_libs %}
+{% block lib_deps %}
 lib/c/mix.sh
+{% endblock %}
+
+{% block bld_libs %}
 lib/readline/mix.sh
 {% endblock %}
 

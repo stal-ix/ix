@@ -5,8 +5,11 @@ https://github.com/seccomp/libseccomp/archive/refs/tags/v2.5.2.tar.gz
 7803456cfac52313e109dae6b57264ec
 {% endblock %}
 
-{% block bld_libs %}
+{% block lib_deps %}
 lib/c/mix.sh
+{% endblock %}
+
+{% block bld_libs %}
 lib/linux/mix.sh
 {% endblock %}
 

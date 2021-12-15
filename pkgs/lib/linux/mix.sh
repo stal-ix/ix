@@ -6,7 +6,7 @@ https://www.kernel.org/pub/linux/kernel/v5.x/linux-5.13.12.tar.xz
 {% endblock %}
 
 {% block bld_libs %}
-# host lib
+# host libs
 boot/final/cxx/mix.sh
 {% endblock %}
 

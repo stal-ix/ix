@@ -2,19 +2,14 @@ import os
 
 
 def fix(d, n):
-    if '//lib/c++' in d:
+    if 'lib_deps' in d:
         return
 
-    if '/boot/' in n:
-        return
+    if 'bld_libs' in d:
+        d = d.replace('lib/c/mix.sh\n', '')
+        d = d + '\n{% block lib_deps %}\nlib/c/mix.sh\n{% endblock %}'
 
-    if 'lib/c/mix.sh' in d:
-        return
-
-    if '/mix/' in n:
-        return
-
-    return d.replace('lib/c++/mix.sh', 'lib/c/mix.sh\nlib/c++/mix.sh')
+        return d
 
 
 for a, b, c in os.walk('.'):

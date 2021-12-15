@@ -6,7 +6,6 @@ de426bde2fef6f8a6fef2d089d0bf58a
 {% endblock %}
 
 {% block bld_libs %}
-lib/c/mix.sh
 lib/linux/mix.sh
 {% endblock %}
 
@@ -16,4 +15,8 @@ cat Makefile \
     | grep -v 'cp.*libudev.so.1' \
     | grep -v 'ln.*libudev.so.1' \
     > _ && mv _ Makefile
+{% endblock %}
+
+{% block lib_deps %}
+lib/c/mix.sh
 {% endblock %}

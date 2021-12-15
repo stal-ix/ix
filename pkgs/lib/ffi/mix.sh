@@ -6,7 +6,6 @@ f2e272ec793571f28d52006ad14534c4
 {% endblock %}
 
 {% block bld_libs %}
-lib/c/mix.sh
 {% if target.os == 'linux' %}
 lib/linux/mix.sh
 {% endif %}
@@ -30,4 +29,8 @@ dash autogen.sh
 
 {% block env %}
 export COFLAGS="--with-system-ffi=yes --with-libffi-prefix=${out} \${COFLAGS}"
+{% endblock %}
+
+{% block lib_deps %}
+lib/c/mix.sh
 {% endblock %}

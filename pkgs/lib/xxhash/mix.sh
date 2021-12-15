@@ -5,8 +5,11 @@ https://github.com/Cyan4973/xxHash/archive/refs/tags/v0.8.0.tar.gz
 62310678857c30fcef4128f41f711f49
 {% endblock %}
 
-{% block bld_libs %}
+{% block lib_deps %}
 lib/c/mix.sh
+{% endblock %}
+
+{% block bld_libs %}
 lib/c++/mix.sh
 {% endblock %}
 

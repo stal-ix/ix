@@ -5,8 +5,11 @@ https://www.openssl.org/source/openssl-3.0.0.tar.gz
 43c5ab628b7ab899d7cd4a4c7fe4067f
 {% endblock %}
 
-{% block bld_libs %}
+{% block lib_deps %}
 lib/c/mix.sh
+{% endblock %}
+
+{% block bld_libs %}
 {% if target.os == 'linux' %}
 lib/linux/mix.sh
 {% endif %}

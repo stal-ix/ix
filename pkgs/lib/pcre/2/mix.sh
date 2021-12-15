@@ -5,8 +5,11 @@ https://github.com/PhilipHazel/pcre2/archive/refs/tags/pcre2-10.39.tar.gz
 c296b9ad214136b814e9ecbbf22d3c42
 {% endblock %}
 
-{% block bld_libs %}
+{% block lib_deps %}
 lib/c/mix.sh
+{% endblock %}
+
+{% block bld_libs %}
 lib/z/mix.sh
 lib/bzip2/mix.sh
 {% endblock %}

@@ -6,6 +6,7 @@ https://github.com/nghttp2/nghttp2/archive/refs/tags/v1.46.0.tar.gz
 {% endblock %}
 
 {% block lib_deps %}
+lib/c/mix.sh
 lib/z/mix.sh
 lib/ev/mix.sh
 lib/c-ares/mix.sh
@@ -13,7 +14,6 @@ lib/openssl/mix.sh
 {% endblock %}
 
 {% block bld_libs %}
-lib/c/mix.sh
 lib/c++/mix.sh
 lib/xml2/mix.sh
 lib/jansson/mix.sh

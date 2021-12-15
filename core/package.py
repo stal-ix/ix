@@ -131,6 +131,8 @@ class Package:
         return {'target': self.host, 'kind': 'bin'}
 
     def load_package(self, n, flags):
+        print(f'{self.name} -> {n}')
+
         try:
             n['name']
         except TypeError:

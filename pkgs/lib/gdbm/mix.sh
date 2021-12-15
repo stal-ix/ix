@@ -6,7 +6,6 @@ aeb29c6a90350a4c959cd1df38cd0a7e
 {% endblock %}
 
 {% block bld_libs %}
-lib/c/mix.sh
 lib/readline/mix.sh
 {% if kind == 'bin' %}
 lib/intl/mix.sh
@@ -35,4 +34,8 @@ cd ${out}/lib && ln -s libgdbm_compat.a libdbm.a
 
 {% block env %}
 export COFLAGS="--with-gdbm=${out} \${COFLAGS}"
+{% endblock %}
+
+{% block lib_deps %}
+lib/c/mix.sh
 {% endblock %}

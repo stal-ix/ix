@@ -10,7 +10,10 @@ dev/build/auto/conf/2/69/mix.sh
 dev/build/auto/make/1/16/mix.sh
 {% endblock %}
 
-{% block bld_libs %}
+{% block lib_deps %}
 lib/c/mix.sh
+{% endblock %}
+
+{% block bld_libs %}
 lib/linux/mix.sh
 {% endblock %}

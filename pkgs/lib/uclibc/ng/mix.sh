@@ -6,7 +6,6 @@ ceeb95430ec00cc6f8006f746605be1d
 {% endblock %}
 
 {% block bld_libs %}
-lib/c/mix.sh
 lib/linux/mix.sh
 {% endblock %}
 
@@ -21,4 +20,8 @@ cat << EOF >> extra/Configs/Config.x86_64
 EOF
 
 make defconfig
+{% endblock %}
+
+{% block lib_deps %}
+lib/c/mix.sh
 {% endblock %}
