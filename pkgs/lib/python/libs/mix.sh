@@ -1,6 +1,7 @@
 {% extends '//mix/template/hub.sh' %}
 
 {% block lib_deps %}
+lib/c/mix.sh
 lib/z/mix.sh
 lib/xz/mix.sh
 lib/ffi/mix.sh

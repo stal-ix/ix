@@ -7,9 +7,9 @@ https://common-lisp.net/project/ecl/static/files/release/ecl-21.2.1.tgz
 
 {% block bld_libs %}
 lib/c/mix.sh
-lib/boehmgc/mix.sh
 lib/gmp/mix.sh
 lib/ffi/mix.sh
+lib/boehmgc/mix.sh
 {% endblock %}
 
 {% block unpack %}

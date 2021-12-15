@@ -10,7 +10,6 @@ a50fb1d7c40ac7fac3360218cb37a38b
 {% endblock %}
 
 {% block bld_libs %}
-lib/c/mix.sh
 net/openssh/libs/mix.sh(openssl=1,curses=netbsd)
 {% endblock %}
 

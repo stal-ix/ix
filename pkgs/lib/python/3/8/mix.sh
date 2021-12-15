@@ -14,7 +14,3 @@ for path in Modules/_sqlite/*; do
 done
 {% endblock %}
 {% endblock %}
-
-{% block lib_deps %}
-lib/c/mix.sh
-{% endblock %}

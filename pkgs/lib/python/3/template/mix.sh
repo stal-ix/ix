@@ -11,7 +11,6 @@ dev/build/auto/conf/archive/mix.sh
 {% endblock %}
 
 {% block bld_libs %}
-lib/c/mix.sh
 {% if target.os == 'linux' %}
 lib/linux/mix.sh
 {% endif %}
@@ -77,8 +76,7 @@ EOF
 {% endblock %}
 
 {% if kind == 'lib' %}
-{% set platlibdir %}
-lib{% endset %}
+{% set platlibdir %}lib{% endset %}
 {% else %}
 {% set platlibdir %}share{% endset %}
 {% endif %}

@@ -16,4 +16,5 @@ dash autogen.sh
 
 {% block bld_libs %}
 lib/c/mix.sh
+lib/c++/mix.sh
 {% endblock %}
