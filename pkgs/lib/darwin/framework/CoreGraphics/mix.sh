@@ -3,3 +3,5 @@
 {% block framework %}
 CoreGraphics
 {% endblock %}
+
+{% block lib_deps %}lib/c/mix.sh{% endblock %}

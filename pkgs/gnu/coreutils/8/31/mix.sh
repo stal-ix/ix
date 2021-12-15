@@ -14,3 +14,5 @@ dev/lang/byacc/mix.sh
 {{super()}}
 --without-gmp
 {% endblock %}
+
+{% block bld_libs %}lib/c/mix.sh{% endblock %}

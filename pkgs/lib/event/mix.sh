@@ -6,6 +6,7 @@ https://github.com/libevent/libevent/archive/refs/tags/release-2.1.12-stable.tar
 {% endblock %}
 
 {% block lib_deps %}
+lib/c/mix.sh
 lib/openssl/mix.sh
 {% endblock %}
 

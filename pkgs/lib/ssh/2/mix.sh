@@ -6,6 +6,7 @@ https://github.com/libssh2/libssh2/archive/refs/tags/libssh2-1.10.0.tar.gz
 {% endblock %}
 
 {% block lib_deps %}
+lib/c/mix.sh
 lib/z/mix.sh
 lib/openssl/mix.sh
 {% endblock %}

@@ -12,6 +12,7 @@ dev/tool/python/mix.sh
 {% endblock %}
 
 {% block lib_deps %}
+lib/c/mix.sh
 lib/intl/mix.sh
 lib/iconv/mix.sh
 lib/expat/mix.sh

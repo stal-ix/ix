@@ -19,3 +19,5 @@ dash autogen.sh
 >nasm.1
 >ndisasm.1
 {% endblock %}
+
+{% block bld_libs %}lib/c/mix.sh{% endblock %}

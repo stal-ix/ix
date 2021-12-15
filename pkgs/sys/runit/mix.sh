@@ -21,3 +21,5 @@ for i in $(cat package/commands); do
     cp src/${i} ${out}/bin/
 done
 {% endblock %}
+
+{% block bld_libs %}lib/c/mix.sh{% endblock %}

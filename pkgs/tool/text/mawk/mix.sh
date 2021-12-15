@@ -6,6 +6,7 @@ d48752f402d7371d9eb5f68de3da05d4
 {% endblock %}
 
 {% block bld_libs %}
+lib/c/mix.sh
 lib/readline/mix.sh
 {% endblock %}
 

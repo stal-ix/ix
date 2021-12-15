@@ -8,3 +8,5 @@ https://git.sr.ht/~sircmpwn/scdoc/archive/1.11.2.tar.gz
 {% block setup %}
 export CPPFLAGS="-w ${CPPFLAGS}"
 {% endblock %}
+
+{% block bld_libs %}lib/c/mix.sh{% endblock %}

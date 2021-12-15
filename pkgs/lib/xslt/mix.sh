@@ -11,6 +11,7 @@ dev/build/auto/make/1/16/mix.sh
 {% endblock %}
 
 {% block lib_deps %}
+lib/c/mix.sh
 lib/xml2/mix.sh
 {% endblock %}
 

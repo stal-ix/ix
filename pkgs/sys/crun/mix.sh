@@ -6,6 +6,7 @@ cbfee6db4d034bfa62effe695da2bbd6
 {% endblock %}
 
 {% block bld_libs %}
+lib/c/mix.sh
 lib/intl/mix.sh
 lib/yajl/mix.sh
 lib/cap/mix.sh

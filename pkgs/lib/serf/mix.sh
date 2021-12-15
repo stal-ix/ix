@@ -6,6 +6,7 @@ https://www.apache.org/dist/serf/serf-1.3.9.tar.bz2
 {% endblock %}
 
 {% block lib_deps %}
+lib/c/mix.sh
 lib/z/mix.sh
 lib/apr/mix.sh
 lib/openssl/mix.sh

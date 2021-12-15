@@ -6,6 +6,7 @@ a03aff8a9b32312aca7aea368f8265c5
 {% endblock %}
 
 {% block lib_deps %}
+lib/c/mix.sh
 lib/xiph/ogg/mix.sh
 {% endblock %}
 

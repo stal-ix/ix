@@ -6,6 +6,7 @@ https://github.com/tmux/tmux/releases/download/3.2a/tmux-3.2a.tar.gz
 {% endblock %}
 
 {% block bld_libs %}
+lib/c/mix.sh
 lib/event/mix.sh
 lib/utf8proc/mix.sh
 lib/curses/mix.sh

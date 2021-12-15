@@ -6,6 +6,7 @@ a84a680e92618b8c236626c192e5a15b
 {% endblock %}
 
 {% block lib_deps %}
+lib/c/mix.sh
 lib/openssl/mix.sh
 {% endblock %}
 

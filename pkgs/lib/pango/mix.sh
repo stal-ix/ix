@@ -6,6 +6,7 @@ https://download.gnome.org/sources/pango/1.49/pango-1.49.4.tar.xz
 {% endblock %}
 
 {% block lib_deps %}
+lib/c/mix.sh
 lib/glib/mix.sh
 lib/cairo/mix.sh
 lib/fribidi/mix.sh

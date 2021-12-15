@@ -6,6 +6,7 @@ https://ftp.gnu.org/gnu/mpc/mpc-1.2.1.tar.gz
 {% endblock %}
 
 {% block lib_deps %}
+lib/c/mix.sh
 lib/gmp/mix.sh
 lib/mpfr/mix.sh
 {% endblock %}

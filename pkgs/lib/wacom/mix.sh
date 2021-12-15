@@ -6,6 +6,7 @@ https://github.com/linuxwacom/libwacom/archive/refs/tags/libwacom-1.12.tar.gz
 {% endblock %}
 
 {% block lib_deps %}
+lib/c/mix.sh
 lib/udev/g/mix.sh
 {% endblock %}
 

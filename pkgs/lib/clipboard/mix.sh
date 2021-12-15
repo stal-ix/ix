@@ -6,6 +6,7 @@ bddc22070b6804ed63994af49b778b70
 {% endblock %}
 
 {% block lib_deps %}
+lib/c/mix.sh
 {% if target.os == 'darwin' %}
 lib/darwin/framework/AppKit/mix.sh
 {% endif %}

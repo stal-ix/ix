@@ -4,11 +4,6 @@
 {% block c_compiler %}
 dev/lang/clang/mix.sh
 {% endblock %}
-
-{% block c_runtime %}
-lib/build/crt/mix.sh
-{% endblock %}
-
 {{super()}}
 {% endblock %}
 

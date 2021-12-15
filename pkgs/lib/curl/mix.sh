@@ -6,6 +6,7 @@ https://github.com/curl/curl/archive/refs/tags/curl-7_79_1.tar.gz
 {% endblock %}
 
 {% block lib_deps %}
+lib/c/mix.sh
 lib/z/mix.sh
 lib/c-ares/mix.sh
 lib/idn/2/mix.sh

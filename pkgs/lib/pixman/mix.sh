@@ -9,3 +9,5 @@ https://www.cairographics.org/releases/pixman-0.40.0.tar.gz
 dev/build/auto/conf/2/69/mix.sh
 dev/build/auto/make/1/16/mix.sh
 {% endblock %}
+
+{% block lib_deps %}lib/c/mix.sh{% endblock %}

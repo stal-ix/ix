@@ -6,6 +6,7 @@ aeb91767903cbee234bf449f481877c1
 {% endblock %}
 
 {% block lib_deps %}
+lib/c/mix.sh
 lib/wayland/mix.sh
 lib/vulkan/headers/mix.sh
 {% endblock %}

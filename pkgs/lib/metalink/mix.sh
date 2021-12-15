@@ -6,6 +6,7 @@ f2c097557e2487313cd0be62d55952de
 {% endblock %}
 
 {% block lib_deps %}
+lib/c/mix.sh
 lib/expat/mix.sh
 {% endblock %}
 

@@ -56,3 +56,5 @@ export TERMINFO="${out}/share/terminfo"
 {% endif %}
 export COFLAGS="--with-curses=${out} --with-ncurses=${out} \${COFLAGS}"
 {% endblock %}
+
+{% block lib_deps %}lib/c/mix.sh{% endblock %}

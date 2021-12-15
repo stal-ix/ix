@@ -17,3 +17,5 @@ boot/final/env/bison/mix.sh
 --enable-static-link
 {% endif %}
 {% endblock %}
+
+{% block bld_libs %}lib/c/mix.sh{% endblock %}

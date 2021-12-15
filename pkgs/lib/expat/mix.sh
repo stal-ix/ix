@@ -29,3 +29,5 @@ chmod +x install_name_tool
 {% block env %}
 export COFLAGS="--with-expat=${out} --with-libexpat-prefix=${out} --with-libexpat=${out} --with-system-expat=yes \${COFLAGS}"
 {% endblock %}
+
+{% block lib_deps %}lib/c/mix.sh{% endblock %}

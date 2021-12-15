@@ -6,6 +6,7 @@ f21d7c326ca389e43caf5664a768d745
 {% endblock %}
 
 {% block lib_deps %}
+lib/c/mix.sh
 lib/gdbm/mix.sh
 {{super()}}
 {% endblock %}

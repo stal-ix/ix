@@ -13,3 +13,5 @@ sed -e 's| SHARED | STATIC |' -i src/CMakeLists.txt
 {{super()}}
 rm ${out}/lib/libyajl_s.a
 {% endblock %}
+
+{% block lib_deps %}lib/c/mix.sh{% endblock %}

@@ -6,6 +6,7 @@ https://github.com/libarchive/libarchive/archive/refs/tags/v3.5.2.tar.gz
 {% endblock %}
 
 {% block lib_deps %}
+lib/c/mix.sh
 lib/z/mix.sh
 lib/xz/mix.sh
 lib/lz4/mix.sh

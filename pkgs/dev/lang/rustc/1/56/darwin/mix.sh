@@ -38,3 +38,5 @@ cat << EOF > ${out}/env
 export LDFLAGS="-L${out} \${LDFLAGS}"
 EOF
 {% endblock %}
+
+{% block bld_libs %}lib/c/mix.sh{% endblock %}

@@ -46,3 +46,5 @@ EOF
 
 go run hello.go
 {% endblock %}
+
+{% block bld_libs %}lib/c/mix.sh{% endblock %}

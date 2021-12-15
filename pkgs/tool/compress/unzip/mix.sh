@@ -37,3 +37,5 @@ MANDIR=${out}/share/man/man1
 {% block make_target %}
 macosx
 {% endblock %}
+
+{% block bld_libs %}lib/c/mix.sh{% endblock %}

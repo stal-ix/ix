@@ -6,6 +6,7 @@ https://archive.apache.org/dist/apr/apr-util-1.6.1.tar.bz2
 {% endblock %}
 
 {% block lib_deps %}
+lib/c/mix.sh
 lib/apr/mix.sh
 lib/gdbm/mix.sh
 lib/iconv/mix.sh

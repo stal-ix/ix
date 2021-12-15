@@ -6,6 +6,7 @@ https://github.com/kovidgoyal/kitty/archive/refs/tags/v0.23.1.tar.gz
 {% endblock %}
 
 {% block bld_libs %}
+lib/c/mix.sh
 lib/png/mix.sh
 lib/lcms2/mix.sh
 lib/python/mix.sh

@@ -7,3 +7,5 @@ dev/lang/sbcl/bin/mix.sh
 {% block boot_lisp %}
 sbcl
 {% endblock %}
+
+{% block bld_libs %}lib/c/mix.sh{% endblock %}

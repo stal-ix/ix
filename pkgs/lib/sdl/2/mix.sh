@@ -6,6 +6,7 @@ https://github.com/libsdl-org/SDL/archive/refs/tags/release-2.0.18.tar.gz
 {% endblock %}
 
 {% block lib_deps %}
+lib/c/mix.sh
 lib/opengl/mix.sh
 lib/wayland/mix.sh
 lib/xkbcommon/mix.sh

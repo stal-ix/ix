@@ -13,3 +13,5 @@ dev/build/auto/make/1/16/mix.sh
 {% block autoreconf %}
 dash autogen.sh
 {% endblock %}
+
+{% block bld_libs %}lib/c/mix.sh{% endblock %}

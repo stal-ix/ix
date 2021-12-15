@@ -19,3 +19,5 @@ ${CC} ${src}/b64.c -o base64
 {% block install %}
 mkdir ${out}/bin && cp base64 ${out}/bin
 {% endblock %}
+
+{% block bld_libs %}lib/c/mix.sh{% endblock %}

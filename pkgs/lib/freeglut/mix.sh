@@ -6,6 +6,7 @@ cd5c670c1086358598a6d4a9d166949d
 {% endblock %}
 
 {% block lib_deps %}
+lib/c/mix.sh
 lib/opengl/mix.sh
 lib/wayland/mix.sh
 lib/xkbcommon/mix.sh

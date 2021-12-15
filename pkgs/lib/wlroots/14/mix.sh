@@ -6,6 +6,7 @@ https://gitlab.freedesktop.org/wlroots/wlroots/-/archive/0.14.1/wlroots-0.14.1.t
 {% endblock %}
 
 {% block lib_deps %}
+lib/c/mix.sh
 lib/drm/mix.sh
 lib/udev/mix.sh
 lib/seat/mix.sh

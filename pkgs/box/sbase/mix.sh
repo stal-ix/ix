@@ -34,3 +34,5 @@ ln -s sbase-box ln
 chmod +x getconf.sh
 cat util.h | grep -v 'undef realloc' > _ && mv _ util.h
 {% endblock %}
+
+{% block bld_libs %}lib/c/mix.sh{% endblock %}

@@ -18,3 +18,5 @@ export COFLAGS="--with-readline=edit ${COFLAGS}"
 {% block patch_sqlite_modname %}
 # fixed in 3.10
 {% endblock %}
+
+{% block lib_deps %}lib/c/mix.sh{% endblock %}

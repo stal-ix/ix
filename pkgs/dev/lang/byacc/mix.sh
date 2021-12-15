@@ -17,3 +17,5 @@ cd ${out}/bin && ln -s yacc byacc
 {% block env %}
 export YACC=byacc
 {% endblock %}
+
+{% block bld_libs %}lib/c/mix.sh{% endblock %}

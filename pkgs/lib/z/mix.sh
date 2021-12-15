@@ -28,3 +28,5 @@ ln -s minigzip gzip
 {% block env %}
 export COFLAGS="--with-z=${out} \${COFLAGS}"
 {% endblock %}
+
+{% block lib_deps %}lib/c/mix.sh{% endblock %}

@@ -12,3 +12,5 @@ dev/lang/bison/3/7/mix.sh
 {% block install %}
 mkdir ${out}/bin && cp a.out ${out}/bin/nawk
 {% endblock %}
+
+{% block bld_libs %}lib/c/mix.sh{% endblock %}

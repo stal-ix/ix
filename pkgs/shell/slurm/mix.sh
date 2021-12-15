@@ -6,6 +6,7 @@ https://github.com/emersion/slurp/archive/refs/tags/v1.3.2.tar.gz
 {% endblock %}
 
 {% block bld_libs %}
+lib/c/mix.sh
 lib/wayland/mix.sh
 lib/cairo/mix.sh
 lib/xkbcommon/mix.sh

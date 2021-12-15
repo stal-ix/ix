@@ -6,6 +6,7 @@ b875ed196bc624c78e7b35967675a813
 {% endblock %}
 
 {% block bld_libs %}
+lib/c/mix.sh
 lib/fcft/mix.sh
 lib/linux/mix.sh
 lib/tllist/mix.sh

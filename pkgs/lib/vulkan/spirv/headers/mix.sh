@@ -12,3 +12,5 @@ dev/build/pkg-config/mix.sh
 {% block cmake_flags %}
 -DSPIRV_HEADERS_ENABLE_EXAMPLES=OFF
 {% endblock %}
+
+{% block lib_deps %}lib/c/mix.sh{% endblock %}

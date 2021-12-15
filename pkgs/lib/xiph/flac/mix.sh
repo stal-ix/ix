@@ -18,3 +18,5 @@ ln -s $(which xgettext) gettext
 {% block autoreconf %}
 dash autogen.sh
 {% endblock %}
+
+{% block lib_deps %}lib/c/mix.sh{% endblock %}

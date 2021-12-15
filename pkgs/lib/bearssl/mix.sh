@@ -18,3 +18,5 @@ cp -R inc ${out}/include
 {% block env %}
 export COFLAGS="--with-bearssl=${out} \${COFLAGS}"
 {% endblock %}
+
+{% block lib_deps %}lib/c/mix.sh{% endblock %}

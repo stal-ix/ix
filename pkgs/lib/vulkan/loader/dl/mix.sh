@@ -1,6 +1,7 @@
 {% extends '//mix/template/dlstubs.sh' %}
 
 {% block lib_deps %}
+lib/c/mix.sh
 lib/vulkan/loader/mix.sh
 {% endblock %}
 

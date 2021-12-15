@@ -6,6 +6,7 @@ e51cd40a897d9aa01af251d191637ca4
 {% endblock %}
 
 {% block bld_libs %}
+lib/c/mix.sh
 lib/intl/mix.sh
 lib/glib/mix.sh
 lib/iconv/mix.sh

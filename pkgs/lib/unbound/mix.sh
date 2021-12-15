@@ -6,6 +6,7 @@ https://github.com/NLnetLabs/unbound/archive/refs/tags/release-1.13.2.tar.gz
 {% endblock %}
 
 {% block lib_deps %}
+lib/c/mix.sh
 lib/expat/mix.sh
 lib/openssl/mix.sh
 {% endblock %}

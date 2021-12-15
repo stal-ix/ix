@@ -6,6 +6,7 @@ f75f9721b858f25acc5c7c917ab7ccba
 {% endblock %}
 
 {% block lib_deps %}
+lib/c/mix.sh
 lib/webp/mix.sh
 lib/jpeg/mix.sh
 lib/png/mix.sh

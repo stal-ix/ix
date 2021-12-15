@@ -12,6 +12,7 @@ lib/wayland/protocols/mix.sh
 {% endblock %}
 
 {% block lib_deps %}
+lib/c/mix.sh
 lib/xml2/mix.sh
 lib/wayland/mix.sh
 {% endblock %}

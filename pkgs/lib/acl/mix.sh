@@ -6,6 +6,7 @@ https://git.savannah.nongnu.org/cgit/acl.git/snapshot/acl-2.3.1.tar.gz
 {% endblock %}
 
 {% block lib_deps %}
+lib/c/mix.sh
 lib/attr/mix.sh
 {% endblock %}
 

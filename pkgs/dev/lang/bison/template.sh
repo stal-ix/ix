@@ -32,3 +32,5 @@ rm src/parse-gram.c src/parse-gram.h
 {% block bison_patch %}
 {% endblock %}
 {% endblock %}
+
+{% block bld_libs %}lib/c/mix.sh{% endblock %}

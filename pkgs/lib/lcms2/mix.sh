@@ -9,3 +9,5 @@ https://github.com/mm2/Little-CMS/archive/refs/tags/lcms2.12.tar.gz
 dev/build/auto/conf/2/69/mix.sh
 dev/build/auto/make/1/16/mix.sh
 {% endblock %}
+
+{% block lib_deps %}lib/c/mix.sh{% endblock %}

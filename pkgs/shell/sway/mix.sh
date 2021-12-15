@@ -6,6 +6,7 @@ b7a35c2ee8e6f14d1657d3b4c97b7977
 {% endblock %}
 
 {% block bld_libs %}
+lib/c/mix.sh
 # drivers go first
 lib/vulkan/driver/mix.sh
 lib/mesa/drivers/gl/zink/mix.sh

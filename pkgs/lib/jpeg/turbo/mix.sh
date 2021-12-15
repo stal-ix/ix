@@ -10,6 +10,7 @@ dev/lang/nasm/mix.sh
 {% endblock %}
 
 {% block lib_deps %}
+lib/c/mix.sh
 lib/z/mix.sh
 lib/png/mix.sh
 {% endblock %}

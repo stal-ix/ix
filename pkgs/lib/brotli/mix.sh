@@ -24,3 +24,5 @@ sed -e 's| SHARED | STATIC |' -i CMakeLists.txt
 {{super()}}
 rm ${out}/lib/lib*static*
 {% endblock %}
+
+{% block lib_deps %}lib/c/mix.sh{% endblock %}

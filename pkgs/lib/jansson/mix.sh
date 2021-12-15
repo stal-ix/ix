@@ -14,3 +14,5 @@ dev/build/auto/make/1/16/mix.sh
 {% block std_box %}
 box/boot/mix.sh
 {% endblock %}
+
+{% block lib_deps %}lib/c/mix.sh{% endblock %}

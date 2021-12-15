@@ -16,3 +16,5 @@ BUILD_SHARED=no
 {% block make_target %}
 allmost
 {% endblock %}
+
+{% block lib_deps %}lib/c/mix.sh{% endblock %}

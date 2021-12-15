@@ -1,5 +1,8 @@
 {% extends '//boot/7/lib/compiler_rt/mix.sh' %}
 
+{% block lib_deps %}
+{% endblock %}
+
 {% block bld_libs %}
 {% endblock %}
 

@@ -6,6 +6,7 @@ https://codeberg.org/dnkl/fcft/archive/2.5.0.tar.gz
 {% endblock %}
 
 {% block lib_deps %}
+lib/c/mix.sh
 lib/tllist/mix.sh
 lib/pixman/mix.sh
 lib/freetype/mix.sh

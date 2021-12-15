@@ -6,6 +6,7 @@ https://ftp.gnu.org/pub/gnu/gettext/gettext-0.21.tar.gz
 {% endblock %}
 
 {% block lib_deps %}
+lib/c/mix.sh
 lib/iconv/mix.sh
 {% endblock %}
 

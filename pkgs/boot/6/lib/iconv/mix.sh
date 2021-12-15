@@ -1,5 +1,8 @@
 {% extends '//lib/iconv/mix.sh' %}
 
+{% block lib_deps %}
+{% endblock %}
+
 {% block bld_libs %}
 {% endblock %}
 

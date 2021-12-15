@@ -1,6 +1,7 @@
 {% extends '//mix/template/c_std.sh' %}
 
 {% block lib_deps %}
+lib/c/mix.sh
 lib/wolfssl/mix.sh
 {% endblock %}
 

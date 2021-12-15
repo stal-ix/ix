@@ -9,3 +9,5 @@
 {% block std_box %}
 box/boot/mix.sh
 {% endblock %}
+
+{% block bld_libs %}lib/c/mix.sh{% endblock %}

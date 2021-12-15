@@ -6,6 +6,7 @@ https://gitlab.freedesktop.org/wlroots/wlroots/-/archive/0fcc842291d9d714e9c2108
 {% endblock %}
 
 {% block lib_deps %}
+lib/c/mix.sh
 {{super()}}
 lib/vulkan/loader/mix.sh
 lib/vulkan/headers/mix.sh

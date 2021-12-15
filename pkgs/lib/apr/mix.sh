@@ -18,3 +18,5 @@ done
 {% block env %}
 export COFLAGS="--with-apr=${out}/lib/bin/apr-1-config \${COFLAGS}"
 {% endblock %}
+
+{% block lib_deps %}lib/c/mix.sh{% endblock %}

@@ -37,3 +37,5 @@ install-static
 {% block env %}
 export COFLAGS="--with-curses=${out} --with-ncurses=${out} \${COFLAGS}"
 {% endblock %}
+
+{% block lib_deps %}lib/c/mix.sh{% endblock %}

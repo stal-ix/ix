@@ -6,6 +6,7 @@ db08bb384e81968957f997ec9808926e
 {% endblock %}
 
 {% block lib_deps %}
+lib/c/mix.sh
 lib/iconv/mix.sh
 {% endblock %}
 

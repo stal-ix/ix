@@ -11,6 +11,7 @@ dev/tool/gperf/mix.sh
 {% endblock %}
 
 {% block lib_deps %}
+lib/c/mix.sh
 lib/cap/mix.sh
 lib/udev/mix.sh
 {% endblock %}
