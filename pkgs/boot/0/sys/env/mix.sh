@@ -5,7 +5,7 @@ guess_flags() {
 >_.c
 >_.cpp
 
-if ${CC} -nostdinc -c _.c; then
+if ${CC} -nostdinc -fcolor-diagnostics -fdiagnostics-color -c _.c; then
     CFLAGS="-nostdinc ${CFLAGS}"
 fi
 
@@ -21,8 +21,6 @@ done
 }
 
 setup_tc_hard() {
-mkdir compiler && cd compiler
-
 C="${CPPFLAGS} ${CFLAGS} ${LDFLAGS} ${OPTFLAGS}"
 
 A="${CONLYFLAGS} ${C}"
@@ -31,52 +29,29 @@ B="${CXXFLAGS} ${C}"
 S="-Wl,--start-group"
 E="-Wl,--end-group"
 
-cat << EOF > clang
+cat << EOF > cc
 #!$(which dash)
 exec "$(which ${CC})" ${S} ${A} "\$@" ${A} ${E}
 EOF
 
-cat << EOF > clang++
+cat << EOF > c++
 #!$(which dash)
 exec "$(which ${CXX})" ${S} ${B} "\$@" ${B} ${E}
 EOF
 
-cat << EOF > clang-cpp
+cat << EOF > preproc
 #!$(which dash)
 exec "$(which ${CPP})" ${CPPFLAGS} "\$@" ${CPPFLAGS}
 EOF
 
-chmod +x clang clang++ clang-cpp
+chmod +x cc c++ preproc
 
-ln -s $(which ${AR}) llvm-ar
-ln -s $(which ${NM}) llvm-nm
-ln -s $(which ${RANLIB}) llvm-ranlib
-
-ln -s clang cc
-ln -s clang c99
-ln -s clang gcc
-
-ln -s clang++ g++
-ln -s clang++ c++
-
-ln -s clang-cpp cpp
-
-ln -s llvm-ar ar
-ln -s llvm-nm nm
-ln -s llvm-ranlib ranlib
-
-export LDFLAGS=
-export CFLAGS=
-export CPPFLAGS=
-export CXXFLAGS=
-export CONLYFLAGS=
-
-export PATH="${PWD}:${PATH}"
-
-cd ..
+ln -s $(which ${AR}) ar
+ln -s $(which ${NM}) nm
+ln -s $(which ${RANLIB}) ranlib
 }
 
-setup_toolchain_env() {
+setup_compiler() {
 if command -v gcc; then
     export CC=gcc
 fi
@@ -142,7 +117,7 @@ fi
 export LD=${CC}
 }
 
-setup_toolchain() {
-    setup_toolchain_env
+setup_ar() {
+    >qw
 }
 {% endblock %}

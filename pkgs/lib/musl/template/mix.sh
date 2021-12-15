@@ -36,9 +36,7 @@ export CPPFLAGS="-isystem ${out}/include \${CPPFLAGS}"
 export LDFLAGS="-static \${LDFLAGS}"
 {% endblock %}
 
-{% block test %}
-OLDCC=$(which ${CC})
-
+{% block test_lib %}
 . ${out}/env
 
 cat << EOF > main.c
@@ -51,9 +49,9 @@ int main() {
 }
 EOF
 
-env
+${CC} -o main main.c ${CPPFLAGS} ${CFLAGS} ${LDFLAGS}
+{% endblock %}
 
-${OLDCC} -o main main.c ${CPPFLAGS} ${CFLAGS} ${LDFLAGS}
-
+{% block test_execute %}
 ./main
 {% endblock %}

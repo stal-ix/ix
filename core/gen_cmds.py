@@ -73,6 +73,10 @@ class ScriptBuilder:
         }
 
 
+def rev_dirs(l):
+    return ':'.join(x.out_dir for x in reversed(l))
+
+
 class CmdBuild:
     def __init__(self, package):
         self.package = package
@@ -88,28 +92,29 @@ class CmdBuild:
     def iter_env(self, src_dir):
         path = ['/nowhere']
 
-        lib = []
-        bin = []
+        h_lib = []
+        t_lib = []
+        h_bin = []
 
-        for p in self.package.iter_all_build_depends():
-            if p.flags['kind'] == 'bin':
-                bin.append(p)
+        for pkg in self.package.iter_build_depends():
+            p = pkg['p']
+            k = pkg['kind']
+
+            if 'lib' in k:
+                if 'target' in k:
+                    t_lib.append(p)
+                else:
+                    h_lib.append(p)
             else:
-                lib.append(p)
+                h_bin.append(p)
 
             yield p.pkg_name.replace('-', '_').replace('L_lib_', 'lib_'), p.out_dir
 
-        bp = ':'.join(p.out_dir + '/bin' for p in bin)
-        lp = ':'.join(p.out_dir + '/lib' for p in lib)
-        ip = ':'.join(p.out_dir + '/include' for p in lib)
-        ep = ':'.join(p.out_dir + '/env' for p in itertools.chain(lib, reversed(bin)))
+        yield 'MIX_B_DIR', rev_dirs(h_bin)
+        yield 'MIX_H_DIR', rev_dirs(h_lib)
+        yield 'MIX_T_DIR', rev_dirs(t_lib)
 
-        yield 'MIX_LIBPATH', bp
-        yield 'MIX_LIBPATH', lp
-        yield 'MIX_INCPATH', ip
-        yield 'MIX_ENVPATH', ep
-
-        yield 'PATH', bp
+        yield 'PATH', ':'.join(p.out_dir + '/bin' for p in h_bin)
 
         if src_dir:
             yield 'src', src_dir
@@ -200,7 +205,7 @@ def iter_build_commands(self):
         src_dir = None
 
     yield {
-        'in_dir': [x.out_dir for x in self.iter_all_build_depends()] + extra,
+        'in_dir': self.iter_build_dirs() + extra,
         'out_dir': [out_dir],
         'cmd': [CmdBuild(self).script(sb, src_dir)],
         'cache': True,

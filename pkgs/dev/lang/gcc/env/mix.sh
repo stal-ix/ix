@@ -1,16 +1,9 @@
 {% extends '//mix/template/py.py' %}
 
 {% block env %}
-setup_toolchain_env() {
-    export CC=gcc
-    export CXX=g++
-    export AR=ar
-    export NM=nm
-    export RANLIB=ranlib
-}
-
-setup_toolchain() {
-setup_toolchain_env
+setup_compiler() {
+export CC=gcc
+export CXX=g++
 
 C="-fdiagnostics-color -nostdinc -nostdinc++ -nostdlib ${CPPFLAGS} ${CFLAGS} ${LDFLAGS} ${OPTFLAGS}"
 
@@ -37,10 +30,6 @@ EOF
 
 chmod +x cc c++ preproc
 
-ln -s $(which ${AR}) ar
-ln -s $(which ${NM}) nm
-ln -s $(which ${RANLIB}) ranlib
-
 ln -s cc gcc
 ln -s cc c99
 ln -s cc clang
@@ -50,11 +39,15 @@ ln -s c++ clang++
 
 ln -s preproc cpp
 ln -s preproc clang-cpp
+}
 
-export LDFLAGS=
-export CFLAGS=
-export CPPFLAGS=
-export CXXFLAGS=
-export CONLYFLAGS=
+setup_ar() {
+    export AR=ar
+    export NM=nm
+    export RANLIB=ranlib
+
+    ln -s $(which ${AR}) llvm-ar
+    ln -s $(which ${NM}) llvm-nm
+    ln -s $(which ${RANLIB}) llvm-ranlib
 }
 {% endblock %}

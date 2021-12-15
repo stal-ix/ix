@@ -21,7 +21,7 @@ ${untar} ${src}/bmake* && cd bmake*
 {% endblock %}
 
 {% block step_setup %}
-setup_toolchain_env
+{{self.setup_compiler()}}
 
 {% if target.os == 'linux' %}
 export CPPFLAGS="-Imissing -Dstrtoul=bmake_strtoul ${CPPFLAGS}"

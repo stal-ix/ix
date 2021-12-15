@@ -15,7 +15,8 @@ boot/0/env/mix.sh
 {% block script %}
 cd ${out} && ${untar} ${src}/musl* && cd musl*
 
-setup_toolchain_env
+setup_compiler
+setup_ar
 
 (
     (while read l; do printf "$l\n"; done) << EOF

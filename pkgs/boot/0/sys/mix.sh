@@ -73,5 +73,5 @@ if sh != 'dash':
     sl(sh, 'dash')
 
 with open(os.path.join(out, 'env'), 'w') as f:
-    pass
+    f.write('export PATH=_/bin:${PATH}'.replace('_', out))
 {% endblock %}

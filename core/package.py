@@ -42,12 +42,6 @@ def make_selector(v, flags):
     return v
 
 
-def buildable(l):
-    for x in l:
-        if x.buildable():
-            yield x
-
-
 def visit_lst(lst, f):
     s = set()
     r = []
@@ -65,6 +59,10 @@ def visit_lst(lst, f):
         visit(l)
 
     return r
+
+
+def add_kind(k, l):
+    return ({'kind': k, 'p': x} for x in l)
 
 
 class Package:
@@ -95,7 +93,7 @@ class Package:
             self.descr['bld']['script'],
             self.pkg_name,
             self.config.store_dir,
-            [x.out_dir for x in self.iter_all_build_depends()],
+            self.iter_build_dirs(),
         ])
 
         self.out_dir = self.config.store_dir + '/' + self.uid + '-' + self.pkg_name
@@ -124,14 +122,17 @@ class Package:
     def host(self):
         return self.config.platform['host']
 
-    def lib_flags(self):
+    def host_lib_flags(self):
+        return {'target': self.host, 'kind': 'lib'}
+
+    def target_lib_flags(self):
         return cu.dict_dict_update(self.flags, {'kind': 'lib'})
 
     def bin_flags(self):
         return {'target': self.host, 'kind': 'bin'}
 
     def load_package(self, n, flags):
-        print(f'{self.name} -> {n}')
+        # print(f'{self.name} -> {n}')
 
         try:
             n['name']
@@ -149,11 +150,17 @@ class Package:
     def load_packages(self, l, flags):
         return (self.load_package(x, flags) for x in l)
 
-    def bld_lib_deps(self):
-        yield from self.descr['bld']['libs']
+    def bld_lib_deps(self, k):
+        yield from self.descr['bld'][k]
 
         for p in self.bld_bin_closure():
             yield from p.descr['ind']['deps']
+
+    def bld_host_lib_deps(self):
+        return self.bld_lib_deps('host_libs')
+
+    def bld_target_lib_deps(self):
+        return self.bld_lib_deps('target_libs')
 
     def visit(self, lst, flags, childf):
         return visit_lst(self.load_packages(lst, flags), childf)
@@ -164,14 +171,31 @@ class Package:
 
     @cu.cached_method
     def lib_closure(self):
-        return self.visit(self.descr['lib']['deps'], self.lib_flags(), lambda x: x.lib_closure())
+        return self.visit(self.descr['lib']['deps'], self.target_lib_flags(), lambda x: x.lib_closure())
 
     @cu.cached_method
+    def bld_host_lib_closure(self):
+        # TODO check flags
+        return self.visit(self.bld_host_lib_deps(), self.host_lib_flags(), lambda x: x.lib_closure())
+
+    @cu.cached_method
+    def bld_target_lib_closure(self):
+        return self.visit(self.bld_target_lib_deps(), self.target_lib_flags(), lambda x: x.lib_closure())
+
     def bld_lib_closure(self):
-        return self.visit(self.bld_lib_deps(), self.lib_flags(), lambda x: x.lib_closure())
+        return itertools.chain(self.bld_target_lib_closure(), self.bld_host_lib_closure())
 
     def iter_all_build_depends(self):
-        return buildable(itertools.chain(self.bld_bin_closure(), self.run_data(), self.bld_lib_closure()))
+        yield from add_kind('bin', self.bld_bin_closure())
+        yield from add_kind('data', self.run_data())
+        yield from add_kind('target lib', self.bld_target_lib_closure())
+        yield from add_kind('host lib', self.bld_host_lib_closure())
+
+    def iter_build_depends(self):
+        return filter(lambda x: x['p'].buildable(), self.iter_all_build_depends())
+
+    def iter_build_dirs(self):
+        return list(x['p'].out_dir for x in self.iter_build_depends())
 
     @cu.cached_method
     def run_deps(self):
@@ -193,7 +217,7 @@ class Package:
         return visit_lst(self.all_run_deps(), lambda x: x.run_closure())
 
     def iter_all_runtime_depends(self):
-        return buildable(self.run_closure())
+        return filter(lambda x: x.buildable(), self.run_closure())
 
     def install(self, to):
         fr = self.out_dir

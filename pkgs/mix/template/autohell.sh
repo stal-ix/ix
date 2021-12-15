@@ -47,7 +47,7 @@ cat configure \
 
 {% block configure %}
 {% block check_tools %}
-{% if not mix.name.startswith('boot/') %}
+{% if not name.startswith('boot/') %}
 which pkg-config
 {% endif %}
 {% endblock %}

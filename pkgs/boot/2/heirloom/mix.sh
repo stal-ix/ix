@@ -16,7 +16,7 @@ cd *
 {% endblock %}
 
 {% block step_setup %}
-setup_toolchain_env
+{{self.setup_compiler()}}
 
 export PATH="${out}/bin:${PATH}"
 export SHELL="$0"

@@ -15,7 +15,8 @@ boot/1/env/mix.sh
 {% block script %}
 ${unzip} ${src}/*.zip && cd shutil*
 
-setup_toolchain_env
+setup_compiler
+setup_ar
 
 . ./build.sh
 

@@ -19,8 +19,11 @@ def iter_lines():
     yield 'set -e'
     yield 'set -x'
 
-    for p in os.environ['MIX_ENVPATH'].split(':'):
-        yield '. ' + os.path.normpath(os.path.join(p, '..', 'env'))
+    for p in os.environ['MIX_B_DIR'].split(':'):
+        yield '. ' + os.path.join(p, 'env')
+
+    for p in os.environ['MIX_T_DIR'].split(':'):
+        yield '. ' + os.path.join(p, 'env')
 
     yield EXTR
     yield DATA
@@ -33,12 +36,15 @@ if DATA:
 {% endblock %}
 
 env_data = r"""
+export PATH="{outdir}/bin:${PATH}"
 {% block env %}
 {% endblock %}
 """
 
-with open(os.environ['out'] + '/env', 'a') as f:
-    f.write(env_data)
+outdir = os.environ['out']
+
+with open(outdir + '/env', 'a') as f:
+    f.write(env_data.replace('{outdir}', outdir))
 {% endblock %}
 
 {% block script_kind %}

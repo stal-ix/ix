@@ -22,6 +22,10 @@ EOF
         echo 'export PATH="'${out}'/lib/bin:${PATH}"'
     fi
 
+    if test -d ${out}/bin; then
+        echo 'export PATH="'${out}'/bin:${PATH}"'
+    fi
+
     if test -d ${out}/share/aclocal; then
         echo 'export ACLOCAL_PATH="'${out}'/share/aclocal:${ACLOCAL_PATH}"'
     fi

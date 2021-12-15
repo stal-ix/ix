@@ -5,6 +5,23 @@ dev/build/cmake/mix.sh
 {{super()}}
 {% endblock %}
 
+{% block functions %}
+{{super()}}
+add_suffix() (
+    set -eu; IFS=':'; for x in ${1}; do
+        echo -n "${x}/${2};"
+    done
+)
+{% endblock %}
+
+{% block step_setup %}
+{{super()}}
+
+export SIP=$(add_suffix ${MIX_T_DIR} include)
+export SLP=$(add_suffix ${MIX_T_DIR} lib)
+export SPP=$(add_suffix ${MIX_B_DIR} bin)
+{% endblock %}
+
 {% block configure %}
 {% set command_args %}
 {% block cmake_binary %}
@@ -21,16 +38,20 @@ ${CMFLAGS}
 -DCMAKE_INSTALL_PREFIX="${out}"
 -DCMAKE_INSTALL_LIBDIR="${out}/lib"
 -DCMAKE_INSTALL_LIBEXECDIR="${out}/bin/exec"
--DCMAKE_C_COMPILER="$(which clang)"
--DCMAKE_CXX_COMPILER="$(which clang++)"
--DCMAKE_AR="$(which ar)"
--DCMAKE_RANLIB="$(which ranlib)"
+
+-DCMAKE_C_COMPILER="$(which ${CC})"
+-DCMAKE_CXX_COMPILER="$(which ${CXX})"
+-DCMAKE_AR="$(which ${AR})"
+-DCMAKE_NM="$(which ${NM})"
+-DCMAKE_RANLIB="$(which ${RANLIB})"
+
 -DCMAKE_BUILD_TYPE=Release
+
 -DBUILD_SHARED_LIBS=OFF
 
--DCMAKE_SYSTEM_INCLUDE_PATH="$(echo ${MIX_INCPATH} | tr ':' ';')"
--DCMAKE_SYSTEM_LIBRARY_PATH="$(echo ${MIX_LIBPATH} | tr ':' ';')"
--DCMAKE_SYSTEM_PROGRAM_PATH="$(echo ${PATH} | tr ':' ';')"
+-DCMAKE_SYSTEM_INCLUDE_PATH="${SIP}"
+-DCMAKE_SYSTEM_LIBRARY_PATH="${SLP}"
+-DCMAKE_SYSTEM_PROGRAM_PATH="${SPP}"
 
 {% block cmake_flags %}
 {% endblock %}

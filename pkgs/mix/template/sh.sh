@@ -2,10 +2,19 @@
 
 {% block script_body %}
 {% block prologue %}
+source_env() {
+    OFS=${IFS}; IFS=':'; for x in ${1}; do
+        . "${x}/env"
+    done; IFS=${OFS}
+}
+
 set -e
 set -u
 
+cd /
+
 # init
+export PATH=
 export CMPATH=
 export CFLAGS=
 export COFLAGS=
@@ -19,6 +28,8 @@ export ACLOCAL_PATH=
 export PKG_CONFIG_PATH=
 export PYTHONDONTWRITEBYTECODE=1
 
+source_env "${MIX_B_DIR}"
+
 rm -rf ${out}
 mkdir -p ${out}
 
@@ -29,13 +40,6 @@ cd ${tmp} && mkdir tmp
 
 export TMPDIR=${PWD}/tmp
 
-OFS=${IFS}
-
-IFS=":"; for p in ${MIX_ENVPATH}; do
-    . ${p}
-done
-
-IFS=${OFS}
 {% endblock %}
 
 (

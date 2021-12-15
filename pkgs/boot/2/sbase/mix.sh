@@ -4,7 +4,8 @@
 bmake
 {% endblock %}
 
-{% block make_no_thrs %}{% endblock %}
+{% block make_no_thrs %}
+{% endblock %}
 
 {% block bld_libs %}
 {% endblock %}
@@ -13,4 +14,9 @@ bmake
 boot/2/heirloom/mix.sh
 boot/2/bmake/mix.sh
 boot/1/env/mix.sh
+{% endblock %}
+
+{% block prologue %}
+set -x
+{{super()}}
 {% endblock %}

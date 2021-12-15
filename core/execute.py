@@ -126,6 +126,8 @@ class Executor:
                 for x in iter_out(n['n']):
                     print(f'{x} complete')
 
+                assert not n['v']
+
                 n['v'] = True
 
     async def visit_node_impl(self, n):

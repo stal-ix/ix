@@ -11,6 +11,10 @@ def multi_update(f, *args):
     return f
 
 
+def calc_id(d):
+    return cu.struct_hash(d)
+
+
 def add_gnu(d):
     if 'gnu' not in d:
         d['gnu'] = {}
@@ -48,6 +52,9 @@ def enrich(d):
         }[d['gnu_arch']]
 
     add_gnu(d)
+
+    if 'id' not in d:
+        d['id'] = calc_id(d)
 
     return d
 

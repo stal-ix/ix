@@ -91,7 +91,7 @@ class RenderContext:
         tmpl = pkg.manager.env.get_template(path)
 
         try:
-            return self.strip_template(tmpl.render(mix=self, host=pkg.host, **pkg.flags))
+            return self.strip_template(tmpl.render(mix=self, host=pkg.host, name=self.name, **pkg.flags))
         except Exception as e:
             raise ce.Error(f'can not render {path}', exception=e)
 
