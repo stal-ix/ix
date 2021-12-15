@@ -13,6 +13,7 @@ lib/openssl/mix.sh
 {% endblock %}
 
 {% block bld_libs %}
+lib/c/mix.sh
 lib/c++/mix.sh
 lib/xml2/mix.sh
 lib/jansson/mix.sh

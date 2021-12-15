@@ -4,9 +4,6 @@
 box/boot/mix.sh
 {% endblock %}
 
-{% block c_runtime %}
-{% endblock %}
-
 {% block setup %}
 export CPPFLAGS="-D__libc_realloc=realloc -D__libc_free=free -D__libc_malloc=malloc -D__libc_calloc=calloc ${CPPFLAGS}"
 {% endblock %}

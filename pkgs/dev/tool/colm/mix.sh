@@ -6,6 +6,7 @@ https://github.com/adrian-thurston/colm/archive/refs/tags/0.14.7.tar.gz
 {% endblock %}
 
 {% block bld_libs %}
+lib/c/mix.sh
 lib/c++/mix.sh
 {% endblock %}
 

@@ -6,6 +6,7 @@ https://github.com/mobile-shell/mosh/archive/refs/tags/mosh-1.3.2.tar.gz
 {% endblock %}
 
 {% block bld_libs %}
+lib/c/mix.sh
 lib/c++/mix.sh
 lib/protobuf/mix.sh
 lib/curses/mix.sh

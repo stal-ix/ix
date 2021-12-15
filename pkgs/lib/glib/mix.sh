@@ -18,6 +18,7 @@ lib/darwin/framework/Foundation/mix.sh
 {% endblock %}
 
 {% block bld_libs %}
+lib/c/mix.sh
 lib/c++/mix.sh
 {% endblock %}
 

@@ -2,7 +2,19 @@ import os
 
 
 def fix(d, n):
-    return d.replace('%}lib', '%}\nlib').replace('mix.sh{%', 'mix.sh\n{%')
+    if '//lib/c++' in d:
+        return
+
+    if '/boot/' in n:
+        return
+
+    if 'lib/c/mix.sh' in d:
+        return
+
+    if '/mix/' in n:
+        return
+
+    return d.replace('lib/c++/mix.sh', 'lib/c/mix.sh\nlib/c++/mix.sh')
 
 
 for a, b, c in os.walk('.'):
@@ -15,7 +27,7 @@ for a, b, c in os.walk('.'):
 
             dd = fix(d, p)
 
-            if d != dd:
+            if dd and d != dd:
                 print(f'fix {p}')
 
                 with open(p, 'w') as f:

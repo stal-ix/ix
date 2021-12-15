@@ -1,6 +1,7 @@
 {% extends '//lib/llvm/t/mix.sh' %}
 
 {% block lib_deps %}
+lib/c/mix.sh
 lib/c++/mix.sh
 {% endblock %}
 

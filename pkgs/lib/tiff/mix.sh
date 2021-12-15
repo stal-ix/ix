@@ -11,5 +11,6 @@ lib/jpeg/mix.sh
 lib/xz/mix.sh
 lib/zstd/mix.sh
 lib/webp/mix.sh
+lib/c/mix.sh
 lib/c++/mix.sh
 {% endblock %}

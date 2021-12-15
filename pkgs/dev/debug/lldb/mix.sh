@@ -11,6 +11,7 @@ lib/linux/mix.sh
 {% if target.os == 'darwin' %}
 lib/darwin/framework/CoreFoundation/mix.sh
 {% endif %}
+lib/c/mix.sh
 lib/c++/mix.sh
 lib/curses/mix.sh
 lib/edit/mix.sh

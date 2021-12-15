@@ -15,6 +15,7 @@ lib/linux/mix.sh
 lib/z/mix.sh
 lib/xz/mix.sh
 lib/uv/mix.sh
+lib/c/mix.sh
 lib/c++/mix.sh
 lib/curl/mix.sh
 lib/bzip2/mix.sh

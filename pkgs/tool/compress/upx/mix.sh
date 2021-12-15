@@ -7,6 +7,7 @@ bf5564f33fe9062bc48b53abd4b34223
 
 {% block bld_libs  %}
 lib/z/mix.sh
+lib/c/mix.sh
 lib/c++/mix.sh
 lib/ucl/mix.sh
 {% endblock %}

@@ -6,6 +6,7 @@ https://github.com/KhronosGroup/Vulkan-ValidationLayers/archive/3dfeacfe0ad07415
 {% endblock %}
 
 {% block lib_deps %}
+lib/c/mix.sh
 lib/c++/mix.sh
 lib/wayland/mix.sh
 lib/robin/hood/mix.sh

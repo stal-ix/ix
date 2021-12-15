@@ -9,9 +9,6 @@ a06e57e9ae10a346ab8a1097c0838fef
 lib/c/naked/mix.sh
 {% endblock %}
 
-{% block c_runtime %}
-{% endblock %}
-
 {% block std_box %}
 box/boot/mix.sh
 {% endblock %}

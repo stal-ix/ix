@@ -15,6 +15,7 @@ lib/expat/mix.sh
 lib/curses/mix.sh
 lib/iconv/mix.sh
 lib/readline/mix.sh
+lib/c/mix.sh
 lib/c++/mix.sh
 lib/z/mix.sh
 lib/xz/mix.sh

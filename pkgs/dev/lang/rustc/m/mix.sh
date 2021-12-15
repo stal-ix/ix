@@ -11,6 +11,7 @@ https://static.rust-lang.org/dist/rustc-1.19.0-src.tar.gz
 
 {% block bld_libs %}
 lib/z/mix.sh
+lib/c/mix.sh
 lib/c++/mix.sh
 lib/curl/mix.sh
 lib/iconv/mix.sh

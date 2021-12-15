@@ -6,5 +6,6 @@ http://www.colm.net/files/ragel/ragel-6.10.tar.gz
 {% endblock %}
 
 {% block bld_libs %}
+lib/c/mix.sh
 lib/c++/mix.sh
 {% endblock %}

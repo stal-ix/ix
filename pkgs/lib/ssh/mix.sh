@@ -7,6 +7,7 @@ https://www.libssh.org/files/0.9/libssh-0.9.5.tar.xz
 
 {% block lib_deps %}
 lib/z/mix.sh
+lib/c/mix.sh
 lib/c++/mix.sh
 lib/openssl/mix.sh
 {% endblock %}

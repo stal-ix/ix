@@ -6,6 +6,7 @@ e340f1b247ff512119a2db98c1538dc1
 {% endblock %}
 
 {% block lib_deps %}
+lib/c/mix.sh
 lib/c++/mix.sh
 {% endblock %}
 

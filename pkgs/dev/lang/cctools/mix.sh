@@ -6,6 +6,7 @@ https://github.com/tpoechtrager/cctools-port/archive/236a426c1205a3bfcf0dbb2e2fa
 {% endblock %}
 
 {% block bld_libs %}
+lib/c/mix.sh
 lib/c++/mix.sh
 lib/objc/mix.sh
 {% if target.os == 'linux' %}

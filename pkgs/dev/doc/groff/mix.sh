@@ -6,6 +6,7 @@ https://ftp.gnu.org/gnu/groff/groff-1.22.4.tar.gz
 {% endblock %}
 
 {% block bld_libs %}
+lib/c/mix.sh
 lib/c++/mix.sh
 lib/uchardet/mix.sh
 {% endblock %}

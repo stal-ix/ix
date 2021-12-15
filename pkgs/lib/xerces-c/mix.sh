@@ -6,6 +6,7 @@ a5fa4d920fce31c9ca3bfef241644494
 {% endblock %}
 
 {% block lib_deps %}
+lib/c/mix.sh
 lib/c++/mix.sh
 lib/curl/mix.sh
 lib/iconv/mix.sh

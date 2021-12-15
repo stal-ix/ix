@@ -7,6 +7,7 @@ http://mirror.koddos.net/gcc/releases/gcc-11.2.0/gcc-11.2.0.tar.xz
 
 {% block bld_libs %}
 lib/z/mix.sh
+lib/c/mix.sh
 lib/c++/mix.sh
 lib/isl/mix.sh
 lib/gmp/mix.sh

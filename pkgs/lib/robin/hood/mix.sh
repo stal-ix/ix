@@ -6,6 +6,7 @@ https://github.com/martinus/robin-hood-hashing/archive/refs/tags/3.11.3.tar.gz
 {% endblock %}
 
 {% block lib_deps %}
+lib/c/mix.sh
 lib/c++/mix.sh
 {% endblock %}
 

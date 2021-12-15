@@ -6,6 +6,7 @@ https://github.com/magiblot/tvision/archive/c36e190174463ece471bdd1c06959fb8dc34
 {% endblock %}
 
 {% block lib_deps %}
+lib/c/mix.sh
 lib/c++/mix.sh
 {% if target.os == 'linux' %}
 lib/linux/mix.sh

@@ -6,6 +6,7 @@ https://github.com/harfbuzz/harfbuzz/archive/refs/tags/3.1.1.tar.gz
 {% endblock %}
 
 {% block lib_deps %}
+lib/c/mix.sh
 lib/c++/mix.sh
 lib/glib/mix.sh
 lib/freetype/mix.sh

@@ -15,9 +15,6 @@ dev/lang/gcc/11/mix.sh
 dev/lang/binutils/mix.sh
 {% endblock %}
 
-{% block c_runtime %}
-{% endblock %}
-
 {% block configure %}
 cat << EOF >> extra/Configs/Config.x86_64
 {% include 'cfg' %}

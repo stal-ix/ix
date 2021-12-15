@@ -6,6 +6,7 @@ https://github.com/ninja-build/ninja/archive/refs/tags/v1.10.2.tar.gz
 {% endblock %}
 
 {% block bld_libs %}
+lib/c/mix.sh
 lib/c++/mix.sh
 {% endblock %}
 

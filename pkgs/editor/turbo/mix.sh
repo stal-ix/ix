@@ -6,6 +6,7 @@ https://github.com/magiblot/turbo/archive/971aad35d4b705228caa8852114438ee71d488
 {% endblock %}
 
 {% block bld_libs %}
+lib/c/mix.sh
 lib/c++/mix.sh
 lib/fmt/mix.sh
 lib/magic/mix.sh

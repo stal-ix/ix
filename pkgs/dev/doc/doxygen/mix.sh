@@ -6,6 +6,7 @@ efd079fb7955d4f73da791f758c1a93d
 {% endblock %}
 
 {% block bld_libs %}
+lib/c/mix.sh
 lib/c++/mix.sh
 {% endblock %}
 

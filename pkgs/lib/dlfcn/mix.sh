@@ -9,9 +9,6 @@ e72db8e280431a37e7c09296308323b8
 lib/c++/mix.sh
 {% endblock %}
 
-{% block c_runtime %}
-{% endblock %}
-
 {% block std_box %}
 box/boot/mix.sh
 {% endblock %}

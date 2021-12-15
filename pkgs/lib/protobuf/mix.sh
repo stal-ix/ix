@@ -7,6 +7,7 @@ e5cb6707320a077f0618b669d1856bc4
 
 {% block lib_deps %}
 lib/z/mix.sh
+lib/c/mix.sh
 lib/c++/mix.sh
 {% endblock %}
 

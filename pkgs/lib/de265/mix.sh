@@ -6,6 +6,7 @@ https://github.com/strukturag/libde265/archive/refs/tags/v1.0.8.tar.gz
 {% endblock %}
 
 {% block lib_deps %}
+lib/c/mix.sh
 lib/c++/mix.sh
 {% endblock %}
 
