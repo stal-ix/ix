@@ -19,4 +19,6 @@ export COFLAGS="--with-ares=${out} --enable-ares=${out} \${COFLAGS}"
 export LDFLAGS="-lresolv \${LDFLAGS}"
 {% endblock %}
 
-{% block lib_deps %}lib/c/mix.sh{% endblock %}
+{% block lib_deps %}
+lib/c/mix.sh
+{% endblock %}

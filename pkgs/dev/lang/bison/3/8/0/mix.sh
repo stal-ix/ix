@@ -8,4 +8,6 @@ dev/lang/bison/3/7/mix.sh
 sed -e 's|%header|%defines|' -i src/parse-gram.y
 {% endblock %}
 
-{% block bld_libs %}lib/c/mix.sh{% endblock %}
+{% block bld_libs %}
+lib/c/mix.sh
+{% endblock %}

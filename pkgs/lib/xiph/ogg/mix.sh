@@ -14,4 +14,6 @@ dev/build/auto/make/1/16/mix.sh
 dash autogen.sh
 {% endblock %}
 
-{% block lib_deps %}lib/c/mix.sh{% endblock %}
+{% block lib_deps %}
+lib/c/mix.sh
+{% endblock %}

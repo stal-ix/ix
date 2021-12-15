@@ -21,4 +21,6 @@ make bin/base64
 mkdir ${out}/bin && cp bin/base64 ${out}/bin
 {% endblock %}
 
-{% block bld_libs %}lib/c/mix.sh{% endblock %}
+{% block bld_libs %}
+lib/c/mix.sh
+{% endblock %}

@@ -10,4 +10,6 @@ https://downloads.sourceforge.net/mad/libmad-0.15.1b.tar.gz
 #dev/build/auto/make/1/16/mix.sh
 {% endblock %}
 
-{% block lib_deps %}lib/c/mix.sh{% endblock %}
+{% block lib_deps %}
+lib/c/mix.sh
+{% endblock %}

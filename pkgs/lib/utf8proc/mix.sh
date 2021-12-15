@@ -21,4 +21,6 @@ rm ${out}/lib/lib*
 cp libutf8proc.a ${out}/lib/
 {% endblock %}
 
-{% block lib_deps %}lib/c/mix.sh{% endblock %}
+{% block lib_deps %}
+lib/c/mix.sh
+{% endblock %}

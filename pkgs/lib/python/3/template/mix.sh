@@ -77,7 +77,8 @@ EOF
 {% endblock %}
 
 {% if kind == 'lib' %}
-{% set platlibdir %}lib{% endset %}
+{% set platlibdir %}
+lib{% endset %}
 {% else %}
 {% set platlibdir %}share{% endset %}
 {% endif %}

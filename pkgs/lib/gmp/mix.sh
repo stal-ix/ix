@@ -13,4 +13,6 @@ dev/lang/m4/mix.sh
 export COFLAGS="--with-gmp=${out} --with-libgmp-prefix=${out} \${COFLAGS}"
 {% endblock %}
 
-{% block lib_deps %}lib/c/mix.sh{% endblock %}
+{% block lib_deps %}
+lib/c/mix.sh
+{% endblock %}

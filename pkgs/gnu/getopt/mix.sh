@@ -11,4 +11,6 @@ NOT_UTIL_LINUX=1
 WITHOUT_GETTEXT=1
 {% endblock %}
 
-{% block bld_libs %}lib/c/mix.sh{% endblock %}
+{% block bld_libs %}
+lib/c/mix.sh
+{% endblock %}

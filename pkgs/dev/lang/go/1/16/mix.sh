@@ -32,4 +32,6 @@ sed -e 's/TestCurrent/testCurrent/' -i os/user/user_test.go
 sed -e 's/TestLookup/testLookup/' -i os/user/user_test.go
 {% endblock %}
 
-{% block bld_libs %}lib/c/mix.sh{% endblock %}
+{% block bld_libs %}
+lib/c/mix.sh
+{% endblock %}

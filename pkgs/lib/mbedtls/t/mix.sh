@@ -16,4 +16,6 @@ cat library/CMakeLists.txt | grep -v no_warning_for_no_symbols > _ && mv _ libra
 export COFLAGS="--with-mbedtls=${out} --with-crypto-library=mbedtls \${COFLAGS}"
 {% endblock %}
 
-{% block lib_deps %}lib/c/mix.sh{% endblock %}
+{% block lib_deps %}
+lib/c/mix.sh
+{% endblock %}

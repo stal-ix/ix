@@ -17,4 +17,6 @@ dev/doc/texinfo/mix.sh
 patch -p0 < ${src}/secure_snprintf.patch
 {% endblock %}
 
-{% block bld_libs %}lib/c/mix.sh{% endblock %}
+{% block bld_libs %}
+lib/c/mix.sh
+{% endblock %}

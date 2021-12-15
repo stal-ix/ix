@@ -13,4 +13,6 @@ export CGO_ENABLED=0
 cat run.bash | grep -v 'time go test' > _ && mv _ run.bash
 {% endblock %}
 
-{% block bld_libs %}lib/c/mix.sh{% endblock %}
+{% block bld_libs %}
+lib/c/mix.sh
+{% endblock %}

@@ -13,4 +13,6 @@ dev/build/pkg-config/mix.sh
 -DSPIRV_HEADERS_ENABLE_EXAMPLES=OFF
 {% endblock %}
 
-{% block lib_deps %}lib/c/mix.sh{% endblock %}
+{% block lib_deps %}
+lib/c/mix.sh
+{% endblock %}

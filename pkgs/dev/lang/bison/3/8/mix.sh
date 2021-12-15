@@ -9,4 +9,6 @@ https://ftp.gnu.org/gnu/bison/bison-3.8.2.tar.lz
 dev/lang/bison/3/8/0/mix.sh
 {% endblock %}
 
-{% block bld_libs %}lib/c/mix.sh{% endblock %}
+{% block bld_libs %}
+lib/c/mix.sh
+{% endblock %}

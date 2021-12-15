@@ -40,4 +40,6 @@ sed -e 's| SHARED | STATIC |' -i source/CMakeLists.txt
 cd ${out}/lib && rm libSPIRV-Tools-shared.a && ln -s libSPIRV-Tools.a libSPIRV-Tools-shared.a
 {% endblock %}
 
-{% block lib_deps %}lib/c/mix.sh{% endblock %}
+{% block lib_deps %}
+lib/c/mix.sh
+{% endblock %}

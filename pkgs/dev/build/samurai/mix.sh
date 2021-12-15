@@ -18,4 +18,6 @@ export CPPFLAGS="-Dwarn=samu_warn ${CPPFLAGS}"
 cd ${out}/bin && ln -s samu ninja
 {% endblock %}
 
-{% block bld_libs %}lib/c/mix.sh{% endblock %}
+{% block bld_libs %}
+lib/c/mix.sh
+{% endblock %}

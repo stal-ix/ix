@@ -29,4 +29,6 @@ export PATH="${out}/bin:${PATH}"
 rst2html.py --help
 {% endblock %}
 
-{% block bld_libs %}lib/c/mix.sh{% endblock %}
+{% block bld_libs %}
+lib/c/mix.sh
+{% endblock %}

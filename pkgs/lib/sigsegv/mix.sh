@@ -9,4 +9,6 @@ cf4a5fdc95e5494eaa190825af11f3be
 box/boot/mix.sh
 {% endblock %}
 
-{% block lib_deps %}lib/c/mix.sh{% endblock %}
+{% block lib_deps %}
+lib/c/mix.sh
+{% endblock %}

@@ -23,4 +23,6 @@ dev/lang/m4/mix.sh
 {% block autoreconf %}
 {% endblock %}
 
-{% block bld_libs %}lib/c/mix.sh{% endblock %}
+{% block bld_libs %}
+lib/c/mix.sh
+{% endblock %}

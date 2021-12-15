@@ -13,4 +13,6 @@ lib/readline/mix.sh
 sed -e 's|elif host_machine.*|elif 1 == 1|' -i meson.build
 {% endblock %}
 
-{% block bld_libs %}lib/c/mix.sh{% endblock %}
+{% block bld_libs %}
+lib/c/mix.sh
+{% endblock %}

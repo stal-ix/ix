@@ -17,4 +17,6 @@ BUILD_SHARED=no
 allmost
 {% endblock %}
 
-{% block lib_deps %}lib/c/mix.sh{% endblock %}
+{% block lib_deps %}
+lib/c/mix.sh
+{% endblock %}

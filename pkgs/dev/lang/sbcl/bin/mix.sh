@@ -13,4 +13,6 @@ dev/build/make/mix.sh
 INSTALL_ROOT=${out} dash install.sh
 {% endblock %}
 
-{% block bld_libs %}lib/c/mix.sh{% endblock %}
+{% block bld_libs %}
+lib/c/mix.sh
+{% endblock %}

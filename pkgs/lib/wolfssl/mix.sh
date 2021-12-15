@@ -28,4 +28,6 @@ dash autogen.sh
 export COFLAGS="--with-wolfssl=${out} \${COFLAGS}"
 {% endblock %}
 
-{% block lib_deps %}lib/c/mix.sh{% endblock %}
+{% block lib_deps %}
+lib/c/mix.sh
+{% endblock %}

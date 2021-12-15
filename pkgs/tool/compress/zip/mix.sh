@@ -23,4 +23,6 @@ export CPPFLAGS="-I. -DUNIX ${CPPFLAGS}"
 zips
 {% endblock %}
 
-{% block bld_libs %}lib/c/mix.sh{% endblock %}
+{% block bld_libs %}
+lib/c/mix.sh
+{% endblock %}

@@ -19,4 +19,6 @@ rm ${out}/lib/libcharset.a
 export COFLAGS="--with-libiconv-prefix=${out} --with-iconv=${out} \${COFLAGS}"
 {% endblock %}
 
-{% block lib_deps %}lib/c/mix.sh{% endblock %}
+{% block lib_deps %}
+lib/c/mix.sh
+{% endblock %}

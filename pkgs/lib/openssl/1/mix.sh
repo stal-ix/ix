@@ -9,4 +9,6 @@ cccaa064ed860a2b4d1303811bf5c682
 no-hw
 {% endblock %}
 
-{% block lib_deps %}lib/c/mix.sh{% endblock %}
+{% block lib_deps %}
+lib/c/mix.sh
+{% endblock %}

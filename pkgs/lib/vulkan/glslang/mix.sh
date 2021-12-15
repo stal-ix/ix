@@ -10,4 +10,6 @@ dev/tool/python/mix.sh
 dev/lang/bison/3/8/mix.sh
 {% endblock %}
 
-{% block lib_deps %}lib/c/mix.sh{% endblock %}
+{% block lib_deps %}
+lib/c/mix.sh
+{% endblock %}

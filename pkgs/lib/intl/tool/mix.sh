@@ -15,4 +15,6 @@ dev/build/auto/make/1/16/mix.sh
 dev/tool/perl/full/mix.sh
 {% endblock %}
 
-{% block lib_deps %}lib/c/mix.sh{% endblock %}
+{% block lib_deps %}
+lib/c/mix.sh
+{% endblock %}

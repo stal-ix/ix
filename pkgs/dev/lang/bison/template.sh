@@ -33,4 +33,6 @@ rm src/parse-gram.c src/parse-gram.h
 {% endblock %}
 {% endblock %}
 
-{% block bld_libs %}lib/c/mix.sh{% endblock %}
+{% block bld_libs %}
+lib/c/mix.sh
+{% endblock %}

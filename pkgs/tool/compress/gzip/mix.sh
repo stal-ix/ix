@@ -9,4 +9,6 @@ https://ftp.gnu.org/gnu/gzip/gzip-1.10.tar.xz
 --disable-gcc-warnings
 {% endblock %}
 
-{% block bld_libs %}lib/c/mix.sh{% endblock %}
+{% block bld_libs %}
+lib/c/mix.sh
+{% endblock %}

@@ -9,4 +9,6 @@ e46bd3ba7f88460e5610035951e2e56d
 export COFLAGS="--with-onig=${out} \${COFLAGS}"
 {% endblock %}
 
-{% block lib_deps %}lib/c/mix.sh{% endblock %}
+{% block lib_deps %}
+lib/c/mix.sh
+{% endblock %}

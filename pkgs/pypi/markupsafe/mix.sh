@@ -14,4 +14,6 @@ ln -s Ma*/src/markupsafe ./
 export PYTHONPATH="${out}/module:\${PYTHONPATH}"
 {% endblock %}
 
-{% block bld_libs %}lib/c/mix.sh{% endblock %}
+{% block bld_libs %}
+lib/c/mix.sh
+{% endblock %}

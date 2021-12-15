@@ -5,4 +5,6 @@ https://storage.googleapis.com/downloads.webmproject.org/releases/webp/libwebp-1
 f30c738034faa13d6255604ed46b6158
 {% endblock %}
 
-{% block lib_deps %}lib/c/mix.sh{% endblock %}
+{% block lib_deps %}
+lib/c/mix.sh
+{% endblock %}

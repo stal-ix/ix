@@ -9,4 +9,6 @@ http://deb.debian.org/debian/pool/main/f/file/file_5.39.orig.tar.gz
 box/boot/mix.sh
 {% endblock %}
 
-{% block lib_deps %}lib/c/mix.sh{% endblock %}
+{% block lib_deps %}
+lib/c/mix.sh
+{% endblock %}

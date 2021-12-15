@@ -13,4 +13,6 @@ https://www.bytereef.org/software/mpdecimal/releases/mpdecimal-2.5.1.tar.gz
 export COFLAGS="--with-system-libmpdec=yes --with-libmpdec-prefix=${out} \${COFLAGS}"
 {% endblock %}
 
-{% block lib_deps %}lib/c/mix.sh{% endblock %}
+{% block lib_deps %}
+lib/c/mix.sh
+{% endblock %}

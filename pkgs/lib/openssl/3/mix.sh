@@ -15,4 +15,6 @@ install_sw
 cd ${out} && ln -s lib64 lib
 {% endblock %}
 
-{% block lib_deps %}lib/c/mix.sh{% endblock %}
+{% block lib_deps %}
+lib/c/mix.sh
+{% endblock %}

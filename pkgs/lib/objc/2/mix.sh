@@ -21,4 +21,6 @@ ${untar} ${src}/*.gz && mv robin* third_party/robin-map
 sed -e 's| SHARED | STATIC |g' -i CMakeLists.txt
 {% endblock %}
 
-{% block lib_deps %}lib/c/mix.sh{% endblock %}
+{% block lib_deps %}
+lib/c/mix.sh
+{% endblock %}

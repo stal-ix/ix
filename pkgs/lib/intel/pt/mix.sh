@@ -9,4 +9,6 @@ cf2c97292dc61ea898dd84b460921f79
 export COFLAGS="--with-libipt-prefix=${out} \${COFLAGS}"
 {% endblock %}
 
-{% block lib_deps %}lib/c/mix.sh{% endblock %}
+{% block lib_deps %}
+lib/c/mix.sh
+{% endblock %}

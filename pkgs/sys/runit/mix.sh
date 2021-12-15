@@ -22,4 +22,6 @@ for i in $(cat package/commands); do
 done
 {% endblock %}
 
-{% block bld_libs %}lib/c/mix.sh{% endblock %}
+{% block bld_libs %}
+lib/c/mix.sh
+{% endblock %}

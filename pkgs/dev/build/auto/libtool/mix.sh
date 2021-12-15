@@ -30,4 +30,6 @@ ln -s libtool glibtool
 export LIBTOOLIZE=libtoolize
 {% endblock %}
 
-{% block bld_libs %}lib/c/mix.sh{% endblock %}
+{% block bld_libs %}
+lib/c/mix.sh
+{% endblock %}

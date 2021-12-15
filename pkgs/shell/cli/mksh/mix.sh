@@ -17,4 +17,6 @@ dash Build.sh
 mkdir ${out}/bin && cp mksh ${out}/bin
 {% endblock %}
 
-{% block bld_libs %}lib/c/mix.sh{% endblock %}
+{% block bld_libs %}
+lib/c/mix.sh
+{% endblock %}

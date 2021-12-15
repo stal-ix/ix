@@ -8,4 +8,6 @@ dev/lang/sbcl/bin/mix.sh
 sbcl
 {% endblock %}
 
-{% block bld_libs %}lib/c/mix.sh{% endblock %}
+{% block bld_libs %}
+lib/c/mix.sh
+{% endblock %}

@@ -29,4 +29,6 @@ ln -s $(which ld.lld) ld
 {% endif %}
 {% endblock %}
 
-{% block bld_libs %}lib/c/mix.sh{% endblock %}
+{% block bld_libs %}
+lib/c/mix.sh
+{% endblock %}

@@ -15,4 +15,6 @@ dev/doc/texinfo/mix.sh
 boot/final/env/bison/mix.sh
 {% endblock %}
 
-{% block bld_libs %}lib/c/mix.sh{% endblock %}
+{% block bld_libs %}
+lib/c/mix.sh
+{% endblock %}

@@ -21,4 +21,6 @@ gnu/gettext/mix.sh
 export XKB_CONFIG="${out}/share/X11/xkb"
 {% endblock %}
 
-{% block lib_deps %}lib/c/mix.sh{% endblock %}
+{% block lib_deps %}
+lib/c/mix.sh
+{% endblock %}
