@@ -1,58 +1,29 @@
 {% extends '//mix/template/base.sh' %}
 
+{% block functions %}
+{% include 'extract.sh' %}
+{% endblock %}
+
+{% block unpack %}
 {% include 'unpack.sh' %}
+{% endblock %}
 
 {% block step_setup %}
-CD=${PWD}
-{{super()}}
-{% include 'preconf.sh' %}
-cd ${CD}
+{% include 'setup.sh' %}
 {% endblock %}
 
 {% block step_install %}
-{% if super().strip() %}
-(
-    set -eu
-
-{{super()}}
-)
-{% endif %}
-
-(
-    set -eu
-
-{% block postinstall %}
-{% include 'postinstall.sh' %}
-{% endblock %}
-)
-
-(
-    set -eu
-
-{% block prepare_env %}
-{% include 'env.sh' %}
-{% endblock %}
-)
+{% include 'install.sh' %}
 {% endblock %}
 
 {% block std_env %}
 {% block std_box %}
-{% block shell %}
-shell/cli/dash/minimal/mix.sh
-{% endblock %}
-
-{% block box %}
-gnu/box/mix.sh
-{% endblock %}
-
-{% block decompressor %}
-tool/pv/mix.sh
-tool/compress/unzip/mix.sh
-lib/archive/mix.sh
-{% endblock %}
+{% include 'stdenv.sh' %}
 {% endblock %}
 {% endblock %}
 
 {% block step_test %}
+{% block test %}
 {% include 'test.sh' %}
+{% endblock %}
 {% endblock %}

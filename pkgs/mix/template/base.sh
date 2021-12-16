@@ -28,8 +28,6 @@ step_setup() {
 echo 'setup stage'
 
 {% block step_setup %}
-{% block setup %}
-{% endblock %}
 {% endblock %}
 }
 
@@ -70,8 +68,6 @@ set -eu
 echo 'install stage'
 
 {% block step_install %}
-{% block install %}
-{% endblock %}
 {% endblock %}
 )
 
@@ -115,5 +111,5 @@ do_execute() {
     echo "done ${out}"
 }
 
-do_execute
+do_{{stage or 'execute'}}
 {% endblock %}

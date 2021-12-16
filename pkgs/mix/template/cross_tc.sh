@@ -1,10 +1,11 @@
-{% block setup_host_tc %}
 mkdir tc; cd tc
 
+{% block setup_host_tc %}
 (
     set -eu
 
-    setup_tc "${MIX_H_DIR}" host
+    source_env "${MIX_H_DIR}"
+    setup_tc host
 )
 
 export HOST_CC=${PWD}/host/cc
@@ -15,8 +16,21 @@ export HOST_RANLIB=${PWD}/host/ranlib
 {% endblock %}
 
 {% block setup_target_tc %}
-setup_tc "${MIX_T_DIR}" target
+source_env "${MIX_T_DIR}"
+
+# yep, THE ONLY place for this shit
+CCD=${PWD}; cd ${CD}
+{% block setup %}
 {% endblock %}
+cd ${CCD}
+
+setup_tc target
+
+export LDFLAGS=
+export CFLAGS=
+export CPPFLAGS=
+export CXXFLAGS=
+export CONLYFLAGS=
 
 for x in cc gcc c99 clang; do
     ln -s target/cc ${x}
@@ -33,13 +47,6 @@ done
 for x in ar nm ranlib; do
     ln -s target/${x} ${x}
 done
-
-export LDFLAGS=
-export CFLAGS=
-export CPPFLAGS=
-export CXXFLAGS=
-export CONLYFLAGS=
+{% endblock %}
 
 export PATH="${PWD}:${PATH}"
-
-cd ..

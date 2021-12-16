@@ -11,13 +11,12 @@ dev/lang/clang/mix.sh
 {{super()}}
 
 setup_tc_here() {
-    source_env "${1}"
     setup_compiler
     setup_ar
 }
 
 setup_tc() {
-    mkdir ${2}; cd ${2}; setup_tc_here "${1}"; cd ..
+    mkdir ${1}; cd ${1}; setup_tc_here; cd ..
 }
 {% endblock %}
 
@@ -25,6 +24,7 @@ setup_tc() {
 if command -v ls; then
 {% include 'cross_tc.sh' %}
 else
-    setup_tc_here "${MIX_T_DIR}"
+    source_env "${MIX_T_DIR}"
+    setup_tc_here
 fi
 {% endblock %}

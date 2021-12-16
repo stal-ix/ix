@@ -10,6 +10,10 @@ lib/c/mix.sh
 lib/gmp/mix.sh
 {% endblock %}
 
+{% block bld_libs %}
+lib/c/mix.sh
+{% endblock %}
+
 {% block bld_tool %}
 dev/doc/texinfo/mix.sh
 dev/build/auto/conf/2/69/mix.sh

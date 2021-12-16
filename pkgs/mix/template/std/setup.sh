@@ -1,4 +1,4 @@
-mkdir ${tmp}/tools && cd ${tmp}/tools
+CD=${PWD}; mkdir ${tmp}/tools; cd ${tmp}/tools
 
 export PATH="${PWD}:${PATH}"
 
@@ -42,8 +42,15 @@ chmod +x sw_vers
 
 ln -s $(which dash) sh
 
+find_pkg() (
+    source_env "${MIX_T_DIR}"
+    pkg-config --variable=prefix ${1}
+)
+
 {% block setup_compiler %}
 {% endblock %}
+cd ${CD}
 
 {% block setup_tools %}
 {% endblock %}
+cd ${CD}

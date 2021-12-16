@@ -2,6 +2,10 @@
 
 {% block script_body %}
 {% block prologue %}
+{% if setx %}
+set -x
+{% endif %}
+
 source_env() {
     OFS=${IFS}; IFS=':'; for x in ${1}; do
         . "${x}/env"

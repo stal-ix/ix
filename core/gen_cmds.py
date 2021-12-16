@@ -127,7 +127,7 @@ class CmdBuild:
         yield 'mix', self.package.config.binary
         yield 'exe', sys.executable
 
-        yield 'make_thrs', str(multiprocessing.cpu_count() - 1)
+        yield 'make_thrs', str(multiprocessing.cpu_count() - 2)
 
 
 def cmd_fetch(sb, url):

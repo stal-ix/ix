@@ -31,12 +31,12 @@ EOF
 
 {% block build %}
 scons \
-    CC=$(which clang)           \
-    PREFIX=${out}               \
-    OPENSSL="${SSL_DIR}"        \
+    CC=$(which clang)    \
+    PREFIX=${out}        \
+    OPENSSL="${SSL_DIR}" \
     APR="$(which apr-1-config)" \
     APU="$(which apu-1-config)" \
-    ZLIB="$(pkg-config --variable=prefix zlib)"
+    ZLIB="$(find_pkg zlib)"
 {% endblock %}
 
 {% block install %}

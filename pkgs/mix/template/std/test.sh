@@ -1,16 +1,14 @@
-{% block test %}
 {% if kind == 'bin' %}
-{% block test_bin %}
-{% endblock %}
+ {% block test_bin %}
+ {% endblock %}
 {% endif %}
 
 {% if kind == 'lib' %}
-{% block test_lib %}
-{% endblock %}
+ {% block test_lib %}
+ {% endblock %}
 
-{% if host.id == target.id %}
-{% block test_execute %}
-{% endblock %}
+ {% if host.id == target.id %}
+  {% block test_execute %}
+  {% endblock %}
+ {% endif %}
 {% endif %}
-{% endif %}
-{% endblock %}

@@ -14,7 +14,7 @@ net/openssh/mix.sh
 {% endblock %}
 
 {% block setup %}
-expat="$(pkg-config --variable=prefix expat)"
+expat="$(find_pkg expat)"
 
 export COFLAGS=$(echo "${COFLAGS}" | tr ' ' '\n' | grep -v expat | tr '\n' ' ')
 export COFLAGS="${COFLAGS} --with-expat=${expat}/include:${expat}/lib:-lexpat"

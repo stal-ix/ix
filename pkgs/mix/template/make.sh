@@ -17,7 +17,10 @@ make
 SHELL="$(which dash)"
 PREFIX="${out}"
 prefix="${out}"
+
+{% block make_verbose_1 %}
 V=0
+{% endblock %}
 
 {% block make_flags %}
 {% endblock %}

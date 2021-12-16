@@ -6,7 +6,7 @@ export CC=clang
 export CXX=clang++
 
 B="--target={{target.arch}}-{{target.vendor}}-{{target.os}} -fcolor-diagnostics -Wno-unused-command-line-argument -nostdinc -nostdinc++ ${OPTFLAGS} ${CPPFLAGS} ${CFLAGS}"
-E="-nostdlib++ ${LDFLAGS} ${OPTFLAGS}"
+E="-nostdlib -nostdlib++ ${LDFLAGS} ${OPTFLAGS}"
 
 cat << EOF > cc
 #!$(which dash)
