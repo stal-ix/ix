@@ -1,7 +1,7 @@
 {% extends '//mix/template/base.sh' %}
 
 {% block functions %}
-{% include 'extract.sh' %}
+{% include 'functions.sh' %}
 {% endblock %}
 
 {% block unpack %}

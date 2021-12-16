@@ -1,5 +1,3 @@
-mkdir tc; cd tc
-
 {% block setup_host_tc %}
 (
     set -eu
@@ -19,10 +17,10 @@ export HOST_RANLIB=${PWD}/host/ranlib
 source_env "${MIX_T_DIR}"
 
 # yep, THE ONLY place for this shit
-CCD=${PWD}; cd ${CD}
+pushd ${bld}
 {% block setup %}
 {% endblock %}
-cd ${CCD}
+popd
 
 setup_tc target
 
@@ -48,5 +46,3 @@ for x in ar nm ranlib; do
     ln -s target/${x} ${x}
 done
 {% endblock %}
-
-export PATH="${PWD}:${PATH}"

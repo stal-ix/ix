@@ -10,6 +10,6 @@ lib/c/mix.sh
 lib/c++/mix.sh
 {% endblock %}
 
-{% block bld_tool %}
-dev/tool/python/mix.sh
+{% block std_box %}
+box/boot/mix.sh
 {% endblock %}

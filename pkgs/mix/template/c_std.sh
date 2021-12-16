@@ -16,13 +16,15 @@ setup_tc_here() {
 }
 
 setup_tc() {
-    mkdir ${1}; cd ${1}; setup_tc_here; cd ..
+    mkpushd ${1}; setup_tc_here; popd
 }
 {% endblock %}
 
 {% block setup_compiler %}
 if command -v ls; then
-{% include 'cross_tc.sh' %}
+    mkpushd tc
+    {% include 'cross_tc.sh' %}
+    export PATH="${PWD}:${PATH}"; popd
 else
     source_env "${MIX_T_DIR}"
     setup_tc_here

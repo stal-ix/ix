@@ -19,3 +19,26 @@ do_extract() {
 
 export untar="do_extract"
 export unzip="do_extract"
+
+find_pkg() (
+    source_env "${MIX_T_DIR}"
+    pkg-config --variable=prefix ${1}
+)
+
+DS=""
+
+pushd() {
+    DS="${PWD}:${DS}"; cd ${1}
+}
+
+mkpushd() {
+    mkdir ${1}; pushd ${1}
+}
+
+pushcwd() {
+    pushd ${PWD}
+}
+
+popd() {
+    O=${IFS}; IFS=':'; set ${DS}; cd ${1}; shift; DS=${*}; IFS=${O}
+}

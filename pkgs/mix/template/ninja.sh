@@ -1,7 +1,7 @@
 {% extends 'c_std.sh' %}
 
 {% block std_box %}
-dev/build/samurai/mix.sh
+dev/build/ninja/mix.sh
 {{super()}}
 {% endblock %}
 
