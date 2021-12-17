@@ -9,8 +9,8 @@ https://github.com/michaelforney/samurai/archive/edeec43d638c826d9e446917f97e951
 box/boot/mix.sh
 {% endblock %}
 
-{% block setup %}
-export CPPFLAGS="-Dwarn=samu_warn ${CPPFLAGS}"
+{% block c_rename_symbol %}
+warn
 {% endblock %}
 
 {% block bld_libs %}

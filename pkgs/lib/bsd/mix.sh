@@ -14,6 +14,10 @@ lib/c/mix.sh
 lib/linux/mix.sh
 {% endblock %}
 
+{% block c_rename_symbol %}
+reallocarray
+{% endblock %}
+
 {% block setup %}
-export CPPFLAGS="-Dreallocarray=bsd_reallocarray -I.. -isystem ../include/bsd/ ${CPPFLAGS}"
+export CPPFLAGS="-I.. -isystem ../include/bsd/ ${CPPFLAGS}"
 {% endblock %}

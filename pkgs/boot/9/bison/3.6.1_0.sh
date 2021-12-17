@@ -16,6 +16,6 @@ boot/4/patch/mix.sh
 EOF
 {% endblock %}
 
-{% block bison_cflags %}
+{% block setup %}
 export CPPFLAGS="-DGRAM_error=1 ${CPPFLAGS}"
 {% endblock %}

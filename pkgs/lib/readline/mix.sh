@@ -14,8 +14,9 @@ lib/curses/mix.sh
 box/boot/mix.sh
 {% endblock %}
 
-{% block setup %}
-export CPPFLAGS="-Dxmalloc=rl_xmalloc -Dxrealloc=Drl_xrealloc ${CPPFLAGS}"
+{% block c_rename_symbol %}
+xmalloc
+xrealloc
 {% endblock %}
 
 {% block patch %}

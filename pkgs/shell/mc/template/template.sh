@@ -21,8 +21,13 @@ dev/tool/perl/mix.sh
 tool/compress/all/mix.sh
 {% endblock %}
 
+{% block c_rename_symbol %}
+update_panels
+tilde_expand
+{% endblock %}
+
 {% block setup %}
-export CPPFLAGS="-w -Dupdate_panels=update_panels_mc -Dtilde_expand=tilde_expand_mc ${CPPFLAGS}"
+export CPPFLAGS="-w ${CPPFLAGS}"
 {% endblock %}
 
 {% block configure_flags %}

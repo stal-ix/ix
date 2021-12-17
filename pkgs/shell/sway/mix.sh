@@ -7,6 +7,7 @@ b7a35c2ee8e6f14d1657d3b4c97b7977
 
 {% block bld_libs %}
 lib/c/mix.sh
+
 # drivers go first
 lib/vulkan/driver/mix.sh
 lib/mesa/drivers/gl/zink/mix.sh
@@ -26,6 +27,9 @@ lib/wayland/protocols/mix.sh
 dev/build/meson/better/mix.sh
 {% endblock %}
 
-{% block setup %}
-export CPPFLAGS="-Dlist_insert=sway_list_insert -Dseat_create=sway_seat_create -Dseat_destroy=sway_seat_destroy -Dserver_init=sway_server_init ${CPPFLAGS}"
+{% block c_rename_symbol %}
+list_insert
+seat_create
+seat_destroy
+server_init
 {% endblock %}

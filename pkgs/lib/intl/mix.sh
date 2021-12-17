@@ -23,8 +23,8 @@ box/boot/mix.sh
 cd gettext-runtime
 {% endblock %}
 
-{% block setup %}
-export CPPFLAGS="-Dlocale_charset=intl_locale_charset ${CPPFLAGS}"
+{% block c_rename_symbol %}
+locale_charset
 {% endblock %}
 
 {% block configure_flags %}

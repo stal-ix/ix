@@ -9,8 +9,11 @@ https://github.com/pg83/sbase/archive/2c2a7f54ab55a022a617e510b6e00c3e2736fabd.z
 box/boot/mix.sh
 {% endblock %}
 
+{% block c_rename_symbol %}
+reallocarray
+{% endblock %}
+
 {% block setup %}
-export CPPFLAGS="-Dreallocarray=sbase_reallocarray ${CPPFLAGS}"
 {% if target.os == 'darwin' %}
 export CPPFLAGS="-D_DARWIN_C_SOURCE=1 -Dst_atim=st_atimespec -Dst_mtim=st_mtimespec -Dst_ctim=st_ctimespec ${CPPFLAGS}"
 {% endif %}

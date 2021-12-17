@@ -15,12 +15,16 @@ lib/iconv/mix.sh
 box/boot/mix.sh
 {% endblock %}
 
-{% block setup %}
-export CPPFLAGS="-I./glob ${CPPFLAGS}"
-
+{% block c_rename_symbol %}
 {% if target.os == 'darwin' %}
-export CPPFLAGS="-Dglob=make_glob -Dglobfree=make_globfree -Dfnmatch=make_fnmatch ${CPPFLAGS}"
+glob
+fnmatch
+globfree
 {% endif %}
+{% endblock %}
+
+{% block setup %}
+export CPPFLAGS="-I${PWD}/glob ${CPPFLAGS}"
 {% endblock %}
 
 {% block configure_flags %}

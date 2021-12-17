@@ -12,8 +12,12 @@ lib/curl/mix.sh
 lib/iconv/mix.sh
 {% endblock %}
 
+{% block c_rename_symbol %}
+stricmp
+strnicmp
+{% endblock %}
+
 {% block setup %}
-export CPPFLAGS="-Dstricmp=xerces_stricmp -Dstrnicmp=xerces_strnicmp ${CPPFLAGS}"
 export CXXFLAGS="-w ${CXXFLAGS}"
 {% endblock %}
 

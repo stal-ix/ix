@@ -19,8 +19,8 @@ dev/build/auto/make/1/16/mix.sh
 box/boot/mix.sh
 {% endblock %}
 
-{% block setup %}
-export CPPFLAGS="-Dlocale_charset=unistring_locale_charset ${CPPFLAGS}"
+{% block c_rename_symbol %}
+locale_charset
 {% endblock %}
 
 {% block env %}

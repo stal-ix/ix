@@ -26,26 +26,26 @@ lib/wayland/protocols/mix.sh
 -Drenderers=gles2
 {% endblock %}
 
-{% set redef %}
+{% block c_rename_symbol %}
 org_kde_kwin_idle_interface
 org_kde_kwin_idle_timeout_interface
+
 xdg_popup_interface
 xdg_positioner_interface
 xdg_surface_interface
 xdg_toplevel_interface
 xdg_wm_base_interface
+
 zwlr_layer_shell_v1_interface
 zwlr_layer_surface_v1_interface
+
 wl_drm_interface
+
 zwp_linux_dmabuf_v1_interface
 zwp_linux_buffer_params_v1_interface
 zwp_linux_dmabuf_feedback_v1_interface
-{% endset %}
+{% endblock %}
 
 {% block setup %}
 export CPPFLAGS="-DNSEC_PER_SEC=WLR_NSEC_PER_SEC ${CPPFLAGS}"
-
-for x in {{redef.replace('\n', ' ')}}; do
-    export CPPFLAGS="-D${x}=${x}_wlroots ${CPPFLAGS}"
-done
 {% endblock %}

@@ -11,8 +11,9 @@ lib/curses/mix.sh
 lib/edit/mix.sh
 {% endblock %}
 
-{% block setup %}
-export CPPFLAGS="-Dwordfree=yash_wordfree -Dadd_history=yash_add_history ${CPPFLAGS}"
+{% block c_rename_symbol %}
+wordfree
+add_history
 {% endblock %}
 
 {% block configure %}

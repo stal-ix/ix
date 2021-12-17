@@ -17,8 +17,8 @@ dev/build/auto/conf/2/69/mix.sh
 dev/build/auto/make/1/16/1/mix.sh
 {% endblock %}
 
-{% block setup %}
-export CPPFLAGS="-Derror=idna2_error ${CPPFLAGS}"
+{% block c_rename_symbol %}
+error
 {% endblock %}
 
 {% block autoreconf %}

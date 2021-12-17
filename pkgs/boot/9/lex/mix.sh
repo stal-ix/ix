@@ -18,9 +18,16 @@ boot/8/env/std/mix.sh
 cd heirloom-devtools/lex
 {% endblock %}
 
+{% block c_rename_symbol %}
+getopt
+optarg
+optind
+optopt
+opterr
+{% endblock %}
+
 {% block setup %}
 export ROOT=
-export CPPFLAGS="-Dgetopt=h_getopt -Doptarg=h_optarg -Doptind=h_optind -Doptopt=h_optopt -Dopterr=h_opterr ${CPPFLAGS}"
 export CFLAGS="-w ${CFLAGS}"
 export BINDIR="${out}/bin"
 export LIBDIR="${out}/lib"

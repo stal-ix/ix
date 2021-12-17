@@ -22,9 +22,9 @@ lib/darwin/framework/Security/mix.sh
 lib/unistring/mix.sh
 {% endblock %}
 
-{% block setup %}
+{% block c_rename_symbol %}
 # conflict with libunbound
-export CPPFLAGS="-Dverbose=gnutls_verbose ${CPPFLAGS}"
+verbose
 {% endblock %}
 
 {% block configure_flags %}

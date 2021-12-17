@@ -7,5 +7,5 @@ boot/9/bison/3.6.1_0.sh
 {% block bison_patch %}
 {% endblock %}
 
-{% block bison_cflags %}
+{% block setup %}
 {% endblock %}

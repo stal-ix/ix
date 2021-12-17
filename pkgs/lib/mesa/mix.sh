@@ -56,29 +56,13 @@ lib/wayland/protocols/mix.sh
 -Dshared-llvm=disabled
 {% endblock %}
 
-{% block step_setup %}
-export CPPFLAGS="-Dhandle_table_remove=mesa_handle_table_remove -Dos_create_anonymous_file=os_create_anonymous_file_mesa ${CPPFLAGS}"
-{{super()}}
-
-export PC_H=$(
-    export PKG_COFIG_PATH=
-    source_env "${MIX_B_DIR}:${MIX_H_DIR}"
-    echo ${PKG_CONFIG_PATH}
-)
-
-export PC_T=$(
-    export PKG_COFIG_PATH=
-    source_env "${MIX_T_DIR}"
-    echo ${PKG_CONFIG_PATH}
-)
-
-echo "h ${PC_H}"
-echo "t ${PC_T}"
+{% block c_rename_symbol %}
+handle_table_remove
+os_create_anonymous_file
 {% endblock %}
 
 {% block patch %}
-#cat meson.build | grep -v 'DUSE_ELF_TLS' > _ && mv _ meson.build
-
+exit 1
 pushd src/gallium/frontends/dri
 
 for l in *.c *.h; do

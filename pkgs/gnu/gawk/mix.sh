@@ -20,8 +20,12 @@ box/boot/mix.sh
 boot/final/env/bison/mix.sh
 {% endblock %}
 
-{% block setup %}
-export CPPFLAGS="-Derr=gawk_err -Dxmalloc=gawk_xmalloc -Dxrealloc=Dgawk_xrealloc -Dregcomp=gawk_regcomp -Dregfree=gawk_regfree ${CPPFLAGS}"
+{% block c_rename_symbol %}
+err
+regcomp
+regfree
+xmalloc
+xrealloc
 {% endblock %}
 
 {% block configure_flags %}
