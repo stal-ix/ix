@@ -15,8 +15,13 @@ boot/final/env/std/mix.sh
 {% endblock %}
 {% endif %}
 
+{% block setup_tools %}
+mkdir tmp; cd tmp; ln -s ${HOST_CC} gcc
+export PATH="${PWD}:${PATH}"
+{% endblock %}
+
 {% block build %}
-make mrproper
+make  mrproper
 make headers
 
 find usr/include -name '.*' -delete
