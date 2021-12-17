@@ -20,13 +20,14 @@ setup_tc_here() {
 }
 
 setup_tc() {
-    mkpushd ${1}; setup_tc_here; popd
+    mkpushd ${1}
+    setup_tc_here
+    popd
 }
 {% endblock %}
 
-{% block prologue %}
+{% block script_init_env %}
 {{super()}}
-
 export CFLAGS=
 export LDFLAGS=
 export OPTFLAGS=
@@ -39,7 +40,8 @@ export CONLYFLAGS=
 if command -v ls; then
     mkpushd tc
     {% include 'cross_tc.sh' %}
-    export PATH="${PWD}:${PATH}"; popd
+    export PATH="${PWD}:${PATH}"
+    popd
 else
     source_env "${MIX_T_DIR}"
     setup_tc_here

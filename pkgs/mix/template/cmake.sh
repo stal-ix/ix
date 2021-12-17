@@ -7,6 +7,7 @@ dev/build/cmake/mix.sh
 
 {% block functions %}
 {{super()}}
+
 add_suffix() (
     set -eu; IFS=':'; for x in ${1}; do
         echo -n "${x}/${2};"
