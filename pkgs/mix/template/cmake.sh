@@ -59,7 +59,7 @@ ${CMFLAGS}
 {% endblock %}
 {% endset %}
 
-{% for f in mix.fix_list(cmake_flags) %}
+{% for f in mix.parse_list(cmake_flags) %}
 -D{{f}}
 {% endfor %}
 
