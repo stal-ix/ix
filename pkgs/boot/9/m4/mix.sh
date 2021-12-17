@@ -8,4 +8,5 @@ boot/8/env/std/mix.sh
 {% endblock %}
 
 {% block test %}
+echo 'skip tests'
 {% endblock %}

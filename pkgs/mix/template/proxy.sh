@@ -8,5 +8,5 @@ source_env "${MIX_T_DIR}"
 {% endblock %}
 
 {% block step_unpack %}
-echo 'nothing to unpack'
+echo 'skip unpack'
 {% endblock %}

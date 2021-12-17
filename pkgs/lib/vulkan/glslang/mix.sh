@@ -1,8 +1,8 @@
 {% extends '//mix/template/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/KhronosGroup/glslang/archive/refs/tags/master-tot.tar.gz
-f51c4b12ac0c8f9dee2067dc207a4fca
+https://github.com/KhronosGroup/glslang/archive/refs/tags/11.7.1.tar.gz
+0855c7b65da1e9be5ff89eeddeda691a
 {% endblock %}
 
 {% block bld_tool %}

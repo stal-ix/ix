@@ -37,4 +37,5 @@ STRIP=true
 {% endblock %}
 
 {% block postinstall %}
+echo 'skip, cause /lib removal'
 {% endblock %}
