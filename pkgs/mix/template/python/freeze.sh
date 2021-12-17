@@ -2,7 +2,6 @@
 
 {% block configure %}
 (
-    set -eu
 
     cat << EOF
 {% block extra_modules %}
@@ -10,7 +9,6 @@
 EOF
 
     (
-        set -eu
 {% block more_modules %}
 {% endblock %}
     )

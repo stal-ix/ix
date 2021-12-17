@@ -5,69 +5,52 @@
 {% endblock %}
 
 step_unpack() {
-echo 'unpack step'
-
 {% block step_unpack %}
 {% block unpack %}
+echo 'unpack step'
 {% endblock %}
 {% endblock %}
 }
 
 step_patch() (
-set -eu
-
-echo 'patch step'
-
 {% block step_patch %}
 {% block patch %}
+echo 'patch step'
 {% endblock %}
 {% endblock %}
 )
 
 step_setup() {
-echo 'setup stage'
-
 {% block step_setup %}
+echo 'setup stage'
 {% endblock %}
 }
 
 step_configure() (
-set -eu
-
-echo 'configure stage'
-
 {% block step_configure %}
 {% block configure %}
+echo 'configure stage'
 {% endblock %}
 {% endblock %}
 )
 
 step_build() (
-set -eu
-
-echo 'build stage'
-
 {% block step_build %}
 {% block build %}
+echo 'build stage'
 {% endblock %}
 {% endblock %}
 )
 
 step_test() (
-set -eu
-
-echo 'test stage'
-
 {% block step_test %}
+echo 'test stage'
 {% endblock %}
 )
 
 step_install() (
-set -eu
-
-echo 'install stage'
-
 {% block step_install %}
+echo 'install stage'
 {% endblock %}
 )
 
@@ -106,9 +89,7 @@ do_test() {
 }
 
 do_execute() {
-    echo "execute ${out}"
     do_test
-    echo "done ${out}"
 }
 
 do_{{stage or 'execute'}}

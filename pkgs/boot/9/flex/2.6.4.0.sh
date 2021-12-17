@@ -23,7 +23,6 @@ cd src && rm parse.c parse.h scan.c skel.c
 {% block build %}
 {% block flex_prebuild %}
 (
-    set -eu
 
     cd src
 

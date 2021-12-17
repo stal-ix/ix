@@ -27,7 +27,6 @@ DEST_DIR=${out}
 {{super()}}
 
 (
-    set -eu
 
     cd ${out}/usr/local/ && mv * ${out}/
     rm -rf ${out}/usr

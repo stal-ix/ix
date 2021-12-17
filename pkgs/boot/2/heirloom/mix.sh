@@ -49,7 +49,6 @@ export MAKE="bmake LD=${LD} CC=${CC} AR=${AR} RANLIB=${RANLIB}"
 cd heirloom
 
 (
-    set -eu
 
     cd libcommon
 
@@ -67,13 +66,11 @@ export LDFLAGS="${LDFLAGS} ../libcommon/memalign.o"
 {% endif %}
 
 (
-    set -eu
 
     cd rm && ${MAKE} -f Makefile.mk
 )
 
 (
-    set -eu
 
     cd mkdir && $MAKE -f Makefile.mk
 )
@@ -87,7 +84,6 @@ for i in $S42BIN $SUSBIN $SV3BIN $UCBBIN $SU3BIN; do
 done
 
 (
-    set -eu
 
     export PATH="${PWD}/rm:${PATH}"
     export LDFLAGS="../libcommon/*.o $PRFLAGS"
@@ -117,7 +113,6 @@ done
 export STRIP=true
 
 (
-    set -eu
 
     cd _install && $MAKE -f Makefile.mk
 )
@@ -125,7 +120,6 @@ export STRIP=true
 cp _install/install_ucb ${out}/bin/install
 
 (
-    set -eu
 
     cd chmod && $MAKE -f Makefile.mk
 )
@@ -135,7 +129,6 @@ cp chmod/chmod ${out}/bin
 export LNS=cp
 
 (
-    set -eu
 
     cd cp
 
@@ -144,7 +137,6 @@ export LNS=cp
 
 for i in rm mkdir _install chmod; do
     (
-        set -eu
 
         cd $i && $MAKE -f Makefile.mk install
     )
@@ -155,7 +147,6 @@ export PATH="$DEFBIN:$UCBBIN:$SUSBIN:$S42BIN:$SV3BIN:$SU3BIN:${PATH}"
 
 for i in echo pwd env rmdir touch basename dirname chown wc tr ln xargs uniq time test tee tail head sort sleep; do
     (
-        set -eu
 
 {% if target.os == 'linux' %}
         CPPFLAGS="-Dmode_t=int ${CPPFLAGS}"
@@ -169,7 +160,6 @@ done
 echo 'extern void* memalign(size_t, size_t);' > libcommon/memalign.h
 
 (
-    set -eu
 
     cd libcommon && rm *.o *.a && $MAKE -f Makefile.mk
 )
@@ -177,7 +167,6 @@ echo 'extern void* memalign(size_t, size_t);' > libcommon/memalign.h
 
 for i in cp cat copy; do
     (
-        set -eu
 
         cd $i
 
@@ -201,7 +190,6 @@ export CPPFLAGS="-I${PWD} ${CPPFLAGS}"
 
 for i in file find sed cksum cmp col cut dc df dircmp du ed expand fmt fold getopt hostname id join kill line logname mkfifo mknod nice nohup printenv printf uname whoami yes; do
     (
-        set -eu
 
         cd $i
 
@@ -210,7 +198,6 @@ for i in file find sed cksum cmp col cut dc df dircmp du ed expand fmt fold geto
 done
 
 (
-    set -eu
 
     export CPPFLAGS="-DUSE_TERMCAP=1 ${CPPFLAGS}"
 
@@ -223,7 +210,6 @@ done
 )
 
 (
-    set -eu
 
     export CPPFLAGS="-DEXTERN=extern ${CPPFLAGS}"
     cd diff
@@ -231,7 +217,6 @@ done
 )
 
 (
-    set -eu
 
     cd ../heirloom-devtools/yacc
 
@@ -248,14 +233,12 @@ export CPPFLAGS="$PRCPPFLAGS"
 
 for i in bc expr factor grep; do
     (
-        set -eu
 
         cd $i && $MAKE PATH="${PATH}" LDFLAGS="${LDFLAGS}" -f Makefile.mk && $MAKE -f Makefile.mk install
     )
 done
 
 (
-    set -eu
 
     cd ../heirloom-devtools/lex
 
@@ -263,7 +246,6 @@ done
 )
 
 (
-    set -eu
 
     cd libuxre
 
@@ -271,7 +253,6 @@ done
 )
 
 (
-    set -eu
 
     cd nawk
 
@@ -292,7 +273,6 @@ for p in "$SV3BIN" "$SU3BIN" "$S42BIN" "$SUSBIN" "$UCBBIN" "${out}/tmp"; do
 done
 
 (
-    set -eu
 
     cd ${out}/bin && ln -s nawk awk && rm dircmp
 )

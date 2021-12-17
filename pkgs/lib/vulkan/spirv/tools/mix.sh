@@ -12,7 +12,7 @@ ${unzip} ${src}/v*
 cd S*
 
 (
-    set -eu && cd external
+    cd external
     ${unzip} ${src}/sdk*
     ln -s S* SPIRV-Headers
 )

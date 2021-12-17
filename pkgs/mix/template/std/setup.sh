@@ -15,8 +15,6 @@ for x in ps strip; do
     cat << EOF > ${x}
 #!$(which dash)
 EOF
-
-    chmod +x ${x}
 done
 
 cat << EOF > arch
@@ -24,14 +22,12 @@ cat << EOF > arch
 echo '{{target.arch}}'
 EOF
 
-chmod +x arch
-
 cat << EOF > hostname
 #!$(which dash)
 echo localhost
 EOF
 
-chmod +x hostname
+chmod +x arch ps strip hostname
 
 {% if target.os == 'darwin' %}
 cat << EOF > sw_vers

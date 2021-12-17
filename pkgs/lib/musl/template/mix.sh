@@ -30,7 +30,6 @@ cat << EOF > ${out}/include/error.h
 EOF
 
 (
-    set -eu
 
     cd ${out}/lib
 

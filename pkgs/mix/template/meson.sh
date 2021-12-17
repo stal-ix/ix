@@ -72,7 +72,6 @@ meson
 {% block step_patch %}
 {% if super().strip() %}
 (
-    set -eu
 
 {{super()}}
 )

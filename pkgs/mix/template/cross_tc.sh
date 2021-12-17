@@ -1,7 +1,5 @@
 {% block setup_host_tc %}
 (
-    set -eu
-
     source_env "${MIX_H_DIR}"
     setup_tc host
 )

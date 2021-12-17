@@ -2,7 +2,7 @@
 
 {% block script_body %}
 {% block prologue %}
-set -ue
+set -eu
 
 {% if setx %}
 set -x; env
@@ -42,8 +42,6 @@ export TMPDIR=${PWD}/tmp
 {% endblock %}
 
 (
-    set -eu
-
 # suc
 {% block sh_script %}
 {% endblock %}

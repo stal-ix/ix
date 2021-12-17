@@ -31,7 +31,6 @@ mold
 rm -r third-party
 
 (
-    set -eu
 
     find . | grep '\.h$'
     find . | grep '\.cc$'

@@ -23,9 +23,11 @@ fi
 {% endif %}
 
 {% if kind != 'lib' %}
-find ${out}/ | grep '\.[ao]$' | while read l; do
-    rm ${l}
-done
+if command -v find; then
+    find ${out}/ | grep '\.[ao]$' | while read l; do
+        rm ${l}
+    done
+fi
 {% endif %}
 
 if test -d ${out}/man; then

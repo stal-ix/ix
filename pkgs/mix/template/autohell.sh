@@ -13,12 +13,9 @@ find . | grep '\.[yl]$' | while read l; do
 done
 {% endblock %}
 
-{% if super().strip() %}
 (
-    set -eu
 {{super()}}
 )
-{% endif %}
 
 {% block autoreconf %}
 if which libtoolize; then
@@ -64,7 +61,6 @@ configure
 
 ${COFLAGS}
 
-{% if is_cross %}
 {% block configure_cross %}
 {% if kind == 'bin' %}
 --program-prefix={{bin_prefix or ''}}
@@ -77,7 +73,6 @@ ${COFLAGS}
 --build={{host.gnu.three}}
 --host={{target.gnu.three}}
 {% endblock %}
-{% endif %}
 
 --disable-dependency-tracking
 

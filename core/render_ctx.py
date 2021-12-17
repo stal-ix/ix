@@ -88,17 +88,17 @@ class RenderContext:
 
     def template(self, path):
         pkg = self.package
-
         tmpl = pkg.manager.env.get_template(path)
 
-        host = pkg.host
-        #target = pkg.target
-        #is_cross = host.id == target.id
+        args = cu.dict_dict_update({
+            'mix': self,
+            'host': pkg.host,
+            'is_cross': True,
+            'name': self.name,
+        }, pkg.flags)
 
         try:
-            res = tmpl.render(mix=self, host=host, is_cross=True, name=self.name, **pkg.flags)
-
-            return self.strip_template(res)
+            return self.strip_template(tmpl.render(args))
         except Exception as e:
             raise ce.Error(f'can not render {path}', exception=e)
 

@@ -2,14 +2,14 @@ import os
 
 
 def fix(d, n):
-    if 'lib_deps' in d:
-        return
+    def it():
+        for l in d.split('\n'):
+            if l.strip() in ('set -eu', 'set -ue'):
+                pass
+            else:
+                yield l
 
-    if 'bld_libs' in d:
-        d = d.replace('lib/c/mix.sh\n', '')
-        d = d + '\n{% block lib_deps %}\nlib/c/mix.sh\n{% endblock %}'
-
-        return d
+    return '\n'.join(it()).strip() + '\n'
 
 
 for a, b, c in os.walk('.'):
