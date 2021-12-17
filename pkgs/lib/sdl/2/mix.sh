@@ -34,6 +34,9 @@ export CPPFLAGS="-DSDL_VIDEO_OPENGL_EGL=1 ${CPPFLAGS}"
 {% endblock %}
 
 {% block patch %}
-sed -e 's|CheckEGL()||' -i CMakeLists.txt
-sed -e 's|define SDL_DYNAMIC_API 1|define SDL_DYNAMIC_API 0|' -i src/dynapi/SDL_dynapi.h
+sed -e 's|CheckEGL()||' \
+    -i CMakeLists.txt
+
+sed -e 's|define SDL_DYNAMIC_API 1|define SDL_DYNAMIC_API 0|' \
+    -i src/dynapi/SDL_dynapi.h
 {% endblock %}

@@ -5,6 +5,10 @@ https://ftp.gnu.org/gnu/gdbm/gdbm-1.19.tar.gz
 aeb29c6a90350a4c959cd1df38cd0a7e
 {% endblock %}
 
+{% block lib_deps %}
+lib/c/mix.sh
+{% endblock %}
+
 {% block bld_libs %}
 lib/readline/mix.sh
 {% if kind == 'bin' %}
@@ -34,8 +38,4 @@ cd ${out}/lib && ln -s libgdbm_compat.a libdbm.a
 
 {% block env %}
 export COFLAGS="--with-gdbm=${out} \${COFLAGS}"
-{% endblock %}
-
-{% block lib_deps %}
-lib/c/mix.sh
 {% endblock %}
