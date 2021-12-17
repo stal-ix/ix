@@ -15,6 +15,11 @@ lib/c/mix.sh
 {% endblock %}
 
 {% block c_rename_symbol %}
-getopt getopt_long getopt_long_only
-optarg opterr optind optopt
+optarg
+opterr
+optind
+optopt
+getopt
+getopt_long
+getopt_long_only
 {% endblock %}
