@@ -8,6 +8,7 @@ lib/c++/mix.sh
 {% if target.os == 'linux' %}
 lib/linux/mix.sh
 {% endif %}
+lib/compiler_rt/hack/mix.sh
 {% endblock %}
 
 {% block std_box %}

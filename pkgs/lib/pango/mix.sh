@@ -19,3 +19,9 @@ lib/fontconfig/mix.sh
 {% block bld_tool %}
 lib/glib/mix.sh
 {% endblock %}
+
+{% block patch %}
+sed -e 's|.*subdir.*test.*||' \
+    -e 's|.*subdir.*exam.*||' \
+    -i meson.build
+{% endblock %}
