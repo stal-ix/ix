@@ -10,12 +10,6 @@ dev/build/pkg-config/mix.sh
 {{super()}}
 {% endblock %}
 
-{% if kind == 'bin' and host.id == target.id %}
-{% set cross %}no{% endset %}
-{% else %}
-{% set cross %}yes{% endset %}
-{% endif %}
-
 {% block step_setup %}
 {{super()}}
 
@@ -59,7 +53,7 @@ meson
 {% endif %}
 
 {% block meson_cross %}
-{% if cross == 'yes' %}
+{% if is_cross %}
 --cross-file="${tmp}/cross.ini"
 --pkg-config-path="${PC_T}"
 --build.pkg-config-path="${PC_H}"

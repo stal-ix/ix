@@ -64,23 +64,20 @@ configure
 
 ${COFLAGS}
 
+{% if is_cross %}
 {% block configure_cross %}
-#TODO(pg): collapse
 {% if kind == 'bin' %}
 --program-prefix={{bin_prefix or ''}}
+--target={{for_target or target.gnu.three}}
 {% else %}
 --program-prefix=
+--target={{target.gnu.three}}
 {% endif %}
 
 --build={{host.gnu.three}}
 --host={{target.gnu.three}}
-
-{% if kind == 'bin' %}
---target={{for_target or target.gnu.three}}
-{% else %}
---target={{target.gnu.three}}
-{% endif %}
 {% endblock %}
+{% endif %}
 
 --disable-dependency-tracking
 
