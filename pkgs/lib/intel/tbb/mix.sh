@@ -29,7 +29,7 @@ cd src/tbb && cat itt_notify.cpp \
 {% endblock %}
 
 {% block cmake_flags %}
--DTBB_TEST=OFF
--DTBB_STRICT=OFF
--DTBBMALLOC_BUILD=OFF
+TBB_TEST=OFF
+TBB_STRICT=OFF
+TBBMALLOC_BUILD=OFF
 {% endblock %}

@@ -15,8 +15,8 @@ cd expat
 {% endblock %}
 
 {% block cmake_flags %}
--DEXPAT_BUILD_EXAMPLES=OFF
--DEXPAT_SHARED_LIBS=OFF
+EXPAT_BUILD_EXAMPLES=OFF
+EXPAT_SHARED_LIBS=OFF
 {% endblock %}
 
 {% block setup_tools %}

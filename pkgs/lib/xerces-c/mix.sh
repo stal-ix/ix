@@ -22,8 +22,8 @@ export CXXFLAGS="-w ${CXXFLAGS}"
 {% endblock %}
 
 {% block cmake_flags %}
--Dnetwork-accessor=curl
--Dtranscoder=iconv
--Dmessage-loader=inmemory
--Dmutex-manager=standard
+network-accessor=curl
+transcoder=iconv
+message-loader=inmemory
+mutex-manager=standard
 {% endblock %}

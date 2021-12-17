@@ -10,8 +10,8 @@ box/boot/mix.sh
 {% endblock %}
 
 {% block cmake_flags %}
--DCARES_STATIC=ON
--DCARES_SHARED=OFF
+CARES_STATIC=ON
+CARES_SHARED=OFF
 {% endblock %}
 
 {% block env %}

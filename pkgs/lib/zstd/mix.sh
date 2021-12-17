@@ -27,9 +27,9 @@ box/boot/mix.sh
 {% endif %}
 
 {% block cmake_flags %}
--DZSTD_BUILD_SHARED=OFF
--DZSTD_BUILD_STATIC=ON
--DZSTD_BUILD_TESTS=OFF
+ZSTD_BUILD_SHARED=OFF
+ZSTD_BUILD_STATIC=ON
+ZSTD_BUILD_TESTS=OFF
 {% endblock %}
 
 {% block env %}

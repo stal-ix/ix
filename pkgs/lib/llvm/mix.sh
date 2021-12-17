@@ -12,9 +12,9 @@ dev/tool/python/mix.sh
 {% block cmake_flags %}
 {{super()}}
 
--DLLVM_ENABLE_PROJECTS=
--DLLVM_BUILD_TOOLS=OFF
--DLLVM_BUILD_UTILS=OFF
+LLVM_ENABLE_PROJECTS=
+LLVM_BUILD_TOOLS=OFF
+LLVM_BUILD_UTILS=OFF
 {% endblock %}
 
 {% block cmake_srcdir %}

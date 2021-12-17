@@ -16,9 +16,9 @@ dev/build/pkg-config/mix.sh
 {% endblock %}
 
 {% block cmake_flags %}
--DBUILD_WSI_XCB_SUPPORT=NO
--DBUILD_WSI_XLIB_SUPPORT=NO
--DBUILD_STATIC_LOADER=YES
+BUILD_WSI_XCB_SUPPORT=NO
+BUILD_WSI_XLIB_SUPPORT=NO
+BUILD_STATIC_LOADER=YES
 {% endblock %}
 
 {% block patch %}

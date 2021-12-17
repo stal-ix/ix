@@ -14,10 +14,10 @@ box/boot/mix.sh
 {% endblock %}
 
 {% block cmake_flags %}
--DMI_OVERRIDE=ON
--DMI_BUILD_STATIC=ON
--DMI_BUILD_SHARED=OFF
--DMI_BUILD_TESTS=OFF
+MI_OVERRIDE=ON
+MI_BUILD_STATIC=ON
+MI_BUILD_SHARED=OFF
+MI_BUILD_TESTS=OFF
 {% endblock %}
 
 {% block install %}

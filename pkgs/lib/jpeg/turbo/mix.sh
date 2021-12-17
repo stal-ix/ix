@@ -16,5 +16,5 @@ lib/png/mix.sh
 {% endblock %}
 
 {% block cmake_flags %}
--DENABLE_SHARED=OFF
+ENABLE_SHARED=OFF
 {% endblock %}

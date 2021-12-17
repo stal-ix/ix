@@ -14,7 +14,7 @@ ${untar} ${src}/*.gz && mv robin* third_party/robin-map
 {% endblock %}
 
 {% block cmake_flags %}
--DTESTS=OFF
+TESTS=OFF
 {% endblock %}
 
 {% block patch %}

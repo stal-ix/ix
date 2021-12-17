@@ -10,7 +10,7 @@ dev/build/pkg-config/mix.sh
 {% endblock %}
 
 {% block cmake_flags %}
--DSPIRV_HEADERS_ENABLE_EXAMPLES=OFF
+SPIRV_HEADERS_ENABLE_EXAMPLES=OFF
 {% endblock %}
 
 {% block lib_deps %}

@@ -48,5 +48,5 @@ export CPPFLAGS="-DPpmd8_RangeDec_Init=Ppmd8_RangeDec_InitXX -DPpmd8_Init=Ppmd8_
 {% endblock %}
 
 {% block cmake_flags %}
--DUSEWX=no
+USEWX=no
 {% endblock %}

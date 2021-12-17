@@ -20,7 +20,7 @@ dev/lang/clang/lib/mix.sh
 
 {% block cmake_flags %}
 {{super()}}
--DLLVM_ENABLE_PROJECTS="clang;lld;polly"
+LLVM_ENABLE_PROJECTS="clang;lld;polly"
 {% endblock %}
 
 {% block cmake_srcdir %}

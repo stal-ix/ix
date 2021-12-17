@@ -53,12 +53,12 @@ done
 {% block cmake_flags %}
 {{super()}}
 
--DLLVM_ENABLE_RUNTIMES="compiler-rt"
--DLLVM_BINARY_DIR="${out}/lib/cmake"
+LLVM_ENABLE_RUNTIMES="compiler-rt"
+LLVM_BINARY_DIR="${out}/lib/cmake"
 
--DCOMPILER_RT_BUILD_LIBFUZZER=OFF
--DCOMPILER_RT_BUILD_MEMPROF=OFF
--DCOMPILER_RT_BUILD_ORC=OFF
+COMPILER_RT_BUILD_LIBFUZZER=OFF
+COMPILER_RT_BUILD_MEMPROF=OFF
+COMPILER_RT_BUILD_ORC=OFF
 {% endblock %}
 
 {% block cmake_srcdir %}

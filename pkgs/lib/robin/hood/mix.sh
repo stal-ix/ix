@@ -15,5 +15,5 @@ export CPPFLAGS="-w ${CPPFLAGS}"
 {% endblock %}
 
 {% block cmake_flags %}
--DRH_STANDALONE_PROJECT=OFF
+RH_STANDALONE_PROJECT=OFF
 {% endblock %}

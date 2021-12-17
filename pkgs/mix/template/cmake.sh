@@ -54,8 +54,14 @@ ${CMFLAGS}
 -DCMAKE_SYSTEM_LIBRARY_PATH="${SLP}"
 -DCMAKE_SYSTEM_PROGRAM_PATH="${SPP}"
 
+{% set cmake_flags %}
 {% block cmake_flags %}
 {% endblock %}
+{% endset %}
+
+{% for f in mix.fix_list(cmake_flags) %}
+-D{{f}}
+{% endfor %}
 
 {% block cmake_srcdir %}
 .

@@ -11,7 +11,7 @@ cd source
 {% endblock %}
 
 {% block cmake_flags %}
--DENABLE_SHARED=OFF
+ENABLE_SHARED=OFF
 {% endblock %}
 
 {% block lib_deps %}

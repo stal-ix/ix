@@ -21,6 +21,6 @@ EOF
 {% endblock %}
 
 {% block cmake_flags %}
--DTURBO_USE_SYSTEM_DEPS=ON
--DTURBO_USE_SYSTEM_TVISION=ON
+TURBO_USE_SYSTEM_DEPS=ON
+TURBO_USE_SYSTEM_TVISION=ON
 {% endblock %}

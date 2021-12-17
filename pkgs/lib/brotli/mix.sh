@@ -12,8 +12,8 @@ box/boot/mix.sh
 {% endif %}
 
 {% block cmake_flags %}
--DBROTLI_SHARED_LIBS=
--DBROTLI_DISABLE_TESTS=ON
+BROTLI_SHARED_LIBS=
+BROTLI_DISABLE_TESTS=ON
 {% endblock %}
 
 {% block patch %}
