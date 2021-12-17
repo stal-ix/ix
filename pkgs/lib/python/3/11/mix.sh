@@ -21,6 +21,20 @@ dev/tool/python/mix.sh
 export CPPFLAGS="-DCONFIG_64=1 -DSQLITE_OMIT_LOAD_EXTENSION=1 -DHAVE_NDBM_H=1 ${CPPFLAGS}"
 {% endblock %}
 
+{% block patch %}
+{{super()}}
+cd Modules/_ctypes
+cat cfield.c \
+    | grep -v 'ffi_type ffi_type_s' \
+    | grep -v 'ffi_type ffi_type_u' \
+    | grep -v 'ffi_type ffi_type_d' \
+    | grep -v 'ffi_type ffi_type_f' \
+    | grep -v 'ffi_type ffi_type_v' \
+    | grep -v 'ffi_type ffi_type_p' \
+    | grep -v 'ffi_type ffi_type_l' \
+    | grep -v 'FFI_TYPE_LONGDOUBLE };' > _ && mv _ cfield.c
+{% endblock %}
+
 {% block ensure_static_build %}
 base64 -d << EOF > fix.py
 {% include 'fix.py/base64' %}

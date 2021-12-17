@@ -13,6 +13,10 @@ lib/c/mix.sh
 lib/c/mix.sh
 {% endblock %}
 
+{% block host_libs %}
+lib/c/mix.sh
+{% endblock %}
+
 {% block bld_tool %}
 dev/lang/m4/mix.sh
 {% endblock %}

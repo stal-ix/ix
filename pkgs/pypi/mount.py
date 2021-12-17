@@ -21,11 +21,12 @@ dev/tool/python/mix.sh
 {% endblock %}
 
 {% block unpack %}
+mkdir -p ${out}/share
+cd ${out}/share
+${untar} ${src}/*.whl
 {% endblock %}
 
 {% block build %}
-mkdir -p ${out}/share && cd ${out}/share && ${untar} ${src}/*.whl
-
 python3 << EOF > exports
 import os
 import sys
