@@ -5,16 +5,17 @@ setup_compiler() {
 export CC=clang
 export CXX=clang++
 
-C="--target={{target.arch}}-{{target.vendor}}-{{target.os}} -fcolor-diagnostics -Wno-unused-command-line-argument -nostdinc -nostdinc++ ${CPPFLAGS} ${CFLAGS} -nostdlib -nostdlib++ ${LDFLAGS} ${OPTFLAGS}"
+L="-nostdlib -nostdlib++ ${LDFLAGS}"
+C="--target={{target.arch}}-{{target.vendor}}-{{target.os}} -fcolor-diagnostics -Wno-unused-command-line-argument -nostdinc -nostdinc++ ${CPPFLAGS} ${CFLAGS} ${OPTFLAGS}"
 
 cat << EOF > cc
 #!$(which dash)
-exec "$(which clang)" ${C} "\$@" ${CONLYFLAGS} ${C}
+exec "$(which clang)" ${C} "\$@" ${CONLYFLAGS} ${L} ${C}
 EOF
 
 cat << EOF > c++
 #!$(which dash)
-exec "$(which clang++)" ${C} "\$@" -Wno-stdlibcxx-not-found ${CXXFLAGS} ${C}
+exec "$(which clang++)" ${C} "\$@" -Wno-stdlibcxx-not-found ${CXXFLAGS} ${L} ${C}
 EOF
 
 cat << EOF > preproc

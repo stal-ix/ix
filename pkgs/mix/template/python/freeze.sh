@@ -9,6 +9,8 @@
 EOF
 
     (
+        set -eu
+
 {% block more_modules %}
 {% endblock %}
     )

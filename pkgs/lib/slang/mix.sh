@@ -38,6 +38,7 @@ make install-static
 {% endblock %}
 
 {% block install %}
+echo 'already installed, fixme'
 {% endblock %}
 
 {% block env %}

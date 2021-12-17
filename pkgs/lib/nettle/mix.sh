@@ -14,8 +14,18 @@ lib/gmp/mix.sh
 lib/c/mix.sh
 {% endblock %}
 
+{% block host_libs %}
+lib/c/mix.sh
+{% endblock %}
+
 {% block bld_tool %}
 dev/doc/texinfo/mix.sh
 dev/build/auto/conf/2/69/mix.sh
 dev/build/auto/make/1/16/mix.sh
+{% endblock %}
+
+{% block setup %}
+for x in getopt getopt_long getopt_long_only optarg opterr optind optopt; do
+    export CPPFLAGS="-D${x}=nettle_${x} ${CPPFLAGS}"
+done
 {% endblock %}

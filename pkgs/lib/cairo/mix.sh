@@ -34,4 +34,8 @@ dev/build/auto/make/1/16/mix.sh
 
 {% block setup %}
 export ax_cv_c_float_words_bigendian=no
+
+for x in getopt getopt_long getopt_long_only optarg opterr optind optopt; do
+    export CPPFLAGS="-D${x}=nettle_${x} ${CPPFLAGS}"
+done
 {% endblock %}

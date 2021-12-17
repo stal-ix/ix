@@ -77,9 +77,9 @@ echo "t ${PC_T}"
 {% endblock %}
 
 {% block patch %}
-CD=${PWD}
+#cat meson.build | grep -v 'DUSE_ELF_TLS' > _ && mv _ meson.build
 
-cd src/gallium/frontends/dri
+pushd src/gallium/frontends/dri
 
 for l in *.c *.h; do
     for x in dri2_lookup_egl_image dri2_validate_egl_image; do
@@ -87,9 +87,7 @@ for l in *.c *.h; do
     done
 done
 
-cd ${CD}
-
-cd src/gallium/drivers/radeonsi
+popd; pushd src/gallium/drivers/radeonsi
 
 for l in *.c *.h *.cpp; do
     for x in vi_alpha_is_on_msb si_emit_cache_flush si_cp_dma_prefetch si_cp_dma_clear_buffer si_cp_dma_wait_for_idle; do

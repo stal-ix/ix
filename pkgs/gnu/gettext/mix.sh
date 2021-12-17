@@ -7,10 +7,9 @@ https://ftp.gnu.org/pub/gnu/gettext/gettext-0.21.tar.gz
 
 {% block bld_libs %}
 lib/c/mix.sh
-lib/iconv/mix.sh
-lib/intl/mix.sh
-lib/unistring/mix.sh
 lib/xml2/mix.sh
+lib/iconv/mix.sh
+lib/unistring/mix.sh
 lib/textstyle/mix.sh
 {% endblock %}
 

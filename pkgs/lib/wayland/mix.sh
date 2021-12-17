@@ -21,6 +21,12 @@ lib/wayland/mix.sh
 {% endif %}
 {% endblock %}
 
+{% if kind == 'bin' and host.id == target.id %}
+{% block meson_cross %}
+# disable cross
+{% endblock %}
+{% endif %}
+
 {% block meson_flags %}
 -Ddocumentation=false
 -Dtests=false

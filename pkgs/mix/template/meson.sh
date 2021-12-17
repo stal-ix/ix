@@ -30,7 +30,7 @@ export PC_T=$(
 cat << EOF > ${tmp}/cross.ini
 [host_machine]
 system = '{{target.os}}'
-cpu_family = '{{target.family}}'
+cpu_family = '{{target.gnu_arch}}'
 cpu = '{{target.gnu_arch}}'
 endian = '{{target.endian}}'
 EOF
@@ -53,11 +53,9 @@ meson
 {% endif %}
 
 {% block meson_cross %}
-{% if is_cross %}
 --cross-file="${tmp}/cross.ini"
 --pkg-config-path="${PC_T}"
 --build.pkg-config-path="${PC_H}"
-{% endif %}
 {% endblock %}
 
 {% block meson_flags %}
@@ -72,7 +70,6 @@ meson
 {% block step_patch %}
 {% if super().strip() %}
 (
-
 {{super()}}
 )
 {% endif %}
