@@ -53,8 +53,7 @@ cat << EOF > main.c
 
 int main() {
     printf("hello!\n");
-
-    return 0;
+    exit(0);
 }
 EOF
 

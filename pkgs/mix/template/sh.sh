@@ -3,7 +3,7 @@
 {% block script_body %}
 {% block prologue %}
 {% if setx %}
-set -x
+set -x; env
 {% endif %}
 
 source_env() {

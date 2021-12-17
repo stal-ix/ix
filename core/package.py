@@ -8,7 +8,15 @@ import core.render_ctx as cr
 
 
 def fmt_sel(s):
-    return str(s)
+    r = s['name']
+
+    for f in s['flags']:
+        if f in ('host', 'target'):
+            pass
+        else:
+            r = r + ' ' + f + '=' + str(s['flags'][f])
+
+    return r
 
 
 def parse_pkg_flags(v):
@@ -42,23 +50,35 @@ def make_selector(v, flags):
     return v
 
 
-def visit_lst(lst, f):
+def rlist(l):
+    return list(reversed(list(l)))
+
+
+def visit_node(n, f, k):
     s = set()
-    r = []
 
-    def visit(l):
-        if l.uid not in s:
-            s.add(l.uid)
+    def v(l):
+        kk = k(l)
 
-            for x in f(l):
-                visit(x)
+        if kk not in s:
+            s.add(kk)
 
-            r.append(l)
+            for x in rlist(f(l)):
+                yield from v(x)
 
-    for l in lst:
-        visit(l)
+            yield l
 
-    return list(reversed(r))
+    return rlist(v(n))
+
+
+def visit_lst(l, f):
+    def ff(n):
+        return f(n) if n else l
+
+    def kk(n):
+        return n.uid if n else None
+
+    return visit_node(None, ff, kk)[1:]
 
 
 def add_kind(k, l):
@@ -148,6 +168,8 @@ class Package:
         return self.load_package_impl(n)
 
     def load_package_impl(self, selector):
+        print(f'{fmt_sel(self.selector)} -> {fmt_sel(selector)}')
+
         try:
             # TODO(pg): proper local flags
             return self.manager.load_package(popf(selector, 'setx'))

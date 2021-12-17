@@ -17,6 +17,7 @@ def bsh(s):
 COL = {
     'r': 31,
     'g': 32,
+    'y': 33,
 }
 
 
@@ -120,9 +121,10 @@ def group_by_out(nodes):
 
 class Executor:
     def __init__(self, nodes):
-        self.s = asyncio.Semaphore(1)
+        self.s = asyncio.Semaphore(4)
         self.o = group_by_out(nodes)
         self.l = []
+        self.f = set()
 
     async def visit_all(self, l):
         await gather(self.visit_node(self.o[n]) for n in l)
@@ -130,17 +132,21 @@ class Executor:
         for x in self.l:
             await x
 
+    def in_fly(self):
+        log(f'INFLY {self.f}', color='y')
+
     async def visit_node(self, n):
         async with n['l']:
             if not n['v']:
-                await self.visit_node_impl(n['n'])
-
-                for x in iter_out(n['n']):
-                    log(f'TOUCH {x}', color='g')
-
+                await self.do_visit(n['n'])
                 assert not n['v']
-
                 n['v'] = True
+
+    async def do_visit(self, n):
+        await self.visit_node_impl(n)
+
+        for o in iter_out(n):
+            log(f'TOUCH {o}', color='g')
 
     async def visit_node_impl(self, n):
         if all(os.path.isfile(x) for x in iter_out(n)):
@@ -155,7 +161,15 @@ class Executor:
         await gather(self.visit_node(self.o[x]) for x in iter_in(n))
 
         async with self.s:
+            for o in iter_out(n):
+                self.f.add(o)
+                self.in_fly()
+
             await asyncio.to_thread(self.execute_node, n)
+
+            for o in iter_out(n):
+                self.f.remove(o)
+                self.in_fly()
 
         if cached:
             self.l.append(asyncio.create_task(asyncio.to_thread(self.store, n)))

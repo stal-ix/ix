@@ -61,7 +61,7 @@ class ScriptBuilder:
     def build_sh_script(self, data, env):
         return {
             'args': ['dash', '-s'],
-            'stdin': 'echo ${DEBUG_INFO}\n' + data,
+            'stdin': data,
             'env': env,
         }
 
@@ -109,8 +109,6 @@ class CmdBuild:
                 h_bin.append(p)
 
             yield p.pkg_name.replace('-', '_').replace('L_lib_', 'lib_'), p.out_dir
-
-        yield 'DEBUG_INFO', 'XXXXXXXXXXXXX\n' + rev_dirs(t_lib)
 
         yield 'MIX_B_DIR', rev_dirs(h_bin)
         yield 'MIX_H_DIR', rev_dirs(h_lib)

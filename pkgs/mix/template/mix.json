@@ -40,8 +40,13 @@
 {% endblock %}
 {% endset %}
 
+{% set host_libs %}
+{% block host_libs %}
+{% endblock %}
+{% endset %}
+
 {% block bld_host_libs %}
-{{mix.list_to_json(bld_libs)}}
+{{mix.list_to_json(host_libs)}}
 {% endblock %}
 
 {% block bld_target_libs %}
