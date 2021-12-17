@@ -51,7 +51,3 @@ rm -rf ${out}/var
 rm -rf ${out}/share
 {% endif %}
 {% endblock %}
-
-{% block test %}
-echo 'FIXME'
-{% endblock %}

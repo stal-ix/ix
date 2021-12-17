@@ -1,5 +1,7 @@
 {% extends '//mix/template/hub.sh' %}
 
 {% block lib_deps %}
-lib/build/opt/{{opt or 'safe'}}/mix.sh
+{% for o in (opt or 'O2').split(',') %}
+lib/build/opt/{{o}}/mix.sh
+{% endfor %}
 {% endblock %}

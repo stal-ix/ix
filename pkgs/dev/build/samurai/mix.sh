@@ -13,11 +13,6 @@ box/boot/mix.sh
 export CPPFLAGS="-Dwarn=samu_warn ${CPPFLAGS}"
 {% endblock %}
 
-{% block install %}
-{{super()}}
-cd ${out}/bin && ln -s samu ninja
-{% endblock %}
-
 {% block bld_libs %}
 lib/c/mix.sh
 {% endblock %}

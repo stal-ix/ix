@@ -6,7 +6,7 @@ lib/dlfcn/scripts/mix.sh
 {% endblock %}
 
 {% block step_unpack %}
-echo 'skip unpack'
+echo 'nothing to unpack'
 {% endblock %}
 
 {% block build %}

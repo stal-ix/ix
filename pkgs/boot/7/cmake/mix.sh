@@ -29,8 +29,8 @@ sed -e 's|.*define.*HAS_INTEL.*||' -i Utilities/cmlibrhash/librhash/byte_order.h
 {{super()}}
 {% endblock %}
 
-{% block setup %}
-export CPPFLAGS="-DZSTD_NO_INTRINSICS=1 ${CPPFLAGS}"
+{% block cpp_defines %}
+ZSTD_NO_INTRINSICS=1
 {% endblock %}
 
 {% block cmake_flags %}
@@ -41,9 +41,8 @@ export CPPFLAGS="-DZSTD_NO_INTRINSICS=1 ${CPPFLAGS}"
 
 {% block configure %}
 dash bootstrap \
-    --prefix=${out}         \
-    --parallel=${make_thrs} \
-    --generator=Ninja
-
+    --prefix=${out}   \
+    --generator=Ninja \
+    --parallel=${make_thrs}
 {{super()}}
 {% endblock %}

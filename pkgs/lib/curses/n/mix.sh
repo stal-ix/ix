@@ -60,7 +60,3 @@ export COFLAGS="--with-curses=${out} --with-ncurses=${out} \${COFLAGS}"
 {% block lib_deps %}
 lib/c/mix.sh
 {% endblock %}
-
-{% block test %}
-echo 'TODO(pg): fix empty data test'
-{% endblock %}

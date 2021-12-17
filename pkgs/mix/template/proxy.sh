@@ -1,5 +1,9 @@
 {% extends 'std/mix.sh' %}
 
+{% block script_init_env %}
+set +u # TODO(pg): relax
+{% endblock %}
+
 {% block decompressor %}
 {% endblock %}
 

@@ -59,7 +59,7 @@ class RenderContext:
         self.package = package
 
     def render(self):
-        return json.loads(self.template(self.name))
+        return json.loads(self.template(self.package.name))
 
     def fix_list(self, lst):
         return cononize(lst)
@@ -82,10 +82,6 @@ class RenderContext:
     def files(self):
         return FileLoader(self)
 
-    @property
-    def name(self):
-        return self.package.name
-
     def template(self, path):
         pkg = self.package
         tmpl = pkg.manager.env.get_template(path)
@@ -94,7 +90,8 @@ class RenderContext:
             'mix': self,
             'host': pkg.host,
             'is_cross': True,
-            'name': self.name,
+            'name': pkg.name,
+            'uniq_id': pkg.uniq_id,
         }, pkg.flags)
 
         try:

@@ -47,3 +47,34 @@ else
     setup_tc_here
 fi
 {% endblock %}
+
+{% block step_setup %}
+{% set cpp_flags %}
+  {% block cpp_flags %}
+  {% endblock %}
+
+  {% set cpp_defines %}
+    {% block cpp_defines %}
+    {% endblock %}
+
+    {% set c_rename_symbol %}
+      {% block c_rename_symbol %}
+      {% endblock %}
+    {% endset %}
+
+    {% for f in mix.parse_list(c_rename_symbol) %}
+      {{f}}={{uniq_id}}_{{f}}
+    {% endfor %}
+  {% endset %}
+
+  {% for f in mix.parse_list(cpp_defines) %}
+    -D{{f}}
+  {% endfor %}
+{% endset %}
+
+{% for f in mix.parse_list(cpp_flags) %}
+export CPPFLAGS="{{f}} ${CPPFLAGS}"
+{% endfor %}
+
+{{super()}}
+{% endblock %}

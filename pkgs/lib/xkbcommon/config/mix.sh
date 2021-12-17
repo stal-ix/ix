@@ -24,7 +24,3 @@ export XKB_CONFIG="${out}/share/X11/xkb"
 {% block lib_deps %}
 lib/c/mix.sh
 {% endblock %}
-
-{% block test %}
-echo 'TODO(pg): fix tests for data'
-{% endblock %}

@@ -1,8 +1,4 @@
-{% extends '//mix/template/c_std.sh' %}
-
-{% block step_unpack %}
-echo 'TODO fix me, proper empty unpack'
-{% endblock %}
+{% extends '//mix/template/proxy.sh' %}
 
 {% block lib_deps %}
 lib/compiler_rt/full/mix.sh

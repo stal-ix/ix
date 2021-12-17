@@ -131,6 +131,10 @@ class Package:
         return self.flags['kind'][:1].upper() + '-' + self.name.removesuffix('.sh').removesuffix('/mix').replace('/', '-').replace('.', '-').replace('_', '-').replace('--', '-')
 
     @property
+    def uniq_id(self):
+        return self.pkg_name.replace('-', '_').replace('L_lib_', 'lib_')
+
+    @property
     def flags(self):
         return self.selector['flags']
 

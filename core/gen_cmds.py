@@ -108,7 +108,7 @@ class CmdBuild:
             else:
                 h_bin.append(p)
 
-            yield p.pkg_name.replace('-', '_').replace('L_lib_', 'lib_'), p.out_dir
+            yield p.uniq_id, p.out_dir
 
         yield 'MIX_B_DIR', rev_dirs(h_bin)
         yield 'MIX_H_DIR', rev_dirs(h_lib)
