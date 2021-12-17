@@ -2,7 +2,7 @@
 
 {% block std_env %}
 {% block c_compiler %}
-dev/lang/clang/mix.sh
+dev/lang/clang/mix.sh(opt=fast)
 {% endblock %}
 {{super()}}
 {% endblock %}
@@ -21,6 +21,13 @@ setup_tc() {
 {% endblock %}
 
 {% block setup_compiler %}
+export CFLAGS=
+export LDFLAGS=
+export OPTFLAGS=
+export CPPFLAGS=
+export CXXFLAGS=
+export CONLYFLAGS=
+
 if command -v ls; then
     mkpushd tc
     {% include 'cross_tc.sh' %}

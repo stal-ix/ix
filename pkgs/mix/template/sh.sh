@@ -8,7 +8,7 @@ set -x
 
 source_env() {
     OFS=${IFS}; IFS=':'; for x in ${1}; do
-        . "${x}/env"
+        IFS=${OFS}; . "${x}/env"; IFS=':'
     done; IFS=${OFS}
 }
 
@@ -20,13 +20,8 @@ cd /
 # init
 export PATH=
 export CMPATH=
-export CFLAGS=
 export COFLAGS=
 export CMFLAGS=
-export LDFLAGS=
-export CXXFLAGS=
-export CPPFLAGS=
-export CONLYFLAGS=
 export PYTHONPATH=
 export ACLOCAL_PATH=
 export PKG_CONFIG_PATH=

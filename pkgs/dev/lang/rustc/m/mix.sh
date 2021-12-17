@@ -54,8 +54,7 @@ sed -e 's/VERSION_GIT.*/QW -DVERSION_BUILDTIME=\\"\\" -DVERSION_GIT_ISDIRTY=1 -D
 
 {% block build %}
 bash << EOF
-set -e
-set -x
+set -ue
 
 echo '1.29.0' > rust-version
 

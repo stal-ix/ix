@@ -81,14 +81,19 @@ class Manager:
             if os.path.basename(x) == 'mix.sh':
                 yield self.load_package({'name': x})
 
-    def build_packages(self, pkgs):
-        tmp = os.path.join(self.config.store_dir, 'build.' + str(random.random()))
+    def collect_garbage(self, path):
+        base = os.path.basename(path)
+
+        if '-' not in base:
+            base = base + '.' + str(random.random())
 
         try:
-            shutil.move(self.config.build_dir, tmp)
+            shutil.move(path, os.path.join(self.config.ensure_trash_dir(), base))
         except FileNotFoundError:
             pass
 
+    def build_packages(self, pkgs):
+        self.collect_garbage(self.config.build_dir)
         ce.execute(self.build_graph(pkgs))
 
     def load_realm(self, name):

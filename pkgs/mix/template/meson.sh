@@ -10,9 +10,36 @@ dev/build/pkg-config/mix.sh
 {{super()}}
 {% endblock %}
 
+{% if kind == 'bin' and host.id == target.id %}
+{% set cross %}no{% endset %}
+{% else %}
+{% set cross %}yes{% endset %}
+{% endif %}
+
 {% block step_setup %}
 {{super()}}
+
 export CPPFLAGS="-Wno-unknown-warning-option ${CPPFLAGS}"
+
+export PC_H=$(
+    export PKG_COFIG_PATH=
+    source_env "${MIX_B_DIR}:${MIX_H_DIR}"
+    echo ${PKG_CONFIG_PATH}
+)
+
+export PC_T=$(
+    export PKG_COFIG_PATH=
+    source_env "${MIX_T_DIR}"
+    echo ${PKG_CONFIG_PATH}
+)
+
+cat << EOF > ${tmp}/cross.ini
+[host_machine]
+system = '{{target.os}}'
+cpu_family = '{{target.family}}'
+cpu = '{{target.gnu_arch}}'
+endian = '{{target.endian}}'
+EOF
 {% endblock %}
 
 {% block configure %}
@@ -30,6 +57,14 @@ meson
 -Db_asneeded=false
 -Db_lundef=false
 {% endif %}
+
+{% block meson_cross %}
+{% if cross == 'yes' %}
+--cross-file="${tmp}/cross.ini"
+--pkg-config-path="${PC_T}"
+--build.pkg-config-path="${PC_H}"
+{% endif %}
+{% endblock %}
 
 {% block meson_flags %}
 {% endblock %}

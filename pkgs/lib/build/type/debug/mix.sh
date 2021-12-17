@@ -1,5 +1,5 @@
 {% extends '//mix/template/py.py' %}
 
 {% block env %}
-export OPTFLAGS="-UNDEBUG -O0 -g"
+export OPTFLAGS="-UNDEBUG -g ${OPTFLAGS}"
 {% endblock %}

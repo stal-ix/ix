@@ -56,8 +56,24 @@ lib/wayland/protocols/mix.sh
 -Dshared-llvm=disabled
 {% endblock %}
 
-{% block setup %}
+{% block step_setup %}
 export CPPFLAGS="-Dhandle_table_remove=mesa_handle_table_remove -Dos_create_anonymous_file=os_create_anonymous_file_mesa ${CPPFLAGS}"
+{{super()}}
+
+export PC_H=$(
+    export PKG_COFIG_PATH=
+    source_env "${MIX_B_DIR}:${MIX_H_DIR}"
+    echo ${PKG_CONFIG_PATH}
+)
+
+export PC_T=$(
+    export PKG_COFIG_PATH=
+    source_env "${MIX_T_DIR}"
+    echo ${PKG_CONFIG_PATH}
+)
+
+echo "h ${PC_H}"
+echo "t ${PC_T}"
 {% endblock %}
 
 {% block patch %}

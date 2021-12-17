@@ -1,4 +1,5 @@
 import os
+import sys
 import asyncio
 import beautysh
 import itertools
@@ -13,6 +14,16 @@ def bsh(s):
     return beautysh.Beautify().beautify_string(s)[0]
 
 
+COL = {
+    'r': 31,
+    'g': 32,
+}
+
+
+def log(v, color='r'):
+    print(f'\x1b[{COL[color]}m{v}\x1b[0m', file=sys.stderr)
+
+
 def execute_cmd(c):
     env = c.get('env', {})
 
@@ -24,11 +35,12 @@ def execute_cmd(c):
     stdin = c.get('stdin', '')
 
     try:
-        return subprocess.run(c['args'], input=stdin.encode() or None, env=env, check=True)
+        try:
+            log(f'ENTER {descr}')
 
-        print(res.stdout.decode())
-
-        res.check_returncode()
+            return subprocess.run(c['args'], input=stdin.encode() or None, env=env, check=True)
+        finally:
+            log(f'LEAVE {descr}')
     except Exception as e:
         def iter_lines():
             yield '____|' + descr
@@ -47,7 +59,7 @@ def execute_cmd(c):
                     show = False
                     continue
 
-                if show:
+                if True or show:
                     if l.strip():
                         ss = str(i + 1)
 
@@ -108,7 +120,7 @@ def group_by_out(nodes):
 
 class Executor:
     def __init__(self, nodes):
-        self.s = asyncio.Semaphore(4)
+        self.s = asyncio.Semaphore(1)
         self.o = group_by_out(nodes)
         self.l = []
 
@@ -124,7 +136,7 @@ class Executor:
                 await self.visit_node_impl(n['n'])
 
                 for x in iter_out(n['n']):
-                    print(f'{x} complete')
+                    log(f'TOUCH {x}', color='g')
 
                 assert not n['v']
 

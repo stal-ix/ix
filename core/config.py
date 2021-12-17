@@ -51,6 +51,9 @@ def enrich(d):
             'x86_64': 'X86',
         }[d['gnu_arch']]
 
+    if 'endian' not in d:
+        d['endian'] = 'little'
+
     add_gnu(d)
 
     if 'id' not in d:
@@ -80,13 +83,13 @@ def get_raw_arch(n):
         }
 
     if n == 'x86_64':
-        return {'arch': 'x86_64'}
+        return {'gnu_arch': 'x86_64', 'family': 'x86'}
 
     if n == 'arm64':
-        return {'arch': 'arm64'}
+        return du(a('aarch64'), {'arch': 'arm64'})
 
-    if n == 'aarch':
-        return {'gnu_arch': 'aarch64'}
+    if n == 'aarch64':
+        return {'gnu_arch': 'aarch64', 'family': 'arm'}
 
     if n == 'darwin-arm64':
         return du(a('darwin'), a('arm64'))
@@ -108,6 +111,20 @@ class Config:
     @property
     def store_dir(self):
         return os.path.join(self.mix_dir, 'store')
+
+    @property
+    def trash_dir(self):
+        return os.path.join(self.mix_dir, 'trash')
+
+    def ensure_trash_dir(self):
+        res = self.trash_dir
+
+        try:
+            os.makedirs(res)
+        except OSError:
+            pass
+
+        return res
 
     @property
     def realm_dir(self):

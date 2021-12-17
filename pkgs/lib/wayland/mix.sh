@@ -15,6 +15,12 @@ lib/xml2/mix.sh
 lib/expat/mix.sh
 {% endblock %}
 
+{% block bld_tool %}
+{% if kind == 'lib' %}
+lib/wayland/mix.sh
+{% endif %}
+{% endblock %}
+
 {% block meson_flags %}
 -Ddocumentation=false
 -Dtests=false
@@ -23,4 +29,14 @@ lib/expat/mix.sh
 {% block install %}
 {{super()}}
 mv ${out}/lib/pkgconfig ${out}/share/
+
+find ${out}/ | grep '\.pc$' | while read l; do
+    if grep '/bin' ${l}; then
+{% if kind == 'bin' %}
+        echo "stay ${l}"; else rm ${l}
+{% else %}
+        rm ${l}; else echo "stay ${l}"
+{% endif %}
+    fi
+done
 {% endblock %}

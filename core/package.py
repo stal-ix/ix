@@ -58,7 +58,7 @@ def visit_lst(lst, f):
     for l in lst:
         visit(l)
 
-    return r
+    return list(reversed(r))
 
 
 def add_kind(k, l):

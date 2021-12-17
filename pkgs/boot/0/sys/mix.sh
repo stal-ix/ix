@@ -2,7 +2,6 @@
 
 {% block ind_deps %}
 boot/0/sys/env/mix.sh
-lib/build/mix.sh
 {% endblock %}
 
 {% block script_body %}
@@ -73,5 +72,5 @@ if sh != 'dash':
     sl(sh, 'dash')
 
 with open(os.path.join(out, 'env'), 'w') as f:
-    f.write('export PATH=_/bin:${PATH}'.replace('_', out))
+    f.write('export PATH=_/bin:${PATH}\n'.replace('_', out))
 {% endblock %}

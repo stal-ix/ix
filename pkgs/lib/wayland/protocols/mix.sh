@@ -15,5 +15,6 @@ lib/wayland/mix.sh
 
 {% block bld_libs %}
 lib/c/mix.sh
+lib/ffi/mix.sh
 lib/wayland/mix.sh
 {% endblock %}

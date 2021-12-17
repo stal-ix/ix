@@ -5,8 +5,17 @@ https://musl.libc.org/releases/musl-1.2.2.tar.gz
 aed8ae9e2b0898151b36a204088292dd
 {% endblock %}
 
+{% block lib_deps %}
+lib/build/mix.sh
+{% endblock %}
+
 {% block configure_script %}
 ./configure
+{% endblock %}
+
+{% block setup %}
+export PICFLAGS="-fno-pic -fno-pie"
+export CPPFLAGS="${PICFLAGS} ${CPPFLAGS}"
 {% endblock %}
 
 {% block install %}
@@ -32,7 +41,7 @@ EOF
 
 {% block env %}
 export CMFLAGS="-DLIBCXX_HAS_MUSL_LIBC=yes \${CMFLAGS}"
-export CPPFLAGS="-isystem ${out}/include \${CPPFLAGS}"
+export CPPFLAGS="${PICFLAGS} -isystem ${out}/include \${CPPFLAGS}"
 export LDFLAGS="-static \${LDFLAGS}"
 {% endblock %}
 

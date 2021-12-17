@@ -5,10 +5,11 @@ import core.manager as cm
 
 
 def cli_gc(ctx):
-    for x in cm.Manager(cc.config_from(ctx)).iter_garbage():
-        print('purge ' + x)
+    m = cm.Manager(cc.config_from(ctx))
 
-        try:
-            shutil.rmtree(x)
-        except FileNotFoundError:
-            pass
+    for x in m.iter_garbage():
+        print(f'purge {x}')
+        m.collect_garbage(x)
+
+    print('purge trash...')
+    shutil.rmtree(m.config.ensure_trash_dir())

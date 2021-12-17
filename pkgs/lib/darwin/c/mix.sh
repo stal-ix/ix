@@ -1,5 +1,9 @@
 {% extends '//mix/template/py.py' %}
 
+{% block lib_deps %}
+lib/build/mix.sh
+{% endblock %}
+
 {% block build %}
 import os
 

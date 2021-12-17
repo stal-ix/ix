@@ -32,7 +32,9 @@ if DATA:
     tmp = os.path.join(os.environ['tmp'], 'tmp')
     os.makedirs(tmp)
     os.environ['TMPDIR'] = tmp
-    subprocess.run([mix.which('dash')], input=('\n'.join(iter_lines()) + '\n').encode(), check=True)
+    input = '\n'.join(iter_lines()).strip() + '\n'
+    print(input)
+    subprocess.run([mix.which('dash')], input=input.encode(), check=True)
 {% endblock %}
 
 env_data = r"""
@@ -44,7 +46,7 @@ export PATH="{outdir}/bin:${PATH}"
 outdir = os.environ['out']
 
 with open(outdir + '/env', 'a') as f:
-    f.write(env_data.replace('{outdir}', outdir))
+    f.write(env_data.replace('{outdir}', outdir).strip() + '\n')
 {% endblock %}
 
 {% block script_kind %}
