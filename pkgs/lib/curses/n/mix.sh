@@ -10,6 +10,10 @@ lib/z/mix.sh
 shell/cli/bash/minimal/mix.sh
 {% endblock %}
 
+{% block lib_deps %}
+lib/c/mix.sh
+{% endblock %}
+
 {% block run_data %}
 {% if kind == 'lib' %}
 lib/curses/n/mix.sh
@@ -55,8 +59,4 @@ cd ${out}/lib && (for i in `ls *.a`; do q=`echo $i | tr -d 'w'`; ln -s $i $q; do
 export TERMINFO="${out}/share/terminfo"
 {% endif %}
 export COFLAGS="--with-curses=${out} --with-ncurses=${out} \${COFLAGS}"
-{% endblock %}
-
-{% block lib_deps %}
-lib/c/mix.sh
 {% endblock %}
