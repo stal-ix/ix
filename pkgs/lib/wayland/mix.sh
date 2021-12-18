@@ -35,14 +35,4 @@ lib/wayland/mix.sh
 {% block install %}
 {{super()}}
 mv ${out}/lib/pkgconfig ${out}/share/
-
-find ${out}/ | grep '\.pc$' | while read l; do
-    if grep '/bin' ${l}; then
-{% if kind == 'bin' %}
-        echo "stay ${l}"; else rm ${l}
-{% else %}
-        rm ${l}; else echo "stay ${l}"
-{% endif %}
-    fi
-done
 {% endblock %}

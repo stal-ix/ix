@@ -22,13 +22,28 @@ fi
 {% endblock %}
 {% endif %}
 
-{% if kind != 'lib' %}
+log_rm() {
+    echo "RM ${1}"
+    rm "${1}"
+}
+
 if command -v find; then
+{% if kind != 'lib' %}
     find ${out}/ | grep '\.[ao]$' | while read l; do
-        rm ${l}
+        log_rm ${l}
+    done
+{% endif %}
+
+    find ${out}/ | grep '\.pc$' | while read l; do
+        if grep '/bin' ${l}; then
+{% if kind == 'bin' %}
+            echo "STAY ${l}"; else log_rm ${l}
+{% else %}
+            log_rm ${l}; else echo "STAY ${l}"
+{% endif %}
+        fi
     done
 fi
-{% endif %}
 
 if test -d ${out}/man; then
     mkdir -p ${out}/share

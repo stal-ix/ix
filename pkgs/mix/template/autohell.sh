@@ -74,6 +74,7 @@ ${COFLAGS}
 --host={{target.gnu.three}}
 {% endblock %}
 
+--enable-silent-rules
 --disable-dependency-tracking
 
 {% block enable_static %}

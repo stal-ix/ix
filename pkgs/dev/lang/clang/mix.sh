@@ -24,15 +24,58 @@ LLVM_ENABLE_PROJECTS="clang;lld;polly"
 llvm
 {% endblock %}
 
+{% set targets %}
+clang
+clang-cmake-exports
+clang-resource-headers
+
+lld
+lld-cmake-exports
+
+dsymutil
+
+llvm-ar
+llvm-as
+llvm-install-name-tool
+llvm-libtool-darwin
+llvm-lipo
+llvm-nm
+llvm-objcopy
+llvm-objdump
+{% endset %}
+
+{% block ninja_build_targets %}
+{{targets}}
+{% endblock %}
+
+{% block ninja_install_targets %}
+{% for t in mix.parse_list(targets) %}
+install-{{t}}
+{% endfor %}
+{% endblock %}
+
 {% block install %}
 {{super()}}
 
+mkdir ${out}/share
 mv ${out}/lib/clang/13*/include ${out}/share/
 rm -rf ${out}/libexec
 
-python3 << EOF
-{% include 'strip.py' %}
-EOF
+cd ${out}/bin
+
+ln -sf clang-13 clang
+ln -sf clang-13 clang++
+ln -sf clang-13 clang-cpp
+
+ln -sf lld ld.lld
+ln -sf lld ld64.lld
+ln -sf lld ld64.lld.darwinold
+ln -sf lld ld64.lld.darwinnew
+ln -sf lld lld-link
+
+ln -sf llvm-objdump llvm-otool
+ln -sf llvm-ar llvm-ranlib
+ln -sf llvm-objcopy llvm-strip
 {% endblock %}
 
 {% block env %}

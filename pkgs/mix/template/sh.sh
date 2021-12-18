@@ -50,7 +50,7 @@ export TMPDIR=${PWD}/tmp
 
 {% block epilogue %}
 {% block cleanup_pkg %}
-rm -rf ${out}/lib/*.so* ${out}/lib/*.la* ${out}/lib/*.dylib* || true
+rm -rf ${out}/lib/*.so* ${out}/lib/*.la* ${out}/lib/*.dylib*
 {% endblock %}
 rm -rf ${tmp}
 {% endblock %}
