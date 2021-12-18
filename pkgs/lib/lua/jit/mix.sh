@@ -9,8 +9,14 @@ https://luajit.org/download/LuaJIT-2.0.5.tar.gz
 lib/c/mix.sh
 {% endblock %}
 
+{% block bld_tool %}
+#lib/lua/puc/mix.sh
+{% endblock %}
+
 {% block make_flags %}
 BUILDMODE=static
+#MINILUA_T=$(which lua)
+#MINILUA_O=
 {% endblock %}
 
 {% block env %}
