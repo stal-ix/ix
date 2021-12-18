@@ -61,13 +61,10 @@ class Manager:
         list(self.load_packages(selectors))
 
         for pkg in self._p.values():
-            yield from list(cg.iter_build_commands(pkg))
-
-            if 0:
-                try:
-                    yield from list(cg.iter_build_commands(pkg))
-                except Exception as e:
-                    raise er.Error(f'can not render build commands for {pkg.name}: {e}')
+            try:
+                yield from list(cg.iter_build_commands(pkg))
+            except Exception as e:
+                raise er.Error(f'can not render build commands for {pkg.name}: {e}')
 
     def build_graph(self, selectors):
         return {
