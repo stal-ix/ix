@@ -14,5 +14,7 @@ lib/metalink/mix.sh
 {% endblock %}
 
 {% block patch %}
-cat lib/xalloc-die.c | grep -v 'memory ex' > _ && mv _ lib/xalloc-die.c
+cat lib/xalloc-die.c      \
+    | grep -v 'memory ex' \
+    > _ && mv _ lib/xalloc-die.c
 {% endblock %}

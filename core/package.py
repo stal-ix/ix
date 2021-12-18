@@ -172,8 +172,7 @@ class Package:
         return self.load_package_impl(n)
 
     def load_package_impl(self, selector):
-        if 'clang' in str(selector):
-            print(f'{fmt_sel(self.selector)} -> {fmt_sel(selector)}')
+        # print(f'{fmt_sel(self.selector)} -> {fmt_sel(selector)}')
 
         try:
             # TODO(pg): proper local flags
