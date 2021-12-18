@@ -8,3 +8,8 @@ https://s3.amazonaws.com/json-c_releases/releases/json-c-0.15.tar.gz
 {% block lib_deps %}
 lib/c/mix.sh
 {% endblock %}
+
+{% block c_rename_symbol %}
+json_object_get_type
+json_object_equal
+{% endblock %}
