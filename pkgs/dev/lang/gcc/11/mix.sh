@@ -80,4 +80,5 @@ export STRIP_FOR_TARGET=targetstrip
 {% endblock %}
 
 {% block postinstall %}
+echo 'FIXME(pg): proper(shared/) headers location'
 {% endblock %}
