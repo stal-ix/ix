@@ -62,7 +62,6 @@ os_create_anonymous_file
 {% endblock %}
 
 {% block patch %}
-exit 1
 pushd src/gallium/frontends/dri
 
 for l in *.c *.h; do

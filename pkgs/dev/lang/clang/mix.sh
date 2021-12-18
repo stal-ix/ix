@@ -7,11 +7,8 @@ lib/linux/mix.sh
 {% if target.os == 'darwin' %}
 lib/darwin/framework/CoreFoundation/mix.sh
 {% endif %}
-boot/final/cxx/mix.sh
-{% endblock %}
-
-{% block std_env %}
-boot/final/env/std/mix.sh
+lib/c++/mix.sh
+lib/compiler_rt/builtins/mix.sh
 {% endblock %}
 
 {% block ind_deps %}

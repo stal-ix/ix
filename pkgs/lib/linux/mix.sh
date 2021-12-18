@@ -6,14 +6,12 @@ https://www.kernel.org/pub/linux/kernel/v5.x/linux-5.13.12.tar.xz
 {% endblock %}
 
 {% block host_libs %}
-boot/final/cxx/mix.sh
+lib/c/no_rt/mix.sh(boot_std_env={{boot_std_env}})
 {% endblock %}
 
-{% if not boot_std_env %}
-{% block std_env %}
-boot/final/env/std/mix.sh
+{% block std_box %}
+box/boot/mix.sh
 {% endblock %}
-{% endif %}
 
 {% block setup_tools %}
 mkdir tmp; cd tmp; ln -s ${HOST_CC} gcc
