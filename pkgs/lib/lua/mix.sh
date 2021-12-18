@@ -17,6 +17,6 @@ lib/readline/mix.sh
 INSTALL_TOP=${out}
 {% endblock %}
 
-{% block test %}
+{% block test_execute %}
 make test
 {% endblock %}

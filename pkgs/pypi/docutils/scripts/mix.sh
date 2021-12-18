@@ -21,7 +21,7 @@ EOF
 done
 {% endblock %}
 
-{% block test %}
+{% block test_bin %}
 . ${out}/env
 
 export PATH="${out}/bin:${PATH}"

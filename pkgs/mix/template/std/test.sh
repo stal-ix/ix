@@ -1,23 +1,40 @@
-{% if kind == 'bin' %}
+{% set test_bin %}
 {% block test_bin %}
-echo 'no exec tests'
+echo 'no bin tests'
 {% endblock %}
-{% endif %}
+{% endset %}
 
-{% if kind == 'lib' %}
+{% set test_lib %}
 {% block test_lib %}
 echo 'no link tests'
 {% endblock %}
+{% endset %}
 
-{% if host.id == target.id %}
+{% set test_execute %}
 {% block test_execute %}
-echo 'no run linked tests'
+echo 'no exec tests'
 {% endblock %}
-{% endif %}
-{% endif %}
+{% endset %}
 
-{% if kind == 'dat' %}
+{% set test_data %}
 {% block test_data %}
 echo 'no data tests'
 {% endblock %}
+{% endset %}
+
+{% if host.id == target.id %}
+ {% if kind == 'bin' %}
+  {{test_bin}}
+ {% endif %}
+
+ {% if kind == 'lib' %}
+  {{test_lib}}
+  {{test_execute}}
+ {% endif %}
+{% else %}
+ {{test_lib}}
+{% endif %}
+
+{% if kind == 'dat' %}
+{{test_data}}
 {% endif %}

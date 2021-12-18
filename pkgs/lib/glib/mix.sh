@@ -38,3 +38,19 @@ export CPPFLAGS="-D_GNU_SOURCE=1 -I${PWD}/inc ${CPPFLAGS}"
 -Diconv=external
 -Dtests=false
 {% endblock %}
+
+{% block patch %}
+sed -e 's|.*subdir.*fuzz.*||' \
+    -e 's|.*subdir.*test.*||' \
+    -i meson.build
+{% endblock %}
+
+{% block install %}
+{{super()}}
+
+{% if kind == 'lib' %}
+find ${out}/ | grep '\.pc$' | while read i; do
+    sed -e 's|.*bindir.*||' -i ${i}
+done
+{% endif %}
+{% endblock %}

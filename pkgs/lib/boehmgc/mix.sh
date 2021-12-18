@@ -32,6 +32,6 @@ dash autogen.sh
 export COFLAGS="--with-libgc-prefix=${out} \${COFLAGS}"
 {% endblock %}
 
-{% block test %}
+{% block test_execute %}
 make check
 {% endblock %}

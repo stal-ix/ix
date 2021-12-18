@@ -36,3 +36,6 @@ cd ${out}
 EOF
 )
 {% endblock %}
+
+{% block strip_pc %}
+{% endblock %}

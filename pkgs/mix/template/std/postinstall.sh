@@ -22,27 +22,29 @@ fi
 {% endblock %}
 {% endif %}
 
-log_rm() {
-    echo "RM ${1}"
-    rm "${1}"
+warn_rm() {
+    echo "BAD PKG ${1}, add strip_pc block if OK, or remove manually"
+    exit 1
 }
 
 if command -v find; then
 {% if kind != 'lib' %}
     find ${out}/ | grep '\.[ao]$' | while read l; do
-        log_rm ${l}
+        rm ${l}
     done
 {% endif %}
 
+{% block strip_pc %}
     find ${out}/ | grep '\.pc$' | while read l; do
         if grep '/bin' ${l}; then
 {% if kind == 'bin' %}
-            echo "STAY ${l}"; else log_rm ${l}
+            echo "STAY ${l}"; else warn_rm ${l}
 {% else %}
-            log_rm ${l}; else echo "STAY ${l}"
+            warn_rm ${l}; else echo "STAY ${l}"
 {% endif %}
         fi
     done
+{% endblock %}
 fi
 
 if test -d ${out}/man; then

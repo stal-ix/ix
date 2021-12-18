@@ -66,6 +66,6 @@ cat libcxx/CMakeLists.txt \
 cd ${out} && mv include/c++/v1/* include/
 {% endblock %}
 
-{% block test %}
+{% block test_lib %}
 cat ${out}/include/__config_site | grep LIBCPP_ABI
 {% endblock %}

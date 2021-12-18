@@ -55,8 +55,8 @@ dev/lang/gcc/env/mix.sh
 export CPPFLAGS="-w ${CPPFLAGS}"
 export acx_cv_cc_gcc_supports_ada=no
 
-export CC_FOR_TARGET=cc
-export CXX_FOR_TARGET=c++
+export CC_FOR_TARGET=${CC}
+export CXX_FOR_TARGET=${CXX}
 
 export AR=hostar
 export AS=hostas

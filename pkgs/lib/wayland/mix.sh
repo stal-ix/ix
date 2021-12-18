@@ -34,5 +34,18 @@ lib/wayland/mix.sh
 
 {% block install %}
 {{super()}}
+
+cd ${out}/lib/pkgconfig
+
+{% if kind == 'bin' %}
+rm wayland-client.pc \
+   wayland-egl.pc    \
+   wayland-cursor.pc \
+   wayland-server.pc \
+   wayland-egl-backend.pc
+
 mv ${out}/lib/pkgconfig ${out}/share/
+{% else %}
+rm wayland-scanner.pc
+{% endif %}
 {% endblock %}

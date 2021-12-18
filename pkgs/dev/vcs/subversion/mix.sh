@@ -19,3 +19,11 @@ expat="$(find_pkg expat)"
 export COFLAGS=$(echo "${COFLAGS}" | tr ' ' '\n' | grep -v expat | tr '\n' ' ')
 export COFLAGS="${COFLAGS} --with-expat=${expat}/include:${expat}/lib:-lexpat"
 {% endblock %}
+
+{% block install %}
+{{super()}}
+
+{% if kind == 'bin' %}
+rm -rf ${out}/share/pkgconfig
+{% endif %}
+{% endblock %}

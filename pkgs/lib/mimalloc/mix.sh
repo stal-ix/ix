@@ -29,7 +29,7 @@ mv mimalloc-*/* ./
 rm -rf mimalloc-*
 {% endblock %}
 
-{% block test %}
+{% block test_lib %}
 . ${out}/env
 
 clang ${CPPFLAGS} ${CFLAGS} ${LDFLAGS} -o main -x c - << EOF
@@ -44,6 +44,8 @@ int main() {
     return 0;
 }
 EOF
+{% endblock %}
 
+{% block test_execute %}
 ./main
 {% endblock %}

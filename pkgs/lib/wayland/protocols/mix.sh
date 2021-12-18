@@ -18,3 +18,6 @@ lib/c/mix.sh
 lib/ffi/mix.sh
 lib/wayland/mix.sh
 {% endblock %}
+
+{% block strip_pc %}
+{% endblock %}

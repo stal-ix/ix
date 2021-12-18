@@ -1,8 +1,8 @@
 {% extends 'std/mix.sh' %}
 
 {% block std_env %}
-{% if boot_std_env %}
-{{boot_std_env}}
+{% if std_env %}
+{{std_env}}
 {% else %}
 {% block c_compiler %}
 dev/lang/clang/opt/mix.sh

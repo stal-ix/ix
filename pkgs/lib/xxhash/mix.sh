@@ -23,7 +23,7 @@ sed -e 's|libxxhash.a libxxhash|libxxhash.a|' -i Makefile
 >libxxhash.so.0.8.0
 {% endblock %}
 
-{% block test %}
+{% block test_execute %}
 make NO_C90_TEST=true test
 {% endblock %}
 
