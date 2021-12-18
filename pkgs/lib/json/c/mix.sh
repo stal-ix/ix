@@ -10,6 +10,6 @@ lib/c/mix.sh
 {% endblock %}
 
 {% block c_rename_symbol %}
-json_object_get_type
+#json_object_get_type
 json_object_equal
 {% endblock %}
