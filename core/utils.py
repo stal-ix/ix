@@ -1,5 +1,6 @@
 import os
 import json
+import base64
 import hashlib
 import functools
 import itertools
@@ -16,7 +17,7 @@ def iter_dir(w):
 
 
 def string_hash(s):
-    return hashlib.md5(s.encode('utf-8')).hexdigest()[:16]
+    return base64.b64encode(hashlib.md5(s.encode()).digest(), altchars='PG'.encode()).decode()[:16]
 
 
 def struct_hash(d):

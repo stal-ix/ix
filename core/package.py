@@ -1,5 +1,5 @@
 import os
-import json
+import string
 import itertools
 
 import core.utils as cu
@@ -93,11 +93,28 @@ def popf(d, f):
     return d
 
 
+def gen_sym():
+    for x in string.ascii_letters + string.digits:
+        yield x, x
+
+
+SYM = dict(gen_sym())
+
+
+def canon_name(n):
+    n = ''.join(SYM.get(x, '-') for x in n)
+
+    while '--' in n:
+        n = n.replace('--', '-')
+
+    return n.rstrip('-')
+
+
 class Package:
     def __init__(self, selector, mngr):
         self.manager = mngr
 
-        selector = json.loads(json.dumps(selector))
+        selector = cu.copy_dict(selector)
 
         if 'flags' not in selector:
             selector['flags'] = {}
@@ -122,13 +139,14 @@ class Package:
             self.pkg_name,
             self.config.store_dir,
             self.iter_build_dirs(),
-        ])[:16]
+        ])
 
-        self.out_dir = self.config.store_dir + '/' + self.uid + '-' + self.pkg_name
+        self.out_dir = f'{self.config.store_dir}/{self.uid}{self.pkg_name}'
 
     @property
+    @cu.cached_method
     def pkg_name(self):
-        return self.flags['kind'][:1].upper() + '-' + self.name.removesuffix('.sh').removesuffix('/mix').replace('/', '-').replace('.', '-').replace('_', '-').replace('--', '-')
+        return canon_name(self.flags['kind'][:1].upper() + '-' + self.name.removesuffix('.sh').removesuffix('/mix'))
 
     @property
     def uniq_id(self):
