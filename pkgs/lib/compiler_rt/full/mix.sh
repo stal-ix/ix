@@ -11,8 +11,8 @@ lib/linux/mix.sh
 lib/compiler_rt/hack/mix.sh
 {% endblock %}
 
-{% block std_box %}
-box/boot/mix.sh
+{% block bld_tool %}
+dev/tool/python/mix.sh
 {% endblock %}
 
 {% block patch %}
@@ -52,27 +52,7 @@ done
 
 {% block cmake_flags %}
 {{super()}}
-
-LLVM_ENABLE_RUNTIMES="compiler-rt"
-LLVM_BINARY_DIR="${out}/lib/cmake"
-
 COMPILER_RT_BUILD_LIBFUZZER=OFF
 COMPILER_RT_BUILD_MEMPROF=OFF
 COMPILER_RT_BUILD_ORC=OFF
-{% endblock %}
-
-{% block cmake_srcdir %}
-runtimes
-{% endblock %}
-
-{% block ninja_targets %}
-compiler-rt
-{% endblock %}
-
-{% block ninja_install_targets %}
-install-compiler-rt
-{% endblock %}
-
-{% block env %}
-export COMPILER_RT_PATH="${out}"
 {% endblock %}
