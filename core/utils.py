@@ -16,7 +16,7 @@ def iter_dir(w):
 
 
 def string_hash(s):
-    return hashlib.md5(s.encode('utf-8')).hexdigest()
+    return hashlib.md5(s.encode('utf-8')).hexdigest()[:16]
 
 
 def struct_hash(d):

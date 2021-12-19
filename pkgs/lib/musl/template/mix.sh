@@ -18,6 +18,12 @@ export PICFLAGS="-fno-pic -fno-pie"
 export CPPFLAGS="${PICFLAGS} ${CPPFLAGS}"
 {% endblock %}
 
+{% block patch %}
+cat << EOF > src/stdlib/dso_handle.c
+void* __dso_handle = (void*)&__dso_handle;
+EOF
+{% endblock %}
+
 {% block install %}
 {{super()}}
 
@@ -30,7 +36,6 @@ cat << EOF > ${out}/include/error.h
 EOF
 
 (
-
     cd ${out}/lib
 
     ar q libcrt.a crt1.o crti.o crtn.o

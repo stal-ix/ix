@@ -6,7 +6,6 @@
 
 {% block lib_deps %}
 boot/7/lib/cxx/rt/mix.sh
-boot/7/lib/dso_handle/mix.sh
 {% endblock %}
 
 {% block bld_libs %}

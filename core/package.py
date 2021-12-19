@@ -122,7 +122,7 @@ class Package:
             self.pkg_name,
             self.config.store_dir,
             self.iter_build_dirs(),
-        ])
+        ])[:16]
 
         self.out_dir = self.config.store_dir + '/' + self.uid + '-' + self.pkg_name
 

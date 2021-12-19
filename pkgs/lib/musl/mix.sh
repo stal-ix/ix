@@ -10,6 +10,7 @@ export CPPFLAGS="-D__libc_realloc=realloc -D__libc_free=free -D__libc_malloc=mal
 {% endblock %}
 
 {% block patch %}
+{{super()}}
 >src/malloc/lite_malloc.c
 {% endblock %}
 
