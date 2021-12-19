@@ -132,21 +132,26 @@ class Package:
         self.selector = selector
         self.descr = cr.RenderContext(self).render()
 
+        sd = self.config.store_dir
+
         self.uid = cu.struct_hash([
             1,
             self.descr['bld']['fetch'],
             self.descr['bld']['script'],
             self.pkg_name,
-            self.config.store_dir,
+            sd,
             self.iter_build_dirs(),
         ])
 
-        self.out_dir = f'{self.config.store_dir}/{self.uid}{self.pkg_name}'
+        self.out_dir = f'{sd}/{self.uid}{self.pkg_name}'
 
     @property
     @cu.cached_method
     def pkg_name(self):
-        return canon_name(self.flags['kind'][:1].upper() + '-' + self.name.removesuffix('.sh').removesuffix('/mix'))
+        k = self.flags['kind'][:1].upper()
+        n = self.name.removesuffix('.sh').removesuffix('/mix')
+
+        return canon_name(f'{k}-{n}')
 
     @property
     def uniq_id(self):
@@ -189,14 +194,14 @@ class Package:
 
         return self.load_package_impl(n)
 
-    def load_package_impl(self, selector):
-        # print(f'{fmt_sel(self.selector)} -> {fmt_sel(selector)}')
+    def load_package_impl(self, sel):
+        # print(f'{fmt_sel(self.selector)} -> {fmt_sel(sel)}')
 
         try:
             # TODO(pg): proper local flags
-            return self.manager.load_package(popf(selector, 'setx'))
+            return self.manager.load_package(popf(sel, 'setx'))
         except FileNotFoundError:
-            raise ce.Error(f'can not load dependant package {fmt_sel(selector)} of {fmt_sel(self.selector)}')
+            raise ce.Error(f'can not load dependant package {fmt_sel(sel)} of {fmt_sel(self.selector)}')
 
     def load_packages(self, l, flags):
         return (self.load_package(x, flags) for x in l)
@@ -226,7 +231,6 @@ class Package:
 
     @cu.cached_method
     def bld_host_lib_closure(self):
-        # TODO check flags
         return self.visit(self.bld_host_lib_deps(), self.host_lib_flags(), lambda x: x.lib_closure())
 
     @cu.cached_method
@@ -243,7 +247,9 @@ class Package:
         yield from add_kind('host lib', self.bld_host_lib_closure())
 
     def iter_build_depends(self):
-        return filter(lambda x: x['p'].buildable(), self.iter_all_build_depends())
+        pred = lambda x: x['p'].buildable()
+
+        return filter(pred, self.iter_all_build_depends())
 
     def iter_build_dirs(self):
         return list(x['p'].out_dir for x in self.iter_build_depends())
