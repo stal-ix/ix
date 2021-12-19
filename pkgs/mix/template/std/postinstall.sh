@@ -14,7 +14,11 @@ if command -v which; then
     if which llvm-strip; then
         find ${out}/bin/ | while read l; do
             if test -f ${l}; then
-                llvm-strip ${l} || true
+                if test -h ${l}; then
+                    echo "skip symlink ${l}"
+                else
+                    llvm-strip ${l} || true
+                fi
             fi
         done
     fi

@@ -19,15 +19,34 @@ lib/tree/sitter/mix.sh
 {% endblock %}
 
 {% block bld_tool %}
+dev/tool/gperf/mix.sh
 editor/neovim/luafat/mix.sh
 {% endblock %}
 
 {% block cmake_flags %}
-PREFER_LUA=ON
+#PREFER_LUA=ON
 LUA_INCLUDE_DIR="${LUA_INC_PATH}"
 {% endblock %}
 
 {% block script_init_env %}
 export LUA_PATH=
 {{super()}}
+{% endblock %}
+
+{% block setup_tools %}
+cat << EOF > _ && mv _ lua
+#!$(which dash)
+export LUA_PATH="${LUA_PATH}:\${LUA_PATH}"
+exec "$(which lua)" "\$@"
+EOF
+
+chmod +x lua
+{% endblock %}
+
+{% block patch %}
+sed -e 's|val->string|val->string.str|' -i src/nvim/terminal.c
+{% endblock %}
+
+{% block setup %}
+export CPPFLAGS="-w ${CPPFLAGS}"
 {% endblock %}

@@ -1,10 +1,5 @@
 {% extends '//mix/template/make.sh' %}
 
-{% block fetch %}
-https://www.lua.org/ftp/lua-5.4.3.tar.gz
-ef63ed2ecfb713646a7fcc583cf5f352
-{% endblock %}
-
 {% block lib_deps %}
 lib/c/mix.sh
 {% endblock %}
@@ -22,6 +17,10 @@ INSTALL_TOP=${out}
 LIBS="${PWD}/dl.o"
 {% endblock %}
 
+{% block make_target %}
+linux
+{% endblock %}
+
 {% block test_execute %}
 make test
 {% endblock %}
@@ -29,6 +28,11 @@ make test
 {% block script_init_env %}
 export LUA_PATH=
 {{super()}}
+{% endblock %}
+
+{% block patch %}
+sed -e 's|.*return 0.*open failed.*|if (f == NULL) return (strstr(filename, ".so") > 0 \&\& dlopen(filename, 0) != NULL);|' \
+    -i src/loadlib.c
 {% endblock %}
 
 {% block build %}
@@ -50,4 +54,5 @@ ${CC} -c dl.cpp
 
 {% block env %}
 export LUA_INC_PATH="${out}/include"
+export CMFLAGS="-DWITH_LUA_ENGINE=Lua \${CMFLAGS}"
 {% endblock %}

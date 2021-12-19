@@ -9,5 +9,5 @@ gnu/box/mix.sh
 {% block decompressor %}
 tool/pv/mix.sh
 tool/compress/unzip/mix.sh
-lib/archive/mix.sh
+lib/archive/mix.sh(opt=O2;ICF;LTO)
 {% endblock %}

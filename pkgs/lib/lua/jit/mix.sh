@@ -10,15 +10,49 @@ lib/c/mix.sh
 {% endblock %}
 
 {% block bld_tool %}
-#lib/lua/puc/mix.sh
+lib/dlfcn/scripts/mix.sh
+{{super()}}
 {% endblock %}
 
 {% block make_flags %}
 BUILDMODE=static
-#MINILUA_T=$(which lua)
-#MINILUA_O=
+TARGET_LIBS="${PWD}/dl.o"
+{% endblock %}
+
+{% block install %}
+{{super()}}
+cd ${out}/include
+mv luajit-2.0/* ./
+{% endblock %}
+
+{% block script_init_env %}
+export LUA_PATH=
+{{super()}}
+{% endblock %}
+
+{% block patch %}
+sed -e 's|.*return 0.*open failed.*|if (f == NULL) return (strstr(filename, ".so") > 0 \&\& dlopen(filename, 0) != NULL);|' \
+    -i src/lib_package.c
+{% endblock %}
+
+{% block build %}
+(
+    IFS=":"; for x in ${LUA_PATH}; do
+        cat ${x}/mod
+    done
+)| while read l; do
+    n=$(echo ${l} | sed -e 's|.*luaopen_||')
+    dl_stubs ${n} << EOF
+${l}
+EOF
+done > dl.cpp
+
+${CC} -c dl.cpp
+
+{{super()}}
 {% endblock %}
 
 {% block env %}
-export CPPFLAGS="-I${out}/include/luajit-2.0 \${CPPFLAGS}"
+export LUA_INC_PATH="${out}/include"
+export CMFLAGS="-DWITH_LUA_ENGINE=LuaJIT \${CMFLAGS}"
 {% endblock %}
