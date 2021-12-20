@@ -18,7 +18,7 @@ lib/fontconfig/mix.sh
 {% endblock %}
 
 {% block bld_tool %}
-lib/wayland/protocols/mix.sh
 lib/curses/n/mix.sh
 dev/doc/scdoc/mix.sh
+lib/wayland/protocols/mix.sh
 {% endblock %}

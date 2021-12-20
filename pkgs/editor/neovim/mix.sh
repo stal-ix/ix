@@ -23,10 +23,6 @@ dev/tool/gperf/mix.sh
 editor/neovim/luafat/mix.sh
 {% endblock %}
 
-{% block cmake_flags %}
-#LUA_INCLUDE_DIR="${LUA_INC_PATH}"
-{% endblock %}
-
 {% block script_init_env %}
 export LUA_PATH=
 {{super()}}
