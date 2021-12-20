@@ -11,12 +11,9 @@ lib/c++/mix.sh
 {% endblock %}
 
 {% block bld_tool %}
+gnu/tar/mix.sh
 dev/build/auto/conf/2/69/mix.sh
 dev/build/auto/make/1/16/mix.sh
-{% endblock %}
-
-{% block setup_tools %}
-ln -s $(which bsdtar) tar
 {% endblock %}
 
 {% block autoreconf %}

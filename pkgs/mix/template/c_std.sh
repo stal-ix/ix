@@ -38,10 +38,7 @@ export CONLYFLAGS=
 
 {% block setup_compiler %}
 if command -v ls; then
-    mkpushd tc
     {% include 'cross_tc.sh' %}
-    export PATH="${PWD}:${PATH}"
-    popd
 else
     source_env "${MIX_T_DIR}"
     setup_tc_here

@@ -15,8 +15,6 @@ box/boot/mix.sh
 {% endblock %}
 
 {% block setup_tools %}
-rm strip
-
 ln -s $(which llvm-strip) strip
 {% endblock %}
 

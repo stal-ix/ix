@@ -26,6 +26,7 @@ export LDFLAGS=
 export CFLAGS=
 export CPPFLAGS=
 export CXXFLAGS=
+export OPTFLAGS=
 export CONLYFLAGS=
 
 for x in cc gcc c99 clang; do
