@@ -1,6 +1,6 @@
 import os
 import json
-import base64
+import string
 import hashlib
 import functools
 import itertools
@@ -16,8 +16,20 @@ def iter_dir(w):
             yield os.path.join(a[len(w) + 1:], x)
 
 
+B62 = string.digits + string.ascii_letters + string.ascii_letters.upper()
+
+
+def b62(b):
+    i = int.from_bytes(b)
+
+    while i:
+        yield B62[i % len(B62)]
+
+        i //= len(B62)
+
+
 def string_hash(s):
-    return base64.b64encode(hashlib.md5(s.encode()).digest(), altchars='PG'.encode()).decode()[:16]
+    return ''.join(b62(hashlib.md5(s.encode()).digest()))[:16]
 
 
 def struct_hash(d):

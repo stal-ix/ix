@@ -7,6 +7,7 @@ lib/linux/mix.sh
 {% if target.os == 'darwin' %}
 lib/darwin/framework/CoreFoundation/mix.sh
 {% endif %}
+lib/z/mix.sh
 lib/c++/mix.sh
 lib/compiler_rt/builtins/mix.sh
 {% endblock %}
@@ -18,6 +19,8 @@ dev/lang/clang/lib/mix.sh
 {% block cmake_flags %}
 {{super()}}
 LLVM_ENABLE_PROJECTS="clang;lld;polly"
+CLANG_ENABLE_STATIC_ANALYZER=OFF
+CLANG_ENABLE_ARCMT=OFF
 {% endblock %}
 
 {% block cmake_srcdir %}

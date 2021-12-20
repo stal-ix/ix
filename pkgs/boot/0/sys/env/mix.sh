@@ -5,16 +5,20 @@ guess_flags() {
 >_.c
 >_.cpp
 
-if ${CC} -nostdinc -fcolor-diagnostics -fdiagnostics-color -c _.c; then
-    CFLAGS="-nostdinc ${CFLAGS}"
-fi
+for x in '-nostdinc' '-fcolor-diagnostics' '-fdiagnostics-color'; do
+    if ${CC} ${x} -c _.c > /dev/null 2>&1; then
+        CFLAGS="${x} ${CFLAGS}"
+    fi
+done
 
-if ${CXX} -nostdinc++ -c _.cpp; then
-    CXXFLAGS="-nostdinc++ ${CXXFLAGS}"
-fi
+for x in '-nostdinc++'; do
+    if ${CXX} ${x} -c _.cpp > /dev/null 2>&1; then
+        CXXFLAGS="${x} ${CXXFLAGS}"
+    fi
+done
 
 for ld in '-nostdlib' '-nostdlib++' '-fno-use-linker-plugin'; do
-    if ${CXX} ${ld} -c _.cpp; then
+    if ${CXX} ${ld} -c _.cpp > /dev/null 2>&1; then
         LDFLAGS="${ld} ${LDFLAGS}"
     fi
 done
@@ -118,6 +122,6 @@ export LD=${CC}
 }
 
 setup_ar() {
-    >qw
+    : nothing to do
 }
 {% endblock %}

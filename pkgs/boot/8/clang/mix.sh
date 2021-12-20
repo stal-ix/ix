@@ -39,9 +39,5 @@ export CPPFLAGS="-w ${CPPFLAGS}"
 
 {% block cmake_flags %}
 {{super()}}
-
 LLVM_TARGETS_TO_BUILD={{target.llvm_target}}
-
-CLANG_ENABLE_STATIC_ANALYZER=OFF
-CLANG_ENABLE_ARCMT=OFF
 {% endblock %}

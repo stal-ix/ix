@@ -18,11 +18,17 @@ COL = {
     'r': 31,
     'g': 32,
     'y': 33,
+    'b': 34,
 }
 
 
-def log(v, color='r'):
-    print(f'\x1b[{COL[color]}m{v}\x1b[0m', file=sys.stderr)
+def log(v, color='r', bright=False):
+    n = COL[color]
+
+    if bright:
+        n += 60
+
+    print(f'\x1b[{n}m{v}\x1b[0m', file=sys.stderr)
 
 
 def execute_cmd(c):
@@ -37,11 +43,11 @@ def execute_cmd(c):
 
     try:
         try:
-            log(f'ENTER {descr}')
+            log(f'ENTER {descr}', color='b')
 
             return subprocess.run(c['args'], input=stdin.encode() or None, env=env, check=True)
         finally:
-            log(f'LEAVE {descr}')
+            log(f'LEAVE {descr}', color='b')
     except Exception as e:
         def iter_lines():
             yield '____|' + descr
