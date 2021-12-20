@@ -8,5 +8,5 @@ https://storage.yandexcloud.net/mix-cache/bison-bootstrap-master.tar.bz2
 {% endblock %}
 
 {% block unpack %}
-${untar} ${src}/bison-3* && cd bison* && ${untar} ${src}/bison-b* && ln -s bison-b* bb
+extract ${src}/bison-3* && cd bison* && extract ${src}/bison-b* && ln -s bison-b* bb
 {% endblock %}

@@ -9,7 +9,7 @@ for s in ${src}/*; do
         *.patch)
         ;;
         *)
-            do_extract ${s}
+            extract ${s}
         ;;
     esac
 done

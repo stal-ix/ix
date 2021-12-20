@@ -13,7 +13,7 @@ boot/1/env/mix.sh
 {% endblock %}
 
 {% block script %}
-${unzip} ${src}/*.zip && cd shutil*
+extract ${src}/*.zip && cd shutil*
 
 setup_compiler
 setup_ar

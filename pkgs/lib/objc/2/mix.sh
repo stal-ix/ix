@@ -8,9 +8,9 @@ e6a362bff8372bbb4d901d2e28993a8a
 {% endblock %}
 
 {% block unpack %}
-${unzip} ${src}/*.zip && cd lib*
+extract ${src}/*.zip && cd lib*
 rm -rf third_party/robin-map
-${untar} ${src}/*.gz && mv robin* third_party/robin-map
+extract ${src}/*.gz && mv robin* third_party/robin-map
 {% endblock %}
 
 {% block cmake_flags %}

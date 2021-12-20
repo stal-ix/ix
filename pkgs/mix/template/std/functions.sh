@@ -1,4 +1,4 @@
-do_extract() {
+extract() {
     case $1 in
     *.zip)
         if command -v unzip; then
@@ -16,9 +16,6 @@ do_extract() {
         ;;
     esac
 }
-
-export untar="do_extract"
-export unzip="do_extract"
 
 find_pkg() (
     source_env "${MIX_T_DIR}"

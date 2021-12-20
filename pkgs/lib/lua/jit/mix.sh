@@ -20,6 +20,6 @@ src/lib_package.c
 {% endblock %}
 
 {% block env %}
-export LUA_INC_PATH="${out}/include"
+export LUA_INCLUDE_DIR="${out}/include"
 export CMFLAGS="-DWITH_LUA_ENGINE=LuaJIT \${CMFLAGS}"
 {% endblock %}

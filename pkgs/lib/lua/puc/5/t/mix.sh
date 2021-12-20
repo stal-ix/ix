@@ -5,15 +5,11 @@ INSTALL_TOP=${out}
 LIBS="${PWD}/dl.o"
 {% endblock %}
 
-{% block make_target %}
-{{target.os}}
-{% endblock %}
-
 {% block lua_dlopen %}
 src/loadlib.c
 {% endblock %}
 
 {% block env %}
-export LUA_INC_PATH="${out}/include"
+export LUA_INCLUDE_DIR="${out}/include"
 export CMFLAGS="-DWITH_LUA_ENGINE=Lua \${CMFLAGS}"
 {% endblock %}

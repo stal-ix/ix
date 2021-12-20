@@ -19,7 +19,7 @@ boot/8/env/std/mix.sh
 {% endblock %}
 
 {% block unpack %}
-${untar} ${src}/flex* && cd flex*
+extract ${src}/flex* && cd flex*
 {% endblock %}
 
 {% block build %}

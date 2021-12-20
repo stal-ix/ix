@@ -24,8 +24,7 @@ editor/neovim/luafat/mix.sh
 {% endblock %}
 
 {% block cmake_flags %}
-#PREFER_LUA=ON
-LUA_INCLUDE_DIR="${LUA_INC_PATH}"
+#LUA_INCLUDE_DIR="${LUA_INC_PATH}"
 {% endblock %}
 
 {% block script_init_env %}

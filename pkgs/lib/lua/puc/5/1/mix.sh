@@ -6,5 +6,5 @@ https://www.lua.org/ftp/lua-5.1.5.tar.gz
 {% endblock %}
 
 {% block make_target %}
-linux
+{{target.os}}
 {% endblock %}

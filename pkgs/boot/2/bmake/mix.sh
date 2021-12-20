@@ -17,7 +17,7 @@ boot/1/env/mix.sh
 cd ${out}
 mkdir bin && cd bin
 mkdir src && cd src
-${untar} ${src}/bmake* && cd bmake*
+extract ${src}/bmake* && cd bmake*
 {% endblock %}
 
 {% block step_setup %}

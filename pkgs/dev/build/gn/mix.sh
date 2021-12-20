@@ -15,7 +15,7 @@ dev/tool/python/mix.sh
 {% endblock %}
 
 {% block unpack %}
-mkdir src; cd src; ${untar} ${src}/*.tar.gz
+mkdir src; cd src; extract ${src}/*.tar.gz
 {% endblock %}
 
 {% block configure %}

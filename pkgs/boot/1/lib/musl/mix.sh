@@ -18,7 +18,7 @@ boot/0/env/mix.sh
 {% endblock %}
 
 {% block script %}
-cd ${out} && ${untar} ${src}/musl* && cd musl*
+cd ${out} && extract ${src}/musl* && cd musl*
 
 setup_compiler
 setup_ar

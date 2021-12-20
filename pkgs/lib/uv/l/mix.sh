@@ -10,10 +10,10 @@ https://github.com/keplerproject/lua-compat-5.3/archive/refs/tags/v0.9.tar.gz
 
 {% block unpack %}
 mkdir src; cd src
-${untar} ${src}/1*
+extract ${src}/1*
 cd *
 cd deps; rm -r lua-compat-5.3
-${untar} ${src}/v*;
+extract ${src}/v*;
 mv lua-compat-5.3* lua-compat-5.3
 cd ..
 {% endblock %}

@@ -12,8 +12,8 @@ lib/expat/mix.sh
 {% endblock %}
 
 {% block unpack %}
-${untar} ${src}/perl* && cd perl* && cd ext
-${untar} ${src}/XML*
+extract ${src}/perl* && cd perl* && cd ext
+extract ${src}/XML*
 mv XML* XML-Parser
 ln -s XML-Parser/Expat XML-Parser-Expat
 cd ..

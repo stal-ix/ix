@@ -21,7 +21,7 @@ dev/tool/python/mix.sh
 cd ${out}
 
 (
-    ${untar} ${src}/0*
+    extract ${src}/0*
 
     ln -s meson* meson
     mkdir bin && cd bin
