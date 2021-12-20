@@ -14,12 +14,11 @@ box/boot/mix.sh
 {% endblock %}
 
 {% block setup_tools %}
-mkdir tmp; cd tmp; ln -s ${HOST_CC} gcc
-export PATH="${PWD}:${PATH}"
+ln -s ${HOST_CC} gcc
 {% endblock %}
 
 {% block build %}
-make  mrproper
+make HOST_CC=gcc mrproper
 make headers
 
 find usr/include -name '.*' -delete
