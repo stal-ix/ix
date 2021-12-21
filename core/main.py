@@ -24,6 +24,7 @@ CLIS = [
     ('core.misc_cmd', 'misc_unzip', True),
     ('core.misc_cmd', 'misc_fetch', True),
     ('core.misc_cmd', 'misc_repl', True),
+    ('core.misc_cmd', 'misc_chksum', True),
 ]
 
 

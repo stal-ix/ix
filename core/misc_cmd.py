@@ -1,8 +1,10 @@
 import os
 import sys
 import code
+import json
 import shutil
 import hashlib
+import tarfile
 
 import core.error as ce
 import core.shell_cmd as csc
@@ -17,6 +19,69 @@ def prepare_dir(d):
     os.makedirs(d)
 
 
+def hash(n):
+    if n == 'md5':
+        return hashlib.md5
+
+    if n == 'sha':
+        return hashlib.sha256
+
+    raise Exception(f'unsupported hash name {n}')
+
+
+def md5(b):
+    return hash('md5')(b).hexdigest()
+
+
+def struct_md5(s):
+    return md5(json.dumps(s, sort_keys=True).encode())
+
+
+def read_rec(r):
+    if r:
+        return r.read()
+
+    return b''
+
+
+def semantic_checksum(path):
+    r = []
+
+    with tarfile.open(path) as tf:
+        for rec in tf.getmembers():
+            v = [
+                rec.name,
+                rec.size,
+                rec.mode,
+                str(rec.type),
+                rec.linkname,
+                md5(read_rec(tf.extractfile(rec))),
+            ]
+
+            r.append(struct_md5(v))
+
+    return struct_md5(list(sorted(r)))
+
+
+def chksum(path, sch):
+    if sch == 'sem':
+        return semantic_checksum(path)
+
+    func = hash(sch)
+
+    with open(path, 'rb') as f:
+        return func(f.read()).hexdigest()
+
+
+def calc_chksum(path, old_cs):
+    if ':' in old_cs:
+        sch = old_cs[:old_cs.index(':')]
+
+        return sch + ':' + chksum(path, sch)
+
+    return chksum(path, 'md5')
+
+
 class Iface:
     def untar(self, path):
         csc.untar(path)
@@ -27,12 +92,11 @@ class Iface:
     def fetch_url(self, url, out):
         csc.fetch_url(url, out)
 
-    def check_md5(self, path, old_md5):
-        with open(path, 'rb') as f:
-            new_md5 = hashlib.md5(f.read()).hexdigest()
+    def check_md5(self, path, old_cs):
+        new_cs = calc_chksum(path, old_cs)
 
-            if new_md5 != old_md5:
-                raise ce.Error('expected ' + new_md5 + ' checksum')
+        if new_cs != old_cs:
+            raise ce.Error(f'expected {new_cs} checksum')
 
     def header(self):
         if out := os.environ.get('out'):
@@ -70,6 +134,16 @@ def cli_misc_runpy(ctx):
 def cli_misc_untar(ctx):
     for a in ctx['args']:
         csc.untar(a)
+
+
+def cli_misc_chksum(ctx):
+    args = ctx['args']
+    path = args[0]
+    kind = args[1]
+
+    res = chksum(path, kind)
+
+    print(f'{kind}:{res} -> {path}')
 
 
 def cli_misc_unzip(ctx):

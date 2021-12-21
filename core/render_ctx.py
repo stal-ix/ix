@@ -44,7 +44,7 @@ def parse_urls(urls):
     cur = {}
 
     for l in cononize(urls).split(' '):
-        if ':' in l:
+        if '://' in l:
             cur['url'] = l
         else:
             cur['md5'] = l

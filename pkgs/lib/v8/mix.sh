@@ -1,8 +1,8 @@
 {% extends '//mix/template/c_std.sh' %}
 
 {% block fetch %}
-https://chromium.googlesource.com/v8/v8.git/+archive/refs/tags/9.9.7.tar.gz
-280e44f971219e0f5435045a3862ac06
+https://github.com/v8/v8/archive/refs/tags/9.7.37.tar.gz
+3f48a781bbad3f531720d2b7898f68aa
 {% endblock %}
 
 {% block lib_deps %}
