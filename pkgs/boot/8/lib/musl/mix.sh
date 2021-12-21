@@ -4,5 +4,5 @@
 {% endblock %}
 
 {% block bld_deps %}
-boot/8/clang/env/mix.sh
+boot/8/env/cxx/mix.sh
 {% endblock %}

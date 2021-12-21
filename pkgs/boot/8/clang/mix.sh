@@ -1,6 +1,7 @@
 {% extends '//dev/lang/clang/mix.sh' %}
 
 {% block bld_libs %}
+boot/3/lib/c/mix.sh
 {% if target.os == 'linux' %}
 boot/7/lib/linux/mix.sh
 {% endif %}
@@ -12,10 +13,7 @@ boot/7/lib/compiler_rt/mix.sh
 {% endblock %}
 
 {% block bld_deps %}
-boot/7/cmake/mix.sh
-boot/7/python/mix.sh
-boot/6/env/std/mix.sh
-boot/4/patch/mix.sh
+boot/7/env/cxx/mix.sh
 {% endblock %}
 
 {% block patch %}
