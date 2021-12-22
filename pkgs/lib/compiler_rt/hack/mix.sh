@@ -5,7 +5,7 @@
 {% endblock %}
 
 {% block lib_deps %}
-lib/c/no_rt/mix.sh
+lib/c/naked/mix.sh
 {% endblock %}
 
 {% block std_box %}

@@ -4,7 +4,7 @@
 {% if target.os == 'linux' %}
 lib/linux/mix.sh
 {% endif %}
-lib/c/no_rt/mix.sh
+lib/c/naked/mix.sh
 {% endblock %}
 
 {% block cmake_flags %}

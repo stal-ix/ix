@@ -97,6 +97,8 @@ def gen_sym():
     for x in string.ascii_letters + string.digits:
         yield x, x
 
+    yield '+', '-plus-'
+
 
 SYM = dict(gen_sym())
 
@@ -195,7 +197,7 @@ class Package:
         return self.load_package_impl(n)
 
     def load_package_impl(self, sel):
-        # print(f'{fmt_sel(self.selector)} -> {fmt_sel(sel)}')
+        print(f'{fmt_sel(self.selector)} -> {fmt_sel(sel)}')
 
         try:
             # TODO(pg): proper local flags

@@ -6,7 +6,7 @@ https://www.kernel.org/pub/linux/kernel/v5.x/linux-5.13.12.tar.xz
 {% endblock %}
 
 {% block host_libs %}
-lib/c/no_rt/mix.sh(std_env={{std_env}})
+lib/musl/pure/mix.sh(std_env={{std_env}})
 {% endblock %}
 
 {% block std_box %}
