@@ -6,7 +6,7 @@ fd6cc8ec0a78c44036f825e739f36e5a
 {% endblock %}
 
 {% block bld_libs %}
-lib/python/libs/mix.sh
+lib/python/libs/mix.sh(openssl=1)
 {% endblock %}
 
 {% block bld_tool %}
@@ -40,6 +40,11 @@ cat Modules/Setup.dist \
     | grep -v _bsddb   \
     | grep -v '='      \
     > Modules/Setup.local
+
+cat << EOF >> Modules/Setup.local
+_ssl _ssl.c
+_hashlib _hashopenssl.c
+EOF
 {% endblock %}
 
 {% block configure_flags %}
