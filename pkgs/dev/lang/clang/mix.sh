@@ -19,6 +19,7 @@ dev/lang/clang/lib/mix.sh
 
 {% block cmake_flags %}
 {{super()}}
+LLVM_ENABLE_TERMINFO=OFF
 LLVM_ENABLE_PROJECTS="clang;lld;polly"
 CLANG_ENABLE_STATIC_ANALYZER=OFF
 CLANG_ENABLE_ARCMT=OFF

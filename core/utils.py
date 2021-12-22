@@ -20,7 +20,7 @@ B62 = string.digits + string.ascii_letters + string.ascii_letters.upper()
 
 
 def b62(b):
-    i = int.from_bytes(b)
+    i = int.from_bytes(b, 'little')
 
     while i:
         yield B62[i % len(B62)]

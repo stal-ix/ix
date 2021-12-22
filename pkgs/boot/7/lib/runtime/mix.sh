@@ -16,6 +16,6 @@ boot/6/env/std/mix.sh
 {% endblock %}
 
 {% block setup %}
-export CPPFLAGS="-I${PWD}/libunwind/include ${CPPFLAGS}"
+export CPPFLAGS="-w -std=c++14 -I${PWD}/libunwind/include ${CPPFLAGS}"
 {{super()}}
 {% endblock %}

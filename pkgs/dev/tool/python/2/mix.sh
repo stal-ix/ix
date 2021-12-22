@@ -44,7 +44,7 @@ cat Modules/Setup.dist \
 
 {% block configure_flags %}
 --without-ensurepip
---libdir=${out}/share
+--libdir=${out}/share/python2
 {% endblock %}
 
 {% block setup %}
@@ -57,7 +57,8 @@ export CPPFLAGS="-I${PWD}/Modules/_io -I${PWD}/Modules/_ctypes -I${PWD}/Modules/
 find ${out}/ | grep '\.[ao]$' | xargs rm
 find ${out}/ | grep '\.pyc' | xargs rm
 
-rm -rf ${out}/share/pkgconfig
+rm -rf ${out}/share/python2/pkgconfig
+rm ${out}/bin/python
 {% endblock %}
 
 {% block postinstall %}
