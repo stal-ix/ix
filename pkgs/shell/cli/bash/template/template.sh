@@ -12,7 +12,7 @@ xfree
 {% endblock %}
 
 {% block bld_tool %}
-boot/final/env/bison/mix.sh
+dev/lang/bison/3/boot/mix.sh
 {% endblock %}
 
 {% block configure_flags %}

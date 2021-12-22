@@ -54,6 +54,7 @@ export LDFLAGS="-static \${LDFLAGS}"
 
 cat << EOF > main.c
 #include <stdio.h>
+#include <stdlib.h>
 
 int main() {
     printf("hello!\n");
