@@ -17,3 +17,7 @@ box/boot/mix.sh
 {{super()}}
 mv ${out}/lib/libdl.a ${out}/lib/libdlstub.a
 {% endblock %}
+
+{% block patch %}
+sed -e 's|-std=c++20|-std=c++17|' -i Makefile
+{% endblock %}

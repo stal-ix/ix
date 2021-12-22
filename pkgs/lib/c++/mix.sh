@@ -53,7 +53,8 @@ install-unwind
 {% endblock %}
 
 {% block setup %}
-export CPPFLAGS="-I${PWD}/libunwind/include ${CPPFLAGS}"
+export CPPFLAGS="-I${PWD}/libunwind/include -w ${CPPFLAGS}"
+export CXXFLAGS="-std=c++14 ${CXXFLAGS}"
 {% endblock %}
 
 {% block patch %}
