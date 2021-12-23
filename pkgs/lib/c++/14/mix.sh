@@ -1,5 +1,11 @@
-{% extends '//lib/c++/t/mix.sh' %}
+{% extends '//lib/c++/any/mix.sh' %}
 
-{% block cplpl_std %}
-c++14
+{% block setup %}
+{{super()}}
+export CXXSTD="-std={% block cplpl_std %}c++14{% endblock %}"
+export CXXFLAGS="${CXXSTD} ${CXXFLAGS}"
+{% endblock %}
+
+{% block env %}
+export CXXFLAGS="${CXXSTD} \${CXXFLAGS}"
 {% endblock %}

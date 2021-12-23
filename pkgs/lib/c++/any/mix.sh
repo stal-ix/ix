@@ -54,7 +54,6 @@ install-unwind
 
 {% block setup %}
 export CPPFLAGS="-I${PWD}/libunwind/include -w ${CPPFLAGS}"
-export CXXFLAGS="-std={{self.cplpl_std().strip()}} ${CXXFLAGS}"
 {% endblock %}
 
 {% block patch %}
