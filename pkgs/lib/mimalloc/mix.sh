@@ -6,7 +6,7 @@ a06e57e9ae10a346ab8a1097c0838fef
 {% endblock %}
 
 {% block bld_libs %}
-lib/c++/headers/mix.sh
+lib/c++/14/headers/mix.sh
 {% endblock %}
 
 {% block std_box %}
@@ -30,23 +30,11 @@ mv mimalloc-*/* ./
 rm -rf mimalloc-*
 {% endblock %}
 
-{% block test_lib1 %}
-. ${out}/env
+{% block test_lib %}
+${NM} --demangle ${out}/lib/mimalloc.o | grep '::' | grep __1 | grep -v atomic | while read l; do
+    echo 'EXPECT CONFLICT with another STL'
+    exit 1
+done
 
-clang ${CPPFLAGS} ${CFLAGS} ${LDFLAGS} -o main -x c - << EOF
-#include <stdlib.h>
-#include <locale.h>
-
-int main() {
-    free(malloc(1));
-    freelocale(0);
-    free(realloc(0, 100));
-
-    return 0;
-}
-EOF
-{% endblock %}
-
-{% block test_execute %}
-#./main
+echo 'ALL OK'
 {% endblock %}
