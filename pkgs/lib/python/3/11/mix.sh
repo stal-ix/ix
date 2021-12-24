@@ -1,8 +1,8 @@
 {% extends '//lib/python/3/10/mix.sh' %}
 
 {% block fetch %}
-https://github.com/python/cpython/archive/refs/tags/v3.11.0a2.tar.gz
-f21d7c326ca389e43caf5664a768d745
+https://www.python.org/ftp/python/3.11.0/Python-3.11.0a3.tar.xz
+7f51bc58150d223c162241d6896204a4
 {% endblock %}
 
 {% block lib_deps %}
@@ -18,7 +18,7 @@ dev/tool/python/mix.sh
 
 {% block setup %}
 {{super()}}
-export CPPFLAGS="-DCONFIG_64=1 -DSQLITE_OMIT_LOAD_EXTENSION=1 -DHAVE_NDBM_H=1 ${CPPFLAGS}"
+export CPPFLAGS="-DCONFIG_64=1 -DSQLITE_OMIT_LOAD_EXTENSION=1 -DHAVE_NDBM_H=1 -DUSE_NDBM=1 ${CPPFLAGS}"
 {% endblock %}
 
 {% block patch %}
@@ -51,6 +51,8 @@ cat Modules/Setup \
     | grep -v ossaudiodev \
     | grep -v _uuidmodule \
     > _
+
+cat Modules/Setup.stdlib.in | grep _sql | sed -e 's|.*@||g' >> _
 
 cat _ - << EOF > Modules/Setup.local
 _decimal _decimal/_decimal.c
