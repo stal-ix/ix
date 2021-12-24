@@ -1,8 +1,8 @@
 {% extends '//lib/wlroots/14/mix.sh' %}
 
 {% block fetch %}
-https://gitlab.freedesktop.org/wlroots/wlroots/-/archive/0fcc842291d9d714e9c210839ae72429c5c3eae4/wlroots-0fcc842291d9d714e9c210839ae72429c5c3eae4.tar.bz2
-575a79e19cc4f6c66317bdaf86e93b9c
+https://gitlab.freedesktop.org/wlroots/wlroots/-/archive/812951f5bc47f502429406e49f4e24f377b7799b/wlroots-812951f5bc47f502429406e49f4e24f377b7799b.tar.bz2
+e457d756979875b7a56481f1fffa1b71
 {% endblock %}
 
 {% block lib_deps %}
