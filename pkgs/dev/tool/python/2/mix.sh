@@ -63,6 +63,8 @@ find ${out}/ | grep '\.[ao]$' | xargs rm
 find ${out}/ | grep '\.pyc' | xargs rm
 
 rm -rf ${out}/share/python2/pkgconfig
+rm -rf ${out}/include
+
 rm ${out}/bin/python
 {% endblock %}
 
