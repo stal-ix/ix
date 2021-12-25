@@ -9,7 +9,7 @@ rm -rf ${out}/libexec
 
 cd ${out}/bin
 
-ln -s llvm-ranlib llvm-ar
+ln -s llvm-ar llvm-ranlib
 {% endblock %}
 
 {% block env %}

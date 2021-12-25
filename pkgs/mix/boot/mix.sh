@@ -2,7 +2,7 @@
 
 {% block bld_tool %}
 shell/cli/dash/minimal/mix.sh
-dev/lang/clang/mix.sh
+dev/lang/clang/13/opt/mix.sh
 {% endblock %}
 
 {% block install %}
