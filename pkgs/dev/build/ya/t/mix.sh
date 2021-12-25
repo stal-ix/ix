@@ -10,7 +10,6 @@ be31e2ab97ad66b404425e2794673bee
 {% endblock %}
 
 {% block bld_tool %}
-dev/lang/clang/mix.sh
 dev/tool/python/mix.sh
 dev/tool/python/2/mix.sh
 {% endblock %}

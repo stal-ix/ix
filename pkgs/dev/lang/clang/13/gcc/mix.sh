@@ -1,4 +1,4 @@
-{% extends '//dev/lang/clang/mix.sh' %}
+{% extends '//dev/lang/clang/13/mix.sh' %}
 
 {% block patch %}
 sed -e 's|__SSE2__|__NOPE__|g' -i clang/lib/Lex/Lexer.cpp
