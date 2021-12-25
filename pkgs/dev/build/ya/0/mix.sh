@@ -6,8 +6,8 @@ export OPTFLAGS="${OPTFLAGS} -O0"
 {% endblock %}
 
 {% block build %}
-cd ${ARC_ROOT}/junk/pg/boot
+{{super()}}
 
-dash stage1.sh ${ARC_ROOT} ${tmp}/obj \
+dash stage1.sh ${ARC_ROOT} ${BLD_ROOT} \
     ${ARC_ROOT}/devtools/ymake/bin/g1.json
 {% endblock %}

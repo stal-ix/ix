@@ -9,13 +9,14 @@ dev/build/ya/0/mix.sh(arc_root={{arc_root}})
 {% endblock %}
 
 {% block build %}
-cd ${ARC_ROOT}/junk/pg/boot
-dash stage3.sh ${ARC_ROOT} ${tmp}/obj
+{{super()}}
+
+dash stage3.sh ${ARC_ROOT} ${BLD_ROOT}
 {% endblock %}
 
 {% block install %}
 {{super()}}
 
 rnd=$(python3 -c 'import random; print(random.random())')
-mv ${tmp}/obj ${tmp}/../obj.${rnd}
+mv ${BLD_ROOT} ${tmp}/../obj.${rnd}
 {% endblock %}
