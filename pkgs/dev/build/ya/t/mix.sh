@@ -20,6 +20,8 @@ dev/lang/clang/12/mix.sh
 {% endblock %}
 
 {% block setup %}
+# {{ya_ver}}
+
 export CLANG_DIR="$(dirname $(which clang-12))"
 export CLANG_INC="$(dirname ${CLANG_DIR})/share/include"
 export ARC_ROOT="{{arc_root}}"
@@ -43,7 +45,7 @@ chmod +x clang clang++
 {% endblock %}
 
 {% block build %}
-cd ${ARC_ROOT}/junk/pg/boot
+cd ${ARC_ROOT}/devtools/bootstrap
 mkdir ${BLD_ROOT}
 cp ${src}/antlr* ${BLD_ROOT}/antlr-4.9-complete.jar
 dash {% block stage %}{% endblock %} ${ARC_ROOT} ${BLD_ROOT}
