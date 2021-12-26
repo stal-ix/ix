@@ -5,9 +5,4 @@ export OPTFLAGS="${OPTFLAGS} -O0"
 {{super()}}
 {% endblock %}
 
-{% block build %}
-{{super()}}
-
-dash stage1.sh ${ARC_ROOT} ${BLD_ROOT} \
-    ${ARC_ROOT}/devtools/ymake/bin/g1.json
-{% endblock %}
+{% block stage %}stage1.sh{% endblock %}

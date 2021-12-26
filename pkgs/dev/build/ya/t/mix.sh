@@ -12,6 +12,7 @@ be31e2ab97ad66b404425e2794673bee
 {% block bld_tool %}
 dev/tool/python/mix.sh
 dev/tool/python/2/mix.sh
+dev/jdk/oracle/17/mix.sh
 {% endblock %}
 
 {% block c_compiler %}
@@ -19,20 +20,23 @@ dev/lang/clang/12/mix.sh
 {% endblock %}
 
 {% block setup %}
-export LDFLAGS="-Wl,-z,stack-size=2097152 ${LDFLAGS}"
+export CLANG_DIR="$(dirname $(which clang-12))"
+export CLANG_INC="$(dirname ${CLANG_DIR})/share/include"
 export ARC_ROOT="{{arc_root}}"
 export BLD_ROOT="${tmp}/obj"
 {% endblock %}
 
 {% block setup_tools %}
+# redefine clang wrapper with real clang(well, almost)
+
 cat << EOF > clang
 #!$(which dash)
-${B_dev_lang_clang}/bin/clang -isystem ${B_dev_lang_clang}/share/include "\$@" -Wno-unused-command-line-argument -fuse-ld=lld
+exec "${CLANG_DIR}/clang" -isystem "${CLANG_INC}" "\$@" -w -fuse-ld=lld
 EOF
 
 cat << EOF > clang++
 #!$(which dash)
-${B_dev_lang_clang}/bin/clang++ -isystem ${B_dev_lang_clang}/share/include "\$@" -Wno-unused-command-line-argument -fuse-ld=lld
+exec "${CLANG_DIR}/clang++" -isystem "${CLANG_INC}" "\$@" -w -fuse-ld=lld
 EOF
 
 chmod +x clang clang++
@@ -42,6 +46,7 @@ chmod +x clang clang++
 cd ${ARC_ROOT}/junk/pg/boot
 mkdir ${BLD_ROOT}
 cp ${src}/antlr* ${BLD_ROOT}/antlr-4.9-complete.jar
+dash {% block stage %}{% endblock %} ${ARC_ROOT} ${BLD_ROOT}
 {% endblock %}
 
 {% block install %}

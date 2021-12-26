@@ -8,11 +8,7 @@ dev/build/ya/0/mix.sh(arc_root={{arc_root}})
 {% endblock %}
 {% endblock %}
 
-{% block build %}
-{{super()}}
-
-dash stage3.sh ${ARC_ROOT} ${BLD_ROOT}
-{% endblock %}
+{% block stage %}stage3.sh{% endblock %}
 
 {% block install %}
 {{super()}}
