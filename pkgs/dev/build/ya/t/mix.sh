@@ -21,7 +21,6 @@ dev/lang/clang/12/mix.sh
 
 {% block setup %}
 # {{ya_ver}}
-
 export CLANG_DIR="$(dirname $(which clang-12))"
 export CLANG_INC="$(dirname ${CLANG_DIR})/share/include"
 export ARC_ROOT="{{arc_root}}"
@@ -44,10 +43,14 @@ EOF
 chmod +x clang clang++
 {% endblock %}
 
-{% block build %}
-cd ${ARC_ROOT}/devtools/bootstrap
+{% block configure %}
 mkdir ${BLD_ROOT}
 cp ${src}/antlr* ${BLD_ROOT}/antlr-4.9-complete.jar
+echo > ${BLD_ROOT}/icudt67_dat.rodata
+{% endblock %}
+
+{% block build %}
+cd ${ARC_ROOT}/devtools/bootstrap
 dash {% block stage %}{% endblock %} ${ARC_ROOT} ${BLD_ROOT}
 {% endblock %}
 
