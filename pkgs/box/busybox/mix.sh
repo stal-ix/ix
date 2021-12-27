@@ -1,8 +1,8 @@
 {% extends '//mix/template/c_std.sh' %}
 
 {% block fetch %}
-https://busybox.net/downloads/busybox-1.34.0.tar.bz2
-9812d59bd5ff22bd424dabded393b52d
+https://busybox.net/downloads/busybox-1.35.0.tar.bz2
+585949b1dd4292b604b7d199866e9913
 {% endblock %}
 
 {% block bld_libs %}
@@ -15,7 +15,7 @@ box/boot/mix.sh
 {% endblock %}
 
 {% block setup_tools %}
-ln -s $(which llvm-strip) strip
+ln -s $(which llvm-objcopy) strip
 {% endblock %}
 
 {% block setup %}
