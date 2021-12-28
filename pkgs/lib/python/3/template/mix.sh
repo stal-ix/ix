@@ -1,18 +1,18 @@
 {% extends '//mix/template/autohell.sh' %}
 
 {% block lib_deps %}
-lib/python/libs/mix.sh
+lib/python/libs
 {% endblock %}
 
 {% block bld_tool %}
-dev/build/auto/conf/2/69/mix.sh
-dev/build/auto/make/1/16/mix.sh
-dev/build/auto/conf/archive/mix.sh
+dev/build/auto/conf/2/69
+dev/build/auto/make/1/16
+dev/build/auto/conf/archive
 {% endblock %}
 
 {% block bld_libs %}
 {% if target.os == 'linux' %}
-lib/linux/mix.sh
+lib/linux
 {% endif %}
 {% endblock %}
 

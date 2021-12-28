@@ -6,13 +6,13 @@ db8765c8d076f1b6caafd9f2542a304a
 {% endblock %}
 
 {% block bld_tool %}
-dev/build/auto/conf/2/69/mix.sh
-dev/build/auto/make/1/16/mix.sh
+dev/build/auto/conf/2/69
+dev/build/auto/make/1/16
 {% endblock %}
 
 {% block lib_deps %}
-lib/c/mix.sh
-lib/xml2/mix.sh
+lib/c
+lib/xml2
 {% endblock %}
 
 {% block configure_flags %}

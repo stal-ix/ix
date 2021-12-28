@@ -6,11 +6,11 @@ fd6cc8ec0a78c44036f825e739f36e5a
 {% endblock %}
 
 {% block bld_libs %}
-lib/python/libs/mix.sh(openssl=1)
+lib/python/libs(openssl=1)
 {% endblock %}
 
 {% block bld_tool %}
-dev/tool/python/mix.sh
+dev/tool/python
 {% endblock %}
 
 {% block patch %}

@@ -6,11 +6,11 @@ f5752052fc5b8e1b539af86a3671eac7
 {% endblock %}
 
 {% block lib_deps %}
-lib/c/mix.sh
+lib/c
 {% endblock %}
 
 {% block bld_libs %}
-lib/readline/mix.sh
+lib/readline
 {% endblock %}
 
 {% block setup %}

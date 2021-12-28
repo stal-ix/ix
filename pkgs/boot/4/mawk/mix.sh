@@ -4,8 +4,8 @@
 {% endblock %}
 
 {% block bld_deps %}
-boot/4/byacc/mix.sh
-boot/3/env/mix.sh
+boot/4/byacc
+boot/3/env
 {% endblock %}
 
 {% block install %}

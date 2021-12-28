@@ -10,13 +10,13 @@ a50fb1d7c40ac7fac3360218cb37a38b
 {% endblock %}
 
 {% block bld_libs %}
-net/openssh/libs/mix.sh(openssl=1,curses=netbsd)
+net/openssh/libs(openssl=1,curses=netbsd)
 {% endblock %}
 
 {% block bld_tool %}
-gnu/patch/mix.sh
-dev/doc/groff/mix.sh
-dev/doc/texinfo/mix.sh
+gnu/patch
+dev/doc/groff
+dev/doc/texinfo
 {% endblock %}
 
 {% block setup %}

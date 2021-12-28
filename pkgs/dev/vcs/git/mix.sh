@@ -6,23 +6,23 @@ https://github.com/git/git/archive/refs/tags/v2.34.0.tar.gz
 {% endblock %}
 
 {% block bld_libs %}
-lib/c/mix.sh
-lib/z/mix.sh
-lib/curl/mix.sh
-lib/iconv/mix.sh
-lib/expat/mix.sh
-lib/pcre/2/mix.sh
-lib/openssl/mix.sh
+lib/c
+lib/z
+lib/curl
+lib/iconv
+lib/expat
+lib/pcre/2
+lib/openssl
 {% endblock %}
 
 {% block bld_tool %}
-dev/tool/perl/mix.sh
-dev/tool/python/mix.sh
-gnu/gettext/mix.sh
+dev/tool/perl
+dev/tool/python
+gnu/gettext
 {% endblock %}
 
 {% block run_deps %}
-net/openssh/mix.sh
+net/openssh
 {% endblock %}
 
 {% block make_flags %}

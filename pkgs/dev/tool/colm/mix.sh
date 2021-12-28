@@ -6,14 +6,14 @@ https://github.com/adrian-thurston/colm/archive/refs/tags/0.14.7.tar.gz
 {% endblock %}
 
 {% block bld_libs %}
-lib/c/mix.sh
-lib/c++/mix.sh
+lib/c
+lib/c++
 {% endblock %}
 
 {% block bld_tool %}
-gnu/tar/mix.sh
-dev/build/auto/conf/2/69/mix.sh
-dev/build/auto/make/1/16/mix.sh
+gnu/tar
+dev/build/auto/conf/2/69
+dev/build/auto/make/1/16
 {% endblock %}
 
 {% block autoreconf %}

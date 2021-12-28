@@ -165,7 +165,12 @@ class Package:
 
     @property
     def name(self):
-        return self.selector['name']
+        res = self.selector['name']
+
+        if not res.endswith('.sh'):
+            res = res + '/mix.sh'
+
+        return res
 
     @property
     def config(self):

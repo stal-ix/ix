@@ -2,10 +2,10 @@
 
 {% block lib_deps %}
 {% if target.os == 'linux' %}
-lib/{{allocator or 'mimalloc'}}/mix.sh
+lib/{{allocator or 'mimalloc'}}
 {% else %}
 {% if allocator %}
-lib/{{allocator}}/mix.sh
+lib/{{allocator}}
 {% endif %}
 {% endif %}
 {% endblock %}

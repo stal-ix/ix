@@ -19,7 +19,7 @@ cd S*
 {% endblock %}
 
 {% block bld_tool %}
-dev/tool/python/mix.sh
+dev/tool/python
 {% endblock %}
 
 {% block patch %}
@@ -41,5 +41,5 @@ cd ${out}/lib && rm libSPIRV-Tools-shared.a && ln -s libSPIRV-Tools.a libSPIRV-T
 {% endblock %}
 
 {% block lib_deps %}
-lib/c/mix.sh
+lib/c
 {% endblock %}

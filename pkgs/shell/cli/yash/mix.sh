@@ -6,9 +6,9 @@ https://github.com/magicant/yash/releases/download/2.51/yash-2.51.tar.xz
 {% endblock %}
 
 {% block bld_libs %}
-lib/c/mix.sh
-lib/curses/mix.sh
-lib/edit/mix.sh
+lib/c
+lib/curses
+lib/edit
 {% endblock %}
 
 {% block c_rename_symbol %}

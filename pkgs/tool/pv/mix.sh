@@ -7,12 +7,12 @@ ff3564fddcc2b9bd4a9c1d143aba4b4c
 
 {% block bld_tool %}
 {% if target.os == 'darwin' %}
-dev/lang/cctools/mix.sh
+dev/lang/cctools
 {% endif %}
 {% endblock %}
 
 {% block std_box %}
-box/boot/mix.sh
+box/boot
 {% endblock %}
 
 {% block make_flags %}
@@ -28,5 +28,5 @@ export CPPFLAGS="-Dstat64=stat -Dfstat64=fstat -Dlstat64=lstat ${CPPFLAGS}"
 {% endblock %}
 
 {% block bld_libs %}
-lib/c/mix.sh
+lib/c
 {% endblock %}

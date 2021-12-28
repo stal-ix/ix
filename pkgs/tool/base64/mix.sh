@@ -6,7 +6,7 @@ dc02ea0324279df0ecdc23d519dbcaa0
 {% endblock %}
 
 {% block std_box %}
-box/boot/mix.sh
+box/boot
 {% endblock %}
 
 {% block setup_tools %}
@@ -22,5 +22,5 @@ mkdir ${out}/bin && cp bin/base64 ${out}/bin
 {% endblock %}
 
 {% block bld_libs %}
-lib/c/mix.sh
+lib/c
 {% endblock %}

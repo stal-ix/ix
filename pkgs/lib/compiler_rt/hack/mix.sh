@@ -5,11 +5,11 @@
 {% endblock %}
 
 {% block lib_deps %}
-lib/c/naked/mix.sh
+lib/c/naked
 {% endblock %}
 
 {% block std_box %}
-box/boot/mix.sh
+box/boot
 {% endblock %}
 
 {% block unpack %}

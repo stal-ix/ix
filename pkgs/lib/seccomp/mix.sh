@@ -6,17 +6,17 @@ https://github.com/seccomp/libseccomp/archive/refs/tags/v2.5.2.tar.gz
 {% endblock %}
 
 {% block lib_deps %}
-lib/c/mix.sh
+lib/c
 {% endblock %}
 
 {% block bld_libs %}
-lib/linux/mix.sh
+lib/linux
 {% endblock %}
 
 {% block bld_tool %}
-dev/tool/gperf/mix.sh
-dev/build/auto/conf/2/71/mix.sh
-dev/build/auto/make/1/16/mix.sh
+dev/tool/gperf
+dev/build/auto/conf/2/71
+dev/build/auto/make/1/16
 {% endblock %}
 
 {% block autoreconf %}

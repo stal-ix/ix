@@ -6,18 +6,18 @@ https://www.cpan.org/src/5.0/perl-5.34.0.tar.gz
 {% endblock %}
 
 {% block bld_libs %}
-lib/c/mix.sh
-lib/z/mix.sh
-lib/gdbm/mix.sh
-lib/iconv/mix.sh
+lib/c
+lib/z
+lib/gdbm
+lib/iconv
 {% endblock %}
 
 {% block bld_tool %}
-dev/tool/bash/mix.sh
+dev/tool/bash
 {% endblock %}
 
 {% block std_box %}
-box/boot/mix.sh
+box/boot
 {% endblock %}
 
 {% block setup %}

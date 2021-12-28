@@ -6,8 +6,8 @@ d2044f756db0853dd2da0a90dd42ab62
 {% endblock %}
 
 {% block bld_tool %}
-dev/build/auto/conf/2/71/mix.sh
-dev/build/auto/make/1/16/mix.sh
+dev/build/auto/conf/2/71
+dev/build/auto/make/1/16
 {% endblock %}
 
 {% block autoreconf %}
@@ -29,5 +29,5 @@ export COFLAGS="--with-wolfssl=${out} \${COFLAGS}"
 {% endblock %}
 
 {% block lib_deps %}
-lib/c/mix.sh
+lib/c
 {% endblock %}

@@ -6,7 +6,7 @@ c6910ca8f0ee82a8c0243dc5b7217aba
 {% endblock %}
 
 {% block lib_deps %}
-lib/c/mix.sh
-lib/z/mix.sh
-lib/png/mix.sh
+lib/c
+lib/z
+lib/png
 {% endblock %}

@@ -2,9 +2,9 @@
 
 {% block bld_libs %}
 {% if target.os == 'linux' %}
-lib/linux/mix.sh
+lib/linux
 {% endif %}
-lib/c/naked/mix.sh
+lib/c/naked
 {% endblock %}
 
 {% block cmake_flags %}

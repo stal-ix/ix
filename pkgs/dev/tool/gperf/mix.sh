@@ -6,6 +6,6 @@ http://ftp.gnu.org/pub/gnu/gperf/gperf-3.1.tar.gz
 {% endblock %}
 
 {% block bld_libs %}
-lib/c/mix.sh
-lib/c++/mix.sh
+lib/c
+lib/c++
 {% endblock %}

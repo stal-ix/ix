@@ -6,11 +6,11 @@ e72db8e280431a37e7c09296308323b8
 {% endblock %}
 
 {% block lib_deps %}
-lib/c++/mix.sh
+lib/c++
 {% endblock %}
 
 {% block std_box %}
-box/boot/mix.sh
+box/boot
 {% endblock %}
 
 {% block install %}

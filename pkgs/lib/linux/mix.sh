@@ -6,11 +6,11 @@ https://www.kernel.org/pub/linux/kernel/v5.x/linux-5.13.12.tar.xz
 {% endblock %}
 
 {% block host_libs %}
-lib/musl/pure/mix.sh(std_env={{std_env}})
+lib/musl/pure(std_env={{std_env}})
 {% endblock %}
 
 {% block std_box %}
-box/boot/mix.sh
+box/boot
 {% endblock %}
 
 {% block setup_tools %}

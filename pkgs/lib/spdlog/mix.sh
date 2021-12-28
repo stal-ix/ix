@@ -6,6 +6,6 @@ https://github.com/gabime/spdlog/archive/refs/tags/v1.8.5.tar.gz
 {% endblock %}
 
 {% block lib_deps %}
-lib/c/mix.sh
-lib/c++/mix.sh
+lib/c
+lib/c++
 {% endblock %}

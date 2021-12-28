@@ -6,15 +6,15 @@ bf5564f33fe9062bc48b53abd4b34223
 {% endblock %}
 
 {% block bld_libs  %}
-lib/z/mix.sh
-lib/c/mix.sh
-lib/c++/mix.sh
-lib/ucl/mix.sh
+lib/z
+lib/c
+lib/c++
+lib/ucl
 {% endblock %}
 
 {% block bld_tool %}
-dev/tool/bash/mix.sh
-dev/tool/perl/mix.sh
+dev/tool/bash
+dev/tool/perl
 {% endblock %}
 
 {% block setup %}

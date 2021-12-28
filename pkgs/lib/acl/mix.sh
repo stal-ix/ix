@@ -6,14 +6,14 @@ https://git.savannah.nongnu.org/cgit/acl.git/snapshot/acl-2.3.1.tar.gz
 {% endblock %}
 
 {% block lib_deps %}
-lib/c/mix.sh
-lib/attr/mix.sh
+lib/c
+lib/attr
 {% endblock %}
 
 {% block bld_tool %}
-gnu/gettext/mix.sh
-dev/build/auto/conf/2/69/mix.sh
-dev/build/auto/make/1/16/mix.sh
+gnu/gettext
+dev/build/auto/conf/2/69
+dev/build/auto/make/1/16
 {% endblock %}
 
 {% block autoreconf %}

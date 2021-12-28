@@ -6,7 +6,7 @@ https://src.fedoraproject.org/repo/pkgs/zip/zip30.tar.gz/7b74551e63f8ee6aab6fbc8
 {% endblock %}
 
 {% block std_box %}
-box/boot/mix.sh
+box/boot
 {% endblock %}
 
 {% block make_flags %}
@@ -24,5 +24,5 @@ zips
 {% endblock %}
 
 {% block bld_libs %}
-lib/c/mix.sh
+lib/c
 {% endblock %}

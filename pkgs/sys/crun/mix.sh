@@ -6,16 +6,16 @@ cbfee6db4d034bfa62effe695da2bbd6
 {% endblock %}
 
 {% block bld_libs %}
-lib/c/mix.sh
-lib/intl/mix.sh
-lib/yajl/mix.sh
-lib/cap/mix.sh
-lib/seccomp/mix.sh
-lib/argp/standalone/mix.sh
+lib/c
+lib/intl
+lib/yajl
+lib/cap
+lib/seccomp
+lib/argp/standalone
 {% endblock %}
 
 {% block bld_tool %}
-dev/tool/python/mix.sh
+dev/tool/python
 {% endblock %}
 
 {% block configure_flags %}

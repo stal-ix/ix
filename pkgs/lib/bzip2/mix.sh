@@ -6,9 +6,9 @@ https://sourceware.org/pub/bzip2/bzip2-1.0.8.tar.gz
 {% endblock %}
 
 {% block std_box %}
-box/boot/mix.sh
+box/boot
 {% endblock %}
 
 {% block lib_deps %}
-lib/c/mix.sh
+lib/c
 {% endblock %}

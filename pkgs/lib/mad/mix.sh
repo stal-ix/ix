@@ -6,10 +6,10 @@ https://downloads.sourceforge.net/mad/libmad-0.15.1b.tar.gz
 {% endblock %}
 
 {% block bld_tool %}
-#dev/build/auto/conf/2/69/mix.sh
-#dev/build/auto/make/1/16/mix.sh
+#dev/build/auto/conf/2/69
+#dev/build/auto/make/1/16
 {% endblock %}
 
 {% block lib_deps %}
-lib/c/mix.sh
+lib/c
 {% endblock %}

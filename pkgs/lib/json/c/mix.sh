@@ -6,7 +6,7 @@ https://s3.amazonaws.com/json-c_releases/releases/json-c-0.15.tar.gz
 {% endblock %}
 
 {% block lib_deps %}
-lib/c/mix.sh
+lib/c
 {% endblock %}
 
 {% block c_rename_symbol %}

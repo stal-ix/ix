@@ -6,9 +6,9 @@ http://mirror.tochlab.net/pub/gnu/autoconf-archive/autoconf-archive-2021.02.19.t
 {% endblock %}
 
 {% block bld_tool %}
-dev/doc/texinfo/mix.sh
+dev/doc/texinfo
 {% endblock %}
 
 {% block std_box %}
-box/boot/mix.sh
+box/boot
 {% endblock %}

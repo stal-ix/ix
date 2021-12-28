@@ -2,21 +2,21 @@
 
 {% block bld_libs %}
 {% if target.os == 'darwin' %}
-lib/darwin/framework/CoreFoundation/mix.sh
+lib/darwin/framework/CoreFoundation
 {% endif %}
 {% if target.os == 'linux' %}
-boot/7/lib/linux/mix.sh
+boot/7/lib/linux
 {% endif %}
-boot/7/lib/cxx/mix.sh
+boot/7/lib/cxx
 {% endblock %}
 
 {% block bld_deps %}
-boot/7/samurai/mix.sh
-boot/6/env/std/mix.sh
+boot/7/samurai
+boot/6/env/std
 {% endblock %}
 
 {% block run_deps %}
-boot/7/samurai/mix.sh
+boot/7/samurai
 {% endblock %}
 
 {% block cmake_binary %}

@@ -6,15 +6,15 @@ https://ftp.gnu.org/gnu/patch/patch-2.7.6.tar.xz
 {% endblock %}
 
 {% block bld_libs %}
-lib/c/mix.sh
-lib/intl/mix.sh
-lib/iconv/mix.sh
+lib/c
+lib/intl
+lib/iconv
 {% endblock %}
 
 {% block std_box %}
-box/boot/mix.sh
+box/boot
 {% endblock %}
 
 {% block bld_tool %}
-dev/lang/bison/3/boot/mix.sh
+dev/lang/bison/3/boot
 {% endblock %}

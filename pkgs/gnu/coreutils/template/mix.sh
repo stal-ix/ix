@@ -1,18 +1,18 @@
 {% extends '//mix/template/autohell.sh' %}
 
 {% block bld_libs %}
-lib/c/mix.sh
-lib/intl/mix.sh
-lib/iconv/mix.sh
-lib/sigsegv/mix.sh
+lib/c
+lib/intl
+lib/iconv
+lib/sigsegv
 {% endblock %}
 
 {% block bld_tool %}
-gnu/patch/mix.sh
+gnu/patch
 {% endblock %}
 
 {% block std_box %}
-box/boot/mix.sh
+box/boot
 {% endblock %}
 
 {% block configure_flags %}

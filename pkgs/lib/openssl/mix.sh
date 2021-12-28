@@ -1,5 +1,5 @@
 {% extends '//mix/template/hub.sh' %}
 
 {% block lib_deps %}
-lib/openssl/{{openssl or '3'}}/mix.sh
+lib/openssl/{{openssl or '3'}}
 {% endblock %}

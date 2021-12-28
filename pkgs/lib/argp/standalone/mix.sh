@@ -20,5 +20,5 @@ cp argp.h ${out}/include
 {% endblock %}
 
 {% block lib_deps %}
-lib/c/mix.sh
+lib/c
 {% endblock %}

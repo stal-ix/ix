@@ -1,11 +1,11 @@
 {% extends '//mix/template/c_std.sh' %}
 
 {% block lib_deps %}
-lib/c/mix.sh
+lib/c
 {% endblock %}
 
 {% block bld_libs %}
-lib/lua/mix.sh
+lib/lua
 {% endblock %}
 
 {% block run_data %}

@@ -6,6 +6,6 @@ c7858bbcdcbf272b6845cd4b4a9c1ade
 {% endblock %}
 
 {% block lib_deps %}
-lib/c/mix.sh
-lib/glib/mix.sh
+lib/c
+lib/glib
 {% endblock %}

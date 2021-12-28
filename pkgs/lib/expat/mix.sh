@@ -6,7 +6,7 @@ https://github.com/libexpat/libexpat/archive/refs/tags/R_2_4_1.tar.gz
 {% endblock %}
 
 {% block std_box %}
-box/boot/mix.sh
+box/boot
 {% endblock %}
 
 {% block unpack %}
@@ -31,5 +31,5 @@ export COFLAGS="--with-expat=${out} --with-libexpat-prefix=${out} --with-libexpa
 {% endblock %}
 
 {% block lib_deps %}
-lib/c/mix.sh
+lib/c
 {% endblock %}

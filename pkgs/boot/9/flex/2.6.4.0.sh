@@ -1,7 +1,7 @@
 {% extends '//dev/lang/flex/mix.sh' %}
 
 {% block run_deps %}
-boot/9/m4/mix.sh
+boot/9/m4
 {% endblock %}
 
 {% block bld_libs %}
@@ -10,10 +10,10 @@ boot/9/m4/mix.sh
 {% block bld_deps %}
 {% block boot_flex %}
 boot/9/flex/2.5.10.1.sh
-boot/4/byacc/mix.sh
+boot/4/byacc
 {% endblock %}
-boot/9/m4/mix.sh
-boot/8/env/std/mix.sh
+boot/9/m4
+boot/8/env/std
 {% endblock %}
 
 {% block patch %}

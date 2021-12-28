@@ -6,13 +6,13 @@ https://www.python.org/ftp/python/3.11.0/Python-3.11.0a3.tar.xz
 {% endblock %}
 
 {% block lib_deps %}
-lib/c/mix.sh
-lib/gdbm/mix.sh
+lib/c
+lib/gdbm
 {{super()}}
 {% endblock %}
 
 {% block bld_tool %}
-dev/tool/python/mix.sh
+dev/tool/python
 {{super()}}
 {% endblock %}
 

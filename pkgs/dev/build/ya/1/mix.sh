@@ -3,7 +3,7 @@
 {% block bld_tool %}
 {{super()}}
 {% block ya_boot %}
-dev/build/ya/0/mix.sh(arc_root={{arc_root}},ya_ver={{ya_ver}})
+dev/build/ya/0(arc_root={{arc_root}},ya_ver={{ya_ver}})
 {% endblock %}
 {% endblock %}
 

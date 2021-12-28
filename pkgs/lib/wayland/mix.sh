@@ -6,18 +6,18 @@ https://wayland.freedesktop.org/releases/wayland-1.20.0.tar.xz
 {% endblock %}
 
 {% block lib_deps %}
-lib/c/mix.sh
-lib/ffi/mix.sh
+lib/c
+lib/ffi
 {% endblock %}
 
 {% block bld_libs %}
-lib/xml2/mix.sh
-lib/expat/mix.sh
+lib/xml2
+lib/expat
 {% endblock %}
 
 {% block bld_tool %}
 {% if kind == 'lib' %}
-lib/wayland/mix.sh
+lib/wayland
 {% endif %}
 {% endblock %}
 

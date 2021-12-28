@@ -8,11 +8,11 @@ e2bf7537e1ca821f6059ee84e7ae76a5
 {% endblock %}
 
 {% block bld_tool %}
-gnu/patch/mix.sh
+gnu/patch
 {% endblock %}
 
 {% block std_box %}
-box/boot/mix.sh
+box/boot
 {% endblock %}
 
 {% block unpack_chdir %}
@@ -39,5 +39,5 @@ macosx
 {% endblock %}
 
 {% block bld_libs %}
-lib/c/mix.sh
+lib/c
 {% endblock %}

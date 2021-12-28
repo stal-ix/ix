@@ -6,6 +6,6 @@ https://www.jedsoft.org/releases/most/most-5.1.0.tar.gz
 {% endblock %}
 
 {% block bld_libs %}
-lib/c/mix.sh
-lib/slang/mix.sh
+lib/c
+lib/slang
 {% endblock %}

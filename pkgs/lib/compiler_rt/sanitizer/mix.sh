@@ -1,12 +1,12 @@
 {% extends '//lib/compiler_rt/template/mix.sh' %}
 
 {% block bld_libs %}
-lib/linux/mix.sh
-lib/c/naked/mix.sh
+lib/linux
+lib/c/naked
 {% endblock %}
 
 {% block bld_tool %}
-dev/tool/python/mix.sh
+dev/tool/python
 {% endblock %}
 
 {% block patch %}

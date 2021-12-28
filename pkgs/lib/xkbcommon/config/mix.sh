@@ -8,9 +8,9 @@ http://www.x.org/releases/individual/data/xkeyboard-config/xkeyboard-config-2.24
 {% block make_no_thrs %}{% endblock %}
 
 {% block bld_tool %}
-lib/xslt/mix.sh
-lib/intl/tool/mix.sh
-gnu/gettext/mix.sh
+lib/xslt
+lib/intl/tool
+gnu/gettext
 {% endblock %}
 
 {% block configure_flags %}
@@ -22,5 +22,5 @@ export XKB_CONFIG="${out}/share/X11/xkb"
 {% endblock %}
 
 {% block lib_deps %}
-lib/c/mix.sh
+lib/c
 {% endblock %}

@@ -6,11 +6,11 @@ http://download.osgeo.org/libtiff/tiff-4.3.0.tar.gz
 {% endblock %}
 
 {% block lib_deps %}
-lib/z/mix.sh
-lib/jpeg/mix.sh
-lib/xz/mix.sh
-lib/zstd/mix.sh
-lib/webp/mix.sh
-lib/c/mix.sh
-lib/c++/mix.sh
+lib/z
+lib/jpeg
+lib/xz
+lib/zstd
+lib/webp
+lib/c
+lib/c++
 {% endblock %}

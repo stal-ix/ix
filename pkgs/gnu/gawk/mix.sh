@@ -6,18 +6,18 @@ https://mirror.tochlab.net/pub/gnu/gawk/gawk-5.1.0.tar.xz
 {% endblock %}
 
 {% block bld_libs %}
-lib/c/mix.sh
-lib/intl/mix.sh
-lib/iconv/mix.sh
-lib/sigsegv/mix.sh
+lib/c
+lib/intl
+lib/iconv
+lib/sigsegv
 {% endblock %}
 
 {% block std_box %}
-box/boot/mix.sh
+box/boot
 {% endblock %}
 
 {% block bld_tool %}
-dev/lang/bison/3/boot/mix.sh
+dev/lang/bison/3/boot
 {% endblock %}
 
 {% block c_rename_symbol %}

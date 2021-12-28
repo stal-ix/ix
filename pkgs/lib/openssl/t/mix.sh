@@ -6,17 +6,17 @@ https://www.openssl.org/source/openssl-3.0.0.tar.gz
 {% endblock %}
 
 {% block lib_deps %}
-lib/c/mix.sh
+lib/c
 {% endblock %}
 
 {% block bld_libs %}
 {% if target.os == 'linux' %}
-lib/linux/mix.sh
+lib/linux
 {% endif %}
 {% endblock %}
 
 {% block bld_tool %}
-dev/tool/perl/mix.sh
+dev/tool/perl
 {% endblock %}
 
 {% block setup %}

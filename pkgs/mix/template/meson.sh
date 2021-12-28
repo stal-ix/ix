@@ -2,11 +2,11 @@
 
 {% block std_box %}
 {% if target.os == 'darwin' %}
-dev/lang/cctools/mix.sh
+dev/lang/cctools
 {% endif %}
-dev/build/meson/mix.sh
-dev/build/cmake/mix.sh
-dev/build/pkg-config/mix.sh
+dev/build/meson
+dev/build/cmake
+dev/build/pkg-config
 {{super()}}
 {% endblock %}
 

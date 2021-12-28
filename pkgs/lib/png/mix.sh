@@ -6,11 +6,11 @@ d703ed4913fcfb40021bd3d4d35e00b6
 {% endblock %}
 
 {% block lib_deps %}
-lib/c/mix.sh
-lib/z/mix.sh
+lib/c
+lib/z
 {% endblock %}
 
 {% block bld_tool %}
-dev/build/auto/make/1/16/mix.sh
-dev/build/auto/conf/2/69/mix.sh
+dev/build/auto/make/1/16
+dev/build/auto/conf/2/69
 {% endblock %}

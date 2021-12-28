@@ -6,17 +6,17 @@ db08bb384e81968957f997ec9808926e
 {% endblock %}
 
 {% block lib_deps %}
-lib/c/mix.sh
-lib/iconv/mix.sh
+lib/c
+lib/iconv
 {% endblock %}
 
 {% block bld_tool %}
-dev/build/auto/conf/2/69/mix.sh
-dev/build/auto/make/1/16/mix.sh
+dev/build/auto/conf/2/69
+dev/build/auto/make/1/16
 {% endblock %}
 
 {% block std_box %}
-box/boot/mix.sh
+box/boot
 {% endblock %}
 
 {% block c_rename_symbol %}

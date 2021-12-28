@@ -6,10 +6,10 @@ https://github.com/KhronosGroup/glslang/archive/refs/tags/11.7.1.tar.gz
 {% endblock %}
 
 {% block bld_tool %}
-dev/tool/python/mix.sh
-dev/lang/bison/3/8/mix.sh
+dev/tool/python
+dev/lang/bison/3/8
 {% endblock %}
 
 {% block lib_deps %}
-lib/c/mix.sh
+lib/c
 {% endblock %}

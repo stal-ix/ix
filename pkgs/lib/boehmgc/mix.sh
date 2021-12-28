@@ -6,16 +6,16 @@ https://github.com/ivmai/bdwgc/archive/refs/tags/v8.0.6.tar.gz
 {% endblock %}
 
 {% block lib_deps %}
-lib/c/mix.sh
-lib/atomicops/mix.sh
+lib/c
+lib/atomicops
 {% if target.os == 'darwin' %}
-lib/darwin/framework/CoreFoundation/mix.sh
+lib/darwin/framework/CoreFoundation
 {% endif %}
 {% endblock %}
 
 {% block bld_tool %}
-dev/build/auto/conf/2/69/mix.sh
-dev/build/auto/make/1/16/mix.sh
+dev/build/auto/conf/2/69
+dev/build/auto/make/1/16
 {% endblock %}
 
 {% block autoreconf %}

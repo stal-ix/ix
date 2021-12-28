@@ -6,19 +6,19 @@ https://github.com/OpenVPN/openvpn/archive/refs/tags/v2.5.4.tar.gz
 {% endblock %}
 
 {% block bld_libs %}
-lib/c/mix.sh
-lib/lz4/mix.sh
-lib/lzo/mix.sh
+lib/c
+lib/lz4
+lib/lzo
 {% if target.os == 'linux' %}
-lib/linux/mix.sh
+lib/linux
 {% endif %}
-lib/{{openvpnssl or 'openssl'}}/mix.sh
+lib/{{openvpnssl or 'openssl'}}
 {% endblock %}
 
 {% block bld_tool %}
-pypi/docutils/scripts/mix.sh
-dev/build/auto/conf/2/69/mix.sh
-dev/build/auto/make/1/16/mix.sh
+pypi/docutils/scripts
+dev/build/auto/conf/2/69
+dev/build/auto/make/1/16
 {% endblock %}
 
 {% block configure_flags %}

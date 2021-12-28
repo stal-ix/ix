@@ -6,17 +6,17 @@ https://gitlab.com/api/v4/projects/4207231/packages/generic/graphviz-releases/2.
 {% endblock %}
 
 {% block bld_tool %}
-dev/build/auto/conf/2/69/mix.sh
-dev/build/auto/make/1/16/mix.sh
+dev/build/auto/conf/2/69
+dev/build/auto/make/1/16
 {% endblock %}
 
 {% block bld_libs %}
-lib/c/mix.sh
-lib/z/mix.sh
-lib/gd/mix.sh
-lib/expat/mix.sh
-lib/freetype/mix.sh
-lib/fontconfig/mix.sh
+lib/c
+lib/z
+lib/gd
+lib/expat
+lib/freetype
+lib/fontconfig
 {% endblock %}
 
 {% block touch_yl %}

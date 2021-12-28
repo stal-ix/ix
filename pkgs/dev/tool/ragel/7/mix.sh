@@ -6,8 +6,8 @@ https://github.com/adrian-thurston/ragel/archive/refs/tags/7.0.4.tar.gz
 {% endblock %}
 
 {% block bld_tool %}
-dev/build/auto/conf/2/69/mix.sh
-dev/build/auto/make/1/16/mix.sh
+dev/build/auto/conf/2/69
+dev/build/auto/make/1/16
 {% endblock %}
 
 {% block autoreconf %}
@@ -15,6 +15,6 @@ dash autogen.sh
 {% endblock %}
 
 {% block bld_libs %}
-lib/c/mix.sh
-lib/c++/mix.sh
+lib/c
+lib/c++
 {% endblock %}

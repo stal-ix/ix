@@ -1,7 +1,7 @@
 {% extends '//mix/template/proxy.sh' %}
 
 {% block lib_deps %}
-lib/mesa/mix.sh
+lib/mesa
 {% endblock %}
 
 {% block env %}

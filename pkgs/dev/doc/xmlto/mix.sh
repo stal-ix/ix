@@ -6,11 +6,11 @@ https://releases.pagure.org/xmlto/xmlto-0.0.28.tar.bz2
 {% endblock %}
 
 {% block bld_libs %}
-lib/c/mix.sh
-lib/xslt/mix.sh
+lib/c
+lib/xslt
 {% endblock %}
 
 {% block bld_tool %}
-gnu/getopt/mix.sh
-dev/lang/flex/mix.sh
+gnu/getopt
+dev/lang/flex
 {% endblock %}

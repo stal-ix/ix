@@ -4,5 +4,5 @@
 {% endblock %}
 
 {% block bld_deps %}
-boot/3/env/mix.sh
+boot/3/env
 {% endblock %}

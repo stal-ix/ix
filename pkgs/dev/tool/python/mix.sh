@@ -4,17 +4,17 @@
 {% endblock %}
 
 {% block bld_libs %}
-lib/c/mix.sh
-lib/z/mix.sh
-lib/ffi/mix.sh
+lib/c
+lib/z
+lib/ffi
 {% if target.os == 'darwin' %}
-lib/darwin/framework/SystemConfiguration/mix.sh
+lib/darwin/framework/SystemConfiguration
 {% endif %}
 {{super()}}
 {% endblock %}
 
 {% block std_box %}
-box/boot/mix.sh
+box/boot
 {% endblock %}
 
 {% block extra_modules %}

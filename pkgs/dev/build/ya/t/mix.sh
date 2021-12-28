@@ -10,13 +10,13 @@ be31e2ab97ad66b404425e2794673bee
 {% endblock %}
 
 {% block bld_tool %}
-dev/tool/python/mix.sh
-dev/tool/python/2/mix.sh
-dev/jdk/oracle/17/mix.sh
+dev/tool/python
+dev/tool/python/2
+dev/jdk/oracle/17
 {% endblock %}
 
 {% block c_compiler %}
-dev/lang/clang/12/mix.sh
+dev/lang/clang/12
 {% endblock %}
 
 {% block setup %}

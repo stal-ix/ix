@@ -6,9 +6,9 @@ https://strace.io/files/5.14/strace-5.14.tar.xz
 {% endblock %}
 
 {% block bld_libs %}
-lib/c/mix.sh
-lib/linux/mix.sh
-lib/elfutils/mix.sh
+lib/c
+lib/linux
+lib/elfutils
 {% endblock %}
 
 {% block configure_flags %}

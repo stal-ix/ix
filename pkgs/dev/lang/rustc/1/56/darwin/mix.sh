@@ -6,7 +6,7 @@ https://static.rust-lang.org/dist/rust-1.56.1-{{host.gnu_arch}}-apple-darwin.pkg
 {% endblock %}
 
 {% block bld_tool %}
-lib/archive/mix.sh
+lib/archive
 {% endblock %}
 
 {% block unpack %}
@@ -40,5 +40,5 @@ EOF
 {% endblock %}
 
 {% block bld_libs %}
-lib/c/mix.sh
+lib/c
 {% endblock %}

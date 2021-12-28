@@ -7,20 +7,20 @@ f2e272ec793571f28d52006ad14534c4
 
 {% block bld_libs %}
 {% if target.os == 'linux' %}
-lib/linux/mix.sh
+lib/linux
 {% endif %}
 {% endblock %}
 
 {% block bld_tool %}
-lib/magic/mix.sh
-gnu/sed/mix.sh
-dev/build/auto/conf/2/69/mix.sh
-dev/build/auto/make/1/16/mix.sh
-dev/doc/texinfo/mix.sh
+lib/magic
+gnu/sed
+dev/build/auto/conf/2/69
+dev/build/auto/make/1/16
+dev/doc/texinfo
 {% endblock %}
 
 {% block std_box %}
-box/boot/mix.sh
+box/boot
 {% endblock %}
 
 {% block autoreconf %}
@@ -32,5 +32,5 @@ export COFLAGS="--with-system-ffi=yes --with-libffi-prefix=${out} \${COFLAGS}"
 {% endblock %}
 
 {% block lib_deps %}
-lib/c/mix.sh
+lib/c
 {% endblock %}

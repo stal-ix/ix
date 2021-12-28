@@ -6,6 +6,6 @@ https://download.gnome.org/sources/gobject-introspection/1.70/gobject-introspect
 {% endblock %}
 
 {% block lib_deps %}
-lib/c/mix.sh
-lib/glib/mix.sh
+lib/c
+lib/glib
 {% endblock %}

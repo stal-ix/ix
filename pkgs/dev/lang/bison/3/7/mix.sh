@@ -6,21 +6,21 @@ d61aa92e3562cb7292b004ce96173cf7
 {% endblock %}
 
 {% block run_deps %}
-dev/lang/m4/mix.sh
+dev/lang/m4
 {% endblock %}
 
 {% block bld_libs %}
-lib/c/mix.sh
-lib/intl/mix.sh
+lib/c
+lib/intl
 {% endblock %}
 
 {% block bld_tool %}
-dev/lang/m4/mix.sh
-dev/lang/flex/mix.sh
-dev/tool/perl/mix.sh
-dev/doc/help2man/mix.sh
-dev/doc/texinfo/mix.sh
+dev/lang/m4
+dev/lang/flex
+dev/tool/perl
+dev/doc/help2man
+dev/doc/texinfo
 {% block bison_bootstrap %}
-dev/lang/bison/3/boot/mix.sh
+dev/lang/bison/3/boot
 {% endblock %}
 {% endblock %}

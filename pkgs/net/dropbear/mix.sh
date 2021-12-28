@@ -6,10 +6,10 @@ a07438a6159a24c61f98f1bce2d479c0
 {% endblock %}
 
 {% block bld_libs %}
-lib/c/mix.sh
-lib/z/mix.sh
-lib/tom/math/mix.sh
-lib/tom/crypt/mix.sh
+lib/c
+lib/z
+lib/tom/math
+lib/tom/crypt
 {% endblock %}
 
 {% block enable_static %}

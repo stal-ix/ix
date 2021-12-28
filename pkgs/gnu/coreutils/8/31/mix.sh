@@ -6,7 +6,7 @@ https://ftp.gnu.org/gnu/coreutils/coreutils-8.31.tar.xz
 {% endblock %}
 
 {% block bld_tool %}
-dev/lang/byacc/mix.sh
+dev/lang/byacc
 {{super()}}
 {% endblock %}
 
@@ -16,5 +16,5 @@ dev/lang/byacc/mix.sh
 {% endblock %}
 
 {% block bld_libs %}
-lib/c/mix.sh
+lib/c
 {% endblock %}

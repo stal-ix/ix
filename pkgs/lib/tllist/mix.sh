@@ -6,5 +6,5 @@ https://codeberg.org/dnkl/tllist/archive/1.0.5.tar.gz
 {% endblock %}
 
 {% block lib_deps %}
-lib/c/mix.sh
+lib/c
 {% endblock %}

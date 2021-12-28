@@ -6,15 +6,15 @@ a5d6cfcf776e145f2054d5eefb4bc110
 {% endblock %}
 
 {% block bld_tool %}
-gnu/patch/mix.sh
+gnu/patch
 {% endblock %}
 
 {% block std_box %}
-box/boot/mix.sh
+box/boot
 {% endblock %}
 
 {% block run_deps %}
-dev/tool/python/mix.sh
+dev/tool/python
 {% endblock %}
 
 {% block build %}

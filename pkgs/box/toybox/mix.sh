@@ -6,12 +6,12 @@ https://github.com/landley/toybox/archive/refs/tags/0.8.5.tar.gz
 {% endblock %}
 
 {% block bld_libs %}
-lib/c/mix.sh
-lib/linux/mix.sh
+lib/c
+lib/linux
 {% endblock %}
 
 {% block std_box %}
-box/boot/mix.sh
+box/boot
 {% endblock %}
 
 {% block setup %}

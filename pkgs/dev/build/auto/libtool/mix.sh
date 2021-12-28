@@ -6,11 +6,11 @@ addf44b646ddb4e3919805aa88fa7c5e
 {% endblock %}
 
 {% block bld_tool %}
-dev/lang/m4/mix.sh
+dev/lang/m4
 {% endblock %}
 
 {% block std_box %}
-box/boot/mix.sh
+box/boot
 {% endblock %}
 
 {% block setup %}
@@ -31,5 +31,5 @@ export LIBTOOLIZE=libtoolize
 {% endblock %}
 
 {% block bld_libs %}
-lib/c/mix.sh
+lib/c
 {% endblock %}

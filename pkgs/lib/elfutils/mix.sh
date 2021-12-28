@@ -6,22 +6,22 @@ https://sourceware.org/elfutils/ftp/0.186/elfutils-0.186.tar.bz2
 {% endblock %}
 
 {% block lib_deps %}
-lib/fts/mix.sh
-lib/obstack/mix.sh
-lib/z/mix.sh
-lib/bzip2/mix.sh
-lib/xz/mix.sh
-lib/zstd/mix.sh
-lib/intl/mix.sh
+lib/fts
+lib/obstack
+lib/z
+lib/bzip2
+lib/xz
+lib/zstd
+lib/intl
 {% endblock %}
 
 {% block bld_libs %}
-lib/c/mix.sh
-lib/argp/standalone/mix.sh
+lib/c
+lib/argp/standalone
 {% endblock %}
 
 {% block bld_tool %}
-dev/lang/m4/mix.sh
+dev/lang/m4
 {% endblock %}
 
 {% block patch %}

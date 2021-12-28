@@ -6,16 +6,16 @@ https://ftp.gnu.org/pub/gnu/gettext/gettext-0.21.tar.gz
 {% endblock %}
 
 {% block lib_deps %}
-lib/c/mix.sh
-lib/iconv/mix.sh
+lib/c
+lib/iconv
 
 {% if target.os == 'darwin' %}
-lib/darwin/framework/CoreFoundation/mix.sh
+lib/darwin/framework/CoreFoundation
 {% endif %}
 {% endblock %}
 
 {% block std_box %}
-box/boot/mix.sh
+box/boot
 {% endblock %}
 
 {% block unpack %}

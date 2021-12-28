@@ -6,11 +6,11 @@ https://github.com/linux-pam/linux-pam/archive/refs/tags/v1.5.2.tar.gz
 {% endblock %}
 
 {% block bld_tool %}
-gnu/gettext/mix.sh
-dev/lang/flex/mix.sh
-dev/lang/byacc/mix.sh
-dev/build/auto/make/1/16/mix.sh
-dev/build/auto/conf/2/69/mix.sh
+gnu/gettext
+dev/lang/flex
+dev/lang/byacc
+dev/build/auto/make/1/16
+dev/build/auto/conf/2/69
 {% endblock %}
 
 {% block autoreconf %}
@@ -18,11 +18,11 @@ dash autogen.sh
 {% endblock %}
 
 {% block lib_deps %}
-lib/c/mix.sh
+lib/c
 {% endblock %}
 
 {% block bld_libs %}
-lib/linux/mix.sh
+lib/linux
 {% endblock %}
 
 {% block configure_flags %}

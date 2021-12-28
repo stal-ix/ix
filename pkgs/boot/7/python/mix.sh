@@ -2,17 +2,17 @@
 
 {% block bld_libs %}
 {% if target.os == 'linux' %}
-boot/7/lib/linux/mix.sh
+boot/7/lib/linux
 {% endif %}
 {% if target.os == 'darwin' %}
-lib/darwin/framework/SystemConfiguration/mix.sh
+lib/darwin/framework/SystemConfiguration
 {% endif %}
-boot/7/lib/z/mix.sh
-boot/7/lib/compiler_rt/mix.sh
+boot/7/lib/z
+boot/7/lib/compiler_rt
 {% endblock %}
 
 {% block bld_deps %}
-boot/6/env/std/mix.sh
+boot/6/env/std
 {% endblock %}
 
 {% block autoreconf %}

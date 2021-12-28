@@ -7,7 +7,7 @@ a2d0d5e25aefc7b3b51c816de8096fd6
 
 {% block lib_deps %}
 {{super()}}
-lib/mpack/mix.sh
+lib/mpack
 {% endblock %}
 
 {% block setup %}

@@ -8,8 +8,8 @@
 
 {% block bld_deps %}
 boot/9/flex/2.5.10.0.sh
-boot/4/byacc/mix.sh
-boot/8/env/std/mix.sh
+boot/4/byacc
+boot/8/env/std
 {% endblock %}
 
 {% block patch %}

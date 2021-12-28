@@ -6,11 +6,11 @@ https://ftp.gnu.org/gnu/sed/sed-4.8.tar.xz
 {% endblock %}
 
 {% block bld_libs %}
-lib/c/mix.sh
-lib/intl/mix.sh
-lib/iconv/mix.sh
+lib/c
+lib/intl
+lib/iconv
 {% endblock %}
 
 {% block std_box %}
-box/boot/mix.sh
+box/boot
 {% endblock %}

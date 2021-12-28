@@ -6,14 +6,14 @@ d5724a37b8d640f67f09cbbdd831a528
 {% endblock %}
 
 {% block lib_deps %}
-boot/7/lib/cxx/unwind/mix.sh
+boot/7/lib/cxx/unwind
 {% endblock %}
 
 {% block bld_libs %}
 {% endblock %}
 
 {% block bld_deps %}
-boot/6/env/std/mix.sh
+boot/6/env/std
 {% endblock %}
 
 {% block build %}

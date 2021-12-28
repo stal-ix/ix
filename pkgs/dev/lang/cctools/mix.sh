@@ -6,22 +6,22 @@ https://github.com/tpoechtrager/cctools-port/archive/236a426c1205a3bfcf0dbb2e2fa
 {% endblock %}
 
 {% block bld_libs %}
-lib/c/mix.sh
-lib/c++/mix.sh
-lib/objc/mix.sh
+lib/c
+lib/c++
+lib/objc
 {% if target.os == 'linux' %}
-lib/bsd/overlay/mix.sh
+lib/bsd/overlay
 {% endif %}
 {% endblock %}
 
 {% block bld_tool %}
-lib/magic/mix.sh
-dev/build/auto/conf/2/69/mix.sh
-dev/build/auto/make/1/16/mix.sh
+lib/magic
+dev/build/auto/conf/2/69
+dev/build/auto/make/1/16
 {% endblock %}
 
 {% block std_box %}
-box/boot/mix.sh
+box/boot
 {% endblock %}
 
 {% block unpack %}

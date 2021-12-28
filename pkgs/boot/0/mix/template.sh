@@ -6,7 +6,7 @@ https://storage.yandexcloud.net/mix-cache/{{self.link().strip()}}
 {% endblock %}
 
 {% block ind_deps %}
-dev/lang/clang/lib/mix.sh
+dev/lang/clang/lib
 {% endblock %}
 
 {% block build %}

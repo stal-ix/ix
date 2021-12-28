@@ -6,8 +6,8 @@ bdd3d5efba9c17da8d83a35ec552baef
 {% endblock %}
 
 {% block lib_deps %}
-lib/c/mix.sh
-lib/gmp/mix.sh
+lib/c
+lib/gmp
 {% endblock %}
 
 {% block env %}

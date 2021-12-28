@@ -10,23 +10,23 @@ https://static.rust-lang.org/dist/rustc-1.19.0-src.tar.gz
 {% endblock %}
 
 {% block bld_libs %}
-lib/z/mix.sh
-lib/c/mix.sh
-lib/c++/mix.sh
-lib/curl/mix.sh
-lib/iconv/mix.sh
-lib/openssl/mix.sh
+lib/z
+lib/c
+lib/c++
+lib/curl
+lib/iconv
+lib/openssl
 {% endblock %}
 
 {% block bld_tool %}
-tool/curl/mix.sh
-dev/tool/bash/mix.sh
-dev/vcs/git/mix.sh
-gnu/tar/mix.sh
-tool/gnu/time/mix.sh
-dev/tool/python/mix.sh
-dev/build/make/mix.sh
-dev/build/cmake/mix.sh
+tool/curl
+dev/tool/bash
+dev/vcs/git
+gnu/tar
+tool/gnu/time
+dev/tool/python
+dev/build/make
+dev/build/cmake
 {% endblock %}
 
 {% block unpack %}

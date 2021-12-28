@@ -6,7 +6,7 @@ http://prdownloads.sourceforge.net/sbcl/sbcl-2.1.10-x86-64-linux-binary.tar.bz2
 {% endblock %}
 
 {% block bld_tool %}
-dev/build/make/mix.sh
+dev/build/make
 {% endblock %}
 
 {% block install %}

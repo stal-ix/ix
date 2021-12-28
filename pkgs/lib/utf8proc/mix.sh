@@ -6,11 +6,11 @@ https://github.com/JuliaStrings/utf8proc/archive/refs/tags/v2.6.1.tar.gz
 {% endblock %}
 
 {% block lib_deps %}
-lib/c/mix.sh
+lib/c
 {% endblock %}
 
 {% block std_box %}
-box/boot/mix.sh
+box/boot
 {% endblock %}
 
 {% block make_flags %}

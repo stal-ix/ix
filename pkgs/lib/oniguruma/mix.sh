@@ -10,5 +10,5 @@ export COFLAGS="--with-onig=${out} \${COFLAGS}"
 {% endblock %}
 
 {% block lib_deps %}
-lib/c/mix.sh
+lib/c
 {% endblock %}

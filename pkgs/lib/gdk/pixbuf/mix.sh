@@ -6,15 +6,15 @@ https://download.gnome.org/sources/gdk-pixbuf/2.42/gdk-pixbuf-2.42.6.tar.xz
 {% endblock %}
 
 {% block lib_deps %}
-lib/c/mix.sh
-lib/png/mix.sh
-lib/tiff/mix.sh
-lib/jpeg/mix.sh
-lib/glib/mix.sh
+lib/c
+lib/png
+lib/tiff
+lib/jpeg
+lib/glib
 {% endblock %}
 
 {% block bld_tool %}
-lib/glib/mix.sh
+lib/glib
 {% endblock %}
 
 {% block meson_flags %}

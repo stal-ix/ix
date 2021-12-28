@@ -6,12 +6,12 @@ ec16d126e5f72362d57e0161460fce5e
 {% endblock %}
 
 {% block lib_deps %}
-lib/md/mix.sh
+lib/md
 {% endblock %}
 
 {% block bld_libs %}
-lib/c/mix.sh
-lib/linux/mix.sh
+lib/c
+lib/linux
 {% endblock %}
 
 {% block c_rename_symbol %}

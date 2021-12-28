@@ -1,7 +1,7 @@
 import os
 
 
-def fix(d, n):
+def fix1(d, n):
     if '/refactor/' in n:
         return
 
@@ -24,6 +24,17 @@ def fix(d, n):
                     l = l[2:]
 
             yield l
+
+    return '\n'.join(it()).strip() + '\n'
+
+
+def fix(d, n):
+    def it():
+        for l in d.split('\n'):
+            if 'extends' in l or 'include' in l:
+                yield l
+            else:
+                yield l.replace('/mix.sh', '')
 
     return '\n'.join(it()).strip() + '\n'
 

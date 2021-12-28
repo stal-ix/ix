@@ -1,7 +1,7 @@
 {% extends '//mix/template/py.py' %}
 
 {% block lib_deps %}
-lib/build/mix.sh
+lib/build
 {% endblock %}
 
 {% block build %}

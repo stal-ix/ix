@@ -6,18 +6,18 @@ https://archive.mesa3d.org/demos/mesa-demos-8.4.0.tar.bz2
 {% endblock %}
 
 {% block bld_libs %}
-lib/drm/mix.sh
-lib/mesa/mix.sh
-lib/mesa/drivers/gl/zink/mix.sh
-lib/vulkan/driver/mix.sh
-lib/freetype/mix.sh
-lib/freeglut/mix.sh
-lib/wayland/mix.sh
+lib/drm
+lib/mesa
+lib/mesa/drivers/gl/zink
+lib/vulkan/driver
+lib/freetype
+lib/freeglut
+lib/wayland
 {% endblock %}
 
 {% block bld_tool %}
-dev/build/auto/conf/2/69/mix.sh
-dev/build/auto/make/1/16/mix.sh
+dev/build/auto/conf/2/69
+dev/build/auto/make/1/16
 {% endblock %}
 
 {% block configure_flags %}
@@ -35,5 +35,5 @@ export ac_cv_lib_GL_glBegin=yes
 {% endblock %}
 
 {% block lib_deps %}
-lib/c/mix.sh
+lib/c
 {% endblock %}

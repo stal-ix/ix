@@ -1,11 +1,11 @@
 {% extends '//mix/template/proxy.sh' %}
 
 {% block run_deps %}
-dev/tool/python/mix.sh
+dev/tool/python
 {% endblock %}
 
 {% block ind_deps %}
-lib/dlfcn/scripts/lib/mix.sh
+lib/dlfcn/scripts/lib
 {% endblock %}
 
 {% block install %}

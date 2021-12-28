@@ -6,16 +6,16 @@ bf84db0b41149f391066c2c7297dbdb3
 {% endblock %}
 
 {% block bld_libs %}
-lib/c/mix.sh
-lib/mesa/drivers/mix.sh
-lib/vulkan/loader/mix.sh
-lib/vulkan/headers/mix.sh
+lib/c
+lib/mesa/drivers
+lib/vulkan/loader
+lib/vulkan/headers
 {% endblock %}
 
 {% block bld_tool %}
-lib/vulkan/glslang/mix.sh
-dev/build/pkg-config/mix.sh
-lib/wayland/protocols/mix.sh
+lib/vulkan/glslang
+dev/build/pkg-config
+lib/wayland/protocols
 {% endblock %}
 
 {% block cmake_flags %}

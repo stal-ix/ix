@@ -6,11 +6,11 @@ https://git.sr.ht/~kennylevinsen/seatd/archive/0.6.3.tar.gz
 {% endblock %}
 
 {% block lib_deps %}
-lib/c/mix.sh
+lib/c
 {% endblock %}
 
 {% block bld_libs %}
-lib/linux/mix.sh
+lib/linux
 {% endblock %}
 
 {% block setup %}

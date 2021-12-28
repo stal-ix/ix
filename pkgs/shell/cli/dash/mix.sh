@@ -6,10 +6,10 @@ c7016b513f701d88c70b3082eb183581
 {% endblock %}
 
 {% block bld_libs %}
-lib/c/mix.sh
-lib/intl/mix.sh
-lib/edit/mix.sh
-lib/iconv/mix.sh
+lib/c
+lib/intl
+lib/edit
+lib/iconv
 {% endblock %}
 
 {% block setup %}

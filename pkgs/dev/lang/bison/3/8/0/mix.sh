@@ -1,7 +1,7 @@
 {% extends '//dev/lang/bison/3/8/mix.sh' %}
 
 {% block bison_bootstrap %}
-dev/lang/bison/3/7/mix.sh
+dev/lang/bison/3/7
 {% endblock %}
 
 {% block bison_patch %}

@@ -6,14 +6,14 @@ e5cb6707320a077f0618b669d1856bc4
 {% endblock %}
 
 {% block lib_deps %}
-lib/z/mix.sh
-lib/c/mix.sh
-lib/c++/mix.sh
+lib/z
+lib/c
+lib/c++
 {% endblock %}
 
 {% block bld_tool %}
-dev/build/auto/conf/2/69/mix.sh
-dev/build/auto/make/1/16/mix.sh
+dev/build/auto/conf/2/69
+dev/build/auto/make/1/16
 {% endblock %}
 
 {% block autoreconf %}

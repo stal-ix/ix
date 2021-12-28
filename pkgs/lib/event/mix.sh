@@ -6,14 +6,14 @@ https://github.com/libevent/libevent/archive/refs/tags/release-2.1.12-stable.tar
 {% endblock %}
 
 {% block lib_deps %}
-lib/c/mix.sh
-lib/openssl/mix.sh
+lib/c
+lib/openssl
 {% endblock %}
 
 {% block bld_tool %}
-dev/build/auto/conf/2/69/mix.sh
-dev/build/auto/make/1/16/mix.sh
-dev/tool/python/mix.sh
+dev/build/auto/conf/2/69
+dev/build/auto/make/1/16
+dev/tool/python
 {% endblock %}
 
 {% block autoreconf %}

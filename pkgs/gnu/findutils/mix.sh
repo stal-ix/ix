@@ -6,12 +6,12 @@ eeefe2e6380931a77dfa6d9350b43186
 {% endblock %}
 
 {% block bld_libs %}
-lib/c/mix.sh
-lib/iconv/mix.sh
+lib/c
+lib/iconv
 {% endblock %}
 
 {% block std_box %}
-box/boot/mix.sh
+box/boot
 {% endblock %}
 
 {% block patch %}

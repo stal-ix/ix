@@ -6,15 +6,15 @@ bc78f39c7cd7fab1dd5fc4a2c3be1661
 {% endblock %}
 
 {% block bld_tool %}
-lib/magic/mix.sh
-dev/build/auto/conf/2/69/mix.sh
-dev/build/auto/make/1/16/mix.sh
+lib/magic
+dev/build/auto/conf/2/69
+dev/build/auto/make/1/16
 {% endblock %}
 
 {% block std_box %}
-box/boot/mix.sh
+box/boot
 {% endblock %}
 
 {% block lib_deps %}
-lib/c/mix.sh
+lib/c
 {% endblock %}

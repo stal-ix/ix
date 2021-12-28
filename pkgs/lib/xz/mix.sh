@@ -6,16 +6,16 @@ aa1621ec7013a19abab52a8aff04fe5b
 {% endblock %}
 
 {% block lib_deps %}
-lib/c/mix.sh
+lib/c
 {% endblock %}
 
 {% block bld_libs %}
-lib/intl/mix.sh
-lib/iconv/mix.sh
+lib/intl
+lib/iconv
 {% endblock %}
 
 {% block std_box %}
-box/boot/mix.sh
+box/boot
 {% endblock %}
 
 {% block env %}

@@ -6,12 +6,12 @@ efd079fb7955d4f73da791f758c1a93d
 {% endblock %}
 
 {% block bld_libs %}
-lib/c/mix.sh
-lib/c++/mix.sh
+lib/c
+lib/c++
 {% endblock %}
 
 {% block bld_tool %}
-dev/lang/flex/mix.sh
-dev/lang/bison/3/8/mix.sh
-dev/tool/python/mix.sh
+dev/lang/flex
+dev/lang/bison/3/8
+dev/tool/python
 {% endblock %}

@@ -6,7 +6,7 @@ http://zlib.net/zlib-1.2.11.tar.xz
 {% endblock %}
 
 {% block std_box %}
-box/boot/mix.sh
+box/boot
 {% endblock %}
 
 {% block configure %}
@@ -30,5 +30,5 @@ export COFLAGS="--with-z=${out} \${COFLAGS}"
 {% endblock %}
 
 {% block lib_deps %}
-lib/c/mix.sh
+lib/c
 {% endblock %}

@@ -6,7 +6,7 @@ https://github.com/lz4/lz4/archive/refs/tags/v1.9.3.tar.gz
 {% endblock %}
 
 {% block std_box %}
-box/boot/mix.sh
+box/boot
 {% endblock %}
 
 {% block make_flags %}
@@ -18,5 +18,5 @@ allmost
 {% endblock %}
 
 {% block lib_deps %}
-lib/c/mix.sh
+lib/c
 {% endblock %}

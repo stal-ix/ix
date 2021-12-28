@@ -11,7 +11,7 @@ https://github.com/fribidi/fribidi/archive/refs/tags/v1.0.11.tar.gz
 {% endblock %}
 
 {% block lib_deps %}
-lib/c/mix.sh
+lib/c
 {% endblock %}
 
 {% block c_rename_symbol %}

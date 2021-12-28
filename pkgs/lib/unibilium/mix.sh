@@ -6,17 +6,17 @@ a89b8ef6e752cc76098e1863ff4b5457
 {% endblock %}
 
 {% block lib_deps %}
-lib/c/mix.sh
+lib/c
 {% endblock %}
 
 {% block bld_tool %}
-dev/tool/perl/mix.sh
-tool/compress/gzip/mix.sh
-dev/build/auto/libtool/mix.sh
+dev/tool/perl
+tool/compress/gzip
+dev/build/auto/libtool
 {% endblock %}
 
 {% block run_data %}
-lib/curses/n/mix.sh
+lib/curses/n
 {% endblock %}
 
 {% block make_flags %}

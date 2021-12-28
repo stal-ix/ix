@@ -6,12 +6,12 @@ bddc22070b6804ed63994af49b778b70
 {% endblock %}
 
 {% block lib_deps %}
-lib/c/mix.sh
+lib/c
 {% if target.os == 'darwin' %}
-lib/darwin/framework/AppKit/mix.sh
+lib/darwin/framework/AppKit
 {% endif %}
 {% endblock %}
 
 {% block bld_tool %}
-dev/build/pkg-config/mix.sh
+dev/build/pkg-config
 {% endblock %}

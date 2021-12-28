@@ -6,16 +6,16 @@ https://downloads.sourceforge.net/project/pcre/pcre/8.45/pcre-8.45.tar.bz2
 {% endblock %}
 
 {% block lib_deps %}
-lib/c/mix.sh
+lib/c
 {% endblock %}
 
 {% block bld_libs %}
-lib/z/mix.sh
-lib/bzip2/mix.sh
+lib/z
+lib/bzip2
 {% endblock %}
 
 {% block std_box %}
-box/boot/mix.sh
+box/boot
 {% endblock %}
 
 {% block configure_flags %}

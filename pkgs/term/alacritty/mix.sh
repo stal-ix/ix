@@ -6,8 +6,8 @@ https://github.com/alacritty/alacritty/archive/refs/tags/v0.9.0.tar.gz
 {% endblock %}
 
 {% block bld_libs %}
-lib/c/mix.sh
-lib/iconv/mix.sh
+lib/c
+lib/iconv
 {% endblock %}
 
 {% block install %}

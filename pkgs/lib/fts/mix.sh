@@ -6,8 +6,8 @@ bce0b5de0cf2519a74fbfacead60369d
 {% endblock %}
 
 {% block bld_tool %}
-dev/build/auto/conf/2/71/mix.sh
-dev/build/auto/make/1/16/mix.sh
+dev/build/auto/conf/2/71
+dev/build/auto/make/1/16
 {% endblock %}
 
 {% block autoreconf %}
@@ -15,5 +15,5 @@ dash bootstrap.sh
 {% endblock %}
 
 {% block lib_deps %}
-lib/c/mix.sh
+lib/c
 {% endblock %}

@@ -2,9 +2,9 @@
 
 {% block std_env %}
 # TODO(pg): inherit conf values into bin
-lib/python/3/10/mix.sh
-dev/build/make/mix.sh
-tool/compress/upx/mix.sh
+lib/python/3/10
+dev/build/make
+tool/compress/upx
 {{super()}}
 {% endblock %}
 

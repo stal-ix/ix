@@ -6,10 +6,10 @@ f3c06704e536dcca1814b16dbcdc4a36
 {% endblock %}
 
 {% block bld_tool %}
-gnu/tar/mix.sh
-dev/lang/go/1/4/mix.sh
-dev/tool/python/mix.sh
-dev/tool/perl/mix.sh
+gnu/tar
+dev/lang/go/1/4
+dev/tool/python
+dev/tool/perl
 {{super()}}
 {% endblock %}
 
@@ -33,5 +33,5 @@ sed -e 's/TestLookup/testLookup/' -i os/user/user_test.go
 {% endblock %}
 
 {% block bld_libs %}
-lib/c/mix.sh
+lib/c
 {% endblock %}

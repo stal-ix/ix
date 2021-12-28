@@ -6,7 +6,7 @@ https://github.com/tree-sitter/tree-sitter/archive/refs/tags/v0.20.1.tar.gz
 {% endblock %}
 
 {% block lib_deps %}
-lib/c/mix.sh
+lib/c
 {% endblock %}
 
 {% block make_flags %}

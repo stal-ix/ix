@@ -6,23 +6,23 @@ https://gitlab.freedesktop.org/wayland/weston/-/archive/f2452d600617a4789e202c06
 {% endblock %}
 
 {% block bld_libs %}
-lib/c/mix.sh
-lib/pam/mix.sh
-lib/seat/mix.sh
-lib/webp/mix.sh
-lib/jpeg/mix.sh
-lib/pango/mix.sh
-lib/lcms2/mix.sh
-lib/cairo/mix.sh
-lib/input/mix.sh
-lib/pixman/mix.sh
-lib/opengl/mix.sh
-lib/wayland/mix.sh
-lib/xkbcommon/mix.sh
+lib/c
+lib/pam
+lib/seat
+lib/webp
+lib/jpeg
+lib/pango
+lib/lcms2
+lib/cairo
+lib/input
+lib/pixman
+lib/opengl
+lib/wayland
+lib/xkbcommon
 {% endblock %}
 
 {% block bld_tool %}
-lib/wayland/protocols/mix.sh
+lib/wayland/protocols
 {% endblock %}
 
 {% block meson_flags %}

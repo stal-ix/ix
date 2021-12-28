@@ -6,8 +6,8 @@ cfae0a80ac41fb4a5f0a0c4a41bf0559
 {% endblock %}
 
 {% block lib_deps %}
-lib/c/mix.sh
-lib/mesa/mix.sh
+lib/c
+lib/mesa
 {% endblock %}
 
 {% block meson_flags %}

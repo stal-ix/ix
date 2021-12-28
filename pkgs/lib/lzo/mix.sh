@@ -6,5 +6,5 @@ http://www.oberhumer.com/opensource/lzo/download/lzo-2.10.tar.gz
 {% endblock %}
 
 {% block lib_deps %}
-lib/c/mix.sh
+lib/c
 {% endblock %}

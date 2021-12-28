@@ -11,12 +11,12 @@ cd Quake
 {% endblock %}
 
 {% block bld_libs %}
-lib/c/mix.sh
-lib/mad/mix.sh
-lib/sdl/2/mix.sh
-lib/xiph/ogg/mix.sh
-lib/xiph/flac/mix.sh
-lib/xiph/vorbis/mix.sh
-lib/vulkan/loader/mix.sh
-lib/vulkan/driver/mix.sh
+lib/c
+lib/mad
+lib/sdl/2
+lib/xiph/ogg
+lib/xiph/flac
+lib/xiph/vorbis
+lib/vulkan/loader
+lib/vulkan/driver
 {% endblock %}

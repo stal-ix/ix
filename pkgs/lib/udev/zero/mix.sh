@@ -6,7 +6,7 @@ de426bde2fef6f8a6fef2d089d0bf58a
 {% endblock %}
 
 {% block bld_libs %}
-lib/linux/mix.sh
+lib/linux
 {% endblock %}
 
 {% block patch %}
@@ -18,5 +18,5 @@ cat Makefile \
 {% endblock %}
 
 {% block lib_deps %}
-lib/c/mix.sh
+lib/c
 {% endblock %}

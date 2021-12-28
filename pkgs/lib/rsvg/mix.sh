@@ -6,6 +6,6 @@ https://download.gnome.org/sources/librsvg/2.40/librsvg-2.40.21.tar.xz
 {% endblock %}
 
 {% block lib_deps %}
-lib/c/mix.sh
-lib/glib/mix.sh
+lib/c
+lib/glib
 {% endblock %}

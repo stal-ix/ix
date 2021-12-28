@@ -1,13 +1,13 @@
 {% extends '//mix/template/hub.sh' %}
 
 {% block lib_deps %}
-lib/z/mix.sh
-lib/lz4/mix.sh
-lib/apr/mix.sh
-lib/intl/mix.sh
-lib/serf/mix.sh
-lib/expat/mix.sh
-lib/sqlite3/mix.sh
-lib/apr/util/mix.sh
-lib/utf8proc/mix.sh
+lib/z
+lib/lz4
+lib/apr
+lib/intl
+lib/serf
+lib/expat
+lib/sqlite3
+lib/apr/util
+lib/utf8proc
 {% endblock %}

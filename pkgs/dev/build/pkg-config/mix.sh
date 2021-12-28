@@ -6,14 +6,14 @@ f6e931e319531b736fadc017f470e68a
 {% endblock %}
 
 {% block bld_libs %}
-lib/c/mix.sh
-lib/intl/mix.sh
-lib/glib/mix.sh
-lib/iconv/mix.sh
+lib/c
+lib/intl
+lib/glib
+lib/iconv
 {% endblock %}
 
 {% block std_box %}
-box/boot/mix.sh
+box/boot
 {% endblock %}
 
 {% block configure_flags %}

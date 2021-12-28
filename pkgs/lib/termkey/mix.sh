@@ -6,13 +6,13 @@ d54de8576437ba8042333742aac2cd94
 {% endblock %}
 
 {% block lib_deps %}
-lib/c/mix.sh
-lib/unibilium/mix.sh
+lib/c
+lib/unibilium
 {% endblock %}
 
 {% block bld_tool %}
-dev/tool/perl/mix.sh
-tool/compress/gzip/mix.sh
-dev/build/pkg-config/mix.sh
-dev/build/auto/libtool/mix.sh
+dev/tool/perl
+tool/compress/gzip
+dev/build/pkg-config
+dev/build/auto/libtool
 {% endblock %}

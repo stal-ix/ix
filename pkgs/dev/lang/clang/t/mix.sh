@@ -1,20 +1,20 @@
 {% extends '//lib/llvm/t/mix.sh' %}
 
 {% block bld_libs %}
-lib/c/mix.sh
+lib/c
 {% if target.os == 'linux' %}
-lib/linux/mix.sh
+lib/linux
 {% endif %}
 {% if target.os == 'darwin' %}
-lib/darwin/framework/CoreFoundation/mix.sh
+lib/darwin/framework/CoreFoundation
 {% endif %}
-lib/z/mix.sh
-lib/c++/mix.sh
-lib/compiler_rt/builtins/mix.sh
+lib/z
+lib/c++
+lib/compiler_rt/builtins
 {% endblock %}
 
 {% block ind_deps %}
-dev/lang/clang/lib/mix.sh
+dev/lang/clang/lib
 {% endblock %}
 
 {% block cmake_flags %}

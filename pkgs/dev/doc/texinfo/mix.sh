@@ -6,14 +6,14 @@ a91b404e30561a5df803e6eb3a53be71
 {% endblock %}
 
 {% block bld_libs %}
-lib/c/mix.sh
-lib/curses/mix.sh
+lib/c
+lib/curses
 {% endblock %}
 
 {% block bld_tool %}
-dev/tool/perl/mix.sh
+dev/tool/perl
 {% endblock %}
 
 {% block std_box %}
-box/boot/mix.sh
+box/boot
 {% endblock %}

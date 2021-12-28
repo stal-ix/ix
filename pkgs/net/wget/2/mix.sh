@@ -6,22 +6,22 @@ b774bb0da9cb84cb9f5bbbcbcc31d00e
 {% endblock %}
 
 {% block bld_libs %}
-lib/c/mix.sh
-lib/brotli/mix.sh
-lib/zstd/mix.sh
-lib/nghttp2/mix.sh
-lib/xz/mix.sh
-lib/z/mix.sh
-lib/intl/mix.sh
-lib/iconv/mix.sh
-lib/gnutls/mix.sh
-lib/bzip2/mix.sh
-lib/idn/2/mix.sh
-lib/pcre/mix.sh
+lib/c
+lib/brotli
+lib/zstd
+lib/nghttp2
+lib/xz
+lib/z
+lib/intl
+lib/iconv
+lib/gnutls
+lib/bzip2
+lib/idn/2
+lib/pcre
 {% endblock %}
 
 {% block bld_tool %}
-dev/doc/texinfo/mix.sh
+dev/doc/texinfo
 {% endblock %}
 
 {% block configure_flags %}

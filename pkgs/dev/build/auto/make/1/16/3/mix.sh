@@ -6,18 +6,18 @@ c27f608a4e1f302ec7ce42f1251c184e
 {% endblock %}
 
 {% block bld_tool %}
-dev/tool/perl/mix.sh
-dev/build/auto/conf/2/71/mix.sh
+dev/tool/perl
+dev/build/auto/conf/2/71
 {% endblock %}
 
 {% block std_box %}
-box/boot/mix.sh
+box/boot
 {% endblock %}
 
 {% block run_deps %}
-dev/tool/perl/mix.sh
-dev/build/auto/libtool/mix.sh
-dev/lang/m4/mix.sh
+dev/tool/perl
+dev/build/auto/libtool
+dev/lang/m4
 {% endblock %}
 
 {% block autoreconf %}

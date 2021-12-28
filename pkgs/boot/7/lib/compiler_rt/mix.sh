@@ -1,11 +1,11 @@
 {% extends '//mix/template/c_std.sh' %}
 
 {% block bld_libs %}
-boot/7/lib/cxx/unwind/mix.sh
+boot/7/lib/cxx/unwind
 {% endblock %}
 
 {% block bld_deps %}
-boot/6/env/std/mix.sh
+boot/6/env/std
 {% endblock %}
 
 {% block fetch %}

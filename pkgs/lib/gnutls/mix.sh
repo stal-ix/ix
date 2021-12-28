@@ -6,20 +6,20 @@ https://www.gnupg.org/ftp/gcrypt/gnutls/v3.7/gnutls-3.7.2.tar.xz
 {% endblock %}
 
 {% block lib_deps %}
-lib/c/mix.sh
-lib/c++/mix.sh
-lib/gmp/mix.sh
-lib/idn/2/mix.sh
-lib/tasn1/mix.sh
-lib/nettle/mix.sh
-lib/unbound/mix.sh
+lib/c
+lib/c++
+lib/gmp
+lib/idn/2
+lib/tasn1
+lib/nettle
+lib/unbound
 {% if target.os == 'linux' %}
-lib/seccomp/mix.sh
+lib/seccomp
 {% endif %}
 {% if target.os == 'darwin' %}
-lib/darwin/framework/Security/mix.sh
+lib/darwin/framework/Security
 {% endif %}
-lib/unistring/mix.sh
+lib/unistring
 {% endblock %}
 
 {% block c_rename_symbol %}

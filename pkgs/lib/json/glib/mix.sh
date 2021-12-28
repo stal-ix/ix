@@ -6,12 +6,12 @@ cd56648d96dd79197c6d6af153d0e8ae
 {% endblock %}
 
 {% block lib_deps %}
-lib/c/mix.sh
-lib/glib/mix.sh
+lib/c
+lib/glib
 {% endblock %}
 
 {% block bld_tool %}
-lib/glib/mix.sh
+lib/glib
 {% endblock %}
 
 {% block c_rename_symbol %}

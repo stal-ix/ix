@@ -6,17 +6,17 @@ https://www.apache.org/dist/serf/serf-1.3.9.tar.bz2
 {% endblock %}
 
 {% block lib_deps %}
-lib/c/mix.sh
-lib/z/mix.sh
-lib/apr/mix.sh
-lib/openssl/mix.sh
-lib/apr/util/mix.sh
+lib/c
+lib/z
+lib/apr
+lib/openssl
+lib/apr/util
 {% endblock %}
 
 {% block bld_tool %}
-dev/build/pkg-config/mix.sh
-dev/build/scons/mix.sh
-gnu/patch/mix.sh
+dev/build/pkg-config
+dev/build/scons
+gnu/patch
 {% endblock %}
 
 {% block patch %}

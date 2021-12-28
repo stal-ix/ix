@@ -6,18 +6,18 @@ https://nano-editor.org/dist/v6/nano-6.0.tar.xz
 {% endblock %}
 
 {% block bld_libs %}
-lib/intl/mix.sh
-lib/curses/mix.sh
+lib/intl
+lib/curses
 
 {% if target.os == 'linux' %}
-lib/linux/mix.sh
+lib/linux
 {% endif %}
 {% endblock %}
 
 {% block bld_tool %}
-gnu/gettext/mix.sh
-dev/build/auto/conf/2/69/mix.sh
-dev/build/auto/make/1/16/mix.sh
+gnu/gettext
+dev/build/auto/conf/2/69
+dev/build/auto/make/1/16
 {% endblock %}
 
 {% block configure_flags %}

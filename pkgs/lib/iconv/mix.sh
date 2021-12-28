@@ -6,7 +6,7 @@ https://ftp.gnu.org/pub/gnu/libiconv/libiconv-1.16.tar.gz
 {% endblock %}
 
 {% block std_box %}
-box/boot/mix.sh
+box/boot
 {% endblock %}
 
 {% block install %}
@@ -20,5 +20,5 @@ export COFLAGS="--with-libiconv-prefix=${out} --with-iconv=${out} \${COFLAGS}"
 {% endblock %}
 
 {% block lib_deps %}
-lib/c/mix.sh
+lib/c
 {% endblock %}

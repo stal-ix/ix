@@ -6,13 +6,13 @@ fa317f16003e31e33a57ae7d888403e4
 {% endblock %}
 
 {% block lib_deps %}
-lib/c/mix.sh
-lib/c++/mix.sh
+lib/c
+lib/c++
 {% endblock %}
 
 {% block bld_libs %}
 {% if target.os == 'linux' %}
-lib/linux/mix.sh
+lib/linux
 {% endif %}
 {% endblock %}
 

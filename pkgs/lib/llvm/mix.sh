@@ -1,12 +1,12 @@
 {% extends '//lib/llvm/t/mix.sh' %}
 
 {% block lib_deps %}
-lib/c/mix.sh
-lib/c++/mix.sh
+lib/c
+lib/c++
 {% endblock %}
 
 {% block bld_tool %}
-dev/tool/python/mix.sh
+dev/tool/python
 {% endblock %}
 
 {% block cmake_flags %}

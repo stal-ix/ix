@@ -7,6 +7,6 @@
 {% endblock %}
 
 {% block bld_deps %}
-boot/3/make/mix.sh
-boot/2/env/mix.sh
+boot/3/make
+boot/2/env
 {% endblock %}

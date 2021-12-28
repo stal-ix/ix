@@ -6,10 +6,10 @@ https://github.com/pg83/mix/archive/{{mix_ver}}.zip
 {% endblock %}
 
 {% block bld_libs %}
-lib/python/mix.sh
-pypi/jinja2/mix.sh
-pypi/beautysh/mix.sh
-pypi/minio/mix.sh
+lib/python
+pypi/jinja2
+pypi/beautysh
+pypi/minio
 {% endblock %}
 
 {% block extra_modules %}

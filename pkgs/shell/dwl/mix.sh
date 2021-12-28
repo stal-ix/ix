@@ -6,12 +6,12 @@ https://github.com/djpohly/dwl/archive/refs/tags/v0.2.1.tar.gz
 {% endblock %}
 
 {% block bld_libs %}
-lib/c/mix.sh
-lib/wlroots/14/mix.sh
-lib/wayland/mix.sh
+lib/c
+lib/wlroots/14
+lib/wayland
 {% endblock %}
 
 {% block bld_tool %}
-dev/build/pkg-config/mix.sh
-lib/wayland/protocols/mix.sh
+dev/build/pkg-config
+lib/wayland/protocols
 {% endblock %}

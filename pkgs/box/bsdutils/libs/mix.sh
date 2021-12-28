@@ -2,14 +2,14 @@
 
 {% block lib_deps %}
 {% if target.os == 'linux' %}
-lib/linux/mix.sh
-lib/fts/mix.sh
-lib/rpmatch/mix.sh
+lib/linux
+lib/fts
+lib/rpmatch
 {% endif %}
-lib/c/mix.sh
-lib/c++/mix.sh
-lib/xo/mix.sh
-lib/edit/mix.sh
-lib/openssl/mix.sh
-lib/curses/mix.sh
+lib/c
+lib/c++
+lib/xo
+lib/edit
+lib/openssl
+lib/curses
 {% endblock %}

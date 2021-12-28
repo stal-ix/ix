@@ -6,5 +6,5 @@ https://github.com/libtom/libtommath/releases/download/v1.2.0/ltm-1.2.0.tar.xz
 {% endblock %}
 
 {% block lib_deps %}
-lib/c/mix.sh
+lib/c
 {% endblock %}

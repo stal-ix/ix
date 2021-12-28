@@ -6,17 +6,17 @@ https://github.com/mobile-shell/mosh/archive/refs/tags/mosh-1.3.2.tar.gz
 {% endblock %}
 
 {% block bld_libs %}
-lib/c/mix.sh
-lib/c++/mix.sh
-lib/protobuf/mix.sh
-lib/curses/mix.sh
-lib/openssl/mix.sh
+lib/c
+lib/c++
+lib/protobuf
+lib/curses
+lib/openssl
 {% endblock %}
 
 {% block bld_tool %}
-lib/protobuf/mix.sh
-dev/build/auto/conf/2/69/mix.sh
-dev/build/auto/make/1/16/mix.sh
+lib/protobuf
+dev/build/auto/conf/2/69
+dev/build/auto/make/1/16
 {% endblock %}
 
 {% block autoreconf %}

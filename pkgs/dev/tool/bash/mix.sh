@@ -1,15 +1,15 @@
 {% extends '//shell/cli/bash/5.1.18/t/mix.sh' %}
 
 {% block bld_libs %}
-lib/c/mix.sh
+lib/c
 {% endblock %}
 
 {% block std_box %}
-box/boot/mix.sh
+box/boot
 {% endblock %}
 
 {% block bld_tool %}
-dev/lang/bison/3/boot/mix.sh
+dev/lang/bison/3/boot
 {% endblock %}
 
 {% block configure_flags %}

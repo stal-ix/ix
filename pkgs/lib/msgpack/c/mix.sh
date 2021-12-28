@@ -6,5 +6,5 @@ https://github.com/msgpack/msgpack-c/archive/refs/tags/c-4.0.0.tar.gz
 {% endblock %}
 
 {% block lib_deps %}
-lib/c/mix.sh
+lib/c
 {% endblock %}

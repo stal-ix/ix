@@ -6,11 +6,11 @@ https://ftp.gnu.org/gnu/wget/wget-1.21.2.tar.lz
 {% endblock %}
 
 {% block bld_libs %}
-lib/c/mix.sh
-lib/intl/mix.sh
-lib/pcre/2/mix.sh
-lib/gnutls/mix.sh
-lib/metalink/mix.sh
+lib/c
+lib/intl
+lib/pcre/2
+lib/gnutls
+lib/metalink
 {% endblock %}
 
 {% block patch %}

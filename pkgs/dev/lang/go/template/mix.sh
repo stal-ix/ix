@@ -1,8 +1,8 @@
 {% extends '//mix/template/c_std.sh' %}
 
 {% block bld_tool %}
-dev/tool/bash/mix.sh
-dev/build/pkg-config/mix.sh
+dev/tool/bash
+dev/build/pkg-config
 {% endblock %}
 
 {% block unpack %}
@@ -48,5 +48,5 @@ go run hello.go
 {% endblock %}
 
 {% block bld_libs %}
-lib/c/mix.sh
+lib/c
 {% endblock %}

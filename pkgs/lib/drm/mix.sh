@@ -6,9 +6,9 @@ https://dri.freedesktop.org/libdrm/libdrm-2.4.109.tar.xz
 {% endblock %}
 
 {% block lib_deps %}
-lib/c/mix.sh
-lib/linux/mix.sh
-lib/atomicops/mix.sh
+lib/c
+lib/linux
+lib/atomicops
 {% endblock %}
 
 {% block meson_flags %}

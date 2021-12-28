@@ -1,16 +1,16 @@
 {% extends 't/mix.sh' %}
 
 {% block bld_libs %}
-lib/c/mix.sh
-lib/readline/mix.sh
-lib/curses/mix.sh
-lib/iconv/mix.sh
-lib/intl/mix.sh
+lib/c
+lib/readline
+lib/curses
+lib/iconv
+lib/intl
 {{super()}}
 {% endblock %}
 
 {% block bld_tool %}
-dev/lang/bison/3/6/mix.sh
+dev/lang/bison/3/6
 {% endblock %}
 
 {% block configure_flags %}

@@ -14,5 +14,5 @@ cat run.bash | grep -v 'time go test' > _ && mv _ run.bash
 {% endblock %}
 
 {% block bld_libs %}
-lib/c/mix.sh
+lib/c
 {% endblock %}

@@ -6,7 +6,7 @@ c66b26a5dbce291e5c3c531e8d692834
 {% endblock %}
 
 {% block std_box %}
-box/boot/mix.sh
+box/boot
 {% endblock %}
 
 {% block install %}
@@ -19,5 +19,5 @@ export YACC=byacc
 {% endblock %}
 
 {% block bld_libs %}
-lib/c/mix.sh
+lib/c
 {% endblock %}

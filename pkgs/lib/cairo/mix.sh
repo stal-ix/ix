@@ -6,23 +6,23 @@ bf9d0d324ecbd350d0e9308125fa4ce0
 {% endblock %}
 
 {% block lib_deps %}
-lib/c/mix.sh
+lib/c
 {% if target.os == 'darwin' %}
-lib/darwin/framework/ApplicationServices/mix.sh
-lib/darwin/framework/CoreGraphics/mix.sh
+lib/darwin/framework/ApplicationServices
+lib/darwin/framework/CoreGraphics
 {% endif %}
-lib/png/mix.sh
-lib/lzo/mix.sh
-lib/glib/mix.sh
-lib/pixman/mix.sh
-lib/opengl/mix.sh
-lib/freetype/mix.sh
-lib/fontconfig/mix.sh
+lib/png
+lib/lzo
+lib/glib
+lib/pixman
+lib/opengl
+lib/freetype
+lib/fontconfig
 {% endblock %}
 
 {% block bld_tool %}
-dev/build/auto/conf/2/69/mix.sh
-dev/build/auto/make/1/16/mix.sh
+dev/build/auto/conf/2/69
+dev/build/auto/make/1/16
 {% endblock %}
 
 {% block configure_flags %}

@@ -21,5 +21,5 @@ cat Makefile | grep -v 'LIBINTL = -lintl' > _ && mv _ Makefile
 {% endblock %}
 
 {% block bld_libs %}
-lib/c/mix.sh
+lib/c
 {% endblock %}

@@ -6,10 +6,10 @@ https://git.sr.ht/~kennylevinsen/wlsunset/archive/0.2.0.tar.gz
 {% endblock %}
 
 {% block bld_libs %}
-lib/c/mix.sh
-lib/wayland/mix.sh
+lib/c
+lib/wayland
 {% endblock %}
 
 {% block bld_tool %}
-lib/wayland/protocols/mix.sh
+lib/wayland/protocols
 {% endblock %}

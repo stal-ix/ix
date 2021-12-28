@@ -6,8 +6,8 @@ f0adf24e8fdef5f3e332191f653e422a
 {% endblock %}
 
 {% block bld_libs %}
-lib/c/mix.sh
-lib/z/mix.sh
+lib/c
+lib/z
 {% endblock %}
 
 {% block configure %}

@@ -6,16 +6,16 @@ ceeb95430ec00cc6f8006f746605be1d
 {% endblock %}
 
 {% block bld_libs %}
-lib/linux/mix.sh
+lib/linux
 {% endblock %}
 
 {% block host_libs %}
-lib/c/mix.sh
+lib/c
 {% endblock %}
 
 {% block c_compiler %}
-dev/lang/gcc/11/mix.sh
-dev/lang/binutils/mix.sh
+dev/lang/gcc/11
+dev/lang/binutils
 {% endblock %}
 
 {% block configure %}

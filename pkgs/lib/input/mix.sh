@@ -6,15 +6,15 @@ https://www.freedesktop.org/software/libinput/libinput-1.19.2.tar.xz
 {% endblock %}
 
 {% block bld_libs %}
-lib/linux/mix.sh
+lib/linux
 {% endblock %}
 
 {% block lib_deps %}
-lib/c/mix.sh
-lib/udev/mix.sh
-lib/mtdev/mix.sh
-lib/wacom/mix.sh
-lib/evdev/mix.sh
+lib/c
+lib/udev
+lib/mtdev
+lib/wacom
+lib/evdev
 {% endblock %}
 
 {% block meson_flags %}

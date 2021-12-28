@@ -14,5 +14,5 @@ export COFLAGS="--with-system-libmpdec=yes --with-libmpdec-prefix=${out} \${COFL
 {% endblock %}
 
 {% block lib_deps %}
-lib/c/mix.sh
+lib/c
 {% endblock %}

@@ -3,10 +3,10 @@
 {% block make_no_thrs %}{% endblock %}
 
 {% block bld_libs %}
-boot/3/lib/c/mix.sh
+boot/3/lib/c
 {% endblock %}
 
 {% block bld_deps %}
-boot/3/make/mix.sh
-boot/2/env/mix.sh
+boot/3/make
+boot/2/env
 {% endblock %}

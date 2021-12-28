@@ -6,13 +6,13 @@ f02d78311298468c5c1d278507ad42f2
 {% endblock %}
 
 {% block bld_tool %}
-dev/lang/nasm/mix.sh
+dev/lang/nasm
 {% endblock %}
 
 {% block lib_deps %}
-lib/c/mix.sh
-lib/z/mix.sh
-lib/png/mix.sh
+lib/c
+lib/z
+lib/png
 {% endblock %}
 
 {% block cmake_flags %}

@@ -14,7 +14,7 @@ COMPILER_RT_EXTERNALIZE_DEBUGINFO=OFF
 {% endblock %}
 
 {% block std_box %}
-box/boot/mix.sh
+box/boot
 {% endblock %}
 
 {% block install %}

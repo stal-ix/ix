@@ -6,13 +6,13 @@ a6eb7fb1f2c21fa80030a47993853e92
 {% endblock %}
 
 {% block lib_deps %}
-lib/c/mix.sh
+lib/c
 {% endblock %}
 
 {% block bld_libs %}
-lib/z/mix.sh
-lib/xz/mix.sh
-lib/lz4/mix.sh
+lib/z
+lib/xz
+lib/lz4
 {% endblock %}
 
 {% block unpack %}
@@ -22,7 +22,7 @@ cd build/cmake
 
 {% if kind == 'lib' %}
 {% block std_box %}
-box/boot/mix.sh
+box/boot
 {% endblock %}
 {% endif %}
 

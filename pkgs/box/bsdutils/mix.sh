@@ -6,11 +6,11 @@ f3a640fd2b0939d0c17a2eb17801919c
 {% endblock %}
 
 {% block bld_libs %}
-lib/c/mix.sh
-box/bsdutils/libs/mix.sh(openssl=1)
+lib/c
+box/bsdutils/libs(openssl=1)
 {% endblock %}
 
 {% block bld_tool %}
-dev/lang/flex/mix.sh
-dev/lang/byacc/mix.sh
+dev/lang/flex
+dev/lang/byacc
 {% endblock %}

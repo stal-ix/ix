@@ -6,5 +6,5 @@ f30c738034faa13d6255604ed46b6158
 {% endblock %}
 
 {% block lib_deps %}
-lib/c/mix.sh
+lib/c
 {% endblock %}

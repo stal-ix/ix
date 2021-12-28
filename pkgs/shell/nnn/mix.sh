@@ -6,14 +6,14 @@ https://github.com/jarun/nnn/archive/refs/tags/v4.3.tar.gz
 {% endblock %}
 
 {% block bld_libs %}
-lib/c/mix.sh
+lib/c
 {% if target.os == 'linux' %}
-lib/fts/mix.sh
+lib/fts
 {% endif %}
-lib/readline/mix.sh
-lib/curses/mix.sh
+lib/readline
+lib/curses
 {% endblock %}
 
 {% block bld_tool %}
-dev/build/pkg-config/mix.sh
+dev/build/pkg-config
 {% endblock %}

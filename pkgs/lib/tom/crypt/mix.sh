@@ -6,8 +6,8 @@ e8d22351b7c95bef423c1cd02dcf836d
 {% endblock %}
 
 {% block lib_deps %}
-lib/c/mix.sh
-lib/tom/math/mix.sh
+lib/c
+lib/tom/math
 {% endblock %}
 
 {% block setup %}

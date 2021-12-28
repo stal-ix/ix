@@ -6,28 +6,28 @@ fb613d21fabce3d3d8520f37d12bd473
 {% endblock %}
 
 {% block lib_deps %}
-lib/z/mix.sh
-lib/pcre/mix.sh
-lib/iconv/mix.sh
-lib/ffi/mix.sh
-lib/intl/mix.sh
+lib/z
+lib/pcre
+lib/iconv
+lib/ffi
+lib/intl
 {% if target.os == 'darwin' %}
-lib/darwin/framework/CoreServices/mix.sh
-lib/darwin/framework/Foundation/mix.sh
+lib/darwin/framework/CoreServices
+lib/darwin/framework/Foundation
 {% endif %}
 {% endblock %}
 
 {% block bld_libs %}
-lib/c/mix.sh
-lib/c++/mix.sh
+lib/c
+lib/c++
 {% endblock %}
 
 {% block std_box %}
 {% if target.os == 'darwin' %}
-dev/lang/cctools/mix.sh
+dev/lang/cctools
 {% endif %}
-dev/build/meson/mix.sh
-box/boot/mix.sh
+dev/build/meson
+box/boot
 {% endblock %}
 
 {% block setup %}

@@ -6,16 +6,16 @@ https://ftp.gnu.org/gnu/bash/bash-3.2.57.tar.gz
 {% endblock %}
 
 {% block bld_libs %}
-lib/c/mix.sh
-lib/readline/mix.sh
-lib/curses/mix.sh
-lib/intl/mix.sh
-lib/iconv/mix.sh
+lib/c
+lib/readline
+lib/curses
+lib/intl
+lib/iconv
 {{super()}}
 {% endblock %}
 
 {% block bld_tool %}
-dev/lang/byacc/mix.sh
+dev/lang/byacc
 {% endblock %}
 
 {% block patch %}

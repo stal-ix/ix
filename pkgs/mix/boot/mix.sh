@@ -1,8 +1,8 @@
 {% extends '//mix/template/proxy.sh' %}
 
 {% block bld_tool %}
-shell/cli/dash/minimal/mix.sh
-dev/lang/clang/13/opt/mix.sh
+shell/cli/dash/minimal
+dev/lang/clang/13/opt
 {% endblock %}
 
 {% block install %}

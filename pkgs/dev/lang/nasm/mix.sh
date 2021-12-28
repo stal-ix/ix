@@ -6,9 +6,9 @@ https://github.com/netwide-assembler/nasm/archive/refs/tags/nasm-2.15.05.tar.gz
 {% endblock %}
 
 {% block bld_tool %}
-dev/tool/perl/mix.sh
-dev/build/auto/conf/2/69/mix.sh
-dev/build/auto/make/1/16/mix.sh
+dev/tool/perl
+dev/build/auto/conf/2/69
+dev/build/auto/make/1/16
 {% endblock %}
 
 {% block autoreconf %}
@@ -21,5 +21,5 @@ dash autogen.sh
 {% endblock %}
 
 {% block bld_libs %}
-lib/c/mix.sh
+lib/c
 {% endblock %}

@@ -6,9 +6,9 @@ c46f6eb3bd1287031ae5d36465094402
 {% endblock %}
 
 {% block bld_tool %}
-dev/lang/bison/3/8/mix.sh
+dev/lang/bison/3/8
 {% endblock %}
 
 {% block lib_deps %}
-lib/c/mix.sh
+lib/c
 {% endblock %}

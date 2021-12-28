@@ -6,6 +6,6 @@ https://www.x.org/pub/individual/util/util-macros-1.19.3.tar.bz2
 {% endblock %}
 
 {% block bld_tool %}
-dev/build/auto/conf/2/69/mix.sh
-dev/build/auto/make/1/16/mix.sh
+dev/build/auto/conf/2/69
+dev/build/auto/make/1/16
 {% endblock %}

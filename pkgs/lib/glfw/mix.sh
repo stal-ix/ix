@@ -6,6 +6,6 @@ e4b7c1be5db32e0f11c073b3f6bfdd4a
 {% endblock %}
 
 {% block lib_deps %}
-lib/c/mix.sh
-lib/opengl/mix.sh
+lib/c
+lib/opengl
 {% endblock %}

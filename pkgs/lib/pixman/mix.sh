@@ -6,5 +6,5 @@ https://www.cairographics.org/releases/pixman-0.40.0.tar.gz
 {% endblock %}
 
 {% block lib_deps %}
-lib/c/mix.sh
+lib/c
 {% endblock %}

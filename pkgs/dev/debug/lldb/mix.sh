@@ -6,22 +6,22 @@
 
 {% block bld_libs %}
 {% if target.os == 'linux' %}
-lib/linux/mix.sh
+lib/linux
 {% endif %}
 {% if target.os == 'darwin' %}
-lib/darwin/framework/CoreFoundation/mix.sh
+lib/darwin/framework/CoreFoundation
 {% endif %}
-lib/c/mix.sh
-lib/c++/mix.sh
-lib/curses/mix.sh
-lib/edit/mix.sh
-lib/xz/mix.sh
-lib/xml2/mix.sh
-lib/python/mix.sh
+lib/c
+lib/c++
+lib/curses
+lib/edit
+lib/xz
+lib/xml2
+lib/python
 {% endblock %}
 
 {% block bld_tool %}
-dev/tool/swig/4/mix.sh
+dev/tool/swig/4
 {% endblock %}
 
 {% block patch %}

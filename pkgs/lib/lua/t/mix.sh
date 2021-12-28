@@ -1,15 +1,15 @@
 {% extends '//mix/template/make.sh' %}
 
 {% block lib_deps %}
-lib/c/mix.sh
+lib/c
 {% endblock %}
 
 {% block bld_libs %}
-lib/readline/mix.sh
+lib/readline
 {% endblock %}
 
 {% block bld_tool %}
-lib/dlfcn/scripts/mix.sh
+lib/dlfcn/scripts
 {% endblock %}
 
 {% block script_init_env %}

@@ -6,23 +6,23 @@ ab06ff17524de3f1ddd3c97ed8a02f8d
 {% endblock %}
 
 {% block bld_tool %}
-gnu/gettext/mix.sh
-dev/tool/gperf/mix.sh
-dev/tool/python/mix.sh
+gnu/gettext
+dev/tool/gperf
+dev/tool/python
 {% endblock %}
 
 {% block lib_deps %}
-lib/c/mix.sh
-lib/intl/mix.sh
-lib/iconv/mix.sh
-lib/expat/mix.sh
-lib/json/c/mix.sh
-lib/freetype/mix.sh
+lib/c
+lib/intl
+lib/iconv
+lib/expat
+lib/json/c
+lib/freetype
 {% endblock %}
 
 {% block run_data %}
 {% if kind != 'dat' %}
-lib/fontconfig/mix.sh
+lib/fontconfig
 {% endif %}
 {% endblock %}
 

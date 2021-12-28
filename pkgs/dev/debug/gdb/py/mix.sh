@@ -5,11 +5,11 @@
 {% endblock %}
 
 {% block lib_deps %}
-lib/python/mix.sh
+lib/python
 {% endblock %}
 
 {% block bld_libs %}
-pypi/pygments/mix.sh
+pypi/pygments
 {% endblock %}
 
 {% block setup %}

@@ -22,5 +22,5 @@ sed -e 's| SHARED | STATIC |g' -i CMakeLists.txt
 {% endblock %}
 
 {% block lib_deps %}
-lib/c/mix.sh
+lib/c
 {% endblock %}

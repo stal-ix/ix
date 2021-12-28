@@ -6,7 +6,7 @@ aed8ae9e2b0898151b36a204088292dd
 {% endblock %}
 
 {% block lib_deps %}
-lib/build/mix.sh
+lib/build
 {% endblock %}
 
 {% block configure_script %}

@@ -13,9 +13,9 @@ https://gitlab.com/giomasce/flex/-/raw/506e9605baf4638ba47d37133c348df1385ef06c/
 {% endblock %}
 
 {% block bld_deps %}
-boot/9/lex/mix.sh
-boot/4/byacc/mix.sh
-boot/8/env/std/mix.sh
+boot/9/lex
+boot/4/byacc
+boot/8/env/std
 {% endblock %}
 
 {% block unpack %}

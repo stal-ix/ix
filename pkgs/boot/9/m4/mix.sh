@@ -4,7 +4,7 @@
 {% endblock %}
 
 {% block bld_deps %}
-boot/8/env/std/mix.sh
+boot/8/env/std
 {% endblock %}
 
 {% block test %}

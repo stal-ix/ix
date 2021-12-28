@@ -6,24 +6,24 @@ https://github.com/libarchive/libarchive/archive/refs/tags/v3.5.2.tar.gz
 {% endblock %}
 
 {% block lib_deps %}
-lib/c/mix.sh
-lib/z/mix.sh
-lib/xz/mix.sh
-lib/lz4/mix.sh
-lib/intl/mix.sh
-lib/zstd/mix.sh
-lib/bzip2/mix.sh
-lib/iconv/mix.sh
-lib/expat/mix.sh
+lib/c
+lib/z
+lib/xz
+lib/lz4
+lib/intl
+lib/zstd
+lib/bzip2
+lib/iconv
+lib/expat
 {% endblock %}
 
 {% block bld_tool %}
-dev/build/auto/conf/2/69/mix.sh
-dev/build/auto/make/1/16/mix.sh
+dev/build/auto/conf/2/69
+dev/build/auto/make/1/16
 {% endblock %}
 
 {% block std_box %}
-box/boot/mix.sh
+box/boot
 {% endblock %}
 
 {% block configure_flags %}

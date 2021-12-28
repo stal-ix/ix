@@ -7,7 +7,7 @@ c2274f0c7af8470ad514637c35bcee7d
 
 {% if kind == 'lib' %}
 {% block std_box %}
-box/boot/mix.sh
+box/boot
 {% endblock %}
 {% endif %}
 
@@ -26,5 +26,5 @@ rm ${out}/lib/lib*static*
 {% endblock %}
 
 {% block lib_deps %}
-lib/c/mix.sh
+lib/c
 {% endblock %}

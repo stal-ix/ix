@@ -6,16 +6,16 @@ f931582653774e310ed3a7e49b7167a3
 {% endblock %}
 
 {% block lib_deps %}
-lib/c/mix.sh
-lib/z/mix.sh
-lib/bzip2/mix.sh
-lib/png/mix.sh
-lib/brotli/mix.sh
+lib/c
+lib/z
+lib/bzip2
+lib/png
+lib/brotli
 {% endblock %}
 
 {% block bld_tool %}
-dev/build/auto/conf/2/69/mix.sh
-dev/build/auto/make/1/16/mix.sh
+dev/build/auto/conf/2/69
+dev/build/auto/make/1/16
 {% endblock %}
 
 {% block autoreconf %}

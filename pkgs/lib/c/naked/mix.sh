@@ -2,9 +2,9 @@
 
 {% block lib_deps %}
 {% if target.os == 'linux' %}
-lib/{{libc or 'musl'}}/mix.sh
+lib/{{libc or 'musl'}}
 {% endif %}
 {% if target.os == 'darwin' %}
-lib/darwin/c/mix.sh
+lib/darwin/c
 {% endif %}
 {% endblock %}

@@ -6,13 +6,13 @@ https://repo.or.cz/isl.git/snapshot/3ea3e8b77475bea49b35b8215d8f66af94121b3c.tar
 {% endblock %}
 
 {% block lib_deps %}
-lib/c/mix.sh
-lib/gmp/mix.sh
+lib/c
+lib/gmp
 {% endblock %}
 
 {% block bld_tool %}
-dev/build/auto/conf/2/69/mix.sh
-dev/build/auto/make/1/16/mix.sh
+dev/build/auto/conf/2/69
+dev/build/auto/make/1/16
 {% endblock %}
 
 {% block setup %}

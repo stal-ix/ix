@@ -6,8 +6,8 @@ https://github.com/libuv/libuv/archive/refs/tags/v1.42.0.tar.gz
 {% endblock %}
 
 {% block bld_tool %}
-dev/build/auto/conf/2/69/mix.sh
-dev/build/auto/make/1/16/mix.sh
+dev/build/auto/conf/2/69
+dev/build/auto/make/1/16
 {% endblock %}
 
 {% block autoreconf %}
@@ -15,5 +15,5 @@ dash autogen.sh
 {% endblock %}
 
 {% block lib_deps %}
-lib/c/mix.sh
+lib/c
 {% endblock %}

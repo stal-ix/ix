@@ -1,17 +1,17 @@
 {% extends '//lib/llvm/t/mix.sh' %}
 
 {% block lib_deps %}
-lib/c/naked/mix.sh
+lib/c/naked
 {% endblock %}
 
 {% block bld_libs %}
 {% if target.os == 'linux' %}
-lib/linux/mix.sh
+lib/linux
 {% endif %}
 {% endblock %}
 
 {% block std_box %}
-box/boot/mix.sh
+box/boot
 {% endblock %}
 
 {% block cmake_flags %}

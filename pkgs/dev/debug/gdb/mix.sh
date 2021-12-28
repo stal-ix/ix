@@ -5,30 +5,30 @@
 {% endblock %}
 
 {% block bld_libs %}
-dev/debug/gdb/py/mix.sh(edit=readline)
+dev/debug/gdb/py(edit=readline)
 {% if target.os == 'linux' %}
-lib/linux/mix.sh
+lib/linux
 {% endif %}
-lib/intel/pt/mix.sh
-lib/intl/mix.sh
-lib/expat/mix.sh
-lib/curses/mix.sh
-lib/iconv/mix.sh
-lib/readline/mix.sh
-lib/c/mix.sh
-lib/c++/mix.sh
-lib/z/mix.sh
-lib/xz/mix.sh
-lib/gmp/mix.sh
-lib/mpfr/mix.sh
-lib/mpc/mix.sh
-lib/xxhash/mix.sh
+lib/intel/pt
+lib/intl
+lib/expat
+lib/curses
+lib/iconv
+lib/readline
+lib/c
+lib/c++
+lib/z
+lib/xz
+lib/gmp
+lib/mpfr
+lib/mpc
+lib/xxhash
 {% endblock %}
 
 {% block bld_tool %}
-dev/lang/byacc/mix.sh
-dev/lang/flex/mix.sh
-dev/doc/texinfo/mix.sh
+dev/lang/byacc
+dev/lang/flex
+dev/doc/texinfo
 {% endblock %}
 
 {% block setup %}

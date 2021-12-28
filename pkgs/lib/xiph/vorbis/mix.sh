@@ -6,13 +6,13 @@ a03aff8a9b32312aca7aea368f8265c5
 {% endblock %}
 
 {% block lib_deps %}
-lib/c/mix.sh
-lib/xiph/ogg/mix.sh
+lib/c
+lib/xiph/ogg
 {% endblock %}
 
 {% block bld_tool %}
-dev/build/auto/conf/2/69/mix.sh
-dev/build/auto/make/1/16/mix.sh
+dev/build/auto/conf/2/69
+dev/build/auto/make/1/16
 {% endblock %}
 
 {% block autoreconf %}

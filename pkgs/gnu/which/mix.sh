@@ -6,7 +6,7 @@ https://ftp.gnu.org/gnu/which/which-2.21.tar.gz
 {% endblock %}
 
 {% block bld_libs %}
-lib/c/mix.sh
-lib/intl/mix.sh
-lib/iconv/mix.sh
+lib/c
+lib/intl
+lib/iconv
 {% endblock %}

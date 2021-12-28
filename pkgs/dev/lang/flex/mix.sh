@@ -6,15 +6,15 @@ https://github.com/westes/flex/files/981163/flex-2.6.4.tar.gz
 {% endblock %}
 
 {% block bld_libs %}
-lib/c/mix.sh
+lib/c
 {% endblock %}
 
 {% block run_deps %}
-dev/lang/m4/mix.sh
+dev/lang/m4
 {% endblock %}
 
 {% block bld_tool %}
-dev/lang/m4/mix.sh
-dev/doc/texinfo/mix.sh
-dev/lang/bison/3/boot/mix.sh
+dev/lang/m4
+dev/doc/texinfo
+dev/lang/bison/3/boot
 {% endblock %}

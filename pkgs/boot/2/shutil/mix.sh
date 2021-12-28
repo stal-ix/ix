@@ -9,7 +9,7 @@ d877127f9e043a100188dfec48f1b8a3
 {% endblock %}
 
 {% block bld_deps %}
-boot/1/env/mix.sh
+boot/1/env
 {% endblock %}
 
 {% block script %}

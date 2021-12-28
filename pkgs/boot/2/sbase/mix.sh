@@ -11,7 +11,7 @@ bmake
 {% endblock %}
 
 {% block bld_deps %}
-boot/2/heirloom/mix.sh
-boot/2/bmake/mix.sh
-boot/1/env/mix.sh
+boot/2/heirloom
+boot/2/bmake
+boot/1/env
 {% endblock %}

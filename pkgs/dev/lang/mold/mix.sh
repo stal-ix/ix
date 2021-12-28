@@ -6,16 +6,16 @@ https://github.com/rui314/mold/archive/733bb6354f9913a9fba599f1779620286f1e2e4c.
 {% endblock %}
 
 {% block bld_libs %}
-lib/z/mix.sh
-lib/c/mix.sh
-lib/c++/mix.sh
-lib/xxhash/mix.sh
-lib/intel/tbb/mix.sh
-lib/openssl/mix.sh
+lib/z
+lib/c
+lib/c++
+lib/xxhash
+lib/intel/tbb
+lib/openssl
 {% endblock %}
 
 {% block bld_tool %}
-lib/z/mix.sh
+lib/z
 {% endblock %}
 
 {% block make_flags %}

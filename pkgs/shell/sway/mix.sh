@@ -6,25 +6,25 @@ https://github.com/swaywm/sway/archive/eaeb173a4b9b22d8ba1b35d3d863f0dcb8595341.
 {% endblock %}
 
 {% block bld_libs %}
-lib/c/mix.sh
+lib/c
 
 # drivers go first
-lib/vulkan/driver/mix.sh
-lib/mesa/drivers/gl/zink/mix.sh
-#lib/mesa/drivers/gl/radeonsi/mix.sh
+lib/vulkan/driver
+lib/mesa/drivers/gl/zink
+#lib/mesa/drivers/gl/radeonsi
 
-lib/pcre/mix.sh
-lib/cairo/mix.sh
-lib/pango/mix.sh
-lib/json/c/mix.sh
-lib/wayland/mix.sh
-lib/wlroots/trunk/mix.sh
+lib/pcre
+lib/cairo
+lib/pango
+lib/json/c
+lib/wayland
+lib/wlroots/trunk
 {% endblock %}
 
 {% block bld_tool %}
-dev/doc/scdoc/mix.sh
-lib/wayland/protocols/mix.sh
-dev/build/meson/better/mix.sh
+dev/doc/scdoc
+lib/wayland/protocols
+dev/build/meson/better
 {% endblock %}
 
 {% block c_rename_symbol %}

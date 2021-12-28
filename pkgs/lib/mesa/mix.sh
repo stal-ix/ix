@@ -6,27 +6,27 @@ d6efe1ecc0680cd1adb942f05600d884
 {% endblock %}
 
 {% block lib_deps %}
-lib/c/mix.sh
-lib/z/mix.sh
-lib/drm/mix.sh
-lib/zstd/mix.sh
-#lib/llvm/mix.sh
-lib/expat/mix.sh
-lib/wayland/mix.sh
-lib/elfutils/mix.sh
-lib/vulkan/loader/mix.sh
-lib/vulkan/headers/mix.sh
+lib/c
+lib/z
+lib/drm
+lib/zstd
+#lib/llvm
+lib/expat
+lib/wayland
+lib/elfutils
+lib/vulkan/loader
+lib/vulkan/headers
 {% endblock %}
 
 {% block bld_libs %}
-pypi/Mako/mix.sh
+pypi/Mako
 {% endblock %}
 
 {% block bld_tool %}
-dev/lang/flex/mix.sh
-dev/lang/bison/3/8/mix.sh
-dev/build/make/mix.sh
-lib/wayland/protocols/mix.sh
+dev/lang/flex
+dev/lang/bison/3/8
+dev/build/make
+lib/wayland/protocols
 {% endblock %}
 
 {% block meson_flags %}

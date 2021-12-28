@@ -6,24 +6,24 @@ aeb29c6a90350a4c959cd1df38cd0a7e
 {% endblock %}
 
 {% block lib_deps %}
-lib/c/mix.sh
+lib/c
 {% endblock %}
 
 {% block bld_libs %}
-lib/readline/mix.sh
+lib/readline
 {% if kind == 'bin' %}
-lib/intl/mix.sh
+lib/intl
 {% endif %}
 {% endblock %}
 
 {% if kind == 'lib' %}
 {% block std_box %}
-box/boot/mix.sh
+box/boot
 {% endblock %}
 {% endif %}
 
 {% block bld_tool %}
-dev/lang/bison/3/boot/mix.sh
+dev/lang/bison/3/boot
 {% endblock %}
 
 {% block configure_flags %}

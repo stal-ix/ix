@@ -7,6 +7,6 @@
 {% endblock %}
 
 {% block bld_deps %}
-boot/6/diffutils/mix.sh
-boot/5/env/std/mix.sh
+boot/6/diffutils
+boot/5/env/std
 {% endblock %}

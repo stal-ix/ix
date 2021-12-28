@@ -6,15 +6,15 @@ f52d5fa7f128db94e884cd21dd45d2e2
 {% endblock %}
 
 {% block bld_tool %}
-dev/tool/perl/full/mix.sh
-dev/build/auto/conf/2/69/mix.sh
-dev/build/auto/make/1/16/mix.sh
+dev/tool/perl/full
+dev/build/auto/conf/2/69
+dev/build/auto/make/1/16
 {% endblock %}
 
 {% block run_deps %}
-dev/tool/perl/full/mix.sh
+dev/tool/perl/full
 {% endblock %}
 
 {% block lib_deps %}
-lib/c/mix.sh
+lib/c
 {% endblock %}

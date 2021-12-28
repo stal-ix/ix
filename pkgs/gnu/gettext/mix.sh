@@ -6,21 +6,21 @@ https://ftp.gnu.org/pub/gnu/gettext/gettext-0.21.tar.gz
 {% endblock %}
 
 {% block bld_libs %}
-lib/c/mix.sh
-lib/xml2/mix.sh
-lib/iconv/mix.sh
-lib/unistring/mix.sh
-lib/textstyle/mix.sh
+lib/c
+lib/xml2
+lib/iconv
+lib/unistring
+lib/textstyle
 {% endblock %}
 
 {% block bld_tool %}
-dev/lang/bison/3/6/mix.sh
-lib/z/mix.sh
+dev/lang/bison/3/6
+lib/z
 {% endblock %}
 
 {% block run_deps %}
-gnu/tar/mix.sh
-tool/compress/gzip/mix.sh
+gnu/tar
+tool/compress/gzip
 {% endblock %}
 
 {% block unpack %}

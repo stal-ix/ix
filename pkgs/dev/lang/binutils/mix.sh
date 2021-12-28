@@ -6,15 +6,15 @@ e78d9ff2976b745a348f4c1f27c77cb1
 {% endblock %}
 
 {% block bld_libs %}
-lib/z/mix.sh
-lib/c/mix.sh
-lib/c++/mix.sh
-lib/intl/mix.sh
+lib/z
+lib/c
+lib/c++
+lib/intl
 {% endblock %}
 
 {% block bld_tool %}
-dev/lang/flex/mix.sh
-dev/lang/bison/3/6/mix.sh
+dev/lang/flex
+dev/lang/bison/3/6
 {% endblock %}
 
 {% block configure_flags %}

@@ -6,16 +6,16 @@ https://github.com/NLnetLabs/unbound/archive/refs/tags/release-1.13.2.tar.gz
 {% endblock %}
 
 {% block lib_deps %}
-lib/c/mix.sh
-lib/expat/mix.sh
-lib/openssl/mix.sh
+lib/c
+lib/expat
+lib/openssl
 {% endblock %}
 
 {% block bld_tool %}
-dev/lang/flex/mix.sh
-dev/lang/bison/3/7/mix.sh
-dev/build/auto/conf/2/69/mix.sh
-dev/build/auto/make/1/16/mix.sh
+dev/lang/flex
+dev/lang/bison/3/7
+dev/build/auto/conf/2/69
+dev/build/auto/make/1/16
 {% endblock %}
 
 {% block configure_flags %}

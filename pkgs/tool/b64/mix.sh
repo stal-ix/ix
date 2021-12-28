@@ -6,7 +6,7 @@ b2294ff8b1cc1de89f7c9073ba866170
 {% endblock %}
 
 {% block std_box %}
-box/boot/mix.sh
+box/boot
 {% endblock %}
 
 {% block unpack %}
@@ -21,5 +21,5 @@ mkdir ${out}/bin && cp base64 ${out}/bin
 {% endblock %}
 
 {% block bld_libs %}
-lib/c/mix.sh
+lib/c
 {% endblock %}

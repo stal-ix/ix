@@ -6,15 +6,15 @@ cda07f5ac55fccfafdf7ee01828adad5
 {% endblock %}
 
 {% block lib_deps %}
-lib/c/mix.sh
-lib/intl/mix.sh
-lib/iconv/mix.sh
-lib/unistring/mix.sh
+lib/c
+lib/intl
+lib/iconv
+lib/unistring
 {% endblock %}
 
 {% block bld_tool %}
-dev/build/auto/conf/2/69/mix.sh
-dev/build/auto/make/1/16/1/mix.sh
+dev/build/auto/conf/2/69
+dev/build/auto/make/1/16/1
 {% endblock %}
 
 {% block c_rename_symbol %}

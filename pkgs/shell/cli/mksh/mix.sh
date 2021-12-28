@@ -6,7 +6,7 @@ http://www.mirbsd.org/MirOS/dist/mir/mksh/mksh-R59c.tgz
 {% endblock %}
 
 {% block bld_tool %}
-dev/doc/groff/mix.sh
+dev/doc/groff
 {% endblock %}
 
 {% block build %}
@@ -18,5 +18,5 @@ mkdir ${out}/bin && cp mksh ${out}/bin
 {% endblock %}
 
 {% block bld_libs %}
-lib/c/mix.sh
+lib/c
 {% endblock %}

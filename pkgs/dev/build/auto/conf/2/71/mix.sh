@@ -6,14 +6,14 @@ https://ftp.gnu.org/gnu/autoconf/autoconf-2.71.tar.xz
 {% endblock %}
 
 {% block run_deps %}
-dev/lang/m4/mix.sh
+dev/lang/m4
 {% endblock %}
 
 {% block bld_tool %}
-dev/lang/m4/mix.sh
-dev/tool/perl/mix.sh
+dev/lang/m4
+dev/tool/perl
 {% endblock %}
 
 {% block std_box %}
-box/boot/mix.sh
+box/boot
 {% endblock %}

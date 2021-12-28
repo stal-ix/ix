@@ -6,5 +6,5 @@ d2356e0fe1c0b85285d83c6b2ad51b5f
 {% endblock %}
 
 {% block bld_libs %}
-lib/c/mix.sh
+lib/c
 {% endblock %}

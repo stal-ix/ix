@@ -6,12 +6,12 @@ https://busybox.net/downloads/busybox-1.35.0.tar.bz2
 {% endblock %}
 
 {% block bld_libs %}
-lib/c/mix.sh
-lib/linux/mix.sh
+lib/c
+lib/linux
 {% endblock %}
 
 {% block std_box %}
-box/boot/mix.sh
+box/boot
 {% endblock %}
 
 {% block setup_tools %}

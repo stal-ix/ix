@@ -6,27 +6,27 @@ https://github.com/kovidgoyal/kitty/archive/refs/tags/v0.23.1.tar.gz
 {% endblock %}
 
 {% block bld_libs %}
-lib/c/mix.sh
-lib/png/mix.sh
-lib/lcms2/mix.sh
-lib/python/mix.sh
-lib/harfbuzz/mix.sh
+lib/c
+lib/png
+lib/lcms2
+lib/python
+lib/harfbuzz
 {% if target.os == 'darwin' %}
-lib/darwin/framework/IOKit/mix.sh
-lib/darwin/framework/Cocoa/mix.sh
-lib/darwin/framework/AppKit/mix.sh
-lib/darwin/framework/Carbon/mix.sh
-lib/darwin/framework/CoreText/mix.sh
-lib/darwin/framework/CoreVideo/mix.sh
-lib/darwin/framework/CoreGraphics/mix.sh
-lib/darwin/framework/UserNotifications/mix.sh
+lib/darwin/framework/IOKit
+lib/darwin/framework/Cocoa
+lib/darwin/framework/AppKit
+lib/darwin/framework/Carbon
+lib/darwin/framework/CoreText
+lib/darwin/framework/CoreVideo
+lib/darwin/framework/CoreGraphics
+lib/darwin/framework/UserNotifications
 {% endif %}
 {% endblock %}
 
 {% block bld_tool %}
-lib/dlfcn/scripts/mix.sh
-lib/python/scripts/mix.sh
-dev/build/pkg-config/mix.sh
+lib/dlfcn/scripts
+lib/python/scripts
+dev/build/pkg-config
 {% endblock %}
 
 {% block setup %}

@@ -3,8 +3,8 @@
 {% block lib_deps %}
 {% if target.os == 'darwin' %}
 # use system objc runtime
-lib/darwin/c/mix.sh
+lib/darwin/c
 {% else %}
-lib/objc/2/mix.sh
+lib/objc/2
 {% endif %}
 {% endblock %}

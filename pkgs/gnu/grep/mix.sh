@@ -6,12 +6,12 @@ f47fe27049510b2249dba7f862ac1b51
 {% endblock %}
 
 {% block bld_libs %}
-lib/c/mix.sh
-lib/intl/mix.sh
-lib/iconv/mix.sh
-lib/sigsegv/mix.sh
+lib/c
+lib/intl
+lib/iconv
+lib/sigsegv
 {% endblock %}
 
 {% block std_box %}
-box/boot/mix.sh
+box/boot
 {% endblock %}

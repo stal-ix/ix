@@ -6,19 +6,19 @@ b875ed196bc624c78e7b35967675a813
 {% endblock %}
 
 {% block bld_libs %}
-lib/c/mix.sh
-lib/fcft/mix.sh
-lib/linux/mix.sh
-lib/tllist/mix.sh
-lib/pixman/mix.sh
-lib/wayland/mix.sh
-lib/freetype/mix.sh
-lib/xkbcommon/mix.sh
-lib/fontconfig/mix.sh
+lib/c
+lib/fcft
+lib/linux
+lib/tllist
+lib/pixman
+lib/wayland
+lib/freetype
+lib/xkbcommon
+lib/fontconfig
 {% endblock %}
 
 {% block bld_tool %}
-lib/curses/n/mix.sh
-dev/doc/scdoc/mix.sh
-lib/wayland/protocols/mix.sh
+lib/curses/n
+dev/doc/scdoc
+lib/wayland/protocols
 {% endblock %}

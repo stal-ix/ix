@@ -6,19 +6,19 @@ https://gitlab.freedesktop.org/wlroots/wlroots/-/archive/0.14.1/wlroots-0.14.1.t
 {% endblock %}
 
 {% block lib_deps %}
-lib/c/mix.sh
-lib/drm/mix.sh
-lib/udev/mix.sh
-lib/seat/mix.sh
-lib/input/mix.sh
-lib/opengl/mix.sh
-lib/pixman/mix.sh
-lib/wayland/mix.sh
-lib/xkbcommon/mix.sh
+lib/c
+lib/drm
+lib/udev
+lib/seat
+lib/input
+lib/opengl
+lib/pixman
+lib/wayland
+lib/xkbcommon
 {% endblock %}
 
 {% block bld_tool %}
-lib/wayland/protocols/mix.sh
+lib/wayland/protocols
 {% endblock %}
 
 {% block meson_flags %}

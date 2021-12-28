@@ -5,17 +5,17 @@
 {% endblock %}
 
 {% block lib_deps %}
-boot/7/lib/cxx/rt/mix.sh
+boot/7/lib/cxx/rt
 {% endblock %}
 
 {% block bld_libs %}
 {% if target.os == 'linux' %}
-boot/7/lib/linux/mix.sh
+boot/7/lib/linux
 {% endif %}
 {% endblock %}
 
 {% block bld_deps %}
-boot/6/env/std/mix.sh
+boot/6/env/std
 {% endblock %}
 
 {% block setup %}

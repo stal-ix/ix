@@ -1,13 +1,13 @@
 {% block shell %}
-dev/tool/dash/mix.sh
+dev/tool/dash
 {% endblock %}
 
 {% block box %}
-gnu/box/mix.sh
+gnu/box
 {% endblock %}
 
 {% block decompressor %}
-tool/pv/mix.sh
-tool/compress/unzip/mix.sh
-lib/archive/mix.sh(opt=O2;ICF;LTO)
+tool/pv
+tool/compress/unzip
+lib/archive(opt=O2;ICF;LTO)
 {% endblock %}

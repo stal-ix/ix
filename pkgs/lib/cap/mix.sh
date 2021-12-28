@@ -6,8 +6,8 @@ https://git.kernel.org/pub/scm/libs/libcap/libcap.git/snapshot/libcap-cap/v1.2.5
 {% endblock %}
 
 {% block lib_deps %}
-lib/c/mix.sh
-lib/linux/mix.sh
+lib/c
+lib/linux
 {% endblock %}
 
 {% block unpack %}

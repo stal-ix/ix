@@ -6,15 +6,15 @@ aed8ae9e2b0898151b36a204088292dd
 {% endblock %}
 
 {% block lib_deps %}
-lib/build/mix.sh
+lib/build
 {% endblock %}
 
 {% block bld_libs %}
-lib/build/mix.sh
+lib/build
 {% endblock %}
 
 {% block bld_deps %}
-boot/0/env/mix.sh
+boot/0/env
 {% endblock %}
 
 {% block script %}

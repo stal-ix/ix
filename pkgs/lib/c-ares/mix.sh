@@ -6,11 +6,11 @@ a0ec0dd35fd6c06544333d250e21ab22
 {% endblock %}
 
 {% block lib_deps %}
-lib/c/mix.sh
+lib/c
 {% endblock %}
 
 {% block std_box %}
-box/boot/mix.sh
+box/boot
 {% endblock %}
 
 {% block cmake_flags %}

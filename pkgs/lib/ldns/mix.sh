@@ -6,13 +6,13 @@ a84a680e92618b8c236626c192e5a15b
 {% endblock %}
 
 {% block lib_deps %}
-lib/c/mix.sh
-lib/openssl/mix.sh
+lib/c
+lib/openssl
 {% endblock %}
 
 {% block bld_tool %}
-dev/build/auto/conf/2/69/mix.sh
-dev/build/auto/make/1/16/mix.sh
+dev/build/auto/conf/2/69
+dev/build/auto/make/1/16
 {% endblock %}
 
 {% block configure_flags %}

@@ -6,10 +6,10 @@ https://github.com/magiblot/tvision/archive/c36e190174463ece471bdd1c06959fb8dc34
 {% endblock %}
 
 {% block lib_deps %}
-lib/c/mix.sh
-lib/c++/mix.sh
+lib/c
+lib/c++
 {% if target.os == 'linux' %}
-lib/linux/mix.sh
+lib/linux
 {% endif %}
-lib/curses/mix.sh
+lib/curses
 {% endblock %}

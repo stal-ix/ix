@@ -8,7 +8,7 @@
 {% endblock %}
 
 {% block bld_deps %}
-boot/6/env/std/mix.sh
+boot/6/env/std
 {% endblock %}
 
 {% block unpack %}

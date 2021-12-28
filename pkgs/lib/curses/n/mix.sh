@@ -6,22 +6,22 @@ a2736befde5fee7d2b7eb45eb281cdbe
 {% endblock %}
 
 {% block bld_tool %}
-lib/z/mix.sh
-dev/tool/bash/mix.sh
+lib/z
+dev/tool/bash
 {% endblock %}
 
 {% block lib_deps %}
-lib/c/mix.sh
+lib/c
 {% endblock %}
 
 {% block run_data %}
 {% if kind == 'lib' %}
-lib/curses/n/mix.sh
+lib/curses/n
 {% endif %}
 {% endblock %}
 
 {% block std_box %}
-box/boot/mix.sh
+box/boot
 {% endblock %}
 
 {% block configure_flags %}

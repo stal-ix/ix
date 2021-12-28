@@ -6,11 +6,11 @@ c07e3179246b24c538a31132cddeae72
 {% endblock %}
 
 {% block lib_deps %}
-lib/c/mix.sh
+lib/c
 {% endblock %}
 
 {% block bld_tool %}
-dev/tool/perl/mix.sh
-dev/build/pkg-config/mix.sh
-dev/build/auto/libtool/mix.sh
+dev/tool/perl
+dev/build/pkg-config
+dev/build/auto/libtool
 {% endblock %}

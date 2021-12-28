@@ -6,23 +6,23 @@ https://github.com/elfmz/far2l/archive/b246b95118c0d7c6d10b4e94ec9b3bc7e24c3a7c.
 {% endblock %}
 
 {% block bld_libs %}
-lib/c/mix.sh
-lib/fmt/mix.sh
-lib/ssh/mix.sh
-lib/pcre/mix.sh
-lib/magic/mix.sh
-lib/spdlog/mix.sh
-lib/archive/mix.sh
-lib/xerces-c/mix.sh
-lib/uchardet/mix.sh
+lib/c
+lib/fmt
+lib/ssh
+lib/pcre
+lib/magic
+lib/spdlog
+lib/archive
+lib/xerces-c
+lib/uchardet
 {% if target.os == 'linux' %}
-lib/linux/mix.sh
+lib/linux
 {% endif %}
 {% endblock %}
 
 {% block bld_tool %}
-dev/build/pkg-config/mix.sh
-dev/lang/m4/mix.sh
+dev/build/pkg-config
+dev/lang/m4
 {% endblock %}
 
 {% block patch %}

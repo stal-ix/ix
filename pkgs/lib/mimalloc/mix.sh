@@ -6,11 +6,11 @@ a06e57e9ae10a346ab8a1097c0838fef
 {% endblock %}
 
 {% block bld_libs %}
-lib/c++/14/headers/mix.sh
+lib/c++/14/headers
 {% endblock %}
 
 {% block std_box %}
-box/boot/mix.sh
+box/boot
 {% endblock %}
 
 {% block cmake_flags %}

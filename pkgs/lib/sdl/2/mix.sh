@@ -6,16 +6,16 @@ https://github.com/libsdl-org/SDL/archive/refs/tags/release-2.0.18.tar.gz
 {% endblock %}
 
 {% block lib_deps %}
-lib/c/mix.sh
-lib/opengl/mix.sh
-lib/wayland/mix.sh
-lib/xkbcommon/mix.sh
-lib/vulkan/loader/mix.sh
+lib/c
+lib/opengl
+lib/wayland
+lib/xkbcommon
+lib/vulkan/loader
 {% endblock %}
 
 {% block bld_tool %}
-dev/build/pkg-config/mix.sh
-lib/wayland/protocols/mix.sh
+dev/build/pkg-config
+lib/wayland/protocols
 {% endblock %}
 
 {% block cmake_flags %}

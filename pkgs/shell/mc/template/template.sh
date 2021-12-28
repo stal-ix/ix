@@ -6,19 +6,19 @@ e51cd40a897d9aa01af251d191637ca4
 {% endblock %}
 
 {% block bld_libs %}
-lib/c/mix.sh
-lib/intl/mix.sh
-lib/glib/mix.sh
-lib/iconv/mix.sh
-lib/{{self.typ().strip()}}/mix.sh
+lib/c
+lib/intl
+lib/glib
+lib/iconv
+lib/{{self.typ().strip()}}
 {% endblock %}
 
 {% block bld_tool %}
-dev/tool/perl/mix.sh
+dev/tool/perl
 {% endblock %}
 
 {% block run_deps %}
-tool/compress/all/mix.sh
+tool/compress/all
 {% endblock %}
 
 {% block c_rename_symbol %}

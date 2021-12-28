@@ -6,10 +6,10 @@ https://ftp.gnu.org/gnu/tar/tar-1.34.tar.xz
 {% endblock %}
 
 {% block bld_libs %}
-lib/c/mix.sh
-lib/z/mix.sh
-lib/xz/mix.sh
-lib/intl/mix.sh
-lib/bzip2/mix.sh
-lib/iconv/mix.sh
+lib/c
+lib/z
+lib/xz
+lib/intl
+lib/bzip2
+lib/iconv
 {% endblock %}

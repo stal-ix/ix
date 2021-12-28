@@ -6,13 +6,13 @@ https://downloads.sourceforge.net/project/swig/swig/swig-4.0.2/swig-4.0.2.tar.gz
 {% endblock %}
 
 {% block bld_libs %}
-lib/c/mix.sh
-lib/c++/mix.sh
-lib/pcre/mix.sh
+lib/c
+lib/c++
+lib/pcre
 {% endblock %}
 
 {% block bld_tool %}
-dev/lang/bison/3/7/mix.sh
+dev/lang/bison/3/7
 {% endblock %}
 
 {% block configure_flags %}

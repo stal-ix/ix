@@ -6,22 +6,22 @@ https://github.com/harfbuzz/harfbuzz/archive/refs/tags/3.1.1.tar.gz
 {% endblock %}
 
 {% block lib_deps %}
-lib/c/mix.sh
-lib/c++/mix.sh
-lib/glib/mix.sh
-lib/freetype/mix.sh
+lib/c
+lib/c++
+lib/glib
+lib/freetype
 {% if target.os == 'darwin' %}
-lib/darwin/framework/CoreText/mix.sh
-lib/darwin/framework/ApplicationServices/mix.sh
+lib/darwin/framework/CoreText
+lib/darwin/framework/ApplicationServices
 {% endif %}
 {% endblock %}
 
 {% block bld_libs %}
-lib/cairo/mix.sh
+lib/cairo
 {% endblock %}
 
 {% block bld_tool %}
-dev/tool/ragel/6/mix.sh
+dev/tool/ragel/6
 {% endblock %}
 
 {% block meson_flags %}

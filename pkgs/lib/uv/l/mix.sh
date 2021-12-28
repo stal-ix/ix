@@ -26,7 +26,7 @@ LUA_BUILD_TYPE=System
 {% endblock %}
 
 {% block lib_deps %}
-lib/c/mix.sh
-lib/uv/mix.sh
-lib/lua/mix.sh
+lib/c
+lib/uv
+lib/lua
 {% endblock %}

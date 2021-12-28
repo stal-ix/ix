@@ -6,21 +6,21 @@ https://github.com/neovim/neovim/archive/refs/tags/v0.6.0.tar.gz
 {% endblock %}
 
 {% block bld_libs %}
-lib/uv/mix.sh
-lib/lua/mix.sh
-lib/uv/l/mix.sh
-lib/intl/mix.sh
-lib/vterm/mix.sh
-lib/iconv/mix.sh
-lib/termkey/mix.sh
-lib/msgpack/c/mix.sh
-lib/unibilium/mix.sh
-lib/tree/sitter/mix.sh
+lib/uv
+lib/lua
+lib/uv/l
+lib/intl
+lib/vterm
+lib/iconv
+lib/termkey
+lib/msgpack/c
+lib/unibilium
+lib/tree/sitter
 {% endblock %}
 
 {% block bld_tool %}
-dev/tool/gperf/mix.sh
-editor/neovim/luafat/mix.sh
+dev/tool/gperf
+editor/neovim/luafat
 {% endblock %}
 
 {% block script_init_env %}

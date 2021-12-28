@@ -2,5 +2,5 @@
 
 {% block boot_flex %}
 boot/9/flex/2.6.4.0.sh
-boot/4/byacc/mix.sh
+boot/4/byacc
 {% endblock %}

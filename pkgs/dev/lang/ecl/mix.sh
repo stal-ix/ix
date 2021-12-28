@@ -6,10 +6,10 @@ https://common-lisp.net/project/ecl/static/files/release/ecl-21.2.1.tgz
 {% endblock %}
 
 {% block bld_libs %}
-lib/c/mix.sh
-lib/gmp/mix.sh
-lib/ffi/mix.sh
-lib/boehmgc/mix.sh
+lib/c
+lib/gmp
+lib/ffi
+lib/boehmgc
 {% endblock %}
 
 {% block unpack %}

@@ -6,13 +6,13 @@ aeb91767903cbee234bf449f481877c1
 {% endblock %}
 
 {% block lib_deps %}
-lib/c/mix.sh
-lib/wayland/mix.sh
-lib/vulkan/headers/mix.sh
+lib/c
+lib/wayland
+lib/vulkan/headers
 {% endblock %}
 
 {% block bld_tool %}
-dev/build/pkg-config/mix.sh
+dev/build/pkg-config
 {% endblock %}
 
 {% block cmake_flags %}

@@ -6,16 +6,16 @@ e457d756979875b7a56481f1fffa1b71
 {% endblock %}
 
 {% block lib_deps %}
-lib/c/mix.sh
+lib/c
 {{super()}}
-lib/vulkan/loader/mix.sh
-lib/vulkan/headers/mix.sh
-lib/vulkan/glslang/mix.sh
+lib/vulkan/loader
+lib/vulkan/headers
+lib/vulkan/glslang
 {% endblock %}
 
 {% block bld_tool %}
 {{super()}}
-lib/vulkan/glslang/mix.sh
+lib/vulkan/glslang
 {% endblock %}
 
 {% block patch %}

@@ -5,7 +5,7 @@
 {{std_env}}
 {% else %}
 {% block c_compiler %}
-dev/lang/clang/13/opt/mix.sh
+dev/lang/clang/13/opt
 {% endblock %}
 {{super()}}
 {% endif %}

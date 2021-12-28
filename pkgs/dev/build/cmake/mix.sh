@@ -7,25 +7,25 @@ https://github.com/Kitware/CMake/archive/refs/tags/v3.22.0.tar.gz
 
 {% block bld_libs %}
 {% if target.os == 'darwin' %}
-lib/darwin/framework/CoreFoundation/mix.sh
+lib/darwin/framework/CoreFoundation
 {% endif %}
 {% if target.os == 'linux' %}
-lib/linux/mix.sh
+lib/linux
 {% endif %}
-lib/z/mix.sh
-lib/xz/mix.sh
-lib/uv/mix.sh
-lib/c/mix.sh
-lib/c++/mix.sh
-lib/curl/mix.sh
-lib/bzip2/mix.sh
-lib/expat/mix.sh
-lib/archive/mix.sh
-lib/curses/mix.sh
+lib/z
+lib/xz
+lib/uv
+lib/c
+lib/c++
+lib/curl
+lib/bzip2
+lib/expat
+lib/archive
+lib/curses
 {% endblock %}
 
 {% block std_box %}
-box/boot/mix.sh
+box/boot
 {% endblock %}
 
 {% block cmake_flags %}

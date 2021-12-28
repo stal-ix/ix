@@ -6,15 +6,15 @@ https://codeberg.org/dnkl/fcft/archive/2.5.0.tar.gz
 {% endblock %}
 
 {% block lib_deps %}
-lib/c/mix.sh
-lib/tllist/mix.sh
-lib/pixman/mix.sh
-lib/freetype/mix.sh
-lib/harfbuzz/mix.sh
-lib/utf8proc/mix.sh
-lib/fontconfig/mix.sh
+lib/c
+lib/tllist
+lib/pixman
+lib/freetype
+lib/harfbuzz
+lib/utf8proc
+lib/fontconfig
 {% endblock %}
 
 {% block bld_tool %}
-dev/doc/scdoc/mix.sh
+dev/doc/scdoc
 {% endblock %}

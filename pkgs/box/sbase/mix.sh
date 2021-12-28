@@ -6,7 +6,7 @@ https://github.com/pg83/sbase/archive/2c2a7f54ab55a022a617e510b6e00c3e2736fabd.z
 {% endblock %}
 
 {% block std_box %}
-box/boot/mix.sh
+box/boot
 {% endblock %}
 
 {% block c_rename_symbol %}
@@ -39,5 +39,5 @@ cat util.h | grep -v 'undef realloc' > _ && mv _ util.h
 {% endblock %}
 
 {% block bld_libs %}
-lib/c/mix.sh
+lib/c
 {% endblock %}

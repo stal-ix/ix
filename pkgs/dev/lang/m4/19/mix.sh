@@ -6,17 +6,17 @@ https://ftp.gnu.org/gnu/m4/m4-1.4.19.tar.xz
 {% endblock %}
 
 {% block bld_libs %}
-lib/c/mix.sh
-lib/intl/mix.sh
-lib/sigsegv/mix.sh
+lib/c
+lib/intl
+lib/sigsegv
 {% endblock %}
 
 {% block bld_tool %}
-dev/doc/help2man/mix.sh
+dev/doc/help2man
 {% endblock %}
 
 {% block std_box %}
-box/boot/mix.sh
+box/boot
 {% endblock %}
 
 {% block configure_flags %}

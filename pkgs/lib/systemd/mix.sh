@@ -6,5 +6,5 @@ https://github.com/systemd/systemd/archive/refs/tags/v249.tar.gz
 {% endblock %}
 
 {% block lib_deps %}
-lib/c/mix.sh
+lib/c
 {% endblock %}

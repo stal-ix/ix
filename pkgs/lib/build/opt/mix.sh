@@ -2,6 +2,6 @@
 
 {% block lib_deps %}
 {% for o in (opt or 'O2').split(';') %}
-lib/build/opt/{{o}}/mix.sh
+lib/build/opt/{{o}}
 {% endfor %}
 {% endblock %}

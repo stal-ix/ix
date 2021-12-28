@@ -1,8 +1,8 @@
 {% extends '//mix/template/dlstubs.sh' %}
 
 {% block lib_deps %}
-lib/c/mix.sh
-lib/mesa/drivers/full/mix.sh
+lib/c
+lib/mesa/drivers/full
 {% endblock %}
 
 {% block export_symbols %}

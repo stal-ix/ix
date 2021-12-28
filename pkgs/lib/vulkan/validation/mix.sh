@@ -6,19 +6,19 @@ https://github.com/KhronosGroup/Vulkan-ValidationLayers/archive/3dfeacfe0ad07415
 {% endblock %}
 
 {% block lib_deps %}
-lib/c/mix.sh
-lib/c++/mix.sh
-lib/wayland/mix.sh
-lib/robin/hood/mix.sh
-lib/vulkan/headers/mix.sh
-lib/vulkan/spirv/headers/mix.sh
-lib/vulkan/spirv/tools/mix.sh
+lib/c
+lib/c++
+lib/wayland
+lib/robin/hood
+lib/vulkan/headers
+lib/vulkan/spirv/headers
+lib/vulkan/spirv/tools
 {% endblock %}
 
 {% block bld_tool %}
-dev/tool/python/mix.sh
-dev/build/pkg-config/mix.sh
-lib/vulkan/spirv/tools/mix.sh
+dev/tool/python
+dev/build/pkg-config
+lib/vulkan/spirv/tools
 {% endblock %}
 
 {% block cmake_flags %}

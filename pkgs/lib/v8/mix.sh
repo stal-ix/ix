@@ -6,12 +6,12 @@ https://github.com/v8/v8/archive/refs/tags/9.7.37.tar.gz
 {% endblock %}
 
 {% block lib_deps %}
-lib/c++/mix.sh
+lib/c++
 {% endblock %}
 
 {% block bld_tool %}
-dev/build/gn/mix.sh
-dev/tool/python/mix.sh
+dev/build/gn
+dev/tool/python
 {% endblock %}
 
 {% block unpack %}

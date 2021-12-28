@@ -6,7 +6,7 @@ https://github.com/onetrueawk/awk/archive/c0f4e97e4561ff42544e92512bbaf3d7d1f6a6
 {% endblock %}
 
 {% block bld_tool %}
-dev/lang/bison/3/7/mix.sh
+dev/lang/bison/3/7
 {% endblock %}
 
 {% block install %}
@@ -14,5 +14,5 @@ mkdir ${out}/bin && cp a.out ${out}/bin/nawk
 {% endblock %}
 
 {% block bld_libs %}
-lib/c/mix.sh
+lib/c
 {% endblock %}

@@ -6,12 +6,12 @@ sem:ab1c8977e63bf57bc67e5637cf83a1c9
 {% endblock %}
 
 {% block bld_libs %}
-lib/c++/mix.sh
+lib/c++
 {% endblock %}
 
 {% block bld_tool %}
-dev/vcs/git/mix.sh
-dev/tool/python/mix.sh
+dev/vcs/git
+dev/tool/python
 {% endblock %}
 
 {% block unpack %}

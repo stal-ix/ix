@@ -6,7 +6,7 @@ https://github.com/strukturag/libheif/archive/refs/tags/v1.12.0.tar.gz
 {% endblock %}
 
 {% block lib_deps %}
-lib/c/mix.sh
-lib/x265/mix.sh
-lib/de265/mix.sh
+lib/c
+lib/x265
+lib/de265
 {% endblock %}

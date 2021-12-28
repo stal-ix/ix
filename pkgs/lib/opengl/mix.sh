@@ -2,9 +2,9 @@
 
 {% block lib_deps %}
 {% if target.os == 'linux' %}
-lib/mesa/mix.sh
+lib/mesa
 {% endif %}
 {% if target.os == 'darwin' %}
-lib/darwin/framework/Carbon/mix.sh
+lib/darwin/framework/Carbon
 {% endif %}
 {% endblock %}

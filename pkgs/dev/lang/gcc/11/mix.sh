@@ -6,28 +6,28 @@ http://mirror.koddos.net/gcc/releases/gcc-11.2.0/gcc-11.2.0.tar.xz
 {% endblock %}
 
 {% block bld_libs %}
-lib/z/mix.sh
-lib/c/mix.sh
-lib/c++/mix.sh
-lib/isl/mix.sh
-lib/gmp/mix.sh
-lib/mpc/mix.sh
-lib/intl/mix.sh
-lib/mpfr/mix.sh
+lib/z
+lib/c
+lib/c++
+lib/isl
+lib/gmp
+lib/mpc
+lib/intl
+lib/mpfr
 {% endblock %}
 
 {% block bld_tool %}
-gnu/tar/mix.sh
-dev/lang/flex/mix.sh
-dev/doc/texinfo/mix.sh
-dev/lang/bison/3/8/mix.sh
-tool/compress/gzip/mix.sh
-dev/lang/binutils/mix.sh(for_target={{host.gnu.three}},bin_prefix=host)
-dev/lang/binutils/mix.sh(for_target={{target.gnu.three}},bin_prefix=target)
+gnu/tar
+dev/lang/flex
+dev/doc/texinfo
+dev/lang/bison/3/8
+tool/compress/gzip
+dev/lang/binutils(for_target={{host.gnu.three}},bin_prefix=host)
+dev/lang/binutils(for_target={{target.gnu.three}},bin_prefix=target)
 {% endblock %}
 
 {% block run_deps %}
-dev/lang/gcc/env/mix.sh
+dev/lang/gcc/env
 {% endblock %}
 
 {% block configure_flags %}

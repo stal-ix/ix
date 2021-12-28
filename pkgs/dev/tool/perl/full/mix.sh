@@ -8,7 +8,7 @@ https://cpan.metacpan.org/authors/id/T/TO/TODDR/XML-Parser-2.46.tar.gz
 
 {% block bld_libs %}
 {{super()}}
-lib/expat/mix.sh
+lib/expat
 {% endblock %}
 
 {% block unpack %}
@@ -20,7 +20,7 @@ cd ..
 {% endblock %}
 
 {% block bld_tool %}
-dev/tool/perl/mix.sh
+dev/tool/perl
 {{super()}}
 {% endblock %}
 
