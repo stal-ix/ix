@@ -13,6 +13,7 @@ lib/darwin/framework/CoreGraphics/mix.sh
 {% endif %}
 lib/png/mix.sh
 lib/lzo/mix.sh
+lib/glib/mix.sh
 lib/pixman/mix.sh
 lib/opengl/mix.sh
 lib/freetype/mix.sh
@@ -30,6 +31,7 @@ dev/build/auto/make/1/16/mix.sh
 --enable-trace=no
 --enable-egl=auto
 --enable-glesv2=auto
+--enable-gobject=yes
 {% endblock %}
 
 {% block c_rename_symbol %}

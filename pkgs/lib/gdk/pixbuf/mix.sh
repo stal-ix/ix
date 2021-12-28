@@ -23,3 +23,13 @@ lib/glib/mix.sh
 -Dinstalled_tests=false
 -Dgio_sniffing=false
 {% endblock %}
+
+{% block install %}
+{{super()}}
+
+cd ${out}/lib/pkgconfig
+
+cat gdk-pixbuf-2.0.pc \
+    | grep -v 'bin' \
+    > _ && mv _ gdk-pixbuf-2.0.pc
+{% endblock %}
