@@ -1,5 +1,5 @@
 {% block shell %}
-shell/cli/dash/minimal/mix.sh
+dev/tool/dash/mix.sh
 {% endblock %}
 
 {% block box %}

@@ -1,4 +1,4 @@
-{% extends '//shell/cli/dash/full/mix.sh' %}
+{% extends '//shell/cli/dash/mix.sh' %}
 
 {% block bld_libs %}
 lib/c/mix.sh
