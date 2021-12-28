@@ -20,7 +20,7 @@ lib/openssl/mix.sh
 
 {% block bld_tool %}
 tool/curl/mix.sh
-shell/cli/bash/minimal/mix.sh
+dev/tool/bash/mix.sh
 dev/vcs/git/mix.sh
 gnu/tar/mix.sh
 tool/gnu/time/mix.sh

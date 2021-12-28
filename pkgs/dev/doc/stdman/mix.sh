@@ -6,16 +6,12 @@ https://github.com/jeaye/stdman/archive/478d353c73bec79bbbad833a31c50eecd4578b46
 {% endblock %}
 
 {% block bld_tool %}
-shell/cli/bash/minimal/mix.sh
+dev/tool/bash/mix.sh
 {% endblock %}
 
 {% block configure %}
-bash ./configure --prefix="${out}"
+bash configure --prefix="${out}"
 {% endblock %}
 
 {% block build %}
-{% endblock %}
-
-{% block bld_libs %}
-#lib/c/mix.sh
 {% endblock %}

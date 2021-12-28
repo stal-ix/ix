@@ -1,7 +1,7 @@
 {% extends '//mix/template/c_std.sh' %}
 
 {% block bld_tool %}
-shell/cli/bash/minimal/mix.sh
+dev/tool/bash/mix.sh
 dev/build/pkg-config/mix.sh
 {% endblock %}
 

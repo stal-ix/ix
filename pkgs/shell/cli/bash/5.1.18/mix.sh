@@ -1,4 +1,4 @@
-{% extends '//shell/cli/bash/5.1.18/template/template.sh' %}
+{% extends 't/mix.sh' %}
 
 {% block bld_libs %}
 lib/c/mix.sh

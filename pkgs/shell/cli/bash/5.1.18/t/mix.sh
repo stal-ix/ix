@@ -10,8 +10,8 @@ rm y.tab* lib/intl/plural.c
 
 bison -d parse.y
 
-mv parse.tab.c y.tab.c
-mv parse.tab.h y.tab.h
+cp parse.tab.c y.tab.c
+cp parse.tab.h y.tab.h
 
 {{super()}}
 {% endblock %}

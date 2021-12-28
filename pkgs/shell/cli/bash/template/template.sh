@@ -20,3 +20,8 @@ xfree
 --enable-static-link
 {% endif %}
 {% endblock %}
+
+{% block setup %}
+export CPPFLAGS="-w ${CPPFLAGS}"
+{{super()}}
+{% endblock %}

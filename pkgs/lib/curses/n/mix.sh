@@ -7,7 +7,7 @@ a2736befde5fee7d2b7eb45eb281cdbe
 
 {% block bld_tool %}
 lib/z/mix.sh
-shell/cli/bash/minimal/mix.sh
+dev/tool/bash/mix.sh
 {% endblock %}
 
 {% block lib_deps %}

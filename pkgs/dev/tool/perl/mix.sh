@@ -13,7 +13,7 @@ lib/iconv/mix.sh
 {% endblock %}
 
 {% block bld_tool %}
-shell/cli/bash/minimal/mix.sh
+dev/tool/bash/mix.sh
 {% endblock %}
 
 {% block std_box %}

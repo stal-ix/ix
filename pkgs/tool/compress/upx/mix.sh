@@ -13,7 +13,7 @@ lib/ucl/mix.sh
 {% endblock %}
 
 {% block bld_tool %}
-shell/cli/bash/minimal/mix.sh
+dev/tool/bash/mix.sh
 dev/tool/perl/mix.sh
 {% endblock %}
 

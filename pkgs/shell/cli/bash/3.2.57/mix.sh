@@ -18,11 +18,6 @@ lib/iconv/mix.sh
 dev/lang/byacc/mix.sh
 {% endblock %}
 
-{% block setup %}
-export CPPFLAGS="-w ${CPPFLAGS}"
-{{super()}}
-{% endblock %}
-
 {% block patch %}
 rm y.tab* lib/intl/plural.c
 {{super()}}
