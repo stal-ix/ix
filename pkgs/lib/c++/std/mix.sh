@@ -24,6 +24,7 @@ mkdir bld; cd bld
 
 {% block configure_flags %}
 --disable-multilib
+--enable-linux-futex=no
 --enable-libstdcxx-dual-abi=no
 {% endblock %}
 
@@ -53,11 +54,16 @@ def it():
         yield '-faligned-new'
         yield '-fsized-deallocation'
 
-    if '++17' in str(sys.argv):
+    if 'memory_resource.cc' in str(sys.argv):
         yield '-std=c++20'
+        yield '-D__constinit=constinit'
 
 subprocess.check_call(["${CL}"] + list(it()))
 EOF
 
 chmod +x clang++
+{% endblock %}
+
+{% block env %}
+export CPPFLAGS="-I${out}/include/c++/11.2.0/x86_64-pc-linux-musl -I${out}/include/c++/11.2.0 \${CPPFLAGS}"
 {% endblock %}

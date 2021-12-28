@@ -6,9 +6,7 @@ https://github.com/aristocratos/btop/archive/refs/tags/v1.1.3.tar.gz
 {% endblock %}
 
 {% block bld_libs %}
-lib/c
-lib/c++
-lib/range/v3
+sys/btop++/libs
 {% endblock %}
 
 {% block make_flags %}
@@ -17,7 +15,7 @@ OPTFLAGS=
 {% endblock %}
 
 {% block setup %}
-export CPPFLAGS="-I${PWD} -isystem${PWD} ${CPPFLAGS}"
+export CPPFLAGS="-I${PWD} ${CPPFLAGS}"
 {% endblock %}
 
 {% block patch %}
