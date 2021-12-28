@@ -21,6 +21,7 @@ lib/gdk/pixbuf/mix.sh
 
 {% block bld_tool %}
 lib/glib/mix.sh
+gnu/gettext/mix.sh
 lib/wayland/protocols/mix.sh
 {% endblock %}
 
@@ -29,15 +30,4 @@ lib/wayland/protocols/mix.sh
 -Dmedia-ffmpeg=disabled
 -Dmedia-gstreamer=disabled
 -Dintrospection=disabled
-{% endblock %}
-
-{% block patch %}
-cat meson.build \
-    | grep -v 'subdir.*tests' \
-    | grep -v 'subdir.*examp' \
-    > _ && mv _ meson.build
-
-find . | grep meson.build | while read l; do
-    cat ${l} | sed -e 's|shared_module|library|' > _ && mv _ ${l}
-done
 {% endblock %}

@@ -40,12 +40,6 @@ export CPPFLAGS="-D_GNU_SOURCE=1 -I${PWD}/inc ${CPPFLAGS}"
 -Dtests=false
 {% endblock %}
 
-{% block patch %}
-sed -e 's|.*subdir.*fuzz.*||' \
-    -e 's|.*subdir.*test.*||' \
-    -i meson.build
-{% endblock %}
-
 {% block install %}
 {{super()}}
 

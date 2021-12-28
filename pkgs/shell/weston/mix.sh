@@ -44,10 +44,6 @@ lib/wayland/protocols/mix.sh
 os_create_anonymous_file
 {% endblock %}
 
-{% block patch %}
-sed -e 's|.*subdir.*test.*||' -i meson.build
-{% endblock %}
-
 {% block install %}
 {{super()}}
 rm -rf ${out}/share/pkgconfig

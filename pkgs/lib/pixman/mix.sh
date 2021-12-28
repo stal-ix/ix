@@ -8,9 +8,3 @@ https://www.cairographics.org/releases/pixman-0.40.0.tar.gz
 {% block lib_deps %}
 lib/c/mix.sh
 {% endblock %}
-
-{% block patch %}
-sed -e 's|.*subdir.*test.*||' \
-    -e 's|.*subdir.*demo.*||' \
-    -i meson.build
-{% endblock %}

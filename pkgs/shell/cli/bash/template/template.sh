@@ -11,10 +11,6 @@ is_basic_table
 xfree
 {% endblock %}
 
-{% block bld_tool %}
-dev/lang/bison/3/boot/mix.sh
-{% endblock %}
-
 {% block configure_flags %}
 --without-bash-malloc
 --enable-extended-glob

@@ -9,6 +9,10 @@ lib/intl/mix.sh
 {{super()}}
 {% endblock %}
 
+{% block bld_tool %}
+dev/lang/bison/3/6/mix.sh
+{% endblock %}
+
 {% block configure_flags %}
 {{super()}}
 --with-installed-readline

@@ -75,6 +75,14 @@ meson
 {% endif %}
 
 find . | grep meson.build | while read l; do
-    sed -e 's|shared_library|library|g' -i ${l}
+    # danger, Will Robinson!
+    cat ${l} \
+        | grep -v 'subdir.*test' \
+        | grep -v 'subdir.*exam' \
+        | grep -v 'subdir.*demo' \
+        | grep -v 'subdir.*fuzz' \
+        | sed -e 's|shared_library|library|g' \
+        | sed -e 's|shared_module|library|g' \
+        > _ && mv _ ${l}
 done
 {% endblock %}

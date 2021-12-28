@@ -14,6 +14,20 @@ lib/iconv/mix.sh
 {{super()}}
 {% endblock %}
 
+{% block bld_tool %}
+dev/lang/byacc/mix.sh
+{% endblock %}
+
+{% block setup %}
+export CPPFLAGS="-w ${CPPFLAGS}"
+{{super()}}
+{% endblock %}
+
+{% block patch %}
+rm y.tab* lib/intl/plural.c
+{{super()}}
+{% endblock %}
+
 {% block configure_flags %}
 {{super()}}
 --with-installed-readline
