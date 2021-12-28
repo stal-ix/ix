@@ -27,6 +27,6 @@ lib/xkbcommon/config/mix.sh
 -Dxkb-config-root=${XKB_CONFIG}
 {% endblock %}
 
-{% block setup %}
-export CPPFLAGS="-Dparse_string=parse_string_xkbcommon ${CPPFLAGS}"
+{% block c_rename_symbol %}
+parse_string
 {% endblock %}
