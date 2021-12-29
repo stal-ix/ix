@@ -20,3 +20,21 @@ RANGE_V3_PERF=OFF
 {% block setup %}
 export CPPFLAGS="-w ${CPPFLAGS}"
 {% endblock %}
+
+{% block install %}
+{{super()}}
+
+cat << EOF > ${out}/include/ranges
+#pragma once
+
+#include <range/v3/all.hpp>
+
+namespace std::ranges {
+    using namespace ::ranges;
+}
+
+namespace std::views {
+    using namespace ::ranges::views;
+}
+EOF
+{% endblock %}

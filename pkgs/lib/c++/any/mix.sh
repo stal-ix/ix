@@ -66,7 +66,12 @@ cat libcxx/CMakeLists.txt \
 
 {% block install %}
 {{super()}}
-cd ${out} && mv include/c++/v1/* include/
+cd ${out}
+
+mv include/c++/v1/* include/
+
+# remove broken ranges implementation
+rm include/ranges
 {% endblock %}
 
 {% block test_lib %}
