@@ -1,8 +1,8 @@
 {% extends '//mix/template/make.sh' %}
 
 {% block fetch %}
-https://github.com/aristocratos/btop/archive/refs/tags/v1.1.3.tar.gz
-36de5aa034c4d10941dbbce0ccf85cca
+https://github.com/aristocratos/btop/archive/3cc19a511c24dcbb43e406ef44c8e153f3522099.zip
+48d0d3cff18fbe658409cfe6f5ad4b12
 {% endblock %}
 
 {% block bld_libs %}
