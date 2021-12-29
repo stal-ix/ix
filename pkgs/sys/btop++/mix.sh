@@ -6,7 +6,9 @@ https://github.com/aristocratos/btop/archive/3cc19a511c24dcbb43e406ef44c8e153f35
 {% endblock %}
 
 {% block bld_libs %}
-sys/btop++/libs
+lib/c
+lib/c++
+lib/range/v3
 {% endblock %}
 
 {% block make_flags %}

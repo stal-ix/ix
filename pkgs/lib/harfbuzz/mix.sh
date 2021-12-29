@@ -1,8 +1,8 @@
 {% extends '//mix/template/meson.sh' %}
 
 {% block fetch %}
-https://github.com/harfbuzz/harfbuzz/archive/refs/tags/3.1.1.tar.gz
-6d0a0359efda30ec8e5611f9006120b7
+https://github.com/harfbuzz/harfbuzz/archive/refs/tags/3.2.0.tar.gz
+148168f3e8d3bb5b4ec1a13a50bb9155
 {% endblock %}
 
 {% block lib_deps %}
@@ -21,6 +21,7 @@ lib/cairo
 {% endblock %}
 
 {% block bld_tool %}
+lib/glib/mix.sh
 dev/tool/ragel/6
 {% endblock %}
 
@@ -29,7 +30,7 @@ dev/tool/ragel/6
 -Dcoretext=enabled
 {% endif %}
 -Dglib=enabled
--Dgobject=disabled
+-Dgobject=enabled
 -Dtests=disabled
 -Dcairo=enabled
 {% endblock %}

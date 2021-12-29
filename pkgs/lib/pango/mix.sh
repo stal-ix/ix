@@ -1,8 +1,8 @@
 {% extends '//mix/template/meson.sh' %}
 
 {% block fetch %}
-https://download.gnome.org/sources/pango/1.49/pango-1.49.4.tar.xz
-190bd00327ba5cff928ca06f13756d4f
+https://download.gnome.org/sources/pango/1.50/pango-1.50.3.tar.xz
+4a3a10fff421abcf3af4af66991dd622
 {% endblock %}
 
 {% block lib_deps %}
