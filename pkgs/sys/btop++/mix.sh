@@ -10,7 +10,6 @@ sys/btop++/libs
 {% endblock %}
 
 {% block make_flags %}
-CXX=clang++
 OPTFLAGS=
 {% endblock %}
 
