@@ -9,3 +9,11 @@ https://www.jedsoft.org/releases/most/most-5.1.0.tar.gz
 lib/c
 lib/slang
 {% endblock %}
+
+{% block patch %}
+sed -e 's|-ltermcap||g' -i configure
+{% endblock %}
+
+{% block setup %}
+export CPPFLAGS="-iquote ${PWD}/src ${CPPFLAGS}"
+{% endblock %}
