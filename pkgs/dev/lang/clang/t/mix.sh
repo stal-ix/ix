@@ -41,10 +41,14 @@ dsymutil
 
 llvm-ar
 llvm-as
+llvm-nm
+llvm-ranlib
+
 llvm-install-name-tool
 llvm-libtool-darwin
 llvm-lipo
-llvm-nm
+
+llvm-strip
 llvm-objcopy
 llvm-objdump
 {% endset %}

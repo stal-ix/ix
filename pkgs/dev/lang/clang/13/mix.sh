@@ -6,10 +6,6 @@
 mkdir ${out}/share
 mv ${out}/lib/clang/13*/include ${out}/share/
 rm -rf ${out}/libexec
-
-cd ${out}/bin
-
-ln -s llvm-ar llvm-ranlib
 {% endblock %}
 
 {% block env %}

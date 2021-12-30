@@ -15,7 +15,7 @@ box/boot
 {% endblock %}
 
 {% block setup_tools %}
-ln -s $(which llvm-objcopy) strip
+ln -s $(which llvm-strip) strip
 {% endblock %}
 
 {% block setup %}

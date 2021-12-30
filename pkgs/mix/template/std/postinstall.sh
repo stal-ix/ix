@@ -11,13 +11,13 @@ rm -rf ${out}/lib ${out}/include
 
 {% block strip_bin %}
 if command -v which; then
-    if which llvm-objcopy; then
+    if which llvm-strip; then
         find ${out}/bin/ | while read l; do
             if test -f ${l}; then
                 if test -h ${l}; then
                     echo "skip symlink ${l}"
                 else
-                    llvm-objcopy -S ${l} || true
+                    llvm-strip -S ${l} || true
                 fi
             fi
         done
