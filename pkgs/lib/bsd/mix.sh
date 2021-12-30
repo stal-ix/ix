@@ -6,11 +6,11 @@ ec16d126e5f72362d57e0161460fce5e
 {% endblock %}
 
 {% block lib_deps %}
+lib/c
 lib/md
 {% endblock %}
 
 {% block bld_libs %}
-lib/c
 lib/linux
 {% endblock %}
 
@@ -19,5 +19,5 @@ reallocarray
 {% endblock %}
 
 {% block setup %}
-export CPPFLAGS="-I.. -isystem ../include/bsd/ ${CPPFLAGS}"
+export CPPFLAGS="-I.. -isystem ../include/bsd ${CPPFLAGS}"
 {% endblock %}

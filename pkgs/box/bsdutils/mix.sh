@@ -6,7 +6,6 @@ f3a640fd2b0939d0c17a2eb17801919c
 {% endblock %}
 
 {% block bld_libs %}
-lib/c
 box/bsdutils/libs(openssl=1)
 {% endblock %}
 

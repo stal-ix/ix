@@ -9,3 +9,7 @@ https://www.x.org/pub/individual/util/util-macros-1.19.3.tar.bz2
 dev/build/auto/conf/2/69
 dev/build/auto/make/1/16
 {% endblock %}
+
+{% block strip_pc %}
+: actually need it
+{% endblock %}

@@ -7,10 +7,6 @@ bf9d0d324ecbd350d0e9308125fa4ce0
 
 {% block lib_deps %}
 lib/c
-{% if target.os == 'darwin' %}
-lib/darwin/framework/ApplicationServices
-lib/darwin/framework/CoreGraphics
-{% endif %}
 lib/png
 lib/lzo
 lib/glib
@@ -18,6 +14,11 @@ lib/pixman
 lib/opengl
 lib/freetype
 lib/fontconfig
+
+{% if target.os == 'darwin' %}
+lib/darwin/framework/ApplicationServices
+lib/darwin/framework/CoreGraphics
+{% endif %}
 {% endblock %}
 
 {% block configure_flags %}

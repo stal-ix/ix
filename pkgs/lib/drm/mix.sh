@@ -9,10 +9,10 @@ https://dri.freedesktop.org/libdrm/libdrm-2.4.109.tar.xz
 lib/c
 lib/linux
 lib/atomicops
+lib/pciaccess
 {% endblock %}
 
 {% block meson_flags %}
--Dintel=false
 -Dvalgrind=false
 -Dudev=true
 {% endblock %}

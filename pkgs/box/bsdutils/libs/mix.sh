@@ -2,14 +2,15 @@
 
 {% block lib_deps %}
 {% if target.os == 'linux' %}
-lib/linux
 lib/fts
+lib/linux
 lib/rpmatch
 {% endif %}
+
 lib/c
-lib/c++
 lib/xo
+lib/c++
 lib/edit
-lib/openssl
 lib/curses
+lib/openssl
 {% endblock %}

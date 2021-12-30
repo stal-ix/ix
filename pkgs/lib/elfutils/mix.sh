@@ -6,17 +6,17 @@ https://sourceware.org/elfutils/ftp/0.186/elfutils-0.186.tar.bz2
 {% endblock %}
 
 {% block lib_deps %}
-lib/fts
-lib/obstack
+lib/c
 lib/z
-lib/bzip2
 lib/xz
+lib/fts
 lib/zstd
 lib/intl
+lib/bzip2
+lib/obstack
 {% endblock %}
 
 {% block bld_libs %}
-lib/c
 lib/argp/standalone
 {% endblock %}
 

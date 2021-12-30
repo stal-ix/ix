@@ -6,6 +6,7 @@ https://github.com/v8/v8/archive/refs/tags/9.7.37.tar.gz
 {% endblock %}
 
 {% block lib_deps %}
+lib/c
 lib/c++
 {% endblock %}
 
