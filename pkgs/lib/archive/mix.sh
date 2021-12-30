@@ -18,6 +18,7 @@ lib/expat
 {% endblock %}
 
 {% block bld_tool %}
+lib/magic/mix.sh
 dev/build/auto/conf/2/69
 dev/build/auto/make/1/16
 {% endblock %}

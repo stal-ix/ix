@@ -1,4 +1,4 @@
-{% extends '//mix/template/meson.sh' %}
+{% extends '//mix/template/autohell.sh' %}
 
 {% block fetch %}
 https://cairographics.org/snapshots/cairo-1.17.4.tar.xz
@@ -20,12 +20,19 @@ lib/freetype
 lib/fontconfig
 {% endblock %}
 
+{% block bld_tool %}
+dev/build/auto/conf/2/69
+dev/build/auto/make/1/16
+{% endblock %}
+
 {% block configure_flags %}
--Dfontconfig=enabled
--Dfreetype=enabled
--Dglesv2=enabled
--Dglesv3=enabled
--Dgl-backend=auto
+--help
+--enable-ft=yes
+--enable-fc=yes
+--enable-trace=no
+--enable-egl=auto
+--enable-glesv2=auto
+--enable-gobject=yes
 {% endblock %}
 
 {% block c_rename_symbol %}
@@ -39,11 +46,5 @@ getopt_long_only
 {% endblock %}
 
 {% block setup %}
-export CPPFLAGS="-w ${CPPFLAGS}"
-{% endblock %}
-
-{% block patch %}
-cat meson.build \
-    | grep -v 'conf.*set.*CAIRO_HAS_TRACE' \
-    > _ && mv _ meson.build
+export ax_cv_c_float_words_bigendian=no
 {% endblock %}

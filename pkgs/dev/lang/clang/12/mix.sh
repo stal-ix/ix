@@ -16,8 +16,4 @@ export CLANG_VERSION=12.0.1
 mkdir ${out}/share
 mv ${out}/lib/clang/12*/include ${out}/share/
 rm -rf ${out}/libexec
-
-cd ${out}/bin
-
-ln -s llvm-ar llvm-ranlib
 {% endblock %}

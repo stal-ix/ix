@@ -9,5 +9,5 @@ gnu/box
 {% block decompressor %}
 tool/pv
 tool/compress/unzip
-lib/archive(opt=O2;ICF;LTO)
+lib/archive(opt=fast)
 {% endblock %}
