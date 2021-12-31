@@ -16,7 +16,7 @@ lib/oniguruma
 {% endblock %}
 
 {% block run_data %}
-lib/curses/n
+lib/curses/n/terminfo
 {% endblock %}
 
 {% block setup_tools %}
