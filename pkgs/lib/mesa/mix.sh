@@ -1,59 +1,24 @@
-{% extends '//mix/template/meson.sh' %}
+{% extends '//lib/mesa/t/mix.sh' %}
 
-{% block fetch %}
-https://archive.mesa3d.org//mesa-21.3.1.tar.xz
-d6efe1ecc0680cd1adb942f05600d884
-{% endblock %}
-
-{% block lib_deps %}
-lib/c
-lib/z
-lib/drm
-lib/zstd
-#lib/llvm
-lib/expat
-lib/wayland
-lib/elfutils
-lib/vulkan/loader
-lib/vulkan/headers
-{% endblock %}
-
-{% block bld_libs %}
-pypi/Mako
+{% block run_data %}
+lib/mesa/data
 {% endblock %}
 
 {% block bld_tool %}
-dev/lang/flex
-dev/lang/bison/3/8
-dev/build/make
-lib/wayland/protocols
+{{super()}}
+dev/tool/scripts
 {% endblock %}
 
 {% block meson_flags %}
--Ddri-drivers=
--Dvulkan-drivers=amd
--Dgallium-drivers=zink
-
--Dvalgrind=disabled
--Dlibunwind=disabled
-
--Dplatforms=wayland
--Degl-native-platform=wayland
-
--Degl=enabled
--Dglx=disabled
--Dgles2=enabled
--Dopengl=true
--Dgallium-nine=false
-
+{{super()}}
 {% if kind == 'bin' %}
 -Dtools=glsl
 {% endif %}
+{% endblock %}
 
--Dcpp_rtti=false
--Dshader-cache=disabled
--Dllvm=disabled
--Dshared-llvm=disabled
+{% block configure %}
+{{super()}}
+python3 $(which reparent.py) ${out} ${MESA_DATA} ${tmp}
 {% endblock %}
 
 {% block c_rename_symbol %}

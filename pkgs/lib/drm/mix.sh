@@ -1,18 +1,15 @@
-{% extends '//mix/template/meson.sh' %}
+{% extends '//lib/drm/t/mix.sh' %}
 
-{% block fetch %}
-https://dri.freedesktop.org/libdrm/libdrm-2.4.109.tar.xz
-376523fcbba8b9e194bcb5adff142d5d
+{% block run_data %}
+lib/drm/data
 {% endblock %}
 
-{% block lib_deps %}
-lib/c
-lib/linux
-lib/atomicops
-lib/pciaccess
+{% block bld_tool %}
+{{super()}}
+dev/tool/scripts
 {% endblock %}
 
-{% block meson_flags %}
--Dvalgrind=false
--Dudev=true
+{% block configure %}
+{{super()}}
+python3 $(which reparent.py) ${out} ${DRM_DATA} ${tmp}
 {% endblock %}

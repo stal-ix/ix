@@ -51,7 +51,12 @@ export PKG_CONFIG_LIBDIR=${out}/lib/pkg-config
 
 {% block install %}
 {{super()}}
-cd ${out}/lib && (for i in `ls *.a`; do q=`echo $i | tr -d 'w'`; ln -s $i $q; done)
+
+cd ${out}/lib
+
+for i in *.a; do
+    ln -s ${i} $(echo ${i} | tr -d 'w')
+done
 {% endblock %}
 
 {% block env %}
