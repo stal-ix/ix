@@ -18,7 +18,7 @@ dev/tool/scripts
 
 {% block configure %}
 {{super()}}
-python3 $(which reparent.py) ${MESA_DATA}
+python3 $(which fix_data_dir.py) ${MESA_DATA}
 {% endblock %}
 
 {% block c_rename_symbol %}

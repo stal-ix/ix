@@ -7,7 +7,7 @@ dev/tool/python
 {% block install %}
 mkdir ${out}/bin
 
-base64 -d << EOF > ${out}/bin/reparent.py
-{% include 'reparent.py/base64' %}
+base64 -d << EOF > ${out}/bin/fix_data_dir.py
+{% include 'fix_data_dir.py/base64' %}
 EOF
 {% endblock %}
