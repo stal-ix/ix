@@ -6,20 +6,16 @@ bb73dd817634018cb45f91647948fb2e
 {% endblock %}
 
 {% block lib_deps %}
+lib/c
 lib/z
-lib/pcre
-lib/iconv
 lib/ffi
 lib/intl
+lib/pcre
+lib/iconv
 {% if target.os == 'darwin' %}
 lib/darwin/framework/CoreServices
 lib/darwin/framework/Foundation
 {% endif %}
-{% endblock %}
-
-{% block bld_libs %}
-lib/c
-lib/c++
 {% endblock %}
 
 {% block std_box %}
@@ -31,7 +27,6 @@ box/boot
 {% endblock %}
 
 {% block setup %}
-export CXXFLAGS=
 export CPPFLAGS="-D_GNU_SOURCE=1 -I${PWD}/inc ${CPPFLAGS}"
 {% endblock %}
 
