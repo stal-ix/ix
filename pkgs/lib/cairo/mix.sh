@@ -21,7 +21,7 @@ lib/darwin/framework/CoreGraphics
 {% endif %}
 {% endblock %}
 
-{% block configure_flags %}
+{% block meson_flags %}
 -Dfontconfig=enabled
 -Dfreetype=enabled
 -Dglesv2=enabled

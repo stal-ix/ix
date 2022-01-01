@@ -1,8 +1,8 @@
 {% extends '//mix/template/meson.sh' %}
 
 {% block fetch %}
-https://archive.mesa3d.org//mesa-21.3.1.tar.xz
-d6efe1ecc0680cd1adb942f05600d884
+https://archive.mesa3d.org/mesa-21.3.3.tar.xz
+9363a365fc8fbf8c34fa3ceb1151f547
 {% endblock %}
 
 {% block lib_deps %}

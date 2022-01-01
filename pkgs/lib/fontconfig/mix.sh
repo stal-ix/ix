@@ -11,7 +11,7 @@ dev/tool/scripts
 
 {% block configure %}
 {{super()}}
-python3 $(which reparent.py) ${out} ${FONTCONFIG_DATA} ${tmp}
+python3 $(which reparent.py) ${FONTCONFIG_DATA}
 {% endblock %}
 
 {% block install %}

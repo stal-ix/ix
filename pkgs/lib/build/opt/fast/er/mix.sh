@@ -2,6 +2,6 @@
 
 {% block lib_deps %}
 lib/build/opt/O3
-lib/build/opt/LTO
 lib/build/opt/ICF
+lib/build/opt/LTO/FAT
 {% endblock %}

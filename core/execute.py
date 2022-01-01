@@ -132,8 +132,11 @@ class Executor:
         self.l = []
         self.f = set()
 
-    async def visit_all(self, l):
+    async def visit_lst(self, l):
         await gather(self.visit_node(self.o[n]) for n in l)
+
+    async def visit_all(self, l):
+        await self.visit_lst(l)
 
         for x in self.l:
             await x
@@ -164,7 +167,7 @@ class Executor:
             if await asyncio.to_thread(self.load, n):
                 return
 
-        await gather(self.visit_node(self.o[x]) for x in iter_in(n))
+        await self.visit_lst(iter_in(n))
 
         async with self.s:
             for o in iter_out(n):

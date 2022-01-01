@@ -10,8 +10,8 @@ def it(lst):
     for d in lst:
         yield from it_1(d)
 
-fr = os.path.basename(sys.argv[1])
-to = os.path.basename(sys.argv[2])
+fr = os.path.basename(os.environ['out'])
+to = os.path.basename(sys.argv[1])
 
 def fix(d):
     return d.replace(fr, to)
@@ -27,7 +27,7 @@ def should_fix(p):
 
     return False
 
-for p in it(sys.argv[3:]):
+for p in it([os.environ['tmp']] + sys.argv[2:]):
     if not should_fix(p):
         continue
 

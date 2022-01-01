@@ -11,5 +11,5 @@ dev/tool/scripts
 
 {% block configure %}
 {{super()}}
-python3 $(which reparent.py) ${out} ${DRM_DATA} ${tmp}
+python3 $(which reparent.py) ${DRM_DATA}
 {% endblock %}
