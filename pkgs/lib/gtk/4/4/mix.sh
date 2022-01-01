@@ -29,5 +29,4 @@ lib/wayland/protocols
 -Dx11-backend=false
 -Dmedia-ffmpeg=disabled
 -Dmedia-gstreamer=disabled
--Dintrospection=disabled
 {% endblock %}
