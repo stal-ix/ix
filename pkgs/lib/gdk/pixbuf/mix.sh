@@ -18,10 +18,10 @@ lib/glib
 {% endblock %}
 
 {% block meson_flags %}
--Dbuiltin_loaders=all
--Drelocatable=true
--Dinstalled_tests=false
--Dgio_sniffing=false
+builtin_loaders=all
+relocatable=true
+installed_tests=false
+gio_sniffing=false
 {% endblock %}
 
 {% block install %}

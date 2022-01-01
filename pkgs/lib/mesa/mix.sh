@@ -12,7 +12,7 @@ dev/tool/scripts
 {% block meson_flags %}
 {{super()}}
 {% if kind == 'bin' %}
--Dtools=glsl
+tools=glsl
 {% endif %}
 {% endblock %}
 

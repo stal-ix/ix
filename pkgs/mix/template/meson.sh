@@ -43,23 +43,29 @@ meson
 --libdir="${out}/lib"
 --libexecdir="${out}/bin/exec"
 
--Dprefix="${out}"
--Ddefault_library=static
--Dwerror=false
-
-{% if target.os == 'darwin' %}
--Db_asneeded=false
--Db_lundef=false
-{% endif %}
-
 {% block meson_cross %}
 --cross-file="${tmp}/cross.ini"
 --pkg-config-path="${PC_T}"
 --build.pkg-config-path="${PC_H}"
 {% endblock %}
 
+{% set meson_flags %}
+prefix="${out}"
+default_library=static
+werror=false
+
+{% if target.os == 'darwin' %}
+b_asneeded=false
+b_lundef=false
+{% endif %}
+
 {% block meson_flags %}
 {% endblock %}
+{% endset %}
+
+{% for f in mix.parse_list(meson_flags) %}
+-D{{f}}
+{% endfor %}
 
 {{ninja_build_dir}}
 {% endset %}

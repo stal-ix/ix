@@ -22,11 +22,11 @@ lib/darwin/framework/CoreGraphics
 {% endblock %}
 
 {% block meson_flags %}
--Dfontconfig=enabled
--Dfreetype=enabled
--Dglesv2=enabled
--Dglesv3=enabled
--Dgl-backend=auto
+fontconfig=enabled
+freetype=enabled
+glesv2=enabled
+glesv3=enabled
+gl-backend=auto
 {% endblock %}
 
 {% block c_rename_symbol %}

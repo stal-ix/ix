@@ -27,10 +27,10 @@ dev/tool/ragel/6
 
 {% block meson_flags %}
 {% if target.os == 'darwin' %}
--Dcoretext=enabled
+coretext=enabled
 {% endif %}
--Dglib=enabled
--Dgobject=enabled
--Dtests=disabled
--Dcairo=enabled
+glib=enabled
+gobject=enabled
+tests=disabled
+cairo=enabled
 {% endblock %}

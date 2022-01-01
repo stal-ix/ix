@@ -26,18 +26,18 @@ lib/wayland/protocols
 {% endblock %}
 
 {% block meson_flags %}
--Dlauncher-libseat=true
--Dlauncher-logind=false
+launcher-libseat=true
+launcher-logind=false
 
--Dsystemd=false
--Dxwayland=false
--Dremoting=false
--Dpipewire=false
--Dcolor-management-colord=false
+systemd=false
+xwayland=false
+remoting=false
+pipewire=false
+color-management-colord=false
 
--Dbackend-rdp=false
--Dbackend-x11=false
--Dbackend-drm-screencast-vaapi=false
+backend-rdp=false
+backend-x11=false
+backend-drm-screencast-vaapi=false
 {% endblock %}
 
 {% block c_rename_symbol %}

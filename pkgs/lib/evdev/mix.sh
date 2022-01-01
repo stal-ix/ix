@@ -6,8 +6,8 @@ b09838ec120dabeebc08fa6a1943594f
 {% endblock %}
 
 {% block meson_flags %}
--Dtests=disabled
--Ddocumentation=disabled
+tests=disabled
+documentation=disabled
 {% endblock %}
 
 {% block bld_libs %}

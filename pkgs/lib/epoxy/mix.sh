@@ -11,5 +11,5 @@ lib/mesa
 {% endblock %}
 
 {% block meson_flags %}
--Dx11=false
+x11=false
 {% endblock %}

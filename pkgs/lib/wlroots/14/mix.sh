@@ -22,8 +22,8 @@ lib/wayland/protocols
 {% endblock %}
 
 {% block meson_flags %}
--Dxwayland=disabled
--Drenderers=gles2
+xwayland=disabled
+renderers=gles2
 {% endblock %}
 
 {% block c_rename_symbol %}

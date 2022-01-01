@@ -28,8 +28,8 @@ lib/wayland
 {% endif %}
 
 {% block meson_flags %}
--Ddocumentation=false
--Dtests=false
+documentation=false
+tests=false
 {% endblock %}
 
 {% block install %}

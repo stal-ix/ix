@@ -31,8 +31,8 @@ export CPPFLAGS="-D_GNU_SOURCE=1 -I${PWD}/inc ${CPPFLAGS}"
 {% endblock %}
 
 {% block meson_flags %}
--Diconv=external
--Dtests=false
+iconv=external
+tests=false
 {% endblock %}
 
 {% block install %}

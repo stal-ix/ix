@@ -12,7 +12,7 @@ def fix1(d, n):
         inf = False
 
         for l in d.split('\n'):
-            if 'block cmake_flags' in l:
+            if 'block meson_flags' in l:
                 inf = True
             elif inf:
                 if 'endblock' in l:
@@ -48,7 +48,7 @@ for a, b, c in os.walk('.'):
                 d = f.read()
 
             try:
-                dd = fix(d, p)
+                dd = fix1(d, p)
             except Exception as e:
                 print(f'skip {p}, {e}')
                 dd = None

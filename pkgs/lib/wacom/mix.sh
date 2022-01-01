@@ -11,5 +11,5 @@ lib/udev/g
 {% endblock %}
 
 {% block meson_flags %}
--Dtests=disabled
+tests=disabled
 {% endblock %}

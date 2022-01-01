@@ -13,6 +13,6 @@ lib/pciaccess
 {% endblock %}
 
 {% block meson_flags %}
--Dvalgrind=false
--Dudev=true
+valgrind=false
+udev=true
 {% endblock %}

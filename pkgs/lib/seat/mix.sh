@@ -18,5 +18,5 @@ export CPPFLAGS="-w ${CPPFLAGS}"
 {% endblock %}
 
 {% block meson_flags %}
--Dlibseat-builtin=enabled
+libseat-builtin=enabled
 {% endblock %}

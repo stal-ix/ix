@@ -6,8 +6,8 @@ https://github.com/fribidi/fribidi/archive/refs/tags/v1.0.11.tar.gz
 {% endblock %}
 
 {% block meson_flags %}
--Ddocs=false
--Dtests=false
+docs=false
+tests=false
 {% endblock %}
 
 {% block lib_deps %}

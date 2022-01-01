@@ -22,9 +22,9 @@ lib/xkbcommon/config
 {% endblock %}
 
 {% block meson_flags %}
--Denable-x11=false
--Denable-docs=false
--Dxkb-config-root=${XKB_CONFIG}
+enable-x11=false
+enable-docs=false
+xkb-config-root=${XKB_CONFIG}
 {% endblock %}
 
 {% block c_rename_symbol %}

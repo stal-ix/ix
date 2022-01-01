@@ -26,7 +26,7 @@ lib/wayland/protocols
 {% endblock %}
 
 {% block meson_flags %}
--Dx11-backend=false
--Dmedia-ffmpeg=disabled
--Dmedia-gstreamer=disabled
+x11-backend=false
+media-ffmpeg=disabled
+media-gstreamer=disabled
 {% endblock %}

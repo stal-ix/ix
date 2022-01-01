@@ -21,5 +21,5 @@ json_object_equal
 {% endblock %}
 
 {% block meson_flags %}
--Dtests=false
+tests=false
 {% endblock %}

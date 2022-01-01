@@ -30,24 +30,24 @@ lib/wayland/protocols
 {% endblock %}
 
 {% block meson_flags %}
--Ddri-drivers=
--Dvulkan-drivers=amd
--Dgallium-drivers=zink
+dri-drivers=
+vulkan-drivers=amd
+gallium-drivers=zink
 
--Dvalgrind=disabled
--Dlibunwind=disabled
+valgrind=disabled
+libunwind=disabled
 
--Dplatforms=wayland
--Degl-native-platform=wayland
+platforms=wayland
+egl-native-platform=wayland
 
--Degl=enabled
--Dglx=disabled
--Dgles2=enabled
--Dopengl=true
--Dgallium-nine=false
+egl=enabled
+glx=disabled
+gles2=enabled
+opengl=true
+gallium-nine=false
 
--Dcpp_rtti=false
--Dshader-cache=disabled
--Dllvm=disabled
--Dshared-llvm=disabled
+cpp_rtti=false
+shader-cache=disabled
+llvm=disabled
+shared-llvm=disabled
 {% endblock %}

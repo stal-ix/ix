@@ -18,8 +18,8 @@ lib/evdev
 {% endblock %}
 
 {% block meson_flags %}
--Ddebug-gui=false
--Dtests=false
+debug-gui=false
+tests=false
 {% endblock %}
 
 {% block setup %}
