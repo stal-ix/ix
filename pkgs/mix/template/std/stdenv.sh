@@ -1,5 +1,5 @@
 {% block shell %}
-dev/tool/dash
+dev/tool/dash(opt=fast)
 {% endblock %}
 
 {% block box %}
