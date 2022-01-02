@@ -18,6 +18,7 @@ dev/tool/python
 
 {% block setup %}
 {{super()}}
+export ax_cv_c_float_words_bigendian=no
 export CPPFLAGS="-DCONFIG_64=1 -DSQLITE_OMIT_LOAD_EXTENSION=1 -DHAVE_NDBM_H=1 -DUSE_NDBM=1 ${CPPFLAGS}"
 {% endblock %}
 
