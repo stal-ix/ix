@@ -22,3 +22,7 @@ export ac_cv_have_decl___builtin_ffs=yes
 {% block env %}
 export COFLAGS="--with-isl=${out} \${COFLAGS}"
 {% endblock %}
+
+{% block strip_pc %}
+echo 'TODO(pg): check it properly'
+{% endblock %}

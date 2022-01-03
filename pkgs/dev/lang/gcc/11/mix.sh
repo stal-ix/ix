@@ -16,18 +16,17 @@ lib/intl
 lib/mpfr
 {% endblock %}
 
+{% set t %}{{target.gnu.three}}{% endset %}
+{% set f %}{{for_target or target.gnu.three}}{% endset %}
+
 {% block bld_tool %}
 gnu/tar
 dev/lang/flex
 dev/doc/texinfo
 dev/lang/bison/3/8
 tool/compress/gzip
-dev/lang/binutils(for_target={{host.gnu.three}},bin_prefix=host)
-dev/lang/binutils(for_target={{target.gnu.three}},bin_prefix=target)
-{% endblock %}
-
-{% block run_deps %}
-dev/lang/gcc/env
+dev/lang/binutils(for_target={{t}},bin_prefix={{t}})
+dev/lang/binutils(for_target={{f}},bin_prefix={{f}})
 {% endblock %}
 
 {% block configure_flags %}
@@ -55,28 +54,33 @@ dev/lang/gcc/env
 export CPPFLAGS="-w ${CPPFLAGS}"
 export acx_cv_cc_gcc_supports_ada=no
 
+export AR={{t}}ar
+export AS={{t}}as
+export LD={{t}}ld
+export NM={{t}}nm
+export OBJCOPY={{t}}objcopy
+export OBJDUMP={{t}}objdump
+export RANLIB={{t}}ranlib
+export READELF={{t}}readelf
+export STRIP={{t}}strip
+
+export AR_FOR_TARGET={{f}}ar
+export AS_FOR_TARGET={{f}}as
+export LD_FOR_TARGET={{f}}ld
+export NM_FOR_TARGET={{f}}nm
+export OBJCOPY_FOR_TARGET={{f}}objcopy
+export OBJDUMP_FOR_TARGET={{f}}objdump
+export RANLIB_FOR_TARGET={{f}}ranlib
+export READELF_FOR_TARGET={{f}}readelf
+export STRIP_FOR_TARGET={{f}}strip
+{% endblock %}
+
+{% block setup_compiler %}
+{{super()}}
+
+# TODO(pg): provide real for-target compiler
 export CC_FOR_TARGET=${CC}
 export CXX_FOR_TARGET=${CXX}
-
-export AR=hostar
-export AS=hostas
-export LD=hostld
-export NM=hostnm
-export OBJCOPY=hostobjcopy
-export OBJDUMP=hostobjdump
-export RANLIB=hostranlib
-export READELF=hostreadelf
-export STRIP=hoststrip
-
-export AR_FOR_TARGET=targetar
-export AS_FOR_TARGET=targetas
-export LD_FOR_TARGET=targetld
-export NM_FOR_TARGET=targetnm
-export OBJCOPY_FOR_TARGET=targetobjcopy
-export OBJDUMP_FOR_TARGET=targetobjdump
-export RANLIB_FOR_TARGET=targetranlib
-export READELF_FOR_TARGET=targetreadelf
-export STRIP_FOR_TARGET=targetstrip
 {% endblock %}
 
 {% block postinstall %}
