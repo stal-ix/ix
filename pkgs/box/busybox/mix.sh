@@ -1,4 +1,4 @@
-{% extends '//mix/template/c_std.sh' %}
+{% extends '//mix/template/make.sh' %}
 
 {% block fetch %}
 https://busybox.net/downloads/busybox-1.35.0.tar.bz2
@@ -10,8 +10,14 @@ lib/c
 lib/linux
 {% endblock %}
 
-{% block std_box %}
-box/boot
+{% block host_libs %}
+lib/c
+lib/curses
+{% endblock %}
+
+{% block bld_tool %}
+lib/bzip2
+dev/tool/perl
 {% endblock %}
 
 {% block setup_tools %}
@@ -23,11 +29,15 @@ export CFLAGS="-w ${CFLAGS}"
 {% endblock %}
 
 {% block configure %}
-make defconfig
+make HOSTCC=${HOST_CC} defconfig
+{% endblock %}
+
+{% block make_flags %}
+HOSTCC=${HOST_CC}
 {% endblock %}
 
 {% block install %}
-make install
+{{super()}}
 
 mkdir ${out}/bin
 mv _install/bin/busybox ${out}/bin/

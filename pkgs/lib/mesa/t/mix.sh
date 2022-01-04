@@ -2,7 +2,7 @@
 
 {% block fetch %}
 https://archive.mesa3d.org/mesa-21.3.3.tar.xz
-9363a365fc8fbf8c34fa3ceb1151f547
+sha:ad7f4613ea7c5d08d9fcb5025270199e6ceb9aa99fd72ee572b70342240a8121
 {% endblock %}
 
 {% block lib_deps %}

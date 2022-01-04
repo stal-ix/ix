@@ -1,7 +1,0 @@
-config KERNEL_HEADERS
-	string
-	default ${lib_linux}/include
-
-config HAVE_SHARED
-	bool
-	default n
