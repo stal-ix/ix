@@ -6,11 +6,19 @@ lib/curses
 {% endblock %}
 
 {% block configure %}
+cat << EOF > .config
+{% block kconfig_flags %}
+{% endblock %}
+EOF
+
 {% set make_cmd %}
 {{make_cmd_args}}
+
+{% block kconfig_target %}
 defconfig
+{% endblock %}
 {% endset %}
-set -x
+
 {{mix.fix_list(make_cmd)}}
 {% endblock %}
 

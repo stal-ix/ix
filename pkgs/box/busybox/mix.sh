@@ -29,7 +29,7 @@ busybox.links
 mkdir ${out}/bin
 mv busybox ${out}/bin/
 
-cat busybox.links | while read l; do
-    (cd ${out}/bin; ln -s busybox $(basename ${l}))
-done
+cat busybox.links | (cd ${out}/bin; while read l; do
+    ln -s busybox $(basename ${l})
+done)
 {% endblock %}

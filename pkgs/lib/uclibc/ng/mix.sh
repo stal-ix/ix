@@ -7,9 +7,6 @@ ceeb95430ec00cc6f8006f746605be1d
 
 {% block lib_deps %}
 lib/build
-{% endblock %}
-
-{% block bld_libs %}
 lib/linux
 {% endblock %}
 
@@ -22,17 +19,21 @@ dev/lang/gcc/tc(for_target={{host.gnu.three}})
 dev/lang/gcc/tc(for_target={{target.gnu.three}})
 {% endblock %}
 
-{% block patch %}
-cat << EOF >> extra/Configs/defconfigs/x86_64/defconfig
+{% block kconfig_flags %}
 KERNEL_HEADERS="${lib_linux}/include"
 RUNTIME_PREFIX="/"
 DEVEL_PREFIX="/"
 {% include 'cfg' %}
-EOF
+{% endblock %}
 
+{% block patch %}
 base64 -d << EOF > extra/scripts/gen_bits_syscall_h.sh
 {% include 'gen.sh/base64' %}
 EOF
+{% endblock %}
+
+{% block kconfig_target %}
+olddefconfig
 {% endblock %}
 
 {% block setup %}
@@ -60,4 +61,5 @@ ranlib *.a
 {% block env %}
 export CPPFLAGS="-fno-pic -fno-pie -isystem ${out}/include \${CPPFLAGS}"
 export LDFLAGS="-static \${LDFLAGS}"
+export CMFLAGS="-DLIBCXX_ENABLE_LOCALIZATION=OFF \${CMFLAGS}"
 {% endblock %}
