@@ -15,22 +15,21 @@ lib/bzip2
 dev/tool/perl
 {% endblock %}
 
-{% block setup_tools %}
-ln -s $(which llvm-strip) strip
-{% endblock %}
-
 {% block setup %}
+export SKIP_STRIP=y
 export CFLAGS="-w ${CFLAGS}"
 {% endblock %}
 
+{% block make_target %}
+busybox
+busybox.links
+{% endblock %}
+
 {% block install %}
-{{super()}}
-
 mkdir ${out}/bin
-mv _install/bin/busybox ${out}/bin/
-cd ${out}/bin
+mv busybox ${out}/bin/
 
-./busybox --list-full | while read l; do
-    ln -s busybox $(echo ${l} | sed -e 's/.*\///')
+cat busybox.links | while read l; do
+    (cd ${out}/bin; ln -s busybox $(basename ${l}))
 done
 {% endblock %}
