@@ -1,4 +1,4 @@
-{% extends '//mix/template/make.sh' %}
+{% extends '//mix/template/kconfig.sh' %}
 
 {% block fetch %}
 https://github.com/landley/toybox/archive/refs/tags/0.8.5.tar.gz
@@ -10,16 +10,8 @@ lib/c
 lib/linux
 {% endblock %}
 
-{% block std_box %}
-box/boot
-{% endblock %}
-
 {% block setup %}
 export NOSTRIP=yes
-{% endblock %}
-
-{% block configure %}
-make defconfig
 {% endblock %}
 
 {% block install %}

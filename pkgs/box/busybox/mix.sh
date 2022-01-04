@@ -1,4 +1,4 @@
-{% extends '//mix/template/make.sh' %}
+{% extends '//mix/template/kconfig.sh' %}
 
 {% block fetch %}
 https://busybox.net/downloads/busybox-1.35.0.tar.bz2
@@ -8,11 +8,6 @@ https://busybox.net/downloads/busybox-1.35.0.tar.bz2
 {% block bld_libs %}
 lib/c
 lib/linux
-{% endblock %}
-
-{% block host_libs %}
-lib/c
-lib/curses
 {% endblock %}
 
 {% block bld_tool %}
@@ -26,14 +21,6 @@ ln -s $(which llvm-strip) strip
 
 {% block setup %}
 export CFLAGS="-w ${CFLAGS}"
-{% endblock %}
-
-{% block configure %}
-make HOSTCC=${HOST_CC} defconfig
-{% endblock %}
-
-{% block make_flags %}
-HOSTCC=${HOST_CC}
 {% endblock %}
 
 {% block install %}

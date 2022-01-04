@@ -1,4 +1,4 @@
-{% extends '//mix/template/make.sh' %}
+{% extends '//mix/template/kconfig.sh' %}
 
 {% block fetch %}
 https://downloads.uclibc-ng.org/releases/1.0.39/uClibc-ng-1.0.39.tar.xz
@@ -11,11 +11,6 @@ lib/build
 
 {% block bld_libs %}
 lib/linux
-{% endblock %}
-
-{% block host_libs %}
-lib/c
-lib/curses
 {% endblock %}
 
 {% block bld_tool %}
@@ -81,14 +76,6 @@ EOF
 base64 -d << EOF > extra/scripts/gen_bits_syscall_h.sh
 {% include 'gen.sh/base64' %}
 EOF
-{% endblock %}
-
-{% block configure %}
-make HOSTCC=${HOST_CC} defconfig
-{% endblock %}
-
-{% block make_flags %}
-HOSTCC=${HOST_CC}
 {% endblock %}
 
 {% block setup %}
