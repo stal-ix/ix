@@ -6,6 +6,7 @@ sem:ab1c8977e63bf57bc67e5637cf83a1c9
 {% endblock %}
 
 {% block bld_libs %}
+lib/c
 lib/c++
 {% endblock %}
 

@@ -49,13 +49,18 @@ def semantic_checksum(path):
 
     with tarfile.open(path) as tf:
         for rec in tf.getmembers():
+            try:
+                m = md5(read_rec(tf.extractfile(rec)))
+            except KeyError:
+                m = 'key error'
+
             v = [
                 rec.name,
                 rec.size,
                 rec.mode,
                 str(rec.type),
                 rec.linkname,
-                md5(read_rec(tf.extractfile(rec))),
+                m,
             ]
 
             r.append(struct_md5(v))
@@ -143,7 +148,7 @@ def cli_misc_chksum(ctx):
 
     res = chksum(path, kind)
 
-    print(f'{kind}:{res} -> {path}')
+    print(f'{kind}:{res}')
 
 
 def cli_misc_unzip(ctx):
