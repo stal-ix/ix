@@ -14,13 +14,6 @@ lib/linux
 export NOSTRIP=yes
 {% endblock %}
 
-{% block install %}
-{{super()}}
-
-cd ${out}
-
-mv sbin/* bin/
-mv usr/bin/* bin/
-mv usr/sbin/* bin/
-rm -rf usr sbin
+{% block make_install_target %}
+install_flat
 {% endblock %}
