@@ -1,4 +1,4 @@
-{% extends '//lib/musl/template/mix.sh' %}
+{% extends '//lib/musl/t/mix.sh' %}
 
 {% block bld_libs %}
 {% endblock %}
