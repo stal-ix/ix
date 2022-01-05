@@ -1,0 +1,1257 @@
+execve("/home/pg/mix/realm/stable/bin/nvim", ["nvim"], 0x7fff5293dd88 /* 47 vars */) = 0
+arch_prctl(ARCH_SET_FS, 0x8c39a0)       = 0
+set_tid_address(0x8c3908)               = 38912
+gettid()                                = 38912
+gettid()                                = 38912
+open("/proc/sys/vm/overcommit_memory", O_RDONLY|O_LARGEFILE) = 3
+read(3, "0\n", 128)                     = 2
+close(3)                                = 0
+getrandom("\x12\xfe\xf6\xf5\x1e\xf1\x54\xf7\xb5\x01\x59\xf3\x85\x3d\xf2\x60\x6f\xec\x04\x93\x44\x9f\xba\x20\xca\x53\x78\x6b\xaf\xff\x1c\x60", 32, GRND_NONBLOCK) = 32
+access("/sys/devices/system/node/node1", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+mmap(0x21754000000, 67108864, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x21754000000
+clock_getres(CLOCK_MONOTONIC_COARSE, {tv_sec=0, tv_nsec=1000000}) = 0
+epoll_create1(EPOLL_CLOEXEC)            = 3
+pipe2([4, 5], O_CLOEXEC)                = 0
+write(5, "*", 1)                        = 1
+pipe2([6, 7], O_NONBLOCK|O_CLOEXEC)     = 0
+eventfd2(0, EFD_CLOEXEC|EFD_NONBLOCK)   = 8
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], [], 8) = 0
+read(4, "*", 1)                         = 1
+rt_sigprocmask(SIG_UNBLOCK, [RT_1 RT_2], NULL, 8) = 0
+rt_sigaction(SIGPIPE, {sa_handler=0x4a6ab0, sa_mask=~[RTMIN RT_1 RT_2], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x57b171}, NULL, 8) = 0
+write(5, "*", 1)                        = 1
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], [], 8) = 0
+read(4, "*", 1)                         = 1
+rt_sigaction(SIGHUP, {sa_handler=0x4a6ab0, sa_mask=~[RTMIN RT_1 RT_2], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x57b171}, NULL, 8) = 0
+write(5, "*", 1)                        = 1
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], [], 8) = 0
+read(4, "*", 1)                         = 1
+rt_sigaction(SIGQUIT, {sa_handler=0x4a6ab0, sa_mask=~[RTMIN RT_1 RT_2], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x57b171}, NULL, 8) = 0
+write(5, "*", 1)                        = 1
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], [], 8) = 0
+read(4, "*", 1)                         = 1
+rt_sigaction(SIGTERM, {sa_handler=0x4a6ab0, sa_mask=~[RTMIN RT_1 RT_2], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x57b171}, NULL, 8) = 0
+write(5, "*", 1)                        = 1
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], [], 8) = 0
+read(4, "*", 1)                         = 1
+rt_sigaction(SIGPWR, {sa_handler=0x4a6ab0, sa_mask=~[RTMIN RT_1 RT_2], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x57b171}, NULL, 8) = 0
+write(5, "*", 1)                        = 1
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], [], 8) = 0
+read(4, "*", 1)                         = 1
+rt_sigaction(SIGUSR1, {sa_handler=0x4a6ab0, sa_mask=~[RTMIN RT_1 RT_2], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x57b171}, NULL, 8) = 0
+write(5, "*", 1)                        = 1
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+epoll_create1(EPOLL_CLOEXEC)            = 10
+pipe2([12, 13], O_NONBLOCK|O_CLOEXEC)   = 0
+eventfd2(0, EFD_CLOEXEC|EFD_NONBLOCK)   = 14
+readlink("/proc/self/exe", "/home/pg/mix/store/MLSLNtdEZMGSI"..., 4095) = 59
+getcwd("/home/pg/sources/mix", 4096)    = 21
+chdir("/home/pg/sources/mix")           = 0
+chdir("/home/pg")                       = 0
+getcwd("/home/pg", 1025)                = 9
+chdir("/home/pg/sources/mix")           = 0
+statx(AT_FDCWD, "/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFDIR|0755, stx_size=500, ...}) = 0
+statx(AT_FDCWD, "/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/lib/nvim", AT_STATX_SYNC_AS_STAT, STATX_ALL, 0x7ffc96cf2c40) = -1 ENOENT (Нет такого файла или каталога)
+getuid()                                = 1000
+getuid()                                = 1000
+statx(AT_FDCWD, "/home/pg/.cache/nvim", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFDIR|0700, stx_size=6, ...}) = 0
+open("/home/pg/.cache/nvim/log", O_WRONLY|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 15
+fcntl(15, F_GETFL)                      = 0x8401 (flags O_WRONLY|O_APPEND|O_LARGEFILE)
+ioctl(15, TIOCGWINSZ, 0x7ffc96cf5e68)   = -1 ENOTTY (Неприменимый к данному устройству ioctl)
+close(15)                               = 0
+open("/home/pg/.cache/nvim/log", O_WRONLY|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 15
+fcntl(15, F_GETFL)                      = 0x8401 (flags O_WRONLY|O_APPEND|O_LARGEFILE)
+ioctl(15, TIOCGWINSZ, 0x7ffc96cf5e68)   = -1 ENOTTY (Неприменимый к данному устройству ioctl)
+close(15)                               = 0
+ioctl(0, TIOCGWINSZ, {ws_row=43, ws_col=71, ws_xpixel=0, ws_ypixel=0}) = 0
+ioctl(1, TIOCGWINSZ, 0x7ffc96cf7040)    = -1 ENOTTY (Неприменимый к данному устройству ioctl)
+fstat(1, {st_mode=S_IFREG|0644, st_size=5214, ...}) = 0
+ioctl(2, TIOCGWINSZ, 0x7ffc96cf7040)    = -1 ENOTTY (Неприменимый к данному устройству ioctl)
+fstat(2, {st_mode=S_IFREG|0644, st_size=5394, ...}) = 0
+ioctl(0, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+mmap(NULL, 131072, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_32BIT, -1, 0) = 0x41fc0000
+mmap(NULL, 131072, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_32BIT, -1, 0) = 0x408a2000
+mmap(NULL, 131072, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_32BIT, -1, 0) = 0x40029000
+mmap(NULL, 131072, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_32BIT, -1, 0) = 0x419ad000
+umask(077)                              = 022
+statx(AT_FDCWD, "$TMPDIR", AT_STATX_SYNC_AS_STAT, STATX_ALL, 0x7ffc96cf4880) = -1 ENOENT (Нет такого файла или каталога)
+statx(AT_FDCWD, "/tmp", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_BASIC_STATS|STATX_MNT_ID, stx_attributes=STATX_ATTR_MOUNT_ROOT, stx_mode=S_IFDIR|S_ISVTX|0777, stx_size=580, ...}) = 0
+mkdir("/tmp/nvimgmnCOO", 0700)          = 0
+umask(022)                              = 077
+open("/dev/null", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 15
+fcntl(15, F_SETFD, FD_CLOEXEC)          = 0
+socket(AF_UNIX, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 16
+bind(16, {sa_family=AF_UNIX, sun_path="/tmp/nvimgmnCOO/0"}, 110) = 0
+listen(16, 32)                          = 0
+prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+rt_sigprocmask(SIG_UNBLOCK, [RT_1 RT_2], NULL, 8) = 0
+mmap(NULL, 8400896, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f44fd135000
+mprotect(0x7f44fd137000, 8392704, PROT_READ|PROT_WRITE) = 0
+rt_sigprocmask(SIG_BLOCK, ~[RTMIN RT_1 RT_2], [], 8) = 0
+clone(child_stack=0x7f44fd937aa8, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID|0x400000, parent_tid=[38913], tls=0x7f44fd937b30, child_tidptr=0x8c3908) = 38913
+rt_sigprocmask(SIG_SETMASK, [], strace: Process 38913 attached
+NULL, 8) = 0
+[pid 38912] futex(0x7ffc96cf7074, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+[pid 38913] rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+[pid 38913] mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x7f44fd133000
+[pid 38913] getrandom("\xae\xf9\x5a\x74\xc3\x74\xad\x61\x07\xbb\xb9\xa3\xe4\x34\x45\xb0\x47\x61\xc4\x31\xd1\x9f\xb4\x10\xee\x27\x86\xec\x00\x0f\x3d\x5e", 32, GRND_NONBLOCK) = 32
+[pid 38913] mmap(0x21758000000, 67108864, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x21758000000
+[pid 38913] epoll_create1(EPOLL_CLOEXEC) = 17
+[pid 38913] pipe2([18, 19], O_NONBLOCK|O_CLOEXEC) = 0
+[pid 38913] eventfd2(0, EFD_CLOEXEC|EFD_NONBLOCK) = 20
+[pid 38913] rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], [], 8) = 0
+[pid 38913] read(4, "*", 1)             = 1
+[pid 38913] rt_sigaction(SIGCONT, {sa_handler=0x4a6ab0, sa_mask=~[RTMIN RT_1 RT_2], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x57b171}, NULL, 8) = 0
+[pid 38913] write(5, "*", 1)            = 1
+[pid 38913] rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+[pid 38913] ioctl(0, TIOCGWINSZ, {ws_row=43, ws_col=71, ws_xpixel=0, ws_ypixel=0}) = 0
+[pid 38913] open("/home/pg/.terminfo/x/xterm-256color", O_RDONLY|O_LARGEFILE) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38913] open("/home/pg/.terminfo/78/xterm-256color", O_RDONLY|O_LARGEFILE) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38913] open("/home/pg/mix/store/rqDFwUsF65RMvVDrD-lib-curses-n-terminfo/share/terminfo/x/xterm-256color", O_RDONLY|O_LARGEFILE) = 21
+[pid 38913] read(21, "\36\2%\0&\0\17\0\235\1Z\6xterm-256color|xterm"..., 4096) = 3852
+[pid 38913] read(21, "", 244)           = 0
+[pid 38913] close(21)                   = 0
+[pid 38913] ioctl(0, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+[pid 38913] ioctl(0, TIOCGWINSZ, {ws_row=43, ws_col=71, ws_xpixel=0, ws_ypixel=0}) = 0
+[pid 38913] open("/dev/null", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 21
+[pid 38913] fcntl(21, F_SETFD, FD_CLOEXEC) = 0
+[pid 38913] fcntl(0, F_GETFL)           = 0x8402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+[pid 38913] ioctl(0, FIONBIO, [1])      = 0
+[pid 38913] ioctl(1, TIOCGWINSZ, 0x7f44fd936dd0) = -1 ENOTTY (Неприменимый к данному устройству ioctl)
+[pid 38913] fstat(1, {st_mode=S_IFREG|0644, st_size=9632, ...}) = 0
+[pid 38913] open("/home/pg/.terminfo/x/xterm-256color", O_RDONLY|O_LARGEFILE) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38913] open("/home/pg/.terminfo/78/xterm-256color", O_RDONLY|O_LARGEFILE) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38913] open("/home/pg/mix/store/rqDFwUsF65RMvVDrD-lib-curses-n-terminfo/share/terminfo/x/xterm-256color", O_RDONLY|O_LARGEFILE) = 22
+[pid 38913] read(22, "\36\2%\0&\0\17\0\235\1Z\6xterm-256color|xterm"..., 4096) = 3852
+[pid 38913] read(22, "", 244)           = 0
+[pid 38913] close(22)                   = 0
+[pid 38913] write(8, "\1\0\0\0\0\0\0\0", 8) = 8
+[pid 38913] epoll_create1(EPOLL_CLOEXEC) = 22
+[pid 38913] pipe2([23, 24], O_NONBLOCK|O_CLOEXEC) = 0
+[pid 38913] eventfd2(0, EFD_CLOEXEC|EFD_NONBLOCK) = 25
+[pid 38913] open("/dev/null", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 26
+[pid 38913] fcntl(26, F_SETFD, FD_CLOEXEC) = 0
+[pid 38913] fcntl(1, F_GETFL)           = 0x8001 (flags O_WRONLY|O_LARGEFILE)
+[pid 38913] ioctl(1, FIONBIO, [1])      = 0
+[pid 38913] writev(1, [{iov_base="\33[?1049h\33[22;0;0t\33[22;0t\33[?1h\33=\33"..., iov_len=53}, {iov_base="\33[?25h", iov_len=6}], 2[?1049h[22;0;0t[22;0t[?1h=[H[2J]11;?[?2004h[?25h) = 59
+[pid 38913] epoll_ctl(22, EPOLL_CTL_ADD, 23, {events=EPOLLIN, data={u32=23, u64=23}}) = 0
+[pid 38913] epoll_ctl(22, EPOLL_CTL_ADD, 25, {events=EPOLLIN, data={u32=25, u64=25}}) = 0
+[pid 38913] epoll_pwait(22, [], 1024, 0, NULL, 8) = 0
+[pid 38913] rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1 RT_2], [], 8) = 0
+[pid 38913] read(4, "*", 1)             = 1
+[pid 38913] rt_sigaction(SIGWINCH, {sa_handler=0x4a6ab0, sa_mask=~[RTMIN RT_1 RT_2], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x57b171}, NULL, 8) = 0
+[pid 38913] write(5, "*", 1)            = 1
+[pid 38913] rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+[pid 38913] futex(0x7ffc96cf7074, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+[pid 38912] <... futex resumed>)        = 0
+[pid 38913] <... futex resumed>)        = 1
+[pid 38912] futex(0x217541f055c, FUTEX_WAIT_PRIVATE, 2147483664, NULL <unfinished ...>
+[pid 38913] futex(0x217541f055c, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+[pid 38912] <... futex resumed>)        = -1 EAGAIN (Ресурс временно недоступен)
+[pid 38913] <... futex resumed>)        = 0
+[pid 38912] write(20, "\1\0\0\0\0\0\0\0", 8 <unfinished ...>
+[pid 38913] epoll_ctl(17, EPOLL_CTL_ADD, 18, {events=EPOLLIN, data={u32=18, u64=18}} <unfinished ...>
+[pid 38912] <... write resumed>)        = 8
+[pid 38913] <... epoll_ctl resumed>)    = 0
+[pid 38913] epoll_ctl(17, EPOLL_CTL_ADD, 20, {events=EPOLLIN, data={u32=20, u64=20}}) = 0
+[pid 38913] epoll_ctl(17, EPOLL_CTL_ADD, 0, {events=EPOLLIN, data={u32=0, u64=0}}) = 0
+[pid 38913] epoll_pwait(17, [{events=EPOLLIN, data={u32=20, u64=20}}], 1024, 19, NULL, 8) = 1
+[pid 38912] getuid( <unfinished ...>
+[pid 38913] read(20,  <unfinished ...>
+[pid 38912] <... getuid resumed>)       = 1000
+[pid 38913] <... read resumed>"\1\0\0\0\0\0\0\0", 1024) = 8
+[pid 38912] geteuid()                   = 1000
+[pid 38912] getgid()                    = 1000
+[pid 38912] getegid()                   = 1000
+[pid 38912] open("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/locale/ru_RU.UTF-8/LC_MESSAGES/nvim.mo", O_RDONLY|O_LARGEFILE <unfinished ...>
+[pid 38913] epoll_pwait(17,  <unfinished ...>
+[pid 38912] <... open resumed>)         = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] open("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/locale/ru_RU.utf8/LC_MESSAGES/nvim.mo", O_RDONLY|O_LARGEFILE) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] open("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/locale/ru_RU/LC_MESSAGES/nvim.mo", O_RDONLY|O_LARGEFILE) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] open("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/locale/ru.UTF-8/LC_MESSAGES/nvim.mo", O_RDONLY|O_LARGEFILE) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] open("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/locale/ru.utf8/LC_MESSAGES/nvim.mo", O_RDONLY|O_LARGEFILE) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] open("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/locale/ru/LC_MESSAGES/nvim.mo", O_RDONLY|O_LARGEFILE) = 27
+[pid 38912] fstat(27, {st_mode=S_IFREG|0644, st_size=160290, ...}) = 0
+[pid 38912] mmap(NULL, 160290, PROT_READ, MAP_PRIVATE, 27, 0) = 0x7f44fd10b000
+[pid 38912] close(27)                   = 0
+[pid 38912] getcwd("/home/pg/sources/mix", 4096) = 21
+[pid 38912] chdir("/home/pg/sources/mix") = 0
+[pid 38912] chdir("/etc/xdg/nvim")      = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] chdir("/home/pg/sources/mix") = 0
+[pid 38912] statx(AT_FDCWD, "/etc/xdg/nvim/sysinit.vim", AT_STATX_SYNC_AS_STAT, STATX_ALL, 0x7ffc96cf4ad0) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] open("/etc/xdg/nvim/sysinit.vim", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] statx(AT_FDCWD, "/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFDIR|0755, stx_size=14, ...}) = 0
+[pid 38912] getcwd("/home/pg/sources/mix", 4096) = 21
+[pid 38912] chdir("/home/pg/sources/mix") = 0
+[pid 38912] chdir("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim") = 0
+[pid 38912] getcwd("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim", 4096) = 62
+[pid 38912] chdir("/home/pg/sources/mix") = 0
+[pid 38912] statx(AT_FDCWD, "/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/sysinit.vim", AT_STATX_SYNC_AS_STAT, STATX_ALL, 0x7ffc96cf4ad0) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] open("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/sysinit.vim", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] statx(AT_FDCWD, "/home/pg/.config/nvim/init.lua", AT_STATX_SYNC_AS_STAT, STATX_ALL, 0x7ffc96cf4db0) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] getcwd("/home/pg/sources/mix", 4096) = 21
+[pid 38912] chdir("/home/pg/sources/mix") = 0
+[pid 38912] chdir("/home/pg/.config/nvim") = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] chdir("/home/pg/sources/mix") = 0
+[pid 38912] statx(AT_FDCWD, "/home/pg/.config/nvim/init.vim", AT_STATX_SYNC_AS_STAT, STATX_ALL, 0x7ffc96cf4ad0) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] open("/home/pg/.config/nvim/init.vim", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] getcwd("/home/pg/sources/mix", 4096) = 21
+[pid 38912] chdir("/home/pg/sources/mix") = 0
+[pid 38912] chdir("/etc/xdg//nvim")     = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] chdir("/home/pg/sources/mix") = 0
+[pid 38912] statx(AT_FDCWD, "/etc/xdg//nvim/init.vim", AT_STATX_SYNC_AS_STAT, STATX_ALL, 0x7ffc96cf4ad0) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] open("/etc/xdg//nvim/init.vim", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] statx(AT_FDCWD, "/home/pg/.config/nvim", AT_STATX_SYNC_AS_STAT, STATX_ALL, 0x7ffc96cf37c0) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/home/pg/.config/nvim/pack/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/home/pg/.config/nvim/start/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] statx(AT_FDCWD, "/etc/xdg/nvim", AT_STATX_SYNC_AS_STAT, STATX_ALL, 0x7ffc96cf37c0) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/etc/xdg/nvim/pack/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/etc/xdg/nvim/start/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] statx(AT_FDCWD, "/home/pg/.local/share/nvim/site", AT_STATX_SYNC_AS_STAT, STATX_ALL, 0x7ffc96cf37c0) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/home/pg/.local/share/nvim/site/pack/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/home/pg/.local/share/nvim/site/start/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] statx(AT_FDCWD, "/home/pg/.local/share/flatpak/exports/share/nvim/site", AT_STATX_SYNC_AS_STAT, STATX_ALL, 0x7ffc96cf37c0) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/home/pg/.local/share/flatpak/exports/share/nvim/site/pack/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/home/pg/.local/share/flatpak/exports/share/nvim/site/start/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] statx(AT_FDCWD, "/var/lib/flatpak/exports/share/nvim/site", AT_STATX_SYNC_AS_STAT, STATX_ALL, 0x7ffc96cf37c0) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/var/lib/flatpak/exports/share/nvim/site/pack/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/var/lib/flatpak/exports/share/nvim/site/start/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] statx(AT_FDCWD, "/usr/local/share/nvim/site", AT_STATX_SYNC_AS_STAT, STATX_ALL, 0x7ffc96cf37c0) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/usr/local/share/nvim/site/pack/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/usr/local/share/nvim/site/start/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] statx(AT_FDCWD, "/usr/share/nvim/site", AT_STATX_SYNC_AS_STAT, STATX_ALL, 0x7ffc96cf37c0) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/usr/share/nvim/site/pack/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/usr/share/nvim/site/start/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] statx(AT_FDCWD, "/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFDIR|0755, stx_size=500, ...}) = 0
+[pid 38912] statx(AT_FDCWD, "/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFDIR|0755, stx_size=500, ...}) = 0
+[pid 38912] access("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/pack/", R_OK) = 0
+[pid 38912] open("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/pack/", O_RDONLY|O_LARGEFILE|O_CLOEXEC|O_DIRECTORY) = 27
+[pid 38912] fcntl(27, F_SETFD, FD_CLOEXEC) = 0
+[pid 38912] getdents64(27, 0x21754281418 /* 3 entries */, 2048) = 72
+[pid 38912] getdents64(27, 0x21754281418 /* 0 entries */, 2048) = 0
+[pid 38912] close(27)                   = 0
+[pid 38912] access("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/pack/dist/start/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/start/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] statx(AT_FDCWD, "/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/lib/nvim", AT_STATX_SYNC_AS_STAT, STATX_ALL, 0x7ffc96cf37c0) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/lib/nvim/pack/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/lib/nvim/start/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/usr/share/nvim/site/after/pack/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/usr/share/nvim/site/after/start/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/usr/local/share/nvim/site/after/pack/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/usr/local/share/nvim/site/after/start/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/var/lib/flatpak/exports/share/nvim/site/after/pack/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/var/lib/flatpak/exports/share/nvim/site/after/start/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/home/pg/.local/share/flatpak/exports/share/nvim/site/after/pack/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/home/pg/.local/share/flatpak/exports/share/nvim/site/after/start/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/home/pg/.local/share/nvim/site/after/pack/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/home/pg/.local/share/nvim/site/after/start/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/etc/xdg/nvim/after/pack/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/etc/xdg/nvim/after/start/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/home/pg/.config/nvim/after/pack/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/home/pg/.config/nvim/after/start/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/home/pg/.config/nvim/pack/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/home/pg/.config/nvim/start/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/etc/xdg/nvim/pack/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/etc/xdg/nvim/start/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/home/pg/.local/share/nvim/site/pack/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/home/pg/.local/share/nvim/site/start/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/home/pg/.local/share/flatpak/exports/share/nvim/site/pack/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/home/pg/.local/share/flatpak/exports/share/nvim/site/start/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/var/lib/flatpak/exports/share/nvim/site/pack/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/var/lib/flatpak/exports/share/nvim/site/start/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/usr/local/share/nvim/site/pack/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/usr/local/share/nvim/site/start/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/usr/share/nvim/site/pack/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/usr/share/nvim/site/start/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/pack/", R_OK) = 0
+[pid 38912] open("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/pack/", O_RDONLY|O_LARGEFILE|O_CLOEXEC|O_DIRECTORY) = 27
+[pid 38912] fcntl(27, F_SETFD, FD_CLOEXEC) = 0
+[pid 38912] getdents64(27, 0x21754281418 /* 3 entries */, 2048) = 72
+[pid 38912] getdents64(27, 0x21754281418 /* 0 entries */, 2048) = 0
+[pid 38912] close(27)                   = 0
+[pid 38912] access("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/pack/dist/start/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/start/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/lib/nvim/pack/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/lib/nvim/start/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/usr/share/nvim/site/after/pack/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/usr/share/nvim/site/after/start/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/usr/local/share/nvim/site/after/pack/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/usr/local/share/nvim/site/after/start/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/var/lib/flatpak/exports/share/nvim/site/after/pack/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/var/lib/flatpak/exports/share/nvim/site/after/start/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/home/pg/.local/share/flatpak/exports/share/nvim/site/after/pack/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/home/pg/.local/share/flatpak/exports/share/nvim/site/after/start/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/home/pg/.local/share/nvim/site/after/pack/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/home/pg/.local/share/nvim/site/after/start/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/etc/xdg/nvim/after/pack/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/etc/xdg/nvim/after/start/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/home/pg/.config/nvim/after/pack/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/home/pg/.config/nvim/after/start/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] statx(AT_FDCWD, "/usr/share/nvim/site/after", AT_STATX_SYNC_AS_STAT, STATX_ALL, 0x7ffc96cf37c0) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] statx(AT_FDCWD, "/usr/local/share/nvim/site/after", AT_STATX_SYNC_AS_STAT, STATX_ALL, 0x7ffc96cf37c0) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] statx(AT_FDCWD, "/var/lib/flatpak/exports/share/nvim/site/after", AT_STATX_SYNC_AS_STAT, STATX_ALL, 0x7ffc96cf37c0) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] statx(AT_FDCWD, "/home/pg/.local/share/flatpak/exports/share/nvim/site/after", AT_STATX_SYNC_AS_STAT, STATX_ALL, 0x7ffc96cf37c0) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] statx(AT_FDCWD, "/home/pg/.local/share/nvim/site/after", AT_STATX_SYNC_AS_STAT, STATX_ALL, 0x7ffc96cf37c0) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] statx(AT_FDCWD, "/etc/xdg/nvim/after", AT_STATX_SYNC_AS_STAT, STATX_ALL, 0x7ffc96cf37c0) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] statx(AT_FDCWD, "/home/pg/.config/nvim/after", AT_STATX_SYNC_AS_STAT, STATX_ALL, 0x7ffc96cf37c0) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] statx(AT_FDCWD, "/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/filetype.vim", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFREG|0644, stx_size=64452, ...}) = 0
+[pid 38912] statx(AT_FDCWD, "/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/filetype.vim", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFREG|0644, stx_size=64452, ...}) = 0
+[pid 38912] getcwd("/home/pg/sources/mix", 4096) = 21
+[pid 38912] chdir("/home/pg/sources/mix") = 0
+[pid 38912] chdir("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime") = 0
+[pid 38912] getcwd("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime", 4096) = 70
+[pid 38912] chdir("/home/pg/sources/mix") = 0
+[pid 38912] statx(AT_FDCWD, "/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/filetype.vim", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFREG|0644, stx_size=64452, ...}) = 0
+[pid 38912] open("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/filetype.vim", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 27
+[pid 38912] fcntl(27, F_SETFD, FD_CLOEXEC) = 0
+[pid 38912] fcntl(27, F_GETFD)          = 0x1 (flags FD_CLOEXEC)
+[pid 38912] statx(AT_FDCWD, "/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/filetype.vim", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFREG|0644, stx_size=64452, ...}) = 0
+[pid 38912] read(27, "\" Vim support file to detect fil"..., 1024) = 1024
+[pid 38912] read(27, "pand(\"<afile>:r\")) |\n\t\\ endif\nel"..., 1024) = 1024
+[pid 38912] read(27, ".cfg,a2psrc,.a2psrc setf a2ps\n\n\""..., 1024) = 1024
+[pid 38912] read(27, "e,BufRead .asoundrc,*/usr/share/"..., 1024) = 1024
+[pid 38912] read(27, ". getline(3) =~? \"perlscript\" |\n"..., 1024) = 1024
+[pid 38912] read(27, "File,BufRead *.bas\t\t\tcall dist#f"..., 1024) = 1024
+[pid 38912] read(27, " BufNewFile,BufRead named*.conf,"..., 1024) = 1024
+[pid 38912] read(27, "efaults/cdrdao,*/etc/default/cdr"..., 1024) = 1024
+[pid 38912] read(27, "fRead *.h\t\t\tcall dist#ft#FTheade"..., 1024) = 1024
+[pid 38912] read(27, "File,BufRead *.eni\t\t\tsetf cl\n\n\" "..., 1024) = 1024
+[pid 38912] read(27, "ed Device Architecture\nau BufNew"..., 1024) = 1024
+[pid 38912] read(27, "le,m3overrides\tsetf m3build\n\n\" Q"..., 1024) = 1024
+[pid 38912] read(27, "ead */etc/apt/sources.list.d/*.l"..., 1024) = 1024
+[pid 38912] read(27, "=~? 'InstallShield' |\n\t\\   setf "..., 1024) = 1024
+[pid 38912] read(27, "\n\n\" EDIF (*.edf,*.edif,*.edn,*.e"..., 1024) = 1024
+[pid 38912] read(27, "exim\n\n\" Expect\nau BufNewFile,Buf"..., 1024) = 1024
+[pid 38912] read(27, "*.F08\t setf fortran\nendif\nau Buf"..., 1024) = 1024
+[pid 38912] read(27, "HOME/git/config\t\tsetf gitconfig\n"..., 1024) = 1024
+[pid 38912] read(27, "e\nau BufNewFile,BufRead {,.}gito"..., 1024) = 1024
+[pid 38912] read(27, "project\t\tsetf cabalproject\nau Bu"..., 1024) = 1024
+[pid 38912] read(27, "ewFile,BufRead *.hb\t\t\tsetf hb\n\n\""..., 1024) = 1024
+[pid 38912] read(27, "reamdat\nau BufRead,BufNewFile fd"..., 1024) = 1024
+[pid 38912] read(27, "d *.jj,*.jjt\t\tsetf javacc\n\n\" Jav"..., 1024) = 1024
+[pid 38912] read(27, "le,BufRead *.jl\t\t\tsetf julia\n\n\" "..., 1024) = 1024
+[pid 38912] read(27, "ensors\n\n\" LFTP\nau BufNewFile,Buf"..., 1024) = 1024
+[pid 38912] epoll_ctl(3, EPOLL_CTL_ADD, 6, {events=EPOLLIN, data={u32=6, u64=6}}) = 0
+[pid 38912] epoll_ctl(3, EPOLL_CTL_ADD, 8, {events=EPOLLIN, data={u32=8, u64=8}}) = 0
+[pid 38912] epoll_ctl(3, EPOLL_CTL_ADD, 16, {events=EPOLLIN, data={u32=16, u64=16}}) = 0
+[pid 38912] epoll_pwait(3, [{events=EPOLLIN, data={u32=8, u64=8}}], 1024, 0, NULL, 8) = 1
+[pid 38912] read(8, "\1\0\0\0\0\0\0\0", 1024) = 8
+[pid 38912] read(27, "*.lotos\t\tsetf lotos\n\n\" Lout (als"..., 1024) = 1024
+[pid 38912] read(27, "ake\n\n\" MakeIndex\nau BufNewFile,B"..., 1024) = 1024
+[pid 38912] read(27, "txt setf meson\nau BufNewFile,Buf"..., 1024) = 1024
+[pid 38912] read(27, "k\n\n\" MOO\nau BufNewFile,BufRead *"..., 1024) = 1024
+[pid 38912] read(27, "1ql\n\n\" Nano\nau BufNewFile,BufRea"..., 1024) = 1024
+[pid 38912] read(27, "BufNewFile,BufRead *.nqc\t\t\tsetf "..., 1024) = 1024
+[pid 38912] read(27, "nf\t\t\tsetf pamconf\n\n\" Pam environ"..., 1024) = 1024
+[pid 38912] read(27, ",BufRead *.pm\n\t\\ if getline(1) ="..., 1024) = 1024
+[pid 38912] read(27, ".plsql\t\tsetf plsql\n\n\" PLP\nau Buf"..., 1024) = 1024
+[pid 38912] read(27, "etf antlr\nau BufNewFile,BufRead "..., 1024) = 1024
+[pid 38912] read(27, "etf psf |\n\t\\ endif\n\n\" Prolog\nau "..., 1024) = 1024
+[pid 38912] read(27, "etf ratpoison\n\n\" RCS file\nau Buf"..., 1024) = 1024
+[pid 38912] read(27, "NewFile,BufRead *.rss\t\t\t\tsetf xm"..., 1024) = 1024
+[pid 38912] read(27, "wFile,BufRead *.gemspec\t\t\tsetf r"..., 1024) = 1024
+[pid 38912] read(27, "etf scdoc\n\n\" SCSS\nau BufNewFile,"..., 1024) = 1024
+[pid 38912] read(27, "|\n\t\\   setf sgmllnx |\n\t\\ elseif "..., 1024) = 1024
+[pid 38912] read(27, "\" Shell script (Arch Linux) or P"..., 1024) = 1024
+[pid 38912] read(27, "e,BufRead *.sim\t\t\tsetf simula\n\n\""..., 1024) = 1024
+[pid 38912] read(27, "tbol\nau BufNewFile,BufRead *.sno"..., 1024) = 1024
+[pid 38912] read(27, "u BufNewFile,BufRead */etc/ssh/s"..., 1024) = 1024
+[pid 38912] read(27, "work,nspawn,path,service,slice,s"..., 1024) = 1024
+[pid 38912] read(27, "NewFile {pending,completed,undo}"..., 1024) = 1024
+[pid 38912] read(27, " BufNewFile,BufRead {.,}tmux*.co"..., 1024) = 1024
+[pid 38912] read(27, " BufNewFile,BufRead */etc/udev/p"..., 1024) = 1024
+[pid 38912] read(27, "ad *.hdl,*.vhd,*.vhdl,*.vbe,*.vs"..., 1024) = 1024
+[pid 38912] epoll_pwait(3, [], 1024, 0, NULL, 8) = 0
+[pid 38912] read(27, "\nau BufNewFile,BufRead *.wml\t\t\ts"..., 1024) = 1024
+[pid 38912] read(27, "|\n\t\\   setf xpm |\n\t\\ endif\nau Bu"..., 1024) = 1024
+[pid 38912] read(27, "io.NET's XML-based C# project co"..., 1024) = 1024
+[pid 38912] read(27, "guage\nau BufNewFile,BufRead *.xu"..., 1024) = 1024
+[pid 38912] read(27, "ile,BufRead *.z8a\t\t\tsetf z8a\n\nau"..., 1024) = 1024
+[pid 38912] read(27, "u BufNewFile,BufRead proftpd.con"..., 1024) = 1024
+[pid 38912] read(27, "re/calendar/calendar.*\n\t\\\t\t\t\t\tca"..., 1024) = 1024
+[pid 38912] read(27, "gitolite-admin/conf/*\tcall s:Sta"..., 1024) = 1024
+[pid 38912] read(27, "il\n\nau BufNewFile,BufRead report"..., 1024) = 1024
+[pid 38912] read(27, "fRead *termcap*\n\t\\ if !did_filet"..., 1024) = 1024
+[pid 38912] read(27, "FileTypeShell(\"tcsh\")\n\n\" csh scr"..., 1024) = 1024
+[pid 38912] read(27, "ad */etc/yum.repos.d/*\tcall s:St"..., 1024) = 1024
+[pid 38912] access("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/ftdetect/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/ftdetect/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] read(27, "ad,StdinReadPost *\n\t\\ if !did_fi"..., 1024) = 964
+[pid 38912] read(27, "", 1024)          = 0
+[pid 38912] close(27)                   = 0
+[pid 38912] statx(AT_FDCWD, "/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/ftplugin.vim", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFREG|0644, stx_size=1108, ...}) = 0
+[pid 38912] statx(AT_FDCWD, "/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/ftplugin.vim", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFREG|0644, stx_size=1108, ...}) = 0
+[pid 38912] getcwd("/home/pg/sources/mix", 4096) = 21
+[pid 38912] chdir("/home/pg/sources/mix") = 0
+[pid 38912] chdir("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime") = 0
+[pid 38912] getcwd("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime", 4096) = 70
+[pid 38912] chdir("/home/pg/sources/mix") = 0
+[pid 38912] statx(AT_FDCWD, "/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/ftplugin.vim", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFREG|0644, stx_size=1108, ...}) = 0
+[pid 38912] open("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/ftplugin.vim", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 27
+[pid 38912] fcntl(27, F_SETFD, FD_CLOEXEC) = 0
+[pid 38912] fcntl(27, F_GETFD)          = 0x1 (flags FD_CLOEXEC)
+[pid 38912] statx(AT_FDCWD, "/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/ftplugin.vim", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFREG|0644, stx_size=1108, ...}) = 0
+[pid 38912] read(27, "\" Vim support file to switch on "..., 1024) = 1024
+[pid 38912] read(27, " ftplugin/%s/*.lua', name, name,"..., 1024) = 84
+[pid 38912] read(27, "", 1024)          = 0
+[pid 38912] close(27)                   = 0
+[pid 38912] statx(AT_FDCWD, "/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/indent.vim", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFREG|0644, stx_size=821, ...}) = 0
+[pid 38912] statx(AT_FDCWD, "/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/indent.vim", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFREG|0644, stx_size=821, ...}) = 0
+[pid 38912] getcwd("/home/pg/sources/mix", 4096) = 21
+[pid 38912] chdir("/home/pg/sources/mix") = 0
+[pid 38912] chdir("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime") = 0
+[pid 38912] getcwd("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime", 4096) = 70
+[pid 38912] chdir("/home/pg/sources/mix") = 0
+[pid 38912] statx(AT_FDCWD, "/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/indent.vim", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFREG|0644, stx_size=821, ...}) = 0
+[pid 38912] open("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/indent.vim", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 27
+[pid 38912] fcntl(27, F_SETFD, FD_CLOEXEC) = 0
+[pid 38912] fcntl(27, F_GETFD)          = 0x1 (flags FD_CLOEXEC)
+[pid 38912] statx(AT_FDCWD, "/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/indent.vim", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFREG|0644, stx_size=821, ...}) = 0
+[pid 38912] read(27, "\" Vim support file to switch on "..., 1024) = 821
+[pid 38912] read(27, "", 1024)          = 0
+[pid 38912] close(27)                   = 0
+[pid 38912] getcwd("/home/pg/sources/mix", 4096) = 21
+[pid 38912] chdir("/home/pg/sources/mix") = 0
+[pid 38912] chdir("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/syntax") = 0
+[pid 38912] getcwd("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/syntax", 4096) = 77
+[pid 38912] chdir("/home/pg/sources/mix") = 0
+[pid 38912] statx(AT_FDCWD, "/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/syntax/syntax.vim", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFREG|0644, stx_size=1228, ...}) = 0
+[pid 38912] open("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/syntax/syntax.vim", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 27
+[pid 38912] fcntl(27, F_SETFD, FD_CLOEXEC) = 0
+[pid 38912] fcntl(27, F_GETFD)          = 0x1 (flags FD_CLOEXEC)
+[pid 38912] statx(AT_FDCWD, "/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/syntax/syntax.vim", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFREG|0644, stx_size=1228, ...}) = 0
+[pid 38912] read(27, "\" Vim syntax support file\n\" Main"..., 1024) = 1024
+[pid 38912] statx(AT_FDCWD, "/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/syntax/synload.vim", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFREG|0644, stx_size=1943, ...}) = 0
+[pid 38912] statx(AT_FDCWD, "/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/syntax/synload.vim", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFREG|0644, stx_size=1943, ...}) = 0
+[pid 38912] getcwd("/home/pg/sources/mix", 4096) = 21
+[pid 38912] chdir("/home/pg/sources/mix") = 0
+[pid 38912] chdir("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/syntax") = 0
+[pid 38912] getcwd("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/syntax", 4096) = 77
+[pid 38912] chdir("/home/pg/sources/mix") = 0
+[pid 38912] statx(AT_FDCWD, "/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/syntax/synload.vim", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFREG|0644, stx_size=1943, ...}) = 0
+[pid 38912] open("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/syntax/synload.vim", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 28
+[pid 38912] fcntl(28, F_SETFD, FD_CLOEXEC) = 0
+[pid 38912] fcntl(28, F_GETFD)          = 0x1 (flags FD_CLOEXEC)
+[pid 38912] statx(AT_FDCWD, "/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/syntax/synload.vim", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFREG|0644, stx_size=1943, ...}) = 0
+[pid 38912] read(28, "\" Vim syntax support file\n\" Main"..., 1024) = 1024
+[pid 38912] read(28, " syntax file(s).  When there are"..., 1024) = 919
+[pid 38912] read(28, "", 1024)          = 0
+[pid 38912] close(28)                   = 0
+[pid 38912] read(27, " Always do the syntaxset autocom"..., 1024) = 204
+[pid 38912] read(27, "", 1024)          = 0
+[pid 38912] close(27)                   = 0
+[pid 38912] access("/home/pg/.config/nvim/start/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/home/pg/.config/nvim/pack/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/etc/xdg/nvim/start/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/etc/xdg/nvim/pack/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/home/pg/.local/share/nvim/site/start/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/home/pg/.local/share/nvim/site/pack/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/home/pg/.local/share/flatpak/exports/share/nvim/site/start/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/home/pg/.local/share/flatpak/exports/share/nvim/site/pack/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/var/lib/flatpak/exports/share/nvim/site/start/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/var/lib/flatpak/exports/share/nvim/site/pack/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/usr/local/share/nvim/site/start/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/usr/local/share/nvim/site/pack/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/usr/share/nvim/site/start/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/usr/share/nvim/site/pack/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/start/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/pack/", R_OK) = 0
+[pid 38912] open("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/pack/", O_RDONLY|O_LARGEFILE|O_CLOEXEC|O_DIRECTORY) = 27
+[pid 38912] fcntl(27, F_SETFD, FD_CLOEXEC) = 0
+[pid 38912] getdents64(27, 0x21754283c18 /* 3 entries */, 2048) = 72
+[pid 38912] getdents64(27, 0x21754283c18 /* 0 entries */, 2048) = 0
+[pid 38912] close(27)                   = 0
+[pid 38912] access("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/pack/dist/start/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/lib/nvim/start/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/lib/nvim/pack/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/usr/share/nvim/site/after/start/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/usr/share/nvim/site/after/pack/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/usr/local/share/nvim/site/after/start/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/usr/local/share/nvim/site/after/pack/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/var/lib/flatpak/exports/share/nvim/site/after/start/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/var/lib/flatpak/exports/share/nvim/site/after/pack/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/home/pg/.local/share/flatpak/exports/share/nvim/site/after/start/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/home/pg/.local/share/flatpak/exports/share/nvim/site/after/pack/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/home/pg/.local/share/nvim/site/after/start/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/home/pg/.local/share/nvim/site/after/pack/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/etc/xdg/nvim/after/start/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/etc/xdg/nvim/after/pack/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/home/pg/.config/nvim/after/start/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/home/pg/.config/nvim/after/pack/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] epoll_pwait(3, [], 1024, 0, NULL, 8) = 0
+[pid 38912] access("/home/pg/.config/nvim/plugin/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/home/pg/.config/nvim/plugin/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] epoll_pwait(3, [], 1024, 0, NULL, 8) = 0
+[pid 38912] access("/etc/xdg/nvim/plugin/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/etc/xdg/nvim/plugin/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] epoll_pwait(3, [], 1024, 0, NULL, 8) = 0
+[pid 38912] access("/home/pg/.local/share/nvim/site/plugin/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/home/pg/.local/share/nvim/site/plugin/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] epoll_pwait(3, [], 1024, 0, NULL, 8) = 0
+[pid 38912] access("/home/pg/.local/share/flatpak/exports/share/nvim/site/plugin/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/home/pg/.local/share/flatpak/exports/share/nvim/site/plugin/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] epoll_pwait(3, [], 1024, 0, NULL, 8) = 0
+[pid 38912] access("/var/lib/flatpak/exports/share/nvim/site/plugin/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/var/lib/flatpak/exports/share/nvim/site/plugin/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] epoll_pwait(3, [], 1024, 0, NULL, 8) = 0
+[pid 38912] access("/usr/local/share/nvim/site/plugin/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/usr/local/share/nvim/site/plugin/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] epoll_pwait(3, [], 1024, 0, NULL, 8) = 0
+[pid 38912] access("/usr/share/nvim/site/plugin/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/usr/share/nvim/site/plugin/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] epoll_pwait(3, [], 1024, 0, NULL, 8) = 0
+[pid 38912] access("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin/", R_OK) = 0
+[pid 38912] open("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin/", O_RDONLY|O_LARGEFILE|O_CLOEXEC|O_DIRECTORY) = 27
+[pid 38912] fcntl(27, F_SETFD, FD_CLOEXEC) = 0
+[pid 38912] getdents64(27, 0x21754283c18 /* 15 entries */, 2048) = 504
+[pid 38912] getdents64(27, 0x21754283c18 /* 0 entries */, 2048) = 0
+[pid 38912] close(27)                   = 0
+[pid 38912] statx(AT_FDCWD, "/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin/gzip.vim", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFREG|0644, stx_size=3046, ...}) = 0
+[pid 38912] statx(AT_FDCWD, "/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin/gzip.vim", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFREG|0644, stx_size=3046, ...}) = 0
+[pid 38912] statx(AT_FDCWD, "/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin/gzip.vim", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFREG|0644, stx_size=3046, ...}) = 0
+[pid 38912] statx(AT_FDCWD, "/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin/health.vim", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFREG|0644, stx_size=45, ...}) = 0
+[pid 38912] statx(AT_FDCWD, "/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin/health.vim", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFREG|0644, stx_size=45, ...}) = 0
+[pid 38912] statx(AT_FDCWD, "/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin/health.vim", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFREG|0644, stx_size=45, ...}) = 0
+[pid 38912] statx(AT_FDCWD, "/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin/man.vim", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFREG|0644, stx_size=429, ...}) = 0
+[pid 38912] statx(AT_FDCWD, "/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin/man.vim", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFREG|0644, stx_size=429, ...}) = 0
+[pid 38912] statx(AT_FDCWD, "/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin/man.vim", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFREG|0644, stx_size=429, ...}) = 0
+[pid 38912] statx(AT_FDCWD, "/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin/matchit.vim", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFREG|0644, stx_size=138, ...}) = 0
+[pid 38912] statx(AT_FDCWD, "/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin/matchit.vim", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFREG|0644, stx_size=138, ...}) = 0
+[pid 38912] statx(AT_FDCWD, "/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin/matchit.vim", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFREG|0644, stx_size=138, ...}) = 0
+[pid 38912] statx(AT_FDCWD, "/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin/matchparen.vim", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFREG|0644, stx_size=7236, ...}) = 0
+[pid 38912] statx(AT_FDCWD, "/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin/matchparen.vim", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFREG|0644, stx_size=7236, ...}) = 0
+[pid 38912] statx(AT_FDCWD, "/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin/matchparen.vim", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFREG|0644, stx_size=7236, ...}) = 0
+[pid 38912] statx(AT_FDCWD, "/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin/netrwPlugin.vim", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFREG|0644, stx_size=10743, ...}) = 0
+[pid 38912] statx(AT_FDCWD, "/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin/netrwPlugin.vim", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFREG|0644, stx_size=10743, ...}) = 0
+[pid 38912] statx(AT_FDCWD, "/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin/netrwPlugin.vim", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFREG|0644, stx_size=10743, ...}) = 0
+[pid 38912] statx(AT_FDCWD, "/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin/rplugin.vim", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFREG|0644, stx_size=1929, ...}) = 0
+[pid 38912] statx(AT_FDCWD, "/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin/rplugin.vim", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFREG|0644, stx_size=1929, ...}) = 0
+[pid 38912] statx(AT_FDCWD, "/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin/rplugin.vim", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFREG|0644, stx_size=1929, ...}) = 0
+[pid 38912] statx(AT_FDCWD, "/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin/shada.vim", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFREG|0644, stx_size=1778, ...}) = 0
+[pid 38912] statx(AT_FDCWD, "/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin/shada.vim", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFREG|0644, stx_size=1778, ...}) = 0
+[pid 38912] statx(AT_FDCWD, "/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin/shada.vim", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFREG|0644, stx_size=1778, ...}) = 0
+[pid 38912] statx(AT_FDCWD, "/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin/spellfile.vim", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFREG|0644, stx_size=236, ...}) = 0
+[pid 38912] statx(AT_FDCWD, "/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin/spellfile.vim", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFREG|0644, stx_size=236, ...}) = 0
+[pid 38912] statx(AT_FDCWD, "/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin/spellfile.vim", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFREG|0644, stx_size=236, ...}) = 0
+[pid 38912] statx(AT_FDCWD, "/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin/tarPlugin.vim", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFREG|0644, stx_size=2398, ...}) = 0
+[pid 38912] statx(AT_FDCWD, "/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin/tarPlugin.vim", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFREG|0644, stx_size=2398, ...}) = 0
+[pid 38912] statx(AT_FDCWD, "/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin/tarPlugin.vim", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFREG|0644, stx_size=2398, ...}) = 0
+[pid 38912] statx(AT_FDCWD, "/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin/tohtml.vim", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFREG|0644, stx_size=12587, ...}) = 0
+[pid 38912] statx(AT_FDCWD, "/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin/tohtml.vim", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFREG|0644, stx_size=12587, ...}) = 0
+[pid 38912] statx(AT_FDCWD, "/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin/tohtml.vim", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFREG|0644, stx_size=12587, ...}) = 0
+[pid 38912] statx(AT_FDCWD, "/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin/tutor.vim", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFREG|0644, stx_size=202, ...}) = 0
+[pid 38912] statx(AT_FDCWD, "/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin/tutor.vim", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFREG|0644, stx_size=202, ...}) = 0
+[pid 38912] statx(AT_FDCWD, "/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin/tutor.vim", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFREG|0644, stx_size=202, ...}) = 0
+[pid 38912] statx(AT_FDCWD, "/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin/zipPlugin.vim", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFREG|0644, stx_size=2612, ...}) = 0
+[pid 38912] statx(AT_FDCWD, "/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin/zipPlugin.vim", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFREG|0644, stx_size=2612, ...}) = 0
+[pid 38912] statx(AT_FDCWD, "/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin/zipPlugin.vim", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFREG|0644, stx_size=2612, ...}) = 0
+[pid 38912] access("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin/", R_OK) = 0
+[pid 38912] open("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin/", O_RDONLY|O_LARGEFILE|O_CLOEXEC|O_DIRECTORY) = 27
+[pid 38912] fcntl(27, F_SETFD, FD_CLOEXEC) = 0
+[pid 38912] getdents64(27, 0x21754283c18 /* 15 entries */, 2048) = 504
+[pid 38912] getdents64(27, 0x21754283c18 /* 0 entries */, 2048) = 0
+[pid 38912] close(27)                   = 0
+[pid 38912] epoll_pwait(3, [], 1024, 0, NULL, 8) = 0
+[pid 38912] access("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin/gzip.vim/", R_OK) = -1 ENOTDIR (Это не каталог)
+[pid 38912] access("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin/gzip.vim/", R_OK) = -1 ENOTDIR (Это не каталог)
+[pid 38912] epoll_pwait(3, [], 1024, 0, NULL, 8) = 0
+[pid 38912] access("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin/health.vim/", R_OK) = -1 ENOTDIR (Это не каталог)
+[pid 38912] access("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin/health.vim/", R_OK) = -1 ENOTDIR (Это не каталог)
+[pid 38912] epoll_pwait(3, [], 1024, 0, NULL, 8) = 0
+[pid 38912] access("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin/man.vim/", R_OK) = -1 ENOTDIR (Это не каталог)
+[pid 38912] access("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin/man.vim/", R_OK) = -1 ENOTDIR (Это не каталог)
+[pid 38912] epoll_pwait(3, [], 1024, 0, NULL, 8) = 0
+[pid 38912] access("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin/matchit.vim/", R_OK) = -1 ENOTDIR (Это не каталог)
+[pid 38912] access("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin/matchit.vim/", R_OK) = -1 ENOTDIR (Это не каталог)
+[pid 38912] epoll_pwait(3, [], 1024, 0, NULL, 8) = 0
+[pid 38912] access("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin/matchparen.vim/", R_OK) = -1 ENOTDIR (Это не каталог)
+[pid 38912] access("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin/matchparen.vim/", R_OK) = -1 ENOTDIR (Это не каталог)
+[pid 38912] epoll_pwait(3, [], 1024, 0, NULL, 8) = 0
+[pid 38912] epoll_pwait(3, [], 1024, 0, NULL, 8) = 0
+[pid 38912] access("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin/netrwPlugin.vim/", R_OK) = -1 ENOTDIR (Это не каталог)
+[pid 38912] access("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin/netrwPlugin.vim/", R_OK) = -1 ENOTDIR (Это не каталог)
+[pid 38912] epoll_pwait(3, [], 1024, 0, NULL, 8) = 0
+[pid 38912] access("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin/rplugin.vim/", R_OK) = -1 ENOTDIR (Это не каталог)
+[pid 38912] access("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin/rplugin.vim/", R_OK) = -1 ENOTDIR (Это не каталог)
+[pid 38912] epoll_pwait(3, [], 1024, 0, NULL, 8) = 0
+[pid 38912] access("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin/shada.vim/", R_OK) = -1 ENOTDIR (Это не каталог)
+[pid 38912] access("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin/shada.vim/", R_OK) = -1 ENOTDIR (Это не каталог)
+[pid 38912] epoll_pwait(3, [], 1024, 0, NULL, 8) = 0
+[pid 38912] access("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin/spellfile.vim/", R_OK) = -1 ENOTDIR (Это не каталог)
+[pid 38912] access("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin/spellfile.vim/", R_OK) = -1 ENOTDIR (Это не каталог)
+[pid 38912] epoll_pwait(3, [], 1024, 0, NULL, 8) = 0
+[pid 38912] access("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin/tarPlugin.vim/", R_OK) = -1 ENOTDIR (Это не каталог)
+[pid 38912] access("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin/tarPlugin.vim/", R_OK) = -1 ENOTDIR (Это не каталог)
+[pid 38912] epoll_pwait(3, [], 1024, 0, NULL, 8) = 0
+[pid 38912] access("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin/tohtml.vim/", R_OK) = -1 ENOTDIR (Это не каталог)
+[pid 38912] access("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin/tohtml.vim/", R_OK) = -1 ENOTDIR (Это не каталог)
+[pid 38912] epoll_pwait(3, [], 1024, 0, NULL, 8) = 0
+[pid 38912] access("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin/tutor.vim/", R_OK) = -1 ENOTDIR (Это не каталог)
+[pid 38912] access("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin/tutor.vim/", R_OK) = -1 ENOTDIR (Это не каталог)
+[pid 38912] epoll_pwait(3, [], 1024, 0, NULL, 8) = 0
+[pid 38912] access("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin/zipPlugin.vim/", R_OK) = -1 ENOTDIR (Это не каталог)
+[pid 38912] access("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin/zipPlugin.vim/", R_OK) = -1 ENOTDIR (Это не каталог)
+[pid 38912] getcwd("/home/pg/sources/mix", 4096) = 21
+[pid 38912] chdir("/home/pg/sources/mix") = 0
+[pid 38912] chdir("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin") = 0
+[pid 38912] getcwd("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin", 4096) = 77
+[pid 38912] chdir("/home/pg/sources/mix") = 0
+[pid 38912] statx(AT_FDCWD, "/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin/gzip.vim", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFREG|0644, stx_size=3046, ...}) = 0
+[pid 38912] open("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin/gzip.vim", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 27
+[pid 38912] fcntl(27, F_SETFD, FD_CLOEXEC) = 0
+[pid 38912] fcntl(27, F_GETFD)          = 0x1 (flags FD_CLOEXEC)
+[pid 38912] statx(AT_FDCWD, "/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin/gzip.vim", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFREG|0644, stx_size=3046, ...}) = 0
+[pid 38912] read(27, "\" Vim plugin for editing compres"..., 1024) = 1024
+[pid 38912] read(27, "#read(\"xz -d\")\n  autocmd BufRead"..., 1024) = 1024
+[pid 38912] read(27, "ll gzip#appre(\"bzip2 -d\")\n  auto"..., 1024) = 998
+[pid 38912] read(27, "", 1024)          = 0
+[pid 38912] close(27)                   = 0
+[pid 38912] getcwd("/home/pg/sources/mix", 4096) = 21
+[pid 38912] chdir("/home/pg/sources/mix") = 0
+[pid 38912] chdir("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin") = 0
+[pid 38912] getcwd("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin", 4096) = 77
+[pid 38912] chdir("/home/pg/sources/mix") = 0
+[pid 38912] statx(AT_FDCWD, "/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin/health.vim", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFREG|0644, stx_size=45, ...}) = 0
+[pid 38912] open("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin/health.vim", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 27
+[pid 38912] fcntl(27, F_SETFD, FD_CLOEXEC) = 0
+[pid 38912] fcntl(27, F_GETFD)          = 0x1 (flags FD_CLOEXEC)
+[pid 38912] statx(AT_FDCWD, "/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin/health.vim", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFREG|0644, stx_size=45, ...}) = 0
+[pid 38912] read(27, "autocmd CmdUndefined CheckHealth"..., 1024) = 45
+[pid 38912] read(27, "", 1024)          = 0
+[pid 38912] close(27)                   = 0
+[pid 38912] getcwd("/home/pg/sources/mix", 4096) = 21
+[pid 38912] chdir("/home/pg/sources/mix") = 0
+[pid 38912] chdir("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin") = 0
+[pid 38912] getcwd("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin", 4096) = 77
+[pid 38912] chdir("/home/pg/sources/mix") = 0
+[pid 38912] statx(AT_FDCWD, "/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin/man.vim", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFREG|0644, stx_size=429, ...}) = 0
+[pid 38912] open("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin/man.vim", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 27
+[pid 38912] fcntl(27, F_SETFD, FD_CLOEXEC) = 0
+[pid 38912] fcntl(27, F_GETFD)          = 0x1 (flags FD_CLOEXEC)
+[pid 38912] statx(AT_FDCWD, "/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin/man.vim", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFREG|0644, stx_size=429, ...}) = 0
+[pid 38912] read(27, "\" Maintainer: Anmol Sethi <hi@nh"..., 1024) = 429
+[pid 38912] read(27, "", 1024)          = 0
+[pid 38912] close(27)                   = 0
+[pid 38912] getcwd("/home/pg/sources/mix", 4096) = 21
+[pid 38912] chdir("/home/pg/sources/mix") = 0
+[pid 38912] chdir("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin") = 0
+[pid 38912] getcwd("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin", 4096) = 77
+[pid 38912] chdir("/home/pg/sources/mix") = 0
+[pid 38912] statx(AT_FDCWD, "/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin/matchit.vim", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFREG|0644, stx_size=138, ...}) = 0
+[pid 38912] open("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin/matchit.vim", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 27
+[pid 38912] fcntl(27, F_SETFD, FD_CLOEXEC) = 0
+[pid 38912] fcntl(27, F_GETFD)          = 0x1 (flags FD_CLOEXEC)
+[pid 38912] statx(AT_FDCWD, "/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin/matchit.vim", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFREG|0644, stx_size=138, ...}) = 0
+[pid 38912] read(27, "\" Nvim: load the matchit plugin "..., 1024) = 138
+[pid 38912] access("/home/pg/.config/nvim/pack/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/etc/xdg/nvim/pack/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/home/pg/.local/share/nvim/site/pack/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/home/pg/.local/share/flatpak/exports/share/nvim/site/pack/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/var/lib/flatpak/exports/share/nvim/site/pack/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/usr/local/share/nvim/site/pack/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/usr/share/nvim/site/pack/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/pack/", R_OK) = 0
+[pid 38912] open("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/pack/", O_RDONLY|O_LARGEFILE|O_CLOEXEC|O_DIRECTORY) = 28
+[pid 38912] fcntl(28, F_SETFD, FD_CLOEXEC) = 0
+[pid 38912] getdents64(28, 0x21754283c18 /* 3 entries */, 2048) = 72
+[pid 38912] getdents64(28, 0x21754283c18 /* 0 entries */, 2048) = 0
+[pid 38912] close(28)                   = 0
+[pid 38912] statx(AT_FDCWD, "/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/pack/dist/start/matchit", AT_STATX_SYNC_AS_STAT, STATX_ALL, 0x7ffc96cf3a30) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/lib/nvim/pack/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/usr/share/nvim/site/after/pack/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/usr/local/share/nvim/site/after/pack/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/var/lib/flatpak/exports/share/nvim/site/after/pack/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/home/pg/.local/share/flatpak/exports/share/nvim/site/after/pack/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/home/pg/.local/share/nvim/site/after/pack/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/etc/xdg/nvim/after/pack/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/home/pg/.config/nvim/after/pack/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/home/pg/.config/nvim/pack/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/etc/xdg/nvim/pack/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/home/pg/.local/share/nvim/site/pack/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/home/pg/.local/share/flatpak/exports/share/nvim/site/pack/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/var/lib/flatpak/exports/share/nvim/site/pack/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/usr/local/share/nvim/site/pack/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/usr/share/nvim/site/pack/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/pack/", R_OK) = 0
+[pid 38912] open("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/pack/", O_RDONLY|O_LARGEFILE|O_CLOEXEC|O_DIRECTORY) = 28
+[pid 38912] fcntl(28, F_SETFD, FD_CLOEXEC) = 0
+[pid 38912] getdents64(28, 0x21754283c18 /* 3 entries */, 2048) = 72
+[pid 38912] getdents64(28, 0x21754283c18 /* 0 entries */, 2048) = 0
+[pid 38912] close(28)                   = 0
+[pid 38912] statx(AT_FDCWD, "/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/pack/dist/opt/matchit", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFDIR|0755, stx_size=34, ...}) = 0
+[pid 38912] statx(AT_FDCWD, "/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/pack/dist/opt/matchit", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFDIR|0755, stx_size=34, ...}) = 0
+[pid 38912] statx(AT_FDCWD, "/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/pack/dist/opt/matchit", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFDIR|0755, stx_size=34, ...}) = 0
+[pid 38912] getcwd("/home/pg/sources/mix", 4096) = 21
+[pid 38912] chdir("/home/pg/sources/mix") = 0
+[pid 38912] chdir("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime") = 0
+[pid 38912] getcwd("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime", 4096) = 70
+[pid 38912] chdir("/home/pg/sources/mix") = 0
+[pid 38912] getcwd("/home/pg/sources/mix", 4096) = 21
+[pid 38912] chdir("/home/pg/sources/mix") = 0
+[pid 38912] chdir("/home/pg/.config/nvim") = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] chdir("/home/pg/sources/mix") = 0
+[pid 38912] getcwd("/home/pg/sources/mix", 4096) = 21
+[pid 38912] chdir("/home/pg/sources/mix") = 0
+[pid 38912] chdir("/etc/xdg/nvim")      = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] chdir("/home/pg/sources/mix") = 0
+[pid 38912] getcwd("/home/pg/sources/mix", 4096) = 21
+[pid 38912] chdir("/home/pg/sources/mix") = 0
+[pid 38912] chdir("/home/pg/.local/share/nvim/site") = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] chdir("/home/pg/sources/mix") = 0
+[pid 38912] getcwd("/home/pg/sources/mix", 4096) = 21
+[pid 38912] chdir("/home/pg/sources/mix") = 0
+[pid 38912] chdir("/home/pg/.local/share/flatpak/exports/share/nvim/site") = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] chdir("/home/pg/sources/mix") = 0
+[pid 38912] getcwd("/home/pg/sources/mix", 4096) = 21
+[pid 38912] chdir("/home/pg/sources/mix") = 0
+[pid 38912] chdir("/var/lib/flatpak/exports/share/nvim/site") = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] chdir("/home/pg/sources/mix") = 0
+[pid 38912] getcwd("/home/pg/sources/mix", 4096) = 21
+[pid 38912] chdir("/home/pg/sources/mix") = 0
+[pid 38912] chdir("/usr/local/share/nvim/site") = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] chdir("/home/pg/sources/mix") = 0
+[pid 38912] getcwd("/home/pg/sources/mix", 4096) = 21
+[pid 38912] chdir("/home/pg/sources/mix") = 0
+[pid 38912] chdir("/usr/share/nvim/site") = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] chdir("/home/pg/sources/mix") = 0
+[pid 38912] getcwd("/home/pg/sources/mix", 4096) = 21
+[pid 38912] chdir("/home/pg/sources/mix") = 0
+[pid 38912] chdir("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime") = 0
+[pid 38912] getcwd("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime", 4096) = 70
+[pid 38912] chdir("/home/pg/sources/mix") = 0
+[pid 38912] statx(AT_FDCWD, "/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/pack/dist/opt/matchit/after", AT_STATX_SYNC_AS_STAT, STATX_ALL, 0x7ffc96cf3e20) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] getcwd("/home/pg/sources/mix", 4096) = 21
+[pid 38912] chdir("/home/pg/sources/mix") = 0
+[pid 38912] chdir("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/pack/dist/opt") = 0
+[pid 38912] getcwd("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/pack/dist/opt", 4096) = 84
+[pid 38912] chdir("/home/pg/sources/mix") = 0
+[pid 38912] epoll_pwait(3, [], 1024, 0, NULL, 8) = 0
+[pid 38912] access("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/pack/dist/opt/matchit/plugin/", R_OK) = 0
+[pid 38912] open("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/pack/dist/opt/matchit/plugin/", O_RDONLY|O_LARGEFILE|O_CLOEXEC|O_DIRECTORY) = 28
+[pid 38912] fcntl(28, F_SETFD, FD_CLOEXEC) = 0
+[pid 38912] getdents64(28, 0x21754283c18 /* 3 entries */, 2048) = 80
+[pid 38912] getdents64(28, 0x21754283c18 /* 0 entries */, 2048) = 0
+[pid 38912] close(28)                   = 0
+[pid 38912] statx(AT_FDCWD, "/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/pack/dist/opt/matchit/plugin/matchit.vim", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFREG|0644, stx_size=4376, ...}) = 0
+[pid 38912] statx(AT_FDCWD, "/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/pack/dist/opt/matchit/plugin/matchit.vim", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFREG|0644, stx_size=4376, ...}) = 0
+[pid 38912] statx(AT_FDCWD, "/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/pack/dist/opt/matchit/plugin/matchit.vim", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFREG|0644, stx_size=4376, ...}) = 0
+[pid 38912] access("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/pack/dist/opt/matchit/plugin/", R_OK) = 0
+[pid 38912] open("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/pack/dist/opt/matchit/plugin/", O_RDONLY|O_LARGEFILE|O_CLOEXEC|O_DIRECTORY) = 28
+[pid 38912] fcntl(28, F_SETFD, FD_CLOEXEC) = 0
+[pid 38912] getdents64(28, 0x21754283c18 /* 3 entries */, 2048) = 80
+[pid 38912] getdents64(28, 0x21754283c18 /* 0 entries */, 2048) = 0
+[pid 38912] close(28)                   = 0
+[pid 38912] epoll_pwait(3, [], 1024, 0, NULL, 8) = 0
+[pid 38912] access("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/pack/dist/opt/matchit/plugin/matchit.vim/", R_OK) = -1 ENOTDIR (Это не каталог)
+[pid 38912] access("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/pack/dist/opt/matchit/plugin/matchit.vim/", R_OK) = -1 ENOTDIR (Это не каталог)
+[pid 38912] getcwd("/home/pg/sources/mix", 4096) = 21
+[pid 38912] chdir("/home/pg/sources/mix") = 0
+[pid 38912] chdir("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/pack/dist/opt/matchit/plugin") = 0
+[pid 38912] getcwd("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/pack/dist/opt/matchit/plugin", 4096) = 99
+[pid 38912] chdir("/home/pg/sources/mix") = 0
+[pid 38912] statx(AT_FDCWD, "/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/pack/dist/opt/matchit/plugin/matchit.vim", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFREG|0644, stx_size=4376, ...}) = 0
+[pid 38912] open("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/pack/dist/opt/matchit/plugin/matchit.vim", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 28
+[pid 38912] fcntl(28, F_SETFD, FD_CLOEXEC) = 0
+[pid 38912] fcntl(28, F_GETFD)          = 0x1 (flags FD_CLOEXEC)
+[pid 38912] statx(AT_FDCWD, "/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/pack/dist/opt/matchit/plugin/matchit.vim", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFREG|0644, stx_size=4376, ...}) = 0
+[pid 38912] read(28, "\"  matchit.vim: (global plugin) "..., 1024) = 1024
+[pid 38912] read(28, "ffer\n\"  This saves the values of"..., 1024) = 1024
+[pid 38912] read(28, "l matchit#Match_wrapper('',1,'n'"..., 1024) = 1024
+[pid 38912] read(28, "ward)     :<C-U>call matchit#Mul"..., 1024) = 1024
+[pid 38912] read(28, "e the main\n\" script is run, buff"..., 1024) = 280
+[pid 38912] read(28, "", 1024)          = 0
+[pid 38912] close(28)                   = 0
+[pid 38912] epoll_pwait(3, [], 1024, 0, NULL, 8) = 0
+[pid 38912] access("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/pack/dist/opt/matchit/plugin/", R_OK) = 0
+[pid 38912] open("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/pack/dist/opt/matchit/plugin/", O_RDONLY|O_LARGEFILE|O_CLOEXEC|O_DIRECTORY) = 28
+[pid 38912] fcntl(28, F_SETFD, FD_CLOEXEC) = 0
+[pid 38912] getdents64(28, 0x21754283c18 /* 3 entries */, 2048) = 80
+[pid 38912] getdents64(28, 0x21754283c18 /* 0 entries */, 2048) = 0
+[pid 38912] close(28)                   = 0
+[pid 38912] access("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/pack/dist/opt/matchit/plugin/", R_OK) = 0
+[pid 38912] open("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/pack/dist/opt/matchit/plugin/", O_RDONLY|O_LARGEFILE|O_CLOEXEC|O_DIRECTORY) = 28
+[pid 38912] fcntl(28, F_SETFD, FD_CLOEXEC) = 0
+[pid 38912] getdents64(28, 0x21754283c18 /* 3 entries */, 2048) = 80
+[pid 38912] getdents64(28, 0x21754283c18 /* 0 entries */, 2048) = 0
+[pid 38912] close(28)                   = 0
+[pid 38912] epoll_pwait(3, [], 1024, 0, NULL, 8) = 0
+[pid 38912] access("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/pack/dist/opt/matchit/plugin/matchit.vim/", R_OK) = -1 ENOTDIR (Это не каталог)
+[pid 38912] access("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/pack/dist/opt/matchit/plugin/matchit.vim/", R_OK) = -1 ENOTDIR (Это не каталог)
+[pid 38912] access("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/pack/dist/opt/matchit/ftdetect/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/pack/dist/opt/matchit/ftdetect/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/lib/nvim/pack/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/usr/share/nvim/site/after/pack/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/usr/local/share/nvim/site/after/pack/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/var/lib/flatpak/exports/share/nvim/site/after/pack/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/home/pg/.local/share/flatpak/exports/share/nvim/site/after/pack/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/home/pg/.local/share/nvim/site/after/pack/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/etc/xdg/nvim/after/pack/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/home/pg/.config/nvim/after/pack/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] read(27, "", 1024)          = 0
+[pid 38912] close(27)                   = 0
+[pid 38912] getcwd("/home/pg/sources/mix", 4096) = 21
+[pid 38912] chdir("/home/pg/sources/mix") = 0
+[pid 38912] chdir("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin") = 0
+[pid 38912] getcwd("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin", 4096) = 77
+[pid 38912] chdir("/home/pg/sources/mix") = 0
+[pid 38912] statx(AT_FDCWD, "/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin/matchparen.vim", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFREG|0644, stx_size=7236, ...}) = 0
+[pid 38912] open("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin/matchparen.vim", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 27
+[pid 38912] fcntl(27, F_SETFD, FD_CLOEXEC) = 0
+[pid 38912] fcntl(27, F_GETFD)          = 0x1 (flags FD_CLOEXEC)
+[pid 38912] statx(AT_FDCWD, "/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin/matchparen.vim", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFREG|0644, stx_size=7236, ...}) = 0
+[pid 38912] read(27, "\" Vim plugin for showing matchin"..., 1024) = 1024
+[pid 38912] read(27, "o define a \":match\" highlighting"..., 1024) = 1024
+[pid 38912] read(27, "rn\n    endif\n  endif\n\n  \" Figure"..., 1024) = 1024
+[pid 38912] read(27, "bol.\n    let s_skip = '!empty(fi"..., 1024) = 1024
+[pid 38912] read(27, "et stopline = stoplinetop\n  endi"..., 1024) = 1024
+[pid 38912] read(27, "le = max([1, c_lnum-&lines+adjus"..., 1024) = 1024
+[pid 38912] read(27, "\n    endif\n  endif\n\n  \" If a mat"..., 1024) = 1024
+[pid 38912] read(27, "u \". w . \"wincmd w\"\nendfunc\n\nlet"..., 1024) = 68
+[pid 38912] read(27, "", 1024)          = 0
+[pid 38912] close(27)                   = 0
+[pid 38912] getcwd("/home/pg/sources/mix", 4096) = 21
+[pid 38912] chdir("/home/pg/sources/mix") = 0
+[pid 38912] chdir("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin") = 0
+[pid 38912] getcwd("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin", 4096) = 77
+[pid 38912] chdir("/home/pg/sources/mix") = 0
+[pid 38912] statx(AT_FDCWD, "/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin/netrwPlugin.vim", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFREG|0644, stx_size=10743, ...}) = 0
+[pid 38912] open("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin/netrwPlugin.vim", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 27
+[pid 38912] fcntl(27, F_SETFD, FD_CLOEXEC) = 0
+[pid 38912] fcntl(27, F_GETFD)          = 0x1 (flags FD_CLOEXEC)
+[pid 38912] statx(AT_FDCWD, "/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin/netrwPlugin.vim", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFREG|0644, stx_size=10743, ...}) = 0
+[pid 38912] read(27, "\" netrwPlugin.vim: Handles file "..., 1024) = 1024
+[pid 38912] read(27, "-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-="..., 1024) = 1024
+[pid 38912] read(27, ",expand(\"<amatch>\"))|exe \"sil do"..., 1024) = 1024
+[pid 38912] read(27, "and(\"<amatch>\"))\n catch /^Vim\\%("..., 1024) = 1024
+[pid 38912] read(27, ",1,0+<bang>0,<q-args>)\ncom! -nar"..., 1024) = 1024
+[pid 38912] read(27, "apto('<Plug>NetrwBrowseXVis')\n  "..., 1024) = 1024
+[pid 38912] read(27, "call Dret(\"s:LocalBrowse\")\n   re"..., 1024) = 1024
+[pid 38912] read(27, "bannercnt\n    exe w:netrw_banner"..., 1024) = 1024
+[pid 38912] read(27, "t\n  \"                vim patches"..., 1024) = 1024
+[pid 38912] read(27, "bufnr(\"%\") || !exists(\"w:netrw_e"..., 1024) = 1024
+[pid 38912] read(27, "erPass(a:1<\".a:1.\">) {\")\n  let g"..., 1024) = 503
+[pid 38912] epoll_pwait(3, [], 1024, 0, NULL, 8) = 0
+[pid 38912] read(27, "", 1024)          = 0
+[pid 38912] close(27)                   = 0
+[pid 38912] getcwd("/home/pg/sources/mix", 4096) = 21
+[pid 38912] chdir("/home/pg/sources/mix") = 0
+[pid 38912] chdir("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin") = 0
+[pid 38912] getcwd("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin", 4096) = 77
+[pid 38912] chdir("/home/pg/sources/mix") = 0
+[pid 38912] statx(AT_FDCWD, "/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin/rplugin.vim", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFREG|0644, stx_size=1929, ...}) = 0
+[pid 38912] open("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin/rplugin.vim", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 27
+[pid 38912] fcntl(27, F_SETFD, FD_CLOEXEC) = 0
+[pid 38912] fcntl(27, F_GETFD)          = 0x1 (flags FD_CLOEXEC)
+[pid 38912] statx(AT_FDCWD, "/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin/rplugin.vim", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFREG|0644, stx_size=1929, ...}) = 0
+[pid 38912] read(27, "if exists('g:loaded_remote_plugi"..., 1024) = 1024
+[pid 38912] read(27, "LOCALAPPDATA') ? '$LOCALAPPDATA'"..., 1024) = 905
+[pid 38912] read(27, "", 1024)          = 0
+[pid 38912] statx(AT_FDCWD, "/home/pg/.local/share/nvim", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFDIR|0700, stx_size=18, ...}) = 0
+[pid 38912] statx(AT_FDCWD, "/home/pg/.local/share/nvim/rplugin.vim", AT_STATX_SYNC_AS_STAT, STATX_ALL, 0x7ffc96cf0fa0) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/home/pg/.local/share/nvim/rplugin.vim", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] statx(AT_FDCWD, "/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/filetype.vim", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFREG|0644, stx_size=64452, ...}) = 0
+[pid 38912] statx(AT_FDCWD, "/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/.filetype.vim-rplugin~", AT_STATX_SYNC_AS_STAT, STATX_ALL, 0x7ffc96cf0fa0) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/.filetype.vim-rplugin~", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] statx(AT_FDCWD, "/home/pg/.local/share/nvim/rplugin.vim", AT_STATX_SYNC_AS_STAT, STATX_ALL, 0x7ffc96cf2550) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/home/pg/.local/share/nvim/rplugin.vim", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] close(27)                   = 0
+[pid 38912] getcwd("/home/pg/sources/mix", 4096) = 21
+[pid 38912] chdir("/home/pg/sources/mix") = 0
+[pid 38912] chdir("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin") = 0
+[pid 38912] getcwd("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin", 4096) = 77
+[pid 38912] chdir("/home/pg/sources/mix") = 0
+[pid 38912] statx(AT_FDCWD, "/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin/shada.vim", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFREG|0644, stx_size=1778, ...}) = 0
+[pid 38912] open("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin/shada.vim", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 27
+[pid 38912] fcntl(27, F_SETFD, FD_CLOEXEC) = 0
+[pid 38912] fcntl(27, F_GETFD)          = 0x1 (flags FD_CLOEXEC)
+[pid 38912] statx(AT_FDCWD, "/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin/shada.vim", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFREG|0644, stx_size=1778, ...}) = 0
+[pid 38912] read(27, "if exists('g:loaded_shada_plugin"..., 1024) = 1024
+[pid 38912] read(27, ":if !empty(v:cmdarg)|throw '++op"..., 1024) = 754
+[pid 38912] read(27, "", 1024)          = 0
+[pid 38912] close(27)                   = 0
+[pid 38912] getcwd("/home/pg/sources/mix", 4096) = 21
+[pid 38912] chdir("/home/pg/sources/mix") = 0
+[pid 38912] chdir("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin") = 0
+[pid 38912] getcwd("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin", 4096) = 77
+[pid 38912] chdir("/home/pg/sources/mix") = 0
+[pid 38912] statx(AT_FDCWD, "/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin/spellfile.vim", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFREG|0644, stx_size=236, ...}) = 0
+[pid 38912] open("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin/spellfile.vim", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 27
+[pid 38912] fcntl(27, F_SETFD, FD_CLOEXEC) = 0
+[pid 38912] fcntl(27, F_GETFD)          = 0x1 (flags FD_CLOEXEC)
+[pid 38912] statx(AT_FDCWD, "/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin/spellfile.vim", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFREG|0644, stx_size=236, ...}) = 0
+[pid 38912] read(27, "\" Vim plugin for downloading spe"..., 1024) = 236
+[pid 38912] read(27, "", 1024)          = 0
+[pid 38912] close(27)                   = 0
+[pid 38912] getcwd("/home/pg/sources/mix", 4096) = 21
+[pid 38912] chdir("/home/pg/sources/mix") = 0
+[pid 38912] chdir("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin") = 0
+[pid 38912] getcwd("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin", 4096) = 77
+[pid 38912] chdir("/home/pg/sources/mix") = 0
+[pid 38912] statx(AT_FDCWD, "/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin/tarPlugin.vim", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFREG|0644, stx_size=2398, ...}) = 0
+[pid 38912] open("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin/tarPlugin.vim", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 27
+[pid 38912] fcntl(27, F_SETFD, FD_CLOEXEC) = 0
+[pid 38912] fcntl(27, F_GETFD)          = 0x1 (flags FD_CLOEXEC)
+[pid 38912] statx(AT_FDCWD, "/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin/tarPlugin.vim", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFREG|0644, stx_size=2398, ...}) = 0
+[pid 38912] read(27, "\" tarPlugin.vim -- a Vim plugin "..., 1024) = 1024
+[pid 38912] read(27, "(\"<amatch>\"))\n  au FileWriteCmd "..., 1024) = 1024
+[pid 38912] read(27, "  *.tar.zst\t\tcall tar#Browse(exp"..., 1024) = 350
+[pid 38912] read(27, "", 1024)          = 0
+[pid 38912] close(27)                   = 0
+[pid 38912] getcwd("/home/pg/sources/mix", 4096) = 21
+[pid 38912] chdir("/home/pg/sources/mix") = 0
+[pid 38912] chdir("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin") = 0
+[pid 38912] getcwd("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin", 4096) = 77
+[pid 38912] chdir("/home/pg/sources/mix") = 0
+[pid 38912] statx(AT_FDCWD, "/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin/tohtml.vim", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFREG|0644, stx_size=12587, ...}) = 0
+[pid 38912] open("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin/tohtml.vim", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 27
+[pid 38912] fcntl(27, F_SETFD, FD_CLOEXEC) = 0
+[pid 38912] fcntl(27, F_GETFD)          = 0x1 (flags FD_CLOEXEC)
+[pid 38912] statx(AT_FDCWD, "/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin/tohtml.vim", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFREG|0644, stx_size=12587, ...}) = 0
+[pid 38912] read(27, "\" Vim plugin for converting a sy"..., 1024) = 1024
+[pid 38912] read(27, "ss bar could not be\n\"           "..., 1024) = 1024
+[pid 38912] read(27, "e_input_for_pc option to control"..., 1024) = 1024
+[pid 38912] read(27, "ty buffer. Jan Stocker: allow g:"..., 1024) = 1024
+[pid 38912] read(27,  <unfinished ...>
+[pid 38913] <... epoll_pwait resumed>[], 1024, 20, NULL, 8) = 0
+[pid 38912] <... read resumed>"  to show the anchor being jumpe"..., 1024) = 1024
+[pid 38912] read(27,  <unfinished ...>
+[pid 38913] epoll_pwait(17,  <unfinished ...>
+[pid 38912] <... read resumed>" in\n\"\t\t\t    generated output so "..., 1024) = 1024
+[pid 38912] read(27, "as\n\"\t\t\t    'wrap' option, (Andy "..., 1024) = 1024
+[pid 38912] read(27, "pairs.\n\"\t\t  7.3_v7b1: Remove use"..., 1024) = 1024
+[pid 38912] read(27, "e_xhtml option to\n\"\t\t\t    html_u"..., 1024) = 1024
+[pid 38912] read(27, "   in cterm. Get better defaults"..., 1024) = 1024
+[pid 38912] read(27, "ps it is font related?\n\"   * Bug"..., 1024) = 1024
+[pid 38912] read(27, "fix. Add prefix to autoload dict"..., 1024) = 1024
+[pid 38912] read(27, " not already loaded\n\" - user com"..., 1024) = 299
+[pid 38912] read(27, "", 1024)          = 0
+[pid 38912] close(27)                   = 0
+[pid 38912] getcwd("/home/pg/sources/mix", 4096) = 21
+[pid 38912] chdir("/home/pg/sources/mix") = 0
+[pid 38912] chdir("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin") = 0
+[pid 38912] getcwd("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin", 4096) = 77
+[pid 38912] chdir("/home/pg/sources/mix") = 0
+[pid 38912] statx(AT_FDCWD, "/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin/tutor.vim", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFREG|0644, stx_size=202, ...}) = 0
+[pid 38912] open("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin/tutor.vim", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 27
+[pid 38912] fcntl(27, F_SETFD, FD_CLOEXEC) = 0
+[pid 38912] fcntl(27, F_GETFD)          = 0x1 (flags FD_CLOEXEC)
+[pid 38912] statx(AT_FDCWD, "/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin/tutor.vim", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFREG|0644, stx_size=202, ...}) = 0
+[pid 38912] read(27, "if exists('g:loaded_tutor_mode_p"..., 1024) = 202
+[pid 38912] read(27, "", 1024)          = 0
+[pid 38912] close(27)                   = 0
+[pid 38912] getcwd("/home/pg/sources/mix", 4096) = 21
+[pid 38912] chdir("/home/pg/sources/mix") = 0
+[pid 38912] chdir("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin") = 0
+[pid 38912] getcwd("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin", 4096) = 77
+[pid 38912] chdir("/home/pg/sources/mix") = 0
+[pid 38912] statx(AT_FDCWD, "/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin/zipPlugin.vim", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFREG|0644, stx_size=2612, ...}) = 0
+[pid 38912] open("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin/zipPlugin.vim", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 27
+[pid 38912] fcntl(27, F_SETFD, FD_CLOEXEC) = 0
+[pid 38912] fcntl(27, F_GETFD)          = 0x1 (flags FD_CLOEXEC)
+[pid 38912] statx(AT_FDCWD, "/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin/zipPlugin.vim", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFREG|0644, stx_size=2612, ...}) = 0
+[pid 38912] read(27, "\" zipPlugin.vim: Handles browsin"..., 1024) = 1024
+[pid 38912] read(27, "------------------------\n\" Load "..., 1024) = 1024
+[pid 38912] read(27, "te(expand(\"<amatch>\"))\n\n if has("..., 1024) = 564
+[pid 38912] read(27, "", 1024)          = 0
+[pid 38912] close(27)                   = 0
+[pid 38912] epoll_pwait(3, [], 1024, 0, NULL, 8) = 0
+[pid 38912] access("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/lib/nvim/plugin/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/lib/nvim/plugin/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] epoll_pwait(3, [], 1024, 0, NULL, 8) = 0
+[pid 38912] access("/home/pg/.config/nvim/plugin/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/home/pg/.config/nvim/plugin/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] epoll_pwait(3, [], 1024, 0, NULL, 8) = 0
+[pid 38912] access("/etc/xdg/nvim/plugin/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/etc/xdg/nvim/plugin/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] epoll_pwait(3, [], 1024, 0, NULL, 8) = 0
+[pid 38912] access("/home/pg/.local/share/nvim/site/plugin/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/home/pg/.local/share/nvim/site/plugin/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] epoll_pwait(3, [], 1024, 0, NULL, 8) = 0
+[pid 38912] access("/home/pg/.local/share/flatpak/exports/share/nvim/site/plugin/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/home/pg/.local/share/flatpak/exports/share/nvim/site/plugin/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] epoll_pwait(3, [], 1024, 0, NULL, 8) = 0
+[pid 38912] access("/var/lib/flatpak/exports/share/nvim/site/plugin/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/var/lib/flatpak/exports/share/nvim/site/plugin/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] epoll_pwait(3, [], 1024, 0, NULL, 8) = 0
+[pid 38912] access("/usr/local/share/nvim/site/plugin/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/usr/local/share/nvim/site/plugin/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] epoll_pwait(3, [], 1024, 0, NULL, 8) = 0
+[pid 38912] access("/usr/share/nvim/site/plugin/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/usr/share/nvim/site/plugin/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] epoll_pwait(3, [], 1024, 0, NULL, 8) = 0
+[pid 38912] access("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin/", R_OK) = 0
+[pid 38912] open("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin/", O_RDONLY|O_LARGEFILE|O_CLOEXEC|O_DIRECTORY) = 27
+[pid 38912] fcntl(27, F_SETFD, FD_CLOEXEC) = 0
+[pid 38912] getdents64(27, 0x21754283c18 /* 15 entries */, 2048) = 504
+[pid 38912] getdents64(27, 0x21754283c18 /* 0 entries */, 2048) = 0
+[pid 38912] close(27)                   = 0
+[pid 38912] access("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin/", R_OK) = 0
+[pid 38912] open("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin/", O_RDONLY|O_LARGEFILE|O_CLOEXEC|O_DIRECTORY) = 27
+[pid 38912] fcntl(27, F_SETFD, FD_CLOEXEC) = 0
+[pid 38912] getdents64(27, 0x21754284618 /* 15 entries */, 2048) = 504
+[pid 38912] getdents64(27, 0x21754284618 /* 0 entries */, 2048) = 0
+[pid 38912] close(27)                   = 0
+[pid 38912] epoll_pwait(3, [], 1024, 0, NULL, 8) = 0
+[pid 38912] epoll_pwait(3, [], 1024, 0, NULL, 8) = 0
+[pid 38912] access("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin/gzip.vim/", R_OK) = -1 ENOTDIR (Это не каталог)
+[pid 38912] access("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin/gzip.vim/", R_OK) = -1 ENOTDIR (Это не каталог)
+[pid 38912] epoll_pwait(3, [], 1024, 0, NULL, 8) = 0
+[pid 38912] access("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin/health.vim/", R_OK) = -1 ENOTDIR (Это не каталог)
+[pid 38912] access("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin/health.vim/", R_OK) = -1 ENOTDIR (Это не каталог)
+[pid 38912] epoll_pwait(3, [], 1024, 0, NULL, 8) = 0
+[pid 38912] access("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin/man.vim/", R_OK) = -1 ENOTDIR (Это не каталог)
+[pid 38912] access("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin/man.vim/", R_OK) = -1 ENOTDIR (Это не каталог)
+[pid 38912] epoll_pwait(3, [], 1024, 0, NULL, 8) = 0
+[pid 38912] access("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin/matchit.vim/", R_OK) = -1 ENOTDIR (Это не каталог)
+[pid 38912] access("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin/matchit.vim/", R_OK) = -1 ENOTDIR (Это не каталог)
+[pid 38912] epoll_pwait(3, [], 1024, 0, NULL, 8) = 0
+[pid 38912] access("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin/matchparen.vim/", R_OK) = -1 ENOTDIR (Это не каталог)
+[pid 38912] access("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin/matchparen.vim/", R_OK) = -1 ENOTDIR (Это не каталог)
+[pid 38912] epoll_pwait(3, [], 1024, 0, NULL, 8) = 0
+[pid 38912] access("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin/netrwPlugin.vim/", R_OK) = -1 ENOTDIR (Это не каталог)
+[pid 38912] access("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin/netrwPlugin.vim/", R_OK) = -1 ENOTDIR (Это не каталог)
+[pid 38912] epoll_pwait(3, [], 1024, 0, NULL, 8) = 0
+[pid 38912] access("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin/rplugin.vim/", R_OK) = -1 ENOTDIR (Это не каталог)
+[pid 38912] access("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin/rplugin.vim/", R_OK) = -1 ENOTDIR (Это не каталог)
+[pid 38912] epoll_pwait(3, [], 1024, 0, NULL, 8) = 0
+[pid 38912] access("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin/shada.vim/", R_OK) = -1 ENOTDIR (Это не каталог)
+[pid 38912] access("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin/shada.vim/", R_OK) = -1 ENOTDIR (Это не каталог)
+[pid 38912] epoll_pwait(3, [], 1024, 0, NULL, 8) = 0
+[pid 38912] access("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin/spellfile.vim/", R_OK) = -1 ENOTDIR (Это не каталог)
+[pid 38912] access("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin/spellfile.vim/", R_OK) = -1 ENOTDIR (Это не каталог)
+[pid 38912] epoll_pwait(3, [], 1024, 0, NULL, 8) = 0
+[pid 38912] access("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin/tarPlugin.vim/", R_OK) = -1 ENOTDIR (Это не каталог)
+[pid 38912] access("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin/tarPlugin.vim/", R_OK) = -1 ENOTDIR (Это не каталог)
+[pid 38912] epoll_pwait(3, [], 1024, 0, NULL, 8) = 0
+[pid 38912] access("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin/tohtml.vim/", R_OK) = -1 ENOTDIR (Это не каталог)
+[pid 38912] access("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin/tohtml.vim/", R_OK) = -1 ENOTDIR (Это не каталог)
+[pid 38912] epoll_pwait(3, [], 1024, 0, NULL, 8) = 0
+[pid 38912] access("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin/tutor.vim/", R_OK) = -1 ENOTDIR (Это не каталог)
+[pid 38912] access("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin/tutor.vim/", R_OK) = -1 ENOTDIR (Это не каталог)
+[pid 38912] epoll_pwait(3, [], 1024, 0, NULL, 8) = 0
+[pid 38912] access("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin/zipPlugin.vim/", R_OK) = -1 ENOTDIR (Это не каталог)
+[pid 38912] access("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/plugin/zipPlugin.vim/", R_OK) = -1 ENOTDIR (Это не каталог)
+[pid 38912] epoll_pwait(3, [], 1024, 0, NULL, 8) = 0
+[pid 38912] access("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/lib/nvim/plugin/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/lib/nvim/plugin/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/home/pg/.config/nvim/pack/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/etc/xdg/nvim/pack/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/home/pg/.local/share/nvim/site/pack/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/home/pg/.local/share/flatpak/exports/share/nvim/site/pack/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/var/lib/flatpak/exports/share/nvim/site/pack/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/usr/local/share/nvim/site/pack/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/usr/share/nvim/site/pack/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/pack/", R_OK) = 0
+[pid 38912] open("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/pack/", O_RDONLY|O_LARGEFILE|O_CLOEXEC|O_DIRECTORY) = 27
+[pid 38912] fcntl(27, F_SETFD, FD_CLOEXEC) = 0
+[pid 38912] getdents64(27, 0x21754285018 /* 3 entries */, 2048) = 72
+[pid 38912] getdents64(27, 0x21754285018 /* 0 entries */, 2048) = 0
+[pid 38912] close(27)                   = 0
+[pid 38912] access("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/pack/dist/start/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/lib/nvim/pack/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/usr/share/nvim/site/after/pack/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/usr/local/share/nvim/site/after/pack/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/var/lib/flatpak/exports/share/nvim/site/after/pack/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/home/pg/.local/share/flatpak/exports/share/nvim/site/after/pack/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/home/pg/.local/share/nvim/site/after/pack/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/etc/xdg/nvim/after/pack/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/home/pg/.config/nvim/after/pack/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/home/pg/.config/nvim/start/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/etc/xdg/nvim/start/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/home/pg/.local/share/nvim/site/start/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/home/pg/.local/share/flatpak/exports/share/nvim/site/start/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/var/lib/flatpak/exports/share/nvim/site/start/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/usr/local/share/nvim/site/start/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/usr/share/nvim/site/start/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/start/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/lib/nvim/start/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/usr/share/nvim/site/after/start/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/usr/local/share/nvim/site/after/start/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/var/lib/flatpak/exports/share/nvim/site/after/start/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/home/pg/.local/share/flatpak/exports/share/nvim/site/after/start/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/home/pg/.local/share/nvim/site/after/start/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/etc/xdg/nvim/after/start/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/home/pg/.config/nvim/after/start/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] statx(AT_FDCWD, "/home/pg/.config/nvim", AT_STATX_SYNC_AS_STAT, STATX_ALL, 0x7ffc96cf37a0) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/home/pg/.config/nvim/pack/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/home/pg/.config/nvim/start/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] statx(AT_FDCWD, "/etc/xdg/nvim", AT_STATX_SYNC_AS_STAT, STATX_ALL, 0x7ffc96cf37a0) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/etc/xdg/nvim/pack/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/etc/xdg/nvim/start/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] statx(AT_FDCWD, "/home/pg/.local/share/nvim/site", AT_STATX_SYNC_AS_STAT, STATX_ALL, 0x7ffc96cf37a0) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/home/pg/.local/share/nvim/site/pack/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/home/pg/.local/share/nvim/site/start/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] statx(AT_FDCWD, "/home/pg/.local/share/flatpak/exports/share/nvim/site", AT_STATX_SYNC_AS_STAT, STATX_ALL, 0x7ffc96cf37a0) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/home/pg/.local/share/flatpak/exports/share/nvim/site/pack/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/home/pg/.local/share/flatpak/exports/share/nvim/site/start/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] statx(AT_FDCWD, "/var/lib/flatpak/exports/share/nvim/site", AT_STATX_SYNC_AS_STAT, STATX_ALL, 0x7ffc96cf37a0) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/var/lib/flatpak/exports/share/nvim/site/pack/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/var/lib/flatpak/exports/share/nvim/site/start/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] statx(AT_FDCWD, "/usr/local/share/nvim/site", AT_STATX_SYNC_AS_STAT, STATX_ALL, 0x7ffc96cf37a0) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/usr/local/share/nvim/site/pack/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/usr/local/share/nvim/site/start/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] statx(AT_FDCWD, "/usr/share/nvim/site", AT_STATX_SYNC_AS_STAT, STATX_ALL, 0x7ffc96cf37a0) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/usr/share/nvim/site/pack/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/usr/share/nvim/site/start/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] statx(AT_FDCWD, "/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFDIR|0755, stx_size=500, ...}) = 0
+[pid 38912] statx(AT_FDCWD, "/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFDIR|0755, stx_size=500, ...}) = 0
+[pid 38912] access("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/pack/", R_OK) = 0
+[pid 38912] open("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/pack/", O_RDONLY|O_LARGEFILE|O_CLOEXEC|O_DIRECTORY) = 27
+[pid 38912] fcntl(27, F_SETFD, FD_CLOEXEC) = 0
+[pid 38912] getdents64(27, 0x21754285018 /* 3 entries */, 2048) = 72
+[pid 38912] getdents64(27, 0x21754285018 /* 0 entries */, 2048) = 0
+[pid 38912] close(27)                   = 0
+[pid 38912] access("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/pack/dist/start/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/start/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] statx(AT_FDCWD, "/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/pack/dist/opt/matchit", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFDIR|0755, stx_size=34, ...}) = 0
+[pid 38912] statx(AT_FDCWD, "/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/pack/dist/opt/matchit", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFDIR|0755, stx_size=34, ...}) = 0
+[pid 38912] statx(AT_FDCWD, "/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/lib/nvim", AT_STATX_SYNC_AS_STAT, STATX_ALL, 0x7ffc96cf37a0) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/lib/nvim/pack/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/lib/nvim/start/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/usr/share/nvim/site/after/pack/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/usr/share/nvim/site/after/start/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/usr/local/share/nvim/site/after/pack/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/usr/local/share/nvim/site/after/start/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/var/lib/flatpak/exports/share/nvim/site/after/pack/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/var/lib/flatpak/exports/share/nvim/site/after/start/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/home/pg/.local/share/flatpak/exports/share/nvim/site/after/pack/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/home/pg/.local/share/flatpak/exports/share/nvim/site/after/start/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/home/pg/.local/share/nvim/site/after/pack/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/home/pg/.local/share/nvim/site/after/start/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/etc/xdg/nvim/after/pack/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/etc/xdg/nvim/after/start/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/home/pg/.config/nvim/after/pack/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/home/pg/.config/nvim/after/start/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/home/pg/.config/nvim/pack/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/home/pg/.config/nvim/start/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/etc/xdg/nvim/pack/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/etc/xdg/nvim/start/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/home/pg/.local/share/nvim/site/pack/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/home/pg/.local/share/nvim/site/start/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/home/pg/.local/share/flatpak/exports/share/nvim/site/pack/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/home/pg/.local/share/flatpak/exports/share/nvim/site/start/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/var/lib/flatpak/exports/share/nvim/site/pack/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/var/lib/flatpak/exports/share/nvim/site/start/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/usr/local/share/nvim/site/pack/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/usr/local/share/nvim/site/start/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/usr/share/nvim/site/pack/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/usr/share/nvim/site/start/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/pack/", R_OK) = 0
+[pid 38912] open("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/pack/", O_RDONLY|O_LARGEFILE|O_CLOEXEC|O_DIRECTORY) = 27
+[pid 38912] fcntl(27, F_SETFD, FD_CLOEXEC) = 0
+[pid 38912] getdents64(27, 0x21754284618 /* 3 entries */, 2048) = 72
+[pid 38912] getdents64(27, 0x21754284618 /* 0 entries */, 2048) = 0
+[pid 38912] close(27)                   = 0
+[pid 38912] access("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/pack/dist/start/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/share/nvim/runtime/start/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/lib/nvim/pack/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/home/pg/mix/store/MLSLNtdEZMGSIRVKB-editor-neovim/lib/nvim/start/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/usr/share/nvim/site/after/pack/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/usr/share/nvim/site/after/start/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/usr/local/share/nvim/site/after/pack/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/usr/local/share/nvim/site/after/start/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/var/lib/flatpak/exports/share/nvim/site/after/pack/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/var/lib/flatpak/exports/share/nvim/site/after/start/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/home/pg/.local/share/flatpak/exports/share/nvim/site/after/pack/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/home/pg/.local/share/flatpak/exports/share/nvim/site/after/start/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/home/pg/.local/share/nvim/site/after/pack/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/home/pg/.local/share/nvim/site/after/start/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/etc/xdg/nvim/after/pack/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/etc/xdg/nvim/after/start/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/home/pg/.config/nvim/after/pack/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] access("/home/pg/.config/nvim/after/start/", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] statx(AT_FDCWD, "/usr/share/nvim/site/after", AT_STATX_SYNC_AS_STAT, STATX_ALL, 0x7ffc96cf37a0) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] statx(AT_FDCWD, "/usr/local/share/nvim/site/after", AT_STATX_SYNC_AS_STAT, STATX_ALL, 0x7ffc96cf37a0) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] statx(AT_FDCWD, "/var/lib/flatpak/exports/share/nvim/site/after", AT_STATX_SYNC_AS_STAT, STATX_ALL, 0x7ffc96cf37a0) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] statx(AT_FDCWD, "/home/pg/.local/share/flatpak/exports/share/nvim/site/after", AT_STATX_SYNC_AS_STAT, STATX_ALL, 0x7ffc96cf37a0) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] statx(AT_FDCWD, "/home/pg/.local/share/nvim/site/after", AT_STATX_SYNC_AS_STAT, STATX_ALL, 0x7ffc96cf37a0) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] statx(AT_FDCWD, "/etc/xdg/nvim/after", AT_STATX_SYNC_AS_STAT, STATX_ALL, 0x7ffc96cf37a0) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] statx(AT_FDCWD, "/home/pg/.config/nvim/after", AT_STATX_SYNC_AS_STAT, STATX_ALL, 0x7ffc96cf37a0) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] open("/home/pg/.local/share/nvim/shada/main.shada", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 27
+[pid 38912] fcntl(27, F_SETFD, FD_CLOEXEC) = 0
+[pid 38912] readv(27, [{iov_base="\1", iov_len=1}, {iov_base="\316a\324\227<J\205\251generator\304\4nvim\247version\304"..., iov_len=1024}], 2) = 693
+[pid 38912] readv(27, [{iov_base="", iov_len=332}], 1) = 0
+[pid 38912] close(27)                   = 0
+[pid 38912] getuid()                    = 1000
+[pid 38912] open("/etc/passwd", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 27
+[pid 38912] fcntl(27, F_SETFD, FD_CLOEXEC) = 0
+[pid 38912] fcntl(27, F_SETFD, FD_CLOEXEC) = 0
+[pid 38912] read(27, "root:x:0:0:root:/root:/bin/bash\n"..., 1024) = 1024
+[pid 38912] read(27, "/dev/null:/sbin/nologin\nqemu:x:1"..., 1024) = 1024
+[pid 38912] read(27, "spawned by NetworkManager:/:/sbi"..., 1024) = 587
+[pid 38912] close(27)                   = 0
+[pid 38912] uname({sysname="Linux", nodename="fedora", ...}) = 0
+[pid 38912] getpid()                    = 38912
+[pid 38912] epoll_pwait(3, [], 1024, 0, NULL, 8) = 0
+[pid 38912] epoll_pwait(3, [], 1024, 0, NULL, 8) = 0
+[pid 38912] getcwd("/home/pg/sources/mix", 4096) = 21
+[pid 38912] getcwd("/home/pg/sources/mix", 4096) = 21
+[pid 38912] statx(AT_FDCWD, "/home/pg/sources/mix", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFDIR|0755, stx_size=116, ...}) = 0
+[pid 38912] statx(AT_FDCWD, "", AT_STATX_SYNC_AS_STAT, STATX_ALL, 0x7ffc96cf0e00) = -1 ENOENT (Нет такого файла или каталога)
+[pid 38912] write(20, "\1\0\0\0\0\0\0\0", 8) = 8
+[pid 38913] <... epoll_pwait resumed>[{events=EPOLLIN, data={u32=20, u64=20}}], 1024, 20, NULL, 8) = 1
+[pid 38913] read(20, "\1\0\0\0\0\0\0\0", 1024) = 8
+[pid 38912] futex(0x7f44fd937a24, FUTEX_WAIT_PRIVATE, 2147483664, NULL <unfinished ...>
+[pid 38913] futex(0x7f44fd937a24, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+[pid 38912] <... futex resumed>)        = -1 EAGAIN (Ресурс временно недоступен)
+[pid 38912] write(20, "\1\0\0\0\0\0\0\0", 8 <unfinished ...>
+[pid 38913] <... futex resumed>)        = 0
+[pid 38912] <... write resumed>)        = 8
+[pid 38912] epoll_pwait(3, [], 1024, 0, NULL, 8) = 0
+[pid 38913] epoll_pwait(17, [{events=EPOLLIN, data={u32=20, u64=20}}], 1024, 20, NULL, 8) = 1
+[pid 38913] read(20, "\1\0\0\0\0\0\0\0", 1024) = 8
+[pid 38912] epoll_pwait(3, [], 1024, 0, NULL, 8) = 0
+[pid 38912] epoll_pwait(3, [], 1024, 0, NULL, 8) = 0
+[pid 38913] writev(1, [{iov_base="\33[?25l", iov_len=6}, {iov_base="\33(B\33[m\33[H\33[2J\33[K\n\33[94m~\33[K\r\n~\33[K"..., iov_len=909}, {iov_base="\33[?25h", iov_len=6}], 3 <unfinished ...>
+[?25l(B[m[H[2J[K
+[94m~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+~[K
+(B[0;1;7m[Нет имени]                                                   0,0-1         Весь[7;35H(B[mNVIM v0.6.0[9;19HNvim is open source and freely distributable[10;29Hhttps://neovim.io/#chat[12;18Htype  :help nvim[38;5;81m<Enter>(B[m       if you are new! [13;18Htype  :checkhealth[38;5;81m<Enter>(B[m     to optimize Nvim[14;10Hнаберите :q[38;5;81m<Enter>(B[m               чтобы выйти из программы     [15;18Htype  :help[38;5;81m<Enter>(B[m            for help        [17;21HБедным детям в Уганде нужна ваша помощь![18;10Hнаберите :help iccf[38;5;81m<Enter>(B[m       для дополнительной информации]112[2 q]112[2 q[H[?25h[pid 38912] epoll_pwait(3,  <unfinished ...>
+[pid 38913] <... writev resumed>)       = 921
+[pid 38912] <... epoll_pwait resumed>[], 1024, 0, NULL, 8) = 0
+[pid 38913] epoll_pwait(22,  <unfinished ...>
+[pid 38912] write(20, "\1\0\0\0\0\0\0\0", 8 <unfinished ...>
+[pid 38913] <... epoll_pwait resumed>[], 1024, 0, NULL, 8) = 0
+[pid 38912] <... write resumed>)        = 8
+[pid 38913] epoll_pwait(17,  <unfinished ...>
+[pid 38912] epoll_pwait(3,  <unfinished ...>
+[pid 38913] <... epoll_pwait resumed>[{events=EPOLLIN, data={u32=20, u64=20}}], 1024, 20, NULL, 8) = 1
+[pid 38912] <... epoll_pwait resumed>[], 1024, 0, NULL, 8) = 0
+[pid 38913] read(20,  <unfinished ...>
+[pid 38912] epoll_pwait(3,  <unfinished ...>
+[pid 38913] <... read resumed>"\1\0\0\0\0\0\0\0", 1024) = 8
+[pid 38913] epoll_pwait(17, [], 1024, 20, NULL, 8) = 0
+[pid 38913] epoll_pwait(17, [], 1024, 20, NULL, 8) = 0
+[pid 38913] epoll_pwait(17, [], 1024, 20, NULL, 8) = 0
+[pid 38913] epoll_pwait(17, [], 1024, 20, NULL, 8) = 0
+[pid 38913] writev(1, [{iov_base="\33[?25l", iov_len=6}, {iov_base="\33[?1004h", iov_len=8}, {iov_base="\33[?25h", iov_len=6}], 3[?25l[?1004h[?25h) = 20
+[pid 38913] epoll_pwait(22, [], 1024, 0, NULL, 8) = 0
+[pid 38913] epoll_pwait(17,  <unfinished ...>
+[pid 38912] <... epoll_pwait resumed>0x7ffc96cf3fb0, 1024, 4000, NULL, 8) = -1 EINTR (Прерван системный вызов)
+strace: Process 38912 detached
+strace: Process 38913 detached

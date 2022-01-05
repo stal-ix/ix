@@ -5,29 +5,31 @@
 {% endblock %}
 
 {% block bld_libs %}
+lib/c
+lib/z
+lib/xz
+lib/mpc
+lib/gmp
+lib/c++
+lib/mpfr
+lib/intl
+lib/expat
+lib/iconv
+lib/xxhash
+lib/curses
+lib/intel/pt
+lib/readline
+
 dev/debug/gdb/py(edit=readline)
+
 {% if target.os == 'linux' %}
 lib/linux
 {% endif %}
-lib/intel/pt
-lib/intl
-lib/expat
-lib/curses
-lib/iconv
-lib/readline
-lib/c
-lib/c++
-lib/z
-lib/xz
-lib/gmp
-lib/mpfr
-lib/mpc
-lib/xxhash
 {% endblock %}
 
 {% block bld_tool %}
-dev/lang/byacc
 dev/lang/flex
+dev/lang/byacc
 dev/doc/texinfo
 {% endblock %}
 

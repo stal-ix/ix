@@ -15,7 +15,7 @@ lib/textstyle
 
 {% block bld_tool %}
 dev/lang/bison/3/6
-lib/z
+tool/compress/gzip
 {% endblock %}
 
 {% block run_deps %}
