@@ -1,4 +1,4 @@
-{% extends '//gnu/coreutils/template/mix.sh' %}
+{% extends '//gnu/coreutils/t/mix.sh' %}
 
 {% block fetch %}
 https://ftp.gnu.org/gnu/coreutils/coreutils-8.32.tar.xz
