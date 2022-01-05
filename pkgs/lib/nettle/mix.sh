@@ -10,10 +10,6 @@ lib/c
 lib/gmp
 {% endblock %}
 
-{% block bld_libs %}
-lib/c
-{% endblock %}
-
 {% block host_libs %}
 lib/c
 {% endblock %}
