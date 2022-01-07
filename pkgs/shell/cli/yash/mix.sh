@@ -12,6 +12,7 @@ lib/edit
 {% endblock %}
 
 {% block c_rename_symbol %}
+vfree
 wordfree
 add_history
 {% endblock %}
