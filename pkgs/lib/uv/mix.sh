@@ -1,8 +1,12 @@
 {% extends '//mix/template/autohell.sh' %}
 
 {% block fetch %}
-https://github.com/libuv/libuv/archive/refs/tags/v1.42.0.tar.gz
-3f8ede5f30e6cc68b4e6f7d366dc9f00
+https://github.com/libuv/libuv/archive/refs/tags/v1.43.0.tar.gz
+da212b6d2b627f99492168d5d3ce6da6
+{% endblock %}
+
+{% block lib_deps %}
+lib/c
 {% endblock %}
 
 {% block bld_tool %}
@@ -12,8 +16,4 @@ dev/build/auto/make/1/16
 
 {% block autoreconf %}
 dash autogen.sh
-{% endblock %}
-
-{% block lib_deps %}
-lib/c
 {% endblock %}

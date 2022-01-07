@@ -1,8 +1,8 @@
 {% extends '//mix/template/autohell.sh' %}
 
 {% block fetch %}
-http://thrysoee.dk/editline/libedit-20210522-3.1.tar.gz
-6ad9e9208daf031adf1ebc64441769e0
+https://www.thrysoee.dk/editline/libedit-20210910-3.1.tar.gz
+648946c97eb92daed5ca0d08bbd5e6a2
 {% endblock %}
 
 {% block lib_deps %}
