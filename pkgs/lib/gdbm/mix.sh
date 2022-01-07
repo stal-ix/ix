@@ -10,10 +10,10 @@ lib/c
 {% endblock %}
 
 {% block bld_libs %}
-lib/readline
 {% if kind == 'bin' %}
 lib/intl
 {% endif %}
+lib/readline
 {% endblock %}
 
 {% if kind == 'lib' %}

@@ -1,4 +1,4 @@
-{% extends '//mix/template/autohell.sh' %}
+{% extends '//mix/template/cmake.sh' %}
 
 {% block fetch %}
 https://downloads.sourceforge.net/project/pcre/pcre/8.45/pcre-8.45.tar.bz2
@@ -18,14 +18,13 @@ lib/bzip2
 box/boot
 {% endblock %}
 
-{% block configure_flags %}
---enable-pcregrep-libz
---enable-pcregrep-libbz2
---enable-unicode-properties
---enable-pcre16
---enable-pcre32
---enable-jit
---disable-cpp
+{% block cmake_flags %}
+PCRE_BUILD_PCRE16=ON
+PCRE_BUILD_PCRE32=ON
+PCRE_BUILD_PCRECPP=OFF
+PCRE_SUPPORT_JIT=ON
+PCRE_SUPPORT_PCREGREP_JIT=ON
+PCRE_SUPPORT_UNICODE_PROPERTIES=ON
 {% endblock %}
 
 {% block env %}

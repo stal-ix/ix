@@ -1,7 +1,7 @@
 {% extends '//mix/template/proxy.sh' %}
 
 {% block bld_tool %}
-shell/cli/dash/minimal
+dev/tool/sh
 dev/lang/clang/13/opt
 {% endblock %}
 
