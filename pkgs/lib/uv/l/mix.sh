@@ -9,13 +9,8 @@ https://github.com/keplerproject/lua-compat-5.3/archive/refs/tags/v0.9.tar.gz
 {% endblock %}
 
 {% block unpack %}
-mkdir src; cd src
-extract ${src}/1*
-cd *
-cd deps; rm -r lua-compat-5.3
-extract ${src}/v*;
-mv lua-compat-5.3* lua-compat-5.3
-cd ..
+mkdir src; cd src; extract1 ${src}/1*
+(cd deps/lua-compat-5.3; extract1 ${src}/v*)
 {% endblock %}
 
 {% block cmake_flags %}

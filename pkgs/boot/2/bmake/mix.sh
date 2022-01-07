@@ -15,9 +15,11 @@ boot/1/env
 
 {% block unpack %}
 cd ${out}
-mkdir bin && cd bin
-mkdir src && cd src
-extract ${src}/bmake* && cd bmake*
+
+mkdir bin; cd bin
+mkdir src; cd src
+
+extract0 ${src}/bmake* && cd bmake*
 {% endblock %}
 
 {% block step_setup %}

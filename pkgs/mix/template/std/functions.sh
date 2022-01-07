@@ -1,21 +1,20 @@
-extract() {
-    case $1 in
-    *.zip)
-        if command -v unzip; then
-            unzip $1
-        else
-            ${exe} ${mix} misc unzip $1
-        fi
-        ;;
-    *)
-        if command -v pv; then
-            pv $1 | bsdcat | bsdtar xf -
-        else
-            ${exe} ${mix} misc untar $1
-        fi
-        ;;
-    esac
-}
+extract0() (
+    if command -v extract; then
+        extract 0 ${1}
+    else
+        ${exe} ${mix} misc extract ${1}
+    fi
+)
+
+extract1() (
+    if command -v extract; then
+        extract 1 ${1}
+    else
+        mkdir _; (
+            cd _; extract0 ${1}; cd *; mv $(ls -A) ../../
+        ); rm -r _
+    fi
+)
 
 find_pkg() (
     source_env "${MIX_T_DIR}"

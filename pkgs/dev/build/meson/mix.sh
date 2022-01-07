@@ -17,24 +17,23 @@ box/boot
 dev/tool/python
 {% endblock %}
 
-{% block build %}
-cd ${out}
+{% block unpack %}
+# spaces in paths
+mkdir src; cd src; extract0 ${src}/0*; cd meson*
+{% endblock %}
 
-(
-    extract ${src}/0*
-
-    ln -s meson* meson
-    mkdir bin && cd bin
-    ln -s ../meson/meson.py ./meson
-)
-
-(
-    cd meson
-
-    patch -p1 << EOF
+{% block patch %}
+patch -p1 << EOF
 {% include '00.diff' %}
 EOF
-)
+{% endblock %}
+
+{% block build %}
+ln -s meson.py meson
+{% endblock %}
+
+{% block install %}
+cp -R ../meson* ${out}/bin
 {% endblock %}
 
 {% block strip_pc %}

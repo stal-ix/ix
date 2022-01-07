@@ -1,5 +1,5 @@
 {% block shell %}
-dev/tool/dash(opt=fast)
+dev/tool/dash
 {% endblock %}
 
 {% block box %}
@@ -7,7 +7,5 @@ gnu/box
 {% endblock %}
 
 {% block decompressor %}
-tool/pv
-tool/compress/unzip
-lib/archive(opt=fast)
+dev/tool/extract
 {% endblock %}

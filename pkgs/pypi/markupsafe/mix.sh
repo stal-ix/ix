@@ -6,7 +6,10 @@ https://files.pythonhosted.org/packages/bf/10/ff66fea6d1788c458663a84d88787bae15
 {% endblock %}
 
 {% block build %}
-cd ${out} && mkdir module && cd module && extract ${src}/M*
+cd ${out}
+mkdir module
+cd module
+extract0 ${src}/M*
 ln -s Ma*/src/markupsafe ./
 {% endblock %}
 

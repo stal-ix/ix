@@ -1,6 +1,6 @@
 {% extends 'ninja.sh' %}
 
-{% block bld_tool %}
+{% block std_box %}
 dev/build/gn
 dev/tool/python
 dev/build/pkg-config

@@ -19,7 +19,7 @@ boot/8/env/std
 {% endblock %}
 
 {% block unpack %}
-extract ${src}/flex* && cd flex*
+extract1 ${src}/flex*
 {% endblock %}
 
 {% block build %}

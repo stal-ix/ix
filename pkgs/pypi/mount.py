@@ -23,7 +23,7 @@ dev/tool/python/mix.sh
 {% block unpack %}
 mkdir -p ${out}/share
 cd ${out}/share
-extract ${src}/*.whl
+extract0 ${src}/*.whl
 {% endblock %}
 
 {% block build %}

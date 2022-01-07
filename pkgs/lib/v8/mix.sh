@@ -17,7 +17,7 @@ lib/linux
 {% endblock %}
 
 {% block unpack %}
-mkdir src; cd src; extract ${src}/9.7.37.tar.gz; cd v8*
+mkdir src; cd src; extract1 ${src}/9.7.37.tar.gz
 {% include 'unpack.sh' %}
 {% endblock %}
 

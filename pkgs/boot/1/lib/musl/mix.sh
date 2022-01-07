@@ -18,7 +18,7 @@ boot/0/env
 {% endblock %}
 
 {% block script %}
-cd ${out} && extract ${src}/musl* && cd musl*
+cd ${out}; extract0 ${src}/musl*; cd musl*
 
 setup_compiler
 setup_ar

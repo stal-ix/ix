@@ -1,4 +1,4 @@
-mkpushd ${tmp}/tools
+mkpushd ${tmp}/bin
 
 # setup build tools
 mkpushd bt

@@ -13,7 +13,7 @@ boot/1/env
 {% endblock %}
 
 {% block script %}
-extract ${src}/*.zip && cd shutil*
+extract0 ${src}/*.zip && cd shutil*
 
 setup_compiler
 setup_ar

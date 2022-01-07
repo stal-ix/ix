@@ -136,11 +136,6 @@ def cli_misc_runpy(ctx):
     exec(sys.stdin.read(), g, g)
 
 
-def cli_misc_untar(ctx):
-    for a in ctx['args']:
-        csc.untar(a)
-
-
 def cli_misc_chksum(ctx):
     args = ctx['args']
     path = args[0]
@@ -151,9 +146,12 @@ def cli_misc_chksum(ctx):
     print(f'{kind}:{res}')
 
 
-def cli_misc_unzip(ctx):
+def cli_misc_extract(ctx):
     for a in ctx['args']:
-        csc.unzip(a)
+        if '.zip' in a:
+            csc.unzip(a)
+        else:
+            csc.untar(a)
 
 
 def cli_misc_fetch(ctx):

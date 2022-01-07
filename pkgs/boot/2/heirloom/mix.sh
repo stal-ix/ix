@@ -11,8 +11,8 @@ boot/2/shutil
 boot/1/env
 {% endblock %}
 
-{% block unpack_chdir %}
-cd *
+{% block unpack %}
+extract0 ${src}/*.zip; cd *
 {% endblock %}
 
 {% block step_setup %}

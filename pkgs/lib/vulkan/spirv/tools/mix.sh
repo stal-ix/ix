@@ -8,12 +8,11 @@ https://github.com/KhronosGroup/SPIRV-Headers/archive/refs/tags/sdk-1.2.198.0.ta
 {% endblock %}
 
 {% block unpack %}
-extract ${src}/v*
-cd S*
+extract1 ${src}/v*
 
 (
     cd external
-    extract ${src}/sdk*
+    extract0 ${src}/sdk*
     ln -s S* SPIRV-Headers
 )
 {% endblock %}

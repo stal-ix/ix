@@ -10,7 +10,10 @@ dev/tool/python
 {% endblock %}
 
 {% block build %}
-cd ${out} && mkdir bin && cd bin && extract ${src}/SCons* && ln -s SCons* sconsdir
+cd ${out}; mkdir bin; cd bin
+
+extract0 ${src}/SCons*
+ln -s SCons* sconsdir
 
 cat << EOF > scons
 #!$(which dash)

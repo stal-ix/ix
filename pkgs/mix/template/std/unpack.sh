@@ -1,4 +1,4 @@
-mkdir unp && cd unp
+mkdir src; cd src
 
 for s in ${src}/*; do
     case ${s} in
@@ -9,11 +9,7 @@ for s in ${src}/*; do
         *.patch)
         ;;
         *)
-            extract ${s}
+            extract1 ${s}
         ;;
     esac
 done
-
-{% block unpack_chdir %}
-cd .. && mv unp/* bld && cd bld
-{% endblock %}

@@ -16,7 +16,7 @@ dev/tool/python
 {% endblock %}
 
 {% block unpack %}
-mkdir src; cd src; extract ${src}/*.tar.gz
+mkdir src; cd src; extract0 ${src}/*.tar.gz
 {% endblock %}
 
 {% block configure %}

@@ -8,5 +8,5 @@ gnu/patch
 lib/magic
 gnu/diffutils
 gnu/findutils
-gnu/coreutils/8/32(opt=fast)
+gnu/coreutils/8/32
 {% endblock %}
