@@ -15,7 +15,7 @@ cd ${out}; mkdir bin; cd bin
 extract1 ${src}/SCons*
 
 cat << EOF > scons
-#!$(which dash)
+#!$(which sh)
 PYTHONPATH=${PWD} python3 ${PWD}/SCons/__main__.py "\$@"
 EOF
 

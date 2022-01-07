@@ -17,7 +17,7 @@ dev/tool/python
 {% endblock %}
 
 {% block autoreconf %}
-dash autogen.sh
+sh autogen.sh
 {% endblock %}
 
 {% block setup_tools %}

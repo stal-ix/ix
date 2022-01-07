@@ -18,5 +18,5 @@ add_history
 {% endblock %}
 
 {% block configure %}
-dash configure --prefix="${out}" --with-term-lib=ncurses
+sh configure --prefix="${out}" --with-term-lib=ncurses
 {% endblock %}

@@ -24,5 +24,5 @@ dev/build/auto/make/1/16
 {% endblock %}
 
 {% block autoreconf %}
-dash bin/setup.sh
+sh bin/setup.sh
 {% endblock %}

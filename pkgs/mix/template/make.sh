@@ -14,7 +14,7 @@ make
 -s
 {% endblock %}
 
-SHELL="$(which dash)"
+SHELL="$(which sh)"
 PREFIX="${out}"
 prefix="${out}"
 

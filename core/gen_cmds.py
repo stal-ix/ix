@@ -60,7 +60,7 @@ class ScriptBuilder:
 
     def build_sh_script(self, data, env):
         return {
-            'args': ['dash', '-s'],
+            'args': ['sh', '-s'],
             'stdin': data,
             'env': env,
         }

@@ -40,7 +40,7 @@ export LDLIBS="${tmp}/symbols.o"
 
 ulimit -s 60000
 
-dash make.sh \
+sh make.sh \
     --prefix=${out} \
     --xc-host='{{self.boot_lisp().strip()}}' \
     --with-sb-ldb \
@@ -50,5 +50,5 @@ dash make.sh \
 {% endblock %}
 
 {% block install %}
-dash install.sh
+sh install.sh
 {% endblock %}

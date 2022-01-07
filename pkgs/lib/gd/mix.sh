@@ -23,5 +23,5 @@ dev/build/auto/make/1/16
 {% endblock %}
 
 {% block autoreconf %}
-dash bootstrap.sh
+sh bootstrap.sh
 {% endblock %}

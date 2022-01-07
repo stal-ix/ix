@@ -34,17 +34,17 @@ S="-Wl,--start-group"
 E="-Wl,--end-group"
 
 cat << EOF > cc
-#!$(which dash)
+#!$(which sh)
 exec "$(which ${CC})" ${S} ${A} "\$@" ${A} ${E}
 EOF
 
 cat << EOF > c++
-#!$(which dash)
+#!$(which sh)
 exec "$(which ${CXX})" ${S} ${B} "\$@" ${B} ${E}
 EOF
 
 cat << EOF > preproc
-#!$(which dash)
+#!$(which sh)
 exec "$(which ${CPP})" ${CPPFLAGS} "\$@" ${CPPFLAGS}
 EOF
 

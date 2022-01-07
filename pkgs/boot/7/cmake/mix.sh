@@ -40,7 +40,7 @@ CMAKE_BOOTSTRAP=1
 {% endblock %}
 
 {% block configure %}
-dash bootstrap \
+sh bootstrap \
     --prefix=${out}   \
     --generator=Ninja \
     --parallel=${make_thrs}

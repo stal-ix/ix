@@ -22,8 +22,7 @@ for x in perl makeinfo; do
 done
 
 cat << EOF > help2man
-#!$(which dash)
-
+#!$(which sh)
 touch doc/bison.1.tmp
 EOF
 

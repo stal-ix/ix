@@ -30,7 +30,7 @@ export LUA_PATH=
 
 {% block setup_tools %}
 cat << EOF > lua
-#!$(which dash)
+#!$(which sh)
 export LUA_PATH="${LUA_PATH}:\${LUA_PATH}"
 exec "$(which lua)" "\$@"
 EOF

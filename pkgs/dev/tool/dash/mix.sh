@@ -7,3 +7,8 @@ lib/c
 {% block std_box %}
 box/boot
 {% endblock %}
+
+{% block install %}
+{{super()}}
+cd ${out}/bin; mv dash sh
+{% endblock %}

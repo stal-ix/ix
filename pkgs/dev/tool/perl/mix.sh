@@ -27,16 +27,16 @@ export CPPFLAGS="-w ${CPPFLAGS}"
 
 {% block setup_tools %}
 cat << EOF > install_name_tool
-#!$(which dash)
+#!$(which sh)
 EOF
 
 chmod +x install_name_tool
 {% endblock %}
 
 {% block patch %}
-sed -e "s|/usr/bin/||g"            \
-    -e "s|/usr/|/nowhere/|g"       \
-    -e "s|/bin/sh|$(which dash)|g" \
+sed -e "s|/usr/bin/||g"          \
+    -e "s|/usr/|/nowhere/|g"     \
+    -e "s|/bin/sh|$(which sh)|g" \
     -i Configure
 {% endblock %}
 
@@ -56,7 +56,7 @@ bash Configure -des    \
     cat config.h | grep -v 'define SH_PATH'
 
     cat << EOF
-#define SH_PATH "$(which dash)"
+#define SH_PATH "$(which sh)"
 EOF
 ) > _ && mv _ config.h
 {% endblock %}
@@ -72,7 +72,7 @@ if which perl; then
     make -j ${make_thrs} miniperl
 
     cat << EOF > miniperl
-#!$(which dash)
+#!$(which sh)
 perl -I${PWD} "\$@"
 EOF
 

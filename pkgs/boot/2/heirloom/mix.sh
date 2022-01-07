@@ -227,7 +227,7 @@ export YACC=yacc
 export PATH="${PWD}:${PATH}"
 
 # for factor
-ln -s $(command -v dash) sh
+ln -s $(command -v sh) sh
 export PATH="${PWD}:${PATH}"
 export CPPFLAGS="$PRCPPFLAGS"
 

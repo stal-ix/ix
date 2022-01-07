@@ -10,5 +10,5 @@ dev/build/make
 {% endblock %}
 
 {% block install %}
-INSTALL_ROOT=${out} dash install.sh
+INSTALL_ROOT=${out} sh install.sh
 {% endblock %}

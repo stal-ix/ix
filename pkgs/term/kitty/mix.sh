@@ -66,7 +66,7 @@ mkdir ${out}/bin
 cp build/kitty-bin ${out}/bin/
 
 cat << EOF > ${out}/bin/kitty
-#!$(which dash)
+#!$(which sh)
 
 PYTHONPATH="${out}/lib" "${out}/bin/kitty-bin" "${out}/lib/kitty/__main__.py" "$@"
 EOF

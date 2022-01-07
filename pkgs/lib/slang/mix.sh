@@ -21,7 +21,7 @@ lib/curses/n/terminfo
 
 {% block setup_tools %}
 cat << EOF > ncurses5-config
-#!$(which dash)
+#!$(which sh)
 echo ${TERMINFO}
 EOF
 

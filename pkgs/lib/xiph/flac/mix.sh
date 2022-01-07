@@ -16,7 +16,7 @@ ln -s $(which xgettext) gettext
 {% endblock %}
 
 {% block autoreconf %}
-dash autogen.sh
+sh autogen.sh
 {% endblock %}
 
 {% block lib_deps %}

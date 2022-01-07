@@ -34,7 +34,7 @@ if DATA:
     os.environ['TMPDIR'] = tmp
     input = '\n'.join(iter_lines()).strip() + '\n'
     print(input)
-    subprocess.run([mix.which('dash')], input=input.encode(), check=True)
+    subprocess.run([mix.which('sh')], input=input.encode(), check=True)
 {% endblock %}
 
 env_data = r"""

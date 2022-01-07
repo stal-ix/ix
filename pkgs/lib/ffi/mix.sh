@@ -24,7 +24,7 @@ box/boot
 {% endblock %}
 
 {% block autoreconf %}
-dash autogen.sh
+sh autogen.sh
 {% endblock %}
 
 {% block env %}

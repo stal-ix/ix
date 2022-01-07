@@ -16,5 +16,5 @@ lib/c++
 {% endblock %}
 
 {% block autoreconf %}
-dash bootstrap.sh
+sh bootstrap.sh
 {% endblock %}

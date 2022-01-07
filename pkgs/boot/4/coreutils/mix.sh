@@ -13,7 +13,7 @@ boot/3/env
 
 {% block setup_tools %}
 cat << EOF > makeinfo
-#!$(which dash)
+#!$(which sh)
 EOF
 
 chmod +x makeinfo

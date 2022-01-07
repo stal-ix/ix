@@ -15,7 +15,7 @@ boot/5/env/std
 
 {% block configure %}
 {{super()}}
-(cd glib && dash configure ${COFLAGS} --prefix=${out} --with-libiconv=gnu --srcdir=.)
+(cd glib && sh configure ${COFLAGS} --prefix=${out} --with-libiconv=gnu --srcdir=.)
 {% endblock %}
 
 {% block build %}

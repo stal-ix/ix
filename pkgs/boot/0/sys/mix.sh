@@ -39,7 +39,7 @@ def wloc(bins):
 
     raise Exception(f'can not found one of {bins} in {out}')
 
-SHELLS = ['dash', 'bash', 'sh']
+SHELLS = ['yash', 'dash', 'bash']
 
 TOOLS = SHELLS + [
     'ld',
@@ -66,10 +66,7 @@ for x in TOOLS:
 
                 sl(cc, tool)
 
-sh = wloc(SHELLS)
-
-if sh != 'dash':
-    sl(sh, 'dash')
+sl(wloc(SHELLS), 'sh')
 
 with open(os.path.join(out, 'env'), 'w') as f:
     f.write('export PATH=_/bin:${PATH}\n'.replace('_', out))

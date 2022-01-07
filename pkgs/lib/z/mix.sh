@@ -10,7 +10,7 @@ box/boot
 {% endblock %}
 
 {% block configure %}
-dash configure --static --64 --prefix="${out}"
+sh configure --static --64 --prefix="${out}"
 {% endblock %}
 
 {% block make_flags %}

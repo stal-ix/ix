@@ -33,7 +33,7 @@ fi
 cat configure \
     | sed -e "s|/usr/bin/||g"             \
     | sed -e "s|/usr/|/nowhere/|g"        \
-    | sed -e "s|/bin/sh|$(which dash)|g"  \
+    | sed -e "s|/bin/sh|$(which sh)|g"    \
     | sed -e "s|/bin/arch|arch|g"         \
     | sed -e "s|/bin/uname|uname|g"       \
     | sed -e "s|/bin/machine|machine|g"   \
@@ -52,7 +52,7 @@ which pkg-config
 {% block invoke_configure %}
 {% set command_args %}
 {% block configure_shell %}
-dash
+sh
 {% endblock %}
 
 {% block configure_script %}

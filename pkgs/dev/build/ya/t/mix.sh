@@ -31,12 +31,12 @@ export BLD_ROOT="${tmp}/obj"
 # redefine clang wrapper with real clang(well, almost)
 
 cat << EOF > clang
-#!$(which dash)
+#!$(which sh)
 exec "${CLANG_DIR}/clang" -isystem "${CLANG_INC}" "\$@" -w -fuse-ld=lld
 EOF
 
 cat << EOF > clang++
-#!$(which dash)
+#!$(which sh)
 exec "${CLANG_DIR}/clang++" -isystem "${CLANG_INC}" "\$@" -w -fuse-ld=lld
 EOF
 
@@ -51,7 +51,7 @@ echo > ${BLD_ROOT}/icudt67_dat.rodata
 
 {% block build %}
 cd ${ARC_ROOT}/devtools/bootstrap
-dash {% block stage %}{% endblock %} ${ARC_ROOT} ${BLD_ROOT}
+sh {% block stage %}{% endblock %} ${ARC_ROOT} ${BLD_ROOT}
 {% endblock %}
 
 {% block install %}

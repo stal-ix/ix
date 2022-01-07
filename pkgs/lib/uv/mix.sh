@@ -15,5 +15,5 @@ dev/build/auto/make/1/16
 {% endblock %}
 
 {% block autoreconf %}
-dash autogen.sh
+sh autogen.sh
 {% endblock %}

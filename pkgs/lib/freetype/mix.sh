@@ -19,5 +19,5 @@ dev/build/auto/make/1/16
 {% endblock %}
 
 {% block autoreconf %}
-cat autogen.sh | sed -e 's|\./configure|\./configure; exit 0|' | dash
+cat autogen.sh | sed -e 's|\./configure|\./configure; exit 0|' | sh
 {% endblock %}
