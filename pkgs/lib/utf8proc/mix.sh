@@ -12,3 +12,9 @@ lib/c
 {% block std_box %}
 box/boot
 {% endblock %}
+
+{% block install %}
+{{super()}}
+cd ${out}/lib/pkgconfig
+cat libutf8proc.pc | grep -v exec_prefix > _ && mv _ libutf8proc.pc
+{% endblock %}

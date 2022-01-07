@@ -9,15 +9,14 @@ https://files.pythonhosted.org/packages/be/d0/bf4e7003369c6d8a6e490741c54791c791
 dev/tool/python
 {% endblock %}
 
-{% block build %}
+{% block install %}
 cd ${out}; mkdir bin; cd bin
 
-extract0 ${src}/SCons*
-ln -s SCons* sconsdir
+extract1 ${src}/SCons*
 
 cat << EOF > scons
 #!$(which dash)
-PYTHONPATH=${PWD}/sconsdir python3 $(pwd)/sconsdir/SCons/__main__.py "\$@"
+PYTHONPATH=${PWD} python3 ${PWD}/SCons/__main__.py "\$@"
 EOF
 
 chmod +x scons

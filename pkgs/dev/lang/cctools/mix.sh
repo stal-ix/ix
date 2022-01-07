@@ -34,8 +34,13 @@ cd cctools
 sed -e 's/__arm__/__eat_shit__/' -i configure
 {% endblock %}
 
+{% block c_rename_symbol %}
+__crashreporter_info__
+reallocf
+{% endblock %}
+
 {% block setup %}
-export CPPFLAGS="-D__crashreporter_info__=__crashreporter_info_ld__ -iquote ${PWD}/ld64/src/3rd ${CPPFLAGS}"
+export CPPFLAGS="-iquote ${PWD}/ld64/src/3rd ${CPPFLAGS}"
 {% endblock %}
 
 {% block patch %}
