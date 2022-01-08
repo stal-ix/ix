@@ -20,7 +20,7 @@ lib/gcrypt
 lib/soup/3
 lib/wayland
 lib/sqlite3
-lib/gtk/4/4
+lib/gtk/4/2
 lib/freetype
 lib/harfbuzz
 lib/fontconfig

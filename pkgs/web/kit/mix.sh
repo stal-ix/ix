@@ -10,6 +10,7 @@ web/kit/libs(harfbuzz_icu=1)
 {% endblock %}
 
 {% block bld_tool %}
+lib/glib
 gnu/gettext
 dev/tool/perl
 dev/tool/ruby
@@ -38,13 +39,39 @@ ENABLE_BUBBLEWRAP_SANDBOX=OFF
 ENABLE_VIDEO=OFF
 ENABLE_WEB_AUDIO=OFF
 ENABLE_X11_TARGET=OFF
-USE_LIBEPOXY=ON
+ENABLE_WAYLAND_TARGET=ON
+USE_LIBEPOXY=OFF
+ENABLE_WEBGL=OFF
 USE_ANGLE_EGL=OFF
 USE_ANGLE_WEBGL=OFF
-ENABLE_WEBGL=OFF
 USE_ANGLE=OFF
+ENABLE_GLES2=OFF
+USE_OPENGL_OR_ES=OFF
+ENABLE_MINIBROWSER=ON
+{% endblock %}
+
+{% block c_rename_symbol %}
+_caches
+_xdg_binary_or_text_fallback
 {% endblock %}
 
 {% block setup %}
-export CPPFLAGS="-w -DEGL_NO_X11=1 ${CPPFLAGS}"
+export CPPFLAGS=$(echo ${CPPFLAGS} | tr ' ' '\n' | grep -v mesa | tr '\n' ' ')
+export CPPFLAGS="-w -DEGL_NO_X11=1 -Wno-register ${CPPFLAGS}"
+{% endblock %}
+
+{% block patch %}
+find . | grep CMake | while read l; do
+    sed -e 's| SHARED| STATIC|' -i ${l}
+    sed -e 's| MODULE| STATIC|' -i ${l}
+done
+
+find . | grep '\.cmake' | while read l; do
+    sed -e 's| SHARED| STATIC|' -i ${l}
+    sed -e 's| MODULE| STATIC|' -i ${l}
+done
+
+cd Source/WebKit/UIProcess/gtk
+
+sed -e 's|GRefPtr.h>|GRefPtr.h>\n#include <wtf/glib/GUniquePtr.h>|' -i ClipboardGtk4.cpp
 {% endblock %}

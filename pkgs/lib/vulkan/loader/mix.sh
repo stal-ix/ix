@@ -25,3 +25,8 @@ BUILD_STATIC_LOADER=YES
 sed -e 's|APPLE AND BUILD_STATIC_LOADER|BUILD_STATIC_LOADER|' \
     -i loader/CMakeLists.txt
 {% endblock %}
+
+{% block install %}
+{{super()}}
+mkdir -p ${out}/include
+{% endblock %}
