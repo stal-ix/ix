@@ -44,6 +44,7 @@ cat Modules/Setup.dist \
 cat << EOF >> Modules/Setup.local
 _ssl _ssl.c
 _hashlib _hashopenssl.c
+_multiprocessing _multiprocessing/multiprocessing.c _multiprocessing/socket_connection.c _multiprocessing/semaphore.c
 EOF
 {% endblock %}
 

@@ -14,3 +14,8 @@ lib/xslt
 gnu/getopt
 dev/lang/flex
 {% endblock %}
+
+{% block run_deps %}
+lib/xslt
+gnu/getopt
+{% endblock %}

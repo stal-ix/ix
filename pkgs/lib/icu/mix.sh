@@ -22,3 +22,7 @@ dev/tool/python
 {% block configure_flags %}
 --with-data-packaging=archive
 {% endblock %}
+
+{% block strip_pc %}
+:
+{% endblock %}
