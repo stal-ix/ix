@@ -22,3 +22,7 @@ AVIF_BUILD_APPS=ON
 {% block setup %}
 export CPPFLAGS="-w ${CPPFLAGS}"
 {% endblock %}
+
+{% block strip_pc %}
+echo 'TODO(pg): proper check'
+{% endblock %}

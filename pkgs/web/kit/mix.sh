@@ -41,12 +41,13 @@ ENABLE_X11_TARGET=OFF
 ENABLE_WAYLAND_TARGET=ON
 
 #USE_LIBEPOXY=OFF
-#ENABLE_WEBGL=OFF
-#USE_ANGLE_EGL=OFF
-#USE_ANGLE_WEBGL=OFF
-#USE_ANGLE=OFF
-#ENABLE_GLES2=OFF
-#USE_OPENGL_OR_ES=OFF
+
+ENABLE_WEBGL=ON
+USE_ANGLE_EGL=ON
+USE_ANGLE_WEBGL=ON
+USE_ANGLE=ON
+ENABLE_GLES2=ON
+USE_OPENGL_OR_ES=ON
 
 ENABLE_MINIBROWSER=ON
 {% endblock %}
@@ -86,6 +87,21 @@ done
     sed -e 's|GRefPtr.h>|GRefPtr.h>\n#include <wtf/glib/GUniquePtr.h>|' \
         -i ClipboardGtk4.cpp
 )
+
+(
+    cd Source/WebKit/WebProcess/InjectedBundle/glib
+
+    base64 -d << EOF > InjectedBundleGlib.cpp
+{% include 'InjectedBundleGlib.cpp/base64' %}
+EOF
+)
+
+(
+    cd Source/WebKit/WebProcess/WebPage/gtk
+
+    sed -e 's|return true| return false|' \
+        -i AcceleratedSurfaceWayland.h
+)
 {% endblock %}
 
 {% block setup_tools %}
@@ -97,7 +113,7 @@ cat << EOF > clang++
 import sys
 import subprocess
 
-if '-P' in sys.argv or '-E' in sys.argv in tst:
+if '-P' in sys.argv or '-E' in sys.argv:
     arg0 = 'clang-cpp'
 else:
     arg0 = "${C}"

@@ -10,7 +10,7 @@ lib/c
 lib/z
 lib/drm
 lib/zstd
-#lib/llvm
+lib/llvm
 lib/expat
 lib/wayland
 lib/elfutils
@@ -32,7 +32,7 @@ lib/wayland/protocols
 {% block meson_flags %}
 dri-drivers=
 vulkan-drivers=amd
-gallium-drivers=zink
+gallium-drivers=zink,radeonsi
 
 valgrind=disabled
 libunwind=disabled
@@ -48,6 +48,15 @@ gallium-nine=false
 
 cpp_rtti=false
 shader-cache=disabled
-llvm=disabled
+llvm=enabled
 shared-llvm=disabled
+{% endblock %}
+
+{% block meson_cross %}
+{% endblock %}
+
+{% block configure %}
+#echo ${CMAKE_PREFIX_PATH}
+export CMAKE_PREFIX_PATH="${lib_llvm}"
+{{super()}}
 {% endblock %}
