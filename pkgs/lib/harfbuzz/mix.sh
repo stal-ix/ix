@@ -10,9 +10,6 @@ lib/c
 lib/c++
 lib/glib
 lib/freetype
-{% if harfbuzz_icu %}
-lib/icu
-{% endif %}
 {% if target.os == 'darwin' %}
 lib/darwin/framework/CoreText
 lib/darwin/framework/ApplicationServices

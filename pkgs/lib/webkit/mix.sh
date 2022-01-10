@@ -6,7 +6,41 @@ de30c41fb57b2b024417669c22914752
 {% endblock %}
 
 {% block lib_deps %}
-web/kit/libs(harfbuzz_icu=1,gtk4_ver=4)
+lib/c
+lib/z
+lib/atk
+lib/icu
+lib/c++
+lib/png
+lib/avif
+lib/webp
+lib/xml2
+lib/glib
+lib/jpeg
+lib/xslt
+lib/tasn1
+lib/cairo
+lib/pango
+lib/lcms2
+lib/epoxy
+lib/woff2
+lib/gtk/4
+lib/gcrypt
+lib/soup/3
+lib/wayland
+lib/sqlite3
+lib/seccomp
+lib/freetype
+lib/harfbuzz
+lib/jpeg/open
+lib/fontconfig
+lib/harfbuzz/icu
+
+# drivers
+lib/mesa/gl
+lib/mesa/egl
+lib/mesa/drivers/gl/zink
+lib/mesa/drivers/vulkan
 {% endblock %}
 
 {% block bld_tool %}
@@ -54,14 +88,10 @@ export CPPFLAGS="-w -DWL_EGL_PLATFORM=1 -DEGL_NO_X11=1 -Wno-register ${CPPFLAGS}
 {% endblock %}
 
 {% block patch %}
-find . | grep CMake | while read l; do
-    sed -e 's| SHARED| STATIC|' -i ${l}
-    sed -e 's| MODULE| STATIC|' -i ${l}
-done
-
-find . | grep '\.cmake' | while read l; do
-    sed -e 's| SHARED| STATIC|' -i ${l}
-    sed -e 's| MODULE| STATIC|' -i ${l}
+(find . | grep CMake; find . | grep '\.cmake') | while read l; do
+    sed -e 's| SHARED| STATIC|' \
+        -e 's| MODULE| STATIC|' \
+        -i ${l}
 done
 
 (
@@ -113,4 +143,8 @@ subprocess.check_call([arg0] + sys.argv[1:])
 EOF
 
 chmod +x clang++
+{% endblock %}
+
+{% block postinstall %}
+echo 'TODO(pg): figure proper layout for webkit"s libexec'
 {% endblock %}
