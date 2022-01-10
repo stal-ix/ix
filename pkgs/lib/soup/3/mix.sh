@@ -15,10 +15,15 @@ lib/sqlite3
 lib/nghttp2
 {% endblock %}
 
+{% block bld_libs %}
+lib/glib/networking/register
+{% endblock %}
+
 {% block bld_tool %}
 lib/glib
 {% endblock %}
 
 {% block meson_flags %}
 tls_check=false
+tests=false
 {% endblock %}

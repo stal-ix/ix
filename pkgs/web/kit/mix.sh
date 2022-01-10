@@ -6,7 +6,7 @@ de30c41fb57b2b024417669c22914752
 {% endblock %}
 
 {% block lib_deps %}
-web/kit/libs(harfbuzz_icu=1)
+web/kit/libs(harfbuzz_icu=1,gtk4_ver=4)
 {% endblock %}
 
 {% block bld_tool %}
@@ -24,30 +24,21 @@ PORT=GTK
 USE_GTK4=ON
 USE_WPE_RENDERER=OFF
 
+USE_SYSTEMD=OFF
 ENABLE_GAMEPAD=OFF
 ENABLE_INTROSPECTION=OFF
-USE_SYSTEMD=OFF
 
 USE_LIBSECRET=OFF
-ENABLE_SPELLCHECK=OFF
 USE_LIBNOTIFY=OFF
 USE_LIBHYPHEN=OFF
-ENABLE_THUNDER=OFF
-ENABLE_BUBBLEWRAP_SANDBOX=OFF
+
 ENABLE_VIDEO=OFF
+ENABLE_THUNDER=OFF
 ENABLE_WEB_AUDIO=OFF
+ENABLE_SPELLCHECK=OFF
 
 ENABLE_X11_TARGET=OFF
 ENABLE_WAYLAND_TARGET=ON
-
-#USE_LIBEPOXY=OFF
-
-ENABLE_WEBGL=ON
-USE_ANGLE_EGL=ON
-USE_ANGLE_WEBGL=ON
-USE_ANGLE=ON
-ENABLE_GLES2=ON
-USE_OPENGL_OR_ES=ON
 
 ENABLE_MINIBROWSER=ON
 {% endblock %}
@@ -122,9 +113,4 @@ subprocess.check_call([arg0] + sys.argv[1:])
 EOF
 
 chmod +x clang++
-{% endblock %}
-
-{% block install %}
-{{super()}}
-exit 1
 {% endblock %}

@@ -19,15 +19,17 @@ lib/pango
 lib/lcms2
 lib/epoxy
 lib/woff2
+lib/gtk/4
 lib/gcrypt
 lib/soup/3
 lib/wayland
 lib/sqlite3
-lib/gtk/4/4
+lib/seccomp
 lib/freetype
 lib/harfbuzz
 lib/jpeg/open
 lib/fontconfig
+lib/glib/networking/register
 
 # drivers
 lib/mesa/gl
