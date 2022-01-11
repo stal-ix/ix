@@ -18,14 +18,8 @@ lib/sqlite3
 lib/archive
 lib/json/glib
 lib/gdk/pixbuf
-
-# drivers
+lib/webkit/drivers
 lib/handy/register
-lib/glib/networking/register
-
-# drivers
-lib/mesa/gl
-lib/mesa/egl
-lib/mesa/drivers/vulkan
-lib/mesa/drivers/gl/zink
+lib/dazzle/register
+misc/gsettings-desktop-schemas
 {% endblock %}

@@ -37,6 +37,10 @@ lib/fontconfig
 lib/harfbuzz/icu
 {% endblock %}
 
+{% block bld_libs %}
+lib/webkit/drivers
+{% endblock %}
+
 {% block bld_tool %}
 lib/glib
 gnu/gettext
@@ -63,6 +67,7 @@ ENABLE_VIDEO=OFF
 ENABLE_THUNDER=OFF
 ENABLE_WEB_AUDIO=OFF
 ENABLE_SPELLCHECK=OFF
+ENABLE_BUBBLEWRAP_SANDBOX=OFF
 
 ENABLE_X11_TARGET=OFF
 ENABLE_WAYLAND_TARGET=ON

@@ -5,22 +5,17 @@
 {% endblock %}
 
 {% block lib_deps %}
-lib/c
-lib/glib/networking
+lib/dazzle
 {% endblock %}
 
 {% block build %}
 clang++ -c -o reg.o -x c++ - << EOF
-extern "C" void g_object_init();
-extern "C" void _g_io_modules_ensure_loaded();
-extern "C" void g_tls_backend_gnutls_register(void*);
+extern "C" void dzl_get_resource();
 
 namespace {
     static struct Reg {
         Reg() {
-            g_object_init();
-            _g_io_modules_ensure_loaded();
-            g_tls_backend_gnutls_register(0);
+            dzl_get_resource();
         }
     } REG;
 }

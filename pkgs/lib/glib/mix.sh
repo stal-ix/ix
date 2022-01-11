@@ -46,11 +46,7 @@ done
 {% endblock %}
 
 {% block patch %}
-cat << EOF >> gobject/gtype.c
-void g_object_init(void);
-
-void g_object_init(void) {
-    gobject_init();
-}
+patch -p5 << EOF
+{% include '00.diff' %}
 EOF
 {% endblock %}

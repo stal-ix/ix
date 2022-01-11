@@ -7,7 +7,6 @@ sha:c4545d5e7ef4efd39964cac3ee680b5a238207b95f5f6c8ab747292303654b12
 
 {% block bld_libs %}
 web/epiphany/libs(gtk_ver=3)
-misc/gsettings-desktop-schemas
 {% endblock %}
 
 {% block bld_tool %}
@@ -18,7 +17,6 @@ dev/build/meson/better
 
 {% block run_data %}
 misc/iso-codes
-misc/gsettings-desktop-schemas
 {% endblock %}
 
 {% block meson_flags %}

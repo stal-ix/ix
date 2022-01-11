@@ -1,0 +1,39 @@
+diff --git a/pkgs/lib/glib/glib-2.71.0/gobject/gtype.c b/pkgs/lib/glib/glib-2.71.0/gobject/gtype.c
+index 26ec30b7..9ff10203 100644
+--- a/pkgs/lib/glib/glib-2.71.0/gobject/gtype.c
++++ b/pkgs/lib/glib/glib-2.71.0/gobject/gtype.c
+@@ -4426,6 +4426,8 @@ g_type_init (void)
+   g_assert_type_system_initialized ();
+ }
+ 
++static int ginitdone;
++
+ static void
+ gobject_init (void)
+ {
+@@ -4434,6 +4436,12 @@ gobject_init (void)
+   TypeNode *node;
+   GType type G_GNUC_UNUSED  /* when compiling with G_DISABLE_ASSERT */;
+ 
++  if (ginitdone) {
++    return;
++  }
++
++  ginitdone = 1;
++
+   /* Ensure GLib is initialized first, see
+    * https://bugzilla.gnome.org/show_bug.cgi?id=756139
+    */
+@@ -4521,6 +4529,12 @@ gobject_init (void)
+   _g_signal_init ();
+ }
+ 
++void g_object_init(void);
++
++void g_object_init(void) {
++    gobject_init();
++}
++
+ #if defined (G_OS_WIN32)
+ 
+ BOOL WINAPI DllMain (HINSTANCE hinstDLL,
