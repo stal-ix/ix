@@ -11,6 +11,7 @@ lib/z
 lib/atk
 lib/icu
 lib/c++
+lib/gtk
 lib/png
 lib/avif
 lib/webp
@@ -24,7 +25,6 @@ lib/pango
 lib/lcms2
 lib/epoxy
 lib/woff2
-lib/gtk/4
 lib/gcrypt
 lib/soup/3
 lib/wayland
@@ -55,7 +55,6 @@ lib/wayland/protocols
 
 {% block cmake_flags %}
 PORT=GTK
-USE_GTK4=ON
 USE_WPE_RENDERER=OFF
 
 USE_SYSTEMD=OFF
@@ -143,6 +142,14 @@ subprocess.check_call([arg0] + sys.argv[1:])
 EOF
 
 chmod +x clang++
+{% endblock %}
+
+{% block install %}
+{{super()}}
+
+cd ${out}/lib
+
+rm -rf webkit2*
 {% endblock %}
 
 {% block postinstall %}

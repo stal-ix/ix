@@ -17,6 +17,7 @@ tools=glsl
 {% endblock %}
 
 {% block configure %}
+#export CMAKE_PREFIX_PATH="${lib_llvm}"
 {{super()}}
 python3 $(which fix_data_dir.py) ${MESA_DATA}
 {% endblock %}
