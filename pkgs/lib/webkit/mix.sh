@@ -113,13 +113,6 @@ done
 {% include 'InjectedBundleGlib.cpp/base64' %}
 EOF
 )
-
-(
-    cd Source/WebKit/WebProcess/WebPage/gtk
-
-    sed -e 's|return true| return false|' \
-        -i AcceleratedSurfaceWayland.h
-)
 {% endblock %}
 
 {% block setup_tools %}

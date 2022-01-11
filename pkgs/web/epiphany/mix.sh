@@ -24,3 +24,9 @@ libportal=disabled
 unit_tests=disabled
 soup2=disabled
 {% endblock %}
+
+{% block patch %}
+sed -e 's|.*subdir.*help.*||' \
+    -e 's|.*add_install_script.*||' \
+    -i meson.build
+{% endblock %}
