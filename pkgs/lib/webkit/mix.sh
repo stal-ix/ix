@@ -35,12 +35,6 @@ lib/harfbuzz
 lib/jpeg/open
 lib/fontconfig
 lib/harfbuzz/icu
-
-# drivers
-lib/mesa/gl
-lib/mesa/egl
-lib/mesa/drivers/gl/zink
-lib/mesa/drivers/vulkan
 {% endblock %}
 
 {% block bld_tool %}
@@ -90,6 +84,14 @@ export CPPFLAGS="-w -DWL_EGL_PLATFORM=1 -DEGL_NO_X11=1 -Wno-register ${CPPFLAGS}
         -e 's| MODULE| STATIC|' \
         -i ${l}
 done
+
+(
+    cd Source/JavaScriptCore
+
+    cat << EOF >> CMakeLists.txt
+install(TARGETS JavaScriptCore DESTINATION "\${LIB_INSTALL_DIR}")
+EOF
+)
 
 (
     cd Source/WebCore/platform/graphics/egl

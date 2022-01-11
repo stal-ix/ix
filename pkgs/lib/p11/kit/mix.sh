@@ -9,3 +9,7 @@ sha:284d209e045ebc7e30ccb479c7b559edfcb5433d665b497386dd35291826e39c
 lib/c
 lib/glib
 {% endblock %}
+
+{% block c_rename_symbol %}
+getprogname
+{% endblock %}

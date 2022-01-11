@@ -22,3 +22,7 @@ gtk_doc=false
 debugging=false
 introspection=false
 {% endblock %}
+
+{% block c_rename_symbol %}
+SECMEM_pool_data_v1_0
+{% endblock %}
