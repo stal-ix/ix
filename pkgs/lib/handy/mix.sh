@@ -19,3 +19,21 @@ lib/glib
 introspection=disabled
 glade_catalog=disabled
 {% endblock %}
+
+{% block c_rename_symbol %}
+gtk_progress_tracker_advance_frame
+gtk_progress_tracker_finish
+gtk_progress_tracker_get_ease_out_cubic
+gtk_progress_tracker_get_iteration
+gtk_progress_tracker_get_iteration_cycle
+gtk_progress_tracker_get_progress
+gtk_progress_tracker_get_state
+gtk_progress_tracker_init_copy
+gtk_progress_tracker_skip_frame
+gtk_progress_tracker_start
+{% endblock %}
+
+{% block install %}
+{{super()}}
+#exit 1
+{% endblock %}

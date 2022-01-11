@@ -13,6 +13,7 @@ misc/gsettings-desktop-schemas
 {% block bld_tool %}
 lib/glib
 gnu/gettext
+dev/build/meson/better
 {% endblock %}
 
 {% block run_data %}

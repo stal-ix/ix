@@ -20,6 +20,7 @@ lib/json/glib
 lib/gdk/pixbuf
 
 # drivers
+lib/handy/register
 lib/glib/networking/register
 
 # drivers

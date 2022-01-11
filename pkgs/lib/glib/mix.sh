@@ -44,3 +44,13 @@ find ${out}/ | grep '\.pc$' | while read i; do
 done
 {% endif %}
 {% endblock %}
+
+{% block patch %}
+cat << EOF >> gobject/gtype.c
+void g_object_init(void);
+
+void g_object_init(void) {
+    gobject_init();
+}
+EOF
+{% endblock %}

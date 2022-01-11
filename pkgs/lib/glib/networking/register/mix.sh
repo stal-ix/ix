@@ -10,17 +10,16 @@ lib/glib/networking
 {% endblock %}
 
 {% block build %}
-clang++ -c -o reg.o -x c++ - << EOF
-extern "C" void _g_io_modules_ensure_loaded();
-extern "C" void g_tls_backend_gnutls_register(void*);
+clang++ -c -o reg.o -x c - << EOF
+void g_quark_init();
+void _g_io_modules_ensure_loaded();
+void g_tls_backend_gnutls_register(void*);
 
-namespace {
-    static struct Reg {
-        Reg() {
-            _g_io_modules_ensure_loaded();
-            g_tls_backend_gnutls_register(nullptr);
-        }
-    } REG;
+__attribute__((constructor))
+void init_networking() {
+    g_quark_init();
+    _g_io_modules_ensure_loaded();
+    g_tls_backend_gnutls_register(0);
 }
 EOF
 {% endblock %}

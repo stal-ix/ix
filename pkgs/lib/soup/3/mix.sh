@@ -16,7 +16,9 @@ lib/nghttp2
 {% endblock %}
 
 {% block bld_libs %}
+{% if kind == 'bin' %}
 lib/glib/networking/register
+{% endif %}
 {% endblock %}
 
 {% block bld_tool %}
