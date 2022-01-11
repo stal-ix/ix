@@ -82,16 +82,9 @@ export CPPFLAGS="-w -DWL_EGL_PLATFORM=1 -DEGL_NO_X11=1 -Wno-register ${CPPFLAGS}
 (find . | grep CMake; find . | grep '\.cmake') | while read l; do
     sed -e 's| SHARED| STATIC|' \
         -e 's| MODULE| STATIC|' \
+        -e 's|(.*MATCHES.*SHARED.*)|(1)|' \
         -i ${l}
 done
-
-(
-    cd Source/JavaScriptCore
-
-    cat << EOF >> CMakeLists.txt
-install(TARGETS JavaScriptCore DESTINATION "\${LIB_INSTALL_DIR}")
-EOF
-)
 
 (
     cd Source/WebCore/platform/graphics/egl
@@ -149,7 +142,9 @@ chmod +x clang++
 
 cd ${out}/lib
 
-rm -rf webkit2*
+find ${tmp}/obj -type f | grep '\.a' | while read l; do
+    cp ${l} ./
+done
 {% endblock %}
 
 {% block postinstall %}
