@@ -19,7 +19,5 @@ lib/archive
 lib/json/glib
 lib/gdk/pixbuf
 lib/webkit/drivers
-lib/handy/register
-lib/dazzle/register
 lib/gsettings/desktop/schemas
 {% endblock %}

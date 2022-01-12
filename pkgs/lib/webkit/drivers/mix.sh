@@ -5,5 +5,5 @@ lib/mesa/gl
 lib/mesa/egl
 lib/mesa/drivers/vulkan
 lib/mesa/drivers/gl/zink
-lib/glib/networking/register
+lib/glib/networking
 {% endblock %}
