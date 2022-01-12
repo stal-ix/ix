@@ -1,8 +1,8 @@
 {% extends '//mix/template/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/libsdl-org/SDL/archive/refs/tags/release-2.0.18.tar.gz
-647e2890385e5f13b9aeee2e27fa26e7
+https://github.com/libsdl-org/SDL/archive/refs/tags/release-2.0.20.tar.gz
+sha:2a026753af9b03fca043824bca8341f74921a836d28729e0c31aa262202a83c6
 {% endblock %}
 
 {% block lib_deps %}

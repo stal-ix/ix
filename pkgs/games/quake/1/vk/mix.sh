@@ -2,7 +2,7 @@
 
 {% block fetch %}
 https://github.com/Novum/vkQuake/archive/refs/tags/1.12.1.tar.gz
-7c090dd5e5e8bf3474addad4f1558d37
+sha:8adbc27dd46962cd69165e84559b7bda8515ade381f22ba775c333440f2a2f32
 {% endblock %}
 
 {% block unpack %}
@@ -19,4 +19,13 @@ lib/xiph/flac
 lib/xiph/vorbis
 lib/vulkan/loader
 lib/vulkan/driver
+{% endblock %}
+
+{% block make_flags %}
+bindir="${out}/bin"
+{% endblock %}
+
+{% block install %}
+mkdir ${out}/bin
+{{super()}}
 {% endblock %}
