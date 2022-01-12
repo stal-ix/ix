@@ -1,7 +1,6 @@
 {% extends '//mix/template/registar.sh' %}
 
 {% block lib_deps %}
-lib/c
 lib/glib/networking/orig
 {% endblock %}
 
