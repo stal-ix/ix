@@ -4,6 +4,10 @@
 : nothing to unpack
 {% endblock %}
 
+{% block premain_lang %}
+c
+{% endblock %}
+
 {% block build %}
 (
 set -eu
@@ -15,7 +19,7 @@ EOF
 
 {% block premain_code_gen %}
 {% endblock %}
-) | cc -c -o reg.o -x c -
+) | cc -c -o reg.o -x {{self.premain_lang().strip()}} -
 {% endblock %}
 
 {% block install %}

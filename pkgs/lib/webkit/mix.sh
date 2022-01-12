@@ -26,6 +26,7 @@ lib/lcms2
 lib/epoxy
 lib/woff2
 lib/gcrypt
+lib/secret
 lib/soup/3
 lib/wayland
 lib/sqlite3
@@ -59,7 +60,6 @@ USE_SYSTEMD=OFF
 ENABLE_GAMEPAD=OFF
 ENABLE_INTROSPECTION=OFF
 
-USE_LIBSECRET=OFF
 USE_LIBNOTIFY=OFF
 USE_LIBHYPHEN=OFF
 
