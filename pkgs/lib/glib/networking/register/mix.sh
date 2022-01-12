@@ -1,36 +1,20 @@
-{% extends '//mix/template/c_std.sh' %}
-
-{% block step_unpack %}
-: nothing to unpack
-{% endblock %}
+{% extends '//mix/template/registar.sh' %}
 
 {% block lib_deps %}
 lib/c
 lib/glib/networking
 {% endblock %}
 
-{% block build %}
-clang++ -c -o reg.o -x c++ - << EOF
-extern "C" void g_object_init();
-extern "C" void _g_io_modules_ensure_loaded();
-extern "C" void g_tls_backend_gnutls_register(void*);
+{% block constructors %}
+g_object_init
+_g_io_modules_ensure_loaded
+_g_tls_backend_gnutls_register
+{% endblock %}
 
-namespace {
-    static struct Reg {
-        Reg() {
-            g_object_init();
-            _g_io_modules_ensure_loaded();
-            g_tls_backend_gnutls_register(0);
-        }
-    } REG;
+{% block definitions %}
+void g_tls_backend_gnutls_register(void*);
+
+void _g_tls_backend_gnutls_register() {
+    g_tls_backend_gnutls_register(0);
 }
-EOF
-{% endblock %}
-
-{% block install %}
-mkdir ${out}/lib; cp reg.o ${out}/lib/
-{% endblock %}
-
-{% block env %}
-export LDFLAGS="${out}/lib/reg.o \${LDFLAGS}"
 {% endblock %}
