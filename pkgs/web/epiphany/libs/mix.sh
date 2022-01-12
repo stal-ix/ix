@@ -21,5 +21,5 @@ lib/gdk/pixbuf
 lib/webkit/drivers
 lib/handy/register
 lib/dazzle/register
-misc/gsettings-desktop-schemas
+lib/gsettings/desktop/schemas
 {% endblock %}
