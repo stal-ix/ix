@@ -1,16 +1,11 @@
-{% extends '//mix/template/c_std.sh' %}
-
-{% block step_unpack %}
-: nothing to unpack
-{% endblock %}
+{% extends 'premain.sh' %}
 
 {% set constructors %}
 {% block constructors %}
 {% endblock %}
 {% endset %}
 
-{% block build %}
-cc -c -o reg.o -x c - << EOF
+{% block premain_code %}
 {% for x in mix.parse_list(constructors) %}
 void {{x}}(void);
 {% endfor %}
@@ -24,13 +19,4 @@ static void construct_{{uniq_id}}() {
     {{x}}();
 {% endfor %}
 }
-EOF
-{% endblock %}
-
-{% block install %}
-mkdir ${out}/lib; cp reg.o ${out}/lib/
-{% endblock %}
-
-{% block env %}
-export LDFLAGS="${out}/lib/reg.o \${LDFLAGS}"
 {% endblock %}
