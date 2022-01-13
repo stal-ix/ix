@@ -1,29 +1,17 @@
-{% extends '//mix/template/cmake.sh' %}
+{% extends '//lib/vulkan/loader/t/mix.sh' %}
 
-{% block fetch %}
-https://github.com/KhronosGroup/Vulkan-Loader/archive/refs/tags/v1.2.202.tar.gz
-aeb91767903cbee234bf449f481877c1
-{% endblock %}
-
-{% block lib_deps %}
-lib/c
-lib/wayland
-lib/vulkan/headers
+{% block run_data %}
+lib/vulkan/loader/data
 {% endblock %}
 
 {% block bld_tool %}
-dev/build/pkg-config
+{{super()}}
+dev/tool/scripts
 {% endblock %}
 
-{% block cmake_flags %}
-BUILD_WSI_XCB_SUPPORT=NO
-BUILD_WSI_XLIB_SUPPORT=NO
-BUILD_STATIC_LOADER=YES
-{% endblock %}
-
-{% block patch %}
-sed -e 's|APPLE AND BUILD_STATIC_LOADER|BUILD_STATIC_LOADER|' \
-    -i loader/CMakeLists.txt
+{% block configure %}
+{{super()}}
+python3 $(which fix_data_dir.py) ${VULKAN_LOADER_DATA}
 {% endblock %}
 
 {% block install %}
