@@ -20,6 +20,7 @@ misc/iso-codes
 {% endblock %}
 
 {% block run_deps %}
+dev/tool/sh
 lib/webkit/webproc(gtk_ver=3)
 {% endblock %}
 
@@ -44,7 +45,7 @@ mv epiphany epiphany-unwrapped
 
 cat << EOF > epiphany
 #!$(which sh)
-export WEBKIT_EXEC_PATH="$(dirname $(which WebKitWebProcess))"
+export WEBKIT_EXEC_PATH="\$(dirname \$(which WebKitWebProcess))"
 exec "${out}/bin/epiphany-unwrapped" "\$@"
 EOF
 

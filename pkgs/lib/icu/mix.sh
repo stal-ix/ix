@@ -1,28 +1,22 @@
-{% extends '//mix/template/autohell.sh' %}
+{% extends '//lib/icu/t/mix.sh' %}
 
-{% block fetch %}
-https://github.com/unicode-org/icu/archive/refs/tags/release-70-1.tar.gz
-ebe2080640a063e9237cc41e80034d96
+{% block run_data %}
+lib/icu/data
 {% endblock %}
 
-{% block unpack %}
+{% block setup %}
 {{super()}}
-cd icu4c/source
+export CPPFLAGS="-DICU_DATA_DIR=\\\"${ICU_DATA}\\\" ${CPPFLAGS}"
 {% endblock %}
 
-{% block lib_deps %}
-lib/c
-lib/c++
-{% endblock %}
+{% block install %}
+{{super()}}
 
-{% block bld_tool %}
-dev/tool/python
-{% endblock %}
+cd ${out}
 
-{% block configure_flags %}
---with-data-packaging=archive
-{% endblock %}
+rm -r share
 
-{% block strip_pc %}
-:
+find . -type f | grep '\.pc' | while read l; do
+    sed -e 's|^#.*||' -i ${l}
+done
 {% endblock %}
