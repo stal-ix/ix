@@ -87,7 +87,6 @@ export CPPFLAGS="-w -DWL_EGL_PLATFORM=1 -DEGL_NO_X11=1 -Wno-register ${CPPFLAGS}
 (find . | grep CMake; find . | grep '\.cmake') | while read l; do
     sed -e 's| SHARED| STATIC|' \
         -e 's| MODULE| STATIC|' \
-        -e 's|(.*MATCHES.*SHARED.*)|(1)|' \
         -i ${l}
 done
 
@@ -99,20 +98,15 @@ done
         > _ && mv _ GLContextEGL.cpp
 )
 
-(
-    cd Source/WebKit/UIProcess/gtk
+sed -e 's|GRefPtr.h>|GRefPtr.h>\n#include <wtf/glib/GUniquePtr.h>|' \
+    -i Source/WebKit/UIProcess/gtk/ClipboardGtk4.cpp
 
-    sed -e 's|GRefPtr.h>|GRefPtr.h>\n#include <wtf/glib/GUniquePtr.h>|' \
-        -i ClipboardGtk4.cpp
-)
-
-(
-    cd Source/WebKit/WebProcess/InjectedBundle/glib
-
-    base64 -d << EOF > InjectedBundleGlib.cpp
+base64 -d << EOF > Source/WebKit/WebProcess/InjectedBundle/glib/InjectedBundleGlib.cpp
 {% include 'InjectedBundleGlib.cpp/base64' %}
 EOF
-)
+
+sed -e 's|ENABLE(DEVELOPER_MODE)|1|g' \
+    -i Source/WebKit/Shared/glib/ProcessExecutablePathGLib.cpp
 {% endblock %}
 
 {% block setup_tools %}

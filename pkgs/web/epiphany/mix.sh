@@ -19,6 +19,10 @@ dev/build/meson/better
 misc/iso-codes
 {% endblock %}
 
+{% block run_deps %}
+lib/webkit/webproc(gtk_ver=3)
+{% endblock %}
+
 {% block meson_flags %}
 libportal=disabled
 unit_tests=disabled
@@ -29,4 +33,20 @@ soup2=disabled
 sed -e 's|.*subdir.*help.*||' \
     -e 's|.*add_install_script.*||' \
     -i meson.build
+{% endblock %}
+
+{% block install %}
+{{super()}}
+
+cd ${out}/bin
+
+mv epiphany epiphany-unwrapped
+
+cat << EOF > epiphany
+#!$(which sh)
+export WEBKIT_EXEC_PATH="$(dirname $(which WebKitWebProcess))"
+exec "${out}/bin/epiphany-unwrapped" "\$@"
+EOF
+
+chmod +x epiphany
 {% endblock %}
