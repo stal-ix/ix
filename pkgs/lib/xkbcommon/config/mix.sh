@@ -7,10 +7,14 @@ http://www.x.org/releases/individual/data/xkeyboard-config/xkeyboard-config-2.24
 
 {% block make_no_thrs %}{% endblock %}
 
+{% block bld_libs %}
+lib/c
+{% endblock %}
+
 {% block bld_tool %}
 lib/xslt
-lib/intl/tool
 gnu/gettext
+lib/intl/tool
 {% endblock %}
 
 {% block configure_flags %}
@@ -19,8 +23,4 @@ gnu/gettext
 
 {% block env %}
 export XKB_CONFIG="${out}/share/X11/xkb"
-{% endblock %}
-
-{% block lib_deps %}
-lib/c
 {% endblock %}
