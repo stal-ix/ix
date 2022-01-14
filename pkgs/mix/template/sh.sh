@@ -36,7 +36,8 @@ mkdir -p ${out}
 rm -rf ${tmp}
 mkdir -p ${tmp}
 
-cd ${tmp} && mkdir tmp
+cd ${tmp}
+mkdir tmp
 
 export TMPDIR=${PWD}/tmp
 {% endblock %}
@@ -50,7 +51,14 @@ export TMPDIR=${PWD}/tmp
 
 {% block epilogue %}
 {% block cleanup_pkg %}
-rm -rf ${out}/lib/*.so* ${out}/lib/*.la* ${out}/lib/*.dylib*
+if command -v find; then
+    (
+        find ${out} -type f -name '*.la'
+        find ${out} -xtype l
+    ) | while read l; do
+        rm ${l}
+    done
+fi
 {% endblock %}
 rm -rf ${tmp}
 {% endblock %}

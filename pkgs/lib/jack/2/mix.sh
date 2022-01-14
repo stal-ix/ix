@@ -1,4 +1,4 @@
-{% extends '//mix/template/c_std.sh' %}
+{% extends '//mix/template/waf.sh' %}
 
 {% block fetch %}
 https://github.com/jackaudio/jack2/archive/v1.9.19.tar.gz
@@ -16,45 +16,18 @@ lib/alsa/lib
 lib/readline
 {% endblock %}
 
-{% block bld_tool %}
-dev/tool/python
-dev/build/pkg-config
-{% endblock %}
-
-{% block patch %}
-find . | grep wscript | while read l; do
-    sed -e 's|cshlib|cstlib|g'     \
-        -e 's|cxxshlib|cxxstlib|g' \
-        -e 's|stdc++|c|g'          \
-        -i ${l}
-done
-
-find . -type f | while read l; do
-    sed -e 's|Bdynamic|Bstatic|g' -i ${l}
-done
-{% endblock %}
-
 {% block setup %}
 export CXXFLAGS="-Wno-register ${CXXFLAGS}"
 {% endblock %}
 
-{% block configure %}
-python3 waf configure \
-    --prefix="${out}" \
-    --classic         \
-    --alsa=yes        \
-    --systemd=no      \
-    --readline=yes
-{% endblock %}
-
-{% block build %}
-python3 waf build
+{% block waf_flags %}
+--classic
+--alsa=yes
+--systemd=no
+--readline=yes
 {% endblock %}
 
 {% block install %}
-python3 waf install
-
-cd ${out}/lib
-
-rm -rf jack libjackserver.a
+{{super()}}
+cd ${out}/lib; rm -rf jack libjackserver.a
 {% endblock %}
