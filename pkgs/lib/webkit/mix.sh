@@ -36,8 +36,7 @@ lib/harfbuzz
 lib/jpeg/open
 lib/fontconfig
 lib/harfbuzz/icu
-lib/gstreamer/19
-lib/gstreamer/19/base
+lib/gstreamer/19/full
 {% endblock %}
 
 {% block bld_libs %}

@@ -80,7 +80,9 @@ b_lundef=false
 )
 {% endif %}
 
-find . | grep meson.build | while read l; do
+find . -type f -name '*.wrap' -delete
+
+find . -type f -name meson.build | while read l; do
     # danger, Will Robinson!
     cat ${l} \
         | grep -v 'subdir.*test' \
