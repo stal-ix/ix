@@ -36,6 +36,8 @@ lib/harfbuzz
 lib/jpeg/open
 lib/fontconfig
 lib/harfbuzz/icu
+lib/gstreamer/19
+lib/gstreamer/19/base
 {% endblock %}
 
 {% block bld_libs %}
@@ -63,9 +65,7 @@ ENABLE_INTROSPECTION=OFF
 USE_LIBNOTIFY=OFF
 USE_LIBHYPHEN=OFF
 
-ENABLE_VIDEO=OFF
 ENABLE_THUNDER=OFF
-ENABLE_WEB_AUDIO=OFF
 ENABLE_SPELLCHECK=OFF
 ENABLE_BUBBLEWRAP_SANDBOX=OFF
 
