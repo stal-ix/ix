@@ -21,8 +21,7 @@ misc/iso-codes
 
 {% block run_deps %}
 dev/tool/sh
-lib/webkit/webproc
-#(gtk_ver=3)
+lib/webkit/webproc(gtk_ver=3)
 {% endblock %}
 
 {% block meson_flags %}
@@ -36,9 +35,37 @@ sed -e 's|.*subdir.*help.*||' \
     -e 's|.*add_install_script.*||' \
     -i meson.build
 
-patch -p1 << EOF
-{% include '00.diff' %}
+(
+    find . -name '*.c' | while read l; do
+        cat ${l}
+    done
+) | grep '_class_init' \
+  | sed -e 's|_class_init.*|_get_type|' \
+  | sort | uniq \
+  | grep -v ephy_search_provider_get_type \
+  | grep -v ephy_web_overview_model_get_type \
+  | grep -v ephy_web_process_extension_get_type \
+  > types
+
+(
+    echo 'void g_object_init();'
+
+    cat types | while read l; do
+        echo "GType ${l}(void);"
+    done
+
+    cat << EOF
+__attribute__((constructor))
+static void premain_init_types() {
+    g_object_init();
 EOF
+
+    cat types | while read l; do
+        echo "${l}();"
+    done
+
+    echo '}'
+) >> src/ephy-main.c
 {% endblock %}
 
 {% block install %}
