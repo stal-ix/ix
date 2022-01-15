@@ -84,7 +84,9 @@ class RenderContext:
 
     def template(self, path):
         pkg = self.package
+
         tmpl = pkg.manager.env.get_template(path)
+        kind = pkg.flags['kind']
 
         args = cu.dict_dict_update({
             'mix': self,
@@ -92,6 +94,9 @@ class RenderContext:
             'is_cross': True,
             'name': pkg.name,
             'uniq_id': pkg.uniq_id,
+            'bin': kind == 'bin',
+            'lib': kind == 'lib',
+            'aux': kind == 'dat',
         }, pkg.flags)
 
         try:

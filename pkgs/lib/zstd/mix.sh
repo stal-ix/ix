@@ -20,7 +20,7 @@ lib/lz4
 cd build/cmake
 {% endblock %}
 
-{% if kind == 'lib' %}
+{% if lib %}
 {% block std_box %}
 box/boot
 {% endblock %}

@@ -23,7 +23,7 @@ export COFLAGS="${COFLAGS} --with-expat=${expat}/include:${expat}/lib:-lexpat"
 {% block install %}
 {{super()}}
 
-{% if kind == 'bin' %}
+{% if bin %}
 rm -rf ${out}/share/pkgconfig
 {% endif %}
 {% endblock %}

@@ -62,7 +62,7 @@ configure
 ${COFLAGS}
 
 {% block configure_cross %}
-{% if kind == 'bin' %}
+{% if bin %}
 --program-prefix={{bin_prefix or ''}}
 --target={{for_target or target.gnu.three}}
 {% else %}

@@ -38,7 +38,7 @@ tests=false
 {% block install %}
 {{super()}}
 
-{% if kind == 'lib' %}
+{% if lib %}
 find ${out}/ | grep '\.pc$' | while read i; do
     sed -e 's|.*bindir.*||' -i ${i}
 done

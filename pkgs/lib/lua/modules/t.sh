@@ -9,7 +9,7 @@ lib/lua
 {% endblock %}
 
 {% block run_data %}
-{% if kind == 'lib' %}
+{% if lib %}
 {{name}}
 {% endif %}
 {% endblock %}

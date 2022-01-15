@@ -16,12 +16,12 @@ lib/expat
 {% endblock %}
 
 {% block bld_tool %}
-{% if kind == 'lib' %}
+{% if lib %}
 lib/wayland
 {% endif %}
 {% endblock %}
 
-{% if kind == 'bin' and host.id == target.id %}
+{% if bin and host.id == target.id %}
 {% block meson_cross %}
 # disable cross
 {% endblock %}
@@ -37,7 +37,7 @@ tests=false
 
 cd ${out}/lib/pkgconfig
 
-{% if kind == 'bin' %}
+{% if bin %}
 rm wayland-client.pc \
    wayland-egl.pc    \
    wayland-cursor.pc \

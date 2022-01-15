@@ -75,7 +75,7 @@ EOF
 {% endblock %}
 {% endblock %}
 
-{% if kind == 'lib' %}
+{% if lib %}
 {% set platlibdir %}lib{% endset %}
 {% else %}
 {% set platlibdir %}share{% endset %}
@@ -98,11 +98,11 @@ ${out}/bin/python3 -c 'import hashlib; import ssl; import lzma; import bz2; impo
 cp -R Tools/freeze ${out}/share/
 rm -rf ${out}/{{platlibdir}}/python*/test
 find ${out}/ | grep __pycache__ | xargs rm -rf
-find ${out}/bin/ ${out}/share/ | grep '\.[ao]$' | xargs rm{% if kind == 'lib' %} || true{% endif %}
+find ${out}/bin/ ${out}/share/ | grep '\.[ao]$' | xargs rm{% if lib %} || true{% endif %}
 {% endblock %}
 
 {% block env %}
-{% if kind == 'lib' %}
+{% if lib %}
 export TARGET_PYTHONHOME="${out}"
 export CPPFLAGS="-I$(echo ${out}/include/python*) \${CPPFLAGS}"
 {% endif %}

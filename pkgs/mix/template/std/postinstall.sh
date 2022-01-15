@@ -1,12 +1,12 @@
-{%   if kind == 'dat' %}
+{%   if aux %}
 rm -rf ${out}/bin ${out}/libexec ${out}/lib ${out}/include
-{% elif kind == 'lib' %}
+{% elif lib %}
 if test -f ${out}/bin/*-config; then
     mkdir -p ${out}/lib/bin && mv ${out}/bin/*-config ${out}/lib/bin/
 fi
 
 rm -rf ${out}/bin ${out}/libexec
-{% elif kind == 'bin' %}
+{% elif bin %}
 rm -rf ${out}/lib ${out}/include
 
 {% block strip_bin %}
@@ -32,7 +32,7 @@ warn_rm() {
 }
 
 if command -v find; then
-{% if kind != 'lib' %}
+{% if not lib %}
     find ${out}/ | grep '\.[ao]$' | while read l; do
         rm ${l}
     done
@@ -41,7 +41,7 @@ if command -v find; then
 {% block strip_pc %}
     find ${out}/ | grep '\.pc$' | while read l; do
         if grep '/bin' ${l}; then
-{% if kind == 'bin' %}
+{% if bin %}
             echo "STAY ${l}"; else warn_rm ${l}
 {% else %}
             warn_rm ${l}; else echo "STAY ${l}"

@@ -11,7 +11,7 @@ dev/tool/scripts
 
 {% block meson_flags %}
 {{super()}}
-{% if kind == 'bin' %}
+{% if bin %}
 tools=glsl
 {% endif %}
 {% endblock %}

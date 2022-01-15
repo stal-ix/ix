@@ -26,7 +26,7 @@ export LDFLAGS="-lresolv \${LDFLAGS}"
 {% block install %}
 {{super()}}
 
-{% if kind == 'lib' %}
+{% if lib %}
 sed -e 's|^exec_prefix.*||' -i ${out}/lib/pkgconfig/libcares.pc
 {% endif %}
 {% endblock %}

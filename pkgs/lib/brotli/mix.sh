@@ -5,7 +5,7 @@ https://github.com/google/brotli/archive/refs/tags/v1.0.9.tar.gz
 c2274f0c7af8470ad514637c35bcee7d
 {% endblock %}
 
-{% if kind == 'lib' %}
+{% if lib %}
 {% block std_box %}
 box/boot
 {% endblock %}

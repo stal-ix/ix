@@ -23,11 +23,11 @@ echo 'no data tests'
 {% endset %}
 
 {% if host.id == target.id %}
- {% if kind == 'bin' %}
+ {% if bin %}
   {{test_bin}}
  {% endif %}
 
- {% if kind == 'lib' %}
+ {% if lib %}
   {{test_lib}}
   {{test_execute}}
  {% endif %}
@@ -35,6 +35,6 @@ echo 'no data tests'
  {{test_lib}}
 {% endif %}
 
-{% if kind == 'dat' %}
+{% if aux %}
 {{test_data}}
 {% endif %}
