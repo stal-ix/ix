@@ -1,0 +1,22 @@
+diff --git a/src/ephy-main.c b/src/ephy-main.c
+index 1fdcd47..edca862 100644
+--- a/src/ephy-main.c
++++ b/src/ephy-main.c
+@@ -163,6 +163,8 @@ get_startup_id (void)
+   return retval;
+ }
+ 
++void* ephy_bookmarks_popover_get_type(void);
++
+ int
+ main (int   argc,
+       char *argv[])
+@@ -178,6 +180,8 @@ main (int   argc,
+   EphyFileHelpersFlags flags;
+   GDesktopAppInfo *desktop_info = NULL;
+ 
++  ephy_bookmarks_popover_get_type();
++
+ #if DEVELOPER_MODE
+   g_setenv ("GSETTINGS_SCHEMA_DIR", BUILD_ROOT "/data", FALSE);
+ #endif

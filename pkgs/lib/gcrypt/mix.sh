@@ -10,6 +10,10 @@ lib/c
 lib/gpg/error
 {% endblock %}
 
+{% block setup %}
+export OPTFLAGS="${OPTFLAGS} -O2"
+{% endblock %}
+
 {% block patch %}
 sed -e 's|#error|#warning|' -i random/jitterentropy-base.c
 {% endblock %}

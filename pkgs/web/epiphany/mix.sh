@@ -21,7 +21,8 @@ misc/iso-codes
 
 {% block run_deps %}
 dev/tool/sh
-lib/webkit/webproc(gtk_ver=3)
+lib/webkit/webproc
+#(gtk_ver=3)
 {% endblock %}
 
 {% block meson_flags %}
@@ -34,6 +35,10 @@ soup2=disabled
 sed -e 's|.*subdir.*help.*||' \
     -e 's|.*add_install_script.*||' \
     -i meson.build
+
+patch -p1 << EOF
+{% include '00.diff' %}
+EOF
 {% endblock %}
 
 {% block install %}
