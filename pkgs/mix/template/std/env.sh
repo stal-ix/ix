@@ -18,6 +18,10 @@ EOF
         echo 'export PKG_CONFIG_PATH="'${out}'/share/pkgconfig:${PKG_CONFIG_PATH}"'
     fi
 
+    if test -d ${out}/share/locale; then
+        echo 'export LOCALE_PATH="'${out}'/share/locale:${LOCALE_PATH}"'
+    fi
+
     if test -d ${out}/lib/bin; then
         echo 'export PATH="'${out}'/lib/bin:${PATH}"'
     fi

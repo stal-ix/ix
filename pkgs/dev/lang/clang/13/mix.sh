@@ -12,3 +12,7 @@ rm -rf ${out}/libexec
 export CLANG_VERSION=13.0.0
 export CPPFLAGS="-isystem ${out}/share/include \${CPPFLAGS}"
 {% endblock %}
+
+{% block postinstall %}
+rm -rf ${out}/lib ${out}/include
+{% endblock %}

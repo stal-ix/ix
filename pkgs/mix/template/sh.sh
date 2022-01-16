@@ -19,16 +19,21 @@ source_env() {
 # init
 {% block script_init_env %}
 export PATH=
-export CMPATH=
 export COFLAGS=
 export CMFLAGS=
 export PYTHONPATH=
+export LOCALE_PATH=
 export ACLOCAL_PATH=
 export PKG_CONFIG_PATH=
 export PYTHONDONTWRITEBYTECODE=1
 {% endblock %}
 
 source_env "${MIX_B_DIR}"
+
+# lib only
+export COFLAGS=
+export CMFLAGS=
+export LOCALE_PATH=
 
 rm -rf ${out}
 mkdir -p ${out}

@@ -6,7 +6,15 @@ echo 'do install'
 
 (
 {% block postinstall %}
+{% if boot %}
+{% if bin %}
+rm -rf ${out}/lib ${out}/include
+{% else %}
+: skip
+{% endif %}
+{% else %}
 {% include 'postinstall.sh' %}
+{% endif %}
 {% endblock %}
 )
 

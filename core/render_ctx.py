@@ -97,6 +97,7 @@ class RenderContext:
             'bin': kind == 'bin',
             'lib': kind == 'lib',
             'aux': kind == 'dat',
+            'boot': pkg.name.startswith('boot/'),
         }, pkg.flags)
 
         try:

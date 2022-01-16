@@ -23,3 +23,7 @@ export CPPFLAGS="-w ${CPPFLAGS}"
 {{super()}}
 LLVM_TARGETS_TO_BUILD={{target.llvm_target}}
 {% endblock %}
+
+{% block postinstall %}
+rm -rf ${out}/lib ${out}/include
+{% endblock %}
