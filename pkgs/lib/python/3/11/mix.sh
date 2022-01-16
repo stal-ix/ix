@@ -16,15 +16,24 @@ dev/tool/python
 {{super()}}
 {% endblock %}
 
+{% block cpp_defines %}
+{{super()}}
+CONFIG_64=1
+SQLITE_OMIT_LOAD_EXTENSION=1
+HAVE_NDBM_H=1
+USE_NDBM=1
+{% endblock %}
+
 {% block setup %}
 {{super()}}
 export ax_cv_c_float_words_bigendian=no
-export CPPFLAGS="-DCONFIG_64=1 -DSQLITE_OMIT_LOAD_EXTENSION=1 -DHAVE_NDBM_H=1 -DUSE_NDBM=1 ${CPPFLAGS}"
 {% endblock %}
 
 {% block patch %}
 {{super()}}
+
 cd Modules/_ctypes
+
 cat cfield.c \
     | grep -v 'ffi_type ffi_type_s' \
     | grep -v 'ffi_type ffi_type_u' \
@@ -53,7 +62,10 @@ cat Modules/Setup \
     | grep -v _uuidmodule \
     > _
 
-cat Modules/Setup.stdlib.in | grep _sql | sed -e 's|.*@||g' >> _
+cat Modules/Setup.stdlib.in \
+    | grep _sql             \
+    | sed -e 's|.*@||g'     \
+    >> _
 
 cat _ - << EOF > Modules/Setup.local
 _decimal _decimal/_decimal.c

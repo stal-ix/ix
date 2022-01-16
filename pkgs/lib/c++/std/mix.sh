@@ -33,9 +33,12 @@ mkdir bld; cd bld
 --host=x86_64-pc-linux-musl
 {% endblock %}
 
+{% block cpp_defines %}
+__builtin_ia32_rdseed_si_step=__builtin_ia32_rdseed32_step
+{% endblock %}
+
 {% block setup %}
-export CPPFLAGS="-w -D__builtin_ia32_rdseed_si_step=__builtin_ia32_rdseed32_step ${CPPFLAGS}"
-export CXXFLAGS="-mrdrnd -mrdseed ${CXXFLAGS}"
+export CFLAGS="-w -mrdrnd -mrdseed ${CFLAGS}"
 {% endblock %}
 
 {% block setup_tools %}

@@ -77,9 +77,14 @@ _caches
 _xdg_binary_or_text_fallback
 {% endblock %}
 
+{% block cpp_defines %}
+WL_EGL_PLATFORM=1
+EGL_NO_X11=1
+{% endblock %}
+
 {% block setup %}
 export CPPFLAGS=$(echo ${CPPFLAGS} | tr ' ' '\n' | grep -v mesa | tr '\n' ' ')
-export CPPFLAGS="-w -DWL_EGL_PLATFORM=1 -DEGL_NO_X11=1 -Wno-register ${CPPFLAGS}"
+export CPPFLAGS="-w -Wno-register ${CPPFLAGS}"
 {% endblock %}
 
 {% block patch %}

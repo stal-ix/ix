@@ -15,8 +15,12 @@ BINDIR="${out}/bin"
 MANDIR="${out}/man"
 {% endblock %}
 
+{% block cpp_defines %}
+UNIX
+{% endblock %}
+
 {% block setup %}
-export CPPFLAGS="-I. -DUNIX ${CPPFLAGS}"
+export CPPFLAGS="-I. ${CPPFLAGS}"
 {% endblock %}
 
 {% block make_target %}

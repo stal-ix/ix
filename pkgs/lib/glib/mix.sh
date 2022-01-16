@@ -26,8 +26,12 @@ dev/build/meson
 box/boot
 {% endblock %}
 
+{% block cpp_defines %}
+_GNU_SOURCE=1
+{% endblock %}
+
 {% block setup %}
-export CPPFLAGS="-D_GNU_SOURCE=1 -I${PWD}/inc ${CPPFLAGS}"
+export CPPFLAGS="-I${PWD}/inc ${CPPFLAGS}"
 {% endblock %}
 
 {% block meson_flags %}

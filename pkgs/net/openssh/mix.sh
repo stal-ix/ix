@@ -19,8 +19,8 @@ dev/doc/groff
 dev/doc/texinfo
 {% endblock %}
 
-{% block setup %}
-export CPPFLAGS="-D__APPLE_SANDBOX_NAMED_EXTERNAL__ ${CPPFLAGS}"
+{% block cpp_defines %}
+__APPLE_SANDBOX_NAMED_EXTERNAL__
 {% endblock %}
 
 {% block patch %}
