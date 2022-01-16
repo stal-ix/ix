@@ -10,7 +10,7 @@ a2d0d5e25aefc7b3b51c816de8096fd6
 lib/mpack
 {% endblock %}
 
-{% block setup %}
+{% block cpp_defines %}
 {{super()}}
-export CPPFLAGS="-DMPACK_USE_SYSTEM=1 ${CPPFLAGS}"
+MPACK_USE_SYSTEM=1
 {% endblock %}
