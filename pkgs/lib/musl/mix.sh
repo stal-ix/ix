@@ -4,9 +4,11 @@
 box/boot
 {% endblock %}
 
-{% block setup %}
-{{super()}}
-export CPPFLAGS="-D__libc_realloc=realloc -D__libc_free=free -D__libc_malloc=malloc -D__libc_calloc=calloc ${CPPFLAGS}"
+{% block cpp_defines %}
+__libc_realloc=realloc
+__libc_free=free
+__libc_malloc=malloc
+__libc_calloc=calloc
 {% endblock %}
 
 {% block patch %}

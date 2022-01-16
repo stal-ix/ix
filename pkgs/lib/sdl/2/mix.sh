@@ -30,8 +30,8 @@ SDL_OPENGLES=ON
 SDL_WAYLAND_SHARED=OFF
 {% endblock %}
 
-{% block setup %}
-export CPPFLAGS="-DSDL_VIDEO_OPENGL_EGL=1 ${CPPFLAGS}"
+{% block cpp_defines %}
+SDL_VIDEO_OPENGL_EGL=1
 {% endblock %}
 
 {% block patch %}

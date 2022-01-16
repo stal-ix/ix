@@ -9,8 +9,8 @@ https://github.com/sabotage-linux/netbsd-curses/archive/refs/tags/v0.3.2.tar.gz
 box/boot
 {% endblock %}
 
-{% block setup %}
-export CPPFLAGS="-D__pure= ${CPPFLAGS}"
+{% block cpp_defines %}
+__pure=
 {% endblock %}
 
 {% block patch %}

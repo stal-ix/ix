@@ -21,9 +21,11 @@ LD=ld.lld
 {% endif %}
 {% endblock %}
 
-{% block setup %}
+{% block cpp_defines %}
 {% if target.os == 'darwin' %}
-export CPPFLAGS="-Dstat64=stat -Dfstat64=fstat -Dlstat64=lstat ${CPPFLAGS}"
+stat64=stat
+fstat64=fstat
+lstat64=lstat
 {% endif %}
 {% endblock %}
 

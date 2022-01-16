@@ -19,6 +19,6 @@ FREEGLUT_BUILD_DEMOS=OFF
 FREEGLUT_BUILD_SHARED_LIBS=OFF
 {% endblock %}
 
-{% block setup %}
-export CPPFLAGS="-DEGL_NO_X11=1 ${CPPFLAGS}"
+{% block cpp_defines %}
+EGL_NO_X11=1
 {% endblock %}

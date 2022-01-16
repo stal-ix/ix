@@ -13,9 +13,12 @@ box/boot
 reallocarray
 {% endblock %}
 
-{% block setup %}
+{% block cpp_defines %}
 {% if target.os == 'darwin' %}
-export CPPFLAGS="-D_DARWIN_C_SOURCE=1 -Dst_atim=st_atimespec -Dst_mtim=st_mtimespec -Dst_ctim=st_ctimespec ${CPPFLAGS}"
+_DARWIN_C_SOURCE=1
+st_atim=st_atimespec
+st_mtim=st_mtimespec
+st_ctim=st_ctimespec
 {% endif %}
 {% endblock %}
 

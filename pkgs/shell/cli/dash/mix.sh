@@ -12,9 +12,9 @@ lib/edit
 lib/iconv
 {% endblock %}
 
-{% block setup %}
+{% block cpp_defines %}
 {% if target.os == 'darwin' %}
-export CPPFLAGS="-Dstat64=stat ${CPPFLAGS}"
+stat64=stat
 {% endif %}
 {% endblock %}
 

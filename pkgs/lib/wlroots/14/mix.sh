@@ -44,8 +44,6 @@ wl_drm_interface
 zwp_linux_dmabuf_v1_interface
 zwp_linux_buffer_params_v1_interface
 zwp_linux_dmabuf_feedback_v1_interface
-{% endblock %}
 
-{% block setup %}
-export CPPFLAGS="-DNSEC_PER_SEC=WLR_NSEC_PER_SEC ${CPPFLAGS}"
+NSEC_PER_SEC
 {% endblock %}

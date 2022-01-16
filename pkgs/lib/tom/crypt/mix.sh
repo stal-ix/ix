@@ -10,6 +10,7 @@ lib/c
 lib/tom/math
 {% endblock %}
 
-{% block setup %}
-export CFLAGS="-DUSE_LTM -DLTM_DESC ${CFLAGS}"
+{% block cpp_defines %}
+USE_LTM
+LTM_DESC
 {% endblock %}

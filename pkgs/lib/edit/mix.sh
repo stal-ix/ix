@@ -10,8 +10,8 @@ lib/c
 lib/curses
 {% endblock %}
 
-{% block setup %}
-export CPPFLAGS="-D__STDC_ISO_10646__=1 ${CPPFLAGS}"
+{% block cpp_defines %}
+__STDC_ISO_10646__=1
 {% endblock %}
 
 {% block env %}

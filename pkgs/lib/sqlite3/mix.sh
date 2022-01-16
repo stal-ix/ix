@@ -13,8 +13,8 @@ lib/c
 lib/readline
 {% endblock %}
 
-{% block setup %}
-export CPPFLAGS="-DSQLITE_OMIT_LOAD_EXTENSION=1 ${CPPFLAGS}"
+{% block cpp_defines %}
+SQLITE_OMIT_LOAD_EXTENSION=1
 {% endblock %}
 
 {% block env %}
