@@ -64,15 +64,21 @@ _scproxy _scproxy.c
 
 {% block extra_modules %}
 readline readline.c
-_ctypes _ctypes/_ctypes.c _ctypes/callbacks.c _ctypes/callproc.c _ctypes/stgdict.c _ctypes/cfield.c _ctypes/malloc_closure.c -DPy_BUILD_CORE_MODULE
+_ctypes _ctypes/_ctypes.c _ctypes/callbacks.c _ctypes/callproc.c _ctypes/stgdict.c _ctypes/cfield.c _ctypes/malloc_closure.c
 _hashlib _hashopenssl.c
-_ssl _ssl.c -DUSE_SLL
+_ssl _ssl.c
 _lzma _lzmamodule.c
 _bz2 _bz2module.c
-_sqlite3 _sqlite/cache.c _sqlite/connection.c _sqlite/cursor.c _sqlite/microprotocols.c _sqlite/module.c _sqlite/prepare_protocol.c _sqlite/row.c _sqlite/statement.c _sqlite/util.c -DSQLITE_OMIT_LOAD_EXTENSION
+_sqlite3 _sqlite/cache.c _sqlite/connection.c _sqlite/cursor.c _sqlite/microprotocols.c _sqlite/module.c _sqlite/prepare_protocol.c _sqlite/row.c _sqlite/statement.c _sqlite/util.c
 {% endblock %}
 EOF
 {% endblock %}
+{% endblock %}
+
+{% block cpp_defines %}
+USE_SSL=1
+Py_BUILD_CORE_MODULE=1
+SQLITE_OMIT_LOAD_EXTENSION=1
 {% endblock %}
 
 {% if lib %}

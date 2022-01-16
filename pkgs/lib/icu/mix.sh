@@ -4,9 +4,9 @@
 lib/icu/data
 {% endblock %}
 
-{% block setup %}
+{% block cpp_defines %}
 {{super()}}
-export CPPFLAGS="-DICU_DATA_DIR=\\\"${ICU_DATA}\\\" ${CPPFLAGS}"
+ICU_DATA_DIR=\\\"${ICU_DATA}\\\"
 {% endblock %}
 
 {% block install %}

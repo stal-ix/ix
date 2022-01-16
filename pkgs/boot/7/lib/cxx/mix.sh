@@ -18,8 +18,14 @@ boot/7/lib/linux
 boot/6/env/std
 {% endblock %}
 
+{% block cpp_defines %}
+_LIBCPP_BUILDING_LIBRARY=1
+_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER=1
+LIBCXXRT=1
+{% endblock %}
+
 {% block setup %}
-export CPPFLAGS="-w -D_LIBCPP_BUILDING_LIBRARY -D_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER -iquote src -Iinclude -DLIBCXXRT -std=c++14 ${CPPFLAGS}"
+export CPPFLAGS="-w -iquote src -Iinclude -std=c++14 ${CPPFLAGS}"
 {% endblock %}
 
 {% block unpack %}

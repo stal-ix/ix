@@ -19,7 +19,6 @@ dev/tool/python
 {% block cpp_defines %}
 {{super()}}
 CONFIG_64=1
-SQLITE_OMIT_LOAD_EXTENSION=1
 HAVE_NDBM_H=1
 USE_NDBM=1
 {% endblock %}

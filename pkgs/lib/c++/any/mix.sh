@@ -52,8 +52,12 @@ install-cxxabi
 install-unwind
 {% endblock %}
 
+{% block cpp_defines %}
+_LIBUNWIND_USE_DLADDR=0
+{% endblock %}
+
 {% block setup %}
-export CPPFLAGS="-I${PWD}/libunwind/include -D_LIBUNWIND_USE_DLADDR=0 -w ${CPPFLAGS}"
+export CPPFLAGS="-I${PWD}/libunwind/include -w ${CPPFLAGS}"
 {% endblock %}
 
 {% block patch %}
