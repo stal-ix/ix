@@ -22,12 +22,15 @@ boot/8/env/std
 extract1 ${src}/flex*
 {% endblock %}
 
+{% block c_rename_symbol %}
+warn
+{% endblock %}
+
 {% block build %}
 cat << EOF > config.h
 #define HAVE_DCGETTEXT 1
 #define HAVE_GETTEXT 1
 #define HAVE_INTTYPES_H 1
-//#define HAVE_MALLOC_H 1
 #define HAVE_MEMORY_H 1
 #define HAVE_STDBOOL_H 1
 #define HAVE_STDINT_H 1
@@ -62,7 +65,7 @@ sed -e 's|yylex|flexscan|g' < lex.yy.c > scan.c
 sh mkskel.sh ./flex.skl > skel.c
 
 for x in ccl dfa ecs gen main misc nfa parse scan skel sym tblcmp yylex options scanopt buf; do
-    ${CC} -Dwarn=flex_warn -c -o ${x}.o ${x}.c
+    ${CC} -c -o ${x}.o ${x}.c
 done
 
 ${CC} -o flex *.o
