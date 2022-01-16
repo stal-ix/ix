@@ -46,14 +46,12 @@ cd heirloom
 (cd libcommon; make)
 (cd libuxre; make)
 
-for x in nawk diff cmp; do
-    (
-        cd ${x}
+for x in nawk diff cmp; do (
+    cd ${x}
 
-        make LCOMMON="-lcommon" LUXRE="-luxre"
-        make install
-    )
-done
+    make LCOMMON="-lcommon" LUXRE="-luxre"
+    make install
+) done
 {% endblock %}
 
 {% block install %}
