@@ -20,7 +20,6 @@ misc/iso-codes
 {% endblock %}
 
 {% block run_deps %}
-dev/tool/sh
 lib/webkit/webproc(gtk_ver=3)
 {% endblock %}
 
@@ -35,17 +34,43 @@ sed -e 's|.*subdir.*help.*||' \
     -e 's|.*add_install_script.*||' \
     -i meson.build
 
-(
-    find . -name '*.c' | while read l; do
-        cat ${l}
-    done
-) | grep '_class_init' \
-  | sed -e 's|_class_init.*|_get_type|' \
-  | sort | uniq \
-  | grep -v ephy_search_provider_get_type \
-  | grep -v ephy_web_overview_model_get_type \
-  | grep -v ephy_web_process_extension_get_type \
-  > types
+(find . -name '*.c' | while read l; do
+    cat ${l}
+done) | grep '_class_init' \
+      | sed -e 's|_class_init.*|_get_type|' \
+      | sort | uniq \
+      | grep -v ephy_search_provider_get_type \
+      | grep -v ephy_web_overview_model_get_type \
+      | grep -v ephy_web_process_extension_get_type \
+      > types
+
+cat << EOF >> types
+adguard_get_resource
+readability_get_resource
+highlightjs_get_resource
+pdfjs_get_resource
+epiphany_get_resource
+ephy_bookmark_properties_type_get_type
+ephy_download_action_type_get_type
+ephy_embed_shell_mode_get_type
+ephy_history_page_visit_type_get_type
+ephy_history_sort_type_get_type
+ephy_history_url_property_get_type
+ephy_link_flags_get_type
+ephy_new_tab_flags_get_type
+ephy_prefs_reader_color_scheme_get_type
+ephy_prefs_reader_font_style_get_type
+ephy_prefs_restore_session_policy_get_type
+ephy_prefs_ui_tabs_bar_visibility_policy_get_type
+ephy_prefs_web_hardware_acceleration_policy_get_type
+ephy_security_level_get_type
+ephy_sq_lite_connection_mode_get_type
+ephy_startup_mode_get_type
+ephy_web_view_document_type_get_type
+ephy_web_view_error_page_get_type
+ephy_web_view_navigation_flags_get_type
+ephy_window_chrome_get_type
+EOF
 
 (
     echo 'void g_object_init();'
@@ -76,7 +101,7 @@ cd ${out}/bin
 mv epiphany epiphany-unwrapped
 
 cat << EOF > epiphany
-#!$(which sh)
+#!/bin/sh
 export WEBKIT_EXEC_PATH="\$(dirname \$(which WebKitWebProcess))"
 exec "${out}/bin/epiphany-unwrapped" "\$@"
 EOF
