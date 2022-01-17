@@ -16,7 +16,7 @@ dev/build/meson/better
 {% endblock %}
 
 {% block run_data %}
-misc/iso-codes
+aux/iso-codes
 {% endblock %}
 
 {% block run_deps %}

@@ -23,7 +23,7 @@ lib/linux
 {% endblock %}
 
 {% block run_data %}
-misc/iso-codes
+aux/iso-codes
 {% endblock %}
 
 {% block bld_tool %}
