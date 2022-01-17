@@ -1,6 +1,7 @@
 {% extends '//mix/template/base.sh' %}
 
 {% block functions %}
+{{super()}}
 {% include 'functions.sh' %}
 {% endblock %}
 

@@ -46,7 +46,7 @@ cd heirloom
 (cd libcommon; make)
 (cd libuxre; make)
 
-for x in nawk diff cmp; do (
+for x in nawk grep diff cmp; do (
     cd ${x}
 
     make LCOMMON="-lcommon" LUXRE="-luxre"

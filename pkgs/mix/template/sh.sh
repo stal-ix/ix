@@ -5,7 +5,7 @@
 set -eu
 
 {% if setx %}
-set -x; env
+set -x
 {% endif %}
 
 cd /
@@ -15,6 +15,9 @@ source_env() {
         IFS=${OFS}; . "${x}/env"; IFS=':'
     done; IFS=${OFS}
 }
+
+{% block functions %}
+{% endblock %}
 
 # init
 {% block script_init_env %}

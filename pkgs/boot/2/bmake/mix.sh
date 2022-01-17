@@ -19,15 +19,14 @@ cd ${out}
 mkdir bin; cd bin
 mkdir src; cd src
 
-extract0 ${src}/bmake* && cd bmake*
+extract0 ${src}/bmake*; cd bmake*
 {% endblock %}
 
 {% block step_setup %}
-{{self.setup_compiler()}}
-
 {% if target.os == 'linux' %}
 export CPPFLAGS="-Imissing -Dstrtoul=bmake_strtoul ${CPPFLAGS}"
 {% endif %}
+{{super()}}
 {% endblock %}
 
 {% block patch %}

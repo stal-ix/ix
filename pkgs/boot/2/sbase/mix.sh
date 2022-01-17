@@ -20,10 +20,8 @@ boot/1/env
 extract0 ${src}/*.zip; cd *
 {% endblock %}
 
-{% block step_setup %}
-{{self.setup_compiler()}}
+{% block setup %}
 export PATH="${out}/bin:${PWD}:${PATH}"
-export SHELL="$0"
 {% endblock %}
 
 {% block make_flags %}

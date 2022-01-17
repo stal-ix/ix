@@ -1,8 +1,7 @@
 {% extends 'sh.sh' %}
 
-{% block sh_script %}
 {% block functions %}
-{% endblock %}
+{{super()}}
 
 step_unpack() {
 {% block step_unpack %}
@@ -91,6 +90,8 @@ do_test() {
 do_execute() {
     do_test
 }
+{% endblock %}
 
+{% block sh_script %}
 do_{{stage or 'execute'}}
 {% endblock %}

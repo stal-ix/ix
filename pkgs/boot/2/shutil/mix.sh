@@ -30,4 +30,6 @@ cp() {
 for i in mkdir cat tr dirname echo chmod rm test; do
     cp ${i} ${out}/bin/${i}
 done
+
+cp chmod ${out}/bin/_chmod
 {% endblock %}
