@@ -25,6 +25,10 @@ def iter_names(n):
 
     yield n
 
+    n = n.replace('tool/compress', 'bin')
+
+    yield n
+
     if n.endswith('/mix.sh'):
         n = n[:-7]
 
@@ -51,7 +55,7 @@ class Manager:
             return f.read()
 
     def load_impl(self, sel):
-        for n in iter_names(sel['name']):
+        for n in cu.iter_uniq_list(iter_names(sel['name'])):
             s = cu.dict_dict_update(sel, {'name': n})
 
             try:
