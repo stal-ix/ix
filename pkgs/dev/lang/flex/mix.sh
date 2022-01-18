@@ -15,6 +15,6 @@ dev/lang/m4
 
 {% block bld_tool %}
 dev/lang/m4
-dev/doc/texinfo
+bin/texinfo
 dev/lang/bison/3/boot
 {% endblock %}

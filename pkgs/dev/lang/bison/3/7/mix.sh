@@ -18,8 +18,8 @@ lib/intl
 dev/lang/m4
 dev/lang/flex
 dev/tool/perl
-dev/doc/help2man
-dev/doc/texinfo
+bin/help2man
+bin/texinfo
 {% block bison_bootstrap %}
 dev/lang/bison/3/boot
 {% endblock %}

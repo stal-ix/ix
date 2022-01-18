@@ -22,7 +22,7 @@ lib/mpfr
 {% block bld_tool %}
 gnu/tar
 dev/lang/flex
-dev/doc/texinfo
+bin/texinfo
 dev/lang/bison/3/8
 tool/compress/gzip
 dev/lang/binutils(for_target={{t}},bin_prefix={{t}})

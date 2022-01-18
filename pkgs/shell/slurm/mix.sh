@@ -13,6 +13,6 @@ lib/xkbcommon
 {% endblock %}
 
 {% block bld_tool %}
-dev/doc/scdoc
+bin/scdoc
 lib/wayland/protocols
 {% endblock %}

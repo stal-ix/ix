@@ -21,7 +21,7 @@ lib/pcre
 {% endblock %}
 
 {% block bld_tool %}
-dev/doc/texinfo
+bin/texinfo
 {% endblock %}
 
 {% block configure_flags %}

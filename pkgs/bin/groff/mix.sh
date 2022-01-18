@@ -14,7 +14,7 @@ lib/uchardet
 {% block bld_tool %}
 dev/tool/perl
 dev/lang/bison/3/7
-dev/doc/texinfo
+bin/texinfo
 {% endblock %}
 
 {% block patch %}

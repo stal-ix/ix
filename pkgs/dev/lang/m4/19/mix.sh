@@ -12,7 +12,7 @@ lib/sigsegv
 {% endblock %}
 
 {% block bld_tool %}
-dev/doc/help2man
+bin/help2man
 {% endblock %}
 
 {% block std_box %}

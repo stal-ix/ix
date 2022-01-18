@@ -16,5 +16,5 @@ lib/fontconfig
 {% endblock %}
 
 {% block bld_tool %}
-dev/doc/scdoc
+bin/scdoc
 {% endblock %}

@@ -21,7 +21,7 @@ lib/darwin/framework/SystemConfiguration
 {% endblock %}
 
 {% block bld_tool %}
-dev/doc/groff
+bin/groff
 dev/build/auto/conf/2/71
 dev/build/auto/make/1/16
 {% endblock %}

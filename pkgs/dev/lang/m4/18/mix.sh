@@ -9,7 +9,7 @@ https://raw.githubusercontent.com/macports/macports-ports/edf0ee1e2cf/devel/m4/f
 
 {% block bld_tool %}
 gnu/patch
-dev/doc/texinfo
+bin/texinfo
 {{super()}}
 {% endblock %}
 

@@ -6,7 +6,7 @@ http://www.mirbsd.org/MirOS/dist/mir/mksh/mksh-R59c.tgz
 {% endblock %}
 
 {% block bld_tool %}
-dev/doc/groff
+bin/groff
 {% endblock %}
 
 {% block build %}

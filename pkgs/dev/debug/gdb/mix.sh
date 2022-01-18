@@ -30,7 +30,7 @@ lib/linux
 {% block bld_tool %}
 dev/lang/flex
 dev/lang/byacc
-dev/doc/texinfo
+bin/texinfo
 {% endblock %}
 
 {% block setup %}

@@ -19,6 +19,6 @@ lib/fontconfig
 
 {% block bld_tool %}
 lib/curses/n
-dev/doc/scdoc
+bin/scdoc
 lib/wayland/protocols
 {% endblock %}

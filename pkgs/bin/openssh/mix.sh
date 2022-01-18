@@ -15,8 +15,8 @@ bin/openssh/libs(openssl=1,curses=netbsd)
 
 {% block bld_tool %}
 gnu/patch
-dev/doc/groff
-dev/doc/texinfo
+bin/groff
+bin/texinfo
 {% endblock %}
 
 {% block cpp_defines %}

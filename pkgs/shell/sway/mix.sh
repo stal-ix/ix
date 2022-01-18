@@ -22,7 +22,7 @@ lib/wlroots/trunk
 {% endblock %}
 
 {% block bld_tool %}
-dev/doc/scdoc
+bin/scdoc
 lib/wayland/protocols
 dev/build/meson/better
 {% endblock %}

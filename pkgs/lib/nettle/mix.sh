@@ -15,7 +15,7 @@ lib/c
 {% endblock %}
 
 {% block bld_tool %}
-dev/doc/texinfo
+bin/texinfo
 dev/build/auto/conf/2/69
 dev/build/auto/make/1/16
 {% endblock %}

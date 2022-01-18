@@ -16,7 +16,7 @@ lib/magic
 gnu/sed
 dev/build/auto/conf/2/69
 dev/build/auto/make/1/16
-dev/doc/texinfo
+bin/texinfo
 {% endblock %}
 
 {% block std_box %}
