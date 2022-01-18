@@ -101,7 +101,7 @@ cd ${out}/bin
 mv epiphany epiphany-unwrapped
 
 cat << EOF > epiphany
-#!/bin/sh
+#!/usr/bin/env sh
 export WEBKIT_EXEC_PATH="\$(dirname \$(which WebKitWebProcess))"
 exec "${out}/bin/epiphany-unwrapped" "\$@"
 EOF

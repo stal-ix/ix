@@ -10,22 +10,20 @@ lib/c
 lib/z
 lib/pcre
 lib/iconv
-lib/readline
 lib/curses
 lib/oniguruma
 {% endblock %}
 
-{% block run_data %}
-lib/curses/n/terminfo
+{% block bld_libs %}
+lib/readline
 {% endblock %}
 
-{% block setup_tools %}
-cat << EOF > ncurses5-config
-#!$(which sh)
-echo ${TERMINFO}
-EOF
+{% block bld_tool %}
+lib/curses/n/terminfo/config
+{% endblock %}
 
-chmod +x ncurses5-config
+{% block run_data %}
+lib/curses/n/terminfo
 {% endblock %}
 
 {% block configure_flags %}
@@ -33,12 +31,12 @@ chmod +x ncurses5-config
 --without-png
 {% endblock %}
 
-{% block build %}
-make install-static
+{% block make_target %}
+static
 {% endblock %}
 
-{% block install %}
-echo 'already installed, fixme'
+{% block make_install_target %}
+install-static
 {% endblock %}
 
 {% block env %}

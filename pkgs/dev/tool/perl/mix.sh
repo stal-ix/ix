@@ -38,8 +38,6 @@ sed -e "s|/usr/bin/||g"          \
     -e "s|/usr/|/nowhere/|g"     \
     -e "s|/bin/sh|$(which sh)|g" \
     -i Configure
-
-
 {% endblock %}
 
 {% block configure %}
