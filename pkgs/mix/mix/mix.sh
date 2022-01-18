@@ -7,9 +7,9 @@ https://github.com/pg83/mix/archive/{{mix_ver}}.zip
 
 {% block bld_libs %}
 lib/python
-pypi/jinja2
-pypi/beautysh
-pypi/minio
+pip/jinja2
+pip/beautysh
+pip/minio
 {% endblock %}
 
 {% block extra_modules %}

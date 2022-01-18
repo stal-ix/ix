@@ -10,25 +10,25 @@
     "beautysh/mix.sh": {
         "md5": "0edfde5715fcb643db59724c61365d0f",
         "run": [
-            "pypi/setuptools"
+            "pip/setuptools"
         ],
         "url": "https://files.pythonhosted.org/packages/36/c8/23a1c06e462cb107f29d741ffd8851bf5469738d1aeb8d977d271db69b89/beautysh-6.1.0-py3-none-any.whl"
     },
     "boto3/mix.sh": {
         "md5": "bdb7e3b4a283624e7ee773c888ddeeb6",
         "run": [
-            "pypi/botocore",
-            "pypi/s3transfer",
-            "pypi/jmespath"
+            "pip/botocore",
+            "pip/s3transfer",
+            "pip/jmespath"
         ],
         "url": "https://files.pythonhosted.org/packages/e3/7c/580de0ee483182140e5e022737837b9ab7f9b0704682b0ce04d00cc10736/boto3-1.18.53-py3-none-any.whl"
     },
     "botocore/mix.sh": {
         "md5": "4059bde467f02b4fd6b10405a2bc1073",
         "run": [
-            "pypi/six",
-            "pypi/python-dateutil",
-            "pypi/urllib3"
+            "pip/six",
+            "pip/python-dateutil",
+            "pip/urllib3"
         ],
         "url": "https://files.pythonhosted.org/packages/79/94/b035eaf361b426421563f63fcf4df9fe14091913705c1eb16f6ce2d4aa90/ybotocore-1.21.53-py3-none-any.whl"
     },
@@ -43,7 +43,7 @@
     "jinja2/mix.sh": {
         "md5": "b377af8123a32e992984222bff51e152",
         "run": [
-            "pypi/markupsafe"
+            "pip/markupsafe"
         ],
         "url": "https://files.pythonhosted.org/packages/80/21/ae597efc7ed8caaa43fb35062288baaf99a7d43ff0cf66452ddf47604ee6/Jinja2-3.0.1-py3-none-any.whl"
     },
@@ -54,8 +54,8 @@
     "minio/mix.sh": {
         "md5": "8ed0e1fdb05f5a4e50394dce8bc9ef51",
         "run": [
-            "pypi/certifi",
-            "pypi/urllib3"
+            "pip/certifi",
+            "pip/urllib3"
         ],
         "url": "https://files.pythonhosted.org/packages/b3/b4/4281ab6be6c7bae210b86956fc2d71e0848f2a37e95f102401fc1317529f/minio-7.1.0-py3-none-any.whl"
     },
@@ -78,16 +78,16 @@
     "s3transfer/mix.sh": {
         "md5": "d662ab6d1f330cc3c6db025093c28bf8",
         "run": [
-            "pypi/botocore"
+            "pip/botocore"
         ],
         "url": "https://files.pythonhosted.org/packages/ab/84/fc3717a7b7f0f6bb08af593127171f08e3e0087c197922da09c01bfe7c3a/s3transfer-0.5.0-py3-none-any.whl"
     },
     "setuptools/mix.sh": {
         "md5": "f1dbc68b4f2eee6db47a77764db5cc2f",
         "run": [
-            "pypi/appdirs",
-            "pypi/packaging",
-            "pypi/pyparsing"
+            "pip/appdirs",
+            "pip/packaging",
+            "pip/pyparsing"
         ],
         "url": "https://files.pythonhosted.org/packages/41/f4/a7ca4859317232b1efb64a826b8d2d7299bb77fb60bdb08e2bd1d61cf80d/setuptools-58.2.0-py3-none-any.whl"
     },

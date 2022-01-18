@@ -9,7 +9,7 @@ lib/python
 {% endblock %}
 
 {% block bld_libs %}
-pypi/pygments
+pip/pygments
 {% endblock %}
 
 {% block setup %}

@@ -18,7 +18,7 @@ lib/vulkan/headers
 {% endblock %}
 
 {% block bld_libs %}
-pypi/Mako
+pip/Mako
 {% endblock %}
 
 {% block bld_tool %}

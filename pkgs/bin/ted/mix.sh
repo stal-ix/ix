@@ -8,7 +8,7 @@ https://github.com/pg83/ted/archive/5405a729a58f8e8218b3e656cbb289d5fd989dd2.zip
 {% block bld_libs %}
 lib/c
 lib/python
-pypi/pygments
+pip/pygments
 {% endblock %}
 
 {% block entry_point %}ted{% endblock %}

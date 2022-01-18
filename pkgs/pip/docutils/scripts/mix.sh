@@ -1,4 +1,4 @@
-{% extends '//pypi/docutils/mix.sh' %}
+{% extends '//pip/docutils/mix.sh' %}
 
 {% block run_deps %}
 dev/tool/python

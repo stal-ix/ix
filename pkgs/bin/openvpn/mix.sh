@@ -16,7 +16,7 @@ lib/{{openvpnssl or 'openssl'}}
 {% endblock %}
 
 {% block bld_tool %}
-pypi/docutils/scripts
+pip/docutils/scripts
 dev/build/auto/conf/2/69
 dev/build/auto/make/1/16
 {% endblock %}
