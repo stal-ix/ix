@@ -9,19 +9,21 @@ https://github.com/Kitware/CMake/archive/refs/tags/v3.22.0.tar.gz
 {% if target.os == 'darwin' %}
 lib/darwin/framework/CoreFoundation
 {% endif %}
+
 {% if target.os == 'linux' %}
 lib/linux
 {% endif %}
+
 lib/z
-lib/xz
-lib/uv
 lib/c
+lib/uv
+lib/xz
 lib/c++
 lib/curl
 lib/bzip2
 lib/expat
-lib/archive
 lib/curses
+lib/archive
 {% endblock %}
 
 {% block std_box %}

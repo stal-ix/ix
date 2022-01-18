@@ -1,14 +1,18 @@
 {% extends 'std/mix.sh' %}
 
 {% block std_env %}
-{% if std_env %}
-{{std_env}}
-{% else %}
-{% block c_compiler %}
-dev/lang/clang/13/opt
-{% endblock %}
-{{super()}}
-{% endif %}
+ {% if std_env %}
+  {{std_env}}
+ {% else %}
+  {% block c_compiler %}
+   dev/lang/clang/13/opt
+  {% endblock %}
+  {% if std_box %}
+   {{std_box}}
+  {% else %}
+   {{super()}}
+  {% endif %}
+ {% endif %}
 {% endblock %}
 
 {% block functions %}

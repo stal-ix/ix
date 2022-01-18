@@ -10,8 +10,10 @@ lib/c
 {% endblock %}
 
 {% block bld_libs %}
+{% if bin %}
 lib/intl
 lib/iconv
+{% endif %}
 {% endblock %}
 
 {% block std_box %}

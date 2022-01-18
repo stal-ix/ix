@@ -7,5 +7,5 @@ gnu/box
 {% endblock %}
 
 {% block decompressor %}
-dev/tool/extract
+dev/tool/extract(std_box=box/boot,opt=fast)
 {% endblock %}
