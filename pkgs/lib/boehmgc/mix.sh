@@ -1,8 +1,8 @@
-{% extends '//mix/template/autohell.sh' %}
+{% extends '//mix/template/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/ivmai/bdwgc/archive/refs/tags/v8.0.6.tar.gz
-50c490f2a55f5e747f7cb9f18acb7c68
+https://github.com/ivmai/bdwgc/archive/742febb2f662a45b69bc0c5faef2111d576694fd.zip
+sha:b6065d4c6c80a04655894441321f182cb7b1d7fdfb3247f21f866a568468642c
 {% endblock %}
 
 {% block lib_deps %}
@@ -13,25 +13,16 @@ lib/darwin/framework/CoreFoundation
 {% endif %}
 {% endblock %}
 
-{% block bld_tool %}
-dev/build/auto/conf/2/69
-dev/build/auto/make/1/16
-{% endblock %}
-
-{% block autoreconf %}
-sh autogen.sh
-{% endblock %}
-
-{% block configure_flags %}
---disable-debug
---disable-cplusplus
---enable-large-config
-{% endblock %}
-
 {% block env %}
 export COFLAGS="--with-libgc-prefix=${out} \${COFLAGS}"
 {% endblock %}
 
-{% block test_execute %}
-make check
+{% block cmake_flags %}
+build_tests=OFF
+enable_docs=OFF
+enable_threads=ON
+enable_cplusplus=OFF
+enable_large_config=ON
+enable_dynamic_loading=OFF
+with_libatomic_ops=ON
 {% endblock %}

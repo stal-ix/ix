@@ -5,6 +5,10 @@ https://github.com/libexpat/libexpat/archive/refs/tags/R_2_4_1.tar.gz
 3bbf3f4d6a1ab1a82ca1dbafda68ed5f
 {% endblock %}
 
+{% block lib_deps %}
+lib/c
+{% endblock %}
+
 {% block std_box %}
 box/boot
 {% endblock %}
@@ -28,8 +32,4 @@ chmod +x install_name_tool
 
 {% block env %}
 export COFLAGS="--with-expat=${out} --with-libexpat-prefix=${out} --with-libexpat=${out} --with-system-expat=yes \${COFLAGS}"
-{% endblock %}
-
-{% block lib_deps %}
-lib/c
 {% endblock %}
