@@ -2,7 +2,7 @@
 
 {% block bld_tool %}
 dev/tool/sh
-dev/lang/clang/13/opt
+dev/tool/compiler
 {% endblock %}
 
 {% block install %}
