@@ -21,6 +21,8 @@ def fix_name_2(n):
 
 
 def iter_names(n):
+    n = n.replace('shell/cli', 'bin').replace('shell/mc', 'bin/mc')
+
     yield n
 
     if n.endswith('/mix.sh'):

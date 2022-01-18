@@ -1,4 +1,4 @@
-{% extends '//shell/cli/bash/t/mix.sh' %}
+{% extends '//bin/bash/t/mix.sh' %}
 
 {% block fetch %}
 https://ftp.gnu.org/gnu/bash/bash-5.1.8.tar.gz

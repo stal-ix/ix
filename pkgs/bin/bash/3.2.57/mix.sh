@@ -1,4 +1,4 @@
-{% extends '//shell/cli/bash/t/mix.sh' %}
+{% extends '//bin/bash/t/mix.sh' %}
 
 {% block fetch %}
 https://ftp.gnu.org/gnu/bash/bash-3.2.57.tar.gz
