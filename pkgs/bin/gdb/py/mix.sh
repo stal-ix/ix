@@ -1,7 +1,7 @@
 {% extends '//mix/template/python/hub.sh' %}
 
 {% block fetch %}
-{% include '//dev/debug/gdb/version.sh' %}
+{% include '//bin/gdb/version.sh' %}
 {% endblock %}
 
 {% block lib_deps %}

@@ -20,7 +20,7 @@ lib/curses
 lib/intel/pt
 lib/readline
 
-dev/debug/gdb/py(edit=readline)
+bin/gdb/py(edit=readline)
 
 {% if target.os == 'linux' %}
 lib/linux

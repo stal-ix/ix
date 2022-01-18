@@ -3,7 +3,7 @@ dev/tool/sh
 {% endblock %}
 
 {% block box %}
-gnu/box
+bin/gnubox
 {% endblock %}
 
 {% block decompressor %}

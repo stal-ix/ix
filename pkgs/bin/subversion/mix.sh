@@ -6,7 +6,7 @@ https://archive.apache.org/dist/subversion/subversion-1.14.1.tar.bz2
 {% endblock %}
 
 {% block bld_libs %}
-dev/vcs/subversion/libs(openssl=1)
+bin/subversion/libs(openssl=1)
 {% endblock %}
 
 {% block run_deps %}

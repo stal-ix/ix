@@ -21,7 +21,7 @@ lib/openssl
 {% block bld_tool %}
 tool/curl
 dev/tool/bash
-dev/vcs/git
+bin/git
 gnu/tar
 tool/gnu/time
 dev/tool/python
