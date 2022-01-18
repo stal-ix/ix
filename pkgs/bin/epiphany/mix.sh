@@ -6,7 +6,7 @@ sha:c4545d5e7ef4efd39964cac3ee680b5a238207b95f5f6c8ab747292303654b12
 {% endblock %}
 
 {% block bld_libs %}
-web/epiphany/libs(gtk_ver=3)
+bin/epiphany/libs(gtk_ver=3)
 {% endblock %}
 
 {% block bld_tool %}

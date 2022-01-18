@@ -12,6 +12,24 @@ import core.package as cp
 import core.gen_cmds as cg
 
 
+def fix_name_1(n):
+    return 'bin/' + os.path.basename(n)
+
+
+def fix_name_2(n):
+    return {'sys/util/linux': 'bin/util/linux'}.get(n, n)
+
+
+def iter_names(n):
+    yield n
+
+    if n.endswith('/mix.sh'):
+        n = n[:-7]
+
+    yield fix_name_1(n)
+    yield fix_name_2(n)
+
+
 class Manager:
     def __init__(self, config):
         self._c = config
@@ -30,6 +48,17 @@ class Manager:
         with open(os.path.join(self.config.where, path)) as f:
             return f.read()
 
+    def load_impl(self, sel):
+        for n in iter_names(sel['name']):
+            s = cu.dict_dict_update(sel, {'name': n})
+
+            try:
+                return cp.Package(s, self)
+            except FileNotFoundError as e:
+                err = e
+
+        raise err
+
     def load_package(self, selector):
         key = cu.struct_hash(selector)
 
@@ -37,7 +66,7 @@ class Manager:
             try:
                 return self._p[key]
             except KeyError:
-                self._p[key] = cp.Package(selector, self)
+                self._p[key] = self.load_impl(selector)
 
     def load_packages(self, ss):
         for s in ss:

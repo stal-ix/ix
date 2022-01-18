@@ -20,7 +20,7 @@ lib/tree/sitter
 
 {% block bld_tool %}
 dev/tool/gperf
-editor/neovim/luafat
+bin/neovim/luafat
 {% endblock %}
 
 {% block script_init_env %}

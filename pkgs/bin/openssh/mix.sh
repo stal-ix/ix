@@ -10,7 +10,7 @@ a50fb1d7c40ac7fac3360218cb37a38b
 {% endblock %}
 
 {% block bld_libs %}
-net/openssh/libs(openssl=1,curses=netbsd)
+bin/openssh/libs(openssl=1,curses=netbsd)
 {% endblock %}
 
 {% block bld_tool %}
