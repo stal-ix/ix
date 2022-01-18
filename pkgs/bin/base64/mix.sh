@@ -6,7 +6,7 @@ dc02ea0324279df0ecdc23d519dbcaa0
 {% endblock %}
 
 {% block std_box %}
-box/boot
+bin/bootbox
 {% endblock %}
 
 {% block setup_tools %}

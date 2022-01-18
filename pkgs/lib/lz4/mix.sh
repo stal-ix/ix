@@ -6,7 +6,7 @@ https://github.com/lz4/lz4/archive/refs/tags/v1.9.3.tar.gz
 {% endblock %}
 
 {% block std_box %}
-box/boot
+bin/bootbox
 {% endblock %}
 
 {% block make_flags %}

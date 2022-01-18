@@ -23,7 +23,7 @@ lib/darwin/framework/Foundation
 dev/lang/cctools
 {% endif %}
 dev/build/meson
-box/boot
+bin/bootbox
 {% endblock %}
 
 {% block cpp_defines %}

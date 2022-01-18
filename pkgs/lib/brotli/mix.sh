@@ -7,7 +7,7 @@ c2274f0c7af8470ad514637c35bcee7d
 
 {% if lib %}
 {% block std_box %}
-box/boot
+bin/bootbox
 {% endblock %}
 {% endif %}
 

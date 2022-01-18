@@ -6,7 +6,7 @@ http://deb.debian.org/debian/pool/main/f/file/file_5.39.orig.tar.gz
 {% endblock %}
 
 {% block std_box %}
-box/boot
+bin/bootbox
 {% endblock %}
 
 {% block lib_deps %}

@@ -11,7 +11,7 @@ lib/linux
 {% endblock %}
 
 {% block std_box %}
-box/boot
+bin/bootbox
 {% endblock %}
 
 {% block cmake_flags %}

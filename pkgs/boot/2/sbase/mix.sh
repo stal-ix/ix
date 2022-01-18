@@ -1,4 +1,4 @@
-{% extends '//box/sbase/t/mix.sh' %}
+{% extends '//bin/sbase/t/mix.sh' %}
 
 {% block make_bin %}
 bmake

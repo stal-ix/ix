@@ -6,7 +6,7 @@ http://zlib.net/zlib-1.2.11.tar.xz
 {% endblock %}
 
 {% block std_box %}
-box/boot
+bin/bootbox
 {% endblock %}
 
 {% block configure %}

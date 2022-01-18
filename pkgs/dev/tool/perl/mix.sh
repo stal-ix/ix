@@ -17,7 +17,7 @@ dev/tool/bash
 {% endblock %}
 
 {% block std_box %}
-box/boot
+bin/bootbox
 {% endblock %}
 
 {% block setup %}

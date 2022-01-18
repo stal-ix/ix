@@ -10,7 +10,7 @@ gnu/patch
 {% endblock %}
 
 {% block std_box %}
-box/boot
+bin/bootbox
 {% endblock %}
 
 {% block run_deps %}

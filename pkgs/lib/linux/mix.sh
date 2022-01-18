@@ -10,7 +10,7 @@ lib/musl/pure(std_env={{std_env}})
 {% endblock %}
 
 {% block std_box %}
-box/boot
+bin/bootbox
 {% endblock %}
 
 {% block setup_tools %}

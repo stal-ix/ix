@@ -22,7 +22,7 @@ cd build/cmake
 
 {% if lib %}
 {% block std_box %}
-box/boot
+bin/bootbox
 {% endblock %}
 {% endif %}
 

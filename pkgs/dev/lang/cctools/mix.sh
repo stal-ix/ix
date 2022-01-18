@@ -21,7 +21,7 @@ dev/build/auto/make/1/16
 {% endblock %}
 
 {% block std_box %}
-box/boot
+bin/bootbox
 {% endblock %}
 
 {% block unpack %}

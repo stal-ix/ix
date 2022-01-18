@@ -6,7 +6,7 @@ fbf5249ebd6c930e1d4fe08c9683e367
 {% endblock %}
 
 {% block std_box %}
-box/boot
+bin/bootbox
 {% endblock %}
 
 {% block install %}
