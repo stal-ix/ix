@@ -1,4 +1,4 @@
-{% extends '//tool/text/mawk/mix.sh' %}
+{% extends '//bin/mawk/mix.sh' %}
 
 {% block bld_libs %}
 {% endblock %}

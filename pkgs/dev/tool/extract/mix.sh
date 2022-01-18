@@ -11,7 +11,7 @@ lib/bzip2
 {% endblock %}
 
 {% block run_deps %}
-tool/pv
+bin/pv
 {% endblock %}
 
 {% block env %}
