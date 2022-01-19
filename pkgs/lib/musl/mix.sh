@@ -13,6 +13,7 @@ __libc_calloc=calloc
 
 {% block patch %}
 {{super()}}
+>src/legacy/valloc.c
 >src/malloc/lite_malloc.c
 {% endblock %}
 
