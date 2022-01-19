@@ -10,8 +10,8 @@ lib/c
 {% if target.os == 'linux' %}
 lib/fts
 {% endif %}
-lib/readline
 lib/curses
+lib/readline
 {% endblock %}
 
 {% block bld_tool %}

@@ -1,4 +1,4 @@
-{% extends '//mix/template/autohell.sh' %}
+{% extends '//mix/template/autorehell.sh' %}
 
 {% block fetch %}
 https://github.com/OpenVPN/openvpn/archive/refs/tags/v2.5.4.tar.gz
@@ -17,8 +17,6 @@ lib/{{openvpnssl or 'openssl'}}
 
 {% block bld_tool %}
 pip/docutils/scripts
-bin/auto/conf/2/69
-bin/auto/make/1/16
 {% endblock %}
 
 {% block configure_flags %}

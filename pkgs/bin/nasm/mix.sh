@@ -1,4 +1,4 @@
-{% extends '//mix/template/autohell.sh' %}
+{% extends '//mix/template/autorehell.sh' %}
 
 {% block fetch %}
 https://github.com/netwide-assembler/nasm/archive/refs/tags/nasm-2.15.05.tar.gz
@@ -7,8 +7,6 @@ https://github.com/netwide-assembler/nasm/archive/refs/tags/nasm-2.15.05.tar.gz
 
 {% block bld_tool %}
 bld/perl
-bin/auto/conf/2/69
-bin/auto/make/1/16
 {% endblock %}
 
 {% block autoreconf %}

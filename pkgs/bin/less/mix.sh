@@ -6,6 +6,6 @@ fcd2c9baa3c8f4ece2807c2c8bae5241
 {% endblock %}
 
 {% block bld_libs %}
-lib/c/mix.sh
-lib/curses/mix.sh
+lib/c
+lib/curses
 {% endblock %}

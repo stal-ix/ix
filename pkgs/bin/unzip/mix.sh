@@ -11,10 +11,6 @@ e2bf7537e1ca821f6059ee84e7ae76a5
 bin/patch
 {% endblock %}
 
-{% block std_box %}
-bld/bootbox
-{% endblock %}
-
 {% block unpack_chdir %}
 cd unzip*
 {% endblock %}

@@ -18,8 +18,8 @@ lib/cap/ng
 {% endblock %}
 
 {% block bld_tool %}
-bin/gettext
 bld/bash
+bin/gettext
 bin/bison/3/8
 bin/auto/conf/2/69
 bin/auto/make/1/16

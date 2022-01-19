@@ -7,9 +7,9 @@ https://github.com/emersion/grim/archive/refs/tags/v1.3.2.tar.gz
 
 {% block bld_libs %}
 lib/c
-lib/wayland
-lib/cairo
 lib/jpeg
+lib/cairo
+lib/wayland
 {% endblock %}
 
 {% block bld_tool %}

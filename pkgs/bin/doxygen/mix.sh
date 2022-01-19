@@ -12,6 +12,6 @@ lib/c++
 
 {% block bld_tool %}
 bin/flex
-bin/bison/3/8
 bld/python
+bin/bison/3/8
 {% endblock %}

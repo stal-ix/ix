@@ -7,9 +7,9 @@ cbfee6db4d034bfa62effe695da2bbd6
 
 {% block bld_libs %}
 lib/c
+lib/cap
 lib/intl
 lib/yajl
-lib/cap
 lib/seccomp
 lib/argp/standalone
 {% endblock %}

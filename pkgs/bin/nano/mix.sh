@@ -1,4 +1,4 @@
-{% extends '//mix/template/autohell.sh' %}
+{% extends '//mix/template/autorehell.sh' %}
 
 {% block fetch %}
 https://nano-editor.org/dist/v6/nano-6.0.tar.xz
@@ -16,8 +16,6 @@ lib/linux
 
 {% block bld_tool %}
 bin/gettext
-bin/auto/conf/2/69
-bin/auto/make/1/16
 {% endblock %}
 
 {% block configure_flags %}

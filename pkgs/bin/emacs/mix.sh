@@ -12,8 +12,8 @@ lib/curses
 {% endblock %}
 
 {% block bld_tool %}
-bin/patch
 bin/tar
+bin/patch
 {% endblock %}
 
 {% block patch %}
@@ -23,8 +23,8 @@ EOF
 {% endblock %}
 
 {% block configure_flags %}
---without-all
 --without-x
---with-dumping=pdumper
 --without-ns
+--without-all
+--with-dumping=pdumper
 {% endblock %}
