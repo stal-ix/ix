@@ -1,3 +1,5 @@
+import core.utils as cu
+
 import os
 import sys
 import profile
@@ -69,13 +71,18 @@ def main_func(args, binary):
     }
 
     def run():
-        importlib.import_module(k).__dict__['cli_' + v](ctx)
+        cu.step('load module')
+        mod = importlib.import_module(k)
+        cu.step('done load module')
+        mod.__dict__['cli_' + v](ctx)
 
-    #profile.runctx('run()', locals(), globals())
+    # profile.runctx('run()', locals(), globals())
     run()
 
 
 def main(argv, mix):
+    cu.step('start main')
+
     try:
         main_func(argv[1:], mix)
     except ce.Error as e:

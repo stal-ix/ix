@@ -1,6 +1,6 @@
 import core.utils as cu
-import core.cmd_line as cc
 import core.manager as cm
+import core.cmd_line as cc
 
 
 def parse_args(ctx):
