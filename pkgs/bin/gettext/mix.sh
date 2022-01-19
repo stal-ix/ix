@@ -15,12 +15,12 @@ lib/textstyle
 
 {% block bld_tool %}
 dev/lang/bison/3/6
-tool/compress/gzip
+bin/gzip
 {% endblock %}
 
 {% block run_deps %}
 bin/tar
-tool/compress/gzip
+bin/gzip
 {% endblock %}
 
 {% block unpack %}

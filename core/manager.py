@@ -12,28 +12,10 @@ import core.package as cp
 import core.gen_cmds as cg
 
 
-def fix_name_1(n):
-    return 'bin/' + os.path.basename(n)
-
-
-def fix_name_2(n):
-    return {'sys/util/linux': 'bin/util/linux'}.get(n, n)
-
-
 def iter_names(n):
-    n = n.replace('shell/cli', 'bin').replace('shell/mc', 'bin/mc')
-
     yield n
 
-    n = n.replace('tool/compress', 'bin')
-
-    yield n
-
-    if n.endswith('/mix.sh'):
-        n = n[:-7]
-
-    yield fix_name_1(n)
-    yield fix_name_2(n)
+    return
 
 
 class Manager:

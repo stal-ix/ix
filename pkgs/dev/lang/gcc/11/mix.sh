@@ -24,7 +24,7 @@ bin/tar
 dev/lang/flex
 bin/texinfo
 dev/lang/bison/3/8
-tool/compress/gzip
+bin/gzip
 dev/lang/binutils(for_target={{t}},bin_prefix={{t}})
 dev/lang/binutils(for_target={{f}},bin_prefix={{f}})
 {% endblock %}

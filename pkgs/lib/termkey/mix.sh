@@ -12,7 +12,7 @@ lib/unibilium
 
 {% block bld_tool %}
 dev/tool/perl
-tool/compress/gzip
+bin/gzip
 dev/build/pkg-config
 dev/build/auto/libtool
 {% endblock %}

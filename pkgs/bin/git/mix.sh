@@ -22,7 +22,7 @@ bin/gettext
 {% endblock %}
 
 {% block run_deps %}
-net/openssh
+bin/openssh
 {% endblock %}
 
 {% block make_flags %}

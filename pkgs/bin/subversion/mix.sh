@@ -10,7 +10,7 @@ bin/subversion/libs(openssl=1)
 {% endblock %}
 
 {% block run_deps %}
-net/openssh
+bin/openssh
 {% endblock %}
 
 {% block setup %}

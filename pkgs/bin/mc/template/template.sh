@@ -18,7 +18,7 @@ dev/tool/perl
 {% endblock %}
 
 {% block run_deps %}
-tool/compress/all
+set/compress
 {% endblock %}
 
 {% block c_rename_symbol %}
