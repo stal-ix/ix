@@ -6,7 +6,7 @@ f02d78311298468c5c1d278507ad42f2
 {% endblock %}
 
 {% block bld_tool %}
-dev/lang/nasm
+bin/nasm
 {% endblock %}
 
 {% block lib_deps %}

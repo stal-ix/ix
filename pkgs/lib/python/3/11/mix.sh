@@ -12,7 +12,7 @@ lib/gdbm
 {% endblock %}
 
 {% block bld_tool %}
-dev/tool/python
+bld/python
 {{super()}}
 {% endblock %}
 

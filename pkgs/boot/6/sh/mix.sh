@@ -1,4 +1,4 @@
-{% extends '//dev/tool/sh/mix.sh' %}
+{% extends '//bld/sh/mix.sh' %}
 
 {% block bld_libs %}
 {% endblock %}

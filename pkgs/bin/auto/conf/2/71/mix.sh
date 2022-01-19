@@ -6,12 +6,12 @@ https://ftp.gnu.org/gnu/autoconf/autoconf-2.71.tar.xz
 {% endblock %}
 
 {% block run_deps %}
-dev/lang/m4
+bin/m4
 {% endblock %}
 
 {% block bld_tool %}
-dev/lang/m4
-dev/tool/perl
+bin/m4
+bld/perl
 {% endblock %}
 
 {% block std_box %}

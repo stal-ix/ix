@@ -2,7 +2,7 @@
 
 {% block std_box %}
 {% if target.os == 'darwin' %}
-dev/lang/cctools
+bin/cctools
 {% endif %}
 bin/meson
 bin/cmake

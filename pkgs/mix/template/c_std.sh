@@ -5,7 +5,7 @@
     {{std_env}}
   {% else %}
     {% block c_compiler %}
-      dev/tool/compiler
+      bld/compiler
     {% endblock %}
     {% if std_box %}
       {{std_box}}

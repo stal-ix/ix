@@ -1,7 +1,7 @@
 {% extends '//mix/template/proxy.sh' %}
 
 {% block run_deps %}
-dev/tool/python
+bld/python
 {% endblock %}
 
 {% block ind_deps %}

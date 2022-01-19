@@ -12,7 +12,7 @@ lib/c++
 {% endblock %}
 
 {% block bld_tool %}
-dev/tool/bash
+bld/bash
 bin/gyp
 bin/make
 bin/ninja

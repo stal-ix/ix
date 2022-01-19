@@ -7,8 +7,8 @@ https://github.com/linux-pam/linux-pam/archive/refs/tags/v1.5.2.tar.gz
 
 {% block bld_tool %}
 bin/gettext
-dev/lang/flex
-dev/lang/byacc
+bin/flex
+bin/byacc
 bin/auto/make/1/16
 bin/auto/conf/2/69
 {% endblock %}

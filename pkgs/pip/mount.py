@@ -13,7 +13,7 @@ TMPL = r'''
 {% endblock %}
 
 {% block bld_tool %}
-dev/tool/python/mix.sh
+bld/python/mix.sh
 {% endblock %}
 
 {% block run_deps %}

@@ -46,10 +46,10 @@ lib/webkit/drivers
 {% block bld_tool %}
 lib/glib
 bin/gettext
-dev/tool/perl
-dev/tool/ruby
-dev/tool/gperf
-dev/tool/python
+bld/perl
+bld/ruby
+bld/gperf
+bld/python
 lib/wayland/protocols
 {% endblock %}
 

@@ -16,8 +16,8 @@ lib/openssl
 {% endblock %}
 
 {% block bld_tool %}
-dev/tool/perl
-dev/tool/python
+bld/perl
+bld/python
 bin/gettext
 {% endblock %}
 

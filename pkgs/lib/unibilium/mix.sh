@@ -10,7 +10,7 @@ lib/c
 {% endblock %}
 
 {% block bld_tool %}
-dev/tool/perl
+bld/perl
 bin/gzip
 bin/auto/libtool
 {% endblock %}

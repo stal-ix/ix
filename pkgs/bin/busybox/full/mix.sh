@@ -12,7 +12,7 @@ lib/linux
 
 {% block bld_tool %}
 lib/bzip2
-dev/tool/perl
+bld/perl
 {% endblock %}
 
 {% block setup %}

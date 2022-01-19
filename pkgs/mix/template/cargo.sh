@@ -1,7 +1,7 @@
 {% extends 'c_std.sh' %}
 
 {% block std_box %}
-dev/lang/rustc/1/56
+bin/rustc/1/56
 {{super()}}
 {% endblock %}
 

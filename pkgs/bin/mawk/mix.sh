@@ -11,7 +11,7 @@ lib/readline
 {% endblock %}
 
 {% block bld_tool %}
-dev/lang/byacc
+bin/byacc
 {% endblock %}
 
 {% block std_box %}

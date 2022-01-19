@@ -14,7 +14,7 @@ bin/bootbox
 {% endblock %}
 
 {% block run_deps %}
-dev/tool/python
+bld/python
 {% endblock %}
 
 {% block unpack %}

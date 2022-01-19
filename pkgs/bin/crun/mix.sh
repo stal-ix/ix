@@ -15,7 +15,7 @@ lib/argp/standalone
 {% endblock %}
 
 {% block bld_tool %}
-dev/tool/python
+bld/python
 {% endblock %}
 
 {% block configure_flags %}

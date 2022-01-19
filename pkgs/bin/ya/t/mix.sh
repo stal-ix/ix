@@ -10,13 +10,13 @@ be31e2ab97ad66b404425e2794673bee
 {% endblock %}
 
 {% block bld_tool %}
-dev/tool/python
-dev/tool/python/2
+bld/python
+bld/python/2
 jdk/oracle/17
 {% endblock %}
 
 {% block c_compiler %}
-dev/lang/clang/12
+bin/clang/12
 {% endblock %}
 
 {% block setup %}

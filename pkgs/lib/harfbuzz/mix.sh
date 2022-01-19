@@ -22,7 +22,7 @@ lib/cairo
 
 {% block bld_tool %}
 lib/glib/mix.sh
-dev/tool/ragel/6
+bld/ragel/6
 {% endblock %}
 
 {% block meson_flags %}

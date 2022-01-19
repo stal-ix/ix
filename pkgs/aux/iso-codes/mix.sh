@@ -6,7 +6,7 @@ sha:d60541cf1b3acceeef625a4d05f673aff5f22fbe28186e61911357b245c66411
 {% endblock %}
 
 {% block bld_tool %}
-dev/tool/python
+bld/python
 bin/auto/conf/2/69
 bin/auto/make/1/16
 {% endblock %}

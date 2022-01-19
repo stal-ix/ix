@@ -21,7 +21,7 @@ lib/python
 {% endblock %}
 
 {% block bld_tool %}
-dev/tool/swig/4
+bld/swig/4
 {% endblock %}
 
 {% block patch %}

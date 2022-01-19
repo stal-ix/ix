@@ -15,7 +15,7 @@ lib/iconv
 {% endblock %}
 
 {% block bld_tool %}
-dev/lang/byacc
+bin/byacc
 {% endblock %}
 
 {% block patch %}

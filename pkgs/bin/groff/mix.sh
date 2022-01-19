@@ -12,8 +12,8 @@ lib/uchardet
 {% endblock %}
 
 {% block bld_tool %}
-dev/tool/perl
-dev/lang/bison/3/7
+bld/perl
+bin/bison/3/7
 bin/texinfo
 {% endblock %}
 

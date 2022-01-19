@@ -6,11 +6,11 @@ b51001b5d6c9fc929291d5ae8e6caafc
 {% endblock %}
 
 {% block run_deps %}
-dev/tool/perl
+bld/perl
 {% endblock %}
 
 {% block bld_tool %}
-dev/tool/perl
+bld/perl
 {% endblock %}
 
 {% block std_box %}

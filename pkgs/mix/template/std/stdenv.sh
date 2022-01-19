@@ -1,5 +1,5 @@
 {% block shell %}
-dev/tool/sh
+bld/sh
 {% endblock %}
 
 {% block box %}
@@ -7,5 +7,5 @@ bin/gnubox
 {% endblock %}
 
 {% block decompressor %}
-dev/tool/extract(std_box=bin/bootbox,opt=fast)
+bld/extract(std_box=bin/bootbox,opt=fast)
 {% endblock %}

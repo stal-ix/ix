@@ -18,8 +18,8 @@ mkdir src; cd src; extract0 ${src}/*gz
 {% endblock %}
 
 {% block bld_tool %}
-dev/tool/perl
-dev/lang/yasm
+bld/perl
+bin/yasm
 {% endblock %}
 
 {% block cmake_flags %}

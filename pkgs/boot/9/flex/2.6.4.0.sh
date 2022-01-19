@@ -1,4 +1,4 @@
-{% extends '//dev/lang/flex/mix.sh' %}
+{% extends '//bin/flex/mix.sh' %}
 
 {% block run_deps %}
 boot/9/m4

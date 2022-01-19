@@ -6,8 +6,8 @@ https://github.com/elogind/elogind/archive/refs/tags/v246.10.tar.gz
 {% endblock %}
 
 {% block bld_tool %}
-dev/lang/m4
-dev/tool/gperf
+bin/m4
+bld/gperf
 {% endblock %}
 
 {% block lib_deps %}

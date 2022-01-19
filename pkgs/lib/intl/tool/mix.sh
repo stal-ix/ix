@@ -6,13 +6,13 @@ f52d5fa7f128db94e884cd21dd45d2e2
 {% endblock %}
 
 {% block bld_tool %}
-dev/tool/perl/full
+bld/perl/full
 bin/auto/conf/2/69
 bin/auto/make/1/16
 {% endblock %}
 
 {% block run_deps %}
-dev/tool/perl/full
+bld/perl/full
 {% endblock %}
 
 {% block lib_deps %}

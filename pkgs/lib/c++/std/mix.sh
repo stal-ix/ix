@@ -10,7 +10,7 @@ lib/c/naked/mix.sh
 {% endblock %}
 
 {% block bld_tool %}
-dev/tool/python/mix.sh
+bld/python/mix.sh
 {% endblock %}
 
 {% block unpack %}

@@ -18,7 +18,7 @@ extract1 ${src}/v*
 {% endblock %}
 
 {% block bld_tool %}
-dev/tool/python
+bld/python
 {% endblock %}
 
 {% block patch %}

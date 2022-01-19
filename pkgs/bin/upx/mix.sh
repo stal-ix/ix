@@ -13,8 +13,8 @@ lib/ucl
 {% endblock %}
 
 {% block bld_tool %}
-dev/tool/bash
-dev/tool/perl
+bld/bash
+bld/perl
 {% endblock %}
 
 {% block setup %}

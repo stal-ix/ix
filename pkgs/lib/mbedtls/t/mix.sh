@@ -1,7 +1,7 @@
 {% extends '//mix/template/cmake.sh' %}
 
 {% block bld_tool %}
-dev/tool/python
+bld/python
 {% endblock %}
 
 {% block cmake_flags %}

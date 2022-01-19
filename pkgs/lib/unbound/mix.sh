@@ -12,8 +12,8 @@ lib/openssl
 {% endblock %}
 
 {% block bld_tool %}
-dev/lang/flex
-dev/lang/bison/3/7
+bin/flex
+bin/bison/3/7
 bin/auto/conf/2/69
 bin/auto/make/1/16
 {% endblock %}

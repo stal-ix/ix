@@ -14,7 +14,7 @@ lib/c
 {% endblock %}
 
 {% block bld_tool %}
-dev/lang/m4
+bin/m4
 {% endblock %}
 
 {% block env %}

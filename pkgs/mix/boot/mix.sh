@@ -1,8 +1,8 @@
 {% extends '//mix/template/proxy.sh' %}
 
 {% block bld_tool %}
-dev/tool/sh
-dev/tool/compiler
+bld/sh
+bld/compiler
 {% endblock %}
 
 {% block install %}

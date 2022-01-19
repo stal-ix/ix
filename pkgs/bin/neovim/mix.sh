@@ -19,7 +19,7 @@ lib/tree/sitter
 {% endblock %}
 
 {% block bld_tool %}
-dev/tool/gperf
+bld/gperf
 bin/neovim/luafat
 {% endblock %}
 

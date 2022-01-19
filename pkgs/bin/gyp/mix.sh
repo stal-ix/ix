@@ -6,11 +6,11 @@ sem:bab7d2813993e241996821a887d1db04
 {% endblock %}
 
 {% block bld_tool %}
-dev/tool/python/2
+bld/python/2
 {% endblock %}
 
 {% block run_deps %}
-dev/tool/python/2
+bld/python/2
 {% endblock %}
 
 {% block install %}

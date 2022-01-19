@@ -13,7 +13,7 @@ lib/curses
 {% endblock %}
 
 {% block bld_tool %}
-dev/lang/byacc
+bin/byacc
 {% endblock %}
 
 {% block configure_flags %}

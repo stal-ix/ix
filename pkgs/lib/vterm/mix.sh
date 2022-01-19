@@ -10,7 +10,7 @@ lib/c
 {% endblock %}
 
 {% block bld_tool %}
-dev/tool/perl
+bld/perl
 bin/pkg-config
 bin/auto/libtool
 {% endblock %}

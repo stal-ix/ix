@@ -22,9 +22,9 @@ pip/Mako
 {% endblock %}
 
 {% block bld_tool %}
-dev/lang/flex
+bin/flex
 bin/make
-dev/lang/bison/3/8
+bin/bison/3/8
 lib/wayland/protocols
 {% endblock %}
 

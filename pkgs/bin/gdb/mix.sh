@@ -28,8 +28,8 @@ lib/linux
 {% endblock %}
 
 {% block bld_tool %}
-dev/lang/flex
-dev/lang/byacc
+bin/flex
+bin/byacc
 bin/texinfo
 {% endblock %}
 

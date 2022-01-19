@@ -6,7 +6,7 @@ c27f608a4e1f302ec7ce42f1251c184e
 {% endblock %}
 
 {% block bld_tool %}
-dev/tool/perl
+bld/perl
 bin/auto/conf/2/71
 {% endblock %}
 
@@ -15,9 +15,9 @@ bin/bootbox
 {% endblock %}
 
 {% block run_deps %}
-dev/tool/perl
+bld/perl
 bin/auto/libtool
-dev/lang/m4
+bin/m4
 {% endblock %}
 
 {% block autoreconf %}

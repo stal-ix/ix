@@ -16,5 +16,5 @@ bin/bootbox
 {% endblock %}
 
 {% block bld_tool %}
-dev/lang/bison/3/boot
+bin/bison/3/boot
 {% endblock %}

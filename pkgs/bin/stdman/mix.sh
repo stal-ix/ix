@@ -6,7 +6,7 @@ https://github.com/jeaye/stdman/archive/478d353c73bec79bbbad833a31c50eecd4578b46
 {% endblock %}
 
 {% block bld_tool %}
-dev/tool/bash
+bld/bash
 {% endblock %}
 
 {% block configure %}

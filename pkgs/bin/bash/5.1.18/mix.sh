@@ -10,7 +10,7 @@ lib/intl
 {% endblock %}
 
 {% block bld_tool %}
-dev/lang/bison/3/6
+bin/bison/3/6
 {% endblock %}
 
 {% block configure_flags %}

@@ -11,12 +11,12 @@ lib/linux
 {% endblock %}
 
 {% block bld_tool %}
-dev/tool/python
+bld/python
 {% endblock %}
 
 {% block c_compiler %}
-dev/lang/gcc/tc(for_target={{host.gnu.three}})
-dev/lang/gcc/tc(for_target={{target.gnu.three}})
+bin/gcc/tc(for_target={{host.gnu.three}})
+bin/gcc/tc(for_target={{target.gnu.three}})
 {% endblock %}
 
 {% block kconfig_flags %}

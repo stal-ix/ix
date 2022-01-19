@@ -14,7 +14,7 @@ lib/linux
 {% endblock %}
 
 {% block bld_tool %}
-dev/tool/python
+bld/python
 bin/auto/conf/2/69
 bin/auto/make/1/16
 {% endblock %}

@@ -6,8 +6,8 @@ dc423f8072d20964ea6c05708a647803
 {% endblock %}
 
 {% block bld_tool %}
-dev/lang/flex
-dev/lang/bison/3/8
+bin/flex
+bin/bison/3/8
 lib/wayland/protocols
 {% endblock %}
 

@@ -13,7 +13,7 @@ lib/openssl
 {% block bld_tool %}
 bin/auto/conf/2/69
 bin/auto/make/1/16
-dev/tool/python
+bld/python
 {% endblock %}
 
 {% block autoreconf %}

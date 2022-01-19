@@ -1,7 +1,7 @@
 {% extends 'c_std.sh' %}
 
 {% block std_box %}
-dev/tool/python
+bld/python
 bin/pkg-config
 {{super()}}
 {% endblock %}

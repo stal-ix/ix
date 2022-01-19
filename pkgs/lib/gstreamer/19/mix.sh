@@ -29,9 +29,9 @@ aux/iso-codes
 {% block bld_tool %}
 lib/glib
 bin/gettext
-dev/lang/flex
+bin/flex
 lib/gstreamer/orc
-dev/lang/bison/3/8
+bin/bison/3/8
 lib/wayland/protocols
 {% endblock %}
 

@@ -12,7 +12,7 @@ lib/c++
 
 {% block bld_tool %}
 bin/git
-dev/tool/python
+bld/python
 {% endblock %}
 
 {% block unpack %}

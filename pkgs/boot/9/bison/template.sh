@@ -1,4 +1,4 @@
-{% extends '//dev/lang/bison/template.sh' %}
+{% extends '//bin/bison/template.sh' %}
 
 {% block bld_libs %}
 {% endblock %}

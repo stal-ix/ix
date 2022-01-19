@@ -12,7 +12,7 @@ lib/xslt
 
 {% block bld_tool %}
 bin/getopt
-dev/lang/flex
+bin/flex
 {% endblock %}
 
 {% block run_deps %}

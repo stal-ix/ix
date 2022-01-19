@@ -7,7 +7,7 @@ a2736befde5fee7d2b7eb45eb281cdbe
 
 {% block bld_tool %}
 lib/z
-dev/tool/bash
+bld/bash
 {% endblock %}
 
 {% block lib_deps %}

@@ -6,8 +6,8 @@ https://github.com/KhronosGroup/glslang/archive/refs/tags/11.7.1.tar.gz
 {% endblock %}
 
 {% block bld_tool %}
-dev/tool/python
-dev/lang/bison/3/8
+bld/python
+bin/bison/3/8
 {% endblock %}
 
 {% block lib_deps %}

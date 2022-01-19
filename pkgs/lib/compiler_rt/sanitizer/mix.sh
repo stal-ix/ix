@@ -6,7 +6,7 @@ lib/c/naked
 {% endblock %}
 
 {% block bld_tool %}
-dev/tool/python
+bld/python
 {% endblock %}
 
 {% block patch %}

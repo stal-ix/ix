@@ -6,7 +6,7 @@ lib/fontconfig/data
 
 {% block bld_tool %}
 {{super()}}
-dev/tool/scripts
+bld/scripts
 {% endblock %}
 
 {% block configure %}
