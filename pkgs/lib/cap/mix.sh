@@ -10,6 +10,10 @@ lib/c
 lib/linux
 {% endblock %}
 
+{% block bld_tool %}
+bld/perl
+{% endblock %}
+
 {% block unpack %}
 {{super()}}
 cd v*/libcap
