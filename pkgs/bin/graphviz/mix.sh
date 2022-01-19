@@ -6,8 +6,8 @@ https://gitlab.com/api/v4/projects/4207231/packages/generic/graphviz-releases/2.
 {% endblock %}
 
 {% block bld_tool %}
-dev/build/auto/conf/2/69
-dev/build/auto/make/1/16
+bin/auto/conf/2/69
+bin/auto/make/1/16
 {% endblock %}
 
 {% block bld_libs %}

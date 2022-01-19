@@ -16,8 +16,8 @@ lib/c
 
 {% block bld_tool %}
 bin/texinfo
-dev/build/auto/conf/2/69
-dev/build/auto/make/1/16
+bin/auto/conf/2/69
+bin/auto/make/1/16
 {% endblock %}
 
 {% block c_rename_symbol %}

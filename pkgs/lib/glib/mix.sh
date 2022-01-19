@@ -22,7 +22,7 @@ lib/darwin/framework/Foundation
 {% if target.os == 'darwin' %}
 dev/lang/cctools
 {% endif %}
-dev/build/meson
+bin/meson
 bin/bootbox
 {% endblock %}
 

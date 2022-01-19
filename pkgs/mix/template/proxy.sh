@@ -14,3 +14,7 @@ source_env "${MIX_T_DIR}"
 {% block step_unpack %}
 echo 'skip unpack'
 {% endblock %}
+
+{% block postinstall %}
+: assume all ok
+{% endblock %}

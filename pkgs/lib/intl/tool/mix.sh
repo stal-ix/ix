@@ -7,8 +7,8 @@ f52d5fa7f128db94e884cd21dd45d2e2
 
 {% block bld_tool %}
 dev/tool/perl/full
-dev/build/auto/conf/2/69
-dev/build/auto/make/1/16
+bin/auto/conf/2/69
+bin/auto/make/1/16
 {% endblock %}
 
 {% block run_deps %}

@@ -9,8 +9,8 @@ https://github.com/linux-pam/linux-pam/archive/refs/tags/v1.5.2.tar.gz
 bin/gettext
 dev/lang/flex
 dev/lang/byacc
-dev/build/auto/make/1/16
-dev/build/auto/conf/2/69
+bin/auto/make/1/16
+bin/auto/conf/2/69
 {% endblock %}
 
 {% block autoreconf %}

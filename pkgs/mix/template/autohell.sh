@@ -1,7 +1,7 @@
 {% extends 'make.sh' %}
 
 {% block std_box %}
-dev/build/pkg-config
+bin/pkg-config
 {{super()}}
 {% endblock %}
 

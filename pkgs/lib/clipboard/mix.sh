@@ -13,5 +13,5 @@ lib/darwin/framework/AppKit
 {% endblock %}
 
 {% block bld_tool %}
-dev/build/pkg-config
+bin/pkg-config
 {% endblock %}

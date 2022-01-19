@@ -1,4 +1,4 @@
-{% extends '//dev/build/ya/t/mix.sh' %}
+{% extends '//bin/ya/t/mix.sh' %}
 
 {% block setup %}
 export OPTFLAGS="${OPTFLAGS} -O0"

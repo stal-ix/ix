@@ -18,6 +18,6 @@ OUTDIR=./
 {% endblock %}
 
 {% block bld_tool %}
-dev/build/pkg-config
-dev/build/auto/libtool
+bin/pkg-config
+bin/auto/libtool
 {% endblock %}

@@ -1,9 +1,9 @@
-{% extends '//dev/build/ya/t/mix.sh' %}
+{% extends '//bin/ya/t/mix.sh' %}
 
 {% block bld_tool %}
 {{super()}}
 {% block ya_boot %}
-dev/build/ya/0(arc_root={{arc_root}},ya_ver={{ya_ver}})
+bin/ya/0(arc_root={{arc_root}},ya_ver={{ya_ver}})
 {% endblock %}
 {% endblock %}
 

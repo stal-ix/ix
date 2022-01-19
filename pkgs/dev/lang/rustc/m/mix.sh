@@ -25,8 +25,8 @@ bin/git
 bin/tar
 tool/bin/time
 dev/tool/python
-dev/build/make
-dev/build/cmake
+bin/make
+bin/cmake
 {% endblock %}
 
 {% block unpack %}

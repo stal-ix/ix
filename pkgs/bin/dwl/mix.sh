@@ -12,6 +12,6 @@ lib/wayland
 {% endblock %}
 
 {% block bld_tool %}
-dev/build/pkg-config
+bin/pkg-config
 lib/wayland/protocols
 {% endblock %}

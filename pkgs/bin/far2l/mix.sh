@@ -21,7 +21,7 @@ lib/linux
 {% endblock %}
 
 {% block bld_tool %}
-dev/build/pkg-config
+bin/pkg-config
 dev/lang/m4
 {% endblock %}
 

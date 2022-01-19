@@ -5,9 +5,9 @@ lib/python/libs
 {% endblock %}
 
 {% block bld_tool %}
-dev/build/auto/conf/2/69
-dev/build/auto/make/1/16
-dev/build/auto/conf/archive
+bin/auto/conf/2/69
+bin/auto/make/1/16
+bin/auto/conf/archive
 {% endblock %}
 
 {% block bld_libs %}

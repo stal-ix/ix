@@ -6,7 +6,7 @@ https://github.com/KhronosGroup/SPIRV-Headers/archive/refs/tags/sdk-1.2.198.0.ta
 {% endblock %}
 
 {% block bld_tool %}
-dev/build/pkg-config
+bin/pkg-config
 {% endblock %}
 
 {% block cmake_flags %}

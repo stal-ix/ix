@@ -6,8 +6,8 @@ https://www.x.org/pub/individual/util/util-macros-1.19.3.tar.bz2
 {% endblock %}
 
 {% block bld_tool %}
-dev/build/auto/conf/2/69
-dev/build/auto/make/1/16
+bin/auto/conf/2/69
+bin/auto/make/1/16
 {% endblock %}
 
 {% block strip_pc %}

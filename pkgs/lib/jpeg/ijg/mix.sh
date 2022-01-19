@@ -6,8 +6,8 @@ ad7e40dedc268f97c44e7ee3cd54548a
 {% endblock %}
 
 {% block bld_tool %}
-dev/build/auto/conf/2/69
-dev/build/auto/make/1/16
+bin/auto/conf/2/69
+bin/auto/make/1/16
 {% endblock %}
 
 {% block lib_deps %}

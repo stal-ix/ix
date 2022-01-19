@@ -24,7 +24,7 @@ lib/wlroots/trunk
 {% block bld_tool %}
 bin/scdoc
 lib/wayland/protocols
-dev/build/meson/better
+bin/meson/better
 {% endblock %}
 
 {% block c_rename_symbol %}

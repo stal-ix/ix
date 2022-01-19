@@ -7,8 +7,8 @@ https://github.com/netwide-assembler/nasm/archive/refs/tags/nasm-2.15.05.tar.gz
 
 {% block bld_tool %}
 dev/tool/perl
-dev/build/auto/conf/2/69
-dev/build/auto/make/1/16
+bin/auto/conf/2/69
+bin/auto/make/1/16
 {% endblock %}
 
 {% block autoreconf %}

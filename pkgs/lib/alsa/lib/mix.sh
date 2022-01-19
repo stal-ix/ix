@@ -6,8 +6,8 @@ https://www.alsa-project.org/files/pub/lib/alsa-lib-1.2.6.1.tar.bz2
 {% endblock %}
 
 {% block bld_tool %}
-dev/build/auto/conf/2/69
-dev/build/auto/make/1/16
+bin/auto/conf/2/69
+bin/auto/make/1/16
 {% endblock %}
 
 {% block lib_deps %}

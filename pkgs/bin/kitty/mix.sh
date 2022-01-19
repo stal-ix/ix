@@ -26,7 +26,7 @@ lib/darwin/framework/UserNotifications
 {% block bld_tool %}
 lib/dlfcn/scripts
 lib/python/scripts
-dev/build/pkg-config
+bin/pkg-config
 {% endblock %}
 
 {% block setup %}

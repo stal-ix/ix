@@ -1,4 +1,4 @@
-{% extends '//dev/build/auto/conf/2/71/mix.sh' %}
+{% extends '//bin/auto/conf/2/71/mix.sh' %}
 
 {% block fetch %}
 https://ftp.gnu.org/gnu/autoconf/autoconf-2.69.tar.xz

@@ -13,9 +13,9 @@ lib/c++
 
 {% block bld_tool %}
 dev/tool/bash
-dev/build/gyp
-dev/build/make
-dev/build/ninja
+bin/gyp
+bin/make
+bin/ninja
 {% endblock %}
 
 {% block setup_tools %}

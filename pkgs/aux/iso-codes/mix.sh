@@ -7,8 +7,8 @@ sha:d60541cf1b3acceeef625a4d05f673aff5f22fbe28186e61911357b245c66411
 
 {% block bld_tool %}
 dev/tool/python
-dev/build/auto/conf/2/69
-dev/build/auto/make/1/16
+bin/auto/conf/2/69
+bin/auto/make/1/16
 {% endblock %}
 
 {% block strip_pc %}

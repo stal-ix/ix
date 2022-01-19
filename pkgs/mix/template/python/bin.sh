@@ -3,7 +3,7 @@
 {% block std_env %}
 # TODO(pg): inherit conf values into bin
 lib/python/3/10
-dev/build/make
+bin/make
 bin/upx
 {{super()}}
 {% endblock %}

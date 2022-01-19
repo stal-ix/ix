@@ -1,4 +1,4 @@
-{% extends '//dev/build/cmake/mix.sh' %}
+{% extends '//bin/cmake/mix.sh' %}
 
 {% block bld_libs %}
 {% if target.os == 'darwin' %}

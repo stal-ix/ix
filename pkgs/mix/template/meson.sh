@@ -4,9 +4,9 @@
 {% if target.os == 'darwin' %}
 dev/lang/cctools
 {% endif %}
-dev/build/meson
-dev/build/cmake
-dev/build/pkg-config
+bin/meson
+bin/cmake
+bin/pkg-config
 {{super()}}
 {% endblock %}
 

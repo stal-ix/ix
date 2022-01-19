@@ -1,9 +1,9 @@
 {% extends 'ninja.sh' %}
 
 {% block std_box %}
-dev/build/gn
+bin/gn
 dev/tool/python
-dev/build/pkg-config
+bin/pkg-config
 {{super()}}
 {% endblock %}
 

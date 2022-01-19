@@ -17,7 +17,7 @@ lib/vulkan/spirv/tools
 
 {% block bld_tool %}
 dev/tool/python
-dev/build/pkg-config
+bin/pkg-config
 lib/vulkan/spirv/tools
 {% endblock %}
 

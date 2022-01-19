@@ -16,8 +16,8 @@ lib/linux
 
 {% block bld_tool %}
 bin/gettext
-dev/build/auto/conf/2/69
-dev/build/auto/make/1/16
+bin/auto/conf/2/69
+bin/auto/make/1/16
 {% endblock %}
 
 {% block configure_flags %}

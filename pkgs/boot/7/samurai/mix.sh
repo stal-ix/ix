@@ -1,4 +1,4 @@
-{% extends '//dev/build/samurai/mix.sh' %}
+{% extends '//bin/samurai/mix.sh' %}
 
 {% block bld_libs %}
 {% endblock %}

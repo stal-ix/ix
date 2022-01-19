@@ -1,4 +1,4 @@
-{% extends '//dev/build/make/mix.sh' %}
+{% extends '//bin/make/mix.sh' %}
 
 {% block make_no_thrs %}{% endblock %}
 

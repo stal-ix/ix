@@ -7,8 +7,8 @@ https://github.com/xiph/flac/archive/refs/tags/1.3.3.tar.gz
 
 {% block bld_tool %}
 bin/gettext
-dev/build/auto/conf/2/69
-dev/build/auto/make/1/16
+bin/auto/conf/2/69
+bin/auto/make/1/16
 {% endblock %}
 
 {% block setup_tools %}

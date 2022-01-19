@@ -1,7 +1,7 @@
 {% extends 'ninja.sh' %}
 
 {% block std_box %}
-dev/build/cmake
+bin/cmake
 {{super()}}
 {% endblock %}
 

@@ -12,7 +12,7 @@ bin/epiphany/libs(gtk_ver=3)
 {% block bld_tool %}
 lib/glib
 bin/gettext
-dev/build/meson/better
+bin/meson/better
 {% endblock %}
 
 {% block run_data %}

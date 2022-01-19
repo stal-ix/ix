@@ -22,8 +22,8 @@ lib/darwin/framework/SystemConfiguration
 
 {% block bld_tool %}
 bin/groff
-dev/build/auto/conf/2/71
-dev/build/auto/make/1/16
+bin/auto/conf/2/71
+bin/auto/make/1/16
 {% endblock %}
 
 {% block configure_flags %}

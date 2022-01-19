@@ -1,4 +1,4 @@
-{% extends '//dev/build/pkg-config/mix.sh' %}
+{% extends '//bin/pkg-config/mix.sh' %}
 
 {% block bld_libs %}
 boot/6/lib/iconv

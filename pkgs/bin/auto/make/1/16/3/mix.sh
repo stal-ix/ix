@@ -7,7 +7,7 @@ c27f608a4e1f302ec7ce42f1251c184e
 
 {% block bld_tool %}
 dev/tool/perl
-dev/build/auto/conf/2/71
+bin/auto/conf/2/71
 {% endblock %}
 
 {% block std_box %}
@@ -16,7 +16,7 @@ bin/bootbox
 
 {% block run_deps %}
 dev/tool/perl
-dev/build/auto/libtool
+bin/auto/libtool
 dev/lang/m4
 {% endblock %}
 

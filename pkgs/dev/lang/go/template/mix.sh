@@ -2,7 +2,7 @@
 
 {% block bld_tool %}
 dev/tool/bash
-dev/build/pkg-config
+bin/pkg-config
 {% endblock %}
 
 {% block unpack %}

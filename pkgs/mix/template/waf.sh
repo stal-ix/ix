@@ -2,7 +2,7 @@
 
 {% block std_box %}
 dev/tool/python
-dev/build/pkg-config
+bin/pkg-config
 {{super()}}
 {% endblock %}
 

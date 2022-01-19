@@ -14,7 +14,7 @@ lib/linux
 
 {% block bld_tool %}
 lib/dlfcn/scripts
-dev/build/make
+bin/make
 {% block boot_lisp_dep %}
 dev/lang/ecl
 {% endblock %}
