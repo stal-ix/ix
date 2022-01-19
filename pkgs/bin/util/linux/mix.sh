@@ -1,4 +1,4 @@
-{% extends '//mix/template/autohell.sh' %}
+{% extends '//mix/template/autorehell.sh' %}
 
 {% block fetch %}
 https://github.com/util-linux/util-linux/archive/refs/tags/v2.37.2.tar.gz
@@ -21,8 +21,6 @@ lib/cap/ng
 bld/bash
 bin/gettext
 bin/bison/3/8
-bin/auto/conf/2/69
-bin/auto/make/1/16
 {% endblock %}
 
 {% block autoreconf %}
