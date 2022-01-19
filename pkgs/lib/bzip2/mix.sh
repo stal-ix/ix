@@ -6,7 +6,7 @@ https://sourceware.org/pub/bzip2/bzip2-1.0.8.tar.gz
 {% endblock %}
 
 {% block std_box %}
-bin/bootbox
+bld/bootbox
 {% endblock %}
 
 {% block lib_deps %}

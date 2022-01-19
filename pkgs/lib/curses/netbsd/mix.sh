@@ -6,7 +6,7 @@ https://github.com/sabotage-linux/netbsd-curses/archive/refs/tags/v0.3.2.tar.gz
 {% endblock %}
 
 {% block std_box %}
-bin/bootbox
+bld/bootbox
 {% endblock %}
 
 {% block cpp_defines %}

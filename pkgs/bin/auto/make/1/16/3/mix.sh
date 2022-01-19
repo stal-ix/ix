@@ -11,7 +11,7 @@ bin/auto/conf/2/71
 {% endblock %}
 
 {% block std_box %}
-bin/bootbox
+bld/bootbox
 {% endblock %}
 
 {% block run_deps %}

@@ -12,7 +12,7 @@ bin/cctools
 {% endblock %}
 
 {% block std_box %}
-bin/bootbox
+bld/bootbox
 {% endblock %}
 
 {% block make_flags %}

@@ -1,7 +1,7 @@
 {% extends '//bin/sbase/t/.sh' %}
 
 {% block std_box %}
-bin/bootbox
+bld/bootbox
 {% endblock %}
 
 {% block make_target %}

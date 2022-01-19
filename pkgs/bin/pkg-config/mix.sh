@@ -13,7 +13,7 @@ lib/iconv
 {% endblock %}
 
 {% block std_box %}
-bin/bootbox
+bld/bootbox
 {% endblock %}
 
 {% block configure_flags %}

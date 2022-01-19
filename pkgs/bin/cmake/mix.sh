@@ -27,7 +27,7 @@ lib/archive
 {% endblock %}
 
 {% block std_box %}
-bin/bootbox
+bld/bootbox
 {% endblock %}
 
 {% block cmake_flags %}

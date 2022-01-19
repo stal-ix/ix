@@ -18,7 +18,7 @@ lib/readline
 
 {% if lib %}
 {% block std_box %}
-bin/bootbox
+bld/bootbox
 {% endblock %}
 {% endif %}
 

@@ -16,7 +16,7 @@ bin/help2man
 {% endblock %}
 
 {% block std_box %}
-bin/bootbox
+bld/bootbox
 {% endblock %}
 
 {% block configure_flags %}

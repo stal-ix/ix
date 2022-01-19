@@ -9,7 +9,7 @@ lib/c/naked
 {% endblock %}
 
 {% block std_box %}
-bin/bootbox
+bld/bootbox
 {% endblock %}
 
 {% block unpack %}

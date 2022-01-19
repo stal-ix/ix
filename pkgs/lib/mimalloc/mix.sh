@@ -10,7 +10,7 @@ lib/c++/14/headers
 {% endblock %}
 
 {% block std_box %}
-bin/bootbox
+bld/bootbox
 {% endblock %}
 
 {% block cmake_flags %}

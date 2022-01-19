@@ -12,7 +12,7 @@ lib/openssl
 {% endblock %}
 
 {% block std_box %}
-bin/bootbox
+bld/bootbox
 {% endblock %}
 
 {% block env %}

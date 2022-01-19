@@ -13,7 +13,7 @@ lib/sigsegv
 {% endblock %}
 
 {% block std_box %}
-bin/bootbox
+bld/bootbox
 {% endblock %}
 
 {% block bld_tool %}

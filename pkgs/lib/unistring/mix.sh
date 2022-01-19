@@ -16,7 +16,7 @@ bin/auto/make/1/16
 {% endblock %}
 
 {% block std_box %}
-bin/bootbox
+bld/bootbox
 {% endblock %}
 
 {% block make_verbose_1 %}

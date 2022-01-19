@@ -6,7 +6,7 @@ cf4a5fdc95e5494eaa190825af11f3be
 {% endblock %}
 
 {% block std_box %}
-bin/bootbox
+bld/bootbox
 {% endblock %}
 
 {% block lib_deps %}

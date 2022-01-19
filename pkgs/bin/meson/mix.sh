@@ -10,7 +10,7 @@ bin/patch
 {% endblock %}
 
 {% block std_box %}
-bin/bootbox
+bld/bootbox
 {% endblock %}
 
 {% block run_deps %}

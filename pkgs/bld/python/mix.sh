@@ -14,7 +14,7 @@ lib/darwin/framework/SystemConfiguration
 {% endblock %}
 
 {% block std_box %}
-bin/bootbox
+bld/bootbox
 {% endblock %}
 
 {% block extra_modules %}

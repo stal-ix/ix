@@ -6,7 +6,7 @@ https://ftp.gnu.org/pub/gnu/libiconv/libiconv-1.16.tar.gz
 {% endblock %}
 
 {% block std_box %}
-bin/bootbox
+bld/bootbox
 {% endblock %}
 
 {% block install %}

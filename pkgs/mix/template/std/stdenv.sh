@@ -7,5 +7,5 @@ bin/gnubox
 {% endblock %}
 
 {% block decompressor %}
-bld/extract(std_box=bin/bootbox,opt=fast)
+bld/extract(std_box=bld/bootbox,opt=fast)
 {% endblock %}
