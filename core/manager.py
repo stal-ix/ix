@@ -1,4 +1,5 @@
 import os
+import time
 import shutil
 import random
 
@@ -12,16 +13,11 @@ import core.package as cp
 import core.gen_cmds as cg
 
 
-def iter_names(n):
-    yield n
-
-    return
-
-
 class Manager:
     def __init__(self, config):
         self._c = config
         self._p = {}
+        self._x = {}
         self._e = cj.Env(cv.vfs(config.where))
 
     @property
@@ -37,24 +33,25 @@ class Manager:
             return f.read()
 
     def load_impl(self, sel):
-        for n in cu.iter_uniq_list(iter_names(sel['name'])):
-            s = cu.dict_dict_update(sel, {'name': n})
+        return cp.Package(sel, self)
 
+    def load_hard(self, p):
+        u = p.uid
+
+        while True:
             try:
-                return cp.Package(s, self)
-            except FileNotFoundError as e:
-                err = e
-
-        raise err
+                return self._p[u]
+            except KeyError:
+                self._p[u] = p
 
     def load_package(self, selector):
         key = cu.struct_hash(selector)
 
         while True:
             try:
-                return self._p[key]
+                return self._x[key]
             except KeyError:
-                self._p[key] = self.load_impl(selector)
+                self._x[key] = self.load_hard(self.load_impl(selector))
 
     def load_packages(self, ss):
         for s in ss:
@@ -75,13 +72,19 @@ class Manager:
                 yield p
 
     def iter_build_commands(self, selectors):
+        cu.step('load packages')
+
         list(self.load_packages(selectors))
+
+        cu.step('iter commands')
 
         for pkg in self._p.values():
             try:
                 yield from list(cg.iter_build_commands(pkg))
             except Exception as e:
                 raise er.Error(f'can not render build commands for {pkg.name}: {e}')
+
+        cu.step('done')
 
     def build_graph(self, selectors):
         return {

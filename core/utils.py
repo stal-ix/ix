@@ -1,4 +1,5 @@
 import os
+import time
 import json
 import string
 import hashlib
@@ -88,3 +89,10 @@ def dict_update(d, v):
 
 def dict_dict_update(d1, d2):
     return dict_update(d1, d2.items())
+
+
+SS = time.time()
+
+
+def step(s):
+    print(f'{time.time() - SS} {s}')

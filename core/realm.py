@@ -63,7 +63,12 @@ class Realm:
         return self.new_version(list(it()))
 
     def upgrade(self):
-        return self.new_version(self.pkgs)
+        cu.step('upgrade')
+
+        try:
+            return self.new_version(self.pkgs)
+        finally:
+            cu.step('done upgrade')
 
     @property
     def managed_path(self):
@@ -87,12 +92,20 @@ class Realm:
 
 
 def load_realm(mngr, name):
-    return Realm(mngr, name, os.readlink(realm_path(mngr, name)))
+    cu.step('load realm')
+
+    try:
+        return Realm(mngr, name, os.readlink(realm_path(mngr, name)))
+    finally:
+        cu.step('done loadrealm')
 
 
 def prepare_realm(mngr, name, pkgs):
+    cu.step('start iter runtime')
     handles = list(mngr.iter_runtime_packages(pkgs))
+    cu.step('start build packages')
     mngr.build_packages([p.selector for p in handles])
+    cu.step('done build packages')
     uid = cu.struct_hash([10, name, pkgs] + cu.uniq_list([p.uid for p in handles]))
     path = os.path.join(mngr.config.store_dir, uid)
     touch = os.path.join(path, 'touch')

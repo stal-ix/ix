@@ -1,3 +1,4 @@
+import core.utils as cu
 import core.cmd_line as cc
 import core.manager as cm
 
@@ -26,6 +27,8 @@ def cli_realm_remove(ctx):
 
 
 def cli_realm_upgrade(ctx):
+    cu.step('start upgrade')
+
     mngr = cm.Manager(cc.config_from(ctx))
 
     def iter_realms():
@@ -35,7 +38,9 @@ def cli_realm_upgrade(ctx):
             yield from mngr.list_realms()
 
     for r in iter_realms():
+        cu.step('realm start')
         mngr.load_realm(r).upgrade().install()
+        cu.step('realm end')
 
 
 def cli_realm_list(ctx):
