@@ -23,8 +23,8 @@ lib/wlroots/trunk
 
 {% block bld_tool %}
 bin/scdoc
-lib/wayland/protocols
 bin/meson/better
+lib/wayland/protocols
 {% endblock %}
 
 {% block c_rename_symbol %}

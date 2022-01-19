@@ -7,17 +7,17 @@ b774bb0da9cb84cb9f5bbbcbcc31d00e
 
 {% block bld_libs %}
 lib/c
-lib/brotli
-lib/zstd
-lib/nghttp2
-lib/xz
 lib/z
+lib/xz
+lib/zstd
 lib/intl
-lib/iconv
-lib/gnutls
+lib/pcre
 lib/bzip2
 lib/idn/2
-lib/pcre
+lib/iconv
+lib/brotli
+lib/gnutls
+lib/nghttp2
 {% endblock %}
 
 {% block bld_tool %}

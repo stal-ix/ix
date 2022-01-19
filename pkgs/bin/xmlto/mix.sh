@@ -11,8 +11,8 @@ lib/xslt
 {% endblock %}
 
 {% block bld_tool %}
-bin/getopt
 bin/flex
+bin/getopt
 {% endblock %}
 
 {% block run_deps %}

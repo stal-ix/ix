@@ -8,8 +8,8 @@ https://github.com/tmux/tmux/releases/download/3.2a/tmux-3.2a.tar.gz
 {% block bld_libs %}
 lib/c
 lib/event
-lib/utf8proc
 lib/curses
+lib/utf8proc
 {% endblock %}
 
 {% block bld_tool %}

@@ -23,7 +23,6 @@ lib/intl
 {% endblock %}
 
 {% block bld_tool %}
-lib/magic/mix.sh
 bin/auto/conf/2/69
 bin/auto/make/1/16
 {% endblock %}

@@ -7,8 +7,8 @@ https://github.com/emersion/slurp/archive/refs/tags/v1.3.2.tar.gz
 
 {% block bld_libs %}
 lib/c
-lib/wayland
 lib/cairo
+lib/wayland
 lib/xkbcommon
 {% endblock %}
 
