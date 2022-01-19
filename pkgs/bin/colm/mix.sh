@@ -1,4 +1,4 @@
-{% extends '//mix/template/autohell.sh' %}
+{% extends '//mix/template/autorehell.sh' %}
 
 {% block fetch %}
 https://github.com/adrian-thurston/colm/archive/refs/tags/0.14.7.tar.gz
@@ -12,8 +12,6 @@ lib/c++
 
 {% block bld_tool %}
 bin/tar
-bin/auto/conf/2/69
-bin/auto/make/1/16
 {% endblock %}
 
 {% block autoreconf %}

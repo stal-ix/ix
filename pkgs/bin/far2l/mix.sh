@@ -15,6 +15,7 @@ lib/spdlog
 lib/archive
 lib/xerces-c
 lib/uchardet
+lib/execinfo
 {% if target.os == 'linux' %}
 lib/linux
 {% endif %}
@@ -29,17 +30,6 @@ bin/pkg-config
 find . | grep CMakeLists.txt | while read l; do
     sed -e 's| MODULE | STATIC |' -i ${l}
 done
-
-{% if target.os == 'linux' %}
-cat << EOF > execinfo.h
-int backtrace(void**, int) {
-    return 0;
-}
-
-void backtrace_symbols_fd(void* const*, int, int) {
-}
-EOF
-{% endif %}
 {% endblock %}
 
 {% block c_rename_symbol %}
