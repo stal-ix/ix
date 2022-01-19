@@ -14,7 +14,7 @@ lib/linux
 {% endblock %}
 
 {% block bld_tool %}
-bld/gperf
+bin/gperf
 bin/auto/conf/2/71
 bin/auto/make/1/16
 {% endblock %}

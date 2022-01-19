@@ -48,7 +48,7 @@ lib/glib
 bin/gettext
 bld/perl
 bld/ruby
-bld/gperf
+bin/gperf
 bld/python
 lib/wayland/protocols
 {% endblock %}
