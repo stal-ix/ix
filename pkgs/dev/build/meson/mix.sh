@@ -6,7 +6,7 @@ a5d6cfcf776e145f2054d5eefb4bc110
 {% endblock %}
 
 {% block bld_tool %}
-gnu/patch
+bin/patch
 {% endblock %}
 
 {% block std_box %}

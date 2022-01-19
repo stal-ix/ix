@@ -12,8 +12,8 @@ lib/curses
 {% endblock %}
 
 {% block bld_tool %}
-gnu/patch
-gnu/tar
+bin/patch
+bin/tar
 {% endblock %}
 
 {% block patch %}

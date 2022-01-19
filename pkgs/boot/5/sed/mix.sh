@@ -1,4 +1,4 @@
-{% extends '//gnu/sed/mix.sh' %}
+{% extends '//bin/sed/mix.sh' %}
 
 {% block bld_libs %}
 {% endblock %}

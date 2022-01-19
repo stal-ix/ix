@@ -45,7 +45,7 @@ lib/webkit/drivers
 
 {% block bld_tool %}
 lib/glib
-gnu/gettext
+bin/gettext
 dev/tool/perl
 dev/tool/ruby
 dev/tool/gperf

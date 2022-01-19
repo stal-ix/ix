@@ -13,7 +13,7 @@ lib/c
 
 {% block bld_tool %}
 lib/xslt
-gnu/gettext
+bin/gettext
 lib/intl/tool
 {% endblock %}
 

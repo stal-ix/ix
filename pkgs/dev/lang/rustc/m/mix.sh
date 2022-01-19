@@ -22,8 +22,8 @@ lib/openssl
 tool/curl
 dev/tool/bash
 bin/git
-gnu/tar
-tool/gnu/time
+bin/tar
+tool/bin/time
 dev/tool/python
 dev/build/make
 dev/build/cmake

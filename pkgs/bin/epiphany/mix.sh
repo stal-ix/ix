@@ -11,7 +11,7 @@ bin/epiphany/libs(gtk_ver=3)
 
 {% block bld_tool %}
 lib/glib
-gnu/gettext
+bin/gettext
 dev/build/meson/better
 {% endblock %}
 

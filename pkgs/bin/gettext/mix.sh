@@ -19,7 +19,7 @@ tool/compress/gzip
 {% endblock %}
 
 {% block run_deps %}
-gnu/tar
+bin/tar
 tool/compress/gzip
 {% endblock %}
 

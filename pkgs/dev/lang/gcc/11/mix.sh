@@ -20,7 +20,7 @@ lib/mpfr
 {% set f %}{{for_target or target.gnu.three}}{% endset %}
 
 {% block bld_tool %}
-gnu/tar
+bin/tar
 dev/lang/flex
 bin/texinfo
 dev/lang/bison/3/8

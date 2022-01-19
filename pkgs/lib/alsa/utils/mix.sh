@@ -6,7 +6,7 @@ fc109b2fa4517caeae1697d936ca78ff
 {% endblock %}
 
 {% block bld_tool %}
-gnu/gettext
+bin/gettext
 dev/build/auto/conf/2/69
 dev/build/auto/make/1/16
 {% endblock %}

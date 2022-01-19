@@ -11,7 +11,7 @@ lib/attr
 {% endblock %}
 
 {% block bld_tool %}
-gnu/gettext
+bin/gettext
 dev/build/auto/conf/2/69
 dev/build/auto/make/1/16
 {% endblock %}

@@ -8,7 +8,7 @@ lib/sigsegv
 {% endblock %}
 
 {% block bld_tool %}
-gnu/patch
+bin/patch
 {% endblock %}
 
 {% block std_box %}

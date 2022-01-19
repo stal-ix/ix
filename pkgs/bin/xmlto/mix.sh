@@ -11,11 +11,11 @@ lib/xslt
 {% endblock %}
 
 {% block bld_tool %}
-gnu/getopt
+bin/getopt
 dev/lang/flex
 {% endblock %}
 
 {% block run_deps %}
 lib/xslt
-gnu/getopt
+bin/getopt
 {% endblock %}

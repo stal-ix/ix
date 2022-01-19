@@ -13,7 +13,7 @@ lib/linux
 
 {% block bld_tool %}
 lib/magic
-gnu/sed
+bin/sed
 dev/build/auto/conf/2/69
 dev/build/auto/make/1/16
 bin/texinfo

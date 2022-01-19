@@ -1,4 +1,4 @@
-{% extends '//gnu/grep/mix.sh' %}
+{% extends '//bin/grep/mix.sh' %}
 
 {% block bld_libs %}
 {% endblock %}

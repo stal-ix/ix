@@ -1,4 +1,4 @@
-{% extends '//gnu/diffutils/mix.sh' %}
+{% extends '//bin/diffutils/mix.sh' %}
 
 {% block bld_libs %}
 {% endblock %}

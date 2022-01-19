@@ -6,7 +6,7 @@ https://github.com/linux-pam/linux-pam/archive/refs/tags/v1.5.2.tar.gz
 {% endblock %}
 
 {% block bld_tool %}
-gnu/gettext
+bin/gettext
 dev/lang/flex
 dev/lang/byacc
 dev/build/auto/make/1/16

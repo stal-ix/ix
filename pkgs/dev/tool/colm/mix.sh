@@ -11,7 +11,7 @@ lib/c++
 {% endblock %}
 
 {% block bld_tool %}
-gnu/tar
+bin/tar
 dev/build/auto/conf/2/69
 dev/build/auto/make/1/16
 {% endblock %}

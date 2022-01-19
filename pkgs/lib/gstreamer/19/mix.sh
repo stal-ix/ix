@@ -28,7 +28,7 @@ aux/iso-codes
 
 {% block bld_tool %}
 lib/glib
-gnu/gettext
+bin/gettext
 dev/lang/flex
 lib/gstreamer/orc
 dev/lang/bison/3/8

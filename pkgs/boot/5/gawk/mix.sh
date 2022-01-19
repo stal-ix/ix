@@ -1,4 +1,4 @@
-{% extends '//gnu/gawk/mix.sh' %}
+{% extends '//bin/gawk/mix.sh' %}
 
 {% block bld_libs %}
 {% endblock %}

@@ -1,4 +1,4 @@
-{% extends '//gnu/patch/mix.sh' %}
+{% extends '//bin/patch/mix.sh' %}
 
 {% block bld_libs %}
 {% endblock %}
