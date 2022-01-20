@@ -26,7 +26,7 @@ bin/openssh
 {% endblock %}
 
 {% block make_flags %}
-gitexecdir=bin/exec
+gitexecdir=bin/{{uniq_id}}
 INSTALL_SYMLINKS=yes
 NO_REGEX=NeedsStartEnd
 {% endblock %}

@@ -4,6 +4,7 @@
 bin/iw
 bin/yash
 bin/nano
+bin/mdevd
 bin/openssh
 bin/dhclient
 bin/net/tools
