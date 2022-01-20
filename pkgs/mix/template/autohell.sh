@@ -84,7 +84,7 @@ ${COFLAGS}
 
 --prefix="${out}"
 --sbindir="${out}/bin"
---libexecdir="${out}/bin/exec"
+--libexecdir="${out}/{{kind}}/{{uniq_id}}"
 
 {% block configure_flags %}
 {% endblock %}

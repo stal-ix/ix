@@ -8,7 +8,7 @@ def config_from(ctx):
     binary = ctx['binary']
     where = os.path.join(os.path.dirname(binary), 'pkgs')
 
-    return cc.Config(binary, where)
+    return cc.Config(binary, where, os.environ.get('MIX_ROOT'))
 
 
 def parse_pkgs(ctx):

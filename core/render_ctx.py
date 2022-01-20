@@ -94,9 +94,7 @@ class RenderContext:
             'is_cross': True,
             'name': pkg.name,
             'uniq_id': pkg.uniq_id,
-            'bin': kind == 'bin',
-            'lib': kind == 'lib',
-            'aux': kind == 'dat',
+            kind: True,
             'boot': pkg.name.startswith('boot/'),
         }, pkg.flags)
 

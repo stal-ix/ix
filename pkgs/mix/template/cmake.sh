@@ -39,7 +39,7 @@ ${CMFLAGS}
 {% block cmake_install_dirs %}
 -DCMAKE_INSTALL_PREFIX="${out}"
 -DCMAKE_INSTALL_LIBDIR="${out}/lib"
--DCMAKE_INSTALL_LIBEXECDIR="${out}/bin/exec"
+-DCMAKE_INSTALL_LIBEXECDIR="${out}/{{kind}}/{{uniq_id}}"
 {% endblock %}
 
 -DCMAKE_C_COMPILER="$(which ${CC})"

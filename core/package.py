@@ -109,7 +109,14 @@ def canon_name(n):
     while '--' in n:
         n = n.replace('--', '-')
 
-    return n.rstrip('-')
+    n = n.rstrip('-')
+
+    n = n.replace('lib-lib', 'lib')
+    n = n.replace('bin-bin', 'bin')
+    n = n.replace('aux-aux', 'aux')
+    n = n.replace('bin-bld', 'bld')
+
+    return n
 
 
 class Package:
@@ -129,8 +136,6 @@ class Package:
         if 'kind' not in flags:
             flags['kind'] = 'bin'
 
-        # print(selector)
-
         self.selector = selector
         self.descr = cr.RenderContext(self).render()
 
@@ -145,19 +150,22 @@ class Package:
             self.iter_build_dirs(),
         ])
 
-        self.out_dir = f'{sd}/{self.uid}{self.pkg_name}'
+        self.out_dir = f'{sd}/{self.uid}-{self.pkg_name}'
+
+    @property
+    def norm_name(self):
+        return self.name.removesuffix('.sh').removesuffix('/mix')
 
     @property
     @cu.cached_method
     def pkg_name(self):
-        k = self.flags['kind'][:1].upper()
-        n = self.name.removesuffix('.sh').removesuffix('/mix')
+        k = self.flags['kind']
 
-        return canon_name(f'{k}-{n}')
+        return canon_name(f'{k}-{self.norm_name}')
 
     @property
     def uniq_id(self):
-        return self.pkg_name.replace('-', '_').replace('L_lib_', 'lib_')
+        return self.pkg_name.replace('-', '_')
 
     @property
     def flags(self):
@@ -267,7 +275,7 @@ class Package:
 
     @cu.cached_method
     def run_data(self):
-        return list(self.load_packages(self.descr['run']['data'], {'target': self.target, 'kind': 'dat'}))
+        return list(self.load_packages(self.descr['run']['data'], {'target': self.target, 'kind': 'aux'}))
 
     def all_run_deps(self):
         yield from self.run_deps()

@@ -69,7 +69,8 @@ class Manager:
             if p.uid not in s:
                 s.add(p.uid)
 
-                yield p
+                if p.buildable():
+                    yield p
 
     def iter_build_commands(self, selectors):
         cu.step('load packages')

@@ -41,7 +41,7 @@ EOF
 meson
 
 --libdir="${out}/lib"
---libexecdir="${out}/bin/exec"
+--libexecdir="${out}/{{kind}}/{{uniq_id}}"
 
 {% block meson_cross %}
 --cross-file="${tmp}/cross.ini"
