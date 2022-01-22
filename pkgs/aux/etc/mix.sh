@@ -53,13 +53,14 @@ mount -t devpts devpts /dev/pts
 
 mount -o remount,rw none /
 
-mkdir -p /proc /sys /run
+mkdir -p /proc /sys /var/run /var/tmp /var/log
 
-mount -t tmpfs tmpfs /run
+mount -t tmpfs tmpfs /var/run
+mount -t tmpfs tmpfs /var/tmp
 mount -t proc proc /proc
 mount -t sysfs sysfs /sys
 
-dmesg >> /run/messages
+dmesg >> /var/log/messages
 EOF
 
 cat << EOF > 2
@@ -76,23 +77,12 @@ chmod +x 1 2 3; cd ..
 
 mkdir services; cd services
 
-for i in 1 2 3 4 5; do (
-    mkdir getty${i}; cd getty${i}
-
-    cat << EOF > run
-#!/bin/sh
-exec setsid cttyhack agetty --autologin root tty${i}
-EOF
-
-    chmod +x run
-) done
-
 (
     mkdir syslogd; cd syslogd
 
     cat << EOF > run
 #!/bin/sh
-exec syslogd -n -O /run/messages
+exec syslogd -n -O /var/log/messages
 EOF
 
     chmod +x run
@@ -103,6 +93,7 @@ cd ..
 cat << EOF > init
 #!/bin/sh
 export PATH=/bin
+export TMPDIR=/var/tmp
 exec runit
 EOF
 

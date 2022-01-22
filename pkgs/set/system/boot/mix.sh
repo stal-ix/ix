@@ -5,6 +5,7 @@ set/fs
 bin/ted
 bin/git
 bin/wget
+bin/strace
 bld/python
 bld/compiler
 set/compress

@@ -25,3 +25,19 @@ ninja -C {{ninja_build_dir}} -j ${make_thrs} {{mix.fix_list(ninja_build_targets)
 {% block install %}
 ninja -C {{ninja_build_dir}} {{mix.fix_list(ninja_install_targets)}}
 {% endblock %}
+
+{% block step_configure %}
+{{super()}}
+
+{% block sanitize_build_files %}
+find ${tmp} -name build.ninja | while read l; do
+    echo "sanitize ${l}"
+
+    sed -e 's|/usr/include|/nowhere|g'      \
+        -e 's|/usr/lib|/nowhere|g'          \
+        -e 's|/nowhere[^ ]*lib[^ ]*\.so||g' \
+        -e 's|/nowhere[^ ]*lib[^ ]*\.a||g'  \
+        -i ${l}
+done
+{% endblock %}
+{% endblock %}

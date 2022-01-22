@@ -19,4 +19,5 @@ export CPPFLAGS="-w ${CPPFLAGS}"
 
 {% block meson_flags %}
 libseat-builtin=enabled
+defaultpath=/var/run/seatd.sock
 {% endblock %}
