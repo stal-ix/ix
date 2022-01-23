@@ -32,19 +32,22 @@ bin/binutils(for_target={{f}},bin_prefix={{f}})
 {% block configure_flags %}
 --with-system-zlib
 
---enable-lto=no
 --disable-lto
---disable-libstdcxx
 --disable-multilib
 --disable-bootstrap
 
---enable-serial-host
---enable-serial-target
---enable-serial-build
-
 --enable-languages=c,c++
 
+--disable-libgcc
+--disable-libvtv
+--disable-libatomic
+--disable-libgomp
+--disable-libquadmath
+--disable-libssp
+--disable-libstdcxx
+
 --with-static-standard-libraries=yes
+--with-native-system-header-dir=${out}
 {% endblock %}
 
 {% block make_verbose %}

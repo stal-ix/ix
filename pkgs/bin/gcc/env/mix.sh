@@ -41,10 +41,18 @@ chmod +x cc c++ preproc
 setup_ar() {
     export AR=ar
     export NM=nm
+    export LD=ld
     export RANLIB=ranlib
+    export OBJCOPY=objcopy
+    export OBJDUMP=objdump
+    export STRIP=strip
 
+    ln -s $(which {{target.gnu.three}}${LD}) ld
     ln -s $(which {{target.gnu.three}}${AR}) ar
     ln -s $(which {{target.gnu.three}}${NM}) nm
     ln -s $(which {{target.gnu.three}}${RANLIB}) ranlib
+    ln -s $(which {{target.gnu.three}}${OBJCOPY}) objcopy
+    ln -s $(which {{target.gnu.three}}${OBJDUMP}) objdump
+    ln -s $(which {{target.gnu.three}}${STRIP}) strip
 }
 {% endblock %}
