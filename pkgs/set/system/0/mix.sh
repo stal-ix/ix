@@ -5,13 +5,14 @@ aux/etc
 bin/iw
 bin/nano
 bin/runit
-bin/seatd
-bin/mdevd
 bin/openssh
 bin/net/tools
 
 bin/busybox/full
 
+bin/seatd
+bin/mdevd
+bin/iwd/sys
 bin/yash/sys
 bin/dbus/sys
 bin/dhcpcd/sys

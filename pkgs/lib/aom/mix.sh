@@ -19,7 +19,7 @@ mkdir src; cd src; extract0 ${src}/*gz
 
 {% block bld_tool %}
 bld/perl
-bin/yasm
+bin/nasm
 {% endblock %}
 
 {% block cmake_flags %}

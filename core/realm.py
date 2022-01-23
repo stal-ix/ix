@@ -36,7 +36,9 @@ class Realm:
             pass
 
         with open(os.path.join(self.path, 'meta.json'), 'r') as f:
-            self.meta = json.loads(f.read())
+            data = f.read()
+            # print(data)
+            self.meta = json.loads(data)
 
     @property
     def pkgs(self):

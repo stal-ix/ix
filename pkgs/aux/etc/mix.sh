@@ -48,8 +48,9 @@ mkdir runit; cd runit
 cat << EOF > 1
 #!/bin/sh
 
-mkdir /dev/pts
+mkdir /dev/pts /dev/shm
 mount -t devpts devpts /dev/pts
+mount -t tmpfs shmfs /dev/shm
 
 mount -o remount,rw none /
 

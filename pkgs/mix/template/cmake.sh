@@ -2,6 +2,7 @@
 
 {% block std_box %}
 bin/cmake
+bin/pkg-config
 {{super()}}
 {% endblock %}
 
@@ -32,7 +33,9 @@ cmake
 -B {{ninja_build_dir}}
 -G Ninja
 
+{% block cmake_trace %}
 -Wno-dev
+{% endblock %}
 
 ${CMFLAGS}
 

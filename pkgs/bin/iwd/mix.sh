@@ -12,8 +12,9 @@ lib/readline
 {% endblock %}
 
 {% block configure_flags %}
---with-dbus-datadir=${out}/share/dbus
+--with-dbus-datadir=${out}/etc
 --disable-systemd-service
+--libexecdir=${out}/bin
 {% endblock %}
 
 {% block install %}

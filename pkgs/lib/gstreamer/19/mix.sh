@@ -57,6 +57,7 @@ rtsp_server=disabled
 cp -R ${out}/lib/gstreamer*/* ${out}/lib/
 cp -R ${out}/lib/include/* ${out}/include/gstreamer*/
 rm -rf ${out}/lib/gstreamer* ${out}/lib/include
+mv ${out}/include/g*/* ${out}/include/
 {% endblock %}
 
 {% block strip_pc %}
