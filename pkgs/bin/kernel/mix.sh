@@ -25,8 +25,9 @@ bin/busybox/bc
 {% endblock %}
 
 {% block configure %}
-make HOSTCC=${HOST_CC} mrproper
-make HOSTCC=${HOST_CC} defconfig
+:
+#make HOSTCC=${HOST_CC} mrproper
+#make HOSTCC=${HOST_CC} defconfig
 {% endblock %}
 
 {% block build %}
@@ -39,4 +40,10 @@ ln -s target/ld ld
 ln -s target/strip strip
 ln -s target/objcopy objcopy
 ln -s target/objdump objdump
+{% endblock %}
+
+{% block install %}
+mkdir ${out}/bin
+cp arch/x86/boot/bzImage ${out}/bin/kernel.{{kernel_ver}}
+cp .config ${out}/bin/kernel.config
 {% endblock %}

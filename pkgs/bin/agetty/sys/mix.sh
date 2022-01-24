@@ -1,7 +1,7 @@
 {% extends '//mix/template/proxy.sh' %}
 
 {% block run_deps %}
-bin/mingetty
+bin/agetty
 {% endblock %}
 
 {% block install %}
@@ -9,12 +9,12 @@ cd ${out}
 
 mkdir -p etc/services; cd etc/services
 
-for i in 5 6; do (
-    mkdir mingetty${i}; cd mingetty${i}
+for i in 1 2 3 4; do (
+    mkdir agetty${i}; cd agetty${i}
 
     cat << EOF > run
 #!/bin/sh
-exec setsid cttyhack mingetty --autologin root tty${i}
+exec setsid cttyhack agetty --autologin root tty${i}
 EOF
 
     chmod +x run

@@ -2,20 +2,21 @@
 
 {% block run_deps %}
 aux/etc
+
 bin/iw
-bin/nano
 bin/runit
-bin/openssh
-bin/net/tools
 
 bin/busybox/full
 
+bin/nano
 bin/seatd
 bin/mdevd
+bin/openssh
 bin/iwd/sys
 bin/yash/sys
 bin/dbus/sys
+bin/net/tools
 bin/dhcpcd/sys
+bin/agetty/sys
 bin/mingetty/sys
-bin/wpa/supplicant
 {% endblock %}
