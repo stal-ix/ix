@@ -1,13 +1,13 @@
 {% extends '//mix/template/kconfig.sh' %}
 
-{% block step_unpack %}
-cd /home/mix/sources/linux-5.16.2
+{% block fetch %}
+{% include 'ver.sh' %}
 {% endblock %}
 
 {% block host_libs %}
 lib/elfutils
 lib/openssl/1
-lib/linux/new
+bin/kernel/headers
 {{super()}}
 {% endblock %}
 
@@ -25,9 +25,11 @@ bin/busybox/bc
 {% endblock %}
 
 {% block configure %}
-:
-#make HOSTCC=${HOST_CC} mrproper
-#make HOSTCC=${HOST_CC} defconfig
+make HOSTCC=${HOST_CC} mrproper
+
+base64 -d << EOF > .config
+{% include 'cfg/base64' %}
+EOF
 {% endblock %}
 
 {% block build %}
@@ -44,6 +46,6 @@ ln -s target/objdump objdump
 
 {% block install %}
 mkdir ${out}/bin
-cp arch/x86/boot/bzImage ${out}/bin/kernel.{{kernel_ver}}
+cp arch/x86/boot/bzImage ${out}/bin/kernel
 cp .config ${out}/bin/kernel.config
 {% endblock %}
