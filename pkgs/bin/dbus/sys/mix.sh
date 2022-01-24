@@ -17,8 +17,12 @@ EOF
 
 cat << EOF > run
 #!/bin/sh
+
+rm -rf /var/run/dbus
 mkdir -p /var/run/dbus
-exec dbus-daemon --config-file=/etc/services/dbus/system.conf --nopidfile --syslog --nofork
+chown nobody /var/run/dbus
+
+exec chpst -u nobody dbus-daemon --config-file=/etc/services/dbus/system.conf --nopidfile --syslog --nofork
 EOF
 
 chmod +x run

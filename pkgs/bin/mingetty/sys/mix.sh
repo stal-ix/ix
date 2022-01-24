@@ -9,7 +9,7 @@ cd ${out}
 
 mkdir -p etc/services; cd etc/services
 
-for i in 5 6; do (
+for i in 1 2 3 4 5 6; do (
     mkdir mingetty${i}; cd mingetty${i}
 
     cat << EOF > run

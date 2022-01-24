@@ -14,7 +14,9 @@ for i in 1 2 3 4; do (
 
     cat << EOF > run
 #!/bin/sh
-exec setsid cttyhack agetty --autologin root tty${i}
+echo "start agetty ${i}" >> /var/log/debug
+date >> /var/log/debug
+exec cttyhack agetty --autologin root tty${i}
 EOF
 
     chmod +x run

@@ -48,29 +48,44 @@ mkdir runit; cd runit
 cat << EOF > 1
 #!/bin/sh
 
+mount -t tmpfs tmpfs /dev
+mount -t sysfs sysfs /sys
+mount -t proc proc /proc
+
+mdev -s
+
 mkdir /dev/pts /dev/shm
 mount -t devpts devpts /dev/pts
 mount -t tmpfs shmfs /dev/shm
 
 mount -o remount,rw none /
 
-mkdir -p /proc /sys /var/run /var/tmp /var/log
+mkdir -p /var/run /var/tmp /var/log
 
 mount -t tmpfs tmpfs /var/run
 mount -t tmpfs tmpfs /var/tmp
-mount -t proc proc /proc
-mount -t sysfs sysfs /sys
+
+echo 0 > /proc/sys/kernel/printk || true
 
 dmesg >> /var/log/messages
+date >> /var/log/debug
+echo 'init done' >> /var/log/debug
 EOF
 
 cat << EOF > 2
 #!/bin/sh
-exec runsvdir -P /etc/services
+
+echo 'runsvdir' >> /var/log/debug
+date >> /var/log/debug
+
+exec runsvdir -P /etc/services 1>/var/log/messages 2>/var/log/messages
 EOF
 
 cat << EOF > 3
 #!/bin/sh
+echo 'halt' >> /var/log/debug
+date >> /var/log/debug
+
 exec halt
 EOF
 

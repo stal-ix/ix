@@ -10,13 +10,13 @@ bin/busybox/full
 
 bin/nano
 bin/seatd
-bin/mdevd
+bin/mdevd/sys
 bin/openssh
 bin/iwd/sys
 bin/yash/sys
 bin/dbus/sys
 bin/net/tools
 bin/dhcpcd/sys
-bin/agetty/sys
+#bin/agetty/sys
 bin/mingetty/sys
 {% endblock %}
