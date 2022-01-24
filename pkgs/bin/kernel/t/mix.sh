@@ -1,13 +1,8 @@
 {% extends '//mix/template/kconfig.sh' %}
 
-{% block fetch %}
-{% include 'ver.sh' %}
-{% endblock %}
-
 {% block host_libs %}
 lib/elfutils
 lib/openssl/1
-bin/kernel/headers
 {{super()}}
 {% endblock %}
 
@@ -26,10 +21,6 @@ bin/busybox/bc
 
 {% block configure %}
 make HOSTCC=${HOST_CC} mrproper
-
-base64 -d << EOF > .config
-{% include 'cfg/base64' %}
-EOF
 {% endblock %}
 
 {% block build %}
