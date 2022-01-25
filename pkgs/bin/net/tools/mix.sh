@@ -22,3 +22,10 @@ yes "" | make config
 DESTDIR=${out}
 SBINDIR=/bin
 {% endblock %}
+
+{% block install %}
+{{super()}}
+cd ${out}
+mkdir -p share
+mv usr/share/* share/
+{% endblock %}

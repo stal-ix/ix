@@ -33,3 +33,7 @@ cat busybox.links | (cd ${out}/bin; while read l; do
     ln -s busybox $(basename ${l})
 done)
 {% endblock %}
+
+{% block patch %}
+sed -e 's|"syslogd"|"syslogd/syslogd"|' -i sysklogd/syslogd.c
+{% endblock %}

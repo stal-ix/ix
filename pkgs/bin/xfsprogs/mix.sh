@@ -15,10 +15,20 @@ bin/e2fsprogs
 {% endblock %}
 
 {% block bld_tool %}
+bld/bash
 bin/gettext
 {% endblock %}
 
 {% block configure_flags %}
 --enable-editline=yes
 --enable-blkid=no
+{% endblock %}
+
+{% block patch %}
+sed -e 's|/bin/bash|/usr/bin/env bash|' -i install-sh
+{% endblock %}
+
+{% block install %}
+{{super()}}
+cd ${out}; rm -rf lib64
 {% endblock %}

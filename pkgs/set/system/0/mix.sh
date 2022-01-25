@@ -1,19 +1,18 @@
 {% extends '//mix/template/hub.sh' %}
 
 {% block run_deps %}
-aux/etc
-bin/runit/sys
 bin/busybox/full
-
+aux/etc
 bin/iw
+bin/sud
 bin/nano
-bin/openssh
+bin/killd
 bin/iwd/sys
-bin/yash/sys
 bin/dbus/sys
+bin/runit/sys
 bin/net/tools
 bin/mdevd/sys
-bin/dhcpcd/sys
 bin/seatd/runit
+bin/dhcpcd/runit
 bin/mingetty/sys
 {% endblock %}

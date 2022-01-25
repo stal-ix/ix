@@ -38,9 +38,11 @@ mkdir -p /var/run /var/tmp /var/log
 mount -t tmpfs tmpfs /var/run
 mount -t tmpfs tmpfs /var/tmp
 
-echo 0 > /proc/sys/kernel/printk || true
+ifconfig lo 127.0.0.1
 
-dmesg >> /var/log/messages
+echo 0 > /proc/sys/kernel/printk
+
+dmesg >> /var/log/boot
 EOF
 
 cat << EOF > 2

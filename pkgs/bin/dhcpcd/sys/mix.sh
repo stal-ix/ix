@@ -1,22 +1,14 @@
-{% extends '//mix/template/proxy.sh' %}
+{% extends '//bin/dhcpcd/mix.sh' %}
 
-{% block run_deps %}
-bin/dhcpcd
+{% block configure_flags %}
+{{super()}}
+--rundir=/var/run/dhcpcd
+--statedir=/var/run/dhcpcd
+--dbdir=/var/run/dhcpcd/db
+--localstatedir=/var/run/dhcpcd
 {% endblock %}
 
-{% block install %}
+{% block patch %}
+sed -e 's|.*INSTALL.*DBDIR.*||' -i src/Makefile
 {{super()}}
-
-cd ${out}
-
-mkdir -p etc/services/dhcpcd; cd etc/services/dhcpcd
-
-cat << EOF > run
-#!/bin/sh
-mkdir -p /var/run/dhcpcd
-cd /var/run/dhcpcd
-exec dhcpcd --nobackground --debug --config /etc/dhcpcd.conf 1>stdout 2>stderr
-EOF
-
-chmod +x run
 {% endblock %}

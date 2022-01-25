@@ -108,7 +108,7 @@ def prepare_realm(mngr, name, pkgs):
     cu.step('start build packages')
     mngr.build_packages([p.selector for p in handles])
     cu.step('done build packages')
-    uid = cu.struct_hash([10, name, pkgs] + cu.uniq_list([p.uid for p in handles]))
+    uid = cu.struct_hash([14, name, pkgs] + cu.uniq_list([p.uid for p in handles]))
     path = os.path.join(mngr.config.store_dir, uid)
     touch = os.path.join(path, 'touch')
     meta = os.path.join(path, 'meta.json')

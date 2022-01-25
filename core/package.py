@@ -281,7 +281,7 @@ class Package:
         yield from self.run_deps()
         yield from self.run_data()
 
-        for p in self.bld_lib_closure():
+        for p in self.bld_target_lib_closure():
             yield from p.run_data()
 
     @cu.cached_method
@@ -310,7 +310,9 @@ class Package:
             except FileNotFoundError:
                 pass
 
-            os.symlink(os.path.join(fr, x), p)
+            pf = os.path.join(fr, x)
+            print(f'symlink {pf} -> {p}')
+            os.symlink(pf, p)
 
     def buildable(self):
         return not not self.descr['bld']['script']
