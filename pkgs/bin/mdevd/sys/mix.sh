@@ -17,7 +17,9 @@ mkdir -p services/mdevd; cd services/mdevd
 
 cat << EOF > run
 #!/bin/sh
-exec mdevd -f /etc/mdev.conf -C
+mkdir -p /var/run/mdevd
+cd /var/run/mdevd
+exec mdevd -O 4 -f /etc/mdev.conf -C 1>stdout 2>stderr
 EOF
 
 chmod +x run

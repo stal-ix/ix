@@ -1,7 +1,9 @@
 {% extends '//mix/template/proxy.sh' %}
 
 {% block install %}
-cd ${out}; mkdir etc; cd etc
+cd ${out}
+
+mkdir etc; cd etc
 
 cat << EOF > passwd
 root:x:0:0:root:/home/root:/bin/sh
@@ -43,53 +45,9 @@ cat << EOF > hosts
 ::1        localhost
 EOF
 
-mkdir runit; cd runit
+echo '00000000000000001111111111111111' > machine-id
 
-cat << EOF > 1
-#!/bin/sh
-
-mount -t tmpfs tmpfs /dev
-mount -t sysfs sysfs /sys
-mount -t proc proc /proc
-
-mdev -s
-
-mkdir /dev/pts /dev/shm
-mount -t devpts devpts /dev/pts
-mount -t tmpfs shmfs /dev/shm
-
-mount -o remount,rw none /
-
-mkdir -p /var/run /var/tmp /var/log
-
-mount -t tmpfs tmpfs /var/run
-mount -t tmpfs tmpfs /var/tmp
-
-echo 0 > /proc/sys/kernel/printk || true
-
-dmesg >> /var/log/messages
-date >> /var/log/debug
-echo 'init done' >> /var/log/debug
-EOF
-
-cat << EOF > 2
-#!/bin/sh
-
-echo 'runsvdir' >> /var/log/debug
-date >> /var/log/debug
-
-exec runsvdir -P /etc/services 1>/var/log/messages 2>/var/log/messages
-EOF
-
-cat << EOF > 3
-#!/bin/sh
-echo 'halt' >> /var/log/debug
-date >> /var/log/debug
-
-exec halt
-EOF
-
-chmod +x 1 2 3; cd ..
+ln -sv /proc/self/mounts mtab
 
 mkdir services; cd services
 
@@ -98,22 +56,11 @@ mkdir services; cd services
 
     cat << EOF > run
 #!/bin/sh
-exec syslogd -n -O /var/log/messages
+mkdir -p /var/run/syslogd
+cd /var/run/syslogd
+exec syslogd -n -O /var/log/syslog 1>stdout 2>stderr
 EOF
 
     chmod +x run
 )
-
-cd ..
-
-cat << EOF > init
-#!/bin/sh
-export PATH=/bin
-export TMPDIR=/var/tmp
-exec runit
-EOF
-
-chmod +x init
-
-ln -sv /proc/self/mounts mtab
 {% endblock %}

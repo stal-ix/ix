@@ -13,7 +13,9 @@ mkdir -p etc/services/iwd; cd etc/services/iwd
 
 cat << EOF > run
 #!/bin/sh
-exec iwd
+mkdir -p /var/run/iwd
+cd /var/run/iwd
+exec iwd 1>stdout 2>stderr
 EOF
 
 chmod +x run
