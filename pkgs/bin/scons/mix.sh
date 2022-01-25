@@ -14,6 +14,8 @@ cd ${out}; mkdir bin; cd bin
 
 extract1 ${src}/SCons*
 
+sed -e "s|= 'ar'| = SCons.Tool.find_program_path(env, 'ar')|" -i SCons/Tool/ar.py
+
 cat << EOF > scons
 #!$(which sh)
 PYTHONPATH=${PWD} python3 ${PWD}/SCons/__main__.py "\$@"

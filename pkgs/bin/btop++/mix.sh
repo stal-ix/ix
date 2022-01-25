@@ -2,7 +2,7 @@
 
 {% block fetch %}
 https://github.com/aristocratos/btop/archive/refs/tags/v1.2.0.tar.gz
-sha:
+sha:59a87b9d0bb0f5010d53f0ac72ddee9fd7b5a4039bce51b94b262313e946df02
 {% endblock %}
 
 {% block bld_libs %}

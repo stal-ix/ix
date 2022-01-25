@@ -1,0 +1,98 @@
+diff --git a/common/JackDriverLoader.cpp b/common/JackDriverLoader.cpp
+index 7715043..c69bd4a 100644
+--- a/common/JackDriverLoader.cpp
++++ b/common/JackDriverLoader.cpp
+@@ -558,9 +558,12 @@ error:
+ }
+ 
+ #else
++extern "C" jack_driver_desc_t* driver_get_descriptor_alsa();
+ 
+ JSList* jack_drivers_load (JSList * drivers)
+ {
++    return jack_slist_append(0, driver_get_descriptor_alsa());
++
+     struct dirent * dir_entry;
+     DIR * dir_stream;
+     const char* ptr;
+@@ -747,6 +750,7 @@ JSList* jack_internals_load(JSList * internals)
+ }
+ 
+ #endif
++extern "C" void* driver_initialize_alsa;
+ 
+ Jack::JackDriverClientInterface* JackDriverInfo::Open(jack_driver_desc_t* driver_desc,
+                                                     Jack::JackLockedEngine* engine,
+@@ -784,7 +788,7 @@ Jack::JackDriverClientInterface* JackDriverInfo::Open(jack_driver_desc_t* driver
+     //jack_error (" ---------------------------------  Successfully opened driver \"%S\"\n", driver_desc->file);
+ 
+         
+-    fInitialize = (driverInitialize)GetDriverProc(fHandle, "driver_initialize");
++    fInitialize = (driverInitialize)&driver_initialize_alsa; //GetDriverProc(fHandle, "driver_initialize");
+ 
+ #ifdef WIN32
+     if ((fInitialize == NULL) && (errstr = GetLastError ()) != 0) {
+diff --git a/linux/alsa/JackAlsaDriver.cpp b/linux/alsa/JackAlsaDriver.cpp
+index 0ac2919..c75567b 100644
+--- a/linux/alsa/JackAlsaDriver.cpp
++++ b/linux/alsa/JackAlsaDriver.cpp
+@@ -697,7 +697,7 @@ dither_opt (char c, DitherAlgorithm* dither)
+     return 0;
+ }
+ 
+-SERVER_EXPORT const jack_driver_desc_t* driver_get_descriptor ()
++SERVER_EXPORT const jack_driver_desc_t* driver_get_descriptor_alsa ()
+ {
+     jack_driver_desc_t * desc;
+     jack_driver_desc_filler_t filler;
+@@ -784,7 +784,7 @@ SERVER_EXPORT const jack_driver_desc_t* driver_get_descriptor ()
+ 
+ static Jack::JackAlsaDriver* g_alsa_driver;
+ 
+-SERVER_EXPORT Jack::JackDriverClientInterface* driver_initialize(Jack::JackLockedEngine* engine, Jack::JackSynchro* table, const JSList* params)
++SERVER_EXPORT Jack::JackDriverClientInterface* driver_initialize_alsa(Jack::JackLockedEngine* engine, Jack::JackSynchro* table, const JSList* params)
+ {
+     jack_nframes_t srate = 48000;
+     jack_nframes_t frames_per_interrupt = 1024;
+diff --git a/wscript b/wscript
+index e4494ff..dd7b9f7 100644
+--- a/wscript
++++ b/wscript
+@@ -293,7 +293,7 @@ def configure(conf):
+             conf.env['SYSTEMD_USER_UNIT_DIR'] = None
+ 
+ 
+-    conf.recurse('example-clients')
++    #conf.recurse('example-clients')
+     conf.recurse('tools')
+ 
+     # test for the availability of ucontext, and how it should be used
+@@ -559,6 +559,19 @@ def build_jackd(bld):
+     if bld.env['IS_SUN']:
+         jackd.use += ['DL', 'PTHREAD']
+ 
++    jackd.source += [
++        'common/memops.c',
++        'linux/alsa/JackAlsaDriver.cpp',
++        'linux/alsa/alsa_rawmidi.c',
++        'linux/alsa/alsa_seqmidi.c',
++        'linux/alsa/alsa_midi_jackmp.cpp',
++        'linux/alsa/generic_hw.c',
++        'linux/alsa/hdsp.c',
++        'linux/alsa/alsa_driver.c',
++        'linux/alsa/hammerfall.c',
++        'linux/alsa/ice1712.c'
++    ]
++
+     obj_add_includes(bld, jackd)
+ 
+     return jackd
+@@ -817,7 +830,7 @@ def build(bld):
+ 
+     build_drivers(bld)
+ 
+-    bld.recurse('example-clients')
++    #bld.recurse('example-clients')
+     bld.recurse('tools')
+ 
+     if bld.env['IS_LINUX']:

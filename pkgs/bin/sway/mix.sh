@@ -1,8 +1,8 @@
 {% extends '//mix/template/meson.sh' %}
 
 {% block fetch %}
-https://github.com/swaywm/sway/archive/eaeb173a4b9b22d8ba1b35d3d863f0dcb8595341.zip
-2bc3408393a1ff42d9065c9dd9070317
+https://github.com/swaywm/sway/archive/refs/tags/1.7.tar.gz
+sha:0c64536fb2883ec518e75cfb119f9300115fb49b084e3fde62b794fe2c6c8d84
 {% endblock %}
 
 {% block bld_libs %}
@@ -18,7 +18,7 @@ lib/cairo
 lib/pango
 lib/json/c
 lib/wayland
-lib/wlroots/trunk
+lib/wlroots/15
 {% endblock %}
 
 {% block bld_tool %}

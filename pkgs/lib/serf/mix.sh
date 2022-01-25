@@ -14,9 +14,18 @@ lib/apr/util
 {% endblock %}
 
 {% block bld_tool %}
-bin/pkg-config
 bin/scons
 bin/patch
+bin/pkg-config
+{% endblock %}
+
+{% block setup %}
+export CPPFLAGS="-w ${CPPFLAGS}"
+{% endblock %}
+
+{% block setup_tools %}
+which llvm-ar
+ln -s $(which llvm-ar) ar
 {% endblock %}
 
 {% block patch %}
@@ -32,6 +41,7 @@ EOF
 {% block build %}
 scons \
     CC=$(which clang)    \
+    AR=$(which llvm-ar)  \
     PREFIX=${out}        \
     OPENSSL="${SSL_DIR}" \
     APR="$(which apr-1-config)" \

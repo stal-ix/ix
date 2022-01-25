@@ -13,7 +13,11 @@ lib/c++
 {% block bld_libs %}
 lib/linux
 lib/alsa/lib
-lib/readline
+{% endblock %}
+
+{% block bld_tool %}
+bld/bash
+{{super()}}
 {% endblock %}
 
 {% block setup %}
@@ -24,10 +28,17 @@ export CXXFLAGS="-Wno-register ${CXXFLAGS}"
 --classic
 --alsa=yes
 --systemd=no
---readline=yes
 {% endblock %}
 
 {% block install %}
 {{super()}}
 cd ${out}/lib; rm -rf jack libjackserver.a
+{% endblock %}
+
+{% block patch %}
+find . -name '*.sh' | while read l; do
+    sed -e 's|/bin/bash|/usr/bin/env bash|' -i ${l}
+done
+
+{{super()}}
 {% endblock %}

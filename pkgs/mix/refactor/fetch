@@ -1,0 +1,5 @@
+#!/bin/sh
+
+cat mix.sh | grep 'https://' | while read l; do
+    wget --no-check-certificate "${l}"
+done

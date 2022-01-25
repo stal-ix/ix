@@ -7,9 +7,11 @@ cda07f5ac55fccfafdf7ee01828adad5
 
 {% block lib_deps %}
 lib/c
-lib/intl
 lib/iconv
 lib/unistring
+{% if bin %}
+lib/intl
+{% endif %}
 {% endblock %}
 
 {% block bld_tool %}
