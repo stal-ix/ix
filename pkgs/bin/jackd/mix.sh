@@ -20,8 +20,8 @@ EOF
 {% block install %}
 {{super()}}
 cd ${out}
-mv bin/jackd ./
-rm -rf bin
+mv bin old
 mkdir bin
-mv jackd bin/
+mv old/jackd bin/
+rm -r old
 {% endblock %}

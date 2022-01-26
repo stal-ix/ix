@@ -12,9 +12,13 @@ bin/gcc/tc(for_target={{target.gnu.three}})
 {% endblock %}
 
 {% block bld_tool %}
+lib/xz
 bld/perl
 bin/flex
 bin/gzip
+lib/zstd
+bld/python
+lib/openssl/1
 bin/bison/3/6
 bin/busybox/bc
 {% endblock %}
@@ -24,7 +28,7 @@ make HOSTCC=${HOST_CC} mrproper
 {% endblock %}
 
 {% block build %}
-make HOSTCC=${HOST_CC} -j 16
+make HOSTCC="${HOST_CC} -D__always_inline=__inline__ -w" -j 16
 {% endblock %}
 
 {% block setup_target_tc %}

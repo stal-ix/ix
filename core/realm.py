@@ -125,7 +125,7 @@ def prepare_realm(mngr, name, pkgs):
 
     os.makedirs(path)
 
-    for p in handles:
+    for p in reversed(handles):
         p.install(path)
 
     with open(meta, 'w') as f:

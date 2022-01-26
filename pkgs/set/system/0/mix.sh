@@ -1,8 +1,6 @@
 {% extends '//mix/template/hub.sh' %}
 
 {% block run_deps %}
-bin/busybox/full
-aux/etc
 bin/iw
 bin/sud
 bin/nano
@@ -15,4 +13,6 @@ bin/net/tools
 bin/seatd/runit
 bin/dhcpcd/runit
 bin/mingetty/sys
+bin/busybox/full
+aux/etc
 {% endblock %}

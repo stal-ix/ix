@@ -12,6 +12,6 @@ bin/kernel/16/headers
 {% block configure %}
 {{super()}}
 base64 -d << EOF > .config
-{% include 'cfg8/base64' %}
+{% include 'cfg/base64' %}
 EOF
 {% endblock %}
