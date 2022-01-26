@@ -16,7 +16,7 @@ for i in 1 2 3 4 5 6; do (
 #!/bin/sh
 mkdir -p /var/run/mingetty${i}
 cd /var/run/mingetty${i}
-exec setsid cttyhack mingetty --autologin root tty${i} 1>stdout 2>stderr
+exec flock lock setsid cttyhack mingetty --autologin root tty${i} 1>stdout 2>stderr
 EOF
 
     chmod +x run

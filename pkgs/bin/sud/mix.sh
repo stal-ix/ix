@@ -28,7 +28,7 @@ cat << EOF > run
 #!/bin/sh
 mkdir -p /var/run/sud
 cd /var/run/sud
-exec dropbear -R -F -E -B -j -k -m -P dropbear.pid 1>stdout 2>stderr
+exec flock lock dropbear -R -F -E -B -j -k -m -P dropbear.pid 1>stdout 2>stderr
 EOF
 
 chmod +x run

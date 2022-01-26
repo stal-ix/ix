@@ -13,7 +13,7 @@ cat << EOF > run
 #!/bin/sh
 mkdir -p /var/run/dhcpcd
 cd /var/run/dhcpcd
-exec dhcpcd --nobackground --debug --config /etc/dhcpcd.conf 1>stdout 2>stderr
+exec flock lock dhcpcd --nobackground --debug --config /etc/dhcpcd.conf 1>stdout 2>stderr
 EOF
 
 chmod +x run

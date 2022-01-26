@@ -13,13 +13,21 @@ EOF
 
 echo >> mdev.conf
 
+mkdir -p runit/1.d; cd runit/1.d
+
+cat << EOF > 5-mdevd-coldplug.sh
+mdevd-coldplug
+EOF
+
+cd ../..
+
 mkdir -p services/mdevd; cd services/mdevd
 
 cat << EOF > run
 #!/bin/sh
 mkdir -p /var/run/mdevd
 cd /var/run/mdevd
-exec mdevd -O 4 -f /etc/mdev.conf -C 1>stdout 2>stderr
+exec flock lock mdevd -O 4 -f /etc/mdev.conf -C 1>stdout 2>stderr
 EOF
 
 chmod +x run

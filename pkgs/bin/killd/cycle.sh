@@ -10,7 +10,7 @@ lstp() (
 
 sleep 1
 
-mkdir /var/run/killd
+mkdir -p /var/run/killd
 cd /var/run/killd
 
 date >> log
