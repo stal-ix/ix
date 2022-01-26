@@ -11,7 +11,7 @@ cat << EOF > run
 #!/bin/sh
 mkdir -p /var/run/seatd
 cd /var/run/seatd
-exec flock lock /etc/services/seatd/seatd 1>stdout 2>stderr
+exec flock lock /etc/services/seatd/seatd 1>>out 2>>out
 EOF
 
 cat << EOF > seatd

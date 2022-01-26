@@ -27,7 +27,7 @@ cat << EOF > run
 #!/bin/sh
 mkdir -p /var/run/mdevd
 cd /var/run/mdevd
-exec flock lock mdevd -O 4 -f /etc/mdev.conf -C 1>stdout 2>stderr
+exec flock lock mdevd -O 4 -f /etc/mdev.conf -C 1>>out 2>>out
 EOF
 
 chmod +x run

@@ -25,8 +25,10 @@ export PATH="${out}/bin:${PATH}"
 {% endblock %}
 
 {% block build %}
+export MAKE="{% block heirloom_make %}make{% endblock %}"
+
 xmake() {
-    make -f Makefile.mk CC=${CC} AR=${AR} RANLIB=${RANLIB}  \
+  ${MAKE} -f Makefile.mk CC=${CC} AR=${AR} RANLIB=${RANLIB} \
           INSTALL=install STRIP=true CFLAGS="${CFLAGS}"     \
           ROOT= LIBDIR="${out}/bin/lib" BINDIR="${out}/bin" \
           MANDIR="${out}/man" YACC=yacc LEX=lex             \
@@ -45,7 +47,7 @@ cd heirloom
 (cd libcommon; xmake)
 (cd libuxre; xmake)
 
-for x in bc ed; do (
+for x in {% block heirloom_tools %}{% endblock %}; do (
     cd ${x}
 
     xmake LCOMMON="-lcommon" LUXRE="-luxre"

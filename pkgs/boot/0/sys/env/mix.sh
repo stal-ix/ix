@@ -5,7 +5,7 @@ guess_flags() {
 >_.c
 >_.cpp
 
-for x in '-nostdinc' '-fcolor-diagnostics' '-fdiagnostics-color'; do
+for x in '-nostdinc' '-fcolor-diagnostics' '-fdiagnostics-color' '-Wno-unused-command-line-argument' '-Wno-ignored-optimization-argument'; do
     if ${CC} ${x} -c _.c > /dev/null 2>&1; then
         CFLAGS="${x} ${CFLAGS}"
     fi

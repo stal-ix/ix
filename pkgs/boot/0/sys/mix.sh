@@ -30,7 +30,7 @@ def which(paths, b):
             return pp
 
 def wsys(b):
-    return which(['/bin', '/usr/bin', '/usr/local/bin'], b)
+    return which(['/bin', '/usr/bin', '/usr/local/bin', '/mix/realm/boot/bin'], b)
 
 def wloc(bins):
     for b in bins:
@@ -65,6 +65,7 @@ for x in TOOLS:
                 assert os.path.basename(cc) == tool
 
                 sl(cc, tool)
+
 
 sl(wloc(SHELLS), 'sh')
 

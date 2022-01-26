@@ -59,7 +59,7 @@ mkdir services; cd services
 #!/bin/sh
 mkdir -p /var/run/syslogd
 cd /var/run/syslogd
-exec syslogd -n -O /var/log/syslog 1>stdout 2>stderr
+exec syslogd -n -O /var/log/syslog 1>>out 2>>out
 EOF
 
     chmod +x run

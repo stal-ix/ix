@@ -26,6 +26,8 @@ export PATH="${out}/bin:${PWD}:${PATH}"
 
 {% block make_flags %}
 CC=${CC}
+CFLAGS="${CFLAGS} ${CPPFLAGS}"
+LDFLAGS="${LDFLAGS}"
 {% endblock %}
 
 {% block patch %}

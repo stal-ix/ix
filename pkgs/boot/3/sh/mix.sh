@@ -1,4 +1,4 @@
-{% extends '//bin/make/mix.sh' %}
+{% extends '//bld/sh/mix.sh' %}
 
 {% block make_no_thrs %}{% endblock %}
 
@@ -7,7 +7,10 @@ boot/3/lib/c
 {% endblock %}
 
 {% block bld_deps %}
-boot/3/sh
 boot/3/make
 boot/2/env
+{% endblock %}
+
+{% block setup_tools %}
+ln -s $(which nawk) awk
 {% endblock %}

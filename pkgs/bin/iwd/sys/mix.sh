@@ -15,7 +15,7 @@ cat << EOF > run
 #!/bin/sh
 mkdir -p /var/run/iwd
 cd /var/run/iwd
-exec flock lock iwd 1>stdout 2>stderr
+exec flock lock iwd 1>>out 2>>out
 EOF
 
 chmod +x run

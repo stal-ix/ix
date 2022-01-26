@@ -16,7 +16,7 @@ for i in 1 2 3 4 5; do (
 #!/bin/sh
 mkdir -p /var/run/agetty${i}
 cd /var/run/agetty${i}
-exec cttyhack agetty --autologin root tty${i} 1>stdout 2>stderr
+exec cttyhack agetty --autologin root tty${i} 1>>out 2>>out
 EOF
 
     chmod +x run

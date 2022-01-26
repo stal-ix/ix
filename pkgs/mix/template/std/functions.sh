@@ -21,7 +21,7 @@ find_pkg() (
     pkg-config --variable=prefix ${1}
 )
 
-DS=""
+DS="nowhere"
 
 pushd() {
     DS="${PWD}:${DS}"; cd ${1}

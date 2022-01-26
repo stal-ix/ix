@@ -60,7 +60,7 @@ cat << EOF > 2
 #!/bin/sh
 mkdir -p /var/run/runsvdir
 cd /var/run/runsvdir
-exec cttyhack runsvdir -P /etc/services 1>stdout 2>stderr
+exec cttyhack runsvdir -P /etc/services 1>>out 2>>out
 EOF
 
 cat << EOF > 3

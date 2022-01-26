@@ -17,8 +17,8 @@ lib/readline
 bin/flex
 bld/bash
 bin/texinfo
-bin/heirloom
 bin/bison/3/6
+bin/heirloom/ed
 {% endblock %}
 
 {% block make_no_thrs %}

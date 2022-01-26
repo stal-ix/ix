@@ -1,6 +1,7 @@
 {% extends 'script.json' %}
 
 {% block script_body %}
+# {{rebuild}}
 {% block prologue %}
 set -eu
 

@@ -19,7 +19,7 @@ cat << EOF > run
 #!/bin/sh
 mkdir -p /var/run/dbus
 cd /var/run/dbus
-exec flock lock dbus-daemon --config-file=/etc/services/dbus/system.conf --nopidfile --syslog --nofork 1>stdout 2>stderr
+exec flock lock dbus-daemon --config-file=/etc/services/dbus/system.conf --nopidfile --syslog --nofork 1>>out 2>>out
 EOF
 
 chmod +x run
