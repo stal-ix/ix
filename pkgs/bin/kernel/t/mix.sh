@@ -24,11 +24,11 @@ bin/busybox/bc
 {% endblock %}
 
 {% block configure %}
-make HOSTCC=${HOST_CC} mrproper
+make HOSTCC="${HOST_CC} -D__always_inline=__inline__ -w" mrproper
 {% endblock %}
 
 {% block build %}
-make HOSTCC="${HOST_CC} -D__always_inline=__inline__ -w" -j 16
+make HOSTCC="${HOST_CC} -D__always_inline=__inline__ -w" -j ${make_thrs}
 {% endblock %}
 
 {% block setup_target_tc %}
