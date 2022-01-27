@@ -7,12 +7,14 @@ sha:0c64536fb2883ec518e75cfb119f9300115fb49b084e3fde62b794fe2c6c8d84
 
 {% block bld_libs %}
 lib/c
+lib/basu
 lib/pcre
 lib/cairo
 lib/pango
 lib/json/c
 lib/wayland
 lib/wlroots/15
+lib/gdk/pixbuf
 {% endblock %}
 
 {% block bld_tool %}
@@ -26,6 +28,7 @@ list_insert
 seat_create
 server_init
 seat_destroy
+parse_boolean
 zwp_linux_dmabuf_v1_interface
 zwp_linux_buffer_params_v1_interface
 zwp_linux_dmabuf_feedback_v1_interface

@@ -2,6 +2,7 @@
 
 {% block meson_flags %}
 {{super()}}
+tray=enabled
 swaybar=true
 swaynag=true
 {% endblock %}

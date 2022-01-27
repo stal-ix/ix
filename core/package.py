@@ -311,7 +311,7 @@ class Package:
                 pass
 
             pf = os.path.join(fr, x)
-            print(f'symlink {pf} -> {p}')
+            # print(f'symlink {pf} -> {p}')
             os.symlink(pf, p)
 
     def buildable(self):
