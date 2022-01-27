@@ -7,7 +7,9 @@ lib/webkit
 {% block install %}
 cd ${out}; mkdir bin; cd bin
 
-find $(dirname $(command -v WebKitWebDriver)) -type f | while read l; do
+find ${lib_webkit} -type f -executable | while read l; do
     cp "${l}" ./
 done
+
+rm jsc
 {% endblock %}

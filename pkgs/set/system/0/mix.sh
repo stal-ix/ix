@@ -9,7 +9,6 @@ bin/iwd/sys
 bin/dbus/sys
 bin/runit/sys
 bin/net/tools
-#bin/mdevd/sys
 bin/seatd/runit
 bin/dhcpcd/runit
 bin/mingetty/sys
