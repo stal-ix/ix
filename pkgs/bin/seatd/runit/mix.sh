@@ -1,7 +1,7 @@
 {% extends '//mix/template/proxy.sh' %}
 
 {% block run_deps %}
-bin/seatd
+bin/seatd/sys
 {% endblock %}
 
 {% block install %}

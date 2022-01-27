@@ -1,7 +1,7 @@
 {% extends '//mix/template/proxy.sh' %}
 
 {% block run_deps %}
-bin/dropbear
+bin/dropbear/sys
 {% endblock %}
 
 {% block install %}
