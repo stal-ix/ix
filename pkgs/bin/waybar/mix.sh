@@ -10,6 +10,7 @@ lib/c
 lib/nl
 lib/c++
 lib/fmt
+lib/udev
 lib/evdev
 lib/spdlog
 lib/wayland
@@ -18,6 +19,8 @@ lib/gtk/3/mm
 lib/json/cpp
 lib/dbus/menu
 lib/xkbcommon
+lib/appindicator
+lib/gtk/layer/shell
 {% endblock %}
 
 {% block bld_tool %}
