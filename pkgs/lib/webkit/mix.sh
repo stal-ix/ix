@@ -5,6 +5,8 @@ https://webkitgtk.org/releases/webkitgtk-2.34.3.tar.xz
 de30c41fb57b2b024417669c22914752
 {% endblock %}
 
+{% block ninja_threads %}7{% endblock %}
+
 {% block lib_deps %}
 lib/c
 lib/z

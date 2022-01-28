@@ -17,11 +17,13 @@ date >> log
 
 lst >> log
 
-for s in "SIGINT" "SIGKILL"; do
+for s in "SIGINT" "SIGTERM" "SIGKILL"; do
     lstp | while read l; do
         echo "${s} ${l}" >> log
         kill -${s} ${l}
     done
 
-    sleep 10
+    sleep 1
 done
+
+sleep 10

@@ -5,7 +5,30 @@ bin/runit
 {% endblock %}
 
 {% block install %}
-cd ${out}; mkdir etc; cd etc
+cd ${out}
+
+mkdir bin; cd bin
+
+cat << EOF > srv
+#!/bin/sh
+cd /sys/fs/cgroup; mkdir -p \$\$; cd \$\$
+
+echo \$\$ > cgroup.procs
+
+cleanup() (
+    echo 1 > cgroup.kill
+)
+
+trap cleanup TERM INT EXIT
+
+\$@
+EOF
+
+chmod +x srv
+
+cd ..
+
+mkdir etc; cd etc
 
 cat << EOF > init
 #!/bin/sh
@@ -26,6 +49,7 @@ mount -t devtmpfs devtmpfs /dev
 #mount -t tmpfs tmpfs /dev
 mount -t sysfs sysfs /sys
 mount -t proc proc /proc
+mount -t cgroup2 none /sys/fs/cgroup
 
 mkdir /dev/pts /dev/shm
 mount -t devpts devpts /dev/pts

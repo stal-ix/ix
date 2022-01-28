@@ -21,3 +21,9 @@ bld/python
 {% block configure_flags %}
 --disable-systemd
 {% endblock %}
+
+{% block patch %}
+find . -type f -name '*.c' | while read l; do
+    sed -e 's|error.*EXIT_FAILURE.*|exit(1);|' -i ${l}
+done
+{% endblock %}
