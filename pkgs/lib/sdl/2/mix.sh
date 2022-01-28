@@ -7,6 +7,7 @@ sha:2a026753af9b03fca043824bca8341f74921a836d28729e0c31aa262202a83c6
 
 {% block lib_deps %}
 lib/c
+lib/decor
 lib/jack/2
 lib/opengl
 lib/wayland

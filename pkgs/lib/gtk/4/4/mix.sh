@@ -5,8 +5,14 @@ https://download.gnome.org/sources/gtk/4.4/gtk-4.4.1.tar.xz
 f3661ba9a9e6805172c776c9c0a3b73c
 {% endblock %}
 
+{% block lib_deps %}
+{{super()}}
+lib/vulkan/loader
+{% endblock %}
+
 {% block meson_flags %}
 x11-backend=false
+vulkan=enabled
 media-ffmpeg=disabled
 media-gstreamer=disabled
 {% endblock %}

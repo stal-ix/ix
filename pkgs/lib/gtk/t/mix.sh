@@ -19,3 +19,8 @@ lib/glib
 bin/gettext
 lib/wayland/protocols
 {% endblock %}
+
+{% block run_data %}
+aux/adwaita-icon-theme
+aux/hicolor-icon-theme
+{% endblock %}

@@ -29,9 +29,8 @@ bld/bootbox
 cd ${out}/lib
 mv nsss/* .
 rm -r nsss
-exit 1 # really broken now
 {% endblock %}
 
 {% block env %}
-export CPPFLAGS="-I${out}/include/nsss \${CPPFLAGS}"
+export CPPFLAGS="-isystem ${out}/include/nsss \${CPPFLAGS}"
 {% endblock %}

@@ -22,6 +22,10 @@ def on_sigint(*args):
 
 signal.signal(signal.SIGINT, on_sigint)
 
+import fcntl
+
+fcntl.fcntl(1, fcntl.F_SETFL, 0)
+
 import core.main as cm
 
 

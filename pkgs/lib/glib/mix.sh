@@ -53,4 +53,8 @@ done
 patch -p5 << EOF
 {% include '00.diff' %}
 EOF
+
+patch -p1 << EOF
+{% include '01.diff' %}
+EOF
 {% endblock %}

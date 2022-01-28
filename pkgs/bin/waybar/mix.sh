@@ -10,18 +10,22 @@ lib/c
 lib/nl
 lib/c++
 lib/fmt
+lib/evdev
 lib/spdlog
+lib/wayland
 lib/sigc++/2
 lib/gtk/3/mm
-lib/dbus/menu
-lib/evdev
-lib/wayland
-lib/xkbcommon
 lib/json/cpp
+lib/dbus/menu
+lib/xkbcommon
 {% endblock %}
 
 {% block bld_tool %}
 lib/glib
 bin/scdoc
 lib/wayland/protocols
+{% endblock %}
+
+{% block patch %}
+sed -e 's|.*spdlog.*asString.*what.*||' -i src/bar.cpp
 {% endblock %}

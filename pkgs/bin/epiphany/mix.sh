@@ -11,6 +11,7 @@ bin/epiphany/libs(gtk_ver=3)
 
 {% block bld_tool %}
 lib/glib
+lib/gtk/3
 bin/gettext
 bin/meson/better
 {% endblock %}
@@ -20,7 +21,8 @@ aux/iso-codes
 {% endblock %}
 
 {% block run_deps %}
-lib/webkit/webproc(gtk_ver=3)
+lib/webkit/webproc
+#lib/webkit/webproc(gtk_ver=3)
 {% endblock %}
 
 {% block meson_flags %}
@@ -29,10 +31,16 @@ unit_tests=disabled
 soup2=disabled
 {% endblock %}
 
+{% block setup_tools %}
+cat << EOF > update-desktop-database
+#!/bin/sh
+EOF
+
+chmod +x update-desktop-database
+{% endblock %}
+
 {% block patch %}
-sed -e 's|.*subdir.*help.*||' \
-    -e 's|.*add_install_script.*||' \
-    -i meson.build
+sed -e 's|.*subdir.*help.*||' -i meson.build
 
 (find . -name '*.c' | while read l; do
     cat ${l}
@@ -94,6 +102,18 @@ EOF
 {% endblock %}
 
 {% block install %}
+(
+    cd ${out}
+
+    mkdir -p share/glib-2.0/schemas; cd share/glib-2.0/schemas
+
+    IFS=':'; for x in ${MIX_T_DIR}; do
+        if test -d "${x}/share/glib-2.0/schemas"; then
+            cp ${x}/share/glib-2.0/schemas/*.xml ./ || true
+        fi
+    done
+)
+
 {{super()}}
 
 cd ${out}/bin
