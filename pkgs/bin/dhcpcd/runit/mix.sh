@@ -11,9 +11,7 @@ mkdir -p etc/services/dhcpcd; cd etc/services/dhcpcd
 
 cat << EOF > run
 #!/bin/sh
-mkdir -p /var/run/dhcpcd
-cd /var/run/dhcpcd
-exec flock lock dhcpcd --nobackground --debug --config /etc/dhcpcd.conf 1>>out 2>>out
+exec srv dhcpcd dhcpcd --nobackground --debug --config /etc/dhcpcd.conf
 EOF
 
 chmod +x run

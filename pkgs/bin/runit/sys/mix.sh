@@ -9,19 +9,8 @@ cd ${out}
 
 mkdir bin; cd bin
 
-cat << EOF > srv
-#!/bin/sh
-cd /sys/fs/cgroup; mkdir -p \$\$; cd \$\$
-
-echo \$\$ > cgroup.procs
-
-cleanup() (
-    echo 1 > cgroup.kill
-)
-
-trap cleanup TERM INT EXIT
-
-\$@
+base64 -d << EOF > srv
+{% include 'srv/base64' %}
 EOF
 
 chmod +x srv

@@ -26,9 +26,7 @@ mkdir -p services/sud; cd services/sud
 
 cat << EOF > run
 #!/bin/sh
-mkdir -p /var/run/sud
-cd /var/run/sud
-exec flock lock dropbear -R -F -E -B -j -k -m -P dropbear.pid 1>>out 2>>out
+exec srv sud dropbear -R -F -E -B -j -k -m -P dropbear.pid
 EOF
 
 chmod +x run
