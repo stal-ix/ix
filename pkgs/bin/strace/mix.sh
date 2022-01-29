@@ -1,4 +1,4 @@
-{% extends '//mix/template/autohell.sh' %}
+{% extends '//mix/template/autorehell.sh' %}
 
 {% block fetch %}
 https://strace.io/files/5.14/strace-5.14.tar.xz

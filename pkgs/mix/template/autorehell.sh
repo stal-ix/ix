@@ -11,6 +11,7 @@
 {% block patch_configure %}
 {% block autoreconf %}
 {% if not boot %}
+find . -type f -name configure -delete
 libtoolize -ci
 autoreconf -if
 {% endif %}

@@ -10,6 +10,7 @@ lib/c
 lib/z
 lib/lzo
 lib/zstd
+lib/udev
 lib/linux
 lib/execinfo
 bin/e2fsprogs
@@ -22,6 +23,5 @@ reallocarray
 
 {% block configure_flags %}
 --disable-documentation
---disable-libudev
 --disable-python
 {% endblock %}

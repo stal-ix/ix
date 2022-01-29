@@ -1,4 +1,4 @@
-{% extends '//mix/template/autohell.sh' %}
+{% extends '//mix/template/autorehell.sh' %}
 
 {% block fetch %}
 https://ftp.gnu.org/gnu/bc/bc-1.07.tar.gz

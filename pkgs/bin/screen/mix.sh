@@ -1,4 +1,4 @@
-{% extends '//mix/template/autohell.sh' %}
+{% extends '//mix/template/autorehell.sh' %}
 
 {% block fetch %}
 http://ftp.gnu.org/gnu/screen/screen-4.8.0.tar.gz

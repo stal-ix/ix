@@ -1,4 +1,4 @@
-{% extends '//mix/template/autohell.sh' %}
+{% extends '//mix/template/autorehell.sh' %}
 
 {% block fetch %}
 https://archive.apache.org/dist/subversion/subversion-1.14.1.tar.bz2
