@@ -1,4 +1,4 @@
-{% extends '//mix/template/autohell.sh' %}
+{% extends '//mix/template/autorehell.sh' %}
 
 {% block fetch %}
 https://download.savannah.gnu.org/releases/freetype/freetype-2.11.1.tar.xz
@@ -11,11 +11,6 @@ lib/z
 lib/png
 lib/bzip2
 lib/brotli
-{% endblock %}
-
-{% block bld_tool %}
-bin/auto/conf/2/69
-bin/auto/make/1/16
 {% endblock %}
 
 {% block autoreconf %}

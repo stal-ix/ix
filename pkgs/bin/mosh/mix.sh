@@ -1,4 +1,4 @@
-{% extends '//mix/template/autohell.sh' %}
+{% extends '//mix/template/autorehell.sh' %}
 
 {% block fetch %}
 https://github.com/mobile-shell/mosh/archive/refs/tags/mosh-1.3.2.tar.gz
@@ -15,8 +15,6 @@ lib/openssl
 
 {% block bld_tool %}
 lib/protobuf
-bin/auto/conf/2/69
-bin/auto/make/1/16
 {% endblock %}
 
 {% block autoreconf %}

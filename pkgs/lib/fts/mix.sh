@@ -1,13 +1,12 @@
-{% extends '//mix/template/autohell.sh' %}
+{% extends '//mix/template/autorehell.sh' %}
 
 {% block fetch %}
 https://github.com/void-linux/musl-fts/archive/refs/tags/v1.2.7.tar.gz
 bce0b5de0cf2519a74fbfacead60369d
 {% endblock %}
 
-{% block bld_tool %}
-bin/auto/conf/2/71
-bin/auto/make/1/16
+{% block conv_ver %}
+2/71
 {% endblock %}
 
 {% block autoreconf %}

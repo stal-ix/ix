@@ -1,4 +1,4 @@
-{% extends '//mix/template/autohell.sh' %}
+{% extends '//mix/template/autorehell.sh' %}
 
 {% block fetch %}
 https://ftp.gnu.org/gnu/libidn/libidn2-2.3.1.tar.gz
@@ -14,9 +14,8 @@ lib/intl
 {% endif %}
 {% endblock %}
 
-{% block bld_tool %}
-bin/auto/conf/2/69
-bin/auto/make/1/16/1
+{% block make_ver %}
+1/16/1
 {% endblock %}
 
 {% block c_rename_symbol %}

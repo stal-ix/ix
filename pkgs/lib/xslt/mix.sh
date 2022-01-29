@@ -1,13 +1,8 @@
-{% extends '//mix/template/autohell.sh' %}
+{% extends '//mix/template/autorehell.sh' %}
 
 {% block fetch %}
 http://xmlsoft.org/sources/libxslt-1.1.34.tar.gz
 db8765c8d076f1b6caafd9f2542a304a
-{% endblock %}
-
-{% block bld_tool %}
-bin/auto/conf/2/69
-bin/auto/make/1/16
 {% endblock %}
 
 {% block lib_deps %}

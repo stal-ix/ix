@@ -1,4 +1,4 @@
-{% extends '//mix/template/autohell.sh' %}
+{% extends '//mix/template/autorehell.sh' %}
 
 {% block fetch %}
 https://github.com/libarchive/libarchive/archive/refs/tags/v3.5.2.tar.gz
@@ -20,11 +20,6 @@ lib/expat
 {% if bin %}
 lib/intl
 {% endif %}
-{% endblock %}
-
-{% block bld_tool %}
-bin/auto/conf/2/69
-bin/auto/make/1/16
 {% endblock %}
 
 {% block configure_flags %}

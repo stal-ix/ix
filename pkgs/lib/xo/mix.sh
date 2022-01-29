@@ -1,4 +1,4 @@
-{% extends '//mix/template/autohell.sh' %}
+{% extends '//mix/template/autorehell.sh' %}
 
 {% block fetch %}
 https://github.com/Juniper/libxo/archive/refs/tags/1.6.0.tar.gz
@@ -18,9 +18,8 @@ lib/bsd/overlay
 {% endif %}
 {% endblock %}
 
-{% block bld_tool %}
-bin/auto/conf/2/71
-bin/auto/make/1/16
+{% block conf_ver %}
+2/71
 {% endblock %}
 
 {% block autoreconf %}

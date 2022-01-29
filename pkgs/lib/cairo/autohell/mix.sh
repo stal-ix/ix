@@ -1,4 +1,4 @@
-{% extends '//mix/template/autohell.sh' %}
+{% extends '//mix/template/autorehell.sh' %}
 
 {% block fetch %}
 https://cairographics.org/snapshots/cairo-1.17.4.tar.xz
@@ -18,11 +18,6 @@ lib/pixman
 lib/opengl
 lib/freetype
 lib/fontconfig
-{% endblock %}
-
-{% block bld_tool %}
-bin/auto/conf/2/69
-bin/auto/make/1/16
 {% endblock %}
 
 {% block configure_flags %}

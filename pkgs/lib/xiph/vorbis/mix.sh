@@ -1,4 +1,4 @@
-{% extends '//mix/template/autohell.sh' %}
+{% extends '//mix/template/autorehell.sh' %}
 
 {% block fetch %}
 https://gitlab.xiph.org/xiph/vorbis/-/archive/v1.3.7/vorbis-v1.3.7.tar.bz2
@@ -8,11 +8,6 @@ a03aff8a9b32312aca7aea368f8265c5
 {% block lib_deps %}
 lib/c
 lib/xiph/ogg
-{% endblock %}
-
-{% block bld_tool %}
-bin/auto/conf/2/69
-bin/auto/make/1/16
 {% endblock %}
 
 {% block autoreconf %}

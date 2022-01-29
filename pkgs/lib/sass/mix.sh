@@ -1,13 +1,8 @@
-{% extends '//mix/template/autohell.sh' %}
+{% extends '//mix/template/autorehell.sh' %}
 
 {% block fetch %}
 https://github.com/sass/libsass/archive/refs/tags/3.6.5.tar.gz
 c49765b9b3824dcd4a7423225ca28bad
-{% endblock %}
-
-{% block bld_tool %}
-bin/auto/conf/2/69
-bin/auto/make/1/16
 {% endblock %}
 
 {% block lib_deps %}

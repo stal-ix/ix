@@ -1,4 +1,4 @@
-{% extends '//mix/template/autohell.sh' %}
+{% extends '//mix/template/autorehell.sh' %}
 
 {% block fetch %}
 https://github.com/tpoechtrager/cctools-port/archive/236a426c1205a3bfcf0dbb2e2faf2296f0a100e5.zip
@@ -16,8 +16,6 @@ lib/bsd/overlay
 
 {% block bld_tool %}
 lib/magic
-bin/auto/conf/2/69
-bin/auto/make/1/16
 {% endblock %}
 
 {% block std_box %}

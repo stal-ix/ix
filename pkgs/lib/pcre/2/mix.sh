@@ -1,4 +1,4 @@
-{% extends '//mix/template/autohell.sh' %}
+{% extends '//mix/template/autorehell.sh' %}
 
 {% block fetch %}
 https://github.com/PhilipHazel/pcre2/archive/refs/tags/pcre2-10.39.tar.gz
@@ -12,11 +12,6 @@ lib/c
 {% block bld_libs %}
 lib/z
 lib/bzip2
-{% endblock %}
-
-{% block bld_tool %}
-bin/auto/conf/2/69
-bin/auto/make/1/16
 {% endblock %}
 
 {% block autoreconf %}

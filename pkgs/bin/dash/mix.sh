@@ -7,9 +7,7 @@ c7016b513f701d88c70b3082eb183581
 
 {% block bld_libs %}
 lib/c
-lib/intl
 lib/edit
-lib/iconv
 {% endblock %}
 
 {% block cpp_defines %}

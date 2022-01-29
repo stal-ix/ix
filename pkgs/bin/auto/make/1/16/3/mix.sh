@@ -19,6 +19,3 @@ bld/perl
 bin/auto/libtool
 bin/m4
 {% endblock %}
-
-{% block autoreconf %}
-{% endblock %}

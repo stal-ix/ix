@@ -1,4 +1,4 @@
-{% extends '//mix/template/autohell.sh' %}
+{% extends '//mix/template/autorehell.sh' %}
 
 {% block fetch %}
 https://gitlab.freedesktop.org/xorg/lib/libpciaccess/-/archive/libpciaccess-0.16/libpciaccess-libpciaccess-0.16.tar.bz2
@@ -11,6 +11,4 @@ lib/c
 
 {% block bld_tool %}
 bin/auto/conf/xorg
-bin/auto/conf/2/69
-bin/auto/make/1/16
 {% endblock %}

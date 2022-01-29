@@ -1,8 +1,12 @@
-{% extends '//mix/template/autohell.sh' %}
+{% extends '//mix/template/autorehell.sh' %}
 
 {% block fetch %}
 https://github.com/libffi/libffi/archive/refs/tags/v3.4.2.tar.gz
 f2e272ec793571f28d52006ad14534c4
+{% endblock %}
+
+{% block lib_deps %}
+lib/c
 {% endblock %}
 
 {% block bld_libs %}
@@ -12,11 +16,11 @@ lib/linux
 {% endblock %}
 
 {% block bld_tool %}
-lib/magic
 bin/sed
+lib/magic
+bin/texinfo
 bin/auto/conf/2/69
 bin/auto/make/1/16
-bin/texinfo
 {% endblock %}
 
 {% block std_box %}
@@ -29,8 +33,4 @@ sh autogen.sh
 
 {% block env %}
 export COFLAGS="--with-system-ffi=yes --with-libffi-prefix=${out} \${COFLAGS}"
-{% endblock %}
-
-{% block lib_deps %}
-lib/c
 {% endblock %}

@@ -1,4 +1,4 @@
-{% extends '//mix/template/autohell.sh' %}
+{% extends '//mix/template/autorehell.sh' %}
 
 {% block fetch %}
 https://github.com/strukturag/libde265/archive/refs/tags/v1.0.8.tar.gz
@@ -8,11 +8,6 @@ https://github.com/strukturag/libde265/archive/refs/tags/v1.0.8.tar.gz
 {% block lib_deps %}
 lib/c
 lib/c++
-{% endblock %}
-
-{% block bld_tool %}
-bin/auto/conf/2/69
-bin/auto/make/1/16
 {% endblock %}
 
 {% block autoreconf %}

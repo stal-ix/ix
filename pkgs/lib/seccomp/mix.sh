@@ -1,4 +1,4 @@
-{% extends '//mix/template/autohell.sh' %}
+{% extends '//mix/template/autorehell.sh' %}
 
 {% block fetch %}
 https://github.com/seccomp/libseccomp/archive/refs/tags/v2.5.2.tar.gz
@@ -16,8 +16,10 @@ lib/linux
 {% block bld_tool %}
 bin/gperf
 bld/bash
-bin/auto/conf/2/71
-bin/auto/make/1/16
+{% endblock %}
+
+{% block conf_ver %}
+2/71
 {% endblock %}
 
 {% block autoreconf %}

@@ -1,4 +1,4 @@
-{% extends '//mix/template/autohell.sh' %}
+{% extends '//mix/template/autorehell.sh' %}
 
 {% block fetch %}
 https://github.com/libgd/libgd/archive/refs/tags/gd-2.3.3.tar.gz
@@ -15,11 +15,6 @@ lib/tiff
 lib/iconv
 lib/freetype
 lib/fontconfig
-{% endblock %}
-
-{% block bld_tool %}
-bin/auto/conf/2/69
-bin/auto/make/1/16
 {% endblock %}
 
 {% block autoreconf %}

@@ -1,4 +1,4 @@
-{% extends '//mix/template/autohell.sh' %}
+{% extends '//mix/template/autorehell.sh' %}
 
 {% block fetch %}
 https://github.com/gperftools/gperftools/archive/refs/tags/gperftools-2.9.1.tar.gz
@@ -11,11 +11,6 @@ lib/c++
 
 {% block bld_libs %}
 lib/mimalloc
-{% endblock %}
-
-{% block bld_tool %}
-bin/auto/conf/2/69
-bin/auto/make/1/16
 {% endblock %}
 
 {% block patch %}

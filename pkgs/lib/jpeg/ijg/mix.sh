@@ -1,13 +1,8 @@
-{% extends '//mix/template/autohell.sh' %}
+{% extends '//mix/template/autorehell.sh' %}
 
 {% block fetch %}
 http://www.ijg.org/files/jpegsrc.v9d.tar.gz
 ad7e40dedc268f97c44e7ee3cd54548a
-{% endblock %}
-
-{% block bld_tool %}
-bin/auto/conf/2/69
-bin/auto/make/1/16
 {% endblock %}
 
 {% block lib_deps %}

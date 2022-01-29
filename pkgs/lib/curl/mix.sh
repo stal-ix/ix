@@ -1,4 +1,4 @@
-{% extends '//mix/template/autohell.sh' %}
+{% extends '//mix/template/autorehell.sh' %}
 
 {% block fetch %}
 https://github.com/curl/curl/archive/refs/tags/curl-7_80_0.tar.gz
@@ -22,8 +22,10 @@ lib/darwin/framework/SystemConfiguration
 
 {% block bld_tool %}
 bin/groff
-bin/auto/conf/2/71
-bin/auto/make/1/16
+{% endblock %}
+
+{% block conf_ver %}
+2/71
 {% endblock %}
 
 {% block configure_flags %}

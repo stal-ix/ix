@@ -7,38 +7,31 @@ bin/pkg-config
 
 {% block step_patch %}
 {% block touch_yl %}
-find . | grep '\.[yl]$' | while read l; do
+find . -type f | grep '\.[yl]$' | while read l; do
     echo "TOUCH ${l}"
     touch ${l}
 done
 {% endblock %}
 
+{% if super().strip() %}
 (
 {{super()}}
 )
-
-{% block autoreconf %}
-if which libtoolize; then
-    echo "RUN LIBTOOLIZE"
-    libtoolize -cif
-fi
-
-if which autoreconf; then
-    echo "RUN AUTORECONF"
-    autoreconf -if
-fi
-{% endblock %}
+{% endif %}
 
 {% block patch_configure %}
-cat configure \
-    | sed -e "s|/usr/bin/||g"             \
-    | sed -e "s|/usr/|/nowhere/|g"        \
-    | sed -e "s|/bin/sh|$(which sh)|g"    \
-    | sed -e "s|/bin/arch|arch|g"         \
-    | sed -e "s|/bin/uname|uname|g"       \
-    | sed -e "s|/bin/machine|machine|g"   \
-    | sed -e "s|/bin/universe|universe|g" \
-    > _ && mv _ configure
+find . -type f -name configure | while read l; do
+    sed -e "s|/usr/bin/||g"             \
+        -e "s|/usr/|/nowhere/|g"        \
+        -e "s|/bin/sh|$(which sh)|g"    \
+        -e "s|/bin/arch|arch|g"         \
+        -e "s|/bin/uname|uname|g"       \
+        -e "s|/bin/machine|machine|g"   \
+        -e "s|/bin/universe|universe|g" \
+        ${l} > _ && mv _ ${l}
+
+    chmod +x ${l}
+done
 {% endblock %}
 {% endblock %}
 

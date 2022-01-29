@@ -1,4 +1,4 @@
-{% extends '//mix/template/autohell.sh' %}
+{% extends '//mix/template/autorehell.sh' %}
 
 {% block fetch %}
 https://ftp.gnu.org/gnu/nettle/nettle-3.7.3.tar.gz
@@ -16,8 +16,6 @@ lib/c
 
 {% block bld_tool %}
 bin/texinfo
-bin/auto/conf/2/69
-bin/auto/make/1/16
 {% endblock %}
 
 {% block c_rename_symbol %}

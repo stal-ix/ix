@@ -1,4 +1,4 @@
-{% extends '//mix/template/autohell.sh' %}
+{% extends '//mix/template/autorehell.sh' %}
 
 {% block fetch %}
 https://github.com/NLnetLabs/unbound/archive/refs/tags/release-1.13.2.tar.gz
@@ -14,8 +14,6 @@ lib/openssl
 {% block bld_tool %}
 bin/flex
 bin/bison/3/7
-bin/auto/conf/2/69
-bin/auto/make/1/16
 {% endblock %}
 
 {% block configure_flags %}

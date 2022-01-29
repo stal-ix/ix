@@ -1,4 +1,4 @@
-{% extends '//mix/template/autohell.sh' %}
+{% extends '//mix/template/autorehell.sh' %}
 
 {% block fetch %}
 https://github.com/libevent/libevent/archive/refs/tags/release-2.1.12-stable.tar.gz
@@ -11,8 +11,6 @@ lib/openssl
 {% endblock %}
 
 {% block bld_tool %}
-bin/auto/conf/2/69
-bin/auto/make/1/16
 bld/python
 {% endblock %}
 

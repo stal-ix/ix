@@ -1,4 +1,4 @@
-{% extends '//mix/template/autohell.sh' %}
+{% extends '//mix/template/autorehell.sh' %}
 
 {% block fetch %}
 https://github.com/linux-pam/linux-pam/archive/refs/tags/v1.5.2.tar.gz
@@ -6,11 +6,9 @@ https://github.com/linux-pam/linux-pam/archive/refs/tags/v1.5.2.tar.gz
 {% endblock %}
 
 {% block bld_tool %}
-bin/gettext
 bin/flex
 bin/byacc
-bin/auto/make/1/16
-bin/auto/conf/2/69
+bin/gettext
 {% endblock %}
 
 {% block autoreconf %}

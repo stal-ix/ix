@@ -1,13 +1,8 @@
-{% extends '//mix/template/autohell.sh' %}
+{% extends '//mix/template/autorehell.sh' %}
 
 {% block fetch %}
 http://dist.schmorp.de/libev/libev-4.33.tar.gz
 a3433f23583167081bf4acdd5b01b34f
-{% endblock %}
-
-{% block bld_tool %}
-bin/auto/conf/2/69
-bin/auto/make/1/16
 {% endblock %}
 
 {% block autoreconf %}

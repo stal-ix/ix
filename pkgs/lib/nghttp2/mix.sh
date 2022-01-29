@@ -1,4 +1,4 @@
-{% extends '//mix/template/autohell.sh' %}
+{% extends '//mix/template/autorehell.sh' %}
 
 {% block fetch %}
 https://github.com/nghttp2/nghttp2/archive/refs/tags/v1.46.0.tar.gz
@@ -17,11 +17,6 @@ lib/openssl
 lib/c++
 lib/xml2
 lib/jansson
-{% endblock %}
-
-{% block bld_tool %}
-bin/auto/conf/2/71
-bin/auto/make/1/16
 {% endblock %}
 
 {% block configure_flags %}
