@@ -11,7 +11,10 @@
 {% block patch_configure %}
 {% block autoreconf %}
 {% if not boot %}
-find . -type f -name configure -delete
+for x in configure config.guess config.sub install-sh; do
+    find . -type f -name ${x} -delete
+done
+
 libtoolize -ci
 autoreconf -if
 {% endif %}

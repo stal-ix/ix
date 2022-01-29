@@ -1,4 +1,4 @@
-{% extends '//mix/template/autohell.sh' %}
+{% extends '//mix/template/autorehell.sh' %}
 
 {% block fetch %}
 https://www.gnupg.org/ftp/gcrypt/gnutls/v3.7/gnutls-3.7.2.tar.xz
@@ -20,6 +20,10 @@ lib/seccomp
 lib/darwin/framework/Security
 {% endif %}
 lib/unistring
+{% endblock %}
+
+{% block bld_tool %}
+bin/gettext
 {% endblock %}
 
 {% block c_rename_symbol %}
