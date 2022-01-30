@@ -1,4 +1,4 @@
-{% extends '//mix/template/autohell.sh' %}
+{% extends '//mix/template/autorehell.sh' %}
 
 {% block fetch %}
 https://launchpad.net/libmetalink/trunk/libmetalink-0.1.3/+download/libmetalink-0.1.3.tar.xz
@@ -8,6 +8,10 @@ f2c097557e2487313cd0be62d55952de
 {% block lib_deps %}
 lib/c
 lib/expat
+{% endblock %}
+
+{% block bld_libs %}
+lib/xml2
 {% endblock %}
 
 {% block configure_flags %}

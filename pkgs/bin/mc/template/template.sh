@@ -1,4 +1,4 @@
-{% extends '//mix/template/autohell.sh' %}
+{% extends '//mix/template/autorehell.sh' %}
 
 {% block fetch %}
 http://ftp.midnight-commander.org/mc-4.8.27.tar.xz
@@ -15,6 +15,7 @@ lib/{{self.typ().strip()}}
 
 {% block bld_tool %}
 bld/perl
+bin/gettext
 {% endblock %}
 
 {% block run_deps %}
@@ -22,8 +23,8 @@ set/compress
 {% endblock %}
 
 {% block c_rename_symbol %}
-update_panels
 tilde_expand
+update_panels
 {% endblock %}
 
 {% block setup %}

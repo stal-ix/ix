@@ -1,4 +1,4 @@
-{% extends '//mix/template/autohell.sh' %}
+{% extends '//mix/template/autorehell.sh' %}
 
 {% block fetch %}
 https://sourceware.org/elfutils/ftp/0.186/elfutils-0.186.tar.bz2
@@ -24,6 +24,7 @@ lib/argp/standalone
 
 {% block bld_tool %}
 bin/m4
+bin/gettext
 {% endblock %}
 
 {% block patch %}

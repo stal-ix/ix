@@ -1,4 +1,4 @@
-{% extends '//mix/template/autohell.sh' %}
+{% extends '//mix/template/autorehell.sh' %}
 
 {% block fetch %}
 https://libbsd.freedesktop.org/releases/libbsd-0.11.2.tar.xz

@@ -1,20 +1,18 @@
 {% extends '//mix/template/autohell.sh' %}
 
 {% block fetch %}
-http://prdownloads.sourceforge.net/swig/swig-4.0.2.tar.gz
-7c3e46cb5af2b469722cafa0d91e127b
+https://ftp.gnu.org/gnu/gdbm/gdbm-1.19.tar.gz
+aeb29c6a90350a4c959cd1df38cd0a7e
 {% endblock %}
 
-{% block bld_libs %}
+{% block lib_deps %}
 lib/c
-lib/c++
-lib/pcre
 {% endblock %}
 
 {% block bld_tool %}
-bin/bison/3/7
+bin/bison/3/boot
 {% endblock %}
 
 {% block configure_flags %}
---with-boost=no
+--enable-libgdbm-compat
 {% endblock %}

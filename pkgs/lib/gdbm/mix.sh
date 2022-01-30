@@ -1,34 +1,7 @@
-{% extends '//mix/template/autohell.sh' %}
+{% extends '//lib/gdbm/t/mix.sh' %}
 
-{% block fetch %}
-https://ftp.gnu.org/gnu/gdbm/gdbm-1.19.tar.gz
-aeb29c6a90350a4c959cd1df38cd0a7e
-{% endblock %}
-
-{% block lib_deps %}
-lib/c
-{% endblock %}
-
-{% block bld_libs %}
-{% if bin %}
-lib/intl
-{% endif %}
-lib/readline
-{% endblock %}
-
-{% if lib %}
 {% block std_box %}
 bld/bootbox
-{% endblock %}
-{% endif %}
-
-{% block bld_tool %}
-bin/bison/3/boot
-{% endblock %}
-
-{% block configure_flags %}
---enable-libgdbm-compat
---with-readline
 {% endblock %}
 
 {% block install %}
