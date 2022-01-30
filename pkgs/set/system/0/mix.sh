@@ -4,6 +4,7 @@
 bin/iw
 bin/sud
 bin/killd
+#bin/priod
 bin/iwd/sys
 bin/runit/sys
 bin/dbus/runit

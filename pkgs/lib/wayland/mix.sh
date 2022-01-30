@@ -10,6 +10,10 @@ lib/c
 lib/ffi
 {% endblock %}
 
+{% block run_data %}
+aux/adwaita/cursors
+{% endblock %}
+
 {% block bld_libs %}
 lib/xml2
 lib/expat
@@ -30,6 +34,10 @@ lib/wayland
 {% block meson_flags %}
 documentation=false
 tests=false
+{% endblock %}
+
+{% block cpp_defines %}
+XCURSORPATH=\\\"~/.icons:~/.cursors:${ADWAITA_CURSORS}\\\"
 {% endblock %}
 
 {% block install %}

@@ -47,3 +47,7 @@ zwp_linux_dmabuf_feedback_v1_interface
 
 NSEC_PER_SEC
 {% endblock %}
+
+{% block patch %}
+>xcursor/xcursor.c
+{% endblock %}

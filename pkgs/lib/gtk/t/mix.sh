@@ -21,6 +21,6 @@ lib/wayland/protocols
 {% endblock %}
 
 {% block run_data %}
-aux/adwaita-icon-theme
+aux/adwaita/icons
 aux/hicolor-icon-theme
 {% endblock %}
