@@ -34,6 +34,8 @@ export CPPFLAGS="-w ${CPPFLAGS}"
 {% endblock %}
 
 {% block patch %}
+rm autogen.sh
+
 (base64 -d | patch -p1) << EOF
 {% include '00.diff/base64' %}
 EOF

@@ -9,3 +9,7 @@ d703ed4913fcfb40021bd3d4d35e00b6
 lib/c
 lib/z
 {% endblock %}
+
+{% block patch %}
+rm autogen.sh
+{% endblock %}

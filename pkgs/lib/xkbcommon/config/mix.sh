@@ -1,4 +1,4 @@
-{% extends '//mix/template/autohell.sh' %}
+{% extends '//mix/template/autorehell.sh' %}
 
 {% block fetch %}
 http://www.x.org/releases/individual/data/xkeyboard-config/xkeyboard-config-2.24.tar.bz2
@@ -6,6 +6,10 @@ http://www.x.org/releases/individual/data/xkeyboard-config/xkeyboard-config-2.24
 {% endblock %}
 
 {% block make_no_thrs %}{% endblock %}
+
+{% block autoreconf %}
+NOCONFIGURE=1 sh autogen.sh
+{% endblock %}
 
 {% block bld_libs %}
 lib/c
@@ -15,6 +19,7 @@ lib/c
 lib/xslt
 bin/gettext
 lib/intl/tool
+bin/auto/conf/xorg
 {% endblock %}
 
 {% block configure_flags %}

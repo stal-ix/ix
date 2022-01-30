@@ -10,6 +10,10 @@ lib/c
 lib/iconv
 {% endblock %}
 
+{% block autoreconf %}
+sh autogen.sh --skip-gnulib
+{% endblock %}
+
 {% block bld_tool %}
 bin/auto/conf/2/71
 bin/auto/make/1/16

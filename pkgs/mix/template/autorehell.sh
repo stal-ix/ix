@@ -15,8 +15,12 @@ for x in configure config.guess config.sub install-sh; do
     find . -type f -name ${x} -delete
 done
 
-libtoolize -ci
-autoreconf -if
+if test -f autogen.sh; then
+    sh autogen.sh
+else
+    libtoolize -ci
+    autoreconf -if
+fi
 {% endif %}
 {% endblock %}
 {{super()}}
