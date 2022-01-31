@@ -20,6 +20,10 @@ lib/darwin/framework/SystemConfiguration
 {% endif %}
 {% endblock %}
 
+{% block run_data %}
+aux/ca-bundle
+{% endblock %}
+
 {% block bld_tool %}
 bin/groff
 {% endblock %}
@@ -29,5 +33,6 @@ bin/groff
 {% endblock %}
 
 {% block configure_flags %}
+--with-ca-bundle=${CA_BUNDLE}
 --enable-manual
 {% endblock %}
