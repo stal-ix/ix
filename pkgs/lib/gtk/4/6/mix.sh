@@ -9,3 +9,19 @@ https://gitlab.gnome.org/GNOME/gtk/-/archive/4.6.0/gtk-4.6.0.tar.bz2
 lib/sass/c
 {{super()}}
 {% endblock %}
+
+{% block install %}
+exit 1
+{% endblock %}
+
+{% block step_patch %}
+find . -type f -name '*.wrap' -delete
+
+find . -type f -name meson.build | while read l; do
+# danger, Will Robinson!
+cat ${l} \
+| sed -e 's|shared_library|library|g' \
+| sed -e 's|shared_module|library|g' \
+> _ && mv _ ${l}
+done
+{% endblock %}

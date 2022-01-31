@@ -28,8 +28,6 @@ fcntl.fcntl(1, fcntl.F_SETFL, 0)
 
 import core.main as cm
 
-os.system(f'chrt -i -p 0 {os.getpid()}')
-
 
 if __name__ == '__main__':
     sys.exit(cm.main(sys.argv, os.path.normpath(os.path.abspath(__file__))))

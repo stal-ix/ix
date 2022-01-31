@@ -216,4 +216,5 @@ class Executor:
 
 
 def execute(g):
+    os.system(f'chrt -i -p 0 {os.getpid()}')
     asyncio.run(Executor(g['nodes']).visit_all(g['targets']))

@@ -54,15 +54,20 @@ def fetch_url_impl(url, out):
         print('')
 
 
-def fetch_url_wget(url, out):
+def fetch_url_wget_sys(url, out):
     return subprocess.check_call(['/usr/bin/wget', '-O', out, url], shell=False)
+
+
+def fetch_url_wget_mix(url, out):
+    return subprocess.check_call(['/mix/realm/boot/bin/wget', '--no-check-certificate', '-O', out, url], shell=False)
 
 
 def fetch_url(url, out):
     def iter_meth():
         while True:
+            yield fetch_url_wget_mix
             yield fetch_url_impl
-            yield fetch_url_wget
+            yield fetch_url_wget_sys
 
     for meth in iter_meth():
         try:

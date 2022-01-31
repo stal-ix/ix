@@ -32,3 +32,9 @@ lib/wayland/protocols
 {% block patch %}
 sed -e 's|.*spdlog.*asString.*what.*||' -i src/bar.cpp
 {% endblock %}
+
+{% block meson_flags %}
+dbusmenu-gtk=enabled
+gtk-layer-shell=enabled
+rfkill=enabled
+{% endblock %}
