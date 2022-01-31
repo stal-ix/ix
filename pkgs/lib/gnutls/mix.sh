@@ -22,6 +22,10 @@ lib/darwin/framework/Security
 lib/unistring
 {% endblock %}
 
+{% block run_data %}
+aux/ca-bundle
+{% endblock %}
+
 {% block bld_tool %}
 bin/gettext
 {% endblock %}
@@ -32,6 +36,7 @@ verbose
 {% endblock %}
 
 {% block configure_flags %}
+--with-default-trust-store-file=${CA_BUNDLE}
 {% if target.os == 'darwin' %}
 --disable-hardware-acceleration
 {% endif %}

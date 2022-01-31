@@ -1,10 +1,5 @@
 {% extends '//mix/template/make.sh' %}
 
-{% block fetch %}
-https://www.openssl.org/source/openssl-3.0.0.tar.gz
-43c5ab628b7ab899d7cd4a4c7fe4067f
-{% endblock %}
-
 {% block lib_deps %}
 lib/c
 {% endblock %}
@@ -19,9 +14,17 @@ lib/linux
 bld/perl
 {% endblock %}
 
+{% block run_data %}
+aux/ca-bundle
+{% endblock %}
+
 {% block setup %}
 export AR=ar
 export RANLIB=ranlib
+{% endblock %}
+
+{% block make_install_target %}
+install_sw
 {% endblock %}
 
 {% block configure %}
@@ -36,7 +39,7 @@ no-dso
 no-tests
 
 --prefix="${out}"
---openssldir="${out}"
+--openssldir={% block openssl_cert_dir %}"${OPENSSL_CERT_DIR}"{% endblock %}
 {% endset %}
 
 PLATFORM_darwin_arm64="darwin64-arm64-cc"

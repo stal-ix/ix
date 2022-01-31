@@ -17,6 +17,14 @@ media-ffmpeg=disabled
 media-gstreamer=disabled
 {% endblock %}
 
+{% block patch %}
+(base64 -d | patch -p1) << EOF
+{% include '00.diff/base64' %}
+EOF
+
+{{super()}}
+{% endblock %}
+
 {% block env %}
 export CMFLAGS="-DUSE_GTK4=ON \${CMFLAGS}"
 {% endblock %}
