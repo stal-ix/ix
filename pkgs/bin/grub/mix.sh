@@ -31,8 +31,6 @@ export TARGET_STRIP=$(which llvm-strip)
 {% endblock %}
 
 {% block configure_flags %}
---with-platform=efi
---disable-efiemu
 --with-bootdir=/boot
 --with-grubdir=grub
 {% endblock %}
