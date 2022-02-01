@@ -1,8 +1,8 @@
 {% extends '//mix/template/make.sh' %}
 
 {% block fetch %}
-https://github.com/pg83/sbase/archive/2c2a7f54ab55a022a617e510b6e00c3e2736fabd.zip
-003346537cccb2b6444516b3fc1c027f
+https://github.com/pg83/sbase/archive/refs/tags/v1.tar.gz
+sha:61567de6a9f954b19f81c51b7cc216a030801224ef2b65a2593cb172ff97c2f8
 {% endblock %}
 
 {% block c_rename_symbol %}

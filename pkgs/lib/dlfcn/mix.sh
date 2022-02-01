@@ -1,8 +1,8 @@
 {% extends '//mix/template/make.sh' %}
 
 {% block fetch %}
-https://github.com/pg83/dlopen/archive/7ce9986fc51a0de693823c684b0da878a77af3b0.zip
-sha:c6367885a7484522e014ac5f7d202a416db017ac68ab04c15212743b84cfd61f
+https://github.com/pg83/dlopen/archive/refs/tags/v1.0.0.tar.gz
+sha:af9c658f30ac5d54a0051c0158ae1a2d1ba87ce9155dbec039ec789dc90999b4
 {% endblock %}
 
 {% block lib_deps %}

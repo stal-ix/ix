@@ -1,8 +1,8 @@
 {% extends '//mix/template/py.py' %}
 
 {% block fetch %}
-https://github.com/pg83/shutil/archive/5870f53565d44157759c8a37f936914af1b7f26a.zip
-sha:27937450d8e4dafbfd2575070a71e274034f6ada245fdc0ee830891032a90edb
+https://github.com/pg83/shutil/archive/refs/tags/v1.tar.gz
+sha:67825e48717c64c2d46d785cfcf46c997b6636cfc5693e34f4d1598aa5ea974a
 {% endblock %}
 
 {% block bld_libs %}
@@ -13,7 +13,7 @@ boot/1/env
 {% endblock %}
 
 {% block script %}
-extract0 ${src}/*.zip && cd shutil*
+extract0 ${src}/*.gz && cd shutil*
 
 export PATH="${PWD}:${PATH}"
 

@@ -1,8 +1,8 @@
 {% extends '//mix/template/make.sh' %}
 
 {% block fetch %}
-https://github.com/pg83/heirloom/archive/a47c4acf9fb43b89f9fb0afdcf9008121d50d806.zip
-19b59804cf21bf9bd266d9cb261ecb2c
+https://github.com/pg83/heirloom/archive/refs/tags/v1.tar.gz
+sha:9bb2c524545ab88d5c7001f3be2f8228316577d84640db0fbde2b399bc81b147
 {% endblock %}
 
 {% block bld_libs %}

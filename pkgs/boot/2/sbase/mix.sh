@@ -17,7 +17,7 @@ boot/1/env
 {% endblock %}
 
 {% block unpack %}
-extract0 ${src}/*.zip; cd *
+extract0 ${src}/*.gz; cd *
 {% endblock %}
 
 {% block setup %}
