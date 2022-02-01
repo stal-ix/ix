@@ -12,5 +12,8 @@ lib/z
 
 {% block configure %}
 {{super()}}
-sed -e "s|/usr/local|${out}|" -i Makefile.local
+sed -e "s|/usr/local|${out}|" \
+    -e "s|/nowhere/local|${out}|" \
+    -e "s|/nowhere|${out}|" \
+    -i Makefile.local
 {% endblock %}

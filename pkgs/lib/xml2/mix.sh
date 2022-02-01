@@ -1,4 +1,4 @@
-{% extends '//mix/template/autohell.sh' %}
+{% extends '//mix/template/autorehell.sh' %}
 
 {% block fetch %}
 http://xmlsoft.org/sources/libxml2-2.9.12.tar.gz
@@ -16,6 +16,10 @@ lib/iconv
 --with-modules=off
 --disable-python
 --without-python
+{% endblock %}
+
+{% block autoreconf %}
+NOCONFIGURE=yes sh autogen.sh
 {% endblock %}
 
 {% block env %}

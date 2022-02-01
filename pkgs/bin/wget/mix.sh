@@ -10,12 +10,17 @@ lib/c
 lib/intl
 lib/pcre/2
 lib/gnutls
+lib/c-ares
 lib/metalink
 {% endblock %}
 
 {% block bld_tool %}
 bin/gettext
 bin/auto/conf/archive
+{% endblock %}
+
+{% block configure_flags %}
+--with-cares
 {% endblock %}
 
 {% block patch %}
