@@ -6,6 +6,6 @@ export CXXSTD="-std={% block cplpl_std %}c++14{% endblock %}"
 export CXXFLAGS="${CXXSTD} ${CXXFLAGS}"
 {% endblock %}
 
-{% block env %}
+{% block env_lib %}
 export CXXFLAGS="${CXXSTD} \${CXXFLAGS}"
 {% endblock %}

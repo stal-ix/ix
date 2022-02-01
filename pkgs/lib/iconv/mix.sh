@@ -15,7 +15,7 @@ bld/bootbox
 rm ${out}/lib/libcharset.a
 {% endblock %}
 
-{% block env %}
+{% block env_lib %}
 export COFLAGS="--with-libiconv-prefix=${out} --with-iconv=${out} \${COFLAGS}"
 {% endblock %}
 

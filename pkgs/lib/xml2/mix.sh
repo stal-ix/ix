@@ -22,6 +22,6 @@ lib/iconv
 NOCONFIGURE=yes sh autogen.sh
 {% endblock %}
 
-{% block env %}
+{% block env_lib %}
 export COFLAGS="--with-libxml2-prefix=${out} \${COFLAGS}"
 {% endblock %}

@@ -9,7 +9,7 @@ https://www.bytereef.org/software/mpdecimal/releases/mpdecimal-2.5.1.tar.gz
 --enable-cxx=no
 {% endblock %}
 
-{% block env %}
+{% block env_lib %}
 export COFLAGS="--with-system-libmpdec=yes --with-libmpdec-prefix=${out} \${COFLAGS}"
 {% endblock %}
 

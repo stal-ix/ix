@@ -34,6 +34,6 @@ locale_charset
 --disable-libasprintf
 {% endblock %}
 
-{% block env %}
+{% block env_lib %}
 export COFLAGS="--with-libintl-prefix=${out} \${COFLAGS}"
 {% endblock %}

@@ -11,6 +11,6 @@ lib/gmp
 lib/mpfr
 {% endblock %}
 
-{% block env %}
+{% block env_lib %}
 export COFLAGS="--with-mpc=${out} \${COFLAGS}"
 {% endblock %}

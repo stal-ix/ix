@@ -14,6 +14,6 @@ for i in *.a; do
 done
 {% endblock %}
 
-{% block env %}
+{% block env_lib %}
 export COFLAGS="--with-curses=${out} --with-ncurses=${out} \${COFLAGS}"
 {% endblock %}

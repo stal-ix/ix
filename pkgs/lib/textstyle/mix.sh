@@ -15,6 +15,6 @@ lib/iconv
 cd libtextstyle
 {% endblock %}
 
-{% block env %}
+{% block env_lib %}
 export COFLAGS="--with-libtextstyle-prefix=${out} \${COFLAGS}"
 {% endblock %}

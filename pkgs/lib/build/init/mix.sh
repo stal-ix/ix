@@ -1,6 +1,6 @@
 {% extends '//mix/template/py.py' %}
 
-{% block env %}
+{% block env_lib %}
 export CFLAGS=
 export LDFLAGS=
 export OPTFLAGS=

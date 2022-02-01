@@ -32,6 +32,6 @@ ZSTD_BUILD_STATIC=ON
 ZSTD_BUILD_TESTS=OFF
 {% endblock %}
 
-{% block env %}
+{% block env_lib %}
 export COFLAGS="--with-zstd=${out} \${COFLAGS}"
 {% endblock %}

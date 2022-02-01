@@ -4,7 +4,7 @@
 lib/darwin/c
 {% endblock %}
 
-{% block env %}
+{% block env_lib %}
 {% set framework %}
 {% block framework %}
 {% endblock %}

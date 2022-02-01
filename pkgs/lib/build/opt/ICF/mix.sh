@@ -1,5 +1,5 @@
 {% extends '//mix/template/py.py' %}
 
-{% block env %}
+{% block env_lib %}
 export OPTFLAGS="-faddrsig -ffunction-sections -fdata-sections -Wl,-icf=safe ${OPTFLAGS}"
 {% endblock %}

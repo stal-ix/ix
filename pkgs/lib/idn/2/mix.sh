@@ -26,6 +26,6 @@ error
 automake --add-missing
 {% endblock %}
 
-{% block env %}
+{% block env_lib %}
 export COFLAGS="--with-libidn2=${out} \${COFLAGS}"
 {% endblock %}

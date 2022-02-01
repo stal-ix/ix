@@ -23,6 +23,6 @@ cat terminal.c | grep -v 'char PC' > _ && mv _ terminal.c
 --with-curses
 {% endblock %}
 
-{% block env %}
+{% block env_lib %}
 export COFLAGS="--with-installed-readline=${out} --with-readline=${out} \${COFLAGS}"
 {% endblock %}

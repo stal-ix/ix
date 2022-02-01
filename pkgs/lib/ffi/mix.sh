@@ -31,6 +31,6 @@ bld/bootbox
 sh autogen.sh
 {% endblock %}
 
-{% block env %}
+{% block env_lib %}
 export COFLAGS="--with-system-ffi=yes --with-libffi-prefix=${out} \${COFLAGS}"
 {% endblock %}

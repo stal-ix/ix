@@ -35,6 +35,6 @@ V=1
 locale_charset
 {% endblock %}
 
-{% block env %}
+{% block env_lib %}
 export COFLAGS="--with-libunistring-prefix=${out} \${COFLAGS}"
 {% endblock %}

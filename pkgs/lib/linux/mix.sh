@@ -29,6 +29,6 @@ rm usr/include/Makefile
 cp -rv usr/include ${out}/
 {% endblock %}
 
-{% block env %}
+{% block env_lib %}
 export CPPFLAGS="-isystem ${out}/include \${CPPFLAGS}"
 {% endblock %}

@@ -58,6 +58,6 @@ COMPILER_RT_CAN_EXECUTE_TESTS=OFF
 COMPILER_RT_EXTERNALIZE_DEBUGINFO=OFF
 {% endblock %}
 
-{% block env %}
+{% block env_lib %}
 export LDFLAGS="-resource-dir=${out} \${LDFLAGS}"
 {% endblock %}

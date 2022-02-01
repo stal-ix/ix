@@ -107,7 +107,7 @@ find ${out}/ | grep __pycache__ | xargs rm -rf
 find ${out}/bin/ ${out}/share/ | grep '\.[ao]$' | xargs rm{% if lib %} || true{% endif %}
 {% endblock %}
 
-{% block env %}
+{% block env_lib %}
 {% if lib %}
 export TARGET_PYTHONHOME="${out}"
 export CPPFLAGS="-I$(echo ${out}/include/python*) \${CPPFLAGS}"

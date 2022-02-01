@@ -27,6 +27,6 @@ PCRE_SUPPORT_PCREGREP_JIT=ON
 PCRE_SUPPORT_UNICODE_PROPERTIES=ON
 {% endblock %}
 
-{% block env %}
+{% block env_lib %}
 export COFLAGS="--with-pcre=${out} \${COFLAGS}"
 {% endblock %}

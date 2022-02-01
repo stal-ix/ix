@@ -14,7 +14,7 @@ lib/gmp
 export ac_cv_have_decl___builtin_ffs=yes
 {% endblock %}
 
-{% block env %}
+{% block env_lib %}
 export COFLAGS="--with-isl=${out} \${COFLAGS}"
 {% endblock %}
 

@@ -19,6 +19,6 @@ lib/openssl
 --with-dbm=gdbm
 {% endblock %}
 
-{% block env %}
+{% block env_lib %}
 export COFLAGS="--with-apr-util=${out}/lib/bin/apu-1-config \${COFLAGS}"
 {% endblock %}

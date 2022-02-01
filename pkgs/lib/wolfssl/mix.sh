@@ -23,7 +23,7 @@ sh autogen.sh
 --enable-tls13
 {% endblock %}
 
-{% block env %}
+{% block env_lib %}
 export COFLAGS="--with-wolfssl=${out} \${COFLAGS}"
 {% endblock %}
 

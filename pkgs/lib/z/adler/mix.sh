@@ -25,7 +25,7 @@ cd ${out}/bin
 ln -s minigzip gzip
 {% endblock %}
 
-{% block env %}
+{% block env_lib %}
 export COFLAGS="--with-z=${out} \${COFLAGS}"
 {% endblock %}
 

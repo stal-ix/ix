@@ -34,6 +34,6 @@ export LUA_PATH=
 {{super()}}
 {% endblock %}
 
-{% block env %}
+{% block env_lib %}
 export LUA_PATH="${out}/share/lua:\${LUA_PATH}"
 {% endblock %}

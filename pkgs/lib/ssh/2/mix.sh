@@ -15,6 +15,6 @@ lib/openssl
 bld/bootbox
 {% endblock %}
 
-{% block env %}
+{% block env_lib %}
 export COFLAGS="--with-libssh2=${out} \${COFLAGS}"
 {% endblock %}

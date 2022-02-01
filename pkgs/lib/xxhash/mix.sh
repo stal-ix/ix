@@ -27,6 +27,6 @@ sed -e 's|libxxhash.a libxxhash|libxxhash.a|' -i Makefile
 make NO_C90_TEST=true test
 {% endblock %}
 
-{% block env %}
+{% block env_lib %}
 export COFLAGS="--with-xxhash=${out} --with-libxxhash-prefix=${out} \${COFLAGS}"
 {% endblock %}

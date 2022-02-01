@@ -15,6 +15,6 @@ bin/texinfo
 bin/auto/conf/archive
 {% endblock %}
 
-{% block env %}
+{% block env_lib %}
 export COFLAGS="--with-mpfr=${out} --with-libmpfr-prefix=${out} \${COFLAGS}"
 {% endblock %}

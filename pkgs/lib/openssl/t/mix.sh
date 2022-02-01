@@ -51,7 +51,7 @@ perl ./Configure \
     {{mix.fix_list(openssl_conf_opts)}}
 {% endblock %}
 
-{% block env %}
+{% block env_lib %}
 export SSL_DIR="${out}"
 export COFLAGS="--with-ssl=${out} --with-openssl=${out} --with-openssldir=${out} --with-ssl-dir=$out \${COFLAGS}"
 {% endblock %}

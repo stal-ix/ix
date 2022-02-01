@@ -13,7 +13,7 @@ lib/darwin/framework/CoreFoundation
 {% endif %}
 {% endblock %}
 
-{% block env %}
+{% block env_lib %}
 export COFLAGS="--with-libgc-prefix=${out} \${COFLAGS}"
 {% endblock %}
 

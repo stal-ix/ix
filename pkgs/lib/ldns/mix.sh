@@ -14,6 +14,6 @@ lib/openssl
 --with-drill
 {% endblock %}
 
-{% block env %}
+{% block env_lib %}
 export COFLAGS="--with-ldns=${out} \${COFLAGS}"
 {% endblock %}

@@ -31,6 +31,6 @@ mv nsss/* .
 rm -r nsss
 {% endblock %}
 
-{% block env %}
+{% block env_lib %}
 export CPPFLAGS="-isystem ${out}/include/nsss \${CPPFLAGS}"
 {% endblock %}

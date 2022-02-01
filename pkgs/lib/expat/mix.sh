@@ -30,6 +30,6 @@ EOF
 chmod +x install_name_tool
 {% endblock %}
 
-{% block env %}
+{% block env_lib %}
 export COFLAGS="--with-expat=${out} --with-libexpat-prefix=${out} --with-libexpat=${out} --with-system-expat=yes \${COFLAGS}"
 {% endblock %}

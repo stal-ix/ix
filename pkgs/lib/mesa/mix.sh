@@ -110,6 +110,6 @@ done
 ln -s big/libfullgl.a .
 {% endblock %}
 
-{% block env %}
+{% block env_lib %}
 export COFLAGS="--with-gallium=${out} \${COFLAGS}"
 {% endblock %}

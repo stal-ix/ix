@@ -12,6 +12,6 @@ lib/c++
 lib/openssl
 {% endblock %}
 
-{% block env %}
+{% block env_lib %}
 export COFLAGS="--with-libssh=${out} \${COFLAGS}"
 {% endblock %}

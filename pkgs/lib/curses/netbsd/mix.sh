@@ -34,7 +34,7 @@ all-static
 install-static
 {% endblock %}
 
-{% block env %}
+{% block env_lib %}
 export COFLAGS="--with-curses=${out} --with-ncurses=${out} \${COFLAGS}"
 {% endblock %}
 

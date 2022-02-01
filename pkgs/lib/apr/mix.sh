@@ -15,7 +15,7 @@ for x in "bin/apr-1-config" "build-1/libtool" "build-1/apr_rules.mk"; do
 done
 {% endblock %}
 
-{% block env %}
+{% block env_lib %}
 export COFLAGS="--with-apr=${out}/lib/bin/apr-1-config \${COFLAGS}"
 {% endblock %}
 

@@ -43,7 +43,7 @@ EOF
 )
 {% endblock %}
 
-{% block env %}
+{% block env_lib %}
 export CMFLAGS="-DLIBCXX_HAS_MUSL_LIBC=yes \${CMFLAGS}"
 export CPPFLAGS="${PICFLAGS} -isystem ${out}/include \${CPPFLAGS}"
 export LDFLAGS="-static \${LDFLAGS}"

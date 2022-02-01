@@ -18,7 +18,7 @@ CARES_STATIC=ON
 CARES_SHARED=OFF
 {% endblock %}
 
-{% block env %}
+{% block env_lib %}
 export COFLAGS="--with-ares=${out} --enable-ares=${out} \${COFLAGS}"
 export LDFLAGS="-lresolv \${LDFLAGS}"
 {% endblock %}

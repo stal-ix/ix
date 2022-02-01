@@ -67,6 +67,6 @@ EOF
 chmod +x clang++
 {% endblock %}
 
-{% block env %}
+{% block env_lib %}
 export CPPFLAGS="-I${out}/include/c++/11.2.0/x86_64-pc-linux-musl -I${out}/include/c++/11.2.0 \${CPPFLAGS}"
 {% endblock %}

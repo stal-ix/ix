@@ -1,5 +1,14 @@
 cat << EOF > ${out}/env
 {% block env %}
+{% if lib %}
+{% block env_lib %}
+{% endblock %}
+{% endif %}
+
+{% if bin %}
+{% block env_bin %}
+{% endblock %}
+{% endif %}
 {% endblock %}
 EOF
 

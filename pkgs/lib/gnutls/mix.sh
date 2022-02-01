@@ -52,6 +52,6 @@ EOF
 {% endif %}
 {% endblock %}
 
-{% block env %}
+{% block env_lib %}
 export COFLAGS="--with-gnutls=${out} \${COFLAGS}"
 {% endblock %}

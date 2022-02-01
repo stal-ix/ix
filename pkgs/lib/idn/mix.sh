@@ -13,6 +13,6 @@ lib/intl
 {% endif %}
 {% endblock %}
 
-{% block env %}
+{% block env_lib %}
 export COFLAGS="--with-libidn=${out} \${COFLAGS}"
 {% endblock %}

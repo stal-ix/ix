@@ -22,6 +22,6 @@ sh autogen.sh
 ln -s $(which python3) python
 {% endblock %}
 
-{% block env %}
+{% block env_lib %}
 export COFLAGS="--with-libevent=${out} \${COFLAGS}"
 {% endblock %}

@@ -58,7 +58,7 @@ rm *.o
 ranlib *.a
 {% endblock %}
 
-{% block env %}
+{% block env_lib %}
 export CPPFLAGS="-fno-pic -fno-pie -isystem ${out}/include \${CPPFLAGS}"
 export LDFLAGS="-static \${LDFLAGS}"
 export CMFLAGS="-DLIBCXX_ENABLE_LOCALIZATION=OFF \${CMFLAGS}"

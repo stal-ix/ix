@@ -32,6 +32,6 @@ Cflags: -I\${includedir}
 EOF
 {% endblock %}
 
-{% block env %}
+{% block env_lib %}
 export COFLAGS="--with-ssl=${out} --with-openssl=${out} --with-openssldir=${out} --with-ssl-dir=${out} \${COFLAGS}"
 {% endblock %}

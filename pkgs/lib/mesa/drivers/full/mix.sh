@@ -4,6 +4,6 @@
 lib/mesa
 {% endblock %}
 
-{% block env %}
+{% block env_lib %}
 export LDFLAGS="-Wl,--whole-archive -lfullgl -Wl,--no-whole-archive \${LDFLAGS}"
 {% endblock %}

@@ -53,6 +53,6 @@ scons \
 scons install
 {% endblock %}
 
-{% block env %}
+{% block env_lib %}
 export COFLAGS="--with-serf=${out} --with-libserf=${out} \${COFLAGS}"
 {% endblock %}

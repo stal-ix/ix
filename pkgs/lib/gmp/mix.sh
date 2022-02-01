@@ -17,6 +17,6 @@ lib/c
 bin/m4
 {% endblock %}
 
-{% block env %}
+{% block env_lib %}
 export COFLAGS="--with-gmp=${out} --with-libgmp-prefix=${out} \${COFLAGS}"
 {% endblock %}

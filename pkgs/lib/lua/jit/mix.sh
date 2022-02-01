@@ -19,7 +19,7 @@ cd ${out}/include; mv luajit-2.0/* ./
 src/lib_package.c
 {% endblock %}
 
-{% block env %}
+{% block env_lib %}
 export LUA_INCLUDE_DIR="${out}/include"
 export CMFLAGS="-DWITH_LUA_ENGINE=LuaJIT \${CMFLAGS}"
 {% endblock %}

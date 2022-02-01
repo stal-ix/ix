@@ -17,6 +17,6 @@ lib/readline
 SQLITE_OMIT_LOAD_EXTENSION=1
 {% endblock %}
 
-{% block env %}
+{% block env_lib %}
 export COFLAGS="--with-sqlite3=${out} \${COFLAGS}"
 {% endblock %}

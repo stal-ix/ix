@@ -68,6 +68,6 @@ find . -type f -name '*.pc' | while read l; do
 done
 {% endblock %}
 
-{% block env %}
+{% block env_lib %}
 export CPPFLAGS="-I${out}/include/efivar \${CPPFLAGS}"
 {% endblock %}

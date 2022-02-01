@@ -25,6 +25,6 @@ EOF
 {{super()}}
 {% endblock %}
 
-{% block env %}
+{% block env_lib %}
 export CMFLAGS="-DUSE_GTK4=ON \${CMFLAGS}"
 {% endblock %}
