@@ -1,8 +1,8 @@
 {% extends '//mix/template/c_std.sh' %}
 
 {% block fetch %}
-https://github.com/libcxxrt/libcxxrt/archive/14bf5d5526056ae1cc16f03b7b8e96108a1e38d0.zip
-d5724a37b8d640f67f09cbbdd831a528
+https://github.com/libcxxrt/libcxxrt/archive/fd484be8d1e94a1fcf6bc5c67e5c07b65ada19b6.tar.gz
+sem:a20b0a1ae9952bb6141af8828b1e2d28
 {% endblock %}
 
 {% block lib_deps %}

@@ -131,6 +131,7 @@ class Executor:
         self.o = group_by_out(nodes)
         self.l = []
         self.f = set()
+        self.store_cache = False
 
     async def visit_lst(self, l):
         await gather(self.visit_node(self.o[n]) for n in l)
@@ -180,7 +181,7 @@ class Executor:
                 self.f.remove(o)
                 self.in_fly()
 
-        if cached:
+        if cached and self.store_cache:
             self.l.append(asyncio.create_task(asyncio.to_thread(self.store, n)))
 
     def execute_node(self, n):
