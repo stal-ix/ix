@@ -12,7 +12,6 @@ lib/c
 {% endblock %}
 
 {% block patch %}
-#cat patches/00* | patch -p1
 cat patches/01* | patch -p1
 {% endblock %}
 

@@ -1,6 +1,7 @@
 import os
 import zipfile
 import tarfile
+import functools
 import subprocess
 
 import urllib.error as ue
@@ -54,20 +55,18 @@ def fetch_url_impl(url, out):
         print('')
 
 
-def fetch_url_wget_sys(url, out):
-    return subprocess.check_call(['/usr/bin/wget', '-O', out, url], shell=False)
-
-
-def fetch_url_wget_mix(url, out):
-    return subprocess.check_call(['/mix/realm/boot/bin/wget', '--no-check-certificate', '-O', out, url], shell=False)
+def fetch_url_wget(wget, url, out):
+    return subprocess.check_call([wget, '--no-check-certificate', '-O', out, url], shell=False)
 
 
 def fetch_url(url, out):
     def iter_meth():
         while True:
-            yield fetch_url_wget_mix
+            for w in ['/mix/realm/boot/bin/wget', '/usr/bin/wget']:
+                if os.path.isfile(w):
+                    yield functools.partial(fetch_url_wget, w)
+
             yield fetch_url_impl
-            yield fetch_url_wget_sys
 
     for meth in iter_meth():
         try:

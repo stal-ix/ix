@@ -63,6 +63,8 @@ export TMPDIR=${PWD}/tmp
 if command -v find; then
     (
         find ${out} -type f -name '*.la'
+        find ${out} -type f -name '*.so'
+        find ${out} -type f -name '*.so.*'
         find ${out} -xtype l
     ) | while read l; do
         rm ${l}

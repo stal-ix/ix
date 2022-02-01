@@ -12,7 +12,7 @@ lib/c
 {% block bld_libs %}
 lib/popt
 lib/linux
-lib/musl/qsort
+lib/qsort/r
 {% endblock %}
 
 {% block bld_tool %}

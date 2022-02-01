@@ -12,7 +12,9 @@ lib/xz
 lib/usb
 lib/intl
 lib/linux
+lib/fuse/2
 lib/pciaccess
+lib/device/mapper
 {% endblock %}
 
 {% block bld_tool %}
@@ -31,6 +33,13 @@ export TARGET_STRIP=$(which llvm-strip)
 {% endblock %}
 
 {% block configure_flags %}
+--enable-grub-mount
+--enable-device-mapper
+--enable-liblzma
 --with-bootdir=/boot
 --with-grubdir=grub
+{% endblock %}
+
+{% block postinstall %}
+: need lib/grub
 {% endblock %}
