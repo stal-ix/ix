@@ -5,7 +5,7 @@ EOF
 
 chmod +x which
 
-for x in ps strip; do
+for x in ps strip ldconfig; do
     cat << EOF > ${x}
 #!$(which sh)
 EOF
@@ -21,7 +21,7 @@ cat << EOF > hostname
 echo localhost
 EOF
 
-chmod +x arch ps strip hostname
+chmod +x arch ps strip hostname ldconfig
 
 {% if target.os == 'darwin' %}
 cat << EOF > sw_vers

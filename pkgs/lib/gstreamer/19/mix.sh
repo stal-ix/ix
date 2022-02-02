@@ -28,17 +28,15 @@ aux/iso-codes
 
 {% block bld_tool %}
 lib/glib
-bin/gettext
 bin/flex
-lib/gstreamer/orc
+bin/gettext
 bin/bison/3/8
+lib/gstreamer/orc
 lib/wayland/protocols
 {% endblock %}
 
 {% block patch %}
-sed -e 's|both_libraries|library|' \
-    -e 's|.get_shared_lib()||'     \
-    -i meson.build
+sed -e 's|.get_shared_lib()||' -i meson.build
 {% endblock %}
 
 {% block meson_flags %}

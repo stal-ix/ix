@@ -89,6 +89,7 @@ find . -type f -name meson.build | while read l; do
         | grep -v 'subdir.*exam' \
         | grep -v 'subdir.*demo' \
         | grep -v 'subdir.*fuzz' \
+        | sed -e 's|both_libraries|library|g' \
         | sed -e 's|shared_library|library|g' \
         | sed -e 's|shared_module|library|g' \
         > _ && mv _ ${l}

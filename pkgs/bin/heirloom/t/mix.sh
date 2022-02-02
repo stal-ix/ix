@@ -13,6 +13,14 @@ lib/c
 bin/make
 {% endblock %}
 
+{% block c_rename_symbol %}
+getopt
+optind
+optopt
+optarg
+opterr
+{% endblock %}
+
 {% block cpp_defines %}
 EXTERN=extern
 {% endblock %}

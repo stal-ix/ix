@@ -3,6 +3,6 @@
 {% block install %}
 {{super()}}
 cd ${out}/share/icons
-rm -r Adwaita/cursors
-ln -s Adwaita default
+mv Adwaita default
+rm -r default/cursors
 {% endblock %}
