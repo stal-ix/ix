@@ -6,5 +6,6 @@ sed -e 's|0770|0777|' -i seatd/seatd.c
 
 {% block install %}
 {{super()}}
+
 rm ${out}/bin/seatd-launch
 {% endblock %}

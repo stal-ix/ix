@@ -48,7 +48,6 @@ EOF
 echo '00000000000000001111111111111111' > machine-id
 
 ln -sv /proc/self/mounts mtab
-cp -R /etc/pki ./
 
 mkdir services; cd services
 
