@@ -25,3 +25,9 @@ lib/bsd/overlay
 {% block autoreconf %}
 sh bin/setup.sh
 {% endblock %}
+
+{% block patch %}
+find . -type f | while read l; do
+    sed -e 's|.*sys/sysctl.h.*||' -i ${l}
+done
+{% endblock %}
