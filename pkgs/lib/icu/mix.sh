@@ -16,7 +16,7 @@ cd ${out}
 
 rm -r share
 
-find . -type f | grep '\.pc' | while read l; do
+find . -type f -name '*.pc' | while read l; do
     sed -e 's|^#.*||' -i ${l}
 done
 {% endblock %}

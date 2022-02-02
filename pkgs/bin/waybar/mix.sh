@@ -38,3 +38,7 @@ dbusmenu-gtk=enabled
 gtk-layer-shell=enabled
 rfkill=enabled
 {% endblock %}
+
+{% block setup %}
+export CPPFLAGS="-w ${CPPFLAGS}"
+{% endblock %}

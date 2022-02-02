@@ -14,7 +14,7 @@ for i in 1 2 3 4 5; do (
 
     cat << EOF > run
 #!/bin/sh
-exec srv agetty${i} cttyhack agetty --autologin root tty${i}
+exec srv agetty${i} setsid agetty --autologin root tty${i}
 EOF
 
     chmod +x run
