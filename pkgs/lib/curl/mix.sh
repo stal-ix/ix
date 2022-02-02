@@ -33,6 +33,7 @@ bin/groff
 {% endblock %}
 
 {% block configure_flags %}
---with-ca-bundle=${CA_BUNDLE}
+--with-random="/dev/urandom"
+--with-ca-bundle="${CA_BUNDLE}"
 --enable-manual
 {% endblock %}

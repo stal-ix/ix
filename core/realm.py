@@ -87,9 +87,9 @@ class Realm:
         tmp = path + '.tmp'
 
         os.symlink(self.path, tmp)
-        os.system('sync')
+        cu.sync()
         os.rename(tmp, path)
-        os.system('sync')
+        cu.sync()
 
     def uninstall(self):
         os.unlink(self.managed_path)

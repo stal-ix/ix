@@ -188,6 +188,8 @@ class Executor:
         for c in iter_cmd(n):
             execute_cmd(c)
 
+        cu.sync()
+
         for o in iter_out(n):
             if not os.path.isfile(o):
                 with open(o, 'w') as f:
