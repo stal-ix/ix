@@ -1,0 +1,33 @@
+diff --git a/gdk-pixbuf/gdk-pixbuf-io.c b/gdk-pixbuf/gdk-pixbuf-io.c
+index eb442e3..89052fe 100644
+--- a/gdk-pixbuf/gdk-pixbuf-io.c
++++ b/gdk-pixbuf/gdk-pixbuf-io.c
+@@ -28,6 +28,7 @@
+ #ifdef HAVE_UNISTD_H
+ #include <unistd.h>
+ #endif
++#include <dlfcn.h>
+ 
+ #include <glib.h>
+ #include <gio/gio.h>
+@@ -601,6 +602,8 @@ gdk_pixbuf_io_init_builtin (void)
+         else                                                                           \
+                 g_free (__builtin_module);                              } G_STMT_END
+ 
++        load_one_builtin_module (svg);
++
+ #ifdef INCLUDE_ani
+         load_one_builtin_module (ani);
+ #endif
+@@ -716,6 +719,11 @@ gdk_pixbuf_load_module_unlocked (GdkPixbufModule *image_module,
+         if (image_module->module != NULL)
+                return TRUE;
+ 
++        if (fill_info == NULL && strcmp (image_module->module_name, "svg") == 0) {
++            fill_info = dlsym(RTLD_NEXT, "svg_fill_info");
++            fill_vtable = dlsym(RTLD_NEXT, "svg_fill_vtable");
++        }
++
+ #define try_module(format,id)                                           \
+         if (fill_info == NULL &&                                        \
+             strcmp (image_module->module_name, #format) == 0) {         \

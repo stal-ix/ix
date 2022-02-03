@@ -16,6 +16,7 @@ lib/secret
 lib/dazzle
 lib/sqlite3
 lib/archive
+lib/rsvg/reg
 lib/json/glib
 lib/gdk/pixbuf
 lib/webkit/drivers

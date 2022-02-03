@@ -18,6 +18,8 @@ bin/pkg-config
 >config.h
 
 cc -c -o plugin.o \
+   -Dfill_info=svg_fill_info \
+   -Dfill_vtable=svg_fill_vtable \
    -DGDK_PIXBUF_ENABLE_BACKEND \
    -DG_LOG_DOMAIN=\"libpixbufloader-svg\" \
    -iquote . \

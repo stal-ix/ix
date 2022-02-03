@@ -24,6 +24,12 @@ installed_tests=false
 gio_sniffing=false
 {% endblock %}
 
+{% block patch %}
+(base64 -d | patch -p1) << EOF
+{% include '00.diff/base64' %}
+EOF
+{% endblock %}
+
 {% block install %}
 {{super()}}
 
