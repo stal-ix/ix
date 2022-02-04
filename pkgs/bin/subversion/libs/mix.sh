@@ -6,6 +6,7 @@ lib/lz4
 lib/apr
 lib/intl
 lib/serf
+lib/neon
 lib/expat
 lib/sqlite3
 lib/apr/util
