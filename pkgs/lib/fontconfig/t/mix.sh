@@ -23,9 +23,12 @@ lib/iconv
 {% endblock %}
 
 {% block patch %}
-cd fc-cache
+sed -e 's|.*fc_fonts_path = .*usr.*share.*|fc_fonts_path = []|' -i meson.build
+sed -e 's|.*add_install_script.*||' -i fc-cache/meson.build
 
-cat meson.build \
-    | grep -v 'add_install_script' \
-    > _ && mv _ meson.build
+find . -type f -name '*.c' | while read l; do
+    sed -e 's|.*/usr/share.*||' \
+        -e 's|.*/usr/local/share.*||' \
+        -i ${l}
+done
 {% endblock %}
