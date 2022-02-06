@@ -14,7 +14,3 @@ lib/iconv
 {% block std_box %}
 bld/bootbox
 {% endblock %}
-
-{% block bld_tool %}
-bin/bison/3/boot
-{% endblock %}

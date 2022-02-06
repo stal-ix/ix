@@ -37,3 +37,6 @@ locale_charset
 {% block env_lib %}
 export COFLAGS="--with-libintl-prefix=${out} \${COFLAGS}"
 {% endblock %}
+
+{% block touch_yl %}
+{% endblock %}

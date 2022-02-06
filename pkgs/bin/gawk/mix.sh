@@ -16,10 +16,6 @@ lib/sigsegv
 bld/bootbox
 {% endblock %}
 
-{% block bld_tool %}
-bin/bison/3/boot
-{% endblock %}
-
 {% block c_rename_symbol %}
 err
 regcomp
