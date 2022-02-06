@@ -1,12 +1,10 @@
-{% extends '//mix/template/autohell.sh' %}
+{% extends '//mix/template/autorehell.sh' %}
 
 {% block lib_deps %}
 lib/python/libs
 {% endblock %}
 
 {% block bld_tool %}
-bin/auto/conf/2/69
-bin/auto/make/1/16
 bin/auto/conf/archive
 {% endblock %}
 
