@@ -15,7 +15,7 @@ lib/bsd/overlay
 {% endblock %}
 
 {% block bld_tool %}
-lib/magic
+bin/file
 {% endblock %}
 
 {% block std_box %}

@@ -16,12 +16,6 @@ lib/iconv
 lib/expat
 {% endblock %}
 
-{% block bld_libs %}
-{% if bin %}
-lib/intl
-{% endif %}
-{% endblock %}
-
 {% block configure_flags %}
 --without-xml2
 {% endblock %}

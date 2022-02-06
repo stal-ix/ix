@@ -1,4 +1,4 @@
-{% extends '//lib/archive/mix.sh' %}
+{% extends '//bin/bsdtar/mix.sh' %}
 
 {% block lib_deps %}
 {% endblock %}

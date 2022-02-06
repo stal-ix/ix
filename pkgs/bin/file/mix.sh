@@ -1,4 +1,4 @@
-{% extends '//lib/bzip2/t/mix.sh' %}
+{% extends '//lib/magic/mix.sh' %}
 
 {% block std_box %}
 bld/bootbox

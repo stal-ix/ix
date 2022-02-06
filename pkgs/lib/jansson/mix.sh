@@ -6,7 +6,7 @@ bc78f39c7cd7fab1dd5fc4a2c3be1661
 {% endblock %}
 
 {% block bld_tool %}
-lib/magic
+bin/file
 bin/auto/conf/2/69
 bin/auto/make/1/16
 {% endblock %}

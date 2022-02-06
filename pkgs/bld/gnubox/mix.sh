@@ -4,8 +4,8 @@
 bin/sed
 bin/gawk
 bin/grep
+bin/file
 bin/patch
-lib/magic
 bin/diffutils
 bin/findutils
 bin/coreutils/8/32

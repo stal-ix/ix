@@ -1,8 +1,8 @@
 {% extends '//mix/template/autohell.sh' %}
 
 {% block fetch %}
-http://deb.debian.org/debian/pool/main/f/file/file_5.39.orig.tar.gz
-1c450306053622803a25647d88f80f25
+https://tukaani.org/xz/xz-5.2.5.tar.xz
+aa1621ec7013a19abab52a8aff04fe5b
 {% endblock %}
 
 {% block lib_deps %}
