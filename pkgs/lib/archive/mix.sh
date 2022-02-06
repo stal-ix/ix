@@ -10,6 +10,7 @@ lib/c
 lib/z
 lib/xz
 lib/lz4
+lib/lzo
 lib/zstd
 lib/bzip2
 lib/iconv
