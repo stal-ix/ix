@@ -16,7 +16,7 @@ bin/auto/libtool
 {% endblock %}
 
 {% block run_data %}
-lib/curses/n/terminfo
+aux/terminfo
 {% endblock %}
 
 {% block make_flags %}

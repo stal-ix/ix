@@ -298,7 +298,7 @@ class Package:
             if '/' not in x:
                 continue
 
-            print(f'{fr} {x} {to}')
+            # print(f'{fr} {x} {to}')
             p = os.path.join(to, x)
 
             try:

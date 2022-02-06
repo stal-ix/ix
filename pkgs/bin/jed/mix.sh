@@ -11,9 +11,9 @@ lib/slang
 {% endblock %}
 
 {% block run_data %}
-lib/curses/n/terminfo
+aux/terminfo
 {% endblock %}
 
 {% block bld_tool %}
-lib/curses/n/terminfo/config
+aux/terminfo/config
 {% endblock %}

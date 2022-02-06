@@ -1,7 +1,7 @@
 {% extends '//mix/template/proxy.sh' %}
 
 {% block run_data %}
-lib/curses/n/terminfo
+aux/terminfo
 {% endblock %}
 
 {% block install %}

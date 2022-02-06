@@ -13,4 +13,5 @@ bin/unzip
 bin/bzip2
 bin/brotli
 bin/bsdtar
+bin/cabextract
 {% endblock %}

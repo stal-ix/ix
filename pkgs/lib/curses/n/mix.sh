@@ -1,7 +1,7 @@
 {% extends '//lib/curses/n/t/mix.sh' %}
 
 {% block run_data %}
-lib/curses/n/terminfo
+aux/terminfo
 {% endblock %}
 
 {% block install %}

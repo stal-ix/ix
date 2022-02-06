@@ -19,11 +19,11 @@ lib/readline
 {% endblock %}
 
 {% block bld_tool %}
-lib/curses/n/terminfo/config
+aux/terminfo/config
 {% endblock %}
 
 {% block run_data %}
-lib/curses/n/terminfo
+aux/terminfo
 {% endblock %}
 
 {% block configure_flags %}
