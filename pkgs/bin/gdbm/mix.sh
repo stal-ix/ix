@@ -6,6 +6,11 @@ lib/readline
 {{super()}}
 {% endblock %}
 
+{% block bld_tool %}
+bin/bison/3/8
+{{super()}}
+{% endblock %}
+
 {% block configure_flags %}
 --with-readline
 {{super()}}

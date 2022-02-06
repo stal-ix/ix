@@ -4,6 +4,14 @@
 bld/bootbox
 {% endblock %}
 
+{% block bld_tool %}
+bin/bison/3/boot
+{% endblock %}
+
+{% block configure_flags %}
+--enable-libgdbm-compat
+{% endblock %}
+
 {% block install %}
 {{super()}}
 cd ${out}/lib && ln -s libgdbm_compat.a libdbm.a

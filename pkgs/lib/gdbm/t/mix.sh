@@ -8,11 +8,3 @@ aeb29c6a90350a4c959cd1df38cd0a7e
 {% block lib_deps %}
 lib/c
 {% endblock %}
-
-{% block bld_tool %}
-bin/bison/3/boot
-{% endblock %}
-
-{% block configure_flags %}
---enable-libgdbm-compat
-{% endblock %}
