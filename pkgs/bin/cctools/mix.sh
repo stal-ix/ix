@@ -14,10 +14,6 @@ lib/bsd/overlay
 {% endif %}
 {% endblock %}
 
-{% block bld_tool %}
-bin/file
-{% endblock %}
-
 {% block std_box %}
 bld/bootbox
 {% endblock %}

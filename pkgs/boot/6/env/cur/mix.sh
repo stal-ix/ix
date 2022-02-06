@@ -2,6 +2,7 @@
 
 {% block run_deps %}
 boot/6/sh
+boot/6/file
 boot/6/diffutils
 boot/6/findutils
 boot/6/coreutils
