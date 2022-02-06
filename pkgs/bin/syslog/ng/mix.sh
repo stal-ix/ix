@@ -21,9 +21,5 @@ bin/bison/3/6
 bin/auto/conf/archive
 {% endblock %}
 
-{% block autoreconf %}
-sh autogen.sh
-{% endblock %}
-
 {% block touch_yl %}
 {% endblock %}

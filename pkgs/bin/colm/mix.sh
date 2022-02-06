@@ -13,7 +13,3 @@ lib/c++
 {% block bld_tool %}
 bin/tar
 {% endblock %}
-
-{% block autoreconf %}
-sh autogen.sh
-{% endblock %}

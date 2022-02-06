@@ -22,10 +22,6 @@ bld/bash
 2/71
 {% endblock %}
 
-{% block autoreconf %}
-sh autogen.sh
-{% endblock %}
-
 {% block patch %}
 find . -type f | while read l; do
     sed -e 's|#!/bin/bash|#!/usr/bin/env bash|' -i ${l}

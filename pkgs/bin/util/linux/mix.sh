@@ -23,10 +23,6 @@ bin/gettext
 bin/bison/3/8
 {% endblock %}
 
-{% block autoreconf %}
-sh autogen.sh
-{% endblock %}
-
 {% block setup_tools %}
 ln -s $(which xgettext) gettext
 {% endblock %}

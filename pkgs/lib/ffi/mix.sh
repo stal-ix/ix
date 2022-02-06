@@ -27,10 +27,6 @@ bin/auto/make/1/16
 bld/bootbox
 {% endblock %}
 
-{% block autoreconf %}
-sh autogen.sh
-{% endblock %}
-
 {% block env_lib %}
 export COFLAGS="--with-system-ffi=yes --with-libffi-prefix=${out} \${COFLAGS}"
 {% endblock %}

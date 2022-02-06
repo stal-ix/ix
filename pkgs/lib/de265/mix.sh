@@ -10,10 +10,6 @@ lib/c
 lib/c++
 {% endblock %}
 
-{% block autoreconf %}
-sh autogen.sh
-{% endblock %}
-
 {% block patch %}
 find . | grep Makefile.am | while read l; do
     sed -e 's|-lstdc++||g' -i ${l}

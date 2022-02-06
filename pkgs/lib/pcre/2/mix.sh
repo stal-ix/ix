@@ -14,10 +14,6 @@ lib/z
 lib/bzip2
 {% endblock %}
 
-{% block autoreconf %}
-sh autogen.sh
-{% endblock %}
-
 {% block configure_flags %}
 --enable-pcre2grep-libz
 --enable-pcre2grep-libbz2

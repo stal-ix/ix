@@ -17,10 +17,6 @@ lib/openssl
 lib/protobuf
 {% endblock %}
 
-{% block autoreconf %}
-sh autogen.sh
-{% endblock %}
-
 {% block patch %}
 sed -e 's| bind(| ::bind(|' -i src/network/network.cc
 {% endblock %}

@@ -17,10 +17,6 @@ lib/curses
 bin/gettext
 {% endblock %}
 
-{% block autoreconf %}
-sh autogen.sh
-{% endblock %}
-
 {% block setup %}
 export ac_cv_lib_error_at_line=no
 export ac_cv_header_error_h=no

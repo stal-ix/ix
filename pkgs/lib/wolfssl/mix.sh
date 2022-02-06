@@ -9,10 +9,6 @@ d2044f756db0853dd2da0a90dd42ab62
 2/71
 {% endblock %}
 
-{% block autoreconf %}
-sh autogen.sh
-{% endblock %}
-
 {% block configure_flags %}
 --enable-all
 --enable-opensslextra

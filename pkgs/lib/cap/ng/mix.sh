@@ -16,7 +16,3 @@ lib/linux
 {% block bld_tool %}
 bld/python
 {% endblock %}
-
-{% block autoreconf %}
-sh autogen.sh
-{% endblock %}

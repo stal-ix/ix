@@ -11,10 +11,6 @@ bin/byacc
 bin/gettext
 {% endblock %}
 
-{% block autoreconf %}
-sh autogen.sh
-{% endblock %}
-
 {% block lib_deps %}
 lib/c
 {% endblock %}

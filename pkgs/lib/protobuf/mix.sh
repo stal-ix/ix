@@ -10,7 +10,3 @@ lib/z
 lib/c
 lib/c++
 {% endblock %}
-
-{% block autoreconf %}
-sh autogen.sh
-{% endblock %}

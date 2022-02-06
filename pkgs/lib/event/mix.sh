@@ -14,10 +14,6 @@ lib/openssl
 bld/python
 {% endblock %}
 
-{% block autoreconf %}
-sh autogen.sh
-{% endblock %}
-
 {% block setup_tools %}
 ln -s $(which python3) python
 {% endblock %}

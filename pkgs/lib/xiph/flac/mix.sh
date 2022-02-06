@@ -13,10 +13,6 @@ bin/gettext
 ln -s $(which xgettext) gettext
 {% endblock %}
 
-{% block autoreconf %}
-sh autogen.sh
-{% endblock %}
-
 {% block lib_deps %}
 lib/c
 {% endblock %}

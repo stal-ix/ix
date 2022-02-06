@@ -9,10 +9,6 @@ https://git.savannah.nongnu.org/cgit/attr.git/snapshot/attr-2.5.1.tar.gz
 bin/gettext
 {% endblock %}
 
-{% block autoreconf %}
-sh autogen.sh
-{% endblock %}
-
 {% block lib_deps %}
 lib/c
 {% endblock %}

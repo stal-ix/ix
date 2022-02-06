@@ -9,7 +9,3 @@ a03aff8a9b32312aca7aea368f8265c5
 lib/c
 lib/xiph/ogg
 {% endblock %}
-
-{% block autoreconf %}
-sh autogen.sh
-{% endblock %}

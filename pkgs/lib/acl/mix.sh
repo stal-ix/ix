@@ -13,7 +13,3 @@ lib/attr
 {% block bld_tool %}
 bin/gettext
 {% endblock %}
-
-{% block autoreconf %}
-sh autogen.sh
-{% endblock %}
