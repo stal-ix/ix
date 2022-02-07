@@ -8,3 +8,7 @@ https://www.cairographics.org/releases/pixman-0.40.0.tar.gz
 {% block lib_deps %}
 lib/c
 {% endblock %}
+
+{% block env_lib %}
+export CPPFLAGS="-I${out}/include/pixman-1 \${CPPFLAGS}"
+{% endblock %}

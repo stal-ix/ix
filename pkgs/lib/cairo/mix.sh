@@ -44,7 +44,5 @@ export CPPFLAGS="-w ${CPPFLAGS}"
 {% endblock %}
 
 {% block patch %}
-cat meson.build \
-    | grep -v 'conf.*set.*CAIRO_HAS_TRACE' \
-    > _ && mv _ meson.build
+sed -e 's|.*conf.*set.*CAIRO_HAS_TRACE.*||' -i meson.build
 {% endblock %}
