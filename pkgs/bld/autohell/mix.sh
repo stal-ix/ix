@@ -3,5 +3,5 @@
 {% block run_deps %}
 bin/m4
 bld/perl
-bin/auto/libtool
+bin/libtool
 {% endblock %}

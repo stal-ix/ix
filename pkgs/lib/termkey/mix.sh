@@ -13,6 +13,6 @@ lib/unibilium
 {% block bld_tool %}
 bld/perl
 bin/gzip
+bin/libtool
 bin/pkg-config
-bin/auto/libtool
 {% endblock %}
