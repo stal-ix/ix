@@ -1,2 +1,2 @@
-https://www.kernel.org/pub/linux/kernel/v5.x/linux-5.16.2.tar.xz
-sha:09fe833a4d6304327bbe00e75ad7a2587188d1f406b3265fed11a0f8c5663b44
+https://www.kernel.org/pub/linux/kernel/v5.x/linux-5.16.6.tar.xz
+sha:5aec93459d97470e77b66fb5b08738ca61fca9e7843b2f81d10d4a48bb3a16d0
