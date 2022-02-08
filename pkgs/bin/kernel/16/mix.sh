@@ -1,5 +1,9 @@
 {% extends '//bin/kernel/t/mix.sh' %}
 
+{% block kernel_name %}
+5.16.6
+{% endblock %}
+
 {% block fetch %}
 {% include 'ver.sh' %}
 {% endblock %}

@@ -41,6 +41,5 @@ ln -s target/objdump objdump
 
 {% block install %}
 mkdir ${out}/bin
-cp arch/x86/boot/bzImage ${out}/bin/kernel
-cp .config ${out}/bin/kernel.config
+cp arch/x86/boot/bzImage ${out}/bin/kernel.{{self.kernel_name().strip()}}
 {% endblock %}
