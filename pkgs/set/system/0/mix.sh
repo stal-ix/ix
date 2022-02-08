@@ -3,8 +3,9 @@
 {% block run_deps %}
 bin/iw
 bin/sud
-bin/killd
+#bin/killd
 #bin/priod
+bin/sched/staleprocs
 bin/iwd/sys
 bin/runit/sys
 bin/dbus/runit
