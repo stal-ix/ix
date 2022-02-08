@@ -3,14 +3,15 @@
 {% block run_deps %}
 bin/iw
 bin/sud
-bin/sched/trashdir
-bin/sched/staleprocs
 bin/iwd/sys
 bin/runit/sys
 bin/dbus/runit
 bin/seatd/runit
 bin/dhcpcd/runit
 bin/mingetty/sys
-bin/busybox/full
+bin/sched/trashdir
+bin/sched/staleprocs
+
 aux/etc
+bin/busybox/full
 {% endblock %}
