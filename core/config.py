@@ -94,6 +94,9 @@ def get_raw_arch(n):
     if n == 'darwin-arm64':
         return du(a('darwin'), a('arm64'))
 
+    if n == 'darwin-x86_64':
+        return du(a('darwin'), a('x86_64'))
+
     if n == 'linux-x86_64':
         return du(a('linux'), a('x86_64'), {'hw_vendor': 'pc'})
 
