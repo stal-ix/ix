@@ -9,6 +9,9 @@ sys.excepthook = traceback.print_exception
 import ssl
 ssl._create_default_https_context = ssl._create_unverified_context
 
+# we always download with checksums
+# and can not assume proper cert availability in bootstrap context
+# so we safely disable cert validation
 import urllib3
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 

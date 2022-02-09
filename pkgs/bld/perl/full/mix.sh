@@ -20,11 +20,6 @@ ln -s XML-Parser/Expat XML-Parser-Expat
 cd ..
 {% endblock %}
 
-{% block bld_tool %}
-bld/perl
-{{super()}}
-{% endblock %}
-
 {% block configure %}
 {{super()}}
 
