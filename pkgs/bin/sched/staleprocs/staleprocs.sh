@@ -1,5 +1,5 @@
 lst() (
-    ps -o ppid,pid,args | awk '$1 == 1' | grep -v runsvdir | grep -v sway | grep -v foot
+    ps -o ppid,pid,args | awk '$1 == 1' | grep -v runsvdir
 )
 
 lstp() (
