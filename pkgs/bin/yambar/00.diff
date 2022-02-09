@@ -1,0 +1,36 @@
+diff --git a/config.c b/config.c
+index 7f9583e..68c2f49 100644
+--- a/config.c
++++ b/config.c
+@@ -83,6 +83,11 @@ conf_to_deco(const struct yml_node *node)
+     return iface->from_conf(deco_data);
+ }
+ 
++struct particle *particle_list_new(
++        struct particle *common,
++        struct particle *particles[], size_t count,
++        int left_spacing, int right_spacing);
++
+ static struct particle *
+ particle_simple_list_from_config(const struct yml_node *node,
+                                  struct conf_inherit inherited)
+@@ -98,19 +103,6 @@ particle_simple_list_from_config(const struct yml_node *node,
+         parts[idx] = conf_to_particle(it.node, inherited);
+     }
+ 
+-    /* Lazy-loaded function pointer to particle_list_new() */
+-    static struct particle *(*particle_list_new)(
+-        struct particle *common,
+-        struct particle *particles[], size_t count,
+-        int left_spacing, int right_spacing) = NULL;
+-
+-    if (particle_list_new == NULL) {
+-        const struct plugin *plug = plugin_load("list", PLUGIN_PARTICLE);
+-
+-        particle_list_new = dlsym(plug->lib, "particle_list_new");
+-        assert(particle_list_new != NULL);
+-    }
+-
+     struct particle *common = particle_common_new(
+         0, 0, NULL, fcft_clone(inherited.font), inherited.foreground, NULL);
+ 

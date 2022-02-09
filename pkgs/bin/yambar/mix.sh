@@ -27,6 +27,10 @@ backend-wayland=enabled
 {% endblock %}
 
 {% block patch %}
+(base64 -d | patch -p1) << EOF
+{% include '00.diff/base64' %}
+EOF
+
 sed -e 's|.*export_dyn.*||' -i meson.build
 sed -e 's|#error|#warning|' -i char32.c
 sed -e 's|.*return wcslen.*|size_t r = 0; while (s \&\& s[r]) {++r;}; return r;|' -i char32.c
