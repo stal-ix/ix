@@ -7,8 +7,8 @@ https://codeberg.org/dnkl/foot/archive/1.10.3.tar.gz
 
 {% block bld_libs %}
 lib/c
-lib/fcft
 lib/linux
+lib/fcft/2
 lib/tllist
 lib/pixman
 lib/wayland

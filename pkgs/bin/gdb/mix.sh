@@ -35,6 +35,7 @@ bin/texinfo
 {% endblock %}
 
 {% block setup %}
+
 export acx_cv_cc_gcc_supports_ada=no
 export ac_cv_search_tgetent=no
 {% endblock %}
