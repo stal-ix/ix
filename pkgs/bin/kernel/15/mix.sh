@@ -13,9 +13,6 @@
 bin/kernel/15/headers
 {% endblock %}
 
-{% block configure %}
-{{super()}}
-base64 -d << EOF > .config
-{% include 'cfg/base64' %}
-EOF
+{% block kconfig_flags %}
+{% include 'cfg' %}
 {% endblock %}

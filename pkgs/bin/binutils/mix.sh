@@ -1,8 +1,8 @@
 {% extends '//mix/template/autohell.sh' %}
 
 {% block fetch %}
-https://ftp.gnu.org/gnu/binutils/binutils-2.37.tar.xz
-e78d9ff2976b745a348f4c1f27c77cb1
+https://ftp.gnu.org/gnu/binutils/binutils-2.38.tar.xz
+sha:e316477a914f567eccc34d5d29785b8b0f5a10208d36bbacedcc39048ecfe024
 {% endblock %}
 
 {% block bld_libs %}
@@ -14,6 +14,7 @@ lib/intl
 
 {% block bld_tool %}
 bin/flex
+bin/texinfo
 bin/bison/3/6
 {% endblock %}
 

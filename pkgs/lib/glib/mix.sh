@@ -9,7 +9,9 @@ bb73dd817634018cb45f91647948fb2e
 lib/c
 lib/z
 lib/ffi
+{% if bin %}
 lib/intl
+{% endif %}
 lib/pcre
 lib/iconv
 {% if target.os == 'darwin' %}

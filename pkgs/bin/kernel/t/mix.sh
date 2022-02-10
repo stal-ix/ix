@@ -25,6 +25,10 @@ bin/busybox/bc
 
 {% block configure %}
 make HOSTCC="${HOST_CC} -D__always_inline=__inline__ -w" mrproper
+cat << EOF > .config
+{% block kconfig_flags %}
+{% endblock %}
+EOF
 {% endblock %}
 
 {% block build %}
