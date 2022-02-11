@@ -1,7 +1,9 @@
 import os
 import time
+import json
 import shutil
 import random
+import subprocess
 
 import core.j2 as cj
 import core.vfs as cv
@@ -110,9 +112,16 @@ class Manager:
         except FileNotFoundError:
             pass
 
+    def build_packages(self, pkgs):
+        self.execute_graph(self.build_graph(pkgs))
+
     def execute_graph(self, graph):
         self.collect_garbage(self.config.build_dir)
-        ce.execute(graph)
+
+        stdin = json.dumps(graph).encode('utf-8')
+        subprocess.run(['/bin/mix', 'execute'], shell=False, input=stdin, check=True)
+
+        #ce.execute(graph)
 
     def load_realm(self, name):
         try:

@@ -1,30 +1,18 @@
-{% extends '//mix/template/freeze.sh' %}
+{% extends '//mix/template/python/bin.sh' %}
 
 {% block fetch %}
-https://github.com/pg83/mix/archive/{{mix_ver}}.zip
-{{mix_md5}}
+https://github.com/pg83/mix/archive/82426ebbc6aeaf54cb6266a7127b2179264c25ef.zip
+sha:cb72eb42c1d12cd3c2182d77eea530167b24b49066ba13cbaf2dd8b34b5e0494
 {% endblock %}
 
 {% block bld_libs %}
 lib/python
 pip/minio
 pip/jinja2
+pip/certifi
+pip/urllib3
 pip/beautysh
-{% endblock %}
-
-{% block extra_modules %}
-appdirs
-
-pyparsing
-
-packaging
-packaging.version
-packaging.specifiers
-packaging.requirements
-
-encodings.idna
-encodings.ascii
-encodings.unicode_escape
+pip/setuptools
 {% endblock %}
 
 {% block more_modules %}
@@ -42,11 +30,3 @@ mv mix_bin mix
 {% endblock %}
 
 {% block entry_point %}mix{% endblock %}
-{% block bin %}mix.bin{% endblock %}
-
-{% block install %}
-{{super()}}
-
-cp -R pkgs ${out}/bin/
-cd ${out}/bin && mv mix.bin mix
-{% endblock %}
