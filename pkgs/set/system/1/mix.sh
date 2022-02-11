@@ -3,15 +3,16 @@
 {% block run_deps %}
 bin/iw
 bin/sud
-bin/iwd/sys
+bin/iwd/runit
 bin/runit/sys
 bin/dbus/runit
 bin/openresolv
 bin/seatd/runit
 bin/dhcpcd/runit
-bin/mingetty/sys
+bin/mingetty/runit
 bin/sched/trashdir
 
 aux/etc
 bin/busybox/full
+bin/busybox/syslogd
 {% endblock %}
