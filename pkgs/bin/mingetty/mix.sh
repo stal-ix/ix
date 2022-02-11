@@ -1,7 +1,7 @@
 {% extends '//mix/template/make.sh' %}
 
 {% block fetch %}
-https://sourceforge.net/projects/mingetty/files/mingetty/1.08/mingetty-1.08.tar.gz/download
+https://sourceforge.net/projects/mingetty/files/mingetty/1.08/mingetty-1.08.tar.gz
 sha:0f55c90ba4faa913d91ef99cbf5cb2eb4dbe2780314c3bb17953f849c8cddd17
 {% endblock %}
 
