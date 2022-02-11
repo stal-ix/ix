@@ -9,12 +9,19 @@ cd ${out}
 
 mkdir bin; cd bin
 
-cat << EOF > sudo
+cat << EOF > doas
 #!/bin/sh
-exec dbclient -t -y -y root@localhost "\$@"
+user=${1}
+shift
+exec dbclient -t -y -y ${user}@localhost "\${@}"
 EOF
 
-chmod +x sudo
+cat << EOF > sudo
+#!/bin/sh
+exec doas root "\${@}"
+EOF
+
+chmod +x sudo doas
 
 cd ..
 

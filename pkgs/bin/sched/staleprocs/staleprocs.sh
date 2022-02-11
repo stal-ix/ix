@@ -8,11 +8,6 @@ lstp() (
 
 lst
 
-for s in "SIGINT" "SIGTERM" "SIGKILL"; do
-    lstp | while read l; do
-        echo "${s} ${l}"
-        kill -${s} ${l}
-    done
-
-    sleep 1
+lstp | while read l; do
+    kill -9 ${l}
 done
