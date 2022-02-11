@@ -1,4 +1,5 @@
 import os
+import sys
 import json
 import shutil
 import itertools
@@ -108,7 +109,11 @@ def prepare_realm(mngr, name, pkgs):
     cu.step('start iter runtime')
     handles = list(mngr.iter_runtime_packages(pkgs))
     cu.step('start build packages')
-    mngr.build_packages([p.selector for p in handles])
+    graph = mngr.build_graph([p.selector for p in handles])
+
+    print(json.dumps(graph, indent=4, sort_keys=True))
+    sys.exit(0)
+    mngr.execute_graph(graph)
     cu.step('done build packages')
     uid = cu.struct_hash([14, name, pkgs] + cu.uniq_list([p.uid for p in handles]))
     path = os.path.join(mngr.config.store_dir, uid)

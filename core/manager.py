@@ -110,9 +110,9 @@ class Manager:
         except FileNotFoundError:
             pass
 
-    def build_packages(self, pkgs):
+    def execute_graph(self, graph):
         self.collect_garbage(self.config.build_dir)
-        ce.execute(self.build_graph(pkgs))
+        ce.execute(graph)
 
     def load_realm(self, name):
         try:

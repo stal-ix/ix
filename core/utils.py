@@ -106,7 +106,8 @@ SS = time.time()
 
 
 def step(s):
-    print(f'{time.time() - SS} {s}')
+    pass
+    # print(f'{time.time() - SS} {s}')
 
 
 def sync():

@@ -11,7 +11,7 @@ mkdir bin; cd bin
 
 cat << EOF > sudo
 #!/bin/sh
-exec dbclient -y -y root@localhost "\$@"
+exec dbclient -t -y -y root@localhost "\$@"
 EOF
 
 chmod +x sudo

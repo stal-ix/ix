@@ -26,6 +26,8 @@ CLIS = [
     ('core.misc_cmd', 'misc_runpy', True),
     ('core.misc_cmd', 'misc_fetch', True),
     ('core.misc_cmd', 'misc_repl', True),
+
+    ('core.execute', 'execute', True),
 ]
 
 

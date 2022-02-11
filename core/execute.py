@@ -1,5 +1,6 @@
 import os
 import sys
+import json
 import asyncio
 import beautysh
 import itertools
@@ -221,3 +222,7 @@ class Executor:
 def execute(g):
     os.system(f'chrt -i -p 0 {os.getpid()}')
     asyncio.run(Executor(g['nodes']).visit_all(g['targets']))
+
+
+def cli_execute(ctx):
+    execute(json.loads(sys.stdin.read()))
