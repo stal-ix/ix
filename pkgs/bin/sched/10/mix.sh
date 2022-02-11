@@ -9,7 +9,7 @@ EOF
 
 cat << EOF > run
 #!/bin/sh
-exec srv sched10 /etc/services/sched10/cycle.sh
+exec srv sched10 ${PWD}/cycle.sh
 EOF
 
 chmod +x run cycle.sh

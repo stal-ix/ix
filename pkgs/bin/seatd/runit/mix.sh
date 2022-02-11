@@ -9,7 +9,7 @@ cd ${out}; mkdir -p etc/services/seatd; cd etc/services/seatd
 
 cat << EOF > run
 #!/bin/sh
-exec srv seatd /etc/services/seatd/seatd
+exec srv seatd ${PWD}/seatd
 EOF
 
 cat << EOF > seatd
