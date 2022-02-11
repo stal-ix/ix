@@ -1,14 +1,10 @@
-{% extends '//bin/kernel/16/mix.sh' %}
-
-{% block kernel_name %}
-5.16.6-next
-{% endblock %}
+{% extends '//bin/kernel/t/0/mix.sh' %}
 
 {% block run_data %}
 bin/kernel/firmware
 {% endblock %}
 
-{% set firmware %}
+{% block firmware %}
 amdgpu/arcturus_asd.bin
 amdgpu/arcturus_gpu_info.bin
 amdgpu/arcturus_mec.bin
@@ -476,14 +472,15 @@ iwlwifi-cc-a0-53.ucode
 iwlwifi-cc-a0-55.ucode
 iwlwifi-cc-a0-59.ucode
 iwlwifi-cc-a0-62.ucode
-{% endset %}
+{% endblock %}
 
 {% block kconfig_flags %}
 {{super()}}
-CONFIG_EXTRA_FIRMWARE="{{mix.fix_list(firmware)}}"
+CONFIG_EXTRA_FIRMWARE="{{mix.fix_list(self.firmware())}}"
 CONFIG_EXTRA_FIRMWARE_DIR="${LINUX_FIRMWARE}"
 {% endblock %}
 
 {% block patch %}
 sed -e "s|/lib/firmware|${LINUX_FIRMWARE}|" -i drivers/base/firmware_loader/main.c
+{{super()}}
 {% endblock %}

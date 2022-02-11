@@ -1,4 +1,4 @@
-{% extends '//bin/kernel/t/mix.sh' %}
+{% extends '//bin/kernel/t/1/mix.sh' %}
 
 {% block kernel_name %}
 5.16.6
@@ -15,4 +15,5 @@ bin/kernel/16/headers
 
 {% block kconfig_flags %}
 {% include 'cfg' %}
+{{super()}}
 {% endblock %}
