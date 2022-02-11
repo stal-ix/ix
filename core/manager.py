@@ -119,7 +119,8 @@ class Manager:
         self.collect_garbage(self.config.build_dir)
 
         stdin = json.dumps(graph).encode('utf-8')
-        subprocess.run(['/bin/mix', 'execute'], shell=False, input=stdin, check=True)
+        cmd = ['/bin/doas', 'mix', '-T', '/bin/mix', 'execute']
+        subprocess.run(cmd, shell=False, input=stdin, check=True, env={'DROPBEAR_PASSWORD': ''})
 
         #ce.execute(graph)
 

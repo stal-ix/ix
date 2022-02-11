@@ -1,7 +1,7 @@
 {% extends '//mix/template/proxy.sh' %}
 
 {% block run_deps %}
-bin/dropbear/sys
+bin/sud/ssh
 {% endblock %}
 
 {% block install %}
@@ -11,9 +11,9 @@ mkdir bin; cd bin
 
 cat << EOF > doas
 #!/bin/sh
-user=${1}
+user="\${1}"
 shift
-exec dbclient -t -y -y ${user}@localhost "\${@}"
+exec db_client -t -y -y "\${user}@localhost" "\${@}"
 EOF
 
 cat << EOF > sudo
@@ -33,7 +33,7 @@ mkdir -p services/sud; cd services/sud
 
 cat << EOF > run
 #!/bin/sh
-exec srv sud dropbear -R -F -E -B -j -k -m -P dropbear.pid
+exec srv sud db_server -R -F -E -B -j -k -m -P dropbear.pid
 EOF
 
 chmod +x run

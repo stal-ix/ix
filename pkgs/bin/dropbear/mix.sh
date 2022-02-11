@@ -18,3 +18,8 @@ lib/tom/crypt
 {% block configure_flags %}
 --disable-bundled-libtom
 {% endblock %}
+
+{% block patch %}
+rm -r libtommath
+rm -r libtomcrypt
+{% endblock %}
