@@ -18,7 +18,7 @@ boot/6/env/std
 
 {% block build %}
 for s in src/*.cc; do
-    c++ -c ${s}
+    c++ -std=c++11 -c ${s}
 done
 
 for s in src/*.c; do
