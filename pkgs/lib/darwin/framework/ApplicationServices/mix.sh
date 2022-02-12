@@ -3,7 +3,3 @@
 {% block framework %}
 ApplicationServices
 {% endblock %}
-
-{% block lib_deps %}
-lib/c
-{% endblock %}

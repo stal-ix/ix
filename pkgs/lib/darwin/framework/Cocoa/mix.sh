@@ -3,7 +3,3 @@
 {% block framework %}
 Cocoa
 {% endblock %}
-
-{% block lib_deps %}
-lib/c
-{% endblock %}

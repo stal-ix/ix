@@ -3,7 +3,3 @@
 {% block framework %}
 SystemConfiguration
 {% endblock %}
-
-{% block lib_deps %}
-lib/c
-{% endblock %}

@@ -3,7 +3,3 @@
 {% block framework %}
 CoreServices
 {% endblock %}
-
-{% block lib_deps %}
-lib/c
-{% endblock %}

@@ -3,7 +3,3 @@
 {% block framework %}
 UserNotifications
 {% endblock %}
-
-{% block lib_deps %}
-lib/c
-{% endblock %}
