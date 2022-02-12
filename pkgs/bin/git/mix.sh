@@ -18,6 +18,7 @@ lib/openssl
 
 {% block bld_tool %}
 bld/perl
+bin/cpio
 bld/python
 bin/gettext
 {% endblock %}
@@ -30,8 +31,4 @@ bin/openssh
 gitexecdir=bin/{{uniq_id}}
 INSTALL_SYMLINKS=yes
 NO_REGEX=NeedsStartEnd
-{% endblock %}
-
-{% block setup_tools %}
-ln -s $(which bsdcpio) cpio
 {% endblock %}
