@@ -11,11 +11,13 @@ mkdir etc; cd etc
 
 cat << EOF > passwd
 root:$(echo | cryptpw -S 237364527345):0:0:root:/home/root:/bin/sh
-mix:$(echo | cryptpw -S 237364527347):1000:1000:bin:/home/mix:/bin/sh
+mix:$(echo | cryptpw -S 237364527347):1000:1000:none:/home/mix:/bin/sh
+pg:$(echo | cryptpw -S 237364527348):10000:10000:none:/home/pg:/home/pg/.session
 EOF
 
 cat << EOF > group
 root:x:0:
+none:x:1:
 EOF
 
 cat << EOF > hosts
