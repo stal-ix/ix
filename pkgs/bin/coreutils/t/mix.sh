@@ -1,4 +1,4 @@
-{% extends '//mix/template/autohell.sh' %}
+{% extends '//mix/autohell.sh' %}
 
 {% block bld_libs %}
 lib/c

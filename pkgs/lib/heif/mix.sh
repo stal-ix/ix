@@ -1,4 +1,4 @@
-{% extends '//mix/template/cmake.sh' %}
+{% extends '//mix/cmake.sh' %}
 
 {% block fetch %}
 https://github.com/strukturag/libheif/archive/refs/tags/v1.12.0.tar.gz

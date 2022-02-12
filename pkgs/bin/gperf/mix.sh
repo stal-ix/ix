@@ -1,4 +1,4 @@
-{% extends '//mix/template/autohell.sh' %}
+{% extends '//mix/autohell.sh' %}
 
 {% block fetch %}
 http://ftp.gnu.org/pub/gnu/gperf/gperf-3.1.tar.gz

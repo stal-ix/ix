@@ -1,4 +1,4 @@
-{% extends '//mix/template/autorehell.sh' %}
+{% extends '//mix/autorehell.sh' %}
 
 {% block fetch %}
 https://www.sqlite.org/2021/sqlite-autoconf-3360000.tar.gz

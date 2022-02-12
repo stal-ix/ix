@@ -1,4 +1,4 @@
-{% extends '//mix/template/autorehell.sh' %}
+{% extends '//mix/autorehell.sh' %}
 
 {% block fetch %}
 https://github.com/wolfSSL/wolfssl/archive/refs/tags/v5.0.0-stable.tar.gz

@@ -1,4 +1,4 @@
-{% extends '//mix/template/make.sh' %}
+{% extends '//mix/make.sh' %}
 
 {% block fetch %}
 https://github.com/onetrueawk/awk/archive/refs/tags/20220122.tar.gz

@@ -1,4 +1,4 @@
-{% extends '//mix/template/autorehell.sh' %}
+{% extends '//mix/autorehell.sh' %}
 
 {% block fetch %}
 https://github.com/pullmoll/musl-rpmatch/archive/refs/tags/v1.0.tar.gz

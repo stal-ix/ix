@@ -1,4 +1,4 @@
-{% extends '//mix/template/autorehell.sh' %}
+{% extends '//mix/autorehell.sh' %}
 
 {% block fetch %}
 https://ftp.openbsd.org/pub/OpenBSD/OpenSSH/portable/openssh-8.6p1.tar.gz

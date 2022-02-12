@@ -1,4 +1,4 @@
-{% extends '//mix/template/cmake.sh' %}
+{% extends '//mix/cmake.sh' %}
 
 {% block fetch %}
 https://github.com/luvit/luv/archive/refs/tags/1.42.0-1.tar.gz

@@ -1,4 +1,4 @@
-{% extends '//mix/template/hub.sh' %}
+{% extends '//mix/hub.sh' %}
 
 {% block lib_deps %}
 lib/build/opt/O3

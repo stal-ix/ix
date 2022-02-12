@@ -1,4 +1,4 @@
-{% extends '//mix/template/cmake.sh' %}
+{% extends '//mix/cmake.sh' %}
 
 {% block fetch %}
 https://webkitgtk.org/releases/webkitgtk-2.34.3.tar.xz

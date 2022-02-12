@@ -1,4 +1,4 @@
-{% extends '//mix/template/py.py' %}
+{% extends '//mix/py.py' %}
 
 {% block lib_deps %}
 lib/darwin/c

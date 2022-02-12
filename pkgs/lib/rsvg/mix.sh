@@ -1,4 +1,4 @@
-{% extends '//mix/template/autorehell.sh' %}
+{% extends '//mix/autorehell.sh' %}
 
 {% block fetch %}
 {% include 'ver.sh' %}

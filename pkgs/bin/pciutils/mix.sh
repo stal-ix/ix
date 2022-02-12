@@ -1,4 +1,4 @@
-{% extends '//mix/template/make.sh' %}
+{% extends '//mix/make.sh' %}
 
 {% block fetch %}
 https://www.kernel.org/pub/software/utils/pciutils/pciutils-3.7.0.tar.xz

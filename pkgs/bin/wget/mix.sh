@@ -1,4 +1,4 @@
-{% extends '//mix/template/autorehell.sh' %}
+{% extends '//mix/autorehell.sh' %}
 
 {% block fetch %}
 https://ftp.gnu.org/gnu/wget/wget-1.21.2.tar.lz

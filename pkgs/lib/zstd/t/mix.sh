@@ -1,4 +1,4 @@
-{% extends '//mix/template/cmake.sh' %}
+{% extends '//mix/cmake.sh' %}
 
 {% block fetch %}
 https://github.com/facebook/zstd/releases/download/v1.5.0/zstd-1.5.0.tar.gz

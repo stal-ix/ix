@@ -1,4 +1,4 @@
-{% extends '//mix/template/c_std.sh' %}
+{% extends '//mix/c_std.sh' %}
 
 {% block fetch %}
 https://boostorg.jfrog.io/artifactory/main/release/1.78.0/source/boost_1_78_0.tar.bz2

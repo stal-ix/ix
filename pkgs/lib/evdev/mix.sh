@@ -1,4 +1,4 @@
-{% extends '//mix/template/meson.sh' %}
+{% extends '//mix/meson.sh' %}
 
 {% block fetch %}
 https://www.freedesktop.org/software/libevdev/libevdev-1.11.0.tar.xz

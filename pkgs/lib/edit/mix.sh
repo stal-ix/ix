@@ -1,4 +1,4 @@
-{% extends '//mix/template/autohell.sh' %}
+{% extends '//mix/autohell.sh' %}
 
 {% block fetch %}
 https://www.thrysoee.dk/editline/libedit-20210910-3.1.tar.gz

@@ -1,4 +1,4 @@
-{% extends '//mix/template/meson.sh' %}
+{% extends '//mix/meson.sh' %}
 
 {% block fetch %}
 https://download.gnome.org/sources/gobject-introspection/1.70/gobject-introspection-1.70.0.tar.xz

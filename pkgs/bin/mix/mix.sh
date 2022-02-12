@@ -1,4 +1,4 @@
-{% extends '//mix/template/python/bin.sh' %}
+{% extends '//mix/python/bin.sh' %}
 
 {% block fetch %}
 https://github.com/pg83/mix/archive/82426ebbc6aeaf54cb6266a7127b2179264c25ef.zip

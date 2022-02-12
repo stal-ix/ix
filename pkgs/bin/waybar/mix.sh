@@ -1,4 +1,4 @@
-{% extends '//mix/template/meson.sh' %}
+{% extends '//mix/meson.sh' %}
 
 {% block fetch %}
 https://github.com/Alexays/Waybar/archive/refs/tags/0.9.9.tar.gz

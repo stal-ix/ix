@@ -1,4 +1,4 @@
-{% extends '//mix/template/cmake.sh' %}
+{% extends '//mix/cmake.sh' %}
 
 {% block fetch %}
 https://github.com/doxygen/doxygen/archive/refs/tags/Release_1_9_2.tar.gz

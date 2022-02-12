@@ -1,4 +1,4 @@
-{% extends '//mix/template/kconfig.sh' %}
+{% extends '//mix/kconfig.sh' %}
 
 {% block host_libs %}
 lib/elfutils

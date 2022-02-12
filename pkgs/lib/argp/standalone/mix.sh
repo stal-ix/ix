@@ -1,4 +1,4 @@
-{% extends '//mix/template/autorehell.sh' %}
+{% extends '//mix/autorehell.sh' %}
 
 {% block fetch %}
 https://www.lysator.liu.se/~nisse/misc/argp-standalone-1.3.tar.gz

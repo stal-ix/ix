@@ -1,4 +1,4 @@
-{% extends '//mix/template/meson.sh' %}
+{% extends '//mix/meson.sh' %}
 
 {% block fetch %}
 https://github.com/benhoyt/inih/archive/r53/inih-r53.tar.gz

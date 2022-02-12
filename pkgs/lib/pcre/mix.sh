@@ -1,4 +1,4 @@
-{% extends '//mix/template/cmake.sh' %}
+{% extends '//mix/cmake.sh' %}
 
 {% block fetch %}
 https://downloads.sourceforge.net/project/pcre/pcre/8.45/pcre-8.45.tar.bz2

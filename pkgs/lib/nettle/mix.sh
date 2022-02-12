@@ -1,4 +1,4 @@
-{% extends '//mix/template/autorehell.sh' %}
+{% extends '//mix/autorehell.sh' %}
 
 {% block fetch %}
 https://ftp.gnu.org/gnu/nettle/nettle-3.7.3.tar.gz

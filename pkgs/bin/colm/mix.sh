@@ -1,4 +1,4 @@
-{% extends '//mix/template/autorehell.sh' %}
+{% extends '//mix/autorehell.sh' %}
 
 {% block fetch %}
 https://github.com/adrian-thurston/colm/archive/refs/tags/0.14.7.tar.gz

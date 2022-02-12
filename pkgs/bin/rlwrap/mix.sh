@@ -1,4 +1,4 @@
-{% extends '//mix/template/autorehell.sh' %}
+{% extends '//mix/autorehell.sh' %}
 
 {% block fetch %}
 https://github.com/hanslub42/rlwrap/archive/refs/tags/v0.45.2.tar.gz

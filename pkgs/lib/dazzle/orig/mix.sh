@@ -1,4 +1,4 @@
-{% extends '//mix/template/meson.sh' %}
+{% extends '//mix/meson.sh' %}
 
 {% block fetch %}
 https://gitlab.gnome.org/GNOME/libdazzle/-/archive/3.42.0.1/libdazzle-3.42.0.1.tar.bz2

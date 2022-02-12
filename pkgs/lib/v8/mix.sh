@@ -1,4 +1,4 @@
-{% extends '//mix/template/gn.sh' %}
+{% extends '//mix/gn.sh' %}
 
 {% block fetch %}
 https://github.com/v8/v8/archive/refs/tags/9.7.37.tar.gz

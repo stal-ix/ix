@@ -1,4 +1,4 @@
-{% extends '//mix/template/make.sh' %}
+{% extends '//mix/make.sh' %}
 
 {% block fetch %}
 https://downloads.sourceforge.net/project/giflib/giflib-5.2.1.tar.gz

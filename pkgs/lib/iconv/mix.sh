@@ -1,4 +1,4 @@
-{% extends '//mix/template/autohell.sh' %}
+{% extends '//mix/autohell.sh' %}
 
 {% block fetch %}
 https://ftp.gnu.org/pub/gnu/libiconv/libiconv-1.16.tar.gz

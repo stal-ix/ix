@@ -1,4 +1,4 @@
-{% extends '//mix/template/make.sh' %}
+{% extends '//mix/make.sh' %}
 
 {% block fetch %}
 https://github.com/rui314/mold/archive/733bb6354f9913a9fba599f1779620286f1e2e4c.zip

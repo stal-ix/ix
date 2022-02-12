@@ -1,4 +1,4 @@
-{% extends '//mix/template/autohell.sh' %}
+{% extends '//mix/autohell.sh' %}
 
 {% block fetch %}
 https://skarnet.org/software/nsss/nsss-0.2.0.1.tar.gz

@@ -1,4 +1,4 @@
-{% extends '//mix/template/autohell.sh' %}
+{% extends '//mix/autohell.sh' %}
 
 {% block fetch %}
 https://ftp.gnu.org/gnu/emacs/emacs-27.2.tar.xz

@@ -1,4 +1,4 @@
-{% extends '//mix/template/meson.sh' %}
+{% extends '//mix/meson.sh' %}
 
 {% block fetch %}
 https://git.sr.ht/~emersion/basu/archive/v0.2.0.tar.gz

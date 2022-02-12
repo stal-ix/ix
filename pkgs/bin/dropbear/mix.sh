@@ -1,4 +1,4 @@
-{% extends '//mix/template/autorehell.sh' %}
+{% extends '//mix/autorehell.sh' %}
 
 {% block fetch %}
 https://storage.yandexcloud.net/mix-cache/dropbear-2020.81.tar.bz2

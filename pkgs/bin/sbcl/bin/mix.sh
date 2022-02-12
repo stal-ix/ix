@@ -1,4 +1,4 @@
-{% extends '//mix/template/std/mix.sh' %}
+{% extends '//mix/std/mix.sh' %}
 
 {% block fetch %}
 http://prdownloads.sourceforge.net/sbcl/sbcl-2.1.10-x86-64-linux-binary.tar.bz2

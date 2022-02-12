@@ -1,4 +1,4 @@
-{% extends '//mix/template/std/mix.sh' %}
+{% extends '//mix/std/mix.sh' %}
 
 {% block fetch %}
 https://download.oracle.com/java/17/latest/jdk-17_linux-x64_bin.tar.gz

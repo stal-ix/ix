@@ -1,4 +1,4 @@
-{% extends '//mix/template/fonts.sh' %}
+{% extends '//mix/fonts.sh' %}
 
 {% block fetch %}
 http://sourceforge.net/projects/dejavu/files/dejavu/2.37/dejavu-fonts-ttf-2.37.tar.bz2

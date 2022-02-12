@@ -1,4 +1,4 @@
-{% extends '//mix/template/c_std.sh' %}
+{% extends '//mix/c_std.sh' %}
 
 {% block fetch %}
 https://www.antlr.org/download/antlr-4.9-complete.jar

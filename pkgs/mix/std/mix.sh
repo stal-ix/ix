@@ -1,4 +1,4 @@
-{% extends '//mix/template/base.sh' %}
+{% extends '//mix/base.sh' %}
 
 {% block functions %}
 {{super()}}

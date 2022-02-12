@@ -1,4 +1,4 @@
-{% extends '//mix/template/fonts.sh' %}
+{% extends '//mix/fonts.sh' %}
 
 {% block fetch %}
 https://sourceforge.net/projects/corefonts/files/the%20fonts/final/wd97vwr32.exe

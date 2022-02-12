@@ -1,4 +1,4 @@
-{% extends '//mix/template/autorehell.sh' %}
+{% extends '//mix/autorehell.sh' %}
 
 {% block fetch %}
 https://github.com/gperftools/gperftools/archive/refs/tags/gperftools-2.9.1.tar.gz

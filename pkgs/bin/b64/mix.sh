@@ -1,4 +1,4 @@
-{% extends '//mix/template/c_std.sh' %}
+{% extends '//mix/c_std.sh' %}
 
 {% block fetch %}
 http://base64.sourceforge.net/b64.c
@@ -17,7 +17,8 @@ ${CC} ${src}/b64.c -o base64
 {% endblock %}
 
 {% block install %}
-mkdir ${out}/bin && cp base64 ${out}/bin
+mkdir ${out}/bin
+cp base64 ${out}/bin
 {% endblock %}
 
 {% block bld_libs %}

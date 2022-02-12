@@ -1,4 +1,4 @@
-{% extends '//mix/template/make.sh' %}
+{% extends '//mix/make.sh' %}
 
 {% block fetch %}
 https://github.com/djpohly/dwl/archive/refs/tags/v0.2.1.tar.gz

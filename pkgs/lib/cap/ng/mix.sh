@@ -1,4 +1,4 @@
-{% extends '//mix/template/autorehell.sh' %}
+{% extends '//mix/autorehell.sh' %}
 
 {% block fetch %}
 https://github.com/stevegrubb/libcap-ng/archive/refs/tags/v0.8.2.tar.gz

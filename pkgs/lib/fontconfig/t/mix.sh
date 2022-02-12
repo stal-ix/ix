@@ -1,4 +1,4 @@
-{% extends '//mix/template/meson.sh' %}
+{% extends '//mix/meson.sh' %}
 
 {% block fetch %}
 https://www.freedesktop.org/software/fontconfig/release/fontconfig-2.13.94.tar.xz

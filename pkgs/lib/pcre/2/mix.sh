@@ -1,4 +1,4 @@
-{% extends '//mix/template/autorehell.sh' %}
+{% extends '//mix/autorehell.sh' %}
 
 {% block fetch %}
 https://github.com/PhilipHazel/pcre2/archive/refs/tags/pcre2-10.39.tar.gz

@@ -1,4 +1,4 @@
-{% extends '//mix/template/py.py' %}
+{% extends '//mix/py.py' %}
 
 {% block env %}
 guess_flags() {

@@ -1,4 +1,4 @@
-{% extends '//mix/template/autorehell.sh' %}
+{% extends '//mix/autorehell.sh' %}
 
 {% block fetch %}
 https://www.alsa-project.org/files/pub/lib/alsa-lib-1.2.6.1.tar.bz2

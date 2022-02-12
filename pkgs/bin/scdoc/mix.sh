@@ -1,4 +1,4 @@
-{% extends '//mix/template/make.sh' %}
+{% extends '//mix/make.sh' %}
 
 {% block fetch %}
 https://git.sr.ht/~sircmpwn/scdoc/archive/1.11.2.tar.gz

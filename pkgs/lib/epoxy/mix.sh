@@ -1,4 +1,4 @@
-{% extends '//mix/template/meson.sh' %}
+{% extends '//mix/meson.sh' %}
 
 {% block fetch %}
 https://github.com/anholt/libepoxy/archive/refs/tags/1.5.9.tar.gz

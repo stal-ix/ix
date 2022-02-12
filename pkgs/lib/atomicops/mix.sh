@@ -1,4 +1,4 @@
-{% extends '//mix/template/cmake.sh' %}
+{% extends '//mix/cmake.sh' %}
 
 {% block fetch %}
 https://github.com/ivmai/libatomic_ops/archive/914862752503cac5c3e7e5be8a8af2f5b97153a8.zip

@@ -1,4 +1,4 @@
-{% extends '//mix/template/hub.sh' %}
+{% extends '//mix/hub.sh' %}
 
 {% block run_deps %}
 bin/gcc/11(for_target={{for_target}},bin_prefix={{for_target}})

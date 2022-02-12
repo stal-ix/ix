@@ -1,4 +1,4 @@
-{% extends '//mix/template/fonts.sh' %}
+{% extends '//mix/fonts.sh' %}
 
 {% block fetch %}
 https://github.com/FortAwesome/Font-Awesome/archive/refs/tags/5.15.4.tar.gz

@@ -1,4 +1,4 @@
-{% extends '//mix/template/cmake.sh' %}
+{% extends '//mix/cmake.sh' %}
 
 {% block fetch %}
 https://github.com/KhronosGroup/SPIRV-Tools/archive/refs/tags/v2021.4.tar.gz

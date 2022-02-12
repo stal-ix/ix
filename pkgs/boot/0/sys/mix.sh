@@ -1,4 +1,4 @@
-{% extends '//mix/template/py.py' %}
+{% extends '//mix/py.py' %}
 
 {% block ind_deps %}
 boot/0/sys/env

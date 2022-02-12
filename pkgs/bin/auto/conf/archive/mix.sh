@@ -1,4 +1,4 @@
-{% extends '//mix/template/autohell.sh' %}
+{% extends '//mix/autohell.sh' %}
 
 {% block fetch %}
 http://mirror.tochlab.net/pub/gnu/autoconf-archive/autoconf-archive-2021.02.19.tar.xz

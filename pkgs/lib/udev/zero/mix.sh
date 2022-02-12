@@ -1,4 +1,4 @@
-{% extends '//mix/template/make.sh' %}
+{% extends '//mix/make.sh' %}
 
 {% block fetch %}
 https://github.com/illiliti/libudev-zero/archive/938b959402552483f010401051eb800c04607a41.zip

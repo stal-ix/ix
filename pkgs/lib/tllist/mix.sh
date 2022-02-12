@@ -1,4 +1,4 @@
-{% extends '//mix/template/meson.sh' %}
+{% extends '//mix/meson.sh' %}
 
 {% block fetch %}
 https://codeberg.org/dnkl/tllist/archive/1.0.5.tar.gz

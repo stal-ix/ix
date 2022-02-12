@@ -1,4 +1,4 @@
-{% extends '//mix/template/meson.sh' %}
+{% extends '//mix/meson.sh' %}
 
 {% block fetch %}
 https://download.gnome.org/sources/glibmm/2.66/glibmm-2.66.2.tar.xz

@@ -1,4 +1,4 @@
-{% extends '//mix/template/meson.sh' %}
+{% extends '//mix/meson.sh' %}
 
 {% block fetch %}
 https://github.com/linuxwacom/libwacom/archive/refs/tags/libwacom-1.12.tar.gz

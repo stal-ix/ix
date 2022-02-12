@@ -1,4 +1,4 @@
-{% extends '//mix/template/c_std.sh' %}
+{% extends '//mix/c_std.sh' %}
 
 {% block fetch %}
 https://github.com/boostorg/build/archive/refs/tags/4.4.1.tar.gz

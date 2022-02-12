@@ -1,4 +1,4 @@
-{% extends '//mix/template/autorehell.sh' %}
+{% extends '//mix/autorehell.sh' %}
 
 {% block fetch %}
 http://www.oberhumer.com/opensource/ucl/download/ucl-1.03.tar.gz

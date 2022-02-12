@@ -1,4 +1,4 @@
-{% extends '//mix/template/autohell.sh' %}
+{% extends '//mix/autohell.sh' %}
 
 {% block fetch %}
 https://storage.yandexcloud.net/mix-cache/slang-2.3.2.tar.bz2

@@ -1,4 +1,4 @@
-{% extends '//mix/template/proxy.sh' %}
+{% extends '//mix/proxy.sh' %}
 
 {% block env_lib %}
 dl_stubs() {

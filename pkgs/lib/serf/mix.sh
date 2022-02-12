@@ -1,4 +1,4 @@
-{% extends '//mix/template/c_std.sh' %}
+{% extends '//mix/c_std.sh' %}
 
 {% block fetch %}
 https://www.apache.org/dist/serf/serf-1.3.9.tar.bz2

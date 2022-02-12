@@ -1,4 +1,4 @@
-{% extends '//mix/template/autorehell.sh' %}
+{% extends '//mix/autorehell.sh' %}
 
 {% block fetch %}
 https://launchpad.net/icontool/trunk/0.1/+download/icontool-0.1.0.tar.gz

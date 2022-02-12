@@ -1,4 +1,4 @@
-{% extends '//mix/template/make.sh' %}
+{% extends '//mix/make.sh' %}
 
 {% block fetch %}
 https://github.com/sabotage-linux/netbsd-curses/archive/refs/tags/v0.3.2.tar.gz

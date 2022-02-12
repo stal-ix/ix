@@ -1,4 +1,4 @@
-{% extends '//mix/template/cmake.sh' %}
+{% extends '//mix/cmake.sh' %}
 
 {% block fetch %}
 https://github.com/uclouvain/openjpeg/archive/refs/tags/v2.4.0.tar.gz

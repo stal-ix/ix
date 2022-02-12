@@ -1,4 +1,4 @@
-{% extends '//mix/template/autorehell.sh' %}
+{% extends '//mix/autorehell.sh' %}
 
 {% block fetch %}
 https://github.com/thom311/libnl/releases/download/libnl3_5_0/libnl-3.5.0.tar.gz

@@ -1,4 +1,4 @@
-{% extends '//mix/template/kconfig.sh' %}
+{% extends '//mix/kconfig.sh' %}
 
 {% block fetch %}
 https://busybox.net/downloads/busybox-1.35.0.tar.bz2

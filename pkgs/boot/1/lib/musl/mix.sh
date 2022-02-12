@@ -1,4 +1,4 @@
-{% extends '//mix/template/py.py' %}
+{% extends '//mix/py.py' %}
 
 {% block fetch %}
 https://musl.libc.org/releases/musl-1.2.2.tar.gz

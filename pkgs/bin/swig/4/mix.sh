@@ -1,4 +1,4 @@
-{% extends '//mix/template/autohell.sh' %}
+{% extends '//mix/autohell.sh' %}
 
 {% block fetch %}
 http://prdownloads.sourceforge.net/swig/swig-4.0.2.tar.gz

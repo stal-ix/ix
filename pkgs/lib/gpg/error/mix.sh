@@ -1,4 +1,4 @@
-{% extends '//mix/template/autohell.sh' %}
+{% extends '//mix/autohell.sh' %}
 
 {% block fetch %}
 https://gnupg.org/ftp/gcrypt/libgpg-error/libgpg-error-1.43.tar.bz2

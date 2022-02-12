@@ -1,4 +1,4 @@
-{% extends '//mix/template/cmake.sh' %}
+{% extends '//mix/cmake.sh' %}
 
 {% block fetch %}
 https://inkscape.org/gallery/item/29255/inkscape-1.1.1.tar.xz

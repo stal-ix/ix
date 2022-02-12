@@ -1,4 +1,4 @@
-{% extends '//mix/template/autohell.sh' %}
+{% extends '//mix/autohell.sh' %}
 
 {% block fetch %}
 https://common-lisp.net/project/ecl/static/files/release/ecl-21.2.1.tgz

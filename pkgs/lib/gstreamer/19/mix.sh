@@ -1,4 +1,4 @@
-{% extends '//mix/template/meson.sh' %}
+{% extends '//mix/meson.sh' %}
 
 {% block fetch %}
 https://gitlab.freedesktop.org/gstreamer/gstreamer/-/archive/1.19.3/gstreamer-1.19.3.tar.bz2

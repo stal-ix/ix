@@ -1,4 +1,4 @@
-{% extends '//mix/template/autorehell.sh' %}
+{% extends '//mix/autorehell.sh' %}
 
 {% block fetch %}
 https://github.com/NLnetLabs/unbound/archive/refs/tags/release-1.13.2.tar.gz

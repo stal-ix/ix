@@ -1,4 +1,4 @@
-{% extends '//mix/template/make.sh' %}
+{% extends '//mix/make.sh' %}
 
 {% block fetch %}
 https://launchpad.net/libvterm/trunk/v0.2/+download/libvterm-0.2.tar.gz

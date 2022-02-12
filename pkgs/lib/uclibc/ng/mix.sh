@@ -1,4 +1,4 @@
-{% extends '//mix/template/kconfig.sh' %}
+{% extends '//mix/kconfig.sh' %}
 
 {% block fetch %}
 https://downloads.uclibc-ng.org/releases/1.0.39/uClibc-ng-1.0.39.tar.xz

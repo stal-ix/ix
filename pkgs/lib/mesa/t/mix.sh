@@ -1,4 +1,4 @@
-{% extends '//mix/template/meson.sh' %}
+{% extends '//mix/meson.sh' %}
 
 {% block fetch %}
 https://gitlab.freedesktop.org/mesa/mesa/-/archive/mesa-21.3.4/mesa-mesa-21.3.4.tar.bz2

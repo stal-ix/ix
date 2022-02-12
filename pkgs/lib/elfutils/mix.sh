@@ -1,4 +1,4 @@
-{% extends '//mix/template/autorehell.sh' %}
+{% extends '//mix/autorehell.sh' %}
 
 {% block fetch %}
 https://sourceware.org/elfutils/ftp/0.186/elfutils-0.186.tar.bz2

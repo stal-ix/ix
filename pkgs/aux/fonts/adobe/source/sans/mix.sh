@@ -1,4 +1,4 @@
-{% extends '//mix/template/fonts.sh' %}
+{% extends '//mix/fonts.sh' %}
 
 {% block fetch %}
 https://github.com/adobe-fonts/source-sans/archive/refs/tags/3.046R.tar.gz

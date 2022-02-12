@@ -1,4 +1,4 @@
-{% extends '//mix/template/py.py' %}
+{% extends '//mix/py.py' %}
 
 {% block fetch %}
 https://storage.yandexcloud.net/mix-cache/{{self.link().strip()}}

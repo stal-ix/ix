@@ -1,4 +1,4 @@
-{% extends '//mix/template/c_std.sh' %}
+{% extends '//mix/c_std.sh' %}
 
 {% block fetch %}
 https://github.com/aklomp/base64/archive/refs/tags/v0.4.0.tar.gz
@@ -18,7 +18,8 @@ make bin/base64
 {% endblock %}
 
 {% block install %}
-mkdir ${out}/bin && cp bin/base64 ${out}/bin
+mkdir ${out}/bin
+cp bin/base64 ${out}/bin
 {% endblock %}
 
 {% block bld_libs %}

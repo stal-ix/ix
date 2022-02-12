@@ -1,7 +1,7 @@
-{% extends '//mix/template/cmake.sh' %}
+{% extends '//mix/cmake.sh' %}
 
 {% block fetch %}
-{% include '//mix/template/fetch_llvm.sh' %}
+{% include '//mix/fetch_llvm.sh' %}
 {% endblock %}
 
 {% block bld_libs %}

@@ -1,4 +1,4 @@
-{% extends '//mix/template/autorehell.sh' %}
+{% extends '//mix/autorehell.sh' %}
 
 {% block fetch %}
 https://github.com/libfuse/libfuse/archive/refs/tags/fuse-2.9.9.tar.gz

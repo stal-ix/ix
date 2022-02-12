@@ -1,4 +1,4 @@
-{% extends '//mix/template/dlstubs.sh' %}
+{% extends '//mix/dlstubs.sh' %}
 
 {% block lib_deps %}
 lib/mesa

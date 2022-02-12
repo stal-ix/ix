@@ -1,4 +1,4 @@
-{% extends '//mix/template/meson.sh' %}
+{% extends '//mix/meson.sh' %}
 
 {% block fetch %}
 https://github.com/harfbuzz/harfbuzz/archive/refs/tags/3.2.0.tar.gz

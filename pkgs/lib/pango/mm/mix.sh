@@ -1,4 +1,4 @@
-{% extends '//mix/template/meson.sh' %}
+{% extends '//mix/meson.sh' %}
 
 {% block fetch %}
 https://download.gnome.org/sources/pangomm/2.46/pangomm-2.46.2.tar.xz

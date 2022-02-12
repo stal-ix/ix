@@ -1,4 +1,4 @@
-{% extends '//mix/template/cmake.sh' %}
+{% extends '//mix/cmake.sh' %}
 
 {% block fetch %}
 #https://github.com/fmtlib/fmt/archive/refs/tags/8.1.1.tar.gz

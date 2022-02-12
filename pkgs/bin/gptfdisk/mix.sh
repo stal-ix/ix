@@ -1,4 +1,4 @@
-{% extends '//mix/template/make.sh' %}
+{% extends '//mix/make.sh' %}
 
 {% block fetch %}
 https://downloads.sourceforge.net/gptfdisk/gptfdisk-1.0.8.tar.gz

@@ -1,4 +1,4 @@
-{% extends '//mix/template/meson.sh' %}
+{% extends '//mix/meson.sh' %}
 
 {% block fetch %}
 https://git.sr.ht/~kennylevinsen/seatd/archive/0.6.3.tar.gz

@@ -1,4 +1,4 @@
-{% extends '//mix/template/autorehell.sh' %}
+{% extends '//mix/autorehell.sh' %}
 
 {% block fetch %}
 http://www.x.org/releases/individual/data/xkeyboard-config/xkeyboard-config-2.24.tar.bz2

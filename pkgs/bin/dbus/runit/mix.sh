@@ -1,4 +1,4 @@
-{% extends '//mix/template/proxy.sh' %}
+{% extends '//mix/proxy.sh' %}
 
 {% block run_deps %}
 bin/dbus/sys

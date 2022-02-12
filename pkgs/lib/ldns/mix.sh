@@ -1,4 +1,4 @@
-{% extends '//mix/template/autorehell.sh' %}
+{% extends '//mix/autorehell.sh' %}
 
 {% block fetch %}
 https://github.com/NLnetLabs/ldns/archive/refs/tags/release-1.7.1.tar.gz

@@ -1,4 +1,4 @@
-{% extends '//mix/template/autorehell.sh' %}
+{% extends '//mix/autorehell.sh' %}
 
 {% block fetch %}
 https://the.earth.li/~sgtatham/putty/latest/putty-0.76.tar.gz

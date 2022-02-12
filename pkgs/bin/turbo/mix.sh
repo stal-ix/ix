@@ -1,4 +1,4 @@
-{% extends '//mix/template/cmake.sh' %}
+{% extends '//mix/cmake.sh' %}
 
 {% block fetch %}
 https://github.com/magiblot/turbo/archive/971aad35d4b705228caa8852114438ee71d488d8.zip

@@ -1,4 +1,4 @@
-{% extends '//mix/template/c_std.sh' %}
+{% extends '//mix/c_std.sh' %}
 
 {% block fetch %}
 https://github.com/TartanLlama/expected/archive/refs/tags/v1.0.0.tar.gz

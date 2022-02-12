@@ -1,4 +1,4 @@
-{% extends '//mix/template/meson.sh' %}
+{% extends '//mix/meson.sh' %}
 
 {% block fetch %}
 https://www.freedesktop.org/software/libinput/libinput-1.19.3.tar.xz

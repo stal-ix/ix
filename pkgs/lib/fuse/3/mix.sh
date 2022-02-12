@@ -1,4 +1,4 @@
-{% extends '//mix/template/meson.sh' %}
+{% extends '//mix/meson.sh' %}
 
 {% block fetch %}
 https://github.com/libfuse/libfuse/archive/refs/tags/fuse-3.10.5.tar.gz

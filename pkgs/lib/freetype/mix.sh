@@ -1,4 +1,4 @@
-{% extends '//mix/template/autorehell.sh' %}
+{% extends '//mix/autorehell.sh' %}
 
 {% block fetch %}
 https://download.savannah.gnu.org/releases/freetype/freetype-2.11.0.tar.xz

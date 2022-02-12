@@ -1,4 +1,4 @@
-{% extends '//mix/template/autohell.sh' %}
+{% extends '//mix/autohell.sh' %}
 
 {% block fetch %}
 https://mirror.tochlab.net/pub/gnu/gawk/gawk-5.1.0.tar.xz

@@ -1,4 +1,4 @@
-{% extends '//mix/template/autorehell.sh' %}
+{% extends '//mix/autorehell.sh' %}
 
 {% block fetch %}
 https://mirrors.edge.kernel.org/pub/software/network/ethtool/ethtool-5.16.tar.xz

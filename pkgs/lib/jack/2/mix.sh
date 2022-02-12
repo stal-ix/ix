@@ -1,4 +1,4 @@
-{% extends '//mix/template/waf.sh' %}
+{% extends '//mix/waf.sh' %}
 
 {% block fetch %}
 https://github.com/jackaudio/jack2/archive/v1.9.19.tar.gz

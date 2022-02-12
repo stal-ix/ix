@@ -1,4 +1,4 @@
-{% extends '//mix/template/meson.sh' %}
+{% extends '//mix/meson.sh' %}
 
 {% block fetch %}
 https://codeberg.org/dnkl/fcft/archive/3.0.1.tar.gz

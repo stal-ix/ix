@@ -1,4 +1,4 @@
-{% extends '//boot/0/mix/template.sh' %}
+{% extends '//boot/0/mix.sh' %}
 
 {% block md5 %}
 9dc885670475ad994afdccdad56d4637

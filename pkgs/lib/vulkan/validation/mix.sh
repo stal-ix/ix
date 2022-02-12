@@ -1,4 +1,4 @@
-{% extends '//mix/template/cmake.sh' %}
+{% extends '//mix/cmake.sh' %}
 
 {% block fetch %}
 https://github.com/KhronosGroup/Vulkan-ValidationLayers/archive/3dfeacfe0ad07415a4cac3122f07991688d97a2a.zip

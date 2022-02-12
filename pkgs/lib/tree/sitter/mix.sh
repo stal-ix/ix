@@ -1,4 +1,4 @@
-{% extends '//mix/template/make.sh' %}
+{% extends '//mix/make.sh' %}
 
 {% block fetch %}
 https://github.com/tree-sitter/tree-sitter/archive/refs/tags/v0.20.1.tar.gz

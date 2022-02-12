@@ -1,4 +1,4 @@
-{% extends '//mix/template/py.py' %}
+{% extends '//mix/py.py' %}
 
 {% block fetch %}
 https://github.com/pg83/shutil/archive/refs/tags/v1.tar.gz

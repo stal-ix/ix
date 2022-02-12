@@ -1,4 +1,4 @@
-{% extends '//mix/template/cmake.sh' %}
+{% extends '//mix/cmake.sh' %}
 
 {% block fetch %}
 https://github.com/gnustep/libobjc2/archive/bdf03cb55da14943c8add1c45db7b5a93b656d59.zip

@@ -1,4 +1,4 @@
-{% extends '//mix/template/meson.sh' %}
+{% extends '//mix/meson.sh' %}
 
 {% block fetch %}
 https://hg.sr.ht/~scoopta/wofi/archive/v1.2.4.tar.gz

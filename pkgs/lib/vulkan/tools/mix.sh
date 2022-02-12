@@ -1,4 +1,4 @@
-{% extends '//mix/template/cmake.sh' %}
+{% extends '//mix/cmake.sh' %}
 
 {% block fetch %}
 https://github.com/KhronosGroup/Vulkan-Tools/archive/refs/tags/v1.2.201.tar.gz

@@ -1,4 +1,4 @@
-{% extends '//mix/template/cmake.sh' %}
+{% extends '//mix/cmake.sh' %}
 
 {% block fetch %}
 https://github.com/ivmai/bdwgc/archive/742febb2f662a45b69bc0c5faef2111d576694fd.zip

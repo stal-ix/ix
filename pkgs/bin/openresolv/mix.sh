@@ -1,4 +1,4 @@
-{% extends '//mix/template/make.sh' %}
+{% extends '//mix/make.sh' %}
 
 {% block fetch %}
 https://roy.marples.name/downloads/openresolv/openresolv-3.12.0.tar.xz

@@ -1,4 +1,4 @@
-{% extends '//mix/template/autorehell.sh' %}
+{% extends '//mix/autorehell.sh' %}
 
 {% block fetch %}
 https://git.savannah.nongnu.org/cgit/acl.git/snapshot/acl-2.3.1.tar.gz

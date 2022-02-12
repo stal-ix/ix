@@ -1,4 +1,4 @@
-{% extends '//mix/template/proxy.sh' %}
+{% extends '//mix/proxy.sh' %}
 
 {% block install %}
 cd ${out}; mkdir -p etc/services/sched10; cd etc/services/sched10

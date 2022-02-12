@@ -2,5 +2,5 @@
 
 {% block install %}
 {{super()}}
-cd ${out}/bin; ln -s yash sh
+cd ${out}/bin; mv yash sh
 {% endblock %}

@@ -1,4 +1,4 @@
-{% extends '//mix/template/cmake.sh' %}
+{% extends '//mix/cmake.sh' %}
 
 {% block fetch %}
 https://github.com/JuliaStrings/utf8proc/archive/refs/tags/v2.7.0.tar.gz

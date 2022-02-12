@@ -1,4 +1,4 @@
-{% extends '//mix/template/cmake.sh' %}
+{% extends '//mix/cmake.sh' %}
 
 {% block fetch %}
 https://github.com/libsdl-org/SDL/archive/refs/tags/release-2.0.20.tar.gz

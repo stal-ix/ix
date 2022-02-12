@@ -1,4 +1,4 @@
-{% extends '//mix/template/hub.sh' %}
+{% extends '//mix/hub.sh' %}
 
 {% block run_deps %}
 boot/9/flex/2.6.4.2.sh
