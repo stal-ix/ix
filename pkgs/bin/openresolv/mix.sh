@@ -14,7 +14,12 @@ LIBEXECDIR=/bin/bin_openresolv
 {% block install %}
 {{super()}}
 
-cd ${out}/etc
+cd ${out}
+
+mkdir -p share/man
+mv man* share/man/
+
+cd etc
 
 cat << EOF > resolvconf.conf
 resolv_conf=/var/run/resolvconf/resolv.conf

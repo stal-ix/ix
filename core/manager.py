@@ -116,7 +116,7 @@ class Manager:
         self.execute_graph(self.build_graph(pkgs))
 
     def execute_graph(self, graph):
-        self.collect_garbage(self.config.build_dir)
+        # self.collect_garbage(self.config.build_dir)
 
         stdin = json.dumps(graph).encode('utf-8')
         cmd = ['/bin/doas', 'mix', '-T', '/bin/mix', 'execute']
