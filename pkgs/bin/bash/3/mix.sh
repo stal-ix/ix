@@ -16,6 +16,7 @@ lib/iconv
 
 {% block bld_tool %}
 bin/byacc
+bin/texinfo
 {% endblock %}
 
 {% block patch %}
