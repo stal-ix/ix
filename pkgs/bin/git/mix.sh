@@ -9,6 +9,7 @@ sha:3b315a7e051bf9c439965072e8d424ce1e4ccca23eb6e8588b58a29f257bb75a
 lib/c
 lib/z
 lib/curl
+lib/intl
 lib/iconv
 lib/expat
 lib/pcre/2
@@ -29,4 +30,8 @@ bin/openssh
 gitexecdir=bin/{{uniq_id}}
 INSTALL_SYMLINKS=yes
 NO_REGEX=NeedsStartEnd
+{% endblock %}
+
+{% block setup_tools %}
+ln -s $(which bsdcpio) cpio
 {% endblock %}

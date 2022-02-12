@@ -10,7 +10,6 @@ lib/darwin/framework/CoreFoundation
 {% endif %}
 lib/z
 lib/c++
-lib/compiler_rt/builtins
 {% endblock %}
 
 {% block ind_deps %}

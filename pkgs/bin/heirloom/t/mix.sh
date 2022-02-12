@@ -32,10 +32,24 @@ export CFLAGS="-w -fcommon ${CFLAGS}"
 export PATH="${out}/bin:${PATH}"
 {% endblock %}
 
+{% block patch %}
+{% if target.os == 'darwin' %}
+>heirloom/libcommon/CHECK
+>heirloom/libcommon/headers
+>heirloom/libcommon/malloc.h
+echo 'char* pfmt_label__;' >> heirloom/nawk/lib.c
+echo 'char* pfmt_label__;' >> heirloom/grep/alloc.c
+echo 'char* pfmt_label__;' >> heirloom/diff/diff.c
+echo 'char* pfmt_label__;' >> heirloom/diff/diffh.c
+echo 'int sysv3;' >> heirloom/diff/diff.c
+echo 'char* pfmt_label__;' >> heirloom/cmp/cmp.c
+{% endif %}
+{% endblock %}
+
 {% block build %}
 export MAKE="{% block heirloom_make %}make{% endblock %}"
 
-xmake() {
+xmake() (
   ${MAKE} -f Makefile.mk CC=${CC} AR=${AR} RANLIB=${RANLIB} \
           INSTALL=install STRIP=true CFLAGS="${CFLAGS}"     \
           ROOT= LIBDIR="${out}/bin/lib" BINDIR="${out}/bin" \
@@ -45,7 +59,7 @@ xmake() {
           SV3BIN="${out}/bin" SU3BIN="${out}/bin"           \
           SUSBIN="${out}/bin" DEFBIN="${out}/bin"           \
           S42BIN="${out}/bin" DEFLIB="${out}/bin/lib" "$@"
-}
+)
 
 (cd heirloom-devtools/yacc; xmake; xmake install)
 (cd heirloom-devtools/lex; xmake; xmake install)

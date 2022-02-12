@@ -18,7 +18,9 @@ bld/bootbox
 {% block make_flags %}
 {% if target.os == 'linux' %}
 LD=ld.lld
-{% endif %}
+{% else %}
+LD=ld
+{%  endif %}
 {% endblock %}
 
 {% block cpp_defines %}

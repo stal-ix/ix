@@ -16,6 +16,9 @@ lib/bsd/overlay
 
 {% block std_box %}
 bld/bootbox
+bld/autohell
+bin/auto/conf/2/69
+bin/auto/make/1/16
 {% endblock %}
 
 {% block unpack %}
@@ -30,7 +33,9 @@ sed -e 's/__arm__/__eat_shit__/' -i configure
 
 {% block c_rename_symbol %}
 __crashreporter_info__
+{% if target.os == 'linux' %}
 reallocf
+{% endif %}
 {% endblock %}
 
 {% block setup %}
