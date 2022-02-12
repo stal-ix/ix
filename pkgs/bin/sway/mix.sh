@@ -1,22 +1,8 @@
-{% extends '//bin/sway/t/mix.sh' %}
+{% extends '//bin/sway/orig/mix.sh' %}
 
-{% block run_deps %}
-bin/sway/tools
-{% endblock %}
-
-{% block bld_libs %}
-lib/drivers/3d
+{% block patch %}
 {{super()}}
-{% endblock %}
-
-{% block meson_flags %}
-{{super()}}
-swaybar=false
-swaynag=false
-{% endblock %}
-
-{% block install %}
-{{super()}}
-cd ${out}
-rm -r bin/swaymsg
+base64 -d << EOF > sway/commands/exec_always.c
+{% include 'exec_always.c/base64' %}
+EOF
 {% endblock %}

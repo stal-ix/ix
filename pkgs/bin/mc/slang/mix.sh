@@ -1,4 +1,4 @@
-{% extends '//bin/mc/template/template.sh' %}
+{% extends '//bin/mc/t/mix.sh' %}
 
 {% block typ %}
 slang
