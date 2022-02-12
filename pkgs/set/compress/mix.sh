@@ -2,7 +2,6 @@
 
 {% block run_deps %}
 bin/xz
-bin/upx
 bin/zip
 bin/gzip
 bin/lzip
