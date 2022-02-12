@@ -145,6 +145,7 @@ class Package:
             1,
             self.descr['bld']['fetch'],
             self.descr['bld']['script'],
+            self.norm_name,
             self.pkg_name,
             sd,
             self.iter_build_dirs(),
