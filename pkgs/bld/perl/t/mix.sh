@@ -27,6 +27,13 @@ cat << EOF > install_name_tool
 EOF
 
 chmod +x install_name_tool
+
+cat << EOF > sw_vers
+#!$(which sh)
+echo "ProductVersion: 10.12"
+EOF
+
+chmod +x sw_vers
 {% endblock %}
 
 {% block patch %}

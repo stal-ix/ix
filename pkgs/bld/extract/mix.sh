@@ -20,6 +20,11 @@ bin/auto/make/1/16
 bin/pv
 {% endblock %}
 
+{% block configure_flags %}
+--without-xml2
+--without-expat
+{% endblock %}
+
 {% block env %}
 extract() (
     pv \${2} | bsdcat | bsdtar -x -f - --strip-components \${1}
