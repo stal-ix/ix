@@ -4,6 +4,11 @@
 aux/terminfo
 {% endblock %}
 
+{% block patch %}
+>misc/run_tic.in
+{{super()}}
+{% endblock %}
+
 {% block install %}
 {{super()}}
 

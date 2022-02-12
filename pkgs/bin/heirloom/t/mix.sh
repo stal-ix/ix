@@ -33,6 +33,7 @@ export PATH="${out}/bin:${PATH}"
 {% endblock %}
 
 {% block patch %}
+: patch
 {% if target.os == 'darwin' %}
 >heirloom/libcommon/CHECK
 >heirloom/libcommon/headers

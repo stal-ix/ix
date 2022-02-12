@@ -29,3 +29,7 @@ echo '00000000000000001111111111111111' > machine-id
 
 ln -s /proc/self/mounts mtab
 {% endblock %}
+
+{% block cleanup_pkg %}
+:
+{% endblock %}

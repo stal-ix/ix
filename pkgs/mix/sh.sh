@@ -69,6 +69,12 @@ if command -v find; then
     ) | while read l; do
         rm ${l}
     done
+
+    find ${out} | sort -r | while read l; do
+        chmod a-w "${l}"
+    done
+
+    chmod +w ${out}
 fi
 {% endblock %}
 rm -rf ${tmp}
