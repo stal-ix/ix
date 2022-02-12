@@ -24,6 +24,11 @@ extract0 ${src}/*.gz; cd *
 export PATH="${out}/bin:${PWD}:${PATH}"
 {% endblock %}
 
+{% block cpp_defines %}
+chroot=printf
+{{super()}}
+{% endblock %}
+
 {% block make_flags %}
 CC=${CC}
 AR=${AR}
