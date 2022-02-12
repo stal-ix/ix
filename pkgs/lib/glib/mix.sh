@@ -31,6 +31,7 @@ _GNU_SOURCE=1
 {% endblock %}
 
 {% block setup %}
+export OBJC=clang
 export CPPFLAGS="-I${PWD}/inc ${CPPFLAGS}"
 {% endblock %}
 
