@@ -52,7 +52,7 @@ bld/perl
 bld/ruby
 bin/gperf
 bld/python
-lib/wayland/protocols
+bin/wayland/protocols
 {% endblock %}
 
 {% block cmake_flags %}

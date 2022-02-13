@@ -6,6 +6,6 @@ lib/gtk/3
 {% endblock %}
 
 {% block bld_tool %}
-lib/wayland/protocols
+bin/wayland/protocols
 {{super()}}
 {% endblock %}

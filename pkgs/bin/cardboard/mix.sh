@@ -17,7 +17,7 @@ lib/drivers/3d
 {% endblock %}
 
 {% block bld_tool %}
-lib/wayland/protocols
+bin/wayland/protocols
 {% endblock %}
 
 {% block patch %}

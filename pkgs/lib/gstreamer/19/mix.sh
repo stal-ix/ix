@@ -32,7 +32,7 @@ bin/flex
 bin/gettext
 bin/bison/3/8
 lib/gstreamer/orc
-lib/wayland/protocols
+bin/wayland/protocols
 {% endblock %}
 
 {% block patch %}

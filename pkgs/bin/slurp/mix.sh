@@ -14,5 +14,5 @@ lib/xkbcommon
 
 {% block bld_tool %}
 bin/scdoc
-lib/wayland/protocols
+bin/wayland/protocols
 {% endblock %}

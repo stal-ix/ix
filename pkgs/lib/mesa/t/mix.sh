@@ -25,7 +25,7 @@ pip/Mako
 bin/flex
 bin/make
 bin/bison/3/8
-lib/wayland/protocols
+bin/wayland/protocols
 {% endblock %}
 
 {% block meson_flags %}

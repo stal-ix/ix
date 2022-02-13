@@ -1,17 +1,19 @@
 {% extends '//mix/make.sh' %}
 
 {% block fetch %}
-https://github.com/djpohly/dwl/archive/refs/tags/v0.2.1.tar.gz
-1930d1f8aa6b748863c2fbb6121b22c2
+https://git.sr.ht/~sircmpwn/wev/archive/1.0.0.tar.gz
+sha:613a1df1a4879d50ce72023de14aaf05be2e6f51346e84a69f50fc6d8502bbf4
 {% endblock %}
 
 {% block bld_libs %}
 lib/c
+lib/linux
 lib/wayland
-lib/wlroots/14
+lib/xkbcommon
 {% endblock %}
 
 {% block bld_tool %}
+bin/scdoc
 bin/pkg-config
 bin/wayland/protocols
 {% endblock %}

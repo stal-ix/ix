@@ -8,7 +8,7 @@ dc423f8072d20964ea6c05708a647803
 {% block bld_tool %}
 bin/flex
 bin/bison/3/8
-lib/wayland/protocols
+bin/wayland/protocols
 {% endblock %}
 
 {% block lib_deps %}

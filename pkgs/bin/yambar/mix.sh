@@ -18,7 +18,7 @@ lib/alsa/lib
 
 {% block bld_tool %}
 bin/scdoc
-lib/wayland/protocols
+bin/wayland/protocols
 {% endblock %}
 
 {% block meson_flags %}
