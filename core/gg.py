@@ -45,3 +45,7 @@ def execute_graph(graph):
         subprocess.run(cmd, shell=False, input=stdin, check=True, env={'DROPBEAR_PASSWORD': ''})
     except FileNotFoundError:
         ce.execute(graph)
+
+
+def run(nodes):
+    execute_graph(build_graph(nodes))

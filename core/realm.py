@@ -164,17 +164,12 @@ class Realm:
 
 
 def load_realm(mngr, name):
-    cu.step('load realm')
-
-    try:
-        return Realm(mngr, name, os.readlink(realm_path(mngr, name)))
-    finally:
-        cu.step('done loadrealm')
+    return Realm(mngr, name, os.readlink(realm_path(mngr, name)))
 
 
 def prepare_realm(mngr, name, pkgs):
     ctx = RealmCtx(mngr, name, pkgs)
 
-    cg.execute_graph(cg.build_graph([ctx]))
+    cg.run([ctx])
 
     return Realm(mngr, name, ctx.out_dir)
