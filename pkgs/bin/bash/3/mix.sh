@@ -7,10 +7,10 @@ https://ftp.gnu.org/gnu/bash/bash-3.2.57.tar.gz
 
 {% block bld_libs %}
 lib/c
-lib/readline
-lib/curses
 lib/intl
 lib/iconv
+lib/curses
+lib/readline
 {{super()}}
 {% endblock %}
 

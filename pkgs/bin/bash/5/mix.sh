@@ -2,10 +2,10 @@
 
 {% block bld_libs %}
 lib/c
-lib/readline
-lib/curses
-lib/iconv
 lib/intl
+lib/iconv
+lib/curses
+lib/readline
 {{super()}}
 {% endblock %}
 

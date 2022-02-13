@@ -32,5 +32,5 @@ bld/perl
 
 {% block configure %}
 {{super()}}
-cat Makefile | grep -v 'LIBINTL = ' > _ && mv _ Makefile
+sed -e 's|.*LIBINTL = .*||' -i Makefile
 {% endblock %}

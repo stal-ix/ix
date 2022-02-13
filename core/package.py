@@ -116,7 +116,7 @@ def canon_name(n):
     n = n.replace('aux-aux', 'aux')
     n = n.replace('bin-bld', 'bld')
 
-    return n
+    return n.lower()
 
 
 class Package:
