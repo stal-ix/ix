@@ -1,9 +1,11 @@
 import os
 import sys
 import json
+import base64
 import shutil
 import itertools
 
+import core.gg as cg
 import core.utils as cu
 
 
@@ -27,6 +29,128 @@ def collapse_pkgs(pkgs):
     return [{'name': x, 'flags': d[x]} for x in v]
 
 
+SCRIPT = '''
+import os
+import json
+import base64
+
+meta = json.loads(base64.b64decode("{meta}").decode())
+path = os.environ['out']
+
+os.makedirs(path)
+os.chdir(path)
+
+def iter_dir_1(w):
+    for a, b, c in os.walk(w):
+        for x in c:
+            yield os.path.join(a, x)
+
+        for x in b:
+            dl = os.path.join(a, x)
+
+            if os.path.islink(dl):
+                yield dl
+
+def iter_dir(w):
+    for x in iter_dir_1(w):
+        yield x[len(w) + 1:]
+
+def install(fr, to):
+    for x in iter_dir(fr):
+        if '/' not in x:
+            continue
+
+        # print(f'{fr} {x} {to}')
+        p = os.path.join(to, x)
+
+        try:
+            os.makedirs(os.path.dirname(p))
+        except Exception:
+            pass
+
+        try:
+            os.unlink(p)
+        except FileNotFoundError:
+            pass
+
+        pf = os.path.join(fr, x)
+        # print(f'symlink {pf} -> {p}')
+        os.symlink(pf, p)
+
+for p in reversed(meta['links']):
+    install(p, path)
+
+with open('meta.json', 'w') as f:
+    f.write(json.dumps(meta, indent=4, sort_keys=True))
+
+with open('touch', 'w') as f:
+    pass
+'''
+
+
+class RealmCtx:
+    def __init__(self, mngr, name, pkgs):
+        self.mngr = mngr
+        self.pkg_name = name
+        self.pkgs = pkgs
+
+        sd = self.mngr.config.store_dir
+        uids = [x.uid for x in self.iter_all_runtime_depends()]
+
+        self.uid = cu.struct_hash([1, self.pkg_name, sd, self.build_script()] + uids)
+        self.out_dir = f'{sd}/{self.uid}-{self.pkg_name}'
+
+    def calc_all_runtime_depends(self):
+        def iter_deps():
+            for p in self.mngr.load_packages(self.pkgs):
+                yield p
+                yield from p.iter_all_runtime_depends()
+
+        s = set()
+
+        for p in iter_deps():
+            if p.uid not in s:
+                s.add(p.uid)
+
+                if p.buildable():
+                    yield p
+
+    @cu.cached_method
+    def iter_all_runtime_depends(self):
+        return list(self.calc_all_runtime_depends())
+
+    def iter_all_build_depends(self):
+        return []
+
+    def iter_build_commands(self):
+        yield {
+            'in_dir': [x.out_dir for x in self.iter_all_runtime_depends()],
+            'out_dir': [self.out_dir],
+            'cmd': [self.build_cmd()],
+            'cache': False,
+        }
+
+    def buildable(self):
+        return True
+
+    def build_script(self):
+        descr = {
+            'pkgs': self.pkgs,
+            'links': [p.out_dir for p in self.iter_all_runtime_depends()],
+        }
+
+        return SCRIPT.replace('{meta}', base64.b64encode(json.dumps(descr).encode()).decode())
+
+    def build_cmd(self):
+        return {
+            'args': [sys.executable, self.mngr.config.binary, 'misc', 'runpy'],
+            'stdin': self.build_script(),
+            'env': {
+                'out': self.out_dir,
+            },
+        }
+
+
 class Realm:
     def __init__(self, mngr, name, path):
         self.name = name
@@ -37,9 +161,7 @@ class Realm:
             pass
 
         with open(os.path.join(self.path, 'meta.json'), 'r') as f:
-            data = f.read()
-            # print(data)
-            self.meta = json.loads(data)
+            self.meta = json.loads(f.read())
 
     @property
     def pkgs(self):
@@ -106,39 +228,8 @@ def load_realm(mngr, name):
 
 
 def prepare_realm(mngr, name, pkgs):
-    handles = list(mngr.iter_runtime_packages(pkgs))
-    cu.step('start build packages')
-    mngr.build_packages([p.selector for p in handles])
-    cu.step('done build packages')
-    uid = cu.struct_hash([14, name, pkgs] + cu.uniq_list([p.uid for p in handles]))
-    path = os.path.join(mngr.config.store_dir, uid)
-    touch = os.path.join(path, 'touch')
-    meta = os.path.join(path, 'meta.json')
+    ctx = RealmCtx(mngr, name, pkgs)
 
-    try:
-        return Realm(mngr, name, path)
-    except Exception:
-        pass
+    cg.execute_graph(cg.build_graph([ctx]))
 
-    try:
-        shutil.rmtree(path)
-    except Exception:
-        pass
-
-    os.makedirs(path)
-
-    for p in reversed(handles):
-        p.install(path)
-
-    with open(meta, 'w') as f:
-        descr = {
-            'pkgs': pkgs,
-            'links': [p.out_dir for p in handles],
-        }
-
-        f.write(json.dumps(descr, indent=4, sort_keys=True))
-
-    with open(touch, 'w') as f:
-        pass
-
-    return Realm(mngr, name, path)
+    return Realm(mngr, name, ctx.out_dir)

@@ -293,30 +293,6 @@ class Package:
     def iter_all_runtime_depends(self):
         return filter(lambda x: x.buildable(), self.run_closure())
 
-    def install(self, to):
-        fr = self.out_dir
-
-        for x in cu.iter_dir(fr):
-            if '/' not in x:
-                continue
-
-            # print(f'{fr} {x} {to}')
-            p = os.path.join(to, x)
-
-            try:
-                os.makedirs(os.path.dirname(p))
-            except Exception:
-                pass
-
-            try:
-                os.unlink(p)
-            except FileNotFoundError:
-                pass
-
-            pf = os.path.join(fr, x)
-            # print(f'symlink {pf} -> {p}')
-            os.symlink(pf, p)
-
     def buildable(self):
         return not not self.descr['bld']['script']
 

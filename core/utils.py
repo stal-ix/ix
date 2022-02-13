@@ -11,23 +11,6 @@ def copy_dict(d):
     return json.loads(json.dumps(d))
 
 
-def iter_dir_1(w):
-    for a, b, c in os.walk(w):
-        for x in c:
-            yield os.path.join(a, x)
-
-        for x in b:
-            dl = os.path.join(a, x)
-
-            if os.path.islink(dl):
-                yield dl
-
-
-def iter_dir(w):
-    for x in iter_dir_1(w):
-        yield x[len(w) + 1:]
-
-
 B62 = string.digits + string.ascii_letters + string.ascii_letters.upper()
 
 

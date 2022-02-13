@@ -1,16 +1,13 @@
 import os
 import time
-import json
 import shutil
 import random
-import subprocess
 
 import core.j2 as cj
 import core.vfs as cv
 import core.error as er
 import core.utils as cu
 import core.realm as cr
-import core.execute as ce
 import core.package as cp
 
 
@@ -58,48 +55,6 @@ class Manager:
         for s in ss:
             yield self.load_package(s)
 
-    def iter_runtime_packages(self, selectors):
-        def iter_deps():
-            for p in self.load_packages(selectors):
-                yield p
-                yield from p.iter_all_runtime_depends()
-
-        s = set()
-
-        for p in iter_deps():
-            if p.uid not in s:
-                s.add(p.uid)
-
-                if p.buildable():
-                    yield p
-
-    def iter_build_commands(self, selectors):
-        cu.step('load packages')
-
-        list(self.load_packages(selectors))
-
-        cu.step('iter commands')
-
-        for pkg in self._p.values():
-            try:
-                yield from list(pkg.iter_build_commands())
-            except Exception as e:
-                raise er.Error(f'can not render build commands for {pkg.name}: {e}')
-
-        cu.step('done')
-
-    def build_graph(self, selectors):
-        return {
-            'nodes': list(self.iter_build_commands(selectors)),
-            'targets': [self.load_package(x).out_dir + '/touch' for x in selectors],
-        }
-
-    # do not account flags
-    def all_packages(self):
-        for x in cu.iter_dir(self.config.where):
-            if os.path.basename(x) == 'mix.sh':
-                yield self.load_package({'name': x})
-
     def collect_garbage(self, path):
         base = os.path.basename(path)
 
@@ -110,18 +65,6 @@ class Manager:
             shutil.move(path, os.path.join(self.config.ensure_trash_dir(), base))
         except FileNotFoundError:
             pass
-
-    def build_packages(self, pkgs):
-        self.execute_graph(self.build_graph(pkgs))
-
-    def execute_graph(self, graph):
-        # self.collect_garbage(self.config.build_dir)
-
-        stdin = json.dumps(graph).encode('utf-8')
-        cmd = ['/bin/doas', 'mix', '-T', '/bin/mix', 'execute']
-        subprocess.run(cmd, shell=False, input=stdin, check=True, env={'DROPBEAR_PASSWORD': ''})
-
-        #ce.execute(graph)
 
     def load_realm(self, name):
         try:

@@ -173,9 +173,6 @@ def cmd_link(sb, extra):
 
 
 def iter_build_commands(self):
-    if not self.buildable():
-        return
-
     sb = ScriptBuilder(self.config)
     out_dir = self.out_dir
     urls = self.descr['bld']['fetch']
