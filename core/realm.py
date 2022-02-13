@@ -36,9 +36,9 @@ class RealmCtx:
         self.pkgs = pkgs
 
         sd = self.mngr.config.store_dir
-        uids = [x.uid for x in self.iter_all_runtime_depends()]
+        uids = [x.uid for x in self.iter_all_build_depends()]
 
-        self.uid = cu.struct_hash([2, self.pkg_name, sd, self.build_script()] + uids)
+        self.uid = cu.struct_hash([3, self.pkg_name, sd, self.build_script()] + uids)
         self.out_dir = f'{sd}/{self.uid}-rlm-{self.pkg_name}'
 
     def calc_all_runtime_depends(self):
@@ -60,12 +60,13 @@ class RealmCtx:
     def iter_all_runtime_depends(self):
         return list(self.calc_all_runtime_depends())
 
+    @cu.cached_method
     def iter_all_build_depends(self):
-        return []
+        return [self.mngr.load_package({'name': 'bld/python'})] + self.iter_all_runtime_depends()
 
     def iter_build_commands(self):
         yield {
-            'in_dir': [x.out_dir for x in self.iter_all_runtime_depends()],
+            'in_dir': [x.out_dir for x in self.iter_all_build_depends()],
             'out_dir': [self.out_dir],
             'cmd': [self.build_cmd()],
             'cache': False,
@@ -86,10 +87,11 @@ class RealmCtx:
 
     def build_cmd(self):
         return {
-            'args': [sys.executable, self.mngr.config.binary, 'misc', 'runpy'],
+            'args': ['python3'],
             'stdin': self.build_script(),
             'env': {
                 'out': self.out_dir,
+                'PATH': ':'.join((x.out_dir + '/bin' for x in self.iter_all_build_depends())),
             },
         }
 
