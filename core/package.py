@@ -268,12 +268,13 @@ class Package:
             if x['p'].buildable():
                 yield x
 
+    @cu.cached_method
     def iter_all_build_depends(self):
-        for x in self.iter_tagged_build_depends():
-            yield x['p']
+        return [x['p'] for x in self.iter_tagged_build_depends()]
 
+    @cu.cached_method
     def iter_build_dirs(self):
-        return list(x.out_dir for x in self.iter_all_build_depends())
+        return [x.out_dir for x in self.iter_all_build_depends()]
 
     @cu.cached_method
     def run_deps(self):

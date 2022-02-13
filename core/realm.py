@@ -38,8 +38,8 @@ class RealmCtx:
         sd = self.mngr.config.store_dir
         uids = [x.uid for x in self.iter_all_runtime_depends()]
 
-        self.uid = cu.struct_hash([1, self.pkg_name, sd, self.build_script()] + uids)
-        self.out_dir = f'{sd}/{self.uid}-{self.pkg_name}'
+        self.uid = cu.struct_hash([2, self.pkg_name, sd, self.build_script()] + uids)
+        self.out_dir = f'{sd}/{self.uid}-rlm-{self.pkg_name}'
 
     def calc_all_runtime_depends(self):
         def iter_deps():
