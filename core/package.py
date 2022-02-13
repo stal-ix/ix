@@ -4,6 +4,7 @@ import itertools
 
 import core.utils as cu
 import core.error as ce
+import core.gen_cmds as cg
 import core.render_ctx as cr
 
 
@@ -318,3 +319,6 @@ class Package:
 
     def buildable(self):
         return not not self.descr['bld']['script']
+
+    def iter_build_commands(self):
+        return cg.iter_build_commands(self)
