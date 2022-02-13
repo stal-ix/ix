@@ -69,7 +69,7 @@ cat Modules/Setup.stdlib.in \
 cat _ - << EOF > Modules/Setup.local
 _decimal _decimal/_decimal.c
 
-{% if target.os == 'darwin' %}
+{% if darwin %}
 _scproxy _scproxy.c
 {% endif %}
 

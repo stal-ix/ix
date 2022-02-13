@@ -7,7 +7,7 @@ https://github.com/jarun/nnn/archive/refs/tags/v4.3.tar.gz
 
 {% block bld_libs %}
 lib/c
-{% if target.os == 'linux' %}
+{% if linux %}
 lib/fts
 {% endif %}
 lib/curses

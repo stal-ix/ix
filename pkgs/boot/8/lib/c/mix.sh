@@ -1,10 +1,10 @@
 {% extends '//mix/hub.sh' %}
 
 {% block lib_deps %}
-{% if target.os == 'linux' %}
+{% if linux %}
 boot/8/lib/musl
 {% endif %}
-{% if target.os == 'darwin' %}
+{% if darwin %}
 lib/darwin/c
 {% endif %}
 {% endblock %}

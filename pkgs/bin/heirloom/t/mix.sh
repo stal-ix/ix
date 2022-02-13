@@ -34,7 +34,7 @@ export PATH="${out}/bin:${PATH}"
 
 {% block patch %}
 : patch
-{% if target.os == 'darwin' %}
+{% if darwin %}
 >heirloom/libcommon/CHECK
 >heirloom/libcommon/headers
 >heirloom/libcommon/malloc.h

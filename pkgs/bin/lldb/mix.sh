@@ -5,10 +5,10 @@
 {% endblock %}
 
 {% block bld_libs %}
-{% if target.os == 'linux' %}
+{% if linux %}
 lib/linux
 {% endif %}
-{% if target.os == 'darwin' %}
+{% if darwin %}
 lib/darwin/framework/CoreFoundation
 {% endif %}
 lib/c

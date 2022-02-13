@@ -6,7 +6,7 @@ ff3564fddcc2b9bd4a9c1d143aba4b4c
 {% endblock %}
 
 {% block bld_tool %}
-{% if target.os == 'darwin' %}
+{% if darwin %}
 bin/cctools
 {% endif %}
 {% endblock %}
@@ -16,7 +16,7 @@ bld/bootbox
 {% endblock %}
 
 {% block make_flags %}
-{% if target.os == 'linux' %}
+{% if linux %}
 LD=ld.lld
 {% else %}
 LD=ld
@@ -24,7 +24,7 @@ LD=ld
 {% endblock %}
 
 {% block cpp_defines %}
-{% if target.os == 'darwin' %}
+{% if darwin %}
 stat64=stat
 fstat64=fstat
 lstat64=lstat

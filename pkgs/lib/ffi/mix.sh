@@ -10,7 +10,7 @@ lib/c
 {% endblock %}
 
 {% block bld_libs %}
-{% if target.os == 'linux' %}
+{% if linux %}
 lib/linux
 {% endif %}
 {% endblock %}

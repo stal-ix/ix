@@ -1,10 +1,10 @@
 {% extends '//lib/python/3/10/mix.sh' %}
 
 {% block bld_libs %}
-{% if target.os == 'linux' %}
+{% if linux %}
 boot/7/lib/linux
 {% endif %}
-{% if target.os == 'darwin' %}
+{% if darwin %}
 lib/darwin/framework/SystemConfiguration
 {% endif %}
 boot/7/lib/z

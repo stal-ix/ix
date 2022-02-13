@@ -12,14 +12,14 @@ lib/ffi
 lib/intl
 lib/pcre
 lib/iconv
-{% if target.os == 'darwin' %}
+{% if darwin %}
 lib/darwin/framework/CoreServices
 lib/darwin/framework/Foundation
 {% endif %}
 {% endblock %}
 
 {% block std_box %}
-{% if target.os == 'darwin' %}
+{% if darwin %}
 bin/cctools
 {% endif %}
 bin/meson

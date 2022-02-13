@@ -23,7 +23,7 @@ EOF
 
 chmod +x arch ps strip hostname ldconfig
 
-{% if target.os == 'darwin' %}
+{% if darwin %}
 cat << EOF > sw_vers
 #!$(which sh)
 echo ${MACOSX_DEPLOYMENT_TARGET}

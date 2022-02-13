@@ -7,7 +7,7 @@
 lib/c
 lib/z
 lib/ffi
-{% if target.os == 'darwin' %}
+{% if darwin %}
 lib/darwin/framework/SystemConfiguration
 {% endif %}
 {{super()}}

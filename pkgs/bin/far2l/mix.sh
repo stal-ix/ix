@@ -16,7 +16,7 @@ lib/archive
 lib/xerces-c
 lib/uchardet
 lib/execinfo
-{% if target.os == 'linux' %}
+{% if linux %}
 lib/linux
 {% endif %}
 {% endblock %}

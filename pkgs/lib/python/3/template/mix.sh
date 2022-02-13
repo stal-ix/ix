@@ -9,7 +9,7 @@ bin/auto/conf/archive
 {% endblock %}
 
 {% block bld_libs %}
-{% if target.os == 'linux' %}
+{% if linux %}
 lib/linux
 {% endif %}
 {% endblock %}
@@ -56,7 +56,7 @@ _posixshmem _multiprocessing/posixshmem.c -I\$(srcdir)/Modules/_multiprocessing
 _multiprocessing _multiprocessing/multiprocessing.c _multiprocessing/semaphore.c -I\$(srcdir)/Modules/_multiprocessing
 _queue _queuemodule.c
 
-{% if target.os == 'darwin' %}
+{% if darwin %}
 _scproxy _scproxy.c
 {% endif %}
 

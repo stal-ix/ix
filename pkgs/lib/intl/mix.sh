@@ -9,7 +9,7 @@ https://ftp.gnu.org/pub/gnu/gettext/gettext-0.21.tar.gz
 lib/c
 lib/iconv
 
-{% if target.os == 'darwin' %}
+{% if darwin %}
 lib/darwin/framework/CoreFoundation
 {% endif %}
 {% endblock %}

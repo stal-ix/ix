@@ -9,7 +9,7 @@ https://github.com/tpoechtrager/cctools-port/archive/236a426c1205a3bfcf0dbb2e2fa
 lib/c
 lib/c++
 lib/objc
-{% if target.os == 'linux' %}
+{% if linux %}
 lib/bsd/overlay
 {% endif %}
 {% endblock %}
@@ -33,7 +33,7 @@ sed -e 's/__arm__/__eat_shit__/' -i configure
 
 {% block c_rename_symbol %}
 __crashreporter_info__
-{% if target.os == 'linux' %}
+{% if linux %}
 reallocf
 {% endif %}
 {% endblock %}
@@ -57,7 +57,7 @@ EOF
 {% endblock %}
 
 {% block configure_flags %}
-{% if target.os == 'darwin' %}
+{% if darwin %}
 --with-sysroot=${OSX_SDK}
 {% endif %}
 {% endblock %}

@@ -11,7 +11,7 @@ lib/edit
 {% endblock %}
 
 {% block cpp_defines %}
-{% if target.os == 'darwin' %}
+{% if darwin %}
 stat64=stat
 lstat64=lstat
 fstat64=fstat

@@ -16,7 +16,7 @@ bld/bootbox
 {% endblock %}
 
 {% block c_rename_symbol %}
-{% if target.os == 'darwin' %}
+{% if darwin %}
 glob
 fnmatch
 globfree

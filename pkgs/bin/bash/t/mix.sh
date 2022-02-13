@@ -16,7 +16,7 @@ xfree
 --enable-extended-glob
 --enable-job-control
 --enable-prompt-string-decoding
-{% if target.os == 'linux' %}
+{% if linux %}
 --enable-static-link
 {% endif %}
 {% endblock %}

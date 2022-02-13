@@ -15,7 +15,7 @@ lib/curses
 lib/openssl
 lib/mpdecimal
 lib/{{edit or 'edit'}}
-{% if target.os == 'darwin' %}
+{% if darwin %}
 lib/darwin/framework/SystemConfiguration
 {% endif %}
 {% endblock %}

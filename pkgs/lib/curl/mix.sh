@@ -15,7 +15,7 @@ lib/brotli
 lib/c-ares
 lib/nghttp2
 lib/{{curlssl or 'openssl'}}
-{% if target.os == 'darwin' %}
+{% if darwin %}
 lib/darwin/framework/SystemConfiguration
 {% endif %}
 {% endblock %}

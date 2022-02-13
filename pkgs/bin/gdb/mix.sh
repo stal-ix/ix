@@ -22,7 +22,7 @@ lib/readline
 
 bin/gdb/py(edit=readline)
 
-{% if target.os == 'linux' %}
+{% if linux %}
 lib/linux
 {% endif %}
 {% endblock %}

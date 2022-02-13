@@ -7,13 +7,13 @@ https://github.com/Juniper/libxo/archive/refs/tags/1.6.0.tar.gz
 
 {% block lib_deps %}
 lib/c
-{% if target.os == 'linux' %}
+{% if linux %}
 lib/bsd
 {% endif %}
 {% endblock %}
 
 {% block bld_libs %}
-{% if target.os == 'linux' %}
+{% if linux %}
 lib/bsd/overlay
 {% endif %}
 {% endblock %}

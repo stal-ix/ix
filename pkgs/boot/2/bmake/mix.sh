@@ -23,7 +23,7 @@ extract0 ${src}/bmake*; cd bmake*
 {% endblock %}
 
 {% block step_setup %}
-{% if target.os == 'linux' %}
+{% if linux %}
 export CPPFLAGS="-Imissing -Dstrtoul=bmake_strtoul ${CPPFLAGS}"
 {% endif %}
 {{super()}}
@@ -34,7 +34,7 @@ cat << EOF > config.h
 {% include 'config.h' %}
 EOF
 
-{% if target.os == 'linux' %}
+{% if linux %}
 cat << EOF >> make.h
 #undef MAKE_RCSID
 #define MAKE_RCSID(x)

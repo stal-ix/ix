@@ -3,7 +3,7 @@
 {% block lib_deps %}
 lib/c/naked
 lib/c/alloc
-{% if target.os == 'linux' %}
+{% if linux %}
 lib/compiler_rt/builtins
 {% else %}
 # TODO(pg): fix builtins for darwin

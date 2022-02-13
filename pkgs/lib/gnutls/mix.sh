@@ -13,10 +13,10 @@ lib/idn/2
 lib/tasn1
 lib/nettle
 lib/unbound
-{% if target.os == 'linux' %}
+{% if linux %}
 lib/seccomp
 {% endif %}
-{% if target.os == 'darwin' %}
+{% if darwin %}
 lib/darwin/framework/Security
 {% endif %}
 lib/unistring
@@ -37,7 +37,7 @@ verbose
 
 {% block configure_flags %}
 --with-default-trust-store-file=${CA_BUNDLE}
-{% if target.os == 'darwin' %}
+{% if darwin %}
 --disable-hardware-acceleration
 {% endif %}
 --disable-tests
@@ -45,7 +45,7 @@ verbose
 {% endblock %}
 
 {% block patch %}
-{% if target.os == 'linux' %}
+{% if linux %}
 cat << EOF > src/gl/error.h
 #include_next <error.h>
 EOF

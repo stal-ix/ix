@@ -9,7 +9,7 @@ https://github.com/OpenVPN/openvpn/archive/refs/tags/v2.5.4.tar.gz
 lib/c
 lib/lz4
 lib/lzo
-{% if target.os == 'linux' %}
+{% if linux %}
 lib/linux
 {% endif %}
 lib/{{openvpnssl or 'openssl'}}

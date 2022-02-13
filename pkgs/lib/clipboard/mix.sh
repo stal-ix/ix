@@ -7,7 +7,7 @@ bddc22070b6804ed63994af49b778b70
 
 {% block lib_deps %}
 lib/c
-{% if target.os == 'darwin' %}
+{% if darwin %}
 lib/darwin/framework/AppKit
 {% endif %}
 {% endblock %}

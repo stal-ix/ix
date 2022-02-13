@@ -10,7 +10,7 @@ reallocarray
 {% endblock %}
 
 {% block cpp_defines %}
-{% if target.os == 'darwin' %}
+{% if darwin %}
 _DARWIN_C_SOURCE=1
 st_atim=st_atimespec
 st_mtim=st_mtimespec

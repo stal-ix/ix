@@ -9,7 +9,7 @@ https://nano-editor.org/dist/v6/nano-6.0.tar.xz
 lib/intl
 lib/curses
 
-{% if target.os == 'linux' %}
+{% if linux %}
 lib/linux
 {% endif %}
 {% endblock %}

@@ -1,7 +1,7 @@
 {% extends '//mix/hub.sh' %}
 
 {% block lib_deps %}
-{% if target.os == 'linux' %}
+{% if linux %}
 lib/{{allocator or 'mimalloc'}}
 {% else %}
 {% if allocator %}

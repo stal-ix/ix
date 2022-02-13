@@ -1,7 +1,7 @@
 {% extends 'ninja.sh' %}
 
 {% block std_box %}
-{% if target.os == 'darwin' %}
+{% if darwin %}
 bin/cctools
 {% endif %}
 bin/meson
@@ -54,7 +54,7 @@ prefix="${out}"
 default_library=static
 werror=false
 
-{% if target.os == 'darwin' %}
+{% if darwin %}
 b_asneeded=false
 b_lundef=false
 {% endif %}

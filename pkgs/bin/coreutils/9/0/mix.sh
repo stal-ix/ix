@@ -10,7 +10,7 @@ lib/c
 lib/gmp
 lib/openssl/1
 
-{% if target.os == 'linux' %}
+{% if linux %}
 lib/acl
 lib/cap
 lib/attr

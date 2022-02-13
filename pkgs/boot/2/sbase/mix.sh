@@ -25,7 +25,7 @@ export PATH="${out}/bin:${PWD}:${PATH}"
 {% endblock %}
 
 {% block cpp_defines %}
-{% if target.os == 'darwin' %}
+{% if darwin %}
 chroot=printf
 {% endif %}
 {{super()}}

@@ -10,7 +10,7 @@ lib/c
 lib/c++
 lib/glib
 lib/freetype
-{% if target.os == 'darwin' %}
+{% if darwin %}
 lib/darwin/framework/CoreText
 lib/darwin/framework/ApplicationServices
 {% endif %}
@@ -26,7 +26,7 @@ bin/ragel/6
 {% endblock %}
 
 {% block meson_flags %}
-{% if target.os == 'darwin' %}
+{% if darwin %}
 coretext=enabled
 {% endif %}
 glib=enabled

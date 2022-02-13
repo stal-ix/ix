@@ -18,7 +18,7 @@ python3 ${PYTHONHOME}/share/freeze/freeze.py -m {{self.entry_point()}} $(cat mod
 
 make -j ${make_thrs}
 
-{% if target.os == 'linux' %}
+{% if linux %}
 strip {{bin_out}}
 upx {{bin_out}}
 {% endif %}

@@ -95,6 +95,7 @@ class RenderContext:
             'name': pkg.name,
             'uniq_id': pkg.uniq_id,
             kind: True,
+            pkg.flags['target']['os']: True,
             'boot': pkg.name.startswith('boot/'),
         }, pkg.flags)
 

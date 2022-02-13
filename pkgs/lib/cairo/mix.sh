@@ -15,7 +15,7 @@ lib/opengl
 lib/freetype
 lib/fontconfig
 
-{% if target.os == 'darwin' %}
+{% if darwin %}
 lib/darwin/framework/ApplicationServices
 lib/darwin/framework/CoreGraphics
 {% endif %}

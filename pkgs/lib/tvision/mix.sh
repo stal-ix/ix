@@ -8,7 +8,7 @@ https://github.com/magiblot/tvision/archive/c36e190174463ece471bdd1c06959fb8dc34
 {% block lib_deps %}
 lib/c
 lib/c++
-{% if target.os == 'linux' %}
+{% if linux %}
 lib/linux
 {% endif %}
 lib/curses

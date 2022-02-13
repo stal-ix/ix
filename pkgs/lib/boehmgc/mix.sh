@@ -8,7 +8,7 @@ sha:b6065d4c6c80a04655894441321f182cb7b1d7fdfb3247f21f866a568468642c
 {% block lib_deps %}
 lib/c
 lib/atomicops
-{% if target.os == 'darwin' %}
+{% if darwin %}
 lib/darwin/framework/CoreFoundation
 {% endif %}
 {% endblock %}

@@ -15,7 +15,7 @@ boot/2/env
 {% endblock %}
 
 {% block patch %}
-{% if target.os == 'linux' %}
+{% if linux %}
 >lib/fnmatch.c
 {% endif %}
 {% endblock %}

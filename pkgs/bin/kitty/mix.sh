@@ -11,7 +11,7 @@ lib/png
 lib/lcms2
 lib/python
 lib/harfbuzz
-{% if target.os == 'darwin' %}
+{% if darwin %}
 lib/darwin/framework/IOKit
 lib/darwin/framework/Cocoa
 lib/darwin/framework/AppKit

@@ -1,7 +1,7 @@
 {% extends '//lib/llvm/t/mix.sh' %}
 
 {% block bld_libs %}
-{% if target.os == 'linux' %}
+{% if linux %}
 lib/linux
 {% endif %}
 lib/c/naked

@@ -1,7 +1,7 @@
 {% extends '//mix/hub.sh' %}
 
 {% block lib_deps %}
-{% if target.os == 'darwin' %}
+{% if darwin %}
 # use system objc runtime
 lib/darwin/c
 {% else %}

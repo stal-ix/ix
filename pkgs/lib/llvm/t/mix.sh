@@ -9,7 +9,7 @@ echo > llvm/unittests/Support/DynamicLibrary/CMakeLists.txt
 {% endblock %}
 
 {% block setup %}
-{% if target.os == 'darwin' %}
+{% if darwin %}
 export LDFLAGS="-Wl,-w ${LDFLAGS}"
 {% endif %}
 {% endblock %}
