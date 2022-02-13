@@ -257,19 +257,23 @@ class Package:
     def bld_lib_closure(self):
         return itertools.chain(self.bld_target_lib_closure(), self.bld_host_lib_closure())
 
-    def iter_all_build_depends(self):
+    def iter_all_tagged_build_depends(self):
         yield from add_kind('bin', self.bld_bin_closure())
         yield from add_kind('data', self.run_data())
         yield from add_kind('target lib', self.bld_target_lib_closure())
         yield from add_kind('host lib', self.bld_host_lib_closure())
 
-    def iter_build_depends(self):
-        pred = lambda x: x['p'].buildable()
+    def iter_tagged_build_depends(self):
+        for x in self.iter_all_tagged_build_depends():
+            if x['p'].buildable():
+                yield x
 
-        return filter(pred, self.iter_all_build_depends())
+    def iter_all_build_depends(self):
+        for x in self.iter_tagged_build_depends():
+            yield x['p']
 
     def iter_build_dirs(self):
-        return list(x['p'].out_dir for x in self.iter_build_depends())
+        return list(x.out_dir for x in self.iter_all_build_depends())
 
     @cu.cached_method
     def run_deps(self):

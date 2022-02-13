@@ -1,16 +1,12 @@
 import json
+import itertools
 import subprocess
 
 import core.execute as ce
 
 
 def rec_node_1(n):
-    yield n
-
-    for x in n.iter_all_build_depends():
-        yield x['p']
-
-    yield from n.iter_all_runtime_depends()
+    return itertools.chain([n], n.iter_all_build_depends(), n.iter_all_runtime_depends())
 
 
 def rec_nodes(n):

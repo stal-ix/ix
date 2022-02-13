@@ -96,7 +96,7 @@ class CmdBuild:
         t_lib = []
         h_bin = []
 
-        for pkg in self.package.iter_build_depends():
+        for pkg in self.package.iter_tagged_build_depends():
             p = pkg['p']
             k = pkg['kind']
 
