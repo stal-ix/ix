@@ -1,7 +1,7 @@
 {% extends '//bin/kernel/t/1/mix.sh' %}
 
 {% block kernel_name %}
-5.15.16
+5.15.23
 {% endblock %}
 
 {% block fetch %}
