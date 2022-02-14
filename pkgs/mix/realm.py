@@ -1,6 +1,7 @@
 import os
 import json
 import base64
+import subprocess
 
 
 meta = json.loads(base64.b64decode("{{meta}}").decode())
@@ -53,6 +54,18 @@ def install(fr, to):
 
 for p in reversed(meta['links']):
     install(p, path)
+
+
+SH = '''
+find fix/ -name '*.sh' | while read l; do
+    sh "${l}"
+done
+
+rm -rf fix
+'''
+
+
+subprocess.run(['sh'], check=True, input=SH.encode())
 
 
 with open('meta.json', 'w') as f:

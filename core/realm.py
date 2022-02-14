@@ -29,6 +29,17 @@ def collapse_pkgs(pkgs):
     return [{'name': x, 'flags': d[x]} for x in v]
 
 
+def flt(it):
+    s = set()
+
+    for p in it:
+        if p.uid not in s:
+            s.add(p.uid)
+
+            if p.buildable():
+                yield p
+
+
 class RealmCtx:
     def __init__(self, mngr, name, pkgs):
         self.mngr = mngr
@@ -47,22 +58,25 @@ class RealmCtx:
                 yield p
                 yield from p.iter_all_runtime_depends()
 
-        s = set()
-
-        for p in iter_deps():
-            if p.uid not in s:
-                s.add(p.uid)
-
-                if p.buildable():
-                    yield p
+        return flt(iter_deps())
 
     @cu.cached_method
     def iter_all_runtime_depends(self):
         return list(self.calc_all_runtime_depends())
 
+    def calc_all_build_depends(self):
+        def iter_deps():
+            pkgs = [{'name': x} for x in ('bld/python', 'bld/sh', 'bld/bootbox')]
+
+            for p in self.mngr.load_packages(pkgs):
+                yield p
+                yield from p.iter_all_runtime_depends()
+
+        return flt(iter_deps())
+
     @cu.cached_method
     def iter_all_build_depends(self):
-        return [self.mngr.load_package({'name': 'bld/python'})] + self.iter_all_runtime_depends()
+        return list(self.calc_all_build_depends()) + self.iter_all_runtime_depends()
 
     def iter_build_commands(self):
         yield {

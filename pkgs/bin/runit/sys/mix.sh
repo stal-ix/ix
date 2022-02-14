@@ -24,16 +24,14 @@ chmod +x srv init
 
 cd ..
 
-mkdir -p etc/runit; cd etc/runit
-
-cat << EOF > 1
-#!/bin/sh
-cd /etc/runit/1.d
-
-ls | sort | while read l; do
-    sh \${l}
-done
+mkdir fix; cat << EOF > fix/run1.sh
+cd etc/runit
+cat \$(ls 1.d/*) > 1
+rm -rf 1.d
+chmod +x 1
 EOF
+
+mkdir -p etc/runit; cd etc/runit
 
 cat << EOF > 2
 #!/bin/sh
@@ -47,7 +45,7 @@ cat << EOF > 3
 exec halt
 EOF
 
-chmod +x 1 2 3
+chmod +x 2 3
 
 mkdir 1.d; cd 1.d
 

@@ -30,3 +30,8 @@ rm y.tab* lib/intl/plural.c
 --enable-readline
 --with-curses
 {% endblock %}
+
+{% block install %}
+{{super()}}
+cd ${out}; mv info share/
+{% endblock %}
