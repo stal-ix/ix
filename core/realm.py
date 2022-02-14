@@ -53,30 +53,24 @@ class RealmCtx:
         self.out_dir = f'{sd}/{self.uid}-rlm-{self.pkg_name}'
 
     def calc_all_runtime_depends(self):
-        def iter_deps():
-            for p in self.mngr.load_packages(self.pkgs):
-                yield p
-                yield from p.iter_all_runtime_depends()
-
-        return flt(iter_deps())
+        for p in self.mngr.load_packages(self.pkgs):
+            yield p
+            yield from p.iter_all_runtime_depends()
 
     @cu.cached_method
     def iter_all_runtime_depends(self):
-        return list(self.calc_all_runtime_depends())
+        return list(flt(self.calc_all_runtime_depends()))
 
     def calc_all_build_depends(self):
-        def iter_deps():
-            pkgs = [{'name': x} for x in ('bld/python', 'bld/sh', 'bld/bootbox')]
+        pkgs = [{'name': x} for x in ('bld/python', 'bld/sh', 'bld/bootbox')]
 
-            for p in self.mngr.load_packages(pkgs):
-                yield p
-                yield from p.iter_all_runtime_depends()
-
-        return flt(iter_deps())
+        for p in self.mngr.load_packages(pkgs):
+            yield p
+            yield from p.iter_all_runtime_depends()
 
     @cu.cached_method
     def iter_all_build_depends(self):
-        return list(self.calc_all_build_depends()) + self.iter_all_runtime_depends()
+        return list(flt(self.calc_all_build_depends())) + self.iter_all_runtime_depends()
 
     def iter_build_commands(self):
         yield {
