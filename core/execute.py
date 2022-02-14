@@ -1,6 +1,7 @@
 import os
 import sys
 import json
+import shutil
 import asyncio
 import beautysh
 import itertools
@@ -220,7 +221,13 @@ class Executor:
 
 
 def execute(g):
-    os.system(f'chrt -i -p 0 {os.getpid()}')
+    try:
+        cmd = [shutil.which('chrt'), '-i', '-p', '0', str(os.getpid())]
+        subprocess.check_output(cmd, stderr=subprocess.STDOUT)
+    except Exception:
+        # TODO(pg): log it
+        pass
+
     asyncio.run(Executor(g['nodes']).visit_all(g['targets']))
 
 

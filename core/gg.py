@@ -43,6 +43,7 @@ def execute_graph(graph):
     cmd = ['/bin/doas', 'mix', '-T', '/bin/mix', 'execute']
 
     try:
+        raise FileNotFoundError('x')
         subprocess.run(cmd, shell=False, input=stdin, check=True, env={'DROPBEAR_PASSWORD': ''})
     except FileNotFoundError:
         ce.execute(graph)
