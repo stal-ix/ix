@@ -1,7 +1,7 @@
 {% extends '//mix/proxy.sh' %}
 
 {% block run_deps %}
-bin/sched/10
+bin/sched(delay=10)
 {% endblock %}
 
 {% block install %}

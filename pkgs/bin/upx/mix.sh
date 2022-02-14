@@ -27,5 +27,5 @@ cd src
 {% endblock %}
 
 {% block install %}
-mkdir ${out}/bin && cp upx.out ${out}/bin/upx
+mkdir ${out}/bin; cp upx.out ${out}/bin/upx
 {% endblock %}
