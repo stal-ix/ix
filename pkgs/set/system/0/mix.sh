@@ -1,6 +1,6 @@
-{% extends '//set/system/1/mix.sh' %}
+{% extends '//mix/hub.sh' %}
 
 {% block run_deps %}
 bin/sched/staleprocs
-{{super()}}
+set/system/1
 {% endblock %}
