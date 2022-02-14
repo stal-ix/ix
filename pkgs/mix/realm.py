@@ -57,11 +57,13 @@ for p in reversed(meta['links']):
 
 
 SH = '''
-find fix/ -name '*.sh' | while read l; do
-    sh "${l}"
-done
+if test -d fix; then
+    find fix/ -name '*.sh' | while read l; do
+        sh "${l}"
+    done
 
-rm -rf fix
+    rm -r fix
+fi
 '''
 
 

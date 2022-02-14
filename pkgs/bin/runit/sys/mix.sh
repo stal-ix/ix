@@ -24,11 +24,8 @@ chmod +x srv init
 
 cd ..
 
-mkdir fix; cat << EOF > fix/run1.sh
-cd etc/runit
-cat \$(ls 1.d/*) > 1
-rm -rf 1.d
-chmod +x 1
+mkdir fix; base64 -d << EOF > fix/run1.sh
+{% include 'run1.sh/base64' %}
 EOF
 
 mkdir -p etc/runit; cd etc/runit
