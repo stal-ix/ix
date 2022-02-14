@@ -6,6 +6,7 @@
 mkdir -p ${out}/etc/runit/1.d; cd ${out}/etc/runit/1.d
 
 cat << EOF > 01-zram{{num}}.sh
+# enable swap on zram{{num}}
 echo '2048M' > /sys/block/zram{{num}}/disksize
 mkswap /dev/zram{{num}}
 swapon /dev/zram{{num}}
