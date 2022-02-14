@@ -72,7 +72,3 @@ subprocess.run(['sh'], check=True, input=SH.encode())
 
 with open('meta.json', 'w') as f:
     f.write(json.dumps(meta, indent=4, sort_keys=True))
-
-
-with open('touch', 'w') as f:
-    pass
