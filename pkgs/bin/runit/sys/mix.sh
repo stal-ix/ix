@@ -5,9 +5,7 @@ bin/runit
 {% endblock %}
 
 {% block install %}
-cd ${out}
-
-mkdir bin; cd bin
+cd ${out}; mkdir bin; cd bin
 
 base64 -d << EOF > srv
 {% include 'srv/base64' %}
@@ -47,30 +45,28 @@ chmod +x 2 3
 mkdir 1.d; cd 1.d
 
 cat << EOF > 00-mount-ro.sh
+# mount ro
 mount -t devtmpfs devtmpfs /dev
-
-#mount -t tmpfs tmpfs /dev
 mount -t sysfs sysfs /sys
 mount -t proc proc /proc
 mount -t cgroup2 none /sys/fs/cgroup
-
 mkdir /dev/pts /dev/shm
 mount -t devpts devpts /dev/pts
 mount -t tmpfs shmfs /dev/shm
 EOF
 
 cat << EOF > 10-mount-rw.sh
+# mount rw
 mount -o remount,rw none /
-
 mkdir -p /var/run /var/tmp /var/log
-
 mount -t tmpfs tmpfs /var/run
 mount -t tmpfs tmpfs /var/tmp
 EOF
 
 cat << EOF > 100-fini.sh
+# fini
 ifconfig lo 127.0.0.1
 echo 0 > /proc/sys/kernel/printk
-dmesg >> /var/log/boot
+dmesg > /var/log/boot
 EOF
 {% endblock %}
