@@ -22,3 +22,7 @@ sed -e 's|ifdef SKALIBS_HASDIRFD|if 1|' -i src/libstddjb/dir_fd.c
 cd ${out}/lib
 mv skalibs/*.a ./
 {% endblock %}
+
+{% block env %}
+export COFLAGS="--with-sysdeps=${out}/lib/skalibs/sysdeps \${COFLAGS}"
+{% endblock %}

@@ -21,7 +21,6 @@ bld/bootbox
 
 {% block configure_flags %}
 --with-nsssd-socket=/var/run/nsssd/nsssd.sock
---with-sysdeps=${lib_skalibs}/lib/skalibs/sysdeps
 {% endblock %}
 
 {% block install %}
