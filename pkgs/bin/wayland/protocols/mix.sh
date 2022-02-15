@@ -6,11 +6,11 @@ a66fa869543707279fb78a24d42cbb1d
 {% endblock %}
 
 {% block bld_tool %}
-lib/wayland
+bin/wayland/scanner
 {% endblock %}
 
 {% block run_deps %}
-lib/wayland
+bin/wayland/scanner
 {% endblock %}
 
 {% block bld_libs %}
