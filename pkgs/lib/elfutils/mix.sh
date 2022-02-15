@@ -28,11 +28,15 @@ bin/gettext
 {% endblock %}
 
 {% block patch %}
-mkdir sys && echo > sys/cdefs.h
+mkdir sys; echo > sys/cdefs.h
+{% endblock %}
+
+{% block patch_configure %}
+sed -e 's|"-shared"|""|' -i configure
 {% endblock %}
 
 {% block setup %}
-export CPPFLAGS="-I${PWD} ${CPPFLAGS}"
+export CPPFLAGS="-w -I${PWD} ${CPPFLAGS}"
 {% endblock %}
 
 {% block configure_flags %}
