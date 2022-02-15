@@ -16,6 +16,6 @@ bin/getopt
 {% endblock %}
 
 {% block run_deps %}
-lib/xslt
 bin/getopt
+bin/xsltproc
 {% endblock %}

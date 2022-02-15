@@ -1,14 +1,14 @@
 {% extends '//mix/meson.sh' %}
 
 {% block fetch %}
-https://codeberg.org/dnkl/foot/archive/1.10.3.tar.gz
-75e66a87d6e6e4e265d1219e459f53df
+https://codeberg.org/dnkl/foot/archive/1.11.0.tar.gz
+sha:2b4f737eb4d266224e5dd0126168c6d770b0139d4b572078baf158d2f7166e4e
 {% endblock %}
 
 {% block bld_libs %}
 lib/c
 lib/linux
-lib/fcft/2
+lib/fcft/3
 lib/tllist
 lib/pixman
 lib/wayland
@@ -21,4 +21,8 @@ lib/fontconfig
 bin/scdoc
 lib/curses/n
 bin/wayland/protocols
+{% endblock %}
+
+{% block cpp_defines %}
+__STDC_ISO_10646__=1
 {% endblock %}

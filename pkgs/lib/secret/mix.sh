@@ -13,7 +13,7 @@ lib/gcrypt
 
 {% block bld_tool %}
 lib/glib
-lib/xslt
+bin/xsltproc
 {% endblock %}
 
 {% block meson_flags %}

@@ -16,8 +16,8 @@ lib/c
 {% endblock %}
 
 {% block bld_tool %}
-lib/xslt
 bin/gettext
+bin/xsltproc
 lib/intl/tool
 bin/auto/conf/xorg
 {% endblock %}

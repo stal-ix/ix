@@ -123,6 +123,7 @@ mv epiphany epiphany-unwrapped
 cat << EOF > epiphany
 #!/usr/bin/env sh
 export WEBKIT_EXEC_PATH="\$(dirname \$(which WebKitWebProcess))"
+export XDG_DATA_DIRS="${out}/share:\${XDG_DATA_DIRS}"
 exec "${out}/bin/epiphany-unwrapped" "\$@"
 EOF
 
