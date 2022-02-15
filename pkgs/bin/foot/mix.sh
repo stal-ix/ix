@@ -22,7 +22,3 @@ bin/scdoc
 lib/curses/n
 bin/wayland/protocols
 {% endblock %}
-
-{% block cpp_defines %}
-__STDC_ISO_10646__=1
-{% endblock %}

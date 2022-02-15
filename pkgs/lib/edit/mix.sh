@@ -10,10 +10,6 @@ lib/c
 lib/curses
 {% endblock %}
 
-{% block cpp_defines %}
-__STDC_ISO_10646__=1
-{% endblock %}
-
 {% block env_lib %}
 export COFLAGS="--with-libedit=${out} \${COFLAGS}"
 {% endblock %}
