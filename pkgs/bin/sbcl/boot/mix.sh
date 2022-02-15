@@ -2,7 +2,7 @@
 
 {% block fetch %}
 https://nav.dl.sourceforge.net/project/sbcl/sbcl/2.1.7/sbcl-2.1.7-source.tar.bz2
-3f
+sha:12606f153832ae2003d2162a6b3a851a5e8969ccbbf7538d2b0fb32d17ea1dc6
 {% endblock %}
 
 {% block bld_libs %}
@@ -24,7 +24,7 @@ bin/ecl
 sed -e 's/lispobj \*static_code_space_free_pointer/extern lispobj \*static_code_space_free_pointer/' -i src/runtime/globals.h
 sed -e 's/size_t os_vm_page_size/extern size_t os_vm_page_size/' -i src/runtime/arm64-bsd-os.c
 
-cat << EOF | python3 $(which gen_dl_stubs.py) sbcl > symbols.cpp
+cat << EOF | dl_stubs sbcl > symbols.cpp
 {% include 'symbols' %}
 EOF
 {% endblock %}

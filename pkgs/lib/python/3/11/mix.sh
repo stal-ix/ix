@@ -1,8 +1,8 @@
 {% extends '//lib/python/3/10/mix.sh' %}
 
 {% block fetch %}
-https://www.python.org/ftp/python/3.11.0/Python-3.11.0a3.tar.xz
-7f51bc58150d223c162241d6896204a4
+https://www.python.org/ftp/python/3.11.0/Python-3.11.0a5.tar.xz
+sha:3dab241811e83f1eae691fd5b567c52b864db0b236ebf245e839250bc3ac399f
 {% endblock %}
 
 {% block lib_deps %}

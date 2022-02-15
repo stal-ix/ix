@@ -11,7 +11,7 @@ bin/openresolv
 bin/seatd/runit
 bin/dhcpcd/runit
 bin/mingetty/runit
-bin/sched/trashdir
+bin/sched/trashdir(delay=100)
 
 aux/etc
 bin/busybox/full

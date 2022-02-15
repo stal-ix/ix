@@ -1,11 +1,11 @@
 {% extends '//mix/proxy.sh' %}
 
 {% block run_deps %}
-bin/sched(delay=100)
+bin/sched(delay={{delay}})
 {% endblock %}
 
 {% block install %}
-cd ${out}; mkdir -p etc/sche.d/100; cd etc/sche.d/100
+cd ${out}; mkdir -p etc/sche.d/{{delay}}; cd etc/sche.d/{{delay}}
 
 cat << EOF > trashdir.sh
 rm -rf /mix/trash/*

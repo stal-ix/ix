@@ -1,7 +1,7 @@
 {% extends '//bin/sbcl/boot/mix.sh' %}
 
 {% block boot_lisp_dep %}
-bin/sbcl/bin
+bin/sbcl/boot
 {% endblock %}
 
 {% block boot_lisp %}
