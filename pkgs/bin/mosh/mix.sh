@@ -14,7 +14,7 @@ lib/openssl
 {% endblock %}
 
 {% block bld_tool %}
-lib/protobuf
+bin/protoc
 {% endblock %}
 
 {% block patch %}

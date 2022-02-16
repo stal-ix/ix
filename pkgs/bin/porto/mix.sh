@@ -22,7 +22,7 @@ lib/protobuf
 {% endblock %}
 
 {% block bld_tool %}
-lib/protobuf
+bin/protoc
 {% endblock %}
 
 {% block setup %}
