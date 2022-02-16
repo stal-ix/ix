@@ -1,19 +1,24 @@
-{% extends '//mix/std/mix.sh' %}
-
-{% block fetch %}
-https://github.com/archlinux/svntogit-community/archive/9c1088de663548eb993f74bf7ef2a2d4e169bafc.zip
-sha:e2687a90892fd5ac16a6a0e24d0d1f00068d0e844c223525fcb824856be586ea
-{% endblock %}
+{% extends '//mix/proxy.sh' %}
 
 {% block install %}
-mkdir -p ${out}/etc/acpi
+mkdir -p ${out}/etc/acpi; cd ${out}/etc/acpi
 
-cp trunk/anything trunk/*.sh ${out}/etc/acpi
+cat << EOF > anything
+event=.*
+action=/bin/sh /etc/acpi/handler.sh %e
+EOF
 
-cd ${out}/etc/acpi
+cat << EOF > handler.sh
+script="/etc/acpi/\${1}.sh"
+shift
+exec sh "\${script}" "\$@"
+EOF
 
-for x in *.sh; do
-    chmod +x ${x}
-    sed -e 's|/bin/bash|/bin/sh|' -i ${x}
-done
+mkdir button
+
+cat << EOF > button/lid.sh
+case \${2} in
+    close) echo -n mem > /sys/power/state ;;
+esac
+EOF
 {% endblock %}
