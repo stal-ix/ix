@@ -21,7 +21,7 @@ aux/iso-codes
 {% endblock %}
 
 {% block run_deps %}
-lib/webkit/webproc
+bin/webkitproc
 {% endblock %}
 
 {% block meson_flags %}

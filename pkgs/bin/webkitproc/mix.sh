@@ -1,11 +1,13 @@
-{% extends '//lib/webkit/mix.sh' %}
+{% extends '//lib/webkit/t/mix.sh' %}
 
 {% block bld_libs %}
-lib/webkit/drivers
+lib/mesa/gl
+lib/mesa/egl
+lib/drivers/3d
+lib/glib/networking
+lib/gstreamer/19/dl
 {{super()}}
 {% endblock %}
-
-{% block ninja_threads %}14{% endblock %}
 
 {% block install %}
 {{super()}}
