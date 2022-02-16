@@ -2,7 +2,7 @@
 
 {% block patch %}
 find . -type f | while read l; do
-    sed -e 's|/var/run/|/var/run/acpid2|' -i "${l}"
+    sed -e 's|/var/run/|/var/run/acpid2/|' -i "${l}"
 done
 
 {{super()}}

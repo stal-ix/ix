@@ -25,9 +25,7 @@ mkdir -p services/mdevd; cd services/mdevd
 
 cat << EOF > run
 #!/bin/sh
-mkdir -p /var/run/mdevd
-cd /var/run/mdevd
-exec flock lock mdevd -O 4 -f /etc/mdev.conf -C 1>>out 2>>out
+exec srv mdevd mdevd -O 4 -f /etc/mdev.conf -C
 EOF
 
 chmod +x run
