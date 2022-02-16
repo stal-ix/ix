@@ -1,4 +1,4 @@
-{% extends '//lib/webkit/mix.sh' %}
+{% extends '//bin/webkitproc/mix.sh' %}
 
 {% block bld_tool %}
 bin/pkg-config
