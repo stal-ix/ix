@@ -1,8 +1,8 @@
 {% extends '//mix/meson.sh' %}
 
 {% block fetch %}
-https://gitlab.gnome.org/GNOME/epiphany/-/archive/41.3/epiphany-41.3.tar.bz2
-sha:c4545d5e7ef4efd39964cac3ee680b5a238207b95f5f6c8ab747292303654b12
+https://download.gnome.org/sources/epiphany/42/epiphany-42.beta.tar.xz
+sha:bcd54291df8df709b75bfd17bbe090595ada83cbdb166323e81f41fcf8958c32
 {% endblock %}
 
 {% block bld_libs %}
@@ -22,7 +22,6 @@ aux/iso-codes
 
 {% block run_deps %}
 lib/webkit/webproc
-#lib/webkit/webproc(gtk_ver=3)
 {% endblock %}
 
 {% block meson_flags %}

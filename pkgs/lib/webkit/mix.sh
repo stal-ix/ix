@@ -38,20 +38,16 @@ lib/harfbuzz
 lib/jpeg/open
 lib/fontconfig
 lib/harfbuzz/icu
-lib/gstreamer/19/dl
-{% endblock %}
-
-{% block bld_libs %}
-lib/webkit/drivers
+lib/gstreamer/19
 {% endblock %}
 
 {% block bld_tool %}
 lib/glib
-bin/gettext
 bld/perl
 bld/ruby
 bin/gperf
 bld/python
+bin/gettext
 bin/wayland/protocols
 {% endblock %}
 

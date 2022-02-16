@@ -14,11 +14,12 @@ lib/nettle
 lib/webkit
 lib/secret
 lib/dazzle
+lib/webkit
 lib/sqlite3
 lib/archive
 lib/rsvg/reg
 lib/json/glib
 lib/gdk/pixbuf
-lib/webkit/drivers
+lib/glib/networking
 lib/gsettings/desktop/schemas
 {% endblock %}

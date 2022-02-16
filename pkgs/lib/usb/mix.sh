@@ -13,3 +13,7 @@ lib/udev
 {% block bld_libs %}
 lib/linux
 {% endblock %}
+
+{% block env_lib %}
+export CPPFLAGS="-I${out}/include/libusb-1.0 \${CPPFLAGS}"
+{% endblock %}

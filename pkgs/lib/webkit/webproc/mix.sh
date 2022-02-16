@@ -1,14 +1,19 @@
-{% extends '//mix/proxy.sh' %}
+{% extends '//lib/webkit/mix.sh' %}
 
 {% block bld_libs %}
-lib/webkit
+lib/webkit/drivers
+{{super()}}
 {% endblock %}
 
-{% block install %}
-cd ${out}; mkdir bin; cd bin
+{% block ninja_threads %}14{% endblock %}
 
-find ${lib_webkit} -type f -executable | while read l; do
-    cp "${l}" ./
+{% block install %}
+{{super()}}
+
+cd ${out}/bin
+
+find ${out} -type f -executable | while read l; do
+    mv "${l}" ./ || true
 done
 
 rm jsc
