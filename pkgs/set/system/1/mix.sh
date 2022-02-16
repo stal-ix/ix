@@ -8,6 +8,7 @@ bin/iwd/runit
 bin/runit/sys
 bin/dbus/runit
 bin/openresolv
+bin/acpid/runit
 bin/seatd/runit
 bin/dhcpcd/runit
 bin/mingetty/runit

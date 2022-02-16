@@ -18,5 +18,5 @@ find ${out} -type f -executable | while read l; do
     mv "${l}" ./ || true
 done
 
-rm jsc
+rm -rf jsc bin_*
 {% endblock %}
