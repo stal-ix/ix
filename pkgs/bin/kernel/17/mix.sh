@@ -17,7 +17,3 @@ bin/kernel/17/headers
 {% include 'cfg' %}
 {{super()}}
 {% endblock %}
-
-{% block build %}
-exit 1
-{% endblock %}
