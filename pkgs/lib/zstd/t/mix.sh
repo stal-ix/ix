@@ -1,8 +1,8 @@
 {% extends '//mix/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/facebook/zstd/releases/download/v1.5.0/zstd-1.5.0.tar.gz
-a6eb7fb1f2c21fa80030a47993853e92
+https://github.com/facebook/zstd/archive/refs/tags/v1.5.2.tar.gz
+sha:f7de13462f7a82c29ab865820149e778cbfe01087b3a55b5332707abf9db4a6e
 {% endblock %}
 
 {% block lib_deps %}
