@@ -27,11 +27,11 @@ aux/iso-codes
 {% endblock %}
 
 {% block bld_tool %}
+bin/orc
 lib/glib
 bin/flex
 bin/gettext
 bin/bison/3/8
-lib/gstreamer/orc
 bin/wayland/protocols
 {% endblock %}
 
