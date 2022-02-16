@@ -1,2 +1,2 @@
-https://www.kernel.org/pub/linux/kernel/v5.x/linux-5.15.23.tar.xz
-sha:e839c6fe4db9327178ecccc7fb14035000496bb8028a32735213675eefa97a1c
+https://www.kernel.org/pub/linux/kernel/v5.x/linux-5.15.24.tar.xz
+sha:f496eb03c88731540d483837f919c083148875a7b400468237f0217b5e5ca97f
