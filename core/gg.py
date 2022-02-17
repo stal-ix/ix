@@ -38,15 +38,5 @@ def build_graph(n):
     }
 
 
-def execute_graph(graph):
-    stdin = json.dumps(graph).encode()
-    cmd = ['/bin/doas', 'mix', '-T', '/bin/mix', 'execute']
-
-    try:
-        subprocess.run(cmd, shell=False, input=stdin, check=True, env={'DROPBEAR_PASSWORD': ''})
-    except FileNotFoundError:
-        ce.execute(graph)
-
-
-def run(nodes):
-    execute_graph(build_graph(nodes))
+def run(ops, nodes):
+    ops.execute_graph(build_graph(nodes))

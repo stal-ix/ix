@@ -1,6 +1,7 @@
 import os
 import platform
 
+import core.ops as co
 import core.utils as cu
 
 
@@ -113,6 +114,9 @@ class Config:
         self.binary = binary
         self.where = where
         self.mix_dir = root
+
+    def ops(self):
+        return co.construct(self)
 
     @property
     def store_dir(self):

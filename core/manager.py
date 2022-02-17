@@ -66,6 +66,11 @@ class Manager:
         except FileNotFoundError:
             pass
 
+    def gc_cycle(self):
+        for x in self.iter_garbage():
+            print(f'purge {x}')
+            self.collect_garbage(x)
+
     def load_realm(self, name):
         try:
             return cr.load_realm(self, name)

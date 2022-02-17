@@ -178,6 +178,6 @@ def load_realm(mngr, name):
 def prepare_realm(mngr, name, pkgs):
     ctx = RealmCtx(mngr, name, pkgs)
 
-    cg.run([ctx])
+    cg.run(mngr.config.ops(), [ctx])
 
     return Realm(mngr, name, ctx.out_dir)
