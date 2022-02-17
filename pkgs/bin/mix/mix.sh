@@ -12,6 +12,7 @@ pip/jinja2
 pip/certifi
 pip/urllib3
 pip/beautysh
+pip/markupsafe
 pip/setuptools
 {% endblock %}
 

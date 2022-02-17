@@ -108,9 +108,6 @@ def arch(n):
 
 class Config:
     def __init__(self, binary, where, root):
-        if not root:
-            root = os.path.expanduser('~/mix').replace('/mix/mix', '/mix')
-
         self.binary = binary
         self.where = where
         self.mix_dir = root

@@ -1,8 +1,23 @@
+import os
 import getpass
 
 
-def construct(cfg):
-    if getpass.getuser() == 'mix':
+def construct(cfg, kind=None):
+    if not kind:
+        if getpass.getuser() == 'mix':
+            kind = 'local'
+
+    if not kind:
+        kind = os.environ.get('MIX_EXEC_KIND', None)
+
+    if not kind:
+        if os.path.isfile('/bin/mix'):
+            kind = 'system'
+
+    if not kind:
+        kind = 'local'
+
+    if kind == 'local':
         import core.ops_loc as o
 
         return o.Ops(cfg)
