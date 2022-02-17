@@ -1,7 +1,7 @@
 {% extends '//bin/kernel/t/0/mix.sh' %}
 
 {% block run_data %}
-bin/kernel/firmware
+aux/firmware
 {% endblock %}
 
 {% block firmware %}
