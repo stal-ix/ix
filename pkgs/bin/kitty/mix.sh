@@ -11,6 +11,7 @@ lib/png
 lib/lcms2
 lib/python
 lib/harfbuzz
+
 {% if darwin %}
 lib/darwin/framework/IOKit
 lib/darwin/framework/Cocoa
@@ -21,17 +22,24 @@ lib/darwin/framework/CoreVideo
 lib/darwin/framework/CoreGraphics
 lib/darwin/framework/UserNotifications
 {% endif %}
+
+{% if linux %}
+lib/mesa
+lib/fontconfig
+{% endif %}
 {% endblock %}
 
 {% block bld_tool %}
+bld/python
+bin/pkg-config
 lib/dlfcn/scripts
 lib/python/scripts
-bin/pkg-config
 {% endblock %}
 
 {% block setup %}
 export CFLAGS="-w ${CFLAGS}"
-export PYTHONHOME=${lib_python_3_10}
+export PYTHONHOME="${lib_python_3_10}"
+export PYTHONPLATLIBDIR="${PYTHONHOME}/lib"
 {% endblock %}
 
 {% block patch %}

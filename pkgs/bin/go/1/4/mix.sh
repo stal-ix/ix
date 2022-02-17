@@ -1,4 +1,4 @@
-{% extends '//bin/go/template/mix.sh' %}
+{% extends '//bin/go/t/mix.sh' %}
 
 {% block fetch %}
 https://golang.org/dl/go1.4-bootstrap-20170531.tar.gz

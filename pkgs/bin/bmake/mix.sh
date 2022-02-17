@@ -15,6 +15,6 @@ prefix="${out}" sh make-bootstrap.sh
 
 {% block install %}
 mkdir -p ${out}/bin ${out}/share
-cp bmake ${out}/bin
+cp bmake ${out}/bin/
 cp -R mk ${out}/share/
 {% endblock %}
