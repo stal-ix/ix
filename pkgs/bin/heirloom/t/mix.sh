@@ -25,10 +25,14 @@ opterr
 EXTERN=extern
 {% endblock %}
 
+{% block build_flags %}
+shut_up
+{% endblock %}
+
 {% block setup %}
 export CPPFLAGS="-I${PWD}/heirloom/libcommon -I${PWD}/heirloom/libuxre ${CPPFLAGS}"
 export LDFLAGS="-L${PWD}/heirloom/libcommon -L${PWD}/heirloom/libuxre ${LDFLAGS}"
-export CFLAGS="-w -fcommon ${CFLAGS}"
+export CFLAGS="-fcommon ${CFLAGS}"
 export PATH="${out}/bin:${PATH}"
 {% endblock %}
 

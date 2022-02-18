@@ -16,9 +16,9 @@ lib/iconv
 bld/bash
 {% endblock %}
 
-{% block setup %}
+{% block build_flags %}
 # too much warnings with clang
-export CPPFLAGS="-w ${CPPFLAGS}"
+shut_up
 {% endblock %}
 
 {% block setup_tools %}

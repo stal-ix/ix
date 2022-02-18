@@ -35,8 +35,12 @@ mkdir sys; echo > sys/cdefs.h
 sed -e 's|"-shared"|""|' -i configure
 {% endblock %}
 
+{% block build_flags %}
+shut_up
+{% endblock %}
+
 {% block setup %}
-export CPPFLAGS="-w -I${PWD} ${CPPFLAGS}"
+export CPPFLAGS="-I${PWD} ${CPPFLAGS}"
 {% endblock %}
 
 {% block configure_flags %}

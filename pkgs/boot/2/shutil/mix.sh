@@ -13,7 +13,7 @@ boot/1/env
 {% endblock %}
 
 {% block script %}
-extract0 ${src}/*.gz && cd shutil*
+extract0 ${src}/*.gz; cd shutil*
 
 export PATH="${PWD}:${PATH}"
 

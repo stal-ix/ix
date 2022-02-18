@@ -21,8 +21,8 @@ mkdir src; cd src; extract1 ${src}/9.7.37.tar.gz
 {% include 'unpack.sh' %}
 {% endblock %}
 
-{% block setup %}
-export CPPFLAGS="-w ${CPPFLAGS}"
+{% block build_flags %}
+shut_up
 {% endblock %}
 
 {% block patch %}

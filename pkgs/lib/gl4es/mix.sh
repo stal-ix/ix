@@ -16,8 +16,12 @@ STATICLIB=ON
 NOX11=ON
 {% endblock %}
 
+{% block build_flags %}
+shut_up
+{% endblock %}
+
 {% block setup %}
-export CPPFLAGS="-w -DEGL_NO_X11=1 ${CPPFLAGS}"
+export CPPFLAGS="-DEGL_NO_X11=1 ${CPPFLAGS}"
 {% endblock %}
 
 {% block install %}

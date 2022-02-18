@@ -15,9 +15,12 @@ lib/bzip2
 bld/perl
 {% endblock %}
 
+{% block build_flags %}
+shut_up
+{% endblock%}
+
 {% block setup %}
 export SKIP_STRIP=y
-export CFLAGS="-w ${CFLAGS}"
 {% endblock %}
 
 {% block make_target %}

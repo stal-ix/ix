@@ -56,8 +56,12 @@ install-unwind
 _LIBUNWIND_USE_DLADDR=0
 {% endblock %}
 
+{% block build_flags %}
+shut_up
+{% endblock %}
+
 {% block setup %}
-export CPPFLAGS="-I${PWD}/libunwind/include -w ${CPPFLAGS}"
+export CPPFLAGS="-I${PWD}/libunwind/include ${CPPFLAGS}"
 {% endblock %}
 
 {% block patch %}

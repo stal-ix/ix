@@ -26,7 +26,10 @@ bin/bison/3/6
 --enable-deterministic-archives
 {% endblock %}
 
+{% block build_flags %}
+shut_up
+{% endblock %}
+
 {% block setup %}
-export CPPFLAGS="-w ${CPPFLAGS}"
 export acx_cv_cc_gcc_supports_ada=no
 {% endblock %}

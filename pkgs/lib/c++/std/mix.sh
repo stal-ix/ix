@@ -37,8 +37,12 @@ mkdir bld; cd bld
 __builtin_ia32_rdseed_si_step=__builtin_ia32_rdseed32_step
 {% endblock %}
 
+{% block build_flags %}
+shut_up
+{% endblock %}
+
 {% block setup %}
-export CFLAGS="-w -mrdrnd -mrdseed ${CFLAGS}"
+export CFLAGS="-mrdrnd -mrdseed ${CFLAGS}"
 {% endblock %}
 
 {% block setup_tools %}

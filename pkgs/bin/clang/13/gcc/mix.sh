@@ -14,8 +14,8 @@ EOF
 {{super()}}
 {% endblock %}
 
-{% block setup %}
-export CPPFLAGS="-w ${CPPFLAGS}"
+{% block build_flags %}
+shut_up
 {{super()}}
 {% endblock %}
 

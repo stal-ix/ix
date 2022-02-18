@@ -21,7 +21,6 @@ xfree
 {% endif %}
 {% endblock %}
 
-{% block setup %}
-export CPPFLAGS="-w ${CPPFLAGS}"
-{{super()}}
+{% block build_flags %}
+shut_up
 {% endblock %}

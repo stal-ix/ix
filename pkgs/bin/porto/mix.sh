@@ -25,7 +25,6 @@ lib/protobuf
 bin/protoc
 {% endblock %}
 
-{% block setup %}
-exit 123
-export CPPFLAGS="-w ${CPPFLAGS}"
+{% block build_flags %}
+shut_up
 {% endblock %}

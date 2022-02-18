@@ -17,8 +17,8 @@ stricmp
 strnicmp
 {% endblock %}
 
-{% block setup %}
-export CXXFLAGS="-w ${CXXFLAGS}"
+{% block build_flags %}
+shut_up
 {% endblock %}
 
 {% block cmake_flags %}

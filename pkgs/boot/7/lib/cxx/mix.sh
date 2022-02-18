@@ -24,8 +24,12 @@ _LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER=1
 LIBCXXRT=1
 {% endblock %}
 
+{% block build_flags %}
+shut_up
+{% endblock %}
+
 {% block setup %}
-export CPPFLAGS="-w -iquote src -Iinclude -std=c++14 ${CPPFLAGS}"
+export CPPFLAGS="-iquote src -Iinclude -std=c++14 ${CPPFLAGS}"
 {% endblock %}
 
 {% block unpack %}

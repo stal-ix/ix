@@ -1,5 +1,10 @@
 {% extends '//mix/base.sh' %}
 
+{% set build_flags %}
+{% block build_flags %}
+{% endblock %}
+{% endset %}
+
 {% block functions %}
 {{super()}}
 {% include 'functions.sh' %}

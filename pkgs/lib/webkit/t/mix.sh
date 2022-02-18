@@ -80,9 +80,13 @@ WL_EGL_PLATFORM=1
 EGL_NO_X11=1
 {% endblock %}
 
+{% block build_flags %}
+shut_up
+{% endblock %}
+
 {% block setup %}
 export CPPFLAGS=$(echo ${CPPFLAGS} | tr ' ' '\n' | grep -v mesa | tr '\n' ' ')
-export CPPFLAGS="-w -Wno-register ${CPPFLAGS}"
+export CPPFLAGS="-Wno-register ${CPPFLAGS}"
 {% endblock %}
 
 {% block patch %}

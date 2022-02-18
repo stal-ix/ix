@@ -51,6 +51,10 @@ fi
 
 {% block step_setup %}
 {% set cpp_flags %}
+  {% if 'shut_up' in build_flags  %}
+    -w
+  {% endif %}
+
   {% block cpp_flags %}
   {% endblock %}
 

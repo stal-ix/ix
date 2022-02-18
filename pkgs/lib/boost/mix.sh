@@ -34,8 +34,8 @@ b2 link=static
 b2 link=static install
 {% endblock %}
 
-{% block setup %}
-export CPPFLAGS="-w ${CPPFLAGS}"
+{% block build_flags %}
+shut_up
 {% endblock %}
 
 {% block patch %}

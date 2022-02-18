@@ -42,6 +42,6 @@ chmod +x lua
 sed -e 's|val->string|val->string.str|' -i src/nvim/terminal.c
 {% endblock %}
 
-{% block setup %}
-export CPPFLAGS="-w ${CPPFLAGS}"
+{% block build_flags %}
+shut_up
 {% endblock %}

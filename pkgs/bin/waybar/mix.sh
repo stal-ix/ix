@@ -39,6 +39,6 @@ gtk-layer-shell=enabled
 rfkill=enabled
 {% endblock %}
 
-{% block setup %}
-export CPPFLAGS="-w ${CPPFLAGS}"
+{% block build_flags %}
+shut_up
 {% endblock %}

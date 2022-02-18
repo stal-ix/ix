@@ -13,8 +13,8 @@ bin/m4
 bld/bootbox
 {% endblock %}
 
-{% block setup %}
-export CFLAGS="-w ${CFLAGS}"
+{% block build_flags %}
+shut_up
 {% endblock %}
 
 {% block install %}

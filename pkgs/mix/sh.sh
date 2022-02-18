@@ -62,11 +62,11 @@ export TMPDIR=${PWD}/tmp
 {% block cleanup_pkg %}
 if command -v find; then
     (
-        find ${out} -type f -name '*.la'
-        find ${out} -type f -name '*.so'
-        find ${out} -type f -name '*.so.*'
+        find ${out} -name '*.la'
+        find ${out} -name '*.so'
+        find ${out} -name '*.so.*'
         find ${out} -xtype l
-    ) | while read l; do
+    ) | sort | uniq | while read l; do
         rm ${l}
     done
 

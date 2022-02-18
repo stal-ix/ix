@@ -22,8 +22,12 @@ _LIBUNWIND_IS_NATIVE_ONLY=1
 _DEBUG=1
 {% endblock %}
 
+{% block build_flags %}
+shut_up
+{% endblock %}
+
 {% block setup %}
-export CPPFLAGS="-w -I${PWD}/src -I${PWD}/include -funwind-tables ${CPPFLAGS}"
+export CPPFLAGS="-I${PWD}/src -I${PWD}/include -funwind-tables ${CPPFLAGS}"
 export CXXFLAGS="-std=c++11 -fstrict-aliasing -fno-exceptions -fno-rtti ${CXXFLAGS}"
 export CONLYFLAGS="-std=c99 ${CFLAGS}"
 {% endblock %}
