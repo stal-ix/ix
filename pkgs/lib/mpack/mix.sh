@@ -9,11 +9,7 @@ ac4b25bfd0a07003ed8dac9c6dc851a6
 lib/c
 {% endblock %}
 
-{% block make_verbose %}
-{% endblock %}
-
-{% block make_verbose_1 %}
-VERBOSE=1
+{% block make_flags %}
 OUTDIR=./
 {% endblock %}
 

@@ -50,9 +50,6 @@ bin/binutils(for_target={{f}},bin_prefix={{f}})
 --with-native-system-header-dir=${out}
 {% endblock %}
 
-{% block make_verbose %}
-{% endblock %}
-
 {% block build_flags %}
 shut_up
 {% endblock %}
