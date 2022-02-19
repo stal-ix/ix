@@ -22,10 +22,15 @@ lib/intl/tool
 bin/auto/conf/xorg
 {% endblock %}
 
+{% block setup %}
+export XKB_CONFIG="${out}/share/xkb"
+{% endblock %}
+
 {% block configure_flags %}
+--with-xkb-base="${XKB_CONFIG}"
 --disable-runtime-deps
 {% endblock %}
 
 {% block env %}
-export XKB_CONFIG="${out}/share/X11/xkb"
+export XKB_CONFIG="${XKB_CONFIG}"
 {% endblock %}

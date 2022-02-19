@@ -18,13 +18,13 @@ lib/wayland
 {% endblock %}
 
 {% block run_data %}
-lib/xkbcommon/config
+aux/xkeyboard/config
 {% endblock %}
 
 {% block meson_flags %}
 enable-x11=false
 enable-docs=false
-xkb-config-root=${XKB_CONFIG}
+xkb-config-root="${XKB_CONFIG}"
 {% endblock %}
 
 {% block c_rename_symbol %}
