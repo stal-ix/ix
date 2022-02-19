@@ -19,8 +19,8 @@ MANDIR="${out}/man"
 UNIX
 {% endblock %}
 
-{% block setup %}
-export CPPFLAGS="-I. ${CPPFLAGS}"
+{% block cpp_includes %}
+.
 {% endblock %}
 
 {% block make_target %}

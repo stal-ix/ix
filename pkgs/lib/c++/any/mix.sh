@@ -60,8 +60,8 @@ _LIBUNWIND_USE_DLADDR=0
 shut_up
 {% endblock %}
 
-{% block setup %}
-export CPPFLAGS="-I${PWD}/libunwind/include ${CPPFLAGS}"
+{% block cpp_includes %}
+${PWD}/libunwind/include
 {% endblock %}
 
 {% block patch %}

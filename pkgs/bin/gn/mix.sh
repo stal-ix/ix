@@ -26,8 +26,8 @@ python3 build/gen.py          \
     --out-path {{self.ninja_build_dir()}}
 {% endblock %}
 
-{% block setup %}
-export CPPFLAGS="-I${PWD} ${CPPFLAGS}"
+{% block cpp_includes %}
+${PWD}
 {% endblock %}
 
 {% block patch %}

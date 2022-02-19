@@ -40,8 +40,12 @@ find . -type f | while read l; do
 done
 {% endblock %}
 
-{% block setup %}
-export CPPFLAGS="-I${PWD} -D_GNU_SOURCE=1 ${CPPFLAGS}"
+{% block cpp_defines %}
+_GNU_SOURCE=1
+{% endblock %}
+
+{% block cpp_includes %}
+${PWD}
 {% endblock %}
 
 {% block build %}

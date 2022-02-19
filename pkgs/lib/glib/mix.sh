@@ -30,9 +30,12 @@ bld/bootbox
 _GNU_SOURCE=1
 {% endblock %}
 
+{% block cpp_includes %}
+${PWD}/inc
+{% endblock %}
+
 {% block setup %}
 export OBJC=clang
-export CPPFLAGS="-I${PWD}/inc ${CPPFLAGS}"
 {% endblock %}
 
 {% block meson_flags %}

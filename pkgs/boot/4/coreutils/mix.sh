@@ -19,7 +19,10 @@ EOF
 chmod +x makeinfo
 {% endblock %}
 
+{% block cpp_includes %}
+${PWD}/lib
+{% endblock %}
+
 {% block setup %}
-export CPPFLAGS="-I${PWD}/lib ${CPPFLAGS}"
 export PATH="${PWD}/src:${PATH}"
 {% endblock %}

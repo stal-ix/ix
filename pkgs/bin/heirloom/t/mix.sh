@@ -29,8 +29,12 @@ EXTERN=extern
 shut_up
 {% endblock %}
 
+{% block cpp_includes %}
+${PWD}/heirloom/libcommon
+${PWD}/heirloom/libuxre
+{% endblock %}
+
 {% block setup %}
-export CPPFLAGS="-I${PWD}/heirloom/libcommon -I${PWD}/heirloom/libuxre ${CPPFLAGS}"
 export LDFLAGS="-L${PWD}/heirloom/libcommon -L${PWD}/heirloom/libuxre ${LDFLAGS}"
 export CFLAGS="-fcommon ${CFLAGS}"
 export PATH="${out}/bin:${PATH}"

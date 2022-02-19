@@ -52,9 +52,12 @@ WITH_LIBWPG=OFF
 WITH_GSPELL=OFF
 {% endblock %}
 
+{% block cpp_includes %}
+${PWD}
+{% endblock %}
+
 {% block setup %}
 export CXXFLAGS="-Wno-register ${CXXFLAGS}"
-export CPPFLAGS="-I${PWD} ${CPPFLAGS}"
 {% endblock %}
 
 {% block patch %}

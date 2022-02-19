@@ -75,6 +75,15 @@ fi
   {% for f in mix.parse_list(cpp_defines) %}
     -D{{f}}
   {% endfor %}
+
+  {% set cpp_includes %}
+    {% block cpp_includes %}
+    {% endblock %}
+  {% endset %}
+
+  {% for f in mix.parse_list(cpp_includes) %}
+    -I{{f}}
+  {% endfor %}
 {% endset %}
 
 {% for f in mix.parse_list(cpp_flags) %}

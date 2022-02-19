@@ -21,8 +21,12 @@ cd compiler-rt
 rm lib/builtins/atomic*
 {% endblock %}
 
-{% block setup %}
-export CPPFLAGS="'-D__has_feature(x)=0' -I../clang/lib/Headers -I${CPPFLAGS}"
+{% block cpp_defines %}
+__has_feature\(x\)=0
+{% endblock %}
+
+{% block cpp_includes %}
+../clang/lib/Headers
 {% endblock %}
 
 {% block build %}
@@ -34,5 +38,6 @@ ar qs libcompiler_rt.a *.o
 {% endblock %}
 
 {% block install %}
-mkdir ${out}/lib && cp libcompiler_rt.a ${out}/lib/
+mkdir ${out}/lib
+cp libcompiler_rt.a ${out}/lib/
 {% endblock %}

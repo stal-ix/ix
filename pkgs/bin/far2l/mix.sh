@@ -47,8 +47,8 @@ Ppmd8_DecodeSymbol
 Ppmd8_RangeDec_Init
 {% endblock %}
 
-{% block setup %}
-export CPPFLAGS="-I${PWD} ${CPPFLAGS}"
+{% block cpp_includes %}
+${PWD}
 {% endblock %}
 
 {% block cmake_flags %}

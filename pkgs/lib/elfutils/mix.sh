@@ -39,8 +39,8 @@ sed -e 's|"-shared"|""|' -i configure
 shut_up
 {% endblock %}
 
-{% block setup %}
-export CPPFLAGS="-I${PWD} ${CPPFLAGS}"
+{% block cpp_includes %}
+${PWD}
 {% endblock %}
 
 {% block configure_flags %}

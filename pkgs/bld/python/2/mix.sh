@@ -53,8 +53,10 @@ EOF
 --libdir=${out}/share/python2
 {% endblock %}
 
-{% block setup %}
-export CPPFLAGS="-I${PWD}/Modules/_io -I${PWD}/Modules/_ctypes -I${PWD}/Modules/expat ${CPPFLAGS}"
+{% block cpp_includes %}
+${PWD}/Modules/_io
+${PWD}/Modules/expat
+${PWD}/Modules/_ctypes
 {% endblock %}
 
 {% block install %}

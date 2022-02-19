@@ -20,8 +20,8 @@ NOX11=ON
 shut_up
 {% endblock %}
 
-{% block setup %}
-export CPPFLAGS="-DEGL_NO_X11=1 ${CPPFLAGS}"
+{% block cpp_defines %}
+EGL_NO_X11=1
 {% endblock %}
 
 {% block install %}

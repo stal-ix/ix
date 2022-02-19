@@ -26,10 +26,15 @@ _DEBUG=1
 shut_up
 {% endblock %}
 
+{% block cpp_includes %}
+${PWD}/src
+${PWD}/include
+{% endblock %}
+
 {% block setup %}
-export CPPFLAGS="-I${PWD}/src -I${PWD}/include -funwind-tables ${CPPFLAGS}"
+export CFLAGS="-funwind-tables ${CFLAGS}"
 export CXXFLAGS="-std=c++11 -fstrict-aliasing -fno-exceptions -fno-rtti ${CXXFLAGS}"
-export CONLYFLAGS="-std=c99 ${CFLAGS}"
+export CONLYFLAGS="-std=c99 ${CONLYFLAGS}"
 {% endblock %}
 
 {% block build %}
@@ -46,6 +51,6 @@ ar qs libunwind.a *.o
 
 {% block install %}
 mkdir ${out}/lib
-cp libunwind.a ${out}/lib
+cp libunwind.a ${out}/lib/
 cp -R include ${out}/
 {% endblock %}

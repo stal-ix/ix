@@ -23,8 +23,8 @@ globfree
 {% endif %}
 {% endblock %}
 
-{% block setup %}
-export CPPFLAGS="-I${PWD}/glob ${CPPFLAGS}"
+{% block cpp_includes %}
+${PWD}/glob
 {% endblock %}
 
 {% block configure_flags %}

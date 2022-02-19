@@ -25,8 +25,8 @@ find . -type f | while read l; do
 done
 {% endblock %}
 
-{% block setup %}
-export CPPFLAGS="-Db64_ntop\(x,y,z,k\)=-1 ${CPPFLAGS}"
+{% block cpp_defines %}
+b64_ntop\(x,y,z,k\)=-1
 {% endblock %}
 
 {% block install %}
