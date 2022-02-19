@@ -1,8 +1,8 @@
 {% extends '//mix/meson.sh' %}
 
 {% block fetch %}
-https://www.freedesktop.org/software/libinput/libinput-1.19.3.tar.xz
-a9f6fe8156739b51593674183cb25399
+https://gitlab.freedesktop.org/libinput/libinput/-/archive/1.20.0/libinput-1.20.0.tar.bz2
+sha:6c1f97892a7d599f97349e5e7c1239901fe00edcd4f6289f410034d5dc06cc85
 {% endblock %}
 
 {% block bld_libs %}
