@@ -1,7 +1,5 @@
-{% extends 'full/mix.sh' %}
+{% extends '//mix/hub.sh' %}
 
-{% block install %}
-{{super()}}
-cd ${out}/bin
-rm wget less
+{% block run_deps %}
+bin/busybox/bare(purec=musl/pure)
 {% endblock %}

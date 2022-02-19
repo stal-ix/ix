@@ -1,7 +1,7 @@
 {% extends '//mix/proxy.sh' %}
 
 {% block bld_tool %}
-bin/busybox/full
+bin/busybox
 {% endblock%}
 
 {% block install %}

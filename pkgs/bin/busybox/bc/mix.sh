@@ -1,4 +1,4 @@
-{% extends '//bin/busybox/full/mix.sh' %}
+{% extends '//bin/busybox/bare/mix.sh' %}
 
 {% block install %}
 {{super()}}

@@ -1,7 +1,7 @@
 {% extends '//mix/proxy.sh' %}
 
 {% block run_deps %}
-bin/busybox/full
+bin/busybox
 {% endblock %}
 
 {% block install %}

@@ -15,6 +15,6 @@ bin/mingetty/runit
 bin/sched/trashdir(delay=100)
 
 aux/etc
-bin/busybox/full
+bin/busybox
 bin/busybox/syslogd
 {% endblock %}
