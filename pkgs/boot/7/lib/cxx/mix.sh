@@ -1,7 +1,7 @@
 {% extends '//mix/c_std.sh' %}
 
 {% block fetch %}
-{% include '//lib/llvm/t/ver.sh' %}
+{% include '//lib/llvm/13/ver.sh' %}
 {% endblock %}
 
 {% block lib_deps %}

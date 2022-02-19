@@ -1,9 +1,5 @@
 {% extends '//mix/cmake.sh' %}
 
-{% block fetch %}
-{% include 'ver.sh' %}
-{% endblock %}
-
 {% block patch %}
 echo > llvm/unittests/Support/DynamicLibrary/CMakeLists.txt
 {% endblock %}

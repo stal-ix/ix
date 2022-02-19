@@ -1,5 +1,9 @@
 {% extends '//bin/clang/t/mix.sh' %}
 
+{% block fetch %}
+{% include '//lib/llvm/13/ver.sh' %}
+{% endblock %}
+
 {% block install %}
 {{super()}}
 

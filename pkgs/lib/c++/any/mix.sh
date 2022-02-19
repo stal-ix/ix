@@ -1,5 +1,9 @@
 {% extends '//lib/llvm/t/mix.sh' %}
 
+{% block fetch %}
+{% include '//lib/llvm/13/ver.sh' %}
+{% endblock %}
+
 {% block lib_deps %}
 lib/c/naked
 {% endblock %}

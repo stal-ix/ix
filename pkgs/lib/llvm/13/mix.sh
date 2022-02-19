@@ -1,5 +1,9 @@
 {% extends '//lib/llvm/t/mix.sh' %}
 
+{% block fetch %}
+{% include 'ver.sh' %}
+{% endblock %}
+
 {% block lib_deps %}
 lib/c
 lib/c++
