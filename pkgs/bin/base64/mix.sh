@@ -19,7 +19,7 @@ make bin/base64
 
 {% block install %}
 mkdir ${out}/bin
-cp bin/base64 ${out}/bin
+cp bin/base64 ${out}/bin/
 {% endblock %}
 
 {% block bld_libs %}
