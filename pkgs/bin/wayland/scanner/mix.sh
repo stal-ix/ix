@@ -6,16 +6,19 @@
 {% endblock %}
 {% endif %}
 
+{% block bld_libs %}
+lib/c
+lib/xml2
+lib/expat
+{% endblock %}
+
+{% block meson_flags %}
+{{super()}}
+libraries=false
+scanner=true
+{% endblock %}
+
 {% block install %}
 {{super()}}
-
-cd ${out}/lib/pkgconfig
-
-rm wayland-client.pc \
-   wayland-egl.pc    \
-   wayland-cursor.pc \
-   wayland-server.pc \
-   wayland-egl-backend.pc
-
 mv ${out}/lib/pkgconfig ${out}/share/
 {% endblock %}

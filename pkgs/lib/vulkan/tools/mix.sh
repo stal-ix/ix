@@ -7,7 +7,7 @@ bf84db0b41149f391066c2c7297dbdb3
 
 {% block bld_libs %}
 lib/c
-lib/mesa/drivers
+lib/drivers/3d
 lib/vulkan/loader
 lib/vulkan/headers
 {% endblock %}
