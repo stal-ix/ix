@@ -1,4 +1,4 @@
-{% extends '//lib/c++/14/mix.sh' %}
+{% extends '//lib/c++/any/mix.sh' %}
 
 {% block install %}
 {{super()}}

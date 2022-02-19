@@ -6,7 +6,7 @@ a06e57e9ae10a346ab8a1097c0838fef
 {% endblock %}
 
 {% block bld_libs %}
-lib/c++/14/headers
+lib/c++/headers
 {% endblock %}
 
 {% block std_box %}

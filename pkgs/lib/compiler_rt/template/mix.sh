@@ -1,7 +1,7 @@
 {% extends '//lib/llvm/t/mix.sh' %}
 
 {% block fetch %}
-{% include '//lib/llvm/13/ver.sh' %}
+{% include '//lib/llvm/14/ver.sh' %}
 {% endblock %}
 
 {% block bld_libs %}
