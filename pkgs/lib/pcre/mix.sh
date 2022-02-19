@@ -9,11 +9,6 @@ https://downloads.sourceforge.net/project/pcre/pcre/8.45/pcre-8.45.tar.bz2
 lib/c
 {% endblock %}
 
-{% block bld_libs %}
-lib/z
-lib/bzip2
-{% endblock %}
-
 {% block std_box %}
 bld/bootbox
 {% endblock %}
