@@ -42,12 +42,12 @@ lib/gstreamer/19
 {% endblock %}
 
 {% block bld_tool %}
-lib/glib
 bld/perl
 bld/ruby
 bin/gperf
 bld/python
 bin/gettext
+bin/glib/codegen
 bin/wayland/protocols
 {% endblock %}
 

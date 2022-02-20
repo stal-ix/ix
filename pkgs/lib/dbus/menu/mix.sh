@@ -14,10 +14,10 @@ lib/gtk/3
 {% endblock %}
 
 {% block bld_tool %}
-lib/glib
 bld/python
 bin/gettext
 lib/intl/tool
+bin/glib/codegen
 {% endblock %}
 
 {% block configure_flags %}

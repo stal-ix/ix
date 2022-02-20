@@ -28,10 +28,10 @@ aux/iso-codes
 
 {% block bld_tool %}
 bin/orc
-lib/glib
 bin/flex
 bin/gettext
 bin/bison/3/8
+bin/glib/codegen
 bin/wayland/protocols
 {% endblock %}
 

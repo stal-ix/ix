@@ -21,8 +21,8 @@ lib/cairo
 {% endblock %}
 
 {% block bld_tool %}
-lib/glib/mix.sh
 bin/ragel/6
+bin/glib/codegen
 {% endblock %}
 
 {% block meson_flags %}

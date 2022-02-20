@@ -10,9 +10,9 @@ bin/epiphany/libs(gtk_ver=3)
 {% endblock %}
 
 {% block bld_tool %}
-lib/glib
 lib/gtk/3
 bin/gettext
+bin/glib/codegen
 bin/meson/better
 {% endblock %}
 

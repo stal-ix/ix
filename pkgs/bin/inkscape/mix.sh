@@ -32,10 +32,10 @@ lib/double-conversion
 {% endblock %}
 
 {% block bld_tool %}
-lib/glib
 bld/python
 bin/gettext
 bin/ragel/6
+bin/glib/codegen
 {% endblock %}
 
 {% block cmake_flags %}

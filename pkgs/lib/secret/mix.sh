@@ -12,8 +12,8 @@ lib/gcrypt
 {% endblock %}
 
 {% block bld_tool %}
-lib/glib
 bin/xsltproc
+bin/glib/codegen
 {% endblock %}
 
 {% block meson_flags %}

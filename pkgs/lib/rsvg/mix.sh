@@ -14,8 +14,8 @@ lib/gdk/pixbuf
 {% endblock %}
 
 {% block bld_tool %}
-lib/glib
 bld/python
+bin/glib/codegen
 {% endblock %}
 
 {% block build_flags %}

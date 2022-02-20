@@ -22,7 +22,7 @@ lib/glib/networking
 {% endblock %}
 
 {% block bld_tool %}
-lib/glib
+bin/glib/codegen
 {% endblock %}
 
 {% block meson_flags %}
