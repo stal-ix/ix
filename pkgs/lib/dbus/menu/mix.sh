@@ -16,7 +16,7 @@ lib/gtk/3
 {% block bld_tool %}
 bld/python
 bin/gettext
-lib/intl/tool
+bin/intltool
 bin/glib/codegen
 {% endblock %}
 
@@ -27,6 +27,9 @@ bin/glib/codegen
 --enable-dumper=no
 {% endblock %}
 
-{% block strip_pc %}
-echo 'TODO(pg): check it'
+{% block install %}
+{{super()}}
+find ${out}/ -name '*.pc' | while read l; do
+    sed -e 's|.*bindir.*||' -i ${l}
+done
 {% endblock %}
