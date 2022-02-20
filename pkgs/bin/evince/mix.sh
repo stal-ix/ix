@@ -26,6 +26,7 @@ aux/adwaita/icons
 {% endblock %}
 
 {% block bld_tool %}
+lib/gtk/3
 bin/gettext
 bin/glib/codegen
 {% endblock %}
@@ -35,12 +36,4 @@ gtk_doc=false
 user_doc=false
 nautilus=false
 introspection=false
-{% endblock %}
-
-{% block setup_tools %}
-cat << EOF > gtk-update-icon-cache
-#!$(which sh)
-EOF
-
-chmod +x gtk-update-icon-cache
 {% endblock %}
