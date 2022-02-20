@@ -1,4 +1,4 @@
-{% extends '//bin/sbase/t/.sh' %}
+{% extends '//bin/sbase/t/mix.sh' %}
 
 {% block make_target %}
 sbase-box
