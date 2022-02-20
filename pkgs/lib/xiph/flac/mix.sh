@@ -9,10 +9,6 @@ https://github.com/xiph/flac/archive/refs/tags/1.3.3.tar.gz
 bin/gettext
 {% endblock %}
 
-{% block setup_tools %}
-ln -s $(which xgettext) gettext
-{% endblock %}
-
 {% block lib_deps %}
 lib/c
 {% endblock %}

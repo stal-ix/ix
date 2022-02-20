@@ -33,3 +33,9 @@ cd gettext-tools
 {% block configure_flags %}
 --with-installed-libtextstyle
 {% endblock %}
+
+{% block install %}
+{{super()}}
+cd ${out}/bin
+ln -s xgettext gettext
+{% endblock %}

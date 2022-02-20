@@ -23,10 +23,6 @@ bin/gettext
 bin/bison/3/8
 {% endblock %}
 
-{% block setup_tools %}
-ln -s $(which xgettext) gettext
-{% endblock %}
-
 {% block configure_flags %}
 --disable-makeinstall-chown
 --disable-makeinstall-setuid
@@ -40,5 +36,7 @@ mv hwclock-parse-date.tab.c hwclock-parse-date.c
 
 {% block install %}
 {{super()}}
-cd ${out}; mv sbin/* bin/; rm -r sbin
+cd ${out}
+mv sbin/* bin/
+rm -r sbin
 {% endblock %}
