@@ -1,8 +1,8 @@
 {% extends '//mix/kconfig.sh' %}
 
 {% block fetch %}
-https://downloads.uclibc-ng.org/releases/1.0.39/uClibc-ng-1.0.39.tar.xz
-ceeb95430ec00cc6f8006f746605be1d
+https://downloads.uclibc-ng.org/releases/1.0.40/uClibc-ng-1.0.40.tar.xz
+sha:d863f01815a64174d5019c73475e8aff5b60848a13876e79daf5d3d83ce7f889
 {% endblock %}
 
 {% block lib_deps %}

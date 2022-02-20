@@ -14,6 +14,7 @@ lib/intl
 
 {% block bld_tool %}
 bin/flex
+bld/perl
 bin/texinfo
 bin/bison/3/6
 {% endblock %}
