@@ -1,8 +1,8 @@
 {% extends '//mix/make.sh' %}
 
 {% block fetch %}
-https://github.com/rui314/mold/archive/733bb6354f9913a9fba599f1779620286f1e2e4c.zip
-042509fb0e9ed63ec730d41d732c4ca4
+https://github.com/rui314/mold/archive/refs/tags/v1.0.3.tar.gz
+sha:488c12058b4c7c77bff94c6f919e40b2f12c304214e2e0d7d4833c21167837c0
 {% endblock %}
 
 {% block bld_libs %}
@@ -10,16 +10,18 @@ lib/z
 lib/c
 lib/c++
 lib/xxhash
-lib/intel/tbb
 lib/openssl
+lib/intel/tbb
 {% endblock %}
 
 {% block bld_tool %}
-lib/z
+bin/gzip
+bin/pkg-config
 {% endblock %}
 
 {% block make_flags %}
 SYSTEM_MIMALLOC=1
+SYSTEM_XXHASH=1
 SYSTEM_TBB=1
 {% endblock %}
 
@@ -30,11 +32,7 @@ mold
 {% block patch %}
 rm -r third-party
 
-(
-
-    find . | grep '\.h$'
-    find . | grep '\.cc$'
-) | while read l; do
+(find . -name '*.h'; find . -name '*.cc') | while read l; do
     sed -e 's|PAGE_SIZE|MOLD_PAGE_SIZE|g' -i ${l}
 done
 {% endblock %}
