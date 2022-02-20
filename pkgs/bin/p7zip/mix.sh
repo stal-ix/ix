@@ -25,12 +25,6 @@ DEST_DIR=${out}
 
 {% block install %}
 {{super()}}
-
-(
-
-    cd ${out}/usr/local/ && mv * ${out}/
-    rm -rf ${out}/usr
-)
-
-install bin/7za ${out}/bin/
+mv ${out}/usr/local/* ${out}/
+rm -r ${out}/usr
 {% endblock %}

@@ -6,6 +6,7 @@ https://nano-editor.org/dist/v6/nano-6.0.tar.xz
 {% endblock %}
 
 {% block bld_libs %}
+lib/c
 lib/intl
 lib/curses
 

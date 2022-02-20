@@ -30,5 +30,6 @@ b64_ntop\(x,y,z,k\)=-1
 {% endblock %}
 
 {% block install %}
-mkdir ${out}/bin; cp nc ${out}/bin/
+mkdir ${out}/bin
+cp nc ${out}/bin/
 {% endblock %}

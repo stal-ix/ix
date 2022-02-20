@@ -10,7 +10,8 @@ bin/bison/3/7
 {% endblock %}
 
 {% block install %}
-mkdir ${out}/bin && cp a.out ${out}/bin/nawk
+mkdir ${out}/bin
+cp a.out ${out}/bin/nawk
 {% endblock %}
 
 {% block bld_libs %}

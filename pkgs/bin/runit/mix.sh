@@ -22,7 +22,7 @@ cd src
 {% block install %}
 mkdir ${out}/bin
 
-for i in $(cat package/commands); do
+cat package/commands | while read i; do
     cp src/${i} ${out}/bin/
 done
 {% endblock %}

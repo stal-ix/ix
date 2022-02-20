@@ -15,5 +15,6 @@ lib/c++
 {% endblock %}
 
 {% block install %}
-mkdir ${out}/bin && cp unrar ${out}/bin/
+mkdir ${out}/bin
+cp unrar ${out}/bin/
 {% endblock %}
