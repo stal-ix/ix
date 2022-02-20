@@ -8,6 +8,7 @@ sha:3346b01f9bdc8f2d5ffea92f110a090c64a3624942b5b543aad4592a9de33bb0
 {% block bld_libs %}
 lib/c
 lib/z
+lib/t1
 lib/intl
 lib/dbus
 lib/glib
@@ -16,6 +17,7 @@ lib/gtk/3
 lib/handy
 lib/secret
 lib/archive
+lib/djvulibre
 lib/gsettings/desktop/schemas
 {% endblock %}
 
