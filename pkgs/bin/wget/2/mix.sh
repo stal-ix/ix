@@ -30,9 +30,7 @@ bin/texinfo
 {% endblock %}
 
 {% block patch %}
-cat lib/xalloc-die.c      \
-    | grep -v 'memory ex' \
-    > _ && mv _ lib/xalloc-die.c
+sed -e 's|.*memory ex.*||' -i lib/xalloc-die.c
 {% endblock %}
 
 {% block install %}
