@@ -1,7 +1,7 @@
 {% extends '//mix/python/freeze.sh' %}
 
 {% block fetch %}
-{% include '//bin/gdb/version.sh' %}
+{% include '//bin/gdb/t/ver.sh' %}
 {% endblock %}
 
 {% block lib_deps %}
