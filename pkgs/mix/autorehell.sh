@@ -11,7 +11,7 @@
 {% block patch_configure %}
 {% block autoreconf %}
 {% if not boot %}
-for x in configure config.guess config.sub install-sh; do
+for x in {% block purge_autohell %}configure config.guess config.sub install-sh{% endblock %}; do
     find . -type f -name ${x} -delete
 done
 

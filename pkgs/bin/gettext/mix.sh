@@ -1,9 +1,11 @@
-{% extends '//mix/autohell.sh' %}
+{% extends '//mix/autorehell.sh' %}
 
 {% block fetch %}
 https://ftp.gnu.org/pub/gnu/gettext/gettext-0.21.tar.gz
 28b1cd4c94a74428723ed966c38cf479
 {% endblock %}
+
+{% block purge_autohell %}configure{% endblock %}
 
 {% block bld_libs %}
 lib/c
@@ -14,8 +16,8 @@ lib/textstyle
 {% endblock %}
 
 {% block bld_tool %}
-bin/bison/3/6
 bin/gzip
+bin/bison/3/6
 {% endblock %}
 
 {% block run_deps %}
