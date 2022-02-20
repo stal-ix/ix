@@ -10,6 +10,7 @@ lib/c
 lib/c++
 {% endblock %}
 
-{% block strip_pc %}
-echo 'TODO(pg): check it'
+{% block install %}
+{{super()}}
+sed -e 's|.*bindir.*||' -i ${out}/lib/pkgconfig/gflags.pc
 {% endblock %}

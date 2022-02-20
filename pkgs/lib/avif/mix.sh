@@ -1,28 +1,6 @@
-{% extends '//mix/cmake.sh' %}
+{% extends '//lib/avif/t/mix.sh' %}
 
-{% block fetch %}
-https://github.com/AOMediaCodec/libavif/archive/refs/tags/v0.9.0.tar.gz
-sha:ea1603fc18e7dd20cf01f0b405156576886ecb5df84db8c0e87187cd2f8a00f4
-{% endblock %}
-
-{% block lib_deps %}
-lib/c
-lib/z
-lib/aom
-lib/png
-lib/yuv
-lib/jpeg
-{% endblock %}
-
-{% block cmake_flags %}
-AVIF_CODEC_AOM=ON
-AVIF_BUILD_APPS=ON
-{% endblock %}
-
-{% block build_flags %}
-shut_up
-{% endblock %}
-
-{% block strip_pc %}
-echo 'TODO(pg): proper check'
+{% block install %}
+{{super()}}
+sed -e 's|.*exec_prefix.*||' -i ${out}/lib/pkgconfig/libavif.pc
 {% endblock %}
