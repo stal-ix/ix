@@ -5,6 +5,7 @@
 
 {% block openssl_cert_dir %}/nowhere{% endblock %}
 
-{% block strip_pc %}
-echo 'TODO(pg): check it'
+{% block install %}
+{{super()}}
+rm -rf ${out}/lib64
 {% endblock %}
