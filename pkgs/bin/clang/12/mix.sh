@@ -9,11 +9,3 @@ b23c6287824a30f5a58315f402b1ead3
 {{super()}}
 export CLANG_VERSION=12.0.1
 {% endblock %}
-
-{% block install %}
-{{super()}}
-
-mkdir ${out}/share
-mv ${out}/lib/clang/12*/include ${out}/share/
-rm -rf ${out}/libexec
-{% endblock %}

@@ -65,3 +65,14 @@ install-{{t}}
 {% block env %}
 export CPPFLAGS="-isystem ${out}/share/include \${CPPFLAGS}"
 {% endblock %}
+
+{% block install %}
+{{super()}}
+mkdir ${out}/share
+mv ${out}/lib/clang/1*/include ${out}/share/
+rm -rf ${out}/libexec
+{% endblock %}
+
+{% block postinstall %}
+rm -rf ${out}/lib ${out}/include
+{% endblock %}
