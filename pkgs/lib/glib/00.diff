@@ -1,7 +1,29 @@
-diff --git a/pkgs/lib/glib/glib-2.71.0/gobject/gtype.c b/pkgs/lib/glib/glib-2.71.0/gobject/gtype.c
-index 26ec30b7..9ff10203 100644
---- a/pkgs/lib/glib/glib-2.71.0/gobject/gtype.c
-+++ b/pkgs/lib/glib/glib-2.71.0/gobject/gtype.c
+diff --git a/glib/gquark.c b/glib/gquark.c
+index 2799b7d..de66a64 100644
+--- a/glib/gquark.c
++++ b/glib/gquark.c
+@@ -174,7 +174,7 @@ quark_strdup (const gchar *string)
+ 
+   return copy;
+ }
+-
++void glib_init(void);
+ /* HOLDS: quark_global_lock */
+ static inline GQuark
+ quark_from_string (const gchar *string,
+@@ -182,6 +182,8 @@ quark_from_string (const gchar *string,
+ {
+   GQuark quark = 0;
+ 
++  glib_init();
++
+   quark = GPOINTER_TO_UINT (g_hash_table_lookup (quark_ht, string));
+ 
+   if (!quark)
+diff --git a/gobject/gtype.c b/gobject/gtype.c
+index 0714299..18d09f6 100644
+--- a/gobject/gtype.c
++++ b/gobject/gtype.c
 @@ -4426,6 +4426,8 @@ g_type_init (void)
    g_assert_type_system_initialized ();
  }
@@ -34,6 +56,6 @@ index 26ec30b7..9ff10203 100644
 +    gobject_init();
 +}
 +
- #if defined (G_OS_WIN32)
+ #ifdef G_PLATFORM_WIN32
  
- BOOL WINAPI DllMain (HINSTANCE hinstDLL,
+ void gobject_win32_init (void);
