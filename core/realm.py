@@ -20,10 +20,9 @@ def collapse_pkgs(pkgs):
         n = p['name']
 
         if p.get('op', '+') == '+':
-            d[n] = cu.dict_dict_update(d.get('n', {}), p.get('flags', {}))
+            d[n] = cu.dict_dict_update(d.get(n, {}), p.get('flags', {}))
         else:
-            if n in d:
-                d.pop(n)
+            d.pop(n)
 
     return [{'name': x, 'flags': y} for x, y in d.items()]
 
