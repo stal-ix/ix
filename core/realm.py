@@ -161,4 +161,6 @@ def load_realm(mngr, name):
 
 
 def prepare_realm(mngr, name, pkgs):
+    assert '/' not in name
+
     return RealmCtx(mngr, name, pkgs).prepare()
