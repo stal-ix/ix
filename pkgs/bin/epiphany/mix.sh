@@ -136,6 +136,4 @@ exec "${out}/bin/epiphany-bin" "\$@"
 EOF
 
 chmod +x epiphany
-
-exit  1
 {% endblock %}
