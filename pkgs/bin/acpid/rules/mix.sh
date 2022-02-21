@@ -9,6 +9,7 @@ action=/bin/sh /etc/acpi/handler.sh %e
 EOF
 
 cat << EOF > handler.sh
+date
 script="/etc/acpi/\${1}.sh"
 shift
 exec sh "\${script}" "\$@"

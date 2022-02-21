@@ -11,6 +11,10 @@ base64 -d << EOF > srv
 {% include 'srv/base64' %}
 EOF
 
+base64 -d << EOF > srvy
+{% include 'srvy/base64' %}
+EOF
+
 cat << EOF > init
 #!/bin/sh
 export PATH=/bin
@@ -18,7 +22,7 @@ export TMPDIR=/var/tmp
 exec chpst -0 -1 -2 runit
 EOF
 
-chmod +x srv init
+chmod +x srv srvy init
 
 cd ..
 

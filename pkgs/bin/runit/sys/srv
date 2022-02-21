@@ -1,34 +1,8 @@
 #!/bin/sh
 
 cd /var/run
-
 mkdir -p ${1}
 cd ${1}
-
-date >> out
-
 shift
 
-P=/sys/fs/cgroup/$$
-
-echo "mkdir ${P}" >> out
-mkdir ${P}
-
-echo "echo ${P}" >> out
-echo $$ > ${P}/cgroup.procs
-
-cleanup() (
-    echo "kill ${P}" >> out
-    echo 1 > ${P}/cgroup.kill
-)
-
-trap cleanup TERM INT EXIT
-
-echo "flock ${P}" >> out
-flock lock $@ 1>>out 2>>out &
-
-echo "wait ${P}" >> out
-wait
-
-
-echo "done ${P}" >> out
+srvy "${@}" 2>&1 | ts >> out
