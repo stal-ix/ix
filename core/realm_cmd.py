@@ -3,44 +3,16 @@ import core.manager as cm
 import core.cmd_line as cc
 
 
-def parse_args(ctx):
-    class Args:
-        def __init__(self):
-            args = ctx['args']
-            self.realm = args[0]
-            ctx['args'] = args[1:]
-            self.config, self.pkgs = cc.parse_pkgs(ctx)
+def cli_realm_mut(ctx):
+    if args := ctx['args']:
+        realm = args[0]
+        ctx['args'] = args[1:]
+        config, pkgs = cc.parse_pkgs(ctx)
 
-    return Args()
-
-
-def cli_realm_add(ctx):
-    args = parse_args(ctx)
-
-    cm.Manager(args.config).ensure_realm(args.realm).add(args.pkgs).install()
-
-
-def cli_realm_remove(ctx):
-    args = parse_args(ctx)
-
-    cm.Manager(args.config).ensure_realm(args.realm).remove(args.pkgs).install()
-
-
-def cli_realm_upgrade(ctx):
-    cu.step('start upgrade')
-
-    mngr = cm.Manager(cc.config_from(ctx))
-
-    def iter_realms():
-        if ctx['args']:
-            yield from ctx['args']
-        else:
-            yield from mngr.list_realms()
-
-    for r in iter_realms():
-        cu.step('realm start')
-        mngr.load_realm(r).upgrade().install()
-        cu.step('realm end')
+        cm.Manager(config).ensure_realm(realm).mut(pkgs).install()
+    else:
+        for r in cm.Manager(cc.config_from(ctx)).iter_realms():
+            r.mut([]).install()
 
 
 def cli_realm_list(ctx):

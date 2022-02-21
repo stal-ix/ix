@@ -14,19 +14,18 @@ def realm_path(mngr, name):
 
 
 def collapse_pkgs(pkgs):
-    v = []
     d = {}
 
     for p in pkgs:
         n = p['name']
 
-        if n in d:
-            d[n] = cu.dict_dict_update(d[n], p.get('flags', {}))
+        if p.get('op', '+') == '+':
+            d[n] = cu.dict_dict_update(d.get('n', {}), p.get('flags', {}))
         else:
-            v.append(n)
-            d[n] = p.get('flags', {})
+            if n in d:
+                d.pop(n)
 
-    return [{'name': x, 'flags': d[x]} for x in v]
+    return [{'name': x, 'flags': y} for x, y in d.items()]
 
 
 def flt(it):
@@ -103,6 +102,11 @@ class RealmCtx:
             },
         }
 
+    def prepare(self):
+        cg.run(self.mngr.config.ops(), [self])
+
+        return Realm(self.mngr, self.pkg_name, self.out_dir)
+
 
 class Realm:
     def __init__(self, mngr, name, path):
@@ -127,26 +131,8 @@ class Realm:
     def new_version(self, pkgs):
         return prepare_realm(self.mngr, self.name, pkgs)
 
-    def add(self, pkgs):
-        return self.new_version(collapse_pkgs(self.pkgs + pkgs))
-
-    def remove(self, pkgs):
-        pkgs = frozenset([x['name'] for x in pkgs])
-
-        def it():
-            for x in self.pkgs:
-                if x['name'] not in pkgs:
-                    yield x
-
-        return self.new_version(list(it()))
-
-    def upgrade(self):
-        cu.step('upgrade')
-
-        try:
-            return self.new_version(self.pkgs)
-        finally:
-            cu.step('done upgrade')
+    def mut(self, patch):
+        return self.new_version(collapse_pkgs(self.pkgs + patch))
 
     @property
     def managed_path(self):
@@ -176,8 +162,4 @@ def load_realm(mngr, name):
 
 
 def prepare_realm(mngr, name, pkgs):
-    ctx = RealmCtx(mngr, name, pkgs)
-
-    cg.run(mngr.config.ops(), [ctx])
-
-    return Realm(mngr, name, ctx.out_dir)
+    return RealmCtx(mngr, name, pkgs).prepare()

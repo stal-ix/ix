@@ -99,6 +99,9 @@ class Manager:
     def list_realms(self):
         return os.listdir(self.config.realm_dir)
 
+    def iter_realms(self):
+        return (self.load_realm(x) for x in self.list_realms())
+
     def iter_used(self):
         for r in self.list_realms():
             rr = self.load_realm(r)

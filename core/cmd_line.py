@@ -12,42 +12,37 @@ def config_from(ctx):
     return cc.Config(binary, where, root)
 
 
-def parse_pkgs(ctx):
-    args = ctx['args']
-    cfg = config_from(ctx)
-    where = cfg.where
+def parse_pkgs_lst(pkgs):
+    cur = {}
 
-    if len(args) > 0:
-        pkgs = args
-    else:
-        pkg = os.getcwd()
+    for p in pkgs:
+        if p.startswith('--'):
+            k, v = p[2:].split('=')
 
-        if pkg.startswith(where):
-            pkg = pkg[len(where) + 1:]
+            cur['flags'][k] = v
         else:
-            raise ce.Error('should run from pkg dir')
+            if cur:
+                yield cur
 
-        pkgs = [pkg]
-
-    def iter_pkgs():
-        cur = {}
-
-        for p in pkgs:
-            if p.startswith('-D'):
-                k, v = p[2:].split('=')
-
-                cur['flags'][k] = v
+            if p[0] == '+':
+                op = '+'
+                p = p[1:]
+            elif p[0] == '-':
+                op = '-'
+                p = p[1:]
             else:
-                if cur:
-                    yield cur
+                op = '+'
 
-                cur = {
-                    'name': p,
-                    'flags': {
-                    },
-                }
+            cur = {
+                'name': p,
+                'op': op,
+                'flags': {
+                },
+            }
 
-        if cur:
-            yield cur
+    if cur:
+        yield cur
 
-    return cfg, list(iter_pkgs())
+
+def parse_pkgs(ctx):
+    return config_from(ctx), list(parse_pkgs_lst(ctx['args']))
