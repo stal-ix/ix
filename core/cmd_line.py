@@ -36,8 +36,7 @@ def parse_pkgs_lst(pkgs):
             cur = {
                 'name': p,
                 'op': op,
-                'flags': {
-                },
+                'flags': {},
             }
 
     if cur:

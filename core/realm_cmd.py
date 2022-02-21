@@ -5,11 +5,8 @@ import core.cmd_line as cc
 
 def cli_realm_mut(ctx):
     if args := ctx['args']:
-        realm = args[0]
-        ctx['args'] = args[1:]
-        config, pkgs = cc.parse_pkgs(ctx)
-
-        cm.Manager(config).ensure_realm(realm).mut(pkgs).install()
+        mngr = cm.Manager(cc.config_from(ctx))
+        mngr.ensure_realm(args[0]).mut(list(cc.parse_pkgs_lst(args[1:]))).install()
     else:
         for r in cm.Manager(cc.config_from(ctx)).iter_realms():
             r.mut([]).install()
