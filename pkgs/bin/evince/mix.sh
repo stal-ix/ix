@@ -19,6 +19,7 @@ lib/secret
 lib/archive
 lib/poppler
 lib/djvulibre
+lib/rsvg/reg
 lib/gsettings/desktop/schemas
 {% endblock %}
 
@@ -30,6 +31,7 @@ aux/adwaita/icons
 lib/gtk/3
 bin/gettext
 bin/glib/codegen
+lib/dlfcn/scripts
 {% endblock %}
 
 {% block meson_flags %}
@@ -37,6 +39,9 @@ gtk_doc=false
 user_doc=false
 nautilus=false
 introspection=false
+comics=disabled
+djvu=disabled
+tiff=disabled
 {% endblock %}
 
 {% block build %}
@@ -44,7 +49,15 @@ introspection=false
 
 cd ${tmp}/obj
 
-cc -o qw $(find -type f -name '*.a') shell/evince.p/main.c.o
+cat << EOF | dl_stubs pdfdocument > stub.cpp
+register_evince_backend
+EOF
+
+cc -c stub.cpp
+rm cut-n-paste/synctex/libsynctex.a
+rm cut-n-paste/unarr/libunarr.a
+rm libmisc/libevmisc.a
+cc -o qw -Wl,--whole-archive $(find . -type f -name '*.a') -Wl,--no-whole-archive stub.o shell/evince.p/main.c.o
 {% endblock %}
 
 {% block postinstall %}
@@ -65,6 +78,8 @@ cc -o qw $(find -type f -name '*.a') shell/evince.p/main.c.o
 )
 
 {{super()}}
+
+cp ${tmp}/obj/qw ${out}/bin/evince
 
 cd ${out}
 
