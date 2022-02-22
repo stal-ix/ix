@@ -33,10 +33,6 @@ _GNU_SOURCE=1
 ${PWD}/inc
 {% endblock %}
 
-{% block setup %}
-export OBJC=clang
-{% endblock %}
-
 {% block meson_flags %}
 iconv=external
 tests=false
