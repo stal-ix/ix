@@ -1,8 +1,8 @@
 {% extends '//mix/autorehell.sh' %}
 
 {% block fetch %}
-https://gitlab.com/api/v4/projects/4207231/packages/generic/graphviz-releases/2.49.3/graphviz-2.49.3.tar.xz
-9b92d271ced2648b9d68c8a32b6a42f9
+https://gitlab.com/api/v4/projects/4207231/packages/generic/graphviz-releases/2.50.0/graphviz-2.50.0.tar.xz
+sha:6b16bf990df114195be669773a1dae975dbbffada45e1de2849ddeb5851bb9a8
 {% endblock %}
 
 {% block bld_libs %}

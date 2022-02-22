@@ -1,8 +1,8 @@
 {% extends '//mix/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/Kitware/CMake/archive/refs/tags/v3.22.0.tar.gz
-23396af0779893f2c6723faa74da5b85
+https://github.com/Kitware/CMake/archive/refs/tags/v3.22.2.tar.gz
+sha:584c7b1cbf155971bb70aaea56b748317e00f93ca4210e9fd11c1ac6c38c6747
 {% endblock %}
 
 {% block bld_libs %}
