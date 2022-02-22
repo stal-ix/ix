@@ -30,3 +30,7 @@ builtin_immodules=yes
 {% include '00.diff/base64' %}
 EOF
 {% endblock %}
+
+{% block env_lib %}
+export CPPFLAGS="-I${out}/include/gail-3.0 -I${out}/include/gtk-3.0 \${CPPFLAGS}"
+{% endblock %}

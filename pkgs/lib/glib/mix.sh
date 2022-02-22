@@ -22,3 +22,7 @@ patch -p1 << EOF
 {% include '00.diff' %}
 EOF
 {% endblock %}
+
+{% block env_lib %}
+export CPPFLAGS="-I${out}/include/glib-2.0 \${CPPFLAGS}"
+{% endblock %}
