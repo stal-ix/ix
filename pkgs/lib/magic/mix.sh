@@ -1,10 +1,9 @@
-{% extends '//mix/autohell.sh' %}
+{% extends '//lib/magic/t/mix.sh' %}
 
-{% block fetch %}
-http://deb.debian.org/debian/pool/main/f/file/file_5.39.orig.tar.gz
-1c450306053622803a25647d88f80f25
+{% block run_data %}
+aux/magic
 {% endblock %}
 
-{% block lib_deps %}
-lib/c
+{% block cpp_defines %}
+MAGIC=\\\"${MAGIC_DATA}\\\"
 {% endblock %}
