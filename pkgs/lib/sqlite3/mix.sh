@@ -9,8 +9,8 @@ sha:4089a8d9b467537b3f246f217b84cd76e00b1d1a971fe5aca1e30e230e46b2d8
 lib/c
 {% endblock %}
 
-{% block bld_libs %}
-lib/readline
+{% block configure_flags %}
+--enable-dynamic-extensions=no
 {% endblock %}
 
 {% block cpp_defines %}
