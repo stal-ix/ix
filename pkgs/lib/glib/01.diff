@@ -1,5 +1,5 @@
 diff --git a/gio/gcontenttype.c b/gio/gcontenttype.c
-index 3e5b841..cfcf4bf 100644
+index 3e5b841..5073838 100644
 --- a/gio/gcontenttype.c
 +++ b/gio/gcontenttype.c
 @@ -734,6 +734,8 @@ g_content_type_from_mime_type (const gchar *mime_type)
@@ -17,7 +17,7 @@ index 3e5b841..cfcf4bf 100644
  
 +  const char* mtype;
 +
-+  if (data) {
++  if (data && data_size > 8) {
 +    mtype = magic_mime_type(data, data_size);
 +    if (mtype) {
 +      if (result_uncertain) {

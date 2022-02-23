@@ -6,8 +6,8 @@ lib/intl
 {% endblock %}
 
 {% block bld_tool %}
-bin/glib/codegen
 {{super()}}
+bin/glib/codegen
 {% endblock %}
 
 {% block install %}
@@ -18,5 +18,5 @@ done
 {% endblock %}
 
 {% block env_lib %}
-export CPPFLAGS="-I${out}/include/glib-2.0 \${CPPFLAGS}"
+export CPPFLAGS="-I${out}/include/glib-2.0 -I${out}/lib/glib-2.0/include \${CPPFLAGS}"
 {% endblock %}
