@@ -86,10 +86,17 @@ def add_kind(k, l):
     return ({'kind': k, 'p': x} for x in l)
 
 
-def popf(d, f):
+def popf1(d, f):
     if f in d:
         d = cu.copy_dict(d)
         d.pop(f)
+
+    return d
+
+
+def popf(d, *f):
+    for x in f:
+        d = popf1(d, x)
 
     return d
 
@@ -198,7 +205,7 @@ class Package:
         return {'target': self.host, 'kind': 'lib'}
 
     def target_lib_flags(self):
-        return popf(cu.dict_dict_update(self.flags, {'kind': 'lib'}), 'setx')
+        return popf(cu.dict_dict_update(self.flags, {'kind': 'lib'}), 'setx', 'help')
 
     def bin_flags(self):
         return {'target': self.host, 'kind': 'bin'}
@@ -216,7 +223,7 @@ class Package:
 
         try:
             # TODO(pg): proper local flags
-            return self.manager.load_package(popf(sel, 'setx'))
+            return self.manager.load_package(popf(sel, 'setx', 'help'))
         except FileNotFoundError:
             raise ce.Error(f'can not load dependant package {fmt_sel(sel)} of {fmt_sel(self.selector)}')
 

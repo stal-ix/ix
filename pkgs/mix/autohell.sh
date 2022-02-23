@@ -81,6 +81,10 @@ ${COFLAGS}
 
 {% block configure_flags %}
 {% endblock %}
+
+{% if help %}
+--help
+{% endif %}
 {% endset %}
 
 {{mix.fix_list(command_args)}}

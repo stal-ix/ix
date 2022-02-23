@@ -9,6 +9,7 @@ sha:40083afd5514501215a8cd166f5f6adf92af76ff82f4cce01f60a192d7648952
 lib/c
 lib/z
 lib/lz4
+lib/popt
 lib/zstd
 lib/xxhash
 lib/openssl
