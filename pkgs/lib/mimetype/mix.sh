@@ -11,10 +11,11 @@ lib/magic
 {% endblock %}
 
 {% block build %}
-cat << EOF > iface.cpp
+c++ -c -o iface.o -x c++ - << EOF
 #include <new>
-#include <stdlib.h>
+#include <mutex>
 #include <magic.h>
+#include <stdlib.h>
 
 namespace {
     struct Magic {
@@ -30,28 +31,31 @@ namespace {
             }
         }
 
-        const char* mimeType(const void* data, size_t len) const {
-            return magic_buffer(Handle, data, len);
-        }
-
         ~Magic() {
             magic_close(Handle);
         }
 
+        const char* mimeType(const void* data, size_t len) noexcept {
+            // Handle is stateful
+            std::lock_guard<std::mutex> guard(Mutex);
+
+            return magic_buffer(Handle, data, len);
+        }
+
         magic_t Handle;
+        std::mutex Mutex;
     };
 }
 
 extern "C" const char* magic_mime_type(const void* data, size_t len) {
     // intentional memory leak
-    static const Magic* m = new Magic();
+    static Magic* m = new Magic();
 
     return m->mimeType(data, len);
 }
 EOF
 
-c++ -c iface.cpp
-ar q libmagiciface.a *.o
+ar q libmimetype.a *.o
 {% endblock %}
 
 {% block install %}

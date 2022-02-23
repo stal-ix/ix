@@ -17,7 +17,7 @@ index 3e5b841..5073838 100644
  
 +  const char* mtype;
 +
-+  if (data && data_size > 8) {
++  if (data) {
 +    mtype = magic_mime_type(data, data_size);
 +    if (mtype) {
 +      if (result_uncertain) {

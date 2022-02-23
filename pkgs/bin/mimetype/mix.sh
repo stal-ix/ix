@@ -3,7 +3,7 @@
 {% block bld_libs %}
 lib/c
 lib/c++
-lib/magic/iface
+lib/mimetype
 {% endblock %}
 
 {% block step_unpack %}
@@ -25,7 +25,6 @@ static inline std::string slurp(const char* path) {
     buf << input.rdbuf();
     return buf.str();
 }
-
 
 int main(int argc, char** argv) {
     if (argc < 2) {
