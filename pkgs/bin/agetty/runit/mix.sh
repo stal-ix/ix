@@ -2,6 +2,7 @@
 
 {% block run_deps %}
 bin/agetty
+bin/runsrv
 {% endblock %}
 
 {% block install %}

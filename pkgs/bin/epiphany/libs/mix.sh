@@ -20,6 +20,7 @@ lib/archive
 lib/rsvg/reg
 lib/json/glib
 lib/gdk/pixbuf
+lib/drivers/3d
 lib/glib/networking
 lib/gsettings/desktop/schemas
 {% endblock %}

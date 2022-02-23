@@ -2,6 +2,7 @@
 
 {% block run_deps %}
 bin/mdevd
+bin/runsrv
 {% endblock %}
 
 {% block install %}

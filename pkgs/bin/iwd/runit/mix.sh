@@ -2,6 +2,7 @@
 
 {% block run_deps %}
 bin/iwd
+bin/runsrv
 {% endblock %}
 
 {% block install %}

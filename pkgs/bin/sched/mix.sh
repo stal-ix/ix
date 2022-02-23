@@ -1,5 +1,9 @@
 {% extends '//mix/proxy.sh' %}
 
+{% block run_deps %}
+bin/runsrv
+{% endblock %}
+
 {% block install %}
 cd ${out}; mkdir -p etc/services/sched{{delay}}; cd etc/services/sched{{delay}}
 

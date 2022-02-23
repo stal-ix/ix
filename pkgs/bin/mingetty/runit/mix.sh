@@ -2,6 +2,7 @@
 
 {% block run_deps %}
 bin/fixtty
+bin/runsrv
 bin/mingetty
 {% endblock %}
 
