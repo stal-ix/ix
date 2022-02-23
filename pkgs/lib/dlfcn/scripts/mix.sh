@@ -11,7 +11,11 @@ lib/dlfcn/scripts/lib
 {% block install %}
 mkdir ${out}/bin
 
-base64 -d << EOF > ${out}/bin/gen_dl_stubs.py
-{% include 'gen_dl_stubs.py/base64' %}
+base64 -d << EOF > ${out}/bin/gen_dl_stubs_1.py
+{% include 'gen_dl_stubs_1.py/base64' %}
+EOF
+
+base64 -d << EOF > ${out}/bin/gen_dl_stubs_2.py
+{% include 'gen_dl_stubs_2.py/base64' %}
 EOF
 {% endblock %}

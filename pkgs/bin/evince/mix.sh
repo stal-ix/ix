@@ -18,8 +18,8 @@ lib/handy
 lib/secret
 lib/archive
 lib/poppler
-lib/djvulibre
 lib/rsvg/reg
+lib/djvulibre
 lib/gsettings/desktop/schemas
 {% endblock %}
 
@@ -39,9 +39,28 @@ gtk_doc=false
 user_doc=false
 nautilus=false
 introspection=false
-comics=disabled
-djvu=disabled
-tiff=disabled
+{% endblock %}
+
+{% block build_flags %}
+shut_up
+{% endblock %}
+
+{% block patch %}
+sed -e 's|+multipage||' -i meson.build
+
+cd backend
+
+for d in $(ls -d */); do (
+    d=$(echo ${d} | tr -d '/'); cd ${d}
+
+    find . -type f -name '*.c' | while read f; do
+        cat - ${f} << EOF > _
+#define register_evince_backend register_evince_backend_${d}
+EOF
+
+        mv _ ${f}
+    done
+) done
 {% endblock %}
 
 {% block build %}
@@ -49,15 +68,23 @@ tiff=disabled
 
 cd ${tmp}/obj
 
-cat << EOF | dl_stubs pdfdocument > stub.cpp
-register_evince_backend
+for x in pdf comics djvu tiff; do
+    cat << EOF | dl_stubs_2 ${x}document >> stub.cpp
+register_evince_backend register_evince_backend_${x}
 EOF
+done
 
 cc -c stub.cpp
+
 rm cut-n-paste/synctex/libsynctex.a
 rm cut-n-paste/unarr/libunarr.a
 rm libmisc/libevmisc.a
-cc -o qw -Wl,--whole-archive $(find . -type f -name '*.a') -Wl,--no-whole-archive stub.o shell/evince.p/main.c.o
+
+cc -o qw \
+    -Wl,--whole-archive           \
+    $(find . -type f -name '*.a') \
+    -Wl,--no-whole-archive        \
+    stub.o shell/evince.p/main.c.o
 {% endblock %}
 
 {% block postinstall %}
