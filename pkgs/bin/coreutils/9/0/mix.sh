@@ -20,8 +20,8 @@ lib/attr
 {% endblock %}
 
 {% block bld_tool %}
-bin/bison/3/7
 bld/perl
+bin/bison/3/7
 {{super()}}
 {% endblock %}
 
