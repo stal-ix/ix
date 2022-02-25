@@ -27,7 +27,7 @@ bin/pkg-config
 {% endblock %}
 
 {% block patch %}
-find . | grep CMakeLists.txt | while read l; do
+find . -name CMakeLists.txt | while read l; do
     sed -e 's| MODULE | STATIC |' -i ${l}
 done
 {% endblock %}

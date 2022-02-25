@@ -13,8 +13,8 @@ lib/uchardet
 
 {% block bld_tool %}
 bld/perl
-bin/bison/3/7
 bin/texinfo
+bin/bison/3/7
 {% endblock %}
 
 {% block patch %}
