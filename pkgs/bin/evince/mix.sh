@@ -91,41 +91,11 @@ cc -o qw \
 : skip it
 {% endblock %}
 
+{% import '//mix/hooks.sh' as hooks %}
+
 {% block install %}
-(
-    cd ${out}
-
-    mkdir -p share/glib-2.0/schemas; cd share/glib-2.0/schemas
-
-    IFS=':'; for x in ${MIX_T_DIR}; do
-        if test -d "${x}/share/glib-2.0/schemas"; then
-            cp ${x}/share/glib-2.0/schemas/*.xml ./ || true
-        fi
-    done
-)
-
+{{hooks.install_glib_schemas()}}
 {{super()}}
-
 cp ${tmp}/obj/qw ${out}/bin/evince
-
-cd ${out}
-
-mkdir fix; cat << EOF > fix/evi.sh
-mv bin/evince bin/evince-real
-cp -L bin/evince-real bin/evince
-sed -e "s|__realm__|\${PWD}|" -i bin/evince
-EOF
-
-cd bin
-
-mv evince evince-bin
-
-cat << EOF > evince
-#!/usr/bin/env sh
-export PATH="__realm__/bin:\${PATH}"
-export XDG_DATA_DIRS="__realm__/share:${out}/share:\${XDG_DATA_DIRS}"
-exec "${out}/bin/evince-bin" "\$@"
-EOF
-
-chmod +x evince
+{{hooks.wrap_xdg_binary('evince')}}
 {% endblock %}

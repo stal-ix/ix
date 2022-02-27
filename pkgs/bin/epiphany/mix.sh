@@ -100,19 +100,10 @@ EOF
 ) >> src/ephy-main.c
 {% endblock %}
 
+{% import '//mix/hooks.sh' as hooks %}
+
 {% block install %}
-(
-    cd ${out}
-
-    mkdir -p share/glib-2.0/schemas; cd share/glib-2.0/schemas
-
-    IFS=':'; for x in ${MIX_T_DIR}; do
-        if test -d "${x}/share/glib-2.0/schemas"; then
-            cp ${x}/share/glib-2.0/schemas/*.xml ./ || true
-        fi
-    done
-)
-
+{{hooks.install_glib_schemas()}}
 {{super()}}
 
 cd ${out}
