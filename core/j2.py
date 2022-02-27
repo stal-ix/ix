@@ -19,7 +19,7 @@ def cut_include(l):
 
 class Env(jinja2.Environment, jinja2.BaseLoader):
     def __init__(self, vfs):
-        jinja2.Environment.__init__(self, loader=self, auto_reload=False, keep_trailing_newline=True)
+        jinja2.Environment.__init__(self, loader=self, auto_reload=False)
         self.cache = {}
         self.vfs = vfs
 
