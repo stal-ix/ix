@@ -105,26 +105,7 @@ EOF
 {% block install %}
 {{hooks.install_glib_schemas()}}
 {{super()}}
-
-cd ${out}
-
-mkdir fix; cat << EOF > fix/epi.sh
-mv bin/epiphany bin/epiphany-real
-cp -L bin/epiphany-real bin/epiphany
-sed -e "s|__realm__|\${PWD}|" -i bin/epiphany
-EOF
-
-cd bin
-
-mv epiphany epiphany-bin
-
-cat << EOF > epiphany
-#!/usr/bin/env sh
-export PATH="__realm__/bin:\${PATH}"
+{% call hooks.wrap_xdg_binary('epiphany') %}
 export WEBKIT_EXEC_PATH="\$(dirname \$(which WebKitWebProcess))"
-export XDG_DATA_DIRS="__realm__/share:${out}/share:\${XDG_DATA_DIRS}"
-exec "${out}/bin/epiphany-bin" "\$@"
-EOF
-
-chmod +x epiphany
+{% endcall %}
 {% endblock %}

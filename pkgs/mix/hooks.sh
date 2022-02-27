@@ -29,6 +29,9 @@ cat << EOF > {{name}}
 #!/usr/bin/env sh
 export PATH="__realm__/bin:\${PATH}"
 export XDG_DATA_DIRS="__realm__/share:${out}/share:\${XDG_DATA_DIRS}"
+{% if caller %}
+{{caller()}}
+{% endif %}
 exec "${out}/bin/{{name}}-bin" "\$@"
 EOF
 
