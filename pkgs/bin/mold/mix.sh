@@ -1,8 +1,8 @@
 {% extends '//mix/make.sh' %}
 
 {% block fetch %}
-https://github.com/rui314/mold/archive/refs/tags/v1.0.3.tar.gz
-sha:488c12058b4c7c77bff94c6f919e40b2f12c304214e2e0d7d4833c21167837c0
+https://github.com/rui314/mold/archive/refs/tags/v1.1.tar.gz
+sha:2f04bb2cd58797258c4f5f6f29fd2667f8b6c6b2bc76c731fede526884ea9a0c
 {% endblock %}
 
 {% block bld_libs %}
@@ -35,6 +35,8 @@ rm -r third-party
 (find . -name '*.h'; find . -name '*.cc') | while read l; do
     sed -e 's|PAGE_SIZE|MOLD_PAGE_SIZE|g' -i ${l}
 done
+
+sed -e 's|.*mimalloc-new.*||' -i main.cc
 {% endblock %}
 
 {% block build %}
