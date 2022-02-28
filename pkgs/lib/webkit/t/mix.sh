@@ -115,22 +115,8 @@ sed -e 's|ENABLE(DEVELOPER_MODE)|1|g' \
     -i Source/WebKit/Shared/glib/ProcessExecutablePathGLib.cpp
 {% endblock %}
 
+{% import '//mix/hooks.sh' as hooks %}
+
 {% block setup_tools %}
-C=$(which clang++)
-
-cat << EOF > clang++
-#!$(which python3)
-
-import sys
-import subprocess
-
-if '-P' in sys.argv or '-E' in sys.argv:
-    arg0 = 'clang-cpp'
-else:
-    arg0 = "${C}"
-
-subprocess.check_call([arg0] + sys.argv[1:])
-EOF
-
-chmod +x clang++
+{{hooks.wrap_c_compiler('clang++')}}
 {% endblock %}

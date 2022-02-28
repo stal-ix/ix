@@ -22,23 +22,11 @@ bld/python
 {% block touch_yl %}
 {% endblock %}
 
+{% import '//mix/hooks.sh' as hooks %}
+
 {% block setup_tools %}
-C=$(which clang)
-
-cat << EOF > clang
-#!$(which python3)
-
-import sys
-import subprocess
-
-if '.so' in str(sys.argv):
-    sys.exit(0)
-
-subprocess.check_call(["${C}"] + sys.argv[1:])
-EOF
-
-chmod +x clang
-cp clang clang++
+{{hooks.wrap_c_compiler('clang')}}
+{{hooks.wrap_c_compiler('clang++')}}
 {% endblock %}
 
 {% block configure_flags %}

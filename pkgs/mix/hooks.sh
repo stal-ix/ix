@@ -37,3 +37,37 @@ EOF
 
 chmod +x {{name}}
 ) {% endmacro %}
+
+{% macro wrap_c_compiler(name) %} (
+C=$(which {{name}})
+
+cat << EOF > {{name}}
+#!$(which python3)
+
+import os
+import sys
+import subprocess
+
+if '.so' in str(sys.argv):
+    for x in sys.argv:
+        if '.so' in x:
+            if '/' in x:
+                try:
+                    os.makedirs(os.path.dirname(x))
+                except OSError:
+                    pass
+
+                open(x, 'w')
+
+    sys.exit(0)
+
+if '-P' in sys.argv or '-E' in sys.argv:
+    arg0 = 'clang-cpp'
+else:
+    arg0 = "${C}"
+
+subprocess.check_call([arg0] + sys.argv[1:])
+EOF
+
+chmod +x {{name}}
+) {% endmacro %}

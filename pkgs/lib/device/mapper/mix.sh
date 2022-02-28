@@ -31,36 +31,16 @@ device-mapper
 install_device-mapper
 {% endblock %}
 
+{% import '//mix/hooks.sh' as hooks %}
+
 {% block setup_tools %}
+{{hooks.wrap_c_compiler('clang')}}
+
 cat << EOF > readelf
 #!$(which sh)
 EOF
 
-CL=$(which clang)
-
-cat << EOF > clang
-#!$(which python3)
-import os
-import sys
-import subprocess
-
-if '.so' in str(sys.argv):
-    for x in sys.argv:
-        if '.so' in x:
-            if '/' in x:
-                try:
-                    os.makedirs(os.path.dirname(x))
-                except OSError:
-                    pass
-
-            open(x, 'w')
-
-    sys.exit(0)
-
-subprocess.check_call(["${CL}"] + sys.argv[1:])
-EOF
-
-chmod +x clang readelf
+chmod +x readelf
 {% endblock %}
 
 {% block install %}
