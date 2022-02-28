@@ -10,17 +10,21 @@ bin/make
 make
 {% endblock %}
 
-{% block make_verbose %}
+{% if not verbose %}
 -s
-{% endblock %}
+{% endif %}
 
 SHELL="$(which sh)"
 PREFIX="${out}"
 prefix="${out}"
 
+{% if verbose %}
+V=1
+{% else %}
 {% block make_verbose_1 %}
 V=0
 {% endblock %}
+{% endif %}
 
 {% block make_flags %}
 {% endblock %}

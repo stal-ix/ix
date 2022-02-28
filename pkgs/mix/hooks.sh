@@ -57,7 +57,7 @@ if '.so' in str(sys.argv):
                 except OSError:
                     pass
 
-                open(x, 'w')
+            open(x, 'w')
 
     sys.exit(0)
 

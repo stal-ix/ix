@@ -127,6 +127,9 @@ def canon_name(n):
     return n.lower()
 
 
+ONE_LEVEL = ('setx', 'help', 'verbose')
+
+
 class Package:
     def __init__(self, selector, mngr):
         self.manager = mngr
@@ -205,7 +208,7 @@ class Package:
         return {'target': self.host, 'kind': 'lib'}
 
     def target_lib_flags(self):
-        return popf(cu.dict_dict_update(self.flags, {'kind': 'lib'}), 'setx', 'help')
+        return popf(cu.dict_dict_update(self.flags, {'kind': 'lib'}), *ONE_LEVEL)
 
     def bin_flags(self):
         return {'target': self.host, 'kind': 'bin'}
@@ -223,7 +226,7 @@ class Package:
 
         try:
             # TODO(pg): proper local flags
-            return self.manager.load_package(popf(sel, 'setx', 'help'))
+            return self.manager.load_package(popf(sel, *ONE_LEVEL))
         except FileNotFoundError:
             raise ce.Error(f'can not load dependant package {fmt_sel(sel)} of {fmt_sel(self.selector)}')
 

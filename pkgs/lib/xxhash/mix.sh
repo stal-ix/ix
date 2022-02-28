@@ -13,14 +13,14 @@ lib/c
 lib/c++
 {% endblock %}
 
-{% block patch %}
-sed -e 's|libxxhash.a libxxhash|libxxhash.a|' -i Makefile
+{% block bld_tool %}
+bld/python
 {% endblock %}
 
-{% block build %}
-{{super()}}
->libxxhash.0.8.0.dylib
->libxxhash.so.0.8.0
+{% import '//mix/hooks.sh' as hooks %}
+
+{% block setup_tools %}
+{{hooks.wrap_c_compiler('clang')}}
 {% endblock %}
 
 {% block test_execute %}

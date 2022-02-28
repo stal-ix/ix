@@ -9,11 +9,12 @@ sha:31da5562f44c5f15d63340a09a4fd62b48c45620cd302f77a6d9acf0077879bd
 lib/c
 {% endblock %}
 
-{% block build %}
-make libgif.a libutil.a
+{% block bld_tool %}
+bld/python
+{% endblock %}
 
->libgif.so
->libutil.so
+{% import '//mix/hooks.sh' as hooks %}
 
-{{super()}}
+{% block setup_tools %}
+{{hooks.wrap_c_compiler('clang')}}
 {% endblock %}
