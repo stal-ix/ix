@@ -31,11 +31,6 @@ mold
 
 {% block patch %}
 rm -r third-party
-
-(find . -name '*.h'; find . -name '*.cc') | while read l; do
-    sed -e 's|PAGE_SIZE|MOLD_PAGE_SIZE|g' -i ${l}
-done
-
 sed -e 's|.*mimalloc-new.*||' -i main.cc
 {% endblock %}
 
