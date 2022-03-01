@@ -2,6 +2,6 @@
 
 {% block run_deps %}
 {% if linux %}
-bld/mold
+#bld/mold
 {% endif %}
 {% endblock %}

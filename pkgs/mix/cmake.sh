@@ -47,19 +47,19 @@ ${CMFLAGS}
 
 -DCMAKE_C_COMPILER="$(which ${CC})"
 -DCMAKE_CXX_COMPILER="$(which ${CXX})"
+
 -DCMAKE_AR="$(which ${AR})"
 -DCMAKE_NM="$(which ${NM})"
 -DCMAKE_RANLIB="$(which ${RANLIB})"
-
--DCMAKE_BUILD_TYPE=Release
-
--DBUILD_SHARED_LIBS=OFF
 
 -DCMAKE_SYSTEM_INCLUDE_PATH="${SIP}"
 -DCMAKE_SYSTEM_LIBRARY_PATH="${SLP}"
 -DCMAKE_SYSTEM_PROGRAM_PATH="${SPP}"
 
 {% set cmake_flags %}
+CMAKE_SKIP_RPATH=ON
+CMAKE_BUILD_TYPE=Release
+BUILD_SHARED_LIBS=OFF
 {% block cmake_flags %}
 {% endblock %}
 {% endset %}
