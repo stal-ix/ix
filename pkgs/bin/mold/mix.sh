@@ -10,8 +10,8 @@ lib/z
 lib/c
 lib/c++
 lib/xxhash
+lib/openssl
 lib/intel/tbb
-lib/md/crypto
 {% endblock %}
 
 {% block std_box %}

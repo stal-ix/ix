@@ -12,5 +12,6 @@ lib/brotli
 {% endblock %}
 
 {% block cmake_flags %}
+CMAKE_SKIP_RPATH=ON
 BUILD_SHARED_LIBS=OFF
 {% endblock %}
