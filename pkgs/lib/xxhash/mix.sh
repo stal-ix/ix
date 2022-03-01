@@ -13,8 +13,9 @@ lib/c
 lib/c++
 {% endblock %}
 
-{% block bld_tool %}
+{% block std_box %}
 bld/python
+{{super()}}
 {% endblock %}
 
 {% import '//mix/hooks.sh' as hooks %}

@@ -10,19 +10,19 @@ lib/z
 lib/c
 lib/c++
 lib/xxhash
-lib/openssl
 lib/intel/tbb
+lib/md/crypto
 {% endblock %}
 
-{% block bld_tool %}
-bin/gzip
+{% block std_box %}
 bin/pkg-config
+{{super()}}
 {% endblock %}
 
 {% block make_flags %}
-SYSTEM_MIMALLOC=1
-SYSTEM_XXHASH=1
 SYSTEM_TBB=1
+SYSTEM_XXHASH=1
+SYSTEM_MIMALLOC=1
 {% endblock %}
 
 {% block make_target %}
@@ -32,6 +32,7 @@ mold
 {% block patch %}
 rm -r third-party
 sed -e 's|.*mimalloc-new.*||' -i main.cc
+sed -e 's|-lcrypto||' -i Makefile
 {% endblock %}
 
 {% block build %}

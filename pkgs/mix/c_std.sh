@@ -6,6 +6,9 @@
   {% else %}
     {% block c_compiler %}
       bld/compiler
+      {% block no_mold %}
+        bld/linker
+      {% endblock %}
     {% endblock %}
     {% if std_box %}
       {{std_box}}

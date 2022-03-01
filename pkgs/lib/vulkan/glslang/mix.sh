@@ -13,3 +13,7 @@ bin/bison/3/8
 {% block lib_deps %}
 lib/c
 {% endblock %}
+
+{% block patch %}
+sed -e 's|.*add_link_options.*||' -i CMakeLists.txt
+{% endblock %}

@@ -39,6 +39,7 @@ bin/glib/codegen
 {% endblock %}
 
 {% block cmake_flags %}
+CMAKE_SKIP_RPATH=ON
 WITH_OPENMP=OFF
 BUILD_TESTING=OFF
 BUILD_SHARED_LIBS=OFF

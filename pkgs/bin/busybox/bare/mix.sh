@@ -15,6 +15,9 @@ lib/bzip2
 bld/perl
 {% endblock %}
 
+{% block no_mold %}
+{% endblock %}
+
 {% block build_flags %}
 shut_up
 {% endblock%}
