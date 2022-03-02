@@ -1,2 +1,2 @@
-https://www.kernel.org/pub/linux/kernel/v5.x/linux-5.16.10.tar.xz
-sha:0c4d6f0081800593852eb155b01e09b78b5bc69d7a553fc58f5ad2070f90239e
+https://www.kernel.org/pub/linux/kernel/v5.x/linux-5.16.11.tar.xz
+sha:6d186158a4c44a4df438e0286ee8186f1cc9cc9d8a909d4c3e25a4f7eca8b023
