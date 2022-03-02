@@ -16,7 +16,6 @@ lib/linux
 {% endblock %}
 
 {% block bld_tool %}
-bin/sed
 bin/texinfo
 bld/autohell
 bin/auto/conf/2/69

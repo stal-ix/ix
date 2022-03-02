@@ -12,5 +12,6 @@ lib/iconv
 {% endblock %}
 
 {% block std_box %}
-bld/bootbox
+bin/bison/3/8
+{{super()}}
 {% endblock %}

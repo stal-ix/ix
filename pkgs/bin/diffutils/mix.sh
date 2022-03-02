@@ -11,7 +11,3 @@ lib/intl
 lib/iconv
 lib/sigsegv
 {% endblock %}
-
-{% block std_box %}
-bld/bootbox
-{% endblock %}

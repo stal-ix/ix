@@ -10,10 +10,6 @@ lib/c
 lib/iconv
 {% endblock %}
 
-{% block std_box %}
-bld/bootbox
-{% endblock %}
-
 {% block patch %}
 cd gl/lib/malloc
 

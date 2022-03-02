@@ -7,14 +7,6 @@ lib/iconv
 lib/sigsegv
 {% endblock %}
 
-{% block bld_tool %}
-bin/patch
-{% endblock %}
-
-{% block std_box %}
-bld/bootbox
-{% endblock %}
-
 {% block configure_flags %}
 --libexecdir="${out}/bin"
 --enable-no-install-program=stdbuf

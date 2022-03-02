@@ -130,6 +130,10 @@ def canon_name(n):
 ONE_LEVEL = ('setx', 'help', 'verbose')
 
 
+def sanitize(flags):
+    return popf(flags, *ONE_LEVEL)
+
+
 class Package:
     def __init__(self, selector, mngr):
         self.manager = mngr
@@ -161,6 +165,9 @@ class Package:
             sd,
             self.iter_build_dirs(),
         ])
+
+        if not self.buildable():
+            self.uid = cu.struct_hash([self.uid, selector])
 
         self.out_dir = f'{sd}/{self.uid}-{self.pkg_name}'
 
@@ -208,10 +215,15 @@ class Package:
         return {'target': self.host, 'kind': 'lib'}
 
     def target_lib_flags(self):
-        return popf(cu.dict_dict_update(self.flags, {'kind': 'lib'}), *ONE_LEVEL)
+        return sanitize(cu.dict_dict_update(self.flags, {'kind': 'lib'}))
+
+    def calc_bin_flags(self, target):
+        basef = {} if self.buildable() else self.flags
+
+        return cu.dict_dict_update(basef, {'target': target, 'kind': 'bin'})
 
     def bin_flags(self):
-        return {'target': self.host, 'kind': 'bin'}
+        return self.calc_bin_flags(self.host)
 
     def load_package(self, n, flags):
         try:
@@ -226,7 +238,7 @@ class Package:
 
         try:
             # TODO(pg): proper local flags
-            return self.manager.load_package(popf(sel, *ONE_LEVEL))
+            return self.manager.load_package(sanitize(sel))
         except FileNotFoundError:
             raise ce.Error(f'can not load dependant package {fmt_sel(sel)} of {fmt_sel(self.selector)}')
 
@@ -288,7 +300,7 @@ class Package:
 
     @cu.cached_method
     def run_deps(self):
-        return list(self.load_packages(self.descr['run']['deps'], {'target': self.target, 'kind': 'bin'}))
+        return list(self.load_packages(self.descr['run']['deps'], self.calc_bin_flags(self.target)))
 
     @cu.cached_method
     def run_data(self):

@@ -14,7 +14,6 @@ bin/openssh/libs(openssl=1,curses=netbsd)
 {% endblock %}
 
 {% block bld_tool %}
-bin/patch
 bin/groff
 bin/texinfo
 {% endblock %}

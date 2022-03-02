@@ -13,7 +13,6 @@ lib/curses
 
 {% block bld_tool %}
 bin/tar
-bin/patch
 {% endblock %}
 
 {% block patch %}
