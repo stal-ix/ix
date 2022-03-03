@@ -4,11 +4,11 @@
 sed -e 's|__SSE2__|__NOPE__|g' -i clang/lib/Lex/Lexer.cpp
 
 patch -p1 << EOF
-{% include '00.diff' %}
+{% include '0.diff' %}
 EOF
 
 patch -p1 << EOF
-{% include '01.diff' %}
+{% include '1.diff' %}
 EOF
 
 {{super()}}

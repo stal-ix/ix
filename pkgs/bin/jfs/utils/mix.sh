@@ -20,10 +20,10 @@ export CFLAGS="-fcommon ${CFLAGS}"
 
 {% block patch %}
 patch -p1 << EOF
-{% include '00.diff' %}
+{% include '0.diff' %}
 EOF
 
 patch -p1 << EOF
-{% include '01.diff' %}
+{% include '1.diff' %}
 EOF
 {% endblock %}

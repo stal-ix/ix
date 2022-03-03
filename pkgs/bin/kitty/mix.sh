@@ -44,7 +44,7 @@ export PYTHONPLATLIBDIR="${PYTHONHOME}/lib"
 
 {% block patch %}
 (base64 -d | patch -p1) << EOF
-{% include 'p00.diff/base64' %}
+{% include '0.diff/base64' %}
 EOF
 
 sed -e 's|encode_utf8|xxx_encode_utf8|g' -i glfw/input.c

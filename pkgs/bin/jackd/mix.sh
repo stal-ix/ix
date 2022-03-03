@@ -12,7 +12,7 @@ lib/readline
 
 {% block patch %}
 (base64 -d | patch -p1) << EOF
-{% include '00.diff/base64' %}
+{% include '0.diff/base64' %}
 EOF
 {{super()}}
 {% endblock %}

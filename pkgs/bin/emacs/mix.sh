@@ -17,7 +17,7 @@ bin/tar
 
 {% block patch %}
 patch -p1 << EOF
-{% include 'p00.diff' %}
+{% include '0.diff' %}
 EOF
 {% endblock %}
 

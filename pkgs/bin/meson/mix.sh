@@ -20,7 +20,7 @@ mkdir src; cd src; extract0 ${src}/0*; cd meson*
 
 {% block patch %}
 patch -p1 << EOF
-{% include '00.diff' %}
+{% include '0.diff' %}
 EOF
 {% endblock %}
 
