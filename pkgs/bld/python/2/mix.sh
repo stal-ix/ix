@@ -50,7 +50,7 @@ EOF
 
 {% block configure_flags %}
 --without-ensurepip
---libdir=${out}/share/python2
+#--libdir=${out}/share/python2
 {% endblock %}
 
 {% block cpp_includes %}

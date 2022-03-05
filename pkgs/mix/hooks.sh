@@ -48,25 +48,53 @@ import os
 import sys
 import subprocess
 
-if '.so' in str(sys.argv):
+def it_args():
     for x in sys.argv:
+        if x:
+            if x[0] == '@':
+                yield from open(x[1:], 'r').read().split()
+            else:
+                yield x
+
+args = list(it_args())
+
+def flt_objs():
+    for x in args:
+        if x.endswith('.o') or x.endswith('.a'):
+            yield x
+
+def link1(x, objs):
+    if '/' in x:
+        try:
+            os.makedirs(os.path.dirname(x))
+        except OSError:
+            pass
+
+    if objs:
+        subprocess.check_call(['llvm-ar', 'qL', x] + objs)
+    else:
+        open(x, 'w')
+
+def link(objs):
+    for x in args:
+        if '-Wl' in x:
+            continue
+
         if '.so' in x:
-            if '/' in x:
-                try:
-                    os.makedirs(os.path.dirname(x))
-                except OSError:
-                    pass
+            link1(x, objs)
 
-            open(x, 'w')
-
+if '-c' in args:
+    pass
+elif '-shared' in str(args):
+    link(list(flt_objs()))
     sys.exit(0)
 
-if '-P' in sys.argv or '-E' in sys.argv:
+if '-P' in args or '-E' in args:
     arg0 = 'clang-cpp'
 else:
     arg0 = "${C}"
 
-subprocess.check_call([arg0] + sys.argv[1:])
+subprocess.check_call([arg0] + args[1:])
 EOF
 
 chmod +x {{name}}
