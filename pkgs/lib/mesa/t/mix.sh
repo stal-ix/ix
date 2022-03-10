@@ -1,8 +1,8 @@
 {% extends '//mix/meson.sh' %}
 
 {% block fetch %}
-https://gitlab.freedesktop.org/mesa/mesa/-/archive/mesa-21.3.6/mesa-mesa-21.3.6.tar.bz2
-sha:119ab4164ba1d601a30b796ea2df38ddb8cf17521292cf08abbff3bbe62ec75a
+https://gitlab.freedesktop.org/mesa/mesa/-/archive/mesa-22.0.0/mesa-mesa-22.0.0.tar.bz2
+sha:e5fe34b3b792885a56086341fc7ebd02fe315dd6956c2cf2ac1075f12222c4e2
 {% endblock %}
 
 {% block lib_deps %}
