@@ -10,12 +10,11 @@ sha:fcb9e9dbbb112f5c527c1c4155994fd97b6b1eb3950316e186e3c293e7a07fc4
 lib/c
 lib/vulkan/loader
 lib/vulkan/headers
-lib/vulkan/glslang
 {% endblock %}
 
 {% block bld_tool %}
 {{super()}}
-lib/vulkan/glslang
+bin/glslang
 {% endblock %}
 
 {% block patch %}

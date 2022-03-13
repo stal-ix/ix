@@ -10,7 +10,7 @@ bld/python
 bin/bison/3/8
 {% endblock %}
 
-{% block lib_deps %}
+{% block bld_libs %}
 lib/c
 {% endblock %}
 

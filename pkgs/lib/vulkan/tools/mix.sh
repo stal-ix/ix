@@ -13,7 +13,7 @@ lib/vulkan/headers
 {% endblock %}
 
 {% block bld_tool %}
-lib/vulkan/glslang
+bin/glslang
 bin/pkg-config
 bin/wayland/protocols
 {% endblock %}
