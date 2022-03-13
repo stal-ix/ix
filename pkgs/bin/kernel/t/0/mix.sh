@@ -12,13 +12,13 @@ bin/gcc/tc(for_target={{target.gnu.three}})
 {% endblock %}
 
 {% block bld_tool %}
-lib/xz
-bld/perl
+bin/xz
 bin/flex
 bin/gzip
-lib/zstd
+bin/zstd
+bld/perl
 bld/python
-lib/openssl/1
+bin/openssl
 bin/bison/3/6
 bin/busybox/bc
 {% endblock %}

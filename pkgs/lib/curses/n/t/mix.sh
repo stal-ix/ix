@@ -6,8 +6,8 @@ a2736befde5fee7d2b7eb45eb281cdbe
 {% endblock %}
 
 {% block bld_tool %}
-lib/z
 bld/bash
+bin/minigzip
 {% endblock %}
 
 {% block lib_deps %}

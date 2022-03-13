@@ -11,8 +11,8 @@ lib/linux
 {% endblock %}
 
 {% block bld_tool %}
-lib/bzip2
 bld/perl
+bin/bzip2
 {% endblock %}
 
 {% block no_mold %}
