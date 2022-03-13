@@ -13,7 +13,7 @@ lib/cairo
 lib/pango
 lib/json/c
 lib/wayland
-lib/wlroots/15
+lib/wlroots
 lib/gdk/pixbuf
 {% endblock %}
 

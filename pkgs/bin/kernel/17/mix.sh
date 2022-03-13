@@ -1,7 +1,7 @@
 {% extends '//bin/kernel/t/1/mix.sh' %}
 
 {% block kernel_name %}
-5.17-rc6
+5.17-rc7
 {% endblock %}
 
 {% block fetch %}

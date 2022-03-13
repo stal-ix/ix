@@ -1,9 +1,5 @@
 #!/bin/sh
 
-cat mix.sh | grep 'https://' | while read l; do
+(cat *.sh | grep 'https://'; cat *.sh | grep 'http://') | while read l; do
     wget --no-check-certificate "${l}"
-done
-
-cat mix.sh | grep 'http://' | while read l; do
-    wget "${l}"
 done

@@ -7,7 +7,7 @@ sha:de8848de0a81749fe7ee7316bead0261bd978e26c2f899d02897609972a6e98c
 
 {% block bld_libs %}
 lib/c
-lib/wlroots/15
+lib/wlroots
 {% endblock %}
 
 {% block bld_tool %}
