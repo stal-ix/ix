@@ -99,3 +99,13 @@ EOF
 
 chmod +x {{name}}
 ) {% endmacro %}
+
+{% macro wrap_c_compilers() %} (
+if which clang; then
+{{wrap_c_compiler('clang')}}
+fi
+
+if which clang++; then
+{{wrap_c_compiler('clang++')}}
+fi
+) {% endmacro %}
