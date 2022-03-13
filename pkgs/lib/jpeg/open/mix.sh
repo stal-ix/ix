@@ -10,7 +10,6 @@ lib/c
 {% endblock %}
 
 {% block cmake_flags %}
-BUILD_SHARED_LIBS=OFF
 BUILD_JPIP=ON
 BUILD_PKGCONFIG_FILES=ON
 {% endblock %}
