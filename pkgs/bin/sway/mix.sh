@@ -1,8 +1,19 @@
 {% extends '//bin/sway/orig/mix.sh' %}
 
-{% block patch %}
+{% block run_deps %}
+bin/subreaper
+{% endblock %}
+
+{% block install %}
 {{super()}}
-base64 -d << EOF > sway/commands/exec_always.c
-{% include 'exec_always.c/base64' %}
+
+cd ${out}/bin
+mv sway swaybin
+
+cat << EOF > sway
+#!/bin/sh
+exec subreaper swaybin "\$@"
 EOF
+
+chmod +x sway
 {% endblock %}

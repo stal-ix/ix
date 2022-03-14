@@ -17,6 +17,6 @@ swaynag=false
 
 {% block install %}
 {{super()}}
-cd ${out}
-rm -r bin/swaymsg
+cd ${out}/bin
+rm swaymsg
 {% endblock %}
