@@ -17,9 +17,19 @@ BUILD_PKGCONFIG_FILES=ON
 {% block install %}
 {{super()}}
 
-cd ${out}/lib/pkgconfig
+cd ${out}/lib
+
+ln -s openjpeg-2.4 cmake
+
+echo > cmake/OpenJPEGTargets.cmake
+
+cd pkgconfig
 
 for i in *.pc; do
     sed -e 's|bindir.*||' -i ${i}
 done
+{% endblock %}
+
+{% block env_lib %}
+export CMFLAGS="-DOpenJPEG_DIR=${out}/lib/cmake \${CMFLAGS}"
 {% endblock %}

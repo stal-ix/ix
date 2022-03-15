@@ -13,11 +13,13 @@ lib/dbus
 lib/intl
 lib/jpeg
 lib/xslt
+lib/iconv
 lib/lcms2
 lib/pango
 lib/cairo
 lib/boost
 lib/soup/2
+lib/poppler
 lib/boehmgc
 lib/potrace
 lib/rsvg/reg
@@ -41,8 +43,6 @@ bin/glib/codegen
 {% block cmake_flags %}
 WITH_OPENMP=OFF
 BUILD_TESTING=OFF
-ENABLE_POPPLER=OFF
-ENABLE_POPPLER_CAIRO=OFF
 WITH_IMAGE_MAGICK=OFF
 WITH_GRAPHICS_MAGICK=OFF
 WITH_LIBCDR=OFF
@@ -60,6 +60,12 @@ export CXXFLAGS="-Wno-register ${CXXFLAGS}"
 {% endblock %}
 
 {% block patch %}
+sed -e 's|getTag()->getCString|getTag().c_str|' \
+    -i src/extension/internal/pdfinput/pdf-parser.cpp
+
+sed -e 's|(filename_goo, nullptr, nullptr|(std::unique_ptr<GooString>(filename_goo), std::nullopt, std::nullopt|' \
+    -i src/extension/internal/pdfinput/pdf-input.cpp
+
 sed -e 's|ifdef __APPLE__|if 1|' -i src/object/object-set.cpp
 sed -e 's|.*g_warning_once.*||' -i src/style.cpp
 

@@ -1,2 +1,2 @@
-https://git.kernel.org/torvalds/t/linux-5.17-rc7.tar.gz
-sha:35575d4843f405ddd229f358a81fecca460fcd7a4b087bd74f0a34cc4c20b2c1
+https://git.kernel.org/torvalds/t/linux-5.17-rc8.tar.gz
+sha:32293e5747e7623c7ea1fcc55b7bb37918206629353f38d1ee5623852ad428ed
