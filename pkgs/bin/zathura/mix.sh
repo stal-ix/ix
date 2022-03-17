@@ -10,6 +10,7 @@ lib/c
 lib/glib
 lib/gtk/3
 lib/magic
+lib/cairo
 lib/girara
 lib/sqlite3
 {% endblock %}
