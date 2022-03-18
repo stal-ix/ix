@@ -29,11 +29,11 @@ ln -s $(which llvm-ar) ar
 
 {% block patch %}
 (base64 -d | patch -p1) << EOF
-{% include 'p00.patch/base64' %}
+{% include '0.diff/base64' %}
 EOF
 
 (base64 -d | patch -p1) << EOF
-{% include 'p01.patch/base64' %}
+{% include '1.diff/base64' %}
 EOF
 {% endblock %}
 

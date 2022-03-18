@@ -1,4 +1,4 @@
-{% extends '//mix/autohell.sh' %}
+{% extends '//mix/autorehell.sh' %}
 
 {% block fetch %}
 https://ftp.gnu.org/gnu/gzip/gzip-1.10.tar.xz
