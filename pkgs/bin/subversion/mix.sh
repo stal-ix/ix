@@ -34,8 +34,5 @@ ln -s $(which python2) python
 
 {% block install %}
 {{super()}}
-
-{% if bin %}
-rm -rf ${out}/share/pkgconfig
-{% endif %}
+rm -r ${out}/share/pkgconfig
 {% endblock %}
