@@ -13,9 +13,6 @@ lib/fts
 lib/zstd
 lib/bzip2
 lib/obstack
-{% if bin %}
-lib/intl
-{% endif %}
 {% endblock %}
 
 {% block bld_libs %}

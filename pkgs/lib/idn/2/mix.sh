@@ -9,9 +9,6 @@ cda07f5ac55fccfafdf7ee01828adad5
 lib/c
 lib/iconv
 lib/unistring
-{% if bin %}
-lib/intl
-{% endif %}
 {% endblock %}
 
 {% block make_ver %}

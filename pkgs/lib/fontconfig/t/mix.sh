@@ -16,10 +16,6 @@ lib/c
 lib/expat
 lib/json/c
 lib/freetype
-{% if bin %}
-lib/intl
-lib/iconv
-{% endif %}
 {% endblock %}
 
 {% block patch %}

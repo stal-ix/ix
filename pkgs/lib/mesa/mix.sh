@@ -9,13 +9,6 @@ lib/mesa/data
 bld/scripts
 {% endblock %}
 
-{% block meson_flags %}
-{{super()}}
-{% if bin %}
-tools=glsl
-{% endif %}
-{% endblock %}
-
 {% block configure %}
 #export CMAKE_PREFIX_PATH="${lib_llvm}"
 {{super()}}
