@@ -1,8 +1,8 @@
 {% extends '//mix/make.sh' %}
 
 {% block fetch %}
-https://github.com/illiliti/libudev-zero/archive/938b959402552483f010401051eb800c04607a41.zip
-de426bde2fef6f8a6fef2d089d0bf58a
+https://github.com/illiliti/libudev-zero/archive/4154cf252c17297f98a8ca33693ead003b4509da.zip
+sha:899491a0b64d0bd7c42f98149d48aaba36cbf94e68e72448835185b631f1cecc
 {% endblock %}
 
 {% block lib_deps %}

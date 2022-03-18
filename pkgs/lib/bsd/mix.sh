@@ -1,8 +1,8 @@
 {% extends '//mix/autorehell.sh' %}
 
 {% block fetch %}
-https://libbsd.freedesktop.org/releases/libbsd-0.11.2.tar.xz
-ec16d126e5f72362d57e0161460fce5e
+https://libbsd.freedesktop.org/releases/libbsd-0.11.5.tar.xz
+sha:1a9c952525635c1bb6770cb22e969b938d8e6a9d7912362b98ee8370599b0efd
 {% endblock %}
 
 {% block lib_deps %}
