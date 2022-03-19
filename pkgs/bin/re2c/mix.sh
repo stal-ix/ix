@@ -10,9 +10,8 @@ lib/c
 lib/c++
 {% endblock %}
 
-{% block bld_tool %}
-bin/flex
-bin/bison/3/8
+{% block std_box %}
+bld/bootbox
 {% endblock %}
 
 {% block build_flags %}

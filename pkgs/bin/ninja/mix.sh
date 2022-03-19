@@ -11,5 +11,6 @@ lib/c++
 {% endblock %}
 
 {% block std_box %}
+bin/re2c
 bld/bootbox
 {% endblock %}
