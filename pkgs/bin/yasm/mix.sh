@@ -11,8 +11,8 @@ lib/intl
 {% endblock %}
 
 {% block bld_tool %}
+bin/re2c
 bld/python
-bin/re2c/3
 bin/gettext
 {% endblock %}
 
