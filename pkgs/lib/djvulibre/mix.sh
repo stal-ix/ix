@@ -11,7 +11,3 @@ lib/c++
 lib/tiff
 lib/jpeg
 {% endblock %}
-
-{% block autoreconf %}
-NOCONFIGURE=1 sh autogen.sh
-{% endblock %}

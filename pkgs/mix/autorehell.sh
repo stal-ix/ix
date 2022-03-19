@@ -16,7 +16,7 @@ for x in {% block purge_autohell %}configure config.guess config.sub install-sh{
 done
 
 if test -f autogen.sh; then
-    sh autogen.sh
+    NOCONFIGURE=1 sh autogen.sh
 else
     libtoolize -ci
     autoreconf -if

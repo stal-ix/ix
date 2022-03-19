@@ -1,1 +1,2 @@
+git push
 git push https://pg83:$(cat ~/.key)@github.com/pg83/mix.git

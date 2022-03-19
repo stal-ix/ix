@@ -7,10 +7,6 @@ http://www.x.org/releases/individual/data/xkeyboard-config/xkeyboard-config-2.24
 
 {% block make_no_thrs %}{% endblock %}
 
-{% block autoreconf %}
-NOCONFIGURE=1 sh autogen.sh
-{% endblock %}
-
 {% block bld_libs %}
 lib/c
 {% endblock %}

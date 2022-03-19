@@ -18,10 +18,6 @@ lib/iconv
 --without-python
 {% endblock %}
 
-{% block autoreconf %}
-NOCONFIGURE=yes sh autogen.sh
-{% endblock %}
-
 {% block env_lib %}
 export COFLAGS="--with-libxml2-prefix=${out} \${COFLAGS}"
 {% endblock %}
