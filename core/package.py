@@ -127,7 +127,7 @@ def canon_name(n):
     return n.lower()
 
 
-ONE_LEVEL = ('setx', 'help', 'verbose')
+ONE_LEVEL = ('setx', 'help', 'verbose', 'stage')
 
 
 def sanitize(flags):

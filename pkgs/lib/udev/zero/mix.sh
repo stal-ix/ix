@@ -1,8 +1,8 @@
 {% extends '//mix/make.sh' %}
 
 {% block fetch %}
-https://github.com/illiliti/libudev-zero/archive/4154cf252c17297f98a8ca33693ead003b4509da.zip
-sha:899491a0b64d0bd7c42f98149d48aaba36cbf94e68e72448835185b631f1cecc
+https://github.com/illiliti/libudev-zero/archive/refs/tags/1.0.1.tar.gz
+sha:c4cf149ea96295c1e6e86038d10c725344c751982ed4a790b06c76776923e0ea
 {% endblock %}
 
 {% block lib_deps %}
@@ -13,12 +13,10 @@ lib/c
 lib/linux
 {% endblock %}
 
-{% block bld_tool %}
-bld/python
+{% block make_target %}
+libudev.a
 {% endblock %}
 
-{% import '//mix/hooks.sh' as hooks %}
-
-{% block setup_tools %}
-{{hooks.wrap_c_compilers()}}
+{% block make_install_target %}
+install-static
 {% endblock %}
