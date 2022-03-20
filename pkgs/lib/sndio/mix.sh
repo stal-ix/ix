@@ -8,7 +8,7 @@ sha:f81d37189e072cb4804ac98a059d74f963f69e9945eaff3d0d6a2f98d71a6321
 {% block lib_deps %}
 lib/c
 lib/bsd
-lib/alsa/lib
+lib/alsa
 {% endblock %}
 
 {% block bld_tool %}

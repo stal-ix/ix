@@ -7,13 +7,13 @@ sha:51127d20613666b9924deb9afd92c48d69815c5043d2996b3f0f6e9705fcabc8
 
 {% block bld_libs %}
 lib/c
+lib/alsa
 lib/yaml
 lib/udev
 lib/linux
 lib/tllist
 lib/fcft/3
 lib/wayland
-lib/alsa/lib
 {% endblock %}
 
 {% block bld_tool %}

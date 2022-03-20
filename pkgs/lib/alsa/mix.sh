@@ -1,7 +1,7 @@
-{% extends '//lib/alsa/lib/t/mix.sh' %}
+{% extends '//lib/alsa/t/mix.sh' %}
 
 {% block run_data %}
-lib/alsa/lib/data
+lib/alsa/data
 {% endblock %}
 
 {% block bld_tool %}

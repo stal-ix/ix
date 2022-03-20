@@ -11,8 +11,8 @@ lib/c++
 {% endblock %}
 
 {% block bld_libs %}
+lib/alsa
 lib/linux
-lib/alsa/lib
 {% endblock %}
 
 {% block bld_tool %}

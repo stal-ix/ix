@@ -1,1 +1,1 @@
-{% extends '//lib/alsa/lib/t/mix.sh' %}
+{% extends '//lib/alsa/t/mix.sh' %}

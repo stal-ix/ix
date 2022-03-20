@@ -11,13 +11,17 @@ bin/gettext
 
 {% block bld_libs %}
 lib/c
+lib/alsa
 lib/udev
 lib/intl
 lib/curses
-lib/alsa/lib
 {% endblock %}
 
 {% block configure_flags %}
 --with-udev-rules-dir="${out}/share"
 --with-curses=ncurses
+{% endblock %}
+
+{% block patch %}
+sed -e 's|install-data-hook|xxx|' -i Makefile.am
 {% endblock %}
