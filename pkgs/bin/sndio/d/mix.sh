@@ -1,4 +1,11 @@
-{% extends '//lib/sndio/mix.sh' %}
+{% extends '//lib/sndio/t/mix.sh' %}
+
+{% block bld_libs %}
+lib/alsa
+{{super()}}
+{% endblock %}
+
+{% block configure_flags %}--enable-alsa{% endblock %}
 
 {% block install %}
 {{super()}}

@@ -1,11 +1,13 @@
-{% extends '//lib/jack/2/mix.sh' %}
+{% extends '//lib/jack/2/t/mix.sh' %}
 
 {% block bld_libs %}
+lib/alsa
 lib/readline
 {{super()}}
 {% endblock %}
 
 {% block waf_flags %}
+--alsa=yes
 --readline=yes
 {{super()}}
 {% endblock %}

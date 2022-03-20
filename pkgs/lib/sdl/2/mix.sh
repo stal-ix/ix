@@ -8,7 +8,7 @@ sha:2a026753af9b03fca043824bca8341f74921a836d28729e0c31aa262202a83c6
 {% block lib_deps %}
 lib/c
 lib/decor
-lib/jack/2
+lib/sndio
 lib/opengl
 lib/wayland
 lib/xkbcommon
@@ -26,11 +26,14 @@ LIBTYPE=STATIC
 SDL_STATIC=ON
 SDL_SHARED=OFF
 
-SDL_JACK=ON
-SDL_JACK_SHARED=OFF
+#SDL_JACK=ON
+#SDL_JACK_SHARED=OFF
 
 #SDL_ALSA=ON
 #SDL_ALSA_SHARED=OFF
+
+SDL_SNDIO=ON
+SDL_SNDIO_SHARED=OFF
 
 SDL_X11=OFF
 SDL_VULKAN=ON
