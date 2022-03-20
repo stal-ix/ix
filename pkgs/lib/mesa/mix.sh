@@ -16,6 +16,11 @@ python3 $(which fix_data_dir.py) ${MESA_DATA}
 {% endblock %}
 
 {% block c_rename_symbol %}
+SHA1Pad
+SHA1Init
+SHA1Final
+SHA1Update
+SHA1Transform
 handle_table_remove
 os_create_anonymous_file
 {% endblock %}
