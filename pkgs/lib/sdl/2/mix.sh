@@ -54,3 +54,13 @@ sed -e 's|CheckEGL()||' \
 sed -e 's|define SDL_DYNAMIC_API 1|define SDL_DYNAMIC_API 0|' \
     -i src/dynapi/SDL_dynapi.h
 {% endblock %}
+
+{% block install %}
+{{super()}}
+
+cd ${out}
+
+for x in lib/pkgconfig/sdl2.pc bin/sdl2-config; do
+    sed -e 's|-l.*sndio.a|-lsndio|' -i ${x}
+done
+{% endblock %}
