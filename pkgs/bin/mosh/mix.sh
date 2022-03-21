@@ -8,9 +8,9 @@ https://github.com/mobile-shell/mosh/archive/refs/tags/mosh-1.3.2.tar.gz
 {% block bld_libs %}
 lib/c
 lib/c++
-lib/protobuf
 lib/curses
 lib/openssl
+lib/protobuf
 {% endblock %}
 
 {% block bld_tool %}

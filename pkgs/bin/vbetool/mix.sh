@@ -12,7 +12,7 @@ lib/c
 lib/z
 lib/x86
 lib/linux
-bin/pciutils
+lib/pciutils
 {% endblock %}
 
 {% block patch %}

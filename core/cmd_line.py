@@ -17,7 +17,12 @@ def parse_pkgs_lst(pkgs):
 
     for p in pkgs:
         if p.startswith('--'):
-            k, v = p[2:].split('=')
+            p = p[2:]
+
+            if '=' in p:
+                k, v = p.split('=')
+            else:
+                k, v = p, '1'
 
             cur['flags'][k] = v
         else:

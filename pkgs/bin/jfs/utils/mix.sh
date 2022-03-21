@@ -11,7 +11,7 @@ bin/e2fsprogs
 {% endblock %}
 
 {% block cpp_defines %}
-_PATH_MNTTAB=\\\"/etc/mtab\\\"
+_PATH_MNTTAB=\\\"/proc/mounts\\\"
 {% endblock %}
 
 {% block setup %}
