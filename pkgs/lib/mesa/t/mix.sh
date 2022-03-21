@@ -31,26 +31,27 @@ bin/wayland/protocols
 {% endblock %}
 
 {% block meson_flags %}
-dri-drivers=
-vulkan-drivers=amd
-gallium-drivers=zink
-
 valgrind=disabled
 libunwind=disabled
-
+cpp_rtti=false
+shader-cache=disabled
 platforms=wayland
 egl-native-platform=wayland
-
 egl=enabled
 glx=disabled
 gles2=enabled
 opengl=true
 gallium-nine=false
-
-cpp_rtti=false
-shader-cache=disabled
 llvm=disabled
 shared-llvm=disabled
+{% endblock %}
+
+{% block patch %}
+cat << EOF > bin/install_megadrivers.py
+#!/bin/sh
+EOF
+
+chmod +x bin/install_megadrivers.py
 {% endblock %}
 
 {% block meson_cross %}

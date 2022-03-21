@@ -15,6 +15,7 @@ lib/opengl
 lib/pixman
 lib/wayland
 lib/xkbcommon
+lib/mesa/glesv2
 {% endblock %}
 
 {% block bld_tool %}
@@ -40,10 +41,6 @@ zwlr_layer_shell_v1_interface
 zwlr_layer_surface_v1_interface
 
 wl_drm_interface
-
-zwp_linux_dmabuf_v1_interface
-zwp_linux_buffer_params_v1_interface
-zwp_linux_dmabuf_feedback_v1_interface
 
 NSEC_PER_SEC
 {% endblock %}

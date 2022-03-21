@@ -43,6 +43,7 @@ EOF
         echo 'export ACLOCAL_PATH="'${out}'/share/aclocal:${ACLOCAL_PATH}"'
     fi
 
+{% block no_lib_env %}
     (
         if test -d ${out}/lib; then
             cd ${out}/lib
@@ -55,6 +56,7 @@ EOF
             done
         fi
     )
+{% endblock %}
 {% block more_env %}
 {% endblock %}
 ) >> ${out}/env
