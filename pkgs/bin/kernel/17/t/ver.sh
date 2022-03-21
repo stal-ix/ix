@@ -1,2 +1,2 @@
-https://git.kernel.org/torvalds/t/linux-5.17-rc8.tar.gz
-sha:32293e5747e7623c7ea1fcc55b7bb37918206629353f38d1ee5623852ad428ed
+https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.17.tar.xz
+sha:555fef61dddb591a83d62dd04e252792f9af4ba9ef14683f64840e46fa20b1b1
