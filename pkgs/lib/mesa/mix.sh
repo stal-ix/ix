@@ -1,4 +1,4 @@
-{% extends '//lib/mesa/nodrv/mix.sh' %}
+{% extends '//lib/mesa/t/nodrv/mix.sh' %}
 
 {% block run_data %}
 lib/mesa/data
@@ -24,18 +24,6 @@ handle_table_remove
 os_create_anonymous_file
 {% endblock %}
 
-{% block patch %}
-{{super()}}
-
-cd src/gallium/frontends/dri
-
-for l in *.c *.h; do
-    for x in dri2_lookup_egl_image dri2_validate_egl_image; do
-        sed -e "s|${x}|${x}_xxx|g" -i ${l}
-    done
-done
-{% endblock %}
-
 {% block install %}
 {{super()}}
 cd ${out}/lib
@@ -47,7 +35,7 @@ ar q libGLESv1_CM.a empty.o
 {% endblock %}
 
 {% block env_lib %}
-export LDFLAGS="-L${out}/lib -lEGL -lgbm -lglapi \${LDFLAGS}"
+export LDFLAGS="-L${out}/lib -lgbm -lglapi \${LDFLAGS}"
 export COFLAGS="--with-gallium=${out} \${COFLAGS}"
 {% endblock %}
 

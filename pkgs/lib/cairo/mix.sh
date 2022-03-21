@@ -12,6 +12,7 @@ lib/lzo
 lib/glib
 lib/pixman
 lib/opengl
+lib/mesa/glesv2
 lib/freetype
 lib/fontconfig
 
@@ -25,7 +26,6 @@ lib/darwin/framework/CoreGraphics
 fontconfig=enabled
 freetype=enabled
 glesv2=enabled
-glesv3=enabled
 gl-backend=auto
 {% endblock %}
 

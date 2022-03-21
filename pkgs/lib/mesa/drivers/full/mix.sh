@@ -1,32 +1,5 @@
 {% extends '//lib/mesa/t/mix.sh' %}
 
-{% block run_data %}
-lib/mesa/data
-{% endblock %}
-
-{% block bld_tool %}
-{{super()}}
-bld/scripts
-{% endblock %}
-
-{% block configure %}
-#export CMAKE_PREFIX_PATH="${lib_llvm}"
-{{super()}}
-python3 $(which fix_data_dir.py) ${MESA_DATA}
-{% endblock %}
-
-{% block c_rename_symbol %}
-dri2_validate_egl_image
-dri2_lookup_egl_image_validated
-dri2_lookup_egl_image
-handle_table_remove
-vi_alpha_is_on_msb
-si_emit_cache_flush
-si_cp_dma_prefetch
-si_cp_dma_clear_buffer
-si_cp_dma_wait_for_idle
-{% endblock %}
-
 {% block meson_flags%}
 {{super()}}
 dri-drivers=
@@ -34,10 +7,26 @@ vulkan-drivers=amd
 gallium-drivers=zink
 {% endblock %}
 
+{% block c_rename_symbol %}
+dri2_validate_egl_image
+dri2_lookup_egl_image_validated
+dri2_lookup_egl_image
+
+handle_table_remove
+
+vi_alpha_is_on_msb
+si_emit_cache_flush
+si_cp_dma_prefetch
+si_cp_dma_clear_buffer
+si_cp_dma_wait_for_idle
+{% endblock %}
+
 {% block install %}
 {{super()}}
 
 cd ${out}
+
+rm -rf include share
 
 mkdir tmp
 

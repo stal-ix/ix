@@ -18,12 +18,12 @@ lib/webkit
 lib/sqlite3
 lib/archive
 lib/gtk/reg
-lib/mesa/gl
-lib/mesa/egl
 lib/rsvg/reg
 lib/json/glib
 lib/gdk/pixbuf
 lib/drivers/3d
+lib/mesa/gl/dl
+lib/mesa/egl/dl
 lib/glib/networking
 lib/gsettings/desktop/schemas
 {% endblock %}
