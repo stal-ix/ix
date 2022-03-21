@@ -16,7 +16,6 @@ lib/c++/headers
 {% block patch %}
 rm -rf src/test/func
 rm -rf src/test/perf
-sed -e 's| SHARED | STATIC |g' -i CMakeLists.txt
 {% endblock %}
 
 {% block install %}

@@ -18,10 +18,6 @@ LIBUV_BUILD_TESTS=OFF
 LIBUV_BUILD_BENCH=OFF
 {% endblock %}
 
-{% block patch %}
-sed -e 's| SHARED | STATIC |g' -i CMakeLists.txt
-{% endblock %}
-
 {% block install %}
 {{super()}}
 rm ${out}/lib/pkgconfig/libuv-static.pc ${out}/lib/libuv_a.a

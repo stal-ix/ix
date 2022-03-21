@@ -75,3 +75,12 @@ BUILD_SHARED_LIBS=OFF
 
 {{mix.fix_list(command_args)}}
 {% endblock %}
+
+{% block step_patch %}
+find . -name CMakeLists.txt -type f | while read l; do
+    sed -e 's| MODULE | STATIC |g' \
+        -e 's| SHARED | STATIC |g' \
+        -i "${l}"
+done
+{{super()}}
+{% endblock %}

@@ -26,12 +26,6 @@ bin/m4
 bin/pkg-config
 {% endblock %}
 
-{% block patch %}
-find . -name CMakeLists.txt | while read l; do
-    sed -e 's| MODULE | STATIC |' -i ${l}
-done
-{% endblock %}
-
 {% block c_rename_symbol %}
 Ppmd8_Free
 Ppmd8_Init

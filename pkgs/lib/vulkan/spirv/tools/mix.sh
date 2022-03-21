@@ -21,10 +21,6 @@ extract1 ${src}/v*
 bld/python
 {% endblock %}
 
-{% block patch %}
-sed -e 's| SHARED | STATIC |' -i source/CMakeLists.txt
-{% endblock %}
-
 {% block cmake_flags %}
 SPIRV_COLOR_TERMINAL=ON
 SPIRV_WERROR=OFF

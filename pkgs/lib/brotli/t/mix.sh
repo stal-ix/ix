@@ -14,10 +14,6 @@ BROTLI_SHARED_LIBS=
 BROTLI_DISABLE_TESTS=ON
 {% endblock %}
 
-{% block patch %}
-sed -e 's| SHARED | STATIC |' -i CMakeLists.txt
-{% endblock %}
-
 {% block install %}
 {{super()}}
 rm ${out}/lib/lib*static*

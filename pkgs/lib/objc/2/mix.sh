@@ -16,10 +16,6 @@ mkdir src; cd src; extract1 ${src}/*.zip
 TESTS=OFF
 {% endblock %}
 
-{% block patch %}
-sed -e 's| SHARED | STATIC |g' -i CMakeLists.txt
-{% endblock %}
-
 {% block lib_deps %}
 lib/c
 {% endblock %}
