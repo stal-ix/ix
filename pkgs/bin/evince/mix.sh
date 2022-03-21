@@ -38,6 +38,8 @@ lib/dlfcn/scripts
 gtk_doc=false
 user_doc=false
 nautilus=false
+previewer=false
+thumbnailer=false
 introspection=false
 {% endblock %}
 
@@ -46,7 +48,9 @@ shut_up
 {% endblock %}
 
 {% block patch %}
-sed -e 's|+multipage||' -i meson.build
+sed -e 's|+multipage||' \
+    -e 's|ev_libdir, ev_backends_subdir|ev_datadir, ev_backends_subdir|' \
+    -i meson.build
 
 cd backend
 
@@ -80,15 +84,11 @@ rm cut-n-paste/synctex/libsynctex.a
 rm cut-n-paste/unarr/libunarr.a
 rm libmisc/libevmisc.a
 
-cc -o qw \
+cc -o real_evince \
     -Wl,--whole-archive           \
     $(find . -type f -name '*.a') \
     -Wl,--no-whole-archive        \
     stub.o shell/evince.p/main.c.o
-{% endblock %}
-
-{% block postinstall %}
-: skip it
 {% endblock %}
 
 {% import '//mix/hooks.sh' as hooks %}
@@ -96,6 +96,7 @@ cc -o qw \
 {% block install %}
 {{hooks.install_glib_schemas()}}
 {{super()}}
-cp ${tmp}/obj/qw ${out}/bin/evince
+rm -r ${out}/bin/bin_*
+cp ${tmp}/obj/real_evince ${out}/bin/evince
 {{hooks.wrap_xdg_binary('evince')}}
 {% endblock %}
