@@ -29,4 +29,7 @@ seat_create
 server_init
 seat_destroy
 parse_boolean
+zwp_linux_dmabuf_v1_interface
+zwp_linux_buffer_params_v1_interface
+zwp_linux_dmabuf_feedback_v1_interface
 {% endblock %}
