@@ -14,6 +14,7 @@ lib/pixman
 lib/opengl
 lib/freetype
 lib/fontconfig
+lib/mesa/glesv2
 
 {% if darwin %}
 lib/darwin/framework/ApplicationServices

@@ -46,12 +46,18 @@ done
 {% block install %}
 {{super()}}
 
-cd ${out}/lib
+cd ${out}
+
+mkdir tmp
+
+mv lib/libEGL* lib/libGLES* tmp/
+
+cd lib
 
 mv dri/zink_dri.so libdrivers.a
 rm -rf dri
 
-mkdir tmp && cd tmp
+mkdir tmp; cd tmp
 
 cat << EOF > ${tmp}/fix.py
 import os
@@ -83,7 +89,7 @@ rm si_state_draw* && for i in 1 2 3 4 5 6; do
     mv si_state_draw.cpp.o si_state_draw_cpp_${i}.o
 done
 
-rm *libGLESv1*entry*
+#rm *libGLESv1*entry*
 rm meson*vulkan_util*
 rm *egl_wayland_wayland-drm_linux-dmabuf-unstable-v1-protocol*
 rm *libvulkan_radeon_a___spirv_*
@@ -102,12 +108,26 @@ mv tmp/libempty.a tmp/libfullgl.a big/
 rm -rf tmp
 
 for l in *.a; do
-    rm ${l} && ln -s big/libempty.a ${l}
+    rm ${l}
+    ln -s big/libempty.a ${l}
 done
 
 ln -s big/libfullgl.a .
+
+cd ${out}
+
+mv tmp/*.a lib/
+rm -r tmp
+
+find . -type f -name '*.pc' | while read l; do
+    sed -e 's|glesv1_cm,||g' -i ${l}
+done
 {% endblock %}
 
 {% block env_lib %}
+export LDFLAGS="-L${out}/lib -lfullgl \${LDFLAGS}"
 export COFLAGS="--with-gallium=${out} \${COFLAGS}"
+{% endblock %}
+
+{% block skip_auto_lib_env %}
 {% endblock %}

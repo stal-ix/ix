@@ -14,7 +14,9 @@ lib/input
 lib/opengl
 lib/pixman
 lib/wayland
+lib/mesa/egl
 lib/xkbcommon
+lib/mesa/glesv2
 {% endblock %}
 
 {% block bld_tool %}
