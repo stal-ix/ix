@@ -1,7 +1,6 @@
 {% extends '//mix/dlstubs.sh' %}
 
 {% block lib_deps %}
-lib/c
 lib/mesa/drivers/full
 {% endblock %}
 
