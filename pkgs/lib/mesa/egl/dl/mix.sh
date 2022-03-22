@@ -1,11 +1,54 @@
 {% extends '//mix/dlstubs.sh' %}
 
 {% block lib_deps %}
-lib/mesa
+lib/mesa/egl
 {% endblock %}
 
-{% block export_symbols_sh %}
-llvm-nm ${lib_mesa}/lib/libfullgl.a | grep egl | grep -v '_egl'
+{% block export_symbols %}
+eglBindAPI
+eglBindTexImage
+eglChooseConfig
+eglClientWaitSync
+eglCopyBuffers
+eglCreateContext
+eglCreateImage
+eglCreatePbufferFromClientBuffer
+eglCreatePbufferSurface
+eglCreatePixmapSurface
+eglCreatePlatformPixmapSurface
+eglCreatePlatformWindowSurface
+eglCreateSync
+eglCreateWindowSurface
+eglDestroyContext
+eglDestroyImage
+eglDestroySurface
+eglDestroySync
+eglGetConfigAttrib
+eglGetConfigs
+eglGetCurrentContext
+eglGetCurrentDisplay
+eglGetCurrentSurface
+eglGetDisplay
+eglGetError
+eglGetPlatformDisplay
+eglGetProcAddress
+eglGetSyncAttrib
+eglInitialize
+eglMakeCurrent
+eglQueryAPI
+eglQueryContext
+eglQueryString
+eglQuerySurface
+eglReleaseTexImage
+eglReleaseThread
+eglSurfaceAttrib
+eglSwapBuffers
+eglSwapInterval
+eglTerminate
+eglWaitClient
+eglWaitGL
+eglWaitNative
+eglWaitSync
 {% endblock %}
 
 {% block export_lib %}
