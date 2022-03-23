@@ -2,7 +2,7 @@
 
 {% block fetch %}
 https://gitlab.gnome.org/GNOME/libsoup/-/archive/3.0.5/libsoup-3.0.5.tar.bz2
-sha:
+sha:5a2cdfa2ddfae66626d151fc5abc923e5a5edee934b0b2e13678a6f58a6a6c23
 {% endblock %}
 
 {% block lib_deps %}
