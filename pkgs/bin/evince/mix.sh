@@ -67,7 +67,7 @@ EOF
 ) done
 {% endblock %}
 
-{% block build %}
+{% block build1 %}
 {{super()}}
 
 cd ${tmp}/obj
@@ -81,8 +81,13 @@ done
 cc -c stub.cpp
 
 rm cut-n-paste/synctex/libsynctex.a
-rm cut-n-paste/unarr/libunarr.a
+#rm cut-n-paste/unarr/libunarr.a
 rm libmisc/libevmisc.a
+rm backend/comics/libcomicsdocument.a
+rm backend/djvu/libdjvudocument.a
+rm backend/pdf/libpdfdocument.a
+rm backend/tiff/libtiffdocument.a
+rm libview/libevview3.a
 
 cc -o real_evince \
     -Wl,--whole-archive           \
@@ -97,6 +102,6 @@ cc -o real_evince \
 {{hooks.install_glib_schemas()}}
 {{super()}}
 rm -r ${out}/bin/bin_*
-cp ${tmp}/obj/real_evince ${out}/bin/evince
+#cp ${tmp}/obj/real_evince ${out}/bin/evince
 {{hooks.wrap_xdg_binary('evince')}}
 {% endblock %}
