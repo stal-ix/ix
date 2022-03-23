@@ -19,6 +19,7 @@ lib/xiph/flac
 lib/xiph/vorbis
 lib/vulkan/loader
 lib/vulkan/driver
+lib/mesa/egl
 {% endblock %}
 
 {% block make_flags %}

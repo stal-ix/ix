@@ -46,78 +46,24 @@ done
 {% block install %}
 {{super()}}
 
-cd ${out}
+cd ${out}/lib
 
-mkdir tmp
-
-mv lib/libEGL* lib/libGLES* tmp/
-
-cd lib
-
-mv dri/zink_dri.so libdrivers.a
-rm -rf dri
-
-mkdir tmp; cd tmp
-
-cat << EOF > ${tmp}/fix.py
-import os
-import sys
-
-def rn(fr, to):
-    if fr != to:
-        print(f'rename {fr} {to}')
-        os.rename(fr, to)
-
-n = sys.argv[1].replace('/', '_').replace('.', '_')
-
-for x in list(os.listdir('.')):
-    print(f'got {x}')
-    rn(x, x[:-2].replace('.', '_') + x[-2:])
-
-for x in list(os.listdir('.')):
-    if x.startswith('___'):
-        rn(x, 'Z' + n + x)
+base64 -d << EOF > substr.py
+{% include 'substr.py/base64' %}
 EOF
 
-for l in ../*.a; do
-    llvm-ar x ${l}
-    python3 ${tmp}/fix.py ${l}
-done
+mv dri/zink_dri.so libgallium.a
+rm -r dri
 
-rm si_state_draw* && for i in 1 2 3 4 5 6; do
-    llvm-ar -xN ${i} ../libdrivers.a si_state_draw.cpp.o
-    mv si_state_draw.cpp.o si_state_draw_cpp_${i}.o
-done
+python3 substr.py libvulkan* libgallium.a
+llvm-ar qL libgldrivers.a libgallium* libvulkan_*
+rm libgallium* libvulkan_*
 
-#rm *libGLESv1*entry*
-rm meson*vulkan_util*
-rm *egl_wayland_wayland-drm_linux-dmabuf-unstable-v1-protocol*
-rm *libvulkan_radeon_a___spirv_*
+python3 substr.py libgbm.a libEGL.a
+python3 substr.py libgbm.a libgldrivers.a
+python3 substr.py libEGL.a libgldrivers.a
 
-${AR} q libfullgl.a *.o
-
-echo > empty.c
-
-${CC} -c empty.c
-${AR} q libempty.a empty.o
-
-cd ..
-
-mkdir big
-mv tmp/libempty.a tmp/libfullgl.a big/
-rm -rf tmp
-
-for l in *.a; do
-    rm ${l}
-    ln -s big/libempty.a ${l}
-done
-
-ln -s big/libfullgl.a .
-
-cd ${out}
-
-mv tmp/*.a lib/
-rm -r tmp
+rm substr.py
 
 find . -type f -name '*.pc' | while read l; do
     sed -e 's|glesv1_cm,||g' -i ${l}
@@ -125,7 +71,7 @@ done
 {% endblock %}
 
 {% block env_lib %}
-export LDFLAGS="-L${out}/lib -lfullgl \${LDFLAGS}"
+export LDFLAGS="-L${out}/lib -lgbm -lglapi \${LDFLAGS}"
 export COFLAGS="--with-gallium=${out} \${COFLAGS}"
 {% endblock %}
 
