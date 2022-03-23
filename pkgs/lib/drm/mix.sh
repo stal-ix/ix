@@ -9,6 +9,11 @@ lib/drm/data
 bld/scripts
 {% endblock %}
 
+{% block c_rename_symbol %}
+handle_table_remove
+{{super()}}
+{% endblock %}
+
 {% block configure %}
 {{super()}}
 python3 $(which fix_data_dir.py) ${DRM_DATA}

@@ -1,6 +1,6 @@
 {% extends '//mix/hub.sh' %}
 
 {% block lib_deps %}
-lib/vulkan/driver
-lib/mesa/drivers/gl/zink
+lib/vulkan/loader/dl
+lib/mesa/drivers/radv
 {% endblock %}

@@ -5,6 +5,10 @@ lib/dlfcn/scripts
 {{super()}}
 {% endblock %}
 
+{% block bld_libs %}
+lib/c
+{% endblock %}
+
 {% block premain_lang %}
 c++
 {% endblock %}

@@ -16,10 +16,9 @@ lib/mad
 lib/sdl/2
 lib/xiph/ogg
 lib/xiph/flac
+lib/drivers/3d
 lib/xiph/vorbis
 lib/vulkan/loader
-lib/vulkan/driver
-lib/mesa/egl
 {% endblock %}
 
 {% block make_flags %}

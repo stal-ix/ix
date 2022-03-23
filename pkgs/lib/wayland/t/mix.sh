@@ -9,3 +9,7 @@ https://wayland.freedesktop.org/releases/wayland-1.20.0.tar.xz
 documentation=false
 tests=false
 {% endblock %}
+
+{% block c_rename_symbol %}
+os_create_anonymous_file
+{% endblock %}
