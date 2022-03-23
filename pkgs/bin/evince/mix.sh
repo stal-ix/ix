@@ -67,10 +67,10 @@ EOF
 ) done
 {% endblock %}
 
-{% block build1 %}
+{% block build %}
 {{super()}}
 
-cd ${tmp}/obj
+cd ${tmp}
 
 for x in pdf comics djvu tiff; do
     cat << EOF | dl_stubs_2 ${x}document >> stub.cpp
@@ -79,21 +79,7 @@ EOF
 done
 
 cc -c stub.cpp
-
-rm cut-n-paste/synctex/libsynctex.a
-#rm cut-n-paste/unarr/libunarr.a
-rm libmisc/libevmisc.a
-rm backend/comics/libcomicsdocument.a
-rm backend/djvu/libdjvudocument.a
-rm backend/pdf/libpdfdocument.a
-rm backend/tiff/libtiffdocument.a
-rm libview/libevview3.a
-
-cc -o real_evince \
-    -Wl,--whole-archive           \
-    $(find . -type f -name '*.a') \
-    -Wl,--no-whole-archive        \
-    stub.o shell/evince.p/main.c.o
+cc -o real_evince $(find -type f -name '*.o' | grep -v 'evinced.p' | grep -v 'test-')
 {% endblock %}
 
 {% import '//mix/hooks.sh' as hooks %}
@@ -102,6 +88,6 @@ cc -o real_evince \
 {{hooks.install_glib_schemas()}}
 {{super()}}
 rm -r ${out}/bin/bin_*
-#cp ${tmp}/obj/real_evince ${out}/bin/evince
+cp ${tmp}/real_evince ${out}/bin/evince
 {{hooks.wrap_xdg_binary('evince')}}
 {% endblock %}
