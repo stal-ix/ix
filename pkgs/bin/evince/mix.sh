@@ -78,8 +78,7 @@ register_evince_backend register_evince_backend_${x}
 EOF
 done
 
-cc -c stub.cpp
-cc -o real_evince $(find -type f -name '*.o' | grep -v 'evinced.p' | grep -v 'test-')
+cc -o real_evince stub.cpp $(find -type f -name '*.o' | grep -v 'evinced.p' | grep -v 'test-')
 {% endblock %}
 
 {% import '//mix/hooks.sh' as hooks %}
