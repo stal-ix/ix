@@ -1,8 +1,8 @@
 {% extends '//mix/meson.sh' %}
 
 {% block fetch %}
-https://download.gnome.org/sources/epiphany/42/epiphany-42.beta.tar.xz
-sha:bcd54291df8df709b75bfd17bbe090595ada83cbdb166323e81f41fcf8958c32
+https://download.gnome.org/sources/epiphany/42/epiphany-42.0.tar.xz
+sha:3dbfa8c00e45b7f44e1824d01f0febe83707b5fb9330c261173f68b7f03cd5e3
 {% endblock %}
 
 {% block bld_libs %}
@@ -49,6 +49,7 @@ done) | grep '_class_init' \
       | grep -v ephy_search_provider_get_type \
       | grep -v ephy_web_overview_model_get_type \
       | grep -v ephy_web_process_extension_get_type \
+      | grep -v ephy_add_search_engine_row_item_get_type \
       > types
 
 cat << EOF >> types
