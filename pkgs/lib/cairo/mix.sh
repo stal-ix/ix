@@ -1,8 +1,8 @@
 {% extends '//mix/meson.sh' %}
 
 {% block fetch %}
-https://cairographics.org/snapshots/cairo-1.17.4.tar.xz
-bf9d0d324ecbd350d0e9308125fa4ce0
+https://gitlab.freedesktop.org/cairo/cairo/-/archive/1.17.6/cairo-1.17.6.tar.bz2
+sha:90496d135c9ef7612c98f8ee358390cdec0825534573778a896ea021155599d2
 {% endblock %}
 
 {% block lib_deps %}

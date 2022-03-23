@@ -1,8 +1,8 @@
 {% extends '//mix/meson.sh' %}
 
 {% block fetch %}
-https://gitlab.gnome.org/GNOME/libdazzle/-/archive/3.42.0.1/libdazzle-3.42.0.1.tar.bz2
-sha:b82d516ceb74713d4f8fd23e79ba81b073f57c70d1eeb84dc2e28f051f8f5009
+https://gitlab.gnome.org/GNOME/libdazzle/-/archive/3.44.0/libdazzle-3.44.0.tar.bz2
+sha:
 {% endblock %}
 
 {% block lib_deps %}

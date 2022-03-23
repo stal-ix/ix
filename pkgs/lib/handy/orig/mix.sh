@@ -1,8 +1,8 @@
 {% extends '//mix/meson.sh' %}
 
 {% block fetch %}
-https://gitlab.gnome.org/GNOME/libhandy/-/archive/1.5.0/libhandy-1.5.0.tar.bz2
-sha:ca2e6fe95c214590f48b64db88d72526cefa23f67aacf5ebdc63dfbd25bff92b
+https://gitlab.gnome.org/GNOME/libhandy/-/archive/1.6.1/libhandy-1.6.1.tar.bz2
+sha:c514ba3f953065b44b37e971dc179b47735db97af48fecb94b2a7d5148dffa35
 {% endblock %}
 
 {% block lib_deps %}

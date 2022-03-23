@@ -1,8 +1,8 @@
 {% extends '//lib/gtk/4/4/mix.sh' %}
 
 {% block fetch %}
-https://gitlab.gnome.org/GNOME/gtk/-/archive/4.6.0/gtk-4.6.0.tar.bz2
-111bb032239203913f40d43eb7f661f9
+https://gitlab.gnome.org/GNOME/gtk/-/archive/4.6.2/gtk-4.6.2.tar.bz2
+sha:
 {% endblock %}
 
 {% block bld_tool %}

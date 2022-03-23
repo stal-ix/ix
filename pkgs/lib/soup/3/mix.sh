@@ -1,8 +1,8 @@
 {% extends '//mix/meson.sh' %}
 
 {% block fetch %}
-https://gitlab.gnome.org/GNOME/libsoup/-/archive/3.0.4/libsoup-3.0.4.tar.bz2
-8af3264ea455503dba912f62d4f1dd08
+https://gitlab.gnome.org/GNOME/libsoup/-/archive/3.0.5/libsoup-3.0.5.tar.bz2
+sha:
 {% endblock %}
 
 {% block lib_deps %}
