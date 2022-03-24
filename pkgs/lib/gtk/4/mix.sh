@@ -1,5 +1,5 @@
 {% extends '//mix/hub.sh' %}
 
 {% block lib_deps %}
-lib/gtk/{{gtk_ver or '4'}}
+lib/gtk/4/{{gtk4_ver or '6'}}
 {% endblock %}
