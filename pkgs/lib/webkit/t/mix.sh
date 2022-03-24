@@ -1,8 +1,8 @@
 {% extends '//mix/cmake.sh' %}
 
 {% block fetch %}
-https://webkitgtk.org/releases/webkitgtk-2.34.3.tar.xz
-de30c41fb57b2b024417669c22914752
+https://webkitgtk.org/releases/webkitgtk-2.36.0.tar.xz
+sha:b877cca1f105235f5dd57c7ac2b2c2be3c6b691ff444f93925c7254cf156c64d
 {% endblock %}
 
 {% block ninja_threads %}7{% endblock %}
@@ -56,14 +56,14 @@ PORT=GTK
 USE_WPE_RENDERER=OFF
 
 USE_SYSTEMD=OFF
-ENABLE_GAMEPAD=OFF
-ENABLE_INTROSPECTION=OFF
-
 USE_LIBNOTIFY=OFF
 USE_LIBHYPHEN=OFF
 
 ENABLE_THUNDER=OFF
+ENABLE_GAMEPAD=OFF
 ENABLE_SPELLCHECK=OFF
+ENABLE_JOURNALD_LOG=OFF
+ENABLE_INTROSPECTION=OFF
 ENABLE_BUBBLEWRAP_SANDBOX=OFF
 
 ENABLE_X11_TARGET=OFF
@@ -90,12 +90,6 @@ export CPPFLAGS="-Wno-register ${CPPFLAGS}"
 {% endblock %}
 
 {% block patch %}
-(find . | grep CMake; find . | grep '\.cmake') | while read l; do
-    sed -e 's| SHARED| STATIC|' \
-        -e 's| MODULE| STATIC|' \
-        -i ${l}
-done
-
 (
     cd Source/WebCore/platform/graphics/egl
 

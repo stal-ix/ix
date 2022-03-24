@@ -77,10 +77,12 @@ BUILD_SHARED_LIBS=OFF
 {% endblock %}
 
 {% block step_patch %}
+{% block cmake_fix_shared %}
 find . -name CMakeLists.txt -type f | while read l; do
     sed -e 's| MODULE | STATIC |g' \
         -e 's| SHARED | STATIC |g' \
         -i "${l}"
 done
+{% endblock %}
 {{super()}}
 {% endblock %}

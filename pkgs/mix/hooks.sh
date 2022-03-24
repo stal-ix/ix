@@ -60,7 +60,11 @@ args = list(it_args())
 
 def flt_objs():
     for x in args:
-        if x.endswith('.o') or x.endswith('.a'):
+        if x.endswith('.o'):
+            yield x
+        elif '/store/' in x:
+            pass
+        elif x.endswith('.a'):
             yield x
 
 def link1(x, objs):
