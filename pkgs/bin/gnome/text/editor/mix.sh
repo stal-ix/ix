@@ -12,6 +12,9 @@ lib/glib
 lib/gtk/4
 lib/pcre/2
 lib/adwaita
+lib/drivers/3d
+lib/mesa/gl/dl
+lib/mesa/egl/dl
 lib/gtk/source/view
 {% endblock %}
 
