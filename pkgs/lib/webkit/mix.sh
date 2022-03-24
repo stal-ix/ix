@@ -1,17 +1,10 @@
-{% extends '//lib/webkit/t/mix.sh' %}
+{% extends '//mix/registar.sh' %}
 
-{% block install %}
-{{super()}}
+{% block lib_deps %}
+lib/webkit/orig
+{% endblock %}
 
-cd ${out}/lib
-
-rm -rf lib_webkit webkit2gtk*
-
-#find ${tmp}/obj -type f | grep '\.a' | while read l; do
-#    cp ${l} ./
-#done
-
-for x in *.so; do
-    cp ${x} $(echo ${x} | sed -e 's|.so|.a|')
-done
+{% block constructors %}
+InspectorGResourceBundle_get_resource
+WebKitResourcesGResourceBundle_get_resource
 {% endblock %}

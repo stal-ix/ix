@@ -5,7 +5,7 @@ https://webkitgtk.org/releases/webkitgtk-2.36.0.tar.xz
 sha:b877cca1f105235f5dd57c7ac2b2c2be3c6b691ff444f93925c7254cf156c64d
 {% endblock %}
 
-{% block ninja_threads %}7{% endblock %}
+{% block ninja_threads %}6{% endblock %}
 
 {% block lib_deps %}
 lib/c
