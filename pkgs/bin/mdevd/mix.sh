@@ -10,7 +10,3 @@ lib/c
 lib/linux
 lib/skalibs
 {% endblock %}
-
-{% block configure_flags %}
---with-sysdeps=${lib_skalibs}/lib/skalibs/sysdeps
-{% endblock %}

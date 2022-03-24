@@ -1,8 +1,8 @@
 {% extends '//mix/meson.sh' %}
 
 {% block fetch %}
-https://github.com/benhoyt/inih/archive/r53/inih-r53.tar.gz
-sha:01b0366fdfdf6363efc070c2f856f1afa33e7a6546548bada5456ad94a516241
+https://github.com/benhoyt/inih/archive/r54/inih-r54.tar.gz
+sha:b5566af5203f8a49fda27f1b864c0c157987678ffbd183280e16124012869869
 {% endblock %}
 
 {% block lib_deps %}
