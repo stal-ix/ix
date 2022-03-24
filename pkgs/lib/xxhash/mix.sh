@@ -1,8 +1,8 @@
 {% extends '//mix/make.sh' %}
 
 {% block fetch %}
-https://github.com/Cyan4973/xxHash/archive/refs/tags/v0.8.0.tar.gz
-62310678857c30fcef4128f41f711f49
+https://github.com/Cyan4973/xxHash/archive/refs/tags/v0.8.1.tar.gz
+sha:3bb6b7d6f30c591dd65aaaff1c8b7a5b94d81687998ca9400082c739a690436c
 {% endblock %}
 
 {% block lib_deps %}
