@@ -27,16 +27,16 @@ EOF
         echo 'export PKG_CONFIG_PATH="'${out}'/share/pkgconfig:${PKG_CONFIG_PATH}"'
     fi
 
-    if test -d ${out}/share/locale; then
-        echo 'export LOCALE_PATH="'${out}'/share/locale:${LOCALE_PATH}"'
-    fi
-
     if test -d ${out}/lib/bin; then
         echo 'export PATH="'${out}'/lib/bin:${PATH}"'
     fi
 
     if test -d ${out}/bin; then
         echo 'export PATH="'${out}'/bin:${PATH}"'
+    fi
+
+    if test -d ${out}/lib/aclocal; then
+        echo 'export ACLOCAL_PATH="'${out}'/lib/aclocal:${ACLOCAL_PATH}"'
     fi
 
     if test -d ${out}/share/aclocal; then

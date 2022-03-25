@@ -14,7 +14,7 @@ bin/upx
 export PYTHONHOME=${TARGET_PYTHONHOME}
 export PYTHONPLATLIBDIR=${PYTHONHOME}/lib
 
-python3 ${PYTHONHOME}/share/freeze/freeze.py -m {{self.entry_point()}} $(cat modules)
+python3 $(dirname $(which python3))/../share/freeze/freeze.py -m {{self.entry_point()}} $(cat modules)
 
 make -j ${make_thrs}
 

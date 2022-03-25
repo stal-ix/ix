@@ -21,8 +21,8 @@ bld/python/mix.sh
 {% endblock %}
 
 {% block unpack %}
-mkdir -p ${out}/share
-cd ${out}/share
+mkdir -p ${out}/lib
+cd ${out}/lib
 extract0 ${src}/*.whl
 {% endblock %}
 
@@ -50,7 +50,7 @@ cat exports
 {% endblock %}
 
 {% block env %}
-export PYTHONPATH="${out}/share:\${PYTHONPATH}"
+export PYTHONPATH="${out}/lib:\${PYTHONPATH}"
 {% endblock %}
 '''
 

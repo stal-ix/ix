@@ -2,10 +2,16 @@
 rm -rf ${out}/bin ${out}/libexec ${out}/lib ${out}/include
 {% elif lib %}
 if test -f ${out}/bin/*-config; then
-    mkdir -p ${out}/lib/bin && mv ${out}/bin/*-config ${out}/lib/bin/
+    mkdir -p ${out}/lib/bin
+    mv ${out}/bin/*-config ${out}/lib/bin/
 fi
 
-rm -rf ${out}/bin ${out}/libexec
+if test -d ${out}/share/aclocal; then
+    mkdir -p ${out}/lib
+    mv ${out}/share/aclocal ${out}/lib/
+fi
+
+rm -rf ${out}/bin ${out}/libexec ${out}/share ${out}/etc
 {% elif bin %}
 rm -rf ${out}/lib ${out}/include
 
@@ -17,22 +23,6 @@ find ${out}/bin/ -type f | while read l; do
         llvm-strip -S ${l} || true
     fi
 done
-{% endblock %}
-
-{% block copy_intl %}
-{% if 0 %}
-if test -d ${out}/share/locale; then
-    (IFS=':'; for x in ${LOCALE_PATH}; do
-        if test -n "${x}"; then
-            cp -R "${x}" ${out}/share/
-        fi
-    done)
-
-    echo 'MERGED LOCALE:'
-
-    find ${out}/share/locale -type f
-fi
-{% endif %}
 {% endblock %}
 {% endif %}
 

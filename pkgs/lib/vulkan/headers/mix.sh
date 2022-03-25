@@ -11,3 +11,7 @@ sha:6b7f9c809acff4f0877e2e7722e02a08f2e17e06c6e2e8c84081631d15490009
 lib/c
 lib/c++
 {% endblock %}
+
+{% block postinstall %}
+echo 'TODO(pg): check it'
+{% endblock %}

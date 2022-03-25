@@ -17,7 +17,7 @@ lib/brotli
 cat autogen.sh | sed -e 's|\./configure|\./configure; exit 0|' | sh
 {% endblock %}
 
-{% block patch %}
+{% block patch1 %}
 sed -e 's|.*FT_CONFIG_OPTION_SUBPIXEL_RENDERING.*|#define FT_CONFIG_OPTION_SUBPIXEL_RENDERING|' \
     -i include/freetype/config/ftoption.h
 {% endblock %}
