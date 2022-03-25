@@ -20,6 +20,7 @@ lib/fribidi
 {% endblock %}
 
 {% block bld_tool %}
+bld/bash
 bin/glib/codegen
 {% endblock %}
 
@@ -30,4 +31,15 @@ gtk3=false
 vapi=false
 gnutls=false
 _systemd=false
+{% endblock %}
+
+{% block patch %}
+cat - src/glib-glue.cc << EOF > _
+#include <string>
+EOF
+
+mv _ src/glib-glue.cc
+
+sed -e 's|W_EXITCODE.*|SIGKILL << 8;|' -i src/widget.cc
+sed -e 's|+ debug_sources||' -i src/app/meson.build
 {% endblock %}

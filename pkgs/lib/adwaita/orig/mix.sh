@@ -1,23 +1,15 @@
-{% extends '//mix/meson.sh' %}
+{% extends '//lib/adwaita/t/mix.sh' %}
 
-{% block fetch %}
-https://gitlab.gnome.org/GNOME/libadwaita/-/archive/1.1.0/libadwaita-1.1.0.tar.bz2
-sha:1fdd2d3ed7e738029f6f984e54b0ef21136633daa842f4caeeb60d4de56e0abe
-{% endblock %}
-
-{% block lib_deps %}
-lib/c
-lib/glib
-lib/gtk/4
-lib/fribidi
+{% block run_data %}
+lib/adwaita/data
 {% endblock %}
 
 {% block bld_tool %}
-bin/sassc
-bin/glib/codegen
+{{super()}}
+bld/scripts
 {% endblock %}
 
-{% block meson_flags %}
-vapi=false
-introspection=disabled
+{% block configure %}
+{{super()}}
+python3 $(which fix_data_dir.py) "${ADWAITA_DATA}"
 {% endblock %}
