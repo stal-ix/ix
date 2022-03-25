@@ -1,19 +1,22 @@
-{% extends '//bin/sway/orig/mix.sh' %}
+{% extends '//bin/sway/t/mix.sh' %}
 
 {% block run_deps %}
-bin/subreaper
+bin/sway/tools
+{% endblock %}
+
+{% block bld_libs %}
+lib/drivers/3d
+{{super()}}
+{% endblock %}
+
+{% block meson_flags %}
+{{super()}}
+swaybar=false
+swaynag=false
 {% endblock %}
 
 {% block install %}
 {{super()}}
-
 cd ${out}/bin
-mv sway swaybin
-
-cat << EOF > sway
-#!/bin/sh
-exec subreaper swaybin "\$@"
-EOF
-
-chmod +x sway
+rm swaymsg
 {% endblock %}

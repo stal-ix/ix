@@ -4,6 +4,7 @@
 bin/fixtty
 bin/runsrv
 bin/mingetty
+bin/subreaper
 {% endblock %}
 
 {% block install %}
@@ -15,7 +16,7 @@ for i in 1 2 3 4; do (
     cat << EOF > daemon
 #!/bin/sh
 fixtty /dev/tty${i}
-exec setsid mingetty tty${i}
+exec subreaper setsid mingetty tty${i}
 EOF
 
     cat << EOF > run
