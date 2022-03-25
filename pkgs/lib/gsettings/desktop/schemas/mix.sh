@@ -13,6 +13,6 @@ bin/glib/codegen
 introspection=false
 {% endblock %}
 
-{% block strip_pc %}
+{% block postinstall %}
 : skip it
 {% endblock %}

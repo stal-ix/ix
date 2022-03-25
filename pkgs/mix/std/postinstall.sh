@@ -3,6 +3,13 @@ if test -d ${out}/man; then
     mv ${out}/man ${out}/share/
 fi
 
+for x in man doc info; do
+    if test -d ${out}/share/${x}; then
+        mkdir -p ${out}/doc
+        mv ${out}/share/${x} ${out}/doc/
+    fi
+done
+
 {% if   aux %}
 rm -rf ${out}/bin ${out}/libexec ${out}/lib ${out}/include
 {% elif lib %}
@@ -11,6 +18,7 @@ if test -f ${out}/bin/*-config; then
     mv ${out}/bin/*-config ${out}/lib/bin/
 fi
 
+# TODO(pg): fine-grained cherry-pick
 if test -d ${out}/share; then
     mv ${out}/share ${out}/lib/aux
 fi
