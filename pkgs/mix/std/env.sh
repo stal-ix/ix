@@ -35,8 +35,8 @@ EOF
         echo 'export PATH="'${out}'/bin:${PATH}"'
     fi
 
-    if test -d ${out}/lib/aclocal; then
-        echo 'export ACLOCAL_PATH="'${out}'/lib/aclocal:${ACLOCAL_PATH}"'
+    if test -d ${out}/lib/aux/aclocal; then
+        echo 'export ACLOCAL_PATH="'${out}'/lib/aux/aclocal:${ACLOCAL_PATH}"'
     fi
 
     if test -d ${out}/share/aclocal; then

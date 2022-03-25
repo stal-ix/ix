@@ -1,4 +1,9 @@
-{%   if aux %}
+if test -d ${out}/man; then
+    mkdir -p ${out}/share
+    mv ${out}/man ${out}/share/
+fi
+
+{% if   aux %}
 rm -rf ${out}/bin ${out}/libexec ${out}/lib ${out}/include
 {% elif lib %}
 if test -f ${out}/bin/*-config; then
@@ -6,12 +11,11 @@ if test -f ${out}/bin/*-config; then
     mv ${out}/bin/*-config ${out}/lib/bin/
 fi
 
-if test -d ${out}/share/aclocal; then
-    mkdir -p ${out}/lib
-    mv ${out}/share/aclocal ${out}/lib/
+if test -d ${out}/share; then
+    mv ${out}/share ${out}/lib/aux
 fi
 
-rm -rf ${out}/bin ${out}/libexec ${out}/share ${out}/etc
+rm -rf ${out}/bin ${out}/libexec ${out}/etc
 {% elif bin %}
 rm -rf ${out}/lib ${out}/include
 
@@ -32,12 +36,12 @@ find ${out}/ -type f | grep '\.[ao]$' | while read l; do
 done
 {% endif %}
 
+{% block strip_pc %}
 warn_rm() {
     echo "BAD PKG ${1}, add strip_pc block if OK, or remove manually"
     exit 1
 }
 
-{% block strip_pc %}
 find ${out}/ -type f | grep '\.pc$' | while read l; do
     if grep '/bin' ${l}; then
 {% if bin %}
@@ -48,8 +52,3 @@ find ${out}/ -type f | grep '\.pc$' | while read l; do
     fi
 done
 {% endblock %}
-
-if test -d ${out}/man; then
-    mkdir -p ${out}/share
-    mv ${out}/man ${out}/share/
-fi
