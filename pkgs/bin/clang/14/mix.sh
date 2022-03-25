@@ -11,5 +11,5 @@ bld/python
 
 {% block env %}
 {{super()}}
-export CLANG_VERSION=14.0.0-rc1
+export CLANG_VERSION=14.0.0
 {% endblock %}
