@@ -17,7 +17,7 @@ cat << EOF > main.cpp
 #include <sstream>
 #include <iostream>
 
-extern "C" const char* magic_mime_type(const void* data, size_t len);
+extern "C" const char* magic_mime_type_ex(const char* path, const void* data, size_t len);
 
 static inline std::string slurp(const char* path) {
     std::ostringstream buf;
@@ -31,9 +31,10 @@ int main(int argc, char** argv) {
         return 1;
     }
 
-    auto s = slurp(argv[1]);
+    auto p = argv[1];
+    auto s = slurp(p);
 
-    std::cout << magic_mime_type(s.c_str(), s.length()) << std::endl;
+    std::cout << magic_mime_type_ex(p, s.c_str(), std::min<size_t>(s.length(), 1024)) << std::endl;
 }
 EOF
 

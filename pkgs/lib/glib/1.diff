@@ -6,7 +6,7 @@ index 3e5b841..5073838 100644
    return umime;
  }
  
-+const char* magic_mime_type(const void* data, size_t len);
++const char* magic_mime_type_ex(const char* path, const void* data, size_t len);
 +
  /**
   * g_content_type_guess:
@@ -18,7 +18,7 @@ index 3e5b841..5073838 100644
 +  const char* mtype;
 +
 +  if (data) {
-+    mtype = magic_mime_type(data, data_size);
++    mtype = magic_mime_type_ex(filename, data, data_size);
 +    if (mtype) {
 +      if (result_uncertain) {
 +        *result_uncertain = FALSE;
