@@ -37,8 +37,10 @@ bin/wayland/protocols
 
 {% block patch %}
 base64 -d << EOF > src/api/wayfire/option-wrapper.hpp
-{% include 'opts1.h/base64' %}
+{% include 'opts.h/base64' %}
 EOF
+
+sed -e 's|plugin_name.at.*|true)|' -i src/output/plugin-loader.cpp
 {% endblock %}
 
 {% block build %}
