@@ -9,11 +9,9 @@ lib/c
 {% endblock %}
 
 {% block build %}
-cat << EOF > main.c
+cc -o subreaper -x c - << EOF
 {% include 'main.c' %}
 EOF
-
-cc -o subreaper main.c
 {% endblock %}
 
 {% block install %}
