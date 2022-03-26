@@ -13,9 +13,3 @@ bld/scripts
 {{super()}}
 python3 $(which fix_data_dir.py) ${FONTCONFIG_DATA}
 {% endblock %}
-
-{% block install %}
-{{super()}}
-# ensure it will not be used
-rm -rf ${out}/var ${out}/share
-{% endblock %}
