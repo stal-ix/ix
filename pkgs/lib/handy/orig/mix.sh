@@ -32,8 +32,3 @@ gtk_progress_tracker_init_copy
 gtk_progress_tracker_skip_frame
 gtk_progress_tracker_start
 {% endblock %}
-
-{% block install %}
-{{super()}}
-#exit 1
-{% endblock %}

@@ -20,7 +20,7 @@ includedir=\${prefix}/include
 
 Name: GLM
 Description: GLM devs completely insane, so this shit
-Version: 0.9.9.9
+Version: 0.9.9.8
 Cflags: -I\${includedir}
 EOF
 {% endblock %}
