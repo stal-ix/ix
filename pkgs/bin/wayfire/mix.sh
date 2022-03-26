@@ -31,5 +31,49 @@ lib/mesa/glesv2
 {% endblock %}
 
 {% block bld_tool %}
+lib/dlfcn/scripts
 bin/wayland/protocols
+{% endblock %}
+
+{% block patch %}
+base64 -d << EOF > src/api/wayfire/option-wrapper.hpp
+{% include 'opts.h/base64' %}
+EOF
+{% endblock %}
+
+{% block build %}
+{{super()}}
+
+cd ${tmp}
+
+llvm-nm --no-demangle --print-file-name -j $(find . -name '*.o') | grep newInstance | while read l; do
+    p=$(echo ${l} | sed -e 's|:.*||')
+    f=$(basename ${p})
+    n=$(echo ${f} | sed -e 's|.cpp.o||' | tr '-' '_')
+
+    llvm-objcopy --preserve-dates \
+        --redefine-sym "newInstance=newInstance_${n}"             \
+        --redefine-sym "getWayfireVersion=getWayfireVersion_${n}" \
+        ${p}
+done
+
+llvm-nm --no-demangle --print-file-name -j $(find . -name '*.o') | grep newInstance | while read l; do
+    n=$(echo ${l} | sed -e 's|.*newInstance_||')
+
+    echo ${l} ${n}
+
+    cat << EOF | dl_stubs_2 $(echo ${n} | tr '_' '-') >> stub.cpp
+newInstance newInstance_${n}
+getWayfireVersion getWayfireVersion_${n}
+EOF
+done
+
+cat stub.cpp
+
+cc -o real_wayfire stub.cpp $(find ${tmp} -type f -name '*.o')
+{% endblock %}
+
+{% block install %}
+{{super()}}
+cp ${tmp}/real_wayfire ${out}/bin/wayfire
 {% endblock %}
