@@ -37,7 +37,7 @@ bin/wayland/protocols
 
 {% block patch %}
 base64 -d << EOF > src/api/wayfire/option-wrapper.hpp
-{% include 'opts.h/base64' %}
+{% include 'opts1.h/base64' %}
 EOF
 {% endblock %}
 
@@ -60,15 +60,11 @@ done
 llvm-nm --no-demangle --print-file-name -j $(find . -name '*.o') | grep newInstance | while read l; do
     n=$(echo ${l} | sed -e 's|.*newInstance_||')
 
-    echo ${l} ${n}
-
     cat << EOF | dl_stubs_2 $(echo ${n} | tr '_' '-') >> stub.cpp
 newInstance newInstance_${n}
 getWayfireVersion getWayfireVersion_${n}
 EOF
 done
-
-cat stub.cpp
 
 cc -o real_wayfire stub.cpp $(find ${tmp} -type f -name '*.o')
 {% endblock %}

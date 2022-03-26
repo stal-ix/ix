@@ -1,22 +1,21 @@
 #pragma once
-
+#include <iostream>
 #include <wayfire/nonstd/noncopyable.hpp>
 #include <wayfire/config/option.hpp>
 #include <wayfire/config/option-wrapper.hpp>
 #include <wayfire/core.hpp>
 
 namespace wf {
-template<class Type>
+template <class Type>
 class option_wrapper_t {
     struct base_t : public base_option_wrapper_t<Type> {
-        base_t(const std::string& name)
-            : wf::base_option_wrapper_t<Type>()
-        {
+        base_t(const std::string& name) {
             this->load_option(name);
         }
 
     protected:
         std::shared_ptr<config::option_base_t> load_raw_option(const std::string& name) {
+            std::cerr << name << std::endl;
             return wf::get_core().config.get_option(name);
         }
     };
@@ -34,7 +33,6 @@ public:
 
     void load_option(const std::string& name) {
         name_ = name;
-        opt_.reset();
     }
 
     operator Type() const {
