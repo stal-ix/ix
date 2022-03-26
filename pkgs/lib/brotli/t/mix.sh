@@ -2,7 +2,7 @@
 
 {% block fetch %}
 https://github.com/google/brotli/archive/refs/tags/v1.0.9.tar.gz
-sha:6b7f9c809acff4f0877e2e7722e02a08f2e17e06c6e2e8c84081631d15490009
+sha:f9e8d81d0405ba66d181529af42a3354f838c939095ff99930da6aa9cdf6fe46
 {% endblock %}
 
 {% block lib_deps %}

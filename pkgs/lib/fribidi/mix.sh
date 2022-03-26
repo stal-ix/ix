@@ -1,25 +1,6 @@
-{% extends '//mix/meson.sh' %}
-
-{% block fetch %}
-https://github.com/fribidi/fribidi/archive/refs/tags/v1.0.11.tar.gz
-2acb412d284f5918de3638c1052160dd
-{% endblock %}
+{% extends '//lib/fribidi/t/mix.sh' %}
 
 {% block meson_flags %}
-docs=false
-tests=false
-{% endblock %}
-
-{% block lib_deps %}
-lib/c
-{% endblock %}
-
-{% block c_rename_symbol %}
-optarg
-opterr
-optind
-optopt
-getopt
-getopt_long
-getopt_long_only
+bin=false
+{{super()}}
 {% endblock %}
