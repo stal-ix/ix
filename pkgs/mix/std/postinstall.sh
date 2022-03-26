@@ -11,7 +11,7 @@ for x in man doc info; do
 done
 
 {% if   aux %}
-rm -rf ${out}/bin ${out}/libexec ${out}/lib ${out}/include
+rm -rf ${out}/bin ${out}/libexec ${out}/lib ${out}/include ${out}/doc
 {% elif lib %}
 if test -f ${out}/bin/*-config; then
     mkdir -p ${out}/lib/bin
