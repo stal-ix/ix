@@ -57,7 +57,11 @@ namespace {
         const char* mimeType(const char* path, const void* data, size_t len) noexcept {
             auto v1 = mimeType(data, len);
 
-            if (v1 && path && *path) {
+            if (path && *path) {
+                if (!v1) {
+                    return mimeType(path);
+                }
+
                 if (strcmp(v1, "text/plain") == 0) {
                     if (auto v2 = mimeType(path); v2) {
                         return v2;
