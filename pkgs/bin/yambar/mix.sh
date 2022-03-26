@@ -33,5 +33,4 @@ EOF
 
 sed -e 's|.*export_dyn.*||' -i meson.build
 sed -e 's|#error|#warning|' -i char32.c
-sed -e 's|.*return wcslen.*|size_t r = 0; while (s \&\& s[r]) {++r;}; return r;|' -i char32.c
 {% endblock %}
