@@ -36,9 +36,9 @@ lib/seccomp
 lib/freetype
 lib/harfbuzz
 lib/jpeg/open
+lib/gstreamer
 lib/fontconfig
 lib/harfbuzz/icu
-lib/gstreamer/19
 {% endblock %}
 
 {% block bld_tool %}

@@ -1,9 +1,5 @@
 {% extends '//mix/dlstubs.sh' %}
 
-{% block lib_deps %}
-lib/gstreamer/19
-{% endblock %}
-
 {% block export_lib %}
 gstreamer
 {% endblock %}
