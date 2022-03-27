@@ -1,5 +1,5 @@
 #pragma once
-#include <iostream>
+
 #include <wayfire/nonstd/noncopyable.hpp>
 #include <wayfire/config/option.hpp>
 #include <wayfire/config/option-wrapper.hpp>
@@ -14,8 +14,7 @@ class option_wrapper_t {
         }
 
     protected:
-        std::shared_ptr<config::option_base_t> load_raw_option(const std::string& name) {
-            std::cerr << name << std::endl;
+        std::shared_ptr<config::option_base_t> load_raw_option(const std::string& name) override {
             return wf::get_core().config.get_option(name);
         }
     };
