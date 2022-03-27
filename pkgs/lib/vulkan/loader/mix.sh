@@ -6,12 +6,12 @@ lib/vulkan/loader/data
 
 {% block bld_tool %}
 {{super()}}
-bld/scripts
+bld/scripts/reloc
 {% endblock %}
 
 {% block configure %}
 {{super()}}
-python3 $(which fix_data_dir.py) ${VULKAN_LOADER_DATA}
+relocate "${VULKAN_LOADER_DATA}"
 {% endblock %}
 
 {% block install %}

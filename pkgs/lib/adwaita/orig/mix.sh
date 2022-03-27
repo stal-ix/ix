@@ -11,5 +11,5 @@ bld/scripts
 
 {% block configure %}
 {{super()}}
-python3 $(which fix_data_dir.py) "${ADWAITA_DATA}"
+relocate "${ADWAITA_DATA}"
 {% endblock %}

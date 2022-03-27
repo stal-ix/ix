@@ -6,10 +6,10 @@ lib/fontconfig/data
 
 {% block bld_tool %}
 {{super()}}
-bld/scripts
+bld/scripts/reloc
 {% endblock %}
 
 {% block configure %}
 {{super()}}
-python3 $(which fix_data_dir.py) ${FONTCONFIG_DATA}
+relocate "${FONTCONFIG_DATA}"
 {% endblock %}

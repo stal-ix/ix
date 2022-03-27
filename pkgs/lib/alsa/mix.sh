@@ -6,10 +6,10 @@ lib/alsa/data
 
 {% block bld_tool %}
 {{super()}}
-bld/scripts
+bld/scripts/reloc
 {% endblock %}
 
 {% block configure %}
 {{super()}}
-python3 $(which fix_data_dir.py) "${ALSA_LIB_DATA}"
+relocate "${ALSA_LIB_DATA}"
 {% endblock %}

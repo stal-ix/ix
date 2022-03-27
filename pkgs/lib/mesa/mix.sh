@@ -6,12 +6,12 @@ lib/mesa/data
 
 {% block bld_tool %}
 {{super()}}
-bld/scripts
+bld/scripts/reloc
 {% endblock %}
 
 {% block configure %}
 {{super()}}
-python3 $(which fix_data_dir.py) ${MESA_DATA}
+relocate "${MESA_DATA}"
 {% endblock %}
 
 {% block install %}

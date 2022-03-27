@@ -6,7 +6,7 @@ lib/drm/data
 
 {% block bld_tool %}
 {{super()}}
-bld/scripts
+bld/scripts/reloc
 {% endblock %}
 
 {% block c_rename_symbol %}
@@ -16,5 +16,5 @@ handle_table_remove
 
 {% block configure %}
 {{super()}}
-python3 $(which fix_data_dir.py) ${DRM_DATA}
+relocate "${DRM_DATA}"
 {% endblock %}

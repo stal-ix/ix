@@ -6,12 +6,12 @@ lib/input/data
 
 {% block bld_tool %}
 {{super()}}
-bld/scripts
+bld/scripts/reloc
 {% endblock %}
 
 {% block configure %}
 {{super()}}
-python3 $(which fix_data_dir.py) ${INPUT_DATA}
+relocate "${INPUT_DATA}"
 {% endblock %}
 
 {% block meson_flags %}
