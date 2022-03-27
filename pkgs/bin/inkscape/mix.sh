@@ -22,7 +22,7 @@ lib/soup/2
 lib/poppler
 lib/boehmgc
 lib/potrace
-lib/rsvg/reg
+lib/rsvg/dl
 lib/gtk/3/mm
 lib/readline
 lib/harfbuzz

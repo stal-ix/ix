@@ -18,7 +18,7 @@ lib/handy
 lib/secret
 lib/archive
 lib/poppler
-lib/rsvg/reg
+lib/rsvg/dl
 lib/djvulibre
 lib/gsettings/desktop/schemas
 {% endblock %}

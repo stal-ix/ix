@@ -1,8 +1,8 @@
 {% extends '//mix/autorehell.sh' %}
 
 {% block fetch %}
-https://github.com/protocolbuffers/protobuf/archive/refs/tags/v3.19.1.tar.gz
-e5cb6707320a077f0618b669d1856bc4
+https://github.com/protocolbuffers/protobuf/archive/refs/tags/v3.20.0.tar.gz
+sha:b07772d38ab07e55eca4d50f4b53da2d998bb221575c60a4f81100242d4b4889
 {% endblock %}
 
 {% block lib_deps %}

@@ -4,8 +4,9 @@
 lib/rsvg/plugin
 {% endblock %}
 
-{% block export_symbols_sh %}
-llvm-nm ${lib_rsvg_plugin}/lib/librsvgplugin.a | grep svg_
+{% block export_symbols %}
+svg_fill_info
+svg_fill_vtable
 {% endblock %}
 
 {% block export_lib %}

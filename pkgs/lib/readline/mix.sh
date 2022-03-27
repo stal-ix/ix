@@ -16,7 +16,7 @@ xrealloc
 {% endblock %}
 
 {% block patch %}
-cat terminal.c | grep -v 'char PC' > _ && mv _ terminal.c
+sed -e 's|.*char PC.*||' -i terminal.c
 {% endblock %}
 
 {% block configure_flags %}

@@ -109,4 +109,5 @@ EOF
 {% call hooks.wrap_xdg_binary('epiphany') %}
 export WEBKIT_EXEC_PATH="\$(dirname \$(which WebKitWebProcess))"
 {% endcall %}
+rm -r ${out}/bin/bin_*
 {% endblock %}
