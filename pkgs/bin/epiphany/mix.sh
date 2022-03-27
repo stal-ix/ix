@@ -10,10 +10,10 @@ bin/epiphany/libs(gtk_ver=3)
 {% endblock %}
 
 {% block bld_tool %}
-lib/gtk/3
 bin/gettext
 bin/glib/codegen
 bin/meson/better
+bld/scripts/gnome
 {% endblock %}
 
 {% block run_data %}
@@ -28,14 +28,6 @@ bin/webkitproc
 libportal=disabled
 unit_tests=disabled
 soup2=disabled
-{% endblock %}
-
-{% block setup_tools %}
-cat << EOF > update-desktop-database
-#!/bin/sh
-EOF
-
-chmod +x update-desktop-database
 {% endblock %}
 
 {% block patch %}
@@ -105,9 +97,12 @@ EOF
 
 {% block install %}
 {{hooks.install_glib_schemas()}}
+
 {{super()}}
+
 {% call hooks.wrap_xdg_binary('epiphany') %}
 export WEBKIT_EXEC_PATH="\$(dirname \$(which WebKitWebProcess))"
 {% endcall %}
+
 rm -r ${out}/bin/bin_*
 {% endblock %}

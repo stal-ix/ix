@@ -28,9 +28,9 @@ aux/adwaita/icons
 {% endblock %}
 
 {% block bld_tool %}
-lib/gtk/3
 bin/gettext
 bin/glib/codegen
+bld/scripts/gnome
 lib/dlfcn/scripts
 {% endblock %}
 

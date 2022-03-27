@@ -19,24 +19,11 @@ lib/gtk/source/view
 {% block bld_tool %}
 bin/gettext
 bin/glib/codegen
+bld/scripts/gnome
 {% endblock %}
 
 {% block meson_flags %}
 enchant=disabled
-{% endblock %}
-
-{% block setup_tools %}
-cat << EOF > gtk-update-icon-cache
-#!$(which sh)
-EOF
-
-chmod +x gtk-update-icon-cache
-
-cat << EOF > update-desktop-database
-#!$(which sh)
-EOF
-
-chmod +x update-desktop-database
 {% endblock %}
 
 {% block patch %}

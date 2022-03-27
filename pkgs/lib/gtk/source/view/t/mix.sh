@@ -16,12 +16,5 @@ lib/fribidi
 
 {% block bld_tool %}
 bin/glib/codegen
-{% endblock %}
-
-{% block setup_tools %}
-cat << EOF > gtk-update-icon-cache
-#!$(which sh)
-EOF
-
-chmod +x gtk-update-icon-cache
+bld/scripts/gnome
 {% endblock %}

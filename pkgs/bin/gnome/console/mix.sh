@@ -20,20 +20,7 @@ lib/gsettings/desktop/schemas
 bin/sassc
 bin/gettext
 bin/glib/codegen
-{% endblock %}
-
-{% block setup_tools %}
-cat << EOF > gtk-update-icon-cache
-#!$(which sh)
-EOF
-
-chmod +x gtk-update-icon-cache
-
-cat << EOF > update-desktop-database
-#!$(which sh)
-EOF
-
-chmod +x update-desktop-database
+bld/scripts/gnome
 {% endblock %}
 
 {% block patch %}
