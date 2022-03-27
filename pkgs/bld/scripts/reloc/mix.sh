@@ -5,15 +5,11 @@ bld/python
 {% endblock %}
 
 {% block install %}
-mkdir ${out}/bin
+cd ${out}; mkdir bin; cd bin
 
-base64 -d << EOF > ${out}/bin/reloc.py
+base64 -d << EOF > relocate
 {% include 'reloc.py/base64' %}
 EOF
-{% endblock %}
 
-{% block env %}
-relocate() (
-    python3 ${out}/bin/reloc.py "\${@}"
-)
+chmod +x *
 {% endblock %}
