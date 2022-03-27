@@ -9,7 +9,11 @@ sha:87bf176d10e6167990682bb92a136e306a499f9953b3bb61675d071a0378b62b
 lib/c
 lib/vte
 lib/glib
-lib/gtk/4
+lib/gtop
+lib/gtk/3
+lib/handy
+lib/gtk/deps
+lib/gsettings/desktop/schemas
 {% endblock %}
 
 {% block bld_tool %}
@@ -41,5 +45,5 @@ sed -e 's|.*subdir.*help.*||' -i meson.build
 {% block install %}
 {{hooks.install_glib_schemas()}}
 {{super()}}
-{{hooks.wrap_xdg_binary('gnome-console')}}
+{{hooks.wrap_xdg_binary('kgx')}}
 {% endblock %}
