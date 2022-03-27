@@ -27,7 +27,7 @@ cat << EOF > doas
 #!/bin/sh
 user="\${1}"
 shift
-exec sud_client -q -t "\${user}@localhost" "\${@}"
+exec sud_client -o 'StrictHostKeyChecking no' -q -t "\${user}@localhost" "\${@}"
 EOF
 
 cat << EOF > sudo
