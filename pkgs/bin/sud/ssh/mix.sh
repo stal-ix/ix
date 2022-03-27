@@ -9,6 +9,10 @@ find . -name '*.h' | while read l; do
     sed -e 's|/etc/dropbear/dropbear|/var/run/sud/dropbear|' -i ${l}
 done
 
+sed -e 's|checkpubkey.*== DROPBEAR_FAILURE|0|' \
+    -e 's|%s/.ssh/authorized_keys|/etc/dropbear/authorized_keys|' \
+    -i svr-authpubkey.c
+
 {{super()}}
 {% endblock %}
 

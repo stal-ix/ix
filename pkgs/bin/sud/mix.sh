@@ -8,6 +8,18 @@ bin/sud/ssh
 {% block install %}
 cd ${out}
 
+mkdir -p etc/sud.d
+
+mkdir fix
+
+cat << EOF > fix/sud.sh
+mkdir -p etc/dropbear
+cat etc/sud.d/* > etc/dropbear/authorized_keys
+rm -r etc/sud.d
+chmod 0600 etc/dropbear/authorized_keys
+chmod 0700 etc/dropbear
+EOF
+
 mkdir bin; cd bin
 
 cat << EOF > doas

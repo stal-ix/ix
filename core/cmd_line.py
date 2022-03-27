@@ -20,7 +20,7 @@ def parse_pkgs_lst(pkgs):
             p = p[2:]
 
             if '=' in p:
-                k, v = p.split('=')
+                k, v = p.split('=', maxsplit=1)
             else:
                 k, v = p, '1'
 
