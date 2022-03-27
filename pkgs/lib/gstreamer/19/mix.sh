@@ -8,6 +8,7 @@ sha:d37b1afb5a2fb123e3c235b12aca0abc48dba6c62af6f62445cbf5b5795df403
 {% block lib_deps %}
 lib/c
 lib/z
+lib/orc
 lib/drm
 lib/glib
 lib/udev/g
@@ -15,7 +16,6 @@ lib/opengl
 lib/wayland
 lib/graphene
 lib/json/glib
-lib/gstreamer/orc
 {% endblock %}
 
 {% block bld_libs %}

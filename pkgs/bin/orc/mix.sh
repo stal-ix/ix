@@ -1,1 +1,1 @@
-{% extends '//lib/gstreamer/orc/mix.sh' %}
+{% extends '//lib/orc/mix.sh' %}
