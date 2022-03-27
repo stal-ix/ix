@@ -6,7 +6,7 @@ lib/adwaita/data
 
 {% block bld_tool %}
 {{super()}}
-bld/scripts
+bld/scripts/reloc
 {% endblock %}
 
 {% block configure %}
