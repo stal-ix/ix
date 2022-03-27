@@ -26,11 +26,7 @@ chmod +x sudo doas
 
 cd ..
 
-mkdir etc; cd etc
-
-ln -s /var/run/sud dropbear
-
-mkdir -p services/sud; cd services/sud
+mkdir -p etc/services/sud; cd etc/services/sud
 
 cat << EOF > run
 #!/bin/sh
