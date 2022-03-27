@@ -2,7 +2,8 @@
 
 {% block run_deps %}
 bin/runsrv
-bin/sud/ssh
+bin/sud/server
+bin/sud/client
 {% endblock %}
 
 {% block install %}
@@ -26,7 +27,7 @@ cat << EOF > doas
 #!/bin/sh
 user="\${1}"
 shift
-exec db_client -t -y -y "\${user}@localhost" "\${@}"
+exec sud_client -q -t "\${user}@localhost" "\${@}"
 EOF
 
 cat << EOF > sudo
@@ -42,7 +43,7 @@ mkdir -p etc/services/sud; cd etc/services/sud
 
 cat << EOF > run
 #!/bin/sh
-exec srv sud db_server -R -F -E -B -j -k -m -P dropbear.pid
+exec srv sud sud_server -R -F -E -B -j -k -m -P dropbear.pid
 EOF
 
 chmod +x run

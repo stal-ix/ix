@@ -3,10 +3,9 @@ import subprocess
 
 
 def run_cmd(cmd, input=''):
-    cmd = ['/bin/doas', 'mix', '-T', '/bin/mix'] + cmd
-    env = {'DROPBEAR_PASSWORD': ''}
+    cmd = ['/bin/sudo', '/bin/su', '-s', '/bin/mix', '-', 'mix'] + cmd
 
-    subprocess.run(cmd, shell=False, input=input.encode(), check=True, env=env)
+    subprocess.run(cmd, shell=False, input=input.encode(), check=True)
 
 
 class Ops:

@@ -16,13 +16,22 @@ sed -e 's|checkpubkey.*== DROPBEAR_FAILURE|0|' \
 {{super()}}
 {% endblock %}
 
+{% block configure_flags %}
+{{super()}}
+--disable-lastlog
+--disable-utmp
+--disable-utmpx
+--disable-wtmp
+--disable-wtmpx
+{% endblock %}
+
 {% block install %}
 {{super()}}
 
-cd ${out}/bin
+cd ${out}
 
-rm dropbearconvert dropbearkey
-
-mv dbclient db_client
-mv dropbear db_server
+mv bin old
+mkdir bin
+mv old/dropbear bin/sud_server
+rm -r old
 {% endblock %}
