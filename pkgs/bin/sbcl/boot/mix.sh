@@ -13,11 +13,11 @@ lib/linux
 {% endblock %}
 
 {% block bld_tool %}
-lib/dlfcn/scripts
-bin/make
 {% block boot_lisp_dep %}
 bin/ecl
 {% endblock %}
+bin/make
+bld/scripts/dlfcn
 {% endblock %}
 
 {% block patch %}

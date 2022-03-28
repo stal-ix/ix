@@ -1,7 +1,7 @@
 {% extends 'premain.sh' %}
 
 {% block std_box %}
-lib/dlfcn/scripts
+bld/scripts/dlfcn
 {{super()}}
 {% endblock %}
 

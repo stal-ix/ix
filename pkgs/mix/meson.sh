@@ -4,7 +4,9 @@
 {% if darwin %}
 bin/cctools
 {% endif %}
+{% block meson_binary %}
 bin/meson
+{% endblock %}
 bin/cmake
 bin/pkg-config
 {{super()}}

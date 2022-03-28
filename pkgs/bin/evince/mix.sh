@@ -31,7 +31,7 @@ aux/adwaita/icons
 bin/gettext
 bin/glib/codegen
 bld/scripts/gnome
-lib/dlfcn/scripts
+bld/scripts/dlfcn
 {% endblock %}
 
 {% block meson_flags %}

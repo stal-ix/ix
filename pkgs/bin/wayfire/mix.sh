@@ -31,7 +31,7 @@ lib/mesa/glesv2
 {% endblock %}
 
 {% block bld_tool %}
-lib/dlfcn/scripts
+bld/scripts/dlfcn
 bin/wayland/protocols
 {% endblock %}
 

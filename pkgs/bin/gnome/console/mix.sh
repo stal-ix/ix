@@ -16,6 +16,10 @@ lib/gtk/deps
 lib/gsettings/desktop/schemas
 {% endblock %}
 
+{% block meson_binary %}
+bin/meson/better
+{% endblock %}
+
 {% block bld_tool %}
 bin/sassc
 bin/gettext

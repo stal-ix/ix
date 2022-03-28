@@ -16,6 +16,10 @@ lib/gtk/deps
 lib/gtk/source/view
 {% endblock %}
 
+{% block meson_binary %}
+bin/meson/better
+{% endblock %}
+
 {% block bld_tool %}
 bin/gettext
 bin/glib/codegen

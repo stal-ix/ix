@@ -5,7 +5,7 @@ bld/python
 {% endblock %}
 
 {% block ind_deps %}
-lib/dlfcn/scripts/lib
+bld/scripts/dlfcn/lib
 {% endblock %}
 
 {% block install %}
