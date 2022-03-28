@@ -1,4 +1,4 @@
-{% extends '//mix/meson.sh' %}
+{% extends '//mix/gnome.sh' %}
 
 {% block fetch %}
 https://download.gnome.org/sources/epiphany/42/epiphany-42.0.tar.xz
@@ -11,9 +11,6 @@ bin/epiphany/libs(gtk_ver=3)
 
 {% block bld_tool %}
 bin/gettext
-bin/glib/codegen
-bin/meson/better
-bld/scripts/gnome
 {% endblock %}
 
 {% block run_data %}

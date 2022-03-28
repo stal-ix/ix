@@ -1,4 +1,4 @@
-{% extends '//mix/meson.sh' %}
+{% extends '//mix/gnome.sh' %}
 
 {% block fetch %}
 https://gitlab.gnome.org/GNOME/console/-/archive/42.beta/console-42.beta.tar.bz2
@@ -16,15 +16,9 @@ lib/gtk/deps
 lib/gsettings/desktop/schemas
 {% endblock %}
 
-{% block meson_binary %}
-bin/meson/better
-{% endblock %}
-
 {% block bld_tool %}
 bin/sassc
 bin/gettext
-bin/glib/codegen
-bld/scripts/gnome
 {% endblock %}
 
 {% block patch %}

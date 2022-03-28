@@ -1,4 +1,4 @@
-{% extends '//mix/meson.sh' %}
+{% extends '//mix/gnome.sh' %}
 
 {% block fetch %}
 https://gitlab.gnome.org/GNOME/gtksourceview/-/archive/5.4.0/gtksourceview-5.4.0.tar.bz2
@@ -12,9 +12,4 @@ lib/glib
 lib/gtk/4
 lib/pcre/2
 lib/fribidi
-{% endblock %}
-
-{% block bld_tool %}
-bin/glib/codegen
-bld/scripts/gnome
 {% endblock %}

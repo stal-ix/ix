@@ -1,4 +1,4 @@
-{% extends '//mix/meson.sh' %}
+{% extends '//mix/gnome.sh' %}
 
 {% block fetch %}
 https://download.gnome.org/sources/evince/42/evince-42.1.tar.xz
@@ -29,8 +29,6 @@ aux/adwaita/icons
 
 {% block bld_tool %}
 bin/gettext
-bin/glib/codegen
-bld/scripts/gnome
 bld/scripts/dlfcn
 {% endblock %}
 

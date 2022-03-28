@@ -1,4 +1,4 @@
-{% extends '//mix/meson.sh' %}
+{% extends '//mix/gnome.sh' %}
 
 {% block fetch %}
 https://gitlab.gnome.org/GNOME/gnome-text-editor/-/archive/42.0/gnome-text-editor-42.0.tar.bz2
@@ -16,14 +16,8 @@ lib/gtk/deps
 lib/gtk/source/view
 {% endblock %}
 
-{% block meson_binary %}
-bin/meson/better
-{% endblock %}
-
 {% block bld_tool %}
 bin/gettext
-bin/glib/codegen
-bld/scripts/gnome
 {% endblock %}
 
 {% block meson_flags %}
