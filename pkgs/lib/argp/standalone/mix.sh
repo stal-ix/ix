@@ -17,7 +17,6 @@ EOF
 
 {% block install %}
 mkdir ${out}/lib ${out}/include
-
 cp libargp.a ${out}/lib
 cp argp.h ${out}/include
 {% endblock %}
