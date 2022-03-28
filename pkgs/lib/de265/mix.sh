@@ -11,7 +11,7 @@ lib/c++
 {% endblock %}
 
 {% block patch %}
-find . | grep Makefile.am | while read l; do
+find . -name Makefile.am -type f | while read l; do
     sed -e 's|-lstdc++||g' -i ${l}
 done
 
