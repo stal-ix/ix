@@ -9,11 +9,6 @@ lib/drm/data
 bld/scripts/reloc
 {% endblock %}
 
-{% block c_rename_symbol %}
-handle_table_remove
-{{super()}}
-{% endblock %}
-
 {% block configure %}
 {{super()}}
 relocate "${DRM_DATA}"

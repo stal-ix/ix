@@ -6,6 +6,7 @@
 #SHA1Final
 #SHA1Update
 #SHA1Transform
+handle_table_remove
 {% endblock %}
 
 {% block install %}
