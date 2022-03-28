@@ -2,7 +2,7 @@
 
 {% block lib_deps %}
 {% if linux %}
-lib/mesa
+lib/mesa/gl
 {% endif %}
 {% if darwin %}
 lib/darwin/framework/Carbon

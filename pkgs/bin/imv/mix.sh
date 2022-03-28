@@ -28,7 +28,3 @@ bin/wayland/protocols
 {% block meson_flags %}
 windows=wayland
 {% endblock %}
-
-{% block patch %}
-sed -e "s|'opengl'|'glesv2'|" -i meson.build
-{% endblock %}

@@ -17,6 +17,8 @@ relocate "${MESA_DATA}"
 {% block install %}
 {{super()}}
 rm ${out}/lib/libgldrivers.a
+cd ${out}/lib/pkgconfig
+cp opengl.pc glesv2.pc
 {% endblock %}
 
 {% block merge_drivers %}
@@ -26,4 +28,9 @@ mv dri/*.so libgldrivers.a
 {% block env_lib %}
 export LDFLAGS="-L${out}/lib -lgbm -lglapi \${LDFLAGS}"
 export COFLAGS="--with-gallium=${out} \${COFLAGS}"
+{% endblock %}
+
+{% block patch %}
+sed -e 's|glesv2|opengl|' -i src/mapi/es2api/meson.build
+{{super()}}
 {% endblock %}
