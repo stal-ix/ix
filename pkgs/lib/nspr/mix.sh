@@ -19,8 +19,6 @@ lib/z
 bld/python
 {% endblock %}
 
-{% import '//mix/hooks.sh' as hooks %}
-
 {% block setup_tools %}
 {{hooks.wrap_c_compilers()}}
 {% endblock %}

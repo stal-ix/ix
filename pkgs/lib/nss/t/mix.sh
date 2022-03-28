@@ -32,8 +32,6 @@ bld/python/2
 bin/binutils(for_target={{target.gnu.three}})
 {% endblock %}
 
-{% import '//mix/hooks.sh' as hooks %}
-
 {% block setup_tools %}
 {{hooks.wrap_c_compilers()}}
 ln -s $(which python2) python

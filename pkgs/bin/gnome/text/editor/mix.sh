@@ -28,8 +28,6 @@ enchant=disabled
 sed -e 's|.*subdir.*help.*||' -i meson.build
 {% endblock %}
 
-{% import '//mix/hooks.sh' as hooks %}
-
 {% block install %}
 {{super()}}
 {{hooks.wrap_xdg_binary('gnome-text-editor')}}

@@ -1,3 +1,4 @@
+{% import 'hooks.sh' as hooks %}
 {
     "bld": {
         "fetch": {% block build_fetch %}[]{% endblock %},

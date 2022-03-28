@@ -109,8 +109,6 @@ sed -e 's|ENABLE(DEVELOPER_MODE)|1|g' \
     -i Source/WebKit/Shared/glib/ProcessExecutablePathGLib.cpp
 {% endblock %}
 
-{% import '//mix/hooks.sh' as hooks %}
-
 {% block setup_tools %}
 {{hooks.wrap_c_compilers()}}
 {% endblock %}

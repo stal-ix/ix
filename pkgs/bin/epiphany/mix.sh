@@ -90,8 +90,6 @@ EOF
 ) >> src/ephy-main.c
 {% endblock %}
 
-{% import '//mix/hooks.sh' as hooks %}
-
 {% block install %}
 {{super()}}
 

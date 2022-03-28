@@ -79,8 +79,6 @@ done
 cc -o real_evince stub.cpp $(find -type f -name '*.o' | grep -v 'evinced.p' | grep -v 'test-')
 {% endblock %}
 
-{% import '//mix/hooks.sh' as hooks %}
-
 {% block install %}
 {{super()}}
 rm -r ${out}/bin/bin_*
