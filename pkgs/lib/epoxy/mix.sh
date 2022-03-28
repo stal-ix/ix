@@ -7,7 +7,7 @@ sha:a7ced37f4102b745ac86d6a70a9da399cc139ff168ba6b8002b4d8d43c900c15
 
 {% block lib_deps %}
 lib/c
-lib/mesa
+lib/opengl
 {% endblock %}
 
 {% block meson_flags %}
