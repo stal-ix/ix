@@ -1,8 +1,8 @@
 {% extends '//mix/autohell.sh' %}
 
 {% block fetch %}
-https://gnupg.org/ftp/gcrypt/libgcrypt/libgcrypt-1.9.4.tar.bz2
-edc7becfe09c75d8f95ff7623e40c52e
+https://gnupg.org/ftp/gcrypt/libgcrypt/libgcrypt-1.10.1.tar.bz2
+sha:ef14ae546b0084cd84259f61a55e07a38c3b53afc0f546bffcef2f01baffe9de
 {% endblock %}
 
 {% block lib_deps %}

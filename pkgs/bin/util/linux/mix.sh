@@ -1,8 +1,8 @@
 {% extends '//mix/autorehell.sh' %}
 
 {% block fetch %}
-https://github.com/util-linux/util-linux/archive/refs/tags/v2.37.2.tar.gz
-sha:74e725802a6355bba7288caeca171e0e25d9da2aa570162efbc1397ed924dfa2
+https://github.com/util-linux/util-linux/archive/refs/tags/v2.38.tar.gz
+sha:f3cf9d165f50f46e5c0a1076d178a75a5ae30463345e9c19335552b249fe0e67
 {% endblock %}
 
 {% block lib_deps %}
