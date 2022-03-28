@@ -1,6 +1,8 @@
 {% extends '//mix/make.sh' %}
 
 {% block fetch %}
+#https://github.com/Novum/vkQuake/archive/refs/tags/1.13.0.tar.gz
+#sha:baeab4fbea17bb41064b56a7e6e745f2856634c88d57ad86de97990399c24b3b
 https://github.com/Novum/vkQuake/archive/refs/tags/1.12.1.tar.gz
 sha:8adbc27dd46962cd69165e84559b7bda8515ade381f22ba775c333440f2a2f32
 {% endblock %}
