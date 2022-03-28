@@ -1,8 +1,8 @@
 {% extends '//mix/meson.sh' %}
 
 {% block fetch %}
-https://github.com/linuxwacom/libwacom/archive/refs/tags/libwacom-1.12.tar.gz
-1d2cff159404674d791f9b28be364c51
+https://github.com/linuxwacom/libwacom/releases/download/libwacom-2.2.0/libwacom-2.2.0.tar.xz
+sha:e62ac9edb522d36ad2fa99adca35ddc02067383d4668eeaa13d7efccc30bb8c8
 {% endblock %}
 
 {% block lib_deps %}
