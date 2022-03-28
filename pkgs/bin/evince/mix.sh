@@ -82,7 +82,6 @@ cc -o real_evince stub.cpp $(find -type f -name '*.o' | grep -v 'evinced.p' | gr
 {% import '//mix/hooks.sh' as hooks %}
 
 {% block install %}
-{{hooks.install_glib_schemas()}}
 {{super()}}
 rm -r ${out}/bin/bin_*
 cp ${tmp}/real_evince ${out}/bin/evince

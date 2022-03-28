@@ -9,3 +9,12 @@ bld/scripts/gnome
 {% block meson_binary %}
 bin/meson/better
 {% endblock %}
+
+{% import 'hooks.sh' as hooks %}
+
+{% block step_install %}
+{% if bin %}
+{{hooks.install_glib_schemas()}}
+{% endif %}
+{{super()}}
+{% endblock %}

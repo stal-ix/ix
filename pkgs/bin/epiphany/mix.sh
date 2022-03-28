@@ -93,8 +93,6 @@ EOF
 {% import '//mix/hooks.sh' as hooks %}
 
 {% block install %}
-{{hooks.install_glib_schemas()}}
-
 {{super()}}
 
 {% call hooks.wrap_xdg_binary('epiphany') %}

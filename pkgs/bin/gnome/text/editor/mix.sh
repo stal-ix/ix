@@ -31,7 +31,6 @@ sed -e 's|.*subdir.*help.*||' -i meson.build
 {% import '//mix/hooks.sh' as hooks %}
 
 {% block install %}
-{{hooks.install_glib_schemas()}}
 {{super()}}
 {{hooks.wrap_xdg_binary('gnome-text-editor')}}
 {% endblock %}
