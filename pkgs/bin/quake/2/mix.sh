@@ -35,9 +35,7 @@ bld/scripts/librarian
 {% block build %}
 {{super()}}
 
-find . -type f -name '*.so' | while read l; do
-    patchns ${l} $(basename ${l} | sed -e 's|\..*||')_
-done
+fixallns ${PWD}
 
 dl_stubs_3 << EOF >> stubs.cpp
 game     GetGameAPI game_GetGameAPI
@@ -46,7 +44,7 @@ ref_gl3  GetRefAPI  ref_gl3_GetRefAPI
 ref_soft GetRefAPI  ref_soft_GetRefAPI
 EOF
 
-cc -o quake2 stubs.cpp $(find build/client -type f -name '*.o') $(find . -type f -name '*.so')
+cc -o quake2 stubs.cpp $(find build/client -name '*.o') $(find . -name '*.so')
 {% endblock %}
 
 {% block patch %}
