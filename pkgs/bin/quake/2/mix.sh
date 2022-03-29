@@ -10,16 +10,13 @@ lib/c
 lib/curl
 lib/sdl/2
 lib/opengl
+lib/openal
 lib/execinfo
 lib/drivers/3d
 lib/mesa/gl/dl
 lib/mesa/egl/dl
 lib/vulkan/loader
 lib/vulkan/headers
-{% endblock %}
-
-{% block make_flags %}
-WITH_OPENAL=no
 {% endblock %}
 
 {% block bld_tool %}
