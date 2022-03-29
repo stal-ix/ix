@@ -9,6 +9,10 @@ sha:7db46b8d7726232a621befaab4a1c870f00a90805511c0e0090441dac57def18
 bld/bootbox
 {% endblock %}
 
+{% block lib_deps %}
+lib/c
+{% endblock %}
+
 {% block configure %}
 sh configure --static --64 --prefix="${out}"
 {% endblock %}
@@ -17,18 +21,6 @@ sh configure --static --64 --prefix="${out}"
 TEST_LDFLAGS="-L. libz.a"
 {% endblock %}
 
-{% block install %}
-{{super()}}
-mkdir ${out}/bin
-cp minigzip ${out}/bin/
-cd ${out}/bin
-ln -s minigzip gzip
-{% endblock %}
-
 {% block env_lib %}
 export COFLAGS="--with-z=${out} \${COFLAGS}"
-{% endblock %}
-
-{% block lib_deps %}
-lib/c
 {% endblock %}
