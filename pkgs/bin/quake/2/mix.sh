@@ -7,11 +7,11 @@ sha:132889a6976dd7c75bf94a4ca49c76ff09cf843d66541872320d7a02a25a622c
 
 {% block bld_libs %}
 lib/c
-lib/curl
 lib/sdl/2
 lib/opengl
-lib/openal
+lib/curl/dl
 lib/execinfo
+lib/openal/dl
 lib/drivers/3d
 lib/mesa/gl/dl
 lib/mesa/egl/dl
