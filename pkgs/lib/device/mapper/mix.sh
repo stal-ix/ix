@@ -14,8 +14,8 @@ lib/udev
 lib/linux
 {% endblock %}
 
-{% block bld_tool %}
-bld/python
+{% block build_flags %}
+wrap_cc
 {% endblock %}
 
 {% block configure_flags %}
@@ -32,8 +32,6 @@ install_device-mapper
 {% endblock %}
 
 {% block setup_tools %}
-{{hooks.wrap_c_compilers()}}
-
 cat << EOF > readelf
 #!$(which sh)
 EOF

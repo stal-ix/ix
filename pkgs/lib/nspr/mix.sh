@@ -15,12 +15,8 @@ lib/c
 lib/z
 {% endblock %}
 
-{% block bld_tool %}
-bld/python
-{% endblock %}
-
-{% block setup_tools %}
-{{hooks.wrap_c_compilers()}}
+{% block build_flags %}
+wrap_cc
 {% endblock %}
 
 {% block configure_flags %}

@@ -20,13 +20,12 @@ lib/vulkan/headers
 {% endblock %}
 
 {% block bld_tool %}
-bld/python
 bld/scripts/dlfcn
 bld/scripts/librarian
 {% endblock %}
 
-{% block setup_tools %}
-{{hooks.wrap_c_compilers()}}
+{% block build_flags %}
+wrap_cc
 {% endblock %}
 
 {% block build %}

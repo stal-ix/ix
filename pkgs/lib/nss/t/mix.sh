@@ -22,19 +22,22 @@ lib/sqlite3
 lib/linux
 {% endblock %}
 
+{% block build_flags %}
+wrap_cc
+{% endblock %}
+
 {% block bld_tool %}
 bin/gyp
 bld/perl
 bld/bash
 bin/ninja
-bld/python
 bld/python/2
 bin/binutils(for_target={{target.gnu.three}})
 {% endblock %}
 
 {% block setup_tools %}
-{{hooks.wrap_c_compilers()}}
 ln -s $(which python2) python
+{{super()}}
 {% endblock %}
 
 {% block build %}

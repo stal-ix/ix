@@ -13,13 +13,8 @@ lib/c
 lib/c++
 {% endblock %}
 
-{% block std_box %}
-bld/python
-{{super()}}
-{% endblock %}
-
-{% block setup_tools %}
-{{hooks.wrap_c_compilers()}}
+{% block build_flags %}
+wrap_cc
 {% endblock %}
 
 {% block test_execute %}

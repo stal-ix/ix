@@ -15,15 +15,11 @@ lib/openssl
 lib/readline
 {% endblock %}
 
-{% block bld_tool %}
-bld/python
+{% block build_flags %}
+wrap_cc
 {% endblock %}
 
 {% block touch_yl %}
-{% endblock %}
-
-{% block setup_tools %}
-{{hooks.wrap_c_compilers()}}
 {% endblock %}
 
 {% block configure_flags %}

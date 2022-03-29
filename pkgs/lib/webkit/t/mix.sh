@@ -82,6 +82,7 @@ EGL_NO_X11=1
 
 {% block build_flags %}
 shut_up
+wrap_cc
 {% endblock %}
 
 {% block setup %}
@@ -107,8 +108,4 @@ EOF
 
 sed -e 's|ENABLE(DEVELOPER_MODE)|1|g' \
     -i Source/WebKit/Shared/glib/ProcessExecutablePathGLib.cpp
-{% endblock %}
-
-{% block setup_tools %}
-{{hooks.wrap_c_compilers()}}
 {% endblock %}
