@@ -3,12 +3,6 @@
 {% block fetch %}
 https://gitlab.freedesktop.org/mesa/mesa/-/archive/mesa-22.0.0/mesa-mesa-22.0.0.tar.bz2
 sha:e5fe34b3b792885a56086341fc7ebd02fe315dd6956c2cf2ac1075f12222c4e2
-
-#https://gitlab.freedesktop.org/mesa/mesa/-/archive/mesa-21.3.8/mesa-mesa-21.3.8.tar.bz2
-#sha:5a36d65399ba792d0e6458d4759cecd5426e72558cfc2782c4829f4f8a241e2e
-
-#https://gitlab.freedesktop.org/mesa/mesa/-/archive/mesa-21.3.7/mesa-mesa-21.3.7.tar.bz2
-#sha:0b5e3003714355a48c5664790cc3fabf3ff80d81022ec5eccbe9d65cd3233c2b
 {% endblock %}
 
 {% block lib_deps %}

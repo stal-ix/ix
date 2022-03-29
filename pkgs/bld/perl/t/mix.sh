@@ -3,8 +3,6 @@
 {% block fetch %}
 https://www.cpan.org/src/5.0/perl-5.34.0.tar.gz
 2acf2ef147e41730e572251ed079bc1a
-#https://www.cpan.org/src/5.0/perl-5.35.4.tar.gz
-#sha:9850e8792e69041fc38a679d56bdcad6505ba08a613bf8b06826d28231c842eb
 {% endblock %}
 
 {% block bld_libs %}
