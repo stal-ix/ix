@@ -20,10 +20,6 @@ NOX11=ON
 shut_up
 {% endblock %}
 
-{% block cpp_defines %}
-EGL_NO_X11=1
-{% endblock %}
-
 {% block install %}
 cp -R lib ${out}
 {% endblock %}

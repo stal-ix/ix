@@ -77,7 +77,6 @@ _xdg_binary_or_text_fallback
 
 {% block cpp_defines %}
 WL_EGL_PLATFORM=1
-EGL_NO_X11=1
 {% endblock %}
 
 {% block build_flags %}

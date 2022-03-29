@@ -29,7 +29,3 @@ lib/drivers/3d
 lib/vulkan/loader
 lib/vulkan/headers
 {% endblock %}
-
-{% block cpp_defines %}
-EGL_NO_X11=1
-{% endblock %}

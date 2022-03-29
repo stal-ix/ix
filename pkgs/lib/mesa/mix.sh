@@ -16,8 +16,9 @@ relocate "${MESA_DATA}"
 
 {% block install %}
 {{super()}}
-rm ${out}/lib/libgldrivers.a
-cd ${out}/lib/pkgconfig
+cd ${out}/lib
+rm libgldrivers.a
+cd pkgconfig
 cp opengl.pc glesv2.pc
 {% endblock %}
 
@@ -26,6 +27,7 @@ mv dri/*.so libgldrivers.a
 {% endblock %}
 
 {% block env_lib %}
+export CPPFLAGS="-DEGL_NO_X11=1 \${CPPFLAGS}"
 export LDFLAGS="-L${out}/lib -lgbm -lglapi \${LDFLAGS}"
 export COFLAGS="--with-gallium=${out} \${COFLAGS}"
 {% endblock %}

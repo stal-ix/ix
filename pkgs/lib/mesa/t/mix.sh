@@ -8,7 +8,7 @@
 #sha:5a36d65399ba792d0e6458d4759cecd5426e72558cfc2782c4829f4f8a241e2e
 
 https://gitlab.freedesktop.org/mesa/mesa/-/archive/mesa-21.3.7/mesa-mesa-21.3.7.tar.bz2
-sha:
+sha:0b5e3003714355a48c5664790cc3fabf3ff80d81022ec5eccbe9d65cd3233c2b
 {% endblock %}
 
 {% block lib_deps %}

@@ -17,7 +17,3 @@ FREEGLUT_GLES=ON
 FREEGLUT_WAYLAND=ON
 FREEGLUT_BUILD_SHARED_LIBS=OFF
 {% endblock %}
-
-{% block cpp_defines %}
-EGL_NO_X11=1
-{% endblock %}
