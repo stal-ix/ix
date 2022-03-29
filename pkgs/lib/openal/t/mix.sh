@@ -20,9 +20,6 @@ ALSOFT_DLOPEN=OFF
 ALSOFT_EXAMPLES=OFF
 {% endblock %}
 
-{% block cmake_fix_shared %}
-{% endblock %}
-
 {% block build_flags %}
 wrap_cc
 {% endblock %}
