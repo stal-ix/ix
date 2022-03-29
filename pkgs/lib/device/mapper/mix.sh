@@ -37,6 +37,8 @@ cat << EOF > readelf
 EOF
 
 chmod +x readelf
+
+{{super()}}
 {% endblock %}
 
 {% block install %}
