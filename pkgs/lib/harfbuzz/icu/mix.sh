@@ -1,4 +1,4 @@
-{% extends '//lib/harfbuzz/mix.sh' %}
+{% extends '//lib/harfbuzz/ft/mix.sh' %}
 
 {% block lib_deps %}
 lib/icu
