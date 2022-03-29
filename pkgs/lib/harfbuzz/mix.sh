@@ -1,11 +1,5 @@
-{% extends '//lib/harfbuzz/t/mix.sh' %}
+{% extends '//mix/hub.sh' %}
 
-{% block meson_flags %}
-{{super()}}
-cairo=disabled
-{% endblock %}
-
-{% block patch %}
-sed -e 's|.*subdir.*util.*||' -i meson.build
-{{super()}}
+{% block lib_deps %}
+lib/freetype
 {% endblock %}

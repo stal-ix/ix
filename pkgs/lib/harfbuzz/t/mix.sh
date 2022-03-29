@@ -9,7 +9,6 @@ sha:0dad9332aa017d216981382cc07a9cf115740990c83b81ce3ea71ad88026d7f1
 lib/c
 lib/c++
 lib/glib
-lib/freetype
 {% if darwin %}
 lib/darwin/framework/CoreText
 lib/darwin/framework/ApplicationServices
