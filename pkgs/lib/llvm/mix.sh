@@ -1,6 +1,5 @@
 {% extends '//mix/hub.sh' %}
 
 {% block lib_deps %}
-lib/vulkan/loader/dl
-lib/mesa/drivers/amd
+lib/llvm/{{llvm_ver or '14'}}
 {% endblock %}

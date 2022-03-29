@@ -3,7 +3,7 @@
 {% block mesa_drivers %}
 dri-drivers=
 vulkan-drivers={{vulkan}}
-gallium-drivers={{opengl}}
+gallium-drivers={{','.join((opengl or '').split('|'))}}
 {% endblock %}
 
 {% block patch %}
@@ -11,6 +11,7 @@ gallium-drivers={{opengl}}
 {{super()}}
 )
 
+(
 cd src/gallium/frontends/dri
 
 for l in *.c *.h; do
@@ -18,6 +19,17 @@ for l in *.c *.h; do
         sed -e "s|${x}|${x}_xxx|g" -i ${l}
     done
 done
+)
+
+(
+cd src/gallium/drivers/radeonsi
+
+for l in *.c *.h *.cpp; do
+    for x in vi_alpha_is_on_msb si_emit_cache_flush si_cp_dma_prefetch si_cp_dma_clear_buffer si_cp_dma_wait_for_idle; do
+        sed -e "s|${x}|${x}_xxx|g" -i ${l}
+    done
+done
+)
 {% endblock %}
 
 {% block install %}

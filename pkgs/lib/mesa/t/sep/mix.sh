@@ -1,11 +1,6 @@
 {% extends '//lib/mesa/t/nodrv/mix.sh' %}
 
 {% block c_rename_symbol %}
-#SHA1Pad
-#SHA1Init
-#SHA1Final
-#SHA1Update
-#SHA1Transform
 handle_table_remove
 {% endblock %}
 
