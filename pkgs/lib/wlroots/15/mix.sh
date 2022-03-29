@@ -7,7 +7,6 @@ sha:fcb9e9dbbb112f5c527c1c4155994fd97b6b1eb3950316e186e3c293e7a07fc4
 
 {% block lib_deps %}
 {{super()}}
-lib/c
 lib/vulkan/loader
 lib/vulkan/headers
 {% endblock %}
