@@ -1,8 +1,8 @@
 {% extends '//mix/c_std.sh' %}
 
 {% block fetch %}
-https://nav.dl.sourceforge.net/project/sbcl/sbcl/2.1.7/sbcl-2.1.7-source.tar.bz2
-sha:12606f153832ae2003d2162a6b3a851a5e8969ccbbf7538d2b0fb32d17ea1dc6
+https://nav.dl.sourceforge.net/project/sbcl/sbcl/2.2.3/sbcl-2.2.3-source.tar.bz2
+sha:de7f49e1f7750fd2cd89111ef70641cc5471355f621b737392ac68aa95f37f9f
 {% endblock %}
 
 {% block bld_libs %}
