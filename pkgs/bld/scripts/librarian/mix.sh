@@ -1,5 +1,9 @@
 {% extends '//mix/proxy.sh' %}
 
+{% block run_deps %}
+bld/python
+{% endblock %}
+
 {% block install %}
 cd ${out}; mkdir bin; cd bin
 
@@ -9,6 +13,22 @@ EOF
 
 base64 -d << EOF > fixallns
 {% include 'fixallns.sh/base64' %}
+EOF
+
+base64 -d << EOF > safeex
+{% include 'safeex.py/base64' %}
+EOF
+
+base64 -d << EOF > safear
+{% include 'safear.py/base64' %}
+EOF
+
+base64 -d << EOF > joinar
+{% include 'joinar.sh/base64' %}
+EOF
+
+base64 -d << EOF > substr
+{% include 'substr.py/base64' %}
 EOF
 
 chmod +x *

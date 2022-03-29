@@ -2,5 +2,5 @@
 
 {% block lib_deps %}
 lib/vulkan/loader/dl
-lib/mesa/drivers/amd
+lib/mesa/drivers/radv
 {% endblock %}

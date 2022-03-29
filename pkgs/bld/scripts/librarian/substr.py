@@ -1,10 +1,10 @@
+#!/usr/bin/env python3
+
 import sys
 import subprocess
 
-
 def syms(p):
     return subprocess.check_output(['llvm-nm', '--defined-only', '-j', '--print-file-name', '--no-weak', '--extern-only', p]).decode('utf-8')
-
 
 def all_syms(d):
     for l in d.split('\n'):

@@ -4,29 +4,27 @@
 handle_table_remove
 {% endblock %}
 
+{% block bld_tool %}
+{{super()}}
+bld/scripts/librarian
+{% endblock %}
+
 {% block install %}
 {{super()}}
 
 cd ${out}/lib
 
-base64 -d << EOF > substr.py
-{% include 'substr.py/base64' %}
-EOF
-
 {% block merge_drivers %}
 mv dri/*.so libgallium.a
-python3 substr.py libvulkan* libgallium.a
-llvm-ar qL libgldrivers.a libgallium* libvulkan_*
+joinar libgldrivers.a libgallium* libvulkan_*
 rm libgallium* libvulkan_*
 {% endblock %}
 
 rm -r dri
 
-python3 substr.py libgbm.a libEGL.a
-python3 substr.py libgbm.a libgldrivers.a
-python3 substr.py libEGL.a libgldrivers.a
-
-rm substr.py
+substr libgbm.a libEGL.a
+substr libgbm.a libgldrivers.a
+substr libEGL.a libgldrivers.a
 
 find . -type f -name '*.pc' | while read l; do
     sed -e 's|glesv1_cm,||g' -i ${l}
