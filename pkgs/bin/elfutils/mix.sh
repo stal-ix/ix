@@ -1,6 +1,11 @@
-{% extends '//lib/elfutils/mix.sh' %}
+{% extends '//lib/elfutils/t/mix.sh' %}
 
 {% block bld_libs %}
 lib/intl
+lib/curl
+lib/linux
+lib/sqlite3
+lib/archive
+lib/microhttpd
 {{super()}}
 {% endblock %}
