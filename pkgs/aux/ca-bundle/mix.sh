@@ -4,7 +4,7 @@
 https://github.com/curl/curl/archive/refs/tags/curl-7_80_0.tar.gz
 d96c3324dd060474508312449105d835
 https://hg.mozilla.org/releases/mozilla-release/raw-file/default/security/nss/lib/ckfw/builtins/certdata.txt
-sha:187ef9dc231135324fe78830cf4462f1ecdeab3e6c9d5e38d623391e88dc5d3c
+sha:d59c5c83ce7a7635fa95521d8d245677949b86d5574bfcc6f855b6a48f2d5566
 {% endblock %}
 
 {% block unpack %}
