@@ -12,10 +12,10 @@ lib/xz
 lib/fts
 lib/zstd
 lib/bzip2
-lib/obstack
 {% endblock %}
 
 {% block bld_libs %}
+lib/obstack
 lib/gnushim
 lib/argp/standalone
 {% endblock %}

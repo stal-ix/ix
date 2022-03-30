@@ -9,3 +9,8 @@ lib/archive
 lib/microhttpd
 {{super()}}
 {% endblock %}
+
+{% block configure_flags %}
+{{super()}}
+--enable-deterministic-archives
+{% endblock %}
