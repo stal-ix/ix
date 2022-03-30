@@ -13,3 +13,9 @@ lib/c
 INS_BASE=${out}
 LINKMODE=static
 {% endblock %}
+
+{% block patch %}
+find . -type f | while read l; do
+    sed -e "s|/tmp/|${TMPDIR}/|" -i ${l}
+done
+{% endblock %}
