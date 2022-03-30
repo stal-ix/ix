@@ -92,7 +92,7 @@ def link(objs):
 
 if '-c' in args:
     pass
-elif '-shared' in str(args):
+elif '-shared' in str(args) or '--soname' in str(args):
     link(list(flt_objs()))
     sys.exit(0)
 

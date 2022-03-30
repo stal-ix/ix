@@ -16,6 +16,7 @@ lib/obstack
 {% endblock %}
 
 {% block bld_libs %}
+lib/qsort/r
 lib/argp/standalone
 {% endblock %}
 
@@ -30,10 +31,20 @@ mkdir sys; echo > sys/cdefs.h
 
 {% block patch_configure %}
 sed -e 's|"-shared"|""|' -i configure
+sed -e 's|error.*;|abort();|' -i libdw/libdw_alloc.c
 {% endblock %}
 
 {% block build_flags %}
 shut_up
+wrap_cc
+{% endblock %}
+
+{% block cpp_defines %}
+FNM_EXTMATCH=0
+{% endblock %}
+
+{% block c_rename_symbol %}
+crc32
 {% endblock %}
 
 {% block cpp_includes %}
@@ -43,23 +54,4 @@ ${PWD}
 {% block configure_flags %}
 --disable-libdebuginfod
 --disable-debuginfod
-{% endblock %}
-
-{% block build %}
-make -C backends libebl_backends.a
-make -C libcpu libcpu.a
-make -C libdwelf libdwelf.a
-make -C libebl libebl.a
-make -C libdwfl libdwfl.a
-make -C libdw libdw.a
-make -C libelf libelf.a
-{% endblock %}
-
-{% block install %}
-make -C libdw install-exec install-data
-make -C libelf install-exec install-data
-make -C libdwfl install-exec install-data
-make -C libebl install-exec install-data
-make -C libdwelf install-exec install-data
-cp version.h ${out}/include/elfutils/
 {% endblock %}
