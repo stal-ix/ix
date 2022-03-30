@@ -9,10 +9,8 @@ sha:fb38c479ddba37276064116e34ab72d95435148acc9fc81662786bb0c2c1c8b7
 lib/c
 lib/z
 lib/drm
-lib/zstd
 lib/expat
 lib/wayland
-lib/elfutils
 lib/vulkan/loader
 lib/vulkan/headers
 {% endblock %}

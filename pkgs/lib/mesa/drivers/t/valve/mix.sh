@@ -1,5 +1,10 @@
 {% extends '//lib/mesa/t/sep/mix.sh' %}
 
+{% block lib_deps %}
+lib/elfutils
+{{super()}}
+{% endblock %}
+
 {% block mesa_drivers %}
 dri-drivers=
 vulkan-drivers={{vulkan}}
