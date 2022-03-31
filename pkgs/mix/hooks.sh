@@ -42,66 +42,9 @@ chmod +x {{name}}
 ) {% endmacro %}
 
 {% macro wrap_c_compiler(name) %} (
-C=$(which {{name}})
-
 cat << EOF > {{name}}
-#!$(which python3)
-
-import os
-import sys
-import subprocess
-
-def it_args():
-    for x in sys.argv:
-        if x:
-            if x[0] == '@':
-                yield from open(x[1:], 'r').read().split()
-            else:
-                yield x
-
-args = list(it_args())
-
-def flt_objs():
-    for x in args:
-        if x.endswith('.o'):
-            yield x
-        elif '/store/' in x:
-            pass
-        elif x.endswith('.a'):
-            yield x
-
-def link1(x, objs):
-    if '/' in x:
-        try:
-            os.makedirs(os.path.dirname(x))
-        except OSError:
-            pass
-
-    if objs:
-        subprocess.check_call(['llvm-ar', 'qL', x] + objs)
-    else:
-        open(x, 'w')
-
-def link(objs):
-    for x in args:
-        if '-Wl' in x:
-            continue
-
-        if '.so' in x:
-            link1(x, objs)
-
-if '-c' in args:
-    pass
-elif '-shared' in str(args) or '--soname' in str(args):
-    link(list(flt_objs()))
-    sys.exit(0)
-
-if '-P' in args or '-E' in args:
-    arg0 = 'clang-cpp'
-else:
-    arg0 = "${C}"
-
-subprocess.check_call([arg0] + args[1:])
+#!$(which sh)
+wrapcc "$(which {{name}})" "\${@}"
 EOF
 
 chmod +x {{name}}
