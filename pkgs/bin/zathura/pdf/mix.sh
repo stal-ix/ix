@@ -9,7 +9,7 @@ sha:c205b4cf500d8cfe9eceaade54e5fa8d4cd1298cd85f17a6f50c647259116217
 lib/c
 lib/glib
 lib/mupdf
-lib/gtk/3
+lib/cairo
 lib/girara
 {% endblock %}
 
@@ -17,10 +17,16 @@ lib/girara
 bin/zathura/headers
 {% endblock %}
 
+{% block bld_tool %}
+bld/scripts/librarian
+{% endblock %}
+
 {% block meson_flags %}
 plugindir=${out}/mod
 {% endblock %}
 
-{% block postinstall %}
-echo 'TODO(pg): fix it'
+{% block install %}
+{{super()}}
+patchns ${out}/mod/*.a pdf_
+rm -r ${out}/share
 {% endblock %}

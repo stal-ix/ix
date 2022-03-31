@@ -3,6 +3,7 @@
 {% block bld_libs %}
 lib/magic
 lib/sqlite3
+lib/seccomp
 bin/zathura/pdf
 {{super()}}
 {% endblock %}
@@ -15,6 +16,15 @@ bld/scripts/dlfcn
 {% block meson_flags %}
 {{super()}}
 magic=enabled
+seccomp=enabled
+{% endblock %}
+
+{% block patch %}
+find . -type f | while read l; do
+    sed -e 's|\.so|\.plugin|' -i ${l}
+done
+
+sed -e "s|plugindir = .*|plugindir = join_paths(datadir, 'plugins')|" -i meson.build
 {% endblock %}
 
 {% block build %}
@@ -22,24 +32,20 @@ magic=enabled
 
 cd ${tmp}
 
+ver='3_4'
+
 dl_stubs_3 << EOF >> stubs.cpp
-pdf zathura_plugin_3_4 zathura_plugin_3_4
+pdf zathura_plugin_${ver} pdf_zathura_plugin_${ver}
 EOF
 
-cc -o zathura stubs.cpp $(find . -name '*.o') ${lib_bin_zathura_pdf}/mod/*.a
+cc -o zathura stubs.cpp   \
+    $(find . -name '*.o') \
+    ${lib_bin_zathura_pdf}/mod/*.a
 {% endblock %}
 
 {% block install %}
 {{super()}}
 cp ${tmp}/zathura ${out}/bin/
-mkdir -p ${out}/lib/zathura
-echo > ${out}/lib/zathura/pdf.so
-{% endblock %}
-
-{% block postinstall %}
-:
-{% endblock %}
-
-{% block cleanup_pkg %}
-:
+mkdir -p ${out}/share/plugins
+echo > ${out}/share/plugins/pdf.plugin
 {% endblock %}
