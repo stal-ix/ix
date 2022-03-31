@@ -1,25 +1,45 @@
-{% extends '//mix/meson.sh' %}
-
-{% block fetch %}
-https://git.pwmt.org/pwmt/zathura/-/archive/0.4.9/zathura-0.4.9.tar.bz2
-sha:b4405dc490d2fd13e0348b977d535752be0dee682450459d9693f36ea50f02ce
-{% endblock %}
+{% extends '//bin/zathura/headers/mix.sh' %}
 
 {% block bld_libs %}
-lib/c
-lib/glib
-lib/gtk/3
 lib/magic
-lib/cairo
-lib/girara
 lib/sqlite3
+bin/zathura/pdf
+{{super()}}
 {% endblock %}
 
 {% block bld_tool %}
-bin/gettext
-bin/glib/codegen
+bld/scripts/dlfcn
+{{super()}}
 {% endblock %}
 
-{% block patch %}
-sed -e 's|.*export_dynamic.*||' -i meson.build
+{% block meson_flags %}
+{{super()}}
+magic=enabled
+{% endblock %}
+
+{% block build %}
+{{super()}}
+
+cd ${tmp}
+
+dl_stubs_3 << EOF >> stubs.cpp
+pdf zathura_plugin_3_4 zathura_plugin_3_4
+EOF
+
+cc -o zathura stubs.cpp $(find . -name '*.o') ${lib_bin_zathura_pdf}/mod/*.a
+{% endblock %}
+
+{% block install %}
+{{super()}}
+cp ${tmp}/zathura ${out}/bin/
+mkdir -p ${out}/lib/zathura
+echo > ${out}/lib/zathura/pdf.so
+{% endblock %}
+
+{% block postinstall %}
+:
+{% endblock %}
+
+{% block cleanup_pkg %}
+:
 {% endblock %}

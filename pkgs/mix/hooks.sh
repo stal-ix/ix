@@ -41,21 +41,15 @@ EOF
 chmod +x {{name}}
 ) {% endmacro %}
 
-{% macro wrap_c_compiler(name) %} (
-cat << EOF > {{name}}
+{% macro wrap_c_compilers() %}
+for name in clang clang++; do
+    if which ${name}; then
+        cat << EOF > ${name}
 #!$(which sh)
-wrapcc "$(which {{name}})" "\${@}"
+wrapcc "$(which ${name})" "\${@}"
 EOF
 
-chmod +x {{name}}
-) {% endmacro %}
-
-{% macro wrap_c_compilers() %} (
-if which clang; then
-{{wrap_c_compiler('clang')}}
-fi
-
-if which clang++; then
-{{wrap_c_compiler('clang++')}}
-fi
-) {% endmacro %}
+        chmod +x ${name}
+    fi
+done
+{% endmacro %}
