@@ -4,7 +4,7 @@
 lib/magic
 lib/sqlite3
 lib/seccomp
-bin/zathura/pdf
+bin/zathura/mupdf
 {{super()}}
 {% endblock %}
 
@@ -35,17 +35,17 @@ cd ${tmp}
 ver='3_4'
 
 dl_stubs_3 << EOF >> stubs.cpp
-pdf zathura_plugin_${ver} pdf_zathura_plugin_${ver}
+mupdf zathura_plugin_${ver} mupdf_zathura_plugin_${ver}
 EOF
 
 cc -o zathura stubs.cpp   \
     $(find . -name '*.o') \
-    ${lib_bin_zathura_pdf}/mod/*.a
+    ${lib_bin_zathura_mupdf}/mod/*.a
 {% endblock %}
 
 {% block install %}
 {{super()}}
 cp ${tmp}/zathura ${out}/bin/
 mkdir -p ${out}/share/plugins
-echo > ${out}/share/plugins/pdf.plugin
+echo > ${out}/share/plugins/mupdf.plugin
 {% endblock %}

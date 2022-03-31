@@ -27,6 +27,6 @@ plugindir=${out}/mod
 
 {% block install %}
 {{super()}}
-patchns ${out}/mod/*.a pdf_
+patchns ${out}/mod/*.a mupdf_
 rm -r ${out}/share
 {% endblock %}
