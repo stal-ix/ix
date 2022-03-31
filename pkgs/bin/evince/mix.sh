@@ -56,12 +56,13 @@ sed -e 's|+multipage||' \
 
 cd ${tmp}
 
+func=register_evince_backend
+
 for x in pdf comics djvu tiff; do
-    echo "${x}document register_evince_backend register_evince_backend_${x}"
+    echo "${x}document ${func} ${func}_${x}"
 
     for l in obj/backend/${x}/lib${x}document.a.p/*.o; do
-        llvm-objcopy --preserve-dates --redefine-sym \
-            "register_evince_backend=register_evince_backend_${x}" ${l}
+        llvm-objcopy --preserve-dates --redefine-sym "${func}=${func}_${x}" ${l}
     done
 done | dl_stubs_3 > stub.cpp
 
