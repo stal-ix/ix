@@ -49,20 +49,6 @@ shut_up
 sed -e 's|+multipage||' \
     -e 's|ev_libdir, ev_backends_subdir|ev_datadir, ev_backends_subdir|' \
     -i meson.build
-
-cd backend
-
-for d in $(ls -d */); do (
-    d=$(echo ${d} | tr -d '/'); cd ${d}
-
-    find . -type f -name '*.c' | while read f; do
-        cat - ${f} << EOF > _
-#define register_evince_backend register_evince_backend_${d}
-EOF
-
-        mv _ ${f}
-    done
-) done
 {% endblock %}
 
 {% block build %}
@@ -71,17 +57,20 @@ EOF
 cd ${tmp}
 
 for x in pdf comics djvu tiff; do
-    cat << EOF | dl_stubs_2 ${x}document >> stub.cpp
-register_evince_backend register_evince_backend_${x}
-EOF
-done
+    echo "${x}document register_evince_backend register_evince_backend_${x}"
 
-cc -o real_evince stub.cpp $(find -type f -name '*.o' | grep -v 'evinced.p' | grep -v 'test-')
+    for l in obj/backend/${x}/lib${x}document.a.p/*.o; do
+        llvm-objcopy --preserve-dates --redefine-sym \
+            "register_evince_backend=register_evince_backend_${x}" ${l}
+    done
+done | dl_stubs_3 > stub.cpp
+
+cc -o evince stub.cpp $(find -type f -name '*.o' | grep -v 'evinced.p' | grep -v 'test-')
 {% endblock %}
 
 {% block install %}
 {{super()}}
 rm -r ${out}/bin/bin_*
-cp ${tmp}/real_evince ${out}/bin/evince
+cp ${tmp}/evince ${out}/bin/evince
 {{hooks.wrap_xdg_binary('evince')}}
 {% endblock %}
