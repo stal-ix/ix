@@ -220,6 +220,10 @@ class Executor:
                 raise e
 
 
+async def arun(g):
+    await Executor(g['nodes']).visit_all(g['targets'])
+
+
 def execute(g):
     try:
         cmd = [shutil.which('chrt'), '-i', '-p', '0', str(os.getpid())]
@@ -228,7 +232,7 @@ def execute(g):
         # TODO(pg): log it
         pass
 
-    asyncio.run(Executor(g['nodes']).visit_all(g['targets']))
+    asyncio.run(arun(g))
 
 
 def cli_execute(ctx):

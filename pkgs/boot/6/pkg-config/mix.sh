@@ -2,6 +2,7 @@
 
 {% block bld_libs %}
 boot/6/lib/iconv
+lib/darwin/framework/CoreServices
 {% endblock %}
 
 {% block bld_deps %}

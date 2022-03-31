@@ -6,7 +6,7 @@ https://storage.yandexcloud.net/mix-cache/{{self.link().strip()}}
 {% endblock %}
 
 {% block ind_deps %}
-bin/clang/lib
+boot/0/sys/env
 {% endblock %}
 
 {% block build %}
@@ -34,4 +34,7 @@ export CPPFLAGS="-isystem :prefix:/lib/clang/${CLANG_VERSION}/include ${CPPFLAGS
 
 with open(envp, 'w') as f:
     f.write(data.replace(':prefix:', out))
+
+os.chdir('bin')
+os.symlink('dash', 'sh')
 {% endblock %}

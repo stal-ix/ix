@@ -58,7 +58,7 @@ for x in TOOLS:
     if r := wsys(x):
         sl(r, x)
 
-        if x == 'g++':
+        if x == 'g++' and 'clang' not in run(r, '--version'):
             for tool in ('cc1plus', 'collect2', 'cc1'):
                 cc = run(r, f'--print-prog-name={tool}')
 

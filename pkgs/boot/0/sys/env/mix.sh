@@ -18,7 +18,7 @@ for x in '-nostdinc++'; do
 done
 
 for ld in '-nostdlib' '-nostdlib++' '-fno-use-linker-plugin' '-fuse-ld=lld'; do
-    if ${CXX} ${ld} -c _.cpp > /dev/null 2>&1; then
+    if ${CXX} ${ld} -c _.cpp; then
         LDFLAGS="${ld} ${LDFLAGS}"
     fi
 done
@@ -30,8 +30,13 @@ C="${CPPFLAGS} ${CFLAGS} ${LDFLAGS} ${OPTFLAGS}"
 A="${CONLYFLAGS} ${C}"
 B="${CXXFLAGS} ${C}"
 
+{% if host.os == 'linux' %}
 S="-Wl,--start-group"
 E="-Wl,--end-group"
+{% else %}
+S=""
+E=""
+{% endif %}
 
 cat << EOF > cc
 #!$(which sh)
@@ -113,7 +118,9 @@ guess_flags
 if command -v ln; then
     setup_tc_hard
 else
+{% if host.os == 'linux' %}
     export LDFLAGS="-w -Wl,--start-group ${LDFLAGS}"
+{% endif %}
     export CFLAGS="${CFLAGS} ${OPTFLAGS}"
     export CXXFLAGS="${CXXFLAGS} ${OPTFLAGS}"
 fi
