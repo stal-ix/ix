@@ -42,14 +42,12 @@ chmod +x {{name}}
 ) {% endmacro %}
 
 {% macro wrap_c_compilers() %}
-for name in clang clang++; do
-    if which ${name}; then
-        cat << EOF > ${name}
+for name in ${CC} ${CXX}; do
+    cat << EOF > ${name}
 #!$(which sh)
 wrapcc "$(which ${name})" "\${@}"
 EOF
 
-        chmod +x ${name}
-    fi
+    chmod +x ${name}
 done
 {% endmacro %}
