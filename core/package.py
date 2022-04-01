@@ -119,11 +119,9 @@ def canon_name(n):
 
     n = n.rstrip('-')
 
-    n = n.replace('lib-lib', 'lib')
-    n = n.replace('bin-bin', 'bin')
-    n = n.replace('aux-aux', 'aux')
-    n = n.replace('aux-lib', 'aux')
-    n = n.replace('bin-bld', 'bld')
+    n = n.replace('-lib-', '-')
+    n = n.replace('-bin-', '-')
+    n = n.replace('-pip-', '-')
 
     return n.lower()
 

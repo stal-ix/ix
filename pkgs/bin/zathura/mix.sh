@@ -41,8 +41,8 @@ mupdf zathura_plugin_${ver} mupdf_zathura_plugin_${ver}
 EOF
 
 cc -o zathura stubs.cpp $(find . -name '*.o') \
-    ${lib_bin_zathura_mupdf}/mod/*.a \
-    ${lib_bin_zathura_djvu}/mod/*.a
+    ${lib_zathura_mupdf}/mod/*.a \
+    ${lib_zathura_djvu}/mod/*.a
 {% endblock %}
 
 {% block install %}
