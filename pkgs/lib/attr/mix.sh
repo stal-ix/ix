@@ -6,7 +6,7 @@ https://git.savannah.nongnu.org/cgit/attr.git/snapshot/attr-2.5.1.tar.gz
 {% endblock %}
 
 {% block bld_tool %}
-bin/gettext
+bld/gettext
 {% endblock %}
 
 {% block lib_deps %}

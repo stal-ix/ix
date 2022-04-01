@@ -17,7 +17,7 @@ lib/gtk/source/view
 {% endblock %}
 
 {% block bld_tool %}
-bin/gettext
+bld/gettext
 {% endblock %}
 
 {% block meson_flags %}

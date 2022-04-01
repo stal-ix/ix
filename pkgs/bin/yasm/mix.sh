@@ -13,7 +13,7 @@ lib/intl
 {% block bld_tool %}
 bin/re2c
 bld/python
-bin/gettext
+bld/gettext
 {% endblock %}
 
 {% block patch %}

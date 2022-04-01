@@ -5,7 +5,7 @@
 bin/cctools
 {% endif %}
 {% block meson_binary %}
-bin/meson
+bld/meson
 {% endblock %}
 {% block meson_cmake %}
 bld/cmake

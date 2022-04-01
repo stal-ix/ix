@@ -10,7 +10,7 @@ lib/c
 {% endblock %}
 
 {% block bld_tool %}
-bin/gettext
+bld/gettext
 bin/auto/conf/archive
 {% endblock %}
 

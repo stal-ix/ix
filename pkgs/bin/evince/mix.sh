@@ -28,7 +28,7 @@ aux/adwaita/icons
 {% endblock %}
 
 {% block bld_tool %}
-bin/gettext
+bld/gettext
 bld/scripts/dlfcn
 {% endblock %}
 

@@ -16,7 +16,7 @@ bin/e2fsprogs
 
 {% block bld_tool %}
 bld/bash
-bin/gettext
+bld/gettext
 {% endblock %}
 
 {% block configure_flags %}

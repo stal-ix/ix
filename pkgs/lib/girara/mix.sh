@@ -13,7 +13,7 @@ lib/json/c
 {% endblock %}
 
 {% block bld_tool %}
-bin/gettext
+bld/gettext
 bin/glib/codegen
 {% endblock %}
 

@@ -6,7 +6,7 @@ https://github.com/xiph/flac/archive/refs/tags/1.3.3.tar.gz
 {% endblock %}
 
 {% block bld_tool %}
-bin/gettext
+bld/gettext
 {% endblock %}
 
 {% block lib_deps %}

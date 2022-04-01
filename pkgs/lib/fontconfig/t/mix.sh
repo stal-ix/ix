@@ -6,7 +6,7 @@ ab06ff17524de3f1ddd3c97ed8a02f8d
 {% endblock %}
 
 {% block bld_tool %}
-bin/gettext
+bld/gettext
 bin/gperf
 bld/python
 {% endblock %}

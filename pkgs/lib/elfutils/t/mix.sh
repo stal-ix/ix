@@ -22,7 +22,7 @@ lib/argp/standalone
 
 {% block bld_tool %}
 bin/m4
-bin/gettext
+bld/gettext
 {% endblock %}
 
 {% block patch %}

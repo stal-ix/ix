@@ -11,5 +11,5 @@ lib/intl
 {% endblock %}
 
 {% block bld_tool %}
-bin/gettext
+bld/gettext
 {% endblock %}

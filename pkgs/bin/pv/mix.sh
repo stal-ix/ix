@@ -20,7 +20,7 @@ bld/bootbox
 LD=ld.lld
 {% else %}
 LD=ld
-{%  endif %}
+{% endif %}
 {% endblock %}
 
 {% block cpp_defines %}

@@ -12,7 +12,7 @@ lib/iconv
 {% endblock %}
 
 {% block bld_tool %}
-bin/gettext
+bld/gettext
 bin/bison/3/6
 {% endblock %}
 

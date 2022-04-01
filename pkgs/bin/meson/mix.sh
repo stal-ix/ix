@@ -5,14 +5,6 @@ https://github.com/mesonbuild/meson/archive/refs/tags/0.60.2.tar.gz
 a5d6cfcf776e145f2054d5eefb4bc110
 {% endblock %}
 
-{% block std_box %}
-bld/bootbox
-{% endblock %}
-
-{% block run_deps %}
-bld/python
-{% endblock %}
-
 {% block unpack %}
 # spaces in paths
 mkdir src; cd src; extract0 ${src}/0*; cd meson*

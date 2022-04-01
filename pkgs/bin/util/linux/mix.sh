@@ -19,7 +19,7 @@ lib/cap/ng
 
 {% block bld_tool %}
 bld/bash
-bin/gettext
+bld/gettext
 bin/bison/3/8
 {% endblock %}
 

@@ -21,7 +21,7 @@ lib/darwin/framework/Foundation
 {% if darwin %}
 bin/cctools
 {% endif %}
-bin/meson
+bld/meson
 bld/bootbox
 {% endblock %}
 

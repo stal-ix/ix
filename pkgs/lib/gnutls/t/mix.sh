@@ -27,7 +27,7 @@ aux/ca-bundle
 {% endblock %}
 
 {% block bld_tool %}
-bin/gettext
+bld/gettext
 {% endblock %}
 
 {% block c_rename_symbol %}

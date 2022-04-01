@@ -35,7 +35,7 @@ lib/double-conversion
 
 {% block bld_tool %}
 bld/python
-bin/gettext
+bld/gettext
 bin/ragel/6
 bin/glib/codegen
 {% endblock %}

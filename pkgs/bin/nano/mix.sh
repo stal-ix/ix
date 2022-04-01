@@ -16,7 +16,7 @@ lib/linux
 {% endblock %}
 
 {% block bld_tool %}
-bin/gettext
+bld/gettext
 {% endblock %}
 
 {% block configure_flags %}

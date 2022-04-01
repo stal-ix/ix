@@ -20,7 +20,7 @@ lib/tree/sitter
 
 {% block bld_tool %}
 bin/gperf
-bin/gettext
+bld/gettext
 bin/neovim/luafat
 {% endblock %}
 

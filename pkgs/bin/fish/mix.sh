@@ -14,7 +14,7 @@ lib/curses
 
 {% block bld_tool %}
 bld/python
-bin/gettext
+bld/gettext
 {% endblock %}
 
 {% block strip_pc %}

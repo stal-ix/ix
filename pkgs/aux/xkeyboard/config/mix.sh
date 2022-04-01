@@ -12,7 +12,7 @@ lib/c
 {% endblock %}
 
 {% block bld_tool %}
-bin/gettext
+bld/gettext
 bin/xsltproc
 bin/intltool
 bin/auto/conf/xorg

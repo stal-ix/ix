@@ -14,7 +14,7 @@ lib/curses
 {% endblock %}
 
 {% block bld_tool %}
-bin/gettext
+bld/gettext
 {% endblock %}
 
 {% block setup %}

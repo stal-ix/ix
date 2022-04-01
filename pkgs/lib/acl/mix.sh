@@ -11,5 +11,5 @@ lib/attr
 {% endblock %}
 
 {% block bld_tool %}
-bin/gettext
+bld/gettext
 {% endblock %}

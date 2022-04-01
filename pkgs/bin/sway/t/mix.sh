@@ -19,7 +19,6 @@ lib/gdk/pixbuf
 
 {% block bld_tool %}
 bin/scdoc
-bin/meson/better
 bin/wayland/protocols
 {% endblock %}
 

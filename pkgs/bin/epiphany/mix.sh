@@ -10,7 +10,7 @@ bin/epiphany/libs(gtk_ver=3)
 {% endblock %}
 
 {% block bld_tool %}
-bin/gettext
+bld/gettext
 {% endblock %}
 
 {% block run_data %}

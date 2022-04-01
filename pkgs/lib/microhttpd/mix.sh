@@ -14,5 +14,5 @@ lib/gnutls
 
 {% block bld_tool %}
 bin/texinfo
-bin/gettext
+bld/gettext
 {% endblock %}

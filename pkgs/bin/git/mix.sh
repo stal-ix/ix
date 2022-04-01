@@ -20,7 +20,7 @@ lib/openssl
 bld/perl
 bin/cpio
 bld/python
-bin/gettext
+bld/gettext
 {% endblock %}
 
 {% block run_deps %}

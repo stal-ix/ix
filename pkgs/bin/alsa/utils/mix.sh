@@ -6,7 +6,7 @@ fc109b2fa4517caeae1697d936ca78ff
 {% endblock %}
 
 {% block bld_tool %}
-bin/gettext
+bld/gettext
 {% endblock %}
 
 {% block bld_libs %}

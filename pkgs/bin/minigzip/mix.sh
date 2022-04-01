@@ -4,6 +4,4 @@
 {{super()}}
 mkdir ${out}/bin
 cp minigzip ${out}/bin/
-cd ${out}/bin
-ln -s minigzip gzip
 {% endblock %}

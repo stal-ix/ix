@@ -15,7 +15,7 @@ lib/{{self.typ().strip()}}
 
 {% block bld_tool %}
 bld/perl
-bin/gettext
+bld/gettext
 {% endblock %}
 
 {% block run_deps %}

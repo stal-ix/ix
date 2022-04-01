@@ -8,7 +8,7 @@ https://github.com/linux-pam/linux-pam/archive/refs/tags/v1.5.2.tar.gz
 {% block bld_tool %}
 bin/flex
 bin/byacc
-bin/gettext
+bld/gettext
 {% endblock %}
 
 {% block lib_deps %}

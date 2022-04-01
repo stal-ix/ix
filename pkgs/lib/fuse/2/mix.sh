@@ -11,7 +11,7 @@ lib/iconv
 {% endblock %}
 
 {% block bld_tool %}
-bin/gettext
+bld/gettext
 {% endblock %}
 
 {% block autoreconf %}
