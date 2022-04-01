@@ -20,6 +20,11 @@ bin/texinfo
 {% endblock %}
 
 {% block patch %}
+cat << EOF > support/config.sub
+#!$(which sh)
+echo {{target.gnu.three}}
+EOF
+chmod +x support/config.sub
 rm y.tab* lib/intl/plural.c
 {{super()}}
 {% endblock %}

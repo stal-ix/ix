@@ -7,7 +7,9 @@ sha:f9335281bb4d1538ed078df78a20c2f39d3af9a4e91c57d084271e0289c730f4
 
 {% block bld_libs %}
 lib/c
+{% if linux %}
 lib/pam
+{% endif %}
 lib/curses
 {% endblock %}
 

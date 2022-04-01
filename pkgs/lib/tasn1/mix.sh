@@ -12,3 +12,12 @@ bin/bison/3/8
 {% block lib_deps %}
 lib/c
 {% endblock %}
+
+{% block cpp_defines %}
+_GL_EXTERN_INLINE=
+{% endblock %}
+
+{% block configure %}
+{{super()}}
+sed -e 's|.*define.* _GL_EXTERN_INLINE .*||' -i config.h
+{% endblock %}
