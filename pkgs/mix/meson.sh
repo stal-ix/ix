@@ -8,7 +8,7 @@ bin/cctools
 bin/meson
 {% endblock %}
 {% block meson_cmake %}
-bin/cmake
+bld/cmake
 {% endblock %}
 bin/pkg-config
 {{super()}}

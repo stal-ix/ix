@@ -1,6 +1,5 @@
 {% extends '//bin/cmake/t/mix.sh' %}
 
-{% block bld_libs %}
-lib/curses
-{{super()}}
+{% block std_box %}
+bld/bootbox
 {% endblock %}

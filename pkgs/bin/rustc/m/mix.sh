@@ -26,7 +26,7 @@ bin/tar
 tool/bin/time
 bld/python
 bin/make
-bin/cmake
+bld/cmake
 {% endblock %}
 
 {% block unpack %}
