@@ -117,13 +117,7 @@ def canon_name(n):
     while '--' in n:
         n = n.replace('--', '-')
 
-    n = n.rstrip('-')
-
-    n = n.replace('-lib-', '-')
-    n = n.replace('-bin-', '-')
-    n = n.replace('-pip-', '-')
-
-    return n.lower()
+    return n.rstrip('-').lower()
 
 
 ONE_LEVEL = ('setx', 'help', 'verbose', 'stage')
@@ -178,8 +172,14 @@ class Package:
     @cu.cached_method
     def pkg_name(self):
         k = self.flags['kind']
+        n = self.norm_name
 
-        return canon_name(f'{k}-{self.norm_name}')
+        if n.startswith('boot/'):
+            return canon_name(n)
+
+        n = n[n.index('/') + 1:]
+
+        return canon_name(f'{k}-{n}')
 
     @property
     def uniq_id(self):
