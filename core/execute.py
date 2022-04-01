@@ -129,7 +129,11 @@ def group_by_out(nodes):
 
 class Executor:
     def __init__(self, nodes):
-        self.s = asyncio.Semaphore(4)
+        self.s = {
+            'cpu': asyncio.Semaphore(4),
+            'other': asyncio.Semaphore(10),
+        }
+
         self.o = group_by_out(nodes)
         self.l = []
         self.f = set()
@@ -172,7 +176,7 @@ class Executor:
 
         await self.visit_lst(iter_in(n))
 
-        async with self.s:
+        async with self.s[n['pool']]:
             for o in iter_out(n):
                 self.f.add(o)
                 self.in_fly()

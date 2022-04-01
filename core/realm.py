@@ -76,6 +76,7 @@ class RealmCtx:
             'out_dir': [self.out_dir],
             'cmd': [self.build_cmd()],
             'cache': False,
+            'pool': 'cpu',
         }
 
     def buildable(self):

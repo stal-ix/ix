@@ -141,6 +141,7 @@ def cmd_fetch(sb, url):
         'cmd': [script],
         'path': path,
         'cache': True,
+        'pool': 'other',
     }
 
 
@@ -154,6 +155,7 @@ def cmd_check(sb, path, md5):
         'out_dir': [out_dir],
         'cmd': [script],
         'path': new_path,
+        'pool': 'other',
     }
 
 
@@ -169,6 +171,7 @@ def cmd_link(sb, extra):
         'in_dir': sum([x['out_dir'] for x in extra], []),
         'out_dir': [out_dir],
         'cmd': [script],
+        'pool': 'other',
     }
 
 
@@ -206,4 +209,5 @@ def iter_build_commands(self):
         'out_dir': [out_dir],
         'cmd': [CmdBuild(self).script(sb, src_dir)],
         'cache': True,
+        'pool': 'cpu',
     }
