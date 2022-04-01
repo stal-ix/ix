@@ -16,6 +16,10 @@ bld/python
 bin/glib/codegen
 {% endblock %}
 
+{% block build_flags %}
+shut_up
+{% endblock %}
+
 {% block setup %}
 export GLIB_GENMARSHAL=$(which glib-genmarshal)
 {% endblock %}
