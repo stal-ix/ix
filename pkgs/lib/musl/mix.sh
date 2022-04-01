@@ -18,7 +18,10 @@ __libc_calloc=calloc
 {% endblock %}
 
 {% block install %}
+(
 {{super()}}
+)
+
 rm -rf ${out}/lib/libc.a obj/src/malloc
 ar q ${out}/lib/libc.a $(find obj -type f | sort)
 ranlib ${out}/lib/libc.a

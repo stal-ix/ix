@@ -46,3 +46,17 @@ void error(int status, int errnum, const char* format, ...) {
 
     errno = saved_errno;
 }
+
+void error_at_line(int status, int errnum, const char* filename, unsigned int linenum, const char* format, ...) {
+    int saved_errno = errno;
+
+    {
+        va_list argp;
+
+        va_start(argp, format);
+        do_error(status, errnum, format, argp);
+        va_end(argp);
+    }
+
+    errno = saved_errno;
+}

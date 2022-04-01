@@ -26,21 +26,9 @@ EOF
 
 {% block install %}
 {{super()}}
-
-cat << EOF > ${out}/include/error.h
-#pragma once
-
-#include <err.h>
-
-#define error(status, errno, ...) err(status, __VA_ARGS__)
-EOF
-
-(
-    cd ${out}/lib
-
-    ar q libcrt.a crt1.o crti.o crtn.o
-    ranlib libcrt.a
-)
+cd ${out}/lib
+ar q libcrt.a crt1.o crti.o crtn.o
+ranlib libcrt.a
 {% endblock %}
 
 {% block env_lib %}

@@ -25,7 +25,3 @@ bin/auto/conf/archive
 {% block configure_flags %}
 --with-cares
 {% endblock %}
-
-{% block patch %}
-sed -e 's|.*memory ex.*||' -i lib/xalloc-die.c
-{% endblock %}

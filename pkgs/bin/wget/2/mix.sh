@@ -29,10 +29,6 @@ bin/texinfo
 --with-ssl=gnutls
 {% endblock %}
 
-{% block patch %}
-sed -e 's|.*memory ex.*||' -i lib/xalloc-die.c
-{% endblock %}
-
 {% block install %}
 {{super()}}
 rm ${out}/bin/wget2_noinstall
