@@ -107,4 +107,10 @@ EOF
 
 sed -e 's|ENABLE(DEVELOPER_MODE)|1|g' \
     -i Source/WebKit/Shared/glib/ProcessExecutablePathGLib.cpp
+
+cat - Source/WebCore/accessibility/atspi/AccessibilityRootAtspi.cpp << EOF > _
+#include <locale.h>
+EOF
+
+mv _ Source/WebCore/accessibility/atspi/AccessibilityRootAtspi.cpp
 {% endblock %}
