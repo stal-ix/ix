@@ -25,7 +25,7 @@ bin/git
 bin/tar
 tool/bin/time
 bld/python
-bin/make
+bld/make
 bld/cmake
 {% endblock %}
 

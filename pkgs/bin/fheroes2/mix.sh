@@ -15,7 +15,7 @@ lib/sdl/2/image
 {% endblock %}
 
 {% block bld_tool %}
-bin/make
+bld/make
 bin/iconv
 bld/gettext
 {% endblock %}

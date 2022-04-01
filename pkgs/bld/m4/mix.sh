@@ -1,7 +1,5 @@
 {% extends '//mix/hub.sh' %}
 
 {% block run_deps %}
-bld/m4
-bld/perl
-bin/libtool
+bin/m4/19(std_box=bld/bootbox,intl_ver=stub)
 {% endblock %}

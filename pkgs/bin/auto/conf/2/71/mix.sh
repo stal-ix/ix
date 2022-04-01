@@ -6,7 +6,7 @@ https://ftp.gnu.org/gnu/autoconf/autoconf-2.71.tar.xz
 {% endblock %}
 
 {% block bld_tool %}
-bin/m4
+bld/m4
 bld/perl
 {% endblock %}
 

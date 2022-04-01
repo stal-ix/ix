@@ -6,7 +6,7 @@ sha:f01d58cd6d9d77fbdca9eb4bbd5ead1988228fdb73d6f7a201f5f8d6b118b469
 {% endblock %}
 
 {% block bld_tool %}
-bin/m4
+bld/m4
 bld/perl
 bin/auto/conf/2/71
 {% endblock %}

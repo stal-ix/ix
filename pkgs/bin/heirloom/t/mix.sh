@@ -10,7 +10,7 @@ lib/c
 {% endblock %}
 
 {% block bld_tool %}
-bin/make
+bld/make
 {% endblock %}
 
 {% block c_rename_symbol %}

@@ -14,10 +14,6 @@ lib/darwin/framework/CoreFoundation
 {% endif %}
 {% endblock %}
 
-{% block std_box %}
-bld/bootbox
-{% endblock %}
-
 {% block unpack %}
 {{super()}}
 cd gettext-runtime

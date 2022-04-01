@@ -6,7 +6,7 @@ addf44b646ddb4e3919805aa88fa7c5e
 {% endblock %}
 
 {% block bld_tool %}
-bin/m4
+bld/m4
 {% endblock %}
 
 {% block std_box %}

@@ -1,7 +1,7 @@
 {% extends 'c_std.sh' %}
 
 {% block std_box %}
-bin/make
+bld/make
 {{super()}}
 {% endblock %}
 
