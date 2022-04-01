@@ -1,15 +1,5 @@
-{% extends '//bin/bash/5/t/mix.sh' %}
+{% extends '//mix/hub.sh' %}
 
-{% block bld_libs %}
-lib/c
-{% endblock %}
-
-{% block std_box %}
-bld/bootbox
-{% endblock %}
-
-{% block configure_flags %}
-{{super()}}
---disable-nls
---disable-readline
+{% block run_deps %}
+bin/bash/lite(std_box=bld/bootbox)
 {% endblock %}
