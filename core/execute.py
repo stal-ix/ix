@@ -131,7 +131,7 @@ class Executor:
     def __init__(self, nodes):
         self.s = {
             'cpu': asyncio.Semaphore(4),
-            'other': asyncio.Semaphore(4),
+            'other': asyncio.Semaphore(8),
         }
 
         self.o = group_by_out(nodes)
