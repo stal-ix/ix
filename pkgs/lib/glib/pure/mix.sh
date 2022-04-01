@@ -1,7 +1,7 @@
 {% extends '//lib/glib/t/mix.sh' %}
 
 {% block lib_deps %}
-lib/intl
+lib/intl/stub
 {{super()}}
 {% endblock %}
 

@@ -8,5 +8,7 @@ sha:c311ad853353bce796edad01a862c50a8a587f62e7e2100ef465ab53ec9b06d1
 {% block install %}
 {{super()}}
 cd ${out}
-ln -s lib64 lib
+if test -d lib64; then
+    ln -s lib64 lib
+fi
 {% endblock %}

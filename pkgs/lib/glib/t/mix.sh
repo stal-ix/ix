@@ -37,3 +37,7 @@ ${PWD}/inc
 iconv=external
 tests=false
 {% endblock %}
+
+{% block build_flags %}
+shut_up
+{% endblock %}
