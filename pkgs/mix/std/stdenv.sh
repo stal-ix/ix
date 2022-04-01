@@ -3,7 +3,7 @@ bld/sh
 {% endblock %}
 
 {% block box %}
-bin/gnubox(std_box=bld/bootbox)
+bld/box/gnu
 {% endblock %}
 
 {% block decompressor %}

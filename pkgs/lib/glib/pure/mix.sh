@@ -6,8 +6,9 @@ lib/intl
 {% endblock %}
 
 {% block bld_tool %}
-{{super()}}
+bld/meson
 bin/glib/codegen
+{{super()}}
 {% endblock %}
 
 {% block install %}
