@@ -1,4 +1,4 @@
-{% extends '//bld/sh/mix.sh' %}
+{% extends '//bin/dash/sh/mix.sh' %}
 
 {% block make_no_thrs %}{% endblock %}
 

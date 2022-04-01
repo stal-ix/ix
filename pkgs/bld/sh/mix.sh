@@ -1,22 +1,5 @@
-{% extends '//bin/dash/mix.sh' %}
+{% extends '//mix/hub.sh' %}
 
-{% block bld_libs %}
-lib/c
-{% endblock %}
-
-{% block std_box %}
-bld/bootbox
-{% endblock %}
-
-{% block install %}
-{{super()}}
-cd ${out}/bin; mv dash sh
-{% endblock %}
-
-{% block configure1 %}
-sh ./configure \
-    --prefix="${out}"  \
-    --disable-lineedit \
-    --enable-printf    \
-    --enable-test
+{% block run_deps %}
+bin/dash/sh(std_box=bld/bootbox)
 {% endblock %}
