@@ -1,8 +1,8 @@
 {% extends '//mix/autorehell.sh' %}
 
 {% block fetch %}
-https://download.savannah.gnu.org/releases/freetype/freetype-2.11.1.tar.xz
-sha:3333ae7cfda88429c97a7ae63b7d01ab398076c3b67182e960e5684050f2c5c8
+https://download.savannah.gnu.org/releases/freetype/freetype-2.12.0.tar.xz
+sha:ef5c336aacc1a079ff9262d6308d6c2a066dd4d2a905301c4adda9b354399033
 {% endblock %}
 
 {% block lib_deps %}
