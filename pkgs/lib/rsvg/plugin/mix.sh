@@ -11,7 +11,7 @@ lib/gdk/pixbuf
 {% endblock %}
 
 {% block bld_tool %}
-bin/pkg-config
+bld/pkg/config
 {% endblock %}
 
 {% block build %}

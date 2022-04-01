@@ -17,7 +17,7 @@ lib/vulkan/loader
 {% endblock %}
 
 {% block bld_tool %}
-bin/pkg-config
+bld/pkg/config
 bin/wayland/protocols
 {% endblock %}
 

@@ -13,7 +13,7 @@ lib/linux
 
 {% block bld_tool %}
 bin/gzip
-bin/pkg-config
+bld/pkg/config
 {% endblock %}
 
 {% block make_flags %}

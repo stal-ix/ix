@@ -16,7 +16,7 @@ lib/readline
 {% endblock %}
 
 {% block bld_tool %}
-bin/pkg-config
+bld/pkg/config
 {% endblock %}
 
 {% block unpack %}

@@ -3,7 +3,7 @@
 {% block std_box %}
 bin/gn
 bld/python
-bin/pkg-config
+bld/pkg/config
 {{super()}}
 {% endblock %}
 

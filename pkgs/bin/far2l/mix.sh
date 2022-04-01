@@ -23,7 +23,7 @@ lib/linux
 
 {% block bld_tool %}
 bin/m4
-bin/pkg-config
+bld/pkg/config
 {% endblock %}
 
 {% block c_rename_symbol %}

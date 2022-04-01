@@ -2,7 +2,7 @@
 
 {% block std_box %}
 bld/python
-bin/pkg-config
+bld/pkg/config
 {{super()}}
 {% endblock %}
 

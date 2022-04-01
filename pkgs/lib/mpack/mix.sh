@@ -15,5 +15,5 @@ OUTDIR=./
 
 {% block bld_tool %}
 bin/libtool
-bin/pkg-config
+bld/pkg/config
 {% endblock %}

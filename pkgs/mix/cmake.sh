@@ -2,7 +2,7 @@
 
 {% block std_box %}
 bld/cmake
-bin/pkg-config
+bld/pkg/config
 {{super()}}
 {% endblock %}
 

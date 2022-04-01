@@ -14,5 +14,5 @@ lib/unibilium
 bld/perl
 bin/gzip
 bin/libtool
-bin/pkg-config
+bld/pkg/config
 {% endblock %}

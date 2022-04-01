@@ -31,7 +31,7 @@ lib/fontconfig
 
 {% block bld_tool %}
 bld/python
-bin/pkg-config
+bld/pkg/config
 bld/scripts/dlfcn
 bld/scripts/python
 {% endblock %}

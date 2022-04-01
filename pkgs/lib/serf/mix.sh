@@ -15,7 +15,7 @@ lib/apr/util
 
 {% block bld_tool %}
 bin/scons
-bin/pkg-config
+bld/pkg/config
 {% endblock %}
 
 {% block build_flags %}

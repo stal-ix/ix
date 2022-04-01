@@ -12,7 +12,7 @@ lib/vulkan/headers
 {% endblock %}
 
 {% block bld_tool %}
-bin/pkg-config
+bld/pkg/config
 {% endblock %}
 
 {% block cmake_flags %}

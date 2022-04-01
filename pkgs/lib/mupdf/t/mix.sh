@@ -17,7 +17,7 @@ lib/jpeg/open
 
 {% block bld_tool %}
 bin/binutils(for_target={{target.gnu.three}})
-bin/pkg-config
+bld/pkg/config
 {% endblock %}
 
 {% block build_flags %}

@@ -14,5 +14,5 @@ lib/webkit(gtk_ver=3)
 {% endblock %}
 
 {% block bld_tool %}
-bin/pkg-config
+bld/pkg/config
 {% endblock %}

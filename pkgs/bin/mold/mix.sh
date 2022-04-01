@@ -15,7 +15,7 @@ lib/intel/tbb
 {% endblock %}
 
 {% block std_box %}
-bin/pkg-config
+bld/pkg/config
 {{super()}}
 {% endblock %}
 

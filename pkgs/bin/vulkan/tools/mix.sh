@@ -14,7 +14,7 @@ lib/vulkan/headers
 
 {% block bld_tool %}
 bin/glslang
-bin/pkg-config
+bld/pkg/config
 bin/wayland/protocols
 {% endblock %}
 

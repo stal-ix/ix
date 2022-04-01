@@ -1,7 +1,7 @@
 {% extends '//bin/webkitproc/mix.sh' %}
 
 {% block bld_tool %}
-bin/pkg-config
+bld/pkg/config
 {{super()}}
 {% endblock %}
 

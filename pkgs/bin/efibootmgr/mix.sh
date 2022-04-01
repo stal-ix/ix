@@ -13,7 +13,7 @@ lib/efivar
 {% endblock %}
 
 {% block bld_tool %}
-bin/pkg-config
+bld/pkg/config
 {% endblock %}
 
 {% block make_flags %}

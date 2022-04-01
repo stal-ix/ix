@@ -6,7 +6,7 @@ sha:262864053968c217d45b24b89044a7736a32361894743dd6cfe788df258c746c
 {% endblock %}
 
 {% block bld_tool %}
-bin/pkg-config
+bld/pkg/config
 {% endblock %}
 
 {% block cmake_flags %}

@@ -12,7 +12,7 @@ lib/bsd/overlay
 {% endblock %}
 
 {% block bld_tool %}
-bin/pkg-config
+bld/pkg/config
 {% endblock %}
 
 {% block patch %}
