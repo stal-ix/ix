@@ -11,5 +11,6 @@ lib/iconv
 {% endblock %}
 
 {% block install %}
-mkdir ${out}/bin && cp target/release/alacritty ${out}/bin/
+mkdir ${out}/bin
+cp target/release/alacritty ${out}/bin/
 {% endblock %}
