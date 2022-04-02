@@ -17,5 +17,5 @@ lib/fontconfig
 {% endblock %}
 
 {% block bld_tool %}
-bin/glib/codegen
+bld/glib/codegen
 {% endblock %}

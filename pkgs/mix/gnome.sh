@@ -1,7 +1,7 @@
 {% extends 'meson.sh' %}
 
 {% block std_box %}
-bin/glib/codegen
+bld/glib/codegen
 bld/scripts/gnome
 {{super()}}
 {% endblock %}

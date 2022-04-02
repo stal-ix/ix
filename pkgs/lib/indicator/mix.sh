@@ -12,7 +12,7 @@ lib/gtk/3
 
 {% block bld_tool %}
 bld/python
-bin/glib/codegen
+bld/glib/codegen
 {% endblock %}
 
 {% block build_flags %}

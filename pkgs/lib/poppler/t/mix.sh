@@ -22,7 +22,7 @@ lib/fontconfig
 
 {% block bld_tool %}
 bin/gperf
-bin/glib/codegen
+bld/glib/codegen
 {% endblock %}
 
 {% block cmake_flags %}

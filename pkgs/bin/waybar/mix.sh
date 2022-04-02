@@ -25,7 +25,7 @@ lib/gtk/layer/shell
 
 {% block bld_tool %}
 bin/scdoc
-bin/glib/codegen
+bld/glib/codegen
 bin/wayland/protocols
 {% endblock %}
 

@@ -10,11 +10,11 @@ lib/c
 {% endblock %}
 
 {% block run_deps %}
-bin/m4
+bld/m4
 {% endblock %}
 
-{% block bld_tool %}
-bin/m4
+{% block std_box %}
+bld/m4
 bin/texinfo
-bin/bison/3/boot
+bld/bootbox
 {% endblock %}

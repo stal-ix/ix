@@ -14,7 +14,7 @@ lib/fribidi
 
 {% block bld_tool %}
 bin/sassc
-bin/glib/codegen
+bld/glib/codegen
 {% endblock %}
 
 {% block meson_flags %}

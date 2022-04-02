@@ -14,7 +14,7 @@ lib/json/c
 
 {% block bld_tool %}
 bld/gettext
-bin/glib/codegen
+bld/glib/codegen
 {% endblock %}
 
 {% block meson_flags %}

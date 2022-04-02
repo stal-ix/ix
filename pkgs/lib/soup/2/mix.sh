@@ -16,7 +16,7 @@ lib/sqlite3
 {% endblock %}
 
 {% block bld_tool %}
-bin/glib/codegen
+bld/glib/codegen
 {% endblock %}
 
 {% block meson_flags %}

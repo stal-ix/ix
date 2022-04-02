@@ -19,7 +19,7 @@ lib/fribidi
 
 {% block bld_tool %}
 bld/bash
-bin/glib/codegen
+bld/glib/codegen
 {% endblock %}
 
 {% block meson_flags %}

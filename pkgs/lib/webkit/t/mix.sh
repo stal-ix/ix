@@ -47,7 +47,7 @@ bld/ruby
 bin/gperf
 bld/python
 bld/gettext
-bin/glib/codegen
+bld/glib/codegen
 bin/wayland/protocols
 {% endblock %}
 

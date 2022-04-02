@@ -37,7 +37,7 @@ lib/double-conversion
 bld/python
 bld/gettext
 bin/ragel/6
-bin/glib/codegen
+bld/glib/codegen
 {% endblock %}
 
 {% block cmake_flags %}

@@ -10,6 +10,7 @@ lib/c
 lib/z
 lib/ffi
 lib/pcre
+lib/intl
 lib/iconv
 {% if darwin %}
 lib/darwin/framework/CoreServices
@@ -17,12 +18,11 @@ lib/darwin/framework/Foundation
 {% endif %}
 {% endblock %}
 
-{% block std_box %}
+{% block bld_tool %}
+bld/meson
 {% if darwin %}
 bin/cctools
 {% endif %}
-bld/meson
-bld/bootbox
 {% endblock %}
 
 {% block cpp_defines %}

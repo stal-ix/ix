@@ -17,7 +17,7 @@ lib/gtk/3
 bld/python
 bld/gettext
 bin/intltool
-bin/glib/codegen
+bld/glib/codegen
 {% endblock %}
 
 {% block configure_flags %}

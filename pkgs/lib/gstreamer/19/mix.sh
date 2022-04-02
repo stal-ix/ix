@@ -31,7 +31,7 @@ bin/orc
 bin/flex
 bld/gettext
 bin/bison/3/8
-bin/glib/codegen
+bld/glib/codegen
 bin/wayland/protocols
 {% endblock %}
 

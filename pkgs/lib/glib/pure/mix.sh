@@ -1,14 +1,8 @@
 {% extends '//lib/glib/t/mix.sh' %}
 
-{% block lib_deps %}
-lib/intl
-{{super()}}
-{% endblock %}
-
 {% block bld_tool %}
-bld/meson
-bin/glib/codegen
 {{super()}}
+bld/glib/codegen
 {% endblock %}
 
 {% block install %}

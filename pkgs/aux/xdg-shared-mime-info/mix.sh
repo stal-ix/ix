@@ -12,5 +12,5 @@ lib/glib/pure
 
 {% block bld_tool %}
 bld/gettext
-bin/glib/codegen
+bld/glib/codegen
 {% endblock %}
