@@ -14,7 +14,6 @@ lib/c++
 lib/mpfr
 lib/intl
 lib/expat
-lib/iconv
 lib/xxhash
 lib/curses
 lib/intel/pt

@@ -8,6 +8,5 @@ f47fe27049510b2249dba7f862ac1b51
 {% block bld_libs %}
 lib/c
 lib/intl
-lib/iconv
 lib/sigsegv
 {% endblock %}

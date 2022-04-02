@@ -8,6 +8,5 @@ https://ftp.gnu.org/gnu/diffutils/diffutils-3.7.tar.xz
 {% block bld_libs %}
 lib/c
 lib/intl
-lib/iconv
 lib/sigsegv
 {% endblock %}

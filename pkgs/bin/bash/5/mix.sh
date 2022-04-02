@@ -3,7 +3,6 @@
 {% block bld_libs %}
 lib/c
 lib/intl
-lib/iconv
 lib/curses
 lib/readline
 {{super()}}

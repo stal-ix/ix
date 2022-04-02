@@ -8,5 +8,4 @@ https://ftp.gnu.org/gnu/which/which-2.21.tar.gz
 {% block bld_libs %}
 lib/c
 lib/intl
-lib/iconv
 {% endblock %}

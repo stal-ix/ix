@@ -11,7 +11,6 @@ lib/lua
 lib/uv/l
 lib/intl
 lib/vterm
-lib/iconv
 lib/termkey
 lib/msgpack/c
 lib/unibilium

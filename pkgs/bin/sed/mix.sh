@@ -8,5 +8,4 @@ https://ftp.gnu.org/gnu/sed/sed-4.8.tar.xz
 {% block bld_libs %}
 lib/c
 lib/intl
-lib/iconv
 {% endblock %}

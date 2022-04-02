@@ -13,7 +13,6 @@ lib/dbus
 lib/intl
 lib/jpeg
 lib/xslt
-lib/iconv
 lib/lcms2
 lib/pango
 lib/cairo

@@ -8,7 +8,6 @@ sha:71de39883c25b6fab44add80635382a10c9bf154515b94729f4a6529ddcc5e54
 {% block bld_libs %}
 lib/c
 lib/intl
-lib/iconv
 lib/sigsegv
 {% endblock %}
 

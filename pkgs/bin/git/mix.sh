@@ -10,7 +10,6 @@ lib/c
 lib/z
 lib/curl
 lib/intl
-lib/iconv
 lib/expat
 lib/pcre/2
 lib/openssl
