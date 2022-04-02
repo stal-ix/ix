@@ -11,20 +11,12 @@ lib/iconv
 lib/unistring
 {% endblock %}
 
-{% block make_ver %}
-1/16/1
-{% endblock %}
-
 {% block c_rename_symbol %}
 error
 {% endblock %}
 
-{% block autoreconf %}
-automake --add-missing
-{% endblock %}
-
 {% block bld_tool %}
-bld/autohell/full
+bld/gettext
 {% endblock %}
 
 {% block env_lib %}
