@@ -1,11 +1,5 @@
 {% extends '//bin/minigzip/mix.sh' %}
 
-{% block std_box %}
-bld/bootbox
-{% endblock %}
-
-{% block install %}
-{{super()}}
-cd ${out}/bin
-ln -s minigzip gzip
+{% block run_deps %}
+bin/minigzip/gzip(std_box=bld/bootbox)
 {% endblock %}
