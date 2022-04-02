@@ -19,10 +19,8 @@ lib/c
 lib/uv
 lib/xz
 lib/c++
-lib/curl
 lib/bzip2
 lib/expat
-lib/archive
 {% endblock %}
 
 {% block cmake_flags %}
