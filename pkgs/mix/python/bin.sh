@@ -4,7 +4,9 @@
 # TODO(pg): inherit conf values into bin
 lib/python/3/10
 bld/make
+{% if linux %}
 bin/upx
+{% endif %}
 {{super()}}
 {% endblock %}
 
