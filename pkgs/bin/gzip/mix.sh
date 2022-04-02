@@ -7,4 +7,5 @@ https://ftp.gnu.org/gnu/gzip/gzip-1.10.tar.xz
 
 {% block bld_libs %}
 lib/c
+lib/intl
 {% endblock %}

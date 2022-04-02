@@ -8,7 +8,6 @@ f6e931e319531b736fadc017f470e68a
 {% block bld_libs %}
 lib/c
 lib/intl
-lib/iconv
 lib/glib/pure
 {% endblock %}
 

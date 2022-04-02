@@ -8,7 +8,6 @@ https://ftp.gnu.org/gnu/patch/patch-2.7.6.tar.xz
 {% block bld_libs %}
 lib/c
 lib/intl
-lib/iconv
 {% endblock %}
 
 {% block std_box %}

@@ -8,7 +8,6 @@ https://mirror.tochlab.net/pub/gnu/gawk/gawk-5.1.0.tar.xz
 {% block bld_libs %}
 lib/c
 lib/intl
-lib/iconv
 lib/sigsegv
 {% endblock %}
 

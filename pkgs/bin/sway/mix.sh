@@ -1,6 +1,8 @@
 {% extends '//bin/sway/t/mix.sh' %}
 
 {% block run_deps %}
+bin/sway/bg
+bin/sway/idle
 bin/sway/tools
 {% endblock %}
 

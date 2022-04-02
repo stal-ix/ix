@@ -7,7 +7,7 @@ eeefe2e6380931a77dfa6d9350b43186
 
 {% block bld_libs %}
 lib/c
-lib/iconv
+lib/intl
 {% endblock %}
 
 {% block patch %}
