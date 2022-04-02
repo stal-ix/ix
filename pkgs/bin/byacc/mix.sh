@@ -5,10 +5,6 @@ https://invisible-mirror.net/archives/byacc/byacc-20211224.tgz
 fbf5249ebd6c930e1d4fe08c9683e367
 {% endblock %}
 
-{% block std_box %}
-bld/bootbox
-{% endblock %}
-
 {% block install %}
 {{super()}}
 cd ${out}/bin

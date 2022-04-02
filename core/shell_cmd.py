@@ -59,15 +59,27 @@ def fetch_url_wget(wget, url, out):
     return subprocess.check_call([wget, '--no-check-certificate', '-O', out, url], shell=False)
 
 
+def fetch_url_curl(curl, url, out):
+    return subprocess.check_call([curl, '-k', '-L', '--output', out, url], shell=False)
+
+
+def iter_meth_1():
+    for p in ['/mix/realm/boot/bin', '/usr/bin']:
+        for n, m in [('wget', fetch_url_wget), ('curl', fetch_url_curl)]:
+            pp = os.path.join(p, n)
+
+            if os.path.isfile(pp):
+                yield functools.partial(m, pp)
+
+    yield fetch_url_impl
+
+
+def iter_meth():
+    while True:
+        yield from iter_meth_1()
+
+
 def fetch_url(url, out):
-    def iter_meth():
-        while True:
-            for w in ['/mix/realm/boot/bin/wget', '/usr/bin/wget']:
-                if os.path.isfile(w):
-                    yield functools.partial(fetch_url_wget, w)
-
-            yield fetch_url_impl
-
     for meth in iter_meth():
         try:
             return meth(url, out)

@@ -14,7 +14,8 @@ lib/boehmgc
 
 {% block unpack %}
 {{super()}}
-mkdir build && cd build
+mkdir build
+cd build
 {% endblock %}
 
 {% block configure_script %}

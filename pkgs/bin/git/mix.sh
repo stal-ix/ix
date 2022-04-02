@@ -16,8 +16,8 @@ lib/openssl
 {% endblock %}
 
 {% block bld_tool %}
+bld/tar
 bld/perl
-bin/cpio
 bld/python
 bld/gettext
 {% endblock %}

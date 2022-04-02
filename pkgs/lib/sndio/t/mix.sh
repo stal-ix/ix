@@ -7,7 +7,9 @@ sha:f81d37189e072cb4804ac98a059d74f963f69e9945eaff3d0d6a2f98d71a6321
 
 {% block lib_deps %}
 lib/c
+{% if linux %}
 lib/bsd
+{% endif %}
 {% endblock %}
 
 {% block build_flags %}
@@ -25,5 +27,10 @@ done
 {% endblock %}
 
 {% block configure %}
-sh ./configure --prefix=${out} --with-libbsd {% block configure_flags %}{% endblock %}
+sh ./configure \
+    --prefix=${out} \
+{% if linux %}
+    --with-libbsd   \
+{% endif %}
+    {% block configure_flags %}{% endblock %}
 {% endblock %}

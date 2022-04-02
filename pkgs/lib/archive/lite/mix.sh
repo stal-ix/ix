@@ -5,5 +5,9 @@ lib/c
 lib/z
 lib/xz
 lib/bzip2
-lib/expat
+{% endblock %}
+
+{% block configure_flags %}
+--without-xml2
+--without-expat
 {% endblock %}
