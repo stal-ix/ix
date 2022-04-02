@@ -13,7 +13,3 @@ lib/readline
 {% block bld_tool %}
 bin/byacc
 {% endblock %}
-
-{% block std_box %}
-bld/bootbox
-{% endblock %}

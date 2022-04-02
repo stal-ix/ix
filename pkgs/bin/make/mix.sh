@@ -11,10 +11,6 @@ lib/intl
 lib/iconv
 {% endblock %}
 
-{% block std_box %}
-bld/bootbox
-{% endblock %}
-
 {% block c_rename_symbol %}
 {% if darwin %}
 glob

@@ -12,10 +12,6 @@ lib/iconv
 lib/glib/pure
 {% endblock %}
 
-{% block std_box %}
-bld/bootbox
-{% endblock %}
-
 {% block configure_flags %}
 --disable-host-tool
 {% endblock %}

@@ -15,10 +15,6 @@ lib/sigsegv
 bin/help2man
 {% endblock %}
 
-{% block std_box %}
-bld/bootbox
-{% endblock %}
-
 {% block configure_flags %}
 --disable-c++
 {% endblock %}
