@@ -24,10 +24,6 @@ bin/auto/make/1/16
 2/71
 {% endblock %}
 
-{% block std_box %}
-bld/bootbox
-{% endblock %}
-
 {% block make_verbose_1 %}
 V=1
 {% endblock %}

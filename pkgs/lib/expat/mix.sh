@@ -9,10 +9,6 @@ sha:122d8ae7a0170b9835cb45b216d856c1f83dd83792f8f0f80c31e98283efbe87
 lib/c
 {% endblock %}
 
-{% block std_box %}
-bld/bootbox
-{% endblock %}
-
 {% block unpack %}
 {{super()}}
 cd expat

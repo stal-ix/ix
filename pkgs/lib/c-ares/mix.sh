@@ -9,10 +9,6 @@ a0ec0dd35fd6c06544333d250e21ab22
 lib/c
 {% endblock %}
 
-{% block std_box %}
-bld/bootbox
-{% endblock %}
-
 {% block cmake_flags %}
 CARES_STATIC=ON
 CARES_SHARED=OFF

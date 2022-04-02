@@ -9,10 +9,6 @@ https://github.com/JuliaStrings/utf8proc/archive/refs/tags/v2.7.0.tar.gz
 lib/c
 {% endblock %}
 
-{% block std_box %}
-bld/bootbox
-{% endblock %}
-
 {% block install %}
 {{super()}}
 sed -e 's|.*exec_prefix.*||' -i ${out}/lib/pkgconfig/libutf8proc.pc
