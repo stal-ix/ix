@@ -15,10 +15,6 @@ lib/c++
 lib/linux
 {% endblock %}
 
-{% block std_box %}
-bld/bootbox
-{% endblock %}
-
 {% block configure_flags %}
 --with-nsssd-socket=/var/run/nsssd/nsssd.sock
 {% endblock %}
