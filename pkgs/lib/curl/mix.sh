@@ -26,6 +26,7 @@ aux/ca-bundle
 
 {% block bld_tool %}
 bin/groff
+bld/autohell/full
 {% endblock %}
 
 {% block conf_ver %}

@@ -8,3 +8,7 @@ a3433f23583167081bf4acdd5b01b34f
 {% block lib_deps %}
 lib/c
 {% endblock %}
+
+{% block bld_tool %}
+bld/autohell/full
+{% endblock %}

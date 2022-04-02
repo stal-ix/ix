@@ -1,4 +1,4 @@
-{% extends '//mix/autorehell.sh' %}
+{% extends '//mix/autohell.sh' %}
 
 {% block fetch %}
 http://xmlsoft.org/sources/libxml2-2.9.12.tar.gz

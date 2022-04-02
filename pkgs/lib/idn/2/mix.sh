@@ -23,6 +23,10 @@ error
 automake --add-missing
 {% endblock %}
 
+{% block bld_tool %}
+bld/autohell/full
+{% endblock %}
+
 {% block env_lib %}
 export COFLAGS="--with-libidn2=${out} \${COFLAGS}"
 {% endblock %}

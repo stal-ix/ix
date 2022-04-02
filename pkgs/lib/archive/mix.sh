@@ -17,6 +17,10 @@ lib/iconv
 lib/expat
 {% endblock %}
 
+{% block bld_tool %}
+bld/autohell/full
+{% endblock %}
+
 {% block configure_flags %}
 --without-xml2
 {% endblock %}

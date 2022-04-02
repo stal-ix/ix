@@ -15,9 +15,7 @@ lib/darwin/framework/SystemConfiguration
 
 {% block std_box %}
 bld/bootbox
-bld/autohell
-bin/auto/conf/2/69
-bin/auto/make/1/16
+bld/autohell/full
 {% endblock %}
 
 {% block extra_modules %}
