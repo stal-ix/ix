@@ -8,7 +8,7 @@ https://www.cpan.org/src/5.0/perl-5.34.0.tar.gz
 {% block bld_libs %}
 lib/c
 lib/z
-lib/gdbm
+#lib/gdbm
 lib/iconv
 {% endblock %}
 
@@ -26,14 +26,12 @@ cat << EOF > install_name_tool
 #!$(which sh)
 EOF
 
-chmod +x install_name_tool
-
 cat << EOF > sw_vers
 #!$(which sh)
 echo "ProductVersion: 10.12"
 EOF
 
-chmod +x sw_vers
+chmod +x sw_vers install_name_tool
 {% endblock %}
 
 {% block patch %}
@@ -55,17 +53,17 @@ bash Configure -des    \
     -Dlibc=c           \
     -Dcc=clang
 
-(
-    cat config.h | grep -v 'define SH_PATH'
-
-    cat << EOF
+cat config.h - << EOF > _
+#undef SH_PATH
 #define SH_PATH "$(which sh)"
 EOF
-) > _ && mv _ config.h
+
+mv _ config.h
 {% endblock %}
 
 {% block postinstall %}
 find ${out} | grep Config_heavy.pl | while read l; do
-    cat ${l} | sed -e 's|/.*build.*tools/||' | grep -v 'startsh=' > _ && mv _ ${l}
+    cat ${l} | sed -e 's|/.*build.*tools/||' | grep -v 'startsh=' > _
+    mv _ ${l}
 done
 {% endblock %}
