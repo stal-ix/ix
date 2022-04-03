@@ -12,6 +12,7 @@ lib/jpeg
 lib/curl
 lib/gumbo
 lib/mu/js
+lib/jbig2dec
 lib/freetype
 lib/harfbuzz
 lib/jpeg/open
@@ -36,8 +37,8 @@ USE_SYSTEM_OPENJPEG=yes
 USE_SYSTEM_ZLIB=yes
 USE_SYSTEM_GLUT=yes
 USE_SYSTEM_CURL=yes
+USE_SYSTEM_JBIG2DEC=yes
 
-USE_SYSTEM_JBIG2DEC=no
 USE_SYSTEM_JPEGXR=no
 USE_SYSTEM_LCMS2=no
 
