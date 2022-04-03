@@ -14,11 +14,12 @@ lib/bsd/overlay
 {% endif %}
 {% endblock %}
 
+{% block bld_tool %}
+bld/autohell/full
+{% endblock %}
+
 {% block std_box %}
 bld/bootbox
-bld/autohell
-bin/auto/conf/2/69
-bin/auto/make/1/16
 {% endblock %}
 
 {% block unpack %}
