@@ -10,6 +10,7 @@ lib/c
 lib/z
 lib/jpeg
 lib/curl
+lib/lcms2
 lib/gumbo
 lib/mu/js
 lib/jbig2dec
@@ -28,22 +29,7 @@ shut_up
 {% endblock %}
 
 {% block make_flags %}
-USE_SYSTEM_FREETYPE=yes
-USE_SYSTEM_GUMBO=yes
-USE_SYSTEM_HARFBUZZ=yes
-USE_SYSTEM_LIBJPEG=yes
-USE_SYSTEM_MUJS=yes
-USE_SYSTEM_OPENJPEG=yes
-USE_SYSTEM_ZLIB=yes
-USE_SYSTEM_GLUT=yes
-USE_SYSTEM_CURL=yes
-USE_SYSTEM_JBIG2DEC=yes
-
-USE_SYSTEM_JPEGXR=no
-USE_SYSTEM_LCMS2=no
-
-USE_SYSTEM_LEPTONICA=no
-USE_SYSTEM_TESSERACT=no
+USE_SYSTEM_LIBS=yes
 {% endblock %}
 
 {% block setup %}
