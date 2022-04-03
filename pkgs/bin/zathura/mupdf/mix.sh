@@ -8,8 +8,8 @@ sha:c205b4cf500d8cfe9eceaade54e5fa8d4cd1298cd85f17a6f50c647259116217
 {% block lib_deps %}
 lib/c
 lib/glib
-lib/mupdf
 lib/cairo
+lib/mu/pdf
 lib/girara
 {% endblock %}
 

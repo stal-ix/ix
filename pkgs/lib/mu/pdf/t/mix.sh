@@ -10,6 +10,8 @@ lib/c
 lib/z
 lib/jpeg
 lib/curl
+lib/gumbo
+lib/mu/js
 lib/freetype
 lib/harfbuzz
 lib/jpeg/open
@@ -26,17 +28,19 @@ shut_up
 
 {% block make_flags %}
 USE_SYSTEM_FREETYPE=yes
-USE_SYSTEM_GUMBO=no
+USE_SYSTEM_GUMBO=yes
 USE_SYSTEM_HARFBUZZ=yes
-USE_SYSTEM_JBIG2DEC=no
-USE_SYSTEM_JPEGXR=no
-USE_SYSTEM_LCMS2=no
 USE_SYSTEM_LIBJPEG=yes
-USE_SYSTEM_MUJS=no
+USE_SYSTEM_MUJS=yes
 USE_SYSTEM_OPENJPEG=yes
 USE_SYSTEM_ZLIB=yes
 USE_SYSTEM_GLUT=yes
 USE_SYSTEM_CURL=yes
+
+USE_SYSTEM_JBIG2DEC=no
+USE_SYSTEM_JPEGXR=no
+USE_SYSTEM_LCMS2=no
+
 USE_SYSTEM_LEPTONICA=no
 USE_SYSTEM_TESSERACT=no
 {% endblock %}

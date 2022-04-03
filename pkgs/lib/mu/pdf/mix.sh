@@ -1,4 +1,4 @@
-{% extends '//lib/mupdf/t/mix.sh' %}
+{% extends '//lib/mu/pdf/t/mix.sh' %}
 
 {% block make_flags %}
 {{super()}}
