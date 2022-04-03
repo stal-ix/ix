@@ -12,7 +12,7 @@ lib/psl
 lib/glib
 lib/brotli
 lib/sqlite3
-lib/nghttp2
+lib/ng/http/2
 {% endblock %}
 
 {% block bld_libs %}

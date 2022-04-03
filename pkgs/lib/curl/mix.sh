@@ -13,7 +13,7 @@ lib/ssh/2
 lib/idn/2
 lib/brotli
 lib/c-ares
-lib/nghttp2
+lib/ng/http/2
 lib/{{curlssl or 'openssl'}}
 
 {% if darwin %}

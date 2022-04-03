@@ -17,7 +17,7 @@ lib/idn/2
 lib/iconv
 lib/brotli
 lib/gnutls
-lib/nghttp2
+lib/ng/http/2
 {% endblock %}
 
 {% block bld_tool %}
