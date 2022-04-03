@@ -1,8 +1,8 @@
 {% extends '//mix/autorehell.sh' %}
 
 {% block fetch %}
-https://github.com/curl/curl/archive/refs/tags/curl-7_81_0.tar.gz
-sha:389aadc5ffb0e801683a62ba6d4eb6fc61c808276a915189cd2470825046ddae
+https://github.com/curl/curl/archive/refs/tags/curl-7_82_0.tar.gz
+sha:a6a4485622871c2111ab9345e813935a230bd564eabe768be3950b39a66b44b3
 {% endblock %}
 
 {% block lib_deps %}
@@ -15,6 +15,7 @@ lib/brotli
 lib/c-ares
 lib/nghttp2
 lib/{{curlssl or 'openssl'}}
+
 {% if darwin %}
 lib/darwin/framework/SystemConfiguration
 {% endif %}
@@ -34,7 +35,9 @@ bld/autohell/full
 {% endblock %}
 
 {% block configure_flags %}
+{% if linux %}
 --with-random="/dev/urandom"
+{% endif %}
 --with-ca-bundle="${CA_BUNDLE}"
 --enable-manual
 {% endblock %}
