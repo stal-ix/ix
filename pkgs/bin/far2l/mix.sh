@@ -13,7 +13,7 @@ lib/pcre
 lib/magic
 lib/spdlog
 lib/archive
-lib/xerces-c
+lib/xerces/c
 lib/uchardet
 lib/execinfo
 {% if linux %}
