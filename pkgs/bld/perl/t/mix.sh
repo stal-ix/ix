@@ -63,7 +63,6 @@ mv _ config.h
 
 {% block postinstall %}
 find ${out} | grep Config_heavy.pl | while read l; do
-    cat ${l} | sed -e 's|/.*build.*tools/||' | grep -v 'startsh=' > _
-    mv _ ${l}
+    sed -e 's|/.*build.*tools/||' -e 's|.*startsh=.*||' -i ${l}
 done
 {% endblock %}
