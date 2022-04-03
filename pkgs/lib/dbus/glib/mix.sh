@@ -23,3 +23,7 @@ shut_up
 {% block setup %}
 export GLIB_GENMARSHAL=$(which glib-genmarshal)
 {% endblock %}
+
+{% block patch %}
+>dbus/examples/Makefile.am
+{% endblock %}
