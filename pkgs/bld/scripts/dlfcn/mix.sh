@@ -15,10 +15,6 @@ base64 -d << EOF > ${out}/bin/gen_dl_stubs_1.py
 {% include 'gen_dl_stubs_1.py/base64' %}
 EOF
 
-base64 -d << EOF > ${out}/bin/gen_dl_stubs_2.py
-{% include 'gen_dl_stubs_2.py/base64' %}
-EOF
-
 base64 -d << EOF > ${out}/bin/gen_dl_stubs_3.py
 {% include 'gen_dl_stubs_3.py/base64' %}
 EOF
