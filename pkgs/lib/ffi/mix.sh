@@ -17,13 +17,7 @@ lib/linux
 
 {% block bld_tool %}
 bin/texinfo
-bld/autohell
-bin/auto/conf/2/69
-bin/auto/make/1/16
-{% endblock %}
-
-{% block std_box %}
-bld/bootbox
+bld/autohell/full
 {% endblock %}
 
 {% block env_lib %}
