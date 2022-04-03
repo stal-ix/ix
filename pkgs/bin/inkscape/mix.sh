@@ -29,7 +29,7 @@ lib/freetype
 lib/dbus/glib
 lib/googletest
 lib/fontconfig
-lib/double-conversion
+lib/double/conversion
 {% endblock %}
 
 {% block bld_tool %}
