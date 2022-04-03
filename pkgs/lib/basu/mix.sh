@@ -12,3 +12,7 @@ lib/c
 {% block bld_tool %}
 bin/gperf
 {% endblock %}
+
+{% block c_rename_symbol %}
+parse_boolean
+{% endblock %}
