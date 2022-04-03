@@ -18,10 +18,6 @@ ZLIB_COMPAT=ON
 -DCMAKE_INSTALL_PREFIX="${out}"
 {% endblock %}
 
-{% block std_box %}
-bld/bootbox
-{% endblock %}
-
 {% block install %}
 {{super()}}
 sed -e 's|Z_SOLO|_Z_SOLO|g' -i ${out}/include/zlib.h

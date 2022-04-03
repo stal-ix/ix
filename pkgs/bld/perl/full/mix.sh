@@ -1,4 +1,4 @@
-{% extends '//bld/perl/mix.sh' %}
+{% extends '//bin/perl/mix.sh' %}
 
 {% block fetch %}
 {{super()}}
@@ -22,7 +22,6 @@ cd ..
 
 {% block configure %}
 {{super()}}
-
 cat << EOF >> config.sh
 export static_ext="\${static_ext} XML/Parser/Expat"
 EOF

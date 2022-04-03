@@ -1,23 +1,5 @@
-{% extends '//bld/perl/t/mix.sh' %}
+{% extends '//mix/hub.sh' %}
 
-{% block std_box %}
-bld/bootbox
-{% endblock %}
-
-{% block bld_tool %}
-bld/perl/boot
-{{super()}}
-{% endblock %}
-
-{% block build %}
-make -j ${make_thrs} miniperl
-
-cat << EOF > miniperl
-#!$(which sh)
-perl -I${PWD} "\$@"
-EOF
-
-chmod +x miniperl
-
-{{super()}}
+{% block run_deps %}
+bin/perl/host(std_box=bld/bootbox)
 {% endblock %}

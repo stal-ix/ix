@@ -8,7 +8,7 @@ https://www.cpan.org/src/5.0/perl-5.34.0.tar.gz
 {% block bld_libs %}
 lib/c
 lib/z
-#lib/gdbm
+lib/gdbm
 lib/iconv
 {% endblock %}
 
