@@ -1,8 +1,8 @@
 {% extends '//mix/autorehell.sh' %}
 
 {% block fetch %}
-https://storage.yandexcloud.net/mix-cache/dropbear-2020.81.tar.bz2
-a07438a6159a24c61f98f1bce2d479c0
+https://matt.ucc.asn.au/dropbear/releases/dropbear-2022.82.tar.bz2
+sha:3a038d2bbc02bf28bbdd20c012091f741a3ec5cbe460691811d714876aad75d1
 {% endblock %}
 
 {% block bld_libs %}
