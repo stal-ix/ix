@@ -1,7 +1,7 @@
 {% extends '//bin/ly/mix.sh' %}
 
 {% block bld_libs %}
-lib/pam/unix/dl
+lib/pam/unix
 {{super()}}
 {% endblock %}
 
