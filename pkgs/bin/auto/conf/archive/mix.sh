@@ -6,7 +6,7 @@ http://mirror.tochlab.net/pub/gnu/autoconf-archive/autoconf-archive-2021.02.19.t
 {% endblock %}
 
 {% block bld_tool %}
-bin/texinfo
+bld/texinfo
 {% endblock %}
 
 {% block std_box %}

@@ -21,7 +21,7 @@ lib/ng/http/2
 {% endblock %}
 
 {% block bld_tool %}
-bin/texinfo
+bld/texinfo
 {% endblock %}
 
 {% block configure_flags %}

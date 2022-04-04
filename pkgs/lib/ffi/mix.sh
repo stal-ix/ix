@@ -16,7 +16,7 @@ lib/linux
 {% endblock %}
 
 {% block bld_tool %}
-bin/texinfo
+bld/texinfo
 bld/autohell/full
 {% endblock %}
 

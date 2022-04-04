@@ -13,6 +13,6 @@ lib/gnutls
 {% endblock %}
 
 {% block bld_tool %}
-bin/texinfo
+bld/texinfo
 bld/gettext
 {% endblock %}

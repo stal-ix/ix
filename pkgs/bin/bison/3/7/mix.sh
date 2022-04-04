@@ -19,7 +19,7 @@ bin/m4
 bin/flex
 bld/perl
 bin/help2man
-bin/texinfo
+bld/texinfo
 {% block bison_bootstrap %}
 bin/bison/3/boot
 {% endblock %}

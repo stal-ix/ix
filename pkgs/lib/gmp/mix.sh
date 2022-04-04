@@ -16,7 +16,7 @@ lib/c
 {% block bld_tool %}
 bin/m4
 bld/perl
-bin/texinfo
+bld/texinfo
 {% endblock %}
 
 {% block env_lib %}

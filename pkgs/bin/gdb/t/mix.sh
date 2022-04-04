@@ -26,7 +26,7 @@ lib/linux
 {% block bld_tool %}
 bin/flex
 bin/byacc
-bin/texinfo
+bld/texinfo
 {% endblock %}
 
 {% block setup %}

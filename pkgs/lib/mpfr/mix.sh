@@ -11,7 +11,7 @@ lib/gmp
 {% endblock %}
 
 {% block bld_tool %}
-bin/texinfo
+bld/texinfo
 bin/auto/conf/archive
 {% endblock %}
 

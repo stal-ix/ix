@@ -15,7 +15,7 @@ lib/c
 {% endblock %}
 
 {% block bld_tool %}
-bin/texinfo
+bld/texinfo
 {% endblock %}
 
 {% block c_rename_symbol %}

@@ -7,13 +7,10 @@ a91b404e30561a5df803e6eb3a53be71
 
 {% block bld_libs %}
 lib/c
+lib/intl
 lib/curses
 {% endblock %}
 
 {% block bld_tool %}
 bld/perl
-{% endblock %}
-
-{% block std_box %}
-bld/bootbox
 {% endblock %}

@@ -16,7 +16,7 @@ lib/curses
 {% block bld_tool %}
 bin/gzip
 bld/gettext
-bin/texinfo
+bld/texinfo
 {% endblock %}
 
 {% block configure_flags %}

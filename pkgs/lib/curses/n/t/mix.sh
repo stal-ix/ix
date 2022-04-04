@@ -14,10 +14,6 @@ bld/gzip
 lib/c
 {% endblock %}
 
-{% block std_box %}
-bld/bootbox
-{% endblock %}
-
 {% block configure_flags %}
 --without-shared
 --without-debug

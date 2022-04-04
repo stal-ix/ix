@@ -15,6 +15,6 @@ bld/m4
 
 {% block std_box %}
 bld/m4
-bin/texinfo
+bld/texinfo
 bld/bootbox
 {% endblock %}

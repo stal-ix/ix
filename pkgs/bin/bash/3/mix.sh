@@ -15,7 +15,7 @@ lib/readline
 
 {% block bld_tool %}
 bin/byacc
-bin/texinfo
+bld/texinfo
 {% endblock %}
 
 {% block patch %}
