@@ -59,31 +59,14 @@ export TMPDIR=${PWD}/tmp
 )
 
 {% block epilogue %}
-{% block cleanup_pkg %}
 if command -v find; then
-    (
-        find ${out} -name '*.la'
-        find ${out} -name '*.so'
-        find ${out} -name '*.so.*'
-        find ${out} -xtype l
-    ) | sort | uniq | while read l; do
-        rm ${l}
-    done
-
-{% block purge_empty_dirs %}
-    find ${out} -type d -empty -delete || true
-    find ${out} -type d -empty -delete || true
-    #find . -depth -type d -exec rmdir {} +
-    #find . -depth -type d -exec rmdir {} +
-{% endblock %}
-
     find ${out} | sort -r | while read l; do
-        chmod a-w "${l}"
+        chmod a-w "${l}" || rm "${l}"
     done
 
     chmod +w ${out}
 fi
-{% endblock %}
+
 rm -rf ${tmp}
 {% endblock %}
 {% endblock %}

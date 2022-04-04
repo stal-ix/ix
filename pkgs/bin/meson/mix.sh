@@ -27,5 +27,5 @@ cp -R ../meson* ${out}/bin
 {% block strip_pc %}
 {% endblock %}
 
-{% block cleanup_pkg %}
+{% block purge_dynlib %}
 {% endblock %}

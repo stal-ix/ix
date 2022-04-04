@@ -28,6 +28,5 @@ EOF
 ln -s /var/run/resolvconf/resolv.conf resolv.conf
 {% endblock %}
 
-{% block cleanup_pkg %}
-: broken links here
+{% block purge_broken_links %}
 {% endblock %}

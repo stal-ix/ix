@@ -48,7 +48,3 @@ EOF
 
 chmod +x run
 {% endblock %}
-
-{% block cleanup_pkg %}
-: fix ro symlink
-{% endblock %}

@@ -17,4 +17,5 @@ relocate "${VULKAN_LOADER_DATA}"
 {% block install %}
 {{super()}}
 mkdir -p ${out}/include
+>${out}/include/keep
 {% endblock %}

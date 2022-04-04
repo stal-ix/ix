@@ -1,11 +1,12 @@
+# empty folders will be removed later
+mkdir -p ${out}/share ${out}/doc ${out}/lib ${out}/include ${out}/bin
+
 if test -d ${out}/man; then
-    mkdir -p ${out}/share
     mv ${out}/man ${out}/share/
 fi
 
-for x in man doc info; do
+for x in man doc info gtk-doc; do
     if test -d ${out}/share/${x}; then
-        mkdir -p ${out}/doc
         mv ${out}/share/${x} ${out}/doc/
     fi
 done
@@ -19,9 +20,7 @@ if test -f ${out}/bin/*-config; then
 fi
 
 # TODO(pg): fine-grained cherry-pick
-if test -d ${out}/share; then
-    mv ${out}/share ${out}/lib/aux
-fi
+mv ${out}/share ${out}/lib/aux
 
 rm -rf ${out}/bin ${out}/libexec ${out}/etc
 {% elif bin %}
@@ -59,4 +58,21 @@ find ${out}/ -type f | grep '\.pc$' | while read l; do
 {% endif %}
     fi
 done
+{% endblock %}
+
+{% block purge_dynlib %}
+(find ${out} -name '*.la'; find ${out} -name '*.so'; find ${out} -name '*.so.*') | sort | uniq | while read l; do
+    rm ${l}
+done
+{% endblock %}
+
+{% block purge_broken_links %}
+find ${out} -xtype l | sort | uniq | while read l; do
+    rm ${l}
+done
+{% endblock %}
+
+{% block purge_empty_dirs %}
+# fast GNU or slow POSIX
+(find ${out} -type d -empty -delete) || (find ${out} -depth -type d -exec rmdir {} +) || true
 {% endblock %}

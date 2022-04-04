@@ -27,11 +27,9 @@ sed -e 's|checkpubkey.*== DROPBEAR_FAILURE|0|' \
 
 {% block install %}
 {{super()}}
-
 cd ${out}
-
 mv bin old
 mkdir bin
 mv old/dropbear bin/sud_server
-rm -r old
+rm -r old share
 {% endblock %}
