@@ -19,14 +19,14 @@ lib/openssl
 {% endblock %}
 
 {% block bld_tool %}
-tool/curl
-bld/bash
 bin/git
-bin/tar
-tool/bin/time
-bld/python
+bld/tar
+bin/curl
+bld/bash
+bin/time
 bld/make
 bld/cmake
+bld/python
 {% endblock %}
 
 {% block unpack %}

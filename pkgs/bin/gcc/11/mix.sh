@@ -20,11 +20,11 @@ lib/mpfr
 {% set f %}{{for_target or target.gnu.three}}{% endset %}
 
 {% block bld_tool %}
-bin/tar
+bld/tar
 bin/flex
+bld/gzip
 bin/texinfo
 bin/bison/3/8
-bin/gzip
 bin/binutils(for_target={{t}},bin_prefix={{t}})
 bin/binutils(for_target={{f}},bin_prefix={{f}})
 {% endblock %}

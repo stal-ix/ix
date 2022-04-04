@@ -14,7 +14,7 @@ lib/openssl
 {% endblock %}
 
 {% block bld_tool %}
-bin/tar
+bld/tar
 bin/flex
 bld/python
 bin/bison/3/6

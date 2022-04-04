@@ -6,7 +6,7 @@ f3c06704e536dcca1814b16dbcdc4a36
 {% endblock %}
 
 {% block bld_tool %}
-bin/tar
+bld/tar
 bin/go/1/4
 bld/python
 bld/perl
