@@ -111,3 +111,6 @@ export TARGET_PYTHONHOME="${out}"
 export CPPFLAGS="-I$(echo ${out}/include/python*) \${CPPFLAGS}"
 {% endif %}
 {% endblock %}
+
+{% block purge_empty_dirs %}
+{% endblock %}

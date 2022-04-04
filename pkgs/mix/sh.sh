@@ -70,10 +70,12 @@ if command -v find; then
         rm ${l}
     done
 
+{% block purge_empty_dirs %}
     find ${out} -type d -empty -delete || true
     find ${out} -type d -empty -delete || true
     #find . -depth -type d -exec rmdir {} +
     #find . -depth -type d -exec rmdir {} +
+{% endblock %}
 
     find ${out} | sort -r | while read l; do
         chmod a-w "${l}"
