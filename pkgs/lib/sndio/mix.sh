@@ -5,6 +5,6 @@
 {% block install %}
 {{super()}}
 cd ${out}/lib
-cp -L libsndio.so libsndio.a
+cp libsndio.so libsndio.a
 rm *.so*
 {% endblock %}

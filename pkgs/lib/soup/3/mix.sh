@@ -15,12 +15,6 @@ lib/sqlite3
 lib/ng/http/2
 {% endblock %}
 
-{% block bld_libs %}
-{% if bin %}
-lib/glib/networking
-{% endif %}
-{% endblock %}
-
 {% block bld_tool %}
 bld/glib/codegen
 {% endblock %}
