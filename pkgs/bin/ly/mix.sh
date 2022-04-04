@@ -30,6 +30,14 @@ lib/pam
 lib/linux
 {% endblock %}
 
+{% block setup_tools %}
+cat << EOF > git
+#!$(which sh)
+EOF
+
+chmod +x *
+{% endblock %}
+
 {% block patch %}
 find . -type f | while read l; do
     sed -e 's|-lxcb||' -i ${l}
