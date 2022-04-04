@@ -24,5 +24,5 @@ bin/wayland/protocols
 {% block meson_flags %}
 enable-cairo=enabled
 png-backend=libpng
-svg-backend=none
+svg-backend=nanosvg
 {% endblock %}
