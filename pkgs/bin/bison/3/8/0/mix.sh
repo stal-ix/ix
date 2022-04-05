@@ -4,6 +4,7 @@
 bin/bison/3/7
 {% endblock %}
 
-{% block bison_patch %}
+{% block patch %}
+{{super()}}
 sed -e 's|%header|%defines|' -i src/parse-gram.y
 {% endblock %}

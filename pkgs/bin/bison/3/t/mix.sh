@@ -22,18 +22,12 @@ error_print_progname
 
 {% block configure %}
 {{super()}}
-
-{% block bison_postconf %}
 rm tests/bison
 ln -s $(which bison) tests/
-{% endblock %}
 {% endblock %}
 
 {% block patch %}
 rm src/parse-gram.c src/parse-gram.h
-
-{% block bison_patch %}
-{% endblock %}
 {% endblock %}
 
 {% block bld_libs %}
