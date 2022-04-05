@@ -1,4 +1,4 @@
-{% extends '//boot/9/bison/template.sh' %}
+{% extends 'template.sh' %}
 
 {% block fetch %}
 https://ftp.gnu.org/gnu/bison/bison-3.5.1.tar.xz
