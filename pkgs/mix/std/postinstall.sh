@@ -19,6 +19,10 @@ if test -f ${out}/bin/*-config; then
     mv ${out}/bin/*-config ${out}/lib/bin/
 fi
 
+if test -d ${out}/share/cmake; then
+    mv ${out}/share/cmake ${out}/lib/
+fi
+
 # TODO(pg): fine-grained cherry-pick
 mv ${out}/share ${out}/lib/aux
 
