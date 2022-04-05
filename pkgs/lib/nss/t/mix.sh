@@ -30,7 +30,7 @@ wrap_cc
 bin/gyp
 bld/perl
 bld/bash
-bin/ninja
+bld/ninja
 bld/python/2
 bin/binutils(for_target={{target.gnu.three}})
 {% endblock %}

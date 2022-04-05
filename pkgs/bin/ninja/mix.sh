@@ -10,7 +10,6 @@ lib/c
 lib/c++
 {% endblock %}
 
-{% block std_box %}
+{% block bld_tool %}
 bin/re2c
-bld/bootbox
 {% endblock %}

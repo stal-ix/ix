@@ -1,7 +1,7 @@
 {% extends 'c_std.sh' %}
 
 {% block std_box %}
-bin/ninja
+bld/ninja
 {{super()}}
 {% endblock %}
 
