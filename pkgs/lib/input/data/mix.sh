@@ -8,3 +8,8 @@ export INPUT_DATA="${out}"
 debug-gui=false
 {{super()}}
 {% endblock %}
+
+{% block install %}
+{{super()}}
+rm -rf ${out}/aux
+{% endblock %}
