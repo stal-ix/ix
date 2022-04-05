@@ -1,7 +1,7 @@
 {% extends '//bin/bison/3/8/mix.sh' %}
 
 {% block bison_bootstrap %}
-bin/bison/3/7
+bld/bison
 {% endblock %}
 
 {% block patch %}
