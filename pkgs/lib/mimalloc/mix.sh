@@ -9,10 +9,6 @@ a06e57e9ae10a346ab8a1097c0838fef
 lib/c++/headers
 {% endblock %}
 
-{% block std_box %}
-bld/bootbox
-{% endblock %}
-
 {% block cmake_flags %}
 MI_USE_CXX=ON
 MI_OVERRIDE=ON

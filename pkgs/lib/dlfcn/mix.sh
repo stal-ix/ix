@@ -9,10 +9,6 @@ sha:a868469f93379c5b89c7e8906f5f896f0b80bbc55032238954f0b38a9a55206d
 lib/c++
 {% endblock %}
 
-{% block std_box %}
-bld/bootbox
-{% endblock %}
-
 {% block install %}
 {{super()}}
 mv ${out}/lib/libdl.a ${out}/lib/libdlstub.a

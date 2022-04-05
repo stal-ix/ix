@@ -8,10 +8,6 @@
 lib/c/naked
 {% endblock %}
 
-{% block std_box %}
-bld/bootbox
-{% endblock %}
-
 {% block unpack %}
 {{super()}}
 cd compiler-rt

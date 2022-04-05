@@ -1,9 +1,5 @@
 {% extends '//lib/musl/t/mix.sh' %}
 
-{% block std_box %}
-bld/bootbox
-{% endblock %}
-
 {% block cpp_defines %}
 __libc_realloc=realloc
 __libc_free=free

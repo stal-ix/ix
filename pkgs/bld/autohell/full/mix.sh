@@ -1,7 +1,9 @@
 {% extends '//mix/hub.sh' %}
 
 {% block run_deps %}
-bld/autohell
-bin/auto/conf/2/69
-bin/auto/make/1/16
+bld/m4
+bld/perl
+bin/libtool
+bin/auto/conf/{{conf_ver or '2/69'}}
+bin/auto/make/{{make_ver or '1/16'}}
 {% endblock %}

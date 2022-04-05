@@ -11,7 +11,7 @@ lib/bzip2
 {% endblock %}
 
 {% block bld_tool %}
-bld/autohell/full
+bld/autohell
 {% endblock %}
 
 {% block configure_flags %}

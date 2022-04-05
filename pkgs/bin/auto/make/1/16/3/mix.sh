@@ -6,11 +6,7 @@ c27f608a4e1f302ec7ce42f1251c184e
 {% endblock %}
 
 {% block bld_tool %}
-bin/m4
+bld/m4
 bld/perl
 bin/auto/conf/2/71
-{% endblock %}
-
-{% block std_box %}
-bld/bootbox
 {% endblock %}

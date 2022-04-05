@@ -14,12 +14,6 @@ lib/iconv
 sh autogen.sh --skip-gnulib
 {% endblock %}
 
-{% block bld_tool %}
-bld/autohell
-bin/auto/conf/2/71
-bin/auto/make/1/16
-{% endblock %}
-
 {% block conf_ver %}
 2/71
 {% endblock %}

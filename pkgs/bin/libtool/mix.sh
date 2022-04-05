@@ -9,10 +9,6 @@ addf44b646ddb4e3919805aa88fa7c5e
 bld/m4
 {% endblock %}
 
-{% block std_box %}
-bld/bootbox
-{% endblock %}
-
 {% block build_flags %}
 shut_up
 {% endblock %}

@@ -15,11 +15,11 @@ lib/intl
 {% endblock %}
 
 {% block bld_tool %}
-bin/m4
+bld/m4
 bin/flex
 bld/perl
-bin/help2man
 bld/texinfo
+bld/help2man
 {% block bison_bootstrap %}
 bin/bison/3/boot
 {% endblock %}

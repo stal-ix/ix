@@ -12,7 +12,7 @@ lib/sigsegv
 {% endblock %}
 
 {% block bld_tool %}
-bin/help2man
+bld/help2man
 {% endblock %}
 
 {% block configure_flags %}

@@ -14,10 +14,6 @@ lib/linux
 {% endif %}
 {% endblock %}
 
-{% block std_box %}
-bld/bootbox
-{% endblock %}
-
 {% block cmake_flags %}
 {{super()}}
 

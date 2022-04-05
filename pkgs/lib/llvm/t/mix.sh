@@ -10,6 +10,11 @@ export LDFLAGS="-Wl,-w ${LDFLAGS}"
 {% endif %}
 {% endblock %}
 
+{% block std_box %}
+bld/python
+{{super()}}
+{% endblock %}
+
 {% block cmake_flags %}
 # no dylib
 LLVM_BUILD_LLVM_DYLIB=OFF

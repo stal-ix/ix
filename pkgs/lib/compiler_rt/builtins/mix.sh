@@ -13,10 +13,6 @@ COMPILER_RT_CAN_EXECUTE_TESTS=OFF
 COMPILER_RT_EXTERNALIZE_DEBUGINFO=OFF
 {% endblock %}
 
-{% block std_box %}
-bld/bootbox
-{% endblock %}
-
 {% block install %}
 {{super()}}
 cd ${out}/lib

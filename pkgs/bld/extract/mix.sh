@@ -1,7 +1,7 @@
 {% extends '//mix/proxy.sh' %}
 
 {% block run_deps %}
-bin/pv
+bin/pv(std_box=bld/bootbox)
 bld/tar
 {% endblock %}
 

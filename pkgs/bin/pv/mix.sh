@@ -11,10 +11,6 @@ bin/cctools
 {% endif %}
 {% endblock %}
 
-{% block std_box %}
-bld/bootbox
-{% endblock %}
-
 {% block make_flags %}
 {% if linux %}
 LD=ld.lld

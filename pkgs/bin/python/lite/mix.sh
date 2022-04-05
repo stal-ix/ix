@@ -14,7 +14,7 @@ lib/darwin/framework/SystemConfiguration
 {% endblock %}
 
 {% block bld_tool %}
-bld/autohell/full
+bld/autohell
 {{super()}}
 {% endblock %}
 
