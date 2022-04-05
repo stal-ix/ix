@@ -30,3 +30,6 @@ ln -s /var/run/resolvconf/resolv.conf resolv.conf
 
 {% block purge_broken_links %}
 {% endblock %}
+
+{% block chmod_ro %}
+{% endblock %}

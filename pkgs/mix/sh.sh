@@ -59,6 +59,7 @@ export TMPDIR=${PWD}/tmp
 )
 
 {% block epilogue %}
+{% block chmod_ro %}
 if command -v find; then
     find ${out} | sort -r | while read l; do
         chmod a-w "${l}" || rm "${l}"
@@ -66,6 +67,7 @@ if command -v find; then
 
     chmod +w ${out}
 fi
+{% endblock %}
 
 rm -rf ${tmp}
 {% endblock %}

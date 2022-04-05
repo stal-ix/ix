@@ -42,3 +42,6 @@ ln -s /proc/self/mounts mtab
 
 {% block purge_broken_links %}
 {% endblock %}
+
+{% block chmod_ro %}
+{% endblock %}
