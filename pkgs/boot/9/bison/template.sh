@@ -1,7 +1,4 @@
-{% extends '//bin/bison/template.sh' %}
-
-{% block bld_libs %}
-{% endblock %}
+{% extends 'base.sh' %}
 
 {% block bld_deps %}
 boot/9/m4
