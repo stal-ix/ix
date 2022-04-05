@@ -1,4 +1,4 @@
-{% extends '//bin/byacc/bt/mix.sh' %}
+{% extends '//bin/byacc/yacc/mix.sh' %}
 
 {% block bld_libs %}
 {% endblock %}
