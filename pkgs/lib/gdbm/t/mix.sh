@@ -10,7 +10,7 @@ lib/c
 {% endblock %}
 
 {% block std_box %}
-bin/flex
+bld/flex
 bin/bison/3/8
 {{super()}}
 {% endblock %}

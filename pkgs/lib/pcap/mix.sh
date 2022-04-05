@@ -14,6 +14,6 @@ lib/linux
 {% endblock %}
 
 {% block bld_tool %}
-bin/flex
+bld/flex
 bin/bison/3/8
 {% endblock %}

@@ -16,7 +16,7 @@ lib/gdk/pixbuf
 {% endblock %}
 
 {% block bld_tool %}
-bin/flex
+bld/flex
 bin/bison/3/8
 bld/glib/codegen
 bin/wayland/protocols

@@ -6,7 +6,7 @@ sha:51b5a732d6d6976da9d52b8f136850c193c68a31a9bdf28965a81cf8e62e919e
 {% endblock %}
 
 {% block bld_tool %}
-bin/flex
+bld/flex
 bin/bison/3/8
 bin/wayland/protocols
 {% endblock %}

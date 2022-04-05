@@ -10,7 +10,7 @@ bin/bsdutils/libs(openssl=1)
 {% endblock %}
 
 {% block bld_tool %}
-bin/flex
+bld/flex
 bin/byacc
 {% endblock %}
 

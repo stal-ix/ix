@@ -9,12 +9,12 @@ https://github.com/westes/flex/files/981163/flex-2.6.4.tar.gz
 lib/c
 {% endblock %}
 
-{% block run_deps %}
-bld/m4
+{% block bld_tool %}
+bld/texinfo
 {% endblock %}
 
 {% block std_box %}
-bld/m4
-bld/texinfo
-bld/bootbox
+bld/flex
+bin/bison/3/8
+{{super()}}
 {% endblock %}

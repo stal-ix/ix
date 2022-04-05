@@ -21,7 +21,7 @@ lib/mpfr
 
 {% block bld_tool %}
 bld/tar
-bin/flex
+bld/flex
 bld/gzip
 bld/texinfo
 bin/bison/3/8

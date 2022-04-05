@@ -13,7 +13,7 @@ lib/readline
 {% endblock %}
 
 {% block bld_tool %}
-bin/flex
+bld/flex
 bld/bash
 bld/texinfo
 bin/bison/3/6

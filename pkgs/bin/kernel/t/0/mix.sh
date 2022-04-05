@@ -13,7 +13,7 @@ bin/gcc/tc(for_target={{target.gnu.three}})
 
 {% block bld_tool %}
 bin/xz
-bin/flex
+bld/flex
 bin/gzip
 bin/zstd
 bld/perl

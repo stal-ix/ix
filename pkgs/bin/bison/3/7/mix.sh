@@ -16,7 +16,7 @@ lib/intl
 
 {% block bld_tool %}
 bld/m4
-bin/flex
+bld/flex
 bld/perl
 bld/texinfo
 bld/help2man

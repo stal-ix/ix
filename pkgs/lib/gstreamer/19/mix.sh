@@ -28,7 +28,7 @@ aux/iso-codes
 
 {% block bld_tool %}
 bin/orc
-bin/flex
+bld/flex
 bld/gettext
 bin/bison/3/8
 bld/glib/codegen

@@ -15,7 +15,7 @@ lib/openssl
 
 {% block bld_tool %}
 bld/tar
-bin/flex
+bld/flex
 bld/python
 bin/bison/3/6
 bin/auto/conf/archive
