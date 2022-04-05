@@ -28,12 +28,6 @@ export CXXFLAGS="-Wno-register ${CXXFLAGS}"
 --systemd=no
 {% endblock %}
 
-{% block install %}
-{{super()}}
-cd ${out}/lib
-rm -rf jack libjackserver.a
-{% endblock %}
-
 {% block patch %}
 find . -name '*.sh' | while read l; do
     sed -e 's|/bin/bash|/usr/bin/env bash|' -i ${l}

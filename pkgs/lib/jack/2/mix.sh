@@ -2,5 +2,6 @@
 
 {% block install %}
 {{super()}}
-cd ${out}/lib; rm -rf jack libjackserver.a
+cd ${out}/lib
+rm -r jack libjackserver.a
 {% endblock %}

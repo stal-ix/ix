@@ -19,5 +19,5 @@ rm ${out}/lib/libjemalloc_pic.a
 {% endblock %}
 
 {% block lib_deps %}
-lib/c
+lib/c/naked
 {% endblock %}
