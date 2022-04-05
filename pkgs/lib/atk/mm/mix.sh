@@ -11,3 +11,7 @@ lib/c++
 lib/atk
 lib/glib/mm
 {% endblock %}
+
+{% block env_lib %}
+export CPPFLAGS="-I${out}/lib/atkmm-1.6/include \${CPPFLAGS}"
+{% endblock %}

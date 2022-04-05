@@ -12,4 +12,5 @@ lib/curses
 
 {% block env_lib %}
 export COFLAGS="--with-libedit=${out} \${COFLAGS}"
+export CPPFLAGS="-I${out}/include/editline \${CPPFLAGS}"
 {% endblock %}

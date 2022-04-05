@@ -38,3 +38,7 @@ done
 
 echo 'ALL OK'
 {% endblock %}
+
+{% block env_lib %}
+export CPPFLAGS="-I${out}/include/mimalloc-2.0 \${CPPFLAGS}"
+{% endblock %}

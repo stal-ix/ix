@@ -32,3 +32,7 @@ gtk_progress_tracker_init_copy
 gtk_progress_tracker_skip_frame
 gtk_progress_tracker_start
 {% endblock %}
+
+{% block env_lib %}
+export CPPFLAGS="-I${out}/include/libhandy-1 \${CPPFLAGS}"
+{% endblock %}

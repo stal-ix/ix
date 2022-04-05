@@ -20,4 +20,5 @@ lib/iconv
 
 {% block env_lib %}
 export COFLAGS="--with-libxml2-prefix=${out} \${COFLAGS}"
+export CPPFLAGS="-I${out}/include/libxml2 \${CPPFLAGS}"
 {% endblock %}

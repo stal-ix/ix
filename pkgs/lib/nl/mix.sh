@@ -17,3 +17,7 @@ lib/linux
 bin/flex
 bin/bison/3/6
 {% endblock %}
+
+{% block env_lib %}
+export CPPFLAGS="-I${out}/include/libnl3 \${CPPFLAGS}"
+{% endblock %}

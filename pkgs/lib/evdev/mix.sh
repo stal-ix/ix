@@ -17,3 +17,7 @@ lib/linux
 {% block lib_deps %}
 lib/c
 {% endblock %}
+
+{% block env_lib %}
+export CPPFLAGS="-I${out}/include/libevdev-1.0 \${CPPFLAGS}"
+{% endblock %}

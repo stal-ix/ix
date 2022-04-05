@@ -18,3 +18,8 @@ relocate "${INPUT_DATA}"
 debug-gui=false
 {{super()}}
 {% endblock %}
+
+{% block install %}
+{{super()}}
+rm -rf ${out}/lib/lib_* ${out}/lib/udev
+{% endblock %}
