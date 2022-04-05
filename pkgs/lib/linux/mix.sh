@@ -6,7 +6,8 @@ https://www.kernel.org/pub/linux/kernel/v5.x/linux-5.13.12.tar.xz
 {% endblock %}
 
 {% block host_libs %}
-lib/musl/pure(std_env={{std_env}})
+# need proper flag inheritance
+lib/musl/pure(std_env={{std_env}},std_box={{std_box}})
 {% endblock %}
 
 {% block std_box %}
