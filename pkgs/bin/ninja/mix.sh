@@ -11,5 +11,5 @@ lib/c++
 {% endblock %}
 
 {% block bld_tool %}
-bin/re2c
+bld/re2c
 {% endblock %}

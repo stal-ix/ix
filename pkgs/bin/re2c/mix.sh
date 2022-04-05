@@ -10,10 +10,6 @@ lib/c
 lib/c++
 {% endblock %}
 
-{% block std_box %}
-bld/bootbox
-{% endblock %}
-
 {% block build_flags %}
 shut_up
 {% endblock %}
