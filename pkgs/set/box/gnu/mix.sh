@@ -8,5 +8,5 @@ bin/file
 bin/patch
 bin/diffutils
 bin/findutils
-bin/coreutils/8/32
+bin/coreutils/lite
 {% endblock %}

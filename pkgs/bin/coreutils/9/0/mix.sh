@@ -1,26 +1,16 @@
 {% extends '//bin/coreutils/t/mix.sh' %}
 
 {% block fetch %}
-https://ftp.gnu.org/gnu/coreutils/coreutils-9.0.tar.xz
-0d79ae8a6124546e3b94171375e5e5d0
-{% endblock %}
-
-{% block bld_libs %}
-lib/c
-lib/gmp
-lib/openssl/1
-
-{% if linux %}
-lib/acl
-lib/cap
-lib/attr
-{% endif %}
-
-{{super()}}
+https://ftp.gnu.org/gnu/coreutils/coreutils-9.0.tar.gz
+sha:6fd4eb88a515004977fc72d7f47b40620409cc41dfaf00419fdd1be17663c434
 {% endblock %}
 
 {% block bld_tool %}
 bld/perl
+{{super()}}
+{% endblock %}
+
+{% block std_box %}
 bin/bison/3/7
 {{super()}}
 {% endblock %}
@@ -28,9 +18,4 @@ bin/bison/3/7
 {% block configure_flags %}
 {{super()}}
 --with-openssl=yes
-{% endblock %}
-
-{% block configure %}
-{{super()}}
-sed -e 's|.*LIBINTL = .*||' -i Makefile
 {% endblock %}

@@ -9,12 +9,3 @@ https://ftp.gnu.org/gnu/coreutils/coreutils-8.31.tar.xz
 bin/byacc
 {{super()}}
 {% endblock %}
-
-{% block configure_flags %}
-{{super()}}
---without-gmp
-{% endblock %}
-
-{% block bld_libs %}
-lib/c
-{% endblock %}
