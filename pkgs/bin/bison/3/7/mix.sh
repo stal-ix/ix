@@ -6,7 +6,7 @@ d61aa92e3562cb7292b004ce96173cf7
 {% endblock %}
 
 {% block run_deps %}
-bin/m4
+bld/m4
 {% endblock %}
 
 {% block bld_libs %}

@@ -14,7 +14,7 @@ lib/c
 {% endblock %}
 
 {% block bld_tool %}
-bin/m4
+bld/m4
 bld/perl
 bld/texinfo
 {% endblock %}

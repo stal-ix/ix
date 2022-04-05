@@ -10,7 +10,7 @@ lib/c
 {% endblock %}
 
 {% block bld_tool %}
-bin/m4
+bld/m4
 {% endblock %}
 
 {% block configure %}

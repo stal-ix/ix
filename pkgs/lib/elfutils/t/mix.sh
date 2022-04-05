@@ -21,7 +21,7 @@ lib/argp/standalone
 {% endblock %}
 
 {% block bld_tool %}
-bin/m4
+bld/m4
 bld/gettext
 {% endblock %}
 

@@ -22,7 +22,7 @@ lib/linux
 {% endblock %}
 
 {% block bld_tool %}
-bin/m4
+bld/m4
 bld/pkg/config
 {% endblock %}
 
