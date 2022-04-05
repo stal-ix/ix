@@ -13,5 +13,5 @@ lib/openssl
 
 {% block bld_tool %}
 bld/flex
-bin/bison/3/7
+bld/bison
 {% endblock %}

@@ -11,7 +11,7 @@ bld/perl
 {% endblock %}
 
 {% block std_box %}
-bin/bison/3/7
+bld/bison
 {{super()}}
 {% endblock %}
 

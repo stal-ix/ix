@@ -6,7 +6,7 @@ sha:720a06ff8dcc12686a5176e8a4c74b1295753df816e38468a6cf077562d54042
 {% endblock %}
 
 {% block bld_tool %}
-bin/bison/3/7
+bld/bison
 {% endblock %}
 
 {% block install %}
