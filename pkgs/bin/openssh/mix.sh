@@ -1,5 +1,5 @@
 {% extends '//mix/hub.sh' %}
 
 {% block run_deps %}
-bin/openssh/unwrap(openssl=1,curses=netbsd)
+bin/openssh/unwrap(openssl=1)
 {% endblock %}

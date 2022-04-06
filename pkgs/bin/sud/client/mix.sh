@@ -1,10 +1,5 @@
-{% extends '//bin/openssh/mix.sh' %}
+{% extends '//mix/hub.sh' %}
 
-{% block install %}
-{{super()}}
-cd ${out}
-mv bin old
-mkdir bin
-mv old/ssh bin/sud_client
-rm -rf old share etc var
+{% block run_deps %}
+bin/sud/client/unwrap(openssl=1,curses=netbsd)
 {% endblock %}
