@@ -6,11 +6,11 @@ http://mirror.koddos.net/gcc/releases/gcc-11.2.0/gcc-11.2.0.tar.xz
 {% endblock %}
 
 {% block lib_deps %}
-lib/c/naked/mix.sh
+lib/c/naked
 {% endblock %}
 
 {% block bld_tool %}
-bld/python/mix.sh
+bld/python
 {% endblock %}
 
 {% block unpack %}
