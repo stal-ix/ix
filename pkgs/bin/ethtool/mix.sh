@@ -1,8 +1,8 @@
 {% extends '//mix/autorehell.sh' %}
 
 {% block fetch %}
-https://mirrors.edge.kernel.org/pub/software/network/ethtool/ethtool-5.16.tar.xz
-sha:aa2fef1936dd4a11755dfa0bdb93f0ec5bea45208d27c9754bc3abe1aa42c1cb
+https://mirrors.edge.kernel.org/pub/software/network/ethtool/ethtool-5.17.tar.xz
+sha:64ab914b9c6b45047245d91f40b8760b2728992a9e5af22717c644238e889133
 {% endblock %}
 
 {% block bld_libs %}
