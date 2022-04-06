@@ -10,15 +10,6 @@ lib/xz
 lib/bzip2
 {% endblock %}
 
-{% block bld_tool %}
-bld/autohell
-{% endblock %}
-
-{% block configure_flags %}
---without-xml2
---without-expat
-{% endblock %}
-
 {% block install %}
 {{super()}}
 cd ${out}/bin

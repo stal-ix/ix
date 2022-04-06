@@ -1,4 +1,4 @@
-{% extends '//mix/autorehell.sh' %}
+{% extends '//mix/cmake.sh' %}
 
 {% block fetch %}
 https://github.com/libarchive/libarchive/archive/refs/tags/v3.6.0.tar.gz
@@ -17,10 +17,15 @@ lib/iconv
 lib/expat
 {% endblock %}
 
-{% block bld_tool %}
-bld/autohell
+{% block patch %}
+sed -e 's|.*PROPERTIES OUTPUT_NAME archive.*||' -i libarchive/CMakeLists.txt
 {% endblock %}
 
-{% block configure_flags %}
---without-xml2
+{% block cmake_flags %}
+ENABLE_TEST=OFF
+{% endblock %}
+
+{% block install %}
+{{super()}}
+rm ${out}/lib/*_static*
 {% endblock %}
