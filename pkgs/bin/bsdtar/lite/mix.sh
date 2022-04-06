@@ -1,14 +1,4 @@
-{% extends '//bin/bsdtar/mix.sh' %}
-
-{% block lib_deps %}
-{% endblock %}
-
-{% block bld_libs %}
-lib/c
-lib/z
-lib/xz
-lib/bzip2
-{% endblock %}
+{% extends '//lib/archive/lite/mix.sh' %}
 
 {% block install %}
 {{super()}}
