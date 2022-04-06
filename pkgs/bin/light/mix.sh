@@ -13,10 +13,6 @@ lib/c
 export CFLAGS="-fcommon ${CFLAGS}"
 {% endblock %}
 
-{% block patch %}
-sed -e 's|light_loglevel >= lvl|1|' -i src/helpers.h
-{% endblock %}
-
 {% block configure_flags %}
 --with-udev
 {% endblock %}
