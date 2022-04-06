@@ -12,7 +12,7 @@ lib/linux
 {% endblock %}
 
 {% block bld_tool %}
-bin/gzip
+bld/gzip
 bld/pkg/config
 {% endblock %}
 

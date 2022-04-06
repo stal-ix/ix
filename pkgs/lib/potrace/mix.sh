@@ -1,4 +1,4 @@
-{% extends '//mix/autohell.sh' %}
+{% extends '//mix/autorehell.sh' %}
 
 {% block fetch %}
 http://potrace.sourceforge.net/download/1.16/potrace-1.16.tar.gz

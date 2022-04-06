@@ -1,4 +1,4 @@
-{% extends '//mix/autohell.sh' %}
+{% extends '//mix/autorehell.sh' %}
 
 {% block fetch %}
 https://ftp.gnu.org/gnu/gsl/gsl-2.7.1.tar.gz
