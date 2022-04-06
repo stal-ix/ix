@@ -7,5 +7,5 @@
 
 {% block install %}
 {{super()}}
-rm -rf ${out}/lib64
+rm -rf ${out}/lib*
 {% endblock %}
