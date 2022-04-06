@@ -23,11 +23,11 @@ done
 {% endblock %}
 
 {% block patch %}
-cat - mix << EOF > mix_bin
+cat - mix << EOF > _
 __file__ = "${out}/bin/mix"
 EOF
 
-mv mix_bin mix
+mv _ mix
 {% endblock %}
 
 {% block entry_point %}mix{% endblock %}

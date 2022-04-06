@@ -19,9 +19,11 @@ export PYTHONPATH="${PWD}/gdb/python/lib:${PYTHONPATH}"
 {% block patch %}
 cd gdb/python/lib/gdb
 
-cat - __init__.py << EOF > _ && mv _ __init__.py
+cat - __init__.py << EOF > _
 __file__ = '/nowhere/__init__.py'
 EOF
+
+mv _ __init__.py
 {% endblock %}
 
 {% block more_modules %}
