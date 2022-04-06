@@ -1,4 +1,4 @@
-{% extends '//mix/autohell.sh' %}
+{% extends '//mix/autorehell.sh' %}
 
 {% block fetch %}
 https://memcached.org/files/memcached-1.6.15.tar.gz
