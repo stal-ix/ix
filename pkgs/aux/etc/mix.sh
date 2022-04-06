@@ -1,9 +1,5 @@
 {% extends '//mix/proxy.sh' %}
 
-{% block bld_tool %}
-bin/busybox
-{% endblock%}
-
 {% block install %}
 cd ${out}
 
@@ -21,8 +17,8 @@ mkdir etc; cd etc
 mkdir passwd.d
 
 cat << EOF > passwd.d/root
-root:$(echo | cryptpw -S 237364527345):0:0:root:/home/root:/bin/sh
-mix:$(echo | cryptpw -S 237364527347):1000:1000:none:/home/mix:/bin/sh
+root:x:0:0:root:/home/root:/bin/sh
+mix:x:1000:1000:none:/home/mix:/bin/sh
 EOF
 
 cat << EOF > group
