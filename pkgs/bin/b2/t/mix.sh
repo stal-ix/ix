@@ -11,7 +11,7 @@ lib/c++
 {% endblock %}
 
 {% block bld_tool %}
-bin/bison/3/8
+bld/bison
 {% endblock %}
 
 {% block build %}

@@ -15,8 +15,8 @@ lib/readline
 {% block bld_tool %}
 bld/flex
 bld/bash
+bin/byacc
 bld/texinfo
-bin/bison/3/6
 bin/heirloom/ed
 {% endblock %}
 
@@ -25,4 +25,8 @@ bin/heirloom/ed
 
 {% block configure_flags %}
 --with-readline
+{% endblock %}
+
+{% block patch %}
+rm bc/scan.c bc/bc.c bc/bc.h
 {% endblock %}

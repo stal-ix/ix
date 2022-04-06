@@ -29,8 +29,8 @@ aux/iso-codes
 {% block bld_tool %}
 bin/orc
 bld/flex
+bld/bison
 bld/gettext
-bin/bison/3/8
 bld/glib/codegen
 bin/wayland/protocols
 {% endblock %}

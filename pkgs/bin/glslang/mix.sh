@@ -6,8 +6,8 @@ sha:c520156f1927c2c3909094f414fc0c68996aaf9809dc5ef1b22a520b762fe9a7
 {% endblock %}
 
 {% block bld_tool %}
+bld/bison
 bld/python
-bin/bison/3/8
 {% endblock %}
 
 {% block bld_libs %}

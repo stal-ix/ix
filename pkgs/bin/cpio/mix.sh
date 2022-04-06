@@ -11,8 +11,8 @@ lib/intl
 {% endblock %}
 
 {% block bld_tool %}
+bld/bison
 bld/gettext
-bin/bison/3/6
 {% endblock %}
 
 {% block setup %}

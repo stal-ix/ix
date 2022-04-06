@@ -9,7 +9,7 @@ lib/readline
 {% endblock %}
 
 {% block bld_tool %}
-bin/bison/3/6
+bld/bison
 {% endblock %}
 
 {% block configure_flags %}

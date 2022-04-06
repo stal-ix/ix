@@ -6,7 +6,7 @@ c46f6eb3bd1287031ae5d36465094402
 {% endblock %}
 
 {% block bld_tool %}
-bin/bison/3/8
+bld/bison
 {% endblock %}
 
 {% block lib_deps %}

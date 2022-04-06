@@ -12,5 +12,10 @@ lib/oniguruma
 
 {% block bld_tool %}
 bld/flex
-bin/bison/3/8
+bld/bison
+{% endblock %}
+
+{% block patch1 %}
+# TODO(pg): proper bootstrap
+rm src/parser.c src/parser.h src/lexer.c src/lexer.h
 {% endblock %}

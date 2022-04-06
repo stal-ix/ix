@@ -11,6 +11,6 @@ lib/intl
 {% endblock %}
 
 {% block std_box %}
-bin/bison/3/8
+bld/bison
 {{super()}}
 {% endblock %}

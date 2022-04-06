@@ -19,8 +19,8 @@ lib/cap/ng
 
 {% block bld_tool %}
 bld/bash
+bld/bison
 bld/gettext
-bin/bison/3/8
 {% endblock %}
 
 {% block configure_flags %}
