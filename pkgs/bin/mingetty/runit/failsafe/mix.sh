@@ -1,5 +1,3 @@
-{% extends '//mix/hub.sh' %}
+{% extends '//bin/mingetty/runit/slot/mix.sh' %}
 
-{% block run_deps %}
-bin/mingetty/runit/slot(slot=5,mingetty_args=--autologin=root)
-{% endblock %}
+{% block mingetty_args %}--autologin=root{% endblock %}
