@@ -13,6 +13,10 @@ lib/cairo
 lib/gtk/3
 {% endblock %}
 
+{% block run_deps %}
+bin/wl/clipboard
+{% endblock %}
+
 {% block bld_tool %}
 bin/scdoc
 bld/glib/codegen
