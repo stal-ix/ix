@@ -33,3 +33,7 @@ _systemd=false
 sed -e 's|W_EXITCODE.*|SIGKILL << 8;|' -i src/widget.cc
 sed -e 's|+ debug_sources||' -i src/app/meson.build
 {% endblock %}
+
+{% block env_lib %}
+export CPPFLAGS="-I${out}/include/vte-2.91 \${CPPFLAGS}"
+{% endblock %}
