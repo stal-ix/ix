@@ -1,2085 +1,1944 @@
-00000000002dbbc0 b abandoned
-00000000002dbc00 b abandoned_count
-00000000002dbb80 b abandoned_readers
-00000000002dbc40 b abandoned_visited
-00000000002dbc80 b abandoned_visited_count
-0000000000338368 b abbrevs
-00000000003383a8 b abbrevs_end
-00000000002bbcdc T abort
-0000000000336dc0 b __abort_lock
-00000000002af350 t abort_message
-00000000002cb220 T access
-00000000002bc434 T acos
-00000000002c7d72 t __acquire_ptc
-0000000000258310 T acquire_sprof_data
-000000000022a580 r addr
-00000000002469d0 T add_to_weak_vector_list
-000000000025d940 t adjust_obj_ptes
-000000000026ef50 T adler32
-000000000026ef60 T adler32_combine
-000000000026f040 T adler32_combine64
-000000000026eb30 T adler32_z
-00000000002bde28 t __aio_atfork
-00000000002bea70 t __aio_close
-00000000002dbb00 b aligned_base
-0000000000279870 T _aligned_malloc
-00000000002d2e10 D alivep_funs
-000000000022a5f8 r all_mask
-0000000000260910 T alloc
-00000000002562f0 T allocate_hardwired_spaces
-00000000002563d0 T allocate_lisp_dynamic_space
-0000000000242c00 T allocation_profiler_start
-0000000000242d70 T allocation_profiler_stop
-0000000000258ac0 T allocation_tracker_counted
-0000000000258be0 T allocation_tracker_sized
-0000000000258240 T allocator_record_backtrace
-0000000000242b40 T alloc_code_object
-0000000000265c70 T alloc_immobile_fixedobj
-0000000000260930 T alloc_list
-00000000002d4788 B alloc_profile_buffer
-00000000002d4770 B alloc_profile_data
-00000000002d1b80 D alloc_profile_n_counters
-00000000002d4740 B alloc_profiler_lock
-00000000002d4768 B alloc_profiling
-00000000002d5930 b alloc_start_pages
-0000000000255330 T alloc_thread_struct
-00000000002d5098 B all_threads
-00000000002d5008 B all_threads_lock
-00000000002d48c8 B anon_dynamic_space_start
-000000000026a8d0 T apply_pie_relocs
-000000000022a600 r app_mask
-00000000002585f0 T arch_clear_pseudo_atomic_interrupted
-0000000000258640 T arch_do_displaced_inst
-00000000002584e0 T arch_get_bad_addr
-00000000002589b0 T arch_get_fp_modes
-0000000000258670 T arch_handle_breakpoint
-0000000000258690 T arch_handle_fun_end_breakpoint
-00000000002586c0 T arch_handle_single_step_trap
-0000000000258620 T arch_install_breakpoint
-0000000000258940 T arch_install_interrupt_handlers
-0000000000258580 T arch_internal_error_arguments
-0000000000259310 T arch_os_thread_cleanup
-0000000000259290 T arch_os_thread_init
-00000000002585a0 T arch_pseudo_atomic_atomic
-0000000000258630 T arch_remove_breakpoint
-000000000026ab40 T arch_scrub_control_stack
-00000000002589d0 T arch_set_fp_modes
-00000000002585c0 T arch_set_pseudo_atomic_interrupted
-0000000000258500 T arch_skip_instruction
-0000000000258970 T arch_write_linkage_table_entry
-000000000024cb20 T arrange_return_to_c_function
-000000000024cd80 T arrange_return_to_lisp_function
-000000000026ab61 t ascs_check_guard_page
-000000000026ab8c t ascs_check_loop
-000000000026ab74 t ascs_clear_loop
-000000000026aba1 t ascs_finished
-000000000026ab57 t ascs_outer_loop
-0000000000245010 T asm_routine_poke
-00000000002d5120 B asm_routines_end
-00000000002d5118 B asm_routines_start
-00000000002bbd88 T __assert_fail
-00000000002bbed8 T atexit
-000000000022a578 r __atexit_lockptr
-000000000022a5a0 r atfork_locks
-00000000002c366c T atoi
-0000000000242af0 T atomic_bump_static_space_free_ptr
-000000000022a598 r __at_quick_exit_lockptr
-00000000002d5410 B auto_gc_trigger
-00000000002d5334 B avx2_supported
-00000000002d5330 B avx_supported
-000000000024e5f0 t backtrace_cmd
-0000000000243500 T backtrace_from_context
-00000000002434e0 T backtrace_from_fp
-0000000000226310 r base_dist
-0000000000226290 r base_length
-0000000000245d80 T bind_tls_cell
-00000000002d4978 B blockable_sigset
-00000000002be1c8 t __block_all_sigs
-00000000002be1e1 t __block_app_sigs
-000000000024bce0 T block_blockable_signals
-000000000024bcd0 T block_deferrable_signals
-0000000000226270 r bl_order
-0000000000243980 T breakpoint_do_displaced_inst
-0000000000243940 T breakpoint_install
-0000000000243960 T breakpoint_remove
-0000000000251ef0 t brief_fixnum
-0000000000252440 t brief_fun_or_otherptr
-0000000000252300 t brief_list
-0000000000251f20 t brief_otherimm
-0000000000251180 T brief_print
-0000000000251ff0 t brief_struct
-00000000002c352c T btowc
-0000000000337278 b buf
-0000000000337280 b buf
-0000000000337690 b buf
-00000000002d1b90 D build_id
-0000000000264ef0 t build_refs
-0000000000275020 t build_tree
-0000000000336dd8 b builtin
-00000000003370f0 b builtin_tls
-000000000022a598 r __bump_lockptr
-00000000002d5408 B bytes_allocated
-00000000002d1bd8 D bytes_consed_between_gcs
-00000000002dbcc0 b cache
-00000000002d2f00 d cache_available
-00000000002d2e80 d cache_available_large
-00000000002d48d0 B cached_alloc
-0000000000323cc0 b cache_inuse
-0000000000244290 T calc_asm_routine_bounds
-00000000002442c0 T calc_immobile_space_bounds
-00000000002bbee5 t call
-0000000000255b60 T callback_wrapper_trampoline
-000000000024e640 t call_cmd
-000000000026aa20 T call_into_lisp
-000000000026aa00 T call_into_lisp_first_time
-000000000024b900 t call_lossage_handler
-0000000000278d10 t calloc
-0000000000264d10 t canonical_obj
-000000000024e780 t catchers_cmd
-000000000022acd8 r __c_dot_utf8
-000000000022ad38 r __c_dot_utf8_locale
-00000000002bc768 T ceilf
-00000000002797c0 T cfree
-00000000002cab09 t cgt_init
-00000000002888b0 t chacha_block
-00000000002cb234 T chdir
-000000000024bc60 T check_deferrables_blocked_or_lose
-000000000024bc40 T check_deferrables_unblocked_or_lose
-000000000024bc80 T check_gc_signals_unblocked_or_lose
-00000000002be608 T chmod
-00000000002d5340 b claim_index.warning_issued
-000000000028b3f0 t __clang_call_terminate
-00000000002db974 b classify_obj.buf
-0000000000251210 T classoid_name
-00000000002c98ea t cleanup
-000000000022ad08 r __c_locale
-00000000002caa80 t __clock_gettime
-00000000002caa80 W clock_gettime
-00000000002cb1c4 t __clock_nanosleep
-00000000002cb1c4 W clock_nanosleep
-00000000002cb247 T close
-0000000000242bc0 T close_code_region
-00000000002bb7e8 T closedir
-0000000000257700 T closefds_from
-00000000002bf16d t close_file
-0000000000257650 T closefrom_fallback
-0000000000257690 T closefrom_fddir
-00000000002d2cc0 d closure_slots
-0000000000243eb0 t coalesce_obj
-0000000000243cd0 t coalesce_range
-0000000000243c40 T coalesce_similar_objects
-00000000002d4790 b code_allocator_lock
-00000000002dba70 B code_component_order
-00000000002d2c90 d code_slots
-0000000000257b70 t collect_backtrace
-000000000025e630 T collect_garbage
-00000000002d55e0 b collect_garbage.high_water_mark
-0000000000265b70 t compare_pointer
-00000000002d2c40 d complex_slots
-0000000000248ee0 T component_ptr_from_pc
-0000000000275930 t compress_block
-0000000000222d20 r configuration_table
-00000000002bd9e4 T connect
-00000000002d58e4 b conservative_stack
-00000000002584f0 T context_eflags_addr
-00000000002d5874 B continue_after_memoryfault_on_unprotected_pages
-0000000000252580 t continue_p
-0000000000253510 t copied_realpath
-00000000002527b0 T copied_string
-000000000025d5d0 T copy_large_object
-0000000000245ea0 T copy_object
-00000000002c5578 T copysignl
-00000000002bdf43 t __copy_tls
-000000000025dce0 T copy_unboxed_object
-00000000002d4ff0 B core_string
-000000000024b430 T corruption_warning_and_maybe_lose
-000000000026f470 T crc32
-000000000026f480 T crc32_combine
-000000000026f490 t crc32_combine_
-000000000026f7b0 T crc32_combine64
-000000000026f130 T crc32_z
-0000000000222dc0 r crc_table
-0000000000255220 T create_main_lisp_thread
-0000000000247bc0 T cull_weak_hash_tables
-00000000002d4edc b cur_clock
-00000000002d4eec b cur_depth
-00000000002d4ee0 b cur_lines
-00000000002d4898 B current_control_frame_pointer
-0000000000000008 B current_thread
-00000000002b0ff0 T __cxa_allocate_dependent_exception
-00000000002b0f80 T __cxa_allocate_exception
-00000000002bbe41 T __cxa_atexit
-00000000002b1130 T __cxa_begin_catch
-00000000002b1eb0 T __cxa_call_unexpected
-00000000002b12b0 T __cxa_current_exception_type
-00000000002b13c0 T __cxa_current_primary_exception
-00000000002b1270 T __cxa_decrement_exception_refcount
-00000000002b0f30 T __cxa_deleted_virtual
-0000000000292610 T __cxa_demangle
-00000000002b11b0 T __cxa_end_catch
-00000000002bbe40 T __cxa_finalize
-00000000002b1030 T __cxa_free_dependent_exception
-00000000002b0fd0 T __cxa_free_exception
-00000000002b1120 T __cxa_get_exception_ptr
-0000000000292190 T __cxa_get_globals
-0000000000292220 T __cxa_get_globals_fast
-0000000000291e8f T __cxa_guard_abort
-0000000000291cd8 T __cxa_guard_acquire
-0000000000291e06 T __cxa_guard_release
-00000000002b13b0 T __cxa_increment_exception_refcount
-0000000000336b58 B __cxa_new_handler
-00000000002b0f20 T __cxa_pure_virtual
-00000000002b12f0 T __cxa_rethrow
-00000000002b1420 T __cxa_rethrow_primary_exception
-00000000002d43f8 D __cxa_terminate_handler
-00000000002b1040 T __cxa_throw
-00000000002b1590 T __cxa_uncaught_exception
-00000000002b15b0 T __cxa_uncaught_exceptions
-00000000002d4400 D __cxa_unexpected_handler
-0000000000338338 B __daylight
-0000000000338338 V daylight
-0000000000242df0 T debug_function_from_pc
-0000000000242f90 T debug_print
-00000000002d47c8 B debug_weak_ht
-000000000022ae40 r decfloat.p10s
-00000000002d46e4 d __default_guardsize
-000000000024b2a0 t default_lossage_handler
-00000000002d48e4 b default_lossage_handler.backtrace_invoked
-00000000002d46e0 d __default_stacksize
-000000000024bae0 T deferrables_blocked_p
-00000000002d48f8 B deferrable_sigset
-00000000002dbab8 b deferred_arg
-00000000002dbab0 b deferred_free
-0000000000256c70 T define_dynamic_var
-0000000000256ac0 T define_var
-000000000026bca0 T deflate
-000000000026cb90 T deflateBound
-000000000026dab0 T deflateCopy
-0000000000222cd0 R deflate_copyright
-000000000026aed0 T deflateEnd
-000000000026dcf0 t deflate_fast
-000000000026b770 T deflateGetDictionary
-000000000026d320 t deflate_huff
-000000000026abb0 T deflateInit_
-000000000026abe0 T deflateInit2_
-000000000026baf0 T deflateParams
-000000000026b990 T deflatePending
-000000000026ba00 T deflatePrime
-000000000026afe0 T deflateReset
-000000000026b810 T deflateResetKeep
-000000000026d600 t deflate_rle
-000000000026b0b0 T deflateSetDictionary
-000000000026b920 T deflateSetHeader
-000000000026e220 t deflate_slow
-000000000026cd50 t deflate_stored
-000000000026cb10 T deflateTune
-0000000000267c80 t defrag_immobile_space
-000000000025df40 T deposit_filler
-000000000024b6c0 T describe_internal_error
-00000000002430d0 T describe_thread_state
-00000000002527f0 T dir_name
-000000000024b290 T disable_lossage_handler
-00000000002258c0 r _dist_code
-00000000002bc3b4 W dladdr
-000000000022a598 r __dlerror_lockptr
-00000000002bc2a4 W dl_iterate_phdr
-00000000002c92dc t __do_cleanup_pop
-00000000002c92dc t __do_cleanup_push
-00000000002d4ee4 b dont_descend
-000000000026ab00 T do_pending_interrupt
-00000000002c5e64 t do_read
-00000000002c6069 t do_read
-00000000002ca065 t do_tzset
-000000000022b000 r do_tzset.search
-0000000000200000 r __dso_handle
-00000000003383cf b dst_name
-00000000003383a4 b dst_off
-00000000002bba80 t dummy
-00000000002bbbc8 t dummy
-00000000002bbee8 t dummy
-00000000002bc410 t dummy
-00000000002bcfc4 t dummy
-00000000002bd0b4 t dummy
-00000000002bdce4 t dummy
-00000000002bde28 t dummy
-00000000002bea70 t dummy
-00000000002bec54 t dummy
-0000000000337258 b dummy
-0000000000337ad8 b dummy
-00000000002c88bc t dummy
-00000000002c92dc t dummy
-00000000002c976b t dummy
-00000000002cb244 t dummy
-00000000002cb4a0 t dummy
-00000000002bdce5 t dummy_0
-00000000002c89e8 t dummy_0
-00000000002cb4a1 t dummy1
-0000000000337260 b dummy_file
-000000000022a598 r dummy_lockptr
-000000000024e8f0 t dump_cmd
-00000000002d4ea0 b dump_cmd.lastaddr
-00000000002d2a0c d dump_cmd.lastcount
-00000000002cb284 T dup2
-00000000002d43f0 d DW.ref.__gxx_personality_v0
-00000000002d0a60 d _DYNAMIC
-00000000002b0330 T __dynamic_cast
-00000000002d48a0 B dynamic_space_free_pointer
-00000000002d1bc0 D dynamic_space_size
-00000000002d5110 B DYNAMIC_SPACE_START
-00000000002d2dd8 D dynamic_values_bytes
-00000000002d4eb0 B dyndebug_config
-0000000000250240 T dyndebug_init
-0000000000337254 b __eintr_valid_flag
-000000000022acc0 r empty_mo
-0000000000255ab0 T empty_thread_recyclebin
-000000000024b280 T enable_lossage_handler
-00000000002bd104 W endpwent
-00000000002583a0 t enlarge_buffer
-0000000000266020 T enliven_immobile_obj
-0000000000336da0 V ___environ
-0000000000336da0 B __environ
-0000000000336da0 V _environ
-0000000000336da0 V environ
-00000000002bb944 t __env_rm_add
-0000000000336da8 b __env_rm_add.env_alloced
-0000000000336db0 b __env_rm_add.env_alloced_n
-000000000022a470 r errmsgidx
-0000000000229d52 r errmsgstr
-00000000002bbc74 t ___errno_location
-00000000002bbc74 T __errno_location
-0000000000335fc8 b error_count
-000000000025a690 T execute_full_mark_phase
-000000000025ada0 T execute_full_sweep_phase
-00000000002bdb1c T execv
-00000000002bdb28 T execve
-00000000002bdcd7 T execvp
-00000000002bdb38 t __execvpe
-00000000002bdb38 W execvpe
-00000000002cb218 T _exit
-00000000002bbf15 T exit
-00000000002bbd70 T _Exit
-000000000024ec80 t exit_cmd
-000000000025b890 T ext_find_page_index
-0000000000249510 T ext_lispobj_size
-0000000000226220 r extra_blbits
-00000000002261a0 r extra_dbits
-0000000000226120 r extra_lbits
-0000000000337068 b f
-00000000002c55bc T fabsl
-000000000024c090 T fake_foreign_function_call
-000000000024c010 T fake_foreign_function_call_noassert
-0000000000259060 t fallback_sigsegv_handler
-00000000002be61c T fchmod
-00000000002bec55 T fclose
-00000000002bbf30 T fcntl
-0000000000258a20 T fdefn_callee_lispobj
-00000000002d2d20 d fdefn_slots
-00000000002be900 t __fdopen
-00000000002be900 W fdopen
-00000000002beddc T ferror
-00000000002beddc W ferror_unlocked
-00000000002bee18 T fflush
-00000000002bee18 W fflush_unlocked
-00000000002bef38 T fgets
-00000000002bef38 W fgets_unlocked
-00000000002bf1b8 T fileno
-00000000002bf1b8 W fileno_unlocked
-000000000026b320 t fill_window
-00000000002d4860 B finalizer_condvar
-00000000002d4838 B finalizer_mutex
-00000000002d1c00 D finalizer_thread_runflag
-0000000000246e40 T finalizer_thread_stop
-0000000000246df0 T finalizer_thread_wait
-0000000000246e30 T finalizer_thread_wake
-0000000000243990 T find_code
-0000000000254c20 T find_package
-00000000002d5000 b find_package.kernelpkg_hint
-0000000000268f80 T find_preceding_object
-0000000000254ee0 T find_symbol
-00000000002bbee8 W _fini
-0000000000242af0 t __fini_array_end
-0000000000242af0 t __fini_array_start
-00000000002d48c0 B fixedobj_free_pointer
-00000000002db9b0 B fixedobj_page_hint
-00000000002db998 B fixedobj_pages
-0000000000269050 t fixedobj_points_to_younger_p
-00000000002dba00 B FIXEDOBJ_SPACE_START
-00000000002dba38 b fixedobj_tempspace
-0000000000225710 r fixedtables.distfix
-0000000000224f10 r fixedtables.lenfix
-00000000002698d0 t fixup_space
-00000000002c3880 t __floatscan
-000000000024ec90 t flush_cmd
-000000000026cce0 t flush_pending
-0000000000256720 T flush_vars
-00000000002bf298 t __fmodeflags
-00000000002c55a4 T fmodl
-00000000002bf200 T fopen
-00000000002bf200 W fopen64
-00000000002bdce6 T fork
-00000000002bde29 T _Fork
-00000000002bdce4 t __fork_handler
-00000000002c6d50 t fourbyte_strstr
-00000000002bb5cc T fpathconf
-0000000000229ad0 r fpathconf.values
-00000000002c2208 T __fpclassifyl
-00000000002bf324 T fprintf
-0000000000222570 r fprnames
-00000000002bf3a8 T fputc
-00000000002bf560 T fputs
-00000000002bf560 W fputs_unlocked
-00000000002c34df T fputwc
-00000000002c33fc T __fputwc_unlocked
-00000000002c33fc W fputwc_unlocked
-00000000002bf598 T fread
-00000000002bf598 W fread_unlocked
-0000000000278e20 t free
-00000000002d53b0 b free_page
-00000000002d5900 b free_pages_lock
-0000000000255880 T free_thread_struct
-00000000002c2250 T frexpl
-00000000002d55ca B from_space
-00000000002bf777 T fseek
-00000000002bf711 t __fseeko
-00000000002bf711 W fseeko
-00000000002bf711 W fseeko64
-00000000002bf69c t __fseeko_unlocked
-0000000000250940 T fshow_fun
-000000000022ad70 r __fsmu8
-00000000002be714 T fstat
-00000000002be714 W fstat64
-00000000002be738 T fstatat
-00000000002be738 W fstatat64
-000000000024e200 T fstat_largefile
-0000000000256f20 T fstat_wrapper
-00000000002bf818 T ftell
-00000000002bf7d3 t __ftello
-00000000002bf7d3 W ftello
-00000000002bf7d3 W ftello64
-00000000002bf77c t __ftello_unlocked
-00000000002cb2a0 T ftruncate
-00000000002cb2a0 W ftruncate64
-000000000024e1d0 T ftruncate_largefile
-0000000000245e10 T funcall0
-0000000000245e20 T funcall1
-0000000000245e40 T funcall2
-0000000000245e70 T funcall3
-00000000002d2cd0 d funcallable_instance_slots
-000000000026aa90 T funcall_alien_callback
-00000000002bbdac t __funcs_on_exit
-000000000026aaf3 T fun_end_breakpoint_end
-000000000026aad0 T fun_end_breakpoint_guts
-000000000026aaf0 T fun_end_breakpoint_trap
-0000000000258da0 T futex_name
-00000000002d5344 B futex_private_supported_p
-0000000000258dc0 T futex_wait
-0000000000258e60 T futex_wake
-00000000002c336c T fwide
-00000000002bf909 T fwrite
-00000000002bf909 W fwrite_unlocked
-00000000002bf820 t __fwritex
-000000000025f0e0 t garbage_collect_generation
-00000000002d5418 B gc_active_p
-00000000002d55c8 B gc_allocate_dirty
-00000000002d55c9 b gc_alloc_generation
-000000000025cbb0 T gc_alloc_large
-000000000025d3c0 t gc_alloc_new_region
-00000000002d5880 B gc_alloc_region
-000000000025d340 T gc_alloc_with_region
-0000000000260b60 T gc_and_save
-000000000022b174 r GCC_except_table0
-000000000022b400 r GCC_except_table0
-000000000022b5e4 r GCC_except_table0
-000000000022b098 r GCC_except_table1
-000000000022b1bc r GCC_except_table1
-000000000022b418 r GCC_except_table1
-000000000022b5d4 r GCC_except_table1
-000000000022b5f0 r GCC_except_table1
-000000000022b130 r GCC_except_table10
-000000000022b8ec r GCC_except_table101
-000000000022b904 r GCC_except_table103
-000000000022b91c r GCC_except_table104
-000000000022b934 r GCC_except_table106
-000000000022b948 r GCC_except_table107
-000000000022b998 r GCC_except_table108
-000000000022b9ec r GCC_except_table109
-000000000022b4a4 r GCC_except_table11
-000000000022ba24 r GCC_except_table110
-000000000022ba60 r GCC_except_table111
-000000000022ba98 r GCC_except_table112
-000000000022bad4 r GCC_except_table113
-000000000022bb0c r GCC_except_table114
-000000000022bb48 r GCC_except_table115
-000000000022bb80 r GCC_except_table116
-000000000022bbbc r GCC_except_table117
-000000000022b29c r GCC_except_table118
-000000000022bbf4 r GCC_except_table118
-000000000022bc30 r GCC_except_table119
-000000000022b4b8 r GCC_except_table12
-000000000022bc68 r GCC_except_table120
-000000000022bca4 r GCC_except_table121
-000000000022bcdc r GCC_except_table122
-000000000022b4dc r GCC_except_table13
-000000000022b2bc r GCC_except_table131
-000000000022b2c8 r GCC_except_table132
-000000000022b2d4 r GCC_except_table133
-000000000022b2e0 r GCC_except_table134
-000000000022b2ec r GCC_except_table135
-000000000022bd18 r GCC_except_table135
-000000000022b2f8 r GCC_except_table136
-000000000022bd34 r GCC_except_table136
-000000000022bd50 r GCC_except_table137
-000000000022bd6c r GCC_except_table138
-000000000022bd98 r GCC_except_table139
-000000000022b140 r GCC_except_table14
-000000000022bdc4 r GCC_except_table140
-000000000022b304 r GCC_except_table147
-000000000022b4f4 r GCC_except_table15
-000000000022b150 r GCC_except_table17
-000000000022b50c r GCC_except_table17
-000000000022b314 r GCC_except_table178
-000000000022b520 r GCC_except_table18
-000000000022b53c r GCC_except_table19
-000000000022b360 r GCC_except_table193
-000000000022b394 r GCC_except_table194
-000000000022b1e0 r GCC_except_table2
-000000000022b204 r GCC_except_table2
-000000000022b234 r GCC_except_table2
-000000000022b434 r GCC_except_table2
-000000000022b57c r GCC_except_table2
-000000000022b554 r GCC_except_table20
-000000000022b568 r GCC_except_table21
-000000000022b3a4 r GCC_except_table226
-000000000022b3bc r GCC_except_table245
-000000000022b624 r GCC_except_table26
-000000000022b44c r GCC_except_table3
-000000000022b464 r GCC_except_table3
-000000000022b614 r GCC_except_table3
-000000000022b3cc r GCC_except_table387
-000000000022b3e8 r GCC_except_table388
-000000000022b0b4 r GCC_except_table4
-000000000022b478 r GCC_except_table4
-000000000022b5fc r GCC_except_table4
-000000000022b640 r GCC_except_table43
-000000000022b608 r GCC_except_table5
-000000000022b650 r GCC_except_table55
-000000000022b680 r GCC_except_table57
-000000000022b690 r GCC_except_table58
-000000000022b218 r GCC_except_table6
-000000000022b6b8 r GCC_except_table60
-000000000022b6d0 r GCC_except_table66
-000000000022b6f4 r GCC_except_table67
-000000000022b718 r GCC_except_table69
-000000000022b730 r GCC_except_table70
-000000000022b748 r GCC_except_table72
-000000000022b76c r GCC_except_table74
-000000000022b790 r GCC_except_table75
-000000000022b7a4 r GCC_except_table76
-000000000022b7b8 r GCC_except_table78
-000000000022b7e4 r GCC_except_table79
-000000000022b48c r GCC_except_table8
-000000000022b7f8 r GCC_except_table80
-000000000022b814 r GCC_except_table81
-000000000022b828 r GCC_except_table82
-000000000022b844 r GCC_except_table84
-000000000022b244 r GCC_except_table86
-000000000022b85c r GCC_except_table87
-000000000022b870 r GCC_except_table88
-000000000022b110 r GCC_except_table9
-000000000022b884 r GCC_except_table90
-000000000022b89c r GCC_except_table92
-000000000022b8b0 r GCC_except_table93
-000000000022b8c0 r GCC_except_table94
-000000000022b8dc r GCC_except_table95
-000000000025c790 T gc_close_region
-00000000002d58e0 B gc_coalesce_string_literals
-0000000000246e70 T gc_common_init
-000000000025c6e0 T gc_dispose_private_pages
-000000000025cfd0 T gc_find_freeish_pages
-000000000025df60 T gc_gen_of
-000000000025d2a0 T gc_heap_exhausted_error_or_lose
-00000000002493d0 T gc_heapsort_uwords
-0000000000260790 T gc_init
-0000000000260d60 T gc_load_corefile_ptes
-00000000002d55c0 B gc_logfile
-000000000024f700 T gc_managed_addr_p
-000000000024f620 T gc_managed_heap_space_p
-0000000000259f90 T gc_mark_obj
-0000000000259fa0 T gc_mark_range
-00000000002d5048 b gc_max_duration
-00000000002d2df0 d gc_min_duration
-00000000002d57f8 B gc_n_stack_pins
-00000000002d57f0 B gc_object_watcher
-000000000025c4b0 T gc_private_cons
-000000000025c6b0 T gc_private_free
-0000000000263280 T gc_prove_liveness
-0000000000245ef0 T gc_scav_pair
-0000000000248fb0 T gc_search_space3
-0000000000261300 T gc_show_pte
-00000000002d49f8 B gc_sigset
-0000000000255f50 T gc_start_the_world
-00000000002d50a8 b gc_start_time
-0000000000255e00 T gc_stop_the_world
-0000000000261240 T gc_store_corefile_ptes
-00000000002d5040 b gc_sum_duration
-00000000002d5868 B gc_traceroot_criterion
-00000000002d5420 B gencgc_alloc_granularity
-00000000002d586c B gencgc_alloc_profiler
-00000000002d58e8 b gencgc_alloc_start_page
-0000000000260950 T gencgc_handle_wp_violation
-00000000002d2e39 D gencgc_oldest_gen_to_gc
-00000000002d2e40 D gencgc_release_granularity
-00000000002d53f8 B gencgc_verbose
-00000000002d5400 B gencgc_zero_check
-000000000025b8c0 T generation_average_age
-00000000002d5430 B generations
-000000000025dff0 T gen_of
-0000000000244f30 T get_asm_routine_by_name
-000000000026f120 T get_crc_table
-00000000002cb2b4 T getcwd
-00000000002bf9a4 W __getdelim
-00000000002bf9a4 T getdelim
-00000000002bc3b8 T getdtablesize
-00000000002bb8bc T getenv
-00000000002be280 t __get_handler_set
-00000000002571a0 T get_h_errno
-00000000002bf994 T getline
-00000000002ca5fd t getname
-00000000002ca685 t getoff
-00000000002bc3e8 T getpagesize
-00000000002cb344 T getpgrp
-00000000002cb350 T getpid
-00000000002bd1d8 t __getpw_a
-00000000002bd123 T getpwent
-00000000002bd574 t __getpwent_a
-00000000002bd1aa T getpwnam
-00000000002bd17b T getpwuid
-00000000002bc84c T getrlimit
-00000000002bc84c W getrlimit64
-00000000002ca76a t getrule
-00000000002bc900 T getrusage
-000000000022a598 r __gettext_lockptr
-00000000002561c0 T get_timezone
-000000000024a1f0 t get_val1
-000000000024a200 t get_val2
-000000000024a210 t get_val4
-000000000024a220 t get_val8
-0000000000249c20 T globals_init
-000000000028c520 t _GLOBAL__sub_I_dlfcn.cpp
-0000000000278cc0 t _GLOBAL__sub_I_symbols.cpp
-00000000002cae68 t __gmtime_r
-00000000002cae68 W gmtime_r
-000000000024f1d0 T gpr_murmur_hash3
-00000000002224f0 r gprnames
-000000000024eca0 t grab_sigs_cmd
-00000000002b15d0 T __gxx_personality_v0
-00000000002439c0 T handle_breakpoint
-0000000000243ac0 T handle_fun_end_breakpoint
-000000000024ce40 T handle_guard_page_triggered
-000000000024def0 T handle_memory_fault_emulation_trap
-0000000000337248 b handler_set
-0000000000243be0 T handle_single_step_trap
-000000000024dfe0 T handle_trap
-0000000000336dc8 b head
-0000000000246030 T heap_scavenge
-00000000002db970 B heap_trace_verbose
-000000000024e440 t help_cmd
-0000000000337060 B h_errno
-00000000002bd0e4 T __h_errno_location
-00000000002c4cb0 t hexfloat
-000000000024abd0 T hopscotch_containsp
-0000000000249ef0 T hopscotch_create
-000000000024b130 T hopscotch_delete
-000000000024a230 T hopscotch_destroy
-000000000024ad40 T hopscotch_get
-000000000024ae90 T hopscotch_get_ref
-0000000000249c30 T hopscotch_hmix
-0000000000249c60 T hopscotch_init
-000000000024a7f0 T hopscotch_insert
-000000000024ab70 T hopscotch_log_stats
-000000000024afd0 T hopscotch_put
-000000000024a2f0 T hopscotch_reset
-000000000024a490 T hopscotch_resize_up
-0000000000337058 b __hwcap
-00000000002d5870 B ignore_memoryfaults_on_unprotected_pages
-00000000002dba68 B immobile_alloc_collisions
-0000000000265b90 T immobile_card_protected_p
-00000000002dba58 B immobile_range_1_max_offset
-00000000002dba60 B immobile_range_2_min_offset
-00000000002dba10 B immobile_scav_queue
-00000000002dba08 B immobile_scav_queue_count
-00000000002dba18 B immobile_scav_queue_head
-0000000000267540 T immobile_space_coreparse
-0000000000268d80 T immobile_space_handle_wp_violation
-00000000002dba48 B immobile_space_lower_bound
-00000000002dba50 B immobile_space_max_offset
-00000000002661b0 T immobile_space_preserve_pointer
-00000000002dba78 B immobile_space_reloc_index
-00000000002dba80 B immobile_space_relocs
-00000000003383c0 b index
-000000000026fd20 T inflate
-0000000000272ad0 T inflateCodesUsed
-0000000000272830 T inflateCopy
-0000000000225790 R inflate_copyright
-0000000000272320 T inflateEnd
-0000000000272b20 t inflate_fast
-0000000000272390 T inflateGetDictionary
-0000000000272500 T inflateGetHeader
-000000000026fbc0 T inflateInit_
-000000000026fae0 T inflateInit2_
-0000000000272a60 T inflateMark
-0000000000224ee0 r inflate.order
-000000000026fca0 T inflatePrime
-000000000026f880 T inflateReset
-000000000026f940 T inflateReset2
-000000000026f7c0 T inflateResetKeep
-0000000000272420 T inflateSetDictionary
-0000000000272550 T inflateSync
-00000000002727e0 T inflateSyncPoint
-00000000002739d0 t inflate_table
-0000000000225840 r inflate_table.dbase
-0000000000225880 r inflate_table.dext
-00000000002257c0 r inflate_table.lbase
-0000000000225800 r inflate_table.lext
-00000000002729c0 T inflateUndermine
-0000000000272a10 T inflateValidate
-00000000002d50e0 b in_gc_lock
-00000000002c7d68 t __inhibit_ptc
-00000000002cb4a0 W _init
-00000000002cc6e0 d __init_array_end
-00000000002cc6c8 d __init_array_start
-0000000000274200 t init_block
-00000000002cb4a2 t __init_libc
-00000000002cb4a1 t __init_ssp
-00000000002bdfc3 t __init_tls
-00000000002bdedc t __init_tp
-000000000024bfc0 T in_leaving_without_gcing_race_p
-000000000024d4d0 T install_handler
-00000000002d2a18 D install_sig_memory_fault_handler
-00000000002512f0 T instance_classoid_name
-00000000002d2520 D internal_error_descriptions
-00000000002d2980 D internal_error_nargs
-00000000002d48f0 B internal_errors_enabled
-000000000024c750 T interrupt_handle_now
-000000000024c970 T interrupt_handle_now_handler
-000000000024c2c0 T interrupt_handle_pending
-000000000024be60 T interrupt_handler_pending_p
-000000000024dc10 T interrupt_init
-000000000024c1d0 T interrupt_internal_error
-00000000002d4c90 b interrupt_low_level_handlers
-00000000002c5740 t __intscan
-00000000002bc914 T ioctl
-00000000002beddc W _IO_ferror_unlocked
-00000000002bfe00 W _IO_putc
-00000000002bb778 T islower
-00000000002bb784 T __islower_l
-00000000002bb784 W islower_l
-00000000002c5eec T iswspace
-00000000002c5f10 T __iswspace_l
-00000000002c5f10 W iswspace_l
-000000000022af70 r iswspace.spaces
-00000000002bb790 T isxdigit
-00000000002bb7ab T __isxdigit_l
-00000000002bb7ab W isxdigit_l
-00000000003382f0 b key_lock
-0000000000337ef0 b keys
-00000000002be214 T kill
-000000000024ed00 t kill_cmd
-00000000002d53f0 B large_allocation
-00000000002dbac0 b large_os_page_size
-0000000000251270 T layout_classoid_name
-000000000026aa6c t Lcall
-00000000002bc414 t __lctrans
-00000000002bc419 t __lctrans_cur
-00000000002bc410 t __lctrans_impl
-00000000002d4e98 b ldb_in
-000000000024e240 T ldb_monitor
-00000000002d4f00 b ldb_print_nlx
-00000000002bdce4 t __ldso_atfork
-0000000000225ac0 r _length_code
-0000000000336ff0 b __libc
-00000000002be56c T __libc_current_sigrtmax
-00000000002bbee9 t __libc_exit_fini
-00000000002bbee9 t libc_exit_fini
-00000000002be28f t __libc_sigaction
-00000000002cb61e t __libc_start_init
-00000000002cb61e t libc_start_init
-00000000002cb63c T __libc_start_main
-00000000002cb670 t libc_start_main_stage2
-00000000002225f0 R libm_anchor
-00000000002d2dc8 d libpath
-0000000000291c28 t __libunwind_Registers_x86_64_jumpto
-00000000003370a0 b line
-00000000002607a0 T lisp_alloc
-0000000000243570 T lisp_backtrace
-0000000000244080 T lisp_code_in_elf
-00000000002d58f0 B lisp_init_function
-00000000002d4fc8 B lisp_init_time
-00000000002d4ea8 B lisp_linkage_table_n_prelinked
-000000000024dd60 T lisp_memory_fault_error
-00000000002d2d40 D lisp_register_names
-00000000002dba98 b lisp_rel_section_offset
-00000000002dbaa0 b lisp_rel_section_size
-00000000002d4a80 B lisp_sig_handlers
-00000000002d4fe8 B lisp_startup_options
-0000000000254b60 T lisp_symbol_from_tls_index
-000000000024d370 T ll_install_handler
-000000000024f680 T load_core_bytes
-0000000000244320 T load_core_file
-000000000022a598 r __locale_lockptr
-00000000002cb13c t __localtime_r
-00000000002cb13c W localtime_r
-00000000002c7c58 t __lock
-0000000000336dc4 b lock
-0000000000337aa0 b lock
-0000000000338350 b lock
-00000000002becfc t __lockfile
-00000000002bf3f7 t locking_putc
-00000000002bfe4f t locking_putc
-00000000002bff4f t locking_putc
-000000000028d320 t logAPIs
-00000000002431f0 T log_backtrace_from_fp
-000000000028df30 t logDWARF
-000000000025bd80 T log_generation_stats
-000000000028def0 t logUnwinding
-000000000026aa5e t Lone
-000000000026e920 t longest_match
-00000000002be174 T _longjmp
-00000000002be174 T longjmp
-0000000000256990 T lookup_by_name
-0000000000256a60 T lookup_by_obj
-000000000024b2e0 T lose
-00000000002d48e0 B lose_on_corruption_p
-00000000002d2510 d lossage_handler
-000000000024cd90 T lower_thread_control_stack_guard_page
-000000000024d460 t low_level_handle_now_handler
-0000000000222310 r lowtag_names
-00000000002cb35c t __lseek
-00000000002cb35c W lseek
-00000000002cb35c W lseek64
-000000000024e1b0 T lseek_largefile
-000000000026aa74 t LsingleValue
-000000000026aa00 t lspmain
-000000000026aa24 t Lstack
-00000000002be8d4 T lstat
-00000000002be8d4 W lstat64
-000000000024e210 T lstat_largefile
-0000000000256ea0 T lstat_wrapper
-00000000002bc400 t __lsysinfo
-000000000026aa5a t Ltwo
-000000000026aa61 t Lzero
-00000000002bcfb0 t __madvise
-00000000002bcfb0 W madvise
-000000000024e230 T main
-00000000003370b8 b main_tls
-0000000000256b50 t make_var
-0000000000278cd0 t malloc
-00000000002bdce4 t __malloc_atfork
-00000000002797a0 T malloc_good_size
-00000000002795e0 T malloc_size
-00000000002795e0 T malloc_usable_size
-00000000002ca8b4 t __map_file
-00000000003383b0 b map_size
-00000000002d5348 B mark_bits
-0000000000259cc0 T __mark_obj
-000000000025abb0 t mark_pair
-00000000002d4778 B max_alloc_point_counters
-00000000002d4ef0 b max_depth
-00000000002d4ef4 b max_lines
-00000000002491d0 T maybe_gc
-000000000024d6d0 t maybe_now_maybe_later
-000000000024bf10 T maybe_save_gc_mask_and_block_deferrables
-00000000002c3564 T mbtowc
-0000000000279860 T memalign
-00000000002c60f0 T memchr
-00000000002c62b0 T memcmp
-00000000002c79d0 T memcpy
-00000000002c79d0 t __memcpy_fwd
-00000000002c7a04 T memmove
-000000000026ab10 T memory_fault_emulation_trap
-00000000002c6c20 t __memrchr
-00000000002c6c20 W memrchr
-00000000002c7a2c T memset
-0000000000280ef0 t _mi_abandoned_await_readers
-0000000000280f70 t _mi_abandoned_reclaim_all
-0000000000287240 t mi_aligned_alloc
-0000000000287400 t mi_aligned_offset_recalloc
-0000000000287410 t mi_aligned_recalloc
-0000000000285c90 t _mi_arena_alloc
-00000000002859e0 t _mi_arena_alloc_aligned
-0000000000285af0 t mi_arena_allocate
-00000000002865f0 t mi_arena_alloc_from
-000000000032df80 b mi_arena_count
-0000000000285cc0 t _mi_arena_free
-000000000032dd80 b mi_arenas
-000000000027ae70 t _mi_bin
-000000000027aec0 t _mi_bin_size
-0000000000284cc0 t _mi_bitmap_claim
-00000000002854c0 t _mi_bitmap_claim_across
-0000000000284d80 t _mi_bitmap_is_any_claimed
-0000000000285870 t _mi_bitmap_is_any_claimed_across
-0000000000284d30 t _mi_bitmap_is_claimed
-00000000002856f0 t _mi_bitmap_is_claimed_across
-00000000002848f0 t _mi_bitmap_try_find_claim_field
-00000000002849d0 t _mi_bitmap_try_find_from_claim
-0000000000284dd0 t _mi_bitmap_try_find_from_claim_across
-0000000000284c50 t _mi_bitmap_unclaim
-0000000000285260 t _mi_bitmap_unclaim_across
-0000000000279940 t _mi_block_zero_init
-000000000027fd90 t mi_buffered_out
-0000000000278d10 t mi_calloc
-0000000000286a90 t mi_calloc_aligned
-0000000000286a30 t mi_calloc_aligned_at
-0000000000287070 t mi_cfree
-0000000000287d50 t mi_check_owned
-00000000002dbb50 b mi_clock_diff
-000000000027fbc0 t _mi_clock_end
-000000000027fb70 t _mi_clock_now
-000000000027ef20 t _mi_clock_start
-0000000000287660 t mi_collect
-0000000000282ba0 t mi_commit_mask_all_set
-0000000000282c90 t mi_commit_mask_any_set
-0000000000280210 t _mi_commit_mask_committed_size
-0000000000284540 t mi_commit_mask_decommit
-0000000000280650 t _mi_commit_mask_next_run
-0000000000289bb0 t _mi_current_thread_count
-0000000000286030 t mi_debug_show_arenas
-000000000027c3c0 t _mi_deferred_free
-0000000000287350 t mi_dupenv_s
-000000000032dfb0 b mi_error_arg
-000000000032dfa8 b mi_error_handler
-0000000000289800 t _mi_error_message
-00000000002872c0 t mi__expand
-000000000027a000 t mi_expand
-000000000027c580 t mi_find_page
-00000000002893f0 t _mi_fprintf
-0000000000289340 t _mi_fputs
-0000000000278e20 t mi_free
-0000000000278fa0 t mi_free_aligned
-000000000027ade0 t _mi_free_block_mt
-0000000000279da0 t _mi_free_delayed_block
-0000000000279cc0 t mi_free_generic
-0000000000278ea0 t mi_free_size
-0000000000279120 t mi_free_size_aligned
-000000000027aee0 t mi_good_size
-0000000000287fa0 t mi_heap_area_visitor
-0000000000279e30 t mi_heap_calloc
-0000000000286960 t mi_heap_calloc_aligned
-0000000000286910 t mi_heap_calloc_aligned_at
-0000000000287c50 t mi_heap_check_owned
-0000000000287650 t mi_heap_collect
-0000000000287420 t _mi_heap_collect_abandon
-0000000000287430 t mi_heap_collect_ex
-000000000027c2a0 t _mi_heap_collect_retired
-0000000000287be0 t mi_heap_contains_block
-0000000000000000 d _mi_heap_default
-00000000002d43c0 d _mi_heap_default_key
-000000000027b690 t _mi_heap_delayed_free
-0000000000287a60 t mi_heap_delete
-00000000002878b0 t mi_heap_destroy
-00000000002877b0 t _mi_heap_destroy_pages
-00000000002cc700 d _mi_heap_empty
-00000000002876a0 t mi_heap_get_backing
-0000000000287680 t mi_heap_get_default
-00000000002d37d0 d _mi_heap_main
-0000000000289aa0 t _mi_heap_main_get
-0000000000289b20 t mi_heap_main_init
-0000000000279910 t mi_heap_malloc
-00000000002868e0 t mi_heap_malloc_aligned
-0000000000286730 t mi_heap_malloc_aligned_at
-0000000000279f10 t mi_heap_mallocn
-00000000002798a0 t mi_heap_malloc_small
-0000000000279a20 t _mi_heap_malloc_zero
-0000000000286740 t mi_heap_malloc_zero_aligned_at
-00000000002876c0 t mi_heap_new
-00000000002877a0 t _mi_heap_random_next
-000000000027a450 t mi_heap_realloc
-0000000000286c90 t mi_heap_realloc_aligned
-0000000000286af0 t mi_heap_realloc_aligned_at
-000000000027a4a0 t mi_heap_reallocf
-000000000027a460 t mi_heap_reallocn
-000000000027a150 t _mi_heap_realloc_zero
-0000000000286b00 t mi_heap_realloc_zero_aligned_at
-000000000027a8c0 t mi_heap_realpath
-000000000027a560 t mi_heap_recalloc
-0000000000286da0 t mi_heap_recalloc_aligned
-0000000000286d50 t mi_heap_recalloc_aligned_at
-000000000027a550 t mi_heap_rezalloc
-0000000000286cf0 t mi_heap_rezalloc_aligned
-0000000000286ce0 t mi_heap_rezalloc_aligned_at
-0000000000287bb0 t mi_heap_set_default
-000000000028a070 t _mi_heap_set_default_direct
-000000000027a670 t mi_heap_strdup
-000000000027a780 t mi_heap_strndup
-0000000000287e60 t mi_heap_visit_blocks
-0000000000279ae0 t mi_heap_zalloc
-0000000000286900 t mi_heap_zalloc_aligned
-00000000002868f0 t mi_heap_zalloc_aligned_at
-00000000002dbb40 b mi_huge_start
-0000000000284800 t mi_is_in_heap_region
-0000000000289b90 t _mi_is_main_thread
-000000000028a0a0 t mi_is_redirected
-000000000027ca70 t mi_large_huge_page_alloc
-0000000000278cd0 t mi_malloc
-00000000002869d0 t mi_malloc_aligned
-00000000002869b0 t mi_malloc_aligned_at
-000000000027c420 t _mi_malloc_generic
-0000000000287060 t mi_malloc_good_size
-0000000000279f80 t mi_mallocn
-0000000000287040 t mi_malloc_size
-00000000002798d0 t mi_malloc_small
-0000000000287050 t mi_malloc_usable_size
-0000000000285e00 t mi_manage_os_memory
-00000000002d31a8 d mi_max_error_count
-00000000002d31b0 d mi_max_warning_count
-0000000000287340 t mi_mbsdup
-0000000000287170 t mi_memalign
-0000000000279220 t mi_new
-00000000002793a0 t mi_new_aligned
-0000000000279460 t mi_new_aligned_nothrow
-000000000027ac00 t mi_new_n
-00000000002792e0 t mi_new_nothrow
-000000000027aca0 t mi_new_realloc
-000000000027ad10 t mi_new_reallocn
-00000000002dbac8 b _mi_numa_node_count
-00000000002892c0 t mi_option_disable
-00000000002892a0 t mi_option_enable
-0000000000288d00 t mi_option_get
-0000000000288e70 t mi_option_init
-0000000000289220 t mi_option_is_enabled
-00000000002891e0 t mi_option_set
-0000000000289200 t mi_option_set_default
-0000000000289260 t mi_option_set_enabled
-0000000000289280 t mi_option_set_enabled_default
-0000000000288b50 t _mi_options_init
-000000000027d100 t _mi_os_alloc
-000000000027d3a0 t _mi_os_alloc_aligned
-000000000027e390 t _mi_os_alloc_huge_os_pages
-000000000027d9d0 t _mi_os_commit
-000000000027d9e0 t mi_os_commitx
-000000000027dc30 t _mi_os_decommit
-000000000027d390 t _mi_os_free
-000000000027d260 t _mi_os_free_ex
-000000000027e710 t _mi_os_free_huge_pages
-000000000027cff0 t _mi_os_good_alloc_size
-000000000027cfb0 t _mi_os_has_overcommit
-000000000027d080 t _mi_os_init
-000000000027cfd0 t _mi_os_large_page_size
-000000000027e7d0 t _mi_os_numa_node_count_get
-000000000027e870 t _mi_os_numa_node_get
-000000000027cfc0 t _mi_os_page_size
-000000000027e090 t _mi_os_protect
-0000000000288270 t _mi_os_random_weak
-000000000027dd20 t _mi_os_reset
-000000000027de40 t mi_os_resetx
-00000000002d2e70 d mi_os_resetx.advice
-000000000027e260 t _mi_os_shrink
-000000000027e170 t _mi_os_unprotect
-000000000027dfa0 t _mi_os_unreset
-000000000032df98 b mi_out_arg
-0000000000289a30 t mi_out_buf
-00000000002899b0 t mi_out_buf_stderr
-000000000032df90 b mi_out_default
-0000000000289330 t mi_out_stderr
-000000000027bc00 t _mi_page_abandon
-0000000000226440 r _mi_page_empty
-000000000027be70 t _mi_page_free
-000000000027b290 t _mi_page_free_collect
-000000000027cf30 t mi_page_free_list_extend
-000000000027cbc0 t mi_page_fresh_alloc
-0000000000279880 t _mi_page_malloc
-0000000000279c50 t _mi_page_ptr_unalign
-000000000027afb0 t _mi_page_queue_append
-000000000027b7b0 t mi_page_queue_enqueue_from
-000000000027b380 t _mi_page_reclaim
-000000000027c170 t _mi_page_retire
-000000000027b710 t _mi_page_unfull
-000000000027b220 t _mi_page_use_delayed_free
-00000000002dbaa8 b mi_path_max.path_max
-0000000000287090 t mi_posix_memalign
-000000000028a090 t _mi_preloading
-0000000000280060 t mi_printf_amount
-000000000028a140 t mi_process_done
-0000000000336282 b mi_process_done.process_done
-000000000027fc10 t mi_process_info
-000000000028a0b0 t _mi_process_init
-0000000000289dc0 t mi_process_init
-0000000000336000 b _mi_process_is_initialized
-0000000000336281 b mi_process_setup_auto_thread_done.tls_initialized
-00000000002dbb48 b mi_process_start
-000000000028a130 t mi_pthread_done
-00000000002871d0 t mi_pvalloc
-0000000000288380 t _mi_random_init
-00000000002881d0 t _mi_random_next
-0000000000288170 t _mi_random_split
-0000000000278e00 t mi_realloc
-0000000000286e40 t mi_realloc_aligned
-0000000000286e20 t mi_realloc_aligned_at
-0000000000287290 t mi_reallocarray
-0000000000279520 t mi_reallocf
-000000000027a5a0 t mi_reallocn
-000000000027aac0 t mi_realpath
-000000000027a610 t mi_recalloc
-0000000000286fa0 t mi_recalloc_aligned
-0000000000286f40 t mi_recalloc_aligned_at
-000000000027c410 t mi_register_deferred_free
-00000000002897f0 t mi_register_error
-00000000002892e0 t mi_register_output
-0000000000286480 t mi_reserve_huge_os_pages
-0000000000286180 t mi_reserve_huge_os_pages_at
-0000000000286370 t mi_reserve_huge_os_pages_interleave
-0000000000285f40 t mi_reserve_os_memory
-000000000027a5f0 t mi_rezalloc
-0000000000286ed0 t mi_rezalloc_aligned
-0000000000286ea0 t mi_rezalloc_aligned_at
-0000000000280cd0 t mi_segment_abandon
-0000000000283df0 t _mi_segment_cache_pop
-0000000000284390 t mi_segment_cache_purge
-0000000000284030 t _mi_segment_cache_push
-0000000000282390 t mi_segment_commitx
-0000000000282d40 t mi_segment_delayed_decommit
-0000000000280b10 t mi_segment_free
-00000000002813a0 t _mi_segment_huge_page_free
-0000000000283260 t mi_segment_init
-0000000000323d40 b mi_segment_map
-0000000000284760 t _mi_segment_map_allocated_at
-00000000002847b0 t _mi_segment_map_freed_at
-00000000002807e0 t mi_segment_os_free
-0000000000280f10 t _mi_segment_page_abandon
-0000000000281550 t _mi_segment_page_alloc
-00000000002809f0 t mi_segment_page_clear
-0000000000280990 t _mi_segment_page_free
-0000000000280710 t _mi_segment_page_start
-00000000002810d0 t mi_segment_reclaim
-00000000002815d0 t mi_segments_page_alloc
-0000000000282fc0 t mi_segment_span_allocate
-0000000000281dc0 t mi_segment_span_free
-0000000000281b20 t mi_segment_span_free_coalesce
-0000000000281d20 t mi_segment_span_remove_from_queue
-0000000000280760 t _mi_segment_thread_collect
-000000000027ecd0 t _mi_stat_counter_increase
-000000000027ed80 t _mi_stat_decrease
-000000000027ed00 t _mi_stat_increase
-000000000027fe40 t mi_stat_print
-000000000027f530 t _mi_stats_done
-0000000000336040 b _mi_stats_main
-000000000027eff0 t mi_stats_merge
-000000000027f010 t mi_stats_merge_from
-000000000027f580 t _mi_stats_print
-000000000027fb10 t mi_stats_print
-000000000027f540 t mi_stats_print_out
-000000000027ee00 t mi_stats_reset
-000000000027a6f0 t mi_strdup
-000000000027a820 t mi_strndup
-0000000000289f50 t _mi_thread_done
-0000000000289f40 t mi_thread_done
-0000000000289bc0 t mi_thread_init
-000000000027fb40 t mi_thread_stats_print_out
-0000000000289520 t _mi_trace_message
-000000000027aaf0 t mi_try_new
-000000000027abc0 t mi_try_new_handler
-000000000027e980 t mi_unix_mmap
-00000000002dbad0 b mi_unix_mmap.large_page_try_ok
-00000000002dbad8 b mi_unix_mmap.mi_huge_pages_available
-000000000027eb90 t mi_unix_mmapx
-00000000002795e0 t mi_usable_size
-00000000002871a0 t mi_valloc
-0000000000288d30 t _mi_verbose_message
-0000000000288b40 t mi_version
-0000000000289660 t _mi_warning_message
-00000000002872f0 t mi_wcsdup
-00000000002873d0 t mi_wdupenv_s
-0000000000279b90 t mi_zalloc
-0000000000286a10 t mi_zalloc_aligned
-00000000002869f0 t mi_zalloc_aligned_at
-0000000000279970 t mi_zalloc_small
-00000000002c7afc t __mkostemps
-00000000002c7afc W mkostemps
-00000000002c7afc W mkostemps64
-00000000002c7af0 T mkstemp
-00000000002c7af0 W mkstemp64
-00000000002bcfc5 t __mmap
-00000000002bcfc5 W mmap
-00000000002bcfc5 W mmap64
-000000000024e1e0 T mmap_largefile
-000000000024e430 T monitor_or_something
-00000000002ca898 t __month_to_secs
-000000000022b040 r __month_to_secs.secs_through_month
-000000000024f7b0 T more_p
-00000000002bd084 t __mprotect
-00000000002bd084 W mprotect
-00000000002c88bd t __mremap
-00000000002c88bd W mremap
-000000000026aaee t multiple_value_return
-00000000002bd0b5 t __munmap
-00000000002bd0b5 W munmap
-000000000024f300 T murmur3_fmix32
-000000000024f330 T murmur3_fmix64
-00000000002d5130 b NameHash
-00000000002cb1a8 T nanosleep
-00000000002d5960 b new_areas
-00000000002d5970 b new_areas_1
-00000000002d8970 b new_areas_2
-00000000002d5958 b new_areas_index
-00000000002d58f8 B new_areas_index_hwm
-0000000000252670 t newline
-00000000002d5058 B new_lisp_thread_attr
-00000000002d55cb B new_space
-0000000000263020 t newspace_full_scavenge
-00000000002558b0 T new_thread_trampoline
-00000000002d55b0 B next_free_page
-0000000000337ee0 b next_key
-00000000002d5050 B n_gcs_done
-00000000002c8a70 t nodtor
-00000000002d55f0 B n_scav_calls
-00000000002d56f0 B n_scav_skipped
-00000000002bd708 t __nscd_query
-00000000002d5230 b ObjHash
-0000000000250790 T odxprint_fun
-00000000002bfc5c t __ofl_add
-0000000000337270 b ofl_head
-00000000002bfc40 t __ofl_lock
-0000000000337268 b ofl_lock
-00000000002bfc52 t __ofl_unlock
-00000000002d46f0 d old_tz
-00000000003383e0 b old_tz_buf
-00000000002d46f8 d old_tz_size
-00000000002bc160 T open
-00000000002bc160 W open64
-00000000002bb80c T opendir
-00000000002d2f80 d options
-000000000024f370 T os_allocate
-0000000000259c50 T os_context_float_register_addr
-0000000000259c30 T os_context_fp_addr
-0000000000259c40 T os_context_fp_control
-0000000000259c10 T os_context_pc_addr
-0000000000259bf0 T os_context_register_addr
-0000000000259c70 T os_context_sigmask_addr
-0000000000259c20 T os_context_sp_addr
-000000000024f3b0 T os_deallocate
-000000000024f500 T os_dlsym_default
-0000000000259cb0 T os_flush_icache
-000000000024f3d0 T os_get_errno
-00000000002590f0 T os_get_runtime_executable_path
-0000000000258e90 T os_init
-0000000000259080 T os_install_interrupt_handlers
-0000000000259270 T os_invalidate
-000000000024f530 T os_link_runtime
-00000000002d2e60 d os_overcommit
-00000000002d2e68 d os_page_size
-0000000000258f10 T os_preinit
-0000000000336280 b os_preloading
-0000000000259030 T os_protect
-00000000002d5128 B os_reported_page_size
-0000000000259c80 T os_restore_fp_control
-000000000024f4c0 T os_sem_destroy
-000000000024f3e0 T os_sem_init
-000000000024f480 T os_sem_post
-000000000024f430 T os_sem_wait
-000000000024f610 T os_unlink_runtime
-0000000000259140 T os_validate
-00000000002d2a10 D os_vm_page_size
-000000000032dfc0 b out_buf
-000000000032dfb8 b out_len
-0000000000253ec0 t output_space
-00000000002223d0 r output_space.names
-00000000002bf49c T __overflow
-00000000002c2176 t pad
-000000000025b880 T page_address
-00000000002dba28 b page_attributes_valid
-0000000000260b00 t page_scan_start_offset
-00000000002d55b8 B page_table
-00000000002d55d8 B page_table_pages
-00000000002481b0 t pair_follow_fps
-000000000024f9e0 T parse_addr
-000000000024fbe0 T parse_lispobj
-000000000024f870 T parse_number
-0000000000253370 t parse_size_arg
-000000000024f7f0 T parse_token
-0000000000257010 T passwd_homedir
-00000000002bb5c0 T pathconf
-00000000002bfc88 T perror
-00000000002bc3f0 T personality
-00000000002d58fc B pin_all_dynamic_space_code
-00000000002d5800 B pinned_objects
-00000000002629b0 t pin_object
-00000000002db980 b pin_seek_state.0
-00000000002db988 b pin_seek_state.1
-00000000002cb374 T pipe
-0000000000246d20 t pointer_survived_gc_yet
-000000000025abf0 t pointer_survived_gc_yet
-00000000002c1fb6 t pop_arg
-00000000002c31aa t pop_arg
-00000000002d4ff8 B posix_argv
-00000000002797b0 T posix_memalign
-000000000026ab20 T post_signal_tramp
-00000000002c961c T prctl
-0000000000263180 t prepare_for_final_gc
-000000000025a5e0 T prepare_for_full_mark_phase
-0000000000267900 T prepare_immobile_space_for_final_gc
-0000000000267b20 T prepare_immobile_space_for_save
-00000000002543f0 T prepare_to_save
-0000000000260750 t preserve_context_registers
-00000000002626b0 t preserve_pointer
-00000000002d53fc B pre_verify_gen_0
-0000000000250e70 T print
-0000000000243400 t print_backtrace_frame
-000000000024ed50 t print_cmd
-000000000024b5c0 T print_constant
-000000000024eed0 t print_context
-000000000024e800 t print_context_cmd
-00000000002436d0 t print_entry_name
-00000000002bfd6c T printf
-00000000002c03c2 t printf_core
-00000000002513d0 t print_fixnum
-0000000000251750 t print_fun_or_otherptr
-000000000025bd70 T print_generation_stats
-00000000002535f0 t print_help
-0000000000251710 t print_list
-000000000024b3b0 t print_message
-0000000000250ed0 t print_obj
-0000000000222290 r print_obj.brief_fns
-0000000000222210 r print_obj.print_fns
-0000000000251400 t print_otherimm
-0000000000252700 t print_slots
-0000000000242fc0 t print_string
-0000000000251470 t print_struct
-0000000000253600 t print_version
-00000000002c83ff t __private_cond_signal
-00000000002d2e50 d private_cons_page_chain
-00000000002d55d0 b private_cons_recycle_list
-00000000002be680 t __procfdname
-00000000002d4780 b profile_buffer_size
-0000000000336fe0 B __progname
-0000000000336fe8 B __progname_full
-0000000000336fe8 V program_invocation_name
-0000000000336fe0 V program_invocation_short_name
-00000000002490a0 T properly_tagged_p_internal
-0000000000256650 T protect_alien_stack_guard_page
-0000000000256620 T protect_alien_stack_hard_guard_page
-0000000000256690 T protect_alien_stack_return_guard_page
-00000000002565a0 T protect_binding_stack_guard_page
-0000000000256560 T protect_binding_stack_hard_guard_page
-00000000002565e0 T protect_binding_stack_return_guard_page
-00000000002564e0 T protect_control_stack_guard_page
-00000000002564b0 T protect_control_stack_hard_guard_page
-0000000000256520 T protect_control_stack_return_guard_page
-0000000000264cf0 T prove_liveness
-000000000024ed80 t pte_cmd
-00000000002c7d88 T pthread_attr_destroy
-00000000002c7d8c T pthread_attr_getdetachstate
-00000000002c7d94 T pthread_attr_getguardsize
-00000000002c7d9e T pthread_attr_getinheritsched
-00000000002c7da6 T pthread_attr_getschedparam
-00000000002c7dae T pthread_attr_getschedpolicy
-00000000002c7db6 T pthread_attr_getscope
-00000000002c7dbf T pthread_attr_getstack
-00000000002c7ddd T pthread_attr_getstacksize
-00000000002c7e44 T pthread_attr_init
-00000000002c7de6 T pthread_barrierattr_getpshared
-00000000002c92e9 T _pthread_cleanup_pop
-00000000002c92dd T _pthread_cleanup_push
-00000000002c7df3 T pthread_condattr_getclock
-00000000002c7dff T pthread_condattr_getpshared
-00000000002c7eb0 T pthread_cond_broadcast
-00000000002c7f04 t __pthread_cond_timedwait
-00000000002c7f04 W pthread_cond_timedwait
-00000000002c879c T pthread_cond_wait
-00000000002c87a4 T pthread_getattr_np
-00000000002c89d0 t __pthread_getspecific
-00000000002c89d0 W pthread_getspecific
-00000000002c89e9 t __pthread_key_create
-00000000002c89e9 W pthread_key_create
-00000000002c8a71 t __pthread_key_delete
-00000000002c8a71 W pthread_key_delete
-00000000002c8ba0 T pthread_kill
-00000000002c7e09 T pthread_mutexattr_getprotocol
-00000000002c7e16 T pthread_mutexattr_getpshared
-00000000002c7e23 T pthread_mutexattr_getrobust
-00000000002c7e30 T pthread_mutexattr_gettype
-00000000002c8c10 t __pthread_mutex_lock
-00000000002c8c10 W pthread_mutex_lock
-00000000002c8c30 t __pthread_mutex_timedlock
-00000000002c8c30 W pthread_mutex_timedlock
-00000000002c9000 t __pthread_mutex_trylock
-00000000002c9000 W pthread_mutex_trylock
-00000000002c8e48 t __pthread_mutex_trylock_owner
-00000000002c901c t __pthread_mutex_unlock
-00000000002c901c W pthread_mutex_unlock
-00000000002c92c8 t __pthread_once
-00000000002c92c8 W pthread_once
-00000000002c91d8 t __pthread_once_full
-00000000002c7e3a T pthread_rwlockattr_getpshared
-00000000002c9314 t __pthread_rwlock_rdlock
-00000000002c9314 W pthread_rwlock_rdlock
-00000000002c931c t __pthread_rwlock_timedrdlock
-00000000002c931c W pthread_rwlock_timedrdlock
-00000000002c945c t __pthread_rwlock_timedwrlock
-00000000002c945c W pthread_rwlock_timedwrlock
-00000000002c93ac t __pthread_rwlock_tryrdlock
-00000000002c93ac W pthread_rwlock_tryrdlock
-00000000002c94e4 t __pthread_rwlock_trywrlock
-00000000002c94e4 W pthread_rwlock_trywrlock
-00000000002c93e0 t __pthread_rwlock_unlock
-00000000002c93e0 W pthread_rwlock_unlock
-00000000002c9454 t __pthread_rwlock_wrlock
-00000000002c9454 W pthread_rwlock_wrlock
-00000000002c9500 W pthread_self
-00000000002c9500 t __pthread_self_internal
-00000000002c950c t __pthread_setcancelstate
-00000000002c950c W pthread_setcancelstate
-00000000002c9534 T pthread_setname_np
-00000000002c9704 T pthread_setspecific
-00000000002c9728 T pthread_sigmask
-00000000002c9764 t __pthread_testcancel
-00000000002c9764 W pthread_testcancel
-0000000000337ae0 b __pthread_tsd_main
-00000000002c8aec t __pthread_tsd_run_dtors
-00000000002d46e8 d __pthread_tsd_size
-0000000000252780 T purify
-000000000024ed30 t purify_cmd
-00000000002bfe00 T putc
-00000000002bfef4 T putchar
-00000000002bba81 t __putenv
-00000000002bbb96 T putenv
-0000000000336db8 b __putenv.oldenv
-00000000002bfff4 T puts
-00000000002c33fc W putwc_unlocked
-0000000000279840 T pvalloc
-0000000000337070 b pw
-000000000024edb0 t quit_cmd
-0000000000338370 b r0
-0000000000338390 b r1
-00000000002be22c T raise
-00000000002c7bb4 t __randname
-000000000022a598 r __random_lockptr
-00000000002d2c20 d ratio_slots
-00000000002cb384 T read
-00000000002bb858 T readdir
-00000000002bb858 W readdir64
-000000000024e220 T readdir_largefile
-00000000002cb3ac T readlink
-00000000002d48a8 B read_only_space_free_pointer
-00000000002566d0 T read_var_integer
-0000000000278e00 t realloc
-0000000000279850 T reallocarray
-0000000000279520 T reallocf
-00000000002bc9d8 T realpath
-0000000000257aa0 T record_backtrace_from_context
-00000000002d5950 b record_new_regions_below
-0000000000265a70 t record_ptr
-0000000000000010 b recurse
-00000000002d50b8 b recyclebin_lock
-00000000002d5090 b recyclebin_threads
-0000000000220a00 r regmap
-000000000024ee20 t regs_cmd
-0000000000255df0 T release_gc_lock
-00000000002c7d7c t __release_ptc
-0000000000245110 t relocate_space
-000000000025be10 T report_heap_exhaustion
-00000000002551c0 T reset_gc_stats
-0000000000250e50 T reset_printer
-000000000024cde0 T reset_thread_control_stack_guard_page
-000000000024ca00 t resignal_to_lisp_thread
-0000000000258740 T restore_breakpoint_from_single_step
-00000000002be5fd t __restore_rt
-000000000024d250 T restore_sbcl_signals
-00000000002be1fa t __restore_sigs
-00000000002c9eaf t rule_to_secs
-0000000000251390 T safely_show_lstring
-0000000000254310 T save_runtime_to_filehandle
-00000000002538f0 T save_to_filehandle
-00000000002d2e00 D sbcl_fallback_sigsegv_handler
-0000000000252880 T sbcl_main
-0000000000256e00 T sb_closedir
-00000000002d4fd8 B sbcl_runtime
-00000000002d4fe0 B sbcl_runtime_home
-0000000000256e10 T sb_dirent_name
-0000000000259320 T sb_dump_mcontext
-00000000002551b0 T sb_GetTID
-0000000000254c00 T sb_kernel_package
-0000000000256fa0 T sb_mkstemp
-0000000000257320 T sb_nanosleep
-0000000000257390 T sb_nanosleep_double
-0000000000257460 T sb_nanosleep_float
-0000000000256dc0 T sb_opendir
-0000000000256dd0 T sb_readdir
-0000000000256d60 T sb_realpath
-00000000002d4890 B sb_sprof_enabled
-00000000002d5328 B sb_sprof_trace_ct
-00000000002d532c B sb_sprof_trace_ct_max
-000000000024e0f0 T sb_toggle_sigprof
-00000000002c54e8 T scalbn
-00000000002c55c4 T scalbnl
-0000000000246170 T scan_binding_stack
-0000000000254680 T sc_and_offset_extract_bits
-0000000000254750 T sc_and_offset_offset
-0000000000254740 T sc_and_offset_sc_number
-00000000002c52f0 t scanexp
-0000000000264d40 t scan_spaces
-0000000000246ea0 T scan_weak_hashtable
-0000000000245f30 t scav1
-0000000000248b30 t scav_array
-0000000000248c80 t scav_base_string
-0000000000246100 T scav_binding_stack
-0000000000248880 t scav_boxed
-0000000000248940 t scav_closure
-00000000002615f0 T scav_code_header
-00000000002460b0 T scavenge
-00000000002663f0 T scavenge_immobile_newspace
-0000000000266780 T scavenge_immobile_roots
-0000000000248ab0 t scav_fdefn
-00000000002489e0 t scav_funinstance
-0000000000248770 t scav_fun_pointer
-00000000002482e0 t scav_immediate
-0000000000247830 t scav_instance
-0000000000248320 t scav_instance_pointer
-0000000000248630 t scav_list_pointer
-0000000000248300 t scav_lose
-0000000000248820 t scav_other_pointer
-00000000002216d0 r scav_ptr
-00000000002d53c8 B scav_queue
-0000000000220ed0 R scavtab
-00000000002488e0 t scav_tiny_boxed
-0000000000248870 t scav_unboxed
-0000000000248b80 t scav_vector_bit
-0000000000248c70 t scav_vector_nil
-0000000000247240 T scav_vector_t
-0000000000248c50 t scav_vector_unsigned_byte_128
-0000000000248c00 t scav_vector_unsigned_byte_16
-0000000000248ba0 t scav_vector_unsigned_byte_2
-0000000000248c20 t scav_vector_unsigned_byte_32
-0000000000248bc0 t scav_vector_unsigned_byte_4
-0000000000248c40 t scav_vector_unsigned_byte_64
-0000000000248be0 t scav_vector_unsigned_byte_8
-000000000025dd90 T scav_weak_pointer
-00000000002c7d44 t sccp
-00000000002be164 T sched_yield
-00000000002492e0 T scrub_control_stack
-0000000000249310 T scrub_thread_control_stack
-00000000002547c0 T search_all_gc_spaces
-000000000024ee70 t search_cmd
-000000000025de80 T search_dynamic_space
-0000000000253620 t search_for_core
-000000000026a6f0 T search_for_elf_core
-0000000000244090 T search_for_embedded_core
-0000000000254850 T search_for_symbol
-0000000000268e00 T search_immobile_space
-0000000000254d40 t search_package_symbols
-0000000000254760 T search_read_only_space
-0000000000254790 T search_static_space
-0000000000254b40 t search_symbol_aux
-00000000002caea4 t __secs_to_tm
-000000000022b070 r __secs_to_tm.days_in_month
-00000000002c99c4 t __secs_to_zone
-00000000002c976c T sem_destroy
-00000000002c9770 T sem_init
-000000000022a598 r __sem_open_lockptr
-00000000002c97a4 T sem_post
-00000000002c982c T sem_timedwait
-00000000002c98f0 T sem_trywait
-00000000002c9824 T sem_wait
-00000000002bda14 T sendmsg
-0000000000275dc0 t send_tree
-00000000002bb9c4 T setenv
-00000000002be19c T __setjmp
-00000000002be19c T _setjmp
-00000000002be19c T setjmp
-0000000000257530 T set_noecho
-00000000002cb3f0 T setpgid
-00000000002cb3e4 T setpgrp
-0000000000257580 T set_pty
-00000000002bd104 T setpwent
-00000000002c99b4 t __set_thread_area
-0000000000254f00 T set_thread_state
-000000000024ab80 t set_val
-00000000002c37b0 t __shgetc
-00000000002c3770 t __shlim
-00000000002d5054 B show_gc_stats
-0000000000250b90 T show_lstring
-000000000024dbf0 T sigabrt_handler
-00000000002be3cb t __sigaction
-00000000002be3cb W sigaction
-00000000002be45c T sigaddset
-000000000024b9e0 T sigaddset_blockable
-000000000024ba20 t sigaddset_deferrable
-00000000002be490 T sigaltstack
-00000000002be4dc T sigdelset
-00000000002be510 T sigemptyset
-00000000002588c0 T sigill_handler
-000000000024dd50 T siginfo_code
-000000000024f180 t sigint_handler
-00000000002be51c T sigismember
-00000000002c21fc T __signbitl
-00000000002be534 T sigpending
-00000000002be54c T sigprocmask
-00000000002581d0 T sigprof_handler
-0000000000259090 t sigsegv_handler
-000000000024b930 T sigset_tostring
-000000000024c5b0 T sig_stop_for_gc_handler
-00000000002be5b0 T sigtimedwait
-00000000002587b0 T sigtrap_handler
-00000000002be574 T sigwait
-0000000000250a40 T simple_base_stringize
-0000000000249010 T simple_fun_index
-0000000000243650 T simple_fun_index_from_pc
-0000000000248f00 T simple_fun_name_from_pc
-00000000002d2cb0 d simple_fun_slots
-00000000002d5338 B single_stepping
-00000000002572a0 T s_isblk
-0000000000257280 T s_ischr
-0000000000257260 T s_isdir
-00000000002572c0 T s_isfifo
-00000000002572e0 T s_islnk
-0000000000257240 T s_isreg
-0000000000257300 T s_issock
-00000000003370a8 b size
-0000000000248d80 t size_array
-0000000000248ec0 t size_base_string
-0000000000248cb0 t size_bignum
-0000000000248cd0 t size_boxed
-0000000000248d10 t size_code_header
-0000000000248d70 t size_fdefn
-0000000000248ca0 t size_immediate
-0000000000248d40 t size_instance
-00000000002482c0 t size_lose
-000000000022aad0 r sizeprefix
-0000000000248d20 t size_short_boxed
-00000000002d1c10 D sizetab
-0000000000248cf0 t size_tiny_boxed
-0000000000248dc0 t size_vector_bit
-0000000000248eb0 t size_vector_nil
-0000000000248da0 t size_vector_t
-0000000000248e90 t size_vector_unsigned_byte_128
-0000000000248e40 t size_vector_unsigned_byte_16
-0000000000248de0 t size_vector_unsigned_byte_2
-0000000000248e60 t size_vector_unsigned_byte_32
-0000000000248e00 t size_vector_unsigned_byte_4
-0000000000248e80 t size_vector_unsigned_byte_64
-0000000000248e20 t size_vector_unsigned_byte_8
-000000000024b620 T skip_internal_error
-00000000002d4ee8 b skip_newline
-000000000026c950 t slide_hash
-0000000000336dd0 b slot
-00000000002d2e48 D small_generation_limit
-0000000000246180 T smash_weak_pointers
-00000000002c0084 T snprintf
-00000000002c24ba t sn_write
-00000000002bd94c T socket
-0000000000257890 T spawn
-00000000002c0104 T sprintf
-00000000002bc844 T sqrt
-00000000002cb46c T _start
-00000000002cb482 T _start_c
-00000000002be8ec T stat
-00000000002be8ec W stat64
-000000000022a830 r states
-000000000022aaf0 r states
-0000000000225c00 r static_bl_desc
-0000000000225be0 r static_d_desc
-00000000002bc2a4 t static_dl_iterate_phdr
-00000000002260a0 r static_dtree
-00000000002bdfc3 t static_init_tls
-0000000000225bc0 r static_l_desc
-0000000000225c20 r static_ltree
-00000000002d48b0 B static_space_free_pointer
-000000000024e1f0 T stat_largefile
-0000000000256e20 T stat_wrapper
-000000000022a610 R stderr
-00000000002d4410 d __stderr_FILE
-00000000002d44f8 d __stderr_used
-000000000022a618 R stdin
-00000000002d4500 d __stdin_FILE
-00000000002d45e8 d __stdin_used
-00000000002bea73 t __stdio_close
-00000000002bf12c t __stdio_exit
-00000000002bf12c t __stdio_exit_needed
-000000000022a608 r __stdio_ofl_lockptr
-00000000002bea90 t __stdio_read
-00000000002beb44 t __stdio_seek
-00000000002beb4c t __stdio_write
-00000000003383c8 b std_name
-000000000022a620 R stdout
-00000000002d45f0 d __stdout_FILE
-00000000002d46d8 d __stdout_used
-00000000002c0188 t __stdout_write
-00000000002c6620 t __stpcpy
-00000000002c6620 W stpcpy
-00000000002c6970 t __stpncpy
-00000000002c6970 W stpncpy
-00000000002c62e0 T strcasecmp
-00000000002c6360 T __strcasecmp_l
-00000000002c6360 W strcasecmp_l
-00000000002c6400 T strchr
-00000000002c6420 t __strchrnul
-00000000002c6420 W strchrnul
-00000000002c65d0 T strcmp
-00000000002c6610 T strcpy
-00000000002c7280 T strcspn
-00000000002c6780 T strdup
-00000000002bbca7 T strerror
-00000000002bbc84 T __strerror_l
-00000000002bbc84 W strerror_l
-00000000002c67c0 T strlen
-00000000002c68a0 T strncat
-00000000002c68f0 T strncmp
-00000000002c6960 T strncpy
-00000000002c6bc0 T strnlen
-00000000002c6bf0 T strrchr
-00000000002c71b0 T strspn
-00000000002c6c50 T strstr
-00000000002c374f T strtod
-00000000002c374f W __strtod_l
-00000000002c374f W strtod_l
-00000000002c36cc T strtof
-00000000002c36cc W __strtof_l
-00000000002c36cc W strtof_l
-00000000002c571c T strtoimax
-00000000002c571c W __strtoimax_internal
-00000000002c7130 T strtok
-0000000000337a98 b strtok.p
-00000000002c570d T strtol
-00000000002c3765 T strtold
-00000000002c3765 W __strtold_l
-00000000002c3765 W strtold_l
-00000000002c570d W __strtol_internal
-00000000002c56f2 T strtoll
-00000000002c56f2 W __strtoll_internal
-00000000002c5701 T strtoul
-00000000002c5701 W __strtoul_internal
-00000000002c566c T strtoull
-00000000002c566c W __strtoull_internal
-00000000002c572b T strtoumax
-00000000002c572b W __strtoumax_internal
-00000000002c36e1 t strtox
-00000000002c5678 t strtox
-00000000002bc3b4 t stub_dladdr
-000000000028b150 T stub_dladdr
-000000000028a550 T stub_dlclose
-000000000028a560 T stub_dlerror
-000000000028a200 T stub_dlopen
-000000000028a580 T stub_dlregister
-000000000028a1b0 T stub_dlsym
-00000000002d50a0 b stw_elapsed
-00000000002d5038 b stw_max_duration
-00000000002d2de8 d stw_min_duration
-00000000002d5030 b stw_sum_duration
-00000000002d53b8 B suballocator_end_ptr
-00000000002d53c0 B suballocator_free_ptr
-0000000000252790 T successful_malloc
-0000000000255740 t summarize_gc_stats
-0000000000221d80 r supported_cmds
-0000000000246460 t survived_gc_yet_AND
-0000000000259ff0 t survived_gc_yet_AND
-0000000000246640 t survived_gc_yet_KEY
-000000000025a1f0 t survived_gc_yet_KEY
-0000000000246800 t survived_gc_yet_OR
-000000000025a3f0 t survived_gc_yet_OR
-0000000000246720 t survived_gc_yet_VALUE
-000000000025a2f0 t survived_gc_yet_VALUE
-000000000025b4c0 t sweep
-0000000000266d10 T sweep_immobile_space
-00000000002d53e8 b sweeplog
-00000000002d2e30 d sweep_mode
-00000000002c01d4 T swprintf
-00000000002c2643 t sw_write
-0000000000249cb0 T sxhash_simple_string
-0000000000250de0 T symbol_function
-00000000002511d0 T symbol_name
-00000000002d2c60 d symbol_slots
-00000000002bce24 T syscall
-00000000002c7d62 t __syscall_cp
-00000000002c7d44 t __syscall_cp_c
-00000000002bc280 t __syscall_ret
-00000000002bb5f4 T sysconf
-0000000000229b60 r sysconf.values
-0000000000337240 b __sysinfo
-00000000002bc400 W sysinfo
-000000000022a598 r __syslog_lockptr
-000000000022ae60 r table
-00000000002c7c18 T tcgetattr
-00000000002c7c30 T tcsetattr
-00000000002cb408 T tcsetpgrp
-00000000002d2df8 d tempcntr
-00000000002c976b t __testcancel
-0000000000246a00 T test_weak_triggers
-00000000002c9500 W thrd_current
-00000000002d2de0 D thread_alien_stack_size
-00000000002d1bc8 D thread_control_stack_size
-00000000002d43c8 d thread_count
-00000000003370b0 b __thread_list_lock
-0000000000255040 T thread_wait_until_not
-00000000002561b0 T thread_yield
-00000000002c8740 t __timedwait
-00000000002c8610 t __timedwait_cp
-0000000000338330 B __timezone
-0000000000338330 V timezone
-000000000022aff8 r __timezone_lockptr
-00000000002cd300 d tld_empty
-00000000002d31b8 d tld_main
-00000000002bdce5 t __tl_lock
-00000000002bdce5 t __tl_unlock
-00000000002c9ff5 t __tm_to_tzname
-000000000025ace0 T toggle_print_garbage
-00000000002c63d8 T tolower
-00000000002c63e7 T __tolower_l
-00000000002c63e7 W tolower_l
-00000000002bf0c4 t __toread
-00000000002bf126 t __toread_needs_stdio_exit
-00000000002bb7c8 T toupper
-00000000002bb7d7 T __toupper_l
-00000000002bb7d7 W toupper_l
-00000000002bf518 t __towrite
-00000000002bf558 t __towrite_needs_stdio_exit
-000000000025b750 t trace_using_layout
-0000000000274610 t _tr_align
-00000000003383b8 b trans
-00000000002499e0 t trans_array
-0000000000249bf0 t trans_base_string
-00000000002497d0 t trans_bignum
-0000000000249900 t trans_boxed
-0000000000249540 t trans_code
-00000000002498e0 t trans_code_header
-00000000002499a0 t trans_fdefn
-00000000002497b0 t trans_lose
-0000000000221710 r transother
-0000000000249800 t trans_ratio_or_complex
-0000000000249880 t trans_tiny_boxed
-0000000000249860 t trans_unboxed
-0000000000249a80 t trans_vector_bit
-0000000000249be0 t trans_vector_nil
-0000000000249a50 t trans_vector_t
-0000000000249bc0 t trans_vector_unsigned_byte_128
-0000000000249b40 t trans_vector_unsigned_byte_16
-0000000000249ab0 t trans_vector_unsigned_byte_2
-0000000000249b70 t trans_vector_unsigned_byte_32
-0000000000249ae0 t trans_vector_unsigned_byte_4
-0000000000249ba0 t trans_vector_unsigned_byte_64
-0000000000249b10 t trans_vector_unsigned_byte_8
-0000000000249960 t trans_weak_pointer
-0000000000274580 t _tr_flush_bits
-0000000000274750 t _tr_flush_block
-00000000002741a0 t _tr_init
-0000000000274410 t _tr_stored_block
-0000000000275d30 t _tr_tally
-00000000002bc7e8 T trunc
-00000000002cb420 T truncate
-00000000002cb420 W truncate64
-000000000024e1c0 T truncate_largefile
-0000000000255dd0 T try_acquire_gc_lock
-00000000002c89d0 W tss_get
-0000000000258400 T tune_asm_routines_for_microarch
-00000000002c6dc0 t twoway_strstr
-0000000000338360 b types
-0000000000338340 B __tzname
-0000000000338340 V tzname
-00000000002c9fda t __tzset
-00000000002c9fda W tzset
-00000000002bf08c T __uflow
-0000000000257110 T uid_homedir
-0000000000256ff0 T uid_username
-0000000000245da0 T unbind
-0000000000245dc0 T unbind_to_here
-000000000024bcf0 T unblock_deferrable_signals
-000000000024be80 T unblock_gc_signals
-000000000024bea0 T unblock_signals_in_context_and_maybe_warn
-00000000002d5108 B undefined_alien_address
-00000000002c9293 t undo
-000000000024c170 T undo_fake_foreign_function_call
-0000000000260af0 T unhandled_sigmemoryfault
-00000000002cb430 T unlink
-00000000002bec54 t __unlist_locked_file
-00000000002c7d01 t __unlock
-00000000002bed9b t __unlockfile
-0000000000337250 b unmask_done
-0000000000247200 t unprotect_page_index
-00000000002559c0 t unregister_thread
-00000000002bbbc9 T unsetenv
-00000000002584b0 T untune_asm_routines_for_microarch
-000000000028dab0 T __unw_add_dynamic_fde
-0000000000291c84 t __unw_getcontext
-0000000000291c84 W unw_getcontext
-000000000028d4e0 t __unw_get_fpreg
-000000000028d4e0 W unw_get_fpreg
-000000000028d690 t __unw_get_proc_info
-000000000028d690 W unw_get_proc_info
-000000000028d790 t __unw_get_proc_name
-000000000028d790 W unw_get_proc_name
-000000000028d360 t __unw_get_reg
-000000000028d360 W unw_get_reg
-0000000000253790 T unwind_binding_stack
-000000000028d0b0 T _Unwind_DeleteException
-000000000028cf30 T _Unwind_ForcedUnwind
-000000000028d100 T _Unwind_GetGR
-000000000028d1a0 T _Unwind_GetIP
-000000000028cfc0 T _Unwind_GetLanguageSpecificData
-000000000028d050 T _Unwind_GetRegionStart
-000000000028c880 t unwind_phase2
-000000000028cc80 t unwind_phase2_forced
-000000000028c590 T _Unwind_RaiseException
-000000000028cbd0 T _Unwind_Resume
-000000000028d150 T _Unwind_SetGR
-000000000028d200 T _Unwind_SetIP
-000000000028d250 t __unw_init_local
-000000000028d250 W unw_init_local
-000000000028d830 t __unw_is_fpreg
-000000000028d830 W unw_is_fpreg
-000000000028d930 t __unw_is_signal_frame
-000000000028d930 W unw_is_signal_frame
-000000000028d9a0 t __unw_iterate_dwarf_unwind_cache
-000000000028d9a0 W unw_iterate_dwarf_unwind_cache
-00000000002d43d0 D unw_local_addr_space
-000000000028d8b0 t __unw_regname
-000000000028d8b0 W unw_regname
-000000000028de20 T __unw_remove_dynamic_fde
-000000000028d720 t __unw_resume
-000000000028d720 W unw_resume
-000000000028d580 t __unw_set_fpreg
-000000000028d580 W unw_set_fpreg
-000000000028d3f0 t __unw_set_reg
-000000000028d3f0 W unw_set_reg
-000000000028d620 t __unw_step
-000000000028d620 W unw_step
-0000000000265f90 T update_immobile_nursery_bits
-0000000000262d30 t update_page_write_prot
-0000000000272220 t updatewindow
-0000000000257090 T user_homedir
-000000000022aff0 r __utc
-0000000000249190 T valid_lisp_pointer_p
-00000000002482a0 T valid_widetag_p
-0000000000279710 T valloc
-00000000002d2cf0 d value_cell_slots
-0000000000256cd0 T var_clock
-0000000000249380 T varint_unpack
-0000000000249330 T varint_unpacker_init
-0000000000256c90 T var_name
-0000000000256ce0 T var_setclock
-0000000000256ca0 T var_value
-00000000002d48b8 B varyobj_free_pointer
-00000000002dba30 B varyobj_holes
-0000000000265c20 T varyobj_page_gens_augmented
-00000000002db9a0 B varyobj_pages
-00000000002db990 B varyobj_page_touched_bits
-00000000002696e0 t varyobj_points_to_younger_p
-00000000002d2e58 D varyobj_space_size
-00000000002dba20 B VARYOBJ_SPACE_START
-00000000002dba88 b varyobj_tempspace
-00000000002d4700 d vdso_func
-00000000002cab50 t __vdsosym
-000000000024a0d0 t vector_eql
-000000000024a170 t vector_sxhash
-000000000025e420 t verify_generation
-00000000002d2e38 D verify_gens
-000000000025e070 T verify_heap
-0000000000261920 t verify_range
-00000000002c0254 T vfprintf
-0000000000279720 T vfree
-00000000002c2710 T vfwprintf
-000000000025df30 T visit_freed_objects
-00000000002c9957 t __vm_lock
-0000000000338328 b vmlock
-000000000022afe8 r __vmlock_lockptr
-00000000002c9960 t __vm_unlock
-00000000002c9934 t __vm_wait
-00000000002508a0 T vodxprint_fun
-00000000002c23fc T vsnprintf
-00000000002c255c T vsprintf
-00000000002c256c T vswprintf
-00000000002c858c t __wait
-00000000002577c0 T wait_for_exec
-00000000002be134 T waitpid
-000000000025e520 T walk_generation
-000000000032dfa0 b warning_count
-00000000002c2300 T wcrtomb
-00000000002c7330 T wcschr
-00000000002c7370 T wcslen
-00000000002c7390 T wcsnlen
-00000000002c5e44 T wcstod
-00000000002c5d54 T wcstof
-00000000002c604e T wcstoimax
-00000000002c603f T wcstol
-00000000002c5e5a T wcstold
-00000000002c6024 T wcstoll
-00000000002c6033 T wcstoul
-00000000002c5f34 T wcstoull
-00000000002c605d T wcstoumax
-00000000002c5d69 t wcstox
-00000000002c5f40 t wcstox
-00000000002c22e8 T wctomb
-00000000002d47c0 B weak_hash_tables
-00000000002d1be0 D weak_ht_alivep_funs
-00000000002d47d0 B weak_objects
-00000000002d1bd0 D weak_pointer_chain
-00000000002d2d00 d weak_pointer_slots
-00000000002d47b8 B weak_vectors
-00000000002571d0 T wexitstatus
-00000000002d2410 D widetag_lowtag
-00000000002d2a20 D widetag_names
-00000000002571b0 T wifcontinued
-00000000002571c0 T wifexited
-00000000002571e0 T wifsignaled
-0000000000257210 T wifstopped
-00000000002c73c0 T wmemchr
-00000000002c73f0 T wmemcmp
-00000000002c7420 T wmemcpy
-00000000002c7540 T wmemmove
-00000000002c7890 T wmemset
-00000000002c27f5 t wprintf_core
-0000000000257190 T wrapped_environ
-0000000000256cf0 T wrapped_readlink
-00000000002cb440 T write
-00000000002540a0 t write_bytes
-000000000025b930 T write_generation_stats
-000000000025bca0 T write_heap_exhaustion_report
-0000000000253e80 t write_lispobj
-0000000000266c20 T write_protect_immobile_space
-0000000000257230 T wstopsig
-0000000000257200 T wtermsig
-0000000000220b60 r xdigits
-00000000002ca954 t __year_to_secs
-0000000000276390 t zcalloc
-00000000002763a0 t zcfree
-0000000000263210 t zero_all_free_ranges
-000000000025c010 T zero_dirty_pages
-0000000000226390 R z_errmsg
-0000000000276370 T zError
-0000000000338358 b zi
-0000000000276360 T zlibCompileFlags
-0000000000276350 T zlibVersion
-malloc
-free
-rename
-isatty
-mkdir
-dup
-getuid
-gethostname
-setsid
-poll
-select
-getitimer
-setitimer
-gettimeofday
-sin
-cos
-tan
+DYNAMIC_SPACE_START
+FIXEDOBJ_SPACE_START
+Lcall
+Lone
+LsingleValue
+Lstack
+Ltwo
+Lzero
+NameHash
+ObjHash
+VARYOBJ_SPACE_START
+_DYNAMIC
+_Exit
+_Fork
+_GLOBAL__sub_I_dlfcn.cpp
+_GLOBAL__sub_I_symbols.cpp
+_IO_ferror_unlocked
+_IO_putc
+_Unwind_DeleteException
+_Unwind_ForcedUnwind
+_Unwind_GetGR
+_Unwind_GetIP
+_Unwind_GetLanguageSpecificData
+_Unwind_GetRegionStart
+_Unwind_RaiseException
+_Unwind_Resume
+_Unwind_SetGR
+_Unwind_SetIP
+___environ
+___errno_location
+__abort_lock
+__acquire_ptc
+__aio_atfork
+__aio_close
+__assert_fail
+__at_quick_exit_lockptr
+__atexit_lockptr
+__block_all_sigs
+__block_app_sigs
+__bump_lockptr
+__c_dot_utf8
+__c_dot_utf8_locale
+__c_locale
+__clang_call_terminate
+__clock_gettime
+__clock_nanosleep
+__copy_tls
+__cxa_allocate_dependent_exception
+__cxa_allocate_exception
+__cxa_atexit
+__cxa_begin_catch
+__cxa_call_unexpected
+__cxa_current_exception_type
+__cxa_current_primary_exception
+__cxa_decrement_exception_refcount
+__cxa_deleted_virtual
+__cxa_demangle
+__cxa_end_catch
+__cxa_finalize
+__cxa_free_dependent_exception
+__cxa_free_exception
+__cxa_get_exception_ptr
+__cxa_get_globals
+__cxa_get_globals_fast
+__cxa_guard_abort
+__cxa_guard_acquire
+__cxa_guard_release
+__cxa_increment_exception_refcount
+__cxa_new_handler
+__cxa_pure_virtual
+__cxa_rethrow
+__cxa_rethrow_primary_exception
+__cxa_terminate_handler
+__cxa_throw
+__cxa_uncaught_exception
+__cxa_uncaught_exceptions
+__cxa_unexpected_handler
+__daylight
+__default_guardsize
+__default_stacksize
+__dlerror_lockptr
+__do_cleanup_pop
+__do_cleanup_push
+__dso_handle
+__dynamic_cast
+__eintr_valid_flag
+__env_rm_add
+__env_rm_add.env_alloced
+__env_rm_add.env_alloced_n
+__environ
+__errno_location
+__execvpe
+__fdopen
+__fini_array_end
+__fini_array_start
+__floatscan
+__fmodeflags
+__fork_handler
+__fpclassifyl
+__fputwc_unlocked
+__fseeko
+__fseeko_unlocked
+__fsmu8
+__ftello
+__ftello_unlocked
+__funcs_on_exit
+__fwritex
+__get_handler_set
+__getdelim
+__getpw_a
+__getpwent_a
+__gettext_lockptr
+__gmtime_r
+__gxx_personality_v0
+__h_errno_location
+__hwcap
+__inhibit_ptc
+__init_array_end
+__init_array_start
+__init_libc
+__init_ssp
+__init_tls
+__init_tp
+__intscan
+__islower_l
+__iswspace_l
+__isxdigit_l
+__lctrans
+__lctrans_cur
+__lctrans_impl
+__ldso_atfork
+__libc
+__libc_current_sigrtmax
+__libc_exit_fini
+__libc_sigaction
+__libc_start_init
+__libc_start_main
+__libunwind_Registers_x86_64_jumpto
+__locale_lockptr
+__localtime_r
+__lock
+__lockfile
+__lseek
+__lsysinfo
+__madvise
+__malloc_atfork
+__map_file
+__mark_obj
+__memcpy_fwd
+__memrchr
+__mkostemps
+__mmap
+__month_to_secs
+__month_to_secs.secs_through_month
+__mprotect
+__mremap
+__munmap
+__nscd_query
+__ofl_add
+__ofl_lock
+__ofl_unlock
+__overflow
+__private_cond_signal
+__procfdname
+__progname
+__progname_full
+__pthread_cond_timedwait
+__pthread_getspecific
+__pthread_key_create
+__pthread_key_delete
+__pthread_mutex_lock
+__pthread_mutex_timedlock
+__pthread_mutex_trylock
+__pthread_mutex_trylock_owner
+__pthread_mutex_unlock
+__pthread_once
+__pthread_once_full
+__pthread_rwlock_rdlock
+__pthread_rwlock_timedrdlock
+__pthread_rwlock_timedwrlock
+__pthread_rwlock_tryrdlock
+__pthread_rwlock_trywrlock
+__pthread_rwlock_unlock
+__pthread_rwlock_wrlock
+__pthread_self_internal
+__pthread_setcancelstate
+__pthread_testcancel
+__pthread_tsd_main
+__pthread_tsd_run_dtors
+__pthread_tsd_size
+__putenv
+__putenv.oldenv
+__randname
+__random_lockptr
+__release_ptc
+__restore_rt
+__restore_sigs
+__secs_to_tm
+__secs_to_tm.days_in_month
+__secs_to_zone
+__sem_open_lockptr
+__set_thread_area
+__setjmp
+__shgetc
+__shlim
+__sigaction
+__signbitl
+__stderr_FILE
+__stderr_used
+__stdin_FILE
+__stdin_used
+__stdio_close
+__stdio_exit
+__stdio_exit_needed
+__stdio_ofl_lockptr
+__stdio_read
+__stdio_seek
+__stdio_write
+__stdout_FILE
+__stdout_used
+__stdout_write
+__stpcpy
+__stpncpy
+__strcasecmp_l
+__strchrnul
+__strerror_l
+__strtod_l
+__strtof_l
+__strtoimax_internal
+__strtol_internal
+__strtold_l
+__strtoll_internal
+__strtoul_internal
+__strtoull_internal
+__strtoumax_internal
+__syscall_cp
+__syscall_cp_c
+__syscall_ret
+__sysinfo
+__syslog_lockptr
+__testcancel
+__thread_list_lock
+__timedwait
+__timedwait_cp
+__timezone
+__timezone_lockptr
+__tl_lock
+__tl_unlock
+__tm_to_tzname
+__tolower_l
+__toread
+__toread_needs_stdio_exit
+__toupper_l
+__towrite
+__towrite_needs_stdio_exit
+__tzname
+__tzset
+__uflow
+__unlist_locked_file
+__unlock
+__unlockfile
+__unw_add_dynamic_fde
+__unw_get_fpreg
+__unw_get_proc_info
+__unw_get_proc_name
+__unw_get_reg
+__unw_getcontext
+__unw_init_local
+__unw_is_fpreg
+__unw_is_signal_frame
+__unw_iterate_dwarf_unwind_cache
+__unw_regname
+__unw_remove_dynamic_fde
+__unw_resume
+__unw_set_fpreg
+__unw_set_reg
+__unw_step
+__utc
+__vdsosym
+__vm_lock
+__vm_unlock
+__vm_wait
+__vmlock_lockptr
+__wait
+__year_to_secs
+_aligned_malloc
+_dist_code
+_environ
+_exit
+_fini
+_init
+_length_code
+_longjmp
+_mi_abandoned_await_readers
+_mi_abandoned_reclaim_all
+_mi_arena_alloc
+_mi_arena_alloc_aligned
+_mi_arena_free
+_mi_bin
+_mi_bin_size
+_mi_bitmap_claim
+_mi_bitmap_claim_across
+_mi_bitmap_is_any_claimed
+_mi_bitmap_is_any_claimed_across
+_mi_bitmap_is_claimed
+_mi_bitmap_is_claimed_across
+_mi_bitmap_try_find_claim_field
+_mi_bitmap_try_find_from_claim
+_mi_bitmap_try_find_from_claim_across
+_mi_bitmap_unclaim
+_mi_bitmap_unclaim_across
+_mi_block_zero_init
+_mi_clock_end
+_mi_clock_now
+_mi_clock_start
+_mi_commit_mask_committed_size
+_mi_commit_mask_next_run
+_mi_current_thread_count
+_mi_deferred_free
+_mi_error_message
+_mi_fprintf
+_mi_fputs
+_mi_free_block_mt
+_mi_free_delayed_block
+_mi_heap_collect_abandon
+_mi_heap_collect_retired
+_mi_heap_default
+_mi_heap_default_key
+_mi_heap_delayed_free
+_mi_heap_destroy_pages
+_mi_heap_empty
+_mi_heap_main
+_mi_heap_main_get
+_mi_heap_malloc_zero
+_mi_heap_random_next
+_mi_heap_realloc_zero
+_mi_heap_set_default_direct
+_mi_is_main_thread
+_mi_malloc_generic
+_mi_numa_node_count
+_mi_options_init
+_mi_os_alloc
+_mi_os_alloc_aligned
+_mi_os_alloc_huge_os_pages
+_mi_os_commit
+_mi_os_decommit
+_mi_os_free
+_mi_os_free_ex
+_mi_os_free_huge_pages
+_mi_os_good_alloc_size
+_mi_os_has_overcommit
+_mi_os_init
+_mi_os_large_page_size
+_mi_os_numa_node_count_get
+_mi_os_numa_node_get
+_mi_os_page_size
+_mi_os_protect
+_mi_os_random_weak
+_mi_os_reset
+_mi_os_shrink
+_mi_os_unprotect
+_mi_os_unreset
+_mi_page_abandon
+_mi_page_empty
+_mi_page_free
+_mi_page_free_collect
+_mi_page_malloc
+_mi_page_ptr_unalign
+_mi_page_queue_append
+_mi_page_reclaim
+_mi_page_retire
+_mi_page_unfull
+_mi_page_use_delayed_free
+_mi_preloading
+_mi_process_init
+_mi_process_is_initialized
+_mi_random_init
+_mi_random_next
+_mi_random_split
+_mi_segment_cache_pop
+_mi_segment_cache_push
+_mi_segment_huge_page_free
+_mi_segment_map_allocated_at
+_mi_segment_map_freed_at
+_mi_segment_page_abandon
+_mi_segment_page_alloc
+_mi_segment_page_free
+_mi_segment_page_start
+_mi_segment_thread_collect
+_mi_stat_counter_increase
+_mi_stat_decrease
+_mi_stat_increase
+_mi_stats_done
+_mi_stats_main
+_mi_stats_print
+_mi_thread_done
+_mi_trace_message
+_mi_verbose_message
+_mi_warning_message
+_pthread_cleanup_pop
+_pthread_cleanup_push
+_setjmp
+_start
+_start_c
+_tr_align
+_tr_flush_bits
+_tr_flush_block
+_tr_init
+_tr_stored_block
+_tr_tally
+abandoned
+abandoned_count
+abandoned_readers
+abandoned_visited
+abandoned_visited_count
+abbrevs
+abbrevs_end
+abort
+abort_message
+access
+acos
+acosh
+acquire_sprof_data
+add_to_weak_vector_list
+addr
+adjust_obj_ptes
+adler32
+adler32_combine
+adler32_combine64
+adler32_z
+aligned_base
+alivep_funs
+all_mask
+all_threads
+all_threads_lock
+alloc
+alloc_code_object
+alloc_immobile_fixedobj
+alloc_list
+alloc_profile_buffer
+alloc_profile_data
+alloc_profile_n_counters
+alloc_profiler_lock
+alloc_profiling
+alloc_start_pages
+alloc_thread_struct
+allocate_hardwired_spaces
+allocate_lisp_dynamic_space
+allocation_profiler_start
+allocation_profiler_stop
+allocation_tracker_counted
+allocation_tracker_sized
+allocator_record_backtrace
+anon_dynamic_space_start
+app_mask
+apply_pie_relocs
+arch_clear_pseudo_atomic_interrupted
+arch_do_displaced_inst
+arch_get_bad_addr
+arch_get_fp_modes
+arch_handle_breakpoint
+arch_handle_fun_end_breakpoint
+arch_handle_single_step_trap
+arch_install_breakpoint
+arch_install_interrupt_handlers
+arch_internal_error_arguments
+arch_os_thread_cleanup
+arch_os_thread_init
+arch_pseudo_atomic_atomic
+arch_remove_breakpoint
+arch_scrub_control_stack
+arch_set_fp_modes
+arch_set_pseudo_atomic_interrupted
+arch_skip_instruction
+arch_write_linkage_table_entry
+arrange_return_to_c_function
+arrange_return_to_lisp_function
+ascs_check_guard_page
+ascs_check_loop
+ascs_clear_loop
+ascs_finished
+ascs_outer_loop
+asin
+asinh
+asm_routine_poke
+asm_routines_end
+asm_routines_start
 atan
 atan2
-asin
-cosh
-sinh
-tanh
-asinh
-acosh
 atanh
-hypot
+atexit
+atfork_locks
+atoi
+atomic_bump_static_space_free_ptr
+auto_gc_trigger
+avx2_supported
+avx_supported
+backtrace_cmd
+backtrace_from_context
+backtrace_from_fp
+base_dist
+base_length
+bind_tls_cell
+bl_order
+block_blockable_signals
+block_deferrable_signals
+blockable_sigset
+breakpoint_do_displaced_inst
+breakpoint_install
+breakpoint_remove
+brief_fixnum
+brief_fun_or_otherptr
+brief_list
+brief_otherimm
+brief_print
+brief_struct
+btowc
+buf
+build_id
+build_refs
+build_tree
+builtin
+builtin_tls
+bytes_allocated
+bytes_consed_between_gcs
+cache
+cache_available
+cache_available_large
+cache_inuse
+cached_alloc
+calc_asm_routine_bounds
+calc_immobile_space_bounds
+call
+call_cmd
+call_into_lisp
+call_into_lisp_first_time
+call_lossage_handler
+callback_wrapper_trampoline
+calloc
+canonical_obj
+catchers_cmd
+ceilf
+cfree
+cgt_init
+chacha_block
+chdir
+check_deferrables_blocked_or_lose
+check_deferrables_unblocked_or_lose
+check_gc_signals_unblocked_or_lose
+chmod
+claim_index.warning_issued
+classify_obj.buf
+classoid_name
+cleanup
+clock_gettime
+clock_nanosleep
+close
+close_code_region
+close_file
+closedir
+closefds_from
+closefrom_fallback
+closefrom_fddir
+closure_slots
+coalesce_obj
+coalesce_range
+coalesce_similar_objects
+code_allocator_lock
+code_component_order
+code_slots
+collect_backtrace
+collect_garbage
+collect_garbage.high_water_mark
+compare_pointer
+complex_slots
+component_ptr_from_pc
+compress_block
+configuration_table
+connect
+conservative_stack
+context_eflags_addr
+continue_after_memoryfault_on_unprotected_pages
+continue_p
+copied_realpath
+copied_string
+copy_large_object
+copy_object
+copy_unboxed_object
+copysignl
+core_string
+corruption_warning_and_maybe_lose
+cos
+cosh
+crc32
+crc32_combine
+crc32_combine64
+crc32_combine_
+crc32_z
+crc_table
+create_main_lisp_thread
+cull_weak_hash_tables
+cur_clock
+cur_depth
+cur_lines
+current_control_frame_pointer
+current_thread
+daylight
+debug_function_from_pc
+debug_print
+debug_weak_ht
+decfloat.p10s
+default_lossage_handler
+default_lossage_handler.backtrace_invoked
+deferrable_sigset
+deferrables_blocked_p
+deferred_arg
+deferred_free
+define_dynamic_var
+define_var
+deflate
+deflateBound
+deflateCopy
+deflateEnd
+deflateGetDictionary
+deflateInit2_
+deflateInit_
+deflateParams
+deflatePending
+deflatePrime
+deflateReset
+deflateResetKeep
+deflateSetDictionary
+deflateSetHeader
+deflateTune
+deflate_copyright
+deflate_fast
+deflate_huff
+deflate_rle
+deflate_slow
+deflate_stored
+defrag_immobile_space
+deposit_filler
+describe_internal_error
+describe_thread_state
+dir_name
+disable_lossage_handler
+dl_iterate_phdr
+dladdr
+do_pending_interrupt
+do_read
+do_tzset
+do_tzset.search
+dont_descend
+dst_name
+dst_off
+dummy
+dummy1
+dummy_0
+dummy_file
+dummy_lockptr
+dump_cmd
+dump_cmd.lastaddr
+dump_cmd.lastcount
+dup
+dup2
+dynamic_space_free_pointer
+dynamic_space_size
+dynamic_values_bytes
+dyndebug_config
+dyndebug_init
+empty_mo
+empty_thread_recyclebin
+enable_lossage_handler
+endpwent
+enlarge_buffer
+enliven_immobile_obj
+environ
+errmsgidx
+errmsgstr
+error_count
+execute_full_mark_phase
+execute_full_sweep_phase
+execv
+execve
+execvp
+execvpe
+exit
+exit_cmd
 exp
+ext_find_page_index
+ext_lispobj_size
+extra_blbits
+extra_dbits
+extra_lbits
+f
+fabsl
+fake_foreign_function_call
+fake_foreign_function_call_noassert
+fallback_sigsegv_handler
+fchmod
+fclose
+fcntl
+fdefn_callee_lispobj
+fdefn_slots
+fdopen
+ferror
+ferror_unlocked
+fflush
+fflush_unlocked
+fgets
+fgets_unlocked
+fileno
+fileno_unlocked
+fill_window
+finalizer_condvar
+finalizer_mutex
+finalizer_thread_runflag
+finalizer_thread_stop
+finalizer_thread_wait
+finalizer_thread_wake
+find_code
+find_package
+find_package.kernelpkg_hint
+find_preceding_object
+find_symbol
+fixedobj_free_pointer
+fixedobj_page_hint
+fixedobj_pages
+fixedobj_points_to_younger_p
+fixedobj_tempspace
+fixedtables.distfix
+fixedtables.lenfix
+fixup_space
+flush_cmd
+flush_pending
+flush_vars
+fmodl
+fopen
+fopen64
+fork
+fourbyte_strstr
+fpathconf
+fpathconf.values
+fprintf
+fprnames
+fputc
+fputs
+fputs_unlocked
+fputwc
+fputwc_unlocked
+fread
+fread_unlocked
+free
+free_page
+free_pages_lock
+free_thread_struct
+frexpl
+from_space
+fseek
+fseeko
+fseeko64
+fshow_fun
+fstat
+fstat64
+fstat_largefile
+fstat_wrapper
+fstatat
+fstatat64
+ftell
+ftello
+ftello64
+ftruncate
+ftruncate64
+ftruncate_largefile
+fun_end_breakpoint_end
+fun_end_breakpoint_guts
+fun_end_breakpoint_trap
+funcall0
+funcall1
+funcall2
+funcall3
+funcall_alien_callback
+funcallable_instance_slots
+futex_name
+futex_private_supported_p
+futex_wait
+futex_wake
+fwide
+fwrite
+fwrite_unlocked
+garbage_collect_generation
+gc_active_p
+gc_alloc_generation
+gc_alloc_large
+gc_alloc_new_region
+gc_alloc_region
+gc_alloc_with_region
+gc_allocate_dirty
+gc_and_save
+gc_close_region
+gc_coalesce_string_literals
+gc_common_init
+gc_dispose_private_pages
+gc_find_freeish_pages
+gc_gen_of
+gc_heap_exhausted_error_or_lose
+gc_heapsort_uwords
+gc_init
+gc_load_corefile_ptes
+gc_logfile
+gc_managed_addr_p
+gc_managed_heap_space_p
+gc_mark_obj
+gc_mark_range
+gc_max_duration
+gc_min_duration
+gc_n_stack_pins
+gc_object_watcher
+gc_private_cons
+gc_private_free
+gc_prove_liveness
+gc_scav_pair
+gc_search_space3
+gc_show_pte
+gc_sigset
+gc_start_the_world
+gc_start_time
+gc_stop_the_world
+gc_store_corefile_ptes
+gc_sum_duration
+gc_traceroot_criterion
+gen_of
+gencgc_alloc_granularity
+gencgc_alloc_profiler
+gencgc_alloc_start_page
+gencgc_handle_wp_violation
+gencgc_oldest_gen_to_gc
+gencgc_release_granularity
+gencgc_verbose
+gencgc_zero_check
+generation_average_age
+generations
+get_asm_routine_by_name
+get_crc_table
+get_h_errno
+get_timezone
+get_val1
+get_val2
+get_val4
+get_val8
+getcwd
+getdelim
+getdtablesize
+getenv
+gethostname
+getitimer
+getline
+getname
+getoff
+getpagesize
+getpgrp
+getpid
+getpwent
+getpwnam
+getpwuid
+getrlimit
+getrlimit64
+getrule
+getrusage
+gettimeofday
+getuid
+globals_init
+gmtime_r
+gpr_murmur_hash3
+gprnames
+grab_sigs_cmd
+h_errno
+handle_breakpoint
+handle_fun_end_breakpoint
+handle_guard_page_triggered
+handle_memory_fault_emulation_trap
+handle_single_step_trap
+handle_trap
+handler_set
+head
+heap_scavenge
+heap_trace_verbose
+help_cmd
+hexfloat
+hopscotch_containsp
+hopscotch_create
+hopscotch_delete
+hopscotch_destroy
+hopscotch_get
+hopscotch_get_ref
+hopscotch_hmix
+hopscotch_init
+hopscotch_insert
+hopscotch_log_stats
+hopscotch_put
+hopscotch_reset
+hopscotch_resize_up
+hypot
+ignore_memoryfaults_on_unprotected_pages
+immobile_alloc_collisions
+immobile_card_protected_p
+immobile_range_1_max_offset
+immobile_range_2_min_offset
+immobile_scav_queue
+immobile_scav_queue_count
+immobile_scav_queue_head
+immobile_space_coreparse
+immobile_space_handle_wp_violation
+immobile_space_lower_bound
+immobile_space_max_offset
+immobile_space_preserve_pointer
+immobile_space_reloc_index
+immobile_space_relocs
+in_gc_lock
+in_leaving_without_gcing_race_p
+index
+inflate
+inflate.order
+inflateCodesUsed
+inflateCopy
+inflateEnd
+inflateGetDictionary
+inflateGetHeader
+inflateInit2_
+inflateInit_
+inflateMark
+inflatePrime
+inflateReset
+inflateReset2
+inflateResetKeep
+inflateSetDictionary
+inflateSync
+inflateSyncPoint
+inflateUndermine
+inflateValidate
+inflate_copyright
+inflate_fast
+inflate_table
+inflate_table.dbase
+inflate_table.dext
+inflate_table.lbase
+inflate_table.lext
+init_block
+install_handler
+install_sig_memory_fault_handler
+instance_classoid_name
+internal_error_descriptions
+internal_error_nargs
+internal_errors_enabled
+interrupt_handle_now
+interrupt_handle_now_handler
+interrupt_handle_pending
+interrupt_handler_pending_p
+interrupt_init
+interrupt_internal_error
+interrupt_low_level_handlers
+ioctl
+isatty
+islower
+islower_l
+iswspace
+iswspace.spaces
+iswspace_l
+isxdigit
+isxdigit_l
+key_lock
+keys
+kill
+kill_cmd
+killpg
+large_allocation
+large_os_page_size
+layout_classoid_name
+ldb_in
+ldb_monitor
+ldb_print_nlx
+libc_exit_fini
+libc_start_init
+libc_start_main_stage2
+libm_anchor
+libpath
+line
+lisp_alloc
+lisp_backtrace
+lisp_code_in_elf
+lisp_init_function
+lisp_init_time
+lisp_linkage_table_n_prelinked
+lisp_memory_fault_error
+lisp_register_names
+lisp_rel_section_offset
+lisp_rel_section_size
+lisp_sig_handlers
+lisp_startup_options
+lisp_symbol_from_tls_index
+ll_install_handler
+load_core_bytes
+load_core_file
+localtime_r
+lock
+locking_putc
 log
 log10
-pow
 log1p
-killpg
-rmdir
+logAPIs
+logDWARF
+logUnwinding
+log_backtrace_from_fp
+log_generation_stats
+longest_match
+longjmp
+lookup_by_name
+lookup_by_obj
+lose
+lose_on_corruption_p
+lossage_handler
+low_level_handle_now_handler
+lower_thread_control_stack_guard_page
+lowtag_names
+lseek
+lseek64
+lseek_largefile
+lspmain
+lstat
+lstat64
+lstat_largefile
+lstat_wrapper
+madvise
+main
+main_tls
+make_var
+malloc
+malloc_good_size
+malloc_size
+malloc_usable_size
+map_size
+mark_bits
+mark_pair
+max_alloc_point_counters
+max_depth
+max_lines
+maybe_gc
+maybe_now_maybe_later
+maybe_save_gc_mask_and_block_deferrables
+mbtowc
+memalign
+memchr
+memcmp
+memcpy
+memmove
+memory_fault_emulation_trap
+memrchr
+memset
+mi__expand
+mi_aligned_alloc
+mi_aligned_offset_recalloc
+mi_aligned_recalloc
+mi_arena_alloc_from
+mi_arena_allocate
+mi_arena_count
+mi_arenas
+mi_buffered_out
+mi_calloc
+mi_calloc_aligned
+mi_calloc_aligned_at
+mi_cfree
+mi_check_owned
+mi_clock_diff
+mi_collect
+mi_commit_mask_all_set
+mi_commit_mask_any_set
+mi_commit_mask_decommit
+mi_debug_show_arenas
+mi_dupenv_s
+mi_error_arg
+mi_error_handler
+mi_expand
+mi_find_page
+mi_free
+mi_free_aligned
+mi_free_generic
+mi_free_size
+mi_free_size_aligned
+mi_good_size
+mi_heap_area_visitor
+mi_heap_calloc
+mi_heap_calloc_aligned
+mi_heap_calloc_aligned_at
+mi_heap_check_owned
+mi_heap_collect
+mi_heap_collect_ex
+mi_heap_contains_block
+mi_heap_delete
+mi_heap_destroy
+mi_heap_get_backing
+mi_heap_get_default
+mi_heap_main_init
+mi_heap_malloc
+mi_heap_malloc_aligned
+mi_heap_malloc_aligned_at
+mi_heap_malloc_small
+mi_heap_malloc_zero_aligned_at
+mi_heap_mallocn
+mi_heap_new
+mi_heap_realloc
+mi_heap_realloc_aligned
+mi_heap_realloc_aligned_at
+mi_heap_realloc_zero_aligned_at
+mi_heap_reallocf
+mi_heap_reallocn
+mi_heap_realpath
+mi_heap_recalloc
+mi_heap_recalloc_aligned
+mi_heap_recalloc_aligned_at
+mi_heap_rezalloc
+mi_heap_rezalloc_aligned
+mi_heap_rezalloc_aligned_at
+mi_heap_set_default
+mi_heap_strdup
+mi_heap_strndup
+mi_heap_visit_blocks
+mi_heap_zalloc
+mi_heap_zalloc_aligned
+mi_heap_zalloc_aligned_at
+mi_huge_start
+mi_is_in_heap_region
+mi_is_redirected
+mi_large_huge_page_alloc
+mi_malloc
+mi_malloc_aligned
+mi_malloc_aligned_at
+mi_malloc_good_size
+mi_malloc_size
+mi_malloc_small
+mi_malloc_usable_size
+mi_mallocn
+mi_manage_os_memory
+mi_max_error_count
+mi_max_warning_count
+mi_mbsdup
+mi_memalign
+mi_new
+mi_new_aligned
+mi_new_aligned_nothrow
+mi_new_n
+mi_new_nothrow
+mi_new_realloc
+mi_new_reallocn
+mi_option_disable
+mi_option_enable
+mi_option_get
+mi_option_init
+mi_option_is_enabled
+mi_option_set
+mi_option_set_default
+mi_option_set_enabled
+mi_option_set_enabled_default
+mi_os_commitx
+mi_os_resetx
+mi_os_resetx.advice
+mi_out_arg
+mi_out_buf
+mi_out_buf_stderr
+mi_out_default
+mi_out_stderr
+mi_page_free_list_extend
+mi_page_fresh_alloc
+mi_page_queue_enqueue_from
+mi_path_max.path_max
+mi_posix_memalign
+mi_printf_amount
+mi_process_done
+mi_process_done.process_done
+mi_process_info
+mi_process_init
+mi_process_setup_auto_thread_done.tls_initialized
+mi_process_start
+mi_pthread_done
+mi_pvalloc
+mi_realloc
+mi_realloc_aligned
+mi_realloc_aligned_at
+mi_reallocarray
+mi_reallocf
+mi_reallocn
+mi_realpath
+mi_recalloc
+mi_recalloc_aligned
+mi_recalloc_aligned_at
+mi_register_deferred_free
+mi_register_error
+mi_register_output
+mi_reserve_huge_os_pages
+mi_reserve_huge_os_pages_at
+mi_reserve_huge_os_pages_interleave
+mi_reserve_os_memory
+mi_rezalloc
+mi_rezalloc_aligned
+mi_rezalloc_aligned_at
+mi_segment_abandon
+mi_segment_cache_purge
+mi_segment_commitx
+mi_segment_delayed_decommit
+mi_segment_free
+mi_segment_init
+mi_segment_map
+mi_segment_os_free
+mi_segment_page_clear
+mi_segment_reclaim
+mi_segment_span_allocate
+mi_segment_span_free
+mi_segment_span_free_coalesce
+mi_segment_span_remove_from_queue
+mi_segments_page_alloc
+mi_stat_print
+mi_stats_merge
+mi_stats_merge_from
+mi_stats_print
+mi_stats_print_out
+mi_stats_reset
+mi_strdup
+mi_strndup
+mi_thread_done
+mi_thread_init
+mi_thread_stats_print_out
+mi_try_new
+mi_try_new_handler
+mi_unix_mmap
+mi_unix_mmap.large_page_try_ok
+mi_unix_mmap.mi_huge_pages_available
+mi_unix_mmapx
+mi_usable_size
+mi_valloc
+mi_version
+mi_wcsdup
+mi_wdupenv_s
+mi_zalloc
+mi_zalloc_aligned
+mi_zalloc_aligned_at
+mi_zalloc_small
+mkdir
+mkostemps
+mkostemps64
+mkstemp
+mkstemp64
+mmap
+mmap64
+mmap_largefile
+monitor_or_something
+more_p
+mprotect
+mremap
+multiple_value_return
+munmap
+murmur3_fmix32
+murmur3_fmix64
+n_gcs_done
+n_scav_calls
+n_scav_skipped
+nanosleep
+new_areas
+new_areas_1
+new_areas_2
+new_areas_index
+new_areas_index_hwm
+new_lisp_thread_attr
+new_space
+new_thread_trampoline
+newline
+newspace_full_scavenge
+next_free_page
+next_key
+nodtor
+odxprint_fun
+ofl_head
+ofl_lock
+old_tz
+old_tz_buf
+old_tz_size
+open
+open64
+opendir
+options
+os_allocate
+os_context_float_register_addr
+os_context_fp_addr
+os_context_fp_control
+os_context_pc_addr
+os_context_register_addr
+os_context_sigmask_addr
+os_context_sp_addr
+os_deallocate
+os_dlsym_default
+os_flush_icache
+os_get_errno
+os_get_runtime_executable_path
+os_init
+os_install_interrupt_handlers
+os_invalidate
+os_link_runtime
+os_overcommit
+os_page_size
+os_preinit
+os_preloading
+os_protect
+os_reported_page_size
+os_restore_fp_control
+os_sem_destroy
+os_sem_init
+os_sem_post
+os_sem_wait
+os_unlink_runtime
+os_validate
+os_vm_page_size
+out_buf
+out_len
+output_space
+output_space.names
+pad
+page_address
+page_attributes_valid
+page_scan_start_offset
+page_table
+page_table_pages
+pair_follow_fps
+parse_addr
+parse_lispobj
+parse_number
+parse_size_arg
+parse_token
+passwd_homedir
+pathconf
+perror
+personality
+pin_all_dynamic_space_code
+pin_object
+pin_seek_state.0
+pin_seek_state.1
+pinned_objects
+pipe
+pointer_survived_gc_yet
+poll
+pop_arg
+posix_argv
+posix_memalign
+post_signal_tramp
+pow
+prctl
+pre_verify_gen_0
+prepare_for_final_gc
+prepare_for_full_mark_phase
+prepare_immobile_space_for_final_gc
+prepare_immobile_space_for_save
+prepare_to_save
+preserve_context_registers
+preserve_pointer
+print
+print_backtrace_frame
+print_cmd
+print_constant
+print_context
+print_context_cmd
+print_entry_name
+print_fixnum
+print_fun_or_otherptr
+print_generation_stats
+print_help
+print_list
+print_message
+print_obj
+print_obj.brief_fns
+print_obj.print_fns
+print_otherimm
+print_slots
+print_string
+print_struct
+print_version
+printf
+printf_core
+private_cons_page_chain
+private_cons_recycle_list
+profile_buffer_size
+program_invocation_name
+program_invocation_short_name
+properly_tagged_p_internal
+protect_alien_stack_guard_page
+protect_alien_stack_hard_guard_page
+protect_alien_stack_return_guard_page
+protect_binding_stack_guard_page
+protect_binding_stack_hard_guard_page
+protect_binding_stack_return_guard_page
+protect_control_stack_guard_page
+protect_control_stack_hard_guard_page
+protect_control_stack_return_guard_page
+prove_liveness
+pte_cmd
+pthread_attr_destroy
+pthread_attr_getdetachstate
+pthread_attr_getguardsize
+pthread_attr_getinheritsched
+pthread_attr_getschedparam
+pthread_attr_getschedpolicy
+pthread_attr_getscope
+pthread_attr_getstack
+pthread_attr_getstacksize
+pthread_attr_init
 pthread_attr_setstack
+pthread_barrierattr_getpshared
+pthread_cond_broadcast
+pthread_cond_timedwait
+pthread_cond_wait
+pthread_condattr_getclock
+pthread_condattr_getpshared
 pthread_create
+pthread_getattr_np
+pthread_getspecific
 pthread_join
+pthread_key_create
+pthread_key_delete
+pthread_kill
+pthread_mutex_lock
+pthread_mutex_timedlock
+pthread_mutex_trylock
+pthread_mutex_unlock
+pthread_mutexattr_getprotocol
+pthread_mutexattr_getpshared
+pthread_mutexattr_getrobust
+pthread_mutexattr_gettype
+pthread_once
+pthread_rwlock_rdlock
+pthread_rwlock_timedrdlock
+pthread_rwlock_timedwrlock
+pthread_rwlock_tryrdlock
+pthread_rwlock_trywrlock
+pthread_rwlock_unlock
+pthread_rwlock_wrlock
+pthread_rwlockattr_getpshared
+pthread_self
+pthread_setcancelstate
+pthread_setname_np
+pthread_setspecific
+pthread_sigmask
+pthread_testcancel
+purify
+purify_cmd
+putc
+putchar
+putenv
+puts
+putwc_unlocked
+pvalloc
+pw
+quit_cmd
+r0
+r1
+raise
+ratio_slots
+read
+read_only_space_free_pointer
+read_var_integer
+readdir
+readdir64
+readdir_largefile
+readlink
+realloc
+reallocarray
+reallocf
+realpath
+record_backtrace_from_context
+record_new_regions_below
+record_ptr
+recurse
+recyclebin_lock
+recyclebin_threads
+regmap
+regs_cmd
+release_gc_lock
+relocate_space
+rename
+report_heap_exhaustion
+reset_gc_stats
+reset_printer
+reset_thread_control_stack_guard_page
+resignal_to_lisp_thread
+restore_breakpoint_from_single_step
+restore_sbcl_signals
+rmdir
+rule_to_secs
+s_isblk
+s_ischr
+s_isdir
+s_isfifo
+s_islnk
+s_isreg
+s_issock
+safely_show_lstring
+save_runtime_to_filehandle
+save_to_filehandle
+sb_GetTID
+sb_closedir
+sb_dirent_name
+sb_dump_mcontext
+sb_kernel_package
+sb_mkstemp
+sb_nanosleep
+sb_nanosleep_double
+sb_nanosleep_float
+sb_opendir
+sb_readdir
+sb_realpath
+sb_sprof_enabled
+sb_sprof_trace_ct
+sb_sprof_trace_ct_max
+sb_toggle_sigprof
+sbcl_fallback_sigsegv_handler
+sbcl_main
+sbcl_runtime
+sbcl_runtime_home
+sc_and_offset_extract_bits
+sc_and_offset_offset
+sc_and_offset_sc_number
+scalbn
+scalbnl
+scan_binding_stack
+scan_spaces
+scan_weak_hashtable
+scanexp
+scav1
+scav_array
+scav_base_string
+scav_binding_stack
+scav_boxed
+scav_closure
+scav_code_header
+scav_fdefn
+scav_fun_pointer
+scav_funinstance
+scav_immediate
+scav_instance
+scav_instance_pointer
+scav_list_pointer
+scav_lose
+scav_other_pointer
+scav_ptr
+scav_queue
+scav_tiny_boxed
+scav_unboxed
+scav_vector_bit
+scav_vector_nil
+scav_vector_t
+scav_vector_unsigned_byte_128
+scav_vector_unsigned_byte_16
+scav_vector_unsigned_byte_2
+scav_vector_unsigned_byte_32
+scav_vector_unsigned_byte_4
+scav_vector_unsigned_byte_64
+scav_vector_unsigned_byte_8
+scav_weak_pointer
+scavenge
+scavenge_immobile_newspace
+scavenge_immobile_roots
+scavtab
+sccp
+sched_yield
+scrub_control_stack
+scrub_thread_control_stack
+search_all_gc_spaces
+search_cmd
+search_dynamic_space
+search_for_core
+search_for_elf_core
+search_for_embedded_core
+search_for_symbol
+search_immobile_space
+search_package_symbols
+search_read_only_space
+search_static_space
+search_symbol_aux
+select
+sem_destroy
+sem_init
+sem_post
+sem_timedwait
+sem_trywait
+sem_wait
+send_tree
+sendmsg
+set_noecho
+set_pty
+set_thread_state
+set_val
+setenv
+setitimer
+setjmp
+setpgid
+setpgrp
+setpwent
+setsid
+show_gc_stats
+show_lstring
+sig_stop_for_gc_handler
+sigabrt_handler
+sigaction
+sigaddset
+sigaddset_blockable
+sigaddset_deferrable
+sigaltstack
+sigdelset
+sigemptyset
+sigill_handler
+siginfo_code
+sigint_handler
+sigismember
+sigpending
+sigprocmask
+sigprof_handler
+sigsegv_handler
+sigset_tostring
+sigtimedwait
+sigtrap_handler
+sigwait
+simple_base_stringize
+simple_fun_index
+simple_fun_index_from_pc
+simple_fun_name_from_pc
+simple_fun_slots
+sin
+single_stepping
+sinh
+size
+size_array
+size_base_string
+size_bignum
+size_boxed
+size_code_header
+size_fdefn
+size_immediate
+size_instance
+size_lose
+size_short_boxed
+size_tiny_boxed
+size_vector_bit
+size_vector_nil
+size_vector_t
+size_vector_unsigned_byte_128
+size_vector_unsigned_byte_16
+size_vector_unsigned_byte_2
+size_vector_unsigned_byte_32
+size_vector_unsigned_byte_4
+size_vector_unsigned_byte_64
+size_vector_unsigned_byte_8
+sizeprefix
+sizetab
+skip_internal_error
+skip_newline
+slide_hash
+slot
+small_generation_limit
+smash_weak_pointers
+sn_write
+snprintf
+socket
+spawn
+sprintf
+sqrt
+stat
+stat64
+stat_largefile
+stat_wrapper
+states
+static_bl_desc
+static_d_desc
+static_dl_iterate_phdr
+static_dtree
+static_init_tls
+static_l_desc
+static_ltree
+static_space_free_pointer
+std_name
+stderr
+stdin
+stdout
+stpcpy
+stpncpy
+strcasecmp
+strcasecmp_l
+strchr
+strchrnul
+strcmp
+strcpy
+strcspn
+strdup
+strerror
+strerror_l
+strlen
+strncat
+strncmp
+strncpy
+strnlen
+strrchr
+strspn
+strstr
+strtod
+strtod_l
+strtof
+strtof_l
+strtoimax
+strtok
+strtok.p
+strtol
+strtold
+strtold_l
+strtoll
+strtoul
+strtoull
+strtoumax
+strtox
+stub_dladdr
+stub_dlclose
+stub_dlerror
+stub_dlopen
+stub_dlregister
+stub_dlsym
+stw_elapsed
+stw_max_duration
+stw_min_duration
+stw_sum_duration
+suballocator_end_ptr
+suballocator_free_ptr
+successful_malloc
+summarize_gc_stats
+supported_cmds
+survived_gc_yet_AND
+survived_gc_yet_KEY
+survived_gc_yet_OR
+survived_gc_yet_VALUE
+sw_write
+sweep
+sweep_immobile_space
+sweep_mode
+sweeplog
+swprintf
+sxhash_simple_string
+symbol_function
+symbol_name
+symbol_slots
+syscall
+sysconf
+sysconf.values
+sysinfo
+table
+tan
+tanh
+tcgetattr
+tcsetattr
+tcsetpgrp
+tempcntr
+test_weak_triggers
+thrd_current
+thread_alien_stack_size
+thread_control_stack_size
+thread_count
+thread_wait_until_not
+thread_yield
+timezone
+tld_empty
+tld_main
+toggle_print_garbage
+tolower
+tolower_l
+toupper
+toupper_l
+trace_using_layout
+trans
+trans_array
+trans_base_string
+trans_bignum
+trans_boxed
+trans_code
+trans_code_header
+trans_fdefn
+trans_lose
+trans_ratio_or_complex
+trans_tiny_boxed
+trans_unboxed
+trans_vector_bit
+trans_vector_nil
+trans_vector_t
+trans_vector_unsigned_byte_128
+trans_vector_unsigned_byte_16
+trans_vector_unsigned_byte_2
+trans_vector_unsigned_byte_32
+trans_vector_unsigned_byte_4
+trans_vector_unsigned_byte_64
+trans_vector_unsigned_byte_8
+trans_weak_pointer
+transother
+trunc
+truncate
+truncate64
+truncate_largefile
+try_acquire_gc_lock
+tss_get
+tune_asm_routines_for_microarch
+twoway_strstr
+types
+tzname
+tzset
+uid_homedir
+uid_username
+unbind
+unbind_to_here
+unblock_deferrable_signals
+unblock_gc_signals
+unblock_signals_in_context_and_maybe_warn
+undefined_alien_address
+undo
+undo_fake_foreign_function_call
+unhandled_sigmemoryfault
+unlink
+unmask_done
+unprotect_page_index
+unregister_thread
+unsetenv
+untune_asm_routines_for_microarch
+unw_get_fpreg
+unw_get_proc_info
+unw_get_proc_name
+unw_get_reg
+unw_getcontext
+unw_init_local
+unw_is_fpreg
+unw_is_signal_frame
+unw_iterate_dwarf_unwind_cache
+unw_local_addr_space
+unw_regname
+unw_resume
+unw_set_fpreg
+unw_set_reg
+unw_step
+unwind_binding_stack
+unwind_phase2
+unwind_phase2_forced
+update_immobile_nursery_bits
+update_page_write_prot
+updatewindow
+user_homedir
+valid_lisp_pointer_p
+valid_widetag_p
+valloc
+value_cell_slots
+var_clock
+var_name
+var_setclock
+var_value
+varint_unpack
+varint_unpacker_init
+varyobj_free_pointer
+varyobj_holes
+varyobj_page_gens_augmented
+varyobj_page_touched_bits
+varyobj_pages
+varyobj_points_to_younger_p
+varyobj_space_size
+varyobj_tempspace
+vdso_func
+vector_eql
+vector_sxhash
+verify_generation
+verify_gens
+verify_heap
+verify_range
+vfprintf
+vfree
+vfwprintf
+visit_freed_objects
+vmlock
+vodxprint_fun
+vsnprintf
+vsprintf
+vswprintf
+wait_for_exec
+waitpid
+walk_generation
+warning_count
+wcrtomb
+wcschr
+wcslen
+wcsnlen
+wcstod
+wcstof
+wcstoimax
+wcstol
+wcstold
+wcstoll
+wcstoul
+wcstoull
+wcstoumax
+wcstox
+wctomb
+weak_hash_tables
+weak_ht_alivep_funs
+weak_objects
+weak_pointer_chain
+weak_pointer_slots
+weak_vectors
+wexitstatus
+widetag_lowtag
+widetag_names
+wifcontinued
+wifexited
+wifsignaled
+wifstopped
+wmemchr
+wmemcmp
+wmemcpy
+wmemmove
+wmemset
+wprintf_core
+wrapped_environ
+wrapped_readlink
+write
+write_bytes
+write_generation_stats
+write_heap_exhaustion_report
+write_lispobj
+write_protect_immobile_space
+wstopsig
+wtermsig
+xdigits
+zError
+z_errmsg
+zcalloc
+zcfree
+zero_all_free_ranges
+zero_dirty_pages
+zi
+zlibCompileFlags
+zlibVersion

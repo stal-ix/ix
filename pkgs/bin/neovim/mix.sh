@@ -29,13 +29,15 @@ export LUA_PATH=
 {% endblock %}
 
 {% block setup_tools %}
-cat << EOF > lua
+L=$(which luajit)
+
+cat << EOF > luajit
 #!$(which sh)
 export LUA_PATH="${LUA_PATH}:\${LUA_PATH}"
-exec "$(which lua)" "\$@"
+exec "${L}" "\$@"
 EOF
 
-chmod +x lua
+chmod +x luajit
 {% endblock %}
 
 {% block patch %}
