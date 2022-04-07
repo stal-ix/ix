@@ -45,4 +45,3 @@ ln -s $(which python2) python
 {{super()}}
 rm -r ${out}/share/pkgconfig
 {% endblock %}
-{% extends '//mix/hub.sh' %}
