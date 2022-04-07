@@ -33,7 +33,7 @@ export PYTHONPLATLIBDIR="${PYTHONHOME}/lib"
 {% endblock %}
 
 {% block patch %}
-(base64 -d | patch -p1) << EOF
+base64 -d << EOF | patch -p1
 {% include '0.diff/base64' %}
 EOF
 
@@ -70,6 +70,7 @@ clang reg.c ${PYTHONHOME}/lib/python*/config-*/python.o *.o -o kitty-bin
 
 {% block install %}
 mkdir ${out}/bin ${out}/share
+
 cp -R kitty ${out}/share/
 cp __main__.py ${out}/share/
 cp build/kitty-bin ${out}/bin/
