@@ -26,9 +26,9 @@ sed -e 's|.*return 0.*open failed.*|if (f == NULL) return (strstr(filename, ".so
 (IFS=":"; for x in ${LUA_PATH}; do cat ${x}/mod; done) | sed -e 's|.* ||' | while read l; do
     n=$(echo ${l} | sed -e 's|.*luaopen_||')
     echo "${n} ${l} ${l}"
-done | dl_stubs > dl.cpp
+done | dl_stubs > dl.c
 
-${CC} -c dl.cpp
+${CC} -c dl.c
 
 {{super()}}
 {% endblock %}

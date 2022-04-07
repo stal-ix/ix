@@ -26,7 +26,7 @@ sed -e 's/size_t os_vm_page_size/extern size_t os_vm_page_size/' -i src/runtime/
 
 cat << EOF
 {% include 'symbols' %}
-EOF | while read l; do echo "sbcl ${l} ${l}"; done | dl_stubs > symbols.cpp
+EOF | while read l; do echo "sbcl ${l} ${l}"; done | dl_stubs > symbols.c
 {% endblock %}
 
 {% block boot_lisp %}
@@ -34,7 +34,7 @@ ecl -norc
 {% endblock %}
 
 {% block build %}
-clang -c symbols.cpp -o ${tmp}/symbols.o
+clang -c symbols.c -o ${tmp}/symbols.o
 
 export LDLIBS="${tmp}/symbols.o"
 

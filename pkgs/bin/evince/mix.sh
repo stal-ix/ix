@@ -64,9 +64,9 @@ for x in pdf comics djvu tiff; do
     for l in obj/backend/${x}/lib${x}document.a.p/*.o; do
         llvm-objcopy --preserve-dates --redefine-sym "${func}=${func}_${x}" ${l}
     done
-done | dl_stubs > stub.cpp
+done | dl_stubs > stub.c
 
-cc -o evince stub.cpp $(find -type f -name '*.o' | grep -v 'evinced.p' | grep -v 'test-')
+cc -o evince stub.c $(find -type f -name '*.o' | grep -v 'evinced.p' | grep -v 'test-')
 {% endblock %}
 
 {% block install %}

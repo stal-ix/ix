@@ -35,12 +35,12 @@ cd ${tmp}
 
 ver='3_4'
 
-dl_stubs << EOF >> stubs.cpp
+dl_stubs << EOF >> stubs.c
 djvu  zathura_plugin_${ver} djvu_zathura_plugin_${ver}
 mupdf zathura_plugin_${ver} mupdf_zathura_plugin_${ver}
 EOF
 
-cc -o zathura stubs.cpp $(find . -name '*.o') \
+cc -o zathura stubs.c $(find . -name '*.o') \
     ${lib_zathura_mupdf}/mod/*.a \
     ${lib_zathura_djvu}/mod/*.a
 {% endblock %}

@@ -33,14 +33,14 @@ wrap_cc
 
 fixallns ${PWD}
 
-dl_stubs << EOF >> stubs.cpp
+dl_stubs << EOF >> stubs.c
 game     GetGameAPI game_GetGameAPI
 ref_gl1  GetRefAPI  ref_gl1_GetRefAPI
 ref_gl3  GetRefAPI  ref_gl3_GetRefAPI
 ref_soft GetRefAPI  ref_soft_GetRefAPI
 EOF
 
-cc -o quake2 stubs.cpp $(find build/client -name '*.o') $(find . -name '*.so')
+cc -o quake2 stubs.c $(find build/client -name '*.o') $(find . -name '*.so')
 {% endblock %}
 
 {% block patch %}

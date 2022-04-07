@@ -7,10 +7,7 @@ bld/scripts/dlfcn
 
 {% block bld_libs %}
 lib/c
-{% endblock %}
-
-{% block premain_lang %}
-c++
+{{super()}}
 {% endblock %}
 
 {% block premain_code_gen %}

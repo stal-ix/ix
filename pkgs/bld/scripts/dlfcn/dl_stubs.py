@@ -24,11 +24,11 @@ assert S
 print('#include <dlfcn.h>')
 
 for l, a, b in S:
-    print(f'extern "C" void* {b};')
+    print(f'extern void* {b};')
 
-print('namespace { __attribute__((constructor)) static void init_dl() {')
+print('__attribute__((constructor)) static void init_dl() {')
 
 for l, a, b in S:
     print(f'stub_dlregister("{l}", "{a}", &{b});')
 
-print('}}')
+print('}')

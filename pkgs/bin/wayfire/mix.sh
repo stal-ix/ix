@@ -65,9 +65,9 @@ llvm-nm --no-demangle --print-file-name -j $(find . -name '*.o') | grep newInsta
 
     echo "${s} newInstance newInstance_${n}"
     echo "${s} getWayfireVersion getWayfireVersion_${n}"
-done | dl_stubs > stub.cpp
+done | dl_stubs > stub.c
 
-cc -o real_wayfire stub.cpp $(find ${tmp} -type f -name '*.o')
+cc -o real_wayfire stub.c $(find ${tmp} -type f -name '*.o')
 {% endblock %}
 
 {% block install %}
