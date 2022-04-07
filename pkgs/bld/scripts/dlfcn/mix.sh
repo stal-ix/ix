@@ -4,18 +4,12 @@
 bld/python
 {% endblock %}
 
-{% block ind_deps %}
-bld/scripts/dlfcn/lib
-{% endblock %}
-
 {% block install %}
-mkdir ${out}/bin
+mkdir ${out}/bin; cd ${out}/bin
 
-base64 -d << EOF > ${out}/bin/gen_dl_stubs_1.py
-{% include 'gen_dl_stubs_1.py/base64' %}
+base64 -d << EOF > dl_stubs
+{% include 'dl_stubs.py/base64' %}
 EOF
 
-base64 -d << EOF > ${out}/bin/gen_dl_stubs_3.py
-{% include 'gen_dl_stubs_3.py/base64' %}
-EOF
+chmod +x *
 {% endblock %}

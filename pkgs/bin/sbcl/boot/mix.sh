@@ -26,7 +26,7 @@ sed -e 's/size_t os_vm_page_size/extern size_t os_vm_page_size/' -i src/runtime/
 
 cat << EOF
 {% include 'symbols' %}
-EOF | while read l; do echo "sbcl ${l} ${l}"; done | dl_stubs_3 > symbols.cpp
+EOF | while read l; do echo "sbcl ${l} ${l}"; done | dl_stubs > symbols.cpp
 {% endblock %}
 
 {% block boot_lisp %}

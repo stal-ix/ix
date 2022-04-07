@@ -23,16 +23,10 @@ sed -e 's|.*return 0.*open failed.*|if (f == NULL) return (strstr(filename, ".so
 {% endblock %}
 
 {% block build %}
-(
-    IFS=":"; for x in ${LUA_PATH}; do
-        cat ${x}/mod
-    done
-) | while read l; do
+(IFS=":"; for x in ${LUA_PATH}; do cat ${x}/mod; done) | sed -e 's|.* ||' | while read l; do
     n=$(echo ${l} | sed -e 's|.*luaopen_||')
-    dl_stubs ${n} << EOF
-${l}
-EOF
-done > dl.cpp
+    echo "${n} ${l} ${l}"
+done | dl_stubs > dl.cpp
 
 ${CC} -c dl.cpp
 

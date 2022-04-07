@@ -35,7 +35,7 @@ cd ${tmp}
 
 ver='3_4'
 
-dl_stubs_3 << EOF >> stubs.cpp
+dl_stubs << EOF >> stubs.cpp
 djvu  zathura_plugin_${ver} djvu_zathura_plugin_${ver}
 mupdf zathura_plugin_${ver} mupdf_zathura_plugin_${ver}
 EOF

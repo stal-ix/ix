@@ -18,5 +18,5 @@ c++
 set -eu
 {% block export_map %}
 {% endblock %}
-) | dl_stubs_3
+) | dl_stubs
 {% endblock %}

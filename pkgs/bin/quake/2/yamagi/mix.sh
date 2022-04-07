@@ -33,7 +33,7 @@ wrap_cc
 
 fixallns ${PWD}
 
-dl_stubs_3 << EOF >> stubs.cpp
+dl_stubs << EOF >> stubs.cpp
 game     GetGameAPI game_GetGameAPI
 ref_gl1  GetRefAPI  ref_gl1_GetRefAPI
 ref_gl3  GetRefAPI  ref_gl3_GetRefAPI
