@@ -31,5 +31,13 @@ base64 -d << EOF > substr
 {% include 'substr.py/base64' %}
 EOF
 
+base64 -d << EOF > listsym
+{% include 'listsym.sh/base64' %}
+EOF
+
+base64 -d << EOF > findlib
+{% include 'findlib.py/base64' %}
+EOF
+
 chmod +x *
 {% endblock %}
