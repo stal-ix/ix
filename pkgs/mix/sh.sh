@@ -17,6 +17,10 @@ source_env() {
     done; IFS=${OFS}
 }
 
+fast_rm() (
+    mv ${1} /mix/trash/ || rm -rf ${1}
+)
+
 {% block functions %}
 {% endblock %}
 
@@ -39,10 +43,10 @@ export COFLAGS=
 export CMFLAGS=
 export LOCALE_PATH=
 
-rm -rf ${out}
+fast_rm ${out}
 mkdir -p ${out}
 
-rm -rf ${tmp}
+fast_rm ${tmp}
 mkdir -p ${tmp}
 
 cd ${tmp}
@@ -69,7 +73,7 @@ if command -v find; then
 fi
 {% endblock %}
 
-rm -rf ${tmp}
+fast_rm ${tmp}
 {% endblock %}
 {% endblock %}
 
