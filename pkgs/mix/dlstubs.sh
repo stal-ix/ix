@@ -2,6 +2,7 @@
 
 {% block std_box %}
 bld/scripts/dlfcn
+bld/scripts/librarian
 {{super()}}
 {% endblock %}
 
@@ -29,7 +30,7 @@ EOF
 
 {% block export_symbols_sh %}
 {% for x in mix.parse_list(export_libs) %}
-llvm-nm --defined-only --extern-only --no-weak {{x}}
+listsym $(findlib {{x}})
 {% endfor %}
 {% endblock %}
 ) | dl_stubs {{self.export_lib().strip()}}

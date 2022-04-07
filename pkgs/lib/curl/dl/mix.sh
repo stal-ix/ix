@@ -5,7 +5,7 @@ lib/curl
 {% endblock %}
 
 {% block export_libs %}
-${lib_curl}/lib/libcurl.a
+libcurl.a
 {% endblock %}
 
 {% block export_lib %}

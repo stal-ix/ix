@@ -5,7 +5,7 @@ lib/openal
 {% endblock %}
 
 {% block export_libs %}
-${lib_openal}/lib/libopenal.a
+libopenal.a
 {% endblock %}
 
 {% block export_lib %}
