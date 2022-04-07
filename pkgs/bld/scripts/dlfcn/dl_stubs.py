@@ -26,7 +26,9 @@ print('#include <dlfcn.h>')
 for l, a, b in S:
     print(f'extern "C" void* {b};')
 
+print('namespace { __attribute__((constructor)) static void init_dl() {')
+
 for l, a, b in S:
-    print(f'DL_LIB("{l}")')
-    print(f'DL_S_2("{a}", &{b})')
-    print('DL_END()')
+    print(f'stub_dlregister("{l}", "{a}", &{b});')
+
+print('}}')
