@@ -15,7 +15,6 @@ c++
 
 {% block premain_code_gen %}
 (
-set -eu
 {% block export_map %}
 {% endblock %}
 ) | dl_stubs

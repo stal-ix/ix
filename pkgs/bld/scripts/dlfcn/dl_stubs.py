@@ -19,6 +19,8 @@ def it_symbols():
 
 S = list(it_symbols())
 
+assert S
+
 print('#include <dlfcn.h>')
 
 for l, a, b in S:
