@@ -5,11 +5,6 @@ bld/tar
 bld/gzip
 {% endblock %}
 
-{% block bld_tool %}
-bld/gzip
-bin/bison/3/6
-{% endblock %}
-
 {% block install %}
 {{super()}}
 cd ${out}/bin

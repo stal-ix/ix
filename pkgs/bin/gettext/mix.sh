@@ -16,8 +16,8 @@ lib/textstyle
 {% endblock %}
 
 {% block bld_tool %}
-bin/gzip
-bin/bison/3/6
+bld/gzip
+bld/byacc
 {% endblock %}
 
 {% block run_deps %}
