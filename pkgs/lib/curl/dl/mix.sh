@@ -1,4 +1,4 @@
-{% extends '//mix/dlstubs.sh' %}
+{% extends '//mix/dl/lib.sh' %}
 
 {% block lib_deps %}
 lib/curl
