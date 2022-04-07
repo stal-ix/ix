@@ -23,9 +23,10 @@ EOF
 {% endblock %}
 
 {% block install %}
-mkdir ${out}/lib; cp reg.o ${out}/lib/
+mkdir ${out}/lib
+cp reg.o ${out}/lib/
 {% endblock %}
 
 {% block env %}
-export LDFLAGS="${out}/lib/reg.o \${LDFLAGS}"
+export CTRFLAGS="${out}/lib/reg.o \${CTRFLAGS}"
 {% endblock %}

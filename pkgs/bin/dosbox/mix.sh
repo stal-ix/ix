@@ -13,7 +13,7 @@ lib/mesa/gl/dl
 lib/mesa/egl/dl
 {% endblock %}
 
-{% block setup_tools %}
+{% block setup_toolsq %}
 C=$(which clang)
 CP=$(which clang++)
 

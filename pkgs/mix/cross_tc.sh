@@ -22,8 +22,9 @@ popd
 
 setup_tc target
 
-export LDFLAGS=
 export CFLAGS=
+export LDFLAGS=
+export CTRFLAGS=
 export CPPFLAGS=
 export CXXFLAGS=
 export OPTFLAGS=

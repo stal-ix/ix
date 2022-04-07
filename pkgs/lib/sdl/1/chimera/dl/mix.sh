@@ -10,6 +10,3 @@ llvm-nm --defined-only --extern-only --no-weak ${lib_sdl_1_chimera}/lib/libSDL2.
     echo "SDL2-2 ${r} ${l}"
 done
 {% endblock %}
-
-{% block env %}
-{% endblock %}
