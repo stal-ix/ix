@@ -3,6 +3,7 @@
 {% block bld_libs %}
 lib/dbus
 lib/mesa
+lib/rsync
 lib/wayland
 lib/xkbcommon
 lib/fontconfig
@@ -20,7 +21,7 @@ bin/wayland/protocols
 {% endblock %}
 
 {% block patch %}
-{{syuper()}}
+{{super()}}
 
 sed -e "s|'gl'|'opengl'|" -e 's|x11 wayland|wayland|' -i setup.py
 

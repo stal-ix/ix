@@ -1,8 +1,10 @@
 {% extends '//mix/c_std.sh' %}
 
 {% block fetch %}
-https://github.com/kovidgoyal/kitty/archive/refs/tags/v0.23.1.tar.gz
-0ca3c5cbc172d3ac7ce63041a4074bb9
+#https://github.com/kovidgoyal/kitty/archive/refs/tags/v0.23.1.tar.gz
+#0ca3c5cbc172d3ac7ce63041a4074bb9
+https://github.com/kovidgoyal/kitty/archive/refs/tags/v0.24.4.tar.gz
+sha:e6619b635b5c9d6cebbba631a2175659698068ce1cd946732dc440b0f1c12ab3
 {% endblock %}
 
 {% block bld_libs %}
@@ -19,6 +21,7 @@ bld/python
 bld/pkg/config
 bld/scripts/dlfcn
 bld/scripts/python
+bld/scripts/librarian
 {% endblock %}
 
 {% block build_flags %}
@@ -47,20 +50,24 @@ EOF
 {% block build %}
 python3 setup.py build
 
-find . -type f -name '*.so' -delete
-
 cd build
 
-rm -f glfw-*-monotonic.c.o
+rm glfw-*-monotonic.c.o subseq_matcher-charsets.c.o
 
-python3 $(which gen_py_init.py) ${PYTHONHOME} fast_data_types > config.c
+gen_py_init ${PYTHONHOME} \
+    rsync           \
+    diff_speedup    \
+    fast_data_types \
+    subseq_matcher  \
+    unicode_names   \
+    fast_data_types \
+    > reg.c
 
-llvm-nm --defined-only --extern-only --no-weak glfw*.o \
-    | grep ' ' | grep glfw | sed -e 's|.* ||'      \
+listsym *.o | grep glfw \
     | while read l; do echo "glfw-wayland ${l} ${l}"; done \
-    | dl_stubs > dl.cpp
+    | dl_stubs >> reg.c
 
-clang dl.cpp config.c ${PYTHONHOME}/lib/python*/config-*/python.o fast*.o glfw*.o -o kitty-bin
+clang reg.c ${PYTHONHOME}/lib/python*/config-*/python.o *.o -o kitty-bin
 {% endblock %}
 
 {% block install %}
@@ -71,7 +78,6 @@ cp build/kitty-bin ${out}/bin/
 
 cat << EOF > ${out}/bin/kitty
 #!/usr/bin/env sh
-
 export PYTHONPATH="${out}/share"
 exec "${out}/bin/kitty-bin" "${out}/share/__main__.py" "$@"
 EOF

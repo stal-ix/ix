@@ -1,10 +1,10 @@
+#!/usr/bin/env python3
+
 import os
 import sys
 
-
 where = sys.argv[1]
 names = sys.argv[2:]
-
 
 def find_file(n, where):
     for a, b, c in os.walk(where):
@@ -13,7 +13,6 @@ def find_file(n, where):
                 return os.path.join(where, a, x)
 
     raise Exception(f'can not find {n} in {where}')
-
 
 for l in open(find_file('config.c', where)).read().splitlines():
     if 'ADDMODULE MARKER 1' in l:

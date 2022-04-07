@@ -1,5 +1,5 @@
 {% extends '//mix/hub.sh' %}
 
-{% blcok run_deps %}
+{% block run_deps %}
 bin/kitty/{{target.os}}
 {% endblock %}
