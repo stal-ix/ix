@@ -1,8 +1,6 @@
 {% extends '//mix/c_std.sh' %}
 
 {% block fetch %}
-#https://github.com/kovidgoyal/kitty/archive/refs/tags/v0.23.1.tar.gz
-#0ca3c5cbc172d3ac7ce63041a4074bb9
 https://github.com/kovidgoyal/kitty/archive/refs/tags/v0.24.4.tar.gz
 sha:e6619b635b5c9d6cebbba631a2175659698068ce1cd946732dc440b0f1c12ab3
 {% endblock %}
