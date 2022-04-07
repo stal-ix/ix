@@ -1,4 +1,4 @@
-{% extends '//mix/dlstubs.sh' %}
+{% extends '//mix/dl/fix.sh' %}
 
 {% block export_symbols %}
 vk_icdGetInstanceProcAddr

@@ -1,4 +1,4 @@
-{% extends '//mix/dlstubs.sh' %}
+{% extends '//mix/dl/fix.sh' %}
 
 {% block lib_deps %}
 lib/pam

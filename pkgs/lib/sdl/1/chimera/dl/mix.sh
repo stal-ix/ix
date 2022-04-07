@@ -1,4 +1,4 @@
-{% extends '//mix/dl_stubs.sh' %}
+{% extends '//mix/dl/map.sh' %}
 
 {% block lib_deps %}
 lib/sdl/1/chimera
