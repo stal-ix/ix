@@ -1,8 +1,8 @@
 {% extends '//mix/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/libarchive/libarchive/archive/refs/tags/v3.6.0.tar.gz
-sha:9f9c1a21e570242c0d2854964d5e9ce00bb87144c19feac282b027146a86d0e3
+https://github.com/libarchive/libarchive/archive/refs/tags/v3.6.1.tar.gz
+sha:3d5dce7be5ed9b2c239e25b0579167c133296d9dedd17b484b678aec6c010b62
 {% endblock %}
 
 {% block lib_deps %}
