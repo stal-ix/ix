@@ -1,8 +1,8 @@
 {% extends '//mix/autohell.sh' %}
 
 {% block fetch %}
-https://github.com/unicode-org/icu/archive/refs/tags/release-70-1.tar.gz
-ebe2080640a063e9237cc41e80034d96
+https://github.com/unicode-org/icu/archive/refs/tags/release-71-1.tar.gz
+sha:d88a4ea7a4a28b445bb073a6cfeb2a296bf49a4a2fe5f1b49f87ecb4fc55c51d
 {% endblock %}
 
 {% block unpack %}
