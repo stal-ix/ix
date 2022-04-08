@@ -8,7 +8,7 @@ sha:5bd7942703575554670a8767ae030f7921a0ac3c5e2fd173a537b7c7a8599014
 {% block lib_deps %}
 lib/c
 lib/opengl
-lib/sdl/1/chimera
+lib/sdl/chimera
 {% endblock %}
 
 {% block install %}

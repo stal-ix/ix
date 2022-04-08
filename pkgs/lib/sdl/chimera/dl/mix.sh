@@ -1,7 +1,7 @@
 {% extends '//mix/dl/map.sh' %}
 
 {% block lib_deps %}
-lib/sdl/1/chimera
+lib/sdl/chimera
 {% endblock %}
 
 {% block bld_tool %}
