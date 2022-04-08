@@ -30,5 +30,5 @@ sed -e 's|/bin/bash|/usr/bin/env bash|' -i install-sh
 
 {% block install %}
 {{super()}}
-cd ${out}; rm -rf lib64
+rm -rf ${out}/lib64
 {% endblock %}
