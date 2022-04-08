@@ -1,4 +1,4 @@
-{% extends '//bin/openssh/unwrap/mix.sh' %}
+{% extends '//bin/openssh/mix.sh' %}
 
 {% block install %}
 {{super()}}

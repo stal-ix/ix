@@ -1,8 +1,8 @@
 {% extends '//mix/autorehell.sh' %}
 
 {% block fetch %}
-https://github.com/NLnetLabs/ldns/archive/refs/tags/release-1.7.1.tar.gz
-a84a680e92618b8c236626c192e5a15b
+https://github.com/NLnetLabs/ldns/archive/refs/tags/1.8.1.tar.gz
+sha:5736a61dbc1aaf64d4dc235643d00c5c265d988cfc2e7e89c770cd867bdb081b
 {% endblock %}
 
 {% block lib_deps %}
