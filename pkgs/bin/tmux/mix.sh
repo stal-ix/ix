@@ -13,7 +13,7 @@ lib/utf8proc
 {% endblock %}
 
 {% block bld_tool %}
-bin/byacc
+bld/byacc
 {% endblock %}
 
 {% block configure_flags %}

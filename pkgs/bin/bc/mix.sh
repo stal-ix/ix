@@ -15,7 +15,7 @@ lib/readline
 {% block bld_tool %}
 bld/flex
 bld/bash
-bin/byacc
+bld/byacc
 bld/texinfo
 bin/heirloom/ed
 {% endblock %}

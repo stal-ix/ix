@@ -11,7 +11,7 @@ bin/bsdutils/libs(openssl=1)
 
 {% block bld_tool %}
 bld/flex
-bin/byacc
+bld/byacc
 {% endblock %}
 
 {% block install %}

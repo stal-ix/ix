@@ -11,7 +11,7 @@ lib/c
 
 {% block bld_tool %}
 bld/perl
-bin/gzip
+bld/gzip
 bin/libtool
 {% endblock %}
 

@@ -6,6 +6,6 @@ https://ftp.gnu.org/gnu/coreutils/coreutils-8.31.tar.xz
 {% endblock %}
 
 {% block bld_tool %}
-bin/byacc
+bld/byacc
 {{super()}}
 {% endblock %}
