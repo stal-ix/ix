@@ -1,8 +1,8 @@
 {% extends '//mix/autohell.sh' %}
 
 {% block fetch %}
-https://gnupg.org/ftp/gcrypt/libgpg-error/libgpg-error-1.43.tar.bz2
-f1e09cfa536a6e6a264dbf2ccdc2e534
+https://gnupg.org/ftp/gcrypt/libgpg-error/libgpg-error-1.45.tar.bz2
+sha:570f8ee4fb4bff7b7495cff920c275002aea2147e9a1d220c068213267f80a26
 {% endblock %}
 
 {% block lib_deps %}
