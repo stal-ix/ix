@@ -14,7 +14,7 @@ bin/dhcpcd/runit
 bin/mingetty/runit
 bin/sched/trashdir(delay=100)
 
-aux/etc
+etc
 bin/busybox
 bin/busybox/syslogd
 {% endblock %}

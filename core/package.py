@@ -136,6 +136,8 @@ class Package:
         if 'flags' not in selector:
             selector['flags'] = {}
 
+        selector['name'] = selector['name'].replace('aux/etc', 'etc')
+
         flags = selector['flags']
 
         if 'target' not in flags:
@@ -177,7 +179,10 @@ class Package:
         if n.startswith('boot/'):
             return canon_name(n)
 
-        n = n[n.index('/') + 1:]
+        try:
+            n = n[n.index('/') + 1:]
+        except ValueError:
+            pass
 
         return canon_name(f'{k}-{n}')
 
