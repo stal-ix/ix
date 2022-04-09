@@ -13,3 +13,7 @@ lib/c++
 {% block cmake_flags %}
 RE2_BUILD_TESTING=OFF
 {% endblock %}
+
+{% block env_lib %}
+export CMFLAGS="-Dre2_DIR=${out}/lib/cmake/re2 \${CMFLAGS}"
+{% endblock %}
