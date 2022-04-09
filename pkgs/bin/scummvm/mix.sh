@@ -8,14 +8,18 @@ sha:9fd8db38e4456144bf8c34dacdf7f204e75f18e8e448ec01ce08ce826a035f01
 {% block bld_libs %}
 lib/c
 lib/z
+lib/a52
 lib/c++
 lib/png
 lib/curl
 lib/jpeg
+lib/faad2
 lib/sdl/2
+lib/mpeg2
 lib/giflib
 lib/fribidi
 lib/freetype
+lib/timidity
 lib/xiph/ogg
 lib/xiph/flac
 lib/xiph/vorbis
