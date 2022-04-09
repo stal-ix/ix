@@ -18,16 +18,12 @@ lib/sdl/2
 lib/mpeg2
 lib/giflib
 lib/fribidi
+lib/sdl/deps
 lib/freetype
 lib/timidity
 lib/xiph/ogg
 lib/xiph/flac
 lib/xiph/vorbis
-
-lib/drivers/3d
-lib/mesa/gl/dl
-lib/mesa/egl/dl
-lib/mesa/glesv2/dl
 {% endblock %}
 
 {% block bld_tool %}

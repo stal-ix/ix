@@ -10,11 +10,9 @@ lib/c
 lib/sdl/2
 lib/opengl
 lib/curl/dl
+lib/sdl/deps
 lib/execinfo
 lib/openal/dl
-lib/drivers/3d
-lib/mesa/gl/dl
-lib/mesa/egl/dl
 lib/vulkan/loader
 lib/vulkan/headers
 {% endblock %}

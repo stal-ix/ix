@@ -1,6 +1,8 @@
 {% extends '//mix/hub.sh' %}
 
 {% block lib_deps %}
-lib/sdl/chimera/dl
-lib/sdl/1/unwrap
+lib/drivers/3d
+lib/mesa/gl/dl
+lib/mesa/egl/dl
+lib/mesa/glesv2/dl
 {% endblock %}
