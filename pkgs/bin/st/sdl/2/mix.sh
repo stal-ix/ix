@@ -14,15 +14,21 @@ lib/sdl/2/ttf
 {% endblock %}
 
 {% block bld_tool %}
-lib/curses/n
+bld/pkg/config
 {% endblock %}
 
 {% block configure %}
 make config.h
 {% endblock %}
 
+{% block cpp_includes %}
+${lib_sdl_2}/include/SDL2
+{% endblock %}
+
 {% block patch %}
 find . -type f | while read l; do
     sed -e 's|-lpng12||' -e 's|-lstdc++||' -i ${l}
 done
+
+sed -e 's|.*tic -s.*||' -i Makefile
 {% endblock %}
