@@ -27,7 +27,7 @@ ${lib_sdl_2}/include/SDL2
 
 {% block patch %}
 find . -type f | while read l; do
-    sed -e 's|-lpng12||' -e 's|-lstdc++||' -i ${l}
+    sed -e 's|-lpng12||' -e 's|-lstdc++||' -e 's|st-256color|xterm|' -i ${l}
 done
 
 sed -e 's|.*tic -s.*||' -i Makefile
