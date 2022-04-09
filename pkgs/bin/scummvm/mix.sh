@@ -27,9 +27,11 @@ lib/xiph/vorbis
 lib/drivers/3d
 lib/mesa/gl/dl
 lib/mesa/egl/dl
+lib/mesa/glesv2/dl
 {% endblock %}
 
 {% block bld_tool %}
+bin/nasm
 # llvm-strings?
 bin/elfutils
 {% endblock %}
@@ -41,5 +43,14 @@ crc_finalize
 {% block configure %}
 sh ./configure \
     --prefix=${out} \
-    --enable-static
+    --enable-static \
+    --opengl-mode=gles2 \
+    --enable-verbose-build \
+    --force-opengl-game-es2
+{% endblock %}
+
+{% block patch %}
+find. -type f | while read l; do
+    sed -e 's|-lX11||g' -i ${l}
+done
 {% endblock %}
