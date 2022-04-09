@@ -42,9 +42,9 @@ crc_finalize
 
 {% block configure %}
 sh ./configure \
-    --prefix=${out} \
-    --enable-static \
-    --opengl-mode=gles2 \
+    --prefix=${out}        \
+    --enable-static        \
+    --opengl-mode=gles2    \
     --enable-verbose-build \
     --force-opengl-game-es2
 {% endblock %}
