@@ -8,3 +8,11 @@ f30c738034faa13d6255604ed46b6158
 {% block lib_deps %}
 lib/c
 {% endblock %}
+
+{% block install %}
+{{super()}}
+cd ${out}
+mkdir lib/cmake
+# TODO(pg):check this strange cmake shit
+mv share/WebP/cmake lib/cmake/WebP
+{% endblock %}

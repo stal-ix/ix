@@ -13,6 +13,7 @@ lib/tiff
 lib/webp
 lib/jpeg
 lib/avif
+lib/exif
 lib/cairo
 lib/giflib
 lib/wayland
@@ -21,4 +22,12 @@ lib/xkbcommon
 
 {% block bld_tool %}
 bin/wayland/protocols
+{% endblock %}
+
+{% block meson_flags %}
+jxl=enabled
+{% endblock %}
+
+{% block patch %}
+sed -e 's|libjxl|jxl|' -i meson.build
 {% endblock %}
