@@ -19,7 +19,7 @@ mkdir button
 
 cat << EOF > button/lid.sh
 case \${2} in
-    closex) echo -n mem > /sys/power/state ;;
+    close) echo -n mem > /sys/power/state ;;
 esac
 EOF
 {% endblock %}
