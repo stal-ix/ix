@@ -9,8 +9,8 @@ cd ${out}
 
 mkdir -p etc/passwd.d
 
-cat << EOF > etc/passwd.d/user0
-{{user or error()}}:$(echo | cryptpw -S 237364527348):10000:10000:none:/home/{{user}}:/home/{{user}}/.session
+cat << EOF > etc/passwd.d/{{user or error()}}
+{{user}}:{{hash or error()}}:10000:10000:none:/home/{{user}}:{{shell or '/bin/sh'}}
 EOF
 
 {% if pubkey %}
