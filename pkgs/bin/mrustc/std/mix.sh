@@ -2,6 +2,7 @@
 
 {% block lib_deps %}
 lib/c
+bin/mrustc/stubs
 {% endblock %}
 
 {% block build %}

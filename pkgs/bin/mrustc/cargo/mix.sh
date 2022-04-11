@@ -1,11 +1,14 @@
 {% extends '//bin/mrustc/t/mix.sh' %}
 
 {% block bld_libs %}
-lib/c
 lib/z
 lib/openssl/1
 bin/mrustc/std
-bin/mrustc/stubs
+{% endblock %}
+
+{% block setup %}
+{{super()}}
+export OPENSSL_DIR=${lib_openssl_1}
 {% endblock %}
 
 {% block build %}
