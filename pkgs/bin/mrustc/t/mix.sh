@@ -51,14 +51,11 @@ export OVERRIDE_DIR=${PWD}/script-overrides/stable-1.54.0-linux
 {% block build %}
 cargo() (
     minicargo ${@} \
+        -j ${make_thrs}  \
         -L ${OUTPUT_DIR} \
+        -L ${MRUSTC_STD} \
         --output-dir ${OUTPUT_DIR} \
         --vendor-dir ${VENDOR_DIR} \
         --manifest-overrides ${PWD}/rustc-1.54.0-overrides.toml
 )
-
-cargo ${RUSTC_SRC}/library/std --script-overrides ${OVERRIDE_DIR}
-cargo ${RUSTC_SRC}/library/panic_unwind --script-overrides ${OVERRIDE_DIR}
-cargo ${RUSTC_SRC}/library/test --script-overrides ${OVERRIDE_DIR}
-cargo lib/libproc_macro
 {% endblock %}
