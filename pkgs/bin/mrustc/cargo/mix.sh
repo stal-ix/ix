@@ -2,8 +2,18 @@
 
 {% block bld_libs %}
 lib/z
-lib/openssl/1
+lib/xz
+lib/curl
+lib/git/2
+lib/openssl
 bin/mrustc/std
+{% endblock %}
+
+{% block patch %}
+{{super()}}
+for x in curl-sys libgit2-sys libnghttp2-sys libssh2-sys libz-sys lzma-sys; do
+    echo 'fn main() {}' > vendor/${x}/build.rs
+done
 {% endblock %}
 
 {% block setup %}
