@@ -38,7 +38,6 @@ unset HOST_CXX
 unset HOST_AR
 unset HOST_RANLIB
 
-export CFLAGS="-O0 -g ${CFLAGS}"
 export OPENSSL_DIR=${lib_openssl_1}
 export RUSTC_VERSION=1.54.0
 export MRUSTC_TARGET_VER=1.54
@@ -47,37 +46,22 @@ export MRUSTC_LIBDIR=${OUTPUT_DIR}
 export RUSTC_SRC=${PWD}/rustc-1.54.0-src
 export VENDOR_DIR=${RUSTC_SRC}/vendor
 export OVERRIDE_DIR=${PWD}/script-overrides/stable-1.54.0-linux
-export MINICARGO_FLAGS="--manifest-overrides ${PWD}/rustc-1.54.0-overrides.toml"
 {% endblock %}
 
 {% block build %}
-cargo1() (
-    minicargo ${1} \
-        --script-overrides ${OVERRIDE_DIR} \
-        --output-dir ${OUTPUT_DIR} \
-        --vendor-dir ${VENDOR_DIR} \
-        ${MINICARGO_FLAGS}
-)
-
-cargo2() (
-    minicargo ${1} \
-        --output-dir ${OUTPUT_DIR} \
-        --vendor-dir ${VENDOR_DIR} \
+cargo() (
+    minicargo ${@} \
         -L ${OUTPUT_DIR} \
-        ${MINICARGO_FLAGS}
-)
-
-cargo3() (
-    minicargo ${1} \
         --output-dir ${OUTPUT_DIR} \
-        ${MINICARGO_FLAGS}
+        --vendor-dir ${VENDOR_DIR} \
+        --manifest-overrides ${PWD}/rustc-1.54.0-overrides.toml
 )
 
-cargo1 ${RUSTC_SRC}/library/std
-cargo1 ${RUSTC_SRC}/library/panic_unwind
-cargo1 ${RUSTC_SRC}/library/test
-cargo3 lib/libproc_macro
-cargo2 ${RUSTC_SRC}/src/tools/cargo
+cargo ${RUSTC_SRC}/library/std --script-overrides ${OVERRIDE_DIR}
+cargo ${RUSTC_SRC}/library/panic_unwind --script-overrides ${OVERRIDE_DIR}
+cargo ${RUSTC_SRC}/library/test --script-overrides ${OVERRIDE_DIR}
+cargo lib/libproc_macro
+cargo ${RUSTC_SRC}/src/tools/cargo
 {% endblock %}
 
 {% block install %}
