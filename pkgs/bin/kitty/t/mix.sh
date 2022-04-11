@@ -1,8 +1,8 @@
 {% extends '//mix/c_std.sh' %}
 
 {% block fetch %}
-https://github.com/kovidgoyal/kitty/archive/refs/tags/v0.24.4.tar.gz
-sha:e6619b635b5c9d6cebbba631a2175659698068ce1cd946732dc440b0f1c12ab3
+https://github.com/kovidgoyal/kitty/archive/refs/tags/v0.25.0.tar.gz
+sha:be30160a905d26ddb2d07f52be40a56e6bf118162c447d3ea6f0e6f662b56676
 {% endblock %}
 
 {% block bld_libs %}
