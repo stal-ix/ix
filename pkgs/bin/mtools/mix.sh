@@ -7,6 +7,5 @@ sha:fb89bc2be8408f4875121fa7d584ab91ea5a34b5cbdb736ff2e015e03a4241b3
 
 {% block bld_libs %}
 lib/c
-lib/intl
 lib/linux
 {% endblock %}
