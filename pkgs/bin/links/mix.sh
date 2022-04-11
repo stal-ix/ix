@@ -1,8 +1,8 @@
 {% extends '//mix/autohell.sh' %}
 
 {% block fetch %}
-http://links.twibright.com/download/links-2.25.tar.bz2
-sha:2dd78508698e8279ef4f09a3a2a21e9595040113402da6c553974414fb49dd2c
+http://links.twibright.com/download/links-2.26.tar.bz2
+sha:f05b3577f25dbe63e491c424f0ecb31f7bfadce9b2bc2f111dfed049c004c9cb
 {% endblock %}
 
 {% block bld_libs %}

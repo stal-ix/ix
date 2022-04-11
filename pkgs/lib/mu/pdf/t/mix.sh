@@ -1,8 +1,8 @@
 {% extends '//mix/make.sh' %}
 
 {% block fetch %}
-https://mupdf.com/downloads/archive/mupdf-1.19.0-source.tar.xz
-sha:38f39943e408d60a3e7d6c2fca0d705163540ca24d65682d4426dc6f1fee28c5
+https://mupdf.com/downloads/archive/mupdf-1.19.1-source.tar.xz
+sha:b5eac663fe74f33c430eda342f655cf41fa73d71610f0884768a856a82e3803e
 {% endblock %}
 
 {% block lib_deps %}
