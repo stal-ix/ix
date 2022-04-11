@@ -18,7 +18,7 @@ done
 
 {% block setup %}
 {{super()}}
-export OPENSSL_DIR=${lib_openssl_1}
+export OPENSSL_DIR=${SSL_DIR}
 {% endblock %}
 
 {% block build %}
