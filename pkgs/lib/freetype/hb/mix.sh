@@ -6,7 +6,7 @@ lib/freetype/nohb
 {{super()}}
 {% endblock %}
 
-{% block configure_flags %}
+{% block meson_flags %}
 {{super()}}
---with-harfbuzz=yes
+harfbuzz=enabled
 {% endblock %}

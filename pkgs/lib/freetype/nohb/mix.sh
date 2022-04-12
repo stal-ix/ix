@@ -1,4 +1,4 @@
-{% extends '//mix/autorehell.sh' %}
+{% extends '//mix/meson.sh' %}
 
 {% block fetch %}
 https://download.savannah.gnu.org/releases/freetype/freetype-2.12.0.tar.xz
@@ -11,10 +11,6 @@ lib/z
 lib/png
 lib/bzip2
 lib/brotli
-{% endblock %}
-
-{% block autoreconf %}
-cat autogen.sh | sed -e 's|\./configure|\./configure; exit 0|' | sh
 {% endblock %}
 
 {% block patch1 %}
