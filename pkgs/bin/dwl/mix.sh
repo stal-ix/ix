@@ -1,8 +1,8 @@
 {% extends '//mix/make.sh' %}
 
 {% block fetch %}
-https://github.com/djpohly/dwl/archive/refs/tags/v0.3.tar.gz
-sha:a3dd9b7107e9d324cc0dc4f48dd526fb687b10c9e63a42b33a827130d9113763
+https://github.com/djpohly/dwl/archive/refs/tags/v0.3.1.tar.gz
+sha:5d550b0ee6d99d0b537269b8389af4b95d1ab0b63e7bb8c2309f6c57a2d6c9c9
 {% endblock %}
 
 {% block bld_libs %}

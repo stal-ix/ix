@@ -1,8 +1,8 @@
 {% extends '//mix/meson.sh' %}
 
 {% block fetch %}
-https://github.com/linux-nvme/libnvme/archive/refs/tags/v1.0-rc7.tar.gz
-sha:7e036bfab775911bd3a9bd1b944ac88f4de29c4de7327aaa949cceb866db5fe8
+https://github.com/linux-nvme/libnvme/archive/refs/tags/v1.0.tar.gz
+sha:387524b1c24a4091a88bfb258c98c054f716da210e77702f0709164740370807
 {% endblock %}
 
 {% block lib_deps %}
