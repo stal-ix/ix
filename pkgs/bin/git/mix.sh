@@ -1,8 +1,8 @@
 {% extends '//mix/make.sh' %}
 
 {% block fetch %}
-https://github.com/git/git/archive/refs/tags/v2.35.1.tar.gz
-sha:ca2e1824fd084b51b52c71b18c11dc0cadb1eaaed1fdb412f09a2e49e8537eed
+https://github.com/git/git/archive/refs/tags/v2.35.2.tar.gz
+sha:6f2287bbde2d215394966732836f3aba62b029161e8eaadaf236578d92c06fe9
 {% endblock %}
 
 {% block bld_libs %}
