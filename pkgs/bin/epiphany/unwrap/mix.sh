@@ -1,8 +1,8 @@
 {% extends '//mix/gnome.sh' %}
 
 {% block fetch %}
-https://download.gnome.org/sources/epiphany/42/epiphany-42.0.tar.xz
-sha:3dbfa8c00e45b7f44e1824d01f0febe83707b5fb9330c261173f68b7f03cd5e3
+https://download.gnome.org/sources/epiphany/42/epiphany-42.1.tar.xz
+sha:68acc3c5c62917f1b43916a5b46bec136f5b307f03aada58db740c78b103f038
 {% endblock %}
 
 {% block bld_libs %}
