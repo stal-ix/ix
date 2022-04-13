@@ -12,7 +12,6 @@ lib/c
 {% block bld_libs %}
 lib/popt
 lib/linux
-lib/gnushim
 {% endblock %}
 
 {% block bld_tool %}
@@ -25,8 +24,8 @@ ln -s $(which ar) gcc-ar
 
 {% block patch %}
 mkdir sys
+
 cat << EOF > sys/cdefs.h
-#include <qsort_r.h>
 #define on_exit(a, b)
 EOF
 
