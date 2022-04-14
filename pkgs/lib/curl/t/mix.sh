@@ -13,7 +13,7 @@ lib/ssh/2
 lib/idn/2
 lib/brotli
 lib/c-ares
-#lib/ng/tcp2
+lib/ng/tcp2
 lib/ng/http/2
 lib/ng/http/3
 lib/{{curlssl or 'openssl'}}

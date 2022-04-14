@@ -1,8 +1,8 @@
 {% extends '//lib/openssl/t/mix.sh' %}
 
 {% block fetch %}
-https://www.openssl.org/source/openssl-3.0.1.tar.gz
-sha:c311ad853353bce796edad01a862c50a8a587f62e7e2100ef465ab53ec9b06d1
+https://github.com/quictls/openssl/archive/refs/heads/openssl-3.0.2+quic.zip
+sha:a6228498484993730d6839991fdfa4a2db8515c674cb4d6462c9022f23b053fc
 {% endblock %}
 
 {% block openssl_conf_opts %}

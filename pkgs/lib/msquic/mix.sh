@@ -15,4 +15,15 @@ lib/openssl
 
 {% block build_flags %}
 wrap_cc
+shut_up
+{% endblock %}
+
+{% block patch %}
+sed -e 's|QUIC_TLS STREQUAL "openssl"|0|' -i CMakeLists.txt
+{% endblock %}
+
+{% block install %}
+{{super()}}
+cd src/inc
+cp msquic.hpp *.h ${out}/include/
 {% endblock %}

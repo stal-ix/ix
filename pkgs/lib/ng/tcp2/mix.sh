@@ -13,6 +13,7 @@ lib/ng/http/3
 {% endblock %}
 
 {% block cmake_flags %}
+ENABLE_OPENSSL=ON
 ENABLE_LIB_ONLY=OFF
 ENABLE_STATIC_LIB=OFF
 {% endblock %}
