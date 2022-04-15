@@ -1,9 +1,6 @@
 {% extends '//bin/webkitproc/mix.sh' %}
 
-{% block bld_tool %}
-bld/pkg/config
-{{super()}}
-{% endblock %}
+{% block ninja_threads %}14{% endblock %}
 
 {% block cmake_flags %}
 {{super()}}

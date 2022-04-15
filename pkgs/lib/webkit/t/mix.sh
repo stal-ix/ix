@@ -10,6 +10,7 @@ sha:b877cca1f105235f5dd57c7ac2b2c2be3c6b691ff444f93925c7254cf156c64d
 {% block lib_deps %}
 lib/c
 lib/z
+lib/wpe
 lib/atk
 lib/icu
 lib/c++
@@ -47,13 +48,17 @@ bld/ruby
 bin/gperf
 bld/python
 bld/gettext
+bld/pkg/config
 bld/glib/codegen
 bin/wayland/protocols
 {% endblock %}
 
 {% block cmake_flags %}
 PORT=GTK
-USE_WPE_RENDERER=OFF
+USE_OPENGL=OFF
+ENABLE_GLES2=ON
+USE_WPE_RENDERER=ON
+ENABLE_GLES2_DEFAULT=ON
 
 USE_SYSTEMD=OFF
 USE_LIBNOTIFY=OFF
@@ -113,4 +118,7 @@ cat - Source/WebCore/accessibility/atspi/AccessibilityRootAtspi.cpp << EOF > _
 EOF
 
 mv _ Source/WebCore/accessibility/atspi/AccessibilityRootAtspi.cpp
+
+sed -e 's|return false|return true|' \
+    -i Source/WebKit/WebProcess/WebPage/libwpe/AcceleratedSurfaceLibWPE.h
 {% endblock %}
