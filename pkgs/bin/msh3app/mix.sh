@@ -4,3 +4,10 @@
 {{super()}}
 MSH3_TOOL=ON
 {% endblock %}
+
+{% block install %}
+{{super()}}
+cd ${out}
+mkdir bin
+mv lib/msh3app bin/
+{% endblock %}

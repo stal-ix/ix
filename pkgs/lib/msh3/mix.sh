@@ -34,3 +34,7 @@ find . -type f -name CMakeLists.txt | while read l; do
         -i ${l}
 done
 {% endblock %}
+
+{% block env_lib %}
+export COFLAGS="--with-msh3=${out} \${COFLAGS}"
+{% endblock %}
