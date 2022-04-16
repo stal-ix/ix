@@ -11,5 +11,6 @@ lib/z
 lib/pcre
 lib/linux
 lib/ssh/2
+lib/linear
 lib/openssl
 {% endblock %}

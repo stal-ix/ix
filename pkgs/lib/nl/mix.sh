@@ -1,8 +1,8 @@
 {% extends '//mix/autorehell.sh' %}
 
 {% block fetch %}
-https://github.com/thom311/libnl/releases/download/libnl3_5_0/libnl-3.5.0.tar.gz
-sha:352133ec9545da76f77e70ccb48c9d7e5324d67f6474744647a7ed382b5e05fa
+https://github.com/thom311/libnl/releases/download/libnl3_6_0/libnl-3.6.0.tar.gz
+sha:532155fd011e5a805bd67121b87a01c757e2bb24112ac17e69cb86013b970009
 {% endblock %}
 
 {% block lib_deps %}
