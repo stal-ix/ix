@@ -1,2 +1,2 @@
-https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.17.2.tar.xz
-sha:2da20f8437cfe813ddee7dcb95e2c4e9e4e8f6168060c05787668ac3ff3f0b99
+https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.17.3.tar.xz
+sha:32d0a8e366b87e1cbde951b9f7a01287546670ba60fac35cccfc8a7c005a162c
