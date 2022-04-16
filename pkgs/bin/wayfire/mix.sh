@@ -1,8 +1,8 @@
 {% extends '//mix/meson.sh' %}
 
 {% block fetch %}
-https://github.com/WayfireWM/wayfire/releases/download/v0.7.2/wayfire-0.7.2.tar.xz
-sha:c6785613df438e64aa5dcce798a0205c83cd2f36102669fcfd0050e7a58c5abd
+https://github.com/WayfireWM/wayfire/releases/download/v0.7.3/wayfire-0.7.3.tar.xz
+sha:99d1d51b1db88c30de6484094fd02df39a82cbb503361e52abc1d94f8357cb5f
 {% endblock %}
 
 {% block bld_libs %}
@@ -26,7 +26,7 @@ lib/execinfo
 lib/xkbcommon
 lib/wl/config
 lib/drivers/3d
-lib/wlroots/14
+lib/wlroots/15
 lib/mesa/glesv2
 {% endblock %}
 
