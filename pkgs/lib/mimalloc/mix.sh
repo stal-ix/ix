@@ -1,8 +1,8 @@
 {% extends '//mix/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/microsoft/mimalloc/archive/refs/tags/v2.0.3.tar.gz
-a06e57e9ae10a346ab8a1097c0838fef
+https://github.com/microsoft/mimalloc/archive/refs/tags/v2.0.6.tar.gz
+sha:9f05c94cc2b017ed13698834ac2a3567b6339a8bde27640df5a1581d49d05ce5
 {% endblock %}
 
 {% block bld_libs %}
@@ -19,20 +19,9 @@ MI_BUILD_TESTS=OFF
 
 {% block install %}
 {{super()}}
-
 cd ${out}/lib
-
 mv mimalloc-*/* ./
 rm -rf mimalloc-*
-{% endblock %}
-
-{% block test_lib %}
-${NM} --demangle ${out}/lib/mimalloc.o | grep '::' | grep __1 | grep -v atomic | while read l; do
-    echo 'EXPECT CONFLICT with another STL'
-    exit 1
-done
-
-echo 'ALL OK'
 {% endblock %}
 
 {% block env_lib %}
