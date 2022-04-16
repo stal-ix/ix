@@ -9,7 +9,7 @@ bf5564f33fe9062bc48b53abd4b34223
 lib/z
 lib/c
 lib/c++
-lib/ucl
+lib/ucl/codec
 {% endblock %}
 
 {% block bld_tool %}

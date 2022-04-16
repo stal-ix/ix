@@ -8,13 +8,13 @@ sha:40736ff326e11a51128c1739051a692ad2c79173fc4b695c8be5ec7a614b4de2
 {% block bld_libs %}
 lib/c
 lib/pam
-lib/uclx
 lib/pango
 lib/cairo
 lib/input
 lib/wlroots
 lib/wayland
 lib/xkbcommon
+lib/ucl/parser
 lib/drivers/3d
 {% endblock %}
 
