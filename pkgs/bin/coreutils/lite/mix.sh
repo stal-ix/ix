@@ -1,4 +1,4 @@
-{% extends '//bin/coreutils/9/0/mix.sh' %}
+{% extends '//bin/coreutils/9/1/mix.sh' %}
 
 {% block bld_libs %}
 lib/c
