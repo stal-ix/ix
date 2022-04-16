@@ -1,8 +1,8 @@
 {% extends '//mix/make.sh' %}
 
 {% block fetch %}
-https://downloads.sourceforge.net/gptfdisk/gptfdisk-1.0.8.tar.gz
-sha:95d19856f004dabc4b8c342b2612e8d0a9eebdd52004297188369f152e9dc6df
+https://downloads.sourceforge.net/gptfdisk/gptfdisk-1.0.9.tar.gz
+sha:dafead2693faeb8e8b97832b23407f6ed5b3219bc1784f482dd855774e2d50c2
 {% endblock %}
 
 {% block bld_libs %}
