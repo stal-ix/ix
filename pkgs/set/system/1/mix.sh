@@ -19,3 +19,7 @@ bin/busybox
 bin/busybox/ntpd
 bin/busybox/syslogd
 {% endblock %}
+
+{% block run_data %}
+aux/tzdata
+{% endblock %}
