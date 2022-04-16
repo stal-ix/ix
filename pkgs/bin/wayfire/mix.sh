@@ -24,7 +24,7 @@ lib/mesa/egl
 lib/freetype
 lib/execinfo
 lib/xkbcommon
-lib/wl/config
+lib/wf/config
 lib/drivers/3d
 lib/wlroots/15
 lib/mesa/glesv2
