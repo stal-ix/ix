@@ -31,6 +31,9 @@ rm -rf ${out}/bin ${out}/libexec ${out}/etc
 rm -rf ${out}/lib ${out}/include
 
 {% block strip_bin %}
+{% if nostrip %}
+echo 'skip strip'
+{% else %}
 find ${out}/bin/ -type f | while read l; do
     if test -h ${l}; then
         echo "skip symlink ${l}"
@@ -38,6 +41,7 @@ find ${out}/bin/ -type f | while read l; do
         llvm-strip -S ${l} || true
     fi
 done
+{% endif %}
 {% endblock %}
 {% endif %}
 
