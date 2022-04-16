@@ -19,7 +19,7 @@ def it_symbols():
 
 S = list(it_symbols())
 
-assert S
+# assert S
 
 print('#include <dlfcn.h>')
 
