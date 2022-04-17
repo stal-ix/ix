@@ -19,14 +19,3 @@ bld/bison
 {{super()}}
 --with-openssl=yes
 {% endblock %}
-
-{% block c_rename_symbol %}
-{{super()}}
-reallocarray
-{% endblock %}
-
-{% block setup %}
-{{super()}}
-# https://github.com/microsoft/mimalloc/issues/574
-export ac_cv_func_reallocarray=no
-{% endblock %}
