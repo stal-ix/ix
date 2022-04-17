@@ -15,6 +15,7 @@ cat << EOF > test1.cpp
 #include <errno.h>
 
 int main() {
+    errno = 0;
     std::cerr << (size_t)realloc(0, 0) << std::endl;
     std::cerr << errno << std::endl;
     std::cerr << (size_t)reallocarray(0, 0, 16) << std::endl;
