@@ -16,9 +16,9 @@ lib/cairo
 lib/handy
 lib/soup/3
 lib/nettle
-lib/webkit
 lib/secret
 lib/dazzle
+lib/web/kit
 lib/sqlite3
 lib/archive
 lib/gtk/reg

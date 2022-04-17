@@ -1,7 +1,7 @@
-{% extends '//lib/webkit/t/mix.sh' %}
+{% extends '//lib/web/kit/t/mix.sh' %}
 
 {% block bld_libs %}
-lib/webkit/deps
+lib/web/kit/deps
 {{super()}}
 {% endblock %}
 

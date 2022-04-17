@@ -9,7 +9,7 @@ sha:6bd969cbd24e9f4fee3026cd9f79dd1485cc691a9f27164ad23a2f7ad096b7f3
 lib/c
 lib/gtk
 lib/glib
-lib/webkit
+lib/web/kit
 lib/gdk/pixbuf
 {% endblock %}
 

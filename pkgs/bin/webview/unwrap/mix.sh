@@ -8,7 +8,7 @@
 lib/c
 lib/gtk/deps
 lib/web/view
-lib/webkit/deps
+lib/web/kit/deps
 {% endblock %}
 
 {% block build %}

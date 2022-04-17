@@ -1,4 +1,4 @@
-{% extends '//lib/webkit/t/mix.sh' %}
+{% extends '//lib/web/kit/t/mix.sh' %}
 
 {% block install %}
 {{super()}}
