@@ -9,7 +9,7 @@ sha:76ac1db16cb1efb1be9817f99dd9e8421c5242d3fd885d69489132148d716ac4
 lib/c
 lib/c++
 lib/gtk
-lib/web/kit
+lib/web/kit/gtk
 {% endblock %}
 
 {% block build %}

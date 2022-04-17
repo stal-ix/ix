@@ -18,13 +18,13 @@ lib/soup/3
 lib/nettle
 lib/secret
 lib/dazzle
-lib/web/kit
 lib/sqlite3
 lib/archive
 lib/gtk/reg
 lib/gtk/deps
 lib/json/glib
 lib/gdk/pixbuf
+lib/web/kit/gtk
 lib/glib/networking
 lib/gsettings/desktop/schemas
 {% endblock %}

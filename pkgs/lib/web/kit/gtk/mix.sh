@@ -1,7 +1,7 @@
 {% extends '//mix/registar.sh' %}
 
 {% block lib_deps %}
-lib/web/kit/orig
+lib/web/kit/gtk/orig
 {% endblock %}
 
 {% block constructors %}

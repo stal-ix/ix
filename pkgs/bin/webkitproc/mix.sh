@@ -1,4 +1,4 @@
-{% extends '//lib/web/kit/t/mix.sh' %}
+{% extends '//lib/web/kit/gtk/t/mix.sh' %}
 
 {% block bld_libs %}
 lib/web/kit/deps
