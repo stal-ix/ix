@@ -12,7 +12,14 @@ def it_args():
             else:
                 yield x
 
-args = list(it_args())
+def flt_args():
+    for x in it_args():
+        if '-D-pthread' in x:
+            continue
+
+        yield x
+
+args = list(flt_args())
 
 def flt_objs():
     for x in args:
