@@ -19,7 +19,6 @@ lib/nettle
 lib/webkit
 lib/secret
 lib/dazzle
-lib/webkit
 lib/sqlite3
 lib/archive
 lib/gtk/reg
