@@ -16,8 +16,8 @@ bin/sched/trashdir(delay=100)
 
 etc
 bin/busybox
-bin/busybox/ntpd
 bin/busybox/syslogd
+bin/busybox/ntpd(delay=100)
 {% endblock %}
 
 {% block run_data %}

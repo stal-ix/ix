@@ -1,8 +1,8 @@
 {% extends '//mix/proxy.sh' %}
 
 {% block run_deps %}
-bin/runsrv
 bin/busybox
+bin/sched(delay={{delay}})
 {% endblock %}
 
 {% block install %}
@@ -21,12 +21,10 @@ pidfile   /var/run/ntpd/ntp.pid
 leapfile  /var/run/ntpd/ntp.leapseconds
 EOF
 
-mkdir -p services/ntpd; cd services/ntpd
+mkdir -p sche.d/{{delay}}; cd sche.d/{{delay}}
 
-cat << EOF > run
-#!/bin/sh
-exec srv ntpd ntpd -dd -n -N
+cat << EOF > ntpd.sh
+ntpd -dd -n -q
+hwclock -u -w
 EOF
-
-chmod +x run
 {% endblock %}
