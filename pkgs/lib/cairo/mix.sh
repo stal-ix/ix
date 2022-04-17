@@ -47,3 +47,7 @@ shut_up
 {% block patch %}
 sed -e 's|.*conf.*set.*CAIRO_HAS_TRACE.*||' -i meson.build
 {% endblock %}
+
+{% block env_lib %}
+export CPPFLAGS="-I${out}/include/cairo \${CPPFLAGS}"
+{% endblock %}

@@ -14,3 +14,7 @@ cairo=disabled
 sed -e 's|.*subdir.*util.*||' -i meson.build
 {{super()}}
 {% endblock %}
+
+{% block env_lib %}
+export CPPFLAGS="-I${out}/include/harfbuzz \${CPPFLAGS}"
+{% endblock %}

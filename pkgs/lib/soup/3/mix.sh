@@ -23,3 +23,7 @@ bld/glib/codegen
 tls_check=false
 tests=false
 {% endblock %}
+
+{% block env_lib %}
+export CPPFLAGS="-I${out}/include/libsoup-3.0 \${CPPFLAGS}"
+{% endblock %}

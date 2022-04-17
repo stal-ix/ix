@@ -32,10 +32,9 @@ EOF
 
 {% block install %}
 {{super()}}
+sed -e 's|.*bin.*||' -i ${out}/lib/pkgconfig/gdk-pixbuf-2.0.pc
+{% endblock %}
 
-cd ${out}/lib/pkgconfig
-
-cat gdk-pixbuf-2.0.pc \
-    | grep -v 'bin' \
-    > _ && mv _ gdk-pixbuf-2.0.pc
+{% block env_lib %}
+export CPPFLAGS="-I${out}/include/gdk-pixbuf-2.0 \${CPPFLAGS}"
 {% endblock %}

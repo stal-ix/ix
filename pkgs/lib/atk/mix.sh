@@ -17,3 +17,7 @@ bld/glib/codegen
 {% block meson_flags %}
 introspection=false
 {% endblock %}
+
+{% block env_lib %}
+export CPPFLAGS="-I${out}/include/atk-1.0 \${CPPFLAGS}"
+{% endblock %}

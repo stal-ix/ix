@@ -19,3 +19,7 @@ lib/fontconfig
 {% block bld_tool %}
 bld/glib/codegen
 {% endblock %}
+
+{% block env_lib %}
+export CPPFLAGS="-I${out}/include/pango-1.0 \${CPPFLAGS}"
+{% endblock %}

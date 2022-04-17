@@ -11,3 +11,8 @@ for x in *.so; do
     cp ${x} $(echo ${x} | sed -e 's|.so|.a|')
 done
 {% endblock %}
+
+{% block env_lib %}
+{{super()}}
+export CPPFLAGS="-I${out}/include/webkitgtk-5.0 -I${out}/include/webkitgtk-4.1 \${CPPFLAGS}"
+{% endblock %}

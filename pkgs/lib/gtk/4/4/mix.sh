@@ -27,4 +27,5 @@ EOF
 
 {% block env_lib %}
 export CMFLAGS="-DUSE_GTK4=ON \${CMFLAGS}"
+export CPPFLAGS="-I${out}/include/gtk-4.0 \${CPPFLAGS}"
 {% endblock %}

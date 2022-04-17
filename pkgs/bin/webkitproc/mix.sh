@@ -1,12 +1,7 @@
 {% extends '//lib/webkit/t/mix.sh' %}
 
 {% block bld_libs %}
-lib/gstreamer
-lib/drivers/3d
-lib/mesa/gl/dl
-lib/mesa/egl/dl
-lib/gstreamer/dl
-lib/glib/networking
+lib/webkit/deps
 {{super()}}
 {% endblock %}
 
