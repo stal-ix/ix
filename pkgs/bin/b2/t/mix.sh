@@ -13,11 +13,3 @@ lib/c++
 {% block bld_tool %}
 bld/bison
 {% endblock %}
-
-{% block build %}
-sh bootstrap.sh
-{% endblock %}
-
-{% block install %}
-./b2 install --prefix=${out}
-{% endblock %}

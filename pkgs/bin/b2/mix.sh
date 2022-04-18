@@ -1,7 +1,7 @@
 {% extends '//bin/b2/t/mix.sh' %}
 
 {% block bld_tool %}
-bin/b2/boot
+bld/b2
 {{super()}}
 {% endblock %}
 
