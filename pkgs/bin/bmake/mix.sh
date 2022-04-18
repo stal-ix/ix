@@ -1,20 +1,14 @@
-{% extends '//mix/autohell.sh' %}
+{% extends '//bin/bmake/t/mix.sh' %}
 
-{% block fetch %}
-https://www.crufty.net/ftp/pub/sjg/bmake-20220414.tar.gz
-sha:10ee07a7be26b22ce6a3bbc386e2916ca8e51b0ed2d256c271a7135e3c94f2a7
+{% block make_tool %}
+bld/bmake
 {% endblock %}
 
-{% block bld_libs %}
-lib/c
+{% block make_bin %}
+bmake -f Makefile
 {% endblock %}
 
-{% block build %}
-prefix="${out}" sh make-bootstrap.sh
-{% endblock %}
-
-{% block install %}
-mkdir -p ${out}/bin ${out}/share
-cp bmake ${out}/bin/
-cp -R mk ${out}/share/
+{% block make_flags %}
+MK_AUTOCONF_MK=no
+INSTALL=install
 {% endblock %}
