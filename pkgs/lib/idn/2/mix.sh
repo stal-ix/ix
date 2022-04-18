@@ -17,8 +17,16 @@ error
 
 {% block bld_tool %}
 bld/gettext
+bld/texinfo
+bld/help2man
 {% endblock %}
 
 {% block env_lib %}
 export COFLAGS="--with-libidn2=${out} \${COFLAGS}"
+{% endblock %}
+
+{% block patch %}
+find . -type f -name '*.c' | while read l; do
+    sed -e 's|ifdef HAVE_SYMVER|if qw|' -i ${l}
+done
 {% endblock %}

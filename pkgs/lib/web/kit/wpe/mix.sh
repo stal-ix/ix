@@ -44,6 +44,7 @@ lib/glib/networking
 {% block cmake_flags %}
 {{super()}}
 PORT=WPE
+ENABLE_ACCESSIBILITY=OFF
 {% endblock %}
 
 {% block setup %}
