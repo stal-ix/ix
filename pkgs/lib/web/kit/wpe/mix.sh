@@ -1,4 +1,4 @@
-{% extends '//lib/web/kit/t/mix.sh' %}
+{% extends '//lib/web/kit/gtk/t/mix.sh' %}
 
 {% block fetch %}
 https://wpewebkit.org/releases/wpewebkit-2.36.0.tar.xz
@@ -41,8 +41,6 @@ lib/mesa/glesv2/dl
 lib/glib/networking
 {% endblock %}
 
-{% block ninja_threads %}14{% endblock %}
-
 {% block cmake_flags %}
 PORT=WPE
 
@@ -58,8 +56,6 @@ ENABLE_SPELLCHECK=OFF
 ENABLE_JOURNALD_LOG=OFF
 ENABLE_INTROSPECTION=OFF
 ENABLE_BUBBLEWRAP_SANDBOX=OFF
-
-ENABLE_MINIBROWSER=ON
 {% endblock %}
 
 {% block patch %}
@@ -80,4 +76,18 @@ cp ${lib_mesa}/include/EGL/eglplatform.h inc/EGL/
 cp -R ${lib_mesa}/include/KHR inc/
 
 export CPPFLAGS="-I${PWD}/inc ${CPPFLAGS}"
+{% endblock %}
+
+{% block postinstall %}
+:
+{% endblock %}
+
+{% block install %}
+{{super()}}
+
+cd ${out}/lib
+
+for x in *.so; do
+    cp ${x} $(echo ${x} | sed -e 's|.so|.a|')
+done
 {% endblock %}
