@@ -43,7 +43,7 @@ struct _GUri {
     char     *auth_params;
 };
 
-#define soup_uri_decode(x) soup_uri_decode_data_uri(x, NULL)
+#define soup_uri_decode(x) g_uri_parse(x, 0, NULL)
 EOF
 
 mv _ surfer.c
