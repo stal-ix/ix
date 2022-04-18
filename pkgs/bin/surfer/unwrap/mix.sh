@@ -9,10 +9,55 @@ sha:6bd969cbd24e9f4fee3026cd9f79dd1485cc691a9f27164ad23a2f7ad096b7f3
 lib/c
 lib/gtk
 lib/glib
+lib/notify
+lib/gtk/deps
 lib/gdk/pixbuf
 lib/web/kit/gtk
 {% endblock %}
 
+{% block build_flags %}
+wrap_cc
+shut_up
+{% endblock %}
+
 {% block bld_tool %}
 bld/pkg/config
+{% endblock %}
+
+{% block cpp_defines %}
+SoupURI=GUri
+{% endblock %}
+
+{% block patch %}
+cat - surfer.c << EOF > _
+struct _GUri {
+    char     *scheme;
+    char     *userinfo;
+    char     *host;
+    int       port;
+    char     *path;
+    char     *query;
+    char     *fragment;
+    char     *user;
+    char     *password;
+    char     *auth_params;
+};
+
+#define soup_uri_decode(x) soup_uri_decode_data_uri(x, NULL)
+EOF
+
+mv _ surfer.c
+
+sed -e 's|/usr||g' -i Makefile
+{% endblock %}
+
+{% block make_flags %}
+DESTDIR=${out}
+{% endblock %}
+
+{% block install %}
+{{super()}}
+{% call hooks.wrap_xdg_binary('surfer') %}
+export WEBKIT_EXEC_PATH="\$(dirname \$(which WebKitWebProcess))"
+{% endcall %}
 {% endblock %}
