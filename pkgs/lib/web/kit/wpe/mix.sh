@@ -1,4 +1,4 @@
-{% extends '//lib/web/kit/gtk/t/mix.sh' %}
+{% extends '//lib/web/kit/t/mix.sh' %}
 
 {% block fetch %}
 https://wpewebkit.org/releases/wpewebkit-2.36.0.tar.xz
@@ -42,39 +42,15 @@ lib/glib/networking
 {% endblock %}
 
 {% block cmake_flags %}
+{{super()}}
 PORT=WPE
-
-USE_SYSTEMD=OFF
-USE_LIBNOTIFY=OFF
-USE_LIBHYPHEN=OFF
-
-ENABLE_ACCESSIBILITY=OFF
-
-ENABLE_THUNDER=OFF
-ENABLE_GAMEPAD=OFF
-ENABLE_SPELLCHECK=OFF
-ENABLE_JOURNALD_LOG=OFF
-ENABLE_INTROSPECTION=OFF
-ENABLE_BUBBLEWRAP_SANDBOX=OFF
-{% endblock %}
-
-{% block patch %}
-base64 -d << EOF > Source/WebKit/WebProcess/InjectedBundle/glib/InjectedBundleGlib.cpp
-{% include 'InjectedBundleGlib.cpp/base64' %}
-EOF
-
-sed -e 's|ENABLE(DEVELOPER_MODE)|1|g' \
-    -i Source/WebKit/Shared/glib/ProcessExecutablePathGLib.cpp
 {% endblock %}
 
 {% block setup %}
 {{super()}}
-
 mkdir -p inc/EGL
-
 cp ${lib_mesa}/include/EGL/eglplatform.h inc/EGL/
 cp -R ${lib_mesa}/include/KHR inc/
-
 export CPPFLAGS="-I${PWD}/inc ${CPPFLAGS}"
 {% endblock %}
 
@@ -84,9 +60,7 @@ export CPPFLAGS="-I${PWD}/inc ${CPPFLAGS}"
 
 {% block install %}
 {{super()}}
-
 cd ${out}/lib
-
 for x in *.so; do
     cp ${x} $(echo ${x} | sed -e 's|.so|.a|')
 done

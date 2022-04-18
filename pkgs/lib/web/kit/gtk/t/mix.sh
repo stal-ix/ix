@@ -1,11 +1,9 @@
-{% extends '//mix/cmake.sh' %}
+{% extends '//lib/web/kit/t/mix.sh' %}
 
 {% block fetch %}
 https://webkitgtk.org/releases/webkitgtk-2.36.0.tar.xz
 sha:b877cca1f105235f5dd57c7ac2b2c2be3c6b691ff444f93925c7254cf156c64d
 {% endblock %}
-
-{% block ninja_threads %}6{% endblock %}
 
 {% block lib_deps %}
 lib/c
@@ -42,82 +40,23 @@ lib/fontconfig
 lib/harfbuzz/icu
 {% endblock %}
 
-{% block bld_tool %}
-bld/perl
-bld/ruby
-bin/gperf
-bld/python
-bld/gettext
-bld/pkg/config
-bld/glib/codegen
-bin/wayland/protocols
-{% endblock %}
-
 {% block cmake_flags %}
-PORT=GTK
-USE_OPENGL=OFF
-ENABLE_GLES2=ON
-USE_WPE_RENDERER=ON
+{{super()}}
 ENABLE_GLES2_DEFAULT=ON
-
-USE_SYSTEMD=OFF
-USE_LIBNOTIFY=OFF
-USE_LIBHYPHEN=OFF
-
-ENABLE_THUNDER=OFF
-ENABLE_GAMEPAD=OFF
-ENABLE_SPELLCHECK=OFF
-ENABLE_JOURNALD_LOG=OFF
-ENABLE_INTROSPECTION=OFF
-ENABLE_BUBBLEWRAP_SANDBOX=OFF
-
-ENABLE_X11_TARGET=OFF
-ENABLE_WAYLAND_TARGET=ON
-{% endblock %}
-
-{% block c_rename_symbol %}
-_caches
-_xdg_binary_or_text_fallback
-{% endblock %}
-
-{% block cpp_defines %}
-WL_EGL_PLATFORM=1
-{% endblock %}
-
-{% block build_flags %}
-shut_up
-wrap_cc
-{% endblock %}
-
-{% block setup %}
-export CPPFLAGS=$(echo ${CPPFLAGS} | tr ' ' '\n' | grep -v mesa | tr '\n' ' ')
-export CPPFLAGS="-Wno-register ${CPPFLAGS}"
+USE_WPE_RENDERER=ON
+ENABLE_GLES2=ON
+USE_OPENGL=OFF
+PORT=GTK
 {% endblock %}
 
 {% block patch %}
-(
-    cd Source/WebCore/platform/graphics/egl
+{{super()}}
 
-    cat GLContextEGL.cpp \
-        | grep -v eglCreateWindowSurface \
-        > _ && mv _ GLContextEGL.cpp
-)
+sed -e 's|.*eglCreateWindowSurface.*||' \
+    -i Source/WebCore/platform/graphics/egl/GLContextEGL.cpp
 
 sed -e 's|GRefPtr.h>|GRefPtr.h>\n#include <wtf/glib/GUniquePtr.h>|' \
     -i Source/WebKit/UIProcess/gtk/ClipboardGtk4.cpp
-
-base64 -d << EOF > Source/WebKit/WebProcess/InjectedBundle/glib/InjectedBundleGlib.cpp
-{% include 'InjectedBundleGlib.cpp/base64' %}
-EOF
-
-sed -e 's|ENABLE(DEVELOPER_MODE)|1|g' \
-    -i Source/WebKit/Shared/glib/ProcessExecutablePathGLib.cpp
-
-cat - Source/WebCore/accessibility/atspi/AccessibilityRootAtspi.cpp << EOF > _
-#include <locale.h>
-EOF
-
-mv _ Source/WebCore/accessibility/atspi/AccessibilityRootAtspi.cpp
 
 sed -e 's|return false|return true|' \
     -i Source/WebKit/WebProcess/WebPage/libwpe/AcceleratedSurfaceLibWPE.h
