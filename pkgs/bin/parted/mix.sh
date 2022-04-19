@@ -1,9 +1,11 @@
 {% extends '//mix/autorehell.sh' %}
 
 {% block fetch %}
-https://ftp.gnu.org/gnu/parted/parted-3.4.tar.xz
-sha:e1298022472da5589b7f2be1d5ee3c1b66ec3d96dfbad03dc642afd009da5342
+https://ftp.gnu.org/gnu/parted/parted-3.5.tar.xz
+sha:4938dd5c1c125f6c78b1f4b3e297526f18ee74aa43d45c248578b1d2470c05a2
 {% endblock %}
+
+{% block conf_ver %}2/71{% endblock %}
 
 {% block bld_libs %}
 lib/c
