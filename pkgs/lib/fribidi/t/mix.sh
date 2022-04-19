@@ -1,8 +1,8 @@
 {% extends '//mix/meson.sh' %}
 
 {% block fetch %}
-https://github.com/fribidi/fribidi/archive/refs/tags/v1.0.11.tar.gz
-2acb412d284f5918de3638c1052160dd
+https://github.com/fribidi/fribidi/archive/refs/tags/v1.0.12.tar.gz
+sha:2e9e859876571f03567ac91e5ed3b5308791f31cda083408c2b60fa1fe00a39d
 {% endblock %}
 
 {% block lib_deps %}
