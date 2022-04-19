@@ -21,13 +21,11 @@ cat << EOF > hostname
 echo localhost
 EOF
 
-chmod +x arch ps strip hostname ldconfig
-
 {% if darwin %}
 cat << EOF > sw_vers
 #!$(which sh)
 echo \${MACOSX_DEPLOYMENT_TARGET}
 EOF
-
-chmod +x sw_vers
 {% endif %}
+
+chmod +x *

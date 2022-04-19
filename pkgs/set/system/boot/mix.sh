@@ -2,7 +2,7 @@
 
 {% block run_deps %}
 bin/dash
-bin/wget
+bin/curl
 bld/compiler
 lib/python/3/10
 {% endblock %}

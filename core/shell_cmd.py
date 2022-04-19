@@ -65,7 +65,7 @@ def fetch_url_curl(curl, url, out):
 
 def iter_meth_1():
     for p in ['/mix/realm/boot/bin', '/usr/bin']:
-        for n, m in [('wget', fetch_url_wget), ('curl', fetch_url_curl)]:
+        for n, m in [('curl', fetch_url_curl), ('wget', fetch_url_wget)]:
             pp = os.path.join(p, n)
 
             if os.path.isfile(pp):
