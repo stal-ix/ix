@@ -1,7 +1,7 @@
 {% extends '//bin/kernel/t/1/mix.sh' %}
 
 {% block kernel_name %}
-5-17-3-slot{{self.slot()}}
+5-18-slot{{self.slot()}}
 {% endblock %}
 
 {% block fetch %}
@@ -10,5 +10,5 @@
 
 {% block host_libs %}
 {{super()}}
-bin/kernel/17/headers
+bin/kernel/18/headers
 {% endblock %}
