@@ -88,7 +88,7 @@ find . -type f -name '*.wrap' -delete
 
 find . -type f -name meson.build | while read l; do
     # danger, Will Robinson!
-    cat ${l} \
+    cat "${l}" \
 {% block meson_strip_dirs %}
         | grep -v 'subdir.*test' \
         | grep -v 'subdir.*exam' \
@@ -98,6 +98,6 @@ find . -type f -name meson.build | while read l; do
         | sed -e 's|both_libraries|library|g' \
         | sed -e 's|shared_library|library|g' \
         | sed -e 's|shared_module|library|g' \
-        > _ && mv _ ${l}
+        > _ && mv _ "${l}"
 done
 {% endblock %}
