@@ -8,8 +8,8 @@ sha:f6b375c7951f728402798b0baabb2d86478ca53d44cedbefabbe1c46bf46f839
 {% block bld_libs %}
 lib/c
 lib/glib
-lib/linux
 lib/pixman
+bin/kernel/17/headers
 {% endblock %}
 
 {% block bld_tool %}
