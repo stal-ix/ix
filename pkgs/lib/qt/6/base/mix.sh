@@ -43,6 +43,12 @@ QT_FEATURE_static_runtime=ON
 QT_FEATURE_shared=OFF
 QT_FEATURE_static=ON
 
+#QT_FEATURE_xcb=OFF
+#QT_FEATURE_system_pcre2=ON
 QT_FEATURE_dbus_linked=ON
 QT_FEATURE_openssl_linked=ON
+{% endblock %}
+
+{% block postinstall %}
+echo 'TODO(pg): proper separate tools build'
 {% endblock %}

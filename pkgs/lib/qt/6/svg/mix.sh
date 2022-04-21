@@ -1,21 +1,18 @@
 {% extends '//mix/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/qt/qtwayland/archive/refs/tags/v6.3.0.tar.gz
-sha:b12561ef2338b761ab1ff9d4c9359927406260b14ac3558d979c44efce8168be
+https://github.com/qt/qtsvg/archive/refs/tags/v6.3.0.tar.gz
+sha:a5667696cc673e4bc77c0c6731432a72e4933145b58dd8e35d27f0db13d69b0e
 {% endblock %}
 
 {% block lib_deps %}
 lib/c
 lib/c++
-lib/wayland
-lib/xkbcommon
 lib/qt/6/base
 {% endblock %}
 
 {% block bld_tool %}
 bld/perl
-bin/wayland/protocols
 {% endblock %}
 
 {% block setup %}
