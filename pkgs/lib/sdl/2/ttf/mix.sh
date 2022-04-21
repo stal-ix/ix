@@ -11,8 +11,3 @@ lib/sdl/2
 lib/freetype
 lib/harfbuzz
 {% endblock %}
-
-{% block configure %}
-export CMAKE_PREFIX_PATH=${lib_sdl_2}
-{{super()}}
-{% endblock %}

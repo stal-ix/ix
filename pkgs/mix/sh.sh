@@ -33,6 +33,7 @@ export PYTHONPATH=
 export LOCALE_PATH=
 export ACLOCAL_PATH=
 export PKG_CONFIG_PATH=
+export CMAKE_PREFIX_PATH=
 export PYTHONDONTWRITEBYTECODE=1
 {% endblock %}
 
@@ -42,6 +43,7 @@ source_env "${MIX_B_DIR}"
 export COFLAGS=
 export CMFLAGS=
 export LOCALE_PATH=
+export CMAKE_PREFIX_PATH=
 
 fast_rm ${out}
 mkdir -p ${out}

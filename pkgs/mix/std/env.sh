@@ -19,6 +19,10 @@ EOF
         echo 'export CPPFLAGS="-I'${out}'/include ${CPPFLAGS}"'
     fi
 
+    if test -d ${out}/lib/cmake; then
+        echo 'export CMAKE_PREFIX_PATH="'${out}':${CMAKE_PREFIX_PATH}"'
+    fi
+
     if test -d ${out}/lib/pkgconfig; then
         echo 'export PKG_CONFIG_PATH="'${out}'/lib/pkgconfig:${PKG_CONFIG_PATH}"'
     fi

@@ -15,10 +15,6 @@ lib/qt/6/base
 bld/perl
 {% endblock %}
 
-{% block setup %}
-export CMAKE_PREFIX_PATH="${lib_qt_6_base}"
-{% endblock %}
-
 {% block postinstall %}
 echo 'TODO(pg): proper solution'
 {% endblock %}

@@ -10,8 +10,3 @@ lib/llvm/13
 llvm=enabled
 shared-llvm=disabled
 {% endblock %}
-
-{% block configure %}
-export CMAKE_PREFIX_PATH="${lib_llvm_13}"
-{{super()}}
-{% endblock %}

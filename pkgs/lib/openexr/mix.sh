@@ -15,7 +15,3 @@ lib/imath
 {% block cmake_flags %}
 OPENEXR_INSTALL_EXAMPLES=OFF
 {% endblock %}
-
-{% block setup %}
-export CMAKE_PREFIX_PATH="${lib_imath}"
-{% endblock %}

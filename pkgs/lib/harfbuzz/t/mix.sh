@@ -28,3 +28,8 @@ glib=enabled
 gobject=enabled
 tests=disabled
 {% endblock %}
+
+{% block install %}
+{{super()}}
+rm -rf ${out}/lib/cmake
+{% endblock %}
