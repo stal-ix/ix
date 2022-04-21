@@ -21,6 +21,7 @@ lib/ssh/2
 lib/iconv
 lib/bzip2
 lib/sdl/2
+lib/uring
 lib/nettle
 lib/cap/ng
 lib/pixman
