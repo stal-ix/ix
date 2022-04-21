@@ -8,7 +8,8 @@ sha:aeca0b9d33b5b1cfa9aa70433bdee6a8c3d020ffafc2e6f0c9a60eed7a7978af
 {% block bld_libs %}
 lib/c
 lib/c++
-lib/gsl
+# check it
+lib/gsl/gnu
 lib/dbus
 lib/intl
 lib/jpeg
