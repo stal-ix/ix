@@ -1,5 +1,5 @@
 #!/bin/sh
 
 (cat *.sh | grep 'https://'; cat *.sh | grep 'http://') | while read l; do
-    wget --no-check-certificate "${l}"
+    curl -k -L --output $(basename "${l}") "${l}"
 done
