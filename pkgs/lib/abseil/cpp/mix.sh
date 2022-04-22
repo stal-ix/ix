@@ -16,6 +16,13 @@ lib/linux
 {% endif %}
 {% endblock %}
 
-{% block env_lib %}
-export CMFLAGS="-Dabsl_DIR=${out}/lib/cmake/absl \${CMFLAGS}"
+{% block patch %}
+cat << EOF >> absl/base/options.h
+#undef ABSL_OPTION_USE_STD_STRING_VIEW
+#define ABSL_OPTION_USE_STD_STRING_VIEW 1
+EOF
+{% endblock %}
+
+{% block setup %}
+export CXXFLAGS="-std=c++20 ${CXXFLAGS}"
 {% endblock %}
