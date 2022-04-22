@@ -144,6 +144,10 @@ EOF
 mv _ Telegram/SourceFiles/settings/settings_main.cpp
 
 >Telegram/lib_ui/ui/text/qtextitemint.cpp
+
+sed -e 's|.*DESKTOP_APP_USE_PACKAGED.*||g' \
+    -e 's|.*Xcb.*||g' \
+    -i cmake/external/qt/qt_static_plugins/qt_static_plugins.cpp
 {% endblock %}
 
 {% block configure %}
