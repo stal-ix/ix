@@ -12,6 +12,7 @@ lib/yuv
 lib/jpeg
 lib/opus
 lib/openssl
+lib/usrsctp
 lib/ffmpeg/4
 lib/openh264
 lib/abseil/cpp
@@ -33,8 +34,8 @@ TG_OWT_USE_PIPEWIRE=OFF
 sed -e 's|.*WEBRTC_USE_X11.*||' -i cmake/libwebrtcbuild.cmake
 sed -e 's|.*modules/desktop_capture/linux/.*||' -e 's|.*link_x11.*||' -i CMakeLists.txt
 
-echo > src/modules/desktop_capture/screen_drawer_linux.cc
-echo > src/third_party/libyuv/empty.cpp
+>src/modules/desktop_capture/screen_drawer_linux.cc
+>src/third_party/libyuv/empty.cpp
 
 cat << EOF > cmake/libyuv.cmake
 add_library(libyuv OBJECT EXCLUDE_FROM_ALL)
