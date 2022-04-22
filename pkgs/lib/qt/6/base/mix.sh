@@ -14,15 +14,18 @@ lib/icu
 lib/dbus
 lib/jpeg
 lib/udev
+lib/webp
 lib/input
 lib/pcre/2
 lib/opengl
+lib/brotli
 lib/sqlite3
 lib/wayland
 lib/openssl
 lib/freetype
 lib/harfbuzz
 lib/xkbcommon
+lib/fontconfig
 lib/vulkan/loader
 lib/vulkan/headers
 lib/double/conversion
@@ -45,10 +48,17 @@ QT_FEATURE_static=ON
 
 #QT_FEATURE_xcb=OFF
 #QT_FEATURE_system_pcre2=ON
+
+QT_FEATURE_system_sqlite=ON
+
 QT_FEATURE_dbus_linked=ON
 QT_FEATURE_openssl_linked=ON
 {% endblock %}
 
 {% block postinstall %}
+find ${out}/plugins/ -type f -name '*.a' | while read l; do
+    cp ${l} ${out}/lib/
+done
+
 echo 'TODO(pg): proper separate tools build'
 {% endblock %}

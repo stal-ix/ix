@@ -1,13 +1,15 @@
 {% extends '//mix/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/qt/qtsvg/archive/refs/tags/v6.3.0.tar.gz
-sha:a5667696cc673e4bc77c0c6731432a72e4933145b58dd8e35d27f0db13d69b0e
+https://github.com/qt/qtimageformats/archive/refs/tags/v6.3.0.tar.gz
+sha:f00b491206c8468da6fc0ac7470cc15a0a18791a37496ada3e33ab0f7d3c2c89
 {% endblock %}
 
 {% block lib_deps %}
 lib/c
 lib/c++
+lib/webp
+lib/tiff
 lib/qt/6/base
 {% endblock %}
 

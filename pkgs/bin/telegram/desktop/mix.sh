@@ -26,15 +26,14 @@ lib/ffmpeg/4
 lib/qt/6/svg
 lib/expected
 lib/qt/6/base
-
 lib/drivers/3d
 lib/mesa/gl/dl
 lib/mesa/egl/dl
-lib/mesa/glesv2/dl
-
 lib/qt/6/compat
 lib/qt/6/wayland
 lib/xiph/rnnoise
+lib/mesa/glesv2/dl
+lib/qt/6/imageformats
 {% endblock %}
 
 {% block c_compiler1 %}
@@ -145,8 +144,10 @@ mv _ Telegram/SourceFiles/settings/settings_main.cpp
 
 >Telegram/lib_ui/ui/text/qtextitemint.cpp
 
-sed -e 's|.*DESKTOP_APP_USE_PACKAGED.*||g' \
-    -e 's|.*Xcb.*||g' \
+sed -e 's|.*DESKTOP_APP_USE_PACKAGED.*||' \
+    -e 's|.*Xcb.*||' \
+    -e 's|.*Gtk3Theme.*||' \
+    -e 's|.*NimfInput.*||' \
     -i cmake/external/qt/qt_static_plugins/qt_static_plugins.cpp
 {% endblock %}
 
