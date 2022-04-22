@@ -36,18 +36,12 @@ lib/mesa/glesv2/dl
 lib/qt/6/imageformats
 {% endblock %}
 
-{% block c_compiler1 %}
-bin/gcc/tc(for_target={{host.gnu.three}})
-bin/gcc/tc(for_target={{target.gnu.three}})
-{% endblock %}
-
 {% block build_flags %}
 shut_up
 {% endblock %}
 
 {% block setup %}
 export CPPFLAGS="-I${PWD} ${CPPFLAGS}"
-#export CPPFLAGS="-isystem ${GCC_INCLUDES} ${CPPFLAGS}"
 export ALLCFLAGS="${CPPFLAGS} ${CFLAGS} ${CXXFLAGS}"
 {% endblock %}
 
@@ -73,9 +67,8 @@ QT_ADDITIONAL_PACKAGES_PREFIX_PATH=${CMAKE_PREFIX_PATH}
 
 {% block bld_tool %}
 bin/gcc/11
-bin/binutils
-
 bld/python
+bin/binutils
 bld/pkg/config
 bin/wayland/protocols
 {% endblock %}

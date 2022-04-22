@@ -14,9 +14,7 @@ lib/icu
 lib/dbus
 lib/jpeg
 lib/udev
-lib/webp
 lib/input
-lib/pcre/2
 lib/opengl
 lib/brotli
 lib/sqlite3
@@ -41,16 +39,10 @@ bin/wayland/protocols
 QT_FEATURE_journald=OFF
 QT_FEATURE_vulkan=ON
 QT_FEATURE_reduce_relocations=OFF
-
 QT_FEATURE_static_runtime=ON
 QT_FEATURE_shared=OFF
 QT_FEATURE_static=ON
-
-#QT_FEATURE_xcb=OFF
-#QT_FEATURE_system_pcre2=ON
-
 QT_FEATURE_system_sqlite=ON
-
 QT_FEATURE_dbus_linked=ON
 QT_FEATURE_openssl_linked=ON
 {% endblock %}
