@@ -21,6 +21,7 @@ lib/openal
 lib/tg/owt
 lib/openssl
 lib/minizip
+lib/dispatch
 lib/range/v3
 lib/ffmpeg/4
 lib/qt/6/svg
