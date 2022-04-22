@@ -5,6 +5,8 @@ https://github.com/telegramdesktop/tdesktop/releases/download/v3.7.1/tdesktop-3.
 sha:9d02a5a4c2ac405abb6146d14b3a8d2d303715e43b4a3425a7976b0325f41720
 {% endblock %}
 
+{% block ninja_threads %}12{% endblock %}
+
 {% block bld_libs %}
 lib/c
 lib/z
@@ -19,24 +21,38 @@ lib/openal
 lib/tg/owt
 lib/openssl
 lib/minizip
-#lib/range/v3
+lib/range/v3
 lib/ffmpeg/4
 lib/qt/6/svg
 lib/expected
 lib/qt/6/base
 
-lib/mesa/gl
-lib/mesa/egl
-lib/mesa/glesv2
+lib/drivers/3d
+lib/mesa/gl/dl
+lib/mesa/egl/dl
+lib/mesa/glesv2/dl
 
 lib/qt/6/compat
 lib/qt/6/wayland
 lib/xiph/rnnoise
 {% endblock %}
 
-{% block cmake_flags %}
-#CMAKE_COMMAND=newcmake
+{% block c_compiler1 %}
+bin/gcc/tc(for_target={{host.gnu.three}})
+bin/gcc/tc(for_target={{target.gnu.three}})
+{% endblock %}
 
+{% block build_flags %}
+shut_up
+{% endblock %}
+
+{% block setup %}
+export CPPFLAGS="-I${PWD} ${CPPFLAGS}"
+#export CPPFLAGS="-isystem ${GCC_INCLUDES} ${CPPFLAGS}"
+export ALLCFLAGS="${CPPFLAGS} ${CFLAGS} ${CXXFLAGS}"
+{% endblock %}
+
+{% block cmake_flags %}
 #LIBTGVOIP_DISABLE_ALSA=ON
 LIBTGVOIP_DISABLE_PULSEAUDIO=ON
 
@@ -57,6 +73,9 @@ QT_ADDITIONAL_PACKAGES_PREFIX_PATH=${CMAKE_PREFIX_PATH}
 {% endblock %}
 
 {% block bld_tool %}
+bin/gcc/11
+bin/binutils
+
 bld/python
 bld/pkg/config
 bin/wayland/protocols
@@ -90,6 +109,15 @@ else:
 EOF
 
 chmod +x newcmake
+
+CC=$(which clang++)
+
+cat << EOF > clang++
+#!$(which sh)
+${CC} "\${@}" || ${bin_gcc_11}/bin/g++ "\${@}" ${ALLCFLAGS}
+EOF
+
+chmod +x clang++
 {% endblock %}
 
 {% block patch %}
@@ -102,4 +130,25 @@ find . -type f | while read l; do
 done
 
 sed -e 's|Q_OS_LINUX|SHIT|' -i Telegram/lib_base/base/platform/linux/base_info_linux.cpp
+
+cat - Telegram/SourceFiles/core/local_url_handlers.cpp << EOF > _
+#include <Telegram/lib_ui/ui/widgets/scroll_area.h>
+EOF
+
+mv _ Telegram/SourceFiles/core/local_url_handlers.cpp
+
+cat - Telegram/SourceFiles/settings/settings_main.cpp << EOF > _
+#include <Telegram/lib_ui/ui/widgets/scroll_area.h>
+EOF
+
+mv _ Telegram/SourceFiles/settings/settings_main.cpp
+
+>Telegram/lib_ui/ui/text/qtextitemint.cpp
 {% endblock %}
+
+{% block configure %}
+{{super()}}
+find ${tmp} -type f | while read l; do
+    sed -e 's|-Xclang||g' -e 's|-include-pch.*hxx.pch||' -i "${l}"
+done
+{% endblock%}

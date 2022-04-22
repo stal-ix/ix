@@ -8,3 +8,13 @@ sha:4af8f97c6b58319e78290f5bdc1b9d304eb9cb571b316cdf0eaab4507973046b
 {% block lib_deps %}
 lib/c
 {% endblock %}
+
+{% block c_rename_symbol %}
+_celt_lpc
+_celt_autocorr
+
+celt_iir
+pitch_search
+remove_doubling
+pitch_downsample
+{% endblock %}

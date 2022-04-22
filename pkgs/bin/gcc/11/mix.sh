@@ -89,3 +89,7 @@ export CXX_FOR_TARGET=${CXX}
 {% block postinstall %}
 echo 'FIXME(pg): proper(shared/) headers location'
 {% endblock %}
+
+{% block env %}
+export GCC_INCLUDES="${out}/lib/gcc/x86_64-pc-linux/11.3.0/include"
+{% endblock %}
