@@ -35,6 +35,7 @@ lib/qt/6/wayland
 lib/xiph/rnnoise
 lib/mesa/glesv2/dl
 lib/qt/6/imageformats
+lib/gperftools/tcmalloc/trim(delay=1,bytes=10000000)
 {% endblock %}
 
 {% block build_flags %}

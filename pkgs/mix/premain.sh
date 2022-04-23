@@ -13,7 +13,7 @@ EOF
 
 {% block premain_code_gen %}
 {% endblock %}
-) | cc -c -o reg.o -x c -
+) | cc -c -o reg.o -x {% block premain_lang %}c{% endblock %} -
 {% endblock %}
 
 {% block install %}
