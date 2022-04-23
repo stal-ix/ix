@@ -30,7 +30,6 @@ lib/double/conversion
 {% endblock %}
 
 {% block bld_tool %}
-bld/pkg/config
 bin/wayland/protocols
 {% endblock %}
 
