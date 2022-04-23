@@ -3,7 +3,12 @@ import subprocess
 
 
 def run_cmd(cmd, input=''):
-    cmd = ['/bin/sudo', '/bin/su', '-s', '/bin/mix', '-', 'mix'] + cmd
+    cmd = [
+        '/bin/sudo',
+        '/bin/chrt', '-i', '0',
+        '/bin/nice', '-n', '20',
+        '/bin/su', '-s', '/bin/mix', '-', 'mix'
+    ] + cmd
 
     subprocess.run(cmd, shell=False, input=input.encode(), check=True)
 
