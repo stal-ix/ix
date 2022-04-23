@@ -1,4 +1,4 @@
-{% extends '//mix/cmake.sh' %}
+{% extends '//mix/qt.sh' %}
 
 {% block fetch %}
 https://github.com/qt/qtwayland/archive/refs/tags/v6.3.0.tar.gz
@@ -14,14 +14,5 @@ lib/qt/6/base
 {% endblock %}
 
 {% block bld_tool %}
-bld/perl
 bin/wayland/protocols
-{% endblock %}
-
-{% block postinstall %}
-find ${out}/plugins/ -type f -name '*.a' | while read l; do
-    cp ${l} ${out}/lib/
-done
-
-echo 'TODO(pg): proper solution'
 {% endblock %}

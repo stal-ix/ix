@@ -1,4 +1,4 @@
-{% extends '//mix/cmake.sh' %}
+{% extends '//mix/qt.sh' %}
 
 {% block fetch %}
 https://github.com/qt/qtbase/archive/refs/tags/v6.3.0.tar.gz
@@ -30,7 +30,6 @@ lib/double/conversion
 {% endblock %}
 
 {% block bld_tool %}
-bld/perl
 bld/pkg/config
 bin/wayland/protocols
 {% endblock %}
@@ -45,12 +44,4 @@ QT_FEATURE_static=ON
 QT_FEATURE_system_sqlite=ON
 QT_FEATURE_dbus_linked=ON
 QT_FEATURE_openssl_linked=ON
-{% endblock %}
-
-{% block postinstall %}
-find ${out}/plugins/ -type f -name '*.a' | while read l; do
-    cp ${l} ${out}/lib/
-done
-
-echo 'TODO(pg): proper separate tools build'
 {% endblock %}
