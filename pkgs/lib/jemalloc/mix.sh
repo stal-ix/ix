@@ -10,6 +10,7 @@ autoconf
 {% endblock %}
 
 {% block configure_flags %}
+--disable-cxx
 --disable-libdl
 {% endblock %}
 
@@ -20,4 +21,13 @@ rm ${out}/lib/libjemalloc_pic.a
 
 {% block lib_deps %}
 lib/c/naked
+{% endblock %}
+
+{% block bld_libs %}
+lib/c++
+lib/mimalloc/2
+{% endblock %}
+
+{% block build_flags %}
+shut_up
 {% endblock %}

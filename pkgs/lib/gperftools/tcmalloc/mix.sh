@@ -10,7 +10,8 @@ lib/c++
 {% endblock %}
 
 {% block bld_libs %}
-lib/mimalloc
+lib/c++
+lib/mimalloc/2
 {% endblock %}
 
 {% block patch %}
