@@ -1,8 +1,8 @@
 {% extends '//mix/std/mix.sh' %}
 
 {% block fetch %}
-https://github.com/mesonbuild/meson/archive/refs/tags/0.60.2.tar.gz
-a5d6cfcf776e145f2054d5eefb4bc110
+https://github.com/mesonbuild/meson/archive/refs/tags/0.62.1.tar.gz
+sha:9fb52e66dbc613479a5f70e46cc2e8faf5aa65e09313f2c71fa63b8afd018107
 {% endblock %}
 
 {% block unpack %}
