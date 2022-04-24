@@ -31,3 +31,7 @@ lib/mimalloc/2
 {% block build_flags %}
 shut_up
 {% endblock %}
+
+{% block cpp_defines %}
+JEMALLOC_BACKGROUND_THREAD=1
+{% endblock %}
