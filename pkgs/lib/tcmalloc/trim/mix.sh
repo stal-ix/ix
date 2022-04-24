@@ -3,7 +3,7 @@
 {% block lib_deps %}
 lib/c
 lib/c++
-lib/gperftools/tcmalloc
+lib/tcmalloc
 {% endblock %}
 
 {% block premain_lang %}c++{% endblock %}
