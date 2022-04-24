@@ -1,8 +1,8 @@
 {% extends '//mix/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/kcat/openal-soft/archive/refs/tags/1.21.1.tar.gz
-sha:8ac17e4e3b32c1af3d5508acfffb838640669b4274606b7892aa796ca9d7467f
+https://github.com/kcat/openal-soft/archive/refs/tags/1.22.0.tar.gz
+sha:814831a8013d7365dfd1917b27f1fb6e723f3be3fe1c6a7ff4516425d8392f68
 {% endblock %}
 
 {% block lib_deps %}
