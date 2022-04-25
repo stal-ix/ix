@@ -16,3 +16,6 @@ lib/qt/6/base
 {% block bld_tool %}
 bin/wayland/protocols
 {% endblock %}
+
+{% block qt_cross_flags %}
+{% endblock %}

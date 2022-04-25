@@ -35,7 +35,7 @@ lib/qt/6/wayland
 lib/xiph/rnnoise
 lib/mesa/glesv2/dl
 lib/qt/6/imageformats
-#lib/{{allocator}}/trim(delay=1,bytes=10000000)
+lib/{{allocator}}/trim(delay=1,bytes=10000000)
 {% endblock %}
 
 {% block build_flags %}
@@ -68,6 +68,7 @@ QT_ADDITIONAL_PACKAGES_PREFIX_PATH=${CMAKE_PREFIX_PATH}
 {% endblock %}
 
 {% block bld_tool %}
+bld/qt
 bin/gcc/11
 bld/python
 bin/binutils
