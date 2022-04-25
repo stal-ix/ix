@@ -11,7 +11,7 @@ bld/glib/codegen
 bin/wayland/protocols
 {% endblock %}
 
-{% block ninja_threads %}6{% endblock %}
+{% block ninja_threads %}7{% endblock %}
 
 {% block cmake_flags %}
 USE_SYSTEMD=OFF
