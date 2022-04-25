@@ -1,18 +1,5 @@
-{% extends '//lib/web/kit/gtk/t/mix.sh' %}
+{% extends '//mix/hub.sh' %}
 
-{% block bld_libs %}
-lib/web/kit/deps
-{{super()}}
-{% endblock %}
-
-{% block install %}
-{{super()}}
-
-cd ${out}/bin
-
-find ${out} -type f -executable | while read l; do
-    mv "${l}" ./ || true
-done
-
-rm -rf jsc bin_*
+{% block run_deps %}
+bin/webkitproc/unwrap(allocator=tcmalloc)
 {% endblock %}
