@@ -52,6 +52,7 @@ sh
 configure
 {% endblock %}
 
+{% block configure_all_flags %}
 ${COFLAGS}
 
 {% block configure_cross %}
@@ -80,6 +81,7 @@ ${COFLAGS}
 --libexecdir="${out}/{{kind}}/{{uniq_id}}"
 
 {% block configure_flags %}
+{% endblock %}
 {% endblock %}
 
 {% if help %}
