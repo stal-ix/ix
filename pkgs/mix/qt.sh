@@ -2,7 +2,7 @@
 
 {% block std_box %}
 {% block qt_codegen %}
-bld/qt
+bld/qt/6
 bld/perl
 {% endblock %}
 {{super()}}

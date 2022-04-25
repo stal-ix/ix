@@ -28,5 +28,9 @@ export QT_HOST_PATH=${out}
 {% endblock %}
 
 {% block postinstall %}
-rm -rf ${out}/include ${out}/lib/*.a ${out}/plugins ${out}/modules
+cd ${out}
+mv lib old
+mkdir -p lib/cmake
+mv old/cmake/*Tools old/cmake/Qt6HostInfo lib/cmake/
+rm -rf doc include plugins modules old
 {% endblock %}

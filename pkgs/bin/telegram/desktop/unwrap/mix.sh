@@ -68,7 +68,7 @@ QT_ADDITIONAL_PACKAGES_PREFIX_PATH=${CMAKE_PREFIX_PATH}
 {% endblock %}
 
 {% block bld_tool %}
-bld/qt
+bld/qt/6
 bin/gcc/11
 bld/python
 bin/binutils
