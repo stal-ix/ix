@@ -1,8 +1,8 @@
 {% extends '//mix/make.sh' %}
 
 {% block fetch %}
-https://github.com/jarun/nnn/archive/refs/tags/v4.3.tar.gz
-8263efb03dc28e02f32ddaa0e07ddaf1
+https://github.com/jarun/nnn/archive/refs/tags/v4.5.tar.gz
+sha:fadc15bd6d4400c06e5ccc47845b42e60774f368570e475bd882767ee18749aa
 {% endblock %}
 
 {% block bld_libs %}
