@@ -1,8 +1,8 @@
 {% extends '//mix/autorehell.sh' %}
 
 {% block fetch %}
-https://sourceware.org/elfutils/ftp/0.186/elfutils-0.186.tar.bz2
-2c095e31e35d6be7b3718477b6d52702
+https://sourceware.org/elfutils/ftp/0.187/elfutils-0.187.tar.bz2
+sha:e70b0dfbe610f90c4d1fe0d71af142a4e25c3c4ef9ebab8d2d72b65159d454c8
 {% endblock %}
 
 {% block lib_deps %}
