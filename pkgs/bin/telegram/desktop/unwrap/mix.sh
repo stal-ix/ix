@@ -1,8 +1,8 @@
 {% extends '//mix/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/telegramdesktop/tdesktop/releases/download/v3.7.1/tdesktop-3.7.1-full.tar.gz
-sha:9d02a5a4c2ac405abb6146d14b3a8d2d303715e43b4a3425a7976b0325f41720
+https://github.com/telegramdesktop/tdesktop/releases/download/v3.7.2/tdesktop-3.7.2-full.tar.gz
+sha:46ee1e533b36eb785e23983ab9771297d1eeec61d1ba926c7baa35bb158ff083
 {% endblock %}
 
 {% block ninja_threads %}8{% endblock %}
