@@ -11,8 +11,6 @@ bin/nasm
 
 {% block lib_deps %}
 lib/c
-lib/z
-lib/png
 {% endblock %}
 
 {% block cmake_flags %}
