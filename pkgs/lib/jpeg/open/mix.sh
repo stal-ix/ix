@@ -31,6 +31,5 @@ done
 {% endblock %}
 
 {% block env_lib %}
-export CMFLAGS="-DOpenJPEG_DIR=${out}/lib/cmake \${CMFLAGS}"
 export CPPFLAGS="-I${out}/include/openjpeg-2.4 \${CPPFLAGS}"
 {% endblock %}
