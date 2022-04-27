@@ -15,6 +15,7 @@ lib/opus
 lib/webp
 lib/x264
 lib/x265
+lib/xvid
 lib/dav1d
 lib/openh264
 lib/jpeg/open
@@ -49,4 +50,5 @@ shut_up
 --enable-libwebp
 --enable-libx264
 --enable-libx265
+--enable-libxvid
 {% endblock %}
