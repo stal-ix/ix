@@ -36,3 +36,9 @@ QT_FEATURE_system_sqlite=ON
 QT_FEATURE_dbus_linked=ON
 QT_FEATURE_openssl_linked=ON
 {% endblock %}
+
+{% block install %}
+{{super()}}
+cd ${out}/lib
+llvm-ar q libqtregister.a $(find -type f -name '*.o')
+{% endblock %}

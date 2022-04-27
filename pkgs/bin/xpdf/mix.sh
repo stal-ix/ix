@@ -17,15 +17,3 @@ lib/qt/6/deps
 {% block bld_tool %}
 bld/qt/6
 {% endblock %}
-
-{% block setup_tools %}
-C=$(which clang)
-
-cat << EOF > clang
-#!$(which sh)
-${C} "\${@}" 2>/dev/null || ${C} ${lib_qt_6_base}/lib/objects-Release/Gui_resources_1/.rcc/qrc_qpdf.cpp.o "\${@}"
-EOF
-
-chmod +x clang
-cp clang clang++
-{% endblock %}
