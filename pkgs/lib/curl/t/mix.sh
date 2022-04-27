@@ -1,8 +1,8 @@
 {% extends '//mix/autorehell.sh' %}
 
 {% block fetch %}
-https://github.com/curl/curl/archive/refs/tags/curl-7_82_0.tar.gz
-sha:a6a4485622871c2111ab9345e813935a230bd564eabe768be3950b39a66b44b3
+https://github.com/curl/curl/archive/refs/tags/curl-7_83_0.tar.gz
+sha:9350985ab43591ecd04b087f9c9dad84b952c35c6012e2a08ae355ae797db988
 {% endblock %}
 
 {% block lib_deps %}
