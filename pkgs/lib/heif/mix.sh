@@ -7,6 +7,8 @@ https://github.com/strukturag/libheif/archive/refs/tags/v1.12.0.tar.gz
 
 {% block lib_deps %}
 lib/c
+lib/aom
 lib/x265
 lib/de265
+lib/dav1d
 {% endblock %}
