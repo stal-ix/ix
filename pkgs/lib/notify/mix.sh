@@ -1,8 +1,8 @@
 {% extends '//mix/meson.sh' %}
 
 {% block fetch %}
-https://download.gnome.org/sources/libnotify/0.7/libnotify-0.7.9.tar.xz
-sha:66c0517ed16df7af258e83208faaf5069727dfd66995c4bbc51c16954d674761
+https://download.gnome.org/sources/libnotify/0.7/libnotify-0.7.10.tar.xz
+sha:37dc47dd1bd3c1360d6e8815c3affb99d120e3617d7e5647586f117cffe0ba4b
 {% endblock %}
 
 {% block lib_deps %}

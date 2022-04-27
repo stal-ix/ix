@@ -13,12 +13,12 @@ lib/z
 lib/lz4
 lib/c++
 lib/vpx
-lib/alsa
 lib/opus
 lib/gsl/ms
 lib/xxhash
 lib/openal
 lib/tg/owt
+lib/tg/voip
 lib/openssl
 lib/minizip
 lib/dispatch
@@ -43,14 +43,11 @@ shut_up
 {% endblock %}
 
 {% block setup %}
-export CPPFLAGS="-I${PWD} ${CPPFLAGS}"
+export CPPFLAGS="-I${PWD} -I${PWD}/Telegram/ThirdParty/libtgvoip ${CPPFLAGS}"
 export ALLCFLAGS="${CPPFLAGS} ${CFLAGS} ${CXXFLAGS}"
 {% endblock %}
 
 {% block cmake_flags %}
-#LIBTGVOIP_DISABLE_ALSA=ON
-LIBTGVOIP_DISABLE_PULSEAUDIO=ON
-
 DESKTOP_APP_DISABLE_CRASH_REPORTS=ON
 DESKTOP_APP_DISABLE_JEMALLOC=ON
 DESKTOP_APP_USE_PACKAGED=ON
