@@ -8,6 +8,7 @@ https://github.com/lloyd/yajl/archive/refs/tags/2.1.0.tar.gz
 {% block install %}
 {{super()}}
 rm ${out}/lib/libyajl_s.a
+mv ${out}/share/pkgconfig ${out}/lib/
 {% endblock %}
 
 {% block lib_deps %}
