@@ -12,6 +12,7 @@ lib/c++
 lib/fmt
 lib/udev
 lib/evdev
+lib/sndio
 lib/spdlog
 lib/wayland
 lib/sigc++/2

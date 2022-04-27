@@ -12,5 +12,6 @@ lib/xz
 lib/c++
 lib/jpeg
 lib/zstd
+# TODO(pg): check it
 lib/webp
 {% endblock %}
