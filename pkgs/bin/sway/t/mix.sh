@@ -19,6 +19,7 @@ lib/gdk/pixbuf
 
 {% block bld_tool %}
 bin/scdoc
+bin/glslang
 bin/wayland/protocols
 {% endblock %}
 
