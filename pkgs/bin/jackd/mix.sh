@@ -2,11 +2,15 @@
 
 {% block bld_libs %}
 lib/alsa
+lib/sndfile
 lib/readline
+lib/samplerate
 {{super()}}
 {% endblock %}
 
 {% block waf_flags %}
+--samplerate=yes
+--sndfile=yes
 --alsa=yes
 --readline=yes
 {{super()}}
