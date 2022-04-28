@@ -1,8 +1,8 @@
 {% extends '//mix/autorehell.sh' %}
 
 {% block fetch %}
-https://nano-editor.org/dist/v6/nano-6.0.tar.xz
-5b6ff59f2490db80a3498c4cd3eda085
+https://nano-editor.org/dist/v6/nano-6.3.tar.xz
+sha:eb532da4985672730b500f685dbaab885a466d08fbbf7415832b95805e6f8687
 {% endblock %}
 
 {% block bld_libs %}
