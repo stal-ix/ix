@@ -113,9 +113,6 @@ sed -e 's|.*DESKTOP_APP_USE_PACKAGED.*||' \
     -e 's|.*Gtk3Theme.*||' \
     -e 's|.*NimfInput.*||' \
     -i cmake/external/qt/qt_static_plugins/qt_static_plugins.cpp
-
-sed -e 's|xdgDecorationSupported() {|xdgDecorationSupported() { return true;|' \
-    -i Telegram/lib_ui/ui/platform/linux/ui_linux_wayland_integration.cpp
 {% endblock %}
 
 {% block configure %}
