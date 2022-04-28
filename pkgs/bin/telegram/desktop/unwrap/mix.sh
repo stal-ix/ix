@@ -26,6 +26,7 @@ lib/range/v3
 lib/ffmpeg/4
 lib/qt/6/svg
 lib/expected
+lib/k/wayland
 lib/qt/6/base
 lib/drivers/3d
 lib/mesa/gl/dl
@@ -113,9 +114,7 @@ chmod +x clang++
 {% endblock %}
 
 {% block patch %}
-base64 -d << EOF > cmake/external/kwayland/CMakeLists.txt
-{% include 'CMakeLists.txt/base64' %}
-EOF
+sed -e 's| AND NOT DESKTOP_APP_QT6||' -i cmake/external/kwayland/CMakeLists.txt
 
 find . -type f | while read l; do
     sed -e 's|third_party/libyuv/include/||' -i "${l}"
@@ -142,6 +141,9 @@ sed -e 's|.*DESKTOP_APP_USE_PACKAGED.*||' \
     -e 's|.*Gtk3Theme.*||' \
     -e 's|.*NimfInput.*||' \
     -i cmake/external/qt/qt_static_plugins/qt_static_plugins.cpp
+
+sed -e 's|xdgDecorationSupported() {|xdgDecorationSupported() { return true;|' \
+    -i Telegram/lib_ui/ui/platform/linux/ui_linux_wayland_integration.cpp
 {% endblock %}
 
 {% block configure %}
