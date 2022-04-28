@@ -15,6 +15,7 @@ lib/alsa
 lib/udev
 lib/intl
 lib/curses
+lib/samplerate
 {% endblock %}
 
 {% block configure_flags %}
