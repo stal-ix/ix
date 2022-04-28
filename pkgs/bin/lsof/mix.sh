@@ -1,8 +1,8 @@
 {% extends '//mix/make.sh' %}
 
 {% block fetch %}
-https://github.com/lsof-org/lsof/releases/download/4.94.0/lsof_4.94.0.linux.tar.bz2
-sha:c41709c2543ecf9de1e950795790a9786a2f225e51c3cc53d6a9a256f872472b
+https://github.com/lsof-org/lsof/releases/download/4.95.0/lsof_4.95.0.linux.tar.bz2
+sha:e9faa0fbcc48638c1d1f143e93573ac43b65e76646150f83e24bd8c18786303c
 {% endblock %}
 
 {% block bld_libs %}
