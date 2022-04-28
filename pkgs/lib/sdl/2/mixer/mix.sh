@@ -8,6 +8,7 @@ sha:b4cf5a382c061cd75081cf246c2aa2f9df8db04bdda8dcdc6b6cca55bede2419
 {% block lib_deps %}
 lib/c
 lib/sdl/2
+lib/mpg123
 lib/xiph/ogg
 lib/xiph/flac
 lib/xiph/vorbis
