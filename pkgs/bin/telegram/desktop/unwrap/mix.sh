@@ -75,34 +75,6 @@ bin/wayland/protocols
 {% endblock %}
 
 {% block setup_tools %}
-C=$(which cmake)
-
-export SIP=$(add_suffix ${MIX_T_DIR} include)
-export SLP=$(add_suffix ${MIX_T_DIR} lib)
-export SPP=$(add_suffix ${MIX_B_DIR} bin)
-
-cat << EOF > newcmake
-#!$(which python3)
-
-import sys
-import subprocess
-
-if '--build' in sys.argv:
-    subprocess.check_call(['${C}'] + sys.argv[1:])
-else:
-    args = [
-        '-DCMAKE_COMMAND=${C}',
-        '-DQT_ADDITIONAL_PACKAGES_PREFIX_PATH=${CMAKE_PREFIX_PATH}',
-        '-DCMAKE_SYSTEM_INCLUDE_PATH=${SIP}',
-        '-DCMAKE_SYSTEM_LIBRARY_PATH=${SLP}',
-        '-DCMAKE_SYSTEM_PROGRAM_PATH=${SPP}'
-    ]
-
-    subprocess.check_call(['${C}'] + args + sys.argv[1:])
-EOF
-
-chmod +x newcmake
-
 CC=$(which clang++)
 
 cat << EOF > clang++
