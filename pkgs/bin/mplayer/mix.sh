@@ -11,11 +11,6 @@ lib/z
 lib/a52
 lib/mad
 lib/png
-lib/vpx
-lib/x264
-lib/x265
-lib/xvid
-lib/jpeg
 lib/faad2
 lib/mpeg2
 lib/sdl/1
@@ -24,13 +19,10 @@ lib/mpg123
 lib/ffmpeg
 lib/giflib
 lib/curses
-lib/openal
 lib/fribidi
 lib/freetype
-lib/xiph/ogg
 lib/sdl/deps
 lib/fontconfig
-lib/xiph/vorbis
 {% endblock %}
 
 {% block bld_tool %}
