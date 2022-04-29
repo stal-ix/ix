@@ -1,8 +1,8 @@
 {% extends '//mix/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/kkos/oniguruma/archive/refs/tags/v6.9.7.1.tar.gz
-e46bd3ba7f88460e5610035951e2e56d
+https://github.com/kkos/oniguruma/archive/refs/tags/v6.9.8.tar.gz
+sha:26372720bab6733c869a9eb69377f73971138dc5e3eff4a81f5ba8aea5435fb2
 {% endblock %}
 
 {% block env_lib %}
