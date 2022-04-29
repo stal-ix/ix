@@ -5,8 +5,6 @@ https://github.com/telegramdesktop/tdesktop/releases/download/v3.7.2/tdesktop-3.
 sha:46ee1e533b36eb785e23983ab9771297d1eeec61d1ba926c7baa35bb158ff083
 {% endblock %}
 
-{% block ninja_threads %}8{% endblock %}
-
 {% block bld_libs %}
 lib/c
 lib/z
