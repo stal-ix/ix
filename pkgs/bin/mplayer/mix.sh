@@ -11,6 +11,7 @@ lib/z
 lib/a52
 lib/mad
 lib/png
+lib/faac
 lib/faad2
 lib/mpeg2
 lib/sdl/1

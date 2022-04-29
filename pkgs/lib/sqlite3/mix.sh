@@ -15,6 +15,7 @@ lib/c
 
 {% block cpp_defines %}
 SQLITE_OMIT_LOAD_EXTENSION=1
+SQLITE_ENABLE_COLUMN_METADATA=1
 {% endblock %}
 
 {% block env_lib %}
