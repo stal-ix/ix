@@ -30,16 +30,6 @@ glesv3=enabled
 gl-backend=auto
 {% endblock %}
 
-{% block c_rename_symbol %}
-optarg
-opterr
-optind
-optopt
-getopt
-getopt_long
-getopt_long_only
-{% endblock %}
-
 {% block build_flags %}
 shut_up
 {% endblock %}
