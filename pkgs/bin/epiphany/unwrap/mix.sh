@@ -27,6 +27,7 @@ lib/gdk/pixbuf
 lib/web/kit/gtk
 lib/glib/networking
 lib/gsettings/desktop/schemas
+lib/{{allocator}}/trim(delay=5,bytes=10000000)
 {% endblock %}
 
 {% block bld_tool %}
