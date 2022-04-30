@@ -14,9 +14,11 @@ lib/jpeg
 mkdir src; cd src; extract0 ${src}/*gz
 {% endblock %}
 
-{% block patch %}
-cat CMakeLists.txt \
-    | grep -v ' SHARED ' \
-    | grep -v '_shared'  \
-    > _ && mv _ CMakeLists.txt
+{% block build_flags %}
+wrap_cc
+{% endblock %}
+
+{% block install %}
+{{super()}}
+{{hooks.gen_pc('libyuv', '100.0.0')}}
 {% endblock %}

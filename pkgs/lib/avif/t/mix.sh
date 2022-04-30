@@ -12,6 +12,8 @@ lib/aom
 lib/png
 lib/yuv
 lib/jpeg
+lib/dav1d
+lib/svt/av1
 {% endblock %}
 
 {% block cmake_flags %}
