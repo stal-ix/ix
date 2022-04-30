@@ -17,6 +17,7 @@ autoconf
 {% block install %}
 {{super()}}
 rm ${out}/lib/libjemalloc_pic.a
+llvm-objcopy --redefine-sym=je_reallocarray=reallocarray ${out}/lib/libjemalloc.a
 {% endblock %}
 
 {% block lib_deps %}
@@ -34,4 +35,22 @@ shut_up
 
 {% block cpp_defines %}
 JEMALLOC_BACKGROUND_THREAD=1
+{% endblock %}
+
+{% block patch %}
+cat << EOF >> src/jemalloc.c
+static inline bool size_multiply_overflow(size_t size, size_t need) {
+    return need != 0 && size > (SIZE_MAX / need);
+}
+
+void* reallocarray(void* p, size_t need, size_t size) {
+    if (size_multiply_overflow(size, need)) {
+        errno = ENOMEM;
+
+        return NULL;
+    }
+
+    return realloc(p, size * need);
+}
+EOF
 {% endblock %}
