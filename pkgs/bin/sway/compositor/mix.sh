@@ -3,7 +3,7 @@
 {% block bld_libs %}
 {{super()}}
 lib/drivers/3d
-lib/{{allocator}}/trim(delay=1,bytes=1000000)
+lib/{{allocator}}/trim(delay=10,bytes=10000000)
 {% endblock %}
 
 {% block meson_flags %}
