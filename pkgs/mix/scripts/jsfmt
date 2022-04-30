@@ -1,0 +1,64 @@
+#!/usr/bin/env python3
+
+import os
+import sys
+import json
+import collections
+
+def tok(s):
+    t = ''
+
+    for ch in ('^' + s.replace('-', '').replace('.', '').replace('_', '') + '^^'):
+        if len(t) == 4:
+            yield t
+            t = t[1:] + ch
+        else:
+            t += ch
+
+def it_words():
+    for a, b, c in os.walk(sys.argv[1]):
+        yield from b
+
+        for p in c:
+            pp = os.path.join(a, p)
+
+            if '.git' in pp:
+                continue
+
+            with open(pp) as ff:
+                for l in ff.read().split('\n'):
+                    if 'https:' in l:
+                        yield l.strip()
+
+toks = collections.defaultdict(int)
+
+for w in it_words():
+    for i in tok(w):
+        toks[i] += 1
+
+good = set()
+
+for w, c in toks.items():
+    if c == 1:
+        good.add(w)
+
+for x in json.load(sys.stdin):
+    p = x['project']
+
+    if ':' in p:
+        continue
+
+    v = ' '.join(x['versions'])
+
+    if True:
+        words = p + v
+        inter = frozenset(tok(words)) & good
+
+        if len(inter) > 3:
+            w = len(inter) / len(words)
+
+            if w > 0.3:
+                #print(f'{w} {inter} {p} {v}')
+                print(f'{p} {v}')
+    else:
+        print(f'{p} {v}')

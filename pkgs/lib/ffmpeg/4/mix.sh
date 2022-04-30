@@ -19,7 +19,9 @@ lib/xvid
 lib/dav1d
 lib/openh264
 lib/jpeg/open
+lib/xiph/speex
 lib/xiph/vorbis
+lib/xiph/theora
 {% endblock %}
 
 {% block bld_tool %}
@@ -51,4 +53,6 @@ shut_up
 --enable-libx264
 --enable-libx265
 --enable-libxvid
+--enable-libspeex
+--enable-libtheora
 {% endblock %}
