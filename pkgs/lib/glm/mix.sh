@@ -11,16 +11,7 @@ lib/c++
 {% endblock %}
 
 {% block install %}
-mkdir -p ${out}/include ${out}/lib/pkgconfig
+mkdir -p ${out}/include
 cp -R glm ${out}/include/
-
-cat << EOF > ${out}/lib/pkgconfig/glm.pc
-prefix=${out}
-includedir=\${prefix}/include
-
-Name: GLM
-Description: GLM devs completely insane, so this shit
-Version: 0.9.9.8
-Cflags: -I\${includedir}
-EOF
+{{hooks.gen_pc('glm', '0.9.9.8')}}
 {% endblock %}

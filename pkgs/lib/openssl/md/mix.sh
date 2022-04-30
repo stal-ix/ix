@@ -9,9 +9,11 @@ lib/md
 {% endblock %}
 
 {% block install %}
-cd ${out}
+{{hooks.gen_pc('openssl', '1.1.1')}}
 
-mkdir -p include/openssl; cat << EOF > include/openssl/sha.h
+mkdir -p ${out}/include/openssl
+
+cat << EOF > ${out}/include/openssl/sha.h
 #include <sha2.h>
 
 typedef SHA2_CTX SHA256_CTX;
@@ -27,18 +29,5 @@ typedef SHA2_CTX SHA256_CTX;
 #define SHA256_Data SHA256Data
 
 #define SHA256(a, b, c) SHA256_Data(a, b, (char*)c)
-EOF
-
-mkdir -p lib/pkgconfig; cat << EOF > lib/pkgconfig/openssl.pc
-prefix=${out}
-exec_prefix=\${prefix}
-libdir=\${exec_prefix}/lib
-includedir=\${prefix}/include
-
-Name: openssl
-Description: wrapper for libmd C library.
-Version: 1.1.1
-Libs:
-Cflags:
 EOF
 {% endblock %}

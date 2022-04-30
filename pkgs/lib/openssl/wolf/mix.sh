@@ -18,18 +18,7 @@ cp libempty.a ${out}/lib/libcrypto.a
 cp libempty.a ${out}/lib/libssl.a
 cp -R ${lib_wolfssl}/include/wolfssl ${out}/include
 
-cat << EOF > ${out}/lib/pkgconfig/openssl.pc
-prefix=${out}
-exec_prefix=\${prefix}
-libdir=\${exec_prefix}/lib
-includedir=\${prefix}/include
-
-Name: openssl
-Description: wrapper for wolfssl C library.
-Version: 1.1.1
-Libs: -L\${libdir}
-Cflags: -I\${includedir}
-EOF
+{{hooks.gen_pc('openssl', '1.1.1')}}
 {% endblock %}
 
 {% block env_lib %}
