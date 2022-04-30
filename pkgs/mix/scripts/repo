@@ -5,6 +5,8 @@ import sys
 import json
 import collections
 
+import urllib.request as ur
+
 def tok(s):
     t = ''
 
@@ -42,7 +44,10 @@ for w, c in toks.items():
     if c == 1:
         good.add(w)
 
-for x in json.load(sys.stdin):
+def fetch():
+    return ur.urlopen('https://repology.org/api/experimental/updates').read()
+
+for x in json.loads(fetch().decode()):
     p = x['project']
 
     if ':' in p:
@@ -54,7 +59,7 @@ for x in json.load(sys.stdin):
         words = p + v
         inter = frozenset(tok(words)) & good
 
-        if len(inter) > 3:
+        if len(inter) > 1:
             w = len(inter) / len(words)
 
             if w > 0.3:
