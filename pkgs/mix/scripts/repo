@@ -62,7 +62,7 @@ for x in json.loads(fetch().decode()):
         if len(inter) > 1:
             w = len(inter) / len(words)
 
-            if w > 0.3:
+            if w > 0.25:
                 #print(f'{w} {inter} {p} {v}')
                 print(f'{p} {v}')
     else:

@@ -34,18 +34,9 @@ third_party_loc=${TPL}
 
 {% block install %}
 {{super()}}
+{{hooks.gen_pc('tgvoip', '2.4.4')}}
+{% endblock %}
 
-cat << EOF > ${out}/lib/pkgconfig/tgvoip.pc
-prefix=${out}
-libdir=\${prefix}/lib
-includedir=\${prefix}/include
-
-Name: tgvoip
-Description: VoIP library for Telegram clients
-Version: 2.4.4
-Requires.private: libcrypto opus
-Libs: -L\${libdir} -ltgvoip -lpthread
-Libs.private: -ltg_owt -ldl -lm
-Cflags: -I\${includedir}/tgvoip
-EOF
+{% block env %}
+export CPPFLAGS="-I${out}/include/tgvoip \${CPPFLAGS}"
 {% endblock %}
