@@ -1,8 +1,8 @@
 {% extends '//mix/meson.sh' %}
 
 {% block fetch %}
-https://codeberg.org/dnkl/fcft/archive/3.0.1.tar.gz
-sha:0d9b9f3add24aef5efcf42a32e8ad0e50060e1441a491e04fff3d79a36a526ea
+https://codeberg.org/dnkl/fcft/archive/3.1.1.tar.gz
+sha:5f35dbd8a1a81ec61648e86e8f86157c9fd905ee199540d81a031121473204d5
 {% endblock %}
 
 {% block lib_deps %}
