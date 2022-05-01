@@ -1,8 +1,8 @@
 {% extends '//mix/meson.sh' %}
 
 {% block fetch %}
-https://download.savannah.gnu.org/releases/freetype/freetype-2.12.0.tar.xz
-sha:ef5c336aacc1a079ff9262d6308d6c2a066dd4d2a905301c4adda9b354399033
+https://download.savannah.gnu.org/releases/freetype/freetype-2.12.1.tar.xz
+sha:4766f20157cc4cf0cd292f80bf917f92d1c439b243ac3018debf6b9140c41a7f
 {% endblock %}
 
 {% block lib_deps %}
