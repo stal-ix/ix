@@ -13,6 +13,7 @@ lib/mesa
 lib/inih
 lib/cairo
 lib/pango
+lib/ns/gif
 lib/wayland
 lib/xkbcommon
 lib/freeimage
