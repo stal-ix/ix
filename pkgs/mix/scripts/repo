@@ -3,14 +3,22 @@
 import os
 import sys
 import json
+import string
 import collections
 
 import urllib.request as ur
 
+S = frozenset(string.ascii_letters + string.digits)
+
+def flt(s):
+    for c in s:
+        if c in S:
+            yield c
+
 def tok(s):
     t = ''
 
-    for ch in ('^' + s.replace('-', '').replace('.', '').replace('_', '') + '^^'):
+    for ch in ('^' + ''.join(flt(s)) + '^^'):
         if len(t) == 4:
             yield t
             t = t[1:] + ch
@@ -62,7 +70,7 @@ for x in json.loads(fetch().decode()):
         if len(inter) > 1:
             w = len(inter) / len(words)
 
-            if w > 0.25:
+            if w > 0.2:
                 #print(f'{w} {inter} {p} {v}')
                 print(f'{p} {v}')
     else:
