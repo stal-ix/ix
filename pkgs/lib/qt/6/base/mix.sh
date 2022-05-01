@@ -27,6 +27,16 @@ bin/wayland/protocols
 {{super()}}
 {% endblock %}
 
+{% block c_rename_symbol %}
+blake2s_init_param
+blake2s_init
+blake2s_init_key
+blake2s_update
+blake2s_final
+blake2s
+{{super()}}
+{% endblock %}
+
 {% block cmake_flags %}
 {{super()}}
 QT_FEATURE_androiddeployqt=OFF
