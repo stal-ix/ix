@@ -18,8 +18,8 @@ for i in *.a; do
     ln -s ${i} $(echo ${i} | tr -d 'w')
 done
 
-mv pkg-config pkgconfig
 cd pkgconfig
+
 cp ncursesw.pc ncurses.pc
 {% endblock %}
 

@@ -36,5 +36,5 @@ bash
 {% endblock %}
 
 {% block setup %}
-export PKG_CONFIG_LIBDIR=${out}/lib/pkg-config
+export PKG_CONFIG_LIBDIR=${out}/lib/pkgconfig
 {% endblock %}
