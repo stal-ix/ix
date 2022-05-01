@@ -13,7 +13,8 @@ lib/bzip2
 lib/brotli
 {% endblock %}
 
-{% block patch1 %}
-sed -e 's|.*FT_CONFIG_OPTION_SUBPIXEL_RENDERING.*|#define FT_CONFIG_OPTION_SUBPIXEL_RENDERING|' \
-    -i include/freetype/config/ftoption.h
+{% block patch %}
+cat << EOF >> include/freetype/config/ftoption.h
+#define FT_CONFIG_OPTION_SUBPIXEL_RENDERING
+EOF
 {% endblock %}

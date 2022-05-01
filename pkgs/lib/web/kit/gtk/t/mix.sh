@@ -29,6 +29,7 @@ lib/woff2
 lib/gcrypt
 lib/secret
 lib/soup/3
+lib/notify
 lib/wayland
 lib/sqlite3
 lib/seccomp

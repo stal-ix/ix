@@ -14,8 +14,8 @@ bin/wayland/protocols
 {% block ninja_threads %}7{% endblock %}
 
 {% block cmake_flags %}
+USE_AVIF=ON
 USE_SYSTEMD=OFF
-USE_LIBNOTIFY=OFF
 USE_LIBHYPHEN=OFF
 
 ENABLE_THUNDER=OFF
