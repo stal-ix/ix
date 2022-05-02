@@ -1,8 +1,8 @@
 {% extends '//mix/make.sh' %}
 
 {% block fetch %}
-https://github.com/rui314/mold/archive/refs/tags/v1.2.tar.gz
-sha:975ad37394e5c32661ee5da2817e5e8b8d40c6a73c78e23b30a57763c004a9f1
+https://github.com/rui314/mold/archive/refs/tags/v1.2.1.tar.gz
+sha:41868663ff18afee3fa35e5e3fdf3d9575eb2e4ff49967b8f42f479c61c1ec34
 {% endblock %}
 
 {% block bld_libs %}
