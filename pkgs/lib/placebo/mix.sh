@@ -10,7 +10,8 @@ lib/c
 lib/epoxy
 lib/lcms2
 lib/opengl
-bin/glslang
+lib/glslang
+lib/shaderc
 lib/execinfo
 lib/vulkan/loader
 lib/vulkan/headers

@@ -16,3 +16,8 @@ SPIRV_HEADERS_ENABLE_EXAMPLES=OFF
 {% block lib_deps %}
 lib/c
 {% endblock %}
+
+{% block install %}
+{{super()}}
+mv ${out}/share ${out}/lib
+{% endblock %}
