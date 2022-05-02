@@ -27,7 +27,9 @@ def tok(s):
 
 def it_words():
     for a, b, c in os.walk(sys.argv[1]):
-        yield from b
+        for _ in b:
+            yield {'t': 'f', 'v': _}
+            yield {'t': 'e', 'v': _}
 
         for p in c:
             pp = os.path.join(a, p)
@@ -38,13 +40,17 @@ def it_words():
             with open(pp) as ff:
                 for l in ff.read().split('\n'):
                     if 'https:' in l:
-                        yield l.strip()
+                        yield {'t': 'f', 'v': l.strip()}
 
 toks = collections.defaultdict(int)
+exac = set()
 
 for w in it_words():
-    for i in tok(w):
-        toks[i] += 1
+    if w['t'] == 'e':
+        exac.add(w['v'])
+    else:
+        for i in tok(w['v']):
+            toks[i] += 1
 
 good = set()
 
@@ -55,23 +61,25 @@ for w, c in toks.items():
 def fetch():
     return ur.urlopen('https://repology.org/api/experimental/updates').read()
 
+def exact_m(p):
+    return p in exac
+
+def fuzzy_m(words):
+    inter = frozenset(tok(words)) & good
+
+    if len(inter) > 1:
+        w = len(inter) / len(words)
+
+        if w > 0.3:
+            return True
+
+    return False
+
 for x in json.loads(fetch().decode()):
     p = x['project']
 
     if ':' in p:
         continue
 
-    v = ' '.join(x['versions'])
-
-    if True:
-        words = p + v
-        inter = frozenset(tok(words)) & good
-
-        if len(inter) > 1:
-            w = len(inter) / len(words)
-
-            if w > 0.2:
-                #print(f'{w} {inter} {p} {v}')
-                print(f'{p} {v}')
-    else:
-        print(f'{p} {v}')
+    if exact_m(p) or fuzzy_m(p + ' '.join(x['versions'])):
+        print(f'{p} {x}')
