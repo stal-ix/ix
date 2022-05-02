@@ -15,6 +15,7 @@ lib/intel/tbb
 {% endblock %}
 
 {% block std_box %}
+bld/python
 bld/pkg/config
 {{super()}}
 {% endblock %}
