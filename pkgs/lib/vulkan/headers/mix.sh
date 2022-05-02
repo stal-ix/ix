@@ -13,3 +13,7 @@ lib/c++
 {% block postinstall %}
 echo 'TODO(pg): check it'
 {% endblock %}
+
+{% block env %}
+export VK_XML="${out}/share/vulkan/registry/vk.xml"
+{% endblock %}

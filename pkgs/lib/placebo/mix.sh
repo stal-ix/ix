@@ -31,5 +31,5 @@ bin/glslang
 {% block meson_flags %}
 vulkan=enabled
 opengl=enabled
-vulkan-registry=${lib_vulkan_headers}/share/vulkan/registry/vk.xml
+vulkan-registry="${VK_XML}"
 {% endblock %}
