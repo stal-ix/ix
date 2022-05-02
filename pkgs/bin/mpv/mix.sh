@@ -7,13 +7,17 @@ sha:32ded8c13b6398310fa27767378193dc1db6d78b006b70dbcbd3123a1445e746
 
 {% block bld_libs %}
 lib/c
+lib/lua
 lib/ass
+lib/mu/js
 lib/ffmpeg
 lib/openal
+lib/archive
 lib/wayland
 lib/mesa/gl
 lib/placebo
 lib/mesa/egl
+lib/uchardet
 lib/xkbcommon
 lib/drivers/3d
 lib/vulkan/headers
@@ -28,4 +32,9 @@ bin/wayland/protocols
 {% block unpack %}
 {{super()}}
 cp ${bin_waf}/bin/waf ./
+{% endblock %}
+
+{% block waf_flags %}
+--enable-openal
+--enable-javascript
 {% endblock %}

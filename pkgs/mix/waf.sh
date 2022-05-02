@@ -7,7 +7,7 @@ bld/pkg/config
 {% endblock %}
 
 {% block step_patch %}
-find . | grep wscript | while read l; do
+find . -type f -name wscript | while read l; do
     sed -e 's|cshlib|cstlib|g'     \
         -e 's|cxxshlib|cxxstlib|g' \
         -e 's|stdc++|c|g'          \

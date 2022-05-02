@@ -13,6 +13,15 @@ lib/c
 HAVE_READLINE=no
 {% endblock %}
 
-{% block build_flags %}
-wrap_cc
+{% block make_target %}
+static
+{% endblock %}
+
+{% block make_install_target %}
+install-static
+{% endblock %}
+
+{% block install %}
+{{super()}}
+sed -e 's|Version:.*|Version: 1.2.0|' -i ${out}/lib/pkgconfig/mujs.pc
 {% endblock %}
