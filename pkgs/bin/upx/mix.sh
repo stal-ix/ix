@@ -17,13 +17,16 @@ bld/bash
 bld/perl
 {% endblock %}
 
-{% block build_flags %}
-shut_up
-{% endblock %}
-
 {% block unpack %}
 {{super()}}
 cd src
+{% endblock %}
+
+{% block make_flags %}
+CHECK_WHITESPACE=true
+UPX_LZMA_VERSION=0x465
+UPX_LZMADIR=${PWD}
+CXXFLAGS_WERROR=
 {% endblock %}
 
 {% block install %}
