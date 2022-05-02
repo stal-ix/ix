@@ -9,14 +9,13 @@ sha:55447ff067da79f93eee6fef29b592f46eb16fc77340235255986ce9e8f5dbf3
 lib/c
 lib/epoxy
 lib/lcms2
+lib/opengl
 bin/glslang
-lib/mesa/gl
-lib/mesa/egl
 lib/execinfo
 lib/vulkan/loader
 lib/vulkan/headers
-lib/vulkan/spirv/headers
 lib/vulkan/spirv/tools
+lib/vulkan/spirv/headers
 {% endblock %}
 
 {% block bld_libs %}
