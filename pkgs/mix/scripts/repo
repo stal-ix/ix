@@ -62,13 +62,15 @@ def fetch():
     return ur.urlopen('https://repology.org/api/experimental/updates').read()
 
 def exact_m(p):
-    return p in exac
+    return p in exac or p.replace('lib', '') in exac
 
 def fuzzy_m(words):
     inter = frozenset(tok(words)) & good
 
     if len(inter) > 1:
         w = len(inter) / len(words)
+
+        #print(f'{w} {inter} {words}')
 
         if w > 0.3:
             return True
