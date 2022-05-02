@@ -12,6 +12,7 @@ lib/ffmpeg
 lib/openal
 lib/wayland
 lib/mesa/gl
+lib/placebo
 lib/mesa/egl
 lib/xkbcommon
 lib/drivers/3d

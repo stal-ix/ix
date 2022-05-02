@@ -12,8 +12,18 @@ bld/python
 
 {% block bld_libs %}
 lib/c
+lib/vulkan/spirv/tools
+lib/vulkan/spirv/headers
 {% endblock %}
 
 {% block patch %}
-sed -e 's|.*add_link_options.*||' -i CMakeLists.txt
+sed -e 's|.*add_link_options.*||' -e 's|.*set.*ENABLE_OPT.*||' -i CMakeLists.txt
+{% endblock %}
+
+{% block cmake_flags %}
+ENABLE_OPT=ON
+{% endblock %}
+
+{% block env_lib %}
+export CPPFLAGS="-DENABLE_OPT=1 \${CPPFLAGS}"
 {% endblock %}
