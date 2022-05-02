@@ -9,6 +9,7 @@ sha:32ded8c13b6398310fa27767378193dc1db6d78b006b70dbcbd3123a1445e746
 lib/c
 lib/lua
 lib/ass
+lib/zimg
 lib/mu/js
 lib/ffmpeg
 lib/openal
