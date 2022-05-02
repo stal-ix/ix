@@ -81,5 +81,7 @@ for x in json.loads(fetch().decode()):
     if ':' in p:
         continue
 
-    if exact_m(p) or fuzzy_m(p + ' '.join(x['versions'])):
-        print(f'{p} {x}')
+    v = ' '.join(x['versions'])
+
+    if exact_m(p) or fuzzy_m(p + v):
+        print(f'{p} {v}')
