@@ -1,10 +1,8 @@
 {% extends '//mix/cmake.sh' %}
 
-{# broken now #}
-
 {% block fetch %}
-https://github.com/microsoft/msquic/archive/refs/tags/v2.0.2.tar.gz
-sha:4df9e591561795a47165237dcfb670f4f585e38fb2667320b6019c8ad34b28ed
+https://github.com/microsoft/msquic/archive/refs/tags/v2.0.3.tar.gz
+sha:35fc9ce9715e787cfc51c5b02afa96711dc4cfe4dcffa1b26fadd9ea76e972c4
 {% endblock %}
 
 {% block lib_deps %}
