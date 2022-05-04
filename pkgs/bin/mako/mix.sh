@@ -21,4 +21,5 @@ bin/wayland/protocols
 
 {% block run_deps %}
 bin/jq
+bin/basuctl
 {% endblock %}
