@@ -18,3 +18,9 @@ bin/wayland/protocols
 zshcompletiondir=${out}/share/zsh
 fishcompletiondir=${out}/share/fish
 {% endblock %}
+
+{% block patch %}
+find . -type f | while read l; do
+    sed -e 's|/tmp/|/var/tmp/|' -i ${l}
+done
+{% endblock %}
