@@ -1,8 +1,8 @@
 {% extends '//mix/autorehell.sh' %}
 
 {% block fetch %}
-https://github.com/wolfSSL/wolfssl/archive/refs/tags/v5.0.0-stable.tar.gz
-d2044f756db0853dd2da0a90dd42ab62
+https://github.com/wolfSSL/wolfssl/archive/refs/tags/v5.3.0-stable.tar.gz
+sha:1a3bb310dc01d3e73d9ad91b6ea8249d081016f8eef4ae8f21d3421f91ef1de9
 {% endblock %}
 
 {% block conf_ver %}
