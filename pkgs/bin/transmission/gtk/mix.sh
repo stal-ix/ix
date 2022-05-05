@@ -8,6 +8,10 @@ lib/appindicator
 {{super()}}
 {% endblock %}
 
+{% block run_deps %}
+bin/transmission
+{% endblock %}
+
 {% block cmake_flags %}
 {{super()}}
 ENABLE_GTK=ON
@@ -31,5 +35,13 @@ cp pt.po pt_PT.po
 
 {% block install %}
 {{super()}}
+
+cd ${out}
+
+mv bin old
+mkdir bin
+mv old/transmission-gtk bin/
+rm -r old
+
 {{hooks.wrap_xdg_binary('transmission-gtk')}}
 {% endblock %}
