@@ -11,6 +11,7 @@ lib/linux
 lib/fcft/3
 lib/tllist
 lib/pixman
+lib/notify
 lib/wayland
 lib/freetype
 lib/xkbcommon

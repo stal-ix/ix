@@ -2,13 +2,19 @@
 
 {% block bld_libs %}
 lib/gtk/3
+lib/notify
 lib/rsvg/dl
+lib/appindicator
 {{super()}}
 {% endblock %}
 
 {% block cmake_flags %}
 {{super()}}
 ENABLE_GTK=ON
+{% endblock %}
+
+{% block build_flags %}
+shut_up
 {% endblock %}
 
 {% block bld_tool %}
