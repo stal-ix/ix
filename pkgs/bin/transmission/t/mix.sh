@@ -15,7 +15,7 @@ lib/event
 lib/natpmp
 lib/deflate
 lib/openssl
-lib/miniupnpc
+lib/mini/upnpc
 {% endblock %}
 
 {% block cmake_flags %}

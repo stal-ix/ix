@@ -4,6 +4,8 @@
 {% include 'ver.sh' %}
 {% endblock %}
 
+{% block ninja_threads %}10{% endblock %}
+
 {% block bld_libs %}
 lib/c
 lib/z
@@ -17,7 +19,7 @@ lib/openal
 lib/tg/owt
 lib/tg/voip
 lib/openssl
-lib/minizip
+lib/mini/zip
 lib/dispatch
 lib/range/v3
 lib/ffmpeg/4

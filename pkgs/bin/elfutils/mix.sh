@@ -6,7 +6,7 @@ lib/curl
 lib/linux
 lib/sqlite3
 lib/archive
-lib/microhttpd
+lib/micro/httpd
 {{super()}}
 {% endblock %}
 
