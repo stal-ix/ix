@@ -38,6 +38,10 @@ extract 1 ${src}/std-jthread*
 {% endblock %}
 
 {% block patch %}
+base64 -d << EOF > external/std-jthread/src/stop_source.cpp
+{% include 'stop_source.cpp/base64' %}
+EOF
+
 sed -e 's|-fsanitize||' -i CMakeLists.txt
 
 find . -type f | while read l; do
@@ -58,8 +62,8 @@ ENABLE_SYSTEMD=OFF
 {% endblock %}
 
 {% block setup %}
-export CPPFLAGS="-I${PWD}/external/std-format/polyfills/format ${CPPFLAGS}"
-export CPPFLAGS="-I${PWD}/external/std-jthread/polyfills/jthread ${CPPFLAGS}"
+#export CPPFLAGS="-I${PWD}/external/std-format/polyfills/format ${CPPFLAGS}"
+#export CPPFLAGS="-I${PWD}/external/std-jthread/polyfills/jthread ${CPPFLAGS}"
 export CXXFLAGS="-include strstream -include sstream -include sys/time.h ${CXXFLAGS}"
 {% endblock %}
 

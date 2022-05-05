@@ -1,5 +1,5 @@
 {% extends '//mix/py.py' %}
 
-{% block env_lib %}
+{% block env %}
 export OPTFLAGS="-DNDEBUG ${OPTFLAGS}"
 {% endblock %}

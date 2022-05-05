@@ -1,5 +1,5 @@
 {% extends '//mix/py.py' %}
 
-{% block env_lib %}
+{% block env %}
 export OPTFLAGS="-flto=thin -Wl,--thinlto-jobs=8 ${OPTFLAGS}"
 {% endblock %}

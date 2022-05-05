@@ -13,4 +13,5 @@ lib/fmt/8
 
 {% block cmake_flags %}
 SPDLOG_FMT_EXTERNAL=ON
+SPDLOG_BUILD_EXAMPLE=OFF
 {% endblock %}
