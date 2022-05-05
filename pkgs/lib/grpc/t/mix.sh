@@ -1,8 +1,8 @@
 {% extends '//mix/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/grpc/grpc/archive/refs/tags/v1.45.2.tar.gz
-sha:e18b16f7976aab9a36c14c38180f042bb0fd196b75c9fd6a20a2b5f934876ad6
+https://github.com/grpc/grpc/archive/refs/tags/v1.46.0.tar.gz
+sha:67423a4cd706ce16a88d1549297023f0f9f0d695a96dd684adc21e67b021f9bc
 {% endblock %}
 
 {% block lib_deps %}
@@ -28,4 +28,8 @@ gRPC_RE2_PROVIDER=package
 gRPC_SSL_PROVIDER=package
 gRPC_PROTOBUF_PROVIDER=package
 gRPC_BUILD_CSHARP_EXT=OFF
+{% endblock %}
+
+{% block setup %}
+export CXXFLAGS="-std=c++20 ${CXXFLAGS}"
 {% endblock %}
