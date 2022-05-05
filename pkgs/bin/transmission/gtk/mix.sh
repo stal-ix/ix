@@ -28,3 +28,8 @@ sed -e 's|.*glib-compile-resources executable.*|SET(GLIB_COMPILE_RESOURCES_EXECU
 cd po
 cp pt.po pt_PT.po
 {% endblock %}
+
+{% block install %}
+{{super()}}
+{{hooks.wrap_xdg_binary('transmission-gtk')}}
+{% endblock %}
