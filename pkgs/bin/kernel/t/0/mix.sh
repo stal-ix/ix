@@ -7,8 +7,8 @@ lib/openssl/1
 {% endblock %}
 
 {% block c_compiler %}
-bin/gcc/tc(for_target={{host.gnu.three}})
-bin/gcc/tc(for_target={{target.gnu.three}})
+bin/gcc(for_target={{host.gnu.three}})
+bin/gcc(for_target={{target.gnu.three}})
 {% endblock %}
 
 {% block bld_tool %}
