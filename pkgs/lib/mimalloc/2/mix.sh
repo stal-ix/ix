@@ -20,6 +20,11 @@ MI_BUILD_SHARED=OFF
 MI_BUILD_TESTS=OFF
 {% endblock %}
 
+{% block cpp_defines %}
+{{super()}}
+MI_STAT=0
+{% endblock %}
+
 {% block install %}
 {{super()}}
 cd ${out}/lib

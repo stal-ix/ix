@@ -21,6 +21,8 @@ aux/ca-bundle
 {% block setup %}
 export AR=ar
 export RANLIB=ranlib
+# fix unknown miscompile with clang
+export OPTFLAGS="${OPTFLAGS} -O1"
 {% endblock %}
 
 {% block make_install_target %}
