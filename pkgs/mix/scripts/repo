@@ -39,10 +39,13 @@ def it_words():
         for p in c:
             pp = os.path.join(a, p)
 
-            with open(pp) as ff:
-                for l in ff.read().split('\n'):
-                    if 'https:' in l:
-                        yield {'t': 'f', 'v': l.strip()}
+            try:
+                with open(pp) as ff:
+                    for l in ff.read().split('\n'):
+                        if 'https:' in l:
+                            yield {'t': 'f', 'v': l.strip()}
+            except UnicodeDecodeError as e:
+                print(f'skip {pp} cause of {e}')
 
 toks = collections.defaultdict(int)
 exac = set()
