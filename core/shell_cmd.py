@@ -1,4 +1,5 @@
 import os
+import sys
 import zipfile
 import tarfile
 import functools
@@ -80,6 +81,8 @@ def iter_meth():
 
 
 def fetch_url(url, out):
+    print(f'fetch {url} into {out}', file=sys.stderr)
+
     for meth in iter_meth():
         try:
             return meth(url, out)
