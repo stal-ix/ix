@@ -1,8 +1,8 @@
 {% extends '//mix/autorehell.sh' %}
 
 {% block fetch %}
-http://xmlsoft.org/sources/libxslt-1.1.34.tar.gz
-db8765c8d076f1b6caafd9f2542a304a
+https://gitlab.gnome.org/GNOME/libxslt/-/archive/v1.1.35/libxslt-v1.1.35.tar.bz2
+sha:2da1c2954f8a4e844f9d4e9110d1b31d45e7a5f8e9edc61823984861505e6e5d
 {% endblock %}
 
 {% block lib_deps %}
