@@ -5,5 +5,5 @@ bin/ananicy/cpp
 {% endblock %}
 
 {% block run_data %}
-bin/ananicy/rules
+bin/ananicy/good
 {% endblock %}

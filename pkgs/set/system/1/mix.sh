@@ -11,6 +11,7 @@ bin/openresolv
 bin/acpid/runit
 bin/seatd/runit
 bin/dhcpcd/runit
+bin/ananicy/runit
 bin/mingetty/runit
 bin/sched/trashdir(delay=100)
 

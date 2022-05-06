@@ -15,6 +15,7 @@ lib/c++
 lib/fmt/8
 lib/linux
 lib/spdlog
+lib/gnushim
 lib/execinfo
 lib/json/nlohmann
 {% endblock %}
@@ -52,6 +53,13 @@ cat external/std-jthread/src/*.cpp >> src/main.cpp
 
 sed -e 's|uint|unsigned|g' -i src/main.cpp
 sed -e 's|uint|unsigned|g' -i src/platform/linux/process.cpp
+
+find . -type f -name '*.cpp' | while read l; do
+    sed -e 's|std::jthread|new std::jthread|' \
+        -e 's|worker_thread = ||'     \
+        -e 's|this->event_thread =||' \
+        -i ${l}
+done
 {% endblock %}
 
 {% block cmake_flags %}
@@ -62,8 +70,8 @@ ENABLE_SYSTEMD=OFF
 {% endblock %}
 
 {% block setup %}
-#export CPPFLAGS="-I${PWD}/external/std-format/polyfills/format ${CPPFLAGS}"
-#export CPPFLAGS="-I${PWD}/external/std-jthread/polyfills/jthread ${CPPFLAGS}"
+export CPPFLAGS="-I${PWD}/external/std-format/polyfills/format ${CPPFLAGS}"
+export CPPFLAGS="-I${PWD}/external/std-jthread/polyfills/jthread ${CPPFLAGS}"
 export CXXFLAGS="-include strstream -include sstream -include sys/time.h ${CXXFLAGS}"
 {% endblock %}
 
