@@ -1,8 +1,8 @@
 {% extends '//mix/make.sh' %}
 
 {% block fetch %}
-https://storage.yandexcloud.net/mix-cache/unrarsrc-6.0.6.tar.gz
-4c89e2e5ecfe72a9d96478fb80f38c34
+https://www.rarlab.com/rar/unrarsrc-6.1.7.tar.gz
+sha:de75b6136958173fdfc530d38a0145b72342cf0d3842bf7bb120d336602d88ed
 {% endblock %}
 
 {% block bld_libs %}
