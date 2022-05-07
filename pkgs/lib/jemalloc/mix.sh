@@ -1,8 +1,8 @@
 {% extends '//mix/autorehell.sh' %}
 
 {% block fetch %}
-https://github.com/jemalloc/jemalloc/archive/refs/tags/5.2.1.tar.gz
-0d627898d4aa58d09ef5d3fdde17dacb
+https://github.com/jemalloc/jemalloc/archive/refs/tags/5.3.0.tar.gz
+sha:ef6f74fd45e95ee4ef7f9e19ebe5b075ca6b7fbe0140612b2a161abafb7ee179
 {% endblock %}
 
 {% block autoreconf %}
