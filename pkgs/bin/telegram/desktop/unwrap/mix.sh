@@ -43,8 +43,10 @@ shut_up
 {% endblock %}
 
 {% block setup %}
-export CPPFLAGS="-I${PWD} -I${PWD}/Telegram/ThirdParty/libtgvoip ${CPPFLAGS}"
+export CPPFLAGS="-isystem ${GCC_INCLUDES} -I${PWD} -I${PWD}/Telegram/ThirdParty/libtgvoip ${CPPFLAGS}"
 export ALLCFLAGS="${CPPFLAGS} ${CFLAGS} ${CXXFLAGS}"
+export LDFLAGS=$(echo ${LDFLAGS} | sed -e 's|-nostdlib++|-nostdlib|')
+export CXXFLAGS="-std=c++20 ${CXXFLAGS}"
 {% endblock %}
 
 {% block cmake_flags %}
@@ -66,22 +68,13 @@ QT_ADDITIONAL_PACKAGES_PREFIX_PATH=${CMAKE_PREFIX_PATH}
 
 {% block bld_tool %}
 bld/qt/6
-bin/gcc/11
 bld/python
-bin/binutils
 bld/pkg/config
 bin/wayland/protocols
 {% endblock %}
 
-{% block setup_tools %}
-CC=$(which clang++)
-
-cat << EOF > clang++
-#!$(which sh)
-${CC} "\${@}" || ${bin_gcc_11}/bin/g++ "\${@}" ${ALLCFLAGS}
-EOF
-
-chmod +x clang++
+{% block c_compiler %}
+bin/gcc(for_target={{target.gnu.three}})
 {% endblock %}
 
 {% block patch %}
@@ -113,10 +106,3 @@ sed -e 's|.*DESKTOP_APP_USE_PACKAGED.*||' \
     -e 's|.*NimfInput.*||' \
     -i cmake/external/qt/qt_static_plugins/qt_static_plugins.cpp
 {% endblock %}
-
-{% block configure %}
-{{super()}}
-find ${tmp} -type f | while read l; do
-    sed -e 's|-Xclang||g' -e 's|-include-pch.*hxx.pch||' -i "${l}"
-done
-{% endblock%}

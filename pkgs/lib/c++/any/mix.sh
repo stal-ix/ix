@@ -71,6 +71,9 @@ export CPPFLAGS="-isystem ${PWD}/clang/lib/Headers ${CPPFLAGS}"
 {% block patch %}
 {{super()}}
 
+# broken in gcc
+sed -e 's|.*define _LIBCPP_ABI_ALTERNATE_STRING_LAYOUT.*||' -i libcxx/include/__config
+
 cat libcxx/CMakeLists.txt \
     | grep -v 'is reserved for use by libc' \
     > _ && mv _ libcxx/CMakeLists.txt
