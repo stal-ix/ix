@@ -22,17 +22,17 @@ E="-Wl,--end-group"
 
 cat << EOF > cc
 #!$(which sh)
-exec "$(which {{target.gnu.three}}${CC})" "\$@" ${BD} ${S} ${A} ${E}
+exec "$(which {{target.gnu.three}}${CC})" ${CTRFLAGS} "\$@" ${BD} ${S} ${A} ${E}
 EOF
 
 cat << EOF > c++
 #!$(which sh)
-exec "$(which {{target.gnu.three}}${CXX})" "\$@" ${BD} ${S} ${B} ${E}
+exec "$(which {{target.gnu.three}}${CXX})" ${CTRFLAGS} "\$@" ${BD} ${S} ${B} ${E}
 EOF
 
 cat << EOF > preproc
 #!$(which sh)
-exec "$(which {{target.gnu.three}}${CPP})" "\$@" ${CPPFLAGS}
+exec "$(which {{target.gnu.three}}${CPP})" ${CTRFLAGS} "\$@" ${CPPFLAGS}
 EOF
 
 chmod +x cc c++ preproc

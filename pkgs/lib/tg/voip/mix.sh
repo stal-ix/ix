@@ -1,7 +1,7 @@
 {% extends '//mix/cmake.sh' %}
 
 {% block fetch %}
-{% include '//bin/telegram/desktop/unwrap/ver.sh' %}
+{% include '//bin/telegram/desktop/unwrap/t/ver.sh' %}
 {% endblock %}
 
 {% block bld_libs %}

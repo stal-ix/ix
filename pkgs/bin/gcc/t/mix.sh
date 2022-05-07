@@ -85,6 +85,10 @@ export CXX_FOR_TARGET=${CXX}
 echo 'FIXME(pg): proper(shared/) headers location'
 {% endblock %}
 
+{% block patch %}
+sed -e 's|.*linker input file unused because linking not done.*|(void)(|' -i gcc/gcc.cc
+{% endblock %}
+
 {% block env %}
 export GCC_INCLUDES="$(echo ${out}/lib/gcc/*/*/include)"
 {% endblock %}
