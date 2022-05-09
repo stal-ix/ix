@@ -33,7 +33,7 @@ lib/qt/6/wayland
 lib/xiph/rnnoise
 lib/mesa/glesv2/dl
 lib/qt/6/imageformats
-lib/{{allocator}}/trim(delay=1,bytes=10000000)
+lib/{{allocator}}/trim(delay=3,bytes=30000000)
 {% endblock %}
 
 {% block build_flags %}
@@ -89,6 +89,9 @@ cat - Telegram/SourceFiles/settings/settings_main.cpp << EOF > _
 EOF
 
 mv _ Telegram/SourceFiles/settings/settings_main.cpp
+
+sed -e 's|webrtc::InitPipewireStubs()|true|' \
+    -i Telegram/lib_webrtc/webrtc/webrtc_media_devices.cpp
 
 >Telegram/lib_ui/ui/text/qtextitemint.cpp
 
