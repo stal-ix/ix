@@ -72,11 +72,6 @@ EOF
 mkdir -p ${out}/fix
 cat << EOF > "${out}/fix/check-{{name.replace('/', '-')}}.sh"
 #!/usr/bin/env sh
-if test -f {{name}}; then
-    echo '{{name}} found'
-else
-    echo 'can not find {{name}}, install providing package into realm'
-    exit 1
-fi
+test -f {{name}} || (echo 'install package with {{name}}'; exit 1)
 EOF
 {% endmacro %}
