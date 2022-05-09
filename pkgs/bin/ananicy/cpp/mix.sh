@@ -21,21 +21,9 @@ lib/json/nlohmann
 {% endblock %}
 
 {% block unpack %}
-mkdir src; cd src
-
-(
-extract 1 ${src}/anan*
-
-(
-cd external/std-format
-extract 1 ${src}/std-format*
-)
-
-(
-cd external; mkdir std-jthread; cd std-jthread
-extract 1 ${src}/std-jthread*
-)
-)
+mkdir src; cd src; extract 1 ${src}/anan*
+(cd external/std-format; extract 1 ${src}/std-format*)
+(cd external; mkdir std-jthread; cd std-jthread; extract 1 ${src}/std-jthread*)
 {% endblock %}
 
 {% block patch %}
