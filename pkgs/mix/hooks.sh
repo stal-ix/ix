@@ -16,7 +16,7 @@ cd ${out}
 
 mkdir -p fix; cd fix
 
-cat << EOF > {{name}}.sh
+cat << EOF > "wrap-xdg-{{name}}.sh"
 mv bin/{{name}} bin/{{name}}-real
 cp -L bin/{{name}}-real bin/{{name}}
 sed -e "s|__realm__|\${PWD}|" -i bin/{{name}}
@@ -65,5 +65,18 @@ Description: stub pc file for {{name}}
 Version: {{version}}
 Libs:
 Cflags:
+EOF
+{% endmacro %}
+
+{% macro check_exists(name) %}
+mkdir -p ${out}/fix
+cat << EOF > "${out}/fix/check-{{name.replace('/', '-')}}.sh"
+#!/usr/bin/env sh
+if test -f {{name}}; then
+    echo '{{name}} found'
+else
+    echo 'can not find {{name}}, install providing package into realm'
+    exit 1
+fi
 EOF
 {% endmacro %}
