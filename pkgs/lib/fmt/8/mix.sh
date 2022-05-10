@@ -1,4 +1,4 @@
-{% extends '//lib/fmt/mix.sh' %}
+{% extends '//lib/fmt/7/mix.sh' %}
 
 {% block fetch %}
 https://github.com/fmtlib/fmt/archive/refs/tags/8.1.1.tar.gz

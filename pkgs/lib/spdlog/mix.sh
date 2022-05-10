@@ -8,7 +8,7 @@ sha:697f91700237dbae2326b90469be32b876b2b44888302afbc7aceb68bcfe8224
 {% block lib_deps %}
 lib/c
 lib/c++
-lib/fmt/8
+lib/fmt
 {% endblock %}
 
 {% block cmake_flags %}
