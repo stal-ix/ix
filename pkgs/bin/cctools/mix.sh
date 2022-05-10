@@ -19,7 +19,7 @@ bld/autohell
 {% endblock %}
 
 {% block std_box %}
-bld/bootbox
+bld/boot/box
 {% endblock %}
 
 {% block unpack %}

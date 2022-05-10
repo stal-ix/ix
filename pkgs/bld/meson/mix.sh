@@ -2,5 +2,5 @@
 
 {% block run_deps %}
 bld/python
-bin/meson/better(std_box=bld/bootbox)
+bin/meson/better(std_box=bld/boot/box)
 {% endblock %}

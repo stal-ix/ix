@@ -2,5 +2,5 @@
 
 {% block run_deps %}
 bld/python
-bin/glib/codegen(std_box=bld/bootbox,intl_ver=no)
+bin/glib/codegen(std_box=bld/boot/box,intl_ver=no)
 {% endblock %}

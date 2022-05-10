@@ -1,5 +1,5 @@
 {% extends '//mix/hub.sh' %}
 
 {% block run_deps %}
-bin/texinfo(std_box=bld/bootbox,intl_ver=no,curses=no)
+bin/texinfo(std_box=bld/boot/box,intl_ver=no,curses=no)
 {% endblock %}

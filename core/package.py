@@ -176,9 +176,6 @@ class Package:
         k = self.flags['kind']
         n = self.norm_name
 
-        if n.startswith('boot/'):
-            return canon_name(n)
-
         try:
             n = n[n.index('/') + 1:]
         except ValueError:
