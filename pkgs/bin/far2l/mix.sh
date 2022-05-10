@@ -50,10 +50,6 @@ ${PWD}
 USEWX=no
 {% endblock %}
 
-{% block build_flags %}
-wrap_cc
-{% endblock %}
-
 {% block patch %}
 cat << EOF | dl_stubs >> far2l/src/init.c
 c GetPathTranslationPrefix GetPathTranslationPrefix
