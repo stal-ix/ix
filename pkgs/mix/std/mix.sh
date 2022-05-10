@@ -15,7 +15,7 @@
 {% endblock %}
 
 {% block step_setup %}
-export bld=${PWD};
+export bld=${PWD}
 {% include 'setup.sh' %}
 {% endblock %}
 

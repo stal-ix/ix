@@ -62,7 +62,7 @@ export TMPDIR=${PWD}/tmp
 {% block sh_script %}
 {% endblock %}
 # euc
-)
+) < /dev/null
 
 {% block epilogue %}
 {% block chmod_ro %}

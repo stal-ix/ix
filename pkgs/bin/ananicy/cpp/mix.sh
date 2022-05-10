@@ -57,9 +57,12 @@ USE_EXTERNAL_FMTLIB=ON
 ENABLE_SYSTEMD=OFF
 {% endblock %}
 
+{% block cpp_includes %}
+${PWD}/external/std-format/polyfills/format
+${PWD}/external/std-jthread/polyfills/jthread
+{% endblock %}
+
 {% block setup %}
-export CPPFLAGS="-I${PWD}/external/std-format/polyfills/format ${CPPFLAGS}"
-export CPPFLAGS="-I${PWD}/external/std-jthread/polyfills/jthread ${CPPFLAGS}"
 export CXXFLAGS="-include strstream -include sstream -include sys/time.h ${CXXFLAGS}"
 {% endblock %}
 

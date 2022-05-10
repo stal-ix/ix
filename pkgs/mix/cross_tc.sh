@@ -16,7 +16,7 @@ source_env "${MIX_T_DIR}"
 
 # yep, THE ONLY place for this shit
 pushd ${bld}
-{% block setup %}
+{% block setup_target %}
 {% endblock %}
 popd
 

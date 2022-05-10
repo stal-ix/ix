@@ -20,5 +20,5 @@ bld/help2man
 {% endblock %}
 
 {% block test %}
-${out}/bin/m4
+${out}/bin/m4 --help
 {% endblock %}

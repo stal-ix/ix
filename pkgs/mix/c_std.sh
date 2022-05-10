@@ -1,59 +1,8 @@
-{% extends 'wrapped.sh' %}
-
-{% block std_env %}
-  {% if std_env %}
-    {{std_env}}
-  {% else %}
-    {% block c_compiler %}
-      bld/compiler
-      {% block no_mold %}
-        bld/linker
-      {% endblock %}
-    {% endblock %}
-    {% if std_box %}
-      {{std_box}}
-    {% else %}
-      {{super()}}
-    {% endif %}
-  {% endif %}
-{% endblock %}
+{% extends 'c_std_pre.sh' %}
 
 {% block functions %}
 {{super()}}
 
-setup_tc_here() {
-    setup_compiler
-    setup_ar
-}
-
-setup_tc() {
-    mkpushd ${1}
-    setup_tc_here
-    popd
-}
-{% endblock %}
-
-{% block script_init_env %}
-{{super()}}
-export CFLAGS=
-export LDFLAGS=
-export CTRFLAGS=
-export OPTFLAGS=
-export CPPFLAGS=
-export CXXFLAGS=
-export CONLYFLAGS=
-{% endblock %}
-
-{% block setup_compiler %}
-if command -v ls; then
-    {% include 'cross_tc.sh' %}
-else
-    source_env "${MIX_T_DIR}"
-    setup_tc_here
-fi
-{% endblock %}
-
-{% block step_setup %}
 {% set cpp_flags %}
   {% if 'shut_up' in build_flags  %}
     -w
@@ -90,9 +39,16 @@ fi
   {% endfor %}
 {% endset %}
 
+setup_target_env() {
+    echo 'setup target env'
 {% for f in mix.parse_list(cpp_flags) %}
-export CPPFLAGS="{{f}} ${CPPFLAGS}"
+    export CPPFLAGS="{{f}} ${CPPFLAGS}"
 {% endfor %}
+{% block setup %}
+{% endblock %}
+}
+{% endblock %}
 
-{{super()}}
+{% block setup_target %}
+setup_target_env
 {% endblock %}
