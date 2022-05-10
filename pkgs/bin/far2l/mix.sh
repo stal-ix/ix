@@ -1,8 +1,8 @@
 {% extends '//mix/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/elfmz/far2l/archive/b246b95118c0d7c6d10b4e94ec9b3bc7e24c3a7c.zip
-8fb228fd04476f5143163b9cca27366e
+https://github.com/elfmz/far2l/archive/refs/tags/v_2.4.0.tar.gz
+sha:a595f7f2b48aaf6cfd61c1539bb52207f8f985576ee928915f54b675666e9f88
 {% endblock %}
 
 {% block bld_libs %}
@@ -47,4 +47,8 @@ ${PWD}
 
 {% block cmake_flags %}
 USEWX=no
+{% endblock %}
+
+{% block build_flags %}
+wrap_cc
 {% endblock %}
