@@ -1,8 +1,8 @@
 {% extends '//mix/autorehell.sh' %}
 
 {% block fetch %}
-https://github.com/Genivia/ugrep/archive/refs/tags/v3.7.10.tar.gz
-sha:733503055e309e83898a403481d92357fc3b02d4642acdb51026dd2dd44e0477
+https://github.com/Genivia/ugrep/archive/refs/tags/v3.7.11.tar.gz
+sha:47cf3eee0a6eb759a5ee53b8e0e09d5d1843c5597cfd83e9c88f1b29e6873b2b
 {% endblock %}
 
 {% block bld_libs %}

@@ -8,7 +8,7 @@ sha:0ea380517f303cc5d4f4d2db9ed6c77ad48467e2af82dc46026999442c367009
 {% block bld_libs %}
 lib/c
 lib/c++
-lib/fmt/7
+lib/fmt
 lib/magic
 lib/tvision
 lib/clipboard
