@@ -23,10 +23,6 @@ bin/bison/3/6
 bin/busybox/bc
 {% endblock %}
 
-{% block shell %}
-bin/bash/lite/sh
-{% endblock %}
-
 {% block configure %}
 make HOSTCC="${HOST_CC} -D__always_inline=__inline__ -w" mrproper
 cat << EOF > .config
