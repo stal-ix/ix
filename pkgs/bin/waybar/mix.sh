@@ -9,8 +9,8 @@ sha:1f3f6692de99567c43939e7ad2e96f8c6a5ef83f760ad6f77865e46a3c6811d6
 lib/c
 lib/nl
 lib/c++
-lib/fmt
 lib/udev
+lib/fmt/8
 lib/evdev
 lib/sndio
 lib/spdlog
