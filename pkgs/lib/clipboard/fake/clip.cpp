@@ -6,7 +6,7 @@
 #include <map>
 #include <string>
 
-extern "C" {
+namespace {
     struct Clip {
         Clip(clipboard_opts* opts)
             : Opts_(opts)
@@ -20,14 +20,14 @@ extern "C" {
         }
 
         bool hasOwnership(clipboard_mode mode) {
-            return true;
+            return Dat_.find(mode) != Dat_.end();
         }
 
         char* text(clipboard_mode mode, int* length) {
             if (auto it = Dat_.find(mode); it != Dat_.end()) {
                 *length = it->second.size();
 
-                return strdup((char*)it->second.data());
+                return strdup(it->second.c_str());
             }
 
             return nullptr;
@@ -39,10 +39,13 @@ extern "C" {
             return true;
         }
 
+    private:
         std::map<clipboard_mode, std::string> Dat_;
         clipboard_opts* Opts_;
     };
+}
 
+extern "C" {
     clipboard_c* clipboard_new(clipboard_opts* cb_opts) {
         return (clipboard_c*)(new Clip(cb_opts));
     }
