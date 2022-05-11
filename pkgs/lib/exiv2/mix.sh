@@ -19,3 +19,10 @@ shut_up
 {% block cmake_flags %}
 EXIV2_BUILD_SAMPLES=OFF
 {% endblock %}
+
+{% block install1 %}
+{{super()}}
+find ${out}/include -name '*.hpp' | while read l; do
+    sed -e 's|std::auto_ptr|auto_ptr|' -i ${l}
+done
+{% endblock %}
