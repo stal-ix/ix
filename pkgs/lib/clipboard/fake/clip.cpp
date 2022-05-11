@@ -47,7 +47,7 @@ namespace {
 
 extern "C" {
     clipboard_c* clipboard_new(clipboard_opts* cb_opts) {
-        return (clipboard_c*)(new Clip(cb_opts));
+        return (clipboard_c*)new Clip(cb_opts);
     }
 
     void clipboard_free(clipboard_c* cb) {
