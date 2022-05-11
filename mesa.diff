@@ -1,0 +1,144 @@
+diff --git a/pkgs/lib/glslang/t/mix.sh b/pkgs/lib/glslang/t/mix.sh
+index 0ead5aaf..6acb2af3 100644
+--- a/pkgs/lib/glslang/t/mix.sh
++++ b/pkgs/lib/glslang/t/mix.sh
+@@ -1,8 +1,11 @@
+ {% extends '//mix/cmake.sh' %}
+ 
+ {% block fetch %}
+-https://github.com/KhronosGroup/glslang/archive/refs/tags/sdk-1.3.204.1.tar.gz
+-sha:c520156f1927c2c3909094f414fc0c68996aaf9809dc5ef1b22a520b762fe9a7
++#https://github.com/KhronosGroup/glslang/archive/refs/tags/sdk-1.3.204.1.tar.gz
++#sha:c520156f1927c2c3909094f414fc0c68996aaf9809dc5ef1b22a520b762fe9a7
++
++https://github.com/KhronosGroup/glslang/archive/refs/tags/sdk-1.3.211.0.tar.gz
++sha:4335eec84b87d64130e860dad5d6dc1f722277d4e0ff5027153e2743628cb221
+ {% endblock %}
+ 
+ {% block bld_tool %}
+diff --git a/pkgs/lib/mesa/drivers/t/valve/mix.sh b/pkgs/lib/mesa/drivers/t/valve/mix.sh
+index 39abdfb7..b145e4a4 100644
+--- a/pkgs/lib/mesa/drivers/t/valve/mix.sh
++++ b/pkgs/lib/mesa/drivers/t/valve/mix.sh
+@@ -16,6 +16,8 @@ gallium-drivers={{','.join((opengl or '').split('|'))}}
+ {{super()}}
+ )
+ 
++sed -e 's|.*include.*xcb.*||' -i src/gallium/frontends/dri/kopper.c
++
+ (
+ cd src/gallium/frontends/dri
+ 
+diff --git a/pkgs/lib/mesa/t/mix.sh b/pkgs/lib/mesa/t/mix.sh
+index 47bb6388..1e71a511 100644
+--- a/pkgs/lib/mesa/t/mix.sh
++++ b/pkgs/lib/mesa/t/mix.sh
+@@ -3,8 +3,12 @@
+ {% block fetch %}
+ #https://gitlab.freedesktop.org/mesa/mesa/-/archive/mesa-22.0.2/mesa-mesa-22.0.2.tar.bz2
+ #sha:600f4ae87b9c9d5ce6aed5ebaf776549fdb304bceea97a82122b5e4e6b94e4cf
+-https://gitlab.freedesktop.org/mesa/mesa/-/archive/mesa-22.0.1/mesa-mesa-22.0.1.tar.bz2
+-sha:fb38c479ddba37276064116e34ab72d95435148acc9fc81662786bb0c2c1c8b7
++
++#https://gitlab.freedesktop.org/mesa/mesa/-/archive/mesa-22.0.1/mesa-mesa-22.0.1.tar.bz2
++#sha:fb38c479ddba37276064116e34ab72d95435148acc9fc81662786bb0c2c1c8b7
++
++https://gitlab.freedesktop.org/mesa/mesa/-/archive/mesa-22.1.0-rc5/mesa-mesa-22.1.0-rc5.tar.bz2
++sha:87e0bc0050ec8ac58c63c73ccc8296cbbb24d5ba42b170c9bccd9f765bacb75d
+ {% endblock %}
+ 
+ {% block lib_deps %}
+diff --git a/pkgs/lib/vulkan/headers/mix.sh b/pkgs/lib/vulkan/headers/mix.sh
+index 39a83a76..a7ac2bb3 100644
+--- a/pkgs/lib/vulkan/headers/mix.sh
++++ b/pkgs/lib/vulkan/headers/mix.sh
+@@ -1,8 +1,11 @@
+ {% extends '//mix/cmake.sh' %}
+ 
+ {% block fetch %}
+-https://github.com/KhronosGroup/Vulkan-Headers/archive/refs/tags/sdk-1.3.204.1.tar.gz
+-sha:9c4d33f71467c915749fbf48c0c3a8ee7833f15babf398e3463cd88791fb592e
++#https://github.com/KhronosGroup/Vulkan-Headers/archive/refs/tags/sdk-1.3.204.1.tar.gz
++#sha:9c4d33f71467c915749fbf48c0c3a8ee7833f15babf398e3463cd88791fb592e
++
++https://github.com/KhronosGroup/Vulkan-Headers/archive/refs/tags/sdk-1.3.211.0.tar.gz
++sha:c464bcdc24b7541ac4378a270617a23d4d92699679a73f95dc4b9e1da924810a
+ {% endblock %}
+ 
+ {% block lib_deps %}
+diff --git a/pkgs/lib/vulkan/loader/t/mix.sh b/pkgs/lib/vulkan/loader/t/mix.sh
+index 2656cddd..dde0c071 100644
+--- a/pkgs/lib/vulkan/loader/t/mix.sh
++++ b/pkgs/lib/vulkan/loader/t/mix.sh
+@@ -1,8 +1,10 @@
+ {% extends '//mix/cmake.sh' %}
+ 
+ {% block fetch %}
+-https://github.com/KhronosGroup/Vulkan-Loader/archive/refs/tags/sdk-1.3.204.1.tar.gz
+-sha:5dcd42b564804f4c01891ddd429a4a5028113c4cf39b44256689e8f543773134
++#https://github.com/KhronosGroup/Vulkan-Loader/archive/refs/tags/sdk-1.3.204.1.tar.gz
++#sha:5dcd42b564804f4c01891ddd429a4a5028113c4cf39b44256689e8f543773134
++https://github.com/KhronosGroup/Vulkan-Loader/archive/refs/tags/sdk-1.3.211.0.tar.gz
++sha:bb42a8e0dda103f98bddb9ae2311ae8e8e988588b600a1114b74a1ba3a0843f4
+ {% endblock %}
+ 
+ {% block lib_deps %}
+diff --git a/pkgs/lib/vulkan/spirv/headers/mix.sh b/pkgs/lib/vulkan/spirv/headers/mix.sh
+index 659c1a0b..98f9b56d 100644
+--- a/pkgs/lib/vulkan/spirv/headers/mix.sh
++++ b/pkgs/lib/vulkan/spirv/headers/mix.sh
+@@ -1,8 +1,10 @@
+ {% extends '//mix/cmake.sh' %}
+ 
+ {% block fetch %}
+-https://github.com/KhronosGroup/SPIRV-Headers/archive/refs/tags/sdk-1.3.204.1.tar.gz
+-sha:262864053968c217d45b24b89044a7736a32361894743dd6cfe788df258c746c
++#https://github.com/KhronosGroup/SPIRV-Headers/archive/refs/tags/sdk-1.3.204.1.tar.gz
++#sha:262864053968c217d45b24b89044a7736a32361894743dd6cfe788df258c746c
++https://github.com/KhronosGroup/SPIRV-Headers/archive/refs/tags/sdk-1.3.211.0.tar.gz
++sha:30a78e61bd812c75e09fdc7a319af206b1044536326bc3e85fea818376a12568
+ {% endblock %}
+ 
+ {% block bld_tool %}
+diff --git a/pkgs/lib/vulkan/spirv/tools/mix.sh b/pkgs/lib/vulkan/spirv/tools/mix.sh
+index a21dfa4e..cb2b52cc 100644
+--- a/pkgs/lib/vulkan/spirv/tools/mix.sh
++++ b/pkgs/lib/vulkan/spirv/tools/mix.sh
+@@ -1,10 +1,16 @@
+ {% extends '//mix/cmake.sh' %}
+ 
+ {% block fetch %}
+-https://github.com/KhronosGroup/SPIRV-Tools/archive/refs/tags/v2022.1.tar.gz
+-sha:844c0f590a0ab9237cec947e27cfc75bd14f39a68fc3b37d8f1b9e1b21490a58
+-https://github.com/KhronosGroup/SPIRV-Headers/archive/refs/tags/sdk-1.3.204.1.tar.gz
+-sha:262864053968c217d45b24b89044a7736a32361894743dd6cfe788df258c746c
++#https://github.com/KhronosGroup/SPIRV-Tools/archive/refs/tags/v2022.1.tar.gz
++#sha:844c0f590a0ab9237cec947e27cfc75bd14f39a68fc3b37d8f1b9e1b21490a58
++#https://github.com/KhronosGroup/SPIRV-Headers/archive/refs/tags/sdk-1.3.204.1.tar.gz
++#sha:262864053968c217d45b24b89044a7736a32361894743dd6cfe788df258c746c
++
++https://github.com/KhronosGroup/SPIRV-Tools/archive/refs/tags/v2022.2.tar.gz
++sha:909fc7e68049dca611ca2d57828883a86f503b0353ff78bc594eddc65eb882b9
++
++https://github.com/KhronosGroup/SPIRV-Headers/archive/refs/tags/sdk-1.3.211.0.tar.gz
++sha:30a78e61bd812c75e09fdc7a319af206b1044536326bc3e85fea818376a12568
+ {% endblock %}
+ 
+ {% block unpack %}
+diff --git a/pkgs/lib/vulkan/validation/mix.sh b/pkgs/lib/vulkan/validation/mix.sh
+index 283e49f6..666f500a 100644
+--- a/pkgs/lib/vulkan/validation/mix.sh
++++ b/pkgs/lib/vulkan/validation/mix.sh
+@@ -1,8 +1,10 @@
+ {% extends '//mix/cmake.sh' %}
+ 
+ {% block fetch %}
+-https://github.com/KhronosGroup/Vulkan-ValidationLayers/archive/refs/tags/sdk-1.3.204.1.tar.gz
+-sha:a5e658a4c1f504ae38488acdbe2ab2799e2ae4b626104d76776f1c24b079f341
++#https://github.com/KhronosGroup/Vulkan-ValidationLayers/archive/refs/tags/sdk-1.3.204.1.tar.gz
++#sha:a5e658a4c1f504ae38488acdbe2ab2799e2ae4b626104d76776f1c24b079f341
++https://github.com/KhronosGroup/Vulkan-ValidationLayers/archive/refs/tags/sdk-1.3.211.0.tar.gz
++sha:
+ {% endblock %}
+ 
+ {% block lib_deps %}
