@@ -14,10 +14,6 @@ lib/z/adler
 cd contrib/minizip
 {% endblock %}
 
-{% block patch %}
-cat - crypt.h << EOF > _
-#include "zconf.h"
-EOF
-
-mv _ crypt.h
+{% block setup %}
+export CPPFLAGS="-include zconf.h ${CPPFLAGS}"
 {% endblock %}
