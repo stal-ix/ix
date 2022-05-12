@@ -7,17 +7,21 @@ https://deb.debian.org/debian/pool/main/u/unzip/unzip_6.0-26.debian.tar.xz
 e2bf7537e1ca821f6059ee84e7ae76a5
 {% endblock %}
 
-{% block unpack_chdir %}
+{% block unpack %}
+mkdir src; cd src
+for x in ${src}/*; do
+    bsdtar xf ${x}
+done
 cd unzip*
+{% endblock %}
+
+{% block setup %}
+export CPPFLAGS="-include time.h ${CPPFLAGS}"
 {% endblock %}
 
 {% block patch %}
 for i in ../debian/patches/*.patch; do
     cat "${i}" | patch -p1
-done
-
-for f in fileio.c list.c zipinfo.c; do
-    (echo '#include <time.h>'; cat ${f}) > _ && mv _ ${f}
 done
 {% endblock %}
 
