@@ -14,7 +14,7 @@ EOF
 
 cat << EOF > run
 #!/bin/sh
-exec srv dbus dbus-daemon --config-file=${PWD}/system.conf --nopidfile --syslog --nofork
+exec srv dbus chrt -f 10 dbus-daemon --config-file=${PWD}/system.conf --nopidfile --syslog --nofork
 EOF
 
 chmod +x run
