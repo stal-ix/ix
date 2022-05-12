@@ -1,2 +1,2 @@
-https://git.kernel.org/torvalds/t/linux-5.18-rc3.tar.gz
-sha:b518d107c6727ebd74eb73b1fa36fbf5aee4e16ec39b1e3a0208ebb5fdd1127e
+https://git.kernel.org/torvalds/t/linux-5.18-rc6.tar.gz
+sha:1ee5c56028c0a0cd566d0bf3e0e92b0d1693ae5460755729e3f683573d4e80f8
