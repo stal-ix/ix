@@ -1,8 +1,8 @@
 {% extends '//mix/autorehell.sh' %}
 
 {% block fetch %}
-https://github.com/libass/libass/archive/refs/tags/0.15.2.tar.gz
-sha:f96b7ce35f2b0bf430eb71c4c9dd5d8f0abf52499e08490d346608c837c98299
+https://github.com/libass/libass/archive/refs/tags/0.16.0.tar.gz
+sha:246091cf034b097dbe362c72170e6996f8d2c19ffe664ce6768ec44eb9ca5c1c
 {% endblock %}
 
 {% block lib_deps %}
