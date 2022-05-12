@@ -21,7 +21,6 @@ bin/wayland/protocols
 
 {% block cmake_flags %}
 BUILD_WITH_QT6=ON
-QT_ADDITIONAL_PACKAGES_PREFIX_PATH=${CMAKE_PREFIX_PATH}
 EXCLUDE_DEPRECATED_BEFORE_AND_AT=5.91.0
 {% endblock %}
 

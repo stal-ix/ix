@@ -52,3 +52,7 @@ QT_FEATURE_openssl_linked=ON
 cd ${out}/lib
 llvm-ar q libqtregister.a $(find -type f -name '*.o')
 {% endblock %}
+
+{% block env %}
+export CMFLAGS="-DQT_DISABLE_NO_DEFAULT_PATH_IN_QT_PACKAGES=ON \${CMFLAGS}"
+{% endblock %}

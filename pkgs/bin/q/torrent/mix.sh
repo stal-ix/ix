@@ -25,6 +25,5 @@ bld/qt/6/tools
 
 {% block cmake_flags %}
 QT6=ON
-QT_ADDITIONAL_PACKAGES_PREFIX_PATH=${CMAKE_PREFIX_PATH}
 Qt6LinguistTools_DIR=${Qt6LinguistTools_DIR}
 {% endblock %}
