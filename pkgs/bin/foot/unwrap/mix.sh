@@ -16,7 +16,7 @@ lib/wayland
 lib/freetype
 lib/xkbcommon
 lib/fontconfig
-lib/{{allocator}}/trim(delay=1,bytes=1000000)
+lib/{{allocator}}/trim(delay=3,bytes=1000000)
 {% endblock %}
 
 {% block bld_tool %}

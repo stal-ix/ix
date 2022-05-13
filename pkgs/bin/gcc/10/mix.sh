@@ -1,5 +1,10 @@
 {% extends '//mix/autohell.sh' %}
 
+{% block fetch %}
+https://ftp.gnu.org/gnu/gcc/gcc-10.3.0/gcc-10.3.0.tar.xz
+sha:64f404c1a650f27fc33da242e1f2df54952e3963a49e06e73f6940f3223ac344
+{% endblock %}
+
 {% block bld_libs %}
 lib/z
 lib/c
@@ -75,7 +80,6 @@ export STRIP_FOR_TARGET={{f}}strip
 
 {% block setup_compiler %}
 {{super()}}
-
 # TODO(pg): provide real for-target compiler
 export CC_FOR_TARGET=${CC}
 export CXX_FOR_TARGET=${CXX}
@@ -83,10 +87,6 @@ export CXX_FOR_TARGET=${CXX}
 
 {% block postinstall %}
 echo 'FIXME(pg): proper(shared/) headers location'
-{% endblock %}
-
-{% block patch %}
-sed -e 's|.*linker input file unused because linking not done.*|(void)(|' -i gcc/gcc.cc
 {% endblock %}
 
 {% block env %}

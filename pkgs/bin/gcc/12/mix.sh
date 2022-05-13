@@ -1,4 +1,4 @@
-{% extends '//bin/gcc/t/mix.sh' %}
+{% extends '//bin/gcc/11/mix.sh' %}
 
 {% block fetch %}
 http://mirror.koddos.net/gcc/releases/gcc-12.1.0/gcc-12.1.0.tar.xz
