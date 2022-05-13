@@ -1,8 +1,8 @@
 {% extends '//mix/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/uclouvain/openjpeg/archive/refs/tags/v2.4.0.tar.gz
-4d388298335947367e91f1d100468af1
+https://github.com/uclouvain/openjpeg/archive/refs/tags/v2.5.0.tar.gz
+sha:0333806d6adecc6f7a91243b2b839ff4d2053823634d4f6ed7a59bc87409122a
 {% endblock %}
 
 {% block lib_deps %}
@@ -19,7 +19,7 @@ BUILD_PKGCONFIG_FILES=ON
 
 cd ${out}/lib
 
-ln -s openjpeg-2.4 cmake
+ln -s openjpeg* cmake
 
 echo > cmake/OpenJPEGTargets.cmake
 
@@ -31,5 +31,5 @@ done
 {% endblock %}
 
 {% block env_lib %}
-export CPPFLAGS="-I${out}/include/openjpeg-2.4 \${CPPFLAGS}"
+export CPPFLAGS="-I$(echo ${out}/include/openjpeg*) \${CPPFLAGS}"
 {% endblock %}
