@@ -24,7 +24,8 @@ BUILD_WITH_QT6=ON
 EXCLUDE_DEPRECATED_BEFORE_AND_AT=5.91.0
 {% endblock %}
 
-{% block postinstall %}
+{% block install %}
+{{super()}}
 sed -e 's|Qt6::Concurrent|Qt6::Gui|' -i ${out}/lib/cmake/KF5Wayland/KF5WaylandTargets.cmake
 {% endblock %}
 

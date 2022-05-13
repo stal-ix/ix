@@ -25,5 +25,9 @@ bld/qt/6/tools
 
 {% block cmake_flags %}
 QT6=ON
-Qt6LinguistTools_DIR=${Qt6LinguistTools_DIR}
+{% endblock %}
+
+{% block install %}
+{{super()}}
+{{hooks.wrap_xdg_binary('qbittorrent')}}
 {% endblock %}
