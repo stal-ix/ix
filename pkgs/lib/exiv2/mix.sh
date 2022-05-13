@@ -20,9 +20,9 @@ shut_up
 EXIV2_BUILD_SAMPLES=OFF
 {% endblock %}
 
-{% block install1 %}
+{% block install %}
 {{super()}}
-find ${out}/include -name '*.hpp' | while read l; do
-    sed -e 's|std::auto_ptr|auto_ptr|' -i ${l}
-done
+cat << EOF >> ${out}/include/exiv2/config.h
+#include <__memory/auto_ptr.h>
+EOF
 {% endblock %}

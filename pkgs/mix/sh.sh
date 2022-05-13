@@ -75,7 +75,9 @@ if command -v find; then
 fi
 {% endblock %}
 
+{% if not skipsrc %}
 fast_rm ${tmp}
+{% endif %}
 {% endblock %}
 {% endblock %}
 
