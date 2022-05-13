@@ -21,6 +21,7 @@ lib/mpfr
 
 {% block bld_tool %}
 bld/tar
+bld/perl
 bld/flex
 bld/gzip
 bld/bison
@@ -83,6 +84,15 @@ export STRIP_FOR_TARGET={{f}}strip
 # TODO(pg): provide real for-target compiler
 export CC_FOR_TARGET=${CC}
 export CXX_FOR_TARGET=${CXX}
+{% endblock %}
+
+{% block setup_tools %}
+cat << EOF > objdump
+#!$(which sh)
+exec llvm-objdump "\${@}"
+EOF
+
+chmod +x objdump
 {% endblock %}
 
 {% block postinstall %}
