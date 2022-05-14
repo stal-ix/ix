@@ -75,7 +75,7 @@ def execute_cmd(c):
 
     threading.Thread(target=send_in, daemon=True).start()
 
-    while chunk := prc.stdout.read(200):
+    while chunk := prc.stdout.read1():
         try:
             chunk = chunk.decode()
         except Exception:
@@ -162,37 +162,6 @@ class NodeBase:
                     pass
 
 
-class Node1(NodeBase):
-    def on_chunk(self, txt):
-        for c in txt:
-            if c == '\n':
-                self.t = self.t[-100:] + [self.l]
-                self.l = ''
-            else:
-                self.l += c
-
-    def fmt(self):
-        d = ''
-
-        while True:
-            try:
-                self.on_chunk(self.q.get_nowait())
-            except queue.Empty:
-                break
-
-        d += col(str(self.i), color='y')
-        d += ' | '
-        d += col(str(time.time() - self.s)[:5], color='r')
-        d += ' | '
-        d += col(self.o, color='b')
-        d += '\n'
-
-        if self.t:
-            d += '\n'.join(x[:100] for x in self.t[-10:]) + '\n'
-
-        return d
-
-
 class Executor:
     def __init__(self, nodes):
         self.s = {
@@ -240,7 +209,41 @@ class Executor:
                 self.f[node.i] = node
                 await asyncio.to_thread(node.execute)
             finally:
-                del self.f[node.i]
+                self.f.pop(node.i).complete()
+
+
+class Node1(NodeBase):
+    def complete(self):
+        pass
+
+    def on_chunk(self, txt):
+        for c in txt:
+            if c == '\n':
+                self.t = self.t[-100:] + [self.l]
+                self.l = ''
+            else:
+                self.l += c
+
+    def fmt(self):
+        d = ''
+
+        while True:
+            try:
+                self.on_chunk(self.q.get_nowait())
+            except queue.Empty:
+                break
+
+        d += col(str(self.i), color='y')
+        d += ' | '
+        d += col(str(time.time() - self.s)[:5], color='r')
+        d += ' | '
+        d += col(self.o, color='b')
+        d += '\n'
+
+        if self.t:
+            d += '\n'.join(x[:100] for x in self.t[-10:]) + '\n'
+
+        return d
 
 
 class Executor1(Executor):
@@ -263,6 +266,15 @@ class Executor1(Executor):
             await asyncio.sleep(0.1)
 
 
+class Node2(NodeBase):
+    def __init__(self, q, i, n):
+        NodeBase.__init__(self, q, i, n)
+        sys.stderr.write(col(f'ENTER {self.o}', color='b') + '\n')
+
+    def complete(self):
+        sys.stderr.write(col(f'LEAVE {self.o}', color='g') + '\n')
+
+
 class Executor2(Executor):
     def __init__(self, nodes):
         self.q = queue.Queue()
@@ -270,11 +282,23 @@ class Executor2(Executor):
         threading.Thread(target=self.repaint, daemon=True).start()
 
     def create_node(self, n):
-        return NodeBase(self.q, self.next_i(), n)
+        return Node2(self.q, self.next_i(), n)
 
     def repaint(self):
         while True:
-            sys.stderr.write(self.q.get())
+            t = ''.join(self.iter_next(0.1))
+
+            if t:
+                sys.stderr.write(t)
+
+    def iter_next(self, tout):
+        time.sleep(tout)
+
+        try:
+            while True:
+                yield self.q.get_nowait()
+        except queue.Empty:
+            pass
 
 
 async def arun(g):
