@@ -60,7 +60,7 @@ class RealmCtx:
         return list(flt(self.calc_all_runtime_depends()))
 
     def calc_all_build_depends(self):
-        pkgs = [{'name': x} for x in ('bld/python', 'bld/sh', 'bld/box/gnu')]
+        pkgs = [{'name': x} for x in ('bld/python', 'bld/sh', 'bld/box')]
 
         for p in self.mngr.load_packages(pkgs):
             yield p

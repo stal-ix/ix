@@ -3,7 +3,7 @@ bld/sh
 {% endblock %}
 
 {% block box %}
-bld/box/gnu
+bld/box
 {% endblock %}
 
 {% block decompressor %}
