@@ -1,19 +1,18 @@
 import os
 import sys
 import json
+import time
+import queue
 import shutil
 import asyncio
 import beautysh
+import threading
 import itertools
 import subprocess
 
 import core.error as ce
 import core.cache as cc
 import core.utils as cu
-
-
-def bsh(s):
-    return beautysh.Beautify().beautify_string(s)[0]
 
 
 COL = {
@@ -24,59 +23,63 @@ COL = {
 }
 
 
-def log(v, color='r', bright=False):
+ESC = chr(27)
+
+
+def col(v, color='r', bright=False):
     n = COL[color]
 
     if bright:
         n += 60
 
-    print(f'\x1b[{n}m{v}\x1b[0m', file=sys.stderr)
+    return f'{ESC}[{n}m{v}{ESC}[0m'
+
+
+def bsh(s):
+    return beautysh.Beautify().beautify_string(s)[0]
+
+
+def fmt_err(descr, env, stdin, out):
+    yield '____|' + descr
+
+    for k, v in env.items():
+        yield f'env | export {k}={v}'
+
+    show = False
+
+    for i, l in enumerate(bsh(stdin).strip().splitlines()):
+        if l.strip():
+            ss = str(i + 1)
+
+            yield ss + ' ' * (4 - len(ss)) + '| ' + l
+
+    yield '----| Script output:'
+    yield out[-1000:]
 
 
 def execute_cmd(c):
     env = c.get('env', {})
+    sin = c.get('stdin', '')
+    arg = c['args']
 
-    try:
-        descr = env['out']
-    except KeyError:
-        descr = str(c)
+    prc = subprocess.Popen(arg, env=env, shell=False, stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
 
-    stdin = c.get('stdin', '')
+    def send_in():
+        if sin:
+            prc.stdin.write(sin.encode())
 
-    try:
+        prc.stdin.close()
+
+    threading.Thread(target=send_in, daemon=True).start()
+
+    while chunk := prc.stdout.read(100):
         try:
-            log(f'ENTER {descr}', color='b')
+            yield chunk.decode()
+        except Exception:
+            yield str(chunk)
 
-            return subprocess.run(c['args'], input=stdin.encode() or None, env=env, check=True)
-        finally:
-            log(f'LEAVE {descr}', color='b')
-    except Exception as e:
-        def iter_lines():
-            yield '____|' + descr
-
-            for k, v in env.items():
-                yield f'env | export {k}={v}'
-
-            show = False
-
-            for i, l in enumerate(bsh(stdin).strip().splitlines()):
-                if '# suc' in l:
-                    show = True
-                    continue
-
-                if '# euc' in l:
-                    show = False
-                    continue
-
-                if True or show:
-                    if l.strip():
-                        ss = str(i + 1)
-
-                        yield ss + ' ' * (4 - len(ss)) + '| ' + l
-
-        script = '\n'.join(iter_lines()).strip()
-
-        raise ce.Error(f'{descr} failed', context=script, exception=e)
+    if rc := prc.wait():
+        raise Exception(f'process failed with {rc}')
 
 
 def iter_in(c):
@@ -127,6 +130,58 @@ def group_by_out(nodes):
     return by_out
 
 
+class Node:
+    def __init__(self, i, n):
+        self.s = time.time()
+        self.o = ' '.join(iter_out(n))
+        self.n = n
+        self.i = i
+        self.q = queue.Queue()
+        self.t = []
+        self.l = ''
+
+    def execute(self):
+        for c in iter_cmd(self.n):
+            for chunk in execute_cmd(c):
+                self.q.put(chunk)
+
+        cu.sync()
+
+        for o in iter_out(self.n):
+            if not os.path.isfile(o):
+                with open(o, 'w') as f:
+                    pass
+
+    def on_chunk(self, txt):
+        for c in txt:
+            if c == '\n':
+                self.t = self.t[-100:] + [self.l]
+                self.l = ''
+            else:
+                self.l += c
+
+    def fmt(self):
+        d = ''
+
+        while True:
+            try:
+                self.on_chunk(self.q.get_nowait())
+            except queue.Empty:
+                break
+
+        d += col(str(self.i), color='y')
+        d += ' | '
+        d += col(str(time.time() - self.s)[:5], color='r')
+        d += ' | '
+        d += col(self.o, color='b')
+        d += '\n'
+
+        if self.t:
+            d += '\n'.join(x[:100] for x in self.t[-10:]) + '\n'
+
+        return d
+
+
 class Executor:
     def __init__(self, nodes):
         self.s = {
@@ -134,22 +189,16 @@ class Executor:
             'other': asyncio.Semaphore(8),
         }
 
+        self.i = 0
         self.o = group_by_out(nodes)
-        self.l = []
-        self.f = set()
-        self.store_cache = False
+        self.f = {}
+
 
     async def visit_lst(self, l):
         await gather(self.visit_node(self.o[n]) for n in l)
 
     async def visit_all(self, l):
         await self.visit_lst(l)
-
-        for x in self.l:
-            await x
-
-    def in_fly(self):
-        log(f'INFLY {self.f}', color='y')
 
     async def visit_node(self, n):
         async with n['l']:
@@ -161,71 +210,48 @@ class Executor:
     async def do_visit(self, n):
         await self.visit_node_impl(n)
 
-        for o in iter_out(n):
-            log(f'TOUCH {o}', color='g')
+    def next_i(self):
+        r = self.i
+
+        self.i += 1
+
+        return r
 
     async def visit_node_impl(self, n):
         if all(os.path.isfile(x) for x in iter_out(n)):
             return
 
-        cached = n.get('cache', False)
-
-        if cached:
-            if await asyncio.to_thread(self.load, n):
-                return
-
         await self.visit_lst(iter_in(n))
 
         async with self.s[n['pool']]:
-            for o in iter_out(n):
-                self.f.add(o)
-                self.in_fly()
+            node = Node(self.next_i(), n)
 
-            await asyncio.to_thread(self.execute_node, n)
+            try:
+                self.f[node.i] = node
+                await asyncio.to_thread(node.execute)
+            finally:
+                del self.f[node.i]
 
-            for o in iter_out(n):
-                self.f.remove(o)
-                self.in_fly()
 
-        if cached and self.store_cache:
-            self.l.append(asyncio.create_task(asyncio.to_thread(self.store, n)))
+class ExecutorGUI(Executor):
+    def __init__(self, nodes):
+        Executor.__init__(self, nodes)
+        asyncio.create_task(self.repaint())
 
-    def execute_node(self, n):
-        for c in iter_cmd(n):
-            execute_cmd(c)
+    def fmt(self):
+        yield f'{ESC}[2J{ESC}[H'
 
-        cu.sync()
+        for v in sorted(self.f.values(), key=lambda x: x.i):
+            yield v.fmt()
 
-        for o in iter_out(n):
-            if not os.path.isfile(o):
-                with open(o, 'w') as f:
-                    pass
-
-    def load(self, n):
-        return False
-
-        try:
-            for d in n['out_dir']:
-                cc.restore_dir(d)
-
-            return True
-        except Exception as e:
-            if '404' not in str(e):
-                raise e
-
-        return False
-
-    def store(self, n):
-        try:
-            for d in n['out_dir']:
-                cc.store_dir(d)
-        except Exception as e:
-            if 'AWS_' not in str(e):
-                raise e
+    async def repaint(self):
+        while True:
+            print(''.join(self.fmt()).strip(), file=sys.stderr)
+            await asyncio.sleep(0.1)
 
 
 async def arun(g):
-    await Executor(g['nodes']).visit_all(g['targets'])
+    await ExecutorGUI(g['nodes']).visit_all(g['targets'])
 
 
 def execute(g):
