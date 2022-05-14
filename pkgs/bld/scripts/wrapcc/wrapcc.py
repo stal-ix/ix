@@ -21,6 +21,9 @@ def flt_args():
 
 args = list(flt_args())
 
+if '-r' in args:
+    args = ['ld.lld'] + args[1:]
+
 def flt_objs():
     for x in args:
         if x.endswith('.o'):
