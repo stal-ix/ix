@@ -4,6 +4,7 @@
 #include <string.h>
 
 #include <map>
+#include <mutex>
 #include <string>
 
 namespace {
@@ -14,16 +15,22 @@ namespace {
         }
 
         void clear(clipboard_mode mode) {
+            std::lock_guard<std::mutex> guard(Lock_);
+
             if (auto it = Dat_.find(mode); it != Dat_.end()) {
                 it->second.clear();
             }
         }
 
         bool hasOwnership(clipboard_mode mode) {
+            std::lock_guard<std::mutex> guard(Lock_);
+
             return Dat_.find(mode) != Dat_.end();
         }
 
         char* text(clipboard_mode mode, int* length) {
+            std::lock_guard<std::mutex> guard(Lock_);
+
             if (auto it = Dat_.find(mode); it != Dat_.end()) {
                 *length = it->second.size();
 
@@ -34,12 +41,15 @@ namespace {
         }
 
         bool setText(clipboard_mode mode, const char* str, size_t length) {
+            std::lock_guard<std::mutex> guard(Lock_);
+
             Dat_[mode].assign(str, length);
 
             return true;
         }
 
     private:
+        std::mutex Lock_;
         std::map<clipboard_mode, std::string> Dat_;
         clipboard_opts* Opts_;
     };
