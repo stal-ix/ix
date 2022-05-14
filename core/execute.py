@@ -39,11 +39,13 @@ def bsh(s):
     return beautysh.Beautify().beautify_string(s)[0]
 
 
-def fmt_err(descr, env, stdin, out):
-    yield '____|' + descr
+def fmt_err(args, env, stdin, out):
+    descr = ' '.join(args)
+
+    yield f'____| {descr}:'
 
     for k, v in env.items():
-        yield f'env | export {k}={v}'
+        yield f'    | export {k}={v}'
 
     show = False
 
@@ -53,14 +55,15 @@ def fmt_err(descr, env, stdin, out):
 
             yield ss + ' ' * (4 - len(ss)) + '| ' + l
 
-    yield '----| Script output:'
-    yield out[-1000:]
+    yield '----|-------------------Script output:'
+    yield out[-2000:]
 
 
 def execute_cmd(c):
     env = c.get('env', {})
     sin = c.get('stdin', '')
     arg = c['args']
+    log = []
 
     prc = subprocess.Popen(arg, env=env, shell=False, stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
 
@@ -72,14 +75,20 @@ def execute_cmd(c):
 
     threading.Thread(target=send_in, daemon=True).start()
 
-    while chunk := prc.stdout.read(100):
+    while chunk := prc.stdout.read(200):
         try:
-            yield chunk.decode()
+            chunk = chunk.decode()
         except Exception:
-            yield str(chunk)
+            chunk = str(chunk)
+
+        log.append(chunk)
+
+        yield chunk
 
     if rc := prc.wait():
-        raise Exception(f'process failed with {rc}')
+        context = '\n'.join(fmt_err(arg, env, sin, ''.join(log))).strip()
+
+        raise ce.Error(f'process failed with retcode {rc}', context=context)
 
 
 def iter_in(c):
