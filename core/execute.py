@@ -130,13 +130,13 @@ def group_by_out(nodes):
     return by_out
 
 
-class Node:
-    def __init__(self, i, n):
+class NodeBase:
+    def __init__(self, q, i, n):
         self.s = time.time()
         self.o = ' '.join(iter_out(n))
         self.n = n
         self.i = i
-        self.q = queue.Queue()
+        self.q = q
         self.t = []
         self.l = ''
 
@@ -152,6 +152,8 @@ class Node:
                 with open(o, 'w') as f:
                     pass
 
+
+class Node1(NodeBase):
     def on_chunk(self, txt):
         for c in txt:
             if c == '\n':
@@ -193,7 +195,6 @@ class Executor:
         self.o = group_by_out(nodes)
         self.f = {}
 
-
     async def visit_lst(self, l):
         await gather(self.visit_node(self.o[n]) for n in l)
 
@@ -224,7 +225,7 @@ class Executor:
         await self.visit_lst(iter_in(n))
 
         async with self.s[n['pool']]:
-            node = Node(self.next_i(), n)
+            node = self.create_node(n)
 
             try:
                 self.f[node.i] = node
@@ -233,10 +234,13 @@ class Executor:
                 del self.f[node.i]
 
 
-class ExecutorGUI(Executor):
+class Executor1(Executor):
     def __init__(self, nodes):
         Executor.__init__(self, nodes)
         asyncio.create_task(self.repaint())
+
+    def create_node(self, n):
+        return Node1(queue.Queue(), self.next_i(), n)
 
     def fmt(self):
         yield f'{ESC}[2J{ESC}[H'
@@ -250,8 +254,22 @@ class ExecutorGUI(Executor):
             await asyncio.sleep(0.1)
 
 
+class Executor2(Executor):
+    def __init__(self, nodes):
+        self.q = queue.Queue()
+        Executor.__init__(self, nodes)
+        threading.Thread(target=self.repaint, daemon=True).start()
+
+    def create_node(self, n):
+        return NodeBase(self.q, self.next_i(), n)
+
+    def repaint(self):
+        while True:
+            sys.stderr.write(self.q.get())
+
+
 async def arun(g):
-    await ExecutorGUI(g['nodes']).visit_all(g['targets'])
+    await Executor2(g['nodes']).visit_all(g['targets'])
 
 
 def execute(g):
