@@ -4,6 +4,11 @@
 :
 {% endblock %}
 
+{% block lib_deps %}
+lib/c
+lib/c++
+{% endblock %}
+
 {% block patch %}
 sed -e 's|.*libclipboard-config.h.*||' -i include/libclipboard.h
 {% endblock %}
