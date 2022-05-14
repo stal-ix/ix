@@ -1,8 +1,8 @@
 {% extends '//mix/cmake.sh' %}
 
 {% block fetch %}
-https://download.kde.org/stable/frameworks/5.93/extra-cmake-modules-5.93.0.tar.xz
-sha:093dea7b11647bc5f74e6971d47ef15b5c410cba2b4620acae00f008d5480b21
+https://download.kde.org/stable/frameworks/5.94/extra-cmake-modules-5.94.0.tar.xz
+sha:23548a8ce2b998cfa675fc00112bf93914ee25194f0bfdf832d283c8d678d279
 {% endblock %}
 
 {% block postinstall %}
