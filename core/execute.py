@@ -4,6 +4,7 @@ import json
 import shutil
 import asyncio
 import beautysh
+import threading
 import itertools
 import subprocess
 
@@ -23,60 +24,79 @@ COL = {
     'b': 34,
 }
 
-
-def log(v, color='r', bright=False):
+def col(v, color='r', bright=False):
     n = COL[color]
 
     if bright:
         n += 60
 
-    print(f'\x1b[{n}m{v}\x1b[0m', file=sys.stderr)
+    return f'\x1b[{n}m{v}\x1b[0m'
+
+
+def log(*args, **kwargs):
+    print(col(*args, **kwargs), file=sys.stderr)
+
+
+def fmt_err(args, script, output, env):
+    yield '____| ' + ' '.join(args)
+
+    for k, v in env.items():
+        yield f'    | export {k}={v}'
+
+    for i, l in enumerate(bsh(script).strip().splitlines()):
+        if l.strip():
+            ss = str(i + 1)
+
+            yield ss + ' ' * (4 - len(ss)) + '| ' + l
+
+    if output:
+        yield '____|_______________________________________'
+
+        for l in output.split('\n')[-100:]:
+            yield col(l, color='r')
+
+        yield '____________________________________________'
+
+
+def async_send(proc, stdin):
+    def f():
+        if stdin:
+            proc.stdin.write(stdin.encode())
+
+        proc.stdin.close()
+
+    threading.Thread(target=f, daemon=True).start()
 
 
 def execute_cmd(c):
     env = c.get('env', {})
-
-    try:
-        descr = env['out']
-    except KeyError:
-        descr = str(c)
-
     stdin = c.get('stdin', '')
+    args = c['args']
+    descr = env['out']
+    output = ''
+
+    log(f'ENTER {descr}', color='b')
 
     try:
-        try:
-            log(f'ENTER {descr}', color='b')
+        with subprocess.Popen(args, env=env, stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.STDOUT) as proc:
+            async_send(proc, stdin)
 
-            return subprocess.run(c['args'], input=stdin.encode() or None, env=env, check=True)
-        finally:
-            log(f'LEAVE {descr}', color='b')
+            while chunk := proc.stdout.read1().decode():
+                sys.stdout.write(chunk)
+                output += chunk
+
+                if len(output) > 20000:
+                    output = output[10000:]
+
+            if rc := proc.wait():
+                raise Exception(f'process failed with retcode {rc}')
     except Exception as e:
-        def iter_lines():
-            yield '____|' + descr
+        output = '\n'.join((output, str(e)))
+        script = '\n'.join(fmt_err(args, stdin, output, env)).strip()
 
-            for k, v in env.items():
-                yield f'env | export {k}={v}'
-
-            show = False
-
-            for i, l in enumerate(bsh(stdin).strip().splitlines()):
-                if '# suc' in l:
-                    show = True
-                    continue
-
-                if '# euc' in l:
-                    show = False
-                    continue
-
-                if True or show:
-                    if l.strip():
-                        ss = str(i + 1)
-
-                        yield ss + ' ' * (4 - len(ss)) + '| ' + l
-
-        script = '\n'.join(iter_lines()).strip()
-
-        raise ce.Error(f'{descr} failed', context=script, exception=e)
+        raise ce.Error(f'{descr} failed', context=script)
+    finally:
+        log(f'LEAVE {descr}', color='b')
 
 
 def iter_in(c):
