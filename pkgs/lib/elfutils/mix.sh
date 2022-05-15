@@ -10,3 +10,7 @@ sed -e 's|error.*;|abort();|' -i libdw/libdw_alloc.c
 --disable-libdebuginfod
 --disable-debuginfod
 {% endblock %}
+
+{% block env %}
+export CPPFLAGS="-I${out}/include/elfutils \${CPPFLAGS}"
+{% endblock %}
