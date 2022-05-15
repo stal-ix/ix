@@ -1,7 +1,7 @@
 {% extends '//mix/autohell.sh' %}
 
 {% block fetch %}
-{% include '//bin/binutils/ver.sh' %}
+{% include '//bin/binutils/t/ver.sh' %}
 {% endblock %}
 
 {% block unpack %}

@@ -37,9 +37,5 @@ EOF
 
 {% block make_flags %}
 LIBIBERTY=
-{% endblock %}
-
-{% block install %}
-{{super()}}
-rm -rf ${out}/*-*
+#target_alias=
 {% endblock %}
