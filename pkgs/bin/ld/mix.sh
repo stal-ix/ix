@@ -23,3 +23,12 @@ bld/bison
 rm -rf ${out}/lib/bfd*
 echo 'keep ldscripts intact'
 {% endblock %}
+
+{% block install %}
+{{super()}}
+{% if bin_prefix %}
+cd ${out}/bin
+mkdir {{bin_prefix}}
+ln -s ../{{bin_prefix}}ld {{bin_prefix}}/ld
+{% endif %}
+{% endblock %}

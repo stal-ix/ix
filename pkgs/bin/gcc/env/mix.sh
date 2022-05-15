@@ -2,15 +2,11 @@
 
 {% block env %}
 setup_compiler() {
-mkdir xx
-
-ln -s $(which {{target.gnu.three}}ld) xx/ld
-
 export CC=gcc
 export CPP=cpp
 export CXX=g++
 
-BD="-B${PWD}/xx -B$(dirname $(which {{target.gnu.three}}as))/{{target.gnu.three}}"
+BD="-B$(dirname $(which {{target.gnu.three}}ld))/{{target.gnu.three}}/ -B$(dirname $(which {{target.gnu.three}}as))/{{target.gnu.three}}"
 
 C="-fdiagnostics-color -nostdinc -nostdlib ${CPPFLAGS} ${CFLAGS} ${LDFLAGS} ${OPTFLAGS}"
 
