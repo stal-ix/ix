@@ -14,10 +14,6 @@ lib/curses
 lib/oniguruma
 {% endblock %}
 
-{% block bld_libs %}
-lib/readline
-{% endblock %}
-
 {% block bld_tool %}
 aux/terminfo/config
 {% endblock %}
@@ -27,7 +23,6 @@ aux/terminfo
 {% endblock %}
 
 {% block configure_flags %}
---with-readline=gnu
 --without-png
 {% endblock %}
 
