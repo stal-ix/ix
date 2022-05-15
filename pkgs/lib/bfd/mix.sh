@@ -18,3 +18,8 @@ lib/c
 --enable-targets=all
 --enable-deterministic-archives
 {% endblock %}
+
+{% block install %}
+{{super()}}
+cp bfdver.h ${out}/include/
+{% endblock %}

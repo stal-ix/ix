@@ -14,15 +14,12 @@ bld/bison
 lib/c
 lib/z
 lib/c++
+lib/bfd
 lib/iberty
 {% endblock %}
 
-{% block configure_flags %}
-{{super()}}
---enable-gold=yes
-{% endblock %}
-
 {% block patch %}
-{{super()}}
-cp bfdver.h ../bfd/
+find . -type f | while read l; do
+    sed -e 's|../bfd/bfdver.h|bfdver.h|g' -i ${l}
+done
 {% endblock %}
