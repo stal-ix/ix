@@ -82,7 +82,7 @@ def execute_cmd(c):
             async_send(proc, stdin)
 
             while chunk := proc.stdout.read1().decode():
-                sys.stdout.write(chunk)
+                sys.stderr.write(chunk)
                 output += chunk
 
                 if len(output) > 20000:
