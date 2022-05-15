@@ -19,11 +19,3 @@ lib/opcodes
 bld/flex
 bld/bison
 {% endblock %}
-
-{% block make_flags %}
-#target_alias=
-{% endblock %}
-
-{% block postinstall %}
-:
-{% endblock %}

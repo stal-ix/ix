@@ -19,10 +19,7 @@ bld/flex
 bld/bison
 {% endblock %}
 
-{% block make_flags %}
-#target_alias=
-{% endblock %}
-
 {% block postinstall %}
-:
+rm -rf ${out}/lib/bfd*
+echo 'keep ldscripts intact'
 {% endblock %}

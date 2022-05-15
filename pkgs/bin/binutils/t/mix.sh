@@ -15,3 +15,7 @@
 {{super()}}
 sed -e 's|../.*/lib.*a||g' -i Makefile
 {% endblock %}
+
+{% block make_flags %}
+tooldir=${out}
+{% endblock %}

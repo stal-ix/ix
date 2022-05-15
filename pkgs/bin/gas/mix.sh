@@ -21,11 +21,3 @@ bld/flex
 bld/bison
 bld/texinfo
 {% endblock %}
-
-{% block make_flags %}
-#target_alias=
-{% endblock %}
-
-{% block postinstall %}
-:
-{% endblock %}
