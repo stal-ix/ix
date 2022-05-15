@@ -12,7 +12,6 @@ cd bfd
 {% block bld_libs %}
 lib/z
 lib/c
-lib/c++
 {% endblock %}
 
 {% block configure_flags %}

@@ -11,7 +11,6 @@ cd libiberty
 
 {% block lib_deps %}
 lib/c
-lib/c++
 {% endblock %}
 
 {% block make_flags %}
