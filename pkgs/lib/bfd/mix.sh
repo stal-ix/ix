@@ -9,7 +9,7 @@
 cd bfd
 {% endblock %}
 
-{% block bld_libs %}
+{% block lib_deps %}
 lib/z
 lib/c
 {% endblock %}

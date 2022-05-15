@@ -4,7 +4,7 @@
 {% include '//bin/telegram/desktop/unwrap/t/ver.sh' %}
 {% endblock %}
 
-{% block bld_libs %}
+{% block lib_deps %}
 lib/c
 lib/c++
 lib/alsa
