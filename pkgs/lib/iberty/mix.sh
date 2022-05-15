@@ -15,11 +15,5 @@ lib/c
 
 {% block make_flags %}
 MULTIOSDIR=
-target_header_dir=${out}/include
-{% endblock %}
-
-{% block install %}
-{{super()}}
-# nu ego nah
-rm ${out}/include/sort.h
+target_header_dir=${out}/include/libiberty
 {% endblock %}
