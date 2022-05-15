@@ -22,11 +22,6 @@ bld/bison
 bld/texinfo
 {% endblock %}
 
-{% block configure %}
-{{super()}}
-sed -e 's|../.*/lib.*a||g' -i Makefile
-{% endblock %}
-
 {% block make_flags %}
 #target_alias=
 {% endblock %}

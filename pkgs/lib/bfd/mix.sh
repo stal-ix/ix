@@ -16,4 +16,5 @@ lib/c
 
 {% block configure_flags %}
 --enable-targets=all
+--enable-deterministic-archives
 {% endblock %}
