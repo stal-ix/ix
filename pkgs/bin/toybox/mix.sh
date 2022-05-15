@@ -1,8 +1,8 @@
 {% extends '//mix/kconfig.sh' %}
 
 {% block fetch %}
-https://github.com/landley/toybox/archive/refs/tags/0.8.6.tar.gz
-sha:e2c4f72a158581a12f4303d0d1aeec196b01f293e495e535bcdaf75eb9ae0987
+https://github.com/landley/toybox/archive/refs/tags/0.8.7.tar.gz
+sha:b6f43d5738df54623ed21c32f430d1d5c5ac7ef465a6a883890f104b59d5d9e4
 {% endblock %}
 
 {% block bld_libs %}
