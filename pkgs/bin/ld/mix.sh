@@ -19,9 +19,9 @@ bld/flex
 bld/bison
 {% endblock %}
 
-{% block postinstall %}
-rm -rf ${out}/lib/bfd*
-echo 'keep ldscripts intact'
+{% block make_flags %}
+{{super()}}
+scriptdir=${out}/share
 {% endblock %}
 
 {% block install %}
