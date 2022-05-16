@@ -62,15 +62,6 @@ ${PWD}
 export CXXFLAGS="-Wno-register ${CXXFLAGS}"
 {% endblock %}
 
-{% block patch %}
-sed -e 's|ifdef __APPLE__|if 1|' -i src/object/object-set.cpp
-sed -e 's|.*g_warning_once.*||' -i src/style.cpp
-
-cat << EOF > poppler-config.h
-#define POPPLER_VERSION "unknown"
-EOF
-{% endblock %}
-
 {% block install %}
 {{super()}}
 {{hooks.wrap_xdg_binary('inkscape')}}
