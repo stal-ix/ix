@@ -1,8 +1,10 @@
 {% extends '//mix/cmake.sh' %}
 
 {% block fetch %}
-https://inkscape.org/gallery/item/29255/inkscape-1.1.1.tar.xz
-sha:aeca0b9d33b5b1cfa9aa70433bdee6a8c3d020ffafc2e6f0c9a60eed7a7978af
+#https://gitlab.com/inkscape/inkscape/-/archive/INKSCAPE_1_2/inkscape-INKSCAPE_1_2.tar.bz2
+#sha:c2f44b0bb744e122d865d15a34e05c80f3c9947e46d933063e5ae9c19a3a85c4
+https://inkscape.org/gallery/item/33289/inkscape-1.2-rc_2022-05-08_6364d40632.tar.xz
+sha:e47b9c19a3473eec846735d161cbe52a3f37f0b623cae3b4860be83a6862af36
 {% endblock %}
 
 {% block bld_libs %}
@@ -41,6 +43,7 @@ bld/glib/codegen
 {% endblock %}
 
 {% block cmake_flags %}
+WITH_X11=OFF
 WITH_OPENMP=OFF
 BUILD_TESTING=OFF
 WITH_IMAGE_MAGICK=OFF
