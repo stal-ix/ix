@@ -20,6 +20,7 @@ lib/lcms2
 lib/pango
 lib/cairo
 lib/boost
+lib/visio
 lib/soup/2
 lib/poppler
 lib/boehmgc
@@ -49,7 +50,6 @@ BUILD_TESTING=OFF
 WITH_IMAGE_MAGICK=OFF
 WITH_GRAPHICS_MAGICK=OFF
 WITH_LIBCDR=OFF
-WITH_LIBVISIO=OFF
 WITH_LIBWPG=OFF
 WITH_GSPELL=OFF
 {% endblock %}
