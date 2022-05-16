@@ -34,6 +34,7 @@ lib/freetype
 lib/dbus/glib
 lib/googletest
 lib/fontconfig
+lib/image/magick
 lib/double/conversion
 {% endblock %}
 
@@ -48,8 +49,6 @@ bld/glib/codegen
 WITH_X11=OFF
 WITH_OPENMP=OFF
 BUILD_TESTING=OFF
-WITH_IMAGE_MAGICK=OFF
-WITH_GRAPHICS_MAGICK=OFF
 WITH_LIBWPG=OFF
 WITH_GSPELL=OFF
 {% endblock %}
