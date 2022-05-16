@@ -19,3 +19,7 @@ lib/fm/extra
 {{super()}}
 bld/glib/codegen
 {% endblock %}
+
+{% block postinstall %}
+:
+{% endblock %}
