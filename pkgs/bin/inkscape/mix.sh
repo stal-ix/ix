@@ -76,3 +76,8 @@ cat << EOF > poppler-config.h
 #define POPPLER_VERSION "unknown"
 EOF
 {% endblock %}
+
+{% block install %}
+{{super()}}
+{{hooks.wrap_xdg_binary('inkscape')}}
+{% endblock %}
