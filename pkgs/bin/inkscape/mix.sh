@@ -10,6 +10,7 @@ sha:e47b9c19a3473eec846735d161cbe52a3f37f0b623cae3b4860be83a6862af36
 {% block bld_libs %}
 lib/c
 lib/c++
+lib/cdr
 # check it
 lib/gsl/gnu
 lib/dbus
@@ -49,7 +50,6 @@ WITH_OPENMP=OFF
 BUILD_TESTING=OFF
 WITH_IMAGE_MAGICK=OFF
 WITH_GRAPHICS_MAGICK=OFF
-WITH_LIBCDR=OFF
 WITH_LIBWPG=OFF
 WITH_GSPELL=OFF
 {% endblock %}
