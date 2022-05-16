@@ -60,7 +60,7 @@ SH = '''
 set -xue
 
 if test -d fix; then
-    find fix/ -name '*.sh' | while read l; do
+    find fix/ -name '*.sh' | sort | while read l; do
         sh "${l}" || exit 1
     done
 
