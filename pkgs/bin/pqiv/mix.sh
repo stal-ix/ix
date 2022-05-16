@@ -1,4 +1,4 @@
-{% extends '//mix/autohell.sh' %}
+{% extends '//mix/make.sh' %}
 
 {% block fetch %}
 https://github.com/phillipberndt/pqiv/archive/refs/tags/2.12.tar.gz
@@ -14,8 +14,9 @@ lib/image/magick
 
 {% block bld_tool %}
 bld/bash
+bld/pkg/config
 {% endblock %}
 
-{% block invoke_configure %}
+{% block configure %}
 bash ./configure --prefix=${out}
 {% endblock %}
