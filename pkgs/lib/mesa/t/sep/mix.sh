@@ -1,6 +1,7 @@
 {% extends '//lib/mesa/t/nodrv/mix.sh' %}
 
 {% block c_rename_symbol %}
+{{super()}}
 handle_table_remove
 {% endblock %}
 

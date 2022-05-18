@@ -23,6 +23,7 @@ lib/vulkan/headers
 
 {% block bld_libs %}
 pip/Mako
+lib/mesa/fakes
 {% endblock %}
 
 {% block bld_tool %}
