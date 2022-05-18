@@ -22,7 +22,7 @@ PCRE_SUPPORT_UNICODE_PROPERTIES=ON
 export COFLAGS="--with-pcre=${out} \${COFLAGS}"
 {% endblock %}
 
-{% block install %}
+{% block install1 %}
 {{super()}}
 rm ${out}/lib/libpcreposix.a ${out}/lib/pkgconfig/libpcreposix.pc ${out}/include/pcreposix.h
 {% endblock %}
