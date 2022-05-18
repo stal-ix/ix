@@ -16,6 +16,8 @@ gallium-drivers={{','.join((opengl or '').split('|'))}}
 {{super()}}
 )
 
+sed -e 's|.*include.*xcb.*||' -i src/gallium/frontends/dri/kopper.c
+
 (
 cd src/gallium/frontends/dri
 

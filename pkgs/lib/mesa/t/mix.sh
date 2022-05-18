@@ -7,6 +7,8 @@ https://gitlab.freedesktop.org/mesa/mesa/-/archive/mesa-22.0.1/mesa-mesa-22.0.1.
 sha:fb38c479ddba37276064116e34ab72d95435148acc9fc81662786bb0c2c1c8b7
 #https://gitlab.freedesktop.org/mesa/mesa/-/archive/mesa-22.0.3/mesa-mesa-22.0.3.tar.bz2
 #sha:5d074e1d548f77bcb6d0cc400a40ab6bb21639877e70da1f4d91fa3c3c96e0af
+#https://gitlab.freedesktop.org/mesa/mesa/-/archive/mesa-22.1.0-rc5/mesa-mesa-22.1.0-rc5.tar.bz2
+#sha:87e0bc0050ec8ac58c63c73ccc8296cbbb24d5ba42b170c9bccd9f765bacb75d
 {% endblock %}
 
 {% block lib_deps %}
