@@ -1,8 +1,8 @@
 {% extends '//mix/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/grpc/grpc/archive/refs/tags/v1.46.1.tar.gz
-sha:291db3c4e030164421b89833ee761a2e6ca06b1d1f8e67953df762665d89439d
+https://github.com/grpc/grpc/archive/refs/tags/v1.46.2.tar.gz
+sha:64b791c3dad387230f8b46cbd0c474b6ae751f7f805d05cb3bae36ac0ff2a7e7
 {% endblock %}
 
 {% block lib_deps %}
