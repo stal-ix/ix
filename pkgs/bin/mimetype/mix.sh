@@ -3,6 +3,7 @@
 {% block bld_libs %}
 lib/c
 lib/c++
+lib/glib
 lib/mimetype
 {% endblock %}
 
