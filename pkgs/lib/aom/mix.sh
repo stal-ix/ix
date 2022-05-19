@@ -25,5 +25,5 @@ bin/nasm
 {% block cmake_flags %}
 ENABLE_EXAMPLES=OFF
 ENABLE_TESTS=OFF
-ENABLE_TOOLS=ON
+ENABLE_TOOLS=OFF
 {% endblock %}
