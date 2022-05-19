@@ -1,19 +1,5 @@
 {% extends '//lib/mesa/t/sep/mix.sh' %}
 
-{% block run_data %}
-lib/mesa/data
-{% endblock %}
-
-{% block bld_tool %}
-{{super()}}
-bld/scripts/reloc
-{% endblock %}
-
-{% block configure %}
-{{super()}}
-relocate "${MESA_DATA}"
-{% endblock %}
-
 {% block install %}
 {{super()}}
 cd ${out}/lib

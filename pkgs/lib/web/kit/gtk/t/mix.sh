@@ -1,8 +1,8 @@
 {% extends '//lib/web/kit/t/mix.sh' %}
 
 {% block fetch %}
-https://webkitgtk.org/releases/webkitgtk-2.36.1.tar.xz
-sha:0149ea5fb1d20f2a9981677d45c952a047330001ea24a8dc29035239f12c0c8f
+https://webkitgtk.org/releases/webkitgtk-2.36.2.tar.xz
+sha:fe93bddb4a02c0e36f926efb6e81d28afd288b8824f6c5cf6a75cf40228e008e
 {% endblock %}
 
 {% block lib_deps %}

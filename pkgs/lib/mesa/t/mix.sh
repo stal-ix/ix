@@ -50,6 +50,11 @@ shared-llvm=disabled
 {% endblock %}
 
 {% block patch %}
+cat << EOF >> src/util/xmlconfig.h
+#undef WITH_XMLCONFIG
+#define WITH_XMLCONFIG 0
+EOF
+
 cat << EOF > bin/install_megadrivers.py
 #!$(which sh)
 EOF
