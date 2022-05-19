@@ -25,6 +25,7 @@ lib/qt/6/svg
 lib/expected
 lib/k/wayland
 lib/qt/6/base
+lib/tg/rlottie
 lib/drivers/3d
 lib/mesa/gl/dl
 lib/mesa/egl/dl
@@ -49,6 +50,7 @@ ${PWD}/Telegram/ThirdParty/libtgvoip
 DESKTOP_APP_DISABLE_CRASH_REPORTS=ON
 DESKTOP_APP_DISABLE_JEMALLOC=ON
 DESKTOP_APP_USE_PACKAGED=ON
+DESKTOP_APP_USE_PACKAGED_RLOTTIE=ON
 DESKTOP_APP_QT6=ON
 
 DESKTOP_APP_DISABLE_DBUS_INTEGRATION=ON
