@@ -1,8 +1,8 @@
 {% extends '//mix/autohell.sh' %}
 
 {% block fetch %}
-http://mirrors.kernel.org/sourceware/lvm2/LVM2.2.03.14.tgz
-sha:4a63bc8a084a8ae3c7bc5e6530cac264139d218575c64416c8b99e3fe039a05c
+http://mirrors.kernel.org/sourceware/lvm2/LVM2.2.03.16.tgz
+sha:e661ece15b5d88d8abe39a4c1e1db2f43e1896f019948bb98b0e15d777680786
 {% endblock %}
 
 {% block lib_deps %}
