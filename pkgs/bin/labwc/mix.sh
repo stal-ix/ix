@@ -1,8 +1,8 @@
 {% extends '//mix/meson.sh' %}
 
 {% block fetch %}
-https://github.com/labwc/labwc/archive/refs/tags/0.5.0.tar.gz
-sha:fde97dae137b29336e0cab678700108872cc9d2093ad89d0f1dde2f21871496b
+https://github.com/labwc/labwc/archive/refs/tags/0.5.2.tar.gz
+sha:ad00412f17dedd6eb0113d0fd07c22abf4c8e5f322f3e93db4a7ab973fdf1922
 {% endblock %}
 
 {% block bld_libs %}
