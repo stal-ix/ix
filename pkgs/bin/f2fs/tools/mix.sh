@@ -1,8 +1,8 @@
 {% extends '//mix/autorehell.sh' %}
 
 {% block fetch %}
-https://git.kernel.org/pub/scm/linux/kernel/git/jaegeuk/f2fs-tools.git/snapshot/f2fs-tools-1.14.0.tar.gz
-sha:619263d4e2022152a1472c1d912eaae104f20bd227ce0bb9d41d1d6608094bd1
+https://git.kernel.org/pub/scm/linux/kernel/git/jaegeuk/f2fs-tools.git/snapshot/f2fs-tools-1.15.0.tar.gz
+sha:147d471040b44900283ce2c935f1d35d13d7f40008e7cb8fab2b69f54da01a4f
 {% endblock %}
 
 {% block bld_libs %}
