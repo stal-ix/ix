@@ -1,8 +1,8 @@
 {% extends '//lib/web/kit/t/mix.sh' %}
 
 {% block fetch %}
-https://wpewebkit.org/releases/wpewebkit-2.36.0.tar.xz
-sha:096aa9f87d9bfbfc80f558388a86721cdcc508b42ddef10bd270aec9aee96d5a
+https://wpewebkit.org/releases/wpewebkit-2.36.2.tar.xz
+sha:959519562701e2005f2767a62e85977d6c3e65858709b376c89d8e33502febb9
 {% endblock %}
 
 {% block lib_deps %}
@@ -13,6 +13,7 @@ lib/c++
 lib/wpe
 lib/icu
 lib/png
+lib/avif
 lib/xml2
 lib/glib
 lib/jpeg
