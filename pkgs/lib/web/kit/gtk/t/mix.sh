@@ -14,6 +14,7 @@ lib/icu
 lib/c++
 lib/gtk
 lib/png
+lib/jxl
 lib/avif
 lib/webp
 lib/xml2
