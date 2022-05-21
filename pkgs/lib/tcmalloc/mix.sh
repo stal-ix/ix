@@ -1,8 +1,8 @@
-{% extends '//die/autorehell.sh' %}
+{% extends '//die/autohell.sh' %}
 
 {% block fetch %}
-https://github.com/gperftools/gperftools/archive/refs/tags/gperftools-2.9.1.tar.gz
-e340f1b247ff512119a2db98c1538dc1
+https://github.com/gperftools/gperftools/releases/download/gperftools-2.9.1/gperftools-2.9.1.tar.gz
+sha:ea566e528605befb830671e359118c2da718f721c27225cbbc93858c7520fee3
 {% endblock %}
 
 {% block lib_deps %}
@@ -10,12 +10,15 @@ lib/c++
 {% endblock %}
 
 {% block bld_libs %}
-lib/c++
 lib/mimalloc/2
+# for LTO configure
+lib/compiler_rt/hack/ish
 {% endblock %}
 
 {% block patch %}
-sed -e 's|-lstdc++||g' -i Makefile.am
+find . -type f | while read l; do
+    sed -e 's|-lstdc++||g' -i ${l}
+done
 
 cat << EOF >> src/malloc_extension.cc
 static inline bool size_multiply_overflow(size_t size, size_t need) noexcept {
@@ -32,6 +35,14 @@ extern "C" void* reallocarray(void* p, size_t need, size_t size) {
     return realloc(p, size * need);
 }
 EOF
+{% endblock %}
+
+{% block make_target %}
+libtcmalloc_minimal.la
+{% endblock %}
+
+{% block make_install_target %}
+install-libLTLIBRARIES
 {% endblock %}
 
 {% block configure_flags %}

@@ -2,7 +2,7 @@
 
 {% block lib_deps %}
 {% if linux %}
-lib/{{allocator or 'mimalloc/2'}}
+lib/{{allocator or 'tcmalloc'}}
 {% else %}
 {% if allocator %}
 lib/{{allocator}}
