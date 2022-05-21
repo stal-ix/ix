@@ -8,11 +8,11 @@ cat << EOF > sway.rules
 EOF
 
 cat << EOF > epiphany.rules
-{"name": "epiphany-bin", "rtprio": 9, "sched": "rr"}
+{"name": "epiphany-bin", "nice": -10}
 EOF
 
 cat << EOF > webkit.rules
-{"name": "WebKitWebProcess", "rtprio": 8, "sched": "rr"}
-{"name": "WebKitNetworkProcess", "rtprio": 8, "sched": "rr"}
+{"name": "WebKitWebProcess", "nice": -10}
+{"name": "WebKitNetworkProcess", "nice": -10}
 EOF
 {% endblock %}
