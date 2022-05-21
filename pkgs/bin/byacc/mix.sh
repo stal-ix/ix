@@ -1,4 +1,4 @@
-{% extends '//mix/autohell.sh' %}
+{% extends '//die/autohell.sh' %}
 
 {% block fetch %}
 https://invisible-mirror.net/archives/byacc/byacc-20211224.tgz

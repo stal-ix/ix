@@ -1,4 +1,4 @@
-{% extends '//mix/meson.sh' %}
+{% extends '//die/meson.sh' %}
 
 {% block fetch %}
 https://git.pwmt.org/pwmt/girara/-/archive/0.3.7/girara-0.3.7.tar.bz2

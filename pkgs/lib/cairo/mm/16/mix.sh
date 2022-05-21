@@ -1,4 +1,4 @@
-{% extends '//mix/meson.sh' %}
+{% extends '//die/meson.sh' %}
 
 {% block fetch %}
 https://www.cairographics.org/releases/cairomm-1.16.1.tar.xz

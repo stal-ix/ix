@@ -1,4 +1,4 @@
-{% extends '//mix/meson.sh' %}
+{% extends '//die/meson.sh' %}
 
 {% block fetch %}
 https://gitlab.freedesktop.org/gstreamer/orc/-/archive/0.4.32/orc-0.4.32.tar.bz2

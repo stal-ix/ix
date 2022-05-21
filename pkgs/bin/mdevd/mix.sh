@@ -1,4 +1,4 @@
-{% extends '//mix/autohell.sh' %}
+{% extends '//die/autohell.sh' %}
 
 {% block fetch %}
 https://skarnet.org/software/mdevd/mdevd-0.1.5.1.tar.gz

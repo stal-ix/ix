@@ -1,4 +1,4 @@
-{% extends '//mix/autorehell.sh' %}
+{% extends '//die/autorehell.sh' %}
 
 {% block fetch %}
 https://sourceforge.net/projects/joe-editor/files/JOE%20sources/joe-4.6/joe-4.6.tar.gz/download

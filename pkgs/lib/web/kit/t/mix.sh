@@ -1,4 +1,4 @@
-{% extends '//mix/cmake.sh' %}
+{% extends '//die/cmake.sh' %}
 
 {% block bld_tool %}
 bld/perl

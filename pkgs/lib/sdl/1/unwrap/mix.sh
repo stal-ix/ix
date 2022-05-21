@@ -1,4 +1,4 @@
-{% extends '//mix/cmake.sh' %}
+{% extends '//die/cmake.sh' %}
 
 {% block fetch %}
 https://github.com/libsdl-org/sdl12-compat/archive/refs/tags/release-1.2.52.tar.gz

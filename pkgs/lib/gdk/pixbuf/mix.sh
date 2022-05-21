@@ -1,4 +1,4 @@
-{% extends '//mix/meson.sh' %}
+{% extends '//die/meson.sh' %}
 
 {% block fetch %}
 https://download.gnome.org/sources/gdk-pixbuf/2.42/gdk-pixbuf-2.42.6.tar.xz

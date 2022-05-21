@@ -1,4 +1,4 @@
-{% extends '//mix/meson.sh' %}
+{% extends '//die/meson.sh' %}
 
 {# hard dep on X #}
 

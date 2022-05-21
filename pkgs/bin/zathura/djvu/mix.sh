@@ -1,4 +1,4 @@
-{% extends '//mix/meson.sh' %}
+{% extends '//die/meson.sh' %}
 
 {% block fetch %}
 https://pwmt.org/projects/zathura-djvu/download/zathura-djvu-0.2.9.tar.xz

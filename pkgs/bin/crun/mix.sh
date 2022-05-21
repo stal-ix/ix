@@ -1,4 +1,4 @@
-{% extends '//mix/autorehell.sh' %}
+{% extends '//die/autorehell.sh' %}
 
 {% block fetch %}
 https://github.com/containers/crun/releases/download/1.4.5/crun-1.4.5.tar.xz

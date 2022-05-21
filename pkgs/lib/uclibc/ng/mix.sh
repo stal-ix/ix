@@ -1,4 +1,4 @@
-{% extends '//mix/kconfig.sh' %}
+{% extends '//die/kconfig.sh' %}
 
 {% block fetch %}
 https://downloads.uclibc-ng.org/releases/1.0.40/uClibc-ng-1.0.40.tar.xz

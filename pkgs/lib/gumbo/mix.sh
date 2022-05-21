@@ -1,4 +1,4 @@
-{% extends '//mix/autorehell.sh' %}
+{% extends '//die/autorehell.sh' %}
 
 {% block fetch %}
 https://github.com/google/gumbo-parser/archive/refs/tags/v0.10.1.tar.gz

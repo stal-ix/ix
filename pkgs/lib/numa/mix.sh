@@ -1,4 +1,4 @@
-{% extends '//mix/autorehell.sh' %}
+{% extends '//die/autorehell.sh' %}
 
 {% block fetch %}
 https://github.com/numactl/numactl/archive/refs/tags/v2.0.14.tar.gz

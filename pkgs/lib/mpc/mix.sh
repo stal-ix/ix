@@ -1,4 +1,4 @@
-{% extends '//mix/autorehell.sh' %}
+{% extends '//die/autorehell.sh' %}
 
 {% block fetch %}
 https://ftp.gnu.org/gnu/mpc/mpc-1.2.1.tar.gz

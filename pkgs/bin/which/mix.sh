@@ -1,4 +1,4 @@
-{% extends '//mix/autohell.sh' %}
+{% extends '//die/autohell.sh' %}
 
 {% block fetch %}
 https://ftp.gnu.org/gnu/which/which-2.21.tar.gz

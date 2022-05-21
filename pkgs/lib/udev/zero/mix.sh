@@ -1,4 +1,4 @@
-{% extends '//mix/make.sh' %}
+{% extends '//die/make.sh' %}
 
 {% block fetch %}
 https://github.com/illiliti/libudev-zero/archive/refs/tags/1.0.1.tar.gz

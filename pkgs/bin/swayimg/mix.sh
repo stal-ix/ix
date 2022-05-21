@@ -1,4 +1,4 @@
-{% extends '//mix/meson.sh' %}
+{% extends '//die/meson.sh' %}
 
 {% block fetch %}
 https://github.com/artemsen/swayimg/archive/refs/tags/v1.7.tar.gz

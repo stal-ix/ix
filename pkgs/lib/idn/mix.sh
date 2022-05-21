@@ -1,4 +1,4 @@
-{% extends '//mix/autohell.sh' %}
+{% extends '//die/autohell.sh' %}
 
 {% block fetch %}
 https://ftp.gnu.org/gnu/libidn/libidn-1.38.tar.gz

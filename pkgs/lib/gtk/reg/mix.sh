@@ -1,4 +1,4 @@
-{% extends '//mix/dl/fix.sh' %}
+{% extends '//die/dl/fix.sh' %}
 
 {% block lib_deps %}
 lib/c

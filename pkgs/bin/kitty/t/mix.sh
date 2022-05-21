@@ -1,4 +1,4 @@
-{% extends '//mix/c_std.sh' %}
+{% extends '//die/c_std.sh' %}
 
 {% block fetch %}
 https://github.com/kovidgoyal/kitty/archive/refs/tags/v0.25.0.tar.gz

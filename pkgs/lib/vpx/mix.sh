@@ -1,4 +1,4 @@
-{% extends '//mix/make.sh' %}
+{% extends '//die/make.sh' %}
 
 {% block fetch %}
 https://chromium.googlesource.com/webm/libvpx/+archive/626ff35955c2c35b806b3e0ecf551a1a8611cdbf.tar.gz

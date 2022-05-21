@@ -1,4 +1,4 @@
-{% extends '//mix/make.sh' %}
+{% extends '//die/make.sh' %}
 
 {% block fetch %}
 https://gitlab.com/craigbarnes/dte/-/archive/v1.10/dte-v1.10.tar.bz2

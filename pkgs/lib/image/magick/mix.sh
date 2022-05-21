@@ -1,4 +1,4 @@
-{% extends '//mix/autorehell.sh' %}
+{% extends '//die/autorehell.sh' %}
 
 {% block fetch %}
 https://github.com/ImageMagick/ImageMagick/archive/refs/tags/7.1.0-34.tar.gz

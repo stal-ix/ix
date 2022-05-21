@@ -1,4 +1,4 @@
-{% extends '//mix/meson.sh' %}
+{% extends '//die/meson.sh' %}
 
 {% block fetch %}
 https://wayland.freedesktop.org/releases/wayland-1.20.0.tar.xz

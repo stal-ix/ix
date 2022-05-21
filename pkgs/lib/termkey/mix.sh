@@ -1,4 +1,4 @@
-{% extends '//mix/make.sh' %}
+{% extends '//die/make.sh' %}
 
 {% block fetch %}
 https://github.com/neovim/libtermkey/archive/refs/tags/v0.20.tar.gz

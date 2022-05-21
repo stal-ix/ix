@@ -1,4 +1,4 @@
-{% extends '//mix/autorehell.sh' %}
+{% extends '//die/autorehell.sh' %}
 
 {% block fetch %}
 https://github.com/vim/vim/archive/refs/tags/v8.2.4701.tar.gz

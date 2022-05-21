@@ -1,4 +1,4 @@
-{% extends '//mix/fonts.sh' %}
+{% extends '//die/fonts.sh' %}
 
 {% block fetch %}
 https://github.com/adobe-fonts/source-serif/releases/download/4.004R/source-serif-4.004.zip

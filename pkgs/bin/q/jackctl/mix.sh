@@ -1,4 +1,4 @@
-{% extends '//mix/cmake.sh' %}
+{% extends '//die/cmake.sh' %}
 
 {% block fetch %}
 https://download.sourceforge.net/qjackctl/qjackctl-0.9.7.tar.gz

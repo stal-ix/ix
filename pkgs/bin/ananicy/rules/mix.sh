@@ -1,4 +1,4 @@
-{% extends '//mix/make.sh' %}
+{% extends '//die/make.sh' %}
 
 {% block fetch %}
 https://github.com/Nefelim4ag/Ananicy/archive/refs/tags/2.2.1.tar.gz

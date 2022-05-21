@@ -1,4 +1,4 @@
-{% extends '//mix/cmake.sh' %}
+{% extends '//die/cmake.sh' %}
 
 {% block fetch %}
 https://gitlab.com/AOMediaCodec/SVT-AV1/-/archive/v1.1.0/SVT-AV1-v1.1.0.tar.bz2

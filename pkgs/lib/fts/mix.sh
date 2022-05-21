@@ -1,4 +1,4 @@
-{% extends '//mix/autorehell.sh' %}
+{% extends '//die/autorehell.sh' %}
 
 {% block fetch %}
 https://github.com/void-linux/musl-fts/archive/refs/tags/v1.2.7.tar.gz

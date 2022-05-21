@@ -1,4 +1,4 @@
-{% extends '//mix/cmake.sh' %}
+{% extends '//die/cmake.sh' %}
 
 {% block fetch %}
 https://poppler.freedesktop.org/poppler-22.03.0.tar.xz

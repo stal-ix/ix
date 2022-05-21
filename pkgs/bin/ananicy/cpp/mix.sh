@@ -1,4 +1,4 @@
-{% extends '//mix/cmake.sh' %}
+{% extends '//die/cmake.sh' %}
 
 {% block fetch %}
 https://gitlab.com/ananicy-cpp/ananicy-cpp/-/archive/v1.0.0-rc6/ananicy-cpp-v1.0.0-rc6.tar.bz2

@@ -1,4 +1,4 @@
-{% extends '//mix/fonts.sh' %}
+{% extends '//die/fonts.sh' %}
 
 {% block fetch %}
 https://github.com/IBM/plex/releases/download/v6.0.0/OpenType.zip

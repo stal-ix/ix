@@ -1,4 +1,4 @@
-{% extends '//mix/cmake.sh' %}
+{% extends '//die/cmake.sh' %}
 
 {% block fetch %}
 https://github.com/grpc/grpc/archive/refs/tags/v1.46.3.tar.gz

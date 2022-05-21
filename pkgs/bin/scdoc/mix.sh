@@ -1,4 +1,4 @@
-{% extends '//mix/make.sh' %}
+{% extends '//die/make.sh' %}
 
 {% block fetch %}
 https://git.sr.ht/~sircmpwn/scdoc/archive/1.11.2.tar.gz

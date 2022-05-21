@@ -1,4 +1,4 @@
-{% extends '//mix/autorehell.sh' %}
+{% extends '//die/autorehell.sh' %}
 
 {% block fetch %}
 https://gitlab.gnome.org/GNOME/libxslt/-/archive/v1.1.35/libxslt-v1.1.35.tar.bz2

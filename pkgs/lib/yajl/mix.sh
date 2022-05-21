@@ -1,4 +1,4 @@
-{% extends '//mix/cmake.sh' %}
+{% extends '//die/cmake.sh' %}
 
 {% block fetch %}
 https://github.com/lloyd/yajl/archive/refs/tags/2.1.0.tar.gz

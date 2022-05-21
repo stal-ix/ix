@@ -1,4 +1,4 @@
-{% extends '//mix/std/mix.sh' %}
+{% extends '//die/std/mix.sh' %}
 
 {% block fetch %}
 https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/snapshot/linux-firmware-20220209.tar.gz

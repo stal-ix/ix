@@ -1,4 +1,4 @@
-{% extends '//mix/fonts.sh' %}
+{% extends '//die/fonts.sh' %}
 
 {% block fetch %}
 https://github.com/rsms/inter/releases/download/v3.19/Inter-3.19.zip

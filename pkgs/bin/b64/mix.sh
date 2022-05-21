@@ -1,4 +1,4 @@
-{% extends '//mix/c_std.sh' %}
+{% extends '//die/c_std.sh' %}
 
 {% block fetch %}
 http://base64.sourceforge.net/b64.c

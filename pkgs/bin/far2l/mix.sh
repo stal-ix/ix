@@ -1,4 +1,4 @@
-{% extends '//mix/cmake.sh' %}
+{% extends '//die/cmake.sh' %}
 
 {% block fetch %}
 https://github.com/elfmz/far2l/archive/refs/tags/v_2.4.0.tar.gz

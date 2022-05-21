@@ -1,4 +1,4 @@
-{% extends '//mix/autorehell.sh' %}
+{% extends '//die/autorehell.sh' %}
 
 {% block fetch %}
 https://github.com/OpenVPN/openvpn/archive/refs/tags/v2.5.6.tar.gz

@@ -1,4 +1,4 @@
-{% extends '//mix/autorehell.sh' %}
+{% extends '//die/autorehell.sh' %}
 
 {% block fetch %}
 https://dbus.freedesktop.org/releases/dbus/dbus-1.12.20.tar.gz

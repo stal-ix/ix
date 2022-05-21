@@ -1,4 +1,4 @@
-{% extends '//mix/autohell.sh' %}
+{% extends '//die/autohell.sh' %}
 
 {% block fetch %}
 https://sourceware.org/pub/valgrind/valgrind-3.19.0.tar.bz2

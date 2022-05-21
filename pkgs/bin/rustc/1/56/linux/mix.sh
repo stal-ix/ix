@@ -1,4 +1,4 @@
-{% extends '//mix/std/mix.sh' %}
+{% extends '//die/std/mix.sh' %}
 
 {% block fetch %}
 https://static.rust-lang.org/dist/rust-1.56.1-x86_64-unknown-linux-gnu.tar.gz

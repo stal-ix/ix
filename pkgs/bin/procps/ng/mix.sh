@@ -1,4 +1,4 @@
-{% extends '//mix/autorehell.sh' %}
+{% extends '//die/autorehell.sh' %}
 
 {% block fetch %}
 https://gitlab.com/procps-ng/procps/-/archive/v3.3.17/procps-v3.3.17.tar.bz2

@@ -1,4 +1,4 @@
-{% extends '//mix/meson.sh' %}
+{% extends '//die/meson.sh' %}
 
 {% block fetch %}
 https://github.com/jtheoof/swappy/archive/refs/tags/v1.4.0.tar.gz

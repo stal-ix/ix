@@ -1,4 +1,4 @@
-{% extends '//mix/registar.sh' %}
+{% extends '//die/registar.sh' %}
 
 {% block lib_deps %}
 lib/handy/orig

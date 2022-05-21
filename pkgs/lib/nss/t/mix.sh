@@ -1,4 +1,4 @@
-{% extends '//mix/c_std.sh' %}
+{% extends '//die/c_std.sh' %}
 
 {% block fetch %}
 https://ftp.mozilla.org/pub/security/nss/releases/NSS_3_66_RTM/src/nss-3.66-with-nspr-4.30.tar.gz

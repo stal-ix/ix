@@ -1,4 +1,4 @@
-{% extends '//mix/meson.sh' %}
+{% extends '//die/meson.sh' %}
 
 {% block fetch %}
 https://github.com/cisco/openh264/archive/refs/tags/v2.2.0.tar.gz

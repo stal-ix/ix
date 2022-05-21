@@ -1,4 +1,4 @@
-{% extends '//mix/cmake.sh' %}
+{% extends '//die/cmake.sh' %}
 
 {% block fetch %}
 https://github.com/libsndfile/libsamplerate/archive/refs/tags/0.2.2.tar.gz

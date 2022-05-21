@@ -1,4 +1,4 @@
-{% extends '//mix/make.sh' %}
+{% extends '//die/make.sh' %}
 
 {% block fetch %}
 https://hewlettpackard.github.io/wireless-tools/wireless_tools.29.tar.gz

@@ -1,4 +1,4 @@
-{% extends '//mix/premain.sh' %}
+{% extends '//die/premain.sh' %}
 
 {% block lib_deps %}
 lib/mesa/egl

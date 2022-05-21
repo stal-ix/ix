@@ -1,4 +1,4 @@
-{% extends '//mix/make.sh' %}
+{% extends '//die/make.sh' %}
 
 {% block fetch %}
 https://deponie.yamagi.org/quake2/quake2-8.01.tar.xz

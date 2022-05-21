@@ -1,4 +1,4 @@
-{% extends '//mix/make.sh' %}
+{% extends '//die/make.sh' %}
 
 {% block fetch %}
 https://www.rarlab.com/rar/unrarsrc-6.1.7.tar.gz

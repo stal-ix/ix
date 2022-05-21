@@ -1,4 +1,4 @@
-{% extends '//mix/make.sh' %}
+{% extends '//die/make.sh' %}
 
 {% block fetch %}
 https://git.kernel.org/pub/scm/utils/stalld/stalld.git/snapshot/stalld-1.15.0.tar.gz

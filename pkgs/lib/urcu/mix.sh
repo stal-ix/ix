@@ -1,4 +1,4 @@
-{% extends '//mix/autorehell.sh' %}
+{% extends '//die/autorehell.sh' %}
 
 {% block fetch %}
 https://lttng.org/files/urcu/userspace-rcu-0.13.1.tar.bz2

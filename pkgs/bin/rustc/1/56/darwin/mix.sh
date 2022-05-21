@@ -1,4 +1,4 @@
-{% extends '//mix/std/mix.sh' %}
+{% extends '//die/std/mix.sh' %}
 
 {% block fetch %}
 https://static.rust-lang.org/dist/rust-1.56.1-{{host.gnu_arch}}-apple-darwin.pkg

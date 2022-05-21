@@ -1,4 +1,4 @@
-{% extends '//mix/meson.sh' %}
+{% extends '//die/meson.sh' %}
 
 {% block fetch %}
 https://github.com/p11-glue/p11-kit/archive/refs/tags/0.24.0.tar.gz

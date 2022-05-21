@@ -1,4 +1,4 @@
-{% extends '//mix/autohell.sh' %}
+{% extends '//die/autohell.sh' %}
 
 {% block fetch %}
 https://liba52.sourceforge.io/files/a52dec-0.7.4.tar.gz

@@ -1,4 +1,4 @@
-{% extends '//mix/qt.sh' %}
+{% extends '//die/qt.sh' %}
 
 {% block fetch %}
 https://github.com/qt/qtsvg/archive/refs/tags/v6.3.0.tar.gz

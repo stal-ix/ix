@@ -1,4 +1,4 @@
-{% extends '//mix/fonts.sh' %}
+{% extends '//die/fonts.sh' %}
 
 {% block fetch %}
 https://devimages-cdn.apple.com/design/resources/download/SF-Pro.dmg

@@ -1,4 +1,4 @@
-{% extends '//mix/autohell.sh' %}
+{% extends '//die/autohell.sh' %}
 
 {% block fetch %}
 https://roy.marples.name/downloads/dhcpcd/dhcpcd-9.4.1.tar.xz

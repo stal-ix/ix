@@ -1,4 +1,4 @@
-{% extends '//mix/autorehell.sh' %}
+{% extends '//die/autorehell.sh' %}
 
 {% block fetch %}
 http://jfs.sourceforge.net/project/pub/jfsutils-1.1.15.tar.gz

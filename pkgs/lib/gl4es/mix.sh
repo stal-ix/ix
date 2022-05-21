@@ -1,4 +1,4 @@
-{% extends '//mix/cmake.sh' %}
+{% extends '//die/cmake.sh' %}
 
 {% block fetch %}
 https://github.com/ptitSeb/gl4es/archive/refs/tags/v1.1.4.tar.gz

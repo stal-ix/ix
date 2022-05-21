@@ -1,4 +1,4 @@
-{% extends '//mix/autorehell.sh' %}
+{% extends '//die/autorehell.sh' %}
 
 {% block fetch %}
 https://ftp.gnu.org/gnu/cpio/cpio-2.13.tar.bz2

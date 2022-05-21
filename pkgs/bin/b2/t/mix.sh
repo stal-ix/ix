@@ -1,4 +1,4 @@
-{% extends '//mix/c_std.sh' %}
+{% extends '//die/c_std.sh' %}
 
 {% block fetch %}
 https://github.com/bfgroup/b2/archive/refs/tags/4.9.1.tar.gz

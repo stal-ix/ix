@@ -1,4 +1,4 @@
-{% extends '//mix/cmake.sh' %}
+{% extends '//die/cmake.sh' %}
 
 {% block fetch %}
 https://github.com/fish-shell/fish-shell/archive/refs/tags/3.4.1.tar.gz

@@ -1,4 +1,4 @@
-{% extends '//mix/c_std.sh' %}
+{% extends '//die/c_std.sh' %}
 
 {% block fetch %}
 https://nav.dl.sourceforge.net/project/sbcl/sbcl/2.2.4/sbcl-2.2.4-source.tar.bz2

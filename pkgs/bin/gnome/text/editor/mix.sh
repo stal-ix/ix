@@ -1,4 +1,4 @@
-{% extends '//mix/gnome.sh' %}
+{% extends '//die/gnome.sh' %}
 
 {% block fetch %}
 https://gitlab.gnome.org/GNOME/gnome-text-editor/-/archive/42.1/gnome-text-editor-42.1.tar.bz2

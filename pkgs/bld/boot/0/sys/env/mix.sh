@@ -1,4 +1,4 @@
-{% extends '//mix/py.py' %}
+{% extends '//die/py.py' %}
 
 {% block env %}
 guess_flags() {

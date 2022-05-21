@@ -1,4 +1,4 @@
-{% extends '//mix/hub.sh' %}
+{% extends '//die/hub.sh' %}
 
 {% block lib_deps %}
 lib/gtk/4/{{gtk4_ver or '6'}}

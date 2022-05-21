@@ -1,4 +1,4 @@
-{% extends '//mix/autorehell.sh' %}
+{% extends '//die/autorehell.sh' %}
 
 {% block fetch %}
 https://github.com/thom311/libnl/releases/download/libnl3_6_0/libnl-3.6.0.tar.gz

@@ -1,4 +1,4 @@
-{% extends '//mix/make.sh' %}
+{% extends '//die/make.sh' %}
 
 {% block fetch %}
 https://github.com/Kufat/st-sdl/archive/050eb14a2438836d600bfbacc04754a1ea7d56b3.zip

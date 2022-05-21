@@ -1,4 +1,4 @@
-{% extends '//mix/autorehell.sh' %}
+{% extends '//die/autorehell.sh' %}
 
 {% block fetch %}
 https://github.com/libevent/libevent/archive/refs/tags/release-2.1.12-stable.tar.gz

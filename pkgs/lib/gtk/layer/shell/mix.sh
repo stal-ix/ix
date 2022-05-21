@@ -1,4 +1,4 @@
-{% extends '//mix/meson.sh' %}
+{% extends '//die/meson.sh' %}
 
 {% block fetch %}
 https://github.com/wmww/gtk-layer-shell/archive/refs/tags/v0.7.0.tar.gz

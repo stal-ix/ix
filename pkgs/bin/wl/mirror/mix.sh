@@ -1,4 +1,4 @@
-{% extends '//mix/cmake.sh' %}
+{% extends '//die/cmake.sh' %}
 
 {% block fetch %}
 https://github.com/Ferdi265/wl-mirror/archive/refs/tags/v0.11.2.tar.gz

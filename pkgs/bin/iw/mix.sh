@@ -1,4 +1,4 @@
-{% extends '//mix/make.sh' %}
+{% extends '//die/make.sh' %}
 
 {% block fetch %}
 https://www.kernel.org/pub/software/network/iw/iw-5.16.tar.xz

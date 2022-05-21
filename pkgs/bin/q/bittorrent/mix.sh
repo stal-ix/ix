@@ -1,4 +1,4 @@
-{% extends '//mix/cmake.sh' %}
+{% extends '//die/cmake.sh' %}
 
 {% block fetch %}
 https://downloads.sourceforge.net/project/qbittorrent/qbittorrent/qbittorrent-4.4.2/qbittorrent-4.4.2.tar.xz

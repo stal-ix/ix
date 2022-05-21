@@ -1,4 +1,4 @@
-{% extends '//mix/make.sh' %}
+{% extends '//die/make.sh' %}
 
 {% block fetch %}
 https://github.com/Novum/vkQuake/archive/refs/tags/1.13.1.tar.gz

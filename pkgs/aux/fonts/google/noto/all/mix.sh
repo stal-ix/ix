@@ -1,4 +1,4 @@
-{% extends '//mix/fonts.sh' %}
+{% extends '//die/fonts.sh' %}
 
 {% block fetch %}
 https://github.com/googlefonts/noto-fonts/archive/refs/tags/v20201206-phase3.tar.gz

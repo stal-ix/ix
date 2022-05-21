@@ -1,4 +1,4 @@
-{% extends '//mix/python/bin.sh' %}
+{% extends '//die/python/bin.sh' %}
 
 {% block fetch %}
 https://github.com/pg83/mix/archive/refs/tags/v4.tar.gz

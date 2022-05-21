@@ -1,4 +1,4 @@
-{% extends '//mix/gnome.sh' %}
+{% extends '//die/gnome.sh' %}
 
 {% block fetch %}
 https://gitlab.gnome.org/GNOME/console/-/archive/42.beta/console-42.beta.tar.bz2

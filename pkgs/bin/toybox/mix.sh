@@ -1,4 +1,4 @@
-{% extends '//mix/kconfig.sh' %}
+{% extends '//die/kconfig.sh' %}
 
 {% block fetch %}
 https://github.com/landley/toybox/archive/refs/tags/0.8.7.tar.gz

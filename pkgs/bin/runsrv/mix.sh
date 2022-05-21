@@ -1,4 +1,4 @@
-{% extends '//mix/proxy.sh' %}
+{% extends '//die/proxy.sh' %}
 
 {% block install %}
 cd ${out}; mkdir bin; cd bin

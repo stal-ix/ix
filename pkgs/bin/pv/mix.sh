@@ -1,4 +1,4 @@
-{% extends '//mix/autohell.sh' %}
+{% extends '//die/autohell.sh' %}
 
 {% block fetch %}
 http://www.ivarch.com/programs/sources/pv-1.6.6.tar.bz2

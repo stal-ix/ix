@@ -1,4 +1,4 @@
-{% extends '//mix/fonts.sh' %}
+{% extends '//die/fonts.sh' %}
 
 {% block fetch %}
 https://github.com/google/fonts/archive/2855855a4cf481d4220e30ca3bff0704cc111a57.zip

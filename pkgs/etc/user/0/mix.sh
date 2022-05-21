@@ -1,4 +1,4 @@
-{% extends '//mix/proxy.sh' %}
+{% extends '//die/proxy.sh' %}
 
 {% block bld_tool %}
 bin/busybox

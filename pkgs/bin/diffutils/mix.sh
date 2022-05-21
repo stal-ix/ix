@@ -1,4 +1,4 @@
-{% extends '//mix/autohell.sh' %}
+{% extends '//die/autohell.sh' %}
 
 {% block fetch %}
 https://ftp.gnu.org/gnu/diffutils/diffutils-3.7.tar.xz

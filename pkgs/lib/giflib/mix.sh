@@ -1,4 +1,4 @@
-{% extends '//mix/make.sh' %}
+{% extends '//die/make.sh' %}
 
 {% block fetch %}
 https://downloads.sourceforge.net/project/giflib/giflib-5.2.1.tar.gz

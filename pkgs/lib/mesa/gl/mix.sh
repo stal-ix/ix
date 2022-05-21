@@ -1,4 +1,4 @@
-{% extends '//mix/hub.sh' %}
+{% extends '//die/hub.sh' %}
 
 {% block lib_deps %}
 # we define all opengl symbols in glesv2

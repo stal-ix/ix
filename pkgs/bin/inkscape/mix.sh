@@ -1,4 +1,4 @@
-{% extends '//mix/cmake.sh' %}
+{% extends '//die/cmake.sh' %}
 
 {% block fetch %}
 #https://gitlab.com/inkscape/inkscape/-/archive/INKSCAPE_1_2/inkscape-INKSCAPE_1_2.tar.bz2

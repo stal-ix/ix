@@ -1,4 +1,4 @@
-{% extends '//mix/proxy.sh' %}
+{% extends '//die/proxy.sh' %}
 
 {% set num %}{% block num %}{% endblock %}{% endset %}
 

@@ -1,4 +1,4 @@
-{% extends '//mix/autorehell.sh' %}
+{% extends '//die/autorehell.sh' %}
 
 {% block fetch %}
 https://download.samba.org/pub/rsync/src-previews/rsync-3.2.4pre3.tar.gz

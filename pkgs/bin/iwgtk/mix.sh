@@ -1,4 +1,4 @@
-{% extends '//mix/make.sh' %}
+{% extends '//die/make.sh' %}
 
 {% block fetch %}
 https://github.com/J-Lentz/iwgtk/archive/8db48d3dd114a8c12229bc8bfae920330fec2670.zip

@@ -1,4 +1,4 @@
-{% extends '//mix/autohell.sh' %}
+{% extends '//die/autohell.sh' %}
 
 {% block fetch %}
 https://downloads.sourceforge.net/libtirpc/libtirpc-1.3.2.tar.bz2

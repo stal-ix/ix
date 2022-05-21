@@ -1,4 +1,4 @@
-{% extends '//mix/meson.sh' %}
+{% extends '//die/meson.sh' %}
 
 {% block fetch %}
 https://codeberg.org/dnkl/foot/archive/1.12.1.tar.gz

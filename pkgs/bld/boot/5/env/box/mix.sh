@@ -1,4 +1,4 @@
-{% extends '//mix/hub.sh' %}
+{% extends '//die/hub.sh' %}
 
 {% block run_deps %}
 bld/boot/5/env/cur

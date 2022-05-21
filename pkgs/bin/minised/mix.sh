@@ -1,4 +1,4 @@
-{% extends '//mix/make.sh' %}
+{% extends '//die/make.sh' %}
 
 {% block fetch %}
 http://dl.exactcode.de/oss/minised/minised-1.16.tar.gz

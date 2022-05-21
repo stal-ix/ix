@@ -1,4 +1,4 @@
-{% extends '//mix/make.sh' %}
+{% extends '//die/make.sh' %}
 
 {% block fetch %}
 https://github.com/rvaiya/keyd/archive/refs/tags/v2.4.0.tar.gz

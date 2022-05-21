@@ -1,4 +1,4 @@
-{% extends '//mix/meson.sh' %}
+{% extends '//die/meson.sh' %}
 
 {% block fetch %}
 https://gitlab.gnome.org/GNOME/glib/-/archive/2.72.1/glib-2.72.1.tar.bz2

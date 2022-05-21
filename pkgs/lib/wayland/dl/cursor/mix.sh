@@ -1,4 +1,4 @@
-{% extends '//mix/dl/lib.sh' %}
+{% extends '//die/dl/lib.sh' %}
 
 {% block lib_deps %}
 lib/wayland

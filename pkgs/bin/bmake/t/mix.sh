@@ -1,4 +1,4 @@
-{% extends '//mix/autohell.sh' %}
+{% extends '//die/autohell.sh' %}
 
 {% block fetch %}
 https://www.crufty.net/ftp/pub/sjg/bmake-20220418.tar.gz

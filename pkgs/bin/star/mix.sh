@@ -1,4 +1,4 @@
-{% extends '//mix/make.sh' %}
+{% extends '//die/make.sh' %}
 
 {% block fetch %}
 https://sourceforge.net/projects/s-tar/files/star-1.6.tar.bz2

@@ -1,4 +1,4 @@
-{% extends '//mix/autohell.sh' %}
+{% extends '//die/autohell.sh' %}
 
 {% block fetch %}
 https://www.libsdl.org/projects/SDL_image/release/SDL2_image-2.0.5.tar.gz

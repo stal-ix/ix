@@ -1,4 +1,4 @@
-{% extends '//mix/cmake.sh' %}
+{% extends '//die/cmake.sh' %}
 
 {% block fetch %}
 https://github.com/oneapi-src/oneTBB/archive/refs/tags/v2021.4.0.tar.gz

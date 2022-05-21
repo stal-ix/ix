@@ -1,4 +1,4 @@
-{% extends '//mix/std/mix.sh' %}
+{% extends '//die/std/mix.sh' %}
 
 {% block fetch %}
 https://github.com/mesonbuild/meson/archive/refs/tags/0.60.2.tar.gz

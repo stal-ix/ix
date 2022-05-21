@@ -1,4 +1,4 @@
-{% extends '//mix/make.sh' %}
+{% extends '//die/make.sh' %}
 
 {% block fetch %}
 https://github.com/aristocratos/btop/archive/refs/tags/v1.2.0.tar.gz

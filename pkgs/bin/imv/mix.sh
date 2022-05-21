@@ -1,4 +1,4 @@
-{% extends '//mix/meson.sh' %}
+{% extends '//die/meson.sh' %}
 
 {% block fetch %}
 https://git.sr.ht/~exec64/imv/archive/v4.3.1.tar.gz

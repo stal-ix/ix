@@ -1,4 +1,4 @@
-{% extends '//mix/autohell.sh' %}
+{% extends '//die/autohell.sh' %}
 
 {% block fetch %}
 http://deb.debian.org/debian/pool/main/f/file/file_5.39.orig.tar.gz

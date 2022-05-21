@@ -1,4 +1,4 @@
-{% extends '//mix/meson.sh' %}
+{% extends '//die/meson.sh' %}
 
 {% block fetch %}
 https://github.com/dcantrell/bsdutils/archive/refs/tags/v13.0-beta1.tar.gz

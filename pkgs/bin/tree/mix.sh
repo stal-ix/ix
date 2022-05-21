@@ -1,4 +1,4 @@
-{% extends '//mix/make.sh' %}
+{% extends '//die/make.sh' %}
 
 {% block fetch %}
 #http://mama.indstate.edu/users/ice/tree/src/tree-2.0.2.tgz

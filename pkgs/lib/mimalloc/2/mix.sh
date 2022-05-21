@@ -1,4 +1,4 @@
-{% extends '//mix/cmake.sh' %}
+{% extends '//die/cmake.sh' %}
 
 {% block fetch %}
 #https://github.com/microsoft/mimalloc/archive/refs/tags/v2.0.6.tar.gz

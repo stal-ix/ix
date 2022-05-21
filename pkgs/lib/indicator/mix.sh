@@ -1,4 +1,4 @@
-{% extends '//mix/autorehell.sh' %}
+{% extends '//die/autorehell.sh' %}
 
 {% block fetch %}
 https://launchpad.net/libindicator/12.10/12.10.1/+download/libindicator-12.10.1.tar.gz

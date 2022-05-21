@@ -1,4 +1,4 @@
-{% extends '//mix/cmake.sh' %}
+{% extends '//die/cmake.sh' %}
 
 {% block fetch %}
 https://download.kde.org/stable/frameworks/5.94/kwayland-5.94.0.tar.xz

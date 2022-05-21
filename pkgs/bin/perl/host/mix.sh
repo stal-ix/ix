@@ -1,4 +1,4 @@
-{% extends '//mix/make.sh' %}
+{% extends '//die/make.sh' %}
 
 {% block fetch %}
 https://www.cpan.org/src/5.0/perl-5.34.0.tar.gz

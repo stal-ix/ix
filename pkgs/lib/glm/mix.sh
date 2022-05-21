@@ -1,4 +1,4 @@
-{% extends '//mix/c_std.sh' %}
+{% extends '//die/c_std.sh' %}
 
 {% block fetch %}
 https://github.com/g-truc/glm/archive/refs/tags/0.9.9.8.tar.gz

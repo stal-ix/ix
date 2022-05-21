@@ -1,4 +1,4 @@
-{% extends '//mix/cargo.sh' %}
+{% extends '//die/cargo.sh' %}
 
 {% block fetch %}
 https://github.com/sharkdp/bat/archive/refs/tags/v0.18.3.tar.gz

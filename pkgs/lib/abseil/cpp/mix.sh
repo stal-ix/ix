@@ -1,4 +1,4 @@
-{% extends '//mix/cmake.sh' %}
+{% extends '//die/cmake.sh' %}
 
 {% block fetch %}
 https://github.com/abseil/abseil-cpp/archive/refs/tags/20211102.0.tar.gz

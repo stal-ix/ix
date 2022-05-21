@@ -1,4 +1,4 @@
-{% extends '//mix/make.sh' %}
+{% extends '//die/make.sh' %}
 
 {% block fetch %}
 http://download.netsurf-browser.org/libs/releases/libnsgif-0.2.1-src.tar.gz

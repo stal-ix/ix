@@ -1,4 +1,4 @@
-{% extends '//mix/premain.sh' %}
+{% extends '//die/premain.sh' %}
 
 {% block std_box %}
 bld/scripts/dlfcn

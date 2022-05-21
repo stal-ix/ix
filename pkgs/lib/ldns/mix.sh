@@ -1,4 +1,4 @@
-{% extends '//mix/autorehell.sh' %}
+{% extends '//die/autorehell.sh' %}
 
 {% block fetch %}
 https://github.com/NLnetLabs/ldns/archive/refs/tags/1.8.1.tar.gz

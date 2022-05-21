@@ -1,4 +1,4 @@
-{% extends '//mix/autorehell.sh' %}
+{% extends '//die/autorehell.sh' %}
 
 {% block fetch %}
 https://ftp.gnu.org/gnu/libidn/libidn2-2.3.1.tar.gz

@@ -1,4 +1,4 @@
-{% extends '//mix/make.sh' %}
+{% extends '//die/make.sh' %}
 
 {% block fetch %}
 https://code.videolan.org/videolan/x264/-/archive/master/x264-master.tar.bz2

@@ -1,4 +1,4 @@
-{% extends '//mix/cmake.sh' %}
+{% extends '//die/cmake.sh' %}
 
 {% block fetch %}
 https://github.com/libssh2/libssh2/archive/refs/tags/libssh2-1.10.0.tar.gz

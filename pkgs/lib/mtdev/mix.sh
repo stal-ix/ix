@@ -1,4 +1,4 @@
-{% extends '//mix/autorehell.sh' %}
+{% extends '//die/autorehell.sh' %}
 
 {% block fetch %}
 https://bitmath.org/code/mtdev/mtdev-1.1.6.tar.bz2

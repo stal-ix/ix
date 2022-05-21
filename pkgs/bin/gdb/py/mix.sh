@@ -1,4 +1,4 @@
-{% extends '//mix/python/freeze.sh' %}
+{% extends '//die/python/freeze.sh' %}
 
 {% block fetch %}
 {% include '//bin/gdb/t/ver.sh' %}

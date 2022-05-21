@@ -1,4 +1,4 @@
-{% extends '//mix/make.sh' %}
+{% extends '//die/make.sh' %}
 
 {% block fetch %}
 https://github.com/Cyan4973/xxHash/archive/refs/tags/v0.8.1.tar.gz

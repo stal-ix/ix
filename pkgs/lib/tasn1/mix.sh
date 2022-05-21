@@ -1,4 +1,4 @@
-{% extends '//mix/autorehell.sh' %}
+{% extends '//die/autorehell.sh' %}
 
 {% block fetch %}
 https://ftp.gnu.org/gnu/libtasn1/libtasn1-4.17.0.tar.gz

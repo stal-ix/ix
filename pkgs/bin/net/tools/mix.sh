@@ -1,4 +1,4 @@
-{% extends '//mix/make.sh' %}
+{% extends '//die/make.sh' %}
 
 {% block fetch %}
 https://downloads.sourceforge.net/project/net-tools/net-tools-2.10.tar.xz

@@ -1,4 +1,4 @@
-{% extends '//mix/gnome.sh' %}
+{% extends '//die/gnome.sh' %}
 
 {% block fetch %}
 https://download.gnome.org/sources/epiphany/42/epiphany-42.2.tar.xz

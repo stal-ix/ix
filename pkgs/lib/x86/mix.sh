@@ -1,4 +1,4 @@
-{% extends '//mix/make.sh' %}
+{% extends '//die/make.sh' %}
 
 {% block fetch %}
 http://deb.debian.org/debian/pool/main/libx/libx86/libx86_1.1+ds1.orig.tar.gz

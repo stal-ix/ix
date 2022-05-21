@@ -1,4 +1,4 @@
-{% extends '//mix/autohell.sh' %}
+{% extends '//die/autohell.sh' %}
 
 {% block fetch %}
 https://github.com/vifm/vifm/archive/refs/tags/v0.12.tar.gz

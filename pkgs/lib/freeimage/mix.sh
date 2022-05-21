@@ -1,4 +1,4 @@
-{% extends '//mix/make.sh' %}
+{% extends '//die/make.sh' %}
 
 {% block fetch %}
 http://downloads.sourceforge.net/freeimage/FreeImage3180.zip

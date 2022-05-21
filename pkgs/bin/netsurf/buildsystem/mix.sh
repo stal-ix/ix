@@ -1,4 +1,4 @@
-{% extends '//mix/make.sh' %}
+{% extends '//die/make.sh' %}
 
 {% block fetch %}
 https://source.netsurf-browser.org/buildsystem.git/snapshot/buildsystem-release/1.9.tar.gz

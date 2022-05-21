@@ -1,4 +1,4 @@
-{% extends '//mix/meson.sh' %}
+{% extends '//die/meson.sh' %}
 
 {% block fetch %}
 https://gitlab.gnome.org/GNOME/gcr/-/archive/3.41.0/gcr-3.41.0.tar.bz2

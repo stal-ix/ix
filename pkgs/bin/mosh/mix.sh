@@ -1,4 +1,4 @@
-{% extends '//mix/autorehell.sh' %}
+{% extends '//die/autorehell.sh' %}
 
 {% block fetch %}
 https://github.com/mobile-shell/mosh/archive/refs/tags/mosh-1.3.2.tar.gz

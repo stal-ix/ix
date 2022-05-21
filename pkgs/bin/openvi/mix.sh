@@ -1,4 +1,4 @@
-{% extends '//mix/make.sh' %}
+{% extends '//die/make.sh' %}
 
 {% block fetch %}
 https://github.com/johnsonjh/OpenVi/archive/refs/tags/7.0.11.tar.gz

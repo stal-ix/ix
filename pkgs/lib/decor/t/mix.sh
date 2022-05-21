@@ -1,4 +1,4 @@
-{% extends '//mix/meson.sh' %}
+{% extends '//die/meson.sh' %}
 
 {% block fetch %}
 https://gitlab.gnome.org/jadahl/libdecor/-/archive/0.1.0/libdecor-0.1.0.tar.bz2

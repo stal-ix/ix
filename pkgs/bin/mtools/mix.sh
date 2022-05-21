@@ -1,4 +1,4 @@
-{% extends '//mix/autorehell.sh' %}
+{% extends '//die/autorehell.sh' %}
 
 {% block fetch %}
 http://ftp.gnu.org/gnu/mtools/mtools-4.0.39.tar.lz

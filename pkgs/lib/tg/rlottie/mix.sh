@@ -1,4 +1,4 @@
-{% extends '//mix/cmake.sh' %}
+{% extends '//die/cmake.sh' %}
 
 {% block fetch %}
 https://github.com/TelegramMessenger/rlottie/archive/67f103bc8b625f2a4a9e94f1d8c7bd84c5a08d1d.zip

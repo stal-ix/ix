@@ -1,4 +1,4 @@
-{% extends '//mix/autohell.sh' %}
+{% extends '//die/autohell.sh' %}
 
 {% block fetch %}
 https://invisible-mirror.net/archives/mawk/mawk-1.3.4-20200120.tgz

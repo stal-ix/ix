@@ -1,4 +1,4 @@
-{% extends '//mix/cmake.sh' %}
+{% extends '//die/cmake.sh' %}
 
 {% block fetch %}
 https://github.com/AOMediaCodec/libavif/archive/refs/tags/v0.10.0.tar.gz

@@ -1,4 +1,4 @@
-{% extends '//mix/autohell.sh' %}
+{% extends '//die/autohell.sh' %}
 
 {% block fetch %}
 https://downloads.sourceforge.net/mad/libmad-0.15.1b.tar.gz

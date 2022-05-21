@@ -1,4 +1,4 @@
-{% extends '//mix/cmake.sh' %}
+{% extends '//die/cmake.sh' %}
 
 {% block fetch %}
 http://download.osgeo.org/libtiff/tiff-4.3.0.tar.gz

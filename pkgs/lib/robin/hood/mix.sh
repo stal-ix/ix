@@ -1,4 +1,4 @@
-{% extends '//mix/cmake.sh' %}
+{% extends '//die/cmake.sh' %}
 
 {% block fetch %}
 https://github.com/martinus/robin-hood-hashing/archive/refs/tags/3.11.3.tar.gz

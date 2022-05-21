@@ -1,4 +1,4 @@
-{% extends '//mix/autohell.sh' %}
+{% extends '//die/autohell.sh' %}
 
 {% block fetch %}
 https://cache.ruby-lang.org/pub/ruby/3.1/ruby-3.1.0.tar.gz

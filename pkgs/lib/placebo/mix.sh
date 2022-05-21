@@ -1,4 +1,4 @@
-{% extends '//mix/meson.sh' %}
+{% extends '//die/meson.sh' %}
 
 {% block fetch %}
 https://code.videolan.org/videolan/libplacebo/-/archive/v4.192.1/libplacebo-v4.192.1.tar.bz2

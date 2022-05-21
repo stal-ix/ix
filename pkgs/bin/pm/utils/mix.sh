@@ -1,4 +1,4 @@
-{% extends '//mix/autorehell.sh' %}
+{% extends '//die/autorehell.sh' %}
 
 {% block fetch %}
 https://pm-utils.freedesktop.org/releases/pm-utils-1.4.1.tar.gz

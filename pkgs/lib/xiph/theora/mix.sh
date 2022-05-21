@@ -1,4 +1,4 @@
-{% extends '//mix/autorehell.sh' %}
+{% extends '//die/autorehell.sh' %}
 
 {% block fetch %}
 https://downloads.xiph.org/releases/theora/libtheora-1.1.1.tar.bz2

@@ -1,4 +1,4 @@
-{% extends '//mix/cmake.sh' %}
+{% extends '//die/cmake.sh' %}
 
 {% block fetch %}
 https://github.com/nemtrif/utfcpp/archive/refs/tags/v3.2.1.tar.gz

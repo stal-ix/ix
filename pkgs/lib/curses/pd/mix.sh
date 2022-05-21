@@ -1,4 +1,4 @@
-{% extends '//mix/make.sh' %}
+{% extends '//die/make.sh' %}
 
 {% block fetch %}
 https://github.com/wmcbrine/PDCurses/archive/2fa0f10dd844da47ee83c05a40a1ec541ceb95e1.zip

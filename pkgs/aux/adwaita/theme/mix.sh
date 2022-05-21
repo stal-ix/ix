@@ -1,4 +1,4 @@
-{% extends '//mix/autorehell.sh' %}
+{% extends '//die/autorehell.sh' %}
 
 {% block fetch %}
 https://gitlab.gnome.org/GNOME/adwaita-icon-theme/-/archive/41.0/adwaita-icon-theme-41.0.tar.bz2

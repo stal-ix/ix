@@ -1,4 +1,4 @@
-{% extends '//mix/meson.sh' %}
+{% extends '//die/meson.sh' %}
 
 {% block fetch %}
 https://github.com/bugaevc/wl-clipboard/archive/refs/tags/v2.1.0.tar.gz

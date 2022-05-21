@@ -1,4 +1,4 @@
-{% extends '//mix/cargo.sh' %}
+{% extends '//die/cargo.sh' %}
 
 {% block fetch %}
 https://github.com/uutils/coreutils/archive/refs/tags/0.0.8.tar.gz

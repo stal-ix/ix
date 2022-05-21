@@ -1,4 +1,4 @@
-{% extends '//mix/meson.sh' %}
+{% extends '//die/meson.sh' %}
 
 {% block fetch %}
 https://download.gnome.org/sources/pango/1.50/pango-1.50.7.tar.xz

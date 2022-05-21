@@ -1,4 +1,4 @@
-{% extends '//mix/autorehell.sh' %}
+{% extends '//die/autorehell.sh' %}
 
 {% block fetch %}
 https://github.com/syslog-ng/syslog-ng/releases/download/syslog-ng-3.35.1/syslog-ng-3.35.1.tar.gz

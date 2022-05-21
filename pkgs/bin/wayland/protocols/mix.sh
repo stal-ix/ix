@@ -1,4 +1,4 @@
-{% extends '//mix/meson.sh' %}
+{% extends '//die/meson.sh' %}
 
 {% block fetch %}
 #https://wayland.freedesktop.org/releases/wayland-protocols-1.24.tar.xz

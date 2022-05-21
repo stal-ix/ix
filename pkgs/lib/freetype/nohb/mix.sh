@@ -1,4 +1,4 @@
-{% extends '//mix/meson.sh' %}
+{% extends '//die/meson.sh' %}
 
 {% block fetch %}
 https://download.savannah.gnu.org/releases/freetype/freetype-2.12.1.tar.xz

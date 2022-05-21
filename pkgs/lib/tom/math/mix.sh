@@ -1,4 +1,4 @@
-{% extends '//mix/make.sh' %}
+{% extends '//die/make.sh' %}
 
 {% block fetch %}
 https://github.com/libtom/libtommath/releases/download/v1.2.0/ltm-1.2.0.tar.xz

@@ -1,4 +1,4 @@
-{% extends '//mix/hub.sh' %}
+{% extends '//die/hub.sh' %}
 
 {% block run_deps %}
 bin/bison/3/7(std_box=bld/boot/box,intl_ver=no)

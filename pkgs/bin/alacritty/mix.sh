@@ -1,4 +1,4 @@
-{% extends '//mix/cargo.sh' %}
+{% extends '//die/cargo.sh' %}
 
 {% block fetch %}
 https://github.com/alacritty/alacritty/archive/refs/tags/v0.9.0.tar.gz

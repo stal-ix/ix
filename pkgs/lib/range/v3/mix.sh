@@ -1,4 +1,4 @@
-{% extends '//mix/cmake.sh' %}
+{% extends '//die/cmake.sh' %}
 
 {% block fetch %}
 https://github.com/ericniebler/range-v3/archive/9aa032ccd0eb4bd77f58e5b181168f1038c222c6.zip

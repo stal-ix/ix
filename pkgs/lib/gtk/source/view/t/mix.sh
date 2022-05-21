@@ -1,4 +1,4 @@
-{% extends '//mix/gnome.sh' %}
+{% extends '//die/gnome.sh' %}
 
 {% block fetch %}
 https://gitlab.gnome.org/GNOME/gtksourceview/-/archive/5.4.1/gtksourceview-5.4.1.tar.bz2

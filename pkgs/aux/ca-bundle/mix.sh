@@ -1,4 +1,4 @@
-{% extends '//mix/c_std.sh' %}
+{% extends '//die/c_std.sh' %}
 
 {% block fetch %}
 https://github.com/curl/curl/archive/refs/tags/curl-7_80_0.tar.gz

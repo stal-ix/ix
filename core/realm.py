@@ -90,7 +90,7 @@ class RealmCtx:
 
         meta = base64.b64encode(json.dumps(descr).encode()).decode()
 
-        return self.mngr.env.get_template('//mix/realm.py').render(meta=meta)
+        return self.mngr.env.get_template('//die/realm.py').render(meta=meta)
 
     def build_cmd(self):
         return {

@@ -1,4 +1,4 @@
-{% extends '//mix/cmake.sh' %}
+{% extends '//die/cmake.sh' %}
 
 {% block fetch %}
 https://github.com/litespeedtech/ls-qpack/archive/refs/tags/v2.2.3.tar.gz

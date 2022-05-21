@@ -1,4 +1,4 @@
-{% extends '//mix/meson.sh' %}
+{% extends '//die/meson.sh' %}
 
 {% block fetch %}
 https://pwmt.org/projects/zathura-pdf-mupdf/download/zathura-pdf-mupdf-0.3.8.tar.xz

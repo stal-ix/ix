@@ -1,4 +1,4 @@
-{% extends '//mix/autorehell.sh' %}
+{% extends '//die/autorehell.sh' %}
 
 {% block fetch %}
 https://github.com/nghttp2/nghttp2/archive/refs/tags/v1.46.0.tar.gz

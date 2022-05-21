@@ -1,4 +1,4 @@
-{% extends '//mix/dl/map.sh' %}
+{% extends '//die/dl/map.sh' %}
 
 {% block lib_deps %}
 lib/sdl/chimera

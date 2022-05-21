@@ -1,4 +1,4 @@
-{% extends '//mix/meson.sh' %}
+{% extends '//die/meson.sh' %}
 
 {% block fetch %}
 https://gitlab.com/cardboardwm/cardboard/-/archive/b54758d85164fb19468f5ca52588ebea576cd027/cardboard-b54758d85164fb19468f5ca52588ebea576cd027.tar.bz2

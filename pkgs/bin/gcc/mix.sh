@@ -1,4 +1,4 @@
-{% extends '//mix/hub.sh' %}
+{% extends '//die/hub.sh' %}
 
 {% block run_deps %}
 bin/gcc/12(bin_prefix={{for_target}})

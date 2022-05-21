@@ -1,4 +1,4 @@
-{% extends '//mix/autorehell.sh' %}
+{% extends '//die/autorehell.sh' %}
 
 {% block fetch %}
 https://github.com/protocolbuffers/protobuf/archive/refs/tags/v3.20.1.tar.gz

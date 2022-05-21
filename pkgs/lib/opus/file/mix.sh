@@ -1,4 +1,4 @@
-{% extends '//mix/autohell.sh' %}
+{% extends '//die/autohell.sh' %}
 
 {% block fetch %}
 https://downloads.xiph.org/releases/opus/opusfile-0.12.tar.gz

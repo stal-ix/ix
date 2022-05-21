@@ -1,4 +1,4 @@
-{% extends '//mix/autohell.sh' %}
+{% extends '//die/autohell.sh' %}
 
 {% block fetch %}
 https://downloads.scummvm.org/frs/scummvm/2.5.1/scummvm-2.5.1.tar.xz

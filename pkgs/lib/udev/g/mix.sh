@@ -1,4 +1,4 @@
-{% extends '//mix/meson.sh' %}
+{% extends '//die/meson.sh' %}
 
 {% block fetch %}
 https://download-fallback.gnome.org/sources/libgudev/237/libgudev-237.tar.xz

@@ -1,4 +1,4 @@
-{% extends '//mix/meson.sh' %}
+{% extends '//die/meson.sh' %}
 
 {% block fetch %}
 https://github.com/Igalia/WPEBackend-fdo/archive/refs/tags/1.12.0.tar.gz

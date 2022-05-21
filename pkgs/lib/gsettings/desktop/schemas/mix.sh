@@ -1,4 +1,4 @@
-{% extends '//mix/meson.sh' %}
+{% extends '//die/meson.sh' %}
 
 {% block fetch %}
 https://gitlab.gnome.org/GNOME/gsettings-desktop-schemas/-/archive/41.0/gsettings-desktop-schemas-41.0.tar.bz2

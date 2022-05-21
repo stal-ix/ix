@@ -1,4 +1,4 @@
-{% extends '//mix/autorehell.sh' %}
+{% extends '//die/autorehell.sh' %}
 
 {% block fetch %}
 #https://salsa.debian.org/iso-codes-team/iso-codes/-/archive/v4.9.0/iso-codes-v4.9.0.tar.bz2

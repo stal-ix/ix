@@ -1,4 +1,4 @@
-{% extends '//mix/make.sh' %}
+{% extends '//die/make.sh' %}
 
 {% block fetch %}
 https://github.com/ebiggers/libdeflate/archive/refs/tags/v1.10.tar.gz

@@ -1,4 +1,4 @@
-{% extends '//mix/make.sh' %}
+{% extends '//die/make.sh' %}
 
 {% block fetch %}
 https://github.com/opsengine/cpulimit/archive/refs/tags/v0.2.tar.gz

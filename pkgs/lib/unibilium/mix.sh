@@ -1,4 +1,4 @@
-{% extends '//mix/make.sh' %}
+{% extends '//die/make.sh' %}
 
 {% block fetch %}
 https://github.com/mauke/unibilium/archive/refs/tags/v2.0.0.tar.gz

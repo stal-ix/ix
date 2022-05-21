@@ -1,4 +1,4 @@
-{% extends '//mix/cmake.sh' %}
+{% extends '//die/cmake.sh' %}
 
 {% block fetch %}
 https://s3.amazonaws.com/json-c_releases/releases/json-c-0.16.tar.gz

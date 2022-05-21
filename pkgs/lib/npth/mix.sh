@@ -1,4 +1,4 @@
-{% extends '//mix/autorehell.sh' %}
+{% extends '//die/autorehell.sh' %}
 
 {% block fetch %}
 https://www.gnupg.org/ftp/gcrypt/npth/npth-1.6.tar.bz2

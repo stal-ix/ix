@@ -1,4 +1,4 @@
-{% extends '//mix/cmake.sh' %}
+{% extends '//die/cmake.sh' %}
 
 {% block fetch %}
 https://github.com/freedesktop/uchardet/archive/refs/tags/v0.0.7.tar.gz

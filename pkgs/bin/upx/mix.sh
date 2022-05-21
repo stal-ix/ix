@@ -1,4 +1,4 @@
-{% extends '//mix/make.sh' %}
+{% extends '//die/make.sh' %}
 
 {% block fetch %}
 https://github.com/upx/upx/releases/download/v3.96/upx-3.96-src.tar.xz

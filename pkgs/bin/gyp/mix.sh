@@ -1,4 +1,4 @@
-{% extends '//mix/std/mix.sh' %}
+{% extends '//die/std/mix.sh' %}
 
 {% block fetch %}
 https://chromium.googlesource.com/external/gyp/+archive/d6c5dd51dc3a60bf4ff32a5256713690a1a10376.tar.gz

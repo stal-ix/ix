@@ -1,4 +1,4 @@
-{% extends '//mix/autorehell.sh' %}
+{% extends '//die/autorehell.sh' %}
 
 {% block fetch %}
 https://dbus.freedesktop.org/releases/dbus-glib/dbus-glib-0.112.tar.gz

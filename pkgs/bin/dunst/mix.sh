@@ -1,4 +1,4 @@
-{% extends '//mix/make.sh' %}
+{% extends '//die/make.sh' %}
 
 {% block fetch %}
 https://github.com/dunst-project/dunst/archive/refs/tags/v1.8.1.tar.gz

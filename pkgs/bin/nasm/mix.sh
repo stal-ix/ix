@@ -1,4 +1,4 @@
-{% extends '//mix/autorehell.sh' %}
+{% extends '//die/autorehell.sh' %}
 
 {% block fetch %}
 https://github.com/netwide-assembler/nasm/archive/refs/tags/nasm-2.15.05.tar.gz
