@@ -9,9 +9,9 @@ import core.error as ce
 
 
 CLIS = [
-    ('core.realm_cmd', 'realm_mut', False),
-    ('core.realm_cmd', 'realm_list', False),
-    ('core.realm_cmd', 'realm_purge', False),
+    ('core.realm_cmd', 'mut', False),
+    ('core.realm_cmd', 'list', False),
+    ('core.realm_cmd', 'purge', False),
 
     ('core.pypi_cmd', 'pypi_update', False),
 
