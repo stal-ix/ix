@@ -2,7 +2,7 @@
 
 {% block fetch %}
 https://github.com/xkbcommon/libxkbcommon/archive/refs/tags/xkbcommon-1.4.1.tar.gz
-sha:
+sha:3b86670dd91441708dedc32bc7f684a034232fd4a9bb209f53276c9783e9d40e
 {% endblock %}
 
 {% block bld_tool %}
