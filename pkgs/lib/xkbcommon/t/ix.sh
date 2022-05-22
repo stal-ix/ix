@@ -1,8 +1,8 @@
 {% extends '//die/meson.sh' %}
 
 {% block fetch %}
-https://github.com/xkbcommon/libxkbcommon/archive/refs/tags/xkbcommon-1.4.0.tar.gz
-sha:51b5a732d6d6976da9d52b8f136850c193c68a31a9bdf28965a81cf8e62e919e
+https://github.com/xkbcommon/libxkbcommon/archive/refs/tags/xkbcommon-1.4.1.tar.gz
+sha:
 {% endblock %}
 
 {% block bld_tool %}
