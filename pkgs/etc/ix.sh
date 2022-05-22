@@ -18,7 +18,7 @@ mkdir passwd.d
 
 cat << EOF > passwd.d/root
 root:x:0:0:root:/home/root:/bin/sh
-mix:x:1000:1000:none:/home/mix:/bin/sh
+ix:x:1000:1000:none:/home/ix:/bin/sh
 EOF
 
 cat << EOF > group

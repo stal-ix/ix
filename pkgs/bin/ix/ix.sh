@@ -24,7 +24,7 @@ done
 
 {% block patch %}
 cat - mix << EOF > _
-__file__ = "${out}/bin/mix"
+__file__ = "${out}/bin/ix"
 EOF
 
 mv _ mix

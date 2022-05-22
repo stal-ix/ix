@@ -2,7 +2,7 @@
 
 {% block run_deps %}
 bin/iw
-bin/mix
+bin/ix
 bin/sud
 bin/iwd/runit
 bin/runit/sys

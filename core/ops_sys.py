@@ -7,7 +7,7 @@ def run_cmd(cmd, input=''):
         '/bin/sudo',
         '/bin/chrt', '-i', '0',
         '/bin/nice', '-n', '20',
-        '/bin/su', '-s', '/bin/mix', '-', 'mix'
+        '/bin/su', '-s', '/bin/ix', '-', 'ix'
     ] + cmd
 
     subprocess.run(cmd, shell=False, input=input.encode(), check=True)
