@@ -13,11 +13,11 @@ CLIS = [
     ('core.realm_cmd', 'list', False),
     ('core.realm_cmd', 'purge', False),
 
-    ('core.pypi_cmd', 'pypi_update', False),
-
     ('core.build_cmd', 'build', False),
 
     ('core.gc_cmd', 'gc', False),
+
+    ('core.pypi_cmd', 'pypi_update', True),
 
     ('core.misc_cmd', 'misc_extract', True),
     ('core.misc_cmd', 'misc_chksum', True),

@@ -9,7 +9,6 @@ import itertools
 import subprocess
 
 import core.error as ce
-import core.cache as cc
 import core.utils as cu
 
 
@@ -157,7 +156,6 @@ class Executor:
         self.o = group_by_out(nodes)
         self.l = []
         self.f = set()
-        self.store_cache = False
 
     async def visit_lst(self, l):
         await gather(self.visit_node(self.o[n]) for n in l)
@@ -188,12 +186,6 @@ class Executor:
         if all(os.path.isfile(x) for x in iter_out(n)):
             return
 
-        cached = n.get('cache', False)
-
-        if cached:
-            if await asyncio.to_thread(self.load, n):
-                return
-
         await self.visit_lst(iter_in(n))
 
         async with self.s[n['pool']]:
@@ -207,9 +199,6 @@ class Executor:
                 self.f.remove(o)
                 self.in_fly()
 
-        if cached and self.store_cache:
-            self.l.append(asyncio.create_task(asyncio.to_thread(self.store, n)))
-
     def execute_node(self, n):
         for c in iter_cmd(n):
             execute_cmd(c)
@@ -220,28 +209,6 @@ class Executor:
             if not os.path.isfile(o):
                 with open(o, 'w') as f:
                     pass
-
-    def load(self, n):
-        return False
-
-        try:
-            for d in n['out_dir']:
-                cc.restore_dir(d)
-
-            return True
-        except Exception as e:
-            if '404' not in str(e):
-                raise e
-
-        return False
-
-    def store(self, n):
-        try:
-            for d in n['out_dir']:
-                cc.store_dir(d)
-        except Exception as e:
-            if 'AWS_' not in str(e):
-                raise e
 
 
 async def arun(g):
