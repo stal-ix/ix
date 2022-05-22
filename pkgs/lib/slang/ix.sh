@@ -1,8 +1,8 @@
 {% extends '//die/autohell.sh' %}
 
 {% block fetch %}
-https://storage.yandexcloud.net/mix-cache/slang-2.3.2.tar.bz2
-c2d5a7aa0246627da490be4e399c87cb
+https://www.jedsoft.org/releases/slang/slang-2.3.2.tar.bz2
+sha:fc9e3b0fc4f67c3c1f6d43c90c16a5c42d117b8e28457c5b46831b8b5d3ae31a
 {% endblock %}
 
 {% block lib_deps %}
