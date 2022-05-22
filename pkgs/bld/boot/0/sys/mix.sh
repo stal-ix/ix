@@ -30,7 +30,7 @@ def which(paths, b):
             return pp
 
 def wsys(b):
-    return which(['/bin', '/usr/bin', '/usr/local/bin', '/mix/realm/boot/bin'], b)
+    return which(['/bin', '/usr/bin', '/usr/local/bin', '/ix/realm/boot/bin'], b)
 
 def wloc(bins):
     for b in bins:

@@ -19,9 +19,9 @@ add_suffix() (
 {% block step_setup %}
 {{super()}}
 
-export SIP=$(add_suffix ${MIX_T_DIR} include)
-export SLP=$(add_suffix ${MIX_T_DIR} lib)
-export SPP=$(add_suffix ${MIX_B_DIR} bin)
+export SIP=$(add_suffix ${IX_T_DIR} include)
+export SLP=$(add_suffix ${IX_T_DIR} lib)
+export SPP=$(add_suffix ${IX_B_DIR} bin)
 {% endblock %}
 
 {% block configure %}

@@ -19,10 +19,10 @@ def iter_lines():
     yield 'set -e'
     yield 'set -x'
 
-    for p in os.environ['MIX_B_DIR'].split(':'):
+    for p in os.environ['IX_B_DIR'].split(':'):
         yield '. ' + os.path.join(p, 'env')
 
-    for p in os.environ['MIX_T_DIR'].split(':'):
+    for p in os.environ['IX_T_DIR'].split(':'):
         yield '. ' + os.path.join(p, 'env')
 
     yield EXTR

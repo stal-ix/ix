@@ -18,7 +18,7 @@ source_env() {
 }
 
 fast_rm() (
-    mv ${1} /mix/trash/ || rm -rf ${1}
+    mv ${1} /ix/trash/ || rm -rf ${1}
 )
 
 {% block functions %}
@@ -37,7 +37,7 @@ export CMAKE_PREFIX_PATH=
 export PYTHONDONTWRITEBYTECODE=1
 {% endblock %}
 
-source_env "${MIX_B_DIR}"
+source_env "${IX_B_DIR}"
 
 # lib only
 export COFLAGS=

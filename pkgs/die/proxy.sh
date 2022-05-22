@@ -8,7 +8,7 @@ set +u # TODO(pg): relax
 {% endblock %}
 
 {% block step_setup %}
-source_env "${MIX_T_DIR}"
+source_env "${IX_T_DIR}"
 {% endblock %}
 
 {% block step_unpack %}

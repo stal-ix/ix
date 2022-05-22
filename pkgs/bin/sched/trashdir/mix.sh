@@ -8,6 +8,6 @@ bin/sched(delay={{delay}})
 cd ${out}; mkdir -p etc/sche.d/{{delay}}; cd etc/sche.d/{{delay}}
 
 cat << EOF > trashdir.sh
-rm -rf /mix/trash/*
+rm -rf /ix/trash/*
 EOF
 {% endblock %}

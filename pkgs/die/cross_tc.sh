@@ -1,6 +1,6 @@
 {% block setup_host_tc %}
 (
-    source_env "${MIX_H_DIR}"
+    source_env "${IX_H_DIR}"
     setup_tc host
 )
 
@@ -12,7 +12,7 @@ export HOST_RANLIB=${PWD}/host/ranlib
 {% endblock %}
 
 {% block setup_target_tc %}
-source_env "${MIX_T_DIR}"
+source_env "${IX_T_DIR}"
 
 # yep, THE ONLY place for this shit
 pushd ${bld}

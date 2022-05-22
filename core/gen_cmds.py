@@ -110,9 +110,9 @@ class CmdBuild:
 
             yield p.uniq_id, p.out_dir
 
-        yield 'MIX_B_DIR', rev_dirs(h_bin)
-        yield 'MIX_H_DIR', rev_dirs(h_lib)
-        yield 'MIX_T_DIR', rev_dirs(t_lib)
+        yield 'IX_B_DIR', rev_dirs(h_bin)
+        yield 'IX_H_DIR', rev_dirs(h_lib)
+        yield 'IX_T_DIR', rev_dirs(t_lib)
 
         yield 'PATH', ':'.join(p.out_dir + '/bin' for p in h_bin)
 

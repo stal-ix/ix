@@ -5,7 +5,7 @@ import sys
 
 l = sys.argv[1]
 
-for p in os.environ['MIX_T_DIR'].split(':'):
+for p in os.environ['IX_T_DIR'].split(':'):
     pp = os.path.join(p, 'lib', l)
 
     if os.path.isfile(pp):

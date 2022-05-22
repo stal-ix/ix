@@ -21,13 +21,13 @@ export CPPFLAGS="-Wno-unknown-warning-option ${CPPFLAGS}"
 
 export PC_H=$(
     export PKG_COFIG_PATH=
-    source_env "${MIX_B_DIR}:${MIX_H_DIR}"
+    source_env "${IX_B_DIR}:${IX_H_DIR}"
     echo ${PKG_CONFIG_PATH}
 )
 
 export PC_T=$(
     export PKG_COFIG_PATH=
-    source_env "${MIX_T_DIR}"
+    source_env "${IX_T_DIR}"
     echo ${PKG_CONFIG_PATH}
 )
 
