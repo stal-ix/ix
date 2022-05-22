@@ -33,7 +33,7 @@ def enrich(d):
     d = cu.copy_dict(d)
 
     if 'vendor' not in d:
-        d['vendor'] = 'mix'
+        d['vendor'] = 'ix'
 
     if 'gnu_arch' not in d:
         if x := d.get('arch'):
@@ -110,18 +110,18 @@ class Config:
     def __init__(self, binary, where, root):
         self.binary = binary
         self.where = where
-        self.mix_dir = root
+        self.ix_dir = root
 
     def ops(self):
         return co.construct(self)
 
     @property
     def store_dir(self):
-        return os.path.join(self.mix_dir, 'store')
+        return os.path.join(self.ix_dir, 'store')
 
     @property
     def trash_dir(self):
-        return os.path.join(self.mix_dir, 'trash')
+        return os.path.join(self.ix_dir, 'trash')
 
     def ensure_trash_dir(self):
         res = self.trash_dir
@@ -135,11 +135,11 @@ class Config:
 
     @property
     def realm_dir(self):
-        return os.path.join(self.mix_dir, 'realm')
+        return os.path.join(self.ix_dir, 'realm')
 
     @property
     def build_dir(self):
-        return os.path.join(self.mix_dir, 'build')
+        return os.path.join(self.ix_dir, 'build')
 
     @property
     @cu.cached_method

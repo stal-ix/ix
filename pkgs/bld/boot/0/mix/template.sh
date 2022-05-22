@@ -19,7 +19,7 @@ os.chdir(out)
 
 for x in os.listdir(src):
     if len(x) > 16:
-        mix.untar(os.path.join(src, x))
+        ix.untar(os.path.join(src, x))
 
 envp = os.path.join(out, 'env')
 

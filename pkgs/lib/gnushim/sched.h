@@ -6,7 +6,7 @@
 extern "C" {
 #endif
 
-#define sched_setscheduler mix_sched_setscheduler
+#define sched_setscheduler ix_sched_setscheduler
 int sched_setscheduler(pid_t pid, int policy, const struct sched_param* param);
 
 #if defined(__cplusplus)

@@ -11,8 +11,8 @@ import core.error as ce
 BUILD_PY_SCRIPT = '''
 import atexit
 
-mix.header()
-atexit.register(mix.footer)
+ix.header()
+atexit.register(ix.footer)
 
 # suc
 {build_script}
@@ -23,7 +23,7 @@ atexit.register(mix.footer)
 FETCH_SRC_SCRIPT = '''
 import sys
 
-mix.fetch_url(sys.argv[-2], sys.argv[-1])
+ix.fetch_url(sys.argv[-2], sys.argv[-1])
 '''.strip()
 
 
@@ -36,7 +36,7 @@ new = sys.argv[2]
 md5 = sys.argv[3]
 
 print(f'check {old} checksum, expect {md5}')
-mix.check_md5(old, md5)
+ix.check_md5(old, md5)
 os.link(old, new)
 '''.strip()
 

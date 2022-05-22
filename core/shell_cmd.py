@@ -64,9 +64,14 @@ def fetch_url_curl(curl, url, out):
     return subprocess.check_call([curl, '-k', '-L', '--output', out, url], shell=False)
 
 
+def iter_bin():
+    yield 'curl', fetch_url_curl
+    yield 'wget', fetch_url_wget
+
+
 def iter_meth_1():
     for p in ['/ix/realm/boot/bin', '/usr/bin']:
-        for n, m in [('curl', fetch_url_curl), ('wget', fetch_url_wget)]:
+        for n, m in iter_bin():
             pp = os.path.join(p, n)
 
             if os.path.isfile(pp):

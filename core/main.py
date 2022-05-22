@@ -46,7 +46,7 @@ def find_handler(args):
 
 
 def print_help():
-    print('usage: mix <command>:')
+    print('usage: ix <command>:')
 
     for k, v, hide in CLIS:
         if not hide:
@@ -80,11 +80,11 @@ def main_func(args, binary):
     run()
 
 
-def main(argv, mix):
+def main(argv, ix):
     cu.step('start main')
 
     try:
-        main_func(argv[1:], mix)
+        main_func(argv[1:], ix)
     except ce.Error as e:
         if e.context:
             if '\n' in e.context:

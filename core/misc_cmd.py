@@ -130,7 +130,7 @@ def cli_misc_runpy(ctx):
     sys.argv = ['runpy'] + ctx['args']
 
     g = {
-        'mix': Iface(),
+        'ix': Iface(),
     }
 
     exec(sys.stdin.read(), g, g)

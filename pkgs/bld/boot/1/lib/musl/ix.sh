@@ -1,8 +1,8 @@
 {% extends '//die/py.py' %}
 
 {% block fetch %}
-https://musl.libc.org/releases/musl-1.2.2.tar.gz
-aed8ae9e2b0898151b36a204088292dd
+https://musl.libc.org/releases/musl-1.2.3.tar.gz
+sha:7d5b0b6062521e4627e099e4c9dc8248d32a30285e959b7eecaa780cf8cfd4a4
 {% endblock %}
 
 {% block lib_deps %}
