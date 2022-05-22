@@ -57,7 +57,7 @@ llvm-objdump
 {% endblock %}
 
 {% block ninja_install_targets %}
-{% for t in mix.parse_list(targets) %}
+{% for t in ix.parse_list(targets) %}
 install-{{t}}
 {% endfor %}
 {% endblock %}

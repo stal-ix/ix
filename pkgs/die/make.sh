@@ -51,7 +51,7 @@ V=0
 {{make_target}}
 {% endset %}
 
-{{mix.fix_list(cmd_args1)}} || {{mix.fix_list(cmd_args2)}}
+{{ix.fix_list(cmd_args1)}} || {{ix.fix_list(cmd_args2)}}
 {% endblock %}
 
 {% block install %}
@@ -62,5 +62,5 @@ install
 {% endblock %}
 {% endset %}
 
-{{mix.fix_list(cmd_args)}}
+{{ix.fix_list(cmd_args)}}
 {% endblock %}

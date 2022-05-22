@@ -17,7 +17,7 @@ export CARGO_HOME=${tmp}/obj
 {% endset %}
 
 {% block build %}
-cargo build --release {{mix.fix_list(cargo_options)}}
+cargo build --release {{ix.fix_list(cargo_options)}}
 {% endblock %}
 
 {% block install %}

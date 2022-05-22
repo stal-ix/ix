@@ -20,12 +20,12 @@
       {% endblock %}
     {% endset %}
 
-    {% for f in mix.parse_list(c_rename_symbol) %}
+    {% for f in ix.parse_list(c_rename_symbol) %}
       {{f}}={{uniq_id}}_{{f}}
     {% endfor %}
   {% endset %}
 
-  {% for f in mix.parse_list(cpp_defines) %}
+  {% for f in ix.parse_list(cpp_defines) %}
     -D{{f}}
   {% endfor %}
 
@@ -34,14 +34,14 @@
     {% endblock %}
   {% endset %}
 
-  {% for f in mix.parse_list(cpp_includes) %}
+  {% for f in ix.parse_list(cpp_includes) %}
     -I{{f}}
   {% endfor %}
 {% endset %}
 
 setup_target_env() {
     echo 'setup target env'
-{% for f in mix.parse_list(cpp_flags) %}
+{% for f in ix.parse_list(cpp_flags) %}
     export CPPFLAGS="{{f}} ${CPPFLAGS}"
 {% endfor %}
 {% block setup %}

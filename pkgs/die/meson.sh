@@ -67,14 +67,14 @@ b_lundef=false
 {% endblock %}
 {% endset %}
 
-{% for f in mix.parse_list(meson_flags) %}
+{% for f in ix.parse_list(meson_flags) %}
 -D{{f}}
 {% endfor %}
 
 {{ninja_build_dir}}
 {% endset %}
 
-{{mix.fix_list(command_args)}}
+{{ix.fix_list(command_args)}}
 {% endblock %}
 
 {% block step_patch %}

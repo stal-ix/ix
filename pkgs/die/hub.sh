@@ -1,1 +1,1 @@
-{% extends 'mix.json' %}
+{% extends 'ix.json' %}

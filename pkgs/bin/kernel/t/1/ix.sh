@@ -475,7 +475,7 @@ iwlwifi-cc-a0-62.ucode
 {% endblock %}
 
 {% block kconfig_flags %}
-CONFIG_EXTRA_FIRMWARE="{{mix.fix_list(self.firmware())}}"
+CONFIG_EXTRA_FIRMWARE="{{ix.fix_list(self.firmware())}}"
 CONFIG_EXTRA_FIRMWARE_DIR="${LINUX_FIRMWARE}"
 {% endblock %}
 

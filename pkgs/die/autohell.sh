@@ -89,6 +89,6 @@ ${COFLAGS}
 {% endif %}
 {% endset %}
 
-{{mix.fix_list(command_args)}}
+{{ix.fix_list(command_args)}}
 {% endblock %}
 {% endblock %}

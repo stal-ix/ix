@@ -50,7 +50,7 @@ PLATFORM_linux_x86_64="linux-x86_64-clang"
 
 perl ./Configure \
     ${PLATFORM_{{target.os}}_{{target.arch}}} \
-    {{mix.fix_list(openssl_conf_opts)}}
+    {{ix.fix_list(openssl_conf_opts)}}
 {% endblock %}
 
 {% block env_lib %}

@@ -64,7 +64,7 @@ BUILD_SHARED_LIBS=OFF
 {% endblock %}
 {% endset %}
 
-{% for f in mix.parse_list(cmake_flags) %}
+{% for f in ix.parse_list(cmake_flags) %}
 -D{{f}}
 {% endfor %}
 
@@ -73,7 +73,7 @@ BUILD_SHARED_LIBS=OFF
 {% endblock %}
 {% endset %}
 
-{{mix.fix_list(command_args)}}
+{{ix.fix_list(command_args)}}
 {% endblock %}
 
 {% block step_patch %}

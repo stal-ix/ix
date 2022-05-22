@@ -12,5 +12,5 @@ bld/pkg/config
 {% block gn_args %}
 {% endblock %}
 {% endset %}
-gn gen {{ninja_build_dir}} --args='{{mix.fix_list(gn_args)}}'
+gn gen {{ninja_build_dir}} --args='{{ix.fix_list(gn_args)}}'
 {% endblock %}

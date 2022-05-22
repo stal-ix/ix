@@ -29,7 +29,7 @@ done
 {% endset %}
 
 {% block configure %}
-python3 waf configure {{mix.fix_list(waf_flags)}}
+python3 waf configure {{ix.fix_list(waf_flags)}}
 {% endblock %}
 
 {% block build %}

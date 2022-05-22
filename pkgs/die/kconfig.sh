@@ -19,7 +19,7 @@ defconfig
 {% endblock %}
 {% endset %}
 
-{{mix.fix_list(make_cmd)}}
+{{ix.fix_list(make_cmd)}}
 {% endblock %}
 
 {% block make_flags %}

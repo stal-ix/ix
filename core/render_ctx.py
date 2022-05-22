@@ -89,7 +89,7 @@ class RenderContext:
         kind = pkg.flags['kind']
 
         args = cu.dict_dict_update({
-            'mix': self,
+            'ix': self,
             'host': pkg.host,
             'is_cross': True,
             'name': pkg.name,

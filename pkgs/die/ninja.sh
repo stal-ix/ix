@@ -19,11 +19,11 @@ install
 {% endset %}
 
 {% block build %}
-ninja -C {{ninja_build_dir}} -j {% block ninja_threads %}${make_thrs}{% endblock %} {{mix.fix_list(ninja_build_targets)}}
+ninja -C {{ninja_build_dir}} -j {% block ninja_threads %}${make_thrs}{% endblock %} {{ix.fix_list(ninja_build_targets)}}
 {% endblock %}
 
 {% block install %}
-ninja -C {{ninja_build_dir}} {{mix.fix_list(ninja_install_targets)}}
+ninja -C {{ninja_build_dir}} {{ix.fix_list(ninja_install_targets)}}
 {% endblock %}
 
 {% block step_configure %}

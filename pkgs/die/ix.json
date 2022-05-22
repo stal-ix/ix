@@ -46,33 +46,33 @@
 {% endset %}
 
 {% block bld_host_libs %}
-{{mix.list_to_json(host_libs)}}
+{{ix.list_to_json(host_libs)}}
 {% endblock %}
 
 {% block bld_target_libs %}
-{{mix.list_to_json(lib_deps + ' ' + bld_libs)}}
+{{ix.list_to_json(lib_deps + ' ' + bld_libs)}}
 {% endblock %}
 
 {% block build_depends %}
-{{mix.list_to_json(bld_deps)}}
+{{ix.list_to_json(bld_deps)}}
 {% endblock %}
 
 {% block runtime_depends %}
-{{mix.list_to_json(run_deps)}}
+{{ix.list_to_json(run_deps)}}
 {% endblock %}
 
 {% block runtime_data %}
-{{mix.list_to_json(run_data)}}
+{{ix.list_to_json(run_data)}}
 {% endblock %}
 
 {% block library_depends %}
-{{mix.list_to_json(lib_deps)}}
+{{ix.list_to_json(lib_deps)}}
 {% endblock %}
 
 {% block induced_depends %}
-{{mix.list_to_json(ind_deps)}}
+{{ix.list_to_json(ind_deps)}}
 {% endblock %}
 
 {% block build_fetch %}
-{{mix.urls_to_json(fetch)}}
+{{ix.urls_to_json(fetch)}}
 {% endblock %}
