@@ -27,7 +27,7 @@ none:x:1:
 EOF
 
 cat << EOF > hosts
-127.0.0.1  localhost mix
+127.0.0.1  localhost ix
 ::1        localhost
 EOF
 

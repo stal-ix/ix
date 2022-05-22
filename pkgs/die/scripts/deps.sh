@@ -10,6 +10,6 @@ while read l; do
     fi
 
     echo ${l} >> urls.sh
-    mix misc chksum ${p} sem >> urls.sh
+    ix misc chksum ${p} sem >> urls.sh
     echo >> urls.sh
 done

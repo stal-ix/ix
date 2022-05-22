@@ -31,3 +31,8 @@ mv _ mix
 {% endblock %}
 
 {% block entry_point %}mix{% endblock %}
+
+{% block install %}
+{{super()}}
+mv ${out}/bin/mix ${out}/bin/ix
+{% endblock %}
