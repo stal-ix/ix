@@ -5,7 +5,7 @@ PYPI = json.loads(parent.serve('pypi.json'))
 
 
 TMPL = r'''
-{% extends '//die/std/mix.sh' %}
+{% extends '//die/std/ix.sh' %}
 
 {% block fetch %}
 {url}
@@ -13,7 +13,7 @@ TMPL = r'''
 {% endblock %}
 
 {% block bld_tool %}
-bld/python/mix.sh
+bld/python/ix.sh
 {% endblock %}
 
 {% block run_deps %}
@@ -60,7 +60,7 @@ def gen_pkg(rec):
 
     t = t.replace('{url}', rec['url'])
     t = t.replace('{md5}', rec['md5'])
-    t = t.replace('{run}', ' '.join(x + '/mix.sh' for x in rec.get('run', [])))
+    t = t.replace('{run}', ' '.join(x + '/ix.sh' for x in rec.get('run', [])))
 
     return t
 

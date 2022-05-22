@@ -1,4 +1,4 @@
-{% extends 'std/mix.sh' %}
+{% extends 'std/ix.sh' %}
 
 {% block script_init_env %}
 set +u # TODO(pg): relax

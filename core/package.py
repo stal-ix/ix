@@ -168,7 +168,7 @@ class Package:
 
     @property
     def norm_name(self):
-        return self.name.removesuffix('.sh').removesuffix('/mix')
+        return self.name.removesuffix('.sh').removesuffix('/ix')
 
     @property
     @cu.cached_method
@@ -196,7 +196,7 @@ class Package:
         res = self.selector['name']
 
         if not res.endswith('.sh'):
-            res = res + '/mix.sh'
+            res = res + '/ix.sh'
 
         return res
 

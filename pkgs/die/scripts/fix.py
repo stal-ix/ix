@@ -34,7 +34,7 @@ def fix(d, n):
             if 'extends' in l or 'include' in l:
                 yield l
             else:
-                yield l.replace('/mix.sh', '')
+                yield l.replace('/ix.sh', '')
 
     return '\n'.join(it()).strip() + '\n'
 

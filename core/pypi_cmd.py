@@ -19,7 +19,7 @@ def iter_recs(args):
 
         for rec in data['urls']:
             if '.whl' in rec['url']:
-                yield f'{a}/mix.sh', {
+                yield f'{a}/ix.sh', {
                     'url': rec['url'],
                     'md5': rec['md5_digest'],
                 }

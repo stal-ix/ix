@@ -1,4 +1,4 @@
-{% extends 'std/mix.sh' %}
+{% extends 'std/ix.sh' %}
 
 {% block install %}
 mkdir -p ${out}/share/fonts
