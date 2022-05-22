@@ -103,7 +103,7 @@ class RealmCtx:
         }
 
     def prepare(self):
-        cg.run(self.mngr.config.ops(), [self])
+        cg.run(self.mngr.config.ops, [self])
 
         return Realm(self.mngr, self.pkg_name, self.out_dir)
 

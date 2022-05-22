@@ -2,7 +2,7 @@ extract0() (
     if command -v extract; then
         extract 0 ${1}
     else
-        ${exe} ${mix} misc extract ${1}
+        {{ix_bin}} misc extract ${1}
     fi
 )
 

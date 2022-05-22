@@ -67,7 +67,7 @@ class ScriptBuilder:
 
     def build_py_script(self, data, env, args=[]):
         return {
-            'args': [sys.executable, self.config.binary, 'misc', 'runpy'] + args,
+            'args': self.config.ops.respawn() + ['misc', 'runpy'] + args,
             'stdin': BUILD_PY_SCRIPT.replace('{build_script}', data),
             'env': env,
         }
@@ -124,8 +124,6 @@ class CmdBuild:
         yield 'uid', uid
         yield 'out', self.package.out_dir
         yield 'tmp', self.package.config.build_dir + '/' + uid
-        yield 'mix', self.package.config.binary
-        yield 'exe', sys.executable
 
         yield 'make_thrs', str(multiprocessing.cpu_count() - 2)
 

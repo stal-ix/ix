@@ -20,4 +20,4 @@ def cli_build(ctx):
         if 'kind' not in f:
             f['kind'] = parse_kind(p['name'])
 
-    cg.run(config.ops(), list(cm.Manager(config).load_packages(pkgs)))
+    cg.run(config.ops, list(cm.Manager(config).load_packages(pkgs)))

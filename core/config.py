@@ -111,9 +111,8 @@ class Config:
         self.binary = binary
         self.where = where
         self.ix_dir = root
-
-    def ops(self):
-        return co.construct(self)
+        # circular ref
+        self.ops = co.construct(self)
 
     @property
     def store_dir(self):

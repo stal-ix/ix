@@ -7,7 +7,8 @@ def run_cmd(cmd, input=''):
         '/bin/sudo',
         '/bin/chrt', '-i', '0',
         '/bin/nice', '-n', '20',
-        '/bin/su', '-s', '/bin/ix', '-', 'ix'
+        '/bin/su', '-s',
+        '/bin/ix', '-', 'ix'
     ] + cmd
 
     subprocess.run(cmd, shell=False, input=input.encode(), check=True)
@@ -19,3 +20,6 @@ class Ops:
 
     def gc(self):
         run_cmd(['gc'])
+
+    def respawn(self):
+        return ['/bin/ix']
