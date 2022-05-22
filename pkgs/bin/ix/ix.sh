@@ -1,8 +1,8 @@
 {% extends '//die/python/bin.sh' %}
 
 {% block fetch %}
-https://github.com/pg83/mix/archive/refs/tags/v4.tar.gz
-sha:acd5fbba05e5e49677d53a7e308dc31fd3d02a43b60130836b528c4628177692
+https://github.com/pg83/mix/archive/refs/tags/v5.tar.gz
+sha:e183a05cefaf80c7300f865c947bf31e36604e6513089e20fc2a02792fd08a8f
 {% endblock %}
 
 {% block bld_libs %}
@@ -23,16 +23,11 @@ done
 {% endblock %}
 
 {% block patch %}
-cat - mix << EOF > _
+cat - ix << EOF > _
 __file__ = "${out}/bin/ix"
 EOF
 
-mv _ mix
+mv _ ix
 {% endblock %}
 
-{% block entry_point %}mix{% endblock %}
-
-{% block install %}
-{{super()}}
-mv ${out}/bin/mix ${out}/bin/ix
-{% endblock %}
+{% block entry_point %}ix{% endblock %}
