@@ -167,7 +167,7 @@ class Executor:
             await x
 
     def in_fly(self):
-        log(f'INFLY {self.f}', color='y')
+        log('\n'.join('INFLY ' + x for x in sorted(self.f)), color='y')
 
     async def visit_node(self, n):
         async with n['l']:
