@@ -1,6 +1,10 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
+bin/fixtty
+bin/runsrv
+bin/mingetty
+bin/subreaper
 bin/mingetty/runit/slot(slot=1)
 bin/mingetty/runit/slot(slot=2)
 bin/mingetty/runit/slot(slot=3)

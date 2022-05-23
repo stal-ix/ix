@@ -1,12 +1,5 @@
 {% extends '//die/proxy.sh' %}
 
-{% block run_deps %}
-bin/fixtty
-bin/runsrv
-bin/mingetty
-bin/subreaper
-{% endblock %}
-
 {% block install %}
 cd ${out}; mkdir -p etc/services/mingetty{{slot}}; cd etc/services/mingetty{{slot}}
 
