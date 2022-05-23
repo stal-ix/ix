@@ -1,8 +1,8 @@
 {% extends '//die/proxy.sh' %}
 
 {% block run_deps %}
-bin/iwd
 bin/runsrv
+bin/iwd/sys
 {% endblock %}
 
 {% block install %}
