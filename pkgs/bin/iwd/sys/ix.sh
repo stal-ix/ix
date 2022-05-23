@@ -7,6 +7,7 @@ bin/upx
 
 {% block install %}
 {{super()}}
+rm -r ${out}/etc
 rm ${out}/bin/iwmon
 upx ${out}/bin/iwctl
 {% endblock %}

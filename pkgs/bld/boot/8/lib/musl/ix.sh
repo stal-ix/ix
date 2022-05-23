@@ -1,4 +1,4 @@
-{% extends '//lib/musl/pure/ix.sh' %}
+{% extends '//lib/musl/t/ix.sh' %}
 
 {% block bld_libs %}
 {% endblock %}
