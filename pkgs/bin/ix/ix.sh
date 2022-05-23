@@ -1,8 +1,8 @@
 {% extends '//die/python/bin.sh' %}
 
 {% block fetch %}
-https://github.com/pg83/mix/archive/refs/tags/v5.tar.gz
-sha:e183a05cefaf80c7300f865c947bf31e36604e6513089e20fc2a02792fd08a8f
+https://github.com/pg83/mix/archive/refs/tags/v6.tar.gz
+sha:9ea5159d448ef2ea6b12a26fbdb70254a3bceb1a9396268f724853fbf54e176d
 {% endblock %}
 
 {% block bld_libs %}
