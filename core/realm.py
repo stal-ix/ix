@@ -53,7 +53,12 @@ class RealmCtx:
     def calc_all_runtime_depends(self):
         for p in self.mngr.load_packages(self.pkgs):
             yield p
-            yield from p.iter_all_runtime_depends()
+            print(f'{p.pkg_name}')
+            for x in p.iter_all_runtime_depends():
+                yield x
+                print(f'-> {x.pkg_name}')
+                for r in x.run_data():
+                    print(f'--> {r.pkg_name}')
 
     @cu.cached_method
     def iter_all_runtime_depends(self):
