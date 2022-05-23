@@ -7,3 +7,12 @@ done
 
 {{super()}}
 {% endblock %}
+
+{% block install %}
+{{super()}}
+cd ${out}
+mv bin old
+mkdir bin
+mv old/acpid bin/
+rm -r old
+{% endblock %}

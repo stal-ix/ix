@@ -1,7 +1,6 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
-bin/iw
 bin/ix
 bin/sud
 bin/iwd/runit

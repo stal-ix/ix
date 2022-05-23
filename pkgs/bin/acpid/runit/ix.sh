@@ -2,7 +2,7 @@
 
 {% block run_deps %}
 bin/runsrv
-bin/acpid/sys
+bin/acpid/d
 {% endblock %}
 
 {% block run_data %}
