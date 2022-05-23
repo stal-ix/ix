@@ -1,6 +1,9 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
+bin/sched/staleprocs(delay=10)
+bin/mdevd/runit
+bin/sndio/runit
 bin/ix
 bin/sud
 bin/iwd/runit
