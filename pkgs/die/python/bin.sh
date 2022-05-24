@@ -27,5 +27,6 @@ upx {{bin_out}}
 {% endblock %}
 
 {% block install %}
-mkdir -p ${out}/bin && cp {{bin_out}} ${out}/bin/{{self.entry_point()}}
+mkdir ${out}/bin
+cp {{bin_out}} ${out}/bin/{{self.entry_point()}}
 {% endblock %}
