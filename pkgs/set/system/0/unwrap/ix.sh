@@ -1,6 +1,7 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
+bin/mdevd/runit
 bin/ix
 bin/sud
 bin/iwd/runit
@@ -9,7 +10,6 @@ bin/dbus/runit
 bin/openresolv
 bin/acpid/runit
 bin/seatd/runit
-bin/mdevd/runit
 bin/sndio/runit
 bin/dhcpcd/runit
 bin/ananicy/runit
