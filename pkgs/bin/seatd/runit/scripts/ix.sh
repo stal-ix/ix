@@ -12,7 +12,7 @@ cat << EOF > seatd
 #!/bin/sh
 export SEATD_LOGLEVEL=debug
 rm -f seatd.sock
-exec seatd -u root -s seatd.sock
+exec seatd -u root
 EOF
 
 chmod +x run seatd
