@@ -24,6 +24,7 @@ EOF
 cat << EOF > group
 root:x:0:
 none:x:1:
+audio:x:1:
 EOF
 
 cat << EOF > hosts
