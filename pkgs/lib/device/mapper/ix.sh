@@ -14,6 +14,10 @@ lib/udev
 lib/linux
 {% endblock %}
 
+{% block bld_tool %}
+bin/elfutils
+{% endblock %}
+
 {% block build_flags %}
 wrap_cc
 {% endblock %}
@@ -29,16 +33,6 @@ device-mapper
 
 {% block make_install_target %}
 install_device-mapper
-{% endblock %}
-
-{% block setup_tools %}
-cat << EOF > readelf
-#!$(which sh)
-EOF
-
-chmod +x readelf
-
-{{super()}}
 {% endblock %}
 
 {% block install %}
