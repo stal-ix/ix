@@ -1,7 +1,7 @@
 {% extends '//die/make.sh' %}
 
 {% block fetch %}
-{% include '//bin/kernel/17/t/ver.sh' %}
+{% include '//bin/kernel/18/t/ver.sh' %}
 {% endblock %}
 
 {% block lib_deps %}
