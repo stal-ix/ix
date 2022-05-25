@@ -13,4 +13,10 @@ rm *.TOC *_static.a
 for x in *.so; do
     mv ${x} $(echo ${x} | sed -e 's|3.so|.a|' | sed -e 's|.so|.a|')
 done
+
+{{hooks.gen_pc('nss', '3.66')}}
+{% endblock %}
+
+{% block env %}
+export CPPFLAGS="-I${out}/include/nss \${CPPFLAGS}"
 {% endblock %}

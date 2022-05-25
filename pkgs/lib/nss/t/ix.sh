@@ -24,6 +24,7 @@ lib/linux
 
 {% block build_flags %}
 wrap_cc
+shut_up
 {% endblock %}
 
 {% block bld_tool %}
