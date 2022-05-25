@@ -15,8 +15,8 @@ lib/opus
 lib/webp
 lib/x264
 lib/x265
-lib/xvid
 lib/dav1d
+lib/xvidcore
 lib/openh264
 lib/jpeg/open
 lib/xiph/speex

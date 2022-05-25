@@ -1,7 +1,7 @@
 {% extends '//die/autohell.sh' %}
 
 {% block fetch %}
-https://downloads.xvid.com/downloads/xvidcore-1.3.7.tar.gz)
+https://downloads.xvid.com/downloads/xvidcore-1.3.7.tar.gz
 sha:abbdcbd39555691dd1c9b4d08f0a031376a3b211652c0d8b3b8aa9be1303ce2d
 {% endblock %}
 
