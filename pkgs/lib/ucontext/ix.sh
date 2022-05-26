@@ -23,6 +23,7 @@ wrap_cc
 
 {% block bld_tool %}
 bld/bash
+bld/scripts/wrapcc
 {% endblock %}
 
 {% block patch %}

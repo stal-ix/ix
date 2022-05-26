@@ -32,8 +32,13 @@ mold
 
 {% block patch %}
 rm -r third-party
+
 sed -e 's|.*mimalloc-new.*||' -i main.cc
 sed -e 's|-lcrypto||' -i Makefile
+
+find . -type f | while read l; do
+    sed -e 's|-lmimalloc||g' -i ${l}
+done
 {% endblock %}
 
 {% block build %}

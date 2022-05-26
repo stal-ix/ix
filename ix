@@ -6,8 +6,11 @@ sys.dont_write_bytecode = True
 import traceback
 sys.excepthook = traceback.print_exception
 
-import ssl
-ssl._create_default_https_context = ssl._create_unverified_context
+try:
+    import ssl
+    ssl._create_default_https_context = ssl._create_unverified_context
+except ImportError:
+    pass
 
 # we always download with checksums
 # and can not assume proper cert availability in bootstrap context

@@ -13,3 +13,10 @@ bld/perl
 {% block std_box %}
 bld/boot/box
 {% endblock %}
+
+{% block install %}
+{{super()}}
+find ${out}/bin -type f | while read l; do
+    sed -e 's|/.*/store/.*/bin/sh|sh|' -i ${l}
+done
+{% endblock %}

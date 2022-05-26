@@ -17,6 +17,10 @@ lib/c++
 wrap_cc
 {% endblock %}
 
+{% block bld_tool %}
+bld/scripts/wrapcc
+{% endblock %}
+
 {% block test_execute %}
 make NO_C90_TEST=true test
 {% endblock %}
