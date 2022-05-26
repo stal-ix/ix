@@ -24,4 +24,5 @@ bld/tar
 bld/texinfo
 bld/compiler
 bld/mold
+bld/libtool
 {% endblock %}

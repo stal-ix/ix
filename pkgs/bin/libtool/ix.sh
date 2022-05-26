@@ -16,7 +16,13 @@ shut_up
 {% block install %}
 {{super()}}
 
-cd ${out}/bin
+cd ${out}
+
+find . -type f | while read l; do
+    sed -e 's|/.*/store/.*/bin/||g' -i ${l}
+done
+
+cd bin
 
 ln -s libtoolize glibtoolize
 ln -s libtool glibtool

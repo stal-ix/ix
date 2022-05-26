@@ -10,10 +10,6 @@ bld/m4
 bld/perl
 {% endblock %}
 
-{% block std_box %}
-bld/boot/box
-{% endblock %}
-
 {% block install %}
 {{super()}}
 find ${out}/bin -type f | while read l; do

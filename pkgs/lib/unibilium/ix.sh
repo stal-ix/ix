@@ -12,7 +12,7 @@ lib/c
 {% block bld_tool %}
 bld/perl
 bld/gzip
-bin/libtool
+bld/libtool
 {% endblock %}
 
 {% block run_data %}

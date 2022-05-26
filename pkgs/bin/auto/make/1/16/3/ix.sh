@@ -8,5 +8,12 @@ c27f608a4e1f302ec7ce42f1251c184e
 {% block bld_tool %}
 bld/m4
 bld/perl
-bin/auto/conf/2/71
+bin/auto/conf/2/71(std_box={{std_box}})
+{% endblock %}
+
+{% block install %}
+{{super()}}
+find ${out}/bin -type f | while read l; do
+    sed -e 's|/.*/store/.*/bin/sh|sh|g' -i ${l}
+done
 {% endblock %}

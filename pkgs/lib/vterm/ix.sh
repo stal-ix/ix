@@ -11,6 +11,6 @@ lib/c
 
 {% block bld_tool %}
 bld/perl
-bin/libtool
+bld/libtool
 bld/pkg/config
 {% endblock %}
