@@ -1,4 +1,4 @@
-{% extends '//die/c_std.sh' %}
+{% extends '//die/make.sh' %}
 
 {% block fetch %}
 https://github.com/aklomp/base64/archive/refs/tags/v0.4.0.tar.gz
