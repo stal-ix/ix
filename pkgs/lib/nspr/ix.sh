@@ -1,8 +1,8 @@
 {% extends '//die/autohell.sh' %}
 
 {% block fetch %}
-https://ftp.mozilla.org/pub/security/nss/releases/NSS_3_66_RTM/src/nss-3.66-with-nspr-4.30.tar.gz
-4addeabd4aedc1d589cc836577938da6
+https://ftp.mozilla.org/pub/nspr/releases/v4.34/src/nspr-4.34.tar.gz
+sha:beef011cd15d8f40794984d17014366513cec5719bf1a78f5e8a3e3a1cebf99c
 {% endblock %}
 
 {% block unpack %}
