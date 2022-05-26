@@ -3,6 +3,9 @@
 {% block fetch %}
 https://github.com/kovidgoyal/kitty/archive/refs/tags/v0.25.0.tar.gz
 sha:be30160a905d26ddb2d07f52be40a56e6bf118162c447d3ea6f0e6f662b56676
+{# failed to load fontconfig #}
+#https://github.com/kovidgoyal/kitty/archive/refs/tags/v0.25.1.tar.gz
+#sha:935b7af0ac9c903f4328bcf26335930c7204fce7b2f8b386d7aef217795e8f29
 {% endblock %}
 
 {% block bld_libs %}
