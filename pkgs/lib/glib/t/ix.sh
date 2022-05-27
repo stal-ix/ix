@@ -21,7 +21,7 @@ lib/darwin/framework/Foundation
 {% block bld_tool %}
 bld/meson
 {% if darwin %}
-bin/cctools
+bld/cctools
 {% endif %}
 {% endblock %}
 

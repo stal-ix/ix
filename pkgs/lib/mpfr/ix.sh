@@ -12,7 +12,7 @@ lib/gmp
 
 {% block bld_tool %}
 bld/texinfo
-bld/autohell/archive
+bld/auto/archive
 {% endblock %}
 
 {% block env_lib %}

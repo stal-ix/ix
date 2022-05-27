@@ -22,6 +22,6 @@ fi
 {% endblock %}
 
 {% block std_box %}
-bld/autohell(conf_ver={{self.conf_ver().strip()}},make_ver={{self.make_ver().strip()}})
+bld/auto(conf_ver={{self.conf_ver().strip()}},make_ver={{self.make_ver().strip()}})
 {{super()}}
 {% endblock %}

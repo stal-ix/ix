@@ -1,8 +1,8 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
-bld/autohell/archive
-bld/autohell
+bld/auto/archive
+bld/auto
 bld/bash
 bld/bison
 bld/box
@@ -26,4 +26,5 @@ bld/texinfo
 bld/compiler
 bld/mold
 bld/libtool
+bld/cctools
 {% endblock %}

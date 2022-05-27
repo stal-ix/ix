@@ -1,5 +1,9 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
-bld/autohell/full(std_box=bld/boot/box)
+bld/m4
+bld/perl
+bld/libtool
+bld/auto/conf
+bld/auto/make
 {% endblock %}

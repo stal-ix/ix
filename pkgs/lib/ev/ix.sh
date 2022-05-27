@@ -10,5 +10,5 @@ lib/c
 {% endblock %}
 
 {% block bld_tool %}
-bld/autohell
+bld/auto
 {% endblock %}

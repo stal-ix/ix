@@ -15,11 +15,7 @@ lib/bsd/overlay
 {% endblock %}
 
 {% block bld_tool %}
-bld/autohell
-{% endblock %}
-
-{% block std_box %}
-bld/boot/box
+bld/auto
 {% endblock %}
 
 {% block unpack %}

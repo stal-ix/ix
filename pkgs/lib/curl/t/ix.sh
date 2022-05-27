@@ -26,7 +26,7 @@ lib/darwin/framework/SystemConfiguration
 {% endblock %}
 
 {% block bld_tool %}
-bld/autohell
+bld/auto
 {% endblock %}
 
 {% block configure_flags %}

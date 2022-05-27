@@ -2,7 +2,7 @@
 
 {% block std_box %}
 {% if darwin %}
-bin/cctools
+bld/cctools
 {% endif %}
 {% block meson_binary %}
 bld/meson

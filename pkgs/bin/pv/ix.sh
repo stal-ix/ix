@@ -7,7 +7,7 @@ ff3564fddcc2b9bd4a9c1d143aba4b4c
 
 {% block bld_tool %}
 {% if darwin %}
-bin/cctools
+bld/cctools
 {% endif %}
 {% endblock %}
 

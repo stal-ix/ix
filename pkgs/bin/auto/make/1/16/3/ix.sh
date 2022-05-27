@@ -8,7 +8,7 @@ c27f608a4e1f302ec7ce42f1251c184e
 {% block bld_tool %}
 bld/m4
 bld/perl
-bin/auto/conf/2/71(std_box={{std_box}})
+bin/auto/conf/2/69(std_box={{std_box}})
 {% endblock %}
 
 {% block install %}

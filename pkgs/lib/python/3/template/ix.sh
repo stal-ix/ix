@@ -5,7 +5,7 @@ lib/python/libs
 {% endblock %}
 
 {% block bld_tool %}
-bld/autohell/archive
+bld/auto/archive
 {% endblock %}
 
 {% block bld_libs %}

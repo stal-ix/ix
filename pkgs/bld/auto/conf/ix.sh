@@ -1,8 +1,5 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
-lib/python/3/10
-bld
-bin/dash
-bin/curl
+bin/auto/conf/{{conf_ver or '2/69'}}(std_box=bld/boot/box)
 {% endblock %}

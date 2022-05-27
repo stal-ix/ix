@@ -6,7 +6,7 @@ https://www.x.org/pub/individual/util/util-macros-1.19.3.tar.bz2
 {% endblock %}
 
 {% block bld_tool %}
-bld/autohell
+bld/auto
 {% endblock %}
 
 {% block strip_pc %}

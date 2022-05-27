@@ -11,7 +11,7 @@ lib/c
 
 {% block bld_tool %}
 bld/gettext
-bld/autohell/archive
+bld/auto/archive
 {% endblock %}
 
 {% block install %}
