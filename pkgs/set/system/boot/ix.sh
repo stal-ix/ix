@@ -2,7 +2,7 @@
 
 {% block run_deps %}
 lib/python/3/10
-bld
 bin/dash
 bin/curl
+bld
 {% endblock %}
