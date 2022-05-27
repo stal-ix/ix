@@ -6,6 +6,7 @@ c46f6eb3bd1287031ae5d36465094402
 {% endblock %}
 
 {% block bld_tool %}
+bld/m4
 bld/bison
 {% endblock %}
 

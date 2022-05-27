@@ -46,6 +46,8 @@ error_print_progname
 
 {% block configure %}
 {{super()}}
+sed -e 's|/.*/bin/m4|m4|' -i Makefile
+sed -e 's|/.*/bin/m4|m4|' -i lib/config.h
 rm tests/bison
 ln -s $(which bison) tests/
 {% endblock %}
@@ -55,6 +57,6 @@ rm src/parse-gram.c src/parse-gram.h
 {% endblock %}
 
 {% block env %}
-export YACC="${out}/bin/bison"
+export YACC="${out}/bin/yacc"
 export YFLAGS=-Wnone
 {% endblock %}

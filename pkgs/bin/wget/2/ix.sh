@@ -1,8 +1,8 @@
 {% extends '//die/autohell.sh' %}
 
 {% block fetch %}
-https://ftp.gnu.org/gnu/wget/wget2-2.0.0.tar.gz
-b774bb0da9cb84cb9f5bbbcbcc31d00e
+https://ftp.gnu.org/gnu/wget/wget2-2.0.1.tar.gz
+sha:0bb7fa03697bb5b8d05e1b5e15b863440826eb845874c4ffb5e32330f9845db1
 {% endblock %}
 
 {% block bld_libs %}
