@@ -20,13 +20,20 @@ lib/mesa/glesv2/dl
 {% endblock %}
 
 {% block bld_tool %}
+bld/make
 bin/wayland/protocols
 {% endblock %}
 
 {% block patch %}
+sed -e 's|.*X11.*||' -i src/includes.hpp
 sed -e 's| xcb||' -i CMakeLists.txt
 {% endblock %}
 
 {% block cmake_flags %}
 NO_XWAYLAND=ON
+{% endblock %}
+
+{% block build %}
+make ext-workspace-unstable-v1-protocol.o
+{{super()}}
 {% endblock %}
