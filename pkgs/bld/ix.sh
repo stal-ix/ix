@@ -1,6 +1,7 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
+bld/autohell/archive
 bld/autohell
 bld/bash
 bld/bison

@@ -11,7 +11,7 @@ lib/expat
 {% endblock %}
 
 {% block bld_tool %}
-bin/auto/conf/archive
+bld/autohell/archive
 {% endblock %}
 
 {% block install %}

@@ -18,7 +18,7 @@ bld/tar
 bld/flex
 bld/python
 bin/bison/3/6
-bin/auto/conf/archive
+bld/autohell/archive
 {% endblock %}
 
 {% block touch_yl %}

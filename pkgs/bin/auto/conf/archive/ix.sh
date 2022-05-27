@@ -8,7 +8,3 @@ http://mirror.tochlab.net/pub/gnu/autoconf-archive/autoconf-archive-2021.02.19.t
 {% block bld_tool %}
 bld/texinfo
 {% endblock %}
-
-{% block std_box %}
-bld/boot/box
-{% endblock %}

@@ -19,7 +19,7 @@ lib/unistring
 
 {% block bld_tool %}
 bld/gettext
-bin/auto/conf/archive
+bld/autohell/archive
 {% endblock %}
 
 {% block configure_flags %}
