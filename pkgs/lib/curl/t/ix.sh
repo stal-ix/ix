@@ -29,10 +29,6 @@ lib/darwin/framework/SystemConfiguration
 bld/autohell
 {% endblock %}
 
-{% block conf_ver %}
-2/71
-{% endblock %}
-
 {% block configure_flags %}
 {% if linux %}
 --with-random="/dev/urandom"
