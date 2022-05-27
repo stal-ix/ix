@@ -7,7 +7,7 @@ https://www.x.org/pub/individual/util/util-macros-1.19.3.tar.bz2
 
 {% block bld_tool %}
 bin/auto/conf/2/69
-bin/auto/make/1/16
+bin/auto/make/1/16/5
 {% endblock %}
 
 {% block strip_pc %}

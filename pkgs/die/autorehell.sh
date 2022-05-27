@@ -1,12 +1,7 @@
 {% extends 'autohell.sh' %}
 
-{% block conf_ver %}
-2/69
-{% endblock %}
-
-{% block make_ver %}
-1/16
-{% endblock %}
+{% block conf_ver %}{% endblock %}
+{% block make_ver %}{% endblock %}
 
 {% block patch_configure %}
 {% block autoreconf %}
