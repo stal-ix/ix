@@ -1,5 +1,9 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
-bin/auto/conf/{{conf_ver or '2/69'}}(std_box=bld/boot/box)
+{% if conf_ver %}
+bin/auto/conf/{{conf_ver}}
+{% else %}
+bin/auto/conf/2/69(std_box=bld/boot/box)
+{% endif %}
 {% endblock %}
