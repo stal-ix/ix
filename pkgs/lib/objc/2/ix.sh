@@ -19,3 +19,7 @@ TESTS=OFF
 {% block lib_deps %}
 lib/c
 {% endblock %}
+
+{% block patch %}
+sed -e 's|.*hidden.*__vector_base_common.*||' -i arc.mm
+{% endblock %}
