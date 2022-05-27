@@ -1,8 +1,8 @@
 {% extends '//die/cmake.sh' %}
 
 {% block fetch %}
-http://download.osgeo.org/libtiff/tiff-4.3.0.tar.gz
-0a2e4744d1426a8fc8211c0cdbc3a1b3
+http://download.osgeo.org/libtiff/tiff-4.4.0.tar.gz
+sha:917223b37538959aca3b790d2d73aa6e626b688e02dcda272aec24c2f498abed
 {% endblock %}
 
 {% block lib_deps %}
@@ -12,6 +12,5 @@ lib/xz
 lib/c++
 lib/jpeg
 lib/zstd
-# TODO(pg): check it
 lib/webp
 {% endblock %}
