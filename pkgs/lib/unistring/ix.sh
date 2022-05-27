@@ -14,10 +14,6 @@ lib/iconv
 sh autogen.sh --skip-gnulib
 {% endblock %}
 
-{% block conf_ver %}
-2/71
-{% endblock %}
-
 {% block make_verbose_1 %}
 V=1
 {% endblock %}
