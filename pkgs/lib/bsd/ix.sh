@@ -14,6 +14,10 @@ lib/md
 lib/linux
 {% endblock %}
 
+{% block bld_tool %}
+bld/auto
+{% endblock %}
+
 {% block c_rename_symbol %}
 reallocarray
 {% endblock %}
