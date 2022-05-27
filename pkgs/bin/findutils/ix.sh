@@ -19,3 +19,8 @@ EOF
 
 mv _ dynarray-skeleton.c
 {% endblock %}
+
+{% block install %}
+{{super()}}
+sed -e 's|/.*/bin/sort|sort|' -i ${out}/bin/updatedb
+{% endblock %}

@@ -10,3 +10,9 @@ lib/c
 lib/intl
 lib/sigsegv
 {% endblock %}
+
+{% block install %}
+{{super()}}
+sed -e 's|#!.*/bin/sh|#!/usr/bin/env sh|' -i ${out}/bin/egrep
+sed -e 's|#!.*/bin/sh|#!/usr/bin/env sh|' -i ${out}/bin/fgrep
+{% endblock%}

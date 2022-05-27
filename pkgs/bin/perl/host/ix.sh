@@ -53,16 +53,19 @@ bash Configure -des    \
     -Dlibc=c           \
     -Dcc=clang
 
-cat config.h - << EOF > _
-#undef SH_PATH
-#define SH_PATH "$(which sh)"
-EOF
-
-mv _ config.h
+sed -e 's|/.*/bin/sh|/bin/sh|' -e 's|/.*/bin/sed|sed|' -i config.h
 {% endblock %}
 
 {% block postinstall %}
 find ${out} | grep Config_heavy.pl | while read l; do
-    sed -e 's|/.*build.*tools/||' -e 's|.*startsh=.*||' -i ${l}
+    sed -e 's|#!.*/bin/sh|#!/usr/bin/env sh|' \
+        -e 's|/.*build.*tools/||' \
+        -e 's|.*sh=.*/bin/sh.*||' \
+        -e 's|.*full_sed.*||' \
+        -e 's|.*lns=.*||' \
+        -e 's|.*rm_try.*||' \
+        -i ${l}
 done
+
+exit 1
 {% endblock %}
