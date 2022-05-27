@@ -66,6 +66,4 @@ find ${out} | grep Config_heavy.pl | while read l; do
         -e 's|.*rm_try.*||' \
         -i ${l}
 done
-
-exit 1
 {% endblock %}
