@@ -26,3 +26,8 @@ enable-cairo=enabled
 png-backend=libpng
 svg-backend=nanosvg
 {% endblock %}
+
+{% block install %}
+{{super()}}
+{{hooks.wrap_xdg_binary('fuzzel')}}
+{% endblock %}

@@ -22,3 +22,8 @@ lib/fontconfig
 bin/scdoc
 bin/wayland/protocols
 {% endblock %}
+
+{% block install %}
+{{super()}}
+{{hooks.wrap_xdg_binary('fnott')}}
+{% endblock %}
