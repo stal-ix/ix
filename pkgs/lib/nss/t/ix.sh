@@ -1,8 +1,8 @@
 {% extends '//die/c_std.sh' %}
 
 {% block fetch %}
-https://ftp.mozilla.org/pub/security/nss/releases/NSS_3_66_RTM/src/nss-3.66-with-nspr-4.30.tar.gz
-4addeabd4aedc1d589cc836577938da6
+https://ftp.mozilla.org/pub/security/nss/releases/NSS_3_78_RTM/src/nss-3.78.tar.gz
+sha:f455f341e787c1167328e80a84f77b9a557d595066dda6486a1874d72da68800
 {% endblock %}
 
 {% block unpack %}

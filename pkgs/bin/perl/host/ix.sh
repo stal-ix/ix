@@ -1,8 +1,8 @@
 {% extends '//die/make.sh' %}
 
 {% block fetch %}
-https://www.cpan.org/src/5.0/perl-5.34.0.tar.gz
-2acf2ef147e41730e572251ed079bc1a
+https://www.cpan.org/src/5.0/perl-5.36.0.tar.gz
+sha:e26085af8ac396f62add8a533c3a0ea8c8497d836f0689347ac5abd7b7a4e00a
 {% endblock %}
 
 {% block bld_libs %}
@@ -35,6 +35,12 @@ chmod +x sw_vers install_name_tool
 {% endblock %}
 
 {% block patch %}
+chmod 0777 cpan/Compress-Raw-Zlib/config.in
+
+cat << EOF >> cpan/Compress-Raw-Zlib/config.in
+BUILD_ZLIB = False
+EOF
+
 sed -e "s|/usr/bin/||g"          \
     -e "s|/usr/|/nowhere/|g"     \
     -e "s|/bin/sh|$(which sh)|g" \
