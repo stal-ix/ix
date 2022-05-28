@@ -54,7 +54,7 @@ PORT=GTK
 {% block patch %}
 {{super()}}
 
-sed -e 's|.*eglCreateWindowSurface.*||' \
+sed -e 's|static_cast<EGLNativeWindowType>|(EGLNativeWindowType)|' \
     -i Source/WebCore/platform/graphics/egl/GLContextEGL.cpp
 
 sed -e 's|GRefPtr.h>|GRefPtr.h>\n#include <wtf/glib/GUniquePtr.h>|' \
