@@ -19,5 +19,7 @@ lib/fontconfig
 
 {% block install %}
 {{super()}}
-cd ${out}/bin && ln -s dot_static dot
+cd ${out}/bin
+mv dot_static dot
+rm *_static
 {% endblock %}
