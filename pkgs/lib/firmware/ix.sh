@@ -11,10 +11,9 @@ extract0 ${src}/*.gz
 {% endblock %}
 
 {% block install %}
-mkdir ${out}/share/
-cp -R linux-firmware* ${out}/share/firmware
+cp -R linux-firmware* ${out}/lib
 {% endblock %}
 
 {% block env %}
-export LINUX_FIRMWARE="${out}/share/firmware"
+export LINUX_FIRMWARE="${out}/lib"
 {% endblock %}

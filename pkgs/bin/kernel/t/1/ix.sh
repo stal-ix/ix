@@ -1,7 +1,8 @@
 {% extends '//bin/kernel/t/0/ix.sh' %}
 
-{% block run_data %}
-aux/firmware
+{% block bld_libs %}
+lib/firmware
+{{super()}}
 {% endblock %}
 
 {% block firmware %}
@@ -477,9 +478,4 @@ iwlwifi-cc-a0-62.ucode
 {% block kconfig_flags %}
 CONFIG_EXTRA_FIRMWARE="{{ix.fix_list(self.firmware())}}"
 CONFIG_EXTRA_FIRMWARE_DIR="${LINUX_FIRMWARE}"
-{% endblock %}
-
-{% block patch %}
-sed -e "s|/lib/firmware|${LINUX_FIRMWARE}|" -i drivers/base/firmware_loader/main.c
-{{super()}}
 {% endblock %}
