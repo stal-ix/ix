@@ -1,8 +1,10 @@
 {% extends '//die/c_std.sh' %}
 
 {% block fetch %}
-https://nav.dl.sourceforge.net/project/sbcl/sbcl/2.2.4/sbcl-2.2.4-source.tar.bz2
-sha:fcdd251cbc65f7f808ed0ad77246848d1be166aa69a17f7499600184b7a57202
+#https://nav.dl.sourceforge.net/project/sbcl/sbcl/2.2.5/sbcl-2.2.5-source.tar.bz2
+#sha:8584b541370fd6ad6e58d3f97982077dfcab240f30d4e9b18f15da91c2f13ed1
+https://nav.dl.sourceforge.net/project/sbcl/sbcl/2.2.1/sbcl-2.2.1-source.tar.bz2
+sha:5dd6e6e3f08b7c6edf262a0e844a9f8b5e562cca08155034c1f2c014fc9087da
 {% endblock %}
 
 {% block bld_libs %}
@@ -13,6 +15,7 @@ lib/linux
 {% endblock %}
 
 {% block bld_tool %}
+bld/bash
 {% block boot_lisp_dep %}
 bin/ecl
 {% endblock %}
@@ -21,12 +24,18 @@ bld/scripts/dlfcn
 {% endblock %}
 
 {% block patch %}
+find . -type f | while read l; do
+    sed -e "s|/bin/sh|$(which bash)|g" -l ${l}
+done
+
 sed -e 's/lispobj \*static_code_space_free_pointer/extern lispobj \*static_code_space_free_pointer/' -i src/runtime/globals.h
 sed -e 's/size_t os_vm_page_size/extern size_t os_vm_page_size/' -i src/runtime/arm64-bsd-os.c
 
-cat << EOF
-{% include 'symbols' %}
-EOF | while read l; do echo "sbcl ${l} ${l}"; done | dl_stubs > symbols.c
+cat << EOF | sort | uniq | (while read l; do echo "sbcl ${l} ${l}"; done) | dl_stubs > symbols.c
+{% include 'libc' %}
+{% include 'libz' %}
+{% include 'sbcl' %}
+EOF
 {% endblock %}
 
 {% block boot_lisp %}
@@ -34,13 +43,13 @@ ecl -norc
 {% endblock %}
 
 {% block build %}
-clang -c symbols.c -o ${tmp}/symbols.o
+clang -fno-builtin -c symbols.c -o ${tmp}/symbols.o
 
 export LDLIBS="${tmp}/symbols.o"
 
 ulimit -s 60000
 
-sh make.sh \
+sh make.sh sbcl \
     --prefix=${out} \
     --xc-host='{{self.boot_lisp().strip()}}' \
     --with-sb-ldb \
