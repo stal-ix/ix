@@ -1,8 +1,8 @@
 {% extends '//lib/python/3/10/ix.sh' %}
 
 {% block fetch %}
-https://www.python.org/ftp/python/3.11.0/Python-3.11.0a6.tar.xz
-sha:1c53a2ff75879633e30cac29d2aa6b7a010e355b95f0bf9ac691beccf5f9d12a
+https://www.python.org/ftp/python/3.11.0/Python-3.11.0b2.tar.xz
+sha:e574dee6694fb255dff8036f3c0048251e5cb29a167766030b7ce3160fb4c47d
 {% endblock %}
 
 {% block lib_deps %}
@@ -75,6 +75,8 @@ _scproxy _scproxy.c
 
 pyexpat pyexpat.c
 EOF
+
+sed -e 's|_sqlite/util.c|_sqlite/util.c _sqlite/blob.c|' -i Modules/Setup.local
 {% endblock %}
 
 {% block test_bin %}
