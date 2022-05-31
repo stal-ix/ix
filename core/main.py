@@ -86,16 +86,17 @@ def main(argv, ix):
     try:
         main_func(argv[1:], ix)
     except ce.Error as e:
-        if e.context:
-            if '\n' in e.context:
-                print(f'Context:\n{e.context}')
-            else:
-                print(f'Context: {e.context}')
+        if e.visible:
+            if e.context:
+                if '\n' in e.context:
+                    print(f'Context:\n{e.context}')
+                else:
+                    print(f'Context: {e.context}')
 
-        if e.exception:
-            print(f'{e.exception.__class__.__name__}: {e.exception}')
+            if e.exception:
+                print(f'{e.exception.__class__.__name__}: {e.exception}')
 
-        print(f'{e}')
+            print(f'{e}')
 
         return 1
     except KeyboardInterrupt:

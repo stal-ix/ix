@@ -13,6 +13,9 @@ import core.utils as cu
 
 
 def bsh(s):
+    if 'atexit.register' in s:
+        return s
+
     return beautysh.Beautify().beautify_string(s)[0]
 
 

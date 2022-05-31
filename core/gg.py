@@ -2,8 +2,6 @@ import json
 import itertools
 import subprocess
 
-import core.execute as ce
-
 
 def rec_node(n):
     return itertools.chain([n], n.iter_all_build_depends(), n.iter_all_runtime_depends())

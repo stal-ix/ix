@@ -1,6 +1,8 @@
 import json
 import subprocess
 
+import core.error as ce
+
 
 def run_cmd(cmd, input=''):
     cmd = [
@@ -11,8 +13,13 @@ def run_cmd(cmd, input=''):
         '/bin/ix', '-', 'ix'
     ] + cmd
 
-    subprocess.run(cmd, shell=False, input=input.encode(), check=True)
+    try:
+        subprocess.run(cmd, shell=False, input=input.encode(), check=True)
+    except Exception as e:
+        if '1' in str(e):
+            raise ce.Error('shit happen', exception=e, visible=False)
 
+        raise e
 
 class Ops:
     def execute_graph(self, graph):

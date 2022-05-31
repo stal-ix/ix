@@ -1,8 +1,8 @@
 {% extends '//die/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/gperftools/gperftools/archive/refs/tags/gperftools-2.9.1.tar.gz
-sha:484a88279d2fa5753d7e9dea5f86954b64975f20e796a6ffaf2f3426a674a06a
+https://github.com/gperftools/gperftools/archive/refs/tags/gperftools-2.10.tar.gz
+sha:b0dcfe3aca1a8355955f4b415ede43530e3bb91953b6ffdd75c45891070fe0f1
 {% endblock %}
 
 {% block lib_deps %}
