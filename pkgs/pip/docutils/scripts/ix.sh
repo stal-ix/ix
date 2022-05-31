@@ -10,7 +10,7 @@ bld/python
 
 mkdir ${out}/bin
 
-cd ${out}/share && cd docutils-*data/scripts
+cd ${out}/lib/docutils-*data/scripts
 
 for x in *.py; do
     cat - ${x} << EOF > _
@@ -27,4 +27,8 @@ done
 export PATH="${out}/bin:${PATH}"
 
 rst2html.py --help
+{% endblock %}
+
+{% block postinstall %}
+echo 'TODO(pg): do not prune lib/'
 {% endblock %}
