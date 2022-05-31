@@ -1,8 +1,8 @@
 {% extends '//die/autorehell.sh' %}
 
 {% block fetch %}
-https://www.alsa-project.org/files/pub/lib/alsa-lib-1.2.6.1.tar.bz2
-039aae4a55e4a33f4c39b274fcc1dc5e
+https://www.alsa-project.org/files/pub/lib/alsa-lib-1.2.7.tar.bz2
+sha:8814e61f7ec6812c76e23a85cab00e0b0d3bba40816af36b726beb1bc04c74a7
 {% endblock %}
 
 {% block lib_deps %}
