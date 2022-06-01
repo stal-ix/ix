@@ -16,8 +16,3 @@ lib/linux
 {% block configure_flags %}
 --with-libdl
 {% endblock %}
-
-{% block patch %}
-sed -e 's|safe_strtol_base|safe_strtol_base_xxx|g' \
-    -i src/topology/parser.c
-{% endblock %}
