@@ -1,8 +1,8 @@
 {% extends '//die/autorehell.sh' %}
 
 {% block fetch %}
-https://github.com/tmux/tmux/releases/download/3.2a/tmux-3.2a.tar.gz
-61fba141303aeaf8d9a6931d247f2f4a
+https://github.com/tmux/tmux/releases/download/3.3/tmux-3.3.tar.gz
+sha:b2382ac391f6a1c5b93293016cdc9488337d9a04b9d611ae05eac164740351dc
 {% endblock %}
 
 {% block bld_libs %}
