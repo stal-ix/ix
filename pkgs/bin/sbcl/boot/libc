@@ -1295,3 +1295,5 @@ wprintf
 write
 writev
 wscanf
+munmap
+mmap

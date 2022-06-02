@@ -1,8 +1,6 @@
 {% extends '//die/c_std.sh' %}
 
 {% block fetch %}
-#https://nav.dl.sourceforge.net/project/sbcl/sbcl/2.2.5/sbcl-2.2.5-source.tar.bz2
-#sha:8584b541370fd6ad6e58d3f97982077dfcab240f30d4e9b18f15da91c2f13ed1
 https://nav.dl.sourceforge.net/project/sbcl/sbcl/2.2.1/sbcl-2.2.1-source.tar.bz2
 sha:5dd6e6e3f08b7c6edf262a0e844a9f8b5e562cca08155034c1f2c014fc9087da
 {% endblock %}
@@ -36,6 +34,8 @@ cat << EOF | sort | uniq | (while read l; do echo "sbcl ${l} ${l}"; done) | dl_s
 {% include 'libz' %}
 {% include 'sbcl' %}
 EOF
+
+sed -e '5,$d' -i contrib/sb-posix/posix-tests.lisp
 {% endblock %}
 
 {% block boot_lisp %}
@@ -60,4 +60,8 @@ sh make.sh sbcl \
 
 {% block install %}
 sh install.sh
+{% endblock %}
+
+{% block postinstall %}
+echo 'TODO(pg): move sbcl.core to proper place'
 {% endblock %}
