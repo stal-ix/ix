@@ -15,11 +15,10 @@ def it_symbols():
         while '  ' in l:
             l = l.replace('  ', ' ')
 
-        yield tuple(l.split(' '))
+        if ' ' in l:
+            yield tuple(l.split(' '))
 
 S = list(it_symbols())
-
-# assert S
 
 print('#include <dlfcn.h>')
 
