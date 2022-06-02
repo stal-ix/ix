@@ -25,7 +25,7 @@ cat << EOF | sort | uniq | (while read l; do echo "sbcl ${l} ${l}"; done) | dl_s
 {% block extern_symbols %}
 {% include 'libc' %}
 {% include 'libz' %}
-{% include 's' %}
+{% include 'sbcl' %}
 {% endblock %}
 EOF
 
