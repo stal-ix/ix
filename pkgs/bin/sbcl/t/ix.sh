@@ -1,7 +1,7 @@
 {% extends '//die/c_std.sh' %}
 
 {% block bld_libs %}
-lib/z
+lib/z/dl
 {% if linux %}
 lib/linux
 {% endif %}
@@ -24,7 +24,6 @@ sed -e 's/size_t os_vm_page_size/extern size_t os_vm_page_size/' -i src/runtime/
 cat << EOF | sort | uniq | (while read l; do echo "sbcl ${l} ${l}"; done) | dl_stubs > symbols.c
 {% block extern_symbols %}
 {% include 'libc' %}
-{% include 'libz' %}
 {% endblock %}
 EOF
 
