@@ -17,11 +17,6 @@ sbcl
 {% block extern_symbols %}
 {{super()}}
 {% include 'sbcl' %}
-listify_rest_arg
-make_list
-os_context_pc
-set_os_context_pc
-os_context_flags_addr
 malloc
 free
 _exit
