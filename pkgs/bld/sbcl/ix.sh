@@ -32,4 +32,5 @@ suballocator_free_ptr
 sync_close_region
 zero_dirty_pages
 {{super()}}
+{% include 'sbcl' %}
 {% endblock %}
