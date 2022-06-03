@@ -1,32 +1,16 @@
-{% extends '//die/autorehell.sh' %}
+{% extends '//die/meson.sh' %}
 
 {% block fetch %}
-http://www.x.org/releases/individual/data/xkeyboard-config/xkeyboard-config-2.24.tar.bz2
-74c4bdf52382127cb5802c3f2ab441e0
-{% endblock %}
-
-{% block make_no_thrs %}{% endblock %}
-
-{% block bld_libs %}
-lib/c
+https://github.com/freedesktop/xkeyboard-config/archive/refs/tags/xkeyboard-config-2.36.tar.gz
+sha:d047af43c9da3843fdb40139d5f23ac75041bed16c28e24a31447b27a269cf66
 {% endblock %}
 
 {% block bld_tool %}
 bld/gettext
 bin/xsltproc
 bin/intltool
-bin/auto/conf/xorg
-{% endblock %}
-
-{% block setup %}
-export XKB_CONFIG="${out}/share/xkb"
-{% endblock %}
-
-{% block configure_flags %}
---with-xkb-base="${XKB_CONFIG}"
---disable-runtime-deps
 {% endblock %}
 
 {% block env %}
-export XKB_CONFIG="${XKB_CONFIG}"
+export XKB_CONFIG="${out}/share/X11/xkb"
 {% endblock %}
