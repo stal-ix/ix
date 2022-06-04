@@ -1297,3 +1297,9 @@ writev
 wscanf
 munmap
 mmap
+malloc
+free
+_exit
+clock_gettime
+pthread_create
+pthread_join

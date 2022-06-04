@@ -15,22 +15,6 @@ ecl -norc
 {% endblock %}
 
 {% block extern_symbols %}
-alloc_unboxed
-close_thread_region
-closefrom_fallback
-context_eflags_addr
-copy_possibly_large_object
-dump_spaces
-dynamic_space_free_pointer
-gc_allocate_dirty
-gc_close_all_regions
-gc_general_alloc
-scav_code_header
-scav_weak_pointer
-suballocator_end_ptr
-suballocator_free_ptr
-sync_close_region
-zero_dirty_pages
 {{super()}}
 {% include 'sbcl' %}
 {% endblock %}

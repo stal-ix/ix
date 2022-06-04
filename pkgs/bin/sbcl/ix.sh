@@ -17,10 +17,4 @@ sbcl
 {% block extern_symbols %}
 {{super()}}
 {% include 'sbcl' %}
-malloc
-free
-_exit
-clock_gettime
-pthread_create
-pthread_join
 {% endblock %}
