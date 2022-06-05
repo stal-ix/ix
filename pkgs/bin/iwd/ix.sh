@@ -1,8 +1,8 @@
 {% extends '//die/autorehell.sh' %}
 
 {% block fetch %}
-https://mirrors.edge.kernel.org/pub/linux/network/wireless/iwd-1.27.tar.xz
-sha:013b4a0a79629c20d915954fc3b5d0620ef6e0d6065db3c342f4b3f9111f46ec
+https://mirrors.edge.kernel.org/pub/linux/network/wireless/iwd-1.28.tar.xz
+sha:ee538c720ad15335ece81a52a4b8a11820236df9ed9a5a72a2e64d74c652f0b0
 {% endblock %}
 
 {% block bld_libs %}
@@ -20,4 +20,8 @@ lib/readline
 {% block install %}
 {{super()}}
 rm -rf ${out}/var
+{% endblock %}
+
+{% block setup %}
+export CPPFLAGS="-include sys/time.h ${CPPFLAGS}"
 {% endblock %}
