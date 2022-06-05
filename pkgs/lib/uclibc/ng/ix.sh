@@ -1,8 +1,8 @@
 {% extends '//die/kconfig.sh' %}
 
 {% block fetch %}
-https://downloads.uclibc-ng.org/releases/1.0.40/uClibc-ng-1.0.40.tar.xz
-sha:d863f01815a64174d5019c73475e8aff5b60848a13876e79daf5d3d83ce7f889
+https://downloads.uclibc-ng.org/releases/1.0.41/uClibc-ng-1.0.41.tar.xz
+sha:b32a92a0218d95922d6976464e6ef51e2ebacfbcdb605820458d9dbb8a61e025
 {% endblock %}
 
 {% block lib_deps %}
@@ -27,6 +27,8 @@ DEVEL_PREFIX="/"
 {% endblock %}
 
 {% block patch %}
+sed -e "s|/tmp/|${TMPDIR}/|" -i Rules.mak
+sed -e 's|"/tmp/|"/var/tmp/|' -i include/paths.h
 base64 -d << EOF > extra/scripts/gen_bits_syscall_h.sh
 {% include 'gen.sh/base64' %}
 EOF
