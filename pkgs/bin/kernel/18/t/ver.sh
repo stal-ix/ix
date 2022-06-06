@@ -1,2 +1,2 @@
-https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.18.1.tar.xz
-sha:83d14126c660186a7a1774a4a5c29d38e170fa5e52cfd2d08fd344dcf1f57d22
+https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.18.2.tar.xz
+sha:ef9ff2dfa5416a03e7e5fd9c308aaec385fe8ff9f4a62d957b167843849659a2
