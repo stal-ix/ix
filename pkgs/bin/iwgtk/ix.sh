@@ -9,7 +9,7 @@ sha:5465721f79090d342c389c8748ba6ef679fa83ae5ed23cea90bcb4e1b9017689
 lib/c
 lib/glib
 lib/gtk/4
-lib/gtk/deps
+lib/rsvg/dl
 {% endblock %}
 
 {% block bld_tool %}
