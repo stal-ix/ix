@@ -1,17 +1,23 @@
 {% extends '//die/make.sh' %}
 
 {% block fetch %}
-https://github.com/J-Lentz/iwgtk/archive/8db48d3dd114a8c12229bc8bfae920330fec2670.zip
-sha:f4c9560f524a40dd62c28c68a1f9db61dfb7bd7aba5266510cf96b6dfdda5832
+https://github.com/J-Lentz/iwgtk/archive/refs/tags/v0.5.tar.gz
+sha:5465721f79090d342c389c8748ba6ef679fa83ae5ed23cea90bcb4e1b9017689
 {% endblock %}
 
 {% block bld_libs %}
 lib/c
 lib/glib
-lib/gtk/3
+lib/gtk/4
+lib/gtk/deps
 {% endblock %}
 
 {% block bld_tool %}
 bin/gzip
 bld/pkg/config
+{% endblock %}
+
+{% block install %}
+{{super()}}
+{{hooks.wrap_xdg_binary('iwgtk')}}
 {% endblock %}
