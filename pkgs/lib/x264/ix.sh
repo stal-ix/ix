@@ -2,7 +2,7 @@
 
 {% block fetch %}
 https://code.videolan.org/videolan/x264/-/archive/master/x264-master.tar.bz2
-sha:37caa704adb0fefd32da6ea6ebeef8e45bb1b84bf1b7f8a7a6f71cc79dd7baa3
+sha:876383c0bcc7bde562d2db350c4754114e8c4c0ce1228018cad0cc5f4ce1253b
 {% endblock %}
 
 {% block lib_deps %}
