@@ -1,14 +1,15 @@
 {% extends '//die/meson.sh' %}
 
 {% block fetch %}
-https://github.com/emersion/grim/archive/refs/tags/v1.3.2.tar.gz
-950ebba448f2069bef1e404a14f8db13
+https://git.sr.ht/~emersion/grim/archive/v1.4.0.tar.gz
+sha:66729ae654546404f50ed163055310dd23ed52cc5a881d39752c0cd076e3d7aa
 {% endblock %}
 
 {% block bld_libs %}
 lib/c
+lib/png
 lib/jpeg
-lib/cairo
+lib/pixman
 lib/wayland
 {% endblock %}
 
