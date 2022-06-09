@@ -19,6 +19,7 @@ lib/udev
 lib/linux
 lib/curses
 lib/sndfile
+lib/gnushim
 lib/ini/parser
 lib/ladspa/sdk
 lib/googletest
@@ -34,6 +35,10 @@ lib/xiph/speex/dsp
 
 {% block make_flags %}
 WITH_SYSTEM_RUST=yes
+{% endblock %}
+
+{% block build_flags %}
+shut_up
 {% endblock %}
 
 {% block setup_tools %}

@@ -21,6 +21,10 @@ cat << EOF > sched.h
 {% include 'sched.h' %}
 EOF
 
+cat << EOF > ieee754.h
+{% include 'ieee754.h' %}
+EOF
+
 cc -c -o qsort_r.o -x c - << EOF
 {% include 'qsort_r.c' %}
 EOF
@@ -31,6 +35,10 @@ EOF
 
 cc -c -o sched.o -x c - << EOF
 {% include 'sched.c' %}
+EOF
+
+cc -c -o ieee754.o -x c - << EOF
+{% include 'ieee754.c' %}
 EOF
 
 ar cq libglibcshim.a *.o
