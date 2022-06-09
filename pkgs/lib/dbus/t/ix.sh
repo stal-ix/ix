@@ -14,6 +14,10 @@ lib/expat
 bld/auto/archive
 {% endblock %}
 
+{% block configure_flags %}
+--with-system-socket="/var/run/dbus/system_bus_socket"
+{% endblock %}
+
 {% block install %}
 {{super()}}
 cd ${out}
