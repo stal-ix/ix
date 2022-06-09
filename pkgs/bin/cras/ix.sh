@@ -29,12 +29,6 @@ lib/xiph/speex/dsp
 
 {% block configure_flags %}
 --disable-alsa-plugin
---with-system-rust=yes
---with-system-cras-rust=yes
-{% endblock %}
-
-{% block make_flags %}
-WITH_SYSTEM_RUST=yes
 {% endblock %}
 
 {% block build_flags %}
@@ -55,4 +49,11 @@ chmod +x *
 
 {% block setup %}
 export CFLAGS="-include sys/types.h ${CFLAGS}"
+{% endblock %}
+
+{% block configure %}
+{{super()}}
+find . -type f -name Makefile | while read l; do
+    sed -e 's|\$.*libcras_rust.a||' -i ${l}
+done
 {% endblock %}
