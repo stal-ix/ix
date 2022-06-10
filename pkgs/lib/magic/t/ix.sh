@@ -1,8 +1,8 @@
 {% extends '//die/autohell.sh' %}
 
 {% block fetch %}
-http://deb.debian.org/debian/pool/main/f/file/file_5.39.orig.tar.gz
-1c450306053622803a25647d88f80f25
+https://astron.com/pub/file/file-5.42.tar.gz
+sha:c076fb4d029c74073f15c43361ef572cfb868407d347190ba834af3b1639b0e4
 {% endblock %}
 
 {% block lib_deps %}
