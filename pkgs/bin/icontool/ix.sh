@@ -10,5 +10,6 @@ bld/perl/full
 {% endblock %}
 
 {% block run_deps %}
+# TODO(pg): bld/ run dep
 bld/perl/full
 {% endblock %}

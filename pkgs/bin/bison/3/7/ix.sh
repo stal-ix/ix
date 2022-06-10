@@ -8,6 +8,7 @@ d61aa92e3562cb7292b004ce96173cf7
 {% endblock %}
 
 {% block run_deps %}
+# TODO(pg): bld/ run dep
 bld/m4
 {% endblock %}
 

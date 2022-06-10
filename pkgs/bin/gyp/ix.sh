@@ -10,6 +10,7 @@ bld/python/2
 {% endblock %}
 
 {% block run_deps %}
+# TODO(pg): bld/ run dep
 bld/python/2
 {% endblock %}
 
