@@ -59,6 +59,7 @@ cat << EOF > 100-fini.sh
 # fini
 echo always > /sys/kernel/mm/transparent_hugepage/enabled
 ifconfig lo 127.0.0.1
+hostname -F /etc/hostname
 echo 0 > /proc/sys/kernel/printk
 dmesg > /var/log/boot
 EOF

@@ -27,8 +27,10 @@ none:x:1:
 audio:x:1:
 EOF
 
+echo {{hostname or 'stalix'}} > hostname
+
 cat << EOF > hosts
-127.0.0.1  localhost ix
+127.0.0.1  localhost $(cat hostname)
 ::1        localhost
 EOF
 
