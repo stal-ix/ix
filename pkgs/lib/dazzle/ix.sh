@@ -1,7 +1,7 @@
 {% extends '//die/registar.sh' %}
 
 {% block lib_deps %}
-lib/dazzle/orig
+lib/dazzle/unwrap
 {% endblock %}
 
 {% block constructors %}

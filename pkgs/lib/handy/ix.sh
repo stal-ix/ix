@@ -1,7 +1,7 @@
 {% extends '//die/registar.sh' %}
 
 {% block lib_deps %}
-lib/handy/orig
+lib/handy/unwrap
 {% endblock %}
 
 {% block constructors %}

@@ -1,7 +1,7 @@
 {% extends '//die/registar.sh' %}
 
 {% block lib_deps %}
-lib/adwaita/orig
+lib/adwaita/unwrap
 {% endblock %}
 
 {% block constructors %}
