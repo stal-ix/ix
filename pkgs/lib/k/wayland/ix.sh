@@ -1,8 +1,8 @@
 {% extends '//die/cmake.sh' %}
 
 {% block fetch %}
-https://download.kde.org/stable/frameworks/5.94/kwayland-5.94.0.tar.xz
-sha:b2a4d8e1b4d81ce798c991cfb34210ba095f6406a37f4714ae3ab64abaca2636
+https://download.kde.org/stable/frameworks/5.95/kwayland-5.95.0.tar.xz
+sha:2b8fa6f1cb0e5663cfdec98bb6ebcbe5ceec5e39f71ed0c8fbac5c7cd20c472d
 {% endblock %}
 
 {% block lib_deps %}

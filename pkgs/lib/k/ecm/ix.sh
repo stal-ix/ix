@@ -1,8 +1,8 @@
 {% extends '//die/cmake.sh' %}
 
 {% block fetch %}
-https://download.kde.org/stable/frameworks/5.94/extra-cmake-modules-5.94.0.tar.xz
-sha:23548a8ce2b998cfa675fc00112bf93914ee25194f0bfdf832d283c8d678d279
+https://download.kde.org/stable/frameworks/5.95/extra-cmake-modules-5.95.0.tar.xz
+sha:ffa02309d92958353e8e7837970e0d038475da5a18074e3442bf6b78ac91ad5a
 {% endblock %}
 
 {% block postinstall %}
