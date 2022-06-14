@@ -1,8 +1,8 @@
 {% extends '//die/make.sh' %}
 
 {% block fetch %}
-https://github.com/J-Lentz/iwgtk/archive/refs/tags/v0.5.tar.gz
-sha:5465721f79090d342c389c8748ba6ef679fa83ae5ed23cea90bcb4e1b9017689
+https://github.com/J-Lentz/iwgtk/archive/refs/tags/v0.6.tar.gz
+sha:43e128c1ef123d115cda34a66f9a79b63560e0e7b658a6f34c60ddeb3a740704
 {% endblock %}
 
 {% block bld_libs %}
