@@ -12,6 +12,7 @@ lib/xz
 lib/uv
 lib/icu
 lib/cap
+lib/lmdb
 lib/edit
 lib/xml2
 lib/idn/2
