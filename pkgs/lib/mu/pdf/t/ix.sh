@@ -20,7 +20,7 @@ lib/jpeg/open
 {% endblock %}
 
 {% block bld_tool %}
-bin/binutils(for_target={{target.gnu.three}})
+bin/ld(for_target={{target.gnu.three}})
 bld/pkg/config
 {% endblock %}
 
