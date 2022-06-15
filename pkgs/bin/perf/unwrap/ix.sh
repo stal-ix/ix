@@ -36,7 +36,7 @@ bld/bash
 bld/perl
 bld/bison
 bld/python
-bin/binutils
+bin/ld(for_target={{target.gnu.three}})
 {% endblock %}
 
 {%block make_flags %}
@@ -51,4 +51,10 @@ NO_JVMTI=1
 
 {% block build_flags %}
 wrap_cc
+{% endblock %}
+
+{% block patch %}
+find . -type f | while read l; do
+    sed -e 's|/tmp/|/var/tmp/|g' -i ${l}
+done
 {% endblock %}
