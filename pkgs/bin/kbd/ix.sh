@@ -1,8 +1,8 @@
 {% extends '//die/autorehell.sh' %}
 
 {% block fetch %}
-https://mirrors.edge.kernel.org/pub/linux/utils/kbd/kbd-2.5.0.tar.xz
-sha:ad95964a4dede55f9239dd63b455fa4498cf3db3a0075ccd1d65a9f0e622a0fd
+https://mirrors.edge.kernel.org/pub/linux/utils/kbd/kbd-2.5.1.tar.xz
+sha:ccdf452387a6380973d2927363e9cbb939fa2068915a6f937ff9d24522024683
 {% endblock %}
 
 {% block bld_libs %}
