@@ -1,8 +1,8 @@
 {% extends '//die/autorehell.sh' %}
 
 {% block fetch %}
-https://gitlab.xiph.org/xiph/speexdsp/-/archive/SpeexDSP-1.2.0/speexdsp-SpeexDSP-1.2.0.tar.bz2
-sha:0fe0e31be215f820bed0f9c913c673997773fce3a03a4555658e7b73a54eed7b
+https://gitlab.xiph.org/xiph/speexdsp/-/archive/SpeexDSP-1.2.1/speexdsp-SpeexDSP-1.2.1.tar.bz2
+sha:b36d4f16e42b7103b7fc3e4a8f98b6bf889dd1f70f65c2365af07be82844db29
 {% endblock %}
 
 {% block lib_deps %}
