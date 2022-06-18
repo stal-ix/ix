@@ -1,8 +1,8 @@
 {% extends '//die/cmake.sh' %}
 
 {% block fetch %}
-https://aomedia.googlesource.com/aom/+archive/287164de79516c25c8c84fd544f67752c170082a.tar.gz
-sem:f4cb2111512a45a6e766e1cc07c17f2f
+https://storage.googleapis.com/aom-releases/libaom-3.4.0.tar.gz
+sha:bd754b58c3fa69f3ffd29da77de591bd9c26970e3b18537951336d6c0252e354
 {% endblock %}
 
 {% block lib_deps %}
@@ -11,10 +11,6 @@ lib/c
 
 {% block bld_libs %}
 lib/c++
-{% endblock %}
-
-{% block unpack %}
-mkdir src; cd src; extract0 ${src}/*gz
 {% endblock %}
 
 {% block bld_tool %}
