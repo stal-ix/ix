@@ -1,8 +1,8 @@
 {% extends '//die/autorehell.sh' %}
 
 {% block fetch %}
-https://downloads.xiph.org/releases/speex/speex-1.2.0.tar.gz
-sha:eaae8af0ac742dc7d542c9439ac72f1f385ce838392dc849cae4536af9210094
+https://gitlab.xiph.org/xiph/speex/-/archive/Speex-1.2.1/speex-Speex-1.2.1.tar.bz2
+sha:cc55cce69d8753940d56936f7a1fe6db4b302df144aec93a92de1c65b1a87681
 {% endblock %}
 
 {% block lib_deps %}
