@@ -1,6 +1,6 @@
 {% extends '//die/make.sh' %}
 
-{# can not work for static binaries #}
+{# broken for static binaries #}
 
 {% block fetch %}
 https://github.com/namhyung/uftrace/archive/refs/tags/v0.12.tar.gz
