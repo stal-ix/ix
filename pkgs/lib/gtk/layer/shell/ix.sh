@@ -18,3 +18,7 @@ bin/wayland/protocols
 {% block meson_flags %}
 introspection=false
 {% endblock %}
+
+{% block env %}
+export CPPFLAGS="-I${out}/include/gtk-layer-shell \${CPPFLAGS}"
+{% endblock %}
