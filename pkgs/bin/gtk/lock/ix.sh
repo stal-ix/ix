@@ -17,3 +17,8 @@ lib/gtk/layer/shell
 bld/pkg/config
 bin/wayland/protocols
 {% endblock %}
+
+{% block install %}
+{{super()}}
+{{hooks.wrap_xdg_binary('gtklock')}}
+{% endblock %}
