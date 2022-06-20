@@ -36,6 +36,17 @@ EOF
 
 echo '00000000000000001111111111111111' > machine-id
 
+cat << EOF > session
+export PATH="/ix/realm/\${USER}/bin:/bin"
+export TMPDIR=/var/tmp/\$(id -u)
+export IX_ROOT=/ix
+export XDG_RUNTIME_DIR="\${TMPDIR}/\$\$"
+
+mkdir -m 0700 -p \${XDG_RUNTIME_DIR}
+
+cd \${HOME}
+EOF
+
 ln -s /proc/self/mounts mtab
 {% endblock %}
 
