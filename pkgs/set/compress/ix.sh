@@ -2,6 +2,7 @@
 
 {% block run_deps %}
 bin/xz
+bin/7z
 bin/zip
 bin/gzip
 bin/lzip
