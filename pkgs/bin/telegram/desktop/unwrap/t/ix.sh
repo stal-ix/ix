@@ -23,7 +23,6 @@ lib/range/v3
 lib/ffmpeg/4
 lib/qt/6/svg
 lib/expected
-lib/k/wayland
 lib/qt/6/base
 lib/tg/rlottie
 lib/drivers/3d
@@ -70,8 +69,6 @@ bin/wayland/protocols
 {% endblock %}
 
 {% block patch %}
-#sed -e 's| AND NOT DESKTOP_APP_QT6||' -i cmake/external/kwayland/CMakeLists.txt
-
 find . -type f | while read l; do
     sed -e 's|third_party/libyuv/include/||' -i "${l}"
 done
