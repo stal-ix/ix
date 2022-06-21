@@ -1,8 +1,8 @@
-{% extends '//die/autohell.sh' %}
+{% extends '//die/cmake.sh' %}
 
 {% block fetch %}
-https://downloads.sourceforge.net/mad/libmad-0.15.1b.tar.gz
-1be543bc30c56fb6bea1d7bf6a64e66c
+https://github.com/tenacityteam/libmad/archive/refs/tags/0.16.1.tar.gz
+sha:3b716425cfab52d4c5127f45675a784f5c15d21b61d55850a49b2152c1bb108d
 {% endblock %}
 
 {% block lib_deps %}
