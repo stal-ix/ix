@@ -70,7 +70,7 @@ bin/wayland/protocols
 {% endblock %}
 
 {% block patch %}
-sed -e 's| AND NOT DESKTOP_APP_QT6||' -i cmake/external/kwayland/CMakeLists.txt
+#sed -e 's| AND NOT DESKTOP_APP_QT6||' -i cmake/external/kwayland/CMakeLists.txt
 
 find . -type f | while read l; do
     sed -e 's|third_party/libyuv/include/||' -i "${l}"
