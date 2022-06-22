@@ -14,9 +14,7 @@ USE_qt6=ON
 
 BUILD_wireshark=ON
 
-# TODO(pg): use it from tui package
-BUILD_dumpcap=ON
-
+BUILD_dumpcap=OFF
 BUILD_logwolf=OFF
 BUILD_tshark=OFF
 BUILD_tfshark=OFF
@@ -56,5 +54,16 @@ bld/qt/6/tools
 
 {% block install %}
 {{super()}}
+
+cd ${out}/bin
+
+# redirect dumpcap to tui package
+cat << EOF > dumpcap
+#!/usr/bin/env sh
+exec dumpcap-lib "\${@}"
+EOF
+
+chmod +x dumpcap
+
 {{hooks.wrap_xdg_binary('wireshark')}}
 {% endblock %}

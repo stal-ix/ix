@@ -4,3 +4,9 @@
 {{super()}}
 BUILD_wireshark=OFF
 {% endblock %}
+
+{% block install %}
+{{super()}}
+cd ${out}/bin
+ln -s dumpcap dumpcap-lib
+{% endblock %}
