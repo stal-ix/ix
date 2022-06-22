@@ -1,8 +1,8 @@
 {% extends '//die/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/ericniebler/range-v3/archive/9aa032ccd0eb4bd77f58e5b181168f1038c222c6.zip
-c40b835c3b7dd751f1c4c3bcf5b99c92
+https://github.com/ericniebler/range-v3/archive/refs/tags/0.12.0.tar.gz
+sha:015adb2300a98edfceaf0725beec3337f542af4915cec4d0b89fa0886f4ba9cb
 {% endblock %}
 
 {% block lib_deps %}
