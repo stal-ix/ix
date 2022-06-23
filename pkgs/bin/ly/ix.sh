@@ -28,6 +28,7 @@ cd ..
 lib/c
 lib/pam
 lib/linux
+lib/x11shim
 {% endblock %}
 
 {% block setup_tools %}
@@ -36,32 +37,6 @@ cat << EOF > git
 EOF
 
 chmod +x *
-{% endblock %}
-
-{% block patch %}
-find . -type f | while read l; do
-    sed -e 's|-lxcb||' -i ${l}
-done
-
-mkdir xcb
-
-cat << EOF > xcb/xcb.h
-#pragma once
-
-#include <time.h>
-
-typedef struct {
-    int x;
-} xcb_connection_t;
-
-#define xcb_connect(x, y) NULL
-#define xcb_connection_has_error(x) 0
-#define xcb_disconnect(x)
-EOF
-{% endblock %}
-
-{% block cpp_includes %}
-${PWD}
 {% endblock %}
 
 {% block make_flags %}

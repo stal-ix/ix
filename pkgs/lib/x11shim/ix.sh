@@ -30,4 +30,20 @@ typedef void Display;
 #define DisplayWidth(X, Y) 0
 #define DisplayHeight(X, Y) 0
 EOF
+
+mkdir ${out}/include/xcb
+
+cat << EOF > ${out}/include/xcb/xcb.h
+#pragma once
+
+#include <time.h>
+
+typedef struct {
+        int x;
+} xcb_connection_t;
+
+#define xcb_connect(x, y) NULL
+#define xcb_connection_has_error(x) 0
+#define xcb_disconnect(x)
+EOF
 {% endblock %}
