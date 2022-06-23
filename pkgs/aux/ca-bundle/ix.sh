@@ -2,13 +2,14 @@
 
 {% block fetch %}
 https://github.com/curl/curl/archive/refs/tags/curl-7_80_0.tar.gz
-d96c3324dd060474508312449105d835
-https://hg.mozilla.org/releases/mozilla-release/raw-file/default/security/nss/lib/ckfw/builtins/certdata.txt
-sha:34a54d5191775c1bd37be6cfd3f09e831e072555dc3a2e51f4a2c4b0f8ada5cc
+sha:798d2b9432c93c96e7c103568d60f84a50d90875aa8cf4f9fe340005c480f2ea
+{% include '//lib/nss/t/ver.sh' %}
 {% endblock %}
 
 {% block unpack %}
-mkdir src; cd src; extract1 ${src}/*.tar.gz
+mkdir src; cd src
+extract 1 ${src}/curl*
+extract 1 ${src}/nss*
 {% endblock %}
 
 {% block bld_tool %}
@@ -17,7 +18,7 @@ bin/openssl
 {% endblock %}
 
 {% block build %}
-cp ${src}/certdata.txt .
+cp nss/lib/ckfw/builtins/certdata.txt .
 perl lib/mk-ca-bundle.pl -n -k - > ca-bundle.crt
 {% endblock %}
 
