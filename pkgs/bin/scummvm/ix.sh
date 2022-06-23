@@ -18,6 +18,7 @@ lib/sdl/2
 lib/mpeg2
 lib/giflib
 lib/fribidi
+lib/x11shim
 lib/sdl/deps
 lib/freetype
 lib/timidity
@@ -43,10 +44,4 @@ sh ./configure \
     --opengl-mode=gles2    \
     --enable-verbose-build \
     --force-opengl-game-es2
-{% endblock %}
-
-{% block patch %}
-find. -type f | while read l; do
-    sed -e 's|-lX11||g' -i ${l}
-done
 {% endblock %}
