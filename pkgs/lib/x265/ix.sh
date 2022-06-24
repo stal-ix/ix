@@ -1,8 +1,8 @@
 {% extends '//die/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/videolan/x265/archive/refs/tags/3.4.tar.gz
-d867c3a7e19852974cf402c6f6aeaaf3
+https://bitbucket.org/multicoreware/x265_git/downloads/x265_3.5.tar.gz
+sha:e70a3335cacacbba0b3a20ec6fecd6783932288ebc8163ad74bcc9606477cae8
 {% endblock %}
 
 {% block unpack %}
