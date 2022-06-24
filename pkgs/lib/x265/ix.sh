@@ -17,3 +17,7 @@ ENABLE_SHARED=OFF
 {% block lib_deps %}
 lib/c
 {% endblock %}
+
+{% block bld_tool %}
+bin/git
+{% endblock %}
