@@ -19,12 +19,14 @@ lib/c
 lib/uv
 lib/xz
 lib/c++
+lib/rhash
 lib/expat
 lib/bzip/2
 {% endblock %}
 
 {% block cmake_flags %}
 BUILD_TESTING=OFF
+CMAKE_USE_SYSTEM_RHASH=ON
 CMAKE_USE_SYSTEM_EXPAT=ON
 CMAKE_USE_SYSTEM_ZLIB=ON
 CMAKE_USE_SYSTEM_LIBUV=ON
