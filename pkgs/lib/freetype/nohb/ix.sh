@@ -9,7 +9,7 @@ sha:4766f20157cc4cf0cd292f80bf917f92d1c439b243ac3018debf6b9140c41a7f
 lib/c
 lib/z
 lib/png
-lib/bzip2
+lib/bzip/2
 lib/brotli
 {% endblock %}
 

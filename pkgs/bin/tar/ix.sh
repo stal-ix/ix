@@ -10,6 +10,6 @@ lib/c
 lib/z
 lib/xz
 lib/intl
-lib/bzip2
 lib/iconv
+lib/bzip/2
 {% endblock %}

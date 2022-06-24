@@ -7,9 +7,9 @@ lib/xz
 lib/lz4
 lib/lzo
 lib/zstd
-lib/bzip2
 lib/iconv
 lib/expat
+lib/bzip/2
 {% endblock %}
 
 {% block c_rename_symbol %}

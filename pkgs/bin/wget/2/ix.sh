@@ -12,9 +12,9 @@ lib/xz
 lib/zstd
 lib/intl
 lib/pcre
-lib/bzip2
 lib/idn/2
 lib/iconv
+lib/bzip/2
 lib/brotli
 lib/gnutls
 lib/ng/http/2

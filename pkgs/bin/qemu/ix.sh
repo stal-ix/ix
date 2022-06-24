@@ -19,9 +19,9 @@ lib/intl
 lib/udev
 lib/ssh/2
 lib/iconv
-lib/bzip2
 lib/sdl/2
 lib/uring
+lib/bzip/2
 lib/nettle
 lib/cap/ng
 lib/pixman

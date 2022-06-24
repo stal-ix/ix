@@ -1,1 +1,1 @@
-{% extends '//lib/bzip2/t/ix.sh' %}
+{% extends '//lib/bzip/2/t/ix.sh' %}

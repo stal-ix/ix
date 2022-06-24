@@ -19,8 +19,8 @@ lib/c
 lib/uv
 lib/xz
 lib/c++
-lib/bzip2
 lib/expat
+lib/bzip/2
 {% endblock %}
 
 {% block cmake_flags %}

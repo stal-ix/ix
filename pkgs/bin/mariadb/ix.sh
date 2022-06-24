@@ -13,8 +13,8 @@ lib/fmt
 lib/lz4
 lib/c++
 lib/zstd
-lib/bzip2
 lib/boost
+lib/bzip/2
 lib/curses
 lib/gnutls
 lib/pcre/2/posix

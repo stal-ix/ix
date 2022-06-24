@@ -10,6 +10,6 @@ lib/c
 lib/z
 lib/xz
 lib/zstd
-lib/bzip2
+lib/bzip/2
 lib/openssl
 {% endblock %}

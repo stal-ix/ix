@@ -4,5 +4,5 @@
 lib/c
 lib/z
 lib/xz
-lib/bzip2
+lib/bzip/2
 {% endblock %}

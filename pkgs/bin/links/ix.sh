@@ -11,8 +11,8 @@ lib/z
 lib/xz
 lib/lz4
 lib/zstd
-lib/bzip2
 lib/event
+lib/bzip/2
 lib/brotli
 lib/openssl
 {% endblock %}

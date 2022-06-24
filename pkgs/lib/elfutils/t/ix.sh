@@ -11,7 +11,7 @@ lib/z
 lib/xz
 lib/fts
 lib/zstd
-lib/bzip2
+lib/bzip/2
 {% endblock %}
 
 {% block bld_libs %}

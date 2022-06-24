@@ -7,11 +7,11 @@ lib/xz
 lib/ffi
 lib/intl
 lib/gdbm
-lib/bzip2
 lib/iconv
 lib/expat
-lib/sqlite3
+lib/bzip/2
 lib/curses
+lib/sqlite3
 lib/openssl
 lib/mpdecimal
 lib/{{edit or 'edit'}}
