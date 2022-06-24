@@ -2,6 +2,14 @@
 
 {% block fetch %}
 {% include 'ver.sh' %}
+https://github.com/telegramdesktop/tdesktop/archive/refs/tags/v4.0.1.tar.gz
+sha:02779dce6e82708c0ebe5f4d07dc878f1c117998b2ca6b8d2f0eb614b623c03e
+{% endblock %}
+
+{% block unpack %}
+mkdir src; cd src
+extract 1 ${src}/*full*
+extract 1 ${src}/v*
 {% endblock %}
 
 {% block bld_libs %}
