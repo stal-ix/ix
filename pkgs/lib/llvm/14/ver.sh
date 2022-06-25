@@ -1,2 +1,2 @@
-https://github.com/llvm/llvm-project/archive/refs/tags/llvmorg-14.0.5.tar.gz
-sha:a4a57f029cb81f04618e05853f05fc2d21b64353c760977d8e7799bf7218a23a
+https://github.com/llvm/llvm-project/archive/refs/tags/llvmorg-14.0.6.tar.gz
+sha:98f15f842700bdb7220a166c8d2739a03a72e775b67031205078f39dd756a055

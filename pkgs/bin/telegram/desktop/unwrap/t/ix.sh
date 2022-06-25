@@ -2,8 +2,8 @@
 
 {% block fetch %}
 {% include 'ver.sh' %}
-https://github.com/telegramdesktop/tdesktop/archive/refs/tags/v4.0.1.tar.gz
-sha:02779dce6e82708c0ebe5f4d07dc878f1c117998b2ca6b8d2f0eb614b623c03e
+https://github.com/telegramdesktop/tdesktop/archive/refs/tags/v4.0.2.tar.gz
+sha:
 {% endblock %}
 
 {% block unpack %}
