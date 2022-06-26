@@ -1,8 +1,8 @@
 {% extends '//die/autohell.sh' %}
 
 {% block fetch %}
-https://downloads.sourceforge.net/project/mpg123/mpg123/1.29.3/mpg123-1.29.3.tar.bz2
-sha:963885d8cc77262f28b77187c7d189e32195e64244de2530b798ddf32183e847
+https://downloads.sourceforge.net/project/mpg123/mpg123/1.30.0/mpg123-1.30.0.tar.bz2
+sha:397ead52f0299475f2cefd38c3835977193fd9b1db6593680346c4e9109ed61c
 {% endblock %}
 
 {% block lib_deps %}
