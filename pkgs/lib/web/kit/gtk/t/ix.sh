@@ -49,6 +49,7 @@ USE_WPE_RENDERER=ON
 ENABLE_GLES2=ON
 USE_OPENGL=OFF
 PORT=GTK
+USE_JPEGXL=ON
 {% endblock %}
 
 {% block patch %}
