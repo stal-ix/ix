@@ -68,6 +68,9 @@ BUILD_SHARED_LIBS=OFF
 -D{{f}}
 {% endfor %}
 
+{% block cmake_extra_flags %}
+{% endblock %}
+
 {% block cmake_srcdir %}
 .
 {% endblock %}

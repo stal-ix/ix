@@ -41,6 +41,7 @@ dsymutil
 llvm-ar
 llvm-as
 llvm-nm
+llvm-dis
 llvm-ranlib
 
 llvm-install-name-tool
