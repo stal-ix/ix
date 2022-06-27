@@ -11,7 +11,6 @@ lib/c++
 {% endblock %}
 
 {% block bld_tool %}
-bin/git
 bld/python
 {% endblock %}
 
