@@ -19,5 +19,9 @@ lib/c
 {% endblock %}
 
 {% block bld_tool %}
-bin/git
+bld/scripts/fakegit
+{% endblock %}
+
+{% block test %}
+test -f ${out}/lib/pkgconfig/x265.pc
 {% endblock %}
