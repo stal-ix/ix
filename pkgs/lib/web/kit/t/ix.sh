@@ -11,7 +11,7 @@ bld/glib/codegen
 bin/wayland/protocols
 {% endblock %}
 
-{% block ninja_threads %}5{% endblock %}
+{% block ninja_threads %}4{% endblock %}
 
 {% block cmake_flags %}
 USE_AVIF=ON
