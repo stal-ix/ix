@@ -1,15 +1,15 @@
-{% extends '//die/meson.sh' %}
+{% extends '//lib/wacom/t/ix.sh' %}
 
-{% block fetch %}
-https://github.com/linuxwacom/libwacom/releases/download/libwacom-2.3.0/libwacom-2.3.0.tar.xz
-sha:2fb22a7072cdbcf742d91c38246b0f91bbfd753b934ef5227e31554effb62334
+{% block run_data %}
+lib/wacom/data
 {% endblock %}
 
-{% block lib_deps %}
-lib/c
-lib/udev/g
+{% block bld_tool %}
+{{super()}}
+bld/scripts/reloc
 {% endblock %}
 
-{% block meson_flags %}
-tests=disabled
+{% block configure %}
+{{super()}}
+relocate "${WACOM_DATA}"
 {% endblock %}
