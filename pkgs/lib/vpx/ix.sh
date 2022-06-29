@@ -1,8 +1,8 @@
 {% extends '//die/make.sh' %}
 
 {% block fetch %}
-https://chromium.googlesource.com/webm/libvpx/+archive/626ff35955c2c35b806b3e0ecf551a1a8611cdbf.tar.gz
-sem:05ff83b352b7247177f762a307914685
+https://chromium.googlesource.com/webm/libvpx/+archive/03265cd42b3783532de72f2ded5436652e6f5ce3.tar.gz
+sem:92ec7e71b949d65ebe9436a29ce763f3
 {% endblock %}
 
 {% block skip_dirs %}0{% endblock %}
