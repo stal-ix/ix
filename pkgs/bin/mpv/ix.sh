@@ -30,11 +30,6 @@ bld/perl
 bin/wayland/protocols
 {% endblock %}
 
-{% block unpack %}
-{{super()}}
-cp ${bin_waf}/bin/waf ./
-{% endblock %}
-
 {% block waf_flags %}
 --enable-openal
 --enable-javascript

@@ -29,6 +29,8 @@ export CXXFLAGS="-Wno-register ${CXXFLAGS}"
 {% endblock %}
 
 {% block patch %}
+sed -e 's|.*opt.*xcode6.*||' -i wscript
+
 find . -name '*.sh' | while read l; do
     sed -e 's|/bin/bash|/usr/bin/env bash|' -i ${l}
 done
