@@ -1,8 +1,8 @@
 {% extends '//die/autorehell.sh' %}
 
 {% block fetch %}
-https://github.com/vim/vim/archive/refs/tags/v8.2.4701.tar.gz
-sha:25b1deb928d80080d8ebc19913dfb27ac8b17e0e961ccb56bc9216e0104426d9
+https://github.com/vim/vim/archive/refs/tags/v9.0.0006.tar.gz
+sha:e5ece8e5b530561a5ab732c793e7e247f3c472bce57b09cead3b58f2d4f9b3f4
 {% endblock %}
 
 {% block unpack %}
