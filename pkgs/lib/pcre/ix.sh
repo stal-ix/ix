@@ -2,7 +2,7 @@
 
 {% block fetch %}
 https://downloads.sourceforge.net/project/pcre/pcre/8.45/pcre-8.45.tar.bz2
-4452288e6a0eefb2ab11d36010a1eebb
+md5:4452288e6a0eefb2ab11d36010a1eebb
 {% endblock %}
 
 {% block lib_deps %}

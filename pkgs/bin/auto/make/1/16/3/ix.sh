@@ -2,7 +2,7 @@
 
 {% block fetch %}
 https://ftp.gnu.org/gnu/automake/automake-1.16.3.tar.xz
-c27f608a4e1f302ec7ce42f1251c184e
+sha:ff2bf7656c4d1c6fdda3b8bebb21f09153a736bcba169aaf65eab25fa113bf3a
 {% endblock %}
 
 {% block bld_tool %}

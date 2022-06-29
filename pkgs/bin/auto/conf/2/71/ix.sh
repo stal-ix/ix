@@ -2,7 +2,7 @@
 
 {% block fetch %}
 https://ftp.gnu.org/gnu/autoconf/autoconf-2.71.tar.xz
-12cfa1687ffa2606337efe1a64416106
+sha:f14c83cfebcc9427f2c3cea7258bd90df972d92eb26752da4ddad81c87a0faa4
 {% endblock %}
 
 {% block bld_tool %}

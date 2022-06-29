@@ -2,7 +2,7 @@
 
 {% block fetch %}
 https://ftp.gnu.org/gnu/bison/bison-3.6.1.tar.xz
-16fa3e60f2c33888c6ef7af64c89e182
+md5:16fa3e60f2c33888c6ef7af64c89e182
 {% endblock %}
 
 {% block bison %}

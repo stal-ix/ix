@@ -2,7 +2,7 @@
 
 {% block fetch %}
 https://busybox.net/downloads/busybox-1.35.0.tar.bz2
-585949b1dd4292b604b7d199866e9913
+sha:faeeb244c35a348a334f4a59e44626ee870fb07b6884d68c10ae8bc19f83a694
 {% endblock %}
 
 {% block bld_libs %}

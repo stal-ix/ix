@@ -2,5 +2,5 @@
 
 {% block fetch %}
 https://ftp.gnu.org/gnu/autoconf/autoconf-2.69.tar.xz
-50f97f4159805e374639a73e2636f22e
+sha:64ebcec9f8ac5b2487125a86a7760d2591ac9e1d3dbd59489633f9de62a57684
 {% endblock %}

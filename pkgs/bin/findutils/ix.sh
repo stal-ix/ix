@@ -2,7 +2,7 @@
 
 {% block fetch %}
 https://ftp.gnu.org/gnu/findutils/findutils-4.8.0.tar.xz
-eeefe2e6380931a77dfa6d9350b43186
+sha:57127b7e97d91282c6ace556378d5455a9509898297e46e10443016ea1387164
 {% endblock %}
 
 {% block bld_libs %}

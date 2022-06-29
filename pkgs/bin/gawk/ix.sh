@@ -2,7 +2,7 @@
 
 {% block fetch %}
 https://mirror.tochlab.net/pub/gnu/gawk/gawk-5.1.0.tar.xz
-8470c34eeecc41c1aa0c5d89e630df50
+sha:cf5fea4ac5665fd5171af4716baab2effc76306a9572988d5ba1078f196382bd
 {% endblock %}
 
 {% block bld_libs %}

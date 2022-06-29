@@ -2,7 +2,7 @@
 
 {% block fetch %}
 https://www.crufty.net/ftp/pub/sjg/bmake-20210808.tar.gz
-e4432f5e3add4459aef28ec2017aaf05
+sha:40a5860812091a0613b9542637a0f4aa05f38889e2a1f889f0e827feb41357d2
 {% endblock %}
 
 {% block bld_libs %}

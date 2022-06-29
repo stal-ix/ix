@@ -2,7 +2,7 @@
 
 {% block fetch %}
 http://smarden.org/runit/runit-2.1.2.tar.gz
-6c985fbfe3a34608eb3c53dc719172c4
+sha:6fd0160cb0cf1207de4e66754b6d39750cff14bb0aa66ab49490992c0c47ba18
 {% endblock %}
 
 {% block bld_libs %}

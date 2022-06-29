@@ -2,7 +2,7 @@
 
 {% block fetch %}
 https://ftp.gnu.org/gnu/m4/m4-1.4.19.tar.xz
-0d90823e1426f1da2fd872df0311298d
+sha:63aede5c6d33b6d9b13511cd0be2cac046f2e70fd0a07aa9573a04a82783af96
 {% endblock %}
 
 {% block bld_libs %}

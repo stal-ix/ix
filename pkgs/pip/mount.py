@@ -9,7 +9,7 @@ TMPL = r'''
 
 {% block fetch %}
 {url}
-{md5}
+md5:{md5}
 {% endblock %}
 
 {% block bld_tool %}

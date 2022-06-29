@@ -2,7 +2,7 @@
 
 {% block fetch %}
 https://www.thrysoee.dk/editline/libedit-20210910-3.1.tar.gz
-648946c97eb92daed5ca0d08bbd5e6a2
+md5:648946c97eb92daed5ca0d08bbd5e6a2
 {% endblock %}
 
 {% block lib_deps %}

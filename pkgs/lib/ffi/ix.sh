@@ -2,7 +2,7 @@
 
 {% block fetch %}
 https://github.com/libffi/libffi/archive/refs/tags/v3.4.2.tar.gz
-f2e272ec793571f28d52006ad14534c4
+sha:0acbca9fd9c0eeed7e5d9460ae2ea945d3f1f3d48e13a4c54da12c7e0d23c313
 {% endblock %}
 
 {% block lib_deps %}

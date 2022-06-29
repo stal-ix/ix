@@ -2,7 +2,7 @@
 
 {% block fetch %}
 https://github.com/westes/flex/files/981163/flex-2.6.4.tar.gz
-2882e3179748cc9f9c23ec593d6adc8d
+sha:e87aae032bf07c26f85ac0ed3250998c37621d95f8bd748b31f15b33c45ee995
 {% endblock %}
 
 {% block bld_libs %}

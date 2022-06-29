@@ -2,7 +2,7 @@
 
 {% block fetch %}
 https://github.com/mesonbuild/meson/archive/refs/tags/0.60.2.tar.gz
-a5d6cfcf776e145f2054d5eefb4bc110
+md5:a5d6cfcf776e145f2054d5eefb4bc110
 {% endblock %}
 
 {% block unpack %}

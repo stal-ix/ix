@@ -2,7 +2,7 @@
 
 {% block fetch %}
 https://www.kernel.org/pub/linux/kernel/v5.x/linux-5.13.12.tar.xz
-6e1728b2021ca19cc9273f080e6c44c7
+md5:6e1728b2021ca19cc9273f080e6c44c7
 {% endblock %}
 
 {% block host_libs %}
