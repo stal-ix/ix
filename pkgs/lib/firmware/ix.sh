@@ -5,10 +5,7 @@ https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/snap
 sha:1ff936dc3946affa2695f31024b22e117b3faf9aa7b8857aba1d0473cd277897
 {% endblock %}
 
-{% block unpack %}
-mkdir src; cd src
-extract0 ${src}/*.gz
-{% endblock %}
+{% block skip_dirs %}0{% endblock %}
 
 {% block install %}
 cp -R linux-firmware* ${out}/lib

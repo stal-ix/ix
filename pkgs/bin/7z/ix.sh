@@ -10,9 +10,10 @@ lib/c
 lib/c++
 {% endblock %}
 
+{% block skip_dirs %}0{% endblock %}
+
 {% block unpack %}
-mkdir src; cd src
-extract 0 ${src}/*xz
+{{super()}}
 cd CPP/7zip/Bundles/Alone2
 {% endblock %}
 

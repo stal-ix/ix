@@ -5,9 +5,7 @@ https://chromium.googlesource.com/webm/libvpx/+archive/626ff35955c2c35b806b3e0ec
 sem:05ff83b352b7247177f762a307914685
 {% endblock %}
 
-{% block unpack %}
-mkdir src; cd src; extract 0 ${src}/*gz
-{% endblock %}
+{% block skip_dirs %}0{% endblock %}
 
 {% block lib_deps %}
 lib/c

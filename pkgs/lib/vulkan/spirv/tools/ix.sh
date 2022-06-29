@@ -18,7 +18,7 @@ extract1 ${src}/v*
 
 (
     cd external
-    extract0 ${src}/sdk*
+    extract 0 ${src}/sdk*
     ln -s S* SPIRV-Headers
 )
 {% endblock %}

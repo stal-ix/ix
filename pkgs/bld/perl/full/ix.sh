@@ -13,7 +13,9 @@ lib/expat
 
 {% block unpack %}
 # TODO(pg): proper extract1
-extract0 ${src}/perl* && cd perl* && cd ext
+extract0 ${src}/perl*
+cd perl*
+cd ext
 extract0 ${src}/XML*
 mv XML* XML-Parser
 ln -s XML-Parser/Expat XML-Parser-Expat

@@ -14,7 +14,4 @@ lib/sndfile
 lib/linux
 {% endblock %}
 
-{% block unpack %}
-mkdir src; cd src
-extract 0 ${src}/*gz
-{% endblock %}
+{% block skip_dirs %}0{% endblock %}

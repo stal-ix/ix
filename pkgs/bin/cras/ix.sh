@@ -9,10 +9,10 @@ https://chromium.googlesource.com/chromiumos/third_party/adhd/+/454c81a0669c2c5f
 sha:295cd44d40e5c487f86b1935835446e562652bc8eccbade67e598135247573ed
 {% endblock %}
 
+{% block skip_dirs %}0{% endblock %}
+
 {% block unpack %}
-mkdir src
-cd src
-extract 0 ${src}/*.gz
+{{super()}}
 cat ${src}/rate_estimator.h* | base64 -d > src/server/rate_estimator.h
 cat ${src}/rate_estimator.c* | base64 -d > src/server/rate_estimator.c
 {% endblock %}

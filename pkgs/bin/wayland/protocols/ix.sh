@@ -1,10 +1,10 @@
 {% extends '//die/meson.sh' %}
 
 {% block fetch %}
-#https://wayland.freedesktop.org/releases/wayland-protocols-1.24.tar.xz
-#a66fa869543707279fb78a24d42cbb1d
-https://gitlab.freedesktop.org/wayland/wayland-protocols/-/archive/1.25/wayland-protocols-1.25.tar.bz2
-sha:633c9bed0efb8e773c5780d4442051264d179c154b7d1896ca3b56b5d4da4718
+#https://gitlab.freedesktop.org/wayland/wayland-protocols/-/archive/1.25/wayland-protocols-1.25.tar.bz2
+#sha:8a86df9cfbdc5527e95f789eee0212928324a69bc6ca69d24d0a5cf8744cb467
+https://github.com/wayland-project/wayland-protocols/archive/refs/tags/1.25.tar.gz
+sha:4326e2b5e04e459ab4522e83e19bff101a3faf9b085bcf46b6cabbd392cc4458
 {% endblock %}
 
 {% block bld_tool %}

@@ -14,9 +14,7 @@ lib/c++
 bld/python
 {% endblock %}
 
-{% block unpack %}
-mkdir src; cd src; extract0 ${src}/*.tar.gz
-{% endblock %}
+{% block skip_dirs %}0{% endblock %}
 
 {% block configure %}
 python3 build/gen.py          \

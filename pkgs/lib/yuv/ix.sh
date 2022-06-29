@@ -10,9 +10,7 @@ lib/c
 lib/jpeg
 {% endblock %}
 
-{% block unpack %}
-mkdir src; cd src; extract0 ${src}/*gz
-{% endblock %}
+{% block skip_dirs %}0{% endblock %}
 
 {% block build_flags %}
 wrap_cc

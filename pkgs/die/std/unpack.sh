@@ -9,7 +9,7 @@ for s in ${src}/*; do
         *.patch)
         ;;
         *)
-            extract1 ${s}
+            extract{% block skip_dirs %}1{% endblock %} ${s}
         ;;
     esac
 done
