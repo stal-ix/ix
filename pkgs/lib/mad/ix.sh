@@ -1,8 +1,8 @@
 {% extends '//die/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/tenacityteam/libmad/archive/refs/tags/0.16.1.tar.gz
-sha:3b716425cfab52d4c5127f45675a784f5c15d21b61d55850a49b2152c1bb108d
+https://github.com/tenacityteam/libmad/archive/refs/tags/0.16.2.tar.gz
+sha:6c14c2f4dcf7fd32e447eef99d6c53faded52e22f95e223e6f58844030851b99
 {% endblock %}
 
 {% block lib_deps %}
