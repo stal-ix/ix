@@ -1,4 +1,3 @@
-
 https://chromium.googlesource.com/chromium/src/base/trace_event/common.git/+archive/68d816952258c9d817bba656ee2664b35507f01b.tar.gz
 sem:06f36fd8119765fd0f1259160efac2b7
 
@@ -70,4 +69,3 @@ sem:b6e5a5ae58b5dfa0965e815487ea37ac
 
 https://chromium.googlesource.com/chromium/src/tools/clang.git/+archive/c00aa10009548ad073810d810cc4a71d2965f75b.tar.gz
 sem:f727e4543999e3d3499b4fac5e87952e
-

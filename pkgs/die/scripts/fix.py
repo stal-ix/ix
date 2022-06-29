@@ -31,10 +31,14 @@ def fix1(d, n):
 def fix(d, n):
     def it():
         for l in d.split('\n'):
-            if 'extends' in l or 'include' in l:
-                yield l
+            if len(l) == 16 and ' ' not in l:
+                try:
+                    bytes.fromhex(l)
+                    yield 'md5:' + l
+                except Exception:
+                    yield l
             else:
-                yield l.replace('/ix.sh', '')
+                yield l
 
     return '\n'.join(it()).strip() + '\n'
 
@@ -48,9 +52,9 @@ for a, b, c in os.walk('.'):
                 d = f.read()
 
             try:
-                dd = fix1(d, p)
+                dd = fix(d, p)
             except Exception as e:
-                print(f'skip {p}, {e}')
+                print(f'skip {p}, {e}, {repr(e)}')
                 dd = None
 
             if dd and d != dd:
