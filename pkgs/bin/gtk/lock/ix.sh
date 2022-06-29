@@ -1,8 +1,8 @@
 {% extends '//die/make.sh' %}
 
 {% block fetch %}
-https://github.com/jovanlanik/gtklock/archive/refs/tags/v1.1.0.tar.gz
-sha:e5faec7c7de5df39e9d6d70e6c4ab6dc86fd3f74441d86cc28199dd70b34fc29
+https://github.com/jovanlanik/gtklock/archive/refs/tags/v1.2.0.tar.gz
+sha:0e4c74ef5a381c20e6ed199038300671dea0d85ff4cf76ffc50810f6056ff000
 {% endblock %}
 
 {% block bld_libs %}
