@@ -79,12 +79,9 @@ def chksum(path, sch):
 
 
 def calc_chksum(path, old_cs):
-    if ':' in old_cs:
-        sch = old_cs[:old_cs.index(':')]
+    sch = old_cs[:old_cs.index(':')]
 
-        return sch + ':' + chksum(path, sch)
-
-    return chksum(path, 'md5')
+    return sch + ':' + chksum(path, sch)
 
 
 class Iface:
