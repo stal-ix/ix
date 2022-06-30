@@ -1,8 +1,8 @@
 {% extends '//die/meson.sh' %}
 
 {% block fetch %}
-https://gitlab.gnome.org/GNOME/glib/-/archive/2.72.2/glib-2.72.2.tar.bz2
-sha:2f9daad3e51b0f98a94703c3667830ffabe287d622c7b0af22dd543faeb73b8a
+https://gitlab.gnome.org/GNOME/glib/-/archive/2.72.3/glib-2.72.3.tar.bz2
+sha:822c523ae8edab910dd9dfd6673e74f4408bd50f27a4dc2081dc3cb9464aebcf
 {% endblock %}
 
 {% block lib_deps %}
