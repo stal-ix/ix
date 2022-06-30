@@ -2,7 +2,7 @@
 
 {% block fetch %}
 http://frodo.looijaard.name/system/files/software/getopt/getopt-1.1.6.tar.gz
-4eaff9e6d8b2504a2e0d29ff0e9fd956
+md5:4eaff9e6d8b2504a2e0d29ff0e9fd956
 {% endblock %}
 
 {% block make_flags %}

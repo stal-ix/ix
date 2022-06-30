@@ -2,11 +2,11 @@
 
 {% block fetch %}
 https://github.com/pg83/mrustc/archive/refs/heads/master.zip
-de37572dae52a8249bb3fabfb3f5532b
+md5:de37572dae52a8249bb3fabfb3f5532b
 https://static.rust-lang.org/dist/rustc-1.29.0-src.tar.gz
-54c3f0ffb826bdcc2a7395468828a94c
+md5:54c3f0ffb826bdcc2a7395468828a94c
 https://static.rust-lang.org/dist/rustc-1.19.0-src.tar.gz
-75e779670ac79edf023497a9c37eb35d
+md5:75e779670ac79edf023497a9c37eb35d
 {% endblock %}
 
 {% block bld_libs %}

@@ -2,7 +2,7 @@
 
 {% block fetch %}
 https://static.rust-lang.org/dist/rust-1.56.1-x86_64-unknown-linux-gnu.tar.gz
-4e6a4451665dfa5c8a0af3e3cf8a4a26
+md5:4e6a4451665dfa5c8a0af3e3cf8a4a26
 {% endblock %}
 
 {% block build %}

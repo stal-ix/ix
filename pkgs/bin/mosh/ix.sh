@@ -2,7 +2,7 @@
 
 {% block fetch %}
 https://github.com/mobile-shell/mosh/archive/refs/tags/mosh-1.3.2.tar.gz
-04f48ea1b98ba1799593ca9c5b3cc90f
+md5:04f48ea1b98ba1799593ca9c5b3cc90f
 {% endblock %}
 
 {% block bld_libs %}

@@ -2,7 +2,7 @@
 
 {% block fetch %}
 https://github.com/v8/v8/archive/refs/tags/9.7.37.tar.gz
-3f48a781bbad3f531720d2b7898f68aa
+md5:3f48a781bbad3f531720d2b7898f68aa
 {% include 'urls.sh' %}
 {% endblock %}
 

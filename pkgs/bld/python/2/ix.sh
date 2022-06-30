@@ -2,7 +2,7 @@
 
 {% block fetch %}
 https://www.python.org/ftp/python/2.7.18/Python-2.7.18.tar.xz
-fd6cc8ec0a78c44036f825e739f36e5a
+md5:fd6cc8ec0a78c44036f825e739f36e5a
 {% endblock %}
 
 {% block bld_libs %}

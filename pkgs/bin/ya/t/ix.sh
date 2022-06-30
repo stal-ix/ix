@@ -2,7 +2,7 @@
 
 {% block fetch %}
 https://www.antlr.org/download/antlr-4.9-complete.jar
-be31e2ab97ad66b404425e2794673bee
+md5:be31e2ab97ad66b404425e2794673bee
 {% endblock %}
 
 {% block step_unpack %}

@@ -2,7 +2,7 @@
 
 {% block fetch %}
 https://ftp.gnu.org/gnu/bash/bash-3.2.57.tar.gz
-237a8767c990b43ae2c89895c2dbc062
+md5:237a8767c990b43ae2c89895c2dbc062
 {% endblock %}
 
 {% block bld_libs %}

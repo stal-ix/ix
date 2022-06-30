@@ -2,7 +2,7 @@
 
 {% block fetch %}
 http://www.ivarch.com/programs/sources/pv-1.6.6.tar.bz2
-ff3564fddcc2b9bd4a9c1d143aba4b4c
+md5:ff3564fddcc2b9bd4a9c1d143aba4b4c
 {% endblock %}
 
 {% block bld_tool %}

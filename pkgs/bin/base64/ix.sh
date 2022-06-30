@@ -2,7 +2,7 @@
 
 {% block fetch %}
 https://github.com/aklomp/base64/archive/refs/tags/v0.4.0.tar.gz
-dc02ea0324279df0ecdc23d519dbcaa0
+md5:dc02ea0324279df0ecdc23d519dbcaa0
 {% endblock %}
 
 {% block setup_tools %}

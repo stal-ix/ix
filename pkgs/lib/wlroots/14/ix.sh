@@ -2,7 +2,7 @@
 
 {% block fetch %}
 https://gitlab.freedesktop.org/wlroots/wlroots/-/archive/0.14.1/wlroots-0.14.1.tar.bz2
-7c8a3246e7ddb724bf7397a2f8f9b782
+md5:7c8a3246e7ddb724bf7397a2f8f9b782
 {% endblock %}
 
 {% block lib_deps %}

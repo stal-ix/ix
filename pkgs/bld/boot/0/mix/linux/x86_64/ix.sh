@@ -1,7 +1,7 @@
 {% extends '//bld/boot/0/ix/template.sh' %}
 
 {% block md5 %}
-76e3beaf0fa242210b93c8164f256922
+md5:76e3beaf0fa242210b93c8164f256922
 {% endblock %}
 
 {% block link %}

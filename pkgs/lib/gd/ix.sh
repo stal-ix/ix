@@ -2,7 +2,7 @@
 
 {% block fetch %}
 https://github.com/libgd/libgd/archive/refs/tags/gd-2.3.3.tar.gz
-f75f9721b858f25acc5c7c917ab7ccba
+md5:f75f9721b858f25acc5c7c917ab7ccba
 {% endblock %}
 
 {% block lib_deps %}

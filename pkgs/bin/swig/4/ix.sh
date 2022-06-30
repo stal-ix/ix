@@ -2,7 +2,7 @@
 
 {% block fetch %}
 http://prdownloads.sourceforge.net/swig/swig-4.0.2.tar.gz
-7c3e46cb5af2b469722cafa0d91e127b
+md5:7c3e46cb5af2b469722cafa0d91e127b
 {% endblock %}
 
 {% block bld_libs %}

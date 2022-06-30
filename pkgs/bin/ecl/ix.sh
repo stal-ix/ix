@@ -2,7 +2,7 @@
 
 {% block fetch %}
 https://common-lisp.net/project/ecl/static/files/release/ecl-21.2.1.tgz
-0c9e0437dbf3a7f1b00da32b7794a3b0
+md5:0c9e0437dbf3a7f1b00da32b7794a3b0
 {% endblock %}
 
 {% block bld_libs %}

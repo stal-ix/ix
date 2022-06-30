@@ -2,7 +2,7 @@
 
 {% block fetch %}
 https://github.com/pg83/heirloom/archive/a47c4acf9fb43b89f9fb0afdcf9008121d50d806.zip
-19b59804cf21bf9bd266d9cb261ecb2c
+md5:19b59804cf21bf9bd266d9cb261ecb2c
 {% endblock %}
 
 {% block bld_deps %}

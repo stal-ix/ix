@@ -2,7 +2,7 @@
 
 {% block fetch %}
 https://ftp.gnu.org/gnu/wget/wget-1.21.2.tar.lz
-2703828579552a5a6749fadfb1bf305d
+md5:2703828579552a5a6749fadfb1bf305d
 {% endblock %}
 
 {% block bld_libs %}

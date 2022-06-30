@@ -2,7 +2,7 @@
 
 {% block fetch %}
 https://golang.org/dl/go1.16.5.src.tar.gz
-f3c06704e536dcca1814b16dbcdc4a36
+md5:f3c06704e536dcca1814b16dbcdc4a36
 {% endblock %}
 
 {% block bld_tool %}

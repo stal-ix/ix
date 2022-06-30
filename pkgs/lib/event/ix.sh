@@ -2,7 +2,7 @@
 
 {% block fetch %}
 https://github.com/libevent/libevent/archive/refs/tags/release-2.1.12-stable.tar.gz
-0d5a27436bf7ff8253420c8cf09f47ca
+md5:0d5a27436bf7ff8253420c8cf09f47ca
 {% endblock %}
 
 {% block lib_deps %}

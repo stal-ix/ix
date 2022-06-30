@@ -2,7 +2,7 @@
 
 {% block fetch %}
 https://ftp.gnu.org/gnu/tar/tar-1.34.tar.xz
-9a08d29a9ac4727130b5708347c0f5cf
+md5:9a08d29a9ac4727130b5708347c0f5cf
 {% endblock %}
 
 {% block bld_libs %}

@@ -4,7 +4,7 @@
 https://github.com/gnustep/libobjc2/archive/bdf03cb55da14943c8add1c45db7b5a93b656d59.tar.gz
 sha:3d438eb6a1edd319f4985c8a9eb140f7a4a69703374e3a9dddc9e928fff64638
 https://github.com/Tessil/robin-map/archive/refs/tags/v0.6.3.tar.gz
-e6a362bff8372bbb4d901d2e28993a8a
+md5:e6a362bff8372bbb4d901d2e28993a8a
 {% endblock %}
 
 {% block unpack %}

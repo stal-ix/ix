@@ -2,7 +2,7 @@
 
 {% block fetch %}
 https://github.com/libmpack/libmpack-lua/archive/refs/tags/1.0.9.tar.gz
-a2d0d5e25aefc7b3b51c816de8096fd6
+md5:a2d0d5e25aefc7b3b51c816de8096fd6
 {% endblock %}
 
 {% block lib_deps %}

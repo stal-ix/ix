@@ -2,7 +2,7 @@
 
 {% block fetch %}
 https://github.com/mauke/unibilium/archive/refs/tags/v2.0.0.tar.gz
-a89b8ef6e752cc76098e1863ff4b5457
+md5:a89b8ef6e752cc76098e1863ff4b5457
 {% endblock %}
 
 {% block lib_deps %}

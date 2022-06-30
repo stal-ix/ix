@@ -2,7 +2,7 @@
 
 {% block fetch %}
 https://static.rust-lang.org/dist/rust-1.56.1-{{host.gnu_arch}}-apple-darwin.pkg
-769d2f6a9c80129582e66de7123b784b
+md5:769d2f6a9c80129582e66de7123b784b
 {% endblock %}
 
 {% block bld_tool %}

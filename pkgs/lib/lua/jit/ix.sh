@@ -2,7 +2,7 @@
 
 {% block fetch %}
 https://luajit.org/download/LuaJIT-2.0.5.tar.gz
-48353202cbcacab84ee41a5a70ea0a2c
+md5:48353202cbcacab84ee41a5a70ea0a2c
 {% endblock %}
 
 {% block make_flags %}

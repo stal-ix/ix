@@ -31,7 +31,7 @@ def fix1(d, n):
 def fix(d, n):
     def it():
         for l in d.split('\n'):
-            if len(l) == 16 and ' ' not in l:
+            if len(l) == 32:
                 try:
                     bytes.fromhex(l)
                     yield 'md5:' + l

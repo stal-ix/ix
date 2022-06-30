@@ -2,7 +2,7 @@
 
 {% block fetch %}
 https://github.com/oneapi-src/oneTBB/archive/refs/tags/v2021.4.0.tar.gz
-fa317f16003e31e33a57ae7d888403e4
+md5:fa317f16003e31e33a57ae7d888403e4
 {% endblock %}
 
 {% block lib_deps %}

@@ -2,7 +2,7 @@
 
 {% block fetch %}
 https://github.com/NixOS/patchelf/archive/refs/tags/0.14.3.tar.gz
-b5afebf895e8858f49b36519fdb33cf3
+md5:b5afebf895e8858f49b36519fdb33cf3
 {% endblock %}
 
 {% block bld_libs %}

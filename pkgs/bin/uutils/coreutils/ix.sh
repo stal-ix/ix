@@ -2,7 +2,7 @@
 
 {% block fetch %}
 https://github.com/uutils/coreutils/archive/refs/tags/0.0.8.tar.gz
-a45b94c5106f5985a05fef42dac1dc98
+md5:a45b94c5106f5985a05fef42dac1dc98
 {% endblock %}
 
 {% block bld_libs %}
