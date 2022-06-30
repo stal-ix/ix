@@ -2,7 +2,7 @@
 
 {% block fetch %}
 https://download-fallback.gnome.org/sources/libgudev/237/libgudev-237.tar.xz
-a7783083cd74957d3a727ddc4737ee84
+md5:a7783083cd74957d3a727ddc4737ee84
 {% endblock %}
 
 {% block lib_deps %}

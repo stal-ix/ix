@@ -2,7 +2,7 @@
 
 {% block fetch %}
 https://storage.googleapis.com/downloads.webmproject.org/releases/webp/libwebp-1.2.1.tar.gz
-f30c738034faa13d6255604ed46b6158
+sha:808b98d2f5b84e9b27fdef6c5372dac769c3bda4502febbfa5031bd3c4d7d018
 {% endblock %}
 
 {% block lib_deps %}

@@ -2,7 +2,7 @@
 
 {% block fetch %}
 https://github.com/netwide-assembler/nasm/archive/refs/tags/nasm-2.15.05.tar.gz
-2e154a96a13bf937d5247467d986bbde
+md5:2e154a96a13bf937d5247467d986bbde
 {% endblock %}
 
 {% block bld_tool %}

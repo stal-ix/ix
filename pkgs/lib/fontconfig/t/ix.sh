@@ -2,7 +2,7 @@
 
 {% block fetch %}
 https://www.freedesktop.org/software/fontconfig/release/fontconfig-2.13.94.tar.xz
-ab06ff17524de3f1ddd3c97ed8a02f8d
+sha:a5f052cb73fd479ffb7b697980510903b563bbb55b8f7a2b001fcfb94026003c
 {% endblock %}
 
 {% block bld_tool %}

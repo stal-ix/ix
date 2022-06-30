@@ -2,7 +2,7 @@
 
 {% block fetch %}
 https://www.gnupg.org/ftp/gcrypt/gnutls/v3.7/gnutls-3.7.2.tar.xz
-95c32a1af583ecfcb280648874c0fbd9
+md5:95c32a1af583ecfcb280648874c0fbd9
 {% endblock %}
 
 {% block lib_deps %}

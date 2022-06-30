@@ -2,7 +2,7 @@
 
 {% block fetch %}
 https://github.com/rockdaboot/libpsl/releases/download/0.21.1/libpsl-0.21.1.tar.gz
-ad40b970dcb5117d559b62a1e0d8d827
+sha:ac6ce1e1fbd4d0254c4ddb9d37f1fa99dec83619c1253328155206b896210d4c
 {% endblock %}
 
 {% block lib_deps %}

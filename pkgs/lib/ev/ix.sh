@@ -2,7 +2,7 @@
 
 {% block fetch %}
 https://fossies.org/linux/misc/libev-4.33.tar.gz
-a3433f23583167081bf4acdd5b01b34f
+sha:507eb7b8d1015fbec5b935f34ebed15bf346bed04a11ab82b8eee848c4205aea
 {% endblock %}
 
 {% block lib_deps %}

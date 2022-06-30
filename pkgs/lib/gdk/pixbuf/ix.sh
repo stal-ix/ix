@@ -2,7 +2,7 @@
 
 {% block fetch %}
 https://download.gnome.org/sources/gdk-pixbuf/2.42/gdk-pixbuf-2.42.6.tar.xz
-7cd2fdaa3c55e2302316fe36968f7425
+sha:c4a6b75b7ed8f58ca48da830b9fa00ed96d668d3ab4b1f723dcf902f78bde77f
 {% endblock %}
 
 {% block lib_deps %}

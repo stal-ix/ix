@@ -2,7 +2,7 @@
 
 {% block fetch %}
 https://download.gnome.org/sources/gtk+/3.24/gtk%2B-3.24.31.tar.xz
-1c4821835d6ffe7cf5b35c320f89569b
+sha:423c3e7fdb4c459ee889e35fd4d71fd2623562541c1041b11c07e5ad1ff10bf9
 {% endblock %}
 
 {% block lib_deps %}

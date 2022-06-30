@@ -2,7 +2,7 @@
 
 {% block fetch %}
 https://ftp.gnu.org/gnu/bison/bison-3.5.1.tar.xz
-md5:6fc5fa4488832a65db934b9e93bd5d4c
+sha:
 {% endblock %}
 
 {% block bison %}

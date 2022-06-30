@@ -2,7 +2,7 @@
 
 {% block fetch %}
 https://gitlab.gnome.org/GNOME/atk/-/archive/ATK_2_36_0/atk-ATK_2_36_0.tar.bz2
-cc1fdad773045e47651cc2722b236584
+sha:395894d43f0628497f919dff1b769f5482af99a8991127277e365f9374f46d57
 {% endblock %}
 
 {% block lib_deps %}

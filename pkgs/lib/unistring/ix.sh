@@ -2,7 +2,7 @@
 
 {% block fetch %}
 https://ftp.gnu.org/gnu/libunistring/libunistring-1.0.tar.xz
-88752c7859212f9c7a0f6cbf7a273535
+md5:88752c7859212f9c7a0f6cbf7a273535
 {% endblock %}
 
 {% block lib_deps %}

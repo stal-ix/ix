@@ -2,7 +2,7 @@
 
 {% block fetch %}
 https://github.com/mozilla/mozjpeg/archive/refs/tags/v4.0.3.tar.gz
-c6910ca8f0ee82a8c0243dc5b7217aba
+sha:4f22731db2afa14531a5bf2633d8af79ca5cb697a550f678bf43f24e5e409ef0
 {% endblock %}
 
 {% block lib_deps %}

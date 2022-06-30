@@ -2,9 +2,9 @@
 
 {% block fetch %}
 https://ftp.gnu.org/gnu/bison/bison-3.4.1.tar.xz
-md5:201286a573b12da109df96282fe4ff4a
+sha:
 https://storage.yandexcloud.net/mix-cache/bison-bootstrap-master.tar.bz2
-md5:425bbc1c4a21e708f05d35c62210f5ee
+sha:
 {% endblock %}
 
 {% block unpack %}

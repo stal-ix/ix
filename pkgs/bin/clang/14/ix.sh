@@ -4,6 +4,13 @@
 {% include '//lib/llvm/14/ver.sh' %}
 {% endblock %}
 
+{% block bld_libs %}
+{{super()}}
+{% if linux %}
+lib/execinfo
+{% endif %}
+{% endblock %}
+
 {% block std_box %}
 bld/python
 {{super()}}

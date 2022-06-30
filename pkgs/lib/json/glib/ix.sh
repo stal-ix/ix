@@ -2,7 +2,7 @@
 
 {% block fetch %}
 https://gitlab.gnome.org/GNOME/json-glib/-/archive/1.6.6/json-glib-1.6.6.tar.bz2
-cd56648d96dd79197c6d6af153d0e8ae
+md5:cd56648d96dd79197c6d6af153d0e8ae
 {% endblock %}
 
 {% block lib_deps %}

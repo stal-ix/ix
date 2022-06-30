@@ -2,7 +2,7 @@
 
 {% block fetch %}
 https://github.com/lz4/lz4/archive/refs/tags/v1.9.3.tar.gz
-3a1ab1684e14fc1afc66228ce61b2db3
+sha:030644df4611007ff7dc962d981f390361e6c97a34e5cbc393ddfbe019ffe2c1
 {% endblock %}
 
 {% block make_flags %}

@@ -2,7 +2,7 @@
 
 {% block fetch %}
 https://github.com/google/woff2/archive/refs/tags/v1.0.2.tar.gz
-793c8844845351cb80730a74937e411b
+sha:add272bb09e6384a4833ffca4896350fdb16e0ca22df68c0384773c67a175594
 {% endblock %}
 
 {% block lib_deps %}

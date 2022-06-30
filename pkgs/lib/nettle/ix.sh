@@ -2,7 +2,7 @@
 
 {% block fetch %}
 https://ftp.gnu.org/gnu/nettle/nettle-3.7.3.tar.gz
-a60273d0fab9c808646fcf5e9edc2e8f
+md5:a60273d0fab9c808646fcf5e9edc2e8f
 {% endblock %}
 
 {% block lib_deps %}

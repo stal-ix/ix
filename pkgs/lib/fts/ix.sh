@@ -2,7 +2,7 @@
 
 {% block fetch %}
 https://github.com/void-linux/musl-fts/archive/refs/tags/v1.2.7.tar.gz
-bce0b5de0cf2519a74fbfacead60369d
+sha:49ae567a96dbab22823d045ffebe0d6b14b9b799925e9ca9274d47d26ff482a6
 {% endblock %}
 
 {% block conv_ver %}
