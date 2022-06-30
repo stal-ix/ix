@@ -7,13 +7,13 @@ lib/glib/networking/orig
 {% block constructors %}
 g_object_init
 _g_io_modules_ensure_loaded
-_g_tls_backend_gnutls_register
+_g_tls_backend_openssl_register
 {% endblock %}
 
 {% block definitions %}
-void g_tls_backend_gnutls_register(void*);
+void g_tls_backend_openssl_register(void*);
 
-void _g_tls_backend_gnutls_register() {
-    g_tls_backend_gnutls_register(0);
+void _g_tls_backend_openssl_register() {
+    g_tls_backend_openssl_register(0);
 }
 {% endblock %}

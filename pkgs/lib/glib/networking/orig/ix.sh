@@ -8,7 +8,6 @@ sha:bb0248149ae165cc611cd907ffcf03bb05f9f9b82b35e912a108a2fcdf4345e7
 {% block lib_deps %}
 lib/c
 lib/glib
-lib/gnutls
 lib/openssl
 {% endblock %}
 
