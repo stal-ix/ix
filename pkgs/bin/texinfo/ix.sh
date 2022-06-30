@@ -2,7 +2,7 @@
 
 {% block fetch %}
 https://ftp.gnu.org/gnu/texinfo/texinfo-6.8.tar.xz
-md5:a91b404e30561a5df803e6eb3a53be71
+sha:8eb753ed28bca21f8f56c1a180362aed789229bd62fff58bf8368e9beb59fec4
 {% endblock %}
 
 {% block bld_libs %}

@@ -2,7 +2,7 @@
 
 {% block fetch %}
 https://tukaani.org/xz/xz-5.2.5.tar.xz
-md5:aa1621ec7013a19abab52a8aff04fe5b
+sha:3e1e518ffc912f86608a8cb35e4bd41ad1aec210df2a47aaa1f95e7f5576ef56
 {% endblock %}
 
 {% block lib_deps %}

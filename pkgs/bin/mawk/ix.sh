@@ -2,7 +2,7 @@
 
 {% block fetch %}
 https://invisible-mirror.net/archives/mawk/mawk-1.3.4-20200120.tgz
-md5:d48752f402d7371d9eb5f68de3da05d4
+sha:7fd4cd1e1fae9290fe089171181bbc6291dfd9bca939ca804f0ddb851c8b8237
 {% endblock %}
 
 {% block bld_libs %}

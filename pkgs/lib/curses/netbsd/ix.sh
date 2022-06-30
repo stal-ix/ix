@@ -2,7 +2,7 @@
 
 {% block fetch %}
 https://github.com/sabotage-linux/netbsd-curses/archive/refs/tags/v0.3.2.tar.gz
-md5:8798fe3e6acce82cb08e39b1532b4664
+sha:9d3ebd651e5f70b87b1327b01cbd7e0c01a0f036b4c1371f653b7704b11daf23
 {% endblock %}
 
 {% block cpp_defines %}

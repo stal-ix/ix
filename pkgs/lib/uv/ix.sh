@@ -2,7 +2,7 @@
 
 {% block fetch %}
 https://github.com/libuv/libuv/archive/refs/tags/v1.43.0.tar.gz
-md5:da212b6d2b627f99492168d5d3ce6da6
+sha:9e27825a55279de69a7c43e42d509fd1337c9bece2547c761e91a1592e91cc4d
 {% endblock %}
 
 {% block lib_deps %}

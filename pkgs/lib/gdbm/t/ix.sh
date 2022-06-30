@@ -2,7 +2,7 @@
 
 {% block fetch %}
 https://ftp.gnu.org/gnu/gdbm/gdbm-1.19.tar.gz
-md5:aeb29c6a90350a4c959cd1df38cd0a7e
+sha:37ed12214122b972e18a0d94995039e57748191939ef74115b1d41d8811364bc
 {% endblock %}
 
 {% block lib_deps %}

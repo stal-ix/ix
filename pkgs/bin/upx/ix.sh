@@ -2,7 +2,7 @@
 
 {% block fetch %}
 https://github.com/upx/upx/releases/download/v3.96/upx-3.96-src.tar.xz
-md5:bf5564f33fe9062bc48b53abd4b34223
+sha:47774df5c958f2868ef550fb258b97c73272cb1f44fe776b798e393465993714
 {% endblock %}
 
 {% block bld_libs  %}

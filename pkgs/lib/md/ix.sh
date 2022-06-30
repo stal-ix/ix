@@ -2,7 +2,7 @@
 
 {% block fetch %}
 https://libbsd.freedesktop.org/releases/libmd-1.0.4.tar.xz
-md5:e8e955f8d53d2c9306b07c90ff6ae395
+sha:f51c921042e34beddeded4b75557656559cf5b1f2448033b4c1eec11c07e530f
 {% endblock %}
 
 {% block lib_deps %}

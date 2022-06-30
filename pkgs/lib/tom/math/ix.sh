@@ -2,7 +2,7 @@
 
 {% block fetch %}
 https://github.com/libtom/libtommath/releases/download/v1.2.0/ltm-1.2.0.tar.xz
-md5:159523e41d528ce72a0ce4ac3eabe274
+sha:b7c75eecf680219484055fcedd686064409254ae44bc31a96c5032843c0e18b1
 {% endblock %}
 
 {% block lib_deps %}

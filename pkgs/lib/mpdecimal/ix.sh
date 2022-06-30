@@ -2,7 +2,7 @@
 
 {% block fetch %}
 https://www.bytereef.org/software/mpdecimal/releases/mpdecimal-2.5.1.tar.gz
-md5:18599e4ffcfe8cd93e0efa8f14f027eb
+sha:9f9cd4c041f99b5c49ffb7b59d9f12d95b683d88585608aa56a6307667b2b21f
 {% endblock %}
 
 {% block configure_flags %}

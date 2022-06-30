@@ -2,7 +2,7 @@
 
 {% block fetch %}
 https://ftp.gnu.org/pub/gnu/ncurses/ncurses-6.3.tar.gz
-md5:a2736befde5fee7d2b7eb45eb281cdbe
+sha:97fc51ac2b085d4cde31ef4d2c3122c21abc217e9090a43a30fc5ec21684e059
 {% endblock %}
 
 {% block bld_tool %}

@@ -2,7 +2,7 @@
 
 {% block fetch %}
 https://ftp.gnu.org/gnu/groff/groff-1.22.4.tar.gz
-md5:08fb04335e2f5e73f23ea4c3adbf0c5f
+sha:e78e7b4cb7dec310849004fa88847c44701e8d133b5d4c13057d876c1bad0293
 {% endblock %}
 
 {% block bld_libs %}
