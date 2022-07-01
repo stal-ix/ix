@@ -1,8 +1,8 @@
 {% extends '//die/meson.sh' %}
 
 {% block fetch %}
-https://wayland.freedesktop.org/releases/wayland-1.20.0.tar.xz
-md5:5095264157bf0565b921ceaf9d698d98
+https://gitlab.freedesktop.org/wayland/wayland/-/releases/1.21.0/downloads/wayland-1.21.0.tar.xz
+sha:6dc64d7fc16837a693a51cfdb2e568db538bfdc9f457d4656285bb9594ef11ac
 {% endblock %}
 
 {% block meson_flags %}

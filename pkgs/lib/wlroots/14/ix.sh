@@ -53,3 +53,7 @@ NSEC_PER_SEC
 {% block patch %}
 >xcursor/xcursor.c
 {% endblock %}
+
+{% block cpp_defines %}
+XcursorImagesDestroy=xcursor_images_destroy
+{% endblock %}
