@@ -7,6 +7,7 @@ sha:ec2213c8031ac41a7efc7882a0d6f1b5496f104ffa1e5cf3923f4e6db097509e
 
 {% block bld_libs %}
 lib/c
+lib/curl
 lib/sdl/2
 lib/opengl
 lib/sdl/deps
