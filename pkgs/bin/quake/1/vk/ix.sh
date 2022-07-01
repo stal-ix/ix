@@ -1,8 +1,8 @@
 {% extends '//die/meson.sh' %}
 
 {% block fetch %}
-https://github.com/Novum/vkQuake/archive/refs/tags/1.20.0.tar.gz
-sha:2ff682a4b289607c56200d9d0920e3a360fe1b8aeb8cb39d4e0f4b460f4ad744
+https://github.com/Novum/vkQuake/archive/refs/tags/1.20.1.tar.gz
+sha:81ec663afba5d88e298d27cfeef5cdf40bc1aeb1d6683f13ae32021701543283
 {% endblock %}
 
 {% block bld_libs %}
@@ -14,10 +14,6 @@ lib/xiph/flac
 lib/drivers/3d
 lib/xiph/vorbis
 lib/vulkan/loader
-{% endblock %}
-
-{% block patch %}
-sed -e 's|.*define.*MAX_THREAD_STACK_ALLOC_SIZE.*|#define MAX_THREAD_STACK_ALLOC_SIZE 0|' -i Quake/mem.h
 {% endblock %}
 
 {% block install %}
