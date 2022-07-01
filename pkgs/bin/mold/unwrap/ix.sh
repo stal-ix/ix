@@ -1,8 +1,8 @@
 {% extends '//die/make.sh' %}
 
 {% block fetch %}
-https://github.com/rui314/mold/archive/refs/tags/v1.3.0.tar.gz
-sha:02132ae717d7f22f8bc7e5c22642ad41541ec4c535fa85f095c60ecc81465a3d
+https://github.com/rui314/mold/archive/refs/tags/v1.3.1.tar.gz
+sha:d436e2d4c1619a97aca0e28f26c4e79c0242d10ce24e829c1b43cfbdd196fd77
 {% endblock %}
 
 {% block bld_libs %}
