@@ -20,3 +20,15 @@ lib/vulkan/loader
 mkdir ${out}/bin
 cp $(find ${tmp} -type f -name vkquake) ${out}/bin/
 {% endblock %}
+
+{# https://github.com/Novum/vkQuake/issues/500 #}
+
+{% block patch %}
+sed -e 's|Mem_InitThread|Mem_InitThread_|' -i Quake/mem.c
+
+cat << EOF >> Quake/mem.c
+void Mem_InitThread() {
+    max_thread_stack_alloc_size = 0;
+}
+EOF
+{% endblock %}
