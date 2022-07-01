@@ -17,7 +17,7 @@ lib/vulkan/headers
 
 {% block patch %}
 find . -type f | while read l; do
-    sed -e 's|.*GL/glx.*||' \
+    sed -e 's|.*GL/glx.*||'   \
         -e 's|.*GLE.*glX.*||' \
         -i ${l}
 done
