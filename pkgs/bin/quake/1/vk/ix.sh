@@ -22,13 +22,23 @@ cp $(find ${tmp} -type f -name vkquake) ${out}/bin/
 {% endblock %}
 
 {# https://github.com/Novum/vkQuake/issues/500 #}
+{# https://github.com/Novum/vkQuake/issues/508 #}
 
 {% block patch %}
-sed -e 's|Mem_InitThread|Mem_InitThread_|' -i Quake/mem.c
-
-cat << EOF >> Quake/mem.c
-void Mem_InitThread() {
-    max_thread_stack_alloc_size = 0;
-}
+(
+cat << EOF
+#pragma once
 EOF
+
+cat Quake/mem.h
+
+cat << EOF
+#undef TEMP_ALLOC
+#define TEMP_ALLOC(type, var, size) {var = (type*)Mem_Alloc((sizeof(type) * (size)));}
+#undef TEMP_FREE
+#define TEMP_FREE(var) {Mem_Free(var);}
+EOF
+) > _
+
+mv _ Quake/mem.h
 {% endblock %}
