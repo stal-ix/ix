@@ -16,6 +16,10 @@ lib/xiph/vorbis
 lib/vulkan/loader
 {% endblock %}
 
+{% block cpp_defines %}
+USE_CRT_MALLOC=1
+{% endblock %}
+
 {% block install %}
 mkdir ${out}/bin
 cp $(find ${tmp} -type f -name vkquake) ${out}/bin/
