@@ -2,10 +2,10 @@
 
 {% block fetch %}
 https://github.com/westes/flex/archive/refs/tags/flex-2-5-10.tar.gz
-sha:
+sha:20ccf2a29fb0aef14784e24ae595900acb0bab398cd0e48840d77017580b7bd9
 {% block flex_extra_fetch %}
 https://gitlab.com/giomasce/flex/-/raw/506e9605baf4638ba47d37133c348df1385ef06c/scan.lex.l
-sha:
+sha:3b18eb2dffe85c695c3000f8255f0849bb7bb996311c66c949b60efeb2a0a5eb
 {% endblock %}
 {% endblock %}
 

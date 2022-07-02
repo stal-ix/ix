@@ -2,7 +2,7 @@
 
 {% block fetch %}
 https://github.com/libcxxrt/libcxxrt/archive/fd484be8d1e94a1fcf6bc5c67e5c07b65ada19b6.tar.gz
-sem:a20b0a1ae9952bb6141af8828b1e2d28
+sem:9abbda7bddaa6bfface83d3a2d9054ef09b91bfbe17992c9c8637f677ce5673a
 {% endblock %}
 
 {% block lib_deps %}
@@ -29,9 +29,7 @@ ar qs libcxxrt.a *.o
 {% endblock %}
 
 {% block install %}
-mkdir ${out}/lib
-mkdir ${out}/include
-
+mkdir ${out}/lib ${out}/include
 cp libcxxrt.a ${out}/lib/
 cp src/*.h ${out}/include/
 {% endblock %}

@@ -65,8 +65,8 @@ def fetch_url_curl(curl, url, out):
 
 
 def iter_bin():
-    yield 'curl', fetch_url_curl
     yield 'wget', fetch_url_wget
+    yield 'curl', fetch_url_curl
 
 
 def iter_meth_1():
