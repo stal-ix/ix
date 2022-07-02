@@ -1,8 +1,8 @@
 {% extends '//die/gnome.sh' %}
 
 {% block fetch %}
-https://gitlab.gnome.org/GNOME/gnome-text-editor/-/archive/42.1/gnome-text-editor-42.1.tar.bz2
-sha:4b003f258c43c86c473b3b928f303c0b41ff60a6a28b229f9f6970d1e63717cb
+https://gitlab.gnome.org/GNOME/gnome-text-editor/-/archive/42.2/gnome-text-editor-42.2.tar.bz2
+sha:446b026597245b8cb3176c64117c95fec113bede59b6935585f7df570d4609e9
 {% endblock %}
 
 {% block bld_libs %}

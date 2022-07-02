@@ -1,8 +1,8 @@
 {% extends '//die/meson.sh' %}
 
 {% block fetch %}
-https://download.gnome.org/sources/pango/1.50/pango-1.50.7.tar.xz
-sha:0477f369a3d4c695df7299a6989dc004756a7f4de27eecac405c6790b7e3ad33
+https://download.gnome.org/sources/pango/1.50/pango-1.50.8.tar.xz
+sha:cf626f59dd146c023174c4034920e9667f1d25ac2c1569516d63136c311255fa
 {% endblock %}
 
 {% block lib_deps %}
