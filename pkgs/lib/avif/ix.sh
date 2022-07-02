@@ -4,3 +4,13 @@
 {{super()}}
 sed -e 's|.*exec_prefix.*||' -i ${out}/lib/pkgconfig/libavif.pc
 {% endblock %}
+
+{% block cmake_flags %}
+{{super()}}
+# hack to install cmake/ files
+VCPKG_TARGET_TRIPLET=ON
+{% endblock %}
+
+{% block test %}
+test -d ${out}/lib/cmake/libavif
+{% endblock %}
