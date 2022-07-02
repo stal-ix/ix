@@ -18,10 +18,10 @@ lib/sdl/2
 lib/mpeg2
 lib/giflib
 lib/fribidi
-lib/x11shim
 lib/sdl/deps
 lib/freetype
 lib/timidity
+lib/shim/x11
 lib/xiph/ogg
 lib/xiph/flac
 lib/xiph/vorbis

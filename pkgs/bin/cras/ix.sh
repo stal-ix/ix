@@ -27,7 +27,7 @@ lib/udev
 lib/linux
 lib/curses
 lib/sndfile
-lib/gnushim
+lib/shim/gnu
 lib/ini/parser
 lib/ladspa/sdk
 lib/googletest

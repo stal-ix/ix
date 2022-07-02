@@ -3,7 +3,7 @@
 {% block bld_libs %}
 lib/c
 lib/c++
-lib/gnushim
+lib/shim/gnu
 {% endblock %}
 
 {% block step_unpack %}

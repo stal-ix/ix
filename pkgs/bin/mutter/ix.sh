@@ -20,7 +20,7 @@ lib/pango
 lib/udev/g
 lib/opengl
 lib/wayland
-lib/x11shim
+lib/shim/x11
 lib/canberra
 lib/graphene
 lib/xkbcommon

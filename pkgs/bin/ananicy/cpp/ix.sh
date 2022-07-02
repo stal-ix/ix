@@ -15,8 +15,8 @@ lib/c++
 lib/fmt
 lib/linux
 lib/spdlog
-lib/gnushim
 lib/execinfo
+lib/shim/gnu
 lib/json/nlohmann
 {% endblock %}
 

@@ -16,7 +16,7 @@ lib/bzip/2
 
 {% block bld_libs %}
 lib/obstack
-lib/gnushim
+lib/shim/gnu
 lib/argp/standalone
 {% endblock %}
 

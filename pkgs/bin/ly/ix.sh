@@ -28,7 +28,7 @@ cd ..
 lib/c
 lib/pam
 lib/linux
-lib/x11shim
+lib/shim/x11
 {% endblock %}
 
 {% block setup_tools %}
