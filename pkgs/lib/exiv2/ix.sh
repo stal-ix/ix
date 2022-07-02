@@ -17,6 +17,7 @@ shut_up
 {% endblock %}
 
 {% block cmake_flags %}
+EXIV2_ENABLE_BMFF=ON
 EXIV2_BUILD_SAMPLES=OFF
 {% endblock %}
 
