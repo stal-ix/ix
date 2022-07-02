@@ -2,7 +2,7 @@
 
 {% block fetch %}
 https://kernel.googlesource.com/pub/scm/bluetooth/sbc/+archive/8dc5d5ba381512ad5b1afa45c63ec6b0a3833244.tar.gz
-sem:26b9cadd2399832caefdb91ab0d35426
+sem:
 {% endblock %}
 
 {% block lib_deps %}

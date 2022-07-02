@@ -2,7 +2,7 @@
 
 {% block fetch %}
 https://chromium.googlesource.com/webm/libvpx/+archive/03265cd42b3783532de72f2ded5436652e6f5ce3.tar.gz
-sem:92ec7e71b949d65ebe9436a29ce763f3
+sem:
 {% endblock %}
 
 {% block skip_dirs %}0{% endblock %}
