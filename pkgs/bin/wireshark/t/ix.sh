@@ -2,7 +2,7 @@
 
 {% block fetch %}
 https://gitlab.com/wireshark/wireshark/-/archive/efe8dc051cbd933c3dcdd33d2664e94ab4e703c0/wireshark-efe8dc051cbd933c3dcdd33d2664e94ab4e703c0.tar.bz2
-sem:
+sem:83a40cce16d8f245a90efa6e21527d9ae170280a4e1f3fa62d049c3ada326513
 {% endblock %}
 
 {% block bld_libs %}
