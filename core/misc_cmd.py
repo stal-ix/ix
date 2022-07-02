@@ -33,8 +33,12 @@ def md5(b):
     return hash('md5')(b).hexdigest()
 
 
-def struct_md5(s):
-    return md5(json.dumps(s, sort_keys=True).encode())
+def sha(b):
+    return hash('sha')(b).hexdigest()
+
+
+def struct_sha(s):
+    return sha(json.dumps(s, sort_keys=True).encode())
 
 
 def read_rec(r):
@@ -50,7 +54,7 @@ def semantic_checksum(path):
     with tarfile.open(path) as tf:
         for rec in tf.getmembers():
             try:
-                m = md5(read_rec(tf.extractfile(rec)))
+                m = sha(read_rec(tf.extractfile(rec)))
             except KeyError:
                 m = 'key error'
 
@@ -63,9 +67,9 @@ def semantic_checksum(path):
                 m,
             ]
 
-            r.append(struct_md5(v))
+            r.append(struct_sha(v))
 
-    return struct_md5(list(sorted(r)))
+    return struct_sha(list(sorted(r)))
 
 
 def chksum(path, sch):
