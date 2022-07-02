@@ -2,7 +2,7 @@
 
 {% block fetch %}
 https://chromium.googlesource.com/libyuv/libyuv/+archive/51c6d12e7deeb790dc8a85d1c50a942caffa516c.tar.gz
-sem:
+sem:34fbfefe6ecc99820be220959aad8c43a502c5cb80fb65c5cc617b07c2040620
 {% endblock %}
 
 {% block lib_deps %}
