@@ -4,5 +4,6 @@
 bin/gdb
 bin/perf
 bin/strace
+bin/fswatch
 bin/valgrind
 {% endblock %}
