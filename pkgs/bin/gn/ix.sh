@@ -2,7 +2,7 @@
 
 {% block fetch %}
 https://gn.googlesource.com/gn/+archive/18df6af86191edab1e47c84d56e608da414d446b.tar.gz
-sem:
+sem:3a0bd0fc3c5ffc3db9a259d2537fa02b52b51d18cd506922dcfe387333f97ff4
 {% endblock %}
 
 {% block bld_libs %}

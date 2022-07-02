@@ -2,7 +2,7 @@
 
 {% block fetch %}
 https://chromium.googlesource.com/external/gyp/+archive/d6c5dd51dc3a60bf4ff32a5256713690a1a10376.tar.gz
-sem:
+sem:0349b69066c9347825a0d21ec315820e08c73d6d36622aade089ed189d4496a6
 {% endblock %}
 
 {% block bld_tool %}
