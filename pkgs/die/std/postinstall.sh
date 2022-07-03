@@ -84,3 +84,7 @@ done
 # fast GNU or slow POSIX
 (find ${out} -type d -empty -delete) || (find ${out} -depth -type d -exec rmdir {} +) || true
 {% endblock %}
+
+{% if not doc %}
+rm -rf ${out}/doc
+{% endif %}
