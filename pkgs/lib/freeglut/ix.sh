@@ -4,3 +4,9 @@
 FREEGLUT_BUILD_DEMOS=OFF
 {{super()}}
 {% endblock %}
+
+{% block install %}
+{{super()}}
+cd ${out}/lib/pkgconfig
+cp freeglut*.pc glut.pc
+{% endblock %}
