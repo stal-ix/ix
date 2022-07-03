@@ -12,9 +12,3 @@ lib/png
 lib/bzip/2
 lib/brotli
 {% endblock %}
-
-{% block patch %}
-cat << EOF >> include/freetype/config/ftoption.h
-#define FT_CONFIG_OPTION_SUBPIXEL_RENDERING
-EOF
-{% endblock %}
