@@ -10,6 +10,8 @@ lib/c
 {% endblock %}
 
 {% block configure_flags %}
+--enable-pcre2-16
+--enable-pcre2-32
 --enable-newline-is-anycrlf
 --enable-utf8
 --enable-jit
