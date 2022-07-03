@@ -14,3 +14,7 @@ lib/c
 mkdir ${out}/lib/cmake
 mv ${out}/share/hiredis ${out}/lib/cmake/
 {% endblock %}
+
+{% block env %}
+export COFLAGS="--with-hiredis=${out} --with-libhiredis=${out} \${COFLAGS}"
+{% endblock %}

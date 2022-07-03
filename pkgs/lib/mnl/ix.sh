@@ -12,3 +12,7 @@ lib/c
 {% block bld_libs %}
 lib/linux
 {% endblock %}
+
+{% block env %}
+export COFLAGS="--with-mnl=${out} --with-libmnl=${out} \${COFLAGS}"
+{% endblock %}

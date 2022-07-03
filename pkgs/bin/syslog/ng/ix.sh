@@ -10,6 +10,7 @@ lib/c
 lib/cap
 lib/glib
 lib/json/c
+lib/hiredis
 lib/openssl
 {% endblock %}
 

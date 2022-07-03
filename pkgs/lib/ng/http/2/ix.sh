@@ -4,3 +4,7 @@
 {{super()}}
 --enable-lib-only
 {% endblock %}
+
+{% block env %}
+export COFLAGS="--with-nghttp2=${out} --with-libnghttp2=${out} \${COFLAGS}"
+{% endblock %}
