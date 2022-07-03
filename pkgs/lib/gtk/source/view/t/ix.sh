@@ -13,3 +13,8 @@ lib/gtk/4
 lib/pcre/2
 lib/fribidi
 {% endblock %}
+
+{% block bld_tool %}
+{{super()}}
+bin/xmllint
+{% endblock %}
