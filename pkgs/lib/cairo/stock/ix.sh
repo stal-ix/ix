@@ -8,13 +8,13 @@ sha:90496d135c9ef7612c98f8ee358390cdec0825534573778a896ea021155599d2
 {% block lib_deps %}
 lib/c
 lib/png
-lib/lzo
 lib/glib
 lib/pixman
-lib/opengl
+
+{% if linux %}
 lib/freetype
 lib/fontconfig
-lib/mesa/glesv2
+{% endif %}
 
 {% if darwin %}
 lib/darwin/framework/ApplicationServices
@@ -23,11 +23,7 @@ lib/darwin/framework/CoreGraphics
 {% endblock %}
 
 {% block meson_flags %}
-fontconfig=enabled
-freetype=enabled
-glesv2=enabled
-glesv3=enabled
-gl-backend=auto
+tests=disabled
 {% endblock %}
 
 {% block build_flags %}
