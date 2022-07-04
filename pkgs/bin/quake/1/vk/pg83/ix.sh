@@ -1,4 +1,4 @@
-{% extends '//bin/quake/1/vk/unwrap/ix.sh' %}
+{% extends '//bin/quake/1/vk/novum/ix.sh' %}
 
 {% block cpp_defines %}
 {{super()}}
