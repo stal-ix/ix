@@ -29,8 +29,7 @@ lib/xiph/vorbis
 
 {% block bld_tool %}
 bin/nasm
-# llvm-strings?
-bin/elfutils
+bld/elfutils
 {% endblock %}
 
 {% block c_rename_symbol %}

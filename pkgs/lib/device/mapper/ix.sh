@@ -15,7 +15,7 @@ lib/linux
 {% endblock %}
 
 {% block bld_tool %}
-bin/elfutils
+bld/elfutils
 {% endblock %}
 
 {% block build_flags %}

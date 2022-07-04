@@ -12,7 +12,7 @@ lib/c
 {% block bld_tool %}
 bin/nasm
 bld/bash
-bin/elfutils
+bld/elfutils
 {% endblock %}
 
 {% block make_target %}

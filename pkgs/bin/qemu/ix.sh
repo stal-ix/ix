@@ -41,7 +41,7 @@ bin/bzip2
 bld/ninja
 bld/python
 bld/gettext
-bin/elfutils
+bld/elfutils
 bld/pkg/config
 {% endblock %}
 
