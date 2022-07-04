@@ -21,6 +21,10 @@ cat << EOF > sched.h
 {% include 'sched.h' %}
 EOF
 
+cat << EOF > string.h
+{% include 'string.h' %}
+EOF
+
 cat << EOF > ieee754.h
 {% include 'ieee754.h' %}
 EOF
@@ -33,8 +37,8 @@ cc -c -o error.o -x c - << EOF
 {% include 'error.c' %}
 EOF
 
-cc -c -o sched.o -x c - << EOF
-{% include 'sched.c' %}
+cc -c -o string.o -x c - << EOF
+{% include 'string.c' %}
 EOF
 
 cc -c -o ieee754.o -x c - << EOF
