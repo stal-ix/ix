@@ -4,12 +4,7 @@
 #include_next <string.h>
 
 #if defined(__cplusplus)
-extern "C" {
-#endif
-
-#define basename ix_basename
-char* basename(const char*);
-
-#if defined(__cplusplus)
+static inline char* basename(const char* s) {
+    return ::basename((char*)s);
 }
 #endif

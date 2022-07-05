@@ -37,6 +37,10 @@ cc -c -o error.o -x c - << EOF
 {% include 'error.c' %}
 EOF
 
+cc -c -o sched.o -x c - << EOF
+{% include 'sched.c' %}
+EOF
+
 cc -c -o string.o -x c - << EOF
 {% include 'string.c' %}
 EOF
