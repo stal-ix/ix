@@ -30,5 +30,7 @@ sed -e 's|.*subdir.*help.*||' -i meson.build
 
 {% block install %}
 {{super()}}
-{{hooks.wrap_xdg_binary('gnome-text-editor')}}
+{% call hooks.wrap_xdg_binary('gnome-text-editor') %}
+gsettings set org.gnome.desktop.interface cursor-theme default
+{% endcall %}
 {% endblock %}
