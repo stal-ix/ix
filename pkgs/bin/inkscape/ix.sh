@@ -1,10 +1,6 @@
 {% extends '//die/cmake.sh' %}
 
 {% block fetch %}
-#https://gitlab.com/inkscape/inkscape/-/archive/INKSCAPE_1_2/inkscape-INKSCAPE_1_2.tar.bz2
-#sha:c2f44b0bb744e122d865d15a34e05c80f3c9947e46d933063e5ae9c19a3a85c4
-#https://inkscape.org/gallery/item/33289/inkscape-1.2-rc_2022-05-08_6364d40632.tar.xz
-#sha:e47b9c19a3473eec846735d161cbe52a3f37f0b623cae3b4860be83a6862af36
 https://inkscape.org/id/gallery/item/33449/inkscape-1.2.tar.xz
 sha:8d9b31142554945664edfefe2d6b55910a5099765f7176a71107c34f1dcde6ad
 {% endblock %}
