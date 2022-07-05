@@ -21,12 +21,6 @@ introspection=false
 builtin_immodules=yes
 {% endblock %}
 
-{% block patch %}
-(base64 -d | patch -p1) << EOF
-{% include '0.diff/base64' %}
-EOF
-{% endblock %}
-
 {% block env_lib %}
 export CPPFLAGS="-I${out}/include/gail-3.0 -I${out}/include/gtk-3.0 \${CPPFLAGS}"
 {% endblock %}
