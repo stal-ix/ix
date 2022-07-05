@@ -1,8 +1,8 @@
 {% extends '//die/c_std.sh' %}
 
 {% block fetch %}
-https://github.com/bfgroup/b2/archive/refs/tags/4.9.1.tar.gz
-sha:81e49dc85e956c3e708bdd02fcfe0b9f406fca8edca54c75c94ebd6c322ed587
+https://github.com/bfgroup/b2/archive/refs/tags/4.9.2.tar.gz
+sha:7e1a135b308999d2a65fce3eba8f4ffb41ca82ae133f8494cc42cbca63c890de
 {% endblock %}
 
 {% block bld_libs %}
