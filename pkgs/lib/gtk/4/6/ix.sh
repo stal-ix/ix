@@ -12,7 +12,7 @@ bin/sassc
 
 {% block patch %}
 {{super()}}
-base64 -d << EOF > gdk/wayland/gdkdisplay-wayland.c
-{% include 'gdkdisplay-wayland.c/base64' %}
+patch -p1 << EOF
+{% include '0.diff' %}
 EOF
 {% endblock %}

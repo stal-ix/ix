@@ -1,0 +1,31 @@
+diff --git a/gdk/wayland/gdkdisplay-wayland.c b/gdk/wayland/gdkdisplay-wayland.c
+index 64d61a8..4656604 100644
+--- a/gdk/wayland/gdkdisplay-wayland.c
++++ b/gdk/wayland/gdkdisplay-wayland.c
+@@ -2157,6 +2157,26 @@ gdk_wayland_display_get_setting (GdkDisplay *display,
+ {
+   TranslationEntry *entry;
+ 
++  if (name) {
++    if (strcmp(name, "gtk-cursor-theme-size") == 0) {
++      const char* xc;
++
++      xc = getenv("XCURSOR_SIZE");
++
++      if (xc && atoi(xc)) {
++        g_value_set_int(value, atoi(xc));
++
++        return TRUE;
++      }
++    }
++
++    if (strcmp(name, "gtk-cursor-theme-name") == 0) {
++      g_value_set_static_string (value, "default");
++
++      return TRUE;
++    }
++  }
++
+   if (gdk_display_get_debug_flags (display) & GDK_DEBUG_DEFAULT_SETTINGS)
+       return FALSE;
+ 
