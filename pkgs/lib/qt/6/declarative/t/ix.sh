@@ -17,8 +17,3 @@ bld/qt/6
 bld/python
 bld/qt/6/tools/shader
 {% endblock %}
-
-{% block cmake_flags %}
-{{super()}}
-Qt6ShaderToolsTools_DIR=${Qt6ShaderToolsTools_DIR}
-{% endblock %}

@@ -25,3 +25,18 @@ find ${out}/plugins/ -type f -name '*.a' | while read l; do
     cp ${l} ${out}/lib/
 done
 {% endblock %}
+
+{% block functions %}
+{{super()}}
+
+qt_cm_flags() (
+    env | grep '_DIR=' | grep 'Qt6' | while read l; do
+        echo -n "-D${l} "
+    done
+)
+{% endblock %}
+
+{% block configure %}
+CMFLAGS="$(qt_cm_flags) ${CMFLAGS}"
+{{super()}}
+{% endblock %}
