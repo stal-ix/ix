@@ -10,10 +10,6 @@ lib/c
 lib/c++
 {% endblock %}
 
-{% block bld_libs %}
-lib/googletest
-{% endblock %}
-
 {% block cmake_flags %}
 HWY_ENABLE_EXAMPLES=OFF
 BUILD_TESTING=OFF
