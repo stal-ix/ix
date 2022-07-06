@@ -7,7 +7,7 @@ bld/qt/6/tools/qml
 
 {% block cmake_flags %}
 {{super()}}
-Qt6QmlTools_DIR=${bin_qt_6_tools_qml}/lib/cmake/Qt6QmlTools
+Qt6QmlTools_DIR=${Qt6QmlTools_DIR}
 {% endblock %}
 
 {% block postinstall %}
