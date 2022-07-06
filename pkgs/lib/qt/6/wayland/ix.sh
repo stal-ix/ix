@@ -1,8 +1,8 @@
 {% extends '//die/qt.sh' %}
 
 {% block fetch %}
-https://github.com/qt/qtwayland/archive/refs/tags/v6.3.0.tar.gz
-sha:b12561ef2338b761ab1ff9d4c9359927406260b14ac3558d979c44efce8168be
+https://github.com/qt/qtwayland/archive/refs/tags/v6.3.1.tar.gz
+sha:2592c78ad72007d50f2505f4b2ec8fec80d135bb5e826261176e0146a0d8aa15
 {% endblock %}
 
 {% block lib_deps %}
@@ -18,4 +18,8 @@ bin/wayland/protocols
 {% endblock %}
 
 {% block qt_cross_flags %}
+{% endblock %}
+
+{% block patch %}
+>src/compositor/global/qwaylandquickextension.cpp
 {% endblock %}
