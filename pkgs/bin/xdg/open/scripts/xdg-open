@@ -1,0 +1,67 @@
+#!/usr/bin/env sh
+
+on_browser() (
+    exec epiphany "${1}"
+)
+
+on_pdf() (
+    if command -v mupdf; then
+        exec mupdf "${1}"
+    fi
+
+    if command -v evince; then
+        exec evince "${1}"
+    fi
+
+    if command -v qpdf; then
+        exec qpdf "${1}"
+    fi
+
+    if command -v xpdf; then
+        exec xpdf "${1}"
+    fi
+
+    on_browser "${1}"
+)
+
+on_image() (
+    if command -v pqiv; then
+        exec pqiv "${1}"
+    fi
+
+    if command -v qimgv; then
+        exec qimgv "${1}"
+    fi
+
+    if command -v imv; then
+        exec imv "${1}"
+    fi
+
+    if command -v swayimg; then
+        exec swayimg "${1}"
+    fi
+
+    on_browser "${1}"
+)
+
+if test -f "${1}"; then
+    mt=$(file -b --mime-type "${1}")
+
+    case "${mt}" in
+        application/pdf)
+            on_pdf "${1}"
+        ;;
+
+        image/*)
+            on_image "${1}"
+        ;;
+    esac
+fi
+
+if test -d "${1}"; then
+    if command -v pcmanfm; then
+        exec pcmanfm "${1}"
+    fi
+fi
+
+on_browser "${1}"

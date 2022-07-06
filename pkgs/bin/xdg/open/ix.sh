@@ -1,12 +1,6 @@
-{% extends '//die/proxy.sh' %}
+{% extends '//die/hub.sh' %}
 
-{% block install %}
-mkdir ${out}/bin; cd ${out}/bin
-
-cat << EOF > xdg-open
-#!/usr/bin/env sh
-exec epiphany "\${@}"
-EOF
-
-chmod +x *
+{% block run_deps %}
+bin/file
+bin/xdg/open/scripts
 {% endblock %}
