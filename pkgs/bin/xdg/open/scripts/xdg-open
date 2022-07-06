@@ -5,51 +5,43 @@ on_browser() {
 }
 
 on_pdf() {
-    if command -v xpdf; then
-        exec xpdf "${1}"
-    fi
-
-    if command -v qpdf; then
-        exec qpdf "${1}"
-    fi
-
-    if command -v mupdf; then
-        exec mupdf "${1}"
-    fi
-
-    if command -v evince; then
-        exec evince "${1}"
-    fi
+    for c in xpdf qpdf mupdf zathura evince; do
+        if command -v ${c}; then
+            exec ${c} "${1}"
+        fi
+    done
 
     on_browser "${1}"
 }
 
 on_image() {
-    if command -v pqiv; then
-        exec pqiv "${1}"
-    fi
-
-    if command -v qimgv; then
-        exec qimgv "${1}"
-    fi
-
-    if command -v imv; then
-        exec imv "${1}"
-    fi
-
-    if command -v swayimg; then
-        exec swayimg "${1}"
-    fi
+    for c in pqiv qimgv imv swayimg; do
+        if command -v ${c}; then
+            exec ${c} "${1}"
+        fi
+    done
 
     on_browser "${1}"
 }
 
 on_video() {
-    if command -v mpv; then
-        exec mpv "${1}"
-    fi
+    for c in mpv mplayer; do
+        if command -v ${c}; then
+            exec ${c} "${1}"
+        fi
+    done
 
     on_browser "${1}"
+}
+
+on_archive() {
+    for c in xarchiver; do
+        if command -v ${c}; then
+            exec ${c} "${1}"
+        fi
+    done
+
+    exit 1
 }
 
 url_decode() {
@@ -79,6 +71,30 @@ if test -f "${url}"; then
 
         video/*)
             on_video "${url}"
+        ;;
+
+        application/gzip)
+            on_archive "${url}"
+        ;;
+
+        application/x-bzip2)
+            on_archive "${url}"
+        ;;
+
+        application/x-lzip)
+            on_archive "${url}"
+        ;;
+
+        application/x-rar)
+            on_archive "${url}"
+        ;;
+
+        application/x-xz)
+            on_archive "${url}"
+        ;;
+
+        application/zip)
+            on_archive "${url}"
         ;;
     esac
 fi
