@@ -44,6 +44,14 @@ on_image() {
     on_browser "${1}"
 }
 
+on_video() {
+    if command -v mpv; then
+        exec mpv "${1}"
+    fi
+
+    on_browser "${1}"
+}
+
 url_decode() {
     # TODO(pg) - rewrite in C++
     python3 -c 'import urllib.parse as up; import sys; print(up.unquote(sys.argv[1])[7:])' "${1}"
@@ -67,6 +75,10 @@ if test -f "${url}"; then
 
         image/*)
             on_image "${url}"
+        ;;
+
+        video/*)
+            on_video "${url}"
         ;;
     esac
 fi

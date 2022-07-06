@@ -37,5 +37,4 @@ c++ -o real7z stubs.cpp CPP/7zip/UI/Console/*.o -Wl,--whole-archive bin/7z.so -W
 {{super()}}
 mkdir ${out}/bin
 cp real7z ${out}/bin/7z
-rm -rf ${out}/doc
 {% endblock %}
