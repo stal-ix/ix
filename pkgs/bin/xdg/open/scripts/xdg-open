@@ -1,10 +1,12 @@
 #!/usr/bin/env sh
 
-on_browser() (
-    exec epiphany "${1}"
-)
+echo "${@}" >> /home/pg/xdglog
 
-on_pdf() (
+on_browser() {
+    exec epiphany "${1}"
+}
+
+on_pdf() {
     if command -v mupdf; then
         exec mupdf "${1}"
     fi
@@ -22,9 +24,9 @@ on_pdf() (
     fi
 
     on_browser "${1}"
-)
+}
 
-on_image() (
+on_image() {
     if command -v pqiv; then
         exec pqiv "${1}"
     fi
@@ -42,25 +44,38 @@ on_image() (
     fi
 
     on_browser "${1}"
-)
+}
 
-if test -f "${1}"; then
-    mt=$(file -b --mime-type "${1}")
+url_decode() {
+    # TODO(pg) - rewrite in C++
+    python3 -c 'import urllib.parse as up; import sys; print(up.unquote(sys.argv[1])[7:])' "${1}"
+}
+
+url="${1}"
+
+case "${url}" in
+    file://*)
+        url=$(url_decode "${url}")
+    ;;
+esac
+
+if test -f "${url}"; then
+    mt=$(file -b --mime-type "${url}")
 
     case "${mt}" in
         application/pdf)
-            on_pdf "${1}"
+            on_pdf "${url}"
         ;;
 
         image/*)
-            on_image "${1}"
+            on_image "${url}"
         ;;
     esac
 fi
 
-if test -d "${1}"; then
+if test -d "${url}"; then
     if command -v pcmanfm; then
-        exec pcmanfm "${1}"
+        exec pcmanfm "${url}"
     fi
 fi
 
