@@ -12,12 +12,12 @@ bld/perl
 QT_BUILD_EXAMPLES=OFF
 QT_BUILD_TESTS=OFF
 INSTALL_LIBEXECDIR=bin
-{% block qt_cross_flags %}
+{% if not tool %}
 QT_FORCE_FIND_TOOLS=ON
 QT_WILL_BUILD_TOOLS=OFF
 QT_BUILD_TOOLS_WHEN_CROSSCOMPILING=OFF
 QT_FEATURE_cross_compile=ON
-{% endblock %}
+{% endif %}
 {% endblock %}
 
 {% block postinstall %}

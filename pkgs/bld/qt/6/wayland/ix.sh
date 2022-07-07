@@ -1,8 +1,5 @@
 {% extends '//lib/qt/6/wayland/t/ix.sh' %}
 
-{% block qt_cross_flags %}
-{% endblock %}
-
 {% block postinstall %}
 cd ${out}
 mv lib old

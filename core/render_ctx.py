@@ -92,7 +92,7 @@ class RenderContext:
             'ix': self,
             'ix_bin': ' '.join(pkg.config.ops.respawn()),
             'host': pkg.host,
-            'is_cross': True,
+            'tool': pkg.name.startswith('bld/'),
             'name': pkg.name,
             'uniq_id': pkg.uniq_id,
             kind: True,

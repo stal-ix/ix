@@ -15,9 +15,6 @@ lib/qt/6/base
 bld/qt/6
 {% endblock %}
 
-{% block qt_cross_flags %}
-{% endblock %}
-
 {% block cmake_flags %}
 QT_FEATURE_linguist=ON
 QT_FEATURE_designer=ON

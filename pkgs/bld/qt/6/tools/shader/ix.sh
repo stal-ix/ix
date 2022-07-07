@@ -1,8 +1,5 @@
 {% extends '//lib/qt/6/shadertools/t/ix.sh' %}
 
-{% block qt_cross_flags %}
-{% endblock %}
-
 {% block env %}
 export Qt6ShaderToolsTools_DIR=${out}/lib/cmake/Qt6ShaderToolsTools
 {% endblock %}
