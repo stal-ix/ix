@@ -73,6 +73,7 @@ TDESKTOP_LAUNCHER_BASENAME=telegram-desktop
 bld/qt/6
 bld/python
 bld/pkg/config
+bld/qt/6/wayland
 bin/wayland/protocols
 {% endblock %}
 

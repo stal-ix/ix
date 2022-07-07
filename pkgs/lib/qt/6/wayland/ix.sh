@@ -1,23 +1,8 @@
-{% extends '//die/qt.sh' %}
-
-{% block fetch %}
-https://github.com/qt/qtwayland/archive/refs/tags/v6.3.1.tar.gz
-sha:2592c78ad72007d50f2505f4b2ec8fec80d135bb5e826261176e0146a0d8aa15
-{% endblock %}
-
-{% block lib_deps %}
-lib/c
-lib/c++
-lib/wayland
-lib/xkbcommon
-lib/qt/6/base
-{% endblock %}
+{% extends 't/ix.sh' %}
 
 {% block bld_tool %}
-bin/wayland/protocols
-{% endblock %}
-
-{% block qt_cross_flags %}
+{{super()}}
+bld/qt/6/wayland
 {% endblock %}
 
 {% block patch %}
