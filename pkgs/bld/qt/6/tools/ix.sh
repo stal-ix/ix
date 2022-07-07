@@ -16,6 +16,7 @@ bld/qt/6
 {% endblock %}
 
 {% block cmake_flags %}
+{{super()}}
 QT_FEATURE_linguist=ON
 QT_FEATURE_designer=ON
 QT_FEATURE_pixeltool=OFF
