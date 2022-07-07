@@ -38,10 +38,6 @@ bld/gettext
 aux/iso-codes
 {% endblock %}
 
-{% block run_deps %}
-bin/webkitproc
-{% endblock %}
-
 {% block meson_flags %}
 libportal=disabled
 unit_tests=disabled

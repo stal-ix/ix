@@ -1,6 +1,7 @@
 {% extends '//die/proxy.sh' %}
 
 {% block run_deps %}
+# TODO(pg): separate scripts
 bin/stalld
 bin/runsrv
 {% endblock %}
