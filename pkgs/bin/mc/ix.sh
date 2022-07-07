@@ -2,4 +2,5 @@
 
 {% block run_deps %}
 bin/mc/slang
+set/compress
 {% endblock %}

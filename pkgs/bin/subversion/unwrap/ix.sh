@@ -22,10 +22,6 @@ lib/utf8proc
 bld/python/2
 {% endblock %}
 
-{% block run_deps %}
-bin/openssh
-{% endblock %}
-
 {% block setup %}
 expat="$(find_pkg expat)"
 

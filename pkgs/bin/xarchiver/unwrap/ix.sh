@@ -5,10 +5,6 @@ https://github.com/ib/xarchiver/archive/refs/tags/0.5.4.18.tar.gz
 sha:639889e052aad60c4a4ecacd607de3128ab765686570e93d954171ffdc22333e
 {% endblock %}
 
-{% block run_deps %}
-set/compress
-{% endblock %}
-
 {% block bld_libs %}
 lib/c
 lib/glib

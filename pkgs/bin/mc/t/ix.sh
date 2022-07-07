@@ -18,10 +18,6 @@ bld/perl
 bld/gettext
 {% endblock %}
 
-{% block run_deps %}
-set/compress
-{% endblock %}
-
 {% block c_rename_symbol %}
 tilde_expand
 update_panels
