@@ -1,8 +1,10 @@
 {% extends '//die/gnome.sh' %}
 
 {% block fetch %}
-https://download.gnome.org/sources/epiphany/42/epiphany-42.3.tar.xz
-sha:7316d3c6500e825d8e57293fa58047c56727bee16cd6b6ac804ffe5d9b229560
+#https://download.gnome.org/sources/epiphany/42/epiphany-42.3.tar.xz
+#sha:7316d3c6500e825d8e57293fa58047c56727bee16cd6b6ac804ffe5d9b229560
+https://gitlab.gnome.org/GNOME/epiphany/-/archive/43.alpha/epiphany-43.alpha.tar.bz2
+sha:b848328657e42ec14786b0522f3041f0e877d70af66154613c639f6e4aa45687
 {% endblock %}
 
 {% block bld_libs %}
@@ -14,6 +16,7 @@ lib/glib
 lib/xml2
 lib/cairo
 lib/handy
+lib/portal
 lib/soup/3
 lib/nettle
 lib/secret
@@ -39,9 +42,9 @@ aux/iso-codes
 {% endblock %}
 
 {% block meson_flags %}
-libportal=disabled
+#libportal=disabled
 unit_tests=disabled
-soup2=disabled
+#soup2=disabled
 {% endblock %}
 
 {% block patch %}
@@ -56,6 +59,8 @@ done) | grep '_class_init' \
       | grep -v ephy_web_overview_model_get_type \
       | grep -v ephy_web_process_extension_get_type \
       | grep -v ephy_add_search_engine_row_item_get_type \
+      | grep -v ephy_web_app_provider_service_get_type \
+      | grep -v ephy_web_extension_extension_get_type \
       > types
 
 cat << EOF >> types
