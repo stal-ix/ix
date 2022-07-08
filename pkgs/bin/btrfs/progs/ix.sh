@@ -13,7 +13,7 @@ lib/zstd
 lib/udev
 lib/linux
 lib/execinfo
-bin/e2fsprogs
+lib/e2fsprogs
 bin/util/linux
 {% endblock %}
 

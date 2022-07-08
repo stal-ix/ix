@@ -7,7 +7,7 @@ sha:244a15f64015ce3ea17e49bdf6e1a0fb4f9af92b82fa9e05aa64cb30b5f07a4d
 
 {% block bld_libs %}
 lib/c
-bin/e2fsprogs
+lib/e2fsprogs
 {% endblock %}
 
 {% block cpp_defines %}

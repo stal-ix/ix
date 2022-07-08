@@ -15,7 +15,7 @@ lib/intl
 lib/linux
 lib/openssl
 lib/readline
-bin/e2fsprogs
+bin/util/linux
 {% endblock %}
 
 {% block configure_flags %}

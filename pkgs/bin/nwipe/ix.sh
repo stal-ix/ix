@@ -10,6 +10,6 @@ lib/c
 lib/linux
 lib/curses
 lib/parted
-bin/e2fsprogs
+lib/e2fsprogs
 lib/device/mapper
 {% endblock %}

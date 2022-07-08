@@ -11,7 +11,7 @@ lib/edit
 lib/inih
 lib/urcu
 lib/linux
-bin/e2fsprogs
+lib/e2fsprogs
 {% endblock %}
 
 {% block bld_tool %}
