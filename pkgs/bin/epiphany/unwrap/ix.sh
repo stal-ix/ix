@@ -42,9 +42,7 @@ aux/iso-codes
 {% endblock %}
 
 {% block meson_flags %}
-#libportal=disabled
 unit_tests=disabled
-#soup2=disabled
 {% endblock %}
 
 {% block patch %}
