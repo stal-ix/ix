@@ -1,6 +1,7 @@
 {% extends '//die/proxy.sh' %}
 
 {% block run_deps %}
+# TODO(pg): move to upper level
 bin/busybox
 bin/sched(delay={{delay}})
 {% endblock %}

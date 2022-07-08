@@ -1,4 +1,4 @@
-{% extends '//bin/gettext/ix.sh' %}
+{% extends '//bin/gettext/unwrap/ix.sh' %}
 
 {% block run_deps %}
 bld/tar
