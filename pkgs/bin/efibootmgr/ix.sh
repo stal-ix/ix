@@ -1,8 +1,8 @@
 {% extends '//die/make.sh' %}
 
 {% block fetch %}
-https://github.com/rhboot/efibootmgr/archive/refs/tags/17.tar.gz
-sha:22a95ebe0d5c9fb2915b3a100450f8f37484d1dbb8b296f55b343cc84f10397d
+https://github.com/rhboot/efibootmgr/archive/refs/tags/18.tar.gz
+sha:442867d12f8525034a404fc8af3036dba8e1fc970998af2486c3b940dfad0874
 {% endblock %}
 
 {% block bld_libs %}
@@ -22,12 +22,6 @@ EFIDIR=/boot/efi
 
 {% block build_flags %}
 shut_up
-{% endblock %}
-
-{% block patch %}
-find . -type f | while read l; do
-    sed -e 's|extern int efi_set_verbose|extern void efi_set_verbose|' -i ${l}
-done
 {% endblock %}
 
 {% block install %}
