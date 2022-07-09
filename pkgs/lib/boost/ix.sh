@@ -41,3 +41,7 @@ shut_up
 {% block patch %}
 sed -e 's|::mode_t|int|' -i boost/interprocess/permissions.hpp
 {% endblock %}
+
+{% block env %}
+export COFLAGS="--with-boost=${out} \${COFLAGS}"
+{% endblock %}
