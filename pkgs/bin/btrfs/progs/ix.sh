@@ -12,6 +12,7 @@ lib/lzo
 lib/zstd
 lib/udev
 lib/linux
+lib/gcrypt
 lib/execinfo
 lib/e2fsprogs
 bin/util/linux
@@ -22,6 +23,7 @@ reallocarray
 {% endblock %}
 
 {% block configure_flags %}
+--with-crypto=libgcrypt
 --disable-documentation
 --disable-python
 {% endblock %}
