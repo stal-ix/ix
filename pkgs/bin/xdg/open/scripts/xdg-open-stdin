@@ -1,0 +1,15 @@
+#!/usr/bin/env sh
+
+cd ${TMPDIR}
+
+path=$(mktemp -u)
+
+cleanup() (
+    rm -rf ${path}
+)
+
+trap "cleanup" EXIT
+
+cat > ${path}
+
+exec xdg-open ${path}
