@@ -1,8 +1,8 @@
 {% extends '//die/make.sh' %}
 
 {% block fetch %}
-https://downloads.sourceforge.net/hdparm/hdparm-9.63.tar.gz
-sha:70785deaebba5877a89c123568b41dee990da55fc51420f13f609a1072899691
+https://downloads.sourceforge.net/hdparm/hdparm-9.64.tar.gz
+sha:315b956951c3fea027287de204381534217c0bd0f37b4935877fe2db0cab859a
 {% endblock %}
 
 {% block bld_libs %}
