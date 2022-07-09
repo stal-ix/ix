@@ -1,12 +1,13 @@
 {% extends '//die/make.sh' %}
 
 {% block fetch %}
-https://github.com/jeaye/stdman/archive/478d353c73bec79bbbad833a31c50eecd4578b46.zip
-md5:7670f4b232aee6b499b937456f8c6132
+https://github.com/jeaye/stdman/archive/refs/tags/2022.02.01.tar.gz
+sha:84d36791514f20a814f1530e9f4e6ff67e538e0c9b3ef25db4b007f9861c4890
 {% endblock %}
 
 {% block bld_tool %}
 bld/bash
+bld/gzip
 {% endblock %}
 
 {% block configure %}
@@ -14,4 +15,5 @@ bash configure --prefix="${out}"
 {% endblock %}
 
 {% block build %}
+:
 {% endblock %}
