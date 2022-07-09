@@ -1,6 +1,6 @@
-{% extends '//die/autohell.sh' %}
+{% extends '//die/autorehell.sh' %}
 
-{# WIP #}
+{# compile error with current wx  #}
 
 {% block fetch %}
 https://github.com/vslavik/poedit/releases/download/v3.1.1-oss/poedit-3.1.1.tar.gz
@@ -21,4 +21,8 @@ lib/json/nlohmann
 
 {% block bld_tool %}
 bin/wxrc
+{% endblock %}
+
+{% block patch %}
+sed -e 's|.*AC_MSG_ERROR.*GtkSpell.*|dnl xxx|' -i configure.ac
 {% endblock %}
