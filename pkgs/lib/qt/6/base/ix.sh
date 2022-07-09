@@ -1,6 +1,7 @@
 {% extends '//lib/qt/6/base/t/ix.sh' %}
 
 {% block lib_deps %}
+lib/b2
 lib/png
 lib/icu
 lib/dbus
@@ -9,6 +10,7 @@ lib/udev
 lib/input
 lib/opengl
 lib/brotli
+lib/pcre/2
 lib/sqlite3
 lib/wayland
 lib/openssl
@@ -24,16 +26,6 @@ lib/double/conversion
 
 {% block bld_tool %}
 bin/wayland/protocols
-{{super()}}
-{% endblock %}
-
-{% block c_rename_symbol %}
-blake2s_init_param
-blake2s_init
-blake2s_init_key
-blake2s_update
-blake2s_final
-blake2s
 {{super()}}
 {% endblock %}
 
