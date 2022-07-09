@@ -13,7 +13,10 @@ lib/c++
 lib/icu
 lib/intl
 lib/boost
+lib/pugixml
+lib/lucene++
 lib/wx/widgets
+lib/json/nlohmann
 {% endblock %}
 
 {% block bld_tool %}
