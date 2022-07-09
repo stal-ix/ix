@@ -12,3 +12,8 @@ lib/c
 {% block patch %}
 >opus_buildtype.cmake
 {% endblock %}
+
+{% block install %}
+{{super()}}
+sed -e 's|Version:.*|Version: 1.3.1|' -i ${out}/lib/pkgconfig/opus.pc
+{% endblock %}
