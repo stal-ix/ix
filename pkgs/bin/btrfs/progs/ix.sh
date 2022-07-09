@@ -15,7 +15,7 @@ lib/linux
 lib/gcrypt
 lib/execinfo
 lib/e2fsprogs
-bin/util/linux
+lib/linux/util
 {% endblock %}
 
 {% block c_rename_symbol %}

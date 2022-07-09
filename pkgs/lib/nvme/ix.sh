@@ -9,8 +9,7 @@ sha:387524b1c24a4091a88bfb258c98c054f716da210e77702f0709164740370807
 lib/c
 lib/json/c
 lib/openssl
-# uuid
-bin/util/linux
+lib/linux/util
 {% endblock %}
 
 {% block cpp_defines %}

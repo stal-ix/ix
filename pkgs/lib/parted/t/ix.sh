@@ -9,8 +9,7 @@ sha:4938dd5c1c125f6c78b1f4b3e297526f18ee74aa43d45c248578b1d2470c05a2
 
 {% block lib_deps %}
 lib/c
-# TODO(pg): proper lib
-bin/util/linux
+lib/linux/util
 lib/device/mapper
 {% endblock %}
 

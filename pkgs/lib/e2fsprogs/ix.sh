@@ -7,7 +7,7 @@ sha:2f16c9176704cf645dc69d5b15ff704ae722d665df38b2ed3cfc249757d8d81e
 
 {% block lib_deps %}
 lib/c
-bin/util/linux
+lib/linux/util
 {% endblock %}
 
 {% block bld_tool %}

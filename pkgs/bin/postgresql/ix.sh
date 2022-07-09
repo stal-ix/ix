@@ -15,7 +15,7 @@ lib/intl
 lib/linux
 lib/openssl
 lib/readline
-bin/util/linux
+lib/linux/util
 {% endblock %}
 
 {% block configure_flags %}

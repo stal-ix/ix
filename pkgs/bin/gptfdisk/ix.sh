@@ -11,7 +11,7 @@ lib/icu
 lib/c++
 lib/popt
 lib/curses
-bin/util/linux
+lib/linux/util
 {% endblock %}
 
 {% block patch %}
