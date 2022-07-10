@@ -9,12 +9,25 @@
 
 namespace {
     struct Clip {
-        Clip(clipboard_opts* opts)
+        virtual ~Clip() {
+        }
+
+        virtual void clear(clipboard_mode mode) = 0;
+        virtual bool hasOwnership(clipboard_mode mode) = 0;
+        virtual char* text(clipboard_mode mode, int* length) = 0;
+        virtual bool setText(clipboard_mode mode, const char* str, size_t length) = 0;
+    };
+
+    struct InMemClip: public Clip {
+        InMemClip(clipboard_opts* opts)
             : Opts_(opts)
         {
         }
 
-        void clear(clipboard_mode mode) {
+        virtual ~InMemClip() {
+        }
+
+        void clear(clipboard_mode mode) override {
             std::lock_guard<std::mutex> guard(Lock_);
 
             if (auto it = Dat_.find(mode); it != Dat_.end()) {
@@ -22,13 +35,13 @@ namespace {
             }
         }
 
-        bool hasOwnership(clipboard_mode mode) {
+        bool hasOwnership(clipboard_mode mode) override {
             std::lock_guard<std::mutex> guard(Lock_);
 
             return Dat_.find(mode) != Dat_.end();
         }
 
-        char* text(clipboard_mode mode, int* length) {
+        char* text(clipboard_mode mode, int* length) override {
             std::lock_guard<std::mutex> guard(Lock_);
 
             if (auto it = Dat_.find(mode); it != Dat_.end()) {
@@ -40,7 +53,7 @@ namespace {
             return nullptr;
         }
 
-        bool setText(clipboard_mode mode, const char* str, size_t length) {
+        bool setText(clipboard_mode mode, const char* str, size_t length) override {
             std::lock_guard<std::mutex> guard(Lock_);
 
             Dat_[mode].assign(str, length);
@@ -53,11 +66,15 @@ namespace {
         std::map<clipboard_mode, std::string> Dat_;
         clipboard_opts* Opts_;
     };
+
+    static inline Clip* constructClip(clipboard_opts* cb_opts) {
+        return new InMemClip(cb_opts);
+    }
 }
 
 extern "C" {
     clipboard_c* clipboard_new(clipboard_opts* cb_opts) {
-        return (clipboard_c*)new Clip(cb_opts);
+        return (clipboard_c*)constructClip(cb_opts);
     }
 
     void clipboard_free(clipboard_c* cb) {
