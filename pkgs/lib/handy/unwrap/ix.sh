@@ -2,7 +2,7 @@
 
 {% block fetch %}
 https://gitlab.gnome.org/GNOME/libhandy/-/archive/1.7.0/libhandy-1.7.0.tar.bz2
-sha:
+sha:c6f6bf81d6c36d69efa6ae8d3a5b1ef8cbb08fa69b81abc5ab44d5c66666d465
 {% endblock %}
 
 {% block lib_deps %}
