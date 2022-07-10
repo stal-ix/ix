@@ -1,4 +1,4 @@
-{% extends '//lib/clipboard/real/ix.sh' %}
+{% extends '//lib/clipboard/darwin/ix.sh' %}
 
 {% block configure %}
 :
