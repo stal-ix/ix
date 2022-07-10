@@ -7,6 +7,7 @@
 {% block lib_deps %}
 lib/c
 lib/c++
+lib/sdl/2
 {% endblock %}
 
 {% block patch %}
@@ -14,7 +15,7 @@ sed -e 's|.*libclipboard-config.h.*||' -i include/libclipboard.h
 {% endblock %}
 
 {% block build %}
-cc -c -Iinclude -o clip.o -x c++ - << EOF
+c++ -c -Iinclude -o clip.o -std=c++20 -x c++ - << EOF
 {% include 'clip.cpp' %}
 EOF
 ar q libclipboard.a *.o

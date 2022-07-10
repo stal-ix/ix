@@ -1,11 +1,15 @@
 #include "libclipboard.h"
 
+#include <SDL2/SDL.h>
+#include <SDL2/SDL_clipboard.h>
+
 #include <stdlib.h>
 #include <string.h>
 
 #include <map>
 #include <mutex>
 #include <string>
+#include <stdexcept>
 
 namespace {
     struct Clip {
@@ -16,6 +20,45 @@ namespace {
         virtual bool hasOwnership(clipboard_mode mode) = 0;
         virtual char* text(clipboard_mode mode, int* length) = 0;
         virtual bool setText(clipboard_mode mode, const char* str, size_t length) = 0;
+    };
+
+    struct SDLClip: public Clip {
+        SDLClip() {
+            if (SDL_Init(SDL_INIT_VIDEO) != 0) {
+                throw std::runtime_error(SDL_GetError());
+            }
+        }
+
+        virtual ~SDLClip() {
+        }
+
+        void clear(clipboard_mode mode) override {
+            setText(mode, "", 0);
+        }
+
+        bool hasOwnership(clipboard_mode) override {
+            return true;
+        }
+
+        char* text(clipboard_mode, int* length) override {
+            if (auto t = SDL_GetClipboardText(); t) {
+                std::string ret = t;
+
+                SDL_free(t);
+
+                if (ret.length()) {
+                    return strdup(ret.c_str());
+                }
+            }
+
+            return nullptr;
+        }
+
+        bool setText(clipboard_mode, const char* str, size_t length) override {
+            std::string t(str, length);
+
+            return SDL_SetClipboardText(t.c_str()) == 0;
+        }
     };
 
     struct InMemClip: public Clip {
@@ -68,6 +111,11 @@ namespace {
     };
 
     static inline Clip* constructClip(clipboard_opts* cb_opts) {
+        try {
+            return new SDLClip();
+        } catch (...) {
+        }
+
         return new InMemClip(cb_opts);
     }
 }
