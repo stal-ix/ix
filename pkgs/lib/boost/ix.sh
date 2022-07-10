@@ -32,6 +32,7 @@ b2 link=static
 
 {% block install %}
 b2 link=static install
+sed -e 's|len + 1}|int(len + 1)}|' -i ${out}/include/boost/process/detail/posix/executor.hpp
 {% endblock %}
 
 {% block build_flags %}

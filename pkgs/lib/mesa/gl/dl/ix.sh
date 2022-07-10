@@ -2,9 +2,11 @@
 
 {% block lib_deps %}
 lib/mesa/gl
+lib/mesa/gl/dl/glx
 {% endblock %}
 
 {% block export_symbols %}
+glXGetProcAddressARB
 glAccum
 glActiveShaderProgram
 glActiveTexture

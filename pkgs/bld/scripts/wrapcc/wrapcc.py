@@ -9,6 +9,9 @@ def it_args():
         if x:
             if x[0] == '@':
                 yield from open(x[1:], 'r').read().split()
+            elif x.startswith('-o/'):
+                yield '-o'
+                yield x[2:]
             else:
                 yield x
 
