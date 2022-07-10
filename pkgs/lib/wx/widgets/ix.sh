@@ -10,13 +10,24 @@ sha:356e9b55f1ae3d58ae1fed61478e9b754d46b820913e3bfbc971c50377c1903a
 {% block lib_deps %}
 lib/c
 lib/c++
+lib/intl
 lib/gtk/3
 lib/pcre/2
 {% endblock %}
 
 {% block cmake_flags %}
-wxUSE_INTL=OFF
+#wxUSE_INTL=OFF
 wxUSE_XLOCALE=OFF
+{% endblock %}
+
+{% block cpp_defines %}
+_NL_ADDRESS_LANG_NAME=0
+_NL_IDENTIFICATION_LANGUAGE=0
+_NL_ADDRESS_COUNTRY_NAME=0
+_NL_IDENTIFICATION_TERRITORY=0
+_NL_ADDRESS_LANG_NAME=0
+_NL_IDENTIFICATION_LANGUAGE=0
+_NL_ADDRESS_COUNTRY_NAME=0
 {% endblock %}
 
 {% block patch %}
