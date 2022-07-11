@@ -1,17 +1,26 @@
 #!/usr/bin/env sh
 
+message() (
+    notify-send -t 2000 "${@}"
+)
+
+die() {
+    message "${@}"
+    exit 1
+}
+
 on_browser() {
     exec epiphany "${1}"
 }
 
 on_pdf() {
-    for c in xpdf qpdf mupdf zathura evince; do
+    for c in xpdf qpdf mupdf-gl zathura evince; do
         if command -v ${c}; then
             exec ${c} "${1}"
         fi
     done
 
-    on_browser "${1}"
+    die 'cannot open pdf' "${1}"
 }
 
 on_image() {
@@ -21,7 +30,7 @@ on_image() {
         fi
     done
 
-    on_browser "${1}"
+    die 'can not open image' "${1}"
 }
 
 on_video() {
@@ -31,7 +40,17 @@ on_video() {
         fi
     done
 
-    on_browser "${1}"
+    die 'can not open media' "${1}"
+}
+
+on_audio() {
+    for c in strawberry qmmp; do
+        if command -v ${c}; then
+            exec ${c} "${1}"
+        fi
+    done
+
+    on_video "${1}"
 }
 
 on_archive() {
@@ -41,7 +60,7 @@ on_archive() {
         fi
     done
 
-    exit 1
+    die 'can not open archive' "${1}"
 }
 
 url_decode() {
@@ -54,6 +73,10 @@ url="${1}"
 case "${url}" in
     file://*)
         url=$(url_decode "${url}")
+    ;;
+
+    http*)
+        on_browser "${url}"
     ;;
 esac
 
@@ -71,6 +94,10 @@ if test -f "${url}"; then
 
         video/*)
             on_video "${url}"
+        ;;
+
+        audio/*)
+            on_audio "${url}"
         ;;
 
         application/gzip)
@@ -103,6 +130,8 @@ if test -d "${url}"; then
     if command -v pcmanfm; then
         exec pcmanfm "${url}"
     fi
+
+    die 'can not open directory' "${url}"
 fi
 
-on_browser "${1}"
+die 'can not open url' "${url}"
