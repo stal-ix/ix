@@ -1,13 +1,12 @@
 {% extends '//die/gnome.sh' %}
 
 {% block fetch %}
-#https://download.gnome.org/sources/epiphany/42/epiphany-42.3.tar.xz
-#sha:7316d3c6500e825d8e57293fa58047c56727bee16cd6b6ac804ffe5d9b229560
 https://gitlab.gnome.org/GNOME/epiphany/-/archive/43.alpha/epiphany-43.alpha.tar.bz2
 sha:b848328657e42ec14786b0522f3041f0e877d70af66154613c639f6e4aa45687
 {% endblock %}
 
 {% block bld_libs %}
+#lib/asm
 lib/c
 lib/gcr
 lib/gtk
