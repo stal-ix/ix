@@ -134,4 +134,4 @@ if test -d "${url}"; then
     die 'can not open directory' "${url}"
 fi
 
-die 'can not open url' "${url}"
+die 'can not open file' "${url}"

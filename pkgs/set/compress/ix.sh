@@ -4,6 +4,7 @@
 bin/xz
 bin/7z
 bin/zip
+bin/tar
 bin/gzip
 bin/lzip
 bin/zstd
