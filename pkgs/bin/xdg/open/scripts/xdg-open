@@ -1,5 +1,7 @@
 #!/usr/bin/env sh
 
+echo "$@" >> /home/pg/xlog
+
 message() (
     notify-send -t 2000 "${@}"
 )
