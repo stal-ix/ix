@@ -8,7 +8,7 @@ sha:d047af43c9da3843fdb40139d5f23ac75041bed16c28e24a31447b27a269cf66
 {% block bld_tool %}
 bld/gettext
 bin/xsltproc
-bin/intltool
+bld/intltool
 {% endblock %}
 
 {% block env %}

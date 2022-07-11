@@ -38,7 +38,7 @@ bld/perl
 bld/bash
 bin/xmllint
 bld/gettext
-bin/intltool
+bld/intltool
 bin/xsltproc
 {% endblock %}
 

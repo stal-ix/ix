@@ -17,7 +17,7 @@ lib/gtk/3
 {% block bld_tool %}
 bld/gettext
 bin/gtk/doc
-bin/intltool
+bld/intltool
 {% endblock %}
 
 {% block configure_flags %}

@@ -16,7 +16,7 @@ lib/gtk/3
 {% block bld_tool %}
 bld/python
 bld/gettext
-bin/intltool
+bld/intltool
 bld/glib/codegen
 {% endblock %}
 

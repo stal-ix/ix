@@ -17,7 +17,7 @@ lib/gtk/deps
 
 {% block bld_tool %}
 bld/gettext
-bin/intltool
+bld/intltool
 {% endblock %}
 
 {% block configure_flags %}

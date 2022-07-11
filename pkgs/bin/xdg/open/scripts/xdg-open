@@ -1,7 +1,5 @@
 #!/usr/bin/env sh
 
-echo "$@" >> /home/pg/xlog
-
 message() (
     notify-send -t 2000 "${@}"
 )
@@ -16,7 +14,7 @@ on_browser() {
 }
 
 on_pdf() {
-    for c in xpdf qpdf mupdf-gl zathura evince; do
+    for c in xpdf mupdf-gl zathura evince; do
         if command -v ${c}; then
             exec ${c} "${1}"
         fi
@@ -65,10 +63,9 @@ on_archive() {
     die 'can not open archive' "${1}"
 }
 
-url_decode() {
-    # TODO(pg) - rewrite in C++
-    python3 -c 'import urllib.parse as up; import sys; print(up.unquote(sys.argv[1])[7:])' "${1}"
-}
+url_decode() (
+    urldec $(echo "${1}" | sed -e 's|file://||')
+)
 
 url="${1}"
 

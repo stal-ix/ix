@@ -16,7 +16,7 @@ lib/fm/extra
 
 {% block bld_tool %}
 bin/gtk/doc
-bin/intltool
+bld/intltool
 {% endblock %}
 
 {% block configure_flags %}
