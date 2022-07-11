@@ -53,5 +53,5 @@ export CMFLAGS="-DQT_DISABLE_NO_DEFAULT_PATH_IN_QT_PACKAGES=ON \${CMFLAGS}"
 
 {% block patch %}
 {{super()}}
-sed -e 's|"Sans Serif"|"system"|' -i src/gui/platform/unix/qgenericunixthemes.cpp
+sed -e 's|"Sans Serif"|"system-ui"|' -i src/gui/platform/unix/qgenericunixthemes.cpp
 {% endblock %}
