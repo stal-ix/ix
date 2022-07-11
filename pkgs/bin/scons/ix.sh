@@ -5,11 +5,6 @@ https://files.pythonhosted.org/packages/be/d0/bf4e7003369c6d8a6e490741c54791c791
 md5:2b1daf6c83e467ae41c742f546c2fe5a
 {% endblock %}
 
-{% block run_deps %}
-# TODO(pg): bld/ run dep
-bld/python
-{% endblock %}
-
 {% block install %}
 cd ${out}; mkdir bin; cd bin
 
