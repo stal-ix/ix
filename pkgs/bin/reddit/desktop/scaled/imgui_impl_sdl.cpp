@@ -86,8 +86,14 @@ struct ImGui_ImplSDL2_Data
     SDL_Cursor*     MouseCursors[ImGuiMouseCursor_COUNT];
     char*           ClipboardTextData;
     bool            MouseCanUseGlobalState;
+    float           ScaleFactorW;
+    float           ScaleFactorH;
 
-    ImGui_ImplSDL2_Data()   { memset((void*)this, 0, sizeof(*this)); }
+    ImGui_ImplSDL2_Data() {
+        memset((void*)this, 0, sizeof(*this));
+        ScaleFactorW = 1.0;
+        ScaleFactorH = 1.0;
+    }
 };
 
 // Backend data stored in io.BackendPlatformUserData to allow support for multiple Dear ImGui contexts
@@ -250,7 +256,7 @@ bool ImGui_ImplSDL2_ProcessEvent(const SDL_Event* event)
     {
         case SDL_MOUSEMOTION:
         {
-            io.AddMousePosEvent((float)event->motion.x, (float)event->motion.y);
+            io.AddMousePosEvent(bd->ScaleFactorW * (float)event->motion.x, bd->ScaleFactorH * (float)event->motion.y);
             return true;
         }
         case SDL_MOUSEWHEEL:
@@ -441,7 +447,7 @@ static void ImGui_ImplSDL2_UpdateMouseData()
             int window_x, window_y, mouse_x_global, mouse_y_global;
             SDL_GetGlobalMouseState(&mouse_x_global, &mouse_y_global);
             SDL_GetWindowPosition(bd->Window, &window_x, &window_y);
-            io.AddMousePosEvent((float)(mouse_x_global - window_x), (float)(mouse_y_global - window_y));
+            io.AddMousePosEvent(bd->ScaleFactorW * (float)(mouse_x_global - window_x), bd->ScaleFactorH * (float)(mouse_y_global - window_y));
         }
     }
 }
@@ -523,18 +529,17 @@ void ImGui_ImplSDL2_NewFrame()
     int w, h;
     int display_w, display_h;
     SDL_GetWindowSize(bd->Window, &w, &h);
-    if (SDL_GetWindowFlags(bd->Window) & SDL_WINDOW_MINIMIZED)
-        w = h = 0;
     if (bd->Renderer != NULL)
         SDL_GetRendererOutputSize(bd->Renderer, &display_w, &display_h);
     else
         SDL_GL_GetDrawableSize(bd->Window, &display_w, &display_h);
-    io.DisplaySize = ImVec2((float)w, (float)h);
-    if (w > 0 && h > 0)
-        io.DisplayFramebufferScale = ImVec2((float)display_w / w, (float)display_h / h);
-
-    printf("qq %d %d %d %d\n", w, h, display_w, display_h);
-
+    io.DisplaySize = ImVec2((float)display_w, (float)display_h);
+    if (w > 0) {
+        bd->ScaleFactorW = (float)display_w / (float)w;
+    }
+    if (h > 0) {
+        bd->ScaleFactorH = (float)display_h / (float)h;
+    }
     // Setup time step (we don't use SDL_GetTicks() because it is using millisecond resolution)
     static Uint64 frequency = SDL_GetPerformanceFrequency();
     Uint64 current_time = SDL_GetPerformanceCounter();

@@ -122,7 +122,6 @@ int main(int /*argc*/, char** argv)
 
 
     Database* db = Database::getInstance();
-
     {
         int x,y,w,h;
         db->getMainWindowDimensions(&x,&y,&w,&h);
@@ -164,13 +163,11 @@ int main(int /*argc*/, char** argv)
         SDL_SetWindowSize(window,w,h);
     }
 
-    //SDL_SetWindowSize(window,3456,2160);
 
     // Setup Dear ImGui context
     IMGUI_CHECKVERSION();
     ImGui::CreateContext();
     ImGuiIO& io = ImGui::GetIO();
-    //io.FontGlobalScale = 2.0;
     io.ConfigFlags |= ImGuiConfigFlags_NavEnableKeyboard;     // Enable Keyboard Controls
     auto appConfigFolder = Utils::GetAppConfigFolder();
     auto iniFilePathString = (appConfigFolder / "imgui.ini").string();
@@ -179,9 +176,6 @@ int main(int /*argc*/, char** argv)
     // Setup Dear ImGui style
     ImGui::StyleColorsDark();
     //ImGui::StyleColorsClassic();
-    //ImGuiStyle::ScaleAllSizes()
-    //ImGui::SetWindowFontScale(2.0);
-    //ImGui::GetStyle().ScaleAllSizes(2.0);
 
     // Setup Platform/Renderer backends
     ImGui_ImplSDL2_InitForOpenGL(window, gl_context);
@@ -270,9 +264,9 @@ void runMainLoop(SDL_Window* window,ImGuiIO& io)
         if(show_markdown_window)
             ShowMarkdownWindow(&show_markdown_window);
 #endif
-        int windowWidth;
-        int windowHeight;
-        SDL_GetWindowSize(window,&windowWidth,&windowHeight);
+        int windowWidth = (int)io.DisplaySize.x;
+        int windowHeight = (int)io.DisplaySize.y;
+        //SDL_GetWindowSize(window,&windowWidth,&windowHeight);
 
         desktop->setAppFrameHeight(windowHeight);
         desktop->setAppFrameWidth(windowWidth);
@@ -280,8 +274,7 @@ void runMainLoop(SDL_Window* window,ImGuiIO& io)
 
         // Rendering
         ImGui::Render();
-        glViewport(0, 0, (int)io.DisplaySize.x, (int)io.DisplaySize.y);
-        printf("%d %d %d %d\n", windowWidth, windowHeight, (int)io.DisplaySize.x, (int)io.DisplaySize.y);
+        glViewport(0, 0, windowWidth, windowHeight);
         const auto& backgroundColor = desktop->getBackgroundColor();
         glClearColor(backgroundColor.x, backgroundColor.y, backgroundColor.z, backgroundColor.w);
         glClear(GL_COLOR_BUFFER_BIT);
