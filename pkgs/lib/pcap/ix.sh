@@ -18,3 +18,8 @@ lib/linux
 bld/flex
 bld/bison
 {% endblock %}
+
+{% block install %}
+{{super()}}
+sed -e 's|Libs.private.*||' -i ${out}/lib/pkgconfig/libpcap.pc
+{% endblock %}

@@ -24,6 +24,8 @@ QT_FEATURE_harfbuzz=ON
 QT_FEATURE_jpeg=ON
 QT_FEATURE_largefile=ON
 QT_FEATURE_png=ON
+QT_FEATURE_fontconfig=ON
+
 QT_FEATURE_posix_fallocate=ON
 QT_FEATURE_regularexpression=ON
 QT_FEATURE_system_doubleconversion=ON
@@ -34,6 +36,7 @@ QT_FEATURE_system_libb2=ON
 QT_FEATURE_system_pcre2=ON
 QT_FEATURE_system_sqlite=ON
 QT_FEATURE_system_zlib=ON
+QT_FEATURE_system_fontconfig=ON
 QT_FEATURE_systemsemaphore=ON
 
 #QT_FEATURE_system_proxies
@@ -41,5 +44,4 @@ QT_FEATURE_systemsemaphore=ON
 #QT_FEATURE_systemtrayicon
 #QT_FEATURE_textmarkdownreader
 #QT_FEATURE_xcb
-
 {% endblock %}

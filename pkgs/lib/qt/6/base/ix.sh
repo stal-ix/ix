@@ -50,3 +50,8 @@ llvm-ar q libqtregister.a $(find -type f -name '*.o')
 {% block env %}
 export CMFLAGS="-DQT_DISABLE_NO_DEFAULT_PATH_IN_QT_PACKAGES=ON \${CMFLAGS}"
 {% endblock %}
+
+{% block patch %}
+{{super()}}
+sed -e 's|"Sans Serif"|"system"|' -i src/gui/platform/unix/qgenericunixthemes.cpp
+{% endblock %}
