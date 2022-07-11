@@ -7,6 +7,7 @@ sha:ed285f4accaf05344f90975757b3dbfe772ba41d1c401c2648b7fa45b711bdd4
 
 {% block lib_deps %}
 lib/c
+lib/nl
 {% endblock %}
 
 {% block bld_libs %}
