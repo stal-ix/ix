@@ -1,27 +1,19 @@
-{% extends '//die/autorehell.sh' %}
-
-{% block fetch %}
-https://github.com/ib/xarchiver/archive/refs/tags/0.5.4.18.tar.gz
-sha:639889e052aad60c4a4ecacd607de3128ab765686570e93d954171ffdc22333e
-{% endblock %}
+{% extends '//bin/xarchiver/stock/ix.sh' %}
 
 {% block bld_libs %}
-lib/c
-lib/glib
-lib/gtk/3
+lib/shim/ix
+{{super()}}
 {% endblock %}
 
-{% block bld_tool %}
-bld/gettext
-bin/intltool
+{% block setup %}
+{{super()}}
+export CPPFLAGS="-include ix.h ${CPPFLAGS}"
 {% endblock %}
 
-{% block configure_flags %}
---disable-doc
-{% endblock %}
-
-{% block c_rename_symbol %}
-_caches
+{% block patch %}
+{{super()}}
+sed -e 's|file_name = g_str.*|file_name = ix_uniq_socket();|' -i src/socket.c
+sed -e 's|"/tmp"|ix_temp_user_dir()|' -i src/pref_dialog.c
 {% endblock %}
 
 {% block install %}
