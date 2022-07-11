@@ -22,3 +22,9 @@ export COFLAGS="--with-apr=${out}/lib/bin/apr-1-config \${COFLAGS}"
 {% block lib_deps %}
 lib/c
 {% endblock %}
+
+{% block configure_flags %}
+{% if linux %}
+--with-devrandom=/dev/random
+{% endif %}
+{% endblock %}
