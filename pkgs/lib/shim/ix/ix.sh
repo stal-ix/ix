@@ -13,7 +13,7 @@ cat << EOF > ix.h
 {% include 'ix.h' %}
 EOF
 
-cc -c -o ix.o -x c++ - << EOF
+cc -std=c++20 -c -o ix.o -x c++ - << EOF
 {% include 'ix.cpp' %}
 EOF
 

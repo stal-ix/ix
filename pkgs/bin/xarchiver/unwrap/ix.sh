@@ -13,7 +13,7 @@ export CPPFLAGS="-include ix.h ${CPPFLAGS}"
 {% block patch %}
 {{super()}}
 sed -e 's|file_name = g_str.*|file_name = ix_uniq_socket();|' -i src/socket.c
-sed -e 's|"/tmp"|ix_temp_user_dir()|' -i src/pref_dialog.c
+sed -e 's|"/tmp"|ix_temp_dir()|' -i src/pref_dialog.c
 {% endblock %}
 
 {% block install %}

@@ -1,5 +1,7 @@
 #include "ix.h"
 
+#include <set>
+#include <mutex>
 #include <string>
 
 #include <stdio.h>
@@ -7,41 +9,59 @@
 #include <unistd.h>
 
 namespace {
-    static inline const char* sessionDir() {
+    static void die(const std::string& msg) {
+        fprintf(stderr, "shit happen: %s, abort now\n", msg.c_str());
+        abort();
+    }
+
+    struct Holder {
+        auto intern(const std::string& s) {
+            std::lock_guard<std::mutex> guard(L);
+
+            S.insert(s);
+
+            return S.find(s)->c_str();
+        }
+
+        std::set<std::string> S;
+        std::mutex L;
+    };
+
+    static auto intern(const std::string& s) {
+        static Holder* h = new Holder();
+
+        return h->intern(s);
+    }
+
+    static auto sessionDir() {
         if (auto env = getenv("XDG_RUNTIME_DIR"); env) {
             return env;
         }
 
+        die("no XDG_RUNTIME_DIR in environment");
+    }
+
+    static auto tmpDir() {
         if (auto env = getenv("TMPDIR"); env) {
             return env;
         }
 
-        abort();
+        die("no TMPDIR in environment");
     }
 
-    static inline const char* userDir() {
-        if (auto env = getenv("IX_SDIR"); env) {
-            return env;
-        }
-
-        return sessionDir();
-    }
-
-    static inline std::string uniqSocket() {
-        return std::string(sessionDir()) + std::string("/socket.") + std::to_string(getpid());
+    static auto uniqSocket() {
+        return sessionDir() + std::string("/socket.") + std::to_string(getpid());
     }
 }
 
 extern "C" const char* ix_temp_session_dir() {
-    return sessionDir();
+    return intern(sessionDir());
 }
 
-extern "C" const char* ix_temp_user_dir() {
-    return userDir();
+extern "C" const char* ix_temp_dir() {
+    return intern(tmpDir());
 }
 
 extern "C" const char* ix_uniq_socket() {
-    static std::string* s = new std::string(uniqSocket());
-
-    return s->c_str();
+    return intern(uniqSocket());
 }
