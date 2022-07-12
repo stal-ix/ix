@@ -1,4 +1,4 @@
-{% extends '//die/autorehell.sh' %}
+{% extends '//die/autohell.sh' %}
 
 {% block fetch %}
 https://www.gnupg.org/ftp/gcrypt/libksba/libksba-1.6.0.tar.bz2
@@ -15,6 +15,10 @@ bld/bash
 bld/bison
 {% endblock %}
 
-{% block patch %}
-rm autogen.sh
+{% block postinstall %}
+echo 'left bin/*config'
+{% endblock %}
+
+{% block env %}
+export COFLAGS="--with-libksba-prefix=${out} \${COFLAGS}"
 {% endblock %}
