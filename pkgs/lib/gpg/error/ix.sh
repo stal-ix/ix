@@ -12,3 +12,7 @@ lib/c
 {% block postinstall %}
 echo 'TODO(pg): check it'
 {% endblock %}
+
+{% block env %}
+export COFLAGS="--with-libgpg-error-prefix=${out} \${COFLAGS}"
+{% endblock %}
