@@ -1,8 +1,8 @@
 {% extends '//die/make.sh' %}
 
 {% block fetch %}
-https://github.com/redis/redis/archive/refs/tags/7.0.2.tar.gz
-sha:8f0f6a738281b995fd698095a18065fd3fde5ee55c3229498a669ab21bdaf9cc
+https://github.com/redis/redis/archive/refs/tags/7.0.3.tar.gz
+sha:a98ff50176c4dfec0921dec2b6e5f733674c861debf7c470d52248031e01e999
 {% endblock %}
 
 {% block bld_libs %}
