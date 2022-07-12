@@ -9,7 +9,7 @@ sha:028552eb8f2a37c6effda88ee5e8f6d87b5d9601182ddec784a9728865f821e0
 lib/c
 lib/png
 lib/jpeg
-lib/gdk/pixbuf
+#lib/gdk/pixbuf
 {% endblock %}
 
 {% block patch %}
@@ -19,5 +19,6 @@ done
 {% endblock %}
 
 {% block meson_flags %}
-gdk-pixbuf2=enabled
+#broken
+#gdk-pixbuf2=enabled
 {% endblock %}
