@@ -65,6 +65,11 @@ class RenderContext:
     def list_to_json(self, lst):
         return json.dumps(list(self.parse_list(lst)))
 
+    def load_file(self, name):
+        n = os.path.join(os.path.dirname(self.package.name), name)
+
+        return self.package.manager.env.source(n)[0]
+
     def template(self, path):
         pkg = self.package
 

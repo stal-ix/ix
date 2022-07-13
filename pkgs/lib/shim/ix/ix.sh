@@ -1,27 +1,10 @@
-{% extends '//die/c_std.sh' %}
-
-{% block unpack %}
-: nothing to unpack
-{% endblock %}
+{% extends '//die/inline/library.sh' %}
 
 {% block lib_deps %}
 lib/c
 {% endblock %}
 
-{% block build %}
-cat << EOF > ix.h
-{% include 'ix.h' %}
-EOF
-
-cc -std=c++20 -c -o ix.o -x c++ - << EOF
-{% include 'ix.cpp' %}
-EOF
-
-ar cq libixshim.a *.o
-{% endblock %}
-
-{% block install %}
-mkdir ${out}/lib ${out}/include
-cp *.a ${out}/lib/
-cp *.h ${out}/include/
+{% block sources %}
+ix.h
+ix.cpp
 {% endblock %}
