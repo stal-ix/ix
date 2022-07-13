@@ -2,5 +2,5 @@
 
 {% block run_deps %}
 bin/git
-bit/tig/unwrap
+bin/tig/unwrap
 {% endblock %}
