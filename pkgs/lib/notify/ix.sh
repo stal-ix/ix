@@ -20,3 +20,8 @@ gtk_doc=false
 {% block bld_tool %}
 bld/glib/codegen
 {% endblock %}
+
+{% block install %}
+{{super()}}
+sed -e 's|-DG_LOG_DOMAIN=.*||' -e 's|-Wl,.*||' -i ${out}/lib/pkgconfig/libnotify.pc
+{% endblock %}
