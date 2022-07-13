@@ -4,8 +4,13 @@
 : nothing to unpack
 {% endblock %}
 
+{% set sources %}
+{% block sources %}
+{% endblock %}
+{% endset %}
+
 {% block build %}
-{% for x in ix.parse_list(self.sources()) %}
+{% for x in ix.parse_list(sources) %}
 cat << EOF > {{x}}
 {{ix.load_file(x)}}
 EOF
@@ -14,7 +19,7 @@ for x in $(ls *.c); do
     cc -c ${x}
 done
 for x in $(ls *.cpp); do
-    c++ -c ${x}
+    c++ -std=c++20 -c ${x}
 done
 {% endblock %}
 
