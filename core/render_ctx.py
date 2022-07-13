@@ -5,19 +5,6 @@ import core.utils as cu
 import core.error as ce
 
 
-class FileLoader:
-    def __init__(self, pkg):
-        self.pkg = pkg
-
-    def __getattr__(self, name):
-        fname = name.replace('_', '.')
-
-        return {
-            'kind': fname.split('.')[-1],
-            'data': self.pkg.template(os.path.join(os.path.dirname(self.pkg.name), fname)),
-        }
-
-
 def preproc(d):
     for x in d.split('\n'):
         x = x.strip()
@@ -77,10 +64,6 @@ class RenderContext:
 
     def list_to_json(self, lst):
         return json.dumps(list(self.parse_list(lst)))
-
-    @property
-    def files(self):
-        return FileLoader(self)
 
     def template(self, path):
         pkg = self.package
