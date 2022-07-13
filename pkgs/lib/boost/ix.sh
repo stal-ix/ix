@@ -11,6 +11,7 @@ bld/b2
 
 {% block lib_deps %}
 lib/c
+lib/z
 lib/c++
 {% endblock %}
 
