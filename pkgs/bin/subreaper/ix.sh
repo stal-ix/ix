@@ -1,20 +1,13 @@
-{% extends '//die/c_std.sh' %}
+{% extends '//die/inline/program.sh' %}
 
 {% block bld_libs %}
 lib/c
 {% endblock %}
 
-{% block step_unpack %}
-:
+{% block name %}
+subreaper
 {% endblock %}
 
-{% block build %}
-cc -o subreaper -x c - << EOF
-{% include 'main.c' %}
-EOF
-{% endblock %}
-
-{% block install %}
-mkdir ${out}/bin
-cp subreaper ${out}/bin/
+{% block sources %}
+main.c
 {% endblock %}
