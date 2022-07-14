@@ -26,7 +26,7 @@ lib/cairo
 lib/tasn1
 lib/gcrypt
 lib/soup/3
-lib/sqlite3
+lib/sqlite/3
 lib/freetype
 lib/harfbuzz
 lib/jpeg/open

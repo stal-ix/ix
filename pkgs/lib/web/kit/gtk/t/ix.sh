@@ -32,8 +32,8 @@ lib/secret
 lib/soup/3
 lib/notify
 lib/wayland
-lib/sqlite3
 lib/seccomp
+lib/sqlite/3
 lib/freetype
 lib/harfbuzz
 lib/jpeg/open

@@ -13,8 +13,8 @@ lib/intl
 lib/serf
 lib/neon
 lib/expat
-lib/sqlite3
 lib/apr/util
+lib/sqlite/3
 lib/utf8/proc
 {% endblock %}
 

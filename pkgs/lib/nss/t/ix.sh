@@ -14,7 +14,7 @@ lib/c
 lib/z
 lib/c++
 lib/nspr
-lib/sqlite3
+lib/sqlite/3
 {% endblock %}
 
 {% block bld_libs %}

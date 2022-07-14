@@ -16,7 +16,7 @@ lib/idn/2
 lib/gnutls
 lib/curses
 lib/openssl
-lib/sqlite3
+lib/sqlite/3
 lib/pcre/2/posix
 {% endblock %}
 

@@ -17,8 +17,8 @@ lib/gnutls
 lib/secret
 lib/notify
 lib/fribidi
-lib/sqlite3
 lib/enchant
+lib/sqlite/3
 lib/gtk/deps
 lib/web/kit/gtk
 lib/web/kit/deps

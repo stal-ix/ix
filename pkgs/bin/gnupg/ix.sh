@@ -14,7 +14,7 @@ lib/bzip/2
 lib/gnutls
 lib/assuan
 lib/gcrypt
-lib/sqlite3
+lib/sqlite/3
 lib/readline
 lib/gpg/error
 {% endblock %}

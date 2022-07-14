@@ -2,8 +2,8 @@
 
 {% block bld_libs %}
 lib/magic
-lib/sqlite3
 lib/seccomp
+lib/sqlite/3
 bin/zathura/cb
 bin/zathura/djvu
 bin/zathura/mupdf

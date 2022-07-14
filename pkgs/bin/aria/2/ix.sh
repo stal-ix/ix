@@ -15,7 +15,7 @@ lib/expat
 lib/ssh/2
 lib/c-ares
 lib/openssl
-lib/sqlite3
+lib/sqlite/3
 {% endblock %}
 
 {% block bld_tool %}

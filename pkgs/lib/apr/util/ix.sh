@@ -11,8 +11,8 @@ lib/apr
 lib/gdbm
 lib/iconv
 lib/expat
-lib/sqlite3
 lib/openssl
+lib/sqlite/3
 {% endblock %}
 
 {% block configure_flags %}

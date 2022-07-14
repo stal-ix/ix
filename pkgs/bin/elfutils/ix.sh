@@ -4,8 +4,8 @@
 lib/intl
 lib/curl
 lib/linux
-lib/sqlite3
 lib/archive
+lib/sqlite/3
 lib/micro/httpd
 {{super()}}
 {% endblock %}

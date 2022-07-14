@@ -25,9 +25,9 @@ lib/lcms2
 lib/gtk/3
 lib/exiv2
 lib/secret
-lib/sqlite3
 lib/openexr
 lib/pugixml
+lib/sqlite/3
 lib/json/glib
 lib/jpeg/open
 lib/image/magick

@@ -11,9 +11,9 @@ lib/input
 lib/opengl
 lib/brotli
 lib/pcre/2
-lib/sqlite3
 lib/wayland
 lib/openssl
+lib/sqlite/3
 lib/freetype
 lib/harfbuzz
 lib/xkbcommon

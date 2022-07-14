@@ -12,7 +12,7 @@ lib/psl
 lib/xml2
 lib/glib
 lib/brotli
-lib/sqlite3
+lib/sqlite/3
 {% endblock %}
 
 {% block bld_tool %}

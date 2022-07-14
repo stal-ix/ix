@@ -14,7 +14,7 @@ lib/glib
 lib/alsa
 lib/boost
 lib/gnutls
-lib/sqlite3
+lib/sqlite/3
 lib/protobuf
 lib/gstreamer
 lib/qt/6/base

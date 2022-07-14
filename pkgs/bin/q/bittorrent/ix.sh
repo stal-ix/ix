@@ -10,8 +10,8 @@ lib/c
 lib/z
 lib/c++
 lib/boost
-lib/sqlite3
 lib/openssl
+lib/sqlite/3
 lib/execinfo
 lib/qt/6/deps
 lib/qt/6/base

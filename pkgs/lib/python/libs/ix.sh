@@ -9,10 +9,10 @@ lib/intl
 lib/gdbm
 lib/iconv
 lib/expat
-lib/bzip/2
 lib/curses
-lib/sqlite3
+lib/bzip/2
 lib/openssl
+lib/sqlite/3
 lib/mpdecimal
 lib/{{edit or 'edit'}}
 {% if darwin %}

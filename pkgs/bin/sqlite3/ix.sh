@@ -1,4 +1,4 @@
-{% extends '//lib/sqlite3/ix.sh' %}
+{% extends '//lib/sqlite/3/ix.sh' %}
 
 {% block bld_libs %}
 lib/z

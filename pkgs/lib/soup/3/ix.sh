@@ -11,7 +11,7 @@ lib/z
 lib/psl
 lib/glib
 lib/brotli
-lib/sqlite3
+lib/sqlite/3
 lib/ng/http/2
 {% endblock %}
 

@@ -20,9 +20,9 @@ lib/soup/3
 lib/nettle
 lib/secret
 lib/dazzle
-lib/sqlite3
 lib/archive
 lib/gtk/reg
+lib/sqlite/3
 lib/gtk/deps
 lib/json/glib
 lib/gdk/pixbuf

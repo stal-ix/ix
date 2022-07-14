@@ -26,9 +26,9 @@ lib/boost
 lib/gumbo
 lib/opengl
 lib/spdlog
-lib/sqlite3
 lib/openssl
 lib/mesa/gl
+lib/sqlite/3
 lib/freetype
 lib/mesa/egl
 lib/sdl/deps
