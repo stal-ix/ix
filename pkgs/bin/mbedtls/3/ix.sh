@@ -2,6 +2,6 @@
 
 {% block cmake_flags %}
 {{super()}}
-ENABLE_PROGRAMS=OFF
+ENABLE_PROGRAMS=ON
 ENABLE_TESTING=OFF
 {% endblock %}
