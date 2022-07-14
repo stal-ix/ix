@@ -9,7 +9,7 @@ sha:e4fd347843bd0772c4f48d6dde625b0b109b7a380ff15db21e97c11a4dcdf93f
 lib/c
 lib/event
 lib/curses
-lib/utf8proc
+lib/utf8/proc
 {% endblock %}
 
 {% block bld_tool %}

@@ -11,7 +11,7 @@ lib/tllist
 lib/pixman
 lib/freetype
 lib/harfbuzz
-lib/utf8proc
+lib/utf8/proc
 lib/fontconfig
 {% endblock %}
 

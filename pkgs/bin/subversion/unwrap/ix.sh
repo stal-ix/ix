@@ -15,7 +15,7 @@ lib/neon
 lib/expat
 lib/sqlite3
 lib/apr/util
-lib/utf8proc
+lib/utf8/proc
 {% endblock %}
 
 {% block bld_tool %}
