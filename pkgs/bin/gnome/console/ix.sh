@@ -1,8 +1,8 @@
 {% extends '//die/gnome.sh' %}
 
 {% block fetch %}
-https://gitlab.gnome.org/GNOME/console/-/archive/42.beta/console-42.beta.tar.bz2
-sha:87bf176d10e6167990682bb92a136e306a499f9953b3bb61675d071a0378b62b
+https://gitlab.gnome.org/GNOME/console/-/archive/42.2/console-42.2.tar.bz2
+sha:db9b2883483c138c2734d794da3a9809acafef39626f4632d536fe7dddc7ce14
 {% endblock %}
 
 {% block bld_libs %}
