@@ -112,7 +112,7 @@ EOF
 {% block install %}
 {{super()}}
 
-{% call hooks.wrap_xdg_binary('epiphany') %}
+{% call hooks.wrap_xdg_binary('epiphany', prefix='shepherd') %}
 export WEBKIT_EXEC_PATH="\$(dirname \$(which WebKitWebProcess))"
 {% endcall %}
 

@@ -11,7 +11,7 @@ done
 )
 {% endmacro %}
 
-{% macro wrap_xdg_binary(name) %} (
+{% macro wrap_xdg_binary(name, prefix='') %} (
 cd ${out}
 
 mkdir -p fix; cd fix
@@ -35,7 +35,7 @@ export XDG_DATA_DIRS="__realm__/share:${out}/share:\${XDG_DATA_DIRS}"
 {% if caller %}
 {{caller()}}
 {% endif %}
-exec "${out}/bin/{{name}}-bin" "\$@"
+exec {{prefix}} "${out}/bin/{{name}}-bin" "\$@"
 EOF
 
 chmod +x {{name}}
