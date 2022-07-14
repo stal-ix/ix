@@ -1,21 +1,14 @@
-{% extends '//die/c_std.sh' %}
-
-{% block step_unpack %}
-:
-{% endblock %}
+{% extends '//die/inline/program.sh' %}
 
 {% block bld_libs %}
 lib/c
 lib/linux
 {% endblock %}
 
-{% block build %}
-cc -o fixtty -x c - << EOF
-{% include 'main.c' %}
-EOF
+{% block name %}
+fixtty
 {% endblock %}
 
-{% block install %}
-mkdir ${out}/bin
-cp fixtty ${out}/bin/
+{% block sources %}
+main.c
 {% endblock %}

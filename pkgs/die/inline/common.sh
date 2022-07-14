@@ -1,7 +1,7 @@
 {% extends '//die/c_std.sh' %}
 
 {% block unpack %}
-: nothing to unpack
+mkdir src; cd src
 {% endblock %}
 
 {% set sources %}

@@ -24,7 +24,6 @@ bin/bash/lite/sh
 {% endblock %}
 
 {% block configure_flags %}
-#--disable-notify
 --disable-rss-notify
 --disable-gstreamer
 --with-openssl=yes
