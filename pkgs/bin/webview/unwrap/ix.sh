@@ -8,7 +8,7 @@ lib/web/kit/deps
 lib/{{allocator}}/trim(delay=5,bytes=10000000)
 {% endblock %}
 
-{% bloak name %}
+{% block name %}
 webview
 {% endblock %}
 
