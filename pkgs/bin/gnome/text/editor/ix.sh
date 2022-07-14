@@ -7,21 +7,19 @@ sha:446b026597245b8cb3176c64117c95fec113bede59b6935585f7df570d4609e9
 
 {% block bld_libs %}
 lib/c
+lib/icu
 lib/intl
 lib/glib
 lib/gtk/4
 lib/pcre/2
 lib/adwaita
+lib/enchant
 lib/gtk/deps
 lib/gtk/source/view
 {% endblock %}
 
 {% block bld_tool %}
 bld/gettext
-{% endblock %}
-
-{% block meson_flags %}
-enchant=disabled
 {% endblock %}
 
 {% block patch %}
