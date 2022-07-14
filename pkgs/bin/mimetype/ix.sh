@@ -1,4 +1,4 @@
-{% extends '//die/c_std.sh' %}
+{% extends '//die/inline/program.sh' %}
 
 {% block bld_libs %}
 lib/c
@@ -7,17 +7,10 @@ lib/glib
 lib/mimetype
 {% endblock %}
 
-{% block step_unpack %}
-:
+{% block name %}
+mimetype
 {% endblock %}
 
-{% block build %}
-cc -o mimetype -x c++ - << EOF
-{% include 'mt.cpp' %}
-EOF
-{% endblock %}
-
-{% block install %}
-mkdir ${out}/bin
-cp mimetype ${out}/bin/
+{% block sources %}
+mt.cpp
 {% endblock %}
