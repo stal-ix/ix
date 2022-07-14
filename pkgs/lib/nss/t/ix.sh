@@ -27,7 +27,7 @@ shut_up
 {% endblock %}
 
 {% block bld_tool %}
-bin/gyp
+bld/gyp
 bld/perl
 bld/bash
 bld/ninja

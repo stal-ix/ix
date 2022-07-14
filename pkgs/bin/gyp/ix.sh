@@ -9,11 +9,6 @@ sem:0349b69066c9347825a0d21ec315820e08c73d6d36622aade089ed189d4496a6
 bld/python/2
 {% endblock %}
 
-{% block run_deps %}
-# TODO(pg): bld/ run dep
-bld/python/2
-{% endblock %}
-
 {% block install %}
 cd ${out}; mkdir bin; cd bin; extract0 ${src}/*gz
 sed -e 's|python|python2|' -i gyp
