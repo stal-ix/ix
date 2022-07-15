@@ -1,8 +1,8 @@
 {% extends '//die/cmake.sh' %}
 
 {% block fetch %}
-https://inkscape.org/id/gallery/item/33449/inkscape-1.2.tar.xz
-sha:8d9b31142554945664edfefe2d6b55910a5099765f7176a71107c34f1dcde6ad
+https://inkscape.org/gallery/item/34673/inkscape-1.2.1.tar.xz
+sha:46ce7da0eba7ca4badc1db70e9cbb67e0adf9bb342687dc6e08b5ca21b8d4c1b
 {% endblock %}
 
 {% block bld_libs %}
@@ -20,6 +20,7 @@ lib/pango
 lib/cairo
 lib/boost
 lib/visio
+lib/gspell
 lib/soup/2
 lib/poppler
 lib/boehmgc
@@ -47,7 +48,6 @@ bld/glib/codegen
 WITH_X11=OFF
 BUILD_TESTING=OFF
 WITH_LIBWPG=OFF
-WITH_GSPELL=OFF
 {% endblock %}
 
 {% block setup %}
