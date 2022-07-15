@@ -17,22 +17,17 @@ ARCH={{target.arch}}
 FREESTANDING=yes
 {% endblock %}
 
-{% block build_flags %}
-wrap_cc
+{% block make_target %}
+libucontext.a
+libucontext.pc
 {% endblock %}
 
-{% block bld_tool %}
-bld/bash
-bld/scripts/wrapcc
+{% block make_install_target %}
+install_static
 {% endblock %}
 
 {% block patch %}
-sed -e 's|install.*POSIX.*;|echo 1;|' -i Makefile
-{% endblock %}
-
-{% block install %}
-{{super()}}
-cat << EOF > ${out}/include/ucontext.h
-{% include 'ucontext.h' %}
+base64 -d << EOF >> Makefile
+{% include 'Makefile/base64' %}
 EOF
 {% endblock %}

@@ -8,12 +8,15 @@ md5:fa317f16003e31e33a57ae7d888403e4
 {% block lib_deps %}
 lib/c
 lib/c++
+{% if linux %}
 lib/ucontext
+{% endif %}
 {% endblock %}
 
 {% block bld_libs %}
 {% if linux %}
 lib/linux
+lib/ucontext/posix
 {% endif %}
 {% endblock %}
 

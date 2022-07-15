@@ -5,7 +5,6 @@
 lib/{{purec}}
 {% else %}
 lib/dlfcn
-#lib/nsss
 lib/c/bare
 {% endif %}
 {% endblock %}

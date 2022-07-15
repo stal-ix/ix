@@ -1,5 +1,6 @@
 #pragma once
 
+#include <signal.h>
 #include <stddef.h>
 
 #if defined(__cplusplus)

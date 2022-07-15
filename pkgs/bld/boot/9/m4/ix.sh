@@ -1,4 +1,4 @@
-{% extends '//bin/m4/19/ix.sh' %}
+{% extends '//bin/m4/19/t/ix.sh' %}
 
 {% block bld_libs %}
 {% endblock %}

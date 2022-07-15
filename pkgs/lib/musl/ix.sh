@@ -23,7 +23,7 @@ ar q ${out}/lib/libc.a $(find obj -type f | sort)
 ranlib ${out}/lib/libc.a
 {% endblock %}
 
-{% block env_lib %}
+{% block env %}
 {{super()}}
 export CPPFLAGS="-D__STDC_ISO_10646__=201505L \${CPPFLAGS}"
 {% endblock %}
