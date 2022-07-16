@@ -127,16 +127,7 @@ class BaseRealm:
 
     @property
     def pkgs(self):
-        r = self.meta['pkgs']
-
-        try:
-            r['list']
-            return r
-        except TypeError:
-            return {
-                'list': r,
-                'flags': {},
-            }
+        return self.meta['pkgs']
 
     @property
     def links(self):
