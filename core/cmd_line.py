@@ -1,4 +1,5 @@
 import os
+import getpass
 
 import core.error as ce
 import core.config as cc
@@ -14,6 +15,7 @@ def config_from(ctx):
 
 def parse_pkgs_lst(pkgs):
     cur = {}
+    rlm = getpass.getuser()
 
     for p in pkgs:
         if p.startswith('--'):
@@ -25,6 +27,8 @@ def parse_pkgs_lst(pkgs):
                 k, v = p, '1'
 
             cur['flags'][k] = v
+        elif '/'not in p:
+            rlm = p
         else:
             if cur:
                 yield cur
@@ -39,6 +43,7 @@ def parse_pkgs_lst(pkgs):
                 op = '+'
 
             cur = {
+                'realm': rlm,
                 'name': p,
                 'op': op,
                 'flags': {},
