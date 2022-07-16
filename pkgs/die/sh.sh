@@ -5,7 +5,7 @@
 {% block prologue %}
 set -eu
 
-{% if setx %}
+{% if setx or verbose %}
 set -x
 {% endif %}
 

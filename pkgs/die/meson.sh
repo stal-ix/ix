@@ -41,6 +41,10 @@ EOF
 {% endblock %}
 
 {% block configure %}
+{% if help %}
+cat meson_options.txt
+exit 1
+{% else %}
 {% set command_args %}
 meson
 
@@ -75,6 +79,7 @@ b_lundef=false
 {% endset %}
 
 {{ix.fix_list(command_args)}}
+{% endif %}
 {% endblock %}
 
 {% block step_patch %}
