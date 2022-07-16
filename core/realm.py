@@ -174,9 +174,16 @@ def prepare_realm(mngr, name, pkgs):
     return RealmCtx(mngr, name, pkgs).prepare()
 
 
+def empty_meta():
+    return {
+        'pkgs': [],
+        'links': [],
+    }
+
+
 class NewRealm(BaseRealm):
     def __init__(self, mngr, name):
-        BaseRealm.__init__(self, mngr, name, {'pkgs': [], 'links': []})
+        BaseRealm.__init__(self, mngr, name, empty_meta())
 
 
 def new_realm(mngr, name):
