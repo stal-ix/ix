@@ -1,4 +1,4 @@
-{% extends '//die/make.sh' %}
+{% extends '//die/configure.sh' %}
 
 {% block fetch %}
 https://download.qemu.org/qemu-7.0.0.tar.xz
@@ -49,18 +49,18 @@ bld/pkg/config
 wrap_cc
 {% endblock %}
 
-{% block configure %}
-sh ./configure \
-    --prefix=${out} \
-    --libexecdir=${out}/bin/{{uniq_id}} \
-    --disable-plugins \
-    --audio-drv-list=sdl \
-    --with-coroutine=ucontext \
-    --target-list="x86_64-softmmu"
+{% block configure_all_flags %}
+--prefix=${out}
+--libexecdir=${out}/bin/{{uniq_id}}
+--disable-plugins
+--audio-drv-list=sdl
+--with-coroutine=ucontext
+--target-list="{{target.arch}}-softmmu"
 {% endblock %}
 
 {% block patch %}
 sed -e 's|SDL_VIDEODRIVER|SDL_VIDEODRIVER_XXX|' -i ui/sdl2.c
+sed -e 's|.*#.*error.*||' -i include/qemu/osdep.h
 
 find . -type f | while read l; do
     sed -e 's|-lstdc++|-lc|' -i "${l}"
