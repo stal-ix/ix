@@ -38,6 +38,14 @@ def flt(it):
                 yield p
 
 
+def flatten(flags, pkgs):
+    for p in pkgs:
+        yield {
+            'name': p['name'],
+            'flags': cu.dict_dict_update(flags, p.get('flags', {})),
+        }
+
+
 class RealmCtx:
     def __init__(self, mngr, name, pkgs):
         self.mngr = mngr
@@ -47,11 +55,14 @@ class RealmCtx:
         sd = self.mngr.config.store_dir
         uids = [x.uid for x in self.iter_all_build_depends()]
 
-        self.uid = cu.struct_hash([3, self.pkg_name, sd, self.build_script()] + uids)
+        self.uid = cu.struct_hash([4, self.pkg_name, sd, self.build_script()] + uids)
         self.out_dir = f'{sd}/{self.uid}-rlm-{self.pkg_name}'
 
+    def flat_pkgs(self):
+        return flatten(self.pkgs['flags'], self.pkgs['list'])
+
     def calc_all_runtime_depends(self):
-        for p in self.mngr.load_packages(self.pkgs):
+        for p in self.mngr.load_packages(self.flat_pkgs()):
             yield p
             yield from p.iter_all_runtime_depends()
 
@@ -116,7 +127,16 @@ class BaseRealm:
 
     @property
     def pkgs(self):
-        return self.meta['pkgs']
+        r = self.meta['pkgs']
+
+        try:
+            r['list']
+            return r
+        except TypeError:
+            return {
+                'list': r,
+                'flags': {},
+            }
 
     @property
     def links(self):
@@ -126,7 +146,12 @@ class BaseRealm:
         return prepare_realm(self.mngr, self.name, pkgs)
 
     def mut(self, patch):
-        return self.new_version(collapse_pkgs(self.pkgs + patch))
+        res = {
+            'flags': self.pkgs['flags'],
+            'list': collapse_pkgs(self.pkgs['list'] + patch)
+        }
+
+        return self.new_version(res)
 
     @property
     def managed_path(self):
@@ -176,7 +201,10 @@ def prepare_realm(mngr, name, pkgs):
 
 def empty_meta():
     return {
-        'pkgs': [],
+        'pkgs': {
+            'list': [],
+            'flags': {},
+        },
         'links': [],
     }
 
