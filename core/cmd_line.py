@@ -14,10 +14,9 @@ def config_from(ctx):
 
 
 def parse_pkgs_lst(pkgs):
-    cur = {}
-    rlm = getpass.getuser()
+    cur = None
 
-    for p in pkgs:
+    for p in [getpass.getuser()] + pkgs:
         if p.startswith('--'):
             p = p[2:]
 
@@ -28,7 +27,15 @@ def parse_pkgs_lst(pkgs):
 
             cur['flags'][k] = v
         elif '/'not in p:
-            rlm = p
+            if cur:
+                yield cur
+
+            cur = {
+                'realm': p,
+                'name': '',
+                'op': '+',
+                'flags': {},
+            }
         else:
             if cur:
                 yield cur
@@ -43,7 +50,7 @@ def parse_pkgs_lst(pkgs):
                 op = '+'
 
             cur = {
-                'realm': rlm,
+                'realm': cur['realm'],
                 'name': p,
                 'op': op,
                 'flags': {},

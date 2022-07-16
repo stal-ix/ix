@@ -27,6 +27,17 @@ def collapse_pkgs(pkgs):
     return [{'name': x, 'flags': y} for x, y in d.items()]
 
 
+def apply_patch(flags, pkgs, patch):
+    res = collapse_pkgs([{'name': '', 'flags': flags}] + pkgs + patch)
+
+    assert not res[0]['name']
+
+    return {
+        'flags': res[0]['flags'],
+        'list': res[1:]
+    }
+
+
 def flt(it):
     s = set()
 
@@ -55,7 +66,7 @@ class RealmCtx:
         sd = self.mngr.config.store_dir
         uids = [x.uid for x in self.iter_all_build_depends()]
 
-        self.uid = cu.struct_hash([4, self.pkg_name, sd, self.build_script()] + uids)
+        self.uid = cu.struct_hash([5, self.pkg_name, sd, self.build_script()] + uids)
         self.out_dir = f'{sd}/{self.uid}-rlm-{self.pkg_name}'
 
     def flat_pkgs(self):
@@ -128,12 +139,7 @@ class BaseRealm:
         return prepare_realm(self.mngr, self.name, pkgs)
 
     def mut(self, patch):
-        res = {
-            'flags': self.pkgs['flags'],
-            'list': collapse_pkgs(self.pkgs['list'] + patch)
-        }
-
-        return self.new_version(res)
+        return self.new_version(apply_patch(self.pkgs['flags'], self.pkgs['list'], patch))
 
     @property
     def managed_path(self):
