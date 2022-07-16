@@ -77,16 +77,13 @@ class Manager:
         except FileNotFoundError:
             raise er.Error(f'no such realm {name}')
 
-    def prepare_realm(self, name, pkgs):
-        return cr.prepare_realm(self, name, pkgs)
-
     def ensure_realm(self, name):
         try:
             return cr.load_realm(self, name)
         except FileNotFoundError as e:
             print(f'create new realm {name}')
 
-        return self.prepare_realm(name, [])
+        return cr.new_realm(self, name)
 
     def iter_gc_candidates(self):
         yield self.config.build_dir

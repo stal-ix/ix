@@ -108,17 +108,11 @@ class RealmCtx:
         return Realm(self.mngr, self.pkg_name, self.out_dir)
 
 
-class Realm:
-    def __init__(self, mngr, name, path):
-        self.name = name
-        self.path = path
+class BaseRealm:
+    def __init__(self, mngr, name, meta):
         self.mngr = mngr
-
-        with open(os.path.join(self.path, 'touch'), 'r') as f:
-            pass
-
-        with open(os.path.join(self.path, 'meta.json'), 'r') as f:
-            self.meta = json.loads(f.read())
+        self.name = name
+        self.meta = meta
 
     @property
     def pkgs(self):
@@ -138,6 +132,22 @@ class Realm:
     def managed_path(self):
         return realm_path(self.mngr, self.name)
 
+    def uninstall(self):
+        os.unlink(self.managed_path)
+
+
+class Realm(BaseRealm):
+    def __init__(self, mngr, name, path):
+        self.path = path
+
+        with open(os.path.join(path, 'touch'), 'r') as f:
+            pass
+
+        with open(os.path.join(path, 'meta.json'), 'r') as f:
+            meta = json.loads(f.read())
+
+        BaseRealm.__init__(self, mngr, name, meta)
+
     def install(self):
         path = self.managed_path
 
@@ -153,9 +163,6 @@ class Realm:
         os.rename(tmp, path)
         cu.sync()
 
-    def uninstall(self):
-        os.unlink(self.managed_path)
-
 
 def load_realm(mngr, name):
     return Realm(mngr, name, os.readlink(realm_path(mngr, name)))
@@ -165,3 +172,12 @@ def prepare_realm(mngr, name, pkgs):
     assert '/' not in name
 
     return RealmCtx(mngr, name, pkgs).prepare()
+
+
+class NewRealm(BaseRealm):
+    def __init__(self, mngr, name):
+        BaseRealm.__init__(self, mngr, name, {'pkgs': [], 'links': []})
+
+
+def new_realm(mngr, name):
+    return NewRealm(mngr, name)
