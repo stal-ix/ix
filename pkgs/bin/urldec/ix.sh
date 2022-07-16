@@ -1,67 +1,13 @@
-{% extends '//die/c_std.sh' %}
+{% extends '//die/inline/program.sh' %}
 
 {% block bld_libs %}
 lib/c
 {% endblock %}
 
-{% block step_unpack %}
-:
+{% block name %}
+urldec
 {% endblock %}
 
-{% block build %}
-cc -o urldec -x c - << EOF
-#include <stdio.h>
-#include <stdlib.h>
-
-static int decode1(const char* s) {
-    if (!*s) {
-        abort();
-    }
-
-    if (*s >= '0' && *s <= '9') {
-        return *s - '0';
-    }
-
-    if (*s >= 'a' && *s <= 'f') {
-        return 10 + (*s - 'a');
-    }
-
-    if (*s >= 'A' && *s <= 'F') {
-        return 10 + (*s - 'A');
-    }
-
-    abort();
-}
-
-static void out(unsigned char c) {
-    fwrite(&c, 1, 1, stdout);
-}
-
-static void decode(const char* s) {
-    for (; *s; ++s) {
-        if (*s == '%') {
-            int x1 = decode1(++s);
-            int x2 = decode1(++s);
-
-            out((unsigned)(x1 * 16 + x2));
-        } else {
-            out(*s);
-        }
-    }
-}
-
-int main(int argc, char** argv) {
-    for (++argv; *argv; ++argv) {
-        decode(*argv);
-        out('\n');
-    }
-
-    return 0;
-}
-EOF
-{% endblock %}
-
-{% block install %}
-mkdir ${out}/bin
-cp urldec ${out}/bin/
+{% block sources %}
+dec.c
 {% endblock %}
