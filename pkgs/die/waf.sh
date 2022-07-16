@@ -39,7 +39,12 @@ done
 
 {% block configure %}
 cp $(which waf) ./
+{% if help %}
+python3 waf --help
+exit 1
+{% else %}
 python3 waf configure {{ix.fix_list(waf_flags)}}
+{% endif %}
 {% endblock %}
 
 {% block build %}
