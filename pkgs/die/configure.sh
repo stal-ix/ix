@@ -32,4 +32,7 @@ configure
 
 {{ix.fix_list(command_args)}}
 {% endblock %}
+{% if help %}
+exit 1
+{% endif %}
 {% endblock %}
