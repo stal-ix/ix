@@ -1,5 +1,10 @@
 {% extends 'make.sh' %}
 
+{% block std_box %}
+bld/pkg/config
+{{super()}}
+{% endblock %}
+
 {% block configure %}
 {% block check_tools %}
 {% if not boot %}

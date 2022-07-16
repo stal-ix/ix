@@ -1,10 +1,5 @@
 {% extends 'configure.sh' %}
 
-{% block std_box %}
-bld/pkg/config
-{{super()}}
-{% endblock %}
-
 {% block step_patch %}
 {% block touch_yl %}
 find . -type f | grep '\.[yl]$' | while read l; do
