@@ -120,18 +120,9 @@ class RealmCtx:
 
 
 class BaseRealm:
-    def __init__(self, mngr, name, meta):
+    def __init__(self, mngr, name):
         self.mngr = mngr
         self.name = name
-        self.meta = meta
-
-    @property
-    def pkgs(self):
-        return self.meta['pkgs']
-
-    @property
-    def links(self):
-        return self.meta['links']
 
     def new_version(self, pkgs):
         return prepare_realm(self.mngr, self.name, pkgs)
@@ -152,17 +143,28 @@ class BaseRealm:
         os.unlink(self.managed_path)
 
 
+def read_realm(path):
+    with open(os.path.join(path, 'touch'), 'r') as f:
+        pass
+
+    with open(os.path.join(path, 'meta.json'), 'r') as f:
+        return json.loads(f.read())
+
+
 class Realm(BaseRealm):
     def __init__(self, mngr, name, path):
+        BaseRealm.__init__(self, mngr, name)
+
         self.path = path
+        self.meta = read_realm(self.path)
 
-        with open(os.path.join(path, 'touch'), 'r') as f:
-            pass
+    @property
+    def pkgs(self):
+        return self.meta['pkgs']
 
-        with open(os.path.join(path, 'meta.json'), 'r') as f:
-            meta = json.loads(f.read())
-
-        BaseRealm.__init__(self, mngr, name, meta)
+    @property
+    def links(self):
+        return self.meta['links']
 
     def install(self):
         path = self.managed_path
@@ -190,19 +192,17 @@ def prepare_realm(mngr, name, pkgs):
     return RealmCtx(mngr, name, pkgs).prepare()
 
 
-def empty_meta():
-    return {
-        'pkgs': {
+class NewRealm(BaseRealm):
+    @property
+    def pkgs(self):
+        return {
             'list': [],
             'flags': {},
-        },
-        'links': [],
-    }
+        }
 
-
-class NewRealm(BaseRealm):
-    def __init__(self, mngr, name):
-        BaseRealm.__init__(self, mngr, name, empty_meta())
+    @property
+    def links(self):
+        return []
 
 
 def new_realm(mngr, name):
