@@ -1,8 +1,6 @@
 {% extends '//die/cmake.sh' %}
 
 {% block fetch %}
-#https://github.com/WerWolv/ImHex/releases/download/v1.19.2/Full.Sources.tar.gz
-#sha:0c12d0dfb692414b38a8556c312db7f72ccdfccb4b82b798566e427f0590e73e
 https://github.com/WerWolv/ImHex/releases/download/v1.19.1/Full.Sources.tar.gz
 sha:b6f1195986402bae72c3776fb092ebfe6adf4365939e1744b29d29e49039042e
 {% endblock %}
@@ -13,7 +11,7 @@ lib/c++
 lib/fmt
 lib/dbus
 lib/curl
-lib/magic
+lib/yara
 lib/gl/fw
 lib/mesa/gl
 lib/freetype
@@ -46,13 +44,12 @@ done
 {% endblock %}
 
 {% block cmake_flags %}
-USE_SYSTEM_NLOHMANN_JSON=ON
+IMHEX_OFFLINE_BUILD=ON
 USE_SYSTEM_FMT=ON
 USE_SYSTEM_CURL=ON
+USE_SYSTEM_YARA=ON
 USE_SYSTEM_CAPSTONE=ON
-IMHEX_OFFLINE_BUILD=ON
-USE_SYSTEM_LLVM=OFF
-USE_SYSTEM_YARA=OFF
+USE_SYSTEM_NLOHMANN_JSON=ON
 {% endblock %}
 
 {% block build_flags %}
