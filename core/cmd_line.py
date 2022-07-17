@@ -41,14 +41,14 @@ def tok(p):
 
 def lex(pkgs):
     rlm = getpass.getuser()
-    pkg = ''
+    pkg = None
 
     for p in pkgs:
         kind, op, v = tok(p)
 
         if kind == 'r':
             rlm = v
-            pkg = ''
+            pkg = None
 
             yield ('r', op, {'r': v})
         elif kind == 'p':

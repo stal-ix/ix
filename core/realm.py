@@ -18,6 +18,7 @@ def struct(ops):
 
     for kind, op, v in ops:
         if kind == 'r':
+            # TODO(pg): support remove of realm
             pass
         elif kind == 'p':
             p = v['p']
@@ -50,7 +51,7 @@ def destruct(pkgs):
 
 
 def apply_patch(flags, pkgs, patch):
-    res = struct(list(destruct([{'name': '', 'flags': flags}] + pkgs)) + patch)
+    res = struct(list(destruct([{'name': None, 'flags': flags}] + pkgs)) + patch)
 
     assert not res[0]['name']
 
