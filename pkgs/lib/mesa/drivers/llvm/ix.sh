@@ -1,4 +1,4 @@
-{% extends '//lib/mesa/drivers/t/valve/ix.sh' %}
+{% extends '//lib/mesa/drivers/valve/ix.sh' %}
 
 {% block lib_deps %}
 {{super()}}

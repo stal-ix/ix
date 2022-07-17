@@ -1,8 +1,7 @@
 {% extends '//die/hub.sh' %}
 
 {% block lib_deps %}
-lib/mesa/egl
-lib/mesa/drivers/t/valve(vulkan=amd,opengl=zink)
-lib/mesa/drivers/t/opengl(driver=zink)
-lib/mesa/drivers/t/vulkan(driver=radeon)
+lib/mesa/drivers/valve(vulkan=amd,opengl=zink)
+lib/mesa/drivers/opengl(driver=zink)
+lib/mesa/drivers/vulkan(driver=radeon)
 {% endblock %}
