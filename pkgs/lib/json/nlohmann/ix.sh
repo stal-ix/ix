@@ -13,3 +13,11 @@ lib/c++
 {% block cmake_flags %}
 JSON_BuildTests=OFF
 {% endblock %}
+
+{% block install %}
+{{super()}}
+cat << EOF > ${out}/include/nlohmann/json_fwd.hpp
+#pragma once
+#include <nlohmann/json.hpp>
+EOF
+{% endblock %}
