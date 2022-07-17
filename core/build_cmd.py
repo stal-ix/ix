@@ -14,7 +14,7 @@ def parse_kind(n):
 def cli_build(ctx):
     config, pkgs = cc.parse_pkgs(ctx)
 
-    print(pkgs)
+    # TODO(pg): fix parsing
     pkgs = pkgs[1:]
 
     for p in pkgs:
