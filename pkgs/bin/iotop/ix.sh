@@ -14,3 +14,8 @@ lib/curses
 {% block bld_tool %}
 bld/pkg/config
 {% endblock %}
+
+{% block install %}
+{{super()}}
+mv ${out}/sbin ${out}/bin
+{% endblock %}
