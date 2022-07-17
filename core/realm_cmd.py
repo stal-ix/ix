@@ -4,25 +4,27 @@ import core.cmd_line as cc
 
 
 def group_realms(l):
-    res = {}
+    d = []
 
     for x in l:
-        r = x['realm']
+        kind, op, v = x
 
-        if r in res:
-            res[r].append(x)
-        else:
-            res[r] = [x]
+        if d and d[-1][2]['r'] != v['r']:
+            yield d
+            d = []
 
-    return res
+        d.append(x)
+
+    if d:
+        yield d
 
 
 def cli_mut(ctx):
     mngr = cm.Manager(cc.config_from(ctx))
 
     if args := ctx['args']:
-        for realm, diff in group_realms(cc.parse_pkgs_lst(args)).items():
-            mngr.ensure_realm(realm).mut(diff).install()
+        for d in group_realms(cc.lex(args)):
+            mngr.ensure_realm(d[0][2]['r']).mut(d).install()
     else:
         for r in mngr.iter_realms():
             r.mut([]).install()

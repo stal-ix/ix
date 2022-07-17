@@ -1,8 +1,8 @@
 {% extends '//die/make.sh' %}
 
 {% block fetch %}
-https://sndio.org/sndio-1.8.1.tar.gz
-sha:f81d37189e072cb4804ac98a059d74f963f69e9945eaff3d0d6a2f98d71a6321
+https://sndio.org/sndio-1.9.0.tar.gz
+sha:f30826fc9c07e369d3924d5fcedf6a0a53c0df4ae1f5ab50fe9cf280540f699a
 {% endblock %}
 
 {% block lib_deps %}

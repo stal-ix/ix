@@ -13,52 +13,47 @@ def config_from(ctx):
     return cc.Config(binary, where, root)
 
 
-def parse_pkgs_lst(pkgs):
-    cur = None
+def tok(p):
+    if p.startswith('--'):
+        p = p[2:]
 
-    for p in [getpass.getuser()] + pkgs:
-        if p.startswith('--'):
-            p = p[2:]
-
-            if '=' in p:
-                k, v = p.split('=', maxsplit=1)
-            else:
-                k, v = p, '1'
-
-            cur['flags'][k] = v
-        elif '/'not in p:
-            if cur:
-                yield cur
-
-            cur = {
-                'realm': p,
-                'name': '',
-                'op': '+',
-                'flags': {},
-            }
+        if '=' in p:
+            k, v = p.split('=', maxsplit=1)
         else:
-            if cur:
-                yield cur
+            k, v = p, '1'
 
-            if p[0] == '+':
-                op = '+'
-                p = p[1:]
-            elif p[0] == '-':
-                op = '-'
-                p = p[1:]
-            else:
-                op = '+'
+        return ('f', '+', (k, v))
 
-            cur = {
-                'realm': cur['realm'],
-                'name': p,
-                'op': op,
-                'flags': {},
-            }
+    if p[0] == '+':
+        op = '+'
+        p = p[1:]
+    elif p[0] == '-':
+        op = '-'
+        p = p[1:]
+    else:
+        op = '+'
 
-    if cur:
-        yield cur
+    if '/'in p:
+        return ('p', op, p)
+
+    return ('r', op, p)
 
 
-def parse_pkgs(ctx):
-    return config_from(ctx), list(parse_pkgs_lst(ctx['args']))
+def lex(pkgs):
+    rlm = getpass.getuser()
+    pkg = ''
+
+    for p in pkgs:
+        kind, op, v = tok(p)
+
+        if kind == 'r':
+            rlm = v
+            pkg = ''
+
+            yield ('r', op, {'r': v})
+        elif kind == 'p':
+            pkg = v
+
+            yield ('p', op, {'r': rlm, 'p': v})
+        elif kind == 'f':
+            yield ('f', op, {'r': rlm, 'p': pkg, 'f': v})

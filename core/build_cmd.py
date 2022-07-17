@@ -1,6 +1,7 @@
 import core.gg as cg
-import core.cmd_line as cc
+import core.realm as cr
 import core.manager as cm
+import core.cmd_line as cc
 
 
 def parse_kind(n):
@@ -12,10 +13,8 @@ def parse_kind(n):
 
 
 def cli_build(ctx):
-    config, pkgs = cc.parse_pkgs(ctx)
-
-    # TODO(pg): fix parsing
-    pkgs = pkgs[1:]
+    config = cc.config_from(ctx)
+    pkgs = cr.struct(cc.lex(ctx['args']))
 
     for p in pkgs:
         f = p['flags']

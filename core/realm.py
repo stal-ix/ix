@@ -13,22 +13,44 @@ def realm_path(mngr, name):
     return os.path.join(mngr.config.realm_dir, name)
 
 
-def collapse_pkgs(pkgs):
+def struct(ops):
     d = {}
 
-    for p in pkgs:
-        n = p['name']
+    for kind, op, v in ops:
+        if kind == 'r':
+            pass
+        elif kind == 'p':
+            p = v['p']
 
-        if p.get('op', '+') == '+':
-            d[n] = cu.dict_dict_update(d.get(n, {}), p.get('flags', {}))
-        else:
-            d.pop(n)
+            if op == '+':
+                if p not in d:
+                    d[p] = dict()
+            else:
+                d.pop(p)
+        elif kind == 'f':
+            p = v['p']
+            fk, fv = v['f']
+
+            if op == '+':
+                d[p][fk] = fv
+            else:
+                d[p].pop(fk)
 
     return [{'name': x, 'flags': y} for x, y in d.items()]
 
 
+def destruct(pkgs):
+    for x in pkgs:
+        p = x['name']
+
+        yield ('p', '+', {'p': p})
+
+        for x in x['flags'].items():
+            yield ('f', '+', {'p': p, 'f': x})
+
+
 def apply_patch(flags, pkgs, patch):
-    res = collapse_pkgs([{'name': '', 'flags': flags}] + pkgs + patch)
+    res = struct(list(destruct([{'name': '', 'flags': flags}] + pkgs)) + patch)
 
     assert not res[0]['name']
 
