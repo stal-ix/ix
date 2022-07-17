@@ -22,6 +22,9 @@ def tok(p):
         else:
             k, v = p, '1'
 
+        if v == '-':
+            return ('f', '-', (k, v))
+
         return ('f', '+', (k, v))
 
     if p[0] == '+':
