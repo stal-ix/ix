@@ -1,8 +1,8 @@
-{% extends '//die/autohell.sh' %}
+{% extends '//die/configure.sh' %}
 
 {% block fetch %}
-https://downloads.scummvm.org/frs/scummvm/2.5.1/scummvm-2.5.1.tar.xz
-sha:9fd8db38e4456144bf8c34dacdf7f204e75f18e8e448ec01ce08ce826a035f01
+https://downloads.scummvm.org/frs/scummvm/2.6.0/scummvm-2.6.0.tar.xz
+sha:1c1438e8d0c9d9e15fd129e2e9e2d2227715bd7559f83b2e7208f5d8704ffc17
 {% endblock %}
 
 {% block bld_libs %}
@@ -11,6 +11,7 @@ lib/z
 lib/a52
 lib/c++
 lib/png
+lib/mad
 lib/curl
 lib/jpeg
 lib/faad2
@@ -25,22 +26,22 @@ lib/shim/x11
 lib/xiph/ogg
 lib/xiph/flac
 lib/xiph/vorbis
+lib/xiph/theora
 {% endblock %}
 
 {% block bld_tool %}
 bin/nasm
 bld/elfutils
+bld/scripts/fakegit
 {% endblock %}
 
 {% block c_rename_symbol %}
 crc_finalize
 {% endblock %}
 
-{% block configure %}
-sh ./configure \
-    --prefix=${out}        \
-    --enable-static        \
-    --opengl-mode=gles2    \
-    --enable-verbose-build \
-    --force-opengl-game-es2
+{% block configure_all_flags %}
+--prefix=${out}
+--enable-static
+--opengl-mode=gles2
+--enable-verbose-build
 {% endblock %}

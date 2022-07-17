@@ -14,6 +14,9 @@ def parse_kind(n):
 def cli_build(ctx):
     config, pkgs = cc.parse_pkgs(ctx)
 
+    print(pkgs)
+    pkgs = pkgs[1:]
+
     for p in pkgs:
         f = p['flags']
 

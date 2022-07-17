@@ -44,7 +44,8 @@ class Env(jinja2.Environment, jinja2.BaseLoader):
                 self.cache[name] = self.calc_source(name)
 
     def calc_source(self, name):
-        print(name)
+        # print(name)
+
         if name.startswith('//'):
             return self.source(name[2:])
 
