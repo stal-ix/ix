@@ -57,3 +57,8 @@ USE_SYSTEM_NLOHMANN_JSON=ON
 shut_up
 wrap_cc
 {% endblock %}
+
+{% block build %}
+{{super()}}
+>${tmp}/obj/plugins/builtin.hexplug
+{% endblock %}

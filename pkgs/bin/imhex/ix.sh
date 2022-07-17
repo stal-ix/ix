@@ -3,8 +3,6 @@
 {% block build %}
 {{super()}}
 
->${tmp}/obj/plugins/builtin.hexplug
-
 dl_stubs << EOF >> stubs.c
 builtin initializePlugin     initializePlugin
 builtin getPluginName        getPluginName
