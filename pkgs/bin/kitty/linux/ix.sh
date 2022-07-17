@@ -5,10 +5,10 @@ lib/dbus
 lib/mesa
 lib/rsync
 lib/wayland
+lib/glfw/deps
 lib/xkbcommon
 lib/fontconfig
 {{super()}}
-lib/gl/fw/deps
 {% endblock %}
 
 {% block bld_tool %}

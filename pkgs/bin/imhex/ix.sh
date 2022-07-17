@@ -12,12 +12,12 @@ lib/fmt
 lib/dbus
 lib/curl
 lib/yara
-lib/gl/fw
+lib/glfw
 lib/mesa/gl
 lib/freetype
 lib/mbedtls/3
 lib/cap/stone
-lib/gl/fw/deps
+lib/glfw/deps
 lib/python/3/10
 lib/json/nlohmann
 {% endblock %}
