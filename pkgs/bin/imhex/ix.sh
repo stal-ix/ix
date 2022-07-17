@@ -18,6 +18,7 @@ lib/gl/fw
 lib/mesa/gl
 lib/freetype
 lib/mbedtls/3
+lib/cap/stone
 lib/gl/fw/deps
 lib/python/3/10
 lib/json/nlohmann
@@ -48,10 +49,10 @@ done
 USE_SYSTEM_NLOHMANN_JSON=ON
 USE_SYSTEM_FMT=ON
 USE_SYSTEM_CURL=ON
+USE_SYSTEM_CAPSTONE=ON
+IMHEX_OFFLINE_BUILD=ON
 USE_SYSTEM_LLVM=OFF
 USE_SYSTEM_YARA=OFF
-USE_SYSTEM_CAPSTONE=OFF
-IMHEX_OFFLINE_BUILD=ON
 {% endblock %}
 
 {% block build_flags %}
