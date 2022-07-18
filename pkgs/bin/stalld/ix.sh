@@ -1,8 +1,8 @@
 {% extends '//die/make.sh' %}
 
 {% block fetch %}
-https://git.kernel.org/pub/scm/utils/stalld/stalld.git/snapshot/stalld-1.15.0.tar.gz
-sha:94cd22bbbb2b69044dbcfb2f1176b6d9a6f0dbc3b09f25c3d1f253644c60ec62
+https://git.kernel.org/pub/scm/utils/stalld/stalld.git/snapshot/stalld-1.17.0.tar.gz
+sha:07ee5cb8a8277edfbf15a77fec5184493f6ebb5dad9c25b13e11f2df78ea3d07
 {% endblock %}
 
 {% block bld_libs %}
