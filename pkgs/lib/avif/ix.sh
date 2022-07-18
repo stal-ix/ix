@@ -9,6 +9,7 @@ sed -e 's|.*exec_prefix.*||' -i ${out}/lib/pkgconfig/libavif.pc
 {{super()}}
 # hack to install cmake/ files
 VCPKG_TARGET_TRIPLET=ON
+AVIF_BUILD_APPS=OFF
 {% endblock %}
 
 {% block test %}

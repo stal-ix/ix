@@ -19,8 +19,5 @@ lib/svt/av1
 {% block cmake_flags %}
 AVIF_CODEC_AOM=ON
 AVIF_BUILD_APPS=ON
-{% endblock %}
-
-{% block build_flags %}
-shut_up
+AVIF_ENABLE_WERROR=OFF
 {% endblock %}
