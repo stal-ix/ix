@@ -27,6 +27,8 @@ lib/ucontext/posix
 sed -e 's|/tmp/|/var/tmp/|g' -i lib/replace/wscript
 {% endblock %}
 
+{# need strange perl module #}
+
 {% block bld_tool %}
 bld/perl
 bld/flex
