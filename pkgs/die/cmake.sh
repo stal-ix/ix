@@ -25,12 +25,6 @@ export SPP=$(add_suffix ${IX_B_DIR} bin)
 {% endblock %}
 
 {% block configure %}
-{% if help %}
-find . -type f -name CMakeLists.txt | while read l; do
-    cat ${l} | grep 'set('
-done
-exit 1
-{% else %}
 {% set command_args %}
 {% block cmake_binary %}
 cmake
@@ -83,6 +77,9 @@ BUILD_SHARED_LIBS=OFF
 {% endset %}
 
 {{ix.fix_list(command_args)}}
+{% if help %}
+cmake -LA {{ninja_build_dir}} | grep -v 'CMAKE_'
+exit 1
 {% endif %}
 {% endblock %}
 
