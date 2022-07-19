@@ -18,6 +18,10 @@ bin/gzip
 bld/pkg/config
 {% endblock %}
 
+{% block make_flags %}
+confdir=${out}/share
+{% endblock %}
+
 {% block install %}
 {{super()}}
 {{hooks.wrap_xdg_binary('iwgtk')}}
