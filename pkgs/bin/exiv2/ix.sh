@@ -1,4 +1,4 @@
-{% extends '//lib/exiv2/ix.sh' %}
+{% extends '//lib/exiv2/t/ix.sh' %}
 
 {% block bld_libs %}
 lib/ssh
