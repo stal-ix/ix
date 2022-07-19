@@ -18,7 +18,7 @@ source_env() {
 }
 
 fast_rm() (
-    mv ${1} /ix/trash/ || rm -rf ${1}
+    (mv ${1} /ix/trash/ || rm -rf ${1}) 2>/dev/null
 )
 
 {% block functions %}
