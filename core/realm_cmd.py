@@ -35,7 +35,7 @@ def cli_list(ctx):
 
     if ctx['args']:
         for a in ctx['args']:
-            for x in mngr.load_realm(a).pkgs:
+            for x in mngr.load_realm(a).pkgs['list']:
                 print(x)
     else:
         for r in mngr.list_realms():
