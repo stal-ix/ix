@@ -1,4 +1,4 @@
-{% extends '//lib/fribidi/t/ix.sh' %}
+{% extends 't/ix.sh' %}
 
 {% block meson_flags %}
 bin=false
