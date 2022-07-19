@@ -6,10 +6,12 @@ md5:f3c06704e536dcca1814b16dbcdc4a36
 {% endblock %}
 
 {% block bld_tool %}
-bld/tar
+{% block go_boot %}
 bin/go/1/4
-bld/python
+{% endblock %}
+bld/tar
 bld/perl
+bld/python
 {{super()}}
 {% endblock %}
 
@@ -22,16 +24,15 @@ EOF
 chmod +x xcrun
 {% endblock %}
 
-{% block go_cflags %}
-export CGO_ENABLED=0
-{% endblock %}
+{% block build %}
+cp -R ${GOROOT_BOOTSTRAP} ${tmp}/boot
 
-{% block patch %}
-sed -e 's/TestMachoIssue32233/skipTestMachoIssue32233/' -i cmd/link/internal/ld/dwarf_test.go
-sed -e 's/TestCurrent/testCurrent/' -i os/user/user_test.go
-sed -e 's/TestLookup/testLookup/' -i os/user/user_test.go
-{% endblock %}
+find ${tmp}/boot | while read l; do
+    chmod +rwx ${l}
+done
 
-{% block bld_libs %}
-lib/c
+export GOROOT=${tmp}/boot
+export GOROOT_BOOTSTRAP=${tmp}/boot
+
+{{super()}}
 {% endblock %}

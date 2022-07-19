@@ -10,43 +10,24 @@ bld/pkg/config
 cd src
 {% endblock %}
 
-{% block setup %}
-export GOROOT_FINAL="${out}"
-{% block go_cflags %}
+{% block bld_libs %}
+lib/c
 {% endblock %}
+
+{% block setup %}
+export CGO_ENABLED=0
+export GOROOT_FINAL="${out}"
 {% endblock %}
 
 {% block build %}
-bash ./all.bash
+bash ./make.bash -v
 {% endblock %}
 
 {% block install %}
-cd .. && mv * ${out}/
+cd ..
+cp -a bin pkg src lib misc api test ${out}/
 {% endblock %}
 
 {% block env %}
-export GOROOT_BOOTSTRAP="${GOROOT_FINAL}"
-{% endblock %}
-
-{% block test %}
-export GOPATH="${PWD}"
-export GOCACHE="${PWD}"
-export GOROOT="${GOROOT_FINAL}"
-export PATH="${GOROOT}/bin:${PATH}"
-
-cat << EOF > hello.go
-package main
-
-import "fmt"
-
-func main() {
-    fmt.Printf("hello, world\n")
-}
-EOF
-
-go run hello.go
-{% endblock %}
-
-{% block bld_libs %}
-lib/c
+export GOROOT_BOOTSTRAP="${out}"
 {% endblock %}
