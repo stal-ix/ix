@@ -1,4 +1,4 @@
-{% extends '//lib/icu/t/lib/ix.sh' %}
+{% extends 't/lib/ix.sh' %}
 
 {% block install %}
 {{super()}}
