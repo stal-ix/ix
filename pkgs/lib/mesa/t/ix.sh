@@ -3,8 +3,8 @@
 {% block fetch %}
 https://archive.mesa3d.org/mesa-22.0.4.tar.xz
 sha:c7971f58fa826e474617cda53250c6600fce60994b9fac5b641522e21f471ed4
-#https://archive.mesa3d.org/mesa-22.1.3.tar.xz
-#sha:b98f32ba7aa2a1ff5725fb36eb999c693079f0ca16f70aa2f103e2b6c3f093e3
+#https://archive.mesa3d.org/mesa-22.1.4.tar.xz
+#sha:670d8cbe8b72902a45ea2da68a9da4dc4a5d99c5953a926177adbce1b1640b76
 {% endblock %}
 
 {% block lib_deps %}

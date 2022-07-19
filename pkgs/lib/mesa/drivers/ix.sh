@@ -2,5 +2,5 @@
 
 {% block lib_deps %}
 lib/mesa/egl
-lib/mesa/drivers/{{mesa_driver or 'radv'}}
+lib/mesa/drivers/{{mesa_driver or 'soft'}}
 {% endblock %}
