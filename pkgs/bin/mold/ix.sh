@@ -24,6 +24,7 @@ bld/pkg/config
 SYSTEM_TBB=1
 SYSTEM_XXHASH=1
 SYSTEM_MIMALLOC=1
+LIBEXECDIR=${out}/bin/{{uniq_id}}
 {% endblock %}
 
 {% block make_target %}
