@@ -8,3 +8,7 @@ sha:a1b21deafc774063b40384757b2b70e8f3be8ba685fa5544a81393c99609764a
 {% block lib_deps %}
 lib/c/naked
 {% endblock %}
+
+{% block cmake_flags %}
+enable_docs=OFF
+{% endblock %}
