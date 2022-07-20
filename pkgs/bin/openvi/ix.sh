@@ -1,8 +1,8 @@
 {% extends '//die/make.sh' %}
 
 {% block fetch %}
-https://github.com/johnsonjh/OpenVi/archive/refs/tags/7.0.11.tar.gz
-sha:d1bb1bf56bbc644ad9f95ed1b5a3ac4e46f0808a7e983f0967ca519afa7edff1
+https://github.com/johnsonjh/OpenVi/archive/refs/tags/7.1.17.tar.gz
+sha:02974603f1cd3ba5727fd40f69f97925510d8f30c1ff3041adbc3e54e11f6d5f
 {% endblock %}
 
 {% block bld_libs %}
@@ -17,13 +17,13 @@ bld/perl
 
 {% block make_flags %}
 PAWK=mawk
+CHOWN=echo
 {% endblock %}
 
 {% block patch %}
+sed -e "s|/var/tmp|${TMPDIR}|g" -i GNUmakefile
+
 find . -type f | while read l; do
-    sed -e "s|/var/tmp|${TMPDIR}|g" \
-        -e "s|/tmp/vi|vi|g" \
-        -e 's|chown|echo|'  \
-        -i ${l}
+    sed -e "s|/tmp/vi.X|vi.X|g" -i ${l}
 done
 {% endblock %}
