@@ -9,6 +9,7 @@ bin/go
 
 {% block step_setup %}
 export GOCACHE=${tmp}/cgo
+export GOMODCACHE=${tmp}/gmc
 export CPPFLAGS="-fno-color-diagnostics ${CPPFLAGS}"
 {{super()}}
 {% endblock %}

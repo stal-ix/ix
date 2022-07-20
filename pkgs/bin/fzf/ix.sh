@@ -9,11 +9,6 @@ sha:a3428f510b7136e39104a002f19b2e563090496cb5205fa2e4c5967d34a20124
 lib/c
 {% endblock %}
 
-{% block build %}
-export GOMODCACHE=${tmp}/gmc
-{{super()}}
-{% endblock %}
-
 {% block install %}
 mkdir ${out}/bin
 cp fzf ${out}/bin/
