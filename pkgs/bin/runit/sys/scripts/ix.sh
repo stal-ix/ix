@@ -40,6 +40,7 @@ cat << EOF > 00-mount-ro.sh
 # mount ro
 mount -t devtmpfs devtmpfs /dev
 mount -t sysfs sysfs /sys
+mount -t debugfs none /sys/kernel/debug
 mount -t proc proc /proc
 mount -t cgroup2 none /sys/fs/cgroup
 mkdir /dev/pts /dev/shm

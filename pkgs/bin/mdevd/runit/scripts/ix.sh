@@ -14,6 +14,7 @@ mkdir -p runit/1.d; cd runit/1.d
 cat << EOF > 00-mount-ro.sh
 # mount ro
 mount -t sysfs sysfs /sys
+mount -t debugfs none /sys/kernel/debug
 mount -t proc proc /proc
 mount -t cgroup2 none /sys/fs/cgroup
 mount -t tmpfs tmpfs /dev
