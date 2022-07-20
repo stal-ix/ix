@@ -35,6 +35,10 @@ cd ..
 cp -a bin pkg src lib misc api test ${out}/
 {% endblock %}
 
+{% block postinstall %}
+:
+{% endblock %}
+
 {% block env %}
 export GOROOT_BOOTSTRAP="${out}"
 {% endblock %}
