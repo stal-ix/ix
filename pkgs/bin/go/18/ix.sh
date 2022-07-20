@@ -1,16 +1,14 @@
-{% extends '//bin/go/t/ix.sh' %}
+{% extends '//bin/go/4/ix.sh' %}
 
 {% block fetch %}
-https://golang.org/dl/go1.16.5.src.tar.gz
-md5:f3c06704e536dcca1814b16dbcdc4a36
+https://github.com/golang/go/archive/refs/tags/go1.18.4.tar.gz
+sha:283442519c28f5c24dd8c849ebe0570a3ad92cd94610378b33b2053f60391fdf
 {% endblock %}
 
 {% block bld_tool %}
-{% block go_boot %}
-bin/go/1/4
-{% endblock %}
 bld/tar
 bld/perl
+bin/go/4
 bld/python
 {{super()}}
 {% endblock %}
@@ -31,6 +29,7 @@ find ${tmp}/boot | while read l; do
     chmod +rwx ${l}
 done
 
+export GOCACHE=${tmp}
 export GOROOT=${tmp}/boot
 export GOROOT_BOOTSTRAP=${tmp}/boot
 
