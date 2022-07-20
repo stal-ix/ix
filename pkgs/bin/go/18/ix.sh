@@ -5,6 +5,9 @@ https://github.com/golang/go/archive/refs/tags/go1.18.4.tar.gz
 sha:283442519c28f5c24dd8c849ebe0570a3ad92cd94610378b33b2053f60391fdf
 {% endblock %}
 
+{% block bld_libs %}
+{% endblock %}
+
 {% block bld_tool %}
 bld/tar
 bld/perl
@@ -48,11 +51,4 @@ export GOROOT=${tmp}/boot
 export GOROOT_BOOTSTRAP=${tmp}/boot
 
 {{super()}}
-{% endblock %}
-
-{% block cgo %}
-{% endblock %}
-
-{% block setup %}
-export CPPFLAGS="-fno-color-diagnostics ${CPPFLAGS}"
 {% endblock %}
