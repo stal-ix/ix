@@ -16,3 +16,9 @@ bin/gperf
 {% block c_rename_symbol %}
 parse_boolean
 {% endblock %}
+
+{% block install %}
+{{super()}}
+cd ${out}/include
+ln -s basu systemd
+{% endblock %}
