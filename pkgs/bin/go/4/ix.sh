@@ -20,7 +20,9 @@ lib/c
 {% endblock %}
 
 {% block setup %}
+{% block cgo %}
 export CGO_ENABLED=0
+{% endblock %}
 export GOROOT_FINAL="${out}"
 {% endblock %}
 

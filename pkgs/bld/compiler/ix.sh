@@ -1,5 +1,9 @@
 {% extends '//die/hub.sh' %}
 
+{% block ind_deps %}
+bin/clang/lib
+{% endblock %}
+
 {% block run_deps %}
-bin/clang(std_env=bld/boot/8/env/cxx,opt=fast)
+bld/compiler/unwrap
 {% endblock %}

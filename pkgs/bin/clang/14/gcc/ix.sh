@@ -1,5 +1,9 @@
 {% extends '//bin/clang/14/ix.sh' %}
 
+{% block ind_deps %}
+bin/clang/lib
+{% endblock %}
+
 {% block patch %}
 sed -e 's|__SSE2__|__NOPE__|g' -i clang/lib/Lex/Lexer.cpp
 {{super()}}

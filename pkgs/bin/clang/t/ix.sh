@@ -12,10 +12,6 @@ lib/z
 lib/c++
 {% endblock %}
 
-{% block ind_deps %}
-bin/clang/lib
-{% endblock %}
-
 {% block cmake_flags %}
 {{super()}}
 LLVM_ENABLE_TERMINFO=OFF
