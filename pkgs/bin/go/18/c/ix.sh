@@ -16,3 +16,8 @@ bin/go/18
 {{super()}}
 export CPPFLAGS="-fno-color-diagnostics ${CPPFLAGS}"
 {% endblock %}
+
+{% block build %}
+export GO_EXTLINK_ENABLED=1
+{{super()}}
+{% endblock %}
