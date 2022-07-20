@@ -7,8 +7,6 @@ https://github.com/mity/md4c/archive/refs/tags/release-0.4.8.tar.gz
 sha:4a457df853425b6bb6e3457aa1d1a13bccec587a04c38c622b1013a0da41439f
 {% endblock %}
 
-{% block ninja_threads %}8{% endblock %}
-
 {% block unpack %}
 mkdir src; cd src
 extract 1 ${src}/1*
