@@ -1,7 +1,7 @@
 {% extends '//bin/go/18/t/ix.sh' %}
 
 {% block bld_libs %}
-lib/musl/pic
+lib/c
 {% endblock %}
 
 {% block bld_tool %}
