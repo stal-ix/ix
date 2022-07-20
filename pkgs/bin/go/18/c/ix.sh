@@ -1,7 +1,12 @@
-{% extends '//bin/go/18/ix.sh' %}
+{% extends '//bin/go/18/t/ix.sh' %}
 
 {% block bld_libs %}
 lib/musl/pic
+{% endblock %}
+
+{% block bld_tool %}
+bin/go/18
+{{super()}}
 {% endblock %}
 
 {% block cgo %}
