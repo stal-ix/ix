@@ -16,7 +16,10 @@ bld/python
 {% block setup_tools %}
 cat << EOF > xcrun
 #!$(which python3)
-{% include 'xcrun.py' %}
+import sys
+import subprocess
+
+subprocess.check_call(sys.argv[1:])
 EOF
 
 chmod +x xcrun
