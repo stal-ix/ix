@@ -2,5 +2,6 @@
 
 {% block run_deps %}
 bin/fixtty
-bin/autologin/slot
+bin/subreaper
+bin/autologin/runit
 {% endblock %}
