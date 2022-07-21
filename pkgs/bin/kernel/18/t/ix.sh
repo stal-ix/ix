@@ -10,5 +10,7 @@
 
 {% block host_libs %}
 {{super()}}
+{% block kernel_headers %}
 bin/kernel/18/headers
+{% endblock %}
 {% endblock %}

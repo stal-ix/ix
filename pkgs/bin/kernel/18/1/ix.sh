@@ -3,6 +3,8 @@
 {% block slot %}1{% endblock %}
 
 {% block kconfig_flags %}
+{% block kernel_flags %}
 {% include 'cfg' %}
+{% endblock %}
 {{super()}}
 {% endblock %}

@@ -1,4 +1,4 @@
-{% extends '//bin/kernel/t/1/ix.sh' %}
+{% extends '//bin/kernel/18/t/ix.sh' %}
 
 {% block kernel_name %}
 5-19-rc3-slot{{self.slot()}}
@@ -8,8 +8,7 @@
 {% include 'ver.sh' %}
 {% endblock %}
 
-{% block host_libs %}
-{{super()}}
+{% block kernel_headers %}
 bin/kernel/19/headers
 {% endblock %}
 
