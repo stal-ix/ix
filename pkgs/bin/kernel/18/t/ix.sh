@@ -14,3 +14,9 @@
 bin/kernel/18/headers
 {% endblock %}
 {% endblock %}
+
+{% block kconfig_flags %}
+{% block kernel_flags %}
+{% endblock %}
+{{super()}}
+{% endblock %}
