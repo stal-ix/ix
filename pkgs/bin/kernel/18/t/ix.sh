@@ -20,3 +20,9 @@ bin/kernel/18/headers
 {% endblock %}
 {{super()}}
 {% endblock %}
+
+{% block patch %}
+{{super()}}
+# disable mitigations by default
+sed -e 's|\tCPU_MITIGATIONS_AUTO;|\tCPU_MITIGATIONS_OFF;|' -i kernel/cpu.c
+{% endblock %}
