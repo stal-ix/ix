@@ -1,4 +1,4 @@
-{% extends 'c_std.sh' %}
+{% extends '//die/c_std.sh' %}
 
 {% block std_box %}
 {% block go_compiler %}
@@ -19,17 +19,14 @@ export CPPFLAGS="-fno-color-diagnostics ${CPPFLAGS}"
 {{super()}}
 {% endblock %}
 
-{% set go_tags %}
-{% block go_tags %}
-xxx
-{% endblock %}
-{% endset %}
+{% set go_tags %}{% block go_tags %}{% endblock %}{% endset %}
 
 {% set go_command %}
-go
-build
+go build
+{% if go_tags %}
 -tags
 {{','.join(ix.parse_list(go_tags))}}
+{% endif %}
 {% block go_build_flags %}
 {% endblock %}
 {% endset %}
