@@ -1,4 +1,4 @@
-{% extends '//die/wrapped.sh' %}
+{% extends 'wrapped.sh' %}
 
 {% block std_env %}
   {% if std_env %}

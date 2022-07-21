@@ -1,4 +1,4 @@
-{% extends 'std/ix.sh' %}
+{% extends '//die/std/ix.sh' %}
 
 {% block std_box %}
   {% if 'wrap_cc' in build_flags %}
