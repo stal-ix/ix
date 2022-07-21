@@ -1,4 +1,4 @@
-{% extends '//die/cmake.sh' %}
+{% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
 https://github.com/google/woff2/archive/refs/tags/v1.0.2.tar.gz

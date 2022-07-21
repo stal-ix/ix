@@ -1,4 +1,4 @@
-{% extends '//die/cmake.sh' %}
+{% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
 https://github.com/desktop-app/tg_owt/archive/10d5f4bf77333ef6b43516f90d2ce13273255f41.zip

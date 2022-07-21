@@ -1,4 +1,4 @@
-{% extends '//die/cmake.sh' %}
+{% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
 https://github.com/uriparser/uriparser/archive/refs/tags/uriparser-0.9.6.tar.gz

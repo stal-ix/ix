@@ -1,4 +1,4 @@
-{% extends '//die/cmake.sh' %}
+{% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
 https://github.com/libsndfile/libsndfile/releases/download/1.1.0/libsndfile-1.1.0.tar.xz

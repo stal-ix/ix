@@ -1,4 +1,4 @@
-{% extends '//die/cmake.sh' %}
+{% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
 https://archive.mozilla.org/pub/opus/opus-1.3.1.tar.gz

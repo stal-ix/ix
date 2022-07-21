@@ -1,4 +1,4 @@
-{% extends '//die/cmake.sh' %}
+{% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
 https://github.com/Matroska-Org/libmatroska/archive/refs/tags/release-1.6.3.tar.gz

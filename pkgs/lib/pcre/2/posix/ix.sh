@@ -1,4 +1,4 @@
-{% extends '//die/cmake.sh' %}
+{% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
 https://github.com/PhilipHazel/pcre2/archive/refs/tags/pcre2-10.40.tar.gz

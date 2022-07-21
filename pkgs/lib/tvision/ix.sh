@@ -1,4 +1,4 @@
-{% extends '//die/cmake.sh' %}
+{% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
 https://github.com/magiblot/tvision/archive/c5522641b108a4d33a2004b0fac6d9a34daac2a3.zip

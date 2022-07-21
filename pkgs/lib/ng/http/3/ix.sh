@@ -1,4 +1,4 @@
-{% extends '//die/cmake.sh' %}
+{% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
 https://github.com/ngtcp2/nghttp3/archive/refs/tags/v0.5.0.tar.gz

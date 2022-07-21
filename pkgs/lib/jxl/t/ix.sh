@@ -1,4 +1,4 @@
-{% extends '//die/cmake.sh' %}
+{% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
 https://github.com/libjxl/libjxl/archive/d4e2f3970b4b4ddf2f318ae651148798d6af950e.zip

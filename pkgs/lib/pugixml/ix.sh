@@ -1,4 +1,4 @@
-{% extends '//die/cmake.sh' %}
+{% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
 http://github.com/zeux/pugixml/releases/download/v1.12/pugixml-1.12.tar.gz

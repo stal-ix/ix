@@ -1,4 +1,4 @@
-{% extends '//die/cmake.sh' %}
+{% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
 https://codeberg.org/soundtouch/soundtouch/archive/2.3.1.tar.gz

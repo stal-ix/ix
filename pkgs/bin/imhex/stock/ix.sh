@@ -1,4 +1,4 @@
-{% extends '//die/cmake.sh' %}
+{% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
 https://github.com/WerWolv/ImHex/releases/download/v1.19.1/Full.Sources.tar.gz

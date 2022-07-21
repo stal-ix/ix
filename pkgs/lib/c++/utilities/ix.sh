@@ -1,4 +1,4 @@
-{% extends '//die/cmake.sh' %}
+{% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
 https://github.com/Martchus/cpp-utilities/archive/refs/tags/v5.17.0.tar.gz

@@ -1,4 +1,4 @@
-{% extends '//die/cmake.sh' %}
+{% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
 https://github.com/msgpack/msgpack-c/archive/refs/tags/c-4.0.0.tar.gz

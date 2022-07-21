@@ -1,4 +1,4 @@
-{% extends '//die/cmake.sh' %}
+{% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
 https://github.com/libexpat/libexpat/archive/refs/tags/R_2_4_8.tar.gz

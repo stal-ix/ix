@@ -1,4 +1,4 @@
-{% extends '//die/cmake.sh' %}
+{% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
 https://github.com/librsync/librsync/releases/download/v2.3.2/librsync-2.3.2.tar.gz

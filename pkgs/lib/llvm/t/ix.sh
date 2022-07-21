@@ -1,4 +1,4 @@
-{% extends '//die/cmake.sh' %}
+{% extends '//die/c/cmake.sh' %}
 
 {% block patch %}
 echo > llvm/unittests/Support/DynamicLibrary/CMakeLists.txt

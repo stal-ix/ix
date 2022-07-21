@@ -1,4 +1,4 @@
-{% extends '//die/cmake.sh' %}
+{% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
 https://bitbucket.org/multicoreware/x265_git/downloads/x265_3.5.tar.gz

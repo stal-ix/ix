@@ -1,4 +1,4 @@
-{% extends '//die/cmake.sh' %}
+{% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
 https://github.com/DanBloomberg/leptonica/archive/refs/tags/1.82.0.tar.gz

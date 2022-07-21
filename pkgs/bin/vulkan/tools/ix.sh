@@ -1,4 +1,4 @@
-{% extends '//die/cmake.sh' %}
+{% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
 https://github.com/KhronosGroup/Vulkan-Tools/archive/refs/tags/sdk-1.3.204.1.tar.gz

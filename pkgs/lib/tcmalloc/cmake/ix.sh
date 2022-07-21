@@ -1,4 +1,4 @@
-{% extends '//die/cmake.sh' %}
+{% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
 https://github.com/gperftools/gperftools/archive/refs/tags/gperftools-2.10.tar.gz

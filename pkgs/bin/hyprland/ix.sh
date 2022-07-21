@@ -1,4 +1,4 @@
-{% extends '//die/cmake.sh' %}
+{% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
 https://github.com/vaxerski/Hyprland/archive/fa38dfd416b664033a96bb4af764fd54f7257d7b.zip

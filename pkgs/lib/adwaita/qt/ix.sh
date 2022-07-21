@@ -1,4 +1,4 @@
-{% extends '//die/cmake.sh' %}
+{% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
 https://github.com/FedoraQt/adwaita-qt/archive/refs/tags/1.4.1.tar.gz

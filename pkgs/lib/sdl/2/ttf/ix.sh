@@ -1,4 +1,4 @@
-{% extends '//die/cmake.sh' %}
+{% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
 #https://github.com/libsdl-org/SDL_ttf/archive/refs/tags/release-2.0.18.tar.gz

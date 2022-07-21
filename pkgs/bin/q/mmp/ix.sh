@@ -1,4 +1,4 @@
-{% extends '//die/cmake.sh' %}
+{% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
 https://qmmp.ylsoftware.com/files/qmmp/2.1/qmmp-2.1.0.tar.bz2

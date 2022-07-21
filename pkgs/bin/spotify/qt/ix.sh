@@ -1,4 +1,4 @@
-{% extends '//die/cmake.sh' %}
+{% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
 https://github.com/kraxarn/spotify-qt/archive/refs/tags/v3.9.tar.gz

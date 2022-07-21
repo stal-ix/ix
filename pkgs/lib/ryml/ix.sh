@@ -1,4 +1,4 @@
-{% extends '//die/cmake.sh' %}
+{% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
 #https://github.com/biojppm/rapidyaml/archive/refs/tags/v0.4.1.tar.gz

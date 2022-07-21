@@ -1,4 +1,4 @@
-{% extends '//die/cmake.sh' %}
+{% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
 https://github.com/microsoft/LightGBM/releases/download/v3.3.2/LightGBM-complete_source_code_tar_gz.tar.gz

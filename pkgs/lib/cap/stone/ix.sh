@@ -1,4 +1,4 @@
-{% extends '//die/cmake.sh' %}
+{% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
 https://github.com/capstone-engine/capstone/archive/refs/tags/5.0-rc2.tar.gz

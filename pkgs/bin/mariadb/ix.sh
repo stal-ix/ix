@@ -1,4 +1,4 @@
-{% extends '//die/cmake.sh' %}
+{% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
 https://rsync.osuosl.org/pub/mariadb/mariadb-10.9.1/source/mariadb-10.9.1.tar.gz

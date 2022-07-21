@@ -1,4 +1,4 @@
-{% extends '//die/cmake.sh' %}
+{% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
 {% include '//bin/telegram/desktop/unwrap/t/ver.sh' %}

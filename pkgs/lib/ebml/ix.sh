@@ -1,4 +1,4 @@
-{% extends '//die/cmake.sh' %}
+{% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
 https://github.com/Matroska-Org/libebml/archive/refs/tags/release-1.4.2.tar.gz

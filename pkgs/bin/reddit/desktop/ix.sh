@@ -1,4 +1,4 @@
-{% extends '//die/cmake.sh' %}
+{% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
 https://github.com/sgiurgiu/reddit_desktop/archive/refs/tags/1.0.123.tar.gz

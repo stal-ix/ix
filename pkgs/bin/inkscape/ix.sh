@@ -1,4 +1,4 @@
-{% extends '//die/cmake.sh' %}
+{% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
 https://inkscape.org/gallery/item/34673/inkscape-1.2.1.tar.xz

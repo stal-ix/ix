@@ -1,4 +1,4 @@
-{% extends '//die/cmake.sh' %}
+{% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
 https://github.com/tesseract-ocr/tesseract/archive/refs/tags/5.2.0.tar.gz

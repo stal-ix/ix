@@ -1,4 +1,4 @@
-{% extends '//die/cmake.sh' %}
+{% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
 https://github.com/zlib-ng/zlib-ng/archive/refs/tags/2.0.6.tar.gz

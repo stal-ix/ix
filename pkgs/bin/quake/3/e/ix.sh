@@ -1,4 +1,4 @@
-{% extends '//die/cmake.sh' %}
+{% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
 https://github.com/ec-/Quake3e/archive/525a5ae69322c973268a1807fd9d9a3128fcfd4d.zip

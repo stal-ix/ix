@@ -1,4 +1,4 @@
-{% extends '//die/cmake.sh' %}
+{% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
 https://download.kde.org/stable/frameworks/5.95/extra-cmake-modules-5.95.0.tar.xz

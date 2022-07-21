@@ -1,4 +1,4 @@
-{% extends '//die/cmake.sh' %}
+{% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
 https://github.com/WebPlatformForEmbedded/libwpe/archive/b6d3088d085f7ff93465e148904be42688c0d3d9.zip

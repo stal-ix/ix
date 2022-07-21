@@ -1,4 +1,4 @@
-{% extends '//die/cmake.sh' %}
+{% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
 #https://github.com/libgit2/libgit2/archive/refs/tags/v1.4.4.tar.gz

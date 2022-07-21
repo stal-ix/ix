@@ -1,4 +1,4 @@
-{% extends '//die/cmake.sh' %}
+{% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
 https://github.com/Z3Prover/z3/archive/refs/tags/z3-4.9.1.tar.gz

@@ -1,4 +1,4 @@
-{% extends '//die/cmake.sh' %}
+{% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
 https://archive.apache.org/dist/xerces/c/3/sources/xerces-c-3.2.3.tar.gz

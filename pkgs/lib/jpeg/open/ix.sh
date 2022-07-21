@@ -1,4 +1,4 @@
-{% extends '//die/cmake.sh' %}
+{% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
 https://github.com/uclouvain/openjpeg/archive/refs/tags/v2.5.0.tar.gz

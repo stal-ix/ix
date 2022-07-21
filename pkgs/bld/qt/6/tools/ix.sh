@@ -1,4 +1,4 @@
-{% extends '//die/qt.sh' %}
+{% extends '//die/c/qt.sh' %}
 
 {% block fetch %}
 https://github.com/qt/qttools/archive/refs/tags/v6.3.1.tar.gz
