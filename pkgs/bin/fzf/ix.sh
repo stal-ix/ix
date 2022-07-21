@@ -1,8 +1,8 @@
 {% extends '//die/cgo.sh' %}
 
 {% block fetch %}
-https://github.com/junegunn/fzf/archive/refs/tags/0.30.0.tar.gz
-sha:a3428f510b7136e39104a002f19b2e563090496cb5205fa2e4c5967d34a20124
+https://github.com/junegunn/fzf/archive/refs/tags/0.31.0.tar.gz
+sha:df4edee32cb214018ed40160ced968d4cc3b63bba5b0571487011ee7099faa76
 {% endblock %}
 
 {% block install %}
