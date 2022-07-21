@@ -23,4 +23,6 @@ find . -type f | while read l; do
         -e 's|sp_pwdp|pw_passwd|' \
         -i ${l}
 done
+
+sed -e 's|.*setenv.*getShell.*||' -i src/session.go
 {% endblock %}

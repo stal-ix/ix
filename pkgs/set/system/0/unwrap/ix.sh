@@ -13,7 +13,13 @@ bin/seatd/runit
 bin/sndio/runit
 bin/dhcpcd/runit
 bin/ananicy/runit
+
+{% if mingetty %}
 bin/mingetty/runit
+{% else %}
+bin/emptty/runit
+{% endif %}
+
 bin/sched/trashdir(delay=100)
 bin/sched/staleprocs(delay=10)
 
