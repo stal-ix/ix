@@ -37,6 +37,8 @@ EOF
 echo '00000000000000001111111111111111' > machine-id
 
 cat << EOF > session
+unset LANG
+
 export PATH="/ix/realm/\${USER}/bin:/bin"
 export IX_SDIR="/var/tmp/\$(id -u)"
 export IX_ROOT=/ix
