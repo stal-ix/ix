@@ -1,4 +1,4 @@
-{% extends '//die/autorehell.sh' %}
+{% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
 https://github.com/sekrit-twc/zimg/archive/refs/tags/release-3.0.4.tar.gz

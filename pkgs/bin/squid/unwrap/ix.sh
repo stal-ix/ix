@@ -1,4 +1,4 @@
-{% extends '//die/autohell.sh' %}
+{% extends '//die/c/autohell.sh' %}
 
 {% block fetch %}
 http://www.squid-cache.org/Versions/v5/squid-5.6.tar.xz

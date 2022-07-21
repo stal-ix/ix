@@ -1,4 +1,4 @@
-{% extends '//die/autorehell.sh' %}
+{% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
 https://www.thrysoee.dk/editline/libedit-20210910-3.1.tar.gz

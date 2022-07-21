@@ -1,4 +1,4 @@
-{% extends '//die/autorehell.sh' %}
+{% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
 https://github.com/jemalloc/jemalloc/archive/refs/tags/5.3.0.tar.gz

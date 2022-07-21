@@ -1,4 +1,4 @@
-{% extends '//die/autohell.sh' %}
+{% extends '//die/c/autohell.sh' %}
 
 {% block make_no_thrs %}{% endblock %}
 

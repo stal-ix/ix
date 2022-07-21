@@ -1,4 +1,4 @@
-{% extends '//die/autorehell.sh' %}
+{% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
 https://github.com/util-linux/util-linux/archive/refs/tags/v2.38.tar.gz

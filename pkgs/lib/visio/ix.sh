@@ -1,4 +1,4 @@
-{% extends '//die/autorehell.sh' %}
+{% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
 https://dev-www.libreoffice.org/src/libvisio/libvisio-0.1.7.tar.xz

@@ -1,4 +1,4 @@
-{% extends '//die/autorehell.sh' %}
+{% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
 https://github.com/stevegrubb/libcap-ng/archive/refs/tags/v0.8.3.tar.gz

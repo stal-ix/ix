@@ -1,4 +1,4 @@
-{% extends '//die/autorehell.sh' %}
+{% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
 https://github.com/openSUSE/xinetd/archive/refs/tags/2.3.15.4.tar.gz

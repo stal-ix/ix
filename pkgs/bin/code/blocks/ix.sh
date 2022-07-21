@@ -1,4 +1,4 @@
-{% extends '//die/autohell.sh' %}
+{% extends '//die/c/autohell.sh' %}
 
 {# can not build with current wxWidgets #}
 

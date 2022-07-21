@@ -1,4 +1,4 @@
-{% extends '//die/autorehell.sh' %}
+{% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
 https://mirrors.edge.kernel.org/pub/linux/network/wireless/iwd-1.29.tar.xz

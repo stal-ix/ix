@@ -1,4 +1,4 @@
-{% extends '//die/autohell.sh' %}
+{% extends '//die/c/autohell.sh' %}
 
 {% block fetch %}
 https://www.stunnel.org/downloads/stunnel-5.65.tar.gz

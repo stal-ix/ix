@@ -1,4 +1,4 @@
-{% extends '//die/autohell.sh' %}
+{% extends '//die/c/autohell.sh' %}
 
 {% block fetch %}
 https://ftp.gnu.org/gnu/ed/ed-1.17.tar.lz

@@ -1,4 +1,4 @@
-{% extends '//die/autorehell.sh' %}
+{% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
 https://ftp.gnu.org/pub/gnu/gettext/gettext-0.21.tar.gz

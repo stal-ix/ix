@@ -1,4 +1,4 @@
-{% extends '//die/autohell.sh' %}
+{% extends '//die/c/autohell.sh' %}
 
 {% block fetch %}
 https://ftp.gnu.org/gnu/wget/wget2-2.0.1.tar.gz

@@ -1,4 +1,4 @@
-{% extends '//die/autorehell.sh' %}
+{% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
 http://downloads.sourceforge.net/djvu/djvulibre-3.5.28.tar.gz

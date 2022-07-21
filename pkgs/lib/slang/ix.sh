@@ -1,4 +1,4 @@
-{% extends '//die/autohell.sh' %}
+{% extends '//die/c/autohell.sh' %}
 
 {% block fetch %}
 https://www.jedsoft.org/releases/slang/slang-2.3.2.tar.bz2

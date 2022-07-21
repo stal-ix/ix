@@ -1,4 +1,4 @@
-{% extends '//die/autorehell.sh' %}
+{% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
 https://www.bytereef.org/software/mpdecimal/releases/mpdecimal-2.5.1.tar.gz

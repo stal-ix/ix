@@ -1,4 +1,4 @@
-{% extends '//die/autohell.sh' %}
+{% extends '//die/c/autohell.sh' %}
 
 {% block fetch %}
 https://www.jedsoft.org/releases/jed/jed-0.99-19.tar.bz2

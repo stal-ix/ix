@@ -1,4 +1,4 @@
-{% extends '//die/autorehell.sh' %}
+{% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
 https://www.kernel.org/pub/linux/utils/usb/usbutils/usbutils-014.tar.xz

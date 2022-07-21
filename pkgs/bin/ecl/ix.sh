@@ -1,4 +1,4 @@
-{% extends '//die/autohell.sh' %}
+{% extends '//die/c/autohell.sh' %}
 
 {% block fetch %}
 https://common-lisp.net/project/ecl/static/files/release/ecl-21.2.1.tgz

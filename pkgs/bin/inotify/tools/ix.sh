@@ -1,4 +1,4 @@
-{% extends '//die/autorehell.sh' %}
+{% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
 #https://github.com/inotify-tools/inotify-tools/archive/refs/tags/3.22.6.0.tar.gz

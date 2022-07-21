@@ -1,4 +1,4 @@
-{% extends '//die/autorehell.sh' %}
+{% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
 https://github.com/fukuchi/libqrencode/archive/refs/tags/v4.1.1.tar.gz

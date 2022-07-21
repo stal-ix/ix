@@ -1,4 +1,4 @@
-{% extends '//die/autohell.sh' %}
+{% extends '//die/c/autohell.sh' %}
 
 {% block fetch %}
 https://pkg-config.freedesktop.org/releases/pkg-config-0.29.2.tar.gz

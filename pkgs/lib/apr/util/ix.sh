@@ -1,4 +1,4 @@
-{% extends '//die/autorehell.sh' %}
+{% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
 https://archive.apache.org/dist/apr/apr-util-1.6.1.tar.bz2

@@ -1,4 +1,4 @@
-{% extends '//die/autohell.sh' %}
+{% extends '//die/c/autohell.sh' %}
 
 {% block fetch %}
 http://mirrors.kernel.org/sourceware/lvm2/LVM2.2.03.16.tgz

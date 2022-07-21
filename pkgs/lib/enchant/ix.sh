@@ -1,4 +1,4 @@
-{% extends '//die/autohell.sh' %}
+{% extends '//die/c/autohell.sh' %}
 
 {% block fetch %}
 https://github.com/AbiWord/enchant/releases/download/v2.3.3/enchant-2.3.3.tar.gz

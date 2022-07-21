@@ -1,4 +1,4 @@
-{% extends '//die/autorehell.sh' %}
+{% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
 https://github.com/NLnetLabs/unbound/archive/refs/tags/release-1.16.1.tar.gz

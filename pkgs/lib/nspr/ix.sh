@@ -1,4 +1,4 @@
-{% extends '//die/autohell.sh' %}
+{% extends '//die/c/autohell.sh' %}
 
 {% block fetch %}
 https://ftp.mozilla.org/pub/nspr/releases/v4.34/src/nspr-4.34.tar.gz

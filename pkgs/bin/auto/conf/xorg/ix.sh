@@ -1,4 +1,4 @@
-{% extends '//die/autohell.sh' %}
+{% extends '//die/c/autohell.sh' %}
 
 {% block fetch %}
 https://www.x.org/pub/individual/util/util-macros-1.19.3.tar.bz2

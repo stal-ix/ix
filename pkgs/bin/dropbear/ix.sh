@@ -1,4 +1,4 @@
-{% extends '//die/autorehell.sh' %}
+{% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
 https://matt.ucc.asn.au/dropbear/releases/dropbear-2022.82.tar.bz2

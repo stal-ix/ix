@@ -1,4 +1,4 @@
-{% extends '//die/autorehell.sh' %}
+{% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
 https://ftp.gnu.org/gnu/libunistring/libunistring-1.0.tar.xz

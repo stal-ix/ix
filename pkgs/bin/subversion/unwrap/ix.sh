@@ -1,4 +1,4 @@
-{% extends '//die/autorehell.sh' %}
+{% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
 https://archive.apache.org/dist/subversion/subversion-1.14.2.tar.bz2

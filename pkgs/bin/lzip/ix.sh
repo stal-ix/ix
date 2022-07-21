@@ -1,4 +1,4 @@
-{% extends '//die/autohell.sh' %}
+{% extends '//die/c/autohell.sh' %}
 
 {% block fetch %}
 https://download.savannah.gnu.org/releases/lzip/lzip-1.22.tar.gz

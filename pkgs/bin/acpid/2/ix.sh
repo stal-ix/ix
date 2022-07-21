@@ -1,4 +1,4 @@
-{% extends '//die/autorehell.sh' %}
+{% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
 https://downloads.sourceforge.net/project/acpid2/acpid-2.0.33.tar.xz

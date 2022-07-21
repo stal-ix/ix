@@ -1,4 +1,4 @@
-{% extends '//die/autorehell.sh' %}
+{% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
 https://sourceware.org/elfutils/ftp/0.187/elfutils-0.187.tar.bz2

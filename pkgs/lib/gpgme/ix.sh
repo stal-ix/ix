@@ -1,4 +1,4 @@
-{% extends '//die/autohell.sh' %}
+{% extends '//die/c/autohell.sh' %}
 
 {% block fetch %}
 https://www.gnupg.org/ftp/gcrypt/gpgme/gpgme-1.17.1.tar.bz2

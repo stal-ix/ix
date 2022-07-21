@@ -1,4 +1,4 @@
-{% extends '//die/autohell.sh' %}
+{% extends '//die/c/autohell.sh' %}
 
 {% block fetch %}
 https://downloads.sourceforge.net/project/lame/lame/3.100/lame-3.100.tar.gz

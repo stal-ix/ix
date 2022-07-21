@@ -1,4 +1,4 @@
-{% extends '//die/autohell.sh' %}
+{% extends '//die/c/autohell.sh' %}
 
 {% block fetch %}
 https://github.com/unicode-org/icu/archive/refs/tags/release-70-1.tar.gz

@@ -1,4 +1,4 @@
-{% extends '//die/autorehell.sh'%}
+{% extends '//die/c/autorehell.sh'%}
 
 {% block fetch %}
 https://github.com/besser82/libxcrypt/archive/refs/tags/v4.4.28.tar.gz

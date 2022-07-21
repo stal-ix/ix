@@ -1,4 +1,4 @@
-{% extends '//die/autorehell.sh' %}
+{% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
 https://libbsd.freedesktop.org/releases/libbsd-0.11.6.tar.xz

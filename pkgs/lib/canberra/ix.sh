@@ -1,4 +1,4 @@
-{% extends '//die/autorehell.sh' %}
+{% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
 http://0pointer.de/lennart/projects/libcanberra/libcanberra-0.30.tar.xz

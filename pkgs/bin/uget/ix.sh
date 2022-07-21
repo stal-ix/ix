@@ -1,4 +1,4 @@
-{% extends '//die/autorehell.sh' %}
+{% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
 https://downloads.sourceforge.net/urlget/uget-2.2.3-1.tar.gz

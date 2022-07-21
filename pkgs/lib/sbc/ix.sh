@@ -1,4 +1,4 @@
-{% extends '//die/autorehell.sh' %}
+{% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
 https://kernel.googlesource.com/pub/scm/bluetooth/sbc/+archive/8dc5d5ba381512ad5b1afa45c63ec6b0a3833244.tar.gz

@@ -1,4 +1,4 @@
-{% extends '//die/autorehell.sh' %}
+{% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
 https://www.netfilter.org/pub/libmnl/libmnl-1.0.4.tar.bz2

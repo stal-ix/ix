@@ -1,4 +1,4 @@
-{% extends '//die/autohell.sh' %}
+{% extends '//die/c/autohell.sh' %}
 
 {% block fetch %}
 https://icon-theme.freedesktop.org/releases/hicolor-icon-theme-0.17.tar.xz

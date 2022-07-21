@@ -1,4 +1,4 @@
-{% extends '//die/autorehell.sh' %}
+{% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
 https://ftp.gnu.org/gnu/inetutils/inetutils-2.3.tar.xz

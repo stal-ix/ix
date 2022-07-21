@@ -1,4 +1,4 @@
-{% extends '//die/autohell.sh' %}
+{% extends '//die/c/autohell.sh' %}
 
 {% block fetch %}
 https://downloads.sourceforge.net/project/mpg123/mpg123/1.30.1/mpg123-1.30.1.tar.bz2

@@ -1,4 +1,4 @@
-{% extends '//die/autorehell.sh' %}
+{% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
 https://pawsa.fedorapeople.org/balsa/balsa-2.6.3.tar.xz

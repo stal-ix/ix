@@ -1,4 +1,4 @@
-{% extends '//die/autorehell.sh' %}
+{% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
 https://gitlab.xiph.org/xiph/rnnoise/-/archive/7f449bf8bd3b933891d12c30112268c4090e4d59/rnnoise-7f449bf8bd3b933891d12c30112268c4090e4d59.tar.bz2

@@ -1,4 +1,4 @@
-{% extends '//die/autohell.sh' %}
+{% extends '//die/c/autohell.sh' %}
 
 {% block fetch %}
 http://www.oberhumer.com/opensource/lzo/download/lzo-2.10.tar.gz

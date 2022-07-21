@@ -1,4 +1,4 @@
-{% extends '//die/autohell.sh' %}
+{% extends '//die/c/autohell.sh' %}
 
 {% block fetch %}
 http://mandoc.bsd.lv/snapshots/mandoc-1.14.6.tar.gz

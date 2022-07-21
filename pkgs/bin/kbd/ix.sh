@@ -1,4 +1,4 @@
-{% extends '//die/autorehell.sh' %}
+{% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
 https://mirrors.edge.kernel.org/pub/linux/utils/kbd/kbd-2.5.1.tar.xz

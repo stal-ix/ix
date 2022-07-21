@@ -1,4 +1,4 @@
-{% extends '//die/autohell.sh' %}
+{% extends '//die/c/autohell.sh' %}
 
 {% block fetch %}
 https://www.gnupg.org/ftp/gcrypt/gnupg/gnupg-2.3.7.tar.bz2

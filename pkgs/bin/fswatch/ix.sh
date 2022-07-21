@@ -1,4 +1,4 @@
-{% extends '//die/autorehell.sh' %}
+{% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
 https://github.com/emcrisostomo/fswatch/archive/refs/tags/1.17.1.tar.gz

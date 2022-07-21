@@ -1,4 +1,4 @@
-{% extends '//die/autorehell.sh' %}
+{% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
 https://github.com/emacs-mirror/emacs/archive/refs/tags/emacs-28.1.tar.gz

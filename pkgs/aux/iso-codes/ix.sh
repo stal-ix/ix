@@ -1,4 +1,4 @@
-{% extends '//die/autorehell.sh' %}
+{% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
 http://deb.debian.org/debian/pool/main/i/iso-codes/iso-codes_4.10.0.orig.tar.xz

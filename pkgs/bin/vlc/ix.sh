@@ -1,4 +1,4 @@
-{% extends '//die/autohell.sh' %}
+{% extends '//die/c/autohell.sh' %}
 
 {# configure: error: VLC is based on plugins. Shared libraries cannot be disabled. #}
 

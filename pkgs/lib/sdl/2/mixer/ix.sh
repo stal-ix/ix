@@ -1,4 +1,4 @@
-{% extends '//die/autohell.sh' %}
+{% extends '//die/c/autohell.sh' %}
 
 {% block fetch %}
 https://github.com/libsdl-org/SDL_mixer/archive/refs/tags/release-2.6.1.tar.gz

@@ -1,4 +1,4 @@
-{% extends '//die/autorehell.sh' %}
+{% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
 https://ftp.debian.org/debian/pool/main/v/vbetool/vbetool_1.1.orig.tar.gz

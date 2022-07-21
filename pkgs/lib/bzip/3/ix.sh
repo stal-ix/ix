@@ -1,4 +1,4 @@
-{% extends '//die/autorehell.sh' %}
+{% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
 https://github.com/kspalaiologos/bzip3/archive/refs/tags/1.1.4.tar.gz

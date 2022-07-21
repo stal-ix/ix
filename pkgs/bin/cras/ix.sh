@@ -1,4 +1,4 @@
-{% extends '//die/autorehell.sh' %}
+{% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
 https://chromium.googlesource.com/chromiumos/third_party/adhd/+archive/master/cras.tar.gz

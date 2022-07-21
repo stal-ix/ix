@@ -1,4 +1,4 @@
-{% extends '//die/autorehell.sh' %}
+{% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
 https://releases.pagure.org/xmlto/xmlto-0.0.28.tar.bz2

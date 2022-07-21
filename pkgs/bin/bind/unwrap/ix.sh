@@ -1,4 +1,4 @@
-{% extends '//die/autorehell.sh' %}
+{% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
 https://gitlab.isc.org/isc-projects/bind9/-/archive/v9_19_2/bind9-v9_19_2.tar.bz2

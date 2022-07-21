@@ -1,4 +1,4 @@
-{% extends '//die/autorehell.sh' %}
+{% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
 https://gitlab.gnome.org/GNOME/gspell/-/archive/1.11.1/gspell-1.11.1.tar.bz2

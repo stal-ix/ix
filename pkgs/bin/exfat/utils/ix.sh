@@ -1,4 +1,4 @@
-{% extends '//die/autorehell.sh' %}
+{% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
 https://github.com/relan/exfat/releases/download/v1.3.0/exfat-utils-1.3.0.tar.gz

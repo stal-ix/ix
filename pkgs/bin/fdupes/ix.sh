@@ -1,4 +1,4 @@
-{% extends '//die/autorehell.sh' %}
+{% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
 https://github.com/adrianlopezroche/fdupes/archive/refs/tags/v2.1.2.tar.gz

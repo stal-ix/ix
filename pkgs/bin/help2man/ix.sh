@@ -1,4 +1,4 @@
-{% extends '//die/autohell.sh' %}
+{% extends '//die/c/autohell.sh' %}
 
 {% block fetch %}
 https://mirror.tochlab.net/pub/gnu/help2man/help2man-1.49.2.tar.xz

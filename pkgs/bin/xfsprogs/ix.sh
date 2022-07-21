@@ -1,4 +1,4 @@
-{% extends '//die/autohell.sh' %}
+{% extends '//die/c/autohell.sh' %}
 
 {% block fetch %}
 https://www.kernel.org/pub/linux/utils/fs/xfs/xfsprogs/xfsprogs-5.18.0.tar.xz

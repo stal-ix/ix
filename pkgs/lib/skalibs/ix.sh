@@ -1,4 +1,4 @@
-{% extends '//die/autohell.sh' %}
+{% extends '//die/c/autohell.sh' %}
 
 {% block fetch %}
 https://skarnet.org/software/skalibs/skalibs-2.11.1.0.tar.gz

@@ -1,4 +1,4 @@
-{% extends '//die/autohell.sh' %}
+{% extends '//die/c/autohell.sh' %}
 
 {% block fetch %}
 https://git.midipix.org/slibtool/snapshot/slibtool-0.5.34.tar.bz2

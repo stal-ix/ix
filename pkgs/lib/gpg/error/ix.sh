@@ -1,4 +1,4 @@
-{% extends '//die/autohell.sh' %}
+{% extends '//die/c/autohell.sh' %}
 
 {% block fetch %}
 https://gnupg.org/ftp/gcrypt/libgpg-error/libgpg-error-1.45.tar.bz2

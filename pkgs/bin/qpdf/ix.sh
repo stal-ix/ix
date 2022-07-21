@@ -1,4 +1,4 @@
-{% extends '//die/autohell.sh' %}
+{% extends '//die/c/autohell.sh' %}
 
 {% block fetch %}
 https://github.com/qpdf/qpdf/archive/refs/tags/release-qpdf-10.6.3.tar.gz

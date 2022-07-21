@@ -1,4 +1,4 @@
-{% extends '//die/autorehell.sh' %}
+{% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
 https://gitlab.com/psmisc/psmisc/-/archive/v23.5/psmisc-v23.5.tar.bz2

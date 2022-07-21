@@ -1,4 +1,4 @@
-{% extends '//die/autohell.sh' %}
+{% extends '//die/c/autohell.sh' %}
 
 {% block fetch %}
 https://downloads.xvid.com/downloads/xvidcore-1.3.7.tar.gz

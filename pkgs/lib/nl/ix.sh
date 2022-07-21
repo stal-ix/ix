@@ -1,4 +1,4 @@
-{% extends '//die/autorehell.sh' %}
+{% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
 https://github.com/thom311/libnl/releases/download/libnl3_7_0/libnl-3.7.0.tar.gz

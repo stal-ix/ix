@@ -1,4 +1,4 @@
-{% extends '//die/autorehell.sh' %}
+{% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
 https://www.alsa-project.org/files/pub/lib/alsa-lib-1.2.7.2.tar.bz2
