@@ -9,6 +9,10 @@ sha:95b7061861aa8d608f9df0d63a11206f8cd532295ca13dd39ed37e0136bdcc5f
 lib/curl
 {% endblock %}
 
+{% block patch %}
+rm curlie
+{% endblock %}
+
 {% block install %}
 mkdir ${out}/bin
 cp curlie ${out}/bin/
