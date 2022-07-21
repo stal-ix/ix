@@ -1,4 +1,4 @@
-{% extends '//die/cgo.sh' %}
+{% extends '//die/go/c.sh' %}
 
 {% block fetch %}
 https://github.com/xxxserxxx/gotop/archive/refs/tags/v4.1.4.tar.gz

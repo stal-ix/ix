@@ -1,4 +1,4 @@
-{% extends '//die/cgo.sh' %}
+{% extends '//die/go/c.sh' %}
 
 {% block fetch %}
 https://github.com/wtfutil/wtf/archive/refs/tags/v0.41.0.tar.gz

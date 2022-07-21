@@ -1,4 +1,4 @@
-{% extends '//die/cgo.sh' %}
+{% extends '//die/go/c.sh' %}
 
 {% block fetch %}
 https://github.com/junegunn/fzf/archive/refs/tags/0.31.0.tar.gz

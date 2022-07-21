@@ -1,4 +1,4 @@
-{% extends '//die/cgo.sh' %}
+{% extends '//die/go/c.sh' %}
 
 {% block fetch %}
 https://github.com/tvrzna/emptty/archive/refs/tags/v0.8.1.tar.gz

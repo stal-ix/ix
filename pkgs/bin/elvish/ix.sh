@@ -1,4 +1,4 @@
-{% extends '//die/cgo.sh' %}
+{% extends '//die/go/c.sh' %}
 
 {% block fetch %}
 https://github.com/elves/elvish/archive/refs/tags/v0.18.0.tar.gz
