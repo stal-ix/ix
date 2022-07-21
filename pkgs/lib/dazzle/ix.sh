@@ -1,4 +1,4 @@
-{% extends '//die/registar.sh' %}
+{% extends '//die/c/registar.sh' %}
 
 {% block lib_deps %}
 lib/dazzle/unwrap

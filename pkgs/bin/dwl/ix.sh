@@ -1,4 +1,4 @@
-{% extends '//die/make.sh' %}
+{% extends '//die/c/make.sh' %}
 
 {% block fetch %}
 https://github.com/djpohly/dwl/archive/refs/tags/v0.3.1.tar.gz

@@ -1,4 +1,4 @@
-{% extends '//die/meson.sh' %}
+{% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
 https://github.com/Alexays/Waybar/archive/refs/tags/0.9.13.tar.gz

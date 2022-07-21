@@ -1,4 +1,4 @@
-{% extends '//die/make.sh' %}
+{% extends '//die/c/make.sh' %}
 
 {% block fetch %}
 https://mupdf.com/downloads/archive/mupdf-1.20.0-source.tar.lz

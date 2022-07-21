@@ -1,4 +1,4 @@
-{% extends '//die/make.sh' %}
+{% extends '//die/c/make.sh' %}
 
 {% block fetch %}
 https://github.com/rhboot/efibootmgr/archive/refs/tags/18.tar.gz

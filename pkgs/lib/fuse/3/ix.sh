@@ -1,4 +1,4 @@
-{% extends '//die/meson.sh' %}
+{% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
 https://github.com/libfuse/libfuse/archive/refs/tags/fuse-3.11.0.tar.gz

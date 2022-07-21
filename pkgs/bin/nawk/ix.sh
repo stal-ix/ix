@@ -1,4 +1,4 @@
-{% extends '//die/make.sh' %}
+{% extends '//die/c/make.sh' %}
 
 {% block fetch %}
 https://github.com/onetrueawk/awk/archive/refs/tags/20220122.tar.gz

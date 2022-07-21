@@ -1,4 +1,4 @@
-{% extends '//die/meson.sh' %}
+{% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
 https://git.sr.ht/~leon_plickat/lavalauncher/archive/v2.1.1.tar.gz

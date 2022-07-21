@@ -1,4 +1,4 @@
-{% extends '//die/c_std.sh' %}
+{% extends '//die/c/c_std.sh' %}
 
 {% block fetch %}
 https://github.com/nothings/stb/archive/af1a5bc352164740c1cc1354942b1c6b72eacb8a.zip

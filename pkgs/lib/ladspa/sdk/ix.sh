@@ -1,4 +1,4 @@
-{% extends '//die/make.sh' %}
+{% extends '//die/c/make.sh' %}
 
 {% block fetch %}
 http://www.ladspa.org/download/ladspa_sdk_1.17.tgz

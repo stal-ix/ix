@@ -1,4 +1,4 @@
-{% extends '//die/meson.sh' %}
+{% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
 https://gitlab.gnome.org/GNOME/vte/-/archive/0.68.0/vte-0.68.0.tar.bz2

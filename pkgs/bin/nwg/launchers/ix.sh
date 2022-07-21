@@ -1,4 +1,4 @@
-{% extends '//die/meson.sh' %}
+{% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
 https://github.com/nwg-piotr/nwg-launchers/archive/refs/tags/v0.6.3.tar.gz

@@ -1,4 +1,4 @@
-{% extends '//die/wafbase.sh' %}
+{% extends '//die/c/wafbase.sh' %}
 
 {% block fetch %}
 https://download.samba.org/pub/samba/stable/samba-4.16.3.tar.gz

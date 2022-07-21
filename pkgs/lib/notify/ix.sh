@@ -1,4 +1,4 @@
-{% extends '//die/meson.sh' %}
+{% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
 https://download.gnome.org/sources/libnotify/0.8/libnotify-0.8.1.tar.xz

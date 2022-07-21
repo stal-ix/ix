@@ -1,4 +1,4 @@
-{% extends '//die/meson.sh' %}
+{% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
 https://git.sr.ht/~brocellous/wlrctl/archive/v0.2.1.tar.gz

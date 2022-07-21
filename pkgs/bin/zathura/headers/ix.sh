@@ -1,4 +1,4 @@
-{% extends '//die/meson.sh' %}
+{% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
 https://git.pwmt.org/pwmt/zathura/-/archive/0.4.9/zathura-0.4.9.tar.bz2

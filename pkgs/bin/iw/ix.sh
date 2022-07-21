@@ -1,4 +1,4 @@
-{% extends '//die/make.sh' %}
+{% extends '//die/c/make.sh' %}
 
 {% block fetch %}
 https://www.kernel.org/pub/software/network/iw/iw-5.19.tar.xz

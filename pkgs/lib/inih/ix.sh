@@ -1,4 +1,4 @@
-{% extends '//die/meson.sh' %}
+{% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
 https://github.com/benhoyt/inih/archive/r54/inih-r56.tar.gz

@@ -1,4 +1,4 @@
-{% extends '//die/meson.sh' %}
+{% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
 https://github.com/videolan/dav1d/archive/refs/tags/1.0.0.zip

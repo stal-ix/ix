@@ -1,4 +1,4 @@
-{% extends '//die/make.sh' %}
+{% extends '//die/c/make.sh' %}
 
 {% block fetch %}
 https://github.com/fairyglade/ly/archive/refs/tags/v0.5.3.tar.gz

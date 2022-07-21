@@ -1,4 +1,4 @@
-{% extends '//die/meson.sh' %}
+{% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
 https://github.com/open-source-parsers/jsoncpp/archive/refs/tags/1.9.5.tar.gz

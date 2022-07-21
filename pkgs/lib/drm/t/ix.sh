@@ -1,4 +1,4 @@
-{% extends '//die/meson.sh' %}
+{% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
 https://dri.freedesktop.org/libdrm/libdrm-2.4.112.tar.xz

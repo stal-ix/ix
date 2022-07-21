@@ -1,4 +1,4 @@
-{% extends '//die/meson.sh' %}
+{% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
 https://gitlab.gnome.org/GNOME/libadwaita/-/archive/1.1.3/libadwaita-1.1.3.tar.bz2

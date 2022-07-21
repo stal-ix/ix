@@ -1,4 +1,4 @@
-{% extends '//die/make.sh' %}
+{% extends '//die/c/make.sh' %}
 
 {% block fetch %}
 https://github.com/aligrudi/neatlibc/archive/a1ae8a903e13152e360fe719ecbe0ba7c2d817af.zip

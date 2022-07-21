@@ -1,4 +1,4 @@
-{% extends '//die/meson.sh' %}
+{% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
 https://github.com/linux-nvme/libnvme/archive/refs/tags/v1.0.tar.gz

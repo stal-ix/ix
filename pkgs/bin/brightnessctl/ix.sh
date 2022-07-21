@@ -1,4 +1,4 @@
-{% extends '//die/make.sh' %}
+{% extends '//die/c/make.sh' %}
 
 {% block fetch %}
 https://github.com/Hummer12007/brightnessctl/archive/refs/tags/0.5.1.tar.gz

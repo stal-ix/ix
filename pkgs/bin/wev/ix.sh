@@ -1,4 +1,4 @@
-{% extends '//die/make.sh' %}
+{% extends '//die/c/make.sh' %}
 
 {% block fetch %}
 https://git.sr.ht/~sircmpwn/wev/archive/1.0.0.tar.gz

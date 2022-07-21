@@ -1,4 +1,4 @@
-{% extends '//die/meson.sh' %}
+{% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
 https://github.com/cboxdoerfer/fsearch/archive/refs/tags/0.1.4.tar.gz

@@ -1,4 +1,4 @@
-{% extends '//die/make.sh' %}
+{% extends '//die/c/make.sh' %}
 
 {% block fetch %}
 https://data.iana.org/time-zones/releases/tzdb-2022a.tar.lz

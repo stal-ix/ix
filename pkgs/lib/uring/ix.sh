@@ -1,4 +1,4 @@
-{% extends '//die/make.sh' %}
+{% extends '//die/c/make.sh' %}
 
 {% block fetch %}
 https://github.com/axboe/liburing/archive/refs/tags/liburing-2.2.tar.gz

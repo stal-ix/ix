@@ -1,4 +1,4 @@
-{% extends '//die/meson.sh' %}
+{% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
 https://github.com/libsixel/libsixel/archive/refs/tags/v1.10.3.tar.gz

@@ -1,4 +1,4 @@
-{% extends '//die/make.sh' %}
+{% extends '//die/c/make.sh' %}
 
 {% block fetch %}
 https://github.com/ndevilla/iniparser/archive/deb85ad4936d4ca32cc2260ce43323d47936410d.zip

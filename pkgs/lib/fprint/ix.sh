@@ -1,4 +1,4 @@
-{% extends '//die/meson.sh' %}
+{% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
 https://gitlab.freedesktop.org/libfprint/libfprint/-/archive/v1.94.4/libfprint-v1.94.4.tar.bz2

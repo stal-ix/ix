@@ -1,4 +1,4 @@
-{% extends '//die/make.sh' %}
+{% extends '//die/c/make.sh' %}
 
 {% block fetch %}
 https://github.com/jeaye/stdman/archive/refs/tags/2022.02.01.tar.gz

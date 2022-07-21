@@ -1,4 +1,4 @@
-{% extends '//die/make.sh' %}
+{% extends '//die/c/make.sh' %}
 
 {% block fetch %}
 https://github.com/freequaos/schedtool/archive/refs/tags/schedtool-1.3.0.tar.gz

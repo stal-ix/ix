@@ -1,4 +1,4 @@
-{% extends '//die/meson.sh' %}
+{% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
 https://github.com/WayfireWM/wf-shell/archive/b5edd8b6e62bc70fad9a21d44d4b2e13431cedb8.zip

@@ -1,4 +1,4 @@
-{% extends '//die/ninja.sh' %}
+{% extends '//die/c/ninja.sh' %}
 
 {% block fetch %}
 https://gn.googlesource.com/gn/+archive/18df6af86191edab1e47c84d56e608da414d446b.tar.gz

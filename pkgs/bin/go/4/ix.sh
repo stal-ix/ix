@@ -1,4 +1,4 @@
-{% extends '//die/c_std.sh' %}
+{% extends '//die/c/c_std.sh' %}
 
 {% block fetch %}
 https://golang.org/dl/go1.4-bootstrap-20170531.tar.gz

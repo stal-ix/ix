@@ -1,4 +1,4 @@
-{% extends '//die/make.sh' %}
+{% extends '//die/c/make.sh' %}
 
 {% block fetch %}
 https://www.openldap.org/software/download/OpenLDAP/openldap-release/openldap-2.6.3.tgz

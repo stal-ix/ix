@@ -1,4 +1,4 @@
-{% extends '//die/premain.sh' %}
+{% extends '//die/c/premain.sh' %}
 
 {% block lib_deps %}
 lib/c

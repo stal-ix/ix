@@ -1,4 +1,4 @@
-{% extends '//die/ninja.sh' %}
+{% extends 'ninja.sh' %}
 
 {% block std_box %}
 bld/cmake

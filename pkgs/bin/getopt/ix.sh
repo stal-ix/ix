@@ -1,4 +1,4 @@
-{% extends '//die/make.sh' %}
+{% extends '//die/c/make.sh' %}
 
 {% block fetch %}
 http://frodo.looijaard.name/system/files/software/getopt/getopt-1.1.6.tar.gz

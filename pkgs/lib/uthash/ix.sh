@@ -1,4 +1,4 @@
-{% extends '//die/c_std.sh' %}
+{% extends '//die/c/c_std.sh' %}
 
 {% block fetch %}
 https://github.com/troydhanson/uthash/archive/refs/tags/v2.3.0.tar.gz

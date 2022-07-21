@@ -1,4 +1,4 @@
-{% extends '//die/gnome.sh' %}
+{% extends '//die/c/gnome.sh' %}
 
 {% block fetch %}
 https://gitlab.gnome.org/GNOME/gnome-font-viewer/-/archive/42.0/gnome-font-viewer-42.0.tar.bz2

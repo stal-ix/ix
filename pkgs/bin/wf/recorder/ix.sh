@@ -1,4 +1,4 @@
-{% extends '//die/meson.sh' %}
+{% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
 https://github.com/ammen99/wf-recorder/archive/refs/tags/v0.3.0.tar.gz

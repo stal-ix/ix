@@ -1,4 +1,4 @@
-{% extends '//die/meson.sh' %}
+{% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
 https://gitlab.gnome.org/GNOME/mutter/-/archive/1f03a20939e05500d9d49c3078bb2839c2507fc7/mutter-1f03a20939e05500d9d49c3078bb2839c2507fc7.tar.bz2

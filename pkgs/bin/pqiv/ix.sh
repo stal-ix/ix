@@ -1,4 +1,4 @@
-{% extends '//die/make.sh' %}
+{% extends '//die/c/make.sh' %}
 
 {% block fetch %}
 https://github.com/phillipberndt/pqiv/archive/refs/tags/2.12.tar.gz

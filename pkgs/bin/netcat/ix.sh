@@ -1,4 +1,4 @@
-{% extends '//die/make.sh' %}
+{% extends '//die/c/make.sh' %}
 
 {% block fetch %}
 https://salsa.debian.org/debian/netcat-openbsd/-/archive/debian/1.218-3/netcat-openbsd-debian-1.218-3.tar.bz2

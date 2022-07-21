@@ -1,4 +1,4 @@
-{% extends '//die/make.sh' %}
+{% extends '//die/c/make.sh' %}
 
 {% block fetch %}
 https://github.com/M1cR0xf7/urlenc/archive/a94b189b9a224816b14dbe4245c0e9816f6075e6.tar.gz

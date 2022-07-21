@@ -1,4 +1,4 @@
-{% extends '//die/meson.sh' %}
+{% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
 https://git.sr.ht/~emersion/grim/archive/v1.4.0.tar.gz

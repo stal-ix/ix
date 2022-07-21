@@ -1,4 +1,4 @@
-{% extends '//die/make.sh' %}
+{% extends '//die/c/make.sh' %}
 
 {% block fetch %}
 https://downloads.sourceforge.net/hdparm/hdparm-9.64.tar.gz

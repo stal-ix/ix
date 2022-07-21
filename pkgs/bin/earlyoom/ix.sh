@@ -1,4 +1,4 @@
-{% extends '//die/make.sh' %}
+{% extends '//die/c/make.sh' %}
 
 {% block fetch %}
 https://github.com/rfjakob/earlyoom/archive/refs/tags/v1.7.tar.gz

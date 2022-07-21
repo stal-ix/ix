@@ -1,4 +1,4 @@
-{% extends '//die/make.sh' %}
+{% extends '//die/c/make.sh' %}
 
 {% block fetch %}
 https://github.com/adsr/mle/archive/6ce64b207aa7bdcdff031b78bfb1d785dd555091.tar.gz

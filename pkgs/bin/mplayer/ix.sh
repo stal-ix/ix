@@ -1,4 +1,4 @@
-{% extends '//die/configure.sh' %}
+{% extends '//die/c/configure.sh' %}
 
 {% block fetch %}
 https://mplayerhq.hu/MPlayer/releases/MPlayer-1.5.tar.xz

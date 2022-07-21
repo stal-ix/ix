@@ -1,4 +1,4 @@
-{% extends '//die/make.sh' %}
+{% extends '//die/c/make.sh' %}
 
 {% block fetch %}
 https://distfiles.macports.org/bsdiff/bsdiff-4.3.tar.gz

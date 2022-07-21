@@ -1,4 +1,4 @@
-{% extends '//die/make.sh' %}
+{% extends '//die/c/make.sh' %}
 
 {% block fetch %}
 https://github.com/niklata/ndhc/archive/refs/tags/v2022-03-08-v2.tar.gz

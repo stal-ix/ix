@@ -1,4 +1,4 @@
-{% extends '//die/configure.sh' %}
+{% extends '//die/c/configure.sh' %}
 
 {% block fetch %}
 https://download.qemu.org/qemu-7.0.0.tar.xz

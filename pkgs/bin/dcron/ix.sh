@@ -1,4 +1,4 @@
-{% extends '//die/make.sh' %}
+{% extends '//die/c/make.sh' %}
 
 {% block fetch %}
 https://github.com/dubiousjim/dcron/archive/refs/tags/v4.5.tar.gz

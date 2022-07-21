@@ -1,4 +1,4 @@
-{% extends '//die/make.sh' %}
+{% extends '//die/c/make.sh' %}
 
 {% block fetch %}
 https://github.com/Tomas-M/iotop/archive/refs/tags/v1.22.tar.gz

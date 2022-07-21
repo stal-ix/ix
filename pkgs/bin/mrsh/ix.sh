@@ -1,4 +1,4 @@
-{% extends '//die/meson.sh' %}
+{% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
 https://github.com/emersion/mrsh/archive/cd3c3a48055ab4085d83f149ff4b4feba40b40cb.zip

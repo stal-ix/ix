@@ -1,4 +1,4 @@
-{% extends '//die/meson.sh' %}
+{% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
 https://github.com/linuxwacom/libwacom/releases/download/libwacom-2.3.0/libwacom-2.3.0.tar.xz

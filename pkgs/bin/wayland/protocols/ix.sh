@@ -1,4 +1,4 @@
-{% extends '//die/meson.sh' %}
+{% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
 https://github.com/wayland-project/wayland-protocols/archive/refs/tags/1.26.tar.gz

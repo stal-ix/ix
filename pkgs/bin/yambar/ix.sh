@@ -1,4 +1,4 @@
-{% extends '//die/meson.sh' %}
+{% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
 https://codeberg.org/dnkl/yambar/archive/1.8.0.tar.gz

@@ -1,4 +1,4 @@
-{% extends '//die/make.sh' %}
+{% extends '//die/c/make.sh' %}
 
 {% block fetch %}
 https://github.com/kaniini/libucontext/archive/refs/tags/libucontext-1.2.tar.gz

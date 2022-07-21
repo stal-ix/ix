@@ -1,4 +1,4 @@
-{% extends '//die/meson.sh' %}
+{% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
 https://download.gnome.org/sources/atkmm/2.28/atkmm-2.28.2.tar.xz

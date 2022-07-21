@@ -1,4 +1,4 @@
-{% extends '//die/meson.sh' %}
+{% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
 https://github.com/videolabs/libmicrodns/archive/refs/tags/0.2.0.tar.gz

@@ -1,4 +1,4 @@
-{% extends '//die/meson.sh' %}
+{% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
 https://git.sr.ht/~kennylevinsen/wlsunset/archive/0.2.0.tar.gz

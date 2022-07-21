@@ -1,4 +1,4 @@
-{% extends '//die/make.sh' %}
+{% extends '//die/c/make.sh' %}
 
 {% block fetch %}
 https://github.com/mawww/kakoune/archive/refs/tags/v2021.11.08.tar.gz

@@ -1,4 +1,4 @@
-{% extends '//die/meson.sh' %}
+{% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
 https://codeberg.org/dnkl/fnott/archive/1.2.1.tar.gz

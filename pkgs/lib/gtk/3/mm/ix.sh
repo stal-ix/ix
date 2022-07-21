@@ -1,4 +1,4 @@
-{% extends '//die/meson.sh' %}
+{% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
 https://download.gnome.org/sources/gtkmm/3.24/gtkmm-3.24.5.tar.xz

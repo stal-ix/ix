@@ -1,4 +1,4 @@
-{% extends '//die/c_std.sh' %}
+{% extends '//die/c/c_std.sh' %}
 
 {% block fetch %}
 https://github.com/webview/webview/archive/5f6562f358d9f50df7fef2214e3e0ee8de87d5dc.zip

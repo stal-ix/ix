@@ -1,4 +1,4 @@
-{% extends '//die/make.sh' %}
+{% extends '//die/c/make.sh' %}
 
 {% block fetch %}
 https://www.kernel.org/pub/software/utils/pciutils/pciutils-3.8.0.tar.xz

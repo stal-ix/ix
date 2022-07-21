@@ -1,4 +1,4 @@
-{% extends '//die/meson.sh' %}
+{% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
 #https://github.com/flatpak/libportal/archive/refs/tags/0.6.tar.gz

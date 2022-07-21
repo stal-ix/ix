@@ -1,4 +1,4 @@
-{% extends '//die/make.sh' %}
+{% extends '//die/c/make.sh' %}
 
 {% block fetch %}
 http://miniupnp.free.fr/files/download.php?file=miniupnpc-2.2.3.tar.gz

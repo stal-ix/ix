@@ -1,4 +1,4 @@
-{% extends '//die/configure.sh' %}
+{% extends '//die/c/configure.sh' %}
 
 {% block fetch %}
 https://downloads.scummvm.org/frs/scummvm/2.6.0/scummvm-2.6.0.tar.xz

@@ -1,4 +1,4 @@
-{% extends '//die/kconfig.sh' %}
+{% extends '//die/c/kconfig.sh' %}
 
 {% block host_libs %}
 lib/elfutils

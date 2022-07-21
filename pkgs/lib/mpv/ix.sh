@@ -1,4 +1,4 @@
-{% extends '//die/waf.sh' %}
+{% extends '//die/c/waf.sh' %}
 
 {% block fetch %}
 https://github.com/mpv-player/mpv/archive/refs/tags/v0.34.1.tar.gz

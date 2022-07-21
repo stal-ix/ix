@@ -1,4 +1,4 @@
-{% extends '//die/make.sh' %}
+{% extends '//die/c/make.sh' %}
 
 {% block fetch %}
 #https://sourceforge.net/projects/mingetty/files/mingetty/1.08/mingetty-1.08.tar.gz

@@ -1,4 +1,4 @@
-{% extends '//die/configure.sh' %}
+{% extends 'configure.sh' %}
 
 {% block step_patch %}
 {% block touch_yl %}

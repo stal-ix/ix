@@ -1,4 +1,4 @@
-{% extends '//die/meson.sh' %}
+{% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
 https://github.com/freedesktop/xkeyboard-config/archive/refs/tags/xkeyboard-config-2.36.tar.gz

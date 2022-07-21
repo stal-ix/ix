@@ -1,4 +1,4 @@
-{% extends '//die/make.sh' %}
+{% extends '//die/c/make.sh' %}
 
 {% block fetch %}
 http://miniupnp.free.fr/files/download.php?file=libnatpmp-20150609.tar.gz

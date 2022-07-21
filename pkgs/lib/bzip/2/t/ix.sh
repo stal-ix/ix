@@ -1,4 +1,4 @@
-{% extends '//die/make.sh' %}
+{% extends '//die/c/make.sh' %}
 
 {% block fetch %}
 https://sourceware.org/pub/bzip2/bzip2-1.0.8.tar.gz

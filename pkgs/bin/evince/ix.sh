@@ -1,4 +1,4 @@
-{% extends '//die/gnome.sh' %}
+{% extends '//die/c/gnome.sh' %}
 
 {% block fetch %}
 https://download.gnome.org/sources/evince/42/evince-42.3.tar.xz

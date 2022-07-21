@@ -1,4 +1,4 @@
-{% extends '//die/meson.sh' %}
+{% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
 https://codeberg.org/dnkl/fuzzel/archive/1.7.0.tar.gz

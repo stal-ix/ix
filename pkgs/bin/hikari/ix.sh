@@ -1,4 +1,4 @@
-{% extends '//die/make.sh' %}
+{% extends '//die/c/make.sh' %}
 
 {% block fetch %}
 https://hikari.acmelabs.space/releases/hikari-2.3.3.tar.gz

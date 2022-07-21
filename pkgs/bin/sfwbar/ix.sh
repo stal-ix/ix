@@ -1,4 +1,4 @@
-{% extends '//die/meson.sh' %}
+{% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
 https://github.com/LBCrion/sfwbar/archive/refs/tags/v1.0_beta6.tar.gz

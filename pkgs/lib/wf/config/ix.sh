@@ -1,4 +1,4 @@
-{% extends '//die/meson.sh' %}
+{% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
 https://github.com/WayfireWM/wf-config/archive/refs/tags/v0.7.1.tar.gz

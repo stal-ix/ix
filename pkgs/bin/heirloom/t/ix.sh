@@ -1,4 +1,4 @@
-{% extends '//die/c_std.sh' %}
+{% extends '//die/c/c_std.sh' %}
 
 {% block fetch %}
 https://github.com/pg83/heirloom/archive/refs/tags/v1.tar.gz

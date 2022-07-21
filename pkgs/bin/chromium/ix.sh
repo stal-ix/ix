@@ -1,4 +1,4 @@
-{% extends '//die/gn.sh' %}
+{% extends '//die/c/gn.sh' %}
 
 {% block fetch %}
 #https://commondatastorage.googleapis.com/chromium-browser-official/chromium-97.0.4692.71.tar.xz

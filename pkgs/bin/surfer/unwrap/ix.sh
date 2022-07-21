@@ -1,4 +1,4 @@
-{% extends '//die/make.sh' %}
+{% extends '//die/c/make.sh' %}
 
 {% block fetch %}
 https://github.com/nihilowy/surfer/archive/704299e0f5a3ad97446288f54c419f136e417865.zip

@@ -1,4 +1,4 @@
-{% extends '//die/meson.sh' %}
+{% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
 https://github.com/argp-standalone/argp-standalone/archive/refs/tags/1.5.0.tar.gz

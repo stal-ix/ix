@@ -1,4 +1,4 @@
-{% extends '//die/ninja.sh' %}
+{% extends '//die/c/ninja.sh' %}
 
 {% block fetch %}
 https://github.com/mjansson/rpmalloc/archive/refs/tags/1.4.4.tar.gz

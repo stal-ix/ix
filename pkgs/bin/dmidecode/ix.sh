@@ -1,4 +1,4 @@
-{% extends '//die/make.sh' %}
+{% extends '//die/c/make.sh' %}
 
 {% block fetch %}
 http://download.savannah.gnu.org/releases/dmidecode/dmidecode-3.4.tar.xz

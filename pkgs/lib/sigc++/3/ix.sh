@@ -1,4 +1,4 @@
-{% extends '//die/meson.sh' %}
+{% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
 https://download.gnome.org/sources/libsigc++/3.0/libsigc%2B%2B-3.0.7.tar.xz

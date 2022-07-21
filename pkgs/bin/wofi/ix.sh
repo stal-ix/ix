@@ -1,4 +1,4 @@
-{% extends '//die/meson.sh' %}
+{% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
 https://hg.sr.ht/~scoopta/wofi/archive/v1.2.4.tar.gz

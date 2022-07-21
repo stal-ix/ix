@@ -1,4 +1,4 @@
-{% extends '//die/make.sh' %}
+{% extends '//die/c/make.sh' %}
 
 {% block fetch %}
 https://github.com/J-Lentz/iwgtk/archive/refs/tags/v0.7.tar.gz

@@ -1,4 +1,4 @@
-{% extends '//die/gnome.sh' %}
+{% extends '//die/c/gnome.sh' %}
 
 {% block fetch %}
 https://gitlab.gnome.org/GNOME/epiphany/-/archive/43.alpha/epiphany-43.alpha.tar.bz2

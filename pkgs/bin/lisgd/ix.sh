@@ -1,4 +1,4 @@
-{% extends '//die/make.sh' %}
+{% extends '//die/c/make.sh' %}
 
 {% block fetch %}
 https://git.sr.ht/~mil/lisgd/archive/0.3.4.tar.gz

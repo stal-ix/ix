@@ -1,4 +1,4 @@
-{% extends '//die/make.sh' %}
+{% extends '//die/c/make.sh' %}
 
 {% block fetch %}
 https://roy.marples.name/downloads/openresolv/openresolv-3.12.0.tar.xz

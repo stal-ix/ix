@@ -1,4 +1,4 @@
-{% extends '//die/make.sh' %}
+{% extends '//die/c/make.sh' %}
 
 {% block fetch %}
 https://github.com/jovanlanik/gtklock/archive/refs/tags/v1.2.0.tar.gz

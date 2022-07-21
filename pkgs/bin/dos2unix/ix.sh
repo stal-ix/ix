@@ -1,4 +1,4 @@
-{% extends '//die/make.sh' %}
+{% extends '//die/c/make.sh' %}
 
 {% block fetch %}
 https://waterlan.home.xs4all.nl/dos2unix/dos2unix-7.4.3.tar.gz

@@ -1,4 +1,4 @@
-{% extends '//die/meson.sh' %}
+{% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
 https://github.com/sctplab/usrsctp/archive/refs/tags/0.9.5.0.tar.gz

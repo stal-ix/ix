@@ -1,4 +1,4 @@
-{% extends '//die/make.sh' %}
+{% extends '//die/c/make.sh' %}
 
 {% block fetch %}
 https://github.com/libmpack/libmpack/archive/refs/tags/1.0.5.tar.gz

@@ -1,4 +1,4 @@
-{% extends '//die/make.sh' %}
+{% extends '//die/c/make.sh' %}
 
 {% block fetch %}
 http://www.haproxy.org/download/2.6/src/haproxy-2.6.1.tar.gz
