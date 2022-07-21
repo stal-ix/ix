@@ -1,8 +1,8 @@
 {% extends '//die/go/c.sh' %}
 
 {% block fetch %}
-https://github.com/tvrzna/emptty/archive/refs/tags/v0.8.1.tar.gz
-sha:3344c3f3a372f713a4384d37dce01fcce25bb0874c08ded3338ed34ab16839ad
+https://github.com/tvrzna/emptty/archive/864c0ec71bdb9309b0458fdaae141654ad04aa93.tar.gz
+sem:17a33795aee47d65721505bf6bb011d3638cfa46d1af313cc79eba8e452a3b97
 {% endblock %}
 
 {% block go_tags %}
@@ -17,12 +17,5 @@ cp emptty ${out}/bin/
 {% endblock %}
 
 {% block patch %}
-find . -type f | while read l; do
-    sed -e 's|getspnam|getpwnam|' \
-        -e 's|<shadow.h>|<pwd.h>|' \
-        -e 's|sp_pwdp|pw_passwd|' \
-        -i ${l}
-done
-
 sed -e 's|.*setenv.*getShell.*||' -i src/session.go
 {% endblock %}
