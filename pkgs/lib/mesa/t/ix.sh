@@ -26,7 +26,7 @@ lib/mesa/fakes
 bld/make
 bld/flex
 bld/bison
-bin/wayland/protocols
+bld/wayland
 {% endblock %}
 
 {% block meson_flags %}

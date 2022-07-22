@@ -22,5 +22,5 @@ lib/{{allocator}}/trim(delay=3,bytes=1000000)
 {% block bld_tool %}
 bin/scdoc
 lib/curses/n
-bin/wayland/protocols
+bld/wayland
 {% endblock %}

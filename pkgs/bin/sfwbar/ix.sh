@@ -13,7 +13,7 @@ lib/gtk/layer/shell
 {% endblock %}
 
 {% block bld_tool %}
-bin/wayland/protocols
+bld/wayland
 {% endblock %}
 
 {% block install %}

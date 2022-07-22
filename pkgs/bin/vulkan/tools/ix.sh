@@ -15,7 +15,7 @@ lib/vulkan/headers
 {% block bld_tool %}
 bin/glslang
 bld/pkg/config
-bin/wayland/protocols
+bld/wayland
 {% endblock %}
 
 {% block cmake_flags %}

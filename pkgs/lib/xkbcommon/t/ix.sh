@@ -8,7 +8,7 @@ sha:3b86670dd91441708dedc32bc7f684a034232fd4a9bb209f53276c9783e9d40e
 {% block bld_tool %}
 bld/flex
 bld/bison
-bin/wayland/protocols
+bld/wayland
 {% endblock %}
 
 {% block lib_deps %}

@@ -32,7 +32,7 @@ bld/flex
 bld/bison
 bld/gettext
 bld/glib/codegen
-bin/wayland/protocols
+bld/wayland
 {% endblock %}
 
 {% block patch %}

@@ -8,7 +8,7 @@ bld/python
 bld/gettext
 bld/pkg/config
 bld/glib/codegen
-bin/wayland/protocols
+bld/wayland
 {% endblock %}
 
 {% block ninja_threads %}4{% endblock %}

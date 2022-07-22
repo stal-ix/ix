@@ -13,5 +13,5 @@ lib/wlroots/15
 
 {% block bld_tool %}
 bld/pkg/config
-bin/wayland/protocols
+bld/wayland
 {% endblock %}

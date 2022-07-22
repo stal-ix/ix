@@ -19,8 +19,7 @@ lib/drivers/3d
 {% endblock %}
 
 {% block bld_tool %}
-bin/wayland/scanner
-bin/wayland/protocols
+bld/wayland
 {% endblock %}
 
 {% block meson_flags %}

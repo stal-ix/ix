@@ -18,5 +18,5 @@ lib/linux
 {% endblock %}
 
 {% block bld_tool %}
-bin/wayland/protocols
+bld/wayland
 {% endblock %}

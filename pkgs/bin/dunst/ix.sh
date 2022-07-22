@@ -18,7 +18,7 @@ lib/wayland
 {% block bld_tool %}
 bld/help2man
 bld/pkg/config
-bin/wayland/protocols
+bld/wayland
 {% endblock %}
 
 {% block patch %}

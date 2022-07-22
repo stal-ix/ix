@@ -27,7 +27,7 @@ lib/vulkan/headers
 {% block bld_tool %}
 bin/waf
 bld/perl
-bin/wayland/protocols
+bld/wayland
 {% endblock %}
 
 {% block waf_flags %}

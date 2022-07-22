@@ -23,7 +23,7 @@ lib/drivers/3d
 {% block bld_tool %}
 bld/bmake
 bld/pkg/config
-bin/wayland/protocols
+bld/wayland
 {% endblock %}
 
 {% block make_flags %}

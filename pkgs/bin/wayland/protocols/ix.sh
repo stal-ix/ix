@@ -9,10 +9,6 @@ sha:fe56386f436a84e97c3b6a61b76306f205a64425900f247ad0048174b9c32d4d
 bin/wayland/scanner
 {% endblock %}
 
-{% block run_deps %}
-bin/wayland/scanner
-{% endblock %}
-
 {% block bld_libs %}
 lib/c
 lib/ffi

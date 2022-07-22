@@ -21,7 +21,7 @@ lib/mesa/glesv2/dl
 
 {% block bld_tool %}
 bld/make
-bin/wayland/protocols
+bld/wayland
 {% endblock %}
 
 {% block patch %}

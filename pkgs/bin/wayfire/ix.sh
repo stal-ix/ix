@@ -32,7 +32,7 @@ lib/mesa/glesv2
 
 {% block bld_tool %}
 bld/scripts/dlfcn
-bin/wayland/protocols
+bld/wayland
 {% endblock %}
 
 {% block patch %}

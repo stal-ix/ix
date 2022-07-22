@@ -13,7 +13,7 @@ lib/fontconfig
 
 {% block bld_tool %}
 lib/curses/n
-bin/wayland/protocols
+bld/wayland
 {{super()}}
 {% endblock %}
 

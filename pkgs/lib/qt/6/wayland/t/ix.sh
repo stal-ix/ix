@@ -14,7 +14,7 @@ lib/qt/6/base
 {% endblock %}
 
 {% block bld_tool %}
-bin/wayland/protocols
+bld/wayland
 {% endblock %}
 
 {% block patch %}

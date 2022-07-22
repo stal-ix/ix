@@ -21,7 +21,7 @@ zwp_linux_buffer_params_v1_interface
 
 {% block bld_tool %}
 bld/glib/codegen
-bin/wayland/protocols
+bld/wayland
 {% endblock %}
 
 {% block env_lib %}

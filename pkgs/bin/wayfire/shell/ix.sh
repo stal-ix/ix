@@ -17,7 +17,7 @@ sed -e 's|.*dep.*wayfire.*||' -i meson.build
 {% endblock %}
 
 {% block bld_tool %}
-bin/wayland/protocols
+bld/wayland
 {% endblock %}
 
 {% block meson_flags %}

@@ -20,7 +20,7 @@ lib/gdk/pixbuf
 {% block bld_tool %}
 bin/scdoc
 bin/glslang
-bin/wayland/protocols
+bld/wayland
 {% endblock %}
 
 {% block c_rename_symbol %}

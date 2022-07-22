@@ -17,7 +17,7 @@ lib/gdk/pixbuf
 {% block bld_tool %}
 bld/gettext
 bld/glib/codegen
-bin/wayland/protocols
+bld/wayland
 {% endblock %}
 
 {% block run_data %}

@@ -21,7 +21,7 @@ lib/gdk/pixbuf
 bld/flex
 bld/bison
 bld/glib/codegen
-bin/wayland/protocols
+bld/wayland
 {% endblock %}
 
 {% block meson_flags %}

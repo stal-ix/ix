@@ -17,8 +17,7 @@ lib/vulkan/headers
 
 {% block bld_tool %}
 lib/k/ecm
-bin/wayland/scanner
-bin/wayland/protocols
+bld/wayland
 {% endblock %}
 
 {% block cmake_flags %}

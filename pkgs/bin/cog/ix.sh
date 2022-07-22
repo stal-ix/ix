@@ -14,7 +14,7 @@ lib/web/kit/wpe
 {% endblock %}
 
 {% block bld_tool %}
-bin/wayland/protocols
+bld/wayland
 {% endblock %}
 
 {% block build_flags %}

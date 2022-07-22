@@ -35,7 +35,7 @@ lib/gsettings/desktop/schemas
 {% block bld_tool %}
 bld/gettext
 bld/glib/codegen
-bin/wayland/protocols
+bld/wayland
 {% endblock %}
 
 {% block meson_flags %}

@@ -25,7 +25,7 @@ lib/double/conversion
 {% endblock %}
 
 {% block bld_tool %}
-bin/wayland/protocols
+bld/wayland
 {{super()}}
 {% endblock %}
 

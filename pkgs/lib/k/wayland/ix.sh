@@ -16,7 +16,7 @@ lib/qt/6/wayland
 
 {% block bld_tool %}
 bld/qt/6
-bin/wayland/protocols
+bld/wayland
 {% endblock %}
 
 {% block cmake_flags %}
