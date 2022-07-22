@@ -17,3 +17,7 @@ noutmp
 mkdir ${out}/bin
 cp emptty ${out}/bin/
 {% endblock %}
+
+{% block patch %}
+sed -e 's|env: Xorg|env: Wayland|' -i src/desktop.go
+{% endblock %}
