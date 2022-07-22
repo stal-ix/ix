@@ -2,5 +2,5 @@
 
 {% block run_deps %}
 bin/getent
-bin/emptty/unwrap
+bin/emptty/wayland
 {% endblock %}
