@@ -253,12 +253,12 @@ func (self *Executor) visitAll(nodes []string) {
     for _, n := range nodes {
         o := self.byOut[n]
 
+        wg.Add(1)
+
         go func() {
             defer wg.Done()
             self.future(o).callOnce()
         }()
-
-        wg.Add(1)
     }
 }
 
