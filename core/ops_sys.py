@@ -6,7 +6,7 @@ import core.error as ce
 
 
 def run_cmd(cmd, input=''):
-    if os.path.isfile('/bin/assemble'):
+    if cmd[0] == 'execute':
         prog = '/bin/assemble'
     else:
         prog = '/bin/ix'

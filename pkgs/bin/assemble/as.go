@@ -95,6 +95,10 @@ func env(cmd *Cmd) []string {
 }
 
 func lookupPath(prog string, path string) string {
+    if prog[:1] == "/" {
+        return prog
+    }
+
     for _, p := range strings.Split(path, ":") {
         pp := p + "/" + prog
 

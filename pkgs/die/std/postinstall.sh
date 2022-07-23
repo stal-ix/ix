@@ -75,9 +75,9 @@ done
 {% endblock %}
 
 {% block purge_broken_links %}
-find ${out} -xtype l | sort | uniq | while read l; do
-    rm ${l}
-done
+find ${out} -xtype l -delete
+find ${out} -xtype l -delete
+find ${out} -xtype l -delete
 {% endblock %}
 
 {% block purge_empty_dirs %}
