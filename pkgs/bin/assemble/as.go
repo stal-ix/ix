@@ -127,7 +127,7 @@ func executeCmd(c *Cmd) {
         Env: env(c),
         Dir: "/",
         Stdin: strings.NewReader(c.Stdin),
-        Stdout: os.Stdout,
+        Stdout: os.Stderr,
         Stderr: os.Stderr,
     }
 
