@@ -154,19 +154,19 @@ func executeNode(node *Node) {
     }
 }
 
-type NodeFuture struct {
+type Future struct {
     f func()
     o sync.Once
 }
 
-func (self *NodeFuture) callOnce() {
+func (self *Future) callOnce() {
     self.o.Do(self.f)
 }
 
 type Executor struct {
     byOut map[string]*Node
     lock sync.Mutex
-    vis map[*Node]*NodeFuture
+    vis map[*Node]*Future
     sem map[string]*Semaphore
 }
 
@@ -192,15 +192,15 @@ func (self *Executor) execute(node *Node) {
     executeNode(node)
 }
 
-func newFuture(ex *Executor, node *Node) *NodeFuture {
-    return &NodeFuture{f: func() {
+func newNodeFuture(ex *Executor, node *Node) *Future {
+    return &Future{f: func() {
         ex.execute(node)
     }}
 }
 
 func newExecutor(graph *Graph) *Executor {
     byOut := map[string]*Node{}
-    vis := map[*Node]*NodeFuture{}
+    vis := map[*Node]*Future{}
 
     for i, _ := range graph.Nodes {
         node := &graph.Nodes[i]
@@ -228,7 +228,7 @@ func newExecutor(graph *Graph) *Executor {
     return &Executor{byOut: byOut, vis: vis, sem: sem}
 }
 
-func (self *Executor) future(node *Node) *NodeFuture {
+func (self *Executor) future(node *Node) *Future {
     self.lock.Lock()
     defer self.lock.Unlock()
 
@@ -236,7 +236,7 @@ func (self *Executor) future(node *Node) *NodeFuture {
         return fut
     }
 
-    fut := newFuture(self, node)
+    fut := newNodeFuture(self, node)
     self.vis[node] = fut
 
     return fut
