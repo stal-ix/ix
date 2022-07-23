@@ -206,7 +206,7 @@ func newExecutor(graph *Graph) *Executor {
     byOut := map[string]*Node{}
     vis := map[*Node]*Future{}
 
-    for i, _ := range graph.Nodes {
+    for i := range graph.Nodes {
         node := &graph.Nodes[i]
 
         for _, out := range outs(node) {
@@ -215,7 +215,7 @@ func newExecutor(graph *Graph) *Executor {
     }
 
     // validate
-    for i, _ := range graph.Nodes {
+    for i := range graph.Nodes {
         for _, in := range ins(&graph.Nodes[i]) {
             if _, ok := byOut[in]; !ok {
                 log.Fatalf("%no node with output %s%s", R, in, RST)
