@@ -138,7 +138,7 @@ func executeCmd(c *Cmd) {
 
 func executeNode(node *Node) {
     for _, o := range outs(node) {
-        fmt.Printf("%sINFLY %s%s\n", Y, o, RST)
+        fmt.Printf("%sENTER %s%s\n", B, o, RST)
     }
 
     for _, cmd := range node.Cmds {
@@ -150,7 +150,7 @@ func executeNode(node *Node) {
             file.Close()
         }
 
-        fmt.Printf("%sREADY %s%s\n", G, o, RST)
+        fmt.Printf("%sLEAVE %s%s\n", B, o, RST)
     }
 }
 
