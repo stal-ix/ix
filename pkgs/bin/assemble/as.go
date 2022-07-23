@@ -4,9 +4,11 @@ import (
     "os"
     "fmt"
     "log"
+    "sync"
     "strings"
     "os/exec"
     "encoding/json"
+//    "golang.org/x/sync/semaphore"
 )
 
 const (
@@ -131,16 +133,38 @@ func executeNode(node *Node) {
     }
 }
 
-func main() {
-    var graph Graph
+type NodeFuture struct {
+    f func()
+    o sync.Once
+}
 
-    err := json.NewDecoder(os.Stdin).Decode(&graph)
+func (self *NodeFuture) callOnce() {
+    self.o.Do(self.f)
+}
 
-    if err != nil {
-        log.Fatal(err)
+type Executor struct {
+    byOut map[string]*Node
+    lock sync.Mutex
+    vis map[*Node]*NodeFuture
+}
+
+func newFuture(ex *Executor, node *Node) *NodeFuture {
+    f := func() {
+        if complete(node) {
+            return
+        }
+
+        ex.visitAll(ins(node))
+
+        executeNode(node)
     }
 
+    return &NodeFuture{f: f}
+}
+
+func executor(graph *Graph) *Executor {
     byOut := map[string]*Node{}
+    vis := map[*Node]*NodeFuture{}
 
     for i, _ := range graph.Nodes {
         node := &graph.Nodes[i]
@@ -150,34 +174,52 @@ func main() {
         }
     }
 
-    vis := map[*Node]bool{}
+    return &Executor{byOut: byOut, vis: vis}
+}
 
-    var visit func (*Node)
+func (self *Executor) future(node *Node) *NodeFuture {
+    self.lock.Lock()
+    defer self.lock.Unlock()
 
-    visit = func (node *Node) {
-        if node == nil {
-            log.Fatal(R + "empty node" + RST)
-        }
-
-        if _, ok := vis[node]; ok {
-            return
-        }
-
-        vis[node] = true
-
-        if complete(node) {
-            return
-        }
-
-        for _, i := range ins(node) {
-            visit(byOut[i])
-        }
-
-        executeNode(node)
-
+    if fut, ok := self.vis[node]; ok {
+        return fut
     }
 
-    for _, target := range graph.Targets {
-        visit(byOut[target])
+    fut := newFuture(self, node)
+    self.vis[node] = fut
+
+    return fut
+}
+
+func (self *Executor) visit(node *Node, wg *sync.WaitGroup) {
+    if node == nil {
+        log.Fatal(R + "empty node" + RST)
     }
+
+    defer wg.Done()
+
+    self.future(node).callOnce()
+}
+
+func (self *Executor) visitAll(nodes []string) {
+    wg := &sync.WaitGroup{}
+    defer wg.Wait()
+
+    for _, n := range nodes {
+        o := self.byOut[n]
+        go self.visit(o, wg)
+        wg.Add(1)
+    }
+}
+
+func main() {
+    var graph Graph
+
+    err := json.NewDecoder(os.Stdin).Decode(&graph)
+
+    if err != nil {
+        log.Fatal(err)
+    }
+
+    executor(&graph).visitAll(graph.Targets)
 }
