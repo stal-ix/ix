@@ -7,11 +7,16 @@ base64 -d << EOF> assemble.go
 EOF
 {% endblock %}
 
+{% block bld_tool %}
+bld/pack
+{% endblock %}
+
 {% block go_build_flags %}
 assemble.go
 {% endblock %}
 
 {% block install %}
 mkdir ${out}/bin
+packexe assemble
 cp assemble ${out}/bin/
 {% endblock %}

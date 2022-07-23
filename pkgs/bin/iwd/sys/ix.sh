@@ -1,7 +1,7 @@
 {% extends '//bin/iwd/ix.sh' %}
 
 {% block bld_tool %}
-bin/upx
+bld/pack
 {{super()}}
 {% endblock %}
 
@@ -9,5 +9,5 @@ bin/upx
 {{super()}}
 rm -r ${out}/etc
 rm ${out}/bin/iwmon
-upx ${out}/bin/iwctl
+packexe ${out}/bin/iwctl
 {% endblock %}

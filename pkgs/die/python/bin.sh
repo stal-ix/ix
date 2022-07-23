@@ -4,9 +4,7 @@
 # TODO(pg): inherit conf values into bin
 lib/python/3/10
 bld/make
-{% if linux %}
-bin/upx
-{% endif %}
+bld/pack
 {{super()}}
 {% endblock %}
 
@@ -15,15 +13,9 @@ bin/upx
 {% block build %}
 export PYTHONHOME=${TARGET_PYTHONHOME}
 export PYTHONPLATLIBDIR=${PYTHONHOME}/lib
-
 python3 $(dirname $(which python3))/../share/freeze/freeze.py -m {{self.entry_point()}} $(cat modules)
-
 make -j ${make_thrs}
-
-{% if linux %}
-strip {{bin_out}}
-upx {{bin_out}}
-{% endif %}
+packexe {{bin_out}}
 {% endblock %}
 
 {% block install %}
