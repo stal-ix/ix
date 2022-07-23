@@ -148,18 +148,19 @@ type Executor struct {
     vis map[*Node]*NodeFuture
 }
 
-func newFuture(ex *Executor, node *Node) *NodeFuture {
-    f := func() {
-        if complete(node) {
-            return
-        }
-
-        ex.visitAll(ins(node))
-
-        executeNode(node)
+func (self *Executor) execute(node *Node) {
+    if complete(node) {
+        return
     }
 
-    return &NodeFuture{f: f}
+    self.visitAll(ins(node))
+    executeNode(node)
+}
+
+func newFuture(ex *Executor, node *Node) *NodeFuture {
+    return &NodeFuture{f: func() {
+        ex.execute(node)
+    }}
 }
 
 func newExecutor(graph *Graph) *Executor {
