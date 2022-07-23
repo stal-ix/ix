@@ -162,7 +162,7 @@ func newFuture(ex *Executor, node *Node) *NodeFuture {
     return &NodeFuture{f: f}
 }
 
-func executor(graph *Graph) *Executor {
+func newExecutor(graph *Graph) *Executor {
     byOut := map[string]*Node{}
     vis := map[*Node]*NodeFuture{}
 
@@ -191,12 +191,10 @@ func (self *Executor) future(node *Node) *NodeFuture {
     return fut
 }
 
-func (self *Executor) visit(node *Node, wg *sync.WaitGroup) {
+func (self *Executor) visit(node *Node) {
     if node == nil {
         log.Fatal(R + "empty node" + RST)
     }
-
-    defer wg.Done()
 
     self.future(node).callOnce()
 }
@@ -207,7 +205,12 @@ func (self *Executor) visitAll(nodes []string) {
 
     for _, n := range nodes {
         o := self.byOut[n]
-        go self.visit(o, wg)
+
+        go func() {
+            defer wg.Done()
+            self.visit(o)
+        }()
+
         wg.Add(1)
     }
 }
@@ -215,11 +218,9 @@ func (self *Executor) visitAll(nodes []string) {
 func main() {
     var graph Graph
 
-    err := json.NewDecoder(os.Stdin).Decode(&graph)
-
-    if err != nil {
+    if err := json.NewDecoder(os.Stdin).Decode(&graph); err != nil {
         log.Fatal(err)
     }
 
-    executor(&graph).visitAll(graph.Targets)
+    newExecutor(&graph).visitAll(graph.Targets)
 }
