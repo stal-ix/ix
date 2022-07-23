@@ -6,18 +6,13 @@ import core.error as ce
 
 
 def run_cmd(cmd, input=''):
-    if cmd[0] == 'execute':
-        prog = '/bin/assemble'
-    else:
-        prog = '/bin/ix'
-
     cmd = [
         '/bin/sudo',
         '/bin/chrt', '-i', '0',
         '/bin/nice', '-n', '20',
         '/bin/su', '-s',
-        prog, '-', 'ix'
-    ] + cmd
+        cmd[0], '-', 'ix'
+    ] + cmd[1:]
 
     try:
         subprocess.run(cmd, shell=False, input=input.encode(), check=True)
@@ -30,10 +25,10 @@ def run_cmd(cmd, input=''):
 
 class Ops:
     def execute_graph(self, graph):
-        run_cmd(['execute'], input=json.dumps(graph))
+        run_cmd(['/bin/assemble', 'execute'], input=json.dumps(graph))
 
     def gc(self):
-        run_cmd(['gc'])
+        run_cmd(['/bin/ix', 'gc'])
 
     def respawn(self):
         return ['/bin/ix']
