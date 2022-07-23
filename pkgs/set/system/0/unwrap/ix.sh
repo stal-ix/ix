@@ -4,6 +4,7 @@
 bin/mdevd/runit
 bin/ix
 bin/sud
+bin/assemble
 bin/iwd/runit
 bin/runit/sys
 bin/dbus/runit

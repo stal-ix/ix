@@ -1,3 +1,4 @@
+import os
 import json
 import subprocess
 
@@ -5,12 +6,17 @@ import core.error as ce
 
 
 def run_cmd(cmd, input=''):
+    if os.path.isfile('/bin/assemble'):
+        prog = '/bin/assemble'
+    else:
+        prog = '/bin/ix'
+
     cmd = [
         '/bin/sudo',
         '/bin/chrt', '-i', '0',
         '/bin/nice', '-n', '20',
         '/bin/su', '-s',
-        '/bin/ix', '-', 'ix'
+        prog, '-', 'ix'
     ] + cmd
 
     try:
@@ -20,6 +26,7 @@ def run_cmd(cmd, input=''):
             raise ce.Error('shit happen', exception=e, visible=False)
 
         raise e
+
 
 class Ops:
     def execute_graph(self, graph):

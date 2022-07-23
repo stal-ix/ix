@@ -14,6 +14,9 @@ def construct(cfg, kind=None):
         if os.path.isfile('/bin/ix'):
             kind = 'system'
 
+        if os.path.isfile('/bin/assemble'):
+            kind = 'system'
+
     if not kind:
         kind = 'local'
 

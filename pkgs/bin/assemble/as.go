@@ -80,7 +80,7 @@ func lookupPath(prog string, path string) string {
         }
     }
 
-    log.Fatalf("%scan not find %s in %s%s", R, prog, path, RST)
+    log.Fatalf("%scan not find %s in %s%s\n", R, prog, path, RST)
 
     return ""
 }
@@ -91,7 +91,7 @@ func complete(node *Node) bool {
             return false
         }
 
-        fmt.Printf("%sREADY %s%s", G, o, RST)
+        fmt.Printf("%sREADY %s%s\n", G, o, RST)
     }
 
     return true
@@ -115,7 +115,7 @@ func executeCmd(c *Cmd) {
 
 func executeNode(node *Node) {
     for _, o := range outs(node) {
-        fmt.Printf("%sINFLY %s%s", Y, o, RST)
+        fmt.Printf("%sINFLY %s%s\n", Y, o, RST)
     }
 
     for _, cmd := range node.Cmds {
@@ -127,7 +127,7 @@ func executeNode(node *Node) {
             file.Close()
         }
 
-        fmt.Printf("%sREADY %s%s", G, o, RST)
+        fmt.Printf("%sREADY %s%s\n", G, o, RST)
     }
 }
 
