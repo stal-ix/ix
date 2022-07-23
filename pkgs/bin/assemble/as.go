@@ -19,6 +19,26 @@ const (
     B = ESC + "[94m"
 )
 
+type Semaphore struct {
+    ch chan int
+}
+
+func newSemaphore(n int) *Semaphore {
+    return &Semaphore{ch: make(chan int, n)}
+}
+
+func (self *Semaphore) acquire(n int) {
+    for i := 0; i < n; i += 1 {
+        self.ch <- 0
+    }
+}
+
+func (self *Semaphore) release(n int) {
+    for i := 0; i < n; i += 1 {
+        <- self.ch
+    }
+}
+
 type Cmd struct {
     Args []string `json:"args"`
     Stdin string `json:"stdin"`
@@ -29,11 +49,13 @@ type Node struct {
     InDirs []string `json:"in_dir"`
     OutDirs []string `json:"out_dir"`
     Cmds []Cmd `json:"cmd"`
+    Pool string `json:"pool"`
 }
 
 type Graph struct {
     Nodes []Node `json:"nodes"`
     Targets []string `json:"targets"`
+    Pools map[string]int `json:"pools"`
 }
 
 func toFiles(dirs []string) []string {
@@ -145,6 +167,17 @@ type Executor struct {
     byOut map[string]*Node
     lock sync.Mutex
     vis map[*Node]*NodeFuture
+    sem map[string]*Semaphore
+}
+
+func (self *Executor) semaphore(pool string) *Semaphore {
+    if sem, ok := self.sem[pool]; ok {
+        return sem
+    }
+
+    log.Fatalf("%sbad pool%s%s", R, pool, RST)
+
+    return nil
 }
 
 func (self *Executor) execute(node *Node) {
@@ -153,6 +186,9 @@ func (self *Executor) execute(node *Node) {
     }
 
     self.visitAll(ins(node))
+    sem := self.semaphore(node.Pool)
+    sem.acquire(1)
+    defer sem.release(1)
     executeNode(node)
 }
 
@@ -174,7 +210,22 @@ func newExecutor(graph *Graph) *Executor {
         }
     }
 
-    return &Executor{byOut: byOut, vis: vis}
+    // validate
+    for i, _ := range graph.Nodes {
+        for _, in := range ins(&graph.Nodes[i]) {
+            if _, ok := byOut[in]; !ok {
+                log.Fatalf("%no node with output %s%s", R, in, RST)
+            }
+        }
+    }
+
+    sem := map[string]*Semaphore{}
+
+    for pool, count := range graph.Pools {
+        sem[pool] = newSemaphore(count)
+    }
+
+    return &Executor{byOut: byOut, vis: vis, sem: sem}
 }
 
 func (self *Executor) future(node *Node) *NodeFuture {
@@ -191,14 +242,6 @@ func (self *Executor) future(node *Node) *NodeFuture {
     return fut
 }
 
-func (self *Executor) visit(node *Node) {
-    if node == nil {
-        log.Fatal(R + "empty node" + RST)
-    }
-
-    self.future(node).callOnce()
-}
-
 func (self *Executor) visitAll(nodes []string) {
     wg := &sync.WaitGroup{}
     defer wg.Wait()
@@ -208,7 +251,7 @@ func (self *Executor) visitAll(nodes []string) {
 
         go func() {
             defer wg.Done()
-            self.visit(o)
+            self.future(o).callOnce()
         }()
 
         wg.Add(1)

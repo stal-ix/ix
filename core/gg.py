@@ -33,6 +33,10 @@ def build_graph(n):
     return {
         'nodes': list(build_commands(n)),
         'targets': [(x.out_dir + '/touch') for x in n],
+        'pools': {
+            'cpu': 4,
+            'other': 16,
+        },
     }
 
 

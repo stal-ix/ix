@@ -150,10 +150,10 @@ def group_by_out(nodes):
 
 
 class Executor:
-    def __init__(self, nodes):
+    def __init__(self, nodes, pools):
         self.s = {
-            'cpu': asyncio.Semaphore(4),
-            'other': asyncio.Semaphore(8),
+            'cpu': asyncio.Semaphore(pools['cpu']),
+            'other': asyncio.Semaphore(pools['other']),
         }
 
         self.o = group_by_out(nodes)
@@ -215,7 +215,7 @@ class Executor:
 
 
 async def arun(g):
-    await Executor(g['nodes']).visit_all(g['targets'])
+    await Executor(g['nodes'], g['pools']).visit_all(g['targets'])
 
 
 def execute(g):
