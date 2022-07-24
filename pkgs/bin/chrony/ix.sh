@@ -1,4 +1,4 @@
-{% extends '//die/c/autohell.sh' %}
+{% extends '//die/c/configure.sh' %}
 
 {% block fetch %}
 https://download.tuxfamily.org/chrony/chrony-4.2.tar.gz
