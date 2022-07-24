@@ -189,23 +189,13 @@ type Executor struct {
 	sem   map[string]*Semaphore
 }
 
-func (self *Executor) semaphore(pool string) *Semaphore {
-	if sem, ok := self.sem[pool]; ok {
-		return sem
-	}
-
-	abort(fmt.Sprintf("bad pool %s", pool))
-
-	return nil
-}
-
 func (self *Executor) execute(node *Node) {
 	if complete(node) {
 		return
 	}
 
 	self.visitAll(ins(node))
-	sem := self.semaphore(node.Pool)
+	sem, _ := self.sem[node.Pool]
 	sem.acquire(1)
 	defer sem.release(1)
 	executeNode(node)
@@ -228,6 +218,12 @@ func newExecutor(graph *Graph) *Executor {
 		}
 	}
 
+	sem := map[string]*Semaphore{}
+
+	for pool, count := range graph.Pools {
+		sem[pool] = newSemaphore(count)
+	}
+
 	// validate
 	for _, node := range graph.Nodes {
 		for _, in := range ins(&node) {
@@ -235,12 +231,10 @@ func newExecutor(graph *Graph) *Executor {
 				abort(fmt.Sprintf("no node generate %s", in))
 			}
 		}
-	}
 
-	sem := map[string]*Semaphore{}
-
-	for pool, count := range graph.Pools {
-		sem[pool] = newSemaphore(count)
+		if _, ok := sem[node.Pool]; !ok {
+			abort(fmt.Sprintf("bad pool %s", node.Pool))
+		}
 	}
 
 	return &Executor{byOut: byOut, sem: sem}
