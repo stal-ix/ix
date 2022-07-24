@@ -1,4 +1,4 @@
-{% extends '//die/inline/library.sh' %}
+{% extends '//die/c/c_std.sh' %}
 
 {% block fetch %}
 http://distcache.freebsd.org/local-distfiles/itetcu/libexecinfo-1.1.tar.bz2
@@ -12,15 +12,17 @@ lib/c
 {% endblock %}
 
 {% block patch %}
-rm test.c
 cat ${src}/*.patch | patch -p1
 {% endblock %}
 
-{% block step_unpack %}
-mkdir src; cd src; extract1 ${src}/*bz2
+{% block build %}
+cc -c stacktraverse.c
+cc -c execinfo.c
+ar q libexecinfo.a *.o
 {% endblock %}
 
 {% block install %}
-{{super()}}
-mv ${out}/lib/*.a ${out}/lib/libexecinfo.a
+mkdir ${out}/lib ${out}/include
+cp *.h ${out}/include
+cp *.a ${out}/lib
 {% endblock %}
