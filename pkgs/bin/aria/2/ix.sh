@@ -21,7 +21,3 @@ lib/sqlite/3
 {% block bld_tool %}
 bld/gettext
 {% endblock %}
-
-{% block build %}
-exit 1
-{% endblock %}
