@@ -28,7 +28,8 @@ func red(s string) string {
 }
 
 func abort(v any) {
-    panic(red(fmt.Sprint(v)) + "\n")
+    fmt.Println(red(fmt.Sprintf("abort: %v", v)))
+    os.Exit(1)
 }
 
 type Semaphore struct {
@@ -148,7 +149,7 @@ func executeCmd(c *Cmd) {
     }
 
     if err := cmd.Run(); err != nil {
-        panic(err)
+        abort(fmt.Sprintf("subcommand error: %v", err))
     }
 }
 
@@ -234,7 +235,7 @@ func newExecutor(graph *Graph) *Executor {
     for i := range graph.Nodes {
         for _, in := range ins(&graph.Nodes[i]) {
             if _, ok := byOut[in]; !ok {
-                abort(fmt.Sprintf("no node with output %s", in))
+                abort(fmt.Sprintf("no node generate %s", in))
             }
         }
     }
@@ -282,7 +283,7 @@ func main() {
     var graph Graph
 
     if err := json.NewDecoder(os.Stdin).Decode(&graph); err != nil {
-        abort(err)
+        abort(fmt.Sprintf("can not parse input graph: %v", err))
     }
 
     newExecutor(&graph).visitAll(graph.Targets)
