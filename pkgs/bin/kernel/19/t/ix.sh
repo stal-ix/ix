@@ -1,8 +1,6 @@
 {% extends '//bin/kernel/18/t/ix.sh' %}
 
-{% block kernel_name %}
-5-19-rc3-slot{{self.slot()}}
-{% endblock %}
+{% block kernel_version %}5-19-rc7{% endblock %}
 
 {% block fetch %}
 {% include 'ver.sh' %}

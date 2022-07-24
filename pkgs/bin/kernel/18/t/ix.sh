@@ -1,7 +1,7 @@
 {% extends '//bin/kernel/t/1/ix.sh' %}
 
 {% block kernel_name %}
-5-18-12-slot{{self.slot()}}
+{% block kernel_version %}5-18-14{% endblock %}-slot{{self.slot()}}
 {% endblock %}
 
 {% block fetch %}
