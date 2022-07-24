@@ -63,6 +63,8 @@ type Node struct {
 	OutDirs []string `json:"out_dir"`
 	Cmds    []Cmd    `json:"cmd"`
 	Pool    string   `json:"pool"`
+	lock    sync.Mutex
+	future  *Future
 }
 
 type Graph struct {
@@ -184,8 +186,6 @@ func (self *Future) callOnce() {
 
 type Executor struct {
 	byOut map[string]*Node
-	lock  sync.Mutex
-	vis   map[*Node]*Future
 	sem   map[string]*Semaphore
 }
 
@@ -219,7 +219,6 @@ func newNodeFuture(ex *Executor, node *Node) *Future {
 
 func newExecutor(graph *Graph) *Executor {
 	byOut := map[string]*Node{}
-	vis := map[*Node]*Future{}
 
 	for i := range graph.Nodes {
 		node := &graph.Nodes[i]
@@ -244,21 +243,18 @@ func newExecutor(graph *Graph) *Executor {
 		sem[pool] = newSemaphore(count)
 	}
 
-	return &Executor{byOut: byOut, vis: vis, sem: sem}
+	return &Executor{byOut: byOut, sem: sem}
 }
 
-func (self *Executor) future(node *Node) *Future {
-	self.lock.Lock()
-	defer self.lock.Unlock()
+func (self *Executor) futureFor(node *Node) *Future {
+	node.lock.Lock()
+	defer node.lock.Unlock()
 
-	if fut, ok := self.vis[node]; ok {
-		return fut
+	if node.future == nil {
+		node.future = newNodeFuture(self, node)
 	}
 
-	fut := newNodeFuture(self, node)
-	self.vis[node] = fut
-
-	return fut
+	return node.future
 }
 
 func (self *Executor) visitAll(nodes []string) {
@@ -272,7 +268,7 @@ func (self *Executor) visitAll(nodes []string) {
 
 		go func() {
 			defer wg.Done()
-			self.future(o).callOnce()
+			self.futureFor(o).callOnce()
 		}()
 	}
 }
