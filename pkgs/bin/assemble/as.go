@@ -90,11 +90,9 @@ func ins(node *Node) []string {
 }
 
 func checkExists(path string) bool {
-	if _, err := os.Stat(path); err == nil {
-		return true
-	}
+	_, err := os.Stat(path)
 
-	return false
+	return err == nil
 }
 
 func env(cmd *Cmd) []string {
