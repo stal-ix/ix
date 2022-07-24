@@ -138,7 +138,7 @@ func complete(node *Node) bool {
 }
 
 func executeCmd(c *Cmd) {
-	cmd := exec.Cmd{
+	cmd := &exec.Cmd{
 		Path:   lookupPath(c.Args[0], c.Env["PATH"]),
 		Args:   c.Args,
 		Env:    env(c),
