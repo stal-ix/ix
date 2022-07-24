@@ -229,8 +229,8 @@ func newExecutor(graph *Graph) *Executor {
 	}
 
 	// validate
-	for i := range graph.Nodes {
-		for _, in := range ins(&graph.Nodes[i]) {
+	for _, node := range graph.Nodes {
+		for _, in := range ins(&node) {
 			if _, ok := byOut[in]; !ok {
 				abort(fmt.Sprintf("no node generate %s", in))
 			}
