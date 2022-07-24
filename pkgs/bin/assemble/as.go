@@ -1,290 +1,290 @@
 package main
 
 import (
-    "os"
-    "fmt"
-    "sync"
-    "strings"
-    "os/exec"
-    "syscall"
-    "encoding/json"
+	"encoding/json"
+	"fmt"
+	"os"
+	"os/exec"
+	"strings"
+	"sync"
+	"syscall"
 )
 
 const (
-    ESC = "\x1b"
-    RST = ESC + "[0m"
-    R = ESC + "[91m"
-    G = ESC + "[92m"
-    Y = ESC + "[93m"
-    B = ESC + "[94m"
+	ESC = "\x1b"
+	RST = ESC + "[0m"
+	R   = ESC + "[91m"
+	G   = ESC + "[92m"
+	Y   = ESC + "[93m"
+	B   = ESC + "[94m"
 )
 
 func color(s string, color string) string {
-    return color + s + RST
+	return color + s + RST
 }
 
 func red(s string) string {
-    return color(s, R)
+	return color(s, R)
 }
 
 func abort(v any) {
-    fmt.Println(red(fmt.Sprintf("abort: %v", v)))
-    os.Exit(1)
+	fmt.Println(red(fmt.Sprintf("abort: %v", v)))
+	os.Exit(1)
 }
 
 type Semaphore struct {
-    ch chan int
+	ch chan int
 }
 
 func newSemaphore(n int) *Semaphore {
-    return &Semaphore{ch: make(chan int, n)}
+	return &Semaphore{ch: make(chan int, n)}
 }
 
 func (self *Semaphore) acquire(n int) {
-    for i := 0; i < n; i += 1 {
-        self.ch <- 0
-    }
+	for i := 0; i < n; i += 1 {
+		self.ch <- 0
+	}
 }
 
 func (self *Semaphore) release(n int) {
-    for i := 0; i < n; i += 1 {
-        <- self.ch
-    }
+	for i := 0; i < n; i += 1 {
+		<-self.ch
+	}
 }
 
 type Cmd struct {
-    Args []string `json:"args"`
-    Stdin string `json:"stdin"`
-    Env map[string]string `json:"env"`
+	Args  []string          `json:"args"`
+	Stdin string            `json:"stdin"`
+	Env   map[string]string `json:"env"`
 }
 
 type Node struct {
-    InDirs []string `json:"in_dir"`
-    OutDirs []string `json:"out_dir"`
-    Cmds []Cmd `json:"cmd"`
-    Pool string `json:"pool"`
+	InDirs  []string `json:"in_dir"`
+	OutDirs []string `json:"out_dir"`
+	Cmds    []Cmd    `json:"cmd"`
+	Pool    string   `json:"pool"`
 }
 
 type Graph struct {
-    Nodes []Node `json:"nodes"`
-    Targets []string `json:"targets"`
-    Pools map[string]int `json:"pools"`
+	Nodes   []Node         `json:"nodes"`
+	Targets []string       `json:"targets"`
+	Pools   map[string]int `json:"pools"`
 }
 
 func toFiles(dirs []string) []string {
-    res := []string{}
+	res := []string{}
 
-    for _, d := range dirs {
-        res = append(res, d + "/touch")
-    }
+	for _, d := range dirs {
+		res = append(res, d+"/touch")
+	}
 
-    return res
+	return res
 }
 
 func outs(node *Node) []string {
-    return toFiles(node.OutDirs)
+	return toFiles(node.OutDirs)
 }
 
 func ins(node *Node) []string {
-    return toFiles(node.InDirs)
+	return toFiles(node.InDirs)
 }
 
 func checkExists(path string) bool {
-    if _, err := os.Stat(path); err == nil {
-        return true
-    }
+	if _, err := os.Stat(path); err == nil {
+		return true
+	}
 
-    return false
+	return false
 }
 
 func env(cmd *Cmd) []string {
-    ret := []string{}
+	ret := []string{}
 
-    for k, v := range cmd.Env {
-        ret = append(ret, k + "=" + v)
-    }
+	for k, v := range cmd.Env {
+		ret = append(ret, k+"="+v)
+	}
 
-    return ret
+	return ret
 }
 
 func lookupPath(prog string, path string) string {
-    if prog[:1] == "/" {
-        return prog
-    }
+	if prog[:1] == "/" {
+		return prog
+	}
 
-    for _, p := range strings.Split(path, ":") {
-        pp := p + "/" + prog
+	for _, p := range strings.Split(path, ":") {
+		pp := p + "/" + prog
 
-        if checkExists(pp) {
-            return pp
-        }
-    }
+		if checkExists(pp) {
+			return pp
+		}
+	}
 
-    abort(fmt.Sprintf("can not find %s in %s", prog, path))
+	abort(fmt.Sprintf("can not find %s in %s", prog, path))
 
-    return ""
+	return ""
 }
 
 func complete(node *Node) bool {
-    for _, o := range outs(node) {
-        if !checkExists(o) {
-            return false
-        }
+	for _, o := range outs(node) {
+		if !checkExists(o) {
+			return false
+		}
 
-        fmt.Printf("%sREADY %s%s\n", G, o, RST)
-    }
+		fmt.Printf("%sREADY %s%s\n", G, o, RST)
+	}
 
-    return true
+	return true
 }
 
 func executeCmd(c *Cmd) {
-    cmd := exec.Cmd{
-        Path: lookupPath(c.Args[0], c.Env["PATH"]),
-        Args: c.Args,
-        Env: env(c),
-        Dir: "/",
-        Stdin: strings.NewReader(c.Stdin),
-        Stdout: os.Stderr,
-        Stderr: os.Stderr,
-    }
+	cmd := exec.Cmd{
+		Path:   lookupPath(c.Args[0], c.Env["PATH"]),
+		Args:   c.Args,
+		Env:    env(c),
+		Dir:    "/",
+		Stdin:  strings.NewReader(c.Stdin),
+		Stdout: os.Stderr,
+		Stderr: os.Stderr,
+	}
 
-    if err := cmd.Run(); err != nil {
-        abort(fmt.Sprintf("subcommand error: %v", err))
-    }
+	if err := cmd.Run(); err != nil {
+		abort(fmt.Sprintf("subcommand error: %v", err))
+	}
 }
 
 func executeNode(node *Node) {
-    for _, o := range outs(node) {
-        fmt.Printf("%sENTER %s%s\n", B, o, RST)
-    }
+	for _, o := range outs(node) {
+		fmt.Printf("%sENTER %s%s\n", B, o, RST)
+	}
 
-    for _, cmd := range node.Cmds {
-        executeCmd(&cmd)
-    }
+	for _, cmd := range node.Cmds {
+		executeCmd(&cmd)
+	}
 
-    syscall.Sync()
+	syscall.Sync()
 
-    for _, o := range outs(node) {
-        if file, err := os.Create(o); err == nil {
-            file.Close()
-        }
+	for _, o := range outs(node) {
+		if file, err := os.Create(o); err == nil {
+			file.Close()
+		}
 
-        fmt.Printf("%sLEAVE %s%s\n", B, o, RST)
-    }
+		fmt.Printf("%sLEAVE %s%s\n", B, o, RST)
+	}
 
-    syscall.Sync()
+	syscall.Sync()
 }
 
 type Future struct {
-    f func()
-    o sync.Once
+	f func()
+	o sync.Once
 }
 
 func (self *Future) callOnce() {
-    self.o.Do(self.f)
+	self.o.Do(self.f)
 }
 
 type Executor struct {
-    byOut map[string]*Node
-    lock sync.Mutex
-    vis map[*Node]*Future
-    sem map[string]*Semaphore
+	byOut map[string]*Node
+	lock  sync.Mutex
+	vis   map[*Node]*Future
+	sem   map[string]*Semaphore
 }
 
 func (self *Executor) semaphore(pool string) *Semaphore {
-    if sem, ok := self.sem[pool]; ok {
-        return sem
-    }
+	if sem, ok := self.sem[pool]; ok {
+		return sem
+	}
 
-    abort(fmt.Sprintf("bad pool %s", pool))
+	abort(fmt.Sprintf("bad pool %s", pool))
 
-    return nil
+	return nil
 }
 
 func (self *Executor) execute(node *Node) {
-    if complete(node) {
-        return
-    }
+	if complete(node) {
+		return
+	}
 
-    self.visitAll(ins(node))
-    sem := self.semaphore(node.Pool)
-    sem.acquire(1)
-    defer sem.release(1)
-    executeNode(node)
+	self.visitAll(ins(node))
+	sem := self.semaphore(node.Pool)
+	sem.acquire(1)
+	defer sem.release(1)
+	executeNode(node)
 }
 
 func newNodeFuture(ex *Executor, node *Node) *Future {
-    return &Future{f: func() {
-        ex.execute(node)
-    }}
+	return &Future{f: func() {
+		ex.execute(node)
+	}}
 }
 
 func newExecutor(graph *Graph) *Executor {
-    byOut := map[string]*Node{}
-    vis := map[*Node]*Future{}
+	byOut := map[string]*Node{}
+	vis := map[*Node]*Future{}
 
-    for i := range graph.Nodes {
-        node := &graph.Nodes[i]
+	for i := range graph.Nodes {
+		node := &graph.Nodes[i]
 
-        for _, out := range outs(node) {
-            byOut[out] = node
-        }
-    }
+		for _, out := range outs(node) {
+			byOut[out] = node
+		}
+	}
 
-    // validate
-    for i := range graph.Nodes {
-        for _, in := range ins(&graph.Nodes[i]) {
-            if _, ok := byOut[in]; !ok {
-                abort(fmt.Sprintf("no node generate %s", in))
-            }
-        }
-    }
+	// validate
+	for i := range graph.Nodes {
+		for _, in := range ins(&graph.Nodes[i]) {
+			if _, ok := byOut[in]; !ok {
+				abort(fmt.Sprintf("no node generate %s", in))
+			}
+		}
+	}
 
-    sem := map[string]*Semaphore{}
+	sem := map[string]*Semaphore{}
 
-    for pool, count := range graph.Pools {
-        sem[pool] = newSemaphore(count)
-    }
+	for pool, count := range graph.Pools {
+		sem[pool] = newSemaphore(count)
+	}
 
-    return &Executor{byOut: byOut, vis: vis, sem: sem}
+	return &Executor{byOut: byOut, vis: vis, sem: sem}
 }
 
 func (self *Executor) future(node *Node) *Future {
-    self.lock.Lock()
-    defer self.lock.Unlock()
+	self.lock.Lock()
+	defer self.lock.Unlock()
 
-    if fut, ok := self.vis[node]; ok {
-        return fut
-    }
+	if fut, ok := self.vis[node]; ok {
+		return fut
+	}
 
-    fut := newNodeFuture(self, node)
-    self.vis[node] = fut
+	fut := newNodeFuture(self, node)
+	self.vis[node] = fut
 
-    return fut
+	return fut
 }
 
 func (self *Executor) visitAll(nodes []string) {
-    wg := &sync.WaitGroup{}
-    defer wg.Wait()
+	wg := &sync.WaitGroup{}
+	defer wg.Wait()
 
-    for _, n := range nodes {
-        o := self.byOut[n]
+	for _, n := range nodes {
+		o := self.byOut[n]
 
-        wg.Add(1)
+		wg.Add(1)
 
-        go func() {
-            defer wg.Done()
-            self.future(o).callOnce()
-        }()
-    }
+		go func() {
+			defer wg.Done()
+			self.future(o).callOnce()
+		}()
+	}
 }
 
 func main() {
-    var graph Graph
+	var graph Graph
 
-    if err := json.NewDecoder(os.Stdin).Decode(&graph); err != nil {
-        abort(fmt.Sprintf("can not parse input graph: %v", err))
-    }
+	if err := json.NewDecoder(os.Stdin).Decode(&graph); err != nil {
+		abort(fmt.Sprintf("can not parse input graph: %v", err))
+	}
 
-    newExecutor(&graph).visitAll(graph.Targets)
+	newExecutor(&graph).visitAll(graph.Targets)
 }
