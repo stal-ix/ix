@@ -1,8 +1,7 @@
 {% extends '//bin/openssh/ix.sh' %}
 
-{% block bld_tool %}
-bld/pack
-{{super()}}
+{% block build_flags %}
+compress
 {% endblock %}
 
 {% block install %}
@@ -12,5 +11,4 @@ mv bin old
 mkdir bin
 mv old/ssh bin/sud_client
 rm -rf old share etc var
-packexe ${out}/bin/sud_client
 {% endblock %}
