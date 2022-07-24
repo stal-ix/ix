@@ -3,7 +3,6 @@ package main
 import (
     "os"
     "fmt"
-    "log"
     "sync"
     "strings"
     "os/exec"
@@ -108,7 +107,7 @@ func lookupPath(prog string, path string) string {
         }
     }
 
-    log.Fatalf("%scan not find %s in %s%s\n", R, prog, path, RST)
+    panic(fmt.Sprintf("%scan not find %s in %s%s\n", R, prog, path, RST))
 
     return ""
 }
@@ -137,7 +136,7 @@ func executeCmd(c *Cmd) {
     }
 
     if err := cmd.Run(); err != nil {
-        log.Fatal(err)
+        panic(err)
     }
 }
 
@@ -184,7 +183,7 @@ func (self *Executor) semaphore(pool string) *Semaphore {
         return sem
     }
 
-    log.Fatalf("%sbad pool%s%s", R, pool, RST)
+    panic(fmt.Sprintf("%sbad pool%s%s", R, pool, RST))
 
     return nil
 }
@@ -223,7 +222,7 @@ func newExecutor(graph *Graph) *Executor {
     for i := range graph.Nodes {
         for _, in := range ins(&graph.Nodes[i]) {
             if _, ok := byOut[in]; !ok {
-                log.Fatalf("%no node with output %s%s", R, in, RST)
+                panic(fmt.Sprintf("%no node with output %s%s", R, in, RST))
             }
         }
     }
@@ -271,7 +270,7 @@ func main() {
     var graph Graph
 
     if err := json.NewDecoder(os.Stdin).Decode(&graph); err != nil {
-        log.Fatal(err)
+        panic(err)
     }
 
     newExecutor(&graph).visitAll(graph.Targets)
