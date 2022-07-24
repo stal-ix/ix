@@ -10,7 +10,6 @@ lib/c
 lib/z
 lib/pcre
 lib/iconv
-lib/curses
 lib/oniguruma
 {% endblock %}
 
