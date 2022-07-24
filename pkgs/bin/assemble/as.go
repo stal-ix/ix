@@ -7,6 +7,7 @@ import (
     "sync"
     "strings"
     "os/exec"
+    "syscall"
     "encoding/json"
 )
 
@@ -149,6 +150,8 @@ func executeNode(node *Node) {
         executeCmd(&cmd)
     }
 
+    syscall.Sync()
+
     for _, o := range outs(node) {
         if file, err := os.Create(o); err == nil {
             file.Close()
@@ -156,6 +159,8 @@ func executeNode(node *Node) {
 
         fmt.Printf("%sLEAVE %s%s\n", B, o, RST)
     }
+
+    syscall.Sync()
 }
 
 type Future struct {
