@@ -19,12 +19,12 @@ const (
 	B   = ESC + "[94m"
 )
 
-func color(s string, color string) string {
+func color(color string, s string) string {
 	return color + s + RST
 }
 
 func red(s string) string {
-	return color(s, R)
+	return color(R, s)
 }
 
 func abort(v any) {
@@ -131,7 +131,7 @@ func complete(node *Node) bool {
 			return false
 		}
 
-		fmt.Printf("%sREADY %s%s\n", G, o, RST)
+		fmt.Println(color(G, "READY "+o))
 	}
 
 	return true
@@ -155,7 +155,7 @@ func executeCmd(c *Cmd) {
 
 func executeNode(node *Node) {
 	for _, o := range outs(node) {
-		fmt.Printf("%sENTER %s%s\n", B, o, RST)
+		fmt.Println(color(B, "ENTER "+o))
 	}
 
 	for _, cmd := range node.Cmds {
@@ -169,7 +169,7 @@ func executeNode(node *Node) {
 			file.Close()
 		}
 
-		fmt.Printf("%sLEAVE %s%s\n", B, o, RST)
+		fmt.Println(color(B, "LEAVE "+o))
 	}
 
 	syscall.Sync()
