@@ -23,7 +23,7 @@ lib/c
 {% block cgo %}
 export CGO_ENABLED=0
 {% endblock %}
-export GOROOT_FINAL="${out}"
+export GOROOT_FINAL="${out}/bin/{{uniq_id}}"
 {% endblock %}
 
 {% block build %}
@@ -31,8 +31,13 @@ bash ./make.bash -v
 {% endblock %}
 
 {% block install %}
+mkdir -p ${GOROOT_FINAL}
 cd ..
-cp -a bin pkg src lib misc api test ${out}/
+cp -a bin pkg src lib misc api test ${GOROOT_FINAL}/
+cd ${out}/bin
+for x in go gofmt; do
+    ln -s {{uniq_id}}/bin/${x} ${x}
+done
 {% endblock %}
 
 {% block postinstall %}
@@ -40,5 +45,5 @@ cp -a bin pkg src lib misc api test ${out}/
 {% endblock %}
 
 {% block env %}
-export GOROOT_BOOTSTRAP="${out}"
+export GOROOT_BOOTSTRAP="${GOROOT_FINAL}"
 {% endblock %}
