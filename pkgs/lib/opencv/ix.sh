@@ -26,9 +26,9 @@ lib/linux
 {% block cmake_flags %}
 WITH_ITT=OFF
 WITH_OPENCL=OFF
+BUILD_TESTS=OFF
 WITH_PROTOBUF=OFF
 BUILD_PROTOBUF=OFF
-BUILD_TESTS=OFF
 BUILD_PERF_TESTS=OFF
 OPENCV_ENABLE_NONFREE=ON
 OPENCV_GENERATE_PKGCONFIG=ON
@@ -41,6 +41,8 @@ shut_up
 {% block install %}
 {{super()}}
 >${out}/lib/opencv4/3rdparty/libquirc.a
+sed -e 's|/../../../../../../|/../../../|' \
+    -i ${out}/lib/cmake/opencv4/OpenCVConfig.cmake
 {% endblock %}
 
 {% block env %}
