@@ -24,12 +24,8 @@ func color(color string, s string) string {
 	return color + s + RST
 }
 
-func red(s string) string {
-	return color(R, s)
-}
-
 func abort(v any) {
-	fmt.Println(red(fmt.Sprintf("abort: %v", v)))
+	fmt.Println(color(R, fmt.Sprintf("abort: %v", v)))
 	os.Exit(1)
 }
 
