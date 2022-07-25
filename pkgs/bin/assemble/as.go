@@ -32,21 +32,23 @@ func abort(v any) {
 	os.Exit(1)
 }
 
-type Semaphore struct {
+type semaphore struct {
 	ch chan int
 }
 
-func newSemaphore(n int) *Semaphore {
-	return &Semaphore{ch: make(chan int, n)}
+func newSemaphore(n int) *semaphore {
+	return &semaphore{
+		ch: make(chan int, n),
+	}
 }
 
-func (self *Semaphore) acquire(n int) {
+func (self *semaphore) acquire(n int) {
 	for i := 0; i < n; i += 1 {
 		self.ch <- 0
 	}
 }
 
-func (self *Semaphore) release(n int) {
+func (self *semaphore) release(n int) {
 	for i := 0; i < n; i += 1 {
 		<-self.ch
 	}
@@ -74,7 +76,7 @@ type Graph struct {
 type nodectx struct {
 	lock   sync.Mutex
 	data   *Node
-	future *Future
+	future *future
 }
 
 func toFiles(dirs []string) []string {
@@ -179,21 +181,21 @@ func executeNode(node *Node) {
 	syscall.Sync()
 }
 
-type Future struct {
+type future struct {
 	f func()
 	o sync.Once
 }
 
-func (self *Future) callOnce() {
+func (self *future) callOnce() {
 	self.o.Do(self.f)
 }
 
-type Executor struct {
+type executor struct {
 	byOut map[string]*nodectx
-	sem   map[string]*Semaphore
+	sem   map[string]*semaphore
 }
 
-func (self *Executor) execute(node *Node) {
+func (self *executor) execute(node *Node) {
 	if complete(node) {
 		return
 	}
@@ -205,13 +207,13 @@ func (self *Executor) execute(node *Node) {
 	executeNode(node)
 }
 
-func newNodeFuture(ex *Executor, node *Node) *Future {
-	return &Future{f: func() {
+func newNodeFuture(ex *executor, node *Node) *future {
+	return &future{f: func() {
 		ex.execute(node)
 	}}
 }
 
-func newExecutor(graph *Graph) *Executor {
+func newExecutor(graph *Graph) *executor {
 	byOut := map[string]*nodectx{}
 
 	for i := range graph.Nodes {
@@ -224,7 +226,7 @@ func newExecutor(graph *Graph) *Executor {
 		}
 	}
 
-	sem := map[string]*Semaphore{}
+	sem := map[string]*semaphore{}
 
 	for pool, count := range graph.Pools {
 		sem[pool] = newSemaphore(count)
@@ -243,13 +245,13 @@ func newExecutor(graph *Graph) *Executor {
 		}
 	}
 
-	return &Executor{
+	return &executor{
 		byOut: byOut,
 		sem:   sem,
 	}
 }
 
-func (self *Executor) futureFor(node *nodectx) *Future {
+func (self *executor) futureFor(node *nodectx) *future {
 	node.lock.Lock()
 	defer node.lock.Unlock()
 
@@ -260,7 +262,7 @@ func (self *Executor) futureFor(node *nodectx) *Future {
 	return node.future
 }
 
-func (self *Executor) visitAll(nodes []string) {
+func (self *executor) visitAll(nodes []string) {
 	wg := &sync.WaitGroup{}
 	defer wg.Wait()
 
