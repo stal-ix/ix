@@ -72,8 +72,8 @@ type Graph struct {
 }
 
 type nodectx struct {
-	data   *Node
 	lock   sync.Mutex
+	data   *Node
 	future *Future
 }
 
