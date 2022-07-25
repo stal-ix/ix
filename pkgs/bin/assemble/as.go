@@ -200,7 +200,7 @@ func (self *future) callOnce() {
 }
 
 type nodectx struct {
-	data   *Node
+	node   *Node
 	future *future
 }
 
@@ -235,15 +235,15 @@ func newExecutor(graph *Graph) *executor {
 
 	// construct backrefs
 	for i := range graph.Nodes {
-		data := &graph.Nodes[i]
+		node := &graph.Nodes[i]
 
-		node := &nodectx{
-			data:   data,
-			future: newNodeFuture(res, data),
+		cont := &nodectx{
+			node:   node,
+			future: newNodeFuture(res, node),
 		}
 
-		for _, out := range outs(data) {
-			res.out[out] = node
+		for _, out := range outs(node) {
+			res.out[out] = cont
 		}
 	}
 
