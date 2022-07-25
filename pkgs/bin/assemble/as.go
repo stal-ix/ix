@@ -3,6 +3,7 @@ package main
 import (
 	"encoding/json"
 	"fmt"
+	"io"
 	"os"
 	"os/exec"
 	"strings"
@@ -71,6 +72,20 @@ type Graph struct {
 	Nodes   []Node         `json:"nodes"`
 	Targets []string       `json:"targets"`
 	Pools   map[string]int `json:"pools"`
+}
+
+func newGraph(r io.Reader) *Graph {
+	graph := &Graph{}
+
+	if err := json.NewDecoder(r).Decode(graph); err != nil {
+		abort(fmt.Sprintf("can not parse input graph: %v", err))
+	}
+
+	return graph
+}
+
+func (self *Graph) execute() {
+	newExecutor(self).visitAll(self.Targets)
 }
 
 type nodectx struct {
@@ -281,11 +296,5 @@ func (self *executor) visitAll(nodes []string) {
 }
 
 func main() {
-	var graph Graph
-
-	if err := json.NewDecoder(os.Stdin).Decode(&graph); err != nil {
-		abort(fmt.Sprintf("can not parse input graph: %v", err))
-	}
-
-	newExecutor(&graph).visitAll(graph.Targets)
+	newGraph(os.Stdin).execute()
 }
