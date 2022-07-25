@@ -32,19 +32,21 @@ func abort(v any) {
 	os.Exit(1)
 }
 
+type void struct{}
+
 type semaphore struct {
-	ch chan int
+	ch chan void
 }
 
 func newSemaphore(n int) *semaphore {
 	return &semaphore{
-		ch: make(chan int, n),
+		ch: make(chan void, n),
 	}
 }
 
 func (self *semaphore) acquire(n int) {
 	for i := 0; i < n; i += 1 {
-		self.ch <- 0
+		self.ch <- void{}
 	}
 }
 
