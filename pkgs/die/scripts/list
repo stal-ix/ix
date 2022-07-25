@@ -1,0 +1,21 @@
+#!/usr/bin/env python3
+
+import os
+import sys
+
+
+def it(d):
+    for x in os.listdir(d):
+        p = os.path.join(d, x)
+
+        if not os.path.isfile(p):
+            continue
+
+        if not os.access(p, os.X_OK):
+            continue
+
+        yield x
+
+
+for x in sorted(list(it(os.path.dirname(__file__)))):
+    print(x)
