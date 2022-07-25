@@ -8,12 +8,16 @@ import collections
 
 import urllib.request as ur
 
+
+R = os.environ.get('IX_PKGS_ROOT') or sys.argv[1]
 S = frozenset(string.ascii_letters + string.digits)
+
 
 def flt(s):
     for c in s:
         if c in S:
             yield c
+
 
 def tok(s):
     t = ''
@@ -25,8 +29,9 @@ def tok(s):
         else:
             t += ch
 
+
 def it_words():
-    dd = sys.argv[1]
+    dd = R
 
     for a, b, c in os.walk(dd):
         if '.git' in a:
@@ -47,8 +52,10 @@ def it_words():
             except UnicodeDecodeError as e:
                 print(f'skip {pp} cause of {e}')
 
+
 toks = collections.defaultdict(int)
 exac = set()
+
 
 for w in it_words():
     # print(f'{w}')
@@ -59,17 +66,22 @@ for w in it_words():
         for i in tok(w['v']):
             toks[i] += 1
 
+
 good = set()
+
 
 for w, c in toks.items():
     if c < 3:
         good.add(w)
 
+
 def fetch():
     return ur.urlopen('https://repology.org/api/experimental/updates').read()
 
+
 def exact_m(p):
     return p in exac or p.replace('lib', '') in exac
+
 
 def fuzzy_m(words):
     inter = frozenset(tok(words)) & good
@@ -83,6 +95,7 @@ def fuzzy_m(words):
             return True
 
     return False
+
 
 for x in json.loads(fetch().decode()):
     p = x['project']

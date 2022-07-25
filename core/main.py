@@ -17,7 +17,7 @@ CLIS = [
 
     ('core.gc_cmd', 'gc', False),
 
-    ('core.pypi_cmd', 'pypi_update', True),
+    ('core.tool_cmd', 'tool', False),
 
     ('core.misc_cmd', 'misc_extract', True),
     ('core.misc_cmd', 'misc_chksum', True),
