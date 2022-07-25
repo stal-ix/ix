@@ -11,6 +11,45 @@ import (
 	"syscall"
 )
 
+type Exception struct {
+	what func() string
+}
+
+func (self *Exception) throw() {
+	panic(self)
+}
+
+func (self *Exception) catch(cb func(*Exception)) {
+	if self != nil {
+		cb(self)
+	}
+}
+
+func newException(s string) *Exception {
+	return &Exception{
+		what: func() string {
+			return s
+		},
+	}
+}
+
+func try(cb func()) (err *Exception) {
+	defer func() {
+		if rec := recover(); rec != nil {
+			if exc, ok := rec.(*Exception); ok {
+				err = exc
+			} else {
+				// continue panicing, not our exception
+				panic(rec)
+			}
+		}
+	}()
+
+	cb()
+
+	return nil
+}
+
 const (
 	ESC = "\x1b"
 	RST = ESC + "[0m"
@@ -22,11 +61,6 @@ const (
 
 func color(color string, s string) string {
 	return color + s + RST
-}
-
-func abort(v any) {
-	fmt.Println(color(R, fmt.Sprintf("abort: %v", v)))
-	os.Exit(1)
 }
 
 type semaphore struct {
@@ -74,7 +108,7 @@ func newGraph(r io.Reader) *Graph {
 	graph := &Graph{}
 
 	if err := json.NewDecoder(r).Decode(graph); err != nil {
-		abort(fmt.Sprintf("can not parse input graph: %v", err))
+		newException(fmt.Sprintf("can not parse input graph: %v", err)).throw()
 	}
 
 	return graph
@@ -131,7 +165,7 @@ func lookupPath(prog string, path string) string {
 		}
 	}
 
-	abort(fmt.Sprintf("can not find %s in %s", prog, path))
+	newException(fmt.Sprintf("can not find %s in %s", prog, path)).throw()
 
 	return ""
 }
@@ -160,7 +194,7 @@ func executeCmd(c *Cmd) {
 	}
 
 	if err := cmd.Run(); err != nil {
-		abort(fmt.Sprintf("subcommand error: %v", err))
+		newException(fmt.Sprintf("subcommand error: %v", err)).throw()
 	}
 }
 
@@ -252,12 +286,12 @@ func newExecutor(graph *Graph) *executor {
 	for _, node := range graph.Nodes {
 		for _, in := range ins(&node) {
 			if _, ok := res.out[in]; !ok {
-				abort(fmt.Sprintf("no node generate %s", in))
+				newException(fmt.Sprintf("no node generate %s", in)).throw()
 			}
 		}
 
 		if _, ok := res.sem[node.Pool]; !ok {
-			abort(fmt.Sprintf("bad pool %s", node.Pool))
+			newException(fmt.Sprintf("bad pool %s", node.Pool)).throw()
 		}
 	}
 
@@ -275,11 +309,22 @@ func (self *executor) visitAll(nodes []string) {
 
 		go func() {
 			defer wg.Done()
-			o.future.callOnce()
+
+			try(func() {
+				o.future.callOnce()
+			}).catch(func(err *Exception) {
+				fmt.Fprintln(os.Stderr, color(R, fmt.Sprintf("command failed: %v", err.what())))
+				os.Exit(2)
+			})
 		}()
 	}
 }
 
 func main() {
-	newGraph(os.Stdin).execute()
+	try(func() {
+		newGraph(os.Stdin).execute()
+	}).catch(func(err *Exception) {
+		fmt.Fprintln(os.Stderr, color(R, fmt.Sprintf("abort: %v", err.what())))
+		os.Exit(1)
+	})
 }
