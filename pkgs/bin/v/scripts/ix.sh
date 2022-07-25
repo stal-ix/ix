@@ -5,7 +5,7 @@ cd ${out}; mkdir bin; cd bin
 
 cat << EOF > v
 #!/usr/bin/env sh
-chroma -s autumn "\${@}" | cat -n | most
+chroma -f terminal16m -s lovelace "\${@}" | gnuless -N -R
 EOF
 
 chmod +x v

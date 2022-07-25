@@ -9,3 +9,9 @@ md5:fcd2c9baa3c8f4ece2807c2c8bae5241
 lib/c
 lib/curses
 {% endblock %}
+
+{% block install %}
+{{super()}}
+cd ${out}/bin
+ln -s less gnuless
+{% endblock %}
