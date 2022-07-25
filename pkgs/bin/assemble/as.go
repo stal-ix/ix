@@ -243,7 +243,10 @@ func newExecutor(graph *Graph) *Executor {
 		}
 	}
 
-	return &Executor{byOut: byOut, sem: sem}
+	return &Executor{
+		byOut: byOut,
+		sem:   sem,
+	}
 }
 
 func (self *Executor) futureFor(node *nodectx) *Future {
