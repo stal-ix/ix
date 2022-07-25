@@ -35,7 +35,7 @@ namespace {
 
     static auto sessionDir() {
         if (auto env = getenv("XDG_RUNTIME_DIR"); env) {
-            return env;
+            return std::string(env);
         }
 
         die("no XDG_RUNTIME_DIR in environment");
@@ -43,14 +43,18 @@ namespace {
 
     static auto tmpDir() {
         if (auto env = getenv("TMPDIR"); env) {
-            return env;
+            return std::string(env);
         }
 
         die("no TMPDIR in environment");
     }
 
     static auto uniqSocket() {
-        return sessionDir() + std::string("/socket.") + std::to_string(getpid());
+        return sessionDir() + "/socket." + std::to_string(getpid());
+    }
+
+    static auto mkstempTemplate() {
+        return sessionDir() + "/" + std::to_string(getpid()) + ".XXXXXX";
     }
 }
 
@@ -64,4 +68,12 @@ extern "C" const char* ix_temp_dir() {
 
 extern "C" const char* ix_uniq_socket() {
     return intern(uniqSocket());
+}
+
+extern "C" char* ix_mkstemp_template() {
+    return strdup(mkstempTemplate().c_str());
+}
+
+extern "C" int ix_mkstemp() {
+    return mkstemp(mkstempTemplate().data());
 }
