@@ -63,14 +63,18 @@ type Node struct {
 	OutDirs []string `json:"out_dir"`
 	Cmds    []Cmd    `json:"cmd"`
 	Pool    string   `json:"pool"`
-	lock    sync.Mutex
-	future  *Future
 }
 
 type Graph struct {
 	Nodes   []Node         `json:"nodes"`
 	Targets []string       `json:"targets"`
 	Pools   map[string]int `json:"pools"`
+}
+
+type nodectx struct {
+	data   *Node
+	lock   sync.Mutex
+	future *Future
 }
 
 func toFiles(dirs []string) []string {
@@ -138,7 +142,7 @@ func complete(node *Node) bool {
 }
 
 func executeCmd(c *Cmd) {
-	cmd := exec.Cmd{
+	cmd := &exec.Cmd{
 		Path:   lookupPath(c.Args[0], c.Env["PATH"]),
 		Args:   c.Args,
 		Env:    env(c),
@@ -185,7 +189,7 @@ func (self *Future) callOnce() {
 }
 
 type Executor struct {
-	byOut map[string]*Node
+	byOut map[string]*nodectx
 	sem   map[string]*Semaphore
 }
 
@@ -208,12 +212,14 @@ func newNodeFuture(ex *Executor, node *Node) *Future {
 }
 
 func newExecutor(graph *Graph) *Executor {
-	byOut := map[string]*Node{}
+	byOut := map[string]*nodectx{}
 
 	for i := range graph.Nodes {
-		node := &graph.Nodes[i]
+		node := &nodectx{
+			data: &graph.Nodes[i],
+		}
 
-		for _, out := range outs(node) {
+		for _, out := range outs(node.data) {
 			byOut[out] = node
 		}
 	}
@@ -240,12 +246,12 @@ func newExecutor(graph *Graph) *Executor {
 	return &Executor{byOut: byOut, sem: sem}
 }
 
-func (self *Executor) futureFor(node *Node) *Future {
+func (self *Executor) futureFor(node *nodectx) *Future {
 	node.lock.Lock()
 	defer node.lock.Unlock()
 
 	if node.future == nil {
-		node.future = newNodeFuture(self, node)
+		node.future = newNodeFuture(self, node.data)
 	}
 
 	return node.future
