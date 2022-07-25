@@ -25,6 +25,11 @@ func (self *Exception) catch(cb func(*Exception)) {
 	}
 }
 
+func (self *Exception) fatal(code int, prefix string) {
+	fmt.Fprintln(os.Stderr, color(R, prefix+": "+self.what()))
+	os.Exit(code)
+}
+
 func newException(s string) *Exception {
 	return &Exception{
 		what: func() string {
@@ -316,9 +321,8 @@ func (self *executor) visitAll(nodes []string) {
 
 			try(func() {
 				o.future.callOnce()
-			}).catch(func(err *Exception) {
-				fmt.Fprintln(os.Stderr, color(R, fmt.Sprintf("command failed: %v", err.what())))
-				os.Exit(2)
+			}).catch(func(exc *Exception) {
+				exc.fatal(2, "subcommand error")
 			})
 		}()
 	}
@@ -327,8 +331,7 @@ func (self *executor) visitAll(nodes []string) {
 func main() {
 	try(func() {
 		newGraph(os.Stdin).execute()
-	}).catch(func(err *Exception) {
-		fmt.Fprintln(os.Stderr, color(R, fmt.Sprintf("abort: %v", err.what())))
-		os.Exit(1)
+	}).catch(func(exc *Exception) {
+		exc.fatal(1, "abort")
 	})
 }
