@@ -1,10 +1,5 @@
 {% extends '//die/c/c_std.sh' %}
 
-{% block std_box %}
-bld/scripts/inline
-{{super()}}
-{% endblock %}
-
 {% block unpack %}
 mkdir src; cd src
 {% endblock %}
@@ -20,9 +15,23 @@ cat << EOF > {{x}}
 {{ix.load_file(x)}}
 EOF
 {% endfor %}
-inline_build
+for x in $(ls *.c); do
+    cc -c ${x}
+done
+for x in $(ls *.cpp); do
+    c++ -std=c++20 -c ${x}
+done
 {% endblock %}
 
 {% block install %}
-inline_install ${out}
+mkdir -p ${out}/lib ${out}/include ${out}/bin
+find . -type f -name '*.h' | while read l; do
+    cp ${l} ${out}/include/
+done
+find . -type f -name '*.a' | while read l; do
+    cp ${l} ${out}/lib/
+done
+find . -type f -executable | while read l; do
+    cp ${l} ${out}/bin/
+done
 {% endblock %}
