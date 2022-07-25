@@ -2,6 +2,8 @@ import json
 import itertools
 import subprocess
 
+import core.utils as cu
+
 
 def rec_node(n):
     return itertools.chain([n], n.iter_all_build_depends(), n.iter_all_runtime_depends())
@@ -29,9 +31,25 @@ def build_commands(nodes):
             yield from x.iter_build_commands()
 
 
+def flt_duplicates(nodes):
+    v = {}
+
+    for n in nodes:
+        for o in n['out_dir']:
+            if o in v:
+                p = v[o]
+
+                if cu.struct_hash(p) != cu.struct_hash(n):
+                    raise Exception(f'{p} != {n}')
+            else:
+                v[o] = n
+
+                yield n
+
+
 def build_graph(n):
     return {
-        'nodes': list(build_commands(n)),
+        'nodes': list(flt_duplicates(build_commands(n))),
         'targets': [(x.out_dir + '/touch') for x in n],
         'pools': {
             'cpu': 4,

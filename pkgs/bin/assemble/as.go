@@ -282,6 +282,10 @@ func newExecutor(graph *Graph) *executor {
 		}
 
 		for _, out := range outs(node) {
+			if _, ok := res.out[out]; ok {
+				fmtException("multiple nodes generate output %s", out).throw()
+			}
+
 			res.out[out] = cont
 		}
 	}
