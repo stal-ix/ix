@@ -191,8 +191,8 @@ func (self *future) callOnce() {
 }
 
 type executor struct {
-	byOut map[string]*nodectx
-	sem   map[string]*semaphore
+	out map[string]*nodectx
+	sem map[string]*semaphore
 }
 
 func (self *executor) execute(node *Node) {
@@ -214,41 +214,41 @@ func newNodeFuture(ex *executor, node *Node) *future {
 }
 
 func newExecutor(graph *Graph) *executor {
-	byOut := map[string]*nodectx{}
+	res := &executor{
+		out: map[string]*nodectx{},
+		sem: map[string]*semaphore{},
+	}
 
+	// construct backrefs
 	for i := range graph.Nodes {
 		node := &nodectx{
 			data: &graph.Nodes[i],
 		}
 
 		for _, out := range outs(node.data) {
-			byOut[out] = node
+			res.out[out] = node
 		}
 	}
 
-	sem := map[string]*semaphore{}
-
+	// construct scheduler
 	for pool, count := range graph.Pools {
-		sem[pool] = newSemaphore(count)
+		res.sem[pool] = newSemaphore(count)
 	}
 
 	// validate
 	for _, node := range graph.Nodes {
 		for _, in := range ins(&node) {
-			if _, ok := byOut[in]; !ok {
+			if _, ok := res.out[in]; !ok {
 				abort(fmt.Sprintf("no node generate %s", in))
 			}
 		}
 
-		if _, ok := sem[node.Pool]; !ok {
+		if _, ok := res.sem[node.Pool]; !ok {
 			abort(fmt.Sprintf("bad pool %s", node.Pool))
 		}
 	}
 
-	return &executor{
-		byOut: byOut,
-		sem:   sem,
-	}
+	return res
 }
 
 func (self *executor) futureFor(node *nodectx) *future {
@@ -267,7 +267,7 @@ func (self *executor) visitAll(nodes []string) {
 	defer wg.Wait()
 
 	for _, n := range nodes {
-		o := self.byOut[n]
+		o := self.out[n]
 
 		wg.Add(1)
 
