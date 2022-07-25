@@ -33,6 +33,10 @@ func newException(s string) *Exception {
 	}
 }
 
+func fmtException(format string, args ...any) *Exception {
+	return newException(fmt.Sprintf(format, args...))
+}
+
 func try(cb func()) (err *Exception) {
 	defer func() {
 		if rec := recover(); rec != nil {
@@ -108,7 +112,7 @@ func newGraph(r io.Reader) *Graph {
 	graph := &Graph{}
 
 	if err := json.NewDecoder(r).Decode(graph); err != nil {
-		newException(fmt.Sprintf("can not parse input graph: %v", err)).throw()
+		fmtException("can not parse input graph: %v", err).throw()
 	}
 
 	return graph
@@ -165,7 +169,7 @@ func lookupPath(prog string, path string) string {
 		}
 	}
 
-	newException(fmt.Sprintf("can not find %s in %s", prog, path)).throw()
+	fmtException("can not find %s in %s", prog, path).throw()
 
 	return ""
 }
@@ -194,7 +198,7 @@ func executeCmd(c *Cmd) {
 	}
 
 	if err := cmd.Run(); err != nil {
-		newException(fmt.Sprintf("subcommand error: %v", err)).throw()
+		fmtException("subcommand error: %v", err).throw()
 	}
 }
 
@@ -286,12 +290,12 @@ func newExecutor(graph *Graph) *executor {
 	for _, node := range graph.Nodes {
 		for _, in := range ins(&node) {
 			if _, ok := res.out[in]; !ok {
-				newException(fmt.Sprintf("no node generate %s", in)).throw()
+				fmtException("no node generate %s", in).throw()
 			}
 		}
 
 		if _, ok := res.sem[node.Pool]; !ok {
-			newException(fmt.Sprintf("bad pool %s", node.Pool)).throw()
+			fmtException("bad pool %s", node.Pool).throw()
 		}
 	}
 
