@@ -32,21 +32,19 @@ func abort(v any) {
 	os.Exit(1)
 }
 
-type void struct{}
-
 type semaphore struct {
-	ch chan void
+	ch chan struct{}
 }
 
 func newSemaphore(n int) *semaphore {
 	return &semaphore{
-		ch: make(chan void, n),
+		ch: make(chan struct{}, n),
 	}
 }
 
 func (self *semaphore) acquire(n int) {
 	for i := 0; i < n; i += 1 {
-		self.ch <- void{}
+		self.ch <- struct{}{}
 	}
 }
 
@@ -254,8 +252,10 @@ func newExecutor(graph *Graph) *executor {
 }
 
 func (self *executor) futureFor(node *nodectx) *future {
-	node.lock.Lock()
-	defer node.lock.Unlock()
+	l := &node.lock
+
+	l.Lock()
+	defer l.Unlock()
 
 	if node.future == nil {
 		node.future = newNodeFuture(self, node.data)
