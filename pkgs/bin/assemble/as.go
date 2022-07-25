@@ -88,12 +88,6 @@ func (self *Graph) execute() {
 	newExecutor(self).visitAll(self.Targets)
 }
 
-type nodectx struct {
-	lock   sync.Mutex
-	data   *Node
-	future *future
-}
-
 func toFiles(dirs []string) []string {
 	res := []string{}
 
@@ -205,6 +199,11 @@ func (self *future) callOnce() {
 	self.o.Do(self.f)
 }
 
+type nodectx struct {
+	data   *Node
+	future *future
+}
+
 type executor struct {
 	out map[string]*nodectx
 	sem map[string]*semaphore
@@ -236,11 +235,14 @@ func newExecutor(graph *Graph) *executor {
 
 	// construct backrefs
 	for i := range graph.Nodes {
+		data := &graph.Nodes[i]
+
 		node := &nodectx{
-			data: &graph.Nodes[i],
+			data:   data,
+			future: newNodeFuture(res, data),
 		}
 
-		for _, out := range outs(node.data) {
+		for _, out := range outs(data) {
 			res.out[out] = node
 		}
 	}
@@ -266,19 +268,6 @@ func newExecutor(graph *Graph) *executor {
 	return res
 }
 
-func (self *executor) futureFor(node *nodectx) *future {
-	l := &node.lock
-
-	l.Lock()
-	defer l.Unlock()
-
-	if node.future == nil {
-		node.future = newNodeFuture(self, node.data)
-	}
-
-	return node.future
-}
-
 func (self *executor) visitAll(nodes []string) {
 	wg := &sync.WaitGroup{}
 	defer wg.Wait()
@@ -290,7 +279,7 @@ func (self *executor) visitAll(nodes []string) {
 
 		go func() {
 			defer wg.Done()
-			self.futureFor(o).callOnce()
+			o.future.callOnce()
 		}()
 	}
 }
