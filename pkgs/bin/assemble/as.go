@@ -39,7 +39,7 @@ func try(cb func()) (err *Exception) {
 			if exc, ok := rec.(*Exception); ok {
 				err = exc
 			} else {
-				// continue panicing, not our exception
+				// personality check failed
 				panic(rec)
 			}
 		}
