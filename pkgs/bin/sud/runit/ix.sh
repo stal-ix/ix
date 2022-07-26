@@ -18,14 +18,14 @@ EOF
 mkdir bin; cd bin
 
 cat << EOF > doas
-#!/bin/sh
+#!/usr/bin/env sh
 user="\${1}"
 shift
-exec sud_client -o 'StrictHostKeyChecking no' -q -t "\${user}@localhost" "\${@}"
+exec sud_client -o 'StrictHostKeyChecking no' -q -t "\${user}@localhost" /bin/env "TMPDIR=\${TMPDIR}" /bin/setpwd "\${PWD}" "\${@}"
 EOF
 
 cat << EOF > sudo
-#!/bin/sh
+#!/usr/bin/env sh
 exec doas root "\${@}"
 EOF
 
@@ -36,7 +36,7 @@ cd ..
 mkdir -p etc/services/sud; cd etc/services/sud
 
 cat << EOF > run
-#!/bin/sh
+#!/usr/bin/env sh
 exec srv sud sud_server -R -F -E -B -j -k -m -P dropbear.pid
 EOF
 
