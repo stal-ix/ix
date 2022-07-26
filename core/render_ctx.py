@@ -78,7 +78,7 @@ class RenderContext:
 
         args = cu.dict_dict_update({
             'ix': self,
-            'ix_bin': ' '.join(pkg.config.ops.respawn()),
+            'ix_extract': ' '.join(pkg.config.ops.extract()),
             'host': pkg.host,
             'tool': pkg.name.startswith('bld/'),
             'name': pkg.name,

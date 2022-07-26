@@ -32,3 +32,9 @@ class Ops:
 
     def respawn(self):
         return ['/bin/ix']
+
+    def runpy(self, args):
+        return self.respawn() + ['misc', 'runpy'] + args
+
+    def extract(self):
+        return self.respawn() + ['misc', 'extract']

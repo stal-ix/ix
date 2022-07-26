@@ -16,3 +16,9 @@ class Ops:
 
     def respawn(self):
         return [sys.executable, self.cfg.binary]
+
+    def runpy(self, args):
+        return self.respawn() + ['misc', 'runpy'] + args
+
+    def extract(self):
+        return self.respawn() + ['misc', 'extract']

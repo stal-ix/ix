@@ -67,7 +67,7 @@ class ScriptBuilder:
 
     def build_py_script(self, data, env, args=[]):
         return {
-            'args': self.config.ops.respawn() + ['misc', 'runpy'] + args,
+            'args': self.config.ops.runpy(args),
             'stdin': BUILD_PY_SCRIPT.replace('{build_script}', data),
             'env': env,
         }
