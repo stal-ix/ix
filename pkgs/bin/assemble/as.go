@@ -12,7 +12,7 @@ import (
 )
 
 type Exception struct {
-	what func() string
+	what func() error
 }
 
 func (self *Exception) throw() {
@@ -26,20 +26,20 @@ func (self *Exception) catch(cb func(*Exception)) {
 }
 
 func (self *Exception) fatal(code int, prefix string) {
-	fmt.Fprintln(os.Stderr, color(R, prefix+": "+self.what()))
+	fmt.Fprintf(os.Stderr, "%s%s: %v%s\n", R, prefix, self.what(), RST)
 	os.Exit(code)
 }
 
-func newException(s string) *Exception {
+func newException(e error) *Exception {
 	return &Exception{
-		what: func() string {
-			return s
+		what: func() error {
+			return e
 		},
 	}
 }
 
 func fmtException(format string, args ...any) *Exception {
-	return newException(fmt.Sprintf(format, args...))
+	return newException(fmt.Errorf(format, args...))
 }
 
 func try(cb func()) (err *Exception) {
@@ -117,7 +117,7 @@ func newGraph(r io.Reader) *Graph {
 	graph := &Graph{}
 
 	if err := json.NewDecoder(r).Decode(graph); err != nil {
-		fmtException("can not parse input graph: %v", err).throw()
+		fmtException("can not parse input graph: %w", err).throw()
 	}
 
 	return graph
@@ -202,7 +202,7 @@ func executeCmd(c *Cmd) {
 	}
 
 	if err := cmd.Run(); err != nil {
-		fmtException("%v failed with %v", c.Args, err).throw()
+		fmtException("%v failed with %w", c.Args, err).throw()
 	}
 }
 
