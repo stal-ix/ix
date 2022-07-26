@@ -203,7 +203,7 @@ func executeCmd(c *Cmd) {
 	}
 
 	if err := cmd.Run(); err != nil {
-		fmtException("subcommand error: %v", err).throw()
+		fmtException("%v failed with %v", c.Args, err).throw()
 	}
 }
 
