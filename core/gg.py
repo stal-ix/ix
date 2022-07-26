@@ -32,19 +32,15 @@ def build_commands(nodes):
 
 
 def flt_duplicates(nodes):
-    v = {}
+    hset = set()
 
     for n in nodes:
-        for o in n['out_dir']:
-            if o in v:
-                p = v[o]
+        h = cu.struct_hash(n)
 
-                if cu.struct_hash(p) != cu.struct_hash(n):
-                    raise Exception(f'{p} != {n}')
-            else:
-                v[o] = n
+        if h not in hset:
+            hset.add(h)
 
-                yield n
+            yield n
 
 
 def build_graph(n):
