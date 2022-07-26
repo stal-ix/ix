@@ -3,5 +3,5 @@
 {% block run_deps %}
 bin/assemble
 bin/ix/unwrap
-bin/bsdtar/lite
+bin/bsdtar/ix
 {% endblock %}
