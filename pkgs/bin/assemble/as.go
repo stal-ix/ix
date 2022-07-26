@@ -213,8 +213,10 @@ func executeNode(node *Node) {
 		fmt.Println(color(B, "ENTER "+o))
 	}
 
-	for _, cmd := range node.Cmds {
-		if err := executeCmd(&cmd); err != nil {
+	for i := range node.Cmds {
+		cmd := &node.Cmds[i]
+
+		if err := executeCmd(cmd); err != nil {
 			fmtException("%v failed with %w", cat(nouts, cmd.Args), err).throw()
 		}
 	}
