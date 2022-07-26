@@ -37,4 +37,4 @@ class Ops:
         return self.respawn() + ['misc', 'runpy'] + args
 
     def extract(self):
-        return self.respawn() + ['misc', 'extract']
+        return ['/bin/bsdtar', 'xf']
