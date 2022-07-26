@@ -30,11 +30,8 @@ class Ops:
     def gc(self):
         run_cmd(['/bin/ix', 'gc'])
 
-    def respawn(self):
-        return ['/bin/ix']
-
     def runpy(self, args):
-        return self.respawn() + ['misc', 'runpy'] + args
+        return ['/bin/ix', 'misc', 'runpy'] + args
 
     def extract(self):
         return ['/bin/bsdtar', 'xf']
