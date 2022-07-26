@@ -68,7 +68,7 @@ static void main_rmrf(int argc, char** argv) {
         die(2, EINVAL, "usage: path [prog]+");
     }
 
-    if (nftw(argv[1], unlink_cb, 64, FTW_DEPTH | FTW_PHYS)) {
+    if (nftw(argv[1], unlink_cb, 64, FTW_DEPTH | FTW_PHYS) && errno != ENOENT) {
         die(2, errno, "nftw failed");
     }
 
