@@ -175,8 +175,7 @@ func lookupPath(prog string, path string) string {
 	}
 
 	fmtException("can not find %s in %s", prog, path).throw()
-
-	return ""
+	panic(nil)
 }
 
 func complete(node *Node) bool {
