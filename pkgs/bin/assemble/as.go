@@ -190,8 +190,8 @@ func complete(node *Node) bool {
 	return true
 }
 
-func executeCmd(c *Cmd) {
-	cmd := &exec.Cmd{
+func executeCmd(c *Cmd) error {
+	return (&exec.Cmd{
 		Path:   lookupPath(c.Args[0], c.Env["PATH"]),
 		Args:   c.Args,
 		Env:    env(c),
@@ -199,20 +199,24 @@ func executeCmd(c *Cmd) {
 		Stdin:  strings.NewReader(c.Stdin),
 		Stdout: os.Stderr,
 		Stderr: os.Stderr,
-	}
+	}).Run()
+}
 
-	if err := cmd.Run(); err != nil {
-		fmtException("%v failed with %w", c.Args, err).throw()
-	}
+func cat[T any](a []T, b []T) []T {
+	return append(append([]T{}, a...), b...)
 }
 
 func executeNode(node *Node) {
-	for _, o := range outs(node) {
+	nouts := outs(node)
+
+	for _, o := range nouts {
 		fmt.Println(color(B, "ENTER "+o))
 	}
 
 	for _, cmd := range node.Cmds {
-		executeCmd(&cmd)
+		if err := executeCmd(&cmd); err != nil {
+			fmtException("%v failed with %w", cat(nouts, cmd.Args), err).throw()
+		}
 	}
 
 	syscall.Sync()
