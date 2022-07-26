@@ -1,3 +1,6 @@
+#define _XOPEN_SOURCE 500
+
+#include <ftw.h>
 #include <unistd.h>
 #include <stdlib.h>
 #include <string.h>
@@ -56,6 +59,22 @@ static void main_unlink(int argc, char** argv) {
     exec(argv + 2);
 }
 
+static int unlink_cb(const char* fpath, const struct stat* sb, int typeflag, struct FTW* ftwbuf) {
+    return remove(fpath) && unlink(fpath);
+}
+
+static void main_rmrf(int argc, char** argv) {
+    if (argc < 2) {
+        die(2, EINVAL, "usage: path [prog]+");
+    }
+
+    if (nftw(argv[1], unlink_cb, 64, FTW_DEPTH | FTW_PHYS)) {
+        die(2, errno, "nftw failed");
+    }
+
+    exec(argv + 2);
+}
+
 int main(int argc, char** argv) {
     if (argc < 2) {
         die(1, EINVAL, "usage: liner tool [args]+");
@@ -75,6 +94,10 @@ int main(int argc, char** argv) {
 
     if (strcmp(tool, "unlink") == 0) {
         main_unlink(argc, argv);
+    }
+
+    if (strcmp(tool, "rmrf") == 0) {
+        main_rmrf(argc, argv);
     }
 
     die(1, EINVAL, "unknown tool");
