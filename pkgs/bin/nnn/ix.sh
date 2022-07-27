@@ -1,8 +1,8 @@
 {% extends '//die/c/make.sh' %}
 
 {% block fetch %}
-https://github.com/jarun/nnn/archive/refs/tags/v4.5.tar.gz
-sha:fadc15bd6d4400c06e5ccc47845b42e60774f368570e475bd882767ee18749aa
+https://github.com/jarun/nnn/archive/refs/tags/v4.6.tar.gz
+sha:15acaf9a88cfb5a2a640d3ef55a48af644fba92b46aac0768efe94c4addf7e3f
 {% endblock %}
 
 {% block bld_libs %}
