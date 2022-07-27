@@ -1,7 +1,15 @@
+import os
 import sys
 
 import core.execute as ce
 import core.manager as cm
+
+
+FETCH_SRC_SCRIPT = '''
+import sys
+
+ix.fetch_url(sys.argv[-2], sys.argv[-1])
+'''.strip()
 
 
 class Ops:
@@ -22,3 +30,6 @@ class Ops:
 
     def extract(self):
         return self.respawn() + ['misc', 'extract']
+
+    def fetch(self, sb, url, path):
+        return sb.build_py_script(FETCH_SRC_SCRIPT, dict(out=os.path.dirname(path)), [url, path])

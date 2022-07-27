@@ -20,13 +20,6 @@ atexit.register(ix.footer)
 '''.strip()
 
 
-FETCH_SRC_SCRIPT = '''
-import sys
-
-ix.fetch_url(sys.argv[-2], sys.argv[-1])
-'''.strip()
-
-
 CHECK_MD5_SCRIPT = '''
 import os
 import sys
@@ -58,19 +51,21 @@ class ScriptBuilder:
     def __init__(self, config):
         self.config = config
 
-    def build_sh_script(self, data, env):
+    def build_cmd_script(self, args, stdin, env):
         return {
-            'args': ['sh', '-s'],
-            'stdin': data,
+            'args': args,
+            'stdin': stdin,
             'env': env,
         }
 
+    def build_sh_script(self, data, env):
+        return self.build_cmd_script(['sh', '-s'], data, env)
+
     def build_py_script(self, data, env, args=[]):
-        return {
-            'args': self.config.ops.runpy(args),
-            'stdin': BUILD_PY_SCRIPT.replace('{build_script}', data),
-            'env': env,
-        }
+        stdin = BUILD_PY_SCRIPT.replace('{build_script}', data)
+        runpy = self.config.ops.runpy(args)
+
+        return self.build_cmd_script(runpy, stdin, env)
 
 
 def rev_dirs(l):
@@ -130,13 +125,14 @@ class CmdBuild:
 
 def cmd_fetch(sb, url):
     # do not encode full path to output, for proper caching
-    out_dir = os.path.join(sb.config.store_dir, cu.struct_hash([url, FETCH_SRC_SCRIPT]))
-    path = os.path.join(out_dir, os.path.basename(url))
-    script = sb.build_py_script(FETCH_SRC_SCRIPT, dict(out=out_dir), [url, path])
+    name = os.path.basename(url)
+    pdir = cu.canon_name(cu.struct_hash([url, 1]) + '-url-' + name)
+    odir = os.path.join(sb.config.store_dir, pdir)
+    path = os.path.join(odir, name)
 
     return {
-        'out_dir': [out_dir],
-        'cmd': [script],
+        'out_dir': [odir],
+        'cmd': [sb.config.ops.fetch(sb, url, path)],
         'path': path,
         'cache': True,
         'pool': 'other',

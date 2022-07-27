@@ -95,3 +95,22 @@ def step(s):
 
 def sync():
     os.system('sync')
+
+
+def gen_sym():
+    for x in string.ascii_letters + string.digits:
+        yield x, x
+
+    yield '+', '-plus-'
+
+
+SYM = dict(gen_sym())
+
+
+def canon_name(n):
+    n = ''.join(SYM.get(x, '-') for x in n)
+
+    while '--' in n:
+        n = n.replace('--', '-')
+
+    return n.rstrip('-').lower()

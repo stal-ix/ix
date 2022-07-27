@@ -35,3 +35,16 @@ class Ops:
 
     def extract(self):
         return ['/bin/bsdtar', 'xf']
+
+    def fetch(self, sb, url, path):
+        odir = os.path.dirname(path)
+        name = os.path.basename(url)
+
+        cmd = [
+            '/bin/liner', 'rmrf', odir,
+            '/bin/liner', 'mkdir', odir,
+            '/bin/liner', 'setpwd', odir,
+            '/bin/curl', '-k', '-L', '-o', name, url,
+        ]
+
+        return sb.build_cmd_script(cmd, '', {})

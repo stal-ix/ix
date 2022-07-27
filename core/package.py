@@ -101,25 +101,6 @@ def popf(d, *f):
     return d
 
 
-def gen_sym():
-    for x in string.ascii_letters + string.digits:
-        yield x, x
-
-    yield '+', '-plus-'
-
-
-SYM = dict(gen_sym())
-
-
-def canon_name(n):
-    n = ''.join(SYM.get(x, '-') for x in n)
-
-    while '--' in n:
-        n = n.replace('--', '-')
-
-    return n.rstrip('-').lower()
-
-
 ONE_LEVEL = ('setx', 'help', 'verbose', 'stage', 'rebuild', 'nostrip')
 
 
@@ -181,7 +162,7 @@ class Package:
         except ValueError:
             pass
 
-        return canon_name(f'{k}-{n}')
+        return cu.canon_name(f'{k}-{n}')
 
     @property
     def uniq_id(self):
