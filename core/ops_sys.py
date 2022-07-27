@@ -59,7 +59,7 @@ class Ops:
         run_cmd([sys.executable, self.cfg.binary, 'gc'])
 
     def runpy(self, args):
-        return ['/bin/ix', 'misc', 'runpy'] + args
+        return ['/ix/realm/boot/bin/python3', '-'] + args
 
     def extract(self):
         return ['/bin/bsdtar', 'xf']
@@ -68,9 +68,11 @@ class Ops:
         return [sb.build_cmd_script(x, '', {}) for x in gen_fetch(url, path, fix_md5(md5))]
 
     def cksum(self, sb, fr, to, md5):
-        if md5.startswith('sem:'):
+        if False and md5.startswith('sem:'):
             # TODO(pg): temp hack
             return co.Ops(self.cfg).cksum(sb, fr, to, md5)
+
+        assert 'sem:' not in md5, md5
 
         odir = os.path.dirname(to)
 

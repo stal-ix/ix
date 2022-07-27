@@ -2,7 +2,7 @@
 
 {% block fetch %}
 https://github.com/libcxxrt/libcxxrt/archive/fd484be8d1e94a1fcf6bc5c67e5c07b65ada19b6.tar.gz
-sem:9abbda7bddaa6bfface83d3a2d9054ef09b91bfbe17992c9c8637f677ce5673a
+sha:7f9cb5669f17d858bef77500ed2e3bc1dbe71ab17c97038d95a90e7c15368f60
 {% endblock %}
 
 {% block lib_deps %}

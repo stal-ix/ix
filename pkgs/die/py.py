@@ -34,7 +34,6 @@ if DATA:
     os.makedirs(tmp)
     os.environ['TMPDIR'] = tmp
     input = '\n'.join(iter_lines()).strip() + '\n'
-    print(input)
     subprocess.run([shutil.which('sh')], input=input.encode(), check=True)
 {% endblock %}
 

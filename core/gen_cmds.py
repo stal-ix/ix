@@ -1,5 +1,6 @@
 import os
 import sys
+import json
 import jinja2
 import itertools
 import multiprocessing
@@ -9,10 +10,34 @@ import core.error as ce
 
 
 BUILD_PY_SCRIPT = '''
+import os
+import sys
 import atexit
+import shutil
 
-ix.header()
-atexit.register(ix.footer)
+def prepare_dir(d):
+    try:
+        shutil.rmtree(d)
+    except FileNotFoundError:
+        pass
+
+    os.makedirs(d)
+
+def header():
+    if out := os.environ.get('out'):
+        prepare_dir(out)
+
+    if tmp := os.environ.get('tmp'):
+        prepare_dir(tmp)
+        os.chdir(tmp)
+
+def footer():
+    if tmp := os.environ.get('tmp'):
+        if sys.exc_info()[0]:
+            shutil.rmtree(tmp)
+
+header()
+atexit.register(footer)
 
 # suc
 {build_script}
@@ -96,11 +121,17 @@ class CmdBuild:
         yield 'make_thrs', str(multiprocessing.cpu_count() - 2)
 
 
+UID = '#uid_placeholder#'
+
+
+def gen_udir(suffix):
+    return UID + '-' + cu.canon_name(suffix)
+
+
 def cmd_fetch(sb, url, md5):
     # do not encode full path to output, for proper caching
     name = os.path.basename(url)
-    pdir = cu.canon_name(cu.struct_hash([url, 1]) + '-url-' + name)
-    odir = os.path.join(sb.config.store_dir, pdir)
+    odir = os.path.join(sb.config.store_dir, gen_udir(f'url-{name}'))
     path = os.path.join(odir, name)
 
     return {
@@ -109,11 +140,15 @@ def cmd_fetch(sb, url, md5):
         'path': path,
         'cache': True,
         'pool': 'other',
+        'important': {
+            'name': name,
+            'md5': md5,
+        }
     }
 
 
 def cmd_check(sb, path, md5):
-    out_dir = os.path.join(sb.config.store_dir, cu.struct_hash([path, 1]))
+    out_dir = os.path.join(sb.config.store_dir, gen_udir('chk'))
     new_path = os.path.join(out_dir, os.path.basename(path))
     script = sb.config.ops.cksum(sb, path, new_path, md5)
 
@@ -131,7 +166,7 @@ def cmd_link_script(sb, files, out):
 
 
 def cmd_link(sb, extra):
-    out_dir = os.path.join(sb.config.store_dir, cu.struct_hash([extra, 1]))
+    out_dir = os.path.join(sb.config.store_dir, gen_udir('lnk'))
     script = cmd_link_script(sb, [x['path'] for x in extra], out_dir)
 
     return {
@@ -140,6 +175,12 @@ def cmd_link(sb, extra):
         'cmd': [script],
         'pool': 'other',
     }
+
+
+def replace_sentinel(x):
+    imp = x.get('important', x)
+
+    return json.loads(json.dumps(x).replace(UID, cu.struct_hash(imp)))
 
 
 def iter_build_commands(self):
@@ -151,17 +192,17 @@ def iter_build_commands(self):
         extra = []
 
         for ui in urls:
-            f = cmd_fetch(sb, ui['url'], ui['md5'])
+            f = replace_sentinel(cmd_fetch(sb, ui['url'], ui['md5']))
 
             yield f
 
-            c = cmd_check(sb, f['path'], ui['md5'])
+            c = replace_sentinel(cmd_check(sb, f['path'], ui['md5']))
 
             yield c
 
             extra.append(c)
 
-        cmd = cmd_link(sb, extra)
+        cmd = replace_sentinel(cmd_link(sb, extra))
 
         yield cmd
 
@@ -171,10 +212,10 @@ def iter_build_commands(self):
         extra = []
         src_dir = None
 
-    yield {
+    yield replace_sentinel({
         'in_dir': self.iter_build_dirs() + extra,
         'out_dir': [out_dir],
         'cmd': [CmdBuild(self).script(sb, src_dir)],
         'cache': True,
         'pool': 'cpu',
-    }
+    })

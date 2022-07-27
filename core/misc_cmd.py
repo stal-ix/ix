@@ -9,15 +9,6 @@ import core.error as ce
 import core.shell_cmd as csc
 
 
-def prepare_dir(d):
-    try:
-        shutil.rmtree(d)
-    except FileNotFoundError:
-        pass
-
-    os.makedirs(d)
-
-
 def hash(n):
     if n == 'md5':
         return hashlib.md5
@@ -102,19 +93,6 @@ class Iface:
 
         if new_cs != old_cs:
             raise ce.Error(f'expected {new_cs} checksum')
-
-    def header(self):
-        if out := os.environ.get('out'):
-            prepare_dir(out)
-
-        if tmp := os.environ.get('tmp'):
-            prepare_dir(tmp)
-            os.chdir(tmp)
-
-    def footer(self):
-        if tmp := os.environ.get('tmp'):
-            if sys.exc_info()[0]:
-                shutil.rmtree(tmp)
 
 
 def cli_misc_runpy(ctx):
