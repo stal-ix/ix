@@ -20,19 +20,6 @@ atexit.register(ix.footer)
 '''.strip()
 
 
-LINK_SRCS_SCRIPT = '''
-import sys
-import os
-
-out = os.environ['out']
-os.chdir(out)
-
-for f in sys.argv[1:]:
-    print(f'link {f} into {out}')
-    os.link(f, os.path.basename(f))
-'''.strip()
-
-
 class ScriptBuilder:
     def __init__(self, config):
         self.config = config
@@ -140,11 +127,11 @@ def cmd_check(sb, path, md5):
 
 
 def cmd_link_script(sb, files, out):
-    return sb.build_py_script(LINK_SRCS_SCRIPT, dict(out=out), files)
+    return sb.config.ops.link(sb, files, out)
 
 
 def cmd_link(sb, extra):
-    out_dir = os.path.join(sb.config.store_dir, cu.struct_hash([extra, LINK_SRCS_SCRIPT]))
+    out_dir = os.path.join(sb.config.store_dir, cu.struct_hash([extra, 1]))
     script = cmd_link_script(sb, [x['path'] for x in extra], out_dir)
 
     return {

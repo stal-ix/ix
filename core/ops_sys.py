@@ -63,3 +63,13 @@ class Ops:
         ]
 
         return sb.build_cmd_script(cmd, '', {})
+
+    def link(self, sb, files, out):
+        def it():
+            yield from ('/bin/liner', 'rmrf', out)
+            yield from ('/bin/liner', 'mkdir', out)
+
+            for x in files:
+                yield from ('/bin/liner', 'link', x, os.path.join(out, os.path.basename(x)))
+
+        return sb.build_cmd_script(list(it()), '', {})

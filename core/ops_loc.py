@@ -26,6 +26,19 @@ os.link(old, new)
 '''.strip()
 
 
+LINK_SRCS_SCRIPT = '''
+import sys
+import os
+
+out = os.environ['out']
+os.chdir(out)
+
+for f in sys.argv[1:]:
+    print(f'link {f} into {out}')
+    os.link(f, os.path.basename(f))
+'''.strip()
+
+
 class Ops:
     def __init__(self, cfg):
         self.cfg = cfg
@@ -50,3 +63,6 @@ class Ops:
 
     def cksum(self, sb, fr, to, md5):
         return sb.build_py_script(CHECK_MD5_SCRIPT, dict(out=os.path.dirname(to)), [fr, to, md5])
+
+    def link(self, sb, files, out):
+        return sb.build_py_script(LINK_SRCS_SCRIPT, dict(out=out), files)
