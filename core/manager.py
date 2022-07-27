@@ -18,9 +18,6 @@ class Manager:
         self.config = config
         self.env = cj.Env(cv.vfs(config.where))
 
-    def load_impl(self, sel):
-        return cp.Package(sel, self)
-
     def cached(self, key, func):
         while True:
             try:
@@ -32,7 +29,7 @@ class Manager:
         return self.cached(p.uid, lambda: p)
 
     def load_package(self, s):
-        return self.cached(cu.struct_hash(s), lambda: self.load_hard(self.load_impl(s)))
+        return self.cached(cu.struct_hash(s), lambda: self.load_hard(cp.Package(s, self)))
 
     def load_packages(self, ss):
         for s in ss:
