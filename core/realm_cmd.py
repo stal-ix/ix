@@ -34,7 +34,7 @@ def cli_mut(ctx):
 
 
 def cli_list(ctx):
-    mngr = cm.Repo(cc.config_from(ctx))
+    repo = cr.Repo(cc.config_from(ctx))
 
     if ctx['args']:
         for a in ctx['args']:

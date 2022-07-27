@@ -10,15 +10,7 @@ import core.realm as cr
 
 class Repo:
     def __init__(self, config):
-        self._c = config
-
-    @property
-    def config(self):
-        return self._c
-
-    def load_file(self, path):
-        with open(os.path.join(self.config.where, path)) as f:
-            return f.read()
+        self.config = config
 
     def collect_garbage(self, path):
         base = os.path.basename(path)
