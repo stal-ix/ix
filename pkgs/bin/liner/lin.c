@@ -8,6 +8,9 @@
 #include <errno.h>
 #include <sys/stat.h>
 
+#include <md5.h>
+#include <sha256.h>
+
 static inline void die(int code, int err, const char* msg) {
     fprintf(stderr, "%s: %s\n", strerror(err), msg);
     exit(code);
@@ -75,6 +78,39 @@ static void main_rmrf(int argc, char** argv) {
     exec(argv + 2);
 }
 
+static const char* cknull(const char* sum) {
+    if (!sum) {
+        die(2, errno, "cksum failed");
+    }
+
+    return sum;
+}
+
+static void main_cksum(int argc, char** argv) {
+    if (argc < 3) {
+        die(2, EINVAL, "usage: checksum path [prog]+");
+    }
+
+    const char* sum = argv[1];
+    const char* path = argv[2];
+
+    char buf[1000];
+
+    if (strlen(sum) == 32) {
+        if (strcmp(cknull(MD5File(path, buf)), sum)) {
+            die(3, EINVAL, buf);
+        }
+    } else if (strlen(sum) == 64) {
+        if (strcmp(cknull(SHA256_File(path, buf)), sum)) {
+            die(2, EINVAL, buf);
+        }
+    } else {
+        die(2, EINVAL, "unknown checksum func");
+    }
+
+    exec(argv + 3);
+}
+
 int main(int argc, char** argv) {
     if (argc < 2) {
         die(1, EINVAL, "usage: liner tool [args]+");
@@ -98,6 +134,10 @@ int main(int argc, char** argv) {
 
     if (strcmp(tool, "rmrf") == 0) {
         main_rmrf(argc, argv);
+    }
+
+    if (strcmp(tool, "cksum") == 0) {
+        main_cksum(argc, argv);
     }
 
     die(1, EINVAL, "unknown tool");

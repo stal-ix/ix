@@ -2,6 +2,7 @@
 
 {% block bld_libs %}
 lib/c
+lib/md
 {% endblock %}
 
 {% block sources %}
