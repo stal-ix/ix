@@ -9,8 +9,8 @@ import core.gg as cg
 import core.utils as cu
 
 
-def realm_path(mngr, name):
-    return os.path.join(mngr.config.realm_dir, name)
+def realm_path(config, name):
+    return os.path.join(config.realm_dir, name)
 
 
 def struct(ops):
@@ -169,7 +169,7 @@ class BaseRealm:
 
     @property
     def managed_path(self):
-        return realm_path(self.mngr, self.name)
+        return realm_path(self.mngr.config, self.name)
 
     def uninstall(self):
         os.unlink(self.managed_path)
@@ -214,8 +214,30 @@ class Realm(BaseRealm):
         cu.sync()
 
 
-def load_realm(mngr, name):
-    return Realm(mngr, name, os.readlink(realm_path(mngr, name)))
+class RORealm:
+    def __init__(self, name, path):
+        self.name = name
+        self.path = path
+        self.meta = read_realm(self.path)
+
+    @property
+    def pkgs(self):
+        return self.meta['pkgs']
+
+    @property
+    def links(self):
+        return self.meta['links']
+
+    def to_rw(self, mngr):
+        return Realm(mngr, self.name, self.path)
+
+
+def load_realm_ro(config, name):
+    return RORealm(name, os.readlink(realm_path(config, name)))
+
+
+def load_realm_rw(mngr, name):
+    return load_realm_ro(mngr.config, name).to_rw(mngr)
 
 
 def prepare_realm(mngr, name, pkgs):

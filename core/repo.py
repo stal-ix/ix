@@ -38,17 +38,9 @@ class Repo:
 
     def load_realm(self, name):
         try:
-            return cr.load_realm(self, name)
+            return cr.load_realm_ro(self.config, name)
         except FileNotFoundError:
             raise er.Error(f'no such realm {name}')
-
-    def ensure_realm(self, name):
-        try:
-            return cr.load_realm(self, name)
-        except FileNotFoundError as e:
-            print(f'create new realm {name}')
-
-        return cr.new_realm(self, name)
 
     def iter_gc_candidates(self):
         yield self.config.build_dir

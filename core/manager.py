@@ -14,10 +14,14 @@ import core.package as cp
 
 class Manager(cre.Repo):
     def __init__(self, config):
-        cre.Repo.__init__(self, config)
+        self._c = config
         self._p = {}
         self._x = {}
         self._e = cj.Env(cv.vfs(config.where))
+
+    @property
+    def config(self):
+        return self._c
 
     @property
     def env(self):
@@ -47,3 +51,11 @@ class Manager(cre.Repo):
     def load_packages(self, ss):
         for s in ss:
             yield self.load_package(s)
+
+    def ensure_realm(self, name):
+        try:
+            return cr.load_realm_rw(self, name)
+        except FileNotFoundError as e:
+            print(f'create new realm {name}')
+
+        return cr.new_realm(self, name)
