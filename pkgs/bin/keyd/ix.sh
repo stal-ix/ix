@@ -1,17 +1,16 @@
 {% extends '//die/c/make.sh' %}
 
 {% block fetch %}
-https://github.com/rvaiya/keyd/archive/refs/tags/v2.4.0.tar.gz
-sha:100007894ac4fa6e95f5de5c2fe992c8b00e68d9df76c4bcdd8402a29d7b4058
+https://github.com/rvaiya/keyd/archive/refs/tags/v2.4.2.tar.gz
+sha:77c4bf6fad2f9eef93d1ebbca2d2520f5296cec32b1a64d62cb5521ecf3eb6e1
 {% endblock %}
 
 {% block bld_libs %}
 lib/c
 lib/linux
+lib/input
 {% endblock %}
 
-{% block patch %}
-(find . -name '*.h' -type f; find . -name '*.c' -type f;) | while read l; do
-    sed -e 's|err(|xerr(|' -i ${l}
-done
+{% block bld_tool %}
+bld/scripts/fakegit
 {% endblock %}
