@@ -1,8 +1,8 @@
 {% extends '//die/go/c.sh' %}
 
 {% block fetch %}
-https://github.com/cli/cli/archive/refs/tags/v2.14.2.tar.gz
-sha:06c78f050127bba298d273f824887ab4544273862abbf109df0e1d4fcb1cd7e6
+https://github.com/cli/cli/archive/refs/tags/v2.14.3.tar.gz
+sha:b674f04ff9954564ba74488fc22817f5548bcddb5d9d582720d2421604988270
 {% endblock %}
 
 {% block unpack %}
