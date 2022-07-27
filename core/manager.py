@@ -21,23 +21,18 @@ class Manager:
     def load_impl(self, sel):
         return cp.Package(sel, self)
 
-    def load_hard(self, p):
-        u = p.uid
-
-        while True:
-            try:
-                return self.cache[u]
-            except KeyError:
-                self.cache[u] = p
-
-    def load_package(self, selector):
-        key = cu.struct_hash(selector)
-
+    def cached(self, key, func):
         while True:
             try:
                 return self.cache[key]
             except KeyError:
-                self.cache[key] = self.load_hard(self.load_impl(selector))
+                self.cache[key] = func()
+
+    def load_hard(self, p):
+        return self.cached(p.uid, lambda: p)
+
+    def load_package(self, s):
+        return self.cached(cu.struct_hash(s), lambda: self.load_hard(self.load_impl(s)))
 
     def load_packages(self, ss):
         for s in ss:
