@@ -48,3 +48,18 @@ class Ops:
         ]
 
         return sb.build_cmd_script(cmd, '', {})
+
+    def cksum(self, sb, fr, to, md5):
+        if ':' in md5:
+            md5 = md5[md5.index(':') + 1:]
+
+        odir = os.path.dirname(to)
+
+        cmd = [
+            '/bin/liner', 'cksum', md5, fr,
+            '/bin/liner', 'rmrf', odir,
+            '/bin/liner', 'mkdir', odir,
+            '/bin/liner', 'link', fr, to,
+        ]
+
+        return sb.build_cmd_script(cmd, '', {})

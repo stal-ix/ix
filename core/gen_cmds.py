@@ -20,20 +20,6 @@ atexit.register(ix.footer)
 '''.strip()
 
 
-CHECK_MD5_SCRIPT = '''
-import os
-import sys
-
-old = sys.argv[1]
-new = sys.argv[2]
-md5 = sys.argv[3]
-
-print(f'check {old} checksum, expect {md5}')
-ix.check_md5(old, md5)
-os.link(old, new)
-'''.strip()
-
-
 LINK_SRCS_SCRIPT = '''
 import sys
 import os
@@ -140,9 +126,9 @@ def cmd_fetch(sb, url):
 
 
 def cmd_check(sb, path, md5):
-    out_dir = os.path.join(sb.config.store_dir, cu.struct_hash([path, CHECK_MD5_SCRIPT]))
+    out_dir = os.path.join(sb.config.store_dir, cu.struct_hash([path, 1]))
     new_path = os.path.join(out_dir, os.path.basename(path))
-    script = sb.build_py_script(CHECK_MD5_SCRIPT, dict(out=out_dir), [path, new_path, md5])
+    script = sb.config.ops.cksum(sb, path, new_path, md5)
 
     return {
         'in_dir': [os.path.dirname(path)],

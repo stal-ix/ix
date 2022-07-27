@@ -111,6 +111,18 @@ static void main_cksum(int argc, char** argv) {
     exec(argv + 3);
 }
 
+static void main_link(int argc, char** argv) {
+    if (argc < 3) {
+        die(2, EINVAL, "usage: checksum path [prog]+");
+    }
+
+    if (link(argv[1], argv[2])) {
+        die(3, errno, "link failed");
+    }
+
+    exec(argv + 3);
+}
+
 int main(int argc, char** argv) {
     if (argc < 2) {
         die(1, EINVAL, "usage: liner tool [args]+");
@@ -138,6 +150,10 @@ int main(int argc, char** argv) {
 
     if (strcmp(tool, "cksum") == 0) {
         main_cksum(argc, argv);
+    }
+
+    if (strcmp(tool, "link") == 0) {
+        main_link(argc, argv);
     }
 
     die(1, EINVAL, "unknown tool");
