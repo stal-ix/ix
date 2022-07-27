@@ -12,7 +12,7 @@ import core.realm as cr
 import core.package as cp
 
 
-class Manager(cre.Repo):
+class Manager:
     def __init__(self, config):
         self._p = {}
         self._x = {}
