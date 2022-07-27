@@ -21,15 +21,13 @@ def group_realms(l):
 
 
 def cli_mut(ctx):
-    cfg = cc.config_from(ctx)
-    repo = cr.Repo(cfg)
-    mngr = cm.Manager(cfg)
+    mngr = cm.Manager(cc.config_from(ctx))
 
     if args := ctx['args']:
         for d in group_realms(cc.lex(args)):
             mngr.ensure_realm(d[0][2]['r']).mut(d).install()
     else:
-        for r in repo.iter_realms():
+        for r in cr.Repo(mngr.config).iter_realms():
             r.to_rw(mngr).mut([]).install()
 
 
