@@ -12,11 +12,14 @@ try:
 except ImportError:
     pass
 
-# we always download with checksums
-# and can not assume proper cert availability in bootstrap context
-# so we safely disable cert validation
-import urllib3
-urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
+try:
+    # we always download with checksums
+    # and can not assume proper cert availability in bootstrap context
+    # so we safely disable cert validation
+    import urllib3
+    urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
+except ImportError:
+    pass
 
 import os
 os.environ['SSL_CERT_FILE'] = 'nowhere'

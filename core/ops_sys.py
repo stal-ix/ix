@@ -1,4 +1,5 @@
 import os
+import sys
 import json
 import subprocess
 
@@ -24,11 +25,14 @@ def run_cmd(cmd, input=''):
 
 
 class Ops:
+    def __init__(self, cfg):
+        self.cfg = cfg
+
     def execute_graph(self, graph):
         run_cmd(['/bin/assemble', 'execute'], input=json.dumps(graph))
 
     def gc(self):
-        run_cmd(['/bin/ix', 'gc'])
+        run_cmd([sys.executable, self.cfg.binary, 'gc'])
 
     def runpy(self, args):
         return ['/bin/ix', 'misc', 'runpy'] + args

@@ -1,9 +1,6 @@
 import os
 import sys
 
-import core.execute as ce
-import core.manager as cm
-
 
 FETCH_SRC_SCRIPT = '''
 import sys
@@ -44,10 +41,12 @@ class Ops:
         self.cfg = cfg
 
     def execute_graph(self, graph):
+        import core.execute as ce
         ce.execute(graph)
 
     def gc(self):
-        cm.Manager(self.cfg).gc_cycle()
+        import core.repo as cr
+        cr.Repo(self.cfg).gc_cycle()
 
     def respawn(self):
         return [sys.executable, self.cfg.binary]
