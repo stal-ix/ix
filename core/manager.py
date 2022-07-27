@@ -14,8 +14,7 @@ import core.package as cp
 
 class Manager:
     def __init__(self, config):
-        self._p = {}
-        self._x = {}
+        self.cache = {}
         self.config = config
         self.env = cj.Env(cv.vfs(config.where))
 
@@ -27,18 +26,18 @@ class Manager:
 
         while True:
             try:
-                return self._p[u]
+                return self.cache[u]
             except KeyError:
-                self._p[u] = p
+                self.cache[u] = p
 
     def load_package(self, selector):
         key = cu.struct_hash(selector)
 
         while True:
             try:
-                return self._x[key]
+                return self.cache[key]
             except KeyError:
-                self._x[key] = self.load_hard(self.load_impl(selector))
+                self.cache[key] = self.load_hard(self.load_impl(selector))
 
     def load_packages(self, ss):
         for s in ss:
