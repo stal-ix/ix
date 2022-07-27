@@ -236,10 +236,6 @@ def load_realm_ro(config, name):
     return RORealm(name, os.readlink(realm_path(config, name)))
 
 
-def load_realm_rw(mngr, name):
-    return load_realm_ro(mngr.config, name).to_rw(mngr)
-
-
 def prepare_realm(mngr, name, pkgs):
     assert '/' not in name
 
