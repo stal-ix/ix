@@ -4,6 +4,7 @@ import json
 import subprocess
 
 import core.error as ce
+import core.ops_loc as co
 
 
 def run_cmd(cmd, input=''):
@@ -24,6 +25,29 @@ def run_cmd(cmd, input=''):
         raise e
 
 
+def fix_md5(md5):
+    if ':' in md5:
+        return md5[md5.index(':') + 1:]
+
+    return md5
+
+
+def gen_fetch(url, path, md5):
+    odir = os.path.dirname(path)
+    name = os.path.basename(url)
+
+    yield [
+        '/bin/liner', 'rmrf', odir,
+        '/bin/liner', 'mkdir', odir,
+        '/bin/curl', '-k', '-L', '-o', path, url,
+    ]
+
+    if len(md5) > 10:
+        yield [
+            '/bin/liner', 'cksum', md5, path,
+        ]
+
+
 class Ops:
     def __init__(self, cfg):
         self.cfg = cfg
@@ -40,27 +64,18 @@ class Ops:
     def extract(self):
         return ['/bin/bsdtar', 'xf']
 
-    def fetch(self, sb, url, path):
-        odir = os.path.dirname(path)
-        name = os.path.basename(url)
-
-        cmd = [
-            '/bin/liner', 'rmrf', odir,
-            '/bin/liner', 'mkdir', odir,
-            '/bin/liner', 'setpwd', odir,
-            '/bin/curl', '-k', '-L', '-o', name, url,
-        ]
-
-        return sb.build_cmd_script(cmd, '', {})
+    def fetch(self, sb, url, path, md5):
+        return [sb.build_cmd_script(x, '', {}) for x in gen_fetch(url, path, fix_md5(md5))]
 
     def cksum(self, sb, fr, to, md5):
-        if ':' in md5:
-            md5 = md5[md5.index(':') + 1:]
+        if md5.startswith('sem:'):
+            # TODO(pg): temp hack
+            return co.Ops(self.cfg).cksum(sb, fr, to, md5)
 
         odir = os.path.dirname(to)
 
         cmd = [
-            '/bin/liner', 'cksum', md5, fr,
+            '/bin/liner', 'cksum', fix_md5(md5), fr,
             '/bin/liner', 'rmrf', odir,
             '/bin/liner', 'mkdir', odir,
             '/bin/liner', 'link', fr, to,

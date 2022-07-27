@@ -57,8 +57,10 @@ class Ops:
     def extract(self):
         return self.respawn() + ['misc', 'extract']
 
-    def fetch(self, sb, url, path):
-        return sb.build_py_script(FETCH_SRC_SCRIPT, dict(out=os.path.dirname(path)), [url, path])
+    def fetch(self, sb, url, path, md5):
+        return [
+            sb.build_py_script(FETCH_SRC_SCRIPT, dict(out=os.path.dirname(path)), [url, path]),
+        ]
 
     def cksum(self, sb, fr, to, md5):
         return sb.build_py_script(CHECK_MD5_SCRIPT, dict(out=os.path.dirname(to)), [fr, to, md5])

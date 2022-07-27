@@ -4,6 +4,7 @@
 import os
 
 {% block build %}
+import shutil
 import subprocess
 
 DATA = r"""
@@ -34,7 +35,7 @@ if DATA:
     os.environ['TMPDIR'] = tmp
     input = '\n'.join(iter_lines()).strip() + '\n'
     print(input)
-    subprocess.run([ix.which('sh')], input=input.encode(), check=True)
+    subprocess.run([shutil.which('sh')], input=input.encode(), check=True)
 {% endblock %}
 
 env_data = r"""

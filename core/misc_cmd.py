@@ -1,6 +1,5 @@
 import os
 import sys
-import code
 import json
 import shutil
 import hashlib
@@ -117,15 +116,6 @@ class Iface:
             if sys.exc_info()[0]:
                 shutil.rmtree(tmp)
 
-    def which(self, x):
-        for p in os.environ['PATH'].split(':'):
-            pp = os.path.join(p, x)
-
-            if os.path.isfile(pp):
-                return pp
-
-        raise ce.Error(f'{x} not found')
-
 
 def cli_misc_runpy(ctx):
     sys.argv = ['runpy'] + ctx['args']
@@ -153,12 +143,3 @@ def cli_misc_extract(ctx):
             csc.unzip(a)
         else:
             csc.untar(a)
-
-
-def cli_misc_fetch(ctx):
-    for a in ctx['args']:
-        csc.fetch_url(a, os.path.basename(a))
-
-
-def cli_misc_repl(ctx):
-    code.interact()

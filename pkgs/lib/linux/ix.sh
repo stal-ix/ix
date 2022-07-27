@@ -1,8 +1,9 @@
 {% extends '//die/c/c_std.sh' %}
 
 {% block fetch %}
-https://www.kernel.org/pub/linux/kernel/v5.x/linux-5.13.12.tar.xz
-sha:28b15d248f7a926e47b7218a503b9b20b6ef9ec51232603aa2163fc17ee08824
+#https://www.kernel.org/pub/linux/kernel/v5.x/linux-5.13.12.tar.xz
+#sha:28b15d248f7a926e47b7218a503b9b20b6ef9ec51232603aa2163fc17ee08824
+{% include '//bin/kernel/18/t/ver.sh' %]
 {% endblock %}
 
 {% block host_libs %}

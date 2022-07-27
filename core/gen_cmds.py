@@ -96,7 +96,7 @@ class CmdBuild:
         yield 'make_thrs', str(multiprocessing.cpu_count() - 2)
 
 
-def cmd_fetch(sb, url):
+def cmd_fetch(sb, url, md5):
     # do not encode full path to output, for proper caching
     name = os.path.basename(url)
     pdir = cu.canon_name(cu.struct_hash([url, 1]) + '-url-' + name)
@@ -105,7 +105,7 @@ def cmd_fetch(sb, url):
 
     return {
         'out_dir': [odir],
-        'cmd': [sb.config.ops.fetch(sb, url, path)],
+        'cmd': sb.config.ops.fetch(sb, url, path, md5),
         'path': path,
         'cache': True,
         'pool': 'other',
@@ -151,7 +151,7 @@ def iter_build_commands(self):
         extra = []
 
         for ui in urls:
-            f = cmd_fetch(sb, ui['url'])
+            f = cmd_fetch(sb, ui['url'], ui['md5'])
 
             yield f
 
