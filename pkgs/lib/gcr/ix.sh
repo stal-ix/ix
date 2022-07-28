@@ -1,8 +1,8 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://gitlab.gnome.org/GNOME/gcr/-/archive/3.41.0/gcr-3.41.0.tar.bz2
-sha:cac182dadc47f95b7d83f4b0712d168c8f35de81c3c20c9f972edcbdf95b3328
+https://gitlab.gnome.org/GNOME/gcr/-/archive/3.41.1/gcr-3.41.1.tar.bz2
+sha:7e06e86e12aadaac6a72f2ee7eeaaaa6228a0ba3b92cadd50b45c0f05f0d91c6
 {% endblock %}
 
 {% block lib_deps %}
