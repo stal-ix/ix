@@ -177,15 +177,19 @@ def cmd_link(sb, extra):
     }
 
 
+def replace_dict(d, f, t):
+    return json.loads(json.dumps(d).replace(f, t))
+
+
 def replace_sentinel(x):
     imp = x.get('important', x)
+    uid = cu.struct_hash(replace_dict(imp, UID, ''))
 
-    return json.loads(json.dumps(x).replace(UID, cu.struct_hash(imp)))
+    return replace_dict(x, UID, uid)
 
 
 def iter_build_commands(self):
     sb = ScriptBuilder(self.config)
-    out_dir = self.out_dir
     urls = self.descr['bld']['fetch']
 
     if urls:
@@ -213,8 +217,9 @@ def iter_build_commands(self):
         src_dir = None
 
     yield replace_sentinel({
+        'uid': UID,
         'in_dir': self.iter_build_dirs() + extra,
-        'out_dir': [out_dir],
+        'out_dir': [self.out_dir],
         'cmd': [CmdBuild(self).script(sb, src_dir)],
         'cache': True,
         'pool': 'cpu',

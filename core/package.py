@@ -117,8 +117,6 @@ class Package:
         if 'flags' not in selector:
             selector['flags'] = {}
 
-        selector['name'] = selector['name'].replace('aux/etc', 'etc')
-
         flags = selector['flags']
 
         if 'target' not in flags:
@@ -130,26 +128,19 @@ class Package:
         self.selector = selector
         self.descr = cr.RenderContext(self).render()
 
-        sd = self.config.store_dir
-
-        self.uid = cu.struct_hash([
-            1,
-            self.descr['bld']['fetch'],
-            self.descr['bld']['script'],
-            self.norm_name,
-            self.pkg_name,
-            sd,
-            self.iter_build_dirs(),
-        ])
-
-        if not self.buildable():
-            self.uid = cu.struct_hash([self.uid, selector])
-
-        self.out_dir = f'{sd}/{self.uid}-{self.pkg_name}'
+        if self.buildable():
+            self.uid = cg.UID
+            self.uid = list(self.iter_build_commands())[-1]['uid']
+        else:
+            self.uid = cu.struct_hash(selector)
 
     @property
     def norm_name(self):
         return self.name.removesuffix('.sh').removesuffix('/ix')
+
+    @property
+    def out_dir(self):
+        return f'{self.config.store_dir}/{self.uid}-{self.pkg_name}'
 
     @property
     @cu.cached_method
