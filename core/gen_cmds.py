@@ -53,6 +53,9 @@ class ScriptBuilder:
     def config(self):
         return self.package.config
 
+    def cmd(self, args):
+        return self.build_cmd_script(args, '', env)
+
     def build_cmd_script(self, args, stdin, env):
         return {
             'args': args,
@@ -157,7 +160,7 @@ def cmd_check(sb, path, md5):
     if md5.startswith('sem:'):
         extra = [sb.package.find_tool('bin/semver').out_dir]
         bpath = extra[0] + '/bin/semver'
-        script = [sb.build_cmd_script([bpath, path, md5[4:], new_path], '', {})]
+        script = [sb.cmd([bpath, path, md5[4:], new_path])]
     else:
         extra = []
         script = sb.config.ops.cksum(sb, path, new_path, md5)

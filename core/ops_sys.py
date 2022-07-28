@@ -52,8 +52,8 @@ def gen_fetch(url, path, md5):
 
 def show_cksum(sb, fr):
     return [
-        sb.build_cmd_script(['/bin/sha256sum', fr], '', {}),
-        sb.build_cmd_script(['/bin/false'], '', {}),
+        sb.cmd(['/bin/sha256sum', fr]),
+        sb.cmd(['/bin/false']),
     ]
 
 
@@ -74,7 +74,7 @@ class Ops:
         return [f'{B}/bsdtar', 'xf']
 
     def fetch(self, sb, url, path, md5):
-        return [sb.build_cmd_script(x, '', {}) for x in gen_fetch(url, path, md5)]
+        return [sb.cmd(x) for x in gen_fetch(url, path, md5)]
 
     def cksum(self, sb, fr, to, md5):
         if len(md5) < 16:
@@ -89,9 +89,7 @@ class Ops:
             f'{B}/liner', 'link', fr, to,
         ]
 
-        return [
-            sb.build_cmd_script(cmd, '', {}),
-        ]
+        return [sb.cmd(cmd, '', {})]
 
     def link(self, sb, files, out):
         def it():
@@ -101,4 +99,4 @@ class Ops:
             for x in files:
                 yield from (f'{B}/liner', 'link', x, os.path.join(out, os.path.basename(x)))
 
-        return sb.build_cmd_script(list(it()), '', {})
+        return sb.cmd(list(it()))
