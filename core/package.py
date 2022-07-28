@@ -126,6 +126,7 @@ class Package:
             flags['kind'] = 'bin'
 
         self.selector = selector
+        self.pkg_name = self.calc_pkg_name()
         self.descr = cr.RenderContext(self).render()
 
         if self.buildable():
@@ -142,9 +143,7 @@ class Package:
     def out_dir(self):
         return f'{self.config.store_dir}/{self.uid}-{self.pkg_name}'
 
-    @property
-    @cu.cached_method
-    def pkg_name(self):
+    def calc_pkg_name(self):
         k = self.flags['kind']
         n = self.norm_name
 
