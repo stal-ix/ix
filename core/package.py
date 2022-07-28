@@ -262,9 +262,17 @@ class Package:
             if x['p'].buildable():
                 yield x
 
+    def iter_extra_tools(self):
+        if 'sem:' in str(self.descr['bld']['fetch']):
+            yield 'bin/semver'
+
+    def iter_extra_build_depends(self):
+        # TODO(pg): refac
+        return self.visit(self.iter_extra_tools(), self.bin_flags(), lambda x: x.run_closure())
+
     @cu.cached_method
     def iter_all_build_depends(self):
-        return [x['p'] for x in self.iter_tagged_build_depends()]
+        return [x['p'] for x in self.iter_tagged_build_depends()] + list(self.iter_extra_build_depends())
 
     @cu.cached_method
     def iter_build_dirs(self):
@@ -297,3 +305,10 @@ class Package:
 
     def iter_build_commands(self):
         return cg.iter_build_commands(self)
+
+    def find_tool(self, name):
+        for x in self.iter_all_build_depends():
+            if x.norm_name == name:
+                return x
+
+        raise Exception(f'can not find {name} for {self.name}')

@@ -4,7 +4,6 @@ import json
 import subprocess
 
 import core.error as ce
-import core.ops_loc as co
 
 
 def run_cmd(cmd, input=''):
@@ -42,9 +41,9 @@ def gen_fetch(url, path, md5):
         '/bin/curl', '-k', '-L', '-o', path, url,
     ]
 
-    if len(md5) > 10:
+    if len(md5) > 10 and 'sem:' not in md5:
         yield [
-            '/bin/liner', 'cksum', md5, path,
+            '/bin/liner', 'cksum', fix_md5(md5), path,
         ]
 
 
@@ -65,15 +64,9 @@ class Ops:
         return ['/bin/bsdtar', 'xf']
 
     def fetch(self, sb, url, path, md5):
-        return [sb.build_cmd_script(x, '', {}) for x in gen_fetch(url, path, fix_md5(md5))]
+        return [sb.build_cmd_script(x, '', {}) for x in gen_fetch(url, path, md5)]
 
     def cksum(self, sb, fr, to, md5):
-        if False and md5.startswith('sem:'):
-            # TODO(pg): temp hack
-            return co.Ops(self.cfg).cksum(sb, fr, to, md5)
-
-        assert 'sem:' not in md5, md5
-
         odir = os.path.dirname(to)
 
         cmd = [

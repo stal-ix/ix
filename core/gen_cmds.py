@@ -46,8 +46,12 @@ atexit.register(footer)
 
 
 class ScriptBuilder:
-    def __init__(self, config):
-        self.config = config
+    def __init__(self, package):
+        self.package = package
+
+    @property
+    def config(self):
+        return self.package.config
 
     def build_cmd_script(self, args, stdin, env):
         return {
@@ -150,12 +154,25 @@ def cmd_fetch(sb, url, md5):
 def cmd_check(sb, path, md5):
     out_dir = os.path.join(sb.config.store_dir, gen_udir('chk'))
     new_path = os.path.join(out_dir, os.path.basename(path))
-    script = sb.config.ops.cksum(sb, path, new_path, md5)
+
+    if 'sem:' in md5:
+        extra = [sb.package.find_tool('bin/semver').out_dir]
+
+        script = [
+            # TODO(pg): fix
+            sb.build_cmd_script(['/bin/rm', '-rf', out_dir], '', {}),
+            sb.build_cmd_script(['/bin/mkdir', out_dir], '', {}),
+            sb.build_cmd_script([extra[0] + '/bin/semver', path, md5[4:]], '', {}),
+            sb.build_cmd_script(['/bin/ln', path, new_path], '', {}),
+        ]
+    else:
+        extra = []
+        script = [sb.config.ops.cksum(sb, path, new_path, md5)]
 
     return {
-        'in_dir': [os.path.dirname(path)],
+        'in_dir': [os.path.dirname(path)] + extra,
         'out_dir': [out_dir],
-        'cmd': [script],
+        'cmd': script,
         'path': new_path,
         'pool': 'other',
     }
@@ -189,7 +206,7 @@ def replace_sentinel(x):
 
 
 def iter_build_commands(self):
-    sb = ScriptBuilder(self.config)
+    sb = ScriptBuilder(self)
     urls = self.descr['bld']['fetch']
 
     if urls:
