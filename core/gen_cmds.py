@@ -133,7 +133,6 @@ def gen_udir(suffix):
 
 
 def cmd_fetch(sb, url, md5):
-    # do not encode full path to output, for proper caching
     name = os.path.basename(url)
     odir = os.path.join(sb.config.store_dir, gen_udir(f'url-{name}'))
     path = os.path.join(odir, name)
@@ -155,16 +154,10 @@ def cmd_check(sb, path, md5):
     out_dir = os.path.join(sb.config.store_dir, gen_udir('chk'))
     new_path = os.path.join(out_dir, os.path.basename(path))
 
-    if 'sem:' in md5:
+    if md5.startswith('sem:'):
         extra = [sb.package.find_tool('bin/semver').out_dir]
-
-        script = [
-            # TODO(pg): fix
-            sb.build_cmd_script(['/bin/rm', '-rf', out_dir], '', {}),
-            sb.build_cmd_script(['/bin/mkdir', out_dir], '', {}),
-            sb.build_cmd_script([extra[0] + '/bin/semver', path, md5[4:]], '', {}),
-            sb.build_cmd_script(['/bin/ln', path, new_path], '', {}),
-        ]
+        bpath = extra[0] + '/bin/semver'
+        script = [sb.build_cmd_script([bpath, path, md5[4:], new_path], '', {})]
     else:
         extra = []
         script = [sb.config.ops.cksum(sb, path, new_path, md5)]

@@ -1,3 +1,4 @@
+import os
 import sys
 import json
 import hashlib
@@ -45,8 +46,22 @@ def semantic_checksum(path):
 
 if len(sys.argv) == 2:
     print(semantic_checksum(sys.argv[1]))
-else:
-    was = sys.argv[2]
+elif len(sys.argv) == 3:
     got = semantic_checksum(sys.argv[1])
+    was = sys.argv[2]
 
     assert was == got, got
+elif len(sys.argv) == 4:
+    old = sys.argv[1]
+    got = semantic_checksum(old)
+    was = sys.argv[2]
+    new = sys.argv[3]
+
+    assert was == got, got
+
+    try:
+        os.makedirs(os.path.dirname(new))
+    except Exception:
+        pass
+
+    os.link(old, new)
