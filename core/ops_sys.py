@@ -58,7 +58,7 @@ class Ops:
         run_cmd([sys.executable, self.cfg.binary, 'gc'])
 
     def runpy(self, args):
-        return ['/ix/realm/boot/bin/python3', '-'] + args
+        return ['/bin/ix_python', '-'] + args
 
     def extract(self):
         return ['/bin/bsdtar', 'xf']

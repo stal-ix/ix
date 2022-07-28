@@ -4,5 +4,6 @@
 bin/liner
 bin/curl/ix
 bin/assemble
+bin/python/ix
 bin/bsdtar/ix
 {% endblock %}
