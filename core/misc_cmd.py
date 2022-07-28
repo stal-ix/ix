@@ -19,10 +19,6 @@ def hash(n):
     raise Exception(f'unsupported hash name {n}')
 
 
-def md5(b):
-    return hash('md5')(b).hexdigest()
-
-
 def sha(b):
     return hash('sha')(b).hexdigest()
 
@@ -31,41 +27,7 @@ def struct_sha(s):
     return sha(json.dumps(s, sort_keys=True).encode())
 
 
-def read_rec(r):
-    if r:
-        return r.read()
-
-    return b''
-
-
-def semantic_checksum(path):
-    r = []
-
-    with tarfile.open(path) as tf:
-        for rec in tf.getmembers():
-            try:
-                m = sha(read_rec(tf.extractfile(rec)))
-            except KeyError:
-                m = 'key error'
-
-            v = [
-                rec.name,
-                rec.size,
-                rec.mode,
-                str(rec.type),
-                rec.linkname,
-                m,
-            ]
-
-            r.append(struct_sha(v))
-
-    return struct_sha(list(sorted(r)))
-
-
 def chksum(path, sch):
-    if sch == 'sem':
-        return semantic_checksum(path)
-
     func = hash(sch)
 
     with open(path, 'rb') as f:
@@ -103,16 +65,6 @@ def cli_misc_runpy(ctx):
     }
 
     exec(sys.stdin.read(), g, g)
-
-
-def cli_misc_chksum(ctx):
-    args = ctx['args']
-    path = args[0]
-    kind = args[1]
-
-    res = chksum(path, kind)
-
-    print(f'{kind}:{res}')
 
 
 def cli_misc_extract(ctx):
