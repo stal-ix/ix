@@ -50,6 +50,13 @@ def gen_fetch(url, path, md5):
         ]
 
 
+def show_cksum(sb, fr):
+    return [
+        sb.build_cmd_script(['/bin/sha256sum', fr], '', {}),
+        sb.build_cmd_script(['/bin/false'], '', {}),
+    ]
+
+
 class Ops:
     def __init__(self, cfg):
         self.cfg = cfg
@@ -70,6 +77,9 @@ class Ops:
         return [sb.build_cmd_script(x, '', {}) for x in gen_fetch(url, path, md5)]
 
     def cksum(self, sb, fr, to, md5):
+        if len(md5) < 16:
+            return show_cksum(sb, fr)
+
         odir = os.path.dirname(to)
 
         cmd = [
@@ -79,7 +89,9 @@ class Ops:
             f'{B}/liner', 'link', fr, to,
         ]
 
-        return sb.build_cmd_script(cmd, '', {})
+        return [
+            sb.build_cmd_script(cmd, '', {}),
+        ]
 
     def link(self, sb, files, out):
         def it():

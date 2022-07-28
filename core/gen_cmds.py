@@ -160,7 +160,7 @@ def cmd_check(sb, path, md5):
         script = [sb.build_cmd_script([bpath, path, md5[4:], new_path], '', {})]
     else:
         extra = []
-        script = [sb.config.ops.cksum(sb, path, new_path, md5)]
+        script = sb.config.ops.cksum(sb, path, new_path, md5)
 
     return {
         'in_dir': [os.path.dirname(path)] + extra,

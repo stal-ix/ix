@@ -63,7 +63,9 @@ class Ops:
         ]
 
     def cksum(self, sb, fr, to, md5):
-        return sb.build_py_script(CHECK_MD5_SCRIPT, dict(out=os.path.dirname(to)), [fr, to, md5])
+        return [
+            sb.build_py_script(CHECK_MD5_SCRIPT, dict(out=os.path.dirname(to)), [fr, to, md5]),
+        ]
 
     def link(self, sb, files, out):
         return sb.build_py_script(LINK_SRCS_SCRIPT, dict(out=out), files)
