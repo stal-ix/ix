@@ -89,7 +89,7 @@ class Ops:
             f'{B}/liner', 'link', fr, to,
         ]
 
-        return [sb.cmd(cmd, '', {})]
+        return [sb.cmd(cmd)]
 
     def link(self, sb, files, out):
         def it():

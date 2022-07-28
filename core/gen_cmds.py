@@ -54,7 +54,7 @@ class ScriptBuilder:
         return self.package.config
 
     def cmd(self, args):
-        return self.build_cmd_script(args, '', env)
+        return self.build_cmd_script(args, '', {})
 
     def build_cmd_script(self, args, stdin, env):
         return {

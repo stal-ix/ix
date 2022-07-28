@@ -1,8 +1,7 @@
 {% extends '//bin/coreutils/9/0/ix.sh' %}
 
-{% block bld_tool %}
-bin/busybox
-{{super()}}
+{% block shell %}
+bin/gosh/posix
 {% endblock %}
 
 {% block configure %}
