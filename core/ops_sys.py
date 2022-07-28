@@ -6,6 +6,9 @@ import subprocess
 import core.error as ce
 
 
+B = '/bin/bin_ix'
+
+
 def run_cmd(cmd, input=''):
     cmd = [
         '/bin/sudo',
@@ -36,14 +39,14 @@ def gen_fetch(url, path, md5):
     name = os.path.basename(url)
 
     yield [
-        '/bin/liner', 'rmrf', odir,
-        '/bin/liner', 'mkdir', odir,
-        '/bin/curl', '-k', '-L', '-o', path, url,
+        f'{B}/liner', 'rmrf', odir,
+        f'{B}/liner', 'mkdir', odir,
+        f'{B}/curl', '-k', '-L', '-o', path, url,
     ]
 
     if len(md5) > 10 and 'sem:' not in md5:
         yield [
-            '/bin/liner', 'cksum', fix_md5(md5), path,
+            f'{B}/liner', 'cksum', fix_md5(md5), path,
         ]
 
 
@@ -52,16 +55,16 @@ class Ops:
         self.cfg = cfg
 
     def execute_graph(self, graph):
-        run_cmd(['/bin/assemble', 'execute'], input=json.dumps(graph))
+        run_cmd([f'{B}/assemble', 'execute'], input=json.dumps(graph))
 
     def gc(self):
         run_cmd([sys.executable, self.cfg.binary, 'gc'])
 
     def runpy(self, args):
-        return ['/bin/ix_python', '-'] + args
+        return [f'{B}/python', '-'] + args
 
     def extract(self):
-        return ['/bin/bsdtar', 'xf']
+        return [f'{B}/bsdtar', 'xf']
 
     def fetch(self, sb, url, path, md5):
         return [sb.build_cmd_script(x, '', {}) for x in gen_fetch(url, path, md5)]
@@ -70,20 +73,20 @@ class Ops:
         odir = os.path.dirname(to)
 
         cmd = [
-            '/bin/liner', 'cksum', fix_md5(md5), fr,
-            '/bin/liner', 'rmrf', odir,
-            '/bin/liner', 'mkdir', odir,
-            '/bin/liner', 'link', fr, to,
+            f'{B}/liner', 'cksum', fix_md5(md5), fr,
+            f'{B}/liner', 'rmrf', odir,
+            f'{B}/liner', 'mkdir', odir,
+            f'{B}/liner', 'link', fr, to,
         ]
 
         return sb.build_cmd_script(cmd, '', {})
 
     def link(self, sb, files, out):
         def it():
-            yield from ('/bin/liner', 'rmrf', out)
-            yield from ('/bin/liner', 'mkdir', out)
+            yield from (f'{B}/liner', 'rmrf', out)
+            yield from (f'{B}/liner', 'mkdir', out)
 
             for x in files:
-                yield from ('/bin/liner', 'link', x, os.path.join(out, os.path.basename(x)))
+                yield from (f'{B}/liner', 'link', x, os.path.join(out, os.path.basename(x)))
 
         return sb.build_cmd_script(list(it()), '', {})

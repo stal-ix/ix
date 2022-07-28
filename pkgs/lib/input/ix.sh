@@ -1,4 +1,4 @@
-{% extends '//lib/input/t/ix.sh' %}
+{% extends 't/ix.sh' %}
 
 {% block run_data %}
 lib/input/data

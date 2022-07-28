@@ -7,6 +7,10 @@ compress
 
 {% block install %}
 {{super()}}
-rm ${out}/bin/bsdcat
-rm ${out}/bin/bsdcpio
+cd ${out}
+rm bin/bsdcat
+rm bin/bsdcpio
+mv bin old
+mkdir bin
+mv old bin/bin_ix
 {% endblock %}

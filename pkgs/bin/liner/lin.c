@@ -123,6 +123,10 @@ static void main_link(int argc, char** argv) {
     exec(argv + 3);
 }
 
+static void main_fail(int argc, char** argv) {
+    exit(1);
+}
+
 int main(int argc, char** argv) {
     if (argc < 2) {
         die(1, EINVAL, "usage: liner tool [args]+");
@@ -154,6 +158,10 @@ int main(int argc, char** argv) {
 
     if (strcmp(tool, "link") == 0) {
         main_link(argc, argv);
+    }
+
+    if (strcmp(tool, "fail") == 0) {
+        main_fail(argc, argv);
     }
 
     die(1, EINVAL, "unknown tool");

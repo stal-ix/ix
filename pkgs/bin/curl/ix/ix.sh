@@ -12,6 +12,10 @@ compress
 
 {% block install %}
 {{super()}}
-rm -r ${out}/share
-rm ${out}/bin/curl-config
+cd ${out}
+rm -r share
+rm bin/curl-config
+mv bin old
+mkdir bin
+mv old bin/bin_ix
 {% endblock %}
