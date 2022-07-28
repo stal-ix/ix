@@ -17,6 +17,7 @@ bld/python
 bld/gettext
 {% endblock %}
 
-{% block strip_pc %}
-echo 'TODO(pg): fixit'
+{% block install %}
+{{super()}}
+rm -rf ${out}/share/pkgconfig
 {% endblock %}
