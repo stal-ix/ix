@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://gitlab.com/wireshark/wireshark/-/archive/efe8dc051cbd933c3dcdd33d2664e94ab4e703c0/wireshark-efe8dc051cbd933c3dcdd33d2664e94ab4e703c0.tar.bz2
-sem:83a40cce16d8f245a90efa6e21527d9ae170280a4e1f3fa62d049c3ada326513
+https://gitlab.com/wireshark/wireshark/-/archive/v3.7.1/wireshark-v3.7.1.tar.bz2
+sha:5972314984bbd7852e4789a975dfb6f4cd379900eabaf2ad56d70de0c9f6c959
 {% endblock %}
 
 {% block bld_libs %}
