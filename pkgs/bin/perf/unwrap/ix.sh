@@ -4,7 +4,7 @@
 {% include '//bin/kernel/18/t/ver.sh' %}
 {% endblock %}
 
-{% block lib_deps %}
+{% block bld_libs %}
 lib/c
 lib/z
 lib/xz
