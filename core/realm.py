@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 import os
 import sys
 import json
@@ -109,9 +111,7 @@ class RealmCtx:
         return list(flt(self.calc_all_runtime_depends()))
 
     def calc_all_build_depends(self):
-        pkgs = [{'name': x} for x in ('bld/python', 'bld/sh', 'bld/box')]
-
-        for p in self.mngr.load_packages(pkgs):
+        for p in self.mngr.load_packages([{'name': 'bld/scripts/realm'}]):
             yield p
             yield from p.iter_all_runtime_depends()
 
@@ -132,22 +132,16 @@ class RealmCtx:
     def buildable(self):
         return True
 
-    def build_script(self):
+    def build_cmd(self):
         descr = {
             'pkgs': self.pkgs,
             'links': [p.out_dir for p in self.iter_all_runtime_depends()],
         }
 
-        meta = base64.b64encode(json.dumps(descr).encode()).decode()
-
-        return self.mngr.env.get_template('//die/realm.py').render(meta=meta)
-
-    def build_cmd(self):
         return {
-            'args': ['python3'],
-            'stdin': self.build_script(),
+            'args': ['prepare_realm', self.out_dir],
+            'stdin': json.dumps(descr),
             'env': {
-                'out': self.out_dir,
                 'PATH': ':'.join((x.out_dir + '/bin' for x in self.iter_all_build_depends())),
             },
         }

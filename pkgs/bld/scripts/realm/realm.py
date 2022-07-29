@@ -1,12 +1,19 @@
+#!/usr/bin/env python3
+
 import os
+import sys
 import json
-import base64
+import shutil
 import subprocess
 
 
-meta = json.loads(base64.b64decode("{{meta}}").decode())
-path = os.environ['out']
+meta = json.loads(sys.stdin.read())
+path = sys.argv[1]
 
+try:
+    shutil.rmtree(path)
+except Exception:
+    pass
 
 os.makedirs(path)
 os.chdir(path)
