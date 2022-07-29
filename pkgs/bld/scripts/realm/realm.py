@@ -10,14 +10,6 @@ import subprocess
 meta = json.loads(sys.stdin.read())
 path = sys.argv[1]
 
-try:
-    shutil.rmtree(path)
-except Exception:
-    pass
-
-os.makedirs(path)
-os.chdir(path)
-
 
 def iter_dir_1(w):
     for a, b, c in os.walk(w):
@@ -30,11 +22,9 @@ def iter_dir_1(w):
             if os.path.islink(dl):
                 yield dl
 
-
 def iter_dir(w):
     for x in iter_dir_1(w):
         yield x[len(w) + 1:]
-
 
 def install(fr, to):
     for x in iter_dir(fr):
@@ -59,25 +49,27 @@ def install(fr, to):
         os.symlink(pf, p)
 
 
+try:
+    shutil.rmtree(path)
+except Exception:
+    pass
+
+os.makedirs(path)
+os.chdir(path)
+
 for p in reversed(meta['links']):
     install(p, path)
 
+if os.path.isdir('fix'):
+    for x in sorted(os.listdir('fix')):
+        if not x.endswith('.sh'):
+            continue
 
-SH = '''
-set -xue
+        print(f'run hooks from {x}')
 
-if test -d fix; then
-    find fix/ -name '*.sh' | sort | while read l; do
-        sh "${l}" || exit 1
-    done
+        subprocess.run(['sh', os.path.join('fix', x)], check=True)
 
-    rm -r fix
-fi
-'''
-
-
-subprocess.run(['sh'], check=True, input=SH.encode())
-
+    shutil.rmtree('fix')
 
 with open('meta.json', 'w') as f:
     f.write(json.dumps(meta, indent=4, sort_keys=True))
