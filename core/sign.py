@@ -11,6 +11,9 @@ def gen_udir(suffix):
 
 
 def replace_dict(d, f, t):
+    if 'uid' not in d:
+        d = cu.dict_dict_update(d, {'uid': UID})
+
     return json.loads(json.dumps(d).replace(f, t))
 
 
