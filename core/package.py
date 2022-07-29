@@ -117,24 +117,27 @@ def sanitize(flags):
     return popf(flags, *ONE_LEVEL)
 
 
+def fix_selector(selector, config):
+    selector = cu.copy_dict(selector)
+
+    if 'flags' not in selector:
+        selector['flags'] = {}
+
+    flags = selector['flags']
+
+    if 'target' not in flags:
+        flags['target'] = config.platform['target']
+
+    if 'kind' not in flags:
+        flags['kind'] = 'bin'
+
+    return selector
+
+
 class Package:
     def __init__(self, selector, mngr):
         self.manager = mngr
-
-        selector = cu.copy_dict(selector)
-
-        if 'flags' not in selector:
-            selector['flags'] = {}
-
-        flags = selector['flags']
-
-        if 'target' not in flags:
-            flags['target'] = self.config.platform['target']
-
-        if 'kind' not in flags:
-            flags['kind'] = 'bin'
-
-        self.selector = selector
+        self.selector = fix_selector(selector, self.config)
         self.pkg_name = self.calc_pkg_name()
         self.descr = cr.RenderContext(self).render()
 
