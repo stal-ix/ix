@@ -82,6 +82,15 @@ def visit_lst(l, f):
     return visit_node(None, ff, kk)[1:]
 
 
+def uniq(l):
+    v = set()
+
+    for x in l:
+        if x.uid not in v:
+            v.add(x.uid)
+            yield x
+
+
 def add_kind(k, l):
     return ({'kind': k, 'p': x} for x in l)
 
@@ -258,16 +267,9 @@ class Package:
         yield from add_kind('host lib', self.bld_host_lib_closure())
 
     def iter_tagged_build_depends(self):
-        v = set()
-
         for x in self.iter_all_tagged_build_depends():
-            p = x['p']
-
-            if p.buildable():
-                if p.uid not in v:
-                    v.add(p.uid)
-
-                    yield x
+            if x['p'].buildable():
+                yield x
 
     def iter_extra_tools(self):
         if 'sem:' in str(self.descr['bld']['fetch']):
@@ -277,9 +279,15 @@ class Package:
         # TODO(pg): refac
         return self.visit(self.iter_extra_tools(), self.bin_flags(), lambda x: x.run_closure())
 
+    def iter_all_build_depends_dup(self):
+        for x in self.iter_tagged_build_depends():
+            yield x['p']
+
+        yield from self.iter_extra_build_depends()
+
     @cu.cached_method
     def iter_all_build_depends(self):
-        return [x['p'] for x in self.iter_tagged_build_depends()] + list(self.iter_extra_build_depends())
+        return list(uniq(self.iter_all_build_depends_dup()))
 
     @cu.cached_method
     def iter_build_dirs(self):
