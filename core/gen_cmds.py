@@ -5,6 +5,7 @@ import jinja2
 import itertools
 import multiprocessing
 
+import core.sign as cs
 import core.utils as cu
 import core.error as ce
 
@@ -128,16 +129,10 @@ class CmdBuild:
         yield 'make_thrs', str(multiprocessing.cpu_count() - 2)
 
 
-UID = '#uid_placeholder#'
-
-
-def gen_udir(suffix):
-    return UID + '-' + cu.canon_name(suffix)
-
 
 def cmd_fetch(sb, url, md5):
     name = os.path.basename(url)
-    odir = os.path.join(sb.config.store_dir, gen_udir(f'url-{name}'))
+    odir = os.path.join(sb.config.store_dir, cs.gen_udir(f'url-{name}'))
     path = os.path.join(odir, name)
 
     return {
@@ -154,7 +149,7 @@ def cmd_fetch(sb, url, md5):
 
 
 def cmd_check(sb, path, md5):
-    out_dir = os.path.join(sb.config.store_dir, gen_udir('chk'))
+    out_dir = os.path.join(sb.config.store_dir, cs.gen_udir('chk'))
     new_path = os.path.join(out_dir, os.path.basename(path))
 
     if md5.startswith('sem:'):
@@ -179,7 +174,7 @@ def cmd_link_script(sb, files, out):
 
 
 def cmd_link(sb, extra):
-    out_dir = os.path.join(sb.config.store_dir, gen_udir('lnk'))
+    out_dir = os.path.join(sb.config.store_dir, cs.gen_udir('lnk'))
     script = cmd_link_script(sb, [x['path'] for x in extra], out_dir)
 
     return {
@@ -190,17 +185,6 @@ def cmd_link(sb, extra):
     }
 
 
-def replace_dict(d, f, t):
-    return json.loads(json.dumps(d).replace(f, t))
-
-
-def replace_sentinel(x):
-    imp = x.get('important', x)
-    uid = cu.struct_hash(replace_dict(imp, UID, ''))
-
-    return replace_dict(x, UID, uid)
-
-
 def iter_build_commands(self):
     sb = ScriptBuilder(self)
     urls = self.descr['bld']['fetch']
@@ -209,17 +193,17 @@ def iter_build_commands(self):
         extra = []
 
         for ui in urls:
-            f = replace_sentinel(cmd_fetch(sb, ui['url'], ui['md5']))
+            f = cs.replace_sentinel(cmd_fetch(sb, ui['url'], ui['md5']))
 
             yield f
 
-            c = replace_sentinel(cmd_check(sb, f['path'], ui['md5']))
+            c = cs.replace_sentinel(cmd_check(sb, f['path'], ui['md5']))
 
             yield c
 
             extra.append(c)
 
-        cmd = replace_sentinel(cmd_link(sb, extra))
+        cmd = cs.replace_sentinel(cmd_link(sb, extra))
 
         yield cmd
 
@@ -229,7 +213,7 @@ def iter_build_commands(self):
         extra = []
         src_dir = None
 
-    yield replace_sentinel({
+    yield cs.replace_sentinel({
         'uid': self.uid,
         'in_dir': self.iter_build_dirs() + extra,
         'out_dir': [self.out_dir],

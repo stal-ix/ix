@@ -6,6 +6,7 @@ import shutil
 import itertools
 
 import core.gg as cg
+import core.sign as cs
 import core.utils as cu
 
 
@@ -88,12 +89,12 @@ class RealmCtx:
         self.mngr = mngr
         self.pkg_name = name
         self.pkgs = pkgs
+        self.uid = cs.UID
+        self.uid = list(self.iter_build_commands())[-1]['uid']
 
-        sd = self.mngr.config.store_dir
-        uids = [x.uid for x in self.iter_all_build_depends()]
-
-        self.uid = cu.struct_hash([5, self.pkg_name, sd, self.build_script()] + uids)
-        self.out_dir = f'{sd}/{self.uid}-rlm-{self.pkg_name}'
+    @property
+    def out_dir(self):
+        return f'{self.mngr.config.store_dir}/{self.uid}-rlm-{self.pkg_name}'
 
     def flat_pkgs(self):
         return flatten(self.pkgs['flags'], self.pkgs['list'])
@@ -119,13 +120,14 @@ class RealmCtx:
         return list(flt(self.calc_all_build_depends())) + self.iter_all_runtime_depends()
 
     def iter_build_commands(self):
-        yield {
+        yield cs.replace_sentinel({
+            'uid': self.uid,
             'in_dir': [x.out_dir for x in self.iter_all_build_depends()],
             'out_dir': [self.out_dir],
             'cmd': [self.build_cmd()],
             'cache': False,
             'pool': 'cpu',
-        }
+        })
 
     def buildable(self):
         return True

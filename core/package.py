@@ -2,6 +2,7 @@ import os
 import string
 import itertools
 
+import core.sign as cs
 import core.utils as cu
 import core.error as ce
 import core.gen_cmds as cg
@@ -142,7 +143,7 @@ class Package:
         self.descr = cr.RenderContext(self).render()
 
         if self.buildable():
-            self.uid = cg.UID
+            self.uid = cs.UID
             self.uid = list(self.iter_build_commands())[-1]['uid']
         else:
             self.uid = cu.struct_hash(selector)
