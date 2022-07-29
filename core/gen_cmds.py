@@ -230,7 +230,7 @@ def iter_build_commands(self):
         src_dir = None
 
     yield replace_sentinel({
-        'uid': UID,
+        'uid': self.uid,
         'in_dir': self.iter_build_dirs() + extra,
         'out_dir': [self.out_dir],
         'cmd': [CmdBuild(self).script(sb, src_dir)],

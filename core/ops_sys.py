@@ -62,6 +62,8 @@ class Ops:
         self.cfg = cfg
 
     def execute_graph(self, graph):
+        # print(json.dumps(graph))
+        # sys.exit(1)
         run_cmd([f'{B}/assemble', 'execute'], input=json.dumps(graph))
 
     def gc(self):

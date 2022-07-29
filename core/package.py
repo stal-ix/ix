@@ -258,9 +258,16 @@ class Package:
         yield from add_kind('host lib', self.bld_host_lib_closure())
 
     def iter_tagged_build_depends(self):
+        v = set()
+
         for x in self.iter_all_tagged_build_depends():
-            if x['p'].buildable():
-                yield x
+            p = x['p']
+
+            if p.buildable():
+                if p.uid not in v:
+                    v.add(p.uid)
+
+                    yield x
 
     def iter_extra_tools(self):
         if 'sem:' in str(self.descr['bld']['fetch']):
