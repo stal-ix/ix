@@ -146,7 +146,7 @@ class Package:
             self.uid = cs.UID
             self.uid = list(self.iter_build_commands())[-1]['uid']
         else:
-            self.uid = cu.struct_hash(selector)
+            self.uid = cu.struct_hash(self.selector)
 
     @property
     def norm_name(self):
