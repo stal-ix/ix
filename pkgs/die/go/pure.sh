@@ -7,5 +7,5 @@ aux/vendor/go(url={{self.go_url().strip()}},sum={{self.go_sum().strip()}})
 
 {% block go_build_flags %}
 {{super()}}
--mod=readonly
+-mod=vendor
 {% endblock %}
