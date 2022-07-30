@@ -2,8 +2,8 @@
 
 {% block run_deps %}
 bin/liner
-bin/curl/ix
-bin/python/ix
-bin/bsdtar/ix
-bin/assemble/ix
+bin/ix/curl
+bin/ix/python
+bin/ix/bsdtar
+bin/ix/assemble
 {% endblock %}
