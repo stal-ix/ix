@@ -7,7 +7,7 @@ import core.error as ce
 
 
 B = '/bin/bin_ix'
-
+L = '/bin/liner'
 
 def run_cmd(cmd, input=''):
     cmd = [
@@ -39,14 +39,14 @@ def gen_fetch(url, path, md5):
     name = os.path.basename(url)
 
     yield [
-        f'{B}/liner', 'rmrf', odir,
-        f'{B}/liner', 'mkdir', odir,
+        L, 'rmrf', odir,
+        L, 'mkdir', odir,
         f'{B}/curl', '-k', '-L', '-o', path, url,
     ]
 
     if len(md5) > 10 and 'sem:' not in md5:
         yield [
-            f'{B}/liner', 'cksum', fix_md5(md5), path,
+            L, 'cksum', fix_md5(md5), path,
         ]
 
 
@@ -85,20 +85,20 @@ class Ops:
         odir = os.path.dirname(to)
 
         cmd = [
-            f'{B}/liner', 'cksum', fix_md5(md5), fr,
-            f'{B}/liner', 'rmrf', odir,
-            f'{B}/liner', 'mkdir', odir,
-            f'{B}/liner', 'link', fr, to,
+            L, 'cksum', fix_md5(md5), fr,
+            L, 'rmrf', odir,
+            L, 'mkdir', odir,
+            L, 'link', fr, to,
         ]
 
         return [sb.cmd(cmd)]
 
     def link(self, sb, files, out):
         def it():
-            yield from (f'{B}/liner', 'rmrf', out)
-            yield from (f'{B}/liner', 'mkdir', out)
+            yield from (L, 'rmrf', out)
+            yield from (L, 'mkdir', out)
 
             for x in files:
-                yield from (f'{B}/liner', 'link', x, os.path.join(out, os.path.basename(x)))
+                yield from (L, 'link', x, os.path.join(out, os.path.basename(x)))
 
         return sb.cmd(list(it()))
