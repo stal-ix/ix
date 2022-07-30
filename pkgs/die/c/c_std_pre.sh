@@ -5,7 +5,11 @@
     {{std_env}}
   {% else %}
     {% block c_compiler %}
-      bld/compiler
+      {% if c_compiler %}
+        {{c_compiler}}
+      {% else %}
+        bld/compiler
+      {% endif %}
       {% block no_mold %}
         bld/linker
       {% endblock %}
