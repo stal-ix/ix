@@ -16,7 +16,13 @@ bld/python
 {{super()}}
 {% endblock %}
 
+{% set clang_export_ver %}
+{% block clang_export_ver %}
+14.0.0
+{% endblock %}
+{% endset %}
+
 {% block env %}
 {{super()}}
-export CLANG_VERSION=14.0.0
+export CLANG_VERSION={{clang_export_ver.strip()}}
 {% endblock %}
