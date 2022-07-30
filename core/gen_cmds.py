@@ -141,6 +141,7 @@ def cmd_fetch(sb, url, md5):
         'path': path,
         'cache': True,
         'pool': 'other',
+        'net': True,
         'important': {
             'name': name,
             'md5': md5,
@@ -220,4 +221,5 @@ def iter_build_commands(self):
         'cmd': [CmdBuild(self).script(sb, src_dir)],
         'cache': True,
         'pool': 'cpu',
+        'net': self.need_net(),
     })

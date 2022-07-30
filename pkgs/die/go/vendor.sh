@@ -10,6 +10,8 @@ bin/go
 bin/tar
 {% endblock %}
 
+{% block use_network %}true{% endblock %}
+
 {% block build %}
 export GOCACHE=${tmp}/cgo
 export GOMODCACHE=${tmp}/gmc

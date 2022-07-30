@@ -7,10 +7,6 @@ base64 -d << EOF> assemble.go
 EOF
 {% endblock %}
 
-{% block build_flags %}
-compress
-{% endblock %}
-
 {% block go_build_flags %}
 assemble.go
 {% endblock %}

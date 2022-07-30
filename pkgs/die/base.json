@@ -16,5 +16,6 @@
     },
     "ind": {
         "deps": {% block induced_depends %}[]{% endblock %}
-    }
+    },
+    "net": {% block use_network %}false{% endblock %}
 }

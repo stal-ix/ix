@@ -105,6 +105,7 @@ type Node struct {
 	OutDirs []string `json:"out_dir"`
 	Cmds    []Cmd    `json:"cmd"`
 	Pool    string   `json:"pool"`
+	Net     *bool    `json:"net,omitempty"`
 }
 
 type Graph struct {
@@ -190,16 +191,31 @@ func complete(node *Node) bool {
 	return true
 }
 
-func executeCmd(c *Cmd) error {
-	return (&exec.Cmd{
-		Path:   lookupPath(c.Args[0], c.Env["PATH"]),
-		Args:   c.Args,
+func executeCmd(c *Cmd, net bool) error {
+	args := []string{}
+
+	if !net {
+		// unshare network namespace
+		args = append(ars, "/bin/unshare", "-r", "-n")
+	}
+
+	// resolve full path to real binary
+	args = append(args, lookupPath(c.Args[0], c.Env["PATH"]))
+
+	// and add rest
+	args = append(args, c.Args[1:])
+
+	cmd := &exec.Cmd{
+		Path:   args[0],
+		Args:   args,
 		Env:    env(c),
 		Dir:    "/",
 		Stdin:  strings.NewReader(c.Stdin),
 		Stdout: os.Stderr,
 		Stderr: os.Stderr,
-	}).Run()
+	}
+
+	return cmd.Run()
 }
 
 func cat[T any](a []T, b []T) []T {
@@ -207,17 +223,18 @@ func cat[T any](a []T, b []T) []T {
 }
 
 func executeNode(node *Node) {
+	net := node.Net != nil && *node.Net
 	nouts := outs(node)
 
 	for _, o := range nouts {
-		fmt.Println(color(B, "ENTER "+o))
+		fmt.Println(color(B, fmt.Sprintf("ENTER [net=%v] %s", net, o)))
 	}
 
 	for i := range node.Cmds {
 		cmd := &node.Cmds[i]
 
-		if err := executeCmd(cmd); err != nil {
-			fmtException("%v failed with %w", cat(nouts, cmd.Args), err).throw()
+		if err := executeCmd(cmd, net); err != nil {
+			fmtException("%v failed with %w", cat(nouts, c.Args), err).throw()
 		}
 	}
 

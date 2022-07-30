@@ -331,3 +331,6 @@ class Package:
                 return x
 
         raise Exception(f'can not find {name} for {self.name}')
+
+    def need_net(self):
+        return self.descr['net']
