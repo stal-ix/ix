@@ -10,7 +10,7 @@ md5:e2bf7537e1ca821f6059ee84e7ae76a5
 {% block unpack %}
 mkdir src; cd src
 for x in ${src}/*; do
-    bsdtar xf ${x}
+    extract 0 ${x}
 done
 cd unzip*
 {% endblock %}
