@@ -1,7 +1,4 @@
-import os
 import getpass
-
-import core.error as ce
 
 
 def tok(p):
