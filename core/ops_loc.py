@@ -1,18 +1,8 @@
 import os
 import sys
 
-
-LINK_SRCS_SCRIPT = '''
-import sys
-import os
-
-out = os.environ['out']
-os.chdir(out)
-
-for f in sys.argv[1:]:
-    print(f'link {f} into {out}')
-    os.link(f, os.path.basename(f))
-'''.strip()
+import core.repo as cr
+import core.execute as ce
 
 
 class Ops:
@@ -20,11 +10,9 @@ class Ops:
         self.cfg = cfg
 
     def execute_graph(self, graph):
-        import core.execute as ce
         ce.execute(graph)
 
     def gc(self):
-        import core.repo as cr
         cr.Repo(self.cfg).gc_cycle()
 
     def respawn(self):
@@ -46,4 +34,4 @@ class Ops:
         return [sb.cmd(self.misc() + ['cksum', fr, to, md5])]
 
     def link(self, sb, files, out):
-        return sb.build_py_script(LINK_SRCS_SCRIPT, dict(out=out), files)
+        return sb.cmd(self.misc() + ['link', out] + files)

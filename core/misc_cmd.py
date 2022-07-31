@@ -92,3 +92,16 @@ def cli_misc_cksum(ctx):
     check_md5(old, md5)
     prepare_dir(os.path.dirname(new))
     os.link(old, new)
+
+
+def cli_misc_link(ctx):
+    args = ctx['args']
+
+    out = args[0]
+
+    prepare_dir(out)
+    os.chdir(out)
+
+    for f in args[1:]:
+        print(f'link {f} into {out}')
+        os.link(f, os.path.basename(f))
