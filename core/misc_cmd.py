@@ -19,14 +19,6 @@ def hash(n):
     raise Exception(f'unsupported hash name {n}')
 
 
-def sha(b):
-    return hash('sha')(b).hexdigest()
-
-
-def struct_sha(s):
-    return sha(json.dumps(s, sort_keys=True).encode())
-
-
 def chksum(path, sch):
     func = hash(sch)
 
