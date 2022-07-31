@@ -159,6 +159,8 @@ func env(cmd *Cmd) []string {
 		ret = append(ret, k+"="+v)
 	}
 
+	ret = append(ret, "make_thrs=14")
+
 	return ret
 }
 

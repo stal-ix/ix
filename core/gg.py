@@ -43,9 +43,24 @@ def flt_duplicates(nodes):
             yield n
 
 
+def validate(nodes):
+    yield from nodes
+
+    return
+
+    for n in nodes:
+        net = n.get('net', False)
+
+        if net:
+            if 'predict' not in n:
+                raise Exception(f'invalid node {n}')
+
+        yield n
+
+
 def build_graph(n):
     return {
-        'nodes': list(flt_duplicates(build_commands(n))),
+        'nodes': list(validate(flt_duplicates(build_commands(n)))),
         'targets': [(x.out_dir + '/touch') for x in n],
         'pools': {
             'cpu': 4,

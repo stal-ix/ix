@@ -3,7 +3,6 @@ import sys
 import json
 import jinja2
 import itertools
-import multiprocessing
 
 import core.sign as cs
 import core.utils as cu
@@ -126,40 +125,39 @@ class CmdBuild:
         yield 'out', self.package.out_dir
         yield 'tmp', self.package.config.build_dir + '/' + uid
 
-        yield 'make_thrs', str(multiprocessing.cpu_count() - 2)
 
-
-
-def cmd_fetch(sb, url, md5):
+def cmd_fetch(sb, url, cksum):
     name = os.path.basename(url)
     odir = os.path.join(sb.config.store_dir, cs.gen_udir(f'url-{name}'))
     path = os.path.join(odir, name)
 
     return {
         'out_dir': [odir],
-        'cmd': sb.config.ops.fetch(sb, url, path, md5),
+        'cmd': sb.config.ops.fetch(sb, url, path, cksum),
         'path': path,
         'cache': True,
         'pool': 'other',
         'net': True,
-        'important': {
-            'name': name,
-            'md5': md5,
-        }
+        'predict': [
+            {
+                'path': path,
+                'sum': cksum,
+            },
+        ],
     }
 
 
-def cmd_check(sb, path, md5):
+def cmd_check(sb, path, cksum):
     out_dir = os.path.join(sb.config.store_dir, cs.gen_udir('chk'))
     new_path = os.path.join(out_dir, os.path.basename(path))
 
-    if md5.startswith('sem:'):
+    if cksum.startswith('sem:'):
         extra = [sb.package.find_tool('bin/semver').out_dir]
         bpath = extra[0] + '/bin/semver'
-        script = [sb.cmd([bpath, path, md5[4:], new_path])]
+        script = [sb.cmd([bpath, path, cksum[4:], new_path])]
     else:
         extra = []
-        script = sb.config.ops.cksum(sb, path, new_path, md5)
+        script = sb.config.ops.cksum(sb, path, new_path, cksum)
 
     return {
         'in_dir': [os.path.dirname(path)] + extra,
