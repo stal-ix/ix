@@ -47,20 +47,6 @@ def uniq_list(lst):
     return list(iter_uniq_list(lst))
 
 
-def singleton(f):
-    @functools.wraps(f)
-    def wrapper():
-        while True:
-            try:
-                return f.__cache__
-            except AttributeError:
-                pass
-
-            f.__cache__ = f()
-
-    return wrapper
-
-
 def cached_method(m):
     key = '__cache_' + m.__name__ + '__'
 

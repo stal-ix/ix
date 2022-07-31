@@ -224,11 +224,6 @@ def execute(g):
         cmd = [shutil.which('chrt'), '-i', '-p', '0', str(os.getpid())]
         subprocess.check_output(cmd, stderr=subprocess.STDOUT)
     except Exception:
-        # TODO(pg): log it
         pass
 
     asyncio.run(arun(g))
-
-
-def cli_execute(ctx):
-    execute(json.loads(sys.stdin.read()))
