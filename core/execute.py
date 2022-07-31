@@ -70,8 +70,8 @@ def async_send(proc, stdin):
     threading.Thread(target=f, daemon=True).start()
 
 
-def execute_cmd(c):
-    env = c.get('env', {})
+def execute_cmd(c, mt):
+    env = cu.dict_dict_update(c.get('env', {}), {'make_thrs': str(mt)})
     stdin = c.get('stdin', '')
     args = c['args']
     descr = env['out']
@@ -159,6 +159,7 @@ class Executor:
         self.o = group_by_out(nodes)
         self.l = []
         self.f = set()
+        self.mt = 14
 
     async def visit_lst(self, l):
         await gather(self.visit_node(self.o[n]) for n in l)
@@ -204,7 +205,7 @@ class Executor:
 
     def execute_node(self, n):
         for c in iter_cmd(n):
-            execute_cmd(c)
+            execute_cmd(c, self.mt)
 
         cu.sync()
 
