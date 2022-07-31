@@ -1,5 +1,5 @@
-import core.cmd_line as cc
+import core.config as cf
 
 
 def cli_gc(ctx):
-    cc.config_from(ctx).ops.gc()
+    cf.config_from(ctx).ops.gc()

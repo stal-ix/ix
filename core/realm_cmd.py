@@ -1,5 +1,6 @@
 import core.repo as cr
 import core.utils as cu
+import core.config as cf
 import core.manager as cm
 import core.cmd_line as cc
 
@@ -21,7 +22,7 @@ def group_realms(l):
 
 
 def cli_mut(ctx):
-    mngr = cm.Manager(cc.config_from(ctx))
+    mngr = cm.Manager(cf.config_from(ctx))
 
     if args := ctx['args']:
         for d in group_realms(cc.lex(args)):
@@ -32,7 +33,7 @@ def cli_mut(ctx):
 
 
 def cli_list(ctx):
-    repo = cr.Repo(cc.config_from(ctx))
+    repo = cr.Repo(cf.config_from(ctx))
 
     if ctx['args']:
         for a in ctx['args']:
@@ -44,4 +45,4 @@ def cli_list(ctx):
 
 
 def cli_purge(ctx):
-    cm.Manager(cc.config_from(ctx)).load_realm(ctx['args'][0]).uninstall()
+    cm.Manager(cf.config_from(ctx)).load_realm(ctx['args'][0]).uninstall()

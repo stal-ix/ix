@@ -2,15 +2,6 @@ import os
 import getpass
 
 import core.error as ce
-import core.config as cc
-
-
-def config_from(ctx):
-    binary = ctx['binary']
-    where = os.path.join(os.path.dirname(binary), 'pkgs')
-    root = os.environ.get('IX_ROOT', '/ix')
-
-    return cc.Config(binary, where, root)
 
 
 def tok(p):

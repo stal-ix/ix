@@ -149,3 +149,11 @@ class Config:
             'host': host,
             'target': host,
         }
+
+
+def config_from(ctx):
+    binary = ctx['binary']
+    where = os.path.join(os.path.dirname(binary), 'pkgs')
+    root = os.environ.get('IX_ROOT', '/ix')
+
+    return Config(binary, where, root)
