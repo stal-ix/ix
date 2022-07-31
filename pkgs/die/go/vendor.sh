@@ -17,9 +17,16 @@ bin/liner
 export GOCACHE=${tmp}/cgo
 export GOMODCACHE=${tmp}/gmc
 export GOPROXY="https://proxy.golang.org,direct"
-go mod vendor
+
+find . -type f -name go.mod | while read l; do (
+    cd $(dirname ${l})
+    go mod vendor
+) done
+
 cd ..
+
 tar -c --group=ix --owner=ix --mtime=0 --sort=name -f ${tmp}/git.tgz src
+
 sha256sum ${tmp}/git.tgz
 liner cksum "{{sha}}" ${tmp}/git.tgz
 {% endblock %}
