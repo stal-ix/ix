@@ -45,11 +45,6 @@ class Iface:
     def fetch_url(self, url, out):
         csc.fetch_url(url, out)
 
-    def check_md5(self, path, old_cs):
-        new_cs = calc_chksum(path, old_cs)
-
-        if new_cs != old_cs:
-            raise ce.Error(f'expected {new_cs} checksum')
 
 
 def cli_misc_runpy(ctx):
@@ -76,3 +71,24 @@ def cli_misc_fetch(ctx):
     path = args[1]
     prepare_dir(os.path.dirname(path))
     csc.fetch_url(url, path)
+
+
+def check_md5(path, old_cs):
+    new_cs = calc_chksum(path, old_cs)
+
+    if new_cs != old_cs:
+        raise ce.Error(f'expected {new_cs} checksum')
+
+
+def cli_misc_cksum(ctx):
+    args = ctx['args']
+
+    old = args[0]
+    new = args[1]
+    md5 = args[2]
+
+    print(f'check {old} checksum, expect {md5}')
+
+    check_md5(old, md5)
+    prepare_dir(os.path.dirname(new))
+    os.link(old, new)

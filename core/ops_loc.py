@@ -2,20 +2,6 @@ import os
 import sys
 
 
-CHECK_MD5_SCRIPT = '''
-import os
-import sys
-
-old = sys.argv[1]
-new = sys.argv[2]
-md5 = sys.argv[3]
-
-print(f'check {old} checksum, expect {md5}')
-ix.check_md5(old, md5)
-os.link(old, new)
-'''.strip()
-
-
 LINK_SRCS_SCRIPT = '''
 import sys
 import os
@@ -57,9 +43,7 @@ class Ops:
         return [sb.cmd(self.misc() + ['fetch', url, path])]
 
     def cksum(self, sb, fr, to, md5):
-        return [
-            sb.build_py_script(CHECK_MD5_SCRIPT, dict(out=os.path.dirname(to)), [fr, to, md5]),
-        ]
+        return [sb.cmd(self.misc() + ['cksum', fr, to, md5])]
 
     def link(self, sb, files, out):
         return sb.build_py_script(LINK_SRCS_SCRIPT, dict(out=out), files)

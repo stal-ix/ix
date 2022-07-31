@@ -118,9 +118,6 @@ class Executor:
         for x in self.l:
             await x
 
-    def in_fly(self):
-        log('\n'.join('INFLY ' + x for x in sorted(self.f)), color='y')
-
     async def visit_node(self, n):
         async with n['l']:
             if not n['v']:
@@ -143,13 +140,11 @@ class Executor:
         async with self.s[n['pool']]:
             for o in iter_out(n):
                 self.f.add(o)
-                self.in_fly()
 
             await asyncio.to_thread(self.execute_node, n)
 
             for o in iter_out(n):
                 self.f.remove(o)
-                self.in_fly()
 
     def execute_node(self, n):
         for c in iter_cmd(n):
