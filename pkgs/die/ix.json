@@ -35,6 +35,11 @@
 {% endblock %}
 {% endset %}
 
+{% set bld_data %}
+{% block bld_data %}
+{% endblock %}
+{% endset %}
+
 {% set fetch %}
 {% block fetch %}
 {% endblock %}
@@ -51,6 +56,10 @@
 
 {% block bld_target_libs %}
 {{ix.list_to_json(lib_deps + ' ' + bld_libs)}}
+{% endblock %}
+
+{% block build_data %}
+{{ix.list_to_json(bld_data)}}
 {% endblock %}
 
 {% block build_depends %}

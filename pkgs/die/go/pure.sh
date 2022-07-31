@@ -1,7 +1,6 @@
 {% extends 'c.sh' %}
 
-{% block std_box %}
-{{super()}}
+{% block bld_data %}
 die/go/vendor.sh(url={{self.go_url().strip()}},sum={{self.go_sum().strip()}},sha={{self.go_sha().strip()}})
 {% endblock %}
 
