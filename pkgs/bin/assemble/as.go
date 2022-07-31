@@ -196,14 +196,14 @@ func executeCmd(c *Cmd, net bool) error {
 
 	if !net {
 		// unshare network namespace
-		args = append(ars, "/bin/unshare", "-r", "-n")
+		args = append(args, "/bin/unshare", "-r", "-n")
 	}
 
 	// resolve full path to real binary
 	args = append(args, lookupPath(c.Args[0], c.Env["PATH"]))
 
 	// and add rest
-	args = append(args, c.Args[1:])
+	args = append(args, c.Args[1:]...)
 
 	cmd := &exec.Cmd{
 		Path:   args[0],
@@ -234,7 +234,7 @@ func executeNode(node *Node) {
 		cmd := &node.Cmds[i]
 
 		if err := executeCmd(cmd, net); err != nil {
-			fmtException("%v failed with %w", cat(nouts, c.Args), err).throw()
+			fmtException("%v failed with %w", cat(nouts, cmd.Args), err).throw()
 		}
 	}
 

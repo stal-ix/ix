@@ -73,7 +73,7 @@ class Ops:
         return [f'{B}/python', '-'] + args
 
     def extract(self):
-        return [f'{B}/bsdtar', 'xf']
+        return [f'{B}/bsdtar', '--no-same-permissions', '--no-same-owner', '-x', '-f']
 
     def fetch(self, sb, url, path, md5):
         return [sb.cmd(x) for x in gen_fetch(url, path, md5)]
