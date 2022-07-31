@@ -1,5 +1,10 @@
 {% extends 'configure.sh' %}
 
+{% block step_setup %}
+export FORCE_UNSAFE_CONFIGURE=1
+{{super()}}
+{% endblock %}
+
 {% block step_patch %}
 {% block touch_yl %}
 find . -type f | grep '\.[yl]$' | while read l; do
