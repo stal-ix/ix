@@ -23,10 +23,18 @@ export CPPFLAGS="-fno-color-diagnostics ${CPPFLAGS}"
 
 {% set go_command %}
 go build
+
 {% if go_tags %}
 -tags
 {{','.join(ix.parse_list(go_tags))}}
 {% endif %}
+
+-p ${make_thrs}
+
+{% if verbose %}
+-v
+{% endif %}
+
 {% block go_build_flags %}
 {% endblock %}
 {% endset %}
