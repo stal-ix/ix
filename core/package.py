@@ -264,9 +264,13 @@ class Package:
     def bld_lib_closure(self):
         return itertools.chain(self.bld_target_lib_closure(), self.bld_host_lib_closure())
 
+    @cu.cached_method
+    def bld_data(self):
+        return self.run_data() + self.load_data_dep(self.descr['bld']['data'])
+
     def iter_all_tagged_build_depends(self):
         yield from add_kind('bin', self.bld_bin_closure())
-        yield from add_kind('data', self.run_data())
+        yield from add_kind('data', self.bld_data())
         yield from add_kind('target lib', self.bld_target_lib_closure())
         yield from add_kind('host lib', self.bld_host_lib_closure())
 
@@ -301,9 +305,12 @@ class Package:
     def run_deps(self):
         return list(self.load_packages(self.descr['run']['deps'], self.calc_bin_flags(self.target)))
 
+    def load_data_dep(self, l):
+        return list(self.load_packages(l, {'target': self.target, 'kind': 'aux'}))
+
     @cu.cached_method
     def run_data(self):
-        return list(self.load_packages(self.descr['run']['data'], {'target': self.target, 'kind': 'aux'}))
+        return self.load_data_dep(self.descr['run']['data'])
 
     def all_run_deps(self):
         yield from self.run_deps()
