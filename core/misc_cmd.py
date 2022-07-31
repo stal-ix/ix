@@ -33,12 +33,6 @@ def calc_chksum(path, old_cs):
 
 
 class Iface:
-    def untar(self, path):
-        csc.untar(path)
-
-    def unzip(self, path):
-        csc.unzip(path)
-
     def fetch_url(self, url, out):
         csc.fetch_url(url, out)
 
