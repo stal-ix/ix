@@ -33,7 +33,11 @@ def log(*args, **kwargs):
 def execute_cmd(c, mt):
     env = cu.dict_dict_update(c.get('env', {}), {'make_thrs': str(mt)})
     args = c['args']
-    descr = env['out']
+
+    try:
+        descr = env['out']
+    except KeyError:
+        descr = ' '.join(args)
 
     log(f'ENTER {descr}', color='b')
 

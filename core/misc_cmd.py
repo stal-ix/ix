@@ -9,6 +9,15 @@ import core.error as ce
 import core.shell_cmd as csc
 
 
+def prepare_dir(d):
+    try:
+        shutil.rmtree(d)
+    except FileNotFoundError:
+        pass
+
+    os.makedirs(d)
+
+
 def hash(n):
     if n == 'md5':
         return hashlib.md5
@@ -59,3 +68,11 @@ def cli_misc_extract(ctx):
             csc.unzip(a)
         else:
             csc.untar(a)
+
+
+def cli_misc_fetch(ctx):
+    args = ctx['args']
+    url = args[0]
+    path = args[1]
+    prepare_dir(os.path.dirname(path))
+    csc.fetch_url(url, path)

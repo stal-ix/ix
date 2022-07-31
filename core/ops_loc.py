@@ -2,13 +2,6 @@ import os
 import sys
 
 
-FETCH_SRC_SCRIPT = '''
-import sys
-
-ix.fetch_url(sys.argv[-2], sys.argv[-1])
-'''.strip()
-
-
 CHECK_MD5_SCRIPT = '''
 import os
 import sys
@@ -51,16 +44,17 @@ class Ops:
     def respawn(self):
         return [sys.executable, self.cfg.binary]
 
+    def misc(self):
+        return self.respawn() + ['misc']
+
     def runpy(self, args):
-        return self.respawn() + ['misc', 'runpy'] + args
+        return self.misc() + ['runpy'] + args
 
     def extract(self):
-        return self.respawn() + ['misc', 'extract']
+        return self.misc() + ['extract']
 
     def fetch(self, sb, url, path, md5):
-        return [
-            sb.build_py_script(FETCH_SRC_SCRIPT, dict(out=os.path.dirname(path)), [url, path]),
-        ]
+        return [sb.cmd(self.misc() + ['fetch', url, path])]
 
     def cksum(self, sb, fr, to, md5):
         return [
