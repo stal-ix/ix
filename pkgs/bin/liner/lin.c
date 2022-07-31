@@ -86,12 +86,18 @@ static const char* cknull(const char* sum) {
     return sum;
 }
 
+static inline const char* fix_sum(const char* s) {
+    const char* ns = strchr(s, ':');
+
+    return ns ? (ns + 1) : s;
+}
+
 static void main_cksum(int argc, char** argv) {
     if (argc < 3) {
         die(2, EINVAL, "usage: checksum path [prog]+");
     }
 
-    const char* sum = argv[1];
+    const char* sum = fix_sum(argv[1]);
     const char* path = argv[2];
 
     char buf[1000];
