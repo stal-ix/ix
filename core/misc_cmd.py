@@ -1,9 +1,7 @@
 import os
 import sys
-import json
 import shutil
 import hashlib
-import tarfile
 
 import core.error as ce
 import core.shell_cmd as csc
@@ -39,22 +37,6 @@ def calc_chksum(path, old_cs):
     sch = old_cs[:old_cs.index(':')]
 
     return sch + ':' + chksum(path, sch)
-
-
-class Iface:
-    def fetch_url(self, url, out):
-        csc.fetch_url(url, out)
-
-
-
-def cli_misc_runpy(ctx):
-    sys.argv = ['runpy'] + ctx['args']
-
-    g = {
-        'ix': Iface(),
-    }
-
-    exec(sys.stdin.read(), g, g)
 
 
 def cli_misc_extract(ctx):

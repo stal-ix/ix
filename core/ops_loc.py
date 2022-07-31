@@ -22,7 +22,7 @@ class Ops:
         return self.respawn() + ['misc']
 
     def runpy(self, args):
-        return self.misc() + ['runpy'] + args
+        return [sys.executable, '-'] + args
 
     def extract(self):
         return self.misc() + ['extract']
