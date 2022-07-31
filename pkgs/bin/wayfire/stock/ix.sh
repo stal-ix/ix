@@ -1,8 +1,8 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://github.com/WayfireWM/wayfire/releases/download/v0.7.3/wayfire-0.7.3.tar.xz
-sha:99d1d51b1db88c30de6484094fd02df39a82cbb503361e52abc1d94f8357cb5f
+https://github.com/WayfireWM/wayfire/releases/download/v0.7.4/wayfire-0.7.4.tar.xz
+sha:89e375f7320d7bd4023d9f9499f979ee7209594afbb5aa0cfd897934a7f0514d
 {% endblock %}
 
 {% block bld_libs %}
