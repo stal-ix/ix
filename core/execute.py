@@ -99,14 +99,9 @@ def group_by_out(nodes):
 
 class Executor:
     def __init__(self, nodes, pools):
-        self.s = {
-            'cpu': asyncio.Semaphore(pools['cpu']),
-            'other': asyncio.Semaphore(pools['other']),
-        }
-
+        self.s = dict((k, asyncio.Semaphore(v)) for k, v in pools.items())
         self.o = group_by_out(nodes)
         self.l = []
-        self.f = set()
         self.mt = 14
 
     async def visit_lst(self, l):
@@ -138,13 +133,7 @@ class Executor:
         await self.visit_lst(iter_in(n))
 
         async with self.s[n['pool']]:
-            for o in iter_out(n):
-                self.f.add(o)
-
             await asyncio.to_thread(self.execute_node, n)
-
-            for o in iter_out(n):
-                self.f.remove(o)
 
     def execute_node(self, n):
         for c in iter_cmd(n):
