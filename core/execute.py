@@ -3,20 +3,10 @@ import sys
 import json
 import shutil
 import asyncio
-import beautysh
-import threading
-import itertools
 import subprocess
 
 import core.error as ce
 import core.utils as cu
-
-
-def bsh(s):
-    if 'atexit.register' in s:
-        return s
-
-    return beautysh.Beautify().beautify_string(s)[0]
 
 
 COL = {
@@ -25,6 +15,7 @@ COL = {
     'y': 33,
     'b': 34,
 }
+
 
 def col(v, color='r', bright=False):
     n = COL[color]
@@ -39,66 +30,19 @@ def log(*args, **kwargs):
     print(col(*args, **kwargs), file=sys.stderr)
 
 
-def fmt_err(args, script, output, env):
-    yield '____| ' + ' '.join(args)
-
-    for k, v in env.items():
-        yield f'    | export {k}={v}'
-
-    for i, l in enumerate(bsh(script).strip().splitlines()):
-        if l.strip():
-            ss = str(i + 1)
-
-            yield ss + ' ' * (4 - len(ss)) + '| ' + l
-
-    if output:
-        yield '____|_______________________________________'
-
-        for l in output.split('\n')[-100:]:
-            yield col(l, color='r')
-
-        yield '____________________________________________'
-
-
-def async_send(proc, stdin):
-    def f():
-        if stdin:
-            proc.stdin.write(stdin.encode())
-
-        proc.stdin.close()
-
-    threading.Thread(target=f, daemon=True).start()
-
-
 def execute_cmd(c, mt):
     env = cu.dict_dict_update(c.get('env', {}), {'make_thrs': str(mt)})
-    stdin = c.get('stdin', '')
     args = c['args']
     descr = env['out']
-    output = ''
 
     log(f'ENTER {descr}', color='b')
 
     try:
-        with subprocess.Popen(args, env=env, stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.STDOUT) as proc:
-            async_send(proc, stdin)
-
-            while chunk := proc.stdout.read1().decode():
-                sys.stderr.write(chunk)
-                output += chunk
-
-                if len(output) > 20000:
-                    output = output[10000:]
-
-            if rc := proc.wait():
-                raise Exception(f'process failed with retcode {rc}')
+        subprocess.run(args, env=env, input=c.get('stdin', '').encode(), check=True)
     except Exception as e:
-        output = '\n'.join((output, str(e)))
-        script = '\n'.join(fmt_err(args, stdin, output, env)).strip()
+        raise ce.Error(f'{descr} failed', exception=e)
 
-        raise ce.Error(f'{descr} failed', context=script)
-    finally:
-        log(f'LEAVE {descr}', color='b')
+    log(f'LEAVE {descr}', color='b')
 
 
 def iter_in(c):
@@ -213,6 +157,8 @@ class Executor:
             if not os.path.isfile(o):
                 with open(o, 'w') as f:
                     pass
+
+        cu.sync()
 
 
 async def arun(g):
