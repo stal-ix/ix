@@ -83,15 +83,6 @@ def visit_lst(l, f):
     return visit_node(None, ff, kk)[1:]
 
 
-def uniq(l):
-    v = set()
-
-    for x in l:
-        if x.uid not in v:
-            v.add(x.uid)
-            yield x
-
-
 def add_kind(k, l):
     return ({'kind': k, 'p': x} for x in l)
 
@@ -295,7 +286,7 @@ class Package:
 
     @cu.cached_method
     def iter_all_build_depends(self):
-        return list(uniq(self.iter_all_build_depends_dup()))
+        return list(cu.uniq_p(self.iter_all_build_depends_dup()))
 
     @cu.cached_method
     def iter_build_dirs(self):

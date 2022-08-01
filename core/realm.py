@@ -67,17 +67,6 @@ def apply_patch(flags, pkgs, patch):
     }
 
 
-def flt(it):
-    s = set()
-
-    for p in it:
-        if p.uid not in s:
-            s.add(p.uid)
-
-            if p.buildable():
-                yield p
-
-
 def flatten(flags, pkgs):
     for p in pkgs:
         yield {
@@ -108,16 +97,18 @@ class RealmCtx:
 
     @cu.cached_method
     def iter_all_runtime_depends(self):
-        return list(flt(self.calc_all_runtime_depends()))
+        return list(cu.uniq_p(self.calc_all_runtime_depends()))
 
     def calc_all_build_depends(self):
         for p in self.mngr.load_packages([{'name': 'bld/scripts/realm'}]):
             yield p
             yield from p.iter_all_runtime_depends()
 
+        yield from self.iter_all_runtime_depends()
+
     @cu.cached_method
     def iter_all_build_depends(self):
-        return list(flt(self.calc_all_build_depends())) + self.iter_all_runtime_depends()
+        return list(cu.uniq_p(self.calc_all_build_depends()))
 
     def iter_build_commands(self):
         yield cs.replace_sentinel({

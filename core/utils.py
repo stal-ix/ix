@@ -47,6 +47,17 @@ def uniq_list(lst):
     return list(iter_uniq_list(lst))
 
 
+def uniq_p(it):
+    s = set()
+
+    for p in it:
+        if p.uid not in s:
+            s.add(p.uid)
+
+            if p.buildable():
+                yield p
+
+
 def cached_method(m):
     key = '__cache_' + m.__name__ + '__'
 
