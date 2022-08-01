@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/WebPlatformForEmbedded/libwpe/archive/b6d3088d085f7ff93465e148904be42688c0d3d9.zip
-sha:f6ec62c32e0a242b9aa4e72547346d6409b770240b29fdb6b3246aeeca49dcef
+https://github.com/WebPlatformForEmbedded/libwpe/archive/refs/tags/1.12.2.tar.gz
+sha:2e6581057825b26f03fa024b6db450364a10fe9ea3c5b0e220384c3ec2410fa3
 {% endblock %}
 
 {% block lib_deps %}
@@ -12,21 +12,23 @@ lib/mesa/egl
 lib/xkbcommon
 {% endblock %}
 
-{% block cmake_flags %}
-BUILD_SHARED_LIBS=OFF
+{% block build_flags %}
+wrap_cc
 {% endblock %}
 
-{% block env_lib %}
+{% block env %}
 export CPPFLAGS="-I${out}/include/wpe-1.0 \${CPPFLAGS}"
 {% endblock %}
 
 {% block install %}
 {{super()}}
 cd ${out}/lib
-mv libwpe.a libwpe-1.0.a
+cp libwpe-1.0.so libwpe-1.0.a
 {% endblock %}
 
 {% block patch %}
+sed -e 's|.*pragma.*poison.*||' -i src/alloc-private.h
+
 base64 -d << EOF > src/loader-static.c
 {% include 'loader.c/base64' %}
 EOF
