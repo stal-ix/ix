@@ -25,7 +25,7 @@ find . -type f -name go.mod | while read l; do (
 
 cd ..
 
-tar -c --group=ix --owner=ix --mtime=0 --sort=name -f ${tmp}/git.tgz src
+tar --sort=name --owner=root:0 --group=root:0 --mtime='UTC 1970-01-01'  -c -f ${tmp}/git.tgz src
 
 sha256sum ${tmp}/git.tgz
 liner cksum "{{sha}}" ${tmp}/git.tgz
