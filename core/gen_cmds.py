@@ -184,6 +184,10 @@ def cmd_link(sb, extra):
     }
 
 
+def reparent_predict(pred, out_dir):
+    return [{'path': out_dir + '/' + rec['path'], 'sum': rec['sum']} for rec in pred]
+
+
 def iter_build_commands(self):
     sb = ScriptBuilder(self)
     urls = self.descr['bld']['fetch']
@@ -223,6 +227,6 @@ def iter_build_commands(self):
     }
 
     if pred := self.descr['predict_outputs']:
-        rec['predict'] = pred
+        rec['predict'] = reparent_predict(pred, rec['out_dir'][0])
 
     yield cs.replace_sentinel(rec)

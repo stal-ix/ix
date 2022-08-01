@@ -16,7 +16,7 @@ bin/liner
 {% block predict_outputs %}
 [
     {
-        "path": "git.tgz",
+        "path": "share/git.tgz",
         "sum": "{{sha}}"
     }
 ]
