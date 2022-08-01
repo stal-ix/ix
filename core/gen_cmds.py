@@ -212,12 +212,17 @@ def iter_build_commands(self):
         extra = []
         src_dir = None
 
-    yield cs.replace_sentinel({
+    rec = {
         'uid': self.uid,
         'in_dir': self.iter_build_dirs() + extra,
         'out_dir': [self.out_dir],
         'cmd': [CmdBuild(self).script(sb, src_dir)],
         'cache': True,
         'pool': 'slot',
-        'net': self.need_net(),
-    })
+        'net': self.descr['net'],
+    }
+
+    if pred := self.descr['predict_outputs']:
+        rec['predict'] = pred
+
+    yield cs.replace_sentinel(rec)

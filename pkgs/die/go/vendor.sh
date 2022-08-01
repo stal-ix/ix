@@ -13,6 +13,15 @@ bin/liner
 
 {% block use_network %}true{% endblock %}
 
+{% block predict_outputs %}
+[
+    {
+        "path": "git.tgz",
+        "sum": "{{sha}}"
+    }
+]
+{% endblock %}
+
 {% block build %}
 export GOCACHE=${tmp}/cgo
 export GOMODCACHE=${tmp}/gmc

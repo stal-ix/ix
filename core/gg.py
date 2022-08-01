@@ -47,8 +47,8 @@ def validate(nodes):
     for n in nodes:
         net = n.get('net', False)
 
-        if False and net:
-            if 'predict' not in n:
+        if net:
+            if not n.get('predict', None):
                 raise Exception(f'invalid node {n}')
 
         yield n
