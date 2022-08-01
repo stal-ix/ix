@@ -29,7 +29,7 @@ cp libwpe-1.0.so libwpe-1.0.a
 {% block patch %}
 sed -e 's|.*pragma.*poison.*||' -i src/alloc-private.h
 
-base64 -d << EOF > src/loader-static.c
+base64 -d << EOF > src/loader.c
 {% include 'loader.c/base64' %}
 EOF
 {% endblock %}
