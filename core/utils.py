@@ -93,13 +93,15 @@ def gen_sym():
     yield '+', '-plus-'
 
 
+def replace_all(s, a, b):
+    while a in s:
+        s = s.replace(a, b)
+
+    return s
+
+
 SYM = dict(gen_sym())
 
 
 def canon_name(n):
-    n = ''.join(SYM.get(x, '-') for x in n)
-
-    while '--' in n:
-        n = n.replace('--', '-')
-
-    return n.rstrip('-').lower()
+    return replace_all(''.join(SYM.get(x, '-') for x in n), '--', '-').rstrip('-').lower()

@@ -18,15 +18,8 @@ def preproc(d):
         yield x
 
 
-def replace_all(s, a, b):
-    while a in s:
-        s = s.replace(a, b)
-
-    return s
-
-
 def cononize(v):
-    return replace_all(' '.join(preproc(v)), '  ', ' ')
+    return cu.replace_all(' '.join(preproc(v)), '  ', ' ')
 
 
 def parse_urls(urls):
@@ -96,4 +89,4 @@ class RenderContext:
             raise ce.Error(f'can not render {path}', exception=e)
 
     def strip_template(self, v):
-        return replace_all(v, '\n\n\n', '\n\n')
+        return cu.replace_all(v, '\n\n\n', '\n\n')
