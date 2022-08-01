@@ -44,14 +44,10 @@ def flt_duplicates(nodes):
 
 
 def validate(nodes):
-    yield from nodes
-
-    return
-
     for n in nodes:
         net = n.get('net', False)
 
-        if net:
+        if False and net:
             if 'predict' not in n:
                 raise Exception(f'invalid node {n}')
 
