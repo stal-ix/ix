@@ -82,16 +82,12 @@ func newSemaphore(n int) *semaphore {
 	}
 }
 
-func (self *semaphore) acquire(n int) {
-	for i := 0; i < n; i += 1 {
-		self.ch <- struct{}{}
-	}
+func (self *semaphore) acquire() {
+	self.ch <- struct{}{}
 }
 
-func (self *semaphore) release(n int) {
-	for i := 0; i < n; i += 1 {
-		<-self.ch
-	}
+func (self *semaphore) release() {
+	<-self.ch
 }
 
 type Cmd struct {
@@ -152,14 +148,14 @@ func checkExists(path string) bool {
 	return err == nil
 }
 
-func env(cmd *Cmd) []string {
+func env(cmd *Cmd, thrs int) []string {
 	ret := []string{}
 
 	for k, v := range cmd.Env {
 		ret = append(ret, k+"="+v)
 	}
 
-	ret = append(ret, "make_thrs=14")
+	ret = append(ret, fmt.Sprintf("make_thrs=%d", thrs))
 
 	return ret
 }
@@ -193,7 +189,7 @@ func complete(node *Node) bool {
 	return true
 }
 
-func executeCmd(c *Cmd, net bool) error {
+func executeCmd(c *Cmd, net bool, thrs int) error {
 	args := []string{}
 
 	if !net {
@@ -210,7 +206,7 @@ func executeCmd(c *Cmd, net bool) error {
 	cmd := &exec.Cmd{
 		Path:   args[0],
 		Args:   args,
-		Env:    env(c),
+		Env:    env(c, thrs),
 		Dir:    "/",
 		Stdin:  strings.NewReader(c.Stdin),
 		Stdout: os.Stderr,
@@ -224,7 +220,7 @@ func cat[T any](a []T, b []T) []T {
 	return append(append([]T{}, a...), b...)
 }
 
-func executeNode(node *Node) {
+func executeNode(node *Node, thrs int) {
 	net := node.Net != nil && *node.Net
 	nouts := outs(node)
 
@@ -235,7 +231,7 @@ func executeNode(node *Node) {
 	for i := range node.Cmds {
 		cmd := &node.Cmds[i]
 
-		if err := executeCmd(cmd, net); err != nil {
+		if err := executeCmd(cmd, net, thrs); err != nil {
 			fmtException("%v failed with %w", cat(nouts, cmd.Args), err).throw()
 		}
 	}
@@ -268,6 +264,7 @@ type nodectx struct {
 }
 
 type executor struct {
+	thr int
 	out map[string]*nodectx
 	sem map[string]*semaphore
 }
@@ -279,9 +276,9 @@ func (self *executor) execute(node *Node) {
 
 	self.visitAll(ins(node))
 	sem, _ := self.sem[node.Pool]
-	sem.acquire(1)
-	defer sem.release(1)
-	executeNode(node)
+	sem.acquire()
+	defer sem.release()
+	executeNode(node, self.thr)
 }
 
 func newNodeFuture(ex *executor, node *Node) *future {
@@ -318,6 +315,9 @@ func newExecutor(graph *Graph) *executor {
 	for pool, count := range graph.Pools {
 		res.sem[pool] = newSemaphore(count)
 	}
+
+	// misc
+	res.thr = graph.Pools["threads"]
 
 	// validate
 	for _, node := range graph.Nodes {
