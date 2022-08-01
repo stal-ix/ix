@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/vaxerski/Hyprland/archive/fa38dfd416b664033a96bb4af764fd54f7257d7b.zip
-sha:276f97d690b6cacde608e13bd42209384345a7c063712e1db5b50a0355dcfea5
+https://github.com/hyprwm/Hyprland/archive/refs/tags/v0.9.0beta.tar.gz
+sha:3027593887bb4247196b0cb5a6e803e6dbbbc3f725e0fdbecc904596a05c02ac
 {% endblock %}
 
 {% block bld_libs %}
