@@ -37,7 +37,6 @@ def fix_md5(md5):
 
 def gen_fetch(url, path, md5):
     odir = os.path.dirname(path)
-    name = os.path.basename(url)
 
     yield [
         L, 'rmrf', odir,
@@ -63,9 +62,7 @@ class Ops:
         self.cfg = cfg
 
     def execute_graph(self, graph):
-        # print(json.dumps(graph))
-        # sys.exit(1)
-        run_cmd([f'{B}/assemble', 'execute'], input=json.dumps(graph))
+        run_cmd([f'{B}/assemble'], input=json.dumps(graph))
 
     def gc(self):
         run_cmd([sys.executable, self.cfg.binary, 'gc'])
