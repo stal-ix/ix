@@ -1,2 +1,2 @@
-https://git.kernel.org/torvalds/t/linux-5.19-rc7.tar.gz
-sha:4cf0d0d0e46c31781a3f571845973b616c07af90d059922bdff3c6ff941bfda4
+https://git.kernel.org/torvalds/t/linux-5.19.tar.gz
+sha:11614fc737638f693d02bf0d95422dfe2b3bcf3088196cd1c4c799cfdf675b70
