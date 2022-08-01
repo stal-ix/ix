@@ -102,4 +102,4 @@ class Ops:
             for x in files:
                 yield from (L, 'link', x, os.path.join(out, os.path.basename(x)))
 
-        return sb.cmd(list(it()))
+        return [sb.cmd(list(it()))]

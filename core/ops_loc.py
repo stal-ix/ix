@@ -21,6 +21,9 @@ class Ops:
     def misc(self):
         return self.respawn() + ['misc']
 
+    def misc_cmd(self, *args):
+        return [sb.cmd(self.misc() + list(args))]
+
     def runpy(self, args):
         return [sys.executable, '-'] + args
 
@@ -28,10 +31,10 @@ class Ops:
         return self.misc() + ['extract']
 
     def fetch(self, sb, url, path, md5):
-        return [sb.cmd(self.misc() + ['fetch', url, path])]
+        return self.misc_cmd('fetch', url, path)
 
     def cksum(self, sb, fr, to, md5):
-        return [sb.cmd(self.misc() + ['cksum', fr, to, md5])]
+        return self.misc_cmd('cksum', fr, to, md5)
 
     def link(self, sb, files, out):
-        return sb.cmd(self.misc() + ['link', out] + files)
+        return self.misc_cmd('link', out, *files)

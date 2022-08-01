@@ -179,7 +179,7 @@ def cmd_link(sb, extra):
     return {
         'in_dir': sum([x['out_dir'] for x in extra], []),
         'out_dir': [out_dir],
-        'cmd': [script],
+        'cmd': script,
         'pool': 'misc',
     }
 
