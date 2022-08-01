@@ -1,4 +1,4 @@
-{% extends '//die/c/c_std.sh' %}
+{% extends '//die/c/ix.sh' %}
 
 {% block fetch %}
 https://www.antlr.org/download/antlr-4.9-complete.jar

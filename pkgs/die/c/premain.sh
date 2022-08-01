@@ -1,4 +1,4 @@
-{% extends 'c_std.sh' %}
+{% extends 'ix.sh' %}
 
 {% block step_unpack %}
 : nothing to unpack

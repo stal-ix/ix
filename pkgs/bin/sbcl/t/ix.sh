@@ -1,4 +1,4 @@
-{% extends '//die/c/c_std.sh' %}
+{% extends '//die/c/ix.sh' %}
 
 {% block bld_libs %}
 lib/z/dl

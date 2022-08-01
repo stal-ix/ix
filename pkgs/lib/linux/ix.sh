@@ -1,4 +1,4 @@
-{% extends '//die/c/c_std.sh' %}
+{% extends '//die/c/ix.sh' %}
 
 {% block fetch %}
 https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.18.14.tar.xz

@@ -1,4 +1,4 @@
-{% extends '//die/c/c_std.sh' %}
+{% extends '//die/c/ix.sh' %}
 
 {% block fetch %}
 https://github.com/westes/flex/archive/refs/tags/flex-2-5-10.tar.gz

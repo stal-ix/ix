@@ -1,4 +1,4 @@
-{% extends '//die/c/c_std.sh' %}
+{% extends '//die/c/ix.sh' %}
 
 {% block fetch %}
 http://penma.de/code/gettext-stub/gettext-stub-1.tar.gz

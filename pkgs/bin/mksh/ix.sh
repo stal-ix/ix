@@ -1,4 +1,4 @@
-{% extends '//die/c/c_std.sh' %}
+{% extends '//die/c/ix.sh' %}
 
 {% block fetch %}
 http://www.mirbsd.org/MirOS/dist/mir/mksh/mksh-R59c.tgz
