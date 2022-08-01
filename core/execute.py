@@ -102,7 +102,7 @@ class Executor:
         self.s = dict((k, asyncio.Semaphore(v)) for k, v in pools.items())
         self.o = group_by_out(nodes)
         self.l = []
-        self.mt = 14
+        self.mt = pools['threads']
 
     async def visit_lst(self, l):
         await gather(self.visit_node(self.o[n]) for n in l)

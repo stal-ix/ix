@@ -136,7 +136,7 @@ def cmd_fetch(sb, url, cksum):
         'cmd': sb.config.ops.fetch(sb, url, path, cksum),
         'path': path,
         'cache': True,
-        'pool': 'other',
+        'pool': 'network',
         'net': True,
         'predict': [
             {
@@ -164,7 +164,7 @@ def cmd_check(sb, path, cksum):
         'out_dir': [out_dir],
         'cmd': script,
         'path': new_path,
-        'pool': 'other',
+        'pool': 'misc',
     }
 
 
@@ -180,7 +180,7 @@ def cmd_link(sb, extra):
         'in_dir': sum([x['out_dir'] for x in extra], []),
         'out_dir': [out_dir],
         'cmd': [script],
-        'pool': 'other',
+        'pool': 'misc',
     }
 
 
@@ -218,6 +218,6 @@ def iter_build_commands(self):
         'out_dir': [self.out_dir],
         'cmd': [CmdBuild(self).script(sb, src_dir)],
         'cache': True,
-        'pool': 'cpu',
+        'pool': 'slot',
         'net': self.need_net(),
     })

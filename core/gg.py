@@ -63,8 +63,10 @@ def build_graph(n):
         'nodes': list(validate(flt_duplicates(build_commands(n)))),
         'targets': [(x.out_dir + '/touch') for x in n],
         'pools': {
-            'cpu': 4,
-            'other': 16,
+            'slot': 4,
+            'misc': 4,
+            'threads': 14,
+            'network': 16,
         },
     }
 
