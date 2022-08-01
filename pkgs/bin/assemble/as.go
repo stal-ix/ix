@@ -4,6 +4,7 @@ import (
 	"encoding/json"
 	"fmt"
 	"io"
+	"math/rand"
 	"os"
 	"os/exec"
 	"strings"
@@ -156,6 +157,7 @@ func env(cmd *Cmd, thrs int) []string {
 	}
 
 	ret = append(ret, fmt.Sprintf("make_thrs=%d", thrs))
+	ret = append(ret, fmt.Sprintf("IX_RANDOM=%d", rand.Int63()))
 
 	return ret
 }

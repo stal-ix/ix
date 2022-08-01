@@ -18,7 +18,7 @@ source_env() {
 }
 
 fast_rm() (
-    (mv ${1} /ix/trash/ || rm -rf ${1}) 2>/dev/null
+    (mv ${1} /ix/trash/${IX_RANDOM} 2>/dev/null) || rm -rf ${1}
 )
 
 {% block functions %}

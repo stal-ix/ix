@@ -2,6 +2,7 @@ import os
 import sys
 import json
 import shutil
+import random
 import asyncio
 import subprocess
 
@@ -31,7 +32,11 @@ def log(*args, **kwargs):
 
 
 def execute_cmd(c, mt):
-    env = cu.dict_dict_update(c.get('env', {}), {'make_thrs': str(mt)})
+    env = cu.dict_dict_update(c.get('env', {}), {
+        'make_thrs': str(mt),
+        'IX_RANDOM': str(random.randint(0, 1000000000)),
+    })
+
     args = c['args']
 
     try:

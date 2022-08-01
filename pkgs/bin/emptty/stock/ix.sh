@@ -11,7 +11,7 @@ sem:17a33795aee47d65721505bf6bb011d3638cfa46d1af313cc79eba8e452a3b97
 {% endblock %}
 
 {% block go_sha %}
-sha:dce5dc3cc2cf805081591b66f56a571211a4f16c2566e5789bc77597be154ab0
+sha:aca8f19bf101fc0e49b7f13ac1d45576f9319282b27fb7a44d02b0f480c93b99
 {% endblock %}
 
 {% block go_tags %}
