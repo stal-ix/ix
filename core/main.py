@@ -68,9 +68,7 @@ def main_func(args, binary):
     }
 
     def run():
-        cu.step('load module')
         mod = importlib.import_module(k)
-        cu.step('done load module')
         mod.__dict__['cli_' + v](ctx)
 
     # profile.runctx('run()', locals(), globals())
@@ -78,8 +76,6 @@ def main_func(args, binary):
 
 
 def main(argv, ix):
-    cu.step('start main')
-
     try:
         main_func(argv[1:], ix)
     except ce.Error as e:

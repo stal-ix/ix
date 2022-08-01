@@ -82,14 +82,6 @@ def dict_dict_update(d1, d2):
     return dict_update(d1, d2.items())
 
 
-SS = time.time()
-
-
-def step(s):
-    pass
-    # print(f'{time.time() - SS} {s}')
-
-
 def sync():
     os.system('sync')
 
