@@ -1,8 +1,8 @@
 {% extends '//die/c/make.sh' %}
 
 {% block fetch %}
-https://github.com/jeaye/stdman/archive/refs/tags/2022.02.01.tar.gz
-sha:84d36791514f20a814f1530e9f4e6ff67e538e0c9b3ef25db4b007f9861c4890
+https://github.com/jeaye/stdman/archive/refs/tags/2022.07.30.tar.gz
+sha:332383e5999e1ac9a6210be8b256608187bb7690a2bff990372e93c2ad4e76ff
 {% endblock %}
 
 {% block bld_tool %}
