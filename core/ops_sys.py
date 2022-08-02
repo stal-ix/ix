@@ -109,9 +109,7 @@ class Ops:
             cmds = node['cmd']
 
             for p in node['predict']:
-                if 'sem:' in p['sum']:
-                    continue
-
-                cmds.append(sb.cmd([L, 'cksum', p['sum'], p['path']]))
+                if 'sem:' not in p['sum']:
+                    cmds.append(sb.cmd([L, 'cksum', fix_md5(p['sum']), p['path']]))
 
         return node
