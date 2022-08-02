@@ -102,7 +102,6 @@ type Node struct {
 	OutDirs []string `json:"out_dir"`
 	Cmds    []Cmd    `json:"cmd"`
 	Pool    string   `json:"pool"`
-	Net     *bool    `json:"net,omitempty"`
 }
 
 type Graph struct {
@@ -223,7 +222,7 @@ func cat[T any](a []T, b []T) []T {
 }
 
 func executeNode(node *Node, thrs int) {
-	net := node.Net != nil && *node.Net
+	net := node.Pool == "network"
 	nouts := outs(node)
 
 	for _, o := range nouts {
