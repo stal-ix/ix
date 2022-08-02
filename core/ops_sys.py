@@ -36,6 +36,15 @@ def fix_md5(md5):
     return md5
 
 
+def gen_show_cksum(path):
+    yield ['/bin/sha256sum', path]
+    yield ['/bin/false']
+
+
+def show_cksum(sb, path):
+    return [sb.cmd(x) for x in gen_show_cksum(path)]
+
+
 def gen_fetch(url, path, md5):
     odir = os.path.dirname(path)
 
@@ -43,15 +52,19 @@ def gen_fetch(url, path, md5):
     yield ['/bin/mkdir', '-p', odir]
     yield [f'{B}/curl', '-k', '-L', '-o', path, url]
 
-    if len(md5) > 10 and 'sem:' not in md5:
-        yield [L, 'cksum', fix_md5(md5), path]
+    if 'sem:' not in md5:
+        if len(md5) > 10:
+            yield [L, 'cksum', fix_md5(md5), path]
+        else:
+            yield from gen_show_cksum(path)
 
 
-def show_cksum(sb, fr):
-    return [
-        sb.cmd(['/bin/sha256sum', fr]),
-        sb.cmd(['/bin/false']),
-    ]
+def gen_link(files, out):
+    yield ['/bin/rm', '-rf', out]
+    yield ['/bin/mkdir', '-p', out]
+
+    for x in files:
+        yield ['/bin/ln', x, os.path.join(out, os.path.basename(x))]
 
 
 class Ops:
@@ -89,14 +102,7 @@ class Ops:
         return [sb.cmd(x) for x in cmd]
 
     def link(self, sb, files, out):
-        def it():
-            yield ['/bin/rm', '-rf', out]
-            yield ['/bin/mkdir', '-p', out]
-
-            for x in files:
-                yield ['/bin/ln', x, os.path.join(out, os.path.basename(x))]
-
-        return [sb.cmd(x) for x in it()]
+        return [sb.cmd(x) for x in gen_link(files, out)]
 
     def fix(self, sb, node):
         if 'predict' in node:
