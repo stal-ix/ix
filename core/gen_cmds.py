@@ -53,6 +53,9 @@ class ScriptBuilder:
     def config(self):
         return self.package.config
 
+    def fix(self, rec):
+        return cs.replace_sentinel(rec)
+
     def cmd(self, args):
         return self.build_cmd_script(args, '', {})
 
@@ -168,13 +171,9 @@ def cmd_check(sb, path, cksum):
     }
 
 
-def cmd_link_script(sb, files, out):
-    return sb.config.ops.link(sb, files, out)
-
-
 def cmd_link(sb, extra):
     out_dir = os.path.join(sb.config.store_dir, cs.gen_udir('lnk'))
-    script = cmd_link_script(sb, [x['path'] for x in extra], out_dir)
+    script = sb.config.ops.link(sb, [x['path'] for x in extra], out_dir)
 
     return {
         'in_dir': sum([x['out_dir'] for x in extra], []),
@@ -196,17 +195,17 @@ def iter_build_commands(self):
         extra = []
 
         for ui in urls:
-            f = cs.replace_sentinel(cmd_fetch(sb, ui['url'], ui['md5']))
+            f = sb.fix(cmd_fetch(sb, ui['url'], ui['md5']))
 
             yield f
 
-            c = cs.replace_sentinel(cmd_check(sb, f['path'], ui['md5']))
+            c = sb.fix(cmd_check(sb, f['path'], ui['md5']))
 
             yield c
 
             extra.append(c)
 
-        cmd = cs.replace_sentinel(cmd_link(sb, extra))
+        cmd = sb.fix(cmd_link(sb, extra))
 
         yield cmd
 
@@ -229,4 +228,4 @@ def iter_build_commands(self):
     if pred := self.descr['predict_outputs']:
         rec['predict'] = reparent_predict(pred, rec['out_dir'][0])
 
-    yield cs.replace_sentinel(rec)
+    yield sb.fix(rec)
