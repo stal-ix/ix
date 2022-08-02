@@ -41,43 +41,41 @@ def gen_show_cksum(path):
     yield ['/bin/false']
 
 
-def show_cksum(sb, path):
-    return [sb.cmd(x) for x in gen_show_cksum(path)]
+def gen_dir(out):
+    yield ['/bin/rm', '-rf', out]
+    yield ['/bin/mkdir', '-p', out]
+
+
+def gen_cksum(fr, to, md5):
+    assert 'sem:' not in md5
+
+    if len(md5) < 16:
+        yield from gen_show_cksum(fr)
+    else:
+        yield [L, 'cksum', fix_md5(md5), fr]
+
+        if to:
+            yield from gen_link(fr, to)
 
 
 def gen_fetch(url, path, md5):
-    odir = os.path.dirname(path)
-
-    yield ['/bin/rm', '-rf', odir]
-    yield ['/bin/mkdir', '-p', odir]
+    yield from gen_dir(os.path.dirname(path))
     yield [f'{B}/curl', '-k', '-L', '-o', path, url]
 
     if 'sem:' not in md5:
-        if len(md5) > 10:
-            yield [L, 'cksum', fix_md5(md5), path]
-        else:
-            yield from gen_show_cksum(path)
+        yield from gen_cksum(path, '', md5)
 
 
 def gen_links(files, out):
-    yield ['/bin/rm', '-rf', out]
-    yield ['/bin/mkdir', '-p', out]
+    yield from gen_dir(out)
 
     for x in files:
         yield ['/bin/ln', x, os.path.join(out, os.path.basename(x))]
 
 
 def gen_link(fr, to):
-    out = os.path.dirname(to)
-
-    yield ['/bin/rm', '-rf', out]
-    yield ['/bin/mkdir', '-p', out]
+    yield from gen_dir(os.path.dirname(to))
     yield ['/bin/ln', fr, to]
-
-
-def gen_cksum(fr, to, md5):
-    yield [L, 'cksum', fix_md5(md5), fr]
-    yield from gen_link(fr, to)
 
 
 class Ops:
@@ -100,9 +98,6 @@ class Ops:
         return [sb.cmd(x) for x in gen_fetch(url, path, md5)]
 
     def cksum(self, sb, fr, to, md5):
-        if len(md5) < 16:
-            return show_cksum(sb, fr)
-
         return [sb.cmd(x) for x in gen_cksum(fr, to, md5)]
 
     def link(self, sb, files, out):
