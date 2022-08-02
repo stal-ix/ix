@@ -31,18 +31,6 @@ def build_commands(nodes):
             yield from x.iter_build_commands()
 
 
-def flt_duplicates(nodes):
-    hset = set()
-
-    for n in nodes:
-        h = cu.struct_hash(n)
-
-        if h not in hset:
-            hset.add(h)
-
-            yield n
-
-
 def validate(nodes):
     for n in nodes:
         if n['pool'] == 'network':
@@ -54,7 +42,7 @@ def validate(nodes):
 
 def build_graph(n):
     return {
-        'nodes': list(validate(flt_duplicates(build_commands(n)))),
+        'nodes': list(validate(cu.iter_uniq_list(build_commands(n)))),
         'targets': [(x.out_dir + '/touch') for x in n],
         'pools': {
             'slot': 4,

@@ -56,9 +56,6 @@ def destruct(pkgs):
 def apply_patch(flags, pkgs, patch):
     res = struct(list(destruct([{'name': None, 'flags': flags}] + pkgs)) + patch)
 
-    # print(res)
-    # sys.exit(1)
-
     assert not res[0]['name']
 
     return {
