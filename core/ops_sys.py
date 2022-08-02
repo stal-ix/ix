@@ -59,12 +59,25 @@ def gen_fetch(url, path, md5):
             yield from gen_show_cksum(path)
 
 
-def gen_link(files, out):
+def gen_links(files, out):
     yield ['/bin/rm', '-rf', out]
     yield ['/bin/mkdir', '-p', out]
 
     for x in files:
         yield ['/bin/ln', x, os.path.join(out, os.path.basename(x))]
+
+
+def gen_link(fr, to):
+    out = os.path.dirname(to)
+
+    yield ['/bin/rm', '-rf', out]
+    yield ['/bin/mkdir', '-p', out]
+    yield ['/bin/ln', fr, to]
+
+
+def gen_cksum(fr, to, md5):
+    yield [L, 'cksum', fix_md5(md5), fr]
+    yield from gen_link(fr, to)
 
 
 class Ops:
@@ -90,19 +103,10 @@ class Ops:
         if len(md5) < 16:
             return show_cksum(sb, fr)
 
-        odir = os.path.dirname(to)
-
-        cmd = [
-            [L, 'cksum', fix_md5(md5), fr],
-            ['/bin/rm', '-rf', odir],
-            ['/bin/mkdir', '-p', odir],
-            ['/bin/ln', fr, to],
-        ]
-
-        return [sb.cmd(x) for x in cmd]
+        return [sb.cmd(x) for x in gen_cksum(fr, to, md5)]
 
     def link(self, sb, files, out):
-        return [sb.cmd(x) for x in gen_link(files, out)]
+        return [sb.cmd(x) for x in gen_links(files, out)]
 
     def fix(self, sb, node):
         if 'predict' in node:
