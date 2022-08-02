@@ -59,6 +59,9 @@ class ScriptBuilder:
     def cmd(self, args):
         return self.build_cmd_script(args, '', {})
 
+    def cmds(self, cmds):
+        return [self.cmd(x) for x in cmds]
+
     def build_cmd_script(self, args, stdin, env):
         return {
             'args': args,

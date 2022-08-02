@@ -95,13 +95,13 @@ class Ops:
         return [f'{B}/bsdtar', '--no-same-permissions', '--no-same-owner', '-x', '-f']
 
     def fetch(self, sb, url, path, md5):
-        return [sb.cmd(x) for x in gen_fetch(url, path, md5)]
+        return sb.cmds(gen_fetch(url, path, md5))
 
     def cksum(self, sb, fr, to, md5):
-        return [sb.cmd(x) for x in gen_cksum(fr, to, md5)]
+        return sb.cmds(gen_cksum(fr, to, md5))
 
     def link(self, sb, files, out):
-        return [sb.cmd(x) for x in gen_links(files, out)]
+        return sb.cmds(gen_links(files, out))
 
     def fix(self, sb, node):
         if 'predict' in node:
