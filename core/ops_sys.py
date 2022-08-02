@@ -99,6 +99,17 @@ def gen_link(fr, to):
     yield ['/bin/ln', fr, to]
 
 
+def gen_predict_checks(pred):
+    for p in pred:
+        yield from gen_one_sum(p['path'], p['sum'])
+
+
+def add_checks(sb, node):
+    node['cmd'].extend(sb.cmds(gen_predict_checks(node['predict'])))
+
+    return node
+
+
 class Ops:
     def __init__(self, cfg):
         self.cfg = cfg
@@ -126,13 +137,6 @@ class Ops:
 
     def fix(self, sb, node):
         if 'predict' in node:
-            node = cu.copy_dict(node)
-            cmds = node['cmd']
-
-            for p in node['predict']:
-                ps = p['sum']
-
-                for c in gen_one_sum(p['path'], ps):
-                    cmds.append(sb.cmd(c))
+            return add_checks(sb, cu.copy_dict(node))
 
         return node

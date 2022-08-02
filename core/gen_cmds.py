@@ -59,12 +59,9 @@ class ScriptBuilder:
     def cmd(self, args):
         try:
             args['args']
+            return args
         except TypeError:
             return self.build_cmd_script(args, '', {})
-
-        #print(args)
-        #return args
-        return self.build_cmd_script(args['args'], args['stdin'], args['env'])
 
     def cmds(self, cmds):
         return [self.cmd(x) for x in cmds]
