@@ -1,15 +1,14 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://nano-editor.org/dist/v6/nano-6.3.tar.xz
-sha:eb532da4985672730b500f685dbaab885a466d08fbbf7415832b95805e6f8687
+https://nano-editor.org/dist/v6/nano-6.4.tar.xz
+sha:4199ae8ca78a7796de56de1a41b821dc47912c0307e9816b56cc317df34661c0
 {% endblock %}
 
 {% block bld_libs %}
 lib/c
 lib/intl
 lib/curses
-
 {% if linux %}
 lib/linux
 {% endif %}
