@@ -138,9 +138,7 @@ def cmd_fetch(sb, url, cksum):
         'out_dir': [odir],
         'cmd': sb.config.ops.fetch(sb, url, path, cksum),
         'path': path,
-        'cache': True,
         'pool': 'network',
-        'net': True,
         'predict': [
             {
                 'path': path,
@@ -220,9 +218,7 @@ def iter_build_commands(self):
         'in_dir': self.iter_build_dirs() + extra,
         'out_dir': [self.out_dir],
         'cmd': [CmdBuild(self).script(sb, src_dir)],
-        'cache': True,
-        'pool': 'slot',
-        'net': self.descr['net'],
+        'pool': 'network' if self.descr['net'] else 'slot',
     }
 
     if pred := self.descr['predict_outputs']:

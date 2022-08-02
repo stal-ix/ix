@@ -45,9 +45,7 @@ def flt_duplicates(nodes):
 
 def validate(nodes):
     for n in nodes:
-        net = n.get('net', False)
-
-        if net:
+        if n['pool'] == 'network':
             if not n.get('predict', None):
                 raise Exception(f'invalid node {n}')
 

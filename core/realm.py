@@ -116,7 +116,6 @@ class RealmCtx:
             'in_dir': [x.out_dir for x in self.iter_all_build_depends()],
             'out_dir': [self.out_dir],
             'cmd': [self.build_cmd()],
-            'cache': False,
             'pool': 'misc',
         })
 
