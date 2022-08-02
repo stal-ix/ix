@@ -29,13 +29,6 @@ def run_cmd(cmd, input=''):
         raise e
 
 
-def fix_md5(md5):
-    if ':' in md5:
-        return md5[md5.index(':') + 1:]
-
-    return md5
-
-
 def gen_show_cksum(path):
     yield ['/bin/sha256sum', path]
     yield ['/bin/false']
@@ -46,13 +39,43 @@ def gen_dir(out):
     yield ['/bin/mkdir', '-p', out]
 
 
-def gen_cksum(fr, to, md5):
-    assert 'sem:' not in md5
+def split_cksum(cksum):
+    if ':' in cksum:
+        f, s = cksum.split(':')
+    else:
+        f = 'sha'
+        s = cksum
 
+    if f == 'sha':
+        f = 'sha256'
+
+    return f, s
+
+
+def gen_one_sum(path, cksum):
+    yield ['/bin/echo', cksum]
+
+    f, s = split_cksum(cksum)
+
+    if f == 'sem':
+        return
+
+    prog = f'/bin/{f}sum'
+
+    yield [prog, path]
+
+    yield {
+        'args': [prog, '-cw', '-'],
+        'stdin': f'{s}  {path}\n',
+        'env': {},
+    }
+
+
+def gen_cksum(fr, to, md5):
     if len(md5) < 16:
         yield from gen_show_cksum(fr)
     else:
-        yield [L, 'cksum', fix_md5(md5), fr]
+        yield from gen_one_sum(fr, md5)
 
         if to:
             yield from gen_link(fr, to)
@@ -61,9 +84,7 @@ def gen_cksum(fr, to, md5):
 def gen_fetch(url, path, md5):
     yield from gen_dir(os.path.dirname(path))
     yield [f'{B}/curl', '-k', '-L', '-o', path, url]
-
-    if 'sem:' not in md5:
-        yield from gen_cksum(path, '', md5)
+    yield from gen_cksum(path, '', md5)
 
 
 def gen_links(files, out):
@@ -109,7 +130,9 @@ class Ops:
             cmds = node['cmd']
 
             for p in node['predict']:
-                if 'sem:' not in p['sum']:
-                    cmds.append(sb.cmd([L, 'cksum', fix_md5(p['sum']), p['path']]))
+                ps = p['sum']
+
+                for c in gen_one_sum(p['path'], ps):
+                    cmds.append(sb.cmd(c))
 
         return node

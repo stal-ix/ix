@@ -57,7 +57,14 @@ class ScriptBuilder:
         return cs.replace_sentinel(self.config.ops.fix(self, rec))
 
     def cmd(self, args):
-        return self.build_cmd_script(args, '', {})
+        try:
+            args['args']
+        except TypeError:
+            return self.build_cmd_script(args, '', {})
+
+        #print(args)
+        #return args
+        return self.build_cmd_script(args['args'], args['stdin'], args['env'])
 
     def cmds(self, cmds):
         return [self.cmd(x) for x in cmds]
