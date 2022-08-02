@@ -3,6 +3,7 @@ import sys
 import json
 import subprocess
 
+import core.utils as cu
 import core.error as ce
 
 
@@ -100,3 +101,13 @@ class Ops:
                 yield from (L, 'link', x, os.path.join(out, os.path.basename(x)))
 
         return [sb.cmd(list(it()))]
+
+    def fix(self, sb, node):
+        if 'predict' in node:
+            node = cu.copy_dict(node)
+            cmds = node['cmd']
+
+            for p in node['predict']:
+                cmds.append(sb.cmd([L, 'cksum', p['sum'], p['path']]))
+
+        return node

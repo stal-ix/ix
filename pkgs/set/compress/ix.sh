@@ -3,6 +3,7 @@
 {% block run_deps %}
 bin/xz
 bin/7z
+bin/lz4
 bin/zip
 bin/tar
 bin/gzip

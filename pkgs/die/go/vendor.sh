@@ -8,18 +8,12 @@
 {% block bld_tool %}
 bin/go
 bin/tar
-bin/liner
 {% endblock %}
 
 {% block use_network %}true{% endblock %}
 
 {% block predict_outputs %}
-[
-    {
-        "path": "share/git.tgz",
-        "sum": "{{sha}}"
-    }
-]
+[{"path": "share/{{parent_id}}.tgz", "sum": "{{sha}}"}]
 {% endblock %}
 
 {% block build %}
@@ -34,15 +28,12 @@ find . -type f -name go.mod | while read l; do (
 
 cd ..
 
-tar --sort=name --owner=root:0 --group=root:0 --mtime='UTC 1970-01-01'  -c -f ${tmp}/git.tgz src
-
-sha256sum ${tmp}/git.tgz
-liner cksum "{{sha}}" ${tmp}/git.tgz
+tar --sort=name --owner=root:0 --group=root:0 --mtime='UTC 1970-01-01'  -c -f ${tmp}/{{parent_id}}.tgz src
 {% endblock %}
 
 {% block install %}
 mkdir ${out}/share
-mv ${tmp}/git.tgz ${out}/share/
+mv ${tmp}/{{parent_id}}.tgz ${out}/share/
 {% endblock %}
 
 {% block postinstall %}

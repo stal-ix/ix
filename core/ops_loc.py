@@ -38,3 +38,6 @@ class Ops:
 
     def link(self, sb, files, out):
         return self.misc_cmd('link', out, *files)
+
+    def fix(self, sb, node):
+        return node
