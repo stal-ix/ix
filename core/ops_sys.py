@@ -41,15 +41,9 @@ def gen_dir(out):
 
 def split_cksum(cksum):
     if ':' in cksum:
-        f, s = cksum.split(':')
-    else:
-        f = 'sha'
-        s = cksum
+        return cksum.split(':')
 
-    if f == 'sha':
-        f = 'sha256'
-
-    return f, s
+    return 'sha', cksum
 
 
 def gen_one_sum(path, cksum):
@@ -59,6 +53,8 @@ def gen_one_sum(path, cksum):
 
     if f == 'sem':
         return
+
+    f = {'sha': 'sha256'}.get(f, f)
 
     prog = f'/bin/{f}sum'
 
