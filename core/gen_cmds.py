@@ -93,8 +93,6 @@ class CmdBuild:
         }[build['kind']](build['data'], dict(self.iter_env(src_dir)))
 
     def iter_env(self, src_dir):
-        path = ['/nowhere']
-
         h_lib = []
         t_lib = []
         h_bin = []
@@ -182,14 +180,16 @@ def cmd_link(sb, extra):
 
 
 def reparent_predict(pred, out_dir):
-    return [{'path': out_dir + '/' + rec['path'], 'sum': rec['sum']} for rec in pred]
+    return [{
+        'path': out_dir + '/' + rec['path'],
+        'sum': rec['sum'],
+    } for rec in pred]
 
 
 def iter_build_commands(self):
     sb = ScriptBuilder(self)
-    urls = self.descr['bld']['fetch']
 
-    if urls:
+    if urls := self.descr['bld']['fetch']:
         extra = []
 
         for ui in urls:
