@@ -1,6 +1,6 @@
-{% extends 't/ix.sh' %}
+{% extends '//lib/svt/av1/t/ix.sh' %}
 
 {% block cmake_flags %}
-BUILD_APPS=OFF
+BUILD_APPS=ON
 {{super()}}
 {% endblock %}
