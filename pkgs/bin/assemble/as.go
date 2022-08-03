@@ -259,14 +259,9 @@ func (self *future) callOnce() {
 	self.o.Do(self.f)
 }
 
-type nodectx struct {
-	node   *Node
-	future *future
-}
-
 type executor struct {
 	thr int
-	out map[string]*nodectx
+	out map[string]*future
 	sem map[string]*semaphore
 }
 
@@ -290,25 +285,21 @@ func newNodeFuture(ex *executor, node *Node) *future {
 
 func newExecutor(graph *Graph) *executor {
 	res := &executor{
-		out: map[string]*nodectx{},
+		out: map[string]*future{},
 		sem: map[string]*semaphore{},
 	}
 
 	// construct backrefs
 	for i := range graph.Nodes {
 		node := &graph.Nodes[i]
-
-		cont := &nodectx{
-			node:   node,
-			future: newNodeFuture(res, node),
-		}
+		futu := newNodeFuture(res, node)
 
 		for _, out := range outs(node) {
 			if _, ok := res.out[out]; ok {
 				fmtException("multiple nodes generate output %s", out).throw()
 			}
 
-			res.out[out] = cont
+			res.out[out] = futu
 		}
 	}
 
@@ -341,7 +332,7 @@ func (self *executor) visitAll(nodes []string) {
 	defer wg.Wait()
 
 	for _, n := range nodes {
-		o := self.out[n]
+		f := self.out[n]
 
 		wg.Add(1)
 
@@ -349,7 +340,7 @@ func (self *executor) visitAll(nodes []string) {
 			defer wg.Done()
 
 			try(func() {
-				o.future.callOnce()
+				f.callOnce()
 			}).catch(func(exc *Exception) {
 				exc.fatal(2, "subcommand error")
 			})
