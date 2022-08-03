@@ -8,7 +8,6 @@ import core.error as ce
 
 
 B = '/bin/bin_ix'
-L = '/bin/liner'
 
 
 def run_cmd(cmd, input=''):

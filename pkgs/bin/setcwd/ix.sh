@@ -2,13 +2,12 @@
 
 {% block bld_libs %}
 lib/c
-lib/md
 {% endblock %}
 
 {% block sources %}
-lin.c
+cwd.c
 {% endblock %}
 
 {% block name %}
-liner
+setcwd
 {% endblock %}
