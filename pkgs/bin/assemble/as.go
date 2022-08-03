@@ -1,6 +1,7 @@
 package main
 
 import (
+	"bufio"
 	"encoding/json"
 	"fmt"
 	"io"
@@ -198,7 +199,7 @@ func newStdin(s string) io.Reader {
 	return nil
 }
 
-func executeCmd(c *Cmd, net bool, thrs int) error {
+func executeCmd(c *Cmd, net bool, thrs int, buf io.Writer) error {
 	args := []string{}
 
 	if !net {
@@ -218,9 +219,11 @@ func executeCmd(c *Cmd, net bool, thrs int) error {
 		Env:    env(c, thrs),
 		Dir:    "/",
 		Stdin:  newStdin(c.Stdin),
-		Stdout: os.Stderr,
-		Stderr: os.Stderr,
+		Stdout: buf,
+		Stderr: buf,
 	}
+
+	// fmt.Println(cmd.String())
 
 	return cmd.Run()
 }
@@ -230,6 +233,9 @@ func cat[T any](a []T, b []T) []T {
 }
 
 func executeNode(node *Node, thrs int) {
+	buf := bufio.NewWriterSize(os.Stderr, 1024*8)
+	defer buf.Flush()
+
 	net := node.Pool == "network"
 	nouts := outs(node)
 
@@ -240,7 +246,7 @@ func executeNode(node *Node, thrs int) {
 	for i := range node.Cmds {
 		cmd := &node.Cmds[i]
 
-		if err := executeCmd(cmd, net, thrs); err != nil {
+		if err := executeCmd(cmd, net, thrs, buf); err != nil {
 			fmtException("%v failed with %w", cat(nouts, cmd.Args), err).throw()
 		}
 	}
