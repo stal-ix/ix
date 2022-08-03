@@ -240,7 +240,7 @@ func executeNode(node *Node, thrs int) {
 	nouts := outs(node)
 
 	for _, o := range nouts {
-		buf.WriteString(color(B, fmt.Sprintf("ENTER [net=%v] %s", net, o)) + "\n")
+		fmt.Fprintln(buf, color(B, fmt.Sprintf("ENTER [net=%v] %s", net, o)))
 	}
 
 	for i := range node.Cmds {
@@ -258,7 +258,7 @@ func executeNode(node *Node, thrs int) {
 			file.Close()
 		}
 
-		buf.WriteString(color(B, "LEAVE "+o) + "\n")
+		fmt.Fprintln(buf, color(B, "LEAVE "+o))
 	}
 
 	syscall.Sync()
