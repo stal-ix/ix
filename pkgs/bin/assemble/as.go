@@ -190,6 +190,14 @@ func complete(node *Node) bool {
 	return true
 }
 
+func newStdin(s string) io.Reader {
+	if len(s) > 0 {
+		return strings.NewReader(s)
+	}
+
+	return nil
+}
+
 func executeCmd(c *Cmd, net bool, thrs int) error {
 	args := []string{}
 
@@ -209,7 +217,7 @@ func executeCmd(c *Cmd, net bool, thrs int) error {
 		Args:   args,
 		Env:    env(c, thrs),
 		Dir:    "/",
-		Stdin:  strings.NewReader(c.Stdin),
+		Stdin:  newStdin(c.Stdin),
 		Stdout: os.Stderr,
 		Stderr: os.Stderr,
 	}
