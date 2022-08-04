@@ -35,7 +35,6 @@ ZSTD_NO_INTRINSICS=1
 
 {% block cmake_flags %}
 CMAKE_USE_OPENSSL=OFF
-BUILD_TESTING=OFF
 CMAKE_BOOTSTRAP=1
 {% endblock %}
 

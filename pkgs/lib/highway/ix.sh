@@ -12,5 +12,4 @@ lib/c++
 
 {% block cmake_flags %}
 HWY_ENABLE_EXAMPLES=OFF
-BUILD_TESTING=OFF
 {% endblock %}

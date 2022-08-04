@@ -8,3 +8,7 @@ sha:16e881487f184250deb4fcb60432d7556ab12cb58caea71ef23960aec6c0405a
 {% block lib_deps %}
 lib/c
 {% endblock %}
+
+{% block cmake_flags %}
+LIBSAMPLERATE_EXAMPLES=OFF
+{% endblock %}

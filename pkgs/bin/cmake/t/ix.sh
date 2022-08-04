@@ -25,7 +25,6 @@ lib/bzip/2
 {% endblock %}
 
 {% block cmake_flags %}
-BUILD_TESTING=OFF
 CMAKE_USE_SYSTEM_RHASH=ON
 CMAKE_USE_SYSTEM_EXPAT=ON
 CMAKE_USE_SYSTEM_ZLIB=ON

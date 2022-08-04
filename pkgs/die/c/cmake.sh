@@ -60,6 +60,7 @@ ${CMFLAGS}
 CMAKE_SKIP_RPATH=ON
 CMAKE_BUILD_TYPE=Release
 BUILD_SHARED_LIBS=OFF
+BUILD_TESTING=OFF
 SITE=ix
 {% block cmake_flags %}
 {% endblock %}

@@ -46,7 +46,6 @@ bld/glib/codegen
 
 {% block cmake_flags %}
 WITH_X11=OFF
-BUILD_TESTING=OFF
 WITH_LIBWPG=OFF
 {% endblock %}
 
