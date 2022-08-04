@@ -1,2 +1,0 @@
-git push git@git.sr.ht:~pg/ix
-git push https://pg83:$(cat ~/.key)@github.com/pg83/ix.git
