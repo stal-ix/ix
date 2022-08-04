@@ -180,13 +180,13 @@ func lookupPath(prog string, path string) string {
 	panic(nil)
 }
 
-func complete(node *Node) bool {
+func complete(node *Node, out io.Writer) bool {
 	for _, o := range outs(node) {
 		if !checkExists(o) {
 			return false
 		}
 
-		fmt.Println(color(G, "READY "+o))
+		fmt.Fprintln(out, color(G, "READY "+o))
 	}
 
 	return true
@@ -200,7 +200,7 @@ func newStdin(s string) io.Reader {
 	return nil
 }
 
-func executeCmd(c *Cmd, net bool, thrs int, buf io.Writer) error {
+func executeCmd(c *Cmd, net bool, thrs int, out io.Writer) error {
 	args := []string{}
 
 	if !net {
@@ -220,8 +220,8 @@ func executeCmd(c *Cmd, net bool, thrs int, buf io.Writer) error {
 		Env:    env(c, thrs),
 		Dir:    "/",
 		Stdin:  newStdin(c.Stdin),
-		Stdout: buf,
-		Stderr: buf,
+		Stdout: out,
+		Stderr: out,
 	}
 
 	// fmt.Println(cmd.String())
@@ -233,25 +233,22 @@ func cat[T any](a []T, b []T) []T {
 	return append(append([]T{}, a...), b...)
 }
 
-func executeNode(node *Node, thrs int) {
-	buf := bufio.NewWriterSize(os.Stderr, 1024*8)
-	defer buf.Flush()
-
+func executeNode(node *Node, thrs int, out io.Writer) {
 	net := node.Pool == "network"
 	nouts := outs(node)
 
 	for _, o := range nouts {
 		if net {
-			fmt.Fprintln(buf, color(M, fmt.Sprintf("FETCH %s", o)))
+			fmt.Fprintln(out, color(M, "FETCH "+o))
 		} else {
-			fmt.Fprintln(buf, color(B, fmt.Sprintf("BUILD %s", o)))
+			fmt.Fprintln(out, color(B, "BUILD "+o))
 		}
 	}
 
 	for i := range node.Cmds {
 		cmd := &node.Cmds[i]
 
-		if err := executeCmd(cmd, net, thrs, buf); err != nil {
+		if err := executeCmd(cmd, net, thrs, out); err != nil {
 			fmtException("%v failed with %w", cat(nouts, cmd.Args), err).throw()
 		}
 	}
@@ -263,7 +260,7 @@ func executeNode(node *Node, thrs int) {
 			file.Close()
 		}
 
-		fmt.Fprintln(buf, color(G, "LEAVE "+o))
+		fmt.Fprintln(out, color(G, "LEAVE "+o))
 	}
 
 	syscall.Sync()
@@ -285,7 +282,10 @@ type executor struct {
 }
 
 func (self *executor) execute(node *Node) {
-	if complete(node) {
+	buf := bufio.NewWriterSize(os.Stderr, 1024*8)
+	defer buf.Flush()
+
+	if complete(node, buf) {
 		return
 	}
 
@@ -293,7 +293,7 @@ func (self *executor) execute(node *Node) {
 	sem, _ := self.sem[node.Pool]
 	sem.acquire()
 	defer sem.release()
-	executeNode(node, self.thr)
+	executeNode(node, self.thr, buf)
 }
 
 func newNodeFuture(ex *executor, node *Node) *future {
