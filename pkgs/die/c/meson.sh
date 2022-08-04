@@ -89,7 +89,9 @@ b_lundef=false
 )
 {% endif %}
 
+{% block meson_strip_wrap %}
 find . -type f -name '*.wrap' -delete
+{% endblock %}
 
 find . -type f -name meson.build | while read l; do
     # danger, Will Robinson!

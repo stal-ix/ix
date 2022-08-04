@@ -19,3 +19,8 @@ cat << EOF >> CMakeLists.txt
 install(FILES \${CMAKE_BINARY_DIR}/capstone.pc DESTINATION \${CMAKE_INSTALL_LIBDIR}/pkgconfig)
 EOF
 {% endblock %}
+
+{% block install %}
+{{super()}}
+sed -e 's|Version: ..|Version: 5.0|' -i ${out}/lib/pkgconfig/capstone.pc
+{% endblock %}
