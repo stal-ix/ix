@@ -12,6 +12,11 @@ lib/c++
 lib/openssl
 {% endblock %}
 
-{% block env_lib %}
+{% block env %}
 export COFLAGS="--with-libssh=${out} \${COFLAGS}"
+{% endblock %}
+
+{% block cmake_flags %}
+WITH_EXAMPLES=OFF
+WITH_SYMBOL_VERSIONING=OFF
 {% endblock %}
