@@ -68,6 +68,7 @@ const (
 	G   = ESC + "[92m"
 	Y   = ESC + "[93m"
 	B   = ESC + "[94m"
+	M   = ESC + "[95m"
 )
 
 func color(color string, s string) string {
@@ -240,7 +241,11 @@ func executeNode(node *Node, thrs int) {
 	nouts := outs(node)
 
 	for _, o := range nouts {
-		fmt.Fprintln(buf, color(B, fmt.Sprintf("ENTER [net=%v] %s", net, o)))
+		if net {
+			fmt.Fprintln(buf, color(M, fmt.Sprintf("FETCH %s", o)))
+		} else {
+			fmt.Fprintln(buf, color(B, fmt.Sprintf("BUILD %s", o)))
+		}
 	}
 
 	for i := range node.Cmds {
@@ -258,7 +263,7 @@ func executeNode(node *Node, thrs int) {
 			file.Close()
 		}
 
-		fmt.Fprintln(buf, color(B, "LEAVE "+o))
+		fmt.Fprintln(buf, color(G, "LEAVE "+o))
 	}
 
 	syscall.Sync()
