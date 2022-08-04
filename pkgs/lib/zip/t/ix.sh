@@ -13,3 +13,11 @@ lib/zstd
 lib/bzip/2
 lib/openssl
 {% endblock %}
+
+{% block bld_tool %}
+bld/perl
+{% endblock %}
+
+{% block cmake_flags %}
+BUILD_DOC=OFF
+{% endblock %}
