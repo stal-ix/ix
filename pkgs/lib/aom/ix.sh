@@ -22,4 +22,11 @@ bin/nasm
 ENABLE_EXAMPLES=OFF
 ENABLE_TESTS=OFF
 ENABLE_TOOLS=OFF
+ENABLE_DOCS=OFF
+ENABLE_NASM=ON
+{% endblock %}
+
+{% block install %}
+{{super()}}
+sed -e 's|//.*/|/|' -i ${out}/lib/pkgconfig/aom.pc
 {% endblock %}
