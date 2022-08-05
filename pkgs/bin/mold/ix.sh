@@ -32,13 +32,12 @@ mold
 {% endblock %}
 
 {% block patch %}
-rm -r third-party
-
->rust-demangle.c
+rm -r third-party/tbb
+rm -r third-party/xxhash
+rm -r third-party/mimalloc
 
 sed -e 's|.*mimalloc-new.*||' -i main.cc
-sed -e 's|-lcrypto||' -e 's|third.*demangle.c|rust-demangle.c|' -i Makefile
-sed -e 's|.*rust.*demangle.*||' -i demangle.cc
+sed -e 's|-lcrypto||' -i Makefile
 
 find . -type f | while read l; do
     sed -e 's|-lmimalloc||g' -e 's|xxhash/xxhash.h|xxhash.h|' -i ${l}
