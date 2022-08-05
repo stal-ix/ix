@@ -1,4 +1,4 @@
-{% extends '//bin/curl/ix.sh' %}
+{% extends '//bin/curl/full/ix.sh' %}
 
 {% block curl_http3 %}
 {% endblock %}

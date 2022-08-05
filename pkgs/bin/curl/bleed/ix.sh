@@ -1,4 +1,4 @@
-{% extends '//bin/curl/ix.sh' %}
+{% extends '//bin/curl/full/ix.sh' %}
 
 {% block fetch %}
 https://github.com/curl/curl/archive/b7c0bd68ffc0778ce0440439ac317da5a0765931.zip

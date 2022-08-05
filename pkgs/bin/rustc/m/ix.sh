@@ -21,12 +21,12 @@ lib/openssl
 {% block bld_tool %}
 bin/git
 bld/tar
-bin/curl
 bld/bash
 bin/time
 bld/make
 bld/cmake
 bld/python
+bin/curl/lite
 {% endblock %}
 
 {% block unpack %}
