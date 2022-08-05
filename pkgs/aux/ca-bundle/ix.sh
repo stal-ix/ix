@@ -6,6 +6,10 @@ sha:798d2b9432c93c96e7c103568d60f84a50d90875aa8cf4f9fe340005c480f2ea
 {% include '//lib/nss/t/ver.sh' %}
 {% endblock %}
 
+{% block predict_outputs %}
+[{"path": "share/ssl/cert.pem", "sum": "5a4208386f8ac667743bad6acd91448e6fb36ca321322187b42aa085c2b79bab"}]
+{% endblock %}
+
 {% block unpack %}
 mkdir src; cd src
 extract 1 ${src}/curl*
@@ -24,7 +28,7 @@ perl lib/mk-ca-bundle.pl -n -k - > ca-bundle.crt
 
 {% block install %}
 mkdir -p ${out}/share/ssl
-cp ca-bundle.crt ${out}/share/ssl/cert.pem
+cat ca-bundle.crt | grep -v '\##' > ${out}/share/ssl/cert.pem
 {% endblock %}
 
 {% block env %}
