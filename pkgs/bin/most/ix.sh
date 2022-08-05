@@ -1,8 +1,8 @@
 {% extends '//die/c/autohell.sh' %}
 
 {% block fetch %}
-https://www.jedsoft.org/releases/most/most-5.1.0.tar.gz
-md5:0dc19e6045f689686e8579b2835cfdc6
+https://www.jedsoft.org/releases/most/most-5.2.0.tar.gz
+sha:9455aeb8f826fa8385c850dc22bf0f22cf9069b3c3423fba4bf2c6f6226d9903
 {% endblock %}
 
 {% block bld_libs %}
