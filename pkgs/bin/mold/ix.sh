@@ -1,8 +1,8 @@
 {% extends '//die/c/make.sh' %}
 
 {% block fetch %}
-https://github.com/rui314/mold/archive/refs/tags/v1.3.1.tar.gz
-sha:d436e2d4c1619a97aca0e28f26c4e79c0242d10ce24e829c1b43cfbdd196fd77
+https://github.com/rui314/mold/archive/refs/tags/v1.4.0.tar.gz
+sha:c255af236e629a3afb0cd89185a3a944741aa55bfbe966eb175af1c7b6097c0b
 {% endblock %}
 
 {% block bld_libs %}
@@ -34,11 +34,14 @@ mold
 {% block patch %}
 rm -r third-party
 
+>rust-demangle.c
+
 sed -e 's|.*mimalloc-new.*||' -i main.cc
-sed -e 's|-lcrypto||' -i Makefile
+sed -e 's|-lcrypto||' -e 's|third.*demangle.c|rust-demangle.c|' -i Makefile
+sed -e 's|.*rust.*demangle.*||' -i demangle.cc
 
 find . -type f | while read l; do
-    sed -e 's|-lmimalloc||g' -i ${l}
+    sed -e 's|-lmimalloc||g' -e 's|xxhash/xxhash.h|xxhash.h|' -i ${l}
 done
 {% endblock %}
 
