@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/google/double-conversion/archive/refs/tags/v3.1.5.tar.gz
-md5:e94d3a33a417e692e5600e75019f0272
+https://github.com/google/double-conversion/archive/refs/tags/v3.2.1.tar.gz
+sha:e40d236343cad807e83d192265f139481c51fc83a1c49e406ac6ce0a0ba7cd35
 {% endblock %}
 
 {% block lib_deps %}
