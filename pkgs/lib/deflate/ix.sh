@@ -1,8 +1,8 @@
 {% extends '//die/c/make.sh' %}
 
 {% block fetch %}
-https://github.com/ebiggers/libdeflate/archive/refs/tags/v1.12.tar.gz
-sha:ba89fb167a5ab6bbdfa6ee3b1a71636e8140fa8471cce8a311697584948e4d06
+https://github.com/ebiggers/libdeflate/archive/refs/tags/v1.13.tar.gz
+sha:0d81f197dc31dc4ef7b6198fde570f4e8653c77f4698fcb2163d820a9607c838
 {% endblock %}
 
 {% block build_flags %}
