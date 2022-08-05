@@ -57,4 +57,6 @@ wrap_cc
 find . -type f | while read l; do
     sed -e 's|/tmp/|/var/tmp/|g' -i ${l}
 done
+
+sed -e 's|(fprintf_ftype) fprintf|(fprintf_ftype) fprintf, NULL|' -i util/annotate.c
 {% endblock %}
