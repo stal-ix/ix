@@ -35,6 +35,10 @@ bin/gperf
 bin/nodejs
 {% endblock %}
 
+{% block build_flags %}
+wrap_cc
+{% endblock %}
+
 {% block gn_args %}
 custom_toolchain="//build/toolchain/linux/unbundle:default"
 host_toolchain="//build/toolchain/linux/unbundle:default"
