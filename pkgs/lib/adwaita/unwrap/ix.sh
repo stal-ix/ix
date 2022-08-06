@@ -1,8 +1,8 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://gitlab.gnome.org/GNOME/libadwaita/-/archive/1.1.3/libadwaita-1.1.3.tar.bz2
-sha:9e80cb97354bd6aa0c854c2031cc5c9e7e0b455e23cf2295042ceedcc650435d
+https://gitlab.gnome.org/GNOME/libadwaita/-/archive/1.1.4/libadwaita-1.1.4.tar.bz2
+sha:257f3591e6bb325b35e837c26ba2bb2a337d7fed38e38000dfb8a37fe39b6f66
 {% endblock %}
 
 {% block lib_deps %}
