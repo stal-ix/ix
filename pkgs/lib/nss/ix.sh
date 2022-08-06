@@ -17,6 +17,6 @@ done
 {{hooks.gen_pc('nss', '3.66')}}
 {% endblock %}
 
-{% block env %}
+{% block env1 %}
 export CPPFLAGS="-I${out}/include/nss \${CPPFLAGS}"
 {% endblock %}

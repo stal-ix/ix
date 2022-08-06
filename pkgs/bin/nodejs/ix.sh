@@ -17,6 +17,7 @@ lib/c-ares
 lib/brotli
 lib/openssl
 lib/ng/http/2
+lib/shim/atomic
 {% endblock %}
 
 {% block bld_tool %}
@@ -39,10 +40,4 @@ bin/python/huge
 --with-intl=system-icu
 
 --experimental-http-parser
-{% endblock %}
-
-{% block patch %}
-find . -type f -name '*.gyp' | while read l; do
-    sed -e 's|-latomic|-lc|' -i ${l}
-done
 {% endblock %}

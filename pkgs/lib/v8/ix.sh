@@ -10,6 +10,7 @@ md5:3f48a781bbad3f531720d2b7898f68aa
 lib/c
 lib/c++
 lib/glib
+lib/shim/atomic
 {% endblock %}
 
 {% block bld_libs %}
@@ -27,16 +28,6 @@ shut_up
 
 {% block patch %}
 >build/config/gclient_args.gni
-{% endblock %}
-
-{% block configure %}
-{{super()}}
-
-cd {{ninja_build_dir}}
-
-find . | grep '\.ninja' | while read l; do
-    sed -e 's|-latomic||g' -i ${l}
-done
 {% endblock %}
 
 {% block gn_args %}

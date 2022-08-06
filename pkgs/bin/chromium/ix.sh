@@ -6,17 +6,33 @@
 {% endblock %}
 
 {% block unpack %}
-cd /home/pg/sources/R5NOXG2XBLyP4R2M/src
+cd /home/pg/data/src/chromium-104.0.5112.81
 {% endblock %}
 
 {% block bld_libs %}
 lib/c
 lib/c++
+lib/nss
 lib/drm
+lib/xml2
 lib/glib
+lib/xslt
 lib/pango
 lib/cairo
+lib/opengl
+lib/mesa/gl
+lib/wayland
+lib/mesa/egl
+lib/pciutils
 lib/xkbcommon
+lib/shim/extra
+lib/shim/queue
+lib/shim/atomic
+{% endblock %}
+
+{% block bld_tool %}
+bin/gperf
+bin/nodejs
 {% endblock %}
 
 {% block gn_args %}
@@ -73,8 +89,25 @@ use_allocator="none"
 use_allocator_shim=false
 use_cfi_icall=false
 use_thin_lto=false
+
+enable_mojom_closure_compile=false
+enable_js_type_check=false
 {% endblock %}
 
 {% block ninja_build_targets %}
 chrome
+{% endblock %}
+
+{% block patch %}
+rm -rf third_party/node/linux/node-linux-x64/bin
+mkdir -p third_party/node/linux/node-linux-x64/bin
+ln -s $(which node) third_party/node/linux/node-linux-x64/bin/
+{% endblock %}
+
+{% block setup %}
+export CPPFLAGS=$(echo ${CPPFLAGS} | tr ' ' '\n' | grep -v mesa | tr '\n' ' ')
+{% endblock %}
+
+{% block install %}
+exit 1
 {% endblock %}
