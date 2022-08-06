@@ -15,6 +15,4 @@ string.h
 string.c
 ieee754.h
 ieee754.c
-stdlib.h
-stdlib.c
 {% endblock %}
