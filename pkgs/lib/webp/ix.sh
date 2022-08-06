@@ -14,4 +14,7 @@ lib/c
 cd ${out}
 mkdir lib/cmake
 mv share/WebP/cmake lib/cmake/WebP
+find . -type f -name '*.cmake' | while read l; do
+    sed -e 's|.*LINK.*Threads::.*||' -i ${l}
+done
 {% endblock %}
