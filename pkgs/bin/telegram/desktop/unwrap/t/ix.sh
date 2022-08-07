@@ -2,14 +2,6 @@
 
 {% block fetch %}
 {% include 'ver.sh' %}
-https://github.com/telegramdesktop/tdesktop/archive/refs/tags/v4.0.2.tar.gz
-sha:baa980d42c2e528da21343589cdc8a04b77c60db511ae40a782172a14f63bc11
-{% endblock %}
-
-{% block unpack %}
-mkdir src; cd src
-extract 1 ${src}/*full*
-extract 1 ${src}/v*
 {% endblock %}
 
 {% block bld_libs %}
@@ -51,6 +43,10 @@ shut_up
 {% block cpp_includes %}
 ${PWD}
 ${PWD}/Telegram/ThirdParty/libtgvoip
+{% endblock %}
+
+{% block cpp_defines %}
+QT_STATICPLUGIN=1
 {% endblock %}
 
 {% block cmake_flags %}

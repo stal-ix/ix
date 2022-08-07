@@ -33,6 +33,7 @@ lib/shim/atomic
 {% block bld_tool %}
 bin/gperf
 bin/nodejs
+bld/elfutils
 {% endblock %}
 
 {% block build_flags %}
