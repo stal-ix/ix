@@ -19,8 +19,8 @@ bin/zstd
 bld/perl
 bld/python
 bin/openssl
+bin/bc/gavin
 bin/bison/3/6
-bin/busybox/bc
 {% endblock %}
 
 {% block configure %}
