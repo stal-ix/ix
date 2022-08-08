@@ -83,6 +83,7 @@ class RealmCtx:
     def fake_selector(self):
         return {
             'name': f'namespace {self.pkg_name}',
+            'flags': self.pkgs['flags'],
         }
 
     @property

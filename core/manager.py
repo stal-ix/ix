@@ -6,16 +6,17 @@ import core.error as ce
 import core.package as cp
 
 
+def it_flags(ff):
+    for k, v in ff:
+        if k not in ('host', 'target'):
+            yield f'{k}={v}'
+
+
 def fmt_sel(s):
-    r = s['name']
+    n = s['name']
+    f = ', '.join(it_flags(s.get('flags', {}).items()))
 
-    for f in s.get('flags', []):
-        if f in ('host', 'target'):
-            pass
-        else:
-            r = r + ' ' + f + '=' + str(s['flags'][f])
-
-    return r
+    return f'[{n}: {f}]'
 
 
 class Manager:
@@ -37,11 +38,11 @@ class Manager:
     def load_package(self, s, sfrom):
         try:
             return self.cached(cu.struct_hash(s), lambda: self.load_hard(cp.Package(s, self)))
-        except FileNotFoundError:
+        except FileNotFoundError as fe:
             to = fmt_sel(s)
             fr = fmt_sel(sfrom)
 
-            raise ce.Error(f'can not load dependant package {to} of {fr}')
+            raise ce.Error(f'can not load dependant package {to} of {fr}', exception=fe)
 
     def load_packages(self, ss, sfrom):
         for s in ss:
