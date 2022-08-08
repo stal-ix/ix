@@ -9,18 +9,6 @@ import core.gen_cmds as cg
 import core.render_ctx as cr
 
 
-def fmt_sel(s):
-    r = s['name']
-
-    for f in s['flags']:
-        if f in ('host', 'target'):
-            pass
-        else:
-            r = r + ' ' + f + '=' + str(s['flags'][f])
-
-    return r
-
-
 def parse_pkg_flags(v):
     def it():
         for x in v.split(','):
@@ -210,13 +198,8 @@ class Package:
         return self.load_package_impl(n)
 
     def load_package_impl(self, sel):
-        # print(f'{fmt_sel(self.selector)} -> {fmt_sel(sel)}')
-
-        try:
-            # TODO(pg): proper local flags
-            return self.manager.load_package(sanitize(sel))
-        except FileNotFoundError:
-            raise ce.Error(f'can not load dependant package {fmt_sel(sel)} of {fmt_sel(self.selector)}')
+        # TODO(pg): proper local flags
+        return self.manager.load_package(sanitize(sel), self.selector)
 
     def load_packages(self, l, flags):
         return (self.load_package(x, flags) for x in l)

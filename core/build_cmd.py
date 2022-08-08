@@ -38,4 +38,8 @@ def cli_build(ctx):
         if 'kind' not in f:
             f['kind'] = parse_kind(p['name'])
 
-    cg.run(config.ops, list(cu.uniq_p(iter_buildables(cm.Manager(config).load_packages(pkgs)))))
+    fr = {
+        'name': 'command line',
+    }
+
+    cg.run(config.ops, list(cu.uniq_p(iter_buildables(cm.Manager(config).load_packages(pkgs, fr)))))

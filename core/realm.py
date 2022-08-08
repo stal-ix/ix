@@ -80,6 +80,11 @@ class RealmCtx:
         self.uid = cs.UID
         self.uid = list(self.iter_build_commands())[-1]['uid']
 
+    def fake_selector(self):
+        return {
+            'name': f'namespace {self.pkg_name}',
+        }
+
     @property
     def out_dir(self):
         return f'{self.mngr.config.store_dir}/{self.uid}-rlm-{self.pkg_name}'
@@ -87,8 +92,11 @@ class RealmCtx:
     def flat_pkgs(self):
         return flatten(self.pkgs['flags'], self.pkgs['list'])
 
+    def load_packages(self, pkgs):
+        return self.mngr.load_packages(pkgs, self.fake_selector())
+
     def calc_all_runtime_depends(self):
-        for p in self.mngr.load_packages(self.flat_pkgs()):
+        for p in self.load_packages(self.flat_pkgs()):
             yield p
             yield from p.iter_all_runtime_depends()
 
@@ -97,7 +105,7 @@ class RealmCtx:
         return list(cu.uniq_p(self.calc_all_runtime_depends()))
 
     def calc_all_build_depends(self):
-        for p in self.mngr.load_packages([{'name': 'bld/scripts/realm'}]):
+        for p in self.load_packages([{'name': 'bld/scripts/realm'}]):
             yield p
             yield from p.iter_all_runtime_depends()
 
