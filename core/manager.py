@@ -16,7 +16,7 @@ def fmt_sel(s):
     n = s['name']
     f = ', '.join(it_flags(s.get('flags', {}).items()))
 
-    return f'[{n}: {f}]'
+    return f'[{n}; {f}]'
 
 
 class Manager:
