@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/google/highway/archive/refs/tags/0.15.0.tar.gz
-sha:4bbd4439eae08cf038f1c5cc5d9ebc6a1a50f2c610c13a1483adccacfa24c150
+https://github.com/google/highway/archive/refs/tags/1.0.0.tar.gz
+sha:ab4f5f864932268356f9f6aa86f612fa4430a7db3c8de0391076750197e876b8
 {% endblock %}
 
 {% block lib_deps %}
