@@ -1,8 +1,8 @@
 {% extends '//die/c/autohell.sh' %}
 
 {% block fetch %}
-https://downloads.sourceforge.net/libtirpc/libtirpc-1.3.2.tar.bz2
-sha:e24eb88b8ce7db3b7ca6eb80115dd1284abc5ec32a8deccfed2224fc2532b9fd
+https://downloads.sourceforge.net/libtirpc/libtirpc-1.3.3.tar.bz2
+sha:
 {% endblock %}
 
 {% block lib_deps %}
