@@ -1,8 +1,8 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://download.gnome.org/sources/gdk-pixbuf/2.42/gdk-pixbuf-2.42.6.tar.xz
-sha:c4a6b75b7ed8f58ca48da830b9fa00ed96d668d3ab4b1f723dcf902f78bde77f
+https://download.gnome.org/sources/gdk-pixbuf/2.42/gdk-pixbuf-2.42.9.tar.xz
+sha:28f7958e7bf29a32d4e963556d241d0a41a6786582ff6a5ad11665e0347fc962
 {% endblock %}
 
 {% block lib_deps %}
@@ -18,6 +18,8 @@ bld/glib/codegen
 {% endblock %}
 
 {% block meson_flags %}
+man=false
+tests=false
 builtin_loaders=all
 relocatable=true
 installed_tests=false
