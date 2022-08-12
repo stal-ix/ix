@@ -1,2 +1,2 @@
-https://git.kernel.org/torvalds/t/linux-5.19.tar.gz
-sha:11614fc737638f693d02bf0d95422dfe2b3bcf3088196cd1c4c799cfdf675b70
+https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.19.1.tar.xz
+sha:f4e27b926ea2c66b808db1f5706254cf92a8899e2108eedb0c3a7d12499aea55
