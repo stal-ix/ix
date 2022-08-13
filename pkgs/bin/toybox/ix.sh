@@ -1,8 +1,8 @@
 {% extends '//die/c/kconfig.sh' %}
 
 {% block fetch %}
-https://github.com/landley/toybox/archive/refs/tags/0.8.7.tar.gz
-sha:b6f43d5738df54623ed21c32f430d1d5c5ac7ef465a6a883890f104b59d5d9e4
+https://github.com/landley/toybox/archive/refs/tags/0.8.8.tar.gz
+sha:2bed6bb9edd5a249023103cf0402a835b0e53d10304a263f6f1e77a8aa49a898
 {% endblock %}
 
 {% block bld_libs %}
