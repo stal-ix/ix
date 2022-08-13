@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://github.com/NLnetLabs/ldns/archive/refs/tags/1.8.1.tar.gz
-sha:5736a61dbc1aaf64d4dc235643d00c5c265d988cfc2e7e89c770cd867bdb081b
+https://github.com/NLnetLabs/ldns/archive/refs/tags/1.8.2.tar.gz
+sha:20e90be1704d35ac28da597595b32af33e8b708af9a8f1ca409d7b418ff2f9e0
 {% endblock %}
 
 {% block lib_deps %}
