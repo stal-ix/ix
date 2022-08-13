@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://strace.io/files/5.18/strace-5.18.tar.xz
-sha:60293ea79ac9253d600cdc9be077ad2988ca22284a439c9e66be5150db3d1187
+https://strace.io/files/5.19/strace-5.19.tar.xz
+sha:aa3dc1c8e60e4f6ff3d396514aa247f3c7bf719d8a8dc4dd4fa793be786beca3
 {% endblock %}
 
 {% block bld_libs %}
