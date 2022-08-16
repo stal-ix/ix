@@ -9,22 +9,8 @@ bin/ya/0(arc_root={{arc_root}},ya_ver={{ya_ver}})
 
 {% block stage %}stage3.sh{% endblock %}
 
-{% block setup %}
+{% block patch %}
 {{super()}}
-export YA_PREFETCH_DIR=${BLD_ROOT}
-{% endblock %}
-
-{% block configure %}
-{{super()}}
-
-mkdir ${BLD_ROOT}/bin
-
-ln -s $(which python2) ${BLD_ROOT}/python
-ln -s $(which java) ${BLD_ROOT}/bin/
-{% endblock %}
-
-{% block install %}
-{{super()}}
-rnd=$(python3 -c 'import random; print(random.random())')
-mv ${BLD_ROOT} ${tmp}/../obj.${rnd}
+sed -e "s|python2|$(which python2)|" -i build/ymake_conf.py
+sed -e "s|__python3__|$(which python3)|" -i build/ymake.core.conf
 {% endblock %}

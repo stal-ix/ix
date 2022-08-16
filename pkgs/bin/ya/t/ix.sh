@@ -1,12 +1,8 @@
 {% extends '//die/c/ix.sh' %}
 
-{% block fetch %}
-https://www.antlr.org/download/antlr-4.9-complete.jar
-md5:be31e2ab97ad66b404425e2794673bee
-{% endblock %}
-
 {% block step_unpack %}
-: use prepacked dir
+cp -R {{arc_root}} src
+cd src
 {% endblock %}
 
 {% block bld_tool %}
@@ -15,15 +11,15 @@ bld/python/2
 jdk/oracle/17
 {% endblock %}
 
-{% block c_compiler %}
-bin/clang/12
-{% endblock %}
-
 {% block setup %}
 # {{ya_ver}}
-export CLANG_DIR="$(dirname $(which clang-12))"
+export J1=$(which javac)
+export J2=$(dirname ${J1})
+export J3=$(dirname ${J2})
+export LD_LIBRARY_PATH=${J3}/lib
+export CLANG_DIR="$(dirname $(which clang-14))"
 export CLANG_INC="$(dirname ${CLANG_DIR})/share/include"
-export ARC_ROOT="{{arc_root}}"
+export ARC_ROOT="${PWD}"
 export BLD_ROOT="${tmp}/obj"
 {% endblock %}
 
@@ -45,20 +41,16 @@ chmod +x clang clang++
 
 {% block configure %}
 mkdir ${BLD_ROOT}
-cp ${src}/antlr* ${BLD_ROOT}/antlr-4.9-complete.jar
-echo > ${BLD_ROOT}/icudt67_dat.rodata
 {% endblock %}
 
 {% block build %}
-cd ${ARC_ROOT}/devtools/bootstrap
+cd bootstrap
 sh {% block stage %}{% endblock %} ${ARC_ROOT} ${BLD_ROOT}
 {% endblock %}
 
 {% block install %}
 mkdir ${out}/bin
-
 cd ${BLD_ROOT}
-
 cp ymake ${out}/bin/
 cp ya-bin ${out}/bin/
 {% endblock %}
