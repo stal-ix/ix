@@ -17,6 +17,12 @@ for x in '-nostdinc++'; do
     fi
 done
 
+case "${CC}" in
+    *clang*)
+        LDFLAGS="-fuse-ld=lld ${LDFLAGS}"
+    ;;
+esac
+
 for ld in '-nostdlib' '-nostdlib++' '-fno-use-linker-plugin'; do
     if ${CXX} ${ld} -c _.cpp > /dev/null 2>&1; then
         LDFLAGS="${ld} ${LDFLAGS}"
