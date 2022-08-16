@@ -6,6 +6,9 @@ bin/clang/lib
 
 {% block patch %}
 sed -e 's|__SSE2__|__NOPE__|g' -i clang/lib/Lex/Lexer.cpp
+sed -e 's|(CHIArg \&A)|(auto \&A)|g' -i llvm/lib/Transforms/Scalar/GVNHoist.cpp
+sed -e 's|const APInt \&|const auto\&|g' -i llvm/utils/TableGen/CodeGenSchedule.cpp
+sed -e 's|OverriderInfo\& Overrider =|auto\& Overrider =|' -i clang/lib/AST/VTableBuilder.cpp
 {{super()}}
 {% endblock %}
 
