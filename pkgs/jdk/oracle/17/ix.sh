@@ -15,3 +15,7 @@ bsdtar -x -f ${src}/jdk*
 ln -s jdk*/bin ./
 ln -s jdk*/lib ./
 {% endblock %}
+
+{% block postinstall %}
+: nothing to do
+{% endblock %}
