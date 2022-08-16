@@ -17,7 +17,7 @@ for x in '-nostdinc++'; do
     fi
 done
 
-for ld in '-nostdlib' '-nostdlib++' '-fno-use-linker-plugin' '-fuse-ld=lld'; do
+for ld in '-nostdlib' '-nostdlib++' '-fno-use-linker-plugin'; do
     if ${CXX} ${ld} -c _.cpp > /dev/null 2>&1; then
         LDFLAGS="${ld} ${LDFLAGS}"
     fi

@@ -1,5 +1,9 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
-bin/clang/14/gcc(std_env=bld/boot/7/env/cxx,zlib_ver=adler,libc=musl/pure,allocator=musl/pure)
+{% if linux %}
+bld/boot/8/clang/base(libc=musl/pure,allocator=musl/pure,assume_gcc=1)
+{% else %}
+bld/boot/8/clang/base
+{% endif %}
 {% endblock %}

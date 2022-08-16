@@ -1,7 +1,11 @@
 {% extends '//lib/llvm/t/ix.sh' %}
 
 {% block fetch %}
+{% if assume_gcc %}
+{% include '//lib/llvm/13/ver.sh' %}
+{% else %}
 {% include '//lib/llvm/14/ver.sh' %}
+{% endif %}
 {% endblock %}
 
 {% block lib_deps %}
@@ -66,12 +70,16 @@ ${PWD}/libunwind/include
 
 {% block setup %}
 export CPPFLAGS="-isystem ${PWD}/clang/lib/Headers ${CPPFLAGS}"
+{% if assume_gcc %}
+export CXXFLAGS="-std=c++17 ${CXXFLAGS}"
+{% endif %}
 {% endblock %}
 
 {% block patch %}
 {{super()}}
 
 # broken in gcc
+sed -e 's|__has_feature(modules)|YYY|' -i clang/lib/Headers/stddef.h
 sed -e 's|.*define _LIBCPP_ABI_ALTERNATE_STRING_LAYOUT.*||' -i libcxx/include/__config
 
 cat libcxx/CMakeLists.txt \
