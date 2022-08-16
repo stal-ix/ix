@@ -1,6 +1,7 @@
 import json
 import itertools
 import subprocess
+import multiprocessing
 
 import core.utils as cu
 
@@ -40,14 +41,29 @@ def validate(nodes):
         yield n
 
 
+def slots(t):
+    if t > 12:
+        return 4
+
+    if t > 8:
+        return 3
+
+    if t > 4:
+        return 2
+
+    return 1
+
+
 def build_graph(n):
+    t = max(multiprocessing.cpu_count() - 1, 1)
+
     return {
         'nodes': list(validate(cu.iter_uniq_list(build_commands(n)))),
         'targets': [(x.out_dir + '/touch') for x in n],
         'pools': {
-            'slot': 4,
+            'slot': slots(t),
             'misc': 4,
-            'threads': 14,
+            'threads': t,
             'network': 16,
         },
     }
