@@ -30,6 +30,7 @@ find . -type f -name go.mod | while read l; do (
 cd ..
 
 tar --sort=name --owner=root:0 --group=root:0 --mtime='UTC 1970-01-01'  -c -f ${tmp}/{{parent_id}}.tar src
+go clean -modcache
 {% endblock %}
 
 {% block install %}
