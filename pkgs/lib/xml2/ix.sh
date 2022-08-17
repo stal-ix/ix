@@ -1,6 +1,7 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
+# TODO(pg): 2.10.0 ?
 https://gitlab.gnome.org/GNOME/libxml2/-/archive/v2.9.14/libxml2-v2.9.14.tar.bz2
 sha:9bd7dae7690b2112033ddb6ad4f454e036fff2d38505c3a5b80427669484c0a4
 {% endblock %}
