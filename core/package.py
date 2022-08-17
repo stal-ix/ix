@@ -114,6 +114,13 @@ def fix_selector(selector, config):
     return selector
 
 
+def remsuf(s, suf):
+    if s.endswith(suf):
+        return s[:-len(suf)]
+
+    return s
+
+
 class Package:
     def __init__(self, selector, mngr):
         self.manager = mngr
@@ -129,7 +136,7 @@ class Package:
 
     @property
     def norm_name(self):
-        return self.name.removesuffix('.sh').removesuffix('/ix')
+        return remsuf(remsuf(self.name, '.sh'), '/ix')
 
     @property
     def out_dir(self):
