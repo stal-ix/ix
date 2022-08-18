@@ -1,4 +1,4 @@
-%%
+```
 sudo sh
 mkdir /mnt/ix
 yum install parted || apt-get install parted
@@ -21,14 +21,24 @@ export IX_EXEC_KIND=local
 ./ix mut system set/system/0 --failsafe=1 etc/zram/0
 ./ix mut root set/install
 ./ix mut boot set/boot bld/all
-# somehow prepare kernel, and copy it to /mnt/ix/boot
-# useful config options one can grab from bin/kernel/19/2/cfg
-# reboot into grub, run
+```
+
+Somehow prepare kernel, and copy it to /mnt/ix/boot. Useful config options one can grab from bin/kernel/19/2/cfg. Reboot into grub, run
+
+```
 > linux (hdX,gptY)/boot/kernel ro root=/dev/xxx
 > boot
-# after successful boot, switch into tty5, there will be root prompt
+```
+
+after successful boot, switch into tty5, there will be root prompt
+
+```
 . /etc/session
-# now wehave some useful utilities in PATH, from /ix/realm/root
+```
+
+now we have some useful utilities in PATH, from /ix/realm/root
+
+```
 cd
 cd ix
 # very important step, rebuild system realm
@@ -51,4 +61,4 @@ exec /bin/sh -li
 EOF
 chmod +x .emptty
 # now try login from tty1
-%%
+```
