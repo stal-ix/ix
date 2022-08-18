@@ -2,7 +2,11 @@
 sudo sh
 mkdir /mnt/ix
 yum install parted || apt-get install parted
-# prepare xfs on /dev/xxx, with parted
+```
+
+Somehow prepare xfs on /dev/xxx, with parted.
+
+```
 mount /dev/xxx /mnt/ix
 mkdir /mnt/ix/ix
 useradd -u 1000 ix
@@ -30,13 +34,13 @@ Somehow prepare kernel, and copy it to /mnt/ix/boot. Useful config options one c
 > boot
 ```
 
-after successful boot, switch into tty5, there will be root prompt
+After successful boot, switch into tty5, there will be root prompt.
 
 ```
 . /etc/session
 ```
 
-now we have some useful utilities in PATH, from /ix/realm/root
+Now we have some useful utilities in PATH, from /ix/realm/root.
 
 ```
 cd
