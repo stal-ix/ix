@@ -15,7 +15,7 @@ ln -s /mnt/ix/ix /ix
 cd /mnt/ix
 ln -s ix/realm/system/bin bin
 ln -s ix/realm/system/etc etc
-ln -s . usr
+ln -s / usr
 mkdir -p home/root var sys proc dev
 cd home/root
 git clone https://github.com/pg83/ix.git
