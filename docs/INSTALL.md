@@ -1,3 +1,4 @@
+%%
 sudo sh
 mkdir /mnt/ix
 yum install parted || apt-get install parted
@@ -50,3 +51,4 @@ exec /bin/sh -li
 EOF
 chmod +x .emptty
 # now try login from tty1
+%%
