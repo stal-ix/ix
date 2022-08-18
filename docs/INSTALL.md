@@ -59,7 +59,7 @@ mkdir /home/pg
 chown pg /home/pg
 cd /home/pg
 cat << EOF > .emptty
-#1/usr/bin/env sh
+#!/usr/bin/env sh
 . /etc/session
 exec /bin/sh -li
 EOF
