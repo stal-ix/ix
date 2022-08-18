@@ -37,6 +37,7 @@ Somehow prepare kernel, and copy it to /mnt/ix/boot. Useful config options one c
 > boot
 ```
 
+where X, Y - GRUB disk and partition numbers for /dev/xxx.
 After successful boot, switch into tty5, there will be root prompt.
 
 ```
