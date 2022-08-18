@@ -25,7 +25,7 @@ export IX_ROOT=/ix
 export IX_EXEC_KIND=local
 ./ix mut system set/system/0 --failsafe=1 etc/zram/0
 ./ix mut root set/install
-./ix mut boot set/boot bld/all
+./ix mut boot set/boot/all
 ```
 
 Somehow prepare kernel, and copy it to /mnt/ix/boot. Useful config options one can grab from bin/kernel/19/2/cfg. Reboot into grub, run
