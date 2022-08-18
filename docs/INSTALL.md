@@ -1,3 +1,5 @@
+Load machine from some bootable media, like Ubuntu/Fedora/Nix livecd, launch terminal
+
 ```
 sudo sh
 mkdir /mnt/ix
