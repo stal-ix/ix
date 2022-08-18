@@ -48,7 +48,11 @@ cd
 cd ix
 # very important step, rebuild system realm
 ./ix mut system
-# shell will relaunch thereafter
+```
+
+Shell will relaunch thereafter. Actually, after any modification of system realm, runit will reload all supervised process tree.
+
+```
 cd
 cd ix
 # very important step, rebuild all world from ix
