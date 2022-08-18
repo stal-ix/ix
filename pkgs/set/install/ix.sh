@@ -6,5 +6,7 @@ bin/mc
 bin/git
 bin/wget
 set/boot
-#set/debug
+# for key generation
+bin/openssh
+bin/openssl
 {% endblock %}
