@@ -1,8 +1,8 @@
 {% extends '//die/c/make.sh' %}
 
 {% block fetch %}
-https://github.com/rui314/mold/archive/refs/tags/v1.4.0.tar.gz
-sha:c255af236e629a3afb0cd89185a3a944741aa55bfbe966eb175af1c7b6097c0b
+https://github.com/rui314/mold/archive/refs/tags/v1.4.1.tar.gz
+sha:394036d299c50f936ff77ce9c6cf44a5b24bfcabf65ae7db9679f89c11a70b3f
 {% endblock %}
 
 {% block bld_libs %}
@@ -38,9 +38,13 @@ rm -r third-party/mimalloc
 
 sed -e 's|.*mimalloc-new.*||' -i main.cc
 sed -e 's|-lcrypto||' -i Makefile
+sed -e 's|/usr/bin/python3|/usr/bin/env python3|' -i update-git-hash.py
 
 find . -type f | while read l; do
-    sed -e 's|-lmimalloc||g' -e 's|xxhash/xxhash.h|xxhash.h|' -i ${l}
+    sed -e 's|-lmimalloc||g' \
+        -e 's|xxhash/xxhash.h|xxhash.h|' \
+        -e 's|third-party/xxhash.h|xxhash.h|' \
+        -i ${l}
 done
 {% endblock %}
 
