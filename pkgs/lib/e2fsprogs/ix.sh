@@ -12,10 +12,14 @@ lib/linux/util
 
 {% block bld_tool %}
 bld/gettext
+bld/texinfo
 bld/auto/archive
 {% endblock %}
 
 {% block configure_flags %}
+--with-crond-dir=no
+--with-udev-rules-dir=no
+--with-systemd-unit-dir=no
 --disable-libuuid
 --disable-libblkid
 {% endblock %}
