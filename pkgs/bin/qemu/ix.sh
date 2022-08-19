@@ -3,10 +3,12 @@
 {% block fetch %}
 https://download.qemu.org/qemu-7.0.0.tar.xz
 sha:f6b375c7951f728402798b0baabb2d86478ca53d44cedbefabbe1c46bf46f839
+#https://download.qemu.org/qemu-7.1.0-rc3.tar.xz
+#sha:0806eb77e25abe163631974d8a2b30b94aa1d4ac4f3a5b794dac3425bbb728fc
 {% endblock %}
 
 {% block bld_libs %}
-bin/kernel/17/headers
+bin/kernel/19/headers
 lib/c
 lib/z
 lib/lzo
