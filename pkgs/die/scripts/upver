@@ -37,6 +37,9 @@ def it_words():
         if '.git' in a:
             continue
 
+        if '/deps/' in a:
+            continue
+
         for _ in b:
             yield {'t': 'f', 'v': os.path.join(a, _)[len(dd) + 1:]}
             yield {'t': 'e', 'v': _}
