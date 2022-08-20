@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://github.com/jstedfast/gmime/archive/refs/tags/3.2.12.tar.gz
-sha:c7419ce0e356e8e94d0b21f611a603e19def15f8d1fd56ebb03c03650e0067d6
+https://github.com/jstedfast/gmime/archive/refs/tags/3.2.13.tar.gz
+sha:1ba533e4fbc9da7059b5c5dd8b4e0b4cf60731e86fbc3d8f547b305d3e1e1471
 {% endblock %}
 
 {% block conf_ver %}2/71{% endblock %}
