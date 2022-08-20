@@ -27,7 +27,7 @@ mkdir -p home/root home/ix var sys proc dev
 Fetch ix package manager, will be used later, from ix user before reboot, and by root user, after reboot:
 
 ```
-# we do not want to change out CWD
+# we do not want to change our CWD
 (cd home/root; git clone https://github.com/pg83/ix.git)
 ```
 
@@ -37,7 +37,7 @@ Add symlink, to trick ix package manager:
 ln -s /mnt/ix/ix /ix
 ```
 
-Add user ix, which will own alll packages in system(note: uid 1000 important):
+Add user ix, which will own all packages in system(note: uid 1000 important):
 
 ```
 useradd -u 1000 ix
@@ -59,7 +59,7 @@ cd /mnt/ix
 
 ```
 # TODO(pg): describe
-mkdir -p 0777 ix/realm
+mkdir -m 0777 ix/realm
 cd home/root/ix
 export IX_ROOT=/ix
 export IX_EXEC_KIND=local
