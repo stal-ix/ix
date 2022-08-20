@@ -2,11 +2,11 @@
 
 {% block run_deps %}
 bin/sed
-bin/gawk
 bin/grep
 bin/file
 bin/patch
 bin/diffutils
 bin/findutils
+bin/gawk/lite
 bin/coreutils/lite
 {% endblock %}
