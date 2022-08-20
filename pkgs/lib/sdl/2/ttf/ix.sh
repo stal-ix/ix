@@ -1,10 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-#https://github.com/libsdl-org/SDL_ttf/archive/refs/tags/release-2.0.18.tar.gz
-#sha:6b61544441b72bdfa1ced89034c6396fe80228eff201eb72c5f78e500bb80bd0
-https://github.com/libsdl-org/SDL_ttf/archive/refs/tags/release-2.20.0.tar.gz
-sha:3b3ec3e00dcfd188f572b50daa74b1cb8f40120ab094ce3d9e289705fd178183
+https://github.com/libsdl-org/SDL_ttf/archive/refs/tags/release-2.20.1.tar.gz
+sha:520bb84423dc705164781b6f00d81e7016fbdd884b2bd2b2f24335269a0130a7
 {% endblock %}
 
 {% block lib_deps %}
