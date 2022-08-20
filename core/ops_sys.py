@@ -14,8 +14,7 @@ def run_cmd(cmd, input=''):
     cmd = [
         '/bin/chrt', '-i', '0',
         '/bin/nice', '-n', '20',
-        '/bin/su', '-s',
-        cmd[0], '-', 'ix'
+        '/bin/su', '-s', cmd[0], 'ix'
     ] + cmd[1:]
 
     if os.getuid():
