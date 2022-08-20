@@ -37,7 +37,7 @@ mkdir -p etc/services/sud; cd etc/services/sud
 
 cat << EOF > run
 #!/usr/bin/env sh
-exec srv sud sud_server -R -F -E -B -j -k -m -P dropbear.pid
+exec srv sud sud_server -R -F -E -s -g -j -k -m -p 127.0.0.1:22 -P dropbear.pid
 EOF
 
 chmod +x run
