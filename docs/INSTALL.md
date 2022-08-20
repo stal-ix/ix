@@ -57,9 +57,15 @@ su ix
 cd /mnt/ix
 ```
 
+Some quirks(TODO(pg): describe):
+
 ```
-# TODO(pg): describe
 mkdir -m 0777 ix/realm
+```
+
+And run ix package manager, to populate our rootfs with bootstrap tools!
+
+```
 cd home/root/ix
 export IX_ROOT=/ix
 export IX_EXEC_KIND=local
