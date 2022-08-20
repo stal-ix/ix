@@ -101,6 +101,11 @@ def get_raw_arch(n):
     if n == 'linux-x86_64':
         return du(a('linux'), a('x86_64'), {'hw_vendor': 'pc'})
 
+    if n == 'linux-aarch64':
+        return du(a('linux'), a('aarch64'), {'hw_vendor': 'pc'})
+
+    raise Exception(f'unknown arch {n}')
+
 
 def arch(n):
     return enrich(get_raw_arch(n))
