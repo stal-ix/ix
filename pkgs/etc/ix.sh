@@ -43,6 +43,7 @@ export PATH="/ix/realm/\${USER}/bin:/bin"
 export IX_SDIR="/var/tmp/\$(id -u)"
 export IX_ROOT=/ix
 export TMPDIR="\${IX_SDIR}/\$\$"
+export XDG_DATA_DIRS="/ix/realm/\${USER}/share"
 export XDG_RUNTIME_DIR="\${TMPDIR}"
 
 mkdir -m 0700 -p \${XDG_RUNTIME_DIR}
