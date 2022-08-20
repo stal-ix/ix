@@ -2,13 +2,19 @@ Load machine from some bootable media, like Ubuntu/Fedora/Nix livecd, launch ter
 
 ```
 sudo sh
-mkdir /mnt/ix
-yum install parted || apt-get install parted
+```
+
+Install tools:
+
+```
+test -f /usr/bin/parted || yum install parted || apt-get install parted
+test -f /usr/bin/g++ || yum install g++ || apt-get install g++
 ```
 
 Somehow prepare xfs on /dev/xxx, with parted, and mount it:
 
 ```
+mkdir /mnt/ix
 mount /dev/xxx /mnt/ix
 ```
 
