@@ -24,10 +24,7 @@ def run_cmd(cmd, input=''):
     try:
         subprocess.run(cmd, shell=False, input=input.encode(), check=True)
     except Exception as e:
-        if '1' in str(e) or '2' in str(e):
-            raise ce.Error('shit happen', exception=e, visible=False)
-
-        raise e
+        raise ce.Error(' '.join(cmd) + ' failed', exception=e)
 
 
 def gen_show_cksum(path):
