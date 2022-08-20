@@ -5,6 +5,9 @@ cd ${out}; mkdir -p etc/services/autologin{{slot}}; cd etc/services/autologin{{s
 
 cat << EOF > daemon
 #!/bin/sh
+export USER=root
+export HOME=/home/root
+export PATH=/ix/realm/root/bin:/bin
 fixtty /dev/tty{{slot}}
 exec subreaper openvt -c {{slot}} -w /bin/sh
 EOF
