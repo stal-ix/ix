@@ -6,23 +6,61 @@ mkdir /mnt/ix
 yum install parted || apt-get install parted
 ```
 
-Somehow prepare xfs on /dev/xxx, with parted.
+Somehow prepare xfs on /dev/xxx, with parted, and mount it:
 
 ```
 mount /dev/xxx /mnt/ix
-mkdir /mnt/ix/ix
-useradd -u 1000 ix
-chown ix /mnt/ix/ix
-ln -s /mnt/ix/ix /ix
+```
+
+Prepare some symlinks, thus forming our future rootfs:
+
+```
 cd /mnt/ix
+
 ln -s ix/realm/system/bin bin
 ln -s ix/realm/system/etc etc
 ln -s / usr
-mkdir -p home/root var sys proc dev
-cd home/root
-git clone https://github.com/pg83/ix.git
+
+mkdir -p home/root home/ix var sys proc dev
+```
+
+Fetch ix package manager, will be used later, from ix user before reboot, and by root user, after reboot:
+
+```
+# we do not want to change out CWD
+(cd home/root; git clone https://github.com/pg83/ix.git)
+```
+
+Add symlink, to trick ix package manager:
+
+```
+ln -s /mnt/ix/ix /ix
+```
+
+Add user ix, which will own alll packages in system(note: uid 1000 important):
+
+```
+useradd -u 1000 ix
+```
+
+Prepare managed dir, owned by user ix, in /ix, /ix/realm, etc:
+
+```
+mkdir ix
+chown ix ix
+```
+
+Change user, from now on will run all commands under ix user:
+
+```
 su ix
-cd ix
+cd /mnt/ix
+```
+
+```
+# TODO(pg): describe
+mkdir -p 0777 ix/realm
+cd home/root/ix
 export IX_ROOT=/ix
 export IX_EXEC_KIND=local
 ./ix mut system set/system/0 --failsafe=1 etc/zram/0
