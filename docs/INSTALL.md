@@ -75,7 +75,7 @@ And run ix package manager, to populate our rootfs with bootstrap tools!
 cd home/root/ix
 export IX_ROOT=/ix
 export IX_EXEC_KIND=local
-./ix mut system set/system/0 --failsafe=1 etc/zram/0
+./ix mut system set/system/0 --failsafe --mingetty etc/zram/0
 ./ix mut root set/install
 ./ix mut boot set/boot/all
 ```
@@ -97,8 +97,7 @@ After successful boot, switch into tty5, there will be root prompt.
 Now we have some useful utilities in PATH, from /ix/realm/root.
 
 ```
-cd
-cd ix
+cd /home/root/ix
 # very important step, rebuild system realm
 ./ix mut system
 ```
@@ -106,21 +105,18 @@ cd ix
 Shell will relaunch thereafter. Actually, after any modification of system realm, runit will reload all supervised process tree.
 
 ```
-cd
-cd ix
-# very important step, rebuild all world from ix
+cd /home/root/ix
 ./ix mut
+```
+
+Rebuild world, again. And add a whole new user, without sudo capability:
+
+```
 # cryptpw will read password from command line
 ./ix mut system etc/user/0 --user=pg --hash=$(cryptpw)
 # shell will relaunch thereafter
 mkdir /home/pg
 chown pg /home/pg
-cd /home/pg
-cat << EOF > .emptty
-#!/usr/bin/env sh
-. /etc/session
-exec /bin/sh -li
-EOF
-chmod +x .emptty
-# now try login from tty1
 ```
+
+Now try login from tty1
