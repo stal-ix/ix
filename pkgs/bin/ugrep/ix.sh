@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://github.com/Genivia/ugrep/archive/refs/tags/v3.9.0.tar.gz
-sha:515bcc96d2ee7ba379ae9c7d2093fb581be43fc1f6d4306bba30c0f4c0e04687
+https://github.com/Genivia/ugrep/archive/refs/tags/v3.9.2.tar.gz
+sha:3416267ac5a4dd2938ca91e7bd91db958d65510c9fd33b221f067bd3c6b3fc6a
 {% endblock %}
 
 {% block bld_libs %}
