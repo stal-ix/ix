@@ -8,3 +8,8 @@
 
 {% block firmware %}
 {% endblock %}
+
+{% block bld_tool %}
+bin/tar
+{{super()}}
+{% endblock %}
