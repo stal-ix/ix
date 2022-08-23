@@ -45,4 +45,7 @@ def cli_list(ctx):
 
 
 def cli_purge(ctx):
-    cm.Manager(cf.config_from(ctx)).load_realm(ctx['args'][0]).uninstall()
+    mngr = cm.Manager(cf.config_from(ctx))
+
+    for r in ctx['args']:
+        cr.Repo(mngr.config).load_realm(r).to_rw(mngr).uninstall()
