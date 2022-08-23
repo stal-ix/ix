@@ -19,6 +19,7 @@ bin/zstd
 bld/perl
 bld/python
 bin/openssl
+bin/tar
 bin/bc/gavin
 bin/bison/3/6
 {% endblock %}
