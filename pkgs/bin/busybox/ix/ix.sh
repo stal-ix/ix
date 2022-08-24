@@ -5,8 +5,15 @@
 sed -e 's|"syslogd"|"syslogd/syslogd"|' -i sysklogd/syslogd.c
 {% endblock %}
 
-{% block install1 %}
+{% block install %}
 {{super()}}
-{{hooks.wrap_sudo_binary('ping')}}
-{{hooks.wrap_sudo_binary('ping6')}}
+cd ${out}/bin
+for x in ping ping6; do
+    rm ${x}
+    cat << EOF > ${x}
+#!/usr/bin/env sh
+exec sudo ${PWD}/busybox ${x} "\${@}"
+EOF
+    chmod +x ${x}
+done
 {% endblock %}
