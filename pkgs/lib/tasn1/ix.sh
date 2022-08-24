@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://ftp.gnu.org/gnu/libtasn1/libtasn1-4.17.0.tar.gz
-md5:c46f6eb3bd1287031ae5d36465094402
+https://ftp.gnu.org/gnu/libtasn1/libtasn1-4.19.0.tar.gz
+sha:1613f0ac1cf484d6ec0ce3b8c06d56263cc7242f1c23b30d82d23de345a63f7a
 {% endblock %}
 
 {% block bld_tool %}
