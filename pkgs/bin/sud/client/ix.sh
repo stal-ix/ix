@@ -1,4 +1,4 @@
-{% extends '//bin/openssh/ix.sh' %}
+{% extends '//bin/openssh/client/ix.sh' %}
 
 {% block build_flags %}
 compress
@@ -10,5 +10,5 @@ cd ${out}
 mv bin old
 mkdir bin
 mv old/ssh bin/sud_client
-rm -rf old share etc var
+rm -r old
 {% endblock %}

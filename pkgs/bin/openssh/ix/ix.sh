@@ -1,4 +1,4 @@
-{% extends '//bin/openssh/t/ix.sh'%}
+{% extends '//bin/openssh/d/ix.sh'%}
 
 {% block configure_flags %}
 {{super()}}

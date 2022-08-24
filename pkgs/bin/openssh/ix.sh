@@ -1,6 +1,6 @@
-{% extends 't/ix.sh' %}
+{% extends '//die/hub.sh' %}
 
-{% block configure_flags %}
-{{super()}}
---with-privsep-path=${out}/tmp/privsep
+{% block run_deps %}
+bin/openssh/d
+bin/openssh/client
 {% endblock %}

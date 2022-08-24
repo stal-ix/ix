@@ -6,7 +6,7 @@ bin/mc
 bin/git
 bin/wget
 set/boot
-# for key generation
-bin/openssh
 bin/openssl
+# for key generation
+bin/openssh/client
 {% endblock %}

@@ -33,4 +33,5 @@ sed -e 's| -lcurses||' -i configure.ac
 
 {% block configure_flags %}
 --disable-strip
+--with-privsep-path=${out}/lib
 {% endblock %}
