@@ -53,7 +53,11 @@ def destruct(pkgs):
             yield ('f', '+', {'p': p, 'f': x})
 
 
-def apply_patch(flags, pkgs, patch):
+def rev_lst(l):
+    return list(reversed(l))
+
+
+def apply_patch_1(flags, pkgs, patch):
     res = struct(list(destruct([{'name': None, 'flags': flags}] + pkgs)) + patch)
 
     assert not res[0]['name']
@@ -62,6 +66,13 @@ def apply_patch(flags, pkgs, patch):
         'flags': res[0]['flags'],
         'list': res[1:]
     }
+
+
+def apply_patch(flags, pkgs, patch):
+    res = apply_patch_1(flags, rev_lst(pkgs), patch)
+    res['list'] = rev_lst(res['list'])
+
+    return res
 
 
 def flatten(flags, pkgs):
