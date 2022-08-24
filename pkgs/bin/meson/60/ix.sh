@@ -16,12 +16,11 @@ patch -p1 << EOF
 EOF
 {% endblock %}
 
-{% block build %}
-ln -s meson.py meson
-{% endblock %}
-
 {% block install %}
-cp -R ../meson* ${out}/bin
+mkdir -p ${out}/bin
+cp -R ../meson* ${out}/bin/bin_meson
+cd ${out}/bin
+ln -s bin_meson/meson.py meson
 {% endblock %}
 
 {% block strip_pc %}
