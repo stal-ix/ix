@@ -1,8 +1,8 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://pwmt.org/projects/zathura-pdf-mupdf/download/zathura-pdf-mupdf-0.3.8.tar.xz
-sha:c205b4cf500d8cfe9eceaade54e5fa8d4cd1298cd85f17a6f50c647259116217
+https://pwmt.org/projects/zathura-pdf-mupdf/download/zathura-pdf-mupdf-0.3.9.tar.xz
+sha:77f795ea1745b695a50b6864e73569d4ed8ac0eaa4ee2e6069e725c932057c07
 {% endblock %}
 
 {% block lib_deps %}
