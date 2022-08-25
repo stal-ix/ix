@@ -1,4 +1,4 @@
-{% extends '//lib/xml2/ix.sh' %}
+{% extends '//lib/xml2/t/ix.sh' %}
 
 {% block bld_libs %}
 lib/intl
