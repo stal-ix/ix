@@ -1,4 +1,4 @@
-{% extends '//lib/pcre/ix.sh' %}
+{% extends '//lib/pcre/t/ix.sh' %}
 
 {% block bld_libs %}
 lib/z
