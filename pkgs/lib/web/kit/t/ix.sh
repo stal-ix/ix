@@ -11,7 +11,7 @@ bld/glib/codegen
 bld/wayland
 {% endblock %}
 
-{% block ninja_threads %}4{% endblock %}
+{% block task_pool %}full{% endblock %}
 
 {% block cmake_flags %}
 USE_AVIF=ON

@@ -1,5 +1,7 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block task_pool %}full{% endblock %}
+
 {% block fetch %}
 {% include 'ver.sh' %}
 {% endblock %}

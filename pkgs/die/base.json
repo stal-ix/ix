@@ -19,5 +19,6 @@
         "deps": {% block induced_depends %}[]{% endblock %}
     },
     "net": {% block use_network %}false{% endblock %},
-    "predict_outputs": {% block predict_outputs %}[]{% endblock %}
+    "predict_outputs": {% block predict_outputs %}[]{% endblock %},
+    "task_pool": "{% block task_pool %}slot{% endblock %}"
 }

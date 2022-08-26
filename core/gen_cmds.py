@@ -225,7 +225,7 @@ def iter_build_commands(self):
         'in_dir': self.iter_build_dirs() + extra,
         'out_dir': [self.out_dir],
         'cmd': [CmdBuild(self).script(sb, src_dir)],
-        'pool': 'network' if self.descr['net'] else 'slot',
+        'pool': 'network' if self.descr['net'] else self.descr['task_pool'],
     }
 
     if pred := self.descr['predict_outputs']:

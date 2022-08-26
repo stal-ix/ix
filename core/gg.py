@@ -61,6 +61,7 @@ def build_graph(n):
         'nodes': list(validate(cu.iter_uniq_list(build_commands(n)))),
         'targets': [(x.out_dir + '/touch') for x in n],
         'pools': {
+            'full': 1,
             'slot': slots(t),
             'misc': 4,
             'threads': t,

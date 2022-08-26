@@ -1,7 +1,5 @@
 {% extends '//bin/telegram/desktop/unwrap/t/ix.sh' %}
 
-{% block ninja_threads %}5{% endblock %}
-
 {% block cpp_includes %}
 {{super()}}
 ${GCC_INCLUDES}
