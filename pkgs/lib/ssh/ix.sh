@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://www.libssh.org/files/0.9/libssh-0.9.5.tar.xz
-md5:6211e47ba4dfd7f7e9f8a17a601245f4
+https://git.libssh.org/projects/libssh.git/snapshot/libssh-0.10.0.tar.xz
+sha:ad2326ccca7e4ffd529073251eeb0a5f509bbf2051afdb6e18944534b1d21328
 {% endblock %}
 
 {% block lib_deps %}
@@ -18,5 +18,6 @@ export COFLAGS="--with-libssh=${out} \${COFLAGS}"
 
 {% block cmake_flags %}
 WITH_EXAMPLES=OFF
+WITH_DEBUG_CALLTRACE=OFF
 WITH_SYMBOL_VERSIONING=OFF
 {% endblock %}
