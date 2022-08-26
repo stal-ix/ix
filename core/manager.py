@@ -48,10 +48,13 @@ class Manager:
         for s in ss:
             yield self.load_package(s, sfrom)
 
+    def empty_realm(self, name):
+        return cr.new_realm(self, name)
+
     def ensure_realm(self, name):
         try:
             return cr.load_realm_ro(self.config, name).to_rw(self)
         except FileNotFoundError as e:
             print(f'create new realm {name}')
 
-        return cr.new_realm(self, name)
+        return self.empty_realm(name)

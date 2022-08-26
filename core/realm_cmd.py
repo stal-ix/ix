@@ -1,3 +1,6 @@
+import shlex
+import subprocess
+
 import core.repo as cr
 import core.utils as cu
 import core.config as cf
@@ -30,6 +33,17 @@ def cli_mut(ctx):
     else:
         for r in cr.Repo(mngr.config).iter_realms():
             r.to_rw(mngr).mut([]).install()
+
+
+def cli_run(ctx):
+    mngr = cm.Manager(cf.config_from(ctx))
+
+    if args := ctx['args']:
+        r = mngr.empty_realm('ephemeral')
+        a = args[:args.index('--')]
+        p = r.mut(list(cc.lex(a))).path + '/env'
+
+        subprocess.check_call(f'. {p}; ' + shlex.join(args[args.index('--') + 1:]), shell=True)
 
 
 def cli_list(ctx):
