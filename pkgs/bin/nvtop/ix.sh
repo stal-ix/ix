@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/Syllo/nvtop/archive/refs/tags/2.0.2.tar.gz
-sha:7f22bb9f59e36551f5d7640d265b63ec6af1a91a421fa220dd913a5a134e9901
+https://github.com/Syllo/nvtop/archive/refs/tags/2.0.3.tar.gz
+sha:ecf18c55e513fca672426cc9a3ea9ac888b4061be2cca455f484b681a1435518
 {% endblock %}
 
 {% block bld_libs %}
