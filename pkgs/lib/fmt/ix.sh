@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/fmtlib/fmt/archive/refs/tags/9.0.0.tar.gz
-sha:9a1e0e9e843a356d65c7604e2c8bf9402b50fe294c355de0095ebd42fb9bd2c5
+https://github.com/fmtlib/fmt/archive/refs/tags/9.1.0.tar.gz
+sha:5dea48d1fcddc3ec571ce2058e13910a0d4a6bab4cc09a809d8b1dd1c88ae6f2
 {% endblock %}
 
 {% block lib_deps %}
