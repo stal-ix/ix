@@ -6,7 +6,6 @@ sha:a0634e536bded57cf38ec8a751adb124b89c776fe0846f21ab6c6728f1cbbbe6
 {% endblock %}
 
 {% block bld_libs %}
-lib/linux/15
 lib/c
 lib/z
 lib/lzo
@@ -52,11 +51,14 @@ wrap_cc
 {% block configure_all_flags %}
 --prefix=${out}
 --libexecdir=${out}/bin/{{uniq_id}}
---disable-kvm
 --disable-plugins
 --audio-drv-list=sdl
 --with-coroutine=ucontext
 --target-list="{{target.arch}}-softmmu"
+{% endblock %}
+
+{% block setup %}
+export CPPFLAGS="-I${PWD}/linux-headers ${CPPFLAGS}"
 {% endblock %}
 
 {% block patch %}
