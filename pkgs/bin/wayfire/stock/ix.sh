@@ -11,7 +11,7 @@ lib/drm
 lib/png
 lib/glm
 lib/mesa
-lib/xml2
+lib/xml/2
 lib/jpeg
 lib/seat
 lib/cairo

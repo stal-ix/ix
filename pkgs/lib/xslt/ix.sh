@@ -7,7 +7,7 @@ sha:9798e44a5fb0720cbda8a2323bb0e1db219659e9cd14fa4d73ee251ec281b3d4
 
 {% block lib_deps %}
 lib/c
-lib/xml2
+lib/xml/2
 {% endblock %}
 
 {% block configure_flags %}

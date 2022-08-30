@@ -12,7 +12,7 @@ lib/gcr
 lib/gtk
 lib/gmp
 lib/glib
-lib/xml2
+lib/xml/2
 lib/cairo
 lib/handy
 lib/portal

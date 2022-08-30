@@ -29,7 +29,7 @@ lib/cap
 lib/zip
 lib/zstd
 lib/pcap
-lib/xml2
+lib/xml/2
 lib/intl
 lib/udev
 lib/ryml

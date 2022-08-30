@@ -13,7 +13,7 @@ bld/wayland
 
 {% block lib_deps %}
 lib/c
-lib/xml2
+lib/xml/2
 lib/wayland
 {% endblock %}
 

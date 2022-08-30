@@ -9,7 +9,7 @@ sha:d4d04576c9a5026064f7d480b34531faf59543f2e4d57c48a6fa5c76661e1dd4
 lib/c
 lib/gtk
 lib/ical
-lib/xml2
+lib/xml/2
 lib/gmime
 lib/gpgme
 lib/gspell

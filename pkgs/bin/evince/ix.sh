@@ -12,7 +12,7 @@ lib/t1
 lib/intl
 lib/dbus
 lib/glib
-lib/xml2
+lib/xml/2
 lib/gtk/3
 lib/handy
 lib/secret

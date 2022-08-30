@@ -11,7 +11,7 @@ lib/expat
 {% endblock %}
 
 {% block bld_libs %}
-lib/xml2
+lib/xml/2
 {% endblock %}
 
 {% block configure_flags %}

@@ -8,7 +8,7 @@ sha:0b67bc89a5d9059fae28822f3ba2373553dea290cd931c9384a91dbeb2054650
 {% block bld_libs %}
 lib/c
 lib/glib
-lib/xml2
+lib/xml/2
 lib/pango
 lib/cairo
 lib/input

@@ -7,7 +7,7 @@ sha:48b7e3bb91b85b605b874c39ea5c9a3f3601af31cbdcd333cc257fc9b318388d
 
 {% block lib_deps %}
 lib/c
-lib/xml2
+lib/xml/2
 lib/glib
 lib/gtk/4
 lib/pcre/2

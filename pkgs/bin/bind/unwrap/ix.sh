@@ -14,7 +14,7 @@ lib/icu
 lib/cap
 lib/lmdb
 lib/edit
-lib/xml2
+lib/xml/2
 lib/idn/2
 lib/cmocka
 lib/json/c

@@ -1,7 +1,7 @@
 {% extends '//lib/ng/http/2/t/ix.sh' %}
 
 {% block bld_libs %}
-lib/xml2
+lib/xml/2
 lib/boost
 lib/jansson
 {{super()}}

@@ -18,7 +18,7 @@ lib/sbc
 lib/ssh
 lib/zstd
 lib/pcap
-lib/xml2
+lib/xml/2
 lib/opus
 lib/glib
 lib/intl

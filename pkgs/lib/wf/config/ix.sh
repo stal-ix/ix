@@ -9,7 +9,7 @@ sha:9c212f85bfb26d135610f45865b4401e0c33a0ab3577ac65042eb23ebfe91bdb
 lib/c
 lib/glm
 lib/c++
-lib/xml2
+lib/xml/2
 lib/evdev
 {% endblock %}
 

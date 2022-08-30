@@ -14,7 +14,7 @@ lib/wpe
 lib/icu
 lib/png
 lib/avif
-lib/xml2
+lib/xml/2
 lib/glib
 lib/jpeg
 lib/webp

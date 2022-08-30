@@ -11,7 +11,7 @@ sha:6f7e90ef8973d31d96de64db817173e345150829717a94084b1bb8321cde2014
 lib/c
 lib/a52
 lib/mad
-lib/xml2
+lib/xml/2
 lib/faad2
 lib/mpeg2
 lib/gnutls

@@ -8,7 +8,7 @@ sha:4284b780356f1dc6a01f16083e7b836e63d3815e27ed0eaaad684712357ccc8f
 {% block lib_deps %}
 lib/c
 lib/c++
-lib/xml2
+lib/xml/2
 lib/glib
 {% endblock %}
 

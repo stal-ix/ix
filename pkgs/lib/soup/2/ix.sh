@@ -9,7 +9,7 @@ sha:f0a427656e5fe19e1df71c107e88dfa1b2e673c25c547b7823b6018b40d01159
 lib/c
 lib/z
 lib/psl
-lib/xml2
+lib/xml/2
 lib/glib
 lib/brotli
 lib/sqlite/3

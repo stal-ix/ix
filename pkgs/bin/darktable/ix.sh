@@ -18,7 +18,7 @@ lib/avif
 lib/heif
 lib/webp
 lib/rsvg
-lib/xml2
+lib/xml/2
 lib/curl
 lib/jpeg
 lib/lcms2

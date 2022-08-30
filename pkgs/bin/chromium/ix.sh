@@ -14,7 +14,7 @@ lib/c
 lib/c++
 lib/nss
 lib/drm
-lib/xml2
+lib/xml/2
 lib/glib
 lib/xslt
 lib/pango

@@ -17,7 +17,7 @@ lib/png
 lib/jxl
 lib/avif
 lib/webp
-lib/xml2
+lib/xml/2
 lib/glib
 lib/jpeg
 lib/xslt

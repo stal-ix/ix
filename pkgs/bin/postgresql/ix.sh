@@ -9,7 +9,7 @@ sha:c23b6237c5231c791511bdc79098617d6852e9e3bdf360efd8b5d15a1a3d8f6a
 lib/c
 lib/z
 lib/icu
-lib/xml2
+lib/xml/2
 lib/xslt
 lib/intl
 lib/linux

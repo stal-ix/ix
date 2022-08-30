@@ -9,7 +9,7 @@ sha:8faf8df870cb27b09a787a1959d6c646faa44d0d8ab151883df408b7166bea4c
 lib/c
 lib/c++
 lib/icu
-lib/xml2
+lib/xml/2
 lib/boost
 lib/revenge
 {% endblock %}

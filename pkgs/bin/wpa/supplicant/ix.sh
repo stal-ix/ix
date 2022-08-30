@@ -8,7 +8,7 @@ sha:20df7ae5154b3830355f8ab4269123a87affdea59fe74fe9292a91d0d7e17b2f
 {% block bld_libs %}
 lib/c
 lib/nl
-lib/xml2
+lib/xml/2
 lib/dbus
 lib/linux
 lib/openssl

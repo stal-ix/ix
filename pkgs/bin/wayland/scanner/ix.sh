@@ -8,7 +8,7 @@
 
 {% block bld_libs %}
 lib/c
-lib/xml2
+lib/xml/2
 lib/expat
 {% endblock %}
 
