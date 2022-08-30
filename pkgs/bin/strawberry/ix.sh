@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/strawberrymusicplayer/strawberry/archive/refs/tags/1.0.7.tar.gz
-sha:d3807dca3df039299122541f4d29a474a3698736b20226b3b2db15821d981415
+https://github.com/strawberrymusicplayer/strawberry/archive/refs/tags/1.0.8.tar.gz
+sha:5182b0f4abec0cde196b45677fcb06875c9e4b66db1edf280f503079b6d5dcf4
 {% endblock %}
 
 {% block bld_libs %}
