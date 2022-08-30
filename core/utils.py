@@ -11,7 +11,7 @@ def copy_dict(d):
     return json.loads(json.dumps(d))
 
 
-B62 = string.digits + string.ascii_letters + string.ascii_letters.upper()
+B62 = string.digits + string.ascii_letters
 
 
 def b62(b):
