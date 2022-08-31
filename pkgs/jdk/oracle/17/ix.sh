@@ -1,8 +1,8 @@
 {% extends '//die/std/ix.sh' %}
 
 {% block fetch %}
-https://download.oracle.com/java/17/latest/jdk-17_linux-x64_bin.tar.gz
-sha:50edb026947d5b2cb799fbc550ab62d3bec687691bade021139da4f1d9f1c21a
+https://download.java.net/openjdk/jdk17/ri/openjdk-17+35_linux-x64_bin.tar.gz
+sha:aef49cc7aa606de2044302e757fa94c8e144818e93487081c4fd319ca858134b
 {% endblock %}
 
 {% block step_unpack %}
