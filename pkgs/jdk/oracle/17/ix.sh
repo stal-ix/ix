@@ -11,7 +11,7 @@ sha:aef49cc7aa606de2044302e757fa94c8e144818e93487081c4fd319ca858134b
 
 {% block install %}
 cd ${out}
-bsdtar -x -f ${src}/jdk*
+bsdtar -x -f ${src}/*gz
 ln -s jdk*/bin ./
 ln -s jdk*/lib ./
 {% endblock %}
