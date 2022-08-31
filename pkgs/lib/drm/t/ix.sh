@@ -1,8 +1,8 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://dri.freedesktop.org/libdrm/libdrm-2.4.112.tar.xz
-sha:00b07710bd09b35cd8d80eaf4f4497fe27f4becf467a9830f1f5e8324f8420ff
+https://dri.freedesktop.org/libdrm/libdrm-2.4.113.tar.xz
+sha:7fd7eb2967f63beb4606f22d50e277d993480d05ef75dd88a9bd8e677323e5e1
 {% endblock %}
 
 {% block lib_deps %}
@@ -13,6 +13,6 @@ lib/pciaccess
 {% endblock %}
 
 {% block meson_flags %}
-valgrind=false
+valgrind=disabled
 udev=true
 {% endblock %}
