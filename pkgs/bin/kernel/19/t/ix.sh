@@ -1,13 +1,13 @@
 {% extends '//bin/kernel/18/t/ix.sh' %}
 
-{% block kernel_version %}5-19-5{% endblock %}
+{% block kernel_version %}5-19-6{% endblock %}
 
 {% block fetch %}
 {% include 'ver.sh' %}
 {% endblock %}
 
 {% block kernel_headers %}
-lib/linux/19
+bin/kernel/19/headers
 {% endblock %}
 
 {% block bld_tool %}
