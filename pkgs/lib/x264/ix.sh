@@ -1,8 +1,8 @@
 {% extends '//die/c/make.sh' %}
 
 {% block fetch %}
-https://code.videolan.org/videolan/x264/-/archive/master/x264-master.tar.bz2
-sha:876383c0bcc7bde562d2db350c4754114e8c4c0ce1228018cad0cc5f4ce1253b
+https://code.videolan.org/videolan/x264/-/archive/f7074e12d90de71f22aebd5040b8c6d31ca8f926/x264-f7074e12d90de71f22aebd5040b8c6d31ca8f926.tar.bz2
+sem:b744975b70126ab7e1cf07b662e47eccb76aac225370dc6793a769f66eff31b8
 {% endblock %}
 
 {% block lib_deps %}
