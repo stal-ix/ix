@@ -1,8 +1,8 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://gitlab.gnome.org/GNOME/libsoup/-/archive/3.0.7/libsoup-3.0.7.tar.bz2
-sha:f9fbc36524605ea88e97506659bfbdb048371f1b22d060e9d80aa8f496f7443e
+https://gitlab.gnome.org/GNOME/libsoup/-/archive/3.0.8/libsoup-3.0.8.tar.bz2
+sha:0fde1763c156ceee487489b357e173b6dab418669790300b66d5a99070c92f15
 {% endblock %}
 
 {% block lib_deps %}
