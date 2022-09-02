@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://www.libssh.org/files/0.10/libssh-0.10.1.tar.xz
-sha:da2b3337a0dd1d1e3788376ee471548520cad91a4f3f23ea3f50c5a73a7e69a5
+https://www.libssh.org/files/0.10/libssh-0.10.2.tar.xz
+sha:15b83d7b74c8c67f758fb32faf1d9a35d5f8f50db523276a419e9876530f098a
 {% endblock %}
 
 {% block lib_deps %}
