@@ -15,4 +15,6 @@ lib/sdl/chimera
 {{super()}}
 cd ${out}/lib
 mv libSDL-1.2.a libSDL.a
+cd pkgconfig
+cp sdl12_compat.pc sdl.pc
 {% endblock %}
