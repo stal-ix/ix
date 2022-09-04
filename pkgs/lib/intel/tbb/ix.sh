@@ -33,3 +33,8 @@ TBB_TEST=OFF
 TBB_STRICT=OFF
 TBBMALLOC_BUILD=OFF
 {% endblock %}
+
+{% block install %}
+{{super()}}
+sed -e 's|Threads::Threads|c|' -i ${out}/lib/cmake/TBB/TBBTargets.cmake
+{% endblock %}

@@ -1,8 +1,8 @@
-{% extends '//die/c/make.sh' %}
+{% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/rui314/mold/archive/refs/tags/v1.4.1.tar.gz
-sha:394036d299c50f936ff77ce9c6cf44a5b24bfcabf65ae7db9679f89c11a70b3f
+https://github.com/rui314/mold/archive/refs/tags/v1.4.2.tar.gz
+sha:47e6c48d20f49e5b47dfb8197dd9ffcb11a8833d614f7a03bd29741c658a69cd
 {% endblock %}
 
 {% block bld_libs %}
@@ -14,21 +14,12 @@ lib/openssl
 lib/intel/tbb
 {% endblock %}
 
-{% block std_box %}
-bld/python
-bld/pkg/config
-{{super()}}
-{% endblock %}
-
-{% block make_flags %}
-SYSTEM_TBB=1
-SYSTEM_XXHASH=1
-SYSTEM_MIMALLOC=1
-LIBEXECDIR=${out}/bin/{{uniq_id}}
-{% endblock %}
-
-{% block make_target %}
-mold
+{% block cmake_flags %}
+MOLD_LTO=OFF
+MOLD_USE_MOLD=OFF
+MOLD_USE_MIMALLOC=OFF
+MOLD_MOSTLY_STATIC=ON
+MOLD_USE_SYSTEM_TBB=ON
 {% endblock %}
 
 {% block patch %}
@@ -36,19 +27,10 @@ rm -r third-party/tbb
 rm -r third-party/xxhash
 rm -r third-party/mimalloc
 
-sed -e 's|.*mimalloc-new.*||' -i main.cc
-sed -e 's|-lcrypto||' -i Makefile
-sed -e 's|/usr/bin/python3|/usr/bin/env python3|' -i update-git-hash.py
-
 find . -type f | while read l; do
-    sed -e 's|-lmimalloc||g' \
+    sed -e 's|mold-wrapper SHARED|mold-wrapper STATIC|' \
         -e 's|xxhash/xxhash.h|xxhash.h|' \
         -e 's|third-party/xxhash.h|xxhash.h|' \
         -i ${l}
 done
-{% endblock %}
-
-{% block build %}
-{{super()}}
->mold-wrapper.so
 {% endblock %}
