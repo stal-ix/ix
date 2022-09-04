@@ -1,0 +1,44 @@
+diff --git a/meson-0.63.2/mesonbuild/compilers/mixins/clang.py b/meson-0.63.2/mesonbuild/compilers/mixins/clang.py
+index 5083ace..c5a10c5 100644
+--- a/meson-0.63.2/mesonbuild/compilers/mixins/clang.py
++++ b/meson-0.63.2/mesonbuild/compilers/mixins/clang.py
+@@ -87,10 +87,6 @@ class ClangCompiler(GnuLikeCompiler):
+         # with functions that may be in a header on some systems, but not all of
+         # them. `strlcat` specifically with can trigger this.
+         myargs: T.List[str] = ['-Werror=implicit-function-declaration']
+-        if mode is CompileCheckMode.COMPILE:
+-            myargs.extend(['-Werror=unknown-warning-option', '-Werror=unused-command-line-argument'])
+-            if mesonlib.version_compare(self.version, '>=3.6.0'):
+-                myargs.append('-Werror=ignored-optimization-argument')
+         return super().get_compiler_check_args(mode) + myargs
+ 
+     def has_function(self, funcname: str, prefix: str, env: 'Environment', *,
+diff --git a/meson-0.63.2/mesonbuild/compilers/mixins/clike.py b/meson-0.63.2/mesonbuild/compilers/mixins/clike.py
+index 7f43fe2..8c7f1e2 100644
+--- a/meson-0.63.2/mesonbuild/compilers/mixins/clike.py
++++ b/meson-0.63.2/mesonbuild/compilers/mixins/clike.py
+@@ -95,8 +95,9 @@ class CLikeCompilerArgs(arglist.CompilerArgs):
+                     group_start = i
+             if group_start >= 0:
+                 # Last occurrence of a library
+-                new.insert(group_end + 1, '-Wl,--end-group')
+-                new.insert(group_start, '-Wl,--start-group')
++                # new.insert(group_end + 1, '-Wl,--end-group')
++                # new.insert(group_start, '-Wl,--start-group')
++                pass
+         # Remove system/default include paths added with -isystem
+         default_dirs = self.compiler.get_default_include_dirs()
+         if default_dirs:
+diff --git a/meson-0.63.2/mesonbuild/linkers/linkers.py b/meson-0.63.2/mesonbuild/linkers/linkers.py
+index 589e816..1d7b1d0 100644
+--- a/meson-0.63.2/mesonbuild/linkers/linkers.py
++++ b/meson-0.63.2/mesonbuild/linkers/linkers.py
+@@ -848,7 +848,7 @@ class LLVMDynamicLinker(GnuLikeDynamicLinkerMixin, PosixDynamicLinkerMixin, Dyna
+         # Some targets don't seem to support this argument (windows, wasm, ...)
+         _, _, e = mesonlib.Popen_safe(self.exelist + self._apply_prefix('--allow-shlib-undefined'))
+         # Versions < 9 do not have a quoted argument
+-        self.has_allow_shlib_undefined = ('unknown argument: --allow-shlib-undefined' not in e) and ("unknown argument: '--allow-shlib-undefined'" not in e)
++        self.has_allow_shlib_undefined = '--allow-shlib-undefined' not in e
+ 
+     def get_allow_undefined_args(self) -> T.List[str]:
+         if self.has_allow_shlib_undefined:
