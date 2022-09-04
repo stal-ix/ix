@@ -15,6 +15,7 @@ lib/p11/kit
 {% endblock %}
 
 {% block bld_tool %}
+bld/gettext
 bld/glib/codegen
 {% endblock %}
 
