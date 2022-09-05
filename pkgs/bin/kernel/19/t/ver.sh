@@ -1,2 +1,2 @@
-https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.19.6.tar.xz
-sha:41a4f824af614460c429a7c723e8dcbb0e042f0047d328c18b4ed6f2b4efa63a
+https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.19.7.tar.xz
+sha:b8bb6019d4255f39196726f9d0f82f76179d1c3d7c6b603431ef04b38201199f
