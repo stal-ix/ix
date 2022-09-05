@@ -1,16 +1,10 @@
-{% extends '//die/c/ix.sh' %}
-
-{% block step_unpack %}
-:
-{% endblock %}
+{% extends '//lib/openssl/fake/ix.sh' %}
 
 {% block lib_deps %}
 lib/md
 {% endblock %}
 
 {% block install %}
-{{hooks.gen_pc('openssl', '1.1.1')}}
-
 mkdir -p ${out}/include/openssl
 
 cat << EOF > ${out}/include/openssl/sha.h
@@ -30,4 +24,6 @@ typedef SHA2_CTX SHA256_CTX;
 
 #define SHA256(a, b, c) SHA256_Data(a, b, (char*)c)
 EOF
+
+{{super()}}
 {% endblock %}
