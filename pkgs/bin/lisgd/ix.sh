@@ -1,8 +1,8 @@
 {% extends '//die/c/make.sh' %}
 
 {% block fetch %}
-https://git.sr.ht/~mil/lisgd/archive/0.3.4.tar.gz
-sha:1f10c92d0b98dac33577f2be17d9aa86d533926c32eeac4ddf37afabb4a7641f
+https://git.sr.ht/~mil/lisgd/archive/0.3.5.tar.gz
+sha:e795f7d00142eee6b8d8f5f2cd19a5282b8c911b1c829d88353ccbb5bc877e46
 {% endblock %}
 
 {% block bld_libs %}
