@@ -1,8 +1,8 @@
 {% extends '//die/c/autohell.sh' %}
 
 {% block fetch %}
-http://www.squid-cache.org/Versions/v5/squid-5.6.tar.xz
-sha:38d27338a347597ce0e93d0c3be6e5f66b6750417c474ca87ee0d61bb6d148db
+http://www.squid-cache.org/Versions/v5/squid-5.7.tar.xz
+sha:6b0753aaba4c9c4efd333e67124caecf7ad6cc2d38581f19d2f0321f5b7ecd81
 {% endblock %}
 
 {% block bld_libs %}
@@ -16,6 +16,10 @@ lib/openssl
 
 {% block autoreconf %}
 sh bootstrap.sh
+{% endblock %}
+
+{% block build_flags %}
+shut_up
 {% endblock %}
 
 {% block bld_tool %}
