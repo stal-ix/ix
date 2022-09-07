@@ -21,6 +21,10 @@ bld/bash
 shut_up
 {% endblock %}
 
+{% block setup %}
+export CFLAGS="-Wno-int-conversion ${CFLAGS}"
+{% endblock %}
+
 {% block setup_tools %}
 cat << EOF > install_name_tool
 #!$(which sh)

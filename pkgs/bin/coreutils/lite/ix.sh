@@ -2,6 +2,7 @@
 
 {% block bld_libs %}
 lib/c
+lib/shim/extra
 {% endblock %}
 
 {% block configure_flags %}

@@ -11,3 +11,7 @@ sha:b865299ffd45d73412293369c9754b07637680e5c826915f097577cd27350348
 {% block lib_deps %}
 lib/c
 {% endblock %}
+
+{% block setup %}
+export CPPFLAGS="-include stddef.h ${CPPFLAGS}"
+{% endblock %}

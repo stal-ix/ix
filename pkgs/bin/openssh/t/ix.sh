@@ -15,6 +15,7 @@ lib/z
 lib/edit
 lib/ldns
 lib/openssl
+lib/bsd/overlay
 {% endblock %}
 
 {% block bld_tool %}

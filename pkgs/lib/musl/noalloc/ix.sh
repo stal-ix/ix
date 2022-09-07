@@ -19,7 +19,7 @@ __libc_calloc=calloc
 )
 
 rm -rf ${out}/lib/libc.a obj/src/malloc
-ar q ${out}/lib/libc.a $(find obj -type f | sort)
+ar q ${out}/lib/libc.a $(find obj -type f -name '*.o' | sort)
 ranlib ${out}/lib/libc.a
 {% endblock %}
 
