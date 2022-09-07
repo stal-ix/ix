@@ -5,5 +5,5 @@
 {% endblock %}
 
 {% block clang_export_ver %}
-15.0.0-rc1
+15.0.0
 {% endblock %}
