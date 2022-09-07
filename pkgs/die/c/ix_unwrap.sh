@@ -8,7 +8,7 @@
       {% if c_compiler %}
         {{c_compiler}}
       {% else %}
-        bld/compiler
+        bld/compiler(clang_ver={{clang_ver}})
       {% endif %}
       {% block no_mold %}
         bld/linker

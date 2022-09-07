@@ -34,5 +34,8 @@ sed -e 's| -lcurses||' -i configure.ac
 
 {% block configure_flags %}
 --disable-strip
+# -fzero-call-used-regs broken with clang15
+--without-hardening
+--without-stackprotect
 --with-privsep-path=${out}/lib
 {% endblock %}

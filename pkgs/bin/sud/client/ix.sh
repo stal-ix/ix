@@ -12,3 +12,8 @@ mkdir bin
 mv old/ssh bin/sud_client
 rm -r old
 {% endblock %}
+
+{% block setup %}
+export CPPFLAGS="-D_GNU_SOURCE=1 -Wno-implicit-function-declaration ${CPPFLAGS}"
+{{super()}}
+{% endblock %}
