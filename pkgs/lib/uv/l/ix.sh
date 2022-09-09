@@ -1,11 +1,10 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/luvit/luv/archive/refs/tags/1.42.0-1.tar.gz
-md5:167eef7ce7698779d88769a625365c7e
-
+https://github.com/luvit/luv/archive/refs/tags/1.44.2-1.tar.gz
+sha:f8c69908e17ec8ab370253d1508e23deaecfc0c4752d2efb77e427e579501104
 https://github.com/keplerproject/lua-compat-5.3/archive/refs/tags/v0.9.tar.gz
-md5:7c0530123479804e40971b069ea6b0da
+sha:ad05540d2d96a48725bb79a1def35cf6652a4e2ec26376e2617c8ce2baa6f416
 {% endblock %}
 
 {% block unpack %}
