@@ -7,7 +7,8 @@ export CXX=clang++
 export OBJC=clang
 
 L="-nostdlib -nostdlib++ ${LDFLAGS}"
-C="--target={{target.arch}}-{{target.vendor}}-{{target.os}} -fcolor-diagnostics -Wno-unused-command-line-argument -nostdinc -nostdinc++ ${CPPFLAGS} ${CFLAGS} ${OPTFLAGS}"
+C="--target={{target.arch}}-{{target.vendor}}-{{target.os}} -fcolor-diagnostics -nostdinc -nostdinc++ ${CPPFLAGS} ${CFLAGS} ${OPTFLAGS}"
+C="${C} -Wno-deprecated -Wno-implicit-int -Wno-int-conversion -Wno-unused-command-line-argument"
 LC="${C} ${CTRFLAGS}"
 
 cat << EOF > cc
