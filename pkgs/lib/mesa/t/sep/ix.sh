@@ -17,8 +17,12 @@ cd ${out}/lib
 
 {% block merge_drivers %}
 mv dri/*.so libgallium.a
+{% if vulkan %}
 joinar libgldrivers.a libgallium* libvulkan_*
 rm libgallium* libvulkan_*
+{% else %}
+mv libgallium* libgldrivers.a
+{% endif %}
 {% endblock %}
 
 rm -r dri
