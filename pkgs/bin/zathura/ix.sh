@@ -17,7 +17,6 @@ bld/scripts/dlfcn
 
 {% block meson_flags %}
 {{super()}}
-magic=enabled
 seccomp=enabled
 {% endblock %}
 
