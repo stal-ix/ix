@@ -473,6 +473,8 @@ iwlwifi-cc-a0-53.ucode
 iwlwifi-cc-a0-55.ucode
 iwlwifi-cc-a0-59.ucode
 iwlwifi-cc-a0-62.ucode
+
+rtw88/rtw8822b_fw.bin
 {% endblock %}
 
 {% block kconfig_flags %}

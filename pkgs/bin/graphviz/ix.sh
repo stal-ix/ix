@@ -1,5 +1,5 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
-bin/graphviz/5
+bin/graphviz/6
 {% endblock %}
