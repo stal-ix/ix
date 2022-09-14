@@ -38,3 +38,7 @@ EOF
 
 chmod +x ssh-add ssh-agent
 {% endblock %}
+
+{% block setup %}
+export CPPFLAGS="-D_GNU_SOURCE=1 ${CPPFLAGS}"
+{% endblock %}

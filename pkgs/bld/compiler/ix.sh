@@ -5,5 +5,5 @@ bin/clang/lib
 {% endblock %}
 
 {% block run_deps %}
-bin/clang/{{clang_ver or '14'}}(std_env=bld/boot/8/env/cxx)
+bin/clang/{{clang_ver or '15'}}(std_env=bld/boot/8/env/cxx)
 {% endblock %}

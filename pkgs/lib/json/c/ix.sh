@@ -10,6 +10,9 @@ lib/c
 {% endblock %}
 
 {% block c_rename_symbol %}
-#json_object_get_type
 json_object_equal
+{% endblock %}
+
+{% block patch %}
+sed -e 's|*json_util_get_last_err()|*json_util_get_last_err(void)|' -i json_util.c
 {% endblock %}
