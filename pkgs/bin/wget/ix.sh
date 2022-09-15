@@ -14,6 +14,7 @@ lib/pcre/2
 lib/gnutls
 lib/c-ares
 lib/metalink
+lib/shim/gnu
 lib/unistring
 {% endblock %}
 
@@ -24,4 +25,12 @@ bld/auto/archive
 
 {% block configure_flags %}
 --with-cares
+{% endblock %}
+
+{% block setup %}
+export ac_cv_func_rawmemchr=no
+{% endblock %}
+
+{% block patch %}
+sed -e 's|.*error.*exh.*||' -i lib/xalloc-die.c
 {% endblock %}

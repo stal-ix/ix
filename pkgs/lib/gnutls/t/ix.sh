@@ -22,6 +22,10 @@ lib/darwin/framework/Security
 lib/unistring
 {% endblock %}
 
+{% block bld_libs %}
+lib/shim/gnu
+{% endblock %}
+
 {% block run_data %}
 aux/ca-bundle
 {% endblock %}
