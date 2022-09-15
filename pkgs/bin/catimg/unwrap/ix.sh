@@ -8,3 +8,7 @@ sha:3a6450316ff62fb07c3facb47ea208bf98f62abd02783e88c56f2a6508035139
 {% block bld_libs %}
 lib/c
 {% endblock %}
+
+{% block setup %}
+export CPPFLAGS="-D_GNU_SOURCE=1 -include stdio.h ${CPPFLAGS}"
+{% endblock %}
