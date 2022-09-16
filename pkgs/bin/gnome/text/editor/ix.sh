@@ -10,6 +10,7 @@ lib/c
 lib/icu
 lib/intl
 lib/glib
+lib/pcre
 lib/gtk/4
 lib/pcre/2
 lib/adwaita

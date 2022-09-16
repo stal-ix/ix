@@ -1,10 +1,10 @@
 {% extends '//die/c/gnome.sh' %}
 
 {% block fetch %}
-#https://gitlab.gnome.org/GNOME/epiphany/-/archive/43.alpha/epiphany-43.alpha.tar.bz2
-#sha:b848328657e42ec14786b0522f3041f0e877d70af66154613c639f6e4aa45687
-https://gitlab.gnome.org/GNOME/epiphany/-/archive/43.0/epiphany-43.0.tar.bz2
-sha:867117c09a532c06e2db0f283c153f310bfec0e28c4ef06955dfa1f3ec6167c7
+https://gitlab.gnome.org/GNOME/epiphany/-/archive/43.alpha/epiphany-43.alpha.tar.bz2
+sha:b848328657e42ec14786b0522f3041f0e877d70af66154613c639f6e4aa45687
+#https://gitlab.gnome.org/GNOME/epiphany/-/archive/43.0/epiphany-43.0.tar.bz2
+#sha:867117c09a532c06e2db0f283c153f310bfec0e28c4ef06955dfa1f3ec6167c7
 {% endblock %}
 
 {% block bld_libs %}
