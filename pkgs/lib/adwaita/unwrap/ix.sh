@@ -21,3 +21,11 @@ bld/glib/codegen
 vapi=false
 introspection=disabled
 {% endblock %}
+
+{% block c_rename_symbol %}
+# conflict with gtk
+_gtk_builder_parser_translate
+_gtk_builder_check_parent
+_gtk_builder_prefix_error
+_gtk_builder_error_unhandled_tag
+{% endblock %}
