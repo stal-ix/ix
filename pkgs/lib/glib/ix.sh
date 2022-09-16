@@ -17,4 +17,6 @@ EOF
 sed -e 's|.*fast && result_.*||' \
     -e 's|sniff_length = _.*|sniff_length = 1024;| ' \
     -i gio/glocalfileinfo.c
+
+{{super()}}
 {% endblock %}
