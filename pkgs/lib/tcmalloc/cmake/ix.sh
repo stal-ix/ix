@@ -12,7 +12,7 @@ lib/c++
 {% block bld_libs %}
 lib/mimalloc/2
 # for LTO configure
-lib/compiler_rt/hack/ish
+lib/compiler_rt/builtins/hack/ish
 {% endblock %}
 
 {% block patch %}

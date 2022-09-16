@@ -1,4 +1,4 @@
-{% extends '//lib/compiler_rt/hack/ix.sh' %}
+{% extends '//lib/compiler_rt/builtins/hack/ix.sh' %}
 
 {% block bld_libs %}
 bld/boot/7/lib/cxx/unwind

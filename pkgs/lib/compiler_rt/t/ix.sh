@@ -1,9 +1,5 @@
 {% extends '//lib/llvm/t/ix.sh' %}
 
-{% block fetch %}
-{% include '//lib/llvm/14/ver.sh' %}
-{% endblock %}
-
 {% block bld_libs %}
 {% if linux %}
 lib/linux

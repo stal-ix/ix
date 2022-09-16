@@ -9,7 +9,6 @@ sha:1193bc821946336776f0dfa5e0dca5651f1e57157eda12da4721d2441f24a61a
 {% endblock %}
 
 {% block lib_deps %}
-lib/compiler_rt/builtins/15
 lib/c
 lib/z
 lib/wpe
