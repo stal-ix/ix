@@ -3,9 +3,13 @@
 {% block fetch %}
 https://webkitgtk.org/releases/webkitgtk-2.36.6.tar.xz
 sha:1193bc821946336776f0dfa5e0dca5651f1e57157eda12da4721d2441f24a61a
+
+#https://webkitgtk.org/releases/webkitgtk-2.38.0.tar.xz
+#sha:f9ce6375a3b6e1329b0b609f46921e2627dc7ad6224b37b967ab2ea643bc0fbd
 {% endblock %}
 
 {% block lib_deps %}
+lib/compiler_rt/builtins/15
 lib/c
 lib/z
 lib/wpe
