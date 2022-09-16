@@ -18,6 +18,11 @@ bld/byacc
 bld/texinfo
 {% endblock %}
 
+{% block setup %}
+{{super()}}
+export CPPFLAGS="-Wno-implicit-function-declaration ${CPPFLAGS}"
+{% endblock %}
+
 {% block patch %}
 cat << EOF > support/config.sub
 #!$(which sh)
