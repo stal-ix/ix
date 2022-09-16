@@ -1,11 +1,7 @@
 {% extends '//lib/llvm/t/ix.sh' %}
 
 {% block fetch %}
-{% if assume_gcc %}
-{% include '//lib/llvm/13/ver.sh' %}
-{% else %}
 {% include '//lib/llvm/14/ver.sh' %}
-{% endif %}
 {% endblock %}
 
 {% block lib_deps %}

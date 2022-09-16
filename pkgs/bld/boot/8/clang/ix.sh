@@ -2,7 +2,7 @@
 
 {% block run_deps %}
 {% if linux %}
-bld/boot/8/clang/base(libc=musl/pure,allocator=musl/pure,assume_gcc=1)
+bld/boot/8/clang/base(libc=musl/pure,allocator=musl/pure,cplpl_std=13)
 {% else %}
 bld/boot/8/clang/base
 {% endif %}
