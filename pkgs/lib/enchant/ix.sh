@@ -10,3 +10,7 @@ lib/c
 lib/c++
 lib/glib
 {% endblock %}
+
+{% block c_rename_symbol %}
+rawmemchr
+{% endblock %}

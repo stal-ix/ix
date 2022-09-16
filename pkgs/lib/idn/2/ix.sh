@@ -13,6 +13,7 @@ lib/unistring
 
 {% block c_rename_symbol %}
 error
+rawmemchr
 {% endblock %}
 
 {% block bld_tool %}

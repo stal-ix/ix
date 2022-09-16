@@ -27,10 +27,6 @@ bld/auto/archive
 --with-cares
 {% endblock %}
 
-{% block setup %}
-export ac_cv_func_rawmemchr=no
-{% endblock %}
-
 {% block patch %}
 sed -e 's|.*error.*exh.*||' -i lib/xalloc-die.c
 {% endblock %}
