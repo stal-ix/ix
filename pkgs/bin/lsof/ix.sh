@@ -1,8 +1,8 @@
 {% extends '//die/c/make.sh' %}
 
 {% block fetch %}
-https://github.com/lsof-org/lsof/releases/download/4.95.0/lsof_4.95.0.linux.tar.bz2
-sha:e9faa0fbcc48638c1d1f143e93573ac43b65e76646150f83e24bd8c18786303c
+https://github.com/lsof-org/lsof/archive/refs/tags/4.96.3-freebsd.tar.gz
+sha:bcb673c547d234da327a8ee0d1ef59d3b7eac12e0c066242ec13cb706485560d
 {% endblock %}
 
 {% block bld_libs %}
