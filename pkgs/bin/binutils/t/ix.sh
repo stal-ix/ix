@@ -9,7 +9,7 @@
 --disable-werror
 --with-system-zlib
 --enable-deterministic-archives
-{% endblock%}
+{% endblock %}
 
 {% block configure %}
 {{super()}}
