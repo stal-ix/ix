@@ -1,11 +1,8 @@
 {% extends '//lib/web/kit/t/ix.sh' %}
 
 {% block fetch %}
-https://webkitgtk.org/releases/webkitgtk-2.36.6.tar.xz
-sha:1193bc821946336776f0dfa5e0dca5651f1e57157eda12da4721d2441f24a61a
-
-#https://webkitgtk.org/releases/webkitgtk-2.38.0.tar.xz
-#sha:f9ce6375a3b6e1329b0b609f46921e2627dc7ad6224b37b967ab2ea643bc0fbd
+https://webkitgtk.org/releases/webkitgtk-2.38.0.tar.xz
+sha:f9ce6375a3b6e1329b0b609f46921e2627dc7ad6224b37b967ab2ea643bc0fbd
 {% endblock %}
 
 {% block lib_deps %}
@@ -66,4 +63,8 @@ sed -e 's|GRefPtr.h>|GRefPtr.h>\n#include <wtf/glib/GUniquePtr.h>|' \
 
 sed -e 's|return false|return true|' \
     -i Source/WebKit/WebProcess/WebPage/libwpe/AcceleratedSurfaceLibWPE.h
+
+base64 -d << EOF > Source/WebKit/Platform/IPC/ArgumentCoders.h
+{% include 'ArgumentCoders.h/base64' %}
+EOF
 {% endblock %}
