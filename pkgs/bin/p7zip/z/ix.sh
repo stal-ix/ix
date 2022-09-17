@@ -38,3 +38,8 @@ c++ -o real7z stubs.cpp CPP/7zip/UI/Console/*.o -Wl,--whole-archive bin/7z.so -W
 mkdir ${out}/bin
 cp real7z ${out}/bin/7z
 {% endblock %}
+
+{% block setup %}
+export CPPFLAGS="-D_UINT64_T_DECLARED -include stdint.h ${CPPFLAGS}"
+{{super()}}
+{% endblock %}

@@ -7,4 +7,5 @@
 {% block install %}
 {{super()}}
 rm ${out}/include/stdatomic.h
+sed -e 's|__validate_iter_reference.*;||' -i ${out}/include/__algorithm/iterator_operations.h
 {% endblock %}
