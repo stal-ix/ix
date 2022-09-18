@@ -2,6 +2,8 @@
 
 import os
 import sys
+import time
+import random
 import subprocess
 
 def it_args():
@@ -56,6 +58,25 @@ def link(objs):
         if '.so' in x:
             link1(x, objs)
 
+def retry(args):
+    return subprocess.check_call(args)
+
+    tout = 1
+
+    while True:
+        try:
+            return subprocess.check_call(args)
+        except Exception as e:
+            if 'SIGKILL' in str(e):
+                tout = min(tout * 1.5, 120)
+                slep = (random.random() + 0.5) * tout
+
+                print(f'retry {args} in {slep}')
+
+                time.sleep(slep)
+            else:
+                raise e
+
 def main():
     if '-c' in args:
         pass
@@ -67,6 +88,6 @@ def main():
     else:
         arg0 = args[0]
 
-    subprocess.check_call([arg0] + args[1:])
+    retry([arg0] + args[1:])
 
 main()
