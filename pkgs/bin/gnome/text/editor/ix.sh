@@ -17,6 +17,7 @@ lib/adwaita
 lib/enchant
 lib/gtk/deps
 lib/gtk/source/view
+lib/gsettings/desktop/schemas
 {% endblock %}
 
 {% block bld_tool %}
