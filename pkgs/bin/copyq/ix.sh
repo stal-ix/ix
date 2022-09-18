@@ -3,8 +3,8 @@
 {# no wayland support currently #}
 
 {% block fetch %}
-https://github.com/hluk/CopyQ/archive/refs/tags/v6.2.0.tar.gz
-sha:d1d46edc7c96e57c44f222b310713a886bc08d2a069756d96f620684d3e71067
+https://github.com/hluk/CopyQ/archive/refs/tags/v6.3.0.tar.gz
+sha:3dde185fe635bb3aa7e447f7e8edd808565cbc52ae8316afd957137bcf9ccaa3
 {% endblock %}
 
 {% block bld_libs %}
