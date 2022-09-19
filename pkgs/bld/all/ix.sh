@@ -3,6 +3,7 @@
 {# all (std_box=) targets should be mentioned here #}
 
 {% block run_deps %}
+bld/auto(conf_ver=2/71,std_box=bld/boot/box)
 bld/auto/archive
 bld/auto
 bld/bash
