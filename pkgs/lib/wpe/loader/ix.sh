@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/WebPlatformForEmbedded/libwpe/archive/refs/tags/1.12.3.tar.gz
-sha:40bb2d69acba76076ead4b880b684e26230abf095959e3e7fc2e2864dc5a32e4
+https://github.com/WebPlatformForEmbedded/libwpe/archive/refs/tags/1.14.0.tar.gz
+sha:0e9288d6e8cc120f0b395dac697b6df206d44109b5c286c5abaaa698777dc839
 {% endblock %}
 
 {% block lib_deps %}
