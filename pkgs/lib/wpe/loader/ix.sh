@@ -23,7 +23,7 @@ export CPPFLAGS="-I${out}/include/wpe-1.0 \${CPPFLAGS}"
 {% block install %}
 {{super()}}
 cd ${out}/lib
-cp libwpe-1.0.so libwpe-1.0.a
+mv libwpe.a libwpe-1.0.a
 {% endblock %}
 
 {% block patch %}
