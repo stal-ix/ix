@@ -1,8 +1,8 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://github.com/Igalia/WPEBackend-fdo/archive/refs/tags/1.14.0.tar.gz
-sha:90755742c38f24dd8c0372c3e538f8c4a502f5a4660d8717e0663cdcade3be1d
+https://github.com/Igalia/WPEBackend-fdo/archive/refs/tags/1.12.0.tar.gz
+sha:7984e2c65b27ffc962417ee0f8a6ab5f7e4d2d175b515ba051fedbcef68932a4
 {% endblock %}
 
 {% block lib_deps %}
