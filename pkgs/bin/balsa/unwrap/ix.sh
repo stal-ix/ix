@@ -25,6 +25,10 @@ lib/web/kit/deps
 lib/{{allocator}}/trim(delay=5,bytes=10000000)
 {% endblock %}
 
+{% block conf_ver %}
+2/71
+{% endblock %}
+
 {% block bld_tool %}
 bld/gettext
 bld/intltool
