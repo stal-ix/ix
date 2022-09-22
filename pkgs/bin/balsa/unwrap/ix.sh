@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://pawsa.fedorapeople.org/balsa/balsa-2.6.3.tar.xz
-sha:d4d04576c9a5026064f7d480b34531faf59543f2e4d57c48a6fa5c76661e1dd4
+https://pawsa.fedorapeople.org/balsa/balsa-2.6.4.tar.xz
+sha:befa5984511db33d41f2b1ecbfc99e22a15d45d08efe5d737b5174a1a6ac8fc1
 {% endblock %}
 
 {% block bld_libs %}
