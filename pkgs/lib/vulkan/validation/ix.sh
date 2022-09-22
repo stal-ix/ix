@@ -1,8 +1,10 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/KhronosGroup/Vulkan-ValidationLayers/archive/refs/tags/sdk-1.3.211.0.tar.gz
-sha:
+#https://github.com/KhronosGroup/Vulkan-ValidationLayers/archive/refs/tags/sdk-1.3.211.0.tar.gz
+#sha:
+https://github.com/KhronosGroup/Vulkan-ValidationLayers/archive/refs/tags/sdk-1.3.224.1.tar.gz
+sha:49c00e0119e3bc11e13c0c740e57c76b582b14f754f3779b85508c4d90d9df85
 {% endblock %}
 
 {% block lib_deps %}
