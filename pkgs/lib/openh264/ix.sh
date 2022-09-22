@@ -1,8 +1,8 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://github.com/cisco/openh264/archive/refs/tags/v2.3.0.tar.gz
-sha:99b0695272bee73a3b3a5fcb1afef462c11a142d1dc35a2c61fef5a4b7d60bc0
+https://github.com/cisco/openh264/archive/refs/tags/v2.3.1.tar.gz
+sha:453afa66dacb560bc5fd0468aabee90c483741571bca820a39a1c07f0362dc32
 {% endblock %}
 
 {% block lib_deps %}
