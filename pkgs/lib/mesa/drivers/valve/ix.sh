@@ -7,19 +7,19 @@ lib/elfutils
 
 {% block c_rename_symbol %}
 {{super()}}
-vkCmdBindPipeline
-vkCmdDispatch
-vkCmdDispatchIndirect
-vkCmdFillBuffer
-vkCmdPipelineBarrier
-vkCmdPushConstants
-vkCreateComputePipelines
-vkCreatePipelineLayout
-vkCreateShaderModule
-vkDestroyPipeline
-vkDestroyPipelineLayout
-vkDestroyShaderModule
-vkGetBufferDeviceAddress
+#vkCmdBindPipeline
+#vkCmdDispatch
+#vkCmdDispatchIndirect
+#vkCmdFillBuffer
+#vkCmdPipelineBarrier
+#vkCmdPushConstants
+#vkCreateComputePipelines
+#vkCreatePipelineLayout
+#vkCreateShaderModule
+#vkDestroyPipeline
+#vkDestroyPipelineLayout
+#vkDestroyShaderModule
+#vkGetBufferDeviceAddress
 {% endblock %}
 
 {% block mesa_drivers %}
