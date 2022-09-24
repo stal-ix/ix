@@ -1,2 +1,2 @@
-https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.19.10.tar.xz
-sha:67dab932e85f9b9062ced666c8ea888230a1dadfd624b05aead6b6ebc6d3bdd5
+https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.19.11.tar.xz
+sha:5554d2f90b806bb3454fcf3432882cf85077d660a89db5a4e8d7375271e3d973
