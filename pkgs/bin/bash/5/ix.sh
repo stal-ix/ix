@@ -18,3 +18,8 @@ bld/bison
 --enable-readline
 --with-curses
 {% endblock %}
+
+{% block setup %}
+export bash_cv_func_strtoimax=y
+{{super()}}
+{% endblock %}

@@ -1,8 +1,8 @@
 {% extends '//die/c/autohell.sh' %}
 
 {% block fetch %}
-https://ftp.gnu.org/gnu/readline/readline-8.1.tar.gz
-sha:f8ceb4ee131e3232226a17f51b164afc46cd0b9e6cef344be87c65962cb82b02
+https://ftp.gnu.org/gnu/readline/readline-8.2.tar.gz
+sha:3feb7171f16a84ee82ca18a36d7b9be109a52c04f492a053331d7d1095007c35
 {% endblock %}
 
 {% block lib_deps %}
