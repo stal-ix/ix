@@ -1,14 +1,15 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/rui314/mold/archive/refs/tags/v1.4.2.tar.gz
-sha:47e6c48d20f49e5b47dfb8197dd9ffcb11a8833d614f7a03bd29741c658a69cd
+https://github.com/rui314/mold/archive/refs/tags/v1.5.1.tar.gz
+sha:ec94aa74758f1bc199a732af95c6304ec98292b87f2f4548ce8436a7c5b054a1
 {% endblock %}
 
 {% block bld_libs %}
 lib/z
 lib/c
 lib/c++
+lib/zstd
 lib/xxhash
 lib/openssl
 lib/intel/tbb
