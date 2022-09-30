@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/Matroska-Org/libmatroska/archive/refs/tags/release-1.6.3.tar.gz
-sha:0c8c875ae26ac69a722f7fd0f4a4fecb4fdff681f2a165f09c06a40cbf1d0de6
+https://github.com/Matroska-Org/libmatroska/archive/refs/tags/release-1.7.0.tar.gz
+sha:47f6ec7fbb32af8b2f8b640c49faac755fd376d732b3fdb68ad802fe5420ee88
 {% endblock %}
 
 {% block lib_deps %}
