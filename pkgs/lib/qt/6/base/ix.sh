@@ -42,6 +42,7 @@ QT_FEATURE_openssl_linked=ON
 {% block install %}
 {{super()}}
 cd ${out}/lib
+sed -e 's|cross_compile|cross_compile_xxx|g' -i cmake/Qt6Core/Qt6CoreTargets.cmake
 sed -e 's|GLIB2::GLIB2|c|' -i cmake/Qt6Gui/Qt6GuiTargets.cmake
 sed -e 's|GLIB2::GLIB2|c|' -i cmake/Qt6Core/Qt6CoreTargets.cmake
 llvm-ar q libqtregister.a $(find -type f -name '*.o')

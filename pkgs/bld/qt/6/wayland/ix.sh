@@ -1,5 +1,11 @@
 {% extends '//lib/qt/6/wayland/t/ix.sh' %}
 
+{% block cmake_flags %}
+{{super()}}
+QT_FEATURE_wayland_client=OFF
+QT_FEATURE_wayland_server=OFF
+{% endblock %}
+
 {% block postinstall %}
 cd ${out}
 mv lib old
