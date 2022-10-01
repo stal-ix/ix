@@ -1,4 +1,4 @@
-{% extends '//lib/vte/ix.sh' %}
+{% extends '//lib/vte/4/ix.sh' %}
 
 {% block bld_libs %}
 lib/gtk/deps
