@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/neovim/neovim/archive/refs/tags/v0.7.2.tar.gz
-sha:ccab8ca02a0c292de9ea14b39f84f90b635a69282de38a6b4ccc8565bc65d096
+https://github.com/neovim/neovim/archive/refs/tags/v0.8.0.tar.gz
+sha:505e3dfb71e2f73495c737c034a416911c260c0ba9fd2092c6be296655be4d18
 {% endblock %}
 
 {% block bld_libs %}
@@ -38,10 +38,6 @@ exec "${L}" "\$@"
 EOF
 
 chmod +x luajit
-{% endblock %}
-
-{% block patch %}
-sed -e 's|val->string|val->string.str|' -i src/nvim/terminal.c
 {% endblock %}
 
 {% block build_flags %}
