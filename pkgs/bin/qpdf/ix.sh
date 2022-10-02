@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/qpdf/qpdf/archive/refs/tags/v11.1.0.tar.gz
-sha:c6cd5a09806a82ea1f75aa467b1b7a1f59694472b4c4d9d732ba3b7fa241d9dc
+https://github.com/qpdf/qpdf/archive/refs/tags/v11.1.1.tar.gz
+sha:785edab622a1bc7e25e1537ad2c325005d48c5c7957f7abedff405deb80fa59a
 {% endblock %}
 
 {% block bld_libs %}
