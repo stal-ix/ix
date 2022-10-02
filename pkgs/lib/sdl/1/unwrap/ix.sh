@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/libsdl-org/sdl12-compat/archive/refs/tags/release-1.2.52.tar.gz
-sha:5bd7942703575554670a8767ae030f7921a0ac3c5e2fd173a537b7c7a8599014
+https://github.com/libsdl-org/sdl12-compat/archive/refs/tags/release-1.2.56.tar.gz
+sha:f62f3e15f95aade366ee6c03f291e8825c4689390a6be681535259a877259c58
 {% endblock %}
 
 {% block lib_deps %}
