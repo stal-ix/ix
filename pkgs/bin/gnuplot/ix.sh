@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://downloads.sourceforge.net/project/gnuplot/gnuplot/5.4.4/gnuplot-5.4.4.tar.gz
-sha:372300b7867f5b3538b25fc5d0ac7734af6e3fe0d202b6db926e4369913f0902
+https://downloads.sourceforge.net/project/gnuplot/gnuplot/5.4.5/gnuplot-5.4.5.tar.gz
+sha:66f679115dd30559e110498fc94d926949d4d370b4999a042e724b8e910ee478
 {% endblock %}
 
 {% block bld_libs %}
