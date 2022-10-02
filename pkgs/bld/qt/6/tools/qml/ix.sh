@@ -1,26 +1,16 @@
-{% extends '//lib/qt/6/declarative/t/ix.sh' %}
+{% extends 't/ix.sh' %}
 
 {% block cmake_flags %}
-{{super()}}
-QT_FEATURE_qml_animation=OFF
-QT_FEATURE_qml_debug=OFF
-QT_FEATURE_qml_delegate_model=OFF
-QT_FEATURE_qml_devtools=OFF
-QT_FEATURE_qml_itemmodel=OFF
-QT_FEATURE_qml_jit=OFF
-QT_FEATURE_qml_list_model=OFF
-QT_FEATURE_qml_locale=OFF
-QT_FEATURE_qml_network=OFF
-QT_FEATURE_qml_object_model=OFF
-QT_FEATURE_qml_profiler=OFF
-QT_FEATURE_qml_table_model=OFF
-QT_FEATURE_qml_worker_script=ON
-QT_FEATURE_qml_xml_http_request=OFF
-QT_FEATURE_qml_xmllistmodel=OFF
+QT_FORCE_FIND_TOOLS=ON
+QT_FORCE_BUILD_TOOLS=ON
+QT_WILL_BUILD_TOOLS=ON
+QT_BUILD_TOOLS_WHEN_CROSSCOMPILING=ON
+QT_FEATURE_cross_compile=OFF
 {% endblock %}
 
-{% block env %}
-export Qt6QmlTools_DIR=${out}/lib/cmake/Qt6QmlTools
+{% block bld_tool %}
+bld/qt/6/tools/qml/2
+{{super()}}
 {% endblock %}
 
 {% block postinstall %}
