@@ -1,7 +1,7 @@
 {% extends '//die/c/make.sh' %}
 
 {% block fetch %}
-{% include '//bin/kernel/18/t/ver.sh' %}
+{% include '//bin/kernel/latest/t/ver.sh' %}
 {% endblock %}
 
 {% block bld_libs %}
@@ -57,6 +57,4 @@ wrap_cc
 find . -type f | while read l; do
     sed -e 's|/tmp/|/var/tmp/|g' -i ${l}
 done
-
-sed -e 's|(fprintf_ftype) fprintf|(fprintf_ftype) fprintf, NULL|' -i util/annotate.c
 {% endblock %}
