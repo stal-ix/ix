@@ -1,6 +1,6 @@
 {% extends '//bin/kernel/18/t/ix.sh' %}
 
-{% block kernel_version %}5-19-10{% endblock %}
+{% block kernel_version %}5-19-12{% endblock %}
 
 {% block fetch %}
 {% include 'ver.sh' %}
