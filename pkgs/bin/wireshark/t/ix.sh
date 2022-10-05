@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://gitlab.com/wireshark/wireshark/-/archive/v3.7.1/wireshark-v3.7.1.tar.bz2
-sha:5972314984bbd7852e4789a975dfb6f4cd379900eabaf2ad56d70de0c9f6c959
+https://gitlab.com/wireshark/wireshark/-/archive/v4.0.0/wireshark-v4.0.0.tar.bz2
+sha:e73c0ca842535f217b3afc98d7427816118b559620d9ac8a9054de2ce120e288
 {% endblock %}
 
 {% block bld_libs %}
@@ -18,10 +18,11 @@ lib/sbc
 lib/ssh
 lib/zstd
 lib/pcap
-lib/xml/2
 lib/opus
 lib/glib
 lib/intl
+lib/pcre
+lib/xml/2
 lib/snappy
 lib/pcre/2
 lib/gcrypt
