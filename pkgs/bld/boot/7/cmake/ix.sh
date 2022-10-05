@@ -1,4 +1,9 @@
-{% extends '//bin/cmake/ix.sh' %}
+{% extends '//bin/cmake/t/ix.sh' %}
+
+{% block fetch %}
+https://github.com/Kitware/CMake/archive/refs/tags/v3.24.1.tar.gz
+sha:fe7fd2eb0ecee1c0ad829bca77ac7b516fdb7a982e862fc47ef8df54e714dbc3
+{% endblock %}
 
 {% block bld_libs %}
 {% if darwin %}
