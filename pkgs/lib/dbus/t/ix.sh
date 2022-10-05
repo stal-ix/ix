@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://dbus.freedesktop.org/releases/dbus/dbus-1.14.2.tar.xz
-sha:07351839a36b3c833b3afe405c4420e7ee367f2ecf57c7ac3633e53110d799fa
+https://dbus.freedesktop.org/releases/dbus/dbus-1.14.4.tar.xz
+sha:7c0f9b8e5ec0ff2479383e62c0084a3a29af99edf1514e9f659b81b30d4e353e
 {% endblock %}
 
 {% block lib_deps %}
