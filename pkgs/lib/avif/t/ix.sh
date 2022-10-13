@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/AOMediaCodec/libavif/archive/refs/tags/v0.10.0.tar.gz
-sha:d289e5029cb3853630ca85716b25b5fb9cdec51f8bd537b05f43b3325b480ab0
+https://github.com/AOMediaCodec/libavif/archive/refs/tags/v0.10.1.tar.gz
+sha:66e82854ceb84a3e542bc140a343bc90e56c68f3ecb4fff63e636c136ed9a05e
 {% endblock %}
 
 {% block lib_deps %}
