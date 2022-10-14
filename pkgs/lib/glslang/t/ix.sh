@@ -1,8 +1,6 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-#https://github.com/KhronosGroup/glslang/archive/refs/tags/sdk-1.3.211.0.tar.gz
-#sha:4335eec84b87d64130e860dad5d6dc1f722277d4e0ff5027153e2743628cb221
 https://github.com/KhronosGroup/glslang/archive/refs/tags/sdk-1.3.224.1.tar.gz
 sha:42688248855581cd6a338a483a9068a27a9a3502cfd0256afc98b836722504cc
 {% endblock %}
