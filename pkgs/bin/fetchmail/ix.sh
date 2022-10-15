@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://downloads.sourceforge.net/project/fetchmail/branch_6.4/fetchmail-6.4.33.tar.xz
-sha:82954ebd26c77906463ce20adca45cbcf8068957441e17941bd3052a5c15432e
+https://downloads.sourceforge.net/project/fetchmail/branch_6.4/fetchmail-6.4.34.tar.xz
+sha:c3bdded1b5ce236960bd1ceeee3f3257220ed99c3eec84a5d76bb5618e3258d4
 {% endblock %}
 
 {% block bld_libs %}
