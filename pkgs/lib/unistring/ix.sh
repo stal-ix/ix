@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://ftp.gnu.org/gnu/libunistring/libunistring-1.0.tar.xz
-md5:88752c7859212f9c7a0f6cbf7a273535
+https://ftp.gnu.org/gnu/libunistring/libunistring-1.1.tar.xz
+sha:827c1eb9cb6e7c738b171745dac0888aa58c5924df2e59239318383de0729b98
 {% endblock %}
 
 {% block lib_deps %}
@@ -12,10 +12,6 @@ lib/iconv
 
 {% block autoreconf %}
 sh autogen.sh --skip-gnulib
-{% endblock %}
-
-{% block make_verbose_1 %}
-V=1
 {% endblock %}
 
 {% block c_rename_symbol %}
