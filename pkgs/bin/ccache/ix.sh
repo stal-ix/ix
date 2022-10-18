@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/ccache/ccache/releases/download/v4.6.3/ccache-4.6.3.tar.xz
-sha:1e3a251bb112632553b8255a78661fe526c3a16598496d51128c32b218fd8b22
+https://github.com/ccache/ccache/releases/download/v4.7/ccache-4.7.tar.xz
+sha:d9283bbe22085268f52d309b91adb81a77a7abe10867eb6852057910ffac736a
 {% endblock %}
 
 {% block bld_libs %}
