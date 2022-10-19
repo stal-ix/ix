@@ -1,8 +1,8 @@
 {% extends '//die/c/make.sh' %}
 
 {% block fetch %}
-https://github.com/lsof-org/lsof/archive/refs/tags/4.96.3-freebsd.tar.gz
-sha:bcb673c547d234da327a8ee0d1ef59d3b7eac12e0c066242ec13cb706485560d
+https://github.com/lsof-org/lsof/archive/refs/tags/4.96.4.tar.gz
+sha:b5a052cac8d6b2726bbb1de2b98c6d9204c7619263fb63e9b6b1bd6bbb37bf14
 {% endblock %}
 
 {% block bld_libs %}
