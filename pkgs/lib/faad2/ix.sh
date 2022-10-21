@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://github.com/knik0/faad2/archive/refs/tags/2_10_0.tar.gz
-sha:0c6d9636c96f95c7d736f097d418829ced8ec6dbd899cc6cc82b728480a84bfb
+https://github.com/knik0/faad2/archive/refs/tags/2.10.1.tar.gz
+sha:4c16c71295ca0cbf7c3dfe98eb11d8fa8d0ac3042e41604cfd6cc11a408cf264
 {% endblock %}
 
 {% block lib_deps %}
