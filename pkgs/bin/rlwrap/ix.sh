@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://github.com/hanslub42/rlwrap/archive/refs/tags/v0.45.2.tar.gz
-sha:7197559f193918cc8782421b5b1313abbde5e3b965a5f91f9ee25aee9b172ec5
+https://github.com/hanslub42/rlwrap/archive/refs/tags/v0.46.tar.gz
+sha:4bc53e96b49405e4a8ca579465bc1129adc719a96840b71b3ae99ec88e4d8c29
 {% endblock %}
 
 {% block bld_libs %}
