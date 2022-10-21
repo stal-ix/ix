@@ -3,6 +3,8 @@
 {% block fetch %}
 https://www.freedesktop.org/software/fontconfig/release/fontconfig-2.13.94.tar.xz
 sha:a5f052cb73fd479ffb7b697980510903b563bbb55b8f7a2b001fcfb94026003c
+#https://www.freedesktop.org/software/fontconfig/release/fontconfig-2.14.1.tar.xz
+#sha:298e883f6e11d2c5e6d53c8a8394de58d563902cfab934e6be12fb5a5f361ef0
 {% endblock %}
 
 {% block bld_tool %}
