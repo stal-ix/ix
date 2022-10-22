@@ -1,8 +1,8 @@
 {% extends '//die/c/make.sh' %}
 
 {% block fetch %}
-https://github.com/gavinhoward/bc/archive/refs/tags/6.0.3.tar.gz
-sha:3b58185dfe5ea896efff7baeb12a7563d6b8b24b1dd60279834145031d420885
+https://github.com/gavinhoward/bc/archive/refs/tags/6.0.4.tar.gz
+sha:6bbc6651fb68d0bdcd4148cd56f6e61eb64c5064e39c0fcf2abca6af88c10b0c
 {% endblock %}
 
 {% block bld_libs %}
