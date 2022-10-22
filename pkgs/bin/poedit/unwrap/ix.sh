@@ -1,10 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
-{# compile error with current wx  #}
-
 {% block fetch %}
-https://github.com/vslavik/poedit/releases/download/v3.1.1-oss/poedit-3.1.1.tar.gz
-sha:8b918a907773cda3fb450e247f3fabec2e221165eab933f1c1269ffc3863a204
+https://github.com/vslavik/poedit/releases/download/v3.2-oss/poedit-3.2.tar.gz
+sha:ee73c38bbf5e0b7d43ab2d5e2d0ba65c1d8c45688b2d65a8a401ba4d01908ec6
 {% endblock %}
 
 {% block bld_libs %}
