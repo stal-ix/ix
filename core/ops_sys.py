@@ -76,7 +76,15 @@ def gen_cksum(fr, to, md5):
 
 def gen_fetch(url, path, md5):
     yield from gen_dir(os.path.dirname(path))
-    yield [f'{B}/curl', '-k', '-L', '-o', path, url]
+
+    yield [
+        f'{B}/curl',
+        '--retry', '100',
+        '--retry-all-errors',
+        '--retry-delay', '2',
+        '-k', '-L', '-o', path, url,
+    ]
+
     yield from gen_cksum(path, '', md5)
 
 
