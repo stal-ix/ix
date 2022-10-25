@@ -2,9 +2,11 @@
 
 {% block fetch %}
 https://downloads.sourceforge.net/project/infozip/UnZip%206.x%20%28latest%29/UnZip%206.0/unzip60.tar.gz
-md5:62b490407489521db863b523a7f86375
-https://deb.debian.org/debian/pool/main/u/unzip/unzip_6.0-26.debian.tar.xz
-md5:e2bf7537e1ca821f6059ee84e7ae76a5
+sha:036d96991646d0449ed0aa952e4fbe21b476ce994abc276e49d30e686708bd37
+
+#https://deb.debian.org/debian/pool/main/u/unzip/unzip_6.0-27.debian.tar.xz
+https://github.com/pg83/store/raw/main/unzip_6.0-27.debian.tar.xz
+sha:67bde7c71d52afd61aa936d4415c8d12fd90ca26e9637a3cd67cae9b71298c12
 {% endblock %}
 
 {% block unpack %}

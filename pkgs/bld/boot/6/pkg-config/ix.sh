@@ -16,6 +16,11 @@ bld/boot/5/env/std
 --with-internal-glib
 {% endblock %}
 
+{% block setup %}
+{{super()}}
+export CFLAGS="-Wno-int-conversion ${CFLAGS}"
+{% endblock %}
+
 {% block configure %}
 {{super()}}
 (cd glib && sh configure ${COFLAGS} --prefix=${out} --with-libiconv=gnu --srcdir=.)
