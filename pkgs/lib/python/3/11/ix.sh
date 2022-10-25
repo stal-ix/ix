@@ -1,8 +1,8 @@
 {% extends '//lib/python/3/10/ix.sh' %}
 
 {% block fetch %}
-https://www.python.org/ftp/python/3.11.0/Python-3.11.0b2.tar.xz
-sha:e574dee6694fb255dff8036f3c0048251e5cb29a167766030b7ce3160fb4c47d
+https://github.com/python/cpython/archive/refs/tags/v3.11.0.tar.gz
+sha:c580bc1dd1f0f5142cdceb9d47fb8a50934b36447f636a37507b8f1e466b4bf3
 {% endblock %}
 
 {% block lib_deps %}
@@ -68,15 +68,11 @@ cat Modules/Setup.stdlib.in \
 
 cat _ - << EOF > Modules/Setup.local
 _decimal _decimal/_decimal.c
-
 {% if darwin %}
 _scproxy _scproxy.c
 {% endif %}
-
 pyexpat pyexpat.c
 EOF
-
-sed -e 's|_sqlite/util.c|_sqlite/util.c _sqlite/blob.c|' -i Modules/Setup.local
 {% endblock %}
 
 {% block test_bin %}
