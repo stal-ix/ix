@@ -1,10 +1,8 @@
 {% extends '//die/c/wafbase.sh' %}
 
 {% block fetch %}
-#https://download.samba.org/pub/samba/stable/samba-4.16.3.tar.gz
-#sha:7a6565d7c0a98eac7a5a283fa94d9266dd39ea62f262ccdc5a634a580d549c58
-https://download.samba.org/pub/samba/stable/samba-4.17.1.tar.gz
-sha:1b939d03f8ca57194c413ed863014a3850c9ce9f9e31c2a7df706806fba77c01
+https://download.samba.org/pub/samba/stable/samba-4.17.2.tar.gz
+sha:e55ddf4d5178f8c84316abf53c5edd7b35399e3b7d86bcb81b75261c827bb3b8
 {% endblock %}
 
 {% block bld_libs %}
@@ -29,6 +27,10 @@ lib/ucontext/posix
 sed -e 's|/tmp/|/var/tmp/|g' -i lib/replace/wscript
 {% endblock %}
 
+{% block setup %}
+export PYTHONHASHSEED=1
+{% endblock %}
+
 {# need strange perl module #}
 
 {% block bld_tool %}
@@ -40,4 +42,5 @@ bld/bison
 {% block waf_flags %}
 --disable-python
 --without-ad-dc
+--disable-fault-handling
 {% endblock %}
