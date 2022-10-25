@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/ispc/ispc/archive/refs/tags/v1.18.0.tar.gz
-sha:81f2cc23b555c815faf53429e9eee37d1f2f16873ae7074e382ede94721ee042
+https://github.com/ispc/ispc/archive/refs/tags/v1.18.1.tar.gz
+sha:5b004c121e7a39c8654bb61930a240e4bd3e432a80d851c6281fae49f9aca7b7
 {% endblock %}
 
 {% block bld_libs %}
