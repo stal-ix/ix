@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://ftp.gnu.org/gnu/inetutils/inetutils-2.3.tar.xz
-sha:0b01bb08e29623c4e3b940f233c961451d9af8c5066301add76a52a95d51772c
+https://ftp.gnu.org/gnu/inetutils/inetutils-2.4.tar.xz
+sha:1789d6b1b1a57dfe2a7ab7b533ee9f5dfd9cbf5b59bb1bb3c2612ed08d0f68b2
 {% endblock %}
 
 {% block bld_libs %}
