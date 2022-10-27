@@ -98,5 +98,14 @@
     "urllib3/ix.sh": {
         "md5": "9c0e97a18e35e3acaa8698e68e12bca1",
         "url": "https://files.pythonhosted.org/packages/af/f4/524415c0744552cce7d8bf3669af78e8a069514405ea4fcbd0cc44733744/urllib3-1.26.7-py2.py3-none-any.whl"
+    },
+    "glad/ix.sh": {
+        "md5": "56877fb896ad878a45173a595b1a9e03",
+        "url": "https://files.pythonhosted.org/packages/3b/07/1b313fc6ccdd38447f162f5a77700f070342ff71c4146dc05404bd6e053d/glad-0.1.36-py3-none-any.whl"
+    },
+    "glad2/ix.sh": {
+        "run": ["pip/jinja2", "pip/setuptools"],
+        "md5": "2e231e4ae41b46a8f18b7d6c63097b6c",
+        "url": "https://files.pythonhosted.org/packages/ca/4c/6af2f1bbfc6634ba7542e89077e79223569b84abd94106ba38605a7421e1/glad2-2.0.1-py3-none-any.whl"
     }
 }

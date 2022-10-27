@@ -7,12 +7,12 @@ sha:594c67807fb16238b30c44bdf74f36c02cdf22d1c8cda91ef8a0ed8dabf5620a
 
 {% block build %}
 cd ${out}
-mkdir module
-cd module
+mkdir lib
+cd lib
 extract0 ${src}/M*
 ln -s Ma*/src/markupsafe ./
 {% endblock %}
 
 {% block env %}
-export PYTHONPATH="${out}/module:\${PYTHONPATH}"
+export PYTHONPATH="${out}/lib:\${PYTHONPATH}"
 {% endblock %}

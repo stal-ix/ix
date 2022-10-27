@@ -20,6 +20,10 @@ bld/python/ix.sh
 {run}
 {% endblock %}
 
+{% block lib_deps %}
+{run}
+{% endblock %}
+
 {% block unpack %}
 mkdir -p ${out}/lib
 cd ${out}/lib
