@@ -1,7 +1,5 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
-bin/shepherd
-bin/webkitproc
-bin/epiphany/stock(gtk_ver=4)
+bin/epiphany/{{gtk_ver}}(allocator=tcmalloc)
 {% endblock %}

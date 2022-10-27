@@ -1,12 +1,5 @@
 {% extends '//die/c/gnome.sh' %}
 
-{% block fetch %}
-#https://gitlab.gnome.org/GNOME/epiphany/-/archive/43.0/epiphany-43.0.tar.bz2
-#sha:867117c09a532c06e2db0f283c153f310bfec0e28c4ef06955dfa1f3ec6167c7
-https://github.com/GNOME/epiphany/archive/2340606e6c2ac65e9b73e57e9a277b86a1f6bc1d.zip
-sha:683657e9ee2bdaa115eaf7b23de26444d1e6809c55a831813ffdee91439e0846
-{% endblock %}
-
 {% block bld_libs %}
 lib/c
 lib/gtk
@@ -15,13 +8,10 @@ lib/gcr
 lib/glib
 lib/xml/2
 lib/cairo
-#lib/handy
 lib/portal
 lib/soup/3
 lib/nettle
 lib/secret
-#lib/dazzle
-lib/adwaita
 lib/archive
 lib/gtk/reg
 lib/sqlite/3
