@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://github.com/mobile-shell/mosh/archive/refs/tags/mosh-1.3.2.tar.gz
-md5:04f48ea1b98ba1799593ca9c5b3cc90f
+https://github.com/mobile-shell/mosh/archive/refs/tags/mosh-1.4.0.tar.gz
+sha:ae581fbddf038730af9eee4d319a483288395a0722d0c94c7efb7fdbdbb0dbac
 {% endblock %}
 
 {% block bld_libs %}
@@ -15,8 +15,4 @@ lib/protobuf
 
 {% block bld_tool %}
 bin/protoc
-{% endblock %}
-
-{% block patch %}
-sed -e 's| bind(| ::bind(|' -i src/network/network.cc
 {% endblock %}
