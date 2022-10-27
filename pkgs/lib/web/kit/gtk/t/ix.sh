@@ -61,9 +61,6 @@ sed -e 's|static_cast<EGLNativeWindowType>|(EGLNativeWindowType)|' \
 sed -e 's|GRefPtr.h>|GRefPtr.h>\n#include <wtf/glib/GUniquePtr.h>|' \
     -i Source/WebKit/UIProcess/gtk/ClipboardGtk4.cpp
 
-sed -e 's|return false|return true|' \
-    -i Source/WebKit/WebProcess/WebPage/libwpe/AcceleratedSurfaceLibWPE.h
-
 base64 -d << EOF > Source/WebKit/Platform/IPC/ArgumentCoders.h
 {% include 'ArgumentCoders.h/base64' %}
 EOF
