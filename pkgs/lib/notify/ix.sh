@@ -8,10 +8,11 @@ sha:d033e6d4d6ccbf46a436c31628a4b661b36dca1f5d4174fe0173e274f4e62557
 {% block lib_deps %}
 lib/c
 lib/glib
-lib/gtk/3
+lib/gdk/pixbuf
 {% endblock %}
 
 {% block meson_flags %}
+tests=false
 introspection=disabled
 man=false
 gtk_doc=false

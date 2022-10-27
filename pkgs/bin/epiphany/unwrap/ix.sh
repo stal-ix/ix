@@ -11,6 +11,7 @@ sha:683657e9ee2bdaa115eaf7b23de26444d1e6809c55a831813ffdee91439e0846
 lib/c
 lib/gtk
 lib/gmp
+lib/gcr
 lib/glib
 lib/xml/2
 lib/cairo
@@ -28,7 +29,6 @@ lib/gtk/deps
 lib/json/glib
 lib/gdk/pixbuf
 lib/web/kit/gtk
-lib/gcr/{{gtk_ver}}
 lib/glib/networking
 lib/gsettings/desktop/schemas
 lib/{{allocator}}/trim(delay=5,bytes=10000000)
