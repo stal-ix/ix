@@ -50,6 +50,10 @@ for a, b, c in os.walk(d):
             print(os.path.join(a, x)[len(d) + 1:-3].replace('/', '.'))
 EOF
 
+find . -type f -name METADATA | while read l; do
+    sed -e 's|.*Requires-Dist.*||' -i "${l}"
+done
+
 cat exports
 {% endblock %}
 
