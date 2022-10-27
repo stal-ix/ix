@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://github.com/protocolbuffers/protobuf/archive/refs/tags/v21.8.tar.gz
-sha:032ef6fbb5b2ce2147e913b053003c7881fe53861571079b4351c006d6a822c1
+https://github.com/protocolbuffers/protobuf/archive/refs/tags/v21.9.tar.gz
+sha:0aa7df8289c957a4c54cbe694fbabe99b180e64ca0f8fdb5e2f76dcf56ff2422
 {% endblock %}
 
 {% block lib_deps %}
