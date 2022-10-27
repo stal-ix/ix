@@ -13,7 +13,7 @@ md5:{md5}
 {% endblock %}
 
 {% block bld_tool %}
-bld/python/ix.sh
+bld/python
 {% endblock %}
 
 {% block run_deps %}
