@@ -12,8 +12,8 @@ lib/zimg
 lib/ffmpeg
 lib/openal
 lib/archive
-lib/placebo
 lib/uchardet
+lib/placebo/4
 {% endblock %}
 
 {% block bld_tool %}

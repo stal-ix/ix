@@ -16,9 +16,9 @@ lib/openal
 lib/archive
 lib/wayland
 lib/mesa/gl
-lib/placebo
 lib/mesa/egl
 lib/uchardet
+lib/placebo/4
 lib/xkbcommon
 lib/drivers/3d
 lib/vulkan/headers
