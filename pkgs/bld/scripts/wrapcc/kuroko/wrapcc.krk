@@ -36,9 +36,28 @@ def flt_objs():
         elif x.endswith('.a'):
             yield x
 
+def iter_dirs(path):
+    let cur = ''
+
+    for ch in path:
+        if ch == '/':
+            if cur:
+                yield cur
+                cur = ''
+            else:
+                cur += ch
+
+def make_dirs_for(path):
+    for d in iter_dirs(path):
+        try:
+            os.mkdir(d)
+        except OSError as e:
+            if 'File exists' not in str(e):
+                raise e
+
 def link1(x, objs):
     if '/' in x:
-        os.mkdir(os.path.dirname(x))
+        make_dirs_for(x)
 
     if objs:
         retry(['llvm-ar', 'qL', x] + objs)
