@@ -11,6 +11,7 @@ lib/atk
 lib/glib
 lib/dbus
 lib/gtk/3
+lib/json/glib
 {% endblock %}
 
 {% block bld_tool %}

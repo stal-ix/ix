@@ -1,8 +1,8 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://github.com/Alexays/Waybar/archive/refs/tags/0.9.13.tar.gz
-sha:9e6553274ce3013d2be9912f975287efe4dfd38de4e335db43a73aff2a3b0a34
+https://github.com/Alexays/Waybar/archive/refs/tags/0.9.14.tar.gz
+sha:45fdd17240b9d61b2f19e12ba9e9444418f0c9b511440cbc3624652a309a0ccf
 {% endblock %}
 
 {% block bld_libs %}
@@ -26,11 +26,11 @@ lib/gtk/layer/shell
 
 {% block bld_tool %}
 bin/scdoc
-bld/glib/codegen
 bld/wayland
+bld/glib/codegen
 {% endblock %}
 
-{% block patch %}
+{% block patch1 %}
 sed -e 's|.*spdlog.*asString.*what.*||' -i src/bar.cpp
 {% endblock %}
 
