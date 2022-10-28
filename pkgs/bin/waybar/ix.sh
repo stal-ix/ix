@@ -30,10 +30,6 @@ bld/wayland
 bld/glib/codegen
 {% endblock %}
 
-{% block patch1 %}
-sed -e 's|.*spdlog.*asString.*what.*||' -i src/bar.cpp
-{% endblock %}
-
 {% block meson_flags %}
 dbusmenu-gtk=enabled
 gtk-layer-shell=enabled
