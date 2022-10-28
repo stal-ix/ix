@@ -1,0 +1,74 @@
+#!/usr/bin/env kuroko
+
+import os
+import fileio
+import kuroko as sys
+
+def it_args():
+    for x in sys.argv[1:]:
+        if x:
+            if x[0] == '@':
+                yield from fileio.open(x[1:], 'r').read().split()
+            elif x.startswith('-o/'):
+                yield '-o'
+                yield x[2:]
+            else:
+                yield x
+
+def flt_args():
+    for x in it_args():
+        if '-D-pthread' in x:
+            continue
+
+        yield x
+
+let args = list(flt_args())
+
+if '-r' in args:
+    args = ['ld.lld'] + args[1:]
+
+def flt_objs():
+    for x in args:
+        if x.endswith('.o'):
+            yield x
+        elif '/store/' in x:
+            pass
+        elif x.endswith('.a'):
+            yield x
+
+def link1(x, objs):
+    if '/' in x:
+        os.mkdir(os.path.dirname(x))
+
+    if objs:
+        retry(['llvm-ar', 'qL', x] + objs)
+    else:
+        with fileio.open(x, 'w') as f:
+            pass
+
+def link(objs):
+    for x in args:
+        if '-Wl' in x:
+            continue
+
+        if '.so' in x:
+            return link1(x, objs)
+
+def retry(args):
+    os.execvp(args[0], args)
+
+def calc_program(args):
+    if '-P' in args or '-E' in args:
+        return 'clang-cpp'
+
+    return args[0]
+
+def main():
+    if '-c' in args:
+        pass
+    elif '-shared' in str(args) or '--soname' in str(args):
+        return link(list(flt_objs()))
+
+    retry([calc_program(args)] + args[1:])
+
+main()
