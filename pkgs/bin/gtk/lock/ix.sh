@@ -1,8 +1,8 @@
 {% extends '//die/c/make.sh' %}
 
 {% block fetch %}
-https://github.com/jovanlanik/gtklock/archive/refs/tags/v1.4.0.tar.gz
-sha:4aebf519c187eaf9dbfa1e4ecef69a806324ed287553a7a17ee8bbe7d555de29
+https://github.com/jovanlanik/gtklock/archive/refs/tags/v2.0.1.tar.gz
+sha:d1802a7fcb8cace0408ab34627841d7ea28d630f934c8b7884536f9dfa76910e
 {% endblock %}
 
 {% block bld_libs %}
@@ -16,7 +16,9 @@ lib/gtk/layer/shell
 {% block bld_tool %}
 bin/scdoc
 bld/wayland
+bin/xmllint
 bld/pkg/config
+bld/glib/codegen
 {% endblock %}
 
 {% block install %}
