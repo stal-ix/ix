@@ -30,4 +30,5 @@ bld/compiler
 bld/mold
 bld/libtool
 bld/cctools
+bld/kuroko
 {% endblock %}
