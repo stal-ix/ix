@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://github.com/OpenVPN/openvpn/archive/refs/tags/v2.5.7.tar.gz
-sha:a7db041f485cf165ff566da748ea7ec158fb4c53bbd9f706071434d6e7098a40
+https://github.com/OpenVPN/openvpn/archive/refs/tags/v2.5.8.tar.gz
+sha:c216a66c967181b38002c1fd06fb5cad4a8c21865af76cb22b3bf4786070d315
 {% endblock %}
 
 {% block bld_libs %}
