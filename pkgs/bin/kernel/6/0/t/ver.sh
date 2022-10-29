@@ -1,2 +1,2 @@
-https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.0.5.tar.xz
-sha:61332ef22b53c50c10faabfb965896a7d1ad4f3381f0f89643c820f28a60418e
+https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.0.6.tar.xz
+sha:864b05af2d869ba73d61a9c5959e4531a141ab2bd7b217483671f625f9747faa
