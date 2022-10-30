@@ -1,5 +1,5 @@
 #include <stdlib.h>
-
+#include <frg/eternal.hpp>
 #include <mlibc/allocator.hpp>
 
 void *MemoryAllocator::allocate(size_t size) {
@@ -18,8 +18,8 @@ void* MemoryAllocator::reallocate(void* ptr, size_t size) {
     return realloc(ptr, size);
 }
 
-static MemoryAllocator instance;
-
 MemoryAllocator& getAllocator() {
-    return instance;
+    static frg::eternal<MemoryAllocator> singleton{};
+
+    return singleton.get();
 }
