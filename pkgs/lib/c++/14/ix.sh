@@ -11,6 +11,7 @@ lib/c/naked
 {% block bld_libs %}
 {% if linux %}
 lib/linux
+lib/shim/alloc
 {% endif %}
 {% endblock %}
 

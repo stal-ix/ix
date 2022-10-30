@@ -27,13 +27,15 @@ mv _ options/ansi/include/limits.h
 
 {% block install %}
 {{super()}}
-cd ${out}/lib
-llvm-ar q libcrt.a *.o
-rm *.o
-cat - ${out}/include/sys/mman.h << EOF > _
+cd ${out}
+cat - include/sys/mman.h << EOF > _
 #include <mlibc-config.h>
 EOF
-mv _ ${out}/include/sys/mman.h
+mv _ include/sys/mman.h
+cd lib
+ar q libcrt.a crt1.o crti.o crtn.o
+ranlib libcrt.a
+rm *.o
 {% endblock %}
 
 {% block env %}

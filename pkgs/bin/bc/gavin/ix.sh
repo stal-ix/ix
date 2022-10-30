@@ -14,5 +14,5 @@ lib/c
 {% endblock %}
 
 {% block configure %}
-sh ./configure.sh --prefix=${out}
+sh ./configure.sh --disable-strip --prefix=${out}
 {% endblock %}

@@ -9,12 +9,6 @@ realloc
 reallocarray
 posix_memalign
 aligned_alloc
-mremap
-{% endblock %}
-
-{% block bld_tool %}
-{{super()}}
-bld/python
 {% endblock %}
 
 {% block patch %}
