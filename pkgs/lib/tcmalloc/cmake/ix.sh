@@ -10,9 +10,8 @@ lib/c++
 {% endblock %}
 
 {% block bld_libs %}
-lib/mimalloc/2
 # for LTO configure
-lib/compiler_rt/builtins/hack/ish
+lib/tcmalloc/cmake/shim
 {% endblock %}
 
 {% block patch %}

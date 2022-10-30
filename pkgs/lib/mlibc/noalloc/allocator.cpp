@@ -1,12 +1,17 @@
+#include <mlibc/allocator.hpp>
+
+#undef free
+#undef malloc
+#undef realloc
+
 #include <stdlib.h>
 #include <frg/eternal.hpp>
-#include <mlibc/allocator.hpp>
 
 void *MemoryAllocator::allocate(size_t size) {
     return malloc(size);
 }
 
-void MemoryAllocator::free(void* ptr) {
+void MemoryAllocator::lib_mlibc_noalloc_free(void* ptr) {
     ::free(ptr);
 }
 
