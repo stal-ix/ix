@@ -30,6 +30,10 @@ mv _ options/ansi/include/limits.h
 cd ${out}/lib
 llvm-ar q libcrt.a *.o
 rm *.o
+cat - ${out}/include/sys/mman.h << EOF > _
+#include <mlibc-config.h>
+EOF
+mv _ ${out}/include/sys/mman.h
 {% endblock %}
 
 {% block env %}

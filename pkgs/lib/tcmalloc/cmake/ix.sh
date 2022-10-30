@@ -10,11 +10,14 @@ lib/c++
 {% endblock %}
 
 {% block bld_libs %}
-# for LTO configure
-lib/tcmalloc/cmake/shim
+lib/c/naked
+lib/shim/alloc
 {% endblock %}
 
 {% block patch %}
+# disable mmap hooks
+sed -e 's|defined(__linux)|0|' -i src/malloc_hook.cc
+
 cat << EOF >> src/malloc_extension.cc
 static inline bool size_multiply_overflow(size_t size, size_t need) noexcept {
     return need != 0 && size > (SIZE_MAX / need);
