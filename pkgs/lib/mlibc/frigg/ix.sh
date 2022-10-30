@@ -10,5 +10,5 @@ build_tests=disabled
 {% endblock %}
 
 {% block bld_libs %}
-lib/c
+lib/musl/pure
 {% endblock %}

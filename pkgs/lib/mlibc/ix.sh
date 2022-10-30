@@ -13,7 +13,23 @@ lib/mlibc/cxxshim
 {% block patch %}
 sed -e 's|.*include_dir.*ccdir.*||' -i meson.build
 cat - options/ansi/include/limits.h << EOF > _
+#pragma once
 #include_next <limits.h>
+#undef CHAR_BIT
+#undef LLONG_MIN
 EOF
 mv _ options/ansi/include/limits.h
+{% endblock %}
+
+{% block install %}
+{{super()}}
+cd ${out}/lib
+llvm-ar q libcrt.a *.o
+rm *.o
+{% endblock %}
+
+{% block env %}
+export CMFLAGS="-DLIBCXX_HAS_MUSL_LIBC=yes \${CMFLAGS}"
+export CPPFLAGS="-fno-pic -fno-pie -isystem ${out}/include \${CPPFLAGS}"
+export LDFLAGS="-static \${LDFLAGS}"
 {% endblock %}
