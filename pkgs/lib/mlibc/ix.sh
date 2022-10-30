@@ -2,4 +2,5 @@
 
 {% block lib_deps %}
 lib/mlibc/noalloc
+lib/mlibc/shim
 {% endblock %}
