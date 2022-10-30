@@ -12,4 +12,8 @@ lib/mlibc/cxxshim
 
 {% block patch %}
 sed -e 's|.*include_dir.*ccdir.*||' -i meson.build
+cat - options/ansi/include/limits.h << EOF > _
+#include_next <limits.h>
+EOF
+mv _ options/ansi/include/limits.h
 {% endblock %}
