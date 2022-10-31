@@ -5,6 +5,7 @@
 lib/linux
 {% endif %}
 lib/c/naked
+lib/shim/alloc
 {% endblock %}
 
 {% block cmake_flags %}

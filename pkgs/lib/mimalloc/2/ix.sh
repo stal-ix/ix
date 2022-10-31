@@ -10,6 +10,7 @@ sha:5af497f360879bf9d07a5146961d275a25f4177fbe21ee6c437db604422acd60
 
 {% block bld_libs %}
 lib/c++/headers
+lib/shim/alloc
 {% endblock %}
 
 {% block cmake_flags %}
