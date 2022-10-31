@@ -1,8 +1,8 @@
 {% extends '//die/c/autohell.sh' %}
 
 {% block fetch %}
-https://ftp.gnu.org/gnu/make/make-4.3.tar.gz
-sha:e05fdde47c5f7ca45cb697e973894ff4f5d79e13b750ed57d7b66d8defc78e19
+https://ftp.gnu.org/gnu/make/make-4.4.tar.gz
+sha:581f4d4e872da74b3941c874215898a7d35802f03732bdccee1d4a7979105d18
 {% endblock %}
 
 {% block bld_libs %}

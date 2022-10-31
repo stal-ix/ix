@@ -1,4 +1,4 @@
-{% extends '//bin/make/ix.sh' %}
+{% extends '//bin/make/old/ix.sh' %}
 
 {% block bld_libs %}
 {% endblock %}
