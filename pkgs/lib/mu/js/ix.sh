@@ -1,8 +1,8 @@
 {% extends '//die/c/make.sh' %}
 
 {% block fetch %}
-https://mujs.com/downloads/mujs-1.2.0.tar.xz
-sha:66976d1e06a352754a2342af73d1aecbb53cc7cdae2b68cda013b7ddcf923233
+https://github.com/ccxvii/mujs/archive/refs/tags/1.3.1.tar.gz
+sha:fc784d71bfa3f2c33f91412a9f22e356cdc4f9d34d9beeba46c34543a40f52b8
 {% endblock %}
 
 {% block lib_deps %}
