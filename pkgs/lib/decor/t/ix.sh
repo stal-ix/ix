@@ -1,8 +1,8 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://gitlab.gnome.org/jadahl/libdecor/-/archive/0.1.0/libdecor-0.1.0.tar.bz2
-sha:261029af49ebb6128e00b14f805fb376f5c93b584fce50c5495ee99af426ac78
+https://gitlab.gnome.org/jadahl/libdecor/-/archive/0.1.1/libdecor-0.1.1.tar.bz2
+sha:69deadfd0c77afc8122f7caa8ecf65fdd9531d2c3da9bea012a6d964f322e1c4
 {% endblock %}
 
 {% block lib_deps %}
