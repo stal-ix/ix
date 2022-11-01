@@ -1,19 +1,17 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/Kitware/CMake/archive/refs/tags/v3.24.2.tar.gz
-sha:f4f0772b0a89f93be6d1153d5640b80cc8d64a3bda95cca1799673bc4d03f3b1
+https://github.com/Kitware/CMake/archive/refs/tags/v3.24.3.tar.gz
+sha:766927ced9a9948b4cb8377821fb8325fec861b15cbe847f9e61d3578872d254
 {% endblock %}
 
 {% block bld_libs %}
 {% if darwin %}
 lib/darwin/framework/CoreFoundation
 {% endif %}
-
 {% if linux %}
 lib/linux
 {% endif %}
-
 lib/z
 lib/c
 lib/uv
