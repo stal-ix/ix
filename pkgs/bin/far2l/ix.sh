@@ -15,7 +15,7 @@ lib/spdlog
 lib/archive
 lib/xerces/c
 lib/uchardet
-lib/execinfo
+lib/execinfo/fake
 {% if linux %}
 lib/linux
 {% endif %}
