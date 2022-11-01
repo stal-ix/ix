@@ -23,7 +23,7 @@ cat << EOF >> src/base/Headers.hpp
 #include <ix.h>
 
 inline string GetTempDirectory() {
-    return  ix_temp_dir();
+    return ix_temp_dir();
 }
 EOF
 {% endblock %}
