@@ -2,7 +2,6 @@
 
 {% block lib_deps %}
 {% if linux %}
-# fp/ need no-omit-frame-pointer
-lib/execinfo/fake
+lib/execinfo/{{execinfo_ver or 'fake'}}
 {% endif %}
 {% endblock %}
