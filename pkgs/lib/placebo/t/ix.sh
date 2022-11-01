@@ -3,8 +3,8 @@
 {% block lib_deps %}
 lib/c
 lib/epoxy
-lib/lcms2
 lib/opengl
+lib/lcms/2
 lib/glslang
 lib/shaderc
 lib/execinfo

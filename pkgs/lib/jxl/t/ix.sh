@@ -9,8 +9,8 @@ sha:3114bba1fabb36f6f4adc2632717209aa6f84077bc4e93b420e0d63fa0455c5e
 lib/c
 lib/c++
 lib/png
-lib/lcms2
 lib/brotli
+lib/lcms/2
 lib/highway
 {% endblock %}
 

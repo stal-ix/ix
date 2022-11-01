@@ -16,8 +16,8 @@ sha:be30160a905d26ddb2d07f52be40a56e6bf118162c447d3ea6f0e6f662b56676
 {% block bld_libs %}
 lib/c
 lib/png
-lib/lcms2
 lib/python
+lib/lcms/2
 lib/harfbuzz
 {% endblock %}
 

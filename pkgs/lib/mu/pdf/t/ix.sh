@@ -10,9 +10,9 @@ lib/c
 lib/z
 lib/jpeg
 lib/curl
-lib/lcms2
 lib/gumbo
 lib/mu/js
+lib/lcms/2
 lib/jbig2dec
 lib/freetype
 lib/harfbuzz

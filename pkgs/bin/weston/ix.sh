@@ -12,9 +12,9 @@ lib/seat
 lib/webp
 lib/jpeg
 lib/pango
-lib/lcms2
 lib/cairo
 lib/input
+lib/lcms/2
 lib/pixman
 lib/opengl
 lib/wayland

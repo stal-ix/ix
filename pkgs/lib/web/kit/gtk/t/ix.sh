@@ -24,12 +24,12 @@ lib/xslt
 lib/tasn1
 lib/cairo
 lib/pango
-lib/lcms2
 lib/epoxy
 lib/woff2
 lib/gcrypt
 lib/secret
 lib/soup/3
+lib/lcms/2
 lib/notify
 lib/wayland
 lib/seccomp

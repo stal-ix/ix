@@ -12,9 +12,9 @@ lib/glib
 lib/jpeg
 lib/tiff
 lib/gtk/3
-lib/lcms2
 lib/cairo
 lib/boost
+lib/lcms/2
 lib/freetype
 lib/jpeg/open
 lib/fontconfig

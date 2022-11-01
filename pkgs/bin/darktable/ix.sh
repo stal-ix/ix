@@ -21,9 +21,9 @@ lib/rsvg
 lib/xml/2
 lib/curl
 lib/jpeg
-lib/lcms2
 lib/gtk/3
 lib/exiv2
+lib/lcms/2
 lib/secret
 lib/openexr
 lib/pugixml

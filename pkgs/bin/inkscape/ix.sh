@@ -15,11 +15,11 @@ lib/dbus
 lib/intl
 lib/jpeg
 lib/xslt
-lib/lcms2
 lib/pango
 lib/cairo
 lib/boost
 lib/visio
+lib/lcms/2
 lib/gspell
 lib/soup/2
 lib/poppler

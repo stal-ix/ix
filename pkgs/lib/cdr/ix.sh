@@ -9,8 +9,8 @@ sha:5666249d613466b9aa1e987ea4109c04365866e9277d80f6cd9663e86b8ecdd4
 lib/c
 lib/c++
 lib/icu
-lib/lcms2
 lib/boost
+lib/lcms/2
 lib/revenge
 {% endblock %}
 

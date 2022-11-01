@@ -4,6 +4,6 @@
 lib/z
 lib/png
 lib/tiff
-lib/lcms2
+lib/lcms/2
 {{super()}}
 {% endblock %}
