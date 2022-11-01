@@ -6,9 +6,7 @@
 
 {% block bld_libs %}
 {{super()}}
-{% if linux %}
 lib/execinfo
-{% endif %}
 {% endblock %}
 
 {% block std_box %}
