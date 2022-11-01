@@ -17,6 +17,8 @@ lib/zstd
 lib/numa
 lib/slang
 lib/linux
+# TODO(pg): fix build
+#lib/unwind
 lib/iberty
 lib/curses
 lib/opcodes
