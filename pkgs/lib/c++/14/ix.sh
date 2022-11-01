@@ -87,11 +87,11 @@ cat libcxx/CMakeLists.txt \
 {% block install %}
 {{super()}}
 cd ${out}
-
 mv include/c++/v1/* include/
-
 # remove broken ranges implementation
 rm include/ranges
+# clash with HP unwind
+mv ${out}/lib/libunwind.a ${out}/lib/libc++unwind.a
 {% endblock %}
 
 {% block test_lib %}

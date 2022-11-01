@@ -13,9 +13,9 @@ lib/boost
 lib/linux
 lib/sodium
 lib/curses
+lib/unwind
 lib/openssl
 lib/protobuf
-lib/execinfo
 lib/shim/atomic
 {% endblock %}
 
