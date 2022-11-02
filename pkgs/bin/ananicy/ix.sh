@@ -1,7 +1,7 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
-bin/ananicy/cpp(execinfo_ver=fake)
+bin/ananicy/cpp
 {% endblock %}
 
 {% block run_data %}
