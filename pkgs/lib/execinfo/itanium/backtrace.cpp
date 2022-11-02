@@ -1,6 +1,4 @@
-#include "execinfo.h"
-
-#include <cxxabi.h>
+#include <stdlib.h>
 
 extern "C" {
     typedef enum {
@@ -42,7 +40,7 @@ namespace {
         return _URC_NO_REASON;
     }
 
-    static inline size_t BackTrace(void** p, size_t len) {
+    static inline size_t backTrace(void** p, size_t len) {
         if (len >= 1) {
             Context bt = {p, 0, len};
 
@@ -56,5 +54,5 @@ namespace {
 }
 
 extern "C" int backtrace(void** p, int len) {
-    return BackTrace(p, len);
+    return backTrace(p, len);
 }
