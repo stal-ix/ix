@@ -13,3 +13,7 @@ test
 {% block sources %}
 main.cpp
 {% endblock %}
+
+{% block test %}
+./test
+{% endblock %}
