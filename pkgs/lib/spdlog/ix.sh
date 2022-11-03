@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/gabime/spdlog/archive/refs/tags/v1.10.0.tar.gz
-sha:697f91700237dbae2326b90469be32b876b2b44888302afbc7aceb68bcfe8224
+https://github.com/gabime/spdlog/archive/refs/tags/v1.11.0.tar.gz
+sha:ca5cae8d6cac15dae0ec63b21d6ad3530070650f68076f3a4a862ca293a858bb
 {% endblock %}
 
 {% block lib_deps %}
@@ -14,4 +14,5 @@ lib/fmt
 {% block cmake_flags %}
 SPDLOG_FMT_EXTERNAL=ON
 SPDLOG_BUILD_EXAMPLE=OFF
+#SPDLOG_USE_STD_FORMAT=ON
 {% endblock %}
