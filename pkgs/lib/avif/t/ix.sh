@@ -11,6 +11,7 @@ lib/z
 lib/aom
 lib/png
 lib/yuv
+lib/webp
 lib/jpeg
 lib/dav1d
 lib/svt/av1
