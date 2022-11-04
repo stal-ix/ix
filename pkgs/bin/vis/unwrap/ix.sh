@@ -11,6 +11,7 @@ lib/lua
 lib/curses
 lib/termkey
 lib/lua/modules/lpeg
+lib/lua/modules/lpeg/dl
 {% endblock %}
 
 {% block script_init_env %}
