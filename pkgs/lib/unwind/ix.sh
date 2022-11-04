@@ -7,6 +7,7 @@ sha:b76546101ca00c5525ae939104ca1b9de4a444a61cfa9bfe7e505c66c4fb1f10
 
 {% block lib_deps %}
 lib/c
+lib/ucontext
 {% endblock %}
 
 {% block configure_flags %}
