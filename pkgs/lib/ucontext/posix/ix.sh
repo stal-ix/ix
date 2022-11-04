@@ -1,18 +1,13 @@
-{% extends '//die/proxy.sh' %}
-
-{% block lib_deps %}
-lib/ucontext
-{% endblock %}
+{% extends '//lib/ucontext/stock/ix.sh' %}
 
 {% block install %}
-mkdir -p ${out}/include/sys
-
-cat << EOF > ${out}/include/ucontext.h
-{% include 'ucontext.h' %}
-EOF
-
-cat << EOF > ${out}/include/sys/ucontext.h
-#pragma once
-#include <ucontext.h>
-EOF
+{{super()}}
+rm -rf ${out}/lib/pkgconfig ${out}/include
+llvm-objcopy \
+    --preserve-dates \
+    --redefine-sym "libucontext_makecontext=makecontext" \
+    --redefine-sym "libucontext_swapcontext=swapcontext" \
+    --redefine-sym "libucontext_setcontext=setcontext" \
+    --redefine-sym "libucontext_getcontext=getcontext" \
+    ${out}/lib/libucontext.a
 {% endblock %}

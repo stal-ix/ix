@@ -29,9 +29,9 @@ lib/gcrypt
 lib/gnutls
 lib/fuse/3
 lib/seccomp
+lib/ucontext
 lib/sdl/deps
 lib/sdl/2/image
-lib/ucontext/posix
 {% endblock %}
 
 {% block bld_tool %}

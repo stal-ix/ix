@@ -16,9 +16,9 @@ lib/gpgme
 lib/gnutls
 lib/jansson
 lib/readline
+lib/ucontext
 lib/ini/parser
 lib/bsd/overlay
-lib/ucontext/posix
 {% endblock %}
 
 {% block waf %}${PWD}/buildtools/bin/waf{% endblock %}
