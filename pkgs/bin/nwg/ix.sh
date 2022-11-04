@@ -4,5 +4,4 @@
 bin/nwg/dock
 bin/nwg/menu
 bin/nwg/drawer
-bin/nwg/launchers
 {% endblock %}
