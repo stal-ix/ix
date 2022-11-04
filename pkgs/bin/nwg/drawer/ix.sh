@@ -15,8 +15,18 @@ sha:eb99e5a3b99efb127969fe02ff684d2ff9eebefdefdec4b506377968af332677
 {% block bld_libs %}
 lib/c
 lib/gtk/3
+lib/gtk/layer/shell
 {% endblock %}
 
 {% block go_tags %}
 no_x11
+{% endblock %}
+
+{% block patch %}
+rm vendor/github.com/gotk3/gotk3/gtk/socket_plug*
+{% endblock %}
+
+{% block install %}
+mkdir ${out}/bin
+cp nwg-drawer ${out}/bin/
 {% endblock %}
