@@ -9,7 +9,7 @@ sha:6de469efc8e9d47059327a6736aebe0a7d73f57e5e37ab4c4f838fb1eebd7889
 lib/c
 lib/z
 lib/ev
-lib/c-ares
+lib/c/ares
 lib/openssl
 {% endblock %}
 

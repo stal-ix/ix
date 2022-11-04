@@ -12,7 +12,7 @@ lib/psl
 lib/intl
 lib/pcre/2
 lib/gnutls
-lib/c-ares
+lib/c/ares
 lib/metalink
 lib/shim/gnu
 lib/unistring

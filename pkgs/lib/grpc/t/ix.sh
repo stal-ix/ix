@@ -10,7 +10,7 @@ lib/c
 lib/z
 lib/re2
 lib/c++
-lib/c-ares
+lib/c/ares
 lib/openssl
 lib/protobuf
 lib/abseil/cpp

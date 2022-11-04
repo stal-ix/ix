@@ -13,7 +13,7 @@ lib/zstd
 lib/ssh/2
 lib/idn/2
 lib/brotli
-lib/c-ares
+lib/c/ares
 lib/ng/http/2
 lib/{{curlssl or 'openssl'}}
 {% block curl_http3 %}

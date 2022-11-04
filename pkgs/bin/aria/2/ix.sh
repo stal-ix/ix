@@ -13,7 +13,7 @@ lib/c++
 lib/gmp
 lib/expat
 lib/ssh/2
-lib/c-ares
+lib/c/ares
 lib/openssl
 lib/sqlite/3
 {% endblock %}

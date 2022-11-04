@@ -13,7 +13,7 @@ lib/xz
 lib/icu
 lib/c++
 lib/linux
-lib/c-ares
+lib/c/ares
 lib/brotli
 lib/openssl
 lib/ng/http/2

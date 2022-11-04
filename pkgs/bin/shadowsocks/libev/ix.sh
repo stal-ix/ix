@@ -10,7 +10,7 @@ lib/c
 lib/ev
 lib/pcre
 lib/linux
-lib/c-ares
+lib/c/ares
 lib/sodium
 lib/mbedtls/2
 {% endblock %}
