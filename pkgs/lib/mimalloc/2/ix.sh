@@ -1,11 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-#https://github.com/microsoft/mimalloc/archive/refs/tags/v2.0.6.tar.gz
-#sha:9f05c94cc2b017ed13698834ac2a3567b6339a8bde27640df5a1581d49d05ce5
-
-https://github.com/microsoft/mimalloc/archive/refs/tags/v2.0.3.tar.gz
-sha:5af497f360879bf9d07a5146961d275a25f4177fbe21ee6c437db604422acd60
+https://github.com/microsoft/mimalloc/archive/refs/tags/v2.0.7.tar.gz
+sha:f23aac6c73594e417af50cb38f1efed88ef1dc14a490f0eff07c7f7b079810a4
 {% endblock %}
 
 {% block bld_libs %}
