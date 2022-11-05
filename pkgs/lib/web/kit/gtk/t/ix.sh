@@ -1,8 +1,8 @@
 {% extends '//lib/web/kit/t/ix.sh' %}
 
 {% block fetch %}
-https://webkitgtk.org/releases/webkitgtk-2.38.1.tar.xz
-sha:02e195b3fb9e057743b3364ee7f1eec13f71614226849544c07c32a73b8f1848
+https://webkitgtk.org/releases/webkitgtk-2.38.2.tar.xz
+sha:f3eb82899651f583b4d99cacd16af784a1a7710fce9e7b6807bd6ccde909fe3e
 {% endblock %}
 
 {% block lib_deps %}
@@ -17,7 +17,6 @@ lib/png
 lib/jxl
 lib/avif
 lib/webp
-lib/xml/2
 lib/glib
 lib/jpeg
 lib/xslt
@@ -26,6 +25,7 @@ lib/cairo
 lib/pango
 lib/epoxy
 lib/woff2
+lib/xml/2
 lib/gcrypt
 lib/secret
 lib/soup/3
