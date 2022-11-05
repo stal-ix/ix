@@ -20,6 +20,21 @@ lib/fm/extra
 bld/glib/codegen
 {% endblock %}
 
+{% block build_flags %}
+wrap_cc
+{% endblock %}
+
 {% block postinstall %}
 :
+{% endblock %}
+
+{% block configure %}
+{{super()}}
+# https://lists.gnu.org/archive/html/bug-libtool/2016-06/msg00001.html
+sed -e 's|func__fatal_error|func_fatal_error|' -i libtool
+{% endblock %}
+
+{% block patch %}
+{{super()}}
+sed -e 's|-shared -export-dynamic||' -i src/modules/Makefile.am
 {% endblock %}

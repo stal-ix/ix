@@ -45,7 +45,7 @@ chmod +x {{name}}
 for name in ${CC} ${CXX}; do
     cat << EOF > ${name}
 #!$(which sh)
-wrapcc "$(which ${name})" "\${@}"
+exec wrapcc "$(which ${name})" "\${@}"
 EOF
 
     chmod +x ${name}
