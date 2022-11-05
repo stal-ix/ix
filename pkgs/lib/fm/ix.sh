@@ -20,10 +20,6 @@ lib/fm/extra
 bld/glib/codegen
 {% endblock %}
 
-{% block build_flags %}
-wrap_cc
-{% endblock %}
-
 {% block postinstall %}
 :
 {% endblock %}
