@@ -12,10 +12,7 @@ lib/z
 lib/lz4
 lib/c++
 lib/vpx
-lib/jxl
 lib/opus
-lib/avif
-lib/heif
 lib/gsl/ms
 lib/xxhash
 lib/openal
@@ -37,6 +34,7 @@ lib/qt/6/compat
 lib/qt/6/wayland
 lib/xiph/rnnoise
 lib/mesa/glesv2/dl
+lib/k/imageformats
 lib/qt/6/imageformats
 lib/{{allocator}}/trim(delay=3,bytes=30000000)
 {% endblock %}
@@ -107,8 +105,4 @@ sed -e 's|.*DESKTOP_APP_USE_PACKAGED.*||' \
     -e 's|.*Gtk3Theme.*||' \
     -e 's|.*NimfInput.*||' \
     -i cmake/external/qt/qt_static_plugins/qt_static_plugins.cpp
-
-base64 -d << EOF > cmake/external/kimageformats/CMakeLists.txt
-{% include 'CMakeLists.txt/base64' %}
-EOF
 {% endblock %}
