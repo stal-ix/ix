@@ -12,7 +12,10 @@ lib/z
 lib/lz4
 lib/c++
 lib/vpx
+lib/jxl
 lib/opus
+lib/avif
+lib/heif
 lib/gsl/ms
 lib/xxhash
 lib/openal
@@ -103,8 +106,9 @@ sed -e 's|.*DESKTOP_APP_USE_PACKAGED.*||' \
     -e 's|.*Xcb.*||' \
     -e 's|.*Gtk3Theme.*||' \
     -e 's|.*NimfInput.*||' \
-    -e 's|.*QAVIF.*||' \
-    -e 's|.*HEIFP.*||' \
-    -e 's|.*QJpegXL.*||' \
     -i cmake/external/qt/qt_static_plugins/qt_static_plugins.cpp
+
+base64 -d << EOF > cmake/external/kimageformats/CMakeLists.txt
+{% include 'CMakeLists.txt/base64' %}
+EOF
 {% endblock %}
