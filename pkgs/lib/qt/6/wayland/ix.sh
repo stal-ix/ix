@@ -5,6 +5,8 @@
 bld/qt/6/wayland
 {% endblock %}
 
-{% block patch %}
->src/compositor/global/qwaylandquickextension.cpp
+{% block c_rename_symbol %}
+{{super()}}
+zwp_linux_dmabuf_v1_interface
+zwp_linux_buffer_params_v1_interface
 {% endblock %}

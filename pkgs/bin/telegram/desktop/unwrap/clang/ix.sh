@@ -5,7 +5,7 @@
 export CXXFLAGS="-std=c++20 ${CXXFLAGS}"
 {% endblock %}
 
-{% block patch %}
+{% block patch1 %}
 {{super()}}
 
 base64 -d << EOF > Telegram/codegen/codegen/style/structure_types.cpp

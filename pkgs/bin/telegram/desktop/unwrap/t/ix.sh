@@ -106,3 +106,8 @@ sed -e 's|.*DESKTOP_APP_USE_PACKAGED.*||' \
     -e 's|.*NimfInput.*||' \
     -i cmake/external/qt/qt_static_plugins/qt_static_plugins.cpp
 {% endblock %}
+
+{% block c_rename_symbol %}
+zwp_linux_dmabuf_v1_interface
+zwp_linux_buffer_params_v1_interface
+{% endblock %}
