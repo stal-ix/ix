@@ -9,10 +9,8 @@ sha:0c34937f5a1f2e105734dba2fc6dc4d9b12636e17964df705d3d96c5aa52667c
 lib/c
 lib/z
 lib/aom
-lib/png
 lib/yuv
 lib/webp
-lib/jpeg
 lib/dav1d
 lib/svt/av1
 {% endblock %}
