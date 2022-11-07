@@ -15,9 +15,16 @@ export HOME=${TMPDIR}
     for n in 16 24 32 48; do
         p=${n}x${n}/${l}
         p=$(echo ${p} | sed -e 's|.svg|.png|')
+
         mkdir -p ${out}/share/icons/default/$(dirname ${p})
-        echo ${out}/share/icons/default/${p}
-        inkscape -o ${out}/share/icons/default/${p} -w ${n} ${fr}/${l}
+
+cat << EOF
+file-open:${fr}/${l}
+export-type:png
+export-filename:${out}/share/icons/default/${p}
+export-width:${n}
+export-do
+EOF
     done
-done
+done | inkscape --shell
 {% endblock %}
