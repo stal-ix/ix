@@ -8,12 +8,13 @@ sha:66f679115dd30559e110498fc94d926949d4d370b4999a042e724b8e910ee478
 {% block bld_libs %}
 lib/c
 lib/gd
+lib/cerf
 lib/readline
 {% endblock %}
 
 {% block configure_flags %}
---disable-plugins
 --with-gd
+--disable-plugins
 --with-bitmap-terminals
 {% endblock %}
 
