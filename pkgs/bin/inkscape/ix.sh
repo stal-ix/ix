@@ -22,7 +22,7 @@ lib/visio
 lib/lcms/2
 lib/gspell
 lib/soup/2
-lib/poppler
+#lib/poppler
 lib/boehmgc
 lib/potrace
 lib/rsvg/dl
@@ -47,6 +47,7 @@ bld/glib/codegen
 {% block cmake_flags %}
 WITH_X11=OFF
 WITH_LIBWPG=OFF
+ENABLE_POPPLER=OFF
 {% endblock %}
 
 {% block setup %}
