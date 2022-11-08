@@ -27,4 +27,12 @@ export-do
 EOF
     done
 done | inkscape --shell
+
+mkdir ${out}/fix
+
+cat << EOF > ${out}/fix/fix-adwaita.sh
+cd share/icons
+rm -f Adwaita
+ln -s default Adwaita
+EOF
 {% endblock %}
