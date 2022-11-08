@@ -30,6 +30,10 @@ lib/shim/gnu
 aux/ca-bundle
 {% endblock %}
 
+{% block bld_data %}
+aux/ca-bundle
+{% endblock %}
+
 {% block bld_tool %}
 bld/gettext
 {% endblock %}

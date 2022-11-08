@@ -247,7 +247,7 @@ class Package:
 
     @cu.cached_method
     def bld_data(self):
-        return self.run_data() + self.load_data_dep(self.descr['bld']['data'])
+        return self.load_data_dep(self.descr['bld']['data'])
 
     def iter_all_tagged_build_depends(self):
         yield from add_kind('bin', self.bld_bin_closure())

@@ -23,10 +23,6 @@ lib/djvulibre
 lib/gsettings/desktop/schemas
 {% endblock %}
 
-{% block run_data %}
-aux/adwaita/icons
-{% endblock %}
-
 {% block bld_tool %}
 bld/gettext
 bld/scripts/dlfcn
@@ -46,6 +42,10 @@ shut_up
 {% endblock %}
 
 {% block patch %}
+find . -type f -name meson.build | while read l; do
+    sed -e 's|.*adwaita_icon.*||' -i ${l}
+done
+
 sed -e 's|+multipage||' \
     -e 's|ev_libdir, ev_backends_subdir|ev_datadir, ev_backends_subdir|' \
     -i meson.build

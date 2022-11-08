@@ -6,9 +6,10 @@ bld/ruby
 bin/gperf
 bld/python
 bld/gettext
+bld/wayland
+bin/xmllint
 bld/pkg/config
 bld/glib/codegen
-bld/wayland
 {% endblock %}
 
 {% block task_pool %}full{% endblock %}

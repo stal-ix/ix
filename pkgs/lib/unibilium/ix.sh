@@ -19,6 +19,10 @@ bld/libtool
 aux/terminfo
 {% endblock %}
 
+{% block bld_data %}
+aux/terminfo
+{% endblock %}
+
 {% block make_flags %}
 TERMINFO_DIRS="\"${TERMINFO}\""
 {% endblock %}

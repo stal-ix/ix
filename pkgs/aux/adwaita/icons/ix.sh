@@ -2,8 +2,9 @@
 
 {% block install %}
 {{super()}}
-cd ${out}/share/icons
-mv Adwaita default
-rm -r default/cursors
-ln -s default Adwaita
+rm -rf ${out}/share/icons/Adwaita/cursors
+{% endblock %}
+
+{% block env %}
+export ADWAITA_ICONS=${out}/share/icons/Adwaita
 {% endblock %}

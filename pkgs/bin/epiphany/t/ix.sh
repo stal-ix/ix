@@ -32,6 +32,10 @@ bld/gettext
 aux/iso-codes
 {% endblock %}
 
+{% block bld_data %}
+aux/iso-codes
+{% endblock %}
+
 {% block meson_flags %}
 unit_tests=disabled
 {% endblock %}

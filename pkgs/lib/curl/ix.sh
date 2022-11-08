@@ -9,6 +9,10 @@ bin/groff
 aux/ca-bundle
 {% endblock %}
 
+{% block bld_data %}
+aux/ca-bundle
+{% endblock %}
+
 {% block configure_flags %}
 {{super()}}
 --with-ca-bundle="${CA_BUNDLE}"

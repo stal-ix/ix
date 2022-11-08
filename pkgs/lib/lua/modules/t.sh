@@ -14,6 +14,12 @@ lib/lua
 {% endif %}
 {% endblock %}
 
+{% block bld_data %}
+{% if lib %}
+{{name}}
+{% endif %}
+{% endblock %}
+
 {% block build %}
 for x in *.c; do
     cc -c ${x}

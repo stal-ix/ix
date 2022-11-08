@@ -14,6 +14,10 @@ lib/ffi
 aux/adwaita/cursors
 {% endblock %}
 
+{% block bld_data %}
+aux/adwaita/cursors
+{% endblock %}
+
 {% block meson_flags %}
 {{super()}}
 libraries=true

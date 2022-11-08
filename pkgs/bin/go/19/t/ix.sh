@@ -19,6 +19,10 @@ bld/python
 aux/ca-bundle
 {% endblock %}
 
+{% block bld_data %}
+aux/ca-bundle
+{% endblock %}
+
 {% block setup_tools %}
 cat << EOF > xcrun
 #!$(which python3)

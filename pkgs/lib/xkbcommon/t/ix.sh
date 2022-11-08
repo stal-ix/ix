@@ -21,6 +21,10 @@ lib/wayland
 aux/xkeyboard/config
 {% endblock %}
 
+{% block bld_data %}
+aux/xkeyboard/config
+{% endblock %}
+
 {% block meson_flags %}
 enable-x11=false
 enable-docs=false

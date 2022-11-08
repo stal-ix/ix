@@ -4,6 +4,10 @@
 aux/terminfo
 {% endblock %}
 
+{% block bld_data %}
+aux/terminfo
+{% endblock %}
+
 {% block patch %}
 >misc/run_tic.in
 {{super()}}

@@ -4,6 +4,10 @@
 lib/gtk/source/view/data
 {% endblock %}
 
+{% block bld_data %}
+lib/gtk/source/view/data
+{% endblock %}
+
 {% block bld_tool %}
 {{super()}}
 bld/scripts/reloc

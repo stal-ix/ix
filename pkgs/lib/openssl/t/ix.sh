@@ -18,6 +18,10 @@ bld/perl
 aux/ca-bundle
 {% endblock %}
 
+{% block bld_data %}
+aux/ca-bundle
+{% endblock %}
+
 {% block setup %}
 export AR=ar
 export RANLIB=ranlib

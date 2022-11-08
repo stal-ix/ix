@@ -26,6 +26,10 @@ lib/linux
 aux/iso-codes
 {% endblock %}
 
+{% block bld_data %}
+aux/iso-codes
+{% endblock %}
+
 {% block bld_tool %}
 bin/orc
 bld/flex
