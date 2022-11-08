@@ -1,8 +1,8 @@
 {% extends '//die/c/make.sh' %}
 
 {% block fetch %}
-https://mupdf.com/downloads/archive/mupdf-1.20.3-source.tar.lz
-sha:6f73f63ef8aa81991dfd023d4426a548827d1d74e0bfcf2a013acad63b651868
+https://mupdf.com/downloads/archive/mupdf-1.21.0-source.tar.lz
+sha:f23fc1ad9081375d9c5f2318d6e6e5c5be490ecb70b10ed7167932afbe1ccfb5
 {% endblock %}
 
 {% block lib_deps %}
@@ -33,5 +33,6 @@ USE_SYSTEM_LIBS=yes
 {% endblock %}
 
 {% block setup %}
+export CPPFLAGS="-include limits.h ${CPPFLAGS}"
 export LD=ld
 {% endblock %}
