@@ -15,11 +15,7 @@ bld/gzip
 bld/libtool
 {% endblock %}
 
-{% block run_data %}
-aux/terminfo
-{% endblock %}
-
-{% block bld_data %}
+{% block use_data %}
 aux/terminfo
 {% endblock %}
 

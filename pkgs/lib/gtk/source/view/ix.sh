@@ -1,10 +1,6 @@
 {% extends '//lib/gtk/source/view/t/ix.sh' %}
 
-{% block run_data %}
-lib/gtk/source/view/data
-{% endblock %}
-
-{% block bld_data %}
+{% block use_data %}
 lib/gtk/source/view/data
 {% endblock %}
 

@@ -6,6 +6,9 @@
 {% block bld_data %}
 {% endblock %}
 
+{% block use_data %}
+{% endblock %}
+
 {% block openssl_cert_dir %}/nowhere{% endblock %}
 
 {% block install %}

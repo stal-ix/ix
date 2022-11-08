@@ -1,10 +1,6 @@
 {% extends '//lib/drm/t/ix.sh' %}
 
-{% block run_data %}
-lib/drm/data
-{% endblock %}
-
-{% block bld_data %}
+{% block use_data %}
 lib/drm/data
 {% endblock %}
 

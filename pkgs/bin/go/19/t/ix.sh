@@ -15,11 +15,7 @@ bld/python
 {{super()}}
 {% endblock %}
 
-{% block run_data %}
-aux/ca-bundle
-{% endblock %}
-
-{% block bld_data %}
+{% block use_data %}
 aux/ca-bundle
 {% endblock %}
 

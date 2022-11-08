@@ -17,11 +17,7 @@ lib/xml/2
 lib/wayland
 {% endblock %}
 
-{% block run_data %}
-aux/xkeyboard/config
-{% endblock %}
-
-{% block bld_data %}
+{% block use_data %}
 aux/xkeyboard/config
 {% endblock %}
 

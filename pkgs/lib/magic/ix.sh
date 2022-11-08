@@ -1,10 +1,6 @@
 {% extends '//lib/magic/t/ix.sh' %}
 
-{% block run_data %}
-aux/magic
-{% endblock %}
-
-{% block bld_data %}
+{% block use_data %}
 aux/magic
 {% endblock %}
 

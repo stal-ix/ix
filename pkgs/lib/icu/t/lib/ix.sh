@@ -1,10 +1,6 @@
 {% extends '//lib/icu/t/ix.sh' %}
 
-{% block run_data %}
-lib/icu/data
-{% endblock %}
-
-{% block bld_data %}
+{% block use_data %}
 lib/icu/data
 {% endblock %}
 

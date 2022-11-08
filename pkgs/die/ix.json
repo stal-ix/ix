@@ -40,6 +40,11 @@
 {% endblock %}
 {% endset %}
 
+{% set use_data %}
+{% block use_data %}
+{% endblock %}
+{% endset %}
+
 {% set fetch %}
 {% block fetch %}
 {% endblock %}
@@ -59,7 +64,7 @@
 {% endblock %}
 
 {% block build_data %}
-{{ix.list_to_json(bld_data)}}
+{{ix.list_to_json(use_data + ' ' + bld_data)}}
 {% endblock %}
 
 {% block build_depends %}
@@ -71,7 +76,7 @@
 {% endblock %}
 
 {% block runtime_data %}
-{{ix.list_to_json(run_data)}}
+{{ix.list_to_json(use_data + ' ' + run_data)}}
 {% endblock %}
 
 {% block library_depends %}

@@ -22,11 +22,7 @@ lib/json/glib
 lib/linux
 {% endblock %}
 
-{% block run_data %}
-aux/iso-codes
-{% endblock %}
-
-{% block bld_data %}
+{% block use_data %}
 aux/iso-codes
 {% endblock %}
 

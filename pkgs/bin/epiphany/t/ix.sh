@@ -28,11 +28,7 @@ lib/{{allocator}}/trim(delay=5,bytes=10000000)
 bld/gettext
 {% endblock %}
 
-{% block run_data %}
-aux/iso-codes
-{% endblock %}
-
-{% block bld_data %}
+{% block use_data %}
 aux/iso-codes
 {% endblock %}
 

@@ -13,11 +13,7 @@ lib/openssl
 lib/c++/utilities
 {% endblock %}
 
-{% block run_data %}
-aux/iso-codes
-{% endblock %}
-
-{% block bld_data %}
+{% block use_data %}
 aux/iso-codes
 {% endblock %}
 

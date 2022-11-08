@@ -8,13 +8,7 @@ lib/c
 lib/lua
 {% endblock %}
 
-{% block run_data %}
-{% if lib %}
-{{name}}
-{% endif %}
-{% endblock %}
-
-{% block bld_data %}
+{% block use_data %}
 {% if lib %}
 {{name}}
 {% endif %}

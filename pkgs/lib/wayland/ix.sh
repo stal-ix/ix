@@ -10,11 +10,7 @@ lib/c
 lib/ffi
 {% endblock %}
 
-{% block run_data %}
-aux/adwaita/cursors
-{% endblock %}
-
-{% block bld_data %}
+{% block use_data %}
 aux/adwaita/cursors
 {% endblock %}
 

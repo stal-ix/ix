@@ -1,10 +1,6 @@
 {% extends '//lib/alsa/t/ix.sh' %}
 
-{% block run_data %}
-lib/alsa/data
-{% endblock %}
-
-{% block bld_data %}
+{% block use_data %}
 lib/alsa/data
 {% endblock %}
 
