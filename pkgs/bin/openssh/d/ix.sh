@@ -6,4 +6,5 @@ cd ${out}
 mv bin old
 mkdir bin
 mv old/sshd bin/
+rm -rf old
 {% endblock %}
