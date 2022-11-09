@@ -13,7 +13,8 @@ bld/boot/1/env
 {% block unpack %}
 mkdir src
 cd src
-extract0 ${src}/1*; cd p*
+extract0 ${src}/1*
+cd p*
 {% endblock %}
 
 {% block build %}
