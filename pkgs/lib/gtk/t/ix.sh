@@ -21,6 +21,6 @@ bld/wayland
 {% endblock %}
 
 {% block run_data %}
-aux/adwaita/icons
+{{gtk_icons or 'aux/adwaita/icons/png'}}
 aux/hicolor-icon-theme
 {% endblock %}

@@ -5,7 +5,7 @@ aux/adwaita/icons
 {% endblock %}
 
 {% block bld_tool %}
-bin/inkscape
+bin/inkscape(gtk_icons=aux/hicolor-icon-theme)
 {% endblock %}
 
 {% block build %}
