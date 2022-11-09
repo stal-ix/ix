@@ -1,11 +1,5 @@
 {% extends '//lib/openssl/3/ix.sh' %}
 
-{% block run_data %}
-{% endblock %}
-
-{% block bld_data %}
-{% endblock %}
-
 {% block use_data %}
 {% endblock %}
 
