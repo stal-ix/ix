@@ -1,6 +1,6 @@
-{% extends '//bin/graphviz/4/ix.sh' %}
+{% extends '4/ix.sh' %}
 
 {% block fetch %}
-https://gitlab.com/graphviz/graphviz/-/archive/7.0.0/graphviz-7.0.0.tar.bz2
-sha:380c084c1fac55f442ba0ae1253b24c33b3855cf519ac490975b8572b9893153
+https://gitlab.com/graphviz/graphviz/-/archive/7.0.1/graphviz-7.0.1.tar.bz2
+sha:33e37770879f998ac7c87950f387700d85c1e46941586c4476eea353dfa4b9a9
 {% endblock %}
