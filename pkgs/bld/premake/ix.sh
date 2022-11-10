@@ -1,4 +1,4 @@
-{% extends '//die/c/make.sh' %}
+{% extends '//die/c/premake.sh' %}
 
 {% block fetch %}
 {% include 'boot/ver.sh' %}
@@ -13,13 +13,19 @@ lib/linux/util
 wrap_cc
 {% endblock %}
 
-{% block bld_tool %}
+{% block premake_tool %}
 bld/premake/boot
+{% endblock %}
+
+{% block premake_flags %}
+--no-luasocket
+--no-zlib
+--no-curl
 {% endblock %}
 
 {% block configure %}
 premake5 embed
-premake5 --no-luasocket --no-zlib --no-curl gmake2
+{{super()}}
 {% endblock %}
 
 {% block install %}
