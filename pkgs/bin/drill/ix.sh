@@ -1,4 +1,4 @@
-{% extends '//lib/ldns/ix.sh' %}
+{% extends '//lib/ldns/t/ix.sh' %}
 
 {% block configure_flags %}
 {{super()}}

@@ -1,19 +1,10 @@
-{% extends '//die/c/autorehell.sh' %}
-
-{% block fetch %}
-https://github.com/NLnetLabs/ldns/archive/refs/tags/1.8.3.tar.gz
-sha:33fb1a77f2de2fca9e749d17256334a3222a9e9d11b31c6d998bd920f3bd6776
-{% endblock %}
-
-{% block lib_deps %}
-lib/c
-lib/openssl
-{% endblock %}
+{% extends 't/ix.sh' %}
 
 {% block configure_flags %}
---with-drill
+{{super()}}
+--without-drill
 {% endblock %}
 
-{% block env_lib %}
+{% block env %}
 export COFLAGS="--with-ldns=${out} \${COFLAGS}"
 {% endblock %}
