@@ -2,7 +2,7 @@
 
 {% block std_box %}
 {% block premake_tool %}
-bld/premake/boot
+bld/premake
 {% endblock %}
 {{super()}}
 {% endblock %}
