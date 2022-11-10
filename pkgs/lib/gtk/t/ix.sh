@@ -22,5 +22,4 @@ bld/wayland
 
 {% block run_data %}
 {{gtk_icons or 'aux/adwaita/icons'}}
-aux/hicolor-icon-theme
 {% endblock %}
