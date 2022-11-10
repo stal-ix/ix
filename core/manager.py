@@ -32,12 +32,9 @@ class Manager:
             except KeyError:
                 self.cache[key] = func()
 
-    def load_hard(self, p):
-        return self.cached(p.uid, lambda: p)
-
     def load_package(self, s, sfrom):
         try:
-            return self.cached(cu.struct_hash(s), lambda: self.load_hard(cp.Package(s, self)))
+            return self.cached(cu.struct_hash(s), lambda: cp.Package(s, self))
         except FileNotFoundError as fe:
             to = fmt_sel(s)
             fr = fmt_sel(sfrom)

@@ -1,11 +1,11 @@
 {% extends '//die/proxy.sh' %}
 
 {% block bld_data %}
-aux/adwaita/icons
+aux/adwaita/icons/scalable
 {% endblock %}
 
 {% block bld_tool %}
-bin/inkscape(gtk_icons=aux/hicolor-icon-theme)
+bld/inkscape
 {% endblock %}
 
 {% block build %}
