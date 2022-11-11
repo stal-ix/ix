@@ -13,5 +13,9 @@ bld/premake
 {% endset %}
 
 {% block configure %}
+{% if help %}
+premake5 --help
+exit 1
+{% endif %}
 premake5 {{ix.fix_list(premake_flags)}} gmake2
 {% endblock %}
