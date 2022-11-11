@@ -58,5 +58,5 @@ sed -e 's|"Sans Serif"|"system-ui"|' -i src/gui/platform/unix/qgenericunixthemes
 {% endblock %}
 
 {% block setup %}
-export OPTFLAGS="-O0 ${OPTFLAGS} -O0"
+export OPTFLAGS="${OPTFLAGS} -O0"
 {% endblock %}
