@@ -9,3 +9,8 @@ lib/c++
 {{super()}}
 enable_cplusplus=ON
 {% endblock %}
+
+{% block install %}
+{{super()}}
+rm ${out}/lib/libgccpp.a
+{% endblock %}

@@ -39,3 +39,7 @@ bin/auto/conf/archive
 {% block shell %}
 bin/bash/lite/sh
 {% endblock %}
+
+{% block build_flags %}
+wrap_cc
+{% endblock %}
