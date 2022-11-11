@@ -29,6 +29,7 @@ lib/json/nlohmann
 
 {% block bld_tool %}
 bin/jq
+bin/ld
 bld/bash
 bld/flex
 bld/bison
@@ -42,4 +43,8 @@ bin/bash/lite/sh
 
 {% block build_flags %}
 wrap_cc
+{% endblock %}
+
+{% block configure_flags %}
+--disable-doc-gen
 {% endblock %}
