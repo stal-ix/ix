@@ -1,4 +1,4 @@
-{% extends '//lib/xkbcommon/t/ix.sh' %}
+{% extends 't/ix.sh' %}
 
 {% block meson_flags %}
 {{super()}}
