@@ -1,4 +1,4 @@
-{% extends '//lib/qt/6/base/t/ix.sh' %}
+{% extends 't/ix.sh' %}
 
 {% block lib_deps %}
 lib/b2
@@ -55,4 +55,8 @@ export CMFLAGS="-DQT_DISABLE_NO_DEFAULT_PATH_IN_QT_PACKAGES=ON -DBUILD_WITH_QT6=
 {% block patch %}
 {{super()}}
 sed -e 's|"Sans Serif"|"system-ui"|' -i src/gui/platform/unix/qgenericunixthemes.cpp
+{% endblock %}
+
+{% block setup %}
+export OPTFLAGS="-O0 ${OPTFLAGS} -O0"
 {% endblock %}
