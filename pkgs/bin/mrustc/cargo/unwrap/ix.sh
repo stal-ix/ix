@@ -7,6 +7,7 @@ lib/curl
 lib/git/2
 lib/openssl
 bin/mrustc/std
+lib/shim/atomic
 {% endblock %}
 
 {% block patch %}

@@ -8,7 +8,7 @@ sha:ac8511633e9b5a65ad030a1a2e5bdaa841fdfe3132f2baaa52cc04e71c6c6976
 
 {% block unpack %}
 mkdir src; cd src
-extract 1 ${src}/v*
+extract 1 ${src}/*zip
 extract 0 ${src}/rust*
 {% endblock %}
 
