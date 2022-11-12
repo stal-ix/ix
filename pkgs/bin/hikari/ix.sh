@@ -11,9 +11,9 @@ lib/pam
 lib/pango
 lib/cairo
 lib/input
-lib/wlroots
 lib/wayland
 lib/xkbcommon
+lib/wlroots/15
 lib/ucl/parser
 lib/drivers/3d
 {% endblock %}

@@ -13,8 +13,8 @@ lib/pango
 lib/cairo
 lib/input
 lib/wayland
-lib/wlroots
 lib/xkbcommon
+lib/wlroots/15
 lib/drivers/3d
 {% endblock %}
 

@@ -12,8 +12,8 @@ lib/pango
 lib/cairo
 lib/input
 lib/wayland
-lib/wlroots
 lib/xkbcommon
+lib/wlroots/15
 lib/mesa/gl/dl
 lib/mesa/egl/dl
 lib/mesa/glesv2/dl
