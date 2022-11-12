@@ -10,5 +10,6 @@ lib/c
 lib/c++
 lib/webp
 lib/tiff
+lib/jasper
 lib/qt/6/base
 {% endblock %}
