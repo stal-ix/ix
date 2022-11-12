@@ -2,7 +2,10 @@
 
 {% block lib_deps %}
 lib/c
-bin/mrustc/stubs
+{% endblock %}
+
+{% block bld_libs %}
+lib/shim/atomic
 {% endblock %}
 
 {% block build %}

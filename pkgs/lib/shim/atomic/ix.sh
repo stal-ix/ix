@@ -15,4 +15,5 @@ ar q libempty.a *.o
 mkdir ${out}/lib
 cp libempty.a ${out}/lib/libatomic.a
 cp libempty.a ${out}/lib/libstdc++fs.a
+cp libempty.a ${out}/lib/libgcc_s.a
 {% endblock %}
