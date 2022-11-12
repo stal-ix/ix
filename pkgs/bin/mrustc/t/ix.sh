@@ -1,7 +1,7 @@
 {% extends '//die/c/ix.sh' %}
 
 {% block fetch %}
-{% include '//bin/mrustc/ver.sh' %}
+{% include 'ver.sh' %}
 https://static.rust-lang.org/dist/rustc-1.54.0-src.tar.gz
 sha:ac8511633e9b5a65ad030a1a2e5bdaa841fdfe3132f2baaa52cc04e71c6c6976
 {% endblock %}
@@ -31,7 +31,9 @@ unset HOST_CXX
 unset HOST_AR
 unset HOST_RANLIB
 
-export OUTPUT_DIR=${tmp}
+export OUTPUT_DIR=${tmp}/rst
+
+mkdir ${OUTPUT_DIR}
 
 export RUSTC_VERSION=1.54.0
 export MRUSTC_TARGET_VER=1.54
@@ -44,6 +46,7 @@ export OVERRIDE_DIR=${PWD}/script-overrides/stable-1.54.0-linux
 {{super()}}
 cargo() (
     export MRUSTC_LIBDIR=${OUTPUT_DIR}
+    export MRUSTC_PATH=$(which mrustc)
 
     minicargo ${@} \
         -j ${make_thrs}  \
