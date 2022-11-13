@@ -34,3 +34,19 @@ LLDB_ENABLE_LZMA=ON
 LLDB_ENABLE_LIBXML2=ON
 LLDB_ENABLE_PYTHON=OFF
 {% endblock %}
+
+{% block ninja_build_targets %}
+lldb
+lldb-argdumper
+lldb-instr
+lldb-server
+lldb-vscode
+{% endblock %}
+
+{% block ninja_install_targets %}
+install-lldb
+install-lldb-argdumper
+install-lldb-instr
+install-lldb-server
+install-lldb-vscode
+{% endblock %}
