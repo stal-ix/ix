@@ -1,4 +1,4 @@
-{% extends '//lib/llvm/14/ix.sh' %}
+{% extends '//lib/llvm/latest/ix.sh' %}
 
 {% block bld_libs %}
 lib/xz
