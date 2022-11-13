@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/oneapi-src/oneTBB/archive/refs/tags/v2021.4.0.tar.gz
-md5:fa317f16003e31e33a57ae7d888403e4
+https://github.com/oneapi-src/oneTBB/archive/refs/tags/v2021.7.0.tar.gz
+sha:2cae2a80cda7d45dc7c072e4295c675fff5ad8316691f26f40539f7e7e54c0cc
 {% endblock %}
 
 {% block lib_deps %}
