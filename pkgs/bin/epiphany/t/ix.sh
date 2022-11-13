@@ -80,7 +80,7 @@ ephy_window_chrome_get_type
 EOF
 
 (
-    echo 'void g_object_init();'
+    echo 'void gobject_init();'
 
     cat types | while read l; do
         echo "GType ${l}(void);"
@@ -89,7 +89,7 @@ EOF
     cat << EOF
 __attribute__((constructor))
 static void premain_init_types() {
-    g_object_init();
+    gobject_init();
 EOF
 
     cat types | while read l; do

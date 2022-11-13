@@ -5,7 +5,7 @@ lib/glib/networking/orig
 {% endblock %}
 
 {% block constructors %}
-g_object_init
+gobject_init
 _g_io_modules_ensure_loaded
 _g_tls_backend_openssl_register
 {% endblock %}
