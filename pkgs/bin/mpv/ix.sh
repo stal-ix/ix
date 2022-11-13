@@ -11,8 +11,8 @@ lib/lua
 lib/ass
 lib/zimg
 lib/mu/js
+lib/sndio
 lib/ffmpeg
-lib/openal
 lib/archive
 lib/wayland
 lib/mesa/gl
@@ -21,6 +21,7 @@ lib/uchardet
 lib/placebo/4
 lib/xkbcommon
 lib/drivers/3d
+lib/rubber/band
 lib/vulkan/headers
 {% endblock %}
 
@@ -31,6 +32,6 @@ bld/wayland
 {% endblock %}
 
 {% block waf_flags %}
---enable-openal
+--enable-sndio
 --enable-javascript
 {% endblock %}
