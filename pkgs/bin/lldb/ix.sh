@@ -22,6 +22,7 @@ bin/swig/4
 {% block patch %}
 {{super()}}
 sed -e 's|libkind SHARED|libkind STATIC|' -i lldb/cmake/modules/AddLLDB.cmake
+sed -e 's|.*define __STDC_LIMIT_MACROS.*||' -i lldb/bindings/interfaces.swig
 {% endblock %}
 
 {% block cmake_flags %}
@@ -31,5 +32,5 @@ LLDB_ENABLE_LIBEDIT=ON
 LLDB_ENABLE_CURSES=ON
 LLDB_ENABLE_LZMA=ON
 LLDB_ENABLE_LIBXML2=ON
-LLDB_ENABLE_PYTHON=ON
+LLDB_ENABLE_PYTHON=OFF
 {% endblock %}
