@@ -29,7 +29,6 @@ lib/json/nlohmann
 
 {% block bld_tool %}
 bin/jq
-bin/ld
 bld/bash
 bld/flex
 bld/bison
