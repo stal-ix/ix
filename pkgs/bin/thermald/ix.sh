@@ -21,7 +21,7 @@ bld/python
 bin/gtk/doc
 lib/dbus/glib
 bld/glib/codegen
-bin/auto/conf/archive
+bld/auto/archive
 {% endblock %}
 
 {% block autoreconf %}

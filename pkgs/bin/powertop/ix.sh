@@ -15,5 +15,5 @@ lib/pciutils
 
 {% block bld_tool %}
 bld/gettext
-bin/auto/conf/archive
+bld/auto/archive
 {% endblock %}

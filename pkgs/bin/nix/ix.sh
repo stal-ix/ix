@@ -33,7 +33,7 @@ bld/bash
 bld/flex
 bld/bison
 bin/lowdown
-bin/auto/conf/archive
+bld/auto/archive
 {% endblock %}
 
 {% block shell %}

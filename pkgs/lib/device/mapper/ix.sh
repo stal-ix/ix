@@ -1,4 +1,4 @@
-{% extends '//die/c/autohell.sh' %}
+{% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
 http://mirrors.kernel.org/sourceware/lvm2/LVM2.2.03.17.tgz
@@ -16,6 +16,7 @@ lib/linux
 
 {% block bld_tool %}
 bld/elfutils
+bld/auto/archive
 {% endblock %}
 
 {% block build_flags %}
