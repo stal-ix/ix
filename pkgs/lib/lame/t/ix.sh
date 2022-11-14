@@ -1,4 +1,4 @@
-{% extends '//die/c/autohell.sh' %}
+{% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
 https://downloads.sourceforge.net/project/lame/lame/3.100/lame-3.100.tar.gz
@@ -11,6 +11,7 @@ lib/c
 
 {% block bld_tool %}
 bin/nasm
+bld/gettext
 {% endblock %}
 
 {% block configure_flags %}

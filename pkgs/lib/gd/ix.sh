@@ -7,9 +7,9 @@ md5:f75f9721b858f25acc5c7c917ab7ccba
 
 {% block lib_deps %}
 lib/c
+lib/png
 lib/webp
 lib/jpeg
-lib/png
 lib/heif
 lib/tiff
 lib/iconv
