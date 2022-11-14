@@ -1,4 +1,4 @@
-{% extends '//die/c/autohell.sh' %}
+{% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
 http://www.jedrea.com/chmlib/chmlib-0.40.tar.bz2
