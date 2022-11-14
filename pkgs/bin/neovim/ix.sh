@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/neovim/neovim/archive/refs/tags/v0.8.0.tar.gz
-sha:505e3dfb71e2f73495c737c034a416911c260c0ba9fd2092c6be296655be4d18
+https://github.com/neovim/neovim/archive/refs/tags/v0.8.1.tar.gz
+sha:b4484e130aa962457189f3dee34b8481943c1e395d2d684c6f8b91598494d9ec
 {% endblock %}
 
 {% block bld_libs %}
@@ -12,8 +12,8 @@ lib/uv/l
 lib/intl
 lib/vterm
 lib/termkey
-lib/msgpack/c
 lib/unibilium
+lib/msgpack/c
 lib/tree/sitter
 {% endblock %}
 
