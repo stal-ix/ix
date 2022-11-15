@@ -14,10 +14,14 @@ lib/fontconfig
 lib/gdk/pixbuf
 {% endblock %}
 
+{% block bld_libs %}
+lib/linux
+{% endblock %}
+
 {% block bld_tool %}
 bld/gettext
-bld/glib/codegen
 bld/wayland
+bld/glib/codegen
 {% endblock %}
 
 {% block run_data %}
