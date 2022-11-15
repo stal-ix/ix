@@ -57,6 +57,21 @@ export CMFLAGS="-DQT_DISABLE_NO_DEFAULT_PATH_IN_QT_PACKAGES=ON -DBUILD_WITH_QT6=
 sed -e 's|"Sans Serif"|"system-ui"|' -i src/gui/platform/unix/qgenericunixthemes.cpp
 {% endblock %}
 
+{#
+SIGSEGV with -O2
+[Switching to LWP 14132]
+0x0000000009f795b7 in QRgba64 const* fetchTransformedBilinear64<(TextureBlendType)4>(QRgba64*, Operator const*, QSpanData const*, int, int, int) ()
+(gdb) bt
+#0  0x0000000009f795b7 in QRgba64 const* fetchTransformedBilinear64<(TextureBlendType)4>(QRgba64*, Operator const*, QSpanData const*, int, int, int) ()
+#1  0x0000000009f87338 in handleSpans<BlendSrcGenericRGB64>(int, QT_FT_Span_ const*, QSpanData const*, Operator const&)::{lambda(int, int)#1}::operator()(int, int) const ()
+#2  0x0000000009f87444 in void std::__1::__function::__policy_invoker<void ()>::__call_impl<std::__1::__function::__default_alloc_func<handleSpans<BlendSrcGenericRGB64>(int, QT_FT_Span_ const*, QSpanData const*, Operator const&)::{lambda()#1}, void ()> >(std::__1::__function::__policy_storage const*)
+    ()
+    #3  0x000000000a4ce3a1 in QThreadPoolThread::run() ()
+    #4  0x000000000a4cbdb9 in QThreadPrivate::start(void*) ()
+    #5  0x000000000a746a6c in start ()
+    #6  0x0000000000000000 in ?? ()
+#}
+
 {% block setup %}
 export OPTFLAGS="${OPTFLAGS} -O0"
 {% endblock %}
