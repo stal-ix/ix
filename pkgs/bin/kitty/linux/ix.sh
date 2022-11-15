@@ -2,8 +2,8 @@
 
 {% block bld_libs %}
 lib/dbus
-lib/mesa
 lib/rsync
+lib/opengl
 lib/wayland
 lib/glfw/deps
 lib/xkbcommon
@@ -12,8 +12,8 @@ lib/fontconfig
 {% endblock %}
 
 {% block bld_tool %}
-lib/curses/n
 bld/wayland
+lib/curses/n
 {{super()}}
 {% endblock %}
 

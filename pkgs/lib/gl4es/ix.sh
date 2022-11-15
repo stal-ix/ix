@@ -7,7 +7,7 @@ sha:b565e717c7d192e936bda25f3cb90ad8db398af56414ec08294b6716574c1a6d
 
 {% block lib_deps %}
 lib/c
-lib/mesa
+lib/opengl
 lib/execinfo
 {% endblock %}
 

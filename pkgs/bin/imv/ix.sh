@@ -9,7 +9,6 @@ sha:88d16885017b74b594ddd6a03ef20294a6cc053f04ccc2e1edef69f3515f7999
 lib/c
 lib/icu
 lib/heif
-lib/mesa
 lib/inih
 lib/cairo
 lib/pango
