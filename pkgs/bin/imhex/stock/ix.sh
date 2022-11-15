@@ -13,7 +13,7 @@ lib/dbus
 lib/curl
 lib/yara
 lib/glfw
-lib/mesa/gl
+lib/opengl
 lib/freetype
 lib/mbedtls/3
 lib/cap/stone

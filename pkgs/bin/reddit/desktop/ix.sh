@@ -25,7 +25,6 @@ lib/gumbo
 lib/opengl
 lib/spdlog
 lib/openssl
-lib/mesa/gl
 lib/sqlite/3
 lib/freetype
 lib/sdl/deps

@@ -13,9 +13,9 @@ lib/mesa
 lib/inih
 lib/cairo
 lib/pango
+lib/opengl
 lib/ns/gif
 lib/wayland
-lib/mesa/gl
 lib/xkbcommon
 lib/freeimage
 lib/jpeg/turbo

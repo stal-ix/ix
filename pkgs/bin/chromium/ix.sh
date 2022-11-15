@@ -20,9 +20,7 @@ lib/xslt
 lib/pango
 lib/cairo
 lib/opengl
-lib/mesa/gl
 lib/wayland
-lib/mesa/egl
 lib/pciutils
 lib/xkbcommon
 lib/shim/extra
