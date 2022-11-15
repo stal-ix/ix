@@ -9,3 +9,8 @@ sha:3be91163208577761969a8ae499d737c4dbb764f73c46aa8f76a512ee36b7da4
 {{super()}}
 aux/hwdata
 {% endblock %}
+
+{% block meson_flags %}
+{{super()}}
+examples=false
+{% endblock %}
