@@ -5,7 +5,6 @@
 lib/glu
 lib/opengl
 lib/freeglut
-lib/mesa/glesv2
 {% endblock %}
 
 {% block cmake_flags %}
