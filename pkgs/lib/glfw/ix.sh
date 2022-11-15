@@ -7,9 +7,8 @@ sha:4d025083cc4a3dd1f91ab9b9ba4f5807193823e565a5bcf4be202669d9911ea6
 
 {% block lib_deps %}
 lib/c
-lib/mesa/gl
+lib/opengl
 lib/wayland
-lib/mesa/egl
 lib/xkbcommon
 lib/vulkan/loader
 lib/vulkan/headers

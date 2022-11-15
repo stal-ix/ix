@@ -3,9 +3,8 @@
 {% block bld_libs %}
 lib/lua
 lib/mu/js
+lib/opengl
 lib/wayland
-lib/mesa/gl
-lib/mesa/egl
 lib/xkbcommon
 lib/drivers/3d
 lib/rubber/band

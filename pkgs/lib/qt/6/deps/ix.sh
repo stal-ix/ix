@@ -1,7 +1,6 @@
 {% extends '//die/c/premain.sh' %}
 
 {% block lib_deps %}
-lib/mesa/egl
 lib/qt/6/svg
 lib/qt/6/base
 lib/drivers/3d

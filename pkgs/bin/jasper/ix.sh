@@ -4,9 +4,7 @@
 {{super()}}
 lib/glu
 lib/opengl
-lib/mesa/gl
 lib/freeglut
-lib/mesa/egl
 lib/mesa/glesv2
 {% endblock %}
 

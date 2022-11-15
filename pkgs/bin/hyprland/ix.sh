@@ -11,6 +11,7 @@ lib/c++
 lib/pango
 lib/cairo
 lib/input
+lib/opengl
 lib/wayland
 lib/xkbcommon
 lib/wlroots/15

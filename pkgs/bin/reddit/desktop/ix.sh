@@ -28,7 +28,6 @@ lib/openssl
 lib/mesa/gl
 lib/sqlite/3
 lib/freetype
-lib/mesa/egl
 lib/sdl/deps
 lib/range/v3
 lib/uriparser

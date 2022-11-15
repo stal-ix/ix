@@ -14,7 +14,6 @@ lib/wpe
 lib/icu
 lib/png
 lib/avif
-lib/xml/2
 lib/glib
 lib/jpeg
 lib/webp
@@ -23,6 +22,7 @@ lib/woff2
 lib/epoxy
 lib/cairo
 lib/tasn1
+lib/xml/2
 lib/gcrypt
 lib/soup/3
 lib/lcms/2

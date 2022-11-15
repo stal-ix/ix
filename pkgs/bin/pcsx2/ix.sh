@@ -35,10 +35,8 @@ lib/udev
 lib/ryml
 lib/sdl/2
 lib/opengl
-lib/mesa/gl
 lib/wayland
 lib/glslang
-lib/mesa/egl
 lib/sdl/deps
 lib/harfbuzz
 lib/shim/x11

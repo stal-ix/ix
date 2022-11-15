@@ -2,8 +2,7 @@
 
 {% block bld_libs %}
 {{super()}}
-lib/mesa/gl
-lib/mesa/egl
+lib/opengl
 lib/xkbcommon
 lib/drivers/3d
 {% endblock %}

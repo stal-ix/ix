@@ -8,7 +8,7 @@ sha:40bb2d69acba76076ead4b880b684e26230abf095959e3e7fc2e2864dc5a32e4
 {% block lib_deps %}
 lib/c
 lib/c++
-lib/mesa/egl
+lib/opengl
 lib/xkbcommon
 {% endblock %}
 

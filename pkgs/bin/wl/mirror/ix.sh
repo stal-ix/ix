@@ -14,8 +14,8 @@ sha:f71031f8a4450c4eee3577507a43db4a4714ac37bd77dd2ba2c4eca21292c2ea
 
 {% block bld_libs %}
 lib/c
+lib/opengl
 lib/wayland
-lib/mesa/egl
 lib/drivers/3d
 {% endblock %}
 
