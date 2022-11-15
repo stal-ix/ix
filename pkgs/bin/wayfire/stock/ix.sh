@@ -26,7 +26,6 @@ lib/xkbcommon
 lib/wf/config
 lib/drivers/3d
 lib/wlroots/15
-lib/mesa/glesv2
 {% endblock %}
 
 {% block bld_tool %}
