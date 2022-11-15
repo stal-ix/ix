@@ -10,8 +10,6 @@ lib/c
 lib/c++
 {% endblock %}
 
-{% block patch %}
-find . -name Makefile.am -type f | while read l; do
-    sed -e 's|-lstdc++||g' -i ${l}
-done
+{% block bld_libs %}
+lib/shim/atomic
 {% endblock %}
