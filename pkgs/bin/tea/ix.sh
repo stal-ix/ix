@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/psemiletov/tea-qt/archive/refs/tags/61.2.0.tar.gz
-sha:d93f93934d4f97cbd19e5312374168e4b673e11d753d58a5fcfa510ee863d2f6
+https://github.com/psemiletov/tea-qt/archive/refs/tags/62.0.2.tar.gz
+sha:974e3843e27e692eab594d3f481bc877d411812f1249377b618dd6e64486a0db
 {% endblock %}
 
 {% block bld_libs %}

@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-http://download.savannah.nongnu.org/releases/man-db/man-db-2.10.2.tar.xz
-sha:ee97954d492a13731903c9d0727b9b01e5089edbd695f0cdb58d405a5af5514d
+http://download.savannah.nongnu.org/releases/man-db/man-db-2.11.1.tar.xz
+sha:2eabaa5251349847de9c9e43c634d986cbcc6f87642d1d9cb8608ec18487b6cc
 {% endblock %}
 
 {% block bld_libs %}
