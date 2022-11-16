@@ -1,7 +1,7 @@
 {% extends '//lib/qt/6/base/t/ix.sh' %}
 
 {% block bld_libs %}
-lib/linux
+lib/kernel
 {{super()}}
 {% endblock %}
 

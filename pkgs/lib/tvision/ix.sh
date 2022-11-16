@@ -8,8 +8,6 @@ sha:5a2e62ede30882428673b2c6c849a75bb237d264518288f85f3d28bfab008f2e
 {% block lib_deps %}
 lib/c
 lib/c++
-{% if linux %}
-lib/linux
-{% endif %}
+lib/kernel
 lib/curses
 {% endblock %}

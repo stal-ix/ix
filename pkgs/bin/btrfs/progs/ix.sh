@@ -11,7 +11,7 @@ lib/z
 lib/lzo
 lib/zstd
 lib/udev
-lib/linux
+lib/kernel
 lib/gcrypt
 lib/execinfo
 lib/e2fsprogs

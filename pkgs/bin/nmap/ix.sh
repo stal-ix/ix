@@ -9,7 +9,7 @@ sha:55bcfe4793e25acc96ba4274d8c4228db550b8e8efd72004b38ec55a2dd16651
 lib/c
 lib/z
 lib/pcre
-lib/linux
+lib/kernel
 lib/ssh/2
 lib/linear
 lib/openssl

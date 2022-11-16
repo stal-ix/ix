@@ -9,9 +9,7 @@ sha:c216a66c967181b38002c1fd06fb5cad4a8c21865af76cb22b3bf4786070d315
 lib/c
 lib/lz4
 lib/lzo
-{% if linux %}
-lib/linux
-{% endif %}
+lib/kernel
 lib/{{openvpnssl or 'openssl'}}
 {% endblock %}
 

@@ -12,9 +12,7 @@ lib/ucontext
 {% endblock %}
 
 {% block bld_libs %}
-{% if linux %}
-lib/linux
-{% endif %}
+lib/kernel
 {% endblock %}
 
 {% block setup_tools %}

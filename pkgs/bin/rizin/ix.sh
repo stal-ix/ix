@@ -11,7 +11,7 @@ lib/z
 lib/uv
 lib/lz4
 lib/zip
-lib/linux
+lib/kernel
 lib/magic
 lib/xxhash
 lib/openssl

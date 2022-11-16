@@ -7,7 +7,7 @@ sha:b2a9395b876844273e1c7f68c0bbc9ada2637fa585d2ae5c0e308b4840a3eaf4
 
 {% block lib_deps %}
 lib/c
-lib/linux
+lib/kernel
 {% endblock %}
 
 {% block bld_tool %}

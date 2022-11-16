@@ -14,7 +14,7 @@ lib/shim/atomic
 {% endblock %}
 
 {% block bld_libs %}
-lib/linux
+lib/kernel
 {% endblock %}
 
 {% block unpack %}

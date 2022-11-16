@@ -6,9 +6,7 @@ lib/xml/2
 lib/edit
 lib/python
 lib/curses
-{% if linux %}
-lib/linux
-{% endif %}
+lib/kernel
 {% if darwin %}
 lib/darwin/framework/CoreFoundation
 {% endif %}

@@ -17,10 +17,8 @@ lib/boost
 lib/bzip/2
 lib/curses
 lib/gnutls
+lib/kernel
 lib/pcre/2/posix
-{% if linux %}
-lib/linux
-{% endif %}
 {% endblock %}
 
 {% block cmake_flags %}

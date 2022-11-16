@@ -16,7 +16,7 @@ lib/c
 {% endblock %}
 
 {% block bld_libs %}
-lib/linux
+lib/kernel
 {% endblock %}
 
 {% block configure_flags %}

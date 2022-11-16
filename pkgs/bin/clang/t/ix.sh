@@ -4,14 +4,12 @@
 
 {% block bld_libs %}
 lib/c
-{% if linux %}
-lib/linux
-{% endif %}
+lib/z
+lib/c++
+lib/kernel
 {% if darwin %}
 lib/darwin/framework/CoreFoundation
 {% endif %}
-lib/z
-lib/c++
 {% endblock %}
 
 {% block cmake_flags %}

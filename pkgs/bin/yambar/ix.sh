@@ -10,7 +10,7 @@ lib/c
 lib/alsa
 lib/yaml
 lib/udev
-lib/linux
+lib/kernel
 lib/tllist
 lib/fcft/3
 lib/wayland

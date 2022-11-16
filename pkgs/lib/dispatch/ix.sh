@@ -12,7 +12,7 @@ lib/bsd
 {% endblock %}
 
 {% block bld_libs %}
-lib/linux
+lib/kernel
 lib/bsd/overlay
 {% endblock %}
 

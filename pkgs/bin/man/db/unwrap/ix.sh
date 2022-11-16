@@ -9,7 +9,7 @@ sha:ee97954d492a13731903c9d0727b9b01e5089edbd695f0cdb58d405a5af5514d
 lib/c
 lib/z
 lib/gdbm
-lib/linux
+lib/kernel
 lib/seccomp
 lib/pipeline
 {% endblock %}

@@ -7,7 +7,7 @@ sha:315b956951c3fea027287de204381534217c0bd0f37b4935877fe2db0cab859a
 
 {% block bld_libs %}
 lib/c
-lib/linux
+lib/kernel
 {% endblock %}
 
 {% block make_flags %}

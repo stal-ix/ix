@@ -11,7 +11,7 @@ lib/sndfile
 {% endblock %}
 
 {% block bld_libs %}
-lib/linux
+lib/kernel
 {% endblock %}
 
 {% block skip_dirs %}0{% endblock %}

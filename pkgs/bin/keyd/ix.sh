@@ -7,7 +7,7 @@ sha:77c4bf6fad2f9eef93d1ebbca2d2520f5296cec32b1a64d62cb5521ecf3eb6e1
 
 {% block bld_libs %}
 lib/c
-lib/linux
+lib/kernel
 lib/input
 {% endblock %}
 

@@ -1,7 +1,7 @@
 {% extends '//lib/upower/t/ix.sh' %}
 
 {% block bld_libs %}
-lib/linux
+lib/kernel
 lib/udev/g
 {{super()}}
 {% endblock %}

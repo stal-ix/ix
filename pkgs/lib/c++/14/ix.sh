@@ -10,7 +10,7 @@ lib/c/naked
 
 {% block bld_libs %}
 {% if linux %}
-lib/linux
+lib/kernel
 lib/shim/alloc
 {% endif %}
 {% endblock %}

@@ -8,7 +8,7 @@ sha:9a2809b07ad2a2d1c4ee115682e31e7b3116ed536ea70bef962cef1ca3d1553e
 {% block bld_libs %}
 lib/c
 lib/c++
-lib/linux
+lib/kernel
 lib/shim/gnu
 {% endblock %}
 

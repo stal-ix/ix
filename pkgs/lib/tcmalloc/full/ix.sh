@@ -1,7 +1,7 @@
 {% extends '//lib/tcmalloc/cmake/ix.sh' %}
 
 {% block bld_libs %}
-lib/linux
+lib/kernel
 {{super()}}
 {% endblock %}
 

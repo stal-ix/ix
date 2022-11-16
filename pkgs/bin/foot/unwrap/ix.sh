@@ -7,7 +7,7 @@ sha:604f777fdaccfc1ee2d20376cc5688a819dcd6b7113725880cc973194fd6c737
 
 {% block bld_libs %}
 lib/c
-lib/linux
+lib/kernel
 lib/fcft/3
 lib/tllist
 lib/pixman

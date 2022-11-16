@@ -8,7 +8,7 @@ sha:ccdf452387a6380973d2927363e9cbb939fa2068915a6f937ff9d24522024683
 {% block bld_libs %}
 lib/c
 lib/pam
-lib/linux
+lib/kernel
 {% endblock %}
 
 {% block bld_tool %}

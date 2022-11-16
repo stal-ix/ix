@@ -18,7 +18,7 @@ bld/qt/6
 {% block cmake_flags %}
 {{super()}}
 QT_FEATURE_linguist=ON
-QT_FEATURE_designer=ON
+QT_FEATURE_designer=OFF
 QT_FEATURE_pixeltool=OFF
 QT_FEATURE_assistant=OFF
 QT_FEATURE_distancefieldgenerator=OFF

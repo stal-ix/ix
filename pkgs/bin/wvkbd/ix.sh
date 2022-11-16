@@ -8,7 +8,7 @@ sha:6c6b3154d52acb762cd3b247f22fdf35f2eafa462ea5039ad75653d28e6972db
 {% block bld_libs %}
 lib/c
 lib/pango
-lib/linux
+lib/kernel
 lib/cairo
 lib/wayland
 lib/xkbcommon

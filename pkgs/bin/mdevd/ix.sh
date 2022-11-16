@@ -7,6 +7,6 @@ sha:94ce95067809e8c53f3e32ce5fd0c53356085d069ce2f1d3168e4e38a64e90f5
 
 {% block bld_libs %}
 lib/c
-lib/linux
+lib/kernel
 lib/skalibs
 {% endblock %}

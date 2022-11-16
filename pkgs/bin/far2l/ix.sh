@@ -12,13 +12,11 @@ lib/ssh
 lib/pcre
 lib/magic
 lib/spdlog
+lib/kernel
 lib/archive
 lib/xerces/c
 lib/uchardet
 lib/execinfo/fake
-{% if linux %}
-lib/linux
-{% endif %}
 {% endblock %}
 
 {% block bld_tool %}

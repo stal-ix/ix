@@ -1,7 +1,7 @@
 {% extends '//lib/compiler_rt/template/ix.sh' %}
 
 {% block bld_libs %}
-lib/linux
+lib/kernel
 lib/c/naked
 {% endblock %}
 

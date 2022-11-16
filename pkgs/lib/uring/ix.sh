@@ -9,7 +9,7 @@ sha:e092624af6aa244ade2d52181cc07751ac5caba2f3d63e9240790db9ed130bbc
 
 {% block lib_deps %}
 lib/c
-lib/linux
+lib/kernel
 {% endblock %}
 
 {% block build_flags %}

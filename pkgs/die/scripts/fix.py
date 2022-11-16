@@ -42,6 +42,15 @@ def fix(d, n):
 
     return '\n'.join(it()).strip() + '\n'
 
+def fix2(d, p):
+    def it():
+        for l in d.split('\n'):
+            if l == 'lib/linux':
+                yield 'lib/kernel'
+            else:
+                yield l
+
+    return '\n'.join(it()).strip() + '\n'
 
 for a, b, c in os.walk('.'):
     for x in c:
@@ -52,7 +61,7 @@ for a, b, c in os.walk('.'):
                 d = f.read()
 
             try:
-                dd = fix(d, p)
+                dd = fix2(d, p)
             except Exception as e:
                 print(f'skip {p}, {e}, {repr(e)}')
                 dd = None

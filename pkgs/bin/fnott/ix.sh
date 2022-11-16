@@ -9,7 +9,7 @@ sha:d17d6a55a7e0d56ddfc3277fbbefa7baf4c70f02265bcb8bd72ee464e202e454
 lib/c
 lib/png
 lib/dbus
-lib/linux
+lib/kernel
 lib/tllist
 lib/fcft/3
 lib/pixman

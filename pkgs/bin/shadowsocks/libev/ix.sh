@@ -9,7 +9,7 @@ sha:cfc8eded35360f4b67e18dc447b0c00cddb29cc57a3cec48b135e5fb87433488
 lib/c
 lib/ev
 lib/pcre
-lib/linux
+lib/kernel
 lib/c/ares
 lib/sodium
 lib/mbedtls/2

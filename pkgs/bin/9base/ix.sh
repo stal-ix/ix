@@ -7,7 +7,7 @@ sha:2997480eb5b4cf3092c0896483cd2de625158bf51c501aea2dc5cf74176d6de9
 
 {% block bld_libs %}
 lib/c
-lib/linux
+lib/kernel
 {% endblock %}
 
 {% block patch %}

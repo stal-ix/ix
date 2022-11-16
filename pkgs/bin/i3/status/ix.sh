@@ -10,7 +10,7 @@ lib/c
 lib/nl
 lib/yajl
 lib/alsa
-lib/linux
+lib/kernel
 lib/confuse
 {% endblock %}
 

@@ -13,7 +13,7 @@ lib/openssl
 {% endblock %}
 
 {% block bld_libs %}
-lib/linux
+lib/kernel
 lib/readline
 {% endblock %}
 

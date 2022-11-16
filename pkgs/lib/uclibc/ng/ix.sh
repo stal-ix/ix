@@ -6,7 +6,7 @@
 
 {% block lib_deps %}
 lib/build
-lib/linux
+lib/kernel
 {% endblock %}
 
 {% block bld_tool %}

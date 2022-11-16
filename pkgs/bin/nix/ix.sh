@@ -11,7 +11,7 @@ lib/c++
 lib/curl
 lib/cpuid
 lib/boost
-lib/linux
+lib/kernel
 lib/brotli
 lib/sodium
 lib/bzip/2

@@ -24,7 +24,7 @@ lib/sbc
 lib/alsa
 lib/dbus
 lib/udev
-lib/linux
+lib/kernel
 lib/curses
 lib/sndfile
 lib/shim/gnu

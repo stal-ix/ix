@@ -6,7 +6,7 @@ sha:3173d83e0f5a686606d2780129c802b865b6a0750c86db88d56097afc016a2dd
 {% endblock %}
 
 {% block bld_libs %}
-lib/linux
+lib/kernel
 {% endblock %}
 
 {% block lib_deps %}

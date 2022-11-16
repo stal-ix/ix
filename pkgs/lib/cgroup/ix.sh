@@ -11,7 +11,7 @@ lib/c
 
 {% block bld_libs %}
 lib/fts
-lib/linux
+lib/kernel
 {% endblock %}
 
 {% block bld_tool %}

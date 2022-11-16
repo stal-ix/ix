@@ -8,7 +8,7 @@ sha:442867d12f8525034a404fc8af3036dba8e1fc970998af2486c3b940dfad0874
 {% block bld_libs %}
 lib/c
 lib/popt
-lib/linux
+lib/kernel
 lib/efivar
 {% endblock %}
 

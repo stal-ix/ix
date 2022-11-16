@@ -1,4 +1,4 @@
-{% extends '//lib/linux/ix.sh' %}
+{% extends '//lib/linux/headers/ix.sh' %}
 
 {% block bld_libs %}
 {% endblock %}

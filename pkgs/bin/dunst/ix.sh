@@ -10,7 +10,7 @@ lib/c
 lib/glib
 lib/pango
 lib/cairo
-lib/linux
+lib/kernel
 lib/notify
 lib/wayland
 {% endblock %}

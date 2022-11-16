@@ -8,5 +8,5 @@ sha:3a079cfad60560227b67192482d7813bf96326fcbb66c04254839715f276fc69
 {% block bld_libs %}
 lib/c
 lib/usb
-lib/linux
+lib/kernel
 {% endblock %}

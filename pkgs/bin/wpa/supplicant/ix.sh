@@ -10,7 +10,7 @@ lib/c
 lib/nl
 lib/xml/2
 lib/dbus
-lib/linux
+lib/kernel
 lib/openssl
 lib/readline
 {% endblock %}

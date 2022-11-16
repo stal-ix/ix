@@ -7,7 +7,7 @@ sha:6cdd67425d4dc2be95792b072b49d773ce017dca0e7a9692f0a114fce3aeb0ed
 
 {% block bld_libs %}
 lib/c
-lib/linux
+lib/kernel
 lib/curses
 lib/parted
 lib/e2fsprogs

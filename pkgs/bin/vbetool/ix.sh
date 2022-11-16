@@ -11,7 +11,7 @@ sha:ea60c703b11b7c659924ec5b44a01733baa0ca3c7933acc6ba781086591e45e2
 lib/c
 lib/z
 lib/x86
-lib/linux
+lib/kernel
 lib/pciutils
 {% endblock %}
 

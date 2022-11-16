@@ -7,7 +7,7 @@ sha:92d720a666855e9f1c6a11512fd6e99674a82bbfe1442557815f2ce8e1293338
 
 {% block bld_libs %}
 lib/c
-lib/linux
+lib/kernel
 lib/iberty
 lib/elfutils
 {% endblock %}

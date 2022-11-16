@@ -15,7 +15,7 @@ lib/openssl
 
 {% if linux %}
 lib/fts
-lib/linux
+lib/kernel
 lib/rpmatch
 {% endif %}
 {% endblock %}

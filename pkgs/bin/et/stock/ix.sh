@@ -10,7 +10,7 @@ lib/c
 lib/c++
 lib/curl
 lib/boost
-lib/linux
+lib/kernel
 lib/sodium
 lib/curses
 lib/unwind

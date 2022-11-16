@@ -16,7 +16,7 @@ lib/glib
 lib/zstd
 lib/numa
 lib/slang
-lib/linux
+lib/kernel
 lib/unwind
 lib/iberty
 lib/curses

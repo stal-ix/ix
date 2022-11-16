@@ -4,14 +4,12 @@
 lib/python/libs
 {% endblock %}
 
-{% block bld_tool %}
-bld/auto/archive
+{% block bld_libs %}
+lib/kernel
 {% endblock %}
 
-{% block bld_libs %}
-{% if linux %}
-lib/linux
-{% endif %}
+{% block bld_tool %}
+bld/auto/archive
 {% endblock %}
 
 {% block patch_configure %}

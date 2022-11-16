@@ -9,7 +9,7 @@ sha:3850a27aacb79fcc4d352c1f02a7a59e0e8322afdaa1f5d58d676c02edfcfa36
 lib/c
 lib/c++
 lib/boost
-lib/linux
+lib/kernel
 lib/openssl
 {% endblock %}
 

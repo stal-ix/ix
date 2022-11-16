@@ -11,9 +11,7 @@ lib/z
 lib/intl
 lib/magic
 lib/curses
-{% if linux %}
-lib/linux
-{% endif %}
+lib/kernel
 {% endblock %}
 
 {% block bld_tool %}

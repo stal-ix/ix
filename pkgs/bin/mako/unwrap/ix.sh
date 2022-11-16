@@ -10,7 +10,7 @@ lib/c
 lib/basu
 lib/cairo
 lib/pango
-lib/linux
+lib/kernel
 lib/wayland
 lib/gdk/pixbuf
 {% endblock %}

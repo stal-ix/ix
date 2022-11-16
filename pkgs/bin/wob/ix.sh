@@ -7,7 +7,7 @@ sha:c4442fb43ab0d47c986d0c0041a385e1e66f7c16fc48ff0651993deb0d00ed01
 
 {% block bld_libs %}
 lib/c
-lib/linux
+lib/kernel
 lib/seccomp
 lib/wayland
 {% endblock %}

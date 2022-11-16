@@ -27,7 +27,7 @@ cd ..
 {% block bld_libs %}
 lib/c
 lib/pam
-lib/linux
+lib/kernel
 lib/shim/x11
 {% endblock %}
 

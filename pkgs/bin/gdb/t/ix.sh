@@ -16,11 +16,9 @@ lib/intl
 lib/expat
 lib/xxhash
 lib/curses
+lib/kernel
 lib/intel/pt
 lib/readline
-{% if linux %}
-lib/linux
-{% endif %}
 {% endblock %}
 
 {% block bld_tool %}

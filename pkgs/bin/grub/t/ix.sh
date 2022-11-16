@@ -11,7 +11,7 @@ lib/z
 lib/xz
 lib/usb
 lib/intl
-lib/linux
+lib/kernel
 lib/fuse/2
 lib/pciaccess
 lib/device/mapper

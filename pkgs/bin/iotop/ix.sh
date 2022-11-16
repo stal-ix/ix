@@ -7,7 +7,7 @@ sha:fd7fc79a3bb96a33dc370ff2982ebed2e96b10580786ed7a529b15c6b64b2912
 
 {% block bld_libs %}
 lib/c
-lib/linux
+lib/kernel
 lib/curses
 {% endblock %}
 

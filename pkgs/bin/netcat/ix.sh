@@ -7,7 +7,7 @@ sha:609ac7de4078f8fe05306081f8f428e8e03441c675ba07ee4bddbe0730b7666d
 
 {% block bld_libs %}
 lib/c
-lib/linux
+lib/kernel
 lib/bsd/overlay
 {% endblock %}
 

@@ -2,8 +2,6 @@
 
 {% block bld_libs %}
 lib/sndio
-{% if linux %}
-lib/linux
-{% endif %}
+lib/kernel
 {{super()}}
 {% endblock %}

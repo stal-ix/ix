@@ -9,7 +9,7 @@ sha:94ddb93553a63af080db5b9dfe88ee6122d5db8b5d70b09bb03ed50f39ba829d
 lib/c
 lib/acl
 lib/attr
-lib/linux
+lib/kernel
 lib/xcrypt
 {% endblock %}
 

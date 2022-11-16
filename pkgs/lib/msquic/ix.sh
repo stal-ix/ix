@@ -7,7 +7,7 @@ sha:55932998573ad19f0e96de7cb15900e36cbfef1d41a32f501cef4205b97c9ba9
 
 {% block lib_deps %}
 lib/c
-lib/linux
+lib/kernel
 lib/openssl
 {% endblock %}
 

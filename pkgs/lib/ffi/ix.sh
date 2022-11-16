@@ -10,9 +10,7 @@ lib/c
 {% endblock %}
 
 {% block bld_libs %}
-{% if linux %}
-lib/linux
-{% endif %}
+lib/kernel
 {% endblock %}
 
 {% block conf_ver %}

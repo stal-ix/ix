@@ -8,7 +8,7 @@ sha:24892e29ce27a57dfff8dc3a854da64220dee4ac770dd3f94a2866b4601b57a5
 {% block bld_libs %}
 lib/c
 lib/cap
-lib/linux
+lib/kernel
 {% endblock %}
 
 {% block install %}

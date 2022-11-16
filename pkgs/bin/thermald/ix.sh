@@ -10,7 +10,7 @@ lib/c
 lib/xz
 lib/c++
 lib/evdev
-lib/linux
+lib/kernel
 lib/xml/2
 lib/upower
 lib/dbus/glib

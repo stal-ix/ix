@@ -10,7 +10,7 @@ lib/c
 lib/edit
 lib/inih
 lib/urcu
-lib/linux
+lib/kernel
 lib/e2fsprogs
 {% endblock %}
 

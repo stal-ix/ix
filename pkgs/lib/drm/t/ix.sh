@@ -7,7 +7,7 @@ sha:3049cf843a47d12e5eeefbc3be3496d782fa09f42346bf0b7defe3d1e598d026
 
 {% block lib_deps %}
 lib/c
-lib/linux
+lib/kernel
 lib/atomicops
 lib/pciaccess
 {% endblock %}

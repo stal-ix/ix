@@ -3,7 +3,7 @@
 {% block bld_libs %}
 lib/intl
 lib/curl
-lib/linux
+lib/kernel
 lib/archive
 lib/sqlite/3
 lib/micro/httpd

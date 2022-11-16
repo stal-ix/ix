@@ -12,7 +12,7 @@ lib/icu
 lib/xml/2
 lib/xslt
 lib/intl
-lib/linux
+lib/kernel
 lib/openssl
 lib/readline
 lib/linux/util

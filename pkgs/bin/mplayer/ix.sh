@@ -15,7 +15,7 @@ lib/faac
 lib/faad2
 lib/mpeg2
 lib/sdl/1
-lib/linux
+lib/kernel
 lib/mpg123
 lib/ffmpeg
 lib/giflib

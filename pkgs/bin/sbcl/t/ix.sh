@@ -2,9 +2,7 @@
 
 {% block bld_libs %}
 lib/z/dl
-{% if linux %}
-lib/linux
-{% endif %}
+lib/kernel
 {% endblock %}
 
 {% block bld_tool %}

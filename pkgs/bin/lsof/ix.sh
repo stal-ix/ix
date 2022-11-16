@@ -8,7 +8,7 @@ sha:b5a052cac8d6b2726bbb1de2b98c6d9204c7619263fb63e9b6b1bd6bbb37bf14
 {% block bld_libs %}
 lib/c
 lib/tirpc
-lib/linux
+lib/kernel
 {% endblock %}
 
 {% block bld_tool %}

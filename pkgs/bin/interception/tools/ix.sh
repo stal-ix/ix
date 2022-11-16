@@ -11,6 +11,6 @@ lib/c++
 lib/udev
 lib/evdev
 lib/boost
-lib/linux
+lib/kernel
 lib/yaml/cpp
 {% endblock %}

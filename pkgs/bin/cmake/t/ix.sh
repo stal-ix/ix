@@ -9,9 +9,6 @@ sha:766927ced9a9948b4cb8377821fb8325fec861b15cbe847f9e61d3578872d254
 {% if darwin %}
 lib/darwin/framework/CoreFoundation
 {% endif %}
-{% if linux %}
-lib/linux
-{% endif %}
 lib/z
 lib/c
 lib/uv
@@ -19,6 +16,7 @@ lib/xz
 lib/c++
 lib/rhash
 lib/expat
+lib/kernel
 lib/bzip/2
 {% endblock %}
 

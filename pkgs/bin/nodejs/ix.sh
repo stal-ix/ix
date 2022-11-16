@@ -12,7 +12,7 @@ lib/uv
 lib/xz
 lib/icu
 lib/c++
-lib/linux
+lib/kernel
 lib/c/ares
 lib/brotli
 lib/openssl

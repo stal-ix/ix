@@ -7,7 +7,7 @@ sha:71533fe3b8f6381f24832198ba11d00f04a361454770c173b3b66bc3cdf272bd
 
 {% block bld_libs %}
 lib/c
-lib/linux
+lib/kernel
 lib/readline
 {% endblock %}
 

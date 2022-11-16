@@ -1,9 +1,7 @@
 {% extends '//lib/llvm/t/ix.sh' %}
 
 {% block bld_libs %}
-{% if linux %}
-lib/linux
-{% endif %}
+lib/kernel
 lib/c/naked
 lib/shim/alloc
 {% endblock %}

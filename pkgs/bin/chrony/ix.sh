@@ -9,7 +9,7 @@ sha:9d0da889a865f089a5a21610ffb6713e3c9438ce303a63b49c2fb6eaff5b8804
 lib/c
 lib/cap
 lib/edit
-lib/linux
+lib/kernel
 lib/seccomp
 lib/tom/crypt
 {% endblock %}

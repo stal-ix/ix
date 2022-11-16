@@ -13,7 +13,7 @@ sha:0ba013ab7ea668f4e02524784651be63bc7fde60c212d1d3e9b9d323bfb9989e
 lib/c
 lib/c++
 lib/fmt
-lib/linux
+lib/kernel
 lib/spdlog
 lib/execinfo
 lib/shim/gnu

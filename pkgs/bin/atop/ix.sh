@@ -8,7 +8,7 @@ sha:ca48d2f17e071deead5e6e9cc9e388bf6a3270d695e61976b3794d4d927b5c4e
 {% block bld_libs %}
 lib/c
 lib/z
-lib/linux
+lib/kernel
 lib/curses
 {% endblock %}
 
