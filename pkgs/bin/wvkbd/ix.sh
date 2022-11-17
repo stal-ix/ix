@@ -1,15 +1,15 @@
 {% extends '//die/c/make.sh' %}
 
 {% block fetch %}
-https://github.com/jjsullivan5196/wvkbd/archive/refs/tags/v0.11.tar.gz
-sha:6c6b3154d52acb762cd3b247f22fdf35f2eafa462ea5039ad75653d28e6972db
+https://github.com/jjsullivan5196/wvkbd/archive/refs/tags/v0.12.tar.gz
+sha:b45cea0835bed77e7fb2d070b8df5abdddd16958b2548fc2da3afb6c579cf268
 {% endblock %}
 
 {% block bld_libs %}
 lib/c
 lib/pango
-lib/kernel
 lib/cairo
+lib/kernel
 lib/wayland
 lib/xkbcommon
 {% endblock %}
