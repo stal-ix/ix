@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/upx/upx/releases/download/v4.0.0/upx-4.0.0-src.tar.xz
-sha:eaf938f8824e65f06852142fda97f8349ad660612979fa311618109c819f36ea
+https://github.com/upx/upx/releases/download/v4.0.1/upx-4.0.1-src.tar.xz
+sha:77003c8e2e29aa9804e2fbaeb30f055903420b3e01d95eafe01aed957fb7e190
 {% endblock %}
 
 {% block bld_libs  %}
