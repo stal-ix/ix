@@ -11,7 +11,7 @@ lib/atk
 {% endblock %}
 
 {% block bld_tool %}
-lib/gdk/pixbuf
+bld/gdk/pixbuf
 {{super()}}
 {% endblock %}
 
