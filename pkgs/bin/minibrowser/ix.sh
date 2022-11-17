@@ -1,4 +1,4 @@
-{% extends '//bin/webkitproc/ix.sh' %}
+{% extends '//bin/webkitproc/unwrap/ix.sh' %}
 
 {% block cmake_flags %}
 {{super()}}
