@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/rui314/mold/archive/refs/tags/v1.7.0.tar.gz
-sha:ccd685afcdb7047f8a8ce8b5ce3b3cd22205a0ebc548ff1f1da7b35415fafbe4
+https://github.com/rui314/mold/archive/refs/tags/v1.7.1.tar.gz
+sha:fa2558664db79a1e20f09162578632fa856b3cde966fbcb23084c352b827dfa9
 {% endblock %}
 
 {% block bld_libs %}
