@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://rsync.osuosl.org/pub/mariadb/mariadb-10.9.1/source/mariadb-10.9.1.tar.gz
-sha:c979bd6641e1dffde34cfb969a14411607ad09bfe5a252d9a8b76c313dbf6736
+https://rsync.osuosl.org/pub/mariadb/mariadb-10.10.2/source/mariadb-10.10.2.tar.gz
+sha:57cbd0112b22b592f657cd4eb82e2f36ad901351317bf8e17849578e803f3cb2
 {% endblock %}
 
 {% block bld_libs %}
