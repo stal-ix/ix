@@ -39,7 +39,10 @@ mkdir ${out}/bin
 cp real7z ${out}/bin/7z
 {% endblock %}
 
-{% block setup %}
-export CPPFLAGS="-D_UINT64_T_DECLARED -include stdint.h ${CPPFLAGS}"
-{{super()}}
+{% block cpp_missing %}
+stdint.h
+{% endblock %}
+
+{% block cpp_defines %}
+_UINT64_T_DECLARED
 {% endblock %}

@@ -14,6 +14,6 @@ lib/z/adler
 cd contrib/minizip
 {% endblock %}
 
-{% block setup %}
-export CPPFLAGS="-include zconf.h ${CPPFLAGS}"
+{% block cpp_missing %}
+zconf.h
 {% endblock %}

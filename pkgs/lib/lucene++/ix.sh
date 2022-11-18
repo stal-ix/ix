@@ -26,8 +26,8 @@ ENABLE_TEST=OFF
 LUCENE_BUILD_SHARED=OFF
 {% endblock %}
 
-{% block setup %}
-export CPPFLAGS="-include stdlib.h ${CPPFLAGS}"
+{% block cpp_missing %}
+stdlib.h
 {% endblock %}
 
 {% block install %}

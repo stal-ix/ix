@@ -5,9 +5,9 @@
 lib/shim/ix
 {% endblock %}
 
-{% block setup %}
+{% block cpp_missing %}
 {{super()}}
-export CPPFLAGS="-include ix.h ${CPPFLAGS}"
+ix.h
 {% endblock %}
 
 {% block patch %}

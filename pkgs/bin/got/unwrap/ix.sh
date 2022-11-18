@@ -53,6 +53,6 @@ int mergesort(void*, size_t, size_t, int (*)(const void*, const void*));
 EOF
 {% endblock %}
 
-{% block setup %}
-export CPPFLAGS="-include ${PWD}/xxx.h ${CPPFLAGS}"
+{% block cpp_missing %}
+${PWD}/xxx.h
 {% endblock %}

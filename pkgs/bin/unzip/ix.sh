@@ -17,8 +17,8 @@ done
 cd unzip*
 {% endblock %}
 
-{% block setup %}
-export CPPFLAGS="-include time.h ${CPPFLAGS}"
+{% block cpp_missing %}
+time.h
 {% endblock %}
 
 {% block patch %}

@@ -32,7 +32,10 @@ shut_up
 USE_SYSTEM_LIBS=yes
 {% endblock %}
 
+{% block cpp_missing %}
+limits.h
+{% endblock %}
+
 {% block setup %}
-export CPPFLAGS="-include limits.h ${CPPFLAGS}"
 export LD=ld
 {% endblock %}

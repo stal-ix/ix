@@ -55,8 +55,8 @@ EOF
 chmod +x *
 {% endblock %}
 
-{% block setup %}
-export CFLAGS="-include sys/types.h ${CFLAGS}"
+{% block cpp_missing %}
+sys/types.h
 {% endblock %}
 
 {% block configure %}

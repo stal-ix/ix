@@ -20,8 +20,8 @@ bld/auto/archive
 --enable-formally-proven-code
 {% endblock %}
 
-{% block setup %}
-export CPPFLAGS="-include stdint.h ${CPPFLAGS}"
+{% block cpp_missing %}
+stdint.h
 {% endblock %}
 
 {% block env %}

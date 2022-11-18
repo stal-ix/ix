@@ -20,6 +20,6 @@ introspection=disabled
 bld/glib/codegen
 {% endblock %}
 
-{% block setup %}
-export CPPFLAGS="-include math.h ${CPPFLAGS}"
+{% block cpp_missing %}
+math.h
 {% endblock %}

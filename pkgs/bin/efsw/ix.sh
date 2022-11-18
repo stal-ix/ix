@@ -17,8 +17,12 @@ lib/c
 wrap_cc
 {% endblock %}
 
+{% block cpp_missing %}
+sys/select.h
+{% endblock %}
+
 {% block setup %}
-export CPPFLAGS="-Du_int32_t=uint32_t -include sys/select.h ${CPPFLAGS}"
+export CPPFLAGS="-Du_int32_t=uint32_t ${CPPFLAGS}"
 {% endblock %}
 
 {% block install %}

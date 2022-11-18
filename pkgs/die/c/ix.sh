@@ -34,8 +34,17 @@
     {% endblock %}
   {% endset %}
 
+  {% set cpp_missing %}
+    {% block cpp_missing %}
+    {% endblock %}
+  {% endset %}
+
   {% for f in ix.parse_list(cpp_includes) %}
     -I{{f}}
+  {% endfor %}
+
+  {% for f in ix.parse_list(cpp_missing) %}
+    -include{{f}}
   {% endfor %}
 {% endset %}
 

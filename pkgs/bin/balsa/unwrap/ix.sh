@@ -41,8 +41,8 @@ find . -type f | while read l; do
 done
 {% endblock %}
 
-{% block setup %}
-export CPPFLAGS="-include fcntl.h ${CPPFLAGS}"
+{% block cpp_missing %}
+fcntl.h
 {% endblock %}
 
 {% block install %}

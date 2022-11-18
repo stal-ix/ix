@@ -22,6 +22,6 @@ lib/readline
 rm -rf ${out}/var
 {% endblock %}
 
-{% block setup %}
-export CPPFLAGS="-include sys/time.h ${CPPFLAGS}"
+{% block cpp_missing %}
+sys/time.h
 {% endblock %}

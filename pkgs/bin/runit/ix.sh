@@ -9,9 +9,12 @@ sha:6fd0160cb0cf1207de4e66754b6d39750cff14bb0aa66ab49490992c0c47ba18
 lib/c
 {% endblock %}
 
+{% block cpp_missing %}
+unistd.h
+{% endblock %}
+
 {% block setup %}
 export CFLAGS="-Wno-implicit-int ${CFLAGS}"
-export CPPFLAGS="-include unistd.h ${CPPFLAGS}"
 {% endblock %}
 
 {% block unpack %}

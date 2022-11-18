@@ -12,7 +12,7 @@ sed -e 's|.*str.*tmp.*f2c.*|tdbuf = ix_mkstemp_template();|' \
     -i sysdep.c
 {% endblock %}
 
-{% block setup %}
+{% block cpp_missing %}
 {{super()}}
-export CPPFLAGS="-include ix.h ${CPPFLAGS}"
+ix.h
 {% endblock %}
