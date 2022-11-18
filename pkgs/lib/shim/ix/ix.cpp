@@ -8,7 +8,10 @@
 #include <stdlib.h>
 #include <unistd.h>
 
+#include <sys/mman.h>
+
 namespace {
+    __attribute__((__noreturn__))
     static void die(const std::string& msg) {
         fprintf(stderr, "shit happen: %s, abort now\n", msg.c_str());
         abort();
@@ -75,5 +78,11 @@ extern "C" char* ix_mkstemp_template() {
 }
 
 extern "C" int ix_mkstemp() {
-    return mkstemp(mkstempTemplate().data());
+    auto name = mkstempTemplate();
+
+    if (auto fd = memfd_create(name.c_str(), 0); fd > 0) {
+        return fd;
+    }
+
+    return mkstemp(name.data());
 }
