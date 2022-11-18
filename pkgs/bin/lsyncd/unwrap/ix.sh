@@ -7,7 +7,7 @@ sha:501f70368da8c43d3da81bf9bbb22f43dfcbc9f96b03c745842f326723c091c7
 
 {% block bld_libs %}
 lib/c
-lib/lua/{{lua_ver}}
+lib/lua
 {% endblock %}
 
 {% block bld_tool %}
