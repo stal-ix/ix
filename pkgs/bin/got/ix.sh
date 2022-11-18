@@ -1,5 +1,5 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
-bin/got/unwrap(curses=netbsd)
+bin/got/ix(curses=netbsd)
 {% endblock %}
