@@ -80,9 +80,15 @@ extern "C" char* ix_mkstemp_template() {
 extern "C" int ix_mkstemp() {
     auto name = mkstempTemplate();
 
-    if (auto fd = memfd_create(name.c_str(), 0); fd > 0) {
+    if (auto fd = memfd_create(name.c_str(), 0); fd >= 0) {
         return fd;
     }
 
-    return mkstemp(name.data());
+    if (auto fd = mkstemp(name.data()); fd >= 0) {
+        unlink(name.data());
+
+        return fd;
+    }
+
+    return -1;
 }
