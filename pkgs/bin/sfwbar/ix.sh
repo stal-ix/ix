@@ -1,8 +1,8 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://github.com/LBCrion/sfwbar/archive/refs/tags/v1.0_beta6.tar.gz
-sha:4967c4565cf231e7701c74dba0aa5ae14df443acf3c551f961f9b6f12b94abde
+https://github.com/LBCrion/sfwbar/archive/refs/tags/v1.0_beta9.tar.gz
+sha:ad4e2599c34703298871511e013b183d2c9b6f3c42e75d8a7514fae162ba07b3
 {% endblock %}
 
 {% block bld_libs %}
