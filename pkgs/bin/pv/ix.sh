@@ -1,22 +1,16 @@
 {% extends '//die/c/autohell.sh' %}
 
 {% block fetch %}
-http://www.ivarch.com/programs/sources/pv-1.6.6.tar.bz2
-md5:ff3564fddcc2b9bd4a9c1d143aba4b4c
+https://fossies.org/linux/privat/pv-1.6.20.tar.gz
+sha:b5f1ee79a370c5287e092b6e8f1084f026521fe0aecf25c44b9460b870319a9e
 {% endblock %}
 
-{% block bld_tool %}
-{% if darwin %}
-bld/cctools
-{% endif %}
+{% block bld_libs %}
+lib/c
 {% endblock %}
 
-{% block make_flags %}
-{% if linux %}
-LD=ld.lld
-{% else %}
-LD=ld
-{% endif %}
+{% block build_flags %}
+wrap_cc
 {% endblock %}
 
 {% block cpp_defines %}
@@ -25,8 +19,4 @@ stat64=stat
 fstat64=fstat
 lstat64=lstat
 {% endif %}
-{% endblock %}
-
-{% block bld_libs %}
-lib/c
 {% endblock %}
