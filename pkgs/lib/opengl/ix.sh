@@ -6,6 +6,7 @@
 lib/mesa/gl
 lib/mesa/egl
 {% else %}
+lib/kernel
 lib/shim/egl
 {% endif %}
 {% endif %}
