@@ -60,4 +60,8 @@ typedef struct {
 #define xcb_connection_has_error(x) 0
 #define xcb_disconnect(x)
 EOF
+
+cat << EOF > ${out}/include/xcb/xcb_icccm.h
+#pragma once
+EOF
 {% endblock %}

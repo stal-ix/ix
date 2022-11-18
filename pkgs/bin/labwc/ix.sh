@@ -1,8 +1,8 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://github.com/labwc/labwc/archive/refs/tags/0.5.3.tar.gz
-sha:0b67bc89a5d9059fae28822f3ba2373553dea290cd931c9384a91dbeb2054650
+https://github.com/labwc/labwc/archive/refs/tags/0.6.0.tar.gz
+sha:3a4ee960b4f764f276d581f83c95692c74c6a685e55438fb37ca6dd92e02f069
 {% endblock %}
 
 {% block bld_libs %}
@@ -13,8 +13,9 @@ lib/pango
 lib/cairo
 lib/input
 lib/wayland
+lib/shim/x11
 lib/xkbcommon
-lib/wlroots/15
+lib/wlroots/16
 lib/drivers/3d
 {% endblock %}
 
