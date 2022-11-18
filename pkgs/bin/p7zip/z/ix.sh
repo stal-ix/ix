@@ -41,8 +41,10 @@ cp real7z ${out}/bin/7z
 
 {% block cpp_missing %}
 stdint.h
+{{super()}}
 {% endblock %}
 
 {% block cpp_defines %}
 _UINT64_T_DECLARED
+{{super()}}
 {% endblock %}
