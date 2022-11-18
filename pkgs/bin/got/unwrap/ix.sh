@@ -9,11 +9,11 @@ sha:d3955420752a5e7112e029a0a29cd0d8b434ba57527dfb0617913179d10efb20
 lib/c
 lib/z
 lib/md
+lib/bsd
 lib/event
 lib/curses
 lib/openssl
 lib/linux/util
-lib/bsd/overlay
 {% endblock %}
 
 {% block c_rename_symbol %}
@@ -33,9 +33,11 @@ cat << EOF > xxx.h
 #include <stddef.h>
 #include <stdint.h>
 #include <limits.h>
+#include <stdio.h>
 
 #define __scanflike(X, Y)
 
+int fpurge(FILE* stream);
 void arc4random_buf(void*, size_t);
 uint32_t arc4random();
 void arc4random_stir();
