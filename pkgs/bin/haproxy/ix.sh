@@ -9,7 +9,6 @@ sha:ce9e19ebfcdd43e51af8a6090f1df8d512d972ddf742fa648a643bbb19056605
 lib/c
 lib/kernel
 lib/pcre/2
-lib/xcrypt
 lib/openssl
 lib/execinfo
 lib/pcre/2/posix

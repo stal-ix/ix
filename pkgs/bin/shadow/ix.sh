@@ -10,7 +10,6 @@ lib/c
 lib/acl
 lib/attr
 lib/kernel
-lib/xcrypt
 {% endblock %}
 
 {% block bld_tool %}

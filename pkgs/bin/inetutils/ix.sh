@@ -7,7 +7,6 @@ sha:1789d6b1b1a57dfe2a7ab7b533ee9f5dfd9cbf5b59bb1bb3c2612ed08d0f68b2
 
 {% block bld_libs %}
 lib/c
-lib/xcrypt
 lib/curses
 lib/readline
 {% endblock %}
