@@ -8,6 +8,12 @@ import core.utils as cu
 import core.realm as cr
 
 
+def match(x, lst):
+    for l in lst:
+        if l in x:
+            return True
+
+
 class Repo:
     def __init__(self, config):
         self.config = config
@@ -23,10 +29,15 @@ class Repo:
         except FileNotFoundError:
             pass
 
-    def gc_cycle(self):
+    def gc_cycle(self, kind):
+        k = [f'-{x}' for x in kind]
+
         for x in self.iter_garbage():
-            print(f'purge {x}')
-            self.collect_garbage(x)
+            if match(x, k):
+                print(f'purge {x}')
+                self.collect_garbage(x)
+            else:
+                print(f'stay {x}')
 
     def load_realm(self, name):
         try:

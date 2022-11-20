@@ -12,8 +12,8 @@ class Ops:
     def execute_graph(self, graph):
         ce.execute(graph)
 
-    def gc(self):
-        cr.Repo(self.cfg).gc_cycle()
+    def gc(self, kind):
+        cr.Repo(self.cfg).gc_cycle(kind)
 
     def respawn(self):
         return [sys.executable, self.cfg.binary]
