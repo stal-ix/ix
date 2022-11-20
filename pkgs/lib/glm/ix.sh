@@ -10,8 +10,12 @@ lib/c
 lib/c++
 {% endblock %}
 
+{% block bld_tool %}
+bld/scripts/genpc
+{% endblock %}
+
 {% block install %}
 mkdir -p ${out}/include
 cp -R glm ${out}/include/
-{{hooks.gen_pc('glm', '0.9.9.8')}}
+genpc "glm" "0.9.9.8"
 {% endblock %}

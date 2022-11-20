@@ -4,6 +4,10 @@
 :
 {% endblock %}
 
+{% block bld_tool %}
+bld/scripts/genpc
+{% endblock %}
+
 {% block build %}
 >empty.c
 clang -c empty.c -o empty.o
@@ -14,7 +18,7 @@ ar q libempty.a empty.o
 mkdir -p ${out}/lib/pkgconfig
 cp libempty.a ${out}/lib/libcrypto.a
 cp libempty.a ${out}/lib/libssl.a
-{{hooks.gen_pc('openssl', '1.1.1')}}
+genpc "openssl" "1.1.1"
 {% endblock %}
 
 {% block env %}

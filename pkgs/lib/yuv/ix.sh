@@ -10,6 +10,10 @@ lib/c
 lib/jpeg
 {% endblock %}
 
+{% block bld_tool %}
+bld/scripts/genpc
+{% endblock %}
+
 {% block skip_dirs %}0{% endblock %}
 
 {% block build_flags %}
@@ -18,5 +22,5 @@ wrap_cc
 
 {% block install %}
 {{super()}}
-{{hooks.gen_pc('libyuv', '100.0.0')}}
+genpc "libyuv" "100.0.0"
 {% endblock %}

@@ -12,6 +12,10 @@ lib/opus
 lib/tg/owt
 {% endblock %}
 
+{% block bld_tool %}
+bld/scripts/genpc
+{% endblock %}
+
 {% block build_flags %}
 shut_up
 {% endblock %}
@@ -34,7 +38,7 @@ third_party_loc=${TPL}
 
 {% block install %}
 {{super()}}
-{{hooks.gen_pc('tgvoip', '2.4.4')}}
+genpc "tgvoip" "2.4.4"
 {% endblock %}
 
 {% block env %}
