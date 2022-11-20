@@ -1,6 +1,6 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
-bin/brightnessctl/sudo
+bin/sudo/wrapper(wrap=brightnessctl)
 bin/brightnessctl/unwrap
 {% endblock %}
