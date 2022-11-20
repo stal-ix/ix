@@ -27,14 +27,3 @@ EOF
 
 chmod +x {{name}}
 ) {% endmacro %}
-
-{% macro wrap_c_compilers() %}
-for name in ${CC} ${CXX}; do
-    cat << EOF > ${name}
-#!$(which sh)
-exec wrapcc "$(which ${name})" "\${@}"
-EOF
-
-    chmod +x ${name}
-done
-{% endmacro %}

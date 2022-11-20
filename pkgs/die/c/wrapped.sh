@@ -10,6 +10,13 @@
 
 {% block setup_tools %}
 {% if 'wrap_cc' in build_flags %}
-{{hooks.wrap_c_compilers()}}
+for name in ${CC} ${CXX}; do
+    cat << EOF > ${name}
+#!$(which sh)
+exec wrapcc "$(which ${name})" "\${@}"
+EOF
+
+    chmod +x ${name}
+done
 {% endif %}
 {{super()}}{% endblock %}
