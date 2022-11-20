@@ -1,8 +1,8 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://github.com/francma/wob/archive/refs/tags/0.14.tar.gz
-sha:967db56fce7e3e39d220f751b53168d76c5a85fa3601e89d175ac2da294dab83
+https://github.com/francma/wob/archive/refs/tags/0.14.1.tar.gz
+sha:0bed124911397c77bba78fa7862231881fe61a880e741988bc26d89abcbc6637
 {% endblock %}
 
 {% block bld_libs %}
