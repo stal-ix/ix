@@ -38,11 +38,3 @@ EOF
     chmod +x ${name}
 done
 {% endmacro %}
-
-{% macro check_exists(name) %}
-mkdir -p ${out}/fix
-cat << EOF > "${out}/fix/check-{{name.replace('/', '-')}}.sh"
-#!/usr/bin/env sh
-test -f {{name}} || (echo 'install package with {{name}}'; exit 1)
-EOF
-{% endmacro %}
