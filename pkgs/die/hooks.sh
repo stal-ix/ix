@@ -75,20 +75,3 @@ cat << EOF > "${out}/fix/check-{{name.replace('/', '-')}}.sh"
 test -f {{name}} || (echo 'install package with {{name}}'; exit 1)
 EOF
 {% endmacro %}
-
-{% macro wrap_sudo_binary(name) %} (
-mkdir -p ${out}/fix; cd ${out}/fix
-
-cat << EOF > wrap-sudo-{{name}}.sh
-#!/usr/bin/env sh
-mv bin/{{name}} bin/{{name}}-bin
-mv fix/{{name}}.tmp bin/{{name}}
-EOF
-
-cat << EOF > {{name}}.tmp
-#!/usr/bin/env sh
-exec sudo \$(which {{name}}-bin) "\${@}"
-EOF
-
-chmod +x wrap-sudo-{{name}}.sh {{name}}.tmp
-) {% endmacro %}
