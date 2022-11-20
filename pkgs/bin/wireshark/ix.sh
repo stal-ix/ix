@@ -2,6 +2,7 @@
 
 {% block run_deps %}
 bin/wireshark/tui
-bin/wireshark/sudo
+bin/sudo/wrapper(wrap=tshark)
+bin/sudo/wrapper(wrap=dumpcat)
 bin/wireshark/gui(allocator=tcmalloc)
 {% endblock %}

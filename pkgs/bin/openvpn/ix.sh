@@ -1,6 +1,6 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
-bin/openvpn/sudo
+bin/sudo/wrapper(wrap=openvpn)
 bin/openvpn/unwrap
 {% endblock %}
