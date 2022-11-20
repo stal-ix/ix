@@ -4,6 +4,7 @@
 bld/sh
 bld/box
 bld/python
+bld/glib/codegen
 {% endblock %}
 
 {% block install %}
