@@ -15,8 +15,3 @@ ix.h
 sed -e 's|file_name = g_str.*|file_name = ix_uniq_socket();|' -i src/socket.c
 sed -e 's|"/tmp"|ix_temp_dir()|' -i src/pref_dialog.c
 {% endblock %}
-
-{% block install %}
-{{super()}}
-{{hooks.wrap_xdg_binary('xarchiver')}}
-{% endblock %}
