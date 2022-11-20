@@ -8,7 +8,7 @@ bld/scripts/gnome
 
 {% block step_install %}
 {% if bin %}
-{{hooks.install_glib_schemas()}}
+igs-hook
 {% endif %}
 {{super()}}
 {% endblock %}
