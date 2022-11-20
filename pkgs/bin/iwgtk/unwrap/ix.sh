@@ -18,8 +18,3 @@ bin/gzip
 bin/scdoc
 bld/pkg/config
 {% endblock %}
-
-{% block install %}
-{{super()}}
-{{hooks.wrap_xdg_binary('iwgtk')}}
-{% endblock %}
