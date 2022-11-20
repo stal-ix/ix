@@ -1,12 +1,13 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://github.com/francma/wob/archive/refs/tags/0.12.tar.gz
-sha:c4442fb43ab0d47c986d0c0041a385e1e66f7c16fc48ff0651993deb0d00ed01
+https://github.com/francma/wob/archive/refs/tags/0.14.tar.gz
+sha:967db56fce7e3e39d220f751b53168d76c5a85fa3601e89d175ac2da294dab83
 {% endblock %}
 
 {% block bld_libs %}
 lib/c
+lib/inih
 lib/kernel
 lib/seccomp
 lib/wayland
