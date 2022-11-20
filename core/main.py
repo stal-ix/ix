@@ -9,21 +9,17 @@ import core.error as ce
 
 
 CLIS = [
-    ('core.realm_cmd', 'mut', False),
-    ('core.realm_cmd', 'run', False),
-    ('core.realm_cmd', 'list', False),
-    ('core.realm_cmd', 'purge', False),
-
-    ('core.build_cmd', 'build', False),
-
-    ('core.gc_cmd', 'gc', False),
-
-    ('core.tool_cmd', 'tool', False),
-
-    ('core.misc_cmd', 'misc_extract', True),
-    ('core.misc_cmd', 'misc_fetch', True),
-    ('core.misc_cmd', 'misc_cksum', True),
-    ('core.misc_cmd', 'misc_link', True),
+    ('core.cmd_realm', 'mut', False),
+    ('core.cmd_realm', 'run', False),
+    ('core.cmd_realm', 'list', False),
+    ('core.cmd_realm', 'purge', False),
+    ('core.cmd_build', 'build', False),
+    ('core.cmd_gc', 'gc', False),
+    ('core.cmd_tool', 'tool', False),
+    ('core.cmd_misc', 'misc_extract', True),
+    ('core.cmd_misc', 'misc_fetch', True),
+    ('core.cmd_misc', 'misc_cksum', True),
+    ('core.cmd_misc', 'misc_link', True),
 ]
 
 
