@@ -64,6 +64,4 @@ exec dumpcap-lib "\${@}"
 EOF
 
 chmod +x dumpcap
-
-{{hooks.wrap_xdg_binary('wireshark')}}
 {% endblock %}
