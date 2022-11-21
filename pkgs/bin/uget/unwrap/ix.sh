@@ -32,8 +32,3 @@ bin/bash/lite/sh
 {% block setup %}
 export CPPFLAGS="-fcommon ${CPPFLAGS}"
 {% endblock %}
-
-{% block install %}
-{{super()}}
-{{hooks.wrap_xdg_binary('uget-gtk')}}
-{% endblock %}
