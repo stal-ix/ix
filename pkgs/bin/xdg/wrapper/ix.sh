@@ -1,5 +1,9 @@
 {% extends '//die/wrapper.sh' %}
 
+{% block wrapper %}
+{{prefix}}
+{% endblock %}
+
 {% block wrapper_env %}
 export XDG_DATA_DIRS="__realm__/share:\${XDG_DATA_DIRS}"
 {% endblock %}
