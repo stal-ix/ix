@@ -2,5 +2,5 @@
 
 {% block run_deps %}
 bin/xchm/unwrap
-bin/xdg/wrapper(wrap=xchm)
+bin/xdg/er(wrap=xchm)
 {% endblock %}

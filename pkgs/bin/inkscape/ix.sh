@@ -2,5 +2,5 @@
 
 {% block run_deps %}
 bin/inkscape/unwrap
-bin/xdg/wrapper(wrap=inkscape)
+bin/xdg/er(wrap=inkscape)
 {% endblock %}

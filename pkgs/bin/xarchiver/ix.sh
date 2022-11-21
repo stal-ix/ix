@@ -3,5 +3,5 @@
 {% block run_deps %}
 set/compress
 bin/xarchiver/unwrap
-bin/xdg/wrapper(wrap=xarchiver)
+bin/xdg/er(wrap=xarchiver)
 {% endblock %}

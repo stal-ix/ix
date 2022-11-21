@@ -2,5 +2,5 @@
 
 {% block run_deps %}
 bin/fuzzel/unwrap
-bin/xdg/wrapper(wrap=fuzzel)
+bin/xdg/er(wrap=fuzzel)
 {% endblock %}

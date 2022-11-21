@@ -2,5 +2,5 @@
 
 {% block run_deps %}
 bin/pcmanfm/unwrap
-bin/xdg/wrapper(wrap=pcmanfm)
+bin/xdg/er(wrap=pcmanfm)
 {% endblock %}

@@ -1,4 +1,4 @@
-{% extends '//bin/xdg/wrapper/ix.sh' %}
+{% extends '//bin/xdg/er/ix.sh' %}
 
 {% block wrapper_env %}
 {{super()}}

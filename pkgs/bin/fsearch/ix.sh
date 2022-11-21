@@ -2,5 +2,5 @@
 
 {% block run_deps %}
 bin/fsearch/unwrap
-bin/xdg/wrapper(wrap=fsearch)
+bin/xdg/er(wrap=fsearch)
 {% endblock %}

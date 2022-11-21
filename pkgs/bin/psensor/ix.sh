@@ -3,5 +3,5 @@
 {% block run_deps %}
 bin/lm/sensors
 bin/psensor/unwrap
-bin/xdg/wrapper(wrap=psensor)
+bin/xdg/er(wrap=psensor)
 {% endblock %}

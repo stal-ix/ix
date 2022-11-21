@@ -2,6 +2,6 @@
 
 {% block run_deps %}
 bin/webkitproc
-bin/xdg/wrapper/webkit(wrap=webview)
+bin/xdg/er/webkit(wrap=webview)
 bin/webview/unwrap(gtk_ver=3,allocator=tcmalloc)
 {% endblock %}

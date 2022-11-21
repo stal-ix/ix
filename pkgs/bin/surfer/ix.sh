@@ -3,5 +3,5 @@
 {% block run_deps %}
 bin/webkitproc
 bin/surfer/unwrap(gtk_ver=3)
-bin/xdg/wrapper/webkit(wrap=surfer)
+bin/xdg/er/webkit(wrap=surfer)
 {% endblock %}

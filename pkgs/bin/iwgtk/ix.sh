@@ -2,5 +2,5 @@
 
 {% block run_deps %}
 bin/iwgtk/unwrap
-bin/xdg/wrapper(wrap=iwgtk)
+bin/xdg/er(wrap=iwgtk)
 {% endblock %}

@@ -2,5 +2,5 @@
 
 {% block run_deps %}
 bin/gnome/font/viewer/unwrap
-bin/xdg/wrapper(wrap=gnome-font-viewer)
+bin/xdg/er(wrap=gnome-font-viewer)
 {% endblock %}
