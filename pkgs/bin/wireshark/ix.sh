@@ -2,8 +2,8 @@
 
 {% block run_deps %}
 bin/wireshark/tui
-bin/sudo/wrapper(wrap=tshark)
-bin/sudo/wrapper(wrap=dumpcap)
+bin/sudo/er(wrap=tshark)
+bin/sudo/er(wrap=dumpcap)
 bin/xdg/er(wrap=wireshark)
 bin/wireshark/gui(allocator=tcmalloc)
 {% endblock %}
