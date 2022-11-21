@@ -1,8 +1,8 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://github.com/jtheoof/swappy/archive/refs/tags/v1.5.0.tar.gz
-sha:6d076bc1e8173a320a9cbcf6f910a5fdde7ec73b3ef6cdb16e8d3c442cbbf769
+https://github.com/jtheoof/swappy/archive/refs/tags/v1.5.1.tar.gz
+sha:266fac289d4b903d80d44746044bafe8a8b663c6032be696c651ad390bcb1850
 {% endblock %}
 
 {% block bld_libs %}
