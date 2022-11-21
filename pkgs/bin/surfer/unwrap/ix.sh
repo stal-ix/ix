@@ -54,10 +54,3 @@ sed -e 's|/usr||g' -i Makefile
 {% block make_flags %}
 DESTDIR=${out}
 {% endblock %}
-
-{% block install %}
-{{super()}}
-{% call hooks.wrap_xdg_binary('surfer') %}
-export WEBKIT_EXEC_PATH="\$(dirname \$(which WebKitWebProcess))"
-{% endcall %}
-{% endblock %}

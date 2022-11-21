@@ -6,6 +6,7 @@ cd ${out}; mkdir -p fix; cd fix
 cat << EOF > {{name}}
 #!/usr/bin/env sh
 export XDG_DATA_DIRS="__realm__/share:\${XDG_DATA_DIRS}"
+{% block xdg_wrapper_env %}{% endblock %}
 exec {{prefix}} "__realm__/bin/bin_{{name}}/{{name}}" "\$@"
 EOF
 

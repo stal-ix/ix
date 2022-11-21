@@ -45,13 +45,6 @@ done
 fcntl.h
 {% endblock %}
 
-{% block install %}
-{{super()}}
-{% call hooks.wrap_xdg_binary('balsa') %}
-export WEBKIT_EXEC_PATH="\$(dirname \$(which WebKitWebProcess))"
-{% endcall %}
-{% endblock %}
-
 {% block configure_flags %}
 --with-sqlite
 --with-rubrica

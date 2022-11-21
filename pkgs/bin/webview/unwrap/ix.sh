@@ -15,10 +15,3 @@ webview
 {% block sources %}
 webview.cpp
 {% endblock %}
-
-{% block install %}
-{{super()}}
-{% call hooks.wrap_xdg_binary('webview') %}
-export WEBKIT_EXEC_PATH="\$(dirname \$(which WebKitWebProcess))"
-{% endcall %}
-{% endblock %}
