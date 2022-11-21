@@ -2,5 +2,5 @@
 
 {% block run_deps %}
 bin/fnott/unwrap
-bin/xdg/wrapper(name=fnott)
+bin/xdg/wrapper(wrap=fnott)
 {% endblock %}

@@ -2,5 +2,5 @@
 
 {% block run_deps %}
 bin/gnuplot/wx/unwrap
-bin/xdg/wrapper(name=gnuplot)
+bin/xdg/wrapper(wrap=gnuplot)
 {% endblock %}

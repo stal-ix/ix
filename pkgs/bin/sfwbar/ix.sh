@@ -2,5 +2,5 @@
 
 {% block run_deps %}
 bin/sfwbar/unwrap
-bin/xdg/wrapper(name=sfwbar)
+bin/xdg/wrapper(wrap=sfwbar)
 {% endblock %}

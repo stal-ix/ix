@@ -4,5 +4,5 @@
 bin/shepherd
 bin/webkitproc
 bin/epiphany/stock(gtk_ver=4)
-bin/xdg/wrapper/webkit(name=epiphany,prefix=shepherd)
+bin/xdg/wrapper/webkit(wrap=epiphany,prefix=shepherd)
 {% endblock %}

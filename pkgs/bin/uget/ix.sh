@@ -2,5 +2,5 @@
 
 {% block run_deps %}
 bin/uget/unwrap
-bin/xdg/wrapper(name=uget-gtk)
+bin/xdg/wrapper(wrap=uget-gtk)
 {% endblock %}

@@ -2,5 +2,5 @@
 
 {% block run_deps %}
 bin/gnome/text/editor/unwrap
-bin/xdg/wrapper(name=gnome-text-editor)
+bin/xdg/wrapper(wrap=gnome-text-editor)
 {% endblock %}

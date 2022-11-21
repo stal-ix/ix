@@ -2,5 +2,5 @@
 
 {% block run_deps %}
 bin/evince/unwrap
-bin/xdg/wrapper(name=evince)
+bin/xdg/wrapper(wrap=evince)
 {% endblock %}

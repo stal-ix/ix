@@ -3,5 +3,5 @@
 {% block run_deps %}
 bin/transmission
 bin/transmission/gtk/unwrap
-bin/xdg/wrapper(name=transmission-gtk)
+bin/xdg/wrapper(wrap=transmission-gtk)
 {% endblock %}
