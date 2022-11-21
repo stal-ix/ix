@@ -28,8 +28,3 @@ bin/wxrc
 sed -e 's|.*m_content.*||' -i src/fileviewer.cpp
 sed -e 's|webview,||' -i configure.ac
 {% endblock %}
-
-{% block install %}
-{{super()}}
-{{hooks.wrap_xdg_binary('poedit')}}
-{% endblock %}
