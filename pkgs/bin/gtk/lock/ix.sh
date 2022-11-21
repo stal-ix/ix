@@ -20,8 +20,3 @@ bin/xmllint
 bld/pkg/config
 bld/glib/codegen
 {% endblock %}
-
-{% block install %}
-{{super()}}
-{{hooks.wrap_xdg_binary('gtklock')}}
-{% endblock %}
