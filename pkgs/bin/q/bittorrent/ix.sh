@@ -26,8 +26,3 @@ bld/qt/6/tools
 {% block cmake_flags %}
 QT6=ON
 {% endblock %}
-
-{% block install %}
-{{super()}}
-{{hooks.wrap_xdg_binary('qbittorrent')}}
-{% endblock %}
