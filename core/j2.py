@@ -34,7 +34,9 @@ class Env(jinja2.Environment, jinja2.BaseLoader):
         return '\n'.join(it())
 
     def get_source(self, env, name):
-        return self.source(name)
+        x, y = self.source(name)
+
+        return x, y, lambda: True
 
     def source(self, name):
         while True:
@@ -48,13 +50,11 @@ class Env(jinja2.Environment, jinja2.BaseLoader):
             return self.source(name[2:])
 
         if name.endswith('/base64'):
-            d, n, f = self.source(name[:-7])
+            d, n = self.source(name[:-7])
 
-            return b64(d), n, f
+            return b64(d), n
 
-        res = self.resolve_includes(self.vfs.serve(name), name).strip()
-
-        return res, name, lambda: True
+        return self.resolve_includes(self.vfs.serve(name), name).strip(), name
 
     def join_path(self, tmpl, parent):
         if tmpl.startswith('//'):
