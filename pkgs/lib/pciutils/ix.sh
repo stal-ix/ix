@@ -1,8 +1,8 @@
 {% extends '//die/c/make.sh' %}
 
 {% block fetch %}
-https://www.kernel.org/pub/software/utils/pciutils/pciutils-3.8.0.tar.xz
-sha:91edbd0429a84705c9ad156d4ff38ccc724d41ea54c4c5b88e38e996f8a34f05
+https://github.com/pciutils/pciutils/archive/refs/tags/v3.9.0.tar.gz
+sha:17829b1fc3ef2a022f2b0a6c4d7a686b53a2fb0233951c31f9344e0abc4034bf
 {% endblock %}
 
 {% block lib_deps %}
