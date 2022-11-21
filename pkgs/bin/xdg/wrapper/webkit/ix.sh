@@ -1,5 +1,6 @@
 {% extends '//bin/xdg/wrapper/ix.sh' %}
 
-{% block xdg_wrapper_env %}
+{% block wrapper_env %}
+{{super()}}
 export WEBKIT_EXEC_PATH="\$(dirname \$(which WebKitWebProcess))"
 {% endblock %}

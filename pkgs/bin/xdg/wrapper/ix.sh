@@ -2,8 +2,6 @@
 
 {% block wrapper_env %}
 export XDG_DATA_DIRS="__realm__/share:\${XDG_DATA_DIRS}"
-{% block xdg_wrapper_env %}
-{% endblock %}
 {% endblock %}
 
 {% block install %}
