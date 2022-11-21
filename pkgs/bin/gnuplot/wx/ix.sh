@@ -1,12 +1,6 @@
-{% extends '//bin/gnuplot/ix.sh' %}
+{% extends '//die/hub.sh' %}
 
-{% block bld_libs %}
-lib/cairo
-lib/wx/widgets
-{{super()}}
-{% endblock %}
-
-{% block install %}
-{{super()}}
-{{hooks.wrap_xdg_binary('gnuplot')}}
+{% block run_deps %}
+bin/gnuplot/wx/unwrap
+bin/xdg/wrapper(name=gnuplot)
 {% endblock %}
