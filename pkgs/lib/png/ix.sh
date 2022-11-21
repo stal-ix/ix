@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://github.com/glennrp/libpng/archive/refs/tags/v1.6.38.tar.gz
-sha:d4160037fa5d09fa7cff555037f2a7f2fefc99ca01e21723b19bfcda33015234
+https://github.com/glennrp/libpng/archive/refs/tags/v1.6.39.tar.gz
+sha:a00e9d2f2f664186e4202db9299397f851aea71b36a35e74910b8820e380d441
 {% endblock %}
 
 {% block lib_deps %}
