@@ -30,8 +30,3 @@ sed -e 's|if X11|if GTK|'  \
     -e 's|if XEXT|if GTK|' \
     -i src/Makefile.am
 {% endblock %}
-
-{% block install %}
-{{super()}}
-{{hooks.wrap_xdg_binary('psensor')}}
-{% endblock %}
