@@ -1,6 +1,12 @@
-{% extends '//lib/sndio/ix.sh' %}
+{% extends '//lib/sndio/t/ix.sh' %}
 
-{% block install %}
+{% block bld_libs %}
+lib/sndio
 {{super()}}
-rm ${out}/bin/sndiod
+{% endblock %}
+
+{% block configure_flags %}--disable-alsa{% endblock %}
+
+{% block make_flags %}
+-C sndioctl
 {% endblock %}

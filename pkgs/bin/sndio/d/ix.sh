@@ -2,16 +2,12 @@
 
 {% block bld_libs %}
 lib/alsa
+lib/sndio
 {{super()}}
 {% endblock %}
 
 {% block configure_flags %}--enable-alsa{% endblock %}
 
-{% block install %}
-{{super()}}
-cd ${out}
-mv bin old
-mkdir bin
-mv old/sndiod bin/
-rm -r old
+{% block make_flags %}
+-C sndiod
 {% endblock %}

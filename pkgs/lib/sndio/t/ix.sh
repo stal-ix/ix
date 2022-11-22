@@ -12,15 +12,7 @@ lib/bsd
 {% endif %}
 {% endblock %}
 
-{% block build_flags %}
-wrap_cc
-{% endblock %}
-
 {% block patch %}
-find . -name Makefile.in -type f | while read l; do
-    sed -e "s|-lsndio|${PWD}/libsndio/libsndio.so|" -i ${l}
-done
-
 find . -name '*.h' -type f | while read l; do
     sed -e 's|/tmp/sndio|/var/run/sndiod|' -i ${l}
 done
