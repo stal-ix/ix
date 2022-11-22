@@ -21,13 +21,13 @@ lib/openssl
 --prefix=${out}
 {% endblock %}
 
+{% block bld_tool %}
+bld/scripts/fakexslt
+{% endblock %}
+
 {% block patch %}
 touch libkmod/docs/gtk-doc.make
 rm autogen.sh
-cat << EOF > man/Makefile.am
-all:
-install:
-EOF
 {% endblock %}
 
 {% block build %}
@@ -36,4 +36,5 @@ llvm-ar qL \
     libkmod/.libs/libkmod.so.2.4.0 \
     shared/.libs/libshared.a \
     libkmod/.libs/libkmod-internal.a
+touch man/modules.dep.bin.5
 {% endblock %}
