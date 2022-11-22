@@ -80,7 +80,7 @@ case "${url}" in
 esac
 
 if test -f "${url}"; then
-    mt=$(file -b --mime-type "${url}")
+    mt=$(file -L -b --mime-type "${url}")
 
     case "${mt}" in
         application/pdf)
