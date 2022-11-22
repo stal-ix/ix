@@ -16,10 +16,10 @@ lib/kernel
 
 {% block bld_tool %}
 bld/gettext
+bld/texinfo
+bin/gtk/doc
 {% endblock %}
 
 {% block patch %}
-sed -e 's|.*gtkdocize.*||' -i autogen.sh
-sed -e 's| doc||' -i Makefile.am
-sed -e 's|0.19.4|0.21|' -e 's|doc/.*||' -e 's|GTK_DOC.*||' -i configure.ac
+sed -e 's|0.19.4|0.21|' -i configure.ac
 {% endblock %}
