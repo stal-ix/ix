@@ -1,8 +1,7 @@
 {% extends '//lib/sndio/t/ix.sh' %}
 
 {% block bld_libs %}
-lib/alsa
-lib/sndio
+lib/sndio/alsa
 {{super()}}
 {% endblock %}
 
