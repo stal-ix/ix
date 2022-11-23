@@ -6,9 +6,8 @@ sha:3f578ae674d9a01a6d0bba23f3ff55b9e07c335e7bb81e9eb192eb8efde0176b
 {% endblock %}
 
 {% block bld_tool %}
+bld/perl
 bld/gettext
-bin/xsltproc
-bld/intltool
 {% endblock %}
 
 {% block env %}

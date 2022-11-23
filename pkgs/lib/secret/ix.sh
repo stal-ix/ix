@@ -12,7 +12,6 @@ lib/gcrypt
 {% endblock %}
 
 {% block bld_tool %}
-bin/xsltproc
 bld/glib/codegen
 {% endblock %}
 
