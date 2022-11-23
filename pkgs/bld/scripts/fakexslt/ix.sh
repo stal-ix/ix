@@ -12,8 +12,14 @@ cat << EOF > xsltproc
 
 import sys
 
-with open(sys.argv[sys.argv.index('-o') + 1], 'w') as f:
-    pass
+def main(a):
+    if '-o' not in a:
+        return
+
+    with open(a[a.index('-o') + 1], 'w') as f:
+        pass
+
+main(sys.argv)
 EOF
 
 chmod +x *
