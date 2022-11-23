@@ -26,5 +26,10 @@ for svg, name in it_svg(fr):
 
     for w in (16, 24, 32, 48, 64):
         out = f'{to}/{w}x{w}/{png}'
+
         os.makedirs(os.path.dirname(out), exist_ok=True)
-        subprocess.check_call(['convert', cvt, '-resize', f'{w}x{w}', out])
+
+        if os.path.exists(out):
+            print(f'skip {out}', file=sys.stderr)
+        else:
+            subprocess.check_call(['convert', cvt, '-resize', f'{w}x{w}', out])
