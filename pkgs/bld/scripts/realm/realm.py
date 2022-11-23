@@ -10,6 +10,20 @@ import subprocess
 meta = json.loads(sys.stdin.read())
 path = sys.argv[1]
 
+COL = {
+    'r': 31,
+    'g': 32,
+    'y': 33,
+    'b': 34,
+}
+
+def col(v, color='r', bright=False):
+    n = COL[color]
+
+    if bright:
+        n += 60
+
+    return f'\x1b[{n}m{v}\x1b[0m'
 
 def iter_dir_1(w):
     for a, b, c in os.walk(w):
@@ -65,7 +79,7 @@ if os.path.isdir('fix'):
         if not x.endswith('.sh'):
             continue
 
-        print(f'run hooks from {x}')
+        print(col(f'run hooks from {x}'), file=sys.stderr)
 
         subprocess.run(['sh', os.path.join('fix', x)], check=True)
 
