@@ -1,12 +1,7 @@
-{% extends '//bin/gettext/unwrap/ix.sh' %}
+{% extends '//die/hub.sh' %}
 
 {% block run_deps %}
 bld/tar
 bld/gzip
-{% endblock %}
-
-{% block install %}
-{{super()}}
-cd ${out}/bin
-ln -s xgettext gettext
+bld/gettext/unwrap
 {% endblock %}
