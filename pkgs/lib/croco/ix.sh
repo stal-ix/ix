@@ -12,5 +12,5 @@ lib/xml/2
 {% endblock %}
 
 {% block bld_tool %}
-bin/gtk/doc
+bld/gtkdoc
 {% endblock %}

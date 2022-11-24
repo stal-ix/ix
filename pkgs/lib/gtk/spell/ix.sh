@@ -13,7 +13,7 @@ lib/enchant
 
 {% block bld_tool %}
 bld/vala
-bin/gtk/doc
+bld/gtkdoc
 bld/gettext
 bld/intltool
 bld/auto/archive

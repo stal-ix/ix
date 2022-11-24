@@ -15,9 +15,9 @@ lib/kernel
 {% endblock %}
 
 {% block bld_tool %}
+bld/gtkdoc
 bld/gettext
 bld/texinfo
-bin/gtk/doc
 {% endblock %}
 
 {% block patch %}

@@ -15,8 +15,8 @@ lib/gtk/3
 {% endblock %}
 
 {% block bld_tool %}
+bld/gtkdoc
 bld/gettext
-bin/gtk/doc
 bld/intltool
 {% endblock %}
 

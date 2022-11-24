@@ -15,9 +15,9 @@ lib/enchant
 
 {% block bld_tool %}
 bld/vala
+bld/gtkdoc
 bin/xmllint
 bld/gettext
-bin/gtk/doc
 bld/intltool
 bld/auto/archive
 bld/glib/codegen

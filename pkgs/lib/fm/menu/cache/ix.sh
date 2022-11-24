@@ -15,7 +15,7 @@ lib/fm/extra
 {% endblock %}
 
 {% block bld_tool %}
-bin/gtk/doc
+bld/gtkdoc
 bld/intltool
 {% endblock %}
 

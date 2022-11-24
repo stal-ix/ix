@@ -40,5 +40,8 @@ tests=false
 {% endblock %}
 
 {% block postinstall %}
-:
+# relocate it
+sed -e 's|pkg_config = .*|pkg_config = "pkg-config"|' \
+    -e 's|xsltproc = .*|xsltproc = "xsltproc"|' \
+    -i ${out}/share/gtk-doc/python/gtkdoc/config.py
 {% endblock %}

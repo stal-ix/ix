@@ -18,7 +18,7 @@ lib/dbus/glib
 
 {% block bld_tool %}
 bld/python
-bin/gtk/doc
+bld/gtkdoc
 lib/dbus/glib
 bld/glib/codegen
 bld/auto/archive
