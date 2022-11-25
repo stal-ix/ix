@@ -8,7 +8,7 @@ sha:6fc69c01688c9458a57eb9a1664c9aba372ccda420a02bf4429fe610e7e7d591
 {% block bld_libs %}
 lib/c
 lib/intl
-lib/glib/pure
+lib/glib
 {% endblock %}
 
 {% block configure_flags %}
@@ -22,6 +22,5 @@ export PKG_PROG_PKG_CONFIG="${out}/share/aclocal/pkg.m4"
 
 {% block test %}
 . ${out}/env
-
 cat ${PKG_PROG_PKG_CONFIG}
 {% endblock %}
