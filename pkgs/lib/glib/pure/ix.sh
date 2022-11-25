@@ -12,6 +12,6 @@ find ${out}/ -type f -name '*.pc' | while read i; do
 done
 {% endblock %}
 
-{% block env_lib %}
+{% block env %}
 export CPPFLAGS="-I${out}/include/glib-2.0 -I${out}/lib/glib-2.0/include \${CPPFLAGS}"
 {% endblock %}
