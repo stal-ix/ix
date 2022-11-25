@@ -23,3 +23,12 @@ debug-gui=false
 {{super()}}
 rm -rf ${out}/lib/lib_* ${out}/lib/udev
 {% endblock %}
+
+{% block c_rename_symbol %}
+{{super()}}
+list_init
+list_insert
+list_append
+list_remove
+list_empty
+{% endblock %}
