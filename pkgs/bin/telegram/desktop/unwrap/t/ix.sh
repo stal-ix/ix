@@ -4,14 +4,6 @@
 
 {% block fetch %}
 {% include 'ver.sh' %}
-#https://github.com/telegramdesktop/tdesktop/archive/1e6937a075a9620d48b72556b8e9eefb8d44ef36.zip
-#sha:45b910379f72882e7a543ceb017729e82775f173ac1f4f08c716e4e946af8834
-{% endblock %}
-
-{% block unpack %}
-mkdir src; cd src
-extract 1 ${src}/td*
-#extract 1 ${src}/1e*
 {% endblock %}
 
 {% block bld_libs %}
@@ -54,7 +46,6 @@ shut_up
 
 {% block cpp_includes %}
 ${PWD}
-${PWD}/Telegram/lib_spellcheck
 ${PWD}/Telegram/ThirdParty/libtgvoip
 {% endblock %}
 
