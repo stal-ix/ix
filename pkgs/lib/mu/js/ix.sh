@@ -1,8 +1,8 @@
 {% extends '//die/c/make.sh' %}
 
 {% block fetch %}
-https://github.com/ccxvii/mujs/archive/refs/tags/1.3.1.tar.gz
-sha:fc784d71bfa3f2c33f91412a9f22e356cdc4f9d34d9beeba46c34543a40f52b8
+https://github.com/ccxvii/mujs/archive/refs/tags/1.3.2.tar.gz
+sha:59763cc32776714b4f00a0efede83f4f56b381c9dbaced4756d665c214249dca
 {% endblock %}
 
 {% block lib_deps %}
