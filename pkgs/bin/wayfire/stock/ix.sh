@@ -29,6 +29,6 @@ lib/wlroots/15
 {% endblock %}
 
 {% block bld_tool %}
-bld/scripts/dlfcn
+bld/dlfcn
 bld/wayland
 {% endblock %}

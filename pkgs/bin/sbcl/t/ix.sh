@@ -7,7 +7,7 @@ lib/kernel
 
 {% block bld_tool %}
 bld/make
-bld/scripts/dlfcn
+bld/dlfcn
 {% endblock %}
 
 {% block setup %}

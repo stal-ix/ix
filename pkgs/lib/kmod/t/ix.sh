@@ -22,7 +22,7 @@ lib/openssl
 {% endblock %}
 
 {% block bld_tool %}
-bld/scripts/fakexslt
+bld/fakexslt
 {% endblock %}
 
 {% block patch %}

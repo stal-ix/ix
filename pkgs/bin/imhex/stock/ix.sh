@@ -24,7 +24,7 @@ lib/json/nlohmann
 
 {% block bld_tool %}
 bld/python
-bld/scripts/dlfcn
+bld/dlfcn
 {% endblock %}
 
 {% block patch %}

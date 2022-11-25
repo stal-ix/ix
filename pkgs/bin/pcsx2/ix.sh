@@ -52,7 +52,7 @@ lib/vulkan/headers
 bld/perl
 bin/glslang
 bld/gettext
-bld/scripts/fakegit
+bld/fakegit
 {% endblock %}
 
 {% block cmake_flags %}

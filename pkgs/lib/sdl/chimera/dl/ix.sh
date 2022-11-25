@@ -5,7 +5,7 @@ lib/sdl/chimera
 {% endblock %}
 
 {% block bld_tool %}
-bld/scripts/librarian
+bld/librarian
 {% endblock %}
 
 {% block export_map %}

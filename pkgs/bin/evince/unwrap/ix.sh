@@ -25,7 +25,7 @@ lib/gsettings/desktop/schemas
 
 {% block bld_tool %}
 bld/gettext
-bld/scripts/dlfcn
+bld/dlfcn
 {% endblock %}
 
 {% block meson_flags %}

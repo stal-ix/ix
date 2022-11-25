@@ -1,7 +1,7 @@
 {% extends 'fix.sh' %}
 
 {% block std_box %}
-bld/scripts/librarian
+bld/librarian
 {{super()}}
 {% endblock %}
 

@@ -2,8 +2,8 @@
 
 {% block bld_tool %}
 bld/gzip
-bld/scripts/dlfcn
-bld/scripts/librarian
+bld/dlfcn
+bld/librarian
 {% endblock %}
 
 {% block make_flags %}

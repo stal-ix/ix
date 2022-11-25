@@ -22,7 +22,7 @@ lib/execinfo/fake
 {% block bld_tool %}
 bld/m4
 bld/pkg/config
-bld/scripts/dlfcn
+bld/dlfcn
 {% endblock %}
 
 {% block c_rename_symbol %}

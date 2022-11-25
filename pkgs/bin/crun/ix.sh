@@ -16,7 +16,7 @@ lib/argp/standalone
 
 {% block bld_tool %}
 bld/python
-bld/scripts/fakegit
+bld/fakegit
 {% endblock %}
 
 {% block configure_flags %}

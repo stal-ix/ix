@@ -11,7 +11,7 @@ bin/zathura/mupdf
 {% endblock %}
 
 {% block bld_tool %}
-bld/scripts/dlfcn
+bld/dlfcn
 {{super()}}
 {% endblock %}
 

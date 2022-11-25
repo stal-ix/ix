@@ -18,8 +18,8 @@ lib/vulkan/headers
 {% endblock %}
 
 {% block bld_tool %}
-bld/scripts/dlfcn
-bld/scripts/librarian
+bld/dlfcn
+bld/librarian
 {% endblock %}
 
 {% block build_flags %}

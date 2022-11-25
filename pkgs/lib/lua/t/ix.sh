@@ -9,7 +9,7 @@ lib/readline
 {% endblock %}
 
 {% block bld_tool %}
-bld/scripts/dlfcn
+bld/dlfcn
 {% endblock %}
 
 {% block script_init_env %}

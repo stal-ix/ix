@@ -13,7 +13,7 @@ lib/tg/owt
 {% endblock %}
 
 {% block bld_tool %}
-bld/scripts/genpc
+bld/genpc
 {% endblock %}
 
 {% block build_flags %}

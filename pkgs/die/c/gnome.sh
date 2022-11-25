@@ -2,7 +2,7 @@
 
 {% block std_box %}
 bld/glib/codegen
-bld/scripts/gnome
+bld/gnome
 {{super()}}
 {% endblock %}
 

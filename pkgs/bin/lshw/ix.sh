@@ -14,7 +14,7 @@ lib/shim/gnu
 
 {% block bld_tool %}
 bld/gettext
-bld/scripts/fakegit
+bld/fakegit
 {% endblock %}
 
 {% block patch %}

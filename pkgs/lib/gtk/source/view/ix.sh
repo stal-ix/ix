@@ -6,7 +6,7 @@ lib/gtk/source/view/data
 
 {% block bld_tool %}
 {{super()}}
-bld/scripts/reloc
+bld/reloc
 {% endblock %}
 
 {% block configure %}

@@ -14,7 +14,7 @@ lib/gtk
 
 {% block bld_tool %}
 bld/glib/codegen
-bld/scripts/gnome
+bld/gnome
 {% endblock %}
 
 {% block meson_flags %}

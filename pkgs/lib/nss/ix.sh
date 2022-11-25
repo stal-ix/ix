@@ -2,7 +2,7 @@
 
 {% block bld_tool %}
 {{super()}}
-bld/scripts/genpc
+bld/genpc
 {% endblock %}
 
 {% block install %}

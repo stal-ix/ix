@@ -18,7 +18,7 @@ bin/zathura/headers
 {% endblock %}
 
 {% block bld_tool %}
-bld/scripts/librarian
+bld/librarian
 {% endblock %}
 
 {% block meson_flags %}

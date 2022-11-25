@@ -11,7 +11,7 @@ lib/jpeg
 {% endblock %}
 
 {% block bld_tool %}
-bld/scripts/genpc
+bld/genpc
 {% endblock %}
 
 {% block skip_dirs %}0{% endblock %}

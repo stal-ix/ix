@@ -7,7 +7,7 @@ handle_table_remove
 
 {% block bld_tool %}
 {{super()}}
-bld/scripts/librarian
+bld/librarian
 {% endblock %}
 
 {% block install %}

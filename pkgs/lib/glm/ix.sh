@@ -11,7 +11,7 @@ lib/c++
 {% endblock %}
 
 {% block bld_tool %}
-bld/scripts/genpc
+bld/genpc
 {% endblock %}
 
 {% block install %}

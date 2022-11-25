@@ -25,9 +25,9 @@ lib/harfbuzz
 bld/make
 bld/python
 bld/pkg/config
-bld/scripts/dlfcn
-bld/scripts/python
-bld/scripts/librarian
+bld/dlfcn
+bld/pyinit
+bld/librarian
 {% endblock %}
 
 {% block build_flags %}

@@ -13,5 +13,5 @@ lib/c++
 {% endblock %}
 
 {% block bld_tool %}
-bld/scripts/fakegit
+bld/fakegit
 {% endblock %}

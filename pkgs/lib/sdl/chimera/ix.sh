@@ -1,7 +1,7 @@
 {% extends '//lib/sdl/2/ix.sh' %}
 
 {% block bld_tool %}
-bld/scripts/librarian
+bld/librarian
 {{super()}}
 {% endblock %}
 

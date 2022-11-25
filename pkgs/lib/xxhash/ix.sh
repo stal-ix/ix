@@ -18,7 +18,7 @@ wrap_cc
 {% endblock %}
 
 {% block bld_tool %}
-bld/scripts/wrapcc
+bld/wrapcc
 {% endblock %}
 
 {% block test_execute %}

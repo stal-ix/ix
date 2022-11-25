@@ -5,7 +5,7 @@ aux/adwaita/icons/scalable
 {% endblock %}
 
 {% block bld_tool %}
-bld/scripts/iconker
+bld/iconker
 {% endblock %}
 
 {% block build %}

@@ -19,7 +19,7 @@ lib/readline
 
 {% block bld_tool %}
 bin/gperf
-bld/scripts/fakegit
+bld/fakegit
 {% endblock %}
 
 {% block patch %}

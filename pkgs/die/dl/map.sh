@@ -1,7 +1,7 @@
 {% extends '//die/c/premain.sh' %}
 
 {% block std_box %}
-bld/scripts/dlfcn
+bld/dlfcn
 {{super()}}
 {% endblock %}
 
