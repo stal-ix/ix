@@ -27,6 +27,7 @@ lib/openal
 lib/tg/owt
 lib/tg/voip
 lib/openssl
+lib/protobuf
 lib/mini/zip
 lib/dispatch
 lib/range/v3
@@ -53,6 +54,7 @@ shut_up
 
 {% block cpp_includes %}
 ${PWD}
+${PWD}/Telegram/lib_spellcheck
 ${PWD}/Telegram/ThirdParty/libtgvoip
 {% endblock %}
 
@@ -68,7 +70,7 @@ DESKTOP_APP_USE_PACKAGED_RLOTTIE=ON
 DESKTOP_APP_QT6=ON
 
 DESKTOP_APP_DISABLE_DBUS_INTEGRATION=ON
-DESKTOP_APP_DISABLE_SPELLCHECK=ON
+DESKTOP_APP_DISABLE_SPELLCHECK=OFF
 DESKTOP_APP_DISABLE_X11_INTEGRATION=ON
 
 TDESKTOP_API_ID=17349
@@ -79,9 +81,10 @@ TDESKTOP_LAUNCHER_BASENAME=telegram-desktop
 {% block bld_tool %}
 bld/qt/6
 bld/python
+bin/protoc
+bld/wayland
 bld/pkg/config
 bld/qt/6/wayland
-bld/wayland
 {% endblock %}
 
 {% block patch %}
