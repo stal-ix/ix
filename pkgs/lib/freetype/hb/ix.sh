@@ -10,3 +10,7 @@ lib/freetype/nohb
 {{super()}}
 harfbuzz=enabled
 {% endblock %}
+
+{% block env %}
+export CPPFLAGS="-I${out}/include/freetype2 \${CPPFLAGS}"
+{% endblock %}
