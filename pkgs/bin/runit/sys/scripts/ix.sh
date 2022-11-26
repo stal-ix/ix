@@ -3,6 +3,20 @@
 {% block install %}
 cd ${out}; mkdir bin; cd bin
 
+cat << EOF > halt
+#!/bin/sh
+exec runit-init 0
+EOF
+
+chmod +x halt
+
+cat << EOF > reboot
+#!/bin/sh
+exec runit-init 6
+EOF
+
+chmod +x reboot
+
 cat << EOF > init
 #!/bin/sh
 export PATH=/bin
@@ -29,7 +43,6 @@ EOF
 
 cat << EOF > 3
 #!/bin/sh
-exec halt
 EOF
 
 chmod +x 2 3

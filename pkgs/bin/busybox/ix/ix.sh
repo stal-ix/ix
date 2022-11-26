@@ -16,4 +16,5 @@ exec sudo ${PWD}/busybox ${x} "\${@}"
 EOF
     chmod +x ${x}
 done
+rm reboot halt
 {% endblock %}
