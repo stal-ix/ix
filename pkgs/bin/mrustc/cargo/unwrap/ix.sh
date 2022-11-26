@@ -7,7 +7,8 @@ lib/curl
 lib/git/2
 lib/openssl
 bin/mrustc/std
-lib/shim/atomic
+lib/shim/fake(lib_name=gcc_s)
+lib/shim/fake(lib_name=atomic)
 {% endblock %}
 
 {% block patch %}

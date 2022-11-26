@@ -5,7 +5,6 @@ lib/c
 lib/z
 lib/c++
 bin/mrustc/std
-lib/shim/atomic
 {% endblock %}
 
 {% block patch %}

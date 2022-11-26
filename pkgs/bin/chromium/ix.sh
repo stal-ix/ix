@@ -25,7 +25,6 @@ lib/pciutils
 lib/xkbcommon
 lib/shim/extra
 lib/shim/queue
-lib/shim/atomic
 {% endblock %}
 
 {% block bld_tool %}
