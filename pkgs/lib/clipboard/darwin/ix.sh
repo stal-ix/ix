@@ -7,9 +7,7 @@ md5:bddc22070b6804ed63994af49b778b70
 
 {% block lib_deps %}
 lib/c
-{% if darwin %}
 lib/darwin/framework/AppKit
-{% endif %}
 {% endblock %}
 
 {% block bld_tool %}
