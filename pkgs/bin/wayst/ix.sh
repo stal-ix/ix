@@ -14,17 +14,12 @@ lib/utf8/proc
 lib/xkbcommon
 lib/fontconfig
 lib/drivers/3d
+lib/shim/fake(lib_name=GL)
 {% endblock %}
 
 {% block make_flags %}
 INSTALL_DIR=${out}/bin
 window_protocol=wayland
-{% endblock %}
-
-{% block patch %}
-find . -type f | while read l; do
-    sed -e 's|-lGL||g' -i ${l}
-done
 {% endblock %}
 
 {% block install %}

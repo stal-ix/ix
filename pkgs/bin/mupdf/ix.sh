@@ -4,10 +4,7 @@
 lib/glu
 lib/freeglut
 lib/drivers/3d
-{{super()}}
-{% endblock %}
-
-{% block patch %}
-sed -e 's|-lglut||' -e 's|-lGL||' -i Makerules
+lib/shim/fake(lib_name=GL)
+lib/shim/fake(lib_name=glut)
 {{super()}}
 {% endblock %}
