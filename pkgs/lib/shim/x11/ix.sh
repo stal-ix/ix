@@ -1,27 +1,13 @@
-{% extends '//die/c/ix.sh' %}
+{% extends '//die/proxy.sh' %}
 
-{% block unpack %}
-: nothing to unpack
-{% endblock %}
-
-{% block bld_libs %}
+{% block lib_deps %}
 lib/c
-{% endblock %}
-
-{% block build %}
-cc -c -o empty.o -x c - << EOF
-EOF
-
-ar q libempty.a *.o
+lib/shim/fake(lib_name=X11)
+lib/shim/fake(lib_name=xcb)
 {% endblock %}
 
 {% block install %}
-mkdir ${out}/lib ${out}/include
-
-cp libempty.a ${out}/lib/libX11.a
-cp libempty.a ${out}/lib/libxcb.a
-
-mkdir ${out}/include/X11
+mkdir -p ${out}/include/X11
 
 cat << EOF > ${out}/include/X11/Xlib.h
 #pragma once
