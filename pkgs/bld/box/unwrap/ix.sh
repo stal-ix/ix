@@ -4,9 +4,9 @@
 bin/sed
 bin/grep
 bin/file
-bin/gawk
 bin/patch
 bin/diffutils
 bin/findutils
-bin/coreutils
+bin/gawk/lite
+bin/coreutils/lite
 {% endblock %}
