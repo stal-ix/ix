@@ -25,6 +25,4 @@ typedef SHA2_CTX SHA256_CTX;
 
 #define SHA256(a, b, c) SHA256_Data(a, b, (char*)c)
 EOF
-
-{{super()}}
 {% endblock %}
