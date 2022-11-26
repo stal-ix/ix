@@ -1,7 +1,8 @@
-{% extends '//lib/openssl/fake/ix.sh' %}
+{% extends '//die/proxy.sh' %}
 
 {% block lib_deps %}
 lib/md
+lib/openssl/fake
 {% endblock %}
 
 {% block install %}
