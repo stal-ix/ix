@@ -18,5 +18,5 @@ bin/scdoc
 bld/wayland
 bin/xmllint
 bld/pkg/config
-bld/glib/codegen
+bld/glib
 {% endblock %}

@@ -32,7 +32,7 @@ lib/{{allocator}}/trim(delay=5,bytes=10000000)
 {% block bld_tool %}
 bld/gettext
 bld/intltool
-bld/glib/codegen
+bld/glib
 {% endblock %}
 
 {% block patch %}

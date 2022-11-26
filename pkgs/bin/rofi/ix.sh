@@ -20,7 +20,7 @@ lib/gdk/pixbuf
 {% block bld_tool %}
 bld/flex
 bld/bison
-bld/glib/codegen
+bld/glib
 bld/wayland
 {% endblock %}
 

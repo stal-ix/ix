@@ -12,7 +12,7 @@ bld/box
 bld/byacc
 bld/cmake
 bld/flex
-bld/glib/codegen
+bld/glib
 bld/gzip
 bld/help2man
 bld/m4

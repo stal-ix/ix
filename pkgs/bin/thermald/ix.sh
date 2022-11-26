@@ -20,7 +20,7 @@ lib/dbus/glib
 bld/python
 bld/gtkdoc
 lib/dbus/glib
-bld/glib/codegen
+bld/glib
 bld/auto/archive
 {% endblock %}
 

@@ -6,7 +6,7 @@ sha:321ac4209394acd8293e980b5a0b921285621bbbbee1fcfff9402bff19d66c13
 {% endblock %}
 
 {% block bld_tool %}
-bld/glib/codegen
+bld/glib
 {% endblock %}
 
 {% block meson_flags %}

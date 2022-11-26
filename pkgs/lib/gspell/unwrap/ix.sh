@@ -20,7 +20,7 @@ bin/xmllint
 bld/gettext
 bld/intltool
 bld/auto/archive
-bld/glib/codegen
+bld/glib
 bld/gobject/introspection
 {% endblock %}
 

@@ -16,5 +16,5 @@ lib/gtk/3
 {% block bld_tool %}
 bin/scdoc
 bld/gettext
-bld/glib/codegen
+bld/glib
 {% endblock %}

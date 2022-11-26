@@ -12,7 +12,7 @@ lib/gtk/3
 {% endblock %}
 
 {% block bld_tool %}
-bld/glib/codegen
+bld/glib
 {% endblock %}
 
 {% block meson_flags %}

@@ -18,7 +18,7 @@ lib/json/glib
 bld/python
 bld/gettext
 bld/intltool
-bld/glib/codegen
+bld/glib
 {% endblock %}
 
 {% block configure_flags %}

@@ -26,7 +26,7 @@ lib/tag/parser
 bld/qt/6
 bin/protoc
 bld/qt/6/tools
-bld/glib/codegen
+bld/glib
 {% endblock %}
 
 {% block patch %}

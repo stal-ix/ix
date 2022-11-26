@@ -30,7 +30,7 @@ lib/gtk/layer/shell
 {% block bld_tool %}
 bin/scdoc
 bld/wayland
-bld/glib/codegen
+bld/glib
 {% endblock %}
 
 {% block meson_flags %}

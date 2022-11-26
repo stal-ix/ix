@@ -19,7 +19,7 @@ gtk_doc=false
 {% endblock %}
 
 {% block bld_tool %}
-bld/glib/codegen
+bld/glib
 {% endblock %}
 
 {% block install %}

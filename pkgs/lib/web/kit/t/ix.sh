@@ -9,7 +9,7 @@ bld/gettext
 bld/wayland
 bin/xmllint
 bld/pkg/config
-bld/glib/codegen
+bld/glib
 {% endblock %}
 
 {% block task_pool %}full{% endblock %}

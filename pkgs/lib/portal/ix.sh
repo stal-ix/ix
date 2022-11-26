@@ -13,7 +13,7 @@ lib/gtk
 {% endblock %}
 
 {% block bld_tool %}
-bld/glib/codegen
+bld/glib
 bld/gnome
 {% endblock %}
 

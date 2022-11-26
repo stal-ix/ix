@@ -17,7 +17,7 @@ lib/fm/extra
 
 {% block bld_tool %}
 {{super()}}
-bld/glib/codegen
+bld/glib
 {% endblock %}
 
 {% block postinstall %}

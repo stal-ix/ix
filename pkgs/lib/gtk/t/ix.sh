@@ -21,7 +21,7 @@ lib/kernel
 {% block bld_tool %}
 bld/gettext
 bld/wayland
-bld/glib/codegen
+bld/glib
 {% endblock %}
 
 {% block run_data %}

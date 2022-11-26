@@ -20,7 +20,7 @@ zwp_linux_buffer_params_v1_interface
 {% endblock %}
 
 {% block bld_tool %}
-bld/glib/codegen
+bld/glib
 bld/wayland
 {% endblock %}
 

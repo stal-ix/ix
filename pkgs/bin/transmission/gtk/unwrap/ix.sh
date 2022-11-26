@@ -19,7 +19,7 @@ shut_up
 
 {% block bld_tool %}
 bld/gettext
-bld/glib/codegen
+bld/glib
 {{super()}}
 {% endblock %}
 

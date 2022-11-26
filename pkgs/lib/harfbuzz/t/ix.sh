@@ -17,7 +17,7 @@ lib/darwin/framework/ApplicationServices
 
 {% block bld_tool %}
 bin/ragel/6
-bld/glib/codegen
+bld/glib
 {% endblock %}
 
 {% block meson_flags %}

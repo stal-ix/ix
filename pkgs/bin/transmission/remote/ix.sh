@@ -16,5 +16,5 @@ lib/appindicator
 
 {% block bld_tool %}
 bld/gettext
-bld/glib/codegen
+bld/glib
 {% endblock %}

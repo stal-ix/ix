@@ -17,7 +17,7 @@ introspection=disabled
 {% endblock %}
 
 {% block bld_tool %}
-bld/glib/codegen
+bld/glib
 {% endblock %}
 
 {% block cpp_missing %}
