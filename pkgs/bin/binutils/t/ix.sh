@@ -4,6 +4,10 @@
 {% include 'ver.sh' %}
 {% endblock %}
 
+{% block bld_tool %}
+bld/perl
+{% endblock %}
+
 {% block configure_flags %}
 --disable-plugins
 --disable-werror

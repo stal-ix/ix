@@ -16,7 +16,7 @@ lib/opcodes
 {% endblock %}
 
 {% block bld_tool %}
-bld/perl
+{{super()}}
 bld/flex
 bld/bison
 bld/texinfo

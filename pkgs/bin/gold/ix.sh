@@ -6,6 +6,7 @@ cd gold
 {% endblock %}
 
 {% block bld_tool %}
+{{super()}}
 bld/flex
 bld/bison
 {% endblock %}
