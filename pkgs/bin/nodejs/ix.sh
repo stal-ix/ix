@@ -17,7 +17,7 @@ lib/c/ares
 lib/brotli
 lib/openssl
 lib/ng/http/2
-lib/shim/atomic
+lib/shim/fake(lib_name=atomic)
 {% endblock %}
 
 {% block bld_tool %}
