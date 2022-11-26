@@ -8,10 +8,7 @@ sha:9455aeb8f826fa8385c850dc22bf0f22cf9069b3c3423fba4bf2c6f6226d9903
 {% block bld_libs %}
 lib/c
 lib/slang
-{% endblock %}
-
-{% block patch %}
-sed -e 's|-ltermcap||g' -i configure
+lib/shim/fake(lib_name=termcap)
 {% endblock %}
 
 {% block setup %}
