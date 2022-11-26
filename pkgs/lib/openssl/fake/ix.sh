@@ -1,23 +1,15 @@
-{% extends '//die/c/ix.sh' %}
+{% extends '//die/proxy.sh' %}
 
-{% block step_unpack %}
-:
+{% block lib_deps %}
+lib/shim/fake(lib_name=ssl)
+lib/shim/fake(lib_name=crypto)
 {% endblock %}
 
 {% block bld_tool %}
 bld/genpc
 {% endblock %}
 
-{% block build %}
->empty.c
-clang -c empty.c -o empty.o
-ar q libempty.a empty.o
-{% endblock %}
-
 {% block install %}
-mkdir -p ${out}/lib/pkgconfig
-cp libempty.a ${out}/lib/libcrypto.a
-cp libempty.a ${out}/lib/libssl.a
 genpc "openssl" "1.1.1"
 {% endblock %}
 
