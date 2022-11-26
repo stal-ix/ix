@@ -10,11 +10,11 @@ md5:3f48a781bbad3f531720d2b7898f68aa
 lib/c
 lib/c++
 lib/glib
-lib/shim/atomic
 {% endblock %}
 
 {% block bld_libs %}
 lib/kernel
+lib/shim/fake(lib_name=atomic)
 {% endblock %}
 
 {% block unpack %}

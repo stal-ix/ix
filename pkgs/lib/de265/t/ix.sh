@@ -11,5 +11,5 @@ lib/c++
 {% endblock %}
 
 {% block bld_libs %}
-lib/shim/atomic
+lib/shim/fake(lib_name=stdc++)
 {% endblock %}
