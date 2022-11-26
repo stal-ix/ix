@@ -3,8 +3,10 @@
 {% block fetch %}
 #https://github.com/swaywm/sway/archive/refs/tags/1.7.tar.gz
 #sha:0c64536fb2883ec518e75cfb119f9300115fb49b084e3fde62b794fe2c6c8d84
-https://github.com/swaywm/sway/archive/5c239eaac59f327294aceac739c6fa035456ed14.zip
-sha:9c1ff479c671db9a8bbc2a56641b546a9140b7e3f9a0f93970f38b5124198944
+#https://github.com/swaywm/sway/archive/5c239eaac59f327294aceac739c6fa035456ed14.zip
+#sha:9c1ff479c671db9a8bbc2a56641b546a9140b7e3f9a0f93970f38b5124198944
+https://github.com/swaywm/sway/archive/refs/tags/1.8-rc1.tar.gz
+sha:495da92b12c521d2cc6f81f4a1cc28a688c140d97bfd9fd9304d217104211a93
 {% endblock %}
 
 {% block bld_libs %}
