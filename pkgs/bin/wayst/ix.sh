@@ -27,3 +27,8 @@ find . -type f | while read l; do
     sed -e 's|-lGL ||g' -i ${l}
 done
 {% endblock %}
+
+{% block install %}
+mkdir ${out}/bin
+{{super()}}
+{% endblock %}
