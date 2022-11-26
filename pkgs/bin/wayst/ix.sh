@@ -19,12 +19,11 @@ lib/drivers/3d
 {% block make_flags %}
 INSTALL_DIR=${out}/bin
 window_protocol=wayland
-renderer=gles20
 {% endblock %}
 
 {% block patch %}
 find . -type f | while read l; do
-    sed -e 's|-lGL ||g' -i ${l}
+    sed -e 's|-lGL||g' -i ${l}
 done
 {% endblock %}
 
