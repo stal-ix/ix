@@ -16,6 +16,7 @@ lib/edit
 lib/ldns
 lib/openssl
 lib/bsd/overlay
+lib/shim/fake(lib_name=curses)
 {% endblock %}
 
 {% block bld_tool %}
@@ -29,7 +30,6 @@ __APPLE_SANDBOX_NAMED_EXTERNAL__
 
 {% block patch %}
 cat ${src}/*.diff | patch -p1
-sed -e 's| -lcurses||' -i configure.ac
 {% endblock %}
 
 {% block configure_flags %}
