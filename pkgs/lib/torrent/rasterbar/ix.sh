@@ -1,14 +1,15 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/arvidn/libtorrent/releases/download/v2.0.7/libtorrent-rasterbar-2.0.7.tar.gz
-sha:3850a27aacb79fcc4d352c1f02a7a59e0e8322afdaa1f5d58d676c02edfcfa36
+https://github.com/arvidn/libtorrent/releases/download/v2.0.8/libtorrent-rasterbar-2.0.8.tar.gz
+sha:09dd399b4477638cf140183f5f85d376abffb9c192bc2910002988e27d69e13e
 {% endblock %}
 
 {% block lib_deps %}
 lib/c
 lib/c++
 lib/boost
+# TODO(pg): remove it
 lib/kernel
 lib/openssl
 {% endblock %}
