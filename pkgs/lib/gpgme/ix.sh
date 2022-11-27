@@ -12,13 +12,12 @@ lib/assuan
 lib/gpg/error
 {% endblock %}
 
+{% block bld_libs %}
+# for tests
+lib/shim/fake(lib_name=stdc++)
+{% endblock %}
+
 {% block bld_tool %}
 bin/gnupg
 bld/texinfo
-{% endblock %}
-
-{% block patch %}
-find . -type f | while read l; do
-    sed -e 's|-lstdc++||g' -i ${l}
-done
 {% endblock %}
