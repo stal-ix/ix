@@ -16,10 +16,6 @@ lib/compiler_rt/builtins/hack/ish
 {% endblock %}
 
 {% block patch %}
-find . -type f | while read l; do
-    sed -e 's|-lstdc++||g' -i ${l}
-done
-
 cat << EOF >> src/malloc_extension.cc
 static inline bool size_multiply_overflow(size_t size, size_t need) noexcept {
     return need != 0 && size > (SIZE_MAX / need);
