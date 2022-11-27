@@ -10,10 +10,11 @@ lib/c
 lib/uthash
 lib/pcre/2
 lib/lua/puc/5/4
+lib/shim/fake(lib_name=lua5.4)
 {% endblock %}
 
 {% block patch %}
 find . -type f | while read l; do
-    sed -e 's|lua5.4/||' -e 's|-llua5.4|-llua|' -i ${l}
+    sed -e 's|lua5.4/||' -i ${l}
 done
 {% endblock %}
