@@ -7,6 +7,7 @@ lib/sqlite/3
 bin/zathura/cb
 bin/zathura/djvu
 bin/zathura/mupdf
+bin/zathura/poppler
 {{super()}}
 {% endblock %}
 
@@ -36,15 +37,17 @@ cd ${tmp}
 ver='4_5'
 
 dl_stubs << EOF >> stubs.c
-cb    zathura_plugin_${ver} cb_zathura_plugin_${ver}
-djvu  zathura_plugin_${ver} djvu_zathura_plugin_${ver}
-mupdf zathura_plugin_${ver} mupdf_zathura_plugin_${ver}
+cb      zathura_plugin_${ver} cb_zathura_plugin_${ver}
+djvu    zathura_plugin_${ver} djvu_zathura_plugin_${ver}
+mupdf   zathura_plugin_${ver} mupdf_zathura_plugin_${ver}
+poppler zathura_plugin_${ver} poppler_zathura_plugin_${ver}
 EOF
 
 cc -o zathura stubs.c \
-    $(find . -name '*.o')        \
-    ${lib_zathura_mupdf}/mod/*.a \
-    ${lib_zathura_djvu}/mod/*.a  \
+    $(find . -name '*.o')          \
+    ${lib_zathura_poppler}/mod/*.a \
+    ${lib_zathura_mupdf}/mod/*.a   \
+    ${lib_zathura_djvu}/mod/*.a    \
     ${lib_zathura_cb}/mod/*.a
 {% endblock %}
 
@@ -54,4 +57,10 @@ cp ${tmp}/zathura ${out}/bin/
 mkdir -p ${out}/share/plugins
 echo > ${out}/share/plugins/mupdf.plugin
 echo > ${out}/share/plugins/djvu.plugin
+echo > ${out}/share/plugins/poppler.plugin
+{% endblock %}
+
+{% block setup %}
+{{super()}}
+export LDFLAGS="-Wl,--error-limit=0 ${LDFLAGS}"
 {% endblock %}
