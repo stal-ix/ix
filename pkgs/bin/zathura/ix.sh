@@ -33,7 +33,7 @@ sed -e "s|plugindir = .*|plugindir = join_paths(datadir, 'plugins')|" -i meson.b
 
 cd ${tmp}
 
-ver='3_4'
+ver='4_5'
 
 dl_stubs << EOF >> stubs.c
 cb    zathura_plugin_${ver} cb_zathura_plugin_${ver}
