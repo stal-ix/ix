@@ -15,6 +15,6 @@ lib/shim/fake(lib_name=lua5.4)
 
 {% block patch %}
 find . -type f | while read l; do
-    sed -e 's|lua5.4/||' -i ${l}
+    sed -e 's|<lua5.4/|<|' -i ${l}
 done
 {% endblock %}
