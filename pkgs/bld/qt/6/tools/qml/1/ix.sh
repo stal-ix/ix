@@ -11,6 +11,7 @@ src/qmltyperegistrar/install
 {% block patch %}
 {{super()}}
 sed -e 's|$<T.*qmltyperegistrar>|qmltyperegistrar|' \
+    -e 's|$<T.*qmllint>|qmllint|' \
     -e 's|$<T.*cachegen_name}>|qmlcachegen|' \
     -i src/qml/Qt6QmlMacros.cmake
 {% endblock %}

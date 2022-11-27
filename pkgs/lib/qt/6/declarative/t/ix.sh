@@ -2,7 +2,7 @@
 
 {% block fetch %}
 https://github.com/qt/qtdeclarative/archive/refs/tags/v6.4.1.tar.gz
-sha:daf7b97be51451af5afa35e1c0421fb8964003852088b0293c144a12bd664cd1
+sha:23b5c91e98ec2b8a4118a3d3ace0c2e61b355cc8f2ccb87d189708b69446f917
 {% endblock %}
 
 {% block lib_deps %}
