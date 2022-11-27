@@ -3,6 +3,7 @@
 {% block run_deps %}
 bld/python
 bin/svg2png
+bin/convert
 {% endblock %}
 
 {% block install %}

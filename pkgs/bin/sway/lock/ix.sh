@@ -1,8 +1,8 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://github.com/swaywm/swaylock/archive/refs/tags/1.5.tar.gz
-sha:37b9c70e5698e8872b0b964a7454ecdb0f1a9e06b686eecf2b6c54f7f64a3f42
+https://github.com/swaywm/swaylock/archive/refs/tags/1.7.tar.gz
+sha:4c4d3c3ed838c085feb0b237b9aaaabdf66cbc05e2b034b2cb5c552957e620d6
 {% endblock %}
 
 {% block bld_libs %}
@@ -17,4 +17,8 @@ lib/gdk/pixbuf
 {% block bld_tool %}
 bin/scdoc
 bld/wayland
+{% endblock %}
+
+{% block cpp_defines %}
+HAVE_GDK_PIXBUF=1
 {% endblock %}
