@@ -11,7 +11,5 @@ lib/kernel
 {% endblock %}
 
 {% block patch %}
-find . -type f | while read l; do
-    sed -e 's|-lm||' -i ${l}
-done
+sed -e 's|-lm||' -i Make.rules
 {% endblock %}
