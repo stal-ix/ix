@@ -32,6 +32,7 @@ lib/seccomp
 lib/ucontext
 lib/sdl/deps
 lib/sdl/2/image
+lib/shim/fake(lib_name=stdc++)
 {% endblock %}
 
 {% block bld_tool %}
@@ -64,10 +65,6 @@ export CPPFLAGS="-isystem${PWD}/linux-headers ${CPPFLAGS}"
 {% block patch %}
 sed -e 's|SDL_VIDEODRIVER|SDL_VIDEODRIVER_XXX|' -i ui/sdl2.c
 sed -e 's|.*#.*error.*||' -i include/qemu/osdep.h
-
-find . -type f | while read l; do
-    sed -e 's|-lstdc++|-lc|' -i "${l}"
-done
 {% endblock %}
 
 {% block c_rename_symbol %}
