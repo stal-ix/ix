@@ -14,7 +14,7 @@ lib/gtk/3
 {% endblock %}
 
 {% block bld_tool %}
+bld/glib
 bin/scdoc
 bld/gettext
-bld/glib
 {% endblock %}
