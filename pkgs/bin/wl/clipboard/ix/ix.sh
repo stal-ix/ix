@@ -11,6 +11,7 @@ ix.h
 {% endblock %}
 
 {% block patch %}
+{{super()}}
 sed -e 's|char.*tmp.*|char* dirpath = ix_mkstemp_template();|' \
     -e 's|sizeof(dirpath)|(strlen(dirpath) + 1)|g' \
     -i src/util/files.c
