@@ -58,7 +58,7 @@ wrap_cc
 {% endblock %}
 
 {% block setup %}
-export CPPFLAGS="-I${PWD}/linux-headers ${CPPFLAGS}"
+export CPPFLAGS="-isystem${PWD}/linux-headers ${CPPFLAGS}"
 {% endblock %}
 
 {% block patch %}
