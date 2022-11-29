@@ -26,7 +26,7 @@ lib/c/naked
 
 {% block bld_libs %}
 lib/c++
-lib/mimalloc/2
+lib/bumpalloc
 {% endblock %}
 
 {% block build_flags %}
