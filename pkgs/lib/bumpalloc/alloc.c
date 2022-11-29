@@ -1,7 +1,23 @@
 typedef unsigned long size_t;
 
 double buf[1000000];
-char* cur = &buf;
+char* cur = (char*)&buf;
+
+static void* alloc(size_t len, size_t align) {
+    if (len < (size_t)1) {
+        len = (size_t)1;
+    }
+
+    while (((size_t)cur) % align) {
+        ++cur;
+    }
+
+    return (cur += len) - len;
+}
+
+void* malloc(size_t len) {
+    return alloc(len, 32);
+}
 
 void* realloc(char* ptr, size_t len) {
     if (!ptr) {
@@ -21,27 +37,11 @@ void* realloc(char* ptr, size_t len) {
     return ret;
 }
 
-static void* alloc(size_t len, size_t align) {
-    if (len < (size_t)1) {
-        len = (size_t)1;
-    }
-
-    while (((size_t)cur) % align) {
-        ++cur;
-    }
-
-    return (cur += len) - len;
-}
-
-void* malloc(size_t len) {
-    return alloc(len, 32);
-}
-
-void free(void*) {
+void free(void* ptr) {
 }
 
 void* calloc(size_t nmemb, size_t size) {
-    size_t n = nmemb * size
+    size_t n = nmemb * size;
     char* ret = malloc(n);
 
     for (size_t i = 0; i < n; ++i) {
