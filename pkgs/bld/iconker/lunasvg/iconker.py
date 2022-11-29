@@ -3,6 +3,7 @@
 import os
 import sys
 import shutil
+import functools
 import subprocess
 
 fr = sys.argv[1]
@@ -20,9 +21,12 @@ def it_svg(pp):
 
 for svg, name in it_svg(fr):
     png = name.replace('.svg', '.png')
-    cvt = os.path.basename(svg) + '.png'
 
-    subprocess.check_call(['svg2png', svg, f'192x192'])
+    @functools.cache
+    def f():
+        subprocess.check_call(['svg2png', svg, f'192x192'])
+
+        return os.path.basename(svg) + '.png'
 
     for w in (16, 24, 32, 48, 64):
         out = f'{to}/{w}x{w}/{png}'
@@ -32,4 +36,4 @@ for svg, name in it_svg(fr):
         if os.path.exists(out):
             print(f'skip {out}', file=sys.stderr)
         else:
-            subprocess.check_call(['convert', cvt, '-resize', f'{w}x{w}', out])
+            subprocess.check_call(['convert', f(), '-resize', f'{w}x{w}', out])
