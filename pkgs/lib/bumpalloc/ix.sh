@@ -5,5 +5,5 @@ export CFLAGS="-fno-builtin ${CFLAGS}"
 {% endblock %}
 
 {% block sources %}
-fakes.c
+alloc.c
 {% endblock %}
