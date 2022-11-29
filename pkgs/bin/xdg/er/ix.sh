@@ -1,4 +1,4 @@
-{% extends '//die/wrapper.sh' %}
+{% extends '//die/fix/wrapper.sh' %}
 
 {% block wrapper %}
 {{prefix}}

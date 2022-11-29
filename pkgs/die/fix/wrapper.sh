@@ -1,4 +1,4 @@
-{% extends 'proxy.sh' %}
+{% extends '//die/proxy.sh' %}
 
 {% block install %}
 cd ${out}; mkdir -p fix; cd fix
