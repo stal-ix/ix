@@ -5,7 +5,7 @@
 {% endblock %}
 
 {% block build %}
-echo | cc -c -o empty.o -x c -
+cc -c -o empty.o -x c -
 ar q libempty.a *.o
 {% endblock %}
 
