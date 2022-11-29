@@ -1,7 +1,7 @@
 typedef unsigned long size_t;
 
-double buf[1000000];
-char* cur = (char*)&buf;
+static double buf[1000000];
+static char* cur = (char*)&buf;
 
 static void* alloc(size_t len, size_t align) {
     if (len < (size_t)1) {
