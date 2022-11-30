@@ -5,6 +5,7 @@ lib/lua
 lib/mu/js
 lib/opengl
 lib/wayland
+lib/blueray
 lib/xkbcommon
 lib/drivers/3d
 lib/rubber/band
