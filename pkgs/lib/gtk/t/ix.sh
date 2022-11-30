@@ -27,3 +27,10 @@ bld/glib
 {% block run_data %}
 {{gtk_icons or 'aux/adwaita/icons'}}
 {% endblock %}
+
+{% block c_rename_symbol %}
+wl_cursor_image_get_buffer
+wl_cursor_theme_destroy
+wl_cursor_theme_get_cursor
+xcursor_images_destroy
+{% endblock %}

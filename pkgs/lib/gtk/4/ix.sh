@@ -38,11 +38,3 @@ export CPPFLAGS="-I${out}/include/gtk-4.0 \${CPPFLAGS}"
 {{super()}}
 sed -e 's|wayland-protocols.*,||' -i ${out}/lib/pkgconfig/gtk4.pc
 {% endblock %}
-
-{% block c_rename_symbol %}
-{{super()}}
-wl_cursor_image_get_buffer
-wl_cursor_theme_destroy
-wl_cursor_theme_get_cursor
-xcursor_images_destroy
-{% endblock %}
