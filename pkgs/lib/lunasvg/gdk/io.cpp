@@ -157,8 +157,6 @@ namespace {
         }
 
         GError* stopLoad() {
-            std::unique_ptr<SvgContext> holder(this);
-
             try {
                 cb.render(Buf);
             } catch (const std::exception& err) {
@@ -187,7 +185,9 @@ namespace {
     }
 
     static gboolean stopLoad(gpointer data, GError** error) {
-        return !(*error = ((SvgContext*)data)->stopLoad());
+        std::unique_ptr<SvgContext> holder((SvgContext*)data);
+
+        return !(*error = holder->stopLoad());
     }
 
     static const GdkPixbufModulePattern signature[] = {
