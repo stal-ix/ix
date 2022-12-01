@@ -3,6 +3,7 @@
 {% block lib_deps %}
 lib/c
 lib/c++
+lib/glib
 lib/lunasvg
 lib/gdk/pixbuf
 {% endblock %}
