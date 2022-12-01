@@ -60,8 +60,8 @@ namespace {
     }
 
     struct Loader {
-        size_t width = 0;
-        size_t height = 0;
+        int width = 0;
+        int height = 0;
         std::unique_ptr<Document> doc;
 
         Loader(const std::string& buf) {
@@ -92,8 +92,8 @@ namespace {
         }
 
         void loadMangled(const std::string& s) {
-            width = atoi(parseField(s, "width=\"").c_str());
-            height = atoi(parseField(s, "height=\"").c_str());
+            width = stoi(parseField(s, "width=\""));
+            height = stoi(parseField(s, "height=\""));
             doc = loadSvg(b64decode(parseField(s, "data:text/xml;base64,")));
         }
     };
@@ -107,14 +107,11 @@ namespace {
         void render(const std::string& buf) {
             Loader l(buf);
 
-            int desiredW = l.width;
-            int desiredH = l.height;
-
             if (sizeFunc) {
-                sizeFunc(&desiredW, &desiredH, userData);
+                sizeFunc(&l.width, &l.height, userData);
             }
 
-            auto bit = l.doc->renderToBitmap(std::max(desiredW, 1), std::max(desiredH, 1));
+            auto bit = l.doc->renderToBitmap(std::max(l.width, 1), std::max(l.height, 1));
 
             if (!bit.valid()) {
                 throw std::runtime_error("render error");
