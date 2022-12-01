@@ -111,6 +111,12 @@ namespace {
         size_t height;
         std::unique_ptr<Document> doc;
 
+        Loader(const std::string& buf) {
+            if (!load(buf)) {
+                throw std::runtime_error("malformed svg");
+            }
+        }
+
         bool load(const std::string& s) {
             if (s.find("<xi:include") != std::string::npos) {
                 loadMangled(s);
@@ -146,11 +152,7 @@ namespace {
         gpointer userData;
 
         void render(const std::string& buf) {
-            Loader l;
-
-            if (!l.load(buf)) {
-                throw std::runtime_error("malformed svg");
-            }
+            Loader l(buf);
 
             int desiredW = l.width;
             int desiredH = l.height;
