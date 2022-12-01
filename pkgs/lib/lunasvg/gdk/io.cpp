@@ -60,8 +60,8 @@ namespace {
     }
 
     struct Loader {
-        size_t width;
-        size_t height;
+        size_t width = 0;
+        size_t height = 0;
         std::unique_ptr<Document> doc;
 
         Loader(const std::string& buf) {
@@ -130,11 +130,15 @@ namespace {
                 preparedFunc(pixbuf, nullptr, userData);
             }
 
-            auto w = gdk_pixbuf_get_width(pixbuf);
-            auto h = gdk_pixbuf_get_height(pixbuf);
-
             if (updatedFunc) {
-                updatedFunc(pixbuf, 0, 0, w, h, userData);
+                updatedFunc(
+                    pixbuf,
+                    0,
+                    0,
+                    gdk_pixbuf_get_width(pixbuf),
+                    gdk_pixbuf_get_height(pixbuf),
+                    userData
+                );
             }
 
             g_object_unref(pixbuf);
