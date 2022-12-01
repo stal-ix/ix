@@ -18,8 +18,8 @@ lib/handy
 lib/secret
 lib/archive
 lib/poppler
-lib/rsvg/dl
 lib/djvulibre
+lib/gdk/pixbuf/svg
 lib/gsettings/desktop/schemas
 {% endblock %}
 

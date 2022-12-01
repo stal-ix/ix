@@ -9,8 +9,8 @@ sha:38e81e67004bbd246b6551ffc812b6ab019f84a7329f134bb8031eb61d9d732c
 lib/c
 lib/glib
 lib/gtk/4
-lib/rsvg/dl
 lib/qrencode
+lib/gdk/pixbuf/svg
 {% endblock %}
 
 {% block bld_tool %}

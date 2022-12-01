@@ -3,8 +3,8 @@
 {% block bld_libs %}
 lib/gtk/3
 lib/notify
-lib/rsvg/dl
 lib/appindicator
+lib/gdk/pixbuf/svg
 {{super()}}
 {% endblock %}
 

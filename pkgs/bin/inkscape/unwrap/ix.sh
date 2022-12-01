@@ -25,7 +25,6 @@ lib/soup/2
 #lib/poppler
 lib/boehmgc
 lib/potrace
-lib/rsvg/dl
 lib/gtk/3/mm
 lib/readline
 lib/harfbuzz
@@ -34,6 +33,7 @@ lib/dbus/glib
 lib/googletest
 lib/fontconfig
 lib/image/magick
+lib/gdk/pixbuf/svg
 lib/double/conversion
 {% endblock %}
 
