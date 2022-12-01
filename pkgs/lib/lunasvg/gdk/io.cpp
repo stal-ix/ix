@@ -1,6 +1,5 @@
 #include <glib.h>
 #include <string>
-#include <iostream>
 #include <lunasvg.h>
 #include <gdk-pixbuf/gdk-pixbuf.h>
 
@@ -92,8 +91,8 @@ namespace {
         }
 
         void loadMangled(const std::string& s) {
-            width = stoi(parseField(s, "width=\""));
-            height = stoi(parseField(s, "height=\""));
+            width = std::stoi(parseField(s, "width=\""));
+            height = std::stoi(parseField(s, "height=\""));
             doc = loadSvg(b64decode(parseField(s, "data:text/xml;base64,")));
         }
     };
