@@ -192,13 +192,19 @@ namespace {
 
     static const GdkPixbufModulePattern signature[] = {
         {
-            " <svg",  "*    ", 100
+            " <svg",
+            "*    ",
+            100
         },
         {
-            " <!DOCTYPE svg",  "*             ", 100
+            " <!DOCTYPE svg",
+            "*             ",
+            100
         },
         {
-            NULL, NULL, 0
+            nullptr,
+            nullptr,
+            0
         }
     };
 
