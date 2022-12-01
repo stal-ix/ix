@@ -1,8 +1,8 @@
 {% extends '//lib/openssl/t/ix.sh' %}
 
 {% block fetch %}
-https://github.com/quictls/openssl/archive/refs/heads/openssl-3.0.3+quic.zip
-sha:102dcfbeaa5bfdbe2defe62574e8d9fa1feb608f1fa930d2d544950dea3ba9bf
+https://github.com/quictls/openssl/archive/refs/tags/openssl-3.0.7+quic1.zip
+sha:b4e9072c8f470e5ec33b2a77da30434dcdf38f945ffb4913865acbf0915dcb4c
 {% endblock %}
 
 {% block openssl_conf_opts %}
