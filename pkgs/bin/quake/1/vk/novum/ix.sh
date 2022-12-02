@@ -19,7 +19,7 @@ lib/vulkan/loader
 
 {% block bld_tool %}
 bin/glslang
-lib/vulkan/spirv/tools
+bld/spirv/tools
 {% endblock %}
 
 {% block install %}
