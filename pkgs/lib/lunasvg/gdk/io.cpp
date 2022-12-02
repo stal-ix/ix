@@ -34,8 +34,6 @@ namespace {
     static auto convertToPixbuf(const Bitmap& bit) {
         auto copy = new Bitmap(bit);
 
-        copy->convertToRGBA();
-
         return gdk_pixbuf_new_from_data(
             copy->data(),
             GDK_COLORSPACE_RGB,
@@ -61,6 +59,7 @@ namespace {
     struct Loader {
         int width = 0;
         int height = 0;
+        bool symbolic = false;
         std::unique_ptr<Document> doc;
 
         Loader(const std::string& buf) {
@@ -94,8 +93,22 @@ namespace {
             width = std::stoi(parseField(s, "width=\""));
             height = std::stoi(parseField(s, "height=\""));
             doc = loadSvg(b64decode(parseField(s, "data:text/xml;base64,")));
+            symbolic = true;
         }
     };
+
+    void symbolize(Bitmap& bit) {
+        auto db = (unsigned char*)bit.data();
+        auto de = db + bit.height() * bit.stride();
+
+        while (db < de) {
+            db[0] = 0;
+            db[1] = 0;
+            db[2] = 0;
+
+            db += 4;
+        }
+    }
 
     struct CB {
         GdkPixbufModuleUpdatedFunc updatedFunc;
@@ -114,6 +127,12 @@ namespace {
 
             if (!bit.valid()) {
                 throw std::runtime_error("render error");
+            }
+
+            bit.convertToRGBA();
+
+            if (l.symbolic) {
+                symbolize(bit);
             }
 
             auto pixbuf = convertToPixbuf(bit);
