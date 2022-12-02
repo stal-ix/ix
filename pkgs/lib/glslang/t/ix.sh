@@ -23,7 +23,3 @@ sed -e 's|.*add_link_options.*||' -e 's|.*set.*ENABLE_OPT.*||' -i CMakeLists.txt
 {% block cmake_flags %}
 ENABLE_OPT=ON
 {% endblock %}
-
-{% block env_lib %}
-export CPPFLAGS="-DENABLE_OPT=1 \${CPPFLAGS}"
-{% endblock %}
