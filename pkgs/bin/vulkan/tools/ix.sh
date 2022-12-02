@@ -8,7 +8,6 @@ sha:fa88ab7a542cc3ec05d22316ffedce7c058350efe79ec5e019c405ab268d17a0
 {% block bld_libs %}
 lib/c
 lib/kernel
-lib/opengl
 lib/drivers/3d
 lib/vulkan/loader
 lib/vulkan/headers
