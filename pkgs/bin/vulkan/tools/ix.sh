@@ -7,6 +7,7 @@ sha:3242f9ad158d02af9cc44186cbd415982387356a2dd8c0492af2fdace8c22f49
 
 {% block bld_libs %}
 lib/c
+lib/kernel
 lib/drivers/3d
 lib/vulkan/loader
 lib/vulkan/headers
@@ -14,8 +15,8 @@ lib/vulkan/headers
 
 {% block bld_tool %}
 bin/glslang
-bld/pkg/config
 bld/wayland
+bld/pkg/config
 {% endblock %}
 
 {% block cmake_flags %}
