@@ -1,19 +1,25 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://github.com/Novum/vkQuake/archive/refs/tags/1.20.3.tar.gz
-sha:7ff480c00513ac7a9c47864c5296d487444bc5b35a4c6c39affc3a5601888339
+https://github.com/Novum/vkQuake/archive/refs/tags/1.22.0.tar.gz
+sha:a5bc9e2a357ffd95e39553b3a1463d8e4174a3ba9fa30016bf457f9f71326428
 {% endblock %}
 
 {% block bld_libs %}
 lib/c
 lib/mad
 lib/sdl/2
+lib/kernel
 lib/xiph/ogg
 lib/xiph/flac
 lib/drivers/3d
 lib/xiph/vorbis
 lib/vulkan/loader
+{% endblock %}
+
+{% block bld_tool %}
+bin/glslang
+lib/vulkan/spirv/tools
 {% endblock %}
 
 {% block install %}
