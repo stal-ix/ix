@@ -24,7 +24,7 @@ def group_realms(l):
         yield d
 
 
-def prepare(ctx,args):
+def prepare(ctx, args):
     mngr = cm.Manager(cf.config_from(ctx))
 
     for d in group_realms(cc.lex(args)):
@@ -46,7 +46,7 @@ def cli_run(ctx):
     for r in prepare(ctx, ['ephemeral'] + args[:args.index('--')]):
         cmd = f'. {r.path}/env; ' + shlex.join(args[args.index('--') + 1:])
 
-        subprocess.check_call(cmd, shell=True)
+        return subprocess.check_call(cmd, shell=True)
 
 
 def cli_build(ctx):
