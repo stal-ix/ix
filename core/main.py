@@ -10,6 +10,7 @@ import core.error as ce
 
 CLIS = [
     ('core.cmd_realm', 'mut', False),
+    ('core.cmd_realm', 'let', False),
     ('core.cmd_realm', 'run', False),
     ('core.cmd_realm', 'list', False),
     ('core.cmd_realm', 'purge', False),

@@ -24,22 +24,27 @@ def group_realms(l):
         yield d
 
 
-def cli_mut(ctx):
+def prepare(ctx,args):
     mngr = cm.Manager(cf.config_from(ctx))
 
-    for d in group_realms(cc.lex(ctx['args'])):
-        mngr.ensure_realm(d[0][2]['r']).mut(d).install()
+    for d in group_realms(cc.lex(args)):
+        yield mngr.ensure_realm(d[0][2]['r']).mut(d)
+
+
+def cli_mut(ctx):
+    for r in prepare(ctx, ctx['args']):
+        r.install()
+
+
+def cli_let(ctx):
+    list(prepare(ctx, ctx['args']))
 
 
 def cli_run(ctx):
-    mngr = cm.Manager(cf.config_from(ctx))
+    args = ctx['args']
 
-    if args := ctx['args']:
-        r = mngr.empty_realm('ephemeral')
-        a = args[:args.index('--')]
-        p = r.mut(list(cc.lex(a))).path + '/env'
-
-        subprocess.check_call(f'. {p}; ' + shlex.join(args[args.index('--') + 1:]), shell=True)
+    for r in prepare(ctx, ['ephemeral'] + args[:args.index('--')]):
+        subprocess.check_call(f'. {r.path}/env; ' + shlex.join(args[args.index('--') + 1:]), shell=True)
 
 
 def cli_list(ctx):
