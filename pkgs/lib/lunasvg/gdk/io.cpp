@@ -97,7 +97,7 @@ namespace {
         }
     };
 
-    void symbolize(Bitmap& bit) {
+    static void symbolize(Bitmap& bit) {
         auto db = (unsigned char*)bit.data();
         auto de = db + bit.height() * bit.stride();
 
@@ -189,7 +189,9 @@ namespace {
     };
 
     static gpointer beginLoad(GdkPixbufModuleSizeFunc size, GdkPixbufModulePreparedFunc prepared, GdkPixbufModuleUpdatedFunc updated, gpointer ud, GError** error) {
-        *error = nullptr;
+        if (error) {
+            *error = nullptr;
+        }
 
         return new SvgContext(CB{
             updated,
@@ -199,14 +201,20 @@ namespace {
         });
     }
 
+    static bool setError(GError** ptr, GError* cur) {
+        if (ptr) {
+            *ptr = cur;
+        }
+
+        return !cur;
+    }
+
     static gboolean loadIncrement(gpointer data, const guchar* buf, guint size, GError** error) {
-        return !(*error = ((SvgContext*)data)->loadIncrement(buf, size));
+        return setError(error, ((SvgContext*)data)->loadIncrement(buf, size));
     }
 
     static gboolean stopLoad(gpointer data, GError** error) {
-        std::unique_ptr<SvgContext> holder((SvgContext*)data);
-
-        return !(*error = holder->stopLoad());
+        return setError(error, std::unique_ptr<SvgContext>((SvgContext*)data)->stopLoad());
     }
 
     static const GdkPixbufModulePattern signature[] = {
