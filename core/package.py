@@ -97,6 +97,15 @@ def sanitize(flags):
     return popf(flags, *ONE_LEVEL)
 
 
+def parse_kind(n):
+    v = n[:n.index('/')]
+
+    return {
+        'bld': 'bin',
+        'etc': 'aux',
+    }.get(v, v)
+
+
 def fix_selector(selector, config):
     selector = cu.copy_dict(selector)
 
@@ -109,7 +118,7 @@ def fix_selector(selector, config):
         flags['target'] = config.platform['target']
 
     if 'kind' not in flags:
-        flags['kind'] = 'bin'
+        flags['kind'] = parse_kind(selector['name'])
 
     return selector
 

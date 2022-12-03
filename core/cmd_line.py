@@ -32,15 +32,6 @@ def tok(p):
     return ('r', op, p)
 
 
-def parse_kind(n):
-    v = n[:n.index('/')]
-
-    return {
-        'bld': 'bin',
-        'etc': 'aux',
-    }.get(v, v)
-
-
 def prelex(pkgs):
     if pkgs and tok(pkgs[0])[0] == 'r':
         pass
@@ -63,13 +54,5 @@ def lex(pkgs):
             pkg = v
 
             yield ('p', op, {'r': rlm, 'p': v})
-
-            if op == '+':
-                # add synthetic --kind=
-                yield ('f', '+', {
-                    'r': rlm,
-                    'p': v,
-                    'f': ('kind', parse_kind(v)),
-                })
         elif kind == 'f':
             yield ('f', op, {'r': rlm, 'p': pkg, 'f': v})
