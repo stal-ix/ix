@@ -33,11 +33,12 @@ def tok(p):
 
 
 def parse_kind(n):
+    v = n[:n.index('/')]
+
     return {
-        'lib': 'lib',
-        'aux': 'aux',
+        'bld': 'bin',
         'etc': 'aux',
-    }.get(n[:n.index('/')], 'bin')
+    }.get(v, v)
 
 
 def prelex(pkgs):
