@@ -15,7 +15,9 @@ def tok(p):
 
         return ('f', '+', (k, v))
 
-    if p[0] == '+':
+    if not p:
+        op = '+'
+    elif p[0] == '+':
         op = '+'
         p = p[1:]
     elif p[0] == '-':
@@ -28,6 +30,14 @@ def tok(p):
         return ('p', op, p)
 
     return ('r', op, p)
+
+
+def parse_kind(n):
+    return {
+        'lib': 'lib',
+        'aux': 'aux',
+        'etc': 'aux',
+    }.get(n[:n.index('/')], 'bin')
 
 
 def prelex(pkgs):
@@ -52,5 +62,13 @@ def lex(pkgs):
             pkg = v
 
             yield ('p', op, {'r': rlm, 'p': v})
+
+            if op == '+':
+                # add synthetic --kind=
+                yield ('f', '+', {
+                    'r': rlm,
+                    'p': v,
+                    'f': ('kind', parse_kind(v)),
+                })
         elif kind == 'f':
             yield ('f', op, {'r': rlm, 'p': pkg, 'f': v})

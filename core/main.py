@@ -14,7 +14,7 @@ CLIS = [
     ('core.cmd_realm', 'run', False),
     ('core.cmd_realm', 'list', False),
     ('core.cmd_realm', 'purge', False),
-    ('core.cmd_build', 'build', False),
+    ('core.cmd_realm', 'build', False),
     ('core.cmd_gc', 'gc', False),
     ('core.cmd_tool', 'tool', False),
     ('core.cmd_misc', 'misc_extract', True),

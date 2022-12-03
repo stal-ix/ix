@@ -44,7 +44,13 @@ def cli_run(ctx):
     args = ctx['args']
 
     for r in prepare(ctx, ['ephemeral'] + args[:args.index('--')]):
-        subprocess.check_call(f'. {r.path}/env; ' + shlex.join(args[args.index('--') + 1:]), shell=True)
+        cmd = f'. {r.path}/env; ' + shlex.join(args[args.index('--') + 1:])
+
+        subprocess.check_call(cmd, shell=True)
+
+
+def cli_build(ctx):
+    list(prepare(ctx, ['ephemeral'] + ctx['args']))
 
 
 def cli_list(ctx):
