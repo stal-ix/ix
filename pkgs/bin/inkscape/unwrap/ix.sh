@@ -26,6 +26,7 @@ lib/dbus
 lib/intl
 lib/jpeg
 lib/xslt
+lib/wp/g
 lib/2geom
 lib/pango
 lib/cairo
@@ -58,7 +59,6 @@ bld/glib
 
 {% block cmake_flags %}
 WITH_X11=OFF
-WITH_LIBWPG=OFF
 ENABLE_POPPLER=ON
 {% endblock %}
 
