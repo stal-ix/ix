@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://astron.com/pub/tcsh/tcsh-6.24.02.tar.gz
-sha:6691e15af0719575cad91ce9212c77a754f6c89f0a1f70454625e5e21ba0bdad
+https://astron.com/pub/tcsh/tcsh-6.24.03.tar.gz
+sha:7368bfdfa6d0c8b0040d47c00b3dfc17b501e3bc032d05ce816019aa825798f5
 {% endblock %}
 
 {% block conf_ver %}
@@ -13,12 +13,4 @@ sha:6691e15af0719575cad91ce9212c77a754f6c89f0a1f70454625e5e21ba0bdad
 lib/c
 lib/iconv
 lib/curses
-{% endblock %}
-
-{% block cpp_defines %}
-SYSMALLOC
-{% endblock %}
-
-{% block patch %}
-sed -e 's|.*undef SYS.*||' -i config_f.h
 {% endblock %}
