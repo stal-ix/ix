@@ -1,8 +1,8 @@
 {% extends '//die/c/make.sh' %}
 
 {% block fetch %}
-https://github.com/johnsonjh/OpenVi/archive/refs/tags/7.1.18.tar.gz
-sha:39c4ac933f52c65021be06fcece8bfd308fc1ac08e8ff4604b2fdd1994192d08
+https://github.com/johnsonjh/OpenVi/archive/refs/tags/7.2.19.tar.gz
+sha:a49089a3e246a28137e61defa7b09e6c6dae7b1914855de67d573e5c860a7b68
 {% endblock %}
 
 {% block bld_libs %}
