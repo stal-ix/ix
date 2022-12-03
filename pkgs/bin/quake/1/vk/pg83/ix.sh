@@ -1,12 +1,12 @@
 {% extends '//bin/quake/1/vk/novum/ix.sh' %}
 
+{# https://github.com/Novum/vkQuake/issues/500 #}
+{# https://github.com/Novum/vkQuake/issues/508 #}
+
 {% block cpp_defines %}
 {{super()}}
 USE_CRT_MALLOC=1
 {% endblock %}
-
-{# https://github.com/Novum/vkQuake/issues/500 #}
-{# https://github.com/Novum/vkQuake/issues/508 #}
 
 {% block patch %}
 {{super()}}
