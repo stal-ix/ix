@@ -30,11 +30,17 @@ def tok(p):
     return ('r', op, p)
 
 
-def lex(pkgs):
-    rlm = getpass.getuser()
-    pkg = None
+def prelex(pkgs):
+    if pkgs and tok(pkgs[0])[0] == 'r':
+        pass
+    else:
+        yield getpass.getuser()
 
-    for p in pkgs:
+    yield from pkgs
+
+
+def lex(pkgs):
+    for p in prelex(list(pkgs)):
         kind, op, v = tok(p)
 
         if kind == 'r':
