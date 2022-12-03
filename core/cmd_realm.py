@@ -1,11 +1,11 @@
 import shlex
 import subprocess
 
+import core.lex as cc
 import core.repo as cr
 import core.utils as cu
 import core.config as cf
 import core.manager as cm
-import core.cmd_line as cc
 
 
 def group_realms(l):
