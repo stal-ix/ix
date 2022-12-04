@@ -51,15 +51,14 @@ lib/double/conversion
 {% endblock %}
 
 {% block bld_tool %}
+bld/glib
 bld/python
 bld/gettext
 bin/ragel/6
-bld/glib
 {% endblock %}
 
 {% block cmake_flags %}
 WITH_X11=OFF
-ENABLE_POPPLER=ON
 {% endblock %}
 
 {% block setup %}

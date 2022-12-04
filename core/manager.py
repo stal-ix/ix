@@ -52,6 +52,6 @@ class Manager:
         try:
             return cr.load_realm_ro(self.config, name).to_rw(self)
         except FileNotFoundError as e:
-            print(f'create new realm {name}')
+            pass
 
         return self.empty_realm(name)

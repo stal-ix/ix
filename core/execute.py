@@ -1,34 +1,13 @@
 import os
-import sys
 import json
 import shutil
 import random
 import asyncio
 import subprocess
 
+import core.log as cl
 import core.error as ce
 import core.utils as cu
-
-
-COL = {
-    'r': 31,
-    'g': 32,
-    'y': 33,
-    'b': 34,
-}
-
-
-def col(v, color='r', bright=False):
-    n = COL[color]
-
-    if bright:
-        n += 60
-
-    return f'\x1b[{n}m{v}\x1b[0m'
-
-
-def log(*args, **kwargs):
-    print(col(*args, **kwargs), file=sys.stderr)
 
 
 def execute_cmd(c, mt):
@@ -44,14 +23,14 @@ def execute_cmd(c, mt):
     except KeyError:
         descr = ' '.join(args)
 
-    log(f'ENTER {descr}', color='b')
+    cl.log(f'ENTER {descr}', color='b')
 
     try:
         subprocess.run(args, env=env, input=c.get('stdin', '').encode(), check=True)
     except Exception as e:
         raise ce.Error(f'{descr} failed', exception=e)
 
-    log(f'LEAVE {descr}', color='b')
+    cl.log(f'LEAVE {descr}', color='b')
 
 
 def iter_in(c):
@@ -129,7 +108,7 @@ class Executor:
         await self.visit_node_impl(n)
 
         for o in iter_out(n):
-            log(f'TOUCH {o}', color='g')
+            cl.log(f'TOUCH {o}', color='g')
 
     async def visit_node_impl(self, n):
         if all(os.path.isfile(x) for x in iter_out(n)):
