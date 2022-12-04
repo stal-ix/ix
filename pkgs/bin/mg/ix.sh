@@ -1,8 +1,8 @@
 {% extends '//die/c/make.sh' %}
 
 {% block fetch %}
-https://github.com/hboetes/mg/archive/refs/tags/20220212.tar.gz
-sha:dd94e6c43bf08f35a7342c416c386529c58d756654720f1797c5708ebcd5eb73
+https://github.com/hboetes/mg/archive/refs/tags/20221112.tar.gz
+sha:eeb4181fdb6f2bd3f9b5a3c8ccc5b71fbcf9c7f4a805a2f1858334359d44b545
 {% endblock %}
 
 {% block bld_libs %}
