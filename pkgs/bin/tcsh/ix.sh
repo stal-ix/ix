@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://astron.com/pub/tcsh/tcsh-6.24.04.tar.gz
-sha:948f87fc417b2bf0c9d3f430cfb4261b8651a4a184bc51159326c92857a79b98
+https://astron.com/pub/tcsh/tcsh-6.24.05.tar.gz
+sha:3d1ff94787859b5a4063400470251618f76bc24f8041ba7ef2c2753f782c296c
 {% endblock %}
 
 {% block conf_ver %}
