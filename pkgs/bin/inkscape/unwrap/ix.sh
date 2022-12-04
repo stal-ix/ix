@@ -54,7 +54,6 @@ lib/double/conversion
 bld/glib
 bld/python
 bld/gettext
-bin/ragel/6
 {% endblock %}
 
 {% block cmake_flags %}
