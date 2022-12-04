@@ -21,8 +21,20 @@ bld/flex
 bld/bison
 {% endblock %}
 
+{% block unpack %}
+{{super()}}
+find -type f -name '*.dylib' -delete
+find -type f -name '*.dll' -delete
+find -type f -name '*.exe' -delete
+find -type f -name '*.a' -delete
+find -size +1000000c -delete
+>PHPRefactoring/phprefactor.phar
+{% endblock %}
+
 {% block patch %}
-sed -e 's|libssh.so|libssh.a|' -i CMakeLists.txt
+sed -e 's|libssh.so|libssh.a|' \
+    -e 's|add_.*ctags.*||'     \
+    -i CMakeLists.txt
 sed -e 's|.*splitterLeft.*SetSplitterLeft.*||' -i wxcrafter/myxh_propgrid.cpp
 sed -e 's|thread_local |static thread_local |' -i Plugin/globals.cpp
 {% endblock %}
