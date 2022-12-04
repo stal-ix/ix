@@ -5,6 +5,6 @@
 ENABLE_UTILS=OFF
 {% endblock %}
 
-{% block env_lib %}
+{% block env %}
 export CPPFLAGS="-I${out}/include/poppler \${CPPFLAGS}"
 {% endblock %}
