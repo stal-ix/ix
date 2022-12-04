@@ -8,6 +8,7 @@ import shutil
 import itertools
 
 import core.gg as cg
+import core.log as cl
 import core.sign as cs
 import core.utils as cu
 
@@ -203,6 +204,8 @@ class Realm(BaseRealm):
 
     def install(self):
         path = self.managed_path
+
+        cl.log(f'SYMLN {path}', color='y', bright=True)
 
         try:
             os.makedirs(os.path.dirname(path))
