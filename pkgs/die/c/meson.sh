@@ -48,6 +48,8 @@ exit 1
 {% set command_args %}
 meson
 
+setup
+
 --libdir="${out}/lib"
 --libexecdir="${out}/{{kind}}/{{uniq_id}}"
 
