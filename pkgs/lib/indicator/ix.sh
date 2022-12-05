@@ -19,6 +19,7 @@ bld/glib
 shut_up
 {% endblock %}
 
-{% block strip_pc %}
-echo 'TODO(pg): check it'
+{% block install %}
+{{super()}}
+sed -e 's|bindir=.*||' -i ${out}/lib/pkgconfig/indicator3-0.4.pc
 {% endblock %}
