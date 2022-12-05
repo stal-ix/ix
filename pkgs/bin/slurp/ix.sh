@@ -1,13 +1,14 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://github.com/emersion/slurp/archive/refs/tags/v1.3.2.tar.gz
-md5:05e2d6c212b165897458a8aeec82d6db
+https://github.com/emersion/slurp/archive/refs/tags/v1.4.0.tar.gz
+sha:a332bd40168eb73361ea811eae01d6d1210f9eadb0a486e2dd7a03efb81a3772
 {% endblock %}
 
 {% block bld_libs %}
 lib/c
 lib/cairo
+lib/kernel
 lib/wayland
 lib/xkbcommon
 {% endblock %}
