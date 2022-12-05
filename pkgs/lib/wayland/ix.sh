@@ -1,7 +1,7 @@
 {% extends '//lib/wayland/t/ix.sh' %}
 
 {% block bld_tool %}
-bin/wayland/scanner
+bld/wayland/scanner
 {{super()}}
 {% endblock %}
 
