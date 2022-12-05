@@ -57,6 +57,6 @@ cp -R ${out}/lib/include/* ${out}/include/gstreamer*/
 rm -rf ${out}/lib/gstreamer* ${out}/lib/include
 mv ${out}/include/g*/* ${out}/include/
 for x in ${out}/lib/pkgconfig/*.pc; do
-    sed -e 's|toolsdir=.*||' -e 's|libexecdir=.*||' -i ${x}
+    sed -e 's|toolsdir=.*||' -i ${x}
 done
 {% endblock %}
