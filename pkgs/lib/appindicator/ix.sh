@@ -31,12 +31,12 @@ shut_up
 
 {% block patch %}
 rm autogen.sh
-
 (base64 -d | patch -p1) << EOF
 {% include '0.diff/base64' %}
 EOF
 {% endblock %}
 
-{% block strip_pc %}
-echo 'TODO(pg): check it'
+{% block install %}
+{{super()}}
+sed -e 's|bindir=.*||' -i ${out}/lib/pkgconfig/appindicator3-0.1.pc
 {% endblock %}
