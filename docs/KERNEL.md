@@ -80,6 +80,7 @@ ix run set/menuconfig -- make HOSTCC=cc menuconfig
 
  * Нужно не забыть добавить все нужные шины для ваших устройств(USB, I2C, PCIe, NVMe, и так далее)
  * Для каких-то драйверов нужны firmware. Их нужно будет добавить в ix.sh для вашего ядра, как это сделано в https://github.com/pg83/ix/blob/main/pkgs/bin/kernel/6/0/slot/vbox/ix.sh#L9
+ * Прочитайте, как вообще собирать ядро в source based distro - https://wiki.gentoo.org/wiki/Kernel/Configuration
 
 Чаще всего для понимания того, что надо включить в конфиге ядра для работы того или иного устройства, помогает поиск в Internet, с именем модуля, и ссылкой на Gentoo/Arch, у них самая большая база знаний на эту тему:
 
