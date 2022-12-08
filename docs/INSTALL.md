@@ -9,9 +9,11 @@ Install tools:
 ```
 test -f /usr/bin/parted || yum install parted || apt-get install parted
 test -f /usr/bin/g++ || yum install g++ || apt-get install g++
+test -f /usr/bin/git || yum install git || apt-get install git
 ```
 
-Somehow prepare xfs on /dev/xxx, with parted, and mount it:
+For general instructions about disk partitioning please refer to https://wiki.archlinux.org/title/installation_guide#Partition_the_disks.
+Somehow prepare xfs on /dev/xxx, with parted, mkfs.xfs, and mount it:
 
 ```
 mkdir /mnt/ix
