@@ -1,8 +1,8 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://github.com/hyprwm/Hyprland/archive/refs/tags/v0.18.0beta.tar.gz
-sha:6b2c07263fbd874faa498d211f801191a947ea41b370cbd0f1fa0a58b7fe5a54
+https://github.com/hyprwm/Hyprland/archive/refs/tags/v0.19.1beta.tar.gz
+sha:69b3fac34ec565bb4b3ae5d89c264e65f196d8eb08cfb4b4214bf541fe81c2b6
 {% endblock %}
 
 {% block bld_libs %}
@@ -17,7 +17,7 @@ lib/shim/x11
 lib/range/v3
 lib/xkbcommon
 lib/drivers/3d
-lib/wlroots/16
+lib/wlroots/17
 lib/mesa/gl/dl
 lib/mesa/egl/dl
 lib/mesa/glesv2/dl
@@ -27,6 +27,7 @@ lib/mesa/glesv2/dl
 bld/python
 bld/fakegit
 bld/wayland
+bin/hyprland/protocols
 {% endblock %}
 
 {% block patch %}
@@ -62,8 +63,16 @@ EOF
 
 mv _ src/helpers/MiscFunctions.cpp
 
+cat - src/debug/HyprCtl.cpp << EOF > _
+#include <sstream>
+EOF
+
+mv _ src/debug/HyprCtl.cpp
+
 sed -e 's|NULL, XCB_STACK_MODE_ABOVE|0, XCB_STACK_MODE_ABOVE|' \
     -i src/managers/XWaylandManager.cpp
+
+sed -e 's|.*Running on WAYLAND_DISPLAY.*||' -i src/Compositor.cpp
 {% endblock %}
 
 {% block build_flags %}
