@@ -10,4 +10,5 @@ def cli_tool(ctx):
     env = os.environ.copy()
     env.pop('SSL_CERT_FILE')
     env['IX_PKGS_ROOT'] = pkgs
+    env['IX_BINARY'] = ctx['binary']
     subprocess.run([script] + args[1:], env=env)
