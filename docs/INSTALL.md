@@ -108,7 +108,7 @@ Shell will relaunch thereafter. Actually, after any modification of system realm
 
 ```
 cd /home/root/ix
-./ix mut
+./ix mut $(./ix list)
 ```
 
 Rebuild world, again. And add a whole new user, without sudo capability:
