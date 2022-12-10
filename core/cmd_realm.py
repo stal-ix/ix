@@ -33,7 +33,7 @@ def prepare(ctx, args):
 
 
 def cli_mut(ctx):
-    for r in prepare(ctx, ctx['args']):
+    for r in list(prepare(ctx, ctx['args'])):
         r.install()
 
 
