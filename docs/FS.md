@@ -16,7 +16,7 @@ drwxr-xr-x    3 ix       1000            41 Dec 11 04:10 02TsF9yb8tvNU18u-bin-p7
 drwxr-xr-x    2 ix       1000            44 Dec  1 14:06 03xrH1zQOmgF5IBK-lnk
 ```
 
-В папке /ix/realm/ лежат указатели на папки из /ix/store/.
+В папке /ix/realm/ лежат указатели на папки из /ix/store/:
 
 ```
 pg-> ls -la /ix/realm/
