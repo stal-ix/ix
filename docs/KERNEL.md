@@ -13,7 +13,7 @@ First you need to know the list of modules for your hardware support.
 You can download some conventional distro with a working hardware auto-detection system to do this. It needs to execute:
 
 ```
-pg-> lspci -k
+ix# lspci -k
 03:00.0 Class 0300: 1002:1638 amdgpu
 00:08.0 Class 0600: 1022:1632
 00:18.3 Class 0600: 1022:166d
@@ -52,22 +52,22 @@ The last column - a list of modules we need, write it down.
 Next we need to prepare a directory with kernel sources, which we are building a config for. Let's say, we want to use kernel 6.0:
 
 ```
-pg-> mkdir kernel; cd kernel
+ix# mkdir kernel; cd kernel
 
 # get current linux kernel source
-pg-> cat $(dirname $(which ix))/pkgs/bin/kernel/6/0/t/ver.sh
+ix# cat $(dirname $(which ix))/pkgs/bin/kernel/6/0/t/ver.sh
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.0.12.tar.xz
 sha:89b730edf8942b49e02f9894244205886c9a214d629b35b88c4ff06ee9304f01
 
-pg-> wget https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.0.12.tar.xz
-pg-> tar xf linux-6.0.12.tar.xz
-pg-> cd linux-6.0.12
+ix# wget https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.0.12.tar.xz
+ix# tar xf linux-6.0.12.tar.xz
+ix# cd linux-6.0.12
 ```
 
 Copy old kernel config to our tree:
 
 ```
-pg-> cp $(dirname $(which ix))/pkgs/bin/kernel/6/0/slot/1/cfg ./.config
+ix# cp $(dirname $(which ix))/pkgs/bin/kernel/6/0/slot/1/cfg ./.config
 ```
 
 Run the kernel configurator:
@@ -91,11 +91,11 @@ Mostly, to understand what needs to be included in the kernel config for a parti
 After the kernel is configured, copy the modified config to the base:
 
 ```
-pg-> cp .config $(dirname $(which ix))/pkgs/bin/kernel/6/0/slot/1/cfg
+ix# cp .config $(dirname $(which ix))/pkgs/bin/kernel/6/0/slot/1/cfg
 ```
 
 After that you can add the kernel to the system realm in the usual way:
 
 ```
-pg-> ix mut system bin/kernel/6/0/slot/1
+ix# ix mut system bin/kernel/6/0/slot/1
 ```
