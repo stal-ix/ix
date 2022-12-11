@@ -15,36 +15,21 @@ You can download some conventional distro with a working hardware auto-detection
 ```
 ix# lspci -k
 03:00.0 Class 0300: 1002:1638 amdgpu
-00:08.0 Class 0600: 1022:1632
-00:18.3 Class 0600: 1022:166d
-00:18.1 Class 0600: 1022:166b
 02:00.0 Class 0108: 144d:a809 nvme
 03:00.7 Class 1180: 1022:15e4 pcie_mp2_amd
-00:01.0 Class 0600: 1022:1632
 03:00.5 Class 0480: 1022:15e2 snd_rn_pci_acp3x
-00:14.3 Class 0601: 1022:790e
-04:00.1 Class 0106: 1022:7901
 01:00.0 Class 0280: 8086:2723 iwlwifi
 03:00.3 Class 0c03: 1022:1639 xhci_hcd
-00:00.2 Class 0806: 1022:1631
-00:18.6 Class 0600: 1022:1670
 03:00.1 Class 0403: 1002:1637 snd_hda_intel
-00:00.0 Class 0600: 1022:1630
 00:08.1 Class 0604: 1022:1635 pcieport
-00:18.4 Class 0600: 1022:166e
-00:18.2 Class 0600: 1022:166c
 00:02.4 Class 0604: 1022:1634 pcieport
-00:18.0 Class 0600: 1022:166a
 03:00.6 Class 0403: 1022:15e3 snd_hda_intel
 00:02.2 Class 0604: 1022:1634 pcieport
 03:00.4 Class 0c03: 1022:1639 xhci_hcd
-04:00.0 Class 0106: 1022:7901
-00:02.0 Class 0600: 1022:1632
-00:18.7 Class 0600: 1022:1671
 03:00.2 Class 1080: 1022:15df ccp
 00:14.0 Class 0c05: 1022:790b piix4_smbus
 00:08.2 Class 0604: 1022:1635 pcieport
-00:18.5 Class 0600: 1022:166f
+...
 ```
 
 The last column - a list of modules we need, write it down.
