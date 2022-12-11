@@ -1,16 +1,16 @@
-Дисклеймер: эта инструкция не для слабых духом! Она предполагает, что вы представляете себе, что такое статически слинкованное ядро, и умеете собирать его для своего оборудования в каком-нибудь source-based distro.
+Disclaimer: this guide is not for the faint of heart! It assumes that you have an idea what a statically linked kernel is and know how to build it for your hardware in some source-based distro.
 
-This guide assume ix package manager in your PATH:
+This guide implies ix package manager in your PATH:
 
 ```
 export PATH=/path/to/ix/checkout:${PATH}
 ```
 
-Эта инструкция предназначена для сборки ядра, которое содержит в себе все компоненты, необходимые для работы.
+The guide intended to build a kernel, which contains all the components necessary for operation.
 
-Сначала вам нужно узнать список модулей для поддержки вашего оборудования.
+First you need to know the list of modules for your hardware support.
 
-Для этого можно загрузить какой-нибудь conventional дистрибутив, с работающей системой автоопределения оборудования. В нем нужно выполнить:
+You can download some conventional distro with a working hardware auto-detection system to do this. It needs to execute:
 
 ```
 pg-> lspci -k
@@ -47,9 +47,9 @@ pg-> lspci -k
 00:18.5 Class 0600: 1022:166f
 ```
 
-Последняя колонка - это список необходимых нам модулей, запишем его на бумажку.
+The last column - a list of modules we need, write it down.
 
-Далее нам нужно подготовить директорию с исходниками ядра, для которых мы строим конфиг. Допустим, мы хотим использовать ядро 6.0:
+Next we need to prepare a directory with kernel sources, which we are building a config for. Let's say, we want to use kernel 6.0:
 
 ```
 pg-> mkdir kernel; cd kernel
@@ -64,37 +64,37 @@ pg-> tar xf linux-6.0.12.tar.xz
 pg-> cd linux-6.0.12
 ```
 
-Скопируем старый конфиг ядра в наше дерево:
+Copy old kernel config to our tree:
 
 ```
 pg-> cp $(dirname $(which ix))/pkgs/bin/kernel/6/0/slot/1/cfg ./.config
 ```
 
-Запустим конфигуратор ядра:
+Run the kernel configurator:
 
 ```
 ix run set/menuconfig -- make HOSTCC=cc menuconfig
 ```
 
-В конфигураторе вам нужно найти(там есть поиск!) все модули из списка выше, и добавить в конфигурацию.
+You need to find all the modules from the list above in the configurator (it has a search!) and add them to the configuration.
 
-При этом:
+Herewith:
 
- * Нужно не забыть добавить все нужные шины для ваших устройств(USB, I2C, PCIe, NVMe, и так далее)
- * Для каких-то драйверов нужны firmware. Их нужно будет добавить в ix.sh для вашего ядра, как это сделано в https://github.com/pg83/ix/blob/main/pkgs/bin/kernel/6/0/slot/vbox/ix.sh#L9
- * Прочитайте, как вообще собирать ядро в source based distro - https://wiki.gentoo.org/wiki/Kernel/Configuration
+ * Don’t forget to add all the necessary buses for your devices (USB, I2C, PCIe, NVMe, etc.)
+ * Some drivers require firmware. They’ll need to be added to ix.sh for your kernel, as done in here: https://github.com/pg83/ix/blob/main/pkgs/bin/kernel/6/0/slot/vbox/ix.sh#L9
+ * Read how to build a kernel generally in a source based distro - https://wiki.gentoo.org/wiki/Kernel/Configuration
 
-Чаще всего для понимания того, что надо включить в конфиге ядра для работы того или иного устройства, помогает поиск в Internet, с именем модуля, и ссылкой на Gentoo/Arch, у них самая большая база знаний на эту тему:
+Mostly, to understand what needs to be included in the kernel config for a particular device operation, it helps to search the Internet, with module’s name and a link to Gentoo/Arch, they have the largest knowledge base on the subject:
 
- * Вот, например, список того, что нужно проделать для работающей поддержки AMD GPU - https://wiki.gentoo.org/wiki/AMDGPU
+ * Here, for example, is a list of what needs to be done to get AMD GPU support operating - https://wiki.gentoo.org/wiki/AMDGPU
 
-После того как ядро сконфигурировано, скопируем измененный конфиг на базу:
+After the kernel is configured, copy the modified config to the base:
 
 ```
 pg-> cp .config $(dirname $(which ix))/pkgs/bin/kernel/6/0/slot/1/cfg
 ```
 
-После чего можно, обычным образом, добавить ядро в системный realm:
+After that you can add the kernel to the system realm in the usual way:
 
 ```
 pg-> ix mut system bin/kernel/6/0/slot/1
