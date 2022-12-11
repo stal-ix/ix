@@ -82,7 +82,7 @@ export IX_EXEC_KIND=local
 ./ix mut boot set/boot/all
 ```
 
-Somehow prepare kernel, and copy it to /mnt/ix/boot. Useful config options one can grab from bin/kernel/19/2/cfg. Reboot into grub, run
+Now [prepare bootable kernel for your hardware](KERNEL.md). Reboot into grub, run:
 
 ```
 > linux (hdX,gptY)/boot/kernel ro root=/dev/xxx
