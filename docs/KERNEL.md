@@ -1,9 +1,12 @@
 Disclaimer: this guide is not for the faint of heart! It assumes that you have an idea what a statically linked kernel is and know how to build it for your hardware in some source-based distro.
 
-This guide implies ix package manager in your PATH:
+This guide implies `ix` package manager in your PATH:
 
 ```
-export PATH=/path/to/ix/checkout:${PATH}
+ix# export PATH=/mnt/ix/home/root/ix:${PATH} # assume we are in stal/ix installer, brefore reboot
+ix# export PATH=/home/root/ix:${PATH} # assume we are in stal/ix installer, after reboot
+ix# export PATH=/your/local/checkout:${PATH} # assume per user local ix checkout
+ix# ix list
 ```
 
 The guide intended to build a kernel, which contains all the components necessary for operation.
@@ -13,7 +16,7 @@ First you need to know the list of modules for your hardware support.
 You can download some conventional distro with a working hardware auto-detection system to do this. It needs to execute:
 
 ```
-ix# lspci -k
+ubuntu# lspci -k
 03:00.0 Class 0300: 1002:1638 amdgpu
 02:00.0 Class 0108: 144d:a809 nvme
 03:00.7 Class 1180: 1022:15e4 pcie_mp2_amd
@@ -37,7 +40,8 @@ The last column - a list of modules we need, write it down.
 Next we need to prepare a directory with kernel sources, which we are building a config for. Let's say, we want to use kernel 6.0:
 
 ```
-ix# mkdir kernel; cd kernel
+ix# mkdir kernel
+ix# cd kernel
 
 # get current linux kernel source
 ix# cat $(dirname $(which ix))/pkgs/bin/kernel/6/0/t/ver.sh
@@ -91,4 +95,10 @@ After that you can add the kernel to the system realm in the usual way:
 
 ```
 ix# ix mut system bin/kernel/6/0/slot/1
+```
+
+Or, alternatively, you can use separate realm for bootstrap kernel:
+
+```
+ix# ix mut kernel bin/kernel/6/0/slot/1
 ```
