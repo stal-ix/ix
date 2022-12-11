@@ -95,10 +95,18 @@ After that you can add the kernel to the system realm in the usual way:
 
 ```
 ix# ix mut system bin/kernel/6/0/slot/1
+ix# ls /bin/kernel-*
+/bin/kernel-6-0-12-slot0
 ```
+
+Remember that path, you will need later, in GRUB cli or, in grub.cfg.
 
 Or, alternatively, you can use separate realm for bootstrap kernel:
 
 ```
 ix# ix mut kernel bin/kernel/6/0/slot/1
+ix# ls /ix/realm/kernel/bin/kernel-*
+/ix/realm/kernel/bin/kernel-6-0-12-slot0
 ```
+
+Remember that path, you will need later, in GRUB cli or, in grub.cfg.
