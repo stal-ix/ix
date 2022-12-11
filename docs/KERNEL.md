@@ -99,7 +99,7 @@ ix# ls /bin/kernel-*
 /bin/kernel-6-0-12-slot0
 ```
 
-Remember that path, you will need later, in GRUB cli or, in grub.cfg.
+Remember that path, you will need it later, in GRUB cli or, in grub.cfg.
 
 Or, alternatively, you can use separate realm for bootstrap kernel:
 
@@ -109,4 +109,4 @@ ix# ls /ix/realm/kernel/bin/kernel-*
 /ix/realm/kernel/bin/kernel-6-0-12-slot0
 ```
 
-Remember that path, you will need later, in GRUB cli or, in grub.cfg.
+Remember that path, you will need it later, in GRUB cli or, in grub.cfg.
