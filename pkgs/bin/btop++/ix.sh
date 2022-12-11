@@ -8,7 +8,7 @@ sha:59a87b9d0bb0f5010d53f0ac72ddee9fd7b5a4039bce51b94b262313e946df02
 {% block bld_libs %}
 lib/c
 lib/c++
-lib/range/v3
+lib/range/v3/std
 {% endblock %}
 
 {% block make_flags %}

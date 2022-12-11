@@ -14,12 +14,12 @@ lib/input
 lib/opengl
 lib/wayland
 lib/shim/x11
-lib/range/v3
 lib/xkbcommon
 lib/drivers/3d
 lib/wlroots/17
 lib/mesa/gl/dl
 lib/mesa/egl/dl
+lib/range/v3/std
 lib/mesa/glesv2/dl
 {% endblock %}
 

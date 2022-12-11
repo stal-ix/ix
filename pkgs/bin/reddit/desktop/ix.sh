@@ -28,8 +28,8 @@ lib/openssl
 lib/sqlite/3
 lib/freetype
 lib/sdl/deps
-lib/range/v3
 lib/uriparser
+lib/range/v3/std
 {% endblock %}
 
 {% block setup %}

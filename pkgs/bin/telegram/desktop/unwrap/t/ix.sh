@@ -22,7 +22,6 @@ lib/openssl
 lib/protobuf
 lib/mini/zip
 lib/dispatch
-lib/range/v3
 lib/ffmpeg/4
 lib/qt/6/svg
 lib/expected
@@ -34,6 +33,7 @@ lib/mesa/egl/dl
 lib/qt/6/compat
 lib/qt/6/wayland
 lib/xiph/rnnoise
+lib/range/v3/std
 lib/mesa/glesv2/dl
 lib/k/imageformats
 lib/qt/6/imageformats
