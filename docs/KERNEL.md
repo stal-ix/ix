@@ -69,6 +69,14 @@ Herewith:
  * Some drivers require firmware. They’ll need to be added to ix.sh for your kernel, as done in here: https://github.com/pg83/ix/blob/main/pkgs/bin/kernel/6/0/slot/vbox/ix.sh#L9
  * Read how to build a kernel generally in a source based distro - https://wiki.gentoo.org/wiki/Kernel/Configuration
 
+Or, alternatively, one can combine previous commands into one:
+
+```
+...
+ix# cd linux-6.0.12
+ix# ix tool reconf $(dirname $(which ix))/pkgs/bin/kernel/6/0/slot/1/cfg
+```
+
 Mostly, to understand what needs to be included in the kernel config for a particular device operation, it helps to search the Internet, with module’s name and a link to Gentoo/Arch, they have the largest knowledge base on the subject:
 
  * Here, for example, is a list of what needs to be done to get AMD GPU support operating - https://wiki.gentoo.org/wiki/AMDGPU
