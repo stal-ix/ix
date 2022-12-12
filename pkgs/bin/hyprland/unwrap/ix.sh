@@ -1,8 +1,8 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://github.com/hyprwm/Hyprland/archive/refs/tags/v0.19.1beta.tar.gz
-sha:69b3fac34ec565bb4b3ae5d89c264e65f196d8eb08cfb4b4214bf541fe81c2b6
+https://github.com/hyprwm/Hyprland/archive/refs/tags/v0.19.2beta.tar.gz
+sha:4454220b67699b79825ae45efdded68856343a005e3f5c08a258ef918e7e10b1
 {% endblock %}
 
 {% block bld_libs %}
