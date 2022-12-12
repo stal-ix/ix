@@ -1,6 +1,6 @@
-Этот документ описывает устройство файловой системы stal/ix.
+This document describes the stal/ix file system layout.
 
-В /ix/store/ лежит набор папок, каждому пакету соответствует одна папка. Папки образуют content addressable store, то есть, все пути уникальным образом идентифицируют уникальный пакет.
+The /ix/store/ contains a folders set, each package corresponds to one folder. Folders form a content addressable store, that is, all paths uniquely identify a unique package.
 
 ```
 pg-> ls -la /ix/store/ | head -n 10
@@ -16,7 +16,7 @@ drwxr-xr-x    3 ix       1000            41 Dec 11 04:10 02TsF9yb8tvNU18u-bin-p7
 drwxr-xr-x    2 ix       1000            44 Dec  1 14:06 03xrH1zQOmgF5IBK-lnk
 ```
 
-В папке /ix/realm/ лежат указатели на папки из /ix/store/:
+The /ix/realm/ folder contains pointers to folders from /ix/store/:
 
 ```
 pg-> ls -la /ix/realm/
@@ -29,13 +29,13 @@ lrwxrwxrwx    1 pg       10000           33 Dec 11 16:46 pg -> /ix/store/w5qTNK0
 lrwxrwxrwx    1 pg       10000           37 Dec 11 06:08 system -> /ix/store/oQfJCY3xa3jlPkNf-rlm-system
 ```
 
-Фактически, это "корни", по которым ix package manager может понять, что из /ix/store/ активно используется, а что можно безопасно удалить, используя команду `ix gc`.
+Actually, these are "roots" by which the ix package manager can understand what is actively used in /ix/store/ and what can be safely removed using the `ix gc` command.
 
-Некоторые realm имеют заранее предопределенный смысл:
+Some realms are predefined:
 
-/ix/realm/system - это "системный" realm, в нем лежит код, необходимый для загрузки OS.
+/ix/realm/system - the "system" realm, it contains code needed to boot the OS.
 
-Корневые папки /etc, /bin смотрят на системный realm:
+Root folders /etc, /bin look at the system realm:
 
 ```
 pg-> ls -la /bin /etc
@@ -43,16 +43,16 @@ lrwxrwxrwx    1 root     root            20 May 22  2022 /bin -> /ix/realm/syste
 lrwxrwxrwx    1 root     root            20 May 22  2022 /etc -> /ix/realm/system/etc
 ```
 
-Кстати, именно поэтому нет никакого смысла редактировать файлы в /etc, потому что они обновятся при любом обновлении /ix/realm/system.
+By the way, this is why there’s no point in editing files in /etc, they’ll be updated with any update of /ix/realm/system.
 
-Для каждого пользователя в системе с именем USER есть realm /ix/realm/USER, который принадлежит этому пользователю:
+For every user in the system with name USER, there is a realm /ix/realm/USER, that belongs to that user:
 
-* он является умолчанием при исполльзовании ix mut: `ix mut bin/nano` установит nano в ваш личный realm.
-* он стоит первым в PATH:
+* it’s default when using ix mut: `ix mut bin/nano` will install nano in your personal realm.
+* it comes first in PATH:
 
 ```
 pg-> echo ${PATH}
 /ix/realm/pg/bin:/bin
 ```
 
-Для того, чтобы это работало, ваш менеджер сессий должен сделать `. /etc/session`
+To make it work, your session manager must do `. /etc/session`
