@@ -1,18 +1,12 @@
 {% extends '//bin/kernel/t/1/ix.sh' %}
 
 {% block kernel_name %}
-{% block kernel_version %}5-19-15{% endblock %}-slot{{self.slot()}}
-{% endblock %}
-
-{% block fetch %}
-{% include 'ver.sh' %}
+{{self.kernel_version()}}-slot{{self.slot()}}
 {% endblock %}
 
 {% block host_libs %}
 {{super()}}
-{% block kernel_headers %}
-bin/kernel/19/headers
-{% endblock %}
+{{self.kernel_headers()}}
 {% endblock %}
 
 {% block kconfig_flags %}

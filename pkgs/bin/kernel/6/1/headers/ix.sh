@@ -1,5 +1,5 @@
 {% extends '//lib/linux/headers/ix.sh' %}
 
 {% block fetch %}
-{% include '//bin/kernel/19/t/ver.sh' %}
+{% include '//bin/kernel/6/1/t/ver.sh' %}
 {% endblock %}

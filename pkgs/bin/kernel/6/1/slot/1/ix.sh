@@ -1,4 +1,4 @@
-{% extends '//bin/kernel/19/t/ix.sh' %}
+{% extends '//bin/kernel/6/1/t/ix.sh' %}
 
 {% block slot %}1{% endblock %}
 
