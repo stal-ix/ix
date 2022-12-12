@@ -1,4 +1,4 @@
-{% extends '//bin/dash/sh/ix.sh' %}
+{% extends '//bin/dash/old/ix.sh' %}
 
 {% block bld_libs %}
 {% endblock %}

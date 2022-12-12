@@ -1,13 +1,8 @@
 {% extends '//die/c/autohell.sh' %}
 
 {% block fetch %}
-http://gondor.apana.org.au/~herbert/dash/files/dash-0.5.12.tar.gz
-sha:6a474ac46e8b0b32916c4c60df694c82058d3297d8b385b74508030ca4a8f28a
-{% endblock %}
-
-{% block bld_libs %}
-lib/c
-lib/edit
+http://gondor.apana.org.au/~herbert/dash/files/dash-0.5.11.3.tar.gz
+sha:62b9f1676ba6a7e8eaec541a39ea037b325253240d1f378c72360baa1cbcbc2a
 {% endblock %}
 
 {% block cpp_defines %}
@@ -20,4 +15,9 @@ fstat64=fstat
 
 {% block invoke_configure %}
 sh configure --prefix="${out}" --with-libedit=yes
+{% endblock %}
+
+{% block install %}
+{{super()}}
+cd ${out}/bin; mv dash sh
 {% endblock %}
