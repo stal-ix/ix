@@ -3,9 +3,9 @@
 {% block install %}
 mkdir ${out}/bin; cd ${out}/bin
 
-cat << EOF > wayfire-session
+cat << EOF > {{prog}}-session
 #!/usr/bin/env sh
-exec dbus-exec-session wayfire
+exec dbus-exec-session {{prog}}
 EOF
 
 chmod +x *

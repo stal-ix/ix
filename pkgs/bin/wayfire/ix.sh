@@ -3,5 +3,5 @@
 {% block run_deps %}
 bin/wayfire/ix
 bin/dbus/session
-bin/wayfire/session
+bin/dbus/session/runner(prog=wayfire)
 {% endblock %}
