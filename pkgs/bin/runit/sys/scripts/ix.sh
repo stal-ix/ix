@@ -5,6 +5,8 @@ cd ${out}; mkdir bin; cd bin
 
 cat << EOF > halt
 #!/bin/sh
+sync
+sync
 exec runit-init 0
 EOF
 
@@ -12,6 +14,8 @@ chmod +x halt
 
 cat << EOF > reboot
 #!/bin/sh
+sync
+sync
 exec runit-init 6
 EOF
 
