@@ -2,5 +2,6 @@
 
 {% block run_deps %}
 bin/sway/stock
-bin/sway/session
+bin/dbus/session
+bin/dbus/session/runner(prog=sway)
 {% endblock %}

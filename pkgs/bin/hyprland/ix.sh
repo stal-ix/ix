@@ -3,5 +3,5 @@
 {% block run_deps %}
 bin/dbus/session
 bin/hyprland/unwrap
-bin/hyprland/scripts
+bin/dbus/session/runner(prog=Hyprland)
 {% endblock %}
