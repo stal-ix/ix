@@ -1,3 +1,7 @@
+Prereq:
+ * [IX.md](IX.md)
+ * [FS.md](FS.md)
+
 Load machine from some bootable media, like Ubuntu/Fedora/Nix livecd, launch terminal
 
 ```

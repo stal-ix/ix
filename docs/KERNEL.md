@@ -1,3 +1,7 @@
+Prereq:
+ * [FS.md](FS.md)
+ * [IX.md](IX.md)
+
 Disclaimer: this guide is not for the faint of heart! It assumes that you have an idea what a statically linked kernel is and know how to build it for your hardware in some source-based distro.
 
 This guide implies `ix` package manager in your PATH:
