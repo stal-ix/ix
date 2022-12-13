@@ -50,11 +50,6 @@ ix# find /ix/store/0Q4rkMy8J8D1WTVn-rlm-system
 /ix/store/0Q4rkMy8J8D1WTVn-rlm-system/bin/doas
 /ix/store/0Q4rkMy8J8D1WTVn-rlm-system/bin/sudo
 /ix/store/0Q4rkMy8J8D1WTVn-rlm-system/bin/setcwd
-/ix/store/0Q4rkMy8J8D1WTVn-rlm-system/bin/bin_ix
-/ix/store/0Q4rkMy8J8D1WTVn-rlm-system/bin/bin_ix/assemble
-/ix/store/0Q4rkMy8J8D1WTVn-rlm-system/bin/bin_ix/python
-/ix/store/0Q4rkMy8J8D1WTVn-rlm-system/bin/bin_ix/bsdtar
-/ix/store/0Q4rkMy8J8D1WTVn-rlm-system/bin/bin_ix/curl
 /ix/store/0Q4rkMy8J8D1WTVn-rlm-system/bin/mdevd
 /ix/store/0Q4rkMy8J8D1WTVn-rlm-system/bin/mdevd-coldplug
 /ix/store/0Q4rkMy8J8D1WTVn-rlm-system/meta.json
