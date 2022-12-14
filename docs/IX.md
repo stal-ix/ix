@@ -1,17 +1,17 @@
 Prereq:
  * [FS.md](FS.md)
 
-IX package manager может быть использован как standalone, в любой поддерживаемой OS, так и как базовый package manager в дистрибутиве Linux stal/IX.
+IX package manager can be used standalone on any supported OS, or as a base package manager on Linux stal/IX distribution.
 
-Этот документ описывает использование IX в составе stal/IX.
+This document describes the IX usage as part of stal/IX.
 
-Инструкцию по установке stal/IX на диск вы можете прочитать в [INSTALL.md](INSTALL.md)
+The stal/IX on disk installing guide you can read in [INSTALL.md](INSTALL.md)
 
-Базовые понятия:
+Basic concepts:
 
-Пакет - это содержимое одной папки в директории /ix/store.
+Package - one folder contents in /ix/store directory.
 
-Вот, например, содержимое пакета bzip2:
+Here, for example, is bzip2 package contents:
 
 ```
 ix# find /ix/store/0GsKotnAh74LIcvO-bin-bzip2/
@@ -32,9 +32,9 @@ ix# find /ix/store/0GsKotnAh74LIcvO-bin-bzip2/
 /ix/store/0GsKotnAh74LIcvO-bin-bzip2/touch
 ```
 
-Все пакеты образуют content addressable store, существенно похожее на такую же структуру в nixos и guix.
+All packages form a content addressable store, substantially similar to the same structure in nixos and guix.
 
-Realm - это тоже пакет, он содержит в себе символические ссылки на другие пакеты:
+Realm - also a package, it contains symlinks to other packages:
 
 ```
 ix# find /ix/store/0Q4rkMy8J8D1WTVn-rlm-system
@@ -57,7 +57,7 @@ ix# find /ix/store/0Q4rkMy8J8D1WTVn-rlm-system
 /ix/store/0Q4rkMy8J8D1WTVn-rlm-system/touch
 ```
 
-На некоторые realm есть якорные ссылки, которые помечают текущую(используемую) версию какого-то realm:
+Some realms have anchor links that mark the current (used) version of some realm:
 
 ```
 ix# ls -la /ix/realm/
@@ -70,93 +70,93 @@ lrwxrwxrwx pg -> /ix/store/QC6vXQZNfLfhT4t1-rlm-pg
 lrwxrwxrwx system -> /ix/store/PIYCjYiLy1AIxVVl-rlm-system
 ```
 
-Для того, чтобы использовать содержимое какого-то realm, его нужно просто добавить в свой PATH:
+To use the contents of some realm, just add this realm to your PATH:
 
 ```
 ix# export PATH="/ix/realm/boot/bin:${PATH}"
 ```
 
-Чтобы эта настройка случилась автоматически, первой строкой вашего сессионного скрипта сделайте:
+To make this setting happen automatically, in the first line of your session script, do:
 
 ```
 . /etc/session
 ```
 
-Для того, чтобы начать пользоваться IX, его нужно склонировать с github.
+To start using IX clone it from github.
 
 ```
 ix# git clone git@github.com:pg83/ix.git
 ix# export PATH=${PWD}/ix:${PATH}
 ```
 
-Любой пользователь с настроенным sudo может устанавливать пакеты в систему. Благодаря использованию content addressable store, разные версии пакетов не будут пересекаться друг с другом. Разные пользователи могут использовать разные версии репозитория IX. Рекомендованный способ настройки системы под себя - клонирование репозитория на github, и внесение нужных изменений в свой бранч. Возможно, когда-нибудь случится поддержка оверлеев.
+Any user with sudo configured can install packages on the system. Thanks to the content addressable store usage, different versions of packages will not overlap with each other. Different users may use different IX repository versions. The recommended way to customize the system for yourself - clone the repository on github, and make the necessary changes to your branch. Perhaps, someday there’ll be support for overlays.
 
-Основная команда при использовании IX - это `ix mut`.
+The basic command when using IX is `ix mut`.
 
-Установим в realm gui программу sway:
+Install the sway program in realm gui:
 
 ```
 ix# ix mut gui bin/sway
 ```
 
-Установим в realm gui программу sway, указав, что она должна использовать 3d ускоренный драйвер для AMD GPU:
+Install the sway program in realm gui, specifying that it should use the 3d accelerated driver for AMD GPU:
 
 ```
 ix# ix mut gui bin/sway --mesa_driver=radv
 ```
 
-Так же [смотрите](ACCEL.md) для более детального ознакомления с темой 3D ускорения в stal/IX.
+[See](ACCEL.md) also for a more detailed introduction to the subject of 3D acceleration in stal/IX.
 
-Скажем, что все программы в realm gui должны использовать AMD GPU:
+Let's say that all programs in realm gui should use AMD GPU:
 
 ```
 ix# ix mut gui --mesa_driver=radv
 ```
 
-Добавим браузер в realm gui:
+Add a browser to the realm gui:
 
 ```
 ix# ix mut gui bin/epiphany
 ```
 
-Нам надоел sway, и мы хотим использовать wayfire:
+We are fed up with sway and want to use wayfire:
 
 ```
 ix# ix mut gui -bin/sway bin/wayfire
 ```
 
-Обновляем все установленные программы в gui realm:
+Update all installed programs in the gui realm:
 
 ```
 ix# ix mut gui
 ```
 
-Кстати, для того, чтобы манипулировать вашим именным realm, можно просто опустить его название из ix cli:
+By the way, to manipulate your named realm, you can simply omit its name from ix cli:
 
 ```
 ix# ix mut bin/telegram/desktop
 ix# ix mut -bin/epiphany +bin/links
 ```
 
-Команда может одновременно манипулировать любым количеством realm. Неоднозначность разрешается благодаря тому, что названия realm не могут содержать /, а названия пакетов всегда его содержат:
+The command can manipulate any number of realms at the same time. The ambiguity is resolved by the fact that realm names cannot contain /, and package names always contain it:
 
 ```
 ix# ix mut gui +bin/dosbox -bin/qemu tui +bin/links
 ```
 
-Флаги, которые вы указываете через --, применяются к realm, если до этого не было указано пакета в рамках этого realm, и к пакету иначе:
+Flags you specify with --, apply to the realm if no package was previously specified within that realm, otherwise to the package:
 
 ```
 ix# ix mut --mesa_driver=radv +bin/sway --mesa_driver=iris
 ```
 
-Этой командой мы сказали, что в пользовательский realm нужно добавить флаг для использования AMD GPU, но вот sway мы хотим использовать с Intel GPU.
+With this command, we said that we need to add a flag to the user realm for AMD GPU usage, but we want to use sway with Intel GPU.
 
-Важно! В рамках одной команды все изменения одного realm случаются атомарно, но якорные указатели на сами realm могут случиться в любом порядке.
+Important! Within a single command, all changes to one realm happen atomically, but anchor pointers to the realm themselves can happen in any order.
 
-Упражнение.
+Exercise.
 
-Объясните себе, что делает следующие команды:
+Explain yourself what the following commands do:
 
 ```
 ix# ix mut A bin/P --X=Y bin/P --X=Z -bin/P
@@ -168,18 +168,18 @@ ix# ix mut A -bin/P B +bin/P C +bin/P --X=Y
 
 `ix let`
 
-Эта команда делает все то же самое, что и `ix mut`, но не переключает якорную ссылку. Команда полезна, чтобы проинспектировать содержимое получившегося realm перед переключением.
+This command does everything the same as `ix mut`, but doesn’t switch the anchor link. The command is useful to inspect the contents of the resulting realm before switching.
 
 `ix build`
 
-Это `ix let` поверх временного(эфемерного) realm. Команда полезна для ознакомления с тем, как будет выглядеть какой-то набор пакетов(возможно один) в свежесозданном realm, без флагов и прочего окружения.
+It's `ix let` over a temporary (ephemeral) realm. The command is useful for reviewing the way some set of packages (can be one) will look like in a freshly created realm, without flags and other environments.
 
 `ix gc`
 
-Команда находит все неиспользуемые пакеты в /ix/store/, и переносит их в папку /ix/trash/, для асинхронного удаления. Пакет считается неиспользуемым, если до него нет пути от якорных realm в /ix/realm/.
+The command finds all unused packages in /ix/store/ and moves them to the /ix/trash/ folder for asynchronous removal. A package is considered unused if there is no path to it from anchor realms in /ix/realm/.
 
 `ix list`
 
-Посмотреть список всех realm, или установленных пакетов(с флагами) в определенном realm.
+View a list of all realms, or installed packages (with flags) in a specific realm.
 
-Список всех доступных пакетов можно посмотреть в https://github.com/pg83/ix/tree/main/pkgs, или в папке pkgs/ в вашем клоне основного репозитория.
+A list of all available packages can be found at https://github.com/pg83/ix/tree/main/pkgs, or in the pkgs/ folder in your clone of the main repository.
