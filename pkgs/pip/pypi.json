@@ -107,5 +107,20 @@
         "run": ["pip/jinja2", "pip/setuptools"],
         "md5": "2e231e4ae41b46a8f18b7d6c63097b6c",
         "url": "https://files.pythonhosted.org/packages/ca/4c/6af2f1bbfc6634ba7542e89077e79223569b84abd94106ba38605a7421e1/glad2-2.0.1-py3-none-any.whl"
+    },
+    "jsonschema/ix.sh": {
+        "run": ["pip/attrs", "pip/pyrsistent"],
+        "md5": "19b08f13a7308e0c8d663a62314cd79f",
+        "url": "https://files.pythonhosted.org/packages/c1/97/c698bd9350f307daad79dd740806e1a59becd693bd11443a0f531e3229b3/jsonschema-4.17.3-py3-none-any.whl"
+    },
+    "attrs/ix.sh": {
+        "run": [],
+        "md5": "f440620ea6b2c6555964dda7d9efc5d6",
+        "url": "https://files.pythonhosted.org/packages/f2/bc/d817287d1aa01878af07c19505fafd1165cd6a119e9d0821ca1d1c20312d/attrs-22.1.0-py2.py3-none-any.whl"
+    },
+    "pyrsistent/ix.sh": {
+        "run": [],
+        "md5": "9ae0fcfc1162e0192e19cc037a3587e1",
+        "url": "https://files.pythonhosted.org/packages/54/d3/986fcfeaf62047840c571a857fb8f3ad1e9622081d5e7d0ee5e3451ca2e7/pyrsistent-0.19.2-py3-none-any.whl"
     }
 }
