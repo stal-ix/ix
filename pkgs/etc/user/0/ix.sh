@@ -1,23 +1,4 @@
-{% extends '//die/proxy.sh' %}
+{% extends '//etc/user/t/ix.sh' %}
 
-{% block bld_tool %}
-bin/busybox
-{% endblock%}
+{% block user_id %}10000{% endblock %}
 
-{% block install %}
-cd ${out}
-
-mkdir -p etc/passwd.d
-
-cat << EOF > etc/passwd.d/{{user or error()}}
-{{user}}:{{hash or error()}}:10000:10000:none:/home/{{user}}:{{shell or '/bin/sh'}}
-EOF
-
-{% if pubkey %}
-mkdir -p etc/sud.d
-
-cat << EOF > etc/sud.d/{{user}}
-{{pubkey}}
-EOF
-{% endif %}
-{% endblock %}
