@@ -14,7 +14,7 @@ bin/go/19
 
 {% block setup %}
 {{super()}}
-export CPPFLAGS="-fno-color-diagnostics ${CPPFLAGS}"
+export CPPFLAGS="${CPPFLAGS} -fno-color-diagnostics"
 {% endblock %}
 
 {% block build %}
