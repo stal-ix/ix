@@ -19,6 +19,7 @@ exec clang -nostdlib -nostdlib++ -nostdinc -nostdinc++ \${CPPFLAGS} \${CFLAGS} \
 EOF
 
 cat << EOF > prepare-compiler.sh
+mkdir -p bin
 mv fix/c++ bin/
 sed -e "s|__realm__|\${PWD}|" -i bin/c++
 mv fix/cc bin/
