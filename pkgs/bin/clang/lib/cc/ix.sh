@@ -1,13 +1,15 @@
 {% extends '//die/py.py' %}
 
 {% block env %}
-setup_compiler() {
 export CC=clang
 export CXX=clang++
 export OBJC=clang
+export LDFLAGS="-nostdlib -nostdlib++ ${LDFLAGS}"
+export CPPFLAGS="-nostdinc -nostdinc++ ${CPPFLAGS}"
 
-L="-nostdlib -nostdlib++ ${LDFLAGS}"
-C="--target={{target.arch}}-{{target.vendor}}-{{target.os}} -fcolor-diagnostics -nostdinc -nostdinc++ ${CPPFLAGS} ${CFLAGS} ${OPTFLAGS}"
+setup_compiler() {
+L="${LDFLAGS}"
+C="--target={{target.arch}}-{{target.vendor}}-{{target.os}} -fcolor-diagnostics ${CPPFLAGS} ${CFLAGS} ${OPTFLAGS}"
 C="${C} -Wno-deprecated -Wno-implicit-int -Wno-int-conversion -Wno-unused-command-line-argument"
 LC="${C} ${CTRFLAGS}"
 
