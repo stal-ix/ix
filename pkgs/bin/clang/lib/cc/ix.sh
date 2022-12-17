@@ -1,33 +1,8 @@
-{% extends '//die/py.py' %}
+{% extends '//die/hub.sh' %}
 
-{% block env %}
-export CC=clang
-export CXX=clang++
-export OBJC=clang
-export LDFLAGS="-nostdlib -nostdlib++ ${LDFLAGS}"
-export CPPFLAGS="-nostdinc -nostdinc++ ${CPPFLAGS}"
-
-setup_compiler() {
-L="${LDFLAGS}"
-C="--target={{target.arch}}-{{target.vendor}}-{{target.os}} -fcolor-diagnostics ${CPPFLAGS} ${CFLAGS} ${OPTFLAGS}"
-C="${C} -Wno-deprecated -Wno-implicit-int -Wno-int-conversion -Wno-unused-command-line-argument"
-LC="${C} ${CTRFLAGS}"
-
-cat << EOF > cc
-#!$(which sh)
-exec "$(which clang)" ${LC} "\$@" ${CONLYFLAGS} ${L} ${C}
-EOF
-
-cat << EOF > c++
-#!$(which sh)
-exec "$(which clang++)" ${LC} "\$@" -Wno-stdlibcxx-not-found ${CXXFLAGS} ${L} ${C}
-EOF
-
-cat << EOF > preproc
-#!$(which sh)
-exec "$(which clang-cpp)" ${LC} "\$@" ${C}
-EOF
-
-chmod +x cc c++ preproc
-}
+{% block lib_deps %}
+bin/clang/lib/cc/common
+bin/clang/lib/cc/diag
+bin/clang/lib/cc/freestanding
+bin/clang/lib/cc/setup
 {% endblock %}
