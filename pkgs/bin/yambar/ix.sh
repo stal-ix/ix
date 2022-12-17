@@ -1,8 +1,8 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://codeberg.org/dnkl/yambar/archive/1.8.0.tar.gz
-sha:51127d20613666b9924deb9afd92c48d69815c5043d2996b3f0f6e9705fcabc8
+https://codeberg.org/dnkl/yambar/archive/1.9.0.tar.gz
+sha:46f3002338f451c154678167bf3d5f593307954b6f381c50ddef2726b1a8c811
 {% endblock %}
 
 {% block bld_libs %}
@@ -17,7 +17,9 @@ lib/wayland
 {% endblock %}
 
 {% block bld_tool %}
+bld/flex
 bin/scdoc
+bld/bison
 bld/wayland
 {% endblock %}
 
