@@ -1,8 +1,8 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://git.sr.ht/~emersion/basu/archive/v0.2.0.tar.gz
-sha:673006f9ded754963249024b30319d7179665fde5a685d4b3b1a98d1a209a951
+https://git.sr.ht/~emersion/basu/archive/v0.2.1.tar.gz
+sha:43b327073d1ac7bc6cbc0d3dfff729348fc970dfff0551ad40e366332e990204
 {% endblock %}
 
 {% block lib_deps %}
