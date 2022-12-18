@@ -308,7 +308,7 @@ class Package:
 
         # TODO(pg): think trice about it
         if self.flags['kind'] == 'lib':
-            yield from self.bld_target_lib_closure()
+            yield from self.lib_closure()
 
         for p in self.bld_target_lib_closure():
             yield from p.run_data()
