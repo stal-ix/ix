@@ -6,7 +6,7 @@ sha:b0dcfe3aca1a8355955f4b415ede43530e3bb91953b6ffdd75c45891070fe0f1
 {% endblock %}
 
 {% block lib_deps %}
-lib/c++
+lib/c++/dispatch
 {% endblock %}
 
 {% block bld_libs %}

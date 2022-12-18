@@ -33,6 +33,7 @@ class Manager:
                 self.cache[key] = func()
 
     def load_package(self, s, sfrom):
+        # print(fmt_sel(sfrom) + ' -> ' + fmt_sel(s))
         try:
             return self.cached(cu.struct_hash(s), lambda: cp.Package(s, self))
         except FileNotFoundError as fe:
