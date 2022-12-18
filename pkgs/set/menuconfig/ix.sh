@@ -4,11 +4,11 @@
 bld/sh
 bin/gcc
 bld/box
-bin/flex
-bin/make
+bld/flex
+bld/make
+bld/bison
 bld/compiler
 bin/clang/env
-bin/bison/3/6
 bld/pkg/config
 lib/curses/kernel(kind=lib)
 {% endblock %}

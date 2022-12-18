@@ -1,4 +1,4 @@
-{% extends '//lib/curses/netbsd/ix.sh' %}
+{% extends '//lib/curses/n/ix.sh' %}
 
 {% block c_rename_symbol %}
 {{super()}}
