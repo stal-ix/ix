@@ -189,3 +189,38 @@ The command finds all unused packages in /ix/store/ and moves them to the /ix/tr
 View a list of all realms, or installed packages (with flags) in a specific realm.
 
 A list of all available packages can be found at https://github.com/pg83/ix/tree/main/pkgs, or in the pkgs/ folder in your clone of the main repository.
+
+`ix mut $(ix list)` - update all realms.
+
+В IX есть некоторое количество команд, которые сделаны в виде standalone скриптов, и не являются частью ядра. Например, потому что реализованы недостаточно общо, или их семантика недостаточно хорошо проработана. Эти команды доступны через `ix tool`:
+
+`ix tool list` - показать все доступные команды.
+
+Поиск нужного пакета по имени:
+
+```
+ix# ix tool listall | grep ssh
+lib/ssh/2
+lib/ssh
+bin/openssh
+bin/openssh/client
+bin/openssh/d
+bin/openssh/d/ix
+bin/tinyssh
+```
+
+Показать все пакеты, нуждающиеся в обновлении(использует repology.org и fuzzy search):
+
+```
+ix# ix tool upver
+libmpc 1.3.1
+courier-mta 1.2.1
+sh 3.6.0
+mpv-git 20221218
+klipper-estimator 3.1.0
+vcpkg 2022.12.14
+steamos-compositor-plus 1.10.6
+clipboard 0.1.3
+yambar 1.9.0
+libdispatch 5.7.2
+```
