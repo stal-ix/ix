@@ -47,7 +47,7 @@ def cli_run(ctx):
     for r in prepare(ctx, ['ephemeral'] + args[:args.index('--')]):
         cmd = f'. {r.path}/env; ' + shlex.join(args[args.index('--') + 1:])
         env = {
-            'PATH': '/nowhere',
+            'PATH': f'/nowhere:{r.path}/bin',
             'TERM': os.environ.get('TERM', 'xterm'),
         }
 

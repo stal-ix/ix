@@ -2,13 +2,13 @@
 
 {% block run_deps %}
 bld/sh
+bin/gcc
 bld/box
 bin/flex
 bin/make
-bin/gcc/cc
+bld/compiler
+bin/clang/env
 bin/bison/3/6
-# TODO(pg): kinda hack, need proper run_libs
-lib/musl/pure(kind=lib)
-lib/curses/n(kind=lib)
-lib/compiler_rt/builtins(kind=lib)
+bld/pkg/config
+lib/curses/kernel(kind=lib)
 {% endblock %}
