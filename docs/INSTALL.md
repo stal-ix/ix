@@ -115,14 +115,6 @@ cd /home/root/ix
 ./ix mut $(./ix list)
 ```
 
-Rebuild world, again. And add a whole new user, without sudo capability:
-
-```
-# cryptpw will read password from command line
-./ix mut system etc/user/0 --user=pg --hash=$(cryptpw)
-# shell will relaunch thereafter
-mkdir /home/pg
-chown pg /home/pg
-```
+Rebuild world, again. And (add a whole new user, without sudo capability)[ETC.md]:
 
 Now try login from tty1
