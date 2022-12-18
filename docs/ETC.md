@@ -45,3 +45,9 @@ Warning: если у вас нет настроенного ~/.emptty, и нет
 ```
 ix# ix mut system --mingetty=- --emptty
 ```
+
+По умолчанию, в системе используется UTC время. Настройки глобальной timezone в данный момент не предусмотрено, каждый пользователь должен выставить свою timezone в своем session script:
+
+```
+export TZ=Europe/Moscow
+```
