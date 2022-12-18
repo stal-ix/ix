@@ -5,7 +5,7 @@ Prereq:
 /etc в stal/IX является символической ссылкой на etc/ из системного realm:
 
 ```
-pg-> ls -la /etc
+ix# ls -la /etc
 lrwxrwxrwx ... /etc -> /ix/realm/system/etc
 ```
 
@@ -17,10 +17,28 @@ Add a whole new user, without sudo capability:
 
 ```
 # cryptpw will read password from command line
-./ix mut system etc/user/0 --user={{username}} --hash=$(cryptpw)
+root# ix mut system etc/user/0 --user={{username}} --hash=$(cryptpw)
 # shell will relaunch thereafter
 mkdir /home/{{username}}
-chown pg /home/{{username}}
+chown {{username}} /home/{{username}}
 ```
 
 Важно отметить, что, почти после любого изменения системного realm, runit перезапустит все дерево процессов. Эффективно это приведет к тому, что вас выкинет в ваш login manager (emptty/mingetty/etc)
+
+Активировать zram0:
+
+```
+ix# ix mut system etc/zram/0
+```
+
+Удалить рутовую консоль с tty5, которую мы добавили во время установки:
+
+```
+ix# ix mut system --failsafe=-
+```
+
+Заменить mingetty на emptty в качестве login manager. Сначала попробуйте посмотреть https://github.com/pg83/ix/blob/main/pkgs/set/system/0/unwrap/ix.sh#L17, и придумать, как бы могла выглядеть следующая команда:
+
+```
+ix# ix mut system --mingetty=- --emptty
+```

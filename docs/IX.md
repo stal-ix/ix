@@ -113,6 +113,12 @@ Let's say that all programs in realm gui should use AMD GPU:
 ix# ix mut gui --mesa_driver=radv
 ```
 
+And remove mesa_driver flag, for software 3D:
+
+```
+ix# ix mut system --mesa_driver=-
+```
+
 Add a browser to the realm gui:
 
 ```
