@@ -37,7 +37,10 @@ ix# ix mut system etc/zram/0
 ix# ix mut system --failsafe=-
 ```
 
-Заменить mingetty на emptty в качестве login manager. Сначала попробуйте посмотреть https://github.com/pg83/ix/blob/main/pkgs/set/system/0/unwrap/ix.sh#L17, и придумать, как бы могла выглядеть следующая команда:
+Заменить mingetty на emptty в качестве login manager:
+
+ProTip: Сначала попробуйте посмотреть https://github.com/pg83/ix/blob/main/pkgs/set/system/0/unwrap/ix.sh#L17, и придумать, как бы могла выглядеть следующая команда!
+Warning: если у вас нет настроенного ~/.emptty, и нет failsafe консоли на tty5, то вам может понадобиться recovery.
 
 ```
 ix# ix mut system --mingetty=- --emptty
