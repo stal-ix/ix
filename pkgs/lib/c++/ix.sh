@@ -2,5 +2,5 @@
 
 {% block lib_deps %}
 lib/c
-lib/c++/{{cplpl_std or '15'}}
+lib/c++/dispatch
 {% endblock %}
