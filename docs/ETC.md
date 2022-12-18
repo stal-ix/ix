@@ -1,6 +1,6 @@
 Prereq:
- * (FS.md)[FS.md]
- * (IX.md)[IX.md]
+ * [FS.md](FS.md)
+ * [IX.md](IX.md)
 
 /etc в stal/IX является символической ссылкой на etc/ из системного realm:
 
