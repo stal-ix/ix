@@ -190,13 +190,15 @@ View a list of all realms, or installed packages (with flags) in a specific real
 
 A list of all available packages can be found at https://github.com/pg83/ix/tree/main/pkgs, or in the pkgs/ folder in your clone of the main repository.
 
-`ix mut $(ix list)` - update all realms.
+`ix mut $(ix list)`
 
-В IX есть некоторое количество команд, которые сделаны в виде standalone скриптов, и не являются частью ядра. Например, потому что реализованы недостаточно общо, или их семантика недостаточно хорошо проработана. Эти команды доступны через `ix tool`:
+This command is used for all realms updating.
 
-`ix tool list` - показать все доступные команды.
+There’re a number of commands in IX that are made as standalone scripts and aren’t part of the kernel. For example, because they are not implemented well enough in general, or their semantics aren’t well developed enough. These commands are available through the `ix tool`:
 
-Поиск нужного пакета по имени:
+`ix tool list` - show all available commands.
+
+Search for the wanted package by name:
 
 ```
 ix# ix tool listall | grep ssh
@@ -209,7 +211,7 @@ bin/openssh/d/ix
 bin/tinyssh
 ```
 
-Показать все пакеты, нуждающиеся в обновлении(использует repology.org и fuzzy search):
+Show all packages that need to be updated (uses repology.org and fuzzy search):
 
 ```
 ix# ix tool upver
