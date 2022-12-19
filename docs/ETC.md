@@ -2,16 +2,16 @@ Prereq:
  * [FS.md](FS.md)
  * [IX.md](IX.md)
 
-/etc в stal/IX является символической ссылкой на etc/ из системного realm:
+/etc in stal/IX is a symbolic link to etc/ from the system realm:
 
 ```
 ix# ls -la /etc
 lrwxrwxrwx ... /etc -> /ix/realm/system/etc
 ```
 
-Файлы в IX store read only, изменять их нельзя. Поэтому единственный способ внести настройку в установленный OS stal/IX - это добавить в системный realm какой-либо пакет, который содержит в себе нужную настройку. Большая часть такие пакетов имеет префикс etc/, и лежит в https://github.com/pg83/ix/tree/main/pkgs/etc
+Files in the IX store are read only, they can’t be changed. Therefore, the only way to make a setting in the installed OS stal/IX, is to add some package that contains the needed setting to the system realm. Most of these packages are etc/ prefixed and are located in https://github.com/pg83/ix/tree/main/pkgs/etc
 
-Примеры:
+Exx:
 
 Add a whole new user, without sudo capability:
 
@@ -23,30 +23,29 @@ mkdir /home/{{username}}
 chown {{username}} /home/{{username}}
 ```
 
-Важно отметить, что, почти после любого изменения системного realm, runit перезапустит все дерево процессов. Эффективно это приведет к тому, что вас выкинет в ваш login manager (emptty/mingetty/etc)
+It’s important to note that, after almost any change to the system realm, runit will restart the entire process tree. Effectively, this will result in you being kicked into your login manager (emptty/mingetty/etc)
 
-Активировать zram0:
+Activate zram0:
 
 ```
 ix# ix mut system etc/zram/0
 ```
 
-Удалить рутовую консоль с tty5, которую мы добавили во время установки:
+Remove the root console from tty5 that we added during installation:
 
 ```
 ix# ix mut system --failsafe=-
 ```
 
-Заменить mingetty на emptty в качестве login manager:
+Replace mingetty with emptty as login manager:
 
-ProTip: Сначала попробуйте посмотреть https://github.com/pg83/ix/blob/main/pkgs/set/stalix/unwrap/ix.sh#L17, и придумать, как бы могла выглядеть следующая команда!
-Warning: если у вас нет настроенного ~/.emptty, и нет failsafe консоли на tty5, то вам может понадобиться recovery.
+ProTip: First try looking at https://github.com/pg83/ix/blob/main/pkgs/set/stalix/unwrap/ix.sh#L17, and come up with what the next command might look like! Warning: if you don't have ~/.emptty configured, and don't have a failsafe console on tty5, then you may need a recovery.
 
 ```
 ix# ix mut system --mingetty=- --emptty
 ```
 
-По умолчанию, в системе используется UTC время. Настройки глобальной timezone в данный момент не предусмотрено, каждый пользователь должен выставить свою timezone в своем session script:
+The system uses UTC time by default. There is currently no global timezone setting, each user must set their own timezone in their session script:
 
 ```
 export TZ=Europe/Moscow
