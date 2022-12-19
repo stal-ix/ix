@@ -81,7 +81,7 @@ And run ix package manager, to populate our rootfs with bootstrap tools!
 cd home/root/ix
 export IX_ROOT=/ix
 export IX_EXEC_KIND=local
-./ix mut system set/system/0 --failsafe --mingetty etc/zram/0
+./ix mut system set/stalix --failsafe --mingetty etc/zram/0
 ./ix mut root set/install
 ./ix mut boot set/boot/all
 ```
