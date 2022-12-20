@@ -17,11 +17,12 @@ set -xue
 mkdir -p /var/run/dropbear
 cd /var/run/dropbear
 
-exec /bin/dropbear -E -F -P pid \
-    -r /etc/keys/dss_host_key   \
-    -r /etc/keys/rsa_host_key   \
-    -r /etc/keys/ecdsa_host_key \
-    -r /etc/keys/ed25519_host_key
+exec /bin/dropbear \
+    -E -F -P pid   \
+    -r /etc/keys/dss   \
+    -r /etc/keys/rsa   \
+    -r /etc/keys/ecdsa \
+    -r /etc/keys/ed25519
 EOF
 
 chmod +x run script
