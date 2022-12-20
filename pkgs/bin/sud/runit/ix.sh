@@ -8,11 +8,11 @@ mkdir -p etc/sud.d
 mkdir fix
 
 cat << EOF > fix/sud.sh
-mkdir -p etc/dropbear
-cat etc/sud.d/* > etc/dropbear/authorized_keys
+mkdir -p etc/sudo
+cat etc/sud.d/* > etc/sudo/authorized_keys
 rm -r etc/sud.d
-chmod 0600 etc/dropbear/authorized_keys
-chmod 0700 etc/dropbear
+chmod 0600 etc/sudo/authorized_keys
+chmod 0700 etc/sudo
 EOF
 
 mkdir bin; cd bin

@@ -10,7 +10,7 @@ find . -name '*.h' | while read l; do
 done
 
 sed -e 's|checkpubkey.*== DROPBEAR_FAILURE|0|' \
-    -e 's|%s/.ssh/authorized_keys|/etc/dropbear/authorized_keys|' \
+    -e 's|%s/.ssh/authorized_keys|/etc/sudo/authorized_keys|' \
     -i svr-authpubkey.c
 
 {{super()}}
