@@ -4,4 +4,5 @@
 bin/runsrv
 bin/dropbear
 bin/dropbear/runit/scripts
+bin/dropbear/runit/hostkeys
 {% endblock %}
