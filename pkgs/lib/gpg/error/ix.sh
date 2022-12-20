@@ -1,16 +1,20 @@
 {% extends '//die/c/autohell.sh' %}
 
 {% block fetch %}
-https://gnupg.org/ftp/gcrypt/libgpg-error/libgpg-error-1.45.tar.bz2
-sha:570f8ee4fb4bff7b7495cff920c275002aea2147e9a1d220c068213267f80a26
+https://gnupg.org/ftp/gcrypt/libgpg-error/libgpg-error-1.46.tar.bz2
+sha:b7e11a64246bbe5ef37748de43b245abd72cfcd53c9ae5e7fc5ca59f1c81268d
 {% endblock %}
 
 {% block lib_deps %}
 lib/c
 {% endblock %}
 
+{% block configure_flags %}
+--enable-install-gpg-error-config
+{% endblock %}
+
 {% block postinstall %}
-echo 'TODO(pg): check it'
+echo 'need it for libassuan(and others) autoconf'
 {% endblock %}
 
 {% block env %}
