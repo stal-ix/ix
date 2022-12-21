@@ -9,7 +9,7 @@ ix# ls -la /etc
 lrwxrwxrwx ... /etc -> /ix/realm/system/etc
 ```
 
-Files in the IX store are read only, they can’t be changed. Therefore, the only way to make a setting in the installed OS stal/IX, is to add some package that contains the needed setting to the system realm. Most of these packages are etc/ prefixed and are located in https://github.com/pg83/ix/tree/main/pkgs/etc
+Files in the IX store are read only, they can't be changed. Therefore, the only way to make a setting in the installed OS stal/IX, is to add some package that contains the needed setting to the system realm. Most of these packages are etc/ prefixed and are located in https://github.com/pg83/ix/tree/main/pkgs/etc
 
 Exx:
 
@@ -23,7 +23,7 @@ mkdir /home/{{username}}
 chown {{username}} /home/{{username}}
 ```
 
-It’s important to note that, after almost any change to the system realm, runit will restart the entire process tree. Effectively, this will result in you being kicked into your login manager (emptty/mingetty/etc)
+It's important to note that, after almost any change to the system realm, runit will restart the entire process tree. Effectively, this will result in you being kicked into your login manager (emptty/mingetty/etc)
 
 Activate zram0:
 
