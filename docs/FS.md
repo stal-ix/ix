@@ -43,11 +43,11 @@ lrwxrwxrwx    1 root     root            20 May 22  2022 /bin -> /ix/realm/syste
 lrwxrwxrwx    1 root     root            20 May 22  2022 /etc -> /ix/realm/system/etc
 ```
 
-By the way, this is why there’s no point in editing files in /etc, they’ll be updated with any update of /ix/realm/system.
+By the way, this is why there's no point in editing files in /etc, they'll be updated with any update of /ix/realm/system.
 
 For every user in the system with name USER, there is a realm /ix/realm/USER, that belongs to that user:
 
-* it’s default when using ix mut: `ix mut bin/nano` will install nano in your personal realm.
+* it's default when using ix mut: `ix mut bin/nano` will install nano in your personal realm.
 * it comes first in PATH:
 
 ```
