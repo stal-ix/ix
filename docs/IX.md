@@ -89,7 +89,7 @@ ix# git clone git@github.com:pg83/ix.git
 ix# export PATH=${PWD}/ix:${PATH}
 ```
 
-Any user with sudo configured can install packages on the system. Thanks to the content addressable store usage, different versions of packages will not overlap with each other. Different users may use different IX repository versions. The recommended way to customize the system for yourself - clone the repository on github, and make the necessary changes to your branch. Perhaps, someday there’ll be support for overlays.
+Any user with sudo configured can install packages on the system. Thanks to the content addressable store usage, different versions of packages will not overlap with each other. Different users may use different IX repository versions. The recommended way to customize the system for yourself - clone the repository on github, and make the necessary changes to your branch. Perhaps, someday there'll be support for overlays.
 
 The basic command when using IX is `ix mut`.
 
@@ -174,7 +174,7 @@ ix# ix mut A -bin/P B +bin/P C +bin/P --X=Y
 
 `ix let`
 
-This command does everything the same as `ix mut`, but doesn’t switch the anchor link. The command is useful to inspect the contents of the resulting realm before switching.
+This command does everything the same as `ix mut`, but doesn't switch the anchor link. The command is useful to inspect the contents of the resulting realm before switching.
 
 `ix build`
 
@@ -194,7 +194,7 @@ A list of all available packages can be found at https://github.com/pg83/ix/tree
 
 This command is used for all realms updating.
 
-There’re a number of commands in IX that are made as standalone scripts and aren’t part of the kernel. For example, because they are not implemented well enough in general, or their semantics aren’t well developed enough. These commands are available through the `ix tool`:
+There're a number of commands in IX that are made as standalone scripts and aren't part of the kernel. For example, because they are not implemented well enough in general, or their semantics aren't well developed enough. These commands are available through the `ix tool`:
 
 `ix tool list` - show all available commands.
 
