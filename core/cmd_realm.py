@@ -67,6 +67,7 @@ def cli_list(ctx):
                 print(x)
     else:
         for r in repo.list_realms():
+            repo.load_realm(r)
             print(r)
 
 

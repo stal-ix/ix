@@ -5,12 +5,14 @@ import sys
 import json
 import base64
 import shutil
+import string
 import itertools
 
 import core.gg as cg
 import core.log as cl
 import core.sign as cs
 import core.utils as cu
+import core.error as ce
 
 
 def realm_path(config, name):
@@ -82,6 +84,14 @@ def flatten(flags, pkgs):
             'name': p['name'],
             'flags': cu.dict_dict_update(flags, p.get('flags', {})),
         }
+
+
+GOOD = frozenset(string.ascii_letters + string.digits)
+
+
+def check_name(name):
+    for ch in name:
+        assert ch in GOOD
 
 
 class RealmCtx:
@@ -162,6 +172,8 @@ class RealmCtx:
 
 class BaseRealm:
     def __init__(self, mngr, name):
+        check_name(name)
+
         self.mngr = mngr
         self.name = name
 
@@ -222,6 +234,8 @@ class Realm(BaseRealm):
 
 class RORealm:
     def __init__(self, name, path):
+        check_name(name)
+
         self.name = name
         self.path = path
         self.meta = read_realm(self.path)
@@ -239,11 +253,16 @@ class RORealm:
 
 
 def load_realm_ro(config, name):
-    return RORealm(name, os.readlink(realm_path(config, name)))
+    rp = realm_path(config, name)
+
+    try:
+        return RORealm(name, os.readlink(rp))
+    except AssertionError as e:
+        raise ce.Error(f'malformed realm link "{rp}", prease remove it manualy', exception=e)
 
 
 def prepare_realm(mngr, name, pkgs):
-    assert '/' not in name
+    check_name(name)
 
     return RealmCtx(mngr, name, pkgs).prepare()
 
@@ -262,4 +281,6 @@ class NewRealm(BaseRealm):
 
 
 def new_realm(mngr, name):
+    check_name(name)
+
     return NewRealm(mngr, name)
