@@ -1,0 +1,17 @@
+#!/usr/bin/env python3
+
+import os
+import sys
+
+
+dd = os.path.join(os.path.dirname(os.environ['IX_BINARY']), 'docs')
+
+
+for x in os.listdir(dd):
+    if '.md' in x:
+        p = os.path.join(dd, x)
+
+        with open(p, 'r') as f:
+            for ch in f.read():
+                if ch not in ('’', ) and ord(ch) > 127:
+                    print(p, ch)
