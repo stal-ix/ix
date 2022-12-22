@@ -24,3 +24,7 @@ bin/scdoc
 lib/curses/n
 bld/wayland
 {% endblock %}
+
+{% block meson_flags %}
+default-terminfo=xterm-256color
+{% endblock %}
