@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://github.com/wolfSSL/wolfssl/archive/refs/tags/v5.5.3-stable.tar.gz
-sha:fd3135b8657d09fb96a8aad16585da850b96ea420ae8ce5ac4d5fdfc614c2683
+https://github.com/wolfSSL/wolfssl/archive/refs/tags/v5.5.4-stable.tar.gz
+sha:b7ee150e49def77c765bc02aac92ddeb0bebefd4cb12aa263d8f95e405221fb8
 {% endblock %}
 
 {% block conf_ver %}
