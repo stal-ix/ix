@@ -1,8 +1,8 @@
 {% extends '//lib/gtk/t/ix.sh' %}
 
 {% block fetch %}
-https://gitlab.gnome.org/GNOME/gtk/-/archive/4.8.3/gtk-4.8.3.tar.bz2
-sha:20241f18c7d368404cbc2a0bfa15e9b01db25f778563db394620b1f43e9f8e7a
+https://gitlab.gnome.org/GNOME/gtk/-/archive/4.9.1/gtk-4.9.1.tar.bz2
+sha:84bc3d071d44bdc9ac5b4c76f0e06caca2a3b4b4f264d9ba452796bd155e3673
 {% endblock %}
 
 {% block lib_deps %}
@@ -24,6 +24,7 @@ media-gstreamer=disabled
 
 {% block patch %}
 {{super()}}
+sed -e 's|, xdp_dbus_generated||' -i gtk/meson.build
 patch -p1 << EOF
 {% include '0.diff' %}
 EOF
