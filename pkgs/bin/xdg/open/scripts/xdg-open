@@ -14,7 +14,7 @@ on_browser() {
 }
 
 on_pdf() {
-    for c in xpdf mupdf-gl zathura evince; do
+    for c in xpdf zathura evince; do
         if command -v ${c}; then
             exec ${c} "${1}"
         fi
