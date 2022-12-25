@@ -9,6 +9,7 @@ sha:1d0238b06b3e5987c859e5b529ecee738f75bacff04b149398b1fe8cbb121e53
 lib/c
 lib/cap
 lib/glib
+lib/pcre
 lib/json/c
 lib/hiredis
 lib/openssl
