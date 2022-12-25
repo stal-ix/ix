@@ -1,8 +1,8 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://github.com/swaywm/sway/archive/refs/tags/1.8-rc4.tar.gz
-sha:3be8c79b84603585f2147754a284a1d9841bd6faded7905de597c6ac46b797b3
+https://github.com/swaywm/sway/archive/refs/tags/1.8.tar.gz
+sha:fae0422bca8f528027f77e3a7bbea2be0498bba2ad3f0d22554ff8827e37f04e
 {% endblock %}
 
 {% block bld_libs %}
