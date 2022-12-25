@@ -2,5 +2,5 @@
 
 {% block run_deps %}
 bin/webview
-bin/telegram/web/t/unwrap
+bin/telegram/web/t/unwrap(flavor={{self.flavor().strip()}})
 {% endblock %}

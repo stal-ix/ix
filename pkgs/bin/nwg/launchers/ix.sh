@@ -10,7 +10,7 @@ lib/c
 lib/c++
 lib/gtk/3/mm
 lib/json/nlohmann
-lib/gdk/pixmap/svg
+lib/gdk/pixbuf/svg
 lib/gtk/layer/shell
 {% endblock %}
 

@@ -9,7 +9,7 @@ mkdir ${out}/bin; cd ${out}/bin
 
 cat << EOF > telegram
 #!/usr/bin/env sh
-exec webview https://web.telegram.org/{{self.flavor().strip()}}
+exec webview https://web.telegram.org/{{flavor}}
 EOF
 
 chmod +x telegram

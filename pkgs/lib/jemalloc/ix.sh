@@ -25,8 +25,8 @@ lib/c/naked
 {% endblock %}
 
 {% block bld_libs %}
-lib/c++
 lib/bumpalloc
+lib/c++/dispatch
 {% endblock %}
 
 {% block build_flags %}
