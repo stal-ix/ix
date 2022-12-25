@@ -2,6 +2,7 @@
 
 {% block bld_libs %}
 lib/web/kit/deps
+lib/mesa/glesv2/dl
 lib/{{allocator}}/trim(delay=1,bytes=10000000)
 {{super()}}
 {% endblock %}

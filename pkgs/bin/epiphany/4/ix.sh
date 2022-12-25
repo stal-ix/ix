@@ -1,11 +1,12 @@
 {% extends '//bin/epiphany/t/ix.sh' %}
 
 {% block fetch %}
-https://github.com/GNOME/epiphany/archive/6ce6a03e40612d4b51dd39c1f8dda2f2f3d6f520.zip
-sha:525eda50e51d2ff72871a71897b093afedff62d433c742191f50698f6dc2a4f8
+https://github.com/GNOME/epiphany/archive/0f02b2f921d89513abf659e6a2117f07bdac53cf.zip
+sha:615eed6f34193628e4bbebd44761a81d9ba22945584b9c4ea6d29611c7ae086f
 {% endblock %}
 
 {% block bld_libs %}
 lib/adwaita
+lib/mesa/glesv2/dl
 {{super()}}
 {% endblock %}
