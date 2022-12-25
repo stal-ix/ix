@@ -56,7 +56,7 @@ bin/quake/1/vk/pg83
 bin/quake/1/vk/novum
 bin/quake/1/vk
 bin/quake/2/vk
-bin/quake/2/yamagi
+#bin/quake/2/yamagi
 bin/quake/3/e
 bin/sbase
 bin/scdoc

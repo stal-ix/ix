@@ -13,3 +13,7 @@ lib/wayland
 {% block bld_tool %}
 bld/wayland
 {% endblock %}
+
+{% block build_flags %}
+shut_up
+{% endblock %}
