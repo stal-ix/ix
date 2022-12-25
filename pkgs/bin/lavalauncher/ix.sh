@@ -8,6 +8,7 @@ sha:951edb0e00a118cd57d54349349d4898cfc18c6208a7c4d7f6e892eec1497c3b
 {% block bld_libs %}
 lib/c
 lib/cairo
+lib/kernel
 lib/wayland
 lib/xkbcommon
 {% endblock %}
