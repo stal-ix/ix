@@ -55,8 +55,8 @@ bin/binutils
 bin/quake/1/vk/pg83
 bin/quake/1/vk/novum
 bin/quake/1/vk
-bin/quake/2/vk
-#bin/quake/2/yamagi
+#bin/quake/2/vk
+bin/quake/2/yamagi
 bin/quake/3/e
 bin/sbase
 bin/scdoc
@@ -149,10 +149,10 @@ bin/parted
 #bin/p7zip/z
 bin/p7zip
 bin/time
-bin/dhcpcd/sys
-bin/dhcpcd/runit
+#bin/dhcpcd/sys
+#bin/dhcpcd/runit
 #bin/dhcpcd/runit/scripts
-bin/dhcpcd
+#bin/dhcpcd
 bin/gn
 bin/glib/codegen
 bin/pv
@@ -296,7 +296,6 @@ bin/mksh
 bin/coreutils/8/31
 bin/coreutils/8/32
 bin/coreutils/9/0
-bin/coreutils/9/perf
 bin/coreutils/9/1
 bin/coreutils/lite
 bin/coreutils
@@ -422,7 +421,7 @@ bin/vte
 bin/wayfire
 bin/vulkan/tools
 bin/sndfile
-bin/freeglut
+#bin/freeglut
 bin/openal
 bin/harfbuzz
 bin/xkbcli
@@ -451,7 +450,7 @@ bin/ly/runit
 bin/ly
 bin/lavalauncher
 bin/fuzzel
-bin/rofi
+#bin/rofi
 bin/atop
 bin/soupget
 bin/input/tools
