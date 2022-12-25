@@ -18,7 +18,7 @@ bld/pkg/config
 {% endblock %}
 
 {% block configure %}
-export LINUX_INCL=${lib_linux}/include
+export LINUX_INCL=${lib_linux_headers}/include
 bash ./Configure -n linux
 {% endblock %}
 

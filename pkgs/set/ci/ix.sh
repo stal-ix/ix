@@ -665,7 +665,7 @@ bin/termshark
 bin/gotop
 bin/wtf
 bin/elvish
-bin/avizo
+#bin/avizo
 bin/gh
 bin/curlie
 bin/autologin
@@ -702,7 +702,7 @@ bin/kuroko/lite
 bin/bim
 bin/et
 bin/socat
-bin/efitools
+#bin/efitools
 bin/rhash
 bin/vis
 bin/colord
