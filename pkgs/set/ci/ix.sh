@@ -96,7 +96,7 @@ bin/slurp
 bin/mingetty
 bin/git
 bin/git/2
-bin/git/go
+#bin/git/go
 #bin/kernel/6/0/headers
 #bin/kernel/6/0/slot/0
 #bin/kernel/6/0/slot/1
@@ -300,7 +300,6 @@ bin/coreutils/9/perf
 bin/coreutils/9/1
 bin/coreutils/lite
 bin/coreutils
-bin/coreutils/broken
 bin/f2fs/tools
 #bin/putty
 bin/inkscape
