@@ -9,6 +9,11 @@ sha:5bac17218d3911834520dad13cd1f85ab944e1c09ae1aba55906be1f8192f558
 lib/c
 {% endblock %}
 
+{% block std_box %}
+{{super()}}
+bld/bison
+{% endblock %}
+
 {% block configure_flags %}
 {{super()}}
 --disable-nls
