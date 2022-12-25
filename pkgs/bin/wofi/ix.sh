@@ -2,7 +2,7 @@
 
 {% block fetch %}
 https://hg.sr.ht/~scoopta/wofi/archive/v1.2.4.tar.gz
-sha:b48da42b9750f149704eb6dbd60ab80b28c5b0d7aaf7e9de75dd9aab585e8e9a
+sha:b4e2a54cb7cc0dbfc50a21ded4a5694ca6343c57274efcf600aa128811cccf94
 {% endblock %}
 
 {% block bld_libs %}

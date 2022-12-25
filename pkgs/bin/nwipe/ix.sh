@@ -2,7 +2,7 @@
 
 {% block fetch %}
 https://github.com/martijnvanbrummelen/nwipe/archive/refs/tags/v0.34.tar.gz
-sha:6cdd67425d4dc2be95792b072b49d773ce017dca0e7a9692f0a114fce3aeb0ed
+sha:be3122fcd8a6c8099ee1ae37dd640848774fdb84a7045a7b33dcf54c1ec69c29
 {% endblock %}
 
 {% block bld_libs %}

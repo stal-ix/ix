@@ -1,4 +1,4 @@
-{% extends '//bin/wayland/scanner/ix.sh' %}
+{% extends '//bin/wayland/scanner/t/ix.sh' %}
 
 {% block meson_cross %}
 {% endblock %}
