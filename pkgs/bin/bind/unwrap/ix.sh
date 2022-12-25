@@ -21,6 +21,10 @@ lib/json/c
 lib/openssl
 {% endblock %}
 
+{% block bld_tool %}
+bin/gzip
+{% endblock %}
+
 {% block configure_flags %}
 --disable-doh
 --enable-developer

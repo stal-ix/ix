@@ -158,7 +158,7 @@ bin/glib/codegen
 bin/pv
 #bin/minibrowser
 bin/sway/tools
-bin/sway/lock
+#bin/sway/lock
 bin/sway/idle
 bin/sway/bg
 #bin/sway/compositor
@@ -231,7 +231,7 @@ bin/iwd/sys
 bin/efibootmgr
 bin/ecl
 bin/mrsh
-bin/porto
+#bin/porto
 bin/mdevd/runit
 #bin/mdevd/runit/scripts
 bin/mdevd
