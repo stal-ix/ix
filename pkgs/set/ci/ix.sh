@@ -657,7 +657,7 @@ bin/imhex
 bin/stunnel
 bin/samba
 bin/emptty
-bin/systembus/notify
+#bin/systembus/notify
 bin/fzf
 bin/micro
 bin/grv

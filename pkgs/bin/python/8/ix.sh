@@ -1,12 +1,5 @@
-{% extends '//lib/python/3/8/ix.sh' %}
+{% extends '//die/hub.sh' %}
 
-{% block install %}
-# TODO(pg): fix base template instead
-mkdir ${out}/bin
->${out}/bin/qw.o
-{{super()}}
-{% endblock %}
-
-{% block postinstall %}
-: nothing to do
+{% block run_deps %}
+bin/python/8/unwrap(edit=readline)
 {% endblock %}
