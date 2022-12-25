@@ -14,3 +14,7 @@ lib/event
 # incoherent NDEBUG usage
 echo 'int cache_error = 0;' >> cache.c
 {% endblock %}
+
+{% block build_flags %}
+shut_up
+{% endblock %}

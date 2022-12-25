@@ -398,7 +398,6 @@ bin/zathura
 bin/poppler
 bin/elfutils
 bin/fontconfig
-bin/glsl
 bin/dav1d
 bin/re2c
 bin/aserver
