@@ -381,7 +381,7 @@ bin/runsrv
 bin/dcron
 bin/tcpdump
 bin/giflib
-bin/tiff
+#bin/tiff
 bin/nsstools
 bin/wob
 bin/fheroes2
