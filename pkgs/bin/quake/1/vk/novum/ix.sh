@@ -28,3 +28,7 @@ bld/spirv/tools
 mkdir ${out}/bin
 cp $(find ${tmp} -type f -name vkquake) ${out}/bin/
 {% endblock %}
+
+{% block build_flags %}
+shut_up
+{% endblock %}
