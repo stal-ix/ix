@@ -503,13 +503,13 @@ bin/tree
 bin/tvedit
 bin/ntp
 bin/lsof
-bin/webview
+#bin/webview
 #bin/telegram/web/z
 #bin/telegram/web/old
 #bin/telegram/web/k
 #bin/telegram/desktop/extra
 #bin/telegram/desktop
-bin/telegram
+#bin/telegram
 bin/qemu
 bin/hyprland
 #bin/hyprland/protocols

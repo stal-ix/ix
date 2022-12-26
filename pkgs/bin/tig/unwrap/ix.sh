@@ -9,3 +9,7 @@ sha:60a1acfda3238df28dfbe309adc1892a8c9b35138c738f1567c6c3c65c81fb72
 lib/c
 lib/curses
 {% endblock %}
+
+{% block make_flags %}
+QUIET_GEN=
+{% endblock %}
