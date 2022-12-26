@@ -33,6 +33,7 @@ export TARGET_STRIP=$(which llvm-strip)
 {% endblock %}
 
 {% block configure_flags %}
+--disable-werror
 --enable-grub-mount
 --enable-device-mapper
 --enable-liblzma
