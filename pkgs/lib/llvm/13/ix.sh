@@ -1,4 +1,4 @@
-{% extends '//lib/llvm/t/ix.sh' %}
+{% extends '//lib/llvm/t/heavy/ix.sh' %}
 
 {% block fetch %}
 {% include 'ver.sh' %}

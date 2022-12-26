@@ -1,6 +1,4 @@
-{% extends '//lib/llvm/t/ix.sh' %}
-
-{% block task_pool %}full{% endblock %}
+{% extends '//lib/llvm/t/heavy/ix.sh' %}
 
 {% block bld_libs %}
 lib/c

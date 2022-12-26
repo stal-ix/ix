@@ -686,7 +686,7 @@ bin/gosh
 bin/gosh/posix
 bin/nodejs
 bin/semver
-bin/tinyssh
+#bin/tinyssh
 bin/lz4
 bin/setcwd
 bin/rizin
