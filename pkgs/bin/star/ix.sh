@@ -12,10 +12,17 @@ lib/c
 {% block make_flags %}
 INS_BASE=${out}
 LINKMODE=static
+GMAKE_NOWARN=true
+INSUSR=root
+INSGRP=root
 {% endblock %}
 
 {% block patch %}
 find . -type f | while read l; do
     sed -e "s|/tmp/|${TMPDIR}/|" -i ${l}
 done
+{% endblock %}
+
+{% block c_rename_symbol %}
+strtod
 {% endblock %}
