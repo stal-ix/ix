@@ -89,7 +89,7 @@ bin/dropbear/runit
 #bin/alacritty
 bin/heirloom/ed
 bin/weston
-bin/lldb
+#bin/lldb
 bin/slurp
 #bin/mingetty/runit/slot
 #bin/mingetty/runit
@@ -522,7 +522,7 @@ bin/mpg123
 bin/lame
 bin/sox
 bin/vlc
-bin/mplayer
+#bin/mplayer
 bin/q/jackctl
 bin/q/imgv
 bin/q/bittorrent
@@ -659,13 +659,13 @@ bin/emptty
 #bin/systembus/notify
 bin/fzf
 bin/micro
-bin/grv
+#bin/grv
 bin/termshark
 bin/gotop
 #bin/wtf
 bin/elvish
 #bin/avizo
-bin/gh
+#bin/gh
 bin/curlie
 bin/autologin
 bin/autologin/runit
@@ -708,7 +708,7 @@ bin/colord
 bin/w3m
 bin/tea
 bin/gendesk
-bin/ladybird
+#bin/ladybird
 bin/shadow
 bin/pdpmake
 bin/premake
