@@ -1,8 +1,8 @@
 {% extends '//die/c/autohell.sh' %}
 
 {% block fetch %}
-https://astron.com/pub/file/file-5.42.tar.gz
-sha:c076fb4d029c74073f15c43361ef572cfb868407d347190ba834af3b1639b0e4
+https://astron.com/pub/file/file-5.44.tar.gz
+sha:3751c7fba8dbc831cb8d7cc8aff21035459b8ce5155ef8b0880a27d028475f3b
 {% endblock %}
 
 {% block lib_deps %}
