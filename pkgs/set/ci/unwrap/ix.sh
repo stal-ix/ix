@@ -214,7 +214,7 @@ bin/yasm
 #bin/icontool
 bin/findutils
 bin/hdparm
-bin/chromium
+#bin/chromium
 bin/patch
 bin/which
 bin/subversion
@@ -614,7 +614,7 @@ bin/chafa
 bin/pango
 bin/tesseract
 bin/z3
-bin/code/blocks
+#bin/code/blocks
 bin/inetutils
 bin/poedit
 bin/wxrc
