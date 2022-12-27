@@ -65,3 +65,9 @@ for x in lib/pkgconfig/sdl2.pc bin/sdl2-config; do
         -i ${x}
 done
 {% endblock %}
+
+{% block postinstall %}
+{{super()}}
+cd ${out}
+mv lib/bin bin # or broke scummvm configure
+{% endblock %}
