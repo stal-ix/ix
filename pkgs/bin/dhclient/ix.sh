@@ -11,17 +11,25 @@ lib/kernel
 {% endblock %}
 
 {% block bld_tool %}
+bin/tar
+bin/gzip
 bld/gettext
 {% endblock %}
 
 {% block patch %}
+sed -e 's|tar xf -|tar -x -f - --no-same-permissions --no-same-owner|' -i bind/Makefile.in
 sed '/o.*dhcp_type/d' -i server/mdb.c
-
-sed -r '/u.*(local|remote)_port/d' \
-    -i client/dhclient.c relay/dhcrelay.c
+sed -r '/u.*(local|remote)_port/d' -i client/dhclient.c relay/dhcrelay.c
 {% endblock %}
 
 {% block install %}
 cd client
+{{super()}}
+{% endblock %}
+
+{% block build %}
+cd bind
+make
+cd ..
 {{super()}}
 {% endblock %}

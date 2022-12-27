@@ -491,7 +491,7 @@ bin/mrustc
 bin/exif
 bin/mtools
 bin/fdupes
-bin/ft2demos
+#bin/ft2demos
 bin/exr
 bin/valgrind
 bin/hikari
@@ -589,7 +589,7 @@ bin/haproxy
 bin/fsearch
 bin/bzip3
 bin/lightgbm
-bin/catboost
+#bin/catboost
 #bin/ispc
 bin/dmidecode
 bin/qrencode
@@ -644,7 +644,7 @@ bin/mbedtls/3
 bin/shepherd
 bin/got
 bin/tldr/c
-bin/tldr/go
+#bin/tldr/go
 bin/tldr
 bin/interception/tools
 bin/pstree
