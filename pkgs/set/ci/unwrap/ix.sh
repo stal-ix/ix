@@ -662,7 +662,7 @@ bin/micro
 bin/grv
 bin/termshark
 bin/gotop
-bin/wtf
+#bin/wtf
 bin/elvish
 #bin/avizo
 bin/gh

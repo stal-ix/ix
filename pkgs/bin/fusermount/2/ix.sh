@@ -9,3 +9,8 @@ lib/udev
 {{super()}}
 --enable-util
 {% endblock %}
+
+{% block make_flags %}
+{{super()}}
+MOUNT_FUSE_PATH=${out}/bin
+{% endblock %}
