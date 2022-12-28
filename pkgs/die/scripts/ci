@@ -1,0 +1,13 @@
+#!/usr/bin/env sh
+
+cycle() (
+    date
+    echo '------------------------------------------------------'
+    git pull
+    ./ix build set/ci
+)
+
+while true; do
+    cycle || true
+    sleep 10
+done
