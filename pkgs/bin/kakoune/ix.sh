@@ -17,3 +17,7 @@ shut_up
 {% block bld_tool %}
 bin/gzip
 {% endblock %}
+
+{% block make_flags %}
+libexecdir=${out}/bin/bin_kakoune
+{% endblock %}
