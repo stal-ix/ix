@@ -2,7 +2,7 @@
 
 {% block fetch %}
 https://gitlab.com/wireshark/wireshark/-/archive/v4.0.2/wireshark-v4.0.2.tar.bz2
-sha:896aa833957e000115474ac14827d851e18be4bad8b5c5da2b739b89dac61f1c
+sha:0c652f2d965596854934a47d1e6e924d185323ea3f177a268fec282bdb948caa
 {% endblock %}
 
 {% block bld_libs %}

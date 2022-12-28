@@ -9,5 +9,5 @@ cycle() (
 
 while true; do
     cycle || true
-    sleep 10
+    sleep 100
 done
