@@ -5,3 +5,8 @@
 ENABLE_PROGRAMS=ON
 ENABLE_TESTING=OFF
 {% endblock %}
+
+{% block install %}
+{{super()}}
+rm -rf ${out}/cmake
+{% endblock %}
