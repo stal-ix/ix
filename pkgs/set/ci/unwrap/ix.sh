@@ -33,16 +33,6 @@ bin/help2man
 #bin/clang/13/gcc
 #bin/clang/13
 #bin/clang/12
-#bin/clang/lib/ld/darwin
-#bin/clang/lib/ld/linux
-#bin/clang/lib/ld
-#bin/clang/lib/ar
-#bin/clang/lib/cc/common
-#bin/clang/lib/cc/freestanding
-#bin/clang/lib/cc/diag
-#bin/clang/lib/cc/setup
-#bin/clang/lib/cc
-#bin/clang/lib
 #bin/clang/14/gcc
 #bin/clang/14
 #bin/clang/14/tst
