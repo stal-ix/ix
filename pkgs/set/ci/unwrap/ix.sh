@@ -68,7 +68,7 @@ bin/nasm
 bin/mold
 bin/net/tools
 bin/grub/efi
-#bin/grub/bios
+bin/grub/bios
 #bin/ragel/7
 bin/ragel/6
 bin/wofi
