@@ -10,8 +10,17 @@ bld/python/2
 {% endblock %}
 
 {% block install %}
-cd ${out}; mkdir bin; cd bin; extract0 ${src}/*gz
-sed -e 's|python|python2|' -i gyp
+cd ${out}
+mkdir -p bin/bin_gyp
+cd bin/bin_gyp
+extract0 ${src}/*gz
+cd ..
+
+base64 -d << EOF > gyp
+{% include 'gyp/base64' %}
+EOF
+
+chmod +x gyp
 {% endblock %}
 
 {% block test %}

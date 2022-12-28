@@ -47,7 +47,7 @@ bin/help2man
 #bin/clang/15/gcc
 #bin/clang/15
 #bin/clang/15/full
-bin/clang
+#bin/clang
 #bin/clang/env
 bin/clang/env/wrapper
 bin/jed
@@ -80,7 +80,7 @@ bin/gptfdisk
 bin/cmake/lite
 bin/cmake/gui
 bin/cmake
-bin/sbcl
+#bin/sbcl
 bin/dropbear
 #bin/dropbear/runit/scripts
 bin/dropbear/runit
@@ -521,7 +521,7 @@ bin/heif
 bin/mpg123
 bin/lame
 bin/sox
-bin/vlc
+#bin/vlc
 #bin/mplayer
 bin/q/jackctl
 bin/q/imgv
@@ -593,7 +593,7 @@ bin/lightgbm
 #bin/ispc
 bin/dmidecode
 bin/qrencode
-bin/mutter
+#bin/mutter
 bin/fswatch
 bin/xarchiver
 bin/darktable
@@ -619,7 +619,7 @@ bin/inetutils
 bin/poedit
 bin/wxrc
 bin/clifm
-bin/pcsx2
+#bin/pcsx2
 #bin/reddit/desktop
 #bin/reddit/desktop/hidpi
 bin/iotop
@@ -654,14 +654,14 @@ bin/mle
 bin/sfm
 bin/imhex
 bin/stunnel
-bin/samba
+#bin/samba
 bin/emptty
 #bin/systembus/notify
 bin/fzf
 bin/micro
 #bin/grv
 bin/termshark
-bin/gotop
+#bin/gotop
 #bin/wtf
 bin/elvish
 #bin/avizo
@@ -704,7 +704,7 @@ bin/socat
 #bin/efitools
 bin/rhash
 bin/vis
-bin/colord
+#bin/colord
 bin/w3m
 bin/tea
 bin/gendesk
@@ -741,8 +741,8 @@ bin/llama
 bin/iputils
 bin/wayst
 bin/tex/info
-bin/tex/studio
-bin/feather/pad
+#bin/tex/studio
+#bin/feather/pad
 bin/hunspell
 bin/geany
 bin/codelite

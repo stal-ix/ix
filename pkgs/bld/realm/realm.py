@@ -57,6 +57,8 @@ def install(fr, to):
             os.unlink(p)
         except FileNotFoundError:
             pass
+        except NotADirectoryError:
+            pass
 
         pf = os.path.join(fr, x)
         # print(f'symlink {pf} -> {p}')
