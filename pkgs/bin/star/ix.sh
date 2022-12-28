@@ -26,3 +26,10 @@ done
 {% block c_rename_symbol %}
 strtod
 {% endblock %}
+
+{% block install %}
+{{super()}}
+cd ${out}
+mv sbin/* bin/
+rm -rf sbin
+{% endblock %}

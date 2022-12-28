@@ -17,3 +17,10 @@ sed -e "s|/usr/local|${out}|" \
     -e "s|/nowhere|${out}|" \
     -i Makefile.local
 {% endblock %}
+
+{% block install %}
+{{super()}}
+cd ${out}
+mv sbin/* bin/
+rm -rf sbin
+{% endblock %}

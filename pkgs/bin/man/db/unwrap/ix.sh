@@ -24,3 +24,8 @@ bld/gettext
 --with-systemdtmpfilesdir=${out}/tmp
 --with-systemdsystemunitdir=${out}/share
 {% endblock %}
+
+{% block install %}
+{{super()}}
+rm -rf ${out}/tmp
+{% endblock %}

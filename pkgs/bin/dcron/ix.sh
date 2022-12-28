@@ -14,3 +14,10 @@ sed -e 's|-o root||' -e 's|-g root||' \
     -e 's|-g $(CRONTAB_GROUP)||'      \
     -e 's|.*INSTALL_DIR.*|| ' -i Makefile
 {% endblock %}
+
+{% block install %}
+{{super()}}
+cd ${out}
+mv sbin/* bin/
+rm -rf sbin
+{% endblock %}
