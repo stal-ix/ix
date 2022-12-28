@@ -22,3 +22,8 @@ bld/wayland
 {% block cpp_defines %}
 HAVE_GDK_PIXBUF=1
 {% endblock %}
+
+{% block cpp_missing %}
+# https://github.com/swaywm/sway/issues/5410
+wayland-client-protocol.h
+{% endblock %}

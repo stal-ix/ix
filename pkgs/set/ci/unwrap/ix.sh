@@ -142,7 +142,7 @@ bin/glib/codegen
 bin/pv
 #bin/minibrowser
 bin/sway/tools
-#bin/sway/lock
+bin/sway/lock
 bin/sway/idle
 bin/sway/bg
 bin/sway
