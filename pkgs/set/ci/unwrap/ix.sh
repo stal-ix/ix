@@ -149,10 +149,10 @@ bin/parted
 #bin/p7zip/z
 bin/p7zip
 bin/time
-#bin/dhcpcd/sys
-#bin/dhcpcd/runit
+bin/dhcpcd/sys
+bin/dhcpcd/runit
 #bin/dhcpcd/runit/scripts
-#bin/dhcpcd
+bin/dhcpcd
 bin/gn
 bin/glib/codegen
 bin/pv
