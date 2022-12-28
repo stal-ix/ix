@@ -23,6 +23,7 @@ lib/pcre/2/posix
 {% block configure %}
 sh ./configure \
     --prefix=${out} \
+    --libexecdir=${out}/bin/bin_neomutt \
     --disable-doc \
     --ssl \
     --pcre2 \
