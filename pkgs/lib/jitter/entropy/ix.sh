@@ -26,3 +26,7 @@ bin/gzip
 cd ${out}/lib
 cp libjitterentropy.so.3.4.1 libjitterentropy.a
 {% endblock %}
+
+{% block env %}
+export CPPFLAGS="-DJENT_CONF_ENABLE_INTERNAL_TIMER=1 \${CPPFLAGS}"
+{% endblock %}
