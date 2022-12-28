@@ -734,7 +734,6 @@ bin/lsyncd
 bin/kanshi
 bin/varlink
 bin/iozone
-bin/sudo/er
 bin/kmod
 bin/svg2png
 bin/llama
