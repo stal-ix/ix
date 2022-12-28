@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://rsync.osuosl.org/pub/mariadb/mariadb-10.10.2/source/mariadb-10.10.2.tar.gz
-sha:57cbd0112b22b592f657cd4eb82e2f36ad901351317bf8e17849578e803f3cb2
+https://rsync.osuosl.org/pub/mariadb/mariadb-10.11.1/source/mariadb-10.11.1.tar.gz
+sha:ffacf84e74daf249ad64b9573d79a4e882f66b004614f8b33bfcb14a8e25da1d
 {% endblock %}
 
 {% block bld_libs %}
@@ -35,4 +35,12 @@ ssize_t=long
 
 {% block cpp_includes %}
 ${PWD}/include/providers
+{% endblock %}
+
+{% block install %}
+{{super()}}
+rm -rf ${out}/mysql-test
+rm -rf ${out}/scripts
+rm -rf ${out}/sql-bench
+rm -rf ${out}/support-files
 {% endblock %}
