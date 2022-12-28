@@ -16,3 +16,8 @@ find . -type f | while read l; do
     sed -e 's|tname\[\] = .*|\*tname = ix_mkstemp_template();|g' -i ${l}
 done
 {% endblock %}
+
+{% block install %}
+{{super()}}
+rm -rf ${out}/libexec
+{% endblock %}
