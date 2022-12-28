@@ -746,7 +746,7 @@ bin/hunspell
 bin/geany
 bin/codelite
 bin/dash/sh
-#bin/dash/old
+bin/dash/old
 bin/dash
 bin/zenithy
 bin/unifdef
