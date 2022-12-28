@@ -47,8 +47,8 @@ bin/help2man
 #bin/clang/15/gcc
 #bin/clang/15
 #bin/clang/15/full
-#bin/clang
-#bin/clang/env
+bin/clang
+bin/clang/env
 bin/clang/env/wrapper
 bin/jed
 bin/binutils

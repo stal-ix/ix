@@ -6,3 +6,8 @@
 --with-platform=pc
 --enable-efiemu
 {% endblock %}
+
+{% block configure %}
+sed -e 's|falign-jumps|Dxxxxxx|' -i configure
+{{super()}}
+{% endblock %}
