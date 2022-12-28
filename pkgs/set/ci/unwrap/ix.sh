@@ -1,6 +1,7 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
+bin/havaged
 bin/rng/tools
 bin/gcc/11
 bin/gcc/env
@@ -56,7 +57,6 @@ bin/binutils
 bin/quake/1/vk/pg83
 bin/quake/1/vk/novum
 bin/quake/1/vk
-#bin/quake/2/vk
 bin/quake/2/yamagi
 bin/quake/3/e
 bin/sbase
@@ -70,7 +70,6 @@ bin/mold
 bin/net/tools
 bin/grub/efi
 bin/grub/bios
-#bin/ragel/7
 bin/ragel/6
 bin/wofi
 bin/most
@@ -83,30 +82,18 @@ bin/cmake/gui
 bin/cmake
 #bin/sbcl
 bin/dropbear
-#bin/dropbear/runit/scripts
 bin/dropbear/runit
-#bin/dropbear/runit/hostkeys
-#bin/dropbear/runit/keygen
 #bin/alacritty
 bin/heirloom/ed
 bin/weston
 #bin/lldb
 bin/slurp
-#bin/mingetty/runit/slot
-#bin/mingetty/runit
+bin/mingetty/runit
 bin/mingetty
 bin/git
 bin/git/2
 #bin/git/go
-#bin/kernel/6/0/headers
-#bin/kernel/6/0/slot/0
-#bin/kernel/6/0/slot/1
-#bin/kernel/6/0/slot/vbox
 #bin/kernel/6/0
-#bin/kernel/6/1/headers
-#bin/kernel/6/1/slot/0
-#bin/kernel/6/1/slot/1
-#bin/kernel/6/1/slot/vbox
 #bin/kernel/6/1
 bin/meson/60
 bin/meson/62
@@ -128,7 +115,6 @@ bin/e2fsprogs
 bin/grep
 bin/seatd/sys
 bin/seatd/runit
-#bin/seatd/runit/scripts
 bin/seatd
 bin/groff
 bin/nnn
@@ -146,13 +132,10 @@ bin/xfsprogs
 bin/toybox
 bin/parted
 #bin/bat
-#bin/p7zip/a
-#bin/p7zip/z
 bin/p7zip
 bin/time
 bin/dhcpcd/sys
 bin/dhcpcd/runit
-#bin/dhcpcd/runit/scripts
 bin/dhcpcd
 bin/gn
 bin/glib/codegen
@@ -162,7 +145,6 @@ bin/sway/tools
 #bin/sway/lock
 bin/sway/idle
 bin/sway/bg
-#bin/sway/compositor
 bin/sway
 bin/bmake
 bin/waybar
@@ -185,13 +167,8 @@ bin/ted
 bin/gperf
 bin/imv
 bin/b64
-#bin/kitty/darwin
-#bin/kitty/linux
 bin/kitty
 bin/nano
-#bin/ya/1
-#bin/ya/0
-#bin/ya
 bin/wget/2
 bin/wget
 bin/nwipe
@@ -226,7 +203,6 @@ bin/screen
 bin/gawk
 bin/gawk/lite
 bin/iwd/runit
-#bin/iwd/runit/scripts
 bin/iwd
 bin/iwd/sys
 bin/efibootmgr
@@ -234,7 +210,6 @@ bin/ecl
 bin/mrsh
 #bin/porto
 bin/mdevd/runit
-#bin/mdevd/runit/scripts
 bin/mdevd
 bin/base64
 bin/turbo
@@ -291,7 +266,6 @@ bin/far2l
 bin/far2l/wx
 bin/util/linux
 bin/runit/sys
-#bin/runit/sys/scripts
 bin/runit
 bin/mksh
 bin/coreutils/8/31
@@ -320,10 +294,6 @@ bin/idn/2
 bin/idn
 bin/libtool
 bin/cardboard
-#bin/sched/trashdir
-#bin/sched/staleprocs
-#bin/sched
-#bin/sched/scripts
 bin/openresolv
 bin/kbd
 bin/fixtty
@@ -352,7 +322,6 @@ bin/webkitproc
 bin/acpid/2
 bin/acpid/rules
 bin/acpid/runit
-#bin/acpid/runit/scripts
 bin/acpid/d
 bin/netcat
 bin/basuctl
@@ -389,12 +358,7 @@ bin/glslang
 bin/minigzip/gzip
 bin/minigzip
 bin/subreaper
-#bin/zathura/headers
-#bin/zathura/mupdf
-#bin/zathura/djvu
-#bin/zathura/cb
 bin/zathura
-#bin/zathura/poppler
 bin/poppler
 bin/elfutils
 bin/fontconfig
@@ -404,7 +368,6 @@ bin/aserver
 bin/tinyalsa
 bin/alsa/utils
 bin/sndio/runit
-#bin/sndio/runit/scripts
 bin/sndio/ctl
 bin/sndio/sys
 bin/sndio/d
@@ -447,7 +410,6 @@ bin/perl/host
 bin/perl
 bin/ly/sys
 bin/ly/runit
-#bin/ly/runit/scripts
 bin/ly
 bin/lavalauncher
 bin/fuzzel
@@ -460,11 +422,11 @@ bin/wl/clipboard
 bin/wl/sunset
 bin/wl/mirror
 bin/wl/opm
-#bin/nwg/launchers
-#bin/nwg/drawer
-#bin/nwg/menu
+bin/nwg/launchers
+bin/nwg/drawer
+bin/nwg/menu
 bin/nwg
-#bin/nwg/dock
+bin/nwg/dock
 bin/fnott
 bin/brightnessctl
 bin/vim/g
@@ -476,19 +438,14 @@ bin/transmission/gtk
 bin/transmission/remote
 bin/transmission
 bin/stalld/runit
-#bin/stalld/runit/scripts
 bin/stalld
 bin/grpc/codegen
 bin/vifm
 bin/dte
 bin/joe
 bin/kakoune
-#bin/mrustc/cargo
-#bin/mrustc/std
+bin/mrustc/cargo
 bin/mrustc
-#bin/mrustc/mrustc
-#bin/mrustc/minicargo
-#bin/mrustc/rustc
 bin/exif
 bin/mtools
 bin/fdupes
@@ -510,10 +467,9 @@ bin/lsof
 #bin/telegram/web/k
 #bin/telegram/desktop/extra
 #bin/telegram/desktop
-#bin/telegram
+bin/telegram
 bin/qemu
 bin/hyprland
-#bin/hyprland/protocols
 bin/schedtool
 bin/cpulimit
 bin/opj
@@ -532,7 +488,6 @@ bin/svt/hevc
 bin/svt/av1
 bin/ugrep
 bin/mg
-#bin/netsurf/buildsystem
 bin/waf
 bin/mpv
 bin/glslc
@@ -542,14 +497,10 @@ bin/notify/send
 bin/ananicy/cpp
 bin/ananicy/rules
 bin/ananicy/runit
-#bin/ananicy/runit/scripts
 bin/ananicy/good
 bin/ananicy
 bin/schedrr
-#bin/xdg/open/scripts
 bin/xdg/open
-#bin/xdg/er
-#bin/xdg/er/webkit
 bin/xdg/desktop/portal/gtk
 bin/xdg/desktop/portal
 bin/psmisc
