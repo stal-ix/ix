@@ -17,3 +17,11 @@ aux/terminfo
 {% block bld_tool %}
 aux/terminfo/config
 {% endblock %}
+
+{% block setup %}
+export JED_ROOT=${out}/share/jed
+{% endblock %}
+
+{% block make_flags %}
+JED_ROOT="${JED_ROOT}"
+{% endblock %}
