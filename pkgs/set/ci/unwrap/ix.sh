@@ -741,7 +741,7 @@ bin/iputils
 bin/wayst
 bin/tex/info
 #bin/tex/studio
-#bin/feather/pad
+bin/feather/pad
 bin/hunspell
 bin/geany
 bin/codelite
