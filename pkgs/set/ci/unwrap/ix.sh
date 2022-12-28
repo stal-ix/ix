@@ -1,6 +1,7 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
+bin/lite/xl
 bin/gparted
 bin/havaged
 bin/rng/tools
