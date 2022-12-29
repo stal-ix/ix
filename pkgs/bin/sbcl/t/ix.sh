@@ -22,6 +22,8 @@ cat << EOF | sort | uniq | (while read l; do echo "sbcl ${l} ${l}"; done) | dl_s
 EOF
 
 sed -e '5,$d' -i contrib/sb-posix/posix-tests.lisp
+sed -e 's|test:|testxxx:|' -i contrib/asdf-module.mk
+echo 'test:' >> contrib/asdf-module.mk
 {% endblock %}
 
 {% block build %}
