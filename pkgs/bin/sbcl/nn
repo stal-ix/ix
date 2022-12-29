@@ -1,6 +1,8 @@
 CRASH_PREAMBLE_SIGNATURE
 DYNAMIC_SPACE_START
 FIXEDOBJ_SPACE_START
+READ_ONLY_SPACE_END
+READ_ONLY_SPACE_START
 VARYOBJ_SPACE_START
 __mark_obj
 _exit
@@ -74,7 +76,13 @@ breakpoint_do_displaced_inst
 breakpoint_install
 breakpoint_remove
 brief_print
+brothertree_find_eql
+brothertree_find_greatereql
 brothertree_find_lesseql
+bsearch_greatereql_uint32
+bsearch_greatereql_uword
+bsearch_lesseql_uint32
+bsearch_lesseql_uword
 build_id
 bytes_allocated
 bytes_consed_between_gcs
@@ -110,6 +118,7 @@ core_string
 corruption_warning_and_maybe_lose
 cos
 cosh
+count_immobile_objects
 create_main_lisp_thread
 cull_weak_hash_tables
 current_control_frame_pointer
@@ -117,6 +126,7 @@ current_thread
 debug_function_from_pc
 debug_print
 debug_weak_ht
+decode_fdefn_rawfun
 deferrable_sigset
 deferrables_blocked_p
 define_dynamic_var
@@ -130,7 +140,9 @@ df_decode_locs
 dir_name
 disable_lossage_handler
 do_pending_interrupt
+dump_marked_objects
 dup
+duplicate_codeblob_offheap
 dynamic_space_code_from_pc
 dynamic_space_size
 dynamic_values_bytes
@@ -201,6 +213,7 @@ gc_gen_of
 gc_gen_report_to_file
 gc_heap_exhausted_error_or_lose
 gc_heapsort_uwords
+gc_in_situ_live_nwords
 gc_init
 gc_init_immobile
 gc_load_corefile_ptes
@@ -255,6 +268,7 @@ handle_trap
 heap_scavenge
 heap_trace_verbose
 hexdump_and_verify_heap
+hexdump_enabled
 hexdump_spaces
 hopscotch_containsp
 hopscotch_create
@@ -350,6 +364,7 @@ mkdir
 mmap_largefile
 monitor_or_something
 more_p
+move_rospace_to_dynamic
 murmur3_fmix32
 murmur3_fmix64
 n_gcs
@@ -414,6 +429,7 @@ pre_verify_gen_0
 prepare_for_full_mark_phase
 prepare_immobile_space_for_final_gc
 prepare_immobile_space_for_save
+prepare_readonly_space
 prepare_to_save
 primitive_object_size
 print
@@ -466,6 +482,7 @@ s_isreg
 s_issock
 safely_show_lstring
 save_gc_crashdump
+save_lisp_gc_iteration
 save_runtime_to_filehandle
 save_to_filehandle
 sb_GetTID

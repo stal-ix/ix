@@ -23,8 +23,3 @@ sbcl
 {{super()}}
 {% include 'nn' %}
 {% endblock %}
-
-{% block setup %}
-{{super()}}
-export LDFLAGS="-Wl,--error-limit=0 ${LDFLAGS}"
-{% endblock %}
