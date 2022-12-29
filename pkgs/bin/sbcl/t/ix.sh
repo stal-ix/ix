@@ -31,9 +31,7 @@ clang -fno-builtin -c symbols.c -o ${tmp}/symbols.o
 
 export LDLIBS="${tmp}/symbols.o"
 
-{% block prebuild_xxx %}
 ulimit -s 60000
-{% endblock %}
 
 sh make.sh sbcl \
     --prefix=${out} \
