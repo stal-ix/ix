@@ -53,6 +53,8 @@ arch_skip_instruction
 arch_write_linkage_table_entry
 arena_bytes_used
 arena_chain
+arena_find_containing_object
+arena_mprotect
 arena_release_memblks
 arrange_return_to_c_function
 arrange_return_to_lisp_function
@@ -107,6 +109,8 @@ collect_garbage
 collector_alloc_fallback
 component_ptr_from_pc
 compute_codeblob_offsets_nwords
+compute_sdiv_magic32
+compute_udiv_magic32
 continue_after_memoryfault_on_unprotected_pages
 copied_string
 copy_potential_large_object
@@ -133,6 +137,7 @@ describe_internal_error
 describe_thread_state
 descriptors_scavenge
 df_decode_locs
+diagnose_arena_fault
 dir_name
 disable_lossage_handler
 dispose_markbits
@@ -162,6 +167,7 @@ finalizer_thread_stop
 finalizer_thread_wait
 finalizer_thread_wake
 find_code
+find_containing_arena
 find_dynspace_to_arena_ptrs
 find_symbol
 fixedobj_free_pointer
@@ -578,7 +584,7 @@ uid_username
 unbind
 unbind_to_here
 unblock_deferrable_signals
-unblock_gc_signals
+unblock_gc_stop_signal
 unblock_signals_in_context_and_maybe_warn
 undefined_alien_address
 undo_fake_foreign_function_call
