@@ -10,11 +10,21 @@ bld/sbcl
 {{super()}}
 {% endblock %}
 
+{% block bld_libs %}
+lib/zstd
+{{super()}}
+{% endblock %}
+
 {% block boot_lisp %}
 sbcl
 {% endblock %}
 
 {% block extern_symbols %}
 {{super()}}
-{% include 'sbcl' %}
+{% include 'nn' %}
+{% endblock %}
+
+{% block setup %}
+{{super()}}
+export LDFLAGS="-Wl,--error-limit=0 ${LDFLAGS}"
 {% endblock %}
