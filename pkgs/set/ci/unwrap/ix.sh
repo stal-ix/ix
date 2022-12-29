@@ -73,7 +73,6 @@ bin/gptfdisk
 bin/cmake/lite
 bin/cmake/gui
 bin/cmake
-#bin/sbcl
 bin/dropbear
 bin/dropbear/runit
 #bin/alacritty
