@@ -13,8 +13,3 @@ bin/ecl
 {% block boot_lisp %}
 ecl -norc
 {% endblock %}
-
-{% block extern_symbols %}
-{{super()}}
-{% include 'sbcl' %}
-{% endblock %}

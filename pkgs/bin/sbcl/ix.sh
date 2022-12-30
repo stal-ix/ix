@@ -12,18 +12,9 @@ bld/sbcl
 
 {% block bld_libs %}
 lib/zstd
-lib/c/dl
 {{super()}}
 {% endblock %}
 
 {% block boot_lisp %}
 sbcl
-{% endblock %}
-
-{% block extern_symbols %}
-{% endblock %}
-
-{% block build_flags %}
-{{super()}}
-wrap_cc
 {% endblock %}

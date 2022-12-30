@@ -1,13 +1,17 @@
 {% extends '//die/c/ix.sh' %}
 
 {% block bld_libs %}
+lib/c/dl
 lib/z/dl
 lib/kernel
 {% endblock %}
 
 {% block bld_tool %}
 bld/make
-bld/dlfcn
+{% endblock %}
+
+{% block build_flags %}
+wrap_cc
 {% endblock %}
 
 {% block setup %}
@@ -15,22 +19,12 @@ export CFLAGS="-fcommon ${CFLAGS}"
 {% endblock %}
 
 {% block patch %}
-cat << EOF | sort | uniq | (while read l; do echo "sbcl ${l} ${l}"; done) | dl_stubs > symbols.c
-{% block extern_symbols %}
-{% include 'libc' %}
-{% endblock %}
-EOF
-
 sed -e '5,$d' -i contrib/sb-posix/posix-tests.lisp
 sed -e 's|test:|testxxx:|' -i contrib/asdf-module.mk
 echo 'test:' >> contrib/asdf-module.mk
 {% endblock %}
 
 {% block build %}
-clang -fno-builtin -c symbols.c -o ${tmp}/symbols.o
-
-export LDLIBS="${tmp}/symbols.o"
-
 ulimit -s 60000
 
 sh make.sh sbcl \
