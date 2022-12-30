@@ -12,6 +12,8 @@ bld/sbcl
 
 {% block bld_libs %}
 lib/zstd
+lib/gmp/dl
+lib/mpfr/dl
 {{super()}}
 {% endblock %}
 
