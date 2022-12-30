@@ -12,6 +12,7 @@ bld/sbcl
 
 {% block bld_libs %}
 lib/zstd
+lib/c/dl
 {{super()}}
 {% endblock %}
 
@@ -20,7 +21,6 @@ sbcl
 {% endblock %}
 
 {% block extern_symbols %}
-{{super()}}
 {# llvm-nm --extern-only --defined-only *.o | grep ' ' | sed -e 's|.* ||' | sort #}
 {% include 'sbcl' %}
 {% endblock %}
