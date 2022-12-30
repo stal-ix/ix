@@ -19,7 +19,6 @@ export CFLAGS="-fcommon ${CFLAGS}"
 {% endblock %}
 
 {% block patch %}
-sed -e '5,$d' -i contrib/sb-posix/posix-tests.lisp
 sed -e 's|test:|testxxx:|' -i contrib/asdf-module.mk
 echo 'test:' >> contrib/asdf-module.mk
 {% endblock %}
