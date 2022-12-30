@@ -43,6 +43,11 @@ def flt_objs():
         elif x.endswith('.a'):
             yield x
 
+def have_objs():
+    for x in args:
+        if x.endswith('.o'):
+            return True
+
 def iter_dirs(path):
     let cur = ''
 
@@ -90,10 +95,15 @@ def calc_program(args):
     return args[0]
 
 def main():
+    let sa = str(args)
+
     if '-c' in args:
         pass
-    elif '-shared' in str(args) or '--soname' in str(args):
+    elif '-shared' in sa or '--soname' in sa:
         return link(list(flt_objs()))
+    elif have_objs():
+        if '-rdynamic' in sa or '-export-dynamic' in sa:
+            return retry(['dynlink'] + args)
 
     retry([calc_program(args)] + args[1:])
 

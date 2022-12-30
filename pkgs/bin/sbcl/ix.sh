@@ -21,6 +21,9 @@ sbcl
 {% endblock %}
 
 {% block extern_symbols %}
-{# llvm-nm --extern-only --defined-only *.o | grep ' ' | sed -e 's|.* ||' | sort #}
-{% include 'sbcl' %}
+{% endblock %}
+
+{% block build_flags %}
+{{super()}}
+wrap_cc
 {% endblock %}
