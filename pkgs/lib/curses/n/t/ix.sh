@@ -1,8 +1,8 @@
 {% extends '//die/c/autohell.sh' %}
 
 {% block fetch %}
-https://ftp.gnu.org/pub/gnu/ncurses/ncurses-6.3.tar.gz
-sha:97fc51ac2b085d4cde31ef4d2c3122c21abc217e9090a43a30fc5ec21684e059
+https://ftp.gnu.org/pub/gnu/ncurses/ncurses-6.4.tar.gz
+sha:6931283d9ac87c5073f30b6290c4c75f21632bb4fc3603ac8100812bed248159
 {% endblock %}
 
 {% block bld_tool %}
