@@ -17,3 +17,7 @@ lib/c
 {{super()}}
 sed -e 's|Version:.*|Version: 1.3.1|' -i ${out}/lib/pkgconfig/opus.pc
 {% endblock %}
+
+{% block env %}
+export CPPFLAGS="-I${out}/include/opus \${CPPFLAGS}"
+{% endblock %}
