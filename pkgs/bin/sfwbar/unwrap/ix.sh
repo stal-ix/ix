@@ -7,6 +7,7 @@ sha:ad4e2599c34703298871511e013b183d2c9b6f3c42e75d8a7514fae162ba07b3
 
 {% block bld_libs %}
 lib/c
+lib/glib
 lib/gtk/3
 lib/json/c
 lib/gtk/layer/shell

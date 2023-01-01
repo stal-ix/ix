@@ -39,3 +39,8 @@ sed -e 's|.*fast && result_.*||' \
 
 {{super()}}
 {% endblock %}
+
+{% block env %}
+{{super()}}
+export CPPFLAGS="-I${out}/include/gio-unix-2.0 \${CPPFLAGS}"
+{% endblock %}
