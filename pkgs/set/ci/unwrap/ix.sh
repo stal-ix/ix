@@ -621,7 +621,7 @@ bin/shadowsocks/libev
 #bin/task
 bin/assemble
 bin/duf
-#bin/lf
+bin/lf
 bin/lazygit
 bin/chroma
 bin/v
