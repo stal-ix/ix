@@ -618,7 +618,7 @@ bin/getent
 #bin/shadowsocks/go/2
 bin/shadowsocks/libev
 #bin/pprof
-#bin/task
+bin/task
 bin/assemble
 bin/duf
 bin/lf
