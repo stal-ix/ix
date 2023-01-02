@@ -609,7 +609,7 @@ bin/termshark
 #bin/wtf
 bin/elvish
 #bin/avizo
-#bin/gh
+bin/gh
 bin/curlie
 bin/autologin
 bin/autologin/runit
