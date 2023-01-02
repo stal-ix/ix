@@ -615,7 +615,7 @@ bin/autologin
 bin/autologin/runit
 bin/getent
 #bin/gopass
-#bin/shadowsocks/go/2
+bin/shadowsocks/go/2
 bin/shadowsocks/libev
 #bin/pprof
 bin/task
