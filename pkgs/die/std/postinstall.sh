@@ -66,15 +66,6 @@ find ${out}/ -type f | grep '\.pc$' | while read l; do
 {% endif %}
     fi
 done
-
-{% if 0 %}
-find ${out}/ -type f -name '*.pc' | while read l; do
-    echo "apply fixes to ${l}"
-    sed -e 's|.*Requires.*private.*||' \
-        -e 's|.*Libs.*private.*||' \
-        -i "${l}"
-done
-{% endif %}
 {% endblock %}
 
 {% block purge_dynlib %}
