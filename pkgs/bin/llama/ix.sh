@@ -1,15 +1,15 @@
 {% extends '//die/go/pure.sh' %}
 
 {% block go_url %}
-https://github.com/antonmedv/llama/archive/refs/tags/v1.2.0.tar.gz
+https://github.com/antonmedv/llama/archive/refs/tags/v1.4.0.tar.gz
 {% endblock %}
 
 {% block go_sum %}
-sha:cf6fe219f2554c90aadbe4d0ebb961b53fe3296873addab1a3af941646e19ca2
+sha:301f5dff2b8f27595a08a12626125d28313b5a92e97ccdaf4d0cb89111ebab9a
 {% endblock %}
 
 {% block go_sha %}
-sha:75608e519ec0cbacf6ed338e0a63fd7e1bac2f99287a71638ee51d4a11356399
+sha:f0011b346cee13c231a76bc8ee6baef41b3cbd43f0ddc0780b50041ac4e1d4cf
 {% endblock %}
 
 {% block install %}
