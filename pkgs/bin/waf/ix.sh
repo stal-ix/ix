@@ -1,8 +1,8 @@
 {% extends '//die/c/ix.sh' %}
 
 {% block fetch %}
-https://waf.io/waf-2.0.24.tar.bz2
-sha:6b78a3594540b232a154f64c4eb7e21f28e4e073c7e1605e4b9977519a6cb89e
+https://waf.io/waf-2.0.25.tar.bz2
+sha:66cff7beed0e77db874e9232cc08874abb3e866c7f0f1f34ba2f959fde44fdd4
 {% endblock %}
 
 {% block bld_tool %}
