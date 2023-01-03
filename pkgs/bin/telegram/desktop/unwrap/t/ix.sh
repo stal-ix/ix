@@ -85,18 +85,6 @@ done
 
 sed -e 's|Q_OS_LINUX|SHIT|' -i Telegram/lib_base/base/platform/linux/base_info_linux.cpp
 
-cat - Telegram/SourceFiles/core/local_url_handlers.cpp << EOF > _
-#include <Telegram/lib_ui/ui/widgets/scroll_area.h>
-EOF
-
-mv _ Telegram/SourceFiles/core/local_url_handlers.cpp
-
-cat - Telegram/SourceFiles/settings/settings_main.cpp << EOF > _
-#include <Telegram/lib_ui/ui/widgets/scroll_area.h>
-EOF
-
-mv _ Telegram/SourceFiles/settings/settings_main.cpp
-
 sed -e 's|webrtc::InitPipewireStubs()|true|' \
     -i Telegram/lib_webrtc/webrtc/webrtc_media_devices.cpp
 
@@ -104,6 +92,7 @@ sed -e 's|webrtc::InitPipewireStubs()|true|' \
 
 cat << EOF >> Telegram/SourceFiles/stdafx.h
 #if defined(__cplusplus)
+#include "Telegram/lib_ui/ui/widgets/scroll_area.h"
 #include "Telegram/ThirdParty/libtgvoip/webrtc_dsp/rtc_base/scoped_ref_ptr.h"
 #endif
 EOF
