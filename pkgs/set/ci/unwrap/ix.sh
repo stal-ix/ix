@@ -461,7 +461,7 @@ bin/lsof
 #bin/telegram/desktop
 bin/telegram
 bin/qemu
-bin/hyprland
+bin/hypr
 bin/schedtool
 bin/cpulimit
 bin/opj
