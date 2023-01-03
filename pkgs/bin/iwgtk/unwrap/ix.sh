@@ -1,14 +1,14 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://github.com/J-Lentz/iwgtk/archive/refs/tags/v0.8.tar.gz
-sha:38e81e67004bbd246b6551ffc812b6ab019f84a7329f134bb8031eb61d9d732c
+https://github.com/J-Lentz/iwgtk/archive/refs/tags/v0.9.tar.gz
+sha:84a82dc730fe536034a65d148840e975c1353f4114db527439170ff410583d31
 {% endblock %}
 
 {% block bld_libs %}
 lib/c
+lib/gtk
 lib/glib
-lib/gtk/4
 lib/qrencode
 lib/gdk/pixbuf/svg
 {% endblock %}
