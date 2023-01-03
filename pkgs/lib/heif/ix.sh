@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/strukturag/libheif/archive/refs/tags/v1.14.0.tar.gz
-sha:9901cb0743caa80c316fabcf785c39466f41dda5c42152f2b7992be43db8d047
+https://github.com/strukturag/libheif/archive/refs/tags/v1.14.1.tar.gz
+sha:243e90d50fe596d413a0c522f045e463c2cac21a8a732c5cc0f9632ec6aee694
 {% endblock %}
 
 {% block lib_deps %}
@@ -11,4 +11,11 @@ lib/aom
 lib/x265
 lib/de265
 lib/dav1d
+lib/svt/av1
+{% endblock %}
+
+{% block cmake_flags %}
+ENABLE_PLUGIN_LOADING=OFF
+WITH_RAV1E_PLUGIN=OFF
+WITH_SvtEnc_PLUGIN=OFF
 {% endblock %}
