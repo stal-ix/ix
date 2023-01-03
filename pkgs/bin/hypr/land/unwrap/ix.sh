@@ -27,7 +27,7 @@ lib/mesa/glesv2/dl
 bld/python
 bld/fakegit
 bld/wayland
-bin/hyprland/protocols
+bin/hypr/land/protocols
 {% endblock %}
 
 {% block patch %}
