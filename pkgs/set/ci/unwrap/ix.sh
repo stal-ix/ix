@@ -588,7 +588,7 @@ bin/mbedtls/3
 bin/shepherd
 bin/got
 bin/tldr/c
-#bin/tldr/go
+bin/tldr/go
 bin/tldr
 bin/interception/tools
 bin/pstree
