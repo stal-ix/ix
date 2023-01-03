@@ -102,6 +102,12 @@ sed -e 's|webrtc::InitPipewireStubs()|true|' \
 
 >Telegram/lib_ui/ui/text/qtextitemint.cpp
 
+cat << EOF >> Telegram/SourceFiles/stdafx.h
+#if defined(__cplusplus)
+#include "Telegram/ThirdParty/libtgvoip/webrtc_dsp/rtc_base/scoped_ref_ptr.h"
+#endif
+EOF
+
 sed -e 's|.*DESKTOP_APP_USE_PACKAGED.*||' \
     -e 's|.*Xcb.*||' \
     -e 's|.*Gtk3Theme.*||' \

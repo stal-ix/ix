@@ -24,3 +24,7 @@ EOF
 {% block setup %}
 export CXXFLAGS="-std=c++20 ${CXXFLAGS}"
 {% endblock %}
+
+{% block cmake_flags %}
+CMAKE_CXX_STANDARD=20
+{% endblock %}

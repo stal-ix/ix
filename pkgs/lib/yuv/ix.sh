@@ -1,8 +1,10 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://chromium.googlesource.com/libyuv/libyuv/+archive/51c6d12e7deeb790dc8a85d1c50a942caffa516c.tar.gz
-sem:34fbfefe6ecc99820be220959aad8c43a502c5cb80fb65c5cc617b07c2040620
+#https://chromium.googlesource.com/libyuv/libyuv/+archive/51c6d12e7deeb790dc8a85d1c50a942caffa516c.tar.gz
+#sem:34fbfefe6ecc99820be220959aad8c43a502c5cb80fb65c5cc617b07c2040620
+https://chromium.googlesource.com/libyuv/libyuv/+archive/3abd6f36b6e4f5a2e0ce236580a8bc1da3c7cf7e.tar.gz
+sem:fa5405342008d2a37a252ee5e063c9f87729d9f3b3aae42ff0e2c0cba64837a1
 {% endblock %}
 
 {% block lib_deps %}
