@@ -1,8 +1,8 @@
 {% extends '//lib/gtk/t/ix.sh' %}
 
 {% block fetch %}
-https://download.gnome.org/sources/gtk+/3.24/gtk%2B-3.24.35.tar.xz
-sha:ec10fe6d712ef0b3c63b5f932639c9d1ae99fce94f500f6f06965629fef60bd1
+https://download.gnome.org/sources/gtk+/3.24/gtk%2B-3.24.36.tar.xz
+sha:27a6ef157743350c807ffea59baa1d70226dbede82a5e953ffd58ea6059fe691
 {% endblock %}
 
 {% block lib_deps %}
@@ -25,9 +25,6 @@ builtin_immodules=yes
 {{super()}}
 patch -p1 << EOF
 {% include '0.diff' %}
-EOF
-cat << EOF > gdk/wayland/cursor/meson.build
-{% include 'meson.build' %}
 EOF
 {% endblock %}
 
