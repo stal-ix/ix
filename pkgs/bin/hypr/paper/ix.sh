@@ -15,11 +15,6 @@ mkdir ${out}/bin
 cp ${tmp}/obj/hyprpaper ${out}/bin/
 {% endblock %}
 
-{% block build_flags %}
-{{super()}}
-shut_up
-{% endblock %}
-
 {% block patch %}
 {{super()}}
 replace 'auto it' '[&](const std::uniqu' '[wt = wt, &m](const std::uniqu' src/Hyprpaper.cpp
