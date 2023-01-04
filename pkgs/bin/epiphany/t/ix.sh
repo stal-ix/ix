@@ -13,7 +13,6 @@ lib/soup/3
 lib/nettle
 lib/secret
 lib/archive
-lib/gtk/reg
 lib/sqlite/3
 lib/gtk/deps
 lib/json/glib
