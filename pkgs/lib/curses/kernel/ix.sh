@@ -1,4 +1,4 @@
-{% extends '//lib/curses/n/ix.sh' %}
+{% extends '//lib/ncurses/ix.sh' %}
 
 {% block c_rename_symbol %}
 {{super()}}

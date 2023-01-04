@@ -1,4 +1,4 @@
-{% extends '//lib/curses/n/t/ix.sh' %}
+{% extends '//lib/ncurses/t/ix.sh' %}
 
 {% block env %}
 export TERMINFO="${out}/share/terminfo"
