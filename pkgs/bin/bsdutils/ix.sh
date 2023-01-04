@@ -1,5 +1,5 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
-bin/bsdutils/unwrap(openssl=1)
+bin/bsdutils/box(curses=netbsd)
 {% endblock %}
