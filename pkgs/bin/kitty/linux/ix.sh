@@ -12,8 +12,8 @@ lib/fontconfig
 {% endblock %}
 
 {% block bld_tool %}
+bin/tic
 bld/wayland
-lib/curses/n
 {{super()}}
 {% endblock %}
 

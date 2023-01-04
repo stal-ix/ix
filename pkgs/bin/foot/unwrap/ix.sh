@@ -20,8 +20,8 @@ lib/{{allocator}}/trim(delay=3,bytes=1000000)
 {% endblock %}
 
 {% block bld_tool %}
+bin/tic
 bin/scdoc
-lib/curses/n
 bld/wayland
 {% endblock %}
 
