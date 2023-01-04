@@ -23,6 +23,6 @@ cd ${out}/lib
 ln -s libpdcurses.a libcurses.a
 {% endblock %}
 
-{% block env_lib %}
+{% block env %}
 export CPPFLAGS="-I${out}/include/xcurses \${CPPFLAGS}"
 {% endblock %}
