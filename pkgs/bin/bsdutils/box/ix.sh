@@ -13,7 +13,7 @@ for d in $(ls -A); do (
     echo "${d}" >> progs
     cd ${d}
     llvm-ar q libfunc.a $(find . -type f -name '*.o')
-    patchns libfunc.a "${d}_"
+    patchns libfunc.a "ns_${d}_"
 ) done
 
 cat << EOF > main.c
@@ -25,7 +25,7 @@ cat << EOF > main.c
 EOF
 
 cat progs | while read l; do
-    echo "int ${l}_main(int, char**, char**);"
+    echo "int ns_${l}_main(int, char**, char**);"
 done >> main.c
 
 cat << EOF >> main.c
@@ -44,7 +44,7 @@ int main(int argc, char** argv, char** envp) {
 EOF
 
 cat progs | while read l; do
-    echo "if (strcmp(hndl, \"${l}\") == 0) {return ${l}_main(argc, argv, envp);}"
+    echo "if (strcmp(hndl, \"${l}\") == 0) {return ns_${l}_main(argc, argv, envp);}"
 done >> main.c
 
 cat << EOF >> main.c
