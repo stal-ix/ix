@@ -1,7 +1,7 @@
 {% extends '//die/c/qt.sh' %}
 
 {% block fetch %}
-https://github.com/qt/qttools/archive/refs/tags/v6.4.1.tar.gz
+https://github.com/qt/qttools/archive/refs/tags/v6.4.2.tar.gz
 sha:81b705e6fd4bee56f40fe9f4bc1621bbe0dc590cfdc07380e29064a146cdeb34
 {% endblock %}
 
