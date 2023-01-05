@@ -12,6 +12,7 @@ B = '/bin/bin_ix'
 
 def run_cmd(cmd, input=''):
     cmd = [
+        '/bin/flock', '-x', '/ix',
         '/bin/chrt', '-i', '0',
         '/bin/nice', '-n', '20',
         '/bin/su', '-s', cmd[0], 'ix'
