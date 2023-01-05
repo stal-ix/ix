@@ -30,7 +30,13 @@ done >> main.c
 
 cat << EOF >> main.c
 int main(int argc, char** argv, char** envp) {
-    char* hndl = basename(argv[0]);
+    char* hndl = argv[0];
+
+    if (!hndl) {
+        exit(1);
+    }
+
+    hndl = basename(hndl);
 
     if (!hndl) {
         exit(1);
