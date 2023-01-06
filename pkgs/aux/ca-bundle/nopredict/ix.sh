@@ -25,6 +25,7 @@ perl lib/mk-ca-bundle.pl -n -k - > ca-bundle.crt
 {% block install %}
 mkdir -p ${out}/share/ssl
 cat ca-bundle.crt | grep -v '\##' > ${out}/share/ssl/cert.pem
+sha256sum ${out}/share/ssl/cert.pem
 {% endblock %}
 
 {% block env %}
