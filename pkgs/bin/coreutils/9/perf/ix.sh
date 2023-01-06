@@ -6,7 +6,7 @@ bin/grep
 bin/file
 bin/patch
 bin/gawk
-bin/bsdutils/lite
+bin/bsdutils
 {% endblock %}
 
 {% block configure %}
