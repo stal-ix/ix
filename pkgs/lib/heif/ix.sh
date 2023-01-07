@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/strukturag/libheif/archive/refs/tags/v1.14.1.tar.gz
-sha:243e90d50fe596d413a0c522f045e463c2cac21a8a732c5cc0f9632ec6aee694
+https://github.com/strukturag/libheif/archive/refs/tags/v1.14.2.tar.gz
+sha:e9c88e75e3b7fad9df32e42d28646752de2679df57efddfb3f63cd25110ce9d9
 {% endblock %}
 
 {% block lib_deps %}
