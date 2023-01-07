@@ -1,8 +1,8 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://gitlab.gnome.org/GNOME/libadwaita/-/archive/1.2.0/libadwaita-1.2.0.tar.bz2
-sha:9da0df3d2f2f5c0a79becd47d09312124542545e4aa1ea151b993c5f6b939e78
+https://gitlab.gnome.org/GNOME/libadwaita/-/archive/1.2.1/libadwaita-1.2.1.tar.bz2
+sha:ee7fa58d0b8dffe36bb477bf72a84d065cb530b070c8197ea9004740552fe655
 {% endblock %}
 
 {% block lib_deps %}
@@ -13,8 +13,8 @@ lib/fribidi
 {% endblock %}
 
 {% block bld_tool %}
-bin/sassc
 bld/glib
+bin/sassc
 {% endblock %}
 
 {% block meson_flags %}
