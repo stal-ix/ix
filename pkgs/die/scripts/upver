@@ -106,6 +106,12 @@ for x in json.loads(fetch().decode()):
     if ':' in p:
         continue
 
+    if 'homeassistant' in p:
+        continue
+
+    if 'home-assistant' in p:
+        continue
+
     v = ' '.join(x['versions'])
 
     if exact_m(p) or fuzzy_m(p + v):
