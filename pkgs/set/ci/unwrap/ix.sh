@@ -456,8 +456,6 @@ bin/lsof
 #bin/telegram/web/z
 #bin/telegram/web/old
 #bin/telegram/web/k
-#bin/telegram/desktop/extra
-#bin/telegram/desktop
 bin/telegram
 bin/qemu
 bin/hypr
@@ -616,7 +614,7 @@ bin/getent
 bin/gopass
 bin/shadowsocks/go/2
 bin/shadowsocks/libev
-#bin/pprof
+bin/pprof
 bin/task
 bin/assemble
 bin/duf
