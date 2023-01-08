@@ -206,8 +206,6 @@ bin/mdevd
 bin/base64
 bin/turbo
 bin/dhclient
-#bin/busybox/syslogd
-#bin/busybox/ntpd
 bin/busybox
 bin/swig/4
 bin/epiphany
@@ -471,7 +469,7 @@ bin/mpg123
 bin/lame
 bin/sox
 #bin/vlc
-#bin/mplayer
+bin/mplayer
 bin/q/jackctl
 bin/q/imgv
 bin/q/bittorrent
