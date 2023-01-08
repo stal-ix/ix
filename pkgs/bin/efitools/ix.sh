@@ -13,6 +13,7 @@ bin/binutils(for_target={{target.gnu.three}})
 
 {% block bld_libs %}
 lib/c
+lib/openssl
 lib/gnu/efi
 {% endblock %}
 
@@ -25,4 +26,20 @@ BINDIR=${out}/bin
 DOCDIR=${out}/doc
 MANDIR=${out}/doc/man1
 EFIDIR=${out}/share/efi
+LOADLIBES=
+LDSCRIPT=script
+{% endblock %}
+
+{% block build %}
+>DB.crt
+>PK.crt
+>KEK.crt
+>DB1.crt
+>DB2.crt
+>script
+{{super()}}
+{% endblock %}
+
+{% block build_flags %}
+shut_up
 {% endblock %}
