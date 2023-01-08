@@ -84,7 +84,7 @@ bin/mingetty/runit
 bin/mingetty
 bin/git
 bin/git/2
-#bin/git/go
+bin/git/go
 bin/kernel/6/0
 bin/kernel/6/1
 bin/meson/60
