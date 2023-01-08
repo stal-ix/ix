@@ -11,11 +11,11 @@ lib/gtk
 lib/ical
 lib/xml/2
 lib/gmime
-lib/gpgme
 lib/gspell
 lib/gnutls
 lib/secret
 lib/notify
+lib/gpg/me
 lib/fribidi
 lib/enchant
 lib/sqlite/3

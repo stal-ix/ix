@@ -12,8 +12,8 @@ lib/aio
 lib/cap
 lib/tirpc
 lib/uring
-lib/gpgme
 lib/gnutls
+lib/gpg/me
 lib/jansson
 lib/readline
 lib/ucontext

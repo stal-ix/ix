@@ -12,8 +12,8 @@ lib/c
 lib/glib
 lib/etpan
 lib/gtk/3
-lib/gpgme
 lib/gnutls
+lib/gpg/me
 lib/enchant
 lib/dbus/glib
 {% endblock %}
