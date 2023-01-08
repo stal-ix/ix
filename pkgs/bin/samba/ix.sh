@@ -10,11 +10,14 @@ lib/c
 lib/z
 lib/aio
 lib/cap
+lib/acl
 lib/tirpc
 lib/uring
+lib/unwind
 lib/gnutls
 lib/gpg/me
 lib/jansson
+lib/archive
 lib/readline
 lib/ucontext
 lib/ini/parser
@@ -31,16 +34,19 @@ sed -e 's|/tmp/|/var/tmp/|g' -i lib/replace/wscript
 export PYTHONHASHSEED=1
 {% endblock %}
 
-{# need strange perl module #}
-
 {% block bld_tool %}
 bld/perl
 bld/flex
 bld/bison
+bld/perl/yapp
 {% endblock %}
 
 {% block waf_flags %}
+--without-pam
+--without-ads
+--without-ldap
 --disable-python
 --without-ad-dc
 --disable-fault-handling
+--without-libarchive
 {% endblock %}
