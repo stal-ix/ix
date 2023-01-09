@@ -3,6 +3,7 @@
 {% block run_deps %}
 bin/dinit
 bin/sbcl
+bin/i2pd
 bin/lite/xl
 bin/gparted
 bin/havaged
