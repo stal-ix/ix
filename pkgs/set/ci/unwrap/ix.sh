@@ -1,6 +1,7 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
+set/system/0
 bin/dinit
 bin/sbcl
 bin/i2pd
