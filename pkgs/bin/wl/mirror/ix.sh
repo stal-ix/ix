@@ -24,7 +24,7 @@ bld/wayland
 {% endblock %}
 
 {% block cmake_flags %}
-WL_PROTOCOL_DIR=${bin_wayland_protocols}/share/wayland-protocols
+WL_PROTOCOL_DIR=${WL_PROTOCOL_DIR}
 FORCE_SYSTEM_WL_PROTOCOLS=ON
 WLR_PROTOCOL_DIR=${PWD}/proto/wlr-protocols
 FORCE_SYSTEM_WLR_PROTOCOLS=ON

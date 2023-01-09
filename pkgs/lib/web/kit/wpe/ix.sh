@@ -51,8 +51,8 @@ ENABLE_ACCESSIBILITY=OFF
 {% block setup %}
 {{super()}}
 mkdir -p inc/EGL
-cp ${lib_mesa}/include/EGL/eglplatform.h inc/EGL/
-cp -R ${lib_mesa}/include/KHR inc/
+cp ${MESA_HEADERS}/EGL/eglplatform.h inc/EGL/
+cp -R ${MESA_HEADERS}/KHR inc/
 export CPPFLAGS="-I${PWD}/inc ${CPPFLAGS}"
 {% endblock %}
 

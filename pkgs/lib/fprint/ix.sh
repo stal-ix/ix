@@ -35,6 +35,6 @@ sed -e 's|.*extern.*stderr.*||' -i libfprint/nbis/include/bozorth.h
 {% endblock %}
 
 {% block setup %}
-export CPPFLAGS="-I${lib_nss}/include/nss ${CPPFLAGS}"
+export CPPFLAGS="-I${NSS_HEADERS} ${CPPFLAGS}"
 export CONLYFLAGS="-std=c11 ${CONLYFLAGS}"
 {% endblock %}

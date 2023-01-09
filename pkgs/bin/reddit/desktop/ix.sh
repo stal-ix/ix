@@ -33,12 +33,11 @@ lib/range/v3/std
 {% endblock %}
 
 {% block setup %}
-export CPPFLAGS="-I${lib_freetype_hb}/include/freetype2 ${CPPFLAGS}"
 export CXXFLAGS="-include algorithm -include ranges ${CXXFLAGS}"
 {% endblock %}
 
 {% block cmake_flags %}
-OPENGL_opengl_LIBRARY=${lib_mesa}/lib/libGLESv2.a
+OPENGL_opengl_LIBRARY=
 ENABLE_TESTS=OFF
 {% endblock %}
 

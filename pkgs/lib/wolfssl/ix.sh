@@ -21,6 +21,7 @@ sha:b7ee150e49def77c765bc02aac92ddeb0bebefd4cb12aa263d8f95e405221fb8
 
 {% block env %}
 export COFLAGS="--with-wolfssl=${out} \${COFLAGS}"
+export WOLFSSL_HEADERS=${out}/include/wolfssl
 {% endblock %}
 
 {% block lib_deps %}

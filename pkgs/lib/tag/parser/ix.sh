@@ -18,5 +18,5 @@ aux/iso-codes
 {% endblock %}
 
 {% block patch %}
-sed -e "s|/usr|${aux_iso_codes}|" -i cmake/scripts/generate_iso_language_codes.cmake
+sed -e "s|/usr|${ISO_CODES}|" -i cmake/scripts/generate_iso_language_codes.cmake
 {% endblock %}

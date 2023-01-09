@@ -4,6 +4,6 @@
 lib/bsd
 {% endblock %}
 
-{% block env_lib %}
-export CPPFLAGS="-I${lib_bsd}/include/bsd -DLIBBSD_OVERLAY=1 \${CPPFLAGS}"
+{% block env %}
+export CPPFLAGS="-I${BSD_HEADERS} -DLIBBSD_OVERLAY=1 \${CPPFLAGS}"
 {% endblock %}

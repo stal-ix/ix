@@ -16,8 +16,8 @@ lib/vulkan/loader
 {% endblock %}
 
 {% block bld_tool %}
-bld/pkg/config
 bld/wayland
+bld/pkg/config
 {% endblock %}
 
 {% block cmake_flags %}
@@ -70,4 +70,8 @@ done
 {{super()}}
 cd ${out}
 mv lib/bin bin # or broke scummvm configure
+{% endblock %}
+
+{% block env %}
+export SDL2_HEADERS=${out}/include/SDL2
 {% endblock %}

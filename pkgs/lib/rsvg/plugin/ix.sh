@@ -23,7 +23,6 @@ cc -c -o plugin.o \
    -DGDK_PIXBUF_ENABLE_BACKEND \
    -DG_LOG_DOMAIN=\"libpixbufloader-svg\" \
    -iquote . \
-   -I${lib_rsvg}/include/librsvg-2.0/librsvg \
    $(pkg-config --cflags librsvg-2.0) \
    gdk-pixbuf-loader/io-svg.c
 

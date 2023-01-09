@@ -19,7 +19,7 @@ bin/gcc(for_target={{target.gnu.three}})
 {% endblock %}
 
 {% block kconfig_flags %}
-KERNEL_HEADERS="${lib_linux}/include"
+KERNEL_HEADERS="${KERNEL_HEADERS}"
 RUNTIME_PREFIX="/"
 DEVEL_PREFIX="/"
 {% include 'cfg' %}

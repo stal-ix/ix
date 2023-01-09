@@ -8,3 +8,8 @@ lib/md
 {% block bld_libs %}
 lib/kernel
 {% endblock %}
+
+{% block env %}
+{{super()}}
+export BSD_HEADERS=${out}/include/bsd
+{% endblock %}

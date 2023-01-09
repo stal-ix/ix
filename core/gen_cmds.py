@@ -116,8 +116,6 @@ class CmdBuild:
             else:
                 h_bin.append(p)
 
-            yield p.uniq_id, p.out_dir
-
         yield 'IX_B_DIR', rev_dirs(h_bin)
         yield 'IX_H_DIR', rev_dirs(h_lib)
         yield 'IX_T_DIR', rev_dirs(t_lib)

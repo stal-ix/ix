@@ -23,11 +23,11 @@ lib/harfbuzz
 
 {% block bld_tool %}
 bld/make
-bld/python
-bld/pkg/config
 bld/dlfcn
 bld/pyinit
+bld/python
 bld/librarian
+bld/pkg/config
 {% endblock %}
 
 {% block build_flags %}
@@ -36,7 +36,7 @@ shut_up
 {% endblock %}
 
 {% block setup %}
-export PYTHONHOME="${lib_python_3_10}"
+export PYTHONHOME="${TARGET_PYTHONHOME}"
 export PYTHONPLATLIBDIR="${PYTHONHOME}/lib"
 {% endblock %}
 

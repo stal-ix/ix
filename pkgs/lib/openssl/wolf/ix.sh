@@ -7,5 +7,5 @@ lib/openssl/fake
 {% endblock %}
 
 {% block install %}
-cp -R ${lib_wolfssl}/include/wolfssl ${out}/include
+cp -R ${WOLFSSL_HEADERS} ${out}/include
 {% endblock %}

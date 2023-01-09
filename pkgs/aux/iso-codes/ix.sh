@@ -12,3 +12,7 @@ bld/python
 {% block strip_pc %}
 :
 {% endblock %}
+
+{% block env %}
+export ISO_CODES=${out}
+{% endblock %}

@@ -24,7 +24,7 @@ make config.h
 {% endblock %}
 
 {% block cpp_includes %}
-${lib_sdl_2}/include/SDL2
+${SDL2_HEADERS}
 {% endblock %}
 
 {% block patch %}

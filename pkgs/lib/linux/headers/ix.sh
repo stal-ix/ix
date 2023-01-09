@@ -31,6 +31,7 @@ rm usr/include/Makefile
 cp -rv usr/include ${out}/
 {% endblock %}
 
-{% block env_lib %}
+{% block env %}
+export KERNEL_HEADERS=${out}/include
 export CPPFLAGS="-isystem ${out}/include \${CPPFLAGS}"
 {% endblock %}
