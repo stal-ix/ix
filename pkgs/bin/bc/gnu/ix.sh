@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://ftp.gnu.org/gnu/bc/bc-1.07.tar.gz
-sha:55cf1fc33a728d7c3d386cc7b0cb556eb5bacf8e0cb5a3fcca7f109fc61205ad
+https://ftp.gnu.org/gnu/bc/bc-1.07.1.tar.gz
+sha:62adfca89b0a1c0164c2cdca59ca210c1d44c3ffc46daf9931cf4942664cb02a
 {% endblock %}
 
 {% block bld_libs %}
