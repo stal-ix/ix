@@ -1,8 +1,10 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block version %}1.0.13{% endblock %}
+
 {% block fetch %}
-https://github.com/strawberrymusicplayer/strawberry/archive/refs/tags/1.0.10.tar.gz
-sha:66827d5ea19e17347e275667cf35566d94c0c502008e1ef8e0a0cc3724c798e1
+https://github.com/strawberrymusicplayer/strawberry/archive/refs/tags/{{self.version()}}.tar.gz
+sha:95a3765a98e75cccb4fd04660be0ecd2965d8ad731e5dacc115687c22cec58cb
 {% endblock %}
 
 {% block bld_libs %}
@@ -31,6 +33,6 @@ bld/glib
 
 {% block patch %}
 find . -type f -name '*.cpp' | while read l; do
-    sed -e 's|STRAWBERRY_VERSION_DISPLAY|"1.0.10"|g' -i ${l}
+    sed -e 's|STRAWBERRY_VERSION_DISPLAY|"{{self.version()}}"|g' -i ${l}
 done
 {% endblock %}
