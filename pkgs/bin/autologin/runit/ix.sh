@@ -7,9 +7,8 @@ cat << EOF > daemon
 #!/bin/sh
 export USER=root
 export HOME=/home/root
-export PATH=/ix/realm/root/bin:/bin
 fixtty /dev/tty{{slot}}
-exec subreaper openvt -c {{slot}} -w /bin/sh
+exec subreaper openvt -c {{slot}} -w /bin/sh -l
 EOF
 
 cat << EOF > run

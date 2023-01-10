@@ -36,7 +36,7 @@ EOF
 
 echo '00000000000000001111111111111111' > machine-id
 
-cat << EOF > session
+cat << EOF > profile
 unset LANG
 
 export PATH="/ix/realm/\${USER}/bin:/bin"
@@ -50,6 +50,8 @@ mkdir -m 0700 -p \${XDG_RUNTIME_DIR}
 
 cd \${HOME}
 EOF
+
+ln -s profile session
 
 ln -s /proc/self/mounts mtab
 {% endblock %}
