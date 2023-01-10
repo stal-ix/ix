@@ -1,25 +1,8 @@
-{% extends '//die/c/autorehell.sh' %}
+{% extends 'stock/ix.sh' %}
 
-{% block fetch %}
-https://github.com/mkj/dropbear/archive/refs/tags/DROPBEAR_2022.83.tar.gz
-sha:e02c5c36eb53bfcd3f417c6e40703a50ec790a1a772269ea156a2ccef14998d2
-{% endblock %}
-
-{% block bld_libs %}
-lib/c
-lib/z
-lib/tom/math
-lib/tom/crypt
-{% endblock %}
-
-{% block enable_static %}
-{% endblock %}
-
-{% block configure_flags %}
---disable-bundled-libtom
-{% endblock %}
+{# TODO(pg) - discuss with upstream #}
 
 {% block patch %}
-rm -r libtommath
-rm -r libtomcrypt
+{{super()}}
+sed -e 's|"-c"|"-cl"|' -i dbutil.c
 {% endblock %}

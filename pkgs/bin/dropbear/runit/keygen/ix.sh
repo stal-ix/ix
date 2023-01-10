@@ -1,4 +1,4 @@
-{% extends '//bin/dropbear/ix.sh' %}
+{% extends '//bin/dropbear/stock/ix.sh' %}
 
 {% block patch %}
 {{super()}}
