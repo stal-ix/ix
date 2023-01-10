@@ -1,6 +1,5 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
-etc/core
-etc/user/ix
+etc/user(userid=100,user=nobody,hash=x)
 {% endblock %}
