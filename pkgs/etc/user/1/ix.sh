@@ -1,3 +1,5 @@
-{% extends '//etc/user/t/ix.sh' %}
+{% extends '//die/hub.sh' %}
 
-{% block user_id %}10001{% endblock %}
+{% block run_deps %}
+etc/user(userid=10001)
+{% endblock %}

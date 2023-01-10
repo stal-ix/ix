@@ -10,7 +10,7 @@ cd ${out}
 mkdir -p etc/passwd.d
 
 cat << EOF > etc/passwd.d/{{user or error()}}
-{{user}}:{{hash or error()}}:{{self.user_id()}}:{{self.user_id()}}:none:/home/{{user}}:{{shell or '/bin/sh'}}
+{{user}}:{{hash or error()}}:{{userid or error()}}:{{userid}}:none:/home/{{user}}:{{shell or '/bin/sh'}}
 EOF
 
 {% if pubkey %}

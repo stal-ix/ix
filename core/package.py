@@ -102,7 +102,7 @@ def parse_kind(n):
 
     return {
         'bld': 'bin',
-        'etc': 'aux',
+        'etc': 'bin',
     }.get(v, v)
 
 
