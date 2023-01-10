@@ -1,6 +1,7 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
+bin/zutils
 set/system/0
 bin/dinit
 bin/sbcl
