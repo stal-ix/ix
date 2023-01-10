@@ -1,8 +1,6 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-#https://matt.ucc.asn.au/dropbear/releases/dropbear-2022.82.tar.bz2
-#sha:3a038d2bbc02bf28bbdd20c012091f741a3ec5cbe460691811d714876aad75d1
 https://github.com/mkj/dropbear/archive/refs/tags/DROPBEAR_2022.83.tar.gz
 sha:e02c5c36eb53bfcd3f417c6e40703a50ec790a1a772269ea156a2ccef14998d2
 {% endblock %}
