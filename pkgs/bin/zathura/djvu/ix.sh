@@ -9,7 +9,3 @@ sha:96e6f8a6ee53231073b2f7003264872f84501e63c3da7bf0598d046286b0c200
 {{super()}}
 lib/djvulibre
 {% endblock %}
-
-{% block plugin %}
-djvu
-{% endblock %}

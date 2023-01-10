@@ -77,6 +77,7 @@ class RenderContext:
             'host': pkg.host,
             'tool': pkg.name.startswith('bld/'),
             'name': pkg.name,
+            'basename': os.path.basename(pkg.norm_name),
             'uniq_id': pkg.uniq_id,
             kind: True,
             pkg.flags['target']['os']: True,

@@ -9,7 +9,3 @@ sha:27ff52d4978b2d5c009ae72d62afec8719aa84829bdaea79f3cc5206d335e5fb
 {{super()}}
 lib/archive
 {% endblock %}
-
-{% block plugin %}
-cb
-{% endblock %}

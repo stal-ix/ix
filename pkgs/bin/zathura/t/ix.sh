@@ -21,7 +21,7 @@ plugindir=${out}/mod
 
 {% block install %}
 {{super()}}
-patchns ${out}/mod/*.a {{self.plugin().strip()}}_
+patchns ${out}/mod/*.a {{basename}}_
 rm -r ${out}/share
 {% endblock %}
 

@@ -9,7 +9,3 @@ sha:60663e9aad4b639f86fc4e54614361a653a48dcf257499a98cb050ed19a70af8
 {{super()}}
 lib/mu/pdf
 {% endblock %}
-
-{% block plugin %}
-mupdf
-{% endblock %}
