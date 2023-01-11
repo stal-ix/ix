@@ -1,8 +1,8 @@
 {% extends '//bin/go/4/ix.sh' %}
 
 {% block fetch %}
-https://github.com/golang/go/archive/refs/tags/go1.19.4.tar.gz
-sha:b8f2440f7835eccf93684450268b0cb1bfa5ad3f4724c8ba0c1ae6cd0886f23d
+https://github.com/golang/go/archive/refs/tags/go1.19.5.tar.gz
+sha:1c24a6a2bf71d64d0ca8e228028d6108521f06b6edc7bf6b34ed6d767a795809
 {% endblock %}
 
 {% block bld_libs %}
