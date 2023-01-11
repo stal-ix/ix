@@ -1,10 +1,14 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://github.com/kspalaiologos/bzip3/archive/refs/tags/1.1.4.tar.gz
-sha:73d5462f253a5a8dcc201f05602c0ea6284d99d7285665ae0bd0d41d14f927b4
+https://github.com/kspalaiologos/bzip3/archive/refs/tags/1.2.2.tar.gz
+sha:e7792f3c83f1d9efd0d7b18da2eb6a1f119ffcdeb5515cf441145c2e9b72652e
 {% endblock %}
 
 {% block lib_deps %}
 lib/c
+{% endblock %}
+
+{% block bld_tool %}
+bld/fakegit
 {% endblock %}
