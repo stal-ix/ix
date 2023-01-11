@@ -1,5 +1,5 @@
-{% extends '//lib/xz/t/ix.sh' %}
+{% extends 't/ix.sh' %}
 
-{% block env_lib %}
+{% block env %}
 export COFLAGS="--with-lzma=${out} --with-liblzma-prefix=${out} \${COFLAGS}"
 {% endblock %}
