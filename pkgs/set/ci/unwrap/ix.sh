@@ -201,7 +201,6 @@ bin/gawk
 bin/gawk/lite
 bin/iwd/runit
 bin/iwd
-bin/iwd/sys
 bin/efibootmgr
 bin/ecl
 bin/mrsh
