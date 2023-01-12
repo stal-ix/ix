@@ -55,6 +55,7 @@ https://lore.kernel.org/lkml/CAHk-=whs8QZf3YnifdLv57+FhBi5_WeNTG1B-suOES=RcUSmQg
 https://eli.thegreenplace.net/2013/07/09/library-order-in-static-linking
 https://habr.com/ru/post/451208
 https://lobste.rs/s/adr60v/single_binary_executable_packages
+https://nullprogram.com/blog/2018/05/27/
 
 -- Wayland only
 
