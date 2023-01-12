@@ -5,11 +5,7 @@
 lib/readline
 {% endblock %}
 
-{% block build_flags %}
-compress
-{% endblock %}
-
-{% block install %}
+{% block configure_flags %}
 {{super()}}
-rm ${out}/bin/iwmon
+--disable-daemon
 {% endblock %}

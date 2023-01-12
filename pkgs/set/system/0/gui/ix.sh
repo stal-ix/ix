@@ -12,6 +12,7 @@ bin/iwgtk
 bin/python
 bin/evince
 bin/fuzzel
+bin/iwd/ctl
 bin/swayimg
 bin/telegram
 bin/epiphany
