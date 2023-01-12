@@ -2,7 +2,6 @@
 
 {% block host_libs %}
 lib/c
-lib/curses
 {% endblock %}
 
 {% block configure %}
