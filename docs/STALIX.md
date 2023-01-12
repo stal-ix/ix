@@ -29,6 +29,9 @@ https://github.com/pg83/ix/blob/main/pkgs/bin/sched/staleprocs/staleprocs.sh
 
 No ld.so!
 
+https://gavinhoward.com/2021/10/static-linking-considered-harmful-considered-harmful/
+https://lore.kernel.org/lkml/CAHk-=whs8QZf3YnifdLv57+FhBi5_WeNTG1B-suOES=RcUSmQg@mail.gmail.com/
+
 -- Login shell
 
 No https://askubuntu.com/questions/866161/setting-path-variable-in-etc-environment-vs-profile
@@ -36,3 +39,15 @@ No https://askubuntu.com/questions/866161/setting-path-variable-in-etc-environme
 Every user session must start from the login shell, even in ssh daemon.
 
 https://github.com/pg83/ix/blob/main/pkgs/bin/dropbear/ix.sh#L7 - patch from dropbear to launch all processes, including non-interactive ones, with login shell.
+
+-- Взаимодействие с upstream
+
+Довольно часто upstream не интересуют идеи, заложенные в Stal/IX:
+
+* https://bugzilla.gnome.org/show_bug.cgi?id=768215#c16 - разработчики glib активно мешают статической линковке с glib
+* https://gitlab.gnome.org/GNOME/vte/-/issues/72 - разработчикам VTE нет дела до сборки с musl, и они не отвечают на вопросы - https://gitlab.gnome.org/GNOME/vte/-/issues/72#note_1415630
+* https://wiki.musl-libc.org/faq.html - musl отказывается заводить макрос препроцессора для определения того, что код собирается с musl
+* https://github.com/swaywm/sway/issues/6828 - sway не хочет вносить исправления для fully supervised process tree
+* https://github.com/skarnet/execline/issues/9 - мы не можем использовать утилиты execline в наших стартовых скриптах, потому что их статическая сборка весит слишком много
+
+Поэтому нам приходится поддерживать набор фиксов и исправлений для upstream, которые никогда не будут вмержены в upstream.
