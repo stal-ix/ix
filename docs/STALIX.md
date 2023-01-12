@@ -13,6 +13,7 @@ Stal/IX - an attempt to rethink some fundamentals without touching API and ABI L
 https://wiki.musl-libc.org/alternatives.html
 https://github.com/illiliti/libudev-zero
 https://busybox.net/tinyutils.html
+https://connortumbleson.com/2022/11/28/open-source-saying-no/
 
 -- No https://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard
 
@@ -28,6 +29,10 @@ https://www.phoronix.com/news/systemd-Git-Stats-2022
 Сейчас Stal/IX использует runit, как наиболее легковесное решение, возможно, это поменяется в будущем.
 
 -- Musl
+
+https://drewdevault.com/2020/09/25/A-story-of-two-libcs.html
+https://codebrowser.dev/glibc/glibc/nptl/pthread_cancel.c.html#99
+https://www.phoronix.com/news/Glibc-2.36-EAC-Problems
 
 Glibc не поддерживает статическую линковку в полной мере. Stal/IX использует musl для внутренних нужд, и позволяет собрать пользовательский софт с произвольной libc на выбор.
 
