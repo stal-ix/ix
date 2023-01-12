@@ -51,6 +51,8 @@ https://github.com/pg83/ix/blob/main/pkgs/bin/dropbear/ix.sh#L7 - patch from dro
 * https://github.com/skarnet/execline/issues/9 - мы не можем использовать утилиты execline в наших стартовых скриптах, потому что их статическая сборка весит слишком много
 * https://github.com/swaywm/sway/issues/4540 - зависание tty после смерти sway, и фикс, который не может войти в upstream - https://github.com/pg83/ix/blob/main/pkgs/bin/fixtty/main.c
 * https://github.com/pg83/dlopen - fake dlopen, для проектов, которые не могут жить без загружаемых плагинов
+* https://github.com/pg83/ix/blob/main/pkgs/lib/gtk/4/stock/0.diff - поддержка XCURSOR_SIZE в gtk
+* https://github.com/pg83/ix/blob/main/pkgs/lib/glib/ix/1.diff - поддержка альтернативной базы данных mime types в glib
 
 Поэтому нам приходится поддерживать набор фиксов и исправлений для upstream, которые никогда не будут вмержены в upstream.
 
