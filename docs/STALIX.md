@@ -49,5 +49,9 @@ https://github.com/pg83/ix/blob/main/pkgs/bin/dropbear/ix.sh#L7 - patch from dro
 * https://wiki.musl-libc.org/faq.html - musl отказывается заводить макрос препроцессора для определения того, что код собирается с musl
 * https://github.com/swaywm/sway/issues/6828 - sway не хочет вносить исправления для fully supervised process tree
 * https://github.com/skarnet/execline/issues/9 - мы не можем использовать утилиты execline в наших стартовых скриптах, потому что их статическая сборка весит слишком много
+* https://github.com/swaywm/sway/issues/4540 - зависание tty после смерти sway, и фикс, который не может войти в upstream - https://github.com/pg83/ix/blob/main/pkgs/bin/fixtty/main.c
+* https://github.com/pg83/dlopen - fake dlopen, для проектов, которые не могут жить без загружаемых плагинов
 
 Поэтому нам приходится поддерживать набор фиксов и исправлений для upstream, которые никогда не будут вмержены в upstream.
+
+Цели проекта важнее, чем высокомерное поведение некоторых мейнтейнеров!
