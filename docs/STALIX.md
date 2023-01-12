@@ -23,6 +23,7 @@ Overall, the file system will be familiar to those who know Nix/Guix.
 -- No systemd
 
 https://blog.darknedgy.net/technology/2020/05/02/0/
+https://www.phoronix.com/news/systemd-Git-Stats-2022
 
 Сейчас Stal/IX использует runit, как наиболее легковесное решение, возможно, это поменяется в будущем.
 
