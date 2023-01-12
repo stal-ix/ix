@@ -32,6 +32,12 @@ No ld.so!
 https://gavinhoward.com/2021/10/static-linking-considered-harmful-considered-harmful/
 https://lore.kernel.org/lkml/CAHk-=whs8QZf3YnifdLv57+FhBi5_WeNTG1B-suOES=RcUSmQg@mail.gmail.com/
 
+-- Wayland only
+
+https://drewdevault.com/2021/02/02/Anti-Wayland-horseshit.html
+
+X умирает, и поддерживать работоспособность базы пакетов IX с X - значит, делать работу, которую однажды придется выкинуть. У нас недостаточно ресурсов на это.
+
 -- Login shell
 
 No https://askubuntu.com/questions/866161/setting-path-variable-in-etc-environment-vs-profile
@@ -57,3 +63,5 @@ https://github.com/pg83/ix/blob/main/pkgs/bin/dropbear/ix.sh#L7 - patch from dro
 Поэтому нам приходится поддерживать набор фиксов и исправлений для upstream, которые никогда не будут вмержены в upstream.
 
 Цели проекта важнее, чем высокомерное поведение некоторых мейнтейнеров!
+
+TODO(pg): cc/c++ override
