@@ -59,6 +59,7 @@ https://github.com/pg83/ix/blob/main/pkgs/bin/dropbear/ix.sh#L7 - patch from dro
 * https://github.com/pg83/dlopen - fake dlopen, для проектов, которые не могут жить без загружаемых плагинов
 * https://github.com/pg83/ix/blob/main/pkgs/lib/gtk/4/stock/0.diff - поддержка XCURSOR_SIZE в gtk
 * https://github.com/pg83/ix/blob/main/pkgs/lib/glib/ix/1.diff - поддержка альтернативной базы данных mime types в glib
+* https://github.com/pg83/ix/blob/main/pkgs/lib/lunasvg/gdk/io.cpp - custom gdk-pixbuf SVG loader, on top of lunasvg (instead of rsvg)
 
 Поэтому нам приходится поддерживать набор фиксов и исправлений для upstream, которые никогда не будут вмержены в upstream.
 
