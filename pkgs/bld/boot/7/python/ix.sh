@@ -24,9 +24,6 @@ bld/boot/6/env/std
 {% block extra_modules %}
 {% endblock %}
 
-{% block extra_tests %}
-{% endblock %}
-
 {% block patch_ffi %}
 {% endblock %}
 

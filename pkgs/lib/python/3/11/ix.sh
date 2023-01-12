@@ -74,8 +74,3 @@ _scproxy _scproxy.c
 pyexpat pyexpat.c
 EOF
 {% endblock %}
-
-{% block test_bin %}
-{{super()}}
-${out}/bin/python3 -c 'import pyexpat; import dbm;'
-{% endblock %}

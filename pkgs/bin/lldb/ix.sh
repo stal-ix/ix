@@ -2,8 +2,8 @@
 
 {% block bld_libs %}
 lib/xz
-lib/xml/2
 lib/edit
+lib/xml/2
 lib/python
 lib/curses
 lib/kernel

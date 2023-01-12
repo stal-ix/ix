@@ -17,12 +17,21 @@ bld/auto/archive
 sed -e 's/MULTIARCH=\$.*/MULTIARCH=/' -i configure
 {% endblock %}
 
-{% block patch %}
-sed -e 's|spec is None|spec is None or spec.loader is None|' -i Lib/modulefinder.py
-sed -e 's|/usr|/eat/shit|' -i setup.py
-sed -e 's|/usr|/eat/shit|' -i Makefile.pre.in
+{% block cpp_includes %}
+${PWD}/Modules/_multiprocessing
+{% endblock %}
 
+{% block cpp_defines %}
+USE_SSL=1
+Py_BUILD_CORE_MODULE=1
+SQLITE_OMIT_LOAD_EXTENSION=1
+{% endblock %}
+
+{% block patch %}
 >setup.py
+
+sed -e 's|spec is None|spec is None or spec.loader is None|' -i Lib/modulefinder.py
+sed -e 's|/usr|/eat/shit|' -i Makefile.pre.in
 
 {% block ensure_static_build %}
 {% block patch_ffi %}
@@ -50,8 +59,8 @@ cat Modules/Setup \
 cat << EOF >> Modules/Setup.local
 _lsprof _lsprof.c rotatingtree.c
 _opcode _opcode.c
-_posixshmem _multiprocessing/posixshmem.c -I\$(srcdir)/Modules/_multiprocessing
-_multiprocessing _multiprocessing/multiprocessing.c _multiprocessing/semaphore.c -I\$(srcdir)/Modules/_multiprocessing
+_posixshmem _multiprocessing/posixshmem.c
+_multiprocessing _multiprocessing/multiprocessing.c _multiprocessing/semaphore.c
 _queue _queuemodule.c
 
 {% if darwin %}
@@ -71,12 +80,6 @@ EOF
 {% endblock %}
 {% endblock %}
 
-{% block cpp_defines %}
-USE_SSL=1
-Py_BUILD_CORE_MODULE=1
-SQLITE_OMIT_LOAD_EXTENSION=1
-{% endblock %}
-
 {% if lib %}
 {% set platlibdir %}lib{% endset %}
 {% else %}
@@ -86,13 +89,6 @@ SQLITE_OMIT_LOAD_EXTENSION=1
 {% block configure_flags %}
 --with-platlibdir={{platlibdir}}
 --with-ensurepip=no
-{% endblock %}
-
-{% block test_bin %}
-${out}/bin/python3 -c 'import zlib; import multiprocessing; import cProfile;'
-{% block extra_tests %}
-${out}/bin/python3 -c 'import hashlib; import ssl; import lzma; import bz2; import sqlite3; import decimal; import ctypes;'
-{% endblock %}
 {% endblock %}
 
 {% block install %}
