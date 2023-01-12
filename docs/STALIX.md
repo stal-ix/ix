@@ -1,3 +1,6 @@
+"UNIX is simple and coherent..." - Dennis Ritchie
+"GNU's Not UNIX" -  Richard Stallman
+
 Stal/IX is not UNIX or Linux in the usual sense of these terms.
 
 Stal/IX - an attempt to rethink some fundamentals without touching API and ABI Linux.
@@ -9,6 +12,16 @@ This document contains a regularly replenishing list of Stal/IX and conventional
 https://github.com/pg83/ix/blob/main/docs/FS.md
 
 Overall, the file system will be familiar to those who know Nix/Guix.
+
+-- No systemd
+
+https://blog.darknedgy.net/technology/2020/05/02/0/
+
+Сейчас Stal/IX использует runit, как наиболее легковесное решение, возможно, это поменяется в будущем.
+
+-- Musl
+
+Glibc не поддерживает статическую линковку в полной мере. Stal/IX использует musl для внутренних нужд, и позволяет собрать пользовательский софт с произвольной libc на выбор.
 
 -- Non-root package management
 
@@ -24,6 +37,7 @@ Every process different from init has a parent different from init. All processe
 
 https://github.com/swaywm/sway/issues/6828
 https://github.com/pg83/ix/blob/main/pkgs/bin/sched/staleprocs/staleprocs.sh
+https://unix.stackexchange.com/questions/250153/what-is-a-subreaper-process
 
 -- Static linking
 
@@ -31,6 +45,9 @@ No ld.so!
 
 https://gavinhoward.com/2021/10/static-linking-considered-harmful-considered-harmful/
 https://lore.kernel.org/lkml/CAHk-=whs8QZf3YnifdLv57+FhBi5_WeNTG1B-suOES=RcUSmQg@mail.gmail.com/
+https://eli.thegreenplace.net/2013/07/09/library-order-in-static-linking
+https://habr.com/ru/post/451208
+https://lobste.rs/s/adr60v/single_binary_executable_packages
 
 -- Wayland only
 
