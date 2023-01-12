@@ -1,11 +1,18 @@
+This document contains a regularly replenishing list of Stal/IX and conventional Linux differences.
+
+-- Минимализм
+
 "UNIX is simple and coherent..." - Dennis Ritchie
 "GNU's Not UNIX" -  Richard Stallman
 
 Stal/IX is not UNIX or Linux in the usual sense of these terms.
-
 Stal/IX - an attempt to rethink some fundamentals without touching API and ABI Linux.
 
-This document contains a regularly replenishing list of Stal/IX and conventional Linux differences.
+Одна из целей Stal/IX - с самого начала выстраивать систему так, чтобы можно было понимать, как она работает, а не только удобно ей пользоваться.
+
+https://wiki.musl-libc.org/alternatives.html
+https://github.com/illiliti/libudev-zero
+https://busybox.net/tinyutils.html
 
 -- No https://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard
 
