@@ -9,11 +9,15 @@ sha:87b4b3c9a3f16419e2978e95da7878e06483aeea07a1a0f6b57f9eb234c1ab1a
 lib/c
 lib/z
 lib/xz
+lib/cap
 lib/zstd
 lib/event
+lib/seccomp
 {% endblock %}
 
 {% block configure_flags %}
+--enable-lzma
+--enable-zstd
 --disable-asciidoc
 {% endblock %}
 
