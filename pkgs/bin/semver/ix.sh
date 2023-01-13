@@ -1,13 +1,5 @@
-{% extends '//die/python/bin.sh' %}
+{% extends '//die/hub.sh' %}
 
-{% block step_unpack %}
-cat << EOF > semver
-{% include 'sv.py' %}
-EOF
+{% block run_deps %}
+bin/semver/unwrap(python_ver=11)
 {% endblock %}
-
-{% block bld_libs %}
-lib/python
-{% endblock %}
-
-{% block entry_point %}semver{% endblock %}
