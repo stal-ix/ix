@@ -156,7 +156,7 @@ def cmd_check(sb, path, cksum):
     new_path = os.path.join(out_dir, os.path.basename(path))
 
     if cksum.startswith('sem:'):
-        extra = [sb.package.find_tool('bin/semver').out_dir]
+        extra = [sb.package.find_tool('bin/semver/unwrap').out_dir]
         bpath = extra[0] + '/bin/semver'
         script = [sb.cmd([bpath, path, cksum[4:], new_path])]
     else:
