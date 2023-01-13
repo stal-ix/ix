@@ -1,8 +1,8 @@
 {% extends '//die/c/autohell.sh' %}
 
 {% block fetch %}
-https://ftp.gnu.org/gnu/ed/ed-1.17.tar.lz
-sha:71de39883c25b6fab44add80635382a10c9bf154515b94729f4a6529ddcc5e54
+https://ftp.gnu.org/gnu/ed/ed-1.19.tar.lz
+sha:ce2f2e5c424790aa96d09dacb93d9bbfdc0b7eb6249c9cb7538452e8ec77cd48
 {% endblock %}
 
 {% block bld_libs %}
@@ -21,5 +21,5 @@ bin/bison/3/6
 cp ${src}/*.lz ./
 lzip -d *.lz
 bsdtar xf ed*
-cd ed-1.17
+cd ed-1.*
 {% endblock %}
