@@ -1,7 +1,6 @@
 {% extends 'freeze.sh' %}
 
 {% block std_env %}
-# TODO(pg): inherit conf values into bin
 bld/make
 lib/python/3/{{python_ver}}
 {{super()}}
