@@ -14,3 +14,7 @@ lib/c++
 UTF8_TESTS=OFF
 UTF8_SAMPLES=OFF
 {% endblock %}
+
+{% block env %}
+export CPPFLAGS="-I${out}/include/utf8cpp \${CPPFLAGS}"
+{% endblock %}
