@@ -1,8 +1,8 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://github.com/libfuse/libfuse/archive/refs/tags/fuse-3.12.0.tar.gz
-sha:df6cc8807c4fd36b6b0ebef2b738dad6d19a9c7c085ccc3775063688d0bfcc0b
+https://github.com/libfuse/libfuse/archive/refs/tags/fuse-3.13.0.tar.gz
+sha:224544214204eb348b548d6faa7a9bc91b053aacfc92e8b5da3f478c76ae4a03
 {% endblock %}
 
 {% block lib_deps %}
@@ -16,4 +16,8 @@ lib/kernel
 {% block meson_flags %}
 utils=false
 useroot=false
+{% endblock %}
+
+{% block patch %}
+sed -e 's|__off64_t|off_t|' -i include/fuse_lowlevel.h
 {% endblock %}
