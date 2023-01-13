@@ -1,5 +1,5 @@
 {% extends '//die/hub.sh' %}
 
 {% block lib_deps %}
-lib/python/{{(python or '3.10').replace('.', '/')}}
+lib/python/3/{{python_ver or '11'}}
 {% endblock %}

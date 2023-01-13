@@ -3,7 +3,7 @@
 {% block std_env %}
 # TODO(pg): inherit conf values into bin
 bld/make
-lib/python/3/10
+lib/python/3/11
 {{super()}}
 {% endblock %}
 
