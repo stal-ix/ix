@@ -6,8 +6,4 @@ cat << EOF > semver
 EOF
 {% endblock %}
 
-{% block bld_libs %}
-lib/python
-{% endblock %}
-
 {% block entry_point %}semver{% endblock %}
