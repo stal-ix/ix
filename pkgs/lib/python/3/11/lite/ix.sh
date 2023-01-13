@@ -4,7 +4,6 @@
 lib/c
 lib/z
 lib/ffi
-lib/sqlite/3
 {% endblock %}
 
 {% block ensure_static_build %}
@@ -19,6 +18,7 @@ cat Modules/Setup.local \
     | grep -v _curses   \
     | grep -v expat     \
     | grep -v _decimal  \
+    | grep -v _sqlite   \
     | grep -v _hashopenssl > _
 mv _ Modules/Setup.local
 {% endblock %}
