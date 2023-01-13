@@ -25,7 +25,7 @@ lib/harfbuzz
 bld/make
 bld/dlfcn
 bld/pyinit
-bld/python
+lib/python/3/11
 bld/librarian
 bld/pkg/config
 {% endblock %}
