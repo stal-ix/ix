@@ -1,4 +1,4 @@
-{% extends '//die/py.py' %}
+{% extends '//die/env.sh' %}
 
 {% block lib_deps %}
 lib/darwin/c
