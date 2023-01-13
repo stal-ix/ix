@@ -1,6 +1,6 @@
 This document contains a regularly replenishing list of Stal/IX and conventional Linux differences.
 
--- Минимализм
+-- Minimalism
 
 "UNIX is simple and coherent..." - Dennis Ritchie
 "GNU's Not UNIX" -  Richard Stallman
@@ -8,7 +8,7 @@ This document contains a regularly replenishing list of Stal/IX and conventional
 Stal/IX is not UNIX or Linux in the usual sense of these terms.
 Stal/IX - an attempt to rethink some fundamentals without touching API and ABI Linux.
 
-Одна из целей Stal/IX - с самого начала выстраивать систему так, чтобы можно было понимать, как она работает, а не только удобно ей пользоваться.
+One of the Stal/IX goals - from the very beginning to build the system in such a way that it’s possible to understand how it works, and not only use it conveniently.
 
 https://wiki.musl-libc.org/alternatives.html
 https://github.com/illiliti/libudev-zero
@@ -26,7 +26,7 @@ Overall, the file system will be familiar to those who know Nix/Guix.
 https://blog.darknedgy.net/technology/2020/05/02/0/
 https://www.phoronix.com/news/systemd-Git-Stats-2022
 
-Сейчас Stal/IX использует runit, как наиболее легковесное решение, возможно, это поменяется в будущем.
+Stal/IX currently uses runit as the most lightweight solution, perhaps, this will change in the future.
 
 -- Musl
 
@@ -34,7 +34,7 @@ https://drewdevault.com/2020/09/25/A-story-of-two-libcs.html
 https://codebrowser.dev/glibc/glibc/nptl/pthread_cancel.c.html#99
 https://www.phoronix.com/news/Glibc-2.36-EAC-Problems
 
-Glibc не поддерживает статическую линковку в полной мере. Stal/IX использует musl для внутренних нужд, и позволяет собрать пользовательский софт с произвольной libc на выбор.
+Glibc does not fully support static linking. Stal/IX uses musl for internal needs, and allows to build custom soft with an arbitrary libc on a choice.
 
 -- Non-root package management
 
@@ -67,7 +67,7 @@ https://nullprogram.com/blog/2018/05/27/
 
 https://drewdevault.com/2021/02/02/Anti-Wayland-horseshit.html
 
-X умирает, и поддерживать работоспособность базы пакетов IX с X - значит, делать работу, которую однажды придется выкинуть. У нас недостаточно ресурсов на это.
+X is dying, and to maintain the efficiency of the IX package base running with X means doing work that one day will have to be thrown out. We don’t have enough resources for that.
 
 -- Login shell
 
@@ -77,23 +77,23 @@ Every user session must start from the login shell, even in ssh daemon.
 
 https://github.com/pg83/ix/blob/main/pkgs/bin/dropbear/ix.sh#L7 - patch from dropbear to launch all processes, including non-interactive ones, with login shell.
 
--- Взаимодействие с upstream
+-- Interaction with upstream
 
-Довольно часто upstream не интересуют идеи, заложенные в Stal/IX:
+Quite often, upstream is not interested in the ideas inherent in Stal/IX:
 
-* https://bugzilla.gnome.org/show_bug.cgi?id=768215#c16 - разработчики glib активно мешают статической линковке с glib
-* https://gitlab.gnome.org/GNOME/vte/-/issues/72 - разработчикам VTE нет дела до сборки с musl, и они не отвечают на вопросы - https://gitlab.gnome.org/GNOME/vte/-/issues/72#note_1415630
-* https://wiki.musl-libc.org/faq.html - musl отказывается заводить макрос препроцессора для определения того, что код собирается с musl
-* https://github.com/swaywm/sway/issues/6828 - sway не хочет вносить исправления для fully supervised process tree
-* https://github.com/skarnet/execline/issues/9 - мы не можем использовать утилиты execline в наших стартовых скриптах, потому что их статическая сборка весит слишком много
-* https://github.com/swaywm/sway/issues/4540 - зависание tty после смерти sway, и фикс, который не может войти в upstream - https://github.com/pg83/ix/blob/main/pkgs/bin/fixtty/main.c
-* https://github.com/pg83/dlopen - fake dlopen, для проектов, которые не могут жить без загружаемых плагинов
-* https://github.com/pg83/ix/blob/main/pkgs/lib/gtk/4/stock/0.diff - поддержка XCURSOR_SIZE в gtk
-* https://github.com/pg83/ix/blob/main/pkgs/lib/glib/ix/1.diff - поддержка альтернативной базы данных mime types в glib
-* https://github.com/pg83/ix/blob/main/pkgs/lib/lunasvg/gdk/io.cpp - custom gdk-pixbuf SVG loader, on top of lunasvg (instead of rsvg)
+* https://bugzilla.gnome.org/show_bug.cgi?id=768215#c16 - glib developers actively hinder static linking with glib
+* https://gitlab.gnome.org/GNOME/vte/-/issues/72 - VTE developers don't care about building with musl and don't answer questions - https://gitlab.gnome.org/GNOME/vte/-/issues/72#note_1415630
+* https://wiki.musl-libc.org/faq.html - musl refuses to add a preprocessor macro to determine if code is built with musl
+* https://github.com/swaywm/sway/issues/6828 - sway doesn't want to patch for fully supervised process tree
+* https://github.com/skarnet/execline/issues/9 - we can't use the execline utilities in our startup scripts because their static build is too big
+* https://github.com/swaywm/sway/issues/4540 - tty freeze after sway death, and fix that can't enter upstream - https://github.com/pg83/ix/blob/main/pkgs/bin/fixtty/main.c
+* https://github.com/pg83/dlopen - fake dlopen, for projects that can't live without downloadable plugins
+* https://github.com/pg83/ix/blob/main/pkgs/lib/gtk/4/stock/0.diff - XCURSOR_SIZE support in gtk
+* https://github.com/pg83/ix/blob/main/pkgs/lib/glib/ix/1.diff - support for alternative database of mime types in glib
+* https://github.com/pg83/ix/blob/main/pkgs/lib/lunasvg/gdk/io.cpp - custom gdk-pixbuf SVG loader, over lunasvg (instead of rsvg)
 
-Поэтому нам приходится поддерживать набор фиксов и исправлений для upstream, которые никогда не будут вмержены в upstream.
+Therefore, we have to maintain a set of fixes and adjustments for upstream that will never be merged into upstream.
 
-Цели проекта важнее, чем высокомерное поведение некоторых мейнтейнеров!
+Project goals are more important than the arrogant behavior of some maintainers!
 
 TODO(pg): cc/c++ override
