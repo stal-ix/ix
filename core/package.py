@@ -115,7 +115,7 @@ def fix_selector(selector, config):
     flags = selector['flags']
 
     if 'target' not in flags:
-        flags['target'] = config.platform['target']
+        flags['target'] = config.host
 
     if 'kind' not in flags:
         flags['kind'] = parse_kind(selector['name'])
@@ -189,7 +189,7 @@ class Package:
 
     @property
     def host(self):
-        return self.config.platform['host']
+        return self.config.host
 
     def host_lib_flags(self):
         return {'target': self.host, 'kind': 'lib'}

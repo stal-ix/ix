@@ -148,13 +148,8 @@ class Config:
 
     @property
     @cu.cached_method
-    def platform(self):
-        host = arch(f'{platform.system().lower()}-{platform.machine()}')
-
-        return {
-            'host': host,
-            'target': host,
-        }
+    def host(self):
+        return arch(f'{platform.system().lower()}-{platform.machine()}')
 
 
 def config_from(ctx):
