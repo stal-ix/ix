@@ -151,6 +151,13 @@ class Config:
     def host(self):
         return arch(f'{platform.system().lower()}-{platform.machine()}')
 
+    def retarget(self, target):
+        try:
+            target[0]
+            return arch(target)
+        except KeyError:
+            return target
+
 
 def config_from(ctx):
     binary = ctx['binary']

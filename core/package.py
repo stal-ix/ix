@@ -117,6 +117,8 @@ def fix_selector(selector, config):
     if 'target' not in flags:
         flags['target'] = config.host
 
+    flags['target'] = config.retarget(flags['target'])
+
     if 'kind' not in flags:
         flags['kind'] = parse_kind(selector['name'])
 
