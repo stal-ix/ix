@@ -3,8 +3,10 @@
 {% block fetch %}
 #https://github.com/KhronosGroup/Vulkan-Loader/archive/refs/tags/sdk-1.3.211.0.tar.gz
 #sha:bb42a8e0dda103f98bddb9ae2311ae8e8e988588b600a1114b74a1ba3a0843f4
-https://github.com/KhronosGroup/Vulkan-Loader/archive/refs/tags/sdk-1.3.224.1.tar.gz
-sha:4d54b1489faa42d309e5d1e34d6655a9587ad988e99bb2a2ce0e357844f2cb2d
+#https://github.com/KhronosGroup/Vulkan-Loader/archive/refs/tags/sdk-1.3.224.1.tar.gz
+#sha:4d54b1489faa42d309e5d1e34d6655a9587ad988e99bb2a2ce0e357844f2cb2d
+https://github.com/KhronosGroup/Vulkan-Loader/archive/refs/tags/sdk-1.3.236.0.tar.gz
+sha:157d2230b50bb5be3ef9b9467aa90d1c109d5f188a49b11f741246d7ca583bf3
 {% endblock %}
 
 {% block lib_deps %}

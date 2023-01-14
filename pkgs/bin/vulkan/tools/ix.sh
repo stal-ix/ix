@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/KhronosGroup/Vulkan-Tools/archive/refs/tags/sdk-1.3.224.1.tar.gz
-sha:fa88ab7a542cc3ec05d22316ffedce7c058350efe79ec5e019c405ab268d17a0
+https://github.com/KhronosGroup/Vulkan-Tools/archive/refs/tags/sdk-1.3.236.0.tar.gz
+sha:5b0d96acce7d7354a6bc055cafeca9191cda860975390780b3146b8ab1f8a8d3
 {% endblock %}
 
 {% block bld_libs %}
@@ -21,6 +21,7 @@ bld/pkg/config
 
 {% block cmake_flags %}
 BUILD_ICD=NO
+BUILD_WERROR=OFF
 BUILD_WSI_XCB_SUPPORT=OFF
 BUILD_WSI_XLIB_SUPPORT=OFF
 CUBE_WSI_SELECTION=WAYLAND

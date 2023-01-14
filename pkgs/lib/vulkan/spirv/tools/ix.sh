@@ -1,11 +1,13 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/KhronosGroup/SPIRV-Tools/archive/refs/tags/v2022.2.tar.gz
-sha:909fc7e68049dca611ca2d57828883a86f503b0353ff78bc594eddc65eb882b9
+#https://github.com/KhronosGroup/SPIRV-Tools/archive/refs/tags/v2022.2.tar.gz
+#sha:909fc7e68049dca611ca2d57828883a86f503b0353ff78bc594eddc65eb882b9
+https://github.com/KhronosGroup/SPIRV-Tools/archive/refs/tags/v2022.4.tar.gz
+sha:a156215a2d7c6c5b267933ed691877a9a66f07d75970da33ce9ad627a71389d7
+#https://github.com/KhronosGroup/SPIRV-Tools/archive/refs/tags/v2022.3.tar.gz
+#sha:df6dc5ed5351f99aaaa6acc78111342d3400b27b99f18148d3be408570144a70
 {% include '//lib/vulkan/spirv/headers/ver.sh' %}
-#https://github.com/KhronosGroup/SPIRV-Headers/archive/refs/tags/sdk-1.3.211.0.tar.gz
-#sha:30a78e61bd812c75e09fdc7a319af206b1044536326bc3e85fea818376a12568
 {% endblock %}
 
 {% block unpack %}
