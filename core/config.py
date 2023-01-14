@@ -112,10 +112,11 @@ def arch(n):
 
 
 class Config:
-    def __init__(self, binary, where, root):
+    def __init__(self, binary, where, root, verbose):
         self.binary = binary
         self.where = where
         self.ix_dir = root
+        self.verbose = verbose
         # circular ref
         self.ops = co.construct(self)
 
@@ -161,4 +162,4 @@ def config_from(ctx):
     where = os.path.join(os.path.dirname(binary), 'pkgs')
     root = os.environ.get('IX_ROOT', '/ix')
 
-    return Config(binary, where, root)
+    return Config(binary, where, root, os.environ.get('IX_VERBOSE', ''))
