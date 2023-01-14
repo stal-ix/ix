@@ -16,6 +16,7 @@ lib/bfd
 
 {% block configure_flags %}
 --enable-targets=all
+--enable-install-libbfd
 {% endblock %}
 
 {% block patch %}
