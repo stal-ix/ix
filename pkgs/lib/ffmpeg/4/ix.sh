@@ -1,8 +1,6 @@
 {% extends '//die/c/autohell.sh' %}
 
 {% block fetch %}
-#https://ffmpeg.org/releases/ffmpeg-4.4.2.tar.xz
-#sha:af419a7f88adbc56c758ab19b4c708afbcae15ef09606b82b855291f6a6faa93
 https://github.com/FFmpeg/FFmpeg/archive/refs/tags/n4.4.2.tar.gz
 sha:2378c6ec0b0b7b4df4f87411afe72997e9d6803b1884398c1ef665c69e01eaea
 {% endblock %}

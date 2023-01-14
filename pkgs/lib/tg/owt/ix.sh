@@ -1,8 +1,6 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-#https://github.com/desktop-app/tg_owt/archive/10d5f4bf77333ef6b43516f90d2ce13273255f41.zip
-#sha:3853a2959cf47b228e6c4f41070fcb8411a059f99af58c49f4f1b19f2d022f95
 https://github.com/desktop-app/tg_owt/archive/1eab2d736a2fecce01686689b72e39ad8c314ebb.zip
 sha:c241fc27dce6900268c445ce1d2bec58eef15c06598825c27270cce494dd396b
 {% endblock %}

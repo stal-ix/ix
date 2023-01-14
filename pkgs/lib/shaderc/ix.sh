@@ -1,7 +1,6 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-#https://github.com/google/shaderc/archive/refs/tags/v2022.4.tar.gz broken
 https://github.com/google/shaderc/archive/refs/tags/v2022.2.tar.gz
 sha:517d36937c406858164673db696dc1d9c7be7ef0960fbf2965bfef768f46b8c0
 {% endblock %}
