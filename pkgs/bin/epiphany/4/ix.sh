@@ -1,8 +1,8 @@
 {% extends '//bin/epiphany/t/ix.sh' %}
 
 {% block fetch %}
-https://github.com/GNOME/epiphany/archive/88f50d97824ce0595a6f0a6af8ab50437e92d8ed.zip
-sha:645d8f43e97d00225d4d32bf1c4b212784d69c2810ab5854c156afea80c95103
+https://github.com/GNOME/epiphany/archive/daf27838bb441b715a341ccdcb2b18dcc3aec77f.zip
+sha:96b4471b912644940b97554666573b5e5547ae9a0b19bbcc591fe7dfb046eaa1
 {% endblock %}
 
 {% block bld_libs %}
