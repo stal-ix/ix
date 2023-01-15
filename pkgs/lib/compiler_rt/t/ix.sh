@@ -4,6 +4,7 @@
 lib/kernel
 lib/c/naked
 lib/shim/alloc
+lib/compiler_rt/builtins/hack/ish
 {% endblock %}
 
 {% block cmake_flags %}
