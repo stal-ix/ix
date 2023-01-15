@@ -12,6 +12,7 @@ cd bfd
 {% block lib_deps %}
 lib/z
 lib/c
+lib/zstd
 lib/sframe
 {% endblock %}
 
@@ -20,6 +21,8 @@ bld/texinfo
 {% endblock %}
 
 {% block configure_flags %}
+--with-zstd
+--with-system-zlib
 --enable-targets=all
 --enable-install-libbfd
 --enable-deterministic-archives
