@@ -19,6 +19,6 @@ bld/perl
 bld/texinfo
 {% endblock %}
 
-{% block env_lib %}
+{% block env %}
 export COFLAGS="--with-gmp=${out} --with-libgmp-prefix=${out} \${COFLAGS}"
 {% endblock %}
