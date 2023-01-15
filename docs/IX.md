@@ -1,15 +1,18 @@
-Prereq:
- * [FS.md](FS.md)
+# IX package manager
 
-IX package manager can be used standalone on any supported OS, or as a base package manager on Linux stal/IX distribution.
+> Prereq:<br>
+> [FS.md](FS.md)<br>
 
-This document describes the IX usage as part of stal/IX.
 
-The stal/IX on disk installing guide you can read in [INSTALL.md](INSTALL.md)
+**IX** package manager can be used standalone on any supported OS, or as a base package manager on Linux **stal/IX** distribution.
 
-Basic concepts:
+This document describes the **IX** usage as part of **stal/IX**.
 
-Package - one folder contents in /ix/store directory.
+The **stal/IX** on disk installing guide you can read in [INSTALL.md](INSTALL.md)
+
+## Basic concepts
+
+*Package* - one folder contents in /ix/store directory.
 
 Here, for example, is bzip2 package contents:
 
@@ -34,7 +37,7 @@ ix# find /ix/store/0GsKotnAh74LIcvO-bin-bzip2/
 
 All packages form a content addressable store, substantially similar to the same structure in nixos and guix.
 
-Realm - also a package, it contains symlinks to other packages:
+*Realm* - also a package, it contains symlinks to other packages:
 
 ```
 ix# find /ix/store/0Q4rkMy8J8D1WTVn-rlm-system
@@ -82,16 +85,18 @@ To make this setting happen automatically, in the first line of your session scr
 . /etc/session
 ```
 
-To start using IX clone it from github.
+## Using IX
+
+To start using **IX** clone it from github.
 
 ```
 ix# git clone git@github.com:pg83/ix.git
 ix# export PATH=${PWD}/ix:${PATH}
 ```
 
-Any user with sudo configured can install packages on the system. Thanks to the content addressable store usage, different versions of packages will not overlap with each other. Different users may use different IX repository versions. The recommended way to customize the system for yourself - clone the repository on github, and make the necessary changes to your branch. Perhaps, someday there'll be support for overlays.
+Any user with sudo configured can install packages on the system. Thanks to the content addressable store usage, different versions of packages will not overlap with each other. Different users may use different **IX** repository versions. The recommended way to customize the system for yourself - clone the repository on github, and make the necessary changes to your branch. Perhaps, someday there'll be support for overlays.
 
-The basic command when using IX is `ix mut`.
+The basic command when using **IX** is `ix mut`.
 
 Install the sway program in realm gui:
 
@@ -105,7 +110,7 @@ Install the sway program in realm gui, specifying that it should use the 3d acce
 ix# ix mut gui bin/sway --mesa_driver=radv
 ```
 
-[See](ACCEL.md) also for a more detailed introduction to the subject of 3D acceleration in stal/IX.
+[See](ACCEL.md) also for a more detailed introduction to the subject of 3D acceleration in **stal/IX**.
 
 Let's say that all programs in realm gui should use AMD GPU:
 
@@ -150,7 +155,7 @@ The command can manipulate any number of realms at the same time. The ambiguity 
 ix# ix mut gui +bin/dosbox -bin/qemu tui +bin/links
 ```
 
-Flags you specify with --, apply to the realm if no package was previously specified within that realm, otherwise to the package:
+Flags you specify with `--`, apply to the realm if no package was previously specified within that realm, otherwise to the package:
 
 ```
 ix# ix mut --mesa_driver=radv +bin/sway --mesa_driver=iris
@@ -158,9 +163,12 @@ ix# ix mut --mesa_driver=radv +bin/sway --mesa_driver=iris
 
 With this command, we said that we need to add a flag to the user realm for AMD GPU usage, but we want to use sway with Intel GPU.
 
-Important! Within a single command, all changes to one realm happen atomically, but anchor pointers to the realm themselves can happen in any order.
+*Important!*<br>
+Within a single command, all changes to one realm happen atomically, but anchor pointers to the realm themselves can happen in any order.
 
-Exercise.
+---
+
+*Exercise*
 
 Explain yourself what the following commands do:
 
@@ -171,6 +179,8 @@ ix# ix mut A bin/P --X=Y bin/P --X=Z -bin/P
 ```
 ix# ix mut A -bin/P B +bin/P C +bin/P --X=Y
 ```
+
+---
 
 `ix let`
 
@@ -194,7 +204,8 @@ A list of all available packages can be found at https://github.com/pg83/ix/tree
 
 This command is used for all realms updating.
 
-There're a number of commands in IX that are made as standalone scripts and aren't part of the kernel. For example, because they are not implemented well enough in general, or their semantics aren't well developed enough. These commands are available through the `ix tool`:
+There're a number of commands in **IX** that are made as standalone scripts and aren't part of the kernel. For example, because they are not implemented well enough in general, or their semantics aren't well developed enough.<br>
+These commands are available through the `ix tool`:
 
 `ix tool list` - show all available commands.
 
@@ -225,4 +236,3 @@ steamos-compositor-plus 1.10.6
 clipboard 0.1.3
 yambar 1.9.0
 libdispatch 5.7.2
-```
