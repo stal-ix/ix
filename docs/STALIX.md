@@ -1,20 +1,20 @@
-# Stal/IX
+# stal/IX
 
 
-This document contains a regularly replenishing list of Stal/IX and conventional Linux differences.
+This document contains a regularly replenishing list of **stal/IX** and conventional Linux differences.
 
 ## Minimalism
-
 
 > "UNIX is simple and coherent..." - Dennis Ritchie
 
 > "GNU's Not UNIX" -  Richard Stallman
 
-**Stal/IX** is not UNIX or Linux in the usual sense of these terms.
+**stal/IX** is not UNIX or Linux in the usual sense of these terms.
 
-**Stal/IX** - an attempt to rethink some fundamentals without touching API and ABI Linux.
+**stal/IX** - an attempt to rethink some fundamentals without touching API and ABI Linux.
 
-One of the Stal/IX goals - from the very beginning to build the system in such a way that it’s possible to understand how it works, and not only use it conveniently.
+One of the **stal/IX** goals - from the very beginning to build the system in such a way that it’s possible to understand how it works,<br>
+and not only use it conveniently.
 
 https://wiki.musl-libc.org/alternatives.html<br>
 https://github.com/illiliti/libudev-zero<br>
@@ -33,7 +33,7 @@ Overall, the file system will be familiar to those who know Nix/Guix.
 https://blog.darknedgy.net/technology/2020/05/02/0/<br>
 https://www.phoronix.com/news/systemd-Git-Stats-2022
 
-Stal/IX currently uses runit as the most lightweight solution, perhaps, this will change in the future.
+**stal/IX** currently uses runit as the most lightweight solution, perhaps, this will change in the future.
 
 ## Musl
 
@@ -41,13 +41,14 @@ https://drewdevault.com/2020/09/25/A-story-of-two-libcs.html<br>
 https://codebrowser.dev/glibc/glibc/nptl/pthread_cancel.c.html#99<br>
 https://www.phoronix.com/news/Glibc-2.36-EAC-Problems
 
-Glibc does not fully support static linking. Stal/IX uses musl for internal needs, and allows to build custom soft with an arbitrary libc on a choice.
+Glibc does not fully support static linking. **stal/IX** uses musl for internal needs, and allows to build custom soft<br>
+with an arbitrary libc on a choice.
 
 ## Non-root package management
 
 https://github.com/pg83/ix/blob/main/docs/IX.md
 
-All files on the system are ix user-owned, and all package management is done on his behalf.
+All files on the system are IX user-owned, and all package management is done on his behalf.
 
 Consequence - there is not a single suid binary on the system. Sudo - the thin layer over local ssh daemon, for privilege escalation.
 
@@ -74,7 +75,8 @@ https://nullprogram.com/blog/2018/05/27/<br>
 
 https://drewdevault.com/2021/02/02/Anti-Wayland-horseshit.html
 
-X is dying, and to maintain the efficiency of the IX package base running with X means doing work that one day will have to be thrown out. We don’t have enough resources for that.
+X is dying, and to maintain the efficiency of the IX package base running with X means doing work that one day will have to be thrown out.<br>
+We don’t have enough resources for that.
 
 ## Login shell
 
@@ -87,7 +89,7 @@ Every user session must start from the login shell, even in ssh daemon.
 
 ## Interaction with upstream
 
-Quite often, upstream is not interested in the ideas inherent in Stal/IX:
+Quite often, upstream is not interested in the ideas inherent in **stal/IX**:
 
 * https://bugzilla.gnome.org/show_bug.cgi?id=768215#c16 - glib developers actively hinder static linking with glib
 * https://gitlab.gnome.org/GNOME/vte/-/issues/72 - VTE developers don't care about building with musl and don't answer questions - https://gitlab.gnome.org/GNOME/vte/-/issues/72#note_1415630
