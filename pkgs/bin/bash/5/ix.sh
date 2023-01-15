@@ -8,6 +8,11 @@ lib/readline
 {{super()}}
 {% endblock %}
 
+{% block host_libs %}
+{{super()}}
+lib/c
+{% endblock %}
+
 {% block bld_tool %}
 bld/bison
 {% endblock %}
@@ -21,5 +26,10 @@ bld/bison
 
 {% block setup %}
 export bash_cv_func_strtoimax=y
+{{super()}}
+{% endblock %}
+
+{% block configure %}
+export CC_FOR_BUILD=${HOST_CC}
 {{super()}}
 {% endblock %}

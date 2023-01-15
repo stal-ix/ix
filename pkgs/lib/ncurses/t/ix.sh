@@ -29,6 +29,11 @@ lib/c
 --without-cxx-binding
 --with-pkg-config="$(which pkg-config)"
 --with-pkg-config-libdir="${PKG_CONFIG_LIBDIR}"
+--with-build-cc="${HOST_CC}"
+{% endblock %}
+
+{% block host_libs %}
+lib/c
 {% endblock %}
 
 {% block configure_shell %}

@@ -298,7 +298,7 @@ class Package:
         return list(self.load_packages(self.descr['run']['deps'], self.calc_bin_flags(self.target)))
 
     def load_data_dep(self, l):
-        return list(self.load_packages(l, {'target': self.target, 'kind': 'aux'}))
+        return list(self.load_packages(l, {'target': self.host, 'kind': 'aux'}))
 
     @cu.cached_method
     def run_data(self):
