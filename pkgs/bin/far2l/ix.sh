@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/elfmz/far2l/archive/920f22abae00f9f7d0592d3d21f78dc82a0c2f3a.tar.gz
-sha:97b436175b513318104605fefbf5f343325feb0b9bdd312aef6a86de9096a4cb
+https://github.com/elfmz/far2l/archive/refs/tags/v_2.5.0.tar.gz
+sha:c0cdb302d90b71f3c1c04205a6f0eb1bdb5fe81c36b13d8dd184f18e4b35bddb
 {% endblock %}
 
 {% block bld_libs %}
@@ -21,8 +21,9 @@ lib/execinfo/fake
 
 {% block bld_tool %}
 bld/m4
-bld/pkg/config
+bld/perl
 bld/dlfcn
+bld/pkg/config
 {% endblock %}
 
 {% block c_rename_symbol %}
