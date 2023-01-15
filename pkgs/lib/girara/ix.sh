@@ -9,7 +9,8 @@ sha:f44a7d1f78d54fa2dda361f8cdbcbbbdb226758310fba98d3296f9f4eeead283
 lib/c
 lib/glib
 lib/gtk/3
-lib/json/c
+lib/notify
+lib/json/glib
 {% endblock %}
 
 {% block bld_tool %}
@@ -18,5 +19,5 @@ bld/gettext
 {% endblock %}
 
 {% block meson_flags %}
-notify=disabled
+notify=enabled
 {% endblock %}
