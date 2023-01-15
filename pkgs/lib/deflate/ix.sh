@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/ebiggers/libdeflate/archive/refs/tags/v1.16.tar.gz
-sha:e301128ae6c3e257a69848bae89b5b68bb7f6e65d165a93ef6dd107079e67edd
+https://github.com/ebiggers/libdeflate/archive/refs/tags/v1.17.tar.gz
+sha:fa4615af671513fa2a53dc2e7a89ff502792e2bdfc046869ef35160fcc373763
 {% endblock %}
 
 {% block lib_deps %}
