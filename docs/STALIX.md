@@ -83,7 +83,7 @@ https://askubuntu.com/questions/866161/setting-path-variable-in-etc-environment-
 
 Every user session must start from the login shell, even in ssh daemon.
 
-[Patch from dropbear](https://github.com/pg83/ix/blob/main/pkgs/bin/dropbear/ix.sh#L7) to launch all processes, including non-interactive ones, with login shell.
+[Patch for dropbear](https://github.com/pg83/ix/blob/main/pkgs/bin/dropbear/ix.sh#L7) to launch all processes, including non-interactive ones, with login shell.
 
 ## Interaction with upstream
 
@@ -95,7 +95,7 @@ Quite often, upstream is not interested in the ideas inherent in Stal/IX:
 * https://github.com/swaywm/sway/issues/6828 - sway doesn't want to patch for fully supervised process tree
 * https://github.com/skarnet/execline/issues/9 - we can't use the execline utilities in our startup scripts because their static build is too big
 * https://github.com/swaywm/sway/issues/4540 - tty freeze after sway death, and fix that can't enter upstream - https://github.com/pg83/ix/blob/main/pkgs/bin/fixtty/main.c
-* https://github.com/pg83/dlopen - fake dlopen, for projects that can't live without downloadable plugins
+* https://github.com/pg83/dlopen - fake dlopen, for projects that can't live without external plugins
 * https://github.com/pg83/ix/blob/main/pkgs/lib/gtk/4/stock/0.diff - XCURSOR_SIZE support in gtk
 * https://github.com/pg83/ix/blob/main/pkgs/lib/glib/ix/1.diff - support for alternative database of mime types in glib
 * https://github.com/pg83/ix/blob/main/pkgs/lib/lunasvg/gdk/io.cpp - custom gdk-pixbuf SVG loader, over lunasvg (instead of rsvg)
