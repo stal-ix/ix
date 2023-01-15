@@ -50,6 +50,7 @@ def enrich(d):
         d['llvm_target'] = {
             'aarch64': 'AArch64',
             'x86_64': 'X86',
+            'riscv64': 'TODO',
         }[d['gnu_arch']]
 
     if 'endian' not in d:
@@ -92,6 +93,9 @@ def get_raw_arch(n):
     if n == 'aarch64':
         return {'gnu_arch': 'aarch64', 'family': 'arm'}
 
+    if n == 'riscv64':
+        return {'gnu_arch': 'riscv64', 'family': 'riscv'}
+
     if n == 'darwin-arm64':
         return du(a('darwin'), a('arm64'))
 
@@ -103,6 +107,9 @@ def get_raw_arch(n):
 
     if n == 'linux-aarch64':
         return du(a('linux'), a('aarch64'), {'hw_vendor': 'pc'})
+
+    if n == 'linux-riscv64':
+        return du(a('linux'), a('riscv64'), {'hw_vendor': 'pc'})
 
     raise Exception(f'unknown arch {n}')
 
