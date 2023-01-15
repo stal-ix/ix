@@ -16,29 +16,29 @@ This document contains a regularly replenishing list of Stal/IX and conventional
 
 One of the Stal/IX goals - from the very beginning to build the system in such a way that it’s possible to understand how it works, and not only use it conveniently.
 
-https://wiki.musl-libc.org/alternatives.html
-https://github.com/illiliti/libudev-zero
-https://busybox.net/tinyutils.html
+https://wiki.musl-libc.org/alternatives.html<br>
+https://github.com/illiliti/libudev-zero<br>
+https://busybox.net/tinyutils.html<br>
 https://connortumbleson.com/2022/11/28/open-source-saying-no/
 
 ## No FHS
 
-https://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard
+https://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard<br>
 https://github.com/pg83/ix/blob/main/docs/FS.md
 
 Overall, the file system will be familiar to those who know Nix/Guix.
 
 ## No systemd
 
-https://blog.darknedgy.net/technology/2020/05/02/0/
+https://blog.darknedgy.net/technology/2020/05/02/0/<br>
 https://www.phoronix.com/news/systemd-Git-Stats-2022
 
 Stal/IX currently uses runit as the most lightweight solution, perhaps, this will change in the future.
 
 ## Musl
 
-https://drewdevault.com/2020/09/25/A-story-of-two-libcs.html
-https://codebrowser.dev/glibc/glibc/nptl/pthread_cancel.c.html#99
+https://drewdevault.com/2020/09/25/A-story-of-two-libcs.html<br>
+https://codebrowser.dev/glibc/glibc/nptl/pthread_cancel.c.html#99<br>
 https://www.phoronix.com/news/Glibc-2.36-EAC-Problems
 
 Glibc does not fully support static linking. Stal/IX uses musl for internal needs, and allows to build custom soft with an arbitrary libc on a choice.
@@ -55,20 +55,20 @@ Consequence - there is not a single suid binary on the system. Sudo - the thin l
 
 Every process different from init has a parent different from init. All processes that fail to meet this requirement are killed by a specially dedicated background process. To manage services used runit, encouraging this behavior.
 
-https://github.com/swaywm/sway/issues/6828
-https://github.com/pg83/ix/blob/main/pkgs/bin/sched/staleprocs/staleprocs.sh
+https://github.com/swaywm/sway/issues/6828<br>
+https://github.com/pg83/ix/blob/main/pkgs/bin/sched/staleprocs/staleprocs.sh<br>
 https://unix.stackexchange.com/questions/250153/what-is-a-subreaper-process
 
 ## Static linking
 
 No ld.so!
 
-https://gavinhoward.com/2021/10/static-linking-considered-harmful-considered-harmful/
-https://lore.kernel.org/lkml/CAHk-=whs8QZf3YnifdLv57+FhBi5_WeNTG1B-suOES=RcUSmQg@mail.gmail.com/
-https://eli.thegreenplace.net/2013/07/09/library-order-in-static-linking
-https://habr.com/ru/post/451208
-https://lobste.rs/s/adr60v/single_binary_executable_packages
-https://nullprogram.com/blog/2018/05/27/
+https://gavinhoward.com/2021/10/static-linking-considered-harmful-considered-harmful/<br>
+https://lore.kernel.org/lkml/CAHk-=whs8QZf3YnifdLv57+FhBi5_WeNTG1B-suOES=RcUSmQg@mail.gmail.com/<br>
+https://eli.thegreenplace.net/2013/07/09/library-order-in-static-linking<br>
+https://habr.com/ru/post/451208<br>
+https://lobste.rs/s/adr60v/single_binary_executable_packages<br>
+https://nullprogram.com/blog/2018/05/27/<br>
 
 ## Wayland only
 
