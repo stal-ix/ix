@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-http://ftp.midnight-commander.org/mc-4.8.28.tar.xz
-sha:e994d9be9a7172e9ac4a4ad62107921f6aa312e668b056dfe5b8bcebbaf53803
+https://github.com/MidnightCommander/mc/archive/refs/tags/4.8.29-pre1.tar.gz
+sha:48e7fcd8433990b4df5c2579fb577f7ef95062ed3d8b206a0ca7ca37477fb1f5
 {% endblock %}
 
 {% block bld_libs %}
@@ -10,7 +10,6 @@ lib/c
 lib/intl
 lib/glib
 lib/iconv
-lib/{{self.typ().strip()}}
 {% endblock %}
 
 {% block bld_tool %}
@@ -18,7 +17,7 @@ bld/perl
 bld/gettext
 {% endblock %}
 
-{% block c_rename_symbol %}
+{% block c_rename_symbol1 %}
 tilde_expand
 update_panels
 {% endblock %}
@@ -28,6 +27,5 @@ shut_up
 {% endblock %}
 
 {% block configure_flags %}
---with-screen={{self.typ().strip()}}
 --with-search-engine=glib
 {% endblock %}
