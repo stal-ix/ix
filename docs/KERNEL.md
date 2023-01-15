@@ -1,14 +1,18 @@
-Prereq:
- * [FS.md](FS.md)
- * [IX.md](IX.md)
+# Kernel
 
-Disclaimer: this guide is not for the faint of heart! It assumes that you have an idea what a statically linked kernel is and know how to build it for your hardware in some source-based distro.
+> Prereq:<br>
+> [FS.md](FS.md)<br>
+> [IX.md](IX.md)<br>
 
-This guide implies `ix` package manager in your PATH:
+
+**_Disclaimer:_**<br>
+*This guide is not for the faint of heart! It assumes that you have an idea what a statically linked kernel is and know how to build it for your hardware in some source-based distro.*
+
+This guide implies **IX** package manager in your PATH:
 
 ```
-ix# export PATH=/mnt/ix/home/root/ix:${PATH} # assume we are in stal/ix installer, brefore reboot
-ix# export PATH=/home/root/ix:${PATH} # assume we are in stal/ix installer, after reboot
+ix# export PATH=/mnt/ix/home/root/ix:${PATH} # assume we are in stal/IX installer, before reboot
+ix# export PATH=/home/root/ix:${PATH} # assume we are in **stal/IX** installer, after reboot
 ix# export PATH=/your/local/checkout:${PATH} # assume per user local ix checkout
 ix# ix list
 ```
@@ -71,11 +75,14 @@ ix run set/menuconfig -- make HOSTCC=cc menuconfig
 
 You need to find all the modules from the list above in the configurator (it has a search!) and add them to the configuration.
 
+---
 Herewith:
 
  * Don't forget to add all the necessary buses for your devices (USB, I2C, PCIe, NVMe, etc.)
- * Some drivers require firmware. They'll need to be added to ix.sh for your kernel, as done in here: https://github.com/pg83/ix/blob/main/pkgs/bin/kernel/6/0/slot/vbox/ix.sh#L9. Pro tip: run `dmesg | grep firmware` on running system for information about missing firmware!
+ * Some drivers require firmware. They'll need to be added to ix.sh for your kernel, as done in here: https://github.com/pg83/ix/blob/main/pkgs/bin/kernel/6/0/slot/vbox/ix.sh#L9.<br>
+  Pro tip: run `dmesg | grep firmware` on running system for information about missing firmware!
  * Read how to build a kernel generally in a source based distro - https://wiki.gentoo.org/wiki/Kernel/Configuration
+---
 
 Or, alternatively, one can combine previous commands into one:
 
@@ -103,7 +110,7 @@ ix# ls /bin/kernel-*
 /bin/kernel-6-0-12-slot0
 ```
 
-Remember that path, you will need it later, in GRUB cli or, in grub.cfg.
+Remember that path, you will need it later, in GRUB cli or in grub.cfg.
 
 Or, alternatively, you can use separate realm for bootstrap kernel:
 
@@ -113,4 +120,4 @@ ix# ls /ix/realm/kernel/bin/kernel-*
 /ix/realm/kernel/bin/kernel-6-0-12-slot0
 ```
 
-Remember that path, you will need it later, in GRUB cli or, in grub.cfg.
+Remember that path, you will need it later, in GRUB cli or in grub.cfg.
