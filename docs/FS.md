@@ -1,6 +1,11 @@
-This document describes the stal/ix file system layout.
+# stal/IX Filesystem
 
-The /ix/store/ contains a folders set, each package corresponds to one folder. Folders form a content addressable store, that is, all paths uniquely identify a unique package.
+
+> This document describes the **stal/IX** file system layout.
+
+
+The /ix/store/ contains a folders set, each package corresponds to one folder.<br>
+Folders form a content addressable store, that is, all paths uniquely identify a unique package.
 
 ```
 pg-> ls -la /ix/store/ | head -n 10
@@ -29,7 +34,7 @@ lrwxrwxrwx    1 pg       10000           33 Dec 11 16:46 pg -> /ix/store/w5qTNK0
 lrwxrwxrwx    1 pg       10000           37 Dec 11 06:08 system -> /ix/store/oQfJCY3xa3jlPkNf-rlm-system
 ```
 
-Actually, these are "roots" by which the ix package manager can understand what is actively used in /ix/store/ and what can be safely removed using the `ix gc` command.
+Actually, these are "roots" by which the IX package manager can understand what is actively used in /ix/store/ and what can be safely removed using the `ix gc` command.
 
 Some realms are predefined:
 
