@@ -101,7 +101,8 @@ bin/meson/64
 bin/meson/100
 bin/swayimg
 bin/mc/slang
-bin/mc/ncurses
+bin/mc/curses/n
+bin/mc/curses/netbsd
 bin/mc
 bin/gzip
 bin/rlwrap
