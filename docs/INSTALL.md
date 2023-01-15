@@ -1,6 +1,9 @@
-Prereq:
- * [IX.md](IX.md)
- * [FS.md](FS.md)
+# Installation <br>
+
+> Prereq:<br>
+> [IX.md](IX.md)<br>
+> [FS.md](FS.md)<br>
+
 
 Load machine from some bootable media, like Ubuntu/Fedora/Nix livecd, launch terminal
 
@@ -16,7 +19,9 @@ test -f /usr/bin/g++ || yum install g++ || apt-get install g++
 test -f /usr/bin/git || yum install git || apt-get install git
 ```
 
-For general instructions about disk partitioning please refer to https://wiki.archlinux.org/title/installation_guide#Partition_the_disks.
+For general instructions about disk partitioning please refer to<br>
+https://wiki.archlinux.org/title/installation_guide#Partition_the_disks.<br>
+
 Somehow prepare xfs on /dev/xxx, with parted, mkfs.xfs, and mount it:
 
 ```
@@ -115,6 +120,6 @@ cd /home/root/ix
 ./ix mut $(./ix list)
 ```
 
-Rebuild world, again. And (add a whole new user, without sudo capability)[ETC.md]:
+Rebuild world, again. And [add a whole new user, without sudo capability](https://github.com/pg83/ix/blob/main/docs/ETC.md#:~:text=Add%20a%20whole%20new%20user%2C%20without%20sudo%20capability%3A)<br>
 
 Now try login from tty1
