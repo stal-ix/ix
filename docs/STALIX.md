@@ -41,8 +41,7 @@ https://drewdevault.com/2020/09/25/A-story-of-two-libcs.html<br>
 https://codebrowser.dev/glibc/glibc/nptl/pthread_cancel.c.html#99<br>
 https://www.phoronix.com/news/Glibc-2.36-EAC-Problems
 
-Glibc does not fully support static linking. **stal/IX** uses musl for internal needs, and allows to build custom soft<br>
-with an arbitrary libc on a choice.
+Glibc does not fully support static linking. **stal/IX** uses musl for internal needs, and allows to build custom soft with an arbitrary libc on a choice.
 
 ## Non-root package management
 
