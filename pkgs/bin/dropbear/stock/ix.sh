@@ -12,9 +12,6 @@ lib/tom/math
 lib/tom/crypt
 {% endblock %}
 
-{% block enable_static %}
-{% endblock %}
-
 {% block configure_flags %}
 --disable-bundled-libtom
 {% endblock %}
