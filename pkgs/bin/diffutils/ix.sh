@@ -1,8 +1,8 @@
 {% extends '//die/c/autohell.sh' %}
 
 {% block fetch %}
-https://ftp.gnu.org/gnu/diffutils/diffutils-3.7.tar.xz
-sha:b3a7a6221c3dc916085f0d205abf6b8e1ba443d4dd965118da364a1dc1cb3a26
+https://ftp.gnu.org/gnu/diffutils/diffutils-3.9.tar.xz
+sha:d80d3be90a201868de83d78dad3413ad88160cc53bcc36eb9eaf7c20dbf023f1
 {% endblock %}
 
 {% block bld_libs %}
