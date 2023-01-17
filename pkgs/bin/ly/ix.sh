@@ -31,12 +31,8 @@ lib/kernel
 lib/shim/x11
 {% endblock %}
 
-{% block setup_tools %}
-cat << EOF > git
-#!$(which sh)
-EOF
-
-chmod +x *
+{% block bld_tool %}
+bld/fakegit
 {% endblock %}
 
 {% block make_flags %}
