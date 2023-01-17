@@ -10,6 +10,7 @@ wrap_cc
 
 {% block bld_tool %}
 bin/prorab
+bld/fakelsb
 {% endblock %}
 
 {% block make_flags %}
