@@ -12,7 +12,7 @@ This guide implies **IX** package manager in your PATH:
 
 ```
 ix# export PATH=/mnt/ix/home/root/ix:${PATH} # assume we are in stal/IX installer, before reboot
-ix# export PATH=/home/root/ix:${PATH} # assume we are in **stal/IX** installer, after reboot
+ix# export PATH=/home/root/ix:${PATH} # assume we are in stal/IX installer, after reboot
 ix# export PATH=/your/local/checkout:${PATH} # assume per user local ix checkout
 ix# ix list
 ```
@@ -80,7 +80,7 @@ Herewith:
 
  * Don't forget to add all the necessary buses for your devices (USB, I2C, PCIe, NVMe, etc.)
  * Some drivers require firmware. They'll need to be added to ix.sh for your kernel, as done in here: https://github.com/pg83/ix/blob/main/pkgs/bin/kernel/6/0/slot/vbox/ix.sh#L9.<br>
-  Pro tip: run `dmesg | grep firmware` on running system for information about missing firmware!
+  *Pro tip:* run `dmesg | grep firmware` on running system for information about missing firmware!
  * Read how to build a kernel generally in a source based distro - https://wiki.gentoo.org/wiki/Kernel/Configuration
 ---
 
