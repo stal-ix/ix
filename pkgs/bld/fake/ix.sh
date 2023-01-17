@@ -3,7 +3,7 @@
 {% block install %}
 cd ${out}; mkdir bin; cd bin
 
-cat << EOF > itstool
+cat << EOF > {{tool_name}}
 #!/usr/bin/env sh
 EOF
 

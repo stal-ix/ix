@@ -10,7 +10,8 @@ wrap_cc
 
 {% block bld_tool %}
 bin/prorab
-bld/fakelsb
+bld/fake(tool_name=doxygen)
+bld/fake(tool_name=lsb_release)
 {% endblock %}
 
 {% block make_flags %}
