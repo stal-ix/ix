@@ -15,17 +15,13 @@ lib/shim/gnu
 {% block bld_tool %}
 bld/gettext
 bld/fakegit
+bld/fake(tool_name=docbook2man)
 {% endblock %}
 
 {% block patch %}
 find . -type f | while read l; do
     sed -e 's|sysconf(_SC_LONG_BIT)|LONG_BIT|' -i ${l}
 done
-{% endblock %}
-
-{% block setup_tools %}
->docbook2man
-chmod +x docbook2man
 {% endblock %}
 
 {% block make_flags %}
