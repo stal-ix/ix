@@ -1,6 +1,7 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
+bin/svgren
 bin/transmission/qt
 bin/tor
 bin/empty
