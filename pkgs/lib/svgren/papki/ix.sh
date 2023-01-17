@@ -1,4 +1,4 @@
-{% extends '//die/c/make.sh' %}
+{% extends '//lib/svgren/t/ix.sh' %}
 
 {% block fetch %}
 https://github.com/cppfw/papki/archive/refs/tags/1.0.119.tar.gz
@@ -10,25 +10,4 @@ lib/c
 lib/z
 lib/c++
 lib/svgren/utki
-{% endblock %}
-
-{% block bld_libs %}
-lib/shim/fake(lib_name=stdc++)
-{% endblock %}
-
-{% block build_flags %}
-wrap_cc
-{% endblock %}
-
-{% block bld_tool %}
-bin/prorab
-{% endblock %}
-
-{% block make_flags %}
--I ${PRORAB_DIR}
--I ${PRORAB_EXTRA_DIR}
-{% endblock %}
-
-{% block patch %}
-rm -rf tests
 {% endblock %}

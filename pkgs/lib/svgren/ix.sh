@@ -1,4 +1,4 @@
-{% extends '//die/c/make.sh' %}
+{% extends 't/ix.sh' %}
 
 {% block fetch %}
 https://github.com/cppfw/svgren/archive/refs/tags/0.6.2.tar.gz
@@ -12,24 +12,7 @@ lib/svgren/dom
 lib/svgren/agg
 {% endblock %}
 
-{% block bld_libs %}
-lib/shim/fake(lib_name=stdc++)
-{% endblock %}
-
 {% block build_flags %}
-wrap_cc
+{{super()}}
 shut_up
-{% endblock %}
-
-{% block bld_tool %}
-bin/prorab
-{% endblock %}
-
-{% block make_flags %}
--I ${PRORAB_DIR}
--I ${PRORAB_EXTRA_DIR}
-{% endblock %}
-
-{% block patch %}
-rm -rf tests
 {% endblock %}
