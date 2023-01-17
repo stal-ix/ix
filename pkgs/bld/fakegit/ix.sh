@@ -1,11 +1,5 @@
-{% extends '//die/proxy.sh' %}
+{% extends '//die/hub.sh' %}
 
-{% block install %}
-cd ${out}; mkdir bin; cd bin
-
-cat << EOF > git
-#!/usr/bin/env sh
-EOF
-
-chmod +x *
+{% block run_deps %}
+bld/fake(tool_name=git)
 {% endblock %}
