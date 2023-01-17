@@ -4,4 +4,5 @@
 bin/runsrv
 bin/unbound
 etc/user/unbound
+bin/unbound/runit/scripts
 {% endblock %}

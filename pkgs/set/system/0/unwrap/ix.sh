@@ -13,6 +13,7 @@ bin/seatd/runit
 bin/sndio/runit
 bin/dhcpcd/runit
 bin/ananicy/runit
+bin/unbound/runit
 
 {% if mingetty %}
 bin/mingetty/runit

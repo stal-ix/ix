@@ -22,7 +22,9 @@ mv man* share/man/
 cd etc
 
 cat << EOF > resolvconf.conf
+name_servers="127.0.0.1"
 resolv_conf=/var/run/resolvconf/resolv.conf
+unbound_conf=/var/run/resolvconf/unbound.conf
 EOF
 
 ln -s /var/run/resolvconf/resolv.conf resolv.conf

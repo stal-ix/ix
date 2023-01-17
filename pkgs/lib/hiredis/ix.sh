@@ -13,6 +13,10 @@ lib/c
 wrap_cc
 {% endblock %}
 
+{% block cmake_flags %}
+DISABLE_TESTS=ON
+{% endblock %}
+
 {% block env %}
 export COFLAGS="--with-hiredis=${out} --with-libhiredis=${out} \${COFLAGS}"
 {% endblock %}
