@@ -1,4 +1,4 @@
-# Installation <br>
+# Installation 
 
 > Prereq:<br>
 > [IX.md](IX.md)<br>
@@ -41,14 +41,14 @@ ln -s / usr
 mkdir -p home/root home/ix var sys proc dev
 ```
 
-Fetch IX package manager, will be used later, from ix user before reboot, and by root user, after reboot:
+Fetch **IX** package manager, will be used later, from ix user before reboot, and by root user, after reboot:
 
 ```
 # we do not want to change our CWD
 (cd home/root; git clone https://github.com/pg83/ix.git)
 ```
 
-Add symlink, to trick IX package manager:
+Add symlink, to trick **IX** package manager:
 
 ```
 ln -s /mnt/ix/ix /ix
@@ -80,7 +80,7 @@ Some quirks(TODO(pg): describe):
 mkdir -m 0777 ix/realm
 ```
 
-And run IX package manager, to populate our rootfs with bootstrap tools!
+And run **IX** package manager, to populate our rootfs with bootstrap tools!
 
 ```
 cd home/root/ix
