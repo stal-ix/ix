@@ -1,44 +1,33 @@
-{% extends '//die/c/meson.sh' %}
-
-{% block fetch %}
-https://github.com/GNOME/gthumb/archive/refs/tags/3.12.2.tar.gz
-sha:386fabb6f4a780f723d27f268a1819d08dd7a6ebb3b5e52181d625f23c6d9188
-{% endblock %}
-
-{% block bld_libs %}
-lib/c
-lib/jxl
-lib/tiff
-lib/webp
-lib/heif
-lib/exiv2
-lib/gtk/3
-lib/secret
-lib/lcms/2
-lib/gsettings/desktop/schemas
-{% endblock %}
-
-{% block meson_flags %}
-colord=false
-clutter=false
-gstreamer=false
-libraw=false
-librsvg=false
-webservices=false
-libbrasero=false
-{% endblock %}
+{% extends '//bin/gthumb/stock/ix.sh' %}
 
 {% block bld_tool %}
-bld/glib
-bld/gnome
-bld/gettext
+{{super()}}
+bld/dlfcn
+bld/librarian
 {% endblock %}
 
-{% block patch %}
-# need itstool
-sed -e 's|.*subdir.*help.*||' -e 's|.*subdir.*po.*||' -i meson.build
+{% block build %}
+{{super()}}
+cd ${tmp}/obj
+rm -rf gthumb/test-*
+cd extensions
+for x in $(ls -A); do (
+    cd ${x}
+    patchns lib${x}.a ns${x}_
+) done
+for x in $(ls -A); do
+    cat << EOF
+${x} gthumb_extension_activate ns${x}_gthumb_extension_activate
+${x} gthumb_extension_configure ns${x}_gthumb_extension_configure
+${x} gthumb_extension_deactivate ns${x}_gthumb_extension_deactivate
+${x} gthumb_extension_is_configurable ns${x}_gthumb_extension_is_configurable
+EOF
+done | dl_stubs > ../stubs.c
+cd ..
+cc -o gthumb.exe stubs.c $(find gthumb -type f -name '*.o') $(find extensions -type f -name '*.a')
 {% endblock %}
 
-{% block postinstall %}
-:
+{% block install %}
+{{super()}}
+cp ${tmp}/obj/gthumb.exe ${out}/bin/gthumb
 {% endblock %}
