@@ -21,6 +21,10 @@ lib/json/c
 lib/openssl
 {% endblock %}
 
+{% block host_libs %}
+lib/c
+{% endblock %}
+
 {% block bld_tool %}
 bin/gzip
 {% endblock %}
