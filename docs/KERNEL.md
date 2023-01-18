@@ -8,20 +8,24 @@
 **_Disclaimer:_**<br>
 *This guide is not for the faint of heart! It assumes that you have an idea what a statically linked kernel is and know how to build it for your hardware in some source-based distro.*
 
+---
+
 This guide implies **IX** package manager in your PATH:
 
 ```
-ix# export PATH=/mnt/ix/home/root/ix:${PATH} # assume we are in stal/IX installer, before reboot
-ix# export PATH=/home/root/ix:${PATH} # assume we are in stal/IX installer, after reboot
-ix# export PATH=/your/local/checkout:${PATH} # assume per user local ix checkout
+ix# export PATH=/mnt/ix/home/root/ix:${PATH} # assumes we are in stal/IX installer, before reboot
+ix# export PATH=/home/root/ix:${PATH}        # assumes we are in stal/IX installer, after reboot
+ix# export PATH=/your/local/checkout:${PATH} # assumes local ix checkout per user
 ix# ix list
 ```
+---
 
 The guide intended to build a kernel, which contains all the components necessary for operation.
 
 First you need to know the list of modules for your hardware support.
 
-You can download some conventional distro with a working hardware auto-detection system to do this. It needs to execute:
+You can download some conventional distro with a working hardware auto-detection system to do this.<br>
+It needs to execute:
 
 ```
 ubuntu# lspci -k
