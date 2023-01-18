@@ -7,6 +7,7 @@ sha:2bd27a510b2451cc799a1928c66b47102241cd603c08a15798de4920e079c4da
 
 {% block bld_tool %}
 bin/prorab/base
+bld/fake(tool_name=lsb_release)
 {% endblock %}
 
 {% block make_flags %}
