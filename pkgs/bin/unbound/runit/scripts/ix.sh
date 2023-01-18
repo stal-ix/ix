@@ -13,7 +13,7 @@ EOF
 
 cat << EOF > run
 #!/bin/sh
-exec srv unbound unbound -d -c ${PWD}/unbound.conf -p -vvv
+exec srv unbound unbound -d -p -v -c ${PWD}/unbound.conf
 EOF
 
 chmod +x run
