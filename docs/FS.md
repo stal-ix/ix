@@ -34,7 +34,7 @@ lrwxrwxrwx    1 pg       10000           33 Dec 11 16:46 pg -> /ix/store/w5qTNK0
 lrwxrwxrwx    1 pg       10000           37 Dec 11 06:08 system -> /ix/store/oQfJCY3xa3jlPkNf-rlm-system
 ```
 
-Actually, these are "roots" by which the IX package manager can understand what is actively used in /ix/store/ and what can be safely removed using the `ix gc` command.
+Actually, these are "roots" by which the **IX** package manager can understand what is actively used in /ix/store/ and what can be safely removed using the `ix gc` command.
 
 Some realms are predefined:
 
