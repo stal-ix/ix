@@ -1,5 +1,10 @@
 {% extends '//lib/jxl/t/ix.sh' %}
 
+{% block build_flags %}
+{{super()}}
+wrap_cc
+{% endblock %}
+
 {% block bld_libs %}
 lib/jpeg
 lib/giflib
