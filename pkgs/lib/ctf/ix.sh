@@ -19,6 +19,10 @@ lib/c
 lib/bfd
 {% endblock %}
 
+{% block host_libs %}
+lib/c
+{% endblock %}
+
 {% block configure_flags %}
 --enable-targets=all
 --enable-install-libbfd

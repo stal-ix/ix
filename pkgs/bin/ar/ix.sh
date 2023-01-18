@@ -15,6 +15,10 @@ lib/iberty
 lib/opcodes
 {% endblock %}
 
+{% block host_libs %}
+lib/c
+{% endblock %}
+
 {% block bld_tool %}
 {{super()}}
 bld/flex
