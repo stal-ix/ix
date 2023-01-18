@@ -16,6 +16,10 @@ lib/zstd
 lib/sframe
 {% endblock %}
 
+{% block host_libs %}
+lib/c
+{% endblock %}
+
 {% block bld_tool %}
 bld/texinfo
 {% endblock %}
