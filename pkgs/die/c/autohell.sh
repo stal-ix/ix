@@ -5,6 +5,13 @@ export FORCE_UNSAFE_CONFIGURE=1
 {{super()}}
 {% endblock %}
 
+{% block configure %}
+{% if not tool %}
+export CC_FOR_BUILD=${HOST_CC}
+{% endif %}
+{{super()}}
+{% endblock %}
+
 {% block step_patch %}
 {% block touch_yl %}
 find . -type f | grep '\.[yl]$' | while read l; do

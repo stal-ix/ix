@@ -81,6 +81,7 @@ class RenderContext:
             'uniq_id': pkg.uniq_id,
             kind: True,
             pkg.flags['target']['os']: True,
+            pkg.flags['target']['arch']: True,
             'boot': pkg.name.startswith('bld/boot/'),
         }, pkg.flags)
 
