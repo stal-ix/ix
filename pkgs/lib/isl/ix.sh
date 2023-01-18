@@ -10,11 +10,15 @@ lib/c
 lib/gmp
 {% endblock %}
 
+{% block host_libs %}
+lib/c
+{% endblock %}
+
 {% block setup %}
 export ac_cv_have_decl___builtin_ffs=yes
 {% endblock %}
 
-{% block env_lib %}
+{% block env %}
 export COFLAGS="--with-isl=${out} \${COFLAGS}"
 {% endblock %}
 
