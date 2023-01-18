@@ -13,6 +13,10 @@ lib/readline
 {{super()}}
 {% endblock %}
 
+{% block host_libs %}
+lib/c
+{% endblock %}
+
 {% block bld_tool %}
 bld/byacc
 bld/texinfo
