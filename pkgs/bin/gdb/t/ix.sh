@@ -17,9 +17,7 @@ lib/expat
 lib/xxhash
 lib/curses
 lib/kernel
-{% if x86_64 %}
 lib/intel/pt
-{% endif %}
 lib/readline
 {% endblock %}
 
@@ -45,9 +43,7 @@ export ac_cv_search_tgetent=no
 --with-system-zlib
 --with-system-readline
 --disable-inprocess-agent
-{% if x86_64 %}
 --with-intel-pt=yes
-{% endif %}
 --with-xxhash=yes
 --with-lzma=yes
 --with-expat=yes

@@ -20,9 +20,8 @@ ln -s ${HOST_CC} gcc
 {% endblock %}
 
 {% block build %}
-make HOST_CC=gcc mrproper
-make headers
-
+make mrproper
+make CROSS_COMPILE=1 ARCH={{target.linux_arch}} headers
 find usr/include -name '.*' -delete
 rm usr/include/Makefile
 {% endblock %}
