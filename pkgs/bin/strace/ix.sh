@@ -12,6 +12,10 @@ lib/iberty
 lib/elfutils
 {% endblock %}
 
+{% block host_libs %}
+lib/c
+{% endblock %}
+
 {% block configure_flags %}
 --enable-mpers=no
 --with-libdw
