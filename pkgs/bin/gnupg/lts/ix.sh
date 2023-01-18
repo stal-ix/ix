@@ -19,6 +19,10 @@ lib/readline
 lib/gpg/error
 {% endblock %}
 
+{% block host_libs %}
+lib/c
+{% endblock %}
+
 {% block patch %}
 sed -e 's|ks_ldap_free_state.*||' -i dirmngr/server.c
 {% endblock %}

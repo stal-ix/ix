@@ -10,6 +10,10 @@ lib/c
 lib/gpg/error
 {% endblock %}
 
+{% block host_libs %}
+lib/c
+{% endblock %}
+
 {% block setup %}
 export OPTFLAGS="${OPTFLAGS} -O2"
 {% endblock %}

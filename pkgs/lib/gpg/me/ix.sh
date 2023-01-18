@@ -12,6 +12,10 @@ lib/assuan
 lib/gpg/error
 {% endblock %}
 
+{% block host_libs %}
+lib/c
+{% endblock %}
+
 {% block bld_libs %}
 # for tests
 lib/shim/fake(lib_name=stdc++)

@@ -10,6 +10,10 @@ lib/c
 lib/gpg/error
 {% endblock %}
 
+{% block host_libs %}
+lib/c
+{% endblock %}
+
 {% block bld_tool %}
 bld/bash
 bld/bison
