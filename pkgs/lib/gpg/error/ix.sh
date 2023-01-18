@@ -9,6 +9,10 @@ sha:b7e11a64246bbe5ef37748de43b245abd72cfcd53c9ae5e7fc5ca59f1c81268d
 lib/c
 {% endblock %}
 
+{% block host_libs %}
+lib/c
+{% endblock %}
+
 {% block configure_flags %}
 --enable-install-gpg-error-config
 {% endblock %}
