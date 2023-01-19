@@ -1,8 +1,8 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://git.sr.ht/~exec64/imv/archive/v4.3.1.tar.gz
-sha:88d16885017b74b594ddd6a03ef20294a6cc053f04ccc2e1edef69f3515f7999
+https://git.sr.ht/~exec64/imv/archive/v4.4.0.tar.gz
+sha:55431c8c27fbe82d05955f61bde38ba15febf8a7fd8f0f741e504bae0b823bcf
 {% endblock %}
 
 {% block bld_libs %}
