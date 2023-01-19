@@ -10,3 +10,18 @@ lib/adwaita
 lib/mesa/glesv2/dl
 {{super()}}
 {% endblock %}
+
+{% block std_env %}
+bld/wrapcc/dynlink/new
+{{super()}}
+{% endblock %}
+
+{% block build_flags %}
+{{super()}}
+wrap_cc
+{% endblock %}
+
+{% block configure %}
+export LDFLAGS="-rdynamic ${LDFLAGS}"
+{{super()}}
+{% endblock %}
