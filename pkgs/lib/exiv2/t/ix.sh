@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/Exiv2/exiv2/releases/download/v0.27.5/exiv2-0.27.5-Source.tar.gz
-sha:35a58618ab236a901ca4928b0ad8b31007ebdc0386d904409d825024e45ea6e2
+https://github.com/Exiv2/exiv2/archive/refs/tags/v0.27.6.tar.gz
+sha:f16ee5ff08b6994c66106109417857f13e711fca100ac43c6a403d4f02b59602
 {% endblock %}
 
 {% block lib_deps %}
