@@ -202,7 +202,30 @@ extensions/image_rotation/libimage_rotation.a.p/rotation-utils.c.o
 extensions/edit_metadata/libedit_metadata.a.p/utils.c.o
 extensions/contact_sheet/libcontact_sheet.a.p/meson-generated_.._contact-sheet-enum-types.c.o
 EOF
-cc -o gthumb.exe stubs.c $(find gthumb -type f -name '*.o') $(find extensions -type f -name '*.a') $(cat lst | sort | uniq)
+
+
+find gthumb -type f -name '*.o' >> obj
+find extensions -type f -name '*.a' >> obj
+cat lst | sort | uniq >> obj
+
+(
+llvm-nm $(cat obj) | grep ' T ' | grep _get_resource | sed -e 's|.* ||' | while read l; do
+    echo "void ${l}(void);"
+done
+
+cat << EOF
+__attribute__((constructor))
+void ensure_res() {
+EOF
+
+llvm-nm $(cat obj) | grep ' T ' | grep _get_resource | sed -e 's|.* ||' | while read l; do
+    echo "${l}();"
+done
+
+echo "}"
+) >> stubs.c
+
+cc -o gthumb.exe stubs.c $(cat obj)
 {% endblock %}
 
 {% block install %}
