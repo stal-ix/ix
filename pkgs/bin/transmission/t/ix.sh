@@ -7,6 +7,7 @@ sha:9144652fe742f7f7dd6657716e378da60b751aaeda8bef8344b3eefc4db255f2
 
 {% block lib_deps %}
 lib/c
+lib/b64
 lib/utp
 lib/dht
 lib/psl
@@ -21,6 +22,7 @@ lib/mini/upnpc
 {% block cmake_flags %}
 ENABLE_TESTS=OFF
 USE_SYSTEM_PSL=ON
+USE_SYSTEM_B64=ON
 USE_SYSTEM_EVENT2=ON
 USE_SYSTEM_DEFLATE=ON
 {% endblock %}
