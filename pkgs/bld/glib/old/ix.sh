@@ -1,6 +1,6 @@
 {% extends '//bin/glib/codegen/ix.sh' %}
 
 {% block fetch %}
-https://download.gnome.org/sources/glib/2.75/glib-2.75.1.tar.xz
-sha:96fd22355a542cca96c31082f2d09b72cb5a3454b6ea60c1be17c987a18a6b93
+https://download.gnome.org/sources/glib/2.74/glib-2.74.5.tar.xz
+sha:ceba83a5999ceb31a4c4fc9921207cb9ffffd2ab1d6ec03c162d3f608a5c14c8
 {% endblock %}
