@@ -3,8 +3,8 @@
 {% block run_deps %}
 bld/sh
 bld/box
-bld/glib
 bld/python
+bld/glib/old
 {% endblock %}
 
 {% block install %}
