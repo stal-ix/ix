@@ -1,6 +1,6 @@
 # stal/IX
 
- 
+
 This document contains a regularly replenishing list of **stal/IX** and conventional Linux differences.
 
 ## Minimalism
