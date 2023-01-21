@@ -17,7 +17,6 @@ lib/openssl
 USE_SSH=ON
 BUILD_TESTS=OFF
 REGEX_BACKEND=pcre2
-PCRE2_INCLUDE_DIR=${PCRE2_HEADERS}
 {% endblock %}
 
 {% block build_flags %}
