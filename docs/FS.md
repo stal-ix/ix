@@ -1,7 +1,7 @@
-# stal/IX Filesystem<br>
+# stal/IX Filesystem
 
 
-> This document describes the **stal/IX** file system layout.<br>
+> This document describes the **stal/IX** file system layout.
 
 
 The /ix/store/ contains a folders set, each package corresponds to one folder.<br>
