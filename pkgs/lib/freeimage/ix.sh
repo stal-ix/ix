@@ -34,6 +34,18 @@ wrap_cc
 shut_up
 {% endblock %}
 
+{% block c_rename_symbol %}
+_TIFFcalloc
+_TIFFerrorHandler
+_TIFFfree
+_TIFFmalloc
+_TIFFmemcmp
+_TIFFmemcpy
+_TIFFmemset
+_TIFFrealloc
+_TIFFwarningHandler
+{% endblock %}
+
 {% block bld_tool %}
 bld/pkg/config
 {% endblock %}
