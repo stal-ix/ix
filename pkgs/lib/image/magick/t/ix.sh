@@ -10,6 +10,7 @@ lib/c
 lib/c++
 lib/jxl
 lib/png
+lib/raw
 lib/jpeg
 lib/webp
 lib/tiff
