@@ -1,8 +1,8 @@
-# etc <br>
+# etc
 
 > Prereq:<br>
 > [FS.md](FS.md)<br>
-> [IX.md](IX.md)<br>
+> [IX.md](IX.md)
 
 
 /etc in **stal/IX** is a symbolic link to etc/ from the system realm:
