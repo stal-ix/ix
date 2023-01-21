@@ -59,7 +59,7 @@ USE_LUA=OFF
 USE_XCF=OFF
 USE_GMIC=OFF
 USE_GAME=OFF
-USE_LIBRAW=OFF
+#USE_LIBRAW=OFF
 USE_COLORD=OFF
 USE_OPENMP=OFF
 USE_OPENCL=OFF
@@ -73,4 +73,15 @@ BINARY_PACKAGE_BUILD=ON
 
 {% block postinstall %}
 :
+{% endblock %}
+
+{% block build %}
+(
+cd src/external/LibRaw
+find . -type f -name '*.h' -delete
+find . -type f -name '*.cpp' | while read l; do
+    echo > ${l}
+done
+)
+{{super()}}
 {% endblock %}
