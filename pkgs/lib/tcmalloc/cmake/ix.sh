@@ -52,3 +52,7 @@ DEFAULT_BUILD_DEBUGALLOC=OFF
 rm ${out}/lib/libtcmalloc_minimal.a
 ar qL ${out}/lib/libtcmalloc_minimal.a $(find ${tmp}/obj -type f -name '*.a')
 {% endblock %}
+
+{% block env %}
+export ac_cv_func_malloc_0_nonnull=yes
+{% endblock %}
