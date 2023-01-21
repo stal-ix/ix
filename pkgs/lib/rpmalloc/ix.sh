@@ -16,8 +16,16 @@ bld/python
 
 {% block ninja_build_dir %}${PWD}{% endblock %}
 
+{% block build_flags %}
+shut_up
+{% endblock %}
+
 {% block configure %}
-python3 ./configure.py --host {{host.os}} --target {{target.os}} --toolchain clang
+python3 ./configure.py \
+    --host {{host.os}} \
+    --target {{target.os}} \
+    --arch {{target.linux_arch.replace('_', '-')}} \
+    --toolchain clang
 {% endblock %}
 
 {% block cpp_defines %}
@@ -32,4 +40,8 @@ cp $(find lib/ -type f -name librpmalloc.a | grep release) ${out}/lib/
 
 {% block patch %}
 sed -e 's|if not .*|if 0:|' -i configure.py
+{% endblock %}
+
+{% block env %}
+export ac_cv_func_malloc_0_nonnull=yes
 {% endblock %}
