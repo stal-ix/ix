@@ -7,7 +7,7 @@
 
 /etc in **stal/IX** is a symbolic link to etc/ from the system realm:
 
-```
+```shell
 ix# ls -la /etc
 lrwxrwxrwx ... /etc -> /ix/realm/system/etc
 ```
@@ -22,26 +22,27 @@ Most of these packages are etc/ prefixed and are located in https://github.com/p
 
 Add a whole new user, without sudo capability:
 
-```
+```shell
 # cryptpw will read password from command line
 root# ix mut system etc/user/0 --user={{username}} --hash=$(cryptpw)
 # shell will relaunch thereafter
 mkdir /home/{{username}}
 chown {{username}} /home/{{username}}
 ```
+
 ---
 
 It's important to note that, after almost any change to the system realm, runit will restart the entire process tree. Effectively, this will result in you being kicked into your login manager (emptty/mingetty/etc)
 
 Activate zram0:
 
-```
+```shell
 ix# ix mut system etc/zram/0
 ```
 
 Remove the root console from tty5 that we added during installation:
 
-```
+```shell
 ix# ix mut system --failsafe=-
 ```
 
@@ -51,12 +52,12 @@ Replace mingetty with emptty as login manager:
 
 *Warning:* if you don't have ~/.emptty configured, and don't have a failsafe console on tty5, then you may need a recovery.
 
-```
+```shell
 ix# ix mut system --mingetty=- --emptty
 ```
 
 The system uses UTC time by default. There is currently no global timezone setting, each user must set their own timezone in their session script:
 
-```
+```shell
 export TZ=Europe/Moscow
 ```
