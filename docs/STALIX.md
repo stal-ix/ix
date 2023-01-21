@@ -1,19 +1,19 @@
 # stal/IX
 
-   
+ 
 This document contains a regularly replenishing list of **stal/IX** and conventional Linux differences.
 
 ## Minimalism
 
 > "UNIX is simple and coherent..." - Dennis Ritchie
-  
+
 > "GNU's Not UNIX" -  Richard Stallman
 
 **stal/IX** is not UNIX or Linux in the usual sense of these terms.
 
 **stal/IX** - an attempt to rethink some fundamentals without touching API and ABI Linux.
 
-One of the **stal/IX** goals - from the very beginning to build the system in such a way that it’s possible to understand how it works,<br>  
+One of the **stal/IX** goals - from the very beginning to build the system in such a way that it’s possible to understand how it works,<br>
 and not only use it conveniently.
 
 https://wiki.musl-libc.org/alternatives.html<br>
@@ -22,7 +22,7 @@ https://busybox.net/tinyutils.html<br>
 https://connortumbleson.com/2022/11/28/open-source-saying-no/
 
 ## No FHS
-  
+
 https://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard<br>
 https://github.com/pg83/ix/blob/main/docs/FS.md
 
@@ -60,7 +60,7 @@ https://github.com/pg83/ix/blob/main/pkgs/bin/sched/staleprocs/staleprocs.sh<br>
 https://unix.stackexchange.com/questions/250153/what-is-a-subreaper-process
 
 ## Static linking
-  
+
 No ld.so!
 
 https://gavinhoward.com/2021/10/static-linking-considered-harmful-considered-harmful/<br>
