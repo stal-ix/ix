@@ -12,3 +12,12 @@ lib/c
 {% block env_lib %}
 export CPPFLAGS="-I${out}/include/pixman-1 \${CPPFLAGS}"
 {% endblock %}
+
+{% block meson_flags %}
+{% if aarch64 %}
+gnu-inline-asm=disabled
+arm-simd=disabled
+neon=disabled
+a64-neon=disabled
+{% endif %}
+{% endblock %}
