@@ -7,13 +7,13 @@
 
 Load machine from some bootable media, like Ubuntu/Fedora/Nix livecd, launch terminal
 
-```
+```shell
 sudo sh
 ```
 
 Install tools:
 
-```
+```shell
 test -f /usr/bin/parted || yum install parted || apt-get install parted
 test -f /usr/bin/g++ || yum install g++ || apt-get install g++
 test -f /usr/bin/git || yum install git || apt-get install git
@@ -24,14 +24,14 @@ https://wiki.archlinux.org/title/installation_guide#Partition_the_disks.<br>
 
 Somehow prepare xfs on /dev/xxx, with parted, mkfs.xfs, and mount it:
 
-```
+```shell
 mkdir /mnt/ix
 mount /dev/xxx /mnt/ix
 ```
 
 Prepare some symlinks, thus forming our future rootfs:
 
-```
+```shell
 cd /mnt/ix
 
 ln -s ix/realm/system/bin bin
@@ -43,46 +43,47 @@ mkdir -p home/root home/ix var sys proc dev
 
 Fetch **IX** package manager, will be used later, from ix user before reboot, and by root user, after reboot:
 
-```
+```shell
 # we do not want to change our CWD
 (cd home/root; git clone https://github.com/pg83/ix.git)
 ```
 
 Add symlink, to trick **IX** package manager:
 
-```
+```shell
 ln -s /mnt/ix/ix /ix
 ```
 
 Add user ix, which will own all packages in system(note: uid 1000 important):
 
-```
+```shell
 useradd -u 1000 ix
 ```
 
 Prepare managed dir, owned by user ix, in /ix, /ix/realm, etc:
 
-```
+```shell
 mkdir ix
 chown ix ix
 ```
 
 Change user, from now on will run all commands under ix user:
 
-```
+```shell
 su ix
 cd /mnt/ix
 ```
 
-Some quirks(TODO(pg): describe):
+Some quirks:
 
-```
+```shell
+# TODO(pg83): describe
 mkdir -m 0777 ix/realm
 ```
 
 And run **IX** package manager, to populate our rootfs with bootstrap tools!
 
-```
+```shell
 cd home/root/ix
 export IX_ROOT=/ix
 export IX_EXEC_KIND=local
@@ -93,7 +94,7 @@ export IX_EXEC_KIND=local
 
 Now [prepare bootable kernel for your hardware](KERNEL.md). Reboot into grub, run:
 
-```
+```shell
 > linux (hdX,gptY)/boot/kernel ro root=/dev/xxx
 > boot
 ```
@@ -101,13 +102,13 @@ Now [prepare bootable kernel for your hardware](KERNEL.md). Reboot into grub, ru
 where X, Y - GRUB disk and partition numbers for /dev/xxx.
 After successful boot, switch into tty5, there will be root prompt.
 
-```
+```shell
 . /etc/session
 ```
 
 Now we have some useful utilities in PATH, from /ix/realm/root.
 
-```
+```shell
 cd /home/root/ix
 # very important step, rebuild system realm
 ./ix mut system
@@ -115,7 +116,7 @@ cd /home/root/ix
 
 Shell will relaunch thereafter. Actually, after any modification of system realm, runit will reload all supervised process tree.
 
-```
+```shell
 cd /home/root/ix
 ./ix mut $(./ix list)
 ```
