@@ -12,9 +12,9 @@
 
 This guide implies **IX** package manager in your PATH:
 
-```
+```shell
 ix# export PATH=/mnt/ix/home/root/ix:${PATH} # assumes we are in stal/IX installer, before reboot
-ix# export PATH=/home/root/ix:${PATH}        # assumes we are in stal/IX installer, after reboot
+ix# export PATH=/home/root/ix:${PATH} # assumes we are in stal/IX installer, after reboot
 ix# export PATH=/your/local/checkout:${PATH} # assumes local ix checkout per user
 ix# ix list
 ```
@@ -27,7 +27,7 @@ First you need to know the list of modules for your hardware support.
 You can download some conventional distro with a working hardware auto-detection system to do this.<br>
 It needs to execute:
 
-```
+```shell
 ubuntu# lspci -k
 03:00.0 Class 0300: 1002:1638 amdgpu
 02:00.0 Class 0108: 144d:a809 nvme
@@ -51,7 +51,7 @@ The last column - a list of modules we need, write it down.
 
 Next we need to prepare a directory with kernel sources, which we are building a config for. Let's say, we want to use kernel 6.0:
 
-```
+```shell
 ix# mkdir kernel
 ix# cd kernel
 
@@ -67,13 +67,13 @@ ix# cd linux-6.0.12
 
 Copy old kernel config to our tree:
 
-```
+```shell
 ix# cp $(dirname $(which ix))/pkgs/bin/kernel/6/0/slot/1/cfg ./.config
 ```
 
 Run the kernel configurator:
 
-```
+```shell
 ix run set/menuconfig -- make HOSTCC=cc menuconfig
 ```
 
@@ -90,7 +90,7 @@ Herewith:
 
 Or, alternatively, one can combine previous commands into one:
 
-```
+```shell
 ...
 ix# cd linux-6.0.12
 ix# ix tool reconf $(dirname $(which ix))/pkgs/bin/kernel/6/0/slot/1/cfg
@@ -102,13 +102,13 @@ Mostly, to understand what needs to be included in the kernel config for a parti
 
 After the kernel is configured, copy the modified config to the base:
 
-```
+```shell
 ix# cp .config $(dirname $(which ix))/pkgs/bin/kernel/6/0/slot/1/cfg
 ```
 
 After that you can add the kernel to the system realm in the usual way:
 
-```
+```shell
 ix# ix mut system bin/kernel/6/0/slot/1
 ix# ls /bin/kernel-*
 /bin/kernel-6-0-12-slot0
@@ -118,7 +118,7 @@ Remember that path, you will need it later, in GRUB cli or in grub.cfg.
 
 Or, alternatively, you can use separate realm for bootstrap kernel:
 
-```
+```shell
 ix# ix mut kernel bin/kernel/6/0/slot/1
 ix# ls /ix/realm/kernel/bin/kernel-*
 /ix/realm/kernel/bin/kernel-6-0-12-slot0
