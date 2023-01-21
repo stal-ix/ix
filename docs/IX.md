@@ -16,7 +16,7 @@ The **stal/IX** on disk installing guide you can read in [INSTALL.md](INSTALL.md
 
 Here, for example, is bzip2 package contents:
 
-```
+```shell
 ix# find /ix/store/0GsKotnAh74LIcvO-bin-bzip2/
 /ix/store/0GsKotnAh74LIcvO-bin-bzip2/
 /ix/store/0GsKotnAh74LIcvO-bin-bzip2/bin
@@ -39,7 +39,7 @@ All packages form a content addressable store, substantially similar to the same
 
 *Realm* - also a package, it contains symlinks to other packages:
 
-```
+```shell
 ix# find /ix/store/0Q4rkMy8J8D1WTVn-rlm-system
 ...
 /ix/store/0Q4rkMy8J8D1WTVn-rlm-system/bin/runit
@@ -62,7 +62,7 @@ ix# find /ix/store/0Q4rkMy8J8D1WTVn-rlm-system
 
 Some realms have anchor links that mark the current (used) version of some realm:
 
-```
+```shell
 ix# ls -la /ix/realm/
 total 0
 drwxrwxrwx .
@@ -75,13 +75,13 @@ lrwxrwxrwx system -> /ix/store/PIYCjYiLy1AIxVVl-rlm-system
 
 To use the contents of some realm, just add this realm to your PATH:
 
-```
+```shell
 ix# export PATH="/ix/realm/boot/bin:${PATH}"
 ```
 
 To make this setting happen automatically, in the first line of your session script, do:
 
-```
+```shell
 . /etc/session
 ```
 
@@ -89,7 +89,7 @@ To make this setting happen automatically, in the first line of your session scr
 
 To start using **IX** clone it from github.
 
-```
+```shell
 ix# git clone git@github.com:pg83/ix.git
 ix# export PATH=${PWD}/ix:${PATH}
 ```
@@ -100,13 +100,13 @@ The basic command when using **IX** is `ix mut`.
 
 Install the sway program in realm gui:
 
-```
+```shell
 ix# ix mut gui bin/sway
 ```
 
 Install the sway program in realm gui, specifying that it should use the 3d accelerated driver for AMD GPU:
 
-```
+```shell
 ix# ix mut gui bin/sway --mesa_driver=radv
 ```
 
@@ -114,50 +114,50 @@ ix# ix mut gui bin/sway --mesa_driver=radv
 
 Let's say that all programs in realm gui should use AMD GPU:
 
-```
+```shell
 ix# ix mut gui --mesa_driver=radv
 ```
 
 And remove mesa_driver flag, for software 3D:
 
-```
+```shell
 ix# ix mut system --mesa_driver=-
 ```
 
 Add a browser to the realm gui:
 
-```
+```shell
 ix# ix mut gui bin/epiphany
 ```
 
 We are fed up with sway and want to use wayfire:
 
-```
+```shell
 ix# ix mut gui -bin/sway bin/wayfire
 ```
 
 Update all installed programs in the gui realm:
 
-```
+```shell
 ix# ix mut gui
 ```
 
 By the way, to manipulate your named realm, you can simply omit its name from ix cli:
 
-```
+```shell
 ix# ix mut bin/telegram/desktop
 ix# ix mut -bin/epiphany +bin/links
 ```
 
 The command can manipulate any number of realms at the same time. The ambiguity is resolved by the fact that realm names cannot contain /, and package names always contain it:
 
-```
+```shell
 ix# ix mut gui +bin/dosbox -bin/qemu tui +bin/links
 ```
 
 Flags you specify with `--`, apply to the realm if no package was previously specified within that realm, otherwise to the package:
 
-```
+```shell
 ix# ix mut --mesa_driver=radv +bin/sway --mesa_driver=iris
 ```
 
@@ -172,11 +172,11 @@ Within a single command, all changes to one realm happen atomically, but anchor 
 
 Explain yourself what the following commands do:
 
-```
+```shell
 ix# ix mut A bin/P --X=Y bin/P --X=Z -bin/P
 ```
 
-```
+```shell
 ix# ix mut A -bin/P B +bin/P C +bin/P --X=Y
 ```
 
@@ -211,7 +211,7 @@ These commands are available through the `ix tool`:
 
 Search for the wanted package by name:
 
-```
+```shell
 ix# ix tool listall | grep ssh
 lib/ssh/2
 lib/ssh
@@ -224,7 +224,7 @@ bin/tinyssh
 
 Show all packages that need to be updated (uses repology.org and fuzzy search):
 
-```
+```shell
 ix# ix tool upver
 libmpc 1.3.1
 courier-mta 1.2.1
