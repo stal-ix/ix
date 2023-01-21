@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/MisterTea/EternalTerminal/archive/refs/tags/et-v6.2.1.tar.gz
-sha:fdf68a51cb8b62b3dbbacd1d2aeba5d5491e5142e65c97713c2f1ce61d4fdbed
+https://github.com/MisterTea/EternalTerminal/archive/refs/tags/et-v6.2.4.tar.gz
+sha:95cfb79bc2f25d19eb84ca3c28dba860bb52b3750334d373adeb2cd061de6ba6
 {% endblock %}
 
 {% block bld_libs %}
