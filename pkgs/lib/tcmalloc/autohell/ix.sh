@@ -50,3 +50,7 @@ install-libLTLIBRARIES
 {{super()}}
 rm ${out}/lib/libtcmalloc_minimal_debug.a
 {% endblock %}
+
+{% block env %}
+export ac_cv_func_malloc_0_nonnull=yes
+{% endblock %}

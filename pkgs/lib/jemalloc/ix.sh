@@ -54,3 +54,7 @@ void* reallocarray(void* p, size_t need, size_t size) {
 }
 EOF
 {% endblock %}
+
+{% block env %}
+export ac_cv_func_malloc_0_nonnull=yes
+{% endblock %}

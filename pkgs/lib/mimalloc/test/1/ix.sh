@@ -20,6 +20,8 @@ int main() {
     std::cerr << errno << std::endl;
     std::cerr << (size_t)reallocarray(0, 0, 16) << std::endl;
     std::cerr << errno << std::endl;
+    std::cerr << (size_t)malloc(0) << std::endl;
+    std::cerr << errno << std::endl;
 }
 EOF
 

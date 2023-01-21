@@ -14,6 +14,7 @@ lib/c/naked
 MI_USE_CXX=OFF
 {% endblock %}
 
-{% block env_lib %}
+{% block env %}
 export CPPFLAGS="-I${out}/include/mimalloc-1.7 \${CPPFLAGS}"
+export ac_cv_func_malloc_0_nonnull=yes
 {% endblock %}

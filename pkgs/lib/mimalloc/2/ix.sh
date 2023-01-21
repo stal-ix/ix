@@ -30,6 +30,7 @@ mv mimalloc-*/* ./
 rm -rf mimalloc-*
 {% endblock %}
 
-{% block env_lib %}
+{% block env %}
 export CPPFLAGS="-I${out}/include/mimalloc-2.0 \${CPPFLAGS}"
+export ac_cv_func_malloc_0_nonnull=yes
 {% endblock %}
