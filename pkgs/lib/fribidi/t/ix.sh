@@ -1,4 +1,4 @@
-{% extends '//die/c/meson.sh' %}
+{% extends '//die/c/meson_cross.sh' %}
 
 {% block fetch %}
 https://github.com/fribidi/fribidi/archive/refs/tags/v1.0.12.tar.gz
