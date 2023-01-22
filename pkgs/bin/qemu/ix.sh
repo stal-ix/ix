@@ -55,7 +55,7 @@ wrap_cc
 --disable-plugins
 --audio-drv-list=sdl
 --with-coroutine=ucontext
---target-list="{{target.arch}}-softmmu"
+--target-list={{for_target or target.arch + '-softmmu'}}
 {% endblock %}
 
 {% block setup %}
