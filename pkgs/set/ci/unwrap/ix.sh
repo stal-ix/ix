@@ -1,6 +1,7 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
+bin/stp
 bin/cpuid
 bin/smenu
 bin/gthumb
