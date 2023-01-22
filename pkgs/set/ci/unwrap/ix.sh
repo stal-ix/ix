@@ -533,7 +533,7 @@ bin/lisgd
 bin/mariadb
 bin/nvtop
 bin/postgresql
-#bin/catatonit
+bin/catatonit
 bin/wireshark
 #bin/uftrace
 bin/7z

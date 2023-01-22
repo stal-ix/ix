@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://github.com/openSUSE/catatonit/archive/refs/tags/v0.1.7.tar.gz
-sha:e22bc72ebc23762dad8f5d2ed9d5ab1aaad567bdd54422f1d1da775277a93296
+https://github.com/openSUSE/catatonit/archive/d8d72fea155c144ed3bf298a35a1aba5625a5656.tar.gz
+sem:041d742ff44484c78593ba8ce37e7dfd4fe67b1feb4ac5ea24bdd3968fdc9d55
 {% endblock %}
 
 {% block bld_libs %}
