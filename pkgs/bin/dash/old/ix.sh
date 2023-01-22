@@ -1,4 +1,4 @@
-{% extends '//bin/dash/ix.sh' %}
+{% extends '//bin/dash/t/ix.sh' %}
 
 {% block fetch %}
 http://gondor.apana.org.au/~herbert/dash/files/dash-0.5.11.3.tar.gz
