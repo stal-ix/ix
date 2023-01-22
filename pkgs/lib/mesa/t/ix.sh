@@ -66,6 +66,3 @@ EOF
 
 chmod +x bin/install_megadrivers.py
 {% endblock %}
-
-{% block meson_cross %}
-{% endblock %}
