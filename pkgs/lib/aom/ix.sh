@@ -15,15 +15,34 @@ lib/c++
 
 {% block bld_tool %}
 bld/perl
+{% if x86_64 %}
 bin/nasm
+{% endif %}
 {% endblock %}
 
 {% block cmake_flags %}
+AOM_TARGET_CPU={{target.arch}}
 ENABLE_EXAMPLES=OFF
+ENABLE_WERROR=OFF
 ENABLE_TESTS=OFF
 ENABLE_TOOLS=OFF
 ENABLE_DOCS=OFF
+{% if x86_64 %}
+ENABLE_AVX=ON
+ENABLE_MMX=ON
+ENABLE_SSE=ON
+ENABLE_VSX=ON
+ENABLE_AVX2=ON
 ENABLE_NASM=ON
+ENABLE_SSE2=ON
+ENABLE_SSE3=ON
+ENABLE_SSSE3=ON
+ENABLE_SSE4_1=ON
+ENABLE_SSE4_2=ON
+{% endif %}
+{% if aarch64 %}
+ENABLE_NEON=ON
+{% endif %}
 {% endblock %}
 
 {% block install %}
