@@ -1,6 +1,7 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
+bin/wayland/tracer
 bin/stp
 bin/cpuid
 bin/smenu
