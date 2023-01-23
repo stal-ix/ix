@@ -56,7 +56,7 @@ ix# ix mut system --failsafe=-
 ix# ix mut system --mingetty=- --emptty
 ```
 
-## Timezone settings
+## Timezone settings:
 The system uses UTC time by default. There is currently no global timezone setting, each user must set their own timezone in their session script:
 
 ```shell
