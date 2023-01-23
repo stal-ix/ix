@@ -16,9 +16,11 @@ Files in the IX store are read only, they can't be changed. Therefore, the only 
 
 Most of these packages are etc/ prefixed and are located in https://github.com/pg83/ix/tree/main/pkgs/etc<br>
 
-## Examples
+*Warning:* It's important to note that, after almost any change to the system realm, runit will restart the entire process tree. Effectively, this will result in you being kicked into your login manager (emptty/mingetty/etc).
 
-Add a whole new user, without sudo capability:
+## Add user
+
+Without sudo capability:
 
 ```shell
 # cryptpw will read password from command line
@@ -27,8 +29,6 @@ root# ix mut system etc/user/0 --user={{username}} --hash=$(cryptpw)
 mkdir /home/{{username}}
 chown {{username}} /home/{{username}}
 ```
-
-It's important to note that, after almost any change to the system realm, runit will restart the entire process tree. Effectively, this will result in you being kicked into your login manager (emptty/mingetty/etc).
 
 ## Activate zram0
 
