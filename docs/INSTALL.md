@@ -38,14 +38,7 @@ ln -s ix/realm/system/bin bin
 ln -s ix/realm/system/etc etc
 ln -s / usr
 
-mkdir -p home/root home/ix var sys proc dev
-```
-
-Fetch **IX** package manager, will be used later, from ix user before reboot, and by root user, after reboot:
-
-```shell
-# we do not want to change our CWD
-(cd home/root; git clone https://github.com/pg83/ix.git)
+mkdir -p home/root var sys proc dev
 ```
 
 Add symlink, to trick **IX** package manager:
@@ -67,11 +60,25 @@ mkdir ix
 chown ix ix
 ```
 
+Prepare ix userhome, owned by ix:
+
+```shell
+mkdir home/ix
+chown ix home/ix
+```
+
 Change user, from now on will run all commands under ix user:
 
 ```shell
 su ix
 cd /mnt/ix
+```
+
+Fetch **IX** package manager, will be used later, from ix user before reboot, and by root user, after reboot:
+
+```shell
+# we do not want to change our CWD
+(cd home/ix; git clone https://github.com/pg83/ix.git)
 ```
 
 Some quirks:
@@ -84,7 +91,7 @@ mkdir -m 0777 ix/realm
 And run **IX** package manager, to populate our rootfs with bootstrap tools!
 
 ```shell
-cd home/root/ix
+cd home/ix/ix
 export IX_ROOT=/ix
 export IX_EXEC_KIND=local
 ./ix mut system set/stalix --failsafe --mingetty etc/zram/0
@@ -109,7 +116,7 @@ After successful boot, switch into tty5, there will be root prompt.
 Now we have some useful utilities in PATH, from /ix/realm/root.
 
 ```shell
-cd /home/root/ix
+cd /home/ix/ix
 # very important step, rebuild system realm
 ./ix mut system
 ```
@@ -117,7 +124,7 @@ cd /home/root/ix
 Shell will relaunch thereafter. Actually, after any modification of system realm, runit will reload all supervised process tree.
 
 ```shell
-cd /home/root/ix
+cd /home/ix/ix
 ./ix mut $(./ix list)
 ```
 

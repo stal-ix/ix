@@ -13,8 +13,8 @@
 This guide implies **IX** package manager in your PATH:
 
 ```shell
-ix# export PATH=/mnt/ix/home/root/ix:${PATH} # assumes we are in stal/IX installer, before reboot
-ix# export PATH=/home/root/ix:${PATH} # assumes we are in stal/IX installer, after reboot
+ix# export PATH=/mnt/ix/home/ix/ix:${PATH}   # assumes we are in stal/IX installer, before reboot
+ix# export PATH=/home/ix/ix:${PATH}          # assumes we are in stal/IX installer, after reboot
 ix# export PATH=/your/local/checkout:${PATH} # assumes local ix checkout per user
 ix# ix list
 ```
