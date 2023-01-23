@@ -15,6 +15,7 @@ lib/e2fsprogs
 {% endblock %}
 
 {% block bld_tool %}
+bin/gzip
 bld/bash
 bld/gettext
 {% endblock %}
@@ -25,7 +26,15 @@ bld/gettext
 {% endblock %}
 
 {% block patch %}
+cat << EOF >> include/buildmacros
+INSTALL_MAN = echo XXX
+EOF
+
 sed -e 's|/bin/bash|/usr/bin/env bash|' -i install-sh
+{% endblock %}
+
+{% block build_flags %}
+shut_up
 {% endblock %}
 
 {% block install %}
