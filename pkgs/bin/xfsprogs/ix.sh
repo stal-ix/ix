@@ -25,11 +25,11 @@ bld/gettext
 --enable-blkid=no
 {% endblock %}
 
-{% block patch %}
-cat << EOF >> include/buildmacros
-INSTALL_MAN = echo XXX
-EOF
+{% block make_flags %}
+INSTALL=install
+{% endblock %}
 
+{% block patch %}
 sed -e 's|/bin/bash|/usr/bin/env bash|' -i install-sh
 {% endblock %}
 
