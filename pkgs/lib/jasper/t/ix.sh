@@ -10,3 +10,8 @@ lib/c
 lib/heif
 lib/jpeg
 {% endblock %}
+
+{% block cmake_flags %}
+JAS_CROSSCOMPILING=ON
+JAS_STDC_VERSION=201112L
+{% endblock %}

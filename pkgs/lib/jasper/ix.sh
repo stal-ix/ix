@@ -1,4 +1,4 @@
-{% extends '//lib/jasper/t/ix.sh' %}
+{% extends 't/ix.sh' %}
 
 {% block cmake_flags %}
 {{super()}}
