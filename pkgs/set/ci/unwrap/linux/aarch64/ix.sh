@@ -13,6 +13,7 @@ bin/foot
 bin/make
 bin/ninja
 bin/bsdtar
+bin/convert
 set/box/gnu
 bin/coreutils
 {% endblock %}
