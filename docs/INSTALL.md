@@ -47,34 +47,34 @@ Add symlink, to trick **IX** package manager:
 ln -s /mnt/ix/ix /ix
 ```
 
-Add user ix, which will own all packages in system(note: uid 1000 important):
+Add user **ix**, which will own all packages in system(note: uid 1000 important):
 
 ```shell
 useradd -u 1000 ix
 ```
 
-Prepare managed dir, owned by user ix, in /ix, /ix/realm, etc:
+Prepare managed dir, owned by user **ix**, in /ix, /ix/realm, etc:
 
 ```shell
 mkdir ix
 chown ix ix
 ```
 
-Prepare ix userhome, owned by ix:
+Prepare **ix** user home, owned by **ix**:
 
 ```shell
 mkdir home/ix
 chown ix home/ix
 ```
 
-Change user, from now on will run all commands under ix user:
+Change user, from now on will run all commands under **ix** user:
 
 ```shell
 su ix
 cd /mnt/ix
 ```
 
-Fetch **IX** package manager, will be used later, from ix user before reboot, and by root user, after reboot:
+Fetch **IX** package manager, will be used later, from **ix** user before reboot, and by **root** user, after reboot:
 
 ```shell
 # we do not want to change our CWD
@@ -88,7 +88,7 @@ Some quirks:
 mkdir -m 0777 ix/realm
 ```
 
-And run **IX** package manager, to populate our rootfs with bootstrap tools!
+And run **IX** package manager, to populate our root fs with bootstrap tools!
 
 ```shell
 cd home/ix/ix
