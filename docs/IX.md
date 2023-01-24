@@ -184,7 +184,7 @@ ix# ix mut A -bin/P B +bin/P C +bin/P --X=Y
 
 `ix run`
 
-Эта оманда готовит новый realm, и запускает в нем произвольную команду:
+This command prepares a new realm and runs an arbitrary command in it:
 
 ```shell
 ix# ix run \
@@ -196,7 +196,7 @@ Version: ImageMagick 7.1.0-58 Q16-HDRI aarch64
     https://imagemagick.org
 ```
 
-Пример показывает, как запустить программу, собранную под aarch64, на x86_64, с использованием qemu.
+The example shows how to run a program built under aarch64 on x86_64 using qemu.
 
 `ix let`
 
