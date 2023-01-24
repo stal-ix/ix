@@ -1,7 +1,7 @@
 {% extends '//bin/gdb/t/ix.sh' %}
 
 {% block bld_libs %}
-bin/gdb/py(edit=readline)
+bin/gdb/bundle/py(edit=readline)
 {{super()}}
 {% endblock %}
 
