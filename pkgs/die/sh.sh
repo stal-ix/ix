@@ -65,6 +65,14 @@ export TMPDIR=${PWD}/tmp
 ) < /dev/null
 
 {% block epilogue %}
+{% block fix_mtime  %}
+if command -v find; then
+    find ${out} -type f | while read l; do
+        touch -m -t 197001010000.00 "${l}"
+    done
+fi
+{% endblock %}
+
 {% block chmod_ro %}
 if command -v find; then
     find ${out} | sort -r | while read l; do
