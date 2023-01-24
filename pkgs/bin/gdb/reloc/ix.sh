@@ -11,7 +11,7 @@ bin/python/11
 {% endblock %}
 
 {% block bld_libs %}
-lib/python
+lib/python/3/cross
 {{super()}}
 {% endblock %}
 
