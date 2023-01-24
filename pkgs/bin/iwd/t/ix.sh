@@ -7,10 +7,12 @@ sha:dfeada6d1680221fb128dc6be50fc2d6b40e314b98458acbd696418f8da5c570
 
 {% block bld_libs %}
 lib/c
+lib/ell
 lib/kernel
 {% endblock %}
 
 {% block configure_flags %}
+--enable-external-ell
 --with-dbus-datadir=${out}/etc
 --disable-systemd-service
 --libexecdir=${out}/bin
