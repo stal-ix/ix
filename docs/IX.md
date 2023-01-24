@@ -182,6 +182,22 @@ ix# ix mut A -bin/P B +bin/P C +bin/P --X=Y
 
 ---
 
+`ix run`
+
+Эта оманда готовит новый realm, и запускает в нем произвольную команду:
+
+```shell
+ix# ix run \
+    bin/qemu --for_target=aarch64-linux-user \
+    bin/convert --target=linux-aarch64 \
+    -- qemu-aarch64 '$(command -v convert)'
+READY /ix/store/uFlUrE6DQMb3SC2l-rlm-ephemeral/touch
+Version: ImageMagick 7.1.0-58 Q16-HDRI aarch64
+    https://imagemagick.org
+```
+
+Пример показывает, как запустить программу, собранную под aarch64, на x86_64, с использованием qemu.
+
 `ix let`
 
 This command does everything the same as `ix mut`, but doesn't switch the anchor link. The command is useful to inspect the contents of the resulting realm before switching.

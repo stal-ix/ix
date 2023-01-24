@@ -11,10 +11,9 @@ This document contains a regularly replenishing list of **stal/IX** and conventi
 
 **stal/IX** is not UNIX or Linux in the usual sense of these terms.
 
-**stal/IX** - an attempt to rethink some fundamentals without touching API and ABI Linux.
+**stal/IX** - an attempt to rethink some fundamentals without touching Linux API and ABI.
 
-One of the **stal/IX** goals - from the very beginning to build the system in such a way that it’s possible to understand how it works,<br>
-and not only use it conveniently.
+One of the **stal/IX** goals - from the very beginning to build the system in such a way that it’s possible to understand how it works, and not only use it conveniently.
 
 https://wiki.musl-libc.org/alternatives.html<br>
 https://github.com/illiliti/libudev-zero<br>
@@ -26,7 +25,7 @@ https://connortumbleson.com/2022/11/28/open-source-saying-no/
 https://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard<br>
 https://github.com/pg83/ix/blob/main/docs/FS.md
 
-Overall, the file system will be familiar to those who know Nix/Guix.
+Overall, the file system will be familiar to those who know Nix/Guix. Atomic updates, multi-versioning - all here!
 
 ## No systemd
 
@@ -74,8 +73,7 @@ https://nullprogram.com/blog/2018/05/27/<br>
 
 https://drewdevault.com/2021/02/02/Anti-Wayland-horseshit.html
 
-X is dying, and to maintain the efficiency of the IX package base running with X means doing work that one day will have to be thrown out.<br>
-We don’t have enough resources for that.
+X is dying, and to maintain the efficiency of the IX package base running with X means doing work that one day will have to be thrown out. We don’t have enough resources for that.
 
 ## Login shell
 
@@ -85,6 +83,10 @@ https://askubuntu.com/questions/866161/setting-path-variable-in-etc-environment-
 Every user session must start from the login shell, even in ssh daemon.
 
 [Patch for dropbear](https://github.com/pg83/ix/blob/main/pkgs/bin/dropbear/ix.sh#L7) to launch all processes, including non-interactive ones, with login shell.
+
+## Cross-compile by default
+
+Все пакеты собираются так, как будто host platform != target platform, тем самым, мы достигаем того, что пакетная база бОльшую часть времени собирается под все платформы. У нас есть кросс-компилирующая автосборка под aarch64 и riscv!
 
 ## Interaction with upstream
 
@@ -104,9 +106,3 @@ Quite often, upstream is not interested in the ideas inherent in **stal/IX**:
 Therefore, we have to maintain a set of fixes and adjustments for upstream that will never be merged into upstream.
 
 Project goals are more important than the arrogant behavior of some maintainers!
-
----
-
-```shell
-# TODO(pg83): cc/c++ override
-```
