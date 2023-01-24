@@ -106,3 +106,5 @@ Quite often, upstream is not interested in the ideas inherent in **stal/IX**:
 Therefore, we have to maintain a set of fixes and adjustments for upstream that will never be merged into upstream.
 
 Project goals are more important than the arrogant behavior of some maintainers!
+
+[# TODO(pg83): cc/c++ override]: <> (This is a comment, it will not be included)
