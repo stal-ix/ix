@@ -13,3 +13,8 @@ lib/c++
 {% block bld_tool %}
 bld/re2c
 {% endblock %}
+
+{% block patch %}
+# fix riscv64 build
+sed -e 's|.*CMAKE_INTERPROCEDURAL_OPTIMIZATION_RELEASE.*||' -i CMakeLists.txt
+{% endblock %}
