@@ -8,3 +8,8 @@ md5:cccaa064ed860a2b4d1303811bf5c682
 {% block openssl_conf_opts %}
 no-hw
 {% endblock %}
+
+{% block openssl_platforms %}
+{{super()}}
+PLATFORM_linux_riscv64="linux-generic64"
+{% endblock %}

@@ -42,11 +42,13 @@ no-tests
 --openssldir={% block openssl_cert_dir %}"${OPENSSL_CERT_DIR}"{% endblock %}
 {% endset %}
 
+{% block openssl_platforms %}
 PLATFORM_darwin_arm64="darwin64-arm64-cc"
 PLATFORM_darwin_x86_64="darwin64-x86_64-cc"
 PLATFORM_linux_x86_64="linux-x86_64-clang"
 PLATFORM_linux_aarch64="linux-aarch64"
 PLATFORM_linux_riscv64="linux64-riscv64"
+{% endblock %}
 
 perl ./Configure \
     ${PLATFORM_{{target.os}}_{{target.arch}}} \

@@ -115,7 +115,7 @@ def get_raw_arch(n):
         return du(a('linux'), a('aarch64'), {'hw_vendor': 'pc'})
 
     if n == 'linux-riscv64':
-        return du(a('linux'), a('riscv64'), {'hw_vendor': 'pc'})
+        return du(a('linux'), a('riscv64'), {'hw_vendor': 'unknown'})
 
     raise Exception(f'unknown arch {n}')
 
