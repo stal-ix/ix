@@ -86,7 +86,7 @@ Every user session must start from the login shell, even in ssh daemon.
 
 ## Cross-compile by default
 
-Все пакеты собираются так, как будто host platform != target platform, тем самым, мы достигаем того, что пакетная база бОльшую часть времени собирается под все платформы. У нас есть кросс-компилирующая автосборка под aarch64 и riscv!
+All packages are compiled as if host platform != target platform, thus, we achieve that the package base is built for all platforms most of the time. We have a cross-compiling CI for aarch64 and riscv!
 
 ## Interaction with upstream
 
