@@ -71,17 +71,21 @@ class RenderContext:
         tmpl = pkg.manager.env.get_template(path)
         kind = pkg.flags['kind']
 
+        hp = pkg.host
+        tp = pkg.flags['target']
+
         args = cu.dict_dict_update({
             'ix': self,
             'ix_extract': ' '.join(pkg.config.ops.extract()),
-            'host': pkg.host,
+            'host': hp,
             'tool': pkg.name.startswith('bld/'),
             'name': pkg.name,
             'basename': os.path.basename(pkg.norm_name),
             'uniq_id': pkg.uniq_id,
+            'native': hp['id'] == tp['id'],
             kind: True,
-            pkg.flags['target']['os']: True,
-            pkg.flags['target']['arch']: True,
+            tp['os']: True,
+            tp['arch']: True,
             'boot': pkg.name.startswith('bld/boot/'),
         }, pkg.flags)
 

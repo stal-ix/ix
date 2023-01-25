@@ -22,7 +22,7 @@ echo 'no data tests'
 {% endblock %}
 {% endset %}
 
-{% if host.id == target.id %}
+{% if native %}
   {% if bin %}
     {{test_bin}}
   {% endif %}
