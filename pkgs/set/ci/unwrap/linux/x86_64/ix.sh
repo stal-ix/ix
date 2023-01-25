@@ -699,8 +699,8 @@ bin/feather/pad
 bin/hunspell
 bin/geany
 bin/codelite
+bin/dash/sh/old
 bin/dash/sh
-bin/dash/old
 bin/dash
 bin/zenithy
 bin/unifdef
