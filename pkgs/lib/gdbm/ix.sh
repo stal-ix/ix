@@ -1,15 +1,5 @@
-{% extends '//lib/gdbm/t/ix.sh' %}
+{% extends '//die/hub.sh' %}
 
-{% block configure_flags %}
---enable-libgdbm-compat
-{% endblock %}
-
-{% block install %}
-{{super()}}
-cd ${out}/lib
-ln -s libgdbm_compat.a libdbm.a
-{% endblock %}
-
-{% block env_lib %}
-export COFLAGS="--with-gdbm=${out} \${COFLAGS}"
+{% block lib_deps %}
+lib/gdbm/{{libgdbm_ver or 'full'}}
 {% endblock %}

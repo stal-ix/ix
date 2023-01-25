@@ -1,4 +1,4 @@
-{% extends '//lib/gdbm/t/ix.sh' %}
+{% extends '//lib/gdbm/full/t/ix.sh' %}
 
 {% block bld_libs %}
 lib/intl
