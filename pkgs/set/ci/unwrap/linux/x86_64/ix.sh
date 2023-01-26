@@ -703,5 +703,7 @@ bin/dash/sh/old
 bin/dash/sh
 bin/dash
 bin/zenithy
+bin/zenithy/3
+bin/zenithy/4
 bin/unifdef
 {% endblock %}
