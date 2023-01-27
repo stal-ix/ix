@@ -1,14 +1,14 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://www.freedesktop.org/software/fontconfig/release/fontconfig-2.13.94.tar.xz
-sha:a5f052cb73fd479ffb7b697980510903b563bbb55b8f7a2b001fcfb94026003c
+https://www.freedesktop.org/software/fontconfig/release/fontconfig-2.14.2.tar.xz
+sha:dba695b57bce15023d2ceedef82062c2b925e51f5d4cc4aef736cf13f60a468b
 {% endblock %}
 
 {% block bld_tool %}
-bld/gettext
 bin/gperf
 bld/python
+bld/gettext
 {% endblock %}
 
 {% block lib_deps %}
@@ -18,10 +18,12 @@ lib/json/c
 lib/freetype
 {% endblock %}
 
-{% block patch %}
-sed -e 's|.*fc_fonts_path = .*usr.*share.*|fc_fonts_path = []|' -i meson.build
-sed -e 's|.*add_install_script.*||' -i fc-cache/meson.build
+{% block meson_flags %}
+cache-build=disabled
+default-fonts-dirs=no
+{% endblock %}
 
+{% block patch %}
 find . -type f -name '*.c' | while read l; do
     sed -e 's|.*/usr/share.*||' \
         -e 's|.*/usr/local/share.*||' \
