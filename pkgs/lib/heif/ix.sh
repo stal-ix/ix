@@ -19,3 +19,8 @@ ENABLE_PLUGIN_LOADING=OFF
 WITH_RAV1E_PLUGIN=OFF
 WITH_SvtEnc_PLUGIN=OFF
 {% endblock %}
+
+{% block install %}
+{{super()}}
+sed -e 's|.*Libs.*stdc.*||' -i ${out}/lib/pkgconfig/libheif.pc
+{% endblock %}
