@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://github.com/strukturag/libde265/archive/refs/tags/v1.0.9.tar.gz
-sha:153554f407718a75f1e0ae197d35b43147ce282118a54f894554dbe27c32163d
+https://github.com/strukturag/libde265/archive/refs/tags/v1.0.10.tar.gz
+sha:534f21f7440297f3a687d927edc9bb11b44e0155f3a29c29adc79ffb1e55478d
 {% endblock %}
 
 {% block lib_deps %}
