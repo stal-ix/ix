@@ -1,8 +1,8 @@
 {% extends '//die/c/autohell.sh' %}
 
 {% block fetch %}
-https://gameoftrees.org/releases/portable/got-portable-0.79.tar.gz
-sha:78be1c0a905184ed1cb506468359faf87e4ee86851291b1670439c46bfb3d87c
+https://gameoftrees.org/releases/portable/got-portable-0.82.tar.gz
+sha:2dbd16678813b86fc60409c487d7dffcad1c8b08c35f772612122d33227f9662
 {% endblock %}
 
 {% block bld_libs %}
@@ -14,10 +14,7 @@ lib/event
 lib/curses
 lib/openssl
 lib/linux/util
-{% endblock %}
-
-{% block c_rename_symbol %}
-reallocarray
+lib/bsd/overlay
 {% endblock %}
 
 {% block bld_tool %}
@@ -25,6 +22,7 @@ bld/byacc
 {% endblock %}
 
 {% block patch %}
+>compat/reallocarray.c
 >compat/getprogname.c
 
 cat << EOF > xxx.h
