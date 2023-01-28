@@ -59,6 +59,12 @@ def enrich(d):
             'riscv64': 'riscv',
         }.get(d['gnu_arch'], d['gnu_arch'])
 
+    if 'go_arch' not in d:
+        d['go_arch'] = {
+            'aarch64': 'arm64',
+            'x86_64': 'amd64',
+        }.get(d['gnu_arch'], d['gnu_arch'])
+
     if 'endian' not in d:
         d['endian'] = 'little'
 

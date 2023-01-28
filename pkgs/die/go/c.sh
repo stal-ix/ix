@@ -12,6 +12,8 @@ lib/c
 {% endblock %}
 
 {% block step_setup %}
+export GOOS={{target.os}}
+export GOARCH={{target.go_arch}}
 export GOCACHE=${tmp}/cgo
 export GOMODCACHE=${tmp}/gmc
 export GOPROXY="https://proxy.golang.org,direct"
