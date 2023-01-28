@@ -48,6 +48,7 @@ def cli_run(ctx):
         env = {
             'PATH': f'/nowhere:{r.path}/bin',
             'TERM': os.environ.get('TERM', 'xterm'),
+            'TMPDIR': os.environ.get('TMPDIR', ''),
         }
 
         return subprocess.check_call(cmd, shell=True, env=env)
