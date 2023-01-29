@@ -3,8 +3,13 @@
 {# WIP #}
 
 {% block fetch %}
-https://github.com/SerenityOS/ladybird/archive/1ea60e77f22d766a910905b0c1e513c0d9687f25.zip
-sha:953fca6b81409aad4648d453686b83e036ea3365ec8d7eb40619f8dbe37b0198
+https://github.com/SerenityOS/serenity/archive/78def34c5e721ccacbfa19f5eeb27405da50dc23.zip
+sha:f35f89fb67b856955d4cd593d2de5e20716bb0fe44a3584bde79157a3b69fb31
+{% endblock %}
+
+{% block unpack %}
+{{super()}}
+cd Ladybird
 {% endblock %}
 
 {% block bld_libs %}
@@ -12,4 +17,13 @@ lib/c
 lib/c++
 lib/qt/6/base
 lib/qt/6/deps
+{% endblock %}
+
+{% block cmake_flags %}
+ENABLE_TIME_ZONE_DATABASE_DOWNLOAD=OFF
+ENABLE_UNICODE_DATABASE_DOWNLOAD=OFF
+{% endblock %}
+
+{% block patch %}
+chmod +x ../Userland/Libraries/LibWeb/Scripts/GenerateStyleSheetSource.sh
 {% endblock %}

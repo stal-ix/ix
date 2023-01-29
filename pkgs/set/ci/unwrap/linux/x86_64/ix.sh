@@ -663,7 +663,7 @@ bin/vis
 bin/w3m
 bin/tea
 bin/gendesk
-#bin/ladybird
+bin/ladybird
 bin/shadow
 bin/pdpmake
 bin/premake
