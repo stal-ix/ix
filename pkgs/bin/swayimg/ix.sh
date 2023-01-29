@@ -1,8 +1,8 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://github.com/artemsen/swayimg/archive/refs/tags/v1.8.tar.gz
-sha:d4b4988a673522d47c38939c3406dbb72bd213f857dd6116185cd9811b887b23
+https://github.com/artemsen/swayimg/archive/refs/tags/v1.10.tar.gz
+sha:fa20e9d5e260ca45ca3fb83343a6c7e7c93bcdb1184a99b19b630aec598f4b17
 {% endblock %}
 
 {% block bld_libs %}
@@ -26,8 +26,4 @@ bld/wayland
 
 {% block meson_flags %}
 jxl=enabled
-{% endblock %}
-
-{% block patch %}
-sed -e 's|libjxl|jxl|' -i meson.build
 {% endblock %}
