@@ -1,8 +1,8 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://github.com/swaywm/swaylock/archive/refs/tags/1.7.tar.gz
-sha:4c4d3c3ed838c085feb0b237b9aaaabdf66cbc05e2b034b2cb5c552957e620d6
+https://github.com/swaywm/swaylock/archive/refs/tags/v1.7.2.tar.gz
+sha:a42b456cc82bcaea9732d31e85e7d77a8ddd547759fba817e1617d8a1fd003e5
 {% endblock %}
 
 {% block bld_libs %}
