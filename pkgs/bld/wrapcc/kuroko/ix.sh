@@ -2,7 +2,6 @@
 
 {% block run_deps %}
 bld/kuroko
-bld/wrapcc/dynlink
 {% endblock %}
 
 {% block install %}

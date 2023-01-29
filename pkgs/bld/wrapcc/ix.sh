@@ -2,4 +2,5 @@
 
 {% block run_deps %}
 bld/wrapcc/kuroko
+bld/wrapcc/dynlink
 {% endblock %}

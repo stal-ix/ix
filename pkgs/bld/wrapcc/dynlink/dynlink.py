@@ -11,9 +11,13 @@ temp = os.environ['tmp'] + f'/{uuid}.o'
 comp = sys.argv[1]
 args = sys.argv[2:]
 
+print(f'DYNLINK {sys.argv}', file=sys.stderr)
+
 def it_obj():
     for x in args:
         if x.endswith('.o'):
+            yield x
+        elif x.endswith('.a'):
             yield x
 
 def sym_list():
@@ -21,7 +25,7 @@ def sym_list():
         'llvm-nm',
         '--defined-only',
         '--extern-only',
-    ]+ list(it_obj())
+    ] + list(it_obj())
 
     for l in subprocess.check_output(cmd).decode().split('\n'):
         if ' ' in l:

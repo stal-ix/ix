@@ -11,33 +11,12 @@ temp = os.environ['tmp'] + f'/{uuid}.o'
 comp = sys.argv[1]
 args = sys.argv[2:]
 
-def it_obj():
-    for x in args:
-        if x.endswith('.o'):
-            yield x
-
 def it_linkable():
     for x in args:
         if x.endswith('.o'):
             yield x
         elif x.endswith('.a'):
             yield x
-
-def sym_list():
-    cmd = [
-        'llvm-nm',
-        '--defined-only',
-        '--extern-only',
-    ]+ list(it_obj())
-
-    for l in subprocess.check_output(cmd).decode().split('\n'):
-        if ' ' in l:
-            yield l.split(' ')[-1].strip()
-
-def it_syms():
-    for s in sorted(sym_list()):
-        if s != 'main':
-            yield f'rdynamic {s} {s}'
 
 def it_init():
     data = subprocess.check_output(['llvm-nm', '-j', '-g'] + list(it_linkable()))
@@ -58,11 +37,6 @@ def it_init():
 sa = str(sys.argv)
 
 def it_parts():
-    if 0:
-        if '-rdynamic' in sa or '-export-dynamic' in sa:
-            dprog = '\n'.join(it_syms())
-            yield subprocess.check_output(['dl_stubs'], input=dprog.encode()).decode()
-
     prot = []
     call = []
 
