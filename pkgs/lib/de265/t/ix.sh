@@ -13,3 +13,9 @@ lib/c++
 {% block bld_libs %}
 lib/shim/fake(lib_name=stdc++)
 {% endblock %}
+
+{% block cmake_flags %}
+{% if not x86_64 %}
+DISABLE_SSE=ON
+{% endif %}
+{% endblock %}
