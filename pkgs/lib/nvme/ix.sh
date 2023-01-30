@@ -1,12 +1,13 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://github.com/linux-nvme/libnvme/archive/refs/tags/v1.2.tar.gz
-sha:2697c86e9d8597fcd264f8bf8af57a529346efa4f611ca2be855e3aa89b9eb2c
+https://github.com/linux-nvme/libnvme/archive/refs/tags/v1.3.tar.gz
+sha:259b8bc12ef81431222e7d9eb287b3c2051e316bab754bd4fa39f84401e5836d
 {% endblock %}
 
 {% block lib_deps %}
 lib/c
+lib/dbus
 lib/json/c
 lib/openssl
 lib/linux/util
