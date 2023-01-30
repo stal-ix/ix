@@ -15,6 +15,10 @@ lib/iconv
 cd libtextstyle
 {% endblock %}
 
+{% block setup %}
+export CFLAGS="-Wno-incompatible-function-pointer-types ${CFLAGS}"
+{% endblock %}
+
 {% block env_lib %}
 export COFLAGS="--with-libtextstyle-prefix=${out} \${COFLAGS}"
 {% endblock %}

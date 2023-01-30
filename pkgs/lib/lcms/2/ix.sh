@@ -8,3 +8,7 @@ sha:05869269f14e589b0b6d05a76f510c68c67fabb304904d16c6bd818abec80a83
 {% block lib_deps %}
 lib/c
 {% endblock %}
+
+{% block env %}
+export CPPFLAGS="-DCMS_NO_REGISTER_KEYWORD=1 \${CPPFLAGS}"
+{% endblock %}

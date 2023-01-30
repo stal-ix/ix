@@ -9,3 +9,7 @@ md5:9e251c0a618ad0824b51117d5d9db87e
 lib/c
 lib/c++
 {% endblock %}
+
+{% block setup %}
+export CFLAGS="-Wno-register ${CFLAGS}"
+{% endblock %}

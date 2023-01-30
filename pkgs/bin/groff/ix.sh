@@ -24,3 +24,7 @@ bld/texinfo
 {% block configure_flags %}
 --with-uchardet=yes
 {% endblock %}
+
+{% block setup %}
+export CFLAGS="-Wno-register ${CFLAGS}"
+{% endblock %}

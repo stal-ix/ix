@@ -11,3 +11,7 @@ lib/c++
 lib/tiff
 lib/jpeg
 {% endblock %}
+
+{% block setup %}
+export CFLAGS="-Wno-register ${CFLAGS}"
+{% endblock %}

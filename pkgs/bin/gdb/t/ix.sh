@@ -28,6 +28,7 @@ bld/texinfo
 {% endblock %}
 
 {% block setup %}
+export CFLAGS="-Wno-enum-constexpr-conversion ${CFLAGS}"
 export acx_cv_cc_gcc_supports_ada=no
 export ac_cv_search_tgetent=no
 {% endblock %}
