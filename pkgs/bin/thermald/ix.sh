@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://github.com/intel/thermal_daemon/archive/refs/tags/v2.5.1.tar.gz
-sha:75c165df45b3d09c904d314c8c19789158e9538f46e3d2b606457dc631eb3af5
+https://github.com/intel/thermal_daemon/archive/refs/tags/v2.5.2.tar.gz
+sha:9c69588b94a98b4843cd46e3bae570f55020b5e2bf1b417a0c6990f6519070c9
 {% endblock %}
 
 {% block bld_libs %}
@@ -17,10 +17,10 @@ lib/dbus/glib
 {% endblock %}
 
 {% block bld_tool %}
+bld/glib
 bld/python
 bld/gtkdoc
 lib/dbus/glib
-bld/glib
 bld/auto/archive
 {% endblock %}
 

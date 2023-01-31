@@ -1,8 +1,10 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://gitlab.gnome.org/GNOME/gtk-doc/-/archive/GTK_DOC_1_32/gtk-doc-GTK_DOC_1_32.tar.bz2
-sha:b248b0bbd7ddb1e15c52ffbbd4ce539fef318cac6c2cdac9a8b5788f855d0a55
+#https://gitlab.gnome.org/GNOME/gtk-doc/-/archive/GTK_DOC_1_32/gtk-doc-GTK_DOC_1_32.tar.bz2
+#sha:b248b0bbd7ddb1e15c52ffbbd4ce539fef318cac6c2cdac9a8b5788f855d0a55
+https://github.com/GNOME/gtk-doc/archive/refs/tags/GTK_DOC_1_32.tar.gz
+sha:0890c1f00d4817279be51602e67c4805daf264092adc58f9c04338566e8225ba
 {% endblock %}
 
 {% block bld_libs %}
