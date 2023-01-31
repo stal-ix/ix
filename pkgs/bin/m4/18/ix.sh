@@ -15,3 +15,8 @@ bld/texinfo
 {% block patch %}
 patch -p0 < ${src}/secure_snprintf.patch
 {% endblock %}
+
+{% block setup %}
+{{super()}}
+export CFLAGS="-Wno-incompatible-function-pointer-types ${CFLAGS}"
+{% endblock %}

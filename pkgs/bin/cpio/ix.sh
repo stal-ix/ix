@@ -17,4 +17,5 @@ bld/gettext
 
 {% block setup %}
 export CFLAGS="-fcommon ${CFLAGS}"
+export CFLAGS="-Wno-incompatible-function-pointer-types ${CFLAGS}"
 {% endblock %}

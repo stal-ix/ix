@@ -17,6 +17,10 @@ lib/darwin/framework/CoreFoundation
 export COFLAGS="--with-libgc-prefix=${out} \${COFLAGS}"
 {% endblock %}
 
+{% block patch %}
+sed -e 's|REAL_DLFUNC(dlopen)|stub_dlopen|' -i gc_dlopen.c
+{% endblock %}
+
 {% block cmake_flags %}
 build_tests=OFF
 enable_docs=OFF
