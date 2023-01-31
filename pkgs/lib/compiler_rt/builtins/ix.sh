@@ -2,7 +2,7 @@
 
 {% block lib_deps %}
 {% if linux %}
-lib/compiler_rt/builtins/{{crt_ver or '15'}}
+lib/compiler_rt/builtins/{{crt_ver or '16'}}
 {% else %}
 # TODO(pg): fix builtins for darwin
 lib/compiler_rt/builtins/hack
