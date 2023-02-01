@@ -26,3 +26,11 @@ https://stackoverflow.com/questions/62620514/building-static-executable-tmux-on-
 ```shell
 ix# ix build bin/tmux
 ```
+
+https://stackoverflow.com/questions/11570188/how-to-build-git-with-static-linking
+https://github.com/EXALAB/git-static
+https://gist.github.com/mishudark/3080857
+
+```shell
+ix# ix build bin/git
+```
