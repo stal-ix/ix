@@ -18,6 +18,8 @@ lib/bzip/2
 lib/brotli
 lib/gnutls
 lib/ng/http/2
+lib/shim/extra
+lib/bsd/overlay
 {% endblock %}
 
 {% block bld_tool %}
