@@ -7,3 +7,7 @@ lib/c
 {% block sources %}
 login.c
 {% endblock %}
+
+{% block env %}
+export CFLAGS="-Wno-implicit-function-declaration \${CFLAGS}"
+{% endblock %}
