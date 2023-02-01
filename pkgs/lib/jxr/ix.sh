@@ -16,6 +16,14 @@ bld/python
 bld/fake(tool_name=jrunscript)
 {% endblock %}
 
+{% block cpp_missing %}
+wchar.h
+{% endblock %}
+
+{% block setup %}
+export CFLAGS="-Wno-implicit-function-declaration ${CFLAGS}"
+{% endblock %}
+
 {% block make_flags %}
 DIR_INSTALL=${out}
 {% endblock %}
