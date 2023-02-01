@@ -400,7 +400,7 @@ bin/pkgconf
 bin/slibtool
 bin/minised
 bin/moe
-bin/star
+#bin/star
 bin/mupdf
 bin/certtool
 bin/python/lite
