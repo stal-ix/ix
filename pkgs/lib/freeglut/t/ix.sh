@@ -17,3 +17,7 @@ FREEGLUT_GLES=ON
 FREEGLUT_WAYLAND=ON
 FREEGLUT_BUILD_SHARED_LIBS=OFF
 {% endblock %}
+
+{% block cpp_missing %}
+GL/gl.h
+{% endblock %}
