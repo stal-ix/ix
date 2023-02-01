@@ -15,5 +15,5 @@ sed -e 's|mygetdents(fd|getdents(fd|' -i lib9/dirread.c
 {% endblock %}
 
 {% block setup %}
-export CFLAGS="-fcommon ${CFLAGS}"
+export CFLAGS="-fcommon -Wno-implicit-function-declaration ${CFLAGS}"
 {% endblock %}
