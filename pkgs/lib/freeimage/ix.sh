@@ -71,3 +71,7 @@ sed -e 's|-o root -g root||' -i Makefile.gnu
 sh gensrclist.sh
 {{super()}}
 {% endblock %}
+
+{% block setup %}
+export CXXFLAGS="-std=c++14 ${CXXFLAGS}"
+{% endblock %}
