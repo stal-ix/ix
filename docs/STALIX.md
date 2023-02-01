@@ -63,6 +63,7 @@ https://unix.stackexchange.com/questions/250153/what-is-a-subreaper-process
 
 No ld.so!
 
+http://ewontfix.com/18/
 https://gavinhoward.com/2021/10/static-linking-considered-harmful-considered-harmful/<br>
 https://lore.kernel.org/lkml/CAHk-=whs8QZf3YnifdLv57+FhBi5_WeNTG1B-suOES=RcUSmQg@mail.gmail.com/<br>
 https://eli.thegreenplace.net/2013/07/09/library-order-in-static-linking<br>
