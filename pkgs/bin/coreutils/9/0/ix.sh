@@ -5,11 +5,6 @@ https://ftp.gnu.org/gnu/coreutils/coreutils-9.0.tar.gz
 sha:6fd4eb88a515004977fc72d7f47b40620409cc41dfaf00419fdd1be17663c434
 {% endblock %}
 
-{% block bld_libs %}
-{{super()}}
-lib/shim/extra
-{% endblock %}
-
 {% block bld_tool %}
 bld/perl
 {{super()}}

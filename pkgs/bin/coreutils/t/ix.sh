@@ -10,6 +10,7 @@ lib/openssl/1
 lib/acl
 lib/cap
 lib/attr
+lib/shim/extra
 {% endif %}
 {% endblock %}
 
