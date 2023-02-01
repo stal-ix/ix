@@ -22,9 +22,14 @@ bld/byacc
 bld/texinfo
 {% endblock %}
 
+{% block setup_host_flags %}
+{{super()}}
+export CFLAGS="-Wno-implicit-function-declaration ${CFLAGS}"
+{% endblock %}
+
 {% block setup %}
 {{super()}}
-export CPPFLAGS="-Wno-implicit-function-declaration ${CPPFLAGS}"
+export CFLAGS="-Wno-implicit-function-declaration ${CFLAGS}"
 {% endblock %}
 
 {% block patch %}

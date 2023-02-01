@@ -1,5 +1,7 @@
 {% block setup_host_tc %}
 (
+{% block setup_host_flags %}
+{% endblock %}
     source_env "${IX_H_DIR}"
     setup_tc host
 )
