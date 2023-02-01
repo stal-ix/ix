@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/libjpeg-turbo/libjpeg-turbo/archive/refs/tags/2.1.4.tar.gz
-sha:a78b05c0d8427a90eb5b4eb08af25309770c8379592bb0b8a863373128e6143f
+https://github.com/libjpeg-turbo/libjpeg-turbo/archive/refs/tags/2.1.5.tar.gz
+sha:254f3642b04e309fee775123133c6464181addc150499561020312ec61c1bf7c
 {% endblock %}
 
 {% block bld_tool %}
@@ -14,5 +14,8 @@ lib/c
 {% endblock %}
 
 {% block cmake_flags %}
+{% if x86_64 %}
+REQUIRE_SIMD=ON
+{% endif %}
 ENABLE_SHARED=OFF
 {% endblock %}
