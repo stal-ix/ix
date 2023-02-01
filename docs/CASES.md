@@ -18,3 +18,11 @@ https://www.busybox.net/downloads/binaries/
 ix# ix build --target=linux-aarch64 --purec=musl/pure bin/busybox/ix
 ix# ix build --target=linux-aarch64 --purec=uclibc/ng bin/busybox/ix
 ```
+
+https://github.com/mjakob-gh/build-static-tmux
+https://github.com/maciejjo/static-tmux
+https://stackoverflow.com/questions/62620514/building-static-executable-tmux-on-linux
+
+```shell
+ix# ix build bin/tmux
+```
