@@ -25,3 +25,7 @@ rm -rf etc
 mv sbin/* bin/
 rm -rf sbin
 {% endblock %}
+
+{% block setup %}
+export CXXFLAGS="-std=c++14 ${CXXFLAGS}"
+{% endblock %}
