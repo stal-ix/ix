@@ -25,6 +25,11 @@ BACKEND=x86emu
 DESTDIR="${out}"
 {% endblock %}
 
+{% block setup %}
+{# thunk.c:153:3: error: incompatible function pointer types initializing 'void (*)(X86EMU_pioAddr, x86emuu32)' (aka 'void (*)(unsigned short, unsigned int)') with an expression of type 'void (*)(unsigned short, unsigned long)' [-Wincompatible-function-pointer-types] #}
+export CFLAGS="-Wno-incompatible-function-pointer-types ${CFLAGS}"
+{% endblock %}
+
 {% block make_target %}
 static
 {% endblock %}
