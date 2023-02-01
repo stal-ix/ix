@@ -17,3 +17,7 @@ sed -e 's|.*sys.*sysctl.*||' -i src/cpulimit.c
 mkdir ${out}/bin
 cp src/cpulimit ${out}/bin/
 {% endblock %}
+
+{% block cpp_defines %}
+_GNU_SOURCE=1
+{% endblock %}
