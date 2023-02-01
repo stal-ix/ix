@@ -15,7 +15,7 @@ for x in "bin/apr-1-config" "build-1/libtool" "build-1/apr_rules.mk"; do
 done
 {% endblock %}
 
-{% block env_lib %}
+{% block env %}
 export COFLAGS="--with-apr=${out}/lib/bin/apr-1-config \${COFLAGS}"
 {% endblock %}
 
@@ -27,4 +27,11 @@ lib/c
 {% if linux %}
 --with-devrandom=/dev/random
 {% endif %}
+{% endblock %}
+
+{% block setup %}
+{# educated cross-compile guess, broke with clang 16 #}
+export ac_cv_type_pid_t=yes
+export ac_cv_sizeof_pid_t=4
+export ac_cv_sizeof_struct_iovec=16
 {% endblock %}
