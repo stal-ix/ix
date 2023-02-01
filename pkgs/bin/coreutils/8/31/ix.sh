@@ -11,7 +11,9 @@ lib/shim/extra
 {% endblock %}
 
 {% block bld_tool %}
+{% block yacc %}
 bld/byacc
+{% endblock %}
 {{super()}}
 {% endblock %}
 
