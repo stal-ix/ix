@@ -24,3 +24,7 @@ find . -type f | while read l; do
     sed -e 's|file_handle|file_handle_xxx|g' -i ${l}
 done
 {% endblock %}
+
+{% block setup %}
+export CFLAGS="-Wno-implicit-function-declaration ${CFLAGS}"
+{% endblock %}
