@@ -12,6 +12,7 @@ lib/gdbm
 lib/kernel
 lib/seccomp
 lib/pipeline
+lib/bsd/overlay
 {% endblock %}
 
 {% block bld_tool %}
