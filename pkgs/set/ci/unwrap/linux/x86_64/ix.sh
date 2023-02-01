@@ -461,7 +461,7 @@ bin/valgrind
 bin/hikari
 bin/drill
 bin/msh3app
-bin/cog
+#bin/cog
 bin/exiv2
 bin/tree
 bin/tvedit
