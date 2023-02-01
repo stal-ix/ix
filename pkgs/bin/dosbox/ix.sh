@@ -10,3 +10,7 @@ lib/c
 lib/sdl/1
 lib/sdl/deps
 {% endblock %}
+
+{% block setup %}
+export CXXFLAGS="-Wno-register ${CXXFLAGS}"
+{% endblock %}
