@@ -39,6 +39,7 @@ https://www.phoronix.com/news/systemd-Git-Stats-2022
 https://drewdevault.com/2020/09/25/A-story-of-two-libcs.html<br>
 https://codebrowser.dev/glibc/glibc/nptl/pthread_cancel.c.html#99<br>
 https://www.phoronix.com/news/Glibc-2.36-EAC-Problems
+https://ariadne.space/2021/12/29/glibc-is-still-not-y2038-compliant-by-default/
 
 Glibc does not fully support static linking. **stal/IX** uses musl for internal needs, and allows to build custom soft with an arbitrary libc on a choice.
 
