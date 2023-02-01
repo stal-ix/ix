@@ -2,7 +2,7 @@
 
 > Why you should try **IX**
 
-**IX** renders obsolete many disjointed ways to compile statically linked binaries:
+**IX** renders obsolete many disparate ways to compile statically linked binaries:
 
 https://buildroot.org/
 
