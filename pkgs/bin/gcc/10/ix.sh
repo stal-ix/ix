@@ -56,6 +56,8 @@ shut_up
 {% endblock %}
 
 {% block setup %}
+export CXXFLAGS="-Wno-register ${CXXFLAGS}"
+
 export acx_cv_cc_gcc_supports_ada=no
 
 export AR={{t}}ar
