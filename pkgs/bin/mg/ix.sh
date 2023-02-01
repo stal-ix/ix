@@ -20,3 +20,7 @@ find . -type f | while read l; do
     sed -e 's|/usr/bin/pkg|pkg|' -i ${l}
 done
 {% endblock %}
+
+{% block cpp_missing %}
+bsd/stdlib.h
+{% endblock %}
