@@ -10,3 +10,12 @@ lib/gtk/4
 gtk3=false
 gtk4=true
 {% endblock %}
+
+{% block build_flags %}
+shut_up
+{% endblock %}
+
+{% block setup %}
+# TODO(pg): fixme
+export CFLAGS="-Wno-enum-constexpr-conversion ${CFLAGS}"
+{% endblock %}
