@@ -11,4 +11,9 @@ lib/c
 
 {% block cpp_missing %}
 stdio.h
+unistd.h
+{% endblock %}
+
+{% block cpp_defines %}
+_GNU_SOURCE=1
 {% endblock %}
