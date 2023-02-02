@@ -26,3 +26,7 @@ premake5 embed
 mkdir ${out}/bin
 cp bin/release/premake5 ${out}/bin/
 {% endblock %}
+
+{% block cpp_missing %}
+unistd.h
+{% endblock %}
