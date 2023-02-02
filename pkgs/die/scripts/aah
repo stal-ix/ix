@@ -1,0 +1,28 @@
+#!/usr/bin/env python3
+
+import sys
+import collections
+
+d = collections.defaultdict(list)
+
+for l in sys.stdin.read().split('\n'):
+    l = l.strip()
+
+    if not l:
+        continue
+
+    i = l.index('=')
+    d[l[:i]].append(l[1 + 1:])
+
+s = []
+
+for k, v in d.items():
+    vv = frozenset(v)
+
+    if len(vv) > 1:
+        s.append((k, v))
+
+s = sorted(s, key=lambda x: len(x[1]))
+
+for k, v in s:
+    print(k, len(v), frozenset(v))
