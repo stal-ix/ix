@@ -15,19 +15,24 @@ export CC_FOR_BUILD=${HOST_CC}
 #ac_cv_func_sbrk=yes
 #ac_cv_have_decl_memmem=yes
 #}
-export ac_cv_func_gettimeofday=yes
-export ac_cv_type_struct_sockaddr_storage=yes
 export ac_ct_CC=${CC}
-export ac_cv_type_sighandler_t=yes
+
 export ac_cv_header_stdc=yes
-export am_cv_CC_dependencies_compiler_type=gcc3
 export ac_cv_c_compiler_gnu=yes
-export lt_cv_sys_max_cmd_len=32768
 export ac_cv_header_stdbool_h=yes
-export gl_cv_func_realpath_works=yes
+export ac_cv_func_gettimeofday=yes
+export ac_cv_type_sighandler_t=yes
+export ac_cv_type_struct_sockaddr_storage=yes
+
+export am_cv_CC_dependencies_compiler_type=gcc3
+
 export gt_cv_int_divbyzero_sigfpe=yes
-export gl_cv_func_posix_spawn_file_actions_addclose_works=yes
+
+export gl_cv_func_realpath_works=yes
 export gl_cv_func_fchownat_empty_filename_works=yes
+export gl_cv_func_posix_spawn_file_actions_addclose_works=yes
+
+export lt_cv_sys_max_cmd_len=32768
 {% endif %}
 {{super()}}
 {% if not tool %}
