@@ -30,8 +30,12 @@ export gl_cv_func_fchownat_empty_filename_works=yes
 {% endif %}
 {{super()}}
 {% if not tool %}
-ls -la > /ix/logs/ls.${IX_RANDOM}
-cp config.log /ix/logs/config.${IX_RANDOM} || true
+{% if 1 %}
+mkdir -p /ix/logs/${IX_RANDOM}
+ls -la > /ix/logs/${IX_RANDOM}/ls
+cp config.log /ix/logs/${IX_RANDOM}/ || true
+cp configure /ix/logs/${IX_RANDOM}/ || true
+{% endif %}
 {% endif %}
 {% endblock %}
 
