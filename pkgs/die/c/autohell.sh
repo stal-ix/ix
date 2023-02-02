@@ -17,6 +17,7 @@ export CC_FOR_BUILD=${HOST_CC}
 #}
 export ac_ct_CC=${CC}
 
+export ac_cv_c_bigendian=no
 export ac_cv_header_stdc=yes
 export ac_cv_c_compiler_gnu=yes
 export ac_cv_header_stdbool_h=yes
