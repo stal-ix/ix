@@ -15,6 +15,7 @@ export CC_FOR_BUILD=${HOST_CC}
 #ac_cv_func_sbrk=yes
 #ac_cv_have_decl_memmem=yes
 #}
+export ac_cv_func_gettimeofday=yes
 export ac_cv_type_struct_sockaddr_storage=yes
 export ac_ct_CC=${CC}
 export ac_cv_type_sighandler_t=yes

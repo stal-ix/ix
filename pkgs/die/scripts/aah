@@ -1,16 +1,39 @@
 #!/usr/bin/env python3
 
+import os
 import sys
 import collections
 
+def it_files():
+    for a, b, c in os.walk(os.path.abspath(sys.argv[1])):
+        for x in c:
+            if 'config' in x:
+                yield os.path.join(a, x)
+
+def it_env():
+    for p in it_files():
+        with open(p, 'r') as f:
+            for l in f.read().split('\n'):
+                l = l.strip()
+
+                if not l:
+                    continue
+
+                if ' ' in l:
+                    continue
+
+                if '=' not in l:
+                    continue
+
+                if '_cv_' not in l:
+                    continue
+
+                yield l
+
 d = collections.defaultdict(list)
 
-for l in sys.stdin.read().split('\n'):
-    l = l.strip()
-
-    if not l:
-        continue
-
+for l in it_env():
+    l = l.replace("'", '')
     i = l.index('=')
     d[l[:i]].append(l[1 + 1:])
 
