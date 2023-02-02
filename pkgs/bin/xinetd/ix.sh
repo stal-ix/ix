@@ -8,3 +8,11 @@ sha:cbb6d078a8e4d0297cbfc146d5acd0b598de7d30dd0f76301a52ca923b42129a
 {% block lib_deps %}
 lib/c
 {% endblock %}
+
+{% block cpp_missing %}
+stdlib.h
+{% endblock %}
+
+{% block cpp_defines %}
+_GNU_SOURCE=1
+{% endblock %}
