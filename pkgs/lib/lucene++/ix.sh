@@ -28,6 +28,7 @@ LUCENE_BUILD_SHARED=OFF
 
 {% block cpp_missing %}
 stdlib.h
+string.h
 {% endblock %}
 
 {% block install %}
