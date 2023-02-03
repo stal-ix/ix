@@ -48,5 +48,14 @@ for k, v in d.items():
 
 s = sorted(s, key=lambda x: len(x[1]))
 
+def fmt_res(v):
+    cd = collections.defaultdict(int)
+
+    for x in v:
+        cd[x] += 1
+
+    for k, v in sorted(list(cd.items()), key=lambda x: -x[1]):
+        yield f'"{k}": {v}'
+
 for k, v in s:
-    print(k, len(v), frozenset(v))
+    print(k, '[' + ', '.join(fmt_res(v)) + ']')
