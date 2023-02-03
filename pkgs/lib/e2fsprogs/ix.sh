@@ -1,9 +1,11 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://mirrors.edge.kernel.org/pub/linux/kernel/people/tytso/e2fsprogs/v1.46.5/e2fsprogs-1.46.5.tar.xz
-sha:2f16c9176704cf645dc69d5b15ff704ae722d665df38b2ed3cfc249757d8d81e
+https://mirrors.edge.kernel.org/pub/linux/kernel/people/tytso/e2fsprogs/v1.46.6/e2fsprogs-1.46.6.tar.xz
+sha:a77517f19ff5e4e97ede63536566865dd5d48654e13fc145f5f2249ef7c4f4fc
 {% endblock %}
+
+{% block conf_ver %}2/71{% endblock %}
 
 {% block lib_deps %}
 lib/c
