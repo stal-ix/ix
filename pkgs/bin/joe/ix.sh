@@ -9,3 +9,7 @@ sha:495a0a61f26404070fe8a719d80406dc7f337623788e445b92a9f6de512ab9de
 lib/c
 lib/curses
 {% endblock %}
+
+{% block cpp_defines %}
+_GNU_SOURCE=1
+{% endblock %}
