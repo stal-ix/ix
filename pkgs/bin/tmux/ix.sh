@@ -10,6 +10,12 @@ lib/c
 lib/event
 lib/curses
 lib/utf8/proc
+lib/bsd/overlay
+lib/bsd/init
+{% endblock %}
+
+{% block cpp_defines %}
+LIBBSD_NETBSD_VIS=1
 {% endblock %}
 
 {% block bld_tool %}

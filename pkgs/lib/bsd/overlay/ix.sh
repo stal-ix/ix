@@ -1,7 +1,13 @@
-{% extends '//die/proxy.sh' %}
+{% extends '//die/c/registar.sh' %}
 
 {% block lib_deps %}
 lib/bsd
+#lib/bsd/init
+{% endblock %}
+
+{% block constructors %}
+qw
+setproctitle_init
 {% endblock %}
 
 {% block env %}
