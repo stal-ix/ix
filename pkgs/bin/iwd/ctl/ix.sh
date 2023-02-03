@@ -7,5 +7,6 @@ lib/readline
 
 {% block configure_flags %}
 {{super()}}
+--disable-dbus-policy
 --disable-daemon
 {% endblock %}

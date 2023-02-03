@@ -13,7 +13,6 @@ lib/kernel
 
 {% block configure_flags %}
 --enable-external-ell
---with-dbus-datadir=${out}/etc
 --disable-systemd-service
 --libexecdir=${out}/bin
 {% endblock %}

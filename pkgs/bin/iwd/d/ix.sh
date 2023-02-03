@@ -2,9 +2,11 @@
 
 {% block configure_flags %}
 {{super()}}
+--with-dbus-datadir=/etc
 --localstatedir=/var/run/iwd
 --disable-client
 --disable-monitor
+--disable-dbus-policy
 {% endblock %}
 
 {% block patch %}
