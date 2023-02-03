@@ -24,5 +24,6 @@ ${PWD}/lib
 {% endblock %}
 
 {% block setup %}
+export CFLAGS="-Wno-incompatible-function-pointer-types ${CFLAGS}"
 export PATH="${PWD}/src:${PATH}"
 {% endblock %}

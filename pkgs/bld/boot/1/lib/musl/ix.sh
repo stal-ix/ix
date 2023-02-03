@@ -106,6 +106,7 @@ done
 ${CC} ${CFLAGS} -c -o tool.o -x c - << EOF
 #include <stdio.h>
 #include <errno.h>
+#include <stdlib.h>
 
 int main() {
     char buf[1024];
