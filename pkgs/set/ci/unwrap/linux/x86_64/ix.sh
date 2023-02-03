@@ -483,7 +483,7 @@ bin/mpg123
 bin/lame
 bin/sox
 #bin/vlc
-bin/mplayer
+#bin/mplayer
 bin/q/jackctl
 bin/q/imgv
 bin/q/bittorrent

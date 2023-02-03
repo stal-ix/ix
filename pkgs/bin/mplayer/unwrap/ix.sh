@@ -39,3 +39,8 @@ bin/yasm
 {% block build_flags %}
 shut_up
 {% endblock %}
+
+{#
+libmpcodecs/ve_raw.c:166:19: error: incompatible function pointer types assigning to 'int (*)(struct vf_instance *, mp_image_t *, double, double)' (aka 'int (*)(struct vf_instance *, struct mp_image *, double, double)') from 'int (struct vf_instance *, mp_image_t *, double)' (aka 'int (struct vf_instance *, struct mp_image *, double)') [-Wincompatible-function-pointer-types]
+    vf->put_image = put_image;
+#}
