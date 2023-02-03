@@ -13,10 +13,7 @@ lib/cap
 lib/zstd
 lib/event
 lib/seccomp
-{% endblock %}
-
-{% block cpp_missing %}
-bsd/readpassphrase.h
+lib/bsd/overlay
 {% endblock %}
 
 {% block configure_flags %}
