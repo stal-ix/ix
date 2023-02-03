@@ -16,3 +16,7 @@ string.c
 ieee754.h
 ieee754.c
 {% endblock %}
+
+{% block env %}
+export ac_cv_lib_error_at_line=yes
+{% endblock %}

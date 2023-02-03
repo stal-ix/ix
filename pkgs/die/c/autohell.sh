@@ -18,15 +18,8 @@ export CC_FOR_BUILD=${HOST_CC}
 export ac_ct_CC=${CC}
 
 export ac_cv_c_bigendian=no
-export ac_cv_header_stdc=yes
 export ac_cv_c_compiler_gnu=yes
-export ac_cv_header_stdbool_h=yes
-export ac_cv_func_gettimeofday=yes
-export ac_cv_type_sighandler_t=yes
-export ac_cv_type_struct_sockaddr_storage=yes
-
 export am_cv_CC_dependencies_compiler_type=gcc3
-
 export gt_cv_int_divbyzero_sigfpe=yes
 
 export gl_cv_func_realpath_works=yes

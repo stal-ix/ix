@@ -30,10 +30,23 @@ ar q libcrt.a crt1.o crti.o crtn.o
 ranlib libcrt.a
 {% endblock %}
 
-{% block env_lib %}
+{% block env %}
 export CMFLAGS="-DLIBCXX_HAS_MUSL_LIBC=yes \${CMFLAGS}"
 export CPPFLAGS="${PICFLAGS} -isystem ${out}/include \${CPPFLAGS}"
 export LDFLAGS="-static \${LDFLAGS}"
+export ac_cv_func_sbrk=yes
+export lt_cv_dlopen=dlopen
+export lt_cv_dlopen_self=no
+export ac_cv_header_stdc=yes
+export gl_cv_func_sigprocmask=yes
+export ac_cv_header_stdbool_h=yes
+export ac_cv_header_inttypes_h=yes
+export ac_cv_func_gettimeofday=yes
+export ac_cv_type_sighandler_t=yes
+export gl_cv_func_realpath_works=yes
+export ac_cv_type_struct_sockaddr_storage=yes
+export gl_cv_func_fchownat_empty_filename_works=yes
+export gl_cv_func_posix_spawn_file_actions_addclose_works=yes
 {% endblock %}
 
 {% block test_lib %}

@@ -8,7 +8,8 @@ def it_files():
     for a, b, c in os.walk(os.path.abspath(sys.argv[1])):
         for x in c:
             if 'config' in x:
-                yield os.path.join(a, x)
+                if 'configure' not in x:
+                    yield os.path.join(a, x)
 
 def it_env():
     for p in it_files():
