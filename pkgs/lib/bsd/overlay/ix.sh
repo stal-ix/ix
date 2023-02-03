@@ -2,7 +2,6 @@
 
 {% block lib_deps %}
 lib/bsd
-#lib/bsd/init
 {% endblock %}
 
 {% block constructors %}

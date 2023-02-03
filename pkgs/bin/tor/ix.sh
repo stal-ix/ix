@@ -15,6 +15,10 @@ lib/event
 lib/seccomp
 {% endblock %}
 
+{% block cpp_missing %}
+bsd/readpassphrase.h
+{% endblock %}
+
 {% block configure_flags %}
 --enable-lzma
 --enable-zstd
