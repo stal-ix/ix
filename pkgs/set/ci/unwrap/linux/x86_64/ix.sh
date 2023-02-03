@@ -346,7 +346,7 @@ bin/avif
 bin/intltool
 bin/labwc
 bin/fish
-bin/surfer
+#bin/surfer
 bin/sqlite3
 bin/mimetype
 bin/nmap
