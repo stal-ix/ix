@@ -38,6 +38,7 @@ export ac_cv_func_sbrk=yes
 export lt_cv_dlopen=dlopen
 export lt_cv_dlopen_self=no
 export ac_cv_header_stdc=yes
+export ac_cv_have_decl_memmem=yes
 export gl_cv_func_sigprocmask=yes
 export ac_cv_header_stdbool_h=yes
 export ac_cv_header_inttypes_h=yes

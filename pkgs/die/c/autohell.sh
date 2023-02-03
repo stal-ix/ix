@@ -10,23 +10,12 @@ export FORCE_UNSAFE_CONFIGURE=1
 export CC_FOR_BUILD=${HOST_CC}
 {% endif %}
 {% if not boot %}
-{#
-#ac_cv_func_canonicalize_file_name=yes
-#ac_cv_func_sbrk=yes
-#ac_cv_have_decl_memmem=yes
-#}
 export ac_ct_CC=${CC}
-
 export ac_cv_c_bigendian=no
 export ac_cv_c_compiler_gnu=yes
-export am_cv_CC_dependencies_compiler_type=gcc3
-export gt_cv_int_divbyzero_sigfpe=yes
-
-export gl_cv_func_realpath_works=yes
-export gl_cv_func_fchownat_empty_filename_works=yes
-export gl_cv_func_posix_spawn_file_actions_addclose_works=yes
-
 export lt_cv_sys_max_cmd_len=32768
+export gt_cv_int_divbyzero_sigfpe=yes
+export am_cv_CC_dependencies_compiler_type=gcc3
 {% endif %}
 {{super()}}
 {% if not tool %}
