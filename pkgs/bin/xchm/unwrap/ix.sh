@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://github.com/rzvncj/xCHM/archive/refs/tags/1.33.tar.gz
-sha:8537563bc790dc2f9b27e0355d8a7e538c01347dcfd8bd392ac78ad3eeb69701
+https://github.com/rzvncj/xCHM/archive/refs/tags/1.34.tar.gz
+sha:ad23b9bd36cdb3648310930a6f70e107c4544749eb4372019a9ae8d159c0a722
 {% endblock %}
 
 {%block bld_libs %}
