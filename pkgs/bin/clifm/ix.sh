@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/leo-arch/clifm/archive/refs/tags/v1.8.tar.gz
-sha:e202cc272145c1d322fb32421e96a6ba90110fe773f62647efd042f7f02063c4
+https://github.com/leo-arch/clifm/archive/refs/tags/v1.10.tar.gz
+sha:b3c0bd5875009dccca8f69c6c25946f13584a34ee773af769fa53186a0e186e2
 {% endblock %}
 
 {% block bld_libs %}
@@ -11,4 +11,9 @@ lib/cap
 lib/acl
 lib/magic
 lib/readline
+{% endblock %}
+
+{% block cpp_defines %}
+__END_DECLS=
+__BEGIN_DECLS=
 {% endblock %}
