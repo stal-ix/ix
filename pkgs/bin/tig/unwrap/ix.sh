@@ -9,10 +9,7 @@ sha:d8cbfe4ede9d79b0da93d9002e79e8e466d5b4d2eee3dfa3dabf9cd5551a51c9
 lib/c
 lib/curses
 lib/readline
-{% endblock %}
-
-{% block make_flags %}
-QUIET_GEN=
+lib/pcre/2/posix
 {% endblock %}
 
 {% block patch %}
