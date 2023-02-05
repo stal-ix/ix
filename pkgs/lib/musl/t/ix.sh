@@ -41,6 +41,7 @@ export ac_cv_func_fgetln=yes
 export ac_cv_func_daemon=yes
 export ac_cv_header_stdc=yes
 export ac_cv_func_setenv=yes
+export ac_cv_func_getenv=yes
 export ac_cv_func_getline=yes
 export ac_cv_func_sysconf=yes
 export ac_cv_have_decl_memmem=yes
