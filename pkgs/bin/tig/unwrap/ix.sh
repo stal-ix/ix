@@ -1,15 +1,20 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://github.com/jonas/tig/archive/refs/tags/tig-2.5.7.tar.gz
-sha:60a1acfda3238df28dfbe309adc1892a8c9b35138c738f1567c6c3c65c81fb72
+https://github.com/jonas/tig/archive/refs/tags/tig-2.5.8.tar.gz
+sha:d8cbfe4ede9d79b0da93d9002e79e8e466d5b4d2eee3dfa3dabf9cd5551a51c9
 {% endblock %}
 
 {% block bld_libs %}
 lib/c
 lib/curses
+lib/readline
 {% endblock %}
 
 {% block make_flags %}
 QUIET_GEN=
+{% endblock %}
+
+{% block patch %}
+sed -e 's|.*define.*NDEBUG.*||' -i include/tig/tig.h
 {% endblock %}

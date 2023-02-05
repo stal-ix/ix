@@ -2,5 +2,6 @@
 
 {% block run_deps %}
 bin/git
-bin/tig/unwrap
+# quiet gen broken
+bin/tig/unwrap(verbose=1)
 {% endblock %}
