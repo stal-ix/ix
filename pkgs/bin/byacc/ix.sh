@@ -1,8 +1,8 @@
 {% extends '//die/c/autohell.sh' %}
 
 {% block fetch %}
-https://invisible-mirror.net/archives/byacc/byacc-20221106.tgz
-sha:a899be227bbcac9cf7700f7dbb5a8494688f1f9f0617b510762daeace47b9d12
+https://invisible-mirror.net/archives/byacc/byacc-20230201.tgz
+sha:576cc9d9ae5e22503ed5e3582498cf2cccacef401969106420547b4d05c87d76
 {% endblock %}
 
 {% block bld_libs %}
