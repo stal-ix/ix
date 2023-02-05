@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://www.cabextract.org.uk/cabextract-1.9.1.tar.gz
-sha:afc253673c8ef316b4d5c29cc4aa8445844bee14afffbe092ee9469405851ca7
+https://www.cabextract.org.uk/cabextract-1.10.tar.gz
+sha:edfc785ef252460cab7fdfa6fb2599058a6f5618f7f48a4ad22da816da8cb117
 {% endblock %}
 
 {% block bld_libs %}
