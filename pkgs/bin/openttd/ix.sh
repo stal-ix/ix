@@ -17,6 +17,7 @@ lib/sdl/2
 lib/sdl/deps
 lib/freetype
 lib/fontconfig
+lib/drivers/3d
 {% endblock %}
 
 {% block bld_tool %}
