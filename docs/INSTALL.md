@@ -78,7 +78,7 @@ Fetch **IX** package manager, will be used later, from **ix** user before reboot
 
 ```shell
 # we do not want to change our CWD
-(cd home/ix; git clone https://github.com/pg83/ix.git)
+(cd home/ix; git clone https://github.com/stal-ix/ix.git)
 ```
 
 Some quirks:
@@ -128,6 +128,6 @@ cd /home/ix/ix
 ./ix mut $(./ix list)
 ```
 
-Rebuild world, again. And [add a whole new user, without sudo capability](https://github.com/pg83/ix/blob/main/docs/ETC.md#:~:text=Add%20a%20whole%20new%20user%2C%20without%20sudo%20capability%3A)<br>
+Rebuild world, again. And [add a whole new user, without sudo capability](https://github.com/stal-ix/ix/blob/main/docs/ETC.md#:~:text=Add%20a%20whole%20new%20user%2C%20without%20sudo%20capability%3A)<br>
 
 Now try login from tty1

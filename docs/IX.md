@@ -90,7 +90,7 @@ To make this setting happen automatically, in the first line of your session scr
 To start using **IX** clone it from github.
 
 ```shell
-ix# git clone git@github.com:pg83/ix.git
+ix# git clone git@github.com:stal-ix/ix.git
 ix# export PATH=${PWD}/ix:${PATH}
 ```
 
@@ -214,7 +214,7 @@ The command finds all unused packages in /ix/store/ and moves them to the /ix/tr
 
 View a list of all realms, or installed packages (with flags) in a specific realm.
 
-A list of all available packages can be found at https://github.com/pg83/ix/tree/main/pkgs, or in the pkgs/ folder in your clone of the main repository.
+A list of all available packages can be found at https://github.com/stal-ix/ix/tree/main/pkgs, or in the pkgs/ folder in your clone of the main repository.
 
 `ix mut $(ix list)`
 
