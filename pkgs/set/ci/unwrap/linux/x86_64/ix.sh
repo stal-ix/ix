@@ -1,6 +1,7 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
+bin/pngquant
 bin/glmark2
 bin/gdb/reloc
 bin/wayland/tracer
