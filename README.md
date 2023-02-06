@@ -1,4 +1,4 @@
-# ix package manager
+# IX package manager
 
 statically build packages, for darwin/linux, with clang
 
