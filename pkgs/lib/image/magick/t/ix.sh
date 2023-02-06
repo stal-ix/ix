@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://imagemagick.org/archive/releases/ImageMagick-7.1.0-60.tar.xz
-sha:ea1a6de16328b0801d684df02498334bff5ad70521f0c509ea9f1209eb4ac5f6
+https://imagemagick.org/archive/releases/ImageMagick-7.1.0-61.tar.xz
+sha:4b4f9437666ef1a87df69b34bc8abdf7ad05d524c00dd1d63f6699e6ab1ed94e
 {% endblock %}
 
 {% block lib_deps %}
