@@ -13,11 +13,17 @@ lib/c++
 lib/png
 lib/lzo
 lib/icu
+lib/glu
 lib/sdl/2
 lib/sdl/deps
 lib/freetype
 lib/fontconfig
 lib/drivers/3d
+lib/shim/fake(lib_name=OpenGL)
+{% endblock %}
+
+{% block cmake_flags %}
+OPTION_USE_THREADS=OFF
 {% endblock %}
 
 {% block bld_tool %}
