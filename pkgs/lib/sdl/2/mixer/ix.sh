@@ -1,8 +1,8 @@
 {% extends '//die/c/autohell.sh' %}
 
 {% block fetch %}
-https://github.com/libsdl-org/SDL_mixer/archive/refs/tags/release-2.6.2.tar.gz
-sha:30c64e23506fcb1699981a297833407bf5bf9d8ab77390e26b26117b4a58bad5
+https://github.com/libsdl-org/SDL_mixer/archive/refs/tags/release-2.6.3.tar.gz
+sha:91dd065e9e63f499e5317350b110184b0ba96bc5f63c39b3a9939a136c40c035
 {% endblock %}
 
 {% block lib_deps %}
