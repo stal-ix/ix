@@ -11,3 +11,13 @@ lib/sdl/2
 lib/freetype
 lib/harfbuzz
 {% endblock %}
+
+{% block cmake_flags %}
+SDL2TTF_HARFBUZZ=ON
+{% endblock %}
+
+{% block install %}
+mkdir ${out}/bin
+cp ${tmp}/obj/glfont ${out}/bin/
+cp ${tmp}/obj/showfont ${out}/bin/
+{% endblock %}
