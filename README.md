@@ -6,7 +6,6 @@ Goals:
 * lto
 * clang
 * full static
-
 * musl on linux
 * reproducible builds
 * pure builds if possible
