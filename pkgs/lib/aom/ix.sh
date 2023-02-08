@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://storage.googleapis.com/aom-releases/libaom-3.5.0.tar.gz
-sha:d37dbee372e2430a7efde813984ae6d78bdf1fc4080ebe32457c9115408b0738
+https://storage.googleapis.com/aom-releases/libaom-3.6.0.tar.gz
+sha:a4a6c0fab685da743b796662a928fcdf7ae60594edc306efb73e78a17ea6cde6
 {% endblock %}
 
 {% block lib_deps %}
@@ -28,20 +28,31 @@ ENABLE_TESTS=OFF
 ENABLE_TOOLS=OFF
 ENABLE_DOCS=OFF
 {% if x86_64 %}
-ENABLE_AVX=ON
+#ENABLE_AVX=ON
+#ENABLE_AVX2=ON
 ENABLE_MMX=ON
 ENABLE_SSE=ON
-ENABLE_VSX=ON
-ENABLE_AVX2=ON
 ENABLE_NASM=ON
 ENABLE_SSE2=ON
 ENABLE_SSE3=ON
 ENABLE_SSSE3=ON
 ENABLE_SSE4_1=ON
 ENABLE_SSE4_2=ON
+ARCH_X86_64=ON
+#HAVE_AVX=ON
+#HAVE_AVX2=ON
+HAVE_MMX=ON
+HAVE_SSE=ON
+HAVE_SSE2=ON
+HAVE_SSE3=ON
+HAVE_SSE4_1=ON
+HAVE_SSE4_2=ON
+HAVE_SSSE3=ON
 {% endif %}
 {% if aarch64 %}
 ENABLE_NEON=ON
+ARCH_ARM=ON
+HAVE_NEON=ON
 {% endif %}
 {% endblock %}
 
