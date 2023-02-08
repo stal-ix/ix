@@ -1,8 +1,8 @@
 {% extends '//bin/transmission/t/ix.sh' %}
 
 {% block bld_libs %}
-lib/gtk/3
 lib/notify
+lib/gtk/3/mm
 lib/appindicator
 lib/gdk/pixbuf/svg
 {{super()}}
@@ -11,6 +11,7 @@ lib/gdk/pixbuf/svg
 {% block cmake_flags %}
 {{super()}}
 ENABLE_GTK=ON
+GLIB_COMPILE_RESOURCES_EXECUTABLE=glib-compile-resources
 {% endblock %}
 
 {% block build_flags %}
@@ -18,15 +19,9 @@ shut_up
 {% endblock %}
 
 {% block bld_tool %}
-bld/gettext
 bld/glib
+bld/gettext
 {{super()}}
-{% endblock %}
-
-{% block patch %}
-sed -e 's|.*glib-compile-resources executable.*|SET(GLIB_COMPILE_RESOURCES_EXECUTABLE glib-compile-resources)|' -i gtk/CMakeLists.txt
-cd po
-cp pt.po pt_PT.po
 {% endblock %}
 
 {% block install %}
