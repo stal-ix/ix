@@ -1,8 +1,8 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://github.com/hughsie/libgusb/archive/refs/tags/0.4.2.tar.gz
-sha:01a99aec431cc5e80979f8aad11e0e8f1aac3fd8504d3c2f2f2c0956bc35837b
+https://github.com/hughsie/libgusb/archive/refs/tags/0.4.5.tar.gz
+sha:74e492fc3eda2caf7ed0a0e472c83e49e3c9c063f9729e965b79addcbd387c64
 {% endblock %}
 
 {% block lib_deps %}
