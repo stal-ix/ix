@@ -11,6 +11,7 @@ lib/lz4
 lib/lzo
 lib/kernel
 lib/cap/ng
+lib/bsd/overlay
 lib/{{openvpnssl or 'openssl'}}
 {% endblock %}
 
