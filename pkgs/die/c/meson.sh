@@ -79,7 +79,6 @@ b_lundef=false
 
 {{ninja_build_dir}}
 {% endset %}
-export PKG_CONFIG=$(which pkg-config)
 {{ix.fix_list(command_args)}}
 {% endif %}
 {% endblock %}
