@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/ngtcp2/ngtcp2/archive/refs/tags/v0.13.0.tar.gz
-sha:f20cb7f1a78453bf6080e3bc29091ffafcb2e87b89d7d9953abbdbeb35fe835c
+https://github.com/ngtcp2/ngtcp2/archive/refs/tags/v0.13.1.tar.gz
+sha:3d60d025c383dbf6b9eab337191e68ac4af72aae3746bb36abff1320a28f0df8
 {% endblock %}
 
 {% block lib_deps %}
