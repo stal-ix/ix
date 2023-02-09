@@ -20,3 +20,7 @@ cc -o pkg-config generic_main.c
 mkdir ${out}/bin
 cp pkg-config ${out}/bin/
 {% endblock %}
+
+{% block env %}
+export PKG_CONFIG=${out}/bin/pkg-config
+{% endblock %}
