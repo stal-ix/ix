@@ -55,7 +55,6 @@ export ac_cv_func_sysconf=yes
 export cf_cv_func_mkstemp=yes
 export ac_cv_working_tzset=yes
 export cf_cv_func_nanosleep=yes
-export ac_cv_func_getpeereid=yes
 export ac_cv_c_strptime_works=yes
 export ac_cv_func_chown_works=yes
 export ac_cv_have_decl_memmem=yes
