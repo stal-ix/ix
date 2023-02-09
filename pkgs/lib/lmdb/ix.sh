@@ -1,8 +1,8 @@
 {% extends '//die/c/make.sh' %}
 
 {% block fetch %}
-https://www.openldap.org/software/download/OpenLDAP/openldap-release/openldap-2.6.3.tgz
-sha:d2a2a1d71df3d77396b1c16ad7502e674df446e06072b0e5a4e941c3d06c0d46
+https://www.openldap.org/software/download/OpenLDAP/openldap-release/openldap-2.6.4.tgz
+sha:d51704e50178430c06cf3d8aa174da66badf559747a47d920bb54b2d4aa40991
 {% endblock %}
 
 {% block unpack %}
@@ -19,5 +19,5 @@ wrap_cc
 {% endblock %}
 
 {% block make_flags %}
-CC=clang
+CC=${CC}
 {% endblock %}
