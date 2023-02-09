@@ -34,6 +34,14 @@ ranlib libcrt.a
 export CMFLAGS="-DLIBCXX_HAS_MUSL_LIBC=yes \${CMFLAGS}"
 export CPPFLAGS="${PICFLAGS} -isystem ${out}/include \${CPPFLAGS}"
 export LDFLAGS="-static \${LDFLAGS}"
+
+{% if x86_64 or aarch64 or riscv64 %}
+export ac_cv_sizeof_off_t=8
+export ac_cv_sizeof_size_t=8
+export ac_cv_sizeof_ssize_t=8
+{% endif %}
+
+export ac_cv_func_strtod=yes
 export lt_cv_dlopen=dlopen
 export ac_cv_func_sbrk=yes
 export lt_cv_dlopen_self=no
@@ -47,11 +55,13 @@ export ac_cv_func_sysconf=yes
 export ac_cv_have_decl_memmem=yes
 export gl_cv_func_sigprocmask=yes
 export ac_cv_header_stdbool_h=yes
+export gl_cv_func_fflush_stdin=yes
 export ac_cv_header_inttypes_h=yes
 export ac_cv_func_gettimeofday=yes
 export ac_cv_type_sighandler_t=yes
 export ac_cv_func_getdtablesize=yes
 export gl_cv_func_realpath_works=yes
+export gl_cv_header_working_fcntl_h=yes
 export ac_cv_type_struct_sockaddr_storage=yes
 export gl_cv_func_fchownat_empty_filename_works=yes
 export gl_cv_func_posix_spawn_file_actions_addclose_works=yes

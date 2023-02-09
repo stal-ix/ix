@@ -73,6 +73,8 @@ def enrich(d):
     if 'id' not in d:
         d['id'] = calc_id(d)
 
+    d['ptrlen'] = int(d['bits']) // 8
+
     return d
 
 
