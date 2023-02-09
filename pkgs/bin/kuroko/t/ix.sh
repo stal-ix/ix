@@ -1,8 +1,8 @@
 {% extends '//die/c/make.sh' %}
 
 {% block fetch %}
-https://github.com/kuroko-lang/kuroko/archive/refs/tags/v1.3.0.tar.gz
-sha:7a41b0caa9b56c810ee3c5de3aefc6e71b95f4e6a667add92306f7b3e59515bc
+https://github.com/kuroko-lang/kuroko/archive/refs/tags/v1.3.1.tar.gz
+sha:b1d1c55e72b01b08e88e0cdb9368788f2e3851abc918e29cae16fc442bee9c43
 {% endblock %}
 
 {% block bld_libs %}
