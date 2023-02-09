@@ -26,3 +26,8 @@ mkdir ${out}/lib ${out}/include
 cp *.h ${out}/include
 cp *.a ${out}/lib
 {% endblock %}
+
+{% block env %}
+export ac_cv_func_backtrace=yes
+export ac_cv_func_backtrace_symbols_fd=yes
+{% endblock %}
