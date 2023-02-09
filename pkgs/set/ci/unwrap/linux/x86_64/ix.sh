@@ -457,7 +457,7 @@ bin/mrustc
 bin/exif
 bin/mtools
 bin/fdupes
-#bin/ft2demos
+bin/ft2demos
 bin/exr
 bin/valgrind
 bin/hikari
