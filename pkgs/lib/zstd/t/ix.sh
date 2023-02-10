@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/facebook/zstd/archive/refs/tags/v1.5.2.tar.gz
-sha:f7de13462f7a82c29ab865820149e778cbfe01087b3a55b5332707abf9db4a6e
+https://github.com/facebook/zstd/archive/refs/tags/v1.5.4.tar.gz
+sha:35ad983197f8f8eb0c963877bf8be50490a0b3df54b4edeb8399ba8a8b2f60a4
 {% endblock %}
 
 {% block lib_deps %}
