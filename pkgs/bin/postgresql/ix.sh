@@ -1,17 +1,17 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://ftp.postgresql.org/pub/source/v14.4/postgresql-14.4.tar.bz2
-sha:c23b6237c5231c791511bdc79098617d6852e9e3bdf360efd8b5d15a1a3d8f6a
+https://ftp.postgresql.org/pub/source/v15.2/postgresql-15.2.tar.bz2
+sha:99a2171fc3d6b5b5f56b757a7a3cb85d509a38e4273805def23941ed2b8468c7
 {% endblock %}
 
 {% block bld_libs %}
 lib/c
 lib/z
 lib/icu
-lib/xml/2
 lib/xslt
 lib/intl
+lib/xml/2
 lib/kernel
 lib/openssl
 lib/readline
