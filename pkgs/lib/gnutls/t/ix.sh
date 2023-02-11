@@ -37,6 +37,7 @@ bld/gettext
 {% block c_rename_symbol %}
 # conflict with libunbound
 verbose
+rawmemchr
 {% endblock %}
 
 {% block setup %}
