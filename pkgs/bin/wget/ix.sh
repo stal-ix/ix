@@ -23,6 +23,10 @@ bld/gettext
 bld/auto/archive
 {% endblock %}
 
+{% block cpp_defines %}
+_GNU_SOURCE=1
+{% endblock %}
+
 {% block configure_flags %}
 --with-cares
 {% endblock %}
