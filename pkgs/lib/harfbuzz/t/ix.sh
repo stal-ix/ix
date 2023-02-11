@@ -1,8 +1,8 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://github.com/harfbuzz/harfbuzz/archive/refs/tags/6.0.0.tar.gz
-sha:6d753948587db3c7c3ba8cc4f8e6bf83f5c448d2591a9f7ec306467f3a4fe4fa
+https://github.com/harfbuzz/harfbuzz/archive/refs/tags/7.0.0.tar.gz
+sha:770dace6561ae11de5838e5dc0ec5e95978b2c029aaee00389856a7ca65b43d9
 {% endblock %}
 
 {% block lib_deps %}
@@ -16,8 +16,8 @@ lib/darwin/framework/ApplicationServices
 {% endblock %}
 
 {% block bld_tool %}
-bin/ragel/6
 bld/glib
+bin/ragel/6
 {% endblock %}
 
 {% block meson_flags %}
