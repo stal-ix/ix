@@ -1,7 +1,7 @@
 {% extends '//die/env.sh' %}
 
 {% block env %}
-export CFLAGS=
+export CFLAGS="-fwrapv -fno-strict-aliasing"
 export LDFLAGS=
 export CTRFLAGS=
 export OPTFLAGS=
