@@ -24,7 +24,7 @@ struct C: public Ctx {
     __attribute__((force_align_arg_pointer))
     __attribute__((noinline))
     void dorun() {
-        fprintf(stderr, "%zu %zu\n", (size_t)sp(), (size_t)P);
+        //fprintf(stderr, "%zu %zu\n", (size_t)sp(), (size_t)P);
         switchTo(main);
         run();
     }
@@ -36,8 +36,6 @@ struct C: public Ctx {
     }
 
     void run() {
-        std::cerr << "spawn " << (size_t)this << std::endl;
-
         while (true) {
             std::cerr << "func " << (size_t)P << std::endl;
             switchTo(main);
