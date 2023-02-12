@@ -48,21 +48,14 @@ struct C: Ctx, public Runable {
     }
 };
 
-struct M: Ctx {
-    void run() {
-        C c;
-
-        c.next = this;
-
-        spawn(&c, (char*)malloc(2000000) + 1024 * 1024);
-
-        while (true) {
-            std::cerr << "0" << std::endl;
-            switchTo(&c);
-        }
-    }
-};
-
 int main() {
-    M().run();
+    Ctx main;
+    C c;
+    c.next = &main;
+    main.spawn(&c, (char*)malloc(2000000) + 1024 * 1024);
+
+    while (true) {
+        std::cerr << "0" << std::endl;
+        main.switchTo(&c);
+    }
 }
