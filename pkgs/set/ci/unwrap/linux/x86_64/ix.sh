@@ -533,7 +533,7 @@ bin/sysklogd
 bin/dos2unix
 bin/squid
 bin/inotify/tools
-#bin/cras
+bin/cras
 bin/redis
 bin/strawberry
 bin/bind
