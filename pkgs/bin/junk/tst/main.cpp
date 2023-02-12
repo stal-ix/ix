@@ -29,6 +29,7 @@ struct Ctx {
     void spawn(Ctx* cur, Runable* r, void* stack) {
         if (setjmp(cur->J) == 0){
             eat(alloca((size_t)sp() - (size_t)stack));
+            // here we should copy used params into our stack
             switchTo(cur);
             r->run();
         }
