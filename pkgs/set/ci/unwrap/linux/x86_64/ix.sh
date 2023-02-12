@@ -1,6 +1,7 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
+bin/sdlpop
 bin/jpegoptim
 bin/openttd
 bin/pngquant
