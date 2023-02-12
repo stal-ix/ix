@@ -2,17 +2,15 @@
 
 {% block fetch %}
 https://chromium.googlesource.com/chromiumos/third_party/adhd/+archive/master/cras.tar.gz
-sha:2514f7907b9d5121c9a340d16e7522aa6a41352d9bee914d8358f7972c1331d7
+sem:0ea570a68c28ae6ed1df377063d3c4bc2ae3356c5651fbcb42a5e5873b57b395
 https://chromium.googlesource.com/chromiumos/third_party/adhd/+/454c81a0669c2c5ffc7132d870b7421291b6630e/cras/src/server/rate_estimator.c?format=TEXT
 sha:6df4671824a77a1fec196bd0f6e353358779c1773fbff9fd3283a05c382fd04a
 https://chromium.googlesource.com/chromiumos/third_party/adhd/+/454c81a0669c2c5ffc7132d870b7421291b6630e/cras/src/server/rate_estimator.h?format=TEXT
 sha:295cd44d40e5c487f86b1935835446e562652bc8eccbade67e598135247573ed
 {% endblock %}
 
-{% block skip_dirs %}0{% endblock %}
-
 {% block unpack %}
-{{super()}}
+extract 0 ${src}/cras*
 cat ${src}/rate_estimator.h* | base64 -d > src/server/rate_estimator.h
 cat ${src}/rate_estimator.c* | base64 -d > src/server/rate_estimator.c
 {% endblock %}
@@ -43,16 +41,9 @@ lib/xiph/speex/dsp
 shut_up
 {% endblock %}
 
-{% block setup_tools %}
-cat << EOF > rustc
-#!/bin/sh
-EOF
-
-cat << EOF > cargo
-#!/bin/sh
-EOF
-
-chmod +x *
+{% block bld_tool %}
+bld/fake(tool_name=rustc)
+bld/fake(tool_name=cargo)
 {% endblock %}
 
 {% block cpp_missing %}
