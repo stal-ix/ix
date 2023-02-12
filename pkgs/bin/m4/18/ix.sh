@@ -7,6 +7,11 @@ https://raw.githubusercontent.com/macports/macports-ports/edf0ee1e2cf/devel/m4/f
 md5:319c143996239e23d2fe3e7968a7620d
 {% endblock %}
 
+{% block bld_libs %}
+{{super()}}
+lib/obstack
+{% endblock %}
+
 {% block bld_tool %}
 bld/texinfo
 {{super()}}
@@ -14,9 +19,4 @@ bld/texinfo
 
 {% block patch %}
 patch -p0 < ${src}/secure_snprintf.patch
-{% endblock %}
-
-{% block setup %}
-{{super()}}
-export CFLAGS="-Wno-incompatible-function-pointer-types ${CFLAGS}"
 {% endblock %}
