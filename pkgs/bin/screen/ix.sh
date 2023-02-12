@@ -14,6 +14,7 @@ lib/curses
 {% endblock %}
 
 {% block setup %}
+{# no select - no screen! #}
 export CFLAGS="-Wno-implicit-function-declaration ${CFLAGS}"
 {% endblock %}
 
