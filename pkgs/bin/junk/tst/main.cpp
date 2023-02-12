@@ -27,7 +27,7 @@ struct Ctx {
 
     __attribute__((noinline))
     void spawn(Ctx* cur, Runable* r, void* stack) {
-        if (setjmp(cur->J) == 0){
+        if (setjmp(cur->J) == 0) {
             eat(alloca((size_t)sp() - (size_t)stack));
             // here we should copy used params into our stack
             trampoline(this, cur, r);
