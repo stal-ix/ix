@@ -2,14 +2,8 @@
 #include <setjmp.h>
 #include <iostream>
 
-struct Ctx {
-    void switchTo(Ctx* c) {
-        if (setjmp(J) == 0) {
-            longjmp(c->J, 1);
-        }
-    }
-
-    jmp_buf J;
+struct Runable {
+    virtual void run() = 0;
 };
 
 static __attribute__((noinline)) void* sp() {
@@ -17,52 +11,58 @@ static __attribute__((noinline)) void* sp() {
     return &ch;
 }
 
-struct C: public Ctx {
-    void* P = (char*)malloc(2000000) + 1024*1024;
-    Ctx* main = nullptr;
+static __attribute__((noinline)) void eat(void*) {
+}
 
-    __attribute__((force_align_arg_pointer))
-    __attribute__((noinline))
-    void dorun() {
-        //fprintf(stderr, "%zu %zu\n", (size_t)sp(), (size_t)P);
-        switchTo(main);
-        run();
+struct Ctx {
+    void switchTo(Ctx* c) {
+        if (setjmp(J) == 0) {
+            longjmp(c->J, 1);
+        }
+    }
+
+    void spawn(Runable* r, void* stack) {
+        spawn(this, r, stack);
     }
 
     __attribute__((noinline))
-    void spawn() {
-        fprintf(stderr, "%zu\n", (size_t)alloca((size_t)sp() - (size_t)P));
-        dorun();
+    void spawn(Ctx* cur, Runable* r, void* stack) {
+        if (setjmp(cur->J) == 0){
+            eat(alloca((size_t)sp() - (size_t)stack));
+            switchTo(cur);
+            r->run();
+        }
     }
 
-    void run() {
+    jmp_buf J;
+};
+
+struct C: Ctx, public Runable {
+    Ctx* next = nullptr;
+
+    void run() override {
         while (true) {
-            std::cerr << "func " << (size_t)P << std::endl;
-            switchTo(main);
+            std::cerr << 1 << std::endl;
+            switchTo(next);
         }
     }
 };
 
 struct M: Ctx {
-    C c;
-
     void run() {
-        c.main = this;
+        C c;
 
-        if (setjmp(J) == 0) {
-            c.spawn();
-        }
+        c.next = this;
+
+        spawn(&c, (char*)malloc(2000000) + 1024 * 1024);
 
         while (true) {
-            std::cerr << "c1" << std::endl;
+            std::cerr << "0" << std::endl;
             switchTo(&c);
         }
     }
 };
 
 int main() {
-    std::cerr << "start" << std::endl;
-
-    M m;
-    m.run();
+    M().run();
 }

@@ -18,5 +18,5 @@ ${out}/bin/tst
 {% endblock %}
 
 {% block setup %}
-export OPTFLAGS="${OPTFLAGS} -O0"
+export OPTFLAGS="${OPTFLAGS} -std=c++2a -O0"
 {% endblock %}
