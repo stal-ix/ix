@@ -15,8 +15,11 @@ sed -e 's|bool b = hb_font_get|hb_font_get|' \
 
 {% block install %}
 {{super()}}
-
-# TODO(pg83): what about hb-features.h
 cd ${out}
 find . -type f | grep -v cairo | xargs rm
+{% endblock %}
+
+{% block env %}
+{# actually, part of include/harfbuzz/hb-features.h #}
+export CPPFLAGS="-DHB_HAS_CAIRO=1 \${CPPFLAGS}"
 {% endblock %}
