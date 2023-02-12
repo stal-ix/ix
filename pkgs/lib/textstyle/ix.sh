@@ -8,6 +8,7 @@ sha:c77d0da3102aec9c07f43671e60611ebff89a996ef159497ce8e59d075786b12
 {% block lib_deps %}
 lib/c
 lib/iconv
+lib/obstack
 {% endblock %}
 
 {% block unpack %}
@@ -15,10 +16,6 @@ lib/iconv
 cd libtextstyle
 {% endblock %}
 
-{% block setup %}
-export CFLAGS="-Wno-incompatible-function-pointer-types ${CFLAGS}"
-{% endblock %}
-
-{% block env_lib %}
+{% block env %}
 export COFLAGS="--with-libtextstyle-prefix=${out} \${COFLAGS}"
 {% endblock %}
