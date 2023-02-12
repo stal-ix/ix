@@ -1,0 +1,5 @@
+#!/usr/bin/env sh
+
+set -ue
+
+"${IX_BINARY}" run bin/semver -- semver "${@}"
