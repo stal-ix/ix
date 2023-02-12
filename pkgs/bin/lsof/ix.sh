@@ -31,7 +31,3 @@ NEEDS_NETINET_TCPH=1
 mkdir ${out}/bin
 cp lsof ${out}/bin/
 {% endblock %}
-
-{% block setup %}
-export CPPFLAGS="-Wno-implicit-function-declaration ${CPPFLAGS}"
-{% endblock %}
