@@ -30,9 +30,14 @@ struct Ctx {
         if (setjmp(cur->J) == 0){
             eat(alloca((size_t)sp() - (size_t)stack));
             // here we should copy used params into our stack
-            switchTo(cur);
-            r->run();
+            trampoline(this, cur, r);
         }
+    }
+
+    __attribute__((noinline))
+    static void trampoline(Ctx* fr, Ctx* to, Runable* r) {
+        fr->switchTo(to);
+        r->run();
     }
 
     jmp_buf J;
