@@ -2,4 +2,5 @@
 
 {% block lib_deps %}
 lib/freetype
+lib/harfbuzz/cairo
 {% endblock %}

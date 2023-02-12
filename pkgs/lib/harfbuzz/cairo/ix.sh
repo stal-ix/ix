@@ -13,8 +13,10 @@ sed -e 's|bool b = hb_font_get|hb_font_get|' \
     -i util/hb-info.cc
 {% endblock %}
 
-{% block install1 %}
+{% block install %}
 {{super()}}
+
+# TODO(pg83): what about hb-features.h
 cd ${out}
-find . -type f | grep -v icu | xargs rm
+find . -type f | grep -v cairo | xargs rm
 {% endblock %}
