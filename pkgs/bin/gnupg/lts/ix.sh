@@ -17,6 +17,7 @@ lib/gcrypt
 lib/sqlite/3
 lib/readline
 lib/gpg/error
+lib/shim/extra
 {% endblock %}
 
 {% block host_libs %}
