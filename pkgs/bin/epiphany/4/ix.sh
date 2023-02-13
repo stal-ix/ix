@@ -1,8 +1,8 @@
 {% extends '//bin/epiphany/t/ix.sh' %}
 
 {% block fetch %}
-https://github.com/GNOME/epiphany/archive/1824d11debb401be0f797a1323bbc803336144a2.tar.gz
-sem:53c2dec7c5633ae4feb8486ed649a5e2036171dd4d15a92de8f8defd881b33d6
+https://github.com/GNOME/epiphany/archive/refs/tags/44.beta.tar.gz
+sha:571dd35cde4ce75eb8ff629c38290b2caef0172cbee77f7f993a78a8aef0360f
 {% endblock %}
 
 {% block bld_libs %}
