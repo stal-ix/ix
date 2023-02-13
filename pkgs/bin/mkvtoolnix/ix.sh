@@ -1,6 +1,6 @@
-{% extends 't/ix.sh' %}
+{% extends '//die/hub.sh' %}
 
-{% block configure_flags %}
-{{super()}}
---disable-gui
+{% block run_deps %}
+bin/mkvtoolnix/cli
+bin/mkvtoolnix/gui
 {% endblock %}
