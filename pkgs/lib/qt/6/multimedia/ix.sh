@@ -21,4 +21,5 @@ bld/qt/6/tools/shader
 {% block env %}
 {{super()}}
 export QT_PATH="${out}:\${QT_PATH}"
+export CPPFLAGS="-I${out}/include/QtMultimedia \${CPPFLAGS}"
 {% endblock %}

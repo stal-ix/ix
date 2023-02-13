@@ -2,6 +2,7 @@
 
 {% block run_deps %}
 bin/mkvtoolnix
+bin/mkvtoolnix/gui
 bin/sdlpop
 bin/jpegoptim
 bin/openttd
