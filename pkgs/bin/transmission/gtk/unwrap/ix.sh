@@ -32,3 +32,45 @@ mkdir bin
 mv old/transmission-gtk bin/
 rm -r old
 {% endblock %}
+
+{% block patch %}
+{{super()}}
+cat << EOF > fix.py
+import sys
+
+def it():
+    for l in sys.stdin.read().split('\n'):
+        if l != l.strip():
+            yield l
+            continue
+
+        if ':' in l:
+            yield l
+            continue
+
+        ll = l.split(' ')
+
+        if len(ll) != 3:
+            yield l
+            continue
+
+        a, b, c = ll
+
+        if b != 'const':
+            yield l
+            continue
+
+        print(f'FIX {l}', file=sys.stderr)
+
+        c = c[:-1]
+
+        yield f'auto calc_{c}()' + ' {' + f'static auto* v = new {a}(); return v;' + '}'
+        yield f'#define {c} (*calc_{c}())'
+
+print('\n'.join(it()).strip() + '\n')
+EOF
+find gtk -name '*.cc' -type f | while read l; do
+    cat ${l} | python3 fix.py > _
+    mv _ ${l}
+done
+{% endblock %}
