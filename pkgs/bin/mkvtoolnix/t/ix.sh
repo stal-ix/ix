@@ -32,23 +32,9 @@ bld/fake(tool_name=xsltproc)
 {% endblock %}
 
 {% block configure_flags %}
---enable-qt6
---enable-qt5=no
---disable-qt5
 --enable-static-qt
 --with-qmake6=ixqmake6
 --with-docbook_xsl_root=${out}
-{% endblock %}
-
-{% block setup %}
-for l in $(echo "${QT_PATH}" | tr ':' ' '); do
-    export CPPFLAGS="-I${l}/include/QtCore ${CPPFLAGS}"
-    export CPPFLAGS="-I${l}/include/QtGui ${CPPFLAGS}"
-    export CPPFLAGS="-I${l}/include/QtWidgets ${CPPFLAGS}"
-    export CPPFLAGS="-I${l}/include/QtSvg ${CPPFLAGS}"
-    export CPPFLAGS="-I${l}/include/QtNetwork ${CPPFLAGS}"
-    export CPPFLAGS="-I${l}/include/QtConcurrent ${CPPFLAGS}"
-done
 {% endblock %}
 
 {% block setup_tools %}

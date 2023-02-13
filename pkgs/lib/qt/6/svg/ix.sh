@@ -14,4 +14,5 @@ lib/qt/6/base
 {% block env %}
 {{super()}}
 export QT_PATH="${out}:\${QT_PATH}"
+export CPPFLAGS="-I${out}/include/QtSvg \${CPPFLAGS}"
 {% endblock %}

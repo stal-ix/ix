@@ -51,6 +51,10 @@ llvm-ar q libqtregister.a $(find -type f -name '*.o')
 {% block env %}
 export CMFLAGS="-DQT_DISABLE_NO_DEFAULT_PATH_IN_QT_PACKAGES=ON -DBUILD_WITH_QT6=ON \${CMFLAGS}"
 export QT_PATH=${out}
+# for qmake based projects
+for x in Core Gui Widgets Network Concurrent; do
+    export CPPFLAGS="-I${out}/include/Qt\${x} \${CPPFLAGS}"
+done
 {% endblock %}
 
 {% block patch %}
