@@ -10,3 +10,8 @@ lib/c
 lib/c++
 lib/qt/6/base
 {% endblock %}
+
+{% block env %}
+{{super()}}
+export QT_PATH="${out}:\${QT_PATH}"
+{% endblock %}

@@ -50,6 +50,7 @@ llvm-ar q libqtregister.a $(find -type f -name '*.o')
 
 {% block env %}
 export CMFLAGS="-DQT_DISABLE_NO_DEFAULT_PATH_IN_QT_PACKAGES=ON -DBUILD_WITH_QT6=ON \${CMFLAGS}"
+export QT_PATH=${out}
 {% endblock %}
 
 {% block patch %}

@@ -11,6 +11,7 @@ bld/perl
 
 {% block cmake_flags %}
 INSTALL_LIBEXECDIR=bin
+QT_FEATURE_qmake=ON
 QT_FEATURE_sql=OFF
 QT_FEATURE_gui=OFF
 QT_FEATURE_widgets=OFF
