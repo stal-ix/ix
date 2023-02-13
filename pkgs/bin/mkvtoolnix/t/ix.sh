@@ -28,7 +28,7 @@ lib/shim/fake(lib_name=stdc++)
 bld/qt/6
 bld/ruby
 bld/gettext
-bld/fake(tool_name=xsltproc)
+bld/fake/er(tool_name=xsltproc)
 {% endblock %}
 
 {% block configure_flags %}
@@ -69,10 +69,6 @@ chmod +x ixqmake6
 
 {% block build %}
 ./drake -j ${make_thrs}
-touch doc/man/mkvmerge.1
-touch doc/man/mkvinfo.1
-touch doc/man/mkvextract.1
-touch doc/man/mkvpropedit.1
 {% endblock %}
 
 {% block install %}
