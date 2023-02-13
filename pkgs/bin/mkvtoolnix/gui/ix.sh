@@ -15,3 +15,12 @@ touch doc/man/mkvtoolnix-gui.1
 {{super()}}
 --enable-gui
 {% endblock %}
+
+{% block install %}
+{{super()}}
+cd ${out}
+mv bin old
+mkdir bin
+mv old/mkvtoolnix-gui bin/
+rm -rf old
+{% endblock %}
