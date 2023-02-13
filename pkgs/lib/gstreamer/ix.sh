@@ -68,10 +68,13 @@ rtsp_server=disabled
 {% block install %}
 {{super()}}
 cp -R ${out}/lib/gstreamer*/* ${out}/lib/
-cp -R ${out}/lib/include/* ${out}/include/gstreamer*/
-rm -rf ${out}/lib/gstreamer* ${out}/lib/include
-mv ${out}/include/g*/* ${out}/include/
 for x in ${out}/lib/pkgconfig/*.pc; do
     sed -e 's|toolsdir=.*||' -i ${x}
 done
+{% endblock %}
+
+{% block env %}
+export CPPFLAGS="-I${out}/lib/include \${CPPFLAGS}"
+export CPPFLAGS="-I${out}/lib/gstreamer-1.0/include \${CPPFLAGS}"
+export CPPFLAGS="-I${out}/include/gstreamer-1.0 \${CPPFLAGS}"
 {% endblock %}
