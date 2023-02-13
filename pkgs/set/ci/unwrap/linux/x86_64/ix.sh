@@ -1,6 +1,7 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
+bin/mkvtoolnix
 bin/sdlpop
 bin/jpegoptim
 bin/openttd
