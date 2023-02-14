@@ -1,8 +1,8 @@
 {% extends '//die/c/configure.sh' %}
 
 {% block fetch %}
-https://downloads.scummvm.org/frs/scummvm/2.6.1/scummvm-2.6.1.tar.xz
-sha:8fafb9efabdd1bf8adfe39eeec3fc80b22de30ceddd1fadcde180e356cd317e9
+https://downloads.scummvm.org/frs/scummvm/2.7.0/scummvm-2.7.0.tar.xz
+sha:444b1ffd61774fe867824e57bb3033c9998ffa8a4ed3a13246b01611d5cf9993
 {% endblock %}
 
 {% block bld_libs %}
