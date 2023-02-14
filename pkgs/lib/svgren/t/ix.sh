@@ -12,6 +12,7 @@ wrap_cc
 bin/prorab
 bld/fake(tool_name=doxygen)
 bld/fake(tool_name=lsb_release)
+bld/fake(tool_name=clang-tidy)
 {% endblock %}
 
 {% block make_flags %}
