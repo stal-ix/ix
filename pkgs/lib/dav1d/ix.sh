@@ -1,8 +1,8 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://github.com/videolan/dav1d/archive/refs/tags/1.0.0.zip
-sha:c75cfb130b31a26072329677f29af397f7a8994c857c335e06df31c0be88e845
+https://github.com/videolan/dav1d/archive/refs/tags/1.1.0.tar.gz
+sha:b163791a587c083803a3db2cd18b4fbaf7fb865b47d038c4869ffef7722b6b16
 {% endblock %}
 
 {% block lib_deps %}
@@ -11,4 +11,10 @@ lib/c
 
 {% block bld_tool %}
 bin/nasm
+{% endblock %}
+
+{% block meson_flags %}
+enable_tools=false
+enable_examples=false
+enable_tests=false
 {% endblock %}
