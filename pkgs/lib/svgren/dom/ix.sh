@@ -1,8 +1,8 @@
 {% extends '//lib/svgren/t/ix.sh' %}
 
 {% block fetch %}
-https://github.com/cppfw/svgdom/archive/refs/tags/0.4.2.tar.gz
-sha:f760445503ab1ff828e5014c6f9cf8c5c3d501dc850b12619e8d2fd66cfe90a6
+https://github.com/cppfw/svgdom/archive/refs/tags/0.4.3.tar.gz
+sha:136c119432e61b27779c8b2c42bd71aabeff98e9f99832d04a345bbf6300670f
 {% endblock %}
 
 {% block lib_deps %}
