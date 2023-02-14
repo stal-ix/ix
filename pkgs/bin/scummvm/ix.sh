@@ -31,8 +31,8 @@ lib/xiph/theora
 
 {% block bld_tool %}
 bin/nasm
-bld/elfutils
 bld/fakegit
+bld/elfutils
 {% endblock %}
 
 {% block c_rename_symbol %}
