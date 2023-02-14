@@ -23,7 +23,7 @@ export MRUSTC_LIBDIR=${tmp}
 cd ${tmp}
 cp -R {{dir}} ./qw
 cd qw
-minicargo -L ${MRUSTC_STD} --vendor-dir ${PWD}/vendor .
+minicargo -L ${MRUSTC_STD} -L ${PWD}/output --vendor-dir ${PWD}/vendor .
 {% endblock %}
 
 {% block install %}
