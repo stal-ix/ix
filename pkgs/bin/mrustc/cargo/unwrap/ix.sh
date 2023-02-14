@@ -4,8 +4,8 @@
 lib/z
 lib/xz
 lib/curl
-lib/git/2
 lib/openssl
+lib/git/2/old
 bin/mrustc/std
 lib/shim/fake(lib_name=gcc_s)
 lib/shim/fake(lib_name=atomic)
