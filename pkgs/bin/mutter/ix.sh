@@ -1,8 +1,8 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://gitlab.gnome.org/GNOME/mutter/-/archive/43.1/mutter-43.1.tar.bz2
-sha:65e3fd39c94bdfb8334c7e7df17e1ce6f4119f91cbed774a637764e8a6b92e75
+https://gitlab.gnome.org/GNOME/mutter/-/archive/44.beta/mutter-44.beta.tar.bz2
+sha:f12ad67bd040a22073541783818eb2c33b612ef2abaa8b8474286b28871ee79c
 {% endblock %}
 
 {# hard X11 dep #}
@@ -36,12 +36,14 @@ lib/gsettings/desktop/schemas
 {% endblock %}
 
 {% block bld_tool %}
+bld/glib
 bld/gettext
 bld/wayland
-bld/glib
 {% endblock %}
 
 {% block meson_flags %}
+wayland=true
+xwayland=false
 native_backend=false
 glx=false
 systemd=false
@@ -67,7 +69,5 @@ udev=false
 {% block patch %}
 sed -e 's|ice_dep = .*||' \
     -e 's|have_x11 = .*|have_x11 = false|' \
-    -e 's|have_xwayland = .*|have_xwayland = false|' \
-    -e 's|have_x11_client = .*|have_x11_client = false|' \
     -i meson.build
 {% endblock %}
