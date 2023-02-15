@@ -13,13 +13,13 @@ bin/gcc(for_target={{target.gnu.three}})
 
 {% block bld_tool %}
 bin/xz
+bld/bc
 bld/flex
 bin/gzip
 bin/zstd
 bld/perl
 bld/python
 bin/openssl
-bin/bc/gavin
 bin/bison/3/6
 {% endblock %}
 
