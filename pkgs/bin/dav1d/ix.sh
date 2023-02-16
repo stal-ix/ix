@@ -1,4 +1,4 @@
-{% extends '//lib/dav1d/ix.sh' %}
+{% extends '//lib/dav1d/t/ix.sh' %}
 
 {% block bld_libs %}
 {{super()}}
