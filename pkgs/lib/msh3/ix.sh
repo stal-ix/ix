@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/nibanks/msh3/archive/refs/tags/v0.4.0.tar.gz
-sha:07eaa26a027e60cbf16576741706b81fcbd7e68cfb5e2cc517211450b5b036c9
+https://github.com/nibanks/msh3/archive/refs/tags/v0.6.0.tar.gz
+sha:55f4dd6dbafe043cd68a6b6cda13b365c1943d2e364d608608359d4987f27fa2
 {% endblock %}
 
 {% block lib_deps %}
