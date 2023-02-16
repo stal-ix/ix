@@ -11,6 +11,7 @@ lib/c++
 lib/jxl
 lib/png
 lib/raw
+lib/heif
 lib/jpeg
 lib/webp
 lib/tiff
