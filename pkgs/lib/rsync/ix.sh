@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/librsync/librsync/releases/download/v2.3.2/librsync-2.3.2.tar.gz
-sha:ef8ce23df38d5076d25510baa2cabedffbe0af460d887d86c2413a1c2b0c676f
+https://github.com/librsync/librsync/releases/download/v2.3.3/librsync-2.3.3.tar.gz
+sha:1a79a74173fe385bb59e6ff5be80ac33ab654f9fcc7a9beba37d875ecba88a39
 {% endblock %}
 
 {% block lib_deps %}
