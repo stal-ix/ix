@@ -248,7 +248,7 @@ bin/light
 bin/go/4
 bin/go
 bin/go/19
-bin/go/19/c
+bin/go/20
 bin/zip
 bin/zip/tool
 bin/openssl
