@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/abseil/abseil-cpp/archive/refs/tags/20220623.0.tar.gz
-sha:4208129b49006089ba1d6710845a45e31c59b0ab6bff9e5788a87f55c5abd602
+https://github.com/abseil/abseil-cpp/archive/refs/tags/20230125.0.tar.gz
+sha:3ea49a7d97421b88a8c48a0de16c16048e17725c7ec0f1d3ea2683a2a75adc21
 {% endblock %}
 
 {% block lib_deps %}
