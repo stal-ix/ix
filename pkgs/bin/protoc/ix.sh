@@ -1,1 +1,1 @@
-{% extends '//lib/protobuf/ix.sh' %}
+{% extends '//lib/protobuf/t/ix.sh' %}
