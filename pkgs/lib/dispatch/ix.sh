@@ -22,8 +22,7 @@ shut_up
 
 {% block patch %}
 cat << EOF >> os/generic_unix_base.h
-#if !defined(skjhfsdhfjsdhgfk)
-#define skjhfsdhfjsdhgfk
+#pragma once
 
 #if defined(__cplusplus)
     #define __BEGIN_DECLS extern "C" {
@@ -31,8 +30,6 @@ cat << EOF >> os/generic_unix_base.h
 #else
     #define __BEGIN_DECLS
     #define __END_DECLS
-#endif
-
 #endif
 EOF
 {% endblock %}
