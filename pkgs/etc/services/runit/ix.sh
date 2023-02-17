@@ -1,6 +1,6 @@
 {% extends '//die/proxy.sh' %}
 
-{% set srv_dir %}user_{{srv_slot}}_{{srv_name}}{% endset %}
+{% set srv_dir %}{{srv_slot}}_{{srv_name}}{% endset %}
 
 {% block install %}
 cd ${out}; mkdir -p etc/services/{{srv_dir}}; cd etc/services/{{srv_dir}}
