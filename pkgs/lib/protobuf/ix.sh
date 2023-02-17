@@ -1,12 +1,18 @@
-{% extends '//die/c/autorehell.sh' %}
+{% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/protocolbuffers/protobuf/archive/refs/tags/v21.12.tar.gz
-sha:22fdaf641b31655d4b2297f9981fa5203b2866f8332d3c6333f6b0107bb320de
+https://github.com/protocolbuffers/protobuf/archive/refs/tags/v22.0.tar.gz
+sha:782160a6eae4bddfa4061ff5f7dcf04c9ed1494a0f0c6408b4af6b4a31ab9876
 {% endblock %}
 
 {% block lib_deps %}
 lib/z
 lib/c
 lib/c++
+lib/abseil/cpp
+{% endblock %}
+
+{% block cmake_flags %}
+protobuf_BUILD_TESTS=OFF
+protobuf_ABSL_PROVIDER=package
 {% endblock %}
