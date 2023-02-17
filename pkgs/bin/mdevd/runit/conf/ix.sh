@@ -23,15 +23,4 @@ mount -t devpts devpts /dev/pts
 mount -t tmpfs shmfs /dev/shm
 mdev -s
 EOF
-
-cd ../..
-
-mkdir -p services/mdevd; cd services/mdevd
-
-cat << EOF > run
-#!/bin/sh
-exec srv mdevd mdevd -O 4 -f /etc/mdev.conf -C
-EOF
-
-chmod +x run
 {% endblock %}
