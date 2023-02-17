@@ -31,6 +31,11 @@ cd ${LTV}
 >cmake/options_linux.cmake
 {% endblock %}
 
+{% block patch %}
+sed -e 's|typeof|__typeof__|' -i ${TPL}/libtgvoip/os/linux/AudioInputALSA.cpp
+sed -e 's|typeof|__typeof__|' -i ${TPL}/libtgvoip/os/linux/AudioOutputALSA.cpp
+{% endblock %}
+
 {% block cmake_flags %}
 LIBTGVOIP_DISABLE_PULSEAUDIO=ON
 third_party_loc=${TPL}
