@@ -58,7 +58,7 @@ class RenderContext:
         return json.dumps(list(parse_urls(urls)))
 
     def list_to_json(self, lst):
-        return json.dumps(list(self.parse_list(lst)))
+        return json.dumps(list(preproc(lst)))
 
     def load_file(self, name):
         n = os.path.join(os.path.dirname(self.package.name), name)

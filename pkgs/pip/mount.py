@@ -68,7 +68,7 @@ def gen_pkg(rec):
 
     t = t.replace('{url}', rec['url'])
     t = t.replace('{md5}', rec['md5'])
-    t = t.replace('{run}', ' '.join(x + '/ix.sh' for x in rec.get('run', [])))
+    t = t.replace('{run}', '\n'.join(x + '/ix.sh' for x in rec.get('run', [])))
 
     return t
 
