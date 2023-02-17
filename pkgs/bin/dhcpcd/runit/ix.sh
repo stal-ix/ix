@@ -1,7 +1,6 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
-bin/runsrv
 bin/dhcpcd/sys
-bin/dhcpcd/runit/scripts
+etc/services/runit(srv_slot=system,srv_name=dhcpcd,srv_command=dhcpcd --nobackground --debug --config /etc/dhcpcd.conf)
 {% endblock %}
