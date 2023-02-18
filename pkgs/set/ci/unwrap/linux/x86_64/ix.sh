@@ -1,6 +1,7 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
+bin/ag
 bin/mkvtoolnix
 bin/mkvtoolnix/gui
 bin/sdlpop
