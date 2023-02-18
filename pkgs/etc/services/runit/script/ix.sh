@@ -1,13 +1,13 @@
 {% extends '//die/proxy.sh' %}
 
-{% set srv_dir %}{{srv_slot}}_{{srv_name}}{% endset %}
+{% set sd %}{% if srv_dir %}{{srv_dir}}{% else %}user_{{srv_slot}}_{{srv_name}}{% endif %}{% endset %}
 
 {% block install %}
-cd ${out}; mkdir -p etc/services/{{srv_dir}}; cd etc/services/{{srv_dir}}
+cd ${out}; mkdir -p etc/services/{{sd}}; cd etc/services/{{sd}}
 
 cat << EOF > run
 #!/bin/sh
-exec srv {{srv_dir}} {{srv_command}}
+exec srv {{sd}} {{srv_command}}
 EOF
 
 chmod +x run
