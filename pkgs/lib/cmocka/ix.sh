@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://cmocka.org/files/1.1/cmocka-1.1.5.tar.xz
-sha:f0ccd8242d55e2fd74b16ba518359151f6f8383ff8aef4976e48393f77bba8b6
+https://cmocka.org/files/1.1/cmocka-1.1.6.tar.xz
+sha:5b3283038ddee236e7cb410ff217a31e66a651674838eb51a8ff0e1eba737a76
 {% endblock %}
 
 {% block lib_deps %}
