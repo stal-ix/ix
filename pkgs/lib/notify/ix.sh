@@ -1,8 +1,8 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://download.gnome.org/sources/libnotify/0.8/libnotify-0.8.1.tar.xz
-sha:d033e6d4d6ccbf46a436c31628a4b661b36dca1f5d4174fe0173e274f4e62557
+https://download.gnome.org/sources/libnotify/0.8/libnotify-0.8.2.tar.xz
+sha:c5f4ed3d1f86e5b118c76415aacb861873ed3e6f0c6b3181b828cf584fc5c616
 {% endblock %}
 
 {% block lib_deps %}
@@ -12,10 +12,10 @@ lib/gdk/pixbuf
 {% endblock %}
 
 {% block meson_flags %}
-tests=false
-introspection=disabled
 man=false
+tests=false
 gtk_doc=false
+introspection=disabled
 {% endblock %}
 
 {% block bld_tool %}
