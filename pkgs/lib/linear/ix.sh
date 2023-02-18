@@ -1,8 +1,8 @@
 {% extends '//die/c/make.sh' %}
 
 {% block fetch %}
-https://github.com/cjlin1/liblinear/archive/v245/liblinear-245.tar.gz
-sha:ce29f42c2c0d10e4627ac50a953fe3c130d2802868e6a2dc9a396356b96e8abc
+https://github.com/cjlin1/liblinear/archive/v246/liblinear-246.tar.gz
+sha:88bef33258c0b686a57a8f373ff3eb1912666aadd5a26cfb2101604ef2c64140
 {% endblock %}
 
 {% block lib_deps %}
