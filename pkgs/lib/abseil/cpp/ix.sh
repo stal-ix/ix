@@ -1,13 +1,14 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/abseil/abseil-cpp/archive/refs/tags/20230125.0.tar.gz
-sha:3ea49a7d97421b88a8c48a0de16c16048e17725c7ec0f1d3ea2683a2a75adc21
+https://github.com/abseil/abseil-cpp/archive/refs/tags/20230125.1.tar.gz
+sha:81311c17599b3712069ded20cca09a62ab0bf2a89dfa16993786c8782b7ed145
 {% endblock %}
 
 {% block lib_deps %}
 lib/c
 lib/c++
+lib/execinfo
 {% endblock %}
 
 {% block bld_libs %}
@@ -15,9 +16,8 @@ lib/kernel
 {% endblock %}
 
 {% block patch %}
-cat << EOF >> absl/base/options.h
-#undef ABSL_OPTION_USE_STD_STRING_VIEW
-#define ABSL_OPTION_USE_STD_STRING_VIEW 1
+cat << EOF > absl/base/options.h
+{% include 'options.h' %}
 EOF
 {% endblock %}
 
@@ -31,4 +31,6 @@ export CXXFLAGS="-std=c++20 \${CXXFLAGS}"
 
 {% block cmake_flags %}
 CMAKE_CXX_STANDARD=20
+# we propagate it ourselves
+ABSL_PROPAGATE_CXX_STD=OFF
 {% endblock %}
