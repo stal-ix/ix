@@ -6,5 +6,5 @@ lib/c
 
 {% block patch %}
 {{super()}}
-sed -e 's|return rl_completer_word_break_characters|return (char*)rl_completer_word_break_characters|' -i gdb/completer.c
+sed -e 's| = { 0 }||' -i gdb/aarch64-linux-nat.c
 {% endblock %}
