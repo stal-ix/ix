@@ -1,2 +1,2 @@
-https://mirror.tochlab.net/pub/gnu/gdb/gdb-12.1.tar.xz
-sha:0e1793bf8f2b54d53f46dea84ccfd446f48f81b297b28c4f7fc017b818d69fed
+https://ftp.gnu.org/gnu/gdb/gdb-13.1.tar.xz
+sha:115ad5c18d69a6be2ab15882d365dda2a2211c14f480b3502c6eba576e2e95a0
