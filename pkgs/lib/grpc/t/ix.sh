@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/grpc/grpc/archive/refs/tags/v1.46.3.tar.gz
-sha:d6cbf22cb5007af71b61c6be316a79397469c58c82a942552a62e708bce60964
+https://github.com/grpc/grpc/archive/refs/tags/v1.46.7.tar.gz
+sha:1f9cf306a79e9a76ff36f2f0563b72c84ab9f2592372a742a234f360ae733e54
 {% endblock %}
 
 {% block lib_deps %}
@@ -12,7 +12,6 @@ lib/re2
 lib/c++
 lib/c/ares
 lib/openssl
-lib/protobuf
 lib/abseil/cpp
 {% endblock %}
 
