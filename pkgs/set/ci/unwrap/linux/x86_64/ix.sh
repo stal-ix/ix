@@ -382,7 +382,6 @@ bin/tinyalsa
 bin/alsa/utils
 bin/sndio/runit
 bin/sndio/ctl
-bin/sndio/sys
 bin/sndio/d
 bin/rsvg/convert
 bin/fribidi
