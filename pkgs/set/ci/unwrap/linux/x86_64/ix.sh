@@ -660,7 +660,7 @@ bin/man/db
 bin/kuroko
 bin/kuroko/lite
 bin/bim
-#bin/et
+bin/et
 bin/socat
 #bin/efitools
 bin/rhash

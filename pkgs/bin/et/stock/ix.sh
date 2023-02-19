@@ -27,3 +27,7 @@ DISABLE_VCPKG=ON
 {% block bld_tool %}
 bin/protoc
 {% endblock %}
+
+{% block setup %}
+export CXXFLAGS="${CXXFLAGS} -std=c++17"
+{% endblock %}
