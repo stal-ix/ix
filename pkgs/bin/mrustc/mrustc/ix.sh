@@ -10,24 +10,22 @@ lib/z
 lib/c++
 {% endblock %}
 
-{% block build %}
-make -j ${make_thrs} bin/mrustc
-{% endblock %}
-
 {% block bld_tool %}
 bld/bash
+bld/fake(tool_name=git)
+bld/fake(tool_name=objcopy)
+{% endblock %}
+
+{% block make_target %}
+bin/mrustc
+{% endblock %}
+
+{% block make_flags %}
+V=
 {% endblock %}
 
 {% block build_flags %}
 shut_up
-{% endblock %}
-
-{% block setup_tools %}
-cat << EOF > objcopy
-#!/usr/bin/env sh
-EOF
-
-chmod +x objcopy
 {% endblock %}
 
 {% block install %}
