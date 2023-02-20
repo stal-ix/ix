@@ -1,4 +1,4 @@
-{% extends '//die/c/ix.sh' %}
+{% extends '//die/c/make.sh' %}
 
 {% block fetch %}
 https://github.com/aklomp/base64/archive/refs/tags/v0.4.0.tar.gz
@@ -9,12 +9,12 @@ sha:1fce54059c504b2604c22c20cd930444a71b3340fc81334c037da63976d92002
 lib/c
 {% endblock %}
 
-{% block bld_tool %}
-bld/make
+{% block make_target %}
+bin/base64
 {% endblock %}
 
-{% block build %}
-make OBJCOPY=llvm-objcopy bin/base64
+{% block make_flags %}
+OBJCOPY=llvm-objcopy
 {% endblock %}
 
 {% block install %}
