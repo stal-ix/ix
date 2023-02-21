@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-http://mirrors.kernel.org/sourceware/lvm2/LVM2.2.03.18.tgz
-sha:9f683e2980d95c0dcebbd25c7c177032c5615d7267bfc885eabfce59280f4769
+http://mirrors.kernel.org/sourceware/lvm2/LVM2.2.03.19.tgz
+sha:ec9ff9f1d998ce2b05f1ad22ddcf9401d202d0215811dc468d78cba6b0b26879
 {% endblock %}
 
 {% block lib_deps %}
@@ -34,9 +34,4 @@ device-mapper
 
 {% block make_install_target %}
 install_device-mapper
-{% endblock %}
-
-{% block install %}
-{{super()}}
-mv ${out}/sbin ${out}/bin
 {% endblock %}
