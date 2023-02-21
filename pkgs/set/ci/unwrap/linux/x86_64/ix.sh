@@ -1,6 +1,7 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
+bin/lvm2
 bin/ag
 bin/mkvtoolnix
 bin/mkvtoolnix/gui
