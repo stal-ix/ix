@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://downloads.sourceforge.net/project/gparted/gparted/gparted-1.4.0/gparted-1.4.0.tar.gz
-sha:e5293a792e53fdbeba29c4a834113cd9603d0d639330da931a468bf3687887be
+https://downloads.sourceforge.net/project/gparted/gparted/gparted-1.5.0/gparted-1.5.0.tar.gz
+sha:3c95ea26a944083ff1d9b17639b1e2ad9758df225dc751ff407b2a6aa092a8de
 {% endblock %}
 
 {% block bld_libs %}
@@ -21,7 +21,6 @@ bld/intltool
 {% endblock %}
 
 {% block configure_flags %}
---disable-nls
 --disable-doc
 {% endblock %}
 
