@@ -166,9 +166,6 @@ bin/sway
 bin/bmake
 bin/waybar
 bin/mandoc
-bin/sud/client
-bin/sud/server
-bin/sud/runit
 bin/sud
 bin/stdman
 bin/graphviz/cmake
