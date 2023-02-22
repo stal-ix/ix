@@ -30,15 +30,4 @@ exec doas root "\${@}"
 EOF
 
 chmod +x sudo doas
-
-cd ..
-
-mkdir -p etc/services/sud; cd etc/services/sud
-
-cat << EOF > run
-#!/usr/bin/env sh
-exec srv sud sud_server -R -F -E -s -g -j -k -m -p 127.0.0.1:1 -P dropbear.pid
-EOF
-
-chmod +x run
 {% endblock %}
