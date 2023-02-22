@@ -1,8 +1,8 @@
 {% extends '//die/c/autohell.sh' %}
 
 {% block fetch %}
-https://ftp.gnu.org/gnu/moe/moe-1.12.tar.lz
-sha:8a885f2be426f8e04ad39c96012bd860954085a23744f2451663168826d7a1e8
+https://ftp.gnu.org/gnu/moe/moe-1.13.tar.lz
+sha:43a557bc512f89d6c718e5f41029cfe3a055682620eb8dbece6302f34a26146b
 {% endblock %}
 
 {% block bld_libs %}
