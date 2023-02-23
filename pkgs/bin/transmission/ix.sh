@@ -1,6 +1,7 @@
-{% extends '//bin/transmission/t/ix.sh' %}
+{% extends '//die/hub.sh' %}
 
-{% block cmake_flags %}
-{{super()}}
-ENABLE_CLI=ON
+{% block run_deps %}
+bin/transmission/qt
+bin/transmission/gtk
+bin/transmission/cli
 {% endblock %}
