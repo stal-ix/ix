@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/eranif/codelite/archive/refs/tags/16.0.0.tar.gz
-sha:fb707b98b2f56ae0791c7cb341c6a0240ff26a785dae31f7dcd1038956737957
+https://github.com/eranif/codelite/releases/download/17.0.0/codelite-17.0.0.tar.gz
+sha:c0dfe6df38426d761ef5622b7a9ab91481244a09ad751f5daafa37bb9b611d57
 {% endblock %}
 
 {% block bld_libs %}
@@ -11,8 +11,8 @@ lib/c++
 lib/ssh
 lib/glib
 lib/pcre/2
-lib/sqlite/3
 lib/hunspell
+lib/sqlite/3
 lib/wx/widgets
 {% endblock %}
 
@@ -23,19 +23,17 @@ bld/bison
 
 {% block unpack %}
 {{super()}}
+cd code*
 find -type f -name '*.dylib' -delete
 find -type f -name '*.dll' -delete
 find -type f -name '*.exe' -delete
 find -type f -name '*.a' -delete
-find -size +1000000c -delete
+find -size +1500000c -delete
 >PHPRefactoring/phprefactor.phar
 {% endblock %}
 
 {% block patch %}
-sed -e 's|libssh.so|libssh.a|' \
-    -e 's|add_.*ctags.*||'     \
-    -i CMakeLists.txt
-sed -e 's|.*splitterLeft.*SetSplitterLeft.*||' -i wxcrafter/myxh_propgrid.cpp
+sed -e 's|libssh.so|libssh.a|' -i CMakeLists.txt
 sed -e 's|thread_local |static thread_local |' -i Plugin/globals.cpp
 {% endblock %}
 
