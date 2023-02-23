@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/transmission/libutp/archive/bf695bdfb047cdca9710ea9cffc4018669cf9548.zip
-sha:6696fc6eedb882c9ce5cfb8adb68030c81a31247f7d585a95ad6d83ad50eabdb
+https://github.com/transmission/libutp/archive/c95738b1a6644b919e5b64d3ea9736cfc5894e0b.tar.gz
+sha:d856fde68828d52eb39df40e15ad5dc4efaa9a51d4121bcbfbe47fed2163d20a
 {% endblock %}
 
 {% block lib_deps %}
