@@ -17,6 +17,7 @@ lib/xiph/flac
 lib/drivers/3d
 lib/xiph/vorbis
 lib/vulkan/loader
+bin/quake/1/vk/dl
 {% endblock %}
 
 {% block bld_tool %}
