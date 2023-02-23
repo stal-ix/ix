@@ -15,3 +15,7 @@ lib/freetype
 --disable-bdjava-jar
 --without-fontconfig
 {% endblock %}
+
+{% block c_rename_symbol %}
+gc_free
+{% endblock %}

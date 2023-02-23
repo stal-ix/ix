@@ -9,5 +9,6 @@ vulkan
 {% endblock %}
 
 {% block export_symbols %}
+vkGetDeviceProcAddr
 vkGetInstanceProcAddr
 {% endblock %}
