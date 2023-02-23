@@ -11,6 +11,7 @@ lib/mad
 lib/opus
 lib/sdl/2
 lib/kernel
+lib/dbus/dl
 lib/xiph/ogg
 lib/opus/file
 lib/xiph/flac
