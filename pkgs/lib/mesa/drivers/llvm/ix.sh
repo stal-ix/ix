@@ -10,3 +10,6 @@ lib/llvm/13
 llvm=enabled
 shared-llvm=disabled
 {% endblock %}
+
+{% block meson_cross %}
+{% endblock %}
