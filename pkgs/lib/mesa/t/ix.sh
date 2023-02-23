@@ -49,11 +49,7 @@ cat << EOF > merge.py
 {% include 'merge.py' %}
 EOF
 
-{% if mesa_ver_22 %}
-python3 ./merge.py src/util/00-mesa-defaults.conf src/amd/vulkan/00-radv-defaults.conf > _
-{% else %}
 python3 ./merge.py src/util/00-mesa-defaults.conf src/util/00-radv-defaults.conf > _
-{% endif %}
 mv _ src/util/00-mesa-defaults.conf
 
 cat << EOF >> src/util/xmlconfig.h
