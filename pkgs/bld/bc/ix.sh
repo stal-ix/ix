@@ -4,7 +4,7 @@
 lib/c
 {% endblock %}
 
-{% block setup %}
+{% block install %}
 export PATH=${PWD}/bin:${PATH}
 {{super()}}
 {% endblock %}
