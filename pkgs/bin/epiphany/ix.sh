@@ -2,7 +2,6 @@
 
 {% block run_deps %}
 bin/shepherd
-bin/webkitproc
-bin/epiphany/stock(gtk_ver=4)
+bin/epiphany/gui
 bin/xdg/er/webkit(wrap=epiphany,prefix=shepherd)
 {% endblock %}
