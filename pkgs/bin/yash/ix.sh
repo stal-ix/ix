@@ -1,8 +1,8 @@
 {% extends '//die/c/autohell.sh' %}
 
 {% block fetch %}
-https://github.com/magicant/yash/releases/download/2.53/yash-2.53.tar.xz
-sha:e430ee845dfd7711c4f864d518df87dd78b40560327c494f59ccc4731585305d
+https://github.com/magicant/yash/releases/download/2.54/yash-2.54.tar.xz
+sha:44a0ac1ccf7c3acecfbea027d8c0c930f13a828065be318055ce113015391839
 {% endblock %}
 
 {% block bld_libs %}
