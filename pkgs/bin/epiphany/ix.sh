@@ -1,9 +1,5 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
-{% if mesa_driver == 'radv' %}
-bin/epiphany/unwrap(mesa_driver=radeonsi)
-{% else %}
-bin/epiphany/unwrap
-{% endif %}
+bin/epiphany/unwrap({% if mesa_driver == 'radv' %}mesa_driver=radeonsi,{% endif %}gtk_ver=4)
 {% endblock %}

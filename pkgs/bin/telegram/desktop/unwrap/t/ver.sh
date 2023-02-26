@@ -1,2 +1,2 @@
-https://github.com/telegramdesktop/tdesktop/releases/download/v4.6.4/tdesktop-4.6.4-full.tar.gz
-sha:5c3f0292fd7a54249672ad3bd08b0c13ec78d91e305c59836f37aef9f72c5a77
+https://github.com/telegramdesktop/tdesktop/releases/download/v4.6.5/tdesktop-4.6.5-full.tar.gz
+sha:3448d879afdc7c5c06d2b0f9cabe339b08093cb25f380a3e398d32daa96a9c36
