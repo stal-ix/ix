@@ -1,7 +1,9 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
-bin/shepherd
-bin/epiphany/gui
-bin/xdg/er/webkit(wrap=epiphany,prefix=shepherd)
+{% if mesa_driver == 'radv' %}
+bin/epiphany/unwrap(mesa_driver=radeonsi)
+{% else %}
+bin/epiphany/unwrap
+{% endif %}
 {% endblock %}
