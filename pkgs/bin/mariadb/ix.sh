@@ -7,7 +7,7 @@ bld/bison
 {% endblock %}
 
 {% block bld_data %}
-bin/mariadb/src(parent_id=mariadb)
+aux/git(parent_id=mariadb,sha=74ef5fd2d9d4431f0dfe94ccbf14c0a16a9a61efee98b534a5c2f7998bad320d,branch=mariadb-10.11.2,repo=https://github.com/MariaDB/server.git)
 {% endblock %}
 
 {% block step_unpack %}
