@@ -5,6 +5,6 @@
 #bin/epiphany/gui/fixdrv
 bin/shepherd
 bin/webkitproc
-bin/epiphany/stock(gtk_ver=4)
+bin/epiphany/{{gtk_ver}}(allocator=tcmalloc)
 bin/xdg/er/webkit(wrap=epiphany,prefix=shepherd)
 {% endblock %}
