@@ -46,7 +46,7 @@ wrap_cc
 
 {% block setup %}
 export CPPFLAGS=$(echo ${CPPFLAGS} | tr ' ' '\n' | grep -v mesa | tr '\n' ' ')
-export CPPFLAGS="-Wno-register ${CPPFLAGS}"
+export CXXFLAGS="-Wno-register ${CXXFLAGS}"
 {% endblock %}
 
 {% block patch %}
