@@ -1,8 +1,8 @@
 {% extends '//die/c/make.sh' %}
 
 {% block fetch %}
-https://github.com/noocsharp/wayclip/archive/refs/tags/0.2.tar.gz
-sha:170a9bb896d3a1a18643d062f70d92b6a2c2726ddf0c804990bec2557b521ba1
+https://github.com/noocsharp/wayclip/archive/refs/tags/0.4.1.tar.gz
+sha:c4fa53618b0869595957e146cb1cfb32309dcbec3ad354ff8e3b075f4219cba8
 {% endblock %}
 
 {% block bld_libs %}
