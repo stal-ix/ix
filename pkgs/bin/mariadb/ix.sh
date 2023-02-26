@@ -1,8 +1,18 @@
 {% extends '//die/c/cmake.sh' %}
 
-{% block fetch %}
-https://rsync.osuosl.org/pub/mariadb/mariadb-10.11.1/source/mariadb-10.11.1.tar.gz
-sha:ffacf84e74daf249ad64b9573d79a4e882f66b004614f8b33bfcb14a8e25da1d
+{% block std_box %}
+bin/lz4
+bld/bison
+{{super()}}
+{% endblock %}
+
+{% block bld_data %}
+bin/mariadb/src(parent_id=mariadb)
+{% endblock %}
+
+{% block step_unpack %}
+mkdir src; cd src
+lz4 -d ${src}/*lz4 - | bsdtar -x -f - --no-same-permissions --no-same-owner --strip-components 1
 {% endblock %}
 
 {% block bld_libs %}
@@ -12,12 +22,14 @@ lib/xz
 lib/fmt
 lib/lz4
 lib/c++
+lib/lzo
 lib/zstd
 lib/boost
 lib/bzip/2
 lib/curses
 lib/gnutls
 lib/kernel
+lib/snappy
 lib/pcre/2/posix
 {% endblock %}
 
