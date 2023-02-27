@@ -63,7 +63,3 @@ WITH_X11=OFF
 {% block setup %}
 export CXXFLAGS="-Wno-register ${CXXFLAGS}"
 {% endblock %}
-
-{% block patch %}
-sed -e 's|{g_strdup|{strdup|g' -i src/ui/widget/selected-style.cpp
-{% endblock %}
