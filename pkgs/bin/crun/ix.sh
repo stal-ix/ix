@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://github.com/containers/crun/releases/download/1.8/crun-1.8.tar.xz
-sha:6dc621b6825eaf0d6a8f70d2a7fa9adde24cee3ad9221a5efbadb0b8b25e0843
+https://github.com/containers/crun/releases/download/1.8.1/crun-1.8.1.tar.xz
+sha:01b68269d94e5fe11106a9b14c2f144be03b16ec798951f4efa6aa16ba9da29a
 {% endblock %}
 
 {% block bld_libs %}
