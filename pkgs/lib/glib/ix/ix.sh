@@ -37,6 +37,12 @@ sed -e 's|.*fast && result_.*||' \
     -e 's|sniff_length = _.*|sniff_length = 1024;| ' \
     -i gio/glocalfileinfo.c
 
+cat << EOF >> glib/gstrfuncs.h
+#undef g_strdup
+#undef g_str_has_suffix
+#undef g_str_has_prefix
+EOF
+
 {{super()}}
 {% endblock %}
 
