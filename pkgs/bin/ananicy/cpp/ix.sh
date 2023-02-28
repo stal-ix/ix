@@ -17,7 +17,7 @@ lib/kernel
 lib/spdlog
 lib/execinfo
 lib/shim/gnu
-lib/json/nlohmann
+lib/json/nlohmann/11
 {% endblock %}
 
 {% block unpack %}

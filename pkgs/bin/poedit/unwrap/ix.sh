@@ -16,7 +16,7 @@ lib/pugixml
 lib/lucene++
 lib/gtk/spell
 lib/wx/widgets
-lib/json/nlohmann
+lib/json/nlohmann/11
 lib/{{allocator}}/trim(delay=5,bytes=10000000)
 {% endblock %}
 
