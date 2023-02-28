@@ -43,13 +43,10 @@ def cli_let(ctx):
 def cli_run(ctx):
     args = ctx['args']
 
-    for r in prepare(ctx, ['ephemeral'] + args[:args.index('--')]):
+    for r in reversed(list(prepare(ctx, ['ephemeral'] + args[:args.index('--')]))):
         cmd = f'. {r.path}/env; ' + ' '.join(args[args.index('--') + 1:])
-        env = {
-            'PATH': f'/nowhere:{r.path}/bin',
-            'TERM': os.environ.get('TERM', 'xterm'),
-            'TMPDIR': os.environ.get('TMPDIR', ''),
-        }
+        env = os.environ.copy()
+        env['PATH'] = f'/nowhere:{r.path}/bin'
 
         return subprocess.check_call(cmd, shell=True, env=env)
 
