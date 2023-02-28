@@ -20,7 +20,7 @@ lib/xiph/ogg
 lib/qt/6/svg
 lib/qt/6/base
 lib/xiph/vorbis
-lib/json/nlohmann
+lib/json/nlohmann/11
 lib/shim/fake(lib_name=stdc++)
 {% endblock %}
 
