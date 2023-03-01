@@ -1,136 +1,20 @@
 #!/usr/bin/env sh
 
-message() (
-    notify-send -t 2000 "${@}"
+portalsend() (
+    dbus-send \
+        --dest=org.freedesktop.portal.Desktop \
+        --print-reply \
+        /org/freedesktop/portal/desktop \
+        org.freedesktop.portal.OpenURI.OpenURI \
+        string: \
+        string:"${1}" \
+        dict:string:string:
 )
 
-die() {
-    message "${@}"
-    exit 1
-}
-
-on_browser() {
-    exec epiphany "${1}"
-}
-
-on_pdf() {
-    for c in xpdf zathura evince; do
-        if command -v ${c}; then
-            exec ${c} "${1}"
-        fi
-    done
-
-    die 'cannot open pdf' "${1}"
-}
-
-on_image() {
-    for c in pqiv qimgv imv swayimg; do
-        if command -v ${c}; then
-            exec ${c} "${1}"
-        fi
-    done
-
-    die 'can not open image' "${1}"
-}
-
-on_video() {
-    for c in mpv mplayer; do
-        if command -v ${c}; then
-            exec ${c} "${1}"
-        fi
-    done
-
-    die 'can not open media' "${1}"
-}
-
-on_audio() {
-    for c in strawberry qmmp; do
-        if command -v ${c}; then
-            exec ${c} "${1}"
-        fi
-    done
-
-    on_video "${1}"
-}
-
-on_archive() {
-    for c in xarchiver; do
-        if command -v ${c}; then
-            exec ${c} "${1}"
-        fi
-    done
-
-    die 'can not open archive' "${1}"
-}
-
-url_decode() (
-    urldec $(echo "${1}" | sed -e 's|file://||')
-)
-
-url="${1}"
-
-case "${url}" in
-    file://*)
-        url=$(url_decode "${url}")
-    ;;
-
-    http*)
-        on_browser "${url}"
-    ;;
-esac
-
-if test -f "${url}"; then
-    mt=$(file -L -b --mime-type "${url}")
-
-    case "${mt}" in
-        application/pdf)
-            on_pdf "${url}"
-        ;;
-
-        image/*)
-            on_image "${url}"
-        ;;
-
-        video/*)
-            on_video "${url}"
-        ;;
-
-        audio/*)
-            on_audio "${url}"
-        ;;
-
-        application/gzip)
-            on_archive "${url}"
-        ;;
-
-        application/x-bzip2)
-            on_archive "${url}"
-        ;;
-
-        application/x-lzip)
-            on_archive "${url}"
-        ;;
-
-        application/x-rar)
-            on_archive "${url}"
-        ;;
-
-        application/x-xz)
-            on_archive "${url}"
-        ;;
-
-        application/zip)
-            on_archive "${url}"
-        ;;
-    esac
+if portalsend "${1}"; then
+    echo 'Portal'
+    exit 0
 fi
 
-if test -d "${url}"; then
-    if command -v pcmanfm; then
-        exec pcmanfm "${url}"
-    fi
-
-    die 'can not open directory' "${url}"
-fi
-
-die 'can not open file' "${url}"
+echo 'Direct'
+xdg-open-dispatch "${@}"
