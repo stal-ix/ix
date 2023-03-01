@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://github.com/NixOS/nix/archive/refs/tags/2.13.3.tar.gz
-sha:53d46e62e5bb9401438c6a0b412e3853a5a977f029f2ec501476bbd9514f80e4
+https://github.com/NixOS/nix/archive/refs/tags/2.14.0.tar.gz
+sha:7f95535f82d7bd5654714f9eea2dfa1ee4331a8c49be8df251e19fb307f5cf7f
 {% endblock %}
 
 {% block bld_libs %}
@@ -22,6 +22,7 @@ lib/archive
 lib/editline
 lib/sqlite/3
 lib/googletest
+lib/rapidcheck
 lib/boehmgc/c++
 lib/bsd/overlay
 lib/json/nlohmann/11
