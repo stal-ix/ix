@@ -30,5 +30,6 @@ export LDFLAGS="-rdynamic ${LDFLAGS}"
 {% block patch %}
 {{super()}}
 sed -e 's|.*No available application.*|return ix_xdg_open(path);|' \
+    -e 's|.*Failed to get default app for MIME type.*|return ix_xdg_open(uri);|' \
     -i lib/ephy-file-helpers.c
 {% endblock %}
