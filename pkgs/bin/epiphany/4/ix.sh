@@ -7,6 +7,7 @@ sha:571dd35cde4ce75eb8ff629c38290b2caef0172cbee77f7f993a78a8aef0360f
 
 {% block bld_libs %}
 lib/adwaita
+lib/shim/xdg
 lib/mesa/glesv2/dl
 {{super()}}
 {% endblock %}
@@ -24,4 +25,10 @@ wrap_cc
 {% block configure %}
 export LDFLAGS="-rdynamic ${LDFLAGS}"
 {{super()}}
+{% endblock %}
+
+{% block patch %}
+{{super()}}
+sed -e 's|.*No available application.*|return ix_xdg_open(path);|' \
+    -i lib/ephy-file-helpers.c
 {% endblock %}
