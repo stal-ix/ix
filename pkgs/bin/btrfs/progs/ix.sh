@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://www.kernel.org/pub/linux/kernel/people/kdave/btrfs-progs/btrfs-progs-v6.1.3.tar.xz
-sha:d37fc9ec4fa5778b20aa7548fe706eb3a300338c1473318271ae54024dac7167
+https://www.kernel.org/pub/linux/kernel/people/kdave/btrfs-progs/btrfs-progs-v6.2.tar.xz
+sha:5fa59b9304bec59a8f0cb505f60c95d8c46b2948389033ad9d3cd72928bfd144
 {% endblock %}
 
 {% block bld_libs %}
@@ -26,4 +26,13 @@ reallocarray
 --with-crypto=libgcrypt
 --disable-documentation
 --disable-python
+{% endblock %}
+
+{% block patch %}
+find . -type f -name '*.c' | while read l; do
+    sed \
+        -e 's|.*sha256_init_accel.*;.*||' \
+        -e 's|.*blake2_init_accel.*;.*||' \
+        -i ${l}
+done
 {% endblock %}
