@@ -1,9 +1,8 @@
 #!/usr/bin/env sh
 
 portalsend() (
-    dbus-send \
+    dbus-send --print-reply \
         --dest=org.freedesktop.portal.Desktop \
-        --print-reply \
         /org/freedesktop/portal/desktop \
         org.freedesktop.portal.OpenURI.OpenURI \
         string: \
