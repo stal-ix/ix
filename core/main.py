@@ -4,6 +4,7 @@ import os
 import sys
 import profile
 import importlib
+import subprocess
 
 import core.error as ce
 
@@ -76,6 +77,8 @@ def main_func(args, binary):
 def main(argv, ix):
     try:
         main_func(argv[1:], ix)
+    except subprocess.CalledProcessError as e:
+        return e.returncode
     except ce.Error as e:
         if e.visible:
             if e.context:
