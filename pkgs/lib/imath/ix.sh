@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/AcademySoftwareFoundation/Imath/archive/refs/tags/v3.1.6.tar.gz
-sha:ea5592230f5ab917bea3ceab266cf38eb4aa4a523078d46eac0f5a89c52304db
+https://github.com/AcademySoftwareFoundation/Imath/archive/refs/tags/v3.1.7.tar.gz
+sha:bff1fa140f4af0e7f02c6cb78d41b9a7d5508e6bcdfda3a583e35460eb6d4b47
 {% endblock %}
 
 {% block lib_deps %}
