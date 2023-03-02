@@ -15,6 +15,6 @@ sed -e 's|.*subdir.*util.*||' -i meson.build
 {{super()}}
 {% endblock %}
 
-{% block env_lib %}
+{% block env %}
 export CPPFLAGS="-I${out}/include/harfbuzz \${CPPFLAGS}"
 {% endblock %}

@@ -27,6 +27,7 @@ coretext=enabled
 glib=enabled
 gobject=enabled
 tests=disabled
+docs=disabled
 {% endblock %}
 
 {% block install %}
