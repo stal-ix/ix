@@ -9,7 +9,3 @@ sha:0083df24b3916c2f34ab63f8b4de6720ba9799e0e9d139c4b2d4ae41ad6aa53d
 lib/c
 lib/curses
 {% endblock %}
-
-{% block c_rename_symbol %}
-reallocarray
-{% endblock %}
