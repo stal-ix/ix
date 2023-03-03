@@ -13,6 +13,7 @@ lib/lz4
 lib/c++
 lib/vpx
 lib/opus
+lib/ffmpeg
 lib/gsl/ms
 lib/xxhash
 lib/openal
@@ -22,7 +23,6 @@ lib/openssl
 lib/protobuf
 lib/mini/zip
 lib/dispatch
-lib/ffmpeg/4
 lib/qt/6/svg
 lib/expected
 lib/qt/6/base
