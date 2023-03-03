@@ -1,8 +1,8 @@
 {% extends '//lib/gtk/t/ix.sh' %}
 
 {% block fetch %}
-https://download.gnome.org/sources/gtk+/3.24/gtk%2B-3.24.36.tar.xz
-sha:27a6ef157743350c807ffea59baa1d70226dbede82a5e953ffd58ea6059fe691
+https://download.gnome.org/sources/gtk+/3.24/gtk%2B-3.24.37.tar.xz
+sha:6745f0b4c053794151fd0f0e2474b077cccff5f83e9dd1bf3d39fe9fe5fb7f57
 {% endblock %}
 
 {% block lib_deps %}
