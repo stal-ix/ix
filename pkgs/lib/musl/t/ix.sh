@@ -90,6 +90,9 @@ export ac_cv_type_struct_sockaddr_storage=yes
 export gl_cv_func_fchownat_nofollow_works=yes
 export gl_cv_func_fchownat_empty_filename_works=yes
 export gl_cv_func_posix_spawn_file_actions_addclose_works=yes
+# TODO(pg83): check it
+export bash_cv_func_snprintf=yes
+export bash_cv_func_sigsetjmp=present
 {% endblock %}
 
 {% block test_lib %}
