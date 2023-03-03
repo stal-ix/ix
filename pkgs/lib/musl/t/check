@@ -1,0 +1,6 @@
+ac_cv_func_calloc_0_nonnull ["yes": 142, "no": 4]
+ac_cv_func_obstack ["no": 59, "yes": 24]
+ac_cv_func_backtrace_symbols_fd ["yes": 74, "no": 4]
+ac_cv_func_backtrace ["yes": 74, "no": 6]
+ac_cv_func_closefrom ["yes": 46, "no": 8]
+ac_cv_func_freezero ["yes": 45, "no": 9]

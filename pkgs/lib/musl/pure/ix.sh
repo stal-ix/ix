@@ -2,5 +2,6 @@
 
 {% block env %}
 {{super()}}
+export ac_cv_func_reallocarray=yes
 export ac_cv_func_malloc_0_nonnull=yes
 {% endblock %}
