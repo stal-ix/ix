@@ -9,10 +9,6 @@ sha:9baa186059ebbf25c06308e9f991fda31f7183c0f24931826d83aa6abd8a0261
 bld/auto
 {% endblock %}
 
-{% block c_rename_symbol %}
-reallocarray
-{% endblock %}
-
 {% block setup %}
 export CPPFLAGS="-I.. -isystem ../include/bsd ${CPPFLAGS}"
 {% endblock %}
