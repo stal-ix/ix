@@ -12,9 +12,9 @@ lib/yuv
 lib/jpeg
 lib/opus
 lib/crc32c
+lib/ffmpeg
 lib/openssl
 lib/usrsctp
-lib/ffmpeg/4
 lib/openh264
 lib/abseil/cpp
 {% endblock %}
