@@ -1,8 +1,8 @@
 {% extends '//die/c/make.sh' %}
 
 {% block fetch %}
-https://deponie.yamagi.org/quake2/quake2-8.10.tar.xz
-sha:93d625f67bd365d943113f6aa7c65f6fd2bd4c46c4ab77eedc4642735c143ea1
+https://github.com/yquake2/yquake2/archive/refs/tags/QUAKE2_8_20.tar.gz
+sha:1a751e5a78148ee0a7dc6c73f856af57fa7b6cc07a52d30b094f88f4f76adf24
 {% endblock %}
 
 {% block bld_libs %}
