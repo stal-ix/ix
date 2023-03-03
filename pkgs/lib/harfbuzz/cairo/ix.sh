@@ -6,13 +6,6 @@ lib/freetype
 {{super()}}
 {% endblock %}
 
-{% block patch %}
-{{super()}}
-sed -e 's|bool b = hb_font_get|hb_font_get|' \
-    -e 's|assert (b);||' \
-    -i util/hb-info.cc
-{% endblock %}
-
 {% block install %}
 {{super()}}
 cd ${out}
