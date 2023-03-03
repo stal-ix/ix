@@ -11,3 +11,7 @@ export CFLAGS="-fno-builtin ${CFLAGS}"
 {% block sources %}
 reallocarray.cpp
 {% endblock %}
+
+{% block env %}
+export ac_cv_func_reallocarray=yes
+{% endblock %}

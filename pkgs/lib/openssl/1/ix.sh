@@ -13,3 +13,9 @@ no-hw
 {{super()}}
 PLATFORM_linux_riscv64="linux-generic64"
 {% endblock %}
+
+{% block env %}
+{{super()}}
+export ac_cv_working_openssl_hashlib=yes
+export ac_cv_working_openssl_ssl=yes
+{% endblock %}
