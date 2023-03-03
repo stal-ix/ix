@@ -3,6 +3,7 @@
 {% block lib_deps %}
 lib/c
 lib/md
+lib/reallocarray
 {% endblock %}
 
 {% block bld_libs %}
@@ -11,6 +12,7 @@ lib/kernel
 
 {% block patch %}
 {{super()}}
+>src/reallocarray.c
 cat << EOF >> include/bsd/sys/cdefs.h
 #pragma once
 #ifndef __scanflike
