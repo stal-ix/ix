@@ -25,7 +25,7 @@ lib/reallocarray
 {% endblock %}
 
 {% block bld_libs %}
-lib/bumpalloc
+lib/bumpalloc/small
 lib/c++/dispatch
 {% endblock %}
 

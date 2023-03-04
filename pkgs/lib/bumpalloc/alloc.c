@@ -1,6 +1,6 @@
 typedef unsigned long size_t;
 
-static char buf[10000000];
+static char buf[IX_BUMPALLOC_BUF];
 static char* cur = buf;
 
 static void* alloc(size_t len, size_t align) {
