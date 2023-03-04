@@ -1,16 +1,19 @@
+#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <stdio.h>
 #include <unistd.h>
 #include <sys/stat.h>
+#include <sys/types.h>
 
 static void onerr(int c, const char* s) {
     perror(s);
     exit(c);
 }
 
-static int isFile(const char* path) {
-    return fopen(path, "r");
+static int isExFile(const char* path) {
+    struct stat sb;
+
+    return (stat(path, &sb) == 0) && S_ISREG(sb.st_mode) && (sb.st_mode & 0111);
 }
 
 static char* cat(const char* a, const char* b) {
@@ -32,7 +35,7 @@ static const char* findTool(char* where, const char* tn) {
 
     cur = cat3(where, "/", tn);
 
-    if (isFile(cur)) {
+    if (isExFile(cur)) {
         return cur;
     }
 
