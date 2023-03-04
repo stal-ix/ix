@@ -11,7 +11,7 @@ lib/c++/dispatch
 {% endblock %}
 
 {% block bld_libs %}
-lib/bumpalloc
+lib/bumpalloc/small
 # for LTO configure
 lib/compiler_rt/builtins/hack/ish
 {% endblock %}
