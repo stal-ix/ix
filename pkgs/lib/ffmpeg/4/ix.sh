@@ -16,6 +16,7 @@ lib/webp
 lib/x264
 lib/x265
 lib/dav1d
+lib/modplug
 lib/xvidcore
 lib/openh264
 lib/jpeg/open
@@ -55,4 +56,5 @@ shut_up
 --enable-libxvid
 --enable-libspeex
 --enable-libtheora
+--enable-libmodplug
 {% endblock %}
