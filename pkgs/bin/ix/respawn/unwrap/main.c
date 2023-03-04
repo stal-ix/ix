@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <unistd.h>
@@ -6,7 +5,7 @@
 #include <sys/types.h>
 
 static void onerr(int c, const char* s) {
-    perror(s);
+    write(2, s, strlen(s));
     exit(c);
 }
 
@@ -18,19 +17,23 @@ static int isExFile(const char* path) {
 
 static char* cat(const char* a, const char* b) {
     char* res = malloc(strlen(a) + strlen(b) + 1);
-    sprintf(res, "%s%s", a, b);
-    return res;
+    *res = 0;
+    return strcat(strcat(res, a), b);
 }
 
 static char* cat3(const char* a, const char* b, const char* c) {
     return cat(cat(a, b), c);
 }
 
+static void lookupError(int code, const char* tool) {
+    onerr(code, cat3("can not find \"", tool, "\" tool\n"));
+}
+
 static const char* findTool(char* where, const char* tn) {
     char* cur;
 
     if (strlen(where) < 2) {
-        onerr(1, cat("can not find ", tn));
+        lookupError(1, tn);
     }
 
     cur = cat3(where, "/", tn);
@@ -42,7 +45,7 @@ static const char* findTool(char* where, const char* tn) {
     char* slash = strrchr(where, '/');
 
     if (!slash) {
-        onerr(2, cat("can not find ", tn));
+        lookupError(1, tn);
     }
 
     *slash = 0;
