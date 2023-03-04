@@ -1,8 +1,8 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://gitlab.gnome.org/GNOME/libhandy/-/archive/1.8.0/libhandy-1.8.0.tar.bz2
-sha:a9d4c5b9275232b439a94e714081b7b8b559c3d75fea3a8e2ace486768c133f5
+https://gitlab.gnome.org/GNOME/libhandy/-/archive/1.8.2/libhandy-1.8.2.tar.bz2
+sha:67bea0c4afa56f0512a9d872ffc6b8335236f38164b245d1baf85dccde26c05c
 {% endblock %}
 
 {% block lib_deps %}
@@ -33,6 +33,6 @@ gtk_progress_tracker_skip_frame
 gtk_progress_tracker_start
 {% endblock %}
 
-{% block env_lib %}
+{% block env %}
 export CPPFLAGS="-I${out}/include/libhandy-1 \${CPPFLAGS}"
 {% endblock %}
