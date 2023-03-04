@@ -15,6 +15,7 @@ lib/heif
 lib/jpeg
 lib/webp
 lib/tiff
+lib/lcms/2
 lib/openexr
 lib/jpeg/open
 {% endblock %}
