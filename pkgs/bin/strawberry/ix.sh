@@ -4,7 +4,7 @@
 
 {% block fetch %}
 https://github.com/strawberrymusicplayer/strawberry/archive/refs/tags/{{self.version()}}.tar.gz
-sha:f513f4c0ae322fa35a15b9cc9a41e0c56f56752651a7bd3a9812c670937cde95
+sha:e3e4baef5d0f269410b777e7ee8305fb8d241adacad5f7c45118eb20fe939e3b
 {% endblock %}
 
 {% block bld_libs %}
