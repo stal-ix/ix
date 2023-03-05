@@ -28,8 +28,6 @@ media-gstreamer=disabled
 
 {% block patch %}
 {{super()}}
-# already have that in glib
-sed -e 's|, xdp_dbus_generated||' -i gtk/meson.build
 patch -p1 << EOF
 {% include '0.diff' %}
 EOF
