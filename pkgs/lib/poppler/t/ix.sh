@@ -11,7 +11,6 @@ lib/z
 lib/glib
 lib/jpeg
 lib/tiff
-lib/gtk/3
 lib/cairo
 lib/boost
 lib/lcms/2
