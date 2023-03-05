@@ -20,6 +20,9 @@ lib/poppler
 lib/adwaita
 lib/djvulibre
 lib/drivers/3d
+lib/mesa/gl/dl
+lib/mesa/egl/dl
+lib/mesa/glesv2/dl
 lib/gdk/pixbuf/svg
 lib/gsettings/desktop/schemas
 {% endblock %}
@@ -59,13 +62,20 @@ cd ${tmp}
 
 func=register_evince_backend
 set -xue
+(
+echo "evince ev_attachment_get_type ev_attachment_get_type"
+echo "evince ev_document_model_get_type ev_document_model_get_type"
+echo "evince ev_job_thumbnail_get_type ev_job_thumbnail_get_type"
+echo "evince ev_password_view_get_type ev_password_view_get_type"
+
 for x in pdf comics djvu tiff; do
     echo "${x}document ${func} ${func}_${x}"
 
     for l in obj/backend/lib${x}document.a.p/*.o; do
         llvm-objcopy --preserve-dates --redefine-sym "${func}=${func}_${x}" ${l}
     done
-done | dl_stubs > stub.c
+done
+) | dl_stubs > stub.c
 
 #llvm-objcopy --preserve-dates --redefine-sym "ev_get_resource=ev_lview_get_resource" ./obj/libview/libevview3.a.p/meson-generated_.._ev-resources.c.o
 llvm-objcopy --preserve-dates --redefine-sym "ev_get_resource=ev_shell_get_resource" ./obj/shell/evince.p/meson-generated_.._ev-resources.c.o
