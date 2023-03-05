@@ -1,4 +1,4 @@
-{% extends '//die/c/kconfig.sh' %}
+{% extends '//die/c/kconfig2.sh' %}
 
 {% block fetch %}
 https://busybox.net/downloads/busybox-1.36.0.tar.bz2
