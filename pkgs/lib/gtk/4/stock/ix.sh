@@ -1,8 +1,8 @@
 {% extends '//lib/gtk/t/ix.sh' %}
 
 {% block fetch %}
-https://gitlab.gnome.org/GNOME/gtk/-/archive/4.9.3/gtk-4.9.3.tar.bz2
-sha:f7c4b9fd1170b14852d7b5ef804874ecc693639c658b173afd303408f2249ad4
+https://gitlab.gnome.org/GNOME/gtk/-/archive/4.10.0/gtk-4.10.0.tar.bz2
+sha:727a977ce7c67929ac92a00094345e55308fefb10d9d078e5d5615134ce3cd51
 {% endblock %}
 
 {% block lib_deps %}
@@ -16,14 +16,19 @@ bin/sassc
 {% endblock %}
 
 {% block meson_flags %}
-x11-backend=false
+demos=false
 vulkan=enabled
+x11-backend=false
+build-tests=false
+build-examples=false
+build-testsuite=false
 media-ffmpeg=disabled
 media-gstreamer=disabled
 {% endblock %}
 
 {% block patch %}
 {{super()}}
+# already have that in glib
 sed -e 's|, xdp_dbus_generated||' -i gtk/meson.build
 patch -p1 << EOF
 {% include '0.diff' %}
