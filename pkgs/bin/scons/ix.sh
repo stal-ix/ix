@@ -1,8 +1,8 @@
 {% extends '//die/std/ix.sh' %}
 
 {% block fetch %}
-https://files.pythonhosted.org/packages/be/d0/bf4e7003369c6d8a6e490741c54791c7918d9ef10b56aec201e76706f1d7/SCons-4.1.0.post1.tar.gz
-md5:2b1daf6c83e467ae41c742f546c2fe5a
+https://downloads.sourceforge.net/project/scons/scons/4.5.0/SCons-4.5.0.tar.gz
+sha:601436e62aa817c17e651f35ccccd1ffa8f74a504974ffbb02c3472cfb04ab95
 {% endblock %}
 
 {% block install %}
