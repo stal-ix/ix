@@ -1,8 +1,7 @@
 #!/usr/bin/env sh
 
-set -xue
-
 echo '------------------------------------------------------'
+set -xue
 date
 sleep 50
 git pull
