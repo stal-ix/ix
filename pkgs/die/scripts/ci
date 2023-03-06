@@ -1,6 +1,9 @@
 #!/usr/bin/env sh
 
+set -xue
+
 echo '------------------------------------------------------'
 date
+sleep 50
 git pull
 ./ix build set/ci
