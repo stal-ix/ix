@@ -6,7 +6,7 @@
 cd ${out}; mkdir -p etc/services/{{sd}}; cd etc/services/{{sd}}
 
 cat << EOF > cmd
-exec {{srv_command}}
+{{srv_command}}
 EOF
 
 cat << EOF > run
