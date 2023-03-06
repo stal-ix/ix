@@ -2,5 +2,5 @@
 
 {% block run_deps %}
 bin/ananicy
-etc/services/runit(srv_dir=ananicy,srv_command=ananicy-cpp start)
+etc/services/runit(srv_dir=ananicy,srv_command=exec ananicy-cpp start)
 {% endblock %}
