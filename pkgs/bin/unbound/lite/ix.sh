@@ -1,4 +1,4 @@
-{% extends '//bin/unbound/ix.sh' %}
+{% extends '//bin/unbound/t/ix.sh' %}
 
 {% block install %}
 {{super()}}
