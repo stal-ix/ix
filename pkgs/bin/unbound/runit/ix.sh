@@ -2,7 +2,7 @@
 
 {% block run_deps %}
 bin/subreaper
-bin/unbound/ix
+bin/unbound/lite
 etc/user/unbound
 bin/unbound/runit/conf
 # TODO(pg83): proper hangup fix
