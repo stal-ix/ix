@@ -28,9 +28,6 @@ SDL_SHARED=OFF
 
 SDL_OSS=OFF
 
-#SDL_JACK=ON
-#SDL_JACK_SHARED=OFF
-
 SDL_ALSA=OFF
 SDL_ALSA_SHARED=OFF
 
@@ -59,9 +56,6 @@ SDL_VIDEO_OPENGL_EGL=1
 {% endblock %}
 
 {% block patch %}
-sed -e 's|CheckEGL()||' \
-    -i CMakeLists.txt
-
 sed -e 's|define SDL_DYNAMIC_API 1|define SDL_DYNAMIC_API 0|' \
     -i src/dynapi/SDL_dynapi.h
 {% endblock %}
