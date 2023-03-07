@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/libsdl-org/SDL/releases/download/release-2.26.3/SDL2-2.26.3.tar.gz
-sha:c661205a553b7d252425f4b751ff13209e5e020b876bbfa1598494af61790057
+https://github.com/libsdl-org/SDL/releases/download/release-2.26.4/SDL2-2.26.4.tar.gz
+sha:1a0f686498fb768ad9f3f80b39037a7d006eac093aad39cb4ebcc832a8887231
 {% endblock %}
 
 {% block lib_deps %}
@@ -26,11 +26,13 @@ LIBTYPE=STATIC
 SDL_STATIC=ON
 SDL_SHARED=OFF
 
+SDL_OSS=OFF
+
 #SDL_JACK=ON
 #SDL_JACK_SHARED=OFF
 
-#SDL_ALSA=ON
-#SDL_ALSA_SHARED=OFF
+SDL_ALSA=OFF
+SDL_ALSA_SHARED=OFF
 
 SDL_SNDIO=ON
 SDL_SNDIO_SHARED=OFF
@@ -41,6 +43,15 @@ SDL_OPENGLES=ON
 
 SDL_WAYLAND=ON
 SDL_WAYLAND_SHARED=OFF
+
+SDL_PIPEWIRE=OFF
+SDL_PIPEWIRE_SHARED=OFF
+
+SDL_PULSEAUDIO=OFF
+SDL_PULSEAUDIO_SHARED=OFF
+
+SDL_LIBSAMPLERATE=OFF
+SDL_LIBSAMPLERATE_SHARED=OFF
 {% endblock %}
 
 {% block cpp_defines %}
