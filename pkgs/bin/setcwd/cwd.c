@@ -28,7 +28,9 @@ int main(int argc, char** argv) {
     }
 
     if (chdir(argv[1])) {
-        die(2, errno, "chdir failed");
+        if (chdir("/")) {
+            die(2, errno, "chdir failed");
+        }
     }
 
     exec(argv + 2);
