@@ -1,8 +1,8 @@
 {% extends '//die/std/ix.sh' %}
 
 {% block fetch %}
-https://downloads.sourceforge.net/project/scons/scons/4.5.0/SCons-4.5.0.tar.gz
-sha:601436e62aa817c17e651f35ccccd1ffa8f74a504974ffbb02c3472cfb04ab95
+https://downloads.sourceforge.net/project/scons/scons/4.5.1/SCons-4.5.1.tar.gz
+sha:041ce69fec25f729c7ee108aab663b5f691bc2d1a5777e61f77ac9d1bfd20c58
 {% endblock %}
 
 {% block install %}
