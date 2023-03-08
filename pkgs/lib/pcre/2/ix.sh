@@ -1,5 +1,10 @@
 {% extends '//lib/pcre/2/posix/ix.sh' %}
 
+{% block cmake_flags %}
+{{super()}}
+PCRE2_BUILD_PCRE2GREP=OFF
+{% endblock %}
+
 {% block install %}
 {{super()}}
 cd ${out}
