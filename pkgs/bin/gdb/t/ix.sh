@@ -51,3 +51,10 @@ export ac_cv_search_tgetent=no
 --with-mpfr=yes
 --disable-werror
 {% endblock %}
+
+{% block install %}
+find . -type f -name '*.Po' | while read l; do
+    >${l}
+done
+{{super()}}
+{% endblock %}

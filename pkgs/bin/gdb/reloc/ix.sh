@@ -37,6 +37,9 @@ export PYTHONPATH=\${p2}/share/gdb/python
 exec \${p1}/bin_gdb/gdb "\${@}"
 EOF
 chmod +x gdb
+find ${out} -type d | while read l; do
+    chmod +w ${l}
+done
 {% endblock %}
 
 {% block postinstall %}
