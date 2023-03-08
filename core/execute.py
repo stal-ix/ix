@@ -9,6 +9,11 @@ import core.log as cl
 import core.error as ce
 import core.utils as cu
 
+try:
+    from asyncio import to_thread
+except ImportError:
+    from core.threads import to_thread
+
 
 def execute_cmd(c, mt):
     env = cu.dict_dict_update(c.get('env', {}), {
@@ -117,7 +122,7 @@ class Executor:
         await self.visit_lst(iter_in(n))
 
         async with self.s[n['pool']]:
-            await asyncio.to_thread(self.execute_node, n)
+            await to_thread(self.execute_node, n)
 
     def execute_node(self, n):
         for c in iter_cmd(n):
