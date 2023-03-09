@@ -5,6 +5,7 @@
 {% block run_deps %}
 bld/auto(conf_ver=2/71,std_box=bld/boot/box)
 bld/auto/archive
+bld/glib/old
 bld/auto
 bld/bash
 bld/bison
