@@ -18,10 +18,16 @@ lib/openssl
 {% block bld_tool %}
 bld/tar
 bld/flex
+bld/bison
 bld/python
-bin/bison/3/6
 bld/auto/archive
 {% endblock %}
 
-{% block touch_yl %}
+{% block autoreconf %}
+(
+cd lib/ivykis
+libtoolize -ci
+autoreconf -if
+)
+{{super()}}
 {% endblock %}
