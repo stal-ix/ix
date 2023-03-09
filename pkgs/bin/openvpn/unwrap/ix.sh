@@ -7,6 +7,7 @@ sha:ca5d20a0cb197003dc04a76cbd868147fb3f95201f15fc56f9dc72fafb27e94f
 
 {% block bld_libs %}
 lib/c
+lib/nl
 lib/lz4
 lib/lzo
 lib/kernel
