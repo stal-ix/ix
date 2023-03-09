@@ -5,4 +5,4 @@ set -xue
 date
 sleep 50
 git pull
-./ix mut ci set/ci bld/all && ./ix gc
+./ix mut ci set/ci bld/all
