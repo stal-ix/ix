@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/AcademySoftwareFoundation/openexr/archive/refs/tags/v3.1.5.tar.gz
-sha:93925805c1fc4f8162b35f0ae109c4a75344e6decae5a240afdfce25f8a433ec
+https://github.com/AcademySoftwareFoundation/openexr/archive/refs/tags/v3.1.6.tar.gz
+sha:daa33d93a7b706e27368a162060df0246a7750c39a01a122d33b13f5c45d2029
 {% endblock %}
 
 {% block lib_deps %}
