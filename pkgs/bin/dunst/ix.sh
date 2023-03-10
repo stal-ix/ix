@@ -1,8 +1,8 @@
 {% extends '//die/c/make.sh' %}
 
 {% block fetch %}
-https://github.com/dunst-project/dunst/archive/refs/tags/v1.9.0.tar.gz
-sha:b7b8d7d6560bb241b1e4d37eba770cdf19b9d5dbfc1d4d47572ad676f3f7c98a
+https://github.com/dunst-project/dunst/archive/refs/tags/v1.9.1.tar.gz
+sha:571d82d5feef995e69a35e708a400a0cfa12a0f81854c5a3357e17844bf6249a
 {% endblock %}
 
 {% block bld_libs %}
@@ -17,8 +17,8 @@ lib/wayland
 
 {% block bld_tool %}
 bld/help2man
-bld/pkg/config
 bld/wayland
+bld/pkg/config
 {% endblock %}
 
 {% block patch %}
