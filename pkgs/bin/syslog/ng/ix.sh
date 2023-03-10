@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://github.com/syslog-ng/syslog-ng/releases/download/syslog-ng-4.1.0/syslog-ng-4.1.0.tar.gz
-sha:6e8f73aa0195b3a668d0911d050284abc6c11dbb04a1c526156b57a22409e24f
+https://github.com/syslog-ng/syslog-ng/releases/download/syslog-ng-4.1.1/syslog-ng-4.1.1.tar.gz
+sha:d7df3cfa32d1a750818d94b8ea582dea54c37226e7b55a88c3d2f3a543d8f20e
 {% endblock %}
 
 {% block bld_libs %}
