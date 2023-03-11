@@ -55,6 +55,7 @@ export MFLAGS="${MFLAGS} -isystem ${PWD}/include"
 
 export CFLAGS="-w ${MFLAGS} -D__STDC_HOSTED__ -D_XOPEN_SOURCE=700 -U_GNU_SOURCE ${CPPFLAGS} -ffreestanding -std=c99 ${CFLAGS}"
 
+(
 objs=""
 
 for i in src/*; do
@@ -102,6 +103,7 @@ for x in m pthread dl; do
     ${AR} q lib${x}.a empty.o
     ${RANLIB} lib${x}.a
 done
+) 1>&2 2>stderr
 
 ${CC} ${CFLAGS} -c -o tool.o -x c - << EOF
 #include <stdio.h>
