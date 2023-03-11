@@ -4,6 +4,7 @@
 {{super()}}
 mkdir ${out}/fix
 cat << EOF > ${out}/fix/mksymlink.sh
-ln -s . gdb
+mkdir gdb
+mv bin lib share gdb/
 EOF
 {% endblock %}
