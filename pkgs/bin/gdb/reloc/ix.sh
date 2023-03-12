@@ -34,7 +34,7 @@ p2=\$(dirname \${p1})
 export TERMINFO=\${p2}/share/terminfo
 export PYTHONHOME=\${p2}
 export PYTHONPATH=\${p2}/share/gdb/python
-exec \${p1}/bin_gdb/gdb "\${@}"
+exec \${p1}/bin_gdb/gdb {% block gdb_args %}{% endblock %} "\${@}"
 EOF
 chmod +x gdb
 find ${out} -type d | while read l; do
