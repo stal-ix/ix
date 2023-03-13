@@ -13,6 +13,10 @@ extract0 ${src}/M*
 ln -s Ma*/src/markupsafe ./
 {% endblock %}
 
+{% block postinstall %}
+:
+{% endblock %}
+
 {% block env %}
 export PYTHONPATH="${out}/lib:\${PYTHONPATH}"
 {% endblock %}
