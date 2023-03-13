@@ -13,6 +13,7 @@ md5:{md5}
 {% endblock %}
 
 {% block bld_tool %}
+bld/pip
 bld/python
 {% endblock %}
 
@@ -31,30 +32,13 @@ extract0 ${src}/*.whl
 {% endblock %}
 
 {% block build %}
-python3 << EOF > exports
-import os
-import sys
-
-d = os.getcwd()
-
-for a, b, c in os.walk(d):
-    print(f'try {a}', file=sys.stderr)
-
-    if not os.path.isfile(os.path.join(a, '__init__.py')):
-        print(f'not a module: {a}', file=sys.stderr)
-
-        continue
-
-    for x in c:
-        if x.endswith('.py'):
-            print(os.path.join(a, x)[len(d) + 1:-3].replace('/', '.'))
-EOF
-
-find . -type f -name METADATA | while read l; do
-    sed -e 's|.*Requires-Dist.*||' -i "${l}"
-done
-
+py_exports > exports
+fix_dist
 cat exports
+{% endblock %}
+
+{% block postinstall %}
+:
 {% endblock %}
 
 {% block env %}
