@@ -15,18 +15,13 @@ sed -e 's|static.*SpinWaitSemaphore|static inline void _Unused|' \
     -e 's|SpinWaitSemaphore|SDL_SemWait|' \
     -i Quake/tasks.c
 
-cat << EOF > _
+cat << EOF >> Quake/mem.h
 #pragma once
-EOF
-
-cat Quake/mem.h >> _
-
-cat << EOF >> _
 #undef TEMP_ALLOC
-#define TEMP_ALLOC(type, var, size) {var = (type*)Mem_Alloc((sizeof(type) * (size)));}
+#define TEMP_ALLOC(type, var, size) type* var = (type*)Mem_Alloc(sizeof(type) * (size));
+#undef TEMP_ALLOC_ZEROED
+#define TEMP_ALLOC_ZEROED TEMP_ALLOC
 #undef TEMP_FREE
 #define TEMP_FREE(var) {Mem_Free(var);}
 EOF
-
-mv _ Quake/mem.h
 {% endblock %}

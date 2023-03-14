@@ -1,8 +1,8 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://github.com/Novum/vkQuake/archive/refs/tags/1.22.3.tar.gz
-sha:1e0bcf9bb82a2c514f1474fa74ef1d63502c780331e44634e31a5b5902be8a85
+https://github.com/Novum/vkQuake/archive/refs/tags/1.30.0.tar.gz
+sha:073c8f0f734d0c2404e3ad77e9c8be56048b7569b147a1a0e5b292bf964a9a60
 {% endblock %}
 
 {% block bld_libs %}
@@ -11,7 +11,6 @@ lib/mad
 lib/opus
 lib/sdl/2
 lib/kernel
-lib/dbus/dl
 lib/xiph/ogg
 lib/opus/file
 lib/xiph/flac
