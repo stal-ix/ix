@@ -2,7 +2,7 @@
 
 {% block fetch %}
 https://github.com/transmission/transmission/archive/refs/tags/4.0.2.tar.gz
-sha:d0bce31c0780630f6f15a531a07f727a4bf409f9b6af3348c462b5c044b12920
+sha:f15c4703ba97d640a4b116037216f22801e78d1660bf537486baac1794e81f6b
 {% endblock %}
 
 {% block bld_libs %}
