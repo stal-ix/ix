@@ -2,7 +2,7 @@
 
 {% block fetch %}
 https://github.com/qt/qttools/archive/refs/tags/v6.4.3.tar.gz
-sha:ee77e3e48cffe068edaf5fe119eb64dab6f65c26d79936a2e35abf7f3e0deeff
+sha:d0bce31c0780630f6f15a531a07f727a4bf409f9b6af3348c462b5c044b12920
 {% endblock %}
 
 {% block bld_libs %}
