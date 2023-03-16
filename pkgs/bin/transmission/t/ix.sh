@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/transmission/transmission/archive/refs/tags/4.0.1.tar.gz
-sha:36377bf75cb2714a58a8bfdea2e47ad87b52238d3e05cdd8b3a154ad9c8e7937
+https://github.com/transmission/transmission/archive/refs/tags/4.0.2.tar.gz
+sha:d0bce31c0780630f6f15a531a07f727a4bf409f9b6af3348c462b5c044b12920
 {% endblock %}
 
 {% block bld_libs %}

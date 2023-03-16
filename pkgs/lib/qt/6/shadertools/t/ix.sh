@@ -2,7 +2,7 @@
 
 {% block fetch %}
 https://github.com/qt/qtshadertools/archive/refs/tags/v6.4.3.tar.gz
-sha:7f29a78769f454fe529595acb693aa67812e80d894162ddad3f0444f65a22268
+sha:a018883e889540ab828db0b0b49a3c5d810dd7283bb84abf43d1622daf474f7d
 {% endblock %}
 
 {% block lib_deps %}
