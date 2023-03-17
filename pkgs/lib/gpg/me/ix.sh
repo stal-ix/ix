@@ -1,8 +1,8 @@
 {% extends '//die/c/autohell.sh' %}
 
 {% block fetch %}
-https://www.gnupg.org/ftp/gcrypt/gpgme/gpgme-1.18.0.tar.bz2
-sha:361d4eae47ce925dba0ea569af40e7b52c645c4ae2e65e5621bf1b6cdd8b0e9e
+https://www.gnupg.org/ftp/gcrypt/gpgme/gpgme-1.19.0.tar.bz2
+sha:cb58494dc415fba9eeb12b826550ad3190dc92e265c5bb2ae1a21c92841cfd38
 {% endblock %}
 
 {% block lib_deps %}
