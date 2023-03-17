@@ -1,8 +1,8 @@
 {% extends '//die/c/make.sh' %}
 
 {% block fetch %}
-http://www.haproxy.org/download/2.7/src/haproxy-2.7.4.tar.gz
-sha:84cb806030569e866812eed38ebd1a8ea6fe1d9800001e59924ec3dd39553b9f
+http://www.haproxy.org/download/2.7/src/haproxy-2.7.5.tar.gz
+sha:e2c6e43270c35a4009a70052d26c1ddb90b63a650f81305a748f229737a74502
 {% endblock %}
 
 {% block bld_libs %}
