@@ -1,4 +1,4 @@
-{% extends '//bin/cmake/t/ix.sh' %}
+{% extends 't/ix.sh' %}
 
 {% block bld_libs %}
 lib/curl

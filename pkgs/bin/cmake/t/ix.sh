@@ -30,3 +30,8 @@ CMAKE_USE_SYSTEM_BZIP2=ON
 CMAKE_USE_SYSTEM_LIBLZMA=ON
 CMAKE_USE_SYSTEM_LIBARCHIVE=ON
 {% endblock %}
+
+{% block env %}
+# for meson
+export CMAKE=${out}/bin/cmake
+{% endblock %}
