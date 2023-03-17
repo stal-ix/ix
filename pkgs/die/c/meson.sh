@@ -103,9 +103,11 @@ find . -type f -name meson.build | while read l; do
         | grep -v 'subdir.*demo' \
         | grep -v 'subdir.*fuzz' \
 {% endblock %}
+{% if 'wrap_cc' not in build_flags %}
         | sed -e 's|both_libraries|library|g' \
         | sed -e 's|shared_library|library|g' \
         | sed -e 's|shared_module|library|g' \
+{% endif %}
         > _ && mv _ "${l}"
 done
 {% endblock %}

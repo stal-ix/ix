@@ -5,6 +5,11 @@ lib/mimetype
 {{super()}}
 {% endblock %}
 
+{% block bld_libs %}
+lib/kernel
+{{super()}}
+{% endblock %}
+
 {% block patch %}
 patch -p1 << EOF
 {% include '0.diff' %}

@@ -13,10 +13,6 @@ lib/c
 wrap_cc
 {% endblock %}
 
-{% block step_patch %}
-echo 'TODO(pg): disable only meson patching'
-{% endblock %}
-
 {% block install %}
 {{super()}}
 cd ${out}/lib
