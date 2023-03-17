@@ -16,7 +16,11 @@ bld/glib
 {% endblock %}
 
 {% block meson_flags %}
+gnutls=disabled
 openssl=enabled
+libproxy=disabled
+gnome_proxy=disabled
+#environment_proxy=enabled
 {% endblock %}
 
 {% block install %}
@@ -26,8 +30,6 @@ mv gio/modules/*.a ./
 rm -r gio
 {% endblock %}
 
-{% block patch %}
-find . -type f -name meson.build | while read l; do
-    sed -e 's|if .*static_.*shared.*|if false|' -i ${l}
-done
+{% block build_flags %}
+wrap_cc
 {% endblock %}
