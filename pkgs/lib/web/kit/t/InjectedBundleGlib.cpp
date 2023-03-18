@@ -2,7 +2,7 @@
 #include "InjectedBundle.h"
 #include "WKBundleAPICast.h"
 #include "WKBundleInitialize.h"
-#include "WebKitExtensionManager.h"
+#include "WebProcessExtensionManager.h"
 
 #include <wtf/FileSystem.h>
 #include <wtf/text/CString.h>
@@ -13,7 +13,7 @@
 using namespace WebKit;
 
 static void WKBundleInitialize(WKBundleRef bundle, WKTypeRef userData) {
-    WebKitExtensionManager::singleton().initialize(toImpl(bundle), toImpl(userData));
+    WebProcessExtensionManager::singleton().initialize(toImpl(bundle), toImpl(userData));
 }
 
 namespace WebKit {
