@@ -1,8 +1,8 @@
 {% extends '//die/c/gnome.sh' %}
 
 {% block fetch %}
-https://download.gnome.org/sources/evince/43/evince-43.1.tar.xz
-sha:6d75ca62b73bfbb600f718a098103dc6b813f9050b9594be929e29b4589d2335
+https://download.gnome.org/sources/evince/44/evince-44.0.tar.xz
+sha:339ee9e005dd7823a13fe21c71c2ec6d2c4cb74548026e4741eee7b2703e09da
 {% endblock %}
 
 {% block bld_libs %}
@@ -24,6 +24,7 @@ lib/gsettings/desktop/schemas
 {% endblock %}
 
 {% block bld_tool %}
+bld/wrapcc/dynlink/new
 bld/gettext
 bld/dlfcn
 {% endblock %}
@@ -61,16 +62,16 @@ func=register_evince_backend
 for x in pdf comics djvu tiff; do
     echo "${x}document ${func} ${func}_${x}"
 
-    for l in obj/backend/${x}/lib${x}document.a.p/*.o; do
+    for l in obj/backend/lib${x}document.a.p/*.o; do
         llvm-objcopy --preserve-dates --redefine-sym "${func}=${func}_${x}" ${l}
     done
 done | dl_stubs > stub.c
 
-cc -o evince stub.c $(find -type f -name '*.o' | grep -v 'evinced.p' | grep -v 'test-')
+dynlink clang++ -o evincexxx stub.c $(find -type f -name '*.o' | grep -v 'evinced.p' | grep -v 'test-')
 {% endblock %}
 
 {% block install %}
 {{super()}}
 rm -r ${out}/bin/bin_*
-cp ${tmp}/evince ${out}/bin/evince
+cp ${tmp}/evincexxx ${out}/bin/evince
 {% endblock %}
