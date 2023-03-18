@@ -9,9 +9,8 @@ sha:821328b5054f7890a0d0cd2f52825270705df3641dbd476d58d17e56ed957b59
 lib/c
 {% endblock %}
 
-{% block patch %}
-cat << EOF > doc/Makefile.in
-all:
-install:
-EOF
+{% block bld_tool %}
+bld/fake(tool_name=dvips)
+bld/fake(tool_name=latex)
+bld/fake(tool_name=makeindex)
 {% endblock %}
