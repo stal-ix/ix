@@ -1,4 +1,4 @@
-{% extends '//lib/soup/3/ix.sh' %}
+{% extends '//lib/soup/3/t/ix.sh' %}
 
 {% block bld_libs %}
 {{super()}}
