@@ -17,6 +17,8 @@ def it_linkable():
             yield x
         elif x.endswith('.a'):
             yield x
+        elif x.endswith('.so'):
+            yield x
 
 def it_init():
     data = subprocess.check_output(['llvm-nm', '-j', '-g'] + list(it_linkable()))
