@@ -1,8 +1,8 @@
 {% extends '//die/c/make.sh' %}
 
 {% block fetch %}
-https://github.com/plougher/squashfs-tools/archive/refs/tags/4.5.1.tar.gz
-sha:277b6e7f75a4a57f72191295ae62766a10d627a4f5e5f19eadfbc861378deea7
+https://github.com/plougher/squashfs-tools/archive/refs/tags/4.6.tar.gz
+sha:afc157495fa90d2042172fc642237afe1956f1a5beb141058bba3256b8d92013
 {% endblock %}
 
 {% block unpack %}
