@@ -23,8 +23,6 @@ cd ${out}/bin
 ln -s bin_meson/meson.py meson
 {% endblock %}
 
-{% block strip_pc %}
-{% endblock %}
-
-{% block purge_dynlib %}
+{% block postinstall %}
+:
 {% endblock %}
