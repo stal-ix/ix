@@ -456,7 +456,7 @@ bin/stalld
 bin/vifm
 bin/dte
 bin/joe
-#bin/kakoune
+bin/kakoune
 bin/mrustc/cargo
 bin/mrustc
 bin/exif
