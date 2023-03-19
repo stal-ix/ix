@@ -58,6 +58,9 @@ sed -e 's|static_cast<EGLNativeWindowType>|(EGLNativeWindowType)|' \
 
 sed -e 's|GRefPtr.h>|GRefPtr.h>\n#include <wtf/glib/GUniquePtr.h>|' \
     -i Source/WebKit/UIProcess/gtk/ClipboardGtk4.cpp
+
+sed -e 's|std::strlen|!characters ? 0 : std::strlen|' \
+    -i Source/WTF/wtf/text/StringConcatenate.h
 {% endblock %}
 
 {% block bld_tool %}
