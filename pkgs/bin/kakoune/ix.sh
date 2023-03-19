@@ -10,6 +10,10 @@ lib/c
 lib/c++
 {% endblock %}
 
+{% block c_compiler %}
+bin/gcc(for_target={{target.gnu.three}})
+{% endblock %}
+
 {% block build_flags %}
 shut_up
 {% endblock %}
