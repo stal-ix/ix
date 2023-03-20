@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/yandex/porto/archive/refs/tags/v5.3.9.tar.gz
-sha:3c742d7ee08f1d97d6855517d9250f0a88b2b50d25192728004777896e97e187
+https://github.com/yandex/porto/archive/refs/tags/v5.3.15.tar.gz
+sha:b28e0e73d315f920a4aec248accc618782ce728441e6bc028954f76ffd26327a
 {% endblock %}
 
 {% block lib_deps %}
@@ -27,6 +27,12 @@ shut_up
 {% block cpp_missing %}
 sys/time.h
 unistd.h
+{% endblock %}
+
+{% block patch %}
+base64 -d << EOF > CMakeLists.txt
+{% include 'CMakeLists.txt/base64' %}
+EOF
 {% endblock %}
 
 {% block cmake_flags %}
