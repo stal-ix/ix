@@ -1,8 +1,8 @@
 {% extends '//die/c/gnome.sh' %}
 
 {% block fetch %}
-https://gitlab.gnome.org/GNOME/gnome-font-viewer/-/archive/42.0/gnome-font-viewer-42.0.tar.bz2
-sha:82fe7dcb6ffdf090a70f025653043504a95f09651d40a427a3c802b3383352dc
+https://gitlab.gnome.org/GNOME/gnome-font-viewer/-/archive/44.0/gnome-font-viewer-44.0.tar.bz2
+sha:91c1e51a5fbe1a78107f59b6d88589b3ed20b364c38b9f1a860f8bb08924a85c
 {% endblock %}
 
 {% block bld_libs %}
@@ -17,7 +17,9 @@ lib/gtk/deps
 sed -e 's|gnome-desktop-4|fontconfig|' -i meson.build
 
 find . -type f | while read l; do
-    sed -e 's|.*include.*libgnome-desktop.*||' -i ${l}
+    sed -e 's|.*include.*libgnome-desktop.*||' \
+        -e 's|.*gtk_widget_class_install_action.*action_toggle_search_cb.*||' \
+        -i ${l}
 done
 {% endblock %}
 
