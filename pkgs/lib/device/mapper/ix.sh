@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-http://mirrors.kernel.org/sourceware/lvm2/LVM2.2.03.19.tgz
-sha:ec9ff9f1d998ce2b05f1ad22ddcf9401d202d0215811dc468d78cba6b0b26879
+http://mirrors.kernel.org/sourceware/lvm2/LVM2.2.03.20.tgz
+sha:90a1879b3675aea9784543581ccd2128c265ec67ac046b1856e706fc0af5c3c7
 {% endblock %}
 
 {% block lib_deps %}
