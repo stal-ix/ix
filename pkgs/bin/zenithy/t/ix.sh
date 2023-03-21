@@ -10,9 +10,9 @@ lib/notify
 {% block bld_tool %}
 bld/perl
 bld/gettext
+bld/fake(tool_name=itstool)
 {% endblock %}
 
 {% block patch %}
-# need itstool
-sed -e 's|.*subdir.*help.*||' -e 's|.*subdir.*po.*||' -i meson.build
+sed -e 's|.*subdir.*help.*||' -i meson.build
 {% endblock %}
