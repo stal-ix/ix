@@ -18,3 +18,7 @@ mv libSDL-1.2.a libSDL.a
 cd pkgconfig
 cp sdl12_compat.pc sdl.pc
 {% endblock %}
+
+{% block env %}
+export CPPFLAGS="-I${out}/include/SDL \${CPPFLAGS}"
+{% endblock %}
