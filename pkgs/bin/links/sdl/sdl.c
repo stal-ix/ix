@@ -282,7 +282,7 @@ static inline void sdl_update_sc(void *data)
 /* quite stuppit function */
 #define sdl_NORM_UPDATE    0
 #define sdl_FULL_UPDATE 1
-static inline void sdl_register_update(struct t_sdl_device_data *dev, int x, int y, int w, int h, int opt)
+static inline void sdl_register_update(struct t_sdl_device_data *dev)
 {
     S_ON_DEBUG_TRACE("in");
     sdl_UPENDING(dev)    = 1;
@@ -584,7 +584,7 @@ void sdl_draw_bitmap(struct graphics_device *drv, struct bitmap *bmp, int x, int
     rect.x    = x;
     rect.y    = y;
     SDL_BlitSurface(s, NULL, sdl_SURFACE(dev), &rect);
-    sdl_register_update(dev, rect.x, rect.y, rect.w, rect.h, 0);
+    sdl_register_update(dev);
     S_ON_DEBUG_TRACE("out");
     return;
 }
@@ -613,9 +613,7 @@ void sdl_fill_area(struct graphics_device *drv, int x1, int y1, int x2, int y2, 
     SDL_FillRect(sdl_SURFACE(dev), &rect, color);
     if(SDL_MUSTLOCK(sdl_SURFACE(dev)))
         SDL_UnlockSurface(sdl_SURFACE(dev));
-    sdl_register_update(dev, rect.x, rect.y, rect.w, rect.h, 0);
-/*    sdl_register_update(dev, x1, y1, x2, y2, 0);
-*/
+    sdl_register_update(dev);
     S_ON_DEBUG_TRACE("out");
     return;
 }
@@ -633,7 +631,7 @@ void sdl_draw_hline(struct graphics_device *drv, int left, int y, int right, lon
         sdl_putpixel(sdl_SURFACE(dev), i, y, color);
     if(SDL_MUSTLOCK(sdl_SURFACE(dev)))
         SDL_UnlockSurface(sdl_SURFACE(dev));
-    sdl_register_update(dev,  left, y, 1, right - left, 0);
+    sdl_register_update(dev);
     S_ON_DEBUG_TRACE("out");
     return;
 }
@@ -652,7 +650,7 @@ void sdl_draw_vline(struct graphics_device *drv, int x, int top, int bottom, lon
         sdl_putpixel(sdl_SURFACE(dev), x, i, color);
     if(SDL_MUSTLOCK(sdl_SURFACE(dev)))
         SDL_UnlockSurface(sdl_SURFACE(dev));
-    sdl_register_update(dev, x, top, bottom - top, 1, 0);
+    sdl_register_update(dev);
     S_ON_DEBUG_TRACE("out");
     return;
 }
@@ -678,7 +676,7 @@ int sdl_hscroll(struct graphics_device *drv, struct rect_set **set, int sc)
     rect2.h = drv->clip.y2 - rect1.y;
 
     SDL_BlitSurface(sdl_SURFACE(dev), &rect1, sdl_SURFACE(dev), &rect2);
-    sdl_register_update(dev, rect1.x, rect1.y, rect1.w, rect1.h, 0);
+    sdl_register_update(dev);
     S_ON_DEBUG_TRACE("out");
     return 1;
 }
@@ -705,7 +703,7 @@ int sdl_vscroll(struct graphics_device *drv, struct rect_set **set, int sc)
     rect2.h = drv->clip.y2 - rect1.y;
 
     SDL_BlitSurface(sdl_SURFACE(dev), &rect1, sdl_SURFACE(dev), &rect2);
-    sdl_register_update(dev, rect1.x, rect1.y, rect1.w, rect1.h, 0);
+    sdl_register_update(dev);
     S_ON_DEBUG_TRACE("out");
     return 1;
 }
