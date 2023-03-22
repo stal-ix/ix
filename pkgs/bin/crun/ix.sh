@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://github.com/containers/crun/releases/download/1.8.1/crun-1.8.1.tar.xz
-sha:01b68269d94e5fe11106a9b14c2f144be03b16ec798951f4efa6aa16ba9da29a
+https://github.com/containers/crun/releases/download/1.8.2/crun-1.8.2.tar.xz
+sha:7f1916d9617d57d2e1699f7d771300418749d8b136322e8a2e22551b60f63a81
 {% endblock %}
 
 {% block bld_libs %}
@@ -15,10 +15,13 @@ lib/argp/standalone
 {% endblock %}
 
 {% block bld_tool %}
+bin/gperf
 bld/python
 bld/fakegit
 {% endblock %}
 
 {% block configure_flags %}
+--disable-dl
 --disable-systemd
+--disable-embedded-yajl
 {% endblock %}
