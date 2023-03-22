@@ -42,26 +42,13 @@
 
 #include "links.h"
 #include <signal.h>
-/* #include "arrow.inc" */
 
-/*sdl inclusions*/
 #include <SDL.h>
 #include <SDL_gfxPrimitives.h>
 
-
-/* helper tools */
-/* FIXME: enabled debug mode */
-#undef DEBUG
-#ifdef DEBUG
-#include <assert.h>
-#define S_ASSERT(code)    assert((code))
-#define S_ON_DEBUG(code)    code
-#define S_ON_DEBUG_TRACE(str)    fprintf(stderr, "[%s:%s:%d] %s\n", __FILE__, __PRETTY_FUNCTION__, __LINE__, str);
-#else
 #define S_ASSERT(code)
 #define S_ON_DEBUG(code)
 #define S_ON_DEBUG_TRACE(str)
-#endif
 
 /* internal types */
 typedef unsigned char         u_char_t;
@@ -347,7 +334,6 @@ static inline void sdl_putpixel(SDL_Surface *s, int x, int y, unsigned long pixe
 
 /* DRIVER FUNCTIONS */
 
-/* init driver */
 u_char_t *sdl_init_driver(u_char_t *param, u_char_t *display)
 {
     S_ON_DEBUG_TRACE("in");
@@ -398,7 +384,6 @@ u_char_t *sdl_init_driver(u_char_t *param, u_char_t *display)
     return NULL;
 }
 
-/* shutdown driver */
 void sdl_shutdown_driver()
 {
     S_ON_DEBUG_TRACE("in");
@@ -408,7 +393,6 @@ void sdl_shutdown_driver()
     return;
 }
 
-/* create new graph device */
 struct graphics_device *sdl_init_device()
 {
     struct graphics_device *dev    = NULL;
@@ -446,7 +430,6 @@ struct graphics_device *sdl_init_device()
     sdl_GD(data)        = dev;
 
     /*driver */
-    //dev->drv        = &sdl_driver;
     dev->driver_data    = (void *) data;
     dev->user_data        = NULL;
 
@@ -524,15 +507,6 @@ int sdl_get_empty_bitmap(struct bitmap *bmp)
     return 0;
 }
 
-/* create filled bitmap */
-int sdl_get_filled_bitmap(struct bitmap *bmp, long color)
-{
-    S_ON_DEBUG_TRACE("in");
-    S_ASSERT(0);
-    return 0;
-}
-
-/* register bitmap */
 void sdl_register_bitmap(struct bitmap *bmp)
 {
     SDL_Surface    *s    = NULL;
@@ -549,8 +523,6 @@ void sdl_register_bitmap(struct bitmap *bmp)
     return;
 }
 
-
-/* prepare strip */
 void *sdl_prepare_strip(struct bitmap *bmp, int top, int lines)
 {
     SDL_Surface    *s    = NULL;
@@ -565,7 +537,6 @@ void *sdl_prepare_strip(struct bitmap *bmp, int top, int lines)
     return (void *)(s->pixels + (top * s->pitch));
 }
 
-/* commit strip */
 void sdl_commit_strip(struct bitmap *bmp, int top, int lines)
 {
     SDL_Surface    *s    = NULL;
@@ -798,26 +769,6 @@ void sdl_set_clip_area(struct graphics_device *drv)
     return;
 }
 
-
-/* block dev
-int sdl_block(struct graphics_device *drv)
-{
-    S_ON_DEBUG_TRACE("in");
-    S_ASSERT(0);
-    return 0;
-}
-*/
-
-
-/* unblock dev
-void sdl_unblock(struct graphics_device *drv)
-{
-    S_ON_DEBUG_TRACE("in");
-    S_ASSERT(0);
-    return;
-}
-*/
-
 /* set window title (tittle utf-8 encoded !!!!) */
 void sdl_set_title(struct graphics_device *drv, u_char_t *title)
 {
@@ -825,8 +776,6 @@ void sdl_set_title(struct graphics_device *drv, u_char_t *title)
     SDL_WM_SetCaption((const char *)title, NULL);
     return;
 }
-
-
 
 /* driver definition data */
 struct graphics_driver sdl_driver={
@@ -842,7 +791,6 @@ struct graphics_driver sdl_driver={
     NULL,
     NULL,
     sdl_get_empty_bitmap,
-    //sdl_get_filled_bitmap,
     sdl_register_bitmap,
     sdl_prepare_strip,
     sdl_commit_strip,
@@ -857,8 +805,6 @@ struct graphics_driver sdl_driver={
     NULL,
     NULL,
     NULL,
-    //dummy_block,
-    //dummy_unblock,
     NULL,
     NULL,
     sdl_set_title,
