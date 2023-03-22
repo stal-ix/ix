@@ -589,39 +589,12 @@ void sdl_draw_bitmap(struct graphics_device *drv, struct bitmap *bmp, int x, int
     return;
 }
 
-/* draw more bmps */
-void sdl_draw_bitmaps(struct graphics_device *drv, struct bitmap **bmps, int n, int x, int y)
-{
-    int    i = 0;
-    struct t_sdl_device_data *dev    = NULL;
-    SDL_Rect rect;
-
-    S_ON_DEBUG_TRACE("in");
-    /* check */
-    if(n < 1)
-        return;
-    dev    = (struct t_sdl_device_data *) drv->driver_data;
-    memset(&rect, 0, sizeof(SDL_Rect));
-
-    /* blit */
-    rect.x    = x;
-    rect.y    = y;
-    for(i = 0; i < n; i++)
-    {    SDL_BlitSurface((SDL_Surface *)bmps[i]->flags, NULL, sdl_SURFACE(dev), &rect);
-        rect.x    +=    bmps[i]->x;    }
-    /* FIXME: this should care about updating area, and possibly not update everythink */
-    sdl_register_update(dev, 0, 0, 0, 0, sdl_FULL_UPDATE);
-    return;
-}
-
-/* get color */
 long sdl_get_color(int rgb)
 {
     /*FIXME: not sure this is ok :) */
     return SDL_MapRGB(sdl_DATA.video_info->vfmt, ((rgb >> 16) & 0xff), ((rgb >> 8) & 0xff), ((rgb) & 0xff));
 }
 
-/* fill some area */
 void sdl_fill_area(struct graphics_device *drv, int x1, int y1, int x2, int y2, long color)
 {
     struct t_sdl_device_data *dev = NULL;
@@ -647,7 +620,6 @@ void sdl_fill_area(struct graphics_device *drv, int x1, int y1, int x2, int y2, 
     return;
 }
 
-/* draw horizontal line */
 void sdl_draw_hline(struct graphics_device *drv, int left, int y, int right, long color)
 {
     register int    i    = 0;
@@ -666,7 +638,6 @@ void sdl_draw_hline(struct graphics_device *drv, int left, int y, int right, lon
     return;
 }
 
-/* draw vertical line */
 void sdl_draw_vline(struct graphics_device *drv, int x, int top, int bottom, long color)
 {
     register int i = 0;
@@ -686,7 +657,6 @@ void sdl_draw_vline(struct graphics_device *drv, int x, int top, int bottom, lon
     return;
 }
 
-/* horizontal scroll */
 int sdl_hscroll(struct graphics_device *drv, struct rect_set **set, int sc)
 {
     struct t_sdl_device_data *dev = NULL;
@@ -713,7 +683,6 @@ int sdl_hscroll(struct graphics_device *drv, struct rect_set **set, int sc)
     return 1;
 }
 
-/* vertical scroll */
 int sdl_vscroll(struct graphics_device *drv, struct rect_set **set, int sc)
 {
     struct t_sdl_device_data *dev = NULL;
