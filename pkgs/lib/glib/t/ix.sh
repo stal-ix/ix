@@ -1,8 +1,8 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://download.gnome.org/sources/glib/2.76/glib-2.76.0.tar.xz
-sha:525bb703b807142e1aee5ccf222c344e8064b21c0c45677ef594e587874c6797
+https://download.gnome.org/sources/glib/2.76/glib-2.76.1.tar.xz
+sha:43dc0f6a126958f5b454136c4398eab420249c16171a769784486e25f2fda19f
 {% endblock %}
 
 {% block lib_deps %}
