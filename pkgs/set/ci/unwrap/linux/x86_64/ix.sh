@@ -1,6 +1,7 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
+bin/links/sdl
 bin/icc
 bin/ix/portal
 bin/qpack
