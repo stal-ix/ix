@@ -1,19 +1,26 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/microsoft/msquic/archive/refs/tags/v2.1.7.tar.gz
-sha:f68a8b81bc326e1230b1eb82dc1aef585c5cc9e61fbce9e8c12c90f07f9c25ca
+https://github.com/microsoft/msquic/archive/refs/tags/v2.1.8.tar.gz
+sha:8882e0b66c16c34456c2763bb27b1b730db8514a6e564a336dfca70b21a6cb95
 {% endblock %}
 
 {% block lib_deps %}
 lib/c
-lib/kernel
 lib/openssl
+{% endblock %}
+
+{% block bld_libs %}
+lib/kernel
 {% endblock %}
 
 {% block build_flags %}
 wrap_cc
 shut_up
+{% endblock %}
+
+{% block cmake_flags %}
+QUIC_EMBED_GIT_HASH=OFF
 {% endblock %}
 
 {% block patch %}
