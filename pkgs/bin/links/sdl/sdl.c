@@ -33,22 +33,14 @@
 
 
 #include "cfg.h"
-
-#ifdef GRDRV_SDL
-
-#ifdef TEXT
-#undef TEXT
-#endif
-
 #include "links.h"
+
 #include <signal.h>
 
 #include <SDL.h>
 #include <SDL_gfxPrimitives.h>
 
 #define S_ASSERT(code)
-#define S_ON_DEBUG(code)
-#define S_ON_DEBUG_TRACE(str)
 
 /* internal types */
 typedef unsigned char         u_char_t;
@@ -134,9 +126,6 @@ static void sdl_catch_event(void *data)
 
     SDL_PumpEvents();
     ev_num    = SDL_PeepEvents(events, sdl_CATCH_EVENTS_NUM, SDL_GETEVENT, SDL_ALLEVENTS);
-/*
-    S_ON_DEBUG(fprintf(stderr, "event: received %d\n", ev_num); );
-*/
     S_ASSERT(ev_num != -1);
     /* get dev data */
     dev        = (struct t_sdl_device_data *) data;
@@ -147,9 +136,8 @@ static void sdl_catch_event(void *data)
     {
 /*        case SDL_ACTIVEEVENT:    */
         /* mouse motion */
-            case SDL_MOUSEMOTION:
+        case SDL_MOUSEMOTION:
         /* mose btn state */
-            S_ON_DEBUG_TRACE("event: mouse motion");
         fl    = B_DRAG;
         sdl_MOUSE_STATE(event.motion.state, fl, B_MOVE);
         /* save som calls (SDL generates many similar events)    */
@@ -168,16 +156,13 @@ static void sdl_catch_event(void *data)
             fl    = B_DOWN;
         else
             fl    = B_UP;
-            S_ON_DEBUG_TRACE("event: mouse click");
-/*        sdl_MOUSE_STATE(event.button.state, fl, fl);    */
         sdl_GD(dev)->mouse_handler(sdl_GD(dev), event.button.x, event.button.y, fl);
         break;
         /* keyboard */
-        case SDL_KEYUP:
-            S_ON_DEBUG_TRACE("event: key up");
+        case SDL_KEYUP: {
+        }
         break;
-            case SDL_KEYDOWN:
-           {    /*translate */
+        case SDL_KEYDOWN: {
             int        k    = 0;
             int        key    = 0;
 /*
@@ -187,7 +172,6 @@ static void sdl_catch_event(void *data)
 *            //    i've no idea how to do it (easily):(
 *            //////////////////////////
 */
-            S_ON_DEBUG_TRACE("event: key down");
             while(sdl_keysyms[k].sym != event.key.keysym.sym && sdl_keysyms[k].sym != SDLK_LAST)
                 k++;
             S_ASSERT(sdl_keysyms[k].sym != SDLK_LAST);
@@ -217,12 +201,11 @@ static void sdl_catch_event(void *data)
             if(event.key.keysym.mod & KMOD_CTRL)
                 fl    |=    KBD_CTRL;
             /* send keyb */
-            S_ON_DEBUG(fprintf(stderr, "KEY(%d) = %c&%d\n", k, key, fl););
             if(fl & KBD_CTRL && sdl_keysyms[k].sym == SDLK_c)
                 sdl_GD(dev)->keyboard_handler(sdl_GD(dev), KBD_CTRL_C, 0);
             else
                 sdl_GD(dev)->keyboard_handler(sdl_GD(dev), key, fl);
-                }break;
+        }break;
         case SDL_VIDEORESIZE:
         /* new dims */
         sdl_GD(dev)->size.x2    = event.resize.w;
@@ -230,9 +213,6 @@ static void sdl_catch_event(void *data)
         sdl_driver.x        = event.resize.w;
         sdl_driver.y        = event.resize.h;
         /* resize */
-        /*
-        S_ON_DEBUG(fprintf(stderr, "RESIZE(%dx%d)\n", event.resize.w, event.resize.h));
-        */
         /* info resize */
         sdl_GD(dev)->resize_handler(sdl_GD(dev));
         break;
@@ -256,7 +236,6 @@ static inline void sdl_update_sc(void *data)
 {
     struct t_sdl_device_data    *dev    = NULL;
 
-    S_ON_DEBUG_TRACE("in");
     /* assing struct */
     if(data == NULL)
         return;
@@ -269,30 +248,22 @@ static inline void sdl_update_sc(void *data)
         return;
 
     /* do update screen */
-/*    SDL_UpdateRect(sdl_SURFACE(dev), sdl_URECT(dev).x, sdl_URECT(dev).y, sdl_URECT(dev).w, sdl_URECT(dev).h);
-*/
     SDL_UpdateRect(sdl_SURFACE(dev), 0, 0, 0, 0);
     /* remove pending flag */
     sdl_UPENDING(dev)    = 0;
-    S_ON_DEBUG_TRACE("out");
     return;
 }
-
 
 /* quite stuppit function */
 #define sdl_NORM_UPDATE    0
 #define sdl_FULL_UPDATE 1
 static inline void sdl_register_update(struct t_sdl_device_data *dev)
 {
-    S_ON_DEBUG_TRACE("in");
     sdl_UPENDING(dev)    = 1;
     register_bottom_half(sdl_update_sc, dev);
-    S_ON_DEBUG_TRACE("out");
     return;
 }
 
-/* partialy stolen from documentation :)
-   XXX: we can quite easily add here alpha blending :))) */
 static inline void sdl_putpixel(SDL_Surface *s, int x, int y, unsigned long pixel)
 {
      Uint8 *p;
@@ -336,7 +307,6 @@ static inline void sdl_putpixel(SDL_Surface *s, int x, int y, unsigned long pixe
 
 u_char_t *sdl_init_driver(u_char_t *param, u_char_t *display)
 {
-    S_ON_DEBUG_TRACE("in");
     /* init sdl video */
     if(SDL_Init(SDL_INIT_VIDEO) != 0)
         return (u_char_t *)stracpy((u_char_t *)SDL_GetError());
@@ -379,14 +349,11 @@ u_char_t *sdl_init_driver(u_char_t *param, u_char_t *display)
     SDL_EnableUNICODE(1);
     SDL_EnableKeyRepeat(SDL_DEFAULT_REPEAT_DELAY, SDL_DEFAULT_REPEAT_INTERVAL);
 
-    S_ON_DEBUG(fprintf(stderr, "VIDEO(%s): %dx%dx%d [%d]\n", sdl_DATA.video_drv,
-                        sdl_VIDEO_WIDTH, sdl_VIDEO_HEIGHT, sdl_VIDEO_DEPTH, sdl_driver.depth));
     return NULL;
 }
 
 void sdl_shutdown_driver()
 {
-    S_ON_DEBUG_TRACE("in");
     sdl_KILL_TIMER();
     sdl_DATA_FREE();
     SDL_Quit();
@@ -397,8 +364,6 @@ struct graphics_device *sdl_init_device()
 {
     struct graphics_device *dev    = NULL;
     struct t_sdl_device_data *data    = NULL;
-
-    S_ON_DEBUG_TRACE("in");
 
     /* device data */
     data            = (struct t_sdl_device_data *) mem_alloc(sizeof(struct t_sdl_device_data));
@@ -440,7 +405,7 @@ struct graphics_device *sdl_init_device()
     /*init timer */
     if(sdl_DATA.event_timer == 0)
         sdl_SETUP_TIMER((void *)data);
-    S_ON_DEBUG_TRACE("out");
+
     return dev;
 }
 
@@ -449,7 +414,6 @@ void sdl_shutdown_device(struct graphics_device *drv)
 {
     struct t_sdl_device_data *dev    = NULL;
 
-    S_ON_DEBUG_TRACE("in");
     dev            = (struct t_sdl_device_data *) drv->driver_data;
     S_ASSERT(dev != NULL);
 
@@ -462,16 +426,11 @@ void sdl_shutdown_device(struct graphics_device *drv)
     mem_free(dev);
     drv->driver_data    = NULL;
     mem_free(drv);
-    S_ON_DEBUG_TRACE("out");
+
     return;
 }
 
-/* get driver parameters
-   XXX: what is this fx() for ??? */
-u_char_t *sdl_get_driver_param()
-{
-    S_ON_DEBUG_TRACE("in");
-    S_ASSERT(0);
+u_char_t *sdl_get_driver_param() {
     return NULL;
 }
 
@@ -481,8 +440,6 @@ u_char_t *sdl_get_driver_param()
 int sdl_get_empty_bitmap(struct bitmap *bmp)
 {
     SDL_Surface    *s    = NULL;
-
-    S_ON_DEBUG_TRACE("in");
 
     /* null */
     bmp->data    = bmp->flags    /*= bmp->user*/    = NULL;
@@ -503,7 +460,7 @@ int sdl_get_empty_bitmap(struct bitmap *bmp)
     /* lock if required */
     if(SDL_MUSTLOCK(s))
         SDL_LockSurface(s);
-    S_ON_DEBUG_TRACE("out");
+
     return 0;
 }
 
@@ -511,15 +468,13 @@ void sdl_register_bitmap(struct bitmap *bmp)
 {
     SDL_Surface    *s    = NULL;
 
-    S_ON_DEBUG_TRACE("in");
-
     /* unlock surface */
     s    = (SDL_Surface *)bmp->flags;
     if(SDL_MUSTLOCK(s))
         SDL_UnlockSurface(s);
     /* hide pixel mem */
     bmp->data    = NULL;
-    S_ON_DEBUG_TRACE("out");
+
     return;
 }
 
@@ -527,21 +482,17 @@ void *sdl_prepare_strip(struct bitmap *bmp, int top, int lines)
 {
     SDL_Surface    *s    = NULL;
 
-    S_ON_DEBUG_TRACE("in");
-
     /* unlock surface */
     s    = (SDL_Surface *)bmp->flags;
     if(SDL_MUSTLOCK(s))
         SDL_LockSurface(s);
-    S_ON_DEBUG_TRACE("out");
+
     return (void *)(s->pixels + (top * s->pitch));
 }
 
 void sdl_commit_strip(struct bitmap *bmp, int top, int lines)
 {
     SDL_Surface    *s    = NULL;
-
-    S_ON_DEBUG_TRACE("in");
 
     /* unlock surface */
     s    = (SDL_Surface *)bmp->flags;
@@ -555,8 +506,6 @@ void sdl_unregister_bitmap(struct bitmap *bmp)
 {
     SDL_Surface    *s    = NULL;
 
-    S_ON_DEBUG_TRACE("in");
-
     s        = (SDL_Surface *)bmp->flags;
     S_ASSERT(s != 0);
     /* delete data */
@@ -564,7 +513,7 @@ void sdl_unregister_bitmap(struct bitmap *bmp)
     /* null data */
     bmp->data    = NULL;
     bmp->flags    = NULL;
-    S_ON_DEBUG_TRACE("out");
+
     return;
 }
 
@@ -575,7 +524,6 @@ void sdl_draw_bitmap(struct graphics_device *drv, struct bitmap *bmp, int x, int
     struct t_sdl_device_data *dev    = NULL;
     SDL_Rect    rect;
 
-    S_ON_DEBUG_TRACE("in");
     dev    = (struct t_sdl_device_data *) drv->driver_data;
     s    = (SDL_Surface *)bmp->flags;
     memset(&rect, 0, sizeof(SDL_Rect));
@@ -585,12 +533,11 @@ void sdl_draw_bitmap(struct graphics_device *drv, struct bitmap *bmp, int x, int
     rect.y    = y;
     SDL_BlitSurface(s, NULL, sdl_SURFACE(dev), &rect);
     sdl_register_update(dev);
-    S_ON_DEBUG_TRACE("out");
+
     return;
 }
 
-long sdl_get_color(int rgb)
-{
+long sdl_get_color(int rgb) {
     /*FIXME: not sure this is ok :) */
     return SDL_MapRGB(sdl_DATA.video_info->vfmt, ((rgb >> 16) & 0xff), ((rgb >> 8) & 0xff), ((rgb) & 0xff));
 }
@@ -600,7 +547,6 @@ void sdl_fill_area(struct graphics_device *drv, int x1, int y1, int x2, int y2, 
     struct t_sdl_device_data *dev = NULL;
     SDL_Rect rect;
 
-    S_ON_DEBUG_TRACE("in");
     dev    = (struct t_sdl_device_data *) drv->driver_data;
 
 
@@ -614,16 +560,15 @@ void sdl_fill_area(struct graphics_device *drv, int x1, int y1, int x2, int y2, 
     if(SDL_MUSTLOCK(sdl_SURFACE(dev)))
         SDL_UnlockSurface(sdl_SURFACE(dev));
     sdl_register_update(dev);
-    S_ON_DEBUG_TRACE("out");
+
     return;
 }
 
 void sdl_draw_hline(struct graphics_device *drv, int left, int y, int right, long color)
 {
-    register int    i    = 0;
+    int i    = 0;
     struct t_sdl_device_data *dev = NULL;
 
-    S_ON_DEBUG_TRACE("in");
     dev    = (struct t_sdl_device_data *) drv->driver_data;
     if(SDL_MUSTLOCK(sdl_SURFACE(dev)))
         SDL_LockSurface(sdl_SURFACE(dev));
@@ -632,17 +577,15 @@ void sdl_draw_hline(struct graphics_device *drv, int left, int y, int right, lon
     if(SDL_MUSTLOCK(sdl_SURFACE(dev)))
         SDL_UnlockSurface(sdl_SURFACE(dev));
     sdl_register_update(dev);
-    S_ON_DEBUG_TRACE("out");
+
     return;
 }
 
 void sdl_draw_vline(struct graphics_device *drv, int x, int top, int bottom, long color)
 {
-    register int i = 0;
+    int i = 0;
     struct t_sdl_device_data *dev = NULL;
 
-    S_ON_DEBUG_TRACE("in");
-    /* get ptr */
     dev    = (struct t_sdl_device_data *) drv->driver_data;
     if(SDL_MUSTLOCK(sdl_SURFACE(dev)))
         SDL_LockSurface(sdl_SURFACE(dev));
@@ -651,7 +594,6 @@ void sdl_draw_vline(struct graphics_device *drv, int x, int top, int bottom, lon
     if(SDL_MUSTLOCK(sdl_SURFACE(dev)))
         SDL_UnlockSurface(sdl_SURFACE(dev));
     sdl_register_update(dev);
-    S_ON_DEBUG_TRACE("out");
     return;
 }
 
@@ -660,7 +602,6 @@ int sdl_hscroll(struct graphics_device *drv, struct rect_set **set, int sc)
     struct t_sdl_device_data *dev = NULL;
     SDL_Rect rect1, rect2;
 
-    S_ON_DEBUG_TRACE("in");
     dev    = (struct t_sdl_device_data *) drv->driver_data;
 
     /* rect1 */
@@ -677,7 +618,7 @@ int sdl_hscroll(struct graphics_device *drv, struct rect_set **set, int sc)
 
     SDL_BlitSurface(sdl_SURFACE(dev), &rect1, sdl_SURFACE(dev), &rect2);
     sdl_register_update(dev);
-    S_ON_DEBUG_TRACE("out");
+
     return 1;
 }
 
@@ -686,7 +627,6 @@ int sdl_vscroll(struct graphics_device *drv, struct rect_set **set, int sc)
     struct t_sdl_device_data *dev = NULL;
     SDL_Rect rect1, rect2;
 
-    S_ON_DEBUG_TRACE("in");
     /* get ptr */
     dev    = (struct t_sdl_device_data *) drv->driver_data;
 
@@ -704,7 +644,7 @@ int sdl_vscroll(struct graphics_device *drv, struct rect_set **set, int sc)
 
     SDL_BlitSurface(sdl_SURFACE(dev), &rect1, sdl_SURFACE(dev), &rect2);
     sdl_register_update(dev);
-    S_ON_DEBUG_TRACE("out");
+
     return 1;
 }
 
@@ -719,7 +659,6 @@ void sdl_set_clip_area(struct graphics_device *drv)
     struct rect* r = NULL;
     SDL_Rect rect;
 
-    S_ON_DEBUG_TRACE("in");
     /* get ptr */
     dev    = (struct t_sdl_device_data *) drv->driver_data;
     /* set rect */
@@ -732,14 +671,13 @@ void sdl_set_clip_area(struct graphics_device *drv)
     drv->clip    = *r;
     /* clipp */
     SDL_SetClipRect(sdl_SURFACE(dev), &rect);
-    S_ON_DEBUG_TRACE("out");
+
     return;
 }
 
 /* set window title (tittle utf-8 encoded !!!!) */
 void sdl_set_title(struct graphics_device *drv, u_char_t *title)
 {
-    S_ON_DEBUG_TRACE("in");
     SDL_WM_SetCaption((const char *)title, NULL);
     return;
 }
@@ -783,5 +721,3 @@ struct graphics_driver sdl_driver={
     0,                /* flags */
     NULL,
 };
-
-#endif /* GRDRV_SDL */
