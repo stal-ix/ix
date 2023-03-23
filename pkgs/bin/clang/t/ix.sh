@@ -23,6 +23,7 @@ llvm
 {% endblock %}
 
 {% set targets %}
+{% block llvm_targets %}
 clang
 clang-cmake-exports
 clang-resource-headers
@@ -45,6 +46,7 @@ llvm-lipo
 llvm-strip
 llvm-objcopy
 llvm-objdump
+{% endblock %}
 {% endset %}
 
 {% block ninja_build_targets %}
@@ -63,9 +65,11 @@ export CPPFLAGS="-isystem ${out}/share/include \${CPPFLAGS}"
 
 {% block install %}
 {{super()}}
+{% block clang_fix_includes %}
 mkdir ${out}/share
 mv ${out}/lib/clang/1*/include ${out}/share/
 rm -rf ${out}/libexec
+{% endblock %}
 {% endblock %}
 
 {% block postinstall %}
