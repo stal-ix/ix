@@ -1,8 +1,8 @@
 {% extends '//die/c/make.sh' %}
 
 {% block fetch %}
-https://github.com/p7zip-project/p7zip/archive/refs/tags/v17.04.tar.gz
-sha:ea029a2e21d2d6ad0a156f6679bd66836204aa78148a4c5e498fe682e77127ef
+https://github.com/p7zip-project/p7zip/archive/refs/tags/v17.05.tar.gz
+sha:d2788f892571058c08d27095c22154579dfefb807ebe357d145ab2ddddefb1a6
 {% endblock %}
 
 {% block bld_libs %}
