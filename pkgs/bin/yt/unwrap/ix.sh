@@ -9,6 +9,7 @@ sha:d13edc9fc1f6ec750898c7bf967cd9273fec0768b53b22bfacc6317856bc9c3d
 lib/c
 lib/z
 lib/c/ares
+lib/execinfo
 lib/openssl/1
 lib/bsd/overlay
 lib/python/3/11
@@ -22,13 +23,23 @@ bld/devendor
 bld/fake(tool_name=conan)
 {% endblock %}
 
+{% block build_flags %}
+wrap_cc
+{% endblock %}
+
+{% block cpp_defines %}
+_musl_=1
+{% endblock %}
+
 {% block patch %}
 find . -type f -name CMakeLists.txt | while read l; do
     sed -e 's|OpenSSL::OpenSSL||g' \
         -e 's|c-ares::c-ares||g' \
         -i ${l}
 done
+
 devendor contrib/libs/cxxsupp
+
 cat << EOF > contrib/libs/cxxsupp/libcxx/include/stlfwd
 #pragma once
 #include <iostream>
@@ -42,6 +53,19 @@ cat << EOF > contrib/libs/cxxsupp/libcxx/include/stlfwd
 #include <tuple>
 #include <set>
 #include <functional>
+EOF
+
+cat << EOF >> contrib/libs/llvm12/include/llvm/Config/config-linux.h
+#undef HAVE_MALLINFO
+EOF
+
+cat << EOF > util/system/fasttime.cpp
+#include "fasttime.h"
+#include "datetime.h"
+
+ui64 InterpolatedMicroSeconds() {
+    return MicroSeconds();
+}
 EOF
 {% endblock %}
 
