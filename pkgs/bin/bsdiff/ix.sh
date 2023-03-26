@@ -22,10 +22,12 @@ bmake
 INSTALL=install
 {% endblock %}
 
-{% block patch %}
-find . -type f -name '*.c' | while read l; do
-    sed -e 's|u_char|unsigned char|' -i ${l}
-done
+{% block cpp_defines %}
+u_char=uint8_t
+{% endblock %}
+
+{% block cpp_missing %}
+stdint.h
 {% endblock %}
 
 {% block install %}
