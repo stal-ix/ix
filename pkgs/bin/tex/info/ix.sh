@@ -1,8 +1,8 @@
 {% extends '//die/c/autohell.sh' %}
 
 {% block fetch %}
-https://ftp.gnu.org/gnu/texinfo/texinfo-7.0.2.tar.xz
-sha:f211ec3261383e1a89e4555a93b9d017fe807b9c3992fb2dff4871dae6da54ad
+https://ftp.gnu.org/gnu/texinfo/texinfo-7.0.3.tar.xz
+sha:74b420d09d7f528e84f97aa330f0dd69a98a6053e7a4e01767eed115038807bf
 {% endblock %}
 
 {% block bld_libs %}
