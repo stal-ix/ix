@@ -13,6 +13,7 @@ bin/seatd/runit
 bin/sndio/runit
 bin/dhcpcd/runit
 bin/ananicy/runit
+# https://wiki.musl-libc.org/functional-differences-from-glibc.html#Name-Resolver/DNS
 bin/unbound/runit
 
 {% if mingetty %}
