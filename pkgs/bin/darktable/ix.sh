@@ -39,6 +39,7 @@ bld/bash
 bin/xmllint
 bld/gettext
 bld/intltool
+bld/devendor
 bin/xsltproc
 {% endblock %}
 
@@ -76,12 +77,6 @@ BINARY_PACKAGE_BUILD=ON
 {% endblock %}
 
 {% block build %}
-(
-cd src/external/LibRaw
-find . -type f -name '*.h' -delete
-find . -type f -name '*.cpp' | while read l; do
-    echo > ${l}
-done
-)
+devendor src/external/LibRaw
 {{super()}}
 {% endblock %}

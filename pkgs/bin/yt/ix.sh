@@ -16,6 +16,7 @@ lib/python/3/11
 {% block bld_tool %}
 bin/yasm
 bld/python
+bld/devendor
 bld/fake(tool_name=opt)
 bld/fake(tool_name=conan)
 bld/fake(tool_name=llvm-link)
@@ -27,35 +28,8 @@ find . -type f -name CMakeLists.txt | while read l; do
         -e 's|c-ares::c-ares||g' \
         -i ${l}
 done
-
-(
-cd contrib/libs/cxxsupp
-
-find . -type f -name '*.h' -delete
-find . -type f -name '*.c' | while read l; do
-    >${l}
-done
-find . -type f -name '*.cc' | while read l; do
-    >${l}
-done
-find . -type f -name '*.cpp' | while read l; do
-    >${l}
-done
-)
-
-(
-cd contrib/libs/libc_compat
-find . -type f -name '*.h' -delete
-find . -type f -name '*.c' | while read l; do
-    >${l}
-done
-find . -type f -name '*.cc' | while read l; do
-    >${l}
-done
-find . -type f -name '*.cpp' | while read l; do
-    >${l}
-done
-)
+devendor contrib/libs/cxxsupp
+devendor contrib/libs/libc_compat
 {% endblock %}
 
 {% block build %}
