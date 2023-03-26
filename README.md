@@ -7,6 +7,8 @@
 <br>
 <br>
 
+stal/IX, build on top of IX, https://stal-ix.github.io/
+
 statically build packages, for darwin/linux, with clang
 
 Goals:
