@@ -31,12 +31,15 @@ clang-resource-headers
 lld
 lld-cmake-exports
 
+opt
+
 dsymutil
 
 llvm-ar
 llvm-as
 llvm-nm
 llvm-dis
+llvm-link
 llvm-ranlib
 
 llvm-install-name-tool
