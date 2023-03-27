@@ -3,6 +3,7 @@
 {% block version %}1.3.2{% endblock %}
 
 {% block fetch %}
+# 1.3.3 broke static build
 https://github.com/ccxvii/mujs/archive/refs/tags/{{self.version()}}.tar.gz
 sha:59763cc32776714b4f00a0efede83f4f56b381c9dbaced4756d665c214249dca
 {% endblock %}
