@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://gitlab.com/mbunkus/mkvtoolnix/-/archive/release-74.0.0/mkvtoolnix-release-74.0.0.tar.bz2
-sha:7cda4e4932f07e8b7c43528fa78a3904ad33b6c9f5f3951c70c4e735466c932d
+https://gitlab.com/mbunkus/mkvtoolnix/-/archive/release-75.0.0/mkvtoolnix-release-75.0.0.tar.bz2
+sha:cff3044a75c1204d76abda1058f00fc1be1162e1045cc46d3639727f0dfed570
 {% endblock %}
 
 {% block bld_libs %}
@@ -25,8 +25,8 @@ lib/shim/fake(lib_name=stdc++)
 {% endblock %}
 
 {% block bld_tool %}
-bld/qt/6
 bld/ruby
+bld/qt/6
 bld/gettext
 bld/fake/er(tool_name=xsltproc)
 {% endblock %}
