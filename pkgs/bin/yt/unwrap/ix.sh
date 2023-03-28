@@ -17,6 +17,8 @@ lib/python/3/11
 
 {% block bld_tool %}
 bin/yasm
+bld/bison
+pip/dacite
 bld/python
 bin/ragel/6
 bld/devendor
@@ -67,15 +69,19 @@ ui64 InterpolatedMicroSeconds() {
     return MicroSeconds();
 }
 EOF
+
+sed -e 's|_musl_|_qqq_|' -i yt/yt/library/profiling/perf/counters.cpp
 {% endblock %}
 
 {% block build %}
 mkdir -p ${tmp}/obj/bin
 ln -s $(which yasm) ${tmp}/obj/bin/
 ln -s $(which ragel) ${tmp}/obj/bin/
+ln -s $(which bison) ${tmp}/obj/bin/
 {{super()}}
 {% endblock %}
 
 {% block ninja_build_targets %}
 ytserver-all
+#liblibrary-profiling-perf.a
 {% endblock %}
