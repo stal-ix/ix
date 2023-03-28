@@ -8,11 +8,13 @@ sha:554cfbfe0542bddb391b4e3e05bfbbfc3e282b955bd56218d21c0616481f65eb
 {% block lib_deps %}
 lib/c
 lib/kernel
-lib/atomicops
 lib/pciaccess
+{% if not x86_64 %}
+lib/atomic/ops
+{% endif %}
 {% endblock %}
 
 {% block meson_flags %}
-valgrind=disabled
 udev=true
+valgrind=disabled
 {% endblock %}
