@@ -3,6 +3,10 @@
         "md5": "c15079242d01c83a1e7a21fb30c12491",
         "url": "https://files.pythonhosted.org/packages/b4/4d/e03d08f16ee10e688bde9016bc80af8b78c7f36a8b37c7194da48f72207e/Mako-1.1.6-py2.py3-none-any.whl"
     },
+    "PyYAML/ix.sh": {
+        "md5": "efa82ab3eb167c192bb90fe15974d8a2",
+        "url": "https://files.pythonhosted.org/packages/08/f4/ffa743f860f34a5e8c60abaaa686f82c9ac7a2b50e5a1c3b1eb564d59159/PyYAML-6.0-cp39-cp39-win_amd64.whl"
+    },
     "appdirs/ix.sh": {
         "md5": "1d638a5913a8d8ed8e7c7d789ece149c",
         "url": "https://files.pythonhosted.org/packages/3b/00/2344469e2084fb287c2e0b57b72910309874c3245463acd6cf5e3db69324/appdirs-1.4.4-py2.py3-none-any.whl"
