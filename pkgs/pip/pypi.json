@@ -7,6 +7,11 @@
         "md5": "1d638a5913a8d8ed8e7c7d789ece149c",
         "url": "https://files.pythonhosted.org/packages/3b/00/2344469e2084fb287c2e0b57b72910309874c3245463acd6cf5e3db69324/appdirs-1.4.4-py2.py3-none-any.whl"
     },
+    "attrs/ix.sh": {
+        "md5": "f440620ea6b2c6555964dda7d9efc5d6",
+        "run": [],
+        "url": "https://files.pythonhosted.org/packages/f2/bc/d817287d1aa01878af07c19505fafd1165cd6a119e9d0821ca1d1c20312d/attrs-22.1.0-py2.py3-none-any.whl"
+    },
     "beautysh/ix.sh": {
         "md5": "0edfde5715fcb643db59724c61365d0f",
         "run": [
@@ -36,9 +41,25 @@
         "md5": "ee66fb12729b9e8ea4bb5b4b92f5ce2d",
         "url": "https://files.pythonhosted.org/packages/05/1b/0a0dece0e8aa492a6ec9e4ad2fe366b511558cdc73fd3abc82ba7348e875/certifi-2021.5.30-py2.py3-none-any.whl"
     },
+    "dacite/ix.sh": {
+        "md5": "453fe8c295400d7791b56cf08e780983",
+        "url": "https://files.pythonhosted.org/packages/ec/5f/d922519ac948491915ab5b3270a88b0f517a003e6b12af5d71bf9ecc93a7/dacite-1.8.0-py3-none-any.whl"
+    },
     "docutils/ix.sh": {
         "md5": "c511ce27cc0f13fca32b01e4a6c197b4",
         "url": "https://files.pythonhosted.org/packages/4c/42/5aefc2ffc563ef8456276430da8f045f55176c45746b0c3434c0c474c746/docutils-0.18-py2.py3-none-any.whl"
+    },
+    "glad/ix.sh": {
+        "md5": "56877fb896ad878a45173a595b1a9e03",
+        "url": "https://files.pythonhosted.org/packages/3b/07/1b313fc6ccdd38447f162f5a77700f070342ff71c4146dc05404bd6e053d/glad-0.1.36-py3-none-any.whl"
+    },
+    "glad2/ix.sh": {
+        "md5": "2e231e4ae41b46a8f18b7d6c63097b6c",
+        "run": [
+            "pip/jinja2",
+            "pip/setuptools"
+        ],
+        "url": "https://files.pythonhosted.org/packages/ca/4c/6af2f1bbfc6634ba7542e89077e79223569b84abd94106ba38605a7421e1/glad2-2.0.1-py3-none-any.whl"
     },
     "jinja2/ix.sh": {
         "md5": "b377af8123a32e992984222bff51e152",
@@ -50,6 +71,14 @@
     "jmespath/ix.sh": {
         "md5": "a066efd76c72debc36775316e34a70bc",
         "url": "https://files.pythonhosted.org/packages/07/cb/5f001272b6faeb23c1c9e0acc04d48eaaf5c862c17709d20e3469c6e0139/jmespath-0.10.0-py2.py3-none-any.whl"
+    },
+    "jsonschema/ix.sh": {
+        "md5": "19b08f13a7308e0c8d663a62314cd79f",
+        "run": [
+            "pip/attrs",
+            "pip/pyrsistent"
+        ],
+        "url": "https://files.pythonhosted.org/packages/c1/97/c698bd9350f307daad79dd740806e1a59becd693bd11443a0f531e3229b3/jsonschema-4.17.3-py3-none-any.whl"
     },
     "minio/ix.sh": {
         "md5": "8ed0e1fdb05f5a4e50394dce8bc9ef51",
@@ -70,6 +99,11 @@
     "pyparsing/ix.sh": {
         "md5": "dbfd0a241aad2595f43377ec7f1836ea",
         "url": "https://files.pythonhosted.org/packages/8a/bb/488841f56197b13700afd5658fc279a2025a39e22449b7cf29864669b15d/pyparsing-2.4.7-py2.py3-none-any.whl"
+    },
+    "pyrsistent/ix.sh": {
+        "md5": "9ae0fcfc1162e0192e19cc037a3587e1",
+        "run": [],
+        "url": "https://files.pythonhosted.org/packages/54/d3/986fcfeaf62047840c571a857fb8f3ad1e9622081d5e7d0ee5e3451ca2e7/pyrsistent-0.19.2-py3-none-any.whl"
     },
     "python-dateutil/ix.sh": {
         "md5": "95743ca628ad14d4aeb3628907f017bd",
@@ -98,29 +132,5 @@
     "urllib3/ix.sh": {
         "md5": "9c0e97a18e35e3acaa8698e68e12bca1",
         "url": "https://files.pythonhosted.org/packages/af/f4/524415c0744552cce7d8bf3669af78e8a069514405ea4fcbd0cc44733744/urllib3-1.26.7-py2.py3-none-any.whl"
-    },
-    "glad/ix.sh": {
-        "md5": "56877fb896ad878a45173a595b1a9e03",
-        "url": "https://files.pythonhosted.org/packages/3b/07/1b313fc6ccdd38447f162f5a77700f070342ff71c4146dc05404bd6e053d/glad-0.1.36-py3-none-any.whl"
-    },
-    "glad2/ix.sh": {
-        "run": ["pip/jinja2", "pip/setuptools"],
-        "md5": "2e231e4ae41b46a8f18b7d6c63097b6c",
-        "url": "https://files.pythonhosted.org/packages/ca/4c/6af2f1bbfc6634ba7542e89077e79223569b84abd94106ba38605a7421e1/glad2-2.0.1-py3-none-any.whl"
-    },
-    "jsonschema/ix.sh": {
-        "run": ["pip/attrs", "pip/pyrsistent"],
-        "md5": "19b08f13a7308e0c8d663a62314cd79f",
-        "url": "https://files.pythonhosted.org/packages/c1/97/c698bd9350f307daad79dd740806e1a59becd693bd11443a0f531e3229b3/jsonschema-4.17.3-py3-none-any.whl"
-    },
-    "attrs/ix.sh": {
-        "run": [],
-        "md5": "f440620ea6b2c6555964dda7d9efc5d6",
-        "url": "https://files.pythonhosted.org/packages/f2/bc/d817287d1aa01878af07c19505fafd1165cd6a119e9d0821ca1d1c20312d/attrs-22.1.0-py2.py3-none-any.whl"
-    },
-    "pyrsistent/ix.sh": {
-        "run": [],
-        "md5": "9ae0fcfc1162e0192e19cc037a3587e1",
-        "url": "https://files.pythonhosted.org/packages/54/d3/986fcfeaf62047840c571a857fb8f3ad1e9622081d5e7d0ee5e3451ca2e7/pyrsistent-0.19.2-py3-none-any.whl"
     }
 }
