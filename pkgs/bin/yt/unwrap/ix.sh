@@ -75,3 +75,7 @@ ln -s $(which yasm) ${tmp}/obj/bin/
 ln -s $(which ragel) ${tmp}/obj/bin/
 {{super()}}
 {% endblock %}
+
+{% block ninja_build_targets %}
+ytserver-all
+{% endblock %}
