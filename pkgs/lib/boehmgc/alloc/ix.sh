@@ -2,7 +2,7 @@
 
 {% block lib_deps %}
 lib/c/naked
-lib/atomicops
+lib/atomic/ops
 {% endblock %}
 
 {% block cmake_flags %}
