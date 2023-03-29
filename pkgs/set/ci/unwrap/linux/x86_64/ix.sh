@@ -1,6 +1,7 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
+bin/webp/gui
 bin/yt
 bin/links/sdl
 bin/icc
