@@ -2,6 +2,7 @@
 
 import os
 import sys
+import fnmatch
 import configparser
 
 if '--version' in sys.argv:
@@ -10,7 +11,7 @@ if '--version' in sys.argv:
 
 def parse_cf(data):
     prog = []
-    cfg = configparser.ConfigParser(allow_no_value=True,delimiters=('->',))
+    cfg = configparser.ConfigParser(allow_no_value=True, delimiters=('->',))
     cfg.read_string(data)
     imp = cfg['imports']
 
@@ -34,9 +35,7 @@ def all_bins():
 def match(prog, b):
     for p in prog:
         if p['kind'] == 'bin':
-            g = p['glob'].replace('*', '')
-
-            if g in os.path.basename(b):
+            if fnmatch.fnmatch(os.path.basename(b), p['glob']):
                 yield p
 
 def find_bins(prog):
