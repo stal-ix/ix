@@ -16,6 +16,6 @@ sed -e 's|WEBP_BUILD_VWEBP OFF|WEBP_BUILD_VWEBP ON|' -i CMakeLists.txt
 {% endblock %}
 
 {% block install %}
-{{super()}}
+mkdir ${out}/bin
 cp ${tmp}/obj/vwebp_sdl ${out}/bin/
 {% endblock %}
