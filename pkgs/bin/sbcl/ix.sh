@@ -1,8 +1,8 @@
 {% extends '//bin/sbcl/t/ix.sh' %}
 
 {% block fetch %}
-https://nav.dl.sourceforge.net/project/sbcl/sbcl/2.3.2/sbcl-2.3.2-source.tar.bz2
-sha:44cc162cfa6332a9a88c7a121d19038828a4ba4f6bffb77ef1c7b17407cb1eaa
+https://nav.dl.sourceforge.net/project/sbcl/sbcl/2.3.3/sbcl-2.3.3-source.tar.bz2
+sha:52e9a16f79a9bb4601ac09a6c76dfb90a7d643c9acff736b4293b2699f0150bf
 {% endblock %}
 
 {% block bld_tool %}
