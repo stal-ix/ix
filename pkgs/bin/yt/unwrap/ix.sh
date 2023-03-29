@@ -17,6 +17,7 @@ lib/python/3/11
 
 {% block bld_tool %}
 bin/yasm
+bld/conan
 bld/bison
 pip/jinja2
 pip/dacite
@@ -24,7 +25,6 @@ bld/python
 pip/PyYAML
 bin/ragel/6
 bld/devendor
-bld/fake(tool_name=conan)
 {% endblock %}
 
 {% block build_flags %}
@@ -74,14 +74,6 @@ EOF
 
 sed -e 's|_musl_|_qqq_|' -i yt/yt/library/profiling/perf/counters.cpp
 sed -e 's|.*desiredStore.*std::ranges::prev.*||' -i yt/yt/server/node/query_agent/query_service.cpp
-{% endblock %}
-
-{% block build %}
-mkdir -p ${tmp}/obj/bin/bison/bin
-ln -s $(which yasm) ${tmp}/obj/bin/
-ln -s $(which ragel) ${tmp}/obj/bin/
-ln -s $(which bison) ${tmp}/obj/bin/bison/bin/
-{{super()}}
 {% endblock %}
 
 {% block ninja_build_targets %}
