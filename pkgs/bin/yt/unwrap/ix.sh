@@ -13,7 +13,6 @@ lib/execinfo
 lib/openssl/1
 lib/bsd/overlay
 lib/python/3/11
-#lib/range/v3/std
 {% endblock %}
 
 {% block bld_tool %}
@@ -74,6 +73,7 @@ ui64 InterpolatedMicroSeconds() {
 EOF
 
 sed -e 's|_musl_|_qqq_|' -i yt/yt/library/profiling/perf/counters.cpp
+sed -e 's|.*desiredStore.*std::ranges::prev.*||' -i yt/yt/server/node/query_agent/query_service.cpp
 {% endblock %}
 
 {% block build %}
@@ -86,5 +86,9 @@ ln -s $(which bison) ${tmp}/obj/bin/bison/bin/
 
 {% block ninja_build_targets %}
 ytserver-all
-#liblibrary-profiling-perf.a
+{% endblock %}
+
+{% block install %}
+mkdir ${out}/bin
+cp ${tmp}/obj/yt/yt/server/all/ytserver-all ${out}/bin/
 {% endblock %}
