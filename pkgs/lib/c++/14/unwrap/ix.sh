@@ -28,4 +28,19 @@ EOF
 
 cat ${out}/include/vector | python3 fix.py > _
 mv _ ${out}/include/vector
+
+cat << EOF > ${out}/include/stlfwd
+#pragma once
+#include <iostream>
+#include <array>
+#include <map>
+#include <list>
+#include <string>
+#include <vector>
+#include <memory>
+#include <deque>
+#include <tuple>
+#include <set>
+#include <functional>
+EOF
 {% endblock %}
