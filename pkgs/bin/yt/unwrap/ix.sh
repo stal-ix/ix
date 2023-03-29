@@ -44,21 +44,6 @@ done
 
 devendor contrib/libs/cxxsupp
 
-cat << EOF > contrib/libs/cxxsupp/libcxx/include/stlfwd
-#pragma once
-#include <iostream>
-#include <array>
-#include <map>
-#include <list>
-#include <string>
-#include <vector>
-#include <memory>
-#include <deque>
-#include <tuple>
-#include <set>
-#include <functional>
-EOF
-
 cat << EOF >> contrib/libs/llvm12/include/llvm/Config/config-linux.h
 #undef HAVE_MALLINFO
 EOF
