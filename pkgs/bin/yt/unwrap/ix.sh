@@ -5,6 +5,8 @@ https://github.com/ytsaurus/ytsaurus/archive/c39e2e8a9a262feadb55bb9e13c42b3af65
 sha:d13edc9fc1f6ec750898c7bf967cd9273fec0768b53b22bfacc6317856bc9c3d
 {% endblock %}
 
+{% block task_pool %}full{% endblock %}
+
 {% block bld_libs %}
 lib/c
 lib/z
