@@ -1,12 +1,13 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/strukturag/libheif/archive/refs/tags/v1.15.1.tar.gz
-sha:0333924bf63d2cd09a021d18d02860eb218cf81b8e6f57d490c505207a59285b
+https://github.com/strukturag/libheif/archive/refs/tags/v1.15.2.tar.gz
+sha:30a2736ae0247389aaa43ec70357221500c49a68db39fda94da8d5bdc786fe3b
 {% endblock %}
 
 {% block lib_deps %}
 lib/c
+lib/c++
 lib/aom
 lib/x265
 lib/de265
