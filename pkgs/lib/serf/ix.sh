@@ -45,7 +45,7 @@ scons \
     OPENSSL="${SSL_DIR}" \
     APR="$(which apr-1-config)" \
     APU="$(which apu-1-config)" \
-    ZLIB="$(find_pkg zlib)"
+    ZLIB="$(pkg-config --variable=prefix zlib)"
 {% endblock %}
 
 {% block install %}

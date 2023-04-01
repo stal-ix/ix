@@ -19,6 +19,6 @@ lib/sqlite/3
 --with-dbm=gdbm
 {% endblock %}
 
-{% block env_lib %}
+{% block env %}
 export COFLAGS="--with-apr-util=${out}/lib/bin/apu-1-config \${COFLAGS}"
 {% endblock %}
