@@ -16,11 +16,6 @@ extract1() (
     fi
 )
 
-find_pkg() (
-    source_env "${IX_T_DIR}"
-    pkg-config --variable=prefix ${1}
-)
-
 DS="nowhere"
 
 pushd() {
