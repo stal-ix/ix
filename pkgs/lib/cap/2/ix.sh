@@ -1,8 +1,8 @@
 {% extends '//lib/cap/t/ix.sh' %}
 
 {% block fetch %}
-https://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2/libcap-2.68.tar
-sha:6c81724bd04dd11aa2e5651e50a8abae207cc02583b173b88389d1bd77d7585b
+https://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2/libcap-2.68.tar.gz
+sha:046e55716e0643b565efcd1dab1d26c5625709fcd0b5c271290c7ea1524cf906
 {% endblock %}
 
 {% block host_libs %}
