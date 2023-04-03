@@ -1,5 +1,10 @@
 {% extends '//die/c/gnome.sh' %}
 
+{% block fetch %}
+https://github.com/GNOME/epiphany/archive/refs/tags/44.1.tar.gz
+sha:ea5c74d6856b2728f0ff7f24bc7d96e7cca3983ac03a6d258bb6bb6ebe5ac356
+{% endblock %}
+
 {% block bld_libs %}
 lib/c
 lib/gtk
