@@ -6,6 +6,7 @@ bin/qmltyperegistrar
 
 {% block ninja_install_targets %}
 src/qmltyperegistrar/install
+tools/qmltyperegistrar/install
 {% endblock %}
 
 {% block patch %}
@@ -17,6 +18,7 @@ sed -e 's|$<T.*qmltyperegistrar>|qmltyperegistrar|' \
 {% endblock %}
 
 {% block postinstall %}
+#exit 1
 mkdir -p ${out}/lib/cmake
 cp -R ${tmp}/obj/lib/cmake/Qt6QmlTools ${out}/lib/cmake/
 sed -e "s|/.*/obj/bin|${out}/bin|" -i ${out}/lib/cmake/Qt6QmlTools/Qt6QmlToolsTargets.cmake
