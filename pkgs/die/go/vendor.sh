@@ -24,6 +24,7 @@ export GOPROXY="https://proxy.golang.org,direct"
 
 find . -type f -name go.mod | while read l; do (
     cd $(dirname ${l})
+    go mod tidy
     go mod vendor
 ) done
 
