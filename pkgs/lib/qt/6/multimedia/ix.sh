@@ -2,7 +2,7 @@
 
 {% block fetch %}
 https://github.com/qt/qtmultimedia/archive/refs/tags/v6.5.0.tar.gz
-sha:
+sha:715af19efe6d175fc7387fd90bcf3faeece616fc8547994b72d52966287ab1c1
 {% endblock %}
 
 {% block lib_deps %}
