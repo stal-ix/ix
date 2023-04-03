@@ -1,14 +1,14 @@
-{% extends '//lib/qt/6/multimedia/ix.sh' %}
+{% extends '//lib/qt/6/multimedia/t/ix.sh' %}
 
 {% block lib_deps %}
-lib/alsa
+#lib/alsa
 lib/ffmpeg
 {{super()}}
 {% endblock %}
 
 {% block cmake_flags %}
 {{super()}}
-FEATURE_alsa=ON
+FEATURE_alsa=OFF
 FEATURE_ffmpeg=ON
 FEATURE_linux_v4l=OFF
 {% endblock %}

@@ -1,4 +1,4 @@
-{% extends '//lib/qt/6/multimedia/ix.sh' %}
+{% extends '//lib/qt/6/multimedia/t/ix.sh' %}
 
 {% block lib_deps %}
 lib/gstreamer
