@@ -26,6 +26,10 @@ lib/elfutils
 lib/readline
 {% endblock %}
 
+{% block host_libs %}
+lib/c
+{% endblock %}
+
 {% block unpack %}
 {{super()}}
 cd tools/perf
@@ -48,6 +52,13 @@ NO_LIBPERL=1
 NO_LIBPYTHON=1
 WERROR=0
 NO_JVMTI=1
+ARCH={{target.linux_arch}}
+HOSTCC=${HOST_CC}
+HOSTAR=llvm-ar
+HOSTLD=${HOST_CC}
+{% if verbose %}
+V=1
+{% endif %}
 {% endblock %}
 
 {% block build_flags %}
