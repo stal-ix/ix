@@ -576,7 +576,7 @@ bin/xinetd
 bin/ncdu
 bin/lshw
 bin/jxl
-bin/copyq
+#bin/copyq
 bin/chafa
 bin/pango
 bin/tesseract
