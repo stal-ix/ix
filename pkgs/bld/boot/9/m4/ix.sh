@@ -1,12 +1,5 @@
-{% extends '//bin/m4/19/t/ix.sh' %}
+{% extends '//die/hub.sh' %}
 
-{% block bld_libs %}
-{% endblock %}
-
-{% block bld_deps %}
-bld/boot/8/env/std
-{% endblock %}
-
-{% block test %}
-echo 'skip tests'
+{% block run_deps %}
+bin/m4/19(std_env=bld/boot/7/env/cxx,intl_ver=no)
 {% endblock %}
