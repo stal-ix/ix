@@ -12,3 +12,7 @@ lib/c
 {% block bld_libs %}
 lib/kernel
 {% endblock %}
+
+{% block patch %}
+rm autogen.sh
+{% endblock %}
