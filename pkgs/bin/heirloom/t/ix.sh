@@ -9,7 +9,8 @@ sha:9bb2c524545ab88d5c7001f3be2f8228316577d84640db0fbde2b399bc81b147
 lib/c
 {% endblock %}
 
-{% block bld_tool %}
+{% block std_box %}
+{{super()}}
 bld/make
 {% endblock %}
 
