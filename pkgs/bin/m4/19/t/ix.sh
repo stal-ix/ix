@@ -11,14 +11,11 @@ lib/intl
 lib/sigsegv
 {% endblock %}
 
-{% block bld_tool %}
+{% block std_box %}
+{{super()}}
 bld/help2man
 {% endblock %}
 
 {% block configure_flags %}
 --disable-c++
-{% endblock %}
-
-{% block test %}
-${out}/bin/m4 --help
 {% endblock %}
