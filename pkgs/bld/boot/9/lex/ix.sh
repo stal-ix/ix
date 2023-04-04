@@ -1,18 +1,5 @@
-{% extends '//bin/heirloom/t/ix.sh' %}
+{% extends '//die/hub.sh' %}
 
-{% block bld_libs %}
-{% endblock %}
-
-{% block bld_deps %}
-bld/boot/8/env/std
-{% endblock %}
-
-{% block postinstall %}
-cd ${out}
-mkdir lib
-mv bin/lib/libl.a lib/
-{% endblock %}
-
-{% block install %}
-cd ${out}/bin; rm yacc
+{% block run_deps %}
+bin/heirloom/lex(std_env=bld/boot/7/env/cxx)
 {% endblock %}
