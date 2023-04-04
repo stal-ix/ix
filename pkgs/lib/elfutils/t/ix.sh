@@ -17,6 +17,9 @@ lib/bzip/2
 {% block bld_libs %}
 lib/obstack
 lib/shim/gnu
+{% if aarch64 %}
+lib/kernel
+{% endif %}
 lib/argp/standalone
 {% endblock %}
 

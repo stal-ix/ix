@@ -1,4 +1,4 @@
-{% extends '//lib/elfutils/t/ix.sh' %}
+{% extends 't/ix.sh' %}
 
 {% block patch %}
 sed -e 's|error.*;|abort();|' -i libdw/libdw_alloc.c
