@@ -1,7 +1,7 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
-bin/ananicy/cpp
+bin/ananicy/cpp(cplpl_std=15)
 {% endblock %}
 
 {% block run_data %}

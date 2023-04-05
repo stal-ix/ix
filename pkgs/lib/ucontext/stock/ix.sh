@@ -6,7 +6,7 @@ sha:937fba9d0beebd7cf957b79979b19fe3a29bb9c4bfd25e869477d7154bbf8fd3
 {% endblock %}
 
 {% block lib_deps %}
-lib/c
+lib/c/naked
 {% endblock %}
 
 {% block make_flags %}

@@ -1,7 +1,7 @@
 {% extends '//die/inline/library.sh' %}
 
 {% block lib_deps %}
-lib/c
+lib/c/naked
 {% endblock %}
 
 {% block sources %}
