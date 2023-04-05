@@ -31,8 +31,6 @@ base64 -d << EOF > external/std-jthread/src/stop_source.cpp
 {% include 'stop_source.cpp/base64' %}
 EOF
 
-sed -e 's|-fsanitize||' -i CMakeLists.txt
-
 find . -type f | while read l; do
     sed -e 's|\[\[nodiscard\]\]||g' -i ${l}
 done
@@ -59,8 +57,13 @@ ${PWD}/external/std-format/polyfills/format
 ${PWD}/external/std-jthread/polyfills/jthread
 {% endblock %}
 
+{% block cpp_missing %}
+sys/time.h
+unistd.h
+{% endblock %}
+
 {% block setup %}
-export CXXFLAGS="-include strstream -include sstream -include sys/time.h -include unistd.h ${CXXFLAGS}"
+export CXXFLAGS="-include sstream  ${CXXFLAGS}"
 {% endblock %}
 
 {% block cpp_defines %}
