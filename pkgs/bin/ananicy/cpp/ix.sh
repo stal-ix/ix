@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://gitlab.com/ananicy-cpp/ananicy-cpp/-/archive/v1.0.0-rc6/ananicy-cpp-v1.0.0-rc6.tar.bz2
-sha:d642d9ca4e0a0be753c76fbacfb0f43ee70c3767b8e90f0ebe30dc8b94b7b8a3
+https://gitlab.com/ananicy-cpp/ananicy-cpp/-/archive/v1.0.2/ananicy-cpp-v1.0.2.tar.bz2
+sha:6504a95bc6846dd93cfefc1e60526a43a4b9a3424f4fc834842ea60fc797cccf
 https://gitlab.com/ananicy-cpp/stl-polyfills/std-format/-/archive/45296602ad78a804411e7c3b617e13759f38e4e7/std-format-45296602ad78a804411e7c3b617e13759f38e4e7.tar.bz2
 sha:315f03aa2596839aa601f846c76bc4175478d7e355199c3b6c48cc416e35a5c0
 https://gitlab.com/ananicy-cpp/stl-polyfills/std-jthread/-/archive/d0d2bee1c102dff33ebfc647614bc8ae330d8f84/std-jthread-d0d2bee1c102dff33ebfc647614bc8ae330d8f84.tar.bz2
@@ -39,9 +39,6 @@ done
 
 cat external/std-jthread/src/*.cpp >> src/main.cpp
 
-sed -e 's|uint|unsigned|g' -i src/main.cpp
-sed -e 's|uint|unsigned|g' -i src/platform/linux/process.cpp
-
 find . -type f -name '*.cpp' | while read l; do
     sed -e 's|std::jthread|new std::jthread|' \
         -e 's|worker_thread = ||'     \
@@ -51,10 +48,10 @@ done
 {% endblock %}
 
 {% block cmake_flags %}
+ENABLE_SYSTEMD=OFF
 USE_EXTERNAL_JSON=ON
 USE_EXTERNAL_SPDLOG=ON
 USE_EXTERNAL_FMTLIB=ON
-ENABLE_SYSTEMD=OFF
 {% endblock %}
 
 {% block cpp_includes %}
@@ -63,7 +60,7 @@ ${PWD}/external/std-jthread/polyfills/jthread
 {% endblock %}
 
 {% block setup %}
-export CXXFLAGS="-include strstream -include sstream -include sys/time.h ${CXXFLAGS}"
+export CXXFLAGS="-include strstream -include sstream -include sys/time.h -include unistd.h ${CXXFLAGS}"
 {% endblock %}
 
 {% block cpp_defines %}
