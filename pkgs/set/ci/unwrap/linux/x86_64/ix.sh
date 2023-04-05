@@ -509,7 +509,6 @@ bin/glslc
 bin/htop
 bin/iwgtk
 bin/notify/send
-bin/ananicy/cpp
 bin/ananicy/rules
 bin/ananicy/runit
 bin/ananicy/good
