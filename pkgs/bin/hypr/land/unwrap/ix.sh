@@ -69,6 +69,12 @@ EOF
 
 mv _ src/debug/HyprCtl.cpp
 
+cat - src/helpers/BezierCurve.cpp << EOF > _
+#include <algorithm>
+EOF
+
+mv _ src/helpers/BezierCurve.cpp
+
 sed -e 's|NULL, XCB_STACK_MODE_ABOVE|0, XCB_STACK_MODE_ABOVE|' \
     -i src/managers/XWaylandManager.cpp
 
