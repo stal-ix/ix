@@ -1,20 +1,14 @@
 {% extends '//die/c/make.sh' %}
 
 {% block fetch %}
-https://github.com/tree-sitter/tree-sitter/archive/refs/tags/v0.20.1.tar.gz
-md5:978021405519b951486302c68c3476cc
+https://github.com/tree-sitter/tree-sitter/archive/refs/tags/v0.20.8.tar.gz
+sha:6181ede0b7470bfca37e293e7d5dc1d16469b9485d13f13a605baec4a8b1f791
 {% endblock %}
 
 {% block lib_deps %}
 lib/c
 {% endblock %}
 
-{% block make_flags %}
-SOEXTVER=a
-{% endblock %}
-
-{% block patch %}
-sed -e 's|.*ln -sf.*||' \
-    -e 's|libtree-sitter.*SO.*OBJ.*|qw:|' \
-    -i Makefile
+{% block build_flags %}
+wrap_cc
 {% endblock %}

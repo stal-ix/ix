@@ -16,5 +16,6 @@ LIBUV_BUILD_BENCH=OFF
 
 {% block install %}
 {{super()}}
+sed -e 's|_a.a|.a|' -i ${out}/lib/cmake/libuv/libuvConfig-release.cmake
 rm ${out}/lib/pkgconfig/libuv-static.pc ${out}/lib/libuv_a.a
 {% endblock %}
