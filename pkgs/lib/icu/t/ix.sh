@@ -1,8 +1,8 @@
 {% extends '//die/c/autohell.sh' %}
 
 {% block fetch %}
-https://github.com/unicode-org/icu/archive/refs/tags/release-72-1.tar.gz
-sha:43cbad628d98f37a3f95f6c34579f9144ef4bde60248fa6004a4f006d7487e69
+https://github.com/unicode-org/icu/archive/refs/tags/release-70-1.tar.gz
+sha:f30d670bdc03ba999638a2d2511952ab94adf204d0e14898666f2e0cacb7fef1
 {% endblock %}
 
 {% block unpack %}
