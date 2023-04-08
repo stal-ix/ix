@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://www.tcpdump.org/release/libpcap-1.10.3.tar.gz
-sha:2a8885c403516cf7b0933ed4b14d6caa30e02052489ebd414dc75ac52e7559e6
+https://www.tcpdump.org/release/libpcap-1.10.4.tar.gz
+sha:ed19a0383fad72e3ad435fd239d7cd80d64916b87269550159d20e47160ebe5f
 {% endblock %}
 
 {% block lib_deps %}
