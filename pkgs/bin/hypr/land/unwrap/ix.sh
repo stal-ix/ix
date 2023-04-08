@@ -26,7 +26,6 @@ lib/mesa/glesv2/dl
 
 {% block bld_tool %}
 bin/jq
-bld/python
 bld/fakegit
 bld/wayland
 {% endblock %}
