@@ -60,12 +60,6 @@ find . -type f -name '*.hpp' | while read l; do
     mv _ ${l}
 done
 
-cat - src/debug/HyprCtl.cpp << EOF > _
-#include <sstream>
-EOF
-
-mv _ src/debug/HyprCtl.cpp
-
 cat - src/helpers/BezierCurve.cpp << EOF > _
 #include <algorithm>
 EOF
