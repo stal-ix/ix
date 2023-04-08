@@ -18,6 +18,7 @@ lib/device/mapper
 {% endblock %}
 
 {% block bld_tool %}
+bld/m4
 bld/flex
 bld/python
 bin/bison/3/6

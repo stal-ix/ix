@@ -18,9 +18,9 @@ bld/flex
 bin/gzip
 bin/zstd
 bld/perl
+bld/bison
 bld/python
 bin/openssl
-bin/bison/3/6
 {% endblock %}
 
 {% block configure %}

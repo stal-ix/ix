@@ -11,5 +11,6 @@ verbose
 {% endblock %}
 
 {% block yacc %}
+bld/m4
 bin/bison/3/6
 {% endblock %}

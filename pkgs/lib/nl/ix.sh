@@ -15,7 +15,7 @@ lib/kernel
 
 {% block bld_tool %}
 bld/flex
-bin/bison/3/6
+bld/bison
 {% endblock %}
 
 {% block env_lib %}
