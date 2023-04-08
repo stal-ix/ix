@@ -43,23 +43,6 @@ sed -e "s|subproject.*wlroots.*|dependency('wlroots')|" \
 sed -e 's|.get_variable.*wlroots.*|,|' \
     -i src/meson.build
 
-cat << EOF > patch.py
-import sys
-
-def it():
-    for x in sys.stdin.read().split('\n'):
-        if 'bool operator==(' in x:
-            x = x.replace(') {', ') const {')
-        yield x
-
-print('\n'.join(it()).strip() + '\n')
-EOF
-
-find . -type f -name '*.hpp' | while read l; do
-    cat ${l} | python3 patch.py > _
-    mv _ ${l}
-done
-
 sed -e 's|.*Running on WAYLAND_DISPLAY.*||' -i src/Compositor.cpp
 {% endblock %}
 
