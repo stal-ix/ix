@@ -43,6 +43,8 @@ find . -type f -name '*.cpp' | while read l; do
         -e 's|this->event_thread =||' \
         -i ${l}
 done
+
+sed -e 's|std::formatter|fmt::formatter|' -i include/utility/argument_parser.hpp
 {% endblock %}
 
 {% block cmake_flags %}
