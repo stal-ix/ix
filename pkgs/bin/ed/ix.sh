@@ -12,6 +12,7 @@ lib/sigsegv
 {% endblock %}
 
 {% block bld_tool %}
+bld/m4
 bin/lzip
 bld/flex
 bin/bison/3/6
