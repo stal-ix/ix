@@ -21,3 +21,7 @@ lib/sqlite/3
 {% block bld_tool %}
 bld/gettext
 {% endblock %}
+
+{% block setup %}
+export CXXFLAGS="-std=c++14 ${CXXFLAGS}"
+{% endblock %}
