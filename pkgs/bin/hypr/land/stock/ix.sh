@@ -41,8 +41,6 @@ sed -e "s|subproject.*wlroots.*|dependency('wlroots')|" \
 
 sed -e 's|.get_variable.*wlroots.*|,|' \
     -i src/meson.build
-
-sed -e 's|.*Running on WAYLAND_DISPLAY.*||' -i src/Compositor.cpp
 {% endblock %}
 
 {% block build_flags %}
