@@ -60,12 +60,6 @@ find . -type f -name '*.hpp' | while read l; do
     mv _ ${l}
 done
 
-cat - src/helpers/BezierCurve.cpp << EOF > _
-#include <algorithm>
-EOF
-
-mv _ src/helpers/BezierCurve.cpp
-
 sed -e 's|NULL, XCB_STACK_MODE_ABOVE|0, XCB_STACK_MODE_ABOVE|' \
     -i src/managers/XWaylandManager.cpp
 
