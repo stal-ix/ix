@@ -1,8 +1,10 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://github.com/hyprwm/Hyprland/archive/refs/tags/v0.19.2beta.tar.gz
-sha:4454220b67699b79825ae45efdded68856343a005e3f5c08a258ef918e7e10b1
+#https://github.com/hyprwm/Hyprland/archive/refs/tags/v0.24.0.tar.gz
+#sha:31a80d880a3d3c2f9115313958e54dcae3c15e3c8e900c783bacdfb8a8db1750
+https://github.com/hyprwm/Hyprland/releases/download/v0.24.0/source-v0.24.0.tar.gz
+sha:43232560c07ca032ce2041c8863662e81d9a493574e81de1c0ad01ceee444af3
 {% endblock %}
 
 {% block bld_libs %}
@@ -11,6 +13,7 @@ lib/c++
 lib/pango
 lib/cairo
 lib/input
+lib/udis86
 lib/opengl
 lib/wayland
 lib/shim/x11
@@ -24,6 +27,7 @@ lib/mesa/glesv2/dl
 {% endblock %}
 
 {% block bld_tool %}
+bin/jq
 bld/python
 bld/fakegit
 bld/wayland
@@ -31,7 +35,11 @@ bin/hypr/land/protocols
 {% endblock %}
 
 {% block patch %}
-rm -r subprojects
+#rm -r subprojects
+
+sed -e 's|.*define PI .*||' -i src/defines.hpp
+sed -e 's|PI |3.14159265358979 |g' -i src/config/ConfigManager.cpp
+sed -e 's|PI |3.14159265358979 |g' -i src/render/OpenGL.cpp
 
 sed -e "s|subproject.*wlroots.*|dependency('wlroots')|" \
     -e 's|have_xwlr = .*|have_xwlr = false|' \
