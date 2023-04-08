@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://www.tcpdump.org/release/tcpdump-4.99.3.tar.gz
-sha:ad75a6ed3dc0d9732945b2e5483cb41dc8b4b528a169315e499c6861952e73b3
+https://www.tcpdump.org/release/tcpdump-4.99.4.tar.gz
+sha:0232231bb2f29d6bf2426e70a08a7e0c63a0d59a9b44863b7f5e2357a6e49fea
 {% endblock %}
 
 {% block lib_deps %}
