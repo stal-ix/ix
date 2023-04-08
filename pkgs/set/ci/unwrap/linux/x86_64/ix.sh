@@ -1,6 +1,7 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
+bin/goawk
 bin/sniffer
 bin/webp/gui
 bin/yt
