@@ -2,6 +2,6 @@
 
 {% block run_deps %}
 bin/dbus/session
-bin/hypr/land/unwrap
+bin/hypr/land/ix
 bin/dbus/session/runner(prog=Hyprland)
 {% endblock %}
