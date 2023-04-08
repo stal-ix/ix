@@ -60,12 +60,6 @@ find . -type f -name '*.hpp' | while read l; do
     mv _ ${l}
 done
 
-cat - src/helpers/MiscFunctions.cpp << EOF > _
-#include <sstream>
-EOF
-
-mv _ src/helpers/MiscFunctions.cpp
-
 cat - src/debug/HyprCtl.cpp << EOF > _
 #include <sstream>
 EOF
