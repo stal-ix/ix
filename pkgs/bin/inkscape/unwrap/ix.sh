@@ -60,6 +60,10 @@ bld/gettext
 WITH_X11=OFF
 {% endblock %}
 
+{% block cpp_defines %}
+_LIBCPP_ENABLE_CXX17_REMOVED_FEATURES=1
+{% endblock %}
+
 {% block setup %}
 export CXXFLAGS="-Wno-register ${CXXFLAGS}"
 {% endblock %}
