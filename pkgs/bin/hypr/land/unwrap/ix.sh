@@ -32,8 +32,8 @@ bld/wayland
 
 {% block patch %}
 sed -e 's|.*define PI .*||' -i src/defines.hpp
-sed -e 's|PI |3.14159265358979 |g' -i src/config/ConfigManager.cpp
-sed -e 's|PI |3.14159265358979 |g' -i src/render/OpenGL.cpp
+sed -e 's|PI |M_PI |g' -i src/config/ConfigManager.cpp
+sed -e 's|PI |M_PI |g' -i src/render/OpenGL.cpp
 
 sed -e "s|subproject.*wlroots.*|dependency('wlroots')|" \
     -e 's|have_xwlr = .*|have_xwlr = false|' \
