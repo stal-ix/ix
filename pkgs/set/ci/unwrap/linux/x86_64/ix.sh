@@ -143,7 +143,6 @@ bin/seatd/runit
 bin/seatd
 bin/groff
 bin/nnn
-bin/bison/3/8/0
 bin/bison/3/8
 bin/bison/3/7
 bin/bison/3/6
