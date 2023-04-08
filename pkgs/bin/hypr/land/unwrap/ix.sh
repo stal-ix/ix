@@ -60,9 +60,6 @@ find . -type f -name '*.hpp' | while read l; do
     mv _ ${l}
 done
 
-sed -e 's|NULL, XCB_STACK_MODE_ABOVE|0, XCB_STACK_MODE_ABOVE|' \
-    -i src/managers/XWaylandManager.cpp
-
 sed -e 's|.*Running on WAYLAND_DISPLAY.*||' -i src/Compositor.cpp
 {% endblock %}
 
