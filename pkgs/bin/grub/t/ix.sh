@@ -18,10 +18,9 @@ lib/device/mapper
 {% endblock %}
 
 {% block bld_tool %}
-bld/m4
 bld/flex
+bld/bison
 bld/python
-bin/bison/3/6
 bin/binutils(for_target={{target.gnu.triplet}})
 {% endblock %}
 
