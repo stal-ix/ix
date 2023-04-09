@@ -8,7 +8,6 @@ sha:6504a95bc6846dd93cfefc1e60526a43a4b9a3424f4fc834842ea60fc797cccf
 {% block bld_libs %}
 lib/c
 lib/c++
-lib/fmt
 lib/kernel
 lib/spdlog
 lib/execinfo
