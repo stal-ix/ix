@@ -7,7 +7,7 @@ lib/shim/ix
 
 {% block patch %}
 {{super()}}
-sed -e 's|mkstemp(name.*|ix_mkstemp();|' -i lib/opentemp.c
+sed -e 's|.*mkstemp(name.*|return ix_mkstemp();|' -i lib/opentemp.c
 {% endblock %}
 
 {% block cpp_missing %}
