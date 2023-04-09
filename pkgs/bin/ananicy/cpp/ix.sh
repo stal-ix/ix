@@ -31,10 +31,6 @@ add_library(stl_polyfill_thread INTERFACE)
 add_library(stl_polyfill::thread ALIAS stl_polyfill_thread)
 EOF
 
-find . -type f | while read l; do
-    sed -e 's|\[\[nodiscard\]\]||g' -i ${l}
-done
-
 sed -e 's|std::formatter|fmt::formatter|' -i include/utility/argument_parser.hpp
 {% endblock %}
 
