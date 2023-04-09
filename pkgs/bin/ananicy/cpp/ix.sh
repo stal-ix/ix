@@ -24,13 +24,6 @@ add_library(stl_polyfill_format INTERFACE)
 add_library(stl_polyfill::format ALIAS stl_polyfill_format)
 EOF
 
-mkdir external/std-jthread
-
-cat << EOF > external/std-jthread/CMakeLists.txt
-add_library(stl_polyfill_thread INTERFACE)
-add_library(stl_polyfill::thread ALIAS stl_polyfill_thread)
-EOF
-
 sed -e 's|std::formatter|fmt::formatter|' -i include/utility/argument_parser.hpp
 {% endblock %}
 
