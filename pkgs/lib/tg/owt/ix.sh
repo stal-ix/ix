@@ -25,6 +25,7 @@ lib/kernel
 
 {% block bld_tool %}
 bin/yasm
+bld/devendor
 {% endblock %}
 
 {% block cmake_flags %}
@@ -39,6 +40,9 @@ sed -e 's|.*modules/desktop_capture/linux/.*||' -e 's|.*link_x11.*||' -i CMakeLi
 
 >src/modules/desktop_capture/screen_drawer_linux.cc
 >src/third_party/libyuv/empty.cpp
+
+sed -e 's|.*\.h.*||' -i cmake/libopenh264.cmake
+devendor src/third_party/openh264
 
 cat << EOF > cmake/libyuv.cmake
 add_library(libyuv OBJECT EXCLUDE_FROM_ALL)
