@@ -1,8 +1,8 @@
 {% extends '//bin/hypr/t/ix.sh' %}
 
 {% block fetch %}
-https://github.com/pg83/hyprpaper/archive/7136d4ca42b9bad63b672307f80b83a9fcbce3c1.zip
-sha:62074d88764ca2ac4dcf127ffb98559e0f463ba8ad2d8cc283abbc5e440dbeaf
+https://github.com/hyprwm/hyprpaper/archive/refs/tags/v0.2.0.tar.gz
+sha:20c71db247c54480f5187b77b2b24cb11ec4c53ee599bd7d777f1fccdb344b5f
 {% endblock %}
 
 {% block install %}
