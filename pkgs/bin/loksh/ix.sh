@@ -1,8 +1,8 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://github.com/dimkr/loksh/releases/download/7.2/loksh-7.2.tar.xz
-sha:0083df24b3916c2f34ab63f8b4de6720ba9799e0e9d139c4b2d4ae41ad6aa53d
+https://github.com/dimkr/loksh/releases/download/7.3/loksh-7.3.tar.xz
+sha:e60bee39836432024569f44b499581ef8ebedbd8fe5b6172245e9a1af4304e9b
 {% endblock %}
 
 {% block lib_deps %}
