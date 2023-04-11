@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://ftp.gnu.org/gnu/parted/parted-3.5.tar.xz
-sha:4938dd5c1c125f6c78b1f4b3e297526f18ee74aa43d45c248578b1d2470c05a2
+https://ftp.gnu.org/gnu/parted/parted-3.6.tar.xz
+sha:3b43dbe33cca0f9a18601ebab56b7852b128ec1a3df3a9b30ccde5e73359e612
 {% endblock %}
 
 {% block conf_ver %}2/71{% endblock %}
