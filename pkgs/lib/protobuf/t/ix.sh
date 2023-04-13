@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/protocolbuffers/protobuf/archive/refs/tags/v22.2.tar.gz
-sha:9d39f0b36761068ed4cfb80ac446bb413d74dc60426bb942c53645484afb1407
+https://github.com/protocolbuffers/protobuf/archive/refs/tags/v22.3.tar.gz
+sha:786bf22c8fd3f20b7242df3b9649900714b0ba77b24a4971573088f41dfe9f8a
 {% endblock %}
 
 {% block lib_deps %}
