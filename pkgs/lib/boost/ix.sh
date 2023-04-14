@@ -1,8 +1,8 @@
 {% extends '//die/c/ix.sh' %}
 
 {% block fetch %}
-https://boostorg.jfrog.io/artifactory/main/release/1.81.0/source/boost_1_81_0.tar.bz2
-sha:71feeed900fbccca04a3b4f2f84a7c217186f28a940ed8b7ed4725986baf99fa
+https://boostorg.jfrog.io/artifactory/main/release/1.82.0/source/boost_1_82_0.tar.bz2
+sha:a6e1ab9b0860e6a2881dd7b21fe9f737a095e5f33a3a874afc6a345228597ee6
 {% endblock %}
 
 {% block bld_tool %}
