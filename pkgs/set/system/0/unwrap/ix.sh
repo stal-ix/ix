@@ -14,7 +14,11 @@ bin/sndio/runit
 bin/dhcpcd/runit
 bin/ananicy/runit
 # https://wiki.musl-libc.org/functional-differences-from-glibc.html#Name-Resolver/DNS
+{% if dnsmasq %}
+bin/dnsmasq/runit
+{% else %}
 bin/unbound/runit
+{% endif %}
 
 {% if mingetty %}
 bin/mingetty/runit
