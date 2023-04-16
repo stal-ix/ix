@@ -1,5 +1,5 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
-etc/user(userid=100,user=nobody,hash=x)
+etc/user/nologin(userid=100,user=nobody)
 {% endblock %}
