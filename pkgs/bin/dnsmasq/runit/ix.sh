@@ -4,6 +4,7 @@
 -2=lo
 --no-hosts
 --log-debug
+--all-servers
 --log-queries
 --no-negcache
 --log-queries
