@@ -19,6 +19,7 @@ lib/idn/2
 lib/cmocka
 lib/json/c
 lib/openssl
+lib/ng/http/2
 {% endblock %}
 
 {% block host_libs %}
@@ -30,12 +31,9 @@ bin/gzip
 {% endblock %}
 
 {% block configure_flags %}
---disable-doh
 --enable-developer
-{% endblock %}
-
-{% block build_flags %}
-shut_up
+--disable-warn-error
+--with-libnghttp2=yes
 {% endblock %}
 
 {% block configure %}
