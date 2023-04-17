@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://gitlab.isc.org/isc-projects/bind9/-/archive/v9_19_2/bind9-v9_19_2.tar.bz2
-sha:24cb1143542b0a0e75767fa10db5e9cf09aa38b027f02c8b76ea7548f01b88d9
+https://gitlab.isc.org/isc-projects/bind9/-/archive/v9_19_11/bind9-v9_19_11.tar.bz2
+sha:7903d0d1aed57605d9049f85010ccf0782f1298357fa4148cc2d18b2cc8f0131
 {% endblock %}
 
 {% block bld_libs %}
@@ -32,6 +32,10 @@ bin/gzip
 {% block configure_flags %}
 --disable-doh
 --enable-developer
+{% endblock %}
+
+{% block build_flags %}
+shut_up
 {% endblock %}
 
 {% block configure %}
