@@ -1,6 +1,7 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
+bin/redis/lite
 bin/dnsmasq
 bin/goawk
 bin/sniffer
