@@ -1,8 +1,4 @@
-{% extends '//die/c/ix.sh' %}
-
-{% block step_unpack %}
-:
-{% endblock %}
+{% extends '//die/proxy.sh' %}
 
 {% block lib_deps %}
 lib/jthread

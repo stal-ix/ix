@@ -1,8 +1,8 @@
 {% extends '//die/c/make.sh' %}
 
 {% block fetch %}
-https://roy.marples.name/downloads/openresolv/openresolv-3.12.0.tar.xz
-sha:42b30508e857a228535c631eaac936862d86eca68c14b5c0bf387ba176b91b97
+https://github.com/NetworkConfiguration/openresolv/archive/refs/tags/openresolv-3.13.0.tar.gz
+sha:799d075542185217dcdaec00f32d7b92000d89029d29e50645a5d2a39736921b
 {% endblock %}
 
 {% block make_flags %}
