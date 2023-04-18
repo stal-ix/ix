@@ -313,7 +313,7 @@ bin/idn/2
 bin/idn
 bin/libtool
 bin/cardboard
-bin/openresolv
+bin/openresolv/runit
 bin/kbd
 bin/fixtty
 bin/keyd
