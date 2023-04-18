@@ -7,12 +7,11 @@ bin/sud
 bin/iwd/runit
 bin/runit/sys
 bin/dbus/runit
-bin/openresolv
 bin/acpid/runit
 bin/seatd/runit
 bin/sndio/runit
 bin/dhcpcd/runit
-# bin/ananicy/runit
+bin/openresolv/runit
 
 # https://wiki.musl-libc.org/functional-differences-from-glibc.html#Name-Resolver/DNS
 {% if unbound %}
