@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/TartanLlama/expected/archive/96d547c03d2feab8db64c53c3744a9b4a7c8f2c5.tar.gz
-sha:64901df1de9a5a3737b331d3e1de146fa6ffb997017368b322c08f45c51b90a7
+https://github.com/TartanLlama/expected/archive/refs/tags/v1.1.0.tar.gz
+sha:1db357f46dd2b24447156aaf970c4c40a793ef12a8a9c2ad9e096d9801368df6
 {% endblock %}
 
 {% block lib_deps %}
