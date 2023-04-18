@@ -21,7 +21,7 @@
 {% endset %}
 
 {% block run_deps %}
-bin/dnsmasq
 etc/user/dnsmasq
+bin/dnsmasq/lite
 etc/services/runit(srv_dir=dnsmasq,srv_command=exec /bin/dnsmasq {{ix.fix_list(opts)}})
 {% endblock %}
