@@ -1,11 +1,9 @@
 {% extends '//die/proxy.sh' %}
 
 {% block install %}
-mkdir ${out}/etc
+mkdir ${out}/etc ${out}/fix
 
-cd ${out}/etc
-
-cat << EOF > resolvconf.conf
+cat << EOF > ${out}/etc/resolvconf.conf
 name_servers="::1 127.0.0.1"
 name_servers_append="1.1.1.1 8.8.8.8 9.9.9.9"
 resolv_conf=/var/run/resolvconf/resolv.conf
@@ -14,11 +12,7 @@ dnsmasq_conf=/var/run/resolvconf/dnsmasq_conf.conf
 dnsmasq_resolv=/var/run/resolvconf/dnsmasq_resolv.conf
 EOF
 
-ln -s /var/run/resolvconf/resolv.conf resolv.conf
-{% endblock %}
-
-{% block purge_broken_links %}
-{% endblock %}
-
-{% block chmod_ro %}
+cat << EOF > ${out}/fix/resolv_conf_symlink.sh
+ln -s /var/run/resolvconf/resolv.conf etc/resolv.conf
+EOF
 {% endblock %}
