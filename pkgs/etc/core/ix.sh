@@ -10,6 +10,10 @@ cat etc/passwd.d/* > etc/passwd
 rm -r etc/passwd.d
 EOF
 
+cat << EOF > mtab.sh
+ln -s /proc/self/mounts etc/mtab
+EOF
+
 cd ..
 
 mkdir etc; cd etc
@@ -51,12 +55,4 @@ cd \${HOME}
 EOF
 
 ln -s profile session
-
-ln -s /proc/self/mounts mtab
-{% endblock %}
-
-{% block purge_broken_links %}
-{% endblock %}
-
-{% block chmod_ro %}
 {% endblock %}
