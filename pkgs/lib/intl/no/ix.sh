@@ -1,5 +1,5 @@
-{% extends '//lib/intl/stub/ix.sh' %}
+{% extends '//die/env.sh' %}
 
-{% block env_lib %}
-export COFLAGS="--disable-nls \${COFLAGS}"
+{% block env %}
+export COFLAGS="--disable-nls ${COFLAGS}"
 {% endblock %}
