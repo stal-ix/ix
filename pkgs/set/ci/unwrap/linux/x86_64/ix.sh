@@ -1,6 +1,8 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
+bin/rpcgen
+bin/nfs/utils
 bin/redis/lite
 bin/dnsmasq
 bin/goawk
