@@ -32,12 +32,9 @@ udev_rulesdir=${out}/lib
 
 {% block configure_flags %}
 --disable-gss
---disable-mount
---disable-nfsdcld
---disable-nfsdcltrack
 --disable-sbin-override
---with-statedir=${out}/var
 --with-systemd=${out}/lib
+--with-statedir=${out}/var
 --with-rpcgen=$(which rpcgen)
 {% endblock %}
 
