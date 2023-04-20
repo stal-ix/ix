@@ -7,7 +7,6 @@ import itertools
 
 import urllib.request as ur
 
-
 def iter_recs(args):
     for a in args:
         url = f'https://pypi.python.org/pypi/{a}/json'
@@ -20,7 +19,6 @@ def iter_recs(args):
                     'md5': rec['md5_digest'],
                 }
 
-
 def dict_merge(it):
     res = {}
 
@@ -29,14 +27,18 @@ def dict_merge(it):
 
     return res
 
+def update(cur, pkg):
+    return dict_merge(itertools.chain(cur.items(), iter_recs(pkg)))
 
 def main():
-    cur = json.loads(sys.stdin.read())
-    pkg = sys.argv[1:]
+    pip = os.environ['IX_PKGS_ROOT'] + '/pkgs/pip/pypi.json'
 
-    if not pkg:
-        pkg = [os.path.dirname(x) for x in cur]
+    with open(pip, 'r') as f:
+        cur = json.loads(f.read())
 
-    print(json.dumps(dict_merge(itertools.chain(cur.items(), iter_recs(pkg))), indent=4, sort_keys=True))
+    cur = update(cur, sys.argv[1:] or [os.path.dirname(x) for x in cur])
+
+    with open(pip, 'w') as f:
+        f.write(json.dumps(cur, indent=4, sort_keys=True))
 
 main()
