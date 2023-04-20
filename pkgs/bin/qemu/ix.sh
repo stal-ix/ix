@@ -65,6 +65,8 @@ export CPPFLAGS="-isystem${PWD}/linux-headers ${CPPFLAGS}"
 {% block patch %}
 sed -e 's|SDL_VIDEODRIVER|SDL_VIDEODRIVER_XXX|' -i ui/sdl2.c
 sed -e 's|.*#.*error.*||' -i include/qemu/osdep.h
+cd linux-headers
+ln -s asm-x86 asm
 {% endblock %}
 
 {% block c_rename_symbol %}
