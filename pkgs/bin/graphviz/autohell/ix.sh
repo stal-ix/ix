@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://gitlab.com/graphviz/graphviz/-/archive/8.0.3/graphviz-8.0.3.tar.bz2
-sha:1ea6ccc900cd799c6b308d67d15ddb57b37cdaeb3191f2cf9657aa29744fd3d7
+https://gitlab.com/graphviz/graphviz/-/archive/8.0.4/graphviz-8.0.4.tar.bz2
+sha:ac7003aecd9c7be82de4d276c4a228bc08b146d9eb37005ae0578031f0f21192
 {% endblock %}
 
 {% block make_no_thrs %}
