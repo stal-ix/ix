@@ -39,6 +39,6 @@ def main():
     cur = update(cur, sys.argv[1:] or [os.path.dirname(x) for x in cur])
 
     with open(pip, 'w') as f:
-        f.write(json.dumps(cur, indent=4, sort_keys=True))
+        f.write(json.dumps(cur, indent=4, sort_keys=True).strip() + '\n')
 
 main()
