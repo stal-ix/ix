@@ -48,3 +48,7 @@ crc32
 {% block cpp_includes %}
 ${PWD}
 {% endblock %}
+
+{% block make_flags %}
+READELF=true
+{% endblock %}
