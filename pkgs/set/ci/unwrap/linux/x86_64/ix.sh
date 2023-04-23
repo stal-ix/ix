@@ -713,7 +713,7 @@ bin/tex/info
 bin/feather/pad
 bin/hunspell
 bin/geany
-bin/codelite
+bin/code/lite
 bin/dash/sh/old
 bin/dash/sh
 bin/dash
