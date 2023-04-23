@@ -92,8 +92,6 @@ sed -e 's|webrtc::InitPipewireStubs()|true|' \
 
 cat << EOF >> Telegram/SourceFiles/stdafx.h
 #if defined(__cplusplus)
-#include <QList>
-#include <QVector>
 #include "Telegram/lib_ui/ui/widgets/scroll_area.h"
 #include "Telegram/ThirdParty/libtgvoip/webrtc_dsp/rtc_base/scoped_ref_ptr.h"
 #endif
@@ -105,10 +103,9 @@ sed -e 's|.*DESKTOP_APP_USE_PACKAGED.*||' \
     -e 's|.*NimfInput.*||' \
     -i cmake/external/qt/qt_static_plugins/qt_static_plugins.cpp
 
-sed -e 's|ranges::to<QVector>()|ranges::to<QList>()|' -i Telegram/SourceFiles/api/api_chat_filters.cpp
-sed -e 's|ranges::to<QVector>()|ranges::to<QList>()|' -i Telegram/SourceFiles/boxes/filters/edit_filter_links.cpp
-sed -e 's|ranges::to<QVector>()|ranges::to<QList>()|' -i Telegram/SourceFiles/settings/settings_folders.cpp
-sed -e 's|ranges::to<QVector>()|ranges::to<QList>()|' -i Telegram/SourceFiles/window/window_filters_menu.cpp
+find Telegram/SourceFiles -name '*.cpp' -type f | while read l; do
+    sed -e 's|ranges::to<QVector>()|ranges::to<QList>()|' -i ${l}
+done
 {% endblock %}
 
 {% block c_rename_symbol %}
