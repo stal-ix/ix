@@ -28,10 +28,6 @@ bld/m4
 bld/gettext
 {% endblock %}
 
-{% block patch %}
-mkdir sys; echo > sys/cdefs.h
-{% endblock %}
-
 {% block patch_configure %}
 sed -e 's|"-shared"|""|' -i configure
 {% endblock %}
