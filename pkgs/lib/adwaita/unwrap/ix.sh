@@ -1,8 +1,8 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://github.com/GNOME/libadwaita/archive/refs/tags/1.3.1.tar.gz
-sha:6ca682fc7feeb0aca3792ef0818ade72712931ee263bb6cecb72bb533daaf27f
+https://github.com/GNOME/libadwaita/archive/refs/tags/1.3.2.tar.gz
+sha:5519834dd250cc4f56345566d20447b63878468e22ca19d257f5064a0169828e
 {% endblock %}
 
 {% block lib_deps %}

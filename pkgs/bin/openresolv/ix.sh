@@ -1,8 +1,8 @@
 {% extends '//die/c/make.sh' %}
 
 {% block fetch %}
-https://github.com/NetworkConfiguration/openresolv/archive/refs/tags/openresolv-3.13.0.tar.gz
-sha:799d075542185217dcdaec00f32d7b92000d89029d29e50645a5d2a39736921b
+https://github.com/NetworkConfiguration/openresolv/archive/refs/tags/v3.13.1.tar.gz
+sha:04c9cde9afc54aea79f55da2423a4c3f22dc928b560a80436dc91dd4473b0b5b
 {% endblock %}
 
 {% block make_flags %}

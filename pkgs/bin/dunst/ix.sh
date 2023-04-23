@@ -1,8 +1,8 @@
 {% extends '//die/c/make.sh' %}
 
 {% block fetch %}
-https://github.com/dunst-project/dunst/archive/refs/tags/v1.9.1.tar.gz
-sha:571d82d5feef995e69a35e708a400a0cfa12a0f81854c5a3357e17844bf6249a
+https://github.com/dunst-project/dunst/archive/refs/tags/v1.9.2.tar.gz
+sha:fa6ce45c0af4bae188b0d679a5ba92f8f9b7e4301bb1bb476e82df26bce9e71a
 {% endblock %}
 
 {% block bld_libs %}

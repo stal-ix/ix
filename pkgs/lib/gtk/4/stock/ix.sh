@@ -1,8 +1,8 @@
 {% extends '//lib/gtk/t/ix.sh' %}
 
 {% block fetch %}
-https://gitlab.gnome.org/GNOME/gtk/-/archive/4.10.1/gtk-4.10.1.tar.bz2
-sha:6dcb4b9c6c8ba86a2daacb88cfad41fa7802b1510374bfd8656db88155ad841c
+https://gitlab.gnome.org/GNOME/gtk/-/archive/4.10.3/gtk-4.10.3.tar.bz2
+sha:bb15aa5f31e1dfd360f49a16c56b6457c9f327dc5afaa052b11eaa430a3658b1
 {% endblock %}
 
 {% block lib_deps %}
