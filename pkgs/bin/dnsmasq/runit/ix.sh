@@ -15,9 +15,9 @@
 --clear-on-reload
 --keep-in-foreground
 --pid-file=/var/run/dnsmasq/pid
+--log-facility=/var/run/dnsmasq/log
 --conf-file=/var/run/resolvconf/dnsmasq_conf.conf
 --resolv-file=/var/run/resolvconf/dnsmasq_resolv.conf
---log-facility=/var/run/dnsmasq/log
 {% endset %}
 
 {% block run_deps %}

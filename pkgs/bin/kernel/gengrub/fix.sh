@@ -1,13 +1,13 @@
 mkdir -p etc
 
 cat << EOF > etc/grub.cfg
-probe -u \$root --set=rootuuid
+probe --part-uuid \$root --set=rootuuid
 EOF
 
 ls bin/kernel-* | while read l; do
-    cat << EOF >> etc/grub.conf
+    cat << EOF >> etc/grub.cfg
 menuentry "${l}" {
-    linux /${l} ro root=UUID=\$rootuuid
+    linux /${l} ro root=PARTUUID=\$rootuuid
     boot
 }
 EOF

@@ -102,6 +102,10 @@ sed -e 's|.*DESKTOP_APP_USE_PACKAGED.*||' \
     -e 's|.*Gtk3Theme.*||' \
     -e 's|.*NimfInput.*||' \
     -i cmake/external/qt/qt_static_plugins/qt_static_plugins.cpp
+
+find Telegram/SourceFiles -name '*.cpp' -type f | while read l; do
+    sed -e 's|ranges::to<QVector>()|ranges::to<QList>()|' -i ${l}
+done
 {% endblock %}
 
 {% block c_rename_symbol %}
