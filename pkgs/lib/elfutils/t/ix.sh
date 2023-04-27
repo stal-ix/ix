@@ -28,10 +28,6 @@ bld/m4
 bld/gettext
 {% endblock %}
 
-{% block patch %}
-mkdir sys; echo > sys/cdefs.h
-{% endblock %}
-
 {% block patch_configure %}
 sed -e 's|"-shared"|""|' -i configure
 {% endblock %}
@@ -51,4 +47,8 @@ crc32
 
 {% block cpp_includes %}
 ${PWD}
+{% endblock %}
+
+{% block make_flags %}
+READELF=true
 {% endblock %}
