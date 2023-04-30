@@ -11,7 +11,7 @@ lib/c++
 {% endblock %}
 
 {% block c_compiler %}
-bin/gcc(for_target={{target.gnu.three}})
+bin/gcc(for_target={{target.gnu.three}},gcc_ver=12)
 {% endblock %}
 
 {% block build_flags %}

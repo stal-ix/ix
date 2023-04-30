@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/freedesktop/uchardet/archive/refs/tags/v0.0.8.tar.gz
-sha:21d9aaf1ab383575e4d0cea0bad379788df22e2ca99cf603b9393faef71cd2ed
+https://www.freedesktop.org/software/uchardet/releases/uchardet-0.0.8.tar.xz
+sha:e97a60cfc00a1c147a674b097bb1422abd9fa78a2d9ce3f3fdcc2e78a34ac5f0
 {% endblock %}
 
 {% block lib_deps %}
