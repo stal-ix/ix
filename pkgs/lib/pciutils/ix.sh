@@ -1,8 +1,8 @@
 {% extends '//die/c/make.sh' %}
 
 {% block fetch %}
-https://github.com/pciutils/pciutils/archive/refs/tags/v3.9.0.tar.gz
-sha:17829b1fc3ef2a022f2b0a6c4d7a686b53a2fb0233951c31f9344e0abc4034bf
+https://github.com/pciutils/pciutils/archive/refs/tags/v3.10.0.tar.gz
+sha:e579d87f1afe2196db7db648857023f80adb500e8194c4488c8b47f9a238c1c6
 {% endblock %}
 
 {% block lib_deps %}
