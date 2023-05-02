@@ -19,6 +19,15 @@ __libc_calloc=calloc
 )
 
 rm -rf ${out}/lib/libc.a obj/src/malloc
+
+# add missing open64
+cp obj/src/fcntl/open.o obj/src/fcntl/open64.o
+llvm-objcopy --redefine-sym=open=open64 obj/src/fcntl/open64.o
+
+# add missing pread64
+cp obj/src/unistd/pread.o obj/src/unistd/pread64.o
+llvm-objcopy --redefine-sym=pread=pread64 obj/src/unistd/pread64.o
+
 ar q ${out}/lib/libc.a $(find obj -type f -name '*.o' | sort)
 ranlib ${out}/lib/libc.a
 {% endblock %}

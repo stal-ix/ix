@@ -31,7 +31,7 @@ bld/texinfo
 export CFLAGS="-Wno-enum-constexpr-conversion ${CFLAGS}"
 export acx_cv_cc_gcc_supports_ada=no
 export ac_cv_search_tgetent=no
-export ac_cv_func_pread64=yes
+#export ac_cv_func_pread64=yes
 {% endblock %}
 
 {% block patch %}
