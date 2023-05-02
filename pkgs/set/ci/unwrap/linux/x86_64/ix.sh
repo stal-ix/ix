@@ -45,6 +45,7 @@ bin/rng/tools
 bin/gcc/11
 bin/gcc/env
 bin/gcc/12
+bin/gcc/13
 bin/gcc/10
 bin/gcc/9
 bin/gcc/8
@@ -121,8 +122,8 @@ bin/mingetty
 bin/git
 bin/git/2
 bin/git/go
-bin/kernel/6/0
-bin/kernel/6/1
+bin/kernel/6/2
+bin/kernel/6/3
 bin/meson/60
 bin/meson/62
 bin/meson/63
