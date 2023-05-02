@@ -32,7 +32,7 @@ ranlib libcrt.a
 
 {% block env %}
 export CMFLAGS="-DLIBCXX_HAS_MUSL_LIBC=yes \${CMFLAGS}"
-export CPPFLAGS="${PICFLAGS} -isystem ${out}/include \${CPPFLAGS}"
+export CPPFLAGS="${PICFLAGS} -D_LARGEFILE64_SOURCE=1 -isystem ${out}/include \${CPPFLAGS}"
 export LDFLAGS="-static \${LDFLAGS}"
 
 {% if x86_64 or aarch64 or riscv64 %}
