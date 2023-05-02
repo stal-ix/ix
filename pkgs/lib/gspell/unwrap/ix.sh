@@ -1,8 +1,12 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://gitlab.gnome.org/GNOME/gspell/-/archive/1.11.1/gspell-1.11.1.tar.bz2
-sha:0adfce2fac0ca20f3781fea90afeffabf047833d420f25b6e222e6610787b98f
+https://gitlab.gnome.org/GNOME/gspell/-/archive/1.12.1/gspell-1.12.1.tar.bz2
+sha:09269aa0a40d220f35e7dd0f674aefcaad59c3d67deb25bc661a9107fdffdd64
+{% endblock %}
+
+{% block conf_ver %}
+2/71
 {% endblock %}
 
 {% block lib_deps %}
@@ -15,12 +19,12 @@ lib/enchant
 
 {% block bld_tool %}
 bld/vala
+bld/glib
 bld/gtkdoc
 bin/xmllint
 bld/gettext
 bld/intltool
 bld/auto/archive
-bld/glib
 bld/gobject/introspection
 {% endblock %}
 

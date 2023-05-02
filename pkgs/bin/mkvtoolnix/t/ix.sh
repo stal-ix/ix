@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://gitlab.com/mbunkus/mkvtoolnix/-/archive/release-75.0.0/mkvtoolnix-release-75.0.0.tar.bz2
-sha:cff3044a75c1204d76abda1058f00fc1be1162e1045cc46d3639727f0dfed570
+https://gitlab.com/mbunkus/mkvtoolnix/-/archive/release-76.0/mkvtoolnix-release-76.0.tar.bz2
+sha:274babfc46c4bdbd5886470477af3a4a51d5a6c6a3da4583d3e27d91933d73bf
 {% endblock %}
 
 {% block bld_libs %}
