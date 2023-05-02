@@ -652,8 +652,8 @@ bin/lazygit
 bin/chroma
 bin/v
 bin/wvkbd
-bin/gosh
-bin/gosh/posix
+#bin/gosh
+#bin/gosh/posix
 bin/nodejs
 bin/semver
 bin/tinyssh
