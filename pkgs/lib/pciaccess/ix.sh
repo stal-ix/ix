@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://github.com/freedesktop/xorg-libpciaccess/archive/refs/tags/libpciaccess-0.17.tar.gz
-sha:16086781a9e7dd88de51ecbcee5f7bb904e037aa46982a5ec42b52f4cf3dc4b6
+https://gitlab.freedesktop.org/xorg/lib/libpciaccess/-/archive/libpciaccess-0.17/libpciaccess-libpciaccess-0.17.tar.bz2
+sha:6e6d69d3cf5ee294dcb38ccfb360f1895a263df5dd8058563cdee62d9b9c17fd
 {% endblock %}
 
 {% block lib_deps %}

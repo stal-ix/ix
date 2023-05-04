@@ -18,7 +18,8 @@ bld/dlfcn
 
 {% block meson_flags %}
 {{super()}}
-seccomp=enabled
+# TODO(pg): fix it
+seccomp=disabled
 {% endblock %}
 
 {% block patch %}

@@ -9,7 +9,7 @@ sha:949c71866fcd2f9ed71a754ea9e3d1bdc23dee85969dcdc78180f1d18ca8b087
 {% endblock %}
 
 {% block go_sha %}
-sha:75f9a30d44c27bbc8b2dc6895ac270c76c21517e5464f1b47ac62177ed9301e7
+sha:3f3d66208d4efcedd054a9b266edc63c4f6e00d17623883d8841c2b61df5da88
 {% endblock %}
 
 {% block unpack %}
