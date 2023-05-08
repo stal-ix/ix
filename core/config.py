@@ -181,13 +181,10 @@ class Config:
 
 
 def find_pkg_dirs(binary):
-    if path := os.environ.get('IX_PATH'):
-        yield path
+    pkgs = os.path.join(os.path.dirname(binary), 'pkgs')
+    path = os.environ.get('IX_PATH', '{builtin}')
 
-    d = os.path.join(os.path.dirname(binary), 'pkgs')
-
-    if os.path.isdir(d):
-        yield d
+    yield path.replace('{builtin}', pkgs)
 
 
 def config_from(ctx):
