@@ -1,8 +1,8 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://github.com/labwc/labwc/archive/refs/tags/0.6.2.tar.gz
-sha:f2a91edea4069ba0a9d759e096a8e96434eb3d36d54ccbbba486d66f5b8060f3
+https://github.com/labwc/labwc/archive/refs/tags/0.6.3.tar.gz
+sha:a19ada70e40b90c759cf61094b4df96f907527f743b7e669da243d3ca3554ca2
 {% endblock %}
 
 {% block bld_libs %}
@@ -25,9 +25,4 @@ bld/wayland
 
 {% block meson_flags %}
 xwayland=disabled
-{% endblock %}
-
-{% block c_rename_symbol %}
-server_init
-server_finish
 {% endblock %}
