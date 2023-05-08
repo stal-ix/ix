@@ -23,7 +23,7 @@ class Manager:
     def __init__(self, config):
         self.cache = {}
         self.config = config
-        self.env = cj.Env(cv.vfs(config.overlays))
+        self.env = cj.Env(cv.UFS(config.overlays))
 
     def cached(self, key, func):
         while True:

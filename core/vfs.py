@@ -51,9 +51,6 @@ def load_vfs(root):
 
 
 def vfs(root):
-    if ':' in root:
-        return UFS(list(root.split(':')))
-
     while True:
         try:
             return vfs.__cache__[root]

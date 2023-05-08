@@ -184,12 +184,13 @@ def find_pkg_dirs(binary):
     pkgs = os.path.join(os.path.dirname(binary), 'pkgs')
     path = os.environ.get('IX_PATH', '{builtin}')
 
-    yield path.replace('{builtin}', pkgs)
+    return list(path.replace('{builtin}', pkgs).split(':'))
 
 
 def config_from(ctx):
     binary = ctx['binary']
-    overlays = ':'.join(find_pkg_dirs(binary))
+    overlays = find_pkg_dirs(binary)
     root = os.environ.get('IX_ROOT', '/ix')
+    verbose = os.environ.get('IX_VERBOSE', '')
 
-    return Config(binary, overlays, root, os.environ.get('IX_VERBOSE', ''))
+    return Config(binary, overlays, root, verbose)
