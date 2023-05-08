@@ -27,6 +27,20 @@ class FS:
             raise e
 
 
+class UFS:
+    def __init__(self, roots):
+        self.fs = [vfs(x) for x in roots]
+
+    def serve(self, path):
+        for fs in self.fs:
+            try:
+                return fs.serve(path)
+            except FileNotFoundError:
+                pass
+
+        raise FileNotFoundError(path)
+
+
 def load_vfs(root):
     fs = FS(root)
 
@@ -37,6 +51,9 @@ def load_vfs(root):
 
 
 def vfs(root):
+    if ':' in root:
+        return UFS(list(root.split(':')))
+
     while True:
         try:
             return vfs.__cache__[root]

@@ -27,13 +27,7 @@ def group_realms(l):
 def prepare(ctx, args):
     mngr = cm.Manager(cf.config_from(ctx))
 
-    def subst_pkg(x):
-        if x[0] == 'p' and x[2]['p'] == '.':
-            x[2]['p'] = os.getcwd().removeprefix(mngr.config.where)[1:]
-
-        return x
-
-    for d in group_realms(subst_pkg(x) for x in cc.lex(args)):
+    for d in group_realms(cc.lex(args)):
         yield mngr.ensure_realm(d[0][2]['r']).mut(d)
 
 
