@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://github.com/linux-pam/linux-pam/archive/refs/tags/v1.5.2.tar.gz
-md5:8ee1a30bf17b4992ae697bf6c9a4cb0c
+https://github.com/linux-pam/linux-pam/archive/refs/tags/v1.5.3.tar.gz
+sha:631f7eb4f0356ca5b6d13e96655b2f1a57ef7cd117a0a18024891c107d25a0ca
 {% endblock %}
 
 {% block bld_tool %}
@@ -27,4 +27,8 @@ lib/kernel
 {{super()}}
 cd ${out}/include
 ln -s ../include security
+{% endblock %}
+
+{% block patch %}
+echo 'int main() {}' > examples/tty_conv.c
 {% endblock %}
