@@ -29,9 +29,6 @@ def tok(p):
     if '/'in p:
         return ('p', op, p)
 
-    if p == '.':
-        return ('p', op, p)
-
     return ('r', op, p)
 
 

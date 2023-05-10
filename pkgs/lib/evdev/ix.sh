@@ -1,8 +1,8 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://www.freedesktop.org/software/libevdev/libevdev-1.13.0.tar.xz
-sha:9edf2006cc86a5055279647c38ec923d11a821ee4dc2c3033e8d20e8ee237cd9
+https://www.freedesktop.org/software/libevdev/libevdev-1.13.1.tar.xz
+sha:06a77bf2ac5c993305882bc1641017f5bec1592d6d1b64787bad492ab34f2f36
 {% endblock %}
 
 {% block meson_flags %}

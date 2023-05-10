@@ -133,9 +133,9 @@ def arch(n):
 
 
 class Config:
-    def __init__(self, binary, where, root, verbose):
+    def __init__(self, binary, overlays, root, verbose):
         self.binary = binary
-        self.where = where
+        self.overlays = overlays
         self.ix_dir = root
         self.verbose = verbose
         # circular ref
@@ -180,9 +180,17 @@ class Config:
             return target
 
 
+def find_pkg_dirs(binary):
+    pkgs = os.path.join(os.path.dirname(binary), 'pkgs')
+    path = os.environ.get('IX_PATH', '{builtin}')
+
+    return list(path.replace('{builtin}', pkgs).split(':'))
+
+
 def config_from(ctx):
     binary = ctx['binary']
-    where = os.path.join(os.path.dirname(binary), 'pkgs')
+    overlays = find_pkg_dirs(binary)
     root = os.environ.get('IX_ROOT', '/ix')
+    verbose = os.environ.get('IX_VERBOSE', '')
 
-    return Config(binary, where, root, os.environ.get('IX_VERBOSE', ''))
+    return Config(binary, overlays, root, verbose)
