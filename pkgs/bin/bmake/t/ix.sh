@@ -1,8 +1,8 @@
 {% extends '//die/c/autohell.sh' %}
 
 {% block fetch %}
-https://www.crufty.net/ftp/pub/sjg/bmake-20230510.tar.gz
-sha:3510bb41e150591c147e56cf2f1c1e803c3a41c2973d789a61593a3d93ee2d6e
+https://www.crufty.net/ftp/pub/sjg/bmake-20230512.tar.gz
+sha:b927b50a45e4b5579c6491ab09ce3dbd8b170fb10fe6f16d484e13d15e338ffa
 {% endblock %}
 
 {% block bld_libs %}
