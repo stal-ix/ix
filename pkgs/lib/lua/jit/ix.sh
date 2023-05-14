@@ -5,6 +5,12 @@ https://luajit.org/download/LuaJIT-2.0.5.tar.gz
 md5:48353202cbcacab84ee41a5a70ea0a2c
 {% endblock %}
 
+{% block lib_deps %}
+{{super()}}
+# for unwinder
+lib/c++
+{% endblock %}
+
 {% block make_flags %}
 BUILDMODE=static
 TARGET_LIBS="${PWD}/dl.o"
