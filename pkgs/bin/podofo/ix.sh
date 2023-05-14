@@ -1,6 +1,5 @@
-{% extends '//lib/podofo/t/ix.sh' %}
+{% extends '//die/hub.sh' %}
 
-{% block bld_libs %}
-{{super()}}
-lib/lua
+{% block run_deps %}
+bin/podofo/unwrap(lua_ver=puc/5/4)
 {% endblock %}

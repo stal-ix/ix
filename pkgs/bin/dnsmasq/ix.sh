@@ -1,12 +1,5 @@
-{% extends 't/ix.sh' %}
+{% extends '//die/hub.sh' %}
 
-{% block bld_libs %}
-{{super()}}
-lib/dbus
-lib/lua/puc/5/2
-{% endblock %}
-
-{% block setup %}
-{{super()}}
-export COPTS="-DHAVE_DBUS -DHAVE_LUASCRIPT ${COPTS}"
+{% block run_deps %}
+bin/dnsmasq/unwrap(lua_ver=puc/5/2)
 {% endblock %}

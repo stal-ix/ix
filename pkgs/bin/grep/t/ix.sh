@@ -1,8 +1,8 @@
 {% extends '//die/c/autohell.sh' %}
 
 {% block fetch %}
-https://ftp.gnu.org/gnu/grep/grep-3.10.tar.xz
-sha:24efa5b595fb5a7100879b51b8868a0bb87a71c183d02c4c602633b88af6855b
+https://ftp.gnu.org/gnu/grep/grep-3.11.tar.xz
+sha:1db2aedde89d0dea42b16d9528f894c8d15dae4e190b59aecc78f5a951276eab
 {% endblock %}
 
 {% block bld_libs %}

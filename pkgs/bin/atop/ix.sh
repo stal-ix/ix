@@ -1,8 +1,8 @@
 {% extends '//die/c/make.sh' %}
 
 {% block fetch %}
-https://www.atoptool.nl/download/atop-2.8.1.tar.gz
-sha:970058a19b79c3444f971f854572a0e63891dc2d5f7037ff837570854ce0da1e
+https://www.atoptool.nl/download/atop-2.9.0.tar.gz
+sha:bc355ebd7af3f9c6f01be2ff50e581622d24f5ea0d8d5f3366e2fd1311ab98f8
 {% endblock %}
 
 {% block bld_libs %}
@@ -10,6 +10,10 @@ lib/c
 lib/z
 lib/kernel
 lib/curses
+{% endblock %}
+
+{% block cpp_missing %}
+time.h
 {% endblock %}
 
 {% block make_flags %}
