@@ -253,7 +253,6 @@ bin/bash/lite/sh
 bin/bash/lite
 bin/bash
 bin/sed
-bin/neovim/luafat
 bin/neovim
 bin/light
 bin/go/4
