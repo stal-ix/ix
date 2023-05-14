@@ -10,7 +10,7 @@ lib/lua
 
 {% block use_data %}
 {% if lib %}
-{{name}}
+{{name}}(lua_ver={{lua_ver or error()}})
 {% endif %}
 {% endblock %}
 
