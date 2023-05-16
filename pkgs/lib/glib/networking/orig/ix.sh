@@ -8,6 +8,7 @@ sha:e63e08a7bcb3aa21f04117a5ee57dd5386989a82e16811cc407efaabca781124
 {% block lib_deps %}
 lib/c
 lib/glib
+lib/proxy
 lib/openssl
 {% endblock %}
 
@@ -18,9 +19,7 @@ bld/glib
 {% block meson_flags %}
 gnutls=disabled
 openssl=enabled
-libproxy=disabled
 gnome_proxy=disabled
-#environment_proxy=enabled
 {% endblock %}
 
 {% block install %}
