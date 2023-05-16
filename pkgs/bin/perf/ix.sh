@@ -24,6 +24,7 @@ lib/opcodes
 lib/openssl
 lib/elfutils
 lib/readline
+lib/trace/event
 {% endblock %}
 
 {% block host_libs %}
@@ -41,6 +42,7 @@ bld/bash
 bld/perl
 bld/bison
 bld/python
+bld/pkg/config
 bin/ld(for_target={{target.gnu.three}})
 {% endblock %}
 
