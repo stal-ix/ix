@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://github.com/util-linux/util-linux/archive/refs/tags/v2.38.1.tar.gz
-sha:75add98ee04e8ca742e860dd06936379737465149904152175a64708de399125
+https://github.com/util-linux/util-linux/archive/refs/tags/v2.39.tar.gz
+sha:186cb427cd6b4654f381357b60af7ffb0ae9bb50d7af7d87e0723858f7318b80
 {% endblock %}
 
 {% block lib_deps %}
