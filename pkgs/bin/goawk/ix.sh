@@ -1,15 +1,15 @@
 {% extends '//die/go/pure.sh' %}
 
 {% block go_url %}
-https://github.com/benhoyt/goawk/archive/refs/tags/v1.23.0.tar.gz
+https://github.com/benhoyt/goawk/archive/refs/tags/v1.23.1.tar.gz
 {% endblock %}
 
 {% block go_sum %}
-sha:56467fe10d184ffaaf47fff7ede29c85be53af8b65c158bf5cab259a0de0a527
+sha:f6060f11d25942bd28e49e08aee09025be442788604cb645a9e161ed394b2509
 {% endblock %}
 
 {% block go_sha %}
-sha:db0691a13a0a17337627c42067ba8ce4c5d32910c97089a2510933da4605742b
+sha:c8220bd1f4663f21fdd5b1f5c101dc5308310bf06dccce7b1d75e4b718c7314b
 {% endblock %}
 
 {% block install %}
