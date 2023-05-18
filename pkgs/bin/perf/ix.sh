@@ -25,6 +25,7 @@ lib/openssl
 lib/elfutils
 lib/readline
 lib/trace/event
+lib/trace/event/plugins
 {% endblock %}
 
 {% block host_libs %}
