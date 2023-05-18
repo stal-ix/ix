@@ -1,18 +1,15 @@
 {% extends '//die/c/cmake.sh' %}
 
-{% block std_box %}
-bin/lz4
-bld/bison
-{{super()}}
+{% block git_sha %}
+74ef5fd2d9d4431f0dfe94ccbf14c0a16a9a61efee98b534a5c2f7998bad320d
 {% endblock %}
 
-{% block bld_data %}
-aux/git(parent_id=mariadb,sha=74ef5fd2d9d4431f0dfe94ccbf14c0a16a9a61efee98b534a5c2f7998bad320d,branch=mariadb-10.11.2,repo=https://github.com/MariaDB/server.git)
+{% block git_repo %}
+https://github.com/MariaDB/server.git
 {% endblock %}
 
-{% block step_unpack %}
-mkdir src; cd src
-lz4 -d ${src}/*lz4 - | bsdtar -x -f - --no-same-permissions --no-same-owner --strip-components 1
+{% block git_branch %}
+mariadb-10.11.2
 {% endblock %}
 
 {% block bld_libs %}
@@ -31,6 +28,10 @@ lib/gnutls
 lib/kernel
 lib/snappy
 lib/pcre/2/posix
+{% endblock %}
+
+{% block bld_tool %}
+bld/bison
 {% endblock %}
 
 {% block cmake_flags %}

@@ -1,4 +1,4 @@
-{% extends '//die/base.sh' %}
+{% extends '//die/fetch.sh' %}
 
 {% set build_flags %}
 {% block build_flags %}
