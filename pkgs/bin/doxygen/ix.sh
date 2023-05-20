@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/doxygen/doxygen/archive/refs/tags/Release_1_9_6.tar.gz
-sha:2a3ee47f7276b759f74bac7614c05a1296a5b028d3f6a79a88e4c213db78e7dc
+https://github.com/doxygen/doxygen/archive/refs/tags/Release_1_9_7.tar.gz
+sha:691777992a7240ed1f822a5c2ff2c4273b57c1cf9fc143553d87f91a0c5970ee
 {% endblock %}
 
 {% block bld_libs %}
