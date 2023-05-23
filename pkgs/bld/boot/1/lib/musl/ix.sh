@@ -125,6 +125,8 @@ EOF
 ${CC} -static -nostdlib ${LDFLAGS} -L${PWD} tool.o -lmusl -o tool
 
 ./tool << EOF > ${out}/env
+# or sometimes gcc assume glibc, and insert unexpected fs:28 calls
+export CFLAGS="-fno-stack-protector \${CFLAGS}"
 export CPPFLAGS="${MFLAGS} \${CPPFLAGS}"
 export LDFLAGS="-static -nostdlib -L${PWD} -lmusl \${LDFLAGS}"
 EOF
