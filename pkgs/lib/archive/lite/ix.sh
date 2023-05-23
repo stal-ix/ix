@@ -6,3 +6,12 @@ lib/z
 lib/xz
 lib/bzip/2
 {% endblock %}
+
+{% block cmake_flags %}
+{{super()}}
+ENABLE_LZ4=OFF
+ENABLE_EXPAT=OFF
+ENABLE_ICONV=OFF
+ENABLE_LIBB2=OFF
+ENABLE_PCREPOSIX=OFF
+{% endblock %}
