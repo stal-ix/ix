@@ -1,4 +1,4 @@
-{% extends '//die/c/configure.sh' %}
+{% extends '//die/c/ninja.sh' %}
 
 {% block fetch %}
 https://download.qemu.org/qemu-8.0.0.tar.xz
@@ -35,8 +35,11 @@ lib/sdl/2/image
 lib/shim/fake(lib_name=stdc++)
 {% endblock %}
 
+{% block ninja_build_dir %}${PWD}/build{% endblock %}
+
 {% block bld_tool %}
 bld/perl
+bld/make
 bin/bzip2
 bld/ninja
 bld/python
@@ -49,12 +52,13 @@ bld/pkg/config
 wrap_cc
 {% endblock %}
 
-{% block configure_all_flags %}
---prefix=${out}
---libexecdir=${out}/bin/{{uniq_id}}
---disable-plugins
---audio-drv-list=sdl
---with-coroutine=ucontext
+{% block configure %}
+sh ./configure \
+--prefix=${out} \
+--libexecdir=${out}/bin/{{uniq_id}} \
+--disable-plugins \
+--audio-drv-list=sdl \
+--with-coroutine=ucontext \
 --target-list={{for_target or target.arch + '-softmmu'}}
 {% endblock %}
 
