@@ -10,6 +10,9 @@ sed -e 's|.*PROPERTIES OUTPUT_NAME archive.*||' -i libarchive/CMakeLists.txt
 {% endblock %}
 
 {% block cmake_flags %}
+ENABLE_OPENSSL=OFF
+ENABLE_LIBGCC=OFF
+ENABLE_LIBXML2=OFF
 ENABLE_TEST=OFF
 {% endblock %}
 

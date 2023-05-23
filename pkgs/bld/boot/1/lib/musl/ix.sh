@@ -53,7 +53,7 @@ export MFLAGS="${MFLAGS} -isystem ${PWD}/src/include"
 export MFLAGS="${MFLAGS} -isystem ${PWD}/src/internal"
 export MFLAGS="${MFLAGS} -isystem ${PWD}/include"
 
-export CFLAGS="-w ${MFLAGS} -D__STDC_HOSTED__ -D_XOPEN_SOURCE=700 -U_GNU_SOURCE ${CPPFLAGS} -ffreestanding -std=c99 ${CFLAGS}"
+export CFLAGS="-w ${MFLAGS} -D__STDC_HOSTED__ -D_XOPEN_SOURCE=700 -U_GNU_SOURCE ${CPPFLAGS} -ffreestanding -std=c99 ${CFLAGS} -O0 -fno-builtin -fno-stack-protector"
 
 (
 objs=""
@@ -125,6 +125,8 @@ EOF
 ${CC} -static -nostdlib ${LDFLAGS} -L${PWD} tool.o -lmusl -o tool
 
 ./tool << EOF > ${out}/env
+# or sometimes gcc assume glibc, and insert unexpected fs:28 calls
+export CFLAGS="-fno-stack-protector \${CFLAGS}"
 export CPPFLAGS="${MFLAGS} \${CPPFLAGS}"
 export LDFLAGS="-static -nostdlib -L${PWD} -lmusl \${LDFLAGS}"
 EOF
