@@ -22,6 +22,9 @@ PCRE2_SUPPORT_UNICODE=ON
 
 {% block install %}
 {{super()}}
+for x in ${out}/lib/pkgconfig/*.pc; do
+    sed -e 's|//.*/lib|/lib|' -i ${x}
+done
 cd ${out}
 mkdir lib/cmake
 mv cmake lib/cmake/pcre2

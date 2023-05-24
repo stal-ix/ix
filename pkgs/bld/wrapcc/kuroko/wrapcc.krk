@@ -20,6 +20,12 @@ def flt_args():
         if '-D-pthread' in x:
             continue
 
+        if x.startswith('/usr/lib') and '.so' in x:
+            continue
+
+        if x.startswith('/lib') and '.so' in x:
+            continue
+
         yield x
 
 def replace(lst, x, y):
