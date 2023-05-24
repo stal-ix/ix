@@ -34,3 +34,10 @@ cat <<- EOF > glslc/src/build-version.inc
 "2022.1\\n"
 EOF
 {% endblock %}
+
+{% block install %}
+{{super()}}
+for x in ${out}/lib/pkgconfig/*.pc; do
+    sed -e 's|//.*/lib|/lib|' -i ${x}
+done
+{% endblock %}
