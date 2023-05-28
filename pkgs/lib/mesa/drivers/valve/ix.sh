@@ -23,7 +23,7 @@ vkGetBufferDeviceAddress
 {% endblock %}
 
 {% block mesa_drivers %}
-dri-drivers=
+#dri-drivers=
 vulkan-drivers={{vulkan}}
 gallium-drivers={{','.join((opengl or '').split('|'))}}
 {% endblock %}
