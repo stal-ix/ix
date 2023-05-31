@@ -3,7 +3,7 @@
 {% block meson_flags %}
 {{super()}}
 {% block mesa_drivers %}
-#dri-drivers=
+dri-drivers=
 vulkan-drivers=
 gallium-drivers=
 {% endblock %}
