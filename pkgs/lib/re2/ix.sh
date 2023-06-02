@@ -1,13 +1,14 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/google/re2/archive/refs/tags/2023-03-01.tar.gz
-sha:7a9a4824958586980926a300b4717202485c4b4115ac031822e29aa4ef207e48
+https://github.com/google/re2/archive/refs/tags/2023-06-02.tar.gz
+sha:4ccdd5aafaa1bcc24181e6dd3581c3eee0354734bb9f3cb4306273ffa434b94f
 {% endblock %}
 
 {% block lib_deps %}
 lib/c
 lib/c++
+lib/abseil/cpp
 {% endblock %}
 
 {% block cmake_flags %}
