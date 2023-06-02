@@ -1,2 +1,2 @@
-https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.3.3.tar.xz
-sha:8975216a6cee827390586758ed69d19743367098d1fc5dd5694987bb529e44e5
+https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.3.5.tar.xz
+sha:f5cd478c3d8b908ab606afd1e95a4f8f77e7186b4a82829251d6e6aaafff825e

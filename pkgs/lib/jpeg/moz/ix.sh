@@ -1,8 +1,8 @@
 {% extends '//lib/jpeg/turbo/ix.sh' %}
 
 {% block fetch %}
-https://github.com/mozilla/mozjpeg/archive/refs/tags/v4.1.1.tar.gz
-sha:66b1b8d6b55d263f35f27f55acaaa3234df2a401232de99b6d099e2bb0a9d196
+https://github.com/mozilla/mozjpeg/archive/refs/tags/v4.1.3.tar.gz
+sha:f6ce89f616b30c498d1fb3b0f0940914557d8393a79c9e7aafff72032446bca0
 {% endblock %}
 
 {% block lib_deps %}
