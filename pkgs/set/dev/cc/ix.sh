@@ -1,7 +1,7 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
-bld/xz
-bld/tar
-bld/extract/scripts
+bld/compiler
+bin/clang/env
+bin/bash/lite/sh
 {% endblock %}
