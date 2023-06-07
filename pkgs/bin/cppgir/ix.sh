@@ -21,18 +21,12 @@ lib/c
 lib/c++
 lib/fmt
 lib/boost
+lib/shim/fs
 lib/shim/fake(lib_name=stdc++fs)
 {% endblock %}
 
 {% block patch %}
 cat << EOF >> tools/common.hpp
 #include <map>
-#include <filesystem>
 EOF
-
-find . -name '*.cpp' | while read l; do
-    sed -e 's|experimental/filesystem|filesystem|' \
-        -e 's|std::experimental::filesystem|std::__fs::filesystem|' \
-        -i ${l}
-done
 {% endblock %}
