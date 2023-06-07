@@ -1,6 +1,7 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
+bin/cppgir
 bin/rpcgen
 bin/nfs/utils
 bin/redis/lite
