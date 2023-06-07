@@ -1,8 +1,8 @@
 {% extends '//die/c/qt.sh' %}
 
 {% block fetch %}
-https://github.com/qt/qtimageformats/archive/refs/tags/v6.5.0.tar.gz
-sha:c5df332ed3460deec6ad2380feba332f557aa860b829a8130941ffcf2bf3944e
+https://github.com/qt/qtimageformats/archive/refs/tags/v6.5.1.tar.gz
+sha:a7ca1fcc7e9c0ae42b7881680214674abb7c80bf66d318e2f6302d641854240c
 {% endblock %}
 
 {% block lib_deps %}

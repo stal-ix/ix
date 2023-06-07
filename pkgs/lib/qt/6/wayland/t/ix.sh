@@ -1,8 +1,8 @@
 {% extends '//die/c/qt.sh' %}
 
 {% block fetch %}
-https://github.com/qt/qtwayland/archive/refs/tags/v6.5.0.tar.gz
-sha:051e999d94c0a01f4f49a97cde394a3bdd326a0ed0f615dcb26c43ff69c8a68e
+https://github.com/qt/qtwayland/archive/refs/tags/v6.5.1.tar.gz
+sha:eeeb9af6056e36cdf80b945c31212de115a3134503c77a87b35930485d7c6596
 {% endblock %}
 
 {% block lib_deps %}
