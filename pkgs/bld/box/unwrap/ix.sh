@@ -8,5 +8,6 @@ bin/diffutils
 bin/findutils
 bin/gawk/lite
 bin/grep/patched
+bin/grep/scripts
 bin/coreutils/lite
 {% endblock %}
