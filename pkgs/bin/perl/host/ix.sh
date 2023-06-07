@@ -10,6 +10,7 @@ lib/c
 lib/z
 lib/gdbm
 lib/iconv
+lib/shim/fake(lib_name=nsl)
 {% endblock %}
 
 {% block bld_tool %}
