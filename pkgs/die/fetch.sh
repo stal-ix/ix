@@ -12,6 +12,11 @@
 {% endblock %}
 {% endset %}
 
+{% set git_commit %}
+{% block git_commit %}
+{% endblock %}
+{% endset %}
+
 {% block bld_deps %}
 {% if git_sha %}
 bin/lz4
@@ -21,7 +26,7 @@ bin/lz4
 
 {% block bld_data %}
 {% if git_sha %}
-aux/git(parent_id={{uniq_id}},sha={{git_sha.strip()}},branch={{git_branch.strip()}},repo={{git_repo.strip()}})
+aux/git(parent_id={{uniq_id}},sha={{git_sha.strip()}},branch={{git_branch.strip()}},repo={{git_repo.strip()}},commit={{git_commit.strip()}})
 {% endif %}
 {{super()}}
 {% endblock %}

@@ -16,6 +16,11 @@ bin/lz4
 mkdir git
 cd git
 git clone --recurse-submodules --shallow-submodules --depth 1 --branch {{branch}} {{repo}}
+{% if commit %}
+cd *
+git checkout {{commit}}
+cd ..
+{% endif %}
 find . -type d -name '.git' | while read l; do
     rm -rf "${l}"
 done
