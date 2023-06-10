@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/OpenTTD/OpenTTD/archive/refs/tags/13.1.tar.gz
-sha:5740a4e7a76b841e35288c5fd2bb8b2659f5d9c5339223a2d857ee0e8fdc052c
+https://github.com/OpenTTD/OpenTTD/archive/refs/tags/13.2.tar.gz
+sha:ecd28334b25f463968817ab32d2f7146818a7468d0b6cbcd798fd63495df54d3
 {% endblock %}
 
 {% block bld_libs %}
