@@ -14,4 +14,11 @@ bin/grpc/codegen
 {% block cmake_flags %}
 {{super()}}
 gRPC_BUILD_CODEGEN=OFF
+_gRPC_CPP_PLUGIN=grpc_cpp_plugin
+_gRPC_PROTOBUF_PROTOC_EXECUTABLE=protoc
+{% endblock %}
+
+{% block patch %}
+{{super()}}
+sed -e 's|EXPORT gRPCPluginTargets|EXPORT gRPCTargets|' -i CMakeLists.txt
 {% endblock %}
