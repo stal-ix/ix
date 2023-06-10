@@ -6,9 +6,8 @@ lib/protobuf
 {% endblock %}
 
 {% block bld_tool %}
+bin/grpc
 {{super()}}
-bin/protoc
-bin/grpc/codegen
 {% endblock %}
 
 {% block cmake_flags %}
