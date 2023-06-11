@@ -5,11 +5,11 @@ https://github.com/sgiurgiu/reddit_desktop
 {% endblock %}
 
 {% block git_branch %}
-1.0.123
+1.0.172
 {% endblock %}
 
 {% block git_sha %}
-34b5fcd7cce08087893bb377a266fea7c85663d9d4a17994c196408a7c4ed203
+518e87be45fa6992fffb98851c45c595ee408d2c2d0caf6024f628f970a88efc
 {% endblock %}
 
 {% block bld_libs %}
@@ -18,6 +18,7 @@ lib/c++
 lib/mpv
 lib/fmt
 lib/stb
+lib/glfw
 lib/sdl/2
 lib/boost
 lib/gumbo
@@ -42,14 +43,8 @@ ENABLE_TESTS=OFF
 
 {% block patch %}
 find . -type f | while read l; do
-    sed -e 's|GLEW::GLEW||' \
-        -e 's|find_p.*GLEW.*||' \
-        -e 's|find_p.*freetype.*||' \
-        -e 's|find_p.*unoff.*||' \
-        -e 's|find_p.*Stb.*||' \
-        -e 's|OpenGL::GL||' \
-        -e 's|GLEW::GLEW||' \
-        -e 's|unofficial::sqlite3::sqlite3||' \
+    sed -e 's|PkgConfig::Glew||' \
+        -e 's|.*pkg_check_modules.*glew.*||' \
         -e 's|GL/glew.h|GL/gl.h|' \
         -e 's|.*glewInit.*||' \
         -i ${l}
