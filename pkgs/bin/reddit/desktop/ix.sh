@@ -29,24 +29,11 @@ lib/sqlite/3
 lib/freetype
 lib/sdl/deps
 lib/uriparser
+lib/shim/glew
 lib/range/v3/std
 lib/shim/fake(lib_name=OpenGL)
 {% endblock %}
 
-{% block setup %}
-export CXXFLAGS="-include algorithm -include ranges ${CXXFLAGS}"
-{% endblock %}
-
 {% block cmake_flags %}
 ENABLE_TESTS=OFF
-{% endblock %}
-
-{% block patch %}
-find . -type f | while read l; do
-    sed -e 's|PkgConfig::Glew||' \
-        -e 's|.*pkg_check_modules.*glew.*||' \
-        -e 's|GL/glew.h|GL/gl.h|' \
-        -e 's|.*glewInit.*||' \
-        -i ${l}
-done
 {% endblock %}
