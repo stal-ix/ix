@@ -1,16 +1,15 @@
 {% extends '//die/c/cmake.sh' %}
 
-{% block fetch %}
-https://github.com/sgiurgiu/reddit_desktop/archive/refs/tags/1.0.123.tar.gz
-sha:f427cd8cc4b77e7c005b4e198b4842aed2b586744ac17b6813131bb484bab2dc
-https://github.com/mity/md4c/archive/refs/tags/release-0.4.8.tar.gz
-sha:4a457df853425b6bb6e3457aa1d1a13bccec587a04c38c622b1013a0da41439f
+{% block git_repo %}
+https://github.com/sgiurgiu/reddit_desktop
 {% endblock %}
 
-{% block unpack %}
-mkdir src; cd src
-extract 1 ${src}/1*
-(cd external/md4c; extract 1 ${src}/r*)
+{% block git_branch %}
+1.0.123
+{% endblock %}
+
+{% block git_sha %}
+34b5fcd7cce08087893bb377a266fea7c85663d9d4a17994c196408a7c4ed203
 {% endblock %}
 
 {% block bld_libs %}
@@ -30,6 +29,7 @@ lib/freetype
 lib/sdl/deps
 lib/uriparser
 lib/range/v3/std
+lib/shim/fake(lib_name=OpenGL)
 {% endblock %}
 
 {% block setup %}
@@ -37,7 +37,6 @@ export CXXFLAGS="-include algorithm -include ranges ${CXXFLAGS}"
 {% endblock %}
 
 {% block cmake_flags %}
-OPENGL_opengl_LIBRARY=
 ENABLE_TESTS=OFF
 {% endblock %}
 
