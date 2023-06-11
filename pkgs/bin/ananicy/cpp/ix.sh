@@ -1,8 +1,15 @@
 {% extends '//die/c/cmake.sh' %}
 
-{% block fetch %}
-https://gitlab.com/ananicy-cpp/ananicy-cpp/-/archive/v1.0.2/ananicy-cpp-v1.0.2.tar.bz2
-sha:6504a95bc6846dd93cfefc1e60526a43a4b9a3424f4fc834842ea60fc797cccf
+{% block git_repo %}
+https://gitlab.com/ananicy-cpp/ananicy-cpp
+{% endblock %}
+
+{% block git_branch %}
+v1.0.2
+{% endblock %}
+
+{% block git_sha %}
+e78820ef9b38174ef09e32121783b5a592cc69131f18596985fbcedb2c04d2f7
 {% endblock %}
 
 {% block bld_libs %}
@@ -18,11 +25,6 @@ lib/json/nlohmann/11
 {% endblock %}
 
 {% block patch %}
-cat << EOF > external/std-format/CMakeLists.txt
-add_library(stl_polyfill_format INTERFACE)
-add_library(stl_polyfill::format ALIAS stl_polyfill_format)
-EOF
-
 sed -e 's|std::formatter|fmt::formatter|' -i include/utility/argument_parser.hpp
 {% endblock %}
 

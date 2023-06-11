@@ -1,15 +1,19 @@
 {% extends '//die/c/cmake.sh' %}
 
-{% block fetch %}
-https://github.com/gnustep/libobjc2/archive/bdf03cb55da14943c8add1c45db7b5a93b656d59.tar.gz
-sha:3d438eb6a1edd319f4985c8a9eb140f7a4a69703374e3a9dddc9e928fff64638
-https://github.com/Tessil/robin-map/archive/refs/tags/v0.6.3.tar.gz
-md5:e6a362bff8372bbb4d901d2e28993a8a
+{% block git_repo %}
+https://github.com/gnustep/libobjc2
 {% endblock %}
 
-{% block unpack %}
-mkdir src; cd src; extract1 ${src}/b*
-(cd third_party/robin-map; extract1 ${src}/v*)
+{% block git_branch %}
+master
+{% endblock %}
+
+{% block git_commit %}
+71e38a048fc06fea0c2015662540d46a33b5c45d
+{% endblock %}
+
+{% block git_sha %}
+c21fb9a35f920868b52aa1f50431660bd14e49af9f238fd346691a47dab07b39
 {% endblock %}
 
 {% block cmake_flags %}

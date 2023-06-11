@@ -1,8 +1,8 @@
 {% extends '//die/c/make.sh' %}
 
 {% block fetch %}
-https://data.iana.org/time-zones/releases/tzdb-2023b.tar.lz
-sha:2694091b28981ae5af99d63d7b5f43905a698a96116db3d85131aa03be535cfb
+https://data.iana.org/time-zones/releases/tzdb-2023c.tar.lz
+sha:08fd090f1a16d522ae4e9247445056f4155002239e5be760b31ba0376d2e632c
 {% endblock %}
 
 {% block bld_libs %}

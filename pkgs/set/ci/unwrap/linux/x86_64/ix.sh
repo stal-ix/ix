@@ -461,7 +461,7 @@ bin/transmission/remote
 bin/transmission
 bin/stalld/runit
 bin/stalld
-#bin/grpc/codegen
+bin/grpc/codegen
 bin/vifm
 bin/dte
 bin/joe
@@ -592,7 +592,6 @@ bin/wxrc
 bin/clifm
 #bin/pcsx2
 #bin/reddit/desktop
-#bin/reddit/desktop/hidpi
 bin/iotop
 bin/uriparser
 bin/urldec

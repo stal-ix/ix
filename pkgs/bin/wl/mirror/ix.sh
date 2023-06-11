@@ -1,15 +1,15 @@
 {% extends '//die/c/cmake.sh' %}
 
-{% block fetch %}
-https://github.com/Ferdi265/wl-mirror/archive/refs/tags/v0.11.2.tar.gz
-sha:5734cde2425a58d7d19f91815c3f49114bd55d7334e499830719360239071c7a
-https://gitlab.freedesktop.org/wlroots/wlr-protocols/-/archive/0c7437e2b600382f0be33949c4e244b2a3702fcb/wlr-protocols-0c7437e2b600382f0be33949c4e244b2a3702fcb.tar.bz2
-sha:f71031f8a4450c4eee3577507a43db4a4714ac37bd77dd2ba2c4eca21292c2ea
+{% block git_repo %}
+https://github.com/Ferdi265/wl-mirror
 {% endblock %}
 
-{% block unpack %}
-{{super()}}
-(cd proto/wlr-protocols; extract 1 ${src}/wlr*)
+{% block git_branch %}
+v0.13.1
+{% endblock %}
+
+{% block git_sha %}
+9fd65e8d852bd927a7349dfa6e85e15fbf2b8029e4a2b3a3c50d8d58597993d9
 {% endblock %}
 
 {% block bld_libs %}
@@ -21,11 +21,4 @@ lib/drivers/3d
 
 {% block bld_tool %}
 bld/wayland
-{% endblock %}
-
-{% block cmake_flags %}
-WL_PROTOCOL_DIR=${WL_PROTOCOL_DIR}
-FORCE_SYSTEM_WL_PROTOCOLS=ON
-WLR_PROTOCOL_DIR=${PWD}/proto/wlr-protocols
-FORCE_SYSTEM_WLR_PROTOCOLS=ON
 {% endblock %}

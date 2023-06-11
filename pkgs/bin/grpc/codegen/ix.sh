@@ -13,4 +13,5 @@ lib/protoc
 {% block cmake_flags %}
 {{super()}}
 gRPC_BUILD_CODEGEN=ON
+_gRPC_PROTOBUF_PROTOC_EXECUTABLE=protoc
 {% endblock %}
