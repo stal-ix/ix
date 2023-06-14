@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://www.greenwoodsoftware.com/less/less-608.tar.gz
-sha:a69abe2e0a126777e021d3b73aa3222e1b261f10e64624d41ec079685a6ac209
+https://www.greenwoodsoftware.com/less/less-633.tar.gz
+sha:2f201d64b828b88af36dfe6cfdba3e0819ece2e446ebe6224813209aaefed04f
 {% endblock %}
 
 {% block bld_libs %}
