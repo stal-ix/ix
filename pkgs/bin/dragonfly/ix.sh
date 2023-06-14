@@ -1,22 +1,21 @@
 {% extends '//die/c/cmake.sh' %}
 
-{% block bld_data %}
-aux/git(parent_id=dragonfly,sha=2343916f23ce12630fedcb96476f8ca3efa3e2e8a44c579602d1797643606c8a,branch=v1.0.0,repo=https://github.com/dragonflydb/dragonfly.git)
+{% block git_repo %}
+https://github.com/dragonflydb/dragonfly
 {% endblock %}
 
-{% block bld_tool %}
-bin/lz4
+{% block git_sha %}
+2343916f23ce12630fedcb96476f8ca3efa3e2e8a44c579602d1797643606c8a
 {% endblock %}
 
-{% block step_unpack %}
-mkdir src; cd src
-lz4 -d ${src}/*lz4 - | bsdtar -x -f - --no-same-permissions --no-same-owner --strip-components 1
+{% block git_branch %}
+v1.0.0
 {% endblock %}
 
 {% block bld_libs %}
 lib/c
 lib/c++
-lib/glog
+#lib/glog
 lib/curl
 lib/boost
 lib/xml/2
