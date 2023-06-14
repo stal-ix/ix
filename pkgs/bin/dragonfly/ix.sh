@@ -20,8 +20,8 @@ lib/curl
 lib/boost
 lib/xml/2
 lib/uring
-lib/googletest
 lib/abseil/cpp
+lib/google/test
 {% endblock %}
 
 {% block patch %}

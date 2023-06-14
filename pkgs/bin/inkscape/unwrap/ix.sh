@@ -30,8 +30,8 @@ lib/readline
 lib/harfbuzz
 lib/freetype
 lib/dbus/glib
-lib/googletest
 lib/fontconfig
+lib/google/test
 lib/image/magick
 lib/gdk/pixbuf/svg
 lib/double/conversion

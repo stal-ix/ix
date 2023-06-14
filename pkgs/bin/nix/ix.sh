@@ -21,8 +21,8 @@ lib/openssl
 lib/archive
 lib/editline
 lib/sqlite/3
-lib/googletest
 lib/rapidcheck
+lib/google/test
 lib/boehmgc/c++
 lib/bsd/overlay
 lib/json/nlohmann/11

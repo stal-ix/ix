@@ -10,7 +10,7 @@ lib/jpeg
 lib/giflib
 lib/gflags
 lib/openexr
-lib/googletest
+lib/google/test
 {{super()}}
 {% endblock %}
 
