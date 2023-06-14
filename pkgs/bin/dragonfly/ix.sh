@@ -15,12 +15,12 @@ v1.0.0
 {% block bld_libs %}
 lib/c
 lib/c++
-#lib/glog
 lib/curl
 lib/boost
 lib/xml/2
 lib/uring
 lib/abseil/cpp
+lib/google/log
 lib/google/test
 {% endblock %}
 
