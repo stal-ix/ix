@@ -13,3 +13,9 @@ bld/gettext
 {% block env %}
 export XKB_CONFIG="${out}/share/X11/xkb"
 {% endblock %}
+
+{% block install %}
+{{super()}}
+cd ${out}/share/X11/xkb/symbols
+cp ara ar
+{% endblock %}
