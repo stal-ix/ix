@@ -10,11 +10,13 @@ lib/jpeg
 lib/giflib
 lib/gflags
 lib/openexr
-lib/googletest
 {{super()}}
 {% endblock %}
 
 {% block cmake_flags %}
+JPEGXL_ENABLE_MANPAGES=OFF
+JPEGXL_ENABLE_JNI=OFF
+JPEGXL_ENABLE_DOXYGEN=OFF
 JPEGXL_ENABLE_TOOLS=ON
 JPEGXL_ENABLE_VIEWERS=ON
 JPEGXL_FORCE_SYSTEM_GTEST=ON

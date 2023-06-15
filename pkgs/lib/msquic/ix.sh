@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/microsoft/msquic/archive/refs/tags/v2.1.8.tar.gz
-sha:8882e0b66c16c34456c2763bb27b1b730db8514a6e564a336dfca70b21a6cb95
+https://github.com/microsoft/msquic/archive/refs/tags/v2.2.2.tar.gz
+sha:49974c5405b45adf7a1a3030d38e4820bca94c3ee27c97e29b41dc49a5b720d5
 {% endblock %}
 
 {% block lib_deps %}
@@ -21,6 +21,8 @@ shut_up
 
 {% block cmake_flags %}
 QUIC_EMBED_GIT_HASH=OFF
+QUIC_USE_SYSTEM_LIBCRYPTO=ON
+QUIC_SKIP_CI_CHECKS=ON
 {% endblock %}
 
 {% block patch %}

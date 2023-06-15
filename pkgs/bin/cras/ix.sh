@@ -28,7 +28,7 @@ lib/sndfile
 lib/shim/gnu
 lib/ini/parser
 lib/ladspa/sdk
-lib/googletest
+lib/google/test
 lib/bsd/overlay
 lib/xiph/speex/dsp
 {% endblock %}

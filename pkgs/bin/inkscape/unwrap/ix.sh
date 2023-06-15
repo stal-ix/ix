@@ -30,7 +30,6 @@ lib/readline
 lib/harfbuzz
 lib/freetype
 lib/dbus/glib
-lib/googletest
 lib/fontconfig
 lib/image/magick
 lib/gdk/pixbuf/svg

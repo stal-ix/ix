@@ -26,3 +26,7 @@ sed -e 's|Libs.private.*||' \
     -e 's|Requires.private.*||' \
     -i ${out}/lib/pkgconfig/libpcap.pc
 {% endblock %}
+
+{% block env %}
+export COFLAGS="--with-libpcap=${out} \${COFLAGS}"
+{% endblock %}
