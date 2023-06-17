@@ -26,3 +26,9 @@ cat << EOF > data/install-git-hook.sh
 EOF
 chmod +x data/install-git-hook.sh
 {% endblock %}
+
+{% block install %}
+{{super()}}
+mv ${out}/lib/libproxy/*.a ${out}/lib/
+rm -r ${out}/lib/libproxy
+{% endblock %}
