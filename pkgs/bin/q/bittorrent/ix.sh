@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://sourceforge.net/projects/qbittorrent/files/qbittorrent/qbittorrent-4.5.2/qbittorrent-4.5.2.tar.xz
-sha:109ecff22cb80f1e3ee5b7d3d2d34537839c15f75030632ef131d92b047f4e05
+https://github.com/qbittorrent/qBittorrent/archive/refs/tags/release-4.5.4.tar.gz
+sha:ded3a1ffba1e97ecde3862714bea9e9a1cc7275c29545d81976174ac5760bab5
 {% endblock %}
 
 {% block bld_libs %}
