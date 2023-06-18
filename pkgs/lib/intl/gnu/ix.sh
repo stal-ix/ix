@@ -1,8 +1,7 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://ftp.gnu.org/pub/gnu/gettext/gettext-0.21.tar.gz
-sha:c77d0da3102aec9c07f43671e60611ebff89a996ef159497ce8e59d075786b12
+{% include '//bin/gettext/unwrap/ver.sh' %}
 {% endblock %}
 
 {% block lib_deps %}
@@ -30,7 +29,7 @@ locale_charset
 --disable-libasprintf
 {% endblock %}
 
-{% block env_lib %}
+{% block env %}
 export COFLAGS="--with-libintl-prefix=${out} \${COFLAGS}"
 {% endblock %}
 
