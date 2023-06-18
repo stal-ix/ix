@@ -8,3 +8,7 @@ sha:d328fc1e19c54cfdb4248b861de54b62977b9b85c0a40eaaeb9cd9b628c0c788
 {% block bld_libs %}
 lib/c
 {% endblock %}
+
+{% block build_flags %}
+shut_up
+{% endblock %}
