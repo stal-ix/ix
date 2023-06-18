@@ -1,8 +1,8 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://git.sr.ht/~emersion/grim/archive/v1.4.0.tar.gz
-sha:66729ae654546404f50ed163055310dd23ed52cc5a881d39752c0cd076e3d7aa
+https://git.sr.ht/~emersion/grim/archive/v1.4.1.tar.gz
+sha:5ed8e70fcd83a7e203e92d34dbb82a1342d3f13ad98a6b0310cc97e1a9342ded
 {% endblock %}
 
 {% block bld_libs %}

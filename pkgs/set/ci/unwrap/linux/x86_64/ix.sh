@@ -1,6 +1,9 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
+bin/wamrc
+bin/iwasm
+bin/iwasm/jit
 bin/tcpreplay
 bin/cppgir
 bin/rpcgen
