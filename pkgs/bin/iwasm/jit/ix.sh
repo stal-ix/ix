@@ -7,5 +7,6 @@ lib/llvm/15
 
 {% block cmake_flags %}
 {{super()}}
-WAMR_BUILD_JIT=ON
+WAMR_BUILD_JIT=1
+LLVM_DIR=/xxx
 {% endblock %}
