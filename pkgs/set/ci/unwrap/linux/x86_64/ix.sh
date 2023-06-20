@@ -1,6 +1,8 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
+bin/binaryen
+bin/wabt
 bin/wamrc
 bin/iwasm
 bin/iwasm/jit
