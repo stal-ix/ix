@@ -74,6 +74,8 @@ class RenderContext:
         hp = pkg.host
         tp = pkg.flags['target']
 
+        print(tp)
+
         args = cu.dict_dict_update({
             'ix': self,
             'ix_extract': ' '.join(pkg.config.ops.extract()),

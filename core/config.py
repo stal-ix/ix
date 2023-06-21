@@ -43,14 +43,21 @@ def enrich(d):
         d['arch'] = d['gnu_arch']
 
     if 'bits' not in d:
-        if '64' in d.get('arch', '') + d.get('gnu_arch', ''):
+        kk = d.get('arch', '') + d.get('gnu_arch', '')
+
+        if '64' in kk:
             d['bits'] = 64
+
+        if '32' in kk:
+            d['bits'] = 32
 
     if 'llmv_target' not in d:
         d['llvm_target'] = {
             'aarch64': 'AArch64',
             'x86_64': 'X86',
             'riscv64': 'TODO',
+            'wasm32': 'TODO',
+            'wasm64': 'TODO',
         }[d['gnu_arch']]
 
     if 'linux_arch' not in d:
@@ -82,6 +89,15 @@ def get_raw_arch(n):
     a = get_raw_arch
     du = multi_update
 
+    if n == 'wasi':
+        return {
+            'os': 'wasi',
+            'kernel': 'wasi',
+            'vendor': 'unknown',
+            'hw_vendor': 'unknown',
+            'obj_fmt': 'wasm',
+        }
+
     if n == 'linux':
         return {
             'os': 'linux',
@@ -100,6 +116,12 @@ def get_raw_arch(n):
 
     if n == 'x86_64':
         return {'gnu_arch': 'x86_64', 'family': 'x86'}
+
+    if n == 'wasm32':
+        return {'gnu_arch': 'wasm32', 'family': 'wasm'}
+
+    if n == 'wasm64':
+        return {'gnu_arch': 'wasm64', 'family': 'wasm'}
 
     if n == 'arm64':
         return du(a('aarch64'), {'arch': 'arm64'})
@@ -124,6 +146,12 @@ def get_raw_arch(n):
 
     if n == 'linux-riscv64':
         return du(a('linux'), a('riscv64'), {'hw_vendor': 'unknown'})
+
+    if n == 'wasi32':
+        return du(a('wasi'), a('wasm32'))
+
+    if n == 'wasi64':
+        return du(a('wasi'), a('wasm64'))
 
     raise Exception(f'unknown arch {n}')
 
@@ -175,9 +203,10 @@ class Config:
     def retarget(self, target):
         try:
             target[0]
-            return arch(target)
         except KeyError:
             return target
+
+        return arch(target)
 
 
 def find_pkg_dirs(binary):
