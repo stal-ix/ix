@@ -1,8 +1,8 @@
 {% extends '//die/c/configure.sh' %}
 
 {% block fetch %}
-https://nodejs.org/dist/v18.13.0/node-v18.13.0.tar.gz
-sha:61ae68446438c2479e466d551b6e8c898097d56722957b1a8466ec8476a590d2
+https://nodejs.org/dist/v18.16.1/node-v18.16.1.tar.gz
+sha:518f4c8dc23a26d8df77288d94e254b6015d792026ff9ba0c2316af255875fa5
 {% endblock %}
 
 {% block bld_libs %}
