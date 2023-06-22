@@ -1,8 +1,6 @@
 {% extends '//die/c/make.sh' %}
 
 {% block fetch %}
-#https://github.com/WebAssembly/wasi-libc/archive/refs/tags/wasi-sdk-20.tar.gz
-#sha:0a1c09c8c1da62a1ba214254ff4c9db6b60979c00f648a5eae33831d6ee2840e
 https://github.com/WebAssembly/wasi-libc/archive/5862047a555523a7647606d13dbfc25282453ed5.zip
 sha:fbf9a5df348feddafc72933a1442f9348fd8cdd60042279c74db244d10672fea
 {% endblock %}
@@ -13,6 +11,7 @@ AR=llvm-ar
 NM=llvm-nm
 EXTRA_CFLAGS="${EF}"
 INSTALL_DIR=${out}
+THREAD_MODEL=posix
 {% endblock %}
 
 {% block setup %}
@@ -35,4 +34,12 @@ cd ${out}
 mv lib/wasm* nlib
 rm -rf lib
 mv nlib lib
+cd lib
+llvm-ar q libcrt.a *.o
+rm *.o
+{% endblock %}
+
+{% block env %}
+export CPPFLAGS="-isystem ${out}/include \${CPPFLAGS}"
+export LDFLAGS="-static \${LDFLAGS}"
 {% endblock %}

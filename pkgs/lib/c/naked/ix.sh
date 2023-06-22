@@ -7,4 +7,7 @@ lib/{{libc or 'musl/noalloc'}}
 {% if darwin %}
 lib/darwin/c
 {% endif %}
+{% if wasi %}
+lib/wasi/c
+{% endif %}
 {% endblock %}
