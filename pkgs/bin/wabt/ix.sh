@@ -14,6 +14,7 @@ https://github.com/WebAssembly/wabt
 
 {% block bld_libs %}
 lib/c
+lib/uv
 lib/c++
 lib/openssl
 {% endblock %}
@@ -25,4 +26,10 @@ bld/python
 {% block cmake_flags %}
 BUILD_TESTS=OFF
 USE_SYSTEM_GTEST=ON
+WITH_EXCEPTIONS=ON
+WITH_WASI=ON
+UVWASI_BUILD_TESTS=OFF
+libuv_POPULATED=ON
+FETCHCONTENT_FULLY_DISCONNECTED=ON
+FETCHCONTENT_TRY_FIND_PACKAGE_MODE=ALWAYS
 {% endblock %}
