@@ -1,6 +1,7 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
+bin/wasm/edge
 bin/wasm/3
 bin/fizzy
 bin/wabt/wasi
