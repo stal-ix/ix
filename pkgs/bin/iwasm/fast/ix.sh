@@ -3,13 +3,10 @@
 {% block bld_libs %}
 {{super()}}
 lib/asmjit
-lib/llvm/15
 {% endblock %}
 
 {% block cmake_flags %}
 {{super()}}
-LLVM_DIR=/xxx
-WAMR_BUILD_JIT=1
 WAMR_BUILD_FAST_JIT=1
 FETCHCONTENT_FULLY_DISCONNECTED=ON
 FETCHCONTENT_TRY_FIND_PACKAGE_MODE=ALWAYS

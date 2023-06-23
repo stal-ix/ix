@@ -6,7 +6,8 @@ bin/binaryen
 bin/wabt
 bin/wamrc
 bin/iwasm
-bin/iwasm/jit
+bin/iwasm/fast
+bin/iwasm/fast/er
 bin/tcpreplay
 bin/cppgir
 bin/rpcgen
