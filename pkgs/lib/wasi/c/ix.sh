@@ -1,8 +1,19 @@
 {% extends '//die/c/make.sh' %}
 
-{% block fetch %}
-https://github.com/WebAssembly/wasi-libc/archive/5862047a555523a7647606d13dbfc25282453ed5.zip
-sha:fbf9a5df348feddafc72933a1442f9348fd8cdd60042279c74db244d10672fea
+{% block git_repo %}
+https://github.com/WebAssembly/wasi-libc
+{% endblock %}
+
+{% block git_branch %}
+main
+{% endblock %}
+
+{% block git_commit %}
+7018e24d8fe248596819d2e884761676f3542a04
+{% endblock %}
+
+{% block git_sha %}
+64011d5d56d5ae2ced98270a1c6f56833f11de230d0f393ac73c3b2bf4d0fabb
 {% endblock %}
 
 {% block make_flags %}
