@@ -15,4 +15,15 @@ lib/llvm/15
 
 {% block cmake_flags %}
 WASMEDGE_BUILD_AOT_RUNTIME=OFF
+#WASMEDGE_BUILD_SHARED_LIB=OFF
+#WASMEDGE_BUILD_STATIC_LIB=ON
+WASMEDGE_BUILD_PLUGINS=OFF
+{% endblock %}
+
+{% block cpp_defines %}
+O_SYMLINK=0
+{% endblock %}
+
+{% block build_flags %}
+wrap_cc
 {% endblock %}
