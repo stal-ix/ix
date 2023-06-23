@@ -1,15 +1,35 @@
-{% extends '//die/c/cmake.sh' %}
-
-{% block fetch %}
-https://github.com/wasmx/fizzy/archive/refs/tags/v0.8.0.tar.gz
-sha:ccccae0043749dc0246af59ef4ef5439a49d33b5a73499a855546bb32f6c5364
-{% endblock %}
+{% extends '//lib/fizzy/ix.sh' %}
 
 {% block bld_libs %}
-lib/c
-lib/c++
+{{super()}}
+lib/fizzy
+lib/wasi/uv
+lib/shim/fake(lib_name=stdc++fs)
 {% endblock %}
 
 {% block cmake_flags %}
+{{super()}}
 FIZZY_WASI=ON
+{% endblock %}
+
+{% block patch %}
+{{super()}}
+sed -e 's|.*ProjectUVWASI.*||' \
+    -e 's|.*uvwasi::uvwasi.*||' \
+    -i tools/wasi/CMakeLists.txt
+{% endblock %}
+
+{% block cpp_includes %}
+{{super()}}
+${PWD}/lib/fizzy
+{% endblock %}
+
+{% block build_flags %}
+{{super()}}
+shut_up
+{% endblock %}
+
+{% block install %}
+mkdir -p ${out}/bin
+cp ${tmp}/obj/bin/fizzy-wasi ${out}/bin/
 {% endblock %}
