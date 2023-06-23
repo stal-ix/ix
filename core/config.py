@@ -150,8 +150,14 @@ def get_raw_arch(n):
     if n == 'wasi32':
         return du(a('wasi'), a('wasm32'))
 
+    if n == 'wasi-wasm32':
+        return a('wasi32')
+
     if n == 'wasi64':
         return du(a('wasi'), a('wasm64'))
+
+    if n == 'wasi-wasm64':
+        return a('wasi64')
 
     raise Exception(f'unknown arch {n}')
 

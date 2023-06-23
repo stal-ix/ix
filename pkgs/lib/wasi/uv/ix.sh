@@ -13,4 +13,14 @@ lib/uv
 {% block cmake_flags %}
 WITH_SYSTEM_LIBUV=ON
 UVWASI_BUILD_TESTS=OFF
+CMAKE_INSTALL_INCLUDEDIR=include
+CMAKE_INSTALL_BINDIR=bin
+{% endblock %}
+
+{% block patch %}
+# from https://aur.archlinux.org/cgit/aur.git/tree/cmake_install.patch?h=mingw-w64-uvwasi
+sed -e 's|.*set.*CMAKE_RUNTIME_OUTPUT_DIRECTORY.*||' -i CMakeLists.txt
+base64 -d << EOF >> CMakeLists.txt
+{% include 'cmake/base64' %}
+EOF
 {% endblock %}
