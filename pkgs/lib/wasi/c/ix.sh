@@ -51,6 +51,6 @@ rm *.o
 {% endblock %}
 
 {% block env %}
-export CPPFLAGS="-isystem ${out}/include \${CPPFLAGS}"
+export CPPFLAGS="-isystem ${out}/include -D_WASI_EMULATED_SIGNAL -D_WASI_EMULATED_PROCESS_CLOCKS -D_WASI_EMULATED_MMAN \${CPPFLAGS}"
 export LDFLAGS="-static \${LDFLAGS}"
 {% endblock %}
