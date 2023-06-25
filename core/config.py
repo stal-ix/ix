@@ -3,6 +3,7 @@ import platform
 
 import core.ops as co
 import core.utils as cu
+import core.error as ce
 
 
 def multi_update(f, *args):
@@ -159,7 +160,7 @@ def get_raw_arch(n):
     if n == 'wasi-wasm64':
         return a('wasi64')
 
-    raise Exception(f'unknown arch {n}')
+    raise ce.Error(f'unknown target {n}')
 
 
 def arch(n):
