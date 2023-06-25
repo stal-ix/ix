@@ -13,3 +13,8 @@ src/loadlib.c
 export LUA_INCLUDE_DIR="${out}/include"
 export CMFLAGS="-DWITH_LUA_ENGINE=Lua \${CMFLAGS}"
 {% endblock %}
+
+{% block patch %}
+{{super()}}
+sed -e 's|.*define LUA_USE_READLINE.*||' -i src/luaconf.h
+{% endblock %}

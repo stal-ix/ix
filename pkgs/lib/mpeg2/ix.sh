@@ -1,4 +1,4 @@
-{% extends '//die/c/autohell.sh' %}
+{% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
 https://libmpeg2.sourceforge.io/files/libmpeg2-0.5.1.tar.gz
