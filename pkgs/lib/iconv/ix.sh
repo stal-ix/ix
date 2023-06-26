@@ -12,7 +12,7 @@ rm ${out}/lib/libcharset.a
 {% block patch %}
 {{super()}}
 # WASI fix
-sed -e 's|cd src &&.*||' -i Makefile.in
+sed -e 's|.*cd src.*||' -i Makefile.in
 {% endblock %}
 
 {% block env %}
