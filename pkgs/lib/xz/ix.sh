@@ -8,9 +8,6 @@
 --disable-lzmadec
 --disable-lzmainfo
 --disable-lzma-links
-{% if wasi %}
---enable-threads=no
-{% endif %}
 {% endblock %}
 
 {% block env %}
