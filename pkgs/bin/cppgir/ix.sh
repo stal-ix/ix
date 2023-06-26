@@ -1,7 +1,7 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block git_sha %}
-69f1cf05e42e8565d85622c2a40569392b2e3ca5058f29200725adeec553832c
+d27a09f75997b032e5e6dcb59d2e8d50714f1db5dfb12e4d46693b3c19b84bca
 {% endblock %}
 
 {% block git_repo %}
@@ -13,7 +13,7 @@ master
 {% endblock %}
 
 {% block git_commit %}
-960fe054ffaab7cf55722fea6094c56a8ee8f18e
+70b0e3d522cec60316d116dcbd919b797e85685a
 {% endblock %}
 
 {% block bld_libs %}
