@@ -1,8 +1,7 @@
-{% extends '//die/c/autohell.sh' %}
+{% extends 't/ix.sh' %}
 
-{% block fetch %}
-https://ftp.gnu.org/pub/gnu/libiconv/libiconv-1.17.tar.gz
-sha:8f74213b56238c85a50a5329f77e06198771e70dd9a739779f4c02f65d971313
+{% block lib_deps %}
+lib/c
 {% endblock %}
 
 {% block install %}
@@ -10,10 +9,12 @@ sha:8f74213b56238c85a50a5329f77e06198771e70dd9a739779f4c02f65d971313
 rm ${out}/lib/libcharset.a
 {% endblock %}
 
-{% block env_lib %}
-export COFLAGS="--with-libiconv-prefix=${out} --with-iconv=${out} \${COFLAGS}"
+{% block patch %}
+{{super()}}
+# WASI fix
+sed -e 's|cd src &&.*||' -i Makefile.in
 {% endblock %}
 
-{% block lib_deps %}
-lib/c
+{% block env %}
+export COFLAGS="--with-libiconv-prefix=${out} --with-iconv=${out} \${COFLAGS}"
 {% endblock %}
