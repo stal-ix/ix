@@ -7,4 +7,6 @@ lib/wasi/c/unwrap
 {% block sources %}
 unistd.h
 unistd.c
+signal.h
+signal.c
 {% endblock %}
