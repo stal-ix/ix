@@ -9,4 +9,5 @@ bin/getopt
 bin/base64
 bin/brotli
 bin/giflib
+bin/minigzip
 {% endblock %}
