@@ -6,4 +6,5 @@ bin/b64
 bin/yajl
 bin/base64
 bin/brotli
+bin/giflib
 {% endblock %}
