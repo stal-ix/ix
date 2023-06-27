@@ -1,6 +1,6 @@
 {% extends '//lib/lua/modules/t.sh' %}
 
 {% block fetch %}
-http://www.inf.puc-rio.br/~roberto/lpeg/lpeg-1.0.2.tar.gz
-md5:d342571886f1abcb7afe6a83d024d583
+http://www.inf.puc-rio.br/~roberto/lpeg/lpeg-1.1.0.tar.gz
+sha:4b155d67d2246c1ffa7ad7bc466c1ea899bbc40fef0257cc9c03cecbaed4352a
 {% endblock %}
