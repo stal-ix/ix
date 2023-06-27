@@ -11,8 +11,8 @@ lib/curses
 {% endblock %}
 
 {% block bld_tool %}
-bin/mawk
 bld/perl
+bin/mawk/lite
 {% endblock %}
 
 {% block make_flags %}
