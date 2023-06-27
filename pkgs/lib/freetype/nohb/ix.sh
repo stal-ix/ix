@@ -1,8 +1,8 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://github.com/freetype/freetype/archive/refs/tags/VER-2-13-0.tar.gz
-sha:a683f1091aee95d2deaca9292d976f87415610b8ae1ea186abeebcb08e83ab12
+https://gitlab.freedesktop.org/freetype/freetype/-/archive/VER-2-13-1/freetype-VER-2-13-1.tar.bz2
+sha:f3e648ca3948824c7e89a60c8ed6945135821d43dea2ef06681675bd14203358
 {% endblock %}
 
 {% block lib_deps %}

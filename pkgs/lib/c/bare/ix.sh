@@ -6,6 +6,6 @@ lib/wasi/c
 {% else %}
 lib/c/naked
 lib/c/alloc
-lib/compiler_rt/builtins
 {% endif %}
+lib/compiler_rt/builtins
 {% endblock %}

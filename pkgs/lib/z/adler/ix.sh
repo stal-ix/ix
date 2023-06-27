@@ -9,7 +9,7 @@ lib/c
 {% endblock %}
 
 {% block configure %}
-sh configure --static --64 --prefix="${out}"
+sh configure --static {{'--64' if arch_bits == 64 else ''}} --prefix="${out}"
 {% endblock %}
 
 {% block make_flags %}

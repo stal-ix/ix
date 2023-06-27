@@ -1,5 +1,5 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
-bin/glib/codegen/old(intl_ver=no)
+bin/kernel/6/4/slot/0
 {% endblock %}

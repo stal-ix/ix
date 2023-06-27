@@ -4,10 +4,6 @@
 lib/c
 {% endblock %}
 
-{% block bld_libs %}
-lib/readline
-{% endblock %}
-
 {% block bld_tool %}
 bld/dlfcn
 {% endblock %}

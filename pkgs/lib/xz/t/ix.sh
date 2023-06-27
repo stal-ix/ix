@@ -8,3 +8,9 @@ sha:92177bef62c3824b4badc524f8abcce54a20b7dbcfb84cde0a2eb8b49159518c
 {% block lib_deps %}
 lib/c
 {% endblock %}
+
+{% block configure_flags %}
+{% if wasi %}
+--enable-threads=no
+{% endif %}
+{% endblock %}

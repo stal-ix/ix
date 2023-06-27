@@ -23,10 +23,10 @@ locale_charset
 {% endblock %}
 
 {% block configure_flags %}
---with-included-gettext
---enable-relocatable
 --disable-c++
+--enable-relocatable
 --disable-libasprintf
+--with-included-gettext
 {% endblock %}
 
 {% block env %}
@@ -34,4 +34,9 @@ export COFLAGS="--with-libintl-prefix=${out} \${COFLAGS}"
 {% endblock %}
 
 {% block touch_yl %}
+{% endblock %}
+
+{% block patch %}
+# WASI fix
+sed -e 's|SUBDIRS = .*|SUBDIRS = intl po|' -i Makefile.am
 {% endblock %}
