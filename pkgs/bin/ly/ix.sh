@@ -5,15 +5,11 @@ https://github.com/fairyglade/ly
 {% endblock %}
 
 {% block git_branch %}
-master
-{% endblock %}
-
-{% block git_commit %}
-c64f806a68af225cc95623971b5e464abb55b879
+v0.6.0
 {% endblock %}
 
 {% block git_sha %}
-a2a0d652f381bf7be556dca117b8fc2a59a938c809e6e4b1d82520478c23d118
+10c7f9ae2b4ecf98aeb9ccf7789d76f7b628faf93ad6bbd8685101e77b7cbeb3
 {% endblock %}
 
 {% block bld_libs %}
