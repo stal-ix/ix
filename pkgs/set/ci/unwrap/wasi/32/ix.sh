@@ -4,6 +4,7 @@
 bin/lz4
 bin/b64
 bin/yajl
+bin/getopt
 bin/base64
 bin/brotli
 bin/giflib
