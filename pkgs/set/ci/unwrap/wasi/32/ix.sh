@@ -6,6 +6,7 @@ bin/b64
 bin/yajl
 bin/zstd
 bin/gperf
+bin/xxhsum
 bin/getopt
 bin/base64
 bin/brotli
