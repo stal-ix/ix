@@ -4,6 +4,7 @@
 bin/lz4
 bin/b64
 bin/yajl
+bin/zstd
 bin/gperf
 bin/getopt
 bin/base64
