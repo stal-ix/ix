@@ -15,7 +15,7 @@ lib/llvm/15
 
 {% block cmake_flags %}
 WASMEDGE_BUILD_PLUGINS=OFF
-WASMEDGE_BUILD_AOT_RUNTIME=OFF
+WASMEDGE_BUILD_AOT_RUNTIME=ON
 {% endblock %}
 
 {% block cpp_defines %}
