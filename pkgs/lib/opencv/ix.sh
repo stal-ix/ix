@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/opencv/opencv/archive/refs/tags/4.7.0.tar.gz
-sha:8df0079cdbe179748a18d44731af62a245a45ebf5085223dc03133954c662973
+https://github.com/opencv/opencv/archive/refs/tags/4.8.0.tar.gz
+sha:cbf47ecc336d2bff36b0dcd7d6c179a9bb59e805136af6b9670ca944aef889bd
 {% endblock %}
 
 {% block lib_deps %}
