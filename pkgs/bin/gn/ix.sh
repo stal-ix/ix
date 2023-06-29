@@ -1,8 +1,15 @@
 {% extends '//die/c/ninja.sh' %}
 
-{% block fetch %}
-https://gn.googlesource.com/gn/+archive/18df6af86191edab1e47c84d56e608da414d446b.tar.gz
-sem:3a0bd0fc3c5ffc3db9a259d2537fa02b52b51d18cd506922dcfe387333f97ff4
+{% block git_repo %}
+https://gn.googlesource.com/gn
+{% endblock %}
+
+{% block git_commit %}
+4bd1a77e67958fb7f6739bd4542641646f264e5d
+{% endblock %}
+
+{% block git_sha %}
+da26187ee4f269a68be8b4170f087d10ea63cca4c2ad7885d484b731a47e1410
 {% endblock %}
 
 {% block bld_libs %}
@@ -13,8 +20,6 @@ lib/c++
 {% block bld_tool %}
 bld/python
 {% endblock %}
-
-{% block skip_dirs %}0{% endblock %}
 
 {% block configure %}
 python3 build/gen.py          \
