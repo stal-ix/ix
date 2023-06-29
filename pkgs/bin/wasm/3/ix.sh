@@ -4,16 +4,12 @@
 https://github.com/wasm3/wasm3
 {% endblock %}
 
-{% block git_branch %}
-main
-{% endblock %}
-
 {% block git_commit %}
 772f8f4648fcba75f77f894a6050db121e7651a2
 {% endblock %}
 
 {% block git_sha %}
-d793527bd13b0c4c631c555ff09efd540d6d7b1106024128462b02b95b7d7d8a
+e3319962d28e8f704b14c854d0743e5d6810601bccfdc00a23eccee26d5e7290
 {% endblock %}
 
 {% block bld_libs %}

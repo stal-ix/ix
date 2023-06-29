@@ -1,8 +1,15 @@
 {% extends '//die/c/meson.sh' %}
 
-{% block fetch %}
-https://github.com/davmac314/dinit/archive/66202530a8c2792b653036c5f43f6fc6063451c6.tar.gz
-sem:5f5e3bccba09481489c1ef54f1c911b3b77e988b473a8df9403ed3455645a956
+{% block git_repo %}
+https://github.com/davmac314/dinit
+{% endblock %}
+
+{% block git_commit %}
+306a2f37b9f153422ee2668b9abb1f5f8b4a961f
+{% endblock %}
+
+{% block git_sha %}
+5449069eb4b143098e7d5c1b0c90987f9cb4c88926e041ffcb2b42a217fb45a3
 {% endblock %}
 
 {% block bld_libs %}

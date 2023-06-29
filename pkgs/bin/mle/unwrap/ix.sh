@@ -1,8 +1,8 @@
 {% extends '//die/c/make.sh' %}
 
 {% block fetch %}
-https://github.com/adsr/mle/archive/6ce64b207aa7bdcdff031b78bfb1d785dd555091.tar.gz
-sem:71bace32d3ebd4e99572e0bd4e7551849d817595164cb6b4d1cf3e298abfa689
+https://github.com/adsr/mle/archive/refs/tags/v1.7.2.tar.gz
+sha:5275fcfc58d3d4890d074077d94497db488b2648287b3e48e67b00ea517b02ba
 {% endblock %}
 
 {% block bld_libs %}

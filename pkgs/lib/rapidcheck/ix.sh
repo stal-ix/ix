@@ -1,8 +1,15 @@
 {% extends '//die/c/cmake.sh' %}
 
-{% block fetch %}
-https://github.com/emil-e/rapidcheck/archive/1505cbbce733bde3b78042cf2e9309c0b7f227a2.tar.gz
-sem:f637700386b3f63de6c9b246200cf7d339a51269e541e5238532bbec01ca1a2b
+{% block git_repo %}
+https://github.com/emil-e/rapidcheck
+{% endblock %}
+
+{% block git_commit %}
+a5724ea5b0b00147109b0605c377f1e54c353ba2
+{% endblock %}
+
+{% block git_sha %}
+c946ed9e6fde25c3fc5763ad2fc4f4fd438070a32322fc1b14ab80e13c3b2697
 {% endblock %}
 
 {% block lib_deps %}

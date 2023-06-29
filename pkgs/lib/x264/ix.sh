@@ -1,8 +1,15 @@
 {% extends '//die/c/make.sh' %}
 
-{% block fetch %}
-https://code.videolan.org/videolan/x264/-/archive/f7074e12d90de71f22aebd5040b8c6d31ca8f926/x264-f7074e12d90de71f22aebd5040b8c6d31ca8f926.tar.bz2
-sem:b744975b70126ab7e1cf07b662e47eccb76aac225370dc6793a769f66eff31b8
+{% block git_repo %}
+https://code.videolan.org/videolan/x264
+{% endblock %}
+
+{% block git_commit %}
+a8b68ebfaa68621b5ac8907610d3335971839d52
+{% endblock %}
+
+{% block git_sha %}
+9a00b66bdcae1b7a7fdabc2f7c232add13aaa4ba54712d33115ad65ee4e5d800
 {% endblock %}
 
 {% block lib_deps %}

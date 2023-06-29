@@ -271,19 +271,9 @@ class Package:
             if x['p'].buildable():
                 yield x
 
-    def iter_extra_tools(self):
-        if 'sem:' in str(self.descr['bld']['fetch']):
-            yield 'bin/semver'
-
-    def iter_extra_build_depends(self):
-        # TODO(pg): refac
-        return self.visit(self.iter_extra_tools(), self.bin_flags(), lambda x: x.run_closure())
-
     def iter_all_build_depends_dup(self):
         for x in self.iter_tagged_build_depends():
             yield x['p']
-
-        yield from self.iter_extra_build_depends()
 
     @cu.cached_method
     def iter_all_build_depends(self):

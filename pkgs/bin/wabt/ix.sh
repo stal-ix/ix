@@ -9,7 +9,7 @@ https://github.com/WebAssembly/wabt
 {% endblock %}
 
 {% block git_sha %}
-92e0cf1ef9fe6a2211421e36cc6791c6060d9b89d4c343c2cb721ec50cf59107
+5cb0179ece0f99d45765df709b0d5d8bcb23f0af4af984b22044e7ea5119123f
 {% endblock %}
 
 {% block bld_libs %}

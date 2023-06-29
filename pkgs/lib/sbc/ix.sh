@@ -1,8 +1,15 @@
 {% extends '//die/c/autorehell.sh' %}
 
-{% block fetch %}
-https://kernel.googlesource.com/pub/scm/bluetooth/sbc/+archive/8dc5d5ba381512ad5b1afa45c63ec6b0a3833244.tar.gz
-sem:b873a9da3d89a35363745df3b856641059043d877151c659215ff18e5482d651
+{% block git_repo %}
+https://kernel.googlesource.com/pub/scm/bluetooth/sbc
+{% endblock %}
+
+{% block git_branch %}
+2.0
+{% endblock %}
+
+{% block git_sha %}
+1a526e2a1fb09dafc7c450f0e7616c28106dc4a522f58c3af1c6b5b06ae963e8
 {% endblock %}
 
 {% block lib_deps %}
@@ -13,5 +20,3 @@ lib/sndfile
 {% block bld_libs %}
 lib/kernel
 {% endblock %}
-
-{% block skip_dirs %}0{% endblock %}

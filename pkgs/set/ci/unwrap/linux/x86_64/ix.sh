@@ -1,6 +1,7 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
+bin/xxd
 bin/yajl
 bin/wazero
 bin/wasm/edge
@@ -655,7 +656,6 @@ bin/getent
 bin/gopass
 bin/shadowsocks/go/2
 bin/shadowsocks/libev
-bin/pprof
 bin/task
 bin/assemble
 bin/duf

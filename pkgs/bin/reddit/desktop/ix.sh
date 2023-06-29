@@ -9,7 +9,7 @@ https://github.com/sgiurgiu/reddit_desktop
 {% endblock %}
 
 {% block git_sha %}
-518e87be45fa6992fffb98851c45c595ee408d2c2d0caf6024f628f970a88efc
+c0bf131fc12df237a6570f36ca65ab01caa7d5065ae149147422d91412191d0f
 {% endblock %}
 
 {% block bld_libs %}
@@ -37,10 +37,6 @@ lib/shim/fake(lib_name=OpenGL)
 
 {% block cmake_flags %}
 ENABLE_TESTS=OFF
-{% endblock %}
-
-{% block setup %}
-export CXXFLAGS="-ftemplate-backtrace-limit=0 ${CXXFLAGS}"
 {% endblock %}
 
 {% block patch %}

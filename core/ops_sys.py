@@ -49,9 +49,6 @@ def gen_one_sum(path, cksum):
 
     f, s = split_cksum(cksum)
 
-    if f == 'sem':
-        return
-
     f = {'sha': 'sha256'}.get(f, f)
 
     prog = f'/bin/{f}sum'

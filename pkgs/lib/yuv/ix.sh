@@ -1,8 +1,15 @@
 {% extends '//die/c/cmake.sh' %}
 
-{% block fetch %}
-https://chromium.googlesource.com/libyuv/libyuv/+archive/3abd6f36b6e4f5a2e0ce236580a8bc1da3c7cf7e.tar.gz
-sem:fa5405342008d2a37a252ee5e063c9f87729d9f3b3aae42ff0e2c0cba64837a1
+{% block git_repo %}
+https://chromium.googlesource.com/libyuv/libyuv
+{% endblock %}
+
+{% block git_commit %}
+a34a0ba68781d0d1914597449d871775dad50984
+{% endblock %}
+
+{% block git_sha %}
+69a429c049368e7756fcaeff66efa1ce9c2a057a38bd737b26726dfeaa8fb656
 {% endblock %}
 
 {% block lib_deps %}

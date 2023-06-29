@@ -4,16 +4,12 @@
 https://github.com/WebAssembly/wasi-libc
 {% endblock %}
 
-{% block git_branch %}
-main
-{% endblock %}
-
 {% block git_commit %}
 bd950eb128bff337153de217b11270f948d04bb4
 {% endblock %}
 
 {% block git_sha %}
-1152cde381e626e82d1aeb6c360747752badbf405c71889564c3502cc835193a
+e2d37cc2224d295d83136860c26a06659b1cd157e046af5b2aa4d2eba27bdda5
 {% endblock %}
 
 {% block make_flags %}

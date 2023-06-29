@@ -13,18 +13,21 @@ bin/lz4
 {% endblock %}
 
 {% block build %}
-mkdir git
-cd git
-git clone --recurse-submodules --shallow-submodules --depth 1 --branch {{branch}} {{repo}}
-{% if commit %}
-cd *
-git checkout {{commit}}
-cd ..
-{% endif %}
+set -x
+mkdir src
+cd src
+git init
+git remote add origin {{repo}}
+git fetch origin --depth 1 {{commit or branch}}
+git reset --hard FETCH_HEAD
+ls -la
+git submodule update --init --recursive --depth 1
+ls -la
 find . -type d -name '.git' | while read l; do
     rm -rf "${l}"
 done
-tar --sort=name --owner=root:0 --group=root:0 --mtime='UTC 1970-01-01'  -c -f ../{{parent_id}}.tar *
+cd ..
+tar --sort=name --owner=root:0 --group=root:0 --mtime='UTC 1970-01-01'  -c -f {{parent_id}}.tar src
 {% endblock %}
 
 {% block install %}
