@@ -38,9 +38,13 @@ lib/xiph/speex/dsp
 shut_up
 {% endblock %}
 
-{% block bld_tool %}
-bin/vim
+{% block shell %}
 bin/bash/lite/sh
+{% endblock %}
+
+{% block bld_tool %}
+bin/xxd
+bld/fakegit
 bld/fake(tool_name=rustc)
 bld/fake(tool_name=cargo)
 {% endblock %}
