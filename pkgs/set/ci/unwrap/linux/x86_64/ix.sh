@@ -655,7 +655,6 @@ bin/getent
 bin/gopass
 bin/shadowsocks/go/2
 bin/shadowsocks/libev
-bin/pprof
 bin/task
 bin/assemble
 bin/duf
