@@ -1,18 +1,15 @@
 {% extends '//die/c/autorehell.sh' %}
 
-{% block fetch %}
-https://chromium.googlesource.com/chromiumos/third_party/adhd/+archive/master/cras.tar.gz
-sem:0ea570a68c28ae6ed1df377063d3c4bc2ae3356c5651fbcb42a5e5873b57b395
-https://chromium.googlesource.com/chromiumos/third_party/adhd/+/454c81a0669c2c5ffc7132d870b7421291b6630e/cras/src/server/rate_estimator.c?format=TEXT
-sha:6df4671824a77a1fec196bd0f6e353358779c1773fbff9fd3283a05c382fd04a
-https://chromium.googlesource.com/chromiumos/third_party/adhd/+/454c81a0669c2c5ffc7132d870b7421291b6630e/cras/src/server/rate_estimator.h?format=TEXT
-sha:295cd44d40e5c487f86b1935835446e562652bc8eccbade67e598135247573ed
+{% block git_repo %}
+https://chromium.googlesource.com/chromiumos/third_party/adhd
 {% endblock %}
 
-{% block unpack %}
-extract 0 ${src}/cras*
-cat ${src}/rate_estimator.h* | base64 -d > src/server/rate_estimator.h
-cat ${src}/rate_estimator.c* | base64 -d > src/server/rate_estimator.c
+{% block git_commit %}
+d4de233e76946e91fab6c879717d53da62d94f57
+{% endblock %}
+
+{% block git_sha %}
+2cdbc6e56834d2f58b27e05468fbef4439de6e9156a1aab1f0e494c45a12e9e0
 {% endblock %}
 
 {% block bld_libs %}
@@ -42,6 +39,8 @@ shut_up
 {% endblock %}
 
 {% block bld_tool %}
+bin/vim
+bin/bash/lite/sh
 bld/fake(tool_name=rustc)
 bld/fake(tool_name=cargo)
 {% endblock %}
@@ -57,6 +56,17 @@ find . -type f -name Makefile | while read l; do
 done
 {% endblock %}
 
+{% block step_unpack %}
+{{super()}}
+cd cras
+{% endblock %}
+
 {% block patch %}
+base64 -d << EOF > src/server/rate_estimator.h
+{% include 'rate_estimator.h/base64' %}
+EOF
+base64 -d << EOF > src/server/rate_estimator.c
+{% include 'rate_estimator.c/base64' %}
+EOF
 cat src/server/rate_estimator.c >> src/server/linear_resampler.c
 {% endblock %}
