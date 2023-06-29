@@ -18,8 +18,8 @@ mkdir src
 cd src
 git init
 git remote add origin {{repo}}
-git fetch origin --depth 1 {{commit}}
-git checkout {{commit}}
+git fetch origin --depth 1 {{commit or branch}}
+git reset --hard FETCH_HEAD
 ls -la
 git submodule update --init --recursive --depth 1
 ls -la
