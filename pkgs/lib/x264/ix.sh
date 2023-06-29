@@ -8,12 +8,8 @@ https://code.videolan.org/videolan/x264
 a8b68ebfaa68621b5ac8907610d3335971839d52
 {% endblock %}
 
-{% block git_branch %}
-master
-{% endblock %}
-
 {% block git_sha %}
-b51b5e49de2d9f7d199351a142e1b3a5739a4576fe50c50c2be0c24cf11d164a
+9a00b66bdcae1b7a7fdabc2f7c232add13aaa4ba54712d33115ad65ee4e5d800
 {% endblock %}
 
 {% block lib_deps %}

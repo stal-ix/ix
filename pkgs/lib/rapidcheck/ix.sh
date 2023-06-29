@@ -8,12 +8,8 @@ https://github.com/emil-e/rapidcheck
 a5724ea5b0b00147109b0605c377f1e54c353ba2
 {% endblock %}
 
-{% block git_branch %}
-master
-{% endblock %}
-
 {% block git_sha %}
-e567eba9ca32921a84c844f5132b23ac1e3b9c5cb5ba043b1c258d59e653f24b
+c946ed9e6fde25c3fc5763ad2fc4f4fd438070a32322fc1b14ab80e13c3b2697
 {% endblock %}
 
 {% block lib_deps %}
