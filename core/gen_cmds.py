@@ -154,17 +154,10 @@ def cmd_fetch(sb, url, cksum):
 def cmd_check(sb, path, cksum):
     out_dir = os.path.join(sb.config.store_dir, cs.gen_udir('chk'))
     new_path = os.path.join(out_dir, os.path.basename(path))
-
-    if cksum.startswith('sem:'):
-        extra = [sb.package.find_tool('bin/semver/unwrap').out_dir]
-        bpath = extra[0] + '/bin/semver'
-        script = [sb.cmd([bpath, path, cksum[4:], new_path])]
-    else:
-        extra = []
-        script = sb.config.ops.cksum(sb, path, new_path, cksum)
+    script = sb.config.ops.cksum(sb, path, new_path, cksum)
 
     return {
-        'in_dir': [os.path.dirname(path)] + extra,
+        'in_dir': [os.path.dirname(path)],
         'out_dir': [out_dir],
         'cmd': script,
         'path': new_path,
