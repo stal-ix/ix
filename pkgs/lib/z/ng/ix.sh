@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/zlib-ng/zlib-ng/archive/refs/tags/2.0.7.tar.gz
-sha:6c0853bb27738b811f2b4d4af095323c3d5ce36ceed6b50e5f773204fb8f7200
+https://github.com/zlib-ng/zlib-ng/archive/refs/tags/2.1.2.tar.gz
+sha:383560d6b00697c04e8878e26c0187b480971a8bce90ffd26a5a7b0f7ecf1a33
 {% endblock %}
 
 {% block lib_deps %}
@@ -12,10 +12,6 @@ lib/c
 {% block cmake_flags %}
 ZLIB_ENABLE_TESTS=OFF
 ZLIB_COMPAT=ON
-{% endblock %}
-
-{% block cmake_install_dirs %}
--DCMAKE_INSTALL_PREFIX="${out}"
 {% endblock %}
 
 {% block install %}

@@ -1,6 +1,7 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
+bin/yajl
 bin/wazero
 bin/wasm/edge
 bin/wasm/3
@@ -603,7 +604,7 @@ bin/poedit
 bin/wxrc
 bin/clifm
 #bin/pcsx2
-#bin/reddit/desktop
+bin/reddit/desktop
 bin/iotop
 bin/uriparser
 bin/urldec

@@ -30,10 +30,25 @@ lib/freetype
 lib/sdl/deps
 lib/uriparser
 lib/shim/glew
+lib/glfw/deps
 lib/range/v3/std
 lib/shim/fake(lib_name=OpenGL)
 {% endblock %}
 
 {% block cmake_flags %}
 ENABLE_TESTS=OFF
+{% endblock %}
+
+{% block setup %}
+export CXXFLAGS="-ftemplate-backtrace-limit=0 ${CXXFLAGS}"
+{% endblock %}
+
+{% block patch %}
+sed -e 's|virtual void readMessage|virtual void readMessage() {} void unused|' -i src/connections/redditwebsocketconnection.h
+{% endblock %}
+
+{% block install %}
+{{super()}}
+cd ${out}/bin
+ln -s ../share/reddit_desktop/fonts ./
 {% endblock %}

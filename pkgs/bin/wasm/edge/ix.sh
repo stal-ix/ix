@@ -10,12 +10,14 @@ lib/c
 lib/c++
 lib/boost
 lib/spdlog
-lib/llvm/15
+lib/llvm/15/full
 {% endblock %}
 
 {% block cmake_flags %}
+SUPPORT_EXCLUDE_LIBS=OFF
 WASMEDGE_BUILD_PLUGINS=OFF
-WASMEDGE_BUILD_AOT_RUNTIME=OFF
+WASMEDGE_LINK_LLVM_STATIC=ON
+WASMEDGE_BUILD_AOT_RUNTIME=ON
 {% endblock %}
 
 {% block cpp_defines %}
@@ -24,4 +26,5 @@ O_SYMLINK=0
 
 {% block build_flags %}
 wrap_cc
+shut_up
 {% endblock %}

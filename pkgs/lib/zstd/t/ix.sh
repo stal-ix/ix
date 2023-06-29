@@ -18,4 +18,7 @@ cd build/cmake
 ZSTD_BUILD_SHARED=OFF
 ZSTD_BUILD_STATIC=ON
 ZSTD_BUILD_TESTS=OFF
+{% if wasi %}
+ZSTD_MULTITHREAD_SUPPORT=OFF
+{% endif %}
 {% endblock %}

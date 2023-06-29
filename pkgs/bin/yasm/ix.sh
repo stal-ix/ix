@@ -1,7 +1,6 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-#http://www.tortall.net/projects/yasm/releases/yasm-1.3.0.tar.gz
 https://github.com/yasm/yasm/releases/download/v1.3.0/yasm-1.3.0.tar.gz
 sha:3dce6601b495f5b3d45b59f7d2492a340ee7e84b5beca17e48f862502bd5603f
 {% endblock %}
@@ -9,6 +8,10 @@ sha:3dce6601b495f5b3d45b59f7d2492a340ee7e84b5beca17e48f862502bd5603f
 {% block bld_libs %}
 lib/c
 lib/intl
+{% endblock %}
+
+{% block host_libs %}
+lib/c
 {% endblock %}
 
 {% block bld_tool %}
@@ -21,4 +24,9 @@ bld/gettext
 find . -type f | grep Makefile | while read l; do
     sed -e "s|\$.*re2c.*EXT)|re2c|" -i ${l}
 done
+{% endblock %}
+
+{% block setup %}
+export CC_FOR_BUILD=${HOST_CC}
+export CCLD_FOR_BUILD=${HOST_CC}
 {% endblock %}
