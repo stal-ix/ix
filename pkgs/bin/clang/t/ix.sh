@@ -41,6 +41,7 @@ llvm-nm
 llvm-dis
 llvm-link
 llvm-ranlib
+llvm-readelf
 
 llvm-install-name-tool
 llvm-libtool-darwin
