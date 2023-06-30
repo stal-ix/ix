@@ -4,6 +4,7 @@
 bin/xxd
 bin/yajl
 bin/wazero
+bin/wasm/edge/aot
 bin/wasm/edge
 bin/wasm/3
 bin/fizzy
