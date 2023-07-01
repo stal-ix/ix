@@ -17,3 +17,9 @@ LIBUV_BUILD_BENCH=OFF
 {% block build_flags %}
 wrap_cc
 {% endblock %}
+
+{% block install %}
+{{super()}}
+sed -e 's|libuv.so.1.0.0|libuv.a|' \
+    -i ${out}/lib/cmake/libuv/libuvConfig-release.cmake
+{% endblock %}
