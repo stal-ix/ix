@@ -1,6 +1,7 @@
 {% extends '//bin/cmake/ix.sh' %}
 
 {% block bld_libs %}
+lib/uv
 lib/qt/6/base
 lib/qt/6/deps
 {{super()}}

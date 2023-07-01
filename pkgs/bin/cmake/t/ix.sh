@@ -11,7 +11,6 @@ lib/darwin/framework/CoreFoundation
 {% endif %}
 lib/z
 lib/c
-lib/uv
 lib/xz
 lib/c++
 lib/rhash
