@@ -1,7 +1,7 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block git_sha %}
-ad981eebdaffc62a0faec37477c9345a41016b9b3848505a6e7e06df3bcd21e1
+5f209dbba07cd225c30ea53e101572a32990ecfe2d75cc98025f2b25e66c5686
 {% endblock %}
 
 {% block git_repo %}
@@ -9,7 +9,7 @@ https://github.com/luvit/luv
 {% endblock %}
 
 {% block git_branch %}
-1.44.2-1
+1.45.0-0
 {% endblock %}
 
 {% block cmake_flags %}
