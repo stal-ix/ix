@@ -1,17 +1,16 @@
 {% extends '//die/c/make.sh' %}
 
 {% block fetch %}
-https://github.com/dlbeer/quirc/archive/refs/tags/v1.1.tar.gz
-sha:5102ccb57639cb355642c1f8af0d815026c948d85d99bf9b86be5746e759f8e6
+https://github.com/dlbeer/quirc/archive/refs/tags/v1.2.tar.gz
+sha:73c12ea33d337ec38fb81218c7674f57dba7ec0570bddd5c7f7a977c0deb64c5
 {% endblock %}
 
 {% block lib_deps %}
 lib/c
-lib/jpeg
 {% endblock %}
 
 {% block bld_tool %}
-bld/pkg/config
+bld/fake(tool_name=pkg-config)
 {% endblock %}
 
 {% block make_target %}

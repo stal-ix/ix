@@ -13,4 +13,5 @@ bin/brotli
 bin/giflib
 bin/minised
 bin/minigzip
+bin/python/11/wasi
 {% endblock %}

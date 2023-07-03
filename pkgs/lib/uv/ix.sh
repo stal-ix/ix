@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/libuv/libuv/archive/refs/tags/v1.44.2.tar.gz
-sha:e6e2ba8b4c349a4182a33370bb9be5e23c51b32efb9b9e209d0e8556b73a48da
+https://github.com/libuv/libuv/archive/refs/tags/v1.46.0.tar.gz
+sha:7aa66be3413ae10605e1f5c9ae934504ffe317ef68ea16fdaa83e23905c681bd
 {% endblock %}
 
 {% block lib_deps %}
@@ -14,8 +14,12 @@ LIBUV_BUILD_TESTS=OFF
 LIBUV_BUILD_BENCH=OFF
 {% endblock %}
 
+{% block build_flags %}
+wrap_cc
+{% endblock %}
+
 {% block install %}
 {{super()}}
-sed -e 's|_a.a|.a|' -i ${out}/lib/cmake/libuv/libuvConfig-release.cmake
-rm ${out}/lib/pkgconfig/libuv-static.pc ${out}/lib/libuv_a.a
+sed -e 's|libuv.so.1.0.0|libuv.a|' \
+    -i ${out}/lib/cmake/libuv/libuvConfig-release.cmake
 {% endblock %}
