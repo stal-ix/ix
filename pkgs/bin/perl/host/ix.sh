@@ -3,6 +3,9 @@
 {% block fetch %}
 https://www.cpan.org/src/5.0/perl-5.36.0.tar.gz
 sha:e26085af8ac396f62add8a533c3a0ea8c8497d836f0689347ac5abd7b7a4e00a
+# broken build
+#https://www.cpan.org/src/5.0/perl-5.38.0.tar.gz
+#sha:213ef58089d2f2c972ea353517dc60ec3656f050dcc027666e118b508423e517
 {% endblock %}
 
 {% block bld_libs %}
