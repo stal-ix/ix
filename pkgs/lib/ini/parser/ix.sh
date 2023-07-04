@@ -1,8 +1,15 @@
 {% extends '//die/c/make.sh' %}
 
-{% block fetch %}
-https://github.com/ndevilla/iniparser/archive/deb85ad4936d4ca32cc2260ce43323d47936410d.zip
-sha:56338b33e3caa03be20240c0cbbf0d829938c18c0d5ff8c0d7be5dcd7d4cbde1
+{% block git_repo %}
+https://github.com/ndevilla/iniparser
+{% endblock %}
+
+{% block git_commit %}
+deb85ad4936d4ca32cc2260ce43323d47936410d
+{% endblock %}
+
+{% block git_sha %}
+fc144ba14632c0263654097584facbbdcb0a459f1f048a789c5f9cc32b959991
 {% endblock %}
 
 {% block lib_deps %}
