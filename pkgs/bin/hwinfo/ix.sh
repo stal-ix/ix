@@ -9,6 +9,7 @@ sha:4ce5a852a9c58d70f59108382448097ffc4783ff336978ae49ec870ce02e99db
 
 {% block bld_libs %}
 lib/c
+lib/sysfs
 lib/kernel
 lib/x86/emu
 lib/linux/util
@@ -17,6 +18,7 @@ lib/linux/util
 {% block bld_tool %}
 bld/perl
 bld/bison
+bin/systool
 bld/flex/lex
 {% endblock %}
 
