@@ -8,13 +8,6 @@
 lib/c/naked
 {% endblock %}
 
-{% block bld_libs %}
-{% if linux %}
-lib/kernel
-lib/shim/alloc
-{% endif %}
-{% endblock %}
-
 {% block cmake_flags %}
 {{super()}}
 
