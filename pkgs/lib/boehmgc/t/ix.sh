@@ -22,6 +22,7 @@ sed -e 's|REAL_DLFUNC(dlopen)|stub_dlopen|' -i gc_dlopen.c
 {% endblock %}
 
 {% block cmake_flags %}
+HAVE_GETCONTEXT=OFF
 build_tests=OFF
 enable_docs=OFF
 enable_threads=ON
