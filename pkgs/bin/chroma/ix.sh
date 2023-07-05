@@ -1,15 +1,15 @@
 {% extends '//die/go/pure.sh' %}
 
 {% block go_url %}
-https://github.com/alecthomas/chroma/archive/refs/tags/v2.5.0.tar.gz
+https://github.com/alecthomas/chroma/archive/refs/tags/v2.8.0.tar.gz
 {% endblock %}
 
 {% block go_sum %}
-sha:ad0bce3d6ba4397a866e5c8728c146fb370a2b0adb1d35fccdf7d515a9c7f553
+sha:d6ddb56fd3cf0d7ae2c592f834aced1be4494f21338a79636743c25305a65a00
 {% endblock %}
 
 {% block go_sha %}
-sha:9dddebc23f50cbc1c101e99448692e84f0e037bf136e9c19f578450e671d6f5e
+sha:e55e2a286999e70f0c4276bb4f8d00d6bf558f59fc521a2325366559070c0997
 {% endblock %}
 
 {% block unpack %}
