@@ -1,8 +1,15 @@
 {% extends '//die/c/make.sh' %}
 
-{% block fetch %}
-https://github.com/wmcbrine/PDCurses/archive/2fa0f10dd844da47ee83c05a40a1ec541ceb95e1.zip
-sha:1c68c676b6a684898dd5303291074a8496ecd2039c1b9f20ecc42fdb5a9d189e
+{% block git_repo %}
+https://github.com/wmcbrine/PDCurses
+{% endblock %}
+
+{% block git_commit %}
+977dcc9a31371b08db2cfa6ff92b04b89940fc00
+{% endblock %}
+
+{% block git_sha %}
+11bd44e412f2eadd28186809317c7da5c82db918a7bf1354e26c8acfce627602
 {% endblock %}
 
 {% block lib_deps %}
@@ -10,7 +17,7 @@ lib/c
 lib/sdl/2
 {% endblock %}
 
-{% block unpack %}
+{% block step_unpack %}
 {{super()}}
 cd sdl2
 {% endblock %}

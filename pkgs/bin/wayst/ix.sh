@@ -1,8 +1,15 @@
 {% extends '//die/c/make.sh' %}
 
-{% block fetch %}
-https://github.com/91861/wayst/archive/633d2a3c62e6ae1e074cb542158e62c5a3c4cc61.zip
-sha:9f3f0b3410b5d3d64aa9dda348aac61e3245245b3239a74a8b483ded1586f890
+{% block git_repo %}
+https://github.com/91861/wayst
+{% endblock %}
+
+{% block git_commit %}
+f8b218eec1af706fd5ae287f5073e6422eb8b6d8
+{% endblock %}
+
+{% block git_sha %}
+1bdbf4bf5e1acaee6a94a982ce47802340000109db3412df06e0f4cb5d0fe72e
 {% endblock %}
 
 {% block bld_libs %}

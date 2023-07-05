@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/glfw/glfw/releases/download/3.3.8/glfw-3.3.8.zip
-sha:4d025083cc4a3dd1f91ab9b9ba4f5807193823e565a5bcf4be202669d9911ea6
+https://github.com/glfw/glfw/archive/refs/tags/3.3.8.tar.gz
+sha:f30f42e05f11e5fc62483e513b0488d5bceeab7d9c5da0ffe2252ad81816c713
 {% endblock %}
 
 {% block lib_deps %}
