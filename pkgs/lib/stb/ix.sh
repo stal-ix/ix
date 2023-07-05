@@ -1,8 +1,15 @@
 {% extends '//die/c/ix.sh' %}
 
-{% block fetch %}
-https://github.com/nothings/stb/archive/af1a5bc352164740c1cc1354942b1c6b72eacb8a.zip
-sha:e3d0edbecd356506d3d69b87419de2f9d180a98099134c6343177885f6c2cbef
+{% block git_repo %}
+https://github.com/nothings/stb
+{% endblock %}
+
+{% block git_commit %}
+af1a5bc352164740c1cc1354942b1c6b72eacb8a
+{% endblock %}
+
+{% block git_sha %}
+21b5dd9af86ffaf44f3170021fb53504fe35da08bf376964bfd5eeb812af7ed6
 {% endblock %}
 
 {% block lib_deps %}
