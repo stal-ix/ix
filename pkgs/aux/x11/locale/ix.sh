@@ -24,3 +24,7 @@ cd nls
 cd nls
 {{super()}}
 {% endblock %}
+
+{% block env %}
+export X11_LOCALE_DIR=${out}/share/X11/locale
+{% endblock %}
