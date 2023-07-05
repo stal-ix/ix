@@ -1,8 +1,15 @@
 {% extends '//die/c/meson.sh' %}
 
-{% block fetch %}
-https://github.com/managarm/cxxshim/archive/82344efd46c0356272800c3b5bd3286fc681e114.zip
-sha:d74dc6e0d2524fed962887514ada1a0ff0371bf7f2d0b5e41af3354f54c8131c
+{% block git_repo %}
+https://github.com/managarm/cxxshim
+{% endblock %}
+
+{% block git_commit %}
+82344efd46c0356272800c3b5bd3286fc681e114
+{% endblock %}
+
+{% block git_sha %}
+04a88d31b120e57ffb60cc984eb7dd15479e5aee0cf948526f6580738ac7763e
 {% endblock %}
 
 {% block meson_flags %}

@@ -1,8 +1,15 @@
 {% extends '//die/c/meson.sh' %}
 
-{% block fetch %}
-https://github.com/managarm/frigg/archive/945c186154ef434c4cf8946c8b429c6cf4910b95.zip
-sha:244b017cb078943311992129f2f17758c9ced4cb96e3ebad2ca22e416f94512c
+{% block git_repo %}
+https://github.com/managarm/frigg
+{% endblock %}
+
+{% block git_commit %}
+945c186154ef434c4cf8946c8b429c6cf4910b95
+{% endblock %}
+
+{% block git_sha %}
+d229c1d108d4a9fa0d1dfc1fb06c4a7ccbc1a44c6834a4bac8eb33eb2b903900
 {% endblock %}
 
 {% block meson_flags %}
