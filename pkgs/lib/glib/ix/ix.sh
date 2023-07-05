@@ -49,6 +49,21 @@ cat << EOF >> glib/gstrfuncs.h
 EOF
 
 {{super()}}
+
+{#
+if get_option('runtime_dir') != ''
+  // this shit is fundamentally broken
+  glib_runstatedir = glib_prefix / get_option('runtime_dir')
+else
+  # While we’d normally prefix directories like this with, for example,
+  # glib_localstatedir, `/run` is a bit different in that it’s for runtime state
+  # rather than data files, so it’s typically functionally useless to use a
+  # prefixed version. No other processes will be using it. So we default to the
+  # unprefixed system `/run` directory.
+  glib_runstatedir = '/run'
+endif
+#}
+sed -e 's|/run|/var/run|' -i meson.build
 {% endblock %}
 
 {% block env %}
