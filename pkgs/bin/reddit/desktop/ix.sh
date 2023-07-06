@@ -19,7 +19,6 @@ lib/mpv
 lib/fmt
 lib/stb
 lib/glfw
-lib/sdl/2
 lib/boost
 lib/gumbo
 lib/opengl
@@ -27,7 +26,6 @@ lib/spdlog
 lib/openssl
 lib/sqlite/3
 lib/freetype
-lib/sdl/deps
 lib/uriparser
 lib/shim/glew
 lib/glfw/deps
