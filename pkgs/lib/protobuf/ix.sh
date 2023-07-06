@@ -9,3 +9,8 @@ protobuf_BUILD_PROTOC_BINARIES=OFF
 {{super()}}
 sed -e 's|protobuf::protoc|protoc|' -i ${out}/lib/cmake/protobuf/protobuf-generate.cmake
 {% endblock %}
+
+{% block env %}
+{{super()}}
+export PROTO_PATH=${out}/include
+{% endblock %}
