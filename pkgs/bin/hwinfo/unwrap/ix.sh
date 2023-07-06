@@ -34,7 +34,7 @@ shut_up
 
 {% block make_flags %}
 DESTDIR=${out}/
-HWINFO_VERSION=‎{{version}}
+HWINFO_VERSION={{version}}
 {% endblock %}
 
 {% block make_target %}
