@@ -18,13 +18,15 @@ lib/wayland
 {% endblock %}
 
 {% block use_data %}
+aux/x11/locale
 aux/xkeyboard/config
 {% endblock %}
 
 {% block meson_flags %}
 enable-x11=false
 enable-docs=false
-xkb-config-root="${XKB_CONFIG}"
+x-locale-root=${X11_LOCALE_DIR}
+xkb-config-root=${XKB_CONFIG}
 {% endblock %}
 
 {% block c_rename_symbol %}

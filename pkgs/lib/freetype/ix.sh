@@ -2,5 +2,5 @@
 
 {% block lib_deps %}
 lib/harfbuzz/ft
-lib/freetype/hb
+lib/freetype/{{libfreetype_ver or 'ct'}}
 {% endblock %}

@@ -1,10 +1,10 @@
 {% extends '//die/c/make.sh' %}
 
-{% set version %}22.3{% endset %}
+{% set version %}23.1{% endset %}
 
 {% block fetch %}
 https://github.com/openSUSE/hwinfo/archive/refs/tags/{{version}}.tar.gz
-sha:4ce5a852a9c58d70f59108382448097ffc4783ff336978ae49ec870ce02e99db
+sha:cd1bd007a43469ccea651eca8dfe7cb3ec502bce6058b90db48b1e3cae6c9903
 {% endblock %}
 
 {% block bld_libs %}
@@ -34,7 +34,7 @@ shut_up
 
 {% block make_flags %}
 DESTDIR=${out}/
-HWINFO_VERSION=‎{{version}}
+HWINFO_VERSION={{version}}
 {% endblock %}
 
 {% block make_target %}
