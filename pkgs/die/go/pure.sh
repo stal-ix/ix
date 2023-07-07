@@ -1,13 +1,14 @@
 {% extends 'c.sh' %}
 
 {% block std_box %}
-bin/lz4
+bld/stable/unpack
 {{super()}}
 {% endblock %}
 
 {% block unpack %}
-mkdir src; cd src
-lz4 -d ${src}/*lz4 - | bsdtar -x -f - --no-same-permissions --no-same-owner --strip-components 1
+mkdir src
+cd src
+stable_unpack ${src}/*lz4
 {% endblock %}
 
 {% block bld_data %}
