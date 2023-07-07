@@ -1,6 +1,7 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
+bin/npm
 bin/protoc/c
 bin/systool
 bin/hwinfo
