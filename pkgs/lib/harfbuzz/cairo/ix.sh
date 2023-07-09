@@ -6,6 +6,11 @@ lib/freetype
 {{super()}}
 {% endblock %}
 
+{% block meson_flags %}
+{{super()}}
+utilities=disabled
+{% endblock %}
+
 {% block install %}
 {{super()}}
 cd ${out}

@@ -19,7 +19,7 @@
 
 {% block bld_deps %}
 {% if git_sha %}
-bin/lz4
+bld/stable/unpack
 {% endif %}
 {{super()}}
 {% endblock %}
@@ -33,7 +33,8 @@ aux/git(parent_id=src_{{git_sha.strip()}},sha={{git_sha.strip()}},branch={{git_b
 
 {% block step_unpack %}
 {% if git_sha %}
-mkdir src; cd src
-lz4 -d ${src}/*lz4 - | bsdtar -x -f - --no-same-permissions --no-same-owner --strip-components 1
+mkdir src
+cd src
+stable_unpack ${src}/*lz4
 {% else %}{{super()}}{% endif %}
 {% endblock %}

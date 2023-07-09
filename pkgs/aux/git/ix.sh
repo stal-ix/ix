@@ -8,8 +8,7 @@
 
 {% block bld_tool %}
 bin/git
-bin/tar
-bin/lz4
+bld/stable/pack
 {% endblock %}
 
 {% block build %}
@@ -27,12 +26,12 @@ find . -type d -name '.git' | while read l; do
     rm -rf "${l}"
 done
 cd ..
-tar --sort=name --owner=root:0 --group=root:0 --mtime='UTC 1970-01-01'  -c -f {{parent_id}}.tar src
+stable_pack {{parent_id}}.tar.lz4 src
 {% endblock %}
 
 {% block install %}
 mkdir ${out}/share
-lz4 {{parent_id}}.tar ${out}/share/{{parent_id}}.tar.lz4
+mv {{parent_id}}.tar.lz4 ${out}/share/
 {% endblock %}
 
 {% block postinstall %}

@@ -10,14 +10,3 @@ lib/c
 lib/intl
 lib/sigsegv
 {% endblock %}
-
-{% block bld_tool %}
-bin/lzip
-{% endblock %}
-
-{% block unpack %}
-cp ${src}/*.lz ./
-lzip -d *.lz
-bsdtar xf ed*
-cd ed-1.*
-{% endblock %}

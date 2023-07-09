@@ -1,8 +1,8 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://github.com/libproxy/libproxy/archive/refs/tags/0.5.2.tar.gz
-sha:7d75a2cf1c977056eb86f460daab0247d30e6a34e26ec755aab4de40cfd0a06d
+https://github.com/libproxy/libproxy/archive/refs/tags/0.5.3.tar.gz
+sha:0d8d8e4dd96239ba173c2b18905c0bb6e161fd5000e1e0aeace16f754e9a9108
 {% endblock %}
 
 {% block lib_deps %}

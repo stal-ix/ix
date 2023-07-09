@@ -7,8 +7,7 @@
 
 {% block bld_tool %}
 bin/go
-bin/lz4
-bin/tar
+bld/stable/pack
 {% endblock %}
 
 {% block use_network %}true{% endblock %}
@@ -30,13 +29,13 @@ find . -type f -name go.mod | while read l; do (
 
 cd ..
 
-tar --sort=name --owner=root:0 --group=root:0 --mtime='UTC 1970-01-01'  -c -f ${tmp}/{{parent_id}}.tar src
+stable_pack ${tmp}/{{parent_id}}.tar.lz4 src
 go clean -modcache
 {% endblock %}
 
 {% block install %}
 mkdir ${out}/share
-lz4 ${tmp}/{{parent_id}}.tar ${out}/share/{{parent_id}}.tar.lz4
+mv ${tmp}/{{parent_id}}.tar.lz4 ${out}/share/
 ls -la ${out}/share/
 {% endblock %}
 
