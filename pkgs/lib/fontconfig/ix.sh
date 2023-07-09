@@ -1,5 +1,5 @@
 {% extends '//die/hub.sh' %}
 
 {% block lib_deps %}
-lib/fontconfig/unwrap
+lib/harfbuzz
 {% endblock %}

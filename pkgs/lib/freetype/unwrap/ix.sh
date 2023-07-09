@@ -1,5 +1,5 @@
 {% extends '//die/hub.sh' %}
 
 {% block lib_deps %}
-lib/harfbuzz
+lib/freetype/unwrap/{{libfreetype_ver or 'ct'}}
 {% endblock %}

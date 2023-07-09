@@ -1,8 +1,9 @@
-{% extends '//lib/freetype/nohb/ix.sh' %}
+{% extends '//lib/freetype/t/ix.sh' %}
 
 {% block bld_libs %}
-lib/harfbuzz/ft
-lib/freetype/nohb
+lib/freetype/bootstrap
+lib/harfbuzz/bootstrap
+lib/fontconfig/bootstrap
 {{super()}}
 {% endblock %}
 

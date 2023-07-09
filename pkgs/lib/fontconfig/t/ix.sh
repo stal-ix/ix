@@ -15,7 +15,6 @@ bld/gettext
 lib/c
 lib/expat
 lib/json/c
-lib/freetype
 {% endblock %}
 
 {% block meson_flags %}
