@@ -27,7 +27,7 @@ export CXXFLAGS="-std=c++17 ${CXXFLAGS}"
 {% endblock %}
 
 {% block cpp_defines %}
-#private=public
+private=public
 GOOGLE_LOG=ABSL_LOG
 GOOGLE_ARRAYSIZE=ABSL_ARRAYSIZE
 GOOGLE_CHECK_EQ=ABSL_CHECK_EQ
