@@ -14,7 +14,7 @@ https://github.com/SerenityOS/serenity
 b55fc4146a5d000d412bbeed68794d681281ba211be3a6486c82d250471a995c
 {% endblock %}
 
-{% block unpack %}
+{% block step_unpack %}
 {{super()}}
 cd Ladybird
 {% endblock %}
