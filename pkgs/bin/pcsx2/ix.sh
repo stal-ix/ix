@@ -7,11 +7,11 @@ https://github.com/PCSX2/pcsx2
 {% endblock %}
 
 {% block git_branch %}
-v1.7.3064
+v1.7.4717
 {% endblock %}
 
 {% block git_sha %}
-3c02f95ceac56c9111d17bf0b987ef6729b25502d1979cd7ec0b43771f47d0f7
+bd1d3d7ef559e7ace318d85e6ba8210f0e48115f5f109e2886e3908c26a137e4
 {% endblock %}
 
 {% block bld_libs %}
@@ -31,6 +31,7 @@ lib/ryml
 lib/xml/2
 lib/sdl/2
 lib/opengl
+lib/ffmpeg
 lib/wayland
 lib/glslang
 lib/sdl/deps
@@ -60,6 +61,7 @@ ENABLE_TESTS=OFF
 XDG_STD=ON
 SDL2_API=ON
 X11_API=OFF
+USE_LINKED_FFMPEG=ON
 {% endblock %}
 
 {% block setup %}
