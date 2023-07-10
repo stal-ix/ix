@@ -1,8 +1,15 @@
 {% extends '//die/c/cmake.sh' %}
 
-{% block fetch %}
-https://github.com/ec-/Quake3e/archive/525a5ae69322c973268a1807fd9d9a3128fcfd4d.zip
-sha:ec2213c8031ac41a7efc7882a0d6f1b5496f104ffa1e5cf3923f4e6db097509e
+{% block git_repo %}
+https://github.com/ec-/Quake3e
+{% endblock %}
+
+{% block git_commit %}
+525a5ae69322c973268a1807fd9d9a3128fcfd4d
+{% endblock %}
+
+{% block git_sha %}
+7f2d53d0c142177c04fb354e4e8ae2a63622196abf65b317a0706441563ef405
 {% endblock %}
 
 {% block bld_libs %}
