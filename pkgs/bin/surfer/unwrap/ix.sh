@@ -1,8 +1,15 @@
 {% extends '//die/c/make.sh' %}
 
-{% block fetch %}
-https://github.com/nihilowy/surfer/archive/704299e0f5a3ad97446288f54c419f136e417865.zip
-sha:6bd969cbd24e9f4fee3026cd9f79dd1485cc691a9f27164ad23a2f7ad096b7f3
+{% block git_repo %}
+https://github.com/nihilowy/surfer
+{% endblock %}
+
+{% block git_commit %}
+704299e0f5a3ad97446288f54c419f136e417865
+{% endblock %}
+
+{% block git_sha %}
+722acb8e3dc9bf8ba0250b8a362afe2ccfc50b177d88e4f7be259f3b0e260b96
 {% endblock %}
 
 {% block bld_libs %}

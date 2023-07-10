@@ -1,4 +1,4 @@
-{% extends '//lib/fontconfig/t/ix.sh' %}
+{% extends '//lib/fontconfig/bootstrap/ix.sh' %}
 
 {% block install %}
 {{super()}}

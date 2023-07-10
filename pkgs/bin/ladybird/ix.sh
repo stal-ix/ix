@@ -2,12 +2,19 @@
 
 {# WIP #}
 
-{% block fetch %}
-https://github.com/SerenityOS/serenity/archive/78def34c5e721ccacbfa19f5eeb27405da50dc23.zip
-sha:f35f89fb67b856955d4cd593d2de5e20716bb0fe44a3584bde79157a3b69fb31
+{% block git_repo %}
+https://github.com/SerenityOS/serenity
 {% endblock %}
 
-{% block unpack %}
+{% block git_commit %}
+78def34c5e721ccacbfa19f5eeb27405da50dc23
+{% endblock %}
+
+{% block git_sha %}
+b55fc4146a5d000d412bbeed68794d681281ba211be3a6486c82d250471a995c
+{% endblock %}
+
+{% block step_unpack %}
 {{super()}}
 cd Ladybird
 {% endblock %}

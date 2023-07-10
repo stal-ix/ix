@@ -1,8 +1,15 @@
 {% extends '//die/c/cmake.sh' %}
 
-{% block fetch %}
-https://github.com/ytsaurus/ytsaurus/archive/c39e2e8a9a262feadb55bb9e13c42b3af65784b9.zip
-sha:d13edc9fc1f6ec750898c7bf967cd9273fec0768b53b22bfacc6317856bc9c3d
+{% block git_repo %}
+https://github.com/ytsaurus/ytsaurus
+{% endblock %}
+
+{% block git_commit %}
+c39e2e8a9a262feadb55bb9e13c42b3af65784b9
+{% endblock %}
+
+{% block git_sha %}
+dac94e6bbc3317c8c902257b16a694272100061f27b07be3a2c3f2555281c932
 {% endblock %}
 
 {% block task_pool %}full{% endblock %}

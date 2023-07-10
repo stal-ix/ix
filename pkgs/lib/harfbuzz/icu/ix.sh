@@ -1,4 +1,4 @@
-{% extends '//lib/harfbuzz/ft/ix.sh' %}
+{% extends '//lib/harfbuzz/unwrap/ix.sh' %}
 
 {% block lib_deps %}
 lib/icu

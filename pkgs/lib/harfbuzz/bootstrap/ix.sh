@@ -2,15 +2,12 @@
 
 {% block bld_libs %}
 {{super()}}
-lib/freetype/nohb
+lib/freetype/bootstrap
+lib/fontconfig/bootstrap
 {% endblock %}
 
 {% block meson_flags %}
 {{super()}}
 cairo=disabled
 utilities=disabled
-{% endblock %}
-
-{% block env %}
-export CPPFLAGS="-I${out}/include/harfbuzz \${CPPFLAGS}"
 {% endblock %}

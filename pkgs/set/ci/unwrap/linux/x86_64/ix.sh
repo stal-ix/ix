@@ -1,6 +1,7 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
+bin/havoc
 bin/qemu/next
 bin/npm
 bin/protoc/c

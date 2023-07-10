@@ -1,8 +1,15 @@
 {% extends '//die/c/meson.sh' %}
 
-{% block fetch %}
-https://github.com/WayfireWM/wf-shell/archive/b5edd8b6e62bc70fad9a21d44d4b2e13431cedb8.zip
-sha:7b3e694fe323de116742ebba52c5c365fcde872886847ff35d34ac9d201f4284
+{% block git_repo %}
+https://github.com/WayfireWM/wf-shell
+{% endblock %}
+
+{% block git_commit %}
+c9639087aca3ad69bbd8f56f4213768639b4c8d0
+{% endblock %}
+
+{% block git_sha %}
+80d2577727929b0f6c005779ae31b8d8404c4bf88495f1704c27e57a8e530891
 {% endblock %}
 
 {% block bld_libs %}

@@ -1,5 +1,10 @@
 {% extends '//lib/fontconfig/t/ix.sh' %}
 
+{% block bld_libs %}
+{{super()}}
+lib/freetype/bootstrap
+{% endblock %}
+
 {% block use_data %}
 lib/fontconfig/data
 {% endblock %}

@@ -1,8 +1,15 @@
 {% extends '//die/c/make.sh' %}
 
-{% block fetch %}
-https://github.com/Kufat/st-sdl/archive/050eb14a2438836d600bfbacc04754a1ea7d56b3.zip
-sha:3ffe0459ac8202023fdaaf9160fdefb309024eca76d7c753d5a5685377d57c18
+{% block git_repo %}
+https://github.com/Kufat/st-sdl
+{% endblock %}
+
+{% block git_commit %}
+050eb14a2438836d600bfbacc04754a1ea7d56b3
+{% endblock %}
+
+{% block git_sha %}
+3a86f768db5246b6635ebd9222d878860d33edcf645861aec932b5f2461df60b
 {% endblock %}
 
 {% block bld_libs %}

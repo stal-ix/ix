@@ -1,4 +1,4 @@
-{% extends '//lib/freetype/hb/ix.sh' %}
+{% extends '//lib/freetype/unwrap/hb/ix.sh' %}
 
 {% block patch %}
 {{super()}}

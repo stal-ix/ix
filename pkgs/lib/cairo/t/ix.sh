@@ -10,12 +10,6 @@ lib/c
 lib/png
 lib/glib
 lib/pixman
-
-{% if linux %}
-lib/freetype
-lib/fontconfig
-{% endif %}
-
 {% if darwin %}
 lib/darwin/framework/ApplicationServices
 lib/darwin/framework/CoreGraphics
