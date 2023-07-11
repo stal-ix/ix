@@ -26,7 +26,6 @@ rm -rf \
     leptonica \
     cups/libs \
     expat \
-    ijs \
     jbig2dec \
     jpeg \
     lcms2mt \
@@ -54,4 +53,9 @@ rm -rf \
 
 {% block cpp_defines %}
 ft_sprintf=sprintf
+__WORDSIZE={{target.bits}}
+{% endblock %}
+
+{% block setup %}
+export CFLAGS="-Wno-macro-redefined ${CFLAGS}"
 {% endblock %}

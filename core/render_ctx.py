@@ -86,7 +86,6 @@ class RenderContext:
             kind: True,
             tp['os']: True,
             tp['arch']: True,
-            'arch_bits': tp['bits'],
             'boot': pkg.name.startswith('bld/boot/'),
         }, pkg.flags)
 
