@@ -9,5 +9,6 @@ sha:63ce23fcbf76048f524c40be479ac3840d7a2cbadb6d1e0646ea77926656bade
 lib/c
 lib/c++
 lib/png
+lib/paper
 lib/freetype
 {% endblock %}
