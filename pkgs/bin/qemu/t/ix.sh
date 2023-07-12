@@ -6,6 +6,7 @@ lib/z
 lib/lzo
 lib/ssh
 lib/usb
+lib/bpf
 lib/zstd
 lib/glib
 lib/curl
@@ -51,6 +52,7 @@ wrap_cc
 sh ./configure \
 --prefix=${out} \
 --libexecdir=${out}/bin/{{uniq_id}} \
+--enable-bpf \
 --disable-plugins \
 --audio-drv-list=sdl \
 --with-coroutine=ucontext \

@@ -1,18 +1,15 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://github.com/nghttp2/nghttp2/archive/refs/tags/v1.54.0.tar.gz
-sha:aae8bda9e06d7c51a12488175086edc44a46c230561dc7c45d779e00e43d4b8e
+https://github.com/nghttp2/nghttp2/archive/refs/tags/v1.55.0.tar.gz
+sha:6d2a4d246e84cb1e3e581591bd1c50ecc085e50090bc068ed5a67f87c6b4a06e
 {% endblock %}
 
 {% block lib_deps %}
 lib/c
-lib/z
-lib/ev
-lib/c/ares
-lib/openssl
 {% endblock %}
 
 {% block configure_flags %}
+--disable-examples
 --disable-python-bindings
 {% endblock %}

@@ -4,5 +4,5 @@
 bin/gzip
 bin/less
 bin/groff
-bin/man/db/unwrap
+bin/man/db/ix
 {% endblock %}

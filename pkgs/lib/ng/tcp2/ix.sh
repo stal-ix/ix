@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/ngtcp2/ngtcp2/archive/refs/tags/v0.15.0.tar.gz
-sha:ea3a9189e771209d44f46fcb942415fa386a1d66e4e1108ed3bc0fce0439d2f5
+https://github.com/ngtcp2/ngtcp2/archive/refs/tags/v0.17.0.tar.gz
+sha:c920c7d98d7320c1e6b811d0bbf646c47d788dc19f5bfd9256014f6bb7d8f0a8
 {% endblock %}
 
 {% block lib_deps %}
@@ -21,4 +21,8 @@ ENABLE_STATIC_LIB=OFF
 {% block setup %}
 # for example
 export CXXFLAGS="-std=c++17 ${CXXFLAGS}"
+{% endblock %}
+
+{% block patch %}
+touch crypto/includes/ngtcp2/ngtcp2_crypto_openssl.h
 {% endblock %}
