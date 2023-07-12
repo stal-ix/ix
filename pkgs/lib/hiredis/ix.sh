@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/redis/hiredis/archive/refs/tags/v1.1.0.tar.gz
-sha:fe6d21741ec7f3fc9df409d921f47dfc73a4d8ff64f4ac6f1d95f951bf7f53d6
+https://github.com/redis/hiredis/archive/refs/tags/v1.2.0.tar.gz
+sha:82ad632d31ee05da13b537c124f819eb88e18851d9cb0c30ae0552084811588c
 {% endblock %}
 
 {% block lib_deps %}
