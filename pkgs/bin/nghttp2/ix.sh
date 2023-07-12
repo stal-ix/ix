@@ -16,7 +16,7 @@ lib/ng/http/3
 {% block configure_flags %}
 {{super()}}
 --enable-app
-#--with-libngtcp2
-#--with-libnghttp3
+--with-libngtcp2
+--with-libnghttp3
 --enable-hpack-tools
 {% endblock %}
