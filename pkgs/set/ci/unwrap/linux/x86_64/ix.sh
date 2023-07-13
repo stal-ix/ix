@@ -1,6 +1,7 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
+bin/sddm
 bin/ghost/script
 bin/havoc
 bin/qemu/next

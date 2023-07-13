@@ -12,6 +12,8 @@ lib/pam
 lib/glib
 lib/k/ecm
 lib/wayland
+lib/pam/unix
+lib/shim/x11
 lib/xkbcommon
 lib/qt/6/base
 lib/qt/6/deps
@@ -41,4 +43,7 @@ rm cmake/FindXKB.cmake
 sed -e 's|.*XKB REQ.*||' -i CMakeLists.txt
 sed -e 's|.*XCB REQ.*||' -i CMakeLists.txt
 sed -e 's|.*XAU REQ.*||' -i CMakeLists.txt
+>src/greeter/XcbKeyboardBackend.h
+>src/greeter/XcbKeyboardBackend.cpp
+sed -e 's|m_backend = new XcbKeyboardBackend.*|m_backend = nullptr;|' -i src/greeter/KeyboardModel.cpp
 {% endblock %}
