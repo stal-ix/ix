@@ -45,6 +45,8 @@ cd ${out}/lib
 sed -e 's|cross_compile|cross_compile_xxx|g' -i cmake/Qt6Core/Qt6CoreTargets.cmake
 sed -e 's|GLIB2::GLIB2|c|' -i cmake/Qt6Gui/Qt6GuiTargets.cmake
 sed -e 's|GLIB2::GLIB2|c|' -i cmake/Qt6Core/Qt6CoreTargets.cmake
+sed -e 's|GLIB2::GOBJECT|c|' -i cmake/Qt6Network/Qt6QGlibNetworkInformationPluginTargets.cmake
+sed -e 's|GLIB2::GIO|c|' -i cmake/Qt6Network/Qt6QGlibNetworkInformationPluginTargets.cmake
 llvm-ar q libqtregister.a $(find -type f -name '*.o')
 {% endblock %}
 
