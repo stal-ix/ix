@@ -46,4 +46,5 @@ sed -e 's|.*XAU REQ.*||' -i CMakeLists.txt
 >src/greeter/XcbKeyboardBackend.h
 >src/greeter/XcbKeyboardBackend.cpp
 sed -e 's|m_backend = new XcbKeyboardBackend.*|m_backend = nullptr;|' -i src/greeter/KeyboardModel.cpp
+>services/CMakeLists.txt
 {% endblock %}
