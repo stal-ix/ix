@@ -9,11 +9,3 @@ bld/qt/6/tools/qml
 {{super()}}
 QT_STATICPLUGIN=1
 {% endblock %}
-
-{% block postinstall %}
-find ${out}/ -type f -name '*.a' | grep -v '/lib/' | while read l; do
-    cp ${l} ${out}/lib/
-done
-cd ${out}/lib/
-llvm-ar q libqtqmlregister.a $(find -type f -name '*.o')
-{% endblock %}
