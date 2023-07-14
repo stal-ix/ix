@@ -17,7 +17,7 @@ lib/shim/x11
 lib/xkbcommon
 lib/qt/6/base
 lib/qt/6/deps
-lib/qt/6/declarative
+lib/qt/6/declarative/deps
 {% endblock %}
 
 {% block bld_tool %}
