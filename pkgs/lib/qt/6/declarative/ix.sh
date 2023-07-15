@@ -5,6 +5,7 @@
 bld/qt/6/tools/qml
 {% endblock %}
 
-{% block postinstall %}
-:
+{% block cpp_defines %}
+{{super()}}
+QT_STATICPLUGIN=1
 {% endblock %}

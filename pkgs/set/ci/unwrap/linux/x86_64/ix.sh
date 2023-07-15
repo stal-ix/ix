@@ -1,6 +1,8 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
+bin/iproute2
+bin/sddm
 bin/ghost/script
 bin/havoc
 bin/qemu/next

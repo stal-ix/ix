@@ -28,9 +28,22 @@ QT_FEATURE_cross_compile=ON
 {% endblock %}
 
 {% block postinstall %}
-find ${out}/plugins/ -type f -name '*.a' | while read l; do
-    cp ${l} ${out}/lib/
+{% if lib %}
+(
+set -xue
+cd ${out}
+mkdir -p lib
+# copy plugins into discoverable place
+find -type f -name '*.a' | grep -v '/lib/' | while read l; do
+    cp ${l} lib/
 done
+cd lib
+# prepare library with static constructors
+llvm-ar q libqt{{uniq_id}}register.a $(find -type f -name '*.o')
+)
+{% else %}
+echo 'TODO(pg): no postinstall for qt binaries?'
+{% endif %}
 {% endblock %}
 
 {% block functions %}

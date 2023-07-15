@@ -1,11 +1,16 @@
 {% extends '//die/c/cmake.sh' %}
 
-{% block fetch %}
-https://github.com/microsoft/LightGBM/releases/download/v3.3.5/LightGBM-complete_source_code_tar_gz.tar.gz
-sha:2a08ad905533a9fcc9c9551e06e7c12532d86cd22d9fe1aa0f6fc126ab53be77
+{% block git_repo %}
+https://github.com/microsoft/LightGBM
 {% endblock %}
 
-{% block skip_dirs %}0{% endblock %}
+{% block git_branch %}
+v4.0.0
+{% endblock %}
+
+{% block git_sha %}
+640e005e4c2e335631bbe408ff4322fa2bcbdcc3fb0b27d33b6125d1d6166dae
+{% endblock %}
 
 {% block bld_libs %}
 lib/c
@@ -15,4 +20,8 @@ lib/fmt
 
 {% block cmake_flags %}
 USE_OPENMP=OFF
+{% endblock %}
+
+{% block build_flags %}
+wrap_cc
 {% endblock %}

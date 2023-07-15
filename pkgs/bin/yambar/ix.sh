@@ -1,8 +1,8 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://codeberg.org/dnkl/yambar/archive/1.9.0.tar.gz
-sha:46f3002338f451c154678167bf3d5f593307954b6f381c50ddef2726b1a8c811
+https://codeberg.org/dnkl/yambar/archive/1.10.0.tar.gz
+sha:ebf08a17b77053f16038c1538fe9d410d06289b8ea28ff5a5022aca8e9b84807
 {% endblock %}
 
 {% block bld_libs %}

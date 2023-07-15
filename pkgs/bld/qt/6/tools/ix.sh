@@ -28,10 +28,6 @@ QT_FEATURE_qdbus=OFF
 QT_FEATURE_qtdiag=OFF
 {% endblock %}
 
-{% block postinstall %}
-:
-{% endblock %}
-
 {% block env %}
 export Qt6LinguistTools_DIR="${out}/lib/cmake/Qt6LinguistTools"
 {% endblock %}

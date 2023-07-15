@@ -1,8 +1,8 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://codeberg.org/dnkl/foot/archive/1.14.0.tar.gz
-sha:9a306951bc6bdce150364bccb0fb4b67720f50e98e9ac1de89792c1c1aa30690
+https://codeberg.org/dnkl/foot/archive/1.15.0.tar.gz
+sha:5b6fcec57cedca350c36fa46534bd7724ed414cc292516b74567d070b7062f07
 {% endblock %}
 
 {% block bld_libs %}
@@ -26,5 +26,7 @@ bld/wayland
 {% endblock %}
 
 {% block meson_flags %}
+tests=false
+utmp-backend=none
 default-terminfo=xterm-256color
 {% endblock %}

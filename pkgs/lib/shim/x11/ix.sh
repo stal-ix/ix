@@ -50,4 +50,23 @@ EOF
 cat << EOF > ${out}/include/xcb/xcb_icccm.h
 #pragma once
 EOF
+
+cat << EOF > ${out}/include/X11/Xauth.h
+#pragma once
+struct Xauth {
+    int family;
+    const char* address;
+    int address_length;
+    const char* number;
+    int number_length;
+    const char* name;
+    int name_length;
+    const char* data;
+    int data_length;
+
+};
+#define FamilyLocal 0
+#define FamilyWild 0
+#define XauWriteAuth(...) 1
+EOF
 {% endblock %}
