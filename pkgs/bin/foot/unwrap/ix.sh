@@ -26,5 +26,7 @@ bld/wayland
 {% endblock %}
 
 {% block meson_flags %}
+tests=false
+utmp-backend=none
 default-terminfo=xterm-256color
 {% endblock %}
