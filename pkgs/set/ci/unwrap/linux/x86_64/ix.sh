@@ -155,6 +155,7 @@ bin/meson/62
 bin/meson/63
 bin/meson/64
 bin/meson/100
+bin/meson/120
 bin/swayimg
 bin/mc/slang
 bin/mc/curses/n
