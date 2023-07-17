@@ -16,7 +16,7 @@ lib/kernel
 {% endblock %}
 
 {% block bld_tool %}
-bld/fakexslt
+bld/fake/er(tool_name=xsltproc)
 {% endblock %}
 
 {% block meson_flags %}
