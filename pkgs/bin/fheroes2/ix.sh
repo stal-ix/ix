@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/ihhub/fheroes2/archive/refs/tags/1.0.5.tar.gz
-sha:53d889bb712cede9ad85d9fbaa09338b06c6948b247221464dd5b767a95f12c6
+https://github.com/ihhub/fheroes2/archive/refs/tags/1.0.6.tar.gz
+sha:c97835650a356d9e96a4157255930afe07b6e2472b605d0dbe1b902ece59d8de
 {% endblock %}
 
 {% block bld_libs %}

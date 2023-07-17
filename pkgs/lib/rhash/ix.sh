@@ -1,8 +1,8 @@
 {% extends '//die/c/make.sh' %}
 
 {% block fetch %}
-https://github.com/rhash/RHash/archive/refs/tags/v1.4.3.tar.gz
-sha:1e40fa66966306920f043866cbe8612f4b939b033ba5e2708c3f41be257c8a3e
+https://github.com/rhash/RHash/archive/refs/tags/v1.4.4.tar.gz
+sha:8e7d1a8ccac0143c8fe9b68ebac67d485df119ea17a613f4038cda52f84ef52a
 {% endblock %}
 
 {% block lib_deps %}
