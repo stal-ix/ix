@@ -12,12 +12,13 @@ sha:7a6c27c9c0fe6f39069365c33a93e43f5ae2b09f80943ec9309240f809440128
 {% endblock %}
 
 {% block bld_tool %}
-bld/npm
+bin/nodejs
 bld/stable/pack
 {% endblock %}
 
 {% block build %}
-npm install
+node workspaces/arborist/bin/index.js reify
+node bin/npm-cli.js install
 rm -rf undefined
 stable_pack ${tmp}/npm.tar.lz4 .
 {% endblock %}
