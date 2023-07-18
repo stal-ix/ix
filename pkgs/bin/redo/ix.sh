@@ -21,5 +21,5 @@ DESTDIR= PREFIX=${out} ./do install
 
 {% block postinstall %}
 cd ${out}/bin
-fix_shebungs *
+fix_shebangs *
 {% endblock %}

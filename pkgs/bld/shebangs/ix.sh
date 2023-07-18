@@ -7,7 +7,7 @@ bld/python
 {% block install %}
 mkdir ${out}/bin; cd ${out}/bin
 
-base64 -d << EOF > fix_shebungs
+base64 -d << EOF > fix_shebangs
 {% include 'fix.py/base64' %}
 EOF
 
