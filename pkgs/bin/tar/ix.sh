@@ -1,8 +1,8 @@
 {% extends '//die/c/autohell.sh' %}
 
 {% block fetch %}
-https://ftp.gnu.org/gnu/tar/tar-1.34.tar.xz
-md5:9a08d29a9ac4727130b5708347c0f5cf
+https://ftp.gnu.org/gnu/tar/tar-1.35.tar.xz
+sha:4d62ff37342ec7aed748535323930c7cf94acf71c3591882b26a7ea50f3edc16
 {% endblock %}
 
 {% block bld_libs %}
