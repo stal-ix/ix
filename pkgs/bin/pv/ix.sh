@@ -1,8 +1,8 @@
 {% extends '//die/c/autohell.sh' %}
 
 {% block fetch %}
-https://fossies.org/linux/privat/pv-1.6.20.tar.gz
-sha:b5f1ee79a370c5287e092b6e8f1084f026521fe0aecf25c44b9460b870319a9e
+https://github.com/a-j-wood/pv/releases/download/v1.7.0/pv-1.7.0.tar.gz
+sha:76fe3985215e87a44f2abf2b9a37702ede6b04a07ca5a5c189be16d5b6cbf439
 {% endblock %}
 
 {% block bld_libs %}
