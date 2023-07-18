@@ -4,7 +4,11 @@ import os
 import sys
 
 def fix_line(l):
-    return '#!/usr/bin/env ' + os.path.basename(l.strip())
+    r = '#!/usr/bin/env ' + os.path.basename(l.strip())
+
+    print(f'replace {l} -> {r}')
+
+    return r
 
 def fix(data):
     if data[:2].decode() == '#!':
