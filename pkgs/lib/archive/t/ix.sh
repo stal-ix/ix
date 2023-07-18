@@ -1,22 +1,14 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/libarchive/libarchive/archive/refs/tags/v3.6.2.tar.gz
-sha:652b84588488c2ff38db8f666cd7f781163f85bff4449dcb2e16d3c734f96697
-{% endblock %}
-
-{% block patch %}
-sed -e 's|.*PROPERTIES OUTPUT_NAME archive.*||' -i libarchive/CMakeLists.txt
+https://github.com/libarchive/libarchive/archive/refs/tags/v3.7.0.tar.gz
+sha:d9b7699ac83f695cd77260bf4d1f4c3682cc180e84d4e54b2979e882b91326fb
 {% endblock %}
 
 {% block cmake_flags %}
+ENABLE_UNZIP=OFF
 ENABLE_OPENSSL=OFF
 ENABLE_LIBGCC=OFF
 ENABLE_LIBXML2=OFF
 ENABLE_TEST=OFF
-{% endblock %}
-
-{% block install %}
-{{super()}}
-rm ${out}/lib/*_static*
 {% endblock %}
