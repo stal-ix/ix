@@ -16,3 +16,8 @@ ENABLE_ICONV=OFF
 ENABLE_LIBB2=OFF
 ENABLE_PCREPOSIX=OFF
 {% endblock %}
+
+{% block test %}
+{{super()}}
+test -f ${out}/lib/libarchive.a
+{% endblock %}
