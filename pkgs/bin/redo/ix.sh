@@ -8,6 +8,7 @@ sha:47056b429ff5f85f593dcba21bae7bc6a16208a56b189424eae3de5f2e79abc1
 {% block bld_tool %}
 bld/bash
 bin/python/11
+bld/shebangs
 {% endblock %}
 
 {% block build %}
@@ -19,5 +20,6 @@ DESTDIR= PREFIX=${out} ./do install
 {% endblock %}
 
 {% block postinstall %}
-:
+cd ${out}/bin
+fix_shebungs *
 {% endblock %}
