@@ -1,0 +1,32 @@
+#!/usr/bin/env python3
+
+import sys
+import subprocess
+
+p = sys.args[1]
+f = sys.args[2]
+t = sys.args[3]
+
+def it_lines():
+    sum = None
+
+    for l in open(p).read().split('\n'):
+        if 'sha:' in l and sum:
+            yield 'sha:' + sum
+            sum = None
+        elif 'https://' in l and f in l:
+            l = l.replace(f, t)
+            yield l
+            h = subprocess.check_output([
+                'wget',
+                '--no-check-certificate',
+                '-O', '-',
+                url
+            ], shell=False)
+            sum = hashlib.sha256(h).hexdigest()
+        else:
+            yield l
+
+r = '\n'.join(it_lines())).strip() + '\n'
+
+print(r)
