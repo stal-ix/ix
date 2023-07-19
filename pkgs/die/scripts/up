@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
 
 import sys
+import hashlib
 import subprocess
 
-p = sys.args[1]
-f = sys.args[2]
-t = sys.args[3]
+p = sys.argv[1]
+f = sys.argv[2]
+t = sys.argv[3]
 
 def it_lines():
     sum = None
@@ -21,12 +22,13 @@ def it_lines():
                 'wget',
                 '--no-check-certificate',
                 '-O', '-',
-                url
+                l
             ], shell=False)
             sum = hashlib.sha256(h).hexdigest()
         else:
             yield l
 
-r = '\n'.join(it_lines())).strip() + '\n'
+r = '\n'.join(it_lines()).strip() + '\n'
 
-print(r)
+with open(p, 'w') as ff:
+    ff.write(r)

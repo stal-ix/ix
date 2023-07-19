@@ -1,8 +1,8 @@
 {% extends '//die/c/qt.sh' %}
 
 {% block fetch %}
-https://github.com/qt/qtdeclarative/archive/refs/tags/v6.5.1.tar.gz
-sha:b6f81ee73e8dbc30601c022b30ceb592fd2f8a5a79e7bc48fcd7feef80e3cc7a
+https://github.com/qt/qtdeclarative/archive/refs/tags/v6.5.2.tar.gz
+sha:8b9eed849c90fb301d5399c545c2c926c18dc889d724df2b284253152a2ee139
 {% endblock %}
 
 {% block lib_deps %}
