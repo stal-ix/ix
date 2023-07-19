@@ -6,3 +6,7 @@ cd ${out}/bin
 ln -s bsdtar tar
 ln -s bsdcpio cpio
 {% endblock %}
+
+{% block test %}
+:
+{% endblock %}

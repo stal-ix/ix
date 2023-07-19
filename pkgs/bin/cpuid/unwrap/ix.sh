@@ -13,6 +13,7 @@ lib/kernel
 {% block bld_tool %}
 bld/gzip
 bld/perl
+bld/shebangs
 {% endblock %}
 
 {% block make_flags %}
@@ -24,5 +25,5 @@ arch={{target.arch}}
 {{super()}}
 cd ${out}
 mv usr/* ./
-sed -e 's|/usr/bin/perl|/usr/bin/env perl|' -i bin/cpuinfo2cpuid
+fix_shebangs bin/cpuinfo2cpuid
 {% endblock %}

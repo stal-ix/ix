@@ -16,14 +16,8 @@ make -j ${make_thrs} -C tools/minicargo
 
 {% block bld_tool %}
 bld/bash
-{% endblock %}
-
-{% block setup_tools %}
-cat << EOF > objcopy
-#!/usr/bin/env sh
-EOF
-
-chmod +x objcopy
+bld/fake(tool_name=strip)
+bld/fake(tool_name=objcopy)
 {% endblock %}
 
 {% block install %}

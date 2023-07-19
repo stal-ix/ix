@@ -1,6 +1,7 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
+bin/redo
 bin/iproute2
 bin/sddm
 bin/ghost/script

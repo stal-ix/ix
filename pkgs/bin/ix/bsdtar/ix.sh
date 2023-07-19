@@ -14,3 +14,7 @@ mv bin old
 mkdir bin
 mv old bin/bin_ix
 {% endblock %}
+
+{% block test %}
+:
+{% endblock %}

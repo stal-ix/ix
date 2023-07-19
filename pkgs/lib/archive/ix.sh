@@ -1,4 +1,4 @@
-{% extends '//lib/archive/t/ix.sh' %}
+{% extends 't/ix.sh' %}
 
 {% block lib_deps %}
 lib/c
@@ -11,4 +11,9 @@ lib/zstd
 lib/iconv
 lib/expat
 lib/bzip/2
+{% endblock %}
+
+{% block test %}
+{{super()}}
+test -f ${out}/lib/libarchive.a
 {% endblock %}

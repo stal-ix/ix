@@ -1,8 +1,8 @@
 {% extends '//lib/wlroots/16/ix.sh' %}
 
 {% block fetch %}
-https://github.com/hyprwm/Hyprland/releases/download/v0.27.0/source-v0.27.0.tar.gz
-sha:d3d11572ba51e4248e653e22034052ed371b8b3dac1a731d3506ebdfb41e6ccf
+https://github.com/hyprwm/Hyprland/releases/download/v0.27.1/source-v0.27.1.tar.gz
+sha:69cbda21627c74bb7eb2a6ab9d967eb982152752b27e3f01ce08b0fa32d20b5b
 {% endblock %}
 
 {% block step_unpack %}

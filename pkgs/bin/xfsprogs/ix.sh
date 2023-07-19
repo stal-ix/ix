@@ -1,8 +1,8 @@
 {% extends '//die/c/autohell.sh' %}
 
 {% block fetch %}
-https://www.kernel.org/pub/linux/utils/fs/xfs/xfsprogs/xfsprogs-6.3.0.tar.xz
-sha:ec987c9f0bcb2db2991bffb80d353150b389c3a2b79b6830411f7042adf6990c
+https://www.kernel.org/pub/linux/utils/fs/xfs/xfsprogs/xfsprogs-6.4.0.tar.xz
+sha:c31868418bfbf49a3a9c47fc70cdffde9d96f4ff0051bd04a0881e6654648104
 {% endblock %}
 
 {% block bld_libs %}
