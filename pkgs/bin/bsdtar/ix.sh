@@ -10,3 +10,7 @@ lib/nettle
 {{super()}}
 ENABLE_NETTLE=ON
 {% endblock %}
+
+{% block test %}
+test -f ${out}/bin/bsdtar
+{% endblock %}
