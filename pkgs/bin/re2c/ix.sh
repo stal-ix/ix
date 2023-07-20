@@ -1,13 +1,18 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/skvadrik/re2c/archive/refs/tags/3.0.tar.gz
-sha:acc6e49ec9638d4a75578f161945567d52bfcb85da998212adaef6328f5bdcc5
+https://github.com/skvadrik/re2c/archive/refs/tags/3.1.tar.gz
+sha:087c44de0400fb15caafde09fd72edc7381e688a35ef505ee65e0e3d2fac688b
 {% endblock %}
 
 {% block bld_libs %}
 lib/c
 lib/c++
+{% endblock %}
+
+{% block std_box %}
+{{super()}}
+bld/python
 {% endblock %}
 
 {% block build_flags %}
