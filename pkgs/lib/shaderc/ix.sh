@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/google/shaderc/archive/refs/tags/v2022.2.tar.gz
-sha:517d36937c406858164673db696dc1d9c7be7ef0960fbf2965bfef768f46b8c0
+https://github.com/google/shaderc/archive/refs/tags/v2023.5.tar.gz
+sha:6db6f91d480ab7ee32f51d8ed11460ddbd31cf9cebb00df09e46a2428dc553f0
 {% endblock %}
 
 {% block lib_deps %}
@@ -29,9 +29,9 @@ sed '/examples/d;/third_party/d' -i CMakeLists.txt
 sed '/build-version/d' -i glslc/CMakeLists.txt
 
 cat <<- EOF > glslc/src/build-version.inc
-"2022.1\\n"
-"2022.1\\n"
-"2022.1\\n"
+"2023.5\\n"
+"2023.5\\n"
+"2023.5\\n"
 EOF
 {% endblock %}
 
