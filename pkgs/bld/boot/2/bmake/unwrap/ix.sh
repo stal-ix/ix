@@ -2,7 +2,7 @@
 
 {% block fetch %}
 #https://www.crufty.net/ftp/pub/sjg/bmake-20210808.tar.gz
-https://github.com/pg83/store/raw/main/bmake-20210808.tar.gz
+https://github.com/stal-ix/sources/raw/main/bmake-20210808.tar.gz
 sha:40a5860812091a0613b9542637a0f4aa05f38889e2a1f889f0e827feb41357d2
 {% endblock %}
 
