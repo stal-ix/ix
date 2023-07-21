@@ -1,6 +1,6 @@
 {% extends 't/ix.sh' %}
 
-{% block std_env %}
+{% block bld_tool %}
 {{super()}}
 bld/wrapcc
 {% endblock %}
