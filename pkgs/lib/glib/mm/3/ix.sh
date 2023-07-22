@@ -1,8 +1,8 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://download.gnome.org/sources/glibmm/2.76/glibmm-2.76.0.tar.xz
-sha:8637d80ceabd94fddd6e48970a082a264558d4ab82684e15ffc87e7ef3462ab2
+https://download.gnome.org/sources/glibmm/2.77/glibmm-2.77.0.tar.xz
+sha:7cb34684e7ac6dfbf83492a52dff3f919e2fff63eb7810613bf71eb272d5450e
 {% endblock %}
 
 {% block lib_deps %}
