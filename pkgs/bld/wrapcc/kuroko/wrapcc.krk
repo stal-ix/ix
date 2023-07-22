@@ -17,6 +17,9 @@ def it_args():
 
 def flt_args():
     for x in it_args():
+        if x == '-MMD':
+            continue
+
         if '-D-pthread' in x:
             continue
 
@@ -102,6 +105,12 @@ def calc_program(args):
 
 def main():
     let sa = str(args)
+
+    if '-M' in args:
+        return
+
+    if '-MM' in args:
+        return
 
     if '-c' in args:
         pass

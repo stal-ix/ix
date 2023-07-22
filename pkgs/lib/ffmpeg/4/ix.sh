@@ -34,6 +34,7 @@ bld/pkg/config
 
 {% block build_flags %}
 shut_up
+wrap_cc
 {% endblock %}
 
 {% block configure_all_flags %}
@@ -42,6 +43,7 @@ shut_up
 --enable-static
 --disable-shared
 --disable-programs
+--disable-stripping
 
 --enable-libaom
 --enable-libdav1d
@@ -57,4 +59,9 @@ shut_up
 --enable-libspeex
 --enable-libtheora
 --enable-libmodplug
+{% endblock %}
+
+{% block make_flags %}
+CC=clang
+CXX=clang++
 {% endblock %}

@@ -22,6 +22,10 @@ bld/bash
 bld/elfutils
 {% endblock %}
 
+{% block build_flags %}
+wrap_cc
+{% endblock %}
+
 {% block make_target %}
 cli
 lib-static
