@@ -26,6 +26,7 @@ lib/dispatch
 lib/qt/6/svg
 lib/expected
 lib/qt/6/base
+lib/qt/6/deps
 lib/glib/mm/3
 lib/tg/rlottie
 lib/drivers/3d
@@ -104,14 +105,6 @@ cat << EOF >> Telegram/SourceFiles/stdafx.h
 #include "Telegram/ThirdParty/libtgvoip/webrtc_dsp/rtc_base/scoped_ref_ptr.h"
 #endif
 EOF
-
-sed -e 's|.*DESKTOP_APP_USE_PACKAGED.*||' \
-    -e 's|.*Xcb.*||' \
-    -e 's|.*Gtk3Theme.*||' \
-    -e 's|.*NimfInput.*||' \
-    -e 's|.*WindowsIntegration.*||' \
-    -e 's|.*GenericEngine.*||' \
-    -i cmake/external/qt/qt_static_plugins/qt_static_plugins.cpp
 
 find Telegram/SourceFiles -name '*.cpp' -type f | while read l; do
     sed -e 's|ranges::to<QVector>()|ranges::to<QList>()|' -i ${l}
