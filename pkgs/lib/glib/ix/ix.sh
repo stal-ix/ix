@@ -63,7 +63,9 @@ else
   glib_runstatedir = '/run'
 endif
 #}
-sed -e 's|/run|/var/run|' -i meson.build
+sed -e 's|/run|/var/run|' \
+    -e 's|export_dynamic_cflags =.*|export_dynamic_cflags = []|' \
+    -i meson.build
 {% endblock %}
 
 {% block env %}
