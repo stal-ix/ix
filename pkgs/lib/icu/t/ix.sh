@@ -22,3 +22,9 @@ bld/python
 {% block configure_flags %}
 --with-data-packaging=archive
 {% endblock %}
+
+{% block make_flags %}
+GEN_DEPS.c=true
+GEN_DEPS.cc=true
+{% endblock %}
+

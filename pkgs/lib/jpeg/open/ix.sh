@@ -11,8 +11,15 @@ sha:0333806d6adecc6f7a91243b2b839ff4d2053823634d4f6ed7a59bc87409122a
 lib/c
 {% endblock %}
 
+{% block bld_tool %}
+bld/fake(tool_name=javac)
+{% endblock %}
+
 {% block cmake_flags %}
 BUILD_JPIP=ON
+BUILD_JAVA=OFF
+PNG_LIBRARY_RELEASE=
+ZLIB_LIBRARY_RELEASE=
 BUILD_PKGCONFIG_FILES=ON
 OPENJPEG_INSTALL_PACKAGE_DIR="lib/cmake/openjpeg-{{self.version()}}"
 {% endblock %}

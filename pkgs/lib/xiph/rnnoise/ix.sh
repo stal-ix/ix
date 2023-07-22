@@ -12,9 +12,12 @@ lib/c
 {% block c_rename_symbol %}
 _celt_lpc
 _celt_autocorr
-
 celt_iir
 pitch_search
 remove_doubling
 pitch_downsample
+{% endblock %}
+
+{% block patch %}
+rm autogen.sh
 {% endblock %}

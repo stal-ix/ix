@@ -26,5 +26,6 @@ sh ./configure \
     --enable-vp8 \
     --enable-vp9 \
     --enable-vp9-highbitdepth \
-    --enable-vp9-temporal-denoising
+    --enable-vp9-temporal-denoising \
+    --disable-dependency-tracking
 {% endblock %}
