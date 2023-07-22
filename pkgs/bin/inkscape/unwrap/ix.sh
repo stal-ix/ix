@@ -1,8 +1,15 @@
 {% extends '//die/c/cmake.sh' %}
 
-{% block fetch %}
-https://inkscape.org/gallery/item/37360/inkscape-1.2.2.tar.xz
-sha:a0c7fd0d03c0a21535e648ef301dcf80dd7cfc1f3545e51065fbf1ba3ee8a5c4
+{% block git_repo %}
+https://gitlab.com/inkscape/inkscape
+{% endblock %}
+
+{% block git_branch %}
+INKSCAPE_1_3
+{% endblock %}
+
+{% block git_sha %}
+5057ddd444b6fcdc975b5f083759bf888f1b7fb258fa5acc533b7cec14e52284
 {% endblock %}
 
 {% block bld_libs %}
@@ -52,4 +59,10 @@ _LIBCPP_ENABLE_CXX17_REMOVED_FEATURES=1
 
 {% block setup %}
 export CXXFLAGS="-Wno-register ${CXXFLAGS}"
+{% endblock %}
+
+{% block patch %}
+sed -e 's|PAGE_SIZE|X_PAGE_SIZE|' -i src/attributes.cpp
+sed -e 's|PAGE_SIZE|X_PAGE_SIZE|' -i src/attributes.h
+sed -e 's|PAGE_SIZE|X_PAGE_SIZE|' -i src/object/sp-page.cpp
 {% endblock %}
