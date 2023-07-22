@@ -125,8 +125,13 @@ find . -name CMakeLists.txt | while read l; do
     sed -e 's|.*generate_dbus.*||' -i ${l}
 done
 
->Telegram/lib_base/base/platform/linux/base_system_media_controls_linux.cpp
->Telegram/SourceFiles/platform/linux/integration_linux.cpp
+base64 -d << EOF > Telegram/lib_base/base/platform/linux/base_system_media_controls_linux.cpp
+{% include 'base_system_media_controls_linux.cpp/base64' %}
+EOF
+
+base64 -d << EOF > Telegram/SourceFiles/platform/linux/integration_linux.cpp
+{% include 'integration_linux.cpp/base64' %}
+EOF
 
 sed -e 's|DESKTOP_APP_DISABLE_WAYLAND_INTEGRATION|TRUE|' -i Telegram/lib_webview/CMakeLists.txt
 {% endblock %}
