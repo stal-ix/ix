@@ -26,4 +26,5 @@ bld/gettext
 gitexecdir=bin/{{uniq_id}}
 INSTALL_SYMLINKS=yes
 NO_REGEX=NeedsStartEnd
+COMPUTE_HEADER_DEPENDENCIES=no
 {% endblock %}
