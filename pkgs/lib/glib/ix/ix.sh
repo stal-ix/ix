@@ -66,6 +66,21 @@ endif
 sed -e 's|/run|/var/run|' \
     -e 's|export_dynamic_cflags =.*|export_dynamic_cflags = []|' \
     -i meson.build
+
+{#
+In file included from ./lib/stats/stats-counter.h:28:
+./lib/atomic-gssize.h:118:10: error: cannot initialize a parameter of type 'gssize *' (aka 'long *') with an rvalue of type 'void *'
+  return g_atomic_pointer_compare_and_exchange(&a->value, oldval, newval);
+         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/pg/ix_root/store/pFkNvTTejTxC4NQW-lib-glib-ix/include/glib-2.0/glib/gatomic.h:258:44: note: expanded from macro 'g_atomic_pointer_compare_and_exchange'
+    __atomic_compare_exchange_n ((atomic), (void *) (&(gapcae_oldval)), (newval), FALSE, __ATOMIC_SEQ_CST, __ATOMIC_SEQ_CST) ? TRUE : FALSE; \
+                                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+#}
+cat << EOF >> glib/glib-typeof.h
+#pragma once
+#undef glib_typeof
+#define glib_typeof(x) __typeof__(x)
+EOF
 {% endblock %}
 
 {% block env %}
