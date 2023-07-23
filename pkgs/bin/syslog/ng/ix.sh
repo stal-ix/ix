@@ -31,3 +31,7 @@ autoreconf -if
 )
 {{super()}}
 {% endblock %}
+
+{% block setup %}
+export CXXFLAGS="-std=c++20 ${CXXFLAGS}"
+{% endblock %}
