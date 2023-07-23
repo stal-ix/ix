@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://github.com/libunwind/libunwind/archive/refs/tags/v1.6.2.tar.gz
-sha:b76546101ca00c5525ae939104ca1b9de4a444a61cfa9bfe7e505c66c4fb1f10
+https://github.com/libunwind/libunwind/archive/refs/tags/v1.7.1.tar.gz
+sha:f0b72f1511f86ed55e76c3510d7c0f614bf8568a66ef551f15b61a12a48f9eac
 {% endblock %}
 
 {# can not use full lib/c here, cause libc++-16 contains incompatible libunwind.h #}
