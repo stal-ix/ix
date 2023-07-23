@@ -25,6 +25,7 @@ bld/flex/lex
 {% block patch %}
 rm git2log
 echo '{{version}}' > VERSION
+>src/version.h
 {% endblock %}
 
 {% block build_flags %}
@@ -39,6 +40,11 @@ HWINFO_VERSION={{version}}
 
 {% block make_target %}
 static
+{% endblock %}
+
+{% block build %}
+make -C src/hd version.h
+{{super()}}
 {% endblock %}
 
 {% block install %}
