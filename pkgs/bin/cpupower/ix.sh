@@ -29,6 +29,7 @@ ln -s libcpupower.so libcpupower.a
 
 {% block make_flags %}
 CC=clang
+INSTALL=install
 libdir=${out}/lib
 bindir=${out}/bin
 sbindir=${out}/bin
