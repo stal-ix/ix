@@ -9,6 +9,11 @@ sha:b3779627c2dfd31e3d8c4485962c2efe17785ef975e2be5c8c0c9e6cd3c4ef66
 lib/c
 {% endblock %}
 
+{% block cmake_flags %}
+PNG_LIBRARY_RELEASE=
+ZLIB_LIBRARY_RELEASE=
+{% endblock %}
+
 {% block install %}
 {{super()}}
 cd ${out}

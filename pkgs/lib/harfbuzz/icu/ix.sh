@@ -5,6 +5,12 @@ lib/icu
 {{super()}}
 {% endblock %}
 
+{% block meson_flags %}
+icu=enabled
+{{super()}}
+icu=enabled
+{% endblock %}
+
 {% block install %}
 {{super()}}
 cd ${out}

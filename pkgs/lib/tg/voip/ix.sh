@@ -1,7 +1,7 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-{% include '//bin/telegram/desktop/unwrap/t/ver.sh' %}
+{% include '//bin/telegram/desktop/unwrap/ver.sh' %}
 {% endblock %}
 
 {% block lib_deps %}

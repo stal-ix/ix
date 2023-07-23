@@ -15,3 +15,8 @@ bld/bash
 bld/bison
 bld/gettext
 {% endblock %}
+
+{% block autoreconf %}
+export LT_OPTS=-ci
+{{super()}}
+{% endblock %}

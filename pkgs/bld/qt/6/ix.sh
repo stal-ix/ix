@@ -2,6 +2,7 @@
 
 {% block bld_libs %}
 lib/kernel
+lib/pcre/2
 {{super()}}
 {% endblock %}
 
@@ -11,6 +12,8 @@ bld/perl
 
 {% block cmake_flags %}
 INSTALL_LIBEXECDIR=bin
+QT_FEATURE_glib=OFF
+QT_FEATURE_icu=OFF
 QT_FEATURE_qmake=ON
 QT_FEATURE_sql=OFF
 QT_FEATURE_gui=OFF

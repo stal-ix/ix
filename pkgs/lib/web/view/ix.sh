@@ -1,8 +1,15 @@
 {% extends '//die/c/ix.sh' %}
 
-{% block fetch %}
-https://github.com/webview/webview/archive/5f6562f358d9f50df7fef2214e3e0ee8de87d5dc.zip
-sha:76ac1db16cb1efb1be9817f99dd9e8421c5242d3fd885d69489132148d716ac4
+{% block git_repo %}
+https://github.com/webview/webview
+{% endblock %}
+
+{% block git_commit %}
+5f6562f358d9f50df7fef2214e3e0ee8de87d5dc
+{% endblock %}
+
+{% block git_sha %}
+921220b5fe49637a1e15b3104b03b030e9c804594f63474a69b560024e3bfe60
 {% endblock %}
 
 {% block lib_deps %}

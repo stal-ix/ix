@@ -8,6 +8,7 @@ lib/fontconfig/bootstrap
 
 {% block meson_flags %}
 {{super()}}
+icu=disabled
 cairo=disabled
 utilities=disabled
 {% endblock %}
