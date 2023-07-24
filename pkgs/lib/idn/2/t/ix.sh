@@ -26,4 +26,11 @@ bld/help2man
 find . -type f -name '*.in.h' | while read l; do
     sed -e 's|@GNULIBHEADERS_OVERRIDE_WINT_T@|0|g' -i ${l}
 done
+mv unistring old
+mkdir unistring
+mv old/m4 unistring/
+cat << EOF > unistring/Makefile.am
+noinst_LTLIBRARIES = libunistring.la
+libunistring_la_SOURCES =
+EOF
 {% endblock %}
