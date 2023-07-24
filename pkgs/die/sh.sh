@@ -64,11 +64,13 @@ export TMPDIR=${PWD}/tmp
 # euc
 ) < /dev/null
 
+{# https://gist.github.com/pg83/4e54f757ce838ba6aaf746b6b9a2b8b3 #}
+
 {% block epilogue %}
 {% block fix_mtime  %}
 if command -v find; then
     find ${out} -type f | while read l; do
-        touch -m -t 197001010000.00 "${l}"
+        touch -m -t 197001010000.42 "${l}"
     done
 fi
 {% endblock %}
