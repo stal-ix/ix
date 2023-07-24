@@ -5,6 +5,8 @@
 {{sum}}
 {% endblock %}
 
+{% set fname %}go_{{sha}}.tar.lz4{% endset %}
+
 {% block bld_tool %}
 bin/go
 bld/stable/pack
@@ -13,7 +15,7 @@ bld/stable/pack
 {% block use_network %}true{% endblock %}
 
 {% block predict_outputs %}
-[{"path": "share/{{parent_id}}.tar.lz4", "sum": "{{sha}}"}]
+[{"path": "share/{{fname}}", "sum": "{{sha}}"}]
 {% endblock %}
 
 {% block build %}
@@ -29,18 +31,14 @@ find . -type f -name go.mod | while read l; do (
 
 cd ..
 
-stable_pack ${tmp}/{{parent_id}}.tar.lz4 src
+stable_pack ${tmp}/{{fname}} src
 go clean -modcache
 {% endblock %}
 
 {% block install %}
 mkdir ${out}/share
-mv ${tmp}/{{parent_id}}.tar.lz4 ${out}/share/
+mv ${tmp}/{{fname}} ${out}/share/
 ls -la ${out}/share/
-{% endblock %}
-
-{% block postinstall %}
-:
 {% endblock %}
 
 {% block env %}
