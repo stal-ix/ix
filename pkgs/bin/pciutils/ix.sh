@@ -1,6 +1,7 @@
 {% extends '//lib/pciutils/ix.sh' %}
 
 {% block bld_libs %}
+lib/z
 lib/kmod
 {{super()}}
 {% endblock %}

@@ -13,28 +13,25 @@ lib/zstd
 lib/openssl
 {% endblock %}
 
-{% block configure_all_flags %}
---with-xz
---with-zlib
---with-zstd
---with-openssl
---prefix=${out}
-{% endblock %}
-
 {% block bld_tool %}
 bld/fake/er(tool_name=xsltproc)
 {% endblock %}
 
+{% block configure_flags %}
+--with-xz
+--with-zlib
+--with-zstd
+--with-openssl
+{% endblock %}
+
 {% block patch %}
+sed -e 's|.*is not supported by.*||' -i configure.ac
 touch libkmod/docs/gtk-doc.make
 rm autogen.sh
 {% endblock %}
 
 {% block build %}
 {{super()}}
-llvm-ar qL \
-    libkmod/.libs/libkmod.so.2.4.0 \
-    shared/.libs/libshared.a \
-    libkmod/.libs/libkmod-internal.a
+touch libkmod.so
 touch man/modules.dep.bin.5
 {% endblock %}

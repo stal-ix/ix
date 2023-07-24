@@ -1,8 +1,8 @@
 {% extends '//die/c/waf.sh' %}
 
 {% block fetch %}
-https://github.com/mpv-player/mpv/archive/refs/tags/v0.35.1.tar.gz
-sha:41df981b7b84e33a2ef4478aaf81d6f4f5c8b9cd2c0d337ac142fc20b387d1a9
+https://github.com/mpv-player/mpv/archive/refs/tags/v0.36.0.tar.gz
+sha:29abc44f8ebee013bb2f9fe14d80b30db19b534c679056e4851ceadf5a5e8bf6
 {% endblock %}
 
 {% block lib_deps %}

@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://ftp.gnu.org/gnu/libidn/libidn2-2.3.3.tar.gz
-sha:f3ac987522c00d33d44b323cae424e2cffcb4c63c6aa6cd1376edacbf1c36eb0
+https://ftp.gnu.org/gnu/libidn/libidn2-2.3.4.tar.gz
+sha:93caba72b4e051d1f8d4f5a076ab63c99b77faee019b72b9783b267986dbb45f
 {% endblock %}
 
 {% block lib_deps %}
@@ -26,4 +26,11 @@ bld/help2man
 find . -type f -name '*.in.h' | while read l; do
     sed -e 's|@GNULIBHEADERS_OVERRIDE_WINT_T@|0|g' -i ${l}
 done
+mv unistring old
+mkdir unistring
+mv old/m4 unistring/
+cat << EOF > unistring/Makefile.am
+noinst_LTLIBRARIES = libunistring.la
+libunistring_la_SOURCES =
+EOF
 {% endblock %}

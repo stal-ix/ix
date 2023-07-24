@@ -84,3 +84,13 @@ ${COFLAGS}
 
 {{super()}}
 {% endblock %}
+
+{% block step_install %}
+{% if not boot %}
+# fix clock skew
+find . -type d -name '.deps' | while read l; do
+    rm -rf "${l}"
+done
+{% endif %}
+{{super()}}
+{% endblock %}
