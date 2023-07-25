@@ -5,7 +5,7 @@ https://github.com/tetratelabs/wazero/archive/refs/tags/v1.3.1.tar.gz
 {% endblock %}
 
 {% block go_sha %}
-af74e96af6e0c6ab34ad3e37e52251b59b1e24c59edf6667ca03fdb97f8a8079
+cb3b3df2400338a206bc1e32f62edb624184163e8c2adc1315edaf605db7b335
 {% endblock %}
 
 {% block unpack %}
