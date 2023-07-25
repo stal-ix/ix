@@ -1,6 +1,6 @@
 {% extends '//die/std/ix.sh' %}
 
-{% set fname %}go_{{sha}}.tar.lz4{% endset %}
+{% set fname %}go_{{parent_id}}.tar.lz4{% endset %}
 
 {% block bld_tool %}
 bin/go
@@ -40,7 +40,7 @@ find . -type f -name go.mod | while read l; do (
 ) done
 
 cd ..
-
+find src/
 stable_pack ${tmp}/{{fname}} src
 go clean -modcache
 {% endblock %}
@@ -49,6 +49,7 @@ go clean -modcache
 mkdir ${out}/share
 mv ${tmp}/{{fname}} ${out}/share/
 ls -la ${out}/share/
+sha256sum ${out}/share/*
 {% endblock %}
 
 {% block env %}
