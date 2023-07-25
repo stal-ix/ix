@@ -70,7 +70,7 @@ export TMPDIR=${PWD}/tmp
 {% block fix_mtime  %}
 if command -v find; then
     find ${out} -type f | while read l; do
-        touch -m -t 197001010000.42 "${l}"
+        touch -t 200001010000.00 "${l}"
     done
 fi
 {% endblock %}
