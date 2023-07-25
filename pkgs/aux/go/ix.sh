@@ -18,9 +18,7 @@ bld/stable/pack
 {% block step_unpack %}
 mkdir net
 cd net
-fetch() (
-    wget "{{url}}" || fetch
-)
+wget "{{url}}"
 fetch
 cd ..
 mkdir src
