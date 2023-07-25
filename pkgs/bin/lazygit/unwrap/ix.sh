@@ -5,7 +5,7 @@ https://github.com/jesseduffield/lazygit/archive/refs/tags/v0.39.4.tar.gz
 {% endblock %}
 
 {% block go_sha %}
-sha:6eb8e1d9c5476d6ea22369382e1065e669158420f69f0dc9e1835207aefd001f
+5d2b311b2a07a8a98c9bd22cceaf4a4ebe94a754969bc5ab09060a0f8774ad98
 {% endblock %}
 
 {% block install %}
