@@ -5,7 +5,7 @@ https://github.com/shadowsocks/go-shadowsocks2/archive/refs/tags/v0.1.5.tar.gz
 {% endblock %}
 
 {% block go_sha %}
-sha:890788bd014257e657f84b7a64f046798139110c3dea7e0c2d747b1d8bb4d3a0
+f5444c003e1e75476131d03cf3fe9b3a9bec9dbd8934fc687a2daccc44dfd37c
 {% endblock %}
 
 {% block install %}
