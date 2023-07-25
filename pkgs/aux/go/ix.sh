@@ -1,14 +1,11 @@
 {% extends '//die/std/ix.sh' %}
 
-{% block fetch %}
-{{url}}
-{{sum}}
-{% endblock %}
-
 {% set fname %}go_{{sha}}.tar.lz4{% endset %}
 
 {% block bld_tool %}
 bin/go
+bin/wget
+bld/extract
 bld/stable/pack
 {% endblock %}
 
@@ -16,6 +13,19 @@ bld/stable/pack
 
 {% block predict_outputs %}
 [{"path": "share/{{fname}}", "sum": "{{sha}}"}]
+{% endblock %}
+
+{% block step_unpack %}
+mkdir net
+cd net
+fetch() (
+    wget "{{url}}" || fetch
+)
+fetch
+cd ..
+mkdir src
+cd src
+extract 1 ../net/*
 {% endblock %}
 
 {% block build %}

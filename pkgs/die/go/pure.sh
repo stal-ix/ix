@@ -12,7 +12,7 @@ stable_unpack ${src}/*lz4
 {% endblock %}
 
 {% block bld_data %}
-aux/go(url={{self.go_url().strip()}},sum={{self.go_sum().strip()}},sha={{self.go_sha().strip()}})
+aux/go(url={{self.go_url().strip()}},sha={{self.go_sha().strip()}})
 {% endblock %}
 
 {% block go_build_flags %}
