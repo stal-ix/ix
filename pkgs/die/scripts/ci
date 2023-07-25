@@ -5,4 +5,5 @@ set -xue
 date
 sleep 50
 git pull
+sudo rm -rf /ix/build/*
 ./ix mut ci set/ci bld/all
