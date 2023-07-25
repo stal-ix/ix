@@ -19,7 +19,6 @@ bld/stable/pack
 mkdir net
 cd net
 wget "{{url}}"
-fetch
 cd ..
 mkdir src
 cd src
