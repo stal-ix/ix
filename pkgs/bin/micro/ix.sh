@@ -5,7 +5,7 @@ https://github.com/zyedidia/micro/archive/refs/tags/v2.0.11.tar.gz
 {% endblock %}
 
 {% block go_sha %}
-f62313bdef160f44357d12414a50922e574b3d14bc25df84e7a7eb5011f6c369
+6fcfb485439ef712704186c02e40eaa5a8225cd28c59fa4cfe4da30a489a17e9
 {% endblock %}
 
 {% block unpack %}
