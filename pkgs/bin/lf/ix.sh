@@ -5,7 +5,7 @@ https://github.com/gokcehan/lf/archive/refs/tags/r27.tar.gz
 {% endblock %}
 
 {% block go_sha %}
-sha:fc244cd8be5adee97cb4367e51afb784c9a96bc08e3172342b8f6264dccfed54
+2824e5d65bd405d1aa21ba9d087e108f927ee7cc082aa5af3576a1859778c405
 {% endblock %}
 
 {% block install %}
