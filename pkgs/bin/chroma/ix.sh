@@ -5,7 +5,7 @@ https://github.com/alecthomas/chroma/archive/refs/tags/v2.8.0.tar.gz
 {% endblock %}
 
 {% block go_sha %}
-38eea3b350354ffa0c2b446364da12cb12a8156568bb2c1f7cfc2d69fe82e322
+7bb6b183751b00ec8788a9f33449c2666287dc7637ce7e7a1af3fd8e60206bc8
 {% endblock %}
 
 {% block unpack %}
