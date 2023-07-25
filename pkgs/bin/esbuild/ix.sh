@@ -5,7 +5,7 @@ https://github.com/evanw/esbuild/archive/refs/tags/v0.18.14.tar.gz
 {% endblock %}
 
 {% block go_sha %}
-5bcfe6569b9320a2aa8f27abff8249d8432f298744f8d8c4467f0542122a3b93
+500dd4133ba8b8997ac7b49f5e1bf31cc6b7e18c8695e66f243eb19648531b72
 {% endblock %}
 
 {% block unpack %}
