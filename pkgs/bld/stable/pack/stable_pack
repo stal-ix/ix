@@ -2,13 +2,9 @@
 
 set -ue
 
-(
-    cd "${3}"
-
-    find ${out} | sort -r | while read l; do
-        chmod a-w "${l}" || rm "${l}"
-    done
-)
+find ${3} | sort -r | while read l; do
+    chmod a-w "${l}" || rm "${l}"
+done
 
 tar --sort=name --owner=root:0 --group=root:0 --mtime='UTC 1970-01-01'  -c -f "${2}.tmp" "${3}"
 lz4 "${2}.tmp" "${2}"
