@@ -41,7 +41,7 @@ find . -type f -name go.mod | while read l; do (
 
 cd ..
 find src/
-stable_pack ${tmp}/{{fname}} src
+stable_pack {{sha}} ${tmp}/{{fname}} src
 go clean -modcache
 {% endblock %}
 
