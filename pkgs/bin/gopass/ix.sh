@@ -5,7 +5,7 @@ https://github.com/gopasspw/gopass/archive/refs/tags/v1.14.3.tar.gz
 {% endblock %}
 
 {% block go_sha %}
-c0423c287ce3e989076a625b0ca9cbe0bf0469fd1a6609e3df562cd9b961543d
+b1a0dd38ae84643393b4fe0d679b57f95eaf1e56bb902c6ce05551e9cf4d1237
 {% endblock %}
 
 {% block install %}
