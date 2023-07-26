@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/WasmEdge/WasmEdge/archive/refs/tags/0.13.2.tar.gz
-sha:78f20dfb9e81a384ab779caffb03650d20c2989bbb3d395f33ad9969675d810e
+https://github.com/WasmEdge/WasmEdge/archive/refs/tags/0.13.3.tar.gz
+sha:ad7a09f1a0f245473af748244f656387841e9f496b894a66feee954066bb6454
 {% endblock %}
 
 {% block bld_libs %}
