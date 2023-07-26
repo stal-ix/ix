@@ -9,7 +9,7 @@ https://github.com/TelegramMessenger/rlottie
 {% endblock %}
 
 {% block git_sha %}
-b866ccd7fc444b926571ef80a594cbba609b09e8a599adb26a45241d8eb33ac8
+e56a0e69d14b6545bbc4b363c1125c5b6c027321c9f59d721c24271aada72436
 {% endblock %}
 
 {% block lib_deps %}
