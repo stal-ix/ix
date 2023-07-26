@@ -5,7 +5,7 @@ https://github.com/nwg-piotr/nwg-menu/archive/refs/tags/v0.1.1.tar.gz
 {% endblock %}
 
 {% block go_sha %}
-4bab6977ed8028583a053c8af27ec08033933a84b3ea7e5efb0fe9348598777c
+9703d287d3d44c2bd16e85fd6f2ed7d14d3e67bfa261bf5c03d8c8caa6fade90
 {% endblock %}
 
 {% block install %}
