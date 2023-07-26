@@ -9,7 +9,7 @@ bin/sddm
 bin/ghost/script
 bin/havoc
 bin/qemu/next
-bin/npm
+#bin/npm
 bin/protoc/c
 bin/systool
 bin/hwinfo

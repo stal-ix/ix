@@ -114,7 +114,7 @@ class Ops:
         self.cfg = cfg
 
     def execute_graph(self, graph):
-        run_cmd(['/bin/env', 'GOMAXPROCS=1', f'{B}/assemble'], input=json.dumps(graph))
+        run_cmd([f'{B}/assemble'], input=json.dumps(graph))
 
     def gc(self, kind):
         run_cmd([sys.executable, self.cfg.binary, 'gc'] + kind)
