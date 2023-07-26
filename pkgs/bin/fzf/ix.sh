@@ -4,12 +4,8 @@
 https://github.com/junegunn/fzf/archive/refs/tags/0.42.0.tar.gz
 {% endblock %}
 
-{% block go_sum %}
-sha:743c1bfc7851b0796ab73c6da7db09d915c2b54c0dd3e8611308985af8ed3df2
-{% endblock %}
-
 {% block go_sha %}
-sha:702198f6bbde97a0aa3b876fd019bb98c2864941a41d75cfe5f2a6dec3fa8ebf
+a8975e3e46cbbff37d9306cb374c5a7593d2348bc74ad031f382ad557c6756c6
 {% endblock %}
 
 {% block install %}

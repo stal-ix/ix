@@ -9,7 +9,7 @@ https://github.com/sgiurgiu/reddit_desktop
 {% endblock %}
 
 {% block git_sha %}
-c0bf131fc12df237a6570f36ca65ab01caa7d5065ae149147422d91412191d0f
+14fbb56ea2013e2c48d1cc2b79d54add4fea49b74f26c9a798788a2de14d66b0
 {% endblock %}
 
 {% block bld_libs %}

@@ -348,7 +348,6 @@ func newExecutor(graph *Graph) *executor {
 
 func (self *executor) visitAll(nodes []string) {
 	wg := &sync.WaitGroup{}
-	defer wg.Wait()
 
 	for _, n := range nodes {
 		f := self.out[n]
@@ -365,6 +364,8 @@ func (self *executor) visitAll(nodes []string) {
 			})
 		}()
 	}
+
+	wg.Wait()
 }
 
 func main() {

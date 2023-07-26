@@ -26,7 +26,7 @@ find . -type d -name '.git' | while read l; do
     rm -rf "${l}"
 done
 cd ..
-stable_pack {{parent_id}}.tar.lz4 src
+stable_pack {{sha}} {{parent_id}}.tar.lz4 src
 {% endblock %}
 
 {% block install %}

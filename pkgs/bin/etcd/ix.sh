@@ -5,11 +5,7 @@ https://github.com/etcd-io/etcd/archive/refs/tags/v3.4.22.tar.gz
 {% endblock %}
 
 {% block go_sha %}
-sha:9cb5c48e29d5ea0dfbf0cfc1c0b828cf16e8075138d0935cca8df98ce1bf7196
-{% endblock %}
-
-{% block go_sum %}
-sha:1fdbf10930c37776e0c7f53605855ef519ca7c7d685ed48939b54f8c14fa661a
+f41af4fe4507b1f36a3d898f4f687f91d129e32f9412c876b87ff04c77a611cc
 {% endblock %}
 
 {% block bld_libs %}

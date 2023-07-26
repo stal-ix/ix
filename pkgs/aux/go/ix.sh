@@ -1,19 +1,28 @@
 {% extends '//die/std/ix.sh' %}
 
-{% block fetch %}
-{{url}}
-{{sum}}
-{% endblock %}
+{% set fname %}go_{{parent_id}}.tar.lz4{% endset %}
 
 {% block bld_tool %}
 bin/go
+bin/wget
+bld/extract
 bld/stable/pack
 {% endblock %}
 
 {% block use_network %}true{% endblock %}
 
 {% block predict_outputs %}
-[{"path": "share/{{parent_id}}.tar.lz4", "sum": "{{sha}}"}]
+[{"path": "share/{{fname}}", "sum": "{{sha}}"}]
+{% endblock %}
+
+{% block step_unpack %}
+mkdir net
+cd net
+wget "{{url}}"
+cd ..
+mkdir src
+cd src
+extract 1 ../net/*
 {% endblock %}
 
 {% block build %}
@@ -28,19 +37,16 @@ find . -type f -name go.mod | while read l; do (
 ) done
 
 cd ..
-
-stable_pack ${tmp}/{{parent_id}}.tar.lz4 src
+find src/
+stable_pack {{sha}} ${tmp}/{{fname}} src
 go clean -modcache
 {% endblock %}
 
 {% block install %}
 mkdir ${out}/share
-mv ${tmp}/{{parent_id}}.tar.lz4 ${out}/share/
+mv ${tmp}/{{fname}} ${out}/share/
 ls -la ${out}/share/
-{% endblock %}
-
-{% block postinstall %}
-:
+sha256sum ${out}/share/*
 {% endblock %}
 
 {% block env %}

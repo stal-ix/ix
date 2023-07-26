@@ -9,7 +9,7 @@ https://github.com/gnustep/libobjc2
 {% endblock %}
 
 {% block git_sha %}
-4f8fd0548632a91a01db4cd5b4b02b31d0aad5c445199436f0827277fcbe9837
+2c93a8ab5a758ccb56caf702382ecc6b650e4fbdb260141e1f4799f3431a1d80
 {% endblock %}
 
 {% block cmake_flags %}

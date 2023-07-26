@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://gitlab.isc.org/isc-projects/bind9/-/archive/v9_19_11/bind9-v9_19_11.tar.bz2
-sha:7903d0d1aed57605d9049f85010ccf0782f1298357fa4148cc2d18b2cc8f0131
+https://github.com/isc-projects/bind9/archive/refs/tags/v9.19.15.tar.gz
+0cbbee615e1deb8f1c5e9edfede25dfdc7e3868ae00eb281a5974b2fb5989f6a
 {% endblock %}
 
 {% block bld_libs %}
@@ -14,6 +14,7 @@ lib/icu
 lib/cap
 lib/lmdb
 lib/edit
+lib/urcu
 lib/xml/2
 lib/idn/2
 lib/cmocka
