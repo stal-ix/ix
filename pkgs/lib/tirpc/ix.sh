@@ -17,3 +17,7 @@ lib/bsd/overlay
 {% block configure_flags %}
 --disable-gssapi
 {% endblock %}
+
+{% block env %}
+export CPPFLAGS="-I${out}/include/tirpc \${CPPFLAGS}"
+{% endblock %}
