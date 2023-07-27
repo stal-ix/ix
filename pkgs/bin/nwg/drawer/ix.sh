@@ -5,7 +5,7 @@ https://github.com/nwg-piotr/nwg-drawer/archive/refs/tags/v0.3.7.tar.gz
 {% endblock %}
 
 {% block go_sha %}
-1cd17354a04aab0f78900d13294a707494c7f9c7dc284deb5410c379f4d1d183
+5c20a618580348ef9d17d66e70974e62b4b60a094737a035dc806cbbe6da6f58
 {% endblock %}
 
 {% block install %}
