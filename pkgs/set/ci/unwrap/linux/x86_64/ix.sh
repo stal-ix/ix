@@ -604,7 +604,7 @@ bin/convert
 bin/catimg
 bin/ccache
 bin/bsdiff
-bin/traceroute
+#bin/traceroute
 bin/xinetd
 bin/ncdu
 bin/lshw
