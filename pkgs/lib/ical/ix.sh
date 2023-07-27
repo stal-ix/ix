@@ -8,8 +8,9 @@ sha:b44705dd71ca4538c86fb16248483ab4b48978524fb1da5097bd76aa2e0f0c33
 {% block lib_deps %}
 lib/c
 lib/c++
-lib/xml/2
+lib/icu
 lib/glib
+lib/xml/2
 {% endblock %}
 
 {% block bld_tool %}
