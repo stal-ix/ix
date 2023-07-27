@@ -9,7 +9,7 @@ https://github.com/Kufat/st-sdl
 {% endblock %}
 
 {% block git_sha %}
-3a86f768db5246b6635ebd9222d878860d33edcf645861aec932b5f2461df60b
+c09117fc90a33328ad0a5683edf5931b0901b25ab5d18084183d6166bdf00bf5
 {% endblock %}
 
 {% block bld_libs %}
@@ -39,5 +39,10 @@ find . -type f | while read l; do
     sed -e 's|st-256color|xterm|' -i ${l}
 done
 
-sed -e 's|.*tic -s.*||' -i Makefile
+sed -e 's|.*tic -s.*||' \
+    -e 's|/usr/|nowhere|' \
+    -i Makefile
+
+sed -e 's|/usr/|nowhere|' \
+    -i config.mk
 {% endblock %}
