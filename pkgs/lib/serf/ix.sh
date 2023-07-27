@@ -1,8 +1,8 @@
 {% extends '//die/c/ix.sh' %}
 
 {% block fetch %}
-https://www.apache.org/dist/serf/serf-1.3.9.tar.bz2
-md5:370a6340ff20366ab088012cd13f2b57
+https://github.com/apache/serf/archive/refs/tags/1.3.9.tar.gz
+sha:ebeb4904692e68469de7fdedf99f1fc102d3fc922c9bb811231c7ff7395b9c9c
 {% endblock %}
 
 {% block lib_deps %}
