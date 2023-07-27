@@ -8,3 +8,8 @@ sha:ebda1279a813d9b0f7860ce5029ccf5ea9f8868be070f2eaf40f90f2e64b6414
 {% block bld_libs %}
 lib/c
 {% endblock %}
+
+{% block make_flags %}
+BINDIR=${out}/bin
+SYSCONFDIR=${out}/etc
+{% endblock %}
