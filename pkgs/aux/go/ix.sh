@@ -4,7 +4,7 @@
 
 {% block bld_tool %}
 bin/go
-bin/wget
+bld/fetch
 bld/extract
 bld/stable/pack
 {% endblock %}
@@ -18,7 +18,7 @@ bld/stable/pack
 {% block step_unpack %}
 mkdir net
 cd net
-wget "{{url}}"
+fetch "{{url}}"
 cd ..
 mkdir src
 cd src
