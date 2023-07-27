@@ -7,3 +7,7 @@ lz4 -d "${1}" - | bsdtar -x -f - --no-same-permissions --no-same-owner --strip-c
 find . -type d | sort -nr | while read l; do
     chmod +w "${l}"
 done
+
+find . -type f | sort -nr | while read l; do
+    chmod +w "${l}"
+done

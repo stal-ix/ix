@@ -9,7 +9,7 @@ https://kernel.googlesource.com/pub/scm/bluetooth/sbc
 {% endblock %}
 
 {% block git_sha %}
-1a526e2a1fb09dafc7c450f0e7616c28106dc4a522f58c3af1c6b5b06ae963e8
+078efe273e3bc5f836e740163feef973ce5f710606a96d89b1d29bbb470de7d3
 {% endblock %}
 
 {% block lib_deps %}
