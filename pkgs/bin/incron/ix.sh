@@ -29,3 +29,7 @@ rm -rf sbin
 {% block setup %}
 export CXXFLAGS="-std=c++14 ${CXXFLAGS}"
 {% endblock %}
+
+{% block patch %}
+sed -e 's|-o $(USER)||g' -i Makefile
+{% endblock %}
