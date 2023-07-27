@@ -7,7 +7,7 @@ https://github.com/tvrzna/emptty/archive/refs/tags/v0.10.0.tar.gz
 {% endblock %}
 
 {% block go_sha %}
-081cc826ec8e8d9239ca7fafe71c2b8074b63c1948efceb3d635fc20dcf99621
+45cb5da14a10e7233e73128b0e27d7d503928f86532829ae48b8e62adf1a84d4
 {% endblock %}
 
 {% block go_tags %}
