@@ -34,9 +34,12 @@ def chksum(path, sch):
 
 
 def calc_chksum(path, old_cs):
-    sch = old_cs[:old_cs.index(':')]
+    if ':' in old_cs:
+        sch = old_cs[:old_cs.index(':')]
 
-    return sch + ':' + chksum(path, sch)
+        return sch + ':' + chksum(path, sch)
+
+    return chksum(path, 'sha')
 
 
 def cli_misc_extract(ctx):
