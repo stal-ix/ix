@@ -1,7 +1,7 @@
 {% extends '//die/c/make.sh' %}
 
 {% block fetch %}
-http://download.netsurf-browser.org/libs/releases/libnsgif-0.2.1-src.tar.gz
+https://download.netsurf-browser.org/libs/releases/libnsgif-0.2.1-src.tar.gz
 sha:9eaea534cd70b53c5aaf45317ae957701685a6b4a88dbe34ed26f4faae879a4b
 {% endblock %}
 
