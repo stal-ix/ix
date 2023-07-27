@@ -2,7 +2,7 @@
 
 {% block fetch %}
 https://www.atoptool.nl/download/atop-2.9.0.tar.gz
-sha:bc355ebd7af3f9c6f01be2ff50e581622d24f5ea0d8d5f3366e2fd1311ab98f8
+sha:8d82f211b712a227000ef254c0a2b53bcb71235bf40d93316acce80b04bff926
 {% endblock %}
 
 {% block bld_libs %}
@@ -10,6 +10,14 @@ lib/c
 lib/z
 lib/kernel
 lib/curses
+{% endblock %}
+
+{% block blt_tool %}
+bin/getopt
+{% endblock %}
+
+{% block patch %}
+sed -e 's|/bin/systemctl|qqq|g' -i Makefile
 {% endblock %}
 
 {% block cpp_missing %}
