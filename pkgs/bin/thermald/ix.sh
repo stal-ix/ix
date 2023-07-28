@@ -28,3 +28,7 @@ bld/auto/archive
 export NO_CONFIGURE=1
 {{super()}}
 {% endblock %}
+
+{% block make_flags %}
+DBUS_SYS_DIR=${out}/etc/dbus-1
+{% endblock %}
