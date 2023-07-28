@@ -391,7 +391,7 @@ bin/djvulibre
 bin/avif
 bin/intltool
 bin/labwc
-#bin/fish
+bin/fish
 #bin/surfer
 bin/sqlite3
 bin/mimetype
