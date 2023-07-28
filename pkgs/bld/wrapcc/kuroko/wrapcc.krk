@@ -23,6 +23,12 @@ def flt_args():
         if x.startswith('-L/usr/'):
             continue
 
+        if x.startswith('-L/lib/'):
+            continue
+
+        if x == '-L/lib':
+            continue
+
         if x.startswith('-I/usr/'):
             continue
 
