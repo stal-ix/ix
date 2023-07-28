@@ -14,6 +14,11 @@ https://github.com/SerenityOS/serenity
 bbea03a262d45619cb2512f27bacbdbaf3c2ede72473b1cad5eec9c71d3fc24b
 {% endblock %}
 
+{% block git_refine %}
+rm Base/usr/bin/env
+rm Base/bin/more
+{% endblock %}
+
 {% block step_unpack %}
 {{super()}}
 cd Ladybird
