@@ -17,10 +17,6 @@ bld/bison
 bld/python
 {% endblock %}
 
-{% block cmake_flags %}
-ICONV_COMPILES=TRUE
-ICONV_INCLUDE_DIR=/nowhere
-ICONV_ACCEPTS_CONST_INPUT=TRUE
-ICONV_ACCEPTS_NONCONST_INPUT=FALSE
-ICONV_IN_GLIBC=FALSE
+{% block build_flags %}
+wrap_cc
 {% endblock %}
