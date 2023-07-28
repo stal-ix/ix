@@ -14,3 +14,16 @@ lib/input
 {% block bld_tool %}
 bld/fakegit
 {% endblock %}
+
+{% block make_flags %}
+CONFIG_DIR=${out}/etc/keyd
+{% endblock %}
+
+{% block patch %}
+sed -e 's|.*mkdir.*/etc/keyd||' -i Makefile
+{% endblock %}
+
+{% block install %}
+mkdir -p ${out}/etc/keyd
+{{super()}}
+{% endblock %}

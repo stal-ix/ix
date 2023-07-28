@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://qmmp.ylsoftware.com/files/qmmp/2.1/qmmp-2.1.0.tar.bz2
-sha:ac7b5981e371dc58759d5efd2babb42e377ecc5260ba3e57ac6dbf0897570ddc
+https://downloads.sourceforge.net/project/qmmp-dev/qmmp/2.1/qmmp-2.1.4.tar.bz2
+sha:81b4240d9832a36d954d6a448b1b92d966a2c305e0283b275db07a43453439e3
 {% endblock %}
 
 {% block bld_libs %}

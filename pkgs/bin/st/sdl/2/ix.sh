@@ -9,7 +9,7 @@ https://github.com/Kufat/st-sdl
 {% endblock %}
 
 {% block git_sha %}
-3a86f768db5246b6635ebd9222d878860d33edcf645861aec932b5f2461df60b
+c09117fc90a33328ad0a5683edf5931b0901b25ab5d18084183d6166bdf00bf5
 {% endblock %}
 
 {% block bld_libs %}
@@ -22,8 +22,18 @@ lib/shim/fake(lib_name=png12)
 lib/shim/fake(lib_name=stdc++)
 {% endblock %}
 
+{% block build_flags %}
+wrap_cc
+{% endblock %}
+
+{% block make_flags %}
+CC=clang
+CXX=clang++
+{% endblock %}
+
 {% block bld_tool %}
 bld/pkg/config
+bld/fake(tool_name=sdl-config)
 {% endblock %}
 
 {% block configure %}

@@ -7,7 +7,7 @@ sha:7a6c27c9c0fe6f39069365c33a93e43f5ae2b09f80943ec9309240f809440128
 
 {% block use_network %}true{% endblock %}
 
-{% set sum %}68ddd8f2caf3b1909a2e0bdba428c45a35583f50f0fdfc031030f0a297eaddb8{% endset %}
+{% set sum %}e1d87aff7410f556f30fa34606bb94f2964e07ccfaee3400e51ae5e62378e39b{% endset %}
 
 {% block predict_outputs %}
 [{"path": "share/npm.tar.lz4", "sum": "{{sum}}"}]

@@ -9,7 +9,7 @@ https://github.com/davmac314/dinit
 {% endblock %}
 
 {% block git_sha %}
-5449069eb4b143098e7d5c1b0c90987f9cb4c88926e041ffcb2b42a217fb45a3
+243a9161ee7b985b14773721796a822cddd845811b3982ce0e8141c645be765a
 {% endblock %}
 
 {% block bld_libs %}

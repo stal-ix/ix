@@ -13,3 +13,12 @@ lib/kernel
 {% block patch %}
 sed -e 's|-lm||' -i Make.rules
 {% endblock %}
+
+{% block build_flags %}
+wrap_cc
+{% endblock %}
+
+{% block make_flags %}
+CC=clang
+CXX=clang++
+{% endblock %}

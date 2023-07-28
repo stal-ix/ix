@@ -7,6 +7,10 @@ def b64(data):
     return base64.b64encode(data.encode()).decode()
 
 
+def b64d(data):
+    return base64.b64decode(data).decode()
+
+
 def cut_include(l):
     l = l.strip()
 
@@ -23,6 +27,9 @@ class Env(jinja2.Environment, jinja2.BaseLoader):
         self.cache = {}
         self.vfs = vfs
         self.filters['b64'] = b64
+        self.filters['b64e'] = b64
+        self.filters['b64d'] = b64d
+
 
     def resolve_includes(self, data, name):
         def it():

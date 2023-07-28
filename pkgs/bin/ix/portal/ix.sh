@@ -5,7 +5,7 @@ https://github.com/pg83/portal/archive/refs/tags/1.tar.gz
 {% endblock %}
 
 {% block go_sha %}
-182aca4153e1476644c541b34b0e1849b072602678753aed17bc149853c16e43
+bd1714c6c7b02987b849d65ea60456e2beacf5c1e8832b1f2ea44842c741e264
 {% endblock %}
 
 {% block install %}

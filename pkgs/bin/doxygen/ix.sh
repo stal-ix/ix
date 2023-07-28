@@ -8,10 +8,15 @@ sha:691777992a7240ed1f822a5c2ff2c4273b57c1cf9fc143553d87f91a0c5970ee
 {% block bld_libs %}
 lib/c
 lib/c++
+lib/iconv
 {% endblock %}
 
 {% block bld_tool %}
 bld/flex
 bld/bison
 bld/python
+{% endblock %}
+
+{% block build_flags %}
+wrap_cc
 {% endblock %}

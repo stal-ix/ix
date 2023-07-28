@@ -22,3 +22,7 @@ bld/gettext
 {{super()}}
 rm -rf ${out}/share/pkgconfig
 {% endblock %}
+
+{% block build_flags %}
+wrap_cc
+{% endblock %}

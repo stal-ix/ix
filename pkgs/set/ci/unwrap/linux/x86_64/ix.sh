@@ -9,7 +9,7 @@ bin/sddm
 bin/ghost/script
 bin/havoc
 bin/qemu/next
-#bin/npm
+bin/npm
 bin/protoc/c
 bin/systool
 bin/hwinfo
@@ -37,7 +37,7 @@ bin/dnsmasq
 bin/goawk
 bin/sniffer
 bin/webp/gui
-bin/yt
+#bin/yt
 bin/links/sdl
 bin/icc
 bin/ix/portal

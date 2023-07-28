@@ -9,7 +9,7 @@ https://github.com/magiblot/tvision
 {% endblock %}
 
 {% block git_sha %}
-0614f6073fb385c7e1a12664c10c2da3ddc9d86f85788eb227696d9b47dd07bd
+5413496da748c31a9e342fb8e386de4971673597cf127f8c85ecc7aacd100201
 {% endblock %}
 
 {% block lib_deps %}

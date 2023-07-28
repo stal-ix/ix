@@ -17,6 +17,11 @@
 {% endblock %}
 {% endset %}
 
+{% set git_refine %}
+{% block git_refine %}
+{% endblock %}
+{% endset %}
+
 {% block bld_deps %}
 {% if git_sha %}
 bld/stable/unpack
@@ -26,7 +31,7 @@ bld/stable/unpack
 
 {% block bld_data %}
 {% if git_sha %}
-aux/git(parent_id=src_{{git_sha.strip()}},sha={{git_sha.strip()}},branch={{git_branch.strip()}},repo={{git_repo.strip()}},commit={{git_commit.strip()}})
+aux/git(parent_id=src_{{git_sha.strip()}},sha={{git_sha.strip()}},branch={{git_branch.strip()}},repo={{git_repo.strip()}},commit={{git_commit.strip()}},refine={{git_refine.strip() | b64e}})
 {% endif %}
 {{super()}}
 {% endblock %}

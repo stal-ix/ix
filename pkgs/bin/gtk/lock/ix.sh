@@ -14,9 +14,13 @@ lib/gtk/layer/shell
 {% endblock %}
 
 {% block bld_tool %}
+bld/glib
 bin/scdoc
 bld/wayland
 bin/xmllint
 bld/pkg/config
-bld/glib
+{% endblock %}
+
+{% block patch %}
+sed -e 's|/etc/pam.d|$(PREFIX)/etc/pam.d|' -i makefile
 {% endblock %}
