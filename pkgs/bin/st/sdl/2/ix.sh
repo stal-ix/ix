@@ -22,8 +22,18 @@ lib/shim/fake(lib_name=png12)
 lib/shim/fake(lib_name=stdc++)
 {% endblock %}
 
+{% block build_flags %}
+wrap_cc
+{% endblock %}
+
+{% block make_flags %}
+CC=clang
+CXX=clang++
+{% endblock %}
+
 {% block bld_tool %}
 bld/pkg/config
+bld/fake(tool_name=sdl-config)
 {% endblock %}
 
 {% block configure %}
@@ -39,10 +49,5 @@ find . -type f | while read l; do
     sed -e 's|st-256color|xterm|' -i ${l}
 done
 
-sed -e 's|.*tic -s.*||' \
-    -e 's|/usr/|nowhere|' \
-    -i Makefile
-
-sed -e 's|/usr/|nowhere|' \
-    -i config.mk
+sed -e 's|.*tic -s.*||' -i Makefile
 {% endblock %}
