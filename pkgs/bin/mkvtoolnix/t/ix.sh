@@ -27,6 +27,7 @@ lib/shim/fake(lib_name=stdc++)
 {% block bld_tool %}
 bld/ruby
 bld/qt/6
+bin/rsync
 bld/gettext
 bld/fake/er(tool_name=xsltproc)
 {% endblock %}
@@ -37,16 +38,20 @@ bld/fake/er(tool_name=xsltproc)
 --with-docbook_xsl_root=${out}
 {% endblock %}
 
+{% block build_flags %}
+wrap_cc
+{% endblock %}
+
 {% block setup_tools %}
 mkdir QT
 
 echo "${QT_PATH}" | tr ':' '\n' | while read l; do
-    cp -R ${l}/* QT/
+    rsync -a ${l}/* QT/
 done
 
 qqq=$(dirname $(dirname $(which qmake6)))
 
-cp -R ${qqq}/* QT/
+rsync -a ${qqq}/* QT/
 
 cd QT
 ln -s bin libexec
@@ -65,6 +70,7 @@ qmake6 -qtconf ${PWD}/qt.conf "\${@}"
 EOF
 
 chmod +x ixqmake6
+{{super()}}
 {% endblock %}
 
 {% block build %}
