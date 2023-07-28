@@ -15,3 +15,12 @@ lib/curl
 {% block bld_tool %}
 bld/pkg/config
 {% endblock %}
+
+{% block build_flags %}
+wrap_cc
+{% endblock %}
+
+{% block make_flags %}
+CC=clang
+CXX=clang++
+{% endblock %}
