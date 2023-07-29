@@ -115,6 +115,9 @@ def calc_program(args):
 def main():
     let sa = str(args)
 
+    if '--print-search-dirs' in args:
+        return
+
     if '-c' in args:
         pass
     elif '-shared' in sa or '--soname' in sa:
