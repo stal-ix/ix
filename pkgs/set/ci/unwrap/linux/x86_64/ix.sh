@@ -37,7 +37,7 @@ bin/dnsmasq
 bin/goawk
 bin/sniffer
 bin/webp/gui
-#bin/yt
+bin/yt
 bin/links/sdl
 bin/icc
 bin/ix/portal

@@ -102,6 +102,7 @@ find ${out}/bin/ ${out}/share/ | grep '\.[ao]$' | xargs rm{% if lib %} || true{%
 {% block env_lib %}
 export TARGET_PYTHONHOME="${out}"
 export CPPFLAGS="-I$(echo ${out}/include/python*) \${CPPFLAGS}"
+export CMFLAGS="-DPython_ROOT_DIR=${out} -DPython3_ROOT_DIR=${out} \${CMFLAGS}"
 {% endblock %}
 
 {% block purge_empty_dirs %}
