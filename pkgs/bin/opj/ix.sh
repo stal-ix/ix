@@ -1,4 +1,4 @@
-{% extends '//lib/jpeg/open/ix.sh' %}
+{% extends '//lib/jpeg/open/t/ix.sh' %}
 
 {% block bld_libs %}
 lib/z
