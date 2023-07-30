@@ -1,17 +1,21 @@
-{% extends '//die/c/cmake.sh' %}
+{% extends 't/ix.sh' %}
 
-{% block fetch %}
-https://storage.googleapis.com/downloads.webmproject.org/releases/webp/libwebp-1.3.1.tar.gz
-sha:b3779627c2dfd31e3d8c4485962c2efe17785ef975e2be5c8c0c9e6cd3c4ef66
-{% endblock %}
-
-{% block lib_deps %}
-lib/c
+{% block build_flags %}
+{{super()}}
+wrap_cc
 {% endblock %}
 
 {% block cmake_flags %}
-PNG_LIBRARY_RELEASE=
-ZLIB_LIBRARY_RELEASE=
+{{super()}}
+WEBP_BUILD_ANIM_UTILS=OFF
+WEBP_BUILD_CWEBP=OFF
+WEBP_BUILD_DWEBP=OFF
+WEBP_BUILD_GIF2WEBP=OFF
+WEBP_BUILD_IMG2WEBP=OFF
+WEBP_BUILD_VWEBP=OFF
+WEBP_BUILD_EXTRAS=OFF
+WEBP_BUILD_WEBPINFO=OFF
+WEBP_BUILD_WEBPMUX=OFF
 {% endblock %}
 
 {% block install %}

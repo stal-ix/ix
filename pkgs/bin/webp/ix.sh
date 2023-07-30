@@ -1,4 +1,4 @@
-{% extends '//lib/webp/ix.sh' %}
+{% extends '//lib/webp/t/ix.sh' %}
 
 {% block bld_libs %}
 lib/png
