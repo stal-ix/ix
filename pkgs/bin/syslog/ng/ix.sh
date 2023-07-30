@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://github.com/syslog-ng/syslog-ng/releases/download/syslog-ng-4.2.0/syslog-ng-4.2.0.tar.gz
-sha:092bd17fd47002c988aebdf81d0ed3f3cfd0e82b388d2453bcaa5e67934f4dda
+https://github.com/syslog-ng/syslog-ng/releases/download/syslog-ng-4.3.1/syslog-ng-4.3.1.tar.gz
+sha:999dbab62982c3cffba02c0be22c596ee1ce81d6954689dc9b3a6afeb513cce3
 {% endblock %}
 
 {% block bld_libs %}
@@ -34,4 +34,8 @@ autoreconf -if
 
 {% block setup %}
 export CXXFLAGS="-std=c++20 ${CXXFLAGS}"
+{% endblock %}
+
+{% block patch %}
+>modules/examples/sources/random-choice-generator/random-choice-generator.cpp
 {% endblock %}
