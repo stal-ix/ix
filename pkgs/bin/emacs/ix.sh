@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://github.com/emacs-mirror/emacs/archive/refs/tags/emacs-28.2.tar.gz
-sha:ec15e87fa5a6f1edd66814d8684d9e952570c699d5b49ccf1d469ae638b82634
+https://github.com/emacs-mirror/emacs/archive/refs/tags/emacs-29.1.tar.gz
+sha:77acbd95a036b1946aff2dda2288def0fc9180d378adcbe3d5aa3f8b954fd48d
 {% endblock %}
 
 {% block bld_libs %}
