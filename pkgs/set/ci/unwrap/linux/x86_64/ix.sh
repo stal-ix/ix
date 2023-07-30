@@ -1,6 +1,7 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
+bin/maxima
 bin/whois
 bin/esbuild
 bin/redo
