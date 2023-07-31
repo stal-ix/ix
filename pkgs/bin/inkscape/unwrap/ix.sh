@@ -44,9 +44,12 @@ lib/double/conversion
 {% endblock %}
 
 {% block bld_tool %}
+bin/gzip
+bld/perl
 bld/glib
 bld/python
 bld/gettext
+bin/ragel/6
 {% endblock %}
 
 {% block cmake_flags %}

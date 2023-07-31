@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://gitlab.gnome.org/GNOME/gspell/-/archive/1.12.1/gspell-1.12.1.tar.bz2
-sha:09269aa0a40d220f35e7dd0f674aefcaad59c3d67deb25bc661a9107fdffdd64
+https://gitlab.gnome.org/GNOME/gspell/-/archive/1.12.2/gspell-1.12.2.tar.bz2
+sha:e703bc41c5f3832d746cef7314cb5765f70d49c16250c65a669ded69eb0c8824
 {% endblock %}
 
 {% block conf_ver %}

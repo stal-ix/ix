@@ -1,10 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-#https://gmplib.org/download/gmp/gmp-6.2.1.tar.lz
-#md5:03a31d8cbaf29d136252f8f38875ed82
-https://github.com/stal-ix/sources/raw/main/gmp-6.2.1.tar.xz
-sha:fd4829912cddd12f84181c3451cc752be224643e87fac497b69edddadc49b4f2
+https://ftp.gnu.org/gnu/gmp/gmp-6.3.0.tar.xz
+sha:a3c2b80201b89e68616f4ad30bc66aee4927c3ce50e33929ca819d5c43538898
 {% endblock %}
 
 {% block lib_deps %}

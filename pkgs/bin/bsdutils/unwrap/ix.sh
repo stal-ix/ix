@@ -12,6 +12,7 @@ lib/c++
 lib/edit
 lib/curses
 lib/openssl
+lib/shim/fake(lib_name=tinfo)
 
 {% if linux %}
 lib/fts
@@ -30,4 +31,13 @@ bld/byacc
 cd ${out}
 mv sbin/* bin/
 rm -r sbin
+{% endblock %}
+
+{% block build_flags %}
+wrap_cc
+{% endblock %}
+
+{% block patch %}
+# TODO(pg): fix fts/rpmatch lookup
+sed -e 's|, static.*||' -i meson.build
 {% endblock %}

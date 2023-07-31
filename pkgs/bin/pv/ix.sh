@@ -1,8 +1,8 @@
 {% extends '//die/c/autohell.sh' %}
 
 {% block fetch %}
-https://github.com/a-j-wood/pv/releases/download/v1.7.0/pv-1.7.0.tar.gz
-sha:76fe3985215e87a44f2abf2b9a37702ede6b04a07ca5a5c189be16d5b6cbf439
+https://github.com/a-j-wood/pv/releases/download/v1.7.24/pv-1.7.24.tar.gz
+sha:3bf43c5809c8d50066eaeaea5a115f6503c57a38c151975b710aa2bee857b65e
 {% endblock %}
 
 {% block bld_libs %}

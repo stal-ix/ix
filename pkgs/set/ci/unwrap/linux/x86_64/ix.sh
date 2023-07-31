@@ -1,6 +1,8 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
+bin/wx/maxima
+bin/maxima
 bin/whois
 bin/esbuild
 bin/redo
@@ -37,7 +39,7 @@ bin/dnsmasq
 bin/goawk
 bin/sniffer
 bin/webp/gui
-#bin/yt
+bin/yt
 bin/links/sdl
 bin/icc
 bin/ix/portal
