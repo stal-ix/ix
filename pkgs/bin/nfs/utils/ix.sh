@@ -27,13 +27,13 @@ shut_up
 {% endblock %}
 
 {% block make_flags %}
-udev_rulesdir=${out}/lib
+udev_rulesdir=${out}/share/udev
 {% endblock %}
 
 {% block configure_flags %}
 --disable-gss
 --disable-sbin-override
---with-systemd=${out}/lib
+--with-systemd=${out}/share/systemd
 --with-statedir=${out}/var
 --with-rpcgen=$(which rpcgen)
 {% endblock %}

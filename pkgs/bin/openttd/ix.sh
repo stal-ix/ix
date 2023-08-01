@@ -30,3 +30,8 @@ OPTION_USE_THREADS=OFF
 # for man
 bin/gzip
 {% endblock %}
+
+{% block install %}
+{{super()}}
+mv ${out}/games ${out}/bin
+{% endblock %}

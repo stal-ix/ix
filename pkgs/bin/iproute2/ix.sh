@@ -27,6 +27,10 @@ bld/bison
 bld/pkg/config
 {% endblock %}
 
+{% block patch %}
+sed -e "s|/etc/iproute2|${out}/etc/iproute2|" -i Makefile
+{% endblock %}
+
 {% block configure %}
 sh ./configure --prefix=${out}
 {% endblock %}
@@ -40,7 +44,10 @@ limits.h
 {% endblock %}
 
 {% block make_flags %}
-PREFIX=/
-DESTDIR=${out}
-SBINDIR=/bin
+PREFIX=${out}
+SBINDIR=${out}/bin
+CONF_ETC_DIR=${out}/etc/iproute2
+NETNS_RUN_DIR=${out}/var/run/iproute2
+NETNS_ETC_DIR=${out}/etc/netns
+ARPDDIR=${out}/var/run/arpd
 {% endblock %}

@@ -9,7 +9,12 @@ sha:ebda1279a813d9b0f7860ce5029ccf5ea9f8868be070f2eaf40f90f2e64b6414
 lib/c
 {% endblock %}
 
+{% block bld_tool %}
+bld/fake(tool_name=chcon)
+bld/fake(tool_name=systemctl)
+{% endblock %}
+
 {% block make_flags %}
-BINDIR=${out}/bin
+BINDIR=/bin
 SYSCONFDIR=${out}/etc
 {% endblock %}
