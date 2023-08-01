@@ -3,6 +3,7 @@ import sys
 import shutil
 import hashlib
 
+import core.log as cl
 import core.error as ce
 import core.shell_cmd as csc
 
@@ -54,15 +55,19 @@ def cli_misc_fetch(ctx):
     args = ctx['args']
     url = args[0]
     path = args[1]
+    md5 = args[2]
     prepare_dir(os.path.dirname(path))
     csc.fetch_url(url, path)
+    check_md5(path, md5)
 
 
 def check_md5(path, old_cs):
     new_cs = calc_chksum(path, old_cs)
 
     if new_cs != old_cs:
-        raise ce.Error(f'expected {new_cs} checksum')
+        cs_col = cl.col(new_cs, color='r')
+
+        raise ce.Error(f'got {cs_col} checksum')
 
 
 def cli_misc_cksum(ctx):
