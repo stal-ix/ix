@@ -1,6 +1,7 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
+bin/knot/resolver
 bin/wx/maxima
 bin/maxima
 bin/whois
