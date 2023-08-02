@@ -1,6 +1,7 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
+bin/emacs/gtk
 bin/knot/resolver
 bin/wx/maxima
 bin/maxima
