@@ -37,6 +37,8 @@ ENABLE_JIT_DEFAULT=OFF
 ENABLE_FTL_DEFAULT=OFF
 ENABLE_JIT=OFF
 ENABLE_FTL=OFF
+
+TOUCH_EXECUTABLE=touch
 {% endblock %}
 
 {% block c_rename_symbol %}
@@ -65,4 +67,6 @@ EOF
 
 sed -e 's|ENABLE(DEVELOPER_MODE)|1|g' \
     -i Source/WebKit/Shared/glib/ProcessExecutablePathGLib.cpp
+
+sed -e 's|.*find.*TOUCH.*||' -i Source/JavaScriptCore/CMakeLists.txt
 {% endblock %}
