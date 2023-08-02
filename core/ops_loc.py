@@ -31,7 +31,7 @@ class Ops:
         return self.misc() + ['extract']
 
     def fetch(self, sb, url, path, md5):
-        return self.misc_cmd(sb, 'fetch', url, path)
+        return self.misc_cmd(sb, 'fetch', url, path, md5)
 
     def cksum(self, sb, fr, to, md5):
         return self.misc_cmd(sb, 'cksum', fr, to, md5)
