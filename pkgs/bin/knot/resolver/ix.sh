@@ -19,8 +19,14 @@ lib/protobuf/c
 {% endblock %}
 
 {% block bld_tool %}
+bld/bash
 bin/protoc/c
+bld/shebangs
 {% endblock %}
 
 {% block meson_strip_dirs %}
+{% endblock %}
+
+{% block patch %}
+fix_shebangs scripts/get-date.sh
 {% endblock %}
