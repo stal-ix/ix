@@ -7,6 +7,9 @@
 {% endblock %}
 
 {% block bld_tool %}
+{% if refine_tools %}
+{{refine_tools | b64d}}
+{% endif %}
 bin/git
 bld/stable/pack
 {% endblock %}
