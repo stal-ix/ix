@@ -1,6 +1,6 @@
 {% extends '//lib/placebo/5/ix.sh' %}
 
 {% block fetch %}
-https://github.com/haasn/libplacebo/archive/refs/tags/v6.292.0.tar.gz
-sha:cd9ecbea9b2cd61c4ea5816d262f620a3daff194399d2090e5a485c9adb294bb
+https://github.com/haasn/libplacebo/archive/refs/tags/v6.292.1.tar.gz
+sha:96f3266ca44ef681656af9b995e416ddd28a1691127f52cdea2ee4b0622a8b12
 {% endblock %}
