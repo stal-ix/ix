@@ -9,6 +9,14 @@ lib/zstd
 {{super()}}
 {% endblock %}
 
+{% block llvm_targets %}
+{{super()}}
+llvm-addr2line
+llvm-cxxfilt
+llvm-size
+llvm-strings
+{% endblock %}
+
 {% block clang_export_ver %}
 16.0.0
 {% endblock %}
