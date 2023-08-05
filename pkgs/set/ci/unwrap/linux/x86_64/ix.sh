@@ -449,7 +449,6 @@ bin/minised
 bin/moe
 #bin/star
 bin/mupdf
-bin/certtool
 bin/python/lite
 bin/python/huge
 bin/python/8
