@@ -1,6 +1,5 @@
-{% extends '//bin/clang/14/gcc/ix.sh' %}
+{% extends '//die/hub.sh' %}
 
-{% block c_compiler %}
-bin/gcc(gcc_ver=7,for_target={{host.gnu.three}})
-bin/gcc(gcc_ver=7,for_target={{target.gnu.three}})
+{% block run_deps %}
+bin/clang/14/tst/unwrap(libc=musl/pure,allocator=musl/pure,libcplpl_ver=13/gcc,crt_ver=hack/ish)
 {% endblock %}

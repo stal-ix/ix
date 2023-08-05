@@ -71,6 +71,7 @@ sed -e 's|/.*/bin/sh|/bin/sh|' -e 's|/.*/bin/sed|sed|' -i config.h
 {% endblock %}
 
 {% block postinstall %}
+rm -rf ${out}/man
 find ${out} | grep Config_heavy.pl | while read l; do
     sed -e 's|#!.*/bin/sh|#!/usr/bin/env sh|' \
         -e 's|/.*build.*tools/||' \
