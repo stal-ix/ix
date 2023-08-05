@@ -1,4 +1,6 @@
-{% extends '//lib/qt/6/declarative/t/ix.sh' %}
+{% extends 't/ix.sh' %}
+
+{% block task_pool %}full{% endblock %}
 
 {% block bld_tool %}
 {{super()}}
