@@ -1,8 +1,8 @@
 {% extends '//lib/gtk/t/ix.sh' %}
 
 {% block fetch %}
-https://gitlab.gnome.org/GNOME/gtk/-/archive/4.10.4/gtk-4.10.4.tar.bz2
-sha:ebab989b60a5dd36222dccdeecef3e139c1f043f81b1d81e4728a208237f7e4d
+https://gitlab.gnome.org/GNOME/gtk/-/archive/4.12.0/gtk-4.12.0.tar.bz2
+sha:d46a862e0c046b4aad88dfb0517b468d4ca777d85fdda722af7a30be209fa216
 {% endblock %}
 
 {% block lib_deps %}
@@ -11,6 +11,7 @@ lib/vulkan/loader
 {% endblock %}
 
 {% block bld_tool %}
+bin/glslc
 bin/sassc
 {{super()}}
 {% endblock %}
