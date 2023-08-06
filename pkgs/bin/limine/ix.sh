@@ -11,14 +11,20 @@ lib/c
 
 {% block bld_tool %}
 bin/gzip
-bin/nasm
 bin/mtools
+{% if x86_64 %}
+bin/nasm
+{% endif %}
+{% endblock %}
+
+{% block setup %}
+export CLANG_BINARY=$(dirname $(which llvm-addr2line))/clang
 {% endblock %}
 
 {% block configure_flags %}
---enable-uefi-x86-64
+--enable-uefi-{{target.gnu_arch}}
 TOOLCHAIN_FOR_TARGET=llvm
-CC_FOR_TARGET=$(dirname $(which llvm-addr2line))/clang
+CC_FOR_TARGET=${CLANG_BINARY}
 {% endblock %}
 
 {% block configure %}
