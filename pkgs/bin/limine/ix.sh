@@ -7,12 +7,6 @@ sha:d7bd6389491ec63303dbcf77e32e77250f62bd10839278957681c1d6613d8ca6
 
 {% block bld_libs %}
 lib/c
-bin/clang/lib(for_target= )
-{% endblock %}
-
-{% block host_libs %}
-lib/c
-bin/clang/lib
 {% endblock %}
 
 {% block bld_tool %}
@@ -21,17 +15,13 @@ bin/nasm
 bin/mtools
 {% endblock %}
 
-{% block c_compiler %}
-bld/compiler/unwrap
-{% endblock %}
-
 {% block configure_flags %}
---enable-all
+--enable-uefi-x86-64
 TOOLCHAIN_FOR_TARGET=llvm
+CC_FOR_TARGET=$(dirname $(which llvm-addr2line))/clang
 {% endblock %}
 
 {% block configure %}
-sed -e 's|set -e|set -xe|' -i freestanding-toolchain
 sed -e 's|cross_compiling=no|cross_compiling=yes|' -i configure
 {{super()}}
 {% endblock %}
