@@ -1,8 +1,8 @@
 {% extends '//die/c/make.sh' %}
 
 {% block fetch %}
-https://github.com/mawww/kakoune/archive/refs/tags/v2023.07.29.tar.gz
-sha:0fbefc81783903b7301359cbc2e0754ba008af6f2f6ef83651a32eec7375497b
+https://github.com/mawww/kakoune/archive/refs/tags/v2023.08.05.tar.gz
+sha:1ad7bfe9e1d861115cd418cb500990ea5fa63726e998df13702e5caa8fc84356
 {% endblock %}
 
 {% block bld_libs %}

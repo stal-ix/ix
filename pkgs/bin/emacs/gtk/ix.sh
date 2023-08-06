@@ -11,6 +11,7 @@ lib/gtk/3
 lib/giflib
 lib/lcms/2
 lib/harfbuzz
+lib/gtk/deps
 lib/image/magick
 {{super()}}
 {% endblock %}

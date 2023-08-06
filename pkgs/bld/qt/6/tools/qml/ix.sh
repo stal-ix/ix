@@ -1,5 +1,7 @@
 {% extends 't/ix.sh' %}
 
+{% block task_pool %}full{% endblock %}
+
 {% block cmake_flags %}
 {{super()}}
 QT_FORCE_FIND_TOOLS=ON

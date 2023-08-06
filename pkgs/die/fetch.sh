@@ -22,6 +22,11 @@
 {% endblock %}
 {% endset %}
 
+{% set git_refine_tools %}
+{% block git_refine_tools %}
+{% endblock %}
+{% endset %}
+
 {% block bld_deps %}
 {% if git_sha %}
 bld/stable/unpack

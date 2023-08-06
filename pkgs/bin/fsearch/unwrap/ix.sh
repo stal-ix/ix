@@ -1,8 +1,8 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://github.com/cboxdoerfer/fsearch/archive/refs/tags/0.2.2.tar.gz
-sha:c98d73000436c7182a86c33298f7390c82bce7854b824c80978acc080d979445
+https://github.com/cboxdoerfer/fsearch/archive/refs/tags/0.2.3.tar.gz
+sha:b3c576bf1230da7c374d00bb32d72686b940b4dee80d941495acfdd5437bf117
 {% endblock %}
 
 {% block bld_libs %}
