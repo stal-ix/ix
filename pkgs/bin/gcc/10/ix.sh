@@ -88,15 +88,6 @@ export CC_FOR_TARGET=${CC}
 export CXX_FOR_TARGET=${CXX}
 {% endblock %}
 
-{% block setup_tools %}
-cat << EOF > objdump
-#!$(which sh)
-exec llvm-objdump "\${@}"
-EOF
-
-chmod +x objdump
-{% endblock %}
-
 {% block postinstall %}
 echo 'FIXME(pg): proper(shared/) headers location'
 {% endblock %}

@@ -5,11 +5,11 @@ https://github.com/hyprwm/Hyprland
 {% endblock %}
 
 {% block git_branch %}
-v0.27.1
+v0.28.0
 {% endblock %}
 
 {% block git_sha %}
-37ca5c55b889ab53996e462f723329018e68f12e3d4aadba826824845da06254
+5f1406944561c6954e7807af373647486418714be89ef877126d982c629989c9
 {% endblock %}
 
 {% block bld_libs %}
