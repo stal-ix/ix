@@ -1,11 +1,11 @@
 {% extends '//die/go/pure.sh' %}
 
 {% block go_url %}
-https://github.com/tetratelabs/wazero/archive/refs/tags/v1.3.1.tar.gz
+https://github.com/tetratelabs/wazero/archive/refs/tags/v1.4.0.tar.gz
 {% endblock %}
 
 {% block go_sha %}
-cb3b3df2400338a206bc1e32f62edb624184163e8c2adc1315edaf605db7b335
+f8d94c72bd5facb8df625c2594301158492f8124fdfa9dc0d6309019a6aea32a
 {% endblock %}
 
 {% block unpack %}
