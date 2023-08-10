@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/google/shaderc/archive/refs/tags/v2023.5.tar.gz
-sha:6db6f91d480ab7ee32f51d8ed11460ddbd31cf9cebb00df09e46a2428dc553f0
+https://github.com/google/shaderc/archive/refs/tags/v2023.6.tar.gz
+sha:e40fd4a87a56f6610e223122179f086d5c4f11a7e0e2aa461f0325c3a0acc6ae
 {% endblock %}
 
 {% block lib_deps %}
