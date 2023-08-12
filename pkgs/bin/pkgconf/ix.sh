@@ -1,8 +1,8 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://github.com/pkgconf/pkgconf/archive/refs/tags/pkgconf-2.0.0.tar.gz
-sha:9e72c8b0e5a03a13e004f904f3cbb5da5c3aa92a8237c4c7ef31c2bc810a1635
+https://github.com/pkgconf/pkgconf/archive/refs/tags/pkgconf-2.0.1.tar.gz
+sha:430b4fbee8288b238c4e2ee845e440eabd2814ed87d5d7e8342a5f961d6995a7
 {% endblock %}
 
 {% block bld_libs %}
