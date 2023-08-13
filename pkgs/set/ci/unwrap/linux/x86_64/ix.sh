@@ -582,6 +582,7 @@ bin/strawberry
 bin/bind
 bin/lisgd
 bin/mariadb/10
+bin/mariadb/11
 bin/nvtop
 bin/postgresql
 bin/catatonit
