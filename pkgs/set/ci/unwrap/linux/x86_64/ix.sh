@@ -581,7 +581,7 @@ bin/redis
 bin/strawberry
 bin/bind
 bin/lisgd
-bin/mariadb
+bin/mariadb/10
 bin/nvtop
 bin/postgresql
 bin/catatonit
