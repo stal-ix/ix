@@ -21,3 +21,8 @@ wrap_cc
 mkdir ${out}/lib
 cp out/libhardened_malloc.so ${out}/lib/libhardened_malloc.a
 {% endblock %}
+
+{% block c_rename_symbol %}
+chacha_ivsetup
+chacha_keysetup
+{% endblock %}
