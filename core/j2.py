@@ -62,7 +62,12 @@ class Env(jinja2.Environment, jinja2.BaseLoader):
 
             return b64(d), n
 
-        return self.resolve_includes(self.vfs.serve(name), name).strip(), name
+        data = self.resolve_includes(self.vfs.serve(name), name)
+
+        if '.raw' not in name:
+            data = data.strip()
+
+        return data, name
 
     def join_path(self, tmpl, parent):
         if tmpl.startswith('//'):

@@ -15,7 +15,7 @@ lld
 
 {% block patches %}
 ctors-in-init-array.patch
-#prefer-static.patch
+prefer-static.patch.raw
 revert-25da87-fix-cuda10.patch
 {% endblock %}
 
@@ -24,8 +24,11 @@ revert-25da87-fix-cuda10.patch
 cd lld
 {% for x in ix.parse_list(self.patches()) %}
 echo 'apply {{x}}'
-base64 -d << EOF | patch -p1
+base64 -d << EOF > _
 {{ix.load_file('patches/' + x) | b64e}}
 EOF
+cat _
+patch -p1 < _
+rm _
 {% endfor %}
 {% endblock %}
