@@ -1,6 +1,7 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
+bin/lld/ya/16
 bin/go/21
 bin/limine
 bin/emacs/gtk

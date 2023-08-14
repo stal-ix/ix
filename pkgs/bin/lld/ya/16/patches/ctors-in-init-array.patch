@@ -1,0 +1,180 @@
+--- a/ELF/Config.h
++++ b/ELF/Config.h
+@@ -198,6 +198,7 @@ struct Config {
+   bool checkDynamicRelocs;
+   llvm::DebugCompressionType compressDebugSections;
+   bool cref;
++  bool ctorsInInitArray = true;
+   llvm::SmallVector<std::pair<llvm::GlobPattern, uint64_t>, 0>
+       deadRelocInNonAlloc;
+   bool demangle = true;
+--- a/ELF/Driver.cpp
++++ b/ELF/Driver.cpp
+@@ -1083,6 +1083,7 @@ static void readConfigs(opt::InputArgList &args) {
+   config->chroot = args.getLastArgValue(OPT_chroot);
+   config->compressDebugSections = getCompressDebugSections(args);
+   config->cref = args.hasArg(OPT_cref);
++  config->ctorsInInitArray = args.hasFlag(OPT_ctors_in_init_array, OPT_no_ctors_in_init_array, true);
+   config->optimizeBBJumps =
+       args.hasFlag(OPT_optimize_bb_jumps, OPT_no_optimize_bb_jumps, false);
+   config->demangle = args.hasFlag(OPT_demangle, OPT_no_demangle, true);
+--- a/ELF/InputFiles.cpp
++++ b/ELF/InputFiles.cpp
+@@ -941,6 +941,13 @@ InputSectionBase *ObjFile<ELFT>::getRelocTarget(uint32_t idx,
+   return nullptr;
+ }
+ 
++bool isCtorsInInitArraySection(StringRef name, StringRef filename) {
++ return config->ctorsInInitArray && !config->relocatable &&
++      !(isCrtbegin(filename) || isCrtend(filename)) && (
++          name == ".ctors" || name == ".dtors" ||
++          name.startswith(".ctors.") || name.startswith(".dtors."));
++}
++
+ // The function may be called concurrently for different input files. For
+ // allocation, prefer makeThreadLocal which does not require holding a lock.
+ template <class ELFT>
+@@ -1014,9 +1021,16 @@ InputSectionBase *ObjFile<ELFT>::createInputSection(uint32_t idx,
+   if (name == ".eh_frame" && !config->relocatable)
+     return makeThreadLocal<EhInputSection>(*this, sec, name);
+ 
++  InputSectionBase *ret;
+   if ((sec.sh_flags & SHF_MERGE) && shouldMerge(sec, name))
+-    return makeThreadLocal<MergeInputSection>(*this, sec, name);
+-  return makeThreadLocal<InputSection>(*this, sec, name);
++    ret = make<MergeInputSection>(*this, sec, name);
++  else
++    ret = make<InputSection>(*this, sec, name);
++  if (isCtorsInInitArraySection(name, this->getName())) {
++    ret->reverse = true;
++    ret->type = name[1] == 'c' ? SHT_INIT_ARRAY : SHT_FINI_ARRAY;
++  }
++  return ret;
+ }
+ 
+ template <class ELFT>
+--- a/ELF/InputSection.cpp
++++ b/ELF/InputSection.cpp
+@@ -1121,6 +1121,14 @@ template <class ELFT> void InputSection::writeTo(uint8_t *buf) {
+   // and then apply relocations.
+   memcpy(buf, content().data(), content().size());
+   relocate<ELFT>(buf, buf + content().size());
++
++  // Reverse .ctors in .init_array.
++  if (this->reverse) {
++    auto start = (typename ELFT::uint *)buf;
++    auto end = (typename ELFT::uint *)(buf + content().size());
++    for (--end; start < end; ++start, --end)
++      std::swap(*start, *end);
++  }
+ }
+ 
+ void InputSection::replace(InputSection *other) {
+--- a/ELF/InputSection.h
++++ b/ELF/InputSection.h
+@@ -60,6 +60,9 @@ public:
+   // Set for sections that should not be folded by ICF.
+   uint8_t keepUnique : 1;
+ 
++  // Reverse section contents to put .ctors in .init_array.
++  uint8_t reverse : 1;
++
+   uint8_t partition = 1;
+   uint32_t type;
+   StringRef name;
+@@ -96,6 +99,7 @@ protected:
+                         uint32_t entsize, uint32_t addralign, uint32_t type,
+                         uint32_t info, uint32_t link)
+       : sectionKind(sectionKind), bss(false), keepUnique(false), type(type),
++        reverse(false),
+         name(name), flags(flags), addralign(addralign), entsize(entsize),
+         link(link), info(info) {}
+ };
+--- a/ELF/LinkerScript.cpp
++++ b/ELF/LinkerScript.cpp
+@@ -28,6 +28,7 @@
+ #include "llvm/Support/Casting.h"
+ #include "llvm/Support/Endian.h"
+ #include "llvm/Support/ErrorHandling.h"
++#include "llvm/Support/Path.h"
+ #include "llvm/Support/TimeProfiler.h"
+ #include <algorithm>
+ #include <cassert>
+@@ -36,6 +36,7 @@
+ #include <limits>
+ #include <string>
+ #include <vector>
++#include <regex>
+ 
+ using namespace llvm;
+ using namespace llvm::ELF;
+@@ -46,6 +47,24 @@ using namespace lld::elf;
+ 
+ std::unique_ptr<LinkerScript> elf::script;
+ 
++// Returns true if S is in one of the many forms the compiler driver may pass
++// crtbegin files.
++//
++// Gcc uses any of crtbegin[<empty>|S|T].o.
++// Clang uses Gcc's plus clang_rt.crtbegin[<empty>|S|T][-<arch>|<empty>].o.
++
++bool elf::isCrtbegin(StringRef s) {
++  static std::regex re(R"((clang_rt\.)?crtbegin[ST]?(-.*)?\.o)");
++  s = sys::path::filename(s);
++  return std::regex_match(s.begin(), s.end(), re);
++}
++
++bool elf::isCrtend(StringRef s) {
++  static std::regex re(R"((clang_rt\.)?crtend[ST]?(-.*)?\.o)");
++  s = sys::path::filename(s);
++  return std::regex_match(s.begin(), s.end(), re);
++}
++
+ static bool isSectionPrefix(StringRef prefix, StringRef name) {
+   return name.consume_front(prefix) && (name.empty() || name[0] == '.');
+ }
+@@ -54,6 +73,11 @@ static StringRef getOutputSectionName(const InputSectionBase *s) {
+   if (config->relocatable)
+     return s->name;
+ 
++  if (s->reverse) {
++    assert(s->name.startswith(".ctors") || s->name.startswith(".dtors"));
++    return s->name[1] == 'c' ? ".init_array" : ".fini_array";
++  }
++
+   // This is for --emit-relocs. If .text.foo is emitted as .text.bar, we want
+   // to emit .rela.text.foo as .rela.text.bar for consistency (this is not
+   // technically required, but not doing it is odd). This code guarantees that.
+--- a/ELF/LinkerScript.h
++++ b/ELF/LinkerScript.h
+@@ -34,6 +34,9 @@ class SectionBase;
+ class ThunkSection;
+ struct OutputDesc;
+ 
++bool isCrtbegin(StringRef);
++bool isCrtend(StringRef);
++
+ // This represents an r-value in the linker script.
+ struct ExprValue {
+   ExprValue(SectionBase *sec, bool forceAbsolute, uint64_t val,
+--- a/ELF/Options.td
++++ b/ELF/Options.td
+@@ -129,6 +129,10 @@ def : Flag<["--"], "no-color-diagnostics">, Alias<color_diagnostics>, AliasArgs<
+ def cref: FF<"cref">,
+   HelpText<"Output cross reference table. If -Map is specified, print to the map file">;
+ 
++defm ctors_in_init_array: B<"ctors-in-init-array",
++    "Put .ctors in .init_array and .dtors in .fini_array (default)",
++    "Do not put .ctors in .init_array or .dtors in .fini_array">;
++
+ defm demangle: B<"demangle",
+     "Demangle symbol names (default)",
+     "Do not demangle symbol names">;
+@@ -703,7 +707,6 @@ def: Flag<["-"], "g">;
+ def: F<"long-plt">;
+ def: FF<"no-add-needed">;
+ def: F<"no-copy-dt-needed-entries">;
+-def: F<"no-ctors-in-init-array">;
+ def: F<"no-keep-memory">;
+ def: F<"no-warn-mismatch">;
+ def: Separate<["--", "-"], "rpath-link">;
