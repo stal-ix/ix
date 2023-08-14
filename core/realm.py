@@ -128,7 +128,7 @@ class RealmCtx:
         return list(cu.uniq_p(self.calc_all_runtime_depends()))
 
     def calc_all_build_depends(self):
-        for p in self.load_packages([{'name': 'bld/realm'}]):
+        for p in self.load_packages([{'name': 'bld/realm', 'flags': self.pkgs['flags']}]):
             yield p
             yield from p.iter_all_runtime_depends()
 
