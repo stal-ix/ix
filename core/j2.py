@@ -35,7 +35,7 @@ class Env(jinja2.Environment, jinja2.BaseLoader):
         def it():
             for l in data.split('\n'):
                 if inc := cut_include(l):
-                    yield self.source(self.join_path(inc, name))[0]
+                    yield self.source(self.join_path(inc, name))[0].strip()
                 else:
                     yield l
 
@@ -62,7 +62,7 @@ class Env(jinja2.Environment, jinja2.BaseLoader):
 
             return b64(d), n
 
-        return self.resolve_includes(self.vfs.serve(name), name).strip(), name
+        return self.resolve_includes(self.vfs.serve(name), name), name
 
     def join_path(self, tmpl, parent):
         if tmpl.startswith('//'):
