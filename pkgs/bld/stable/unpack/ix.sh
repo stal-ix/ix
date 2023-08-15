@@ -3,6 +3,7 @@
 {% block run_deps %}
 bin/lz4
 bld/tar
+bld/r/w
 {% endblock %}
 
 {% block install %}

@@ -54,6 +54,8 @@ os.chdir(path)
 for p in reversed(meta['links']):
     install(p, path)
 
+subprocess.run(['chrw', path], check=True)
+
 if os.path.isdir('fix'):
     for x in sorted(os.listdir('fix')):
         if not x.endswith('.sh'):
