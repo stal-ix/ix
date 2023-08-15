@@ -1,0 +1,7 @@
+#!/usr/bin/env sh
+
+set -ue
+
+find ${1} | sort -r | while read l; do
+    chmod a-w "${l}" || rm "${l}"
+done
