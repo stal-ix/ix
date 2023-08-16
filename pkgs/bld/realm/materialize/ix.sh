@@ -3,6 +3,7 @@
 {% block run_deps %}
 bld/sh
 bld/box
+bld/r/w
 bin/rsync
 bld/python
 bld/glib/old
