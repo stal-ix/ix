@@ -79,6 +79,7 @@ class RenderContext:
             'ix_extract': ' '.join(pkg.config.ops.extract()),
             'host': hp,
             'tool': pkg.name.startswith('bld/'),
+            'boot': pkg.name.startswith('bld/boot/'),
             'name': pkg.name,
             'basename': os.path.basename(pkg.norm_name),
             'uniq_id': pkg.uniq_id,
@@ -86,7 +87,6 @@ class RenderContext:
             kind: True,
             tp['os']: True,
             tp['arch']: True,
-            'boot': pkg.name.startswith('bld/boot/'),
         }, pkg.flags)
 
         try:
