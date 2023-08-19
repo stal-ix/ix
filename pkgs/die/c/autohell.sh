@@ -18,14 +18,6 @@ export gt_cv_int_divbyzero_sigfpe=yes
 export am_cv_CC_dependencies_compiler_type=gcc3
 {% endif %}
 {{super()}}
-{% if not tool %}
-{% if 0 %}
-mkdir -p /ix/logs/${IX_RANDOM}
-ls -la > /ix/logs/${IX_RANDOM}/ls
-cp config.log /ix/logs/${IX_RANDOM}/ || true
-cp configure /ix/logs/${IX_RANDOM}/ || true
-{% endif %}
-{% endif %}
 {% endblock %}
 
 {% block step_patch %}
