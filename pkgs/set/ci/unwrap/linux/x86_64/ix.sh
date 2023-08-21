@@ -1,6 +1,7 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
+bin/walk
 bin/lld/16
 bin/lld/ya
 bin/go/21
