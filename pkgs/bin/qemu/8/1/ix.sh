@@ -5,13 +5,18 @@ https://github.com/qemu/qemu
 {% endblock %}
 
 {% block git_branch %}
-v8.0.4
+v8.1.0
 {% endblock %}
 
 {% block git_sha %}
-77b41b1bfba7cce7ad720fb9dbd798982832f2e268b5f53257b4cf224c074764
+b4a67d01bb014460f7942bbaabc1864887b4fcb40eaa78cab44095eb2c6c7eac
 {% endblock %}
 
 {% block git_refine %}
 rm roms/edk2/EmulatorPkg/Unix/Host/X11IncludeHack
+{% endblock %}
+
+{% block configure_flags %}
+{{super()}}
+--enable-fdt=disabled
 {% endblock %}

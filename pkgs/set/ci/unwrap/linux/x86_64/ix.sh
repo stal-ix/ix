@@ -17,7 +17,8 @@ bin/iproute2
 bin/sddm
 bin/ghost/script
 bin/havoc
-bin/qemu/next
+#bin/qemu/8/1
+bin/qemu/8/0
 bin/npm
 bin/protoc/c
 bin/systool
@@ -523,7 +524,6 @@ bin/lsof
 #bin/telegram/web/old
 #bin/telegram/web/k
 bin/telegram
-bin/qemu
 bin/hypr
 bin/schedtool
 bin/cpulimit
