@@ -12,10 +12,10 @@ lib/yaml
 lib/curl
 lib/xml/b
 lib/xml/2
+lib/stemmer
 {% endblock %}
 
 {% block meson_flags %}
-stemming=false
 systemd=false
 gir=false
 svg-support=false
