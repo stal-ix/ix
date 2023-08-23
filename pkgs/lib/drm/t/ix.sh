@@ -1,8 +1,8 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://dri.freedesktop.org/libdrm/libdrm-2.4.115.tar.xz
-sha:554cfbfe0542bddb391b4e3e05bfbbfc3e282b955bd56218d21c0616481f65eb
+https://dri.freedesktop.org/libdrm/libdrm-2.4.116.tar.xz
+sha:46c53f40735ea3d26d614297f155f6131a510624a24274f654f6469ca905339a
 {% endblock %}
 
 {% block lib_deps %}
