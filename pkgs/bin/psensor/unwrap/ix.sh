@@ -13,7 +13,7 @@ lib/gtk/3
 lib/json/c
 lib/notify
 #lib/micro/httpd
-lib/appindicator
+lib/app/indicator
 {% endblock %}
 
 {% block bld_tool %}

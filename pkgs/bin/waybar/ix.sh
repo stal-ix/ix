@@ -23,7 +23,7 @@ lib/gtk/3/mm
 lib/json/cpp
 lib/dbus/menu
 lib/xkbcommon
-lib/appindicator
+lib/app/indicator
 lib/gtk/layer/shell
 {% endblock %}
 
