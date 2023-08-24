@@ -1,8 +1,8 @@
 {% extends '//lib/python/3/template/ix.sh' %}
 
 {% block fetch %}
-https://www.python.org/ftp/python/3.8.5/Python-3.8.5.tgz
-md5:e2f52bcf531c8cc94732c0b6ff933ff0
+https://www.python.org/ftp/python/3.8.17/Python-3.8.17.tgz
+sha:def428fa6cf61b66bcde72e3d9f7d07d33b2e4226f04f9d6fce8384c055113ae
 {% endblock %}
 
 {% block patch %}
