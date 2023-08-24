@@ -1,8 +1,8 @@
 {% extends '//die/c/autohell.sh' %}
 
 {% block fetch %}
-https://www.gnupg.org/ftp/gcrypt/gpgme/gpgme-1.21.0.tar.bz2
-sha:416e174e165734d84806253f8c96bda2993fd07f258c3aad5f053a6efd463e88
+https://www.gnupg.org/ftp/gcrypt/gpgme/gpgme-1.22.0.tar.bz2
+sha:9551e37081ad3bde81018a0d24f245c3f8206990549598fb31a97a68380a7b71
 {% endblock %}
 
 {% block lib_deps %}
@@ -14,11 +14,6 @@ lib/gpg/error
 
 {% block host_libs %}
 lib/c
-{% endblock %}
-
-{% block bld_libs %}
-# for tests
-# lib/shim/fake(lib_name=stdc++)
 {% endblock %}
 
 {% block configure_flags %}

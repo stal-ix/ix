@@ -1,8 +1,8 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://github.com/Alexays/Waybar/archive/refs/tags/0.9.21.tar.gz
-sha:9291d7d7f0c0ed2241865330801a6e26d57feb78c43551e315f9966d24755887
+https://github.com/Alexays/Waybar/archive/refs/tags/0.9.22.tar.gz
+sha:61e8d934c178b9da8212162398d2be44c5606c92b9a3503526993bb204206c6b
 {% endblock %}
 
 {% block bld_libs %}
@@ -23,7 +23,7 @@ lib/gtk/3/mm
 lib/json/cpp
 lib/dbus/menu
 lib/xkbcommon
-lib/appindicator
+lib/app/indicator
 lib/gtk/layer/shell
 {% endblock %}
 

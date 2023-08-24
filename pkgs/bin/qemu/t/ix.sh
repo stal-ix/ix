@@ -48,15 +48,23 @@ bld/pkg/config
 wrap_cc
 {% endblock %}
 
+{% block configure_flags %}
+--prefix=${out}
+--libexecdir=${out}/bin/{{uniq_id}}
+--enable-bpf
+--disable-plugins
+--audio-drv-list=sdl
+--with-coroutine=ucontext
+--target-list={{for_target or target.arch + '-softmmu'}}
+{% endblock %}
+
 {% block configure %}
 sh ./configure \
---prefix=${out} \
---libexecdir=${out}/bin/{{uniq_id}} \
---enable-bpf \
---disable-plugins \
---audio-drv-list=sdl \
---with-coroutine=ucontext \
---target-list={{for_target or target.arch + '-softmmu'}}
+{% if help %}
+--help
+{% else %}
+{{ix.fix_list(self.configure_flags())}}
+{% endif %}
 {% endblock %}
 
 {% block setup %}

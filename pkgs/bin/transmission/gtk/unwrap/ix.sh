@@ -3,7 +3,7 @@
 {% block bld_libs %}
 lib/notify
 lib/gtk/3/mm
-lib/appindicator
+lib/app/indicator
 lib/gdk/pixbuf/svg
 {{super()}}
 {% endblock %}

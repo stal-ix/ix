@@ -1,8 +1,8 @@
 {% extends '//lib/web/kit/t/ix.sh' %}
 
 {% block fetch %}
-https://webkitgtk.org/releases/webkitgtk-2.40.5.tar.xz
-sha:7de051a263668621d91a61a5eb1c3771d1a7cec900043d4afef06c326c16037f
+https://webkitgtk.org/releases/webkitgtk-2.41.91.tar.xz
+sha:f28f6b95b939c3fd20bad21b1aa9e2eacda3621625df5b480144517cca028f46
 {% endblock %}
 
 {% block lib_deps %}
@@ -54,7 +54,7 @@ USE_GSTREAMER_TRANSCODER=OFF
 {{super()}}
 
 sed -e 's|static_cast<EGLNativeWindowType>|(EGLNativeWindowType)|' \
-    -i Source/WebCore/platform/graphics/egl/GLContextEGL.cpp
+    -i Source/WebCore/platform/graphics/egl/GLContextLibWPE.cpp
 
 sed -e 's|GRefPtr.h>|GRefPtr.h>\n#include <wtf/glib/GUniquePtr.h>|' \
     -i Source/WebKit/UIProcess/gtk/ClipboardGtk4.cpp

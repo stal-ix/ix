@@ -11,7 +11,7 @@ lib/glib
 lib/curl
 lib/gtk/3
 lib/json/glib
-lib/appindicator
+lib/app/indicator
 {% endblock %}
 
 {% block bld_tool %}

@@ -3,7 +3,7 @@ import base64
 import jinja2
 
 
-def b64(data):
+def b64e(data):
     return base64.b64encode(data.encode()).decode()
 
 
@@ -26,10 +26,10 @@ class Env(jinja2.Environment, jinja2.BaseLoader):
         jinja2.Environment.__init__(self, loader=self, auto_reload=False, trim_blocks=True, lstrip_blocks=True)
         self.cache = {}
         self.vfs = vfs
-        self.filters['b64'] = b64
-        self.filters['b64e'] = b64
+        self.filters['b64'] = b64e
+        self.filters['b64e'] = b64e
         self.filters['b64d'] = b64d
-
+        self.filters['basename'] = os.path.basename
 
     def resolve_includes(self, data, name):
         def it():
@@ -60,7 +60,7 @@ class Env(jinja2.Environment, jinja2.BaseLoader):
         if name.endswith('/base64'):
             d, n = self.source(name[:-7])
 
-            return b64(d), n
+            return b64e(d), n
 
         return self.resolve_includes(self.vfs.serve(name), name), name
 
