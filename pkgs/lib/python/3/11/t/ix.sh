@@ -1,8 +1,8 @@
 {% extends '//lib/python/3/10/ix.sh' %}
 
 {% block fetch %}
-https://github.com/python/cpython/archive/refs/tags/v3.11.4.tar.gz
-sha:b0bc62a4f03d2a29159609fd19b815a885ea4b9f97f0866b1c35abb7ca0bd7f0
+https://github.com/python/cpython/archive/refs/tags/v3.11.5.tar.gz
+sha:a7d1764be1fd126ee93bdb35133f91a63b2aae4b80dc3e93e939c03d9cc1caef
 {% endblock %}
 
 {% block bld_tool %}
