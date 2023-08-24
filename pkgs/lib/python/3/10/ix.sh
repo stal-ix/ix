@@ -1,4 +1,4 @@
-{% extends '//lib/python/3/9/ix.sh' %}
+{% extends '//lib/python/3/8/ix.sh' %}
 
 {% block fetch %}
 https://www.python.org/ftp/python/3.10.13/Python-3.10.13.tar.xz
