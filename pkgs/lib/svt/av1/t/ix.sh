@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://gitlab.com/AOMediaCodec/SVT-AV1/-/archive/v1.6.0/SVT-AV1-v1.6.0.tar.bz2
-sha:c6b49111a2d4c5113f1ada0c2f716d94bd4a8db704623d453066826401ecdab5
+https://gitlab.com/AOMediaCodec/SVT-AV1/-/archive/v1.7.0/SVT-AV1-v1.7.0.tar.bz2
+sha:e7995dfc8774f301ac94367a2e5d266dc855cf62ee3d39a635f3a014708e98e1
 {% endblock %}
 
 {% block lib_deps %}
