@@ -1,15 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
-{% block git_repo %}
-https://gitlab.com/wireshark/wireshark
-{% endblock %}
-
-{% block git_branch %}
-v4.0.8
-{% endblock %}
-
-{% block git_sha %}
-3ddedcbad01037ccf2fc9a64f2f27546f79f315d932f1f4eebe34ee821c75e1a
+{% block fetch %}
+https://github.com/wireshark/wireshark/archive/refs/tags/v4.1.0.tar.gz
+sha:2a12124edfe0884640a7cda475489738fe56d92598bc2890446d7c26bf3c9d8d
 {% endblock %}
 
 {% block bld_libs %}
@@ -58,4 +51,8 @@ bld/python
 bld/gettext
 bin/doxygen
 bin/xsltproc
+{% endblock %}
+
+{% block build_flags %}
+shut_up
 {% endblock %}
