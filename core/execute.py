@@ -2,6 +2,7 @@ import os
 import json
 import shutil
 import random
+import signal
 import asyncio
 import subprocess
 
@@ -32,6 +33,10 @@ def execute_cmd(c, mt):
 
     try:
         subprocess.run(args, env=env, input=c.get('stdin', '').encode(), check=True)
+    except subprocess.CalledProcessError as e:
+        cl.log(f'ERROR {descr}', color='r')
+        os.kill(0, signal.SIGINT)
+        os._exit(e.returncode)
     except Exception as e:
         raise ce.Error(f'{descr} failed', exception=e)
 

@@ -1,6 +1,7 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
+bin/python/9
 bin/xmlb
 bin/walk
 bin/lld/16
