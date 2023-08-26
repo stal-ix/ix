@@ -76,9 +76,9 @@ class ScriptBuilder:
     def build_sh_script(self, data, env):
         return self.build_cmd_script(['sh', '-s'], data, env)
 
-    def build_py_script(self, data, env, args=[]):
+    def build_py_script(self, data, env):
         stdin = BUILD_PY_SCRIPT.replace('{build_script}', data)
-        runpy = self.config.ops.runpy(args)
+        runpy = self.config.ops.runpy()
 
         return self.build_cmd_script(runpy, stdin, env)
 
