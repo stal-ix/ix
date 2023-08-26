@@ -37,12 +37,6 @@ class ScriptBuilder:
             'env': env,
         }
 
-    def build_sh_script(self, data, env):
-        return self.build_cmd_script(['sh', '-s'], data, env)
-
-    def build_py_script(self, data, env):
-        return self.build_cmd_script(self.config.ops.runpy(), data, env)
-
 
 def rev_dirs(l):
     return ':'.join(x.out_dir for x in reversed(l))
@@ -52,13 +46,17 @@ class CmdBuild:
     def __init__(self, package):
         self.package = package
 
+    def parse_exec(self, line):
+        for x in line.split():
+            if x == 'runpy':
+                yield from self.package.config.ops.runpy()
+            else:
+                yield x
+
     def script(self, sb, src_dir):
         build = self.package.descr['bld']['script']
 
-        return {
-            'sh': sb.build_sh_script,
-            'py': sb.build_py_script,
-        }[build['kind']](build['data'], dict(self.iter_env(src_dir)))
+        return sb.build_cmd_script(list(self.parse_exec(build['exec'])), build['data'], dict(self.iter_env(src_dir)))
 
     def iter_env(self, src_dir):
         h_lib = []

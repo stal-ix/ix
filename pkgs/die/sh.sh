@@ -91,6 +91,6 @@ fast_rm ${tmp}
 {% endblock %}
 {% endblock %}
 
-{% block script_kind %}
-sh
+{% block script_exec %}
+sh -s
 {% endblock %}

@@ -3,6 +3,6 @@
 {% block build_script %}
 {
     "data": {{ix.string_to_json(self.script_body())}},
-    "kind": "{{self.script_kind().strip()}}"
+    "exec": "{{self.script_exec().strip()}}"
 }
 {% endblock %}

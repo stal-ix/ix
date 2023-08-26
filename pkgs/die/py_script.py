@@ -36,6 +36,6 @@ atexit.register(footer)
 # euc
 {% endblock %}
 
-{% block script_kind %}
-py
+{% block script_exec %}
+runpy
 {% endblock %}
