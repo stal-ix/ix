@@ -1,7 +1,7 @@
 {% extends '//die/proxy.sh' %}
 
 {% block bld_data %}
-aux/entropy(entropy_seed={{seed|b64}},entropy_size=1000000)
+aux/entropy(entropy_seed={{seed | b64e}},entropy_size=1000000)
 {% endblock %}
 
 {% block bld_tool %}

@@ -26,7 +26,6 @@ class Env(jinja2.Environment, jinja2.BaseLoader):
         jinja2.Environment.__init__(self, loader=self, auto_reload=False, trim_blocks=True, lstrip_blocks=True)
         self.cache = {}
         self.vfs = vfs
-        self.filters['b64'] = b64e
         self.filters['b64e'] = b64e
         self.filters['b64d'] = b64d
         self.filters['basename'] = os.path.basename
