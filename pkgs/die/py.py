@@ -1,6 +1,6 @@
-{% extends 'script.json' %}
+{% extends 'py_script.py' %}
 
-{% block script_body %}
+{% block py_script %}
 import os
 
 {% block build %}
@@ -47,8 +47,4 @@ outdir = os.environ['out']
 
 with open(outdir + '/env', 'a') as f:
     f.write(env_data.replace('{outdir}', outdir).strip() + '\n')
-{% endblock %}
-
-{% block script_kind %}
-py
 {% endblock %}

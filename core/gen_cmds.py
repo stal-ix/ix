@@ -9,42 +9,6 @@ import core.utils as cu
 import core.error as ce
 
 
-BUILD_PY_SCRIPT = '''
-import os
-import sys
-import atexit
-import shutil
-
-def prepare_dir(d):
-    try:
-        shutil.rmtree(d)
-    except FileNotFoundError:
-        pass
-
-    os.makedirs(d)
-
-def header():
-    if out := os.environ.get('out'):
-        prepare_dir(out)
-
-    if tmp := os.environ.get('tmp'):
-        prepare_dir(tmp)
-        os.chdir(tmp)
-
-def footer():
-    if tmp := os.environ.get('tmp'):
-        if sys.exc_info()[0]:
-            shutil.rmtree(tmp)
-
-header()
-atexit.register(footer)
-
-# suc
-{build_script}
-# euc
-'''.strip()
-
-
 class ScriptBuilder:
     def __init__(self, package):
         self.package = package
@@ -77,10 +41,7 @@ class ScriptBuilder:
         return self.build_cmd_script(['sh', '-s'], data, env)
 
     def build_py_script(self, data, env):
-        stdin = BUILD_PY_SCRIPT.replace('{build_script}', data)
-        runpy = self.config.ops.runpy()
-
-        return self.build_cmd_script(runpy, stdin, env)
+        return self.build_cmd_script(self.config.ops.runpy(), data, env)
 
 
 def rev_dirs(l):
