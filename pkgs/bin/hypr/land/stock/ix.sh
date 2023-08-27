@@ -1,15 +1,8 @@
 {% extends '//die/c/meson.sh' %}
 
-{% block git_repo %}
-https://github.com/hyprwm/Hyprland
-{% endblock %}
-
-{% block git_branch %}
-v0.28.0
-{% endblock %}
-
-{% block git_sha %}
-5f1406944561c6954e7807af373647486418714be89ef877126d982c629989c9
+{% block fetch %}
+https://github.com/hyprwm/Hyprland/releases/download/v0.28.0/source-v0.28.0.tar.gz
+sha:baf355cb4e301b27de59fa5fc503b7338eed1bc921fcf76b73629504a00ffefd
 {% endblock %}
 
 {% block bld_libs %}
