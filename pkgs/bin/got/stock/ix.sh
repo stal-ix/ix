@@ -1,8 +1,8 @@
 {% extends '//die/c/autohell.sh' %}
 
 {% block fetch %}
-https://gameoftrees.org/releases/portable/got-portable-0.87.tar.gz
-sha:7c6f148a13570b17348f4d48980008dcdd1588daddf609d352144ab3b225e51e
+https://gameoftrees.org/releases/portable/got-portable-0.91.tar.gz
+sha:79b15eb508601018f2ddaab74df2bdbde79ebdb992004bfd91a52886c9ecae55
 {% endblock %}
 
 {% block bld_libs %}
