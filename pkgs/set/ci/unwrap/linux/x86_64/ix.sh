@@ -1,6 +1,7 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
+bin/weechat
 bin/python/9
 bin/xmlb
 bin/walk

@@ -1,6 +1,5 @@
-{% extends '//die/c/cmake.sh' %}
+{% extends '//die/hub.sh' %}
 
-{% block fetch %}
-https://github.com/weechat/weechat/archive/refs/tags/v4.0.4.tar.gz
-sha:
+{% block run_deps %}
+bin/weechat/unwrap(lua_ver=puc/5/4)
 {% endblock %}
