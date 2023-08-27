@@ -14,7 +14,9 @@ lib/gmp
 lib/expat
 lib/ssh/2
 lib/c/ares
-lib/openssl
+lib/gnutls
+lib/gcrypt
+lib/nettle
 lib/sqlite/3
 {% endblock %}
 
@@ -24,4 +26,16 @@ bld/gettext
 
 {% block setup %}
 export CXXFLAGS="-std=c++14 ${CXXFLAGS}"
+{% endblock %}
+
+{% block configure_flags %}
+--with-libuv
+--with-gnutls
+--with-libnettle
+--with-libgmp
+--with-libgcrypt
+--with-sqlite3
+--with-libexpat
+--with-libcares
+--with-libz
 {% endblock %}
