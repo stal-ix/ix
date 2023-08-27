@@ -30,12 +30,9 @@ ENABLE_TCL=OFF
 ENABLE_GUILE=OFF
 ENABLE_PHP=OFF
 ENABLE_SPELL=OFF
+ENABLE_HEADLESS=OFF
 {% endblock %}
 
 {% block build_flags %}
 wrap_cc
-{% endblock %}
-
-{% block postinstall %}
-:
 {% endblock %}
