@@ -12,7 +12,6 @@ lib/intl
 lib/curl
 lib/gcrypt
 lib/gnutls
-lib/curses
 lib/enchant
 lib/shim/fake/pkg(pkg_name=lua,pkg_ver=5.4)
 {% endblock %}
@@ -30,7 +29,6 @@ ENABLE_TCL=OFF
 ENABLE_GUILE=OFF
 ENABLE_PHP=OFF
 ENABLE_SPELL=OFF
-ENABLE_HEADLESS=OFF
 {% endblock %}
 
 {% block build_flags %}
