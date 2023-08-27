@@ -119,8 +119,8 @@ class Ops:
     def gc(self, kind):
         run_cmd([sys.executable, self.cfg.binary, 'gc'] + kind)
 
-    def runpy(self, args):
-        return [f'{B}/python', '-'] + args
+    def runpy(self):
+        return [f'{B}/python', '-']
 
     def extract(self):
         return [f'{B}/bsdtar', '--no-same-permissions', '--no-same-owner', '-x', '-f']
