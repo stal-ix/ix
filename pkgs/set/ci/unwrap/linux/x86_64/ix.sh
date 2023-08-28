@@ -164,6 +164,8 @@ bin/git/2
 bin/git/go
 bin/kernel/6/2
 bin/kernel/6/3
+bin/kernel/6/4
+bin/kernel/6/5
 bin/meson/60
 bin/meson/62
 bin/meson/63
