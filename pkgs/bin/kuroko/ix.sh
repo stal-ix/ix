@@ -1,5 +1,10 @@
 {% extends 't/ix.sh' %}
 
+{% block fetch %}
+https://github.com/kuroko-lang/kuroko/archive/refs/tags/v1.4.0.tar.gz
+sha:
+{% endblock %}
+
 {% block build_flags %}
 {{super()}}
 wrap_cc
