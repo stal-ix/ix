@@ -1,8 +1,7 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://github.com/hyprwm/Hyprland/releases/download/v0.28.0/source-v0.28.0.tar.gz
-sha:baf355cb4e301b27de59fa5fc503b7338eed1bc921fcf76b73629504a00ffefd
+{% include 'ver.sh' %}
 {% endblock %}
 
 {% block bld_libs %}
@@ -17,11 +16,11 @@ lib/wayland
 lib/shim/x11
 lib/xkbcommon
 lib/drivers/3d
-lib/wlroots/17
 lib/mesa/gl/dl
 lib/mesa/egl/dl
 lib/range/v3/std
 lib/mesa/glesv2/dl
+bin/hypr/land/wlroots
 {% endblock %}
 
 {% block bld_tool %}
