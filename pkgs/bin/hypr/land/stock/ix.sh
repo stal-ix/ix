@@ -30,7 +30,7 @@ bld/wayland
 {% endblock %}
 
 {% block patch %}
-sed -e 's|.*define PI .*||' -i src/defines.hpp
+sed -e 's|.*define PI .*||' -i src/macros.hpp
 sed -e 's|PI |M_PI |g' -i src/config/ConfigManager.cpp
 sed -e 's|PI |M_PI |g' -i src/render/OpenGL.cpp
 
