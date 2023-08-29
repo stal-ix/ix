@@ -1,6 +1,7 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
+bin/qemu/8/1
 bin/weechat
 bin/python/9
 bin/xmlb
