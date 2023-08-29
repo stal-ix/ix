@@ -7,7 +7,7 @@ lib/jpeg
 lib/cairo
 lib/pango
 lib/wayland
-lib/wlroots/17
+bin/hypr/land/wlroots
 lib/shim/fake(lib_name=OpenGL)
 {% endblock %}
 
