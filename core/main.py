@@ -56,8 +56,13 @@ def main_func(args, binary):
     hndl = find_handler(args)
 
     if not hndl:
+        try:
+            return main_func(['tool'] + args, binary)
+        except FileNotFoundError:
+            pass
+
         print_help()
-        sys.exit(0)
+        sys.exit(1)
 
     k, v, a = hndl
 
