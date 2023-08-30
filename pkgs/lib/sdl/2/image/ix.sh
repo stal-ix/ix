@@ -31,6 +31,10 @@ SDL2IMAGE_WEBP=ON
 SDL2IMAGE_AVIF=ON
 {% endblock %}
 
+{% block patch %}
+sed -e 's|0.9.1|1.0.0|' -i CMakeLists.txt
+{% endblock %}
+
 {% block install %}
 {{super()}}
 cd ${out}/lib
