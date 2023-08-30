@@ -26,6 +26,7 @@ lib/elfutils
 lib/readline
 lib/trace/event
 lib/trace/event/plugins
+lib/shim/fake(lib_name=stdc++)
 {% endblock %}
 
 {% block host_libs %}

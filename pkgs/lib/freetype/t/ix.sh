@@ -1,7 +1,8 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://gitlab.freedesktop.org/freetype/freetype/-/archive/VER-2-13-2/freetype-VER-2-13-2.tar.bz2
+https://gitlab.com/freetype/freetype/-/archive/VER-2-13-2/freetype-VER-2-13-2.tar.bz2
+#https://gitlab.freedesktop.org/freetype/freetype/-/archive/VER-2-13-2/freetype-VER-2-13-2.tar.bz2
 sha:175f39fd796410d136451ce9637f26d359b44258c8a2005682bacb326db80478
 {% endblock %}
 

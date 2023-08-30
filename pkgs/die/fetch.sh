@@ -45,6 +45,6 @@ aux/git(parent_id=src_{{git_sha.strip()}},sha={{git_sha.strip()}},branch={{git_b
 {% if git_sha %}
 mkdir src
 cd src
-stable_unpack ${src}/*lz4
+stable_unpack ${GIT_TGZ}
 {% else %}{{super()}}{% endif %}
 {% endblock %}

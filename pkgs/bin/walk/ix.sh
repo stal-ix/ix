@@ -1,11 +1,11 @@
 {% extends '//die/go/pure.sh' %}
 
 {% block go_url %}
-https://github.com/antonmedv/walk/archive/refs/tags/v1.5.2.tar.gz
+https://github.com/antonmedv/walk/archive/refs/tags/v1.6.2.tar.gz
 {% endblock %}
 
 {% block go_sha %}
-e8a200e9255d4fedc6623cb9ad76de70ce882cf02b92362225533c9e9ca6500d
+95ea5b367c3c4b098553f29e1a95e3b9a2a8331d61267d3b11593a11aad89575
 {% endblock %}
 
 {% block install %}

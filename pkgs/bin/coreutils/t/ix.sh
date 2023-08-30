@@ -5,7 +5,9 @@ lib/c
 lib/gmp
 lib/intl
 lib/sigsegv
+{% block openssl_ver %}
 lib/openssl/1
+{% endblock %}
 {% if linux %}
 lib/acl
 lib/cap

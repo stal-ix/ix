@@ -1,6 +1,8 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
+bin/coreutils/9/4
+bin/qemu/8/1
 bin/weechat
 bin/python/9
 bin/xmlb
@@ -164,6 +166,8 @@ bin/git/2
 bin/git/go
 bin/kernel/6/2
 bin/kernel/6/3
+bin/kernel/6/4
+bin/kernel/6/5
 bin/meson/60
 bin/meson/62
 bin/meson/63

@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://github.com/thom311/libnl/releases/download/libnl3_7_0/libnl-3.7.0.tar.gz
-sha:9fe43ccbeeea72c653bdcf8c93332583135cda46a79507bfd0a483bb57f65939
+https://github.com/thom311/libnl/releases/download/libnl3_8_0/libnl-3.8.0.tar.gz
+sha:bb726c6d7a08b121978d73ff98425bf313fa26a27a331d465e4f1d7ec5b838c6
 {% endblock %}
 
 {% block lib_deps %}
@@ -18,6 +18,6 @@ bld/flex
 bld/bison
 {% endblock %}
 
-{% block env_lib %}
+{% block env %}
 export CPPFLAGS="-I${out}/include/libnl3 \${CPPFLAGS}"
 {% endblock %}

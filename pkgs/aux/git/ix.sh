@@ -2,8 +2,10 @@
 
 {% block use_network %}true{% endblock %}
 
+{% set git_tgz %}git_{{parent_id}}.tar.lz4{% endset %}
+
 {% block predict_outputs %}
-[{"path": "share/{{parent_id}}.tar.lz4", "sum": "{{sha}}"}]
+[{"path": "share/{{git_tgz}}", "sum": "{{sha}}"}]
 {% endblock %}
 
 {% block bld_tool %}
@@ -29,12 +31,12 @@ done
 {{refine | b64d}}
 {% endif %}
 cd ..
-stable_pack {{sha}} {{parent_id}}.tar.lz4 src
+stable_pack {{sha}} {{git_tgz}} src
 {% endblock %}
 
 {% block install %}
 mkdir ${out}/share
-mv {{parent_id}}.tar.lz4 ${out}/share/
+mv {{git_tgz}} ${out}/share/
 {% endblock %}
 
 {% block postinstall %}
@@ -42,5 +44,5 @@ mv {{parent_id}}.tar.lz4 ${out}/share/
 {% endblock %}
 
 {% block env %}
-export src="${out}/share"
+export GIT_TGZ="${out}/share/{{git_tgz}}"
 {% endblock %}
