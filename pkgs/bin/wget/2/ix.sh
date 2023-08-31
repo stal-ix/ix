@@ -1,8 +1,8 @@
 {% extends '//die/c/autohell.sh' %}
 
 {% block fetch %}
-https://ftp.gnu.org/gnu/wget/wget2-2.0.1.tar.gz
-sha:0bb7fa03697bb5b8d05e1b5e15b863440826eb845874c4ffb5e32330f9845db1
+https://ftp.gnu.org/gnu/wget/wget2-2.1.0.tar.gz
+sha:a05dc5191c6bad9313fd6db2777a78f5527ba4774f665d5d69f5a7461b49e2e7
 {% endblock %}
 
 {% block bld_libs %}
@@ -34,4 +34,8 @@ bld/texinfo
 {% block install %}
 {{super()}}
 rm ${out}/bin/wget2_noinstall
+{% endblock %}
+
+{% block c_rename_symbol %}
+log_init
 {% endblock %}
