@@ -10,6 +10,7 @@ lib/c
 lib/z
 lib/c++
 lib/imath
+lib/deflate
 {% endblock %}
 
 {% block cmake_flags %}
