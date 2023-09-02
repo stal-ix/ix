@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://gitlab.com/procps-ng/procps/-/archive/v4.0.3/procps-v4.0.3.tar.bz2
-sha:56db2ed0f3733e2d4e5656dec4bd8852e05b925c10aacc8f87b763d4916dd0c9
+https://gitlab.com/procps-ng/procps/-/archive/v4.0.4/procps-v4.0.4.tar.bz2
+sha:08dbaaaae6afe8d5fbeee8aa3f8b460b01c5e09ce4706b161846f067103a2cf2
 {% endblock %}
 
 {% block lib_deps %}

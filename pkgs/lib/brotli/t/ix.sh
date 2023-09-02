@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/google/brotli/archive/refs/tags/v1.0.9.tar.gz
-sha:f9e8d81d0405ba66d181529af42a3354f838c939095ff99930da6aa9cdf6fe46
+https://github.com/google/brotli/archive/refs/tags/v1.1.0.tar.gz
+sha:e720a6ca29428b803f4ad165371771f5398faba397edf6778837a18599ea13ff
 {% endblock %}
 
 {% block lib_deps %}
@@ -12,9 +12,4 @@ lib/c
 {% block cmake_flags %}
 BROTLI_SHARED_LIBS=
 BROTLI_DISABLE_TESTS=ON
-{% endblock %}
-
-{% block install %}
-{{super()}}
-rm ${out}/lib/lib*static*
 {% endblock %}
