@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-http://www.alsa-project.org/files/pub/utils/alsa-utils-1.2.9.tar.bz2
-sha:e7623d4525595f92e11ce25ee9a97f2040a14c6e4dcd027aa96e06cbce7817bd
+http://www.alsa-project.org/files/pub/utils/alsa-utils-1.2.10.tar.bz2
+sha:104b62ec7f02a7ce16ca779f4815616df1cc21933503783a9107b5944f83063a
 {% endblock %}
 
 {% block bld_tool %}
@@ -25,4 +25,11 @@ lib/samplerate
 
 {% block patch %}
 sed -e 's|install-data-hook|xxx|' -i Makefile.am
+{% endblock %}
+
+{% block cpp_defines %}
+u_int8_t=uint8_t
+u_int16_t=uint16_t
+u_int32_t=uint32_t
+u_int64_t=uint64_t
 {% endblock %}
