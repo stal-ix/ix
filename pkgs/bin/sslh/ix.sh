@@ -11,6 +11,7 @@ lib/ev
 lib/cap
 lib/bsd
 lib/pcre/2
+lib/config
 {% endblock %}
 
 {% block bld_tool %}
@@ -19,8 +20,6 @@ bin/gzip
 {% endblock %}
 
 {% block make_flags %}
-USELIBCONFIG=
-USELIBWRAP=
-USESYSTEMD=
+USELIBBSD=1
 BINDIR=${out}/bin
 {% endblock %}
