@@ -44,11 +44,12 @@ bld/bash
 bld/perl
 bld/bison
 bld/python
+bld/shebangs
 bld/pkg/config
 bin/ld(for_target={{target.gnu.three}})
 {% endblock %}
 
-{%block make_flags %}
+{% block make_flags %}
 -f Makefile.perf
 perfexecdir=lib/{{uniq_id}}
 NO_SDT=1
@@ -70,6 +71,7 @@ wrap_cc
 {% endblock %}
 
 {% block patch %}
+fix_shebangs check-headers.sh
 find . -type f | while read l; do
     sed -e 's|/tmp/|/var/tmp/|g' -i ${l}
 done
