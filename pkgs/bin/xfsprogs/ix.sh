@@ -30,7 +30,7 @@ INSTALL=install
 {% endblock %}
 
 {% block patch %}
-sed -e 's|/bin/bash|/usr/bin/env bash|' -i install-sh
+>install-sh
 {% endblock %}
 
 {% block build_flags %}
