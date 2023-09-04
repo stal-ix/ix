@@ -18,6 +18,8 @@ lib/bumpalloc/small
 
 {% block configure_flags %}
 --disable-tests
+--disable-minidebuginfo
+--disable-zlibdebuginfo
 {% endblock %}
 
 {% block install %}

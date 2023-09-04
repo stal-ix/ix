@@ -62,6 +62,10 @@ CMAKE_BUILD_TYPE=Release
 BUILD_SHARED_LIBS=OFF
 BUILD_TESTING=OFF
 SITE=ix
+{% if not boot %}
+UNIX=1
+__UNIX_PATHS_INCLUDED=1
+{% endif %}
 {% block cmake_flags %}
 {% endblock %}
 {% endset %}

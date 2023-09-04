@@ -14,3 +14,9 @@ lib/zstd
 lib/bzip/2
 lib/pcre/2
 {% endblock %}
+
+{% block patch %}
+find m4/ -type f | while read l; do
+    sed -e 's|/usr/|/nowhere/|' -e 's|/usr |/nowhere |' -i ${l}
+done
+{% endblock %}

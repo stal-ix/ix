@@ -1,6 +1,7 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
+bin/clang/17
 bin/sslh
 bin/coreutils/9/4
 bin/qemu/8/1
@@ -733,7 +734,7 @@ bin/fusermount/2
 bin/powertop
 bin/f2c
 bin/cage
-bin/psensor
+#bin/psensor
 bin/incron
 bin/rubber/band
 bin/vcpkg

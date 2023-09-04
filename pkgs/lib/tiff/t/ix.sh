@@ -13,6 +13,7 @@ lib/c++
 lib/jpeg
 lib/zstd
 lib/webp
+lib/deflate
 {% endblock %}
 
 {% block cmake_flags %}
