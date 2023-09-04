@@ -734,7 +734,7 @@ bin/fusermount/2
 bin/powertop
 bin/f2c
 bin/cage
-bin/psensor
+#bin/psensor
 bin/incron
 bin/rubber/band
 bin/vcpkg
