@@ -1,6 +1,7 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
+bin/ipget
 bin/clang/17
 bin/sslh
 bin/coreutils/9/4
