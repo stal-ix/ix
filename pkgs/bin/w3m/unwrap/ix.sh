@@ -7,6 +7,7 @@ sha:e994d263f2fd2c22febfbe45103526e00145a7674a0fda79c822b97c2770a9e3
 
 {% block bld_libs %}
 lib/c
+lib/z
 lib/intl
 lib/curses
 lib/boehmgc
