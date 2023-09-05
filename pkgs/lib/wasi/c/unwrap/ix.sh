@@ -13,7 +13,7 @@ bd950eb128bff337153de217b11270f948d04bb4
 {% endblock %}
 
 {% block make_flags %}
-CC=clang-16
+CC=clang-17
 AR=llvm-ar
 NM=llvm-nm
 EXTRA_CFLAGS="${EF}"
