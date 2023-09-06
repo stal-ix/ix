@@ -44,6 +44,7 @@ cpp_rtti=false
 shader-cache=disabled
 llvm=disabled
 shared-llvm=disabled
+lmsensors=disabled
 {% endblock %}
 
 {% block patch %}
