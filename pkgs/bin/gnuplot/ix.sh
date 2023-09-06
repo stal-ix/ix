@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://downloads.sourceforge.net/project/gnuplot/gnuplot/5.4.8/gnuplot-5.4.8.tar.gz
-sha:931279c7caad1aff7d46cb4766f1ff41c26d9be9daf0bcf0c79deeee3d91f5cf
+https://downloads.sourceforge.net/project/gnuplot/gnuplot/5.4.9/gnuplot-5.4.9.tar.gz
+sha:a328a021f53dc05459be6066020e9a71e8eab6255d3381e22696120d465c6a97
 {% endblock %}
 
 {% block bld_libs %}
@@ -14,6 +14,7 @@ lib/readline
 
 {% block configure_flags %}
 --with-gd
+--with-qt=no
 --disable-plugins
 --with-bitmap-terminals
 {% endblock %}
