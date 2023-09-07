@@ -1,0 +1,8 @@
+--- a/include/clang/Config/config.h
++++ b/include/clang/Config/config.h
+@@ -67,3 +67,5 @@
+ /* Define if we have sys/resource.h (rlimits) */
++#if __has_include(<sys/resource.h>)
+ #define CLANG_HAVE_RLIMITS 1
++#endif
+ 

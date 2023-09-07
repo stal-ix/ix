@@ -9,3 +9,35 @@ llvm-profdata
 llvm-rc
 sancov
 {% endblock %}
+
+{% block clang_patches %}
+cindex.patch
+clang-format-patches.patch
+asan_static.patch
+D92001.patch
+D21113-case-insesitive-include-paths.patch
+D142421.patch
+fix-build.patch
+dwarf-emit-namespaces.patch
+{% endblock %}
+
+{% block llvm_patches %}
+vfs-case-insensitive.patch
+{% endblock %}
+
+{% block patch %}
+{{super()}}
+cd llvm
+{% for p in self.llvm_patches().strip().split() %}
+(base64 -d | patch -p1) << EOF
+{{ix.load_file('patches/llvm/' + p) | b64e}}
+EOF
+{% endfor %}
+cd ..
+cd clang
+{% for p in self.clang_patches().strip().split() %}
+(base64 -d | patch -p1) << EOF
+{{ix.load_file('patches/clang/' + p) | b64e}}
+EOF
+{% endfor %}
+{% endblock %}
