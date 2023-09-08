@@ -20,5 +20,5 @@ vapi=false
 docs=false
 tests=false
 introspection=false
-backends=gtk{{gtk_ver}}
+backend-gtk{{gtk_ver}}=enabled
 {% endblock %}
