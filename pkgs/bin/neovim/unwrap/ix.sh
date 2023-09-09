@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/neovim/neovim/archive/refs/tags/v0.9.0.tar.gz
-sha:39d79107c54d2f3babcad2cd157c399241c04f6e75e98c18e8afaf2bb5e82937
+https://github.com/neovim/neovim/archive/refs/tags/v0.9.2.tar.gz
+sha:06b8518bad4237a28a67a4fbc16ec32581f35f216b27f4c98347acee7f5fb369
 {% endblock %}
 
 {% block bld_libs %}

@@ -1,0 +1,43 @@
+#!/usr/bin/env python
+
+import os
+import sys
+import hashlib
+import subprocess
+
+
+PART = '''
+{sha}.touch:
+	rm -rf {sha} {sha}.tmp
+	wget -O {sha}.tmp --no-check-certificate {url}
+	sync
+	mv {sha}.tmp {sha}
+	sync
+	ln -s {sha} `sha256sum {sha} | sed -e 's| .*||'`
+	sync
+	touch {sha}.touch
+	sync
+
+all: {sha}.touch
+
+'''
+
+
+def make_part(u):
+    sha = hashlib.sha256(u.encode()).hexdigest()
+    return PART.replace('{sha}', sha).replace('{url}', u)
+
+
+def it_parts():
+    for u in open(os.environ['IX_PKGS_ROOT'] + '/pkgs/die/scripts/urls.txt').read().strip().split():
+        yield make_part(u)
+
+
+where = sys.argv[1]
+
+try:
+    os.makedirs(where)
+except OSError:
+    pass
+
+subprocess.run(['make', '-k', '-j', '10', '-C', where, '-f', '/dev/stdin', 'all'], input=(''.join(it_parts())).encode(), check=True)

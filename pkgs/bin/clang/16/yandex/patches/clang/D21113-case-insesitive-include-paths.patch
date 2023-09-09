@@ -1,0 +1,133 @@
+partial port https://reviews.llvm.org/D21113
+DEVTOOLS-5389
+
+--- a/include/clang/Basic/LangOptions.def
++++ b/include/clang/Basic/LangOptions.def
+@@ -83,6 +83,7 @@ LANGOPT(C99               , 1, 0, "C99")
+ LANGOPT(C11               , 1, 0, "C11")
+ LANGOPT(C17               , 1, 0, "C17")
+ LANGOPT(C2x               , 1, 0, "C2x")
++LANGOPT(CaseInsensitive   , 1, 0, "Case insensitive filesystem mode")
+ LANGOPT(MSVCCompat        , 1, 0, "Microsoft Visual C++ full compatibility mode")
+ LANGOPT(Kernel            , 1, 0, "Kernel mode")
+ LANGOPT(MicrosoftExt      , 1, 0, "Microsoft C++ extensions")
+--- a/include/clang/Driver/Options.td
++++ b/include/clang/Driver/Options.td
+@@ -1331,6 +1331,8 @@ def fdiagnostics_color_EQ : Joined<["-"], "fdiagnostics-color=">, Group<f_Group>
+ def fansi_escape_codes : Flag<["-"], "fansi-escape-codes">, Group<f_Group>,
+   Flags<[CoreOption, CC1Option]>, HelpText<"Use ANSI escape codes for diagnostics">,
+   MarshallingInfoFlag<DiagnosticOpts<"UseANSIEscapeCodes">>;
++def fcase_insensitive_paths : Flag<["-"], "fcase-insensitive-paths">, Group<f_Group>,
++  Flags<[CC1Option, CoreOption]>, HelpText<"Treat file paths as case-insensitive">;
+ def fcomment_block_commands : CommaJoined<["-"], "fcomment-block-commands=">, Group<f_clang_Group>, Flags<[CC1Option]>,
+   HelpText<"Treat each comma separated argument in <arg> as a documentation comment block command">,
+   MetaVarName<"<arg>">, MarshallingInfoStringVector<LangOpts<"CommentOpts.BlockCommandNames">>;
+--- a/include/clang/Frontend/CompilerInvocation.h
++++ b/include/clang/Frontend/CompilerInvocation.h
+@@ -293,13 +293,17 @@ private:
+ };
+ 
+ IntrusiveRefCntPtr<llvm::vfs::FileSystem>
+-createVFSFromCompilerInvocation(const CompilerInvocation &CI,
++createVFSFromCompilerInvocationOrig(const CompilerInvocation &CI,
+                                 DiagnosticsEngine &Diags);
+ 
+ IntrusiveRefCntPtr<llvm::vfs::FileSystem> createVFSFromCompilerInvocation(
+     const CompilerInvocation &CI, DiagnosticsEngine &Diags,
+     IntrusiveRefCntPtr<llvm::vfs::FileSystem> BaseFS);
+ 
++IntrusiveRefCntPtr<llvm::vfs::FileSystem>
++createVFSFromCompilerInvocation(const CompilerInvocation &CI,
++                                DiagnosticsEngine &Diags);
++
+ IntrusiveRefCntPtr<llvm::vfs::FileSystem>
+ createVFSFromOverlayFiles(ArrayRef<std::string> VFSOverlayFiles,
+                           DiagnosticsEngine &Diags,
+--- a/include/clang/Lex/HeaderSearchOptions.h
++++ b/include/clang/Lex/HeaderSearchOptions.h
+@@ -200,6 +200,9 @@ public:
+   /// Whether header search information should be output as for -v.
+   unsigned Verbose : 1;
+ 
++  /// Whether header search should be case-insensitive.
++  unsigned CaseInsensitive : 1;
++
+   /// If true, skip verifying input files used by modules if the
+   /// module was already verified during this build session (see
+   /// \c BuildSessionTimestamp).
+@@ -231,7 +234,7 @@ public:
+         ImplicitModuleMaps(false), ModuleMapFileHomeIsCwd(false),
+         ModuleFileHomeIsCwd(false), EnablePrebuiltImplicitModules(false),
+         UseBuiltinIncludes(true), UseStandardSystemIncludes(true),
+-        UseStandardCXXIncludes(true), UseLibcxx(false), Verbose(false),
++        UseStandardCXXIncludes(true), UseLibcxx(false), Verbose(false), CaseInsensitive(false),
+         ModulesValidateOncePerBuildSession(false),
+         ModulesValidateSystemHeaders(false),
+         ValidateASTInputFilesContent(false), UseDebugInfo(false),
+--- a/lib/Driver/ToolChains/Clang.cpp
++++ b/lib/Driver/ToolChains/Clang.cpp
+@@ -1425,6 +1425,9 @@ void Clang::AddPreprocessingOptions(Compilation &C, const JobAction &JA,
+   // OBJCPLUS_INCLUDE_PATH - system includes enabled when compiling ObjC++.
+   addDirectoryList(Args, CmdArgs, "-objcxx-isystem", "OBJCPLUS_INCLUDE_PATH");
+ 
++  if (Args.hasArg(options::OPT_fcase_insensitive_paths))
++    CmdArgs.push_back("-fcase-insensitive-paths");
++
+   // While adding the include arguments, we also attempt to retrieve the
+   // arguments of related offloading toolchains or arguments that are specific
+   // of an offloading programming model.
+--- a/lib/Frontend/CompilerInvocation.cpp
++++ b/lib/Frontend/CompilerInvocation.cpp
+@@ -3100,6 +3100,8 @@ static bool ParseHeaderSearchArgs(HeaderSearchOptions &Opts, ArgList &Args,
+   for (const auto *A : Args.filtered(OPT_ivfsoverlay))
+     Opts.AddVFSOverlayFile(A->getValue());
+ 
++  Opts.CaseInsensitive = Args.hasArg(OPT_fcase_insensitive_paths);
++
+   return Diags.getNumErrors() == NumErrorsBefore;
+ }
+ 
+@@ -3809,6 +3811,8 @@ bool CompilerInvocation::ParseLangArgs(LangOptions &Opts, ArgList &Args,
+   else if (Args.hasArg(OPT_fwrapv))
+     Opts.setSignedOverflowBehavior(LangOptions::SOB_Defined);
+ 
++  Opts.CaseInsensitive = Args.hasArg(OPT_fcase_insensitive_paths);
++
+   Opts.MSCompatibilityVersion = 0;
+   if (const Arg *A = Args.getLastArg(OPT_fms_compatibility_version)) {
+     VersionTuple VT;
+@@ -4664,7 +4668,7 @@ void CompilerInvocation::generateCC1CommandLine(
+ }
+ 
+ IntrusiveRefCntPtr<llvm::vfs::FileSystem>
+-clang::createVFSFromCompilerInvocation(const CompilerInvocation &CI,
++clang::createVFSFromCompilerInvocationOrig(const CompilerInvocation &CI,
+                                        DiagnosticsEngine &Diags) {
+   return createVFSFromCompilerInvocation(CI, Diags,
+                                          llvm::vfs::getRealFileSystem());
+@@ -4699,3 +4703,14 @@ clang::createVFSFromCompilerInvocation(
+   }
+   return Result;
+ }
++
++IntrusiveRefCntPtr<llvm::vfs::FileSystem>
++clang::createVFSFromCompilerInvocation(const CompilerInvocation &CI,
++                                DiagnosticsEngine &Diags) {
++  IntrusiveRefCntPtr<llvm::vfs::FileSystem> FS = clang::createVFSFromCompilerInvocationOrig(CI, Diags);
++  if (!CI.getHeaderSearchOpts().CaseInsensitive) {
++    return FS;
++  } else {
++    return new llvm::vfs::CaseInsensitiveFileSystem(FS);
++  }
++}
+--- a/lib/Lex/PPDirectives.cpp
++++ b/lib/Lex/PPDirectives.cpp
+@@ -2202,7 +2202,7 @@ Preprocessor::ImportAction Preprocessor::HandleHeaderIncludeOrImport(
+   // Issue a diagnostic if the name of the file on disk has a different case
+   // than the one we're about to open.
+   const bool CheckIncludePathPortability =
+-      !IsMapped && !File->getFileEntry().tryGetRealPathName().empty();
++      !LangOpts.CaseInsensitive && !IsMapped && !File->getFileEntry().tryGetRealPathName().empty();
+ 
+   if (CheckIncludePathPortability) {
+     StringRef Name = LookupFilename;

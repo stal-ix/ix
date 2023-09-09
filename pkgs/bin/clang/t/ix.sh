@@ -36,7 +36,7 @@ export CPPFLAGS="-isystem ${out}/share/include \${CPPFLAGS}"
 {% block install %}
 {{super()}}
 {% block clang_fix_includes %}
-mkdir ${out}/share
+mkdir -p ${out}/share
 mv ${out}/lib/clang/1*/include ${out}/share/
 rm -rf ${out}/libexec
 {% endblock %}
