@@ -1,7 +1,7 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://the.earth.li/~sgtatham/putty/latest/putty-0.76.tar.gz
+https://the.earth.li/~sgtatham/putty/0.76/putty-0.76.tar.gz
 sha:547cd97a8daa87ef71037fab0773bceb54a8abccb2f825a49ef8eba5e045713f
 {% endblock %}
 
