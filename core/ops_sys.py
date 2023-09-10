@@ -107,6 +107,7 @@ def gen_fetch_aria_2(sb, url, path, sha):
         '-o', os.path.basename(path),
         '-d', os.path.dirname(path),
         '-s', str(len(urls)),
+        '--console-log-level=info',
         '--async-dns=false',
         '--no-conf=true',
         '--uri-selector=inorder',
