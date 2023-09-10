@@ -1,4 +1,5 @@
 import os
+import random
 import platform
 
 import core.ops as co
@@ -168,11 +169,12 @@ def arch(n):
 
 
 class Config:
-    def __init__(self, binary, overlays, root, verbose):
+    def __init__(self, binary, overlays, root, verbose, seed):
         self.binary = binary
         self.overlays = overlays
         self.ix_dir = root
         self.verbose = verbose
+        self.seed = seed
         # circular ref
         self.ops = co.construct(self)
 
@@ -228,5 +230,6 @@ def config_from(ctx):
     overlays = find_pkg_dirs(binary)
     root = os.environ.get('IX_ROOT', '/ix')
     verbose = os.environ.get('IX_VERBOSE', '')
+    seed = os.environ.get('IX_SEED', str(random.random()))
 
-    return Config(binary, overlays, root, verbose)
+    return Config(binary, overlays, root, verbose, seed)
