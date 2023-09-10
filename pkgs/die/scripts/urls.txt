@@ -326,7 +326,6 @@ https://github.com/catboost/catboost/archive/refs/tags/v1.0.6.tar.gz
 https://github.com/cboxdoerfer/fsearch/archive/refs/tags/0.2.3.tar.gz
 https://github.com/ccache/ccache/releases/download/v4.8.3/ccache-4.8.3.tar.xz
 https://github.com/ccxvii/mujs/archive/refs/tags/1.3.2.tar.gz
-https://github.com/ccxvii/mujs/archive/refs/tags/{{self.version()}}.tar.gz
 https://github.com/chenjiandongx/sniffer/archive/refs/tags/v0.6.1.tar.gz
 https://github.com/cisco/openh264/archive/refs/tags/v2.3.1.tar.gz
 https://github.com/cjlin1/liblinear/archive/v247/liblinear-247.tar.gz
@@ -462,7 +461,6 @@ https://github.com/hboetes/mg/archive/refs/tags/20221112.tar.gz
 https://github.com/Hjdskes/cage/archive/refs/tags/v0.1.4.tar.gz
 https://github.com/hluk/CopyQ/archive/refs/tags/v7.0.0.tar.gz
 https://github.com/HowardHinnant/date/archive/refs/tags/v3.0.1.tar.gz
-https://github.com/HowardHinnant/date/archive/refs/tags/v{{self.version()}}.tar.gz
 https://github.com/hpjansson/chafa/archive/refs/tags/1.12.4.tar.gz
 https://github.com/htop-dev/htop/archive/refs/tags/3.2.2.tar.gz
 https://github.com/hughsie/libgusb/archive/refs/tags/0.4.6.tar.gz
@@ -694,7 +692,6 @@ https://github.com/open-source-parsers/jsoncpp/archive/refs/tags/1.9.5.tar.gz
 https://github.com/openssh/openssh-portable/archive/refs/tags/V_9_4_P1.tar.gz
 https://github.com/openSUSE/catatonit
 https://github.com/openSUSE/hwinfo/archive/refs/tags/23.2.tar.gz
-https://github.com/openSUSE/hwinfo/archive/refs/tags/{{version}}.tar.gz
 https://github.com/openSUSE/xinetd/archive/refs/tags/2.3.15.4.tar.gz
 https://github.com/OpenTTD/OpenTTD/archive/refs/tags/13.4.tar.gz
 https://github.com/OpenVisualCloud/SVT-HEVC/archive/refs/tags/v1.5.1.tar.gz
@@ -783,11 +780,9 @@ https://github.com/stal-ix/sources/raw/main/bmake-20210808.tar.gz
 https://github.com/stal-ix/sources/raw/main/libmnl-1.0.5.tar.bz2
 https://github.com/stal-ix/sources/raw/main/unzip_6.0-27.debian.tar.xz
 https://github.com/stedolan/jq/archive/refs/tags/jq-1.6.tar.gz
-https://github.com/stedolan/jq/archive/refs/tags/jq-{{self.version()}}.tar.gz
 https://github.com/stevegrubb/libcap-ng/archive/refs/tags/v0.8.3.tar.gz
 https://github.com/stp/stp/archive/refs/tags/2.3.3.tar.gz
 https://github.com/strawberrymusicplayer/strawberry/archive/refs/tags/1.0.18.tar.gz
-https://github.com/strawberrymusicplayer/strawberry/archive/refs/tags/{{self.version()}}.tar.gz
 https://github.com/strukturag/libde265/archive/refs/tags/v1.0.12.tar.gz
 https://github.com/strukturag/libheif/archive/refs/tags/v1.16.2.tar.gz
 https://github.com/swaywm/sway/archive/refs/tags/1.8.1.tar.gz
@@ -827,7 +822,6 @@ https://github.com/tsl0922/ttyd/archive/refs/tags/1.7.3.tar.gz
 https://github.com/tsujan/FeatherPad/archive/refs/tags/V1.3.4.tar.gz
 https://github.com/tvrzna/emptty/archive/refs/tags/v0.10.0.tar.gz
 https://github.com/uclouvain/openjpeg/archive/refs/tags/v2.5.0.tar.gz
-https://github.com/uclouvain/openjpeg/archive/refs/tags/v{{self.version()}}.0.tar.gz
 https://github.com/unicode-org/icu/archive/refs/tags/release-70-1.tar.gz
 https://github.com/upx/upx/releases/download/v4.1.0/upx-4.1.0-src.tar.xz
 https://github.com/uriparser/uriparser/archive/refs/tags/uriparser-0.9.6.tar.gz
@@ -866,7 +860,6 @@ https://github.com/WerWolv/ImHex/releases/download/v1.19.1/Full.Sources.tar.gz
 https://github.com/westes/flex/archive/refs/tags/flex-2-5-10.tar.gz
 https://github.com/westes/flex/files/981163/flex-2.6.4.tar.gz
 https://github.com/wfeldt/libx86emu/archive/refs/tags/3.5.tar.gz
-https://github.com/wfeldt/libx86emu/archive/refs/tags/{{version}}.tar.gz
 https://github.com/wireshark/wireshark/archive/refs/tags/v4.1.0.tar.gz
 https://github.com/wmcbrine/PDCurses
 https://github.com/wmww/gtk-layer-shell/archive/refs/tags/v0.8.0.tar.gz
@@ -877,7 +870,6 @@ https://github.com/wxWidgets/wxWidgets/releases/download/v3.2.2.1/wxWidgets-3.2.
 https://github.com/ximion/appstream/archive/refs/tags/v0.16.3.tar.gz
 https://github.com/xiph/flac/archive/refs/tags/1.4.3.tar.gz
 https://github.com/xiph/opus/archive/refs/tags/v1.4.tar.gz
-https://github.com/xiph/opus/archive/refs/tags/v{{version}}.tar.gz
 https://github.com/xkbcommon/libxkbcommon/archive/refs/tags/xkbcommon-1.5.0.tar.gz
 https://github.com/xxxserxxx/gotop/archive/refs/tags/v4.2.0.tar.gz
 https://github.com/xyproto/gendesk/archive/refs/tags/1.0.9.tar.gz
@@ -1077,7 +1069,6 @@ https://sourceware.org/pub/bzip2/bzip2-1.0.8.tar.gz
 https://sourceware.org/pub/valgrind/valgrind-3.19.0.tar.bz2
 https://sqlite.org/2023/sqlite-autoconf-3430000.tar.gz
 https://src.fedoraproject.org/repo/pkgs/zip/zip30.tar.gz/7b74551e63f8ee6aab6fbc86676c0d37/zip30.tar.gz
-https://static.rust-lang.org/dist/rust-1.56.1-{{host.gnu_arch}}-apple-darwin.pkg
 https://static.rust-lang.org/dist/rust-1.56.1-x86_64-unknown-linux-gnu.tar.gz
 https://static.rust-lang.org/dist/rustc-1.54.0-src.tar.gz
 https://storage.googleapis.com/aom-releases/libaom-3.7.0.tar.gz
