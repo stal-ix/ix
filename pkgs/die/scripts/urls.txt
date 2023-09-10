@@ -327,6 +327,7 @@ https://github.com/facebook/zstd/archive/refs/tags/v1.5.5.tar.gz
 https://github.com/fastfloat/fast_float/archive/refs/tags/v3.8.1.tar.gz
 https://github.com/fenrus75/powertop/archive/refs/tags/v2.15.tar.gz
 https://github.com/fish-shell/fish-shell/archive/refs/tags/3.6.1.tar.gz
+https://github.com/flatpak/libportal/archive/refs/tags/0.7.1.tar.gz
 https://github.com/flatpak/libportal/releases/download/0.7/libportal-0.7.tar.xz
 https://github.com/flatpak/xdg-desktop-portal/archive/dc898cac4d7075b45fe9294acb959b07cd7ecf6a.tar.gz
 https://github.com/flatpak/xdg-desktop-portal-gtk/archive/refs/tags/1.14.1.tar.gz
