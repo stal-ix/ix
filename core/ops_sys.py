@@ -72,7 +72,7 @@ def gen_cksum(fr, to, md5):
             yield from gen_link(fr, to)
 
 
-def gen_fetch(url, path, md5):
+def gen_fetch_curl(url, path, md5):
     yield from gen_dir(os.path.dirname(path))
 
     yield [
@@ -84,6 +84,41 @@ def gen_fetch(url, path, md5):
     ]
 
     yield from gen_cksum(path, '', md5)
+
+
+def gen_mirrors(sb, url, md5):
+    yield url
+
+    for x in sb.package.manager.env.source('//die/scripts/mirrors.txt')[0].strip().split():
+        yield os.path.join(x, md5)
+
+
+def gen_fetch_aria_2(sb, url, path, sha):
+    yield from gen_dir(os.path.dirname(path))
+
+    urls = list(gen_mirrors(sb, url, sha))
+
+    yield [
+        f'/bin/aria2c',
+        f'--checksum=sha-256={sha}',
+        '-o', os.path.basename(path),
+        '-d', os.path.dirname(path),
+        '-s', str(len(urls)),
+        '--async-dns=true',
+        '--no-conf=true',
+        '--uri-selector=inorder',
+        '--check-certificate=false',
+    ] + urls
+
+
+HAVE_ARIA = os.path.isfile('/bin/aria2c')
+
+
+def gen_fetch(sb, url, path, md5):
+    if HAVE_ARIA and md5.startswith('sha:'):
+        yield from gen_fetch_aria_2(sb, url, path, md5[4:])
+    else:
+        yield from gen_fetch_curl(url, path, md5)
 
 
 def gen_links(files, out):
@@ -126,7 +161,7 @@ class Ops:
         return [f'{B}/bsdtar', '--no-same-permissions', '--no-same-owner', '-x', '-f']
 
     def fetch(self, sb, url, path, md5):
-        return sb.cmds(gen_fetch(url, path, md5))
+        return sb.cmds(gen_fetch(sb, url, path, md5))
 
     def cksum(self, sb, fr, to, md5):
         return sb.cmds(gen_cksum(fr, to, md5))
