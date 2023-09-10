@@ -1,6 +1,7 @@
 import os
 import sys
 import json
+import random
 import subprocess
 
 import core.utils as cu
@@ -98,13 +99,15 @@ def gen_fetch_aria_2(sb, url, path, sha):
 
     urls = list(gen_mirrors(sb, url, sha))
 
+    random.Random(sb.config.seed + sha).shuffle(urls)
+
     yield [
         f'/bin/aria2c',
         f'--checksum=sha-256={sha}',
         '-o', os.path.basename(path),
         '-d', os.path.dirname(path),
         '-s', str(len(urls)),
-        '--async-dns=true',
+        '--async-dns=false',
         '--no-conf=true',
         '--uri-selector=inorder',
         '--check-certificate=false',
