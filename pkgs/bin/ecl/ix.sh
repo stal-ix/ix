@@ -1,8 +1,8 @@
 {% extends '//die/c/autohell.sh' %}
 
 {% block fetch %}
-https://common-lisp.net/project/ecl/static/files/release/ecl-21.2.1.tgz
-md5:0c9e0437dbf3a7f1b00da32b7794a3b0
+https://common-lisp.net/project/ecl/static/files/release/ecl-23.9.9.tgz
+sha:c51bdab4ca6c1173dd3fe9cfe9727bcefb97bb0a3d6434b627ca6bdaeb33f880
 {% endblock %}
 
 {% block bld_libs %}

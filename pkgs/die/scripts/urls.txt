@@ -68,6 +68,7 @@ https://codeberg.org/dnkl/tllist/archive/1.1.0.tar.gz
 https://codeberg.org/dnkl/yambar/archive/1.10.0.tar.gz
 https://codeberg.org/tenacityteam/libmad/archive/0.16.3.tar.gz
 https://common-lisp.net/project/ecl/static/files/release/ecl-21.2.1.tgz
+https://common-lisp.net/project/ecl/static/files/release/ecl-23.9.9.tgz
 https://cpan.metacpan.org/authors/id/T/TO/TODDR/XML-Parser-2.46.tar.gz
 https://data.iana.org/time-zones/releases/tzdb-2023c.tar.lz
 https://dbus.freedesktop.org/releases/dbus/dbus-1.14.10.tar.xz
@@ -852,7 +853,6 @@ http://sourceware.org/elfutils/ftp/0.189/elfutils-0.189.tar.bz2
 https://pawsa.fedorapeople.org/balsa/balsa-2.6.4.tar.xz
 https://pm-utils.freedesktop.org/releases/pm-utils-1.4.1.tar.gz
 https://poppler.freedesktop.org/poppler-23.09.0.tar.xz
-https://proxy.golang.org,direct\
 https://pwmt.org/projects/zathura-djvu/download/zathura-djvu-0.2.9.tar.xz
 https://pwmt.org/projects/zathura-pdf-poppler/download/zathura-pdf-poppler-0.3.1.tar.xz
 https://raw.githubusercontent.com/Homebrew/patches/1860b0a745f1fe726900974845d1b0dd3c3398d6/openssh/patch-sandbox-darwin.c-apple-sandbox-named-external.diff
