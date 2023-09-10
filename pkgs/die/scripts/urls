@@ -6,6 +6,6 @@ cd $(dirname ${IX_BINARY})/pkgs/die/scripts/
 
 (
 cat urls.txt
-IX_DUMP_GRAPH=1 "${IX_BINARY}" build set/ci | grep '"http' | sed -e 's|.*"http|http|' | sed -e 's|".*||'
+IX_DUMP_GRAPH=1 "${IX_BINARY}" build set/ci | grep -v GOPROXY | grep '"http' | sed -e 's|.*"http|http|' | sed -e 's|".*||'
 ) | sort | uniq > _
 mv _ urls.txt
