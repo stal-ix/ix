@@ -40,4 +40,4 @@ try:
 except OSError:
     pass
 
-subprocess.run(['make', '-k', '-j', '10', '-C', where, '-f', '/dev/stdin', 'all'], input=(''.join(it_parts())).encode(), check=True)
+subprocess.run(['timeout', '1h', 'make', '-k', '-j', '10', '-C', where, '-f', '/dev/stdin', 'all'], input=(''.join(it_parts())).encode(), check=True)

@@ -1,8 +1,8 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://github.com/flatpak/libportal/releases/download/0.7/libportal-0.7.tar.xz
-sha:64635f03c9501b829d3b4fd2246e8d840f92e2ed14053e082ed3dddda7d725fb
+https://github.com/flatpak/libportal/archive/refs/tags/0.7.1.tar.gz
+sha:6ac8e0e2aa04f56d0320adff03e5f20a0c5d7d1a33d4b19e22707bfbece0b874
 {% endblock %}
 
 {% block lib_deps %}
