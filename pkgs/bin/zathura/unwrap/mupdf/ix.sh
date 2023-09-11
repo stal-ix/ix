@@ -1,3 +1,5 @@
-{% extends '//bin/zathura/unwrap/ix.sh' %}
+{% extends '//die/hub.sh' %}
 
-{% block pdf_plugin %}mupdf{% endblock %}
+{% block run_deps %}
+bin/zathura/unwrap(pdf_plugin=mupdf)
+{% endblock %}

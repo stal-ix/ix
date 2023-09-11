@@ -1,6 +1,8 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
+bin/zathura/unwrap/mupdf
+bin/zathura/unwrap/poppler
 bin/minijail
 bin/hysteria
 bin/ipget

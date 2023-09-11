@@ -1,14 +1,12 @@
 {% extends '//bin/zathura/headers/ix.sh' %}
 
-{% block pdf_plugin %}{% endblock %}
-
 {% block bld_libs %}
 lib/magic
 lib/seccomp
 lib/sqlite/3
 bin/zathura/cb
 bin/zathura/djvu
-bin/zathura/{{self.pdf_plugin()}}
+bin/zathura/{{pdf_plugin}}
 {{super()}}
 {% endblock %}
 
@@ -41,13 +39,13 @@ ver='4_5'
 dl_stubs << EOF >> stubs.c
 cb      zathura_plugin_${ver} cb_zathura_plugin_${ver}
 djvu    zathura_plugin_${ver} djvu_zathura_plugin_${ver}
-{{self.pdf_plugin()}}   zathura_plugin_${ver} {{self.pdf_plugin()}}_zathura_plugin_${ver}
+{{pdf_plugin}}   zathura_plugin_${ver} {{pdf_plugin}}_zathura_plugin_${ver}
 EOF
 
 cc -o zathura stubs.c \
     $(find . -name '*.o')          \
     ${lib_zathura_djvu}/mod/*.a    \
-    ${lib_zathura_{{self.pdf_plugin()}}}/mod/*.a \
+    ${lib_zathura_{{pdf_plugin}}}/mod/*.a \
     ${lib_zathura_cb}/mod/*.a
 {% endblock %}
 
@@ -55,6 +53,6 @@ cc -o zathura stubs.c \
 {{super()}}
 cp ${tmp}/zathura ${out}/bin/
 mkdir -p ${out}/share/plugins
-echo > ${out}/share/plugins/{{self.pdf_plugin()}}.plugin
+echo > ${out}/share/plugins/{{pdf_plugin}}.plugin
 echo > ${out}/share/plugins/djvu.plugin
 {% endblock %}
