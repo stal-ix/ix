@@ -7,7 +7,7 @@ cd $(dirname ${IX_BINARY})/pkgs/die/scripts/
 (
 cat urls.txt
 IX_DUMP_GRAPH=1 "${IX_BINARY}" build set/ci | sed -e 's|\"|\n|g' | grep -v GOPROXY | grep '"http' | sed -e 's|.*"http|http|' | sed -e 's|".*||'
-(find ${IX_PKGS_ROOT} -name 'ix.sh'; find ${IX_PKGS_ROOT} -name 'ver.sh') | xargs cat | grep "http[s]*://"
+find ${IX_PKGS_ROOT} -name '*.sh' | xargs cat | grep "http[s]*://"
 ) | grep -v '#'  \
   | grep -v ' '  \
   | grep -v '{{' \
