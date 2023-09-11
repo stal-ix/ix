@@ -18,14 +18,14 @@ TARGET_LIBS="${PWD}/dl.o"
 
 {% block install %}
 {{super()}}
-cd ${out}/include; mv luajit-2.0/* ./
+cd ${out}/include; mv luajit*/* ./
 {% endblock %}
 
 {% block lua_dlopen %}
 src/lib_package.c
 {% endblock %}
 
-{% block env_lib %}
+{% block env %}
 export LUA_INCLUDE_DIR="${out}/include"
 export CMFLAGS="-DWITH_LUA_ENGINE=LuaJIT \${CMFLAGS}"
 {% endblock %}
