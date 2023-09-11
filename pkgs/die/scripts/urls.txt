@@ -17,6 +17,7 @@ http://download.savannah.nongnu.org/releases/man-db/man-db-2.11.2.tar.xz
 http://download.windowsupdate.com/msdownload/update/software/svpk/2011/02/windows6.1-kb976932-x86_c3516bc5c9e69fee6d9ac4f981f5b95977a8a2fa.exe
 http://downloads.sourceforge.net/djvu/djvulibre-3.5.28.tar.gz
 http://downloads.sourceforge.net/freeimage/FreeImage3180.zip
+http://downloads.uclibc-ng.org/releases/1.0.41/uClibc-ng-1.0.41.tar.xz
 http://downloads.xiph.org/releases/opus/opusfile-0.12.tar.gz
 http://downloads.xiph.org/releases/theora/libtheora-1.1.1.tar.bz2
 http://fossies.org/linux/misc/libev-4.33.tar.gz
