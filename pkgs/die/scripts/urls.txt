@@ -940,6 +940,7 @@ https://gitlab.com/freetype/freetype/-/archive/VER-2-13-2/freetype-VER-2-13-2.ta
 https://gitlab.com/giomasce/flex/-/raw/506e9605baf4638ba47d37133c348df1385ef06c/scan.lex.l
 https://gitlab.com/graphviz/graphviz/-/archive/7.0.3/graphviz-7.0.3.tar.bz2
 https://gitlab.com/graphviz/graphviz/-/archive/8.1.0/graphviz-8.1.0.tar.bz2
+https://gitlab.com/graphviz/graphviz/-/archive/9.0.0/graphviz-9.0.0.tar.bz2
 https://gitlab.com/inkscape/inkscape
 https://gitlab.com/inkscape/lib2geom/-/archive/1.2.2/lib2geom-1.2.2.tar.bz2
 https://gitlab.com/interception/linux/tools/-/archive/v0.6.8/tools-v0.6.8.tar.bz2
