@@ -1,5 +1,5 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
-bin/neovim/jit
+bin/neovim/unwrap(lua_ver=jit)
 {% endblock %}
