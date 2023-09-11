@@ -494,6 +494,7 @@ https://github.com/ebiggers/libdeflate/archive/refs/tags/v1.18.tar.gz
 https://github.com/ec-/Quake3e
 https://github.com/editorconfig/editorconfig-core-c/archive/refs/tags/v0.12.6.tar.gz
 https://github.com/elfmz/far2l/archive/refs/tags/v_2.5.0.tar.gz
+https://github.com/elfmz/far2l/archive/refs/tags/v_2.5.2.tar.gz
 https://github.com/elves/elvish/archive/refs/tags/v0.19.2.tar.gz
 https://github.com/emacs-mirror/emacs/archive/refs/tags/emacs-29.1.tar.gz
 https://github.com/emcrisostomo/fswatch/archive/refs/tags/1.17.1.tar.gz
