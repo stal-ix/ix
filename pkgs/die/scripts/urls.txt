@@ -768,6 +768,7 @@ https://github.com/openSUSE/catatonit
 https://github.com/openSUSE/hwinfo/archive/refs/tags/23.2.tar.gz
 https://github.com/openSUSE/xinetd/archive/refs/tags/2.3.15.4.tar.gz
 https://github.com/opencv/opencv/archive/refs/tags/4.8.0.tar.gz
+https://github.com/openresty/luajit2/archive/refs/tags/v2.1-20230911.tar.gz
 https://github.com/openssh/openssh-portable/archive/refs/tags/V_9_4_P1.tar.gz
 https://github.com/opsengine/cpulimit/archive/refs/tags/v0.2.tar.gz
 https://github.com/p-gen/smenu/archive/refs/tags/v1.3.0.tar.gz
