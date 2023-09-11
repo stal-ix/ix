@@ -119,7 +119,7 @@ HAVE_ARIA = os.path.isfile('/bin/aria2c')
 
 
 def gen_fetch(sb, url, path, md5):
-    if HAVE_ARIA and md5.startswith('sha:'):
+    if HAVE_ARIA and md5.startswith('sha:') and len(md5) > 16:
         yield from gen_fetch_aria_2(sb, url, path, md5[4:])
     else:
         yield from gen_fetch_curl(url, path, md5)

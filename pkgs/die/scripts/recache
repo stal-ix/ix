@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 import os
 import sys
@@ -8,12 +8,9 @@ import subprocess
 
 PART = '''
 {sha}.touch:
-	rm -rf {sha} {sha}.tmp
-	wget -O {sha}.tmp --no-check-certificate {url}
-	sync
-	mv {sha}.tmp {sha}
-	sync
-	ln -s {sha} `sha256sum {sha} | sed -e 's| .*||'`
+	rm -rf {sha}
+	wget -O {sha} --no-check-certificate {url}
+	mv {sha} `sha256sum {sha} | sed -e 's| .*||'`
 	sync
 	touch {sha}.touch
 	sync
