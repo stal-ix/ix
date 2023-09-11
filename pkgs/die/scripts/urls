@@ -6,7 +6,7 @@ cd $(dirname ${IX_BINARY})/pkgs/die/scripts/
 
 (
 cat urls.txt
-IX_DUMP_GRAPH=1 "${IX_BINARY}" build set/ci | grep -v GOPROXY | grep '"http' | sed -e 's|.*"http|http|' | sed -e 's|".*||'
+IX_DUMP_GRAPH=1 "${IX_BINARY}" build set/ci | sed -e 's|\"|\n|g' | grep -v GOPROXY | grep '"http' | sed -e 's|.*"http|http|' | sed -e 's|".*||'
 find ${IX_PKGS_ROOT} -name 'ix.sh' | xargs cat | grep "https://"
 find ${IX_PKGS_ROOT} -name 'ix.sh' | xargs cat | grep "http://"
 ) | grep -v '#'  \
@@ -14,5 +14,7 @@ find ${IX_PKGS_ROOT} -name 'ix.sh' | xargs cat | grep "http://"
   | grep -v '{{' \
   | grep -v 'ix-eparo-mirror.duckdns.org' \
   | grep -v 'ix.kmeaw.com' \
+  | grep -v 'ix-mirror.mooo.com' \
+  | grep -v 'ix.vvzvlad.xyz' \
   | sort | uniq > _
 mv _ urls.txt

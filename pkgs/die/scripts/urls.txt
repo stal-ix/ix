@@ -1023,7 +1023,6 @@ https://libisl.sourceforge.io/isl-0.26.tar.xz
 https://libmpeg2.sourceforge.io/files/libmpeg2-0.5.1.tar.gz
 https://libopenraw.freedesktop.org/download/libopenraw-0.3.5.tar.bz2
 https://libzip.org/download/libzip-1.10.1.tar.xz
-https://libzip.org/download/libzip-1.10.1.tar.xz\
 https://lttng.org/files/urcu/userspace-rcu-0.14.0.tar.bz2
 https://luajit.org/download/LuaJIT-2.0.5.tar.gz
 https://memcached.org/files/memcached-1.6.21.tar.gz
@@ -1090,7 +1089,6 @@ https://storage.googleapis.com/downloads.webmproject.org/releases/webp/libwebp-1
 https://strace.io/files/6.5/strace-6.5.tar.xz
 https://taglib.org/releases/taglib-1.13.1.tar.gz
 https://the.earth.li/~sgtatham/putty/0.76/putty-0.76.tar.gz
-https://the.earth.li/~sgtatham/putty/latest/putty-0.76.tar.gz
 https://thekelleys.org.uk/dnsmasq/dnsmasq-2.89.tar.xz
 https://tukaani.org/xz/xz-5.4.4.tar.xz
 https://w1.fi/releases/wpa_supplicant-2.10.tar.gz
