@@ -3,7 +3,7 @@
 {% block run_deps %}
 {% if linux %}
 # strange memory alloc failures with tcmalloc
-bin/neovim/unwrap(lua_ver=jit,purec=musl/unwrap,libc=musl/pure)
+bin/neovim/unwrap(lua_ver=openresty,purec=musl/unwrap,libc=musl/pure)
 {% else %}
 bin/neovim/unwrap(lua_ver=jit)
 {% endif %}
