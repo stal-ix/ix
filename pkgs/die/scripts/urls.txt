@@ -431,6 +431,7 @@ https://github.com/antonmedv/walk/archive/refs/tags/v1.6.2.tar.gz
 https://github.com/apache/serf/archive/refs/tags/1.3.9.tar.gz
 https://github.com/apenwarr/redo/archive/refs/tags/redo-0.42d.tar.gz
 https://github.com/apernet/hysteria/archive/refs/tags/app/v2.0.0.tar.gz
+https://github.com/apernet/hysteria/archive/refs/tags/app/v2.0.1.tar.gz
 https://github.com/apple/swift-corelibs-libdispatch/archive/refs/tags/swift-5.8-RELEASE.tar.gz
 https://github.com/appneta/tcpreplay/releases/download/v4.4.4/tcpreplay-4.4.4.tar.xz
 https://github.com/ar-/incron/archive/refs/tags/0.5.12.tar.gz
@@ -518,6 +519,7 @@ https://github.com/flatpak/libportal/archive/refs/tags/0.7.1.tar.gz
 https://github.com/flatpak/libportal/releases/download/0.7/libportal-0.7.tar.xz
 https://github.com/flatpak/xdg-desktop-portal-gtk/archive/refs/tags/1.14.1.tar.gz
 https://github.com/flatpak/xdg-desktop-portal/archive/dc898cac4d7075b45fe9294acb959b07cd7ecf6a.tar.gz
+https://github.com/fmtlib/fmt/archive/refs/tags/10.1.1.tar.gz
 https://github.com/fmtlib/fmt/archive/refs/tags/9.1.0.tar.gz
 https://github.com/francma/wob/archive/refs/tags/0.14.2.tar.gz
 https://github.com/freequaos/schedtool/archive/refs/tags/schedtool-1.3.0.tar.gz
