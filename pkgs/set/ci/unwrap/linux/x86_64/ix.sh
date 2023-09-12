@@ -1,6 +1,7 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
+bin/glib/tools
 bin/neovim/jit
 bin/neovim/openresty
 bin/zathura/unwrap/mupdf
