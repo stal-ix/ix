@@ -12,6 +12,7 @@ http://distfiles.gentoo.org/distfiles/libpipeline-1.5.7.tar.gz
 http://distfiles.gentoo.org/distfiles/pkg-config-0.29.2.tar.gz
 http://dl.exactcode.de/oss/minised/minised-1.16.tar.gz
 http://download.osgeo.org/libtiff/tiff-4.5.1.tar.gz
+http://download.osgeo.org/libtiff/tiff-4.6.0.tar.gz
 http://download.savannah.gnu.org/releases/dmidecode/dmidecode-3.5.tar.xz
 http://download.savannah.nongnu.org/releases/man-db/man-db-2.11.2.tar.xz
 http://download.windowsupdate.com/msdownload/update/software/svpk/2011/02/windows6.1-kb976932-x86_c3516bc5c9e69fee6d9ac4f981f5b95977a8a2fa.exe
