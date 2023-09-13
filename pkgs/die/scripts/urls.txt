@@ -42,6 +42,7 @@ http://mirror.koddos.net/gcc/releases/gcc-11.2.0/gcc-11.2.0.tar.xz
 http://mirror.koddos.net/gcc/releases/gcc-11.3.0/gcc-11.3.0.tar.xz
 http://mirror.koddos.net/gcc/releases/gcc-11.4.0/gcc-11.4.0.tar.xz
 http://mirror.koddos.net/gcc/releases/gcc-12.2.0/gcc-12.2.0.tar.xz
+http://mirror.koddos.net/gcc/releases/gcc-12.3.0/gcc-12.3.0.tar.xz
 http://mirror.koddos.net/gcc/releases/gcc-13.2.0/gcc-13.2.0.tar.xz
 http://mirrors.kernel.org/sourceware/lvm2/LVM2.2.03.22.tgz
 http://musl.libc.org/releases/musl-1.2.4.tar.gz
