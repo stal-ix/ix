@@ -15,14 +15,18 @@ lib/curses
 lib/gnutls
 lib/kernel
 lib/snappy
+lib/execinfo
+lib/readline
 lib/pcre/2/posix
 {% endblock %}
 
 {% block bld_tool %}
+bld/flex
 bld/bison
 {% endblock %}
 
 {% block cmake_flags %}
+WITH_LIBFMT=system
 DISABLE_SHARED=ON
 {% endblock %}
 
