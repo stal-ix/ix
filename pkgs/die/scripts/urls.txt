@@ -900,6 +900,7 @@ https://github.com/util-linux/util-linux/archive/refs/tags/v2.39.1.tar.gz
 https://github.com/uutils/coreutils/archive/refs/tags/0.0.8.tar.gz
 https://github.com/varlink/libvarlink/archive/refs/tags/23.tar.gz
 https://github.com/vasi/squashfuse/archive/refs/tags/0.4.0.tar.gz
+https://github.com/vasi/squashfuse/archive/refs/tags/v0.5.0.tar.gz
 https://github.com/vcrhonek/hwdata/archive/refs/tags/v0.374.tar.gz
 https://github.com/vector-of-bool/cmrc/archive/refs/tags/2.0.1.tar.gz
 https://github.com/videolabs/libmicrodns/archive/refs/tags/0.2.0.tar.gz
