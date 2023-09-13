@@ -238,6 +238,7 @@ https://ftp.gnu.org/gnu/findutils/findutils-4.8.0.tar.xz
 https://ftp.gnu.org/gnu/gawk/gawk-5.1.1.tar.xz
 https://ftp.gnu.org/gnu/gawk/gawk-5.2.1.tar.xz
 https://ftp.gnu.org/gnu/gcc/gcc-10.4.0/gcc-10.4.0.tar.xz
+https://ftp.gnu.org/gnu/gcc/gcc-10.5.0/gcc-10.5.0.tar.xz
 https://ftp.gnu.org/gnu/gcc/gcc-7.5.0/gcc-7.5.0.tar.xz
 https://ftp.gnu.org/gnu/gcc/gcc-8.5.0/gcc-8.5.0.tar.xz
 https://ftp.gnu.org/gnu/gcc/gcc-9.4.0/gcc-9.4.0.tar.xz
