@@ -478,6 +478,7 @@ https://github.com/cppfw/svgren/archive/refs/tags/0.6.2.tar.gz
 https://github.com/cppfw/utki/archive/refs/tags/1.1.187.tar.gz
 https://github.com/curl/curl/archive/refs/tags/curl-7_80_0.tar.gz
 https://github.com/curl/curl/archive/refs/tags/curl-8_2_1.tar.gz
+https://github.com/curl/curl/archive/refs/tags/curl-8_3_0.tar.gz
 https://github.com/darktable-org/darktable/releases/download/release-4.0.0/darktable-4.0.0.tar.xz
 https://github.com/davmac314/dinit
 https://github.com/dboyan/wayland-tracer/archive/refs/tags/0.1.0.tar.gz
