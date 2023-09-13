@@ -83,6 +83,7 @@ https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.2.14.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.3.13.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.4.12.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.5.2.tar.xz
+https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.5.3.tar.xz
 https://chromium.googlesource.com/chromiumos/third_party/adhd
 https://chromium.googlesource.com/external/gyp
 https://chromium.googlesource.com/libyuv/libyuv
@@ -477,6 +478,8 @@ https://github.com/cppfw/svgren/archive/refs/tags/0.6.2.tar.gz
 https://github.com/cppfw/utki/archive/refs/tags/1.1.187.tar.gz
 https://github.com/curl/curl/archive/refs/tags/curl-7_80_0.tar.gz
 https://github.com/curl/curl/archive/refs/tags/curl-8_2_1.tar.gz
+https://github.com/curl/curl/archive/refs/tags/curl-8_3_0.tar.gz
+https://github.com/darkhz/bluetuith/archive/refs/tags/v0.1.7.tar.gz
 https://github.com/darktable-org/darktable/releases/download/release-4.0.0/darktable-4.0.0.tar.xz
 https://github.com/davmac314/dinit
 https://github.com/dboyan/wayland-tracer/archive/refs/tags/0.1.0.tar.gz
@@ -607,6 +610,7 @@ https://github.com/jbeder/yaml-cpp/archive/refs/tags/yaml-cpp-0.7.0.tar.gz
 https://github.com/jeaye/stdman/archive/refs/tags/2022.07.30.tar.gz
 https://github.com/jech/dht/archive/refs/tags/dht-0.27.tar.gz
 https://github.com/jedisct1/libsodium/archive/refs/tags/1.0.18.tar.gz
+https://github.com/jedisct1/libsodium/archive/refs/tags/1.0.19.tar.gz
 https://github.com/jemalloc/jemalloc/archive/refs/tags/5.3.0.tar.gz
 https://github.com/jesseduffield/lazygit/archive/refs/tags/v0.40.2.tar.gz
 https://github.com/jhawthorn/fzy/archive/refs/tags/1.0.tar.gz
