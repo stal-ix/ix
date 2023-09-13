@@ -53,6 +53,7 @@ bin/binutils(for_target={{f}},bin_prefix={{f}})
 
 {% block build_flags %}
 shut_up
+wrap_cc
 {% endblock %}
 
 {% block setup %}
