@@ -605,7 +605,8 @@ bin/lisgd
 bin/mariadb/10
 bin/mariadb/11
 bin/nvtop
-bin/postgresql
+bin/postgresql/15
+bin/postgresql/16
 bin/catatonit
 bin/wireshark
 #bin/uftrace
