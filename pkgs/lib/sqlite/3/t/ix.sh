@@ -2,7 +2,7 @@
 
 {% block fetch %}
 https://sqlite.org/2023/sqlite-autoconf-3430100.tar.gz
-sha:46db2f10f306e163e4571b8974d44cd37078aae04295bbf08b253655df3265f4
+sha:39116c94e76630f22d54cd82c3cea308565f1715f716d1b2527f1c9c969ba4d9
 {% endblock %}
 
 {% block lib_deps %}
