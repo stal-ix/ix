@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://github.com/ArtifexSoftware/jbig2dec/archive/refs/tags/0.19.tar.gz
-sha:e81b787ad0b147a437a52d9ce7de1a8f429655e8aa030383b6b2dd8919373717
+https://github.com/ArtifexSoftware/jbig2dec/archive/refs/tags/0.20.tar.gz
+sha:a9705369a6633aba532693450ec802c562397e1b824662de809ede92f67aff21
 {% endblock %}
 
 {% block lib_deps %}
