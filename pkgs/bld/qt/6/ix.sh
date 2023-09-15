@@ -31,6 +31,11 @@ QT_FEATURE_shared=OFF
 export QT_HOST_PATH=${out}
 {% endblock %}
 
+{% block patch %}
+{{super()}}
+sed -e 's|error(|message(|' -i mkspecs/features/toolchain.prf
+{% endblock %}
+
 {% block postinstall %}
 cd ${out}
 mv lib old
