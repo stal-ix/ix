@@ -1,8 +1,8 @@
 {% extends '//bin/gcc/11/ix.sh' %}
 
 {% block fetch %}
-http://mirror.koddos.net/gcc/releases/gcc-12.2.0/gcc-12.2.0.tar.xz
-sha:e549cf9cf3594a00e27b6589d4322d70e0720cdd213f39beb4181e06926230ff
+http://mirror.koddos.net/gcc/releases/gcc-12.3.0/gcc-12.3.0.tar.xz
+sha:949a5d4f99e786421a93b532b22ffab5578de7321369975b91aec97adfda8c3b
 {% endblock %}
 
 {% block patch %}

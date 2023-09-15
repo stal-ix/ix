@@ -12,6 +12,7 @@ http://distfiles.gentoo.org/distfiles/libpipeline-1.5.7.tar.gz
 http://distfiles.gentoo.org/distfiles/pkg-config-0.29.2.tar.gz
 http://dl.exactcode.de/oss/minised/minised-1.16.tar.gz
 http://download.osgeo.org/libtiff/tiff-4.5.1.tar.gz
+http://download.osgeo.org/libtiff/tiff-4.6.0.tar.gz
 http://download.savannah.gnu.org/releases/dmidecode/dmidecode-3.5.tar.xz
 http://download.savannah.nongnu.org/releases/man-db/man-db-2.11.2.tar.xz
 http://download.windowsupdate.com/msdownload/update/software/svpk/2011/02/windows6.1-kb976932-x86_c3516bc5c9e69fee6d9ac4f981f5b95977a8a2fa.exe
@@ -39,7 +40,9 @@ http://mandoc.bsd.lv/snapshots/mandoc-1.14.6.tar.gz
 http://miniupnp.free.fr/files/download.php?file=miniupnpc-2.2.3.tar.gz
 http://mirror.koddos.net/gcc/releases/gcc-11.2.0/gcc-11.2.0.tar.xz
 http://mirror.koddos.net/gcc/releases/gcc-11.3.0/gcc-11.3.0.tar.xz
+http://mirror.koddos.net/gcc/releases/gcc-11.4.0/gcc-11.4.0.tar.xz
 http://mirror.koddos.net/gcc/releases/gcc-12.2.0/gcc-12.2.0.tar.xz
+http://mirror.koddos.net/gcc/releases/gcc-12.3.0/gcc-12.3.0.tar.xz
 http://mirror.koddos.net/gcc/releases/gcc-13.2.0/gcc-13.2.0.tar.xz
 http://mirrors.kernel.org/sourceware/lvm2/LVM2.2.03.22.tgz
 http://musl.libc.org/releases/musl-1.2.4.tar.gz
@@ -82,6 +85,7 @@ https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.18.14.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.2.14.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.3.13.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.4.12.tar.xz
+https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.4.16.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.5.2.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.5.3.tar.xz
 https://chromium.googlesource.com/chromiumos/third_party/adhd
@@ -235,9 +239,11 @@ https://ftp.gnu.org/gnu/findutils/findutils-4.8.0.tar.xz
 https://ftp.gnu.org/gnu/gawk/gawk-5.1.1.tar.xz
 https://ftp.gnu.org/gnu/gawk/gawk-5.2.1.tar.xz
 https://ftp.gnu.org/gnu/gcc/gcc-10.4.0/gcc-10.4.0.tar.xz
+https://ftp.gnu.org/gnu/gcc/gcc-10.5.0/gcc-10.5.0.tar.xz
 https://ftp.gnu.org/gnu/gcc/gcc-7.5.0/gcc-7.5.0.tar.xz
 https://ftp.gnu.org/gnu/gcc/gcc-8.5.0/gcc-8.5.0.tar.xz
 https://ftp.gnu.org/gnu/gcc/gcc-9.4.0/gcc-9.4.0.tar.xz
+https://ftp.gnu.org/gnu/gcc/gcc-9.5.0/gcc-9.5.0.tar.xz
 https://ftp.gnu.org/gnu/gdb/gdb-13.2.tar.xz
 https://ftp.gnu.org/gnu/gdbm/gdbm-1.19.tar.gz
 https://ftp.gnu.org/gnu/gmp/gmp-6.3.0.tar.xz
@@ -281,6 +287,7 @@ https://ftp.isc.org/isc/dhcp/4.4.2-P1/dhcp-4.4.2-P1.tar.gz
 https://ftp.mozilla.org/pub/nspr/releases/v4.35/src/nspr-4.35.tar.gz
 https://ftp.mozilla.org/pub/security/nss/releases/NSS_3_93_RTM/src/nss-3.93.tar.gz
 https://ftp.postgresql.org/pub/source/v15.4/postgresql-15.4.tar.bz2
+https://ftp.postgresql.org/pub/source/v16.0/postgresql-16.0.tar.bz2
 https://ftpmirror.gnu.org/libtool/libtool-2.4.6.tar.gz
 https://gameoftrees.org/releases/portable/got-portable-0.92.tar.gz
 https://git.kernel.org/pub/scm/libs/libcap/libcap.git/snapshot/libcap-cap/v1.2.64.tar.gz
@@ -321,6 +328,7 @@ https://github.com/AcademySoftwareFoundation/openexr/archive/refs/tags/v3.2.0.ta
 https://github.com/Alexays/Waybar/archive/refs/tags/0.9.22.tar.gz
 https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs10012/ghostscript-10.01.2.tar.gz
 https://github.com/ArtifexSoftware/jbig2dec/archive/refs/tags/0.19.tar.gz
+https://github.com/ArtifexSoftware/jbig2dec/archive/refs/tags/0.20.tar.gz
 https://github.com/BLAKE2/libb2/archive/refs/tags/v0.98.1.tar.gz
 https://github.com/BLAKE3-team/BLAKE3/archive/refs/tags/1.4.1.tar.gz
 https://github.com/Cyan4973/xxHash/archive/refs/tags/v0.8.2.tar.gz
@@ -362,6 +370,7 @@ https://github.com/KhronosGroup/Vulkan-ValidationLayers/archive/refs/tags/sdk-1.
 https://github.com/KhronosGroup/glslang/archive/refs/tags/sdk-1.3.250.0.tar.gz
 https://github.com/Kitware/CMake/archive/refs/tags/v3.24.1.tar.gz
 https://github.com/Kitware/CMake/archive/refs/tags/v3.27.4.tar.gz
+https://github.com/Kitware/CMake/archive/refs/tags/v3.27.5.tar.gz
 https://github.com/Kufat/st-sdl
 https://github.com/LBCrion/sfwbar/archive/refs/tags/v1.0_beta9.tar.gz
 https://github.com/LibRaw/LibRaw/archive/refs/tags/0.21.1.tar.gz
@@ -403,6 +412,7 @@ https://github.com/WayfireWM/wf-config/archive/refs/tags/v0.7.1.tar.gz
 https://github.com/WayfireWM/wf-shell
 https://github.com/WebAssembly/binaryen/archive/refs/tags/version_114.tar.gz
 https://github.com/WebAssembly/binaryen/archive/refs/tags/version_115.tar.gz
+https://github.com/WebAssembly/binaryen/archive/refs/tags/version_116.tar.gz
 https://github.com/WebAssembly/wabt
 https://github.com/WebAssembly/wasi-libc
 https://github.com/WebPlatformForEmbedded/libwpe/archive/refs/tags/1.12.3.tar.gz
@@ -423,6 +433,7 @@ https://github.com/akheron/jansson/archive/refs/tags/v2.14.tar.gz
 https://github.com/aklomp/base64/archive/refs/tags/v0.4.0.tar.gz
 https://github.com/alacritty/alacritty/archive/refs/tags/v0.9.0.tar.gz
 https://github.com/alecthomas/chroma/archive/refs/tags/v2.8.0.tar.gz
+https://github.com/alecthomas/chroma/archive/refs/tags/v2.9.1.tar.gz
 https://github.com/aligrudi/neatlibc
 https://github.com/ammen99/wf-recorder/archive/refs/tags/v0.4.1.tar.gz
 https://github.com/anholt/libepoxy/archive/refs/tags/1.5.10.tar.gz
@@ -669,6 +680,7 @@ https://github.com/libsdl-org/SDL_image/archive/refs/tags/release-2.6.2.tar.gz
 https://github.com/libsdl-org/SDL_mixer/archive/refs/tags/release-2.6.3.tar.gz
 https://github.com/libsdl-org/SDL_ttf/archive/refs/tags/release-2.20.2.tar.gz
 https://github.com/libsdl-org/sdl12-compat/archive/refs/tags/release-1.2.60.tar.gz
+https://github.com/libsdl-org/sdl12-compat/archive/refs/tags/release-1.2.64.tar.gz
 https://github.com/libsixel/libsixel/archive/refs/tags/v1.10.3.tar.gz
 https://github.com/libsndfile/libsamplerate/archive/refs/tags/0.2.2.tar.gz
 https://github.com/libsndfile/libsndfile/releases/download/1.2.2/libsndfile-1.2.2.tar.xz
@@ -899,6 +911,7 @@ https://github.com/util-linux/util-linux/archive/refs/tags/v2.39.1.tar.gz
 https://github.com/uutils/coreutils/archive/refs/tags/0.0.8.tar.gz
 https://github.com/varlink/libvarlink/archive/refs/tags/23.tar.gz
 https://github.com/vasi/squashfuse/archive/refs/tags/0.4.0.tar.gz
+https://github.com/vasi/squashfuse/archive/refs/tags/v0.5.0.tar.gz
 https://github.com/vcrhonek/hwdata/archive/refs/tags/v0.374.tar.gz
 https://github.com/vector-of-bool/cmrc/archive/refs/tags/2.0.1.tar.gz
 https://github.com/videolabs/libmicrodns/archive/refs/tags/0.2.0.tar.gz
@@ -993,6 +1006,7 @@ https://gitlab.gnome.org/GNOME/libgtop/-/archive/2.40.0/libgtop-2.40.0.tar.bz2
 https://gitlab.gnome.org/GNOME/libhandy/-/archive/1.8.2/libhandy-1.8.2.tar.bz2
 https://gitlab.gnome.org/GNOME/libsecret/-/archive/0.20.4/libsecret-0.20.4.tar.bz2
 https://gitlab.gnome.org/GNOME/libsoup/-/archive/3.4.2/libsoup-3.4.2.tar.bz2
+https://gitlab.gnome.org/GNOME/libsoup/-/archive/3.4.3/libsoup-3.4.3.tar.bz2
 https://gitlab.gnome.org/GNOME/libxml2/-/archive/v2.11.4/libxml2-v2.11.4.tar.bz2
 https://gitlab.gnome.org/GNOME/libxslt/-/archive/v1.1.38/libxslt-v1.1.38.tar.bz2
 https://gitlab.gnome.org/GNOME/mutter/-/archive/44.beta/mutter-44.beta.tar.bz2
@@ -1102,6 +1116,7 @@ https://static.rust-lang.org/dist/rust-1.56.1-x86_64-unknown-linux-gnu.tar.gz
 https://static.rust-lang.org/dist/rustc-1.54.0-src.tar.gz
 https://storage.googleapis.com/aom-releases/libaom-3.7.0.tar.gz
 https://storage.googleapis.com/downloads.webmproject.org/releases/webp/libwebp-1.3.1.tar.gz
+https://storage.googleapis.com/downloads.webmproject.org/releases/webp/libwebp-1.3.2.tar.gz
 https://strace.io/files/6.5/strace-6.5.tar.xz
 https://taglib.org/releases/taglib-1.13.1.tar.gz
 https://the.earth.li/~sgtatham/putty/0.76/putty-0.76.tar.gz
@@ -1142,6 +1157,7 @@ https://www.iozone.org/src/current/iozone3_494.tgz
 https://www.jedsoft.org/releases/jed/jed-0.99-19.tar.bz2
 https://www.jedsoft.org/releases/most/most-5.2.0.tar.gz
 https://www.jedsoft.org/releases/slang/slang-2.3.3.tar.bz2
+https://www.kernel.org/pub/linux/kernel/people/kdave/btrfs-progs/btrfs-progs-v6.5.1.tar.xz
 https://www.kernel.org/pub/linux/kernel/people/kdave/btrfs-progs/btrfs-progs-v6.5.tar.xz
 https://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2/libcap-2.69.tar.gz
 https://www.kernel.org/pub/linux/utils/fs/xfs/xfsprogs/xfsprogs-6.4.0.tar.xz

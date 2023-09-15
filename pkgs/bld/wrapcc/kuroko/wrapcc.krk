@@ -118,6 +118,12 @@ def main():
     if '--print-search-dirs' in args:
         return
 
+    if '-print-search-dirs' in args:
+        return
+
+    if '-print-multi-os-directory' in args:
+        return
+
     if '-c' in args:
         pass
     elif '-shared' in sa or '--soname' in sa:
