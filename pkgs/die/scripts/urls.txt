@@ -901,6 +901,7 @@ https://github.com/transmission/transmission/releases/download/3.00/transmission
 https://github.com/tree-sitter/tree-sitter/archive/refs/tags/v0.20.8.tar.gz
 https://github.com/troglobit/editline/archive/refs/tags/1.17.1.tar.gz
 https://github.com/troglobit/sysklogd/archive/refs/tags/v2.5.1.tar.gz
+https://github.com/troglobit/sysklogd/archive/refs/tags/v2.5.2.tar.gz
 https://github.com/troydhanson/uthash/archive/refs/tags/v2.3.0.tar.gz
 https://github.com/tsl0922/ttyd/archive/refs/tags/1.7.3.tar.gz
 https://github.com/tsujan/FeatherPad/archive/refs/tags/V1.3.4.tar.gz
