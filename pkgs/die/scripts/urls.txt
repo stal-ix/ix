@@ -1140,6 +1140,7 @@ https://www.cairographics.org/releases/pixman-0.42.2.tar.gz
 https://www.claws-mail.org/download.php?file=releases/claws-mail-4.1.0.tar.xz
 https://www.cpan.org/src/5.0/perl-5.36.0.tar.gz
 https://www.crufty.net/ftp/pub/sjg/bmake-20230711.tar.gz
+https://www.crufty.net/ftp/pub/sjg/bmake-20230909.tar.gz
 https://www.eecis.udel.edu/~ntp/ntp_spool/ntp4/ntp-4.2/ntp-4.2.8p15.tar.gz
 https://www.freedesktop.org/software/colord/releases/colord-1.4.6.tar.xz
 https://www.freedesktop.org/software/fontconfig/release/fontconfig-2.14.2.tar.xz
