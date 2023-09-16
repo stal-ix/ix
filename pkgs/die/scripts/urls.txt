@@ -807,6 +807,7 @@ https://github.com/pg83/shutil/archive/refs/tags/v1.tar.gz
 https://github.com/pg83/ted/archive/refs/tags/v6.tar.gz
 https://github.com/phillipberndt/pqiv/archive/refs/tags/2.12.tar.gz
 https://github.com/pkgconf/pkgconf/archive/refs/tags/pkgconf-2.0.2.tar.gz
+https://github.com/pkgconf/pkgconf/archive/refs/tags/pkgconf-2.0.3.tar.gz
 https://github.com/plougher/squashfs-tools/archive/refs/tags/4.6.1.tar.gz
 https://github.com/posva/catimg/archive/refs/tags/2.7.0.tar.gz
 https://github.com/premake/premake-core/archive/refs/tags/v5.0.0-beta2.tar.gz
