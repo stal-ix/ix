@@ -1,8 +1,8 @@
 {% extends '//die/c/make.sh' %}
 
 {% block fetch %}
-https://github.com/jjsullivan5196/wvkbd/archive/refs/tags/v0.12.tar.gz
-sha:b45cea0835bed77e7fb2d070b8df5abdddd16958b2548fc2da3afb6c579cf268
+https://github.com/jjsullivan5196/wvkbd/archive/refs/tags/v0.14.tar.gz
+sha:5ed5e9d0eb316c41e39c239d7361e2857dec44b27a74e207bb82f1bb7442778d
 {% endblock %}
 
 {% block bld_libs %}
