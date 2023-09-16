@@ -1,11 +1,11 @@
 {% extends '//die/go/pure.sh' %}
 
 {% block go_url %}
-https://github.com/apernet/hysteria/archive/refs/tags/app/v2.0.1.tar.gz
+https://github.com/apernet/hysteria/archive/refs/tags/app/v2.0.2.tar.gz
 {% endblock %}
 
 {% block go_sha %}
-0405d7c3c772bd5249d8262ce253b9fecbfa8a96b1a5d92458ff3e8ca6848213
+bd25b0e3654db75e20d3a6f573e6b0950aa6176be341f73c2f1c4f733d6117f7
 {% endblock %}
 
 {% block unpack %}
