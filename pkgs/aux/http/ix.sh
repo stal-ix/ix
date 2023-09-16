@@ -1,7 +1,7 @@
 {% extends '//die/proxy.sh' %}
 
 {% block bld_tool %}
-bld/fetch
+bin/aria/2
 {% endblock %}
 
 {% block use_network %}true{% endblock %}
@@ -10,8 +10,26 @@ bld/fetch
 [{"path": "share/{{fname}}", "sum": "{{sha}}"}]
 {% endblock %}
 
+{% set mirrors %}
+{% include '//die/scripts/mirrors.txt' %}
+{% endset %}
+
+{% set args %}
+--no-conf=true
+--out={{fname}}
+--async-dns=false
+--uri-selector=inorder
+--check-certificate=false
+--checksum=sha-256={{sha}}
+--console-log-level=notice
+{{http_url}}
+{% for m in mirrors.strip().split() %}
+{{m}}/{{sha}}
+{% endfor %}
+{% endset %}
+
 {% block build %}
-fetch "{{http_url}}"
+aria2c {{ix.fix_list(args)}}
 {% endblock %}
 
 {% block install %}
