@@ -539,6 +539,7 @@ https://github.com/flatpak/xdg-desktop-portal/archive/dc898cac4d7075b45fe9294acb
 https://github.com/fmtlib/fmt/archive/refs/tags/10.1.1.tar.gz
 https://github.com/fmtlib/fmt/archive/refs/tags/9.1.0.tar.gz
 https://github.com/francma/wob/archive/refs/tags/0.14.2.tar.gz
+https://github.com/francma/wob/archive/refs/tags/0.15.tar.gz
 https://github.com/freequaos/schedtool/archive/refs/tags/schedtool-1.3.0.tar.gz
 https://github.com/fribidi/fribidi/archive/refs/tags/v1.0.13.tar.gz
 https://github.com/fukuchi/libqrencode/archive/refs/tags/v4.1.1.tar.gz
