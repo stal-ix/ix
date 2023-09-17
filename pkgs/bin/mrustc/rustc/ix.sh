@@ -4,7 +4,8 @@
 lib/c
 lib/z
 lib/c++
-#lib/llvm/13
+lib/llvm/12
+lib/shim/fake(lib_name=stdc++)
 {{super()}}
 {% endblock %}
 
@@ -16,8 +17,7 @@ export REAL_LIBRARY_PATH_VAR=LD_LIBRARY_PATH
 
 {% block build %}
 {{super()}}
-cargo ${RUSTC_SRC}/compiler/rustc
-# --features llvm
+cargo ${RUSTC_SRC}/compiler/rustc --features llvm
 {% endblock %}
 
 {% block install %}
