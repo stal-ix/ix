@@ -1,7 +1,7 @@
 {% extends '//die/proxy.sh' %}
 
 {% block bld_tool %}
-bld/fetch
+bld/fetch/cached
 {% endblock %}
 
 {% block use_network %}true{% endblock %}
@@ -11,7 +11,7 @@ bld/fetch
 {% endblock %}
 
 {% block build %}
-fetch "{{http_url}}"
+fetch_cached {{fname}} {{sha}} {{http_url}}
 {% endblock %}
 
 {% block install %}

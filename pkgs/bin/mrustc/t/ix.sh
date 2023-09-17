@@ -37,21 +37,17 @@ mkdir ${OUTPUT_DIR}
 
 export RUSTC_VERSION=1.54.0
 export MRUSTC_TARGET_VER=1.54
-export RUSTC_SRC=${PWD}/rustc-1.54.0-src
+export RUSTC_SRC=${PWD}/rustc-${RUSTC_VERSION}-src
 export VENDOR_DIR=${RUSTC_SRC}/vendor
-export OVERRIDE_DIR=${PWD}/script-overrides/stable-1.54.0-linux
 {% endblock %}
 
 {% block functions %}
 {{super()}}
 cargo() (
-    export MRUSTC_LIBDIR=${OUTPUT_DIR}
     export MRUSTC_PATH=$(which mrustc)
 
     minicargo ${@} \
-        -j ${make_thrs}  \
-        -L ${OUTPUT_DIR} \
-        -L ${MRUSTC_STD} \
+        -j {{make_thrs or '${make_thrs}'}}  \
         --output-dir ${OUTPUT_DIR} \
         --vendor-dir ${VENDOR_DIR} \
         --manifest-overrides ${PWD}/rustc-1.54.0-overrides.toml

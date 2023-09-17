@@ -10,8 +10,8 @@ lib/shim/fake(lib_name=atomic)
 {% endblock %}
 
 {% block build %}
-export MRUSTC_STD=${PWD}
 {{super()}}
+export OVERRIDE_DIR=${PWD}/script-overrides/stable-${RUSTC_VERSION}-linux
 cargo ${RUSTC_SRC}/library/std --script-overrides ${OVERRIDE_DIR}
 cargo ${RUSTC_SRC}/library/panic_unwind --script-overrides ${OVERRIDE_DIR}
 cargo ${RUSTC_SRC}/library/test --script-overrides ${OVERRIDE_DIR}
@@ -22,6 +22,6 @@ cargo lib/libproc_macro
 cp -R ${OUTPUT_DIR} ${out}/lib
 {% endblock %}
 
-{% block env_lib %}
-export MRUSTC_STD="${out}/lib"
+{% block env %}
+export MRUSTC_LIBDIR="${out}/lib"
 {% endblock %}

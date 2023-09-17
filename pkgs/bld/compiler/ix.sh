@@ -5,5 +5,5 @@ bin/clang/lib
 {% endblock %}
 
 {% block run_deps %}
-bld/compiler/unwrap(std_env=bld/boot/8/env/cxx)
+bld/compiler/unwrap
 {% endblock %}
