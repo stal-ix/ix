@@ -44,7 +44,6 @@ export VENDOR_DIR=${RUSTC_SRC}/vendor
 {% block functions %}
 {{super()}}
 cargo() (
-    export MRUSTC_LIBDIR=${OUTPUT_DIR}
     export MRUSTC_PATH=$(which mrustc)
 
     minicargo ${@} \

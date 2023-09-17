@@ -22,6 +22,6 @@ cargo lib/libproc_macro
 cp -R ${OUTPUT_DIR} ${out}/lib
 {% endblock %}
 
-{% block env_lib %}
-export MRUSTC_STD="${out}/lib"
+{% block env %}
+export MRUSTC_LIBDIR="${out}/lib"
 {% endblock %}

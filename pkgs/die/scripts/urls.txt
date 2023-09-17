@@ -892,6 +892,7 @@ https://github.com/tesseract-ocr/tesseract/archive/refs/tags/5.2.0.tar.gz
 https://github.com/tetratelabs/wazero/archive/refs/tags/v1.5.0.tar.gz
 https://github.com/texstudio-org/texstudio/archive/refs/tags/4.4.1.tar.gz
 https://github.com/thepowersgang/mrustc/archive/1b1416bb2b44e2c331c7201833305cac29d571e8.zip
+https://github.com/thepowersgang/mrustc/archive/c70b86e138018b0e144dd179a5bd6c6e0972b350.zip
 https://github.com/thkukuk/libnsl/releases/download/v2.0.0/libnsl-2.0.0.tar.xz
 https://github.com/thkukuk/rpcsvc-proto/archive/refs/tags/v1.4.3.tar.gz
 https://github.com/thom311/libnl/releases/download/libnl3_8_0/libnl-3.8.0.tar.gz

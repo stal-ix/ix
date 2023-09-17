@@ -22,8 +22,3 @@ export CFG_VERSION=${CFG_RELEASE}-stable-mrustc
 export CFG_PREFIX=mrustc
 export CFG_LIBDIR_RELATIVE=lib
 {% endblock %}
-
-{% block build %}
-{{super()}}
-cp -R ${MRUSTC_STD}/* ${OUTPUT_DIR}/
-{% endblock %}
