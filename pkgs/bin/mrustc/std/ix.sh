@@ -11,6 +11,7 @@ lib/shim/fake(lib_name=atomic)
 
 {% block build %}
 {{super()}}
+export OVERRIDE_DIR=${PWD}/script-overrides/stable-${RUSTC_VERSION}-linux
 cargo ${RUSTC_SRC}/library/std --script-overrides ${OVERRIDE_DIR}
 cargo ${RUSTC_SRC}/library/panic_unwind --script-overrides ${OVERRIDE_DIR}
 cargo ${RUSTC_SRC}/library/test --script-overrides ${OVERRIDE_DIR}
