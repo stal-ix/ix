@@ -49,9 +49,7 @@ cargo() (
     export MRUSTC_PATH=$(which mrustc)
 
     minicargo ${@} \
-        -j ${make_thrs}  \
-        -L ${OUTPUT_DIR} \
-        -L ${MRUSTC_STD} \
+        -j {{make_thrs or '${make_thrs}'}}  \
         --output-dir ${OUTPUT_DIR} \
         --vendor-dir ${VENDOR_DIR} \
         --manifest-overrides ${PWD}/rustc-1.54.0-overrides.toml

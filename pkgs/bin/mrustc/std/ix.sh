@@ -10,7 +10,6 @@ lib/shim/fake(lib_name=atomic)
 {% endblock %}
 
 {% block build %}
-export MRUSTC_STD=${PWD}
 {{super()}}
 cargo ${RUSTC_SRC}/library/std --script-overrides ${OVERRIDE_DIR}
 cargo ${RUSTC_SRC}/library/panic_unwind --script-overrides ${OVERRIDE_DIR}
