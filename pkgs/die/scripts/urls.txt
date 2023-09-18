@@ -864,6 +864,7 @@ https://github.com/rui314/mold/archive/refs/tags/v1.7.1.tar.gz
 https://github.com/rui314/mold/archive/refs/tags/v2.1.0.tar.gz
 https://github.com/rvaiya/keyd/archive/refs/tags/v2.4.3.tar.gz
 https://github.com/rzvncj/xCHM/archive/refs/tags/1.35.tar.gz
+https://github.com/rzvncj/xCHM/archive/refs/tags/1.36.tar.gz
 https://github.com/sabotage-linux/netbsd-curses/archive/refs/tags/v0.3.2.tar.gz
 https://github.com/sammycage/lunasvg/archive/refs/tags/v2.3.8.tar.gz
 https://github.com/sass/libsass/archive/refs/tags/3.6.5.tar.gz
