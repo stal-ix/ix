@@ -52,6 +52,7 @@ setup
 
 --libdir="${out}/lib"
 --libexecdir="${out}/{{kind}}/{{uniq_id}}"
+--prefer-static
 
 {% block meson_cross %}
 --cross-file="${tmp}/cross.ini"
