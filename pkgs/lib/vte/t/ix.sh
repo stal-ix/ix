@@ -1,8 +1,8 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://gitlab.gnome.org/GNOME/vte/-/archive/0.72.2/vte-0.72.2.tar.bz2
-sha:5c8f789aaf76154de9d58205fda3b90790092d93791a5229c8b67c50d3f01068
+https://gitlab.gnome.org/GNOME/vte/-/archive/0.74.0/vte-0.74.0.tar.bz2
+sha:fe1164ad36f0fac46faf4488800c38a5a0ae3bf0e13aaa3357274f090a1a6f46
 {% endblock %}
 
 {% block lib_deps %}

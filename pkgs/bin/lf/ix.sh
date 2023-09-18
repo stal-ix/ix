@@ -1,11 +1,11 @@
 {% extends '//die/go/pure.sh' %}
 
 {% block go_url %}
-https://github.com/gokcehan/lf/archive/refs/tags/r27.tar.gz
+https://github.com/gokcehan/lf/archive/refs/tags/r31.tar.gz
 {% endblock %}
 
 {% block go_sha %}
-1b393151428afc5eed6953cc5f786443a3aedb9af1ba9d1833dc5e778cc80879
+57756d687e7b38f8ec0b17adf568411c65271582fa4bfb5546fb9b101fac8ee6
 {% endblock %}
 
 {% block install %}

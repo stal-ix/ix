@@ -16,7 +16,7 @@ done
 {% block setup %}
 {{super()}}
 export CFG_RELEASE=${RUSTC_VERSION}
-export CFG_COMPILER_HOST_TRIPLE=x86_64-linux-gnu
+export CFG_COMPILER_HOST_TRIPLE=x86_64-unknown-linux-gnu
 export CFG_RELEASE_CHANNEL=stable
 export CFG_VERSION=${CFG_RELEASE}-stable-mrustc
 export CFG_PREFIX=mrustc

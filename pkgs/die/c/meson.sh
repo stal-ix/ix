@@ -53,6 +53,15 @@ setup
 --libdir="${out}/lib"
 --libexecdir="${out}/{{kind}}/{{uniq_id}}"
 
+{#
+Library tinfo found: NO
+Library ncursesw found: NO
+Library ncurses found: NO
+meson.build:91:4: ERROR: Problem encountered: a terminfo library is needed
+ERROR /home/pg/ix_root/store/0ViRSaamTiemq1ur-bin-bsdutils-lite
+--prefer-static
+#}
+
 {% block meson_cross %}
 --cross-file="${tmp}/cross.ini"
 --pkg-config-path="${PC_T}"

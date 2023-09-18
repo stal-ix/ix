@@ -5,6 +5,11 @@ http://deb.debian.org/debian/pool/main/libx/libx86/libx86_1.1+ds1-12.debian.tar.
 http://deb.debian.org/debian/pool/main/libx/libx86/libx86_1.1+ds1.orig.tar.gz
 http://deb.debian.org/debian/pool/main/m/mingetty/mingetty_1.08.orig.tar.gz
 http://distcache.freebsd.org/local-distfiles/itetcu/libexecinfo-1.1.tar.bz2
+http://distfiles.gentoo.org/distfiles/3b/libpipeline-1.5.7.tar.gz
+http://distfiles.gentoo.org/distfiles/71/libpciaccess-0.17.tar.xz
+http://distfiles.gentoo.org/distfiles/85/libinput-1.24.0.tar.bz2
+http://distfiles.gentoo.org/distfiles/a4/libdisplay-info-0.1.1.tar.xz
+http://distfiles.gentoo.org/distfiles/d3/pkg-config-0.29.2.tar.gz
 http://distfiles.gentoo.org/distfiles/libdisplay-info-0.1.1.tar.xz
 http://distfiles.gentoo.org/distfiles/libinput-1.24.0.tar.bz2
 http://distfiles.gentoo.org/distfiles/libpciaccess-0.17.tar.xz
@@ -709,6 +714,7 @@ https://github.com/linuxwacom/libwacom/releases/download/libwacom-2.8.0/libwacom
 https://github.com/lite-xl/lite-xl/archive/refs/tags/v2.1.1.tar.gz
 https://github.com/litespeedtech/ls-qpack/archive/refs/tags/v2.2.3.tar.gz
 https://github.com/lloyd/yajl/archive/refs/tags/2.1.0.tar.gz
+https://github.com/llvm/llvm-project/archive/refs/tags/llvmorg-12.0.1.tar.gz
 https://github.com/llvm/llvm-project/archive/refs/tags/llvmorg-14.0.6.tar.gz
 https://github.com/llvm/llvm-project/archive/refs/tags/llvmorg-15.0.7.tar.gz
 https://github.com/llvm/llvm-project/releases/download/llvmorg-13.0.1/llvm-project-13.0.1.src.tar.xz
@@ -1028,6 +1034,7 @@ https://gitlab.gnome.org/GNOME/libxslt/-/archive/v1.1.38/libxslt-v1.1.38.tar.bz2
 https://gitlab.gnome.org/GNOME/mutter/-/archive/44.beta/mutter-44.beta.tar.bz2
 https://gitlab.gnome.org/GNOME/vala/-/archive/0.56.1/vala-0.56.1.tar.bz2
 https://gitlab.gnome.org/GNOME/vte/-/archive/0.72.2/vte-0.72.2.tar.bz2
+https://gitlab.gnome.org/GNOME/vte/-/archive/0.74.0/vte-0.74.0.tar.bz2
 https://gitlab.gnome.org/GNOME/zenity/-/archive/3.44.0/zenity-3.44.0.tar.bz2
 https://gitlab.gnome.org/GNOME/zenity/-/archive/3.90.0/zenity-3.90.0.tar.bz2
 https://gitlab.gnome.org/crab2313/evince/-/archive/4c91df66ca83f8f1d057f0aa9069675b8bf5b6d6/evince-4c91df66ca83f8f1d057f0aa9069675b8bf5b6d6.tar.bz2
@@ -1048,6 +1055,7 @@ https://hikari.acmelabs.space/releases/hikari-2.3.3.tar.gz
 https://i3wm.org/i3status/i3status-2.14.tar.xz
 https://icon-theme.freedesktop.org/releases/hicolor-icon-theme-0.17.tar.xz
 https://imagemagick.org/archive/releases/ImageMagick-7.1.1-15.tar.xz
+https://imagemagick.org/archive/releases/ImageMagick-7.1.1-16.tar.xz
 https://invisible-mirror.net/archives/byacc/byacc-20211224.tgz
 https://invisible-mirror.net/archives/byacc/byacc-20230521.tgz
 https://invisible-mirror.net/archives/mawk/mawk-1.3.4-20200120.tgz
