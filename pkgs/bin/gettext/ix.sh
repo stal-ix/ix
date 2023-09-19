@@ -3,5 +3,5 @@
 {% block run_deps %}
 bin/tar
 bin/gzip
-bin/gettext/unwrap
+bin/gettext/unwrap(intl_ver=gnu)
 {% endblock %}

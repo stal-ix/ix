@@ -6,7 +6,9 @@
 #include <stdarg.h>
 #include <errno.h>
 
+int error_one_per_line = 0;
 unsigned int error_message_count = 0;
+void (*error_print_progname)(void) = 0;
 
 static void do_error(int status, int errnum, const char* format, va_list argp) {
     fflush(stdout);

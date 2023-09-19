@@ -19,4 +19,5 @@ ieee754.c
 
 {% block env %}
 export ac_cv_lib_error_at_line=yes
+export gl_cv_func_working_error=yes
 {% endblock %}
