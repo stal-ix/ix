@@ -1206,6 +1206,7 @@ https://www.nano-editor.org/dist/v7/nano-7.2.tar.xz
 https://www.openldap.org/software/download/OpenLDAP/openldap-release/openldap-2.6.5.tgz
 https://www.openssl.org/source/old/1.1.1/openssl-1.1.1j.tar.gz
 https://www.prevanders.net/libdwarf-0.6.0.tar.xz
+https://www.prevanders.net/libdwarf-0.8.0.tar.xz
 https://www.python.org/ftp/python/2.7.18/Python-2.7.18.tar.xz
 https://www.python.org/ftp/python/3.10.13/Python-3.10.13.tar.xz
 https://www.python.org/ftp/python/3.8.17/Python-3.8.17.tgz
