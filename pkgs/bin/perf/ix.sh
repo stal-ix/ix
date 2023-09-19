@@ -76,3 +76,7 @@ find . -type f | while read l; do
     sed -e 's|/tmp/|/var/tmp/|g' -i ${l}
 done
 {% endblock %}
+
+{% block cpp_defines %}
+YYNOMEM=YYENOMEM
+{% endblock %}

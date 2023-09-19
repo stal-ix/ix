@@ -7,7 +7,7 @@
 extern "C" {
 #endif
 
-void makecontext(ucontext_t* ucp, void (*)(), int argc, ...);
+void makecontext(ucontext_t* ucp, void (*)(void), int argc, ...);
 int swapcontext(ucontext_t* oucp, ucontext_t* ucp);
 int getcontext(ucontext_t* ucp);
 int setcontext(const ucontext_t* ucp);
