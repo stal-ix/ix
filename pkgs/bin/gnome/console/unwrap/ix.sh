@@ -1,8 +1,8 @@
 {% extends '//die/c/gnome.sh' %}
 
 {% block fetch %}
-https://gitlab.gnome.org/GNOME/console/-/archive/44.4/console-44.4.tar.bz2
-sha:97ed969727e5479f1c118a25f7ff453e036089c5d2281420ee315e9aead216e0
+https://gitlab.gnome.org/GNOME/console/-/archive/45.0/console-45.0.tar.bz2
+sha:ab859a282d87a37efaa748b25c12cf510cc91277b1187b008cfb78f04f08e1c4
 {% endblock %}
 
 {% block bld_libs %}
@@ -22,5 +22,7 @@ bld/gettext
 {% endblock %}
 
 {% block patch %}
-sed -e 's|.*subdir.*help.*||' -i meson.build
+sed -e 's|.*subdir.*help.*||' \
+    -e 's|4.12.2|4.12.1|' \
+    -i meson.build
 {% endblock %}
