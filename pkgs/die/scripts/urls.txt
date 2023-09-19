@@ -1046,6 +1046,7 @@ https://gitlab.gnome.org/GNOME/zenity/-/archive/3.90.0/zenity-3.90.0.tar.bz2
 https://gitlab.gnome.org/crab2313/evince/-/archive/4c91df66ca83f8f1d057f0aa9069675b8bf5b6d6/evince-4c91df66ca83f8f1d057f0aa9069675b8bf5b6d6.tar.bz2
 https://gitlab.gnome.org/jadahl/libdecor/-/archive/0.1.1/libdecor-0.1.1.tar.bz2
 https://gitlab.torproject.org/tpo/core/tor/-/archive/tor-0.4.7.14/tor-tor-0.4.7.14.tar.bz2
+https://gitlab.torproject.org/tpo/core/tor/-/archive/tor-0.4.7.15/tor-tor-0.4.7.15.tar.bz2
 https://gitlab.xiph.org/xiph/ogg/-/archive/v1.3.5/ogg-v1.3.5.tar.bz2
 https://gitlab.xiph.org/xiph/rnnoise/-/archive/7f449bf8bd3b933891d12c30112268c4090e4d59/rnnoise-7f449bf8bd3b933891d12c30112268c4090e4d59.tar.bz2
 https://gitlab.xiph.org/xiph/speex/-/archive/Speex-1.2.1/speex-Speex-1.2.1.tar.bz2
