@@ -1023,6 +1023,7 @@ https://gitlab.gnome.org/GNOME/gcr/-/archive/4.1.0/gcr-4.1.0.tar.bz2
 https://gitlab.gnome.org/GNOME/glib-networking/-/archive/2.76.1/glib-networking-2.76.1.tar.bz2
 https://gitlab.gnome.org/GNOME/glib-networking/-/archive/2.78.0/glib-networking-2.78.0.tar.bz2
 https://gitlab.gnome.org/GNOME/gnome-font-viewer/-/archive/44.0/gnome-font-viewer-44.0.tar.bz2
+https://gitlab.gnome.org/GNOME/gnome-font-viewer/-/archive/45.0/gnome-font-viewer-45.0.tar.bz2
 https://gitlab.gnome.org/GNOME/gnome-text-editor/-/archive/44.0/gnome-text-editor-44.0.tar.bz2
 https://gitlab.gnome.org/GNOME/gnome-text-editor/-/archive/45.0/gnome-text-editor-45.0.tar.bz2
 https://gitlab.gnome.org/GNOME/gobject-introspection/-/archive/1.72.0/gobject-introspection-1.72.0.tar.bz2
