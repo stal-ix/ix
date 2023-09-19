@@ -288,6 +288,7 @@ https://ftp.gnu.org/gnu/wget/wget2-2.1.0.tar.gz
 https://ftp.gnu.org/gnu/which/which-2.21.tar.gz
 https://ftp.gnu.org/pub/gnu/gettext/gettext-0.21.1.tar.gz
 https://ftp.gnu.org/pub/gnu/gettext/gettext-0.21.tar.gz
+https://ftp.gnu.org/pub/gnu/gettext/gettext-0.22.1.tar.gz
 https://ftp.gnu.org/pub/gnu/libiconv/libiconv-1.17.tar.gz
 https://ftp.gnu.org/pub/gnu/ncurses/ncurses-6.4.tar.gz
 https://ftp.isc.org/isc/dhcp/4.4.2-P1/dhcp-4.4.2-P1.tar.gz
@@ -1023,6 +1024,7 @@ https://gitlab.gnome.org/GNOME/glib-networking/-/archive/2.76.1/glib-networking-
 https://gitlab.gnome.org/GNOME/glib-networking/-/archive/2.78.0/glib-networking-2.78.0.tar.bz2
 https://gitlab.gnome.org/GNOME/gnome-font-viewer/-/archive/44.0/gnome-font-viewer-44.0.tar.bz2
 https://gitlab.gnome.org/GNOME/gnome-text-editor/-/archive/44.0/gnome-text-editor-44.0.tar.bz2
+https://gitlab.gnome.org/GNOME/gnome-text-editor/-/archive/45.0/gnome-text-editor-45.0.tar.bz2
 https://gitlab.gnome.org/GNOME/gobject-introspection/-/archive/1.72.0/gobject-introspection-1.72.0.tar.bz2
 https://gitlab.gnome.org/GNOME/gsettings-desktop-schemas/-/archive/44.0/gsettings-desktop-schemas-44.0.tar.bz2
 https://gitlab.gnome.org/GNOME/gspell/-/archive/1.12.2/gspell-1.12.2.tar.bz2
