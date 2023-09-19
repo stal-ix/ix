@@ -93,6 +93,7 @@ https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.4.12.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.4.16.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.5.2.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.5.3.tar.xz
+https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.5.4.tar.xz
 https://chromium.googlesource.com/chromiumos/third_party/adhd
 https://chromium.googlesource.com/external/gyp
 https://chromium.googlesource.com/libyuv/libyuv
