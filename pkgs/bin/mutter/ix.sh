@@ -1,14 +1,15 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://gitlab.gnome.org/GNOME/mutter/-/archive/44.beta/mutter-44.beta.tar.bz2
-sha:f12ad67bd040a22073541783818eb2c33b612ef2abaa8b8474286b28871ee79c
+https://gitlab.gnome.org/GNOME/mutter/-/archive/45.0/mutter-45.0.tar.bz2
+sha:98116db4c6e25eb6d708552cae182714e54cf6d610425104fd49afbc3aa6b8f9
 {% endblock %}
 
 {# hard X11 dep #}
 
 {% block bld_libs %}
 lib/c
+lib/ei
 lib/dbus
 lib/udev
 lib/glib
