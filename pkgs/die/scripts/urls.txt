@@ -1223,6 +1223,7 @@ https://www.python.org/ftp/python/3.9.17/Python-3.9.17.tar.xz
 https://www.rarlab.com/rar/unrarsrc-6.2.10.tar.gz
 https://www.rarlab.com/rar/unrarsrc-6.2.11.tar.gz
 https://www.stunnel.org/downloads/stunnel-5.70.tar.gz
+https://www.stunnel.org/downloads/stunnel-5.71.tar.gz
 https://www.tcpdump.org/release/libpcap-1.10.4.tar.gz
 https://www.tcpdump.org/release/tcpdump-4.99.4.tar.gz
 https://www.thrysoee.dk/editline/libedit-20230827-3.1.tar.gz
