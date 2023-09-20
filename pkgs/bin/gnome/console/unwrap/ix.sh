@@ -22,7 +22,5 @@ bld/gettext
 {% endblock %}
 
 {% block patch %}
-sed -e 's|.*subdir.*help.*||' \
-    -e 's|4.12.2|4.12.1|' \
-    -i meson.build
+sed -e 's|.*subdir.*help.*||' -i meson.build
 {% endblock %}
