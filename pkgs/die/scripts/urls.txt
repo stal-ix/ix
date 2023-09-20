@@ -356,6 +356,7 @@ https://github.com/GNOME/epiphany/archive/refs/tags/45.0.tar.gz
 https://github.com/GNOME/epiphany/archive/refs/tags/45.beta.tar.gz
 https://github.com/GNOME/gthumb/archive/refs/tags/3.12.2.tar.gz
 https://github.com/GNOME/gtk-doc/archive/refs/tags/GTK_DOC_1_32.tar.gz
+https://github.com/GNOME/json-glib/archive/refs/tags/1.8.0.tar.gz
 https://github.com/GNOME/libadwaita/archive/refs/tags/1.4.0.tar.gz
 https://github.com/GNOME/libadwaita/archive/refs/tags/1.4.beta.tar.gz
 https://github.com/GNOME/libgudev/archive/refs/tags/237.tar.gz
@@ -1003,6 +1004,7 @@ https://gitlab.com/qemu-project/keycodemapdb/-/archive/22b8996dba9041874845c7446
 https://gitlab.freedesktop.org/cairo/cairo/-/archive/1.17.8/cairo-1.17.8.tar.bz2
 https://gitlab.freedesktop.org/freetype/freetype-demos/-/archive/VER-2-13-0/freetype-demos-VER-2-13-0.tar.bz2
 https://gitlab.freedesktop.org/gstreamer/gstreamer/-/archive/1.22.5/gstreamer-1.22.5.tar.gz
+https://gitlab.freedesktop.org/gstreamer/gstreamer/-/archive/1.22.6/gstreamer-1.22.6.tar.gz
 https://gitlab.freedesktop.org/libfprint/libfprint/-/archive/v1.94.5/libfprint-v1.94.5.tar.bz2
 https://gitlab.freedesktop.org/mesa/glu/-/archive/glu-9.0.3/glu-glu-9.0.3.tar.bz2
 https://gitlab.freedesktop.org/mesa/mesa/-/archive/mesa-23.0.3/mesa-mesa-23.0.3.tar.bz2
