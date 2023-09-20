@@ -1,8 +1,8 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://gitlab.gnome.org/GNOME/libsecret/-/archive/0.20.4/libsecret-0.20.4.tar.bz2
-sha:8367c885f564109b9e8d54ac661073c8863396d942f18d6c5e538e9eda60e881
+https://gitlab.gnome.org/GNOME/libsecret/-/archive/0.21.1/libsecret-0.21.1.tar.bz2
+sha:9a080030e7ec0458ca3112ef5e99acbce072f107b059da22459b4ca3d9308d0c
 {% endblock %}
 
 {% block lib_deps %}
