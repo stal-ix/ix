@@ -1,7 +1,5 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
-bld/tar
-bld/gzip
-bin/gettext/unwrap(intl_ver=gnu)
+bin/rpm/unwrap(lua_ver=puc/5/2)
 {% endblock %}

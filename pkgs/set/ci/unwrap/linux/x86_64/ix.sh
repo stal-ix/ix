@@ -1,6 +1,8 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
+bin/dwarf/dump
+bin/rpm
 bin/mrustc/boot
 bin/bluetuith
 bin/glib/tools

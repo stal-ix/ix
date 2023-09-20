@@ -1,2 +1,2 @@
-https://github.com/llvm/llvm-project/releases/download/llvmorg-17.0.0-rc4/llvm-project-17.0.0rc4.src.tar.xz
-sha:277d0671a8f389e2ae44f4fe591974bb8434c115a94ed289ab17d13a4de2940e
+https://github.com/llvm/llvm-project/releases/download/llvmorg-17.0.1/llvm-project-17.0.1.src.tar.xz
+sha:b0e42aafc01ece2ca2b42e3526f54bebc4b1f1dc8de6e34f46a0446a13e882b9

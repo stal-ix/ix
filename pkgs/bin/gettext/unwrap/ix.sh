@@ -8,8 +8,10 @@
 
 {% block bld_libs %}
 lib/c
-lib/xml/2
+lib/intl
 lib/iconv
+lib/xml/2
+lib/shim/gnu
 lib/unistring
 lib/textstyle
 {% endblock %}
@@ -26,4 +28,14 @@ cd gettext-tools
 
 {% block configure_flags %}
 --with-installed-libtextstyle
+{% endblock %}
+
+{% block patch %}
+>../gettext-runtime/intl/localealias.c
+{% endblock %}
+
+{% block install %}
+{{super()}}
+cd ${out}/bin
+ln -s xgettext gettext
 {% endblock %}

@@ -93,6 +93,7 @@ https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.4.12.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.4.16.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.5.2.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.5.3.tar.xz
+https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.5.4.tar.xz
 https://chromium.googlesource.com/chromiumos/third_party/adhd
 https://chromium.googlesource.com/external/gyp
 https://chromium.googlesource.com/libyuv/libyuv
@@ -127,6 +128,7 @@ https://dl.xpdfreader.com/xpdf-4.04.tar.gz
 https://dotat.at/prog/unifdef/unifdef-2.12.tar.xz
 https://download.gnome.org/sources/atkmm/2.28/atkmm-2.28.2.tar.xz
 https://download.gnome.org/sources/evince/44/evince-44.3.tar.xz
+https://download.gnome.org/sources/evince/45/evince-45.0.tar.xz
 https://download.gnome.org/sources/gdk-pixbuf/2.42/gdk-pixbuf-2.42.6.tar.xz
 https://download.gnome.org/sources/glib/2.74/glib-2.74.5.tar.xz
 https://download.gnome.org/sources/glib/2.78/glib-2.78.0.tar.xz
@@ -286,6 +288,7 @@ https://ftp.gnu.org/gnu/wget/wget2-2.1.0.tar.gz
 https://ftp.gnu.org/gnu/which/which-2.21.tar.gz
 https://ftp.gnu.org/pub/gnu/gettext/gettext-0.21.1.tar.gz
 https://ftp.gnu.org/pub/gnu/gettext/gettext-0.21.tar.gz
+https://ftp.gnu.org/pub/gnu/gettext/gettext-0.22.1.tar.gz
 https://ftp.gnu.org/pub/gnu/libiconv/libiconv-1.17.tar.gz
 https://ftp.gnu.org/pub/gnu/ncurses/ncurses-6.4.tar.gz
 https://ftp.isc.org/isc/dhcp/4.4.2-P1/dhcp-4.4.2-P1.tar.gz
@@ -359,6 +362,7 @@ https://github.com/GNOME/libshumate/archive/refs/tags/1.0.5.tar.gz
 https://github.com/GNOME/libshumate/archive/refs/tags/1.1.0.tar.gz
 https://github.com/GStreamer/orc/archive/refs/tags/0.4.34.tar.gz
 https://github.com/Genivia/ugrep/archive/refs/tags/v4.0.5.tar.gz
+https://github.com/Genivia/ugrep/archive/refs/tags/v4.1.0.tar.gz
 https://github.com/GrapheneOS/hardened_malloc/archive/refs/tags/11.tar.gz
 https://github.com/Hjdskes/cage/archive/refs/tags/v0.1.4.tar.gz
 https://github.com/HowardHinnant/date/archive/refs/tags/v3.0.1.tar.gz
@@ -406,6 +410,7 @@ https://github.com/OpenVisualCloud/SVT-VP9/archive/refs/tags/v0.3.0.tar.gz
 https://github.com/PCSX2/pcsx2
 https://github.com/PhilipHazel/pcre2/archive/refs/tags/pcre2-10.42.tar.gz
 https://github.com/PurpleI2P/i2pd/archive/refs/tags/2.48.0.tar.gz
+https://github.com/PurpleI2P/i2pd/archive/refs/tags/2.49.0.tar.gz
 https://github.com/Samsung/rlottie/archive/refs/tags/v0.2.tar.gz
 https://github.com/SerenityOS/serenity
 https://github.com/SpartanJ/efsw/archive/refs/tags/1.3.1.tar.gz
@@ -568,6 +573,7 @@ https://github.com/gnustep/libobjc2
 https://github.com/go-git/go-git/archive/refs/tags/v5.4.2.tar.gz
 https://github.com/go-task/task/archive/refs/tags/v3.14.0.tar.gz
 https://github.com/gokcehan/lf/archive/refs/tags/r27.tar.gz
+https://github.com/gokcehan/lf/archive/refs/tags/r31.tar.gz
 https://github.com/golang/go/archive/refs/tags/go1.19.10.tar.gz
 https://github.com/golang/go/archive/refs/tags/go1.20.7.tar.gz
 https://github.com/golang/go/archive/refs/tags/go1.21.1.tar.gz
@@ -598,6 +604,7 @@ https://github.com/haasn/libplacebo/archive/refs/tags/v6.292.1.tar.gz
 https://github.com/haikarainen/light/archive/refs/tags/v1.2.2.tar.gz
 https://github.com/hanslub42/rlwrap/archive/refs/tags/0.46.1.tar.gz
 https://github.com/harfbuzz/harfbuzz/archive/refs/tags/8.2.0.tar.gz
+https://github.com/harfbuzz/harfbuzz/archive/refs/tags/8.2.1.tar.gz
 https://github.com/hboetes/mg/archive/refs/tags/20221112.tar.gz
 https://github.com/hluk/CopyQ/archive/refs/tags/v7.0.0.tar.gz
 https://github.com/hpjansson/chafa/archive/refs/tags/1.12.4.tar.gz
@@ -721,6 +728,7 @@ https://github.com/llvm/llvm-project/releases/download/llvmorg-13.0.1/llvm-proje
 https://github.com/llvm/llvm-project/releases/download/llvmorg-16.0.6/llvm-project-16.0.6.src.tar.xz
 https://github.com/llvm/llvm-project/releases/download/llvmorg-17.0.0-rc3/llvm-project-17.0.0rc3.src.tar.xz
 https://github.com/llvm/llvm-project/releases/download/llvmorg-17.0.0-rc4/llvm-project-17.0.0rc4.src.tar.xz
+https://github.com/llvm/llvm-project/releases/download/llvmorg-17.0.1/llvm-project-17.0.1.src.tar.xz
 https://github.com/lm-sensors/lm-sensors/archive/refs/tags/V3-6-0.tar.gz
 https://github.com/lsof-org/lsof/archive/refs/tags/4.98.0.tar.gz
 https://github.com/lsyncd/lsyncd/archive/refs/tags/v2.3.1.tar.gz
@@ -862,6 +870,7 @@ https://github.com/rui314/mold/archive/refs/tags/v1.7.1.tar.gz
 https://github.com/rui314/mold/archive/refs/tags/v2.1.0.tar.gz
 https://github.com/rvaiya/keyd/archive/refs/tags/v2.4.3.tar.gz
 https://github.com/rzvncj/xCHM/archive/refs/tags/1.35.tar.gz
+https://github.com/rzvncj/xCHM/archive/refs/tags/1.36.tar.gz
 https://github.com/sabotage-linux/netbsd-curses/archive/refs/tags/v0.3.2.tar.gz
 https://github.com/sammycage/lunasvg/archive/refs/tags/v2.3.8.tar.gz
 https://github.com/sass/libsass/archive/refs/tags/3.6.5.tar.gz
@@ -1009,12 +1018,15 @@ https://gitlab.freedesktop.org/wlroots/wlroots/-/archive/0.16.2/wlroots-0.16.2.t
 https://gitlab.freedesktop.org/xkeyboard-config/xkeyboard-config/-/archive/xkeyboard-config-2.39/xkeyboard-config-xkeyboard-config-2.39.tar.bz2
 https://gitlab.gnome.org/GNOME/atk/-/archive/ATK_2_36_0/atk-ATK_2_36_0.tar.bz2
 https://gitlab.gnome.org/GNOME/console/-/archive/44.4/console-44.4.tar.bz2
+https://gitlab.gnome.org/GNOME/console/-/archive/45.0/console-45.0.tar.bz2
 https://gitlab.gnome.org/GNOME/gcr/-/archive/3.41.1/gcr-3.41.1.tar.bz2
 https://gitlab.gnome.org/GNOME/gcr/-/archive/4.1.0/gcr-4.1.0.tar.bz2
 https://gitlab.gnome.org/GNOME/glib-networking/-/archive/2.76.1/glib-networking-2.76.1.tar.bz2
 https://gitlab.gnome.org/GNOME/glib-networking/-/archive/2.78.0/glib-networking-2.78.0.tar.bz2
 https://gitlab.gnome.org/GNOME/gnome-font-viewer/-/archive/44.0/gnome-font-viewer-44.0.tar.bz2
+https://gitlab.gnome.org/GNOME/gnome-font-viewer/-/archive/45.0/gnome-font-viewer-45.0.tar.bz2
 https://gitlab.gnome.org/GNOME/gnome-text-editor/-/archive/44.0/gnome-text-editor-44.0.tar.bz2
+https://gitlab.gnome.org/GNOME/gnome-text-editor/-/archive/45.0/gnome-text-editor-45.0.tar.bz2
 https://gitlab.gnome.org/GNOME/gobject-introspection/-/archive/1.72.0/gobject-introspection-1.72.0.tar.bz2
 https://gitlab.gnome.org/GNOME/gsettings-desktop-schemas/-/archive/44.0/gsettings-desktop-schemas-44.0.tar.bz2
 https://gitlab.gnome.org/GNOME/gspell/-/archive/1.12.2/gspell-1.12.2.tar.bz2
@@ -1040,6 +1052,7 @@ https://gitlab.gnome.org/GNOME/zenity/-/archive/3.90.0/zenity-3.90.0.tar.bz2
 https://gitlab.gnome.org/crab2313/evince/-/archive/4c91df66ca83f8f1d057f0aa9069675b8bf5b6d6/evince-4c91df66ca83f8f1d057f0aa9069675b8bf5b6d6.tar.bz2
 https://gitlab.gnome.org/jadahl/libdecor/-/archive/0.1.1/libdecor-0.1.1.tar.bz2
 https://gitlab.torproject.org/tpo/core/tor/-/archive/tor-0.4.7.14/tor-tor-0.4.7.14.tar.bz2
+https://gitlab.torproject.org/tpo/core/tor/-/archive/tor-0.4.7.15/tor-tor-0.4.7.15.tar.bz2
 https://gitlab.xiph.org/xiph/ogg/-/archive/v1.3.5/ogg-v1.3.5.tar.bz2
 https://gitlab.xiph.org/xiph/rnnoise/-/archive/7f449bf8bd3b933891d12c30112268c4090e4d59/rnnoise-7f449bf8bd3b933891d12c30112268c4090e4d59.tar.bz2
 https://gitlab.xiph.org/xiph/speex/-/archive/Speex-1.2.1/speex-Speex-1.2.1.tar.bz2
@@ -1200,11 +1213,13 @@ https://www.nano-editor.org/dist/v7/nano-7.2.tar.xz
 https://www.openldap.org/software/download/OpenLDAP/openldap-release/openldap-2.6.5.tgz
 https://www.openssl.org/source/old/1.1.1/openssl-1.1.1j.tar.gz
 https://www.prevanders.net/libdwarf-0.6.0.tar.xz
+https://www.prevanders.net/libdwarf-0.8.0.tar.xz
 https://www.python.org/ftp/python/2.7.18/Python-2.7.18.tar.xz
 https://www.python.org/ftp/python/3.10.13/Python-3.10.13.tar.xz
 https://www.python.org/ftp/python/3.8.17/Python-3.8.17.tgz
 https://www.python.org/ftp/python/3.9.17/Python-3.9.17.tar.xz
 https://www.rarlab.com/rar/unrarsrc-6.2.10.tar.gz
+https://www.rarlab.com/rar/unrarsrc-6.2.11.tar.gz
 https://www.stunnel.org/downloads/stunnel-5.70.tar.gz
 https://www.tcpdump.org/release/libpcap-1.10.4.tar.gz
 https://www.tcpdump.org/release/tcpdump-4.99.4.tar.gz
