@@ -1071,6 +1071,7 @@ https://i3wm.org/i3status/i3status-2.14.tar.xz
 https://icon-theme.freedesktop.org/releases/hicolor-icon-theme-0.17.tar.xz
 https://imagemagick.org/archive/releases/ImageMagick-7.1.1-15.tar.xz
 https://imagemagick.org/archive/releases/ImageMagick-7.1.1-16.tar.xz
+https://imagemagick.org/archive/releases/ImageMagick-7.1.1-17.tar.xz
 https://invisible-mirror.net/archives/byacc/byacc-20211224.tgz
 https://invisible-mirror.net/archives/byacc/byacc-20230521.tgz
 https://invisible-mirror.net/archives/mawk/mawk-1.3.4-20200120.tgz
