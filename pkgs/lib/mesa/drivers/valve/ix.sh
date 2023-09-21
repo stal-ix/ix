@@ -27,7 +27,8 @@ vkDestroyShaderModule
 vkGetBufferDeviceAddress
 {% endblock %}
 
-{% block mesa_drivers %}
+{% block meson_flags %}
+{{super()}}
 vulkan-drivers={{vulkan}}
 gallium-drivers={{','.join((opengl or '').split('|'))}}
 {% endblock %}
@@ -36,8 +37,6 @@ gallium-drivers={{','.join((opengl or '').split('|'))}}
 (
 {{super()}}
 )
-
-#sed -e 's|.*include.*xcb.*||' -i src/gallium/frontends/dri/kopper.c
 
 (
 cd src/gallium/frontends/dri
@@ -67,6 +66,7 @@ cd ${out}/lib
 
 mv dri/*.so libgallium.a
 patchns libgallium.a o_
+
 {% if vulkan %}
 patchns libvulkan_* v_
 llvm-ar qL libgldrivers.a libgallium* libvulkan_*

@@ -48,10 +48,6 @@ shader-cache=disabled
 llvm=disabled
 shared-llvm=disabled
 lmsensors=disabled
-{% block mesa_drivers %}
-vulkan-drivers=
-gallium-drivers=
-{% endblock %}
 {% endblock %}
 
 {% block patch %}
