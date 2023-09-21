@@ -1,4 +1,4 @@
-{% extends '//lib/mesa/t/sep/ix.sh' %}
+{% extends '//lib/mesa/t/ix.sh' %}
 
 {% block lib_deps %}
 lib/elfutils
