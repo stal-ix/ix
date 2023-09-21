@@ -78,6 +78,15 @@ llvm-objcopy \
 mv libgallium.a libgldrivers.a
 {% endif %}
 
+# remove duplicate .o file
+llvm-ar d libgldrivers.a 'meson-generated_.._.._.._.._vulkan_util_vk_dispatch_table.c.o'
+
+# some sanity checks
+llvm-nm libgldrivers.a | grep ' T ' | sort | uniq -c | grep -v ' 1 ' | while read l; do
+    echo 'broken libgldrivers.a'
+    exit 1
+done
+
 cd ${out}
 
 mv lib tmp
