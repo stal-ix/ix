@@ -5,6 +5,11 @@ lib/elfutils
 {{super()}}
 {% endblock %}
 
+{% block bld_tool %}
+{{super()}}
+bld/librarian
+{% endblock %}
+
 {% block c_rename_symbol %}
 {{super()}}
 vkCmdBindPipeline
@@ -58,18 +63,20 @@ done
 
 {% block install %}
 {{super()}}
+
 cd ${out}/lib
+
 mv dri/*.so libgallium.a
 patchns libgallium.a o_
 {% if vulkan %}
 patchns libvulkan_* v_
 llvm-ar qL libgldrivers.a libgallium* libvulkan_*
-rm libgallium* libvulkan_*
 {% else %}
 mv libgallium.a libgldrivers.a
 {% endif %}
-rm -r dri
+
 cd ${out}
+
 mv lib tmp
 mkdir lib
 mv tmp/libgldrivers.a lib/
