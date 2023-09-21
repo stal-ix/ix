@@ -340,6 +340,7 @@ https://github.com/ArtifexSoftware/jbig2dec/archive/refs/tags/0.19.tar.gz
 https://github.com/ArtifexSoftware/jbig2dec/archive/refs/tags/0.20.tar.gz
 https://github.com/BLAKE2/libb2/archive/refs/tags/v0.98.1.tar.gz
 https://github.com/BLAKE3-team/BLAKE3/archive/refs/tags/1.4.1.tar.gz
+https://github.com/BLAKE3-team/BLAKE3/archive/refs/tags/1.5.0.tar.gz
 https://github.com/Cyan4973/xxHash/archive/refs/tags/v0.8.2.tar.gz
 https://github.com/DanBloomberg/leptonica/archive/refs/tags/1.83.1.tar.gz
 https://github.com/Esri/lerc/archive/refs/tags/v4.0.0.tar.gz
