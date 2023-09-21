@@ -12,6 +12,7 @@ lib/xz
 lib/acl
 lib/cap
 lib/lua
+lib/omp
 lib/popt
 lib/zstd
 lib/dbus
@@ -30,7 +31,6 @@ lib/sqlite/3
 WITH_AUDIT=OFF
 WITH_SELINUX=OFF
 ENABLE_PYTHON=OFF
-ENABLE_OPENMP=OFF
 ENABLE_PLUGINS=OFF
 ENABLE_TESTSUITE=OFF
 WITH_INTERNAL_OPENPGP=ON

@@ -40,4 +40,6 @@ rm *.a
 cp libomp.so libomp.a
 cp libompd.so libompd.a
 cp libarcher.so libarcher.a
+
+rm libompd.a
 {% endblock %}
