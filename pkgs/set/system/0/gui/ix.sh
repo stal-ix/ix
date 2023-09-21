@@ -15,7 +15,7 @@ bin/fuzzel
 bin/iwd/ctl
 bin/swayimg
 bin/telegram
-#bin/epiphany
+bin/epiphany
 bin/xdg/open
 bin/fontconfig
 bin/alsa/utils
