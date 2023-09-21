@@ -22,6 +22,7 @@ wrap_cc
 {% block make_flags %}
 CC=clang
 SBINDIR=${out}/bin
+ETCDIR=${out}/etc
 {% endblock %}
 
 {% block install %}
