@@ -58,6 +58,17 @@ done
 
 {% block install %}
 {{super()}}
+cd ${out}/lib
+mv dri/*.so libgallium.a
+patchns libgallium.a o_
+{% if vulkan %}
+patchns libvulkan_* v_
+llvm-ar qL libgldrivers.a libgallium* libvulkan_*
+rm libgallium* libvulkan_*
+{% else %}
+mv libgallium.a libgldrivers.a
+{% endif %}
+rm -r dri
 cd ${out}
 mv lib tmp
 mkdir lib
@@ -65,6 +76,9 @@ mv tmp/libgldrivers.a lib/
 rm -r tmp
 {% endblock %}
 
-{% block env_lib %}
+{% block skip_auto_lib_env %}
+{% endblock %}
+
+{% block env %}
 export LDFLAGS="-L${out}/lib -Wl,--whole-archive -lgldrivers -Wl,--no-whole-archive \${LDFLAGS}"
 {% endblock %}

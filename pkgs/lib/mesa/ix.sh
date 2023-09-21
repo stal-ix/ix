@@ -3,13 +3,12 @@
 {% block install %}
 {{super()}}
 cd ${out}/lib
-rm libgldrivers.a
+rm -r dri
 cd pkgconfig
+find . -type f -name '*.pc' | while read l; do
+    sed -e 's|glesv1_cm,||g' -i ${l}
+done
 cp opengl.pc glesv2.pc
-{% endblock %}
-
-{% block merge_drivers %}
-mv dri/*.so libgldrivers.a
 {% endblock %}
 
 {% block env %}
