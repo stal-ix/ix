@@ -28,7 +28,6 @@ vkGetBufferDeviceAddress
 {% endblock %}
 
 {% block mesa_drivers %}
-dri-drivers=
 vulkan-drivers={{vulkan}}
 gallium-drivers={{','.join((opengl or '').split('|'))}}
 {% endblock %}
@@ -71,6 +70,10 @@ patchns libgallium.a o_
 {% if vulkan %}
 patchns libvulkan_* v_
 llvm-ar qL libgldrivers.a libgallium* libvulkan_*
+llvm-objcopy \
+    --redefine-sym "vk_format_get_ycbcr_info=v_vk_format_get_ycbcr_info" \
+    --redefine-sym "vk_format_to_pipe_format=v_vk_format_to_pipe_format" \
+    libgldrivers.a
 {% else %}
 mv libgallium.a libgldrivers.a
 {% endif %}

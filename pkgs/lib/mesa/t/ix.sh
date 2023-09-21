@@ -1,10 +1,10 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-#https://gitlab.freedesktop.org/mesa/mesa/-/archive/mesa-23.1.1/mesa-mesa-23.1.1.tar.bz2
-#sha:706fd058efab1c05db2ac4b8e6e43444cad0af2f5de36a0355bc88841dea4b3a
-https://gitlab.freedesktop.org/mesa/mesa/-/archive/mesa-23.0.3/mesa-mesa-23.0.3.tar.bz2
-sha:f35829243fe53bd4986d8a0169d97a70c124d172e9f83a2a8c2826590870e905
+https://gitlab.freedesktop.org/mesa/mesa/-/archive/mesa-23.1.8/mesa-mesa-23.1.8.tar.bz2
+sha:ceebfbf8023b679a327c3015b045a3462d42ab882f60dcb77be96f575916118b
+#https://gitlab.freedesktop.org/mesa/mesa/-/archive/mesa-23.0.3/mesa5B-mesa-23.0.3.tar.bz2
+#sha:f35829243fe53bd4986d8a0169d97a70c124d172e9f83a2a8c2826590870e905
 {% endblock %}
 
 {% block lib_deps %}
