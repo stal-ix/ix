@@ -20,15 +20,10 @@ runtimes
 
 {% block cmake_flags %}
 ENABLE_OMPT_TOOLS=OFF
-OPENMP_ENABLE_LIBOMPTARGET=OFF
+OPENMP_STANDALONE_BUILD=ON
 LLVM_ENABLE_RUNTIMES=openmp
+OPENMP_ENABLE_LIBOMPTARGET=OFF
 LIBOMP_HEADERS_INSTALL_PATH=${out}/include
-{% endblock %}
-
-{% block patch %}
-sed -e 's|.*REGEX.*MATCH.*CLANG_VERSION.*|set(CLANG_VERSION 14.0.1)|' \
-    -e 's|.*set.*LIBOMP_HEADERS_INSTALL_PATH.*||' \
-    -i openmp/runtime/src/CMakeLists.txt
 {% endblock %}
 
 {% block build_flags %}
@@ -45,4 +40,6 @@ rm *.a
 cp libomp.so libomp.a
 cp libompd.so libompd.a
 cp libarcher.so libarcher.a
+
+rm libompd.a
 {% endblock %}

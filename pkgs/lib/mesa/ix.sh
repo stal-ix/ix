@@ -1,20 +1,24 @@
-{% extends '//lib/mesa/t/sep/ix.sh' %}
+{% extends 't/ix.sh' %}
+
+{% block meson_flags %}
+{{super()}}
+vulkan-drivers=
+gallium-drivers=
+{% endblock %}
 
 {% block install %}
 {{super()}}
 cd ${out}/lib
-rm libgldrivers.a
+rm -r dri
 cd pkgconfig
+find . -type f -name '*.pc' | while read l; do
+    sed -e 's|glesv1_cm,||g' -i ${l}
+done
 cp opengl.pc glesv2.pc
-{% endblock %}
-
-{% block merge_drivers %}
-mv dri/*.so libgldrivers.a
 {% endblock %}
 
 {% block env %}
 export CPPFLAGS="-DEGL_NO_X11=1 \${CPPFLAGS}"
-export LDFLAGS="-L${out}/lib -lgbm -lglapi \${LDFLAGS}"
 export COFLAGS="--with-gallium=${out} \${COFLAGS}"
 export MESA_HEADERS=${out}/include
 {% endblock %}

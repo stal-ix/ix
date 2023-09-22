@@ -1,10 +1,8 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-#https://gitlab.freedesktop.org/mesa/mesa/-/archive/mesa-23.1.1/mesa-mesa-23.1.1.tar.bz2
-#sha:706fd058efab1c05db2ac4b8e6e43444cad0af2f5de36a0355bc88841dea4b3a
-https://gitlab.freedesktop.org/mesa/mesa/-/archive/mesa-23.0.3/mesa-mesa-23.0.3.tar.bz2
-sha:f35829243fe53bd4986d8a0169d97a70c124d172e9f83a2a8c2826590870e905
+https://gitlab.freedesktop.org/mesa/mesa/-/archive/mesa-23.1.8/mesa-mesa-23.1.8.tar.bz2
+sha:ceebfbf8023b679a327c3015b045a3462d42ab882f60dcb77be96f575916118b
 {% endblock %}
 
 {% block lib_deps %}
@@ -30,6 +28,11 @@ bin/glslang
 bld/wayland
 {% endblock %}
 
+{% block c_rename_symbol %}
+{{super()}}
+handle_table_remove
+{% endblock %}
+
 {% block meson_flags %}
 valgrind=disabled
 libunwind=disabled
@@ -52,9 +55,6 @@ cat << EOF > merge.py
 {% include 'merge.py' %}
 EOF
 
-#find . -type f -name '*defaults.conf'
-#exit 1
-
 python3 ./merge.py src/util/00-mesa-defaults.conf src/util/00-radv-defaults.conf > _
 mv _ src/util/00-mesa-defaults.conf
 
@@ -68,4 +68,28 @@ cat << EOF > bin/install_megadrivers.py
 EOF
 
 chmod +x bin/install_megadrivers.py
+
+sed -e 's|with_dri = .*|with_dri = true|'         \
+    -e 's|with_any_vk = .*|with_any_vk = true|'   \
+    -e 's|with_gallium = .*|with_gallium = true|' \
+    -i meson.build
+
+sed -e 's|disk_cache_get_function_timestamp|disk_cache_get_function_timestamp_xxx|' \
+    -e 's|disk_cache_get_function_identifier|disk_cache_get_function_identifier_xxx|' \
+    -i src/util/disk_cache.h
+
+cat << EOF >> src/util/disk_cache.h
+#pragma once
+
+static inline bool disk_cache_get_function_timestamp(void* ptr, uint32_t* timestamp) {
+    timestamp = 0;
+    return true;
+}
+
+static inline bool disk_cache_get_function_identifier(void* ptr, struct mesa_sha1* ctx) {
+    _mesa_sha1_update(ctx, &ptr, sizeof(ptr));
+
+    return true;
+}
+EOF
 {% endblock %}

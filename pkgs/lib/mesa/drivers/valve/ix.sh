@@ -1,8 +1,13 @@
-{% extends '//lib/mesa/t/sep/ix.sh' %}
+{% extends '//lib/mesa/t/ix.sh' %}
 
 {% block lib_deps %}
 lib/elfutils
 {{super()}}
+{% endblock %}
+
+{% block bld_tool %}
+{{super()}}
+bld/librarian
 {% endblock %}
 
 {% block c_rename_symbol %}
@@ -22,8 +27,8 @@ vkDestroyShaderModule
 vkGetBufferDeviceAddress
 {% endblock %}
 
-{% block mesa_drivers %}
-dri-drivers=
+{% block meson_flags %}
+{{super()}}
 vulkan-drivers={{vulkan}}
 gallium-drivers={{','.join((opengl or '').split('|'))}}
 {% endblock %}
@@ -32,8 +37,6 @@ gallium-drivers={{','.join((opengl or '').split('|'))}}
 (
 {{super()}}
 )
-
-#sed -e 's|.*include.*xcb.*||' -i src/gallium/frontends/dri/kopper.c
 
 (
 cd src/gallium/frontends/dri
@@ -58,13 +61,43 @@ done
 
 {% block install %}
 {{super()}}
+
+cd ${out}/lib
+
+mv dri/*.so libgallium.a
+patchns libgallium.a o_
+
+{% if vulkan %}
+patchns libvulkan_* v_
+llvm-ar qL libgldrivers.a libgallium* libvulkan_*
+llvm-objcopy \
+    --redefine-sym "vk_format_get_ycbcr_info=v_vk_format_get_ycbcr_info" \
+    --redefine-sym "vk_format_to_pipe_format=v_vk_format_to_pipe_format" \
+    libgldrivers.a
+{% else %}
+mv libgallium.a libgldrivers.a
+{% endif %}
+
+# remove duplicate .o file
+llvm-ar d libgldrivers.a 'meson-generated_.._.._.._.._vulkan_util_vk_dispatch_table.c.o'
+
+# some sanity checks
+llvm-nm libgldrivers.a | grep ' T ' | sort | uniq -c | grep -v ' 1 ' | while read l; do
+    echo 'broken libgldrivers.a'
+    exit 1
+done
+
 cd ${out}
+
 mv lib tmp
 mkdir lib
 mv tmp/libgldrivers.a lib/
 rm -r tmp
 {% endblock %}
 
-{% block env_lib %}
+{% block skip_auto_lib_env %}
+{% endblock %}
+
+{% block env %}
 export LDFLAGS="-L${out}/lib -Wl,--whole-archive -lgldrivers -Wl,--no-whole-archive \${LDFLAGS}"
 {% endblock %}

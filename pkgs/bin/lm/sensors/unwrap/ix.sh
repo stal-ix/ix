@@ -13,6 +13,7 @@ lib/kernel
 {% block bld_tool %}
 bld/flex
 bld/bison
+bld/shebangs
 {% endblock %}
 
 {% block build_flags %}
@@ -22,11 +23,10 @@ wrap_cc
 {% block make_flags %}
 CC=clang
 SBINDIR=${out}/bin
+ETCDIR=${out}/etc
 {% endblock %}
 
 {% block install %}
 {{super()}}
-for x in fancontrol pwmconfig; do
-    sed -e 's|#!/bin/bash|#!/usr/bin/env bash|' -i ${out}/bin/${x}
-done
+fix_shebangs ${out}/bin/fancontrol ${out}/bin/pwmconfig
 {% endblock %}

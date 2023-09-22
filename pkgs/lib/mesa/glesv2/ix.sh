@@ -4,6 +4,6 @@
 lib/mesa
 {% endblock %}
 
-{% block env_lib %}
+{% block env %}
 export LDFLAGS="-lGLESv2 \${LDFLAGS}"
 {% endblock %}
