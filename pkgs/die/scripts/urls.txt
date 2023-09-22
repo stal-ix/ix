@@ -300,6 +300,7 @@ https://ftp.postgresql.org/pub/source/v15.4/postgresql-15.4.tar.bz2
 https://ftp.postgresql.org/pub/source/v16.0/postgresql-16.0.tar.bz2
 https://ftpmirror.gnu.org/libtool/libtool-2.4.6.tar.gz
 https://gameoftrees.org/releases/portable/got-portable-0.92.tar.gz
+https://gameoftrees.org/releases/portable/got-portable-0.93.tar.gz
 https://git.kernel.org/pub/scm/libs/libcap/libcap.git/snapshot/libcap-cap/v1.2.64.tar.gz
 https://git.kernel.org/pub/scm/libs/libtrace/libtraceevent.git/snapshot/libtraceevent-1.7.3.tar.gz
 https://git.kernel.org/pub/scm/libs/libtrace/libtracefs.git/snapshot/libtracefs-1.7.0.tar.gz
