@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://github.com/google/gumbo-parser/archive/refs/tags/v0.10.1.tar.gz
-sha:28463053d44a5dfbc4b77bcf49c8cee119338ffa636cc17fc3378421d714efad
+https://codeberg.org/grisha/gumbo-parser/archive/0.12.0.tar.gz
+sha:f4820b8028b07406ba24ac74ef77057f5d9871f1b17c5486ad78e3da6e541e51
 {% endblock %}
 
 {% block lib_deps %}
