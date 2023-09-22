@@ -9,12 +9,12 @@ sha:1fce54059c504b2604c22c20cd930444a71b3340fc81334c037da63976d92002
 lib/c
 {% endblock %}
 
-{% block make_target %}
-bin/base64
+{% block bld_tool %}
+bld/fake(tool_name=objcopy)
 {% endblock %}
 
-{% block make_flags %}
-OBJCOPY=llvm-objcopy
+{% block make_target %}
+bin/base64
 {% endblock %}
 
 {% block install %}
