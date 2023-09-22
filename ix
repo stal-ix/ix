@@ -34,7 +34,7 @@ except ImportError:
 import signal
 
 def on_sigint(*args):
-    os._exit(1)
+    os.kill(0, signal.SIGTERM)
 
 signal.signal(signal.SIGINT, on_sigint)
 
