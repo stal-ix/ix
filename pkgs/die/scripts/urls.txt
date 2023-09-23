@@ -94,6 +94,7 @@ https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.4.16.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.5.2.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.5.3.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.5.4.tar.xz
+https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.5.5.tar.xz
 https://chromium.googlesource.com/chromiumos/third_party/adhd
 https://chromium.googlesource.com/external/gyp
 https://chromium.googlesource.com/libyuv/libyuv
@@ -767,6 +768,7 @@ https://github.com/mesonbuild/meson/archive/refs/tags/0.64.1.tar.gz
 https://github.com/mesonbuild/meson/archive/refs/tags/1.1.1.tar.gz
 https://github.com/mesonbuild/meson/archive/refs/tags/1.2.1.tar.gz
 https://github.com/mheily/libkqueue/archive/refs/tags/v2.6.1.tar.gz
+https://github.com/microsoft/DirectXShaderCompiler
 https://github.com/microsoft/GSL/archive/refs/tags/v4.0.0.tar.gz
 https://github.com/microsoft/LightGBM
 https://github.com/microsoft/mimalloc/archive/refs/tags/v1.7.6.tar.gz
