@@ -1115,6 +1115,7 @@ https://sourceforge.net/projects/corefonts/files/the%20fonts/final/trebuc32.exe
 https://sourceforge.net/projects/corefonts/files/the%20fonts/final/verdan32.exe
 https://sourceforge.net/projects/corefonts/files/the%20fonts/final/wd97vwr32.exe
 https://sourceforge.net/projects/corefonts/files/the%20fonts/final/webdin32.exe
+https://sourceforge.net/projects/joe-editor/files/JOE%20sources/joe-4.6/joe-4.6.tar.gz
 https://sourceforge.net/projects/libtimidity/files/libtimidity/0.2.7/libtimidity-0.2.7.tar.gz
 https://sourceforge.net/projects/s-tar/files/star-1.6.tar.bz2
 https://sourceware.org/pub/bzip2/bzip2-1.0.8.tar.gz
