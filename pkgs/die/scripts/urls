@@ -20,5 +20,5 @@ find ${IX_PKGS_ROOT} -name '*.sh' | xargs cat | grep "http[s]*://"
   | grep -v 'ix.vvzvlad.xyz' \
   | grep -v 'ix.7mind.io' \
   | python ./urls_flt.py \
-  | sort -s | uniq > _
+  > _
 mv _ urls.txt

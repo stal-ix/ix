@@ -9,7 +9,9 @@ def ok(l):
 
 def it():
     for l in sys.stdin.read().split('\n'):
-        if ok(l):
+        l = l.strip()
+
+        if l and ok(l):
             yield l
 
-print('\n'.join(it()).strip() + '\n')
+print('\n'.join(sorted(frozenset(it()))).strip() + '\n')
