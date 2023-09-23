@@ -1,6 +1,7 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
+bin/seer
 bin/dxsc
 bin/dwarf/dump
 bin/rpm
