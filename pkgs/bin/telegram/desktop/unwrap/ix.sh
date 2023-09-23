@@ -35,7 +35,6 @@ lib/mesa/egl/dl
 lib/qt/6/compat
 lib/qt/6/wayland
 lib/xiph/rnnoise
-lib/range/v3/std
 lib/mesa/glesv2/dl
 lib/k/imageformats
 lib/qt/6/declarative
@@ -105,10 +104,6 @@ cat << EOF >> Telegram/SourceFiles/stdafx.h
 #include "Telegram/ThirdParty/libtgvoip/webrtc_dsp/rtc_base/scoped_ref_ptr.h"
 #endif
 EOF
-
-find Telegram/SourceFiles -name '*.cpp' -type f | while read l; do
-    sed -e 's|ranges::to<QVector>()|ranges::to<QList>()|' -i ${l}
-done
 
 sed -e 's|.*add_cppgir()||' \
     -e 's|.*generate_cppgir.*||' \
