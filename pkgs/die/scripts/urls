@@ -19,6 +19,6 @@ find ${IX_PKGS_ROOT} -name '*.sh' | xargs cat | grep "http[s]*://"
   | grep -v 'ix-mirror.mooo.com' \
   | grep -v 'ix.vvzvlad.xyz' \
   | grep -v 'ix.7mind.io' \
-  | python ./urls_flt.py \
+  | python3 ./urls_flt.py \
   > _
 mv _ urls.txt
