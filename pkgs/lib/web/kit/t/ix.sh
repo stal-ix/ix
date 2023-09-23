@@ -1,6 +1,7 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block bld_tool %}
+bld/glib
 bld/perl
 bld/ruby
 bin/gperf
@@ -9,7 +10,6 @@ bld/gettext
 bld/wayland
 bin/xmllint
 bld/pkg/config
-bld/glib
 {% endblock %}
 
 {% block task_pool %}full{% endblock %}
@@ -29,7 +29,7 @@ ENABLE_BUBBLEWRAP_SANDBOX=OFF
 ENABLE_X11_TARGET=OFF
 ENABLE_WAYLAND_TARGET=ON
 
-ENABLE_WEBGL=OFF
+ENABLE_WEBGL=ON
 
 USE_SYSTEM_MALLOC=ON
 USE_SYSTEM_MALLOC_DEFAULT=ON

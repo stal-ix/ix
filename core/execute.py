@@ -36,7 +36,6 @@ def execute_cmd(c, mt):
     except subprocess.CalledProcessError as e:
         cl.log(f'ERROR {descr}', color='r')
         os.kill(0, signal.SIGTERM)
-        os._exit(e.returncode)
     except Exception as e:
         raise ce.Error(f'{descr} failed', exception=e)
 
