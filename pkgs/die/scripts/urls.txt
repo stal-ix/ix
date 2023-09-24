@@ -847,6 +847,7 @@ https://github.com/rs/curlie/archive/refs/tags/v1.6.9.tar.gz
 https://github.com/rsms/inter/releases/download/v3.19/Inter-3.19.zip
 https://github.com/rui314/mold/archive/refs/tags/v1.7.1.tar.gz
 https://github.com/rui314/mold/archive/refs/tags/v2.1.0.tar.gz
+https://github.com/rui314/mold/archive/refs/tags/v2.2.0.tar.gz
 https://github.com/rvaiya/keyd/archive/refs/tags/v2.4.3.tar.gz
 https://github.com/rzvncj/xCHM/archive/refs/tags/1.35.tar.gz
 https://github.com/rzvncj/xCHM/archive/refs/tags/1.36.tar.gz
@@ -933,6 +934,7 @@ https://github.com/warmcat/libwebsockets/archive/refs/tags/v4.3.2.tar.gz
 https://github.com/wasmx/fizzy/archive/refs/tags/v0.8.0.tar.gz
 https://github.com/webmproject/libvpx/archive/refs/tags/v1.13.0.tar.gz
 https://github.com/weechat/weechat/archive/refs/tags/v4.0.4.tar.gz
+https://github.com/weechat/weechat/archive/refs/tags/v4.0.5.tar.gz
 https://github.com/westes/flex/archive/refs/tags/flex-2-5-10.tar.gz
 https://github.com/westes/flex/files/981163/flex-2.6.4.tar.gz
 https://github.com/wfeldt/libx86emu/archive/refs/tags/3.5.tar.gz
@@ -1186,6 +1188,7 @@ https://www.lua.org/ftp/lua-5.1.5.tar.gz
 https://www.lua.org/ftp/lua-5.2.4.tar.gz
 https://www.lua.org/ftp/lua-5.4.6.tar.gz
 https://www.mpg123.org/download/mpg123-1.31.3.tar.bz2
+https://www.mpg123.org/download/mpg123-1.32.1.tar.bz2
 https://www.nano-editor.org/dist/v7/nano-7.2.tar.xz
 https://www.openldap.org/software/download/OpenLDAP/openldap-release/openldap-2.6.5.tgz
 https://www.openssl.org/source/old/1.1.1/openssl-1.1.1j.tar.gz
