@@ -14,11 +14,6 @@ find ${IX_PKGS_ROOT} -name '*.sh' | xargs cat | grep "http[s]*://"
 ) | grep -v '#'  \
   | grep -v ' '  \
   | grep -v '{{' \
-  | grep -v 'ix-eparo-mirror.duckdns.org' \
-  | grep -v 'ix.kmeaw.com' \
-  | grep -v 'ix-mirror.mooo.com' \
-  | grep -v 'ix.vvzvlad.xyz' \
-  | grep -v 'ix.7mind.io' \
-  | python ./urls_flt.py \
-  | sort -s | uniq > _
+  | python3 ./urls_flt.py \
+  > _
 mv _ urls.txt

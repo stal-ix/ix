@@ -1,4 +1,3 @@
-
 http://0pointer.de/lennart/projects/libcanberra/libcanberra-0.30.tar.xz
 http://base64.sourceforge.net/b64.c
 http://bitop.luajit.org/download/LuaBitOp-1.0.2.tar.gz
@@ -106,6 +105,7 @@ https://codeberg.org/dnkl/yambar/archive/1.10.0.tar.gz
 https://codeberg.org/grisha/gumbo-parser/archive/0.12.0.tar.gz
 https://codeberg.org/soundtouch/soundtouch/archive/2.3.1.tar.gz
 https://codeberg.org/tenacityteam/libmad/archive/0.16.3.tar.gz
+https://codeberg.org/tenacityteam/libmad/archive/0.16.4.tar.gz
 https://common-lisp.net/project/ecl/static/files/release/ecl-21.2.1.tgz
 https://common-lisp.net/project/ecl/static/files/release/ecl-23.9.9.tgz
 https://cpan.metacpan.org/authors/id/T/TO/TODDR/XML-Parser-2.46.tar.gz
@@ -524,6 +524,7 @@ https://github.com/emacs-mirror/emacs/archive/refs/tags/emacs-29.1.tar.gz
 https://github.com/emcrisostomo/fswatch/archive/refs/tags/1.17.1.tar.gz
 https://github.com/emersion/mako/archive/refs/tags/v1.7.1.tar.gz
 https://github.com/emersion/slurp/archive/refs/tags/v1.4.0.tar.gz
+https://github.com/epasveer/seer/archive/refs/tags/v2.2.tar.gz
 https://github.com/eranif/codelite/releases/download/17.0.0/codelite-17.0.0.tar.gz
 https://github.com/ericniebler/range-v3/archive/refs/tags/0.12.0.tar.gz
 https://github.com/etcd-io/etcd/archive/refs/tags/v3.4.22.tar.gz
@@ -601,6 +602,7 @@ https://github.com/hughsie/libxmlb/archive/refs/tags/0.3.14.tar.gz
 https://github.com/hunspell/hunspell/archive/refs/tags/v1.7.1.tar.gz
 https://github.com/hyperrealm/libconfig/archive/refs/tags/v1.7.3.tar.gz
 https://github.com/hyprwm/Hyprland/releases/download/v0.29.0/source-v0.29.0.tar.gz
+https://github.com/hyprwm/Hyprland/releases/download/v0.30.0/source-v0.30.0.tar.gz
 https://github.com/hyprwm/hyprpaper/archive/refs/tags/v0.2.0.tar.gz
 https://github.com/hyprwm/hyprpicker/archive/refs/tags/v0.1.0.tar.gz
 https://github.com/ib/xarchiver/archive/refs/tags/0.5.4.20.tar.gz
@@ -657,6 +659,7 @@ https://github.com/kspalaiologos/bzip3/archive/refs/tags/1.3.2.tar.gz
 https://github.com/kuroko-lang/kuroko/archive/refs/tags/v1.3.1.tar.gz
 https://github.com/kuroko-lang/kuroko/archive/refs/tags/v1.4.0.tar.gz
 https://github.com/labwc/labwc/archive/refs/tags/0.6.4.tar.gz
+https://github.com/labwc/labwc/archive/refs/tags/0.6.5.tar.gz
 https://github.com/landley/toybox/archive/refs/tags/0.8.10.tar.gz
 https://github.com/lbonn/rofi/releases/download/1.7.3%2Bwayland1/rofi-1.7.3+wayland1.tar.xz
 https://github.com/leo-arch/clifm/archive/refs/tags/v1.14.5.tar.gz
@@ -819,6 +822,7 @@ https://github.com/qbittorrent/qBittorrent/archive/refs/tags/release-4.5.4.tar.g
 https://github.com/qpdf/qpdf/archive/refs/tags/v11.6.1.tar.gz
 https://github.com/qt/qt5compat/archive/refs/tags/v6.5.2.tar.gz
 https://github.com/qt/qtbase/archive/refs/tags/v6.5.2.tar.gz
+https://github.com/qt/qtcharts/archive/refs/tags/v6.5.2.tar.gz
 https://github.com/qt/qtdeclarative/archive/refs/tags/v6.5.2.tar.gz
 https://github.com/qt/qtimageformats/archive/refs/tags/v6.5.2.tar.gz
 https://github.com/qt/qtmultimedia/archive/refs/tags/v6.5.2.tar.gz
@@ -844,6 +848,7 @@ https://github.com/rs/curlie/archive/refs/tags/v1.6.9.tar.gz
 https://github.com/rsms/inter/releases/download/v3.19/Inter-3.19.zip
 https://github.com/rui314/mold/archive/refs/tags/v1.7.1.tar.gz
 https://github.com/rui314/mold/archive/refs/tags/v2.1.0.tar.gz
+https://github.com/rui314/mold/archive/refs/tags/v2.2.0.tar.gz
 https://github.com/rvaiya/keyd/archive/refs/tags/v2.4.3.tar.gz
 https://github.com/rzvncj/xCHM/archive/refs/tags/1.35.tar.gz
 https://github.com/rzvncj/xCHM/archive/refs/tags/1.36.tar.gz
@@ -930,6 +935,7 @@ https://github.com/warmcat/libwebsockets/archive/refs/tags/v4.3.2.tar.gz
 https://github.com/wasmx/fizzy/archive/refs/tags/v0.8.0.tar.gz
 https://github.com/webmproject/libvpx/archive/refs/tags/v1.13.0.tar.gz
 https://github.com/weechat/weechat/archive/refs/tags/v4.0.4.tar.gz
+https://github.com/weechat/weechat/archive/refs/tags/v4.0.5.tar.gz
 https://github.com/westes/flex/archive/refs/tags/flex-2-5-10.tar.gz
 https://github.com/westes/flex/files/981163/flex-2.6.4.tar.gz
 https://github.com/wfeldt/libx86emu/archive/refs/tags/3.5.tar.gz
@@ -1183,6 +1189,7 @@ https://www.lua.org/ftp/lua-5.1.5.tar.gz
 https://www.lua.org/ftp/lua-5.2.4.tar.gz
 https://www.lua.org/ftp/lua-5.4.6.tar.gz
 https://www.mpg123.org/download/mpg123-1.31.3.tar.bz2
+https://www.mpg123.org/download/mpg123-1.32.1.tar.bz2
 https://www.nano-editor.org/dist/v7/nano-7.2.tar.xz
 https://www.openldap.org/software/download/OpenLDAP/openldap-release/openldap-2.6.5.tgz
 https://www.openssl.org/source/old/1.1.1/openssl-1.1.1j.tar.gz
@@ -1204,3 +1211,4 @@ https://www.x.org/pub/individual/util/util-macros-1.19.3.tar.bz2
 https://www.x.org/releases/individual/lib/libX11-1.8.6.tar.xz
 https://www.x.org/releases/individual/proto/xorgproto-2023.2.tar.xz
 https://www.zsh.org/pub/zsh-5.9.tar.xz
+

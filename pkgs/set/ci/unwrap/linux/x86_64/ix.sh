@@ -1,6 +1,7 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
+bin/seer
 bin/dxsc
 bin/dwarf/dump
 bin/rpm
@@ -571,10 +572,10 @@ bin/glslc
 bin/htop
 bin/iwgtk
 bin/notify/send
-bin/ananicy/rules
-bin/ananicy/runit
-bin/ananicy/good
-bin/ananicy
+#bin/ananicy/rules
+#bin/ananicy/runit
+#bin/ananicy/good
+#bin/ananicy
 bin/schedrr
 bin/xdg/open
 bin/xdg/desktop/portal/gtk

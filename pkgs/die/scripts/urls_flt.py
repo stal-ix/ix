@@ -1,7 +1,13 @@
 import os
 import sys
 
+mirrors = [x.split('://')[1] for x in open('mirrors.txt').read().splitlines()]
+
 def ok(l):
+    for m in mirrors:
+        if m in l:
+            return False
+
     if '.' not in os.path.basename(l):
         return False
 
@@ -9,7 +15,9 @@ def ok(l):
 
 def it():
     for l in sys.stdin.read().split('\n'):
-        if ok(l):
+        l = l.strip()
+
+        if l and ok(l):
             yield l
 
-print('\n'.join(it()).strip() + '\n')
+print('\n'.join(sorted(frozenset(it()))).strip() + '\n')

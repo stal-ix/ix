@@ -19,7 +19,6 @@ lib/drivers/3d
 lib/mesa/gl/dl
 lib/mesa/egl/dl
 bin/hypr/wlroots
-lib/range/v3/std
 lib/mesa/glesv2/dl
 {% endblock %}
 
