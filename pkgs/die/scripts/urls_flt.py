@@ -1,7 +1,13 @@
 import os
 import sys
 
+mirrors = [x.split('://')[1] for x in open('mirrors.txt').read().splitlines()]
+
 def ok(l):
+    for m in mirrors:
+        if m in l:
+            return False
+
     if '.' not in os.path.basename(l):
         return False
 
