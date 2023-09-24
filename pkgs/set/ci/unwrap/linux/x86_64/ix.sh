@@ -572,10 +572,10 @@ bin/glslc
 bin/htop
 bin/iwgtk
 bin/notify/send
-bin/ananicy/rules
-bin/ananicy/runit
-bin/ananicy/good
-bin/ananicy
+#bin/ananicy/rules
+#bin/ananicy/runit
+#bin/ananicy/good
+#bin/ananicy
 bin/schedrr
 bin/xdg/open
 bin/xdg/desktop/portal/gtk
