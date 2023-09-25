@@ -1,10 +1,15 @@
 {% extends '//die/c/meson.sh' %}
 
-{# hard dep on X #}
+{% block git_repo %}
+https://github.com/lbonn/rofi
+{% endblock %}
 
-{% block fetch %}
-https://github.com/lbonn/rofi/releases/download/1.7.3%2Bwayland1/rofi-1.7.3+wayland1.tar.xz
-sha:88c993d792549abc141f95c26ac99126fb91f6eed47bd4f3252e3decfe08dabd
+{% block git_branch %}
+1.7.5+wayland2
+{% endblock %}
+
+{% block git_sha %}
+23d591ecb08804251e2d12984fe53032cbc8c7afff50df176351b835a2d14bdf
 {% endblock %}
 
 {% block bld_libs %}
