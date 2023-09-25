@@ -1,10 +1,10 @@
 {% extends '//die/c/cmake.sh' %}
 
-{% block version %}1.0.18{% endblock %}
+{% block version %}1.0.20{% endblock %}
 
 {% block fetch %}
 https://github.com/strawberrymusicplayer/strawberry/archive/refs/tags/{{self.version()}}.tar.gz
-sha:1c16e589d653904605468089e18c6b1b7cef3bfa803ee1c7d5a0e35e4e57a680
+sha:de046ca138869f83db6e8e1e49f29dd8d1ba6b4c54a8078679ee0529c731aac8
 {% endblock %}
 
 {% block bld_libs %}

@@ -878,6 +878,7 @@ https://github.com/stedolan/jq/archive/refs/tags/jq-1.6.tar.gz
 https://github.com/stevegrubb/libcap-ng/archive/refs/tags/v0.8.3.tar.gz
 https://github.com/stp/stp/archive/refs/tags/2.3.3.tar.gz
 https://github.com/strawberrymusicplayer/strawberry/archive/refs/tags/1.0.18.tar.gz
+https://github.com/strawberrymusicplayer/strawberry/archive/refs/tags/1.0.20.tar.gz
 https://github.com/strukturag/libde265/archive/refs/tags/v1.0.12.tar.gz
 https://github.com/strukturag/libheif/archive/refs/tags/v1.16.2.tar.gz
 https://github.com/swaywm/sway/archive/refs/tags/1.8.1.tar.gz
