@@ -1,6 +1,7 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
+bin/unionfs/fuse
 bin/seer
 bin/dxsc
 bin/dwarf/dump
