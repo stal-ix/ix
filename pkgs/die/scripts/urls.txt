@@ -1176,6 +1176,7 @@ https://www.gnupg.org/ftp/gcrypt/npth/npth-1.6.tar.bz2
 https://www.greenwoodsoftware.com/less/less-633.tar.gz
 https://www.ibiblio.org/pub/Linux/libs/graphics/t1lib-5.1.2.tar.gz
 https://www.iozone.org/src/current/iozone3_494.tgz
+https://www.ivarch.com/programs/sources/pv-1.8.0.tar.gz
 https://www.jedsoft.org/releases/jed/jed-0.99-19.tar.bz2
 https://www.jedsoft.org/releases/most/most-5.2.0.tar.gz
 https://www.jedsoft.org/releases/slang/slang-2.3.3.tar.bz2
