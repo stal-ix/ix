@@ -37,12 +37,3 @@ gi_cross_binary_wrapper=g-ir-scanner
 >${tmp}/obj/gir/Gio-2.0.gir
 >${tmp}/obj/gir/GIRepository-2.0.gir
 {% endblock %}
-
-{% block install %}
-{{super()}}
-rm -rf ${out}/lib/pkgconfig
-{% endblock %}
-
-{% block postinstall %}
-find ${out}
-{% endblock %}
