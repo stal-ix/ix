@@ -55,6 +55,10 @@ SDL_LIBSAMPLERATE_SHARED=OFF
 SDL_VIDEO_OPENGL_EGL=1
 {% endblock %}
 
+{% block setup %}
+export CFLAGS="-Wno-incompatible-function-pointer-types ${CFLAGS}"
+{% endblock %}
+
 {% block patch %}
 sed -e 's|define SDL_DYNAMIC_API 1|define SDL_DYNAMIC_API 0|' \
     -i src/dynapi/SDL_dynapi.h
