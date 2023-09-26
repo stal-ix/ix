@@ -379,6 +379,7 @@ https://github.com/J-Lentz/iwgtk/archive/refs/tags/v0.9.tar.gz
 https://github.com/JuliaStrings/utf8proc/archive/refs/tags/v2.8.0.tar.gz
 https://github.com/Juniper/libxo/archive/refs/tags/1.6.0.tar.gz
 https://github.com/KDE/kimageformats/archive/refs/tags/v5.98.0.tar.gz
+https://github.com/KhronosGroup/SPIRV-Cross/archive/refs/tags/sdk-1.3.261.1.tar.gz
 https://github.com/KhronosGroup/SPIRV-Headers/archive/refs/tags/sdk-1.3.250.0.tar.gz
 https://github.com/KhronosGroup/SPIRV-Tools/archive/refs/tags/v2023.2.tar.gz
 https://github.com/KhronosGroup/Vulkan-Headers/archive/refs/tags/sdk-1.3.250.0.tar.gz
@@ -535,6 +536,7 @@ https://github.com/evanw/esbuild/archive/refs/tags/v0.18.14.tar.gz
 https://github.com/exfatprogs/exfatprogs/releases/download/1.2.0/exfatprogs-1.2.0.tar.xz
 https://github.com/facebook/zstd/archive/refs/tags/v1.5.5.tar.gz
 https://github.com/fastfloat/fast_float/archive/refs/tags/v3.8.1.tar.gz
+https://github.com/fastfloat/fast_float/archive/refs/tags/v5.2.0.tar.gz
 https://github.com/fenrus75/powertop/archive/refs/tags/v2.15.tar.gz
 https://github.com/fish-shell/fish-shell/archive/refs/tags/3.6.1.tar.gz
 https://github.com/flatpak/libportal/archive/refs/tags/0.7.1.tar.gz
@@ -592,6 +594,7 @@ https://github.com/gperftools/gperftools/archive/refs/tags/gperftools-2.13.tar.g
 https://github.com/gphoto/libgphoto2/archive/refs/tags/v2.5.30.tar.gz
 https://github.com/haasn/libplacebo/archive/refs/tags/v5.264.1.tar.gz
 https://github.com/haasn/libplacebo/archive/refs/tags/v6.292.1.tar.gz
+https://github.com/haasn/libplacebo/archive/refs/tags/v6.338.0.tar.gz
 https://github.com/haikarainen/light/archive/refs/tags/v1.2.2.tar.gz
 https://github.com/hanslub42/rlwrap/archive/refs/tags/0.46.1.tar.gz
 https://github.com/harfbuzz/harfbuzz/archive/refs/tags/8.2.0.tar.gz

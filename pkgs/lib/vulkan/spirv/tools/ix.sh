@@ -1,7 +1,6 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-#https://github.com/KhronosGroup/SPIRV-Tools/archive/refs/tags/v2022.4.tar.gz
 https://github.com/KhronosGroup/SPIRV-Tools/archive/refs/tags/v2023.2.tar.gz
 sha:7416cc8a98a10c32bacc36a39930b0c5b2a484963df5d68f388ed7ffee1faad3
 {% include '//lib/vulkan/spirv/headers/ver.sh' %}
