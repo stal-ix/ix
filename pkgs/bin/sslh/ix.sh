@@ -1,8 +1,8 @@
 {% extends '//die/c/make.sh' %}
 
 {% block fetch %}
-https://github.com/yrutschle/sslh/archive/refs/tags/v2.0.0.tar.gz
-sha:45e640dd08f76f0815d000f4b6e7bad376d80c7c3369b73435f2eca73107bc5d
+https://github.com/yrutschle/sslh/archive/refs/tags/v2.0.1.tar.gz
+sha:0e92a53432bb62a45095f5478546fecb65b9013b972c3ee9b405044daf7a19ac
 {% endblock %}
 
 {% block bld_libs %}
