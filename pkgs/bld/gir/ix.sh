@@ -3,6 +3,8 @@
 {% block bld_libs %}
 {{super()}}
 lib/glib/dl
+lib/gi/repository/bootstrap/dl
+lib/gi/repository/bootstrap/shim
 {% endblock %}
 
 {% block bld_tool %}
@@ -19,4 +21,9 @@ gi_cross_use_prebuilt_gi=true
 {{super()}}
 export OPTFLAGS="${OPTFLAGS} -O0"
 export GI_SCANNER_DISABLE_CACHE=1
+{% endblock %}
+
+{% block postinstall %}
+rm -rf ${out}/include
+rm ${out}/bin/g-ir-scanner
 {% endblock %}

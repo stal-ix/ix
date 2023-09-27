@@ -1,4 +1,4 @@
-{% extends '//lib/gi/repository/bootstrap/ix.sh' %}
+{% extends '//lib/gi/repository/bootstrap/t/ix.sh' %}
 
 {% block install %}
 {{super()}}
