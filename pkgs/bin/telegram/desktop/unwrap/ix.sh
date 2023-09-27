@@ -17,6 +17,7 @@ lib/ffmpeg
 lib/gsl/ms
 lib/xxhash
 lib/openal
+lib/gi/cpp
 lib/tg/owt
 lib/tg/voip
 lib/openssl
@@ -112,14 +113,6 @@ base64 -d << EOF > cmake/external/glib/generate_cppgir.cmake
 EOF
 
 sed -e 's|.*add_cppgir().*||' -i cmake/external/glib/CMakeLists.txt
-
-base64 -d << EOF > Telegram/lib_base/base/platform/linux/base_system_media_controls_linux.cpp
-{% include 'base_system_media_controls_linux.cpp/base64' %}
-EOF
-
-base64 -d << EOF > Telegram/SourceFiles/platform/linux/integration_linux.cpp
-{% include 'integration_linux.cpp/base64' %}
-EOF
 
 sed -e 's|DESKTOP_APP_DISABLE_WAYLAND_INTEGRATION|TRUE|' -i Telegram/lib_webview/CMakeLists.txt
 {% endblock %}
