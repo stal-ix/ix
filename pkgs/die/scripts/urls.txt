@@ -1158,6 +1158,7 @@ https://waf.io/waf-2.0.26.tar.bz2
 https://waterlan.home.xs4all.nl/dos2unix/dos2unix-7.5.1.tar.gz
 https://webkitgtk.org/releases/webkitgtk-2.41.91.tar.xz
 https://webkitgtk.org/releases/webkitgtk-2.42.0.tar.xz
+https://webkitgtk.org/releases/webkitgtk-2.42.1.tar.xz
 https://wpewebkit.org/releases/wpewebkit-2.36.2.tar.xz
 https://wpitchoune.net/psensor/files/psensor-1.2.1.tar.gz
 https://www.agner.org/optimize/asmlib.zip
