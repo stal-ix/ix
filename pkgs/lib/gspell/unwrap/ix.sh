@@ -21,11 +21,11 @@ lib/enchant
 bld/vala
 bld/glib
 bld/gtkdoc
+bld/gir/m4
 bin/xmllint
 bld/gettext
 bld/intltool
 bld/auto/archive
-bld/gobject/introspection
 {% endblock %}
 
 {% block configure_flags %}
