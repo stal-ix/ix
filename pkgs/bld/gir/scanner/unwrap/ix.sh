@@ -5,7 +5,6 @@
 {% endblock %}
 
 {% block bld_libs %}
-lib/glib/dl
 lib/gi/repository/py/register
 {{super()}}
 {% endblock %}
