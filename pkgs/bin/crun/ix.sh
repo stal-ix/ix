@@ -1,8 +1,15 @@
 {% extends '//die/c/autorehell.sh' %}
 
-{% block fetch %}
-https://github.com/containers/crun/releases/download/1.9/crun-1.9.tar.xz
-sha:7e35280cfa1a646b4ebdc94cc434035ab51f36a763c6268acc6aa7bbfd6ed21b
+{% block git_repo %}
+https://github.com/containers/crun
+{% endblock %}
+
+{% block git_branch %}
+1.9.1
+{% endblock %}
+
+{% block git_sha %}
+ebdd3c57a520ca427dbf6cb12fbfa14960d655e690c4b07c76b1e850cc68b12c
 {% endblock %}
 
 {% block bld_libs %}
@@ -24,4 +31,12 @@ bld/fakegit
 --disable-dl
 --disable-systemd
 --disable-embedded-yajl
+{% endblock %}
+
+{% block build %}
+cat << EOF > git-version.h
+#pragma once
+#define GIT_VERSION "{{self.git_branch().strip()}}"
+EOF
+{{super()}}
 {% endblock %}

@@ -14,10 +14,10 @@ lib/enchant
 {% block bld_tool %}
 bld/vala
 bld/gtkdoc
+bld/gir/m4
 bld/gettext
 bld/intltool
 bld/auto/archive
-bld/gobject/introspection
 {% endblock %}
 
 {% block patch %}
