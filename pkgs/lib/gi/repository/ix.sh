@@ -11,7 +11,7 @@ lib/glib
 {% endblock %}
 
 {% block bld_libs %}
-lib/python/3/10
+lib/python
 {% endblock %}
 
 {% block bld_tool %}
