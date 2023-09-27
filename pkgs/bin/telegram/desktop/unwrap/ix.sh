@@ -39,6 +39,7 @@ lib/mesa/glesv2/dl
 lib/k/imageformats
 lib/qt/6/declarative
 lib/qt/6/imageformats
+lib/shim/fake(lib_name=gi)
 lib/{{allocator}}/trim(delay=3,bytes=30000000)
 {% endblock %}
 
@@ -74,16 +75,17 @@ TDESKTOP_LAUNCHER_BASENAME=telegram-desktop
 {% endblock %}
 
 {% block bld_tool %}
+bld/gir
 bld/qt/6
 bld/glib
 bld/python
 bin/protoc
+bin/cppgir
 bld/wayland
 bld/pkg/config
 bld/qt/6/tools
 bld/qt/6/wayland
 bld/qt/6/tools/qml
-bld/fake(tool_name=g-ir-scanner)
 {% endblock %}
 
 {% block patch %}
@@ -105,13 +107,11 @@ cat << EOF >> Telegram/SourceFiles/stdafx.h
 #endif
 EOF
 
-sed -e 's|.*add_cppgir()||' \
-    -e 's|.*generate_cppgir.*||' \
-    -i cmake/external/glib/CMakeLists.txt
+base64 -d << EOF > cmake/external/glib/generate_cppgir.cmake
+{% include 'generate_cppgir.cmake/base64' %}
+EOF
 
-find . -name CMakeLists.txt | while read l; do
-    sed -e 's|.*generate_dbus.*||' -i ${l}
-done
+sed -e 's|.*add_cppgir().*||' -i cmake/external/glib/CMakeLists.txt
 
 base64 -d << EOF > Telegram/lib_base/base/platform/linux/base_system_media_controls_linux.cpp
 {% include 'base_system_media_controls_linux.cpp/base64' %}
