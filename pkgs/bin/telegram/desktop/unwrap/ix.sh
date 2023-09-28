@@ -40,7 +40,6 @@ lib/mesa/glesv2/dl
 lib/k/imageformats
 lib/qt/6/declarative
 lib/qt/6/imageformats
-lib/shim/fake(lib_name=gi)
 lib/{{allocator}}/trim(delay=3,bytes=30000000)
 {% endblock %}
 

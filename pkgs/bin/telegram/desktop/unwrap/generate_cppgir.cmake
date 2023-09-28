@@ -24,7 +24,9 @@ function(generate_cppgir target_name gir)
         --debug
         1
         --class
+        --class-full
         --expected
+        --optional
         --ignore
         ${cmake_helpers_loc}/external/glib/cppgir/data/cppgir.ignore:${cmake_helpers_loc}/external/glib/cppgir/data/cppgir_unix.ignore
         --output
@@ -40,10 +42,8 @@ function(generate_cppgir target_name gir)
 
     get_target_property(target_type ${target_name} TYPE)
     if (${target_type} STREQUAL "INTERFACE_LIBRARY")
-        target_link_libraries(${target_name} INTERFACE gi)
         target_compile_definitions(${target_name} INTERFACE GI_INLINE GI_OBJECT_NEWV)
     else()
-        target_link_libraries(${target_name} PUBLIC gi)
         target_compile_definitions(${target_name} PUBLIC GI_INLINE GI_OBJECT_NEWV)
     endif()
 endfunction()
