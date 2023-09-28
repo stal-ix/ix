@@ -22,6 +22,3 @@ zwp_linux_dmabuf_v1_interface
 zwp_linux_buffer_params_v1_interface
 {% endblock %}
 
-{% block patch %}
-:
-{% endblock %}
