@@ -904,6 +904,7 @@ https://github.com/telegramdesktop/tdesktop/releases/download/v4.9.0/tdesktop-4.
 https://github.com/telegramdesktop/tdesktop/releases/download/v4.9.2/tdesktop-4.9.2-full.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v4.9.4/tdesktop-4.9.4-full.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v4.9.6/tdesktop-4.9.6-full.tar.gz
+https://github.com/telegramdesktop/tdesktop/releases/download/v4.9.8/tdesktop-4.9.8-full.tar.gz
 https://github.com/tesseract-ocr/tesseract/archive/refs/tags/5.2.0.tar.gz
 https://github.com/tetratelabs/wazero/archive/refs/tags/v1.5.0.tar.gz
 https://github.com/texstudio-org/texstudio/archive/refs/tags/4.4.1.tar.gz
