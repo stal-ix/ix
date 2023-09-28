@@ -28,6 +28,7 @@ cp -R cmake/* ${LTV}/cmake
 cp -R Telegram/cmake/* ${LTV}/cmake/
 cp -R Telegram/cmake/* ${LTV}/
 cd ${LTV}
+cat cmake/target_* >> cmake/init_target.cmake
 >cmake/options_linux.cmake
 {% endblock %}
 

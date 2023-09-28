@@ -88,6 +88,10 @@ bld/qt/6/wayland
 bld/qt/6/tools/qml
 {% endblock %}
 
+{% block setup %}
+export CXXFLAGS="-std=c++23 ${CXXFLAGS}"
+{% endblock %}
+
 {% block patch %}
 find . -type f | while read l; do
     sed -e 's|third_party/libyuv/include/||' -i "${l}"
@@ -110,6 +114,29 @@ EOF
 base64 -d << EOF > cmake/external/glib/generate_cppgir.cmake
 {% include 'generate_cppgir.cmake/base64' %}
 EOF
+
+find Telegram/lib_base/base/platform/linux -type f | while read l; do
+    sed -e 's|Fn(|std::function(|' -i ${l}
+done
+
+sed -e 's|ranges::contains(cap|Contains(cap|' \
+    -e 's|ranges::all_of(std::initializer_list|ranges::all_of(std::initializer_list<const char*>|' \
+    -e 's|ranges::contains(CurrentCapabilities|Contains(CurrentCapabilities|' \
+    -i Telegram/SourceFiles/platform/linux/notifications_manager_linux.cpp
+
+cat - Telegram/SourceFiles/platform/linux/notifications_manager_linux.cpp << EOF > _
+template <class T, class R>
+inline bool Contains(const T& t, const R& r) {
+    for (const auto& x : t) {
+        if (x == r) {
+            return true;
+        }
+    }
+
+    return false;
+}
+EOF
+mv _ Telegram/SourceFiles/platform/linux/notifications_manager_linux.cpp
 
 sed -e 's|.*add_cppgir().*||' -i cmake/external/glib/CMakeLists.txt
 
