@@ -67,7 +67,7 @@ def check_md5(path, old_cs):
     if new_cs != old_cs:
         cs_col = cl.col(new_cs, color='r')
 
-        raise ce.Error(f'got {cs_col} checksum')
+        raise ce.Error(f'got {cs_col} checksum, not {old_cs}')
 
 
 def cli_misc_cksum(ctx):

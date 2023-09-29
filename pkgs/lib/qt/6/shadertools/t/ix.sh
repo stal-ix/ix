@@ -1,8 +1,8 @@
 {% extends '//die/c/qt.sh' %}
 
 {% block fetch %}
-https://github.com/qt/qtshadertools/archive/refs/tags/v6.5.2.tar.gz
-sha:2b14cf982753f19cf48a4780bc7d96d8fc0ad3ed1049ae5d3292fc5fc1fd6aef
+https://github.com/qt/qtshadertools/archive/refs/tags/v6.5.3.tar.gz
+sha:e6c627763db8c60799218947443efb90fb3511342f2212f5e99cd98f6942ed08
 {% endblock %}
 
 {% block lib_deps %}
