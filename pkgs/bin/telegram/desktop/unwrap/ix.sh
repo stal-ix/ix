@@ -36,6 +36,7 @@ lib/mesa/egl/dl
 lib/qt/6/compat
 lib/qt/6/wayland
 lib/xiph/rnnoise
+lib/gi/repository
 lib/mesa/glesv2/dl
 lib/k/imageformats
 lib/qt/6/declarative
