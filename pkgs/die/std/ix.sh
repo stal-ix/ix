@@ -7,7 +7,9 @@
   {{super()}}
 {% endblock %}
 
-{% block step_install %}{{super()}}{% if linux and 'compress' in build_flags %}
+{% block step_install %}
+{{super()}}
+{% if linux and 'compress' in build_flags %}
 find ${out}/bin -type f -executable | while read l; do
     packexe ${l}
 done
