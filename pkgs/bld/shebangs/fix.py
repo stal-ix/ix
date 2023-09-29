@@ -20,6 +20,13 @@ def fix(data):
 
 def fix_p(p):
     with open(p, 'rb') as f:
+        sample = f.read(1)
+
+        if len(sample) > 0 and chr(sample[0]) != '#':
+            print(f'not a script - {p}')
+            return
+
+    with open(p, 'rb') as f:
         data = f.read()
 
     nd = fix(data)

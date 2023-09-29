@@ -13,20 +13,15 @@ lib/kernel
 {% block bld_tool %}
 bld/flex
 bld/bison
-bld/shebangs
 {% endblock %}
 
 {% block build_flags %}
 wrap_cc
+fix_shebangs
 {% endblock %}
 
 {% block make_flags %}
 CC=clang
 SBINDIR=${out}/bin
 ETCDIR=${out}/etc
-{% endblock %}
-
-{% block install %}
-{{super()}}
-fix_shebangs ${out}/bin/fancontrol ${out}/bin/pwmconfig
 {% endblock %}
