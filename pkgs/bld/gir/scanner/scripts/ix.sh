@@ -5,11 +5,7 @@ mkdir ${out}/bin
 
 cat << EOF > ${out}/bin/gircc
 #!/usr/bin/env sh
-if dynlink \${REALCC} -U__OPTIMIZE__ "\${@}"; then
-    exit 0
-fi
-
-exec \${REALCC} -U__OPTIMIZE__ "\${@}"
+(dynlink \${REALCC} -U__OPTIMIZE__ "\${@}" 2>/dev/null) || \${REALCC} -U__OPTIMIZE__ "\${@}"
 EOF
 
 cat << EOF > ${out}/bin/g-ir-scanner
