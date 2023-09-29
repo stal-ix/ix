@@ -1108,6 +1108,7 @@ https://mplayerhq.hu/MPlayer/releases/MPlayer-1.5.tar.xz
 https://mupdf.com/downloads/archive/mupdf-1.23.3-source.tar.gz
 https://nav.dl.sourceforge.net/project/sbcl/sbcl/2.2.1/sbcl-2.2.1-source.tar.bz2
 https://nav.dl.sourceforge.net/project/sbcl/sbcl/2.3.7/sbcl-2.3.7-source.tar.bz2
+https://nav.dl.sourceforge.net/project/sbcl/sbcl/2.3.9/sbcl-2.3.9-source.tar.bz2
 https://nmap.org/dist/nmap-7.93.tar.bz2
 https://nodejs.org/dist/v18.16.1/node-v18.16.1.tar.gz
 https://notroj.github.io/neon/neon-0.32.5.tar.gz
