@@ -16,7 +16,3 @@ lib/qt/6/base
 {% block bld_tool %}
 bld/wayland
 {% endblock %}
-
-{% block patch %}
->src/compositor/global/qwaylandquickextension.cpp
-{% endblock %}

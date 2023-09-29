@@ -19,11 +19,16 @@ gi_cross_use_prebuilt_gi=true
 
 {% block setup %}
 {{super()}}
-export OPTFLAGS="${OPTFLAGS} -O0"
+#export OPTFLAGS="${OPTFLAGS} -O0"
 export GI_SCANNER_DISABLE_CACHE=1
 {% endblock %}
 
 {% block postinstall %}
 rm -rf ${out}/include
 rm ${out}/bin/g-ir-scanner
+{% endblock %}
+
+{% block env %}
+{{super()}}
+export XDG_DATA_DIRS=${out}/share
 {% endblock %}

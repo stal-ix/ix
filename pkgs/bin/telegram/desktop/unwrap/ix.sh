@@ -17,6 +17,7 @@ lib/ffmpeg
 lib/gsl/ms
 lib/xxhash
 lib/openal
+lib/gi/cpp
 lib/tg/owt
 lib/tg/voip
 lib/openssl
@@ -74,16 +75,21 @@ TDESKTOP_LAUNCHER_BASENAME=telegram-desktop
 {% endblock %}
 
 {% block bld_tool %}
+bld/gir
 bld/qt/6
 bld/glib
 bld/python
 bin/protoc
+bin/cppgir
 bld/wayland
 bld/pkg/config
 bld/qt/6/tools
 bld/qt/6/wayland
 bld/qt/6/tools/qml
-bld/fake(tool_name=g-ir-scanner)
+{% endblock %}
+
+{% block setup %}
+export CXXFLAGS="-std=c++23 ${CXXFLAGS}"
 {% endblock %}
 
 {% block patch %}
@@ -105,21 +111,34 @@ cat << EOF >> Telegram/SourceFiles/stdafx.h
 #endif
 EOF
 
-sed -e 's|.*add_cppgir()||' \
-    -e 's|.*generate_cppgir.*||' \
-    -i cmake/external/glib/CMakeLists.txt
+base64 -d << EOF > cmake/external/glib/generate_cppgir.cmake
+{% include 'generate_cppgir.cmake/base64' %}
+EOF
 
-find . -name CMakeLists.txt | while read l; do
-    sed -e 's|.*generate_dbus.*||' -i ${l}
+find Telegram/lib_base/base/platform/linux -type f | while read l; do
+    sed -e 's|Fn(|std::function(|' -i ${l}
 done
 
-base64 -d << EOF > Telegram/lib_base/base/platform/linux/base_system_media_controls_linux.cpp
-{% include 'base_system_media_controls_linux.cpp/base64' %}
-EOF
+sed -e 's|ranges::contains(cap|Contains(cap|' \
+    -e 's|ranges::all_of(std::initializer_list|ranges::all_of(std::initializer_list<const char*>|' \
+    -e 's|ranges::contains(CurrentCapabilities|Contains(CurrentCapabilities|' \
+    -i Telegram/SourceFiles/platform/linux/notifications_manager_linux.cpp
 
-base64 -d << EOF > Telegram/SourceFiles/platform/linux/integration_linux.cpp
-{% include 'integration_linux.cpp/base64' %}
+cat - Telegram/SourceFiles/platform/linux/notifications_manager_linux.cpp << EOF > _
+template <class T, class R>
+inline bool Contains(const T& t, const R& r) {
+    for (const auto& x : t) {
+        if (x == r) {
+            return true;
+        }
+    }
+
+    return false;
+}
 EOF
+mv _ Telegram/SourceFiles/platform/linux/notifications_manager_linux.cpp
+
+sed -e 's|.*add_cppgir().*||' -i cmake/external/glib/CMakeLists.txt
 
 sed -e 's|DESKTOP_APP_DISABLE_WAYLAND_INTEGRATION|TRUE|' -i Telegram/lib_webview/CMakeLists.txt
 {% endblock %}

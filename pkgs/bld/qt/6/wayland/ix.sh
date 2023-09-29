@@ -17,3 +17,8 @@ rm -rf doc include plugins modules old
 {% block env %}
 export Qt6WaylandScannerTools_DIR=${out}/lib/cmake/Qt6WaylandScannerTools
 {% endblock %}
+
+{% block patch %}
+{{super()}}
+>src/compositor/global/qwaylandquickextension.cpp
+{% endblock %}

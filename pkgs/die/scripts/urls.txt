@@ -336,6 +336,7 @@ https://github.com/AbiWord/enchant/releases/download/v2.5.0/enchant-2.5.0.tar.gz
 https://github.com/AbiWord/enchant/releases/download/v2.6.1/enchant-2.6.1.tar.gz
 https://github.com/AcademySoftwareFoundation/Imath/archive/refs/tags/v3.1.9.tar.gz
 https://github.com/AcademySoftwareFoundation/openexr/archive/refs/tags/v3.2.0.tar.gz
+https://github.com/AcademySoftwareFoundation/openexr/archive/refs/tags/v3.2.1.tar.gz
 https://github.com/Alexays/Waybar/archive/refs/tags/0.9.22.tar.gz
 https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs10012/ghostscript-10.01.2.tar.gz
 https://github.com/ArtifexSoftware/jbig2dec/archive/refs/tags/0.19.tar.gz
@@ -800,6 +801,7 @@ https://github.com/open-source-parsers/jsoncpp/archive/refs/tags/1.9.5.tar.gz
 https://github.com/openSUSE/hwinfo/archive/refs/tags/23.2.tar.gz
 https://github.com/openSUSE/xinetd/archive/refs/tags/2.3.15.4.tar.gz
 https://github.com/opencv/opencv/archive/refs/tags/4.8.0.tar.gz
+https://github.com/opencv/opencv/archive/refs/tags/4.8.1.tar.gz
 https://github.com/openresty/luajit2/archive/refs/tags/v2.1-20230911.tar.gz
 https://github.com/openssh/openssh-portable/archive/refs/tags/V_9_4_P1.tar.gz
 https://github.com/opsengine/cpulimit/archive/refs/tags/v0.2.tar.gz
@@ -894,8 +896,16 @@ https://github.com/swaywm/swayidle/archive/refs/tags/1.8.0.tar.gz
 https://github.com/swaywm/swaylock/archive/refs/tags/v1.7.2.tar.gz
 https://github.com/swaywm/wlroots/archive/refs/tags/0.12.0.tar.gz
 https://github.com/syslog-ng/syslog-ng/releases/download/syslog-ng-4.3.1/syslog-ng-4.3.1.tar.gz
+https://github.com/syslog-ng/syslog-ng/releases/download/syslog-ng-4.4.0/syslog-ng-4.4.0.tar.gz
 https://github.com/tdlib/td/archive/refs/tags/v1.8.0.tar.gz
+https://github.com/telegramdesktop/tdesktop/releases/download/v4.10.1/tdesktop-4.10.1-full.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v4.8.10/tdesktop-4.8.10-full.tar.gz
+https://github.com/telegramdesktop/tdesktop/releases/download/v4.8.12/tdesktop-4.8.12-full.tar.gz
+https://github.com/telegramdesktop/tdesktop/releases/download/v4.9.0/tdesktop-4.9.0-full.tar.gz
+https://github.com/telegramdesktop/tdesktop/releases/download/v4.9.2/tdesktop-4.9.2-full.tar.gz
+https://github.com/telegramdesktop/tdesktop/releases/download/v4.9.4/tdesktop-4.9.4-full.tar.gz
+https://github.com/telegramdesktop/tdesktop/releases/download/v4.9.6/tdesktop-4.9.6-full.tar.gz
+https://github.com/telegramdesktop/tdesktop/releases/download/v4.9.8/tdesktop-4.9.8-full.tar.gz
 https://github.com/tesseract-ocr/tesseract/archive/refs/tags/5.2.0.tar.gz
 https://github.com/tetratelabs/wazero/archive/refs/tags/v1.5.0.tar.gz
 https://github.com/texstudio-org/texstudio/archive/refs/tags/4.4.1.tar.gz
@@ -1023,6 +1033,7 @@ https://gitlab.gnome.org/GNOME/gsettings-desktop-schemas/-/archive/44.0/gsetting
 https://gitlab.gnome.org/GNOME/gspell/-/archive/1.12.2/gspell-1.12.2.tar.bz2
 https://gitlab.gnome.org/GNOME/gtk/-/archive/4.12.1/gtk-4.12.1.tar.bz2
 https://gitlab.gnome.org/GNOME/gtk/-/archive/4.12.2/gtk-4.12.2.tar.bz2
+https://gitlab.gnome.org/GNOME/gtk/-/archive/4.12.3/gtk-4.12.3.tar.bz2
 https://gitlab.gnome.org/GNOME/gtksourceview/-/archive/5.10.0/gtksourceview-5.10.0.tar.bz2
 https://gitlab.gnome.org/GNOME/gtksourceview/-/archive/5.8.0/gtksourceview-5.8.0.tar.bz2
 https://gitlab.gnome.org/GNOME/json-glib/-/archive/1.6.6/json-glib-1.6.6.tar.bz2
@@ -1158,6 +1169,7 @@ https://waf.io/waf-2.0.26.tar.bz2
 https://waterlan.home.xs4all.nl/dos2unix/dos2unix-7.5.1.tar.gz
 https://webkitgtk.org/releases/webkitgtk-2.41.91.tar.xz
 https://webkitgtk.org/releases/webkitgtk-2.42.0.tar.xz
+https://webkitgtk.org/releases/webkitgtk-2.42.1.tar.xz
 https://wpewebkit.org/releases/wpewebkit-2.36.2.tar.xz
 https://wpitchoune.net/psensor/files/psensor-1.2.1.tar.gz
 https://www.agner.org/optimize/asmlib.zip
@@ -1205,6 +1217,7 @@ https://www.lua.org/ftp/lua-5.2.4.tar.gz
 https://www.lua.org/ftp/lua-5.4.6.tar.gz
 https://www.mpg123.org/download/mpg123-1.31.3.tar.bz2
 https://www.mpg123.org/download/mpg123-1.32.1.tar.bz2
+https://www.mpg123.org/download/mpg123-1.32.2.tar.bz2
 https://www.nano-editor.org/dist/v7/nano-7.2.tar.xz
 https://www.openldap.org/software/download/OpenLDAP/openldap-release/openldap-2.6.5.tgz
 https://www.openssl.org/source/old/1.1.1/openssl-1.1.1j.tar.gz
