@@ -852,6 +852,7 @@ https://github.com/qt/qtshadertools/archive/refs/tags/v6.5.3.tar.gz
 https://github.com/qt/qtsvg/archive/refs/tags/v6.5.2.tar.gz
 https://github.com/qt/qtsvg/archive/refs/tags/v6.5.3.tar.gz
 https://github.com/qt/qttools/archive/refs/tags/v6.5.2.tar.gz
+https://github.com/qt/qttools/archive/refs/tags/v6.5.3.tar.gz
 https://github.com/qt/qtwayland/archive/refs/tags/v6.5.2.tar.gz
 https://github.com/qt/qtwayland/archive/refs/tags/v6.5.3.tar.gz
 https://github.com/quictls/openssl/archive/refs/tags/openssl-3.1.2-quic1.tar.gz
