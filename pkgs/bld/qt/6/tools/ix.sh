@@ -1,8 +1,8 @@
 {% extends '//die/c/qt.sh' %}
 
 {% block fetch %}
-https://github.com/qt/qttools/archive/refs/tags/v6.5.2.tar.gz
-sha:962a343f090adcf73340f72cb81655b6243f7b4d91a980e0f538c2a111e1aa3a
+https://github.com/qt/qttools/archive/refs/tags/v6.5.3.tar.gz
+sha:e0f7407ef889688aaddaba3b6984da10e009189659d403e141e3b81580da2294
 {% endblock %}
 
 {% block bld_libs %}

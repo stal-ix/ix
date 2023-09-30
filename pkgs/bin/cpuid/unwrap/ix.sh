@@ -16,6 +16,10 @@ bld/perl
 bld/shebangs
 {% endblock %}
 
+{% block build_flags %}
+fix_shebangs
+{% endblock %}
+
 {% block make_flags %}
 DESTDIR=${out}
 arch={{target.arch}}
@@ -25,5 +29,4 @@ arch={{target.arch}}
 {{super()}}
 cd ${out}
 mv usr/* ./
-fix_shebangs bin/cpuinfo2cpuid
 {% endblock %}

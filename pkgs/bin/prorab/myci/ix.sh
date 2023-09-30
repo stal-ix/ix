@@ -6,7 +6,6 @@ sha:1ab8a33005130b84ca7b7f4a7faca7540cff2a02421e06631c1d3c8893fde334
 {% endblock %}
 
 {% block bld_tool %}
-bld/shebangs
 bin/prorab/base
 bin/prorab/extra
 {% endblock %}
@@ -16,8 +15,6 @@ bin/prorab/extra
 -I ${PRORAB_EXTRA_DIR}
 {% endblock %}
 
-{% block install %}
-{{super()}}
-cd ${out}/bin
-fix_shebangs *.sh
+{% block build_flags %}
+fix_shebangs
 {% endblock %}
