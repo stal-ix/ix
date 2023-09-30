@@ -8,6 +8,7 @@ lib/elfutils
 {% block bld_tool %}
 {{super()}}
 bld/librarian
+bld/wrapcc/ar
 {% endblock %}
 
 {% block c_rename_symbol %}
@@ -31,6 +32,15 @@ vkGetBufferDeviceAddress
 {{super()}}
 vulkan-drivers={{vulkan}}
 gallium-drivers={{','.join((opengl or '').split('|'))}}
+{% endblock %}
+
+{% block setup_tools %}
+cat << EOF > ${AR}
+#!/usr/bin/env sh
+exec wrapar "$(command -v ${AR})" "\${@}"
+EOF
+chmod +x ${AR}
+{{super()}}
 {% endblock %}
 
 {% block patch %}
@@ -77,9 +87,6 @@ llvm-objcopy \
 {% else %}
 mv libgallium.a libgldrivers.a
 {% endif %}
-
-# remove duplicate .o file
-llvm-ar d libgldrivers.a 'meson-generated_.._.._.._.._vulkan_util_vk_dispatch_table.c.o'
 
 # some sanity checks
 llvm-nm libgldrivers.a | grep ' T ' | sort | uniq -c | grep -v ' 1 ' | while read l; do
