@@ -1,6 +1,8 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
+bin/sway(mesa_driver=iris)
+bin/sway(mesa_driver=radeonsi)
 bin/unionfs/fuse
 bin/seer
 bin/dxsc
