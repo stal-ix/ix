@@ -920,6 +920,7 @@ https://github.com/syslog-ng/syslog-ng/releases/download/syslog-ng-4.4.0/syslog-
 https://github.com/tdlib/td/archive/refs/tags/v1.8.0.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v4.10.1/tdesktop-4.10.1-full.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v4.10.2/tdesktop-4.10.2-full.tar.gz
+https://github.com/telegramdesktop/tdesktop/releases/download/v4.10.3/tdesktop-4.10.3-full.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v4.8.10/tdesktop-4.8.10-full.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v4.8.12/tdesktop-4.8.12-full.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v4.9.0/tdesktop-4.9.0-full.tar.gz

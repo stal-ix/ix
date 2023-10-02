@@ -122,7 +122,6 @@ done
 
 sed -e 's|ranges::contains(cap|Contains(cap|' \
     -e 's|ranges::all_of(std::initializer_list|ranges::all_of(std::initializer_list<const char*>|' \
-    -e 's|ranges::contains(CurrentCapabilities|Contains(CurrentCapabilities|' \
     -i Telegram/SourceFiles/platform/linux/notifications_manager_linux.cpp
 
 cat - Telegram/SourceFiles/platform/linux/notifications_manager_linux.cpp << EOF > _
