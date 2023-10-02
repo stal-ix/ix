@@ -700,6 +700,7 @@ https://github.com/libmpack/libmpack/archive/refs/tags/1.0.5.tar.gz
 https://github.com/libproxy/libproxy/archive/refs/tags/0.5.3.tar.gz
 https://github.com/librsync/librsync/releases/download/v2.3.4/librsync-2.3.4.tar.gz
 https://github.com/libsdl-org/SDL/releases/download/release-2.28.3/SDL2-2.28.3.tar.gz
+https://github.com/libsdl-org/SDL/releases/download/release-2.28.4/SDL2-2.28.4.tar.gz
 https://github.com/libsdl-org/SDL_image/archive/refs/tags/release-2.6.2.tar.gz
 https://github.com/libsdl-org/SDL_mixer/archive/refs/tags/release-2.6.3.tar.gz
 https://github.com/libsdl-org/SDL_ttf/archive/refs/tags/release-2.20.2.tar.gz
