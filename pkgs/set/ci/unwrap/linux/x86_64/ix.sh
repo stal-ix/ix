@@ -1,6 +1,7 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
+bin/python/12
 bin/ryzen/adj
 bin/sway(mesa_driver=iris)
 bin/sway(mesa_driver=radeonsi)
