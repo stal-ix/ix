@@ -947,6 +947,7 @@ https://github.com/troglobit/sysklogd/archive/refs/tags/v2.5.1.tar.gz
 https://github.com/troglobit/sysklogd/archive/refs/tags/v2.5.2.tar.gz
 https://github.com/troydhanson/uthash/archive/refs/tags/v2.3.0.tar.gz
 https://github.com/tsl0922/ttyd/archive/refs/tags/1.7.3.tar.gz
+https://github.com/tsl0922/ttyd/archive/refs/tags/1.7.4.tar.gz
 https://github.com/tsujan/FeatherPad/archive/refs/tags/V1.3.4.tar.gz
 https://github.com/tvrzna/emptty/archive/refs/tags/v0.10.0.tar.gz
 https://github.com/uclouvain/openjpeg/archive/refs/tags/v2.5.0.tar.gz
