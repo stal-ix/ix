@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://github.com/vslavik/poedit/releases/download/v3.3.2-oss/poedit-3.3.2.tar.gz
-sha:e64139dd4beac1b8ea468d351b2b4bdae8ecbc6f4ca5d1ee1c73832036fff097
+https://github.com/vslavik/poedit/releases/download/v3.4-oss/poedit-3.4.tar.gz
+sha:b1eaf919a77057bf9d18c643efb64909fe6b32d49d189ecfa953165a3517398c
 {% endblock %}
 
 {% block bld_libs %}

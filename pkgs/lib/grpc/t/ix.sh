@@ -5,11 +5,11 @@ https://github.com/grpc/grpc
 {% endblock %}
 
 {% block git_branch %}
-v1.58.1
+v1.59.0
 {% endblock %}
 
 {% block git_sha %}
-33e042a0c6c3a1cc939c0f2b18c7fcfbfb650c16398d93ab9b852e0fc3ffef78
+f75f0121fdcd471fc88a4f9938f3470b2fe0d45830f7986c7f1ee34b02a80f08
 {% endblock %}
 
 {% block lib_deps %}
