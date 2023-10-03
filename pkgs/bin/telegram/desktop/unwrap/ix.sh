@@ -89,10 +89,6 @@ bld/qt/6/wayland
 bld/qt/6/tools/qml
 {% endblock %}
 
-{% block setup %}
-export CXXFLAGS="-std=c++23 ${CXXFLAGS}"
-{% endblock %}
-
 {% block patch %}
 find . -type f | while read l; do
     sed -e 's|third_party/libyuv/include/||' -i "${l}"
@@ -122,7 +118,6 @@ done
 
 sed -e 's|ranges::contains(cap|Contains(cap|' \
     -e 's|ranges::all_of(std::initializer_list|ranges::all_of(std::initializer_list<const char*>|' \
-    -e 's|ranges::contains(CurrentCapabilities|Contains(CurrentCapabilities|' \
     -i Telegram/SourceFiles/platform/linux/notifications_manager_linux.cpp
 
 cat - Telegram/SourceFiles/platform/linux/notifications_manager_linux.cpp << EOF > _
