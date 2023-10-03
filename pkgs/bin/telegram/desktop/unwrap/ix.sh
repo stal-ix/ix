@@ -89,10 +89,6 @@ bld/qt/6/wayland
 bld/qt/6/tools/qml
 {% endblock %}
 
-{% block setup %}
-export CXXFLAGS="-std=c++23 ${CXXFLAGS}"
-{% endblock %}
-
 {% block patch %}
 find . -type f | while read l; do
     sed -e 's|third_party/libyuv/include/||' -i "${l}"
