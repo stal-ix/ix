@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://github.com/openssh/openssh-portable/archive/refs/tags/V_9_4_P1.tar.gz
-sha:fbe648c3c43c768987520f7b92f1bada57878ebb4f9b5116c989de341686eaa2
+https://github.com/openssh/openssh-portable/archive/refs/tags/V_9_5_P1.tar.gz
+sha:41760d6bfea3e6e35c6acc40d24f14863cfdc92c6e56ae9401db9c658cbd93b5
 https://raw.githubusercontent.com/Homebrew/patches/1860b0a745f1fe726900974845d1b0dd3c3398d6/openssh/patch-sandbox-darwin.c-apple-sandbox-named-external.diff
 sha:d886b98f99fd27e3157b02b5b57f3fb49f43fd33806195970d4567f12be66e71
 https://raw.githubusercontent.com/Homebrew/patches/d8b2d8c2612fd251ac6de17bf0cc5174c3aab94c/openssh/patch-sshd.c-apple-sandbox-named-external.diff
