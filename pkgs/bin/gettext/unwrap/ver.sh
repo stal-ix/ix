@@ -1,2 +1,2 @@
-https://ftp.gnu.org/pub/gnu/gettext/gettext-0.22.2.tar.gz
-sha:a99662bafc1cc683ec7740844b465c7f30ccb044967f157f74697df9a9306b0e
+https://ftp.gnu.org/pub/gnu/gettext/gettext-0.22.3.tar.gz
+sha:839a260b2314ba66274dae7d245ec19fce190a3aa67869bf31354cb558df42c7
