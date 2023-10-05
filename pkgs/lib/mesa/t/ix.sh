@@ -82,7 +82,7 @@ cat << EOF >> src/util/disk_cache.h
 #pragma once
 
 static inline bool disk_cache_get_function_timestamp(void* ptr, uint32_t* timestamp) {
-    timestamp = 0;
+    *timestamp = 0;
     return true;
 }
 
