@@ -1,6 +1,7 @@
 import os
 import sys
 import shutil
+import random
 import hashlib
 
 import core.log as cl
@@ -51,12 +52,28 @@ def cli_misc_extract(ctx):
             csc.untar(a)
 
 
+def it_urls(sha, mirrors):
+    if sha.startswith('sha:') and len(sha) == 68:
+        for x in sorted(mirrors, key=lambda x: random.random()):
+            yield os.path.join(x, sha[4:])
+
+
 def cli_misc_fetch(ctx):
-    args = ctx['args']
-    url = args[0]
-    path = args[1]
-    md5 = args[2]
+    do_fetch(*ctx['args'])
+
+
+def do_fetch(url, path, md5, *mirrors):
     prepare_dir(os.path.dirname(path))
+
+    for u in it_urls(md5, mirrors):
+        try:
+            csc.fetch_url(u, path)
+            check_md5(path, md5)
+
+            return
+        except Exception as e:
+            print(f'while fetching {u}: {e}')
+
     csc.fetch_url(url, path)
     check_md5(path, md5)
 

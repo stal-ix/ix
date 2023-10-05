@@ -31,7 +31,9 @@ class Ops:
         return self.misc() + ['extract']
 
     def fetch(self, sb, url, path, md5):
-        return self.misc_cmd(sb, 'fetch', url, path, md5)
+        mirrors = list(sb.package.manager.env.source('//die/scripts/mirrors.txt')[0].strip().split())
+
+        return self.misc_cmd(sb, 'fetch', url, path, md5, *mirrors)
 
     def cksum(self, sb, fr, to, md5):
         return self.misc_cmd(sb, 'cksum', fr, to, md5)
