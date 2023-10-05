@@ -579,6 +579,7 @@ https://github.com/gokcehan/lf/archive/refs/tags/r31.tar.gz
 https://github.com/golang/go/archive/refs/tags/go1.19.10.tar.gz
 https://github.com/golang/go/archive/refs/tags/go1.20.7.tar.gz
 https://github.com/golang/go/archive/refs/tags/go1.21.1.tar.gz
+https://github.com/golang/go/archive/refs/tags/go1.21.2.tar.gz
 https://github.com/google/brotli/archive/refs/tags/v1.1.0.tar.gz
 https://github.com/google/crc32c/archive/refs/tags/1.1.2.tar.gz
 https://github.com/google/double-conversion/archive/refs/tags/v3.3.0.tar.gz
