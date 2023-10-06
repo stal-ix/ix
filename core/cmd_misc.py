@@ -7,6 +7,7 @@ import hashlib
 import core.log as cl
 import core.error as ce
 import core.shell_cmd as csc
+import core.http_fetch as chf
 
 
 def prepare_dir(d):
@@ -67,14 +68,14 @@ def do_fetch(url, path, md5, *mirrors):
 
     for u in it_urls(md5, mirrors):
         try:
-            csc.fetch_url(u, path)
+            chf.fetch_url(u, path)
             check_md5(path, md5)
 
             return
         except Exception as e:
             print(f'while fetching {u}: {e}')
 
-    csc.fetch_url(url, path)
+    chf.fetch_url(url, path)
     check_md5(path, md5)
 
 
