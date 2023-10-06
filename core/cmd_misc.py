@@ -53,30 +53,47 @@ def cli_misc_extract(ctx):
             csc.untar(a)
 
 
-def it_urls(sha, mirrors):
-    if sha.startswith('sha:') and len(sha) == 68:
-        for x in sorted(mirrors, key=lambda x: random.random()):
-            yield os.path.join(x, sha[4:])
-
-
 def cli_misc_fetch(ctx):
     do_fetch(*ctx['args'])
 
 
-def do_fetch(url, path, md5, *mirrors):
+def iter_cached(sha, mirrors):
+    for x in mirrors:
+        yield os.path.join(x, sha[4:])
+
+
+def iter_fetch(url, path, sha, mirrors):
+    if sha.startswith('sha:') and len(sha) == 68:
+        def it():
+            for u in iter_cached(sha, mirrors):
+                yield from chf.iter_fetch_url(u, path)
+
+        for f in list(sorted(list(it()), key=lambda x: random.random()))[:10]:
+            yield f, True
+
+    while True:
+        for f in chf.iter_fetch_url(url, path):
+            yield f, False
+
+
+def do_fetch(url, path, sha, *mirrors):
     prepare_dir(os.path.dirname(path))
 
-    for u in it_urls(md5, mirrors):
-        try:
-            chf.fetch_url(u, path)
-            check_md5(path, md5)
+    for f, best_effort in iter_fetch(url, path, sha, mirrors):
+        if best_effort:
+            try:
+                f()
+                return check_md5(path, sha)
+            except Exception as e:
+                print(f'while fetching cached {url}, with {sha} - {e}')
+        else:
+            try:
+                f()
+            except Exception as e:
+                if '404' in str(e):
+                    raise ce.Error(f'can not fetch {url}: {e}', exception=e)
 
-            return
-        except Exception as e:
-            print(f'while fetching {u}: {e}')
-
-    chf.fetch_url(url, path)
-    check_md5(path, md5)
+            return check_md5(path, sha)
 
 
 def check_md5(path, old_cs):

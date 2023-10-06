@@ -64,11 +64,6 @@ def iter_meth():
     yield fetch_url_impl
 
 
-def fetch_url(url, out):
-    print(f'fetch {url} into {out}', file=sys.stderr)
-
+def iter_fetch_url(url, out):
     for meth in iter_meth():
-        try:
-            return meth(url, out)
-        except Exception as e:
-            print(e)
+        yield functools.partial(meth, url, out)
