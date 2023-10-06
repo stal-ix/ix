@@ -2,6 +2,7 @@ import core.utils as cu
 
 import os
 import sys
+import random
 import profile
 import importlib
 import subprocess
@@ -81,7 +82,9 @@ def main_func(args, binary):
     run()
 
 
-def main(argv, ix):
+def main(argv, ix, seed):
+    random.seed(seed)
+
     try:
         main_func(argv[1:], ix)
     except subprocess.CalledProcessError as e:
