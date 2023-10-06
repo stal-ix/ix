@@ -1142,6 +1142,7 @@ https://lttng.org/files/urcu/userspace-rcu-0.14.0.tar.bz2
 https://luajit.org/download/LuaJIT-2.0.5.tar.gz
 https://memcached.org/files/memcached-1.6.21.tar.gz
 https://mesa.freedesktop.org/archive/mesa-23.1.9.tar.xz
+https://mesa.freedesktop.org/archive/mesa-23.2.1.tar.xz
 https://mirror.tochlab.net/pub/gnu/autoconf-archive/autoconf-archive-2023.02.20.tar.xz
 https://mirror.tochlab.net/pub/gnu/help2man/help2man-1.49.2.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/kernel/people/tytso/e2fsprogs/v1.46.6/e2fsprogs-1.46.6.tar.xz
