@@ -69,7 +69,7 @@ def iter_bin():
     yield 'curl', fetch_url_curl
 
 
-def iter_meth_1():
+def iter_meth():
     for p in ['/ix/realm/boot/bin', '/usr/bin']:
         for n, m in iter_bin():
             pp = os.path.join(p, n)
@@ -80,11 +80,6 @@ def iter_meth_1():
     yield fetch_url_impl
 
 
-def iter_meth():
-    while True:
-        yield from iter_meth_1()
-
-
 def fetch_url(url, out):
     print(f'fetch {url} into {out}', file=sys.stderr)
 
@@ -92,7 +87,4 @@ def fetch_url(url, out):
         try:
             return meth(url, out)
         except Exception as e:
-            if '404' in str(e):
-                raise ce.Error(f'can not fetch {url} into {out}', exception=e)
-
             print(e)
