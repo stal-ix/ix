@@ -334,6 +334,7 @@ https://git.sr.ht/~sircmpwn/wev/archive/1.0.0.tar.gz
 https://github.com/AOMediaCodec/libavif/archive/refs/tags/v1.0.1.tar.gz
 https://github.com/ARMmbed/mbedtls/archive/refs/tags/v2.28.2.tar.gz
 https://github.com/ARMmbed/mbedtls/archive/refs/tags/v3.4.1.tar.gz
+https://github.com/ARMmbed/mbedtls/archive/refs/tags/v3.5.0.tar.gz
 https://github.com/AbiWord/enchant/releases/download/v2.5.0/enchant-2.5.0.tar.gz
 https://github.com/AbiWord/enchant/releases/download/v2.6.1/enchant-2.6.1.tar.gz
 https://github.com/AcademySoftwareFoundation/Imath/archive/refs/tags/v3.1.9.tar.gz
