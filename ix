@@ -48,4 +48,5 @@ import core.main as cm
 
 
 if __name__ == '__main__':
-    sys.exit(cm.main(sys.argv, me, time.time()))
+    seed = os.environ.get('IX_SEED', str(time.time()))
+    sys.exit(cm.main(sys.argv, me, seed))

@@ -88,7 +88,7 @@ def do_fetch(url, path, sha, *mirrors):
             return check_md5(path, sha)
         except Exception as e:
             if best_effort:
-                print(f'while fetching cached {url}, with {sha} - {e}')
+                print(f'while fetching cached {url}, with {sha}: {e}')
             else:
                 if '404' in str(e):
                     raise ce.Error(f'can not fetch {url}: {e}', exception=e)

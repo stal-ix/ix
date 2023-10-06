@@ -230,6 +230,5 @@ def config_from(ctx):
     overlays = find_pkg_dirs(binary)
     root = os.environ.get('IX_ROOT', '/ix')
     verbose = os.environ.get('IX_VERBOSE', '')
-    seed = os.environ.get('IX_SEED', str(random.random()))
 
-    return Config(binary, overlays, root, verbose, seed)
+    return Config(binary, overlays, root, verbose, ctx['seed'])
