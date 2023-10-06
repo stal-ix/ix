@@ -58,7 +58,7 @@ def main_func(args, binary, seed):
 
     if not hndl:
         try:
-            return main_func(['tool'] + args, binary)
+            return main_func(['tool'] + args, binary, seed)
         except IndexError:
             pass
         except FileNotFoundError:
