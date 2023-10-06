@@ -17,10 +17,18 @@ mount -t sysfs sysfs /sys
 mount -t debugfs none /sys/kernel/debug
 mount -t proc proc /proc
 mount -t cgroup2 none /sys/fs/cgroup
+
+# mount dev
 mount -t tmpfs tmpfs /dev
 mkdir /dev/pts /dev/shm
 mount -t devpts devpts /dev/pts
 mount -t tmpfs shmfs /dev/shm
+
+# populate some nodes
+ln -s /proc/self/fd/0 /dev/stdin
+ln -s /proc/self/fd/1 /dev/stdout
+ln -s /proc/self/fd/2 /dev/stderr
+
 mdev -s
 EOF
 {% endblock %}

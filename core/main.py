@@ -2,6 +2,7 @@ import core.utils as cu
 
 import os
 import sys
+import random
 import profile
 import importlib
 import subprocess
@@ -49,7 +50,7 @@ def print_help():
             print('    ' + v.replace('_', ' '))
 
 
-def main_func(args, binary):
+def main_func(args, binary, seed):
     if args and '/' in args[0]:
         args = args[1:]
 
@@ -71,6 +72,7 @@ def main_func(args, binary):
     ctx = {
         'args': a,
         'binary': binary,
+        'seed': seed,
     }
 
     def run():
@@ -81,9 +83,11 @@ def main_func(args, binary):
     run()
 
 
-def main(argv, ix):
+def main(argv, ix, seed):
+    random.seed(seed)
+
     try:
-        main_func(argv[1:], ix)
+        main_func(argv[1:], ix, seed)
     except subprocess.CalledProcessError as e:
         return e.returncode
     except ce.Error as e:

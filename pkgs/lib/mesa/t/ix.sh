@@ -1,8 +1,8 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://gitlab.freedesktop.org/mesa/mesa/-/archive/mesa-23.1.8/mesa-mesa-23.1.8.tar.bz2
-sha:ceebfbf8023b679a327c3015b045a3462d42ab882f60dcb77be96f575916118b
+https://mesa.freedesktop.org/archive/mesa-23.1.9.tar.xz
+sha:295ba27c28146ed09214e8ce79afa1659edf9d142decc3c91f804552d64f7510
 {% endblock %}
 
 {% block lib_deps %}
@@ -82,7 +82,7 @@ cat << EOF >> src/util/disk_cache.h
 #pragma once
 
 static inline bool disk_cache_get_function_timestamp(void* ptr, uint32_t* timestamp) {
-    timestamp = 0;
+    *timestamp = 0;
     return true;
 }
 

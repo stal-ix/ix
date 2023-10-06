@@ -6,6 +6,8 @@ sys.dont_write_bytecode = True
 import traceback
 sys.excepthook = traceback.print_exception
 
+import time
+
 import os
 os.environ['SSL_CERT_FILE'] = 'nowhere'
 
@@ -46,4 +48,5 @@ import core.main as cm
 
 
 if __name__ == '__main__':
-    sys.exit(cm.main(sys.argv, me))
+    seed = os.environ.get('IX_SEED', str(time.time()))
+    sys.exit(cm.main(sys.argv, me, seed))

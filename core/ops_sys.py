@@ -90,7 +90,7 @@ def gen_fetch_curl(url, path, md5):
 def gen_mirrors(sb, url, md5):
     yield url
 
-    for x in sb.package.manager.env.source('//die/scripts/mirrors.txt')[0].strip().split():
+    for x in sb.package.manager.mirrors:
         yield os.path.join(x, md5)
 
 

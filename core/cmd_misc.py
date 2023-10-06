@@ -1,11 +1,14 @@
 import os
 import sys
+import time
 import shutil
+import random
 import hashlib
 
 import core.log as cl
 import core.error as ce
 import core.shell_cmd as csc
+import core.http_fetch as chf
 
 
 def prepare_dir(d):
@@ -52,13 +55,50 @@ def cli_misc_extract(ctx):
 
 
 def cli_misc_fetch(ctx):
-    args = ctx['args']
-    url = args[0]
-    path = args[1]
-    md5 = args[2]
+    do_fetch(*ctx['args'])
+
+
+def iter_cached(sha, mirrors):
+    for x in mirrors:
+        yield os.path.join(x, sha[4:])
+
+
+def iter_fetch(url, path, sha, mirrors):
+    if sha.startswith('sha:') and len(sha) == 68:
+        def it():
+            for u in iter_cached(sha, mirrors):
+                yield from chf.iter_fetch_url(u, path)
+
+        for f in list(sorted(list(it()), key=lambda x: random.random()))[:10]:
+            yield f, True
+
+    while True:
+        for f in chf.iter_fetch_url(url, path):
+            yield f, False
+
+
+def do_fetch(url, path, sha, *mirrors):
     prepare_dir(os.path.dirname(path))
-    csc.fetch_url(url, path)
-    check_md5(path, md5)
+
+    tout = 1.0
+
+    for f, best_effort in iter_fetch(url, path, sha, mirrors):
+        try:
+            f()
+            return check_md5(path, sha)
+        except Exception as e:
+            if best_effort:
+                print(f'while fetching cached {url}, with {sha}: {e}')
+            else:
+                if '404' in str(e):
+                    raise ce.Error(f'can not fetch {url}: {e}', exception=e)
+
+                if 'checksum' in str(e):
+                    raise e
+
+                print(f'while fetching {url}: {e}, will retry after {tout}')
+                time.sleep(tout)
+                tout = min(tout * 1.5, 60)
 
 
 def check_md5(path, old_cs):
