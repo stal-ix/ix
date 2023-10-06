@@ -1,5 +1,6 @@
 import os
 import sys
+import time
 import shutil
 import random
 import hashlib
@@ -79,21 +80,25 @@ def iter_fetch(url, path, sha, mirrors):
 def do_fetch(url, path, sha, *mirrors):
     prepare_dir(os.path.dirname(path))
 
+    tout = 1.0
+
     for f, best_effort in iter_fetch(url, path, sha, mirrors):
-        if best_effort:
-            try:
-                f()
-                return check_md5(path, sha)
-            except Exception as e:
+        try:
+            f()
+            return check_md5(path, sha)
+        except Exception as e:
+            if best_effort:
                 print(f'while fetching cached {url}, with {sha} - {e}')
-        else:
-            try:
-                f()
-            except Exception as e:
+            else:
                 if '404' in str(e):
                     raise ce.Error(f'can not fetch {url}: {e}', exception=e)
 
-            return check_md5(path, sha)
+                if 'checksum' in str(e):
+                    raise e
+
+                print(f'while fetching {url}: {e}, will retry after {tout}')
+                time.sleep(tout)
+                tout = min(tout * 1.5, 60)
 
 
 def check_md5(path, old_cs):
