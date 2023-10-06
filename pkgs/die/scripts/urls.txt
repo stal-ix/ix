@@ -898,6 +898,7 @@ https://github.com/sddm/sddm/archive/refs/tags/v0.20.0.tar.gz
 https://github.com/seccomp/libseccomp/archive/refs/tags/v2.5.4.tar.gz
 https://github.com/sekrit-twc/zimg/archive/refs/tags/release-3.0.4.tar.gz
 https://github.com/shadow-maint/shadow/archive/refs/tags/4.13.tar.gz
+https://github.com/shadow-maint/shadow/archive/refs/tags/4.14.1.tar.gz
 https://github.com/shadowsocks/go-shadowsocks2/archive/refs/tags/v0.1.5.tar.gz
 https://github.com/shadowsocks/shadowsocks-libev/releases/download/v3.3.5/shadowsocks-libev-3.3.5.tar.gz
 https://github.com/sharkdp/bat/archive/refs/tags/v0.18.3.tar.gz
