@@ -6,7 +6,7 @@ bin/groff
 {% endblock %}
 
 {% block use_data %}
-aux/ca-bundle
+aux/ca/bundle
 {% endblock %}
 
 {% block configure_flags %}
