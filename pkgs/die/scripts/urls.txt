@@ -443,6 +443,7 @@ https://github.com/USCiLab/cereal/archive/refs/tags/v1.3.2.tar.gz
 https://github.com/VirusTotal/yara/archive/refs/tags/v4.2.2.tar.gz
 https://github.com/WasmEdge/WasmEdge/archive/refs/tags/0.13.3.tar.gz
 https://github.com/WayfireWM/wayfire/releases/download/v0.7.5/wayfire-0.7.5.tar.xz
+https://github.com/WayfireWM/wayfire/releases/download/v0.8.0/wayfire-0.8.0.tar.xz
 https://github.com/WayfireWM/wf-config/archive/refs/tags/v0.7.1.tar.gz
 https://github.com/WebAssembly/binaryen/archive/refs/tags/version_114.tar.gz
 https://github.com/WebAssembly/binaryen/archive/refs/tags/version_115.tar.gz
