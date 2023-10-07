@@ -161,6 +161,7 @@ https://downloads.scummvm.org/frs/scummvm/2.7.1/scummvm-2.7.1.tar.xz
 https://downloads.sourceforge.net/gptfdisk/gptfdisk-1.0.9.tar.gz
 https://downloads.sourceforge.net/hdparm/hdparm-9.64.tar.gz
 https://downloads.sourceforge.net/libtirpc/libtirpc-1.3.3.tar.bz2
+https://downloads.sourceforge.net/libtirpc/libtirpc-1.3.4.tar.bz2
 https://downloads.sourceforge.net/modplug-xmms/libmodplug-0.8.9.0.tar.gz
 https://downloads.sourceforge.net/project/acpid2/acpid-2.0.34.tar.xz
 https://downloads.sourceforge.net/project/codeblocks/Sources/20.03/codeblocks-20.03.tar.xz
