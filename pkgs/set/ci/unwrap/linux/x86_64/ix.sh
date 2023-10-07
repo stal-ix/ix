@@ -1,6 +1,7 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
+bin/wmenu
 bin/ix/mirror
 bin/python/12
 bin/ryzen/adj

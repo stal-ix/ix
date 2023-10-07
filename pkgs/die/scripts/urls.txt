@@ -95,6 +95,7 @@ https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.5.2.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.5.3.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.5.4.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.5.5.tar.xz
+https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.5.6.tar.xz
 https://cmocka.org/files/1.1/cmocka-1.1.7.tar.xz
 https://codeberg.org/dnkl/fcft/archive/2.5.0.tar.gz
 https://codeberg.org/dnkl/fcft/archive/3.1.6.tar.gz
@@ -318,6 +319,7 @@ https://git.pwmt.org/pwmt/zathura-cb/-/archive/0.1.10/zathura-cb-0.1.10.tar.bz2
 https://git.pwmt.org/pwmt/zathura/-/archive/0.5.2/zathura-0.5.2.tar.bz2
 https://git.savannah.nongnu.org/cgit/acl.git/snapshot/acl-2.3.1.tar.gz
 https://git.savannah.nongnu.org/cgit/attr.git/snapshot/attr-2.5.1.tar.gz
+https://git.sr.ht/~adnano/wmenu/archive/0.1.4.tar.gz
 https://git.sr.ht/~brocellous/wlrctl/archive/v0.2.2.tar.gz
 https://git.sr.ht/~emersion/basu/archive/v0.2.1.tar.gz
 https://git.sr.ht/~emersion/grim/archive/v1.4.1.tar.gz
@@ -334,6 +336,7 @@ https://git.sr.ht/~sircmpwn/wev/archive/1.0.0.tar.gz
 https://github.com/AOMediaCodec/libavif/archive/refs/tags/v1.0.1.tar.gz
 https://github.com/ARMmbed/mbedtls/archive/refs/tags/v2.28.2.tar.gz
 https://github.com/ARMmbed/mbedtls/archive/refs/tags/v3.4.1.tar.gz
+https://github.com/ARMmbed/mbedtls/archive/refs/tags/v3.5.0.tar.gz
 https://github.com/AbiWord/enchant/releases/download/v2.5.0/enchant-2.5.0.tar.gz
 https://github.com/AbiWord/enchant/releases/download/v2.6.1/enchant-2.6.1.tar.gz
 https://github.com/AcademySoftwareFoundation/Imath/archive/refs/tags/v3.1.9.tar.gz
@@ -385,16 +388,24 @@ https://github.com/Juniper/libxo/archive/refs/tags/1.6.0.tar.gz
 https://github.com/KDE/kimageformats/archive/refs/tags/v5.98.0.tar.gz
 https://github.com/KhronosGroup/SPIRV-Cross/archive/refs/tags/sdk-1.3.261.1.tar.gz
 https://github.com/KhronosGroup/SPIRV-Headers/archive/refs/tags/sdk-1.3.250.0.tar.gz
+https://github.com/KhronosGroup/SPIRV-Headers/archive/refs/tags/sdk-1.3.261.1.tar.gz
+https://github.com/KhronosGroup/SPIRV-Tools/archive/refs/tags/sdk-1.3.261.1.zip
 https://github.com/KhronosGroup/SPIRV-Tools/archive/refs/tags/v2023.2.tar.gz
 https://github.com/KhronosGroup/Vulkan-Headers/archive/refs/tags/sdk-1.3.250.0.tar.gz
+https://github.com/KhronosGroup/Vulkan-Headers/archive/refs/tags/sdk-1.3.261.1.tar.gz
 https://github.com/KhronosGroup/Vulkan-Loader/archive/refs/tags/sdk-1.3.250.0.tar.gz
+https://github.com/KhronosGroup/Vulkan-Loader/archive/refs/tags/sdk-1.3.261.1.tar.gz
 https://github.com/KhronosGroup/Vulkan-Tools/archive/refs/tags/sdk-1.3.250.0.tar.gz
+https://github.com/KhronosGroup/Vulkan-Tools/archive/refs/tags/sdk-1.3.261.1.tar.gz
 https://github.com/KhronosGroup/Vulkan-ValidationLayers/archive/refs/tags/sdk-1.3.250.0.tar.gz
+https://github.com/KhronosGroup/Vulkan-ValidationLayers/archive/refs/tags/sdk-1.3.261.1.tar.gz
 https://github.com/KhronosGroup/glslang/archive/refs/tags/sdk-1.3.250.0.tar.gz
+https://github.com/KhronosGroup/glslang/archive/refs/tags/sdk-1.3.261.1.tar.gz
 https://github.com/Kitware/CMake/archive/refs/tags/v3.24.1.tar.gz
 https://github.com/Kitware/CMake/archive/refs/tags/v3.27.4.tar.gz
 https://github.com/Kitware/CMake/archive/refs/tags/v3.27.5.tar.gz
 https://github.com/Kitware/CMake/archive/refs/tags/v3.27.6.tar.gz
+https://github.com/Kitware/CMake/archive/refs/tags/v3.27.7.tar.gz
 https://github.com/LBCrion/sfwbar/archive/refs/tags/v1.0_beta13.tar.gz
 https://github.com/LBCrion/sfwbar/archive/refs/tags/v1.0_beta9.tar.gz
 https://github.com/LibRaw/LibRaw/archive/refs/tags/0.21.1.tar.gz
@@ -410,6 +421,7 @@ https://github.com/NLnetLabs/unbound/archive/refs/tags/release-1.18.0.tar.gz
 https://github.com/NagyD/SDLPoP/archive/refs/tags/v1.23.tar.gz
 https://github.com/Nefelim4ag/Ananicy/archive/refs/tags/2.2.1.tar.gz
 https://github.com/NetworkConfiguration/dhcpcd/archive/refs/tags/v10.0.2.tar.gz
+https://github.com/NetworkConfiguration/dhcpcd/archive/refs/tags/v10.0.3.tar.gz
 https://github.com/NetworkConfiguration/openresolv/archive/refs/tags/v3.13.2.tar.gz
 https://github.com/NixOS/nix/archive/refs/tags/2.17.0.tar.gz
 https://github.com/NixOS/nix/archive/refs/tags/2.18.0.tar.gz
@@ -464,6 +476,7 @@ https://github.com/apenwarr/redo/archive/refs/tags/redo-0.42d.tar.gz
 https://github.com/apernet/hysteria/archive/refs/tags/app/v2.0.0.tar.gz
 https://github.com/apernet/hysteria/archive/refs/tags/app/v2.0.1.tar.gz
 https://github.com/apernet/hysteria/archive/refs/tags/app/v2.0.2.tar.gz
+https://github.com/apernet/hysteria/archive/refs/tags/app/v2.0.4.tar.gz
 https://github.com/apple/swift-corelibs-libdispatch/archive/refs/tags/swift-5.8-RELEASE.tar.gz
 https://github.com/apple/swift-corelibs-libdispatch/archive/refs/tags/swift-5.9-RELEASE.tar.gz
 https://github.com/appneta/tcpreplay/releases/download/v4.4.4/tcpreplay-4.4.4.tar.xz
@@ -786,6 +799,7 @@ https://github.com/namhyung/uftrace/archive/refs/tags/v0.12.tar.gz
 https://github.com/nemtrif/utfcpp/archive/refs/tags/v3.2.4.tar.gz
 https://github.com/nemtrif/utfcpp/archive/refs/tags/v3.2.5.tar.gz
 https://github.com/neomutt/neomutt/archive/refs/tags/20220429.tar.gz
+https://github.com/neomutt/neomutt/archive/refs/tags/20231006.tar.gz
 https://github.com/neovim/libtermkey/archive/refs/tags/v0.20.tar.gz
 https://github.com/neovim/neovim/archive/refs/tags/v0.9.2.tar.gz
 https://github.com/netwide-assembler/nasm/archive/refs/tags/nasm-2.16.01.tar.gz
@@ -898,6 +912,7 @@ https://github.com/sddm/sddm/archive/refs/tags/v0.20.0.tar.gz
 https://github.com/seccomp/libseccomp/archive/refs/tags/v2.5.4.tar.gz
 https://github.com/sekrit-twc/zimg/archive/refs/tags/release-3.0.4.tar.gz
 https://github.com/shadow-maint/shadow/archive/refs/tags/4.13.tar.gz
+https://github.com/shadow-maint/shadow/archive/refs/tags/4.14.1.tar.gz
 https://github.com/shadowsocks/go-shadowsocks2/archive/refs/tags/v0.1.5.tar.gz
 https://github.com/shadowsocks/shadowsocks-libev/releases/download/v3.3.5/shadowsocks-libev-3.3.5.tar.gz
 https://github.com/sharkdp/bat/archive/refs/tags/v0.18.3.tar.gz
@@ -1048,6 +1063,7 @@ https://gitlab.freedesktop.org/wlroots/wlroots/-/archive/0.14.1/wlroots-0.14.1.t
 https://gitlab.freedesktop.org/wlroots/wlroots/-/archive/0.15.1/wlroots-0.15.1.tar.bz2
 https://gitlab.freedesktop.org/wlroots/wlroots/-/archive/0.16.2/wlroots-0.16.2.tar.bz2
 https://gitlab.freedesktop.org/xkeyboard-config/xkeyboard-config/-/archive/xkeyboard-config-2.39/xkeyboard-config-xkeyboard-config-2.39.tar.bz2
+https://gitlab.freedesktop.org/xkeyboard-config/xkeyboard-config/-/archive/xkeyboard-config-2.40/xkeyboard-config-xkeyboard-config-2.40.tar.bz2
 https://gitlab.gnome.org/GNOME/atk/-/archive/ATK_2_36_0/atk-ATK_2_36_0.tar.bz2
 https://gitlab.gnome.org/GNOME/console/-/archive/44.4/console-44.4.tar.bz2
 https://gitlab.gnome.org/GNOME/console/-/archive/45.0/console-45.0.tar.bz2
@@ -1129,6 +1145,7 @@ https://lttng.org/files/urcu/userspace-rcu-0.14.0.tar.bz2
 https://luajit.org/download/LuaJIT-2.0.5.tar.gz
 https://memcached.org/files/memcached-1.6.21.tar.gz
 https://mesa.freedesktop.org/archive/mesa-23.1.9.tar.xz
+https://mesa.freedesktop.org/archive/mesa-23.2.1.tar.xz
 https://mirror.tochlab.net/pub/gnu/autoconf-archive/autoconf-archive-2023.02.20.tar.xz
 https://mirror.tochlab.net/pub/gnu/help2man/help2man-1.49.2.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/kernel/people/tytso/e2fsprogs/v1.46.6/e2fsprogs-1.46.6.tar.xz
@@ -1266,6 +1283,7 @@ https://www.python.org/ftp/python/3.8.17/Python-3.8.17.tgz
 https://www.python.org/ftp/python/3.9.17/Python-3.9.17.tar.xz
 https://www.rarlab.com/rar/unrarsrc-6.2.10.tar.gz
 https://www.rarlab.com/rar/unrarsrc-6.2.11.tar.gz
+https://www.rarlab.com/rar/unrarsrc-6.2.12.tar.gz
 https://www.stunnel.org/downloads/stunnel-5.70.tar.gz
 https://www.stunnel.org/downloads/stunnel-5.71.tar.gz
 https://www.tcpdump.org/release/libpcap-1.10.4.tar.gz

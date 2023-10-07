@@ -13,7 +13,7 @@ bld/perl
 {% endblock %}
 
 {% block use_data %}
-aux/ca-bundle
+aux/ca/bundle
 {% endblock %}
 
 {% block setup %}

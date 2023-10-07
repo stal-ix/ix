@@ -1,8 +1,8 @@
 {% extends '//die/c/make.sh' %}
 
 {% block fetch %}
-https://github.com/neomutt/neomutt/archive/refs/tags/20220429.tar.gz
-sha:45496542897ba8de6bc7cce3f5951d9033ed1c49e5d6f1353adaeefe795d9043
+https://github.com/neomutt/neomutt/archive/refs/tags/20231006.tar.gz
+sha:94b9d5d8f927f8ceb4661549f5a490dc057af2e7f11de41e68dbc227dbf8a015
 {% endblock %}
 
 {% block bld_libs %}
@@ -27,7 +27,8 @@ sh ./configure \
     --disable-doc \
     --ssl \
     --pcre2 \
-    --disable-idn --idn2 \
+    --disable-idn \
+    --idn2 \
     --lmdb \
     --sqlite \
     --gnutls \
@@ -40,4 +41,5 @@ sh ./configure \
 bld/perl
 bld/python
 bld/gettext
+bld/pkg/config
 {% endblock %}

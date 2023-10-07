@@ -105,6 +105,12 @@ rm -r tmp
 {% block skip_auto_lib_env %}
 {% endblock %}
 
+{% block cpp_defines %}
+{{super()}}
+VK_COMPONENT_TYPE_MAX_ENUM_NV=VK_COMPONENT_TYPE_MAX_ENUM_KHR
+VK_SCOPE_MAX_ENUM_NV=VK_SCOPE_MAX_ENUM_KHR
+{% endblock %}
+
 {% block env %}
 export LDFLAGS="-L${out}/lib -Wl,--whole-archive -lgldrivers -Wl,--no-whole-archive \${LDFLAGS}"
 {% endblock %}

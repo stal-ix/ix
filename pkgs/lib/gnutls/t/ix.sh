@@ -30,7 +30,7 @@ lib/shim/gnu
 {% endblock %}
 
 {% block use_data %}
-aux/ca-bundle
+aux/ca/bundle
 {% endblock %}
 
 {% block bld_tool %}

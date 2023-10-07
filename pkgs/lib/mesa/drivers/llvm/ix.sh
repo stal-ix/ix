@@ -2,7 +2,7 @@
 
 {% block lib_deps %}
 {{super()}}
-lib/llvm/13
+lib/llvm/15
 {% endblock %}
 
 {% block meson_flags %}

@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://github.com/shadow-maint/shadow/archive/refs/tags/4.13.tar.gz
-sha:94ddb93553a63af080db5b9dfe88ee6122d5db8b5d70b09bb03ed50f39ba829d
+https://github.com/shadow-maint/shadow/archive/refs/tags/4.14.1.tar.gz
+sha:883a616991ebb850beca0a61e00721cc58b22f1597b3b97dd083d11701b814d3
 {% endblock %}
 
 {% block bld_libs %}
@@ -10,6 +10,7 @@ lib/c
 lib/acl
 lib/attr
 lib/kernel
+lib/bsd/overlay
 {% endblock %}
 
 {% block bld_tool %}

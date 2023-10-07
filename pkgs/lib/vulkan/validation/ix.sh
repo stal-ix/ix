@@ -1,9 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-#https://github.com/KhronosGroup/Vulkan-ValidationLayers/archive/refs/tags/sdk-1.3.236.0.tar.gz
-https://github.com/KhronosGroup/Vulkan-ValidationLayers/archive/refs/tags/sdk-1.3.250.0.tar.gz
-sha:68f2cf70b1960f85e931ef56935e6ceda1beeb214f8fa319e6b95128b02b485a
+https://github.com/KhronosGroup/Vulkan-ValidationLayers/archive/refs/tags/sdk-1.3.261.1.tar.gz
+sha:1372d522f297bb3fb386802b1aa4b7f885a9e1e969a6a3c6e9b29d381357f21d
 {% endblock %}
 
 {% block lib_deps %}
@@ -29,8 +28,11 @@ BUILD_WSI_XLIB_SUPPORT=OFF
 BUILD_WSI_WAYLAND_SUPPORT=ON
 {% endblock %}
 
-{% block patch %}
-find . | grep CMakeLists.txt | while read l; do
-    sed -e 's|SHARED|STATIC|' -i ${l}
-done
+{% block build_flags %}
+wrap_cc
+{% endblock %}
+
+{% block install %}
+{{super()}}
+cp ${out}/lib/lib* ${out}/lib/libVkLayer_khronos_validation.a
 {% endblock %}
