@@ -502,6 +502,7 @@ https://github.com/biojppm/rapidyaml/releases/download/v0.4.1/rapidyaml-0.4.1-sr
 https://github.com/bugaevc/wl-clipboard/archive/refs/tags/v2.2.0.tar.gz
 https://github.com/bytecodealliance/wasm-micro-runtime/archive/refs/tags/WAMR-1.2.3.tar.gz
 https://github.com/c-ares/c-ares/archive/refs/tags/cares-1_19_1.tar.gz
+https://github.com/c-ares/c-ares/archive/refs/tags/cares-1_20_0.tar.gz
 https://github.com/capstone-engine/capstone/archive/refs/tags/5.0-rc2.tar.gz
 https://github.com/catboost/catboost/archive/refs/tags/v1.0.6.tar.gz
 https://github.com/cboxdoerfer/fsearch/archive/refs/tags/0.2.3.tar.gz
