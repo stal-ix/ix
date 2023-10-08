@@ -472,6 +472,7 @@ https://github.com/alecthomas/chroma/archive/refs/tags/v2.9.1.tar.gz
 https://github.com/ammen99/wf-recorder/archive/refs/tags/v0.4.1.tar.gz
 https://github.com/anholt/libepoxy/archive/refs/tags/1.5.10.tar.gz
 https://github.com/anrieff/libcpuid/archive/refs/tags/v0.6.3.tar.gz
+https://github.com/anrieff/libcpuid/archive/refs/tags/v0.6.4.tar.gz
 https://github.com/antonmedv/llama/archive/refs/tags/v1.4.0.tar.gz
 https://github.com/antonmedv/walk/archive/refs/tags/v1.6.2.tar.gz
 https://github.com/apache/serf/archive/refs/tags/1.3.9.tar.gz
