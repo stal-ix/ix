@@ -33,3 +33,8 @@ window_protocol=wayland
 mkdir ${out}/bin
 {{super()}}
 {% endblock %}
+
+{% block cpp_defines %}
+XKB_KEY_dead_lowline=0
+XKB_KEY_dead_longsolidusoverlay=0
+{% endblock %}
