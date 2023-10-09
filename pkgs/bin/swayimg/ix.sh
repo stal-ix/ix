@@ -19,7 +19,7 @@ lib/cairo
 lib/giflib
 lib/wayland
 lib/openexr
-lib/xkbcommon
+lib/xkb/common
 {% endblock %}
 
 {% block bld_tool %}

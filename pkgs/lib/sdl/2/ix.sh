@@ -11,7 +11,7 @@ lib/decor
 lib/sndio
 lib/opengl
 lib/wayland
-lib/xkbcommon
+lib/xkb/common
 lib/vulkan/loader
 {% endblock %}
 

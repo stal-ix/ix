@@ -6,7 +6,7 @@ lib/rsync
 lib/opengl
 lib/wayland
 lib/glfw/deps
-lib/xkbcommon
+lib/xkb/common
 lib/fontconfig
 {{super()}}
 {% endblock %}

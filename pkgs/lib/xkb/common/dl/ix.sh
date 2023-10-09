@@ -1,7 +1,7 @@
 {% extends '//die/dl/lib.sh' %}
 
 {% block lib_deps %}
-lib/xkbcommon
+lib/xkb/common
 {% endblock %}
 
 {% block export_libs %}

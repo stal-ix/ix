@@ -9,7 +9,7 @@ sha:f30f42e05f11e5fc62483e513b0488d5bceeab7d9c5da0ffe2252ad81816c713
 lib/c
 lib/opengl
 lib/wayland
-lib/xkbcommon
+lib/xkb/common
 lib/vulkan/loader
 lib/vulkan/headers
 {% endblock %}

@@ -9,7 +9,7 @@ sha:b9868dc64ba0549c7034ba0828bd9973f21e542036d25a662de4dfbc26a6b867
 lib/c
 lib/basu
 lib/evdev
-lib/xkbcommon
+lib/xkb/common
 {% endblock %}
 
 {% block bld_libs %}

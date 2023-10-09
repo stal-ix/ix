@@ -11,7 +11,7 @@ lib/pango
 lib/cairo
 lib/kernel
 lib/wayland
-lib/xkbcommon
+lib/xkb/common
 {% endblock %}
 
 {% block bld_tool %}

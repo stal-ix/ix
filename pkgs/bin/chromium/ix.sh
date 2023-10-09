@@ -22,7 +22,7 @@ lib/cairo
 lib/opengl
 lib/wayland
 lib/pciutils
-lib/xkbcommon
+lib/xkb/common
 lib/shim/extra
 lib/shim/queue
 {% endblock %}

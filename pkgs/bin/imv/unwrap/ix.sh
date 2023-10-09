@@ -16,7 +16,7 @@ lib/pango
 lib/opengl
 lib/ns/gif
 lib/wayland
-lib/xkbcommon
+lib/xkb/common
 lib/freeimage
 lib/drivers/3d
 {% endblock %}

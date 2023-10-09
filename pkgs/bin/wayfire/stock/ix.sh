@@ -22,7 +22,7 @@ lib/opengl
 lib/wayland
 lib/freetype
 lib/execinfo
-lib/xkbcommon
+lib/xkb/common
 lib/drivers/3d
 lib/wlroots/16
 lib/json/nlohmann/11

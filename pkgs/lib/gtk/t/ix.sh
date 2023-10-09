@@ -9,7 +9,7 @@ lib/epoxy
 lib/wayland
 lib/graphene
 lib/freetype
-lib/xkbcommon
+lib/xkb/common
 lib/fontconfig
 lib/gdk/pixbuf
 {% endblock %}

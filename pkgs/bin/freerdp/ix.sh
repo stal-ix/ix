@@ -28,7 +28,7 @@ lib/ffmpeg
 lib/kernel
 lib/wayland
 lib/openssl
-lib/xkbcommon
+lib/xkb/common
 {% endblock %}
 
 {% block bld_tool %}

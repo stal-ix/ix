@@ -18,7 +18,7 @@ lib/lcms/2
 lib/pixman
 lib/opengl
 lib/wayland
-lib/xkbcommon
+lib/xkb/common
 {% endblock %}
 
 {% block bld_tool %}

@@ -1,1 +1,1 @@
-{% extends '//lib/xkbcommon/t/ix.sh' %}
+{% extends '//lib/xkb/common/t/ix.sh' %}

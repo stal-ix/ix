@@ -14,7 +14,7 @@ lib/cairo
 lib/input
 lib/wayland
 lib/shim/x11
-lib/xkbcommon
+lib/xkb/common
 lib/wlroots/16
 lib/drivers/3d
 {% endblock %}

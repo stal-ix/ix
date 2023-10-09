@@ -18,7 +18,7 @@ lib/opengl
 lib/wayland
 lib/freetype
 lib/utf8/proc
-lib/xkbcommon
+lib/xkb/common
 lib/fontconfig
 lib/drivers/3d
 lib/shim/fake(lib_name=GL)

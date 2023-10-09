@@ -14,7 +14,7 @@ lib/pixman
 lib/notify
 lib/wayland
 lib/freetype
-lib/xkbcommon
+lib/xkb/common
 lib/fontconfig
 lib/{{allocator}}/trim(delay=3,bytes=1000000)
 {% endblock %}

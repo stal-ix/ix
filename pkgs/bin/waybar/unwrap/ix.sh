@@ -22,7 +22,7 @@ lib/sigc++/2
 lib/gtk/3/mm
 lib/json/cpp
 lib/dbus/menu
-lib/xkbcommon
+lib/xkb/common
 lib/app/indicator
 lib/gtk/layer/shell
 {% endblock %}

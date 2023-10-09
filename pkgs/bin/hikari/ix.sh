@@ -12,7 +12,7 @@ lib/pango
 lib/cairo
 lib/input
 lib/wayland
-lib/xkbcommon
+lib/xkb/common
 lib/wlroots/15
 lib/ucl/parser
 lib/drivers/3d

@@ -14,7 +14,7 @@ lib/udis86
 lib/opengl
 lib/wayland
 lib/shim/x11
-lib/xkbcommon
+lib/xkb/common
 lib/drivers/3d
 lib/mesa/gl/dl
 lib/mesa/egl/dl
