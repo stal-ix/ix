@@ -41,7 +41,7 @@ def fetch_url_impl(url, out):
 
 
 def fetch_url_wget(wget, url, out):
-    return subprocess.check_call([wget, '--no-check-certificate', '-O', out, url], shell=False)
+    return subprocess.check_call([wget, '-t', '1', '--no-check-certificate', '-O', out, url], shell=False)
 
 
 def fetch_url_curl(curl, url, out):
