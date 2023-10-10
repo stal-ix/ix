@@ -45,7 +45,7 @@ def fetch_url_wget(wget, url, out):
 
 
 def fetch_url_curl(curl, url, out):
-    return subprocess.check_call([curl, '-k', '-L', '--output', out, url], shell=False)
+    return subprocess.check_call([curl, '--retry', '0', '-k', '-L', '--output', out, url], shell=False)
 
 
 def iter_bin():

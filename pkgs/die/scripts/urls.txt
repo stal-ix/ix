@@ -810,6 +810,7 @@ https://github.com/neomutt/neomutt/archive/refs/tags/20220429.tar.gz
 https://github.com/neomutt/neomutt/archive/refs/tags/20231006.tar.gz
 https://github.com/neovim/libtermkey/archive/refs/tags/v0.20.tar.gz
 https://github.com/neovim/neovim/archive/refs/tags/v0.9.2.tar.gz
+https://github.com/neovim/neovim/archive/refs/tags/v0.9.4.tar.gz
 https://github.com/netwide-assembler/nasm/archive/refs/tags/nasm-2.16.01.tar.gz
 https://github.com/nghttp2/nghttp2/archive/refs/tags/v1.56.0.tar.gz
 https://github.com/ngtcp2/nghttp3/archive/refs/tags/v0.15.0.tar.gz
