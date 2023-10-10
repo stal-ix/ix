@@ -5,7 +5,7 @@ base64 -d << EOF > src/api/wayfire/option-wrapper.hpp
 {% include 'opts.h/base64' %}
 EOF
 
-sed -e 's|plugin_name.at.*|true)|' -i src/output/plugin-loader.cpp
+sed -e 's|plugin_name.at.*|true)|' -i src/core/plugin-loader.cpp
 {% endblock %}
 
 {% block build %}
@@ -38,4 +38,5 @@ cc -o real_wayfire stub.c $(find ${tmp} -type f -name '*.o')
 {% block install %}
 {{super()}}
 cp ${tmp}/real_wayfire ${out}/bin/wayfire
+rm -rf ${out}/man
 {% endblock %}

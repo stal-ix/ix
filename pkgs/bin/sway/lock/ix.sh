@@ -10,7 +10,7 @@ lib/c
 lib/pam
 lib/cairo
 lib/wayland
-lib/xkbcommon
+lib/xkb/common
 lib/gdk/pixbuf
 {% endblock %}
 

@@ -14,7 +14,7 @@ lib/k/ecm
 lib/wayland
 lib/pam/unix
 lib/shim/x11
-lib/xkbcommon
+lib/xkb/common
 lib/qt/6/base
 lib/qt/6/deps
 lib/qt/6/declarative/deps

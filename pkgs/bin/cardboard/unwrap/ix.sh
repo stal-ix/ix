@@ -11,7 +11,7 @@ lib/c++
 lib/cereal
 lib/wayland
 lib/expected
-lib/xkbcommon
+lib/xkb/common
 lib/wlroots/12
 lib/drivers/3d
 {% endblock %}

@@ -13,7 +13,7 @@ lib/tllist
 lib/fcft/3
 lib/pixman
 lib/wayland
-lib/xkbcommon
+lib/xkb/common
 {% endblock %}
 
 {% block bld_tool %}

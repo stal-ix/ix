@@ -10,7 +10,7 @@ lib/c
 lib/cairo
 lib/pango
 lib/wayland
-lib/xkbcommon
+lib/xkb/common
 {% endblock %}
 
 {% block bld_tool %}

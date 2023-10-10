@@ -26,7 +26,7 @@ lib/wayland
 lib/shim/x11
 lib/canberra
 lib/graphene
-lib/xkbcommon
+lib/xkb/common
 lib/json/glib
 lib/drivers/3d
 lib/mesa/gl/dl

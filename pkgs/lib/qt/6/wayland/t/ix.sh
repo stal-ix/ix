@@ -9,7 +9,7 @@ sha:e9bdfb34f1df10c684d920a74a36583e81294448c051bd4da1e8e13100c978f6
 lib/c
 lib/c++
 lib/wayland
-lib/xkbcommon
+lib/xkb/common
 lib/qt/6/base
 {% endblock %}
 

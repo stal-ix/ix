@@ -16,7 +16,7 @@ lib/openssl
 lib/sqlite/3
 lib/freetype
 lib/harfbuzz
-lib/xkbcommon
+lib/xkb/common
 lib/fontconfig
 lib/vulkan/loader
 lib/vulkan/headers

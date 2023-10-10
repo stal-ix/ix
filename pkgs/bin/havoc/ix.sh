@@ -8,7 +8,7 @@ sha:3b0d37b13e3ca21f5e22f1e62a32fe736119cd5c601307c4000bed5fee179f77
 {% block bld_libs %}
 lib/c
 lib/wayland
-lib/xkbcommon
+lib/xkb/common
 {% endblock %}
 
 {% block bld_tool %}

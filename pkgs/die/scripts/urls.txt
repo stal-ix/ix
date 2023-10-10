@@ -161,6 +161,7 @@ https://downloads.scummvm.org/frs/scummvm/2.7.1/scummvm-2.7.1.tar.xz
 https://downloads.sourceforge.net/gptfdisk/gptfdisk-1.0.9.tar.gz
 https://downloads.sourceforge.net/hdparm/hdparm-9.64.tar.gz
 https://downloads.sourceforge.net/libtirpc/libtirpc-1.3.3.tar.bz2
+https://downloads.sourceforge.net/libtirpc/libtirpc-1.3.4.tar.bz2
 https://downloads.sourceforge.net/modplug-xmms/libmodplug-0.8.9.0.tar.gz
 https://downloads.sourceforge.net/project/acpid2/acpid-2.0.34.tar.xz
 https://downloads.sourceforge.net/project/codeblocks/Sources/20.03/codeblocks-20.03.tar.xz
@@ -375,6 +376,7 @@ https://github.com/GStreamer/orc/archive/refs/tags/0.4.34.tar.gz
 https://github.com/Genivia/ugrep/archive/refs/tags/v4.0.5.tar.gz
 https://github.com/Genivia/ugrep/archive/refs/tags/v4.1.0.tar.gz
 https://github.com/Genivia/ugrep/archive/refs/tags/v4.2.0.tar.gz
+https://github.com/Genivia/ugrep/archive/refs/tags/v4.3.0.tar.gz
 https://github.com/GrapheneOS/hardened_malloc/archive/refs/tags/11.tar.gz
 https://github.com/Hjdskes/cage/archive/refs/tags/v0.1.4.tar.gz
 https://github.com/HowardHinnant/date/archive/refs/tags/v3.0.1.tar.gz
@@ -443,6 +445,7 @@ https://github.com/USCiLab/cereal/archive/refs/tags/v1.3.2.tar.gz
 https://github.com/VirusTotal/yara/archive/refs/tags/v4.2.2.tar.gz
 https://github.com/WasmEdge/WasmEdge/archive/refs/tags/0.13.3.tar.gz
 https://github.com/WayfireWM/wayfire/releases/download/v0.7.5/wayfire-0.7.5.tar.xz
+https://github.com/WayfireWM/wayfire/releases/download/v0.8.0/wayfire-0.8.0.tar.xz
 https://github.com/WayfireWM/wf-config/archive/refs/tags/v0.7.1.tar.gz
 https://github.com/WebAssembly/binaryen/archive/refs/tags/version_114.tar.gz
 https://github.com/WebAssembly/binaryen/archive/refs/tags/version_115.tar.gz
@@ -469,6 +472,7 @@ https://github.com/alecthomas/chroma/archive/refs/tags/v2.9.1.tar.gz
 https://github.com/ammen99/wf-recorder/archive/refs/tags/v0.4.1.tar.gz
 https://github.com/anholt/libepoxy/archive/refs/tags/1.5.10.tar.gz
 https://github.com/anrieff/libcpuid/archive/refs/tags/v0.6.3.tar.gz
+https://github.com/anrieff/libcpuid/archive/refs/tags/v0.6.4.tar.gz
 https://github.com/antonmedv/llama/archive/refs/tags/v1.4.0.tar.gz
 https://github.com/antonmedv/walk/archive/refs/tags/v1.6.2.tar.gz
 https://github.com/apache/serf/archive/refs/tags/1.3.9.tar.gz
@@ -498,6 +502,8 @@ https://github.com/biojppm/rapidyaml/releases/download/v0.4.1/rapidyaml-0.4.1-sr
 https://github.com/bugaevc/wl-clipboard/archive/refs/tags/v2.2.0.tar.gz
 https://github.com/bytecodealliance/wasm-micro-runtime/archive/refs/tags/WAMR-1.2.3.tar.gz
 https://github.com/c-ares/c-ares/archive/refs/tags/cares-1_19_1.tar.gz
+https://github.com/c-ares/c-ares/archive/refs/tags/cares-1_20_0.tar.gz
+https://github.com/c-ares/c-ares/archive/refs/tags/cares-1_20_1.tar.gz
 https://github.com/capstone-engine/capstone/archive/refs/tags/5.0-rc2.tar.gz
 https://github.com/catboost/catboost/archive/refs/tags/v1.0.6.tar.gz
 https://github.com/cboxdoerfer/fsearch/archive/refs/tags/0.2.3.tar.gz
@@ -860,6 +866,7 @@ https://github.com/python/cpython/archive/refs/tags/v3.11.5.tar.gz
 https://github.com/python/cpython/archive/refs/tags/v3.12.0.tar.gz
 https://github.com/qbittorrent/qBittorrent/archive/refs/tags/release-4.5.4.tar.gz
 https://github.com/qpdf/qpdf/archive/refs/tags/v11.6.1.tar.gz
+https://github.com/qpdf/qpdf/archive/refs/tags/v11.6.2.tar.gz
 https://github.com/qt/qt5compat/archive/refs/tags/v6.5.2.tar.gz
 https://github.com/qt/qt5compat/archive/refs/tags/v6.5.3.tar.gz
 https://github.com/qt/qtbase/archive/refs/tags/v6.5.2.tar.gz
@@ -885,6 +892,7 @@ https://github.com/redis/hiredis/archive/refs/tags/v1.2.0.tar.gz
 https://github.com/redis/redis/archive/refs/tags/7.2.0.tar.gz
 https://github.com/relan/exfat/releases/download/v1.4.0/exfat-utils-1.4.0.tar.gz
 https://github.com/rfc1036/whois/archive/refs/tags/v5.5.18.tar.gz
+https://github.com/rfc1036/whois/archive/refs/tags/v5.5.19.tar.gz
 https://github.com/rfjakob/earlyoom/archive/refs/tags/v1.7.tar.gz
 https://github.com/rgburke/grv/archive/refs/tags/v0.3.2.tar.gz
 https://github.com/rhash/RHash/archive/refs/tags/v1.4.4.tar.gz
@@ -1016,6 +1024,7 @@ https://github.com/ximion/appstream/archive/refs/tags/v0.16.3.tar.gz
 https://github.com/xiph/flac/archive/refs/tags/1.4.3.tar.gz
 https://github.com/xiph/opus/archive/refs/tags/v1.4.tar.gz
 https://github.com/xkbcommon/libxkbcommon/archive/refs/tags/xkbcommon-1.5.0.tar.gz
+https://github.com/xkbcommon/libxkbcommon/archive/refs/tags/xkbcommon-1.6.0.tar.gz
 https://github.com/xxxserxxx/gotop/archive/refs/tags/v4.2.0.tar.gz
 https://github.com/xyproto/gendesk/archive/refs/tags/1.0.9.tar.gz
 https://github.com/yaml/libyaml/archive/refs/tags/0.2.5.tar.gz
@@ -1122,6 +1131,7 @@ https://icon-theme.freedesktop.org/releases/hicolor-icon-theme-0.17.tar.xz
 https://imagemagick.org/archive/releases/ImageMagick-7.1.1-15.tar.xz
 https://imagemagick.org/archive/releases/ImageMagick-7.1.1-16.tar.xz
 https://imagemagick.org/archive/releases/ImageMagick-7.1.1-17.tar.xz
+https://imagemagick.org/archive/releases/ImageMagick-7.1.1-20.tar.xz
 https://invisible-mirror.net/archives/byacc/byacc-20211224.tgz
 https://invisible-mirror.net/archives/byacc/byacc-20230521.tgz
 https://invisible-mirror.net/archives/mawk/mawk-1.3.4-20200120.tgz

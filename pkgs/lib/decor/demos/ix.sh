@@ -3,7 +3,7 @@
 {% block bld_libs %}
 {{super()}}
 lib/opengl
-lib/xkbcommon
+lib/xkb/common
 lib/drivers/3d
 {% endblock %}
 

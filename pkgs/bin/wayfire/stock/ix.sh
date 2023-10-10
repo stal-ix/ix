@@ -1,8 +1,8 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://github.com/WayfireWM/wayfire/releases/download/v0.7.5/wayfire-0.7.5.tar.xz
-sha:f2e3184e72fe7999488fbba10bd38c29350b447489f02961aab5fa8438698b5c
+https://github.com/WayfireWM/wayfire/releases/download/v0.8.0/wayfire-0.8.0.tar.xz
+sha:6e6af885c08822e3a0b1fd748e1ee75e29bc000e376f6613b26c564f8cbc2baf
 {% endblock %}
 
 {% block bld_libs %}
@@ -22,10 +22,10 @@ lib/opengl
 lib/wayland
 lib/freetype
 lib/execinfo
-lib/xkbcommon
-lib/wf/config
+lib/xkb/common
 lib/drivers/3d
 lib/wlroots/16
+lib/json/nlohmann/11
 {% endblock %}
 
 {% block bld_tool %}

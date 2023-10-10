@@ -18,7 +18,7 @@ lib/glib
 lib/cairo
 lib/pango
 lib/wayland
-lib/xkbcommon
+lib/xkb/common
 lib/gdk/pixbuf
 {% endblock %}
 
