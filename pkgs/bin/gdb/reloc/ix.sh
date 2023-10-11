@@ -6,18 +6,18 @@ aux/terminfo
 {% endblock %}
 
 {% block bld_tool %}
-bin/python/11
+bld/python/12
 {{super()}}
 {% endblock %}
 
 {% block bld_libs %}
-lib/python/3/cross
+lib/python/3/12
 {{super()}}
 {% endblock %}
 
 {% block configure_flags %}
 {{super()}}
---with-python=$(which python3)
+--with-python=${NATIVE_PYTHON}
 {% endblock %}
 
 {% block install %}

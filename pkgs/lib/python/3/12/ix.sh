@@ -1,20 +1,24 @@
-{% extends '//lib/python/3/11/ix.sh' %}
+{% extends 't/ix.sh' %}
 
-{% block fetch %}
-https://github.com/python/cpython/archive/refs/tags/v3.12.0.tar.gz
-sha:ddfaf383c97f393a7768943630ea01e6c3cfb9af4fbc02655a37a2f3680013d6
-{% endblock %}
-
-{% block conf_ver %}
-2/71
-{% endblock %}
-
-{% block cpp_includes %}
+{% block bld_tool %}
+bld/python/12
 {{super()}}
-${PWD}/Modules/_hacl/include
 {% endblock %}
 
-{% block build_flags %}
+{% block configure_flags %}
+--disable-ipv6
+--with-build-python=${NATIVE_PYTHON}
 {{super()}}
-wrap_cc
+{% endblock %}
+
+{% block configure %}
+export READELF=llvm-readelf
+export ac_cv_file__dev_ptmx=yes
+export ac_cv_file__dev_ptc=no
+{{super()}}
+{% endblock %}
+
+{% block install %}
+{{super()}}
+cp Modules/_hacl/libH*.a ${out}/lib/
 {% endblock %}
