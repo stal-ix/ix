@@ -138,7 +138,7 @@ class Executor:
         except Exception:
             shutil.rmtree(d)
 
-        os.makedirs(d)
+        os.makedirs(d, exist_ok=True)
 
     def execute_node(self, n):
         for o in iter_out(n):
