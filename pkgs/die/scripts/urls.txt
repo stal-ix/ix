@@ -484,6 +484,7 @@ https://github.com/apernet/hysteria/archive/refs/tags/app/v2.0.0.tar.gz
 https://github.com/apernet/hysteria/archive/refs/tags/app/v2.0.1.tar.gz
 https://github.com/apernet/hysteria/archive/refs/tags/app/v2.0.2.tar.gz
 https://github.com/apernet/hysteria/archive/refs/tags/app/v2.0.4.tar.gz
+https://github.com/apernet/hysteria/archive/refs/tags/app/v2.1.0.tar.gz
 https://github.com/apple/swift-corelibs-libdispatch/archive/refs/tags/swift-5.8-RELEASE.tar.gz
 https://github.com/apple/swift-corelibs-libdispatch/archive/refs/tags/swift-5.9-RELEASE.tar.gz
 https://github.com/appneta/tcpreplay/releases/download/v4.4.4/tcpreplay-4.4.4.tar.xz
