@@ -96,11 +96,14 @@ https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.5.3.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.5.4.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.5.5.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.5.6.tar.xz
+https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.5.7.tar.xz
 https://cmocka.org/files/1.1/cmocka-1.1.7.tar.xz
 https://codeberg.org/dnkl/fcft/archive/2.5.0.tar.gz
 https://codeberg.org/dnkl/fcft/archive/3.1.6.tar.gz
 https://codeberg.org/dnkl/fnott/archive/1.4.1.tar.gz
 https://codeberg.org/dnkl/foot/archive/1.15.3.tar.gz
+https://codeberg.org/dnkl/foot/archive/1.16.0.tar.gz
+https://codeberg.org/dnkl/foot/archive/1.16.1.tar.gz
 https://codeberg.org/dnkl/fuzzel/archive/1.9.2.tar.gz
 https://codeberg.org/dnkl/tllist/archive/1.1.0.tar.gz
 https://codeberg.org/dnkl/yambar/archive/1.10.0.tar.gz
@@ -138,6 +141,7 @@ https://download.gnome.org/sources/glibmm/2.77/glibmm-2.77.0.tar.xz
 https://download.gnome.org/sources/gtk+/3.24/gtk%2B-3.24.37.tar.xz
 https://download.gnome.org/sources/gtkmm/3.24/gtkmm-3.24.8.tar.xz
 https://download.gnome.org/sources/libnotify/0.8/libnotify-0.8.2.tar.xz
+https://download.gnome.org/sources/libnotify/0.8/libnotify-0.8.3.tar.xz
 https://download.gnome.org/sources/librsvg/2.40/librsvg-2.40.21.tar.xz
 https://download.gnome.org/sources/libsigc++/2.10/libsigc%2B%2B-2.10.7.tar.xz
 https://download.gnome.org/sources/libsigc++/3.4/libsigc%2B%2B-3.4.0.tar.xz
@@ -481,6 +485,7 @@ https://github.com/apernet/hysteria/archive/refs/tags/app/v2.0.0.tar.gz
 https://github.com/apernet/hysteria/archive/refs/tags/app/v2.0.1.tar.gz
 https://github.com/apernet/hysteria/archive/refs/tags/app/v2.0.2.tar.gz
 https://github.com/apernet/hysteria/archive/refs/tags/app/v2.0.4.tar.gz
+https://github.com/apernet/hysteria/archive/refs/tags/app/v2.1.0.tar.gz
 https://github.com/apple/swift-corelibs-libdispatch/archive/refs/tags/swift-5.8-RELEASE.tar.gz
 https://github.com/apple/swift-corelibs-libdispatch/archive/refs/tags/swift-5.9-RELEASE.tar.gz
 https://github.com/appneta/tcpreplay/releases/download/v4.4.4/tcpreplay-4.4.4.tar.xz
@@ -529,6 +534,7 @@ https://github.com/cppfw/utki/archive/refs/tags/1.1.187.tar.gz
 https://github.com/curl/curl/archive/refs/tags/curl-7_80_0.tar.gz
 https://github.com/curl/curl/archive/refs/tags/curl-8_2_1.tar.gz
 https://github.com/curl/curl/archive/refs/tags/curl-8_3_0.tar.gz
+https://github.com/curl/curl/archive/refs/tags/curl-8_4_0.tar.gz
 https://github.com/darkhz/bluetuith/archive/refs/tags/v0.1.7.tar.gz
 https://github.com/darktable-org/darktable/releases/download/release-4.0.0/darktable-4.0.0.tar.xz
 https://github.com/dboyan/wayland-tracer/archive/refs/tags/0.1.0.tar.gz
@@ -599,6 +605,7 @@ https://github.com/golang/go/archive/refs/tags/go1.19.10.tar.gz
 https://github.com/golang/go/archive/refs/tags/go1.20.7.tar.gz
 https://github.com/golang/go/archive/refs/tags/go1.21.1.tar.gz
 https://github.com/golang/go/archive/refs/tags/go1.21.2.tar.gz
+https://github.com/golang/go/archive/refs/tags/go1.21.3.tar.gz
 https://github.com/google/brotli/archive/refs/tags/v1.1.0.tar.gz
 https://github.com/google/crc32c/archive/refs/tags/1.1.2.tar.gz
 https://github.com/google/double-conversion/archive/refs/tags/v3.3.0.tar.gz
@@ -632,6 +639,7 @@ https://github.com/hluk/CopyQ/archive/refs/tags/v7.0.0.tar.gz
 https://github.com/hpjansson/chafa/archive/refs/tags/1.12.4.tar.gz
 https://github.com/htop-dev/htop/archive/refs/tags/3.2.2.tar.gz
 https://github.com/hughsie/libgusb/archive/refs/tags/0.4.6.tar.gz
+https://github.com/hughsie/libgusb/archive/refs/tags/0.4.7.tar.gz
 https://github.com/hughsie/libxmlb/archive/refs/tags/0.3.14.tar.gz
 https://github.com/hunspell/hunspell/archive/refs/tags/v1.7.1.tar.gz
 https://github.com/hyperrealm/libconfig/archive/refs/tags/v1.7.3.tar.gz
@@ -642,6 +650,7 @@ https://github.com/hyprwm/hyprpicker/archive/refs/tags/v0.1.0.tar.gz
 https://github.com/ib/xarchiver/archive/refs/tags/0.5.4.20.tar.gz
 https://github.com/ihhub/fheroes2/archive/refs/tags/1.0.7.tar.gz
 https://github.com/ihhub/fheroes2/archive/refs/tags/1.0.8.tar.gz
+https://github.com/ihhub/fheroes2/archive/refs/tags/1.0.9.tar.gz
 https://github.com/ii8/havoc/archive/refs/tags/0.5.0.tar.gz
 https://github.com/illiliti/libudev-zero/archive/refs/tags/1.0.2.tar.gz
 https://github.com/imneme/pcg-cpp/archive/refs/tags/v0.98.1.tar.gz
@@ -673,6 +682,7 @@ https://github.com/jjsullivan5196/wvkbd/archive/refs/tags/v0.12.tar.gz
 https://github.com/jjsullivan5196/wvkbd/archive/refs/tags/v0.14.1.tar.gz
 https://github.com/jjsullivan5196/wvkbd/archive/refs/tags/v0.14.tar.gz
 https://github.com/johnsonjh/OpenVi/archive/refs/tags/7.4.23.tar.gz
+https://github.com/johnsonjh/OpenVi/archive/refs/tags/7.4.24.tar.gz
 https://github.com/jonas/tig/archive/refs/tags/tig-2.5.8.tar.gz
 https://github.com/josuttis/jthread/archive/0fa8d394254886c555d6faccd0a3de819b7d47f8.tar.gz
 https://github.com/jovanlanik/gtklock/archive/refs/tags/v2.0.1.tar.gz
@@ -712,6 +722,7 @@ https://github.com/libexpat/libexpat/archive/refs/tags/R_2_5_0.tar.gz
 https://github.com/libffi/libffi/archive/refs/tags/v3.4.4.tar.gz
 https://github.com/libfuse/libfuse/archive/refs/tags/fuse-2.9.9.tar.gz
 https://github.com/libfuse/libfuse/archive/refs/tags/fuse-3.16.1.tar.gz
+https://github.com/libfuse/libfuse/archive/refs/tags/fuse-3.16.2.tar.gz
 https://github.com/libgd/libgd/archive/refs/tags/gd-2.3.3.tar.gz
 https://github.com/libgit2/libgit2/archive/refs/tags/v1.0.1.tar.gz
 https://github.com/libgit2/libgit2/archive/refs/tags/v1.7.0.tar.gz
@@ -786,6 +797,7 @@ https://github.com/microsoft/GSL/archive/refs/tags/v4.0.0.tar.gz
 https://github.com/microsoft/mimalloc/archive/refs/tags/v1.7.6.tar.gz
 https://github.com/microsoft/mimalloc/archive/refs/tags/v2.1.2.tar.gz
 https://github.com/microsoft/msquic/archive/refs/tags/v2.2.2.tar.gz
+https://github.com/microsoft/msquic/archive/refs/tags/v2.2.3.tar.gz
 https://github.com/microsoft/snmalloc/archive/refs/tags/0.6.0.tar.gz
 https://github.com/microsoft/vcpkg-tool/archive/refs/tags/2022-11-10.tar.gz
 https://github.com/miniupnp/miniupnp/archive/refs/tags/miniupnpd_2_3_3.tar.gz
@@ -808,8 +820,10 @@ https://github.com/neomutt/neomutt/archive/refs/tags/20220429.tar.gz
 https://github.com/neomutt/neomutt/archive/refs/tags/20231006.tar.gz
 https://github.com/neovim/libtermkey/archive/refs/tags/v0.20.tar.gz
 https://github.com/neovim/neovim/archive/refs/tags/v0.9.2.tar.gz
+https://github.com/neovim/neovim/archive/refs/tags/v0.9.4.tar.gz
 https://github.com/netwide-assembler/nasm/archive/refs/tags/nasm-2.16.01.tar.gz
 https://github.com/nghttp2/nghttp2/archive/refs/tags/v1.56.0.tar.gz
+https://github.com/nghttp2/nghttp2/archive/refs/tags/v1.57.0.tar.gz
 https://github.com/ngtcp2/nghttp3/archive/refs/tags/v0.15.0.tar.gz
 https://github.com/ngtcp2/ngtcp2/archive/refs/tags/v0.19.0.tar.gz
 https://github.com/nhorman/rng-tools/archive/refs/tags/v6.15.tar.gz
@@ -869,24 +883,34 @@ https://github.com/qpdf/qpdf/archive/refs/tags/v11.6.1.tar.gz
 https://github.com/qpdf/qpdf/archive/refs/tags/v11.6.2.tar.gz
 https://github.com/qt/qt5compat/archive/refs/tags/v6.5.2.tar.gz
 https://github.com/qt/qt5compat/archive/refs/tags/v6.5.3.tar.gz
+https://github.com/qt/qt5compat/archive/refs/tags/v6.6.0.tar.gz
 https://github.com/qt/qtbase/archive/refs/tags/v6.5.2.tar.gz
 https://github.com/qt/qtbase/archive/refs/tags/v6.5.3.tar.gz
+https://github.com/qt/qtbase/archive/refs/tags/v6.6.0.tar.gz
 https://github.com/qt/qtcharts/archive/refs/tags/v6.5.2.tar.gz
 https://github.com/qt/qtcharts/archive/refs/tags/v6.5.3.tar.gz
+https://github.com/qt/qtcharts/archive/refs/tags/v6.6.0.tar.gz
 https://github.com/qt/qtdeclarative/archive/refs/tags/v6.5.2.tar.gz
 https://github.com/qt/qtdeclarative/archive/refs/tags/v6.5.3.tar.gz
+https://github.com/qt/qtdeclarative/archive/refs/tags/v6.6.0.tar.gz
 https://github.com/qt/qtimageformats/archive/refs/tags/v6.5.2.tar.gz
 https://github.com/qt/qtimageformats/archive/refs/tags/v6.5.3.tar.gz
+https://github.com/qt/qtimageformats/archive/refs/tags/v6.6.0.tar.gz
 https://github.com/qt/qtmultimedia/archive/refs/tags/v6.5.2.tar.gz
 https://github.com/qt/qtmultimedia/archive/refs/tags/v6.5.3.tar.gz
+https://github.com/qt/qtmultimedia/archive/refs/tags/v6.6.0.tar.gz
 https://github.com/qt/qtshadertools/archive/refs/tags/v6.5.2.tar.gz
 https://github.com/qt/qtshadertools/archive/refs/tags/v6.5.3.tar.gz
+https://github.com/qt/qtshadertools/archive/refs/tags/v6.6.0.tar.gz
 https://github.com/qt/qtsvg/archive/refs/tags/v6.5.2.tar.gz
 https://github.com/qt/qtsvg/archive/refs/tags/v6.5.3.tar.gz
+https://github.com/qt/qtsvg/archive/refs/tags/v6.6.0.tar.gz
 https://github.com/qt/qttools/archive/refs/tags/v6.5.2.tar.gz
 https://github.com/qt/qttools/archive/refs/tags/v6.5.3.tar.gz
+https://github.com/qt/qttools/archive/refs/tags/v6.6.0.tar.gz
 https://github.com/qt/qtwayland/archive/refs/tags/v6.5.2.tar.gz
 https://github.com/qt/qtwayland/archive/refs/tags/v6.5.3.tar.gz
+https://github.com/qt/qtwayland/archive/refs/tags/v6.6.0.tar.gz
 https://github.com/quictls/openssl/archive/refs/tags/openssl-3.1.2-quic1.tar.gz
 https://github.com/redis/hiredis/archive/refs/tags/v1.2.0.tar.gz
 https://github.com/redis/redis/archive/refs/tags/7.2.0.tar.gz
@@ -1020,6 +1044,7 @@ https://github.com/wolfSSL/wolfssl/archive/refs/tags/v5.6.3-stable.tar.gz
 https://github.com/wtfutil/wtf/archive/refs/tags/v0.41.0.tar.gz
 https://github.com/wxMaxima-developers/wxmaxima/archive/refs/tags/Version-23.07.0.tar.gz
 https://github.com/wxWidgets/wxWidgets/releases/download/v3.2.2.1/wxWidgets-3.2.2.1.tar.bz2
+https://github.com/wxWidgets/wxWidgets/releases/download/v3.2.3/wxWidgets-3.2.3.tar.bz2
 https://github.com/ximion/appstream/archive/refs/tags/v0.16.3.tar.gz
 https://github.com/xiph/flac/archive/refs/tags/1.4.3.tar.gz
 https://github.com/xiph/opus/archive/refs/tags/v1.4.tar.gz
@@ -1166,6 +1191,7 @@ https://mirrors.edge.kernel.org/pub/linux/utils/kbd/kbd-2.6.3.tar.xz
 https://mirrors.edge.kernel.org/pub/software/network/ethtool/ethtool-6.2.tar.xz
 https://mplayerhq.hu/MPlayer/releases/MPlayer-1.5.tar.xz
 https://mupdf.com/downloads/archive/mupdf-1.23.3-source.tar.gz
+https://mupdf.com/downloads/archive/mupdf-1.23.4-source.tar.gz
 https://nav.dl.sourceforge.net/project/sbcl/sbcl/2.2.1/sbcl-2.2.1-source.tar.bz2
 https://nav.dl.sourceforge.net/project/sbcl/sbcl/2.3.7/sbcl-2.3.7-source.tar.bz2
 https://nav.dl.sourceforge.net/project/sbcl/sbcl/2.3.9/sbcl-2.3.9-source.tar.bz2
@@ -1215,6 +1241,7 @@ https://sourceware.org/pub/bzip2/bzip2-1.0.8.tar.gz
 https://sourceware.org/pub/valgrind/valgrind-3.19.0.tar.bz2
 https://sqlite.org/2023/sqlite-autoconf-3430000.tar.gz
 https://sqlite.org/2023/sqlite-autoconf-3430100.tar.gz
+https://sqlite.org/2023/sqlite-autoconf-3430200.tar.gz
 https://src.fedoraproject.org/repo/pkgs/zip/zip30.tar.gz/7b74551e63f8ee6aab6fbc86676c0d37/zip30.tar.gz
 https://static.rust-lang.org/dist/rust-1.56.1-x86_64-unknown-linux-gnu.tar.gz
 https://static.rust-lang.org/dist/rustc-1.54.0-src.tar.gz
@@ -1270,6 +1297,7 @@ https://www.kernel.org/pub/linux/kernel/people/kdave/btrfs-progs/btrfs-progs-v6.
 https://www.kernel.org/pub/linux/kernel/people/kdave/btrfs-progs/btrfs-progs-v6.5.tar.xz
 https://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2/libcap-2.69.tar.gz
 https://www.kernel.org/pub/linux/utils/fs/xfs/xfsprogs/xfsprogs-6.4.0.tar.xz
+https://www.kernel.org/pub/linux/utils/fs/xfs/xfsprogs/xfsprogs-6.5.0.tar.xz
 https://www.kernel.org/pub/linux/utils/usb/usbutils/usbutils-014.tar.xz
 https://www.kernel.org/pub/software/network/iw/iw-5.19.tar.xz
 https://www.kernel.org/pub/software/utils/dtc/dtc-1.7.0.tar.xz

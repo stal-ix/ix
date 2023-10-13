@@ -1,4 +1,4 @@
-{% extends '//lib/python/3/11/cross/ix.sh' %}
+{% extends '//lib/python/3/12/ix.sh' %}
 
 {% block lib_deps %}
 {% endblock %}

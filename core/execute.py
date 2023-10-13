@@ -16,6 +16,7 @@ except ImportError:
     from core.threads import to_thread
 
 
+
 def execute_cmd(c, mt):
     env = cu.dict_dict_update(c.get('env', {}), {
         'make_thrs': str(mt),
@@ -91,11 +92,12 @@ def group_by_out(nodes):
 
 
 class Executor:
-    def __init__(self, nodes, pools):
+    def __init__(self, nodes, pools, trash):
         self.s = dict((k, asyncio.Semaphore(v)) for k, v in pools.items())
         self.o = group_by_out(nodes)
         self.l = []
         self.mt = pools['threads']
+        self.trash_dir = trash
 
     async def visit_lst(self, l):
         await gather(self.visit_node(self.o[n]) for n in l)
@@ -128,7 +130,20 @@ class Executor:
         async with self.s[n['pool']]:
             await to_thread(self.execute_node, n)
 
+    def prepare_dir(self, d):
+        try:
+            os.rename(d, os.path.join(self.trash_dir, str(random.random())))
+        except FileNotFoundError:
+            pass
+        except Exception:
+            shutil.rmtree(d)
+
+        os.makedirs(d, exist_ok=True)
+
     def execute_node(self, n):
+        for o in iter_out(n):
+            self.prepare_dir(os.path.dirname(o))
+
         for c in iter_cmd(n):
             execute_cmd(c, self.mt)
 
@@ -142,15 +157,15 @@ class Executor:
         cu.sync()
 
 
-async def arun(g):
-    await Executor(g['nodes'], g['pools']).visit_all(g['targets'])
+async def arun(g, trash):
+    await Executor(g['nodes'], g['pools'], trash).visit_all(g['targets'])
 
 
-def execute(g):
+def execute(g, trash):
     try:
         cmd = [shutil.which('chrt'), '-i', '-p', '0', str(os.getpid())]
         subprocess.check_output(cmd, stderr=subprocess.STDOUT)
     except Exception:
         pass
 
-    asyncio.run(arun(g))
+    asyncio.run(arun(g, trash))
