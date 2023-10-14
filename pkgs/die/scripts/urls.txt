@@ -728,6 +728,7 @@ https://github.com/libgd/libgd/archive/refs/tags/gd-2.3.3.tar.gz
 https://github.com/libgit2/libgit2/archive/refs/tags/v1.0.1.tar.gz
 https://github.com/libgit2/libgit2/archive/refs/tags/v1.7.0.tar.gz
 https://github.com/libical/libical/archive/refs/tags/v3.0.16.tar.gz
+https://github.com/libical/libical/archive/refs/tags/v3.0.17.tar.gz
 https://github.com/libjpeg-turbo/libjpeg-turbo/archive/refs/tags/3.0.0.tar.gz
 https://github.com/libjxl/libjxl/archive/refs/tags/v0.8.2.tar.gz
 https://github.com/libmpack/libmpack-lua/archive/refs/tags/1.0.9.tar.gz

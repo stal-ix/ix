@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/libical/libical/archive/refs/tags/v3.0.16.tar.gz
-sha:b44705dd71ca4538c86fb16248483ab4b48978524fb1da5097bd76aa2e0f0c33
+https://github.com/libical/libical/archive/refs/tags/v3.0.17.tar.gz
+sha:bcda9a6db6870240328752854d1ea475af9bbc6356e6771018200e475e5f781b
 {% endblock %}
 
 {% block lib_deps %}
