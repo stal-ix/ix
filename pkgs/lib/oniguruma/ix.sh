@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/kkos/oniguruma/archive/refs/tags/v6.9.8.tar.gz
-sha:26372720bab6733c869a9eb69377f73971138dc5e3eff4a81f5ba8aea5435fb2
+https://github.com/kkos/oniguruma/archive/refs/tags/v6.9.9.tar.gz
+sha:001aa1202e78448f4c0bf1a48c76e556876b36f16d92ce3207eccfd61d99f2a0
 {% endblock %}
 
 {% block env %}

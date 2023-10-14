@@ -694,6 +694,7 @@ https://github.com/junegunn/fzf/archive/refs/tags/0.42.0.tar.gz
 https://github.com/kaniini/libucontext/archive/refs/tags/libucontext-1.2.tar.gz
 https://github.com/kcat/openal-soft/archive/refs/tags/1.23.1.tar.gz
 https://github.com/kkos/oniguruma/archive/refs/tags/v6.9.8.tar.gz
+https://github.com/kkos/oniguruma/archive/refs/tags/v6.9.9.tar.gz
 https://github.com/klange/bim/archive/refs/tags/v3.1.0.tar.gz
 https://github.com/knik0/faac/archive/refs/tags/1_30.tar.gz
 https://github.com/knik0/faad2/archive/refs/tags/2.10.1.tar.gz
