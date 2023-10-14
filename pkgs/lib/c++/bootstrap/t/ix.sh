@@ -4,15 +4,6 @@
 {% include '//lib/llvm/13/ver.sh' %}
 {% endblock %}
 
-{% block bld_libs %}
-lib/kernel
-lib/musl/pure
-{% endblock %}
-
-{% block c_compiler %}
-bin/gcc(for_target={{target.gnu.three}})
-{% endblock %}
-
 {% block cpp_defines %}
 _LIBCPP_BUILDING_LIBRARY=1
 _LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER=1

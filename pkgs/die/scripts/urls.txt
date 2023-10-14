@@ -617,6 +617,7 @@ https://github.com/google/highway/archive/refs/tags/1.0.5.tar.gz
 https://github.com/google/minijail/archive/refs/tags/linux-v18.tar.gz
 https://github.com/google/re2/archive/refs/tags/2023-09-01.tar.gz
 https://github.com/google/shaderc/archive/refs/tags/v2023.6.tar.gz
+https://github.com/google/shaderc/archive/refs/tags/v2023.7.tar.gz
 https://github.com/google/snappy/archive/refs/tags/1.1.9.tar.gz
 https://github.com/google/woff2/archive/refs/tags/v1.0.2.tar.gz
 https://github.com/googlefonts/noto-fonts/archive/refs/tags/v20201206-phase3.tar.gz
@@ -690,9 +691,11 @@ https://github.com/jstedfast/gmime/archive/refs/tags/3.2.13.tar.gz
 https://github.com/jtanx/libclipboard/archive/refs/tags/v1.1.tar.gz
 https://github.com/jtheoof/swappy/archive/refs/tags/v1.5.1.tar.gz
 https://github.com/junegunn/fzf/archive/refs/tags/0.42.0.tar.gz
+https://github.com/junegunn/fzf/archive/refs/tags/0.43.0.tar.gz
 https://github.com/kaniini/libucontext/archive/refs/tags/libucontext-1.2.tar.gz
 https://github.com/kcat/openal-soft/archive/refs/tags/1.23.1.tar.gz
 https://github.com/kkos/oniguruma/archive/refs/tags/v6.9.8.tar.gz
+https://github.com/kkos/oniguruma/archive/refs/tags/v6.9.9.tar.gz
 https://github.com/klange/bim/archive/refs/tags/v3.1.0.tar.gz
 https://github.com/knik0/faac/archive/refs/tags/1_30.tar.gz
 https://github.com/knik0/faad2/archive/refs/tags/2.10.1.tar.gz
@@ -727,6 +730,7 @@ https://github.com/libgd/libgd/archive/refs/tags/gd-2.3.3.tar.gz
 https://github.com/libgit2/libgit2/archive/refs/tags/v1.0.1.tar.gz
 https://github.com/libgit2/libgit2/archive/refs/tags/v1.7.0.tar.gz
 https://github.com/libical/libical/archive/refs/tags/v3.0.16.tar.gz
+https://github.com/libical/libical/archive/refs/tags/v3.0.17.tar.gz
 https://github.com/libjpeg-turbo/libjpeg-turbo/archive/refs/tags/3.0.0.tar.gz
 https://github.com/libjxl/libjxl/archive/refs/tags/v0.8.2.tar.gz
 https://github.com/libmpack/libmpack-lua/archive/refs/tags/1.0.9.tar.gz
@@ -986,6 +990,7 @@ https://github.com/texstudio-org/texstudio/archive/refs/tags/4.4.1.tar.gz
 https://github.com/thepowersgang/mrustc/archive/1b1416bb2b44e2c331c7201833305cac29d571e8.zip
 https://github.com/thepowersgang/mrustc/archive/c70b86e138018b0e144dd179a5bd6c6e0972b350.zip
 https://github.com/thkukuk/libnsl/releases/download/v2.0.0/libnsl-2.0.0.tar.xz
+https://github.com/thkukuk/libnsl/releases/download/v2.0.1/libnsl-2.0.1.tar.xz
 https://github.com/thkukuk/rpcsvc-proto/archive/refs/tags/v1.4.3.tar.gz
 https://github.com/thom311/libnl/releases/download/libnl3_8_0/libnl-3.8.0.tar.gz
 https://github.com/tinyalsa/tinyalsa/archive/refs/tags/v2.0.0.tar.gz
