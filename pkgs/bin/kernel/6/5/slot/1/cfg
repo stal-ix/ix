@@ -1505,7 +1505,102 @@ CONFIG_BE2ISCSI=y
 # CONFIG_SCSI_DH is not set
 # end of SCSI device support
 
-# CONFIG_ATA is not set
+CONFIG_ATA=y
+CONFIG_SATA_HOST=y
+CONFIG_PATA_TIMINGS=y
+CONFIG_ATA_VERBOSE_ERROR=y
+CONFIG_ATA_FORCE=y
+CONFIG_ATA_ACPI=y
+# CONFIG_SATA_ZPODD is not set
+CONFIG_SATA_PMP=y
+
+#
+# Controllers with non-SFF native interface
+#
+CONFIG_SATA_AHCI=y
+CONFIG_SATA_MOBILE_LPM_POLICY=0
+# CONFIG_SATA_AHCI_PLATFORM is not set
+# CONFIG_AHCI_DWC is not set
+# CONFIG_SATA_INIC162X is not set
+# CONFIG_SATA_ACARD_AHCI is not set
+# CONFIG_SATA_SIL24 is not set
+CONFIG_ATA_SFF=y
+
+#
+# SFF controllers with custom DMA interface
+#
+# CONFIG_PDC_ADMA is not set
+# CONFIG_SATA_QSTOR is not set
+# CONFIG_SATA_SX4 is not set
+CONFIG_ATA_BMDMA=y
+
+#
+# SATA SFF controllers with BMDMA
+#
+CONFIG_ATA_PIIX=y
+# CONFIG_SATA_DWC is not set
+# CONFIG_SATA_MV is not set
+# CONFIG_SATA_NV is not set
+# CONFIG_SATA_PROMISE is not set
+# CONFIG_SATA_SIL is not set
+# CONFIG_SATA_SIS is not set
+# CONFIG_SATA_SVW is not set
+# CONFIG_SATA_ULI is not set
+# CONFIG_SATA_VIA is not set
+# CONFIG_SATA_VITESSE is not set
+
+#
+# PATA SFF controllers with BMDMA
+#
+# CONFIG_PATA_ALI is not set
+# CONFIG_PATA_AMD is not set
+# CONFIG_PATA_ARTOP is not set
+# CONFIG_PATA_ATIIXP is not set
+# CONFIG_PATA_ATP867X is not set
+# CONFIG_PATA_CMD64X is not set
+# CONFIG_PATA_CYPRESS is not set
+# CONFIG_PATA_EFAR is not set
+# CONFIG_PATA_HPT366 is not set
+# CONFIG_PATA_HPT37X is not set
+# CONFIG_PATA_HPT3X2N is not set
+# CONFIG_PATA_HPT3X3 is not set
+# CONFIG_PATA_IT8213 is not set
+# CONFIG_PATA_IT821X is not set
+# CONFIG_PATA_JMICRON is not set
+# CONFIG_PATA_MARVELL is not set
+# CONFIG_PATA_NETCELL is not set
+# CONFIG_PATA_NINJA32 is not set
+# CONFIG_PATA_NS87415 is not set
+# CONFIG_PATA_OLDPIIX is not set
+# CONFIG_PATA_OPTIDMA is not set
+# CONFIG_PATA_PDC2027X is not set
+# CONFIG_PATA_PDC_OLD is not set
+# CONFIG_PATA_RADISYS is not set
+# CONFIG_PATA_RDC is not set
+# CONFIG_PATA_SCH is not set
+# CONFIG_PATA_SERVERWORKS is not set
+# CONFIG_PATA_SIL680 is not set
+# CONFIG_PATA_SIS is not set
+# CONFIG_PATA_TOSHIBA is not set
+# CONFIG_PATA_TRIFLEX is not set
+# CONFIG_PATA_VIA is not set
+# CONFIG_PATA_WINBOND is not set
+
+#
+# PIO-only SFF controllers
+#
+# CONFIG_PATA_CMD640_PCI is not set
+# CONFIG_PATA_MPIIX is not set
+# CONFIG_PATA_NS87410 is not set
+# CONFIG_PATA_OPTI is not set
+# CONFIG_PATA_RZ1000 is not set
+
+#
+# Generic fallback / legacy drivers
+#
+CONFIG_PATA_ACPI=y
+CONFIG_ATA_GENERIC=y
+# CONFIG_PATA_LEGACY is not set
 # CONFIG_MD is not set
 # CONFIG_TARGET_CORE is not set
 # CONFIG_FUSION is not set
@@ -2728,6 +2823,7 @@ CONFIG_SENSORS_K10TEMP=y
 # CONFIG_SENSORS_ATXP1 is not set
 # CONFIG_SENSORS_CORSAIR_CPRO is not set
 # CONFIG_SENSORS_CORSAIR_PSU is not set
+# CONFIG_SENSORS_DRIVETEMP is not set
 # CONFIG_SENSORS_DS620 is not set
 # CONFIG_SENSORS_DS1621 is not set
 # CONFIG_SENSORS_DELL_SMM is not set
@@ -3887,7 +3983,7 @@ CONFIG_HID_ITE=y
 CONFIG_HID_KENSINGTON=y
 # CONFIG_HID_LCPOWER is not set
 # CONFIG_HID_LED is not set
-# CONFIG_HID_LENOVO is not set
+CONFIG_HID_LENOVO=y
 # CONFIG_HID_LETSKETCH is not set
 CONFIG_HID_LOGITECH=y
 # CONFIG_HID_LOGITECH_DJ is not set
@@ -4189,6 +4285,7 @@ CONFIG_LEDS_SGM3140=y
 CONFIG_LEDS_TRIGGERS=y
 # CONFIG_LEDS_TRIGGER_TIMER is not set
 # CONFIG_LEDS_TRIGGER_ONESHOT is not set
+# CONFIG_LEDS_TRIGGER_DISK is not set
 # CONFIG_LEDS_TRIGGER_HEARTBEAT is not set
 # CONFIG_LEDS_TRIGGER_BACKLIGHT is not set
 # CONFIG_LEDS_TRIGGER_CPU is not set
