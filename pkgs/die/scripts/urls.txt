@@ -829,6 +829,7 @@ https://github.com/netwide-assembler/nasm/archive/refs/tags/nasm-2.16.01.tar.gz
 https://github.com/nghttp2/nghttp2/archive/refs/tags/v1.56.0.tar.gz
 https://github.com/nghttp2/nghttp2/archive/refs/tags/v1.57.0.tar.gz
 https://github.com/ngtcp2/nghttp3/archive/refs/tags/v0.15.0.tar.gz
+https://github.com/ngtcp2/nghttp3/archive/refs/tags/v1.0.0.tar.gz
 https://github.com/ngtcp2/ngtcp2/archive/refs/tags/v0.19.0.tar.gz
 https://github.com/nhorman/rng-tools/archive/refs/tags/v6.15.tar.gz
 https://github.com/nibanks/msh3/archive/refs/tags/v0.6.0.tar.gz
