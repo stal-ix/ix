@@ -42,13 +42,13 @@ def validate(nodes):
 
 
 def slots(t):
-    if t > 12:
+    if t > 11:
         return 4
 
-    if t > 8:
+    if t > 7:
         return 3
 
-    if t > 4:
+    if t > 3:
         return 2
 
     return 1
