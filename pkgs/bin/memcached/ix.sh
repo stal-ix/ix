@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://memcached.org/files/memcached-1.6.21.tar.gz
-sha:c788980efc417dd5d93c442b1c8b8769fb2018896c29de3887d22a2f143da2ee
+https://memcached.org/files/memcached-1.6.22.tar.gz
+sha:34783a90a4ccf74c4107085fd92b688749d23b276cfdad9f04e4f725a05d1ca7
 {% endblock %}
 
 {% block bld_libs %}
