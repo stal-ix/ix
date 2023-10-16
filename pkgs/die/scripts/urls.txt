@@ -970,6 +970,7 @@ https://github.com/strawberrymusicplayer/strawberry/archive/refs/tags/1.0.18.tar
 https://github.com/strawberrymusicplayer/strawberry/archive/refs/tags/1.0.20.tar.gz
 https://github.com/strukturag/libde265/archive/refs/tags/v1.0.12.tar.gz
 https://github.com/strukturag/libheif/archive/refs/tags/v1.16.2.tar.gz
+https://github.com/strukturag/libheif/archive/refs/tags/v1.17.0.tar.gz
 https://github.com/swaywm/sway/archive/refs/tags/1.8.1.tar.gz
 https://github.com/swaywm/swaybg/archive/refs/tags/v1.2.0.tar.gz
 https://github.com/swaywm/swayidle/archive/refs/tags/1.8.0.tar.gz
