@@ -934,6 +934,7 @@ https://github.com/rmyorston/pdpmake/archive/refs/tags/1.4.0.tar.gz
 https://github.com/rockdaboot/libpsl/releases/download/0.21.2/libpsl-0.21.2.tar.gz
 https://github.com/rpodgorny/unionfs-fuse/archive/refs/tags/v3.4.tar.gz
 https://github.com/rrthomas/libpaper/releases/download/v2.1.1/libpaper-2.1.1.tar.gz
+https://github.com/rrthomas/libpaper/releases/download/v2.1.2/libpaper-2.1.2.tar.gz
 https://github.com/rs/curlie/archive/refs/tags/v1.6.9.tar.gz
 https://github.com/rsms/inter/releases/download/v3.19/Inter-3.19.zip
 https://github.com/rui314/mold/archive/refs/tags/v1.7.1.tar.gz
