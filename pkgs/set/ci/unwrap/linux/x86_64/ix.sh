@@ -1,6 +1,7 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
+bin/speedtest/cli
 bin/wmenu
 bin/ix/mirror
 bin/python/12
