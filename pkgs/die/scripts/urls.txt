@@ -289,6 +289,7 @@ https://ftp.gnu.org/gnu/sed/sed-4.8.tar.xz
 https://ftp.gnu.org/gnu/sed/sed-4.9.tar.xz
 https://ftp.gnu.org/gnu/tar/tar-1.35.tar.xz
 https://ftp.gnu.org/gnu/texinfo/texinfo-7.0.3.tar.xz
+https://ftp.gnu.org/gnu/texinfo/texinfo-7.1.tar.xz
 https://ftp.gnu.org/gnu/time/time-1.9.tar.gz
 https://ftp.gnu.org/gnu/wget/wget-1.21.2.tar.lz
 https://ftp.gnu.org/gnu/wget/wget2-2.1.0.tar.gz
