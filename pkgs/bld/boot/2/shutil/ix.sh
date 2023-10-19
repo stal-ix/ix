@@ -34,7 +34,7 @@ int main(int argc, char** argv) {
 }
 EOF
 
-${CC} -o mv mv.c
+${CC} ${CFLAGS} ${CPPFLAGS} -o mv mv.c
 
 cp() (
     cat ${1} > ${2}
