@@ -42,5 +42,5 @@ CalledProcessError: Command '['sh', '-s']' returned non-zero exit status 1.
 {% endblock %}
 
 {% block patch %}
-fix_shebang src/relative_to.py
+fix_shebangs src/relative_to.py
 {% endblock %}
