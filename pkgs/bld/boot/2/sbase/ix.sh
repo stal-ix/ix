@@ -48,3 +48,8 @@ int main() {
 }
 EOF
 {% endblock %}
+
+{% block install %}
+{{super()}}
+cp ${out}/bin/xinstall ${out}/bin/install
+{% endblock %}

@@ -10,7 +10,7 @@ class Ops:
         self.cfg = cfg
 
     def execute_graph(self, graph):
-        ce.execute(graph, self.cfg.trash_dir)
+        ce.execute(graph, self.cfg.ensure_trash_dir())
 
     def gc(self, kind):
         cr.Repo(self.cfg).gc_cycle(kind)

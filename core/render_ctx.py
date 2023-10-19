@@ -87,10 +87,14 @@ class RenderContext:
             'basename': os.path.basename(pkg.norm_name),
             'uniq_id': pkg.uniq_id,
             'native': hp['id'] == tp['id'],
+            'trash_dir': self.package.manager.config.trash_dir,
             kind: True,
             tp['os']: True,
             tp['arch']: True,
         }, pkg.flags)
+
+        if args['boot']:
+            args['setx'] = '1'
 
         try:
             return self.strip_template(tmpl.render(args))

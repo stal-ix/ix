@@ -16,7 +16,6 @@ except ImportError:
     from core.threads import to_thread
 
 
-
 def execute_cmd(c, mt):
     env = cu.dict_dict_update(c.get('env', {}), {
         'make_thrs': str(mt),
