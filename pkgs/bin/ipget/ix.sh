@@ -1,11 +1,11 @@
 {% extends '//die/go/pure.sh' %}
 
 {% block go_url %}
-https://github.com/ipfs/ipget/archive/refs/tags/v0.9.2.tar.gz
+https://github.com/ipfs/ipget/archive/refs/tags/v0.10.0.tar.gz
 {% endblock %}
 
 {% block go_sha %}
-d4d5d1768879756c5ccf74a8d04f00a6562a5a87180b0ea1ff64ee733e42ebe4
+3f9c3c09a089dff79b4b8560a65d704ade55cc4d4b4cef97b95956f31377531b
 {% endblock %}
 
 {% block go_compiler %}
