@@ -22,13 +22,28 @@ setup_ar
 
 . build.sh
 
+cat << EOF > mv.c
+#include <stdio.h>
+
+int main(int argc, char** argv) {
+    if (argc > 2) {
+        rename(argv[1], argv[2]);
+    }
+
+    return 0;
+}
+EOF
+
+${CC} ${CFLAGS} ${CPPFLAGS} ${LDFLAGS} -o mv mv.c
+
 cp() (
-    cat ${1} > ${2}; chmod ${2}
+    cat ${1} > ${2}
+    chmod ${2}
 )
 
 mkdir ${out}/bin
 
-for i in mkdir cat tr dirname echo chmod rm test; do
+for i in mkdir cat tr dirname echo chmod rm test mv; do
     cp ${i} ${out}/bin/${i}
 done
 {% endblock %}

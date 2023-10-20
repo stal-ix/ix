@@ -16,7 +16,6 @@ except ImportError:
     from core.threads import to_thread
 
 
-
 def execute_cmd(c, mt):
     env = cu.dict_dict_update(c.get('env', {}), {
         'make_thrs': str(mt),
@@ -161,11 +160,19 @@ async def arun(g, trash):
     await Executor(g['nodes'], g['pools'], trash).visit_all(g['targets'])
 
 
+def kill_all(*args):
+    os.kill(0, signal.SIGKILL)
+
+
 def execute(g, trash):
     try:
         cmd = [shutil.which('chrt'), '-i', '-p', '0', str(os.getpid())]
         subprocess.check_output(cmd, stderr=subprocess.STDOUT)
     except Exception:
         pass
+
+    os.setpgrp()
+
+    signal.signal(signal.SIGINT, kill_all)
 
     asyncio.run(arun(g, trash))

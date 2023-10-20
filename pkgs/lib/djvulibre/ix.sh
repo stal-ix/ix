@@ -12,6 +12,10 @@ lib/tiff
 lib/jpeg
 {% endblock %}
 
+{% block bld_tool %}
+bin/gzip
+{% endblock %}
+
 {% block setup %}
 export CFLAGS="-Wno-register ${CFLAGS}"
 {% endblock %}

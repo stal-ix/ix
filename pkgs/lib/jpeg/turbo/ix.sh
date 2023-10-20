@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/libjpeg-turbo/libjpeg-turbo/archive/refs/tags/3.0.0.tar.gz
-sha:171dae5d73560bc94006a7c0c3281bd9bfde6a34f7e41e66f930a1a9162bd7df
+https://github.com/libjpeg-turbo/libjpeg-turbo/archive/refs/tags/3.0.1.tar.gz
+sha:5b9bbca2b2a87c6632c821799438d358e27004ab528abf798533c15d50b39f82
 {% endblock %}
 
 {% block bld_tool %}

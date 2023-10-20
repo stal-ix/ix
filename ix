@@ -9,8 +9,6 @@ sys.excepthook = traceback.print_exception
 import os
 os.environ['SSL_CERT_FILE'] = 'nowhere'
 
-os.setpgrp()
-
 me = os.path.normpath(os.path.abspath(__file__))
 
 for x in ('jinja-3.1.2/src', 'markupsafe-2.1.1/src'):
@@ -30,13 +28,6 @@ try:
     urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 except ImportError:
     pass
-
-import signal
-
-def on_sigint(*args):
-    os.kill(0, signal.SIGKILL)
-
-signal.signal(signal.SIGINT, on_sigint)
 
 import fcntl
 fcntl.fcntl(1, fcntl.F_SETFL, 0)

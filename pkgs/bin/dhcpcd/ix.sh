@@ -1,8 +1,8 @@
 {% extends '//die/c/autohell.sh' %}
 
 {% block fetch %}
-https://github.com/NetworkConfiguration/dhcpcd/archive/refs/tags/v10.0.3.tar.gz
-sha:6847d290ec20cfcaeafd32caff29b21d7f0481dae41446655926adc99d09740d
+https://github.com/NetworkConfiguration/dhcpcd/archive/refs/tags/v10.0.4.tar.gz
+sha:321115d7e57cdf1fa975c4ba7e8a99fc1ef4eaac3f046ec4bc41ddd3971c4489
 {% endblock %}
 
 {% block bld_libs %}
