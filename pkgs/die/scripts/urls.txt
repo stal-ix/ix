@@ -177,6 +177,7 @@ https://downloads.sourceforge.net/project/empty/empty/empty-0.6.23c/empty-0.6.23
 https://downloads.sourceforge.net/project/fetchmail/branch_6.4/fetchmail-6.4.36.tar.xz
 https://downloads.sourceforge.net/project/giflib/giflib-5.2.1.tar.gz
 https://downloads.sourceforge.net/project/gnu-efi/gnu-efi-3.0.15.tar.bz2
+https://downloads.sourceforge.net/project/gnuplot/gnuplot/5.4.10/gnuplot-5.4.10.tar.gz
 https://downloads.sourceforge.net/project/gnuplot/gnuplot/5.4.9/gnuplot-5.4.9.tar.gz
 https://downloads.sourceforge.net/project/gparted/gparted/gparted-1.5.0/gparted-1.5.0.tar.gz
 https://downloads.sourceforge.net/project/gtkspell/3.0.10/gtkspell3-3.0.10.tar.xz
