@@ -42,7 +42,7 @@ namespace {
     };
 
     static auto loadSvg(const std::string& s) {
-        return svgdom::load(s);
+        return svgdom::load(std::string_view(s));
     }
 
     static std::string parseField(std::string s, const std::string& f) {

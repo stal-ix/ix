@@ -1,8 +1,8 @@
 {% extends '//lib/svgren/t/ix.sh' %}
 
 {% block fetch %}
-https://github.com/cppfw/utki/archive/refs/tags/1.1.187.tar.gz
-sha:3a0f0c8d952cb0a32078b9a6d6c2d222fc98edb0ddbc56d73bf6bec1e061d89b
+https://github.com/cppfw/utki/archive/refs/tags/1.1.224.tar.gz
+sha:3063f2ba04a58ee81014f97df37ed29898babed82c06808f4f47078b4d20cec2
 {% endblock %}
 
 {% block lib_deps %}
