@@ -1,8 +1,8 @@
-{% extends '//die/c/autorehell.sh' %}
+{% extends '//die/c/gnome.sh' %}
 
 {% block fetch %}
-https://github.com/geany/geany/archive/refs/tags/1.38.0.tar.gz
-sha:d3b23a61f6ec3893671bac4f988f6ec3856092a233a47e3a170dc64212827e92
+https://github.com/geany/geany/archive/refs/tags/2.0.0.tar.gz
+sha:a744ab9ae3e58b371de4b50990c44227c499f82e2a8ee6753307ef107748e4df
 {% endblock %}
 
 {% block bld_libs %}
@@ -14,9 +14,9 @@ lib/gdk/pixbuf/svg
 {% block bld_tool %}
 bld/glib
 bld/gettext
-bld/intltool
+{{super()}}
 {% endblock %}
 
-{% block configure_flags %}
---disable-html-docs
+{% block cpp_defines %}
+_GNU_SOURCE=1
 {% endblock %}
