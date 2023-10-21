@@ -30,6 +30,13 @@ none:x:1:
 audio:x:1:
 EOF
 
+cat << EOF > os-release
+NAME=stal/IX
+ID=stalix
+ID_LIKE=linux
+HOME_URL="https://stal-ix.github.io/"
+EOF
+
 echo {{hostname or 'stalix'}} > hostname
 
 cat << EOF > hosts
