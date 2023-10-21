@@ -28,6 +28,7 @@ export OPTFLAGS="${OPTFLAGS} -O0"
 {% endblock %}
 
 {% block patch %}
+# our gnutls does not contain pkcs11 support
 find . -name key.c | while read l; do
     sed -e 's|.*gnutls_privkey_export_pkcs11.*|abort();|' -i ${l}
 done
