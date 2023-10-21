@@ -20,3 +20,7 @@ lib/image/magick
 lib/vulkan/headers
 lib/vulkan/loader/dl
 {% endblock %}
+
+{% block patch %}
+sed -e 's|command-not-found|mc|' -i src/detection/terminalshell/terminalshell_linux.c
+{% endblock %}
