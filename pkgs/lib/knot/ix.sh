@@ -26,3 +26,9 @@ lib/kernel
 {% block setup %}
 export OPTFLAGS="${OPTFLAGS} -O0"
 {% endblock %}
+
+{% block patch %}
+find . -name key.c | while read l; do
+    sed -e 's|.*gnutls_privkey_export_pkcs11.*|abort();|' -i ${l}
+done
+{% endblock %}
