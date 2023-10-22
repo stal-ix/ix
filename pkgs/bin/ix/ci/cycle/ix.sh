@@ -10,7 +10,9 @@ mkdir -p {{wd}}
 cd {{wd}}
 (cd ix; git pull) || (rm -rf ix; git clone https://github.com/pg83/ix)
 cd ix
-./ix mut ci set/ci bld/all || true
+export IX_ROOT={{wd}}/ix_root
+export IX_EXEC_KIND=local
+./ix build set/ci bld/all || true
 sleep 200
 EOF
 
