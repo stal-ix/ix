@@ -1,6 +1,8 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
+bin/fastfetch
+bin/gnome/terminal
 bin/speedtest/cli
 bin/wmenu
 bin/ix/mirror

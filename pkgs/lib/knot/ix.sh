@@ -1,8 +1,8 @@
 {% extends '//die/c/autohell.sh' %}
 
 {% block fetch %}
-https://secure.nic.cz/files/knot-dns/knot-3.2.9.tar.xz
-sha:bc1f9eb8c9f67f52805f3acfa2d0153190245fa145b007fafa9068d2da292506
+https://secure.nic.cz/files/knot-dns/knot-3.3.2.tar.xz
+sha:0d65d4b59f5df69b78c6295ade0a2ea7931831de7ef5eeee3e00f8a20af679e4
 {% endblock %}
 
 {% block lib_deps %}
@@ -25,4 +25,11 @@ lib/kernel
 
 {% block setup %}
 export OPTFLAGS="${OPTFLAGS} -O0"
+{% endblock %}
+
+{% block patch %}
+# our gnutls does not contain pkcs11 support
+find . -name key.c | while read l; do
+    sed -e 's|.*gnutls_privkey_export_pkcs11.*|abort();|' -i ${l}
+done
 {% endblock %}

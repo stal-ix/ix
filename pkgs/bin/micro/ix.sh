@@ -1,11 +1,11 @@
 {% extends '//die/go/pure.sh' %}
 
 {% block go_url %}
-https://github.com/zyedidia/micro/archive/refs/tags/v2.0.11.tar.gz
+https://github.com/zyedidia/micro/archive/refs/tags/v2.0.13.tar.gz
 {% endblock %}
 
 {% block go_sha %}
-6fcfb485439ef712704186c02e40eaa5a8225cd28c59fa4cfe4da30a489a17e9
+38225969b7aaf3bcd7554176522c40362b4259c2463d01eaf8490a94782e1e28
 {% endblock %}
 
 {% block unpack %}

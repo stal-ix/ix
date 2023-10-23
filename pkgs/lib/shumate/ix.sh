@@ -1,8 +1,8 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://github.com/GNOME/libshumate/archive/refs/tags/1.1.0.tar.gz
-sha:43d81de98ec5cd9fe743e53a5b7ce3f8c4c9bc1c00f651c01bc2a363b473faef
+https://github.com/GNOME/libshumate/archive/refs/tags/1.1.1.tar.gz
+sha:7f758ff372cf705d5ffb8263659fa08e14c6523e3b8950467cee0df5af6ec5e3
 {% endblock %}
 
 {% block lib_deps %}
