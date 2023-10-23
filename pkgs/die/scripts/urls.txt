@@ -853,6 +853,7 @@ https://github.com/mvdan/sh/archive/refs/tags/v3.5.1.tar.gz
 https://github.com/namhyung/uftrace/archive/refs/tags/v0.12.tar.gz
 https://github.com/nemtrif/utfcpp/archive/refs/tags/v3.2.4.tar.gz
 https://github.com/nemtrif/utfcpp/archive/refs/tags/v3.2.5.tar.gz
+https://github.com/nemtrif/utfcpp/archive/refs/tags/v4.0.0.tar.gz
 https://github.com/neomutt/neomutt/archive/refs/tags/20220429.tar.gz
 https://github.com/neomutt/neomutt/archive/refs/tags/20231006.tar.gz
 https://github.com/neovim/libtermkey/archive/refs/tags/v0.20.tar.gz
