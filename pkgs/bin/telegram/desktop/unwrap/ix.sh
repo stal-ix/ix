@@ -13,6 +13,7 @@ lib/lz4
 lib/c++
 lib/vpx
 lib/opus
+lib/boost
 lib/ffmpeg
 lib/gsl/ms
 lib/xxhash
