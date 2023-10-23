@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/qbittorrent/qBittorrent/archive/refs/tags/release-4.5.4.tar.gz
-sha:ded3a1ffba1e97ecde3862714bea9e9a1cc7275c29545d81976174ac5760bab5
+https://github.com/qbittorrent/qBittorrent/archive/refs/tags/release-4.6.0.tar.gz
+sha:f1cb8a677d2c882d3aa7f6fdebd9671950d7d6578480ace7529b498b13480804
 {% endblock %}
 
 {% block bld_libs %}
