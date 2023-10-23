@@ -1,7 +1,7 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
-bld/python
+bin/python
 bin/git/unwrap
 etc/user/{{user}}
 bin/ix/ci/cycle
