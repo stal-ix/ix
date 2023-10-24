@@ -4,6 +4,7 @@
 
 {% block install %}
 {{super()}}
+sed -e 's|/usr/bin/env bash|/bin/bash|' -i ${out}/bin/gcore
 cd ${out}/share/gdb/python
 mkdir arc
 cd arc

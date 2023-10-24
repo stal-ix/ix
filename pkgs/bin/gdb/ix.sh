@@ -1,4 +1,4 @@
-{% extends '//bin/gdb/t/ix.sh' %}
+{% extends 't/ix.sh' %}
 
 {% block host_libs %}
 lib/c
