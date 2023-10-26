@@ -13,7 +13,7 @@ def fetch_url_data(url):
     return ur.urlopen(url).read()
 
 
-def fetch_url_impl(url, out):
+def fetch_url_impl(url, out, tout):
     print(f'fetch {url} into {out}')
 
     def iter_chunks():
@@ -40,12 +40,12 @@ def fetch_url_impl(url, out):
         print('')
 
 
-def fetch_url_wget(wget, url, out):
-    return subprocess.check_call([wget, '-t', '1', '--no-check-certificate', '-O', out, url], shell=False)
+def fetch_url_wget(wget, url, out, tout):
+    return subprocess.check_call([wget, '--timeout', str(tout), '-t', '1', '--no-check-certificate', '-O', out, url], shell=False)
 
 
-def fetch_url_curl(curl, url, out):
-    return subprocess.check_call([curl, '--retry', '0', '-k', '-L', '--output', out, url], shell=False)
+def fetch_url_curl(curl, url, out, tout):
+    return subprocess.check_call([curl, '--connect-timeout', str(tout), '--retry', '0', '-k', '-L', '--output', out, url], shell=False)
 
 
 def iter_bin():
