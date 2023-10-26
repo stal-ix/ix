@@ -589,6 +589,7 @@ https://github.com/eranif/codelite/releases/download/17.0.0/codelite-17.0.0.tar.
 https://github.com/ericniebler/range-v3/archive/refs/tags/0.12.0.tar.gz
 https://github.com/etcd-io/etcd/archive/refs/tags/v3.4.22.tar.gz
 https://github.com/evanw/esbuild/archive/refs/tags/v0.18.14.tar.gz
+https://github.com/exfatprogs/exfatprogs/archive/refs/tags/1.2.2.tar.gz
 https://github.com/exfatprogs/exfatprogs/releases/download/1.2.0/exfatprogs-1.2.0.tar.xz
 https://github.com/facebook/zstd/archive/refs/tags/v1.5.5.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.1.2.tar.gz
@@ -610,6 +611,7 @@ https://github.com/fribidi/fribidi/archive/refs/tags/v1.0.13.tar.gz
 https://github.com/fukuchi/libqrencode/archive/refs/tags/v4.1.1.tar.gz
 https://github.com/g-truc/glm/archive/refs/tags/0.9.9.8.tar.gz
 https://github.com/gabime/spdlog/archive/refs/tags/v1.12.0.tar.gz
+https://github.com/gambit/gambit/archive/refs/tags/v4.9.5.tar.gz
 https://github.com/gavinhoward/bc/archive/refs/tags/6.6.0.tar.gz
 https://github.com/gavinhoward/bc/archive/refs/tags/6.6.1.tar.gz
 https://github.com/gavinhoward/bc/archive/refs/tags/6.7.0.tar.gz
