@@ -1100,6 +1100,7 @@ https://github.com/webmproject/libvpx/archive/refs/tags/v1.13.0.tar.gz
 https://github.com/weechat/weechat/archive/refs/tags/v4.0.4.tar.gz
 https://github.com/weechat/weechat/archive/refs/tags/v4.0.5.tar.gz
 https://github.com/weechat/weechat/archive/refs/tags/v4.1.0.tar.gz
+https://github.com/weechat/weechat/archive/refs/tags/v4.1.1.tar.gz
 https://github.com/westes/flex/archive/refs/tags/flex-2-5-10.tar.gz
 https://github.com/westes/flex/files/981163/flex-2.6.4.tar.gz
 https://github.com/wfeldt/libx86emu/archive/refs/tags/3.5.tar.gz
