@@ -99,6 +99,7 @@ https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.5.5.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.5.6.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.5.7.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.5.8.tar.xz
+https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.5.9.tar.xz
 https://cmocka.org/files/1.1/cmocka-1.1.7.tar.xz
 https://codeberg.org/dnkl/fcft/archive/2.5.0.tar.gz
 https://codeberg.org/dnkl/fcft/archive/3.1.6.tar.gz
@@ -139,6 +140,7 @@ https://download.gnome.org/sources/evince/45/evince-45.0.tar.xz
 https://download.gnome.org/sources/gdk-pixbuf/2.42/gdk-pixbuf-2.42.6.tar.xz
 https://download.gnome.org/sources/glib/2.74/glib-2.74.5.tar.xz
 https://download.gnome.org/sources/glib/2.78/glib-2.78.0.tar.xz
+https://download.gnome.org/sources/glib/2.78/glib-2.78.1.tar.xz
 https://download.gnome.org/sources/glibmm/2.66/glibmm-2.66.6.tar.xz
 https://download.gnome.org/sources/glibmm/2.77/glibmm-2.77.0.tar.xz
 https://download.gnome.org/sources/gtk+/3.24/gtk%2B-3.24.37.tar.xz
@@ -587,6 +589,7 @@ https://github.com/eranif/codelite/releases/download/17.0.0/codelite-17.0.0.tar.
 https://github.com/ericniebler/range-v3/archive/refs/tags/0.12.0.tar.gz
 https://github.com/etcd-io/etcd/archive/refs/tags/v3.4.22.tar.gz
 https://github.com/evanw/esbuild/archive/refs/tags/v0.18.14.tar.gz
+https://github.com/exfatprogs/exfatprogs/archive/refs/tags/1.2.2.tar.gz
 https://github.com/exfatprogs/exfatprogs/releases/download/1.2.0/exfatprogs-1.2.0.tar.xz
 https://github.com/facebook/zstd/archive/refs/tags/v1.5.5.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.1.2.tar.gz
@@ -608,6 +611,7 @@ https://github.com/fribidi/fribidi/archive/refs/tags/v1.0.13.tar.gz
 https://github.com/fukuchi/libqrencode/archive/refs/tags/v4.1.1.tar.gz
 https://github.com/g-truc/glm/archive/refs/tags/0.9.9.8.tar.gz
 https://github.com/gabime/spdlog/archive/refs/tags/v1.12.0.tar.gz
+https://github.com/gambit/gambit/archive/refs/tags/v4.9.5.tar.gz
 https://github.com/gavinhoward/bc/archive/refs/tags/6.6.0.tar.gz
 https://github.com/gavinhoward/bc/archive/refs/tags/6.6.1.tar.gz
 https://github.com/gavinhoward/bc/archive/refs/tags/6.7.0.tar.gz
@@ -642,6 +646,7 @@ https://github.com/google/minijail/archive/refs/tags/linux-v18.tar.gz
 https://github.com/google/re2/archive/refs/tags/2023-09-01.tar.gz
 https://github.com/google/shaderc/archive/refs/tags/v2023.6.tar.gz
 https://github.com/google/shaderc/archive/refs/tags/v2023.7.tar.gz
+https://github.com/google/snappy/archive/refs/tags/1.1.10.tar.gz
 https://github.com/google/snappy/archive/refs/tags/1.1.9.tar.gz
 https://github.com/google/woff2/archive/refs/tags/v1.0.2.tar.gz
 https://github.com/googlefonts/noto-fonts/archive/refs/tags/v20201206-phase3.tar.gz
@@ -955,6 +960,7 @@ https://github.com/qt/qtwayland/archive/refs/tags/v6.5.2.tar.gz
 https://github.com/qt/qtwayland/archive/refs/tags/v6.5.3.tar.gz
 https://github.com/qt/qtwayland/archive/refs/tags/v6.6.0.tar.gz
 https://github.com/quictls/openssl/archive/refs/tags/openssl-3.1.2-quic1.tar.gz
+https://github.com/quictls/openssl/archive/refs/tags/openssl-3.1.4-quic1.tar.gz
 https://github.com/redis/hiredis/archive/refs/tags/v1.2.0.tar.gz
 https://github.com/redis/redis/archive/refs/tags/7.2.0.tar.gz
 https://github.com/redis/redis/archive/refs/tags/7.2.2.tar.gz
@@ -1065,6 +1071,7 @@ https://github.com/tvrzna/emptty/archive/refs/tags/v0.11.0.tar.gz
 https://github.com/uclouvain/openjpeg/archive/refs/tags/v2.5.0.tar.gz
 https://github.com/unicode-org/icu/archive/refs/tags/release-70-1.tar.gz
 https://github.com/upx/upx/releases/download/v4.1.0/upx-4.1.0-src.tar.xz
+https://github.com/upx/upx/releases/download/v4.2.0/upx-4.2.0-src.tar.xz
 https://github.com/uriparser/uriparser/archive/refs/tags/uriparser-0.9.6.tar.gz
 https://github.com/util-linux/util-linux/archive/refs/tags/v2.39.1.tar.gz
 https://github.com/uutils/coreutils/archive/refs/tags/0.0.8.tar.gz
@@ -1186,6 +1193,7 @@ https://gitlab.gnome.org/GNOME/libsecret/-/archive/0.20.4/libsecret-0.20.4.tar.b
 https://gitlab.gnome.org/GNOME/libsecret/-/archive/0.21.1/libsecret-0.21.1.tar.bz2
 https://gitlab.gnome.org/GNOME/libsoup/-/archive/3.4.2/libsoup-3.4.2.tar.bz2
 https://gitlab.gnome.org/GNOME/libsoup/-/archive/3.4.3/libsoup-3.4.3.tar.bz2
+https://gitlab.gnome.org/GNOME/libsoup/-/archive/3.4.4/libsoup-3.4.4.tar.bz2
 https://gitlab.gnome.org/GNOME/libxml2/-/archive/v2.11.4/libxml2-v2.11.4.tar.bz2
 https://gitlab.gnome.org/GNOME/libxslt/-/archive/v1.1.38/libxslt-v1.1.38.tar.bz2
 https://gitlab.gnome.org/GNOME/mutter/-/archive/44.beta/mutter-44.beta.tar.bz2
@@ -1345,6 +1353,7 @@ https://www.gnupg.org/ftp/gcrypt/gnupg/gnupg-2.2.40.tar.bz2
 https://www.gnupg.org/ftp/gcrypt/gnupg/gnupg-2.4.3.tar.bz2
 https://www.gnupg.org/ftp/gcrypt/gnutls/v3.8/gnutls-3.8.1.tar.xz
 https://www.gnupg.org/ftp/gcrypt/gpgme/gpgme-1.22.0.tar.bz2
+https://www.gnupg.org/ftp/gcrypt/gpgme/gpgme-1.23.0.tar.bz2
 https://www.gnupg.org/ftp/gcrypt/libassuan/libassuan-2.5.5.tar.bz2
 https://www.gnupg.org/ftp/gcrypt/libksba/libksba-1.6.3.tar.bz2
 https://www.gnupg.org/ftp/gcrypt/npth/npth-1.6.tar.bz2

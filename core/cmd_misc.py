@@ -84,7 +84,7 @@ def do_fetch(url, path, sha, *mirrors):
 
     for f, best_effort in iter_fetch(url, path, sha, mirrors):
         try:
-            f()
+            f(int(tout))
             return check_md5(path, sha)
         except Exception as e:
             if best_effort:
@@ -98,7 +98,7 @@ def do_fetch(url, path, sha, *mirrors):
 
                 print(f'while fetching {url}: {e}, will retry after {tout}')
                 time.sleep(tout)
-                tout = min(tout * 1.5, 60)
+                tout = min(tout * 1.2, 60)
 
 
 def check_md5(path, old_cs):

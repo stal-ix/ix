@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://github.com/exfatprogs/exfatprogs/releases/download/1.2.0/exfatprogs-1.2.0.tar.xz
-sha:56d9a49465deafc367d428afc71c8098705a30ee19a3cdf3c5320650b8880742
+https://github.com/exfatprogs/exfatprogs/archive/refs/tags/1.2.2.tar.gz
+sha:16b28c9130b4dfab0b571dce6d2959d2ee93fce27aa0f4b2c1bb30700f371393
 {% endblock %}
 
 {% block bld_libs %}
