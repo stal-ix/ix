@@ -2,7 +2,7 @@
 
 {% block fetch %}
 https://github.com/neovim/libtermkey/archive/refs/tags/v0.20.tar.gz
-md5:d54de8576437ba8042333742aac2cd94
+sha:7567e1de8232bf4a35cb713456c63b329755b56182bdc2c9cebfa0f0192615dd
 {% endblock %}
 
 {% block lib_deps %}
