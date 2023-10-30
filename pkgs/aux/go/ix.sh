@@ -26,9 +26,15 @@ extract 1 ../net/*
 {% endblock %}
 
 {% block build %}
+set -xue
+
 export GOCACHE=${tmp}/cgo
 export GOMODCACHE=${tmp}/gmc
 export GOPROXY="https://proxy.golang.org,direct"
+
+{% if refine %}
+{{refine | b64d}}
+{% endif %}
 
 find . -type f -name go.mod | while read l; do (
     cd $(dirname ${l})

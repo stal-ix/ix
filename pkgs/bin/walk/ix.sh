@@ -1,11 +1,16 @@
 {% extends '//die/go/pure.sh' %}
 
 {% block go_url %}
-https://github.com/antonmedv/walk/archive/refs/tags/v1.6.2.tar.gz
+https://github.com/antonmedv/walk/archive/refs/tags/v1.7.0.tar.gz
 {% endblock %}
 
 {% block go_sha %}
-95ea5b367c3c4b098553f29e1a95e3b9a2a8331d61267d3b11593a11aad89575
+f355ec5b6658ee862885a279fe10dba5105af03403c4497e7241253d74f98b21
+{% endblock %}
+
+{% block go_refine %}
+sed -e 's|go 1.17|go 1.21|' -i go.mod
+go mod tidy -compat=1.21
 {% endblock %}
 
 {% block install %}

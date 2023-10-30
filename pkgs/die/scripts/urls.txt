@@ -352,6 +352,7 @@ https://github.com/ARMmbed/mbedtls/archive/refs/tags/v3.4.1.tar.gz
 https://github.com/ARMmbed/mbedtls/archive/refs/tags/v3.5.0.tar.gz
 https://github.com/AbiWord/enchant/releases/download/v2.5.0/enchant-2.5.0.tar.gz
 https://github.com/AbiWord/enchant/releases/download/v2.6.1/enchant-2.6.1.tar.gz
+https://github.com/AbiWord/enchant/releases/download/v2.6.2/enchant-2.6.2.tar.gz
 https://github.com/AcademySoftwareFoundation/Imath/archive/refs/tags/v3.1.9.tar.gz
 https://github.com/AcademySoftwareFoundation/openexr/archive/refs/tags/v3.2.0.tar.gz
 https://github.com/AcademySoftwareFoundation/openexr/archive/refs/tags/v3.2.1.tar.gz
@@ -523,6 +524,7 @@ https://github.com/bytecodealliance/wasm-micro-runtime/archive/refs/tags/WAMR-1.
 https://github.com/c-ares/c-ares/archive/refs/tags/cares-1_19_1.tar.gz
 https://github.com/c-ares/c-ares/archive/refs/tags/cares-1_20_0.tar.gz
 https://github.com/c-ares/c-ares/archive/refs/tags/cares-1_20_1.tar.gz
+https://github.com/c-ares/c-ares/archive/refs/tags/cares-1_21_0.tar.gz
 https://github.com/capstone-engine/capstone/archive/refs/tags/5.0-rc2.tar.gz
 https://github.com/catboost/catboost/archive/refs/tags/v1.0.6.tar.gz
 https://github.com/cboxdoerfer/fsearch/archive/refs/tags/0.2.3.tar.gz
@@ -588,6 +590,7 @@ https://github.com/epasveer/seer/archive/refs/tags/v2.2.tar.gz
 https://github.com/eranif/codelite/releases/download/17.0.0/codelite-17.0.0.tar.gz
 https://github.com/ericniebler/range-v3/archive/refs/tags/0.12.0.tar.gz
 https://github.com/etcd-io/etcd/archive/refs/tags/v3.4.22.tar.gz
+https://github.com/etcd-io/etcd/archive/refs/tags/v3.5.10.tar.gz
 https://github.com/evanw/esbuild/archive/refs/tags/v0.18.14.tar.gz
 https://github.com/exfatprogs/exfatprogs/archive/refs/tags/1.2.2.tar.gz
 https://github.com/exfatprogs/exfatprogs/releases/download/1.2.0/exfatprogs-1.2.0.tar.xz
@@ -717,6 +720,7 @@ https://github.com/jjsullivan5196/wvkbd/archive/refs/tags/v0.14.1.tar.gz
 https://github.com/jjsullivan5196/wvkbd/archive/refs/tags/v0.14.tar.gz
 https://github.com/johnsonjh/OpenVi/archive/refs/tags/7.4.23.tar.gz
 https://github.com/johnsonjh/OpenVi/archive/refs/tags/7.4.24.tar.gz
+https://github.com/johnsonjh/OpenVi/archive/refs/tags/7.4.25.tar.gz
 https://github.com/jonas/tig/archive/refs/tags/tig-2.5.8.tar.gz
 https://github.com/josuttis/jthread/archive/0fa8d394254886c555d6faccd0a3de819b7d47f8.tar.gz
 https://github.com/jovanlanik/gtklock/archive/refs/tags/v2.0.1.tar.gz
@@ -859,6 +863,7 @@ https://github.com/namhyung/uftrace/archive/refs/tags/v0.12.tar.gz
 https://github.com/nemtrif/utfcpp/archive/refs/tags/v3.2.4.tar.gz
 https://github.com/nemtrif/utfcpp/archive/refs/tags/v3.2.5.tar.gz
 https://github.com/nemtrif/utfcpp/archive/refs/tags/v4.0.0.tar.gz
+https://github.com/nemtrif/utfcpp/archive/refs/tags/v4.0.1.tar.gz
 https://github.com/neomutt/neomutt/archive/refs/tags/20220429.tar.gz
 https://github.com/neomutt/neomutt/archive/refs/tags/20231006.tar.gz
 https://github.com/neovim/libtermkey/archive/refs/tags/v0.20.tar.gz
@@ -867,6 +872,7 @@ https://github.com/neovim/neovim/archive/refs/tags/v0.9.4.tar.gz
 https://github.com/netwide-assembler/nasm/archive/refs/tags/nasm-2.16.01.tar.gz
 https://github.com/nghttp2/nghttp2/archive/refs/tags/v1.56.0.tar.gz
 https://github.com/nghttp2/nghttp2/archive/refs/tags/v1.57.0.tar.gz
+https://github.com/nghttp2/nghttp2/archive/refs/tags/v1.58.0.tar.gz
 https://github.com/ngtcp2/nghttp3/archive/refs/tags/v0.15.0.tar.gz
 https://github.com/ngtcp2/nghttp3/archive/refs/tags/v1.0.0.tar.gz
 https://github.com/ngtcp2/ngtcp2/archive/refs/tags/v0.19.0.tar.gz
@@ -1091,6 +1097,7 @@ https://github.com/void-linux/musl-fts/archive/refs/tags/v1.2.7.tar.gz
 https://github.com/void-linux/musl-obstack/archive/refs/tags/v1.2.2.tar.gz
 https://github.com/vslavik/poedit/releases/download/v3.3.2-oss/poedit-3.3.2.tar.gz
 https://github.com/vslavik/poedit/releases/download/v3.4-oss/poedit-3.4.tar.gz
+https://github.com/vslavik/poedit/releases/download/v3.4.1-oss/poedit-3.4.1.tar.gz
 https://github.com/vstakhov/libucl/archive/refs/tags/0.8.2.tar.gz
 https://github.com/warmcat/libwebsockets/archive/refs/tags/v4.3.2.tar.gz
 https://github.com/wasmx/fizzy/archive/refs/tags/v0.8.0.tar.gz
@@ -1098,6 +1105,7 @@ https://github.com/webmproject/libvpx/archive/refs/tags/v1.13.0.tar.gz
 https://github.com/weechat/weechat/archive/refs/tags/v4.0.4.tar.gz
 https://github.com/weechat/weechat/archive/refs/tags/v4.0.5.tar.gz
 https://github.com/weechat/weechat/archive/refs/tags/v4.1.0.tar.gz
+https://github.com/weechat/weechat/archive/refs/tags/v4.1.1.tar.gz
 https://github.com/westes/flex/archive/refs/tags/flex-2-5-10.tar.gz
 https://github.com/westes/flex/files/981163/flex-2.6.4.tar.gz
 https://github.com/wfeldt/libx86emu/archive/refs/tags/3.5.tar.gz
@@ -1354,6 +1362,7 @@ https://www.gnupg.org/ftp/gcrypt/gnupg/gnupg-2.4.3.tar.bz2
 https://www.gnupg.org/ftp/gcrypt/gnutls/v3.8/gnutls-3.8.1.tar.xz
 https://www.gnupg.org/ftp/gcrypt/gpgme/gpgme-1.22.0.tar.bz2
 https://www.gnupg.org/ftp/gcrypt/gpgme/gpgme-1.23.0.tar.bz2
+https://www.gnupg.org/ftp/gcrypt/gpgme/gpgme-1.23.1.tar.bz2
 https://www.gnupg.org/ftp/gcrypt/libassuan/libassuan-2.5.5.tar.bz2
 https://www.gnupg.org/ftp/gcrypt/libksba/libksba-1.6.3.tar.bz2
 https://www.gnupg.org/ftp/gcrypt/npth/npth-1.6.tar.bz2
