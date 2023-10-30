@@ -1,6 +1,6 @@
 {% extends 't/ix.sh' %}
 
-{% block install %}
+{% block cmake_flags %}
 {{super()}}
-cp ${out}/lib/libpodofo.so ${out}/lib/libpodofo.a
+PODOFO_BUILD_LIB_ONLY=ON
 {% endblock %}

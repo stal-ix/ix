@@ -20,6 +20,8 @@ lib/unistring
 lib/fontconfig
 {% endblock %}
 
-{% block build_flags %}
-wrap_cc
+{% block cmake_flags %}
+PODOFO_BUILD_TEST=OFF
+PODOFO_BUILD_EXAMPLES=OFF
+PODOFO_BUILD_STATIC=ON
 {% endblock %}
