@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://downloads.sourceforge.net/project/podofo/podofo/0.9.8/podofo-0.9.8.tar.gz
-sha:5de607e15f192b8ad90738300759d88dea0f5ccdce3bf00048a0c932bc645154
+https://github.com/podofo/podofo/archive/refs/tags/0.10.2.tar.gz
+sha:565168132e8fbfcdbad4ea4c5567bcc57ebbffb4528f6273baf3f490a3cf7563
 {% endblock %}
 
 {% block lib_deps %}
@@ -13,8 +13,15 @@ lib/c++
 lib/png
 lib/tiff
 lib/jpeg
+lib/xml/2
 lib/openssl
 lib/freetype
 lib/unistring
 lib/fontconfig
+{% endblock %}
+
+{% block cmake_flags %}
+PODOFO_BUILD_TEST=OFF
+PODOFO_BUILD_EXAMPLES=OFF
+PODOFO_BUILD_STATIC=ON
 {% endblock %}

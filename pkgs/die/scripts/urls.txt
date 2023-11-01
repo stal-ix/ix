@@ -100,6 +100,7 @@ https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.5.6.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.5.7.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.5.8.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.5.9.tar.xz
+https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.6.tar.xz
 https://cmocka.org/files/1.1/cmocka-1.1.7.tar.xz
 https://codeberg.org/dnkl/fcft/archive/2.5.0.tar.gz
 https://codeberg.org/dnkl/fcft/archive/3.1.6.tar.gz
@@ -199,6 +200,7 @@ https://downloads.sourceforge.net/project/nfs/nfs-utils/2.6.3/nfs-utils-2.6.3.ta
 https://downloads.sourceforge.net/project/pcre/pcre/8.45/pcre-8.45.tar.bz2
 https://downloads.sourceforge.net/project/podofo/podofo/0.9.8/podofo-0.9.8.tar.gz
 https://downloads.sourceforge.net/project/qmmp-dev/qmmp/2.1/qmmp-2.1.4.tar.bz2
+https://downloads.sourceforge.net/project/sbcl/sbcl/2.3.10/sbcl-2.3.10-source.tar.bz2
 https://downloads.sourceforge.net/project/scons/scons/4.5.2/SCons-4.5.2.tar.gz
 https://downloads.sourceforge.net/project/sdlgfx/SDL_gfx-2.0.25.tar.gz
 https://downloads.sourceforge.net/project/sox/sox/14.4.2/sox-14.4.2.tar.bz2
@@ -493,6 +495,7 @@ https://github.com/anrieff/libcpuid/archive/refs/tags/v0.6.3.tar.gz
 https://github.com/anrieff/libcpuid/archive/refs/tags/v0.6.4.tar.gz
 https://github.com/antonmedv/llama/archive/refs/tags/v1.4.0.tar.gz
 https://github.com/antonmedv/walk/archive/refs/tags/v1.6.2.tar.gz
+https://github.com/antonmedv/walk/archive/refs/tags/v1.7.0.tar.gz
 https://github.com/apache/serf/archive/refs/tags/1.3.9.tar.gz
 https://github.com/apenwarr/redo/archive/refs/tags/redo-0.42d.tar.gz
 https://github.com/apernet/hysteria/archive/refs/tags/app/v2.0.0.tar.gz
@@ -501,6 +504,7 @@ https://github.com/apernet/hysteria/archive/refs/tags/app/v2.0.2.tar.gz
 https://github.com/apernet/hysteria/archive/refs/tags/app/v2.0.4.tar.gz
 https://github.com/apernet/hysteria/archive/refs/tags/app/v2.1.0.tar.gz
 https://github.com/apernet/hysteria/archive/refs/tags/app/v2.1.1.tar.gz
+https://github.com/apernet/hysteria/archive/refs/tags/app/v2.2.0.tar.gz
 https://github.com/apple/swift-corelibs-libdispatch/archive/refs/tags/swift-5.8-RELEASE.tar.gz
 https://github.com/apple/swift-corelibs-libdispatch/archive/refs/tags/swift-5.9-RELEASE.tar.gz
 https://github.com/appneta/tcpreplay/releases/download/v4.4.4/tcpreplay-4.4.4.tar.xz
@@ -647,6 +651,7 @@ https://github.com/google/gumbo-parser/archive/refs/tags/v0.10.1.tar.gz
 https://github.com/google/highway/archive/refs/tags/1.0.5.tar.gz
 https://github.com/google/minijail/archive/refs/tags/linux-v18.tar.gz
 https://github.com/google/re2/archive/refs/tags/2023-09-01.tar.gz
+https://github.com/google/re2/archive/refs/tags/2023-11-01.tar.gz
 https://github.com/google/shaderc/archive/refs/tags/v2023.6.tar.gz
 https://github.com/google/shaderc/archive/refs/tags/v2023.7.tar.gz
 https://github.com/google/snappy/archive/refs/tags/1.1.10.tar.gz
@@ -812,6 +817,7 @@ https://github.com/llvm/llvm-project/releases/download/llvmorg-17.0.0-rc4/llvm-p
 https://github.com/llvm/llvm-project/releases/download/llvmorg-17.0.1/llvm-project-17.0.1.src.tar.xz
 https://github.com/llvm/llvm-project/releases/download/llvmorg-17.0.2/llvm-project-17.0.2.src.tar.xz
 https://github.com/llvm/llvm-project/releases/download/llvmorg-17.0.3/llvm-project-17.0.3.src.tar.xz
+https://github.com/llvm/llvm-project/releases/download/llvmorg-17.0.4/llvm-project-17.0.4.src.tar.xz
 https://github.com/lm-sensors/lm-sensors/archive/refs/tags/V3-6-0.tar.gz
 https://github.com/lsof-org/lsof/archive/refs/tags/4.98.0.tar.gz
 https://github.com/lsyncd/lsyncd/archive/refs/tags/v2.3.1.tar.gz
@@ -892,6 +898,7 @@ https://github.com/numactl/numactl/archive/refs/tags/v2.0.16.tar.gz
 https://github.com/nwg-piotr/nwg-dock/archive/refs/tags/v0.3.1.tar.gz
 https://github.com/nwg-piotr/nwg-drawer/archive/refs/tags/v0.3.7.tar.gz
 https://github.com/nwg-piotr/nwg-launchers/archive/refs/tags/v0.6.3.tar.gz
+https://github.com/nwg-piotr/nwg-look/archive/refs/tags/v0.2.4.tar.gz
 https://github.com/nwg-piotr/nwg-menu/archive/refs/tags/v0.1.1.tar.gz
 https://github.com/oneapi-src/oneTBB/archive/refs/tags/v2021.7.0.tar.gz
 https://github.com/onetrueawk/awk/archive/refs/tags/20220122.tar.gz
@@ -919,6 +926,7 @@ https://github.com/phillipberndt/pqiv/archive/refs/tags/2.12.tar.gz
 https://github.com/pkgconf/pkgconf/archive/refs/tags/pkgconf-2.0.2.tar.gz
 https://github.com/pkgconf/pkgconf/archive/refs/tags/pkgconf-2.0.3.tar.gz
 https://github.com/plougher/squashfs-tools/archive/refs/tags/4.6.1.tar.gz
+https://github.com/podofo/podofo/archive/refs/tags/0.10.2.tar.gz
 https://github.com/posva/catimg/archive/refs/tags/2.7.0.tar.gz
 https://github.com/premake/premake-core/archive/refs/tags/v5.0.0-beta2.tar.gz
 https://github.com/protobuf-c/protobuf-c/archive/refs/tags/v1.4.1.tar.gz
@@ -998,12 +1006,14 @@ https://github.com/sabotage-linux/netbsd-curses/archive/refs/tags/v0.3.2.tar.gz
 https://github.com/sammycage/lunasvg/archive/refs/tags/v2.3.8.tar.gz
 https://github.com/sass/libsass/archive/refs/tags/3.6.5.tar.gz
 https://github.com/sass/sassc/archive/refs/tags/3.6.2.tar.gz
+https://github.com/sbcl/sbcl/archive/refs/tags/sbcl-2.3.10.tar.gz
 https://github.com/sctplab/usrsctp/archive/refs/tags/0.9.5.0.tar.gz
 https://github.com/sddm/sddm/archive/refs/tags/v0.20.0.tar.gz
 https://github.com/seccomp/libseccomp/archive/refs/tags/v2.5.4.tar.gz
 https://github.com/sekrit-twc/zimg/archive/refs/tags/release-3.0.4.tar.gz
 https://github.com/shadow-maint/shadow/archive/refs/tags/4.13.tar.gz
 https://github.com/shadow-maint/shadow/archive/refs/tags/4.14.1.tar.gz
+https://github.com/shadow-maint/shadow/archive/refs/tags/4.14.2.tar.gz
 https://github.com/shadowsocks/go-shadowsocks2/archive/refs/tags/v0.1.5.tar.gz
 https://github.com/shadowsocks/shadowsocks-libev/releases/download/v3.3.5/shadowsocks-libev-3.3.5.tar.gz
 https://github.com/sharkdp/bat/archive/refs/tags/v0.18.3.tar.gz
@@ -1112,6 +1122,7 @@ https://github.com/wfeldt/libx86emu/archive/refs/tags/3.5.tar.gz
 https://github.com/wireshark/wireshark/archive/refs/tags/v4.1.0.tar.gz
 https://github.com/wmww/gtk-layer-shell/archive/refs/tags/v0.8.0.tar.gz
 https://github.com/wolfSSL/wolfssl/archive/refs/tags/v5.6.3-stable.tar.gz
+https://github.com/wolfSSL/wolfssl/archive/refs/tags/v5.6.4-stable.tar.gz
 https://github.com/wtfutil/wtf/archive/refs/tags/v0.41.0.tar.gz
 https://github.com/wxMaxima-developers/wxmaxima/archive/refs/tags/Version-23.07.0.tar.gz
 https://github.com/wxWidgets/wxWidgets/releases/download/v3.2.2.1/wxWidgets-3.2.2.1.tar.bz2
@@ -1145,6 +1156,7 @@ https://gitlab.com/inkscape/lib2geom/-/archive/1.2.2/lib2geom-1.2.2.tar.bz2
 https://gitlab.com/interception/linux/tools/-/archive/v0.6.8/tools-v0.6.8.tar.bz2
 https://gitlab.com/jeanfi/psensor/-/archive/1.2.1/psensor-1.2.1.tar.bz2
 https://gitlab.com/mbunkus/mkvtoolnix/-/archive/release-79.0/mkvtoolnix-release-79.0.tar.bz2
+https://gitlab.com/mbunkus/mkvtoolnix/-/archive/release-80.0/mkvtoolnix-release-80.0.tar.bz2
 https://gitlab.com/procps-ng/procps/-/archive/v4.0.4/procps-v4.0.4.tar.bz2
 https://gitlab.com/psmisc/psmisc/-/archive/v23.6/psmisc-v23.6.tar.bz2
 https://gitlab.com/qemu-project/keycodemapdb/-/archive/22b8996dba9041874845c7446ce89ec4ae2b713d/keycodemapdb-22b8996dba9041874845c7446ce89ec4ae2b713d.tar.bz2
@@ -1328,6 +1340,7 @@ https://storage.googleapis.com/aom-releases/libaom-3.7.0.tar.gz
 https://storage.googleapis.com/downloads.webmproject.org/releases/webp/libwebp-1.3.1.tar.gz
 https://storage.googleapis.com/downloads.webmproject.org/releases/webp/libwebp-1.3.2.tar.gz
 https://strace.io/files/6.5/strace-6.5.tar.xz
+https://strace.io/files/6.6/strace-6.6.tar.xz
 https://taglib.org/releases/taglib-1.13.1.tar.gz
 https://the.earth.li/~sgtatham/putty/0.76/putty-0.76.tar.gz
 https://thekelleys.org.uk/dnsmasq/dnsmasq-2.89.tar.xz
@@ -1382,6 +1395,7 @@ https://www.kernel.org/pub/linux/utils/fs/xfs/xfsprogs/xfsprogs-6.4.0.tar.xz
 https://www.kernel.org/pub/linux/utils/fs/xfs/xfsprogs/xfsprogs-6.5.0.tar.xz
 https://www.kernel.org/pub/linux/utils/usb/usbutils/usbutils-014.tar.xz
 https://www.kernel.org/pub/linux/utils/usb/usbutils/usbutils-016.tar.xz
+https://www.kernel.org/pub/linux/utils/usb/usbutils/usbutils-017.tar.xz
 https://www.kernel.org/pub/software/network/iw/iw-5.19.tar.xz
 https://www.kernel.org/pub/software/utils/dtc/dtc-1.7.0.tar.xz
 https://www.leonerd.org.uk/code/libvterm/libvterm-0.3.tar.gz

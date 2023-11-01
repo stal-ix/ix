@@ -42,6 +42,9 @@ def validate(nodes):
 
 
 def slots(t):
+    if t > 16:
+        return int(t**0.5)
+
     if t > 11:
         return 4
 

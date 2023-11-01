@@ -6,6 +6,7 @@ EOF
 
 ls bin/kernel-* | sort -r | while read l; do
     cat << EOF >> etc/grub.cfg
+insmod all_video
 menuentry "${l}" {
     linux /${l} ro root=PARTUUID=\$rootuuid
     boot
