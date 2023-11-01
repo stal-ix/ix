@@ -64,6 +64,6 @@ def iter_meth():
     yield fetch_url_impl
 
 
-def iter_fetch_url(url, out):
+def iter_fetch_url(url):
     for meth in iter_meth():
-        yield functools.partial(meth, url, out)
+        yield functools.partial(meth, url)

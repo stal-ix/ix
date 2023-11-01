@@ -63,17 +63,17 @@ def iter_cached(sha, mirrors):
         yield os.path.join(x, sha[4:])
 
 
-def iter_fetch(url, path, sha, mirrors):
+def iter_fetch(url, sha, mirrors):
     if sha.startswith('sha:') and len(sha) == 68:
         def it():
             for u in iter_cached(sha, mirrors):
-                yield from chf.iter_fetch_url(u, path)
+                yield from chf.iter_fetch_url(u)
 
         for f in list(sorted(list(it()), key=lambda x: random.random()))[:10]:
             yield f, True
 
     while True:
-        for f in chf.iter_fetch_url(url, path):
+        for f in chf.iter_fetch_url(url):
             yield f, False
 
 
@@ -82,9 +82,9 @@ def do_fetch(url, path, sha, *mirrors):
 
     tout = 1.0
 
-    for f, best_effort in iter_fetch(url, path, sha, mirrors):
+    for f, best_effort in iter_fetch(url, sha, mirrors):
         try:
-            f(int(tout))
+            f(path, int(tout))
             return check_md5(path, sha)
         except Exception as e:
             if best_effort:
