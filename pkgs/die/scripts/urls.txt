@@ -1348,6 +1348,7 @@ https://taglib.org/releases/taglib-1.13.1.tar.gz
 https://the.earth.li/~sgtatham/putty/0.76/putty-0.76.tar.gz
 https://thekelleys.org.uk/dnsmasq/dnsmasq-2.89.tar.xz
 https://tukaani.org/xz/xz-5.4.4.tar.xz
+https://tukaani.org/xz/xz-5.4.5.tar.xz
 https://w1.fi/releases/wpa_supplicant-2.10.tar.gz
 https://waf.io/waf-2.0.26.tar.bz2
 https://waterlan.home.xs4all.nl/dos2unix/dos2unix-7.5.1.tar.gz
