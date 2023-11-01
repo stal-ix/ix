@@ -136,6 +136,7 @@ https://dl.suckless.org/tools/9base-6.tar.gz
 https://dl.xpdfreader.com/xpdf-4.04.tar.gz
 https://dotat.at/prog/unifdef/unifdef-2.12.tar.xz
 https://download.gnome.org/sources/atkmm/2.28/atkmm-2.28.2.tar.xz
+https://download.gnome.org/sources/dconf/0.40/dconf-0.40.0.tar.xz
 https://download.gnome.org/sources/evince/44/evince-44.3.tar.xz
 https://download.gnome.org/sources/evince/45/evince-45.0.tar.xz
 https://download.gnome.org/sources/gdk-pixbuf/2.42/gdk-pixbuf-2.42.6.tar.xz
@@ -978,6 +979,7 @@ https://github.com/quictls/openssl/archive/refs/tags/openssl-3.1.4-quic1.tar.gz
 https://github.com/redis/hiredis/archive/refs/tags/v1.2.0.tar.gz
 https://github.com/redis/redis/archive/refs/tags/7.2.0.tar.gz
 https://github.com/redis/redis/archive/refs/tags/7.2.2.tar.gz
+https://github.com/redis/redis/archive/refs/tags/7.2.3.tar.gz
 https://github.com/relan/exfat/releases/download/v1.4.0/exfat-utils-1.4.0.tar.gz
 https://github.com/rfc1036/whois/archive/refs/tags/v5.5.18.tar.gz
 https://github.com/rfc1036/whois/archive/refs/tags/v5.5.19.tar.gz
