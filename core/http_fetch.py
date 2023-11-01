@@ -17,7 +17,7 @@ def fetch_url_impl(url, out, tout):
     print(f'fetch {url} into {out}')
 
     def iter_chunks():
-        r = ur.urlopen(url)
+        r = ur.urlopen(url, timeout=tout)
 
         while True:
             c = r.read(1 * 1024 * 1024)
