@@ -1,0 +1,26 @@
+--- a/Telegram/SourceFiles/payments/payments_form.cpp
++++ b/Telegram/SourceFiles/payments/payments_form.cpp
+@@ -299,7 +299,7 @@
+ 					users->users
+ 				) | ranges::views::transform([](not_null<UserData*> user) {
+ 					return MTPInputUser(user->inputUser);
+-				}) | ranges::to<QVector>),
++				}) | ranges::to<QVector<MTPInputUser>>),
+ 				users->boostPeer ? users->boostPeer->input : MTPInputPeer(),
+ 				MTP_string(giftCode.currency),
+ 				MTP_long(giftCode.amount)),
+@@ -325,12 +325,12 @@
+ 					giveaway.additionalChannels
+ 				) | ranges::views::transform([](not_null<ChannelData*> c) {
+ 					return MTPInputPeer(c->input);
+-				}) | ranges::to<QVector>()),
++				}) | ranges::to<QVector<MTPInputPeer>>()),
+ 				MTP_vector<MTPstring>(ranges::views::all(
+ 					giveaway.countries
+ 				) | ranges::views::transform([](QString value) {
+ 					return MTP_string(value);
+-				}) | ranges::to<QVector>()),
++				}) | ranges::to<QVector<MTPstring>>()),
+ 				MTP_long(giftCode.randomId),
+ 				MTP_int(giveaway.untilDate),
+ 				MTP_string(giftCode.currency),
