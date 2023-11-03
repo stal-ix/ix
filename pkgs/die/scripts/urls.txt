@@ -363,6 +363,7 @@ https://github.com/AcademySoftwareFoundation/openexr/archive/refs/tags/v3.2.0.ta
 https://github.com/AcademySoftwareFoundation/openexr/archive/refs/tags/v3.2.1.tar.gz
 https://github.com/Alexays/Waybar/archive/refs/tags/0.9.22.tar.gz
 https://github.com/Alexays/Waybar/archive/refs/tags/0.9.23.tar.gz
+https://github.com/Alexays/Waybar/archive/refs/tags/0.9.24.tar.gz
 https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs10012/ghostscript-10.01.2.tar.gz
 https://github.com/ArtifexSoftware/jbig2dec/archive/refs/tags/0.19.tar.gz
 https://github.com/ArtifexSoftware/jbig2dec/archive/refs/tags/0.20.tar.gz
