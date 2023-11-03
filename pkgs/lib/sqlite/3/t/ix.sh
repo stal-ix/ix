@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://sqlite.org/2023/sqlite-autoconf-3430200.tar.gz
-sha:6d422b6f62c4de2ca80d61860e3a3fb693554d2f75bb1aaca743ccc4d6f609f0
+https://sqlite.org/2023/sqlite-autoconf-3440000.tar.gz
+sha:b9cd386e7cd22af6e0d2a0f06d0404951e1bef109e42ea06cc0450e10cd15550
 {% endblock %}
 
 {% block lib_deps %}

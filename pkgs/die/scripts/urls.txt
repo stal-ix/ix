@@ -136,6 +136,7 @@ https://dl.suckless.org/tools/9base-6.tar.gz
 https://dl.xpdfreader.com/xpdf-4.04.tar.gz
 https://dotat.at/prog/unifdef/unifdef-2.12.tar.xz
 https://download.gnome.org/sources/atkmm/2.28/atkmm-2.28.2.tar.xz
+https://download.gnome.org/sources/dconf/0.40/dconf-0.40.0.tar.xz
 https://download.gnome.org/sources/evince/44/evince-44.3.tar.xz
 https://download.gnome.org/sources/evince/45/evince-45.0.tar.xz
 https://download.gnome.org/sources/gdk-pixbuf/2.42/gdk-pixbuf-2.42.6.tar.xz
@@ -260,6 +261,7 @@ https://ftp.gnu.org/gnu/ed/ed-1.19.tar.lz
 https://ftp.gnu.org/gnu/findutils/findutils-4.8.0.tar.xz
 https://ftp.gnu.org/gnu/gawk/gawk-5.1.1.tar.xz
 https://ftp.gnu.org/gnu/gawk/gawk-5.2.1.tar.xz
+https://ftp.gnu.org/gnu/gawk/gawk-5.3.0.tar.xz
 https://ftp.gnu.org/gnu/gcc/gcc-10.4.0/gcc-10.4.0.tar.xz
 https://ftp.gnu.org/gnu/gcc/gcc-10.5.0/gcc-10.5.0.tar.xz
 https://ftp.gnu.org/gnu/gcc/gcc-7.5.0/gcc-7.5.0.tar.xz
@@ -359,6 +361,7 @@ https://github.com/AcademySoftwareFoundation/Imath/archive/refs/tags/v3.1.9.tar.
 https://github.com/AcademySoftwareFoundation/openexr/archive/refs/tags/v3.2.0.tar.gz
 https://github.com/AcademySoftwareFoundation/openexr/archive/refs/tags/v3.2.1.tar.gz
 https://github.com/Alexays/Waybar/archive/refs/tags/0.9.22.tar.gz
+https://github.com/Alexays/Waybar/archive/refs/tags/0.9.23.tar.gz
 https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs10012/ghostscript-10.01.2.tar.gz
 https://github.com/ArtifexSoftware/jbig2dec/archive/refs/tags/0.19.tar.gz
 https://github.com/ArtifexSoftware/jbig2dec/archive/refs/tags/0.20.tar.gz
@@ -389,6 +392,7 @@ https://github.com/GNOME/libgudev/archive/refs/tags/237.tar.gz
 https://github.com/GNOME/libshumate/archive/refs/tags/1.0.5.tar.gz
 https://github.com/GNOME/libshumate/archive/refs/tags/1.1.0.tar.gz
 https://github.com/GNOME/libshumate/archive/refs/tags/1.1.1.tar.gz
+https://github.com/GNOME/libshumate/archive/refs/tags/1.1.2.tar.gz
 https://github.com/GStreamer/orc/archive/refs/tags/0.4.34.tar.gz
 https://github.com/Genivia/ugrep/archive/refs/tags/v4.0.5.tar.gz
 https://github.com/Genivia/ugrep/archive/refs/tags/v4.1.0.tar.gz
@@ -475,6 +479,7 @@ https://github.com/WerWolv/ImHex/releases/download/v1.19.1/Full.Sources.tar.gz
 https://github.com/Z3Prover/z3/archive/refs/tags/z3-4.12.2.tar.gz
 https://github.com/a-j-wood/pv/releases/download/v1.7.24/pv-1.7.24.tar.gz
 https://github.com/abseil/abseil-cpp/archive/refs/tags/20230125.3.tar.gz
+https://github.com/abseil/abseil-cpp/archive/refs/tags/20230802.1.tar.gz
 https://github.com/adah1972/libunibreak/archive/refs/tags/libunibreak_5_1.tar.gz
 https://github.com/adobe-fonts/source-code-pro/archive/refs/tags/2.038R-ro/1.058R-it/1.018R-VAR.tar.gz
 https://github.com/adobe-fonts/source-sans/archive/refs/tags/3.046R.tar.gz
@@ -600,6 +605,7 @@ https://github.com/exfatprogs/exfatprogs/archive/refs/tags/1.2.2.tar.gz
 https://github.com/exfatprogs/exfatprogs/releases/download/1.2.0/exfatprogs-1.2.0.tar.xz
 https://github.com/facebook/zstd/archive/refs/tags/v1.5.5.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.1.2.tar.gz
+https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.2.0.tar.gz
 https://github.com/fastfloat/fast_float/archive/refs/tags/v3.8.1.tar.gz
 https://github.com/fastfloat/fast_float/archive/refs/tags/v5.2.0.tar.gz
 https://github.com/fenrus75/powertop/archive/refs/tags/v2.15.tar.gz
@@ -628,6 +634,7 @@ https://github.com/geany/geany/archive/refs/tags/2.0.0.tar.gz
 https://github.com/gflags/gflags/archive/refs/tags/v2.2.2.tar.gz
 https://github.com/ggreer/the_silver_searcher/archive/refs/tags/2.2.0.tar.gz
 https://github.com/git/git/archive/refs/tags/v2.42.0.tar.gz
+https://github.com/git/git/archive/refs/tags/v2.42.1.tar.gz
 https://github.com/glencoesoftware/jxrlib/archive/refs/tags/v0.2.4.tar.gz
 https://github.com/glennrp/libpng/archive/refs/tags/v1.6.40.tar.gz
 https://github.com/glfw/glfw/archive/refs/tags/3.3.8.tar.gz
@@ -932,6 +939,7 @@ https://github.com/premake/premake-core/archive/refs/tags/v5.0.0-beta2.tar.gz
 https://github.com/protobuf-c/protobuf-c/archive/refs/tags/v1.4.1.tar.gz
 https://github.com/protocolbuffers/protobuf/archive/refs/tags/v24.3.tar.gz
 https://github.com/protocolbuffers/protobuf/archive/refs/tags/v24.4.tar.gz
+https://github.com/protocolbuffers/protobuf/archive/refs/tags/v25.0.tar.gz
 https://github.com/psemiletov/tea-qt/archive/refs/tags/62.0.2.tar.gz
 https://github.com/ptitSeb/gl4es/archive/refs/tags/v1.1.4.tar.gz
 https://github.com/pullmoll/musl-rpmatch/archive/refs/tags/v1.0.tar.gz
@@ -978,6 +986,7 @@ https://github.com/quictls/openssl/archive/refs/tags/openssl-3.1.4-quic1.tar.gz
 https://github.com/redis/hiredis/archive/refs/tags/v1.2.0.tar.gz
 https://github.com/redis/redis/archive/refs/tags/7.2.0.tar.gz
 https://github.com/redis/redis/archive/refs/tags/7.2.2.tar.gz
+https://github.com/redis/redis/archive/refs/tags/7.2.3.tar.gz
 https://github.com/relan/exfat/releases/download/v1.4.0/exfat-utils-1.4.0.tar.gz
 https://github.com/rfc1036/whois/archive/refs/tags/v5.5.18.tar.gz
 https://github.com/rfc1036/whois/archive/refs/tags/v5.5.19.tar.gz
@@ -1048,6 +1057,8 @@ https://github.com/telegramdesktop/tdesktop/releases/download/v4.10.2/tdesktop-4
 https://github.com/telegramdesktop/tdesktop/releases/download/v4.10.3/tdesktop-4.10.3-full.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v4.10.4/tdesktop-4.10.4-full.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v4.10.5/tdesktop-4.10.5-full.tar.gz
+https://github.com/telegramdesktop/tdesktop/releases/download/v4.11.2/tdesktop-4.11.2-full.tar.gz
+https://github.com/telegramdesktop/tdesktop/releases/download/v4.11.3/tdesktop-4.11.3-full.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v4.8.10/tdesktop-4.8.10-full.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v4.8.12/tdesktop-4.8.12-full.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v4.9.0/tdesktop-4.9.0-full.tar.gz
@@ -1088,6 +1099,7 @@ https://github.com/uclouvain/openjpeg/archive/refs/tags/v2.5.0.tar.gz
 https://github.com/unicode-org/icu/archive/refs/tags/release-70-1.tar.gz
 https://github.com/upx/upx/releases/download/v4.1.0/upx-4.1.0-src.tar.xz
 https://github.com/upx/upx/releases/download/v4.2.0/upx-4.2.0-src.tar.xz
+https://github.com/upx/upx/releases/download/v4.2.1/upx-4.2.1-src.tar.xz
 https://github.com/uriparser/uriparser/archive/refs/tags/uriparser-0.9.6.tar.gz
 https://github.com/util-linux/util-linux/archive/refs/tags/v2.39.1.tar.gz
 https://github.com/uutils/coreutils/archive/refs/tags/0.0.8.tar.gz
@@ -1292,6 +1304,7 @@ https://pawsa.fedorapeople.org/balsa/balsa-2.6.4.tar.xz
 https://pm-utils.freedesktop.org/releases/pm-utils-1.4.1.tar.gz
 https://poppler.freedesktop.org/poppler-23.09.0.tar.xz
 https://poppler.freedesktop.org/poppler-23.10.0.tar.xz
+https://poppler.freedesktop.org/poppler-23.11.0.tar.xz
 https://pwmt.org/projects/zathura-djvu/download/zathura-djvu-0.2.9.tar.xz
 https://pwmt.org/projects/zathura-pdf-poppler/download/zathura-pdf-poppler-0.3.1.tar.xz
 https://raw.githubusercontent.com/Homebrew/patches/1860b0a745f1fe726900974845d1b0dd3c3398d6/openssh/patch-sandbox-darwin.c-apple-sandbox-named-external.diff
@@ -1333,6 +1346,7 @@ https://sourceware.org/pub/valgrind/valgrind-3.19.0.tar.bz2
 https://sqlite.org/2023/sqlite-autoconf-3430000.tar.gz
 https://sqlite.org/2023/sqlite-autoconf-3430100.tar.gz
 https://sqlite.org/2023/sqlite-autoconf-3430200.tar.gz
+https://sqlite.org/2023/sqlite-autoconf-3440000.tar.gz
 https://src.fedoraproject.org/repo/pkgs/zip/zip30.tar.gz/7b74551e63f8ee6aab6fbc86676c0d37/zip30.tar.gz
 https://static.rust-lang.org/dist/rust-1.56.1-x86_64-unknown-linux-gnu.tar.gz
 https://static.rust-lang.org/dist/rustc-1.54.0-src.tar.gz
@@ -1345,6 +1359,7 @@ https://taglib.org/releases/taglib-1.13.1.tar.gz
 https://the.earth.li/~sgtatham/putty/0.76/putty-0.76.tar.gz
 https://thekelleys.org.uk/dnsmasq/dnsmasq-2.89.tar.xz
 https://tukaani.org/xz/xz-5.4.4.tar.xz
+https://tukaani.org/xz/xz-5.4.5.tar.xz
 https://w1.fi/releases/wpa_supplicant-2.10.tar.gz
 https://waf.io/waf-2.0.26.tar.bz2
 https://waterlan.home.xs4all.nl/dos2unix/dos2unix-7.5.1.tar.gz

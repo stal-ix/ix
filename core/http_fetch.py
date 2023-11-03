@@ -17,7 +17,7 @@ def fetch_url_impl(url, out, tout):
     print(f'fetch {url} into {out}')
 
     def iter_chunks():
-        r = ur.urlopen(url)
+        r = ur.urlopen(url, timeout=tout)
 
         while True:
             c = r.read(1 * 1024 * 1024)
@@ -64,6 +64,6 @@ def iter_meth():
     yield fetch_url_impl
 
 
-def iter_fetch_url(url, out):
+def iter_fetch_url(url):
     for meth in iter_meth():
-        yield functools.partial(meth, url, out)
+        yield functools.partial(meth, url)
