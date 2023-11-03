@@ -58,6 +58,7 @@ http://potrace.sourceforge.net/download/1.16/potrace-1.16.tar.gz
 http://prdownloads.sourceforge.net/swig/swig-4.1.1.tar.gz
 http://smarden.org/runit/runit-2.1.2.tar.gz
 http://sourceware.org/elfutils/ftp/0.189/elfutils-0.189.tar.bz2
+http://sourceware.org/elfutils/ftp/0.190/elfutils-0.190.tar.bz2
 http://www.alsa-project.org/files/pub/utils/alsa-utils-1.2.10.tar.bz2
 http://www.colm.net/files/ragel/ragel-6.10.tar.gz
 http://www.dest-unreach.org/socat/download/socat-1.7.4.4.tar.gz
