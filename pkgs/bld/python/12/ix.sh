@@ -5,6 +5,7 @@ lib/c
 lib/z
 lib/xz
 lib/ffi
+lib/expat
 lib/bzip/2
 {% endblock %}
 
@@ -16,7 +17,6 @@ cat Modules/Setup.local \
     | grep -v readline  \
     | grep -v _ssl      \
     | grep -v _curses   \
-    | grep -v expat     \
     | grep -v _decimal  \
     | grep -v _sqlite   \
     | grep -v _hashopenssl > _
