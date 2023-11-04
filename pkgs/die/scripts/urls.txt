@@ -471,6 +471,7 @@ https://github.com/Tomas-M/iotop/archive/refs/tags/v1.23.tar.gz
 https://github.com/USCiLab/cereal/archive/refs/tags/v1.3.2.tar.gz
 https://github.com/VirusTotal/yara/archive/refs/tags/v4.2.2.tar.gz
 https://github.com/WasmEdge/WasmEdge/archive/refs/tags/0.13.3.tar.gz
+https://github.com/WasmEdge/WasmEdge/archive/refs/tags/0.13.5.tar.gz
 https://github.com/WayfireWM/wayfire/releases/download/v0.7.5/wayfire-0.7.5.tar.xz
 https://github.com/WayfireWM/wayfire/releases/download/v0.8.0/wayfire-0.8.0.tar.xz
 https://github.com/WayfireWM/wf-config/archive/refs/tags/v0.7.1.tar.gz
@@ -1008,6 +1009,7 @@ https://github.com/rrthomas/libpaper/releases/download/v2.1.1/libpaper-2.1.1.tar
 https://github.com/rrthomas/libpaper/releases/download/v2.1.2/libpaper-2.1.2.tar.gz
 https://github.com/rs/curlie/archive/refs/tags/v1.6.9.tar.gz
 https://github.com/rsms/inter/releases/download/v3.19/Inter-3.19.zip
+https://github.com/rsteube/carapace-bin/archive/refs/tags/v0.28.3.tar.gz
 https://github.com/rui314/mold/archive/refs/tags/v1.7.1.tar.gz
 https://github.com/rui314/mold/archive/refs/tags/v2.1.0.tar.gz
 https://github.com/rui314/mold/archive/refs/tags/v2.2.0.tar.gz
