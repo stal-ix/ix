@@ -12,7 +12,7 @@ cd {{wd}}
 cd ix
 export IX_ROOT={{wd}}/ix_root
 export IX_EXEC_KIND=local
-./ix let ci set/ci bld/all || true
+./ix build set/ci bld/all || true
 sleep 200
 EOF
 
