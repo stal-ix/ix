@@ -27,10 +27,6 @@ ${NATIVE_PYTHON} setup.py build
 ${NATIVE_PYTHON} setup.py install \
     --prefix=${out} \
     --install-lib=${out}
-cd ${out}
-mv cffi* lib
-cd lib
-mv _cffi_backend.*.so lib_cffi_backend.a
 {% endblock %}
 
 {% block patch %}

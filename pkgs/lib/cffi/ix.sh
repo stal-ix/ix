@@ -1,6 +1,6 @@
 {% extends '//die/hub.sh' %}
 
 {% block lib_deps %}
-lib/cffi/bare
+lib/cffi/py
 pip/pycparser
 {% endblock %}
