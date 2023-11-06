@@ -6,7 +6,6 @@ bld/python/12
 {% endblock %}
 
 {% block configure_flags %}
---disable-ipv6
 --disable-test-modules
 --with-build-python=${NATIVE_PYTHON}
 {{super()}}
@@ -14,6 +13,8 @@ bld/python/12
 
 {% block configure %}
 export READELF=llvm-readelf
+export ac_cv_func_getaddrinfo=yes
+export ac_cv_buggy_getaddrinfo=no
 export ac_cv_file__dev_ptmx=yes
 export ac_cv_file__dev_ptc=no
 {{super()}}
