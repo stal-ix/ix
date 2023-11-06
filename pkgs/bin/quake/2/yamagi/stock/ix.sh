@@ -1,8 +1,8 @@
 {% extends '//die/c/make.sh' %}
 
 {% block fetch %}
-https://github.com/yquake2/yquake2/archive/refs/tags/QUAKE2_8_20.tar.gz
-sha:1a751e5a78148ee0a7dc6c73f856af57fa7b6cc07a52d30b094f88f4f76adf24
+https://github.com/yquake2/yquake2/archive/refs/tags/QUAKE2_8_30.tar.gz
+sha:388ba424cbe29e4a8e8dda0d448676600a00c66e3e4edc2b9660b551e19a3095
 {% endblock %}
 
 {% block bld_libs %}

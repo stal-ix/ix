@@ -100,6 +100,10 @@
         "md5": "760e64c3188d08823a392b29aaef02f6",
         "url": "https://files.pythonhosted.org/packages/ab/c3/57f0601a2d4fe15de7a553c00adbc901425661bf048f2a22dfc500caf121/packaging-23.1-py3-none-any.whl"
     },
+    "pycparser/ix.sh": {
+        "md5": "763d265dfc20860dfbb4c81458400d03",
+        "url": "https://files.pythonhosted.org/packages/62/d5/5f610ebe421e85889f2e55e33b7f9a6795bd982198517d912eb1c76e1a53/pycparser-2.21-py2.py3-none-any.whl"
+    },
     "pygments/ix.sh": {
         "md5": "c66cdf8d756af0113ee0fe30552bc4a9",
         "url": "https://files.pythonhosted.org/packages/34/a7/37c8d68532ba71549db4212cb036dbd6161b40e463aba336770e80c72f84/Pygments-2.15.1-py3-none-any.whl"

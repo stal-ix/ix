@@ -19,7 +19,7 @@ compress
 {% block build %}
 export PYTHONHOME=${TARGET_PYTHONHOME}
 export PYTHONPLATLIBDIR=${PYTHONHOME}/lib
-python3 $(dirname $(which python3))/../share/freeze/freeze.py -m {{self.entry_point()}} $(cat modules)
+python3 ${PYTHONPLATLIBDIR}/aux/freeze/freeze.py -m {{self.entry_point()}} $(cat modules)
 make -j ${make_thrs}
 {% endblock %}
 

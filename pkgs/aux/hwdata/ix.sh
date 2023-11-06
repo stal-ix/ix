@@ -1,8 +1,8 @@
 {% extends '//die/c/make.sh' %}
 
 {% block fetch %}
-https://github.com/vcrhonek/hwdata/archive/refs/tags/v0.375.tar.gz
-sha:69ffbfe4801c12c2d66d51f98044beec35afa406b1baa619c57b25a9b62b43a0
+https://github.com/vcrhonek/hwdata/archive/refs/tags/v0.376.tar.gz
+sha:48d85dbf05650b2c382ffaadeb601cac1650f5a34ee5c452df8021af988ea090
 {% endblock %}
 
 {% block configure %}

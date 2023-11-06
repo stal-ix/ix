@@ -20,6 +20,7 @@ lib/shim/gnu
 {% if aarch64 %}
 lib/kernel
 {% endif %}
+lib/shim/fake(lib_name=stdc++)
 lib/argp/standalone
 {% endblock %}
 
