@@ -4,6 +4,7 @@
 lib/python
 lib/glib/dl
 lib/pango/dl
+lib/drivers/3d
 bin/qtile/module/register
 {% endblock %}
 

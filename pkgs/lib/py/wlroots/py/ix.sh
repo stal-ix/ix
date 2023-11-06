@@ -14,6 +14,8 @@ rm wlroots/_ffi.py
 cat << EOF > wlroots/xwayland.py
 class Surface:
     pass
+def XWayland(*args, **kwargs):
+    raise RuntimeError('shit happen')
 EOF
 cp -R EGG-INFO pywlroots-0.16.6-py3.12.egg-info
 py_exports > exports
