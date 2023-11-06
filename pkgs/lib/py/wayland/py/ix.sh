@@ -8,6 +8,7 @@ bld/pip
 {% block install %}
 {{super()}}
 cd ${out}/lib
+rm -rf pywayland/_ffi
 py_exports > exports
 cat exports
 {% endblock %}
