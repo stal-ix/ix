@@ -16,6 +16,7 @@ pip/setuptools
 {% endblock %}
 
 {% block bld_tool %}
+bld/pip
 bld/wayland
 bld/pkg/config
 bld/python/{{python_ver}}(py_extra_modules=lib/cffi/module/register,python_ver={{python_ver}})
@@ -29,6 +30,9 @@ ${NATIVE_PYTHON} setup.py build
 ${NATIVE_PYTHON} setup.py install \
     --prefix=${out} \
     --install-lib=${out}/lib
+cd ${out}/lib
+py_exports > exports
+cat exports
 {% endblock %}
 
 {% block build_flags %}
