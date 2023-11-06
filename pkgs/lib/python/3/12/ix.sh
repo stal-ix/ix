@@ -21,4 +21,7 @@ export ac_cv_file__dev_ptc=no
 {% block install %}
 {{super()}}
 cp Modules/_hacl/libH*.a ${out}/lib/
+find ${out}/lib/python3.12/ -type f | while read l; do
+    sed -e 's|Modules/_hacl/libHacl_Hash_SHA2.a||g' -i ${l}
+done
 {% endblock %}

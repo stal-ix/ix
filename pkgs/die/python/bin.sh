@@ -2,7 +2,7 @@
 
 {% block std_env %}
 bld/make
-lib/python/3/{{python_ver}}
+bld/python/{{python_ver}}
 {{super()}}
 {% endblock %}
 

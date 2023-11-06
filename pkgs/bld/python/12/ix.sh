@@ -7,9 +7,7 @@ lib/xz
 lib/ffi
 lib/expat
 lib/bzip/2
-{% if py_extra_modules %}
-{{'\n'.join(py_extra_modules.split(':'))}}
-{% endif %}
+lib/py/extra
 {% endblock %}
 
 {% block ensure_static_build %}
