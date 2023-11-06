@@ -1,13 +1,13 @@
 {% extends '//die/dl/lib.sh' %}
 
 {% block lib_deps %}
-lib/glib
+lib/gdk/pixbuf
 {% endblock %}
 
 {% block export_libs %}
-libgio-2.0.a
+libgdk_pixbuf-2.0.a
 {% endblock %}
 
 {% block export_lib %}
-gio-2
+gdk_pixbuf-2
 {% endblock %}
