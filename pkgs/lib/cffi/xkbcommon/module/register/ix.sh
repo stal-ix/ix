@@ -1,7 +1,6 @@
 {% extends '//die/c/premain.sh' %}
 
 {% block lib_deps %}
-lib/cffi/module/register
 lib/cffi/xkbcommon/module
 {% endblock %}
 
