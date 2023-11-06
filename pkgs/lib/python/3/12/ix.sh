@@ -7,6 +7,7 @@ bld/python/12
 
 {% block configure_flags %}
 --disable-ipv6
+--disable-test-modules
 --with-build-python=${NATIVE_PYTHON}
 {{super()}}
 {% endblock %}
