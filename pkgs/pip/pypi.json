@@ -53,6 +53,10 @@
         "md5": "453fe8c295400d7791b56cf08e780983",
         "url": "https://files.pythonhosted.org/packages/ec/5f/d922519ac948491915ab5b3270a88b0f517a003e6b12af5d71bf9ecc93a7/dacite-1.8.0-py3-none-any.whl"
     },
+    "dbus-next/ix.sh": {
+        "md5": "6aef374717bd305f6b79f1b28b2f1d08",
+        "url": "https://files.pythonhosted.org/packages/d2/fc/c0a3f4c4eaa5a22fbef91713474666e13d0ea2a69c84532579490a9f2cc8/dbus_next-0.2.3-py3-none-any.whl"
+    },
     "docutils/ix.sh": {
         "md5": "5bf59ed336b7dc8df98640b7e6858350",
         "url": "https://files.pythonhosted.org/packages/93/69/e391bd51bc08ed9141ecd899a0ddb61ab6465309f1eb470905c0c8868081/docutils-0.19-py3-none-any.whl"
