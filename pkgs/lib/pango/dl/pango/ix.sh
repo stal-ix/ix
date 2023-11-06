@@ -1,13 +1,13 @@
 {% extends '//die/dl/lib.sh' %}
 
 {% block lib_deps %}
-lib/glib
+lib/pango
 {% endblock %}
 
 {% block export_libs %}
-libgobject-2.0.a
+libpango-1.0.a
 {% endblock %}
 
 {% block export_lib %}
-gobject-2
+pango-1
 {% endblock %}

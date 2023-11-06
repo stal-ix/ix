@@ -2,6 +2,8 @@
 
 {% block bld_libs %}
 lib/python
+lib/glib/dl
+lib/pango/dl
 bin/qtile/module/register
 {% endblock %}
 
