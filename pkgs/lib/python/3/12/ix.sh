@@ -13,8 +13,10 @@ bld/python/12
 
 {% block configure %}
 export READELF=llvm-readelf
+{% if linux %}
 export ac_cv_func_getaddrinfo=yes
 export ac_cv_buggy_getaddrinfo=no
+{% endif %}
 export ac_cv_file__dev_ptmx=yes
 export ac_cv_file__dev_ptc=no
 {{super()}}
