@@ -18,7 +18,6 @@ bld/python/{{python_ver}}(python_ver={{python_ver}},py_extra_modules=lib/cffi:li
 {% endblock %}
 
 {% block build %}
-sed -e 's|distutils|setuptools|' -i setup.py
 ${NATIVE_PYTHON} setup.py build
 {% endblock %}
 
@@ -32,10 +31,7 @@ ${NATIVE_PYTHON} setup.py install \
 wrap_cc
 {% endblock %}
 
-{% block env %}
-export PYTHONPATH="${out}/lib:\${PYTHONPATH}"
-{% endblock %}
-
 {% block patch %}
+sed -e 's|distutils|setuptools|' -i setup.py
 sed -e 's|= load_wlroots_version()|= "1.16.6"|' -i wlroots/ffi_build.py
 {% endblock %}
