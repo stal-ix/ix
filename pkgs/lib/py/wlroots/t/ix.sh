@@ -33,5 +33,5 @@ wrap_cc
 
 {% block patch %}
 sed -e 's|distutils|setuptools|' -i setup.py
-sed -e 's|= load_wlroots_version()|= "1.16.6"|' -i wlroots/ffi_build.py
+sed -e 's|= load_wlroots_version()|= "0.16.2"|' -i wlroots/ffi_build.py
 {% endblock %}

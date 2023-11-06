@@ -145,6 +145,10 @@
         ],
         "url": "https://files.pythonhosted.org/packages/47/6a/dfaf9838b6dd1f04537c0a66cf880dd24acd829f8a39d468c11fc0b7d8c6/setuptools-67.7.1-py3-none-any.whl"
     },
+    "setuptools_scm/ix.sh": {
+        "md5": "4c054a609965886703ede26a4ba3206d",
+        "url": "https://files.pythonhosted.org/packages/0e/a3/b9a8b0adfe672bf0df5901707aa929d30a97ee390ba651910186776746d2/setuptools_scm-8.0.4-py3-none-any.whl"
+    },
     "six/ix.sh": {
         "md5": "529d7fd7e14612ccde86417b4402d6f3",
         "url": "https://files.pythonhosted.org/packages/d9/5a/e7c31adbe875f2abbb91bd84cf2dc52d792b5a01506781dbcf25c91daf11/six-1.16.0-py2.py3-none-any.whl"

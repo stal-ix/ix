@@ -13,3 +13,8 @@ bld/reloc
 {{super()}}
 relocate "${DRM_DATA}"
 {% endblock %}
+
+{% block env %}
+{{super()}}
+export CPPFLAGS="-I${out}/include/libdrm \${CPPFLAGS}"
+{% endblock %}
