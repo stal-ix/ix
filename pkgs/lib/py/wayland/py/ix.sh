@@ -1,16 +1,15 @@
-{% extends '//lib/cffi/t/ix.sh' %}
+{% extends '//lib/py/wayland/t/ix.sh' %}
 
-{% block bld_libs %}
-pip/wheel
+{% block bld_tool %}
+bld/pip
 {{super()}}
 {% endblock %}
 
 {% block install %}
 {{super()}}
-cd ${out}
-mv cffi* lib
-cd lib
-cp -R EGG-INFO cffi-1.16-py3.12.egg-info
+cd ${out}/lib
+py_exports > exports
+cat exports
 {% endblock %}
 
 {% block env %}

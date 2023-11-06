@@ -152,5 +152,9 @@
     "urllib3/ix.sh": {
         "md5": "fcbb4def4b423b7739e3a82a34d5196a",
         "url": "https://files.pythonhosted.org/packages/7b/f5/890a0baca17a61c1f92f72b81d3c31523c99bec609e60c292ea55b387ae8/urllib3-1.26.15-py2.py3-none-any.whl"
+    },
+    "wheel/ix.sh": {
+        "md5": "365951ebe14ade87cbd6987b345ceb65",
+        "url": "https://files.pythonhosted.org/packages/fa/7f/4c07234086edbce4a0a446209dc0cb08a19bb206a3ea53b2f56a403f983b/wheel-0.41.3-py3-none-any.whl"
     }
 }

@@ -1,17 +1,19 @@
-{% extends '//lib/cffi/xkbcommon/t/ix.sh' %}
+{% extends '//lib/py/wlroots/t/ix.sh' %}
 
 {% block bld_libs %}
-lib/cffi/py
+lib/cffi
 pip/setuptools
+lib/py/wayland
+lib/cffi/xkbcommon
 {% endblock %}
 
 {% block bld_tool %}
 bld/pip
-bin/unzip
-bld/python/{{python_ver}}
+bld/python/{{python_ver}}(python_ver={{python_ver}},py_extra_modules=lib/cffi)
 {% endblock %}
 
 {% block build %}
+sed -e 's|distutils|setuptools|' -i setup.py
 ${NATIVE_PYTHON} setup.py build
 {% endblock %}
 
@@ -19,17 +21,12 @@ ${NATIVE_PYTHON} setup.py build
 ${NATIVE_PYTHON} setup.py install \
     --prefix=${out} \
     --install-lib=${out}
-cd ${out}
-mkdir lib
-mv *.egg lib/
-cd lib
-unzip *.egg
-py_exports > exports
-cat exports
 {% endblock %}
 
-{% block patch1 %}
-sed -e 's|setup_requires|setup_requires_xxx|' -e 's|install_requires|install_requires_xxx|' -i setup.cfg
+{% block patch %}
+sed -e 's|.*cffi.*1.12.*||' -i pyproject.toml
+sed -e 's|.*setup_requires.*||' -i setup.py
+>requirements.txt
 {% endblock %}
 
 {% block env %}
