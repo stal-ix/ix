@@ -5,8 +5,16 @@ lib/cffi
 lib/xkb/common
 {% endblock %}
 
+{% block bld_libs %}
+pip/setuptools
+{% endblock %}
+
 {% block bld_tool %}
 bld/python/{{python_ver}}(py_extra_modules=lib/cffi/module/register,python_ver={{python_ver}})
+{% endblock %}
+
+{% block build_flags %}
+wrap_cc
 {% endblock %}
 
 {% block build %}
