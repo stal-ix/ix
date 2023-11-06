@@ -5,3 +5,8 @@
 cd ${out}
 mv cffi* lib
 {% endblock %}
+
+{% block env %}
+{{super()}}
+export PYTHONPATH="${out}/lib:\${PYTHONPATH}"
+{% endblock %}
