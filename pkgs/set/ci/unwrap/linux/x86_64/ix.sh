@@ -726,7 +726,6 @@ bin/wvkbd
 #bin/gosh
 #bin/gosh/posix
 bin/nodejs
-bin/semver
 bin/tinyssh
 bin/lz4
 bin/setcwd
