@@ -15,6 +15,7 @@ cd lib
 unzip *.egg
 rm xkbcommon/_ffi.py
 rm *.egg
+cp -R EGG-INFO xkbcommon-0.8-py3.12.egg-info
 py_exports > exports
 cat exports
 {% endblock %}
