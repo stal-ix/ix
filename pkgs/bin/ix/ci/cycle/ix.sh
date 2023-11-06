@@ -12,6 +12,7 @@ cd {{wd}}
 cd ix
 export IX_ROOT={{wd}}/ix_root
 export IX_EXEC_KIND=local
+mv ${IX_ROOT}/build/* ${IX_ROOT}/trash/ || true
 ./ix build set/ci bld/all || true
 sleep 200
 EOF
