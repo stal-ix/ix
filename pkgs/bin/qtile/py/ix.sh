@@ -11,7 +11,9 @@ bin/unzip
 cd ${out}/lib
 unzip qtile*
 rm qtile*
-cp ${out}/bin/qtile libqtile/__main__.py
+base64 -d << EOF > libqtile/pangocffi.py
+{% include 'pangocffi.py/base64' %}
+EOF
 py_exports > exports
 cat exports
 {% endblock %}
@@ -19,4 +21,3 @@ cat exports
 {% block env %}
 export PYTHONPATH="${out}/lib:\${PYTHONPATH}"
 {% endblock %}
-

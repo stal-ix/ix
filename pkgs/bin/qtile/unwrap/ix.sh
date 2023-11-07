@@ -4,6 +4,7 @@
 lib/python
 lib/glib/dl
 lib/pango/dl
+pip/dbus-next
 lib/drivers/3d
 lib/gdk/pixbuf/dl
 bin/qtile/module/register
@@ -11,6 +12,9 @@ bin/qtile/module/register
 
 {% block extra_modules %}
 zipfile
+{% endblock %}
+
+{% block build_flags %}
 {% endblock %}
 
 {% block entry_point %}qtile{% endblock %}
