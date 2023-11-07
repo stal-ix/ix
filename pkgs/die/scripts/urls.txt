@@ -820,6 +820,7 @@ https://github.com/libunwind/libunwind/archive/refs/tags/v1.7.2.tar.gz
 https://github.com/libusb/libusb/releases/download/v1.0.26/libusb-1.0.26.tar.bz2
 https://github.com/libuv/libuv/archive/refs/tags/v1.44.2.tar.gz
 https://github.com/libuv/libuv/archive/refs/tags/v1.46.0.tar.gz
+https://github.com/libuv/libuv/archive/refs/tags/v1.47.0.tar.gz
 https://github.com/limine-bootloader/limine/releases/download/v5.20230801.0/limine-5.20230801.0.tar.xz
 https://github.com/linux-nvme/libnvme/archive/refs/tags/v1.5.tar.gz
 https://github.com/linux-nvme/libnvme/archive/refs/tags/v1.6.tar.gz
