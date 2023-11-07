@@ -138,10 +138,6 @@ mv _ Telegram/SourceFiles/platform/linux/notifications_manager_linux.cpp
 sed -e 's|.*add_cppgir().*||' -i cmake/external/glib/CMakeLists.txt
 
 sed -e 's|DESKTOP_APP_DISABLE_WAYLAND_INTEGRATION|TRUE|' -i Telegram/lib_webview/CMakeLists.txt
-
-(base64 -d | patch -p1) << EOF
-{% include '0.diff/base64' %}
-EOF
 {% endblock %}
 
 {% block c_rename_symbol %}
