@@ -1,6 +1,7 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
+bin/qtile
 bin/dconf
 bin/ix/ci
 bin/fastfetch

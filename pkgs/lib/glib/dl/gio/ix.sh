@@ -9,5 +9,5 @@ libgio-2.0.a
 {% endblock %}
 
 {% block export_lib %}
-gio-2.0
+gio-2
 {% endblock %}

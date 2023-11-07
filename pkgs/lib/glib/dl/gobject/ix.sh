@@ -9,5 +9,5 @@ libgobject-2.0.a
 {% endblock %}
 
 {% block export_lib %}
-gobject-2.0
+gobject-2
 {% endblock %}

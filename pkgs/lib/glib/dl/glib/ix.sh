@@ -9,5 +9,5 @@ libglib-2.0.a
 {% endblock %}
 
 {% block export_lib %}
-glib-2.0
+glib-2
 {% endblock %}

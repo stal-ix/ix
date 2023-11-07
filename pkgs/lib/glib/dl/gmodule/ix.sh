@@ -9,5 +9,5 @@ libgmodule-2.0.a
 {% endblock %}
 
 {% block export_lib %}
-gmodule-2.0
+gmodule-2
 {% endblock %}

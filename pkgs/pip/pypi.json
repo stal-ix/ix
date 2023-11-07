@@ -45,6 +45,10 @@
         ],
         "url": "https://files.pythonhosted.org/packages/79/82/61ca84c3d88121abee6fb94660f56557d819ef686048cd5ec8914d303c85/botocore-1.29.118-py3-none-any.whl"
     },
+    "cairocffi/ix.sh": {
+        "md5": "c39696617731dcc494c93c622b1c9ca4",
+        "url": "https://files.pythonhosted.org/packages/17/be/a5d2c16317c6a890502725970589ae7f06cfc66b2e6916ba0a86973403c8/cairocffi-1.6.1-py3-none-any.whl"
+    },
     "certifi/ix.sh": {
         "md5": "24735e31df35eb3820bef77e3f8010b2",
         "url": "https://files.pythonhosted.org/packages/71/4c/3db2b8021bd6f2f0ceb0e088d6b2d49147671f25832fb17970e9b583d742/certifi-2022.12.7-py3-none-any.whl"
@@ -52,6 +56,10 @@
     "dacite/ix.sh": {
         "md5": "453fe8c295400d7791b56cf08e780983",
         "url": "https://files.pythonhosted.org/packages/ec/5f/d922519ac948491915ab5b3270a88b0f517a003e6b12af5d71bf9ecc93a7/dacite-1.8.0-py3-none-any.whl"
+    },
+    "dbus-next/ix.sh": {
+        "md5": "6aef374717bd305f6b79f1b28b2f1d08",
+        "url": "https://files.pythonhosted.org/packages/d2/fc/c0a3f4c4eaa5a22fbef91713474666e13d0ea2a69c84532579490a9f2cc8/dbus_next-0.2.3-py3-none-any.whl"
     },
     "docutils/ix.sh": {
         "md5": "5bf59ed336b7dc8df98640b7e6858350",
@@ -137,6 +145,10 @@
         ],
         "url": "https://files.pythonhosted.org/packages/47/6a/dfaf9838b6dd1f04537c0a66cf880dd24acd829f8a39d468c11fc0b7d8c6/setuptools-67.7.1-py3-none-any.whl"
     },
+    "setuptools_scm/ix.sh": {
+        "md5": "4c054a609965886703ede26a4ba3206d",
+        "url": "https://files.pythonhosted.org/packages/0e/a3/b9a8b0adfe672bf0df5901707aa929d30a97ee390ba651910186776746d2/setuptools_scm-8.0.4-py3-none-any.whl"
+    },
     "six/ix.sh": {
         "md5": "529d7fd7e14612ccde86417b4402d6f3",
         "url": "https://files.pythonhosted.org/packages/d9/5a/e7c31adbe875f2abbb91bd84cf2dc52d792b5a01506781dbcf25c91daf11/six-1.16.0-py2.py3-none-any.whl"
@@ -144,5 +156,9 @@
     "urllib3/ix.sh": {
         "md5": "fcbb4def4b423b7739e3a82a34d5196a",
         "url": "https://files.pythonhosted.org/packages/7b/f5/890a0baca17a61c1f92f72b81d3c31523c99bec609e60c292ea55b387ae8/urllib3-1.26.15-py2.py3-none-any.whl"
+    },
+    "wheel/ix.sh": {
+        "md5": "365951ebe14ade87cbd6987b345ceb65",
+        "url": "https://files.pythonhosted.org/packages/fa/7f/4c07234086edbce4a0a446209dc0cb08a19bb206a3ea53b2f56a403f983b/wheel-0.41.3-py3-none-any.whl"
     }
 }
