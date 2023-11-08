@@ -23,11 +23,6 @@ zipfile
 cat << EOF > qtile
 import sys
 sys.dont_write_bytecode = True
-import wlroots
-import wlroots._ffi
-def eat(*args, **kwargs):
-    return False
-wlroots._ffi.__dict__['wlr_surface_is_xwayland_surface'] = eat
 import libqtile.scripts.main as lm
 lm.main()
 EOF
