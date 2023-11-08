@@ -1,6 +1,7 @@
 {% extends '//die/python/bin.sh' %}
 
 {% block bld_libs %}
+pip/pyxdg
 lib/python
 lib/glib/dl
 lib/pango/dl
