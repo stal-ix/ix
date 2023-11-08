@@ -21,6 +21,8 @@ zipfile
 
 {% block step_unpack %}
 cat << EOF > qtile
+import sys
+sys.dont_write_bytecode = True
 import libqtile.scripts.main as lm
 lm.main()
 EOF

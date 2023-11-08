@@ -102,6 +102,7 @@ https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.5.6.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.5.7.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.5.8.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.5.9.tar.xz
+https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.6.1.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.6.tar.xz
 https://cmocka.org/files/1.1/cmocka-1.1.7.tar.xz
 https://codeberg.org/dnkl/fcft/archive/2.5.0.tar.gz
@@ -391,6 +392,7 @@ https://github.com/FreeGLUTProject/freeglut/releases/download/v3.4.0/freeglut-3.
 https://github.com/FreeRDP/FreeRDP/archive/refs/tags/2.10.0.tar.gz
 https://github.com/GNOME/adwaita-icon-theme/archive/refs/tags/44.0.tar.gz
 https://github.com/GNOME/epiphany/archive/refs/tags/45.0.tar.gz
+https://github.com/GNOME/epiphany/archive/refs/tags/45.1.tar.gz
 https://github.com/GNOME/epiphany/archive/refs/tags/45.beta.tar.gz
 https://github.com/GNOME/gthumb/archive/refs/tags/3.12.2.tar.gz
 https://github.com/GNOME/gtk-doc/archive/refs/tags/GTK_DOC_1_32.tar.gz
@@ -453,6 +455,7 @@ https://github.com/MidnightCommander/mc/archive/refs/tags/4.8.30.tar.gz
 https://github.com/MisterTea/EternalTerminal/archive/refs/tags/et-v6.2.4.tar.gz
 https://github.com/NLnetLabs/ldns/archive/refs/tags/1.8.3.tar.gz
 https://github.com/NLnetLabs/unbound/archive/refs/tags/release-1.18.0.tar.gz
+https://github.com/NLnetLabs/unbound/archive/refs/tags/release-1.19.0.tar.gz
 https://github.com/NagyD/SDLPoP/archive/refs/tags/v1.23.tar.gz
 https://github.com/Nefelim4ag/Ananicy/archive/refs/tags/2.2.1.tar.gz
 https://github.com/NetworkConfiguration/dhcpcd/archive/refs/tags/v10.0.2.tar.gz
@@ -618,6 +621,7 @@ https://github.com/facebook/zstd/archive/refs/tags/v1.5.5.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.1.2.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.2.0.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.2.2.tar.gz
+https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.2.3.tar.gz
 https://github.com/fastfloat/fast_float/archive/refs/tags/v3.8.1.tar.gz
 https://github.com/fastfloat/fast_float/archive/refs/tags/v5.2.0.tar.gz
 https://github.com/fenrus75/powertop/archive/refs/tags/v2.15.tar.gz
@@ -662,6 +666,7 @@ https://github.com/golang/go/archive/refs/tags/go1.20.7.tar.gz
 https://github.com/golang/go/archive/refs/tags/go1.21.1.tar.gz
 https://github.com/golang/go/archive/refs/tags/go1.21.2.tar.gz
 https://github.com/golang/go/archive/refs/tags/go1.21.3.tar.gz
+https://github.com/golang/go/archive/refs/tags/go1.21.4.tar.gz
 https://github.com/google/brotli/archive/refs/tags/v1.1.0.tar.gz
 https://github.com/google/crc32c/archive/refs/tags/1.1.2.tar.gz
 https://github.com/google/double-conversion/archive/refs/tags/v3.3.0.tar.gz
@@ -701,12 +706,14 @@ https://github.com/hpjansson/chafa/archive/refs/tags/1.12.4.tar.gz
 https://github.com/htop-dev/htop/archive/refs/tags/3.2.2.tar.gz
 https://github.com/hughsie/libgusb/archive/refs/tags/0.4.6.tar.gz
 https://github.com/hughsie/libgusb/archive/refs/tags/0.4.7.tar.gz
+https://github.com/hughsie/libgusb/archive/refs/tags/0.4.8.tar.gz
 https://github.com/hughsie/libxmlb/archive/refs/tags/0.3.14.tar.gz
 https://github.com/hunspell/hunspell/archive/refs/tags/v1.7.1.tar.gz
 https://github.com/hyperrealm/libconfig/archive/refs/tags/v1.7.3.tar.gz
 https://github.com/hyprwm/Hyprland/releases/download/v0.29.0/source-v0.29.0.tar.gz
 https://github.com/hyprwm/Hyprland/releases/download/v0.30.0/source-v0.30.0.tar.gz
 https://github.com/hyprwm/Hyprland/releases/download/v0.31.0/source-v0.31.0.tar.gz
+https://github.com/hyprwm/Hyprland/releases/download/v0.32.0/source-v0.32.0.tar.gz
 https://github.com/hyprwm/hyprpaper/archive/refs/tags/v0.2.0.tar.gz
 https://github.com/hyprwm/hyprpicker/archive/refs/tags/v0.1.0.tar.gz
 https://github.com/ib/xarchiver/archive/refs/tags/0.5.4.20.tar.gz
@@ -770,6 +777,7 @@ https://github.com/kondrak/vkQuake2/archive/refs/tags/1.5.8.tar.gz
 https://github.com/kovidgoyal/kitty/archive/refs/tags/v0.25.0.tar.gz
 https://github.com/kraxarn/spotify-qt/archive/refs/tags/v3.9.tar.gz
 https://github.com/kristapsdz/lowdown/archive/refs/tags/VERSION_1_0_2.tar.gz
+https://github.com/kristapsdz/lowdown/archive/refs/tags/VERSION_1_1_0.tar.gz
 https://github.com/kspalaiologos/bzip3/archive/refs/tags/1.3.2.tar.gz
 https://github.com/kuroko-lang/kuroko/archive/refs/tags/v1.3.1.tar.gz
 https://github.com/kuroko-lang/kuroko/archive/refs/tags/v1.4.0.tar.gz
@@ -1086,6 +1094,7 @@ https://github.com/telegramdesktop/tdesktop/releases/download/v4.10.4/tdesktop-4
 https://github.com/telegramdesktop/tdesktop/releases/download/v4.10.5/tdesktop-4.10.5-full.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v4.11.2/tdesktop-4.11.2-full.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v4.11.3/tdesktop-4.11.3-full.tar.gz
+https://github.com/telegramdesktop/tdesktop/releases/download/v4.11.5/tdesktop-4.11.5-full.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v4.8.10/tdesktop-4.8.10-full.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v4.8.12/tdesktop-4.8.12-full.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v4.9.0/tdesktop-4.9.0-full.tar.gz

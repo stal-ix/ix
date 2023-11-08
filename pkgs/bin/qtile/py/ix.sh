@@ -14,6 +14,7 @@ rm qtile*
 base64 -d << EOF > libqtile/pangocffi.py
 {% include 'pangocffi.py/base64' %}
 EOF
+sed -e 's|XCursorManager(24)|XCursorManager(int(os.environ.get("XCURSOR_SIZE", "24")))|' -i libqtile/backend/wayland/core.py
 py_exports > exports
 cat exports
 {% endblock %}
