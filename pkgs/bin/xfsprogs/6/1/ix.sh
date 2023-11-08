@@ -1,4 +1,4 @@
-{% extends '//bin/xfsprogs/ix.sh' %}
+{% extends '//bin/xfsprogs/t/ix.sh' %}
 
 {% block fetch %}
 https://www.kernel.org/pub/linux/utils/fs/xfs/xfsprogs/xfsprogs-6.1.0.tar.xz
