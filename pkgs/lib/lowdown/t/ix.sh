@@ -1,8 +1,8 @@
 {% extends '//die/c/make.sh' %}
 
 {% block fetch %}
-https://github.com/kristapsdz/lowdown/archive/refs/tags/VERSION_1_0_2.tar.gz
-sha:049b7883874f8a8e528dc7c4ed7b27cf7ceeb9ecf8fe71c3a8d51d574fddf84b
+https://github.com/kristapsdz/lowdown/archive/refs/tags/VERSION_1_1_0.tar.gz
+sha:5cc997f742fd9e3268a2bf15cb9c58bfa173b303bc13f5c61f67dedfff3bccce
 {% endblock %}
 
 {% block lib_deps %}
