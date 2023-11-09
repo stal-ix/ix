@@ -2,6 +2,8 @@
 
 {% block bld_libs %}
 lib/python
+lib/mesa/egl/dl
+lib/fontconfig/dl
 bin/kitty/next/py
 bin/kitty/next/modules
 {% endblock %}
@@ -23,7 +25,9 @@ sys.kitty_run_data = {
     'bundle_exe_dir': "${out}/bin"
 }
 import kitty.constants as kc
-kc.is_wayland = lambda x: True
+def is_wayland(*args, **kwargs):
+    return True
+kc.is_wayland = is_wayland
 import kitty.main as km
 km.main()
 EOF
