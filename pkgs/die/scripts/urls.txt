@@ -327,6 +327,7 @@ https://ftp.mozilla.org/pub/security/nss/releases/NSS_3_93_RTM/src/nss-3.93.tar.
 https://ftp.osuosl.org/pub/rpm/releases/rpm-4.19.x/rpm-4.19.0.tar.bz2
 https://ftp.postgresql.org/pub/source/v15.4/postgresql-15.4.tar.bz2
 https://ftp.postgresql.org/pub/source/v16.0/postgresql-16.0.tar.bz2
+https://ftp.postgresql.org/pub/source/v16.1/postgresql-16.1.tar.bz2
 https://ftpmirror.gnu.org/libtool/libtool-2.4.6.tar.gz
 https://gameoftrees.org/releases/portable/got-portable-0.92.tar.gz
 https://gameoftrees.org/releases/portable/got-portable-0.93.tar.gz
@@ -778,6 +779,7 @@ https://github.com/knik0/faad2/archive/refs/tags/2.10.1.tar.gz
 https://github.com/knik0/faad2/archive/refs/tags/2.11.0.tar.gz
 https://github.com/kondrak/vkQuake2/archive/refs/tags/1.5.8.tar.gz
 https://github.com/kovidgoyal/kitty/archive/refs/tags/v0.25.0.tar.gz
+https://github.com/kovidgoyal/kitty/archive/refs/tags/v0.31.0.tar.gz
 https://github.com/kraxarn/spotify-qt/archive/refs/tags/v3.9.tar.gz
 https://github.com/kristapsdz/lowdown/archive/refs/tags/VERSION_1_0_2.tar.gz
 https://github.com/kristapsdz/lowdown/archive/refs/tags/VERSION_1_1_0.tar.gz
