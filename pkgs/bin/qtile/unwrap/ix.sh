@@ -11,10 +11,6 @@ lib/gdk/pixbuf/dl
 bin/qtile/module/register
 {% endblock %}
 
-{% block extra_modules %}
-zipfile
-{% endblock %}
-
 {% block build_flags %}
 {% endblock %}
 
