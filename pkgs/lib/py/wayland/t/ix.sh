@@ -7,11 +7,11 @@ sha:e04befb267069ae317cd1a07f1d85b4bfc059090255e61b3efe49691a506aebd
 
 {% block lib_deps %}
 lib/c
-lib/cffi
 lib/wayland
 {% endblock %}
 
 {% block bld_libs %}
+lib/cffi
 pip/setuptools
 {% endblock %}
 
