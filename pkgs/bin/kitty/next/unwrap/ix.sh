@@ -28,6 +28,10 @@ import kitty.constants as kc
 def is_wayland(*args, **kwargs):
     return True
 kc.is_wayland = is_wayland
+import kitty.embed as ke
+def read_kitty_resource(name, **kwargs):
+    return ke.find('./kitty/' + name)
+kc.read_kitty_resource = read_kitty_resource
 import kitty.main as km
 km.main()
 EOF
