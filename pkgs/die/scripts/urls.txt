@@ -233,6 +233,7 @@ https://files.pythonhosted.org/packages/bc/c3/f068337a370801f372f2f8f6bad74a5c14
 https://files.pythonhosted.org/packages/bf/10/ff66fea6d1788c458663a84d88787bae15d45daa16f6b3ef33322a51fc7e/MarkupSafe-2.0.1.tar.gz
 https://files.pythonhosted.org/packages/c1/97/c698bd9350f307daad79dd740806e1a59becd693bd11443a0f531e3229b3/jsonschema-4.17.3-py3-none-any.whl
 https://files.pythonhosted.org/packages/d2/fc/c0a3f4c4eaa5a22fbef91713474666e13d0ea2a69c84532579490a9f2cc8/dbus_next-0.2.3-py3-none-any.whl
+https://files.pythonhosted.org/packages/e5/8d/cf41b66a8110670e3ad03dab9b759704eeed07fa96e90fdc0357b2ba70e2/pyxdg-0.28-py2.py3-none-any.whl
 https://files.pythonhosted.org/packages/ec/5f/d922519ac948491915ab5b3270a88b0f517a003e6b12af5d71bf9ecc93a7/dacite-1.8.0-py3-none-any.whl
 https://files.pythonhosted.org/packages/f0/eb/fcb708c7bf5056045e9e98f62b93bd7467eb718b0202e7698eb11d66416c/attrs-23.1.0-py3-none-any.whl
 https://files.pythonhosted.org/packages/f3/d4/25cc1e670f7ae478ffaefeecd6b968c049486c812e67e6e9fcc684bc0195/qtile-0.23.0.tar.gz
@@ -363,6 +364,7 @@ https://github.com/AOMediaCodec/libavif/archive/refs/tags/v1.0.1.tar.gz
 https://github.com/ARMmbed/mbedtls/archive/refs/tags/v2.28.2.tar.gz
 https://github.com/ARMmbed/mbedtls/archive/refs/tags/v3.4.1.tar.gz
 https://github.com/ARMmbed/mbedtls/archive/refs/tags/v3.5.0.tar.gz
+https://github.com/ARMmbed/mbedtls/archive/refs/tags/v3.5.1.tar.gz
 https://github.com/AbiWord/enchant/releases/download/v2.5.0/enchant-2.5.0.tar.gz
 https://github.com/AbiWord/enchant/releases/download/v2.6.1/enchant-2.6.1.tar.gz
 https://github.com/AbiWord/enchant/releases/download/v2.6.2/enchant-2.6.2.tar.gz
