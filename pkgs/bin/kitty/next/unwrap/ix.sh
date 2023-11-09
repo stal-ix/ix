@@ -25,6 +25,7 @@ sys.kitty_run_data = {
     'bundle_exe_dir': "${out}/bin"
 }
 import kitty.constants as kc
+kc.default_pager_for_help = ('gnuless', '-iRXF')
 def is_wayland(*args, **kwargs):
     return True
 kc.is_wayland = is_wayland
