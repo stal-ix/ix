@@ -5,7 +5,7 @@ https://github.com/kovidgoyal/kitty/archive/refs/tags/v0.31.0.tar.gz
 sha:d1fa72c9d16eedec43ba99de9f1ad511c8246cbe4e70dd1f9d865ef72984829d
 {% endblock %}
 
-{% block bld_libs %}
+{% block lib_deps %}
 lib/c
 lib/png
 lib/dbus
@@ -16,6 +16,9 @@ lib/xxhash
 lib/harfbuzz
 lib/xkb/common
 lib/fontconfig
+{% endblock %}
+
+{% block bld_libs %}
 pip/setuptools
 lib/shim/fake/pkg(pkg_name=gl,pkg_ver=4.6.0)
 {% endblock %}
@@ -33,6 +36,10 @@ ${NATIVE_PYTHON} setup.py build
 
 {% block build_flags %}
 wrap_cc
+{% endblock %}
+
+{% block setup %}
+export CFLAGS="-fno-lto ${CFLAGS}"
 {% endblock %}
 
 {% block patch %}
