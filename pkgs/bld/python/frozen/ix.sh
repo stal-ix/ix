@@ -18,7 +18,11 @@ import argparse
 sys.dont_write_bytecode = True
 
 def parse_args_2(argv):
-    ap = argparse.ArgumentParser(exit_on_error=False)
+    class AP(argparse.ArgumentParser):
+        def error(self, message):
+            raise Eception(message)
+
+    ap = AP(exit_on_error=False)
 
     for x in ('b', 'bb', 'B', 'd', 'E', 'i', 'I', 'O', 'O0', 'P', 'q', 's', 'S', 'u', 'v', 'V'):
         ap.add_argument(f'-{x}', dest=x, required=False, default=False, action='store_true')
@@ -30,33 +34,23 @@ def parse_args_2(argv):
 
     return ap.parse_args(argv)
 
-def parse_args_1(argv):
-    err = sys.stderr
-    out = sys.stdout
+def parse_args_1(argv, rest):
+    args = parse_args_2(argv)
+    args.rest = rest
 
-    sys.stderr = None
-    sys.stdout = None
+    return args
 
-    try:
-        return parse_args_2(argv)
-    finally:
-        sys.stderr = err
-        sys.stdout = out
-
-def parse_args(argv):
-    args = None
-
+def parse_args_max(argv):
     for l in reversed(range(0, len(argv) + 1)):
         try:
-            args = parse_args_1(argv[:l])
-            args.rest = argv[l:]
-
-            break
-        except:
+            return parse_args_1(argv[:l], argv[l:])
+        except Exception:
             pass
 
-    if not args:
-        args = parse_args_1(argv)
+    return parse_args_1(argv, [])
+
+def parse_args(argv):
+    args = parse_args_max(argv)
 
     args.file = None
 
