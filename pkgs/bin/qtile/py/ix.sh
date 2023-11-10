@@ -7,15 +7,11 @@ bin/unzip
 {% endblock %}
 
 {% block install %}
-{{super()}}
+mkdir ${out}/lib
+cp -R build/lib*/libqtile ${out}/lib/
 cd ${out}/lib
-unzip qtile*
-rm qtile*
 base64 -d << EOF > libqtile/pangocffi.py
 {% include 'pangocffi.py/base64' %}
-EOF
-base64 -d << EOF > libqtile/backend/wayland/core.py
-{% include 'core.py/base64' %}
 EOF
 sed -e 's|XCursorManager(24)|XCursorManager(int(os.environ.get("XCURSOR_SIZE", "24")))|' -i libqtile/backend/wayland/core.py
 py_exports > exports
