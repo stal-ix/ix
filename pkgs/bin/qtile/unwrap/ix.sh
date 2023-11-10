@@ -20,6 +20,8 @@ bin/qtile/module/register
 cat << EOF > qtile
 import sys
 sys.dont_write_bytecode = True
+import traceback
+sys.excepthook = traceback.print_exception
 import libqtile.scripts.main as lm
 lm.main()
 EOF
