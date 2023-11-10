@@ -1,8 +1,15 @@
 {% extends '//die/c/ix.sh' %}
 
-{% block fetch %}
-https://files.pythonhosted.org/packages/f3/d4/25cc1e670f7ae478ffaefeecd6b968c049486c812e67e6e9fcc684bc0195/qtile-0.23.0.tar.gz
-sha:eae63f7a939d9deac86d7251f75cafddbddf67e6e828feccee2f8ad745ed19ed
+{% block git_repo %}
+https://github.com/pg83/qtile
+{% endblock %}
+
+{% block git_commit %}
+a30503a4b914fd7b2c51663501575d48797c6fa0
+{% endblock %}
+
+{% block git_sha %}
+49aefa1f6b48ee7660f6860326ddac4f2dc9fad554e18bcc6e4dcf3ac8ed0e91
 {% endblock %}
 
 {% block bld_libs %}
@@ -23,6 +30,7 @@ ${NATIVE_PYTHON} setup.py build
 
 {% block install %}
 ${NATIVE_PYTHON} setup.py install \
+    --no-use-wheel \
     --prefix=${out} \
     --install-lib=${out}/lib
 {% endblock %}
@@ -38,6 +46,9 @@ wrapped_log_init
 {% endblock %}
 
 {% block patch %}
+cat << EOF > PKG-INFO
+{% include 'PKG-INFO' %}
+EOF
 sed -e 's|\[xcb\]||' \
     -e 's|.*xcffib.*1.*||' \
     -i setup.cfg

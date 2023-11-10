@@ -7,10 +7,9 @@ bin/unzip
 {% endblock %}
 
 {% block install %}
-{{super()}}
+mkdir ${out}/lib
+cp -R build/lib*/libqtile ${out}/lib/
 cd ${out}/lib
-unzip qtile*
-rm qtile*
 base64 -d << EOF > libqtile/pangocffi.py
 {% include 'pangocffi.py/base64' %}
 EOF

@@ -465,6 +465,7 @@ https://github.com/Nefelim4ag/Ananicy/archive/refs/tags/2.2.1.tar.gz
 https://github.com/NetworkConfiguration/dhcpcd/archive/refs/tags/v10.0.2.tar.gz
 https://github.com/NetworkConfiguration/dhcpcd/archive/refs/tags/v10.0.3.tar.gz
 https://github.com/NetworkConfiguration/dhcpcd/archive/refs/tags/v10.0.4.tar.gz
+https://github.com/NetworkConfiguration/dhcpcd/archive/refs/tags/v10.0.5.tar.gz
 https://github.com/NetworkConfiguration/openresolv/archive/refs/tags/v3.13.2.tar.gz
 https://github.com/NixOS/nix/archive/refs/tags/2.17.0.tar.gz
 https://github.com/NixOS/nix/archive/refs/tags/2.18.0.tar.gz
@@ -1103,6 +1104,7 @@ https://github.com/telegramdesktop/tdesktop/releases/download/v4.10.5/tdesktop-4
 https://github.com/telegramdesktop/tdesktop/releases/download/v4.11.2/tdesktop-4.11.2-full.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v4.11.3/tdesktop-4.11.3-full.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v4.11.5/tdesktop-4.11.5-full.tar.gz
+https://github.com/telegramdesktop/tdesktop/releases/download/v4.11.6/tdesktop-4.11.6-full.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v4.8.10/tdesktop-4.8.10-full.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v4.8.12/tdesktop-4.8.12-full.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v4.9.0/tdesktop-4.9.0-full.tar.gz
