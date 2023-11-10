@@ -215,6 +215,7 @@ https://downloads.xvid.com/downloads/xvidcore-1.3.7.tar.gz
 https://dri.freedesktop.org/libdrm/libdrm-2.4.116.tar.xz
 https://dri.freedesktop.org/libdrm/libdrm-2.4.117.tar.xz
 https://ffmpeg.org/releases/ffmpeg-5.1.2.tar.xz
+https://ffmpeg.org/releases/ffmpeg-6.0.1.tar.xz
 https://ffmpeg.org/releases/ffmpeg-6.0.tar.xz
 https://files.pythonhosted.org/packages/03/3b/68690a035ba7347860f1b8c0cde853230ba69ff41df5884ea7d89fe68cd3/Mako-1.2.4-py3-none-any.whl
 https://files.pythonhosted.org/packages/08/f4/ffa743f860f34a5e8c60abaaa686f82c9ac7a2b50e5a1c3b1eb564d59159/PyYAML-6.0-cp39-cp39-win_amd64.whl
