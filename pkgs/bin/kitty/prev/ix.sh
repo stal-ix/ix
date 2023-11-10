@@ -1,6 +1,5 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
-bld/python
-bld/pip/scripts
+bin/kitty/prev/{{target.os}}
 {% endblock %}

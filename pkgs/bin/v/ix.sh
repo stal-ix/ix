@@ -1,7 +1,7 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
-bin/less
 bin/chroma
+bin/less/gnu
 bin/v/scripts
 {% endblock %}

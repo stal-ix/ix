@@ -1,4 +1,4 @@
-{% extends '//bin/kitty/t/ix.sh' %}
+{% extends '//bin/kitty/prev/t/ix.sh' %}
 
 {% block bld_libs %}
 lib/dbus

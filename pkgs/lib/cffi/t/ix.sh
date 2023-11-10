@@ -16,7 +16,7 @@ pip/setuptools
 {% endblock %}
 
 {% block bld_tool %}
-bld/python/{{python_ver}}
+bld/python/frozen(python_ver={{python_ver}})
 {% endblock %}
 
 {% block build %}

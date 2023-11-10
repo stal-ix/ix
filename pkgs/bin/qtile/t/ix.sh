@@ -9,13 +9,12 @@ sha:eae63f7a939d9deac86d7251f75cafddbddf67e6e828feccee2f8ad745ed19ed
 lib/drm
 pip/wheel
 pip/setuptools
-pip/setuptools_scm
 bin/qtile/deps
+pip/setuptools_scm
 {% endblock %}
 
 {% block bld_tool %}
-bin/git
-bld/python/{{python_ver}}(py_extra_modules=bin/qtile/deps,python_ver={{python_ver}})
+bld/python/frozen(py_extra_modules=lib/cffi/module/register:lib/py/wayland/module/register:lib/py/wlroots/module/register:lib/cairo/dl:lib/cffi/xkbcommon/module/register,python_ver={{python_ver}})
 {% endblock %}
 
 {% block build %}

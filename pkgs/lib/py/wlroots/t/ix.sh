@@ -5,16 +5,19 @@ https://github.com/flacjacket/pywlroots/archive/refs/tags/v0.16.6.tar.gz
 sha:9620095d04f51271d3b071dd2c7b52b20f33b077de7785afbe037e743ae0311c
 {% endblock %}
 
+{% block lib_deps %}
+lib/wlroots/16
+{% endblock %}
+
 {% block bld_libs %}
 lib/cffi
-lib/wlroots/16
 pip/setuptools
 lib/py/wayland
 lib/cffi/xkbcommon
 {% endblock %}
 
 {% block bld_tool %}
-bld/python/{{python_ver}}(python_ver={{python_ver}},py_extra_modules=lib/cffi:lib/py/wayland)
+bld/python/frozen(python_ver={{python_ver}},py_extra_modules=lib/cffi/module/register:lib/py/wayland/module/register)
 {% endblock %}
 
 {% block build %}

@@ -1,6 +1,9 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
+bin/celluloid
+bin/less/gnu
+bin/kitty
 bin/xfsprogs/6/1
 bin/xfsprogs/6/latest
 bin/qtile

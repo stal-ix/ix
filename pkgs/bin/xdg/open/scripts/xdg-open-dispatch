@@ -34,7 +34,7 @@ on_image() {
 }
 
 on_video() {
-    for c in mpv mplayer; do
+    for c in celluloid mpv mplayer; do
         if command -v ${c}; then
             exec ${c} "${1}"
         fi

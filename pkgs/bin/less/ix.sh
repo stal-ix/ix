@@ -9,9 +9,3 @@ sha:2f201d64b828b88af36dfe6cfdba3e0819ece2e446ebe6224813209aaefed04f
 lib/c
 lib/curses
 {% endblock %}
-
-{% block install %}
-{{super()}}
-cd ${out}/bin
-ln -s less gnuless
-{% endblock %}

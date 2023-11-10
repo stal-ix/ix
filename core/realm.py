@@ -226,6 +226,11 @@ class Realm(BaseRealm):
 
         tmp = path + '.tmp'
 
+        try:
+            os.unlink(tmp)
+        except Exception:
+            pass
+
         os.symlink(self.path, tmp)
         cu.sync()
         os.rename(tmp, path)

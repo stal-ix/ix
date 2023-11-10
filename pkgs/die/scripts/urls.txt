@@ -215,6 +215,7 @@ https://downloads.xvid.com/downloads/xvidcore-1.3.7.tar.gz
 https://dri.freedesktop.org/libdrm/libdrm-2.4.116.tar.xz
 https://dri.freedesktop.org/libdrm/libdrm-2.4.117.tar.xz
 https://ffmpeg.org/releases/ffmpeg-5.1.2.tar.xz
+https://ffmpeg.org/releases/ffmpeg-6.0.1.tar.xz
 https://ffmpeg.org/releases/ffmpeg-6.0.tar.xz
 https://files.pythonhosted.org/packages/03/3b/68690a035ba7347860f1b8c0cde853230ba69ff41df5884ea7d89fe68cd3/Mako-1.2.4-py3-none-any.whl
 https://files.pythonhosted.org/packages/08/f4/ffa743f860f34a5e8c60abaaa686f82c9ac7a2b50e5a1c3b1eb564d59159/PyYAML-6.0-cp39-cp39-win_amd64.whl
@@ -233,6 +234,7 @@ https://files.pythonhosted.org/packages/bc/c3/f068337a370801f372f2f8f6bad74a5c14
 https://files.pythonhosted.org/packages/bf/10/ff66fea6d1788c458663a84d88787bae15d45daa16f6b3ef33322a51fc7e/MarkupSafe-2.0.1.tar.gz
 https://files.pythonhosted.org/packages/c1/97/c698bd9350f307daad79dd740806e1a59becd693bd11443a0f531e3229b3/jsonschema-4.17.3-py3-none-any.whl
 https://files.pythonhosted.org/packages/d2/fc/c0a3f4c4eaa5a22fbef91713474666e13d0ea2a69c84532579490a9f2cc8/dbus_next-0.2.3-py3-none-any.whl
+https://files.pythonhosted.org/packages/e5/8d/cf41b66a8110670e3ad03dab9b759704eeed07fa96e90fdc0357b2ba70e2/pyxdg-0.28-py2.py3-none-any.whl
 https://files.pythonhosted.org/packages/ec/5f/d922519ac948491915ab5b3270a88b0f517a003e6b12af5d71bf9ecc93a7/dacite-1.8.0-py3-none-any.whl
 https://files.pythonhosted.org/packages/f0/eb/fcb708c7bf5056045e9e98f62b93bd7467eb718b0202e7698eb11d66416c/attrs-23.1.0-py3-none-any.whl
 https://files.pythonhosted.org/packages/f3/d4/25cc1e670f7ae478ffaefeecd6b968c049486c812e67e6e9fcc684bc0195/qtile-0.23.0.tar.gz
@@ -326,6 +328,7 @@ https://ftp.mozilla.org/pub/security/nss/releases/NSS_3_93_RTM/src/nss-3.93.tar.
 https://ftp.osuosl.org/pub/rpm/releases/rpm-4.19.x/rpm-4.19.0.tar.bz2
 https://ftp.postgresql.org/pub/source/v15.4/postgresql-15.4.tar.bz2
 https://ftp.postgresql.org/pub/source/v16.0/postgresql-16.0.tar.bz2
+https://ftp.postgresql.org/pub/source/v16.1/postgresql-16.1.tar.bz2
 https://ftpmirror.gnu.org/libtool/libtool-2.4.6.tar.gz
 https://gameoftrees.org/releases/portable/got-portable-0.92.tar.gz
 https://gameoftrees.org/releases/portable/got-portable-0.93.tar.gz
@@ -363,6 +366,7 @@ https://github.com/AOMediaCodec/libavif/archive/refs/tags/v1.0.1.tar.gz
 https://github.com/ARMmbed/mbedtls/archive/refs/tags/v2.28.2.tar.gz
 https://github.com/ARMmbed/mbedtls/archive/refs/tags/v3.4.1.tar.gz
 https://github.com/ARMmbed/mbedtls/archive/refs/tags/v3.5.0.tar.gz
+https://github.com/ARMmbed/mbedtls/archive/refs/tags/v3.5.1.tar.gz
 https://github.com/AbiWord/enchant/releases/download/v2.5.0/enchant-2.5.0.tar.gz
 https://github.com/AbiWord/enchant/releases/download/v2.6.1/enchant-2.6.1.tar.gz
 https://github.com/AbiWord/enchant/releases/download/v2.6.2/enchant-2.6.2.tar.gz
@@ -468,6 +472,7 @@ https://github.com/NixOS/patchelf/archive/refs/tags/0.18.0.tar.gz
 https://github.com/Novum/vkQuake/archive/refs/tags/1.30.1.tar.gz
 https://github.com/OpenTTD/OpenTTD/archive/refs/tags/13.4.tar.gz
 https://github.com/OpenVPN/openvpn/archive/refs/tags/v2.6.6.tar.gz
+https://github.com/OpenVPN/openvpn/archive/refs/tags/v2.6.7.tar.gz
 https://github.com/OpenVisualCloud/SVT-HEVC/archive/refs/tags/v1.5.1.tar.gz
 https://github.com/OpenVisualCloud/SVT-VP9/archive/refs/tags/v0.3.0.tar.gz
 https://github.com/PhilipHazel/pcre2/archive/refs/tags/pcre2-10.42.tar.gz
@@ -553,6 +558,7 @@ https://github.com/catboost/catboost/archive/refs/tags/v1.0.6.tar.gz
 https://github.com/cboxdoerfer/fsearch/archive/refs/tags/0.2.3.tar.gz
 https://github.com/ccache/ccache/releases/download/v4.8.3/ccache-4.8.3.tar.xz
 https://github.com/ccxvii/mujs/archive/refs/tags/1.3.2.tar.gz
+https://github.com/celluloid-player/celluloid/archive/refs/tags/v0.26.tar.gz
 https://github.com/chenjiandongx/sniffer/archive/refs/tags/v0.6.1.tar.gz
 https://github.com/cisco/openh264/archive/refs/tags/v2.3.1.tar.gz
 https://github.com/cjlin1/liblinear/archive/v247/liblinear-247.tar.gz
@@ -775,6 +781,7 @@ https://github.com/knik0/faad2/archive/refs/tags/2.10.1.tar.gz
 https://github.com/knik0/faad2/archive/refs/tags/2.11.0.tar.gz
 https://github.com/kondrak/vkQuake2/archive/refs/tags/1.5.8.tar.gz
 https://github.com/kovidgoyal/kitty/archive/refs/tags/v0.25.0.tar.gz
+https://github.com/kovidgoyal/kitty/archive/refs/tags/v0.31.0.tar.gz
 https://github.com/kraxarn/spotify-qt/archive/refs/tags/v3.9.tar.gz
 https://github.com/kristapsdz/lowdown/archive/refs/tags/VERSION_1_0_2.tar.gz
 https://github.com/kristapsdz/lowdown/archive/refs/tags/VERSION_1_1_0.tar.gz
@@ -1021,6 +1028,7 @@ https://github.com/redis/redis/archive/refs/tags/7.2.3.tar.gz
 https://github.com/relan/exfat/releases/download/v1.4.0/exfat-utils-1.4.0.tar.gz
 https://github.com/rfc1036/whois/archive/refs/tags/v5.5.18.tar.gz
 https://github.com/rfc1036/whois/archive/refs/tags/v5.5.19.tar.gz
+https://github.com/rfc1036/whois/archive/refs/tags/v5.5.20.tar.gz
 https://github.com/rfjakob/earlyoom/archive/refs/tags/v1.7.tar.gz
 https://github.com/rgburke/grv/archive/refs/tags/v0.3.2.tar.gz
 https://github.com/rhash/RHash/archive/refs/tags/v1.4.4.tar.gz
