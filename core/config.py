@@ -98,6 +98,7 @@ def get_raw_arch(n):
             'vendor': 'unknown',
             'hw_vendor': 'unknown',
             'obj_fmt': 'wasm',
+            'cmake_system_name': 'Wasi', # wild guess
         }
 
     if n == 'linux':
@@ -105,6 +106,7 @@ def get_raw_arch(n):
             'os': 'linux',
             'kernel': 'linux',
             'obj_fmt': 'elf',
+            'cmake_system_name': 'Linux',
         }
 
     if n == 'darwin':
@@ -114,6 +116,7 @@ def get_raw_arch(n):
             'vendor': 'apple',
             'hw_vendor': 'apple',
             'obj_fmt': 'mach-o',
+            'cmake_system_name': 'Darwin',
         }
 
     if n == 'x86_64':

@@ -12,6 +12,7 @@ lib/c++
 
 {% block make_flags %}
 -f makefile
+CXXFLAGS=
 {% endblock %}
 
 {% block install %}
