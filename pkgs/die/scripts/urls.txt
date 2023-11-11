@@ -865,6 +865,7 @@ https://github.com/llvm/llvm-project/releases/download/llvmorg-17.0.3/llvm-proje
 https://github.com/llvm/llvm-project/releases/download/llvmorg-17.0.4/llvm-project-17.0.4.src.tar.xz
 https://github.com/lm-sensors/lm-sensors/archive/refs/tags/V3-6-0.tar.gz
 https://github.com/lsof-org/lsof/archive/refs/tags/4.98.0.tar.gz
+https://github.com/lsof-org/lsof/archive/refs/tags/4.99.0.tar.gz
 https://github.com/lsyncd/lsyncd/archive/refs/tags/v2.3.1.tar.gz
 https://github.com/luceneplusplus/LucenePlusPlus/archive/refs/tags/rel_3.0.8.tar.gz
 https://github.com/lxde/libfm/archive/refs/tags/1.3.2.tar.gz
