@@ -1,8 +1,8 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://github.com/harfbuzz/harfbuzz/archive/refs/tags/8.2.2.tar.gz
-sha:0546aac7b2493b3681047914550860157f8799fc80bf5cb528927a9643d6ab3d
+https://github.com/harfbuzz/harfbuzz/archive/refs/tags/8.3.0.tar.gz
+sha:6a093165442348d99f3307480ea87ed83bdabaf642cdd9548cff6b329e93bfac
 {% endblock %}
 
 {% block lib_deps %}
@@ -19,7 +19,6 @@ lib/darwin/framework/ApplicationServices
 bld/glib
 bld/python
 bin/ragel/6
-bld/shebangs
 {% endblock %}
 
 {% block meson_flags %}
@@ -39,8 +38,4 @@ rm -rf ${out}/lib/cmake
 ninja: error: '.../libharfbuzz.so.0.60810.0', needed by 'lib/libQt6UiTools.a', missing and no known rule to make it
 CalledProcessError: Command '['sh', '-s']' returned non-zero exit status 1.
 #}
-{% endblock %}
-
-{% block patch %}
-fix_shebangs src/relative_to.py
 {% endblock %}
