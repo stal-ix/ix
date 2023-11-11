@@ -77,6 +77,10 @@ def enrich(d):
     if 'endian' not in d:
         d['endian'] = 'little'
 
+    if 'dl_suffix' not in d:
+        if d.get('obj_fmt', '') == 'elf':
+            d['dl_suffix'] = 'so'
+
     add_gnu(d)
 
     if 'id' not in d:
@@ -117,6 +121,8 @@ def get_raw_arch(n):
             'hw_vendor': 'apple',
             'obj_fmt': 'mach-o',
             'cmake_system_name': 'Darwin',
+            'dl_suffix': 'dylib',
+            'symbol_prefix': '_',
         }
 
     if n == 'x86_64':

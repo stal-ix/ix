@@ -27,10 +27,15 @@ wrap_cc
 {% block build %}
 {{super()}}
 for x in global_use_utf16_conversion global_use_lstat sync_TestConstructor CreateObject CreateDecoder CreateEncoder GetMethodProperty GetHashers GetHandlerProperty2 GetIsArc GetNumberOfMethods GetNumberOfFormats GetHandlerProperty; do
-    echo "7z ${x} so_7z_${x}"
+    echo "7z ${x} so_7z_{{target.symbol_prefix}}${x}"
 done | dl_stubs > stubs.cpp
-patchns bin/7z.so so_7z_
-c++ -o real7z stubs.cpp CPP/7zip/UI/Console/*.o -Wl,--whole-archive bin/7z.so -Wl,--no-whole-archive
+mv bin/7z.so 7z.a
+patchns 7z.a {{target.symbol_prefix}}so_7z_
+{% if darwin %}
+c++ -o real7z stubs.cpp CPP/7zip/UI/Console/*.o -Wl,-all_load 7z.a
+{% else %}
+c++ -o real7z stubs.cpp CPP/7zip/UI/Console/*.o -Wl,--whole-archive 7z.a -Wl,--no-whole-archive
+{% endif %}
 {% endblock %}
 
 {% block install %}
