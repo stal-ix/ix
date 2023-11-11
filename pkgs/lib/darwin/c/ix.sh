@@ -2,5 +2,11 @@
 
 {% block lib_deps %}
 lib/build
-lib/darwin/c/{{macos_sdk or 'phracker'}}
+{% if macos_sdk %}
+lib/darwin/c/{{macos_sdk}}
+{% elif native %}
+lib/darwin/c/native
+{% else %}
+lib/darwin/c/phracker
+{% endif %}
 {% endblock %}
