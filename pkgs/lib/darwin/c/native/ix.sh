@@ -1,9 +1,5 @@
 {% extends '//die/py.py' %}
 
-{% block lib_deps %}
-lib/build
-{% endblock %}
-
 {% block build %}
 import os
 
