@@ -14,7 +14,12 @@ lib/kernel
 {% block bld_tool %}
 bld/perl
 bld/bash
+bld/shebangs
 bld/pkg/config
+{% endblock %}
+
+{% block patch %}
+fix_shebangs lib/dialects/linux/Mksrc
 {% endblock %}
 
 {% block configure %}
@@ -24,6 +29,7 @@ bash ./Configure -n linux
 
 {% block cpp_defines %}
 HASSECURITY=1
+HASIPv6=1
 NEEDS_NETINET_TCPH=1
 {% endblock %}
 
