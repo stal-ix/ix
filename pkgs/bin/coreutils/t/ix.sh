@@ -12,8 +12,8 @@ lib/openssl/1
 lib/acl
 lib/cap
 lib/attr
-lib/shim/extra
 {% endif %}
+lib/shim/extra
 {% endblock %}
 
 {% block configure_flags %}
