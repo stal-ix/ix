@@ -67,6 +67,7 @@ UNIX=1
 __UNIX_PATHS_INCLUDED=1
 {% if not native %}
 CMAKE_SYSTEM_NAME={{target.cmake_system_name}}
+CMAKE_SYSTEM_PROCESSOR={{target.arch}}
 {% endif %}
 {% endif %}
 {% block cmake_flags %}
