@@ -791,7 +791,7 @@ bin/tex/info
 bin/feather/pad
 bin/hunspell
 bin/geany
-bin/code/lite
+#bin/code/lite
 bin/dash/sh/old
 bin/dash/sh
 bin/dash
