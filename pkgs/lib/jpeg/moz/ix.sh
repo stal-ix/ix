@@ -13,3 +13,10 @@ lib/c
 {{super()}}
 PNG_SUPPORTED=OFF
 {% endblock %}
+
+{% block bld_tool %}
+{{super()}}
+{% if darwin %}
+bld/cctools
+{% endif %}
+{% endblock %}
