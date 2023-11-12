@@ -13,5 +13,6 @@ extract 1 ${src}/Mac*
 {% block env %}
 export MACOSX_DEPLOYMENT_TARGET=11.0
 export CXXFLAGS="-Wno-elaborated-enum-base \${CXXFLAGS}"
+export ac_cv_func_malloc_0_nonnull=yes
 {{super()}}
 {% endblock %}
