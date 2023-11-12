@@ -33,4 +33,7 @@ bld/auto
 {% if linux %}
 --with-random="/dev/urandom"
 {% endif %}
+{% if darwin %}
+--disable-ldap
+{% endif %}
 {% endblock %}

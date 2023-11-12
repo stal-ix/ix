@@ -7,3 +7,8 @@ lib/curses
 lib/archive
 {{super()}}
 {% endblock %}
+
+{% block setup %}
+{{super()}}
+export CXXFLAGS="-Wno-elaborated-enum-base ${CXXFLAGS}"
+{% endblock %}
