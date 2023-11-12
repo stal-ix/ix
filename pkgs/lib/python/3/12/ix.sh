@@ -10,6 +10,7 @@ lib/dlfcn
 {% block bld_tool %}
 bld/python/12
 bld/pip/scripts
+bld/fake/er(tool_name=ld)
 {{super()}}
 {% endblock %}
 
@@ -19,14 +20,18 @@ bld/pip/scripts
 {{super()}}
 {% endblock %}
 
+{% block patch %}
+sed -e 's|MACHDEP=.*unknown.*|:|' \
+    -e 's|.*ERROR.*cross build not.*||' \
+    -i configure.ac
+{{super()}}
+{% endblock %}
+
 {% block configure %}
 export READELF=llvm-readelf
-{% if linux %}
-export ac_cv_func_getaddrinfo=yes
-export ac_cv_buggy_getaddrinfo=no
-{% endif %}
-export ac_cv_file__dev_ptmx=yes
+export MACHDEP={{target.os}}
 export ac_cv_file__dev_ptc=no
+export ac_cv_file__dev_ptmx=yes
 {{super()}}
 {% endblock %}
 

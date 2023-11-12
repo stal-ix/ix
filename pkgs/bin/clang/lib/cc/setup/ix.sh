@@ -3,7 +3,7 @@
 {% block env %}
 setup_compiler() {
 L="${LDFLAGS}"
-C="--target={{target.arch}}-{{target.vendor}}-{{target.os}} ${CPPFLAGS} ${CFLAGS} ${OPTFLAGS}"
+C="--target={{target.arch}}-{{target.vendor}}-{{target.clang_os}} ${CPPFLAGS} ${CFLAGS} ${OPTFLAGS}"
 LC="${C} ${CTRFLAGS}"
 
 cat << EOF > cc

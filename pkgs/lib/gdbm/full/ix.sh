@@ -2,6 +2,8 @@
 
 {% block configure_flags %}
 {{super()}}
+# conflict with macos sdk
+--without-readline
 --enable-libgdbm-compat
 {% endblock %}
 

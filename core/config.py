@@ -81,6 +81,9 @@ def enrich(d):
         if d.get('obj_fmt', '') == 'elf':
             d['dl_suffix'] = 'so'
 
+    if 'clang_os' not in d:
+        d['clang_os'] = d['os']
+
     add_gnu(d)
 
     if 'id' not in d:
@@ -115,6 +118,7 @@ def get_raw_arch(n):
 
     if n == 'darwin':
         return {
+            'clang_os': 'darwin11',
             'os': 'darwin',
             'kernel': 'xnu',
             'vendor': 'apple',
