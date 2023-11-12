@@ -1,6 +1,7 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
+bin/u/config
 bin/assemble
 bin/byacc
 bin/make
