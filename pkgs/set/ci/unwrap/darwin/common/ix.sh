@@ -1,6 +1,10 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
+bin/bison/3/7
+bin/bison/3/6
+bin/bison/3/8
+bin/flex
 bin/u/config
 bin/assemble
 bin/byacc
