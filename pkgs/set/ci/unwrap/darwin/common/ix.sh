@@ -1,6 +1,7 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
+bin/dropbear/stock
 bin/curl
 bin/convert
 bin/cmake

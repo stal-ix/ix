@@ -8,3 +8,9 @@ sha:986025d7b374276fee2e30e99f3649e4ac0db8a02257a37ee10eae72abed0d1f
 {% block lib_deps %}
 lib/c
 {% endblock %}
+
+{% block build_flags %}
+{% if darwin %}
+shut_up
+{% endif %}
+{% endblock %}
