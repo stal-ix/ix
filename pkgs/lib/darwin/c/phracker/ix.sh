@@ -12,5 +12,6 @@ extract 1 ${src}/Mac*
 
 {% block env %}
 export MACOSX_DEPLOYMENT_TARGET=11.0
+export CXXFLAGS="-Wno-elaborated-enum-base \${CXXFLAGS}"
 {{super()}}
 {% endblock %}

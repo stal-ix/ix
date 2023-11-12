@@ -1,0 +1,1906 @@
+[92mREADY /ix/store/cJwYz2wc2HKcdbaH-aux-fontconfig-data/touch[0m
+[92mREADY /ix/store/LWFIg4kN1dezlcob-lib-magic/touch[0m
+[92mREADY /ix/store/g6aa0U2sU6P9ATWp-lib-z-adler/touch[0m
+[92mREADY /ix/store/i0mqkfoZ8ZaqNNCX-bin-glib-codegen-old/touch[0m
+[92mREADY /ix/store/Qp5hi0cXte3TLIiA-bin-python-lite/touch[0m
+[92mREADY /ix/store/P2NDBDUVLzGxZtMh-lib-ffi/touch[0m
+[92mREADY /ix/store/cb8rz5OZTffadriD-lib-cairo-unwrap/touch[0m
+[92mREADY /ix/store/OAteQymuoEjclJUI-bin-findutils/touch[0m
+[92mREADY /ix/store/ajFOa8LDZshZ4REk-lib-pixman/touch[0m
+[92mREADY /ix/store/DHdO2FRG8jgcUpMw-bin-diffutils/touch[0m
+[92mREADY /ix/store/egEdKcRYXtJ5BMhI-lib-intl-gnu/touch[0m
+[92mREADY /ix/store/lys4qvt2IgeuAv81-bin-gawk-lite/touch[0m
+[92mREADY /ix/store/DXb7OO0JcUmaHznC-bin-grep-patched/touch[0m
+[92mREADY /ix/store/eSmECVKTkG908OGM-lib-darwin-framework-coregraphics/touch[0m
+[92mREADY /ix/store/J7WxWdJK6y5VuakU-bin-realm-symlink/touch[0m
+[92mREADY /ix/store/jZi6iAOINYemEXnb-lib-darwin-framework-corefoundation/touch[0m
+[92mREADY /ix/store/diXJkvhoieOasqyw-bin-grep-scripts/touch[0m
+[92mREADY /ix/store/7YqAYtd7dKdurYtL-bin-coreutils-lite/touch[0m
+[92mREADY /ix/store/52kNfi90UOojVZ8d-lib-bzip-2/touch[0m
+[92mREADY /ix/store/1qwgZ6cPrDktNp1w-bin-dash-sh/touch[0m
+[92mREADY /ix/store/B8xDSI7I1gU7F7pE-lib-iconv/touch[0m
+[92mREADY /ix/store/8yQvTSfjyw4zcOvX-lib-png/touch[0m
+[92mREADY /ix/store/GuekQM5b1OYHtWK0-lib-pcre-2/touch[0m
+[92mREADY /ix/store/5pd6fTOenvqSlij6-lib-brotli/touch[0m
+[92mREADY /ix/store/dsoRskWBW60KE0n1-bin-sed/touch[0m
+[92mREADY /ix/store/idYcXi3iZFlCx5qQ-lnk/touch[0m
+[92mREADY /ix/store/TU7m5oFfiTFg8wM2-bin-file/touch[0m
+[92mREADY /ix/store/v0DxM73HXum33mYY-lib-c-plus-plus-17/touch[0m
+[92mREADY /ix/store/QHmEZKAknrYUbXXr-lib-darwin-framework-coreservices/touch[0m
+[92mREADY /ix/store/Den9J5d9eVuBtnoS-bin-patch/touch[0m
+[92mREADY /ix/store/VjWsjm5xJ1oyrJS4-lib-darwin-framework-foundation/touch[0m
+[92mREADY /ix/store/2BmkBzi3xnX5vb0k-lib-reallocarray/touch[0m
+[92mREADY /ix/store/GR6RymfrEXIhbeAJ-lib-darwin-framework-coretext/touch[0m
+[92mREADY /ix/store/eiITq4N2xxJnwkz4-lib-glib-ix/touch[0m
+[92mREADY /ix/store/NLUvASmniujwqyT8-lib-reallocarray-headers/touch[0m
+[92mREADY /ix/store/ABSReaWYoeBMT92l-lib-darwin-framework-applicationservices/touch[0m
+[92mREADY /ix/store/IJX7soBE9RIIpvf0-lib-mimetype/touch[0m
+[92mREADY /ix/store/5ByxT4oGYOxnp7vy-lnk/touch[0m
+[92mREADY /ix/store/27GpMtr8L6CrJW86-lib-fontconfig-unwrap/touch[0m
+[92mREADY /ix/store/rlPkfAfDCohYNnjl-lib-compiler-rt-builtins-hack/touch[0m
+[92mREADY /ix/store/FnIVJTdX5Lr6KQu1-lib-expat/touch[0m
+[92mREADY /ix/store/rEC2D2zChbQw03cp-bin-clang-17/touch[0m
+[92mREADY /ix/store/CfOLizfKH4MYoBjz-lib-fontconfig-bootstrap/touch[0m
+[92mREADY /ix/store/tOhO8S9CK3AvIJfS-lib-build-opt-o2/touch[0m
+[92mREADY /ix/store/NcQYyoj4QrqEo1GB-lib-json-c/touch[0m
+[92mREADY /ix/store/px17oOwLOZc1xij4-bin-cctools/touch[0m
+[92mREADY /ix/store/VW1IPRyf3q98pHrt-lib-dlfcn/touch[0m
+[92mREADY /ix/store/V9O4pDGRp1ENizns-lib-build-opt-safe/touch[0m
+[92mREADY /ix/store/qPDqDKj31EojyMxW-bin-meson-ix/touch[0m
+[92mREADY /ix/store/BF8wvcUw989Ia16Z-lib-cairo-bootstrap/touch[0m
+[92mREADY /ix/store/b6LUZFR8aDd78UP3-lib-build-type-release/touch[0m
+[92mREADY /ix/store/7kfEwpvh0rBOOQB9-bin-cmake-lite/touch[0m
+[92mREADY /ix/store/ZKoe7aHAPbqkurVD-lib-clang-lib-cc-common/touch[0m
+[92mREADY /ix/store/FyfJzoeHD7Kk7et8-lib-freetype-bootstrap/touch[0m
+[92mREADY /ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/touch[0m
+[92mREADY /ix/store/0EAJiI9MzX0oTeqK-lib-clang-lib-cc-diag/touch[0m
+[92mREADY /ix/store/Kcso91GEjIsCzwaL-lib-clang-lib-cc-freestanding/touch[0m
+[92mREADY /ix/store/GjtApzXUXJY1qoLW-bin-pkg-config/touch[0m
+[92mREADY /ix/store/jLnq2enoB0zR8nPw-lib-clang-lib-cc-setup/touch[0m
+[92mREADY /ix/store/CZBTA2GQgBJIRMZL-lib-clang-lib-ar/touch[0m
+[92mREADY /ix/store/xdOJfg1xqSpez0pH-aux-magic/touch[0m
+[92mREADY /ix/store/EMgaXvoOCodk4XIF-lib-clang-lib-ld-darwin/touch[0m
+[92mREADY /ix/store/o9E47wvh6qmOXads-lib-clang-lib-cc-setup/touch[0m
+[92mREADY /ix/store/RUFyIWKlLkbSkmmC-lib-clang-lib-ld-linux/touch[0m
+[92mREADY /ix/store/WodvnxOMIgoFOPcp-bin-ninja/touch[0m
+[92mREADY /ix/store/HXmxdQqtkQ82oVl0-bin-xz/touch[0m
+[92mREADY /ix/store/dZTClDLm1s6O9BTe-bin-glib-codegen/touch[0m
+[92mREADY /ix/store/T5oASeqGH3Zfpnvk-bin-ragel-6/touch[0m
+[92mREADY /ix/store/7bEfoxvRgDzhtDIz-bin-bsdtar-lite/touch[0m
+[92mREADY /ix/store/BNpAnpGSwYA8M49T-bin-extract-scripts/touch[0m
+[94mBUILD /ix/store/MI5BrAAfdDXctjE8-lib-harfbuzz-bootstrap/touch[0m
+extract
+/ix/store/7YqAYtd7dKdurYtL-bin-coreutils-lite/bin/ls
+setup target env
+skip patch
+The Meson build system
+Version: 1.2.3
+Source dir: /ix/build/MI5BrAAfdDXctjE8/src
+Build dir: /ix/build/MI5BrAAfdDXctjE8/obj
+Build type: cross build
+Project name: harfbuzz
+Project version: 8.3.0
+C compiler for the host machine: clang (clang 17.0.4 "clang version 17.0.4")
+C linker for the host machine: clang ld64.lld 17.0.4
+C++ compiler for the host machine: clang++ (clang 17.0.4 "clang version 17.0.4")
+C++ linker for the host machine: clang++ ld64.lld 17.0.4
+Compiler for language c for the build machine not found.
+Compiler for language cpp for the build machine not found.
+Build machine cpu family: x86_64
+Build machine cpu: x86_64
+Host machine cpu family: aarch64
+Host machine cpu: aarch64
+Target machine cpu family: aarch64
+Target machine cpu: aarch64
+Fetching value of define "_MSC_FULL_VER" :  
+Compiler for C++ supports link arguments -Bsymbolic-functions: YES 
+Compiler for C++ supports arguments -fno-exceptions: YES 
+Compiler for C++ supports arguments -fno-rtti: YES 
+Compiler for C++ supports arguments -fno-threadsafe-statics: YES 
+Compiler for C++ supports arguments -fvisibility-inlines-hidden: YES 
+Library m found: YES
+Found pkg-config: /ix/store/GjtApzXUXJY1qoLW-bin-pkg-config/bin/pkg-config (0.29.2)
+Run-time dependency freetype2 found: YES 26.1.20
+Run-time dependency glib-2.0 found: YES 2.78.1
+Run-time dependency gobject-2.0 found: YES 2.78.1
+Dependency graphite2 skipped: feature graphite2 disabled
+Dependency graphite2 skipped: feature graphite disabled
+Library iwasm skipped: feature wasm disabled
+Dependency icu-uc skipped: feature icu disabled
+Found CMake: /ix/store/7kfEwpvh0rBOOQB9-bin-cmake-lite/bin/cmake (3.27.7)
+Run-time dependency chafa found: NO (tried pkgconfig, framework and cmake)
+Compiler for C++ supports arguments -Wno-non-virtual-dtor: YES 
+Run-time dependency appleframeworks found: YES (ApplicationServices)
+Checking for type "CTFontRef" with dependency appleframeworks: YES 
+Run-time dependency threads found: YES
+Has header "unistd.h" : YES 
+Has header "sys/mman.h" : YES 
+Has header "stdbool.h" : YES 
+Has header "xlocale.h" : YES 
+Checking for function "atexit" : YES 
+Checking for function "mprotect" : YES 
+Checking for function "sysconf" : YES 
+Checking for function "getpagesize" : YES 
+Checking for function "mmap" : YES 
+Checking for function "isatty" : YES 
+Checking for function "uselocale" : YES 
+Checking for function "newlocale" : YES 
+Checking for function "sincosf" : NO 
+Checking for function "FT_Get_Var_Blend_Coordinates" with dependency freetype2: YES 
+Checking for function "FT_Set_Var_Blend_Coordinates" with dependency freetype2: YES 
+Checking for function "FT_Done_MM_Var" with dependency freetype2: YES 
+Checking for function "FT_Get_Transform" with dependency freetype2: YES 
+Program gen-hb-version.py found: YES (/ix/build/MI5BrAAfdDXctjE8/src/src/gen-hb-version.py)
+Configuring hb-version.h with command
+Program ragel found: YES 6.10 (/ix/store/T5oASeqGH3Zfpnvk-bin-ragel-6/bin/ragel)
+Program gen-ragel-artifacts.py found: YES (/ix/build/MI5BrAAfdDXctjE8/src/src/gen-ragel-artifacts.py)
+Program gen-harfbuzzcc.py found: YES (/ix/build/MI5BrAAfdDXctjE8/src/src/gen-harfbuzzcc.py)
+Configuring hb-features.h using configuration
+Configuring hb-supported-features.h using configuration
+Program gen-def.py found: YES (/ix/build/MI5BrAAfdDXctjE8/src/src/gen-def.py)
+Fetching value of define "_MSC_FULL_VER" :  (cached)
+Program gen-harfbuzzcc.py found: YES (/ix/build/MI5BrAAfdDXctjE8/src/src/gen-harfbuzzcc.py)
+Program relative_to.py found: YES (/ix/build/MI5BrAAfdDXctjE8/src/src/relative_to.py)
+Configuring harfbuzz-config.cmake using configuration
+Found pkg-config: /ix/store/GjtApzXUXJY1qoLW-bin-pkg-config/bin/pkg-config (0.29.2)
+Build-time dependency glib-2.0 found: YES 2.78.1
+WARNING: pkgconfig variable 'glib_mkenums' not defined for dependency glib-2.0.
+Program glib-mkenums found: YES (/ix/store/dZTClDLm1s6O9BTe-bin-glib-codegen/bin/glib-mkenums)
+Dependency glib-2.0 found: YES 2.78.1 (cached)
+WARNING: pkgconfig variable 'glib_mkenums' not defined for dependency glib-2.0.
+Program glib-mkenums found: YES (/ix/store/dZTClDLm1s6O9BTe-bin-glib-codegen/bin/glib-mkenums)
+Program fix_get_types.py found: YES (/ix/build/MI5BrAAfdDXctjE8/src/src/fix_get_types.py)
+Program fix_get_types.py found: YES (/ix/build/MI5BrAAfdDXctjE8/src/src/fix_get_types.py)
+Program g-ir-scanner found: NO
+Configuring config.h using configuration
+Build targets in project: 22
+NOTICE: Future-deprecated features used:
+ * 0.64.0: {'copy arg in configure_file'}
+
+harfbuzz 8.3.0
+
+  Directories
+    prefix                    : /ix/store/MI5BrAAfdDXctjE8-lib-harfbuzz-bootstrap
+    bindir                    : bin
+    libdir                    : lib
+    includedir                : include
+    datadir                   : share
+    cmakepackagedir           : lib/cmake
+
+  Unicode callbacks (you want at least one)
+    Builtin                   : YES
+    Glib                      : YES
+    ICU                       : NO
+
+  Font callbacks (the more the merrier)
+    Builtin                   : YES
+    FreeType                  : YES
+
+  Dependencies used for command-line utilities
+    Cairo                     : NO
+    Chafa                     : NO
+
+  Additional shapers
+    Graphite2                 : NO
+    WebAssembly (experimental): NO
+
+  Platform shapers (not normally needed)
+    CoreText                  : YES
+    DirectWrite (experimental): NO
+    GDI/Uniscribe             : NO
+
+  Other features
+    Documentation             : NO
+    GObject bindings          : YES
+    Cairo integration         : NO
+    Introspection             : NO
+    Experimental APIs         : NO
+
+  Testing
+    Tests                     : NO
+    Benchmark                 : NO
+
+  User defined options
+    Cross files               : /ix/build/MI5BrAAfdDXctjE8/cross.ini
+    build.pkg_config_path     : /ix/store/eiITq4N2xxJnwkz4-lib-glib-ix/lib/pkgconfig:/ix/store/LWFIg4kN1dezlcob-lib-magic/lib/pkgconfig:/ix/store/P2NDBDUVLzGxZtMh-lib-ffi/lib/pkgconfig:/ix/store/GuekQM5b1OYHtWK0-lib-pcre-2/lib/pkgconfig:/ix/store/FyfJzoeHD7Kk7et8-lib-freetype-bootstrap/lib/pkgconfig:/ix/store/8yQvTSfjyw4zcOvX-lib-png/lib/pkgconfig:/ix/store/g6aa0U2sU6P9ATWp-lib-z-adler/lib/pkgconfig:/ix/store/5pd6fTOenvqSlij6-lib-brotli/lib/pkgconfig:/ix/store/CfOLizfKH4MYoBjz-lib-fontconfig-bootstrap/lib/pkgconfig:/ix/store/FnIVJTdX5Lr6KQu1-lib-expat/lib/pkgconfig:/ix/store/NcQYyoj4QrqEo1GB-lib-json-c/lib/pkgconfig:
+    default_library           : static
+    libdir                    : /ix/store/MI5BrAAfdDXctjE8-lib-harfbuzz-bootstrap/lib
+    libexecdir                : /ix/store/MI5BrAAfdDXctjE8-lib-harfbuzz-bootstrap/lib/lib_harfbuzz_bootstrap
+    pkg_config_path           : /ix/store/eiITq4N2xxJnwkz4-lib-glib-ix/lib/pkgconfig:/ix/store/LWFIg4kN1dezlcob-lib-magic/lib/pkgconfig:/ix/store/P2NDBDUVLzGxZtMh-lib-ffi/lib/pkgconfig:/ix/store/GuekQM5b1OYHtWK0-lib-pcre-2/lib/pkgconfig:/ix/store/FyfJzoeHD7Kk7et8-lib-freetype-bootstrap/lib/pkgconfig:/ix/store/8yQvTSfjyw4zcOvX-lib-png/lib/pkgconfig:/ix/store/g6aa0U2sU6P9ATWp-lib-z-adler/lib/pkgconfig:/ix/store/5pd6fTOenvqSlij6-lib-brotli/lib/pkgconfig:/ix/store/CfOLizfKH4MYoBjz-lib-fontconfig-bootstrap/lib/pkgconfig:/ix/store/FnIVJTdX5Lr6KQu1-lib-expat/lib/pkgconfig:/ix/store/NcQYyoj4QrqEo1GB-lib-json-c/lib/pkgconfig:/ix/store/eiITq4N2xxJnwkz4-lib-glib-ix/lib/pkgconfig:/ix/store/LWFIg4kN1dezlcob-lib-magic/lib/pkgconfig:/ix/store/P2NDBDUVLzGxZtMh-lib-ffi/lib/pkgconfig:/ix/store/GuekQM5b1OYHtWK0-lib-pcre-2/lib/pkgconfig:/ix/store/FyfJzoeHD7Kk7et8-lib-freetype-bootstrap/lib/pkgconfig:/ix/store/8yQvTSfjyw4zcOvX-lib-png/lib/pkgconfig:/ix/store/g6aa0U2sU6P9ATWp-lib-z-adler/lib/pkgconfig:/ix/store/5pd6fTOenvqSlij6-lib-brotli/lib/pkgconfig:/ix/store/CfOLizfKH4MYoBjz-lib-fontconfig-bootstrap/lib/pkgconfig:/ix/store/FnIVJTdX5Lr6KQu1-lib-expat/lib/pkgconfig:/ix/store/NcQYyoj4QrqEo1GB-lib-json-c/lib/pkgconfig:
+    prefix                    : /ix/store/MI5BrAAfdDXctjE8-lib-harfbuzz-bootstrap
+    werror                    : false
+    b_asneeded                : false
+    b_lundef                  : false
+    cairo                     : disabled
+    coretext                  : enabled
+    docs                      : disabled
+    glib                      : enabled
+    gobject                   : enabled
+    icu                       : disabled
+    tests                     : disabled
+    utilities                 : disabled
+
+Found ninja-1.11.1 at /ix/store/WodvnxOMIgoFOPcp-bin-ninja/bin/ninja
+WARNING: Cross file does not specify strip binary, result will not be stripped.
+WARNING: Cross file does not specify strip binary, result will not be stripped.
+sanitize /ix/build/MI5BrAAfdDXctjE8/obj/meson-private/cmake_chafa/build.ninja
+sanitize /ix/build/MI5BrAAfdDXctjE8/obj/meson-private/__CMake_compiler_info__/build.ninja
+sanitize /ix/build/MI5BrAAfdDXctjE8/obj/build.ninja
+ninja: Entering directory `/ix/build/MI5BrAAfdDXctjE8/obj'
+[1/88] Generating src/harfbuzz.cc with a custom command
+[2/88] Generating src/hb-buffer-deserialize-text-unicode.hh with a custom command
+[3/88] Generating src/hb-ot-shaper-indic-machine.hh with a custom command
+[4/88] Generating src/hb-ot-shaper-khmer-machine.hh with a custom command
+[5/88] Generating src/hb-ot-shaper-use-machine.hh with a custom command
+[6/88] Generating src/hb-buffer-deserialize-json.hh with a custom command
+[7/88] Generating src/hb-ot-shaper-myanmar-machine.hh with a custom command
+[8/88] Generating src/hb-buffer-deserialize-text-glyphs.hh with a custom command
+[9/88] Generating src/hb-number-parser.hh with a custom command
+[94mBUILD /ix/store/WB7PB9qxr7wtPdGb-lib-harfbuzz-unwrap/touch[0m
+extract
+/ix/store/7YqAYtd7dKdurYtL-bin-coreutils-lite/bin/ls
+setup target env
+skip patch
+The Meson build system
+Version: 1.2.3
+Source dir: /ix/build/WB7PB9qxr7wtPdGb/src
+Build dir: /ix/build/WB7PB9qxr7wtPdGb/obj
+Build type: cross build
+Project name: harfbuzz
+Project version: 8.3.0
+C compiler for the host machine: clang (clang 17.0.4 "clang version 17.0.4")
+C linker for the host machine: clang ld64.lld 17.0.4
+C++ compiler for the host machine: clang++ (clang 17.0.4 "clang version 17.0.4")
+C++ linker for the host machine: clang++ ld64.lld 17.0.4
+Compiler for language c for the build machine not found.
+Compiler for language cpp for the build machine not found.
+Build machine cpu family: x86_64
+Build machine cpu: x86_64
+Host machine cpu family: aarch64
+Host machine cpu: aarch64
+Target machine cpu family: aarch64
+Target machine cpu: aarch64
+Fetching value of define "_MSC_FULL_VER" :  
+Compiler for C++ supports link arguments -Bsymbolic-functions: YES 
+Compiler for C++ supports arguments -fno-exceptions: YES 
+Compiler for C++ supports arguments -fno-rtti: YES 
+Compiler for C++ supports arguments -fno-threadsafe-statics: YES 
+Compiler for C++ supports arguments -fvisibility-inlines-hidden: YES 
+Library m found: YES
+Found pkg-config: /ix/store/GjtApzXUXJY1qoLW-bin-pkg-config/bin/pkg-config (0.29.2)
+Run-time dependency freetype2 found: YES 26.1.20
+Run-time dependency glib-2.0 found: YES 2.78.1
+Run-time dependency gobject-2.0 found: YES 2.78.1
+Dependency graphite2 skipped: feature graphite2 disabled
+Dependency graphite2 skipped: feature graphite disabled
+Library iwasm skipped: feature wasm disabled
+Dependency icu-uc skipped: feature icu disabled
+Run-time dependency cairo found: YES 1.18.0
+Found CMake: /ix/store/7kfEwpvh0rBOOQB9-bin-cmake-lite/bin/cmake (3.27.7)
+Run-time dependency cairo-ft found: NO (tried pkgconfig, framework and cmake)
+Run-time dependency chafa found: NO (tried pkgconfig, framework and cmake)
+Compiler for C++ supports arguments -Wno-non-virtual-dtor: YES 
+Run-time dependency appleframeworks found: YES (ApplicationServices)
+Checking for type "CTFontRef" with dependency appleframeworks: YES 
+Run-time dependency threads found: YES
+Has header "unistd.h" : YES 
+Has header "sys/mman.h" : YES 
+Has header "stdbool.h" : YES 
+Has header "xlocale.h" : YES 
+Checking for function "atexit" : YES 
+Checking for function "mprotect" : YES 
+Checking for function "sysconf" : YES 
+Checking for function "getpagesize" : YES 
+Checking for function "mmap" : YES 
+Checking for function "isatty" : YES 
+Checking for function "uselocale" : YES 
+Checking for function "newlocale" : YES 
+Checking for function "sincosf" : NO 
+Checking for function "cairo_user_font_face_set_render_color_glyph_func" with dependency cairo: YES 
+Checking for function "cairo_font_options_get_custom_palette_color" with dependency cairo: YES 
+Checking for function "cairo_user_scaled_font_get_foreground_source" with dependency cairo: YES 
+Checking for function "FT_Get_Var_Blend_Coordinates" with dependency freetype2: YES 
+Checking for function "FT_Set_Var_Blend_Coordinates" with dependency freetype2: YES 
+Checking for function "FT_Done_MM_Var" with dependency freetype2: YES 
+Checking for function "FT_Get_Transform" with dependency freetype2: YES 
+Program gen-hb-version.py found: YES (/ix/build/WB7PB9qxr7wtPdGb/src/src/gen-hb-version.py)
+Configuring hb-version.h with command
+Program ragel found: YES 6.10 (/ix/store/T5oASeqGH3Zfpnvk-bin-ragel-6/bin/ragel)
+Program gen-ragel-artifacts.py found: YES (/ix/build/WB7PB9qxr7wtPdGb/src/src/gen-ragel-artifacts.py)
+Program gen-harfbuzzcc.py found: YES (/ix/build/WB7PB9qxr7wtPdGb/src/src/gen-harfbuzzcc.py)
+Configuring hb-features.h using configuration
+Configuring hb-supported-features.h using configuration
+Program gen-def.py found: YES (/ix/build/WB7PB9qxr7wtPdGb/src/src/gen-def.py)
+Fetching value of define "_MSC_FULL_VER" :  (cached)
+Program gen-harfbuzzcc.py found: YES (/ix/build/WB7PB9qxr7wtPdGb/src/src/gen-harfbuzzcc.py)
+Dependency cairo found: YES 1.18.0 (cached)
+Program relative_to.py found: YES (/ix/build/WB7PB9qxr7wtPdGb/src/src/relative_to.py)
+Configuring harfbuzz-config.cmake using configuration
+Found pkg-config: /ix/store/GjtApzXUXJY1qoLW-bin-pkg-config/bin/pkg-config (0.29.2)
+Build-time dependency glib-2.0 found: YES 2.78.1
+WARNING: pkgconfig variable 'glib_mkenums' not defined for dependency glib-2.0.
+Program glib-mkenums found: YES (/ix/store/dZTClDLm1s6O9BTe-bin-glib-codegen/bin/glib-mkenums)
+Dependency glib-2.0 found: YES 2.78.1 (cached)
+WARNING: pkgconfig variable 'glib_mkenums' not defined for dependency glib-2.0.
+Program glib-mkenums found: YES (/ix/store/dZTClDLm1s6O9BTe-bin-glib-codegen/bin/glib-mkenums)
+Program fix_get_types.py found: YES (/ix/build/WB7PB9qxr7wtPdGb/src/src/fix_get_types.py)
+Program fix_get_types.py found: YES (/ix/build/WB7PB9qxr7wtPdGb/src/src/fix_get_types.py)
+Program g-ir-scanner found: NO
+Configuring config.h using configuration
+Build targets in project: 24
+NOTICE: Future-deprecated features used:
+ * 0.64.0: {'copy arg in configure_file'}
+
+harfbuzz 8.3.0
+
+  Directories
+    prefix                    : /ix/store/WB7PB9qxr7wtPdGb-lib-harfbuzz-unwrap
+    bindir                    : bin
+    libdir                    : lib
+    includedir                : include
+    datadir                   : share
+    cmakepackagedir           : lib/cmake
+
+  Unicode callbacks (you want at least one)
+    Builtin                   : YES
+    Glib                      : YES
+    ICU                       : NO
+
+  Font callbacks (the more the merrier)
+    Builtin                   : YES
+    FreeType                  : YES
+
+  Dependencies used for command-line utilities
+    Cairo                     : YES
+    Chafa                     : NO
+
+  Additional shapers
+    Graphite2                 : NO
+    WebAssembly (experimental): NO
+
+  Platform shapers (not normally needed)
+    CoreText                  : YES
+    DirectWrite (experimental): NO
+    GDI/Uniscribe             : NO
+
+  Other features
+    Documentation             : NO
+    GObject bindings          : YES
+    Cairo integration         : YES
+    Introspection             : NO
+    Experimental APIs         : NO
+
+  Testing
+    Tests                     : NO
+    Benchmark                 : NO
+
+  User defined options
+    Cross files               : /ix/build/WB7PB9qxr7wtPdGb/cross.ini
+    build.pkg_config_path     : /ix/store/BF8wvcUw989Ia16Z-lib-cairo-bootstrap/lib/pkgconfig:/ix/store/eiITq4N2xxJnwkz4-lib-glib-ix/lib/pkgconfig:/ix/store/LWFIg4kN1dezlcob-lib-magic/lib/pkgconfig:/ix/store/P2NDBDUVLzGxZtMh-lib-ffi/lib/pkgconfig:/ix/store/GuekQM5b1OYHtWK0-lib-pcre-2/lib/pkgconfig:/ix/store/ajFOa8LDZshZ4REk-lib-pixman/lib/pkgconfig:/ix/store/FyfJzoeHD7Kk7et8-lib-freetype-bootstrap/lib/pkgconfig:/ix/store/8yQvTSfjyw4zcOvX-lib-png/lib/pkgconfig:/ix/store/g6aa0U2sU6P9ATWp-lib-z-adler/lib/pkgconfig:/ix/store/5pd6fTOenvqSlij6-lib-brotli/lib/pkgconfig:/ix/store/CfOLizfKH4MYoBjz-lib-fontconfig-bootstrap/lib/pkgconfig:/ix/store/FnIVJTdX5Lr6KQu1-lib-expat/lib/pkgconfig:/ix/store/NcQYyoj4QrqEo1GB-lib-json-c/lib/pkgconfig:
+    default_library           : static
+    libdir                    : /ix/store/WB7PB9qxr7wtPdGb-lib-harfbuzz-unwrap/lib
+    libexecdir                : /ix/store/WB7PB9qxr7wtPdGb-lib-harfbuzz-unwrap/lib/lib_harfbuzz_unwrap
+    pkg_config_path           : /ix/store/BF8wvcUw989Ia16Z-lib-cairo-bootstrap/lib/pkgconfig:/ix/store/eiITq4N2xxJnwkz4-lib-glib-ix/lib/pkgconfig:/ix/store/LWFIg4kN1dezlcob-lib-magic/lib/pkgconfig:/ix/store/P2NDBDUVLzGxZtMh-lib-ffi/lib/pkgconfig:/ix/store/GuekQM5b1OYHtWK0-lib-pcre-2/lib/pkgconfig:/ix/store/ajFOa8LDZshZ4REk-lib-pixman/lib/pkgconfig:/ix/store/FyfJzoeHD7Kk7et8-lib-freetype-bootstrap/lib/pkgconfig:/ix/store/8yQvTSfjyw4zcOvX-lib-png/lib/pkgconfig:/ix/store/g6aa0U2sU6P9ATWp-lib-z-adler/lib/pkgconfig:/ix/store/5pd6fTOenvqSlij6-lib-brotli/lib/pkgconfig:/ix/store/CfOLizfKH4MYoBjz-lib-fontconfig-bootstrap/lib/pkgconfig:/ix/store/FnIVJTdX5Lr6KQu1-lib-expat/lib/pkgconfig:/ix/store/NcQYyoj4QrqEo1GB-lib-json-c/lib/pkgconfig:/ix/store/BF8wvcUw989Ia16Z-lib-cairo-bootstrap/lib/pkgconfig:/ix/store/eiITq4N2xxJnwkz4-lib-glib-ix/lib/pkgconfig:/ix/store/LWFIg4kN1dezlcob-lib-magic/lib/pkgconfig:/ix/store/P2NDBDUVLzGxZtMh-lib-ffi/lib/pkgconfig:/ix/store/GuekQM5b1OYHtWK0-lib-pcre-2/lib/pkgconfig:/ix/store/ajFOa8LDZshZ4REk-lib-pixman/lib/pkgconfig:/ix/store/FyfJzoeHD7Kk7et8-lib-freetype-bootstrap/lib/pkgconfig:/ix/store/8yQvTSfjyw4zcOvX-lib-png/lib/pkgconfig:/ix/store/g6aa0U2sU6P9ATWp-lib-z-adler/lib/pkgconfig:/ix/store/5pd6fTOenvqSlij6-lib-brotli/lib/pkgconfig:/ix/store/CfOLizfKH4MYoBjz-lib-fontconfig-bootstrap/lib/pkgconfig:/ix/store/FnIVJTdX5Lr6KQu1-lib-expat/lib/pkgconfig:/ix/store/NcQYyoj4QrqEo1GB-lib-json-c/lib/pkgconfig:
+    prefix                    : /ix/store/WB7PB9qxr7wtPdGb-lib-harfbuzz-unwrap
+    werror                    : false
+    b_asneeded                : false
+    b_lundef                  : false
+    coretext                  : enabled
+    docs                      : disabled
+    glib                      : enabled
+    gobject                   : enabled
+    icu                       : disabled
+    tests                     : disabled
+    utilities                 : disabled
+
+Found ninja-1.11.1 at /ix/store/WodvnxOMIgoFOPcp-bin-ninja/bin/ninja
+WARNING: Cross file does not specify strip binary, result will not be stripped.
+WARNING: Cross file does not specify strip binary, result will not be stripped.
+sanitize /ix/build/WB7PB9qxr7wtPdGb/obj/meson-private/cmake_cairo-ft/build.ninja
+sanitize /ix/build/WB7PB9qxr7wtPdGb/obj/meson-private/__CMake_compiler_info__/build.ninja
+sanitize /ix/build/WB7PB9qxr7wtPdGb/obj/build.ninja
+ninja: Entering directory `/ix/build/WB7PB9qxr7wtPdGb/obj'
+[1/92] Generating src/harfbuzz.cc with a custom command
+[2/92] Generating src/hb-number-parser.hh with a custom command
+[3/92] Generating src/hb-buffer-deserialize-json.hh with a custom command
+[4/92] Generating src/hb-ot-shaper-use-machine.hh with a custom command
+[5/92] Generating src/hb-ot-shaper-khmer-machine.hh with a custom command
+[6/92] Generating src/hb-buffer-deserialize-text-glyphs.hh with a custom command
+[7/92] Generating src/hb-buffer-deserialize-text-unicode.hh with a custom command
+[8/92] Generating src/hb-ot-shaper-myanmar-machine.hh with a custom command
+[9/92] Generating src/hb-ot-shaper-indic-machine.hh with a custom command
+[10/88] Compiling C++ object src/libharfbuzz.a.p/hb-buffer-verify.cc.o
+[11/88] Compiling C++ object src/libharfbuzz.a.p/hb-common.cc.o
+[12/88] Compiling C++ object src/libharfbuzz.a.p/hb-blob.cc.o
+[13/88] Compiling C++ object src/libharfbuzz.a.p/hb-draw.cc.o
+[14/88] Compiling C++ object src/libharfbuzz.a.p/hb-paint-extents.cc.o
+[15/88] Compiling C++ object src/libharfbuzz.a.p/hb-fallback-shape.cc.o
+[16/88] Compiling C++ object src/libharfbuzz.a.p/hb-buffer-serialize.cc.o
+[17/88] Compiling C++ object src/libharfbuzz.a.p/hb-paint.cc.o
+[18/88] Compiling C++ object src/libharfbuzz.a.p/hb-map.cc.o
+[19/88] Compiling C++ object src/libharfbuzz.a.p/hb-number.cc.o
+[10/92] Compiling C++ object src/libharfbuzz.a.p/hb-blob.cc.o
+[11/92] Compiling C++ object src/libharfbuzz.a.p/hb-buffer-serialize.cc.o
+[12/92] Compiling C++ object src/libharfbuzz.a.p/hb-paint-extents.cc.o
+[13/92] Compiling C++ object src/libharfbuzz.a.p/hb-fallback-shape.cc.o
+[14/92] Compiling C++ object src/libharfbuzz.a.p/hb-paint.cc.o
+[15/92] Compiling C++ object src/libharfbuzz.a.p/hb-buffer-verify.cc.o
+[16/92] Compiling C++ object src/libharfbuzz.a.p/hb-common.cc.o
+[17/92] Compiling C++ object src/libharfbuzz.a.p/hb-draw.cc.o
+[20/88] Compiling C++ object src/libharfbuzz.a.p/hb-buffer.cc.o
+[21/88] Compiling C++ object src/libharfbuzz.a.p/hb-aat-map.cc.o
+[18/92] Compiling C++ object src/libharfbuzz.a.p/hb-map.cc.o
+[22/88] Compiling C++ object src/libharfbuzz.a.p/hb-outline.cc.o
+[19/92] Compiling C++ object src/libharfbuzz.a.p/hb-aat-map.cc.o
+[23/88] Compiling C++ object src/libharfbuzz.a.p/hb-face-builder.cc.o
+[20/92] Compiling C++ object src/libharfbuzz.a.p/hb-number.cc.o
+[21/92] Compiling C++ object src/libharfbuzz.a.p/hb-outline.cc.o
+[22/92] Compiling C++ object src/libharfbuzz.a.p/hb-buffer.cc.o
+[24/88] Compiling C++ object src/libharfbuzz.a.p/hb-font.cc.o
+[25/88] Compiling C++ object src/libharfbuzz.a.p/hb-ot-map.cc.o
+[23/92] Compiling C++ object src/libharfbuzz.a.p/hb-face-builder.cc.o
+[26/88] Compiling C++ object src/libharfbuzz.a.p/hb-ot-meta.cc.o
+[24/92] Compiling C++ object src/libharfbuzz.a.p/hb-font.cc.o
+[25/92] Compiling C++ object src/libharfbuzz.a.p/hb-ot-map.cc.o
+[27/88] Compiling C++ object src/libharfbuzz.a.p/hb-ot-name.cc.o
+[26/92] Compiling C++ object src/libharfbuzz.a.p/hb-ot-meta.cc.o
+[28/88] Compiling C++ object src/libharfbuzz.a.p/hb-face.cc.o
+[29/88] Compiling C++ object src/libharfbuzz.a.p/hb-ot-cff1-table.cc.o
+[30/88] Compiling C++ object src/libharfbuzz.a.p/hb-ot-cff2-table.cc.o
+[31/88] Compiling C++ object src/libharfbuzz.a.p/hb-ot-math.cc.o
+[27/92] Compiling C++ object src/libharfbuzz.a.p/hb-ot-cff2-table.cc.o
+[32/88] Compiling C++ object src/libharfbuzz.a.p/hb-ot-color.cc.o
+[33/88] Compiling C++ object src/libharfbuzz.a.p/hb-ot-shaper-default.cc.o
+[28/92] Compiling C++ object src/libharfbuzz.a.p/hb-ot-cff1-table.cc.o
+[34/88] Compiling C++ object src/libharfbuzz.a.p/hb-ot-metrics.cc.o
+[35/88] Compiling C++ object src/libharfbuzz.a.p/hb-ot-shaper-hangul.cc.o
+[36/88] Compiling C++ object src/libharfbuzz.a.p/hb-ot-shaper-hebrew.cc.o
+[29/92] Compiling C++ object src/libharfbuzz.a.p/hb-ot-shaper-default.cc.o
+[30/92] Compiling C++ object src/libharfbuzz.a.p/hb-face.cc.o
+[31/92] Compiling C++ object src/libharfbuzz.a.p/hb-ot-name.cc.o
+[32/92] Compiling C++ object src/libharfbuzz.a.p/hb-ot-math.cc.o
+[37/88] Compiling C++ object src/libharfbuzz.a.p/hb-ot-shaper-indic-table.cc.o
+[33/92] Compiling C++ object src/libharfbuzz.a.p/hb-ot-metrics.cc.o
+[34/92] Compiling C++ object src/libharfbuzz.a.p/hb-ot-shaper-hangul.cc.o
+[35/92] Compiling C++ object src/libharfbuzz.a.p/hb-ot-shaper-hebrew.cc.o
+[38/88] Compiling C++ object src/libharfbuzz.a.p/hb-ot-shaper-khmer.cc.o
+[39/88] Compiling C++ object src/libharfbuzz.a.p/hb-ot-shaper-myanmar.cc.o
+[36/92] Compiling C++ object src/libharfbuzz.a.p/hb-ot-color.cc.o
+[40/88] Compiling C++ object src/libharfbuzz.a.p/hb-ot-shaper-syllabic.cc.o
+[41/88] Compiling C++ object src/libharfbuzz.a.p/hb-ot-shaper-indic.cc.o
+[42/88] Compiling C++ object src/libharfbuzz.a.p/hb-ot-shaper-thai.cc.o
+[37/92] Compiling C++ object src/libharfbuzz.a.p/hb-ot-shaper-indic-table.cc.o
+[38/92] Compiling C++ object src/libharfbuzz.a.p/hb-ot-shaper-khmer.cc.o
+[39/92] Compiling C++ object src/libharfbuzz.a.p/hb-ot-shaper-vowel-constraints.cc.o
+[43/88] Compiling C++ object src/libharfbuzz.a.p/hb-ot-shape-normalize.cc.o
+[40/92] Compiling C++ object src/libharfbuzz.a.p/hb-ot-shaper-thai.cc.o
+[41/92] Compiling C++ object src/libharfbuzz.a.p/hb-ot-shaper-syllabic.cc.o
+[42/92] Compiling C++ object src/libharfbuzz.a.p/hb-ot-shaper-myanmar.cc.o
+[44/88] Compiling C++ object src/libharfbuzz.a.p/hb-ot-shaper-vowel-constraints.cc.o
+[43/92] Compiling C++ object src/libharfbuzz.a.p/hb-ot-shaper-indic.cc.o
+[45/88] Compiling C++ object src/libharfbuzz.a.p/hb-ot-tag.cc.o
+[46/88] Compiling C++ object src/libharfbuzz.a.p/hb-ot-face.cc.o
+[47/88] Compiling C++ object src/libharfbuzz.a.p/hb-shape.cc.o
+[48/88] Compiling C++ object src/libharfbuzz.a.p/hb-set.cc.o
+[44/92] Compiling C++ object src/libharfbuzz.a.p/hb-ot-shape-normalize.cc.o
+[49/88] Compiling C++ object src/libharfbuzz.a.p/hb-ot-shape.cc.o
+[50/88] Compiling C++ object src/libharfbuzz.a.p/hb-shape-plan.cc.o
+[45/92] Compiling C++ object src/libharfbuzz.a.p/hb-ot-tag.cc.o
+[46/92] Compiling C++ object src/libharfbuzz.a.p/hb-ot-face.cc.o
+[47/92] Compiling C++ object src/libharfbuzz.a.p/hb-shaper.cc.o
+[48/92] Compiling C++ object src/libharfbuzz.a.p/hb-shape.cc.o
+[51/88] Compiling C++ object src/libharfbuzz.a.p/hb-shaper.cc.o
+[52/88] Compiling C++ object src/libharfbuzz.a.p/hb-ot-shaper-use.cc.o
+[49/92] Compiling C++ object src/libharfbuzz.a.p/hb-ot-shaper-use.cc.o
+[50/92] Compiling C++ object src/libharfbuzz.a.p/hb-shape-plan.cc.o
+[53/88] Compiling C++ object src/libharfbuzz.a.p/hb-ucd.cc.o
+[54/88] Compiling C++ object src/libharfbuzz.a.p/hb-glib.cc.o
+[55/88] Compiling C++ object src/libharfbuzz.a.p/hb-aat-layout.cc.o
+[56/88] Compiling C++ object src/libharfbuzz.a.p/hb-unicode.cc.o
+[51/92] Compiling C++ object src/libharfbuzz.a.p/hb-ot-shape.cc.o
+[57/88] Compiling C++ object src/libharfbuzz.a.p/hb-ot-var.cc.o
+[58/88] Compiling C++ object src/libharfbuzz-subset.a.p/hb-number.cc.o
+[52/92] Compiling C++ object src/libharfbuzz.a.p/hb-ucd.cc.o
+[53/92] Compiling C++ object src/libharfbuzz.a.p/hb-set.cc.o
+[54/92] Compiling C++ object src/libharfbuzz.a.p/hb-unicode.cc.o
+[55/92] Compiling C++ object src/libharfbuzz.a.p/hb-glib.cc.o
+[56/92] Compiling C++ object src/libharfbuzz-subset.a.p/hb-number.cc.o
+[57/92] Compiling C++ object src/libharfbuzz.a.p/hb-ot-var.cc.o
+[59/88] Compiling C++ object src/libharfbuzz.a.p/hb-coretext.cc.o
+FAILED: src/libharfbuzz.a.p/hb-coretext.cc.o 
+clang++ -Isrc/libharfbuzz.a.p -Isrc -I../src/src -I. -I../src -I/ix/store/FyfJzoeHD7Kk7et8-lib-freetype-bootstrap/include/freetype2 -I/ix/store/8yQvTSfjyw4zcOvX-lib-png/include/libpng16 -I/ix/store/g6aa0U2sU6P9ATWp-lib-z-adler/include -I/ix/store/5pd6fTOenvqSlij6-lib-brotli/include -I/ix/store/eiITq4N2xxJnwkz4-lib-glib-ix/include/glib-2.0 -I/ix/store/eiITq4N2xxJnwkz4-lib-glib-ix/lib/glib-2.0/include -I/ix/store/GuekQM5b1OYHtWK0-lib-pcre-2/include -fcolor-diagnostics -Wall -Winvalid-pch -std=c++11 -fno-exceptions -O0 -g -fno-exceptions -fno-rtti -fno-threadsafe-statics -fvisibility-inlines-hidden -DHAVE_CONFIG_H -Wno-unknown-warning-option -Wno-non-virtual-dtor -MD -MQ src/libharfbuzz.a.p/hb-coretext.cc.o -MF src/libharfbuzz.a.p/hb-coretext.cc.o.d -o src/libharfbuzz.a.p/hb-coretext.cc.o -c ../src/src/hb-coretext.cc
+In file included from ../src/src/hb-coretext.cc:35:
+In file included from ../src/src/hb-coretext.h:37:
+In file included from /ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.h:23:
+In file included from /ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Headers/CoreServices.h:19:
+In file included from /ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreFoundation.framework/Headers/CoreFoundation.h:43:
+In file included from /ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreFoundation.framework/Headers/CFBase.h:19:
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreFoundation.framework/Headers/CFAvailability.h:183:5: warning: 'DEPLOYMENT_RUNTIME_SWIFT' is not defined, evaluates to 0 [-Wundef]
+  183 | #if DEPLOYMENT_RUNTIME_SWIFT
+      |     ^
+In file included from ../src/src/hb-coretext.cc:35:
+In file included from ../src/src/hb-coretext.h:37:
+In file included from /ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.h:23:
+In file included from /ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Headers/CoreServices.h:19:
+In file included from /ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreFoundation.framework/Headers/CoreFoundation.h:43:
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreFoundation.framework/Headers/CFBase.h:45:6: warning: '__BIG_ENDIAN__' is not defined, evaluates to 0 [-Wundef]
+   45 | #if !__BIG_ENDIAN__ && !__LITTLE_ENDIAN__
+      |      ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreFoundation.framework/Headers/CFBase.h:49:5: warning: '__BIG_ENDIAN__' is not defined, evaluates to 0 [-Wundef]
+   49 | #if __BIG_ENDIAN__ && __LITTLE_ENDIAN__
+      |     ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreFoundation.framework/Headers/CFBase.h:448:5: warning: '__LLP64__' is not defined, evaluates to 0 [-Wundef]
+  448 | #if __LLP64__
+      |     ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreFoundation.framework/Headers/CFBase.h:653:5: warning: 'DEPLOYMENT_RUNTIME_SWIFT' is not defined, evaluates to 0 [-Wundef]
+  653 | #if DEPLOYMENT_RUNTIME_SWIFT
+      |     ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreFoundation.framework/Headers/CFBase.h:680:5: warning: 'DEPLOYMENT_RUNTIME_SWIFT' is not defined, evaluates to 0 [-Wundef]
+  680 | #if DEPLOYMENT_RUNTIME_SWIFT
+      |     ^
+In file included from ../src/src/hb-coretext.cc:35:
+In file included from ../src/src/hb-coretext.h:37:
+In file included from /ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.h:23:
+In file included from /ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Headers/CoreServices.h:19:
+In file included from /ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreFoundation.framework/Headers/CoreFoundation.h:49:
+In file included from /ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreFoundation.framework/Headers/CFCalendar.h:16:
+In file included from /ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreFoundation.framework/Headers/CFTimeZone.h:18:
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreFoundation.framework/Headers/CFString.h:154:5: warning: 'DEPLOYMENT_RUNTIME_SWIFT' is not defined, evaluates to 0 [-Wundef]
+  154 | #if DEPLOYMENT_RUNTIME_SWIFT
+      |     ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreFoundation.framework/Headers/CFString.h:164:5: warning: 'DEPLOYMENT_RUNTIME_SWIFT' is not defined, evaluates to 0 [-Wundef]
+  164 | #if DEPLOYMENT_RUNTIME_SWIFT && TARGET_OS_MAC
+      |     ^
+In file included from ../src/src/hb-coretext.cc:35:
+In file included from ../src/src/hb-coretext.h:37:
+In file included from /ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.h:23:
+In file included from /ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Headers/CoreServices.h:19:
+In file included from /ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreFoundation.framework/Headers/CoreFoundation.h:60:
+In file included from /ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreFoundation.framework/Headers/CFPropertyList.h:17:
+In file included from /ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreFoundation.framework/Headers/CFStream.h:16:
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreFoundation.framework/Headers/CFURL.h:1188:6: warning: 'DEPLOYMENT_TARGET_SWIFT' is not defined, evaluates to 0 [-Wundef]
+ 1188 | #if !DEPLOYMENT_TARGET_SWIFT
+      |      ^
+In file included from ../src/src/hb-coretext.cc:35:
+In file included from ../src/src/hb-coretext.h:37:
+In file included from /ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.h:23:
+In file included from /ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Headers/CoreServices.h:23:
+In file included from /ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Frameworks/AE.framework/Headers/AE.h:20:
+In file included from /ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/CarbonCore.h:35:
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/FixMath.h:80:26: warning: '__ppc64__' is not defined, evaluates to 0 [-Wundef]
+   80 | #elif defined __ppc__ || __ppc64__ || __arm64__
+      |                          ^
+In file included from ../src/src/hb-coretext.cc:35:
+In file included from ../src/src/hb-coretext.h:37:
+In file included from /ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.h:23:
+In file included from /ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Headers/CoreServices.h:23:
+In file included from /ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Frameworks/AE.framework/Headers/AE.h:20:
+In file included from /ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/CarbonCore.h:39:
+In file included from /ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/Script.h:17:
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/IntlResources.h:197:5: warning: '__BIG_ENDIAN__' is not defined, evaluates to 0 [-Wundef]
+  197 | #if __BIG_ENDIAN__
+      |     ^
+In file included from ../src/src/hb-coretext.cc:35:
+In file included from ../src/src/hb-coretext.h:37:
+In file included from /ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.h:23:
+In file included from /ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Headers/CoreServices.h:23:
+In file included from /ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Frameworks/AE.framework/Headers/AE.h:20:
+In file included from /ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/CarbonCore.h:67:
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/Math64.h:47:7: warning: 'MATH64_USE_INLINE' is not defined, evaluates to 0 [-Wundef]
+   47 |   #if MATH64_USE_INLINE
+      |       ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/Math64.h:69:7: warning: 'MATH64_USE_INLINE' is not defined, evaluates to 0 [-Wundef]
+   69 |   #if MATH64_USE_INLINE
+      |       ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/Math64.h:96:7: warning: 'MATH64_USE_INLINE' is not defined, evaluates to 0 [-Wundef]
+   96 |   #if MATH64_USE_INLINE
+      |       ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/Math64.h:123:7: warning: 'MATH64_USE_INLINE' is not defined, evaluates to 0 [-Wundef]
+  123 |   #if MATH64_USE_INLINE
+      |       ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/Math64.h:148:7: warning: 'MATH64_USE_INLINE' is not defined, evaluates to 0 [-Wundef]
+  148 |   #if MATH64_USE_INLINE
+      |       ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/Math64.h:204:7: warning: 'MATH64_USE_INLINE' is not defined, evaluates to 0 [-Wundef]
+  204 |   #if MATH64_USE_INLINE
+      |       ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/Math64.h:230:7: warning: 'MATH64_USE_INLINE' is not defined, evaluates to 0 [-Wundef]
+  230 |   #if MATH64_USE_INLINE
+      |       ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/Math64.h:264:7: warning: 'MATH64_USE_INLINE' is not defined, evaluates to 0 [-Wundef]
+  264 |   #if MATH64_USE_INLINE
+      |       ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/Math64.h:287:7: warning: 'MATH64_USE_INLINE' is not defined, evaluates to 0 [-Wundef]
+  287 |   #if MATH64_USE_INLINE
+      |       ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/Math64.h:312:7: warning: 'MATH64_USE_INLINE' is not defined, evaluates to 0 [-Wundef]
+  312 |   #if MATH64_USE_INLINE
+      |       ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/Math64.h:335:7: warning: 'MATH64_USE_INLINE' is not defined, evaluates to 0 [-Wundef]
+  335 |   #if MATH64_USE_INLINE
+      |       ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/Math64.h:358:7: warning: 'MATH64_USE_INLINE' is not defined, evaluates to 0 [-Wundef]
+  358 |   #if MATH64_USE_INLINE
+      |       ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/Math64.h:383:7: warning: 'MATH64_USE_INLINE' is not defined, evaluates to 0 [-Wundef]
+  383 |   #if MATH64_USE_INLINE
+      |       ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/Math64.h:408:7: warning: 'MATH64_USE_INLINE' is not defined, evaluates to 0 [-Wundef]
+  408 |   #if MATH64_USE_INLINE
+      |       ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/Math64.h:433:7: warning: 'MATH64_USE_INLINE' is not defined, evaluates to 0 [-Wundef]
+  433 |   #if MATH64_USE_INLINE
+      |       ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/Math64.h:456:7: warning: 'MATH64_USE_INLINE' is not defined, evaluates to 0 [-Wundef]
+  456 |   #if MATH64_USE_INLINE
+      |       ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/Math64.h:508:7: warning: 'MATH64_USE_INLINE' is not defined, evaluates to 0 [-Wundef]
+  508 |   #if MATH64_USE_INLINE
+      |       ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/Math64.h:533:7: warning: 'MATH64_USE_INLINE' is not defined, evaluates to 0 [-Wundef]
+  533 |   #if MATH64_USE_INLINE
+      |       ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/Math64.h:558:7: warning: 'MATH64_USE_INLINE' is not defined, evaluates to 0 [-Wundef]
+  558 |   #if MATH64_USE_INLINE
+      |       ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/Math64.h:581:7: warning: 'MATH64_USE_INLINE' is not defined, evaluates to 0 [-Wundef]
+  581 |   #if MATH64_USE_INLINE
+      |       ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/Math64.h:606:7: warning: 'MATH64_USE_INLINE' is not defined, evaluates to 0 [-Wundef]
+  606 |   #if MATH64_USE_INLINE
+      |       ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/Math64.h:631:7: warning: 'MATH64_USE_INLINE' is not defined, evaluates to 0 [-Wundef]
+  631 |   #if MATH64_USE_INLINE
+      |       ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/Math64.h:660:7: warning: 'MATH64_USE_INLINE' is not defined, evaluates to 0 [-Wundef]
+  660 |   #if MATH64_USE_INLINE
+      |       ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/Math64.h:687:7: warning: 'MATH64_USE_INLINE' is not defined, evaluates to 0 [-Wundef]
+  687 |   #if MATH64_USE_INLINE
+      |       ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/Math64.h:712:7: warning: 'MATH64_USE_INLINE' is not defined, evaluates to 0 [-Wundef]
+  712 |   #if MATH64_USE_INLINE
+      |       ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/Math64.h:738:7: warning: 'MATH64_USE_INLINE' is not defined, evaluates to 0 [-Wundef]
+  738 |   #if MATH64_USE_INLINE
+      |       ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/Math64.h:764:7: warning: 'MATH64_USE_INLINE' is not defined, evaluates to 0 [-Wundef]
+  764 |   #if MATH64_USE_INLINE
+      |       ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/Math64.h:792:7: warning: 'MATH64_USE_INLINE' is not defined, evaluates to 0 [-Wundef]
+  792 |   #if MATH64_USE_INLINE
+      |       ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/Math64.h:818:7: warning: 'MATH64_USE_INLINE' is not defined, evaluates to 0 [-Wundef]
+  818 |   #if MATH64_USE_INLINE
+      |       ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/Math64.h:851:7: warning: 'MATH64_USE_INLINE' is not defined, evaluates to 0 [-Wundef]
+  851 |   #if MATH64_USE_INLINE
+      |       ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/Math64.h:876:7: warning: 'MATH64_USE_INLINE' is not defined, evaluates to 0 [-Wundef]
+  876 |   #if MATH64_USE_INLINE
+      |       ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/Math64.h:901:7: warning: 'MATH64_USE_INLINE' is not defined, evaluates to 0 [-Wundef]
+  901 |   #if MATH64_USE_INLINE
+      |       ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/Math64.h:924:7: warning: 'MATH64_USE_INLINE' is not defined, evaluates to 0 [-Wundef]
+  924 |   #if MATH64_USE_INLINE
+      |       ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/Math64.h:947:7: warning: 'MATH64_USE_INLINE' is not defined, evaluates to 0 [-Wundef]
+  947 |   #if MATH64_USE_INLINE
+      |       ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/Math64.h:972:7: warning: 'MATH64_USE_INLINE' is not defined, evaluates to 0 [-Wundef]
+  972 |   #if MATH64_USE_INLINE
+      |       ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/Math64.h:997:7: warning: 'MATH64_USE_INLINE' is not defined, evaluates to 0 [-Wundef]
+  997 |   #if MATH64_USE_INLINE
+      |       ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/Math64.h:1022:7: warning: 'MATH64_USE_INLINE' is not defined, evaluates to 0 [-Wundef]
+ 1022 |   #if MATH64_USE_INLINE
+      |       ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/Math64.h:1045:7: warning: 'MATH64_USE_INLINE' is not defined, evaluates to 0 [-Wundef]
+ 1045 |   #if MATH64_USE_INLINE
+      |       ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/Math64.h:1096:7: warning: 'MATH64_USE_INLINE' is not defined, evaluates to 0 [-Wundef]
+ 1096 |   #if MATH64_USE_INLINE
+      |       ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/Math64.h:1121:7: warning: 'MATH64_USE_INLINE' is not defined, evaluates to 0 [-Wundef]
+ 1121 |   #if MATH64_USE_INLINE
+      |       ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/Math64.h:1146:7: warning: 'MATH64_USE_INLINE' is not defined, evaluates to 0 [-Wundef]
+ 1146 |   #if MATH64_USE_INLINE
+      |       ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/Math64.h:1169:7: warning: 'MATH64_USE_INLINE' is not defined, evaluates to 0 [-Wundef]
+ 1169 |   #if MATH64_USE_INLINE
+      |       ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/Math64.h:1194:7: warning: 'MATH64_USE_INLINE' is not defined, evaluates to 0 [-Wundef]
+ 1194 |   #if MATH64_USE_INLINE
+      |       ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/Math64.h:1219:7: warning: 'MATH64_USE_INLINE' is not defined, evaluates to 0 [-Wundef]
+ 1219 |   #if MATH64_USE_INLINE
+      |       ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/Math64.h:1244:7: warning: 'MATH64_USE_INLINE' is not defined, evaluates to 0 [-Wundef]
+ 1244 |   #if MATH64_USE_INLINE
+      |       ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/Math64.h:1267:7: warning: 'MATH64_USE_INLINE' is not defined, evaluates to 0 [-Wundef]
+ 1267 |   #if MATH64_USE_INLINE
+      |       ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/Math64.h:1292:7: warning: 'MATH64_USE_INLINE' is not defined, evaluates to 0 [-Wundef]
+ 1292 |   #if MATH64_USE_INLINE
+      |       ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/Math64.h:1315:7: warning: 'MATH64_USE_INLINE' is not defined, evaluates to 0 [-Wundef]
+ 1315 |   #if MATH64_USE_INLINE
+      |       ^
+In file included from ../src/src/hb-coretext.cc:35:
+In file included from ../src/src/hb-coretext.h:37:
+In file included from /ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.h:23:
+In file included from /ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Headers/CoreServices.h:23:
+In file included from /ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Frameworks/AE.framework/Headers/AE.h:20:
+In file included from /ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/CarbonCore.h:87:
+In file included from /ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/Components.h:26:
+In file included from /ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/Files.h:56:
+In file included from /ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/DiskArbitration.framework/Headers/DADisk.h:28:
+In file included from /ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/IOKit.framework/Headers/IOKitLib.h:52:
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/IOKit.framework/Headers/OSMessageNotification.h:114:6: warning: 'KERNEL_USER32' is not defined, evaluates to 0 [-Wundef]
+  114 | #if !KERNEL_USER32
+      |      ^
+In file included from ../src/src/hb-coretext.cc:35:
+In file included from ../src/src/hb-coretext.h:37:
+In file included from /ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.h:23:
+In file included from /ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Headers/CoreServices.h:23:
+In file included from /ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Frameworks/AE.framework/Headers/AE.h:20:
+In file included from /ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/CarbonCore.h:115:
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/Debugging.h:105:5: warning: 'DEBUG' is not defined, evaluates to 0 [-Wundef]
+  105 | #if DEBUG
+      |     ^
+In file included from ../src/src/hb-coretext.cc:35:
+In file included from ../src/src/hb-coretext.h:37:
+In file included from /ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.h:23:
+In file included from /ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Headers/CoreServices.h:23:
+In file included from /ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Frameworks/AE.framework/Headers/AE.h:20:
+In file included from /ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/CarbonCore.h:127:
+In file included from /ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/DriverServices.h:26:
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/MachineExceptions.h:47:5: warning: '__MACHINEEXCEPTIONS_USE_OLD_CR_FIELD_NAME__' is not defined, evaluates to 0 [-Wundef]
+   47 | #if __MACHINEEXCEPTIONS_USE_OLD_CR_FIELD_NAME__
+      |     ^
+In file included from ../src/src/hb-coretext.cc:35:
+In file included from ../src/src/hb-coretext.h:37:
+In file included from /ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.h:23:
+In file included from /ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Headers/CoreServices.h:23:
+In file included from /ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Frameworks/AE.framework/Headers/AE.h:20:
+In file included from /ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/CarbonCore.h:147:
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/TextUtils.h:715:47: warning: 'OLDP2C' is not defined, evaluates to 0 [-Wundef]
+  715 | #if TARGET_OS_MAC && TARGET_API_MAC_CARBON && OLDP2C
+      |                                               ^
+In file included from ../src/src/hb-coretext.cc:35:
+In file included from ../src/src/hb-coretext.h:37:
+In file included from /ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.h:43:
+In file included from /ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/HIServices.framework/Headers/HIServices.h:26:
+In file included from /ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/HIServices.framework/Headers/HIShape.h:22:
+In file included from /ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/Quickdraw.h:31:
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:457:39: warning: 'CMProfileMD5' is deprecated: first deprecated in macOS 10.6 [-Wdeprecated-declarations]
+  457 |   inline Boolean CMProfileMD5AreEqual(CMProfileMD5 a, CMProfileMD5 b)
+      |                                       ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:448:41: note: 'CMProfileMD5' has been explicitly marked deprecated here
+  448 | typedef unsigned char                   CMProfileMD5[16] DEPRECATED_IN_MAC_OS_X_VERSION_10_6_AND_LATER;
+      |                                         ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:457:55: warning: 'CMProfileMD5' is deprecated: first deprecated in macOS 10.6 [-Wdeprecated-declarations]
+  457 |   inline Boolean CMProfileMD5AreEqual(CMProfileMD5 a, CMProfileMD5 b)
+      |                                                       ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:448:41: note: 'CMProfileMD5' has been explicitly marked deprecated here
+  448 | typedef unsigned char                   CMProfileMD5[16] DEPRECATED_IN_MAC_OS_X_VERSION_10_6_AND_LATER;
+      |                                         ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:459:14: error: cast from 'unsigned char *' to 'UInt32 *' (aka 'unsigned int *') increases required alignment from 1 to 4 [-Werror,-Wcast-align]
+  459 |     return  ((UInt32*)a)[0]==((UInt32*)b)[0] && ((UInt32*)a)[1]==((UInt32*)b)[1] &&
+      |              ^~~~~~~~~~
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:459:31: error: cast from 'unsigned char *' to 'UInt32 *' (aka 'unsigned int *') increases required alignment from 1 to 4 [-Werror,-Wcast-align]
+  459 |     return  ((UInt32*)a)[0]==((UInt32*)b)[0] && ((UInt32*)a)[1]==((UInt32*)b)[1] &&
+      |                               ^~~~~~~~~~
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:459:50: error: cast from 'unsigned char *' to 'UInt32 *' (aka 'unsigned int *') increases required alignment from 1 to 4 [-Werror,-Wcast-align]
+  459 |     return  ((UInt32*)a)[0]==((UInt32*)b)[0] && ((UInt32*)a)[1]==((UInt32*)b)[1] &&
+      |                                                  ^~~~~~~~~~
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:459:67: error: cast from 'unsigned char *' to 'UInt32 *' (aka 'unsigned int *') increases required alignment from 1 to 4 [-Werror,-Wcast-align]
+  459 |     return  ((UInt32*)a)[0]==((UInt32*)b)[0] && ((UInt32*)a)[1]==((UInt32*)b)[1] &&
+      |                                                                   ^~~~~~~~~~
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:460:14: error: cast from 'unsigned char *' to 'UInt32 *' (aka 'unsigned int *') increases required alignment from 1 to 4 [-Werror,-Wcast-align]
+  460 |             ((UInt32*)a)[2]==((UInt32*)b)[2] && ((UInt32*)a)[3]==((UInt32*)b)[3];
+      |              ^~~~~~~~~~
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:460:31: error: cast from 'unsigned char *' to 'UInt32 *' (aka 'unsigned int *') increases required alignment from 1 to 4 [-Werror,-Wcast-align]
+  460 |             ((UInt32*)a)[2]==((UInt32*)b)[2] && ((UInt32*)a)[3]==((UInt32*)b)[3];
+      |                               ^~~~~~~~~~
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:460:50: error: cast from 'unsigned char *' to 'UInt32 *' (aka 'unsigned int *') increases required alignment from 1 to 4 [-Werror,-Wcast-align]
+  460 |             ((UInt32*)a)[2]==((UInt32*)b)[2] && ((UInt32*)a)[3]==((UInt32*)b)[3];
+      |                                                  ^~~~~~~~~~
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:460:67: error: cast from 'unsigned char *' to 'UInt32 *' (aka 'unsigned int *') increases required alignment from 1 to 4 [-Werror,-Wcast-align]
+  460 |             ((UInt32*)a)[2]==((UInt32*)b)[2] && ((UInt32*)a)[3]==((UInt32*)b)[3];
+      |                                                                   ^~~~~~~~~~
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:475:3: warning: 'CMDateTime' is deprecated: first deprecated in macOS 10.6 [-Wdeprecated-declarations]
+  475 |   CMDateTime          dateTime;               /* date and time of profile creation */
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:424:3: note: 'CMDateTime' has been explicitly marked deprecated here
+  424 | } CMDateTime DEPRECATED_IN_MAC_OS_X_VERSION_10_6_AND_LATER;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:483:3: warning: 'CMFixedXYZColor' is deprecated: first deprecated in macOS 10.6 [-Wdeprecated-declarations]
+  483 |   CMFixedXYZColor     white;                  /* profile illuminant */
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:435:3: note: 'CMFixedXYZColor' has been explicitly marked deprecated here
+  435 | } CMFixedXYZColor DEPRECATED_IN_MAC_OS_X_VERSION_10_6_AND_LATER;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:495:3: warning: 'CMDateTime' is deprecated: first deprecated in macOS 10.6 [-Wdeprecated-declarations]
+  495 |   CMDateTime          dateTime;               /* date and time of profile creation */
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:424:3: note: 'CMDateTime' has been explicitly marked deprecated here
+  424 | } CMDateTime DEPRECATED_IN_MAC_OS_X_VERSION_10_6_AND_LATER;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:503:3: warning: 'CMFixedXYZColor' is deprecated: first deprecated in macOS 10.6 [-Wdeprecated-declarations]
+  503 |   CMFixedXYZColor     white;                  /* profile illuminant */
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:435:3: note: 'CMFixedXYZColor' has been explicitly marked deprecated here
+  435 | } CMFixedXYZColor DEPRECATED_IN_MAC_OS_X_VERSION_10_6_AND_LATER;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:505:3: warning: 'CMProfileMD5' is deprecated: first deprecated in macOS 10.6 [-Wdeprecated-declarations]
+  505 |   CMProfileMD5        digest;                 /* Profile message digest */
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:448:41: note: 'CMProfileMD5' has been explicitly marked deprecated here
+  448 | typedef unsigned char                   CMProfileMD5[16] DEPRECATED_IN_MAC_OS_X_VERSION_10_6_AND_LATER;
+      |                                         ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:517:3: warning: 'CMTagRecord' is deprecated: first deprecated in macOS 10.6 [-Wdeprecated-declarations]
+  517 |   CMTagRecord         tagList[1];             /* variable size, determined by count */
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:513:3: note: 'CMTagRecord' has been explicitly marked deprecated here
+  513 | } CMTagRecord DEPRECATED_IN_MAC_OS_X_VERSION_10_6_AND_LATER;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:521:3: warning: 'CM2Header' is deprecated: first deprecated in macOS 10.6 [-Wdeprecated-declarations]
+  521 |   CM2Header           header;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:486:3: note: 'CM2Header' has been explicitly marked deprecated here
+  486 | } CM2Header DEPRECATED_IN_MAC_OS_X_VERSION_10_6_AND_LATER;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:522:3: warning: 'CMTagElemTable' is deprecated: first deprecated in macOS 10.6 [-Wdeprecated-declarations]
+  522 |   CMTagElemTable      tagTable;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:518:3: note: 'CMTagElemTable' has been explicitly marked deprecated here
+  518 | } CMTagElemTable DEPRECATED_IN_MAC_OS_X_VERSION_10_6_AND_LATER;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:550:3: warning: 'CMDateTime' is deprecated: first deprecated in macOS 10.6 [-Wdeprecated-declarations]
+  550 |   CMDateTime          dateTime;               /* */
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:424:3: note: 'CMDateTime' has been explicitly marked deprecated here
+  424 | } CMDateTime DEPRECATED_IN_MAC_OS_X_VERSION_10_6_AND_LATER;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:618:3: warning: 'CMFixedXYZColor' is deprecated: first deprecated in macOS 10.6 [-Wdeprecated-declarations]
+  618 |   CMFixedXYZColor     backingXYZ;             /* absolute XYZ values of backing */
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:435:3: note: 'CMFixedXYZColor' has been explicitly marked deprecated here
+  435 | } CMFixedXYZColor DEPRECATED_IN_MAC_OS_X_VERSION_10_6_AND_LATER;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:662:3: warning: 'CMFixedXYColor' is deprecated: first deprecated in macOS 10.6 [-Wdeprecated-declarations]
+  662 |   CMFixedXYColor      redPhosphor;            /* Phosphors - native cromaticity values of the display  */
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:429:3: note: 'CMFixedXYColor' has been explicitly marked deprecated here
+  429 | } CMFixedXYColor DEPRECATED_IN_MAC_OS_X_VERSION_10_6_AND_LATER;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:663:3: warning: 'CMFixedXYColor' is deprecated: first deprecated in macOS 10.6 [-Wdeprecated-declarations]
+  663 |   CMFixedXYColor      greenPhosphor;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:429:3: note: 'CMFixedXYColor' has been explicitly marked deprecated here
+  429 | } CMFixedXYColor DEPRECATED_IN_MAC_OS_X_VERSION_10_6_AND_LATER;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:664:3: warning: 'CMFixedXYColor' is deprecated: first deprecated in macOS 10.6 [-Wdeprecated-declarations]
+  664 |   CMFixedXYColor      bluePhosphor;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:429:3: note: 'CMFixedXYColor' has been explicitly marked deprecated here
+  429 | } CMFixedXYColor DEPRECATED_IN_MAC_OS_X_VERSION_10_6_AND_LATER;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:665:3: warning: 'CMFixedXYColor' is deprecated: first deprecated in macOS 10.6 [-Wdeprecated-declarations]
+  665 |   CMFixedXYColor      whitePoint;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:429:3: note: 'CMFixedXYColor' has been explicitly marked deprecated here
+  429 | } CMFixedXYColor DEPRECATED_IN_MAC_OS_X_VERSION_10_6_AND_LATER;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:681:3: warning: 'CMNativeDisplayInfo' is deprecated: first deprecated in macOS 10.6 [-Wdeprecated-declarations]
+  681 |   CMNativeDisplayInfo nativeDisplayInfo;      /* data of type CMNativeDisplayInfo */
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:676:3: note: 'CMNativeDisplayInfo' has been explicitly marked deprecated here
+  676 | } CMNativeDisplayInfo DEPRECATED_IN_MAC_OS_X_VERSION_10_6_AND_LATER;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:734:3: warning: 'CMScreeningChannelRec' is deprecated: first deprecated in macOS 10.6 [-Wdeprecated-declarations]
+  734 |   CMScreeningChannelRec  channelInfo[1];      /* variable size, determined by channelCount */
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:727:3: note: 'CMScreeningChannelRec' has been explicitly marked deprecated here
+  727 | } CMScreeningChannelRec DEPRECATED_IN_MAC_OS_X_VERSION_10_6_AND_LATER;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:782:3: warning: 'CMFixedXYZColor' is deprecated: first deprecated in macOS 10.6 [-Wdeprecated-declarations]
+  782 |   CMFixedXYZColor     illuminant;             /* absolute XYZs of illuminant  in cd/m^2 */
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:435:3: note: 'CMFixedXYZColor' has been explicitly marked deprecated here
+  435 | } CMFixedXYZColor DEPRECATED_IN_MAC_OS_X_VERSION_10_6_AND_LATER;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:783:3: warning: 'CMFixedXYZColor' is deprecated: first deprecated in macOS 10.6 [-Wdeprecated-declarations]
+  783 |   CMFixedXYZColor     surround;               /* absolute XYZs of surround in cd/m^2 */
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:435:3: note: 'CMFixedXYZColor' has been explicitly marked deprecated here
+  435 | } CMFixedXYZColor DEPRECATED_IN_MAC_OS_X_VERSION_10_6_AND_LATER;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:790:3: warning: 'CMFixedXYZColor' is deprecated: first deprecated in macOS 10.6 [-Wdeprecated-declarations]
+  790 |   CMFixedXYZColor     XYZ[1];                 /* variable size, determined by tag element size */
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:435:3: note: 'CMFixedXYZColor' has been explicitly marked deprecated here
+  435 | } CMFixedXYZColor DEPRECATED_IN_MAC_OS_X_VERSION_10_6_AND_LATER;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:829:3: warning: 'CMIntentCRDVMSize' is deprecated: first deprecated in macOS 10.6 [-Wdeprecated-declarations]
+  829 |   CMIntentCRDVMSize   intentCRD[1];           /* variable size, determined by count */
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:823:3: note: 'CMIntentCRDVMSize' has been explicitly marked deprecated here
+  823 | } CMIntentCRDVMSize DEPRECATED_IN_MAC_OS_X_VERSION_10_6_AND_LATER;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:860:5: warning: 'CMVideoCardGammaTable' is deprecated: first deprecated in macOS 10.6 [-Wdeprecated-declarations]
+  860 |     CMVideoCardGammaTable    table;
+      |     ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:843:3: note: 'CMVideoCardGammaTable' has been explicitly marked deprecated here
+  843 | } CMVideoCardGammaTable DEPRECATED_IN_MAC_OS_X_VERSION_10_6_AND_LATER;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:861:5: warning: 'CMVideoCardGammaFormula' is deprecated: first deprecated in macOS 10.6 [-Wdeprecated-declarations]
+  861 |     CMVideoCardGammaFormula  formula;
+      |     ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:855:3: note: 'CMVideoCardGammaFormula' has been explicitly marked deprecated here
+  855 | } CMVideoCardGammaFormula DEPRECATED_IN_MAC_OS_X_VERSION_10_6_AND_LATER;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:868:3: warning: 'CMVideoCardGamma' is deprecated: first deprecated in macOS 10.6 [-Wdeprecated-declarations]
+  868 |   CMVideoCardGamma    gamma;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:863:3: note: 'CMVideoCardGamma' has been explicitly marked deprecated here
+  863 | } CMVideoCardGamma DEPRECATED_IN_MAC_OS_X_VERSION_10_6_AND_LATER;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:885:3: warning: 'CMMakeAndModel' is deprecated: first deprecated in macOS 10.6 [-Wdeprecated-declarations]
+  885 |   CMMakeAndModel      makeAndModel;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:880:3: note: 'CMMakeAndModel' has been explicitly marked deprecated here
+  880 | } CMMakeAndModel DEPRECATED_IN_MAC_OS_X_VERSION_10_6_AND_LATER;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:1035:6: warning: '_DECLARE_CS_QD_API_' is not defined, evaluates to 0 [-Wundef]
+ 1035 | #if !_DECLARE_CS_QD_API_
+      |      ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:1187:3: warning: 'CM2Header' is deprecated: first deprecated in macOS 10.6 [-Wdeprecated-declarations]
+ 1187 |   CM2Header           cm2;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:486:3: note: 'CM2Header' has been explicitly marked deprecated here
+  486 | } CM2Header DEPRECATED_IN_MAC_OS_X_VERSION_10_6_AND_LATER;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:1188:3: warning: 'CM4Header' is deprecated: first deprecated in macOS 10.6 [-Wdeprecated-declarations]
+ 1188 |   CM4Header           cm4;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:507:3: note: 'CM4Header' has been explicitly marked deprecated here
+  507 | } CM4Header DEPRECATED_IN_MAC_OS_X_VERSION_10_6_AND_LATER;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:1196:3: warning: 'CMProfileRef' is deprecated: first deprecated in macOS 10.6 [-Wdeprecated-declarations]
+ 1196 |   CMProfileRef        profileSet[1];          /* Variable. Ordered from Source -> Dest */
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:1000:41: note: 'CMProfileRef' has been explicitly marked deprecated here
+ 1000 | typedef struct OpaqueCMProfileRef*      CMProfileRef DEPRECATED_IN_MAC_OS_X_VERSION_10_6_AND_LATER;
+      |                                         ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:1203:3: warning: 'CMProfileRef' is deprecated: first deprecated in macOS 10.6 [-Wdeprecated-declarations]
+ 1203 |   CMProfileRef        profile;                /* profile */
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:1000:41: note: 'CMProfileRef' has been explicitly marked deprecated here
+ 1000 | typedef struct OpaqueCMProfileRef*      CMProfileRef DEPRECATED_IN_MAC_OS_X_VERSION_10_6_AND_LATER;
+      |                                         ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:1211:3: warning: 'NCMConcatProfileSpec' is deprecated: first deprecated in macOS 10.6 [-Wdeprecated-declarations]
+ 1211 |   NCMConcatProfileSpec  profileSpecs[1];      /* Variable. Ordered from Source -> Dest */
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:1204:3: note: 'NCMConcatProfileSpec' has been explicitly marked deprecated here
+ 1204 | } NCMConcatProfileSpec DEPRECATED_IN_MAC_OS_X_VERSION_10_6_AND_LATER;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:1302:3: warning: 'CMRGBColor' is deprecated: first deprecated in macOS 10.6 [-Wdeprecated-declarations]
+ 1302 |   CMRGBColor          rgb;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:1232:3: note: 'CMRGBColor' has been explicitly marked deprecated here
+ 1232 | } CMRGBColor DEPRECATED_IN_MAC_OS_X_VERSION_10_6_AND_LATER;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:1303:3: warning: 'CMHSVColor' is deprecated: first deprecated in macOS 10.6 [-Wdeprecated-declarations]
+ 1303 |   CMHSVColor          hsv;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:1257:3: note: 'CMHSVColor' has been explicitly marked deprecated here
+ 1257 | } CMHSVColor DEPRECATED_IN_MAC_OS_X_VERSION_10_6_AND_LATER;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:1304:3: warning: 'CMHLSColor' is deprecated: first deprecated in macOS 10.6 [-Wdeprecated-declarations]
+ 1304 |   CMHLSColor          hls;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:1251:3: note: 'CMHLSColor' has been explicitly marked deprecated here
+ 1251 | } CMHLSColor DEPRECATED_IN_MAC_OS_X_VERSION_10_6_AND_LATER;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:1306:3: warning: 'CMLabColor' is deprecated: first deprecated in macOS 10.6 [-Wdeprecated-declarations]
+ 1306 |   CMLabColor          Lab;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:1263:3: note: 'CMLabColor' has been explicitly marked deprecated here
+ 1263 | } CMLabColor DEPRECATED_IN_MAC_OS_X_VERSION_10_6_AND_LATER;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:1307:3: warning: 'CMLuvColor' is deprecated: first deprecated in macOS 10.6 [-Wdeprecated-declarations]
+ 1307 |   CMLuvColor          Luv;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:1269:3: note: 'CMLuvColor' has been explicitly marked deprecated here
+ 1269 | } CMLuvColor DEPRECATED_IN_MAC_OS_X_VERSION_10_6_AND_LATER;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:1308:3: warning: 'CMYxyColor' is deprecated: first deprecated in macOS 10.6 [-Wdeprecated-declarations]
+ 1308 |   CMYxyColor          Yxy;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:1275:3: note: 'CMYxyColor' has been explicitly marked deprecated here
+ 1275 | } CMYxyColor DEPRECATED_IN_MAC_OS_X_VERSION_10_6_AND_LATER;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:1309:3: warning: 'CMCMYKColor' is deprecated: first deprecated in macOS 10.6 [-Wdeprecated-declarations]
+ 1309 |   CMCMYKColor         cmyk;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:1239:3: note: 'CMCMYKColor' has been explicitly marked deprecated here
+ 1239 | } CMCMYKColor DEPRECATED_IN_MAC_OS_X_VERSION_10_6_AND_LATER;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:1310:3: warning: 'CMCMYColor' is deprecated: first deprecated in macOS 10.6 [-Wdeprecated-declarations]
+ 1310 |   CMCMYColor          cmy;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:1245:3: note: 'CMCMYColor' has been explicitly marked deprecated here
+ 1245 | } CMCMYColor DEPRECATED_IN_MAC_OS_X_VERSION_10_6_AND_LATER;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:1311:3: warning: 'CMGrayColor' is deprecated: first deprecated in macOS 10.6 [-Wdeprecated-declarations]
+ 1311 |   CMGrayColor         gray;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:1279:3: note: 'CMGrayColor' has been explicitly marked deprecated here
+ 1279 | } CMGrayColor DEPRECATED_IN_MAC_OS_X_VERSION_10_6_AND_LATER;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:1312:3: warning: 'CMMultichannel5Color' is deprecated: first deprecated in macOS 10.6 [-Wdeprecated-declarations]
+ 1312 |   CMMultichannel5Color  mc5;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:1283:3: note: 'CMMultichannel5Color' has been explicitly marked deprecated here
+ 1283 | } CMMultichannel5Color DEPRECATED_IN_MAC_OS_X_VERSION_10_6_AND_LATER;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:1313:3: warning: 'CMMultichannel6Color' is deprecated: first deprecated in macOS 10.6 [-Wdeprecated-declarations]
+ 1313 |   CMMultichannel6Color  mc6;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:1287:3: note: 'CMMultichannel6Color' has been explicitly marked deprecated here
+ 1287 | } CMMultichannel6Color DEPRECATED_IN_MAC_OS_X_VERSION_10_6_AND_LATER;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:1314:3: warning: 'CMMultichannel7Color' is deprecated: first deprecated in macOS 10.6 [-Wdeprecated-declarations]
+ 1314 |   CMMultichannel7Color  mc7;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:1291:3: note: 'CMMultichannel7Color' has been explicitly marked deprecated here
+ 1291 | } CMMultichannel7Color DEPRECATED_IN_MAC_OS_X_VERSION_10_6_AND_LATER;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:1315:3: warning: 'CMMultichannel8Color' is deprecated: first deprecated in macOS 10.6 [-Wdeprecated-declarations]
+ 1315 |   CMMultichannel8Color  mc8;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:1295:3: note: 'CMMultichannel8Color' has been explicitly marked deprecated here
+ 1295 | } CMMultichannel8Color DEPRECATED_IN_MAC_OS_X_VERSION_10_6_AND_LATER;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:1316:3: warning: 'CMNamedColor' is deprecated: first deprecated in macOS 10.6 [-Wdeprecated-declarations]
+ 1316 |   CMNamedColor        namedColor;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:1299:3: note: 'CMNamedColor' has been explicitly marked deprecated here
+ 1299 | } CMNamedColor DEPRECATED_IN_MAC_OS_X_VERSION_10_6_AND_LATER;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:1515:3: warning: 'CMBitmapColorSpace' is deprecated: first deprecated in macOS 10.6 [-Wdeprecated-declarations]
+ 1515 |   CMBitmapColorSpace  space;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:1507:41: note: 'CMBitmapColorSpace' has been explicitly marked deprecated here
+ 1507 | typedef UInt32                          CMBitmapColorSpace DEPRECATED_IN_MAC_OS_X_VERSION_10_6_AND_LATER;
+      |                                         ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:1584:3: warning: 'CMHandleLocation' is deprecated: first deprecated in macOS 10.6 [-Wdeprecated-declarations]
+ 1584 |   CMHandleLocation    handleLoc;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:1554:3: note: 'CMHandleLocation' has been explicitly marked deprecated here
+ 1554 | } CMHandleLocation DEPRECATED_IN_MAC_OS_X_VERSION_10_6_AND_LATER;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:1589:3: warning: 'CMPathLocation' is deprecated: first deprecated in macOS 10.6 [-Wdeprecated-declarations]
+ 1589 |   CMPathLocation      pathLoc;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:1573:3: note: 'CMPathLocation' has been explicitly marked deprecated here
+ 1573 | } CMPathLocation DEPRECATED_IN_MAC_OS_X_VERSION_10_6_AND_LATER;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:1590:3: warning: 'CMBufferLocation' is deprecated: first deprecated in macOS 10.6 [-Wdeprecated-declarations]
+ 1590 |   CMBufferLocation    bufferLoc;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:1578:3: note: 'CMBufferLocation' has been explicitly marked deprecated here
+ 1578 | } CMBufferLocation DEPRECATED_IN_MAC_OS_X_VERSION_10_6_AND_LATER;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:1595:3: warning: 'CMProfLoc' is deprecated: first deprecated in macOS 10.6 [-Wdeprecated-declarations]
+ 1595 |   CMProfLoc           u;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:1591:3: note: 'CMProfLoc' has been explicitly marked deprecated here
+ 1591 | } CMProfLoc DEPRECATED_IN_MAC_OS_X_VERSION_10_6_AND_LATER;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:1600:42: warning: 'CMProfileLocation' is deprecated: first deprecated in macOS 10.6 [-Wdeprecated-declarations]
+ 1600 |   cmCurrentProfileLocationSize  = sizeof(CMProfileLocation)
+      |                                          ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:1596:3: note: 'CMProfileLocation' has been explicitly marked deprecated here
+ 1596 | } CMProfileLocation DEPRECATED_IN_MAC_OS_X_VERSION_10_6_AND_LATER;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:1615:3: warning: 'CM2Header' is deprecated: first deprecated in macOS 10.6 [-Wdeprecated-declarations]
+ 1615 |   CM2Header           header;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:486:3: note: 'CM2Header' has been explicitly marked deprecated here
+  486 | } CM2Header DEPRECATED_IN_MAC_OS_X_VERSION_10_6_AND_LATER;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:1618:3: warning: 'CMProfileLocation' is deprecated: first deprecated in macOS 10.6 [-Wdeprecated-declarations]
+ 1618 |   CMProfileLocation   location;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:1596:3: note: 'CMProfileLocation' has been explicitly marked deprecated here
+ 1596 | } CMProfileLocation DEPRECATED_IN_MAC_OS_X_VERSION_10_6_AND_LATER;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:1622:3: warning: 'CMMakeAndModel' is deprecated: first deprecated in macOS 10.6 [-Wdeprecated-declarations]
+ 1622 |   CMMakeAndModel *    makeAndModel;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:880:3: note: 'CMMakeAndModel' has been explicitly marked deprecated here
+  880 | } CMMakeAndModel DEPRECATED_IN_MAC_OS_X_VERSION_10_6_AND_LATER;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:1623:3: warning: 'CMProfileMD5' is deprecated: first deprecated in macOS 10.6 [-Wdeprecated-declarations]
+ 1623 |   CMProfileMD5 *      digest;                 /* Derived from the RSA Data Security, Inc. MD5 Message-Digest Algorithm */
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:448:41: note: 'CMProfileMD5' has been explicitly marked deprecated here
+  448 | typedef unsigned char                   CMProfileMD5[16] DEPRECATED_IN_MAC_OS_X_VERSION_10_6_AND_LATER;
+      |                                         ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:1989:3: warning: 'CMDeviceID' is deprecated: first deprecated in macOS 10.6 [-Wdeprecated-declarations]
+ 1989 |   CMDeviceID          deviceID;               /* device ID */
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:1954:41: note: 'CMDeviceID' has been explicitly marked deprecated here
+ 1954 | typedef UInt32                          CMDeviceID DEPRECATED_IN_MAC_OS_X_VERSION_10_6_AND_LATER;
+      |                                         ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:1991:3: warning: 'CMDeviceState' is deprecated: first deprecated in macOS 10.6 [-Wdeprecated-declarations]
+ 1991 |   CMDeviceState       deviceState;            /* Device State flags */
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:1948:41: note: 'CMDeviceState' has been explicitly marked deprecated here
+ 1948 | typedef UInt32                          CMDeviceState DEPRECATED_IN_MAC_OS_X_VERSION_10_6_AND_LATER;
+      |                                         ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:1992:3: warning: 'CMDeviceProfileID' is deprecated: first deprecated in macOS 10.6 [-Wdeprecated-declarations]
+ 1992 |   CMDeviceProfileID   defaultProfileID;       /* Can change */
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:1959:41: note: 'CMDeviceProfileID' has been explicitly marked deprecated here
+ 1959 | typedef UInt32                          CMDeviceProfileID DEPRECATED_IN_MAC_OS_X_VERSION_10_6_AND_LATER;
+      |                                         ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:2005:3: warning: 'CMDeviceProfileID' is deprecated: first deprecated in macOS 10.6 [-Wdeprecated-declarations]
+ 2005 |   CMDeviceProfileID   profileID;              /* The identifier for this profile */
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:1959:41: note: 'CMDeviceProfileID' has been explicitly marked deprecated here
+ 1959 | typedef UInt32                          CMDeviceProfileID DEPRECATED_IN_MAC_OS_X_VERSION_10_6_AND_LATER;
+      |                                         ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:2006:3: warning: 'CMProfileLocation' is deprecated: first deprecated in macOS 10.6 [-Wdeprecated-declarations]
+ 2006 |   CMProfileLocation   profileLoc;             /* The profile's location */
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:1596:3: note: 'CMProfileLocation' has been explicitly marked deprecated here
+ 1596 | } CMProfileLocation DEPRECATED_IN_MAC_OS_X_VERSION_10_6_AND_LATER;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:2013:3: warning: 'CMDeviceProfileID' is deprecated: first deprecated in macOS 10.6 [-Wdeprecated-declarations]
+ 2013 |   CMDeviceProfileID   profileID;              /* The identifier for this profile */
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:1959:41: note: 'CMDeviceProfileID' has been explicitly marked deprecated here
+ 1959 | typedef UInt32                          CMDeviceProfileID DEPRECATED_IN_MAC_OS_X_VERSION_10_6_AND_LATER;
+      |                                         ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:2014:3: warning: 'CMProfileLocation' is deprecated: first deprecated in macOS 10.6 [-Wdeprecated-declarations]
+ 2014 |   CMProfileLocation   profileLoc;             /* The profile's location */
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:1596:3: note: 'CMProfileLocation' has been explicitly marked deprecated here
+ 1596 | } CMProfileLocation DEPRECATED_IN_MAC_OS_X_VERSION_10_6_AND_LATER;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:2016:3: warning: 'CMDeviceProfileScope' is deprecated: first deprecated in macOS 10.6 [-Wdeprecated-declarations]
+ 2016 |   CMDeviceProfileScope  profileScope;         /* The scope this profile applies to */
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:1980:18: note: 'CMDeviceProfileScope' has been explicitly marked deprecated here
+ 1980 | } CMDeviceScope, CMDeviceProfileScope DEPRECATED_IN_MAC_OS_X_VERSION_10_6_AND_LATER;
+      |                  ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:2028:3: warning: 'CMDeviceProfileInfo' is deprecated: first deprecated in macOS 10.6 [-Wdeprecated-declarations]
+ 2028 |   CMDeviceProfileInfo  profiles[1];           /* The profile info records */
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:2009:3: note: 'CMDeviceProfileInfo' has been explicitly marked deprecated here
+ 2009 | } CMDeviceProfileInfo DEPRECATED_IN_MAC_OS_X_VERSION_10_6_AND_LATER;
+      |   ^
+128 warnings and 8 errors generated.
+[58/92] Compiling C++ object src/libharfbuzz.a.p/hb-aat-layout.cc.o
+[59/92] Compiling C++ object src/libharfbuzz.a.p/hb-coretext.cc.o
+FAILED: src/libharfbuzz.a.p/hb-coretext.cc.o 
+clang++ -Isrc/libharfbuzz.a.p -Isrc -I../src/src -I. -I../src -I/ix/store/FyfJzoeHD7Kk7et8-lib-freetype-bootstrap/include/freetype2 -I/ix/store/8yQvTSfjyw4zcOvX-lib-png/include/libpng16 -I/ix/store/g6aa0U2sU6P9ATWp-lib-z-adler/include -I/ix/store/5pd6fTOenvqSlij6-lib-brotli/include -I/ix/store/eiITq4N2xxJnwkz4-lib-glib-ix/include/glib-2.0 -I/ix/store/eiITq4N2xxJnwkz4-lib-glib-ix/lib/glib-2.0/include -I/ix/store/GuekQM5b1OYHtWK0-lib-pcre-2/include -fcolor-diagnostics -Wall -Winvalid-pch -std=c++11 -fno-exceptions -O0 -g -fno-exceptions -fno-rtti -fno-threadsafe-statics -fvisibility-inlines-hidden -DHAVE_CONFIG_H -Wno-unknown-warning-option -Wno-non-virtual-dtor -MD -MQ src/libharfbuzz.a.p/hb-coretext.cc.o -MF src/libharfbuzz.a.p/hb-coretext.cc.o.d -o src/libharfbuzz.a.p/hb-coretext.cc.o -c ../src/src/hb-coretext.cc
+In file included from ../src/src/hb-coretext.cc:35:
+In file included from ../src/src/hb-coretext.h:37:
+In file included from /ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.h:23:
+In file included from /ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Headers/CoreServices.h:19:
+In file included from /ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreFoundation.framework/Headers/CoreFoundation.h:43:
+In file included from /ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreFoundation.framework/Headers/CFBase.h:19:
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreFoundation.framework/Headers/CFAvailability.h:183:5: warning: 'DEPLOYMENT_RUNTIME_SWIFT' is not defined, evaluates to 0 [-Wundef]
+  183 | #if DEPLOYMENT_RUNTIME_SWIFT
+      |     ^
+In file included from ../src/src/hb-coretext.cc:35:
+In file included from ../src/src/hb-coretext.h:37:
+In file included from /ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.h:23:
+In file included from /ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Headers/CoreServices.h:19:
+In file included from /ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreFoundation.framework/Headers/CoreFoundation.h:43:
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreFoundation.framework/Headers/CFBase.h:45:6: warning: '__BIG_ENDIAN__' is not defined, evaluates to 0 [-Wundef]
+   45 | #if !__BIG_ENDIAN__ && !__LITTLE_ENDIAN__
+      |      ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreFoundation.framework/Headers/CFBase.h:49:5: warning: '__BIG_ENDIAN__' is not defined, evaluates to 0 [-Wundef]
+   49 | #if __BIG_ENDIAN__ && __LITTLE_ENDIAN__
+      |     ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreFoundation.framework/Headers/CFBase.h:448:5: warning: '__LLP64__' is not defined, evaluates to 0 [-Wundef]
+  448 | #if __LLP64__
+      |     ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreFoundation.framework/Headers/CFBase.h:653:5: warning: 'DEPLOYMENT_RUNTIME_SWIFT' is not defined, evaluates to 0 [-Wundef]
+  653 | #if DEPLOYMENT_RUNTIME_SWIFT
+      |     ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreFoundation.framework/Headers/CFBase.h:680:5: warning: 'DEPLOYMENT_RUNTIME_SWIFT' is not defined, evaluates to 0 [-Wundef]
+  680 | #if DEPLOYMENT_RUNTIME_SWIFT
+      |     ^
+In file included from ../src/src/hb-coretext.cc:35:
+In file included from ../src/src/hb-coretext.h:37:
+In file included from /ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.h:23:
+In file included from /ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Headers/CoreServices.h:19:
+In file included from /ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreFoundation.framework/Headers/CoreFoundation.h:49:
+In file included from /ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreFoundation.framework/Headers/CFCalendar.h:16:
+In file included from /ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreFoundation.framework/Headers/CFTimeZone.h:18:
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreFoundation.framework/Headers/CFString.h:154:5: warning: 'DEPLOYMENT_RUNTIME_SWIFT' is not defined, evaluates to 0 [-Wundef]
+  154 | #if DEPLOYMENT_RUNTIME_SWIFT
+      |     ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreFoundation.framework/Headers/CFString.h:164:5: warning: 'DEPLOYMENT_RUNTIME_SWIFT' is not defined, evaluates to 0 [-Wundef]
+  164 | #if DEPLOYMENT_RUNTIME_SWIFT && TARGET_OS_MAC
+      |     ^
+In file included from ../src/src/hb-coretext.cc:35:
+In file included from ../src/src/hb-coretext.h:37:
+In file included from /ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.h:23:
+In file included from /ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Headers/CoreServices.h:19:
+In file included from /ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreFoundation.framework/Headers/CoreFoundation.h:60:
+In file included from /ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreFoundation.framework/Headers/CFPropertyList.h:17:
+In file included from /ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreFoundation.framework/Headers/CFStream.h:16:
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreFoundation.framework/Headers/CFURL.h:1188:6: warning: 'DEPLOYMENT_TARGET_SWIFT' is not defined, evaluates to 0 [-Wundef]
+ 1188 | #if !DEPLOYMENT_TARGET_SWIFT
+      |      ^
+In file included from ../src/src/hb-coretext.cc:35:
+In file included from ../src/src/hb-coretext.h:37:
+In file included from /ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.h:23:
+In file included from /ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Headers/CoreServices.h:23:
+In file included from /ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Frameworks/AE.framework/Headers/AE.h:20:
+In file included from /ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/CarbonCore.h:35:
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/FixMath.h:80:26: warning: '__ppc64__' is not defined, evaluates to 0 [-Wundef]
+   80 | #elif defined __ppc__ || __ppc64__ || __arm64__
+      |                          ^
+In file included from ../src/src/hb-coretext.cc:35:
+In file included from ../src/src/hb-coretext.h:37:
+In file included from /ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.h:23:
+In file included from /ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Headers/CoreServices.h:23:
+In file included from /ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Frameworks/AE.framework/Headers/AE.h:20:
+In file included from /ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/CarbonCore.h:39:
+In file included from /ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/Script.h:17:
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/IntlResources.h:197:5: warning: '__BIG_ENDIAN__' is not defined, evaluates to 0 [-Wundef]
+  197 | #if __BIG_ENDIAN__
+      |     ^
+In file included from ../src/src/hb-coretext.cc:35:
+In file included from ../src/src/hb-coretext.h:37:
+In file included from /ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.h:23:
+In file included from /ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Headers/CoreServices.h:23:
+In file included from /ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Frameworks/AE.framework/Headers/AE.h:20:
+In file included from /ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/CarbonCore.h:67:
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/Math64.h:47:7: warning: 'MATH64_USE_INLINE' is not defined, evaluates to 0 [-Wundef]
+   47 |   #if MATH64_USE_INLINE
+      |       ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/Math64.h:69:7: warning: 'MATH64_USE_INLINE' is not defined, evaluates to 0 [-Wundef]
+   69 |   #if MATH64_USE_INLINE
+      |       ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/Math64.h:96:7: warning: 'MATH64_USE_INLINE' is not defined, evaluates to 0 [-Wundef]
+   96 |   #if MATH64_USE_INLINE
+      |       ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/Math64.h:123:7: warning: 'MATH64_USE_INLINE' is not defined, evaluates to 0 [-Wundef]
+  123 |   #if MATH64_USE_INLINE
+      |       ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/Math64.h:148:7: warning: 'MATH64_USE_INLINE' is not defined, evaluates to 0 [-Wundef]
+  148 |   #if MATH64_USE_INLINE
+      |       ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/Math64.h:204:7: warning: 'MATH64_USE_INLINE' is not defined, evaluates to 0 [-Wundef]
+  204 |   #if MATH64_USE_INLINE
+      |       ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/Math64.h:230:7: warning: 'MATH64_USE_INLINE' is not defined, evaluates to 0 [-Wundef]
+  230 |   #if MATH64_USE_INLINE
+      |       ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/Math64.h:264:7: warning: 'MATH64_USE_INLINE' is not defined, evaluates to 0 [-Wundef]
+  264 |   #if MATH64_USE_INLINE
+      |       ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/Math64.h:287:7: warning: 'MATH64_USE_INLINE' is not defined, evaluates to 0 [-Wundef]
+  287 |   #if MATH64_USE_INLINE
+      |       ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/Math64.h:312:7: warning: 'MATH64_USE_INLINE' is not defined, evaluates to 0 [-Wundef]
+  312 |   #if MATH64_USE_INLINE
+      |       ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/Math64.h:335:7: warning: 'MATH64_USE_INLINE' is not defined, evaluates to 0 [-Wundef]
+  335 |   #if MATH64_USE_INLINE
+      |       ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/Math64.h:358:7: warning: 'MATH64_USE_INLINE' is not defined, evaluates to 0 [-Wundef]
+  358 |   #if MATH64_USE_INLINE
+      |       ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/Math64.h:383:7: warning: 'MATH64_USE_INLINE' is not defined, evaluates to 0 [-Wundef]
+  383 |   #if MATH64_USE_INLINE
+      |       ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/Math64.h:408:7: warning: 'MATH64_USE_INLINE' is not defined, evaluates to 0 [-Wundef]
+  408 |   #if MATH64_USE_INLINE
+      |       ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/Math64.h:433:7: warning: 'MATH64_USE_INLINE' is not defined, evaluates to 0 [-Wundef]
+  433 |   #if MATH64_USE_INLINE
+      |       ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/Math64.h:456:7: warning: 'MATH64_USE_INLINE' is not defined, evaluates to 0 [-Wundef]
+  456 |   #if MATH64_USE_INLINE
+      |       ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/Math64.h:508:7: warning: 'MATH64_USE_INLINE' is not defined, evaluates to 0 [-Wundef]
+  508 |   #if MATH64_USE_INLINE
+      |       ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/Math64.h:533:7: warning: 'MATH64_USE_INLINE' is not defined, evaluates to 0 [-Wundef]
+  533 |   #if MATH64_USE_INLINE
+      |       ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/Math64.h:558:7: warning: 'MATH64_USE_INLINE' is not defined, evaluates to 0 [-Wundef]
+  558 |   #if MATH64_USE_INLINE
+      |       ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/Math64.h:581:7: warning: 'MATH64_USE_INLINE' is not defined, evaluates to 0 [-Wundef]
+  581 |   #if MATH64_USE_INLINE
+      |       ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/Math64.h:606:7: warning: 'MATH64_USE_INLINE' is not defined, evaluates to 0 [-Wundef]
+  606 |   #if MATH64_USE_INLINE
+      |       ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/Math64.h:631:7: warning: 'MATH64_USE_INLINE' is not defined, evaluates to 0 [-Wundef]
+  631 |   #if MATH64_USE_INLINE
+      |       ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/Math64.h:660:7: warning: 'MATH64_USE_INLINE' is not defined, evaluates to 0 [-Wundef]
+  660 |   #if MATH64_USE_INLINE
+      |       ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/Math64.h:687:7: warning: 'MATH64_USE_INLINE' is not defined, evaluates to 0 [-Wundef]
+  687 |   #if MATH64_USE_INLINE
+      |       ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/Math64.h:712:7: warning: 'MATH64_USE_INLINE' is not defined, evaluates to 0 [-Wundef]
+  712 |   #if MATH64_USE_INLINE
+      |       ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/Math64.h:738:7: warning: 'MATH64_USE_INLINE' is not defined, evaluates to 0 [-Wundef]
+  738 |   #if MATH64_USE_INLINE
+      |       ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/Math64.h:764:7: warning: 'MATH64_USE_INLINE' is not defined, evaluates to 0 [-Wundef]
+  764 |   #if MATH64_USE_INLINE
+      |       ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/Math64.h:792:7: warning: 'MATH64_USE_INLINE' is not defined, evaluates to 0 [-Wundef]
+  792 |   #if MATH64_USE_INLINE
+      |       ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/Math64.h:818:7: warning: 'MATH64_USE_INLINE' is not defined, evaluates to 0 [-Wundef]
+  818 |   #if MATH64_USE_INLINE
+      |       ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/Math64.h:851:7: warning: 'MATH64_USE_INLINE' is not defined, evaluates to 0 [-Wundef]
+  851 |   #if MATH64_USE_INLINE
+      |       ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/Math64.h:876:7: warning: 'MATH64_USE_INLINE' is not defined, evaluates to 0 [-Wundef]
+  876 |   #if MATH64_USE_INLINE
+      |       ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/Math64.h:901:7: warning: 'MATH64_USE_INLINE' is not defined, evaluates to 0 [-Wundef]
+  901 |   #if MATH64_USE_INLINE
+      |       ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/Math64.h:924:7: warning: 'MATH64_USE_INLINE' is not defined, evaluates to 0 [-Wundef]
+  924 |   #if MATH64_USE_INLINE
+      |       ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/Math64.h:947:7: warning: 'MATH64_USE_INLINE' is not defined, evaluates to 0 [-Wundef]
+  947 |   #if MATH64_USE_INLINE
+      |       ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/Math64.h:972:7: warning: 'MATH64_USE_INLINE' is not defined, evaluates to 0 [-Wundef]
+  972 |   #if MATH64_USE_INLINE
+      |       ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/Math64.h:997:7: warning: 'MATH64_USE_INLINE' is not defined, evaluates to 0 [-Wundef]
+  997 |   #if MATH64_USE_INLINE
+      |       ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/Math64.h:1022:7: warning: 'MATH64_USE_INLINE' is not defined, evaluates to 0 [-Wundef]
+ 1022 |   #if MATH64_USE_INLINE
+      |       ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/Math64.h:1045:7: warning: 'MATH64_USE_INLINE' is not defined, evaluates to 0 [-Wundef]
+ 1045 |   #if MATH64_USE_INLINE
+      |       ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/Math64.h:1096:7: warning: 'MATH64_USE_INLINE' is not defined, evaluates to 0 [-Wundef]
+ 1096 |   #if MATH64_USE_INLINE
+      |       ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/Math64.h:1121:7: warning: 'MATH64_USE_INLINE' is not defined, evaluates to 0 [-Wundef]
+ 1121 |   #if MATH64_USE_INLINE
+      |       ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/Math64.h:1146:7: warning: 'MATH64_USE_INLINE' is not defined, evaluates to 0 [-Wundef]
+ 1146 |   #if MATH64_USE_INLINE
+      |       ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/Math64.h:1169:7: warning: 'MATH64_USE_INLINE' is not defined, evaluates to 0 [-Wundef]
+ 1169 |   #if MATH64_USE_INLINE
+      |       ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/Math64.h:1194:7: warning: 'MATH64_USE_INLINE' is not defined, evaluates to 0 [-Wundef]
+ 1194 |   #if MATH64_USE_INLINE
+      |       ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/Math64.h:1219:7: warning: 'MATH64_USE_INLINE' is not defined, evaluates to 0 [-Wundef]
+ 1219 |   #if MATH64_USE_INLINE
+      |       ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/Math64.h:1244:7: warning: 'MATH64_USE_INLINE' is not defined, evaluates to 0 [-Wundef]
+ 1244 |   #if MATH64_USE_INLINE
+      |       ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/Math64.h:1267:7: warning: 'MATH64_USE_INLINE' is not defined, evaluates to 0 [-Wundef]
+ 1267 |   #if MATH64_USE_INLINE
+      |       ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/Math64.h:1292:7: warning: 'MATH64_USE_INLINE' is not defined, evaluates to 0 [-Wundef]
+ 1292 |   #if MATH64_USE_INLINE
+      |       ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/Math64.h:1315:7: warning: 'MATH64_USE_INLINE' is not defined, evaluates to 0 [-Wundef]
+ 1315 |   #if MATH64_USE_INLINE
+      |       ^
+In file included from ../src/src/hb-coretext.cc:35:
+In file included from ../src/src/hb-coretext.h:37:
+In file included from /ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.h:23:
+In file included from /ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Headers/CoreServices.h:23:
+In file included from /ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Frameworks/AE.framework/Headers/AE.h:20:
+In file included from /ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/CarbonCore.h:87:
+In file included from /ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/Components.h:26:
+In file included from /ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/Files.h:56:
+In file included from /ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/DiskArbitration.framework/Headers/DADisk.h:28:
+In file included from /ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/IOKit.framework/Headers/IOKitLib.h:52:
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/IOKit.framework/Headers/OSMessageNotification.h:114:6: warning: 'KERNEL_USER32' is not defined, evaluates to 0 [-Wundef]
+  114 | #if !KERNEL_USER32
+      |      ^
+In file included from ../src/src/hb-coretext.cc:35:
+In file included from ../src/src/hb-coretext.h:37:
+In file included from /ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.h:23:
+In file included from /ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Headers/CoreServices.h:23:
+In file included from /ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Frameworks/AE.framework/Headers/AE.h:20:
+In file included from /ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/CarbonCore.h:115:
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/Debugging.h:105:5: warning: 'DEBUG' is not defined, evaluates to 0 [-Wundef]
+  105 | #if DEBUG
+      |     ^
+In file included from ../src/src/hb-coretext.cc:35:
+In file included from ../src/src/hb-coretext.h:37:
+In file included from /ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.h:23:
+In file included from /ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Headers/CoreServices.h:23:
+In file included from /ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Frameworks/AE.framework/Headers/AE.h:20:
+In file included from /ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/CarbonCore.h:127:
+In file included from /ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/DriverServices.h:26:
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/MachineExceptions.h:47:5: warning: '__MACHINEEXCEPTIONS_USE_OLD_CR_FIELD_NAME__' is not defined, evaluates to 0 [-Wundef]
+   47 | #if __MACHINEEXCEPTIONS_USE_OLD_CR_FIELD_NAME__
+      |     ^
+In file included from ../src/src/hb-coretext.cc:35:
+In file included from ../src/src/hb-coretext.h:37:
+In file included from /ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.h:23:
+In file included from /ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Headers/CoreServices.h:23:
+In file included from /ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Frameworks/AE.framework/Headers/AE.h:20:
+In file included from /ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/CarbonCore.h:147:
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/TextUtils.h:715:47: warning: 'OLDP2C' is not defined, evaluates to 0 [-Wundef]
+  715 | #if TARGET_OS_MAC && TARGET_API_MAC_CARBON && OLDP2C
+      |                                               ^
+In file included from ../src/src/hb-coretext.cc:35:
+In file included from ../src/src/hb-coretext.h:37:
+In file included from /ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.h:43:
+In file included from /ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/HIServices.framework/Headers/HIServices.h:26:
+In file included from /ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/HIServices.framework/Headers/HIShape.h:22:
+In file included from /ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/Quickdraw.h:31:
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:457:39: warning: 'CMProfileMD5' is deprecated: first deprecated in macOS 10.6 [-Wdeprecated-declarations]
+  457 |   inline Boolean CMProfileMD5AreEqual(CMProfileMD5 a, CMProfileMD5 b)
+      |                                       ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:448:41: note: 'CMProfileMD5' has been explicitly marked deprecated here
+  448 | typedef unsigned char                   CMProfileMD5[16] DEPRECATED_IN_MAC_OS_X_VERSION_10_6_AND_LATER;
+      |                                         ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:457:55: warning: 'CMProfileMD5' is deprecated: first deprecated in macOS 10.6 [-Wdeprecated-declarations]
+  457 |   inline Boolean CMProfileMD5AreEqual(CMProfileMD5 a, CMProfileMD5 b)
+      |                                                       ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:448:41: note: 'CMProfileMD5' has been explicitly marked deprecated here
+  448 | typedef unsigned char                   CMProfileMD5[16] DEPRECATED_IN_MAC_OS_X_VERSION_10_6_AND_LATER;
+      |                                         ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:459:14: error: cast from 'unsigned char *' to 'UInt32 *' (aka 'unsigned int *') increases required alignment from 1 to 4 [-Werror,-Wcast-align]
+  459 |     return  ((UInt32*)a)[0]==((UInt32*)b)[0] && ((UInt32*)a)[1]==((UInt32*)b)[1] &&
+      |              ^~~~~~~~~~
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:459:31: error: cast from 'unsigned char *' to 'UInt32 *' (aka 'unsigned int *') increases required alignment from 1 to 4 [-Werror,-Wcast-align]
+  459 |     return  ((UInt32*)a)[0]==((UInt32*)b)[0] && ((UInt32*)a)[1]==((UInt32*)b)[1] &&
+      |                               ^~~~~~~~~~
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:459:50: error: cast from 'unsigned char *' to 'UInt32 *' (aka 'unsigned int *') increases required alignment from 1 to 4 [-Werror,-Wcast-align]
+  459 |     return  ((UInt32*)a)[0]==((UInt32*)b)[0] && ((UInt32*)a)[1]==((UInt32*)b)[1] &&
+      |                                                  ^~~~~~~~~~
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:459:67: error: cast from 'unsigned char *' to 'UInt32 *' (aka 'unsigned int *') increases required alignment from 1 to 4 [-Werror,-Wcast-align]
+  459 |     return  ((UInt32*)a)[0]==((UInt32*)b)[0] && ((UInt32*)a)[1]==((UInt32*)b)[1] &&
+      |                                                                   ^~~~~~~~~~
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:460:14: error: cast from 'unsigned char *' to 'UInt32 *' (aka 'unsigned int *') increases required alignment from 1 to 4 [-Werror,-Wcast-align]
+  460 |             ((UInt32*)a)[2]==((UInt32*)b)[2] && ((UInt32*)a)[3]==((UInt32*)b)[3];
+      |              ^~~~~~~~~~
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:460:31: error: cast from 'unsigned char *' to 'UInt32 *' (aka 'unsigned int *') increases required alignment from 1 to 4 [-Werror,-Wcast-align]
+  460 |             ((UInt32*)a)[2]==((UInt32*)b)[2] && ((UInt32*)a)[3]==((UInt32*)b)[3];
+      |                               ^~~~~~~~~~
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:460:50: error: cast from 'unsigned char *' to 'UInt32 *' (aka 'unsigned int *') increases required alignment from 1 to 4 [-Werror,-Wcast-align]
+  460 |             ((UInt32*)a)[2]==((UInt32*)b)[2] && ((UInt32*)a)[3]==((UInt32*)b)[3];
+      |                                                  ^~~~~~~~~~
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:460:67: error: cast from 'unsigned char *' to 'UInt32 *' (aka 'unsigned int *') increases required alignment from 1 to 4 [-Werror,-Wcast-align]
+  460 |             ((UInt32*)a)[2]==((UInt32*)b)[2] && ((UInt32*)a)[3]==((UInt32*)b)[3];
+      |                                                                   ^~~~~~~~~~
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:475:3: warning: 'CMDateTime' is deprecated: first deprecated in macOS 10.6 [-Wdeprecated-declarations]
+  475 |   CMDateTime          dateTime;               /* date and time of profile creation */
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:424:3: note: 'CMDateTime' has been explicitly marked deprecated here
+  424 | } CMDateTime DEPRECATED_IN_MAC_OS_X_VERSION_10_6_AND_LATER;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:483:3: warning: 'CMFixedXYZColor' is deprecated: first deprecated in macOS 10.6 [-Wdeprecated-declarations]
+  483 |   CMFixedXYZColor     white;                  /* profile illuminant */
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:435:3: note: 'CMFixedXYZColor' has been explicitly marked deprecated here
+  435 | } CMFixedXYZColor DEPRECATED_IN_MAC_OS_X_VERSION_10_6_AND_LATER;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:495:3: warning: 'CMDateTime' is deprecated: first deprecated in macOS 10.6 [-Wdeprecated-declarations]
+  495 |   CMDateTime          dateTime;               /* date and time of profile creation */
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:424:3: note: 'CMDateTime' has been explicitly marked deprecated here
+  424 | } CMDateTime DEPRECATED_IN_MAC_OS_X_VERSION_10_6_AND_LATER;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:503:3: warning: 'CMFixedXYZColor' is deprecated: first deprecated in macOS 10.6 [-Wdeprecated-declarations]
+  503 |   CMFixedXYZColor     white;                  /* profile illuminant */
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:435:3: note: 'CMFixedXYZColor' has been explicitly marked deprecated here
+  435 | } CMFixedXYZColor DEPRECATED_IN_MAC_OS_X_VERSION_10_6_AND_LATER;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:505:3: warning: 'CMProfileMD5' is deprecated: first deprecated in macOS 10.6 [-Wdeprecated-declarations]
+  505 |   CMProfileMD5        digest;                 /* Profile message digest */
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:448:41: note: 'CMProfileMD5' has been explicitly marked deprecated here
+  448 | typedef unsigned char                   CMProfileMD5[16] DEPRECATED_IN_MAC_OS_X_VERSION_10_6_AND_LATER;
+      |                                         ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:517:3: warning: 'CMTagRecord' is deprecated: first deprecated in macOS 10.6 [-Wdeprecated-declarations]
+  517 |   CMTagRecord         tagList[1];             /* variable size, determined by count */
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:513:3: note: 'CMTagRecord' has been explicitly marked deprecated here
+  513 | } CMTagRecord DEPRECATED_IN_MAC_OS_X_VERSION_10_6_AND_LATER;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:521:3: warning: 'CM2Header' is deprecated: first deprecated in macOS 10.6 [-Wdeprecated-declarations]
+  521 |   CM2Header           header;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:486:3: note: 'CM2Header' has been explicitly marked deprecated here
+  486 | } CM2Header DEPRECATED_IN_MAC_OS_X_VERSION_10_6_AND_LATER;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:522:3: warning: 'CMTagElemTable' is deprecated: first deprecated in macOS 10.6 [-Wdeprecated-declarations]
+  522 |   CMTagElemTable      tagTable;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:518:3: note: 'CMTagElemTable' has been explicitly marked deprecated here
+  518 | } CMTagElemTable DEPRECATED_IN_MAC_OS_X_VERSION_10_6_AND_LATER;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:550:3: warning: 'CMDateTime' is deprecated: first deprecated in macOS 10.6 [-Wdeprecated-declarations]
+  550 |   CMDateTime          dateTime;               /* */
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:424:3: note: 'CMDateTime' has been explicitly marked deprecated here
+  424 | } CMDateTime DEPRECATED_IN_MAC_OS_X_VERSION_10_6_AND_LATER;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:618:3: warning: 'CMFixedXYZColor' is deprecated: first deprecated in macOS 10.6 [-Wdeprecated-declarations]
+  618 |   CMFixedXYZColor     backingXYZ;             /* absolute XYZ values of backing */
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:435:3: note: 'CMFixedXYZColor' has been explicitly marked deprecated here
+  435 | } CMFixedXYZColor DEPRECATED_IN_MAC_OS_X_VERSION_10_6_AND_LATER;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:662:3: warning: 'CMFixedXYColor' is deprecated: first deprecated in macOS 10.6 [-Wdeprecated-declarations]
+  662 |   CMFixedXYColor      redPhosphor;            /* Phosphors - native cromaticity values of the display  */
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:429:3: note: 'CMFixedXYColor' has been explicitly marked deprecated here
+  429 | } CMFixedXYColor DEPRECATED_IN_MAC_OS_X_VERSION_10_6_AND_LATER;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:663:3: warning: 'CMFixedXYColor' is deprecated: first deprecated in macOS 10.6 [-Wdeprecated-declarations]
+  663 |   CMFixedXYColor      greenPhosphor;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:429:3: note: 'CMFixedXYColor' has been explicitly marked deprecated here
+  429 | } CMFixedXYColor DEPRECATED_IN_MAC_OS_X_VERSION_10_6_AND_LATER;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:664:3: warning: 'CMFixedXYColor' is deprecated: first deprecated in macOS 10.6 [-Wdeprecated-declarations]
+  664 |   CMFixedXYColor      bluePhosphor;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:429:3: note: 'CMFixedXYColor' has been explicitly marked deprecated here
+  429 | } CMFixedXYColor DEPRECATED_IN_MAC_OS_X_VERSION_10_6_AND_LATER;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:665:3: warning: 'CMFixedXYColor' is deprecated: first deprecated in macOS 10.6 [-Wdeprecated-declarations]
+  665 |   CMFixedXYColor      whitePoint;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:429:3: note: 'CMFixedXYColor' has been explicitly marked deprecated here
+  429 | } CMFixedXYColor DEPRECATED_IN_MAC_OS_X_VERSION_10_6_AND_LATER;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:681:3: warning: 'CMNativeDisplayInfo' is deprecated: first deprecated in macOS 10.6 [-Wdeprecated-declarations]
+  681 |   CMNativeDisplayInfo nativeDisplayInfo;      /* data of type CMNativeDisplayInfo */
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:676:3: note: 'CMNativeDisplayInfo' has been explicitly marked deprecated here
+  676 | } CMNativeDisplayInfo DEPRECATED_IN_MAC_OS_X_VERSION_10_6_AND_LATER;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:734:3: warning: 'CMScreeningChannelRec' is deprecated: first deprecated in macOS 10.6 [-Wdeprecated-declarations]
+  734 |   CMScreeningChannelRec  channelInfo[1];      /* variable size, determined by channelCount */
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:727:3: note: 'CMScreeningChannelRec' has been explicitly marked deprecated here
+  727 | } CMScreeningChannelRec DEPRECATED_IN_MAC_OS_X_VERSION_10_6_AND_LATER;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:782:3: warning: 'CMFixedXYZColor' is deprecated: first deprecated in macOS 10.6 [-Wdeprecated-declarations]
+  782 |   CMFixedXYZColor     illuminant;             /* absolute XYZs of illuminant  in cd/m^2 */
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:435:3: note: 'CMFixedXYZColor' has been explicitly marked deprecated here
+  435 | } CMFixedXYZColor DEPRECATED_IN_MAC_OS_X_VERSION_10_6_AND_LATER;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:783:3: warning: 'CMFixedXYZColor' is deprecated: first deprecated in macOS 10.6 [-Wdeprecated-declarations]
+  783 |   CMFixedXYZColor     surround;               /* absolute XYZs of surround in cd/m^2 */
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:435:3: note: 'CMFixedXYZColor' has been explicitly marked deprecated here
+  435 | } CMFixedXYZColor DEPRECATED_IN_MAC_OS_X_VERSION_10_6_AND_LATER;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:790:3: warning: 'CMFixedXYZColor' is deprecated: first deprecated in macOS 10.6 [-Wdeprecated-declarations]
+  790 |   CMFixedXYZColor     XYZ[1];                 /* variable size, determined by tag element size */
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:435:3: note: 'CMFixedXYZColor' has been explicitly marked deprecated here
+  435 | } CMFixedXYZColor DEPRECATED_IN_MAC_OS_X_VERSION_10_6_AND_LATER;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:829:3: warning: 'CMIntentCRDVMSize' is deprecated: first deprecated in macOS 10.6 [-Wdeprecated-declarations]
+  829 |   CMIntentCRDVMSize   intentCRD[1];           /* variable size, determined by count */
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:823:3: note: 'CMIntentCRDVMSize' has been explicitly marked deprecated here
+  823 | } CMIntentCRDVMSize DEPRECATED_IN_MAC_OS_X_VERSION_10_6_AND_LATER;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:860:5: warning: 'CMVideoCardGammaTable' is deprecated: first deprecated in macOS 10.6 [-Wdeprecated-declarations]
+  860 |     CMVideoCardGammaTable    table;
+      |     ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:843:3: note: 'CMVideoCardGammaTable' has been explicitly marked deprecated here
+  843 | } CMVideoCardGammaTable DEPRECATED_IN_MAC_OS_X_VERSION_10_6_AND_LATER;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:861:5: warning: 'CMVideoCardGammaFormula' is deprecated: first deprecated in macOS 10.6 [-Wdeprecated-declarations]
+  861 |     CMVideoCardGammaFormula  formula;
+      |     ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:855:3: note: 'CMVideoCardGammaFormula' has been explicitly marked deprecated here
+  855 | } CMVideoCardGammaFormula DEPRECATED_IN_MAC_OS_X_VERSION_10_6_AND_LATER;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:868:3: warning: 'CMVideoCardGamma' is deprecated: first deprecated in macOS 10.6 [-Wdeprecated-declarations]
+  868 |   CMVideoCardGamma    gamma;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:863:3: note: 'CMVideoCardGamma' has been explicitly marked deprecated here
+  863 | } CMVideoCardGamma DEPRECATED_IN_MAC_OS_X_VERSION_10_6_AND_LATER;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:885:3: warning: 'CMMakeAndModel' is deprecated: first deprecated in macOS 10.6 [-Wdeprecated-declarations]
+  885 |   CMMakeAndModel      makeAndModel;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:880:3: note: 'CMMakeAndModel' has been explicitly marked deprecated here
+  880 | } CMMakeAndModel DEPRECATED_IN_MAC_OS_X_VERSION_10_6_AND_LATER;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:1035:6: warning: '_DECLARE_CS_QD_API_' is not defined, evaluates to 0 [-Wundef]
+ 1035 | #if !_DECLARE_CS_QD_API_
+      |      ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:1187:3: warning: 'CM2Header' is deprecated: first deprecated in macOS 10.6 [-Wdeprecated-declarations]
+ 1187 |   CM2Header           cm2;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:486:3: note: 'CM2Header' has been explicitly marked deprecated here
+  486 | } CM2Header DEPRECATED_IN_MAC_OS_X_VERSION_10_6_AND_LATER;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:1188:3: warning: 'CM4Header' is deprecated: first deprecated in macOS 10.6 [-Wdeprecated-declarations]
+ 1188 |   CM4Header           cm4;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:507:3: note: 'CM4Header' has been explicitly marked deprecated here
+  507 | } CM4Header DEPRECATED_IN_MAC_OS_X_VERSION_10_6_AND_LATER;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:1196:3: warning: 'CMProfileRef' is deprecated: first deprecated in macOS 10.6 [-Wdeprecated-declarations]
+ 1196 |   CMProfileRef        profileSet[1];          /* Variable. Ordered from Source -> Dest */
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:1000:41: note: 'CMProfileRef' has been explicitly marked deprecated here
+ 1000 | typedef struct OpaqueCMProfileRef*      CMProfileRef DEPRECATED_IN_MAC_OS_X_VERSION_10_6_AND_LATER;
+      |                                         ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:1203:3: warning: 'CMProfileRef' is deprecated: first deprecated in macOS 10.6 [-Wdeprecated-declarations]
+ 1203 |   CMProfileRef        profile;                /* profile */
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:1000:41: note: 'CMProfileRef' has been explicitly marked deprecated here
+ 1000 | typedef struct OpaqueCMProfileRef*      CMProfileRef DEPRECATED_IN_MAC_OS_X_VERSION_10_6_AND_LATER;
+      |                                         ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:1211:3: warning: 'NCMConcatProfileSpec' is deprecated: first deprecated in macOS 10.6 [-Wdeprecated-declarations]
+ 1211 |   NCMConcatProfileSpec  profileSpecs[1];      /* Variable. Ordered from Source -> Dest */
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:1204:3: note: 'NCMConcatProfileSpec' has been explicitly marked deprecated here
+ 1204 | } NCMConcatProfileSpec DEPRECATED_IN_MAC_OS_X_VERSION_10_6_AND_LATER;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:1302:3: warning: 'CMRGBColor' is deprecated: first deprecated in macOS 10.6 [-Wdeprecated-declarations]
+ 1302 |   CMRGBColor          rgb;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:1232:3: note: 'CMRGBColor' has been explicitly marked deprecated here
+ 1232 | } CMRGBColor DEPRECATED_IN_MAC_OS_X_VERSION_10_6_AND_LATER;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:1303:3: warning: 'CMHSVColor' is deprecated: first deprecated in macOS 10.6 [-Wdeprecated-declarations]
+ 1303 |   CMHSVColor          hsv;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:1257:3: note: 'CMHSVColor' has been explicitly marked deprecated here
+ 1257 | } CMHSVColor DEPRECATED_IN_MAC_OS_X_VERSION_10_6_AND_LATER;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:1304:3: warning: 'CMHLSColor' is deprecated: first deprecated in macOS 10.6 [-Wdeprecated-declarations]
+ 1304 |   CMHLSColor          hls;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:1251:3: note: 'CMHLSColor' has been explicitly marked deprecated here
+ 1251 | } CMHLSColor DEPRECATED_IN_MAC_OS_X_VERSION_10_6_AND_LATER;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:1306:3: warning: 'CMLabColor' is deprecated: first deprecated in macOS 10.6 [-Wdeprecated-declarations]
+ 1306 |   CMLabColor          Lab;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:1263:3: note: 'CMLabColor' has been explicitly marked deprecated here
+ 1263 | } CMLabColor DEPRECATED_IN_MAC_OS_X_VERSION_10_6_AND_LATER;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:1307:3: warning: 'CMLuvColor' is deprecated: first deprecated in macOS 10.6 [-Wdeprecated-declarations]
+ 1307 |   CMLuvColor          Luv;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:1269:3: note: 'CMLuvColor' has been explicitly marked deprecated here
+ 1269 | } CMLuvColor DEPRECATED_IN_MAC_OS_X_VERSION_10_6_AND_LATER;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:1308:3: warning: 'CMYxyColor' is deprecated: first deprecated in macOS 10.6 [-Wdeprecated-declarations]
+ 1308 |   CMYxyColor          Yxy;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:1275:3: note: 'CMYxyColor' has been explicitly marked deprecated here
+ 1275 | } CMYxyColor DEPRECATED_IN_MAC_OS_X_VERSION_10_6_AND_LATER;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:1309:3: warning: 'CMCMYKColor' is deprecated: first deprecated in macOS 10.6 [-Wdeprecated-declarations]
+ 1309 |   CMCMYKColor         cmyk;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:1239:3: note: 'CMCMYKColor' has been explicitly marked deprecated here
+ 1239 | } CMCMYKColor DEPRECATED_IN_MAC_OS_X_VERSION_10_6_AND_LATER;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:1310:3: warning: 'CMCMYColor' is deprecated: first deprecated in macOS 10.6 [-Wdeprecated-declarations]
+ 1310 |   CMCMYColor          cmy;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:1245:3: note: 'CMCMYColor' has been explicitly marked deprecated here
+ 1245 | } CMCMYColor DEPRECATED_IN_MAC_OS_X_VERSION_10_6_AND_LATER;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:1311:3: warning: 'CMGrayColor' is deprecated: first deprecated in macOS 10.6 [-Wdeprecated-declarations]
+ 1311 |   CMGrayColor         gray;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:1279:3: note: 'CMGrayColor' has been explicitly marked deprecated here
+ 1279 | } CMGrayColor DEPRECATED_IN_MAC_OS_X_VERSION_10_6_AND_LATER;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:1312:3: warning: 'CMMultichannel5Color' is deprecated: first deprecated in macOS 10.6 [-Wdeprecated-declarations]
+ 1312 |   CMMultichannel5Color  mc5;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:1283:3: note: 'CMMultichannel5Color' has been explicitly marked deprecated here
+ 1283 | } CMMultichannel5Color DEPRECATED_IN_MAC_OS_X_VERSION_10_6_AND_LATER;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:1313:3: warning: 'CMMultichannel6Color' is deprecated: first deprecated in macOS 10.6 [-Wdeprecated-declarations]
+ 1313 |   CMMultichannel6Color  mc6;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:1287:3: note: 'CMMultichannel6Color' has been explicitly marked deprecated here
+ 1287 | } CMMultichannel6Color DEPRECATED_IN_MAC_OS_X_VERSION_10_6_AND_LATER;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:1314:3: warning: 'CMMultichannel7Color' is deprecated: first deprecated in macOS 10.6 [-Wdeprecated-declarations]
+ 1314 |   CMMultichannel7Color  mc7;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:1291:3: note: 'CMMultichannel7Color' has been explicitly marked deprecated here
+ 1291 | } CMMultichannel7Color DEPRECATED_IN_MAC_OS_X_VERSION_10_6_AND_LATER;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:1315:3: warning: 'CMMultichannel8Color' is deprecated: first deprecated in macOS 10.6 [-Wdeprecated-declarations]
+ 1315 |   CMMultichannel8Color  mc8;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:1295:3: note: 'CMMultichannel8Color' has been explicitly marked deprecated here
+ 1295 | } CMMultichannel8Color DEPRECATED_IN_MAC_OS_X_VERSION_10_6_AND_LATER;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:1316:3: warning: 'CMNamedColor' is deprecated: first deprecated in macOS 10.6 [-Wdeprecated-declarations]
+ 1316 |   CMNamedColor        namedColor;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:1299:3: note: 'CMNamedColor' has been explicitly marked deprecated here
+ 1299 | } CMNamedColor DEPRECATED_IN_MAC_OS_X_VERSION_10_6_AND_LATER;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:1515:3: warning: 'CMBitmapColorSpace' is deprecated: first deprecated in macOS 10.6 [-Wdeprecated-declarations]
+ 1515 |   CMBitmapColorSpace  space;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:1507:41: note: 'CMBitmapColorSpace' has been explicitly marked deprecated here
+ 1507 | typedef UInt32                          CMBitmapColorSpace DEPRECATED_IN_MAC_OS_X_VERSION_10_6_AND_LATER;
+      |                                         ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:1584:3: warning: 'CMHandleLocation' is deprecated: first deprecated in macOS 10.6 [-Wdeprecated-declarations]
+ 1584 |   CMHandleLocation    handleLoc;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:1554:3: note: 'CMHandleLocation' has been explicitly marked deprecated here
+ 1554 | } CMHandleLocation DEPRECATED_IN_MAC_OS_X_VERSION_10_6_AND_LATER;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:1589:3: warning: 'CMPathLocation' is deprecated: first deprecated in macOS 10.6 [-Wdeprecated-declarations]
+ 1589 |   CMPathLocation      pathLoc;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:1573:3: note: 'CMPathLocation' has been explicitly marked deprecated here
+ 1573 | } CMPathLocation DEPRECATED_IN_MAC_OS_X_VERSION_10_6_AND_LATER;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:1590:3: warning: 'CMBufferLocation' is deprecated: first deprecated in macOS 10.6 [-Wdeprecated-declarations]
+ 1590 |   CMBufferLocation    bufferLoc;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:1578:3: note: 'CMBufferLocation' has been explicitly marked deprecated here
+ 1578 | } CMBufferLocation DEPRECATED_IN_MAC_OS_X_VERSION_10_6_AND_LATER;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:1595:3: warning: 'CMProfLoc' is deprecated: first deprecated in macOS 10.6 [-Wdeprecated-declarations]
+ 1595 |   CMProfLoc           u;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:1591:3: note: 'CMProfLoc' has been explicitly marked deprecated here
+ 1591 | } CMProfLoc DEPRECATED_IN_MAC_OS_X_VERSION_10_6_AND_LATER;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:1600:42: warning: 'CMProfileLocation' is deprecated: first deprecated in macOS 10.6 [-Wdeprecated-declarations]
+ 1600 |   cmCurrentProfileLocationSize  = sizeof(CMProfileLocation)
+      |                                          ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:1596:3: note: 'CMProfileLocation' has been explicitly marked deprecated here
+ 1596 | } CMProfileLocation DEPRECATED_IN_MAC_OS_X_VERSION_10_6_AND_LATER;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:1615:3: warning: 'CM2Header' is deprecated: first deprecated in macOS 10.6 [-Wdeprecated-declarations]
+ 1615 |   CM2Header           header;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:486:3: note: 'CM2Header' has been explicitly marked deprecated here
+  486 | } CM2Header DEPRECATED_IN_MAC_OS_X_VERSION_10_6_AND_LATER;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:1618:3: warning: 'CMProfileLocation' is deprecated: first deprecated in macOS 10.6 [-Wdeprecated-declarations]
+ 1618 |   CMProfileLocation   location;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:1596:3: note: 'CMProfileLocation' has been explicitly marked deprecated here
+ 1596 | } CMProfileLocation DEPRECATED_IN_MAC_OS_X_VERSION_10_6_AND_LATER;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:1622:3: warning: 'CMMakeAndModel' is deprecated: first deprecated in macOS 10.6 [-Wdeprecated-declarations]
+ 1622 |   CMMakeAndModel *    makeAndModel;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:880:3: note: 'CMMakeAndModel' has been explicitly marked deprecated here
+  880 | } CMMakeAndModel DEPRECATED_IN_MAC_OS_X_VERSION_10_6_AND_LATER;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:1623:3: warning: 'CMProfileMD5' is deprecated: first deprecated in macOS 10.6 [-Wdeprecated-declarations]
+ 1623 |   CMProfileMD5 *      digest;                 /* Derived from the RSA Data Security, Inc. MD5 Message-Digest Algorithm */
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:448:41: note: 'CMProfileMD5' has been explicitly marked deprecated here
+  448 | typedef unsigned char                   CMProfileMD5[16] DEPRECATED_IN_MAC_OS_X_VERSION_10_6_AND_LATER;
+      |                                         ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:1989:3: warning: 'CMDeviceID' is deprecated: first deprecated in macOS 10.6 [-Wdeprecated-declarations]
+ 1989 |   CMDeviceID          deviceID;               /* device ID */
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:1954:41: note: 'CMDeviceID' has been explicitly marked deprecated here
+ 1954 | typedef UInt32                          CMDeviceID DEPRECATED_IN_MAC_OS_X_VERSION_10_6_AND_LATER;
+      |                                         ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:1991:3: warning: 'CMDeviceState' is deprecated: first deprecated in macOS 10.6 [-Wdeprecated-declarations]
+ 1991 |   CMDeviceState       deviceState;            /* Device State flags */
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:1948:41: note: 'CMDeviceState' has been explicitly marked deprecated here
+ 1948 | typedef UInt32                          CMDeviceState DEPRECATED_IN_MAC_OS_X_VERSION_10_6_AND_LATER;
+      |                                         ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:1992:3: warning: 'CMDeviceProfileID' is deprecated: first deprecated in macOS 10.6 [-Wdeprecated-declarations]
+ 1992 |   CMDeviceProfileID   defaultProfileID;       /* Can change */
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:1959:41: note: 'CMDeviceProfileID' has been explicitly marked deprecated here
+ 1959 | typedef UInt32                          CMDeviceProfileID DEPRECATED_IN_MAC_OS_X_VERSION_10_6_AND_LATER;
+      |                                         ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:2005:3: warning: 'CMDeviceProfileID' is deprecated: first deprecated in macOS 10.6 [-Wdeprecated-declarations]
+ 2005 |   CMDeviceProfileID   profileID;              /* The identifier for this profile */
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:1959:41: note: 'CMDeviceProfileID' has been explicitly marked deprecated here
+ 1959 | typedef UInt32                          CMDeviceProfileID DEPRECATED_IN_MAC_OS_X_VERSION_10_6_AND_LATER;
+      |                                         ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:2006:3: warning: 'CMProfileLocation' is deprecated: first deprecated in macOS 10.6 [-Wdeprecated-declarations]
+ 2006 |   CMProfileLocation   profileLoc;             /* The profile's location */
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:1596:3: note: 'CMProfileLocation' has been explicitly marked deprecated here
+ 1596 | } CMProfileLocation DEPRECATED_IN_MAC_OS_X_VERSION_10_6_AND_LATER;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:2013:3: warning: 'CMDeviceProfileID' is deprecated: first deprecated in macOS 10.6 [-Wdeprecated-declarations]
+ 2013 |   CMDeviceProfileID   profileID;              /* The identifier for this profile */
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:1959:41: note: 'CMDeviceProfileID' has been explicitly marked deprecated here
+ 1959 | typedef UInt32                          CMDeviceProfileID DEPRECATED_IN_MAC_OS_X_VERSION_10_6_AND_LATER;
+      |                                         ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:2014:3: warning: 'CMProfileLocation' is deprecated: first deprecated in macOS 10.6 [-Wdeprecated-declarations]
+ 2014 |   CMProfileLocation   profileLoc;             /* The profile's location */
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:1596:3: note: 'CMProfileLocation' has been explicitly marked deprecated here
+ 1596 | } CMProfileLocation DEPRECATED_IN_MAC_OS_X_VERSION_10_6_AND_LATER;
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:2016:3: warning: 'CMDeviceProfileScope' is deprecated: first deprecated in macOS 10.6 [-Wdeprecated-declarations]
+ 2016 |   CMDeviceProfileScope  profileScope;         /* The scope this profile applies to */
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:1980:18: note: 'CMDeviceProfileScope' has been explicitly marked deprecated here
+ 1980 | } CMDeviceScope, CMDeviceProfileScope DEPRECATED_IN_MAC_OS_X_VERSION_10_6_AND_LATER;
+      |                  ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:2028:3: warning: 'CMDeviceProfileInfo' is deprecated: first deprecated in macOS 10.6 [-Wdeprecated-declarations]
+ 2028 |   CMDeviceProfileInfo  profiles[1];           /* The profile info records */
+      |   ^
+/ix/store/6nNyzx2ZBWkyKTXF-lib-darwin-c-phracker/System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/ColorSyncDeprecated.h:2009:3: note: 'CMDeviceProfileInfo' has been explicitly marked deprecated here
+ 2009 | } CMDeviceProfileInfo DEPRECATED_IN_MAC_OS_X_VERSION_10_6_AND_LATER;
+      |   ^
+128 warnings and 8 errors generated.
+[60/88] Compiling C++ object src/libharfbuzz.a.p/hb-style.cc.o
+[61/88] Compiling C++ object src/libharfbuzz.a.p/hb-ot-font.cc.o
+[62/88] Compiling C++ object src/libharfbuzz.a.p/hb-ft.cc.o
+[63/88] Compiling C++ object src/libharfbuzz.a.p/hb-ot-shape-fallback.cc.o
+[64/88] Compiling C++ object src/libharfbuzz-subset.a.p/hb-subset-input.cc.o
+[65/88] Compiling C++ object src/libharfbuzz.a.p/hb-ot-shaper-arabic.cc.o
+[60/92] Compiling C++ object src/libharfbuzz.a.p/hb-style.cc.o
+[61/92] Compiling C++ object src/libharfbuzz.a.p/hb-ot-shape-fallback.cc.o
+[62/92] Compiling C++ object src/libharfbuzz.a.p/hb-ot-font.cc.o
+[66/88] Compiling C++ object src/libharfbuzz-subset.a.p/hb-subset-cff-common.cc.o
+[63/92] Compiling C++ object src/libharfbuzz.a.p/hb-ft.cc.o
+[67/88] Compiling C++ object src/libharfbuzz-subset.a.p/hb-ot-cff1-table.cc.o
+[64/92] Compiling C++ object src/libharfbuzz-subset.a.p/hb-subset-input.cc.o
+[68/88] Compiling C++ object src/libharfbuzz-subset.a.p/hb-ot-cff2-table.cc.o
+[65/92] Compiling C++ object src/libharfbuzz.a.p/hb-ot-shaper-arabic.cc.o
+[66/92] Compiling C++ object src/libharfbuzz-subset.a.p/hb-subset-cff-common.cc.o
+[69/88] Compiling C++ object src/libharfbuzz.a.p/hb-static.cc.o
+[67/92] Compiling C++ object src/libharfbuzz-subset.a.p/hb-ot-cff2-table.cc.o
+[68/92] Compiling C++ object src/libharfbuzz-subset.a.p/hb-ot-cff1-table.cc.o
+[69/92] Compiling C++ object src/libharfbuzz.a.p/hb-static.cc.o
+[70/88] Compiling C++ object src/libharfbuzz-subset.a.p/hb-subset-cff2.cc.o
+[71/88] Compiling C++ object src/libharfbuzz-subset.a.p/hb-static.cc.o
+[70/92] Compiling C++ object src/libharfbuzz-subset.a.p/hb-static.cc.o
+[72/88] Compiling C++ object src/libharfbuzz-subset.a.p/hb-subset-cff1.cc.o
+[71/92] Compiling C++ object src/libharfbuzz-subset.a.p/hb-subset-cff2.cc.o
+[72/92] Compiling C++ object src/libharfbuzz-subset.a.p/hb-subset-cff1.cc.o
+[73/88] Compiling C++ object src/libharfbuzz.a.p/hb-ot-layout.cc.o
+ninja: build stopped: subcommand failed.
+[91msubcommand error: [/ix/store/MI5BrAAfdDXctjE8-lib-harfbuzz-bootstrap/touch sh -s] failed with exit status 1[0m
+CalledProcessError: Command '['/bin/sudo', '/bin/flock', '-x', '/ix', '/bin/chrt', '-i', '0', '/bin/nice', '-n', '20', '/bin/su', '-s', '/bin/bin_ix/assemble', 'ix']' returned non-zero exit status 2.
+/bin/sudo /bin/flock -x /ix /bin/chrt -i 0 /bin/nice -n 20 /bin/su -s /bin/bin_ix/assemble ix failed
