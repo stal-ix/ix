@@ -7,7 +7,7 @@ import kuroko as sys
 def it_args():
     for x in sys.argv[1:]:
         if x:
-            if x[0] == '@':
+            if x[0] == '@' and '.dylib' not in x:
                 yield from fileio.open(x[1:], 'r').read().split()
             elif x.startswith('-o/'):
                 yield '-o'
@@ -40,7 +40,13 @@ def flt_args():
         if x.startswith('/usr/lib') and '.so' in x:
             continue
 
+        if x.startswith('/usr/lib') and '.dylib' in x:
+            continue
+
         if x.startswith('/lib') and '.so' in x:
+            continue
+
+        if x.startswith('/lib') and '.dylib' in x:
             continue
 
         yield x
@@ -106,6 +112,9 @@ def link(objs):
             continue
 
         if '.so' in x:
+            return link1(x, objs)
+
+        if '.dylib' in x:
             return link1(x, objs)
 
 def retry(args):

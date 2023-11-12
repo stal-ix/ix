@@ -21,5 +21,6 @@ wrap_cc
 {% block install %}
 {{super()}}
 sed -e 's|libuv.so.1.0.0|libuv.a|' \
+    -e 's|libuv.1.0.0.dylib|libuv.a|' \
     -i ${out}/lib/cmake/libuv/libuvConfig-release.cmake
 {% endblock %}

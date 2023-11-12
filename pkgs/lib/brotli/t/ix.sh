@@ -10,10 +10,6 @@ lib/c
 {% endblock %}
 
 {% block cmake_flags %}
-{% if not native %}
-# TODO(pg): move to cmake.sh
-CMAKE_SYSTEM_NAME={{target.cmake_system_name}}
-{% endif %}
 BROTLI_SHARED_LIBS=
 BROTLI_DISABLE_TESTS=ON
 {% endblock %}

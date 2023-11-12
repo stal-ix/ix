@@ -65,6 +65,9 @@ SITE=ix
 {% if not boot %}
 UNIX=1
 __UNIX_PATHS_INCLUDED=1
+{% if not native %}
+CMAKE_SYSTEM_NAME={{target.cmake_system_name}}
+{% endif %}
 {% endif %}
 {% block cmake_flags %}
 {% endblock %}

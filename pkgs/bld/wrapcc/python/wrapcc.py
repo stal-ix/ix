@@ -58,6 +58,9 @@ def link(objs):
         if '.so' in x:
             link1(x, objs)
 
+        if '.dylib' in x:
+            link1(x, objs)
+
 def retry(args):
     return subprocess.check_call(args)
 
