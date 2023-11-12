@@ -34,3 +34,8 @@ noinst_LTLIBRARIES = libunistring.la
 libunistring_la_SOURCES =
 EOF
 {% endblock %}
+
+{% block configure %}
+{{super()}}
+sed -e 's|\[\[__maybe_unused__\]\]||g' -i config.h
+{% endblock %}
