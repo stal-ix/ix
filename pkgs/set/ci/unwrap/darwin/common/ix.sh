@@ -1,6 +1,10 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
+bin/byacc
+bin/make
+bin/ninja
+bin/pkg/config
 bin/python/12
 bin/dropbear/stock
 bin/curl
