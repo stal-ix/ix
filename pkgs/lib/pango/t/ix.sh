@@ -16,6 +16,13 @@ lib/execinfo
 lib/fontconfig
 {% endblock %}
 
+{% block build_flags %}
+{% if darwin %}
+# too much -Werrors
+shut_up
+{% endif %}
+{% endblock %}
+
 {% block bld_tool %}
 bld/glib
 {% endblock %}

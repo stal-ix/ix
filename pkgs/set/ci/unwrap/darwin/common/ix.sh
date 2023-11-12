@@ -1,6 +1,7 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
+bin/convert
 bin/cmake
 bin/bash/3
 bin/bash/5
