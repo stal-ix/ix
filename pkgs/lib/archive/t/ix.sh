@@ -15,11 +15,3 @@ ENABLE_TEST=OFF
 {% block bld_libs %}
 lib/shim/fake(lib_name=gcc)
 {% endblock %}
-
-{% block build_flags %}
-wrap_cc
-{% endblock %}
-
-{% block bld_tool %}
-bld/wrapcc
-{% endblock %}
