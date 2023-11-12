@@ -24,6 +24,9 @@ lib/c
 {% endblock %}
 
 {% block bld_tool %}
+{% if x86_64 %}
+bin/nasm
+{% endif %}
 bld/fakegit
 {% endblock %}
 
