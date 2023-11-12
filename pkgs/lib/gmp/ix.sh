@@ -22,3 +22,9 @@ bld/texinfo
 {% block env %}
 export COFLAGS="--with-gmp=${out} --with-libgmp-prefix=${out} \${COFLAGS}"
 {% endblock %}
+
+{% block configure_flags %}
+{% if darwin %}
+--disable-assembly
+{% endif %}
+{% endblock %}

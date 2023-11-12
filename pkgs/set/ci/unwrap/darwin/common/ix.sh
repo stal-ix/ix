@@ -1,5 +1,9 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
-bin/mpv/unwrap(lua_ver=jit,ffmpeg_ver=6)
+bin/bash/3
+bin/bash/5
+set/box/gnu
+set/compress
+bin/coreutils
 {% endblock %}

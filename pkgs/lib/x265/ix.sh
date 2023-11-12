@@ -12,6 +12,11 @@ cd source
 
 {% block cmake_flags %}
 ENABLE_SHARED=OFF
+{% if x86_64 %}
+ENABLE_ASSEMBLY=ON
+{% else %}
+ENABLE_ASSEMBLY=OFF
+{% endif %}
 {% endblock %}
 
 {% block lib_deps %}
@@ -19,6 +24,9 @@ lib/c
 {% endblock %}
 
 {% block bld_tool %}
+{% if x86_64 %}
+bin/nasm
+{% endif %}
 bld/fakegit
 {% endblock %}
 

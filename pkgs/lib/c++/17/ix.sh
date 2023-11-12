@@ -71,6 +71,12 @@ export CPPFLAGS="-isystem ${PWD}/clang/lib/Headers ${CPPFLAGS}"
 
 {% block patch %}
 {{super()}}
+{% if darwin %}
+# or else we break on weak symbol, implemented in cxa_thread_exit.cpp
+cat << EOF >> libcxxabi/src/cxa_guard.cpp
+void* __cxa_thread_atexit_impl;
+EOF
+{% endif %}
 sed -e 's|.*define _LIBCPP_ABI_ALTERNATE_STRING_LAYOUT.*||' -i libcxx/include/__config
 cat libcxx/CMakeLists.txt \
     | grep -v 'is reserved for use by libc' \
@@ -83,6 +89,9 @@ cd ${out}
 mv include/c++/v1/* include/
 # clash with HP unwind
 mv ${out}/lib/libunwind.a ${out}/lib/libc++unwind.a
+{% if darwin %}
+llvm-objcopy --redefine-sym ___muloti4=___libcplpl_muloti4 ${out}/lib/libc++.a
+{% endif %}
 {% endblock %}
 
 {% block test %}

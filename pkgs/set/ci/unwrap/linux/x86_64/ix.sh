@@ -1,6 +1,7 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
+bin/uasm
 bin/celluloid
 bin/less/gnu
 bin/kitty
@@ -790,7 +791,7 @@ bin/tex/info
 bin/feather/pad
 bin/hunspell
 bin/geany
-bin/code/lite
+#bin/code/lite
 bin/dash/sh/old
 bin/dash/sh
 bin/dash

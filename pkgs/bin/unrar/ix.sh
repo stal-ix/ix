@@ -1,8 +1,8 @@
 {% extends '//die/c/make.sh' %}
 
 {% block fetch %}
-https://www.rarlab.com/rar/unrarsrc-6.2.12.tar.gz
-sha:a008b5f949bca9bb4ffa1bebbfc8b3c14b89df10a10354809b845232d5f582e5
+https://www.rarlab.com/rar/unrarsrc-7.0.2.tar.gz
+sha:596a61a66e138b08c68382982eeb5f2a8efa2bbd05969edfb7d0e5d8b4bcf23e
 {% endblock %}
 
 {% block bld_libs %}
@@ -12,6 +12,7 @@ lib/c++
 
 {% block make_flags %}
 -f makefile
+CXXFLAGS=
 {% endblock %}
 
 {% block install %}

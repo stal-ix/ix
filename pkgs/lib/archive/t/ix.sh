@@ -8,7 +8,10 @@ sha:63b40acff57467f7d3a64981d4bcff60b52f539fae7688aaaaee27a448b10266
 {% block cmake_flags %}
 ENABLE_UNZIP=OFF
 ENABLE_OPENSSL=OFF
-ENABLE_LIBGCC=OFF
 ENABLE_LIBXML2=OFF
 ENABLE_TEST=OFF
+{% endblock %}
+
+{% block bld_libs %}
+lib/shim/fake(lib_name=gcc)
 {% endblock %}

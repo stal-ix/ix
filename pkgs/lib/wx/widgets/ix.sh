@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/wxWidgets/wxWidgets/releases/download/v3.2.3/wxWidgets-3.2.3.tar.bz2
-sha:c170ab67c7e167387162276aea84e055ee58424486404bba692c401730d1a67a
+https://github.com/wxWidgets/wxWidgets/releases/download/v3.2.4/wxWidgets-3.2.4.tar.bz2
+sha:0640e1ab716db5af2ecb7389dbef6138d7679261fbff730d23845ba838ca133e
 {% endblock %}
 
 {% block lib_deps %}

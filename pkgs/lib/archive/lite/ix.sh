@@ -1,20 +1,11 @@
-{% extends '//lib/archive/t/ix.sh' %}
-
-{% block lib_deps %}
-lib/c
-lib/z
-lib/xz
-lib/bzip/2
-{% endblock %}
+{% extends 't/ix.sh' %}
 
 {% block cmake_flags %}
 {{super()}}
-ENABLE_LZ4=OFF
-ENABLE_ZSTD=OFF
-ENABLE_EXPAT=OFF
-ENABLE_ICONV=OFF
-ENABLE_LIBB2=OFF
-ENABLE_PCREPOSIX=OFF
+ENABLE_UNZIP=OFF
+ENABLE_CPIO=OFF
+ENABLE_CAT=OFF
+ENABLE_TAR=OFF
 {% endblock %}
 
 {% block test %}

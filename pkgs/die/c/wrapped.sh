@@ -19,4 +19,5 @@ EOF
     chmod +x ${name}
 done
 {% endif %}
-{{super()}}{% endblock %}
+{{super()}}
+{% endblock %}
