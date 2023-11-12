@@ -20,11 +20,6 @@ def flt_args(argv):
         if '-D-pthread' in x:
             continue
 
-        if '-Wl,--version' in x:
-            pass
-        elif x.startswith('-Wl,'):
-            continue
-
         if x.startswith('-L/usr/'):
             continue
 
