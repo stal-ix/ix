@@ -15,8 +15,8 @@ def it_args():
             else:
                 yield x
 
-def flt_args():
-    for x in it_args():
+def flt_args(argv):
+    for x in argv:
         if '-D-pthread' in x:
             continue
 
@@ -58,13 +58,16 @@ def replace(lst, x, y):
         else:
             yield el
 
-let args = list(replace(flt_args(), '-Ur', '-r'))
+def calc_args(argv):
+    let args = list(replace(flt_args(argv), '-Ur', '-r'))
 
-if '-r' in args:
-    args = ['ld.lld'] + args[1:]
+    if '-r' in args:
+        args = ['ld.lld'] + args[1:]
 
-def flt_objs():
-    for x in args:
+    return args
+
+def flt_objs(argv):
+    for x in argv:
         if x.endswith('.o'):
             yield x
         elif '/store/' in x:
@@ -72,7 +75,7 @@ def flt_objs():
         elif x.endswith('.a'):
             yield x
 
-def have_objs():
+def have_objs(args):
     for x in args:
         if x.endswith('.o'):
             return True
@@ -106,7 +109,7 @@ def link1(x, objs):
         with fileio.open(x, 'w') as f:
             pass
 
-def link(objs):
+def link(objs, args):
     for x in args:
         if '-Wl' in x:
             continue
@@ -127,22 +130,25 @@ def calc_program(args):
     return args[0]
 
 def main():
-    let sa = str(args)
+    let raw_args = list(it_args())
 
-    if '--print-search-dirs' in args:
+    if '--print-search-dirs' in raw_args:
         return
 
-    if '-print-search-dirs' in args:
+    if '-print-search-dirs' in raw_args:
         return
 
-    if '-print-multi-os-directory' in args:
+    if '-print-multi-os-directory' in raw_args:
         return
+
+    let sa = str(raw_args)
+    let args = calc_args(raw_args)
 
     if '-c' in args:
         pass
     elif '-shared' in sa or '--soname' in sa:
-        return link(list(flt_objs()))
-    elif have_objs():
+        return link(list(flt_objs(args)), args)
+    elif have_objs(args):
         if '-rdynamic' in sa or '-export-dynamic' in sa:
             return retry(['dynlink'] + args)
 
