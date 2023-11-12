@@ -24,5 +24,5 @@ wrap_cc
 {% block install %}
 {{super()}}
 cd ${out}/lib
-mv libasmjit.so libasmjit.a
+mv libasmjit.{{target.dl_suffix}} libasmjit.a
 {% endblock %}
