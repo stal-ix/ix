@@ -14,3 +14,9 @@ lib/tom/math
 USE_LTM
 LTM_DESC
 {% endblock %}
+
+{% block build_flags %}
+{% if darwin %}
+shut_up
+{% endif %}
+{% endblock %}

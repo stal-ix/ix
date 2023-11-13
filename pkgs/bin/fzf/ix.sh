@@ -1,11 +1,16 @@
 {% extends '//die/go/pure.sh' %}
 
 {% block go_url %}
-https://github.com/junegunn/fzf/archive/refs/tags/0.43.0.tar.gz
+https://github.com/junegunn/fzf/archive/refs/tags/0.44.0.tar.gz
 {% endblock %}
 
 {% block go_sha %}
-417014bf5740c6bb4a2ad6b461d1ddaaafcbcd7943ce5d64e4a567d4840405c0
+fe3cff5291dba58f4fb6deff73b92d52f989afcd224eeb94544f3b5ec0e60b4a
+{% endblock %}
+
+{% block go_refine %}
+sed -e 's|go 1.17|go 1.21|' -i go.mod
+go mod tidy -compat=1.21
 {% endblock %}
 
 {% block install %}

@@ -10,10 +10,17 @@ lib/c
 {% endblock %}
 
 {% block bld_tool %}
+{% if x86_64 %}
 bin/nasm
+{% endif %}
+{% if darwin %}
+bld/cctools
+{% endif %}
 {% endblock %}
 
 {% block cmake_flags %}
+{% if x86_64 %}
 ENABLE_NASM=ON
+{% endif %}
 REPRODUCIBLE_BUILDS=ON
 {% endblock %}

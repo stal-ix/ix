@@ -27,6 +27,9 @@ lib/c
 {% if x86_64 %}
 bin/nasm
 {% endif %}
+{% if darwin %}
+bld/cctools
+{% endif %}
 bld/fakegit
 {% endblock %}
 

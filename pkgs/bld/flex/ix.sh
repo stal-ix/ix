@@ -2,5 +2,5 @@
 
 {% block run_deps %}
 bld/m4
-bin/flex(std_box=bld/boot/box,intl_ver=no)
+bld/flex/native(std_box=bld/boot/box,intl_ver=no)
 {% endblock %}

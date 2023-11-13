@@ -14,7 +14,7 @@ export CPPFLAGS="-I${out}/include/pixman-1 \${CPPFLAGS}"
 {% endblock %}
 
 {% block meson_flags %}
-{% if aarch64 %}
+{% if aarch64 or arm64 %}
 gnu-inline-asm=disabled
 arm-simd=disabled
 neon=disabled

@@ -18,6 +18,9 @@ bld/perl
 {% if x86_64 %}
 bin/nasm
 {% endif %}
+{% if darwin %}
+bld/cctools
+{% endif %}
 {% endblock %}
 
 {% block cmake_flags %}

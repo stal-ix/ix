@@ -1,4 +1,4 @@
-{% extends '//bin/flex/ix.sh' %}
+{% extends '//bin/flex/t/ix.sh' %}
 
 {% block run_deps %}
 bld/boot/9/m4
