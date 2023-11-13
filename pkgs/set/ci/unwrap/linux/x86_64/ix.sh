@@ -1,6 +1,7 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
+bin/qemacs
 bin/uasm
 bin/celluloid
 bin/less/gnu
