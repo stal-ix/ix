@@ -12,7 +12,7 @@ bin/byacc
 bin/make
 bin/ninja
 bin/pkg/config
-#bin/python/12
+bin/python/12
 bin/dropbear/stock
 bin/curl
 bin/convert

@@ -43,6 +43,9 @@ EOF
 
 cat Modules/Setup \
     | python3 fix.py      \
+{% if darwin %}
+    | sed -e 's|cfield.c|cfield.c _ctypes/malloc_closure.c|' \
+{% endif %}
     | grep -v capi        \
     | grep -v nis         \
     | grep -v spwd        \
