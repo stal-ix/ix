@@ -34,3 +34,8 @@ _GNU_SOURCE=1
 {% block patch %}
 sed -e 's|.*error.*exh.*||' -i lib/xalloc-die.c
 {% endblock %}
+
+{% block configure %}
+{{super()}}
+sed -e 's|\[\[__maybe_unused__\]\]||g' -i src/config.h
+{% endblock %}
