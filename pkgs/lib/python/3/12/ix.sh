@@ -10,7 +10,6 @@ lib/dlfcn
 {% block bld_tool %}
 bld/python/12
 bld/pip/scripts
-bld/fake/er(tool_name=ld)
 {{super()}}
 {% endblock %}
 
@@ -30,6 +29,10 @@ sed -e 's|MACHDEP=.*unknown.*|:|' \
 {% block configure %}
 export READELF=llvm-readelf
 export MACHDEP={{target.os}}
+export ac_sys_system={{target.cmake_system_name}}
+export ac_sys_release=
+export ac_md_system=${ac_sys_system}
+export ac_md_release=${ac_sys_release}
 export ac_cv_file__dev_ptc=no
 export ac_cv_file__dev_ptmx=yes
 {{super()}}
