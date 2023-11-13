@@ -1499,6 +1499,7 @@ https://www.rarlab.com/rar/unrarsrc-6.2.10.tar.gz
 https://www.rarlab.com/rar/unrarsrc-6.2.11.tar.gz
 https://www.rarlab.com/rar/unrarsrc-6.2.12.tar.gz
 https://www.rarlab.com/rar/unrarsrc-7.0.2.tar.gz
+https://www.rarlab.com/rar/unrarsrc-7.0.3.tar.gz
 https://www.stunnel.org/downloads/stunnel-5.70.tar.gz
 https://www.stunnel.org/downloads/stunnel-5.71.tar.gz
 https://www.tcpdump.org/release/libpcap-1.10.4.tar.gz
