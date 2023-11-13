@@ -25,3 +25,8 @@ export ac_cv_rettype_minor=int
 export ac_cv_rettype_major=int
 export CFLAGS="-fcommon ${CFLAGS}"
 {% endblock %}
+
+{% block configure %}
+{{super()}}
+sed -e 's|\[\[__maybe_unused__\]\]||' -i config.h
+{% endblock %}
