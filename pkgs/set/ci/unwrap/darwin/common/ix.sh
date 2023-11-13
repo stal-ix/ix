@@ -1,6 +1,7 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
+bin/cpio
 bin/bison/3/7
 bin/bison/3/6
 bin/bison/3/8
