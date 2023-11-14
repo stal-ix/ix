@@ -786,6 +786,7 @@ https://github.com/klange/bim/archive/refs/tags/v3.1.0.tar.gz
 https://github.com/knik0/faac/archive/refs/tags/1_30.tar.gz
 https://github.com/knik0/faad2/archive/refs/tags/2.10.1.tar.gz
 https://github.com/knik0/faad2/archive/refs/tags/2.11.0.tar.gz
+https://github.com/knik0/faad2/archive/refs/tags/2.11.1.tar.gz
 https://github.com/kondrak/vkQuake2/archive/refs/tags/1.5.8.tar.gz
 https://github.com/kovidgoyal/kitty/archive/refs/tags/v0.25.0.tar.gz
 https://github.com/kovidgoyal/kitty/archive/refs/tags/v0.31.0.tar.gz
