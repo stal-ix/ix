@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/rui314/mold/archive/refs/tags/v2.3.2.tar.gz
-sha:db172c0e97606565a81e37995bf5c911606d3f3b9f3829e92cd26985c9b0ed3b
+https://github.com/rui314/mold/archive/refs/tags/v2.3.3.tar.gz
+sha:dcba90d5ee852ececb3a1a70110bb2d385079dcd1aa103e970296683c642f856
 {% endblock %}
 
 {% block bld_libs %}
