@@ -361,6 +361,7 @@ https://git.sr.ht/~leon_plickat/lavalauncher/archive/v2.1.1.tar.gz
 https://git.sr.ht/~leon_plickat/wlopm/archive/v0.1.0.tar.gz
 https://git.sr.ht/~mcf/samurai/refs/download/1.2/samurai-1.2.tar.gz
 https://git.sr.ht/~mil/lisgd/archive/0.3.7.tar.gz
+https://git.sr.ht/~mil/lisgd/archive/0.4.0.tar.gz
 https://git.sr.ht/~sircmpwn/scdoc/archive/1.11.2.tar.gz
 https://git.sr.ht/~sircmpwn/wev/archive/1.0.0.tar.gz
 https://github.com/AOMediaCodec/libavif/archive/refs/tags/v1.0.1.tar.gz
@@ -974,6 +975,7 @@ https://github.com/pg83/sbase/archive/refs/tags/v1.tar.gz
 https://github.com/pg83/shutil/archive/refs/tags/v1.tar.gz
 https://github.com/pg83/ted/archive/refs/tags/v6.tar.gz
 https://github.com/phillipberndt/pqiv/archive/refs/tags/2.12.tar.gz
+https://github.com/phracker/MacOSX-SDKs/releases/download/11.3/MacOSX11.0.sdk.tar.xz
 https://github.com/phracker/MacOSX-SDKs/releases/download/11.3/MacOSX11.3.sdk.tar.xz
 https://github.com/pkgconf/pkgconf/archive/refs/tags/pkgconf-2.0.2.tar.gz
 https://github.com/pkgconf/pkgconf/archive/refs/tags/pkgconf-2.0.3.tar.gz
@@ -1112,6 +1114,7 @@ https://github.com/telegramdesktop/tdesktop/releases/download/v4.11.2/tdesktop-4
 https://github.com/telegramdesktop/tdesktop/releases/download/v4.11.3/tdesktop-4.11.3-full.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v4.11.5/tdesktop-4.11.5-full.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v4.11.6/tdesktop-4.11.6-full.tar.gz
+https://github.com/telegramdesktop/tdesktop/releases/download/v4.11.7/tdesktop-4.11.7-full.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v4.8.10/tdesktop-4.8.10-full.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v4.8.12/tdesktop-4.8.12-full.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v4.9.0/tdesktop-4.9.0-full.tar.gz
@@ -1233,6 +1236,7 @@ https://gitlab.freedesktop.org/cairo/cairo/-/archive/1.18.0/cairo-1.18.0.tar.bz2
 https://gitlab.freedesktop.org/freetype/freetype-demos/-/archive/VER-2-13-0/freetype-demos-VER-2-13-0.tar.bz2
 https://gitlab.freedesktop.org/gstreamer/gstreamer/-/archive/1.22.5/gstreamer-1.22.5.tar.gz
 https://gitlab.freedesktop.org/gstreamer/gstreamer/-/archive/1.22.6/gstreamer-1.22.6.tar.gz
+https://gitlab.freedesktop.org/gstreamer/gstreamer/-/archive/1.22.7/gstreamer-1.22.7.tar.gz
 https://gitlab.freedesktop.org/libdecor/libdecor/-/archive/0.2.0/libdecor-0.2.0.tar.bz2
 https://gitlab.freedesktop.org/libfprint/libfprint/-/archive/v1.94.5/libfprint-v1.94.5.tar.bz2
 https://gitlab.freedesktop.org/libinput/libei/-/archive/1.1.0/libei-1.1.0.tar.bz2
@@ -1495,6 +1499,7 @@ https://www.rarlab.com/rar/unrarsrc-6.2.10.tar.gz
 https://www.rarlab.com/rar/unrarsrc-6.2.11.tar.gz
 https://www.rarlab.com/rar/unrarsrc-6.2.12.tar.gz
 https://www.rarlab.com/rar/unrarsrc-7.0.2.tar.gz
+https://www.rarlab.com/rar/unrarsrc-7.0.3.tar.gz
 https://www.stunnel.org/downloads/stunnel-5.70.tar.gz
 https://www.stunnel.org/downloads/stunnel-5.71.tar.gz
 https://www.tcpdump.org/release/libpcap-1.10.4.tar.gz
