@@ -1,8 +1,8 @@
 {% extends '//die/c/autohell.sh' %}
 
 {% block fetch %}
-http://www.dest-unreach.org/socat/download/socat-1.7.4.4.tar.gz
-sha:0f8f4b9d5c60b8c53d17b60d79ababc4a0f51b3bb6d2bd3ae8a6a4b9d68f195e
+http://www.dest-unreach.org/socat/download/socat-1.8.0.0.tar.gz
+sha:6010f4f311e5ebe0e63c77f78613d264253680006ac8979f52b0711a9a231e82
 {% endblock %}
 
 {% block bld_libs %}
