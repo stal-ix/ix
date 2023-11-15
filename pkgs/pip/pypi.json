@@ -108,6 +108,10 @@
         "md5": "760e64c3188d08823a392b29aaef02f6",
         "url": "https://files.pythonhosted.org/packages/ab/c3/57f0601a2d4fe15de7a553c00adbc901425661bf048f2a22dfc500caf121/packaging-23.1-py3-none-any.whl"
     },
+    "palettable/ix.sh": {
+        "md5": "79ab1de62d5928241dbb0a6f9f5cb756",
+        "url": "https://files.pythonhosted.org/packages/cf/f7/3367feadd4ab56783b0971c9b7edfbdd68e0c70ce877949a5dd2117ed4a0/palettable-3.3.3-py2.py3-none-any.whl"
+    },
     "pycparser/ix.sh": {
         "md5": "763d265dfc20860dfbb4c81458400d03",
         "url": "https://files.pythonhosted.org/packages/62/d5/5f610ebe421e85889f2e55e33b7f9a6795bd982198517d912eb1c76e1a53/pycparser-2.21-py2.py3-none-any.whl"

@@ -59,6 +59,6 @@ def gen_pkg(rec):
 
 def serve(x):
     try:
-        return gen_pkg(PYPI[x])
+        return gen_pkg(PYPI[x.replace('/t/ix.sh', '/ix.sh')])
     except KeyError:
         raise FileNotFoundError(x)
