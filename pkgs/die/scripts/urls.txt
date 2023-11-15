@@ -1364,6 +1364,7 @@ https://mplayerhq.hu/MPlayer/releases/MPlayer-1.5.tar.xz
 https://mupdf.com/downloads/archive/mupdf-1.23.3-source.tar.gz
 https://mupdf.com/downloads/archive/mupdf-1.23.4-source.tar.gz
 https://mupdf.com/downloads/archive/mupdf-1.23.5-source.tar.gz
+https://mupdf.com/downloads/archive/mupdf-1.23.6-source.tar.gz
 https://nav.dl.sourceforge.net/project/sbcl/sbcl/2.2.1/sbcl-2.2.1-source.tar.bz2
 https://nav.dl.sourceforge.net/project/sbcl/sbcl/2.3.7/sbcl-2.3.7-source.tar.bz2
 https://nav.dl.sourceforge.net/project/sbcl/sbcl/2.3.9/sbcl-2.3.9-source.tar.bz2
