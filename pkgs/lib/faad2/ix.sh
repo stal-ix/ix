@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/knik0/faad2/archive/refs/tags/2.11.0.tar.gz
-sha:720c1dc404439e0a9117aa144dc7ead56f1658adf4badbb39f959d6ad8eed489
+https://github.com/knik0/faad2/archive/refs/tags/2.11.1.tar.gz
+sha:72dbc0494de9ee38d240f670eccf2b10ef715fd0508c305532ca3def3225bb06
 {% endblock %}
 
 {% block lib_deps %}
