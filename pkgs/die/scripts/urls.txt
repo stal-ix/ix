@@ -543,6 +543,7 @@ https://github.com/ar-/incron/archive/refs/tags/0.5.12.tar.gz
 https://github.com/archlinux/svntogit-community/archive/515367ae9616cb3fa53eaf041634dd6e0637a774.tar.gz
 https://github.com/argp-standalone/argp-standalone/archive/refs/tags/1.5.0.tar.gz
 https://github.com/aria2/aria2/archive/refs/tags/release-1.36.0.tar.gz
+https://github.com/aria2/aria2/archive/refs/tags/release-1.37.0.tar.gz
 https://github.com/aristocratos/btop/archive/refs/tags/v1.2.0.tar.gz
 https://github.com/artemsen/swayimg/archive/refs/tags/v1.12.tar.gz
 https://github.com/arvidn/libtorrent/releases/download/v2.0.9/libtorrent-rasterbar-2.0.9.tar.gz
