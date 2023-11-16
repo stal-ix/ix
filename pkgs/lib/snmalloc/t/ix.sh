@@ -7,6 +7,7 @@ sha:de1bfb86407d5aac9fdad88319efdd5593ca2f6c61fc13371c4f34aee0b6664f
 
 {% block lib_deps %}
 lib/c/naked
+lib/reallocarray
 {% endblock %}
 
 {% block build_flags %}
