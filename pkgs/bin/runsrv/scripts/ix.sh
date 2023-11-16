@@ -7,5 +7,9 @@ base64 -d << EOF > srv
 {% include 'srv/base64' %}
 EOF
 
-chmod +x srv
+base64 -d << EOF > logged
+{% include 'logged/base64' %}
+EOF
+
+chmod +x *
 {% endblock %}

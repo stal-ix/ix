@@ -2,7 +2,7 @@
 
 cd /var/run
 
-mkdir -p ${1}/stdout
+mkdir -p ${1}/std
 cd ${1}
 
 shift
@@ -13,7 +13,6 @@ P=/sys/fs/cgroup/${PP}
 (
 set -xue
 
-date
 mkdir ${P}
 
 echo ${PP} > ${P}/cgroup.procs
@@ -24,7 +23,7 @@ cleanup() (
 
 trap cleanup TERM INT EXIT
 
-flock lock ${@} &
+flock lock /bin/logged std ${@} &
 
 wait
-) 2>&1 >> stdout/out
+) 2>&1 >> std/err

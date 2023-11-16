@@ -1,0 +1,7 @@
+#!/bin/sh
+
+set -xue
+date
+D=${1}
+shift
+${@} 2>&1 | tinylog ${D}
