@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/c-ares/c-ares/archive/refs/tags/cares-1_21_0.tar.gz
-sha:ca92c84b3df3dc78ed0a5f32de5589e06469ca1c1af7b5a6d8e5e970b53ab5fd
+https://github.com/c-ares/c-ares/archive/refs/tags/cares-1_22_0.tar.gz
+sha:fc2f388bad8d96870af775f0e80c9940abb0764fd69917830c52bd470037f052
 {% endblock %}
 
 {% block lib_deps %}

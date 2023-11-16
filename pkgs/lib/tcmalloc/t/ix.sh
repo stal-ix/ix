@@ -35,4 +35,5 @@ ar qL ${out}/lib/libtcmalloc_minimal.a $(find ${tmp}/obj -type f -name '*.a')
 
 {% block env %}
 export ac_cv_func_malloc_0_nonnull=yes
+export ac_cv_func_realloc_0_nonnull=yes
 {% endblock %}

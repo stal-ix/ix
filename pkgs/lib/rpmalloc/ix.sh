@@ -44,4 +44,5 @@ sed -e 's|if not .*|if 0:|' -i configure.py
 
 {% block env %}
 export ac_cv_func_malloc_0_nonnull=yes
+export ac_cv_func_realloc_0_nonnull=yes
 {% endblock %}

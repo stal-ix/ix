@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://www.kernel.org/pub/linux/kernel/people/kdave/btrfs-progs/btrfs-progs-v6.6.tar.xz
-sha:96792995eefb2eaae051c2ce3b5609b7e9bb2c1a5cb83fe69f92f1101b54b869
+https://www.kernel.org/pub/linux/kernel/people/kdave/btrfs-progs/btrfs-progs-v6.6.2.tar.xz
+sha:b426736dc94e2b04b6983e998c4dc427dc166d66ddea246c890ed9c2a450044f
 {% endblock %}
 
 {% block bld_libs %}

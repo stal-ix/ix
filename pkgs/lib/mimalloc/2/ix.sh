@@ -33,4 +33,5 @@ rm -rf mimalloc-*
 {% block env %}
 export CPPFLAGS="-I${out}/include/mimalloc-2.0 \${CPPFLAGS}"
 export ac_cv_func_malloc_0_nonnull=yes
+export ac_cv_func_realloc_0_nonnull=yes
 {% endblock %}

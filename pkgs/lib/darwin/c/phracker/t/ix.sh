@@ -16,5 +16,6 @@ export ac_cv_func_sendfile=no
 export ac_cv_func_getaddrinfo=yes
 export ac_cv_buggy_getaddrinfo=no
 export ac_cv_func_malloc_0_nonnull=yes
+export ac_cv_func_realloc_0_nonnull=yes
 {{super()}}
 {% endblock %}

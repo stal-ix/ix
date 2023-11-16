@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://github.com/aria2/aria2/archive/refs/tags/release-1.36.0.tar.gz
-sha:782b5dad48cb333e0cbef8795f868f7963455efecfd2a818feb8dab1cfa973f5
+https://github.com/aria2/aria2/archive/refs/tags/release-1.37.0.tar.gz
+sha:9104878396cc30441976afdd3af9331ec51306fabf92fb82724c3b8fa7d72932
 {% endblock %}
 
 {% block bld_libs %}
