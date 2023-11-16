@@ -1,5 +1,4 @@
 import os
-import subprocess
 
 
 def cli_tool(ctx):
@@ -11,4 +10,4 @@ def cli_tool(ctx):
     env.pop('SSL_CERT_FILE')
     env['IX_PKGS_ROOT'] = pkgs
     env['IX_BINARY'] = ctx['binary']
-    subprocess.run([script] + args[1:], env=env)
+    os.execvpe(script, [script] + args[1:], env)

@@ -58,7 +58,7 @@ def slots(t):
 
 
 def build_graph(n):
-    t = max(multiprocessing.cpu_count() - 1, 1)
+    t = multiprocessing.cpu_count()
 
     return {
         'nodes': list(validate(cu.iter_uniq_list(build_commands(n)))),
