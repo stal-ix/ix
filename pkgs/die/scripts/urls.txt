@@ -1,4 +1,5 @@
 http://0pointer.de/lennart/projects/libcanberra/libcanberra-0.30.tar.xz
+http://b0llix.net/perp/distfiles/perp-2.07.tar.gz
 http://base64.sourceforge.net/b64.c
 http://bitop.luajit.org/download/LuaBitOp-1.0.2.tar.gz
 http://deb.debian.org/debian/pool/main/libx/libx86/libx86_1.1+ds1-12.debian.tar.xz
