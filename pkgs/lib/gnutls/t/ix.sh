@@ -43,10 +43,6 @@ verbose
 rawmemchr
 {% endblock %}
 
-{% block setup %}
-export ac_cv_func_realloc_0_nonnull=yes
-{% endblock %}
-
 {% block configure_flags %}
 --with-default-trust-store-file=${CA_BUNDLE}
 {% if darwin %}
