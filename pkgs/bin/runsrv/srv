@@ -5,29 +5,26 @@ cd /var/run
 mkdir -p ${1}
 cd ${1}
 
-date >> out
-
 shift
 
-P=/sys/fs/cgroup/$$
+PP=$$
+P=/sys/fs/cgroup/${PP}
 
-echo "mkdir ${P}" >> out
+(
+set -xue
+
+date
 mkdir ${P}
 
-echo "echo ${P}" >> out
-echo $$ > ${P}/cgroup.procs
+echo ${PP} > ${P}/cgroup.procs
 
 cleanup() (
-    echo "kill ${P}" >> out
     echo 1 > ${P}/cgroup.kill
 )
 
 trap cleanup TERM INT EXIT
 
-echo "flock ${P}" >> out
-flock lock $@ 1>>out 2>>out &
+flock lock $@ &
 
-echo "wait ${P}" >> out
 wait
-
-echo "done ${P}" >> out
+) 1>>out 2>>out
