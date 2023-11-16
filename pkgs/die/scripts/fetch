@@ -1,5 +1,0 @@
-#!/bin/sh
-
-(cat *.sh | grep 'https://'; cat *.sh | grep 'http://') | while read l; do
-    curl -k -L --output $(basename "${l}") "${l}"
-done

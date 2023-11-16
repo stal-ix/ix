@@ -1,8 +1,8 @@
 {% extends '//die/c/autohell.sh' %}
 
 {% block fetch %}
-https://www.gnupg.org/ftp/gcrypt/libksba/libksba-1.6.3.tar.bz2
-sha:3f72c68db30971ebbf14367527719423f0a4d5f8103fc9f4a1c01a9fa440de5c
+https://www.gnupg.org/ftp/gcrypt/libksba/libksba-1.6.5.tar.bz2
+sha:a564628c574c99287998753f98d750babd91a4e9db451f46ad140466ef2a6d16
 {% endblock %}
 
 {% block lib_deps %}

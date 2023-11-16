@@ -1,0 +1,29 @@
+#!/bin/sh
+
+cd /var/run
+
+mkdir -p ${1}/std
+cd ${1}
+
+shift
+
+PP=$$
+P=/sys/fs/cgroup/${PP}
+
+(
+set -xue
+
+mkdir ${P}
+
+echo ${PP} > ${P}/cgroup.procs
+
+cleanup() (
+    echo 1 > ${P}/cgroup.kill
+)
+
+trap cleanup TERM INT EXIT
+
+flock lock /bin/logged std ${@} &
+
+wait
+) 2>&1 >> std/err

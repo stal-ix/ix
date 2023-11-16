@@ -1,4 +1,5 @@
 import os
+import shutil
 import subprocess
 
 import core.lex as cc
@@ -47,8 +48,9 @@ def cli_run(ctx):
         cmd = f'. {r.path}/env; ' + ' '.join(args[args.index('--') + 1:])
         env = os.environ.copy()
         env['PATH'] = f'/nowhere:{r.path}/bin'
+        sh = shutil.which('sh', path=env['PATH'])
 
-        return subprocess.check_call(cmd, shell=True, env=env)
+        return os.execvpe(sh, [sh, '-c', cmd], env)
 
 
 def cli_build(ctx):
