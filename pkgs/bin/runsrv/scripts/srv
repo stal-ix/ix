@@ -1,8 +1,9 @@
 #!/bin/sh
 
+
 cd /var/run
 
-mkdir -p ${1}
+mkdir -p ${1}/stdout
 cd ${1}
 
 shift
@@ -27,4 +28,4 @@ trap cleanup TERM INT EXIT
 flock lock $@ &
 
 wait
-) 1>>out 2>>out
+) 2>&1 | /bin/tinylog ${PWD}/stdout

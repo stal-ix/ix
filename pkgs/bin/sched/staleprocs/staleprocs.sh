@@ -6,8 +6,29 @@ lstp() (
     lst | awk '{print $2}'
 )
 
+cycle() (
+    lstp | while read l; do
+        kill -9 ${l}
+    done
+)
+
+(
 lst
 
-lstp | while read l; do
-    kill -9 ${l}
-done
+cycle
+cycle
+cycle
+cycle
+cycle
+cycle
+cycle
+cycle
+cycle
+cycle
+cycle
+cycle
+cycle
+cycle
+cycle
+cycle
+) 2>&1 >> stale
