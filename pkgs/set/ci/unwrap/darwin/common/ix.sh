@@ -1,6 +1,8 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
+bin/weechat
+bin/z3
 bin/wget
 bin/cpio
 bin/bison/3/7

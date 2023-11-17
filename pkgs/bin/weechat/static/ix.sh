@@ -9,7 +9,7 @@ bld/librarian
 {% block install %}
 {{super()}}
 cd ${tmp}/obj
-find . -name '*.so' | while read l; do
+find . -name '*.{{target.dl_suffix}}' | while read l; do
     ns=$(basename ${l} | sed -e 's|\..*||')
     cp ${l} ${ns}.a
     patchns ${ns}.a ${ns}_

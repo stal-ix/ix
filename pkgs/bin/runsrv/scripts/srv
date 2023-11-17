@@ -26,4 +26,4 @@ trap cleanup TERM INT EXIT
 flock lock /bin/logged std ${@} &
 
 wait
-) 2>&1 >> std/err
+) 1>>std/err 2>&1

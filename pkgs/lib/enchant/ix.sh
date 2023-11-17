@@ -20,3 +20,7 @@ rawmemchr
 {% block bld_tool %}
 bld/fake(tool_name=groff)
 {% endblock %}
+
+{% block setup %}
+export CPPFLAGS="-isystem${PWD} -isystem${PWD}/lib ${CPPFLAGS}"
+{% endblock %}
