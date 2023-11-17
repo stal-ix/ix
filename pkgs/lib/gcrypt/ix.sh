@@ -21,3 +21,11 @@ export OPTFLAGS="${OPTFLAGS} -O2"
 {% block patch %}
 sed -e 's|#error|#warning|' -i random/jitterentropy-base.c
 {% endblock %}
+
+{% block configure_flags %}
+{% if darwin %}
+--disable-asm
+{% endif %}
+--disable-O-flag-munging
+--disable-instrumentation-munging
+{% endblock %}
