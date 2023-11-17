@@ -35,3 +35,18 @@ all:
 install:
 EOF
 {% endblock %}
+
+{% block install %}
+mkdir ${out}/lib
+cp gllib/libgnu.a ${out}/lib
+find gllib -name '*.c' -delete
+find gllib -name '*.o' -delete
+find gllib -name '*.gperf' -delete
+find gllib -name 'Makefile*' -delete
+cp -R gllib ${out}/include
+cp config.h ${out}/include/gnulib_config.h
+{% endblock %}
+
+{% block env %}
+export CPPFLAGS="-include ${out}/include/gnulib_config.h \${CPPFLAGS}"
+{% endblock %}
