@@ -1,9 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-# 99 conflicts with current avif
-https://github.com/KDE/kimageformats/archive/refs/tags/v5.98.0.tar.gz
-sha:b5424d53e90a06b5a3243803a0e9b7da92d912aee48f8010140fa2e241cc7a28
+https://github.com/KDE/kimageformats/archive/refs/tags/v5.112.0.tar.gz
+sha:e2d0b190b09e84de6cb01bf2282b808790f87d188d6b48be476a89d469dc83a1
 {% endblock %}
 
 {% block lib_deps %}
