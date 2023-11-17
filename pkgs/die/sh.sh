@@ -18,7 +18,7 @@ source_env() {
 }
 
 fast_rm() (
-    mv "${1}" "{{trash_dir}}/${IX_RANDOM}" || true
+    mv "${2}" "{{trash_dir}}/${IX_RANDOM}_${1}" || true
 )
 
 {% block functions %}
@@ -45,10 +45,10 @@ export CMFLAGS=
 export LOCALE_PATH=
 export CMAKE_PREFIX_PATH=
 
-fast_rm ${out}
+fast_rm 1 ${out}
 mkdir -p ${out}
 
-fast_rm ${tmp}
+fast_rm 2 ${tmp}
 mkdir -p ${tmp}
 
 cd ${tmp}
@@ -86,7 +86,7 @@ fi
 {% endblock %}
 
 {% if not skipsrc %}
-fast_rm ${tmp}
+fast_rm 3 ${tmp}
 {% endif %}
 {% endblock %}
 {% endblock %}
