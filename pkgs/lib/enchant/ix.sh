@@ -20,3 +20,9 @@ rawmemchr
 {% block bld_tool %}
 bld/fake(tool_name=groff)
 {% endblock %}
+
+{% block patch %}
+{% if darwin %}
+sed -e 's|<string.h>|"../lib/string.h"|' -i src/lib.c
+{% endif %}
+{% endblock %}
