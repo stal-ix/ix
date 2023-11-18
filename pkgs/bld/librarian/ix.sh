@@ -15,22 +15,6 @@ base64 -d << EOF > fixallns
 {% include 'fixallns.sh/base64' %}
 EOF
 
-base64 -d << EOF > safeex
-{% include 'safeex.py/base64' %}
-EOF
-
-base64 -d << EOF > safear
-{% include 'safear.py/base64' %}
-EOF
-
-base64 -d << EOF > joinar
-{% include 'joinar.sh/base64' %}
-EOF
-
-base64 -d << EOF > substr
-{% include 'substr.py/base64' %}
-EOF
-
 base64 -d << EOF > listsym
 {% include 'listsym.sh/base64' %}
 EOF
