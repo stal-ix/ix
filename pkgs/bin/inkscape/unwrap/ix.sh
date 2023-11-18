@@ -5,11 +5,11 @@ https://gitlab.com/inkscape/inkscape
 {% endblock %}
 
 {% block git_branch %}
-INKSCAPE_1_3
+INKSCAPE_1_3_1
 {% endblock %}
 
 {% block git_sha %}
-81182028059fba218db60d9deb6595696e771277245ade0f3c5a33651fb9535e
+c5cabd4e86effe51616c2885d8e62b8a8268dbb0994b4e12c3bd1e9d73bb7bc8
 {% endblock %}
 
 {% block bld_libs %}

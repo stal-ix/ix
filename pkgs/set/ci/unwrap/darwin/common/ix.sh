@@ -1,6 +1,8 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
+bin/dosbox
+bin/cctools
 bin/doxygen
 bin/weechat
 bin/z3

@@ -1,13 +1,21 @@
-{% extends '//lib/sdl/2/ix.sh' %}
+{% extends '//die/proxy.sh' %}
+
+{% block bld_libs %}
+lib/sdl/2
+{% endblock %}
 
 {% block bld_tool %}
+bld/compiler
 bld/librarian
-{{super()}}
 {% endblock %}
 
 {% block install %}
-{{super()}}
+mkdir ${out}/lib
 cd ${out}/lib
-rm lib*main*
-patchns libSDL2.a V2_
+cp ${SDL2_LIBRARY} ./libSDL2_chimera.a
+patchns libSDL2_chimera.a {{target.symbol_prefix}}V2_
+{% endblock %}
+
+{% block env %}
+export SDL2_CHIMERA="${out}/lib/libSDL2_chimera.a"
 {% endblock %}

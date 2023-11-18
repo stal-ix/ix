@@ -11,6 +11,7 @@ cd compiler-rt/lib/scudo/standalone
 
 {% block lib_deps %}
 lib/c/naked
+lib/reallocarray
 {% endblock %}
 
 {% block bld_libs %}
@@ -35,4 +36,9 @@ ar q libscudo.a *.o
 mkdir ${out}/lib
 cp -R include ${out}/
 cp *.a ${out}/lib/
+{% endblock %}
+
+{% block env %}
+export ac_cv_func_malloc_0_nonnull=yes
+export ac_cv_func_realloc_0_nonnull=yes
 {% endblock %}

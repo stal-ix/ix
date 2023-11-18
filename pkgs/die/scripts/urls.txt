@@ -742,6 +742,7 @@ https://github.com/hyprwm/Hyprland/releases/download/v0.32.3/source-v0.32.3.tar.
 https://github.com/hyprwm/hyprpaper/archive/refs/tags/v0.2.0.tar.gz
 https://github.com/hyprwm/hyprpicker/archive/refs/tags/v0.1.0.tar.gz
 https://github.com/ib/xarchiver/archive/refs/tags/0.5.4.20.tar.gz
+https://github.com/ihhub/fheroes2/archive/refs/tags/1.0.10.tar.gz
 https://github.com/ihhub/fheroes2/archive/refs/tags/1.0.7.tar.gz
 https://github.com/ihhub/fheroes2/archive/refs/tags/1.0.8.tar.gz
 https://github.com/ihhub/fheroes2/archive/refs/tags/1.0.9.tar.gz
@@ -791,6 +792,7 @@ https://github.com/jtheoof/swappy/archive/refs/tags/v1.5.1.tar.gz
 https://github.com/junegunn/fzf/archive/refs/tags/0.42.0.tar.gz
 https://github.com/junegunn/fzf/archive/refs/tags/0.43.0.tar.gz
 https://github.com/junegunn/fzf/archive/refs/tags/0.44.0.tar.gz
+https://github.com/junegunn/fzf/archive/refs/tags/0.44.1.tar.gz
 https://github.com/kaniini/libucontext/archive/refs/tags/libucontext-1.2.tar.gz
 https://github.com/kcat/openal-soft/archive/refs/tags/1.23.1.tar.gz
 https://github.com/kkos/oniguruma/archive/refs/tags/v6.9.8.tar.gz
@@ -1294,6 +1296,7 @@ https://gitlab.gnome.org/GNOME/gspell/-/archive/1.12.2/gspell-1.12.2.tar.bz2
 https://gitlab.gnome.org/GNOME/gtk/-/archive/4.12.1/gtk-4.12.1.tar.bz2
 https://gitlab.gnome.org/GNOME/gtk/-/archive/4.12.2/gtk-4.12.2.tar.bz2
 https://gitlab.gnome.org/GNOME/gtk/-/archive/4.12.3/gtk-4.12.3.tar.bz2
+https://gitlab.gnome.org/GNOME/gtk/-/archive/4.12.4/gtk-4.12.4.tar.bz2
 https://gitlab.gnome.org/GNOME/gtksourceview/-/archive/5.10.0/gtksourceview-5.10.0.tar.bz2
 https://gitlab.gnome.org/GNOME/gtksourceview/-/archive/5.8.0/gtksourceview-5.8.0.tar.bz2
 https://gitlab.gnome.org/GNOME/json-glib/-/archive/1.6.6/json-glib-1.6.6.tar.bz2
