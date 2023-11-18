@@ -11,10 +11,6 @@ base64 -d << EOF > patchns
 {% include 'patchns.sh/base64' %}
 EOF
 
-base64 -d << EOF > fixallns
-{% include 'fixallns.sh/base64' %}
-EOF
-
 base64 -d << EOF > listsym
 {% include 'listsym.sh/base64' %}
 EOF

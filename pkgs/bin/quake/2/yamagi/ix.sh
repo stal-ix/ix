@@ -3,7 +3,9 @@
 {% block build %}
 {{super()}}
 
-fixallns ${PWD}
+find ${PWD} -type f -name '*.so' | while read l; do
+    patchns ${l} $(basename ${l} | sed -e 's|\..*||')_
+done
 
 dl_stubs << EOF >> stubs.c
 game     GetGameAPI game_GetGameAPI
