@@ -141,7 +141,7 @@ def main():
 
     if '-c' in args:
         pass
-    elif '-shared' in sa or '--soname' in sa:
+    elif '-shared' in sa or '--soname' in sa or '-bundle' in raw_args:
         return link(list(flt_objs(args)), args)
     elif have_objs(args):
         if '-rdynamic' in sa or '-export-dynamic' in sa:
