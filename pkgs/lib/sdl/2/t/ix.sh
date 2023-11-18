@@ -7,7 +7,6 @@ sha:332cb37d0be20cb9541739c61f79bae5a477427d79ae85e352089afdaf6666e4
 
 {% block lib_deps %}
 lib/c
-lib/opengl
 {% endblock %}
 
 {% block bld_tool %}
@@ -16,13 +15,8 @@ bld/pkg/config
 
 {% block cmake_flags %}
 LIBTYPE=STATIC
-
 SDL_STATIC=ON
 SDL_SHARED=OFF
-
-SDL_VULKAN=ON
-SDL_OPENGLES=ON
-
 SDL_LIBSAMPLERATE=OFF
 SDL_LIBSAMPLERATE_SHARED=OFF
 {% endblock %}

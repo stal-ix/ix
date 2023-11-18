@@ -20,3 +20,21 @@ lib/darwin/framework/GameController
 bld/cctools
 {{super()}}
 {% endblock %}
+
+{% block cmake_flags %}
+{{super()}}
+SDL_OPENGL=OFF
+SDL_OPENGLES=OFF
+SDL_VULKAN=OFF
+{% endblock %}
+
+{% block build_flags %}
+shut_up
+{{super()}}
+{% endblock %}
+
+{% block patch %}
+{{super()}}
+sed -e 's|.*context movedToNewScreen.*||' \
+    -i src/video/cocoa/SDL_cocoawindow.m
+{% endblock %}

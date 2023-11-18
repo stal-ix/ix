@@ -3,6 +3,7 @@
 {% block lib_deps %}
 lib/decor
 lib/sndio
+lib/opengl
 lib/wayland
 lib/xkb/common
 lib/vulkan/loader
@@ -16,6 +17,8 @@ bld/wayland
 
 {% block cmake_flags %}
 {{super()}}
+SDL_VULKAN=ON
+SDL_OPENGLES=ON
 SDL_OSS=OFF
 SDL_ALSA=OFF
 SDL_ALSA_SHARED=OFF
