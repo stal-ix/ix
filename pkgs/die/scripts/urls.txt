@@ -791,6 +791,7 @@ https://github.com/jtheoof/swappy/archive/refs/tags/v1.5.1.tar.gz
 https://github.com/junegunn/fzf/archive/refs/tags/0.42.0.tar.gz
 https://github.com/junegunn/fzf/archive/refs/tags/0.43.0.tar.gz
 https://github.com/junegunn/fzf/archive/refs/tags/0.44.0.tar.gz
+https://github.com/junegunn/fzf/archive/refs/tags/0.44.1.tar.gz
 https://github.com/kaniini/libucontext/archive/refs/tags/libucontext-1.2.tar.gz
 https://github.com/kcat/openal-soft/archive/refs/tags/1.23.1.tar.gz
 https://github.com/kkos/oniguruma/archive/refs/tags/v6.9.8.tar.gz
