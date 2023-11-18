@@ -13,7 +13,7 @@ bld/librarian
 mkdir ${out}/lib
 cd ${out}/lib
 cp ${SDL2_LIBRARY} ./libSDL2_chimera.a
-patchns libSDL2_chimera.a V2_
+patchns libSDL2_chimera.a {{target.symbol_prefix}}V2_
 {% endblock %}
 
 {% block env %}
