@@ -3,6 +3,7 @@
 {% block bld_libs %}
 {{super()}}
 lib/sdl/2
+lib/x265/dl
 lib/sdl/deps
 {% endblock %}
 
