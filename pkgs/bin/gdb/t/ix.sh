@@ -13,6 +13,7 @@ lib/gmp
 lib/c++
 lib/mpfr
 lib/intl
+lib/zstd
 lib/expat
 lib/xxhash
 lib/curses
