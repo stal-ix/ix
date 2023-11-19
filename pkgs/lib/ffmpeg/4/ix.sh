@@ -42,7 +42,9 @@ wrap_cc
 --enable-gpl
 --enable-static
 --disable-shared
+{% block ffmpeg_programs %}
 --disable-programs
+{% endblock %}
 --disable-stripping
 
 --enable-libaom
