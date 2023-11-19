@@ -1,7 +1,7 @@
 {% extends '//die/inline/program.sh' %}
 
 {% block bld_libs %}
-lib/bsd/init
+lib/bsd/impl/init
 {% endblock %}
 
 {% block name %}
@@ -12,7 +12,7 @@ test_init
 main.c
 {% endblock %}
 
-{% block install1 %}
+{% block install %}
 mkdir ${out}/bin
 cp test_init ${out}/bin/
 {% endblock %}

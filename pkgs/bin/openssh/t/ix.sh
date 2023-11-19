@@ -15,9 +15,7 @@ lib/z
 lib/edit
 lib/ldns
 lib/openssl
-{% if linux %}
 lib/bsd/overlay
-{% endif %}
 lib/shim/fake(lib_name=curses)
 {% endblock %}
 

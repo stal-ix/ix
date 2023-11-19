@@ -7,15 +7,11 @@ md5:6d29d5ca45cb469b9ccd3bb962dbee5a
 
 {% block lib_deps %}
 lib/c
-{% if linux %}
 lib/bsd
-{% endif %}
 {% endblock %}
 
 {% block bld_libs %}
-{% if linux %}
 lib/bsd/overlay
-{% endif %}
 {% endblock %}
 
 {% block conf_ver %}
