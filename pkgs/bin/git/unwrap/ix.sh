@@ -27,4 +27,10 @@ gitexecdir=bin/{{uniq_id}}
 INSTALL_SYMLINKS=yes
 NO_REGEX=NeedsStartEnd
 COMPUTE_HEADER_DEPENDENCIES=no
+NO_FINK=1
+NO_DARWIN_PORTS=1
+NO_PERL=1
+NO_TCLTK=1
+uname_S={{target.uname_s}}
+uname_M={{target.uname_m}}
 {% endblock %}
