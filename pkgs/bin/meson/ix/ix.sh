@@ -1,4 +1,4 @@
-{% extends '//bin/meson/13/ix.sh' %}
+{% extends '//bin/meson/120/ix.sh' %}
 
 {% block patch %}
 sed -e 's|self._search_libs.*|[], []|' \
