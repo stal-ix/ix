@@ -1,6 +1,9 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
+bin/wget
+bin/tmux
+bin/git
 bin/dosbox
 bin/cctools
 bin/doxygen

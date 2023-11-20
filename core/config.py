@@ -89,6 +89,12 @@ def enrich(d):
     if 'id' not in d:
         d['id'] = calc_id(d)
 
+    if 'uname_m' not in d:
+        d['uname_m'] = d['arch']
+
+    if 'uname_s' not in d:
+        d['uname_s'] = d['cmake_system_name']
+
     d['ptrlen'] = int(d['bits']) // 8
 
     return d

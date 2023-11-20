@@ -9,9 +9,7 @@ sha:f7c73122ebb0ea2cf094639b9ae387857d528337fea3d07d9800d9d0980241af
 lib/c
 lib/c++
 lib/objc
-{% if linux %}
 lib/bsd/overlay
-{% endif %}
 {% endblock %}
 
 {% block bld_tool %}

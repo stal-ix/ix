@@ -7,9 +7,7 @@ sha:f30826fc9c07e369d3924d5fcedf6a0a53c0df4ae1f5ab50fe9cf280540f699a
 
 {% block lib_deps %}
 lib/c
-{% if linux %}
 lib/bsd
-{% endif %}
 {% endblock %}
 
 {% block patch %}
