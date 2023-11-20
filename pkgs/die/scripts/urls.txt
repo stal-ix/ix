@@ -327,6 +327,7 @@ https://ftp.gnu.org/pub/gnu/gettext/gettext-0.21.tar.gz
 https://ftp.gnu.org/pub/gnu/gettext/gettext-0.22.1.tar.gz
 https://ftp.gnu.org/pub/gnu/gettext/gettext-0.22.2.tar.gz
 https://ftp.gnu.org/pub/gnu/gettext/gettext-0.22.3.tar.gz
+https://ftp.gnu.org/pub/gnu/gettext/gettext-0.22.4.tar.gz
 https://ftp.gnu.org/pub/gnu/libiconv/libiconv-1.17.tar.gz
 https://ftp.gnu.org/pub/gnu/ncurses/ncurses-6.4.tar.gz
 https://ftp.isc.org/isc/dhcp/4.4.2-P1/dhcp-4.4.2-P1.tar.gz
