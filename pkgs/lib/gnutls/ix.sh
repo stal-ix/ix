@@ -1,9 +1,6 @@
-{% extends '//die/c/registar.sh' %}
+{% extends '//die/hub.sh' %}
 
 {% block lib_deps %}
 lib/gnutls/unwrap
-{% endblock %}
-
-{% block constructors %}
-gnutls_global_init
+lib/gnutls/registar
 {% endblock %}
