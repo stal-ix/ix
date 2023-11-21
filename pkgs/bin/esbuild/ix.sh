@@ -1,11 +1,15 @@
 {% extends '//die/go/pure.sh' %}
 
 {% block go_url %}
-https://github.com/evanw/esbuild/archive/refs/tags/v0.18.14.tar.gz
+https://github.com/evanw/esbuild/archive/refs/tags/v0.19.6.tar.gz
 {% endblock %}
 
 {% block go_sha %}
-4a57d341454594995d884f73ea65729479ae66405f95f16dfe0e3984a206a322
+cb6b5c550b59ea517e2eae140c9f843c130e3e99dd3864426e79945c982747af
+{% endblock %}
+
+{% block go_refine %}
+rm scripts/browser/esbuild.wasm.bagel
 {% endblock %}
 
 {% block unpack %}
