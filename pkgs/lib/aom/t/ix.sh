@@ -24,8 +24,11 @@ bld/cctools
 {% endblock %}
 
 {% block cmake_flags %}
+HAVE_PTHREAD_H=1
+HAVE_UNISTD_H=1
+CONFIG_RUNTIME_CPU_DETECT=1
+AOM_ARCH_{{target.gnu_arch.upper()}}=1
 AOM_TARGET_CPU={{target.arch}}
-ENABLE_EXAMPLES=OFF
 ENABLE_WERROR=OFF
 ENABLE_TESTS=OFF
 ENABLE_DOCS=OFF
@@ -50,5 +53,7 @@ HAVE_SSSE3=1
 {% if aarch64 %}
 ENABLE_NEON=ON
 ARCH_ARM=ON
+{% else %}
+ENABLE_NEON=OFF
 {% endif %}
 {% endblock %}

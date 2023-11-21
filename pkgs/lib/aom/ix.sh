@@ -2,6 +2,7 @@
 
 {% block cmake_flags %}
 ENABLE_TOOLS=OFF
+ENABLE_EXAMPLES=OFF
 {{super()}}
 {% endblock %}
 
