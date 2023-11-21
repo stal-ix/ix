@@ -1129,6 +1129,7 @@ https://github.com/strawberrymusicplayer/strawberry/archive/refs/tags/1.0.20.tar
 https://github.com/strawberrymusicplayer/strawberry/archive/refs/tags/1.0.21.tar.gz
 https://github.com/strukturag/libde265/archive/refs/tags/v1.0.12.tar.gz
 https://github.com/strukturag/libde265/archive/refs/tags/v1.0.13.tar.gz
+https://github.com/strukturag/libde265/archive/refs/tags/v1.0.14.tar.gz
 https://github.com/strukturag/libheif/archive/refs/tags/v1.16.2.tar.gz
 https://github.com/strukturag/libheif/archive/refs/tags/v1.17.0.tar.gz
 https://github.com/strukturag/libheif/archive/refs/tags/v1.17.1.tar.gz
