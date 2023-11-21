@@ -30,10 +30,6 @@ shut_up
 udev_rulesdir=${out}/share/udev
 {% endblock %}
 
-{% block cpp_missing %}
-unistd.h
-{% endblock %}
-
 {% block configure_flags %}
 --disable-gss
 --disable-sbin-override
@@ -44,4 +40,10 @@ unistd.h
 
 {% block patch %}
 echo 'int main() {}' > utils/nfsidmap/nfsidmap.c
+for l in support/reexport/*.c; do
+    cat - ${l} << EOF > _
+#include <unistd.h>
+EOF
+    mv _ ${l}
+done
 {% endblock %}
