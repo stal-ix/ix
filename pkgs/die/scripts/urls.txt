@@ -942,6 +942,7 @@ https://github.com/mobile-shell/mosh/archive/refs/tags/mosh-1.4.0.tar.gz
 https://github.com/mozilla/mozjpeg/archive/refs/tags/v4.1.4.tar.gz
 https://github.com/mozilla/mozjpeg/archive/refs/tags/v4.1.5.tar.gz
 https://github.com/mpv-player/mpv/archive/refs/tags/v0.36.0.tar.gz
+https://github.com/mpv-player/mpv/archive/refs/tags/v0.37.0.tar.gz
 https://github.com/msgpack/msgpack-c/archive/refs/tags/c-6.0.0.tar.gz
 https://github.com/msoos/minisat/archive/refs/tags/2.2.1.tar.gz
 https://github.com/muesli/duf/archive/refs/tags/v0.8.1.tar.gz
