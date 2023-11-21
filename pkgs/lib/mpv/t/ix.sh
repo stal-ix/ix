@@ -1,8 +1,8 @@
-{% extends '//die/c/waf.sh' %}
+{% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://github.com/mpv-player/mpv/archive/refs/tags/v0.36.0.tar.gz
-sha:29abc44f8ebee013bb2f9fe14d80b30db19b534c679056e4851ceadf5a5e8bf6
+https://github.com/mpv-player/mpv/archive/refs/tags/v0.37.0.tar.gz
+sha:1d2d4adbaf048a2fa6ee134575032c4b2dad9a7efafd5b3e69b88db935afaddf
 {% endblock %}
 
 {% block lib_deps %}
@@ -13,14 +13,13 @@ lib/sndio
 lib/ffmpeg
 lib/archive
 lib/uchardet
-lib/placebo/5
+lib/placebo/6
 {% endblock %}
 
 {% block bld_tool %}
-bin/waf
 bld/perl
 {% endblock %}
 
-{% block waf_flags %}
---enable-sndio
+{% block meson_flags %}
+sndio=enabled
 {% endblock %}

@@ -18,7 +18,7 @@ lib/vulkan/headers
 bld/wayland
 {% endblock %}
 
-{% block waf_flags %}
+{% block meson_flags %}
 {{super()}}
---enable-javascript
+javascript=enabled
 {% endblock %}
