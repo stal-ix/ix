@@ -27,6 +27,11 @@ bld/auto/archive
 _GNU_SOURCE=1
 {% endblock %}
 
+{% block c_rename_symbol %}
+# conflicts with gnutls
+glthread_once_multithreaded
+{% endblock %}
+
 {% block configure_flags %}
 --with-cares
 {% endblock %}

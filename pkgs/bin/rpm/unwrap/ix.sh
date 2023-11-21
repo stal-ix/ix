@@ -54,3 +54,7 @@ sed -e 's|cmd rpmverify rpmquery|cmd|' \
 GLOB_BRACE=0
 GLOB_ONLYDIR=0
 {% endblock %}
+
+{% block c_rename_symbol %}
+compress
+{% endblock %}

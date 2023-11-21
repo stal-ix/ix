@@ -79,6 +79,7 @@ http://www.squid-cache.org/Versions/v6/squid-6.4.tar.xz
 http://www.squid-cache.org/Versions/v6/squid-6.5.tar.xz
 http://zlib.net/zlib-1.3.tar.xz
 https://7-zip.org/a/7z2200-src.tar.xz
+https://7-zip.org/a/7z2301-src.tar.xz
 https://archive.apache.org/dist/apr/apr-1.7.0.tar.bz2
 https://archive.apache.org/dist/apr/apr-util-1.6.2.tar.bz2
 https://archive.apache.org/dist/subversion/subversion-1.14.2.tar.bz2
@@ -107,6 +108,7 @@ https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.5.7.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.5.8.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.5.9.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.6.1.tar.xz
+https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.6.2.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.6.tar.xz
 https://cmocka.org/files/1.1/cmocka-1.1.7.tar.xz
 https://codeberg.org/dnkl/fcft/archive/2.5.0.tar.gz
@@ -219,6 +221,7 @@ https://downloads.sourceforge.net/urlget/uget-2.2.3-1.tar.gz
 https://downloads.xvid.com/downloads/xvidcore-1.3.7.tar.gz
 https://dri.freedesktop.org/libdrm/libdrm-2.4.116.tar.xz
 https://dri.freedesktop.org/libdrm/libdrm-2.4.117.tar.xz
+https://dri.freedesktop.org/libdrm/libdrm-2.4.118.tar.xz
 https://ffmpeg.org/releases/ffmpeg-5.1.2.tar.xz
 https://ffmpeg.org/releases/ffmpeg-6.0.1.tar.xz
 https://ffmpeg.org/releases/ffmpeg-6.0.tar.xz
@@ -327,6 +330,7 @@ https://ftp.gnu.org/pub/gnu/gettext/gettext-0.21.tar.gz
 https://ftp.gnu.org/pub/gnu/gettext/gettext-0.22.1.tar.gz
 https://ftp.gnu.org/pub/gnu/gettext/gettext-0.22.2.tar.gz
 https://ftp.gnu.org/pub/gnu/gettext/gettext-0.22.3.tar.gz
+https://ftp.gnu.org/pub/gnu/gettext/gettext-0.22.4.tar.gz
 https://ftp.gnu.org/pub/gnu/libiconv/libiconv-1.17.tar.gz
 https://ftp.gnu.org/pub/gnu/ncurses/ncurses-6.4.tar.gz
 https://ftp.isc.org/isc/dhcp/4.4.2-P1/dhcp-4.4.2-P1.tar.gz
@@ -544,6 +548,7 @@ https://github.com/apernet/hysteria/archive/refs/tags/app/v2.0.4.tar.gz
 https://github.com/apernet/hysteria/archive/refs/tags/app/v2.1.0.tar.gz
 https://github.com/apernet/hysteria/archive/refs/tags/app/v2.1.1.tar.gz
 https://github.com/apernet/hysteria/archive/refs/tags/app/v2.2.0.tar.gz
+https://github.com/apernet/hysteria/archive/refs/tags/app/v2.2.1.tar.gz
 https://github.com/apple/swift-corelibs-libdispatch/archive/refs/tags/swift-5.8-RELEASE.tar.gz
 https://github.com/apple/swift-corelibs-libdispatch/archive/refs/tags/swift-5.9-RELEASE.tar.gz
 https://github.com/appneta/tcpreplay/releases/download/v4.4.4/tcpreplay-4.4.4.tar.xz
@@ -570,6 +575,7 @@ https://github.com/c-ares/c-ares/archive/refs/tags/cares-1_20_0.tar.gz
 https://github.com/c-ares/c-ares/archive/refs/tags/cares-1_20_1.tar.gz
 https://github.com/c-ares/c-ares/archive/refs/tags/cares-1_21_0.tar.gz
 https://github.com/c-ares/c-ares/archive/refs/tags/cares-1_22_0.tar.gz
+https://github.com/c-ares/c-ares/archive/refs/tags/cares-1_22_1.tar.gz
 https://github.com/capstone-engine/capstone/archive/refs/tags/5.0-rc2.tar.gz
 https://github.com/catboost/catboost/archive/refs/tags/v1.0.6.tar.gz
 https://github.com/cboxdoerfer/fsearch/archive/refs/tags/0.2.3.tar.gz
@@ -638,6 +644,7 @@ https://github.com/ericniebler/range-v3/archive/refs/tags/0.12.0.tar.gz
 https://github.com/etcd-io/etcd/archive/refs/tags/v3.4.22.tar.gz
 https://github.com/etcd-io/etcd/archive/refs/tags/v3.5.10.tar.gz
 https://github.com/evanw/esbuild/archive/refs/tags/v0.18.14.tar.gz
+https://github.com/evanw/esbuild/archive/refs/tags/v0.19.6.tar.gz
 https://github.com/exfatprogs/exfatprogs/archive/refs/tags/1.2.2.tar.gz
 https://github.com/exfatprogs/exfatprogs/releases/download/1.2.0/exfatprogs-1.2.0.tar.xz
 https://github.com/facebook/zstd/archive/refs/tags/v1.5.5.tar.gz
@@ -676,6 +683,7 @@ https://github.com/gflags/gflags/archive/refs/tags/v2.2.2.tar.gz
 https://github.com/ggreer/the_silver_searcher/archive/refs/tags/2.2.0.tar.gz
 https://github.com/git/git/archive/refs/tags/v2.42.0.tar.gz
 https://github.com/git/git/archive/refs/tags/v2.42.1.tar.gz
+https://github.com/git/git/archive/refs/tags/v2.43.0.tar.gz
 https://github.com/glencoesoftware/jxrlib/archive/refs/tags/v0.2.4.tar.gz
 https://github.com/glennrp/libpng/archive/refs/tags/v1.6.40.tar.gz
 https://github.com/glfw/glfw/archive/refs/tags/3.3.8.tar.gz
@@ -910,6 +918,7 @@ https://github.com/mesonbuild/meson/archive/refs/tags/1.1.1.tar.gz
 https://github.com/mesonbuild/meson/archive/refs/tags/1.2.1.tar.gz
 https://github.com/mesonbuild/meson/archive/refs/tags/1.2.2.tar.gz
 https://github.com/mesonbuild/meson/archive/refs/tags/1.2.3.tar.gz
+https://github.com/mesonbuild/meson/archive/refs/tags/1.3.0.tar.gz
 https://github.com/mheily/libkqueue/archive/refs/tags/v2.6.1.tar.gz
 https://github.com/microsoft/GSL/archive/refs/tags/v4.0.0.tar.gz
 https://github.com/microsoft/mimalloc/archive/refs/tags/v1.7.6.tar.gz
@@ -970,6 +979,7 @@ https://github.com/nwg-piotr/nwg-drawer/archive/refs/tags/v0.3.7.tar.gz
 https://github.com/nwg-piotr/nwg-launchers/archive/refs/tags/v0.6.3.tar.gz
 https://github.com/nwg-piotr/nwg-look/archive/refs/tags/v0.2.4.tar.gz
 https://github.com/nwg-piotr/nwg-menu/archive/refs/tags/v0.1.1.tar.gz
+https://github.com/oneapi-src/oneTBB/archive/refs/tags/v2021.11.0.tar.gz
 https://github.com/oneapi-src/oneTBB/archive/refs/tags/v2021.7.0.tar.gz
 https://github.com/onetrueawk/awk/archive/refs/tags/20220122.tar.gz
 https://github.com/open-source-parsers/jsoncpp/archive/refs/tags/1.9.5.tar.gz
@@ -1113,10 +1123,12 @@ https://github.com/strawberrymusicplayer/strawberry/archive/refs/tags/1.0.18.tar
 https://github.com/strawberrymusicplayer/strawberry/archive/refs/tags/1.0.20.tar.gz
 https://github.com/strawberrymusicplayer/strawberry/archive/refs/tags/1.0.21.tar.gz
 https://github.com/strukturag/libde265/archive/refs/tags/v1.0.12.tar.gz
+https://github.com/strukturag/libde265/archive/refs/tags/v1.0.13.tar.gz
 https://github.com/strukturag/libheif/archive/refs/tags/v1.16.2.tar.gz
 https://github.com/strukturag/libheif/archive/refs/tags/v1.17.0.tar.gz
 https://github.com/strukturag/libheif/archive/refs/tags/v1.17.1.tar.gz
 https://github.com/strukturag/libheif/archive/refs/tags/v1.17.3.tar.gz
+https://github.com/strukturag/libheif/archive/refs/tags/v1.17.4.tar.gz
 https://github.com/swaywm/sway/archive/refs/tags/1.8.1.tar.gz
 https://github.com/swaywm/swaybg/archive/refs/tags/v1.2.0.tar.gz
 https://github.com/swaywm/swayidle/archive/refs/tags/1.8.0.tar.gz
@@ -1491,6 +1503,7 @@ https://www.greenwoodsoftware.com/less/less-633.tar.gz
 https://www.ibiblio.org/pub/Linux/libs/graphics/t1lib-5.1.2.tar.gz
 https://www.iozone.org/src/current/iozone3_494.tgz
 https://www.ivarch.com/programs/sources/pv-1.8.0.tar.gz
+https://www.ivarch.com/programs/sources/pv-1.8.5.tar.gz
 https://www.jedsoft.org/releases/jed/jed-0.99-19.tar.bz2
 https://www.jedsoft.org/releases/most/most-5.2.0.tar.gz
 https://www.jedsoft.org/releases/slang/slang-2.3.3.tar.bz2
