@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://downloads.sourceforge.net/project/nfs/nfs-utils/2.6.3/nfs-utils-2.6.3.tar.xz
-sha:6e12ede1611d3eeb89fa39ed37a1c15c667ad5076f171871ba3406c308a08e5a
+https://downloads.sourceforge.net/project/nfs/nfs-utils/2.6.4/nfs-utils-2.6.4.tar.xz
+sha:0b52349312fecb6de1d379fe93cf78432f3653fb0f27c15368cbafb0b12d6642
 {% endblock %}
 
 {% block bld_libs %}
@@ -28,6 +28,10 @@ shut_up
 
 {% block make_flags %}
 udev_rulesdir=${out}/share/udev
+{% endblock %}
+
+{% block cpp_missing %}
+unistd.h
 {% endblock %}
 
 {% block configure_flags %}

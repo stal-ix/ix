@@ -208,6 +208,7 @@ https://downloads.sourceforge.net/project/mikmod/libmikmod/3.3.11.1/libmikmod-3.
 https://downloads.sourceforge.net/project/mscorefonts2/cabs/PowerPointViewer.exe
 https://downloads.sourceforge.net/project/net-tools/net-tools-2.10.tar.xz
 https://downloads.sourceforge.net/project/nfs/nfs-utils/2.6.3/nfs-utils-2.6.3.tar.xz
+https://downloads.sourceforge.net/project/nfs/nfs-utils/2.6.4/nfs-utils-2.6.4.tar.xz
 https://downloads.sourceforge.net/project/pcre/pcre/8.45/pcre-8.45.tar.bz2
 https://downloads.sourceforge.net/project/podofo/podofo/0.9.8/podofo-0.9.8.tar.gz
 https://downloads.sourceforge.net/project/qmmp-dev/qmmp/2.1/qmmp-2.1.4.tar.bz2
