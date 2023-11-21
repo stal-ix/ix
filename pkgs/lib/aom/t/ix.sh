@@ -50,7 +50,7 @@ HAVE_SSE4_1=1
 HAVE_SSE4_2=1
 HAVE_SSSE3=1
 {% endif %}
-{% if aarch64 %}
+{% if aarch64 or arm64 %}
 ENABLE_NEON=ON
 ARCH_ARM=ON
 {% else %}
