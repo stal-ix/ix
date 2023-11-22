@@ -22,3 +22,7 @@ bld/wayland
 {{super()}}
 javascript=enabled
 {% endblock %}
+
+{% block cpp_includes %}
+${tmp}/obj/common
+{% endblock %}
