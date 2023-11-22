@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/strukturag/libde265/archive/refs/tags/v1.0.13.tar.gz
-sha:c220c8bbdf9f2df3bf2db7ac90476e28253807885b6262cd1fe7449c694ef537
+https://github.com/strukturag/libde265/archive/refs/tags/v1.0.14.tar.gz
+sha:d368b771823e66715da65ee3213ef9c78c535b65ea6e18f91f347063a2ca0f00
 {% endblock %}
 
 {% block lib_deps %}
