@@ -23,3 +23,7 @@ bld/glib
 gnome=false
 tls_check=false
 {% endblock %}
+
+{% block cpp_missing %}
+libxml/parser.h
+{% endblock %}
