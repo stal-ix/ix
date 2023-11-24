@@ -22,6 +22,11 @@ bld/glib
 shut_up
 {% endblock %}
 
+{% block setup %}
+# libxml2 error
+export CFLAGS="-Wno-incompatible-function-pointer-types ${CFLAGS}"
+{% endblock %}
+
 {% block configure_flags %}
 --disable-pixbuf-loader
 --enable-introspection=no
