@@ -9,9 +9,9 @@ sha:8be219ef7e8aead08b46215c9c545b1bf9d108cefee580ffcf297553dee9dfaf
 lib/c
 lib/c++
 lib/gtk/3/mm
+lib/json/nlohmann
 lib/gdk/pixbuf/svg
 lib/gtk/layer/shell
-lib/json/nlohmann/11
 {% endblock %}
 
 {% block patch %}

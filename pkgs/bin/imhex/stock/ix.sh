@@ -19,7 +19,7 @@ lib/mbedtls/3
 lib/cap/stone
 lib/glfw/deps
 lib/python/3/10
-lib/json/nlohmann/11
+lib/json/nlohmann
 {% endblock %}
 
 {% block bld_tool %}

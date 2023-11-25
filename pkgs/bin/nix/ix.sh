@@ -25,7 +25,7 @@ lib/rapidcheck
 lib/google/test
 lib/boehmgc/c++
 lib/bsd/overlay
-lib/json/nlohmann/11
+lib/json/nlohmann
 {% endblock %}
 
 {% block bld_tool %}

@@ -25,7 +25,7 @@ lib/execinfo
 lib/xkb/common
 lib/drivers/3d
 lib/wlroots/16
-lib/json/nlohmann/11
+lib/json/nlohmann
 {% endblock %}
 
 {% block bld_tool %}
