@@ -14,7 +14,3 @@ lib/xml/2
 {% block bld_tool %}
 bld/gtkdoc
 {% endblock %}
-
-{% block cpp_missing %}
-libxml/parser.h
-{% endblock %}

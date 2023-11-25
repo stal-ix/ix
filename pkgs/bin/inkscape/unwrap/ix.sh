@@ -60,10 +60,6 @@ WITH_X11=OFF
 _LIBCPP_ENABLE_CXX17_REMOVED_FEATURES=1
 {% endblock %}
 
-{% block cpp_missing %}
-libxml/parser.h
-{% endblock %}
-
 {% block setup %}
 export CXXFLAGS="-Wno-register ${CXXFLAGS}"
 {% endblock %}
