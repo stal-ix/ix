@@ -25,3 +25,9 @@ shut_up
 {% block bld_tool %}
 bld/perl
 {% endblock %}
+
+{% block patch %}
+find . -name '*.cc' | while read l; do
+    sed -e 's|xmlErrorPtr error =|auto error =|' -i ${l}
+done
+{% endblock %}

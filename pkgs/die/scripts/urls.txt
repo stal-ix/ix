@@ -432,6 +432,7 @@ https://github.com/Genivia/ugrep/archive/refs/tags/v4.3.0.tar.gz
 https://github.com/Genivia/ugrep/archive/refs/tags/v4.3.1.tar.gz
 https://github.com/Genivia/ugrep/archive/refs/tags/v4.3.2.tar.gz
 https://github.com/Genivia/ugrep/archive/refs/tags/v4.3.3.tar.gz
+https://github.com/Genivia/ugrep/archive/refs/tags/v4.3.4.tar.gz
 https://github.com/GrapheneOS/hardened_malloc/archive/refs/tags/11.tar.gz
 https://github.com/Hjdskes/cage/archive/refs/tags/v0.1.4.tar.gz
 https://github.com/HowardHinnant/date/archive/refs/tags/v3.0.1.tar.gz
@@ -587,6 +588,7 @@ https://github.com/ccxvii/mujs/archive/refs/tags/1.3.2.tar.gz
 https://github.com/celluloid-player/celluloid/archive/refs/tags/v0.26.tar.gz
 https://github.com/chenjiandongx/sniffer/archive/refs/tags/v0.6.1.tar.gz
 https://github.com/cisco/openh264/archive/refs/tags/v2.3.1.tar.gz
+https://github.com/cisco/openh264/archive/refs/tags/v2.4.0.tar.gz
 https://github.com/cjlin1/liblinear/archive/v247/liblinear-247.tar.gz
 https://github.com/cli/cli/archive/refs/tags/v2.14.4.tar.gz
 https://github.com/commonmark/cmark/archive/refs/tags/0.30.3.tar.gz
@@ -1334,6 +1336,7 @@ https://gitlab.gnome.org/GNOME/libsoup/-/archive/3.4.3/libsoup-3.4.3.tar.bz2
 https://gitlab.gnome.org/GNOME/libsoup/-/archive/3.4.4/libsoup-3.4.4.tar.bz2
 https://gitlab.gnome.org/GNOME/libxml2/-/archive/v2.11.4/libxml2-v2.11.4.tar.bz2
 https://gitlab.gnome.org/GNOME/libxml2/-/archive/v2.12.0/libxml2-v2.12.0.tar.bz2
+https://gitlab.gnome.org/GNOME/libxml2/-/archive/v2.12.1/libxml2-v2.12.1.tar.bz2
 https://gitlab.gnome.org/GNOME/libxslt/-/archive/v1.1.38/libxslt-v1.1.38.tar.bz2
 https://gitlab.gnome.org/GNOME/libxslt/-/archive/v1.1.39/libxslt-v1.1.39.tar.bz2
 https://gitlab.gnome.org/GNOME/mutter/-/archive/44.beta/mutter-44.beta.tar.bz2
@@ -1461,6 +1464,7 @@ https://sqlite.org/2023/sqlite-autoconf-3430100.tar.gz
 https://sqlite.org/2023/sqlite-autoconf-3430200.tar.gz
 https://sqlite.org/2023/sqlite-autoconf-3440000.tar.gz
 https://sqlite.org/2023/sqlite-autoconf-3440100.tar.gz
+https://sqlite.org/2023/sqlite-autoconf-3440200.tar.gz
 https://src.fedoraproject.org/repo/pkgs/zip/zip30.tar.gz/7b74551e63f8ee6aab6fbc86676c0d37/zip30.tar.gz
 https://static.rust-lang.org/dist/rust-1.56.1-x86_64-unknown-linux-gnu.tar.gz
 https://static.rust-lang.org/dist/rustc-1.54.0-src.tar.gz

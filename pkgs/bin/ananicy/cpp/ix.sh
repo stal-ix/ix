@@ -20,8 +20,8 @@ lib/spdlog
 lib/execinfo
 lib/shim/gnu
 lib/fmt/polyfill
+lib/json/nlohmann
 lib/jthread/polyfill
-lib/json/nlohmann/11
 {% endblock %}
 
 {% block patch %}
