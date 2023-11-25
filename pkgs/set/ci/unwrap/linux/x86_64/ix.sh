@@ -651,7 +651,7 @@ bin/qrencode
 #bin/mutter
 bin/fswatch
 bin/xarchiver
-bin/darktable
+#bin/darktable
 bin/jasper
 bin/earlyoom
 bin/chrony
