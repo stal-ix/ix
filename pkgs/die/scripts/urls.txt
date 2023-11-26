@@ -1403,6 +1403,7 @@ https://mirror.tochlab.net/pub/gnu/help2man/help2man-1.49.2.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/kernel/people/tytso/e2fsprogs/v1.46.6/e2fsprogs-1.46.6.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/libs/ell/ell-0.58.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/libs/ell/ell-0.60.tar.xz
+https://mirrors.edge.kernel.org/pub/linux/libs/ell/ell-0.61.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/network/wireless/iwd-2.8.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/network/wireless/iwd-2.9.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/utils/kbd/kbd-2.6.1.tar.xz
