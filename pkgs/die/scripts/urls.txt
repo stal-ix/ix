@@ -489,6 +489,7 @@ https://github.com/NetworkConfiguration/dhcpcd/archive/refs/tags/v10.0.5.tar.gz
 https://github.com/NetworkConfiguration/openresolv/archive/refs/tags/v3.13.2.tar.gz
 https://github.com/NixOS/nix/archive/refs/tags/2.17.0.tar.gz
 https://github.com/NixOS/nix/archive/refs/tags/2.18.0.tar.gz
+https://github.com/NixOS/nix/archive/refs/tags/2.19.1.tar.gz
 https://github.com/NixOS/patchelf/archive/refs/tags/0.18.0.tar.gz
 https://github.com/Novum/vkQuake/archive/refs/tags/1.30.1.tar.gz
 https://github.com/OpenTTD/OpenTTD/archive/refs/tags/13.4.tar.gz
@@ -827,6 +828,7 @@ https://github.com/kuroko-lang/kuroko/archive/refs/tags/v1.3.1.tar.gz
 https://github.com/kuroko-lang/kuroko/archive/refs/tags/v1.4.0.tar.gz
 https://github.com/labwc/labwc/archive/refs/tags/0.6.4.tar.gz
 https://github.com/labwc/labwc/archive/refs/tags/0.6.5.tar.gz
+https://github.com/labwc/labwc/archive/refs/tags/0.6.6.tar.gz
 https://github.com/landley/toybox/archive/refs/tags/0.8.10.tar.gz
 https://github.com/lbonn/rofi/releases/download/1.7.3%2Bwayland1/rofi-1.7.3+wayland1.tar.xz
 https://github.com/leo-arch/clifm/archive/refs/tags/v1.14.5.tar.gz
@@ -969,9 +971,11 @@ https://github.com/nghttp2/nghttp2/archive/refs/tags/v1.57.0.tar.gz
 https://github.com/nghttp2/nghttp2/archive/refs/tags/v1.58.0.tar.gz
 https://github.com/ngtcp2/nghttp3/archive/refs/tags/v0.15.0.tar.gz
 https://github.com/ngtcp2/nghttp3/archive/refs/tags/v1.0.0.tar.gz
+https://github.com/ngtcp2/nghttp3/archive/refs/tags/v1.1.0.tar.gz
 https://github.com/ngtcp2/ngtcp2/archive/refs/tags/v0.19.0.tar.gz
 https://github.com/ngtcp2/ngtcp2/archive/refs/tags/v1.0.0.tar.gz
 https://github.com/ngtcp2/ngtcp2/archive/refs/tags/v1.0.1.tar.gz
+https://github.com/ngtcp2/ngtcp2/archive/refs/tags/v1.1.0.tar.gz
 https://github.com/nhorman/rng-tools/archive/refs/tags/v6.15.tar.gz
 https://github.com/nibanks/msh3/archive/refs/tags/v0.6.0.tar.gz
 https://github.com/niklata/ndhc/archive/refs/tags/v2022-03-08-v2.tar.gz
@@ -1300,6 +1304,7 @@ https://gitlab.freedesktop.org/wlroots/wlroots/-/archive/0.13.0/wlroots-0.13.0.t
 https://gitlab.freedesktop.org/wlroots/wlroots/-/archive/0.14.1/wlroots-0.14.1.tar.bz2
 https://gitlab.freedesktop.org/wlroots/wlroots/-/archive/0.15.1/wlroots-0.15.1.tar.bz2
 https://gitlab.freedesktop.org/wlroots/wlroots/-/archive/0.16.2/wlroots-0.16.2.tar.bz2
+https://gitlab.freedesktop.org/wlroots/wlroots/-/archive/0.17.0/wlroots-0.17.0.tar.bz2
 https://gitlab.freedesktop.org/xkeyboard-config/xkeyboard-config/-/archive/xkeyboard-config-2.39/xkeyboard-config-xkeyboard-config-2.39.tar.bz2
 https://gitlab.freedesktop.org/xkeyboard-config/xkeyboard-config/-/archive/xkeyboard-config-2.40/xkeyboard-config-xkeyboard-config-2.40.tar.bz2
 https://gitlab.gnome.org/GNOME/atk/-/archive/ATK_2_36_0/atk-ATK_2_36_0.tar.bz2
@@ -1400,6 +1405,7 @@ https://mirror.tochlab.net/pub/gnu/help2man/help2man-1.49.2.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/kernel/people/tytso/e2fsprogs/v1.46.6/e2fsprogs-1.46.6.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/libs/ell/ell-0.58.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/libs/ell/ell-0.60.tar.xz
+https://mirrors.edge.kernel.org/pub/linux/libs/ell/ell-0.61.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/network/wireless/iwd-2.8.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/network/wireless/iwd-2.9.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/utils/kbd/kbd-2.6.1.tar.xz
@@ -1498,6 +1504,7 @@ https://www.cairographics.org/releases/cairomm-1.16.1.tar.xz
 https://www.cairographics.org/releases/pixman-0.42.2.tar.gz
 https://www.claws-mail.org/download.php?file=releases/claws-mail-4.1.0.tar.xz
 https://www.cpan.org/src/5.0/perl-5.36.0.tar.gz
+https://www.cpan.org/src/5.0/perl-5.38.1.tar.gz
 https://www.crufty.net/ftp/pub/sjg/bmake-20230711.tar.gz
 https://www.crufty.net/ftp/pub/sjg/bmake-20230909.tar.gz
 https://www.eecis.udel.edu/~ntp/ntp_spool/ntp4/ntp-4.2/ntp-4.2.8p15.tar.gz

@@ -3,9 +3,6 @@
 {% block fetch %}
 https://www.cpan.org/src/5.0/perl-5.36.0.tar.gz
 sha:e26085af8ac396f62add8a533c3a0ea8c8497d836f0689347ac5abd7b7a4e00a
-# broken build
-#https://www.cpan.org/src/5.0/perl-5.38.0.tar.gz
-#sha:213ef58089d2f2c972ea353517dc60ec3656f050dcc027666e118b508423e517
 {% endblock %}
 
 {% block bld_libs %}
@@ -18,6 +15,7 @@ lib/shim/fake(lib_name=nsl)
 
 {% block bld_tool %}
 bld/bash
+bld/fake(tool_name=install_name_tool,std_box={{std_box}})
 {% endblock %}
 
 {% block build_flags %}
@@ -27,19 +25,6 @@ shut_up
 
 {% block setup %}
 export CFLAGS="-Wno-int-conversion ${CFLAGS}"
-{% endblock %}
-
-{% block setup_tools %}
-cat << EOF > install_name_tool
-#!$(which sh)
-EOF
-
-cat << EOF > sw_vers
-#!$(which sh)
-echo "ProductVersion: 10.12"
-EOF
-
-chmod +x sw_vers install_name_tool
 {% endblock %}
 
 {% block patch %}

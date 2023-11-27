@@ -9,6 +9,19 @@ lib/zstd
 {{super()}}
 {% endblock %}
 
+{% block bld_tool %}
+bin/lld/16/host
+{{super()}}
+{% endblock %}
+
 {% block llvm_targets %}
 lld
+{% endblock %}
+
+{% block cmake_flags %}
+{{super()}}
+LLVM_TABLEGEN=${LLVM_TABLEGEN}
+LLVM_USE_HOST_TOOLS=OFF
+LLVM_INCLUDE_BENCHMARKS=OFF
+LLVM_INCLUDE_TESTS=OFF
 {% endblock %}
