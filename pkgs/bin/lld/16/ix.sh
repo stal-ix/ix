@@ -20,7 +20,6 @@ lld
 
 {% block cmake_flags %}
 {{super()}}
-LLVM_USE_HOST_TOOLS=OFF
 LLVM_INCLUDE_BENCHMARKS=OFF
 LLVM_INCLUDE_TESTS=OFF
 {% endblock %}
