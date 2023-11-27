@@ -26,7 +26,6 @@ lld
 {{super()}}
 export LLVM_TABLEGEN=$(which llvm-tblgen)
 export CLANG_TABLEGEN=$(which clang-tblgen)
-export LLVM_CONFIG_PATH=$(command -v llvm-config)
 {% endblock %}
 
 {% block cmake_flags %}
@@ -36,5 +35,4 @@ LLVM_TABLEGEN=${LLVM_TABLEGEN}
 LLVM_USE_HOST_TOOLS=OFF
 LLVM_INCLUDE_BENCHMARKS=OFF
 LLVM_INCLUDE_TESTS=OFF
-LLVM_CONFIG_PATH=${LLVM_CONFIG_PATH}
 {% endblock %}

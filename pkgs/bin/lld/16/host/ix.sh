@@ -10,6 +10,6 @@ llvm-tblgen
 clang-tblgen
 {% endblock %}
 
-{% block env1 %}
-export CMFLAGS="-DLLVM_NATIVE_TOOL_DIR=${out}/bin \${CMFLAGS}"
+{% block env %}
+export CMFLAGS="-DLLVM_CONFIG_PATH=${out}/bin/llvm-config \${CMFLAGS}"
 {% endblock %}
