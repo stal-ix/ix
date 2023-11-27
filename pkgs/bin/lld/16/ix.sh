@@ -18,11 +18,6 @@ bin/lld/16/host
 lld
 {% endblock %}
 
-{% block setup %}
-{{super()}}
-export LLVM_TABLEGEN=$(which llvm-tblgen)
-{% endblock %}
-
 {% block cmake_flags %}
 {{super()}}
 LLVM_TABLEGEN=${LLVM_TABLEGEN}
