@@ -11,7 +11,5 @@ clang-tblgen
 {% endblock %}
 
 {% block env %}
-export CLANG_TABLEGEN=${out}/bin/clang-tblgen
-export LLVM_TABLEGEN=${out}/bin/llvm-tblgen
-export CMFLAGS="-DLLVM_CONFIG_PATH=${out}/bin/llvm-config -DCLANG_TABLEGEN=\${CLANG_TABLEGEN} \${CMFLAGS}"
+export CMFLAGS="-DLLVM_CONFIG_PATH=${out}/bin/llvm-config -DCLANG_TABLEGEN=${out}/bin/clang-tblgen -DLLVM_TABLEGEN=${out}/bin/llvm-tblgen \${CMFLAGS}"
 {% endblock %}
