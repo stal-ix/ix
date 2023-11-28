@@ -11,6 +11,9 @@ lib/zstd
 
 {% block bld_tool %}
 bin/lld/16/host
+{% if linux %}
+bin/muslstack
+{% endif %}
 {{super()}}
 {% endblock %}
 
@@ -22,4 +25,11 @@ lld
 {{super()}}
 LLVM_INCLUDE_BENCHMARKS=OFF
 LLVM_INCLUDE_TESTS=OFF
+{% endblock %}
+
+{% block install %}
+{{super()}}
+{% if linux %}
+muslstack -s 8388608 ${out}/bin/lld
+{% endif %}
 {% endblock %}
