@@ -10,12 +10,9 @@ tests=disabled
 documentation=disabled
 {% endblock %}
 
-{% block bld_libs %}
-lib/kernel
-{% endblock %}
-
 {% block lib_deps %}
 lib/c
+lib/kernel
 {% endblock %}
 
 {% block env_lib %}

@@ -11,6 +11,9 @@ lib/zstd
 
 {% block bld_tool %}
 bin/lld/16/host
+{% if linux %}
+bin/muslstack
+{% endif %}
 {{super()}}
 {% endblock %}
 
@@ -20,8 +23,13 @@ lld
 
 {% block cmake_flags %}
 {{super()}}
-LLVM_TABLEGEN=${LLVM_TABLEGEN}
-LLVM_USE_HOST_TOOLS=OFF
 LLVM_INCLUDE_BENCHMARKS=OFF
 LLVM_INCLUDE_TESTS=OFF
+{% endblock %}
+
+{% block install %}
+{{super()}}
+{% if linux %}
+muslstack -s 8388608 ${out}/bin/lld
+{% endif %}
 {% endblock %}

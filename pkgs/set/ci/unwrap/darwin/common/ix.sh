@@ -1,6 +1,7 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
+bin/lld/16
 bin/wget
 bin/tmux
 bin/git
