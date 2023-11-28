@@ -1,9 +1,10 @@
 {% extends '//lib/archive/t/ix.sh' %}
 
 {% block bld_libs %}
+{{super()}}
 lib/intl
 lib/nettle
-{{super()}}
+lib/archive/deps
 {% endblock %}
 
 {% block cmake_flags %}
