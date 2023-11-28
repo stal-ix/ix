@@ -1,8 +1,8 @@
 {% extends '//die/c/qt.sh' %}
 
 {% block fetch %}
-https://github.com/qt/qt5compat/archive/refs/tags/v6.6.0.tar.gz
-sha:5ee8437622688c2c6d0041ab62626b740e915d0cd7a26c7bd1b5682f3c90d38a
+https://github.com/qt/qt5compat/archive/refs/tags/v6.6.1.tar.gz
+sha:591f1ca5d514a896f113e23d2edd8c051808e9ad6815ec15fb3abb7d96ca39b2
 {% endblock %}
 
 {% block lib_deps %}
