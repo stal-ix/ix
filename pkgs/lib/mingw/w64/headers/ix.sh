@@ -1,4 +1,4 @@
-{% extends '//lib/mingw/64/t/ix.sh' %}
+{% extends '//lib/mingw/w64/t/ix.sh' %}
 
 {% block unpack %}
 {{super()}}
