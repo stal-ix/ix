@@ -9,3 +9,10 @@ cd mingw-w64-headers
 {{super()}}
 --enable-sdk=all
 {% endblock %}
+
+{% block install %}
+{{super()}}
+rm ${out}/include/pthread_signal.h
+rm ${out}/include/pthread_time.h
+rm ${out}/include/pthread_unistd.h
+{% endblock %}
