@@ -21,3 +21,8 @@ bin/binutils(for_target={{target.gnu.three}})
 {{super()}}
 sed -e 's|libext=lib|libext=a|' -i libtool
 {% endblock %}
+
+{% block install %}
+{{super()}}
+cp fakelib/libgcc.a ${out}/lib/libfake_gcc.a
+{% endblock %}
