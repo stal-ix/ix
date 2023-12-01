@@ -94,6 +94,9 @@ def enrich(d):
 
     d['ptrlen'] = int(d['bits']) // 8
 
+    if 'exe_suffix' not in d:
+        d['exe_suffix'] = ''
+
     if 'id' not in d:
         d['id'] = calc_id(d)
 
@@ -143,6 +146,7 @@ def get_raw_arch(n):
             'cmake_system_name': 'MSYS',
             'vendor': 'w64',
             'gnu_vendor': 'w64',
+            'exe_suffix': '.exe',
         }
 
     if n == 'x86_64':
