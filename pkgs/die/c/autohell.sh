@@ -5,6 +5,21 @@ export FORCE_UNSAFE_CONFIGURE=1
 {{super()}}
 {% endblock %}
 
+{% block std_box %}
+{{super()}}
+{% if mingw32 %}
+bin/libtool
+bin/binutils(for_target={{target.gnu.three}})
+{% endif %}
+{% endblock %}
+
+{% block make_flags %}
+{{super()}}
+{% if mingw32 %}
+LIBTOOL=glibtool
+{% endif %}
+{% endblock %}
+
 {% block configure %}
 {% if not tool %}
 export CC_FOR_BUILD=${HOST_CC}
