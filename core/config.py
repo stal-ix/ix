@@ -194,7 +194,7 @@ def get_raw_arch(n):
     if n == 'wasi-wasm64':
         return a('wasi64')
 
-    if n == 'mingw64-x86_64':
+    if n == 'mingw-w64-x86_64':
         return du(a('mingw-w64'), a('x86_64'))
 
     raise ce.Error(f'unknown target {n}')
