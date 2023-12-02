@@ -9,7 +9,8 @@ export FORCE_UNSAFE_CONFIGURE=1
 {{super()}}
 {% if mingw32 %}
 bin/libtool
-bin/binutils(for_target={{target.gnu.three}})
+bld/fake/gcc(bin_prefix={{target.gnu.three}}-)
+bin/binutils(for_target={{target.gnu.three}},bin_prefix={{target.gnu.three}}-)
 {% endif %}
 {% endblock %}
 
