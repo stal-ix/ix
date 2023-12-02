@@ -17,7 +17,7 @@ bin/binutils(for_target={{target.gnu.three}},bin_prefix={{target.gnu.three}}-)
 {% block make_flags %}
 {{super()}}
 {% if mingw32 %}
-LIBTOOL=glibtool
+LIBTOOL=${LIBTOOL}
 {% endif %}
 {% endblock %}
 
