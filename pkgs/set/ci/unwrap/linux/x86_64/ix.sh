@@ -431,7 +431,7 @@ bin/acpid/2
 bin/acpid/rules
 bin/acpid/runit
 bin/acpid/d
-bin/netcat
+bin/net/cat
 bin/basuctl
 bin/xmlwf
 bin/uconv
