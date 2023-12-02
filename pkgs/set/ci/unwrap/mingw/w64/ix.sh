@@ -4,6 +4,7 @@
 bin/b64
 bin/sed
 bin/yajl
+bin/gzip
 bin/nasm
 bin/iconv
 bin/bison/3/8
