@@ -33,7 +33,9 @@ bin/binutils(for_target={{target.gnu.three}})
 {{super()}}
 cd ${out}/lib
 llvm-ar q libmingwcrt.a *.o
-llvm-objcopy --redefine-sym atexit=atexit_1 libmsvcr120.a
-llvm-objcopy --redefine-sym atexit=atexit_2 libmsvcr120_app.a
-llvm-objcopy --redefine-sym atexit=atexit_3 libmsvcr120d.a
+for x in atexit strtold; do
+    llvm-objcopy --redefine-sym ${x}=${x}_1 libmsvcr120.a
+    llvm-objcopy --redefine-sym ${x}=${x}_2 libmsvcr120_app.a
+    llvm-objcopy --redefine-sym ${x}=${x}_3 libmsvcr120d.a
+done
 {% endblock %}

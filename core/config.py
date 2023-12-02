@@ -143,7 +143,7 @@ def get_raw_arch(n):
             'os': 'mingw32',
             'kernel': 'nt',
             'obj_fmt': 'coff',
-            'cmake_system_name': 'MSYS',
+            'cmake_system_name': 'Windows',
             'vendor': 'w64',
             'gnu_vendor': 'w64',
             'exe_suffix': '.exe',
