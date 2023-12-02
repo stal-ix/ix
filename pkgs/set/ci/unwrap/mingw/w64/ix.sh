@@ -6,4 +6,5 @@ bin/sed
 bin/yajl
 bin/nasm
 bin/iconv
+bin/bison/3/8
 {% endblock %}
