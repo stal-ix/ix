@@ -9,5 +9,6 @@ bin/gzip
 bin/nasm
 bin/iconv
 bin/idn/2
+bin/mawk/lite
 bin/bison/3/8
 {% endblock %}
