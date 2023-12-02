@@ -1135,6 +1135,7 @@ https://github.com/sctplab/usrsctp/archive/refs/tags/0.9.5.0.tar.gz
 https://github.com/sddm/sddm/archive/refs/tags/v0.20.0.tar.gz
 https://github.com/sde1000/python-xkbcommon/archive/refs/tags/v0.8.tar.gz
 https://github.com/seccomp/libseccomp/archive/refs/tags/v2.5.4.tar.gz
+https://github.com/seccomp/libseccomp/archive/refs/tags/v2.5.5.tar.gz
 https://github.com/sekrit-twc/zimg/archive/refs/tags/release-3.0.4.tar.gz
 https://github.com/shadow-maint/shadow/archive/refs/tags/4.13.tar.gz
 https://github.com/shadow-maint/shadow/archive/refs/tags/4.14.1.tar.gz
@@ -1310,6 +1311,7 @@ https://gitlab.freedesktop.org/gstreamer/gstreamer/-/archive/1.22.5/gstreamer-1.
 https://gitlab.freedesktop.org/gstreamer/gstreamer/-/archive/1.22.6/gstreamer-1.22.6.tar.gz
 https://gitlab.freedesktop.org/gstreamer/gstreamer/-/archive/1.22.7/gstreamer-1.22.7.tar.gz
 https://gitlab.freedesktop.org/libdecor/libdecor/-/archive/0.2.0/libdecor-0.2.0.tar.bz2
+https://gitlab.freedesktop.org/libdecor/libdecor/-/archive/0.2.1/libdecor-0.2.1.tar.bz2
 https://gitlab.freedesktop.org/libfprint/libfprint/-/archive/v1.94.5/libfprint-v1.94.5.tar.bz2
 https://gitlab.freedesktop.org/libinput/libei/-/archive/1.1.0/libei-1.1.0.tar.bz2
 https://gitlab.freedesktop.org/mesa/glu/-/archive/glu-9.0.3/glu-glu-9.0.3.tar.bz2
