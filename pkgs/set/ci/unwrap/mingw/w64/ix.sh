@@ -7,6 +7,7 @@ bin/idn
 bin/yajl
 bin/gzip
 bin/nasm
+bin/re2c
 bin/iconv
 bin/idn/2
 bin/mawk/lite
