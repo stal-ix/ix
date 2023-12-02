@@ -197,6 +197,9 @@ def get_raw_arch(n):
     if n == 'mingw-w64-x86_64':
         return du(a('mingw-w64'), a('x86_64'))
 
+    if n == 'mingw64':
+        return a('mingw-w64-x86_64')
+
     raise ce.Error(f'unknown target {n}')
 
 
