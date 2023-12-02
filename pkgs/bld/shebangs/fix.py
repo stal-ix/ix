@@ -13,8 +13,10 @@ def fix_line(l):
 def fix(data):
     if data[:2].decode() == '#!':
         p = data.index(b'\n')
+        pd = data[:p].decode()
 
-        return fix_line(data[:p].decode()).encode() + data[p:]
+        if '/usr/bin/env' not in pd:
+            return fix_line(pd).encode() + data[p:]
 
     return data
 

@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://github.com/seccomp/libseccomp/archive/refs/tags/v2.5.4.tar.gz
-sha:96bbadb4384716272a6d2be82801dc564f7aab345febfe9b698b70fc606e3f75
+https://github.com/seccomp/libseccomp/archive/refs/tags/v2.5.5.tar.gz
+sha:7082b016d3cbda3e15c0e71ebd018023d693bb7507389b32f943db13f935e01d
 {% endblock %}
 
 {% block lib_deps %}
@@ -14,8 +14,9 @@ lib/kernel
 {% endblock %}
 
 {% block bld_tool %}
-bin/gperf
 bld/bash
+bin/gperf
+bld/shebangs
 {% endblock %}
 
 {% block conf_ver %}
@@ -23,7 +24,7 @@ bld/bash
 {% endblock %}
 
 {% block patch %}
-find . -type f | while read l; do
-    sed -e 's|#!/bin/bash|#!/usr/bin/env bash|' -i ${l}
+find . -executable -type f | while read l; do
+    fix_shebangs ${l}
 done
 {% endblock %}
