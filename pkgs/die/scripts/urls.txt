@@ -207,6 +207,7 @@ https://downloads.sourceforge.net/project/libwpg/libwpg/libwpg-0.3.3/libwpg-0.3.
 https://downloads.sourceforge.net/project/linux-diag/sysfsutils/2.1.0/sysfsutils-2.1.0.tar.gz
 https://downloads.sourceforge.net/project/maxima/Maxima-source/5.47.0-source/maxima-5.47.0.tar.gz
 https://downloads.sourceforge.net/project/mikmod/libmikmod/3.3.11.1/libmikmod-3.3.11.1.tar.gz
+https://downloads.sourceforge.net/project/mingw-w64/mingw-w64/mingw-w64-release/mingw-w64-v11.0.1.tar.bz2
 https://downloads.sourceforge.net/project/mscorefonts2/cabs/PowerPointViewer.exe
 https://downloads.sourceforge.net/project/net-tools/net-tools-2.10.tar.xz
 https://downloads.sourceforge.net/project/nfs/nfs-utils/2.6.3/nfs-utils-2.6.3.tar.xz
@@ -420,6 +421,7 @@ https://github.com/GNOME/gthumb/archive/refs/tags/3.12.2.tar.gz
 https://github.com/GNOME/gtk-doc/archive/refs/tags/GTK_DOC_1_32.tar.gz
 https://github.com/GNOME/json-glib/archive/refs/tags/1.8.0.tar.gz
 https://github.com/GNOME/libadwaita/archive/refs/tags/1.4.0.tar.gz
+https://github.com/GNOME/libadwaita/archive/refs/tags/1.4.2.tar.gz
 https://github.com/GNOME/libadwaita/archive/refs/tags/1.4.beta.tar.gz
 https://github.com/GNOME/libgudev/archive/refs/tags/237.tar.gz
 https://github.com/GNOME/libshumate/archive/refs/tags/1.0.5.tar.gz
@@ -493,6 +495,7 @@ https://github.com/NetworkConfiguration/openresolv/archive/refs/tags/v3.13.2.tar
 https://github.com/NixOS/nix/archive/refs/tags/2.17.0.tar.gz
 https://github.com/NixOS/nix/archive/refs/tags/2.18.0.tar.gz
 https://github.com/NixOS/nix/archive/refs/tags/2.19.1.tar.gz
+https://github.com/NixOS/nix/archive/refs/tags/2.19.2.tar.gz
 https://github.com/NixOS/patchelf/archive/refs/tags/0.18.0.tar.gz
 https://github.com/Novum/vkQuake/archive/refs/tags/1.30.1.tar.gz
 https://github.com/OpenTTD/OpenTTD/archive/refs/tags/13.4.tar.gz
@@ -591,6 +594,7 @@ https://github.com/ccache/ccache/releases/download/v4.8.3/ccache-4.8.3.tar.xz
 https://github.com/ccxvii/mujs/archive/refs/tags/1.3.2.tar.gz
 https://github.com/celluloid-player/celluloid/archive/refs/tags/v0.26.tar.gz
 https://github.com/chenjiandongx/sniffer/archive/refs/tags/v0.6.1.tar.gz
+https://github.com/cilium/pwru/archive/refs/tags/v1.0.4.tar.gz
 https://github.com/cisco/openh264/archive/refs/tags/v2.3.1.tar.gz
 https://github.com/cisco/openh264/archive/refs/tags/v2.4.0.tar.gz
 https://github.com/cjlin1/liblinear/archive/v247/liblinear-247.tar.gz
@@ -685,6 +689,7 @@ https://github.com/gambit/gambit/archive/refs/tags/v4.9.5.tar.gz
 https://github.com/gavinhoward/bc/archive/refs/tags/6.6.0.tar.gz
 https://github.com/gavinhoward/bc/archive/refs/tags/6.6.1.tar.gz
 https://github.com/gavinhoward/bc/archive/refs/tags/6.7.0.tar.gz
+https://github.com/gavinhoward/bc/archive/refs/tags/6.7.3.tar.gz
 https://github.com/gcla/termshark/archive/refs/tags/v2.4.0.tar.gz
 https://github.com/geany/geany/archive/refs/tags/1.38.0.tar.gz
 https://github.com/geany/geany/archive/refs/tags/2.0.0.tar.gz
@@ -784,6 +789,7 @@ https://github.com/jarun/nnn/archive/refs/tags/v4.9.tar.gz
 https://github.com/jasper-software/jasper/archive/refs/tags/version-3.0.5.tar.gz
 https://github.com/jasper-software/jasper/archive/refs/tags/version-4.0.1.tar.gz
 https://github.com/jasper-software/jasper/archive/refs/tags/version-4.1.0.tar.gz
+https://github.com/jasper-software/jasper/archive/refs/tags/version-4.1.1.tar.gz
 https://github.com/jbeder/yaml-cpp/archive/refs/tags/yaml-cpp-0.7.0.tar.gz
 https://github.com/jeaye/stdman/archive/refs/tags/2022.07.30.tar.gz
 https://github.com/jech/dht/archive/refs/tags/dht-0.27.tar.gz
@@ -1119,6 +1125,7 @@ https://github.com/rui314/mold/archive/refs/tags/v2.3.0.tar.gz
 https://github.com/rui314/mold/archive/refs/tags/v2.3.1.tar.gz
 https://github.com/rui314/mold/archive/refs/tags/v2.3.2.tar.gz
 https://github.com/rui314/mold/archive/refs/tags/v2.3.3.tar.gz
+https://github.com/rui314/mold/archive/refs/tags/v2.4.0.tar.gz
 https://github.com/rvaiya/keyd/archive/refs/tags/v2.4.3.tar.gz
 https://github.com/rzvncj/xCHM/archive/refs/tags/1.35.tar.gz
 https://github.com/rzvncj/xCHM/archive/refs/tags/1.36.tar.gz
@@ -1131,6 +1138,7 @@ https://github.com/sctplab/usrsctp/archive/refs/tags/0.9.5.0.tar.gz
 https://github.com/sddm/sddm/archive/refs/tags/v0.20.0.tar.gz
 https://github.com/sde1000/python-xkbcommon/archive/refs/tags/v0.8.tar.gz
 https://github.com/seccomp/libseccomp/archive/refs/tags/v2.5.4.tar.gz
+https://github.com/seccomp/libseccomp/archive/refs/tags/v2.5.5.tar.gz
 https://github.com/sekrit-twc/zimg/archive/refs/tags/release-3.0.4.tar.gz
 https://github.com/shadow-maint/shadow/archive/refs/tags/4.13.tar.gz
 https://github.com/shadow-maint/shadow/archive/refs/tags/4.14.1.tar.gz
@@ -1180,6 +1188,7 @@ https://github.com/telegramdesktop/tdesktop/releases/download/v4.11.5/tdesktop-4
 https://github.com/telegramdesktop/tdesktop/releases/download/v4.11.6/tdesktop-4.11.6-full.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v4.11.7/tdesktop-4.11.7-full.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v4.11.8/tdesktop-4.11.8-full.tar.gz
+https://github.com/telegramdesktop/tdesktop/releases/download/v4.12.1/tdesktop-4.12.1-full.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v4.8.10/tdesktop-4.8.10-full.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v4.8.12/tdesktop-4.8.12-full.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v4.9.0/tdesktop-4.9.0-full.tar.gz
@@ -1296,6 +1305,7 @@ https://gitlab.com/interception/linux/tools/-/archive/v0.6.8/tools-v0.6.8.tar.bz
 https://gitlab.com/jeanfi/psensor/-/archive/1.2.1/psensor-1.2.1.tar.bz2
 https://gitlab.com/mbunkus/mkvtoolnix/-/archive/release-79.0/mkvtoolnix-release-79.0.tar.bz2
 https://gitlab.com/mbunkus/mkvtoolnix/-/archive/release-80.0/mkvtoolnix-release-80.0.tar.bz2
+https://gitlab.com/mbunkus/mkvtoolnix/-/archive/release-81.0/mkvtoolnix-release-81.0.tar.bz2
 https://gitlab.com/procps-ng/procps/-/archive/v4.0.4/procps-v4.0.4.tar.bz2
 https://gitlab.com/psmisc/psmisc/-/archive/v23.6/psmisc-v23.6.tar.bz2
 https://gitlab.com/qemu-project/keycodemapdb/-/archive/22b8996dba9041874845c7446ce89ec4ae2b713d/keycodemapdb-22b8996dba9041874845c7446ce89ec4ae2b713d.tar.bz2
@@ -1306,6 +1316,7 @@ https://gitlab.freedesktop.org/gstreamer/gstreamer/-/archive/1.22.5/gstreamer-1.
 https://gitlab.freedesktop.org/gstreamer/gstreamer/-/archive/1.22.6/gstreamer-1.22.6.tar.gz
 https://gitlab.freedesktop.org/gstreamer/gstreamer/-/archive/1.22.7/gstreamer-1.22.7.tar.gz
 https://gitlab.freedesktop.org/libdecor/libdecor/-/archive/0.2.0/libdecor-0.2.0.tar.bz2
+https://gitlab.freedesktop.org/libdecor/libdecor/-/archive/0.2.1/libdecor-0.2.1.tar.bz2
 https://gitlab.freedesktop.org/libfprint/libfprint/-/archive/v1.94.5/libfprint-v1.94.5.tar.bz2
 https://gitlab.freedesktop.org/libinput/libei/-/archive/1.1.0/libei-1.1.0.tar.bz2
 https://gitlab.freedesktop.org/mesa/glu/-/archive/glu-9.0.3/glu-glu-9.0.3.tar.bz2
@@ -1445,6 +1456,7 @@ https://pm-utils.freedesktop.org/releases/pm-utils-1.4.1.tar.gz
 https://poppler.freedesktop.org/poppler-23.09.0.tar.xz
 https://poppler.freedesktop.org/poppler-23.10.0.tar.xz
 https://poppler.freedesktop.org/poppler-23.11.0.tar.xz
+https://poppler.freedesktop.org/poppler-23.12.0.tar.xz
 https://pwmt.org/projects/zathura-djvu/download/zathura-djvu-0.2.9.tar.xz
 https://pwmt.org/projects/zathura-pdf-poppler/download/zathura-pdf-poppler-0.3.1.tar.xz
 https://raw.githubusercontent.com/Homebrew/patches/1860b0a745f1fe726900974845d1b0dd3c3398d6/openssh/patch-sandbox-darwin.c-apple-sandbox-named-external.diff
@@ -1523,8 +1535,10 @@ https://www.cairographics.org/releases/pixman-0.42.2.tar.gz
 https://www.claws-mail.org/download.php?file=releases/claws-mail-4.1.0.tar.xz
 https://www.cpan.org/src/5.0/perl-5.36.0.tar.gz
 https://www.cpan.org/src/5.0/perl-5.38.1.tar.gz
+https://www.cpan.org/src/5.0/perl-5.38.2.tar.gz
 https://www.crufty.net/ftp/pub/sjg/bmake-20230711.tar.gz
 https://www.crufty.net/ftp/pub/sjg/bmake-20230909.tar.gz
+https://www.crufty.net/ftp/pub/sjg/bmake-20231124.tar.gz
 https://www.eecis.udel.edu/~ntp/ntp_spool/ntp4/ntp-4.2/ntp-4.2.8p15.tar.gz
 https://www.freedesktop.org/software/colord/releases/colord-1.4.6.tar.xz
 https://www.freedesktop.org/software/fontconfig/release/fontconfig-2.14.2.tar.xz

@@ -25,7 +25,7 @@ def add_gnu(d):
     g = d['gnu']
 
     if 'three' not in g:
-        g['three'] = f'{d["gnu_arch"]}-{d["hw_vendor"]}-{d["os"]}'
+        g['three'] = f'{d["gnu_arch"]}-{d["gnu_vendor"]}-{d["os"]}'
 
     if 'four' not in g:
         g['four'] = f'{g["three"]}-{d["obj_fmt"]}'
@@ -86,9 +86,6 @@ def enrich(d):
 
     add_gnu(d)
 
-    if 'id' not in d:
-        d['id'] = calc_id(d)
-
     if 'uname_m' not in d:
         d['uname_m'] = d['arch']
 
@@ -96,6 +93,12 @@ def enrich(d):
         d['uname_s'] = d['cmake_system_name']
 
     d['ptrlen'] = int(d['bits']) // 8
+
+    if 'exe_suffix' not in d:
+        d['exe_suffix'] = ''
+
+    if 'id' not in d:
+        d['id'] = calc_id(d)
 
     return d
 
@@ -109,7 +112,7 @@ def get_raw_arch(n):
             'os': 'wasi',
             'kernel': 'wasi',
             'vendor': 'unknown',
-            'hw_vendor': 'unknown',
+            'gnu_vendor': 'unknown',
             'obj_fmt': 'wasm',
             'cmake_system_name': 'Wasi', # wild guess
         }
@@ -128,11 +131,22 @@ def get_raw_arch(n):
             'os': 'darwin',
             'kernel': 'xnu',
             'vendor': 'apple',
-            'hw_vendor': 'apple',
+            'gnu_vendor': 'apple',
             'obj_fmt': 'mach-o',
             'cmake_system_name': 'Darwin',
             'dl_suffix': 'dylib',
             'symbol_prefix': '_',
+        }
+
+    if n == 'mingw-w64':
+        return {
+            'os': 'mingw32',
+            'kernel': 'nt',
+            'obj_fmt': 'coff',
+            'cmake_system_name': 'Windows',
+            'vendor': 'w64',
+            'gnu_vendor': 'w64',
+            'exe_suffix': '.exe',
         }
 
     if n == 'x86_64':
@@ -160,13 +174,13 @@ def get_raw_arch(n):
         return du(a('darwin'), a('x86_64'))
 
     if n == 'linux-x86_64':
-        return du(a('linux'), a('x86_64'), {'hw_vendor': 'pc'})
+        return du(a('linux'), a('x86_64'), {'gnu_vendor': 'pc'})
 
     if n == 'linux-aarch64':
-        return du(a('linux'), a('aarch64'), {'hw_vendor': 'pc'})
+        return du(a('linux'), a('aarch64'), {'gnu_vendor': 'pc'})
 
     if n == 'linux-riscv64':
-        return du(a('linux'), a('riscv64'), {'hw_vendor': 'unknown'})
+        return du(a('linux'), a('riscv64'), {'gnu_vendor': 'unknown'})
 
     if n == 'wasi32':
         return du(a('wasi'), a('wasm32'))
@@ -179,6 +193,12 @@ def get_raw_arch(n):
 
     if n == 'wasi-wasm64':
         return a('wasi64')
+
+    if n == 'mingw-w64-x86_64':
+        return du(a('mingw-w64'), a('x86_64'))
+
+    if n == 'mingw64':
+        return a('mingw-w64-x86_64')
 
     raise ce.Error(f'unknown target {n}')
 

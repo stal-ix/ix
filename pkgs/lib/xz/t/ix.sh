@@ -9,6 +9,13 @@ sha:da9dec6c12cf2ecf269c31ab65b5de18e8e52b96f35d5bcd08c12b43e6878803
 lib/c
 {% endblock %}
 
+{% block std_box %}
+{% if mingw32 %}
+bin/slibtool
+{% endif %}
+{{super()}}
+{% endblock %}
+
 {% block configure_flags %}
 {% if wasi %}
 --enable-threads=no

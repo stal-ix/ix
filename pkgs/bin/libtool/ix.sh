@@ -23,5 +23,6 @@ ln -s libtool glibtool
 {% endblock %}
 
 {% block env %}
+export LIBTOOL=glibtool
 export LIBTOOLIZE=libtoolize
 {% endblock %}

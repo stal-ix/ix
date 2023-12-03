@@ -14,5 +14,14 @@ bld/m4
 {% endblock %}
 
 {% block configure %}
+{% if help %}
+sh ./configure --help
+exit 1
+{% else %}
 sh ./configure --prefix=${out}
+{% endif %}
+{% endblock %}
+
+{% block env %}
+export LIBTOOL=slibtool-static
 {% endblock %}

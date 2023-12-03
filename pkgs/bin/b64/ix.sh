@@ -15,7 +15,7 @@ ${CC} ${src}/b64.c -o base64
 
 {% block install %}
 mkdir ${out}/bin
-cp base64 ${out}/bin
+cp base64{{target.exe_suffix}} ${out}/bin
 {% endblock %}
 
 {% block bld_libs %}

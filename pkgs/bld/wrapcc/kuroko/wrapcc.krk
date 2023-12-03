@@ -26,6 +26,9 @@ def flt_args(argv):
         if x.startswith('-L/lib/'):
             continue
 
+        if x.startswith('-mcpu'):
+            continue
+
         if x == '-L/lib':
             continue
 
