@@ -21,14 +21,6 @@ cd mingw-w64-crt
 {% endif %}
 {% endblock %}
 
-{% block build_flags %}
-shut_up
-{% endblock %}
-
-{% block bld_tool %}
-bin/binutils(for_target={{target.gnu.three}})
-{% endblock %}
-
 {% block install %}
 {{super()}}
 cd ${out}/lib
