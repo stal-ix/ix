@@ -111,6 +111,7 @@ https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.5.9.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.6.1.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.6.2.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.6.3.tar.xz
+https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.6.4.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.6.tar.xz
 https://cmocka.org/files/1.1/cmocka-1.1.7.tar.xz
 https://codeberg.org/dnkl/fcft/archive/2.5.0.tar.gz
@@ -295,6 +296,7 @@ https://ftp.gnu.org/gnu/gcc/gcc-8.5.0/gcc-8.5.0.tar.xz
 https://ftp.gnu.org/gnu/gcc/gcc-9.4.0/gcc-9.4.0.tar.xz
 https://ftp.gnu.org/gnu/gcc/gcc-9.5.0/gcc-9.5.0.tar.xz
 https://ftp.gnu.org/gnu/gdb/gdb-13.2.tar.xz
+https://ftp.gnu.org/gnu/gdb/gdb-14.1.tar.xz
 https://ftp.gnu.org/gnu/gdbm/gdbm-1.19.tar.gz
 https://ftp.gnu.org/gnu/gmp/gmp-6.3.0.tar.xz
 https://ftp.gnu.org/gnu/grep/grep-3.11.tar.xz

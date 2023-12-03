@@ -9,3 +9,7 @@ sha:e35991b6e17001afa2c0ca3b10c357650602b92596209b7492802f3768a6285f
 lib/c
 lib/idn/2
 {% endblock %}
+
+{% block patch %}
+sed -e 's|.*subdir.*tools.*||' -i meson.build
+{% endblock %}

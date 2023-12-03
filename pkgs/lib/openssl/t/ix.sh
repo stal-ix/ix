@@ -10,6 +10,9 @@ lib/kernel
 
 {% block bld_tool %}
 bld/perl
+{% if mingw32 %}
+bld/windres(for_target={{target.gnu.three}})
+{% endif %}
 {% endblock %}
 
 {% block use_data %}
@@ -48,6 +51,9 @@ PLATFORM_darwin_x86_64="darwin64-x86_64-cc"
 PLATFORM_linux_x86_64="linux-x86_64-clang"
 PLATFORM_linux_aarch64="linux-aarch64"
 PLATFORM_linux_riscv64="linux64-riscv64"
+{% if mingw32 %}
+PLATFORM_mingw32_x86_64="mingw64"
+{% endif %}
 {% endblock %}
 
 perl ./Configure \

@@ -1,8 +1,8 @@
 {% extends '//lib/mingw/w64/t/ix.sh' %}
 
-{% block lib_deps %}
-lib/mingw/w64/headers
+{% block bld_libs %}
 lib/mingw/w64/pthreads
+lib/mingw/w64/headers
 {% endblock %}
 
 {% block unpack %}
@@ -19,14 +19,6 @@ cd mingw-w64-crt
 --disable-lib64
 --enable-lib32
 {% endif %}
-{% endblock %}
-
-{% block build_flags %}
-shut_up
-{% endblock %}
-
-{% block bld_tool %}
-bin/binutils(for_target={{target.gnu.three}})
 {% endblock %}
 
 {% block install %}
