@@ -14,4 +14,5 @@ bin/protoc
 bin/lld/16
 bin/mawk/lite
 bin/bison/3/8
+bin/curl/lite
 {% endblock %}

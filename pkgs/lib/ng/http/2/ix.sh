@@ -5,6 +5,11 @@
 --enable-lib-only
 {% endblock %}
 
+{% block cpp_defines %}
+NGHTTP2_STATICLIB=1
+{% endblock %}
+
 {% block env %}
+export CPPFLAGS="-DNGHTTP2_STATICLIB=1 \${CPPFLAGS}"
 export COFLAGS="--with-nghttp2=${out} --with-libnghttp2=${out} \${COFLAGS}"
 {% endblock %}
