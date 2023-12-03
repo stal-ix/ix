@@ -6,6 +6,7 @@
 {% endblock %}
 
 {% block cpp_defines %}
+{{super()}}
 NGHTTP2_STATICLIB=1
 {% endblock %}
 
