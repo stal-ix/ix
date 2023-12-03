@@ -10,13 +10,6 @@ cd mingw-w64-headers
 --enable-sdk=all
 {% endblock %}
 
-{% block install %}
-{{super()}}
-rm ${out}/include/pthread_signal.h
-rm ${out}/include/pthread_time.h
-rm ${out}/include/pthread_unistd.h
-{% endblock %}
-
 {% block env %}
 export CPPFLAGS="-isystem${out}/include \${CPPFLAGS}"
 {% endblock %}

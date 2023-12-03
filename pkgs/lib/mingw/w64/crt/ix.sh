@@ -1,8 +1,8 @@
 {% extends '//lib/mingw/w64/t/ix.sh' %}
 
-{% block lib_deps %}
-lib/mingw/w64/headers
+{% block bld_libs %}
 lib/mingw/w64/pthreads
+lib/mingw/w64/headers
 {% endblock %}
 
 {% block unpack %}
