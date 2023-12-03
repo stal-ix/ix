@@ -9,19 +9,6 @@ lib/mingw/w64/headers
 cd mingw-w64-libraries/winpthreads
 {% endblock %}
 
-{% block build_flags %}
-shut_up
-{% endblock %}
-
-{% block bld_tool %}
-bin/binutils(for_target={{target.gnu.three}})
-{% endblock %}
-
-{% block configure %}
-{{super()}}
-sed -e 's|libext=lib|libext=a|' -i libtool
-{% endblock %}
-
 {% block install %}
 {{super()}}
 cp fakelib/libgcc.a ${out}/lib/libfake_gcc.a
