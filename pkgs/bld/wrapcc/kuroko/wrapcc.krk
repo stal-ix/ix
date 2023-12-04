@@ -68,6 +68,8 @@ def flt_objs(argv):
     for x in argv:
         if x.endswith('.o'):
             yield x
+        elif x.startswith('-Wl,'):
+            pass
         elif '/store/' in x:
             pass
         elif x.endswith('.a'):
@@ -116,6 +118,9 @@ def link(objs, args):
             return link1(x, objs)
 
         if '.dylib' in x:
+            return link1(x, objs)
+
+        if '.dll' in x:
             return link1(x, objs)
 
 def retry(args):
