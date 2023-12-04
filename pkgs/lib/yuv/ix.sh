@@ -15,19 +15,11 @@ c0daf64cc8e6ada4844dc316a6b6e689a420a0d5ce8d9094850857e14394769c
 {% block lib_deps %}
 lib/c
 lib/jpeg
-{% endblock %}
-
-{% block bld_tool %}
-bld/genpc
+lib/shim/fake/pkg(pkg_name=libyuv,pkg_ver=100.0.0)
 {% endblock %}
 
 {% block skip_dirs %}0{% endblock %}
 
 {% block build_flags %}
 wrap_cc
-{% endblock %}
-
-{% block install %}
-{{super()}}
-genpc "libyuv" "100.0.0"
 {% endblock %}

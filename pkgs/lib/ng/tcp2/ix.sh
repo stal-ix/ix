@@ -25,4 +25,6 @@ export CXXFLAGS="-std=c++17 ${CXXFLAGS}"
 
 {% block patch %}
 touch crypto/includes/ngtcp2/ngtcp2_crypto_openssl.h
+sed -e 's|.*add_sub.*examples.*||' -i CMakeLists.txt
+sed -e 's|.*add_sub.*tests.*||' -i CMakeLists.txt
 {% endblock %}

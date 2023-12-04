@@ -2,8 +2,21 @@
 
 {% block bld_libs %}
 {{super()}}
+lib/sodium
 lib/hiredis
 lib/ng/http/2
+lib/protobuf/c
+{% endblock %}
+
+{% block configure_flags %}
+{{super()}}
+--enable-dnstap
+--enable-dnscrypt
+{% endblock %}
+
+{% block bld_tool %}
+{{super()}}
+bin/protoc/c
 {% endblock %}
 
 {% block setup %}
