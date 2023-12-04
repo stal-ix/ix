@@ -1208,6 +1208,7 @@ https://github.com/thkukuk/libnsl/releases/download/v2.0.0/libnsl-2.0.0.tar.xz
 https://github.com/thkukuk/libnsl/releases/download/v2.0.1/libnsl-2.0.1.tar.xz
 https://github.com/thkukuk/rpcsvc-proto/archive/refs/tags/v1.4.3.tar.gz
 https://github.com/thom311/libnl/releases/download/libnl3_8_0/libnl-3.8.0.tar.gz
+https://github.com/thom311/libnl/releases/download/libnl3_9_0/libnl-3.9.0.tar.gz
 https://github.com/tinyalsa/tinyalsa/archive/refs/tags/v2.0.0.tar.gz
 https://github.com/tjko/jpegoptim/archive/refs/tags/v1.5.2.tar.gz
 https://github.com/tldr-pages/tldr-c-client/archive/refs/tags/v1.5.0.tar.gz
