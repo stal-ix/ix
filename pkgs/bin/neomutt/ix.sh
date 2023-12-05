@@ -15,9 +15,9 @@ lib/lmdb
 lib/idn/2
 lib/gnutls
 lib/curses
+lib/pcre/2
 lib/openssl
 lib/sqlite/3
-lib/pcre/2/posix
 {% endblock %}
 
 {% block configure %}

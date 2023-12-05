@@ -15,9 +15,9 @@ lib/curses
 lib/gnutls
 lib/kernel
 lib/snappy
+lib/pcre/2
 lib/execinfo
 lib/readline
-lib/pcre/2/posix
 {% endblock %}
 
 {% block bld_tool %}

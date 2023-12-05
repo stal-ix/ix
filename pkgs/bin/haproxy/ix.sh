@@ -11,7 +11,6 @@ lib/kernel
 lib/pcre/2
 lib/openssl
 lib/execinfo
-lib/pcre/2/posix
 {% endblock %}
 
 {% block make_flags %}

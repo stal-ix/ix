@@ -9,8 +9,8 @@ sha:1775427a6098f441ddbaa5bd4e9b8a043c7401e450ed761e69a415530fea81d2
 lib/c
 lib/z
 lib/ssh/2
+lib/pcre/2
 lib/openssl
-lib/pcre/2/posix
 {% endblock %}
 
 {% block bld_tool %}
