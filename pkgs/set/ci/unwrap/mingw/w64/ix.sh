@@ -4,6 +4,7 @@
 bin/b64
 bin/sed
 bin/idn
+bin/file
 bin/yajl
 bin/gzip
 bin/nasm

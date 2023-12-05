@@ -1,4 +1,4 @@
-{% extends '//bin/file/ix.sh' %}
+{% extends '//bin/file/host/ix.sh' %}
 
 {% block lib_deps %}
 {% endblock %}
