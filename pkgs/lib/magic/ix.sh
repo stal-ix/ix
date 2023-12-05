@@ -15,6 +15,16 @@ lib/shim/fake(lib_name=gnurx)
 {% endif %}
 {% endblock %}
 
+{% block build %}
+cd src
+{{super()}}
+{% endblock %}
+
+{% block install %}
+cd src
+{{super()}}
+{% endblock %}
+
 {% block use_data %}
 aux/magic
 {% endblock %}
