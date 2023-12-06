@@ -12,10 +12,15 @@ cd source
 
 {% block cmake_flags %}
 ENABLE_SHARED=OFF
-{% if x86_64 %}
+{% if mingw32 %}
+ENABLE_ASSEMBLY=OFF
+{% elif x86_64 %}
 ENABLE_ASSEMBLY=ON
 {% else %}
 ENABLE_ASSEMBLY=OFF
+{% endif %}
+{% if mingw32 %}
+CMAKE_RC_COMPILER={{target.gnu.three}}-windres
 {% endif %}
 {% endblock %}
 
@@ -23,14 +28,21 @@ ENABLE_ASSEMBLY=OFF
 lib/c
 {% endblock %}
 
+{% block build_flags %}
+shut_up
+{% endblock %}
+
 {% block bld_tool %}
-{% if x86_64 %}
+{% if x86_64 and not mingw32 %}
 bin/nasm
 {% endif %}
 {% if darwin %}
 bld/cctools
 {% endif %}
 bld/fakegit
+{% if mingw32 %}
+bld/windres(for_target={{target.gnu.three}})
+{% endif %}
 {% endblock %}
 
 {% block test %}
