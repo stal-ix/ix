@@ -533,6 +533,7 @@ https://github.com/WebPlatformForEmbedded/libwpe/archive/refs/tags/1.12.3.tar.gz
 https://github.com/WerWolv/ImHex/releases/download/v1.19.1/Full.Sources.tar.gz
 https://github.com/Z3Prover/z3/archive/refs/tags/z3-4.12.2.tar.gz
 https://github.com/Z3Prover/z3/archive/refs/tags/z3-4.12.3.tar.gz
+https://github.com/Z3Prover/z3/archive/refs/tags/z3-4.12.4.tar.gz
 https://github.com/a-j-wood/pv/releases/download/v1.7.24/pv-1.7.24.tar.gz
 https://github.com/abseil/abseil-cpp/archive/refs/tags/20230125.3.tar.gz
 https://github.com/abseil/abseil-cpp/archive/refs/tags/20230802.1.tar.gz

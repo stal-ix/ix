@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/Z3Prover/z3/archive/refs/tags/z3-4.12.3.tar.gz
-sha:61670733eb7a74eeca13033244cbec2c4098dca24a6fa3df0e7ae12ee8f33d9c
+https://github.com/Z3Prover/z3/archive/refs/tags/z3-4.12.4.tar.gz
+sha:25e9b18d04ee22f1d872dfe0daaf4c39034744525214e34fedd206e25140e96e
 {% endblock %}
 
 {% block bld_libs %}
