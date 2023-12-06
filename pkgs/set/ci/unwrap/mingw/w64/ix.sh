@@ -10,6 +10,7 @@ bin/gzip
 bin/nasm
 bin/re2c
 bin/curl
+bin/gperf
 bin/iconv
 bin/idn/2
 bin/protoc
