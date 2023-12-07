@@ -6,6 +6,7 @@ cd src
 {% endblock %}
 
 {% block install %}
+make install-pkgconfigexecDATA
 cd src
 {{super()}}
 {% endblock %}
