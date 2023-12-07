@@ -1337,6 +1337,7 @@ https://gitlab.freedesktop.org/libdecor/libdecor/-/archive/0.2.0/libdecor-0.2.0.
 https://gitlab.freedesktop.org/libdecor/libdecor/-/archive/0.2.1/libdecor-0.2.1.tar.bz2
 https://gitlab.freedesktop.org/libfprint/libfprint/-/archive/v1.94.5/libfprint-v1.94.5.tar.bz2
 https://gitlab.freedesktop.org/libinput/libei/-/archive/1.1.0/libei-1.1.0.tar.bz2
+https://gitlab.freedesktop.org/libinput/libei/-/archive/1.2.0/libei-1.2.0.tar.bz2
 https://gitlab.freedesktop.org/mesa/glu/-/archive/glu-9.0.3/glu-glu-9.0.3.tar.bz2
 https://gitlab.freedesktop.org/mesa/mesa/-/archive/mesa-23.0.3/mesa-mesa-23.0.3.tar.bz2
 https://gitlab.freedesktop.org/mesa/mesa/-/archive/mesa-23.1.8/mesa-mesa-23.1.8.tar.bz2
