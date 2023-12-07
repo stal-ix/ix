@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/podofo/podofo/archive/refs/tags/0.10.2.tar.gz
-sha:565168132e8fbfcdbad4ea4c5567bcc57ebbffb4528f6273baf3f490a3cf7563
+https://github.com/podofo/podofo/archive/refs/tags/0.10.3.tar.gz
+sha:4be2232643f9e9dd7fbb02894d5a0394c3ca2826aab179654c2cc751074825ec
 {% endblock %}
 
 {% block lib_deps %}
