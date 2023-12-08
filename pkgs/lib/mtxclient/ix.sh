@@ -1,8 +1,15 @@
 {% extends '//die/c/cmake.sh' %}
 
-{% block fetch %}
-https://github.com/Nheko-Reborn/mtxclient/archive/refs/tags/v0.9.2.tar.gz
-sha:f55827fdba226c6fc409cf000c72b13cc6d069ec1300283a7239aa19c90c5f56
+{% block git_repo %}
+https://github.com/Nheko-Reborn/mtxclient
+{% endblock %}
+
+{% block git_commit %}
+901ec5e35f76ebdff732ea28953b772ec7024df3
+{% endblock %}
+
+{% block git_sha %}
+e5f5f1eb17cd7a088787f73e653b79d5302526ae5399cab69cb614a8c7acf6ae
 {% endblock %}
 
 {% block lib_deps %}
