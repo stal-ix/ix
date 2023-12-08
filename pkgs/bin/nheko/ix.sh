@@ -15,10 +15,11 @@ qw
 {% block bld_libs %}
 lib/c
 lib/c++
+lib/olm
 lib/qt/6/base
 lib/qt/6/deps
 {% endblock %}
 
 {% block cmake_flags %}
 MAN=OFF
-
+{% endblock %}
