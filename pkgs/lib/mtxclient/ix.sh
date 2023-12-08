@@ -20,4 +20,5 @@ lib/json/nlohmann
 
 {% block cmake_flags %}
 BUILD_LIB_TESTS=OFF
+BUILD_LIB_EXAMPLES=OFF
 {% endblock %}
