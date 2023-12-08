@@ -114,6 +114,7 @@ https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.6.1.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.6.2.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.6.3.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.6.4.tar.xz
+https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.6.5.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.6.tar.xz
 https://cmocka.org/files/1.1/cmocka-1.1.7.tar.xz
 https://codeberg.org/dnkl/fcft/archive/2.5.0.tar.gz
@@ -1077,6 +1078,7 @@ https://github.com/pwmt/zathura-pdf-mupdf/archive/refs/tags/0.4.0.tar.gz
 https://github.com/python-cffi/cffi/archive/refs/tags/v1.16.0.tar.gz
 https://github.com/python/cpython/archive/refs/tags/v3.11.5.tar.gz
 https://github.com/python/cpython/archive/refs/tags/v3.12.0.tar.gz
+https://github.com/python/cpython/archive/refs/tags/v3.12.1.tar.gz
 https://github.com/qbittorrent/qBittorrent/archive/refs/tags/release-4.5.4.tar.gz
 https://github.com/qbittorrent/qBittorrent/archive/refs/tags/release-4.6.0.tar.gz
 https://github.com/qbittorrent/qBittorrent/archive/refs/tags/release-4.6.1.tar.gz
@@ -1638,6 +1640,7 @@ https://www.rarlab.com/rar/unrarsrc-6.2.11.tar.gz
 https://www.rarlab.com/rar/unrarsrc-6.2.12.tar.gz
 https://www.rarlab.com/rar/unrarsrc-7.0.2.tar.gz
 https://www.rarlab.com/rar/unrarsrc-7.0.3.tar.gz
+https://www.rarlab.com/rar/unrarsrc-7.0.4.tar.gz
 https://www.stunnel.org/downloads/stunnel-5.70.tar.gz
 https://www.stunnel.org/downloads/stunnel-5.71.tar.gz
 https://www.tcpdump.org/release/libpcap-1.10.4.tar.gz
