@@ -3,6 +3,7 @@
 {% block bld_libs %}
 {{super()}}
 lib/gnutls
+lib/bsd/overlay
 {% endblock %}
 
 {% block configure_flags %}
