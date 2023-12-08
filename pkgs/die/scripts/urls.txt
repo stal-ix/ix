@@ -114,6 +114,7 @@ https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.6.1.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.6.2.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.6.3.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.6.4.tar.xz
+https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.6.5.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.6.tar.xz
 https://cmocka.org/files/1.1/cmocka-1.1.7.tar.xz
 https://codeberg.org/dnkl/fcft/archive/2.5.0.tar.gz
