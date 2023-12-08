@@ -18,5 +18,5 @@ wrap_cc
 {% endblock %}
 
 {% block test %}
-test -f ${out}/bin/bsdtar
+test -f ${out}/bin/bsdtar{{target.exe_suffix}}
 {% endblock %}

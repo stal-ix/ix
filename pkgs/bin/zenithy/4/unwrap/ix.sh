@@ -1,11 +1,16 @@
 {% extends '//bin/zenithy/t/ix.sh' %}
 
 {% block fetch %}
-https://gitlab.gnome.org/GNOME/zenity/-/archive/3.90.0/zenity-3.90.0.tar.bz2
-sha:39b2e825b201a665f2028c4290aa485e4ef5fb499e33ebd08d38dff3a50528f9
+https://gitlab.gnome.org/GNOME/zenity/-/archive/4.0.0/zenity-4.0.0.tar.bz2
+sha:fdd5995f60b62c49070caeebcd7770df9f03dc83dfd839d5accb607c88b6d84d
 {% endblock %}
 
 {% block bld_libs %}
 {{super()}}
 lib/adwaita
+{% endblock %}
+
+{% block bld_tool %}
+bld/help2man
+{{super()}}
 {% endblock %}

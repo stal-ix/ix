@@ -1,8 +1,8 @@
 {% extends '//die/c/make.sh' %}
 
 {% block fetch %}
-http://www.haproxy.org/download/2.8/src/haproxy-2.8.4.tar.gz
-sha:81bacbf50ec6d0f7ecaaad7c03e59978b00322fbdad6ed4a989dd31754b6f25d
+http://www.haproxy.org/download/2.9/src/haproxy-2.9.0.tar.gz
+sha:fba18acd1a46337fe20ae07c816c2496c8602b80a1bc9ff3768d4caa5fb80eab
 {% endblock %}
 
 {% block bld_libs %}
@@ -11,7 +11,6 @@ lib/kernel
 lib/pcre/2
 lib/openssl
 lib/execinfo
-lib/pcre/2/posix
 {% endblock %}
 
 {% block make_flags %}

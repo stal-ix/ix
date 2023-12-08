@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/fish-shell/fish-shell/archive/refs/tags/3.6.3.tar.gz
-sha:5fdbfdd74d228df17651b9be6a805baaf9f8f6e9e670b77c57288e1bfb65ed51
+https://github.com/fish-shell/fish-shell/archive/refs/tags/3.6.4.tar.gz
+sha:ae51eb8cbe17479fc2e5bdc2ede93f41d4ce0d137626eacbb5cc7446ddafa9e3
 {% endblock %}
 
 {% block bld_libs %}

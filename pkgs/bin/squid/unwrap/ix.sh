@@ -1,8 +1,8 @@
 {% extends '//die/c/autohell.sh' %}
 
 {% block fetch %}
-http://www.squid-cache.org/Versions/v6/squid-6.5.tar.xz
-sha:5070f8a3ae6666870c8fc716326befb0a1abe8b5ff3a6f3932cbc5543d7c8549
+http://www.squid-cache.org/Versions/v6/squid-6.6.tar.xz
+sha:55bd7f9f4898153161ea1228998acb551bf840832b9e5b90fc8ecd2942420318
 {% endblock %}
 
 {% block bld_libs %}
