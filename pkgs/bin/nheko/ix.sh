@@ -17,6 +17,7 @@ lib/c
 lib/c++
 lib/olm
 lib/coeurl
+lib/mtxclient
 lib/qt/6/base
 lib/qt/6/deps
 {% endblock %}
