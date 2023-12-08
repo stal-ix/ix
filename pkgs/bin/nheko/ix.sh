@@ -17,12 +17,17 @@ lib/c
 lib/c++
 lib/olm
 lib/lmdb
+lib/cmark
 lib/coeurl
 lib/lmdb/xx
+lib/qt/6/svg
 lib/mtxclient
 lib/qt/6/base
 lib/qt/6/deps
+lib/qt/keychain
 lib/qt/6/multimedia
+lib/qt/6/declarative
+lib/kd/single/application
 {% endblock %}
 
 {% block cmake_flags %}
@@ -34,4 +39,5 @@ VOIP=OFF
 {% block bld_tool %}
 bld/qt/6
 bld/qt/6/tools
+bld/qt/6/tools/qml
 {% endblock %}
