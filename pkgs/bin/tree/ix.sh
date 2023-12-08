@@ -1,9 +1,8 @@
 {% extends '//die/c/make.sh' %}
 
 {% block fetch %}
-#http://mama.indstate.edu/users/ice/tree/src/tree-2.0.2.tgz
-ftp://mama.indstate.edu/linux/tree/tree-2.0.2.tgz
-sha:7d693a1d88d3c4e70a73e03b8dbbdc12c2945d482647494f2f5bd83a479eeeaf
+https://github.com/Old-Man-Programmer/tree/archive/refs/tags/2.1.1.tar.gz
+sha:1b70253994dca48a59d6ed99390132f4d55c486bf0658468f8520e7e63666a06
 {% endblock %}
 
 {% block bld_libs %}
