@@ -16,6 +16,7 @@ qw
 lib/c
 lib/c++
 lib/olm
+lib/coeurl
 lib/qt/6/base
 lib/qt/6/deps
 {% endblock %}
