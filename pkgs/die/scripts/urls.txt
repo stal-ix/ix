@@ -371,6 +371,7 @@ https://git.pwmt.org/pwmt/girara/-/archive/0.4.0/girara-0.4.0.tar.bz2
 https://git.pwmt.org/pwmt/girara/-/archive/0.4.1/girara-0.4.1.tar.bz2
 https://git.pwmt.org/pwmt/zathura-cb/-/archive/0.1.10/zathura-cb-0.1.10.tar.bz2
 https://git.pwmt.org/pwmt/zathura/-/archive/0.5.2/zathura-0.5.2.tar.bz2
+https://git.pwmt.org/pwmt/zathura/-/archive/0.5.3/zathura-0.5.3.tar.bz2
 https://git.savannah.nongnu.org/cgit/acl.git/snapshot/acl-2.3.1.tar.gz
 https://git.savannah.nongnu.org/cgit/attr.git/snapshot/attr-2.5.1.tar.gz
 https://git.sr.ht/~adnano/wmenu/archive/0.1.4.tar.gz

@@ -1,8 +1,8 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://git.pwmt.org/pwmt/zathura/-/archive/0.5.2/zathura-0.5.2.tar.bz2
-sha:48e85b47c1a8d71767433be02ae4d07ae5ca7ba235762ad89c0c5119b12838e0
+https://git.pwmt.org/pwmt/zathura/-/archive/0.5.3/zathura-0.5.3.tar.bz2
+sha:194982528fbac747d94dfef1e7c729b2b81b46c6fa1d2e706f3d1caf3c81898f
 {% endblock %}
 
 {% block bld_libs %}
