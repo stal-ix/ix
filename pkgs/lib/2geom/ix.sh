@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://gitlab.com/inkscape/lib2geom/-/archive/1.2.2/lib2geom-1.2.2.tar.bz2
-sha:1c22a7be571d2e2f3ee98424614ffd6a42fe73dedbd2ccfb0967ecb02f77edeb
+https://gitlab.com/inkscape/lib2geom/-/archive/1.3/lib2geom-1.3.tar.bz2
+sha:bd07f2a1322fcad16a55a1901207faa55dffdecebc56a00eabd4575f62e043c9
 {% endblock %}
 
 {% block lib_deps %}
