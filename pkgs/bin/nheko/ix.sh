@@ -31,6 +31,10 @@ lib/qt/6/declarative/deps
 lib/kd/single/application
 {% endblock %}
 
+{% block cpp_defines %}
+QT_STATICPLUGIN=1
+{% endblock %}
+
 {% block cmake_flags %}
 MAN=OFF
 X11=OFF
