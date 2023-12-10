@@ -47,6 +47,7 @@ EOF
 
 cat << EOF > 3
 #!/bin/sh
+mount -o remount,ro /
 EOF
 
 chmod +x 2 3

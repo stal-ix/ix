@@ -26,4 +26,5 @@ sed -e 's|llibavformat.a|lavformat|' \
     -e 's|llibswscale.a|lswscale|' \
     -e 's|llibavutil.a|lavutil|' \
     -i ${out}/plugins/multimedia/libffmpegmediaplugin.prl
+sed -e 's|INTERFACE_LINK_LIBRARIES.*FFmpeg.*||' -i ${out}/lib/cmake/Qt6Multimedia/Qt6QFFmpegMediaPluginTargets.cmake
 {% endblock %}

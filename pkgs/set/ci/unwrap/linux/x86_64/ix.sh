@@ -1,6 +1,8 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
+bin/gomuks
+bin/nheko
 bin/kmsxx
 bin/muslstack
 bin/aom
