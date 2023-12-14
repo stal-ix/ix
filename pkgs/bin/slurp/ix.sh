@@ -1,8 +1,8 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://github.com/emersion/slurp/archive/refs/tags/v1.4.0.tar.gz
-sha:a332bd40168eb73361ea811eae01d6d1210f9eadb0a486e2dd7a03efb81a3772
+https://github.com/emersion/slurp/archive/refs/tags/v1.5.0.tar.gz
+sha:0fa880d4a93e1c795e3b5929fbea47546df0955bea34fc2f7ffeb1751678f663
 {% endblock %}
 
 {% block bld_libs %}
