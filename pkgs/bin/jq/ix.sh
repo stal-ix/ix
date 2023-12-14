@@ -1,10 +1,10 @@
 {% extends '//die/c/autorehell.sh' %}
 
-{% block version %}1.6{% endblock %}
+{% block version %}1.7.1{% endblock %}
 
 {% block fetch %}
 https://github.com/stedolan/jq/archive/refs/tags/jq-{{self.version()}}.tar.gz
-sha:158182b85f3be9e23ab1dc50cfcc24e415aade2a0b8a5d9f709e0b587666d61b
+sha:fc75b1824aba7a954ef0886371d951c3bf4b6e0a921d1aefc553f309702d6ed1
 {% endblock %}
 
 {% block bld_libs %}
@@ -24,4 +24,8 @@ JQ_VERSION=\\\"{{self.version()}}\\\"
 
 {% block patch %}
 rm src/parser.c src/parser.h src/lexer.c src/lexer.h
+{% endblock %}
+
+{% block configure_flags %}
+--enable-maintainer-mode
 {% endblock %}
