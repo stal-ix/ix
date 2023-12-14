@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/KhronosGroup/Vulkan-Headers/archive/refs/tags/sdk-1.3.261.1.tar.gz
-sha:7a25ebdb6325e626dc5d33bc937b289ccce7ddb7b0ac1a1b1d5d7ff33b6715d3
+https://github.com/KhronosGroup/Vulkan-Headers/archive/refs/tags/vulkan-sdk-1.3.268.0.tar.gz
+sha:94993cbe2b1a604c0d5d9ea37a767e1aba4d771d2bfd4ddceefd66243095164f
 {% endblock %}
 
 {% block lib_deps %}

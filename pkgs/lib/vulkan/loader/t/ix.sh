@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/KhronosGroup/Vulkan-Loader/archive/refs/tags/sdk-1.3.261.1.tar.gz
-sha:f85f0ea57b63750d4ddaf6c8649df781c4777006daa3cd772b01e7b5ed02f3f2
+https://github.com/KhronosGroup/Vulkan-Loader/archive/refs/tags/vulkan-sdk-1.3.268.0.tar.gz
+sha:404fa621f1ab2731bcc68bcbff64d8c6de322faad2d87f9198641bd37255fd39
 {% endblock %}
 
 {% block lib_deps %}
@@ -18,15 +18,10 @@ bld/pkg/config
 {% block cmake_flags %}
 BUILD_WSI_XCB_SUPPORT=NO
 BUILD_WSI_XLIB_SUPPORT=NO
-BUILD_STATIC_LOADER=YES
 {% endblock %}
 
 {% block build_flags %}
 # werror
 shut_up
-{% endblock %}
-
-{% block patch %}
-sed -e 's|APPLE AND BUILD_STATIC_LOADER|BUILD_STATIC_LOADER|' \
-    -i loader/CMakeLists.txt
+wrap_cc
 {% endblock %}

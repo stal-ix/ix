@@ -1,8 +1,6 @@
-{% extends '//lib/vulkan/loader/t/ix.sh' %}
+{% extends '//die/proxy.sh' %}
 
 {% block install %}
-{{super()}}
-
 cd ${out}; mkdir -p etc/vulkan/icd.d; cd etc/vulkan/icd.d
 
 # all mesa drivers go there, need better solution
