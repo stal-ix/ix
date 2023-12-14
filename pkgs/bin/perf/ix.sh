@@ -1,8 +1,6 @@
 {% extends '//die/c/make.sh' %}
 
-{% block fetch %}
 {% include '//bin/kernel/latest/t/ver.sh' %}
-{% endblock %}
 
 {% block bld_libs %}
 lib/c
