@@ -497,6 +497,7 @@ https://github.com/MariaDB/server.git
 https://github.com/Martchus/cpp-utilities/archive/refs/tags/v5.20.0.tar.gz
 https://github.com/Martchus/tagparser/archive/refs/tags/v11.2.1.tar.gz
 https://github.com/Matroska-Org/libebml/archive/refs/tags/release-1.4.4.tar.gz
+https://github.com/Matroska-Org/libebml/archive/refs/tags/release-1.4.5.tar.gz
 https://github.com/Matroska-Org/libmatroska/archive/refs/tags/release-1.7.1.tar.gz
 https://github.com/MidnightCommander/mc/archive/refs/tags/4.8.30.tar.gz
 https://github.com/MisterTea/EternalTerminal/archive/refs/tags/et-v6.2.4.tar.gz

@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/Matroska-Org/libebml/archive/refs/tags/release-1.4.4.tar.gz
-sha:3b30d89a5699fef4bdf5b4d7de7a1c94d9be47fababf9caca59250282f051283
+https://github.com/Matroska-Org/libebml/archive/refs/tags/release-1.4.5.tar.gz
+sha:86c99573cd0957884f26547d1a8fa0c979e4d6d57484dfd387345846e6720f49
 {% endblock %}
 
 {% block lib_deps %}
