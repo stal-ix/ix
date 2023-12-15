@@ -121,6 +121,7 @@ https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.6.tar.xz
 https://cmocka.org/files/1.1/cmocka-1.1.7.tar.xz
 https://codeberg.org/dnkl/fcft/archive/2.5.0.tar.gz
 https://codeberg.org/dnkl/fcft/archive/3.1.6.tar.gz
+https://codeberg.org/dnkl/fcft/archive/3.1.7.tar.gz
 https://codeberg.org/dnkl/fnott/archive/1.4.1.tar.gz
 https://codeberg.org/dnkl/foot/archive/1.15.3.tar.gz
 https://codeberg.org/dnkl/foot/archive/1.16.0.tar.gz
