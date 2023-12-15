@@ -1,2 +1,6 @@
-https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.6.6.tar.xz
-sha:ebf70a917934b13169e1be5b95c3b6c2fea5bc14e6dc144f1efb8a0016b224c8
+{% block kernel_version %}6-6-7{% endblock %}
+
+{% block fetch %}
+https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-{{self.kernel_version().replace('-', '.')}}.tar.xz
+sha:0ce68ec6019019140043263520955ecd04839e55a1baab2fa9155b42bb6fd841
+{% endblock %}

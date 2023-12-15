@@ -1,4 +1,4 @@
-{% extends '//lib/vulkan/loader/t/ix.sh' %}
+{% extends 't/ix.sh' %}
 
 {% block use_data %}
 lib/vulkan/loader/data
@@ -18,4 +18,7 @@ relocate "${VULKAN_LOADER_DATA}"
 {{super()}}
 mkdir -p ${out}/include
 >${out}/include/keep
+cd ${out}/lib
+rm -r cmake
+cp libvulkan.{{target.dl_suffix}} libvulkan.a
 {% endblock %}
