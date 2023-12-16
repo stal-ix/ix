@@ -1,5 +1,10 @@
 {% extends '//bin/clang/16/ix.sh' %}
 
+{% block bld_tool %}
+lib/llvm/16/tblgen
+{{super()}}
+{% endblock %}
+
 {% block llvm_targets %}
 {{super()}}
 clang-format
