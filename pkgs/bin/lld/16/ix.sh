@@ -10,7 +10,7 @@ lib/zstd
 {% endblock %}
 
 {% block bld_tool %}
-bin/lld/16/host
+lib/llvm/16/tblgen
 {% if linux %}
 bin/muslstack
 {% endif %}
