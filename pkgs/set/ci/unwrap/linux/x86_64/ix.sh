@@ -52,7 +52,6 @@ bin/python/9
 bin/xmlb
 bin/walk
 bin/lld/16
-bin/lld/ya
 bin/go/21
 bin/limine
 bin/emacs/gtk
