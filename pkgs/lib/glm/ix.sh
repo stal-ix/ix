@@ -8,14 +8,10 @@ sha:7d508ab72cb5d43227a3711420f06ff99b0a0cb63ee2f93631b162bfe1fe9592
 {% block lib_deps %}
 lib/c
 lib/c++
-{% endblock %}
-
-{% block bld_tool %}
-bld/genpc
+lib/shim/fake/pkg(pkg_name=glm,pkg_ver=0.9.9.8)
 {% endblock %}
 
 {% block install %}
 mkdir -p ${out}/include
 cp -R glm ${out}/include/
-genpc "glm" "0.9.9.8"
 {% endblock %}
