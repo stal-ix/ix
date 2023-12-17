@@ -10,10 +10,7 @@ lib/c++
 lib/alsa
 lib/opus
 lib/tg/owt
-{% endblock %}
-
-{% block bld_tool %}
-bld/genpc
+lib/shim/fake/pkg(pkg_name=tgvoip,pkg_ver=2.4.4)
 {% endblock %}
 
 {% block build_flags %}
@@ -37,14 +34,15 @@ sed -e 's|typeof|__typeof__|' -i ${TPL}/libtgvoip/os/linux/AudioInputALSA.cpp
 sed -e 's|typeof|__typeof__|' -i ${TPL}/libtgvoip/os/linux/AudioOutputALSA.cpp
 {% endblock %}
 
+{% block install %}
+{{super()}}
+# broken
+rm -rf ${out}/lib/pkgconfig
+{% endblock %}
+
 {% block cmake_flags %}
 LIBTGVOIP_DISABLE_PULSEAUDIO=ON
 third_party_loc=${TPL}
-{% endblock %}
-
-{% block install %}
-{{super()}}
-genpc "tgvoip" "2.4.4"
 {% endblock %}
 
 {% block env %}

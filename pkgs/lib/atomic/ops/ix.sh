@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/ivmai/libatomic_ops/archive/refs/tags/v7.8.0.tar.gz
-sha:68c5970b11297056c8e5c63a73f26621a8eb8c667a5fe9a2b3e3ff6c0fbb3177
+https://github.com/ivmai/libatomic_ops/archive/refs/tags/v7.8.2.tar.gz
+sha:ad8428a40e01d41bc4ddad3166afa1fc175c9e58d8ef7ddbd7ef3298e32ac37b
 {% endblock %}
 
 {% block lib_deps %}

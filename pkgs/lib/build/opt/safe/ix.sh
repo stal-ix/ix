@@ -1,5 +1,5 @@
 {% extends '//die/env.sh' %}
 
 {% block env %}
-export OPTFLAGS="${OPTFLAGS} -fwrapv -fno-strict-aliasing"
+export OPTFLAGS="${OPTFLAGS} -fno-omit-frame-pointer -fwrapv -fno-strict-aliasing"
 {% endblock %}

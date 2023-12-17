@@ -1,6 +1,7 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
+bin/ssh/3
 bin/gomuks
 bin/nheko
 bin/kmsxx
@@ -51,7 +52,6 @@ bin/python/9
 bin/xmlb
 bin/walk
 bin/lld/16
-bin/lld/ya
 bin/go/21
 bin/limine
 bin/emacs/gtk
