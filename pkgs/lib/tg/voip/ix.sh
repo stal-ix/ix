@@ -34,6 +34,12 @@ sed -e 's|typeof|__typeof__|' -i ${TPL}/libtgvoip/os/linux/AudioInputALSA.cpp
 sed -e 's|typeof|__typeof__|' -i ${TPL}/libtgvoip/os/linux/AudioOutputALSA.cpp
 {% endblock %}
 
+{% block install %}
+{{super()}}
+# broken
+rm -rf ${out}/lib/pkgconfig
+{% endblock %}
+
 {% block cmake_flags %}
 LIBTGVOIP_DISABLE_PULSEAUDIO=ON
 third_party_loc=${TPL}
