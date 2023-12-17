@@ -1,8 +1,8 @@
 {% extends '//die/c/make.sh' %}
 
 {% block fetch %}
-https://github.com/lsof-org/lsof/archive/refs/tags/4.99.0.tar.gz
-sha:27fca13b6a3682114a489205a89d05d92f1c755e282be1f3590db15b16b2ed06
+https://github.com/lsof-org/lsof/archive/refs/tags/4.99.1.tar.gz
+sha:5d1b83438183eeaae8e501a90fd8b4b80e34687669ff7849ecf20c2324cce508
 {% endblock %}
 
 {% block bld_libs %}
