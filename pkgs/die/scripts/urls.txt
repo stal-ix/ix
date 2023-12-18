@@ -1667,6 +1667,7 @@ https://www.kernel.org/pub/software/network/iw/iw-5.19.tar.xz
 https://www.kernel.org/pub/software/utils/dtc/dtc-1.7.0.tar.xz
 https://www.leonerd.org.uk/code/libvterm/libvterm-0.3.tar.gz
 https://www.libssh.org/files/0.10/libssh-0.10.5.tar.xz
+https://www.libssh.org/files/0.10/libssh-0.10.6.tar.xz
 https://www.lua.org/ftp/lua-5.1.5.tar.gz
 https://www.lua.org/ftp/lua-5.2.4.tar.gz
 https://www.lua.org/ftp/lua-5.4.6.tar.gz
