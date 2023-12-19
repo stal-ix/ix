@@ -1,8 +1,8 @@
 {% extends '//die/c/make.sh' %}
 
 {% block fetch %}
-https://github.com/PurpleI2P/i2pd/archive/refs/tags/2.49.0.tar.gz
-sha:d8e07f78cc9f1ba65e8460db27c649dd0cfdd3ba334725f8d6f9ee815cb40e68
+https://github.com/PurpleI2P/i2pd/archive/refs/tags/2.50.0.tar.gz
+sha:67c8ba5ea03b09fe2a85820f6d5b3025ad6c4301cbca3fa44c0accfbe5c7def7
 {% endblock %}
 
 {% block bld_libs %}

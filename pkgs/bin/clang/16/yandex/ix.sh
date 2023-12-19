@@ -46,3 +46,11 @@ cd clang
 EOF
 {% endfor %}
 {% endblock %}
+
+{% block postinstall %}
+:
+{% endblock %}
+
+{% block clang_fix_includes %}
+:
+{% endblock %}
