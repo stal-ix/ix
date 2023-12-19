@@ -30,5 +30,5 @@ for x in atexit strtold; do
     llvm-objcopy --redefine-sym ${x}=${x}_2 libmsvcr120_app.a
     llvm-objcopy --redefine-sym ${x}=${x}_3 libmsvcr120d.a
 done
-rm libmsvcr120d.a libvcruntime140_app.a
+rm libmsvcr120d.a libmsvcr90d.a libvcruntime140_app.a
 {% endblock %}
