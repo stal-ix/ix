@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://github.com/LibRaw/LibRaw/archive/refs/tags/0.21.1.tar.gz
-sha:b63d7ffa43463f74afcc02f9083048c231349b41cc9255dec0840cf8a67b52e0
+https://github.com/LibRaw/LibRaw/archive/refs/tags/0.21.2.tar.gz
+sha:7ac056e0d9e814d808f6973a950bbf45e71b53283eed07a7ea87117a6c0ced96
 {% endblock %}
 
 {% block lib_deps %}
