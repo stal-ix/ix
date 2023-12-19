@@ -32,5 +32,5 @@ llvm-ar q libmingwcrt.a *.o
 {% endblock %}
 
 {% block env %}
-export LDFLAGS="-L${out}/lib -lmingwcrt -lmingw32 -lmingwex -lmingwthrd -lmsvcrt \${LDFLAGS}"
+export LDFLAGS="-L${out}/lib -lmingwcrt -lmingw32 -lmingwex -lmingwthrd -lmsvcrt -lkernel32 \${LDFLAGS}"
 {% endblock %}
