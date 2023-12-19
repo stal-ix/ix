@@ -7,6 +7,9 @@ sha:359e500473ce498169fd3469638c3e9b2e47474148d68059ecaadaf35c14b71b
 
 {% block lib_deps %}
 lib/c
+{% if mingw32 %}
+lib/shim/dll(dll_name=iphlpapi)
+{% endif %}
 {% endblock %}
 
 {% block cmake_flags %}

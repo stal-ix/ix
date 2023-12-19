@@ -5,6 +5,7 @@ lib/c
 {% if mingw32 %}
 lib/shim/dll(dll_name=advapi32)
 lib/shim/dll(dll_name=user32)
+lib/shim/dll(dll_name=crypt32)
 {% endif %}
 {% endblock %}
 

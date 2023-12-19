@@ -11,7 +11,9 @@ lib/c++/dispatch
 
 {% block install %}
 {{super()}}
+{% if not mingw32 %}
 mv ${out}/lib/libdl.a ${out}/lib/libdlstub.a
+{% endif %}
 {% endblock %}
 
 {% block patch %}
