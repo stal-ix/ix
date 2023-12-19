@@ -2,6 +2,10 @@
 
 {% block lib_deps %}
 lib/c
+{% if mingw32 %}
+lib/shim/dll(dll_name=advapi32)
+lib/shim/dll(dll_name=user32)
+{% endif %}
 {% endblock %}
 
 {% block bld_libs %}
