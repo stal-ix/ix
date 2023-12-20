@@ -38,8 +38,9 @@ lib/qt/6/compat
 lib/qt/6/wayland
 lib/xiph/rnnoise
 lib/gi/repository
+lib/k/core/addons
 lib/mesa/glesv2/dl
-lib/k/imageformats
+lib/k/image/formats
 lib/qt/6/declarative
 lib/qt/6/imageformats
 lib/{{allocator}}/trim(delay=3,bytes=30000000)

@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://archive.apache.org/dist/xerces/c/3/sources/xerces-c-3.2.4.tar.gz
-sha:3d8ec1c7f94e38fee0e4ca5ad1e1d9db23cbf3a10bba626f6b4afa2dedafe5ab
+https://archive.apache.org/dist/xerces/c/3/sources/xerces-c-3.2.5.tar.gz
+sha:545cfcce6c4e755207bd1f27e319241e50e37c0c27250f11cda116018f1ef0f5
 {% endblock %}
 
 {% block lib_deps %}

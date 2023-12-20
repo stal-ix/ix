@@ -88,6 +88,7 @@ https://archive.apache.org/dist/apr/apr-1.7.0.tar.bz2
 https://archive.apache.org/dist/apr/apr-util-1.6.2.tar.bz2
 https://archive.apache.org/dist/subversion/subversion-1.14.2.tar.bz2
 https://archive.apache.org/dist/xerces/c/3/sources/xerces-c-3.2.4.tar.gz
+https://archive.apache.org/dist/xerces/c/3/sources/xerces-c-3.2.5.tar.gz
 https://astron.com/pub/file/file-5.45.tar.gz
 https://astron.com/pub/tcsh/tcsh-6.24.10.tar.gz
 https://bearssl.org/bearssl-0.6.tar.gz
@@ -118,6 +119,7 @@ https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.6.4.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.6.5.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.6.6.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.6.7.tar.xz
+https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.6.8.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.6.tar.xz
 https://cmocka.org/files/1.1/cmocka-1.1.7.tar.xz
 https://codeberg.org/dnkl/fcft/archive/2.5.0.tar.gz
@@ -313,6 +315,7 @@ https://ftp.gnu.org/gnu/grep/grep-3.11.tar.xz
 https://ftp.gnu.org/gnu/grep/grep-3.6.tar.xz
 https://ftp.gnu.org/gnu/groff/groff-1.23.0.tar.gz
 https://ftp.gnu.org/gnu/grub/grub-2.06.tar.xz
+https://ftp.gnu.org/gnu/grub/grub-2.12.tar.xz
 https://ftp.gnu.org/gnu/gsl/gsl-2.7.1.tar.gz
 https://ftp.gnu.org/gnu/gzip/gzip-1.13.tar.xz
 https://ftp.gnu.org/gnu/inetutils/inetutils-2.4.tar.xz
@@ -458,6 +461,7 @@ https://github.com/Genivia/ugrep/archive/refs/tags/v4.3.4.tar.gz
 https://github.com/Genivia/ugrep/archive/refs/tags/v4.3.5.tar.gz
 https://github.com/Genivia/ugrep/archive/refs/tags/v4.3.6.tar.gz
 https://github.com/Genivia/ugrep/archive/refs/tags/v4.4.0.tar.gz
+https://github.com/Genivia/ugrep/archive/refs/tags/v4.4.1.tar.gz
 https://github.com/GrapheneOS/hardened_malloc/archive/refs/tags/11.tar.gz
 https://github.com/Hjdskes/cage/archive/refs/tags/v0.1.4.tar.gz
 https://github.com/HowardHinnant/date/archive/refs/tags/v3.0.1.tar.gz
@@ -470,6 +474,8 @@ https://github.com/JuliaStrings/utf8proc/archive/refs/tags/v2.8.0.tar.gz
 https://github.com/JuliaStrings/utf8proc/archive/refs/tags/v2.9.0.tar.gz
 https://github.com/Juniper/libxo/archive/refs/tags/1.6.0.tar.gz
 https://github.com/KDAB/KDSingleApplication/archive/refs/tags/v1.0.0.tar.gz
+https://github.com/KDE/extra-cmake-modules/archive/refs/tags/v5.247.0.tar.gz
+https://github.com/KDE/kcoreaddons/archive/refs/tags/v5.247.0.tar.gz
 https://github.com/KDE/kimageformats/archive/refs/tags/v5.112.0.tar.gz
 https://github.com/KDE/kimageformats/archive/refs/tags/v5.98.0.tar.gz
 https://github.com/KhronosGroup/SPIRV-Cross/archive/refs/tags/sdk-1.3.261.1.tar.gz
@@ -504,6 +510,7 @@ https://github.com/Kitware/CMake/archive/refs/tags/v3.28.1.tar.gz
 https://github.com/LBCrion/sfwbar/archive/refs/tags/v1.0_beta13.tar.gz
 https://github.com/LBCrion/sfwbar/archive/refs/tags/v1.0_beta9.tar.gz
 https://github.com/LibRaw/LibRaw/archive/refs/tags/0.21.1.tar.gz
+https://github.com/LibRaw/LibRaw/archive/refs/tags/0.21.2.tar.gz
 https://github.com/MariaDB/server.git
 https://github.com/Martchus/cpp-utilities/archive/refs/tags/v5.20.0.tar.gz
 https://github.com/Martchus/tagparser/archive/refs/tags/v11.2.1.tar.gz
@@ -1222,6 +1229,7 @@ https://github.com/stal-ix/sources/raw/main/unzip_6.0-27.debian.tar.xz
 https://github.com/stedolan/jq/archive/refs/tags/jq-1.6.tar.gz
 https://github.com/stedolan/jq/archive/refs/tags/jq-1.7.1.tar.gz
 https://github.com/stevegrubb/libcap-ng/archive/refs/tags/v0.8.3.tar.gz
+https://github.com/stevegrubb/libcap-ng/archive/refs/tags/v0.8.4.tar.gz
 https://github.com/stp/stp/archive/refs/tags/2.3.3.tar.gz
 https://github.com/strawberrymusicplayer/strawberry/archive/refs/tags/1.0.18.tar.gz
 https://github.com/strawberrymusicplayer/strawberry/archive/refs/tags/1.0.20.tar.gz
@@ -1230,12 +1238,14 @@ https://github.com/strawberrymusicplayer/strawberry/archive/refs/tags/1.0.22.tar
 https://github.com/strukturag/libde265/archive/refs/tags/v1.0.12.tar.gz
 https://github.com/strukturag/libde265/archive/refs/tags/v1.0.13.tar.gz
 https://github.com/strukturag/libde265/archive/refs/tags/v1.0.14.tar.gz
+https://github.com/strukturag/libde265/archive/refs/tags/v1.0.15.tar.gz
 https://github.com/strukturag/libheif/archive/refs/tags/v1.16.2.tar.gz
 https://github.com/strukturag/libheif/archive/refs/tags/v1.17.0.tar.gz
 https://github.com/strukturag/libheif/archive/refs/tags/v1.17.1.tar.gz
 https://github.com/strukturag/libheif/archive/refs/tags/v1.17.3.tar.gz
 https://github.com/strukturag/libheif/archive/refs/tags/v1.17.4.tar.gz
 https://github.com/strukturag/libheif/archive/refs/tags/v1.17.5.tar.gz
+https://github.com/strukturag/libheif/archive/refs/tags/v1.17.6.tar.gz
 https://github.com/swaywm/sway/archive/refs/tags/1.8.1.tar.gz
 https://github.com/swaywm/swaybg/archive/refs/tags/v1.2.0.tar.gz
 https://github.com/swaywm/swayidle/archive/refs/tags/1.8.0.tar.gz

@@ -17,6 +17,10 @@ v8.1.3
 fd6818e89e81204ce5fe94720c6bef7e8c307d8ee4315aaf5459902d17ded9a3
 {% endblock %}
 
+{% block git_refine %}
+rm roms/edk2/EmulatorPkg/Unix/Host/X11IncludeHack
+{% endblock %}
+
 {% block step_unpack %}
 {{super()}}
 cd subprojects
@@ -27,15 +31,7 @@ cd ..
 sed -e 's|.*subdir.*tests.*||' -i meson.build
 {% endblock %}
 
-{% block patch1 %}
-{{super()}}
-{% endblock %}
-
 {% block bld_libs %}
 {{super()}}
 lib/fdt
-{% endblock %}
-
-{% block git_refine %}
-rm roms/edk2/EmulatorPkg/Unix/Host/X11IncludeHack
 {% endblock %}
