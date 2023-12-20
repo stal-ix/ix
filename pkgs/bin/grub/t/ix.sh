@@ -1,8 +1,8 @@
 {% extends '//die/c/autohell.sh' %}
 
 {% block fetch %}
-https://ftp.gnu.org/gnu/grub/grub-2.06.tar.xz
-sha:b79ea44af91b93d17cd3fe80bdae6ed43770678a9a5ae192ccea803ebb657ee1
+https://ftp.gnu.org/gnu/grub/grub-2.12.tar.xz
+sha:f3c97391f7c4eaa677a78e090c7e97e6dc47b16f655f04683ebd37bef7fe0faa
 {% endblock %}
 
 {% block bld_libs %}
@@ -27,9 +27,13 @@ bin/binutils(for_target={{target.gnu.triplet}})
 {% block setup %}
 c="$(which clang)"
 d="$(dirname $(dirname ${c}))"
-
+export HOST_CC=clang
 export TARGET_CC="${c} -isystem ${d}/share/include"
 export TARGET_STRIP=$(which llvm-strip)
+{% endblock %}
+
+{% block patch %}
+>grub-core/extra_deps.lst
 {% endblock %}
 
 {% block configure_flags %}
