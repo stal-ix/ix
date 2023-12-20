@@ -88,6 +88,7 @@ https://archive.apache.org/dist/apr/apr-1.7.0.tar.bz2
 https://archive.apache.org/dist/apr/apr-util-1.6.2.tar.bz2
 https://archive.apache.org/dist/subversion/subversion-1.14.2.tar.bz2
 https://archive.apache.org/dist/xerces/c/3/sources/xerces-c-3.2.4.tar.gz
+https://archive.apache.org/dist/xerces/c/3/sources/xerces-c-3.2.5.tar.gz
 https://astron.com/pub/file/file-5.45.tar.gz
 https://astron.com/pub/tcsh/tcsh-6.24.10.tar.gz
 https://bearssl.org/bearssl-0.6.tar.gz
