@@ -1238,6 +1238,7 @@ https://github.com/strukturag/libheif/archive/refs/tags/v1.17.1.tar.gz
 https://github.com/strukturag/libheif/archive/refs/tags/v1.17.3.tar.gz
 https://github.com/strukturag/libheif/archive/refs/tags/v1.17.4.tar.gz
 https://github.com/strukturag/libheif/archive/refs/tags/v1.17.5.tar.gz
+https://github.com/strukturag/libheif/archive/refs/tags/v1.17.6.tar.gz
 https://github.com/swaywm/sway/archive/refs/tags/1.8.1.tar.gz
 https://github.com/swaywm/swaybg/archive/refs/tags/v1.2.0.tar.gz
 https://github.com/swaywm/swayidle/archive/refs/tags/1.8.0.tar.gz
