@@ -169,6 +169,7 @@ https://download.gnome.org/sources/glib/2.78/glib-2.78.3.tar.xz
 https://download.gnome.org/sources/glibmm/2.66/glibmm-2.66.6.tar.xz
 https://download.gnome.org/sources/glibmm/2.77/glibmm-2.77.0.tar.xz
 https://download.gnome.org/sources/gtk+/3.24/gtk%2B-3.24.37.tar.xz
+https://download.gnome.org/sources/gtk+/3.24/gtk%2B-3.24.39.tar.xz
 https://download.gnome.org/sources/gtkmm/3.24/gtkmm-3.24.8.tar.xz
 https://download.gnome.org/sources/libnotify/0.8/libnotify-0.8.2.tar.xz
 https://download.gnome.org/sources/libnotify/0.8/libnotify-0.8.3.tar.xz
@@ -240,6 +241,7 @@ https://downloads.xvid.com/downloads/xvidcore-1.3.7.tar.gz
 https://dri.freedesktop.org/libdrm/libdrm-2.4.116.tar.xz
 https://dri.freedesktop.org/libdrm/libdrm-2.4.117.tar.xz
 https://dri.freedesktop.org/libdrm/libdrm-2.4.118.tar.xz
+https://dri.freedesktop.org/libdrm/libdrm-2.4.119.tar.xz
 https://ffmpeg.org/releases/ffmpeg-5.1.2.tar.xz
 https://ffmpeg.org/releases/ffmpeg-6.0.1.tar.xz
 https://ffmpeg.org/releases/ffmpeg-6.0.tar.xz
@@ -1349,6 +1351,7 @@ https://github.com/wireshark/wireshark/archive/refs/tags/v4.2.0.tar.gz
 https://github.com/wmww/gtk-layer-shell/archive/refs/tags/v0.8.0.tar.gz
 https://github.com/wolfSSL/wolfssl/archive/refs/tags/v5.6.3-stable.tar.gz
 https://github.com/wolfSSL/wolfssl/archive/refs/tags/v5.6.4-stable.tar.gz
+https://github.com/wolfSSL/wolfssl/archive/refs/tags/v5.6.6-stable.tar.gz
 https://github.com/wtfutil/wtf/archive/refs/tags/v0.41.0.tar.gz
 https://github.com/wxMaxima-developers/wxmaxima/archive/refs/tags/Version-23.07.0.tar.gz
 https://github.com/wxWidgets/wxWidgets/releases/download/v3.2.2.1/wxWidgets-3.2.2.1.tar.bz2
@@ -1375,6 +1378,7 @@ https://github.com/zlib-ng/zlib-ng/archive/refs/tags/2.1.5.tar.gz
 https://github.com/zyedidia/micro/archive/refs/tags/v2.0.11.tar.gz
 https://github.com/zyedidia/micro/archive/refs/tags/v2.0.13.tar.gz
 https://gitlab.com/AOMediaCodec/SVT-AV1/-/archive/v1.7.0/SVT-AV1-v1.7.0.tar.bz2
+https://gitlab.com/AOMediaCodec/SVT-AV1/-/archive/v1.8.0/SVT-AV1-v1.8.0.tar.bz2
 https://gitlab.com/cardboardwm/cardboard/-/archive/b54758d85164fb19468f5ca52588ebea576cd027/cardboard-b54758d85164fb19468f5ca52588ebea576cd027.tar.bz2
 https://gitlab.com/craigbarnes/dte/-/archive/v1.10/dte-v1.10.tar.bz2
 https://gitlab.com/freetype/freetype/-/archive/VER-2-13-2/freetype-VER-2-13-2.tar.bz2
@@ -1418,6 +1422,7 @@ https://gitlab.freedesktop.org/wlroots/wlroots/-/archive/0.14.1/wlroots-0.14.1.t
 https://gitlab.freedesktop.org/wlroots/wlroots/-/archive/0.15.1/wlroots-0.15.1.tar.bz2
 https://gitlab.freedesktop.org/wlroots/wlroots/-/archive/0.16.2/wlroots-0.16.2.tar.bz2
 https://gitlab.freedesktop.org/wlroots/wlroots/-/archive/0.17.0/wlroots-0.17.0.tar.bz2
+https://gitlab.freedesktop.org/wlroots/wlroots/-/archive/0.17.1/wlroots-0.17.1.tar.bz2
 https://gitlab.freedesktop.org/xkeyboard-config/xkeyboard-config/-/archive/xkeyboard-config-2.39/xkeyboard-config-xkeyboard-config-2.39.tar.bz2
 https://gitlab.freedesktop.org/xkeyboard-config/xkeyboard-config/-/archive/xkeyboard-config-2.40/xkeyboard-config-xkeyboard-config-2.40.tar.bz2
 https://gitlab.gnome.org/GNOME/atk/-/archive/ATK_2_36_0/atk-ATK_2_36_0.tar.bz2
@@ -1677,6 +1682,7 @@ https://www.kernel.org/pub/linux/utils/usb/usbutils/usbutils-014.tar.xz
 https://www.kernel.org/pub/linux/utils/usb/usbutils/usbutils-016.tar.xz
 https://www.kernel.org/pub/linux/utils/usb/usbutils/usbutils-017.tar.xz
 https://www.kernel.org/pub/software/network/iw/iw-5.19.tar.xz
+https://www.kernel.org/pub/software/network/iw/iw-6.7.tar.xz
 https://www.kernel.org/pub/software/utils/dtc/dtc-1.7.0.tar.xz
 https://www.leonerd.org.uk/code/libvterm/libvterm-0.3.tar.gz
 https://www.libssh.org/files/0.10/libssh-0.10.5.tar.xz

@@ -1,8 +1,8 @@
 {% extends '//die/c/make.sh' %}
 
 {% block fetch %}
-https://www.kernel.org/pub/software/network/iw/iw-5.19.tar.xz
-sha:f167bbe947dd53bb9ebc0c1dcef5db6ad73ac1d6084f2c6f9376c5c360cc4d4e
+https://www.kernel.org/pub/software/network/iw/iw-6.7.tar.xz
+sha:aacf49c266b29d500d73086798a1c652e760c19126a8599fd811850430789a35
 {% endblock %}
 
 {% block bld_libs %}
