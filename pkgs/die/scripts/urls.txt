@@ -143,6 +143,7 @@ https://common-lisp.net/project/ecl/static/files/release/ecl-23.9.9.tgz
 https://cpan.metacpan.org/authors/id/T/TO/TODDR/XML-Parser-2.46.tar.gz
 https://cpan.metacpan.org/authors/id/W/WB/WBRASWELL/Parse-Yapp-1.21.tar.gz
 https://data.iana.org/time-zones/releases/tzdb-2023c.tar.lz
+https://data.iana.org/time-zones/releases/tzdb-2023d.tar.lz
 https://dbus.freedesktop.org/releases/dbus-glib/dbus-glib-0.112.tar.gz
 https://dbus.freedesktop.org/releases/dbus/dbus-1.14.10.tar.xz
 https://dev-www.libreoffice.org/src/libcdr/libcdr-0.1.7.tar.xz
