@@ -1208,6 +1208,7 @@ https://github.com/rzvncj/xCHM/archive/refs/tags/1.36.tar.gz
 https://github.com/sabotage-linux/netbsd-curses/archive/refs/tags/v0.3.2.tar.gz
 https://github.com/sammycage/lunasvg/archive/refs/tags/v2.3.8.tar.gz
 https://github.com/sass/libsass/archive/refs/tags/3.6.5.tar.gz
+https://github.com/sass/libsass/archive/refs/tags/3.6.6.tar.gz
 https://github.com/sass/sassc/archive/refs/tags/3.6.2.tar.gz
 https://github.com/sbcl/sbcl/archive/refs/tags/sbcl-2.3.10.tar.gz
 https://github.com/sctplab/usrsctp/archive/refs/tags/0.9.5.0.tar.gz
