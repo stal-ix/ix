@@ -904,6 +904,7 @@ https://github.com/kuroko-lang/kuroko/archive/refs/tags/v1.4.0.tar.gz
 https://github.com/labwc/labwc/archive/refs/tags/0.6.4.tar.gz
 https://github.com/labwc/labwc/archive/refs/tags/0.6.5.tar.gz
 https://github.com/labwc/labwc/archive/refs/tags/0.6.6.tar.gz
+https://github.com/labwc/labwc/archive/refs/tags/0.7.0.tar.gz
 https://github.com/landley/toybox/archive/refs/tags/0.8.10.tar.gz
 https://github.com/lbonn/rofi/releases/download/1.7.3%2Bwayland1/rofi-1.7.3+wayland1.tar.xz
 https://github.com/leo-arch/clifm/archive/refs/tags/v1.14.5.tar.gz
