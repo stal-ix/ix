@@ -779,6 +779,7 @@ https://github.com/google/glog/archive/refs/tags/v0.6.0.tar.gz
 https://github.com/google/googletest/archive/refs/tags/v1.14.0.tar.gz
 https://github.com/google/gumbo-parser/archive/refs/tags/v0.10.1.tar.gz
 https://github.com/google/highway/archive/refs/tags/1.0.5.tar.gz
+https://github.com/google/highway/archive/refs/tags/1.0.7.tar.gz
 https://github.com/google/minijail/archive/refs/tags/linux-v18.tar.gz
 https://github.com/google/re2/archive/refs/tags/2023-09-01.tar.gz
 https://github.com/google/re2/archive/refs/tags/2023-11-01.tar.gz
@@ -929,6 +930,7 @@ https://github.com/libical/libical/archive/refs/tags/v3.0.17.tar.gz
 https://github.com/libjpeg-turbo/libjpeg-turbo/archive/refs/tags/3.0.0.tar.gz
 https://github.com/libjpeg-turbo/libjpeg-turbo/archive/refs/tags/3.0.1.tar.gz
 https://github.com/libjxl/libjxl/archive/refs/tags/v0.8.2.tar.gz
+https://github.com/libjxl/libjxl/archive/refs/tags/v0.9.0.tar.gz
 https://github.com/libmpack/libmpack-lua/archive/refs/tags/1.0.9.tar.gz
 https://github.com/libmpack/libmpack/archive/refs/tags/1.0.5.tar.gz
 https://github.com/libproxy/libproxy/archive/refs/tags/0.5.3.tar.gz
