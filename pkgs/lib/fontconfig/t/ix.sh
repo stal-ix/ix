@@ -1,8 +1,8 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://www.freedesktop.org/software/fontconfig/release/fontconfig-2.14.2.tar.xz
-sha:dba695b57bce15023d2ceedef82062c2b925e51f5d4cc4aef736cf13f60a468b
+https://www.freedesktop.org/software/fontconfig/release/fontconfig-2.15.0.tar.xz
+sha:63a0658d0e06e0fa886106452b58ef04f21f58202ea02a94c39de0d3335d7c0e
 {% endblock %}
 
 {% block bld_tool %}
