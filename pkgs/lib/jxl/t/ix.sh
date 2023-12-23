@@ -1,8 +1,14 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/libjxl/libjxl/archive/refs/tags/v0.9.0.tar.gz
-sha:d83bbe188d8fa9725bb75109c922c37fcff8c3b802808f3a6c2c14aaf8337d9f
+https://github.com/libjxl/libjxl/archive/refs/tags/v0.8.2.tar.gz
+sha:c70916fb3ed43784eb840f82f05d390053a558e2da106e40863919238fa7b420
+{#
+../src/extensions/cairo_io/cairo-image-surface-jxl.c:242:88: error: too many arguments to function call, expected 3, have 4
+  242 |                                 if (JxlDecoderGetICCProfileSize(dec, &pixel_format, JXL_COLOR_PROFILE_TARGET_DATA, &profile_size) > 0) {
+#}
+#https://github.com/libjxl/libjxl/archive/refs/tags/v0.9.0.tar.gz
+#sha:d83bbe188d8fa9725bb75109c922c37fcff8c3b802808f3a6c2c14aaf8337d9f
 {% endblock %}
 
 {% block lib_deps %}
