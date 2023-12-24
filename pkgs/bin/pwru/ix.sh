@@ -1,11 +1,11 @@
 {% extends '//die/go/pure.sh' %}
 
 {% block go_url %}
-https://github.com/cilium/pwru/archive/refs/tags/v1.0.4.tar.gz
+https://github.com/cilium/pwru/archive/refs/tags/v1.0.5.tar.gz
 {% endblock %}
 
 {% block go_sha %}
-853d69ff30576d8dee9eb74e9d91ce073c2199b1f052cbaa2eacbfdaf8ded029
+a7837209e1d114e5c51b377c722569b8b5eeed1027122f58d653a16dd3b5a9ee
 {% endblock %}
 
 {% block bld_libs %}

@@ -143,6 +143,7 @@ https://common-lisp.net/project/ecl/static/files/release/ecl-23.9.9.tgz
 https://cpan.metacpan.org/authors/id/T/TO/TODDR/XML-Parser-2.46.tar.gz
 https://cpan.metacpan.org/authors/id/W/WB/WBRASWELL/Parse-Yapp-1.21.tar.gz
 https://data.iana.org/time-zones/releases/tzdb-2023c.tar.lz
+https://data.iana.org/time-zones/releases/tzdb-2023d.tar.lz
 https://dbus.freedesktop.org/releases/dbus-glib/dbus-glib-0.112.tar.gz
 https://dbus.freedesktop.org/releases/dbus/dbus-1.14.10.tar.xz
 https://dev-www.libreoffice.org/src/libcdr/libcdr-0.1.7.tar.xz
@@ -273,6 +274,7 @@ https://ftp.debian.org/debian/pool/main/v/vbetool/vbetool_1.1-5.debian.tar.xz
 https://ftp.debian.org/debian/pool/main/v/vbetool/vbetool_1.1.orig.tar.gz
 https://ftp.gnu.org/gnu/autoconf/autoconf-2.69.tar.xz
 https://ftp.gnu.org/gnu/autoconf/autoconf-2.71.tar.xz
+https://ftp.gnu.org/gnu/autoconf/autoconf-2.72.tar.xz
 https://ftp.gnu.org/gnu/automake/automake-1.16.1.tar.xz
 https://ftp.gnu.org/gnu/automake/automake-1.16.3.tar.xz
 https://ftp.gnu.org/gnu/automake/automake-1.16.5.tar.xz
@@ -640,6 +642,7 @@ https://github.com/ccxvii/mujs/archive/refs/tags/1.3.2.tar.gz
 https://github.com/celluloid-player/celluloid/archive/refs/tags/v0.26.tar.gz
 https://github.com/chenjiandongx/sniffer/archive/refs/tags/v0.6.1.tar.gz
 https://github.com/cilium/pwru/archive/refs/tags/v1.0.4.tar.gz
+https://github.com/cilium/pwru/archive/refs/tags/v1.0.5.tar.gz
 https://github.com/cisco/openh264/archive/refs/tags/v2.3.1.tar.gz
 https://github.com/cisco/openh264/archive/refs/tags/v2.4.0.tar.gz
 https://github.com/cjlin1/liblinear/archive/v247/liblinear-247.tar.gz
@@ -779,6 +782,7 @@ https://github.com/google/glog/archive/refs/tags/v0.6.0.tar.gz
 https://github.com/google/googletest/archive/refs/tags/v1.14.0.tar.gz
 https://github.com/google/gumbo-parser/archive/refs/tags/v0.10.1.tar.gz
 https://github.com/google/highway/archive/refs/tags/1.0.5.tar.gz
+https://github.com/google/highway/archive/refs/tags/1.0.7.tar.gz
 https://github.com/google/minijail/archive/refs/tags/linux-v18.tar.gz
 https://github.com/google/re2/archive/refs/tags/2023-09-01.tar.gz
 https://github.com/google/re2/archive/refs/tags/2023-11-01.tar.gz
@@ -827,6 +831,7 @@ https://github.com/hyprwm/hyprpaper/archive/refs/tags/v0.2.0.tar.gz
 https://github.com/hyprwm/hyprpicker/archive/refs/tags/v0.1.0.tar.gz
 https://github.com/ib/xarchiver/archive/refs/tags/0.5.4.20.tar.gz
 https://github.com/ihhub/fheroes2/archive/refs/tags/1.0.10.tar.gz
+https://github.com/ihhub/fheroes2/archive/refs/tags/1.0.11.tar.gz
 https://github.com/ihhub/fheroes2/archive/refs/tags/1.0.7.tar.gz
 https://github.com/ihhub/fheroes2/archive/refs/tags/1.0.8.tar.gz
 https://github.com/ihhub/fheroes2/archive/refs/tags/1.0.9.tar.gz
@@ -902,6 +907,7 @@ https://github.com/kuroko-lang/kuroko/archive/refs/tags/v1.4.0.tar.gz
 https://github.com/labwc/labwc/archive/refs/tags/0.6.4.tar.gz
 https://github.com/labwc/labwc/archive/refs/tags/0.6.5.tar.gz
 https://github.com/labwc/labwc/archive/refs/tags/0.6.6.tar.gz
+https://github.com/labwc/labwc/archive/refs/tags/0.7.0.tar.gz
 https://github.com/landley/toybox/archive/refs/tags/0.8.10.tar.gz
 https://github.com/lbonn/rofi/releases/download/1.7.3%2Bwayland1/rofi-1.7.3+wayland1.tar.xz
 https://github.com/leo-arch/clifm/archive/refs/tags/v1.14.5.tar.gz
@@ -929,6 +935,7 @@ https://github.com/libical/libical/archive/refs/tags/v3.0.17.tar.gz
 https://github.com/libjpeg-turbo/libjpeg-turbo/archive/refs/tags/3.0.0.tar.gz
 https://github.com/libjpeg-turbo/libjpeg-turbo/archive/refs/tags/3.0.1.tar.gz
 https://github.com/libjxl/libjxl/archive/refs/tags/v0.8.2.tar.gz
+https://github.com/libjxl/libjxl/archive/refs/tags/v0.9.0.tar.gz
 https://github.com/libmpack/libmpack-lua/archive/refs/tags/1.0.9.tar.gz
 https://github.com/libmpack/libmpack/archive/refs/tags/1.0.5.tar.gz
 https://github.com/libproxy/libproxy/archive/refs/tags/0.5.3.tar.gz
@@ -1206,6 +1213,7 @@ https://github.com/rzvncj/xCHM/archive/refs/tags/1.36.tar.gz
 https://github.com/sabotage-linux/netbsd-curses/archive/refs/tags/v0.3.2.tar.gz
 https://github.com/sammycage/lunasvg/archive/refs/tags/v2.3.8.tar.gz
 https://github.com/sass/libsass/archive/refs/tags/3.6.5.tar.gz
+https://github.com/sass/libsass/archive/refs/tags/3.6.6.tar.gz
 https://github.com/sass/sassc/archive/refs/tags/3.6.2.tar.gz
 https://github.com/sbcl/sbcl/archive/refs/tags/sbcl-2.3.10.tar.gz
 https://github.com/sctplab/usrsctp/archive/refs/tags/0.9.5.0.tar.gz
@@ -1334,6 +1342,7 @@ https://github.com/void-linux/musl-obstack/archive/refs/tags/v1.2.2.tar.gz
 https://github.com/vslavik/poedit/releases/download/v3.3.2-oss/poedit-3.3.2.tar.gz
 https://github.com/vslavik/poedit/releases/download/v3.4-oss/poedit-3.4.tar.gz
 https://github.com/vslavik/poedit/releases/download/v3.4.1-oss/poedit-3.4.1.tar.gz
+https://github.com/vslavik/poedit/releases/download/v3.4.2-oss/poedit-3.4.2.tar.gz
 https://github.com/vstakhov/libucl/archive/refs/tags/0.8.2.tar.gz
 https://github.com/warmcat/libwebsockets/archive/refs/tags/v4.3.2.tar.gz
 https://github.com/wasmx/fizzy/archive/refs/tags/v0.8.0.tar.gz
@@ -1646,6 +1655,7 @@ https://www.crufty.net/ftp/pub/sjg/bmake-20231210.tar.gz
 https://www.eecis.udel.edu/~ntp/ntp_spool/ntp4/ntp-4.2/ntp-4.2.8p15.tar.gz
 https://www.freedesktop.org/software/colord/releases/colord-1.4.6.tar.xz
 https://www.freedesktop.org/software/fontconfig/release/fontconfig-2.14.2.tar.xz
+https://www.freedesktop.org/software/fontconfig/release/fontconfig-2.15.0.tar.xz
 https://www.freedesktop.org/software/libevdev/libevdev-1.13.1.tar.xz
 https://www.freedesktop.org/software/uchardet/releases/uchardet-0.0.8.tar.xz
 https://www.gnupg.org/ftp/gcrypt/gnupg/gnupg-2.2.40.tar.bz2
