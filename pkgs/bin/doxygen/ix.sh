@@ -1,14 +1,16 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/doxygen/doxygen/archive/refs/tags/Release_1_9_8.tar.gz
-sha:77371e8a58d22d5e03c52729844d1043e9cbf8d0005ec5112ffa4c8f509ddde8
+https://github.com/doxygen/doxygen/archive/refs/tags/Release_1_10_0.tar.gz
+sha:795692a53136ca9bb9a6cd72656968af7858a78be7d6d011e12ab1dce6b9533c
 {% endblock %}
 
 {% block bld_libs %}
 lib/c
 lib/c++
 lib/iconv
+lib/spdlog
+lib/sqlite/3
 {% endblock %}
 
 {% block bld_tool %}
@@ -23,4 +25,6 @@ wrap_cc
 
 {% block cmake_flags %}
 CORESERVICES_LIB=
+use_sys_spdlog=ON
+use_sys_sqlite3=ON
 {% endblock %}
