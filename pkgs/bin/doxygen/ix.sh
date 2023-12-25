@@ -17,6 +17,9 @@ lib/sqlite/3
 bld/flex
 bld/bison
 bld/python
+{% if mingw32 %}
+bld/windres(for_target={{target.gnu.three}})
+{% endif %}
 {% endblock %}
 
 {% block build_flags %}
@@ -27,4 +30,7 @@ wrap_cc
 CORESERVICES_LIB=
 use_sys_spdlog=ON
 use_sys_sqlite3=ON
+{% if mingw32 %}
+CMAKE_RC_COMPILER={{target.gnu.three}}-windres
+{% endif %}
 {% endblock %}
