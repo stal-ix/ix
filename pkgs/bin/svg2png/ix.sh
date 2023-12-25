@@ -12,5 +12,5 @@ LUNASVG_BUILD_EXAMPLES=ON
 
 {% block install %}
 mkdir ${out}/bin
-cp ${tmp}/obj/example/svg2png ${out}/bin/
+cp ${tmp}/obj/svg2png ${out}/bin/
 {% endblock %}
