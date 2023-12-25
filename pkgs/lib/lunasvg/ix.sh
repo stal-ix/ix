@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/sammycage/lunasvg/archive/refs/tags/v2.3.8.tar.gz
-sha:54d697e271a5aca36f9999d546b1b346e98a8183140027330f69a3eb0c184194
+https://github.com/sammycage/lunasvg/archive/refs/tags/v2.3.9.tar.gz
+sha:088bc9fd1191a004552c65bdcc260989b83da441b0bdaa965e79d984feba88fa
 {% endblock %}
 
 {% block lib_deps %}
