@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/opencv/opencv/archive/refs/tags/4.8.1.tar.gz
-sha:62f650467a60a38794d681ae7e66e3e8cfba38f445e0bf87867e2f2cdc8be9d5
+https://github.com/opencv/opencv/archive/refs/tags/4.9.0.tar.gz
+sha:ddf76f9dffd322c7c3cb1f721d0887f62d747b82059342213138dc190f28bc6c
 {% endblock %}
 
 {% block lib_deps %}
@@ -40,7 +40,6 @@ shut_up
 
 {% block install %}
 {{super()}}
->${out}/lib/opencv4/3rdparty/libquirc.a
 sed -e 's|/../../../../../../|/../../../|' \
     -i ${out}/lib/cmake/opencv4/OpenCVConfig.cmake
 {% endblock %}
