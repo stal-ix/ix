@@ -43,8 +43,6 @@ find . -type f -name CMakeLists.txt | while read l; do
         -i ${l}
 done
 
-sed -e 's|.*downloadImHexPatternsFiles(.*||' -i cmake/build_helpers.cmake
-
 find . -type f | while read l; do
     sed -e 's|std::abs(index)|(index > 0 ? index : -index)|g' \
         -e 's|boyer_moore_horspool_searcher|default_searcher|g' \
