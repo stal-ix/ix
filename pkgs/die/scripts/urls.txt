@@ -87,6 +87,7 @@ https://7-zip.org/a/7z2301-src.tar.xz
 https://archive.apache.org/dist/apr/apr-1.7.0.tar.bz2
 https://archive.apache.org/dist/apr/apr-util-1.6.2.tar.bz2
 https://archive.apache.org/dist/subversion/subversion-1.14.2.tar.bz2
+https://archive.apache.org/dist/subversion/subversion-1.14.3.tar.bz2
 https://archive.apache.org/dist/xerces/c/3/sources/xerces-c-3.2.4.tar.gz
 https://archive.apache.org/dist/xerces/c/3/sources/xerces-c-3.2.5.tar.gz
 https://astron.com/pub/file/file-5.45.tar.gz
@@ -639,6 +640,7 @@ https://github.com/c-ares/c-ares/archive/refs/tags/cares-1_22_0.tar.gz
 https://github.com/c-ares/c-ares/archive/refs/tags/cares-1_22_1.tar.gz
 https://github.com/c-ares/c-ares/archive/refs/tags/cares-1_24_0.tar.gz
 https://github.com/capstone-engine/capstone/archive/refs/tags/5.0-rc2.tar.gz
+https://github.com/capstone-engine/capstone/archive/refs/tags/5.0.1.tar.gz
 https://github.com/catboost/catboost/archive/refs/tags/v1.0.6.tar.gz
 https://github.com/cboxdoerfer/fsearch/archive/refs/tags/0.2.3.tar.gz
 https://github.com/ccache/ccache/releases/download/v4.8.3/ccache-4.8.3.tar.xz
