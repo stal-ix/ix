@@ -45,7 +45,6 @@ done
 
 find . -type f | while read l; do
     sed -e 's|std::abs(index)|(index > 0 ? index : -index)|g' \
-        -e 's|boyer_moore_horspool_searcher|default_searcher|g' \
         -e 's|tellg() + a_length|tellg() + (std::streamoff)a_length|g' \
         -i "${l}"
 done
