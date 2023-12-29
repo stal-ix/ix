@@ -37,19 +37,16 @@ bld/python
 {% endblock %}
 
 {% block patch %}
-find . -type f -name CMakeLists.txt | while read l; do
-    sed -e 's|find_package.*OpenGL.*||' \
-        -e 's|OpenGL::GL||g' \
-        -i ${l}
-done
-
 find . -type f | while read l; do
-    sed -e 's|tellg() + a_length|tellg() + (std::streamoff)a_length|g' \
-        -i "${l}"
+    sed -e 's|tellg() + a_length|tellg() + (std::streamoff)a_length|g' -i "${l}"
 done
 {% endblock %}
 
 {% block cmake_flags %}
+OPENGL_opengl_LIBRARY=/
+OPENGL_glx_LIBRARY=/
+OPENGL_GLX_INCLUDE_DIR=/nowhere
+OPENGL_INCLUDE_DIR=/nowhere
 IMHEX_STATIC_LINK_PLUGINS=ON
 IMHEX_OFFLINE_BUILD=ON
 USE_SYSTEM_FMT=ON
