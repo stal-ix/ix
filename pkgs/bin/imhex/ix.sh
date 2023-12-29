@@ -32,8 +32,8 @@ lib/shim/fake(lib_name=glfw)
 {% endblock %}
 
 {% block bld_tool %}
-bld/python
 bld/dlfcn
+bld/python
 {% endblock %}
 
 {% block patch %}
@@ -66,9 +66,4 @@ USE_SYSTEM_NLOHMANN_JSON=ON
 {% block build_flags %}
 shut_up
 wrap_cc
-{% endblock %}
-
-{% block build %}
-{{super()}}
->${tmp}/obj/plugins/builtin.hexplug
 {% endblock %}
