@@ -20,6 +20,7 @@ lib/cap/stone
 lib/glfw/deps
 lib/python/3/10
 lib/json/nlohmann
+lib/shim/fake(lib_name=glfw)
 {% endblock %}
 
 {% block bld_tool %}
@@ -31,7 +32,6 @@ bld/dlfcn
 find . -type f -name CMakeLists.txt | while read l; do
     sed -e 's|find_package.*OpenGL.*||' \
         -e 's|OpenGL::GL||g' \
-        -e 's| glfw | glfw3 |g' \
         -i ${l}
 done
 
