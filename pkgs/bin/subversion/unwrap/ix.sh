@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://archive.apache.org/dist/subversion/subversion-1.14.2.tar.bz2
-sha:c9130e8d0b75728a66f0e7038fc77052e671830d785b5616aad53b4810d3cc28
+https://archive.apache.org/dist/subversion/subversion-1.14.3.tar.bz2
+sha:949efd451a09435f7e8573574c71c7b71b194d844890fa49cd61d2262ea1a440
 {% endblock %}
 
 {% block bld_libs %}

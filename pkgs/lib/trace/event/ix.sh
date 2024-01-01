@@ -1,8 +1,8 @@
 {% extends '//die/c/make.sh' %}
 
 {% block fetch %}
-https://git.kernel.org/pub/scm/libs/libtrace/libtraceevent.git/snapshot/libtraceevent-1.7.3.tar.gz
-sha:097b72e0d907f3107825fb2edf0188324bf70dc9da360f6efa68dc484ffde541
+https://git.kernel.org/pub/scm/libs/libtrace/libtraceevent.git/snapshot/libtraceevent-1.8.0.tar.gz
+sha:b79162d571a6d8c406272dd6f3af936631a1fd1adcf909deb2d13416ef85f0cf
 {% endblock %}
 
 {% block lib_deps %}

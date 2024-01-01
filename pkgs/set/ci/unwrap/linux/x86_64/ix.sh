@@ -1,6 +1,7 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
+bin/quaternion
 bin/qemu/8/2
 bin/ssh/3
 bin/gomuks

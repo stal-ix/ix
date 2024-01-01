@@ -1,15 +1,23 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://downloads.sourceforge.net/project/gnuplot/gnuplot/5.4.10/gnuplot-5.4.10.tar.gz
-sha:975d8c1cc2c41c7cedc4e323aff035d977feb9a97f0296dd2a8a66d197a5b27c
+https://downloads.sourceforge.net/project/gnuplot/gnuplot/6.0.0/gnuplot-6.0.0.tar.gz
+sha:635a28f0993f6ab0d1179e072ad39b8139d07f51237f841d93c6c2ff4b1758ec
 {% endblock %}
 
 {% block bld_libs %}
 lib/c
 lib/gd
 lib/cerf
+lib/glib
+lib/cairo
+lib/pango
 lib/readline
+{% endblock %}
+
+{% block bld_tool %}
+bin/iconv
+bld/fakegit
 {% endblock %}
 
 {% block configure_flags %}
