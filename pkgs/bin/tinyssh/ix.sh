@@ -1,8 +1,8 @@
 {% extends '//die/c/ix.sh' %}
 
 {% block fetch %}
-https://github.com/janmojzis/tinyssh/archive/refs/tags/20220801.tar.gz
-sha:234656fc8d369608eb5d0f3a26280e0e38e2e6b134cfc610b6e24bce176acd4f
+https://github.com/janmojzis/tinyssh/archive/refs/tags/20240101.tar.gz
+sha:d2cd49d0e5e8bdb808d86f07f946a0cfbf2dc9a449a4b8243a82be267d852b62
 {% endblock %}
 
 {% block bld_libs %}
