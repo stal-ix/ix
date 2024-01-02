@@ -58,6 +58,7 @@ http://penma.de/code/gettext-stub/gettext-stub-1.tar.gz
 http://pngquant.org/pngquant-2.9.1-src.tar.gz
 http://potrace.sourceforge.net/download/1.16/potrace-1.16.tar.gz
 http://prdownloads.sourceforge.net/swig/swig-4.1.1.tar.gz
+http://prdownloads.sourceforge.net/swig/swig-4.2.0.tar.gz
 http://smarden.org/runit/runit-2.1.2.tar.gz
 http://sourceware.org/elfutils/ftp/0.189/elfutils-0.189.tar.bz2
 http://sourceware.org/elfutils/ftp/0.190/elfutils-0.190.tar.bz2
