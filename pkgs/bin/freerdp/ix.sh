@@ -10,8 +10,10 @@ FAILED: client/Wayland/CMakeFiles/wlfreerdp.dir/wlfreerdp.c.o
 #}
 
 {% block fetch %}
-https://github.com/FreeRDP/FreeRDP/archive/refs/tags/2.10.0.tar.gz
-sha:88fa59f8e8338d5cb2490d159480564562a5624f3a3572c89fa3070b9626835c
+#https://github.com/FreeRDP/FreeRDP/archive/refs/tags/2.10.0.tar.gz
+#sha:88fa59f8e8338d5cb2490d159480564562a5624f3a3572c89fa3070b9626835c
+https://github.com/FreeRDP/FreeRDP/archive/refs/tags/3.1.0.tar.gz
+sha:22751fdbc91d4fc00432c3e55e42b67a9710fa3929c3edaeb70304cf8227c02d
 #https://github.com/FreeRDP/FreeRDP/archive/refs/tags/2.11.2.tar.gz
 #sha:674b5600bc2ae3e16e5b5a811c7d5b0daaff6198601ba278bd15b4cb9b281044
 {% endblock %}
@@ -19,15 +21,21 @@ sha:88fa59f8e8338d5cb2490d159480564562a5624f3a3572c89fa3070b9626835c
 {% block bld_libs %}
 lib/c
 lib/z
+lib/icu
 lib/usb
 lib/faac
 lib/alsa
+lib/sdl/2
 lib/faad2
 lib/cairo
 lib/ffmpeg
 lib/kernel
+lib/fuse/3
+lib/json/c
 lib/wayland
 lib/openssl
+lib/sdl/2/ttf
+lib/uriparser
 lib/xkb/common
 {% endblock %}
 
@@ -35,13 +43,27 @@ lib/xkb/common
 bld/wayland
 {% endblock %}
 
+{% block build_flags %}
+shut_up
+wrap_cc
+{% endblock %}
+
 {% block cmake_flags %}
 WITH_X11=OFF
 WITH_FAAC=ON
+WITH_CUPS=OFF
+WITH_KRB5=OFF
 WITH_FAAD2=ON
 WITH_CAIRO=ON
 WITH_SAMPLE=ON
+WITH_SHADOW=OFF
+WITH_PKCS11=OFF
 WITH_WAYLAND=ON
+WITH_WEBVIEW=OFF
 WITH_LIBSYSTEMD=OFF
 BUILTIN_CHANNELS=ON
+{% endblock %}
+
+{% block patch %}
+sed -e 's|.*add_sub.*man.*||' -i client/SDL/CMakeLists.txt
 {% endblock %}

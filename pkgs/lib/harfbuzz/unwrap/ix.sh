@@ -29,15 +29,6 @@ coretext=enabled
 sed -e 's|.*GCC.*Wcast-align.*||' -i src/hb.hh
 {% endblock %}
 
-{% block install %}
-{{super()}}
-rm -rf ${out}/lib/cmake
-{#
-ninja: error: '.../libharfbuzz.so.0.60810.0', needed by 'lib/libQt6UiTools.a', missing and no known rule to make it
-CalledProcessError: Command '['sh', '-s']' returned non-zero exit status 1.
-#}
-{% endblock %}
-
 {% block env %}
 export CPPFLAGS="-I${out}/include/harfbuzz \${CPPFLAGS}"
 {% endblock %}
