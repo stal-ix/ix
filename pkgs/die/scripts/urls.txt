@@ -814,6 +814,7 @@ https://github.com/gperftools/gperftools/archive/refs/tags/gperftools-2.10.tar.g
 https://github.com/gperftools/gperftools/archive/refs/tags/gperftools-2.11.tar.gz
 https://github.com/gperftools/gperftools/archive/refs/tags/gperftools-2.12.tar.gz
 https://github.com/gperftools/gperftools/archive/refs/tags/gperftools-2.13.tar.gz
+https://github.com/gperftools/gperftools/archive/refs/tags/gperftools-2.14.tar.gz
 https://github.com/gphoto/libgphoto2/archive/refs/tags/v2.5.30.tar.gz
 https://github.com/haasn/libplacebo/archive/refs/tags/v5.264.1.tar.gz
 https://github.com/haasn/libplacebo/archive/refs/tags/v6.292.1.tar.gz
