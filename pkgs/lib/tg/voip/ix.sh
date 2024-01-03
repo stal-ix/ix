@@ -41,6 +41,7 @@ rm -rf ${out}/lib/pkgconfig
 {% endblock %}
 
 {% block cmake_flags %}
+DESKTOP_APP_DISABLE_SCUDO=ON
 LIBTGVOIP_DISABLE_PULSEAUDIO=ON
 third_party_loc=${TPL}
 {% endblock %}

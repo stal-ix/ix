@@ -1,7 +1,7 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block git_sha %}
-4809a367d99894a7ec16e6e2fb259923a8efb1434072e852c4711a962beb1991
+057257f2c9fe3bcbf693f337c6043c9dfacdb59303f897e6b3557ab5d7a5041b
 {% endblock %}
 
 {% block git_repo %}
@@ -9,7 +9,7 @@ https://gitlab.com/mnauw/cppgir
 {% endblock %}
 
 {% block git_commit %}
-69ef481cba38e848554cc5403b8d4141d3c51335
+d86b6ab9969e453c1e2caa5b77d0d93380c40c59
 {% endblock %}
 
 {% block lib_deps %}
