@@ -1,6 +1,6 @@
-{% block kernel_version %}6-6-8{% endblock %}
+{% block kernel_version %}6-6-9{% endblock %}
 
 {% block fetch %}
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-{{self.kernel_version().replace('-', '.')}}.tar.xz
-sha:5036c434e11e4b36d8da3f489851f7f829cf785fa7f7887468537a9ea4572416
+sha:8ebc65af0cfc891ba63dce0546583da728434db0f5f6a54d979f25ec47f548b3
 {% endblock %}

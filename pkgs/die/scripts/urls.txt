@@ -58,6 +58,7 @@ http://penma.de/code/gettext-stub/gettext-stub-1.tar.gz
 http://pngquant.org/pngquant-2.9.1-src.tar.gz
 http://potrace.sourceforge.net/download/1.16/potrace-1.16.tar.gz
 http://prdownloads.sourceforge.net/swig/swig-4.1.1.tar.gz
+http://prdownloads.sourceforge.net/swig/swig-4.2.0.tar.gz
 http://smarden.org/runit/runit-2.1.2.tar.gz
 http://sourceware.org/elfutils/ftp/0.189/elfutils-0.189.tar.bz2
 http://sourceware.org/elfutils/ftp/0.190/elfutils-0.190.tar.bz2
@@ -121,6 +122,7 @@ https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.6.5.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.6.6.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.6.7.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.6.8.tar.xz
+https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.6.9.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.6.tar.xz
 https://cmocka.org/files/1.1/cmocka-1.1.7.tar.xz
 https://codeberg.org/dnkl/fcft/archive/2.5.0.tar.gz
@@ -444,6 +446,7 @@ https://github.com/FortAwesome/Font-Awesome/archive/refs/tags/5.15.4.tar.gz
 https://github.com/FredHucht/pstree/archive/refs/tags/v2.40.tar.gz
 https://github.com/FreeGLUTProject/freeglut/releases/download/v3.4.0/freeglut-3.4.0.tar.gz
 https://github.com/FreeRDP/FreeRDP/archive/refs/tags/2.10.0.tar.gz
+https://github.com/FreeRDP/FreeRDP/archive/refs/tags/3.1.0.tar.gz
 https://github.com/GNOME/adwaita-icon-theme/archive/refs/tags/44.0.tar.gz
 https://github.com/GNOME/epiphany/archive/refs/tags/45.0.tar.gz
 https://github.com/GNOME/epiphany/archive/refs/tags/45.1.tar.gz
@@ -731,12 +734,14 @@ https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.3.2.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.3.3.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.3.4.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.4.0.tar.gz
+https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.5.0.tar.gz
 https://github.com/fastfloat/fast_float/archive/refs/tags/v3.8.1.tar.gz
 https://github.com/fastfloat/fast_float/archive/refs/tags/v5.2.0.tar.gz
 https://github.com/fenrus75/powertop/archive/refs/tags/v2.15.tar.gz
 https://github.com/fish-shell/fish-shell/archive/refs/tags/3.6.1.tar.gz
 https://github.com/fish-shell/fish-shell/archive/refs/tags/3.6.3.tar.gz
 https://github.com/fish-shell/fish-shell/archive/refs/tags/3.6.4.tar.gz
+https://github.com/fish-shell/fish-shell/archive/refs/tags/3.7.0.tar.gz
 https://github.com/flacjacket/pywayland/archive/refs/tags/v0.4.17.tar.gz
 https://github.com/flacjacket/pywlroots/archive/refs/tags/v0.16.6.tar.gz
 https://github.com/flatpak/libportal/archive/refs/tags/0.7.1.tar.gz
@@ -744,6 +749,7 @@ https://github.com/flatpak/libportal/releases/download/0.7/libportal-0.7.tar.xz
 https://github.com/flatpak/xdg-desktop-portal-gtk/archive/refs/tags/1.14.1.tar.gz
 https://github.com/flatpak/xdg-desktop-portal/archive/dc898cac4d7075b45fe9294acb959b07cd7ecf6a.tar.gz
 https://github.com/fmtlib/fmt/archive/refs/tags/10.1.1.tar.gz
+https://github.com/fmtlib/fmt/archive/refs/tags/10.2.0.tar.gz
 https://github.com/fmtlib/fmt/archive/refs/tags/9.1.0.tar.gz
 https://github.com/francma/wob/archive/refs/tags/0.14.2.tar.gz
 https://github.com/francma/wob/archive/refs/tags/0.15.1.tar.gz
@@ -828,6 +834,7 @@ https://github.com/hughsie/libgusb/archive/refs/tags/0.4.6.tar.gz
 https://github.com/hughsie/libgusb/archive/refs/tags/0.4.7.tar.gz
 https://github.com/hughsie/libgusb/archive/refs/tags/0.4.8.tar.gz
 https://github.com/hughsie/libxmlb/archive/refs/tags/0.3.14.tar.gz
+https://github.com/hughsie/libxmlb/archive/refs/tags/0.3.15.tar.gz
 https://github.com/hunspell/hunspell/archive/refs/tags/v1.7.1.tar.gz
 https://github.com/hyperrealm/libconfig/archive/refs/tags/v1.7.3.tar.gz
 https://github.com/hyprwm/Hyprland/releases/download/v0.29.0/source-v0.29.0.tar.gz
@@ -837,6 +844,7 @@ https://github.com/hyprwm/Hyprland/releases/download/v0.32.0/source-v0.32.0.tar.
 https://github.com/hyprwm/Hyprland/releases/download/v0.32.3/source-v0.32.3.tar.gz
 https://github.com/hyprwm/Hyprland/releases/download/v0.33.0/source-v0.33.0.tar.gz
 https://github.com/hyprwm/Hyprland/releases/download/v0.33.1/source-v0.33.1.tar.gz
+https://github.com/hyprwm/Hyprland/releases/download/v0.34.0/source-v0.34.0.tar.gz
 https://github.com/hyprwm/hyprpaper/archive/refs/tags/v0.2.0.tar.gz
 https://github.com/hyprwm/hyprpicker/archive/refs/tags/v0.1.0.tar.gz
 https://github.com/ib/xarchiver/archive/refs/tags/0.5.4.20.tar.gz
@@ -863,6 +871,7 @@ https://github.com/ivmai/libatomic_ops/archive/refs/tags/v7.8.0.tar.gz
 https://github.com/ivmai/libatomic_ops/archive/refs/tags/v7.8.2.tar.gz
 https://github.com/jackaudio/jack2/archive/v1.9.19.tar.gz
 https://github.com/janmojzis/tinyssh/archive/refs/tags/20220801.tar.gz
+https://github.com/janmojzis/tinyssh/archive/refs/tags/20240101.tar.gz
 https://github.com/jarun/nnn/archive/refs/tags/v4.9.tar.gz
 https://github.com/jasper-software/jasper/archive/refs/tags/version-3.0.5.tar.gz
 https://github.com/jasper-software/jasper/archive/refs/tags/version-4.0.1.tar.gz
@@ -895,6 +904,7 @@ https://github.com/junegunn/fzf/archive/refs/tags/0.42.0.tar.gz
 https://github.com/junegunn/fzf/archive/refs/tags/0.43.0.tar.gz
 https://github.com/junegunn/fzf/archive/refs/tags/0.44.0.tar.gz
 https://github.com/junegunn/fzf/archive/refs/tags/0.44.1.tar.gz
+https://github.com/junegunn/fzf/archive/refs/tags/0.45.0.tar.gz
 https://github.com/kaniini/libucontext/archive/refs/tags/libucontext-1.2.tar.gz
 https://github.com/kcat/openal-soft/archive/refs/tags/1.23.1.tar.gz
 https://github.com/kkos/oniguruma/archive/refs/tags/v6.9.8.tar.gz
@@ -1013,6 +1023,7 @@ https://github.com/martanne/vis/archive/refs/tags/v0.8.tar.gz
 https://github.com/martijnvanbrummelen/nwipe/archive/refs/tags/v0.34.tar.gz
 https://github.com/martijnvanbrummelen/nwipe/archive/refs/tags/v0.35.tar.gz
 https://github.com/martinus/robin-hood-hashing/archive/refs/tags/3.11.3.tar.gz
+https://github.com/marzer/tomlplusplus/archive/refs/tags/v3.4.0.tar.gz
 https://github.com/mauke/unibilium/archive/refs/tags/v2.0.0.tar.gz
 https://github.com/mawww/kakoune/archive/refs/tags/v2023.08.05.tar.gz
 https://github.com/mesonbuild/meson/archive/refs/tags/0.60.2.tar.gz
@@ -1063,6 +1074,7 @@ https://github.com/neomutt/neomutt/archive/refs/tags/20231006.tar.gz
 https://github.com/neovim/libtermkey/archive/refs/tags/v0.20.tar.gz
 https://github.com/neovim/neovim/archive/refs/tags/v0.9.2.tar.gz
 https://github.com/neovim/neovim/archive/refs/tags/v0.9.4.tar.gz
+https://github.com/neovim/neovim/archive/refs/tags/v0.9.5.tar.gz
 https://github.com/netwide-assembler/nasm/archive/refs/tags/nasm-2.16.01.tar.gz
 https://github.com/nghttp2/nghttp2/archive/refs/tags/v1.56.0.tar.gz
 https://github.com/nghttp2/nghttp2/archive/refs/tags/v1.57.0.tar.gz
@@ -1289,6 +1301,7 @@ https://github.com/telegramdesktop/tdesktop/releases/download/v4.11.6/tdesktop-4
 https://github.com/telegramdesktop/tdesktop/releases/download/v4.11.7/tdesktop-4.11.7-full.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v4.11.8/tdesktop-4.11.8-full.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v4.12.1/tdesktop-4.12.1-full.tar.gz
+https://github.com/telegramdesktop/tdesktop/releases/download/v4.14.2/tdesktop-4.14.2-full.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v4.8.10/tdesktop-4.8.10-full.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v4.8.12/tdesktop-4.8.12-full.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v4.9.0/tdesktop-4.9.0-full.tar.gz
@@ -1581,6 +1594,7 @@ https://poppler.freedesktop.org/poppler-23.09.0.tar.xz
 https://poppler.freedesktop.org/poppler-23.10.0.tar.xz
 https://poppler.freedesktop.org/poppler-23.11.0.tar.xz
 https://poppler.freedesktop.org/poppler-23.12.0.tar.xz
+https://poppler.freedesktop.org/poppler-24.01.0.tar.xz
 https://pwmt.org/projects/zathura-djvu/download/zathura-djvu-0.2.9.tar.xz
 https://pwmt.org/projects/zathura-pdf-poppler/download/zathura-pdf-poppler-0.3.1.tar.xz
 https://raw.githubusercontent.com/Homebrew/patches/1860b0a745f1fe726900974845d1b0dd3c3398d6/openssh/patch-sandbox-darwin.c-apple-sandbox-named-external.diff

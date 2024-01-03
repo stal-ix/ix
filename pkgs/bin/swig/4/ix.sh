@@ -1,8 +1,8 @@
 {% extends '//die/c/autohell.sh' %}
 
 {% block fetch %}
-http://prdownloads.sourceforge.net/swig/swig-4.1.1.tar.gz
-sha:2af08aced8fcd65cdb5cc62426768914bedc735b1c250325203716f78e39ac9b
+http://prdownloads.sourceforge.net/swig/swig-4.2.0.tar.gz
+sha:261ca2d7589e260762817b912c075831572b72ff2717942f75b3e51244829c97
 {% endblock %}
 
 {% block bld_libs %}
