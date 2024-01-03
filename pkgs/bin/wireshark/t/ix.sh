@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/wireshark/wireshark/archive/refs/tags/v4.2.0.tar.gz
-sha:72732db0f86cb724197a12eb90c7e6c60ce7d1dc3be5508d90849c0a21974b85
+https://github.com/wireshark/wireshark/archive/refs/tags/v4.2.1.tar.gz
+sha:85832bbde710749fd7fbc96ce464abe2dd63cf77fec2bda8c16b7ab348056ea4
 {% endblock %}
 
 {% block bld_libs %}
