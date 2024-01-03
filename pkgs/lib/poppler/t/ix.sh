@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://poppler.freedesktop.org/poppler-23.12.0.tar.xz
-sha:beba398c9d37a9b6d02486496635e08f1df3d437cfe61dab2593f47c4d14cdbb
+https://poppler.freedesktop.org/poppler-24.01.0.tar.xz
+sha:c7def693a7a492830f49d497a80cc6b9c85cb57b15e9be2d2d615153b79cae08
 {% endblock %}
 
 {% block lib_deps %}
