@@ -1,5 +1,5 @@
 {% extends '//die/hub.sh' %}
 
 {% block lib_deps %}
-lib/tcmalloc/13
+lib/tcmalloc/14
 {% endblock %}
