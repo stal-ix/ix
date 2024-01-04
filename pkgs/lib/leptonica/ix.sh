@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/DanBloomberg/leptonica/archive/refs/tags/1.83.1.tar.gz
-sha:4289d0a4224b614010072253531c0455a33a4d7c7a0017fe7825ed382290c0da
+https://github.com/DanBloomberg/leptonica/archive/refs/tags/1.84.1.tar.gz
+sha:ecd7a868403b3963c4e33623595d77f2c87667e2cfdd9b370f87729192061bef
 {% endblock %}
 
 {% block lib_deps %}
@@ -23,5 +23,6 @@ BUILD_PROG=OFF
 
 {% block install %}
 {{super()}}
-sed -e 's|.*exec_prefix.*||' -i ${out}/lib/pkgconfig/lept.pc
+sed -e 's|.*exec_prefix.*||' -i ${out}/lib/pkgconfig/lept_Release.pc
+cp ${out}/lib/pkgconfig/lept_Release.pc ${out}/lib/pkgconfig/lept.pc
 {% endblock %}
