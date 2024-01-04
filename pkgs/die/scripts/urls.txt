@@ -1352,6 +1352,7 @@ https://github.com/unicode-org/icu/archive/refs/tags/release-70-1.tar.gz
 https://github.com/upx/upx/releases/download/v4.1.0/upx-4.1.0-src.tar.xz
 https://github.com/upx/upx/releases/download/v4.2.0/upx-4.2.0-src.tar.xz
 https://github.com/upx/upx/releases/download/v4.2.1/upx-4.2.1-src.tar.xz
+https://github.com/upx/upx/releases/download/v4.2.2/upx-4.2.2-src.tar.xz
 https://github.com/uriparser/uriparser/archive/refs/tags/uriparser-0.9.6.tar.gz
 https://github.com/util-linux/util-linux/archive/refs/tags/v2.39.1.tar.gz
 https://github.com/uutils/coreutils/archive/refs/tags/0.0.8.tar.gz
