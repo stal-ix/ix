@@ -752,6 +752,7 @@ https://github.com/flatpak/xdg-desktop-portal-gtk/archive/refs/tags/1.14.1.tar.g
 https://github.com/flatpak/xdg-desktop-portal/archive/dc898cac4d7075b45fe9294acb959b07cd7ecf6a.tar.gz
 https://github.com/fmtlib/fmt/archive/refs/tags/10.1.1.tar.gz
 https://github.com/fmtlib/fmt/archive/refs/tags/10.2.0.tar.gz
+https://github.com/fmtlib/fmt/archive/refs/tags/10.2.1.tar.gz
 https://github.com/fmtlib/fmt/archive/refs/tags/9.1.0.tar.gz
 https://github.com/francma/wob/archive/refs/tags/0.14.2.tar.gz
 https://github.com/francma/wob/archive/refs/tags/0.15.1.tar.gz
