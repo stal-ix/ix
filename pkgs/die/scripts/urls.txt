@@ -1053,6 +1053,7 @@ https://github.com/microsoft/snmalloc/archive/refs/tags/0.6.0.tar.gz
 https://github.com/microsoft/vcpkg-tool/archive/refs/tags/2022-11-10.tar.gz
 https://github.com/microsoft/vcpkg-tool/archive/refs/tags/2023-11-16.tar.gz
 https://github.com/miniupnp/miniupnp/archive/refs/tags/miniupnpd_2_3_3.tar.gz
+https://github.com/miniupnp/miniupnp/archive/refs/tags/miniupnpd_2_3_4.tar.gz
 https://github.com/miniupnp/miniupnp/commit/ed1dc4bb.patch
 https://github.com/misterdanb/avizo/archive/refs/tags/1.2.1.tar.gz
 https://github.com/mjansson/rpmalloc/archive/refs/tags/1.4.4.tar.gz
