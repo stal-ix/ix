@@ -1,4 +1,4 @@
-{% extends '//bin/acpid/2/ix.sh' %}
+{% extends '//bin/acpi/d/2/ix.sh' %}
 
 {% block patch %}
 find . -type f | while read l; do

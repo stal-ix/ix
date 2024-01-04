@@ -2,10 +2,10 @@
 
 {% block run_deps %}
 bin/runsrv
-bin/acpid/d
-bin/acpid/runit/scripts
+bin/acpi/d/d
+bin/acpi/d/runit/scripts
 {% endblock %}
 
 {% block run_data %}
-bin/acpid/rules
+bin/acpi/d/rules
 {% endblock %}
