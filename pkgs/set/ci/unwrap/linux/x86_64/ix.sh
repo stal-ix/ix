@@ -1,6 +1,7 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
+bin/acpi/ca
 bin/quaternion
 bin/qemu/8/2
 bin/ssh/3
@@ -432,10 +433,10 @@ bin/execline
 bin/xsltproc
 bin/jq
 bin/webkitproc
-bin/acpid/2
-bin/acpid/rules
-bin/acpid/runit
-bin/acpid/d
+bin/acpi/d/2
+bin/acpi/d/rules
+bin/acpi/d/runit
+bin/acpi/d/d
 bin/net/cat
 bin/basuctl
 bin/xmlwf
