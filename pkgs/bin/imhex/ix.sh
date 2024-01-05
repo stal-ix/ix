@@ -36,6 +36,14 @@ bld/dlfcn
 bld/python
 {% endblock %}
 
+{% block cpp_includes %}
+${PWD}/lib/third_party/llvm-demangle/include
+{% endblock %}
+
+{% block cpp_defines %}
+llvm=llvm_imhex
+{% endblock %}
+
 {% block patch %}
 find . -type f | while read l; do
     sed -e 's|tellg() + a_length|tellg() + (std::streamoff)a_length|g' -i "${l}"
