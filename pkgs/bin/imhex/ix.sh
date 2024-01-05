@@ -23,6 +23,7 @@ lib/glfw
 lib/opengl
 lib/archive
 lib/freetype
+lib/execinfo
 lib/mbedtls/3
 lib/cap/stone
 lib/glfw/deps
@@ -48,6 +49,10 @@ llvm=llvm_imhex
 find . -type f | while read l; do
     sed -e 's|tellg() + a_length|tellg() + (std::streamoff)a_length|g' -i "${l}"
 done
+
+base64 -d << EOF > lib/libimhex/source/api/plugin_manager.cpp
+{% include 'plugin_manager.cpp/base64' %}
+EOF
 {% endblock %}
 
 {% block cmake_flags %}

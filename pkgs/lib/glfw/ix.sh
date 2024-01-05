@@ -26,3 +26,10 @@ GLFW_BUILD_EXAMPLES=OFF
 GLFW_VULKAN_STATIC=ON
 GLFW_USE_WAYLAND=ON
 {% endblock %}
+
+{% block patch %}
+# imhex segfaults on glfwTerminate
+find . -name '*.c' | while read l; do
+    sed -e 's|regfree.*|{}|' -i ${l}
+done
+{% endblock %}
