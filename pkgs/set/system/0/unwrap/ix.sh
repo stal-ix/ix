@@ -26,6 +26,7 @@ bin/mingetty/runit
 bin/emptty/runit
 {% endif %}
 
+bin/sched/fstrim(delay=1000)
 bin/sched/builddir(delay=1000)
 bin/sched/trashdir(delay=100)
 bin/sched/staleprocs(delay=10)
