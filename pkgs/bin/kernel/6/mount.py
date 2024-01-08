@@ -1,6 +1,6 @@
 import json
 
-K = PYPI = json.loads(parent.serve('kernels.json'))
+K = json.loads(parent.serve('kernels.json'))
 T = {}
 
 T['ix.sh'] = '''
