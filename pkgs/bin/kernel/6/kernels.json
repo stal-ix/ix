@@ -1,0 +1,8 @@
+[
+    {
+        "ver": "6.1.71",
+        "url": "https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.1.71.tar.xz",
+        "sha": "2df774dd53f9ffd4e57ebf804cf597709295df6a304fe261d25220a134b7f041",
+        "cfg": "cfg_6_6_0"
+    }
+]

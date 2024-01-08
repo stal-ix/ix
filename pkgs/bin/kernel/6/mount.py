@@ -1,5 +1,6 @@
 import json
 
+K = PYPI = json.loads(parent.serve('kernels.json'))
 T = {}
 
 T['ix.sh'] = '''
@@ -35,10 +36,46 @@ bin/kernel/6/__VER__/headers
 {% endblock %}
 '''
 
+V = '''
+{% block kernel_version %}__FULL_VER__{% endblock %}
+{% block fetch %}
+__URL__
+__SHA__
+{% endblock %}
+'''
+
+C = '''
+{% include '//bin/kernel/configs/__CFG__' %}
+'''
+
+def gen_v(descr):
+    v = V
+
+    v = v.replace('__FULL_VER__', descr['ver'].replace('.', '-'))
+    v = v.replace('__URL__', descr['url'])
+    v = v.replace('__SHA__', descr['sha'])
+
+    return v
+
+def gen_c(descr):
+    return C.replace('__CFG__', descr['cfg'])
+
+def best_match(prefix):
+    for k in K:
+        if k['ver'].startswith(prefix):
+            return k
+
+    raise Exception(f'can not find suitable kernel for {prefix}')
 
 def serve(x):
     ver = x[:x.index('/')]
     tpl = x[len(ver) + 1:]
+
+    if tpl == 'ver.sh':
+        return gen_v(best_match(f'6.{ver}.'))
+
+    if tpl == 'cfg':
+        return gen_c(best_match(f'6.{ver}.'))
 
     try:
         return T[tpl].replace('__VER__', ver)
