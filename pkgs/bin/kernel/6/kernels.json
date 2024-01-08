@@ -4,5 +4,11 @@
         "url": "https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.1.71.tar.xz",
         "sha": "2df774dd53f9ffd4e57ebf804cf597709295df6a304fe261d25220a134b7f041",
         "cfg": "cfg_6_6_0"
+    },
+    {
+        "ver": "6.5.13",
+        "url": "https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.5.13.tar.xz",
+        "sha": "78fbd43822f4c56bc16e89e8874767f592532e1a0ffcd1af4dd279559b5fcbb5",
+        "cfg": "cfg_6_5_8"
     }
 ]
