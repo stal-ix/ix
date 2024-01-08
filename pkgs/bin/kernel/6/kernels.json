@@ -10,5 +10,11 @@
         "url": "https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.5.13.tar.xz",
         "sha": "78fbd43822f4c56bc16e89e8874767f592532e1a0ffcd1af4dd279559b5fcbb5",
         "cfg": "cfg_6_5_8"
+    },
+    {
+        "ver": "6.6.10",
+        "url": "https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.6.10.tar.xz",
+        "sha": "9ee627e4c109aec7fca3eda5898e81d201af2c7eb2f7d9d7d94c1f0e1205546c",
+        "cfg": "cfg_6_6_0"
     }
 ]
