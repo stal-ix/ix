@@ -32,17 +32,13 @@ C = '''
 {% include '//bin/kernel/configs/__CFG__' %}
 '''
 
-def gen_v(descr):
-    v = V
-
+def subst(v, descr):
     v = v.replace('__FULL_VER__', descr['ver'].replace('.', '-'))
     v = v.replace('__URL__', descr['url'])
     v = v.replace('__SHA__', descr['sha'])
+    v = v.replace('__CFG__', descr['cfg'])
 
     return v
-
-def gen_c(descr):
-    return C.replace('__CFG__', descr['cfg'])
 
 def best_match(prefix):
     for k in K:
@@ -60,12 +56,13 @@ def serve(x):
     ver = xs[0]
     tpl = xs[1]
     pat = ver.replace('/', '.') + '.'
+    ker = best_match(pat)
 
     if tpl == 'ver.sh':
-        return gen_v(best_match(pat))
+        return subst(V, ker)
 
     if tpl == 'cfg':
-        return gen_c(best_match(pat))
+        return subst(C, ker)
 
     try:
         return T[tpl].replace('__NS__', 'bin/kernel/' + ver + '/_')
