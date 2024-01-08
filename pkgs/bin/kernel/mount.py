@@ -16,20 +16,16 @@ __NS__/headers
 {% endblock %}
 {% block slot %}0{% endblock %}
 {% block kernel_flags %}
-{% include '//__NS__/cfg' %}
+{% include '//bin/kernel/configs/__CFG__' %}
 {% endblock %}
 '''
 
-V = '''
+T['ver.sh'] = '''
 {% block kernel_version %}__FULL_VER__{% endblock %}
 {% block fetch %}
 __URL__
 __SHA__
 {% endblock %}
-'''
-
-C = '''
-{% include '//bin/kernel/configs/__CFG__' %}
 '''
 
 def subst(v, descr):
@@ -56,15 +52,8 @@ def serve(x):
 
     ver = xs[0]
     tpl = xs[1]
-    pat = ver.replace('/', '.') + '.'
-    ker = best_match(pat)
+    ker = best_match(ver.replace('/', '.') + '.')
     rpl = dict(ker.items(), ns='bin/kernel/' + ver + '/_')
-
-    if tpl == 'ver.sh':
-        return subst(V, rpl)
-
-    if tpl == 'cfg':
-        return subst(C, rpl)
 
     try:
         return subst(T[tpl], rpl)
