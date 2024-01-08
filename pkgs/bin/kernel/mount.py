@@ -21,7 +21,7 @@ __NS__/headers
 '''
 
 T['ver.sh'] = '''
-{% block kernel_version %}__FULL_VER__{% endblock %}
+{% block kernel_version %}__VER__{% endblock %}
 {% block fetch %}
 __URL__
 __SHA__
@@ -29,7 +29,7 @@ __SHA__
 '''
 
 def subst(v, descr):
-    v = v.replace('__FULL_VER__', descr['ver'].replace('.', '-'))
+    v = v.replace('__VER__', descr['ver'].replace('.', '-'))
     v = v.replace('__URL__', descr['url'])
     v = v.replace('__SHA__', descr['sha'])
     v = v.replace('__CFG__', descr['cfg'])
