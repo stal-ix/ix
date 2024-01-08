@@ -7,10 +7,10 @@ bin/sud
 bin/iwd/runit
 bin/runit/sys
 bin/dbus/runit
-bin/acpid/runit
 bin/seatd/runit
 bin/sndio/runit
 bin/dhcpcd/runit
+bin/acpi/d/runit
 bin/openresolv/runit
 
 # https://wiki.musl-libc.org/functional-differences-from-glibc.html#Name-Resolver/DNS
@@ -26,6 +26,7 @@ bin/mingetty/runit
 bin/emptty/runit
 {% endif %}
 
+bin/sched/fstrim(delay=1000)
 bin/sched/builddir(delay=1000)
 bin/sched/trashdir(delay=100)
 bin/sched/staleprocs(delay=10)

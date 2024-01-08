@@ -1,19 +1,21 @@
 {% extends '//die/c/make.sh' %}
 
 {% block fetch %}
-https://www.atoptool.nl/download/atop-2.9.0.tar.gz
-sha:8d82f211b712a227000ef254c0a2b53bcb71235bf40d93316acce80b04bff926
+https://www.atoptool.nl/download/atop-2.10.0.tar.gz
+sha:e7a673cf2c82578e7dd82ecb0dec83fd9ecb30828b2561c28a9fa5aaf75d5f93
 {% endblock %}
 
 {% block bld_libs %}
 lib/c
 lib/z
+lib/glib
 lib/kernel
 lib/curses
 {% endblock %}
 
-{% block blt_tool %}
+{% block bld_tool %}
 bin/getopt
+bld/pkg/config
 {% endblock %}
 
 {% block patch %}

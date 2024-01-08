@@ -115,6 +115,7 @@ https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.5.7.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.5.8.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.5.9.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.6.1.tar.xz
+https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.6.10.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.6.2.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.6.3.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.6.4.tar.xz
@@ -197,6 +198,7 @@ https://download.savannah.gnu.org/releases/zutils/zutils-1.12.tar.lz
 https://download.sourceforge.net/qjackctl/qjackctl-0.9.10.tar.gz
 https://download.tuxfamily.org/chrony/chrony-4.4.tar.gz
 https://download.videolan.org/pub/videolan/libbluray/1.3.4/libbluray-1.3.4.tar.bz2
+https://downloadmirror.intel.com/783534/acpica-unix-20230628.tar.gz
 https://downloads.scummvm.org/frs/scummvm/2.7.1/scummvm-2.7.1.tar.xz
 https://downloads.scummvm.org/frs/scummvm/2.8.0/scummvm-2.8.0.tar.xz
 https://downloads.sourceforge.net/gptfdisk/gptfdisk-1.0.9.tar.gz
@@ -436,6 +438,7 @@ https://github.com/BLAKE3-team/BLAKE3/archive/refs/tags/1.4.1.tar.gz
 https://github.com/BLAKE3-team/BLAKE3/archive/refs/tags/1.5.0.tar.gz
 https://github.com/Cyan4973/xxHash/archive/refs/tags/v0.8.2.tar.gz
 https://github.com/DanBloomberg/leptonica/archive/refs/tags/1.83.1.tar.gz
+https://github.com/DanBloomberg/leptonica/archive/refs/tags/1.84.1.tar.gz
 https://github.com/Esri/lerc/archive/refs/tags/v4.0.0.tar.gz
 https://github.com/Exiv2/exiv2/archive/refs/tags/v0.27.6.tar.gz
 https://github.com/FFmpeg/FFmpeg/archive/refs/tags/n4.4.2.tar.gz
@@ -450,6 +453,7 @@ https://github.com/FreeRDP/FreeRDP/archive/refs/tags/3.1.0.tar.gz
 https://github.com/GNOME/adwaita-icon-theme/archive/refs/tags/44.0.tar.gz
 https://github.com/GNOME/epiphany/archive/refs/tags/45.0.tar.gz
 https://github.com/GNOME/epiphany/archive/refs/tags/45.1.tar.gz
+https://github.com/GNOME/epiphany/archive/refs/tags/45.2.tar.gz
 https://github.com/GNOME/epiphany/archive/refs/tags/45.beta.tar.gz
 https://github.com/GNOME/gthumb/archive/refs/tags/3.12.2.tar.gz
 https://github.com/GNOME/gtk-doc/archive/refs/tags/GTK_DOC_1_32.tar.gz
@@ -475,6 +479,8 @@ https://github.com/Genivia/ugrep/archive/refs/tags/v4.3.5.tar.gz
 https://github.com/Genivia/ugrep/archive/refs/tags/v4.3.6.tar.gz
 https://github.com/Genivia/ugrep/archive/refs/tags/v4.4.0.tar.gz
 https://github.com/Genivia/ugrep/archive/refs/tags/v4.4.1.tar.gz
+https://github.com/Genivia/ugrep/archive/refs/tags/v4.5.0.tar.gz
+https://github.com/Genivia/ugrep/archive/refs/tags/v4.5.1.tar.gz
 https://github.com/GrapheneOS/hardened_malloc/archive/refs/tags/11.tar.gz
 https://github.com/Hjdskes/cage/archive/refs/tags/v0.1.4.tar.gz
 https://github.com/HowardHinnant/date/archive/refs/tags/v3.0.1.tar.gz
@@ -561,6 +567,7 @@ https://github.com/PurpleI2P/i2pd/archive/refs/tags/2.48.0.tar.gz
 https://github.com/PurpleI2P/i2pd/archive/refs/tags/2.49.0.tar.gz
 https://github.com/PurpleI2P/i2pd/archive/refs/tags/2.50.0.tar.gz
 https://github.com/PurpleI2P/i2pd/archive/refs/tags/2.50.1.tar.gz
+https://github.com/PurpleI2P/i2pd/archive/refs/tags/2.50.2.tar.gz
 https://github.com/Samsung/rlottie/archive/refs/tags/v0.2.tar.gz
 https://github.com/SpartanJ/efsw/archive/refs/tags/1.3.1.tar.gz
 https://github.com/Syllo/nvtop/archive/refs/tags/3.0.2.tar.gz
@@ -646,6 +653,7 @@ https://github.com/c-ares/c-ares/archive/refs/tags/cares-1_21_0.tar.gz
 https://github.com/c-ares/c-ares/archive/refs/tags/cares-1_22_0.tar.gz
 https://github.com/c-ares/c-ares/archive/refs/tags/cares-1_22_1.tar.gz
 https://github.com/c-ares/c-ares/archive/refs/tags/cares-1_24_0.tar.gz
+https://github.com/c-ares/c-ares/archive/refs/tags/cares-1_25_0.tar.gz
 https://github.com/capstone-engine/capstone/archive/refs/tags/5.0-rc2.tar.gz
 https://github.com/capstone-engine/capstone/archive/refs/tags/5.0.1.tar.gz
 https://github.com/catboost/catboost/archive/refs/tags/v1.0.6.tar.gz
@@ -751,6 +759,7 @@ https://github.com/flatpak/xdg-desktop-portal-gtk/archive/refs/tags/1.14.1.tar.g
 https://github.com/flatpak/xdg-desktop-portal/archive/dc898cac4d7075b45fe9294acb959b07cd7ecf6a.tar.gz
 https://github.com/fmtlib/fmt/archive/refs/tags/10.1.1.tar.gz
 https://github.com/fmtlib/fmt/archive/refs/tags/10.2.0.tar.gz
+https://github.com/fmtlib/fmt/archive/refs/tags/10.2.1.tar.gz
 https://github.com/fmtlib/fmt/archive/refs/tags/9.1.0.tar.gz
 https://github.com/francma/wob/archive/refs/tags/0.14.2.tar.gz
 https://github.com/francma/wob/archive/refs/tags/0.15.1.tar.gz
@@ -767,6 +776,7 @@ https://github.com/gavinhoward/bc/archive/refs/tags/6.6.0.tar.gz
 https://github.com/gavinhoward/bc/archive/refs/tags/6.6.1.tar.gz
 https://github.com/gavinhoward/bc/archive/refs/tags/6.7.0.tar.gz
 https://github.com/gavinhoward/bc/archive/refs/tags/6.7.3.tar.gz
+https://github.com/gavinhoward/bc/archive/refs/tags/6.7.5.tar.gz
 https://github.com/gcla/termshark/archive/refs/tags/v2.4.0.tar.gz
 https://github.com/geany/geany/archive/refs/tags/1.38.0.tar.gz
 https://github.com/geany/geany/archive/refs/tags/2.0.0.tar.gz
@@ -805,6 +815,7 @@ https://github.com/google/re2/archive/refs/tags/2023-09-01.tar.gz
 https://github.com/google/re2/archive/refs/tags/2023-11-01.tar.gz
 https://github.com/google/shaderc/archive/refs/tags/v2023.6.tar.gz
 https://github.com/google/shaderc/archive/refs/tags/v2023.7.tar.gz
+https://github.com/google/shaderc/archive/refs/tags/v2023.8.tar.gz
 https://github.com/google/snappy/archive/refs/tags/1.1.10.tar.gz
 https://github.com/google/snappy/archive/refs/tags/1.1.9.tar.gz
 https://github.com/google/woff2/archive/refs/tags/v1.0.2.tar.gz
@@ -816,6 +827,7 @@ https://github.com/gperftools/gperftools/archive/refs/tags/gperftools-2.11.tar.g
 https://github.com/gperftools/gperftools/archive/refs/tags/gperftools-2.12.tar.gz
 https://github.com/gperftools/gperftools/archive/refs/tags/gperftools-2.13.tar.gz
 https://github.com/gperftools/gperftools/archive/refs/tags/gperftools-2.14.tar.gz
+https://github.com/gperftools/gperftools/archive/refs/tags/gperftools-2.15.tar.gz
 https://github.com/gphoto/libgphoto2/archive/refs/tags/v2.5.30.tar.gz
 https://github.com/haasn/libplacebo/archive/refs/tags/v5.264.1.tar.gz
 https://github.com/haasn/libplacebo/archive/refs/tags/v6.292.1.tar.gz
@@ -1049,6 +1061,7 @@ https://github.com/microsoft/snmalloc/archive/refs/tags/0.6.0.tar.gz
 https://github.com/microsoft/vcpkg-tool/archive/refs/tags/2022-11-10.tar.gz
 https://github.com/microsoft/vcpkg-tool/archive/refs/tags/2023-11-16.tar.gz
 https://github.com/miniupnp/miniupnp/archive/refs/tags/miniupnpd_2_3_3.tar.gz
+https://github.com/miniupnp/miniupnp/archive/refs/tags/miniupnpd_2_3_4.tar.gz
 https://github.com/miniupnp/miniupnp/commit/ed1dc4bb.patch
 https://github.com/misterdanb/avizo/archive/refs/tags/1.2.1.tar.gz
 https://github.com/mjansson/rpmalloc/archive/refs/tags/1.4.4.tar.gz
@@ -1305,6 +1318,7 @@ https://github.com/telegramdesktop/tdesktop/releases/download/v4.11.7/tdesktop-4
 https://github.com/telegramdesktop/tdesktop/releases/download/v4.11.8/tdesktop-4.11.8-full.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v4.12.1/tdesktop-4.12.1-full.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v4.14.2/tdesktop-4.14.2-full.tar.gz
+https://github.com/telegramdesktop/tdesktop/releases/download/v4.14.3/tdesktop-4.14.3-full.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v4.8.10/tdesktop-4.8.10-full.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v4.8.12/tdesktop-4.8.12-full.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v4.9.0/tdesktop-4.9.0-full.tar.gz
@@ -1349,6 +1363,7 @@ https://github.com/unicode-org/icu/archive/refs/tags/release-70-1.tar.gz
 https://github.com/upx/upx/releases/download/v4.1.0/upx-4.1.0-src.tar.xz
 https://github.com/upx/upx/releases/download/v4.2.0/upx-4.2.0-src.tar.xz
 https://github.com/upx/upx/releases/download/v4.2.1/upx-4.2.1-src.tar.xz
+https://github.com/upx/upx/releases/download/v4.2.2/upx-4.2.2-src.tar.xz
 https://github.com/uriparser/uriparser/archive/refs/tags/uriparser-0.9.6.tar.gz
 https://github.com/util-linux/util-linux/archive/refs/tags/v2.39.1.tar.gz
 https://github.com/uutils/coreutils/archive/refs/tags/0.0.8.tar.gz
@@ -1359,6 +1374,7 @@ https://github.com/vcrhonek/hwdata/archive/refs/tags/v0.374.tar.gz
 https://github.com/vcrhonek/hwdata/archive/refs/tags/v0.375.tar.gz
 https://github.com/vcrhonek/hwdata/archive/refs/tags/v0.376.tar.gz
 https://github.com/vcrhonek/hwdata/archive/refs/tags/v0.377.tar.gz
+https://github.com/vcrhonek/hwdata/archive/refs/tags/v0.378.tar.gz
 https://github.com/vector-of-bool/cmrc/archive/refs/tags/2.0.1.tar.gz
 https://github.com/videolabs/libmicrodns/archive/refs/tags/0.2.0.tar.gz
 https://github.com/videolan/dav1d/archive/refs/tags/1.2.1.tar.gz
@@ -1386,6 +1402,8 @@ https://github.com/westes/flex/files/981163/flex-2.6.4.tar.gz
 https://github.com/wfeldt/libx86emu/archive/refs/tags/3.5.tar.gz
 https://github.com/wireshark/wireshark/archive/refs/tags/v4.1.0.tar.gz
 https://github.com/wireshark/wireshark/archive/refs/tags/v4.2.0.tar.gz
+https://github.com/wireshark/wireshark/archive/refs/tags/v4.2.1.tar.gz
+https://github.com/wireshark/wireshark/archive/refs/tags/v4.2.2.tar.gz
 https://github.com/wmww/gtk-layer-shell/archive/refs/tags/v0.8.0.tar.gz
 https://github.com/wolfSSL/wolfssl/archive/refs/tags/v5.6.3-stable.tar.gz
 https://github.com/wolfSSL/wolfssl/archive/refs/tags/v5.6.4-stable.tar.gz
@@ -1512,6 +1530,7 @@ https://gitlab.gnome.org/GNOME/vte/-/archive/0.74.2/vte-0.74.2.tar.bz2
 https://gitlab.gnome.org/GNOME/zenity/-/archive/3.44.0/zenity-3.44.0.tar.bz2
 https://gitlab.gnome.org/GNOME/zenity/-/archive/3.90.0/zenity-3.90.0.tar.bz2
 https://gitlab.gnome.org/GNOME/zenity/-/archive/4.0.0/zenity-4.0.0.tar.bz2
+https://gitlab.gnome.org/GNOME/zenity/-/archive/4.0.1/zenity-4.0.1.tar.bz2
 https://gitlab.gnome.org/crab2313/evince/-/archive/4c91df66ca83f8f1d057f0aa9069675b8bf5b6d6/evince-4c91df66ca83f8f1d057f0aa9069675b8bf5b6d6.tar.bz2
 https://gitlab.gnome.org/jadahl/libdecor/-/archive/0.1.1/libdecor-0.1.1.tar.bz2
 https://gitlab.matrix.org/matrix-org/olm/-/archive/3.2.15/olm-3.2.15.tar.bz2
@@ -1610,6 +1629,7 @@ https://salsa.debian.org/debian/netcat-openbsd/-/archive/debian/1.218-3/netcat-o
 https://salsa.debian.org/iso-codes-team/iso-codes/-/archive/v4.12.0/iso-codes-v4.12.0.tar.gz
 https://secure.nic.cz/files/knot-dns/knot-3.2.9.tar.xz
 https://secure.nic.cz/files/knot-dns/knot-3.3.2.tar.xz
+https://secure.nic.cz/files/knot-dns/knot-3.3.3.tar.xz
 https://secure.nic.cz/files/knot-resolver/knot-resolver-5.6.0.tar.xz
 https://skarnet.org/software/execline/execline-2.8.2.0.tar.gz
 https://skarnet.org/software/mdevd/mdevd-0.1.5.1.tar.gz
@@ -1670,12 +1690,14 @@ https://wpewebkit.org/releases/wpewebkit-2.36.2.tar.xz
 https://wpitchoune.net/psensor/files/psensor-1.2.1.tar.gz
 https://www.agner.org/optimize/asmlib.zip
 https://www.alsa-project.org/files/pub/lib/alsa-lib-1.2.10.tar.bz2
+https://www.atoptool.nl/download/atop-2.10.0.tar.gz
 https://www.atoptool.nl/download/atop-2.9.0.tar.gz
 https://www.bytereef.org/software/mpdecimal/releases/mpdecimal-2.5.1.tar.gz
 https://www.cabextract.org.uk/cabextract-1.11.tar.gz
 https://www.cairographics.org/releases/cairomm-1.14.0.tar.xz
 https://www.cairographics.org/releases/cairomm-1.16.1.tar.xz
 https://www.cairographics.org/releases/pixman-0.42.2.tar.gz
+https://www.cairographics.org/releases/pixman-0.43.0.tar.gz
 https://www.claws-mail.org/download.php?file=releases/claws-mail-4.1.0.tar.xz
 https://www.cpan.org/src/5.0/perl-5.36.0.tar.gz
 https://www.cpan.org/src/5.0/perl-5.38.1.tar.gz

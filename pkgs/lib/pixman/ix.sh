@@ -1,15 +1,15 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://www.cairographics.org/releases/pixman-0.42.2.tar.gz
-sha:ea1480efada2fd948bc75366f7c349e1c96d3297d09a3fe62626e38e234a625e
+https://www.cairographics.org/releases/pixman-0.43.0.tar.gz
+sha:a65c28209858fb16bee50d809c80f90a8e415c0e4fd8321078a1822785a5560a
 {% endblock %}
 
 {% block lib_deps %}
 lib/c
 {% endblock %}
 
-{% block env_lib %}
+{% block env %}
 export CPPFLAGS="-I${out}/include/pixman-1 \${CPPFLAGS}"
 {% endblock %}
 

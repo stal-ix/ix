@@ -1,8 +1,10 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block version %}v2023.8{% endblock %}
+
 {% block fetch %}
-https://github.com/google/shaderc/archive/refs/tags/v2023.7.tar.gz
-sha:681e1340726a0bf46bea7e31f10cbfe78e01e4446a35d90fedc2b78d400fcdeb
+https://github.com/google/shaderc/archive/refs/tags/{{self.version()}}.tar.gz
+sha:dfec5045f30d8f6d3d3914ab5b3cc2695947f266d41261b1459177cd789308d1
 {% endblock %}
 
 {% block lib_deps %}
@@ -29,10 +31,12 @@ sed '/examples/d;/third_party/d' -i CMakeLists.txt
 sed '/build-version/d' -i glslc/CMakeLists.txt
 
 cat <<- EOF > glslc/src/build-version.inc
-"2023.5\\n"
-"2023.5\\n"
-"2023.5\\n"
+"{{self.version()}}\\n"
+"{{self.version()}}\\n"
+"{{self.version()}}\\n"
 EOF
+
+sed -e 's|env python|env python3|' -i utils/add_copyright.py
 {% endblock %}
 
 {% block install %}

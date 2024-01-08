@@ -1,8 +1,8 @@
 {% extends '//die/c/autohell.sh' %}
 
 {% block fetch %}
-https://secure.nic.cz/files/knot-dns/knot-3.3.2.tar.xz
-sha:0d65d4b59f5df69b78c6295ade0a2ea7931831de7ef5eeee3e00f8a20af679e4
+https://secure.nic.cz/files/knot-dns/knot-3.3.3.tar.xz
+sha:aab40aab2acd735c500f296bacaa5c84ff0488221a4068ce9946e973beacc5ae
 {% endblock %}
 
 {% block lib_deps %}
