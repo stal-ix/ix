@@ -22,5 +22,11 @@
         "url": "https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.7.tar.xz",
         "sha": "ef31144a2576d080d8c31698e83ec9f66bf97c677fa2aaf0d5bbb9f3345b1069",
         "cfg": "cfg_6_6_0"
+    },
+    {
+        "ver": "5.15.146",
+        "url": "https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.15.146.tar.xz",
+        "sha": "5a807a5fa2a80ada957d8079681dfb5cc196ec26f43244d1c8a4fd7af592d192",
+        "cfg": "cfg_6_6_0"
     }
 ]
