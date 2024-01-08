@@ -3,36 +3,20 @@ import json
 K = json.loads(parent.serve('kernels.json'))
 T = {}
 
-T['ix.sh'] = '''
-{% extends '//die/hub.sh' %}
-{% block run_deps %}
-bin/kernel/__VER__/slot/0
-{% endblock %}
-'''
-
 T['headers/ix.sh'] = '''
 {% extends '//lib/linux/headers/ix.sh' %}
-{% include '//bin/kernel/__VER__/ver.sh' %}
+{% include '//__NS__/ver.sh' %}
 '''
 
-T['slot/0/ix.sh'] = '''
-{% extends '//bin/kernel/__VER__/slot/1/ix.sh' %}
-{% block slot %}0{% endblock %}
-'''
-
-T['slot/1/ix.sh'] = '''
-{% extends '//bin/kernel/__VER__/t/ix.sh' %}
-{% block slot %}1{% endblock %}
-{% block kernel_flags %}
-{% include '//bin/kernel/__VER__/cfg' %}
-{% endblock %}
-'''
-
-T['t/ix.sh'] = '''
+T['ix.sh'] = '''
 {% extends '//bin/kernel/t/2/ix.sh' %}
-{% include '//bin/kernel/__VER__/ver.sh' %}
+{% include '//__NS__/ver.sh' %}
 {% block kernel_headers %}
-bin/kernel/__VER__/headers
+__NS__/headers
+{% endblock %}
+{% block slot %}0{% endblock %}
+{% block kernel_flags %}
+{% include '//__NS__/cfg' %}
 {% endblock %}
 '''
 
@@ -68,21 +52,14 @@ def best_match(prefix):
     raise Exception(f'can not find suitable kernel for {prefix}')
 
 def serve(x):
-    print(x)
-
     if '_' not in x:
-        x = x.replace('/ix.sh', '/_/ix.sh')
+        return serve(x.replace('/ix.sh', '/_/ix.sh'))
 
-        if '_' not in x:
-            x = x + '/_'
+    xs = x.split('/_/')
 
-        return serve(x)
-
-    ver = x[:x.index('/_')]
-    tpl = x[len(ver) + 3:]
+    ver = xs[0]
+    tpl = xs[1]
     pat = ver.replace('/', '.') + '.'
-
-    print(ver, tpl, pat)
 
     if tpl == 'ver.sh':
         return gen_v(best_match(pat))
@@ -91,6 +68,6 @@ def serve(x):
         return gen_c(best_match(pat))
 
     try:
-        return T[tpl].replace('__VER__', ver + '/_')
+        return T[tpl].replace('__NS__', 'bin/kernel/' + ver + '/_')
     except KeyError:
         raise FileNotFoundError(x)
