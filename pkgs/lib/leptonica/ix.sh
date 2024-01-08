@@ -23,6 +23,7 @@ BUILD_PROG=OFF
 
 {% block install %}
 {{super()}}
+sed -e 's|if ()|if (TRUE)|' -i ${out}/lib/cmake/leptonica/LeptonicaConfig.cmake
 sed -e 's|.*exec_prefix.*||' -i ${out}/lib/pkgconfig/lept_Release.pc
 cp ${out}/lib/pkgconfig/lept_Release.pc ${out}/lib/pkgconfig/lept.pc
 {% endblock %}
