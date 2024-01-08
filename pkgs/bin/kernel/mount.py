@@ -37,6 +37,7 @@ def subst(v, descr):
     v = v.replace('__URL__', descr['url'])
     v = v.replace('__SHA__', descr['sha'])
     v = v.replace('__CFG__', descr['cfg'])
+    v = v.replace('__NS__', descr['ns'])
 
     return v
 
@@ -57,14 +58,15 @@ def serve(x):
     tpl = xs[1]
     pat = ver.replace('/', '.') + '.'
     ker = best_match(pat)
+    rpl = dict(ker.items(), ns='bin/kernel/' + ver + '/_')
 
     if tpl == 'ver.sh':
-        return subst(V, ker)
+        return subst(V, rpl)
 
     if tpl == 'cfg':
-        return subst(C, ker)
+        return subst(C, rpl)
 
     try:
-        return T[tpl].replace('__NS__', 'bin/kernel/' + ver + '/_')
+        return subst(T[tpl], rpl)
     except KeyError:
         raise FileNotFoundError(x)
