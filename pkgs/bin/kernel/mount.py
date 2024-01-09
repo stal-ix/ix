@@ -37,8 +37,16 @@ def subst(v, descr):
 
     return v
 
+def int_ver(v):
+    res = 0
+
+    for p in v.split('.'):
+        res = res * 1000 + int(p)
+
+    return res
+
 def best_match(prefix):
-    for k in K:
+    for k in sorted(K, key=lambda x: -int_ver(x['ver'])):
         if k['ver'].startswith(prefix):
             return k
 
