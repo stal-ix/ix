@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://libbsd.freedesktop.org/releases/libbsd-0.11.7.tar.xz
-sha:9baa186059ebbf25c06308e9f991fda31f7183c0f24931826d83aa6abd8a0261
+https://libbsd.freedesktop.org/releases/libbsd-0.11.8.tar.xz
+sha:55fdfa2696fb4d55a592fa9ad14a9df897c7b0008ddb3b30c419914841f85f33
 {% endblock %}
 
 {% block bld_tool %}
