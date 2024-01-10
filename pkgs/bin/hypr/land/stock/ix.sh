@@ -20,6 +20,7 @@ lib/mesa/egl/dl
 bin/hypr/wlroots
 lib/toml/plus/plus
 lib/mesa/glesv2/dl
+bin/hypr/wlroots/dl
 {% endblock %}
 
 {% block bld_tool %}
