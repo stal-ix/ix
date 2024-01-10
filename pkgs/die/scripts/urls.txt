@@ -648,6 +648,7 @@ https://github.com/besser82/libxcrypt/archive/refs/tags/v4.4.36.tar.gz
 https://github.com/bfgroup/b2/archive/refs/tags/4.9.2.tar.gz
 https://github.com/biojppm/rapidyaml/releases/download/v0.4.1/rapidyaml-0.4.1-src.tgz
 https://github.com/bugaevc/wl-clipboard/archive/refs/tags/v2.2.0.tar.gz
+https://github.com/bus1/dbus-broker/archive/refs/tags/v35.tar.gz
 https://github.com/bytecodealliance/wasm-micro-runtime/archive/refs/tags/WAMR-1.2.3.tar.gz
 https://github.com/c-ares/c-ares/archive/refs/tags/cares-1_19_1.tar.gz
 https://github.com/c-ares/c-ares/archive/refs/tags/cares-1_20_0.tar.gz
@@ -657,6 +658,7 @@ https://github.com/c-ares/c-ares/archive/refs/tags/cares-1_22_0.tar.gz
 https://github.com/c-ares/c-ares/archive/refs/tags/cares-1_22_1.tar.gz
 https://github.com/c-ares/c-ares/archive/refs/tags/cares-1_24_0.tar.gz
 https://github.com/c-ares/c-ares/archive/refs/tags/cares-1_25_0.tar.gz
+https://github.com/c-util/c-dvar/archive/refs/tags/v1.1.0.tar.gz
 https://github.com/c-util/c-ini/archive/refs/tags/v1.1.0.tar.gz
 https://github.com/c-util/c-list/archive/refs/tags/v3.1.0.tar.gz
 https://github.com/c-util/c-rbtree/archive/refs/tags/v3.2.0.tar.gz
@@ -1500,6 +1502,7 @@ https://gitlab.freedesktop.org/xkeyboard-config/xkeyboard-config/-/archive/xkeyb
 https://gitlab.gnome.org/GNOME/atk/-/archive/ATK_2_36_0/atk-ATK_2_36_0.tar.bz2
 https://gitlab.gnome.org/GNOME/console/-/archive/44.4/console-44.4.tar.bz2
 https://gitlab.gnome.org/GNOME/console/-/archive/45.0/console-45.0.tar.bz2
+https://gitlab.gnome.org/GNOME/d-spy/-/archive/1.9.0/d-spy-1.9.0.tar.bz2
 https://gitlab.gnome.org/GNOME/gcr/-/archive/3.41.1/gcr-3.41.1.tar.bz2
 https://gitlab.gnome.org/GNOME/gcr/-/archive/4.1.0/gcr-4.1.0.tar.bz2
 https://gitlab.gnome.org/GNOME/glib-networking/-/archive/2.76.1/glib-networking-2.76.1.tar.bz2
@@ -1596,6 +1599,7 @@ https://lttng.org/files/urcu/userspace-rcu-0.14.0.tar.bz2
 https://luajit.org/download/LuaJIT-2.0.5.tar.gz
 https://memcached.org/files/memcached-1.6.21.tar.gz
 https://memcached.org/files/memcached-1.6.22.tar.gz
+https://memcached.org/files/memcached-1.6.23.tar.gz
 https://mesa.freedesktop.org/archive/mesa-23.1.9.tar.xz
 https://mesa.freedesktop.org/archive/mesa-23.2.1.tar.xz
 https://mesa.freedesktop.org/archive/mesa-23.3.1.tar.xz
