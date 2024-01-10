@@ -1,15 +1,16 @@
 {% extends '//die/hub.sh' %}
 
 {# broken or too heavy
-#bin/re2g
 #bin/rustc/1/56/darwin
 #bin/rustc/1/56/linux
 #bin/rustc/1/56
 #bin/alacritty
-#bin/lldb
 #bin/bat
-#bin/minibrowser
 #bin/uutils/coreutils
+
+#bin/re2g
+#bin/lldb
+#bin/minibrowser
 #bin/icontool
 #bin/chromium
 #bin/porto
