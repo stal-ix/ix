@@ -1578,6 +1578,7 @@ https://imagemagick.org/archive/releases/ImageMagick-7.1.1-21.tar.xz
 https://imagemagick.org/archive/releases/ImageMagick-7.1.1-23.tar.xz
 https://invisible-mirror.net/archives/byacc/byacc-20211224.tgz
 https://invisible-mirror.net/archives/byacc/byacc-20230521.tgz
+https://invisible-mirror.net/archives/byacc/byacc-20240109.tgz
 https://invisible-mirror.net/archives/mawk/mawk-1.3.4-20200120.tgz
 https://invisible-mirror.net/archives/mawk/mawk-1.3.4-20230203.tgz
 https://jugit.fz-juelich.de/mlz/libcerf/-/archive/v2.4/libcerf-v2.4.tar.bz2
