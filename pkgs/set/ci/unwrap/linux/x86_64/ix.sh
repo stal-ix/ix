@@ -1,6 +1,7 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
+bin/d/spy
 bin/dbus/broker
 bin/acpi/ca
 bin/quaternion
