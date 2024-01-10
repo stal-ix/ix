@@ -5,7 +5,7 @@ https://github.com/rgburke/grv/archive/refs/tags/v0.3.2.tar.gz
 {% endblock %}
 
 {% block go_sha %}
-3a094ffa6897c4b5eaeb7f820874a6f69409072566ccde405fd1acd75523c300
+80f9fe9210862dd7359a2fdead7513864d021a5f3d4bc7d54ce6f24e34d03680
 {% endblock %}
 
 {% block unpack %}
