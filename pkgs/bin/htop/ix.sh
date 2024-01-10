@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://github.com/htop-dev/htop/archive/refs/tags/3.2.2.tar.gz
-sha:3829c742a835a0426db41bb039d1b976420c21ec65e93b35cd9bfd2d57f44ac8
+https://github.com/htop-dev/htop/archive/refs/tags/3.3.0.tar.gz
+sha:1e5cc328eee2bd1acff89f860e3179ea24b85df3ac483433f92a29977b14b045
 {% endblock %}
 
 {% block bld_libs %}
