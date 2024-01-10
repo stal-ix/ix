@@ -36,7 +36,6 @@
 #bin/claws/mail
 #bin/samba
 #bin/grv
-#bin/gotop
 #bin/avizo
 #bin/gosh
 #bin/gosh/posix
@@ -48,6 +47,7 @@
 #}
 
 {% block run_deps %}
+bin/gotop
 bin/d/spy
 bin/dbus/broker
 bin/acpi/ca
