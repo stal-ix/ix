@@ -121,7 +121,7 @@ bin/qemu/8/2
 bin/qemu/8/1
 bin/qemu/8/0
 bin/npm
-bin/p4rotoc/c
+bin/protoc/c
 bin/systool
 bin/hwinfo
 bin/xxd
