@@ -2,6 +2,7 @@
 
 {% block bld_libs %}
 {{super()}}
+lib/udis86
 lib/shim/ix
 {% endblock %}
 
@@ -17,4 +18,6 @@ find . -type f | while read l; do
         -e 's|"/tmp/hypr"|ix_temp_session_dir()|g' \
         -i ${l}
 done
+sed -e 's|.*udis.*||' -i meson.build
+sed -e 's|.*udis.*||' -i src/meson.build
 {% endblock %}

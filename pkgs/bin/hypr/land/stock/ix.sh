@@ -10,7 +10,6 @@ lib/c++
 lib/pango
 lib/cairo
 lib/input
-lib/udis86
 lib/opengl
 lib/wayland
 lib/shim/x11
