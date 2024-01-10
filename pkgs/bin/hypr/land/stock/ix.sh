@@ -10,7 +10,6 @@ lib/c++
 lib/pango
 lib/cairo
 lib/input
-lib/udis86
 lib/opengl
 lib/wayland
 lib/shim/x11
@@ -21,6 +20,7 @@ lib/mesa/egl/dl
 bin/hypr/wlroots
 lib/toml/plus/plus
 lib/mesa/glesv2/dl
+bin/hypr/wlroots/dl
 {% endblock %}
 
 {% block bld_tool %}

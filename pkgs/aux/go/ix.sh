@@ -28,6 +28,7 @@ extract 1 ../net/*
 {% block build %}
 set -xue
 
+export GOSUMDB=off
 export GOCACHE=${tmp}/cgo
 export GOMODCACHE=${tmp}/gmc
 export GOPROXY="https://proxy.golang.org,direct"

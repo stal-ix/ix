@@ -648,6 +648,7 @@ https://github.com/besser82/libxcrypt/archive/refs/tags/v4.4.36.tar.gz
 https://github.com/bfgroup/b2/archive/refs/tags/4.9.2.tar.gz
 https://github.com/biojppm/rapidyaml/releases/download/v0.4.1/rapidyaml-0.4.1-src.tgz
 https://github.com/bugaevc/wl-clipboard/archive/refs/tags/v2.2.0.tar.gz
+https://github.com/bus1/dbus-broker/archive/refs/tags/v35.tar.gz
 https://github.com/bytecodealliance/wasm-micro-runtime/archive/refs/tags/WAMR-1.2.3.tar.gz
 https://github.com/c-ares/c-ares/archive/refs/tags/cares-1_19_1.tar.gz
 https://github.com/c-ares/c-ares/archive/refs/tags/cares-1_20_0.tar.gz
@@ -657,6 +658,13 @@ https://github.com/c-ares/c-ares/archive/refs/tags/cares-1_22_0.tar.gz
 https://github.com/c-ares/c-ares/archive/refs/tags/cares-1_22_1.tar.gz
 https://github.com/c-ares/c-ares/archive/refs/tags/cares-1_24_0.tar.gz
 https://github.com/c-ares/c-ares/archive/refs/tags/cares-1_25_0.tar.gz
+https://github.com/c-util/c-dvar/archive/refs/tags/v1.1.0.tar.gz
+https://github.com/c-util/c-ini/archive/refs/tags/v1.1.0.tar.gz
+https://github.com/c-util/c-list/archive/refs/tags/v3.1.0.tar.gz
+https://github.com/c-util/c-rbtree/archive/refs/tags/v3.2.0.tar.gz
+https://github.com/c-util/c-shquote/archive/refs/tags/v1.1.0.tar.gz
+https://github.com/c-util/c-stdaux/archive/refs/tags/v1.5.0.tar.gz
+https://github.com/c-util/c-utf8/archive/refs/tags/v1.1.0.tar.gz
 https://github.com/capstone-engine/capstone/archive/refs/tags/5.0-rc2.tar.gz
 https://github.com/capstone-engine/capstone/archive/refs/tags/5.0.1.tar.gz
 https://github.com/catboost/catboost/archive/refs/tags/v1.0.6.tar.gz
@@ -804,6 +812,7 @@ https://github.com/golang/go/archive/refs/tags/go1.21.2.tar.gz
 https://github.com/golang/go/archive/refs/tags/go1.21.3.tar.gz
 https://github.com/golang/go/archive/refs/tags/go1.21.4.tar.gz
 https://github.com/golang/go/archive/refs/tags/go1.21.5.tar.gz
+https://github.com/golang/go/archive/refs/tags/go1.21.6.tar.gz
 https://github.com/google/brotli/archive/refs/tags/v1.1.0.tar.gz
 https://github.com/google/crc32c/archive/refs/tags/1.1.2.tar.gz
 https://github.com/google/double-conversion/archive/refs/tags/v3.3.0.tar.gz
@@ -846,7 +855,9 @@ https://github.com/hboetes/mg/archive/refs/tags/20221112.tar.gz
 https://github.com/hluk/CopyQ/archive/refs/tags/v7.0.0.tar.gz
 https://github.com/hoytech/lmdbxx/archive/refs/tags/1.0.0.tar.gz
 https://github.com/hpjansson/chafa/archive/refs/tags/1.12.4.tar.gz
+https://github.com/hpjansson/chafa/archive/refs/tags/1.14.0.tar.gz
 https://github.com/htop-dev/htop/archive/refs/tags/3.2.2.tar.gz
+https://github.com/htop-dev/htop/archive/refs/tags/3.3.0.tar.gz
 https://github.com/hughsie/libgusb/archive/refs/tags/0.4.6.tar.gz
 https://github.com/hughsie/libgusb/archive/refs/tags/0.4.7.tar.gz
 https://github.com/hughsie/libgusb/archive/refs/tags/0.4.8.tar.gz
@@ -949,6 +960,7 @@ https://github.com/landley/toybox/archive/refs/tags/0.8.10.tar.gz
 https://github.com/lbonn/rofi/releases/download/1.7.3%2Bwayland1/rofi-1.7.3+wayland1.tar.xz
 https://github.com/leo-arch/clifm/archive/refs/tags/v1.14.5.tar.gz
 https://github.com/leo-arch/clifm/archive/refs/tags/v1.14.tar.gz
+https://github.com/leo-arch/clifm/archive/refs/tags/v1.16.tar.gz
 https://github.com/libarchive/libarchive/archive/refs/tags/v3.7.1.tar.gz
 https://github.com/libarchive/libarchive/archive/refs/tags/v3.7.2.tar.gz
 https://github.com/libass/libass/archive/refs/tags/0.17.1.tar.gz
@@ -1225,6 +1237,7 @@ https://github.com/redis/hiredis/archive/refs/tags/v1.2.0.tar.gz
 https://github.com/redis/redis/archive/refs/tags/7.2.0.tar.gz
 https://github.com/redis/redis/archive/refs/tags/7.2.2.tar.gz
 https://github.com/redis/redis/archive/refs/tags/7.2.3.tar.gz
+https://github.com/redis/redis/archive/refs/tags/7.2.4.tar.gz
 https://github.com/relan/exfat/releases/download/v1.4.0/exfat-utils-1.4.0.tar.gz
 https://github.com/rfc1036/whois/archive/refs/tags/v5.5.18.tar.gz
 https://github.com/rfc1036/whois/archive/refs/tags/v5.5.19.tar.gz
@@ -1490,6 +1503,7 @@ https://gitlab.freedesktop.org/xkeyboard-config/xkeyboard-config/-/archive/xkeyb
 https://gitlab.gnome.org/GNOME/atk/-/archive/ATK_2_36_0/atk-ATK_2_36_0.tar.bz2
 https://gitlab.gnome.org/GNOME/console/-/archive/44.4/console-44.4.tar.bz2
 https://gitlab.gnome.org/GNOME/console/-/archive/45.0/console-45.0.tar.bz2
+https://gitlab.gnome.org/GNOME/d-spy/-/archive/1.9.0/d-spy-1.9.0.tar.bz2
 https://gitlab.gnome.org/GNOME/gcr/-/archive/3.41.1/gcr-3.41.1.tar.bz2
 https://gitlab.gnome.org/GNOME/gcr/-/archive/4.1.0/gcr-4.1.0.tar.bz2
 https://gitlab.gnome.org/GNOME/glib-networking/-/archive/2.76.1/glib-networking-2.76.1.tar.bz2
@@ -1564,6 +1578,7 @@ https://imagemagick.org/archive/releases/ImageMagick-7.1.1-21.tar.xz
 https://imagemagick.org/archive/releases/ImageMagick-7.1.1-23.tar.xz
 https://invisible-mirror.net/archives/byacc/byacc-20211224.tgz
 https://invisible-mirror.net/archives/byacc/byacc-20230521.tgz
+https://invisible-mirror.net/archives/byacc/byacc-20240109.tgz
 https://invisible-mirror.net/archives/mawk/mawk-1.3.4-20200120.tgz
 https://invisible-mirror.net/archives/mawk/mawk-1.3.4-20230203.tgz
 https://jugit.fz-juelich.de/mlz/libcerf/-/archive/v2.4/libcerf-v2.4.tar.bz2
@@ -1586,6 +1601,7 @@ https://lttng.org/files/urcu/userspace-rcu-0.14.0.tar.bz2
 https://luajit.org/download/LuaJIT-2.0.5.tar.gz
 https://memcached.org/files/memcached-1.6.21.tar.gz
 https://memcached.org/files/memcached-1.6.22.tar.gz
+https://memcached.org/files/memcached-1.6.23.tar.gz
 https://mesa.freedesktop.org/archive/mesa-23.1.9.tar.xz
 https://mesa.freedesktop.org/archive/mesa-23.2.1.tar.xz
 https://mesa.freedesktop.org/archive/mesa-23.3.1.tar.xz

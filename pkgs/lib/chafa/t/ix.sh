@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://github.com/hpjansson/chafa/archive/refs/tags/1.12.4.tar.gz
-sha:6a76719a1d67b772dcf81cd6959cfebae74ea1c92a09759e11b52f30b9345d40
+https://github.com/hpjansson/chafa/archive/refs/tags/1.14.0.tar.gz
+sha:faefc09807c955c882fa044947fc939952862f6e8d2e242262dbcc9f97e108ef
 {% endblock %}
 
 {% block lib_deps %}
