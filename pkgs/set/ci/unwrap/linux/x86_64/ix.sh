@@ -37,8 +37,6 @@
 #bin/samba
 #bin/grv
 #bin/avizo
-#bin/gosh
-#bin/gosh/posix
 #bin/efitools
 #bin/colord
 #bin/psensor
@@ -47,6 +45,8 @@
 #}
 
 {% block run_deps %}
+bin/gosh
+bin/gosh/posix
 bin/gotop
 bin/d/spy
 bin/dbus/broker
