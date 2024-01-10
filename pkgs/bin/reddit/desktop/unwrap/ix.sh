@@ -4,12 +4,12 @@
 https://github.com/sgiurgiu/reddit_desktop
 {% endblock %}
 
-{% block git_branch %}
-1.0.172
+{% block git_commit %}
+5bfdcfec0f2e5b0ab1ea30bd0316d11049904a84
 {% endblock %}
 
 {% block git_sha %}
-14fbb56ea2013e2c48d1cc2b79d54add4fea49b74f26c9a798788a2de14d66b0
+6c84e066ff2fd773dd41bf2553491c8e306c822e4f80898f9690757832dfc88e
 {% endblock %}
 
 {% block bld_libs %}
