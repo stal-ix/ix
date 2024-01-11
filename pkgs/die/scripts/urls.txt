@@ -401,6 +401,7 @@ https://git.savannah.nongnu.org/cgit/acl.git/snapshot/acl-2.3.1.tar.gz
 https://git.savannah.nongnu.org/cgit/attr.git/snapshot/attr-2.5.1.tar.gz
 https://git.sr.ht/~adnano/wmenu/archive/0.1.4.tar.gz
 https://git.sr.ht/~brocellous/wlrctl/archive/v0.2.2.tar.gz
+https://git.sr.ht/~delthas/senpai/archive/v0.3.0.tar.gz
 https://git.sr.ht/~emersion/basu/archive/v0.2.1.tar.gz
 https://git.sr.ht/~emersion/grim/archive/v1.4.1.tar.gz
 https://git.sr.ht/~emersion/kanshi/archive/v1.5.0.tar.gz
@@ -484,6 +485,7 @@ https://github.com/Genivia/ugrep/archive/refs/tags/v4.4.0.tar.gz
 https://github.com/Genivia/ugrep/archive/refs/tags/v4.4.1.tar.gz
 https://github.com/Genivia/ugrep/archive/refs/tags/v4.5.0.tar.gz
 https://github.com/Genivia/ugrep/archive/refs/tags/v4.5.1.tar.gz
+https://github.com/Genivia/ugrep/archive/refs/tags/v4.5.2.tar.gz
 https://github.com/GrapheneOS/hardened_malloc/archive/refs/tags/11.tar.gz
 https://github.com/Hjdskes/cage/archive/refs/tags/v0.1.4.tar.gz
 https://github.com/HowardHinnant/date/archive/refs/tags/v3.0.1.tar.gz
