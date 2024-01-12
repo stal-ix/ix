@@ -53,6 +53,10 @@ done
 base64 -d << EOF > lib/libimhex/source/api/plugin_manager.cpp
 {% include 'plugin_manager.cpp/base64' %}
 EOF
+
+base64 -d << EOF > lib/third_party/nativefiledialog/src/nfd_portal.cpp
+{% include 'nfd_portal.cpp/base64' %}
+EOF
 {% endblock %}
 
 {% block cmake_flags %}
