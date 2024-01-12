@@ -8,6 +8,7 @@
 #bin/bat
 #bin/uutils/coreutils
 
+#bin/gthumb
 #bin/re2g
 #bin/lldb
 #bin/minibrowser
@@ -167,7 +168,6 @@ bin/wayland/tracer
 bin/stp
 bin/cpuid
 bin/smenu
-bin/gthumb
 bin/ttyd
 bin/svgren
 bin/transmission/qt

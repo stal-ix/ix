@@ -1,15 +1,15 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block git_repo %}
-https://github.com/WerWolv/ImHex
+https://github.com/pg83/ImHex
 {% endblock %}
 
-{% block git_branch %}
-v1.32.1
+{% block git_commit %}
+ecbf49612a159d9f13ffb903277332aa2b5e039a
 {% endblock %}
 
 {% block git_sha %}
-15dccbe93875394c79e286f87ef3d77f4cd2912cdd98902b45e85a73e43e8bdc
+621abe018b195a8b088180b1981657a690ae0ccc03b9460bc276f6f2516ca8ba
 {% endblock %}
 
 {% block bld_libs %}
@@ -50,8 +50,8 @@ find . -type f | while read l; do
     sed -e 's|tellg() + a_length|tellg() + (std::streamoff)a_length|g' -i "${l}"
 done
 
-base64 -d << EOF > lib/libimhex/source/api/plugin_manager.cpp
-{% include 'plugin_manager.cpp/base64' %}
+base64 -d << EOF > lib/third_party/nativefiledialog/src/nfd_portal.cpp
+{% include 'nfd_portal.cpp/base64' %}
 EOF
 {% endblock %}
 

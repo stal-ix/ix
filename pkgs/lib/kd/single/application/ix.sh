@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/KDAB/KDSingleApplication/archive/refs/tags/v1.0.0.tar.gz
-sha:c493a12ad2d532b342edad7350fd8ed49f589ecfe46c2025b7d5fc4e7f69cbd1
+https://github.com/KDAB/KDSingleApplication/archive/refs/tags/v1.1.0.tar.gz
+sha:1f19124c0aa5c6fffee3da174f7d2e091fab6dca1e123da70bb0fe615bfbe3e8
 {% endblock %}
 
 {% block lib_deps %}

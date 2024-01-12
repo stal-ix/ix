@@ -34,4 +34,6 @@ cat << EOF > ${XDG_RUNTIME_DIR}/dbus.cfg
 </busconfig>
 EOF
 
+DBUS_VERBOSE=1
+
 exec dbus-run-session --config-file ${XDG_RUNTIME_DIR}/dbus.cfg "${@}"
