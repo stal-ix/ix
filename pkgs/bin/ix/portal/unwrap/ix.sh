@@ -1,7 +1,7 @@
 {% extends '//die/go/pure.sh' %}
 
 {% block version %}
-f70ebe9fb4e8276af52f93871cf4eccd1a524936
+bc6ad5a3e104423efb47ddeed470d7d83fb8eb41
 {% endblock %}
 
 {% block go_url %}
@@ -9,7 +9,7 @@ https://github.com/pg83/portal/archive/{{self.version().strip()}}.zip
 {% endblock %}
 
 {% block go_sha %}
-f11e7c754134564a1ed7299873231f5f1c334d0eacdcd68efde777382044f38b
+9a57525a85576a10fdc1218880995fef3dbfc14c40e9fb14e5eea58518028edc
 {% endblock %}
 
 {% block install %}
