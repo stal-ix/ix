@@ -499,6 +499,7 @@ https://github.com/JuliaStrings/utf8proc/archive/refs/tags/v2.8.0.tar.gz
 https://github.com/JuliaStrings/utf8proc/archive/refs/tags/v2.9.0.tar.gz
 https://github.com/Juniper/libxo/archive/refs/tags/1.6.0.tar.gz
 https://github.com/KDAB/KDSingleApplication/archive/refs/tags/v1.0.0.tar.gz
+https://github.com/KDAB/KDSingleApplication/archive/refs/tags/v1.1.0.tar.gz
 https://github.com/KDE/extra-cmake-modules/archive/refs/tags/v5.247.0.tar.gz
 https://github.com/KDE/kcoreaddons/archive/refs/tags/v5.247.0.tar.gz
 https://github.com/KDE/kimageformats/archive/refs/tags/v5.112.0.tar.gz
