@@ -46,6 +46,7 @@
 #}
 
 {% block run_deps %}
+bin/sd/bus/codegen
 bin/geeqie
 bin/senpai
 bin/gosh
@@ -55,7 +56,7 @@ bin/d/spy
 bin/dbus/broker
 bin/acpi/ca
 bin/quaternion
-bin/qemu/8/2
+bin/4qemu/8/2
 bin/ssh/3
 bin/gomuks
 bin/nheko
