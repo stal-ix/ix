@@ -57,7 +57,7 @@ bin/d/spy
 bin/dbus/broker
 bin/acpi/ca
 bin/quaternion
-bin/4qemu/8/2
+bin/qemu/8/2
 bin/ssh/3
 bin/gomuks
 bin/nheko
