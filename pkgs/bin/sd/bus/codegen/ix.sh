@@ -1,4 +1,4 @@
-{% extends '//lib/sd/bus/c++/ix.sh' %}
+{% extends '//lib/sd/bus/c++/t/ix.sh' %}
 
 {% block bld_libs %}
 {{super()}}
