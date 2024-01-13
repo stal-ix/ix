@@ -19,7 +19,7 @@ lib/json/c
 
 {% block meson_flags %}
 cache-build=disabled
-default-fonts-dirs=no
+default-fonts-dirs=
 {% endblock %}
 
 {% block patch %}
