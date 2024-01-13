@@ -254,6 +254,7 @@ https://dri.freedesktop.org/libdrm/libdrm-2.4.116.tar.xz
 https://dri.freedesktop.org/libdrm/libdrm-2.4.117.tar.xz
 https://dri.freedesktop.org/libdrm/libdrm-2.4.118.tar.xz
 https://dri.freedesktop.org/libdrm/libdrm-2.4.119.tar.xz
+https://dri.freedesktop.org/libdrm/libdrm-2.4.120.tar.xz
 https://ffmpeg.org/releases/ffmpeg-5.1.2.tar.xz
 https://ffmpeg.org/releases/ffmpeg-6.0.1.tar.xz
 https://ffmpeg.org/releases/ffmpeg-6.0.tar.xz
