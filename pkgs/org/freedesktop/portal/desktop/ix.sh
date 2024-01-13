@@ -1,5 +1,5 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
-bin/ix/portal
+bin/xdg/desktop/portal/ix
 {% endblock %}

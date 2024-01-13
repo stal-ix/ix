@@ -2,5 +2,5 @@
 
 {% block run_deps %}
 bin/zenithy
-bin/ix/portal/unwrap
+bin/xdg/desktop/portal/ix/unwrap
 {% endblock %}
