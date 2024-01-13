@@ -24,7 +24,7 @@ on_pdf() {
 }
 
 on_image() {
-    for c in pqiv qimgv imv swayimg; do
+    for c in pqiv qimgv geeqie imv swayimg; do
         if command -v ${c}; then
             exec ${c} "${1}"
         fi
