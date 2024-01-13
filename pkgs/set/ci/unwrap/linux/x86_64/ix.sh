@@ -46,6 +46,7 @@
 #}
 
 {% block run_deps %}
+bin/geeqie
 bin/senpai
 bin/gosh
 bin/gosh/posix
