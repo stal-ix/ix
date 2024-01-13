@@ -15,6 +15,7 @@ bld/windres(for_target={{target.gnu.three}})
 
 {% block make_flags %}
 {{super()}}
+INSTALL=install
 {% if mingw32 %}
 LIBTOOL=${LIBTOOL}
 {% endif %}
