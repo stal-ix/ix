@@ -5,16 +5,17 @@ https://github.com/quotient-im/Quaternion
 {% endblock %}
 
 {% block git_branch %}
-0.0.96-rc1
+0.0.96
 {% endblock %}
 
 {% block git_sha %}
-bc390adee2c2bb852896e2fa67a1af478dd53a3985b88f437b30e41300eb106e
+0b78df78a6c1e967b2d973d5089e1aab24d3a91be4d0d11c8f971246af370a81
 {% endblock %}
 
 {% block bld_libs %}
 lib/c
 lib/c++
+lib/olm
 lib/qt/6/base
 lib/qt/6/deps
 lib/qt/keychain
