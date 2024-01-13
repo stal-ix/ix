@@ -1,6 +1,5 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
-bin/nheko/unwrap
-org/freedesktop/secrets
+# stub, todo, keepassxs, gnome-keyring
 {% endblock %}
