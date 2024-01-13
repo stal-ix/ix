@@ -35,6 +35,7 @@ http://ftp.gnu.org/gnu/mtools/mtools-4.0.43.tar.lz
 http://ftp.gnu.org/gnu/screen/screen-4.9.1.tar.gz
 http://ftp.gnu.org/pub/gnu/gperf/gperf-3.1.tar.gz
 http://ftp.rpm.org/popt/releases/popt-1.x/popt-1.19.tar.gz
+http://geeqie.org/cgi-bin/gitweb.cgi?p=geeqie.git;a=snapshot;h=fa7667fb6a2d59f4facb11c083c4d74d0d80f459;sf=tbz2
 http://get.videolan.org/vlc/3.0.17.3/vlc-3.0.17.3.tar.xz
 http://github.com/zeux/pugixml/releases/download/v1.13/pugixml-1.13.tar.gz
 http://gondor.apana.org.au/~herbert/dash/files/dash-0.5.11.3.tar.gz
@@ -786,6 +787,7 @@ https://github.com/fribidi/fribidi/archive/refs/tags/v1.0.13.tar.gz
 https://github.com/fukuchi/libqrencode/archive/refs/tags/v4.1.1.tar.gz
 https://github.com/g-truc/glm/archive/refs/tags/0.9.9.8.tar.gz
 https://github.com/gabime/spdlog/archive/refs/tags/v1.12.0.tar.gz
+https://github.com/gabime/spdlog/archive/refs/tags/v1.13.0.tar.gz
 https://github.com/gambit/gambit/archive/refs/tags/v4.9.5.tar.gz
 https://github.com/gavinhoward/bc/archive/refs/tags/6.6.0.tar.gz
 https://github.com/gavinhoward/bc/archive/refs/tags/6.6.1.tar.gz
@@ -1625,6 +1627,7 @@ https://mirrors.edge.kernel.org/pub/linux/libs/ell/ell-0.61.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/network/wireless/iwd-2.10.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/network/wireless/iwd-2.11.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/network/wireless/iwd-2.12.tar.xz
+https://mirrors.edge.kernel.org/pub/linux/network/wireless/iwd-2.13.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/network/wireless/iwd-2.8.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/network/wireless/iwd-2.9.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/utils/kbd/kbd-2.6.1.tar.xz
@@ -1741,6 +1744,7 @@ https://www.crufty.net/ftp/pub/sjg/bmake-20230711.tar.gz
 https://www.crufty.net/ftp/pub/sjg/bmake-20230909.tar.gz
 https://www.crufty.net/ftp/pub/sjg/bmake-20231124.tar.gz
 https://www.crufty.net/ftp/pub/sjg/bmake-20231210.tar.gz
+https://www.crufty.net/ftp/pub/sjg/bmake-20240108.tar.gz
 https://www.eecis.udel.edu/~ntp/ntp_spool/ntp4/ntp-4.2/ntp-4.2.8p15.tar.gz
 https://www.freedesktop.org/software/colord/releases/colord-1.4.6.tar.xz
 https://www.freedesktop.org/software/fontconfig/release/fontconfig-2.14.2.tar.xz

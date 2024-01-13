@@ -46,6 +46,7 @@
 #}
 
 {% block run_deps %}
+bin/geeqie
 bin/senpai
 bin/gosh
 bin/gosh/posix
@@ -152,7 +153,7 @@ bin/webp/gui
 bin/yt
 bin/links/sdl
 bin/icc
-bin/ix/portal
+bin/xdg/desktop/portal/ix
 bin/qpack
 bin/lvm2
 bin/ag
