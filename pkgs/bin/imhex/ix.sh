@@ -1,15 +1,15 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block git_repo %}
-https://github.com/pg83/ImHex
+https://github.com/WerWolv/ImHex
 {% endblock %}
 
 {% block git_commit %}
-ecbf49612a159d9f13ffb903277332aa2b5e039a
+d511080814dc78ad39a63f2071003c07ee37673c
 {% endblock %}
 
 {% block git_sha %}
-621abe018b195a8b088180b1981657a690ae0ccc03b9460bc276f6f2516ca8ba
+e51ad8446a2ef36200f6e3a10dc63f27fecf1ca9e5b4f0b3b5b42100942e9f30
 {% endblock %}
 
 {% block bld_libs %}
