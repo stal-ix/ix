@@ -46,6 +46,7 @@
 #}
 
 {% block run_deps %}
+bin/tty/plot
 bin/pass/secrets
 bin/sd/bus/codegen
 bin/geeqie
