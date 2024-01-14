@@ -32,6 +32,8 @@ bin/sched/trashdir(delay=100)
 bin/sched/staleprocs(delay=10)
 
 etc
+
+bin/bsdutils/env
 bin/busybox
 bin/busybox/syslogd
 bin/busybox/ntpd(delay=100)
