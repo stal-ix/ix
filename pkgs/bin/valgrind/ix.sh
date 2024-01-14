@@ -16,6 +16,7 @@ bld/perl
 
 {% block build_flags %}
 wrap_cc
+fix_shebangs
 {% endblock %}
 
 {% block patch %}
