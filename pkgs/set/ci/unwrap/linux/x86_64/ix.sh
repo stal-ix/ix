@@ -172,7 +172,7 @@ bin/wayland/tracer
 bin/stp
 bin/cpuid
 bin/smenu
-bin/ttyd
+bin/tty/d
 bin/svgren
 bin/transmission/qt
 bin/tor
