@@ -293,6 +293,7 @@ https://ftp.gnu.org/gnu/automake/automake-1.16.5.tar.xz
 https://ftp.gnu.org/gnu/bash/bash-3.2.57.tar.gz
 https://ftp.gnu.org/gnu/bash/bash-4.4.18.tar.gz
 https://ftp.gnu.org/gnu/bash/bash-5.1.16.tar.gz
+https://ftp.gnu.org/gnu/bash/bash-5.2.21.tar.gz
 https://ftp.gnu.org/gnu/bash/bash-5.2.tar.gz
 https://ftp.gnu.org/gnu/bc/bc-1.07.1.tar.gz
 https://ftp.gnu.org/gnu/binutils/binutils-2.41.tar.bz2
@@ -337,6 +338,7 @@ https://ftp.gnu.org/gnu/gzip/gzip-1.13.tar.xz
 https://ftp.gnu.org/gnu/inetutils/inetutils-2.4.tar.xz
 https://ftp.gnu.org/gnu/inetutils/inetutils-2.5.tar.xz
 https://ftp.gnu.org/gnu/libidn/libidn-1.41.tar.gz
+https://ftp.gnu.org/gnu/libidn/libidn-1.42.tar.gz
 https://ftp.gnu.org/gnu/libidn/libidn2-2.3.4.tar.gz
 https://ftp.gnu.org/gnu/libmicrohttpd/libmicrohttpd-0.9.76.tar.gz
 https://ftp.gnu.org/gnu/libsigsegv/libsigsegv-2.13.tar.gz
@@ -1486,6 +1488,7 @@ https://gitlab.com/mbunkus/mkvtoolnix/-/archive/release-81.0/mkvtoolnix-release-
 https://gitlab.com/procps-ng/procps/-/archive/v4.0.4/procps-v4.0.4.tar.bz2
 https://gitlab.com/psmisc/psmisc/-/archive/v23.6/psmisc-v23.6.tar.bz2
 https://gitlab.com/qemu-project/keycodemapdb/-/archive/22b8996dba9041874845c7446ce89ec4ae2b713d/keycodemapdb-22b8996dba9041874845c7446ce89ec4ae2b713d.tar.bz2
+https://gitlab.com/sebholt/qastools/-/archive/v1.3.0/qastools-v1.3.0.tar.bz2
 https://gitlab.freedesktop.org/cairo/cairo/-/archive/1.17.8/cairo-1.17.8.tar.bz2
 https://gitlab.freedesktop.org/cairo/cairo/-/archive/1.18.0/cairo-1.18.0.tar.bz2
 https://gitlab.freedesktop.org/freetype/freetype-demos/-/archive/VER-2-13-0/freetype-demos-VER-2-13-0.tar.bz2
