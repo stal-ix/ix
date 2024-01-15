@@ -26,6 +26,10 @@ export ac_cv_rettype_major=int
 export CFLAGS="-fcommon ${CFLAGS}"
 {% endblock %}
 
+{% block cpp_includes %}
+${PWD}/gnu
+{% endblock %}
+
 {% block configure %}
 {{super()}}
 sed -e 's|\[\[__maybe_unused__\]\]||' -i config.h
