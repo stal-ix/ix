@@ -354,6 +354,16 @@ https://ftp.gnu.org/gnu/mpfr/mpfr-4.2.0.tar.xz
 https://ftp.gnu.org/gnu/nettle/nettle-3.9.1.tar.gz
 https://ftp.gnu.org/gnu/parted/parted-3.6.tar.xz
 https://ftp.gnu.org/gnu/patch/patch-2.7.6.tar.xz
+https://ftp.gnu.org/gnu/readline/readline-8.2-patches/readline82-001
+https://ftp.gnu.org/gnu/readline/readline-8.2-patches/readline82-002
+https://ftp.gnu.org/gnu/readline/readline-8.2-patches/readline82-003
+https://ftp.gnu.org/gnu/readline/readline-8.2-patches/readline82-004
+https://ftp.gnu.org/gnu/readline/readline-8.2-patches/readline82-005
+https://ftp.gnu.org/gnu/readline/readline-8.2-patches/readline82-006
+https://ftp.gnu.org/gnu/readline/readline-8.2-patches/readline82-007
+https://ftp.gnu.org/gnu/readline/readline-8.2-patches/readline82-008
+https://ftp.gnu.org/gnu/readline/readline-8.2-patches/readline82-009
+https://ftp.gnu.org/gnu/readline/readline-8.2-patches/readline82-010
 https://ftp.gnu.org/gnu/readline/readline-8.2.tar.gz
 https://ftp.gnu.org/gnu/sed/sed-4.8.tar.xz
 https://ftp.gnu.org/gnu/sed/sed-4.9.tar.xz
