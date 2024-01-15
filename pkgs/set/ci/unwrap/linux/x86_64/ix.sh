@@ -207,7 +207,7 @@ bin/dbus/runit
 bin/dbus/runit/scripts
 bin/dbus
 bin/dbus/session
-bin/patchelf
+bin/patch/elf
 bin/dwl
 bin/cctools
 bin/syslog/ng
