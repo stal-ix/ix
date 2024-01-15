@@ -1020,6 +1020,7 @@ https://github.com/libssh2/libssh2/archive/refs/tags/libssh2-1.11.0.tar.gz
 https://github.com/libtom/libtomcrypt/releases/download/v1.18.2/crypt-1.18.2.tar.xz
 https://github.com/libtom/libtommath/releases/download/v1.2.1/ltm-1.2.1.tar.xz
 https://github.com/libunwind/libunwind/archive/refs/tags/v1.7.2.tar.gz
+https://github.com/libunwind/libunwind/archive/refs/tags/v1.8.0.tar.gz
 https://github.com/libusb/libusb/releases/download/v1.0.26/libusb-1.0.26.tar.bz2
 https://github.com/libuv/libuv/archive/refs/tags/v1.44.2.tar.gz
 https://github.com/libuv/libuv/archive/refs/tags/v1.46.0.tar.gz
