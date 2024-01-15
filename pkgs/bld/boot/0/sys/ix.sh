@@ -39,7 +39,7 @@ def wloc(bins):
 
     raise Exception(f'can not found one of {bins} in {out}')
 
-SHELLS = ['yash', 'dash', 'bash']
+SHELLS = ['dash', 'bash']
 
 TOOLS = SHELLS + [
     'ld',
