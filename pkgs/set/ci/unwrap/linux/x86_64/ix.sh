@@ -541,7 +541,7 @@ bin/openal
 bin/harfbuzz
 bin/xkbcli
 bin/memcached
-bin/pkgconf
+bin/pkg/conf
 bin/slibtool
 bin/minised
 bin/moe
