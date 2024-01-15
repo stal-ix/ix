@@ -23,7 +23,7 @@ lib/kernel
 {% endblock %}
 
 {% block use_data %}
-aux/iso-codes
+aux/iso/codes
 {% endblock %}
 
 {% block bld_tool %}

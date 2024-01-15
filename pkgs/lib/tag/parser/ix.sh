@@ -14,7 +14,7 @@ lib/c++/utilities
 {% endblock %}
 
 {% block use_data %}
-aux/iso-codes
+aux/iso/codes
 {% endblock %}
 
 {% block patch %}

@@ -33,7 +33,7 @@ bld/gettext
 {% endblock %}
 
 {% block use_data %}
-aux/iso-codes
+aux/iso/codes
 {% endblock %}
 
 {% block meson_flags %}
