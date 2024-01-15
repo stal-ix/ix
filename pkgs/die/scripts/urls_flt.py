@@ -8,6 +8,9 @@ def ok(l):
         if m in l:
             return False
 
+    if 'readline' in os.path.basename(l):
+        return True
+
     if '.' not in os.path.basename(l):
         return False
 

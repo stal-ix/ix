@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://salsa.debian.org/iso-codes-team/iso-codes/-/archive/v4.12.0/iso-codes-v4.12.0.tar.gz
-sha:ead53ac6cb000a726350eda10381b2339e7bed0680924d761d63f28f32da94b5
+https://salsa.debian.org/iso-codes-team/iso-codes/-/archive/v4.16.0/iso-codes-v4.16.0.tar.gz
+sha:7c990fc39a05975bedb0175e3ff09fc383048815f68b462abbf055a8032e66cc
 {% endblock %}
 
 {% block bld_tool %}

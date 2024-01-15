@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://ftp.gnu.org/gnu/cpio/cpio-2.14.tar.bz2
-sha:fcdc15d60f7267a6fc7efcd6b9db7b6c8966c4f2fbbb964c24d41336fd3f2c12
+https://ftp.gnu.org/gnu/cpio/cpio-2.15.tar.bz2
+sha:937610b97c329a1ec9268553fb780037bcfff0dcffe9725ebc4fd9c1aa9075db
 {% endblock %}
 
 {% block conf_ver %}
@@ -24,6 +24,10 @@ bld/gettext
 export ac_cv_rettype_minor=int
 export ac_cv_rettype_major=int
 export CFLAGS="-fcommon ${CFLAGS}"
+{% endblock %}
+
+{% block cpp_includes %}
+${PWD}/gnu
 {% endblock %}
 
 {% block configure %}

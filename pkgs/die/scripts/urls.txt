@@ -311,6 +311,7 @@ https://ftp.gnu.org/gnu/coreutils/coreutils-9.2.tar.gz
 https://ftp.gnu.org/gnu/coreutils/coreutils-9.3.tar.gz
 https://ftp.gnu.org/gnu/coreutils/coreutils-9.4.tar.gz
 https://ftp.gnu.org/gnu/cpio/cpio-2.14.tar.bz2
+https://ftp.gnu.org/gnu/cpio/cpio-2.15.tar.bz2
 https://ftp.gnu.org/gnu/diffutils/diffutils-3.7.tar.xz
 https://ftp.gnu.org/gnu/diffutils/diffutils-3.9.tar.xz
 https://ftp.gnu.org/gnu/ed/ed-1.19.tar.lz
@@ -354,6 +355,16 @@ https://ftp.gnu.org/gnu/mpfr/mpfr-4.2.0.tar.xz
 https://ftp.gnu.org/gnu/nettle/nettle-3.9.1.tar.gz
 https://ftp.gnu.org/gnu/parted/parted-3.6.tar.xz
 https://ftp.gnu.org/gnu/patch/patch-2.7.6.tar.xz
+https://ftp.gnu.org/gnu/readline/readline-8.2-patches/readline82-001
+https://ftp.gnu.org/gnu/readline/readline-8.2-patches/readline82-002
+https://ftp.gnu.org/gnu/readline/readline-8.2-patches/readline82-003
+https://ftp.gnu.org/gnu/readline/readline-8.2-patches/readline82-004
+https://ftp.gnu.org/gnu/readline/readline-8.2-patches/readline82-005
+https://ftp.gnu.org/gnu/readline/readline-8.2-patches/readline82-006
+https://ftp.gnu.org/gnu/readline/readline-8.2-patches/readline82-007
+https://ftp.gnu.org/gnu/readline/readline-8.2-patches/readline82-008
+https://ftp.gnu.org/gnu/readline/readline-8.2-patches/readline82-009
+https://ftp.gnu.org/gnu/readline/readline-8.2-patches/readline82-010
 https://ftp.gnu.org/gnu/readline/readline-8.2.tar.gz
 https://ftp.gnu.org/gnu/sed/sed-4.8.tar.xz
 https://ftp.gnu.org/gnu/sed/sed-4.9.tar.xz
@@ -1020,6 +1031,7 @@ https://github.com/libssh2/libssh2/archive/refs/tags/libssh2-1.11.0.tar.gz
 https://github.com/libtom/libtomcrypt/releases/download/v1.18.2/crypt-1.18.2.tar.xz
 https://github.com/libtom/libtommath/releases/download/v1.2.1/ltm-1.2.1.tar.xz
 https://github.com/libunwind/libunwind/archive/refs/tags/v1.7.2.tar.gz
+https://github.com/libunwind/libunwind/archive/refs/tags/v1.8.0.tar.gz
 https://github.com/libusb/libusb/releases/download/v1.0.26/libusb-1.0.26.tar.bz2
 https://github.com/libuv/libuv/archive/refs/tags/v1.44.2.tar.gz
 https://github.com/libuv/libuv/archive/refs/tags/v1.46.0.tar.gz
@@ -1675,6 +1687,7 @@ https://releases.pagure.org/xmlto/xmlto-0.0.28.tar.bz2
 https://s3.amazonaws.com/json-c_releases/releases/json-c-0.17.tar.gz
 https://salsa.debian.org/debian/netcat-openbsd/-/archive/debian/1.218-3/netcat-openbsd-debian-1.218-3.tar.bz2
 https://salsa.debian.org/iso-codes-team/iso-codes/-/archive/v4.12.0/iso-codes-v4.12.0.tar.gz
+https://salsa.debian.org/iso-codes-team/iso-codes/-/archive/v4.16.0/iso-codes-v4.16.0.tar.gz
 https://secure.nic.cz/files/knot-dns/knot-3.2.9.tar.xz
 https://secure.nic.cz/files/knot-dns/knot-3.3.2.tar.xz
 https://secure.nic.cz/files/knot-dns/knot-3.3.3.tar.xz
