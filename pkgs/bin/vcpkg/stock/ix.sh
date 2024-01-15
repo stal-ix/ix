@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/microsoft/vcpkg-tool/archive/refs/tags/2023-11-16.tar.gz
-sha:9ed144f6836bb608c10f4facfed39c2caf3ceee9f2d9543f304568c46825c03f
+https://github.com/microsoft/vcpkg-tool/archive/refs/tags/2024-01-11.tar.gz
+sha:36590cb374eec56e3cc6ec49a3afdda0ece1afb81011a06c8c52da3fd017f8a1
 {% endblock %}
 
 {% block bld_libs %}

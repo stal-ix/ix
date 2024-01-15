@@ -4,7 +4,17 @@ import os
 import sys
 
 def fix_line(l):
-    r = '#!/usr/bin/env ' + os.path.basename(l.strip())
+    def parts():
+        yield '#!/usr/bin/env'
+
+        cmd = os.path.basename(l.strip())
+
+        if ' ' in cmd:
+            yield '-S'
+
+        yield cmd
+
+    r = ' '.join(parts())
 
     print(f'replace {l} -> {r}')
 

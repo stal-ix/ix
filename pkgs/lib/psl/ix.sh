@@ -1,8 +1,8 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://github.com/rockdaboot/libpsl/releases/download/0.21.2/libpsl-0.21.2.tar.gz
-sha:e35991b6e17001afa2c0ca3b10c357650602b92596209b7492802f3768a6285f
+https://github.com/rockdaboot/libpsl/releases/download/0.21.5/libpsl-0.21.5.tar.gz
+sha:1dcc9ceae8b128f3c0b3f654decd0e1e891afc6ff81098f227ef260449dae208
 {% endblock %}
 
 {% block lib_deps %}

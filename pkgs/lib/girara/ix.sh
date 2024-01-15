@@ -1,8 +1,8 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://git.pwmt.org/pwmt/girara/-/archive/0.4.1/girara-0.4.1.tar.bz2
-sha:3e9120aeacb2b9504d6c9be468f5b1491ccfd45720bbf6477efc06b2cc2c31c2
+https://git.pwmt.org/pwmt/girara/-/archive/0.4.2/girara-0.4.2.tar.bz2
+sha:ce79d5d69fa0d2004b1d322ee6fe86a8e3a2b4628db57b4e4d88f318af46c044
 {% endblock %}
 
 {% block lib_deps %}

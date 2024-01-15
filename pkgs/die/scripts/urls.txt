@@ -254,6 +254,7 @@ https://dri.freedesktop.org/libdrm/libdrm-2.4.116.tar.xz
 https://dri.freedesktop.org/libdrm/libdrm-2.4.117.tar.xz
 https://dri.freedesktop.org/libdrm/libdrm-2.4.118.tar.xz
 https://dri.freedesktop.org/libdrm/libdrm-2.4.119.tar.xz
+https://dri.freedesktop.org/libdrm/libdrm-2.4.120.tar.xz
 https://ffmpeg.org/releases/ffmpeg-5.1.2.tar.xz
 https://ffmpeg.org/releases/ffmpeg-6.0.1.tar.xz
 https://ffmpeg.org/releases/ffmpeg-6.0.tar.xz
@@ -292,6 +293,7 @@ https://ftp.gnu.org/gnu/automake/automake-1.16.5.tar.xz
 https://ftp.gnu.org/gnu/bash/bash-3.2.57.tar.gz
 https://ftp.gnu.org/gnu/bash/bash-4.4.18.tar.gz
 https://ftp.gnu.org/gnu/bash/bash-5.1.16.tar.gz
+https://ftp.gnu.org/gnu/bash/bash-5.2.21.tar.gz
 https://ftp.gnu.org/gnu/bash/bash-5.2.tar.gz
 https://ftp.gnu.org/gnu/bc/bc-1.07.1.tar.gz
 https://ftp.gnu.org/gnu/binutils/binutils-2.41.tar.bz2
@@ -336,6 +338,7 @@ https://ftp.gnu.org/gnu/gzip/gzip-1.13.tar.xz
 https://ftp.gnu.org/gnu/inetutils/inetutils-2.4.tar.xz
 https://ftp.gnu.org/gnu/inetutils/inetutils-2.5.tar.xz
 https://ftp.gnu.org/gnu/libidn/libidn-1.41.tar.gz
+https://ftp.gnu.org/gnu/libidn/libidn-1.42.tar.gz
 https://ftp.gnu.org/gnu/libidn/libidn2-2.3.4.tar.gz
 https://ftp.gnu.org/gnu/libmicrohttpd/libmicrohttpd-0.9.76.tar.gz
 https://ftp.gnu.org/gnu/libsigsegv/libsigsegv-2.13.tar.gz
@@ -395,12 +398,14 @@ https://git.kernel.org/pub/scm/utils/stalld/stalld.git/snapshot/stalld-1.17.1.ta
 https://git.midipix.org/slibtool/snapshot/slibtool-0.5.34.tar.bz2
 https://git.pwmt.org/pwmt/girara/-/archive/0.4.0/girara-0.4.0.tar.bz2
 https://git.pwmt.org/pwmt/girara/-/archive/0.4.1/girara-0.4.1.tar.bz2
+https://git.pwmt.org/pwmt/girara/-/archive/0.4.2/girara-0.4.2.tar.bz2
 https://git.pwmt.org/pwmt/zathura-cb/-/archive/0.1.10/zathura-cb-0.1.10.tar.bz2
 https://git.pwmt.org/pwmt/zathura/-/archive/0.5.2/zathura-0.5.2.tar.bz2
 https://git.pwmt.org/pwmt/zathura/-/archive/0.5.3/zathura-0.5.3.tar.bz2
 https://git.pwmt.org/pwmt/zathura/-/archive/0.5.4/zathura-0.5.4.tar.bz2
 https://git.savannah.nongnu.org/cgit/acl.git/snapshot/acl-2.3.1.tar.gz
 https://git.savannah.nongnu.org/cgit/attr.git/snapshot/attr-2.5.1.tar.gz
+https://git.savannah.nongnu.org/cgit/attr.git/snapshot/attr-2.5.2.tar.gz
 https://git.sr.ht/~adnano/wmenu/archive/0.1.4.tar.gz
 https://git.sr.ht/~brocellous/wlrctl/archive/v0.2.2.tar.gz
 https://git.sr.ht/~delthas/senpai/archive/v0.3.0.tar.gz
@@ -525,6 +530,7 @@ https://github.com/KhronosGroup/Vulkan-ValidationLayers/archive/refs/tags/sdk-1.
 https://github.com/KhronosGroup/Vulkan-ValidationLayers/archive/refs/tags/sdk-1.3.261.1.tar.gz
 https://github.com/KhronosGroup/glslang/archive/refs/tags/sdk-1.3.250.0.tar.gz
 https://github.com/KhronosGroup/glslang/archive/refs/tags/sdk-1.3.261.1.tar.gz
+https://github.com/Kistler-Group/sdbus-cpp/archive/refs/tags/v1.4.0.tar.gz
 https://github.com/Kitware/CMake/archive/refs/tags/v3.24.1.tar.gz
 https://github.com/Kitware/CMake/archive/refs/tags/v3.27.4.tar.gz
 https://github.com/Kitware/CMake/archive/refs/tags/v3.27.5.tar.gz
@@ -1084,6 +1090,7 @@ https://github.com/microsoft/msquic/archive/refs/tags/v2.2.4.tar.gz
 https://github.com/microsoft/snmalloc/archive/refs/tags/0.6.0.tar.gz
 https://github.com/microsoft/vcpkg-tool/archive/refs/tags/2022-11-10.tar.gz
 https://github.com/microsoft/vcpkg-tool/archive/refs/tags/2023-11-16.tar.gz
+https://github.com/microsoft/vcpkg-tool/archive/refs/tags/2024-01-11.tar.gz
 https://github.com/miniupnp/miniupnp/archive/refs/tags/miniupnpd_2_3_3.tar.gz
 https://github.com/miniupnp/miniupnp/archive/refs/tags/miniupnpd_2_3_4.tar.gz
 https://github.com/miniupnp/miniupnp/commit/ed1dc4bb.patch
@@ -1259,6 +1266,7 @@ https://github.com/rhboot/efivar/archive/refs/tags/38.tar.gz
 https://github.com/rizinorg/rizin/releases/download/v0.4.0/rizin-src-v0.4.0.tar.xz
 https://github.com/rmyorston/pdpmake/archive/refs/tags/1.4.0.tar.gz
 https://github.com/rockdaboot/libpsl/releases/download/0.21.2/libpsl-0.21.2.tar.gz
+https://github.com/rockdaboot/libpsl/releases/download/0.21.5/libpsl-0.21.5.tar.gz
 https://github.com/rpodgorny/unionfs-fuse/archive/refs/tags/v3.4.tar.gz
 https://github.com/rrthomas/libpaper/releases/download/v2.1.1/libpaper-2.1.1.tar.gz
 https://github.com/rrthomas/libpaper/releases/download/v2.1.2/libpaper-2.1.2.tar.gz
@@ -1355,6 +1363,7 @@ https://github.com/telegramdesktop/tdesktop/releases/download/v4.9.2/tdesktop-4.
 https://github.com/telegramdesktop/tdesktop/releases/download/v4.9.4/tdesktop-4.9.4-full.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v4.9.6/tdesktop-4.9.6-full.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v4.9.8/tdesktop-4.9.8-full.tar.gz
+https://github.com/tenox7/ttyplot/archive/refs/tags/1.6.1.tar.gz
 https://github.com/tesseract-ocr/tesseract/archive/refs/tags/5.2.0.tar.gz
 https://github.com/tetratelabs/wazero/archive/refs/tags/v1.5.0.tar.gz
 https://github.com/texstudio-org/texstudio/archive/refs/tags/4.4.1.tar.gz
@@ -1482,6 +1491,7 @@ https://gitlab.com/mbunkus/mkvtoolnix/-/archive/release-81.0/mkvtoolnix-release-
 https://gitlab.com/procps-ng/procps/-/archive/v4.0.4/procps-v4.0.4.tar.bz2
 https://gitlab.com/psmisc/psmisc/-/archive/v23.6/psmisc-v23.6.tar.bz2
 https://gitlab.com/qemu-project/keycodemapdb/-/archive/22b8996dba9041874845c7446ce89ec4ae2b713d/keycodemapdb-22b8996dba9041874845c7446ce89ec4ae2b713d.tar.bz2
+https://gitlab.com/sebholt/qastools/-/archive/v1.3.0/qastools-v1.3.0.tar.bz2
 https://gitlab.freedesktop.org/cairo/cairo/-/archive/1.17.8/cairo-1.17.8.tar.bz2
 https://gitlab.freedesktop.org/cairo/cairo/-/archive/1.18.0/cairo-1.18.0.tar.bz2
 https://gitlab.freedesktop.org/freetype/freetype-demos/-/archive/VER-2-13-0/freetype-demos-VER-2-13-0.tar.bz2

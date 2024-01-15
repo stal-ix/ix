@@ -1,4 +1,4 @@
-{% extends '//lib/idn/ix.sh' %}
+{% extends '//lib/idn/t/ix.sh' %}
 
 {% block bld_libs %}
 lib/intl

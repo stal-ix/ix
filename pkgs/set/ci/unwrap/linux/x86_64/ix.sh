@@ -46,6 +46,10 @@
 #}
 
 {% block run_deps %}
+bin/kati
+bin/tty/plot
+bin/pass/secrets
+bin/sd/bus/codegen
 bin/geeqie
 bin/senpai
 bin/gosh
@@ -169,7 +173,7 @@ bin/wayland/tracer
 bin/stp
 bin/cpuid
 bin/smenu
-bin/ttyd
+bin/tty/d
 bin/svgren
 bin/transmission/qt
 bin/tor
