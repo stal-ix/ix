@@ -1,9 +1,8 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-http://distfiles.gentoo.org/distfiles/85/libinput-1.24.0.tar.bz2
-#https://gitlab.freedesktop.org/libinput/libinput/-/archive/1.24.0/libinput-1.24.0.tar.bz2
-sha:c07cd0f3f464e8d2e07dc9479fd5b9340e637408517b77e7e96b2245f37f6fe6
+https://gitlab.freedesktop.org/libinput/libinput/-/archive/1.25.0/libinput-1.25.0.tar.bz2
+sha:193bd592298bd9e369c0ef3e5d83a6a9d68ddc4cd3dfc84bbe77920a8d0d57df
 {% endblock %}
 
 {% block bld_libs %}
