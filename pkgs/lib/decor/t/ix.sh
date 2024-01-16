@@ -1,8 +1,8 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://gitlab.freedesktop.org/libdecor/libdecor/-/archive/0.2.1/libdecor-0.2.1.tar.bz2
-sha:35761699db1b851978f9566ac0104b1898b88d7985227a9a988333bdde115d89
+https://gitlab.freedesktop.org/libdecor/libdecor/-/archive/0.2.2/libdecor-0.2.2.tar.bz2
+sha:943e693316300a8deb50ca5879656ac3c642e7b769dbc2d093e9919b72076bc6
 {% endblock %}
 
 {% block lib_deps %}
