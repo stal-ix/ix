@@ -2,10 +2,10 @@
 
 {% block unpack %}
 {{super()}}
-cd cli/server
+cd cmd/ssh3-server
 {% endblock %}
 
 {% block install %}
 mkdir ${out}/bin
-cp server ${out}/bin/ssh3-server
+cp ssh3-server ${out}/bin/
 {% endblock %}
