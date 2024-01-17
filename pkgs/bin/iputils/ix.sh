@@ -3,8 +3,8 @@
 {# seems broken #}
 
 {% block fetch %}
-https://github.com/iputils/iputils/archive/refs/tags/20221126.tar.gz
-sha:745ea711fe06d5c57d470d21acce3c3ab866eb6afb69379a16c6d60b89bd4311
+https://github.com/iputils/iputils/archive/refs/tags/20240117.tar.gz
+sha:a5d66e2997945b2541b8f780a7f5a5ec895d53a517ae1dc4f3ab762573edea9a
 {% endblock %}
 
 {% block bld_libs %}

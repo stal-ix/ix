@@ -916,6 +916,7 @@ https://github.com/intel/thermal_daemon/archive/refs/tags/v2.5.3.tar.gz
 https://github.com/ipfs/ipget/archive/refs/tags/v0.10.0.tar.gz
 https://github.com/ipfs/ipget/archive/refs/tags/v0.9.2.tar.gz
 https://github.com/iputils/iputils/archive/refs/tags/20221126.tar.gz
+https://github.com/iputils/iputils/archive/refs/tags/20240117.tar.gz
 https://github.com/isacikgoz/tldr/archive/refs/tags/v1.0.0-alpha.tar.gz
 https://github.com/isc-projects/bind9/archive/refs/tags/v9.19.15.tar.gz
 https://github.com/ispc/ispc/archive/refs/tags/v1.18.1.tar.gz
