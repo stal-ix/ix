@@ -20,7 +20,6 @@ lib/curses
 lib/wayland
 lib/wlroots/17
 lib/xkb/common
-lib/drivers/3d
 {% endblock %}
 
 {% block bld_tool %}
