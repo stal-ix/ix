@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://www.gnupg.org/ftp/gcrypt/gnutls/v3.8/gnutls-3.8.2.tar.xz
-sha:e765e5016ffa9b9dd243e363a0460d577074444ee2491267db2e96c9c2adef77
+https://www.gnupg.org/ftp/gcrypt/gnutls/v3.8/gnutls-3.8.3.tar.xz
+sha:f74fc5954b27d4ec6dfbb11dea987888b5b124289a3703afcada0ee520f4173e
 {% endblock %}
 
 {% block lib_deps %}

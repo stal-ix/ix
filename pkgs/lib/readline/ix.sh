@@ -31,7 +31,7 @@ lib/curses
 {% endblock %}
 
 {% block unpack %}
-mkdir srcl cd src
+mkdir src; cd src
 extract 1 ${src}/readline-*
 ls ${src}/readline82* | sort | while read l; do
     cat ${l} | patch -p0
@@ -56,6 +56,6 @@ sed -e 's|.*char PC.*||' -i terminal.c
 sed -e 's|.*termcap.*||' -i ${out}/lib/pkgconfig/readline.pc
 {% endblock %}
 
-{% block env_lib %}
+{% block env %}
 export COFLAGS="--with-installed-readline=${out} --with-readline=${out} \${COFLAGS}"
 {% endblock %}

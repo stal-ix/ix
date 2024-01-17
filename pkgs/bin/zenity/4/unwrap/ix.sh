@@ -1,4 +1,4 @@
-{% extends '//bin/zenithy/t/ix.sh' %}
+{% extends '//bin/zenity/t/ix.sh' %}
 
 {% block fetch %}
 https://gitlab.gnome.org/GNOME/zenity/-/archive/4.0.1/zenity-4.0.1.tar.bz2
