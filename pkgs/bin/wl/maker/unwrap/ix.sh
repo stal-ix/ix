@@ -35,6 +35,12 @@ EOF
 base64 -d << EOF > src/xdg_shell.c
 {% include 'xdg_shell.c/base64' %}
 EOF
+find . -type f -name '*.c' | while read l; do
+    sed -e 's|/usr/bin/foot|foot|' -i ${l}
+done
+find . -type f -name '*.h' | while read l; do
+    sed -e 's|/usr/bin/foot|foot|' -i ${l}
+done
 {% endblock %}
 
 {% block cmake_flags %}

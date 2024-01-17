@@ -24,6 +24,7 @@ lib/opengl
 lib/archive
 lib/freetype
 lib/execinfo
+lib/decor/dl
 lib/mbedtls/3
 lib/cap/stone
 lib/glfw/deps
