@@ -816,8 +816,8 @@ bin/geany
 bin/dash/sh/old
 bin/dash/sh
 bin/dash
-bin/zenthy
-bin/zenthy/3
-bin/zenthy/4
+bin/zenity
+bin/zenity/3
+bin/zenity/4
 bin/unifdef
 {% endblock %}
