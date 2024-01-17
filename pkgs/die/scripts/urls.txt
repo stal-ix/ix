@@ -1757,6 +1757,7 @@ https://www.alsa-project.org/files/pub/lib/alsa-lib-1.2.10.tar.bz2
 https://www.atoptool.nl/download/atop-2.10.0.tar.gz
 https://www.atoptool.nl/download/atop-2.9.0.tar.gz
 https://www.bytereef.org/software/mpdecimal/releases/mpdecimal-2.5.1.tar.gz
+https://www.bytereef.org/software/mpdecimal/releases/mpdecimal-4.0.0.tar.gz
 https://www.cabextract.org.uk/cabextract-1.11.tar.gz
 https://www.cairographics.org/releases/cairomm-1.14.0.tar.xz
 https://www.cairographics.org/releases/cairomm-1.16.1.tar.xz
