@@ -46,6 +46,7 @@
 #}
 
 {% block run_deps %}
+bin/wl/maker
 bin/kati
 bin/tty/plot
 bin/pass/secrets

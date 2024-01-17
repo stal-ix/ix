@@ -31,6 +31,9 @@ sed -e 's|1.22.90|1.22.0|g' -i CMakeLists.txt
 cat << EOF >> third_party/protocols/CMakeLists.txt
 set_target_properties(protocol_headers PROPERTIES LINKER_LANGUAGE CXX)
 EOF
+base64 -d << EOF > src/xdg_shell.c
+{% include 'xdg_shell.c/base64' %}
+EOF
 {% endblock %}
 
 {% block cmake_flags %}
