@@ -21,6 +21,14 @@ sed -e 's|-std=c++20|-std=c++17|' -i Makefile
 {% endblock %}
 
 {% block env %}
+export ac_cv_func_dlerror=yes
 export ac_cv_func_dlopen=yes
+export ac_cv_func_dlsym=yes
+export ac_cv_func_dladdr=yes
+export ac_cv_func_dlclose=yes
+export ac_cv_lib_dl_dlerror=yes
 export ac_cv_lib_dl_dlopen=yes
+export ac_cv_lib_dl_dlsym=yes
+export ac_cv_lib_dl_dladdr=yes
+export ac_cv_lib_dl_dlclose=yes
 {% endblock %}
