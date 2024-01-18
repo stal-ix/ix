@@ -10,6 +10,11 @@ lib/c
 lib/glib
 {% endblock %}
 
+{% block bld_libs %}
+# for autodetect
+lib/musl/dlfcn
+{% endblock %}
+
 {% block c_rename_symbol %}
 getprogname
 {% endblock %}
