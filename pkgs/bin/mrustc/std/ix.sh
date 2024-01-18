@@ -2,6 +2,7 @@
 
 {% block lib_deps %}
 lib/c
+lib/musl/dlfcn
 {% endblock %}
 
 {% block bld_libs %}
