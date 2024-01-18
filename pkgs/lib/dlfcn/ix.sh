@@ -19,3 +19,7 @@ mv ${out}/lib/libdl.a ${out}/lib/libdlstub.a
 {% block patch %}
 sed -e 's|-std=c++20|-std=c++17|' -i Makefile
 {% endblock %}
+
+{% block env %}
+export ac_cv_lib_dl_dlopen=yes
+{% endblock %}
