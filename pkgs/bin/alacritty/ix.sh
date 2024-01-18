@@ -17,6 +17,7 @@ lib/wayland
 lib/freetype
 lib/harfbuzz
 lib/musl/dlfcn
+lib/shim/fake(lib_name=unwind)
 {% endblock %}
 
 {% block bld_tool %}

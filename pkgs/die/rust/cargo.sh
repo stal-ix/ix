@@ -13,6 +13,10 @@ aux/ca/bundle
 lib/shim/fake(lib_name=gcc_s)
 {% endblock %}
 
+{% block setup_host_flags %}
+export LDFLAGS="-L${LD_LIBRARY_PATH} ${LDFLAGS}"
+{% endblock %}
+
 {% block setup %}
 export CARGO_BUILD_JOBS=${make_thrs}
 export CARGO_INSTALL_ROOT=${out}
@@ -36,6 +40,8 @@ def flt_target(cmd):
     for x in cmd:
         if 'self-contained' in x and '.o' in x:
             continue
+        elif 'self-contained' in x:
+            yield '/nowhere'
         elif '-Wl,' in x:
             continue
         elif x == '-static-pie':

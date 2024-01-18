@@ -7,3 +7,11 @@ void dlopen() {
 void dlsym() {
     abort();
 }
+
+void dlclose() {
+    abort();
+}
+
+void dlerror() {
+    abort();
+}
