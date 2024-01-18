@@ -16,6 +16,7 @@ lib/pcre/2
 lib/wayland
 lib/freetype
 lib/harfbuzz
+lib/musl/dlfcn
 {% endblock %}
 
 {% block bld_tool %}
