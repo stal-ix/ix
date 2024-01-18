@@ -1,6 +1,5 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
-bld/musl
-bld/rust/linux
+bld/rust/{{host.os}}
 {% endblock %}
