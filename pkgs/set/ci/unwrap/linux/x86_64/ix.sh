@@ -1,10 +1,6 @@
 {% extends '//die/hub.sh' %}
 
 {# broken or too heavy
-#bin/rustc/1/56/darwin
-#bin/rustc/1/56/linux
-#bin/rustc/1/56
-#bin/alacritty
 #bin/uutils/coreutils
 
 #bin/gthumb
