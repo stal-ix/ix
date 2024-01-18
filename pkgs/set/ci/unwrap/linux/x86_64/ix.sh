@@ -45,6 +45,7 @@
 #}
 
 {% block run_deps %}
+bin/alacritty
 bin/bat
 bin/wl/maker
 bin/kati

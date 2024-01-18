@@ -32,12 +32,31 @@ import subprocess
 target_cc="${TARGET_CC}"
 host_cc="${HOST_CC}"
 
+def flt_target(cmd):
+    for x in cmd:
+        if 'self-contained' in x and '.o' in x:
+            continue
+        elif '-Wl,' in x:
+            continue
+        elif x == '-static-pie':
+            continue
+        else:
+            yield x
+
+def flt_host(cmd):
+    return cmd
+
 if '--no' in str(sys.argv):
     cc = host_cc
 else:
     cc = target_cc
 
-subprocess.check_call([cc] + sys.argv[1:])
+#subprocess.check_call([cc] + sys.argv[1:])
+
+try:
+    subprocess.check_call([cc] + sys.argv[1:])
+except:
+    subprocess.check_call(list(flt_target([cc] + sys.argv[1:])))
 EOF
 
 chmod +x cc
