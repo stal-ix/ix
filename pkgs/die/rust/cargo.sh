@@ -4,8 +4,13 @@
 
 {% block std_box %}
 bld/rust
+bld/python
 aux/ca/bundle
 {{super()}}
+{% endblock %}
+
+{% block host_libs %}
+lib/shim/fake(lib_name=gcc_s)
 {% endblock %}
 
 {% block setup %}
@@ -13,6 +18,29 @@ export CARGO_BUILD_JOBS=${make_thrs}
 export CARGO_INSTALL_ROOT=${out}
 export CARGO_HOME=${tmp}/obj
 export SSL_CERT_FILE=${CA_BUNDLE}
+{% endblock %}
+
+{% block setup_tools %}
+export TARGET_CC=$(which cc)
+
+cat << EOF > cc
+#!/usr/bin/env python3
+
+import sys
+import subprocess
+
+target_cc="${TARGET_CC}"
+host_cc="${HOST_CC}"
+
+if '--no' in str(sys.argv):
+    cc = host_cc
+else:
+    cc = target_cc
+
+subprocess.check_call([cc] + sys.argv[1:])
+EOF
+
+chmod +x cc
 {% endblock %}
 
 {% set cargo_options %}

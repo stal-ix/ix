@@ -5,7 +5,6 @@
 #bin/rustc/1/56/linux
 #bin/rustc/1/56
 #bin/alacritty
-#bin/bat
 #bin/uutils/coreutils
 
 #bin/gthumb
@@ -46,6 +45,7 @@
 #}
 
 {% block run_deps %}
+bin/bat
 bin/wl/maker
 bin/kati
 bin/tty/plot
