@@ -1,7 +1,10 @@
-{% extends 'c_std.sh' %}
+{% extends '//die/c/ix.sh' %}
+
+{% block use_network %}true{% endblock %}
 
 {% block std_box %}
-bin/rustc/1/56
+bld/rust
+aux/ca/bundle
 {{super()}}
 {% endblock %}
 
@@ -9,6 +12,7 @@ bin/rustc/1/56
 export CARGO_BUILD_JOBS=${make_thrs}
 export CARGO_INSTALL_ROOT=${out}
 export CARGO_HOME=${tmp}/obj
+export SSL_CERT_FILE=${CA_BUNDLE}
 {% endblock %}
 
 {% set cargo_options %}
