@@ -7,6 +7,10 @@ lib/mimetype
 
 {% block bld_libs %}
 lib/kernel
+{% if linux %}
+# ensure dlerror proper autodetect
+lib/musl/dlfcn
+{% endif %}
 {{super()}}
 {% endblock %}
 
