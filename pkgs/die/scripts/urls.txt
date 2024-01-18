@@ -754,6 +754,7 @@ https://github.com/elfmz/far2l/archive/refs/tags/v_2.5.0.tar.gz
 https://github.com/elfmz/far2l/archive/refs/tags/v_2.5.2.tar.gz
 https://github.com/elves/elvish/archive/refs/tags/v0.19.2.tar.gz
 https://github.com/emacs-mirror/emacs/archive/refs/tags/emacs-29.1.tar.gz
+https://github.com/emacs-mirror/emacs/archive/refs/tags/emacs-29.2.tar.gz
 https://github.com/emcrisostomo/fswatch/archive/refs/tags/1.17.1.tar.gz
 https://github.com/emersion/mako/archive/refs/tags/v1.7.1.tar.gz
 https://github.com/emersion/slurp/archive/refs/tags/v1.4.0.tar.gz
