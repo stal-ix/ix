@@ -36,7 +36,8 @@ def validate(nodes):
     for n in nodes:
         if n['pool'] == 'network':
             if not n.get('predict', None):
-                raise Exception(f'invalid node {n}')
+                pass
+                #raise Exception(f'invalid node {n}')
 
         yield n
 

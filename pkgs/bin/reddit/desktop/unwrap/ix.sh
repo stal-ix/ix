@@ -26,6 +26,7 @@ lib/spdlog
 lib/openssl
 lib/sqlite/3
 lib/freetype
+lib/decor/dl
 lib/uriparser
 lib/shim/glew
 lib/glfw/deps

@@ -179,6 +179,7 @@ https://download.gnome.org/sources/glibmm/2.66/glibmm-2.66.6.tar.xz
 https://download.gnome.org/sources/glibmm/2.77/glibmm-2.77.0.tar.xz
 https://download.gnome.org/sources/gtk+/3.24/gtk%2B-3.24.37.tar.xz
 https://download.gnome.org/sources/gtk+/3.24/gtk%2B-3.24.39.tar.xz
+https://download.gnome.org/sources/gtk+/3.24/gtk%2B-3.24.40.tar.xz
 https://download.gnome.org/sources/gtkmm/3.24/gtkmm-3.24.8.tar.xz
 https://download.gnome.org/sources/libnotify/0.8/libnotify-0.8.2.tar.xz
 https://download.gnome.org/sources/libnotify/0.8/libnotify-0.8.3.tar.xz
@@ -777,6 +778,7 @@ https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.3.3.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.3.4.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.4.0.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.5.0.tar.gz
+https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.6.0.tar.gz
 https://github.com/fastfloat/fast_float/archive/refs/tags/v3.8.1.tar.gz
 https://github.com/fastfloat/fast_float/archive/refs/tags/v5.2.0.tar.gz
 https://github.com/fenrus75/powertop/archive/refs/tags/v2.15.tar.gz
@@ -915,6 +917,7 @@ https://github.com/intel/thermal_daemon/archive/refs/tags/v2.5.3.tar.gz
 https://github.com/ipfs/ipget/archive/refs/tags/v0.10.0.tar.gz
 https://github.com/ipfs/ipget/archive/refs/tags/v0.9.2.tar.gz
 https://github.com/iputils/iputils/archive/refs/tags/20221126.tar.gz
+https://github.com/iputils/iputils/archive/refs/tags/20240117.tar.gz
 https://github.com/isacikgoz/tldr/archive/refs/tags/v1.0.0-alpha.tar.gz
 https://github.com/isc-projects/bind9/archive/refs/tags/v9.19.15.tar.gz
 https://github.com/ispc/ispc/archive/refs/tags/v1.18.1.tar.gz
@@ -1553,6 +1556,7 @@ https://gitlab.gnome.org/GNOME/gnome-font-viewer/-/archive/45.0/gnome-font-viewe
 https://gitlab.gnome.org/GNOME/gnome-terminal/-/archive/3.50.1/gnome-terminal-3.50.1.tar.bz2
 https://gitlab.gnome.org/GNOME/gnome-text-editor/-/archive/44.0/gnome-text-editor-44.0.tar.bz2
 https://gitlab.gnome.org/GNOME/gnome-text-editor/-/archive/45.0/gnome-text-editor-45.0.tar.bz2
+https://gitlab.gnome.org/GNOME/gnome-text-editor/-/archive/45.2/gnome-text-editor-45.2.tar.bz2
 https://gitlab.gnome.org/GNOME/gobject-introspection/-/archive/1.72.0/gobject-introspection-1.72.0.tar.bz2
 https://gitlab.gnome.org/GNOME/gobject-introspection/-/archive/1.78.1/gobject-introspection-1.78.1.tar.bz2
 https://gitlab.gnome.org/GNOME/gsettings-desktop-schemas/-/archive/44.0/gsettings-desktop-schemas-44.0.tar.bz2
