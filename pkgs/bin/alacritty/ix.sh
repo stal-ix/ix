@@ -17,6 +17,11 @@ lib/wayland
 lib/freetype
 lib/harfbuzz
 lib/musl/dlfcn
+lib/wayland/dl
+lib/mesa/gl/dl
+lib/drivers/3d
+lib/mesa/egl/dl
+lib/xkb/common/dl
 lib/shim/fake(lib_name=unwind)
 {% endblock %}
 

@@ -1,17 +1,27 @@
-void abort();
+#define COMPILE_DLOPEN
+#include <dlfcn.h>
 
-void dlopen() {
-    abort();
+#define MUSL_RTLD_NEXT    ((void *)-1)
+#define MUSL_RTLD_DEFAULT ((void *)0)
+
+int dlclose(void* lib) {
+    return 0;
 }
 
-void dlsym() {
-    abort();
+char* dlerror() {
+    return stub_dlerror();
 }
 
-void dlclose() {
-    abort();
+void* dlopen(const char* lib, int mode) {
+    return stub_dlopen(lib, 0);
 }
 
-void dlerror() {
-    abort();
+void* dlsym(void* handle, const char* sym) {
+    if (handle == MUSL_RTLD_NEXT) {
+        handle = RTLD_NEXT;
+    } else if (handle == MUSL_RTLD_DEFAULT) {
+        handle = RTLD_DEFAULT;
+    }
+
+    return stub_dlsym(handle, sym);
 }
