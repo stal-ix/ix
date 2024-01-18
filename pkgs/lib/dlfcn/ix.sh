@@ -21,5 +21,6 @@ sed -e 's|-std=c++20|-std=c++17|' -i Makefile
 {% endblock %}
 
 {% block env %}
+export ac_cv_func_dlopen=yes
 export ac_cv_lib_dl_dlopen=yes
 {% endblock %}
