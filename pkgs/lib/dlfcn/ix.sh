@@ -31,4 +31,5 @@ export ac_cv_lib_dl_dlopen=yes
 export ac_cv_lib_dl_dlsym=yes
 export ac_cv_lib_dl_dladdr=yes
 export ac_cv_lib_dl_dlclose=yes
+export ac_cv_search_dlopen=-ldl
 {% endblock %}

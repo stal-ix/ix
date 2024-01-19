@@ -37,8 +37,3 @@ find . -type f -name '*.c' | while read l; do
     sed -e 's|numa_init();||g' -e 's|numa_uninit();||g' -i ${l}
 done
 {% endblock %}
-
-{% block configure %}
-export ac_cv_search_dlopen=-ldl
-{{super()}}
-{% endblock %}

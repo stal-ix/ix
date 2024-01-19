@@ -9,8 +9,3 @@ sha:11f0bb3709a4f20285507419d7618f3877a425c0131ea8df40fe6196129df15d
 lib/c
 lib/c++
 {% endblock %}
-
-{% block configure %}
-export ac_cv_search_dlopen=-ldl
-{{super()}}
-{% endblock %}

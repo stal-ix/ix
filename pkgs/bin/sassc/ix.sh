@@ -10,8 +10,3 @@ lib/c
 lib/c++
 lib/sass
 {% endblock %}
-
-{% block configure %}
-export ac_cv_search_dlopen=-ldl
-{{super()}}
-{% endblock %}
