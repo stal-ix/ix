@@ -1,12 +1,25 @@
 {% extends '//die/c/ix.sh' %}
 
-{% block use_network %}true{% endblock %}
-
 {% block std_box %}
 bld/rust
 bld/python
 aux/ca/bundle
+bld/stable/unpack
 {{super()}}
+{% endblock %}
+
+{% block unpack %}
+mkdir src
+cd src
+stable_unpack ${src}/*lz4
+mv vendored ${tmp}/
+{% endblock %}
+
+{% block cargo_refine %}
+{% endblock %}
+
+{% block bld_data %}
+aux/cargo(url={{self.cargo_url().strip()}},sha={{self.cargo_sha().strip()}},parent_id={{self.cargo_sha().strip()}},refine={{self.cargo_refine().strip() | b64e}})
 {% endblock %}
 
 {% block host_libs %}
@@ -20,7 +33,7 @@ export LDFLAGS="-L${LD_LIBRARY_PATH} ${LDFLAGS}"
 {% block setup %}
 export CARGO_BUILD_JOBS=8
 export CARGO_INSTALL_ROOT=${out}
-export CARGO_HOME=${tmp}/obj
+export CARGO_HOME=${tmp}/vendored
 export SSL_CERT_FILE=${CA_BUNDLE}
 {% endblock %}
 
@@ -78,9 +91,9 @@ chmod +x cc c++
 {% block build %}
 export HOST_CXX=$(which c++)
 export HOST_CC=$(which cc)
-cargo build --release {{ix.fix_list(cargo_options)}}
+cargo build --offline --release {{ix.fix_list(cargo_options)}}
 {% endblock %}
 
 {% block install %}
-cargo install --path .
+cargo install --path . --locked
 {% endblock %}
