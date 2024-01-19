@@ -1544,6 +1544,7 @@ https://gitlab.freedesktop.org/mesa/mesa/-/archive/mesa-23.0.3/mesa-mesa-23.0.3.
 https://gitlab.freedesktop.org/mesa/mesa/-/archive/mesa-23.1.8/mesa-mesa-23.1.8.tar.bz2
 https://gitlab.freedesktop.org/upower/upower/-/archive/v1.90.1/upower-v1.90.1.tar.bz2
 https://gitlab.freedesktop.org/wayland/wayland-protocols/-/archive/1.32/wayland-protocols-1.32.tar.bz2
+https://gitlab.freedesktop.org/wayland/wayland-protocols/-/archive/1.33/wayland-protocols-1.33.tar.bz2
 https://gitlab.freedesktop.org/wayland/wayland-utils/-/archive/wayland-info-1.0.0/wayland-utils-wayland-info-1.0.0.tar.bz2
 https://gitlab.freedesktop.org/wayland/wayland-utils/-/archive/wayland-utils-1.0.0/wayland-utils-wayland-utils-1.0.0.tar.bz2
 https://gitlab.freedesktop.org/wayland/wayland/-/releases/1.22.0/downloads/wayland-1.22.0.tar.xz
