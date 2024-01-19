@@ -12,7 +12,6 @@ bld/stable/unpack
 mkdir src
 cd src
 stable_unpack ${src}/*lz4
-mv vendored ${tmp}/
 {% endblock %}
 
 {% block cargo_refine %}
@@ -33,7 +32,7 @@ export LDFLAGS="-L${LD_LIBRARY_PATH} ${LDFLAGS}"
 {% block setup %}
 export CARGO_BUILD_JOBS=8
 export CARGO_INSTALL_ROOT=${out}
-export CARGO_HOME=${tmp}/vendored
+export CARGO_HOME=${PWD}/vendored
 export SSL_CERT_FILE=${CA_BUNDLE}
 {% endblock %}
 
@@ -95,5 +94,5 @@ cargo build --offline --release {{ix.fix_list(cargo_options)}}
 {% endblock %}
 
 {% block install %}
-cargo install --path . --locked
+cargo install --path .
 {% endblock %}
