@@ -44,6 +44,8 @@ def flt_target(cmd):
             yield '/nowhere'
         elif '-Wl,' in x:
             continue
+        elif '-lunwind' in x:
+            continue
         elif x == '-static-pie':
             continue
         else:
@@ -57,15 +59,15 @@ if '--no' in str(sys.argv):
 else:
     cc = target_cc
 
-#subprocess.check_call([cc] + sys.argv[1:])
-
 try:
     subprocess.check_call([cc] + sys.argv[1:])
 except:
     subprocess.check_call(list(flt_target([cc] + sys.argv[1:])))
 EOF
 
-chmod +x cc
+cp cc c++
+
+chmod +x cc c++
 {% endblock %}
 
 {% set cargo_options %}
@@ -74,9 +76,11 @@ chmod +x cc
 {% endset %}
 
 {% block build %}
+export HOST_CXX=$(which c++)
+export HOST_CC=$(which cc)
 cargo build --release {{ix.fix_list(cargo_options)}}
 {% endblock %}
 
 {% block install %}
-cargo install --path .
+cargo install --path . --locked
 {% endblock %}
