@@ -39,6 +39,7 @@
 #}
 
 {% block run_deps %}
+bin/zellij
 bin/rio
 bin/git/ui
 bin/coreutils/uutils
