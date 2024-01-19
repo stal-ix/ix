@@ -39,6 +39,7 @@
 #}
 
 {% block run_deps %}
+bin/git/ui
 bin/coreutils/uutils
 bin/alacritty
 bin/bat
