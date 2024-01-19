@@ -3,7 +3,6 @@
 {% block std_box %}
 bld/rust
 bld/python
-aux/ca/bundle
 bld/stable/unpack
 {{super()}}
 {% endblock %}
@@ -33,7 +32,6 @@ export LDFLAGS="-L${LD_LIBRARY_PATH} ${LDFLAGS}"
 export CARGO_BUILD_JOBS=8
 export CARGO_INSTALL_ROOT=${out}
 export CARGO_HOME=${PWD}/vendored
-export SSL_CERT_FILE=${CA_BUNDLE}
 {% endblock %}
 
 {% block setup_tools %}

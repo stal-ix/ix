@@ -4,10 +4,12 @@
 
 {% block bld_tool %}
 bld/rust
+aux/ca/bundle
 {{super()}}
 {% endblock %}
 
 {% block build %}
+export SSL_CERT_FILE=${CA_BUNDLE}
 export CARGO_HOME=${PWD}/vendored
 cargo fetch
 {% endblock %}
