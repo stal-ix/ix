@@ -14,8 +14,6 @@ lib/handy
 # uuid
 lib/linux/util
 lib/gsettings/desktop/schemas
-# dlsym autodetect
-lib/musl/dlfcn
 {% endblock %}
 
 {% block meson_flags %}
