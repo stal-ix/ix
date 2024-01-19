@@ -5,7 +5,7 @@ https://github.com/raphamorim/rio/archive/refs/tags/v0.0.34.tar.gz
 {% endblock %}
 
 {% block cargo_sha %}
-7ea946d01c98b49d8f22d80ebdf155211d3530a35bf7aec32c25606637e243a8
+51e7401c33baff1c0ade320d8ab413fdc03a678cb43e215b4fa811cf460b2da7
 {% endblock %}
 
 {% block bld_libs %}
