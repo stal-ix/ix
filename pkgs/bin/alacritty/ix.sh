@@ -21,7 +21,6 @@ lib/mesa/gl/dl
 lib/drivers/3d
 lib/mesa/egl/dl
 lib/xkb/common/dl
-lib/shim/fake(lib_name=unwind)
 {% endblock %}
 
 {% block bld_tool %}
