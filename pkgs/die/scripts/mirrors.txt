@@ -5,3 +5,5 @@ http://ix.samokhvalov.xyz/
 https://ix.vvzvlad.xyz/
 https://ix.7mind.io/
 http://fin1.mirror.stal-ix.org/
+http://pl1.mirror.stal-ix.org/
+http://us1.mirror.stal-ix.org/
