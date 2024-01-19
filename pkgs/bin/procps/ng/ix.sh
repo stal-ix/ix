@@ -8,6 +8,7 @@ sha:08dbaaaae6afe8d5fbeee8aa3f8b460b01c5e09ce4706b161846f067103a2cf2
 {% block lib_deps %}
 lib/c
 lib/intl
+lib/numa
 lib/curses
 {% endblock %}
 
@@ -30,4 +31,14 @@ export ac_cv_header_error_h=no
 
 {% block patch %}
 sed -e 's|utmpx.h|utmp.h|' -i src/w.c
+rm library/include/numa.h
+>library/numa.c
+find . -type f -name '*.c' | while read l; do
+    sed -e 's|numa_init();||g' -e 's|numa_uninit();||g' -i ${l}
+done
+{% endblock %}
+
+{% block configure %}
+export ac_cv_search_dlopen=-ldl
+{{super()}}
 {% endblock %}
