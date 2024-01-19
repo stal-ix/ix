@@ -92,5 +92,5 @@ cargo build --offline --release {{ix.fix_list(cargo_options)}}
 {% endblock %}
 
 {% block install %}
-cargo install --path .
+cargo install --offline --path .
 {% endblock %}

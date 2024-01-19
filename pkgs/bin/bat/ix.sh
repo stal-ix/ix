@@ -1,8 +1,11 @@
-{% extends '//die/rust/cargo.sh' %}
+{% extends '//die/rust/cargo2.sh' %}
 
-{% block fetch %}
-https://github.com/sharkdp/bat/archive/refs/tags/v0.18.3.tar.gz
-md5:df1b1e7cc3ea8922f6a287b5c2abb413
+{% block cargo_url %}
+https://github.com/sharkdp/bat/archive/refs/tags/v0.24.0.tar.gz
+{% endblock %}
+
+{% block cargo_sha %}
+a62f2e98f70b352a32809dbfe8d0ecb42d9e83d9912eebd7f7d2537597cf04fb
 {% endblock %}
 
 {% block bld_libs %}
