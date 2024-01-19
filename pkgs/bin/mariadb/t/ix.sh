@@ -35,6 +35,7 @@ wrap_cc
 {% endblock %}
 
 {% block cpp_defines %}
+HAVE_DLADDR=1
 ssize_t=long
 {% endblock %}
 
