@@ -1,4 +1,4 @@
-{% extends '//die/rust/cargo2.sh' %}
+{% extends '//die/rust/cargo.sh' %}
 
 {% block cargo_url %}
 https://github.com/alacritty/alacritty/archive/refs/tags/v0.13.1.tar.gz

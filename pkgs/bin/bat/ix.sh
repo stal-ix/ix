@@ -1,4 +1,4 @@
-{% extends '//die/rust/cargo2.sh' %}
+{% extends '//die/rust/cargo.sh' %}
 
 {% block cargo_url %}
 https://github.com/sharkdp/bat/archive/refs/tags/v0.24.0.tar.gz

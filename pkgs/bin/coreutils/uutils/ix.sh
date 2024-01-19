@@ -1,4 +1,4 @@
-{% extends '//die/rust/cargo2.sh' %}
+{% extends '//die/rust/cargo.sh' %}
 
 {% block cargo_url %}
 https://github.com/uutils/coreutils/archive/refs/tags/0.0.23.tar.gz
