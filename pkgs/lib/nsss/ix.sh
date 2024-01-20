@@ -6,7 +6,6 @@ sha:7d984ea627b3a8d7649d9bf24c79693f338e911d2b11040b89c4febfb1b3125b
 {% endblock %}
 
 {% block lib_deps %}
-lib/c/bare
 lib/skalibs
 {% endblock %}
 
@@ -26,6 +25,6 @@ mv nsss/* .
 rm -r nsss
 {% endblock %}
 
-{% block env_lib %}
+{% block env %}
 export CPPFLAGS="-isystem ${out}/include/nsss \${CPPFLAGS}"
 {% endblock %}

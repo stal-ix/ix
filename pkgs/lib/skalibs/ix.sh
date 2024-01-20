@@ -6,7 +6,7 @@ sha:400180b4d5b651e4fafaf0297b933f5f863b467d357f5b36a6545cf6eb14eab9
 {% endblock %}
 
 {% block lib_deps %}
-lib/c/bare
+lib/c/naked
 {% endblock %}
 
 {% block patch %}
