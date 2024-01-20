@@ -1,25 +1,8 @@
-{% extends '//die/c/autorehell.sh' %}
+{% extends '//die/c/autohell.sh' %}
 
 {% block fetch %}
-https://github.com/netwide-assembler/nasm/archive/refs/tags/nasm-2.16.01.tar.gz
-sha:d4a9c2b806e736cac8e9ad891b3cc042f4d7d20f764432e128d613cb1a4f0189
-{% endblock %}
-
-{% block bld_tool %}
-bld/perl
-{% endblock %}
-
-{% block conf_ver %}
-2/71
-{% endblock %}
-
-{% block autoreconf %}
-sh autogen.sh
-{% endblock %}
-
-{% block patch %}
->nasm.1
->ndisasm.1
+https://www.nasm.us/pub/nasm/releasebuilds/2.16.01/nasm-2.16.01.tar.gz
+sha:d833bf0f5716e89dbcd345b7f545f25fe348c6e2ef16dbc293e1027bcd22d881
 {% endblock %}
 
 {% block bld_libs %}
