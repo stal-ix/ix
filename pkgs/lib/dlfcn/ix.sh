@@ -1,21 +1,8 @@
-{% extends '//die/c/make.sh' %}
-
-{% block fetch %}
-https://github.com/pg83/dlopen/archive/refs/tags/v2.tar.gz
-sha:a868469f93379c5b89c7e8906f5f896f0b80bbc55032238954f0b38a9a55206d
-{% endblock %}
+{% extends '//die/hub.sh' %}
 
 {% block lib_deps %}
-lib/c++/dispatch
-{% endblock %}
-
-{% block install %}
-{{super()}}
-{% if not mingw32 %}
-mv ${out}/lib/libdl.a ${out}/lib/libdlstub.a
+{% if linux %}
+lib/dlfcn/abi
 {% endif %}
-{% endblock %}
-
-{% block patch %}
-sed -e 's|-std=c++20|-std=c++17|' -i Makefile
+lib/dlfcn/unwrap
 {% endblock %}

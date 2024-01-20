@@ -1,23 +1,37 @@
 {% extends '//die/c/ix.sh' %}
 
-{% block use_network %}true{% endblock %}
-
 {% block std_box %}
 bld/rust
 bld/python
-aux/ca/bundle
+bld/stable/unpack
 {{super()}}
+{% endblock %}
+
+{% block unpack %}
+mkdir src
+cd src
+stable_unpack ${src}/*lz4
+{% endblock %}
+
+{% block cargo_refine %}
+{% endblock %}
+
+{% block bld_data %}
+aux/cargo(url={{self.cargo_url().strip()}},sha={{self.cargo_sha().strip()}},parent_id={{self.cargo_sha().strip()}},refine={{self.cargo_refine().strip() | b64e}})
 {% endblock %}
 
 {% block host_libs %}
 lib/shim/fake(lib_name=gcc_s)
 {% endblock %}
 
+{% block setup_host_flags %}
+export LDFLAGS="-L${LD_LIBRARY_PATH} ${LDFLAGS}"
+{% endblock %}
+
 {% block setup %}
-export CARGO_BUILD_JOBS=${make_thrs}
+export CARGO_BUILD_JOBS=8
 export CARGO_INSTALL_ROOT=${out}
-export CARGO_HOME=${tmp}/obj
-export SSL_CERT_FILE=${CA_BUNDLE}
+export CARGO_HOME=${PWD}/vendored
 {% endblock %}
 
 {% block setup_tools %}
@@ -36,7 +50,11 @@ def flt_target(cmd):
     for x in cmd:
         if 'self-contained' in x and '.o' in x:
             continue
+        elif 'self-contained' in x:
+            yield '/nowhere'
         elif '-Wl,' in x:
+            continue
+        elif '-lunwind' in x:
             continue
         elif x == '-static-pie':
             continue
@@ -51,15 +69,15 @@ if '--no' in str(sys.argv):
 else:
     cc = target_cc
 
-#subprocess.check_call([cc] + sys.argv[1:])
-
 try:
     subprocess.check_call([cc] + sys.argv[1:])
 except:
     subprocess.check_call(list(flt_target([cc] + sys.argv[1:])))
 EOF
 
-chmod +x cc
+cp cc c++
+
+chmod +x cc c++
 {% endblock %}
 
 {% set cargo_options %}
@@ -68,9 +86,11 @@ chmod +x cc
 {% endset %}
 
 {% block build %}
-cargo build --release {{ix.fix_list(cargo_options)}}
+export HOST_CXX=$(which c++)
+export HOST_CC=$(which cc)
+cargo build --offline --release {{ix.fix_list(cargo_options)}}
 {% endblock %}
 
 {% block install %}
-cargo install --path .
+cargo install --offline --path .
 {% endblock %}

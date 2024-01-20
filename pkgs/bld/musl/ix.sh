@@ -72,6 +72,11 @@ cc -o ${out}/lib/libgcc_s.so.1 -shared gcc.c
 {% block env %}
 export LDSO=${out}/bin/ld-musl-x86_64.so.1
 export LD_LIBRARY_PATH=${out}/lib
-export LDFLAGS="-L${out}/lib"
+#export LDFLAGS="-L${out}/lib"
+export LDFLAGS=
 export CPPFLAGS=
+{% endblock %}
+
+{% block skip_auto_lib_env %}
+:
 {% endblock %}

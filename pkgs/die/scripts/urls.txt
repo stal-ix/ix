@@ -73,6 +73,7 @@ http://www.haproxy.org/download/2.8/src/haproxy-2.8.4.tar.gz
 http://www.haproxy.org/download/2.9/src/haproxy-2.9.0.tar.gz
 http://www.haproxy.org/download/2.9/src/haproxy-2.9.1.tar.gz
 http://www.haproxy.org/download/2.9/src/haproxy-2.9.2.tar.gz
+http://www.haproxy.org/download/2.9/src/haproxy-2.9.3.tar.gz
 http://www.ijg.org/files/jpegsrc.v9e.tar.gz
 http://www.inf.puc-rio.br/~roberto/lpeg/lpeg-1.1.0.tar.gz
 http://www.jedrea.com/chmlib/chmlib-0.40.tar.bz2
@@ -473,6 +474,7 @@ https://github.com/FredHucht/pstree/archive/refs/tags/v2.40.tar.gz
 https://github.com/FreeGLUTProject/freeglut/releases/download/v3.4.0/freeglut-3.4.0.tar.gz
 https://github.com/FreeRDP/FreeRDP/archive/refs/tags/2.10.0.tar.gz
 https://github.com/FreeRDP/FreeRDP/archive/refs/tags/3.1.0.tar.gz
+https://github.com/FreeRDP/FreeRDP/archive/refs/tags/3.2.0.tar.gz
 https://github.com/GNOME/adwaita-icon-theme/archive/refs/tags/44.0.tar.gz
 https://github.com/GNOME/epiphany/archive/refs/tags/45.0.tar.gz
 https://github.com/GNOME/epiphany/archive/refs/tags/45.1.tar.gz
@@ -629,6 +631,8 @@ https://github.com/afify/sfm/archive/refs/tags/v0.4.tar.gz
 https://github.com/akamai/re2g/archive/refs/tags/v0.1.35.tar.gz
 https://github.com/akheron/jansson/archive/refs/tags/v2.14.tar.gz
 https://github.com/aklomp/base64/archive/refs/tags/v0.4.0.tar.gz
+https://github.com/alacritty/alacritty/archive/refs/tags/v0.13.1.tar.gz
+https://github.com/alacritty/alacritty/archive/refs/tags/v0.13.1.tar.gz\
 https://github.com/alacritty/alacritty/archive/refs/tags/v0.9.0.tar.gz
 https://github.com/alecthomas/chroma/archive/refs/tags/v2.8.0.tar.gz
 https://github.com/alecthomas/chroma/archive/refs/tags/v2.9.1.tar.gz
@@ -753,6 +757,7 @@ https://github.com/elfmz/far2l/archive/refs/tags/v_2.5.0.tar.gz
 https://github.com/elfmz/far2l/archive/refs/tags/v_2.5.2.tar.gz
 https://github.com/elves/elvish/archive/refs/tags/v0.19.2.tar.gz
 https://github.com/emacs-mirror/emacs/archive/refs/tags/emacs-29.1.tar.gz
+https://github.com/emacs-mirror/emacs/archive/refs/tags/emacs-29.2.tar.gz
 https://github.com/emcrisostomo/fswatch/archive/refs/tags/1.17.1.tar.gz
 https://github.com/emersion/mako/archive/refs/tags/v1.7.1.tar.gz
 https://github.com/emersion/slurp/archive/refs/tags/v1.4.0.tar.gz
@@ -767,6 +772,8 @@ https://github.com/evanw/esbuild/archive/refs/tags/v0.18.14.tar.gz
 https://github.com/evanw/esbuild/archive/refs/tags/v0.19.6.tar.gz
 https://github.com/exfatprogs/exfatprogs/archive/refs/tags/1.2.2.tar.gz
 https://github.com/exfatprogs/exfatprogs/releases/download/1.2.0/exfatprogs-1.2.0.tar.xz
+https://github.com/extrawurst/gitui/archive/refs/tags/v0.24.3.tar.gz
+https://github.com/extrawurst/gitui/archive/refs/tags/v0.24.3.tar.gz\
 https://github.com/facebook/zstd/archive/refs/tags/v1.5.5.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.1.2.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.2.0.tar.gz
@@ -1266,6 +1273,7 @@ https://github.com/qt/qtwayland/archive/refs/tags/v6.6.0.tar.gz
 https://github.com/qt/qtwayland/archive/refs/tags/v6.6.1.tar.gz
 https://github.com/quictls/openssl/archive/refs/tags/openssl-3.1.2-quic1.tar.gz
 https://github.com/quictls/openssl/archive/refs/tags/openssl-3.1.4-quic1.tar.gz
+https://github.com/raphamorim/rio/archive/refs/tags/v0.0.34.tar.gz
 https://github.com/redis/hiredis/archive/refs/tags/v1.2.0.tar.gz
 https://github.com/redis/redis/archive/refs/tags/7.2.0.tar.gz
 https://github.com/redis/redis/archive/refs/tags/7.2.2.tar.gz
@@ -1323,6 +1331,8 @@ https://github.com/shadow-maint/shadow/archive/refs/tags/4.14.3.tar.gz
 https://github.com/shadowsocks/go-shadowsocks2/archive/refs/tags/v0.1.5.tar.gz
 https://github.com/shadowsocks/shadowsocks-libev/releases/download/v3.3.5/shadowsocks-libev-3.3.5.tar.gz
 https://github.com/sharkdp/bat/archive/refs/tags/v0.18.3.tar.gz
+https://github.com/sharkdp/bat/archive/refs/tags/v0.24.0.tar.gz
+https://github.com/sharkdp/bat/archive/refs/tags/v0.24.0.tar.gz\
 https://github.com/sivel/speedtest-cli/archive/refs/tags/v2.1.3.tar.gz
 https://github.com/skeeto/u-config/archive/refs/tags/v0.31.1.tar.gz
 https://github.com/skvadrik/re2c/archive/refs/tags/3.1.tar.gz
@@ -1376,6 +1386,9 @@ https://github.com/telegramdesktop/tdesktop/releases/download/v4.14.2/tdesktop-4
 https://github.com/telegramdesktop/tdesktop/releases/download/v4.14.3/tdesktop-4.14.3-full.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v4.14.4/tdesktop-4.14.4-full.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v4.14.6/tdesktop-4.14.6-full.tar.gz
+https://github.com/telegramdesktop/tdesktop/releases/download/v4.14.7/tdesktop-4.14.7-full.tar.gz
+https://github.com/telegramdesktop/tdesktop/releases/download/v4.14.8/tdesktop-4.14.8-full.tar.gz
+https://github.com/telegramdesktop/tdesktop/releases/download/v4.14.9/tdesktop-4.14.9-full.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v4.8.10/tdesktop-4.8.10-full.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v4.8.12/tdesktop-4.8.12-full.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v4.9.0/tdesktop-4.9.0-full.tar.gz
@@ -1424,6 +1437,8 @@ https://github.com/upx/upx/releases/download/v4.2.1/upx-4.2.1-src.tar.xz
 https://github.com/upx/upx/releases/download/v4.2.2/upx-4.2.2-src.tar.xz
 https://github.com/uriparser/uriparser/archive/refs/tags/uriparser-0.9.6.tar.gz
 https://github.com/util-linux/util-linux/archive/refs/tags/v2.39.1.tar.gz
+https://github.com/uutils/coreutils/archive/refs/tags/0.0.23.tar.gz
+https://github.com/uutils/coreutils/archive/refs/tags/0.0.23.tar.gz\
 https://github.com/uutils/coreutils/archive/refs/tags/0.0.8.tar.gz
 https://github.com/varlink/libvarlink/archive/refs/tags/23.tar.gz
 https://github.com/vasi/squashfuse/archive/refs/tags/0.4.0.tar.gz
@@ -1457,6 +1472,7 @@ https://github.com/weechat/weechat/archive/refs/tags/v4.1.1.tar.gz
 https://github.com/weechat/weechat/archive/refs/tags/v4.1.2.tar.gz
 https://github.com/westes/flex/archive/refs/tags/flex-2-5-10.tar.gz
 https://github.com/westes/flex/files/981163/flex-2.6.4.tar.gz
+https://github.com/wez/wezterm/archive/refs/tags/20230712-072601-f4abf8fd.tar.gz
 https://github.com/wfeldt/libx86emu/archive/refs/tags/3.5.tar.gz
 https://github.com/wireshark/wireshark/archive/refs/tags/v4.1.0.tar.gz
 https://github.com/wireshark/wireshark/archive/refs/tags/v4.2.0.tar.gz
@@ -1486,6 +1502,7 @@ https://github.com/yquake2/yquake2/archive/refs/tags/QUAKE2_8_20.tar.gz
 https://github.com/yquake2/yquake2/archive/refs/tags/QUAKE2_8_30.tar.gz
 https://github.com/yrutschle/sslh/archive/refs/tags/v2.0.0.tar.gz
 https://github.com/yrutschle/sslh/archive/refs/tags/v2.0.1.tar.gz
+https://github.com/zellij-org/zellij/archive/refs/tags/v0.39.2.tar.gz
 https://github.com/zlib-ng/zlib-ng/archive/refs/tags/2.1.3.tar.gz
 https://github.com/zlib-ng/zlib-ng/archive/refs/tags/2.1.4.tar.gz
 https://github.com/zlib-ng/zlib-ng/archive/refs/tags/2.1.5.tar.gz
@@ -1531,6 +1548,7 @@ https://gitlab.freedesktop.org/mesa/mesa/-/archive/mesa-23.0.3/mesa-mesa-23.0.3.
 https://gitlab.freedesktop.org/mesa/mesa/-/archive/mesa-23.1.8/mesa-mesa-23.1.8.tar.bz2
 https://gitlab.freedesktop.org/upower/upower/-/archive/v1.90.1/upower-v1.90.1.tar.bz2
 https://gitlab.freedesktop.org/wayland/wayland-protocols/-/archive/1.32/wayland-protocols-1.32.tar.bz2
+https://gitlab.freedesktop.org/wayland/wayland-protocols/-/archive/1.33/wayland-protocols-1.33.tar.bz2
 https://gitlab.freedesktop.org/wayland/wayland-utils/-/archive/wayland-info-1.0.0/wayland-utils-wayland-info-1.0.0.tar.bz2
 https://gitlab.freedesktop.org/wayland/wayland-utils/-/archive/wayland-utils-1.0.0/wayland-utils-wayland-utils-1.0.0.tar.bz2
 https://gitlab.freedesktop.org/wayland/wayland/-/releases/1.22.0/downloads/wayland-1.22.0.tar.xz
@@ -1565,6 +1583,7 @@ https://gitlab.gnome.org/GNOME/gtk/-/archive/4.12.1/gtk-4.12.1.tar.bz2
 https://gitlab.gnome.org/GNOME/gtk/-/archive/4.12.2/gtk-4.12.2.tar.bz2
 https://gitlab.gnome.org/GNOME/gtk/-/archive/4.12.3/gtk-4.12.3.tar.bz2
 https://gitlab.gnome.org/GNOME/gtk/-/archive/4.12.4/gtk-4.12.4.tar.bz2
+https://gitlab.gnome.org/GNOME/gtk/-/archive/4.12.5/gtk-4.12.5.tar.bz2
 https://gitlab.gnome.org/GNOME/gtksourceview/-/archive/5.10.0/gtksourceview-5.10.0.tar.bz2
 https://gitlab.gnome.org/GNOME/gtksourceview/-/archive/5.8.0/gtksourceview-5.8.0.tar.bz2
 https://gitlab.gnome.org/GNOME/json-glib/-/archive/1.6.6/json-glib-1.6.6.tar.bz2
@@ -1736,6 +1755,7 @@ https://sqlite.org/2023/sqlite-autoconf-3440100.tar.gz
 https://sqlite.org/2023/sqlite-autoconf-3440200.tar.gz
 https://src.fedoraproject.org/repo/pkgs/zip/zip30.tar.gz/7b74551e63f8ee6aab6fbc86676c0d37/zip30.tar.gz
 https://static.rust-lang.org/dist/rust-1.56.1-x86_64-unknown-linux-gnu.tar.gz
+https://static.rust-lang.org/dist/rust-1.75.0-x86_64-unknown-linux-musl.tar.gz
 https://static.rust-lang.org/dist/rustc-1.54.0-src.tar.gz
 https://storage.googleapis.com/aom-releases/libaom-3.7.0.tar.gz
 https://storage.googleapis.com/aom-releases/libaom-3.7.1.tar.gz

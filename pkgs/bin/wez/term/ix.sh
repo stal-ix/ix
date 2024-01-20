@@ -1,11 +1,11 @@
 {% extends '//die/rust/cargo.sh' %}
 
 {% block cargo_url %}
-https://github.com/alacritty/alacritty/archive/refs/tags/v0.13.1.tar.gz
+https://github.com/wez/wezterm/archive/refs/tags/20230712-072601-f4abf8fd.tar.gz
 {% endblock %}
 
 {% block cargo_sha %}
-69e9ab58dfc2d9be4136df108a43205c1229923f325217e1c5619bc19885afb7
+69e9
 {% endblock %}
 
 {% block bld_libs %}
@@ -32,5 +32,5 @@ bld/pkg/config
 
 {% block install %}
 mkdir ${out}/bin
-cp target/release/alacritty ${out}/bin/
+cp target/release/wezterm ${out}/bin/
 {% endblock %}

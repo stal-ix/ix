@@ -1,11 +1,11 @@
 {% extends '//die/rust/cargo.sh' %}
 
 {% block cargo_url %}
-https://github.com/alacritty/alacritty/archive/refs/tags/v0.13.1.tar.gz
+https://github.com/raphamorim/rio/archive/refs/tags/v0.0.34.tar.gz
 {% endblock %}
 
 {% block cargo_sha %}
-69e9ab58dfc2d9be4136df108a43205c1229923f325217e1c5619bc19885afb7
+51e7401c33baff1c0ade320d8ab413fdc03a678cb43e215b4fa811cf460b2da7
 {% endblock %}
 
 {% block bld_libs %}
@@ -32,5 +32,5 @@ bld/pkg/config
 
 {% block install %}
 mkdir ${out}/bin
-cp target/release/alacritty ${out}/bin/
+cp target/release/rio ${out}/bin/
 {% endblock %}

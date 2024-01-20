@@ -1,12 +1,6 @@
 {% extends '//die/hub.sh' %}
 
 {# broken or too heavy
-#bin/rustc/1/56/darwin
-#bin/rustc/1/56/linux
-#bin/rustc/1/56
-#bin/alacritty
-#bin/uutils/coreutils
-
 #bin/gthumb
 #bin/re2g
 #bin/lldb
@@ -45,8 +39,12 @@
 #}
 
 {% block run_deps %}
-bin/alacritty
-bin/bat
+#bin/zellij
+#bin/rio
+#bin/git/ui
+#bin/coreutils/uutils
+#bin/alacritty
+#bin/bat
 bin/wl/maker
 bin/kati
 bin/tty/plot

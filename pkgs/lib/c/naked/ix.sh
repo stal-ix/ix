@@ -2,7 +2,7 @@
 
 {% block lib_deps %}
 {% if linux %}
-lib/{{libc or 'musl/noalloc'}}
+lib/{{libc or 'musl/naked'}}
 {% endif %}
 {% if darwin %}
 lib/darwin/c
