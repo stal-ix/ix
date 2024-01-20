@@ -1,5 +1,7 @@
 {% extends '//die/c/ix.sh' %}
 
+{% block task_pool %}full{% endblock %}
+
 {% block std_box %}
 bld/rust
 bld/python
