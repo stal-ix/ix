@@ -3,6 +3,7 @@
 {% block host_libs %}
 lib/elfutils
 lib/openssl/1
+lib/build/noexec
 {{super()}}
 {% endblock %}
 
