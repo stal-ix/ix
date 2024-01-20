@@ -5,7 +5,8 @@ https://www.agner.org/optimize/asmlib.zip
 sha:481d6245051a2b82c06e393b782ba1dd1fe9724209ed9ba5ad5692728ef8da7a
 {% endblock %}
 
-{% block bld_tool %}
+{% block std_box %}
+{{super()}}
 bld/nasm
 {% endblock %}
 
