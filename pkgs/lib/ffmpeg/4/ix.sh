@@ -26,7 +26,7 @@ lib/xiph/theora
 {% endblock %}
 
 {% block bld_tool %}
-bin/nasm
+bld/nasm
 bld/perl
 bld/cmake
 bld/pkg/config

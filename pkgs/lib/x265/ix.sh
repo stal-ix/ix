@@ -34,7 +34,7 @@ shut_up
 
 {% block bld_tool %}
 {% if x86_64 and not mingw32 %}
-bin/nasm
+bld/nasm
 {% endif %}
 {% if darwin %}
 bld/cctools

@@ -30,7 +30,7 @@ lib/xiph/theora
 {% endblock %}
 
 {% block bld_tool %}
-bin/nasm
+bld/nasm
 bld/fakegit
 bld/elfutils
 {% endblock %}

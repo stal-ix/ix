@@ -13,7 +13,7 @@ lib/c
 bin/gzip
 bin/mtools
 {% if x86_64 %}
-bin/nasm
+bld/nasm
 {% endif %}
 {% endblock %}
 

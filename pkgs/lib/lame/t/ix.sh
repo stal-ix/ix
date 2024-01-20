@@ -10,7 +10,7 @@ lib/c
 {% endblock %}
 
 {% block bld_tool %}
-bin/nasm
+bld/nasm
 bld/gettext
 {% endblock %}
 
