@@ -13,7 +13,7 @@ a1ae8a903e13152e360fe719ecbe0ba7c2d817af
 {% endblock %}
 
 {% block bld_tool %}
-bin/nasm
+bld/nasm
 {% endblock %}
 
 {% block make_flags %}

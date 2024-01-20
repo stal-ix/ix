@@ -16,7 +16,7 @@ lib/c++
 {% block bld_tool %}
 bld/perl
 {% if x86_64 %}
-bin/nasm
+bld/nasm
 {% endif %}
 {% if darwin %}
 bld/cctools

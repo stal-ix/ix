@@ -16,5 +16,5 @@ lib/fontconfig
 {% endblock %}
 
 {% block bld_tool %}
-bin/nasm
+bld/nasm
 {% endblock %}

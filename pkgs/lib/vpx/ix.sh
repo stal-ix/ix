@@ -12,7 +12,7 @@ lib/c++
 
 {% block bld_tool %}
 bld/perl
-bin/nasm
+bld/nasm
 bld/elfutils
 {% endblock %}
 

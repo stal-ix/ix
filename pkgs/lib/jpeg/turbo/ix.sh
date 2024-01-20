@@ -6,7 +6,7 @@ sha:5b9bbca2b2a87c6632c821799438d358e27004ab528abf798533c15d50b39f82
 {% endblock %}
 
 {% block bld_tool %}
-bin/nasm
+bld/nasm
 {% endblock %}
 
 {% block lib_deps %}

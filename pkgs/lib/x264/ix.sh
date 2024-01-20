@@ -17,7 +17,7 @@ lib/c
 {% endblock %}
 
 {% block bld_tool %}
-bin/nasm
+bld/nasm
 bld/bash
 bld/elfutils
 {% endblock %}
