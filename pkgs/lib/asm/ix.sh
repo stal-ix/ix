@@ -2,7 +2,7 @@
 
 {% block fetch %}
 https://www.agner.org/optimize/asmlib.zip
-sha:b5af07ce1a094b6163be0ffcdd140ee54b7c86e364ca4d67d9e391b1d6dc49a8
+sha:481d6245051a2b82c06e393b782ba1dd1fe9724209ed9ba5ad5692728ef8da7a
 {% endblock %}
 
 {% block bld_tool %}
@@ -11,9 +11,9 @@ bin/nasm
 
 {% block unpack %}
 mkdir src; cd src
-extract 0 ${src}/*zip
+extract0 ${src}/*zip
 mkdir src; cd src
-extract 0 ../asmlibSrc.zip
+extract0 ../asmlibSrc.zip
 {% endblock %}
 
 {% block patch %}
@@ -21,10 +21,11 @@ find . -type f | while read l; do
     sed -e 's|?OVR_||g' -e 's|asm/||g' -i ${l}
 done
 {% endblock %}
-                                                                                                                                                                             memset64.asm
+
 {% block build %}
 (
 cat << EOF
+memset64.asm
 debugbreak64.asm
 cachesize64.asm
 divfixedi64.asm
