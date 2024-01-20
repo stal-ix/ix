@@ -1273,6 +1273,7 @@ https://github.com/qt/qtwayland/archive/refs/tags/v6.6.0.tar.gz
 https://github.com/qt/qtwayland/archive/refs/tags/v6.6.1.tar.gz
 https://github.com/quictls/openssl/archive/refs/tags/openssl-3.1.2-quic1.tar.gz
 https://github.com/quictls/openssl/archive/refs/tags/openssl-3.1.4-quic1.tar.gz
+https://github.com/raphamorim/rio/archive/refs/tags/v0.0.34.tar.gz
 https://github.com/redis/hiredis/archive/refs/tags/v1.2.0.tar.gz
 https://github.com/redis/redis/archive/refs/tags/7.2.0.tar.gz
 https://github.com/redis/redis/archive/refs/tags/7.2.2.tar.gz
@@ -1387,6 +1388,7 @@ https://github.com/telegramdesktop/tdesktop/releases/download/v4.14.4/tdesktop-4
 https://github.com/telegramdesktop/tdesktop/releases/download/v4.14.6/tdesktop-4.14.6-full.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v4.14.7/tdesktop-4.14.7-full.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v4.14.8/tdesktop-4.14.8-full.tar.gz
+https://github.com/telegramdesktop/tdesktop/releases/download/v4.14.9/tdesktop-4.14.9-full.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v4.8.10/tdesktop-4.8.10-full.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v4.8.12/tdesktop-4.8.12-full.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v4.9.0/tdesktop-4.9.0-full.tar.gz
@@ -1470,6 +1472,7 @@ https://github.com/weechat/weechat/archive/refs/tags/v4.1.1.tar.gz
 https://github.com/weechat/weechat/archive/refs/tags/v4.1.2.tar.gz
 https://github.com/westes/flex/archive/refs/tags/flex-2-5-10.tar.gz
 https://github.com/westes/flex/files/981163/flex-2.6.4.tar.gz
+https://github.com/wez/wezterm/archive/refs/tags/20230712-072601-f4abf8fd.tar.gz
 https://github.com/wfeldt/libx86emu/archive/refs/tags/3.5.tar.gz
 https://github.com/wireshark/wireshark/archive/refs/tags/v4.1.0.tar.gz
 https://github.com/wireshark/wireshark/archive/refs/tags/v4.2.0.tar.gz
@@ -1499,6 +1502,7 @@ https://github.com/yquake2/yquake2/archive/refs/tags/QUAKE2_8_20.tar.gz
 https://github.com/yquake2/yquake2/archive/refs/tags/QUAKE2_8_30.tar.gz
 https://github.com/yrutschle/sslh/archive/refs/tags/v2.0.0.tar.gz
 https://github.com/yrutschle/sslh/archive/refs/tags/v2.0.1.tar.gz
+https://github.com/zellij-org/zellij/archive/refs/tags/v0.39.2.tar.gz
 https://github.com/zlib-ng/zlib-ng/archive/refs/tags/2.1.3.tar.gz
 https://github.com/zlib-ng/zlib-ng/archive/refs/tags/2.1.4.tar.gz
 https://github.com/zlib-ng/zlib-ng/archive/refs/tags/2.1.5.tar.gz
