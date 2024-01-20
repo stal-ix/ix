@@ -11,5 +11,5 @@ aux/ca/bundle
 {% block build %}
 export SSL_CERT_FILE=${CA_BUNDLE}
 export CARGO_HOME=${PWD}/vendored
-cargo fetch
+cargo fetch --locked
 {% endblock %}

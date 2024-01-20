@@ -88,9 +88,9 @@ chmod +x cc c++
 {% block build %}
 export HOST_CXX=$(which c++)
 export HOST_CC=$(which cc)
-cargo build --offline --release {{ix.fix_list(cargo_options)}}
+cargo build --locked --offline --release {{ix.fix_list(cargo_options)}}
 {% endblock %}
 
 {% block install %}
-cargo install --offline --path .
+cargo install --locked --offline --release
 {% endblock %}
