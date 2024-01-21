@@ -35,6 +35,9 @@ EOF
 mkdir -p etc/pam.d
 
 cat << EOF > etc/pam.d/greetd
-auth       required     pam_unix.so
+auth       required   pam_unix.so
+account    required   pam_unix.so
+password   required   pam_unix.so
+session    required   pam_unix.so
 EOF
 {% endblock %}

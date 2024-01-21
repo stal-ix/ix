@@ -23,4 +23,5 @@ cp target/release/agreety ${out}/bin/
 find . -type f -name '*.rs' | while read l; do
     sed -e 's|/run/greet|/var/run/greetd1/greet|g' -i ${l}
 done
+sed -e 's|.*pam.*acct_mgmt.*||' -i greetd/src/session/worker.rs
 {% endblock %}
