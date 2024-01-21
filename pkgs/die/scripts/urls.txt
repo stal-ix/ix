@@ -1041,6 +1041,7 @@ https://github.com/libsdl-org/SDL_image/archive/refs/tags/release-2.8.0.tar.gz
 https://github.com/libsdl-org/SDL_image/archive/refs/tags/release-2.8.1.tar.gz
 https://github.com/libsdl-org/SDL_mixer/archive/refs/tags/release-2.6.3.tar.gz
 https://github.com/libsdl-org/SDL_ttf/archive/refs/tags/release-2.20.2.tar.gz
+https://github.com/libsdl-org/SDL_ttf/archive/refs/tags/release-2.22.0.tar.gz
 https://github.com/libsdl-org/sdl12-compat/archive/refs/tags/release-1.2.60.tar.gz
 https://github.com/libsdl-org/sdl12-compat/archive/refs/tags/release-1.2.64.tar.gz
 https://github.com/libsixel/libsixel/archive/refs/tags/v1.10.3.tar.gz
@@ -1139,6 +1140,8 @@ https://github.com/mpv-player/mpv/archive/refs/tags/v0.37.0.tar.gz
 https://github.com/msgpack/msgpack-c/archive/refs/tags/c-6.0.0.tar.gz
 https://github.com/msoos/minisat/archive/refs/tags/2.2.1.tar.gz
 https://github.com/muesli/duf/archive/refs/tags/v0.8.1.tar.gz
+https://github.com/museun/cargo-whatfeatures/archive/refs/tags/v0.9.9.tar.gz
+https://github.com/museun/cargo-whatfeatures/archive/refs/tags/v0.9.9.tar.gz\
 https://github.com/mvdan/sh/archive/refs/tags/v3.5.1.tar.gz
 https://github.com/namhyung/uftrace/archive/refs/tags/v0.12.tar.gz
 https://github.com/nemtrif/utfcpp/archive/refs/tags/v3.2.4.tar.gz
