@@ -258,6 +258,7 @@ https://dri.freedesktop.org/libdrm/libdrm-2.4.117.tar.xz
 https://dri.freedesktop.org/libdrm/libdrm-2.4.118.tar.xz
 https://dri.freedesktop.org/libdrm/libdrm-2.4.119.tar.xz
 https://dri.freedesktop.org/libdrm/libdrm-2.4.120.tar.xz
+https://evilpiepirate.org/bcachefs-tools/bcachefs-tools-1.4.1.tar.zst
 https://ffmpeg.org/releases/ffmpeg-5.1.2.tar.xz
 https://ffmpeg.org/releases/ffmpeg-6.0.1.tar.xz
 https://ffmpeg.org/releases/ffmpeg-6.0.tar.xz
@@ -404,6 +405,7 @@ https://git.kernel.org/pub/scm/libs/libcap/libcap.git/snapshot/libcap-cap/v1.2.6
 https://git.kernel.org/pub/scm/libs/libtrace/libtraceevent.git/snapshot/libtraceevent-1.7.3.tar.gz
 https://git.kernel.org/pub/scm/libs/libtrace/libtraceevent.git/snapshot/libtraceevent-1.8.0.tar.gz
 https://git.kernel.org/pub/scm/libs/libtrace/libtracefs.git/snapshot/libtracefs-1.7.0.tar.gz
+https://git.kernel.org/pub/scm/linux/kernel/git/dhowells/keyutils.git
 https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/snapshot/linux-firmware-20220209.tar.gz
 https://git.kernel.org/pub/scm/linux/kernel/git/jaegeuk/f2fs-tools.git/snapshot/f2fs-tools-1.16.0.tar.gz
 https://git.kernel.org/pub/scm/linux/kernel/git/jejb/efitools.git/snapshot/efitools-1.9.2.tar.gz
@@ -678,6 +680,7 @@ https://github.com/axboe/liburing/archive/refs/tags/liburing-2.2.tar.gz
 https://github.com/benhoyt/goawk/archive/refs/tags/v1.24.0.tar.gz
 https://github.com/benhoyt/goawk/archive/refs/tags/v1.25.0.tar.gz
 https://github.com/benhoyt/inih/archive/refs/tags/r57.tar.gz
+https://github.com/bensadeh/tailspin/archive/refs/tags/3.0.0.tar.gz
 https://github.com/besser82/libxcrypt/archive/refs/tags/v4.4.36.tar.gz
 https://github.com/bfgroup/b2/archive/refs/tags/4.9.2.tar.gz
 https://github.com/biojppm/rapidyaml/releases/download/v0.4.1/rapidyaml-0.4.1-src.tgz
@@ -743,6 +746,7 @@ https://github.com/curl/curl/archive/refs/tags/curl-8_5_0.tar.gz
 https://github.com/darkhz/bluetuith/archive/refs/tags/v0.1.7.tar.gz
 https://github.com/darktable-org/darktable/releases/download/release-4.0.0/darktable-4.0.0.tar.xz
 https://github.com/dboyan/wayland-tracer/archive/refs/tags/0.1.0.tar.gz
+https://github.com/dbry/WavPack/releases/download/5.6.0/wavpack-5.6.0.tar.xz
 https://github.com/dcantrell/bsdutils/archive/refs/tags/v13.1.tar.gz
 https://github.com/desktop-app/tg_owt/archive/1eab2d736a2fecce01686689b72e39ad8c314ebb.zip
 https://github.com/dimkr/loksh/releases/download/7.3/loksh-7.3.tar.xz
@@ -781,6 +785,7 @@ https://github.com/exfatprogs/exfatprogs/archive/refs/tags/1.2.2.tar.gz
 https://github.com/exfatprogs/exfatprogs/releases/download/1.2.0/exfatprogs-1.2.0.tar.xz
 https://github.com/extrawurst/gitui/archive/refs/tags/v0.24.3.tar.gz
 https://github.com/extrawurst/gitui/archive/refs/tags/v0.24.3.tar.gz\
+https://github.com/eza-community/eza/archive/refs/tags/v0.17.2.tar.gz
 https://github.com/facebook/zstd/archive/refs/tags/v1.5.5.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.1.2.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.2.0.tar.gz
@@ -1040,6 +1045,7 @@ https://github.com/libsdl-org/SDL_image/archive/refs/tags/release-2.6.2.tar.gz
 https://github.com/libsdl-org/SDL_image/archive/refs/tags/release-2.8.0.tar.gz
 https://github.com/libsdl-org/SDL_image/archive/refs/tags/release-2.8.1.tar.gz
 https://github.com/libsdl-org/SDL_mixer/archive/refs/tags/release-2.6.3.tar.gz
+https://github.com/libsdl-org/SDL_mixer/archive/refs/tags/release-2.8.0.tar.gz
 https://github.com/libsdl-org/SDL_ttf/archive/refs/tags/release-2.20.2.tar.gz
 https://github.com/libsdl-org/SDL_ttf/archive/refs/tags/release-2.22.0.tar.gz
 https://github.com/libsdl-org/sdl12-compat/archive/refs/tags/release-1.2.60.tar.gz
@@ -1056,6 +1062,7 @@ https://github.com/libusb/libusb/releases/download/v1.0.26/libusb-1.0.26.tar.bz2
 https://github.com/libuv/libuv/archive/refs/tags/v1.44.2.tar.gz
 https://github.com/libuv/libuv/archive/refs/tags/v1.46.0.tar.gz
 https://github.com/libuv/libuv/archive/refs/tags/v1.47.0.tar.gz
+https://github.com/libxmp/libxmp/archive/refs/tags/libxmp-4.6.0.tar.gz
 https://github.com/limine-bootloader/limine/releases/download/v5.20230801.0/limine-5.20230801.0.tar.xz
 https://github.com/linux-nvme/libnvme/archive/refs/tags/v1.5.tar.gz
 https://github.com/linux-nvme/libnvme/archive/refs/tags/v1.6.tar.gz

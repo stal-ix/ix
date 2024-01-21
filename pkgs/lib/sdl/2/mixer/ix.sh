@@ -1,16 +1,18 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/libsdl-org/SDL_mixer/archive/refs/tags/release-2.6.3.tar.gz
-sha:91dd065e9e63f499e5317350b110184b0ba96bc5f63c39b3a9939a136c40c035
+https://github.com/libsdl-org/SDL_mixer/archive/refs/tags/release-2.8.0.tar.gz
+sha:1146f00815c8ad22c3d48fbe31ae23dc5997936ebf30b4b3aeab6eab7ea1db3e
 {% endblock %}
 
 {% block lib_deps %}
 lib/c
+lib/xmp
 lib/sdl/2
 lib/mpg123
 lib/mikmod
 lib/modplug
+lib/wav/pack
 lib/xiph/ogg
 lib/xiph/flac
 lib/opus/file
