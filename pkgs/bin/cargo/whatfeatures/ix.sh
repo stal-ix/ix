@@ -5,7 +5,7 @@ https://github.com/museun/cargo-whatfeatures/archive/refs/tags/v0.9.9.tar.gz
 {% endblock %}
 
 {% block cargo_sha %}
-4ae37f6da413aba8ddaa03e30d7be4c7596d70be4050b5e523d917b2a6d0f6e6
+df5e98f33b2ee309138dcdffeaeba3086f706c465a5a0d676bf9b4ede11a52d2
 {% endblock %}
 
 {% block bld_libs %}

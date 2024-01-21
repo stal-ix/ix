@@ -42,8 +42,9 @@
 #bin/zellij
 #bin/git/ui
 #bin/coreutils/uutils
+#bin/rio
+bin/cargo/whatfeatures
 bin/resvg
-bin/rio
 bin/alacritty
 bin/bat
 bin/wl/maker

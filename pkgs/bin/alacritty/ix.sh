@@ -5,7 +5,7 @@ https://github.com/alacritty/alacritty/archive/refs/tags/v0.13.1.tar.gz
 {% endblock %}
 
 {% block cargo_sha %}
-307521e3450eb93400d4bf76738c507da4019161b5697602e0615a7521c774f5
+ea6f4f92925e488360673a9654f220293a990952013a36b9491a34c713845ac0
 {% endblock %}
 
 {% block bld_libs %}
