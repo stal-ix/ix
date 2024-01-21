@@ -13,4 +13,5 @@ export SSL_CERT_FILE=${CA_BUNDLE}
 export CARGO_HOME=${tmp}/crg
 mkdir -p .cargo
 cargo vendor vendored >> .cargo/config.toml
+find . -name '*.a' -type f -delete
 {% endblock %}

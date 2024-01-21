@@ -24,9 +24,10 @@ for svg, name in it_svg(fr):
 
     @functools.cache
     def f():
-        subprocess.check_call(['svg2png', svg, f'192x192'])
+        outf = os.path.basename(svg) + '.png'
+        subprocess.check_call(['render_icon', svg, outf])
 
-        return os.path.basename(svg) + '.png'
+        return outf
 
     for w in (16, 24, 32, 48, 64):
         out = f'{to}/{w}x{w}/{png}'

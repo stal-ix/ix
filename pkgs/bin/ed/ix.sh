@@ -1,8 +1,8 @@
 {% extends '//die/c/autohell.sh' %}
 
 {% block fetch %}
-https://ftp.gnu.org/gnu/ed/ed-1.19.tar.lz
-sha:ce2f2e5c424790aa96d09dacb93d9bbfdc0b7eb6249c9cb7538452e8ec77cd48
+https://ftp.gnu.org/gnu/ed/ed-1.20.tar.lz
+sha:c6030defe6ae172f1687906d7354054c75a6a9130af319d4e73c50a91959c5a6
 {% endblock %}
 
 {% block bld_libs %}

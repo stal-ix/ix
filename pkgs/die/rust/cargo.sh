@@ -6,6 +6,9 @@
 bld/rust
 bld/python
 bld/stable/unpack
+{% if help %}
+bin/cargo/whatfeatures
+{% endif %}
 {{super()}}
 {% endblock %}
 
@@ -33,6 +36,7 @@ export LDFLAGS="-L${LD_LIBRARY_PATH} ${LDFLAGS}"
 {% block setup %}
 export CARGO_BUILD_JOBS=8
 export CARGO_INSTALL_ROOT=${out}
+export CARGO_TARGET_DIR=${tmp}
 export CARGO_HOME=${PWD}/vendored
 {% endblock %}
 
@@ -82,15 +86,28 @@ cp cc c++
 chmod +x cc c++
 {% endblock %}
 
+{% block cargo_features %}
+{% endblock %}
+
 {% set cargo_options %}
 {% block cargo_options %}
 {% endblock %}
+{% if bin %}
+--bins
+{% endif %}
+{% if lib %}
+--lib
+{% endif %}
+{% if self.cargo_features().strip() %}
+--no-default-features
+--features {{','.join(ix.parse_list(self.cargo_features()))}}
+{% endif %}
 {% endset %}
 
 {% block build %}
+{% if help %}
+cargo whatfeatures --offline .
+exit 1
+{% endif %}
 cargo build --locked --offline --release {{ix.fix_list(cargo_options)}}
-{% endblock %}
-
-{% block install %}
-cargo install --locked --offline --path .
 {% endblock %}
