@@ -85,6 +85,12 @@ chmod +x cc c++
 {% set cargo_options %}
 {% block cargo_options %}
 {% endblock %}
+{% if bin %}
+--bins
+{% endif %}
+{% if lib %}
+--libs
+{% endif %}
 {% endset %}
 
 {% block build %}
@@ -93,8 +99,4 @@ cat Cargo.toml
 exit 1
 {% endif %}
 cargo build --locked --offline --release {{ix.fix_list(cargo_options)}}
-{% endblock %}
-
-{% block install %}
-cargo install --locked --offline --path .
 {% endblock %}
