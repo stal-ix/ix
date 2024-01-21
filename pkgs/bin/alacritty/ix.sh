@@ -35,6 +35,10 @@ bld/pkg/config
 cd alacritty
 {% endblock %}
 
+{% block cargo_features %}
+wayland
+{% endblock %}
+
 {% block install %}
 mkdir ${out}/bin
 cp ${tmp}/release/alacritty ${out}/bin/

@@ -96,7 +96,8 @@ chmod +x cc c++
 --lib
 {% endif %}
 {% if self.cargo_features().strip() %}
---features self.cargo_features().strip().replace('\n', ',')
+--no-default-features
+--features {{','.join(ix.parse_list(self.cargo_features()))}}
 {% endif %}
 {% endset %}
 
