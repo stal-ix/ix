@@ -12,3 +12,8 @@ a33a93bc470c602a858199873b2ee03240a86176fdf850b29d3c615976211cce
 lib/c
 lib/iconv
 {% endblock %}
+
+{% block install %}
+mkdir ${out}/bin
+cp ${tmp}/release/bat ${out}/bin/
+{% endblock %}

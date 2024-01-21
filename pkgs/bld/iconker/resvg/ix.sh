@@ -1,7 +1,7 @@
 {% extends '//die/proxy.sh' %}
 
 {% block run_deps %}
-bin/svgren/tool(render_w=192,render_h=192)
+bin/resvg
 {% endblock %}
 
 {% block install %}
