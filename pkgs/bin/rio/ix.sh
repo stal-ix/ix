@@ -5,7 +5,7 @@ https://github.com/raphamorim/rio/archive/refs/tags/v0.0.34.tar.gz
 {% endblock %}
 
 {% block cargo_sha %}
-51e7401c33baff1c0ade320d8ab413fdc03a678cb43e215b4fa811cf460b2da7
+cc2309dc9694b6b2b0b9c583e49ede0b3a26ad33c60bdfa57424b07ce06aae81
 {% endblock %}
 
 {% block bld_libs %}
@@ -32,5 +32,5 @@ bld/pkg/config
 
 {% block install %}
 mkdir ${out}/bin
-cp target/release/rio ${out}/bin/
+cp ${tmp}/release/rio ${out}/bin/
 {% endblock %}
