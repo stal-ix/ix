@@ -88,6 +88,10 @@ chmod +x cc c++
 {% endset %}
 
 {% block build %}
+{% if help %}
+cat Cargo.toml
+exit 1
+{% endif %}
 cargo build --locked --offline --release {{ix.fix_list(cargo_options)}}
 {% endblock %}
 
