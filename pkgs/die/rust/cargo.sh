@@ -6,6 +6,9 @@
 bld/rust
 bld/python
 bld/stable/unpack
+{% if help %}
+bin/cargo/whatfeatures
+{% endif %}
 {{super()}}
 {% endblock %}
 
@@ -103,7 +106,7 @@ chmod +x cc c++
 
 {% block build %}
 {% if help %}
-cat Cargo.toml
+cargo whatfeatures --offline .
 exit 1
 {% endif %}
 cargo build --locked --offline --release {{ix.fix_list(cargo_options)}}
