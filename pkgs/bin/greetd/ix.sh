@@ -5,7 +5,7 @@ https://git.sr.ht/~kennylevinsen/greetd/archive/0.9.0.tar.gz
 {% endblock %}
 
 {% block cargo_sha %}
-2dc8a5e4e526a535a44c8e513aea2c62b09ca3e2c6eaf082238388288d7f7eaf
+1bc314b525f56d8ebc62d9e9d25c95876adf3f65390db33b551e5b2482c464a7
 {% endblock %}
 
 {% block bld_libs %}
