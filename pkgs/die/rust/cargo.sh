@@ -33,6 +33,7 @@ export LDFLAGS="-L${LD_LIBRARY_PATH} ${LDFLAGS}"
 {% block setup %}
 export CARGO_BUILD_JOBS=8
 export CARGO_INSTALL_ROOT=${out}
+export CARGO_TARGET_DIR=${tmp}
 export CARGO_HOME=${PWD}/vendored
 {% endblock %}
 
@@ -82,6 +83,9 @@ cp cc c++
 chmod +x cc c++
 {% endblock %}
 
+{% block cargo_features %}
+{% endblock %}
+
 {% set cargo_options %}
 {% block cargo_options %}
 {% endblock %}
@@ -89,7 +93,10 @@ chmod +x cc c++
 --bins
 {% endif %}
 {% if lib %}
---libs
+--lib
+{% endif %}
+{% if self.cargo_features().strip() %}
+--features self.cargo_features().strip().replace('\n', ',')
 {% endif %}
 {% endset %}
 
