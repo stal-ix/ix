@@ -10,10 +10,17 @@ https://git.sr.ht/~kennylevinsen/greetd/archive/0.9.0.tar.gz
 
 {% block bld_libs %}
 lib/pam
+lib/pam/unix
 {% endblock %}
 
 {% block install %}
 mkdir ${out}/bin
 cp target/release/greetd ${out}/bin/
 cp target/release/agreety ${out}/bin/
+{% endblock %}
+
+{% block patch %}
+find . -type f -name '*.rs' | while read l; do
+    sed -e 's|/run/greet|/var/run/greetd1/greet|g' -i ${l}
+done
 {% endblock %}
