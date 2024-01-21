@@ -10,6 +10,7 @@ aux/ca/bundle
 
 {% block build %}
 export SSL_CERT_FILE=${CA_BUNDLE}
-export CARGO_HOME=${PWD}/vendored
-cargo fetch --locked
+export CARGO_HOME=${tmp}/crg
+mkdir -p .cargo
+cargo vendor vendored >> .cargo/config.toml
 {% endblock %}
