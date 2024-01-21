@@ -30,7 +30,12 @@ lib/xkb/common/dl
 bld/pkg/config
 {% endblock %}
 
+{% block unpack %}
+{{super()}}
+cd alacritty
+{% endblock %}
+
 {% block install %}
 mkdir ${out}/bin
-cp target/release/alacritty ${out}/bin/
+cp ${tmp}/release/alacritty ${out}/bin/
 {% endblock %}
