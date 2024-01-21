@@ -3,5 +3,6 @@
 {% block lib_deps %}
 lib/build/opt
 lib/build/type
+lib/build/noexec
 lib/build/sanitize
 {% endblock %}
