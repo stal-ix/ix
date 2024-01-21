@@ -1,5 +1,7 @@
 {% extends '//die/c/ix.sh' %}
 
+{% block task_pool %}full{% endblock %}
+
 {% block std_box %}
 bld/rust
 bld/python
@@ -86,11 +88,9 @@ chmod +x cc c++
 {% endset %}
 
 {% block build %}
-export HOST_CXX=$(which c++)
-export HOST_CC=$(which cc)
-cargo build --offline --release {{ix.fix_list(cargo_options)}}
+cargo build --locked --offline --release {{ix.fix_list(cargo_options)}}
 {% endblock %}
 
 {% block install %}
-cargo install --offline --path .
+cargo install --locked --offline --path .
 {% endblock %}

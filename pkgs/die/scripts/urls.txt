@@ -129,6 +129,7 @@ https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.6.7.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.6.8.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.6.9.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.6.tar.xz
+https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.7.1.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.7.tar.xz
 https://cmocka.org/files/1.1/cmocka-1.1.7.tar.xz
 https://codeberg.org/dnkl/fcft/archive/2.5.0.tar.gz
@@ -581,6 +582,7 @@ https://github.com/NixOS/nix/archive/refs/tags/2.17.0.tar.gz
 https://github.com/NixOS/nix/archive/refs/tags/2.18.0.tar.gz
 https://github.com/NixOS/nix/archive/refs/tags/2.19.1.tar.gz
 https://github.com/NixOS/nix/archive/refs/tags/2.19.2.tar.gz
+https://github.com/NixOS/nix/archive/refs/tags/2.19.3.tar.gz
 https://github.com/NixOS/patchelf/archive/refs/tags/0.18.0.tar.gz
 https://github.com/Novum/vkQuake/archive/refs/tags/1.30.1.tar.gz
 https://github.com/Old-Man-Programmer/tree/archive/refs/tags/2.1.1.tar.gz
@@ -786,6 +788,7 @@ https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.3.4.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.4.0.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.5.0.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.6.0.tar.gz
+https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.6.1.tar.gz
 https://github.com/fastfloat/fast_float/archive/refs/tags/v3.8.1.tar.gz
 https://github.com/fastfloat/fast_float/archive/refs/tags/v5.2.0.tar.gz
 https://github.com/fenrus75/powertop/archive/refs/tags/v2.15.tar.gz
@@ -1465,11 +1468,13 @@ https://github.com/vstakhov/libucl/archive/refs/tags/0.8.2.tar.gz
 https://github.com/warmcat/libwebsockets/archive/refs/tags/v4.3.2.tar.gz
 https://github.com/wasmx/fizzy/archive/refs/tags/v0.8.0.tar.gz
 https://github.com/webmproject/libvpx/archive/refs/tags/v1.13.0.tar.gz
+https://github.com/webmproject/libvpx/archive/refs/tags/v1.14.0.tar.gz
 https://github.com/weechat/weechat/archive/refs/tags/v4.0.4.tar.gz
 https://github.com/weechat/weechat/archive/refs/tags/v4.0.5.tar.gz
 https://github.com/weechat/weechat/archive/refs/tags/v4.1.0.tar.gz
 https://github.com/weechat/weechat/archive/refs/tags/v4.1.1.tar.gz
 https://github.com/weechat/weechat/archive/refs/tags/v4.1.2.tar.gz
+https://github.com/weechat/weechat/archive/refs/tags/v4.1.3.tar.gz
 https://github.com/westes/flex/archive/refs/tags/flex-2-5-10.tar.gz
 https://github.com/westes/flex/files/981163/flex-2.6.4.tar.gz
 https://github.com/wez/wezterm/archive/refs/tags/20230712-072601-f4abf8fd.tar.gz
@@ -1760,6 +1765,7 @@ https://static.rust-lang.org/dist/rustc-1.54.0-src.tar.gz
 https://storage.googleapis.com/aom-releases/libaom-3.7.0.tar.gz
 https://storage.googleapis.com/aom-releases/libaom-3.7.1.tar.gz
 https://storage.googleapis.com/aom-releases/libaom-3.8.0.tar.gz
+https://storage.googleapis.com/aom-releases/libaom-3.8.1.tar.gz
 https://storage.googleapis.com/downloads.webmproject.org/releases/webp/libwebp-1.3.1.tar.gz
 https://storage.googleapis.com/downloads.webmproject.org/releases/webp/libwebp-1.3.2.tar.gz
 https://strace.io/files/6.5/strace-6.5.tar.xz
@@ -1855,6 +1861,7 @@ https://www.mpg123.org/download/mpg123-1.32.2.tar.bz2
 https://www.mpg123.org/download/mpg123-1.32.3.tar.bz2
 https://www.mpg123.org/download/mpg123-1.32.4.tar.bz2
 https://www.nano-editor.org/dist/v7/nano-7.2.tar.xz
+https://www.nasm.us/pub/nasm/releasebuilds/2.16.01/nasm-2.16.01.tar.gz
 https://www.openldap.org/software/download/OpenLDAP/openldap-release/openldap-2.6.5.tgz
 https://www.openssl.org/source/old/1.1.1/openssl-1.1.1j.tar.gz
 https://www.prevanders.net/libdwarf-0.6.0.tar.xz

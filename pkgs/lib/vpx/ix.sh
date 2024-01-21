@@ -1,8 +1,8 @@
 {% extends '//die/c/make.sh' %}
 
 {% block fetch %}
-https://github.com/webmproject/libvpx/archive/refs/tags/v1.13.0.tar.gz
-sha:cb2a393c9c1fae7aba76b950bb0ad393ba105409fe1a147ccd61b0aaa1501066
+https://github.com/webmproject/libvpx/archive/refs/tags/v1.14.0.tar.gz
+sha:5f21d2db27071c8a46f1725928a10227ae45c5cd1cad3727e4aafbe476e321fa
 {% endblock %}
 
 {% block lib_deps %}

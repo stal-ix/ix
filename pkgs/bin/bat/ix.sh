@@ -5,7 +5,7 @@ https://github.com/sharkdp/bat/archive/refs/tags/v0.24.0.tar.gz
 {% endblock %}
 
 {% block cargo_sha %}
-a62f2e98f70b352a32809dbfe8d0ecb42d9e83d9912eebd7f7d2537597cf04fb
+a33a93bc470c602a858199873b2ee03240a86176fdf850b29d3c615976211cce
 {% endblock %}
 
 {% block bld_libs %}

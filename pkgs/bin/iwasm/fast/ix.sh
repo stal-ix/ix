@@ -2,7 +2,7 @@
 
 {% block bld_libs %}
 {{super()}}
-lib/asmjit
+lib/asm/jit
 {% endblock %}
 
 {% block cmake_flags %}

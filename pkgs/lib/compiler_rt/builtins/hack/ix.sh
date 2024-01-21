@@ -26,5 +26,6 @@ ar qs libcompiler_rt.a *.o
 {% endblock %}
 
 {% block install %}
-mkdir ${out}/lib && cp libcompiler_rt.a ${out}/lib/
+mkdir ${out}/lib
+cp libcompiler_rt.a ${out}/lib/
 {% endblock %}
