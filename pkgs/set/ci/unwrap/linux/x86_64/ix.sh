@@ -40,11 +40,12 @@
 
 {% block run_deps %}
 #bin/zellij
-#bin/rio
 #bin/git/ui
 #bin/coreutils/uutils
-#bin/alacritty
-#bin/bat
+bin/resvg
+bin/rio
+bin/alacritty
+bin/bat
 bin/wl/maker
 bin/kati
 bin/tty/plot
