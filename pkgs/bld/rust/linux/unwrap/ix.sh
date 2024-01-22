@@ -17,6 +17,7 @@ done
 {% endblock %}
 
 {% block postinstall %}
+rm -rf ${out}/lib/rustlib/x86_64-unknown-linux-musl/bin
 find ${out} -type f -executable | while read l; do
     echo "patch ${l}"
     patchelf --set-interpreter ${LDSO} ${l} || true
