@@ -10,7 +10,18 @@ https://github.com/sharkdp/bat/archive/refs/tags/v0.24.0.tar.gz
 
 {% block bld_libs %}
 lib/c
+lib/git/2
 lib/iconv
+lib/oniguruma
+{% endblock %}
+
+{% block patch %}
+{{super()}}
+find vendored -type f -name build.rs | grep 'sys/' | while read l; do
+    echo ${l}
+    echo 'fn main() {}' > ${l}
+done
+find vendored -name .cargo-checksum.json -exec sed -i.uncheck -e 's/"files":{[^}]*}/"files":{ }/' '{}' '+'
 {% endblock %}
 
 {% block install %}
