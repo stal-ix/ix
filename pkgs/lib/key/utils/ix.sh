@@ -25,6 +25,10 @@ shut_up
 wrap_cc
 {% endblock %}
 
+{% block bld_tool %}
+bld/fake(tool_name=rpmspec)
+{% endblock %}
+
 {% block make_flags %}
 LIBDIR=${out}/lib
 INCLUDEDIR=${out}/include
@@ -32,4 +36,6 @@ SBINDIR=${out}/bin
 SHAREDIR=${out}/share
 MANDIR=${out}/man
 USRLIBDIR=${out}/lib
+BINDIR=${out}/bin
+ETCDIR=${out}/etc
 {% endblock %}
