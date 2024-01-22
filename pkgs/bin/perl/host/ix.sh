@@ -34,7 +34,8 @@ cat << EOF >> cpan/Compress-Raw-Zlib/config.in
 BUILD_ZLIB = False
 EOF
 
-sed -e "s|/usr/bin/||g"          \
+sed -e 's|/lib/libc|/xxx/libc|g' \
+    -e "s|/usr/bin/||g"          \
     -e "s|/usr/|/nowhere/|g"     \
     -e "s|/bin/sh|$(which sh)|g" \
     -i Configure
