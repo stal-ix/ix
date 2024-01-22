@@ -5,6 +5,7 @@
 {% block std_box %}
 bld/rust
 bld/python
+bld/rust/devendor
 bld/stable/unpack
 {% if help %}
 bin/cargo/whatfeatures
@@ -13,9 +14,9 @@ bin/cargo/whatfeatures
 {% endblock %}
 
 {% block unpack %}
-mkdir src
-cd src
+mkdir src; cd src
 stable_unpack ${src}/*lz4
+rust_devendor
 {% endblock %}
 
 {% block cargo_refine %}

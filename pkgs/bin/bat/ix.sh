@@ -11,6 +11,8 @@ https://github.com/sharkdp/bat/archive/refs/tags/v0.24.0.tar.gz
 {% block bld_libs %}
 lib/c
 lib/iconv
+lib/git/2
+lib/oniguruma
 {% endblock %}
 
 {% block install %}
