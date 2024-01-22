@@ -28,10 +28,13 @@ bld/pkg/config
 
 {% block cpp_defines %}
 pwritev2=pwritev
+crc32c=crc32c_bcachefs
 {% endblock %}
 
 {% block make_flags %}
 NO_RUST=1
+ROOT_SBINDIR=${out}/bin
+INITRAMFS_DIR=${out}/share/initramfs-tools
 PKGCONFIG_UDEVDIR=${out}/share/udev
 {% endblock %}
 

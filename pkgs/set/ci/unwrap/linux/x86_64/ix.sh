@@ -43,6 +43,7 @@
 #bin/git/ui
 #bin/coreutils/uutils
 #bin/rio
+bin/bcachefs/tools
 bin/cargo/whatfeatures
 bin/resvg
 bin/alacritty
