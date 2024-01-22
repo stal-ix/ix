@@ -17,6 +17,7 @@ lib/kernel
 lib/sodium
 lib/key/utils
 lib/linux/util
+bin/bcachefs/tools/shim
 lib/shim/fake/pkg(pkg_name=udev,pkg_ver=1)
 {% endblock %}
 
@@ -27,10 +28,13 @@ bld/pkg/config
 
 {% block cpp_defines %}
 pwritev2=pwritev
+crc32c=crc32c_bcachefs
 {% endblock %}
 
 {% block make_flags %}
 NO_RUST=1
+ROOT_SBINDIR=${out}/bin
+INITRAMFS_DIR=${out}/share/initramfs-tools
 PKGCONFIG_UDEVDIR=${out}/share/udev
 {% endblock %}
 

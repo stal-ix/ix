@@ -9,6 +9,11 @@ lib/build
 lib/kernel
 {% endblock %}
 
+{% block host_libs %}
+{{super()}}
+lib/build/muldefs
+{% endblock %}
+
 {% block bld_tool %}
 bld/python
 {% endblock %}
