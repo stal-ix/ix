@@ -13,13 +13,3 @@ lib/c
 lib/iconv
 lib/openssl
 {% endblock %}
-
-{% block bld_tool %}
-{{super()}}
-bld/pkg/config
-{% endblock %}
-
-{% block setup %}
-{{super()}}
-export OPENSSL_NO_VENDOR=yes
-{% endblock %}

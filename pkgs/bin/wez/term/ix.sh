@@ -26,10 +26,6 @@ lib/mesa/egl/dl
 lib/xkb/common/dl
 {% endblock %}
 
-{% block bld_tool %}
-bld/pkg/config
-{% endblock %}
-
 {% block install %}
 mkdir ${out}/bin
 cp target/release/wezterm ${out}/bin/

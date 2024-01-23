@@ -5,23 +5,15 @@ https://github.com/zellij-org/zellij/archive/refs/tags/v0.39.2.tar.gz
 {% endblock %}
 
 {% block cargo_sha %}
-c9762f0356a732f09ebb6eea6784c497039bc79d4badf05f53aa3e86ea860ecf
+3bd7637d6256e3de68ce5018e8702702da0bed4a43a772dd0f6f36f7c0b6b84b
 {% endblock %}
 
 {% block bld_libs %}
+lib/curl
 lib/openssl
-{% endblock %}
-
-{% block bld_tool %}
-bld/pkg/config
-{% endblock %}
-
-{% block setup %}
-{{super()}}
-export OPENSSL_NO_VENDOR=yes
 {% endblock %}
 
 {% block install %}
 mkdir ${out}/bin
-cp target/release/zellij ${out}/bin/
+cp ${tmp}/release/zellij ${out}/bin/
 {% endblock %}

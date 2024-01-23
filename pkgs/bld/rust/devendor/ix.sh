@@ -1,11 +1,6 @@
-{% extends '//die/proxy.sh' %}
+{% extends '//die/hub.sh' %}
 
-{% block install %}
-cd ${out}; mkdir bin; cd bin
-
-base64 -d << EOF > rust_devendor
-{% include 'devendor.sh/base64' %}
-EOF
-
-chmod +x *
+{% block run_deps %}
+bld/devendor
+bld/rust/devendor/scripts
 {% endblock %}
