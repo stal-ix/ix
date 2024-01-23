@@ -13,4 +13,12 @@ mkdir -m 0700 -p ${XDG_RUNTIME_DIR}
 
 cd ${HOME}
 
-exec ./.session
+if command -v user-session; then
+    exec user-session
+fi
+
+if test -f .session; then
+    exec ./.session
+fi
+
+exec /bin/sh
