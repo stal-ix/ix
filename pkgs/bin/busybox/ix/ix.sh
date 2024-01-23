@@ -9,6 +9,7 @@ CONFIG_SHA256_HWACCEL=n
 {% block patch %}
 {{super()}}
 sed -e 's|"syslogd"|"syslogd/syslogd"|' -i sysklogd/syslogd.c
+sed -e 's|exec_login_shell.*|exec_login_shell("/bin/session");|' -i loginutils/login.c
 {% endblock %}
 
 {% block install %}
