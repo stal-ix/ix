@@ -11,6 +11,9 @@ def ok(l):
     if 'readline' in os.path.basename(l):
         return True
 
+    if l[-1] == '\\':
+        return False
+
     if '.' not in os.path.basename(l):
         return False
 
