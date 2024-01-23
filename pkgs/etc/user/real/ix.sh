@@ -1,5 +1,5 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
-etc/user/real(userid=10002)
+etc/user(login_shell=/bin/session)
 {% endblock %}
