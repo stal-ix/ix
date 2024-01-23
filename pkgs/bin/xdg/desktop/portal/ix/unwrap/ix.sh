@@ -14,7 +14,15 @@ c2eeab5a587b2d8ea49df6b2941655c3ee04b6bbcd60259045f71352464a0d0a
 
 {% block install %}
 mkdir ${out}/bin
-cp portal ${out}/bin/xdg-portal-ix
+cp portal ${out}/bin/xdg-portal-ix-bin
+
+cat << EOF > ${out}/bin/xdg-portal-ix
+#!/bin/sh
+export WAYLAND_DISPLAY=wayland-1
+exec xdg-portal-ix-bin
+EOF
+
+chmod +x ${out}/bin/xdg-portal-ix
 
 mkdir -p ${out}/share/dbus-1/services
 
