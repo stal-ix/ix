@@ -12,10 +12,6 @@ df5e98f33b2ee309138dcdffeaeba3086f706c465a5a0d676bf9b4ede11a52d2
 lib/openssl
 {% endblock %}
 
-{% block bld_tool %}
-bld/pkg/config
-{% endblock %}
-
 {% block install %}
 mkdir ${out}/bin
 cp ${tmp}/release/cargo-whatfeatures ${out}/bin/

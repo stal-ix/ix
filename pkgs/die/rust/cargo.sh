@@ -5,6 +5,7 @@
 {% block std_box %}
 bld/rust
 bld/python
+bld/pkg/config
 bld/rust/devendor
 bld/stable/unpack
 {% if help %}
@@ -16,7 +17,7 @@ bin/cargo/whatfeatures
 {% block unpack %}
 mkdir src; cd src
 stable_unpack ${src}/*lz4
-rust_devendor
+rust_devendor vendored
 {% endblock %}
 
 {% block cargo_refine %}
@@ -39,6 +40,7 @@ export CARGO_BUILD_JOBS=8
 export CARGO_INSTALL_ROOT=${out}
 export CARGO_TARGET_DIR=${tmp}
 export CARGO_HOME=${PWD}/vendored
+export OPENSSL_NO_VENDOR=yes
 {% endblock %}
 
 {% block setup_tools %}

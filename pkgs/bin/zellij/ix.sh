@@ -13,15 +13,6 @@ lib/curl
 lib/openssl
 {% endblock %}
 
-{% block bld_tool %}
-bld/pkg/config
-{% endblock %}
-
-{% block setup %}
-{{super()}}
-export OPENSSL_NO_VENDOR=yes
-{% endblock %}
-
 {% block install %}
 mkdir ${out}/bin
 cp ${tmp}/release/zellij ${out}/bin/
