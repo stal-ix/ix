@@ -626,6 +626,8 @@ https://github.com/WebAssembly/binaryen/archive/refs/tags/version_115.tar.gz
 https://github.com/WebAssembly/binaryen/archive/refs/tags/version_116.tar.gz
 https://github.com/WebPlatformForEmbedded/libwpe/archive/refs/tags/1.12.3.tar.gz
 https://github.com/WerWolv/ImHex/releases/download/v1.19.1/Full.Sources.tar.gz
+https://github.com/YaLTeR/niri/archive/refs/tags/v0.1.0-beta.1.tar.gz
+https://github.com/YaLTeR/niri/archive/refs/tags/v0.1.0-beta.1.tar.gz\
 https://github.com/Z3Prover/z3/archive/refs/tags/z3-4.12.2.tar.gz
 https://github.com/Z3Prover/z3/archive/refs/tags/z3-4.12.3.tar.gz
 https://github.com/Z3Prover/z3/archive/refs/tags/z3-4.12.4.tar.gz
@@ -1322,6 +1324,7 @@ https://github.com/rockdaboot/libpsl/releases/download/0.21.5/libpsl-0.21.5.tar.
 https://github.com/rpodgorny/unionfs-fuse/archive/refs/tags/v3.4.tar.gz
 https://github.com/rrthomas/libpaper/releases/download/v2.1.1/libpaper-2.1.1.tar.gz
 https://github.com/rrthomas/libpaper/releases/download/v2.1.2/libpaper-2.1.2.tar.gz
+https://github.com/rrthomas/libpaper/releases/download/v2.1.3/libpaper-2.1.3.tar.gz
 https://github.com/rs/curlie/archive/refs/tags/v1.6.9.tar.gz
 https://github.com/rsms/inter/releases/download/v3.19/Inter-3.19.zip
 https://github.com/rsteube/carapace-bin/archive/refs/tags/v0.28.3.tar.gz
@@ -1500,6 +1503,7 @@ https://github.com/weechat/weechat/archive/refs/tags/v4.1.1.tar.gz
 https://github.com/weechat/weechat/archive/refs/tags/v4.1.2.tar.gz
 https://github.com/weechat/weechat/archive/refs/tags/v4.1.3.tar.gz
 https://github.com/weechat/weechat/archive/refs/tags/v4.2.0.tar.gz
+https://github.com/weechat/weechat/archive/refs/tags/v4.2.1.tar.gz
 https://github.com/westes/flex/archive/refs/tags/flex-2-5-10.tar.gz
 https://github.com/westes/flex/files/981163/flex-2.6.4.tar.gz
 https://github.com/wez/wezterm/archive/refs/tags/20230712-072601-f4abf8fd.tar.gz
