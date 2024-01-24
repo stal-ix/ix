@@ -1,4 +1,4 @@
-#!/usr/bin/env -S /bin/subreaper /bin/sh
+#!/bin/subreaper /bin/sh
 
 unset LANG
 
