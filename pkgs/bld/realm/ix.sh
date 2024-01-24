@@ -1,7 +1,7 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
-{% if materialize %}
+{% if target_materialize %}
 bld/realm/materialize
 {% else %}
 bld/realm/symlink
