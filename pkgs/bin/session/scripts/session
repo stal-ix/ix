@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env -S /bin/subreaper /bin/sh
 
 unset LANG
 
@@ -14,11 +14,11 @@ mkdir -m 0700 -p ${XDG_RUNTIME_DIR}
 cd ${HOME}
 
 if command -v user-session; then
-    exec subreaper user-session
+    exec user-session
 fi
 
 if test -f .session; then
-    exec subreaper ./.session
+    exec ./.session
 fi
 
-exec subreaper /bin/sh
+exec /bin/sh
