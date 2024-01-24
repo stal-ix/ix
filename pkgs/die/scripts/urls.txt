@@ -502,6 +502,7 @@ https://github.com/GNOME/libshumate/archive/refs/tags/1.1.0.tar.gz
 https://github.com/GNOME/libshumate/archive/refs/tags/1.1.1.tar.gz
 https://github.com/GNOME/libshumate/archive/refs/tags/1.1.2.tar.gz
 https://github.com/GStreamer/orc/archive/refs/tags/0.4.34.tar.gz
+https://github.com/GStreamer/orc/archive/refs/tags/0.4.35.tar.gz
 https://github.com/Genivia/ugrep/archive/refs/tags/v4.0.5.tar.gz
 https://github.com/Genivia/ugrep/archive/refs/tags/v4.1.0.tar.gz
 https://github.com/Genivia/ugrep/archive/refs/tags/v4.2.0.tar.gz
@@ -1389,6 +1390,7 @@ https://github.com/strukturag/libheif/archive/refs/tags/v1.17.3.tar.gz
 https://github.com/strukturag/libheif/archive/refs/tags/v1.17.4.tar.gz
 https://github.com/strukturag/libheif/archive/refs/tags/v1.17.5.tar.gz
 https://github.com/strukturag/libheif/archive/refs/tags/v1.17.6.tar.gz
+https://github.com/svenstaro/miniserve/archive/refs/tags/v0.26.0.tar.gz
 https://github.com/swaywm/sway/archive/refs/tags/1.8.1.tar.gz
 https://github.com/swaywm/swaybg/archive/refs/tags/v1.2.0.tar.gz
 https://github.com/swaywm/swayidle/archive/refs/tags/1.8.0.tar.gz
