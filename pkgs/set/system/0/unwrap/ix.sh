@@ -20,11 +20,7 @@ bin/unbound/runit
 bin/dnsmasq/runit
 {% endif %}
 
-{% if mingetty %}
-bin/mingetty/runit
-{% else %}
-bin/emptty/runit
-{% endif %}
+bin/dm
 
 bin/sched/fstrim(delay=1000)
 bin/sched/builddir(delay=1000)
