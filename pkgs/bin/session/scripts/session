@@ -14,11 +14,11 @@ mkdir -m 0700 -p ${XDG_RUNTIME_DIR}
 cd ${HOME}
 
 if command -v user-session; then
-    exec user-session
+    exec subreaper user-session
 fi
 
 if test -f .session; then
-    exec ./.session
+    exec subreaper ./.session
 fi
 
-exec /bin/sh
+exec subreaper /bin/sh
