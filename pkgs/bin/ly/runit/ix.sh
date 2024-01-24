@@ -4,5 +4,6 @@
 bin/runsrv
 bin/fixtty
 bin/ly/sys
+bin/ly/scripts
 bin/ly/runit/scripts
 {% endblock %}
