@@ -1,8 +1,8 @@
 {% extends '//die/c/make.sh' %}
 
 {% block fetch %}
-https://waterlan.home.xs4all.nl/dos2unix/dos2unix-7.5.1.tar.gz
-sha:da07788bb2e029b0d63f6471d166f68528acd8da2cf14823a188e8a9d5c1fc15
+https://waterlan.home.xs4all.nl/dos2unix/dos2unix-7.5.2.tar.gz
+sha:264742446608442eb48f96c20af6da303cb3a92b364e72cb7e24f88239c4bf3a
 {% endblock %}
 
 {% block bld_libs %}

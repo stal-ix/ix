@@ -33,6 +33,7 @@ bin/sched/staleprocs(delay=10)
 
 etc
 
+bin/session
 bin/bsdutils/env
 bin/busybox
 bin/busybox/syslogd
