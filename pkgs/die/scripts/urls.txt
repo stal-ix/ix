@@ -985,6 +985,7 @@ https://github.com/junegunn/fzf/archive/refs/tags/0.43.0.tar.gz
 https://github.com/junegunn/fzf/archive/refs/tags/0.44.0.tar.gz
 https://github.com/junegunn/fzf/archive/refs/tags/0.44.1.tar.gz
 https://github.com/junegunn/fzf/archive/refs/tags/0.45.0.tar.gz
+https://github.com/junegunn/fzf/archive/refs/tags/0.46.0.tar.gz
 https://github.com/kaniini/libucontext/archive/refs/tags/libucontext-1.2.tar.gz
 https://github.com/kcat/openal-soft/archive/refs/tags/1.23.1.tar.gz
 https://github.com/kkos/oniguruma/archive/refs/tags/v6.9.8.tar.gz
@@ -1802,6 +1803,7 @@ https://tukaani.org/xz/xz-5.4.5.tar.xz
 https://w1.fi/releases/wpa_supplicant-2.10.tar.gz
 https://waf.io/waf-2.0.26.tar.bz2
 https://waterlan.home.xs4all.nl/dos2unix/dos2unix-7.5.1.tar.gz
+https://waterlan.home.xs4all.nl/dos2unix/dos2unix-7.5.2.tar.gz
 https://webkitgtk.org/releases/webkitgtk-2.41.91.tar.xz
 https://webkitgtk.org/releases/webkitgtk-2.42.0.tar.xz
 https://webkitgtk.org/releases/webkitgtk-2.42.1.tar.xz
