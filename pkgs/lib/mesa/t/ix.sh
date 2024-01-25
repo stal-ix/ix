@@ -1,8 +1,8 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://mesa.freedesktop.org/archive/mesa-23.3.3.tar.xz
-sha:518307c0057fa3cee8b58df78be431d4df5aafa7edc60d09278b2d7a0a80f3b4
+https://mesa.freedesktop.org/archive/mesa-23.3.4.tar.xz
+sha:df12d765be4650fe532860b18aa18e6da1d0b07d1a21dfdfe04660e6b7bac39a
 {% endblock %}
 
 {% block lib_deps %}
