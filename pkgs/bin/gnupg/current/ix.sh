@@ -1,6 +1,6 @@
 {% extends '//bin/gnupg/lts/ix.sh' %}
 
 {% block fetch %}
-https://www.gnupg.org/ftp/gcrypt/gnupg/gnupg-2.4.3.tar.bz2
-sha:a271ae6d732f6f4d80c258ad9ee88dd9c94c8fdc33c3e45328c4d7c126bd219d
+https://www.gnupg.org/ftp/gcrypt/gnupg/gnupg-2.4.4.tar.bz2
+sha:67ebe016ca90fa7688ce67a387ebd82c6261e95897db7b23df24ff335be85bc6
 {% endblock %}
