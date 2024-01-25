@@ -41,6 +41,7 @@
 {% block run_deps %}
 #bin/zellij
 #bin/rio
+bin/eza
 bin/git/ui
 bin/coreutils/uutils
 bin/mini/serve
