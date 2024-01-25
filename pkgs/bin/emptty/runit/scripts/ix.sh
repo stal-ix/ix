@@ -15,7 +15,7 @@ EOF
 cat << EOF > daemon
 #!/bin/sh
 fixtty /dev/tty{{slot}}
-exec subreaper openvt -c {{slot}} -w emptty --config ${PWD}/emptty.conf
+exec openvt -c {{slot}} -w emptty --config ${PWD}/emptty.conf
 EOF
 
 cat << EOF > run

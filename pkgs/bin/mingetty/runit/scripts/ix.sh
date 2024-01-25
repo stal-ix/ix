@@ -6,7 +6,7 @@ cd ${out}; mkdir -p etc/services/mingetty{{slot}}; cd etc/services/mingetty{{slo
 cat << EOF > daemon
 #!/bin/sh
 fixtty /dev/tty{{slot}}
-exec subreaper setsid mingetty tty{{slot}}
+exec setsid mingetty tty{{slot}}
 EOF
 
 cat << EOF > run

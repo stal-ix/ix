@@ -1,11 +1,6 @@
-{% extends '//die/proxy.sh' %}
+{% extends '//die/hub.sh' %}
 
-{% block install %}
-mkdir ${out}/bin
-
-base64 -d << EOF > ${out}/bin/session
-{% include 'session/base64' %}
-EOF
-
-chmod +x ${out}/bin/*
+{% block run_deps %}
+bin/subreaper
+bin/session/scripts
 {% endblock %}

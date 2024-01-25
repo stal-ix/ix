@@ -1,5 +1,10 @@
 {% extends '//lib/pam/ix.sh' %}
 
+{% block lib_deps %}
+lib/dlfcn
+{{super()}}
+{% endblock %}
+
 {% block install %}
 {{super()}}
 cd ${out}

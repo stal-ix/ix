@@ -40,9 +40,9 @@
 
 {% block run_deps %}
 #bin/zellij
-#bin/git/ui
-#bin/coreutils/uutils
 #bin/rio
+bin/git/ui
+bin/coreutils/uutils
 bin/mini/serve
 bin/niri
 bin/bcachefs/tools

@@ -670,6 +670,7 @@ https://github.com/apernet/hysteria/archive/refs/tags/app/v2.2.1.tar.gz
 https://github.com/apernet/hysteria/archive/refs/tags/app/v2.2.3.tar.gz
 https://github.com/apple/swift-corelibs-libdispatch/archive/refs/tags/swift-5.8-RELEASE.tar.gz
 https://github.com/apple/swift-corelibs-libdispatch/archive/refs/tags/swift-5.9-RELEASE.tar.gz
+https://github.com/apple/swift-corelibs-libdispatch/archive/refs/tags/swift-5.9.2-RELEASE.tar.gz
 https://github.com/appneta/tcpreplay/releases/download/v4.4.4/tcpreplay-4.4.4.tar.xz
 https://github.com/ar-/incron/archive/refs/tags/0.5.12.tar.gz
 https://github.com/archlinux/svntogit-community/archive/515367ae9616cb3fa53eaf041634dd6e0637a774.tar.gz
@@ -685,6 +686,7 @@ https://github.com/axboe/liburing/archive/refs/tags/liburing-2.2.tar.gz
 https://github.com/benhoyt/goawk/archive/refs/tags/v1.24.0.tar.gz
 https://github.com/benhoyt/goawk/archive/refs/tags/v1.25.0.tar.gz
 https://github.com/benhoyt/inih/archive/refs/tags/r57.tar.gz
+https://github.com/benhoyt/inih/archive/refs/tags/r58.tar.gz
 https://github.com/bensadeh/tailspin/archive/refs/tags/3.0.0.tar.gz
 https://github.com/besser82/libxcrypt/archive/refs/tags/v4.4.36.tar.gz
 https://github.com/bfgroup/b2/archive/refs/tags/4.9.2.tar.gz
@@ -830,6 +832,7 @@ https://github.com/freequaos/schedtool/archive/refs/tags/schedtool-1.3.0.tar.gz
 https://github.com/fribidi/fribidi/archive/refs/tags/v1.0.13.tar.gz
 https://github.com/fukuchi/libqrencode/archive/refs/tags/v4.1.1.tar.gz
 https://github.com/g-truc/glm/archive/refs/tags/0.9.9.8.tar.gz
+https://github.com/g-truc/glm/archive/refs/tags/1.0.0.tar.gz
 https://github.com/gabime/spdlog/archive/refs/tags/v1.12.0.tar.gz
 https://github.com/gabime/spdlog/archive/refs/tags/v1.13.0.tar.gz
 https://github.com/gambit/gambit/archive/refs/tags/v4.9.5.tar.gz
@@ -1467,6 +1470,7 @@ https://github.com/upx/upx/releases/download/v4.2.2/upx-4.2.2-src.tar.xz
 https://github.com/uriparser/uriparser/archive/refs/tags/uriparser-0.9.6.tar.gz
 https://github.com/util-linux/util-linux/archive/refs/tags/v2.39.1.tar.gz
 https://github.com/uutils/coreutils/archive/refs/tags/0.0.23.tar.gz
+https://github.com/uutils/coreutils/archive/refs/tags/0.0.24.tar.gz
 https://github.com/uutils/coreutils/archive/refs/tags/0.0.8.tar.gz
 https://github.com/varlink/libvarlink/archive/refs/tags/23.tar.gz
 https://github.com/vasi/squashfuse/archive/refs/tags/0.4.0.tar.gz
@@ -1568,6 +1572,7 @@ https://gitlab.freedesktop.org/gstreamer/gstreamer/-/archive/1.22.5/gstreamer-1.
 https://gitlab.freedesktop.org/gstreamer/gstreamer/-/archive/1.22.6/gstreamer-1.22.6.tar.gz
 https://gitlab.freedesktop.org/gstreamer/gstreamer/-/archive/1.22.7/gstreamer-1.22.7.tar.gz
 https://gitlab.freedesktop.org/gstreamer/gstreamer/-/archive/1.22.8/gstreamer-1.22.8.tar.gz
+https://gitlab.freedesktop.org/gstreamer/gstreamer/-/archive/1.22.9/gstreamer-1.22.9.tar.gz
 https://gitlab.freedesktop.org/libdecor/libdecor/-/archive/0.2.0/libdecor-0.2.0.tar.bz2
 https://gitlab.freedesktop.org/libdecor/libdecor/-/archive/0.2.1/libdecor-0.2.1.tar.bz2
 https://gitlab.freedesktop.org/libdecor/libdecor/-/archive/0.2.2/libdecor-0.2.2.tar.bz2
@@ -1704,6 +1709,7 @@ https://mesa.freedesktop.org/archive/mesa-23.2.1.tar.xz
 https://mesa.freedesktop.org/archive/mesa-23.3.1.tar.xz
 https://mesa.freedesktop.org/archive/mesa-23.3.2.tar.xz
 https://mesa.freedesktop.org/archive/mesa-23.3.3.tar.xz
+https://mesa.freedesktop.org/archive/mesa-23.3.4.tar.xz
 https://mirror.tochlab.net/pub/gnu/autoconf-archive/autoconf-archive-2023.02.20.tar.xz
 https://mirror.tochlab.net/pub/gnu/help2man/help2man-1.49.2.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/kernel/people/tytso/e2fsprogs/v1.46.6/e2fsprogs-1.46.6.tar.xz
@@ -1755,6 +1761,7 @@ https://salsa.debian.org/iso-codes-team/iso-codes/-/archive/v4.16.0/iso-codes-v4
 https://secure.nic.cz/files/knot-dns/knot-3.2.9.tar.xz
 https://secure.nic.cz/files/knot-dns/knot-3.3.2.tar.xz
 https://secure.nic.cz/files/knot-dns/knot-3.3.3.tar.xz
+https://secure.nic.cz/files/knot-dns/knot-3.3.4.tar.xz
 https://secure.nic.cz/files/knot-resolver/knot-resolver-5.6.0.tar.xz
 https://skarnet.org/software/execline/execline-2.8.2.0.tar.gz
 https://skarnet.org/software/mdevd/mdevd-0.1.5.1.tar.gz

@@ -21,9 +21,9 @@ bin/dnsmasq/runit
 {% endif %}
 
 {% if mingetty %}
-bin/mingetty/runit
+bin/dm(getty=mingetty)
 {% else %}
-bin/emptty/runit
+bin/dm(getty=emptty)
 {% endif %}
 
 bin/sched/fstrim(delay=1000)
