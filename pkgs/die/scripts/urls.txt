@@ -832,6 +832,7 @@ https://github.com/freequaos/schedtool/archive/refs/tags/schedtool-1.3.0.tar.gz
 https://github.com/fribidi/fribidi/archive/refs/tags/v1.0.13.tar.gz
 https://github.com/fukuchi/libqrencode/archive/refs/tags/v4.1.1.tar.gz
 https://github.com/g-truc/glm/archive/refs/tags/0.9.9.8.tar.gz
+https://github.com/g-truc/glm/archive/refs/tags/1.0.0.tar.gz
 https://github.com/gabime/spdlog/archive/refs/tags/v1.12.0.tar.gz
 https://github.com/gabime/spdlog/archive/refs/tags/v1.13.0.tar.gz
 https://github.com/gambit/gambit/archive/refs/tags/v4.9.5.tar.gz
@@ -1469,6 +1470,7 @@ https://github.com/upx/upx/releases/download/v4.2.2/upx-4.2.2-src.tar.xz
 https://github.com/uriparser/uriparser/archive/refs/tags/uriparser-0.9.6.tar.gz
 https://github.com/util-linux/util-linux/archive/refs/tags/v2.39.1.tar.gz
 https://github.com/uutils/coreutils/archive/refs/tags/0.0.23.tar.gz
+https://github.com/uutils/coreutils/archive/refs/tags/0.0.24.tar.gz
 https://github.com/uutils/coreutils/archive/refs/tags/0.0.8.tar.gz
 https://github.com/varlink/libvarlink/archive/refs/tags/23.tar.gz
 https://github.com/vasi/squashfuse/archive/refs/tags/0.4.0.tar.gz
