@@ -103,7 +103,9 @@ chmod +x cc c++
 {% endif %}
 {% if self.cargo_features().strip() %}
 --no-default-features
---features {{','.join(ix.parse_list(self.cargo_features()))}}
+{% for x in ix.parse_list(self.cargo_features()) %}
+--features {{x}}
+{% endfor %}
 {% endif %}
 {% endset %}
 
