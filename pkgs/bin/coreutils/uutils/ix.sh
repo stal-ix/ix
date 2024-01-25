@@ -19,6 +19,10 @@ lib/oniguruma
 bld/make
 {% endblock %}
 
+{% block cargo_features %}
+feat_os_unix_musl
+{% endblock %}
+
 {% block patch %}
 {# tabs!!! #}
 cat << EOF >> GNUmakefile
