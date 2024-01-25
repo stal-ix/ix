@@ -40,8 +40,8 @@
 
 {% block run_deps %}
 #bin/zellij
-#bin/git/ui
 #bin/rio
+bin/git/ui
 bin/coreutils/uutils
 bin/mini/serve
 bin/niri
