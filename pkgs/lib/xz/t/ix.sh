@@ -1,8 +1,8 @@
 {% extends '//die/c/autohell.sh' %}
 
 {% block fetch %}
-https://tukaani.org/xz/xz-5.4.5.tar.xz
-sha:da9dec6c12cf2ecf269c31ab65b5de18e8e52b96f35d5bcd08c12b43e6878803
+https://github.com/tukaani-project/xz/releases/download/v5.4.6/xz-5.4.6.tar.gz
+sha:aeba3e03bf8140ddedf62a0a367158340520f6b384f75ca6045ccc6c0d43fd5c
 {% endblock %}
 
 {% block lib_deps %}
