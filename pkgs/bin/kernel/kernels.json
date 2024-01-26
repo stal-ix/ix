@@ -18,9 +18,9 @@
         "cfg": "cfg_6_6_0"
     },
     {
-        "ver": "6.7.1",
-        "url": "https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.7.1.tar.xz",
-        "sha": "sha:1ecffa568e86a2202ba5533ad9034bc263a9aa14e189597a94f09b3854ad68c3",
+        "ver": "6.7.2",
+        "url": "https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.7.2.tar.xz",
+        "sha": "sha:c34de41baa29c475c0834e88a3171e255ff86cd32d83c6bffc2b797e60bfa671",
         "cfg": "cfg_6_6_0"
     },
     {
