@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/nemtrif/utfcpp/archive/refs/tags/v4.0.4.tar.gz
-sha:7c8a403d0c575d52473c8644cd9eb46c6ba028d2549bc3e0cdc2d45f5cfd78a0
+https://github.com/nemtrif/utfcpp/archive/refs/tags/v4.0.5.tar.gz
+sha:ffc668a310e77607d393f3c18b32715f223da1eac4c4d6e0579a11df8e6b59cf
 {% endblock %}
 
 {% block lib_deps %}

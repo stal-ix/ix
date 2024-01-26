@@ -1120,6 +1120,7 @@ https://github.com/martanne/vis/archive/refs/tags/v0.8.tar.gz
 https://github.com/martijnvanbrummelen/nwipe/archive/refs/tags/v0.34.tar.gz
 https://github.com/martijnvanbrummelen/nwipe/archive/refs/tags/v0.35.tar.gz
 https://github.com/martinus/robin-hood-hashing/archive/refs/tags/3.11.3.tar.gz
+https://github.com/martinvonz/jj/archive/refs/tags/v0.13.0.tar.gz
 https://github.com/marzer/tomlplusplus/archive/refs/tags/v3.4.0.tar.gz
 https://github.com/mauke/unibilium/archive/refs/tags/v2.0.0.tar.gz
 https://github.com/mawww/kakoune/archive/refs/tags/v2023.08.05.tar.gz
@@ -1170,6 +1171,7 @@ https://github.com/nemtrif/utfcpp/archive/refs/tags/v4.0.0.tar.gz
 https://github.com/nemtrif/utfcpp/archive/refs/tags/v4.0.1.tar.gz
 https://github.com/nemtrif/utfcpp/archive/refs/tags/v4.0.2.tar.gz
 https://github.com/nemtrif/utfcpp/archive/refs/tags/v4.0.4.tar.gz
+https://github.com/nemtrif/utfcpp/archive/refs/tags/v4.0.5.tar.gz
 https://github.com/neomutt/neomutt/archive/refs/tags/20220429.tar.gz
 https://github.com/neomutt/neomutt/archive/refs/tags/20231006.tar.gz
 https://github.com/neovim/libtermkey/archive/refs/tags/v0.20.tar.gz
