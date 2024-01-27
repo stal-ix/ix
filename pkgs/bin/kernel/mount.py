@@ -4,12 +4,8 @@ K = json.loads(parent.serve('kernels.json'))
 T = {}
 
 T['ix.sh'] = '''
-{% extends '//bin/kernel/t/2/ix.sh' %}
+{% extends '//bin/kernel/t/3/ix.sh' %}
 {% include '//__NS__/ver.sh' %}
-{% block kernel_headers %}
-lib/linux/headers/custom(kernel_url={{self.kernel_url().strip()}},kernel_sha={{self.kernel_sha().strip()}})
-{% endblock %}
-{% block slot %}0{% endblock %}
 {% block kernel_flags %}
 {% include '//bin/kernel/configs/__CFG__' %}
 {% endblock %}
