@@ -3,16 +3,11 @@ import json
 K = json.loads(parent.serve('kernels.json'))
 T = {}
 
-T['headers/ix.sh'] = '''
-{% extends '//lib/linux/headers/ix.sh' %}
-{% include '//__NS__/ver.sh' %}
-'''
-
 T['ix.sh'] = '''
 {% extends '//bin/kernel/t/2/ix.sh' %}
 {% include '//__NS__/ver.sh' %}
 {% block kernel_headers %}
-__NS__/headers
+lib/linux/headers/custom(kernel_url={{self.kernel_url().strip()}},kernel_sha={{self.kernel_sha().strip()}})
 {% endblock %}
 {% block slot %}0{% endblock %}
 {% block kernel_flags %}
@@ -22,6 +17,8 @@ __NS__/headers
 
 T['ver.sh'] = '''
 {% block kernel_version %}__VER__{% endblock %}
+{% block kernel_url %}__URL__{% endblock %}
+{% block kernel_sha %}__SHA__{% endblock %}
 {% block fetch %}
 __URL__
 __SHA__
