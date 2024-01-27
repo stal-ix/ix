@@ -1250,6 +1250,7 @@ https://github.com/podofo/podofo/archive/refs/tags/0.10.3.tar.gz
 https://github.com/posva/catimg/archive/refs/tags/2.7.0.tar.gz
 https://github.com/premake/premake-core/archive/refs/tags/v5.0.0-beta2.tar.gz
 https://github.com/project-repo/cagebreak/archive/refs/tags/2.3.0.tar.gz
+https://github.com/project-repo/cagebreak/archive/refs/tags/2.3.1.tar.gz
 https://github.com/protobuf-c/protobuf-c/archive/refs/tags/v1.4.1.tar.gz
 https://github.com/protobuf-c/protobuf-c/archive/refs/tags/v1.5.0.tar.gz
 https://github.com/protocolbuffers/protobuf/archive/refs/tags/v24.3.tar.gz

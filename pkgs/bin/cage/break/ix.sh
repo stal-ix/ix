@@ -1,8 +1,8 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://github.com/project-repo/cagebreak/archive/refs/tags/2.3.0.tar.gz
-sha:fd18e9d3cfffb8369dd850d329765687fbbda4dcb1bc3e846b683b2a6ac4d739
+https://github.com/project-repo/cagebreak/archive/refs/tags/2.3.1.tar.gz
+sha:0ea5e896e710c8b89485d13149e58b73b5f6fed53b3a173dfc558b600b2bf413
 {% endblock %}
 
 {% block bld_libs %}
