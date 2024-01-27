@@ -23,5 +23,7 @@ shut_up
 {% endblock %}
 
 {% block patch %}
-sed -e "s|/usr/share|${out}/share|" -i meson.build
+sed -e "s|/usr/share|${out}/share|" \
+    -e "s|/etc/xdg|${out}/share/xdg|" \
+    -i meson.build
 {% endblock %}
