@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://github.com/MidnightCommander/mc/archive/refs/tags/4.8.30.tar.gz
-sha:6f17de6c380ad4e8b71b31c3e9e3a6bae8cb05f08d42d8896dd26e269ceeb387
+https://github.com/MidnightCommander/mc/archive/refs/tags/4.8.31.tar.gz
+sha:53be761b505f539ab1ba5d112734628667b8abb06de75a04953b0ffce71548b7
 {% endblock %}
 
 {% block bld_libs %}

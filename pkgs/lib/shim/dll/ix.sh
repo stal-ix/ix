@@ -1,5 +1,5 @@
-{% extends '//die/proxy.sh' %}
+{% extends '//die/env.sh' %}
 
 {% block env %}
-export LDFLAGS="-l{{dll_name}} \${LDFLAGS}"
+export LDFLAGS="-l{{dll_name}} ${LDFLAGS}"
 {% endblock %}

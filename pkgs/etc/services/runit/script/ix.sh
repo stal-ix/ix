@@ -11,7 +11,11 @@ EOF
 
 cat << EOF > run
 #!/bin/sh
-exec srv {{sd}} su {{srv_user or 'root'}} ${PWD}/cmd
+{% if srv_user %}
+exec srv {{sd}} su -s /bin/sh {{srv_user}} ${PWD}/cmd
+{% else %}
+exec srv {{sd}} /bin/sh ${PWD}/cmd
+{% endif %}
 EOF
 
 chmod +x run

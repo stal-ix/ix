@@ -1,8 +1,8 @@
 {% extends '//die/c/autohell.sh' %}
 
 {% block fetch %}
-https://skarnet.org/software/mdevd/mdevd-0.1.5.1.tar.gz
-sha:94ce95067809e8c53f3e32ce5fd0c53356085d069ce2f1d3168e4e38a64e90f5
+https://github.com/skarnet/mdevd/archive/refs/tags/v0.1.6.3.tar.gz
+sha:97a0481d95a9f76ed810d39ccfb57c41b3f4b4ddeb1796f94743c474719ded24
 {% endblock %}
 
 {% block bld_libs %}

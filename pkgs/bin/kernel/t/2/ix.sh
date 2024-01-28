@@ -1,7 +1,7 @@
 {% extends '//bin/kernel/t/1/ix.sh' %}
 
 {% block kernel_name %}
-{{self.kernel_version()}}-slot{{self.slot()}}
+{{self.kernel_version().strip().replace('.', '-')}}
 {% endblock %}
 
 {% block host_libs %}

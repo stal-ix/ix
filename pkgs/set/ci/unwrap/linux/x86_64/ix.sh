@@ -41,6 +41,10 @@
 {% block run_deps %}
 #bin/zellij
 #bin/rio
+bin/cage/break
+bin/dialog
+bin/jj
+bin/eza
 bin/git/ui
 bin/coreutils/uutils
 bin/mini/serve
@@ -265,8 +269,8 @@ bin/mingetty
 bin/git
 bin/git/2
 bin/git/go
-bin/kernel/6/1
 bin/kernel/6/6
+bin/kernel/6/7
 bin/meson/60
 bin/meson/62
 bin/meson/63

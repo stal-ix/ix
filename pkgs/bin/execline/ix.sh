@@ -1,11 +1,15 @@
 {% extends '//die/c/autohell.sh' %}
 
 {% block fetch %}
-https://skarnet.org/software/execline/execline-2.8.2.0.tar.gz
-sha:2fdf7607f306e94fe42ebe2b49872d0f654aa2297a576d5a2d8037d4d9583341
+https://github.com/skarnet/execline/archive/refs/tags/v2.9.4.0.tar.gz
+sha:70798b7b5595743a6512fb2157234f7ef2399a0d81099774aecb61017f451b2d
 {% endblock %}
 
 {% block lib_deps %}
 lib/c
 lib/skalibs
+{% endblock %}
+
+{% block configure_flags %}
+--enable-multicall
 {% endblock %}

@@ -1,11 +1,11 @@
 {% extends '//die/rust/cargo.sh' %}
 
 {% block cargo_url %}
-https://github.com/YaLTeR/niri/archive/refs/tags/v0.1.0-beta.1.tar.gz
+https://github.com/YaLTeR/niri/archive/refs/tags/v0.1.0.tar.gz
 {% endblock %}
 
 {% block cargo_sha %}
-94b4b96bfd1cd5c1380358d3d7c8fbc1b20ebd4e8dea33cab122014fbb7fca69
+cf8b2d0a07ff27f842027aa4444f7459927460bf12bc7d61c01d01dcf8add9f1
 {% endblock %}
 
 {% block lib_deps %}

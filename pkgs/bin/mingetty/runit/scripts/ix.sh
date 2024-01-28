@@ -4,9 +4,9 @@
 cd ${out}; mkdir -p etc/services/mingetty{{slot}}; cd etc/services/mingetty{{slot}}
 
 cat << EOF > daemon
-#!/bin/sh
+#!/bin/setsid /bin/sh
 fixtty /dev/tty{{slot}}
-exec setsid mingetty tty{{slot}}
+exec mingetty tty{{slot}}
 EOF
 
 cat << EOF > run
