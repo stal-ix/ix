@@ -14,7 +14,7 @@ cat << EOF > run
 {% if srv_user %}
 exec srv {{sd}} su -s /bin/sh {{srv_user}} ${PWD}/cmd
 {% else %}
-exec srv {{sd}} ${PWD}/cmd
+exec srv {{sd}} /bin/sh ${PWD}/cmd
 {% endif %}
 EOF
 
