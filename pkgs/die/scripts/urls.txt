@@ -431,6 +431,7 @@ https://git.savannah.nongnu.org/cgit/acl.git/snapshot/acl-2.3.2.tar.gz
 https://git.savannah.nongnu.org/cgit/attr.git/snapshot/attr-2.5.1.tar.gz
 https://git.savannah.nongnu.org/cgit/attr.git/snapshot/attr-2.5.2.tar.gz
 https://git.sr.ht/~adnano/wmenu/archive/0.1.4.tar.gz
+https://git.sr.ht/~adnano/wmenu/archive/0.1.6.tar.gz
 https://git.sr.ht/~brocellous/wlrctl/archive/v0.2.2.tar.gz
 https://git.sr.ht/~delthas/senpai/archive/v0.3.0.tar.gz
 https://git.sr.ht/~emersion/basu/archive/v0.2.1.tar.gz
