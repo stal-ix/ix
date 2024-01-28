@@ -1414,6 +1414,7 @@ https://github.com/strukturag/libheif/archive/refs/tags/v1.17.5.tar.gz
 https://github.com/strukturag/libheif/archive/refs/tags/v1.17.6.tar.gz
 https://github.com/svenstaro/miniserve/archive/refs/tags/v0.26.0.tar.gz
 https://github.com/swaywm/sway/archive/refs/tags/1.8.1.tar.gz
+https://github.com/swaywm/sway/archive/refs/tags/1.9-rc1.tar.gz
 https://github.com/swaywm/swaybg/archive/refs/tags/v1.2.0.tar.gz
 https://github.com/swaywm/swayidle/archive/refs/tags/1.8.0.tar.gz
 https://github.com/swaywm/swaylock/archive/refs/tags/v1.7.2.tar.gz

@@ -1,8 +1,8 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://github.com/swaywm/sway/archive/refs/tags/1.8.1.tar.gz
-sha:e9f575761342fc8fe0cfeea80c90f32ddfa8c543572fec179f40922346f47dff
+https://github.com/swaywm/sway/archive/refs/tags/1.9-rc1.tar.gz
+sha:f9cb3b7197dcb4424f8f5e1da04000c2291800a01063ac22d64664880190c9ba
 {% endblock %}
 
 {% block bld_libs %}
@@ -13,7 +13,7 @@ lib/pango
 lib/pcre/2
 lib/json/c
 lib/wayland
-lib/wlroots/16
+lib/wlroots/17
 lib/gdk/pixbuf
 {% endblock %}
 
