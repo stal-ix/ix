@@ -1,8 +1,8 @@
 {% extends '//die/c/autohell.sh' %}
 
 {% block fetch %}
-https://skarnet.org/software/skalibs/skalibs-2.11.1.0.tar.gz
-sha:400180b4d5b651e4fafaf0297b933f5f863b467d357f5b36a6545cf6eb14eab9
+https://github.com/skarnet/skalibs/archive/refs/tags/v2.14.1.0.tar.gz
+sha:148cd184754fef201d23ace2819b903006a220781da17304d8186b23f9725cd8
 {% endblock %}
 
 {% block lib_deps %}
