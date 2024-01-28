@@ -647,6 +647,7 @@ https://github.com/adobe-fonts/source-sans/archive/refs/tags/3.046R.tar.gz
 https://github.com/adobe-fonts/source-serif/releases/download/4.004R/source-serif-4.004.zip
 https://github.com/adrian-thurston/ragel/archive/refs/tags/7.0.4.tar.gz
 https://github.com/adrianlopezroche/fdupes/archive/refs/tags/v2.2.1.tar.gz
+https://github.com/adrianlopezroche/fdupes/archive/refs/tags/v2.3.0.tar.gz
 https://github.com/adsr/mle/archive/refs/tags/v1.7.2.tar.gz
 https://github.com/afify/sfm/archive/refs/tags/v0.4.tar.gz
 https://github.com/akamai/re2g/archive/refs/tags/v0.1.35.tar.gz
