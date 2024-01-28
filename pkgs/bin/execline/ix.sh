@@ -9,3 +9,7 @@ sha:70798b7b5595743a6512fb2157234f7ef2399a0d81099774aecb61017f451b2d
 lib/c
 lib/skalibs
 {% endblock %}
+
+{% block configure_flags %}
+--enable-multicall
+{% endblock %}
