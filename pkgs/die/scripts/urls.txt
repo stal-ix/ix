@@ -1858,6 +1858,7 @@ https://www.cairographics.org/releases/cairomm-1.14.0.tar.xz
 https://www.cairographics.org/releases/cairomm-1.16.1.tar.xz
 https://www.cairographics.org/releases/pixman-0.42.2.tar.gz
 https://www.cairographics.org/releases/pixman-0.43.0.tar.gz
+https://www.cairographics.org/releases/pixman-0.43.2.tar.gz
 https://www.claws-mail.org/download.php?file=releases/claws-mail-4.1.0.tar.xz
 https://www.cpan.org/src/5.0/perl-5.36.0.tar.gz
 https://www.cpan.org/src/5.0/perl-5.38.1.tar.gz
