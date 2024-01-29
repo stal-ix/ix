@@ -1,13 +1,17 @@
 {% extends '//die/c/make.sh' %}
 
 {% block fetch %}
-https://download.savannah.gnu.org/releases/zutils/zutils-1.12.tar.lz
-sha:78ae5478b01c71c5194427c5c341765da831e42e80410ec980f403aa37ac88ee
+https://download.savannah.gnu.org/releases/zutils/zutils-1.13.tar.lz
+sha:957d03c6c1b6b68c94e313ff9633bf6c7e32ab50e150ab67cc244b0ccd2a4c17
 {% endblock %}
 
 {% block bld_libs %}
 lib/c
 lib/c++
+{% endblock %}
+
+{% block build_flags %}
+fix_shebangs
 {% endblock %}
 
 {% block configure %}
