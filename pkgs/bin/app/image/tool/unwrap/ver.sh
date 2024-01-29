@@ -23,7 +23,6 @@ lib/gpg/me
 lib/kernel
 lib/archive
 lib/openssl
-lib/argp/standalone
 lib/squashfs/fuse/patched
 {% endblock %}
 
@@ -31,8 +30,6 @@ lib/squashfs/fuse/patched
 bin/xxd
 bld/auto
 bld/make
-bld/bash
-bld/shebangs
 bld/fake/binutils
 bld/fake(tool_name=wget)
 bld/fake(tool_name=desktop-file-validate)
@@ -62,7 +59,6 @@ USE_SYSTEM_MKSQUASHFS=ON
 {% endblock %}
 
 {% block patch %}
-fix_shebangs src/embed-magic-bytes-in-file.sh
 (
 cat - src/runtime.c << EOF
 #include <stdlib.h>
