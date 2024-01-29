@@ -721,7 +721,7 @@ bin/qpdf
 bin/i3/status
 bin/gnupg
 bin/sixel
-bin/neomutt
+bin/neo/mutt
 bin/balsa
 bin/uuencode
 bin/uget
