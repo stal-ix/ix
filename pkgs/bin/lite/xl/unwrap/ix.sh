@@ -1,8 +1,8 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://github.com/lite-xl/lite-xl/archive/refs/tags/v2.1.1.tar.gz
-sha:75c0cbda2d34a88e86d3aa48abe9f0366093df3019796c03067a7594cc55abe6
+https://github.com/lite-xl/lite-xl/archive/refs/tags/v2.1.3.tar.gz
+sha:a13c423588a5549e42fda7dfe9064bd3776b6202c170c7bb493d96a692360383
 {% endblock %}
 
 {% block bld_libs %}
@@ -16,4 +16,5 @@ lib/freetype
 
 {% block meson_flags %}
 renderer=true
+use_system_lua=true
 {% endblock %}
