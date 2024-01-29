@@ -206,6 +206,7 @@ https://download.samba.org/pub/rsync/src/rsync-3.2.7.tar.gz
 https://download.samba.org/pub/samba/stable/samba-4.17.2.tar.gz
 https://download.savannah.gnu.org/releases/lzip/lzip-1.22.tar.gz
 https://download.savannah.gnu.org/releases/zutils/zutils-1.12.tar.lz
+https://download.savannah.gnu.org/releases/zutils/zutils-1.13.tar.lz
 https://download.sourceforge.net/qjackctl/qjackctl-0.9.10.tar.gz
 https://download.tuxfamily.org/chrony/chrony-4.4.tar.gz
 https://download.videolan.org/pub/videolan/libbluray/1.3.4/libbluray-1.3.4.tar.bz2
@@ -250,6 +251,7 @@ https://downloads.sourceforge.net/project/qmmp-dev/qmmp/2.1/qmmp-2.1.4.tar.bz2
 https://downloads.sourceforge.net/project/sbcl/sbcl/2.3.10/sbcl-2.3.10-source.tar.bz2
 https://downloads.sourceforge.net/project/sbcl/sbcl/2.3.11/sbcl-2.3.11-source.tar.bz2
 https://downloads.sourceforge.net/project/sbcl/sbcl/2.4.0/sbcl-2.4.0-source.tar.bz2
+https://downloads.sourceforge.net/project/sbcl/sbcl/2.4.1/sbcl-2.4.1-source.tar.bz2
 https://downloads.sourceforge.net/project/scons/scons/4.5.2/SCons-4.5.2.tar.gz
 https://downloads.sourceforge.net/project/sdlgfx/SDL_gfx-2.0.25.tar.gz
 https://downloads.sourceforge.net/project/sox/sox/14.4.2/sox-14.4.2.tar.bz2
@@ -305,6 +307,7 @@ https://ftp.gnu.org/gnu/bash/bash-5.2.21.tar.gz
 https://ftp.gnu.org/gnu/bash/bash-5.2.tar.gz
 https://ftp.gnu.org/gnu/bc/bc-1.07.1.tar.gz
 https://ftp.gnu.org/gnu/binutils/binutils-2.41.tar.bz2
+https://ftp.gnu.org/gnu/binutils/binutils-2.42.tar.bz2
 https://ftp.gnu.org/gnu/bison/bison-3.4.1.tar.xz
 https://ftp.gnu.org/gnu/bison/bison-3.5.1.tar.xz
 https://ftp.gnu.org/gnu/bison/bison-3.6.1.tar.xz
@@ -1095,6 +1098,7 @@ https://github.com/linux-pam/linux-pam/archive/refs/tags/v1.5.3.tar.gz
 https://github.com/linuxwacom/libwacom/releases/download/libwacom-2.8.0/libwacom-2.8.0.tar.xz
 https://github.com/linuxwacom/libwacom/releases/download/libwacom-2.9.0/libwacom-2.9.0.tar.xz
 https://github.com/lite-xl/lite-xl/archive/refs/tags/v2.1.1.tar.gz
+https://github.com/lite-xl/lite-xl/archive/refs/tags/v2.1.3.tar.gz
 https://github.com/litespeedtech/ls-qpack/archive/refs/tags/v2.2.3.tar.gz
 https://github.com/lloyd/yajl/archive/refs/tags/2.1.0.tar.gz
 https://github.com/llvm/llvm-project/archive/refs/tags/llvmorg-12.0.1.tar.gz
@@ -1183,6 +1187,7 @@ https://github.com/nemtrif/utfcpp/archive/refs/tags/v4.0.4.tar.gz
 https://github.com/nemtrif/utfcpp/archive/refs/tags/v4.0.5.tar.gz
 https://github.com/neomutt/neomutt/archive/refs/tags/20220429.tar.gz
 https://github.com/neomutt/neomutt/archive/refs/tags/20231006.tar.gz
+https://github.com/neovide/neovide/archive/refs/tags/0.12.2.tar.gz
 https://github.com/neovim/libtermkey/archive/refs/tags/v0.20.tar.gz
 https://github.com/neovim/neovim/archive/refs/tags/v0.9.2.tar.gz
 https://github.com/neovim/neovim/archive/refs/tags/v0.9.4.tar.gz
@@ -1496,6 +1501,7 @@ https://github.com/uutils/coreutils/archive/refs/tags/0.0.23.tar.gz
 https://github.com/uutils/coreutils/archive/refs/tags/0.0.24.tar.gz
 https://github.com/uutils/coreutils/archive/refs/tags/0.0.8.tar.gz
 https://github.com/varlink/libvarlink/archive/refs/tags/23.tar.gz
+https://github.com/vasi/squashfuse/archive/1f980303b89c779eabfd0a0fdd36d6a7a311bf92.zip
 https://github.com/vasi/squashfuse/archive/refs/tags/0.4.0.tar.gz
 https://github.com/vasi/squashfuse/archive/refs/tags/v0.5.0.tar.gz
 https://github.com/vcrhonek/hwdata/archive/refs/tags/v0.374.tar.gz
@@ -1619,6 +1625,7 @@ https://gitlab.freedesktop.org/wlroots/wlroots/-/archive/0.15.1/wlroots-0.15.1.t
 https://gitlab.freedesktop.org/wlroots/wlroots/-/archive/0.16.2/wlroots-0.16.2.tar.bz2
 https://gitlab.freedesktop.org/wlroots/wlroots/-/archive/0.17.0/wlroots-0.17.0.tar.bz2
 https://gitlab.freedesktop.org/wlroots/wlroots/-/archive/0.17.1/wlroots-0.17.1.tar.bz2
+https://gitlab.freedesktop.org/xdg/desktop-file-utils/-/archive/0.27/desktop-file-utils-0.27.tar.bz2
 https://gitlab.freedesktop.org/xkeyboard-config/xkeyboard-config/-/archive/xkeyboard-config-2.39/xkeyboard-config-xkeyboard-config-2.39.tar.bz2
 https://gitlab.freedesktop.org/xkeyboard-config/xkeyboard-config/-/archive/xkeyboard-config-2.40/xkeyboard-config-xkeyboard-config-2.40.tar.bz2
 https://gitlab.gnome.org/GNOME/atk/-/archive/ATK_2_36_0/atk-ATK_2_36_0.tar.bz2
@@ -1773,6 +1780,7 @@ https://poppler.freedesktop.org/poppler-23.12.0.tar.xz
 https://poppler.freedesktop.org/poppler-24.01.0.tar.xz
 https://pwmt.org/projects/zathura-djvu/download/zathura-djvu-0.2.9.tar.xz
 https://pwmt.org/projects/zathura-pdf-poppler/download/zathura-pdf-poppler-0.3.1.tar.xz
+https://raw.githubusercontent.com/AppImageCommunity/libappimage/9c1fae809dedbb3015e9cd5b46e2b5aab06df36e/src/patches/squashfuse.patch
 https://raw.githubusercontent.com/Homebrew/patches/1860b0a745f1fe726900974845d1b0dd3c3398d6/openssh/patch-sandbox-darwin.c-apple-sandbox-named-external.diff
 https://raw.githubusercontent.com/Homebrew/patches/d8b2d8c2612fd251ac6de17bf0cc5174c3aab94c/openssh/patch-sshd.c-apple-sandbox-named-external.diff
 https://raw.githubusercontent.com/macports/macports-ports/edf0ee1e2cf/devel/m4/files/secure_snprintf.patch
@@ -1931,6 +1939,7 @@ https://www.openssl.org/source/old/1.1.1/openssl-1.1.1j.tar.gz
 https://www.prevanders.net/libdwarf-0.6.0.tar.xz
 https://www.prevanders.net/libdwarf-0.8.0.tar.xz
 https://www.prevanders.net/libdwarf-0.9.0.tar.xz
+https://www.prevanders.net/libdwarf-0.9.1.tar.xz
 https://www.python.org/ftp/python/2.7.18/Python-2.7.18.tar.xz
 https://www.python.org/ftp/python/3.10.13/Python-3.10.13.tar.xz
 https://www.python.org/ftp/python/3.8.17/Python-3.8.17.tgz

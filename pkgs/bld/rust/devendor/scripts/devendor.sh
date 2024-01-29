@@ -11,7 +11,7 @@ cd "${1}"
 
 find . -name .cargo-checksum.json -exec sed -i.uncheck -e 's/"files":{[^}]*}/"files":{ }/' '{}' '+'
 
-rust_classify ${PWD} | grep -v input-sys | grep -v ring | grep -v blake3 | grep -v cexpr | while read l; do
+rust_classify ${PWD} | grep -v input-sys | grep -v ring | grep -v blake3 | grep -v cexpr | grep -v skia | while read l; do
     echo "devendor ${l}"
     echo 'fn main() {}' > ${l}/build.rs
 done

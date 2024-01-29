@@ -41,6 +41,7 @@
 {% block run_deps %}
 #bin/zellij
 #bin/rio
+bin/app/image/tool
 bin/cage/break
 bin/dialog
 bin/jj
@@ -104,8 +105,8 @@ bin/rpm
 bin/mrustc/boot
 bin/bluetuith
 bin/glib/tools
-bin/neovim/jit
-bin/neovim/openresty
+bin/neo/vim/jit
+bin/neo/vim/openresty
 bin/zathura/unwrap/mupdf
 bin/zathura/unwrap/poppler
 bin/minijail
@@ -395,7 +396,7 @@ bin/bash/lite/sh
 bin/bash/lite
 bin/bash
 bin/sed
-bin/neovim
+bin/neo/vim
 bin/light
 bin/go/4
 bin/go
@@ -721,7 +722,7 @@ bin/qpdf
 bin/i3/status
 bin/gnupg
 bin/sixel
-bin/neomutt
+bin/neo/mutt
 bin/balsa
 bin/uuencode
 bin/uget
