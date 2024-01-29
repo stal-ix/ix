@@ -72,3 +72,8 @@ EOF
 ) | sed -e 's|squashfuse_dlopen.h|squashfuse.h|' > _
 mv _ src/runtime.c
 {% endblock %}
+
+{% block install %}
+{{super()}}
+cp ${tmp}/obj/src/runtime ${out}/bin/
+{% endblock %}
