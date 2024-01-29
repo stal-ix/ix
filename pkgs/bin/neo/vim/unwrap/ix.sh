@@ -20,7 +20,7 @@ lib/tree/sitter
 {% block bld_tool %}
 bin/gperf
 bld/gettext
-bin/neovim/puc(lua_ver=puc/5/2)
+bin/neo/vim/puc(lua_ver=puc/5/2)
 {% endblock %}
 
 {% block script_init_env %}
