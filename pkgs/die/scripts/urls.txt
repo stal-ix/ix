@@ -1863,6 +1863,7 @@ https://wpewebkit.org/releases/wpewebkit-2.36.2.tar.xz
 https://wpitchoune.net/psensor/files/psensor-1.2.1.tar.gz
 https://www.agner.org/optimize/asmlib.zip
 https://www.alsa-project.org/files/pub/lib/alsa-lib-1.2.10.tar.bz2
+https://www.alsa-project.org/files/pub/lib/alsa-lib-1.2.11.tar.bz2
 https://www.atoptool.nl/download/atop-2.10.0.tar.gz
 https://www.atoptool.nl/download/atop-2.9.0.tar.gz
 https://www.bytereef.org/software/mpdecimal/releases/mpdecimal-2.5.1.tar.gz
