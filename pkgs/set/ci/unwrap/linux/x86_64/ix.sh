@@ -41,7 +41,7 @@
 {% block run_deps %}
 #bin/zellij
 #bin/rio
-#bin/tvedit
+bin/tvedit
 bin/app/image/tool
 bin/cage/break
 bin/dialog

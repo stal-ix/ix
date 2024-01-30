@@ -18,3 +18,7 @@ lib/c++
 lib/kernel
 lib/curses
 {% endblock %}
+
+{% block cmake_flags %}
+TV_OPTIMIZE_BUILD=OFF
+{% endblock %}
