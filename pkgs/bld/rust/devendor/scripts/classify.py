@@ -23,11 +23,16 @@ for d in os.listdir(sys.argv[1]):
         ext = n[n.rfind('.') + 1:]
         be[ext].append(f)
 
-    bad = 0
+    bad_h = 0
+    bad_c = 0
 
-    for ext in ['c', 'h', 'cpp', 'cxx']:
+    for ext in ['h', 'hpp', 'hxx', 'hh']:
         if ext in be:
-            bad += len(be[ext])
+            bad_h += len(be[ext])
 
-    if bad > 5:
+    for ext in ['c', 'cpp', 'cxx', 'cc']:
+        if ext in be:
+            bad_c += len(be[ext])
+
+    if bad_c > 0 and (bad_h + bad_c) > 5:
         print(d)
