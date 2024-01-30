@@ -41,6 +41,7 @@
 {% block run_deps %}
 #bin/zellij
 #bin/rio
+#bin/tvedit
 bin/app/image/tool
 bin/cage/break
 bin/dialog
@@ -615,7 +616,6 @@ bin/drill
 bin/msh3app
 bin/exiv2
 bin/tree
-bin/tvedit
 bin/ntp
 bin/lsof
 bin/telegram
