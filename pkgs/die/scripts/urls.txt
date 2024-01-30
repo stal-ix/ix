@@ -1652,6 +1652,7 @@ https://gitlab.gnome.org/GNOME/gtk/-/archive/4.12.2/gtk-4.12.2.tar.bz2
 https://gitlab.gnome.org/GNOME/gtk/-/archive/4.12.3/gtk-4.12.3.tar.bz2
 https://gitlab.gnome.org/GNOME/gtk/-/archive/4.12.4/gtk-4.12.4.tar.bz2
 https://gitlab.gnome.org/GNOME/gtk/-/archive/4.12.5/gtk-4.12.5.tar.bz2
+https://gitlab.gnome.org/GNOME/gtk/-/archive/4.13.6/gtk-4.13.6.tar.bz2
 https://gitlab.gnome.org/GNOME/gtksourceview/-/archive/5.10.0/gtksourceview-5.10.0.tar.bz2
 https://gitlab.gnome.org/GNOME/gtksourceview/-/archive/5.8.0/gtksourceview-5.8.0.tar.bz2
 https://gitlab.gnome.org/GNOME/json-glib/-/archive/1.6.6/json-glib-1.6.6.tar.bz2
@@ -1838,6 +1839,7 @@ https://storage.googleapis.com/downloads.webmproject.org/releases/webp/libwebp-1
 https://storage.googleapis.com/downloads.webmproject.org/releases/webp/libwebp-1.3.2.tar.gz
 https://strace.io/files/6.5/strace-6.5.tar.xz
 https://strace.io/files/6.6/strace-6.6.tar.xz
+https://strace.io/files/6.7/strace-6.7.tar.xz
 https://taglib.org/releases/taglib-1.13.1.tar.gz
 https://the.earth.li/~sgtatham/putty/0.76/putty-0.76.tar.gz
 https://thekelleys.org.uk/dnsmasq/dnsmasq-2.89.tar.xz
