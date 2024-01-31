@@ -7,3 +7,8 @@ lib/z
 lib/darwin/framework/SystemConfiguration
 {% endif %}
 {% endblock %}
+
+{% block configure_flags %}
+{{super()}}
+--without-libpsl
+{% endblock %}

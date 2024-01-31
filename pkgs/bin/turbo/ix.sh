@@ -22,6 +22,7 @@ lib/clipboard
 {% endblock %}
 
 {% block cmake_flags %}
+TURBO_OPTIMIZE_BUILD=OFF
 TURBO_USE_SYSTEM_DEPS=ON
 TURBO_USE_SYSTEM_TVISION=ON
 {% endblock %}

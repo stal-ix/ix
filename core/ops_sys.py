@@ -11,13 +11,17 @@ import core.error as ce
 B = '/bin/bin_ix'
 
 
-def run_cmd(cmd, input=''):
+def run_cmd(cmd, input='', user='ix'):
+    if user == 'root':
+        suffix = [cmd[0]]
+    else:
+        suffix = ['/bin/su', '-s', cmd[0], user]
+
     cmd = [
         '/bin/flock', '-x', '/ix',
         '/bin/chrt', '-i', '0',
         '/bin/nice', '-n', '20',
-        '/bin/su', '-s', cmd[0], 'ix'
-    ] + cmd[1:]
+    ] + suffix + cmd[1:]
 
     if os.getuid():
         cmd = ['/bin/sudo'] + cmd
@@ -156,7 +160,7 @@ class Ops:
         run_cmd([f'{B}/assemble'], input=json.dumps(graph))
 
     def gc(self, kind):
-        run_cmd([sys.executable, self.cfg.binary, 'gc'] + kind)
+        run_cmd(['/bin/env', 'IX_EXEC_KIND=local', sys.executable, self.cfg.binary, 'gc'] + kind, user='root')
 
     def runpy(self):
         return [f'{B}/python', '-']

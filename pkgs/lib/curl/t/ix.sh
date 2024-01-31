@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://github.com/curl/curl/archive/refs/tags/curl-8_5_0.tar.gz
-sha:8117d24a8c29a0c3aa160703eb487694f3d4aa72ea2067b45beb439ea4d47668
+https://github.com/curl/curl/archive/refs/tags/curl-8_6_0.tar.gz
+sha:95d94af73fe84e6ea26480035865c83763dc54911fd4d99b0eb52bb8d165e1a6
 {% endblock %}
 
 {% block lib_deps %}
@@ -36,4 +36,9 @@ bld/auto
 {% if darwin %}
 --disable-ldap
 {% endif %}
+{% endblock %}
+
+{% block patch %}
+sed -e 's|usigned.*|unsigned char buf\[1024\];|' \
+    -i lib/curl_ntlm_wb.c
 {% endblock %}

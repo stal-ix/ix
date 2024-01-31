@@ -122,6 +122,7 @@ https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.5.8.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.5.9.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.6.1.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.6.10.tar.xz
+https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.6.14.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.6.2.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.6.3.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.6.4.tar.xz
@@ -205,6 +206,7 @@ https://download.qemu.org/qemu-8.0.0.tar.xz
 https://download.samba.org/pub/rsync/src/rsync-3.2.7.tar.gz
 https://download.samba.org/pub/samba/stable/samba-4.17.2.tar.gz
 https://download.savannah.gnu.org/releases/lzip/lzip-1.22.tar.gz
+https://download.savannah.gnu.org/releases/lzip/lzip-1.24.tar.gz
 https://download.savannah.gnu.org/releases/zutils/zutils-1.12.tar.lz
 https://download.savannah.gnu.org/releases/zutils/zutils-1.13.tar.lz
 https://download.sourceforge.net/qjackctl/qjackctl-0.9.10.tar.gz
@@ -422,6 +424,7 @@ https://git.kernel.org/pub/scm/utils/kernel/kmod/kmod.git/snapshot/kmod-30.tar.g
 https://git.kernel.org/pub/scm/utils/kernel/kmod/kmod.git/snapshot/kmod-31.tar.gz
 https://git.kernel.org/pub/scm/utils/stalld/stalld.git/snapshot/stalld-1.17.1.tar.gz
 https://git.midipix.org/slibtool/snapshot/slibtool-0.5.34.tar.bz2
+https://git.openldap.org/openldap/openldap/-/archive/LMDB_0.9.32/openldap-LMDB_0.9.32.tar.bz2
 https://git.pwmt.org/pwmt/girara/-/archive/0.4.0/girara-0.4.0.tar.bz2
 https://git.pwmt.org/pwmt/girara/-/archive/0.4.1/girara-0.4.1.tar.bz2
 https://git.pwmt.org/pwmt/girara/-/archive/0.4.2/girara-0.4.2.tar.bz2
@@ -573,6 +576,7 @@ https://github.com/Kitware/CMake/archive/refs/tags/v3.27.8.tar.gz
 https://github.com/Kitware/CMake/archive/refs/tags/v3.27.9.tar.gz
 https://github.com/Kitware/CMake/archive/refs/tags/v3.28.0.tar.gz
 https://github.com/Kitware/CMake/archive/refs/tags/v3.28.1.tar.gz
+https://github.com/Kitware/CMake/archive/refs/tags/v3.28.2.tar.gz
 https://github.com/LBCrion/sfwbar/archive/refs/tags/v1.0_beta13.tar.gz
 https://github.com/LBCrion/sfwbar/archive/refs/tags/v1.0_beta9.tar.gz
 https://github.com/LibRaw/LibRaw/archive/refs/tags/0.21.1.tar.gz
@@ -645,6 +649,7 @@ https://github.com/Z3Prover/z3/archive/refs/tags/z3-4.12.5.tar.gz
 https://github.com/a-j-wood/pv/releases/download/v1.7.24/pv-1.7.24.tar.gz
 https://github.com/abseil/abseil-cpp/archive/refs/tags/20230125.3.tar.gz
 https://github.com/abseil/abseil-cpp/archive/refs/tags/20230802.1.tar.gz
+https://github.com/abseil/abseil-cpp/archive/refs/tags/20240116.0.tar.gz
 https://github.com/adah1972/libunibreak/archive/refs/tags/libunibreak_5_1.tar.gz
 https://github.com/adobe-fonts/source-code-pro/archive/refs/tags/2.038R-ro/1.058R-it/1.018R-VAR.tar.gz
 https://github.com/adobe-fonts/source-sans/archive/refs/tags/3.046R.tar.gz
@@ -694,6 +699,7 @@ https://github.com/artemsen/swayimg/archive/refs/tags/v2.0.tar.gz
 https://github.com/arvidn/libtorrent/releases/download/v2.0.9/libtorrent-rasterbar-2.0.9.tar.gz
 https://github.com/ascent12/drm_info/archive/refs/tags/v2.3.0.tar.gz
 https://github.com/axboe/liburing/archive/refs/tags/liburing-2.2.tar.gz
+https://github.com/axel-download-accelerator/axel/archive/refs/tags/v2.17.12.tar.gz
 https://github.com/benhoyt/goawk/archive/refs/tags/v1.24.0.tar.gz
 https://github.com/benhoyt/goawk/archive/refs/tags/v1.25.0.tar.gz
 https://github.com/benhoyt/inih/archive/refs/tags/r57.tar.gz
@@ -762,6 +768,7 @@ https://github.com/curl/curl/archive/refs/tags/curl-8_2_1.tar.gz
 https://github.com/curl/curl/archive/refs/tags/curl-8_3_0.tar.gz
 https://github.com/curl/curl/archive/refs/tags/curl-8_4_0.tar.gz
 https://github.com/curl/curl/archive/refs/tags/curl-8_5_0.tar.gz
+https://github.com/curl/curl/archive/refs/tags/curl-8_6_0.tar.gz
 https://github.com/darkhz/bluetuith/archive/refs/tags/v0.1.7.tar.gz
 https://github.com/darktable-org/darktable/releases/download/release-4.0.0/darktable-4.0.0.tar.xz
 https://github.com/dboyan/wayland-tracer/archive/refs/tags/0.1.0.tar.gz
@@ -798,6 +805,7 @@ https://github.com/ericniebler/range-v3/archive/refs/tags/0.12.0.tar.gz
 https://github.com/etcd-io/etcd/archive/refs/tags/v3.4.22.tar.gz
 https://github.com/etcd-io/etcd/archive/refs/tags/v3.5.10.tar.gz
 https://github.com/etcd-io/etcd/archive/refs/tags/v3.5.11.tar.gz
+https://github.com/etcd-io/etcd/archive/refs/tags/v3.5.12.tar.gz
 https://github.com/evanw/esbuild/archive/refs/tags/v0.18.14.tar.gz
 https://github.com/evanw/esbuild/archive/refs/tags/v0.19.6.tar.gz
 https://github.com/exfatprogs/exfatprogs/archive/refs/tags/1.2.2.tar.gz
@@ -819,6 +827,7 @@ https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.5.0.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.6.0.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.6.1.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.7.0.tar.gz
+https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.7.1.tar.gz
 https://github.com/fastfloat/fast_float/archive/refs/tags/v3.8.1.tar.gz
 https://github.com/fastfloat/fast_float/archive/refs/tags/v5.2.0.tar.gz
 https://github.com/fenrus75/powertop/archive/refs/tags/v2.15.tar.gz
@@ -866,6 +875,7 @@ https://github.com/git/git/archive/refs/tags/v2.43.0.tar.gz
 https://github.com/glencoesoftware/jxrlib/archive/refs/tags/v0.2.4.tar.gz
 https://github.com/glennrp/libpng/archive/refs/tags/v1.6.40.tar.gz
 https://github.com/glennrp/libpng/archive/refs/tags/v1.6.41.tar.gz
+https://github.com/glennrp/libpng/archive/refs/tags/v1.6.42.tar.gz
 https://github.com/glfw/glfw/archive/refs/tags/3.3.8.tar.gz
 https://github.com/glfw/glfw/archive/refs/tags/3.3.9.tar.gz
 https://github.com/glmark2/glmark2/archive/refs/tags/2023.01.tar.gz
@@ -1030,6 +1040,7 @@ https://github.com/labwc/labwc/archive/refs/tags/0.6.5.tar.gz
 https://github.com/labwc/labwc/archive/refs/tags/0.6.6.tar.gz
 https://github.com/labwc/labwc/archive/refs/tags/0.7.0.tar.gz
 https://github.com/landley/toybox/archive/refs/tags/0.8.10.tar.gz
+https://github.com/lavv17/lftp/releases/download/v4.8.3/lftp-4.8.3.tar.gz
 https://github.com/lbonn/rofi/releases/download/1.7.3%2Bwayland1/rofi-1.7.3+wayland1.tar.xz
 https://github.com/leo-arch/clifm/archive/refs/tags/v1.14.5.tar.gz
 https://github.com/leo-arch/clifm/archive/refs/tags/v1.14.tar.gz
@@ -1652,6 +1663,7 @@ https://gitlab.gnome.org/GNOME/gtk/-/archive/4.12.2/gtk-4.12.2.tar.bz2
 https://gitlab.gnome.org/GNOME/gtk/-/archive/4.12.3/gtk-4.12.3.tar.bz2
 https://gitlab.gnome.org/GNOME/gtk/-/archive/4.12.4/gtk-4.12.4.tar.bz2
 https://gitlab.gnome.org/GNOME/gtk/-/archive/4.12.5/gtk-4.12.5.tar.bz2
+https://gitlab.gnome.org/GNOME/gtk/-/archive/4.13.6/gtk-4.13.6.tar.bz2
 https://gitlab.gnome.org/GNOME/gtksourceview/-/archive/5.10.0/gtksourceview-5.10.0.tar.bz2
 https://gitlab.gnome.org/GNOME/gtksourceview/-/archive/5.8.0/gtksourceview-5.8.0.tar.bz2
 https://gitlab.gnome.org/GNOME/json-glib/-/archive/1.6.6/json-glib-1.6.6.tar.bz2
@@ -1771,6 +1783,7 @@ https://nheko.im/nheko-reborn/coeurl/-/archive/v0.3.0/coeurl-v0.3.0.tar.bz2
 https://nmap.org/dist/nmap-7.93.tar.bz2
 https://nodejs.org/dist/v18.16.1/node-v18.16.1.tar.gz
 https://notroj.github.io/neon/neon-0.32.5.tar.gz
+https://notroj.github.io/neon/neon-0.33.0.tar.gz
 https://pawsa.fedorapeople.org/balsa/balsa-2.6.4.tar.xz
 https://pm-utils.freedesktop.org/releases/pm-utils-1.4.1.tar.gz
 https://poppler.freedesktop.org/poppler-23.09.0.tar.xz
@@ -1838,6 +1851,7 @@ https://storage.googleapis.com/downloads.webmproject.org/releases/webp/libwebp-1
 https://storage.googleapis.com/downloads.webmproject.org/releases/webp/libwebp-1.3.2.tar.gz
 https://strace.io/files/6.5/strace-6.5.tar.xz
 https://strace.io/files/6.6/strace-6.6.tar.xz
+https://strace.io/files/6.7/strace-6.7.tar.xz
 https://taglib.org/releases/taglib-1.13.1.tar.gz
 https://the.earth.li/~sgtatham/putty/0.76/putty-0.76.tar.gz
 https://thekelleys.org.uk/dnsmasq/dnsmasq-2.89.tar.xz
@@ -1857,6 +1871,7 @@ https://wpewebkit.org/releases/wpewebkit-2.36.2.tar.xz
 https://wpitchoune.net/psensor/files/psensor-1.2.1.tar.gz
 https://www.agner.org/optimize/asmlib.zip
 https://www.alsa-project.org/files/pub/lib/alsa-lib-1.2.10.tar.bz2
+https://www.alsa-project.org/files/pub/lib/alsa-lib-1.2.11.tar.bz2
 https://www.atoptool.nl/download/atop-2.10.0.tar.gz
 https://www.atoptool.nl/download/atop-2.9.0.tar.gz
 https://www.bytereef.org/software/mpdecimal/releases/mpdecimal-2.5.1.tar.gz
@@ -1953,6 +1968,7 @@ https://www.rarlab.com/rar/unrarsrc-7.0.4.tar.gz
 https://www.rarlab.com/rar/unrarsrc-7.0.5.tar.gz
 https://www.rarlab.com/rar/unrarsrc-7.0.6.tar.gz
 https://www.sqlite.org/2024/sqlite-autoconf-3450000.tar.gz
+https://www.sqlite.org/2024/sqlite-autoconf-3450100.tar.gz
 https://www.stunnel.org/downloads/stunnel-5.70.tar.gz
 https://www.stunnel.org/downloads/stunnel-5.71.tar.gz
 https://www.tcpdump.org/release/libpcap-1.10.4.tar.gz

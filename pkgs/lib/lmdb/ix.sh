@@ -1,8 +1,8 @@
 {% extends '//die/c/make.sh' %}
 
 {% block fetch %}
-https://www.openldap.org/software/download/OpenLDAP/openldap-release/openldap-2.6.5.tgz
-sha:2e27a8d4f4c2af8fe840b573271c20aa163e24987f9765214644290f5beb38d9
+https://git.openldap.org/openldap/openldap/-/archive/LMDB_0.9.32/openldap-LMDB_0.9.32.tar.bz2
+sha:039be48414f71299d04fb01da3e1a6461075bb77eaeeeda36ee5285de804ebf6
 {% endblock %}
 
 {% block unpack %}
