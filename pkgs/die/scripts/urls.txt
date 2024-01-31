@@ -805,6 +805,7 @@ https://github.com/ericniebler/range-v3/archive/refs/tags/0.12.0.tar.gz
 https://github.com/etcd-io/etcd/archive/refs/tags/v3.4.22.tar.gz
 https://github.com/etcd-io/etcd/archive/refs/tags/v3.5.10.tar.gz
 https://github.com/etcd-io/etcd/archive/refs/tags/v3.5.11.tar.gz
+https://github.com/etcd-io/etcd/archive/refs/tags/v3.5.12.tar.gz
 https://github.com/evanw/esbuild/archive/refs/tags/v0.18.14.tar.gz
 https://github.com/evanw/esbuild/archive/refs/tags/v0.19.6.tar.gz
 https://github.com/exfatprogs/exfatprogs/archive/refs/tags/1.2.2.tar.gz

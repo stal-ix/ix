@@ -1,11 +1,11 @@
 {% extends '//die/go/pure.sh' %}
 
 {% block go_url %}
-https://github.com/etcd-io/etcd/archive/refs/tags/v3.5.11.tar.gz
+https://github.com/etcd-io/etcd/archive/refs/tags/v3.5.12.tar.gz
 {% endblock %}
 
 {% block go_sha %}
-c85e808c4439a9683c8529a093f499dc67463c8c9a99bfed0f7dbd634cf70cda
+bed2e4571116eba2ca5c16f8f1dac800c25af335b60b36fc13c865e1c7a44a4c
 {% endblock %}
 
 {% block bld_libs %}
