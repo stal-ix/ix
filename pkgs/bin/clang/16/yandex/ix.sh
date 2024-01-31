@@ -22,7 +22,7 @@ asan_static.patch
 D92001.patch
 D21113-case-insesitive-include-paths.patch
 D142421.patch
-D149723-optimize-renamer-clang-tidy-check.patch
+{#D149723-optimize-renamer-clang-tidy-check.patch#}
 fix-build.patch
 dwarf-emit-namespaces.patch
 {% endblock %}
