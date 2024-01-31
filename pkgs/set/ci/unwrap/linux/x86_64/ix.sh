@@ -41,6 +41,7 @@
 {% block run_deps %}
 #bin/zellij
 #bin/rio
+bin/ddc/control
 bin/lftp
 bin/axel
 bin/tvedit
