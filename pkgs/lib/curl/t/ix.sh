@@ -37,3 +37,8 @@ bld/auto
 --disable-ldap
 {% endif %}
 {% endblock %}
+
+{% block patch %}
+sed -e 's|usigned.*|unsigned char buf\[1024\];|' \
+    -i lib/curl_ntlm_wb.c
+{% endblock %}
