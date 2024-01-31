@@ -767,6 +767,7 @@ https://github.com/curl/curl/archive/refs/tags/curl-8_2_1.tar.gz
 https://github.com/curl/curl/archive/refs/tags/curl-8_3_0.tar.gz
 https://github.com/curl/curl/archive/refs/tags/curl-8_4_0.tar.gz
 https://github.com/curl/curl/archive/refs/tags/curl-8_5_0.tar.gz
+https://github.com/curl/curl/archive/refs/tags/curl-8_6_0.tar.gz
 https://github.com/darkhz/bluetuith/archive/refs/tags/v0.1.7.tar.gz
 https://github.com/darktable-org/darktable/releases/download/release-4.0.0/darktable-4.0.0.tar.xz
 https://github.com/dboyan/wayland-tracer/archive/refs/tags/0.1.0.tar.gz
@@ -1037,6 +1038,7 @@ https://github.com/labwc/labwc/archive/refs/tags/0.6.5.tar.gz
 https://github.com/labwc/labwc/archive/refs/tags/0.6.6.tar.gz
 https://github.com/labwc/labwc/archive/refs/tags/0.7.0.tar.gz
 https://github.com/landley/toybox/archive/refs/tags/0.8.10.tar.gz
+https://github.com/lavv17/lftp/releases/download/v4.8.3/lftp-4.8.3.tar.gz
 https://github.com/lbonn/rofi/releases/download/1.7.3%2Bwayland1/rofi-1.7.3+wayland1.tar.xz
 https://github.com/leo-arch/clifm/archive/refs/tags/v1.14.5.tar.gz
 https://github.com/leo-arch/clifm/archive/refs/tags/v1.14.tar.gz

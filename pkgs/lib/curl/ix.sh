@@ -14,3 +14,9 @@ aux/ca/bundle
 --with-ca-bundle="${CA_BUNDLE}"
 --enable-manual
 {% endblock %}
+
+{% block patch %}
+{{super()}}
+sed -e 's|usigned.*|unsigned char buf\[1024\];|' \
+    -i lib/curl_ntlm_wb.c
+{% endblock %}
