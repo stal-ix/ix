@@ -27,14 +27,9 @@ ln -s libefisec.so src/libefisec.a
 _GNU_SOURCE=1
 {% endblock %}
 
-{% block cpp_includes %}
-${PWD}
-{% endblock %}
-
 {% block make_flags %}
 AR=llvm-ar
 NM=llvm-ar
-LD_DASH_T=-T
 LIBDIR=${out}/lib
 RANLIB=llvm-ranlib
 {% endblock %}
