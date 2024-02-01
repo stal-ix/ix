@@ -29,8 +29,7 @@ cat << EOF > sys/cdefs.h
 #define on_exit(a, b)
 EOF
 
-sed -e 's|all : $(TARGETS)|all : $(STATICTARGETS)|' \
-    -e 's|$(LD_DASH_T)|-T|' -i src/Makefile
+sed -e 's|all : $(TARGETS)|all : $(STATICTARGETS)|' -i src/Makefile
 
 find . -type f | while read l; do
     sed -e 's|--add-needed|--as-needed|' \
@@ -45,6 +44,10 @@ _GNU_SOURCE=1
 
 {% block cpp_includes %}
 ${PWD}
+{% endblock %}
+
+{% block make_flags %}
+LD_DASH_T=-T
 {% endblock %}
 
 {% block build %}
@@ -71,6 +74,6 @@ find . -type f -name '*.pc' | while read l; do
 done
 {% endblock %}
 
-{% block env_lib %}
+{% block env %}
 export CPPFLAGS="-I${out}/include/efivar \${CPPFLAGS}"
 {% endblock %}
