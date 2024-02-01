@@ -18,22 +18,20 @@ lib/kernel
 bin/mandoc
 {% endblock %}
 
-{% block setup_tools %}
-ln -s $(which ar) gcc-ar
-{% endblock %}
-
 {% block patch %}
+ln -s libefivar.so src/libefivar.a
+ln -s libefisec.so src/libefisec.a
+
+sed -e 's|.*add-need.*|\\|' -i src/include/defaults.mk
+
 mkdir sys
 
 cat << EOF > sys/cdefs.h
 #define on_exit(a, b)
 EOF
 
-sed -e 's|all : $(TARGETS)|all : $(STATICTARGETS)|' -i src/Makefile
-
 find . -type f | while read l; do
-    sed -e 's|--add-needed|--as-needed|' \
-        -e 's|efi_well_known_guids_|efi_well_known_guids|g' \
+    sed -e 's|efi_well_known_guids_|efi_well_known_guids|g' \
         -e 's|%s_\[|%s\[|g' -i ${l}
 done
 {% endblock %}
@@ -47,26 +45,22 @@ ${PWD}
 {% endblock %}
 
 {% block make_flags %}
+AR=llvm-ar
+NM=llvm-ar
 LD_DASH_T=-T
 LIBDIR=${out}/lib
+RANLIB=llvm-ranlib
 {% endblock %}
 
-{% block build %}
-{{super()}}
-
-cd src
-
-mv efivar-static efivar
-mv efisecdb-static efisecdb
-
->libefivar.so
->libefiboot.so
->libefisec.so
+{% block build_flags %}
+wrap_cc
 {% endblock %}
 
 {% block install %}
 {{super()}}
-cp src/*.a ${out}/lib/
+cp ${out}/lib/libefivar.so ${out}/lib/libefivar.a
+cp ${out}/lib/libefisec.so ${out}/lib/libefisec.a
+cp ${out}/lib/libefiboot.so ${out}/lib/libefiboot.a
 {% endblock %}
 
 {% block env %}
