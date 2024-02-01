@@ -5,7 +5,11 @@ https://github.com/eza-community/eza/archive/refs/tags/v0.18.0.tar.gz
 {% endblock %}
 
 {% block cargo_sha %}
-222e66d5f879bb5fbaa29af6afd1dc30ac9217864c4d850fb0f289770f144d18
+10e604ce279bcf2ed05ec57aab317edb4a7482f4ba61a666319085d523167232
+{% endblock %}
+
+{% block cargo_refine %}
+find . -type l -delete
 {% endblock %}
 
 {% block bld_libs %}
