@@ -7,7 +7,7 @@ sha:adb9f040b10fe0a7c1a4317b4c9b404f6db66631754300fc364003779312a0b1
 
 {% block bld_libs %}
 lib/c
-lib/pciutils
+lib/pci/utils
 {% endblock %}
 
 {% block install %}

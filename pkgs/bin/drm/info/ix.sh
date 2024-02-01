@@ -9,5 +9,5 @@ sha:cb7e060f8f3e444cfbeb56480ad991ab13cc13bf43af6fbff576ffa54746500c
 lib/c
 lib/drm
 lib/json/c
-lib/pciutils
+lib/pci/utils
 {% endblock %}

@@ -1,4 +1,4 @@
-{% extends '//lib/pciutils/ix.sh' %}
+{% extends '//lib/pci/utils/ix.sh' %}
 
 {% block bld_libs %}
 lib/z

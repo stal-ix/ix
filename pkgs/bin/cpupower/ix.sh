@@ -4,7 +4,7 @@
 
 {% block lib_deps %}
 lib/c
-lib/pciutils
+lib/pci/utils
 {% endblock %}
 
 {% block unpack %}

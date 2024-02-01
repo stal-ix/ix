@@ -21,7 +21,7 @@ lib/pango
 lib/cairo
 lib/opengl
 lib/wayland
-lib/pciutils
+lib/pci/utils
 lib/xkb/common
 lib/shim/extra
 lib/shim/queue

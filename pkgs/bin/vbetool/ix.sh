@@ -12,7 +12,7 @@ lib/c
 lib/z
 lib/x86
 lib/kernel
-lib/pciutils
+lib/pci/utils
 {% endblock %}
 
 {% block patch %}
