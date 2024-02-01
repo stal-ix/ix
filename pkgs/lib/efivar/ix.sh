@@ -23,12 +23,6 @@ ln -s libefivar.so src/libefivar.a
 ln -s libefisec.so src/libefisec.a
 
 sed -e 's|.*add-need.*|\\|' -i src/include/defaults.mk
-
-mkdir sys
-
-cat << EOF > sys/cdefs.h
-#define on_exit(a, b)
-EOF
 {% endblock %}
 
 {% block cpp_defines %}
