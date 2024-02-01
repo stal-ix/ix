@@ -23,3 +23,11 @@ bld/bison
 --disable-nls
 --disable-readline
 {% endblock %}
+
+{% block configure %}
+{{super()}}
+cat << EOF > examples/loadables/Makefile
+all:
+install:
+EOF
+{% endblock %}
