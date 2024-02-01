@@ -1546,6 +1546,7 @@ https://github.com/vslavik/poedit/releases/download/v3.4-oss/poedit-3.4.tar.gz
 https://github.com/vslavik/poedit/releases/download/v3.4.1-oss/poedit-3.4.1.tar.gz
 https://github.com/vslavik/poedit/releases/download/v3.4.2-oss/poedit-3.4.2.tar.gz
 https://github.com/vstakhov/libucl/archive/refs/tags/0.8.2.tar.gz
+https://github.com/vstakhov/libucl/archive/refs/tags/0.9.0.tar.gz
 https://github.com/warmcat/libwebsockets/archive/refs/tags/v4.3.2.tar.gz
 https://github.com/wasmx/fizzy/archive/refs/tags/v0.8.0.tar.gz
 https://github.com/webmproject/libvpx/archive/refs/tags/v1.13.0.tar.gz
