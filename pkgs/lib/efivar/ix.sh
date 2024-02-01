@@ -29,15 +29,12 @@ mkdir sys
 cat << EOF > sys/cdefs.h
 #define on_exit(a, b)
 EOF
-
-find . -type f | while read l; do
-    sed -e 's|efi_well_known_guids_|efi_well_known_guids|g' \
-        -e 's|%s_\[|%s\[|g' -i ${l}
-done
 {% endblock %}
 
 {% block cpp_defines %}
 _GNU_SOURCE=1
+efi_well_known_guids_=efi_well_known_guids
+efi_well_known_names_=efi_well_known_names
 {% endblock %}
 
 {% block cpp_includes %}
