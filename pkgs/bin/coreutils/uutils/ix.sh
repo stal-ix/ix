@@ -5,7 +5,11 @@ https://github.com/uutils/coreutils/archive/refs/tags/0.0.24.tar.gz
 {% endblock %}
 
 {% block cargo_sha %}
-04bb8f70be540a285f66d054be5ce214ed71958285853bf4e4a9d02a82db15e0
+f034c64560ebb78eb05c6f7a054eddbaa674ddedfc669c64a6659d13d280c143
+{% endblock %}
+
+{% block cargo_refine %}
+find . -type l -delete
 {% endblock %}
 
 {% block bld_libs %}
