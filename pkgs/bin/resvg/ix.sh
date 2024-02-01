@@ -5,7 +5,11 @@ https://github.com/RazrFalcon/resvg/archive/refs/tags/v0.38.0.tar.gz
 {% endblock %}
 
 {% block cargo_sha %}
-0332056e6b0fbf4ca3a0e40a546b1de392475f6fb55beb366bb92878f55a61d8
+34df5b2c28692f6a1a3682ece117c8ff5e1a2472f40ba0d061c5a8b590ba0f11
+{% endblock %}
+
+{% block cargo_refine %}
+find . -type l -delete
 {% endblock %}
 
 {% block unpack %}
