@@ -5,7 +5,11 @@ https://github.com/etcd-io/etcd/archive/refs/tags/v3.5.12.tar.gz
 {% endblock %}
 
 {% block go_sha %}
-bed2e4571116eba2ca5c16f8f1dac800c25af335b60b36fc13c865e1c7a44a4c
+0ee53a376f2d4cf28ddcda15b4fd278e0c8aa5e3432683a673a296f31036f305
+{% endblock %}
+
+{% block go_refine %}
+find . -type l -delete
 {% endblock %}
 
 {% block bld_libs %}
