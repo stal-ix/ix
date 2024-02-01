@@ -1,8 +1,8 @@
 {% extends '//die/c/make.sh' %}
 
 {% block fetch %}
-https://github.com/rhboot/efivar/archive/refs/tags/38.tar.gz
-sha:e3bbde37238bd47af1fcf270dc0ef1f4be030d86364c917b93669222ec52bbea
+https://github.com/rhboot/efivar/archive/refs/tags/39.tar.gz
+sha:c9edd15f2eeeea63232f3e669a48e992c7be9aff57ee22672ac31f5eca1609a6
 {% endblock %}
 
 {% block lib_deps %}
@@ -33,8 +33,6 @@ EOF
 
 {% block cpp_defines %}
 _GNU_SOURCE=1
-efi_well_known_guids_=efi_well_known_guids
-efi_well_known_names_=efi_well_known_names
 {% endblock %}
 
 {% block cpp_includes %}
