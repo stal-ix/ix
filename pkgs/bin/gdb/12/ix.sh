@@ -1,4 +1,4 @@
-{% extends '//bin/gdb/14/ix.sh' %}
+{% extends '//bin/gdb/13/ix.sh' %}
 
 {% block fetch %}
 https://ftp.gnu.org/gnu/gdb/gdb-12.1.tar.xz
