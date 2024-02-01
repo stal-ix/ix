@@ -33,9 +33,6 @@ class Ops:
     def fetch(self, sb, url, path, md5):
         return self.misc_cmd(sb, 'fetch', url, path, md5, *sb.package.manager.mirrors)
 
-    def cksum(self, sb, fr, to, md5):
-        return self.misc_cmd(sb, 'cksum', fr, to, md5)
-
     def link(self, sb, files, out):
         return self.misc_cmd(sb, 'link', out, *files)
 

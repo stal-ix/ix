@@ -67,14 +67,11 @@ def gen_one_sum(path, cksum):
     }
 
 
-def gen_cksum(fr, to, md5):
+def gen_cksum(fr, md5):
     if len(md5) < 16:
         yield from gen_show_cksum(fr)
     else:
         yield from gen_one_sum(fr, md5)
-
-        if to:
-            yield from gen_link(fr, to)
 
 
 def gen_fetch_curl(url, path, md5):
@@ -88,7 +85,7 @@ def gen_fetch_curl(url, path, md5):
         '-k', '-L', '-o', path, url,
     ]
 
-    yield from gen_cksum(path, '', md5)
+    yield from gen_cksum(path, md5)
 
 
 def gen_mirrors(sb, url, md5):
@@ -136,11 +133,6 @@ def gen_links(files, out):
         yield ['/bin/ln', x, os.path.join(out, os.path.basename(x))]
 
 
-def gen_link(fr, to):
-    yield from gen_dir(os.path.dirname(to))
-    yield ['/bin/ln', fr, to]
-
-
 def gen_predict_checks(pred):
     for p in pred:
         yield from gen_one_sum(p['path'], p['sum'])
@@ -170,9 +162,6 @@ class Ops:
 
     def fetch(self, sb, url, path, md5):
         return sb.cmds(gen_fetch(sb, url, path, md5))
-
-    def cksum(self, sb, fr, to, md5):
-        return sb.cmds(gen_cksum(fr, to, md5))
 
     def link(self, sb, files, out):
         return sb.cmds(gen_links(files, out))

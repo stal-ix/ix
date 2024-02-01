@@ -110,20 +110,6 @@ def cmd_fetch(sb, url, cksum):
     }
 
 
-def cmd_check(sb, path, cksum):
-    out_dir = os.path.join(sb.config.store_dir, cs.gen_udir('chk'))
-    new_path = os.path.join(out_dir, os.path.basename(path))
-    script = sb.config.ops.cksum(sb, path, new_path, cksum)
-
-    return {
-        'in_dir': [os.path.dirname(path)],
-        'out_dir': [out_dir],
-        'cmd': script,
-        'path': new_path,
-        'pool': 'misc',
-    }
-
-
 def cmd_link(sb, extra):
     out_dir = os.path.join(sb.config.store_dir, cs.gen_udir('lnk'))
     script = sb.config.ops.link(sb, [x['path'] for x in extra], out_dir)
@@ -154,11 +140,7 @@ def iter_build_commands(self):
 
             yield f
 
-            c = sb.fix(cmd_check(sb, f['path'], ui['md5']))
-
-            yield c
-
-            extra.append(c)
+            extra.append(f)
 
         cmd = sb.fix(cmd_link(sb, extra))
 
