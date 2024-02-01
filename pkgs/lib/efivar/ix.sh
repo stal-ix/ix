@@ -48,6 +48,7 @@ ${PWD}
 
 {% block make_flags %}
 LD_DASH_T=-T
+LIBDIR=${out}/lib
 {% endblock %}
 
 {% block build %}
@@ -65,13 +66,7 @@ mv efisecdb-static efisecdb
 
 {% block install %}
 {{super()}}
-
-cp src/*.a ${out}/lib64/
-cd ${out}; mv lib64 lib
-
-find . -type f -name '*.pc' | while read l; do
-    sed -e 's|lib64|lib|' -i ${l}
-done
+cp src/*.a ${out}/lib/
 {% endblock %}
 
 {% block env %}
