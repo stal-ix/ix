@@ -5,10 +5,16 @@ lib/llvm/16/tblgen
 {{super()}}
 {% endblock %}
 
+{% block cmake_flags %}
+{{super()}}
+LLVM_ENABLE_PROJECTS="clang;clang;clang-tools-extra;lld;polly"
+{% endblock %}
+
 {% block llvm_targets %}
 {{super()}}
 clang-format
 clang-rename
+clang-tidy
 llvm-cov
 llvm-profdata
 llvm-rc
