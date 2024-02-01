@@ -21,8 +21,6 @@ bin/mandoc
 {% block patch %}
 ln -s libefivar.so src/libefivar.a
 ln -s libefisec.so src/libefisec.a
-
-sed -e 's|.*add-need.*|\\|' -i src/include/defaults.mk
 {% endblock %}
 
 {% block cpp_defines %}
