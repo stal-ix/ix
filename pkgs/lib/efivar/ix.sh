@@ -18,11 +18,6 @@ lib/kernel
 bin/mandoc
 {% endblock %}
 
-{% block patch %}
-ln -s libefivar.so src/libefivar.a
-ln -s libefisec.so src/libefisec.a
-{% endblock %}
-
 {% block cpp_defines %}
 _GNU_SOURCE=1
 {% endblock %}
@@ -33,6 +28,12 @@ LIBDIR=${out}/lib
 
 {% block build_flags %}
 wrap_cc
+{% endblock %}
+
+{% block build %}
+ln -s libefivar.so src/libefivar.a
+ln -s libefisec.so src/libefisec.a
+{{super()}}
 {% endblock %}
 
 {% block install %}
