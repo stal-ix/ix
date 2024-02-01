@@ -28,10 +28,7 @@ _GNU_SOURCE=1
 {% endblock %}
 
 {% block make_flags %}
-AR=llvm-ar
-NM=llvm-ar
 LIBDIR=${out}/lib
-RANLIB=llvm-ranlib
 {% endblock %}
 
 {% block build_flags %}
