@@ -195,7 +195,7 @@ bin/empty
 bin/zutils
 set/system/0
 bin/dinit
-#bin/sbcl
+bin/sbcl
 bin/i2pd
 bin/lite/xl
 bin/gparted
