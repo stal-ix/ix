@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/libsdl-org/SDL/releases/download/release-2.28.5/SDL2-2.28.5.tar.gz
-sha:332cb37d0be20cb9541739c61f79bae5a477427d79ae85e352089afdaf6666e4
+https://github.com/libsdl-org/SDL/archive/refs/tags/release-2.30.0.tar.gz
+sha:b4be19b703cbf65a8a11f0a37feee9c5d064238eb19f5cf237e0d8d6af1cc0a7
 {% endblock %}
 
 {% block lib_deps %}
