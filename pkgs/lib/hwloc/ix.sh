@@ -7,8 +7,8 @@ sha:2070e963596a2421b9af8eca43bdec113ee1107aaf7ccb475d4d3767a8856887
 
 {% block lib_deps %}
 lib/c
-lib/pciutils
-lib/pciaccess
+lib/pci/utils
+lib/pci/access
 {% endblock %}
 
 {% block bld_libs %}

@@ -10,7 +10,7 @@ lib/c
 lib/glib
 lib/xml/2
 lib/kernel
-lib/pciutils
+lib/pci/utils
 {% endblock %}
 
 {% block bld_tool %}

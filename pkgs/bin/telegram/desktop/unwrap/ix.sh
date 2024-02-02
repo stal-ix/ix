@@ -98,9 +98,6 @@ done
 
 sed -e 's|Q_OS_LINUX|SHIT|' -i Telegram/lib_base/base/platform/linux/base_info_linux.cpp
 
-sed -e 's|webrtc::InitPipewireStubs()|true|' \
-    -i Telegram/lib_webrtc/webrtc/webrtc_media_devices.cpp
-
 >Telegram/lib_ui/ui/text/qtextitemint.cpp
 
 cat << EOF >> Telegram/SourceFiles/stdafx.h

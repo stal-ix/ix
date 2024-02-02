@@ -1,8 +1,8 @@
 {% extends '//die/c/make.sh' %}
 
 {% block fetch %}
-https://github.com/rhboot/efivar/archive/refs/tags/38.tar.gz
-sha:e3bbde37238bd47af1fcf270dc0ef1f4be030d86364c917b93669222ec52bbea
+https://github.com/rhboot/efivar/archive/refs/tags/39.tar.gz
+sha:c9edd15f2eeeea63232f3e669a48e992c7be9aff57ee22672ac31f5eca1609a6
 {% endblock %}
 
 {% block lib_deps %}
@@ -18,59 +18,31 @@ lib/kernel
 bin/mandoc
 {% endblock %}
 
-{% block setup_tools %}
-ln -s $(which ar) gcc-ar
-{% endblock %}
-
-{% block patch %}
-mkdir sys
-
-cat << EOF > sys/cdefs.h
-#define on_exit(a, b)
-EOF
-
-sed -e 's|all : $(TARGETS)|all : $(STATICTARGETS)|' \
-    -e 's|$(LD_DASH_T)|-T|' -i src/Makefile
-
-find . -type f | while read l; do
-    sed -e 's|--add-needed|--as-needed|' \
-        -e 's|efi_well_known_guids_|efi_well_known_guids|g' \
-        -e 's|%s_\[|%s\[|g' -i ${l}
-done
-{% endblock %}
-
 {% block cpp_defines %}
 _GNU_SOURCE=1
 {% endblock %}
 
-{% block cpp_includes %}
-${PWD}
+{% block make_flags %}
+LIBDIR=${out}/lib
+{% endblock %}
+
+{% block build_flags %}
+wrap_cc
 {% endblock %}
 
 {% block build %}
+ln -s libefivar.so src/libefivar.a
+ln -s libefisec.so src/libefisec.a
 {{super()}}
-
-cd src
-
-mv efivar-static efivar
-mv efisecdb-static efisecdb
-
->libefivar.so
->libefiboot.so
->libefisec.so
 {% endblock %}
 
 {% block install %}
 {{super()}}
-
-cp src/*.a ${out}/lib64/
-cd ${out}; mv lib64 lib
-
-find . -type f -name '*.pc' | while read l; do
-    sed -e 's|lib64|lib|' -i ${l}
-done
+cp ${out}/lib/libefivar.so ${out}/lib/libefivar.a
+cp ${out}/lib/libefisec.so ${out}/lib/libefisec.a
+cp ${out}/lib/libefiboot.so ${out}/lib/libefiboot.a
 {% endblock %}
 
-{% block env_lib %}
+{% block env %}
 export CPPFLAGS="-I${out}/include/efivar \${CPPFLAGS}"
 {% endblock %}

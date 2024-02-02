@@ -1,0 +1,11 @@
+#!/usr/bin/env sh
+
+set -xue
+
+cd "${1}"
+
+cat links | while read l; do
+    ln -s ${l}
+done
+
+rm links

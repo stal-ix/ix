@@ -11,12 +11,13 @@ https://github.com/SerenityOS/serenity
 {% endblock %}
 
 {% block git_sha %}
-bbea03a262d45619cb2512f27bacbdbaf3c2ede72473b1cad5eec9c71d3fc24b
+fd0cfa9fc9eaf6c642c893f7abed6444f63c5f4451d5ddc5be42f13ca6e5caa0
 {% endblock %}
 
 {% block git_refine %}
 rm Base/usr/bin/env
 rm Base/bin/more
+find . -type l -delete
 {% endblock %}
 
 {% block step_unpack %}

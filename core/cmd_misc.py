@@ -110,20 +110,6 @@ def check_md5(path, old_cs):
         raise ce.Error(f'got {cs_col} checksum, not {old_cs}')
 
 
-def cli_misc_cksum(ctx):
-    args = ctx['args']
-
-    old = args[0]
-    new = args[1]
-    md5 = args[2]
-
-    print(f'check {old} checksum, expect {md5}')
-
-    check_md5(old, md5)
-    prepare_dir(os.path.dirname(new))
-    os.link(old, new)
-
-
 def cli_misc_link(ctx):
     args = ctx['args']
 

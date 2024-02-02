@@ -8,7 +8,7 @@ sha:3bf55363f76c7250946441ab51d3a6cc0ae518055c0ff017324ab76cdefb327a
 {% block lib_deps %}
 lib/c
 lib/kernel
-lib/pciaccess
+lib/pci/access
 {% if not x86_64 %}
 lib/atomic/ops
 {% endif %}

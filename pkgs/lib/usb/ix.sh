@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://github.com/libusb/libusb/releases/download/v1.0.26/libusb-1.0.26.tar.bz2
-sha:12ce7a61fc9854d1d2a1ffe095f7b5fac19ddba095c259e6067a46500381b5a5
+https://github.com/libusb/libusb/releases/download/v1.0.27/libusb-1.0.27.tar.bz2
+sha:ffaa41d741a8a3bee244ac8e54a72ea05bf2879663c098c82fc5757853441575
 {% endblock %}
 
 {% block lib_deps %}
@@ -14,6 +14,6 @@ lib/udev
 lib/kernel
 {% endblock %}
 
-{% block env_lib %}
+{% block env %}
 export CPPFLAGS="-I${out}/include/libusb-1.0 \${CPPFLAGS}"
 {% endblock %}

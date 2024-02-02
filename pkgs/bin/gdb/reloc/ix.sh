@@ -1,4 +1,4 @@
-{% extends '//bin/gdb/ix.sh' %}
+{% extends '//bin/gdb/14/ix.sh' %}
 
 {% block bld_data %}
 {{super()}}

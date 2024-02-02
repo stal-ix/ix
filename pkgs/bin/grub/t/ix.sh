@@ -13,7 +13,7 @@ lib/usb
 lib/intl
 lib/kernel
 lib/fuse/2
-lib/pciaccess
+lib/pci/access
 lib/device/mapper
 {% endblock %}
 

@@ -1,11 +1,11 @@
 {% extends '//die/go/pure.sh' %}
 
 {% block go_url %}
-https://github.com/junegunn/fzf/archive/refs/tags/0.46.0.tar.gz
+https://github.com/junegunn/fzf/archive/refs/tags/0.46.1.tar.gz
 {% endblock %}
 
 {% block go_sha %}
-ceeec5cc3211974859ca539e4c6c81f6fd1ca173446843c51cc24e4bfd23ae62
+f0fef9ed0127e98628c60ccf50a23cfb343af7a95fcdaeea159df0fcf1b92e61
 {% endblock %}
 
 {% block go_refine %}

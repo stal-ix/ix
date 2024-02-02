@@ -5,7 +5,11 @@ https://github.com/alecthomas/chroma/archive/refs/tags/v2.9.1.tar.gz
 {% endblock %}
 
 {% block go_sha %}
-814eeacad9e95629b7dffedc9ce3cea848379989ab91553e57d8bc983704e548
+99d7f94f7c115ed9f69b4b521efcc5615318d2dce4d436a0435dce643513795f
+{% endblock %}
+
+{% block go_refine %}
+find . -type l -delete
 {% endblock %}
 
 {% block unpack %}

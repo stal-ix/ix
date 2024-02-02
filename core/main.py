@@ -21,7 +21,6 @@ CLIS = [
     ('core.cmd_tool', 'tool', False),
     ('core.cmd_misc', 'misc_extract', True),
     ('core.cmd_misc', 'misc_fetch', True),
-    ('core.cmd_misc', 'misc_cksum', True),
     ('core.cmd_misc', 'misc_link', True),
 ]
 

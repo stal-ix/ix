@@ -15,7 +15,7 @@ lib/chafa
 lib/sqlite/3
 lib/wayland/dl
 #lib/drivers/3d
-lib/pciutils/dl
+lib/pci/utils/dl
 lib/image/magick
 lib/vulkan/headers
 lib/vulkan/loader/dl

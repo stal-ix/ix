@@ -3,8 +3,8 @@ Significantly speeds up readability-identifier-naming check
 (at least in one case from 8-9 min to 9 sec),
 also should speed up other checks related to identifier renaming.
 
---- a/tools/extra/clang-tidy/utils/RenamerClangTidyCheck.h
-+++ b/tools/extra/clang-tidy/utils/RenamerClangTidyCheck.h
+--- a/clang-tools-extra/clang-tidy/utils/RenamerClangTidyCheck.h
++++ b/clang-tools-extra/clang-tidy/utils/RenamerClangTidyCheck.h
 @@ -102,24 +102,26 @@
      NamingCheckFailure() = default;
    };
@@ -36,8 +36,8 @@ also should speed up other checks related to identifier renaming.
  
  protected:
    /// Overridden by derived classes, returns information about if and how a Decl
---- a/tools/extra/clang-tidy/utils/RenamerClangTidyCheck.cpp
-+++ b/tools/extra/clang-tidy/utils/RenamerClangTidyCheck.cpp
+--- a/clang-tools-extra/clang-tidy/utils/RenamerClangTidyCheck.cpp
++++ b/clang-tools-extra/clang-tidy/utils/RenamerClangTidyCheck.cpp
 @@ -9,6 +9,7 @@
  #include "RenamerClangTidyCheck.h"
  #include "ASTUtils.h"

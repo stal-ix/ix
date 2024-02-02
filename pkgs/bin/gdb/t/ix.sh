@@ -1,9 +1,5 @@
 {% extends '//die/c/autohell.sh' %}
 
-{% block fetch %}
-{% include 'ver.sh' %}
-{% endblock %}
-
 {% block bld_libs %}
 lib/c
 lib/z

@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 
-set -ue
+set -xue
 
 lz4 -d "${1}" - | bsdtar -x -f - --no-same-permissions --no-same-owner --strip-components 1
 chrw .

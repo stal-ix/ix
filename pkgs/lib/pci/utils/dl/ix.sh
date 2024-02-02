@@ -1,7 +1,7 @@
 {% extends '//die/dl/lib.sh' %}
 
 {% block lib_deps %}
-lib/pciutils
+lib/pci/utils
 {% endblock %}
 
 {% block export_libs %}
