@@ -1,0 +1,4 @@
+#!/usr/bin/env sh
+
+store_links "${3}"
+exec stable_pack "${@}"

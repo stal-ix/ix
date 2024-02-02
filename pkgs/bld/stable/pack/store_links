@@ -1,0 +1,13 @@
+#!/usr/bin/env sh
+
+set -xue
+
+cd ${1}
+
+find . -type l | sort | while read l; do
+    echo $(readlink ${l}) ${l}
+done > links
+
+cat links
+
+find . -type l -delete
