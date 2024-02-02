@@ -1,8 +1,8 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://git.sr.ht/~emersion/kanshi/archive/v1.5.0.tar.gz
-sha:303676479dbd944204632e4baf7c20cf74ab8d9b218d98ffc531650632e8fc56
+https://git.sr.ht/~emersion/kanshi/archive/v1.5.1.tar.gz
+sha:d403d2a99170261baa6606336724bc9721f779dc39294d2e088745d7bd41f427
 {% endblock %}
 
 {% block bld_libs %}

@@ -447,6 +447,7 @@ https://git.sr.ht/~delthas/senpai/archive/v0.3.0.tar.gz
 https://git.sr.ht/~emersion/basu/archive/v0.2.1.tar.gz
 https://git.sr.ht/~emersion/grim/archive/v1.4.1.tar.gz
 https://git.sr.ht/~emersion/kanshi/archive/v1.5.0.tar.gz
+https://git.sr.ht/~emersion/kanshi/archive/v1.5.1.tar.gz
 https://git.sr.ht/~emersion/kanshi/refs/download/v1.3.1/kanshi-1.3.1.tar.gz
 https://git.sr.ht/~exec64/imv/archive/v4.4.0.tar.gz
 https://git.sr.ht/~kennylevinsen/greetd/archive/0.9.0.tar.gz
