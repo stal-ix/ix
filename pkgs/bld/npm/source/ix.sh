@@ -7,7 +7,7 @@ sha:7a6c27c9c0fe6f39069365c33a93e43f5ae2b09f80943ec9309240f809440128
 
 {% block use_network %}true{% endblock %}
 
-{% set sum %}a0a77a457e4c11a79710f484f551bbbdf547a0e05db7012655941961a8bdf7e6{% endset %}
+{% set sum %}a7eda19befd096018b45f6b59ad8d9fa79debb8ed05050fe3668c65395ca4134{% endset %}
 
 {% block predict_outputs %}
 [{"path": "share/npm.tar.lz4", "sum": "{{sum}}"}]
@@ -22,6 +22,11 @@ bld/stable/pack
 node workspaces/arborist/bin/index.js reify
 node bin/npm-cli.js install
 rm -rf undefined
+echo '------------------------'
+find . -type l | sort | while read l; do
+    echo $(readlink ${l}) ${l}
+done > links
+cat links
 find . -type l -delete
 stable_pack {{sum}} ${tmp}/npm.tar.lz4 .
 {% endblock %}
