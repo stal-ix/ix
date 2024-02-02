@@ -1807,6 +1807,7 @@ https://poppler.freedesktop.org/poppler-23.10.0.tar.xz
 https://poppler.freedesktop.org/poppler-23.11.0.tar.xz
 https://poppler.freedesktop.org/poppler-23.12.0.tar.xz
 https://poppler.freedesktop.org/poppler-24.01.0.tar.xz
+https://poppler.freedesktop.org/poppler-24.02.0.tar.xz
 https://pwmt.org/projects/zathura-djvu/download/zathura-djvu-0.2.9.tar.xz
 https://pwmt.org/projects/zathura-pdf-poppler/download/zathura-pdf-poppler-0.3.1.tar.xz
 https://raw.githubusercontent.com/AppImageCommunity/libappimage/9c1fae809dedbb3015e9cd5b46e2b5aab06df36e/src/patches/squashfuse.patch
