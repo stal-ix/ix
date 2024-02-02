@@ -7,14 +7,18 @@ lib/llvm/16/tblgen
 
 {% block cmake_flags %}
 {{super()}}
-LLVM_ENABLE_PROJECTS="clang;clang;clang-tools-extra;lld;polly"
+{% if linux and x86_64 %}
+LLVM_ENABLE_PROJECTS="clang;clang-tools-extra;lld;polly"
+{% endif %}
 {% endblock %}
 
 {% block llvm_targets %}
 {{super()}}
 clang-format
 clang-rename
+{% if linux and x86_64 %}
 clang-tidy
+{% endif %}
 llvm-cov
 llvm-profdata
 llvm-rc
