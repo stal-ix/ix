@@ -9,7 +9,11 @@ v0.17.0
 {% endblock %}
 
 {% block git_sha %}
-bfe46a426d376965e14dd78189b24e1594880d7ba1c48fd008ba4985467f90a1
+84bd7a94299ecc5f0d3dec81011dc0bff8b770da60b1fb92404e4dd5feb6443a
+{% endblock %}
+
+{% block git_refine %}
+find . -type l -delete
 {% endblock %}
 
 {% block bld_libs %}
