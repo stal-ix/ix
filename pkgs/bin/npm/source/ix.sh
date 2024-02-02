@@ -7,7 +7,7 @@ sha:d8c7bf11ea8c0cf13b936e8ad936358745a682f3f64fc22e5c50d48f06966f66
 
 {% block use_network %}true{% endblock %}
 
-{% set sum %}68f9d0a5c7fd24162ce6a11dede376402f41f3652d84b8104c100a1b44aad7ec{% endset %}
+{% set sum %}2c431a7fb7c04a5f400f7ba0dca221fdb94b4b3a070fac53db8017fa1b6532c6{% endset %}
 
 {% block predict_outputs %}
 [{"path": "share/npm_2.tar.lz4", "sum": "{{sum}}"}]
@@ -21,8 +21,7 @@ bld/stable/pack
 {% block build %}
 npm install
 rm -rf undefined
-find . -type l -delete
-stable_pack {{sum}} ${tmp}/npm_2.tar.lz4 .
+stable_pack_2 {{sum}} ${tmp}/npm_2.tar.lz4 .
 {% endblock %}
 
 {% block install %}
