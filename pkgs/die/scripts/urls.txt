@@ -363,6 +363,7 @@ https://ftp.gnu.org/gnu/libidn/libidn-1.42.tar.gz
 https://ftp.gnu.org/gnu/libidn/libidn2-2.3.4.tar.gz
 https://ftp.gnu.org/gnu/libidn/libidn2-2.3.7.tar.gz
 https://ftp.gnu.org/gnu/libmicrohttpd/libmicrohttpd-0.9.76.tar.gz
+https://ftp.gnu.org/gnu/libmicrohttpd/libmicrohttpd-1.0.0.tar.gz
 https://ftp.gnu.org/gnu/libsigsegv/libsigsegv-2.13.tar.gz
 https://ftp.gnu.org/gnu/libtasn1/libtasn1-4.19.0.tar.gz
 https://ftp.gnu.org/gnu/libunistring/libunistring-1.1.tar.xz
