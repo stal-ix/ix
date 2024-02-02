@@ -11,11 +11,7 @@ bld/stable/unpack
 {% block install %}
 mkdir -p ${out}/bin/bin_npm
 cd ${out}/bin/bin_npm
-stable_unpack ${src}
-cat links | while read l; do
-    ln -s ${l}
-done
-rm links
+stable_unpack_2 ${src}
 cd ..
 ln -s bin_npm/bin/npm-cli.js npm
 {% endblock %}
