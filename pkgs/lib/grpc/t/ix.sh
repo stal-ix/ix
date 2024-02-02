@@ -9,7 +9,11 @@ v1.59.2
 {% endblock %}
 
 {% block git_sha %}
-d87b80267701bf8444b8f09abede20ebae6fc1f9e31cc0f5d3078771c7041a13
+b7c0a3b6e25a894b5194f62818d6a221f54c22d62da9142402b4e2897928e41e
+{% endblock %}
+
+{% block git_refine %}
+find . -type l -delete
 {% endblock %}
 
 {% block lib_deps %}
