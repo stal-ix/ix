@@ -186,6 +186,7 @@ https://download.gnome.org/sources/glib/2.78/glib-2.78.3.tar.xz
 https://download.gnome.org/sources/glib/2.78/glib-2.78.4.tar.xz
 https://download.gnome.org/sources/glibmm/2.66/glibmm-2.66.6.tar.xz
 https://download.gnome.org/sources/glibmm/2.77/glibmm-2.77.0.tar.xz
+https://download.gnome.org/sources/glibmm/2.78/glibmm-2.78.1.tar.xz
 https://download.gnome.org/sources/gtk+/3.24/gtk%2B-3.24.37.tar.xz
 https://download.gnome.org/sources/gtk+/3.24/gtk%2B-3.24.39.tar.xz
 https://download.gnome.org/sources/gtk+/3.24/gtk%2B-3.24.40.tar.xz
