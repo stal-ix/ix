@@ -9,7 +9,11 @@ d4de233e76946e91fab6c879717d53da62d94f57
 {% endblock %}
 
 {% block git_sha %}
-e383bb68ddb5971582b65fb3b0264b88feb39d4b336cb48aba44fccb615d8cd9
+ea5e22ba1214228f3cbdf5d10441ae9019ea316dcc70f581bc120f315d6051a9
+{% endblock %}
+
+{% block git_refine %}
+find . -type l -delete
 {% endblock %}
 
 {% block bld_libs %}
