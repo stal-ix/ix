@@ -9,7 +9,11 @@ INKSCAPE_1_3_2
 {% endblock %}
 
 {% block git_sha %}
-f4a02707df6890a7cb201edeac122d9ca102af0da7316a11469383c2b6de8add
+fec38ac587b5d5f1728977044b137f3f8500e5f6be9f5025201a3619a8443685
+{% endblock %}
+
+{% block git_refine %}
+find . -type l -delete
 {% endblock %}
 
 {% block bld_libs %}
