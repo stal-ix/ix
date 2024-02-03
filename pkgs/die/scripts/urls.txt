@@ -1859,6 +1859,7 @@ https://sourceforge.net/projects/libtimidity/files/libtimidity/0.2.7/libtimidity
 https://sourceforge.net/projects/s-tar/files/star-1.6.tar.bz2
 https://sourceware.org/pub/bzip2/bzip2-1.0.8.tar.gz
 https://sourceware.org/pub/valgrind/valgrind-3.19.0.tar.bz2
+https://sourceware.org/pub/valgrind/valgrind-3.22.0.tar.bz2
 https://sqlite.org/2023/sqlite-autoconf-3430000.tar.gz
 https://sqlite.org/2023/sqlite-autoconf-3430100.tar.gz
 https://sqlite.org/2023/sqlite-autoconf-3430200.tar.gz
