@@ -27,7 +27,6 @@ bld/pkg/config
 {% endblock %}
 
 {% block cpp_defines %}
-pwritev2=pwritev
 crc32c=crc32c_bcachefs
 {% endblock %}
 
