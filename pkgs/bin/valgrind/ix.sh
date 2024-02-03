@@ -1,8 +1,8 @@
 {% extends '//die/c/autohell.sh' %}
 
 {% block fetch %}
-https://sourceware.org/pub/valgrind/valgrind-3.19.0.tar.bz2
-sha:dd5e34486f1a483ff7be7300cc16b4d6b24690987877c3278d797534d6738f02
+https://sourceware.org/pub/valgrind/valgrind-3.22.0.tar.bz2
+sha:c811db5add2c5f729944caf47c4e7a65dcaabb9461e472b578765dd7bf6d2d4c
 {% endblock %}
 
 {% block bld_libs %}

@@ -40,12 +40,12 @@
 
 {% block run_deps %}
 #bin/zellij
-#bin/rio
 
-#sbcl build broken
-#bin/wx/maxima
-#bin/maxima
-#bin/sbcl
+bin/rio
+
+bin/wx/maxima
+bin/maxima
+bin/sbcl
 
 bin/ddc/control
 bin/lftp
@@ -145,7 +145,7 @@ bin/havoc
 bin/qemu/8/2
 bin/qemu/8/1
 bin/qemu/8/0
-#bin/npm
+bin/npm
 bin/protoc/c
 bin/systool
 bin/hwinfo

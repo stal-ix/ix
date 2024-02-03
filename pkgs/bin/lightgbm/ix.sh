@@ -16,10 +16,7 @@ fd3543d47b86336de138e78840eed20b3a544d21ce1078585f5a8d8341b721d2
 lib/c
 lib/c++
 lib/fmt
-{% endblock %}
-
-{% block cmake_flags %}
-USE_OPENMP=OFF
+lib/omp
 {% endblock %}
 
 {% block build_flags %}
