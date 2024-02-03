@@ -42,10 +42,9 @@
 #bin/zellij
 #bin/rio
 
-#sbcl build broken
-#bin/wx/maxima
-#bin/maxima
-#bin/sbcl
+bin/wx/maxima
+bin/maxima
+bin/sbcl
 
 bin/ddc/control
 bin/lftp
