@@ -40,7 +40,8 @@
 
 {% block run_deps %}
 #bin/zellij
-#bin/rio
+
+bin/rio
 
 bin/wx/maxima
 bin/maxima
