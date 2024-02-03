@@ -1247,6 +1247,7 @@ https://github.com/npm/cli/archive/refs/tags/v10.4.0.tar.gz
 https://github.com/npm/cli/archive/refs/tags/v9.8.0.tar.gz
 https://github.com/npm/cli/archive/refs/tags/v9.8.1.tar.gz
 https://github.com/numactl/numactl/archive/refs/tags/v2.0.16.tar.gz
+https://github.com/numactl/numactl/archive/refs/tags/v2.0.17.tar.gz
 https://github.com/nwg-piotr/nwg-dock/archive/refs/tags/v0.3.1.tar.gz
 https://github.com/nwg-piotr/nwg-drawer/archive/refs/tags/v0.3.7.tar.gz
 https://github.com/nwg-piotr/nwg-launchers/archive/refs/tags/v0.6.3.tar.gz
