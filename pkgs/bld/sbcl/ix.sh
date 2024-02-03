@@ -13,3 +13,10 @@ bin/ecl
 {% block boot_lisp %}
 ecl -norc
 {% endblock %}
+
+{% block patch %}
+{{super()}}
+base64 -d << EOF > src/runtime/gencgc.c
+{% include 'gencgc.c/base64' %}
+EOF
+{% endblock %}
