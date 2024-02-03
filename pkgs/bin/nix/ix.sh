@@ -1,14 +1,15 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://github.com/NixOS/nix/archive/refs/tags/2.19.3.tar.gz
-sha:b36fee01530558ada1ca56706b0307a16689f7be0d320434b678fe40b4f809d6
+https://github.com/NixOS/nix/archive/refs/tags/2.20.1.tar.gz
+sha:029b51f45f457ed834ec16d0e55cf54debcd873e2cf6d69987cf86e9d382b6d7
 {% endblock %}
 
 {% block bld_libs %}
 lib/c
 lib/c++
 lib/curl
+lib/git/2
 lib/cpuid
 lib/boost
 lib/kernel
@@ -47,4 +48,6 @@ wrap_cc
 
 {% block configure_flags %}
 --disable-doc-gen
+--disable-unit-tests
+--disable-functional-tests
 {% endblock %}

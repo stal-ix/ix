@@ -41,6 +41,12 @@
 {% block run_deps %}
 #bin/zellij
 #bin/rio
+
+#sbcl build broken
+#bin/wx/maxima
+#bin/maxima
+#bin/sbcl
+
 bin/ddc/control
 bin/lftp
 bin/axel
@@ -129,8 +135,6 @@ bin/go/21
 bin/limine
 bin/emacs/gtk
 bin/knot/resolver
-bin/wx/maxima
-bin/maxima
 bin/whois
 bin/esbuild
 bin/redo
@@ -195,7 +199,6 @@ bin/empty
 bin/zutils
 set/system/0
 bin/dinit
-bin/sbcl
 bin/i2pd
 bin/lite/xl
 bin/gparted
