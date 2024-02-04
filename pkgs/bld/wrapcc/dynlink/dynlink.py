@@ -12,7 +12,7 @@ comp = sys.argv[1]
 
 def flt_args(args):
     for x in args:
-        if x in ('-rdynamic', '-export-dynamic'):
+        if x in ('-Xlinker', '-rdynamic', '-export-dynamic'):
             pass
         else:
             yield x
