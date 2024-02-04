@@ -32,7 +32,6 @@
 #bin/avizo
 #bin/efitools
 #bin/colord
-#bin/psensor
 #bin/tex/studio
 #bin/code/lite
 #}
