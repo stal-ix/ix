@@ -40,6 +40,7 @@
 {% block run_deps %}
 #bin/zellij
 
+bin/psensor
 bin/rio
 bin/mplayer
 bin/wx/maxima

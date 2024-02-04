@@ -9,7 +9,15 @@ import subprocess
 uuid = hashlib.md5(json.dumps(sys.argv).encode()).hexdigest()
 temp = os.environ['tmp'] + f'/{uuid}.o'
 comp = sys.argv[1]
-args = sys.argv[2:]
+
+def flt_args(args):
+    for x in args:
+        if x in ('-rdynamic', '-export-dynamic'):
+            pass
+        else:
+            yield x
+
+args = list(flt_args(sys.argv[2:]))
 
 print(f'DYNLINK {sys.argv}', file=sys.stderr)
 
