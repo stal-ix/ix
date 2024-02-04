@@ -1,40 +1,20 @@
-{% extends '//die/std/ix.sh' %}
+{% extends '//aux/fetch/ix.sh' %}
 
 {% set fname %}go_{{parent_id}}.tar.lz4{% endset %}
 
 {% block bld_tool %}
 bin/go
-bld/fetch
-bld/extract
-bld/stable/pack
-{% endblock %}
-
-{% block use_network %}true{% endblock %}
-
-{% block predict_outputs %}
-[{"path": "share/{{fname}}", "sum": "{{sha}}"}]
-{% endblock %}
-
-{% block step_unpack %}
-mkdir net
-cd net
-fetch "{{url}}"
-cd ..
-mkdir src
-cd src
-extract 1 ../net/*
+{{super()}}
 {% endblock %}
 
 {% block build %}
-set -xue
-
 export GOSUMDB=off
 export GOCACHE=${tmp}/cgo
 export GOMODCACHE=${tmp}/gmc
 export GOPROXY="https://proxy.golang.org,direct"
 
-{% if refine %}
-{{refine | b64d}}
+{% if go_refine %}
+{{go_refine | b64d}}
 {% endif %}
 
 find . -type f -name go.mod | while read l; do (
@@ -42,20 +22,9 @@ find . -type f -name go.mod | while read l; do (
     go mod tidy
     go mod vendor
 ) done
+{% endblock %}
 
-cd ..
-find src/
-stable_pack {{sha}} ${tmp}/{{fname}} src
+{% block step_build %}
+{{super()}}
 go clean -modcache
-{% endblock %}
-
-{% block install %}
-mkdir ${out}/share
-mv ${tmp}/{{fname}} ${out}/share/
-ls -la ${out}/share/
-sha256sum ${out}/share/*
-{% endblock %}
-
-{% block env %}
-export src="${out}/share"
 {% endblock %}

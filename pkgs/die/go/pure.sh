@@ -15,7 +15,7 @@ stable_unpack ${src}/*lz4
 {% endblock %}
 
 {% block bld_data %}
-aux/go(url={{self.go_url().strip()}},sha={{self.go_sha().strip()}},parent_id={{self.go_sha().strip()}},refine={{self.go_refine().strip() | b64e}})
+aux/go(url={{self.go_url().strip()}},sha={{self.go_sha().strip()}},parent_id={{self.go_sha().strip()}},go_refine={{self.go_refine().strip() | b64e}})
 {% endblock %}
 
 {% block go_build_flags %}
