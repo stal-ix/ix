@@ -14,12 +14,14 @@ lib/json/c
 lib/notify
 #lib/micro/httpd
 lib/app/indicator
+lib/gdk/pixbuf/svg
 {% endblock %}
 
 {% block bld_tool %}
 bld/glib
 bld/gettext
 bld/help2man
+bin/muslstack
 {% endblock %}
 
 {% block setup %}
@@ -34,4 +36,10 @@ wrap_cc
 sed -e 's|if X11|if GTK|'  \
     -e 's|if XEXT|if GTK|' \
     -i src/Makefile.am
+{% endblock %}
+
+{% block install %}
+{{super()}}
+{# glibtop_open_s call overflow #}
+muslstack -s 8388608 ${out}/bin/psensor
 {% endblock %}
