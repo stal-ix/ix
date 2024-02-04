@@ -23,8 +23,3 @@ find . -type f -name go.mod | while read l; do (
     go mod vendor
 ) done
 {% endblock %}
-
-{% block step_build %}
-{{super()}}
-go clean -modcache
-{% endblock %}
