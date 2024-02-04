@@ -19,7 +19,6 @@
 #bin/telegram/web/old
 #bin/telegram/web/k
 #bin/vlc
-#bin/mplayer
 #bin/uftrace
 #bin/catboost
 #bin/ispc
@@ -42,11 +41,10 @@
 #bin/zellij
 
 bin/rio
-
+bin/mplayer
 bin/wx/maxima
 bin/maxima
 bin/sbcl
-
 bin/ddc/control
 bin/lftp
 bin/axel
