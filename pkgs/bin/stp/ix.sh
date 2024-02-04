@@ -12,6 +12,7 @@ lib/mini/sat
 {% endblock %}
 
 {% block bld_tool %}
+bld/perl
 bld/flex
 bld/bison
 bld/help2man
