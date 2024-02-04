@@ -12,6 +12,7 @@ comp = sys.argv[1]
 
 def flt_args(args):
     for x in args:
+        # TODO(pg): need better solution for Xlinker
         if x in ('-Xlinker', '-rdynamic', '-export-dynamic'):
             pass
         else:
