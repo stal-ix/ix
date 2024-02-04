@@ -19,7 +19,7 @@ lib/app/indicator
 {% block bld_tool %}
 bld/glib
 bld/gettext
-bin/help2man
+bld/help2man
 {% endblock %}
 
 {% block setup %}

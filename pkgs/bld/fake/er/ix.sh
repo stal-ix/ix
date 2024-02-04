@@ -20,6 +20,10 @@ def get_out(a):
     if '--output' in a:
         return a[a.index('--output') + 1]
 
+    for x in a:
+        if x.startswith('--output='):
+            return x[9:]
+
     for x in reversed(a):
         if '/' in x:
             return x

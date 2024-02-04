@@ -1,6 +1,6 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
-bld/perl
-bin/help2man(std_box=bld/boot/box,intl_ver=no)
+# https://forums.gentoo.org/viewtopic-t-1141876.html
+bld/fake/er(tool_name=help2man)
 {% endblock %}
