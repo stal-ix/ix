@@ -33,7 +33,7 @@ bld/wayland
 sed -e 's|.*define PI .*||' -i src/macros.hpp
 sed -e 's|PI |M_PI |g' -i src/config/ConfigManager.cpp
 sed -e 's|PI |M_PI |g' -i src/render/OpenGL.cpp
-sed -e 's|const.*auto.*PAGESIZE.*||' -i src/plugins/HookSystem.cpp
+sed -e 's|PI |M_PI |g' -i src/Window.cpp
 
 sed -e "s|subproject.*wlroots.*|dependency('wlroots')|" \
     -e 's|have_xwlr = .*|have_xwlr = false|' \
