@@ -1,15 +1,10 @@
 {% extends '//die/c/cmake.sh' %}
 
-{% block git_repo %}
-https://github.com/varjolintu/keepassxc
-{% endblock %}
-
-{% block git_commit %}
-be87c0fc06ca61fcc6151e615e6e519f084f5360
-{% endblock %}
-
-{% block git_sha %}
-8bb8316b066f512f97ffd8aaa143b2b1f602df649a7f071be3caf37d7fa6460c
+{% block fetch %}
+https://github.com/keepassxreboot/keepassxc/releases/download/2.7.6/keepassxc-2.7.6-src.tar.xz
+sha:a58074509fa8e90f152c6247f73e75e126303081f55eedb4ea0cbb6fa980d670
+https://raw.githubusercontent.com/orsonteodoro/oiledmachine-overlay/master/app-admin/keepassxc/files/keepassxc-2.7.6-qt6-support.patch
+sha:0814865e9273223a33c22548850c38fbe49a9fff561a7a032a5be0236e44f0af
 {% endblock %}
 
 {% block bld_libs %}
@@ -35,21 +30,13 @@ WITH_XC_X11=OFF
 WITH_XC_AUTOTYPE=OFF
 WITH_XC_UPDATECHECK=OFF
 WITH_XC_DOCS=OFF
+WITH_QT6=ON
+WITH_QT5=OFF
 {% endblock %}
 
 {% block patch %}
-sed -e 's|long\*) override|qintptr\*) override|' \
-    -i src/gui/osutils/nixutils/NixUtils.h
-
-sed -e 's|message, long\*)|message, qintptr\*)|' \
-    -e 's|.*stream.setCodec.*||' \
-    -e 's|processStatInfo.midRef(startIndex + 2)|QString()|' \
-    -i src/gui/osutils/nixutils/NixUtils.cpp
-
-sed -e 's|.*include.*QUtiMimeConverter.*||' -i src/gui/Clipboard.cpp
-
-sed -e 's|.*Q_IMPORT.*Integration.*||' -i src/main.cpp
-
-# TODO(pg): find another way, may be insecure
+ulimit -n 10000
+patch -p1 --fuzz 10 < ${src}/keepassxc-2.7.6-qt6-support.patch
+sed -e 's|.*QXcbIntegrationPlugin.*||' -i src/main.cpp
 >src/core/Alloc.cpp
 {% endblock %}
