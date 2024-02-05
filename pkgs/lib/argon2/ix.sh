@@ -19,5 +19,5 @@ LIBRARY_REL=lib
 
 {% block install %}
 {{super()}}
-cp ${out}/lib/libargon2.so ${out}/lib/libargon2.a
+cp libargon2.a ${out}/lib/
 {% endblock %}
