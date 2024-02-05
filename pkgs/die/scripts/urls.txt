@@ -626,6 +626,7 @@ https://github.com/OpenVPN/openvpn/archive/refs/tags/v2.6.7.tar.gz
 https://github.com/OpenVPN/openvpn/archive/refs/tags/v2.6.8.tar.gz
 https://github.com/OpenVisualCloud/SVT-HEVC/archive/refs/tags/v1.5.1.tar.gz
 https://github.com/OpenVisualCloud/SVT-VP9/archive/refs/tags/v0.3.0.tar.gz
+https://github.com/P-H-C/phc-winner-argon2/archive/refs/tags/20190702.tar.gz
 https://github.com/PhilipHazel/pcre2/archive/refs/tags/pcre2-10.42.tar.gz
 https://github.com/PurpleI2P/i2pd/archive/refs/tags/2.48.0.tar.gz
 https://github.com/PurpleI2P/i2pd/archive/refs/tags/2.49.0.tar.gz
@@ -1039,6 +1040,7 @@ https://github.com/junegunn/fzf/archive/refs/tags/0.46.0.tar.gz
 https://github.com/junegunn/fzf/archive/refs/tags/0.46.1.tar.gz
 https://github.com/kaniini/libucontext/archive/refs/tags/libucontext-1.2.tar.gz
 https://github.com/kcat/openal-soft/archive/refs/tags/1.23.1.tar.gz
+https://github.com/keepassxreboot/keepassxc/releases/download/2.7.6/keepassxc-2.7.6-src.tar.xz
 https://github.com/kkos/oniguruma/archive/refs/tags/v6.9.8.tar.gz
 https://github.com/kkos/oniguruma/archive/refs/tags/v6.9.9.tar.gz
 https://github.com/klange/bim/archive/refs/tags/v3.1.0.tar.gz
@@ -1363,6 +1365,7 @@ https://github.com/qt/qtwayland/archive/refs/tags/v6.6.0.tar.gz
 https://github.com/qt/qtwayland/archive/refs/tags/v6.6.1.tar.gz
 https://github.com/quictls/openssl/archive/refs/tags/openssl-3.1.2-quic1.tar.gz
 https://github.com/quictls/openssl/archive/refs/tags/openssl-3.1.4-quic1.tar.gz
+https://github.com/randombit/botan/archive/refs/tags/2.19.3.tar.gz
 https://github.com/raphamorim/rio/archive/refs/tags/v0.0.34.tar.gz
 https://github.com/redis/hiredis/archive/refs/tags/v1.2.0.tar.gz
 https://github.com/redis/redis/archive/refs/tags/7.2.0.tar.gz
@@ -1651,6 +1654,7 @@ https://gitlab.freedesktop.org/libdecor/libdecor/-/archive/0.2.2/libdecor-0.2.2.
 https://gitlab.freedesktop.org/libfprint/libfprint/-/archive/v1.94.5/libfprint-v1.94.5.tar.bz2
 https://gitlab.freedesktop.org/libinput/libei/-/archive/1.1.0/libei-1.1.0.tar.bz2
 https://gitlab.freedesktop.org/libinput/libei/-/archive/1.2.0/libei-1.2.0.tar.bz2
+https://gitlab.freedesktop.org/libinput/libei/-/archive/1.2.1/libei-1.2.1.tar.bz2
 https://gitlab.freedesktop.org/libinput/libinput/-/archive/1.25.0/libinput-1.25.0.tar.bz2
 https://gitlab.freedesktop.org/mesa/glu/-/archive/glu-9.0.3/glu-glu-9.0.3.tar.bz2
 https://gitlab.freedesktop.org/mesa/mesa/-/archive/mesa-23.0.3/mesa-mesa-23.0.3.tar.bz2
@@ -1832,6 +1836,7 @@ https://raw.githubusercontent.com/AppImageCommunity/libappimage/9c1fae809dedbb30
 https://raw.githubusercontent.com/Homebrew/patches/1860b0a745f1fe726900974845d1b0dd3c3398d6/openssh/patch-sandbox-darwin.c-apple-sandbox-named-external.diff
 https://raw.githubusercontent.com/Homebrew/patches/d8b2d8c2612fd251ac6de17bf0cc5174c3aab94c/openssh/patch-sshd.c-apple-sandbox-named-external.diff
 https://raw.githubusercontent.com/macports/macports-ports/edf0ee1e2cf/devel/m4/files/secure_snprintf.patch
+https://raw.githubusercontent.com/orsonteodoro/oiledmachine-overlay/master/app-admin/keepassxc/files/keepassxc-2.7.6-qt6-support.patch
 https://releases.pagure.org/libaio/libaio-0.3.113.tar.gz
 https://releases.pagure.org/xmlto/xmlto-0.0.28.tar.bz2
 https://s3.amazonaws.com/json-c_releases/releases/json-c-0.17.tar.gz
