@@ -1,8 +1,8 @@
 {% extends '//die/c/autohell.sh' %}
 
 {% block fetch %}
-https://www.stunnel.org/downloads/stunnel-5.71.tar.gz
-sha:f023aae837c2d32deb920831a5ee1081e11c78a5d57340f8e6f0829f031017f5
+https://www.stunnel.org/downloads/stunnel-5.72.tar.gz
+sha:3d532941281ae353319735144e4adb9ae489a10b7e309c58a48157f08f42e949
 {% endblock %}
 
 {% block bld_libs %}
