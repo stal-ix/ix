@@ -21,6 +21,6 @@ mkdir -p ${out}/share/dbus-1/services
 cat << EOF > ${out}/share/dbus-1/services/org.freedesktop.portal.Desktop.service
 [D-BUS Service]
 Name=org.freedesktop.portal.Desktop
-Exec=xdg-portal-ix
+Exec=/bin/sh -c "exec xdg-portal-ix"
 EOF
 {% endblock %}
