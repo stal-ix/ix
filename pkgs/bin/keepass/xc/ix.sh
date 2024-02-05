@@ -32,10 +32,11 @@ WITH_XC_UPDATECHECK=OFF
 WITH_XC_DOCS=OFF
 WITH_QT6=ON
 WITH_QT5=OFF
+WITH_XC_FDOSECRETS=ON
 {% endblock %}
 
 {% block patch %}
-ulimit -n 10000
+ulimit -n 4000
 patch -p1 --fuzz 10 < ${src}/keepassxc-2.7.6-qt6-support.patch
 sed -e 's|.*QXcbIntegrationPlugin.*||' -i src/main.cpp
 >src/core/Alloc.cpp
