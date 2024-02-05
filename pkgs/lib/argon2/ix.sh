@@ -21,3 +21,12 @@ LIBRARY_REL=lib
 {{super()}}
 cp libargon2.a ${out}/lib/
 {% endblock %}
+
+{% block c_rename_symbol %}
+blake2b_init
+blake2b_init_key
+blake2b_init_param
+blake2b_update
+blake2b_final
+blake2b
+{% endblock %}
