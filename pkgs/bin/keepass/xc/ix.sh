@@ -48,6 +48,8 @@ sed -e 's|message, long\*)|message, qintptr\*)|' \
 
 sed -e 's|.*include.*QUtiMimeConverter.*||' -i src/gui/Clipboard.cpp
 
+sed -e 's|.*Q_IMPORT.*Integration.*||' -i src/main.cpp
+
 # TODO(pg): find another way, may be insecure
 >src/core/Alloc.cpp
 {% endblock %}

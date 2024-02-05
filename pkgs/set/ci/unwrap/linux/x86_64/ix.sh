@@ -37,6 +37,7 @@
 
 {% block run_deps %}
 #bin/zellij
+bin/keepass/xc
 bin/code/lite
 bin/psensor
 bin/rio
