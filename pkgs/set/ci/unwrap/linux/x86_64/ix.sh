@@ -33,12 +33,11 @@
 #bin/efitools
 #bin/colord
 #bin/tex/studio
-#bin/code/lite
 #}
 
 {% block run_deps %}
 #bin/zellij
-
+bin/code/lite
 bin/psensor
 bin/rio
 bin/mplayer

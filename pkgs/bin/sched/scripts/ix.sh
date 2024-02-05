@@ -6,14 +6,14 @@ cd ${out}; mkdir -p etc/services/sched{{delay}}; cd etc/services/sched{{delay}}
 cat << EOF > cycle
 #!/bin/sh
 
-while true; do
-    sleep {{delay}}
+sleep {{delay}}
 
-    find /etc/sche.d/{{delay}} -type l -name '*.sh'| while read l; do
-        echo "run \${l}"
-        sh "\${l}" || true
-        sleep 1
-    done
+date
+
+find /etc/sche.d/{{delay}} -type l -name '*.sh'| while read l; do
+    echo "run \${l}"
+    sh "\${l}" || true
+    sleep 1
 done
 EOF
 

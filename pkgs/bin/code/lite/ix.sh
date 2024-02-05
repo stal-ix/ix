@@ -1,8 +1,15 @@
 {% extends '//die/c/cmake.sh' %}
 
-{% block fetch %}
-https://github.com/eranif/codelite/releases/download/17.0.0/codelite-17.0.0.tar.gz
-sha:c0dfe6df38426d761ef5622b7a9ab91481244a09ad751f5daafa37bb9b611d57
+{% block git_repo %}
+https://github.com/eranif/codelite
+{% endblock %}
+
+{% block git_tag %}
+17.7.0
+{% endblock %}
+
+{% block git_sha %}
+4f69c90f0e5c5c3b118935011a7e020b86946a35accf62b6ee37b4e8a19e8a0f
 {% endblock %}
 
 {% block bld_libs %}
@@ -38,10 +45,10 @@ sed -e 's|thread_local |static thread_local |' -i Plugin/globals.cpp
 {% endblock %}
 
 {% block cpp_missing %}
-unistd.h
-sys/types.h
-sys/stat.h
 fcntl.h
+unistd.h
+sys/stat.h
+sys/types.h
 {% endblock %}
 
 {% block cmake_flags %}
