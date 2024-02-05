@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/ivmai/bdwgc/archive/refs/tags/v8.2.4.tar.gz
-sha:18e63ab1428bd52e691da107a6a56651c161210b11fbe22e2aa3c31f7fa00ca5
+https://github.com/ivmai/bdwgc/archive/refs/tags/v8.2.6.tar.gz
+sha:3bfc2b1dd385bfb46d2dab029211a66249a309795b6893f4e00554904999e40a
 {% endblock %}
 
 {% block lib_deps %}

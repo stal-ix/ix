@@ -19,7 +19,6 @@
 #bin/telegram/web/old
 #bin/telegram/web/k
 #bin/vlc
-#bin/mplayer
 #bin/uftrace
 #bin/catboost
 #bin/ispc
@@ -33,20 +32,18 @@
 #bin/avizo
 #bin/efitools
 #bin/colord
-#bin/psensor
 #bin/tex/studio
-#bin/code/lite
 #}
 
 {% block run_deps %}
 #bin/zellij
-
+bin/code/lite
+bin/psensor
 bin/rio
-
+bin/mplayer
 bin/wx/maxima
 bin/maxima
 bin/sbcl
-
 bin/ddc/control
 bin/lftp
 bin/axel

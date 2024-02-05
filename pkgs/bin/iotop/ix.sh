@@ -1,8 +1,8 @@
 {% extends '//die/c/make.sh' %}
 
 {% block fetch %}
-https://github.com/Tomas-M/iotop/archive/refs/tags/v1.23.tar.gz
-sha:a2a620841f0c49caba590a730a15a546464e4aa337bbaa018eb7b6c92bc7a738
+https://github.com/Tomas-M/iotop/archive/refs/tags/v1.26.tar.gz
+sha:b0a334cba89249bc7cbb87cf92cf4166911bf00dd2ea8841b572fd776018c487
 {% endblock %}
 
 {% block bld_libs %}

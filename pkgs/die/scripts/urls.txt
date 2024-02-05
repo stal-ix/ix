@@ -87,6 +87,7 @@ http://www.squid-cache.org/Versions/v6/squid-6.2.tar.xz
 http://www.squid-cache.org/Versions/v6/squid-6.4.tar.xz
 http://www.squid-cache.org/Versions/v6/squid-6.5.tar.xz
 http://www.squid-cache.org/Versions/v6/squid-6.6.tar.xz
+http://www.squid-cache.org/Versions/v6/squid-6.7.tar.xz
 http://zlib.net/zlib-1.3.1.tar.xz
 http://zlib.net/zlib-1.3.tar.xz
 https://7-zip.org/a/7z2200-src.tar.xz
@@ -476,6 +477,7 @@ https://github.com/AbiWord/enchant/releases/download/v2.6.1/enchant-2.6.1.tar.gz
 https://github.com/AbiWord/enchant/releases/download/v2.6.2/enchant-2.6.2.tar.gz
 https://github.com/AbiWord/enchant/releases/download/v2.6.4/enchant-2.6.4.tar.gz
 https://github.com/AbiWord/enchant/releases/download/v2.6.5/enchant-2.6.5.tar.gz
+https://github.com/AbiWord/enchant/releases/download/v2.6.6/enchant-2.6.6.tar.gz
 https://github.com/AcademySoftwareFoundation/Imath/archive/refs/tags/v3.1.10.tar.gz
 https://github.com/AcademySoftwareFoundation/Imath/archive/refs/tags/v3.1.9.tar.gz
 https://github.com/AcademySoftwareFoundation/openexr/archive/refs/tags/v3.2.0.tar.gz
@@ -637,6 +639,7 @@ https://github.com/Syllo/nvtop/archive/refs/tags/3.0.2.tar.gz
 https://github.com/TartanLlama/expected/archive/refs/tags/v1.1.0.tar.gz
 https://github.com/Terraspace/UASM/archive/refs/tags/v2.56.2.tar.gz
 https://github.com/Tomas-M/iotop/archive/refs/tags/v1.23.tar.gz
+https://github.com/Tomas-M/iotop/archive/refs/tags/v1.26.tar.gz
 https://github.com/USCiLab/cereal/archive/refs/tags/v1.3.2.tar.gz
 https://github.com/VirusTotal/yara/archive/refs/tags/v4.2.2.tar.gz
 https://github.com/WasmEdge/WasmEdge/archive/refs/tags/0.13.3.tar.gz
@@ -992,6 +995,7 @@ https://github.com/isacikgoz/tldr/archive/refs/tags/v1.0.0-alpha.tar.gz
 https://github.com/isc-projects/bind9/archive/refs/tags/v9.19.15.tar.gz
 https://github.com/ispc/ispc/archive/refs/tags/v1.18.1.tar.gz
 https://github.com/ivmai/bdwgc/archive/refs/tags/v8.2.4.tar.gz
+https://github.com/ivmai/bdwgc/archive/refs/tags/v8.2.6.tar.gz
 https://github.com/ivmai/libatomic_ops/archive/refs/tags/v7.8.0.tar.gz
 https://github.com/ivmai/libatomic_ops/archive/refs/tags/v7.8.2.tar.gz
 https://github.com/jackaudio/jack2/archive/v1.9.19.tar.gz
@@ -1184,6 +1188,7 @@ https://github.com/microsoft/mimalloc/archive/refs/tags/v2.1.2.tar.gz
 https://github.com/microsoft/msquic/archive/refs/tags/v2.2.2.tar.gz
 https://github.com/microsoft/msquic/archive/refs/tags/v2.2.3.tar.gz
 https://github.com/microsoft/msquic/archive/refs/tags/v2.2.4.tar.gz
+https://github.com/microsoft/msquic/archive/refs/tags/v2.3.1.tar.gz
 https://github.com/microsoft/snmalloc/archive/refs/tags/0.6.0.tar.gz
 https://github.com/microsoft/vcpkg-tool/archive/refs/tags/2022-11-10.tar.gz
 https://github.com/microsoft/vcpkg-tool/archive/refs/tags/2023-11-16.tar.gz
@@ -1247,6 +1252,7 @@ https://github.com/npm/cli/archive/refs/tags/v10.4.0.tar.gz
 https://github.com/npm/cli/archive/refs/tags/v9.8.0.tar.gz
 https://github.com/npm/cli/archive/refs/tags/v9.8.1.tar.gz
 https://github.com/numactl/numactl/archive/refs/tags/v2.0.16.tar.gz
+https://github.com/numactl/numactl/archive/refs/tags/v2.0.17.tar.gz
 https://github.com/nwg-piotr/nwg-dock/archive/refs/tags/v0.3.1.tar.gz
 https://github.com/nwg-piotr/nwg-drawer/archive/refs/tags/v0.3.7.tar.gz
 https://github.com/nwg-piotr/nwg-launchers/archive/refs/tags/v0.6.3.tar.gz
@@ -1283,6 +1289,7 @@ https://github.com/phracker/MacOSX-SDKs/releases/download/11.3/MacOSX11.3.sdk.ta
 https://github.com/pkgconf/pkgconf/archive/refs/tags/pkgconf-2.0.2.tar.gz
 https://github.com/pkgconf/pkgconf/archive/refs/tags/pkgconf-2.0.3.tar.gz
 https://github.com/pkgconf/pkgconf/archive/refs/tags/pkgconf-2.1.0.tar.gz
+https://github.com/pkgconf/pkgconf/archive/refs/tags/pkgconf-2.1.1.tar.gz
 https://github.com/plougher/squashfs-tools/archive/refs/tags/4.6.1.tar.gz
 https://github.com/podofo/podofo/archive/refs/tags/0.10.2.tar.gz
 https://github.com/podofo/podofo/archive/refs/tags/0.10.3.tar.gz
@@ -1382,6 +1389,7 @@ https://github.com/rrthomas/libpaper/releases/download/v2.1.2/libpaper-2.1.2.tar
 https://github.com/rrthomas/libpaper/releases/download/v2.1.3/libpaper-2.1.3.tar.gz
 https://github.com/rs/curlie/archive/refs/tags/v1.6.9.tar.gz
 https://github.com/rsms/inter/releases/download/v3.19/Inter-3.19.zip
+https://github.com/rsms/inter/releases/download/v4.0/Inter-4.0.zip
 https://github.com/rsteube/carapace-bin/archive/refs/tags/v0.28.3.tar.gz
 https://github.com/rsteube/carapace-bin/archive/refs/tags/v0.29.0.tar.gz
 https://github.com/rsteube/carapace-bin/archive/refs/tags/v0.29.1.tar.gz
@@ -1663,6 +1671,7 @@ https://gitlab.freedesktop.org/wlroots/wlroots/-/archive/0.17.1/wlroots-0.17.1.t
 https://gitlab.freedesktop.org/xdg/desktop-file-utils/-/archive/0.27/desktop-file-utils-0.27.tar.bz2
 https://gitlab.freedesktop.org/xkeyboard-config/xkeyboard-config/-/archive/xkeyboard-config-2.39/xkeyboard-config-xkeyboard-config-2.39.tar.bz2
 https://gitlab.freedesktop.org/xkeyboard-config/xkeyboard-config/-/archive/xkeyboard-config-2.40/xkeyboard-config-xkeyboard-config-2.40.tar.bz2
+https://gitlab.freedesktop.org/xorg/lib/libpciaccess/-/archive/libpciaccess-0.18/libpciaccess-libpciaccess-0.18.tar.bz2
 https://gitlab.gnome.org/GNOME/atk/-/archive/ATK_2_36_0/atk-ATK_2_36_0.tar.bz2
 https://gitlab.gnome.org/GNOME/console/-/archive/44.4/console-44.4.tar.bz2
 https://gitlab.gnome.org/GNOME/console/-/archive/45.0/console-45.0.tar.bz2
