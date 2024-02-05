@@ -36,3 +36,18 @@ WITH_XC_AUTOTYPE=OFF
 WITH_XC_UPDATECHECK=OFF
 WITH_XC_DOCS=OFF
 {% endblock %}
+
+{% block patch %}
+sed -e 's|long\*) override|qintptr\*) override|' \
+    -i src/gui/osutils/nixutils/NixUtils.h
+
+sed -e 's|message, long\*)|message, qintptr\*)|' \
+    -e 's|.*stream.setCodec.*||' \
+    -e 's|processStatInfo.midRef(startIndex + 2)|QString()|' \
+    -i src/gui/osutils/nixutils/NixUtils.cpp
+
+sed -e 's|.*include.*QUtiMimeConverter.*||' -i src/gui/Clipboard.cpp
+
+# TODO(pg): find another way, may be insecure
+>src/core/Alloc.cpp
+{% endblock %}
