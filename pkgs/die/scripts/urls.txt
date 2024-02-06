@@ -137,6 +137,7 @@ https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.6.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.7.1.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.7.2.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.7.3.tar.xz
+https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.7.4.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.7.tar.xz
 https://cmocka.org/files/1.1/cmocka-1.1.7.tar.xz
 https://codeberg.org/dnkl/fcft/archive/2.5.0.tar.gz
@@ -1010,6 +1011,7 @@ https://github.com/jasper-software/jasper/archive/refs/tags/version-4.0.1.tar.gz
 https://github.com/jasper-software/jasper/archive/refs/tags/version-4.1.0.tar.gz
 https://github.com/jasper-software/jasper/archive/refs/tags/version-4.1.1.tar.gz
 https://github.com/jasper-software/jasper/archive/refs/tags/version-4.1.2.tar.gz
+https://github.com/jasper-software/jasper/archive/refs/tags/version-4.2.0.tar.gz
 https://github.com/jbeder/yaml-cpp/archive/refs/tags/yaml-cpp-0.7.0.tar.gz
 https://github.com/jeaye/stdman/archive/refs/tags/2022.07.30.tar.gz
 https://github.com/jech/dht/archive/refs/tags/dht-0.27.tar.gz
