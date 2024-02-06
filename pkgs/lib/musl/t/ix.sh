@@ -61,6 +61,7 @@ export ac_cv_func_sysconf=yes
 export ac_cv_func_strtoul=yes
 export cf_cv_func_mkstemp=yes
 export cf_cv_working_poll=yes
+export ac_cv_func_lseek64=yes
 export ac_cv_func_realpath=yes
 export ac_cv_working_tzset=yes
 export ac_cv_func_snprintf=yes
