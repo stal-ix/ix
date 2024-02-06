@@ -1914,6 +1914,7 @@ https://webkitgtk.org/releases/webkitgtk-2.42.1.tar.xz
 https://webkitgtk.org/releases/webkitgtk-2.42.2.tar.xz
 https://webkitgtk.org/releases/webkitgtk-2.42.3.tar.xz
 https://webkitgtk.org/releases/webkitgtk-2.42.4.tar.xz
+https://webkitgtk.org/releases/webkitgtk-2.42.5.tar.xz
 https://wpewebkit.org/releases/wpewebkit-2.36.2.tar.xz
 https://wpitchoune.net/psensor/files/psensor-1.2.1.tar.gz
 https://www.agner.org/optimize/asmlib.zip
