@@ -24,6 +24,7 @@ update_panels
 
 {% block build_flags %}
 shut_up
+fix_shebangs
 {% endblock %}
 
 {% block configure_flags %}
