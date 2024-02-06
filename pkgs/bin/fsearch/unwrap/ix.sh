@@ -15,8 +15,8 @@ lib/pcre/2
 {% endblock %}
 
 {% block bld_tool %}
-bld/gettext
 bld/glib
+bld/gettext
 {% endblock %}
 
 {% block patch %}

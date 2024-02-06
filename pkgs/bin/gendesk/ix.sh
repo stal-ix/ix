@@ -1,8 +1,11 @@
-{% extends '//die/go/base.sh' %}
+{% extends '//die/go/build.sh' %}
 
-{% block fetch %}
+{% block go_url %}
 https://github.com/xyproto/gendesk/archive/refs/tags/1.0.9.tar.gz
-sha:dd0008512eebc893e4b630d07d9bf5e3a4f121b87fe725c32773caa6e391db58
+{% endblock %}
+
+{% block go_sha %}
+sha:dd0008512eebc893e4b630d07d
 {% endblock %}
 
 {% block install %}

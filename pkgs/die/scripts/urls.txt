@@ -1085,6 +1085,7 @@ https://github.com/libcxxrt/libcxxrt/archive/fd484be8d1e94a1fcf6bc5c67e5c07b65ad
 https://github.com/libevent/libevent/archive/refs/tags/release-2.1.12-stable.tar.gz
 https://github.com/libexif/libexif/archive/refs/tags/v0.6.24.tar.gz
 https://github.com/libexpat/libexpat/archive/refs/tags/R_2_5_0.tar.gz
+https://github.com/libexpat/libexpat/archive/refs/tags/R_2_6_0.tar.gz
 https://github.com/libffi/libffi/archive/refs/tags/v3.4.4.tar.gz
 https://github.com/libfuse/libfuse/archive/refs/tags/fuse-2.9.9.tar.gz
 https://github.com/libfuse/libfuse/archive/refs/tags/fuse-3.16.1.tar.gz
