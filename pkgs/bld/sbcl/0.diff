@@ -1,0 +1,3 @@
+602a603,604
+>     memset((void*)addr, 0, (size_t)length);
+>     return;
