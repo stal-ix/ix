@@ -9,7 +9,7 @@ sha:62e889ee9be80fe808a972ef4981acc39e83a20f9a84a66a82cd1f623c868d9c
 lib/c
 {% endblock %}
 
-{% block setup %}
+{% block setup_target_flags %}
 export CFLAGS="-fcommon ${CFLAGS}"
 {% endblock %}
 

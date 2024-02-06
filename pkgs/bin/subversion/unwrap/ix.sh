@@ -23,7 +23,7 @@ lib/utf8/proc
 bld/python/2
 {% endblock %}
 
-{% block setup %}
+{% block setup_target_flags %}
 expat="$(pkg-config --variable=prefix expat)"
 export COFLAGS=$(echo "${COFLAGS}" | tr ' ' '\n' | grep -v expat | tr '\n' ' ')
 export COFLAGS="${COFLAGS} --with-expat=${expat}/include:${expat}/lib:-lexpat"

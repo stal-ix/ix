@@ -48,7 +48,7 @@ PORT=WPE
 ENABLE_ACCESSIBILITY=OFF
 {% endblock %}
 
-{% block setup %}
+{% block setup_target_flags %}
 {{super()}}
 mkdir -p inc/EGL
 cp ${MESA_HEADERS}/EGL/eglplatform.h inc/EGL/

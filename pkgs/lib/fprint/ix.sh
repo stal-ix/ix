@@ -34,7 +34,7 @@ bld/glib
 sed -e 's|.*extern.*stderr.*||' -i libfprint/nbis/include/bozorth.h
 {% endblock %}
 
-{% block setup %}
+{% block setup_target_flags %}
 export CPPFLAGS="-I${NSS_HEADERS} ${CPPFLAGS}"
 export CONLYFLAGS="-std=c11 ${CONLYFLAGS}"
 {% endblock %}

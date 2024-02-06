@@ -28,6 +28,6 @@ DISABLE_VCPKG=ON
 bin/protoc
 {% endblock %}
 
-{% block setup %}
+{% block setup_target_flags %}
 export CXXFLAGS="${CXXFLAGS} -std=c++17"
 {% endblock %}

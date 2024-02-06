@@ -106,7 +106,7 @@ mkdir -p third_party/node/linux/node-linux-x64/bin
 ln -s $(which node) third_party/node/linux/node-linux-x64/bin/
 {% endblock %}
 
-{% block setup %}
+{% block setup_target_flags %}
 export CPPFLAGS=$(echo ${CPPFLAGS} | tr ' ' '\n' | grep -v mesa | tr '\n' ' ')
 {% endblock %}
 

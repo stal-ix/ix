@@ -35,7 +35,7 @@ bld/glib
 bld/wayland
 {% endblock %}
 
-{% block setup %}
+{% block setup_target_flags %}
 {#
 clang-16:
 /subprojects/gst-plugins-good/sys/v4l2/gstv4l2object.c

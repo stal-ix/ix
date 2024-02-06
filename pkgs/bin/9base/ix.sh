@@ -14,6 +14,6 @@ lib/kernel
 sed -e 's|mygetdents(fd|getdents(fd|' -i lib9/dirread.c
 {% endblock %}
 
-{% block setup %}
+{% block setup_target_flags %}
 export CFLAGS="-fcommon -Wno-implicit-function-declaration ${CFLAGS}"
 {% endblock %}

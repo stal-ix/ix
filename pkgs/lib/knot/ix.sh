@@ -23,7 +23,7 @@ lib/gnutls
 lib/kernel
 {% endblock %}
 
-{% block setup %}
+{% block setup_target_flags %}
 export OPTFLAGS="${OPTFLAGS} -O0"
 {% endblock %}
 

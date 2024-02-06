@@ -14,7 +14,7 @@ lib/gmp
 lib/c
 {% endblock %}
 
-{% block setup %}
+{% block setup_target_flags %}
 export ac_cv_have_decl___builtin_ffs=yes
 {% endblock %}
 

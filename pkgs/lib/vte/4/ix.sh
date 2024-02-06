@@ -15,7 +15,7 @@ gtk4=true
 shut_up
 {% endblock %}
 
-{% block setup %}
+{% block setup_target_flags %}
 # TODO(pg): fixme
 export CFLAGS="-Wno-enum-constexpr-conversion ${CFLAGS}"
 {% endblock %}

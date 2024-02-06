@@ -19,7 +19,7 @@ lib/protobuf/c
 bin/protoc/c
 {% endblock %}
 
-{% block setup %}
+{% block setup_target_flags %}
 export ac_cv_func_ev_loop=no
 export ac_cv_func_ev_default_loop=no
 {{super()}}

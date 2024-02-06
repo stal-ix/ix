@@ -20,7 +20,7 @@ bld/fake(tool_name=jrunscript)
 wchar.h
 {% endblock %}
 
-{% block setup %}
+{% block setup_target_flags %}
 export CFLAGS="-Wno-implicit-function-declaration ${CFLAGS}"
 {% endblock %}
 

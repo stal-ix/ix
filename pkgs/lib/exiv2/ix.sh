@@ -5,7 +5,7 @@
 EXIV2_BUILD_EXIV2_COMMAND=OFF
 {% endblock %}
 
-{% block setup %}
+{% block setup_target_flags %}
 export CPPFLAGS="-D_LIBCPP_ENABLE_CXX17_REMOVED_AUTO_PTR ${CPPFLAGS}"
 {% endblock %}
 

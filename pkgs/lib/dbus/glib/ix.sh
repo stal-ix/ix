@@ -20,7 +20,7 @@ bld/glib
 shut_up
 {% endblock %}
 
-{% block setup %}
+{% block setup_target_flags %}
 export GLIB_GENMARSHAL=$(which glib-genmarshal)
 {% endblock %}
 

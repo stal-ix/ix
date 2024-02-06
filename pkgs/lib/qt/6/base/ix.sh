@@ -79,6 +79,6 @@ SIGSEGV with -O2
     #6  0x0000000000000000 in ?? ()
 #}
 
-{% block setup %}
+{% block setup_target_flags %}
 export OPTFLAGS="${OPTFLAGS} -O0"
 {% endblock %}

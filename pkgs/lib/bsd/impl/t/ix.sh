@@ -9,6 +9,6 @@ sha:55fdfa2696fb4d55a592fa9ad14a9df897c7b0008ddb3b30c419914841f85f33
 bld/auto
 {% endblock %}
 
-{% block setup %}
+{% block setup_target_flags %}
 export CPPFLAGS="-I.. -isystem ../include/bsd ${CPPFLAGS}"
 {% endblock %}

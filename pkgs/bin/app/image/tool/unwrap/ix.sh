@@ -49,7 +49,7 @@ _GNU_SOURCE=1
 LOAD_LIBRARY=
 {% endblock %}
 
-{% block setup %}
+{% block setup_target_flags %}
 export CFLAGS="-Wno-incompatible-function-pointer-types ${CFLAGS}"
 {% endblock %}
 

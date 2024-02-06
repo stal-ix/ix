@@ -24,7 +24,7 @@ bld/python
 bin/binutils(for_target={{target.gnu.triplet}})
 {% endblock %}
 
-{% block setup %}
+{% block setup_target_flags %}
 c="$(which clang)"
 d="$(dirname $(dirname ${c}))"
 export HOST_CC=clang

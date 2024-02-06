@@ -11,6 +11,6 @@ lib/sdl/1
 lib/sdl/deps
 {% endblock %}
 
-{% block setup %}
+{% block setup_target_flags %}
 export CXXFLAGS="-Wno-register ${CXXFLAGS}"
 {% endblock %}

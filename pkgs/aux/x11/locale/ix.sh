@@ -10,7 +10,7 @@ lib/c
 aux/x11/proto
 {% endblock %}
 
-{% block setup %}
+{% block setup_target_flags %}
 export X11_CFLAGS="-DXXX"
 export X11_LIBS="-LXXX"
 {% endblock %}

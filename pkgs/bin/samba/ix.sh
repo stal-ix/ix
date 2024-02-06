@@ -30,7 +30,7 @@ lib/bsd/overlay
 sed -e 's|/tmp/|/var/tmp/|g' -i lib/replace/wscript
 {% endblock %}
 
-{% block setup %}
+{% block setup_target_flags %}
 export PYTHONHASHSEED=1
 {% endblock %}
 

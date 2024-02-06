@@ -31,7 +31,7 @@ ${PWD}/src
 ${PWD}/include
 {% endblock %}
 
-{% block setup %}
+{% block setup_target_flags %}
 export CFLAGS="-funwind-tables ${CFLAGS}"
 export CXXFLAGS="-std=c++11 -fstrict-aliasing -fno-exceptions -fno-rtti ${CXXFLAGS}"
 export CONLYFLAGS="-std=c99 ${CONLYFLAGS}"

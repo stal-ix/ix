@@ -13,7 +13,7 @@ for x in curl-sys libgit2-sys libnghttp2-sys libssh2-sys libz-sys lzma-sys; do
 done
 {% endblock %}
 
-{% block setup %}
+{% block setup_target_flags %}
 {{super()}}
 export CFG_RELEASE=${RUSTC_VERSION}
 export CFG_COMPILER_HOST_TRIPLE=x86_64-unknown-linux-gnu

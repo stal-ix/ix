@@ -29,6 +29,6 @@ bin/bash/lite/sh
 --with-openssl=yes
 {% endblock %}
 
-{% block setup %}
+{% block setup_target_flags %}
 export CPPFLAGS="-fcommon ${CPPFLAGS}"
 {% endblock %}

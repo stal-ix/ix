@@ -28,7 +28,7 @@ bld/devendor
 export CFLAGS="-Wno-implicit-function-declaration ${CFLAGS}"
 {% endblock %}
 
-{% block setup %}
+{% block setup_target_flags %}
 {{super()}}
 export CFLAGS="-Wno-implicit-function-declaration ${CFLAGS}"
 {% endblock %}

@@ -64,7 +64,7 @@ X11_API=OFF
 USE_LINKED_FFMPEG=ON
 {% endblock %}
 
-{% block setup %}
+{% block setup_target_flags %}
 export CXXFLAGS="-std=c++17 ${CXXFLAGS}"
 {% endblock %}
 

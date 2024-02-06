@@ -35,7 +35,7 @@ wrap_cc
 shut_up
 {% endblock %}
 
-{% block setup %}
+{% block setup_target_flags %}
 export PYTHONHOME="${TARGET_PYTHONHOME}"
 export PYTHONPLATLIBDIR="${PYTHONHOME}/lib"
 {% endblock %}

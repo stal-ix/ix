@@ -24,7 +24,7 @@ bld/help2man
 bin/muslstack
 {% endblock %}
 
-{% block setup %}
+{% block setup_target_flags %}
 export GLIB_COMPILE_SCHEMAS=glib-compile-schemas
 {% endblock %}
 

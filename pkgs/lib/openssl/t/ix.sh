@@ -24,7 +24,7 @@ bld/windres(for_target={{target.gnu.three}})
 aux/ca/bundle
 {% endblock %}
 
-{% block setup %}
+{% block setup_target_flags %}
 export AR=ar
 export RANLIB=ranlib
 # fix unknown miscompile with clang

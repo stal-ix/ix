@@ -30,7 +30,7 @@ wrap_cc
 --with-curses
 {% endblock %}
 
-{% block setup %}
+{% block setup_target_flags %}
 export bash_cv_func_strtoimax=y
 {{super()}}
 {% endblock %}

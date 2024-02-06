@@ -16,7 +16,7 @@ lib/curses
 bld/gettext
 {% endblock %}
 
-{% block setup %}
+{% block setup_target_flags %}
 export ac_cv_lib_error_at_line=no
 export ac_cv_header_error_h=no
 {% endblock %}

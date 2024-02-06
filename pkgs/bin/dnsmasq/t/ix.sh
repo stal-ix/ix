@@ -17,7 +17,7 @@ lib/nettle
 lib/kernel
 {% endblock %}
 
-{% block setup %}
+{% block setup_target_flags %}
 export COPTS="-DHAVE_NETTLEHASH -DHAVE_LIBIDN2"
 {% endblock %}
 

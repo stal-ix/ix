@@ -65,7 +65,7 @@ shut_up
 ${PWD}/libunwind/include
 {% endblock %}
 
-{% block setup %}
+{% block setup_target_flags %}
 export CPPFLAGS="-isystem ${PWD}/clang/lib/Headers ${CPPFLAGS}"
 {% if assume_gcc %}
 export CXXFLAGS="-std=c++17 ${CXXFLAGS}"

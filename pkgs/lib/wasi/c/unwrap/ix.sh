@@ -21,7 +21,7 @@ INSTALL_DIR=${out}
 THREAD_MODEL=posix
 {% endblock %}
 
-{% block setup %}
+{% block setup_target_flags %}
 export EF="${CFLAGS} ${CPPFLAGS} -O2 -DNDEBUG"
 {% endblock %}
 

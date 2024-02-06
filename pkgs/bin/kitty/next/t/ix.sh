@@ -38,7 +38,7 @@ ${NATIVE_PYTHON} setup.py build
 wrap_cc
 {% endblock %}
 
-{% block setup %}
+{% block setup_target_flags %}
 export CFLAGS="-fno-lto ${CFLAGS}"
 {% endblock %}
 

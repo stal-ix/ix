@@ -5,7 +5,7 @@ https://www.python.org/ftp/python/3.10.13/Python-3.10.13.tar.xz
 sha:5c88848668640d3e152b35b4536ef1c23b2ca4bd2c957ef1ecbb053f571dd3f6
 {% endblock %}
 
-{% block setup %}
+{% block setup_target_flags %}
 export COFLAGS=$(echo "${COFLAGS}" | tr ' ' '\n' | grep -v 'with-readline' | tr '\n' ' ')
 {% if (edit or 'edit') == 'readline' %}
 export COFLAGS="--with-readline=yes ${COFLAGS}"

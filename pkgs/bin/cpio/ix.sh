@@ -20,7 +20,7 @@ bld/bison
 bld/gettext
 {% endblock %}
 
-{% block setup %}
+{% block setup_target_flags %}
 export ac_cv_rettype_minor=int
 export ac_cv_rettype_major=int
 export CFLAGS="-fcommon ${CFLAGS}"

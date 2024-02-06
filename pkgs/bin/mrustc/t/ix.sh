@@ -25,7 +25,7 @@ cd rustc-1.54.0-src
 patch -p0 < ../rustc-1.54.0-src.patch
 {% endblock %}
 
-{% block setup %}
+{% block setup_target_flags %}
 unset HOST_CC
 unset HOST_CXX
 unset HOST_AR

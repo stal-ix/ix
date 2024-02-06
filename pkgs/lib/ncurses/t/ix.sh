@@ -40,6 +40,6 @@ lib/c
 bash
 {% endblock %}
 
-{% block setup %}
+{% block setup_target_flags %}
 export PKG_CONFIG_LIBDIR=${out}/lib/pkgconfig
 {% endblock %}

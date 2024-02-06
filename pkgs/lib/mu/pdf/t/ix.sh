@@ -36,6 +36,6 @@ USE_SYSTEM_LIBS=yes
 limits.h
 {% endblock %}
 
-{% block setup %}
+{% block setup_target_flags %}
 export LD=ld
 {% endblock %}

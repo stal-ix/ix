@@ -33,6 +33,6 @@ EOF
 chmod +x ssh-add ssh-agent
 {% endblock %}
 
-{% block setup %}
+{% block setup_target_flags %}
 export CPPFLAGS="-D_GNU_SOURCE=1 ${CPPFLAGS}"
 {% endblock %}

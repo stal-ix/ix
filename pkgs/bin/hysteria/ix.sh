@@ -18,6 +18,6 @@ mkdir ${out}/bin
 cp app ${out}/bin/
 {% endblock %}
 
-{% block setup %}
+{% block setup_target_flags %}
 export GOWORK=off
 {% endblock %}

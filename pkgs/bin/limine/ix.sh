@@ -17,7 +17,7 @@ bld/nasm
 {% endif %}
 {% endblock %}
 
-{% block setup %}
+{% block setup_target_flags %}
 export CLANG_BINARY=$(dirname $(which llvm-addr2line))/clang
 {% endblock %}
 

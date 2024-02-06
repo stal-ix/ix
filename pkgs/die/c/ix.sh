@@ -53,7 +53,7 @@ setup_target_env() {
 {% for f in ix.parse_list(cpp_flags) %}
     export CPPFLAGS="{{f}} ${CPPFLAGS}"
 {% endfor %}
-{% block setup %}
+{% block setup_target_flags %}
 {% endblock %}
 }
 {% endblock %}

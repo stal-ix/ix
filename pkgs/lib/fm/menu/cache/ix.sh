@@ -23,6 +23,6 @@ bld/intltool
 --disable-gtk-doc
 {% endblock %}
 
-{% block setup %}
+{% block setup_target_flags %}
 export CFLAGS="-fcommon ${CFLAGS}"
 {% endblock %}

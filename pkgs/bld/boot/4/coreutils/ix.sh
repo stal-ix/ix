@@ -23,7 +23,7 @@ chmod +x makeinfo
 ${PWD}/lib
 {% endblock %}
 
-{% block setup %}
+{% block setup_target_flags %}
 export CFLAGS="-Wno-incompatible-function-pointer-types ${CFLAGS}"
 export PATH="${PWD}/src:${PATH}"
 {% endblock %}

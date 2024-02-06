@@ -14,7 +14,7 @@ LIBCXXRT=1
 shut_up
 {% endblock %}
 
-{% block setup %}
+{% block setup_target_flags %}
 export CPPFLAGS="-iquote src -Iinclude -std=c++14 ${CPPFLAGS}"
 {% endblock %}
 

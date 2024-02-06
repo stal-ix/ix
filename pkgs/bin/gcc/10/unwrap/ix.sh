@@ -56,7 +56,7 @@ shut_up
 wrap_cc
 {% endblock %}
 
-{% block setup %}
+{% block setup_target_flags %}
 export CXXFLAGS="-Wno-register ${CXXFLAGS}"
 
 export acx_cv_cc_gcc_supports_ada=no

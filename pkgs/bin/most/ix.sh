@@ -11,6 +11,6 @@ lib/slang
 lib/shim/fake(lib_name=termcap)
 {% endblock %}
 
-{% block setup %}
+{% block setup_target_flags %}
 export CPPFLAGS="-iquote ${PWD}/src ${CPPFLAGS}"
 {% endblock %}

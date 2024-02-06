@@ -21,7 +21,7 @@ wrap_cc
 sys/select.h
 {% endblock %}
 
-{% block setup %}
+{% block setup_target_flags %}
 export CPPFLAGS="-Du_int32_t=uint32_t ${CPPFLAGS}"
 {% endblock %}
 

@@ -45,7 +45,7 @@ install-cxxabi
 shut_up
 {% endblock %}
 
-{% block setup %}
+{% block setup_target_flags %}
 export CPPFLAGS="-isystem ${PWD}/clang/lib/Headers ${CPPFLAGS}"
 {% endblock %}
 

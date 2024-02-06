@@ -25,7 +25,7 @@ ENABLE_NASM=ON
 REPRODUCIBLE_BUILDS=ON
 {% endblock %}
 
-{% block setup %}
+{% block setup_target_flags %}
 {% if mingw32 %}
 export CFLAGS="-msse4.1 -mavx -mavx2 ${CFLAGS}"
 {% endif %}

@@ -56,6 +56,6 @@ ft_sprintf=sprintf
 __WORDSIZE={{target.bits}}
 {% endblock %}
 
-{% block setup %}
+{% block setup_target_flags %}
 export CFLAGS="-Wno-macro-redefined ${CFLAGS}"
 {% endblock %}

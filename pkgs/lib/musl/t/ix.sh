@@ -12,7 +12,7 @@ lib/build
 ./configure
 {% endblock %}
 
-{% block setup %}
+{% block setup_target_flags %}
 export PICFLAGS="-fno-pic -fno-pie"
 export CPPFLAGS="${PICFLAGS} ${CPPFLAGS}"
 {% endblock %}

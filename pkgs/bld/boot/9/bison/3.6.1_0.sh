@@ -16,6 +16,6 @@ bld/boot/4/patch
 EOF
 {% endblock %}
 
-{% block setup %}
+{% block setup_target_flags %}
 export CPPFLAGS="-DGRAM_error=1 ${CPPFLAGS}"
 {% endblock %}

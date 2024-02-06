@@ -27,7 +27,7 @@ bld/boot/6/env/std
 {% block patch_ffi %}
 {% endblock %}
 
-{% block setup %}
+{% block setup_target_flags %}
 {% endblock %}
 
 {% block env %}

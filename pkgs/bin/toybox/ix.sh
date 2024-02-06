@@ -14,7 +14,7 @@ lib/kernel
 bld/bash
 {% endblock %}
 
-{% block setup %}
+{% block setup_target_flags %}
 export NOSTRIP=yes
 {% endblock %}
 

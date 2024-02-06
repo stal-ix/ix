@@ -13,7 +13,7 @@ lib/c
 unistd.h
 {% endblock %}
 
-{% block setup %}
+{% block setup_target_flags %}
 export CFLAGS="-Wno-implicit-int ${CFLAGS}"
 {% endblock %}
 

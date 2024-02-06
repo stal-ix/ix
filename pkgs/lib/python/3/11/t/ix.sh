@@ -15,7 +15,7 @@ bld/python
 CONFIG_64=1
 {% endblock %}
 
-{% block setup %}
+{% block setup_target_flags %}
 {{super()}}
 export ax_cv_c_float_words_bigendian=no
 {% endblock %}
