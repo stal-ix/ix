@@ -1,4 +1,4 @@
-{% extends '//die/go/c.sh' %}
+{% extends '//die/go/base.sh' %}
 
 {% block fetch %}
 https://github.com/xyproto/gendesk/archive/refs/tags/1.0.9.tar.gz

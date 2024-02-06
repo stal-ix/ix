@@ -1,4 +1,4 @@
-{% extends '//die/go/c.sh' %}
+{% extends '//die/go/base.sh' %}
 
 {% block step_unpack %}
 mkdir src; cd src
