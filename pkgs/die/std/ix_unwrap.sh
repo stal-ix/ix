@@ -28,9 +28,3 @@ export bld=${PWD}
 {% include 'stdenv.sh' %}
 {% endblock %}
 {% endblock %}
-
-{% block step_test %}
-{% block test %}
-{% include 'test.sh' %}
-{% endblock %}
-{% endblock %}

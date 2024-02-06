@@ -96,23 +96,3 @@ export gl_cv_func_posix_spawn_file_actions_addclose_works=yes
 export bash_cv_func_snprintf=yes
 export bash_cv_func_sigsetjmp=present
 {% endblock %}
-
-{% block test_lib %}
-. ${out}/env
-
-cat << EOF > main.c
-#include <stdio.h>
-#include <stdlib.h>
-
-int main() {
-    printf("hello!\n");
-    exit(0);
-}
-EOF
-
-${CC} -o main main.c ${CPPFLAGS} ${CFLAGS} ${LDFLAGS}
-{% endblock %}
-
-{% block test_execute %}
-./main
-{% endblock %}

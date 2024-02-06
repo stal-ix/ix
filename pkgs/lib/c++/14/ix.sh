@@ -92,8 +92,5 @@ mv include/c++/v1/* include/
 rm include/ranges
 # clash with HP unwind
 mv ${out}/lib/libunwind.a ${out}/lib/libc++unwind.a
-{% endblock %}
-
-{% block test_lib %}
 cat ${out}/include/__config_site | grep LIBCPP_ABI
 {% endblock %}
