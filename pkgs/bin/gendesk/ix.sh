@@ -5,14 +5,10 @@ https://github.com/xyproto/gendesk/archive/refs/tags/1.0.9.tar.gz
 {% endblock %}
 
 {% block go_sha %}
-sha:dd0008512eebc893e4b630d07d
+6d0b9d57dc1d8126ebbecea396fd936d41335800350bac60dd15a11186384691
 {% endblock %}
 
 {% block install %}
 mkdir ${out}/bin
 cp gendesk ${out}/bin/
-{% endblock %}
-
-{% block go_build_flags %}
--mod=vendor
 {% endblock %}
