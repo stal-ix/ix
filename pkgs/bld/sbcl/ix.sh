@@ -16,7 +16,7 @@ ecl -norc
 
 {% block patch %}
 {{super()}}
-base64 -d << EOF > src/runtime/gencgc.c
-{% include 'gencgc.c/base64' %}
+base64 -d << EOF | patch src/runtime/gencgc.c
+{% include '0.diff/base64' %}
 EOF
 {% endblock %}

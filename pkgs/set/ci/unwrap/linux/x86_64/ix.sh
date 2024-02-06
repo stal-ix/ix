@@ -23,7 +23,6 @@
 #bin/catboost
 #bin/ispc
 #bin/mutter
-#bin/copyq
 #bin/code/blocks
 #bin/pcsx2
 #bin/claws/mail
@@ -37,6 +36,8 @@
 
 {% block run_deps %}
 #bin/zellij
+bin/copyq
+bin/keepass/xc
 bin/code/lite
 bin/psensor
 bin/rio

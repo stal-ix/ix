@@ -123,6 +123,8 @@ def link(objs, args):
         if '.dll' in x:
             return link1(x, objs)
 
+    return link1(args[args.index('-o') + 1], objs)
+
 def retry(args):
     os.execvp(args[0], args)
 

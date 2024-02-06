@@ -1,8 +1,8 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://gitlab.freedesktop.org/xkeyboard-config/xkeyboard-config/-/archive/xkeyboard-config-2.40/xkeyboard-config-xkeyboard-config-2.40.tar.bz2
-sha:806379e044e1bb4023f274462ffe6c2e4b9b4b06de92d2fdb11d0a66715d6c60
+https://gitlab.freedesktop.org/xkeyboard-config/xkeyboard-config/-/archive/xkeyboard-config-2.41/xkeyboard-config-xkeyboard-config-2.41.tar.bz2
+sha:1d4c51af50595ca7e56fd0b2e8a82d28160d6cc334c86032c5975ba7a3f49467
 {% endblock %}
 
 {% block bld_tool %}

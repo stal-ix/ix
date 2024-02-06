@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/jasper-software/jasper/archive/refs/tags/version-4.1.2.tar.gz
-sha:64937eee9377f59d6222e443ed643857729c5378e627f54cdb1995776405be18
+https://github.com/jasper-software/jasper/archive/refs/tags/version-4.2.0.tar.gz
+sha:c9a3e35c95447f530b006fab6634a2dadec70276cc3e42c343b9e5ce5a1f2b6b
 {% endblock %}
 
 {% block lib_deps %}
