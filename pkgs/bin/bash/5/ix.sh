@@ -15,6 +15,12 @@ lib/c
 
 {% block bld_tool %}
 bld/bison
+{{super()}}
+{% endblock %}
+
+{% block build_flags %}
+{{super()}}
+wrap_cc
 {% endblock %}
 
 {% block configure_flags %}
