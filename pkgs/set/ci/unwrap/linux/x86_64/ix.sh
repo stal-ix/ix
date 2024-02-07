@@ -496,7 +496,7 @@ bin/acpi/d/runit
 bin/acpi/d/d
 bin/net/cat
 bin/basuctl
-bin/xmlwf
+bin/xml/wf
 bin/uconv
 bin/pcregrep/2
 bin/pcregrep
