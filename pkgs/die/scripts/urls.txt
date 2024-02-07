@@ -989,6 +989,7 @@ https://github.com/hyprwm/hyprpicker/archive/refs/tags/v0.1.0.tar.gz
 https://github.com/ib/xarchiver/archive/refs/tags/0.5.4.20.tar.gz
 https://github.com/ihhub/fheroes2/archive/refs/tags/1.0.10.tar.gz
 https://github.com/ihhub/fheroes2/archive/refs/tags/1.0.11.tar.gz
+https://github.com/ihhub/fheroes2/archive/refs/tags/1.0.12.tar.gz
 https://github.com/ihhub/fheroes2/archive/refs/tags/1.0.7.tar.gz
 https://github.com/ihhub/fheroes2/archive/refs/tags/1.0.8.tar.gz
 https://github.com/ihhub/fheroes2/archive/refs/tags/1.0.9.tar.gz
