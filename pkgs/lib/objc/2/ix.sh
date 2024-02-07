@@ -4,20 +4,23 @@
 https://github.com/gnustep/libobjc2
 {% endblock %}
 
-{% block git_commit %}
-71e38a048fc06fea0c2015662540d46a33b5c45d
+{% block git_branch %}
+v2.2
 {% endblock %}
 
 {% block git_sha %}
-2c93a8ab5a758ccb56caf702382ecc6b650e4fbdb260141e1f4799f3431a1d80
+e404f9a3172992ea48ef41a94c4dc1e1b3dfa09ead929fd607318cd58ca25d1a
 {% endblock %}
 
 {% block cmake_flags %}
 TESTS=OFF
+ENABLE_OBJCXX=OFF
+tls-robin-map_FOUND=ON
 {% endblock %}
 
 {% block lib_deps %}
 lib/c
+lib/robin/map
 {% endblock %}
 
 {% block patch %}
