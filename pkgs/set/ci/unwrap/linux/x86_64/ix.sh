@@ -249,7 +249,7 @@ bin/quake/3/e
 bin/sbase
 bin/scdoc
 bin/ed
-bin/xmlto
+bin/xml/to
 bin/iw
 bin/bsdutils
 bin/nasm

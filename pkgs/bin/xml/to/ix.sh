@@ -3,5 +3,5 @@
 {% block run_deps %}
 bin/getopt
 bin/xsltproc
-bin/xmlto/unwrap
+bin/xml/to/unwrap
 {% endblock %}
