@@ -1565,6 +1565,7 @@ https://github.com/vcrhonek/hwdata/archive/refs/tags/v0.375.tar.gz
 https://github.com/vcrhonek/hwdata/archive/refs/tags/v0.376.tar.gz
 https://github.com/vcrhonek/hwdata/archive/refs/tags/v0.377.tar.gz
 https://github.com/vcrhonek/hwdata/archive/refs/tags/v0.378.tar.gz
+https://github.com/vcrhonek/hwdata/archive/refs/tags/v0.379.tar.gz
 https://github.com/vector-of-bool/cmrc/archive/refs/tags/2.0.1.tar.gz
 https://github.com/videolabs/libmicrodns/archive/refs/tags/0.2.0.tar.gz
 https://github.com/videolan/dav1d/archive/refs/tags/1.2.1.tar.gz
