@@ -1760,6 +1760,7 @@ https://gnupg.org/ftp/gcrypt/libgpg-error/libgpg-error-1.47.tar.bz2
 https://golang.org/dl/go1.4-bootstrap-20170531.tar.gz
 https://hewlettpackard.github.io/wireless-tools/wireless_tools.29.tar.gz
 https://hg.sr.ht/~scoopta/wofi/archive/v1.2.4.tar.gz
+https://hg.sr.ht/~scoopta/wofi/archive/v1.4.tar.gz
 https://hikari.acmelabs.space/releases/hikari-2.3.3.tar.gz
 https://i3wm.org/i3status/i3status-2.14.tar.xz
 https://icon-theme.freedesktop.org/releases/hicolor-icon-theme-0.17.tar.xz
