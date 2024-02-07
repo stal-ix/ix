@@ -1819,6 +1819,7 @@ https://mirrors.edge.kernel.org/pub/linux/kernel/people/tytso/e2fsprogs/v1.46.6/
 https://mirrors.edge.kernel.org/pub/linux/libs/ell/ell-0.58.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/libs/ell/ell-0.60.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/libs/ell/ell-0.61.tar.xz
+https://mirrors.edge.kernel.org/pub/linux/libs/ell/ell-0.62.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/network/wireless/iwd-2.10.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/network/wireless/iwd-2.11.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/network/wireless/iwd-2.12.tar.xz
