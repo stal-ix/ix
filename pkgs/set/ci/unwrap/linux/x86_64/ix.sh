@@ -127,7 +127,7 @@ bin/coreutils/9/4
 bin/qemu/8/1
 bin/weechat
 bin/python/9
-bin/xmlb
+bin/xml/b
 bin/walk
 bin/lld/16
 bin/go/21
@@ -470,7 +470,7 @@ bin/kbd
 bin/fixtty
 bin/keyd
 bin/cpio
-bin/xmllint
+bin/xml/lint
 bin/curl/lite
 bin/curl/mbedtls
 bin/curl/bearssl

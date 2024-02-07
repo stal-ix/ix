@@ -8,7 +8,7 @@ bin/gperf
 bld/python
 bld/gettext
 bld/wayland
-bin/xmllint
+bin/xml/lint
 bld/pkg/config
 {% endblock %}
 

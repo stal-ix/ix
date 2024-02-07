@@ -22,7 +22,7 @@ bld/vala
 bld/glib
 bld/gtkdoc
 bld/gir/m4
-bin/xmllint
+bin/xml/lint
 bld/gettext
 bld/intltool
 bld/auto/archive
