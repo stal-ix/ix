@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://github.com/numactl/numactl/archive/refs/tags/v2.0.17.tar.gz
-sha:af22829cda8b5bdee3d280e61291697bbd3f9bd372afdf119c9348b88369d40b
+https://github.com/numactl/numactl/archive/refs/tags/v2.0.18.tar.gz
+sha:8cd6c13f3096e9c2293c1d732f56e2aa37a7ada1a98deed3fac7bd6da1aaaaf6
 {% endblock %}
 
 {% block lib_deps %}
