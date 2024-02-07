@@ -35,7 +35,7 @@ lib/shim/fake(lib_name=gcc_s)
 export LDFLAGS="-L${LD_LIBRARY_PATH} ${LDFLAGS}"
 {% endblock %}
 
-{% block setup %}
+{% block setup_target_flags %}
 export CARGO_BUILD_JOBS=8
 export CARGO_INSTALL_ROOT=${out}
 export CARGO_TARGET_DIR=${tmp}

@@ -1,4 +1,4 @@
-{% extends '//die/go/pure.sh' %}
+{% extends '//die/go/build.sh' %}
 
 {% block go_url %}
 https://github.com/gcla/termshark/archive/refs/tags/v2.4.0.tar.gz

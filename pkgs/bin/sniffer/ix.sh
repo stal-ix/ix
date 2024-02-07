@@ -1,4 +1,4 @@
-{% extends '//die/go/pure.sh' %}
+{% extends '//die/go/build.sh' %}
 
 {% block go_url %}
 https://github.com/chenjiandongx/sniffer/archive/refs/tags/v0.6.1.tar.gz

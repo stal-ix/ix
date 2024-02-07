@@ -1,4 +1,4 @@
-{% extends '//die/go/pure.sh' %}
+{% extends '//die/go/build.sh' %}
 
 {% block go_url %}
 https://github.com/shadowsocks/go-shadowsocks2/archive/refs/tags/v0.1.5.tar.gz

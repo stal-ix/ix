@@ -16,7 +16,7 @@ cd tools/power/cpupower
 bld/gettext
 {% endblock %}
 
-{% block setup %}
+{% block setup_target_flags %}
 export LDFLAGS="-L${PWD} ${LDFLAGS}"
 {% endblock %}
 

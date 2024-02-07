@@ -11,6 +11,6 @@ lib/z
 lib/openssl
 {% endblock %}
 
-{% block env_lib %}
+{% block env %}
 export COFLAGS="--with-libssh2=${out} \${COFLAGS}"
 {% endblock %}

@@ -1,4 +1,4 @@
-{% extends '//die/go/pure.sh' %}
+{% extends '//die/go/build.sh' %}
 
 {% block go_url %}
 https://github.com/cli/cli/archive/refs/tags/v2.14.4.tar.gz

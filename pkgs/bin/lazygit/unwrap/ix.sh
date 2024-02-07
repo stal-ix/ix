@@ -1,4 +1,4 @@
-{% extends '//die/go/pure.sh' %}
+{% extends '//die/go/build.sh' %}
 
 {% block go_url %}
 https://github.com/jesseduffield/lazygit/archive/refs/tags/v0.40.2.tar.gz

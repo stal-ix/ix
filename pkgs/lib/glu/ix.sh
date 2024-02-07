@@ -10,6 +10,6 @@ lib/c
 lib/opengl
 {% endblock %}
 
-{% block setup %}
+{% block setup_target_flags %}
 export CXXFLAGS="-Wno-register ${CXXFLAGS}"
 {% endblock %}

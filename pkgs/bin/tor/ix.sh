@@ -22,6 +22,6 @@ lib/bsd/overlay
 --disable-asciidoc
 {% endblock %}
 
-{% block setup %}
+{% block setup_target_flags %}
 export OPTFLAGS="${OPTFLAGS} -UNDEBUG"
 {% endblock %}

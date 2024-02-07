@@ -34,7 +34,7 @@ lib/c
 {% endif %}
 {% endblock %}
 
-{% block setup %}
+{% block setup_target_flags %}
 {# educated cross-compile guess, broke with clang 16 #}
 export ac_cv_type_pid_t=yes
 export ac_cv_sizeof_pid_t=4

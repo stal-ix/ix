@@ -16,6 +16,3 @@ lib/bsd/overlay
 aligned_alloc=memalign
 {% endblock %}
 
-{% block setup %}
-export ac_cv_func_lseek64=yes
-{% endblock %}

@@ -26,7 +26,7 @@ find . -type f | grep Makefile | while read l; do
 done
 {% endblock %}
 
-{% block setup %}
+{% block setup_target_flags %}
 export CC_FOR_BUILD=${HOST_CC}
 export CCLD_FOR_BUILD=${HOST_CC}
 {% endblock %}

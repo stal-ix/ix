@@ -18,7 +18,7 @@ aux/terminfo
 aux/terminfo/config
 {% endblock %}
 
-{% block setup %}
+{% block setup_target_flags %}
 export JED_ROOT=${out}/share/jed
 {% endblock %}
 

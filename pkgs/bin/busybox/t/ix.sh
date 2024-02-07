@@ -22,7 +22,7 @@ bin/bzip2
 shut_up
 {% endblock%}
 
-{% block setup %}
+{% block setup_target_flags %}
 export SKIP_STRIP=y
 {% endblock %}
 

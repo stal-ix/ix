@@ -35,7 +35,7 @@ ${PWD}/heirloom/libcommon
 ${PWD}/heirloom/libuxre
 {% endblock %}
 
-{% block setup %}
+{% block setup_target_flags %}
 export LDFLAGS="-L${PWD}/heirloom/libcommon -L${PWD}/heirloom/libuxre ${LDFLAGS}"
 export CFLAGS="-fcommon ${CFLAGS}"
 export PATH="${out}/bin:${PATH}"

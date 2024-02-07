@@ -1,4 +1,4 @@
-{% extends '//die/go/pure.sh' %}
+{% extends '//die/go/build.sh' %}
 
 {# TODO(pg): get rid of /usr/bin/getent reference #}
 

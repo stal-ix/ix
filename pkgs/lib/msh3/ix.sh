@@ -20,7 +20,7 @@ lib/bsd/overlay
 ${PWD}
 {% endblock %}
 
-{% block setup %}
+{% block setup_target_flags %}
 export CXXFLAGS="-std=c++20 ${CXXFLAGS}"
 {% endblock %}
 

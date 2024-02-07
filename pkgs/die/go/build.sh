@@ -1,4 +1,4 @@
-{% extends 'c.sh' %}
+{% extends 'base.sh' %}
 
 {% block std_box %}
 bld/stable/unpack

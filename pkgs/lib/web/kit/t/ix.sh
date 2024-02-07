@@ -55,7 +55,7 @@ shut_up
 wrap_cc
 {% endblock %}
 
-{% block setup %}
+{% block setup_target_flags %}
 export CPPFLAGS=$(echo ${CPPFLAGS} | tr ' ' '\n' | grep -v mesa | tr '\n' ' ')
 export CXXFLAGS="-Wno-register ${CXXFLAGS}"
 {% endblock %}

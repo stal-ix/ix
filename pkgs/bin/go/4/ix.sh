@@ -19,7 +19,7 @@ cd src
 lib/c
 {% endblock %}
 
-{% block setup %}
+{% block setup_target_flags %}
 {% block cgo %}
 export CGO_ENABLED=0
 {% endblock %}

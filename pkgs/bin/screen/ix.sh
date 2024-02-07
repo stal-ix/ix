@@ -13,7 +13,7 @@ lib/pam
 lib/curses
 {% endblock %}
 
-{% block setup %}
+{% block setup_target_flags %}
 {# no select - no screen! #}
 export CFLAGS="-Wno-implicit-function-declaration ${CFLAGS}"
 {% endblock %}

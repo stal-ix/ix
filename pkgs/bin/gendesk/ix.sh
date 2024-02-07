@@ -1,15 +1,18 @@
-{% extends '//die/go/c.sh' %}
+{% extends '//die/go/build.sh' %}
 
-{% block fetch %}
+{% block go_url %}
 https://github.com/xyproto/gendesk/archive/refs/tags/1.0.9.tar.gz
-sha:dd0008512eebc893e4b630d07d9bf5e3a4f121b87fe725c32773caa6e391db58
+{% endblock %}
+
+{% block go_sha %}
+6175e5350985c864956dff6de260c8e1b4566717c6769c79b47d9e6a070d442e
+{% endblock %}
+
+{% block go_refine %}
+find . -type l -delete
 {% endblock %}
 
 {% block install %}
 mkdir ${out}/bin
 cp gendesk ${out}/bin/
-{% endblock %}
-
-{% block go_build_flags %}
--mod=vendor
 {% endblock %}

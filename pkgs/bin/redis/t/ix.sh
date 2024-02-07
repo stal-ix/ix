@@ -23,6 +23,6 @@ MALLOC=libc
 USE_SYSTEMD=no
 {% endblock %}
 
-{% block setup %}
+{% block setup_target_flags %}
 export CFLAGS="-Wno-strict-prototypes ${CFLAGS}"
 {% endblock %}

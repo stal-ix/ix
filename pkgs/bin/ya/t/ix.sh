@@ -11,7 +11,7 @@ bld/python/2
 jdk/oracle/17
 {% endblock %}
 
-{% block setup %}
+{% block setup_target_flags %}
 # {{ya_ver}}
 export J1=$(which javac)
 export J2=$(dirname ${J1})

@@ -525,6 +525,7 @@ https://github.com/GNOME/libshumate/archive/refs/tags/1.1.1.tar.gz
 https://github.com/GNOME/libshumate/archive/refs/tags/1.1.2.tar.gz
 https://github.com/GStreamer/orc/archive/refs/tags/0.4.34.tar.gz
 https://github.com/GStreamer/orc/archive/refs/tags/0.4.35.tar.gz
+https://github.com/GStreamer/orc/archive/refs/tags/0.4.37.tar.gz
 https://github.com/Genivia/ugrep/archive/refs/tags/v4.0.5.tar.gz
 https://github.com/Genivia/ugrep/archive/refs/tags/v4.1.0.tar.gz
 https://github.com/Genivia/ugrep/archive/refs/tags/v4.2.0.tar.gz
@@ -636,11 +637,13 @@ https://github.com/PurpleI2P/i2pd/archive/refs/tags/2.50.0.tar.gz
 https://github.com/PurpleI2P/i2pd/archive/refs/tags/2.50.1.tar.gz
 https://github.com/PurpleI2P/i2pd/archive/refs/tags/2.50.2.tar.gz
 https://github.com/RazrFalcon/resvg/archive/refs/tags/v0.38.0.tar.gz
+https://github.com/RazrFalcon/resvg/archive/refs/tags/v0.39.0.tar.gz
 https://github.com/Samsung/rlottie/archive/refs/tags/v0.2.tar.gz
 https://github.com/SpartanJ/efsw/archive/refs/tags/1.3.1.tar.gz
 https://github.com/Syllo/nvtop/archive/refs/tags/3.0.2.tar.gz
 https://github.com/TartanLlama/expected/archive/refs/tags/v1.1.0.tar.gz
 https://github.com/Terraspace/UASM/archive/refs/tags/v2.56.2.tar.gz
+https://github.com/Tessil/robin-map/archive/refs/tags/v1.2.1.tar.gz
 https://github.com/Tomas-M/iotop/archive/refs/tags/v1.23.tar.gz
 https://github.com/Tomas-M/iotop/archive/refs/tags/v1.26.tar.gz
 https://github.com/USCiLab/cereal/archive/refs/tags/v1.3.2.tar.gz
@@ -717,6 +720,7 @@ https://github.com/arvidn/libtorrent/releases/download/v2.0.9/libtorrent-rasterb
 https://github.com/ascent12/drm_info/archive/refs/tags/v2.3.0.tar.gz
 https://github.com/axboe/liburing/archive/refs/tags/liburing-2.2.tar.gz
 https://github.com/axel-download-accelerator/axel/archive/refs/tags/v2.17.12.tar.gz
+https://github.com/axel-download-accelerator/axel/archive/refs/tags/v2.17.13.tar.gz
 https://github.com/benhoyt/goawk/archive/refs/tags/v1.24.0.tar.gz
 https://github.com/benhoyt/goawk/archive/refs/tags/v1.25.0.tar.gz
 https://github.com/benhoyt/inih/archive/refs/tags/r57.tar.gz
@@ -901,6 +905,7 @@ https://github.com/glennrp/libpng/archive/refs/tags/v1.6.42.tar.gz
 https://github.com/glfw/glfw/archive/refs/tags/3.3.8.tar.gz
 https://github.com/glfw/glfw/archive/refs/tags/3.3.9.tar.gz
 https://github.com/glmark2/glmark2/archive/refs/tags/2023.01.tar.gz
+https://github.com/gnustep/libobjc2/archive/refs/tags/v2.2.tar.gz
 https://github.com/go-git/go-git/archive/refs/tags/v5.4.2.tar.gz
 https://github.com/go-task/task/archive/refs/tags/v3.14.0.tar.gz
 https://github.com/gokcehan/lf/archive/refs/tags/r27.tar.gz
@@ -913,6 +918,8 @@ https://github.com/golang/go/archive/refs/tags/go1.21.3.tar.gz
 https://github.com/golang/go/archive/refs/tags/go1.21.4.tar.gz
 https://github.com/golang/go/archive/refs/tags/go1.21.5.tar.gz
 https://github.com/golang/go/archive/refs/tags/go1.21.6.tar.gz
+https://github.com/golang/go/archive/refs/tags/go1.21.7.tar.gz
+https://github.com/golang/go/archive/refs/tags/go1.22.0.tar.gz
 https://github.com/google/brotli/archive/refs/tags/v1.1.0.tar.gz
 https://github.com/google/crc32c/archive/refs/tags/1.1.2.tar.gz
 https://github.com/google/double-conversion/archive/refs/tags/v3.3.0.tar.gz
@@ -1085,6 +1092,7 @@ https://github.com/libcxxrt/libcxxrt/archive/fd484be8d1e94a1fcf6bc5c67e5c07b65ad
 https://github.com/libevent/libevent/archive/refs/tags/release-2.1.12-stable.tar.gz
 https://github.com/libexif/libexif/archive/refs/tags/v0.6.24.tar.gz
 https://github.com/libexpat/libexpat/archive/refs/tags/R_2_5_0.tar.gz
+https://github.com/libexpat/libexpat/archive/refs/tags/R_2_6_0.tar.gz
 https://github.com/libffi/libffi/archive/refs/tags/v3.4.4.tar.gz
 https://github.com/libfuse/libfuse/archive/refs/tags/fuse-2.9.9.tar.gz
 https://github.com/libfuse/libfuse/archive/refs/tags/fuse-3.16.1.tar.gz
@@ -1092,6 +1100,7 @@ https://github.com/libfuse/libfuse/archive/refs/tags/fuse-3.16.2.tar.gz
 https://github.com/libgd/libgd/archive/refs/tags/gd-2.3.3.tar.gz
 https://github.com/libgit2/libgit2/archive/refs/tags/v1.0.1.tar.gz
 https://github.com/libgit2/libgit2/archive/refs/tags/v1.7.0.tar.gz
+https://github.com/libgit2/libgit2/archive/refs/tags/v1.7.2.tar.gz
 https://github.com/libical/libical/archive/refs/tags/v3.0.16.tar.gz
 https://github.com/libical/libical/archive/refs/tags/v3.0.17.tar.gz
 https://github.com/libjpeg-turbo/libjpeg-turbo/archive/refs/tags/3.0.0.tar.gz
@@ -1320,6 +1329,7 @@ https://github.com/python-cffi/cffi/archive/refs/tags/v1.16.0.tar.gz
 https://github.com/python/cpython/archive/refs/tags/v3.11.5.tar.gz
 https://github.com/python/cpython/archive/refs/tags/v3.12.0.tar.gz
 https://github.com/python/cpython/archive/refs/tags/v3.12.1.tar.gz
+https://github.com/python/cpython/archive/refs/tags/v3.12.2.tar.gz
 https://github.com/qbittorrent/qBittorrent/archive/refs/tags/release-4.5.4.tar.gz
 https://github.com/qbittorrent/qBittorrent/archive/refs/tags/release-4.6.0.tar.gz
 https://github.com/qbittorrent/qBittorrent/archive/refs/tags/release-4.6.1.tar.gz
@@ -1560,6 +1570,7 @@ https://github.com/vcrhonek/hwdata/archive/refs/tags/v0.375.tar.gz
 https://github.com/vcrhonek/hwdata/archive/refs/tags/v0.376.tar.gz
 https://github.com/vcrhonek/hwdata/archive/refs/tags/v0.377.tar.gz
 https://github.com/vcrhonek/hwdata/archive/refs/tags/v0.378.tar.gz
+https://github.com/vcrhonek/hwdata/archive/refs/tags/v0.379.tar.gz
 https://github.com/vector-of-bool/cmrc/archive/refs/tags/2.0.1.tar.gz
 https://github.com/videolabs/libmicrodns/archive/refs/tags/0.2.0.tar.gz
 https://github.com/videolan/dav1d/archive/refs/tags/1.2.1.tar.gz
@@ -1754,6 +1765,7 @@ https://gnupg.org/ftp/gcrypt/libgpg-error/libgpg-error-1.47.tar.bz2
 https://golang.org/dl/go1.4-bootstrap-20170531.tar.gz
 https://hewlettpackard.github.io/wireless-tools/wireless_tools.29.tar.gz
 https://hg.sr.ht/~scoopta/wofi/archive/v1.2.4.tar.gz
+https://hg.sr.ht/~scoopta/wofi/archive/v1.4.tar.gz
 https://hikari.acmelabs.space/releases/hikari-2.3.3.tar.gz
 https://i3wm.org/i3status/i3status-2.14.tar.xz
 https://icon-theme.freedesktop.org/releases/hicolor-icon-theme-0.17.tar.xz

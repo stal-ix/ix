@@ -20,7 +20,7 @@ bld/boot/1/env
 mkdir src; cd src; extract0 ${src}/*.gz; cd *
 {% endblock %}
 
-{% block setup %}
+{% block setup_target_flags %}
 export PATH="${out}/bin:${PWD}:${PATH}"
 {% endblock %}
 

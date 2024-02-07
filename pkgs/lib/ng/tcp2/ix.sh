@@ -18,7 +18,7 @@ ENABLE_LIB_ONLY=OFF
 ENABLE_STATIC_LIB=OFF
 {% endblock %}
 
-{% block setup %}
+{% block setup_target_flags %}
 # for example
 export CXXFLAGS="-std=c++17 ${CXXFLAGS}"
 {% endblock %}

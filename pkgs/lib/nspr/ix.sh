@@ -23,7 +23,7 @@ wrap_cc
 --enable-64bit
 {% endblock %}
 
-{% block env_lib %}
+{% block env %}
 export CPPFLAGS="-I${out}/include/nspr \${CPPFLAGS}"
 {% endblock %}
 

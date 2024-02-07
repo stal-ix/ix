@@ -9,7 +9,7 @@ lib/shim/fake(lib_name=stdc++)
 {{super()}}
 {% endblock %}
 
-{% block setup %}
+{% block setup_target_flags %}
 {{super()}}
 export RUSTC_INSTALL_BINDIR=${out}/bin
 export REAL_LIBRARY_PATH_VAR=LD_LIBRARY_PATH

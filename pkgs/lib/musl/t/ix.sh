@@ -12,7 +12,7 @@ lib/build
 ./configure
 {% endblock %}
 
-{% block setup %}
+{% block setup_target_flags %}
 export PICFLAGS="-fno-pic -fno-pie"
 export CPPFLAGS="${PICFLAGS} ${CPPFLAGS}"
 {% endblock %}
@@ -61,6 +61,7 @@ export ac_cv_func_sysconf=yes
 export ac_cv_func_strtoul=yes
 export cf_cv_func_mkstemp=yes
 export cf_cv_working_poll=yes
+export ac_cv_func_lseek64=yes
 export ac_cv_func_realpath=yes
 export ac_cv_working_tzset=yes
 export ac_cv_func_snprintf=yes
@@ -95,24 +96,4 @@ export gl_cv_func_posix_spawn_file_actions_addclose_works=yes
 # TODO(pg83): check it
 export bash_cv_func_snprintf=yes
 export bash_cv_func_sigsetjmp=present
-{% endblock %}
-
-{% block test_lib %}
-. ${out}/env
-
-cat << EOF > main.c
-#include <stdio.h>
-#include <stdlib.h>
-
-int main() {
-    printf("hello!\n");
-    exit(0);
-}
-EOF
-
-${CC} -o main main.c ${CPPFLAGS} ${CFLAGS} ${LDFLAGS}
-{% endblock %}
-
-{% block test_execute %}
-./main
 {% endblock %}

@@ -40,7 +40,7 @@ unistd.h
 sys/time.h
 {% endblock %}
 
-{% block setup %}
+{% block setup_target_flags %}
 export CXXFLAGS="-include sstream ${CXXFLAGS}"
 {% endblock %}
 

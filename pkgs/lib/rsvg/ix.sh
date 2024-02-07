@@ -22,7 +22,7 @@ bld/glib
 shut_up
 {% endblock %}
 
-{% block setup %}
+{% block setup_target_flags %}
 # libxml2 error
 export CFLAGS="-Wno-incompatible-function-pointer-types ${CFLAGS}"
 {% endblock %}

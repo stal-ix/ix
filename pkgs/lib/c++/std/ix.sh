@@ -41,7 +41,7 @@ __builtin_ia32_rdseed_si_step=__builtin_ia32_rdseed32_step
 shut_up
 {% endblock %}
 
-{% block setup %}
+{% block setup_target_flags %}
 export CFLAGS="-mrdrnd -mrdseed ${CFLAGS}"
 {% endblock %}
 

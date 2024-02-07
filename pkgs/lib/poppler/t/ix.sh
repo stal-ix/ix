@@ -50,6 +50,6 @@ ENABLE_GOBJECT_INTROSPECTION=OFF
 shut_up
 {% endblock %}
 
-{% block setup %}
+{% block setup_target_flags %}
 export CPPFLAGS="-Wno-register ${CPPFLAGS}"
 {% endblock %}

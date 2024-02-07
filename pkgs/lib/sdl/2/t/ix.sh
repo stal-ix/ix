@@ -21,7 +21,7 @@ SDL_LIBSAMPLERATE=OFF
 SDL_LIBSAMPLERATE_SHARED=OFF
 {% endblock %}
 
-{% block setup %}
+{% block setup_target_flags %}
 export CFLAGS="-Wno-incompatible-function-pointer-types ${CFLAGS}"
 {% endblock %}
 

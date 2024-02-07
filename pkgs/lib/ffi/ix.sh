@@ -22,7 +22,7 @@ bld/auto(conf_ver=2/71,std_box=bld/boot/box)
 bld/texinfo
 {% endblock %}
 
-{% block setup %}
+{% block setup_target_flags %}
 export CFLAGS="-Wno-implicit-function-declaration ${CPPFLAGS}"
 {% endblock %}
 

@@ -40,6 +40,6 @@ gRPC_PROTOBUF_PROVIDER=package
 gRPC_BUILD_CSHARP_EXT=OFF
 {% endblock %}
 
-{% block setup %}
+{% block setup_target_flags %}
 export CXXFLAGS="-std=c++20 ${CXXFLAGS}"
 {% endblock %}

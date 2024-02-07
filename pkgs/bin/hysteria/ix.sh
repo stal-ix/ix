@@ -1,4 +1,4 @@
-{% extends '//die/go/pure.sh' %}
+{% extends '//die/go/build.sh' %}
 
 {% block go_url %}
 https://github.com/apernet/hysteria/archive/refs/tags/app/v2.2.3.tar.gz
@@ -18,6 +18,6 @@ mkdir ${out}/bin
 cp app ${out}/bin/
 {% endblock %}
 
-{% block setup %}
+{% block setup_target_flags %}
 export GOWORK=off
 {% endblock %}

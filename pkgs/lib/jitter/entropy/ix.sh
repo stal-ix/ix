@@ -9,7 +9,7 @@ sha:33352369092b5a0d1463c720f5a8a3e870dbd63502ea57692e7da84a65c0c5c3
 lib/c
 {% endblock %}
 
-{% block setup %}
+{% block setup_target_flags %}
 export OPTFLAGS="${OPTFLAGS} -O0"
 {% endblock %}
 

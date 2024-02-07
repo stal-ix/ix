@@ -10,14 +10,16 @@ lib/c
 {% endblock %}
 
 {% block bld_tool %}
+{% block go_bootstrap %}
 bin/go/19
+{% endblock %}
 {{super()}}
 {% endblock %}
 
 {% block cgo %}
 {% endblock %}
 
-{% block setup %}
+{% block setup_target_flags %}
 {{super()}}
 export CPPFLAGS="${CPPFLAGS} -fno-color-diagnostics"
 {% endblock %}

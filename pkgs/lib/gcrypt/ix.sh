@@ -14,7 +14,7 @@ lib/gpg/error
 lib/c
 {% endblock %}
 
-{% block setup %}
+{% block setup_target_flags %}
 export OPTFLAGS="${OPTFLAGS} -O2"
 {% endblock %}
 

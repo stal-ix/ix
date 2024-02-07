@@ -12,7 +12,7 @@ lib/gdk/pixbuf
 GDK_PIXBUF_ENABLE_BACKEND=1
 {% endblock %}
 
-{% block setup %}
+{% block setup_target_flags %}
 export CXXFLAGS="-Wno-writable-strings ${CXXFLAGS}"
 {% endblock %}
 

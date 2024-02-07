@@ -23,7 +23,7 @@ bld/fake(tool_name=install_name_tool,std_box={{std_box}})
 shut_up
 {% endblock %}
 
-{% block setup %}
+{% block setup_target_flags %}
 export CFLAGS="-Wno-int-conversion ${CFLAGS}"
 {% endblock %}
 

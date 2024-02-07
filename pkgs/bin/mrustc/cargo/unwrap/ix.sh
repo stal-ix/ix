@@ -9,7 +9,7 @@ lib/git/2/old
 {{super()}}
 {% endblock %}
 
-{% block setup %}
+{% block setup_target_flags %}
 {{super()}}
 export OPENSSL_DIR=${SSL_DIR}
 {% endblock %}

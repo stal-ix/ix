@@ -4,7 +4,7 @@
 echo > llvm/unittests/Support/DynamicLibrary/CMakeLists.txt
 {% endblock %}
 
-{% block setup %}
+{% block setup_target_flags %}
 {% if darwin %}
 export LDFLAGS="-Wl,-w ${LDFLAGS}"
 {% endif %}

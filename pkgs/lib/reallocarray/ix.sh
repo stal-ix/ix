@@ -4,7 +4,7 @@
 lib/c/naked
 {% endblock %}
 
-{% block setup %}
+{% block setup_target_flags %}
 export CFLAGS="-fno-builtin ${CFLAGS}"
 {% endblock %}
 

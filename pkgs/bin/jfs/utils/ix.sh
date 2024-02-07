@@ -14,7 +14,7 @@ lib/e2fsprogs
 _PATH_MNTTAB=\\\"/proc/mounts\\\"
 {% endblock %}
 
-{% block setup %}
+{% block setup_target_flags %}
 export CFLAGS="-fcommon ${CFLAGS}"
 {% endblock %}
 

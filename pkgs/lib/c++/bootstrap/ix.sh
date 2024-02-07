@@ -9,7 +9,7 @@ lib/kernel
 lib/musl/pure
 {% endblock %}
 
-{% block setup %}
+{% block setup_target_flags %}
 export CPPFLAGS="-iquote src -I${PWD}/../libcxxabi/include -Iinclude -std=c++14 ${CPPFLAGS}"
 {% endblock %}
 

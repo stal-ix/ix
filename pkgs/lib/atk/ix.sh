@@ -18,6 +18,6 @@ bld/glib
 introspection=false
 {% endblock %}
 
-{% block env_lib %}
+{% block env %}
 export CPPFLAGS="-I${out}/include/atk-1.0 \${CPPFLAGS}"
 {% endblock %}

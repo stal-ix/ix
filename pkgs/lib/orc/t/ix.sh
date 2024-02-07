@@ -1,8 +1,8 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://github.com/GStreamer/orc/archive/refs/tags/0.4.35.tar.gz
-sha:85116f6aed0a14a612548909b56da82537d1b743b14c65bfa1045db1c7703871
+https://github.com/GStreamer/orc/archive/refs/tags/0.4.37.tar.gz
+sha:cb0a9c554c6b8da16a4a26906a9ba66df6bacc9627cc32cb51d6dc103b05f990
 {% endblock %}
 
 {% block lib_deps %}

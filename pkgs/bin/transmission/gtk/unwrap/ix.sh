@@ -33,7 +33,7 @@ mv old/transmission-gtk bin/
 rm -r old
 {% endblock %}
 
-{% block setup %}
+{% block setup_target_flags %}
 {{super()}}
 export CXXFLAGS="-fno-c++-static-destructors ${CXXFLAGS}"
 {% endblock %}

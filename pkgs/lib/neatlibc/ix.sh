@@ -27,7 +27,7 @@ mkdir ${out}/include
 cp *.h ${out}/include/
 {% endblock %}
 
-{% block setup %}
+{% block setup_target_flags %}
 export CFLAGS="-fno-builtin ${CFLAGS}"
 {% endblock %}
 

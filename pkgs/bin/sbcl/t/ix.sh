@@ -14,7 +14,7 @@ bld/make
 wrap_cc
 {% endblock %}
 
-{% block setup %}
+{% block setup_target_flags %}
 export CFLAGS="-fcommon ${CFLAGS}"
 {% endblock %}
 
