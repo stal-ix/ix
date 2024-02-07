@@ -903,6 +903,7 @@ https://github.com/glennrp/libpng/archive/refs/tags/v1.6.42.tar.gz
 https://github.com/glfw/glfw/archive/refs/tags/3.3.8.tar.gz
 https://github.com/glfw/glfw/archive/refs/tags/3.3.9.tar.gz
 https://github.com/glmark2/glmark2/archive/refs/tags/2023.01.tar.gz
+https://github.com/gnustep/libobjc2/archive/refs/tags/v2.2.tar.gz
 https://github.com/go-git/go-git/archive/refs/tags/v5.4.2.tar.gz
 https://github.com/go-task/task/archive/refs/tags/v3.14.0.tar.gz
 https://github.com/gokcehan/lf/archive/refs/tags/r27.tar.gz

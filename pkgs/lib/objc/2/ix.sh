@@ -1,15 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
-{% block git_repo %}
-https://github.com/gnustep/libobjc2
-{% endblock %}
-
-{% block git_branch %}
-v2.2
-{% endblock %}
-
-{% block git_sha %}
-e404f9a3172992ea48ef41a94c4dc1e1b3dfa09ead929fd607318cd58ca25d1a
+{% block fetch %}
+https://github.com/gnustep/libobjc2/archive/refs/tags/v2.2.tar.gz
+sha:c4c5cede579949249f16736c9b1f85c58c44addb013f59970dcb566d9069152a
 {% endblock %}
 
 {% block cmake_flags %}
