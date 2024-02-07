@@ -10,7 +10,9 @@ lib/c
 {% endblock %}
 
 {% block bld_tool %}
+{% block go_bootstrap %}
 bin/go/19
+{% endblock %}
 {{super()}}
 {% endblock %}
 

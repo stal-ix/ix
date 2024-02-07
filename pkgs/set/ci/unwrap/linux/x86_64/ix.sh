@@ -131,6 +131,7 @@ bin/xmlb
 bin/walk
 bin/lld/16
 bin/go/21
+bin/go/22
 bin/limine
 bin/emacs/gtk
 bin/knot/resolver
