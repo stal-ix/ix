@@ -36,6 +36,7 @@
 
 {% block run_deps %}
 #bin/zellij
+#bin/gendesk
 bin/copyq
 bin/keepass/xc
 bin/code/lite
@@ -792,7 +793,6 @@ bin/rhash
 bin/vis
 bin/w3m
 bin/tea
-bin/gendesk
 bin/ladybird
 bin/shadow
 bin/pdpmake
