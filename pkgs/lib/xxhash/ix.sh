@@ -3,6 +3,7 @@
 {% block bld_tool %}
 {{super()}}
 bld/wrapcc
+bld/rename/dynlib
 {% endblock %}
 
 {% block env %}
