@@ -17,6 +17,7 @@ shared
 
 {% block build_flags %}
 wrap_cc
+rename_dynlib
 {% endblock %}
 
 {% block make_flags %}
@@ -38,6 +39,4 @@ echo '{{version}}' > VERSION
 cd ${out}
 mv usr/include ./
 rm -rf usr
-cd lib
-cp libx86emu.so libx86emu.a
 {% endblock %}
