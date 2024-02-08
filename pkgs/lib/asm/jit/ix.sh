@@ -19,6 +19,7 @@ lib/c++
 
 {% block build_flags %}
 wrap_cc
+fix_cmake_lib
 {% endblock %}
 
 {% block install %}
