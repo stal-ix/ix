@@ -14,16 +14,11 @@ lib/xkb/common
 
 {% block build_flags %}
 wrap_cc
+rename_dynlib
 {% endblock %}
 
 {% block env %}
 export CPPFLAGS="-I${out}/include/wpe-1.0 \${CPPFLAGS}"
-{% endblock %}
-
-{% block install %}
-{{super()}}
-cd ${out}/lib
-cp libwpe-1.0.so libwpe-1.0.a
 {% endblock %}
 
 {% block patch %}
