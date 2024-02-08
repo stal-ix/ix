@@ -1,15 +1,6 @@
-{% extends '//die/c/meson.sh' %}
-
-{% block fetch %}
-https://github.com/varlink/libvarlink/archive/refs/tags/23.tar.gz
-sha:a5575e070e446e7c4486d424393950e6cb7a3b376ee20d517b0c13a876659a8d
-{% endblock %}
-
-{% block lib_deps %}
-lib/c
-{% endblock %}
+{% extends 't/ix.sh' %}
 
 {% block build_flags %}
-wrap_cc
+{{super()}}
 rename_dynlib
 {% endblock %}
