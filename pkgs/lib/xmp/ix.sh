@@ -11,13 +11,5 @@ lib/c
 
 {% block build_flags %}
 wrap_cc
-{% endblock %}
-
-{% block bld_tool %}
-bld/cmake/fix
-{% endblock %}
-
-{% block install %}
-{{super()}}
-fix_cmake_lib ${out}/lib/cmake
+fix_cmake_lib
 {% endblock %}
