@@ -18,7 +18,6 @@ lib/sdl/2
 
 {% block build_flags %}
 wrap_cc
-rename_dynlib
 {% endblock %}
 
 {% block cmake_flags %}

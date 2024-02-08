@@ -14,7 +14,6 @@ lib/xkb/common
 
 {% block build_flags %}
 wrap_cc
-rename_dynlib
 {% endblock %}
 
 {% block env %}

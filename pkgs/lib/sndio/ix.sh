@@ -4,7 +4,6 @@
 
 {% block build_flags %}
 wrap_cc
-rename_dynlib
 {% endblock %}
 
 {% block make_flags %}

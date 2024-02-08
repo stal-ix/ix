@@ -9,11 +9,6 @@ lib/vulkan/loader/data
 bld/reloc
 {% endblock %}
 
-{% block build_flags %}
-{{super()}}
-rename_dynlib
-{% endblock %}
-
 {% block configure %}
 {{super()}}
 relocate "${VULKAN_LOADER_DATA}"

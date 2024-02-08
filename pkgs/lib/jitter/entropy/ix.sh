@@ -15,7 +15,6 @@ export OPTFLAGS="${OPTFLAGS} -O0"
 
 {% block build_flags %}
 wrap_cc
-rename_dynlib
 {% endblock %}
 
 {% block bld_tool %}

@@ -18,7 +18,6 @@ lib/shim/fake(lib_name=atomic)
 {% block build_flags %}
 wrap_cc
 shut_up
-rename_dynlib
 {% endblock %}
 
 {% block cmake_flags %}
