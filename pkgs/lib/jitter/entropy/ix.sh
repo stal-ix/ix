@@ -15,16 +15,11 @@ export OPTFLAGS="${OPTFLAGS} -O0"
 
 {% block build_flags %}
 wrap_cc
+rename_dynlib
 {% endblock %}
 
 {% block bld_tool %}
 bin/gzip
-{% endblock %}
-
-{% block install %}
-{{super()}}
-cd ${out}/lib
-cp libjitterentropy.so.3.4.1 libjitterentropy.a
 {% endblock %}
 
 {% block env %}
