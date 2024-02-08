@@ -1,14 +1,22 @@
 {% extends '//lib/nss/t/ix.sh' %}
 
-{% block install %}
+{% block libs %}
+libfreebl
+libfreeblpriv
+libnss
+libnssutil
+libsmime
+libsoftokn
+libssl
+{% endblock %}
+
+{% block postinstall %}
+rm ${out}/lib/*TOC ${out}/lib/*_static.a
 {{super()}}
-mkdir ${out}/include
-cp -R ../dist/public/* ${out}/include/
-cd ${out}/lib
-rm *.TOC *_static.a
-for x in *.so; do
-    mv ${x} $(echo ${x} | sed -e 's|3.so|.a|' | sed -e 's|.so|.a|')
-done
+cp -R ../dist/public ${out}/include
+{% for x in self.libs().split() %}
+mv ${out}/lib/{{x}}3.a ${out}/lib/{{x}}.a
+{% endfor %}
 {% endblock %}
 
 {% block env %}
