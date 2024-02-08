@@ -42,9 +42,3 @@ bash_completion_dir=${out}/share/bash-completion/completions
 {% block build_flags %}
 wrap_cc
 {% endblock %}
-
-{% block install %}
-{{super()}}
-cd ${out}/lib
-cp libcpupower.so libcpupower.a
-{% endblock %}
