@@ -4,9 +4,3 @@
 {{super()}}
 ALSOFT_UTILS=OFF
 {% endblock %}
-
-{% block install %}
-{{super()}}
-cd ${out}/lib
-cp libopenal.so libopenal.a
-{% endblock %}

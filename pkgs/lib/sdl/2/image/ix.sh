@@ -37,10 +37,5 @@ sed -e 's|0.9.1|1.0.0|' -i CMakeLists.txt
 
 {% block install %}
 {{super()}}
-cd ${out}/lib
-cp libSDL2_image.so libSDL2_image.a
-{% endblock %}
-
-{% block test %}
 test -f ${out}/lib/pkgconfig/SDL2_image.pc
 {% endblock %}

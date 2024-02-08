@@ -7,7 +7,9 @@ sha:404fa621f1ab2731bcc68bcbff64d8c6de322faad2d87f9198641bd37255fd39
 
 {% block lib_deps %}
 lib/c
+{% if linux %}
 lib/wayland
+{% endif %}
 lib/vulkan/headers
 {% endblock %}
 

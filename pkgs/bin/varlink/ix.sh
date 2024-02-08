@@ -1,1 +1,1 @@
-{% extends '//lib/varlink/ix.sh' %}
+{% extends '//lib/varlink/t/ix.sh' %}

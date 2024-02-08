@@ -20,12 +20,6 @@ wrap_cc
 export CPPFLAGS="-I${out}/include/wpe-1.0 \${CPPFLAGS}"
 {% endblock %}
 
-{% block install %}
-{{super()}}
-cd ${out}/lib
-cp libwpe-1.0.so libwpe-1.0.a
-{% endblock %}
-
 {% block patch %}
 sed -e 's|.*pragma.*poison.*||' -i src/alloc-private.h
 

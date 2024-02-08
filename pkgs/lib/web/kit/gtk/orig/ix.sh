@@ -2,14 +2,7 @@
 
 {% block install %}
 {{super()}}
-
-cd ${out}/lib
-
-rm -rf lib_webkit webkit2gtk*
-
-for x in *.so; do
-    cp ${x} $(echo ${x} | sed -e 's|.so|.a|')
-done
+rm -rf ${out}/lib/lib_* ${out}/lib/webkit2gtk*
 {% endblock %}
 
 {% block env %}

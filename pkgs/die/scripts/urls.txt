@@ -468,6 +468,7 @@ https://git.sr.ht/~sircmpwn/wev/archive/1.0.0.tar.gz
 https://github.com/AOMediaCodec/libavif/archive/refs/tags/v1.0.1.tar.gz
 https://github.com/AOMediaCodec/libavif/archive/refs/tags/v1.0.2.tar.gz
 https://github.com/AOMediaCodec/libavif/archive/refs/tags/v1.0.3.tar.gz
+https://github.com/AOMediaCodec/libavif/archive/refs/tags/v1.0.4.tar.gz
 https://github.com/ARMmbed/mbedtls/archive/refs/tags/v2.28.2.tar.gz
 https://github.com/ARMmbed/mbedtls/archive/refs/tags/v3.4.1.tar.gz
 https://github.com/ARMmbed/mbedtls/archive/refs/tags/v3.5.0.tar.gz
@@ -479,6 +480,7 @@ https://github.com/AbiWord/enchant/releases/download/v2.6.2/enchant-2.6.2.tar.gz
 https://github.com/AbiWord/enchant/releases/download/v2.6.4/enchant-2.6.4.tar.gz
 https://github.com/AbiWord/enchant/releases/download/v2.6.5/enchant-2.6.5.tar.gz
 https://github.com/AbiWord/enchant/releases/download/v2.6.6/enchant-2.6.6.tar.gz
+https://github.com/AbiWord/enchant/releases/download/v2.6.7/enchant-2.6.7.tar.gz
 https://github.com/AcademySoftwareFoundation/Imath/archive/refs/tags/v3.1.10.tar.gz
 https://github.com/AcademySoftwareFoundation/Imath/archive/refs/tags/v3.1.9.tar.gz
 https://github.com/AcademySoftwareFoundation/openexr/archive/refs/tags/v3.2.0.tar.gz

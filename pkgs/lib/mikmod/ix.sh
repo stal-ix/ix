@@ -7,4 +7,7 @@ sha:ad9d64dfc8f83684876419ea7cd4ff4a41d8bcd8c23ef37ecb3a200a16b46d19
 
 {% block lib_deps %}
 lib/c
+{% if darwin %}
+lib/darwin/framework/CoreAudio
+{% endif %}
 {% endblock %}

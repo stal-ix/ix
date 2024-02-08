@@ -34,6 +34,4 @@ sed -e 's|QUIC_TLS STREQUAL "openssl"|0|' -i CMakeLists.txt
 {{super()}}
 cd src/inc
 cp msquic.hpp *.h ${out}/include/
-cd ${out}/lib
-cp libmsquic.so libmsquic.a
 {% endblock %}

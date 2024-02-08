@@ -41,10 +41,5 @@ SDL2MIXER_VORBIS_VORBISFILE_SHARED=OFF
 
 {% block install %}
 {{super()}}
-cd ${out}/lib
-cp libSDL2_mixer.so libSDL2_mixer.a
-{% endblock %}
-
-{% block test %}
 test -f ${out}/lib/pkgconfig/SDL2_mixer.pc
 {% endblock %}

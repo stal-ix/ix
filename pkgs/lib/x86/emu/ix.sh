@@ -38,6 +38,4 @@ echo '{{version}}' > VERSION
 cd ${out}
 mv usr/include ./
 rm -rf usr
-cd lib
-cp libx86emu.so libx86emu.a
 {% endblock %}

@@ -4,6 +4,9 @@
 {% block all_build_flags %}
 {% block build_flags %}
 {% endblock %}
+{% if lib and 'wrap_cc' in self.build_flags() %}
+rename_dynlib
+{% endif %}
 {% endblock %}
 {% endset %}
 

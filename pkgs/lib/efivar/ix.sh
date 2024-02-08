@@ -36,13 +36,6 @@ ln -s libefisec.so src/libefisec.a
 {{super()}}
 {% endblock %}
 
-{% block install %}
-{{super()}}
-cp ${out}/lib/libefivar.so ${out}/lib/libefivar.a
-cp ${out}/lib/libefisec.so ${out}/lib/libefisec.a
-cp ${out}/lib/libefiboot.so ${out}/lib/libefiboot.a
-{% endblock %}
-
 {% block env %}
 export CPPFLAGS="-I${out}/include/efivar \${CPPFLAGS}"
 {% endblock %}

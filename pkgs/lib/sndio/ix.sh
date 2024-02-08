@@ -9,9 +9,3 @@ wrap_cc
 {% block make_flags %}
 -C libsndio
 {% endblock %}
-
-{% block install %}
-{{super()}}
-cd ${out}/lib
-cp libsndio.so libsndio.a
-{% endblock %}

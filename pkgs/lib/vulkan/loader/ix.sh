@@ -18,6 +18,4 @@ relocate "${VULKAN_LOADER_DATA}"
 {{super()}}
 mkdir -p ${out}/include
 >${out}/include/keep
-cd ${out}/lib
-cp libvulkan.{{target.dl_suffix}} libvulkan.a
 {% endblock %}
