@@ -55,15 +55,3 @@ cp ${MESA_HEADERS}/EGL/eglplatform.h inc/EGL/
 cp -R ${MESA_HEADERS}/KHR inc/
 export CPPFLAGS="-I${PWD}/inc ${CPPFLAGS}"
 {% endblock %}
-
-{% block postinstall %}
-:
-{% endblock %}
-
-{% block install %}
-{{super()}}
-cd ${out}/lib
-for x in *.so; do
-    cp ${x} $(echo ${x} | sed -e 's|.so|.a|')
-done
-{% endblock %}
