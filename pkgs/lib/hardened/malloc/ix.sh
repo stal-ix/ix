@@ -15,6 +15,7 @@ CONFIG_CXX_ALLOCATOR=false
 
 {% block build_flags %}
 wrap_cc
+rename_dynlib
 {% endblock %}
 
 {% block install %}

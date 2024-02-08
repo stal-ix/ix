@@ -1,11 +1,6 @@
-{% extends '//die/proxy.sh' %}
+{% extends '//die/hub.sh' %}
 
-{% block install %}
-mkdir ${out}/bin; cd ${out}/bin
-
-base64 -d << EOF > rename_dynlib
-{% include 'fix.sh/base64' %}
-EOF
-
-chmod +x *
+{% block run_deps %}
+bld/python
+bld/rename/dynlib/scripts
 {% endblock %}
