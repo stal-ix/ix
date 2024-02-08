@@ -127,7 +127,7 @@ bin/coreutils/9/4
 bin/qemu/8/1
 bin/weechat
 bin/python/9
-bin/xmlb
+bin/xml/b
 bin/walk
 bin/lld/16
 bin/go/21
@@ -249,7 +249,7 @@ bin/quake/3/e
 bin/sbase
 bin/scdoc
 bin/ed
-bin/xmlto
+bin/xml/to
 bin/iw
 bin/bsdutils
 bin/nasm
@@ -470,7 +470,7 @@ bin/kbd
 bin/fixtty
 bin/keyd
 bin/cpio
-bin/xmllint
+bin/xml/lint
 bin/curl/lite
 bin/curl/mbedtls
 bin/curl/bearssl
@@ -496,7 +496,7 @@ bin/acpi/d/runit
 bin/acpi/d/d
 bin/net/cat
 bin/basuctl
-bin/xmlwf
+bin/xml/wf
 bin/uconv
 bin/pcregrep/2
 bin/pcregrep

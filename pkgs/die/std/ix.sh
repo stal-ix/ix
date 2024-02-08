@@ -7,6 +7,9 @@
   {% if 'fix_shebangs' in build_flags %}
     bld/shebangs
   {% endif %}
+  {% if 'fix_cmake_lib' in build_flags %}
+    bld/cmake/fix
+  {% endif %}
   {{super()}}
 {% endblock %}
 
@@ -21,5 +24,8 @@ done
 find ${out}/bin -type f | while read l; do
     fix_shebangs "${l}"
 done
+{% endif %}
+{% if 'fix_cmake_lib' in build_flags %}
+fix_cmake_lib ${out}/lib/cmake
 {% endif %}
 {% endblock %}

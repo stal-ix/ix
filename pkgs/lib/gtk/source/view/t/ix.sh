@@ -16,5 +16,5 @@ lib/fribidi
 
 {% block bld_tool %}
 {{super()}}
-bin/xmllint
+bin/xml/lint
 {% endblock %}

@@ -9,6 +9,11 @@ lib/vulkan/loader/data
 bld/reloc
 {% endblock %}
 
+{% block build_flags %}
+{{super()}}
+fix_cmake_lib
+{% endblock %}
+
 {% block configure %}
 {{super()}}
 relocate "${VULKAN_LOADER_DATA}"
@@ -19,6 +24,5 @@ relocate "${VULKAN_LOADER_DATA}"
 mkdir -p ${out}/include
 >${out}/include/keep
 cd ${out}/lib
-rm -r cmake
 cp libvulkan.{{target.dl_suffix}} libvulkan.a
 {% endblock %}

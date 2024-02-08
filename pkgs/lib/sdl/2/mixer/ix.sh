@@ -21,6 +21,7 @@ lib/xiph/vorbis
 
 {% block build_flags %}
 wrap_cc
+fix_cmake_lib
 {% endblock %}
 
 {% block cmake_flags %}
@@ -43,11 +44,6 @@ SDL2MIXER_VORBIS_VORBISFILE_SHARED=OFF
 {{super()}}
 cd ${out}/lib
 cp libSDL2_mixer.so libSDL2_mixer.a
-find cmake -type f | while read l; do
-    sed -e 's|libSDL2_mixer-2.0.so.0|libSDL2_mixer.a|g' \
-        -e 's|libSDL2_mixer-2.0.so.0.800.0|libSDL2_mixer.a|' \
-        -i ${l}
-done
 {% endblock %}
 
 {% block test %}

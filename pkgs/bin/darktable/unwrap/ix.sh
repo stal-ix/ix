@@ -36,7 +36,7 @@ lib/image/magick
 {% block bld_tool %}
 bld/perl
 bld/bash
-bin/xmllint
+bin/xml/lint
 bld/gettext
 bld/intltool
 bld/devendor

@@ -17,7 +17,7 @@ lib/gtk/layer/shell
 bld/glib
 bin/scdoc
 bld/wayland
-bin/xmllint
+bin/xml/lint
 bld/pkg/config
 {% endblock %}
 

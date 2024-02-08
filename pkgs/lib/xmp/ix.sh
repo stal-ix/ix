@@ -11,11 +11,5 @@ lib/c
 
 {% block build_flags %}
 wrap_cc
-{% endblock %}
-
-{% block install %}
-{{super()}}
-find ${out}/lib/cmake -type f | while read l; do
-    sed -e 's|libxmp.so.4.6.0|libxmp.a|g' -i ${l}
-done
+fix_cmake_lib
 {% endblock %}
