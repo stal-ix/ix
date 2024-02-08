@@ -21,7 +21,6 @@ lib/xiph/vorbis
 
 {% block build_flags %}
 wrap_cc
-fix_cmake_lib
 {% endblock %}
 
 {% block cmake_flags %}

@@ -1,7 +1,9 @@
 {% extends '//die/fetch.sh' %}
 
 {% set build_flags %}
+{% block all_build_flags %}
 {% block build_flags %}
+{% endblock %}
 {% endblock %}
 {% endset %}
 

@@ -14,15 +14,6 @@ LIBUV_BUILD_TESTS=OFF
 LIBUV_BUILD_BENCH=OFF
 {% endblock %}
 
-{% block bld_tool %}
-bld/cmake/fix
-{% endblock %}
-
 {% block build_flags %}
 wrap_cc
-{% endblock %}
-
-{% block install %}
-{{super()}}
-fix_cmake_lib ${out}/lib/cmake
 {% endblock %}

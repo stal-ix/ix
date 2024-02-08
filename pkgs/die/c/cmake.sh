@@ -6,6 +6,13 @@ bld/pkg/config
 {{super()}}
 {% endblock %}
 
+{% block all_build_flags %}
+{{super()}}
+{% if lib and 'wrap_cc' in super() %}
+fix_cmake_lib
+{% endif %}
+{% endblock %}
+
 {% block functions %}
 {{super()}}
 
