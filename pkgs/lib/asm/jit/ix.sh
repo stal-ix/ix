@@ -19,10 +19,5 @@ lib/c++
 
 {% block build_flags %}
 wrap_cc
-{% endblock %}
-
-{% block install %}
-{{super()}}
-cd ${out}/lib
-mv libasmjit.{{target.dl_suffix}} libasmjit.a
+rename_dynlib
 {% endblock %}
