@@ -2,7 +2,7 @@
 
 set -xue
 
-cd "${1}"
+cd "${1}" || exit 0
 
 find . -type f | while read l; do
     sed -E 's|\.so(\.[0-9]+)*|\.a|g' -i ${l}
