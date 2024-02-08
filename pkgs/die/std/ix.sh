@@ -10,6 +10,9 @@
   {% if 'fix_cmake_lib' in build_flags %}
     bld/cmake/fix
   {% endif %}
+  {% if 'rename_dynlib' in build_flags %}
+    bld/rename/dynlib
+  {% endif %}
   {{super()}}
 {% endblock %}
 
@@ -29,3 +32,8 @@ done
 fix_cmake_lib ${out}/lib/cmake
 {% endif %}
 {% endblock %}
+
+{% block purge_dynlib %}
+{% if 'rename_dynlib' in build_flags %}
+rename_dynlib ${out}/lib
+{% endif %}{{super()}}{% endblock %}
