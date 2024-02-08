@@ -26,4 +26,7 @@ for p, links in by_rp.items():
 
     print(p, ml)
 
-    os.link(p, ml)
+    try:
+        os.link(p, ml)
+    except FileExistsError:
+        pass
