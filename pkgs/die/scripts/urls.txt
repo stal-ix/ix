@@ -1141,6 +1141,7 @@ https://github.com/libusb/libusb/releases/download/v1.0.27/libusb-1.0.27.tar.bz2
 https://github.com/libuv/libuv/archive/refs/tags/v1.44.2.tar.gz
 https://github.com/libuv/libuv/archive/refs/tags/v1.46.0.tar.gz
 https://github.com/libuv/libuv/archive/refs/tags/v1.47.0.tar.gz
+https://github.com/libuv/libuv/archive/refs/tags/v1.48.0.tar.gz
 https://github.com/libxmp/libxmp/archive/refs/tags/libxmp-4.6.0.tar.gz
 https://github.com/limine-bootloader/limine/releases/download/v5.20230801.0/limine-5.20230801.0.tar.xz
 https://github.com/linux-nvme/libnvme/archive/refs/tags/v1.5.tar.gz
