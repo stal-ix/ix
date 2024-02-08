@@ -28,18 +28,10 @@ LIBOMP_HEADERS_INSTALL_PATH=${out}/include
 
 {% block build_flags %}
 wrap_cc
+rename_dynlib
 {% endblock %}
 
 {% block install %}
 {{super()}}
-
-cd ${out}/lib
-
-rm *.a
-
-cp libomp.so libomp.a
-cp libompd.so libompd.a
-cp libarcher.so libarcher.a
-
-rm libompd.a
+rm ${out}/lib/*.a ${out}/lib/libompd.*
 {% endblock %}
