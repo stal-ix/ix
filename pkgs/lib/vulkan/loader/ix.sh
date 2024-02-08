@@ -9,6 +9,11 @@ lib/vulkan/loader/data
 bld/reloc
 {% endblock %}
 
+{% block build_flags %}
+{{super()}}
+rename_dynlib
+{% endblock %}
+
 {% block configure %}
 {{super()}}
 relocate "${VULKAN_LOADER_DATA}"
@@ -18,6 +23,4 @@ relocate "${VULKAN_LOADER_DATA}"
 {{super()}}
 mkdir -p ${out}/include
 >${out}/include/keep
-cd ${out}/lib
-cp libvulkan.{{target.dl_suffix}} libvulkan.a
 {% endblock %}
