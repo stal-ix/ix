@@ -175,6 +175,7 @@ https://devimages-cdn.apple.com/design/resources/download/SF-Pro.dmg
 https://distfiles.macports.org/bsdiff/bsdiff-4.3.tar.gz
 https://dl.suckless.org/tools/9base-6.tar.gz
 https://dl.xpdfreader.com/xpdf-4.04.tar.gz
+https://dl.xpdfreader.com/xpdf-4.05.tar.gz
 https://dotat.at/prog/unifdef/unifdef-2.12.tar.xz
 https://download.gnome.org/sources/atkmm/2.28/atkmm-2.28.2.tar.xz
 https://download.gnome.org/sources/dconf/0.40/dconf-0.40.0.tar.xz
