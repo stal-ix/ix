@@ -858,6 +858,7 @@ https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.6.0.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.6.1.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.7.0.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.7.1.tar.gz
+https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.8.2.tar.gz
 https://github.com/fastfloat/fast_float/archive/refs/tags/v3.8.1.tar.gz
 https://github.com/fastfloat/fast_float/archive/refs/tags/v5.2.0.tar.gz
 https://github.com/fenrus75/powertop/archive/refs/tags/v2.15.tar.gz
@@ -1835,6 +1836,7 @@ https://mirrors.edge.kernel.org/pub/linux/network/wireless/iwd-2.10.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/network/wireless/iwd-2.11.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/network/wireless/iwd-2.12.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/network/wireless/iwd-2.13.tar.xz
+https://mirrors.edge.kernel.org/pub/linux/network/wireless/iwd-2.14.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/network/wireless/iwd-2.8.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/network/wireless/iwd-2.9.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/utils/kbd/kbd-2.6.1.tar.xz
