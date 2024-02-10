@@ -1,8 +1,8 @@
 {% extends '//die/c/make.sh' %}
 
 {% block fetch %}
-https://github.com/git/git/archive/refs/tags/v2.43.0.tar.gz
-sha:4e1599231f77d64f01d46a773e7741218fb8d98f2a05ccd2b8f35fc7ecf62040
+https://github.com/git/git/archive/refs/tags/v2.43.1.tar.gz
+sha:a6886b25734faf84313748afb4b9b0c3082eac17585325d6eba3c1bf95605865
 {% endblock %}
 
 {% block bld_libs %}
