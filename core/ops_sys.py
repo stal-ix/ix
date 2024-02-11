@@ -15,10 +15,7 @@ def run_cmd(cmd, input='', user='ix'):
     if user == 'root':
         suffix = [cmd[0]]
     else:
-        if os.path.isfile('/bin/su-exec'):
-            suffix = ['/bin/su-exec', user, cmd[0]]
-        else:
-            suffix = ['/bin/su', '-s', cmd[0], user]
+        suffix = ['/bin/su', '-s', cmd[0], user]
 
     cmd = [
         '/bin/flock', '-x', '/ix',

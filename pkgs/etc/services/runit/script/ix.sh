@@ -12,7 +12,7 @@ EOF
 cat << EOF > run
 #!/bin/sh
 {% if srv_user %}
-exec srv {{sd}} /bin/su-exec {{srv_user}} /bin/sh ${PWD}/cmd
+exec srv {{sd}} /bin/su -s /bin/sh {{srv_user}} ${PWD}/cmd
 {% else %}
 exec srv {{sd}} /bin/sh ${PWD}/cmd
 {% endif %}
