@@ -6,7 +6,7 @@
 {% endblock %}
 
 {% block unpack %}
-cd /home/pg/data/src/chromium-104.0.5112.81
+exit 1
 {% endblock %}
 
 {% block bld_libs %}
@@ -24,7 +24,6 @@ lib/wayland
 lib/pci/utils
 lib/xkb/common
 lib/shim/extra
-lib/shim/queue
 {% endblock %}
 
 {% block bld_tool %}
