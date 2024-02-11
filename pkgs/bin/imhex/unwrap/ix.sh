@@ -74,3 +74,8 @@ USE_SYSTEM_NLOHMANN_JSON=ON
 shut_up
 wrap_cc
 {% endblock %}
+
+{% block install %}
+{{super()}}
+rm -rf ${out}/bin/imhex-updater
+{% endblock %}
