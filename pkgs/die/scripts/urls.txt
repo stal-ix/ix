@@ -433,6 +433,7 @@ https://git.kernel.org/pub/scm/network/iproute2/iproute2.git
 https://git.kernel.org/pub/scm/utils/kernel/kmod/kmod.git/snapshot/kmod-30.tar.gz
 https://git.kernel.org/pub/scm/utils/kernel/kmod/kmod.git/snapshot/kmod-31.tar.gz
 https://git.kernel.org/pub/scm/utils/stalld/stalld.git/snapshot/stalld-1.17.1.tar.gz
+https://git.kernel.org/pub/scm/utils/stalld/stalld.git/snapshot/stalld-1.19.1.tar.gz
 https://git.midipix.org/slibtool/snapshot/slibtool-0.5.34.tar.bz2
 https://git.openldap.org/openldap/openldap/-/archive/LMDB_0.9.32/openldap-LMDB_0.9.32.tar.bz2
 https://git.pwmt.org/pwmt/girara/-/archive/0.4.0/girara-0.4.0.tar.bz2
@@ -1658,6 +1659,7 @@ https://gitlab.com/cardboardwm/cardboard/-/archive/b54758d85164fb19468f5ca52588e
 https://gitlab.com/craigbarnes/dte/-/archive/v1.10/dte-v1.10.tar.bz2
 https://gitlab.com/freetype/freetype/-/archive/VER-2-13-2/freetype-VER-2-13-2.tar.bz2
 https://gitlab.com/giomasce/flex/-/raw/506e9605baf4638ba47d37133c348df1385ef06c/scan.lex.l
+https://gitlab.com/graphviz/graphviz/-/archive/10.0.1/graphviz-10.0.1.tar.bz2
 https://gitlab.com/graphviz/graphviz/-/archive/7.0.3/graphviz-7.0.3.tar.bz2
 https://gitlab.com/graphviz/graphviz/-/archive/8.1.0/graphviz-8.1.0.tar.bz2
 https://gitlab.com/graphviz/graphviz/-/archive/9.0.0/graphviz-9.0.0.tar.bz2
