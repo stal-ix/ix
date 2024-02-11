@@ -28,12 +28,6 @@ export bld=${PWD}
 {% include 'install.sh' %}
 {% endblock %}
 
-{% block step_test %}
-{% block test %}
-echo 'no tests'
-{% endblock %}
-{% endblock %}
-
 {% block std_env %}
 {% block std_box %}
 {% include 'stdenv.sh' %}
