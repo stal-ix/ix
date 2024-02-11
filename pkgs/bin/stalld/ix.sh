@@ -8,11 +8,12 @@ sha:e7cccf63eb721bf50f7d978178d66b2eceebc24d0d8aabff7b118b768c027be7
 {% block bld_libs %}
 lib/c
 lib/kernel
+lib/shim/exit
 {% endblock %}
 
 {% block patch %}
 find . -name '*.c' -type f | while read l; do
-    sed -e 's|.*on_exit(.*||' -e 's|pthread_attr_setaffinity_np.*|0;|' -i ${l}
+    sed -e 's|pthread_attr_setaffinity_np.*|0;|' -i ${l}
 done
 
 sed -e 's|/usr/|/|' -i Makefile
