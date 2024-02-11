@@ -36,4 +36,6 @@ fix_cmake_lib ${out}/lib/cmake
 {% block purge_dynlib %}
 {% if 'rename_dynlib' in build_flags %}
 rename_dynlib ${out}/lib
-{% endif %}{{super()}}{% endblock %}
+{% endif %}
+{{super()}}
+{% endblock %}
