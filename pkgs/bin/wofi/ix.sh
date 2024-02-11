@@ -9,12 +9,9 @@ sha:e95e35c03551c39178c16ad6213a88e3883a236e942d7f2666c780d934c270bb
 lib/c
 lib/gtk/3
 lib/wayland
+lib/shim/exit
 {% endblock %}
 
 {% block bld_tool %}
 bld/wayland
-{% endblock %}
-
-{% block patch %}
-sed -e 's|.*on_exit(.*||' -i src/wofi.c
 {% endblock %}
