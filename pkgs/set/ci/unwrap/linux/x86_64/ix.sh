@@ -37,6 +37,7 @@
 {% block run_deps %}
 #bin/zellij
 #bin/gendesk
+bin/su/exec
 bin/copyq
 bin/keepass/xc
 bin/code/lite
