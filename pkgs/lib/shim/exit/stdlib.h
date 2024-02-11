@@ -6,7 +6,7 @@
 extern "C" {
 #endif
 
-int on_exit(void (*function)(int, void *), void *arg);
+int on_exit(void (*function)(int, void*), void* arg);
 
 #if defined(__cplusplus)
 }
