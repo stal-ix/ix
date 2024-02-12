@@ -632,6 +632,7 @@ https://github.com/OpenTTD/OpenTTD/archive/refs/tags/13.4.tar.gz
 https://github.com/OpenVPN/openvpn/archive/refs/tags/v2.6.6.tar.gz
 https://github.com/OpenVPN/openvpn/archive/refs/tags/v2.6.7.tar.gz
 https://github.com/OpenVPN/openvpn/archive/refs/tags/v2.6.8.tar.gz
+https://github.com/OpenVPN/openvpn/archive/refs/tags/v2.6.9.tar.gz
 https://github.com/OpenVisualCloud/SVT-HEVC/archive/refs/tags/v1.5.1.tar.gz
 https://github.com/OpenVisualCloud/SVT-VP9/archive/refs/tags/v0.3.0.tar.gz
 https://github.com/P-H-C/phc-winner-argon2/archive/refs/tags/20190702.tar.gz
@@ -823,6 +824,7 @@ https://github.com/editorconfig/editorconfig-core-c/archive/refs/tags/v0.12.6.ta
 https://github.com/elfmz/far2l/archive/refs/tags/v_2.5.0.tar.gz
 https://github.com/elfmz/far2l/archive/refs/tags/v_2.5.2.tar.gz
 https://github.com/elves/elvish/archive/refs/tags/v0.19.2.tar.gz
+https://github.com/elves/elvish/archive/refs/tags/v0.20.0.tar.gz
 https://github.com/emacs-mirror/emacs/archive/refs/tags/emacs-29.1.tar.gz
 https://github.com/emacs-mirror/emacs/archive/refs/tags/emacs-29.2.tar.gz
 https://github.com/emcrisostomo/fswatch/archive/refs/tags/1.17.1.tar.gz
