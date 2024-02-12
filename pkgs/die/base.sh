@@ -6,7 +6,7 @@
 step_unpack() {
 {% block step_unpack %}
 {% block unpack %}
-echo 'skip unpack'
+echo 'no unpack'
 {% endblock %}
 {% endblock %}
 }
@@ -14,21 +14,21 @@ echo 'skip unpack'
 step_patch() (
 {% block step_patch %}
 {% block patch %}
-echo 'skip patch'
+echo 'no patch'
 {% endblock %}
 {% endblock %}
 )
 
 step_setup() {
 {% block step_setup %}
-echo 'skip setup'
+echo 'no setup'
 {% endblock %}
 }
 
 step_configure() (
 {% block step_configure %}
 {% block configure %}
-echo 'skip configure'
+echo 'no configure'
 {% endblock %}
 {% endblock %}
 )
@@ -36,20 +36,22 @@ echo 'skip configure'
 step_build() (
 {% block step_build %}
 {% block build %}
-echo 'skip build'
+echo 'no build'
 {% endblock %}
 {% endblock %}
 )
 
 step_test() (
 {% block step_test %}
-echo 'skip tests'
+{% block test %}
+echo 'no tests'
+{% endblock %}
 {% endblock %}
 )
 
 step_install() (
 {% block step_install %}
-echo 'skip install'
+echo 'no install'
 {% endblock %}
 )
 

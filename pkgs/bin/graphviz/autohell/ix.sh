@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://gitlab.com/graphviz/graphviz/-/archive/9.0.0/graphviz-9.0.0.tar.bz2
-sha:5c0a6e60761e2e0f6cbb8baca958b643a06b9bb74ed5a2e4937ee7dbb49dead3
+https://gitlab.com/graphviz/graphviz/-/archive/10.0.1/graphviz-10.0.1.tar.bz2
+sha:eaa60fea2b3ad904e3bf6919710c1ba3207ce31b5d7da1687dd3b734de8736f6
 {% endblock %}
 
 {% block make_no_thrs %}
@@ -19,6 +19,10 @@ lib/gd
 lib/expat
 lib/freetype
 lib/fontconfig
+{% endblock %}
+
+{% block shell %}
+bin/bash/lite/sh
 {% endblock %}
 
 {% block bld_tool %}
