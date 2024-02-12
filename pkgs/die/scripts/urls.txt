@@ -487,6 +487,7 @@ https://github.com/AcademySoftwareFoundation/Imath/archive/refs/tags/v3.1.10.tar
 https://github.com/AcademySoftwareFoundation/Imath/archive/refs/tags/v3.1.9.tar.gz
 https://github.com/AcademySoftwareFoundation/openexr/archive/refs/tags/v3.2.0.tar.gz
 https://github.com/AcademySoftwareFoundation/openexr/archive/refs/tags/v3.2.1.tar.gz
+https://github.com/AcademySoftwareFoundation/openexr/archive/refs/tags/v3.2.2.tar.gz
 https://github.com/Alexays/Waybar/archive/refs/tags/0.9.22.tar.gz
 https://github.com/Alexays/Waybar/archive/refs/tags/0.9.23.tar.gz
 https://github.com/Alexays/Waybar/archive/refs/tags/0.9.24.tar.gz
