@@ -21,6 +21,7 @@ lib/qt/6/compat
 
 {% block bld_tool %}
 bld/qt/6
+bld/patch
 bld/qt/6/tools
 {% endblock %}
 
@@ -36,8 +37,7 @@ WITH_XC_FDOSECRETS=ON
 {% endblock %}
 
 {% block patch %}
-ulimit -n 4000
-patch -p1 --fuzz 10 < ${src}/keepassxc-2.7.6-qt6-support.patch
+patcher patch -p1 --fuzz 10 < ${src}/keepassxc-2.7.6-qt6-support.patch
 sed -e 's|.*QXcbIntegrationPlugin.*||' -i src/main.cpp
 >src/core/Alloc.cpp
 {% endblock %}
