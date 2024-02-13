@@ -37,6 +37,7 @@
 {% block run_deps %}
 #bin/zellij
 #bin/gendesk
+bin/gnome/keyring
 bin/secret/tool
 bin/su/exec
 bin/copyq
