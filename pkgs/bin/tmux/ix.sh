@@ -28,3 +28,8 @@ bld/byacc
 
 {% block enable_static %}
 {% endblock %}
+
+{% block configure %}
+{{super()}}
+sed -e 's|.*define.*BSD.*||' -i compat.h
+{% endblock %}
