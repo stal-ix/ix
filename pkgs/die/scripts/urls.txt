@@ -2055,6 +2055,7 @@ https://www.python.org/ftp/python/2.7.18/Python-2.7.18.tar.xz
 https://www.python.org/ftp/python/3.10.13/Python-3.10.13.tar.xz
 https://www.python.org/ftp/python/3.8.17/Python-3.8.17.tgz
 https://www.python.org/ftp/python/3.9.17/Python-3.9.17.tar.xz
+https://www.python.org/ftp/python/3.9.18/Python-3.9.18.tar.xz
 https://www.rarlab.com/rar/unrarsrc-6.2.10.tar.gz
 https://www.rarlab.com/rar/unrarsrc-6.2.11.tar.gz
 https://www.rarlab.com/rar/unrarsrc-6.2.12.tar.gz
