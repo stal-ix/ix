@@ -1734,6 +1734,7 @@ https://gitlab.gnome.org/GNOME/glib-networking/-/archive/2.76.1/glib-networking-
 https://gitlab.gnome.org/GNOME/glib-networking/-/archive/2.78.0/glib-networking-2.78.0.tar.bz2
 https://gitlab.gnome.org/GNOME/gnome-font-viewer/-/archive/44.0/gnome-font-viewer-44.0.tar.bz2
 https://gitlab.gnome.org/GNOME/gnome-font-viewer/-/archive/45.0/gnome-font-viewer-45.0.tar.bz2
+https://gitlab.gnome.org/GNOME/gnome-keyring/-/archive/46.1/gnome-keyring-46.1.tar.bz2
 https://gitlab.gnome.org/GNOME/gnome-terminal/-/archive/3.50.1/gnome-terminal-3.50.1.tar.bz2
 https://gitlab.gnome.org/GNOME/gnome-text-editor/-/archive/44.0/gnome-text-editor-44.0.tar.bz2
 https://gitlab.gnome.org/GNOME/gnome-text-editor/-/archive/45.0/gnome-text-editor-45.0.tar.bz2
@@ -1952,6 +1953,7 @@ https://strace.io/files/6.7/strace-6.7.tar.xz
 https://taglib.org/releases/taglib-1.13.1.tar.gz
 https://the.earth.li/~sgtatham/putty/0.76/putty-0.76.tar.gz
 https://thekelleys.org.uk/dnsmasq/dnsmasq-2.89.tar.xz
+https://thekelleys.org.uk/dnsmasq/dnsmasq-2.90.tar.xz
 https://tukaani.org/xz/xz-5.4.4.tar.xz
 https://tukaani.org/xz/xz-5.4.5.tar.xz
 https://w1.fi/releases/wpa_supplicant-2.10.tar.gz

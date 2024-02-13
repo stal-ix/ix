@@ -1,8 +1,8 @@
 {% extends '//die/c/make.sh' %}
 
 {% block fetch %}
-https://thekelleys.org.uk/dnsmasq/dnsmasq-2.89.tar.xz
-sha:02bd230346cf0b9d5909f5e151df168b2707103785eb616b56685855adebb609
+https://thekelleys.org.uk/dnsmasq/dnsmasq-2.90.tar.xz
+sha:8e50309bd837bfec9649a812e066c09b6988b73d749b7d293c06c57d46a109e4
 {% endblock %}
 
 {% block bld_tool %}
