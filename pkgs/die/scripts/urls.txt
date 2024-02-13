@@ -1554,6 +1554,7 @@ https://github.com/tinyalsa/tinyalsa/archive/refs/tags/v2.0.0.tar.gz
 https://github.com/tjko/jpegoptim/archive/refs/tags/v1.5.2.tar.gz
 https://github.com/tldr-pages/tldr-c-client/archive/refs/tags/v1.5.0.tar.gz
 https://github.com/tmux/tmux/releases/download/3.3a/tmux-3.3a.tar.gz
+https://github.com/tmux/tmux/releases/download/3.4/tmux-3.4.tar.gz
 https://github.com/tpoechtrager/cctools-port/archive/236a426c1205a3bfcf0dbb2e2faf2296f0a100e5.tar.gz
 https://github.com/transmission-remote-gtk/transmission-remote-gtk/archive/refs/tags/1.5.1.tar.gz
 https://github.com/transmission/dht/commit/b02da598.patch
