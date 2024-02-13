@@ -1,4 +1,4 @@
-{% extends '//bin/meson/100/ix.sh' %}
+{% extends '//bin/meson/1/3/ix.sh' %}
 
 {% block fetch %}
 https://github.com/mesonbuild/meson/archive/refs/tags/1.2.3.tar.gz
