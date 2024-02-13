@@ -1348,6 +1348,7 @@ https://github.com/pullmoll/musl-rpmatch/archive/refs/tags/v1.0.tar.gz
 https://github.com/pwmt/zathura-pdf-mupdf/archive/refs/tags/0.4.0.tar.gz
 https://github.com/python-cffi/cffi/archive/refs/tags/v1.16.0.tar.gz
 https://github.com/python/cpython/archive/refs/tags/v3.11.5.tar.gz
+https://github.com/python/cpython/archive/refs/tags/v3.11.8.tar.gz
 https://github.com/python/cpython/archive/refs/tags/v3.12.0.tar.gz
 https://github.com/python/cpython/archive/refs/tags/v3.12.1.tar.gz
 https://github.com/python/cpython/archive/refs/tags/v3.12.2.tar.gz
