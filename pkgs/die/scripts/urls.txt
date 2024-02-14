@@ -1232,6 +1232,7 @@ https://github.com/microsoft/vcpkg-tool/archive/refs/tags/2022-11-10.tar.gz
 https://github.com/microsoft/vcpkg-tool/archive/refs/tags/2023-11-16.tar.gz
 https://github.com/microsoft/vcpkg-tool/archive/refs/tags/2024-01-11.tar.gz
 https://github.com/microsoft/vcpkg-tool/archive/refs/tags/2024-02-05.tar.gz
+https://github.com/microsoft/vcpkg-tool/archive/refs/tags/2024-02-07.tar.gz
 https://github.com/miniupnp/miniupnp/archive/refs/tags/miniupnpd_2_3_3.tar.gz
 https://github.com/miniupnp/miniupnp/archive/refs/tags/miniupnpd_2_3_4.tar.gz
 https://github.com/miniupnp/miniupnp/commit/ed1dc4bb.patch
