@@ -22,7 +22,6 @@ lib/kernel
 
 {% block build_flags %}
 shut_up
-wrap_cc
 {% endblock %}
 
 {% block bld_tool %}
@@ -30,6 +29,7 @@ bld/fake(tool_name=rpmspec)
 {% endblock %}
 
 {% block make_flags %}
+NO_SOLIB=1
 LIBDIR=${out}/lib
 INCLUDEDIR=${out}/include
 SBINDIR=${out}/bin
