@@ -5,11 +5,11 @@ https://github.com/grpc/grpc
 {% endblock %}
 
 {% block git_branch %}
-v1.59.2
+v1.61.1
 {% endblock %}
 
 {% block git_sha %}
-b7c0a3b6e25a894b5194f62818d6a221f54c22d62da9142402b4e2897928e41e
+8793ab1ad283dc270b4857d1a4858d06d86e8d84c26ab3e2c335cee555b71b20
 {% endblock %}
 
 {% block git_refine %}
@@ -42,4 +42,9 @@ gRPC_BUILD_CSHARP_EXT=OFF
 
 {% block setup_target_flags %}
 export CXXFLAGS="-std=c++20 ${CXXFLAGS}"
+{% endblock %}
+
+{% block patch %}
+sed -e 's|std::result_of|absl::type_traits_internal::result_of|g' \
+    -i src/core/lib/promise/detail/promise_like.h
 {% endblock %}

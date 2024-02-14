@@ -1,17 +1,17 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://github.com/tmux/tmux/releases/download/3.3a/tmux-3.3a.tar.gz
-sha:e4fd347843bd0772c4f48d6dde625b0b109b7a380ff15db21e97c11a4dcdf93f
+https://github.com/tmux/tmux/releases/download/3.4/tmux-3.4.tar.gz
+sha:551ab8dea0bf505c0ad6b7bb35ef567cdde0ccb84357df142c254f35a23e19aa
 {% endblock %}
 
 {% block bld_libs %}
 lib/c
 lib/event
 lib/curses
+lib/bsd/init
 lib/utf8/proc
 lib/bsd/overlay
-lib/bsd/init
 {% endblock %}
 
 {% block cpp_defines %}
@@ -27,4 +27,9 @@ bld/byacc
 {% endblock %}
 
 {% block enable_static %}
+{% endblock %}
+
+{% block configure %}
+{{super()}}
+sed -e 's|.*define.*BSD.*||' -i compat.h
 {% endblock %}

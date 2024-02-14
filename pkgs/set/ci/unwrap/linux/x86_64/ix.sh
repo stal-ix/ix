@@ -37,6 +37,10 @@
 {% block run_deps %}
 #bin/zellij
 #bin/gendesk
+bin/meson/1/2
+bin/meson/1/3
+bin/gnome/keyring
+bin/secret/tool
 bin/su/exec
 bin/copyq
 bin/keepass/xc
@@ -280,12 +284,6 @@ bin/git/2
 bin/git/go
 bin/kernel/6/6
 bin/kernel/6/7
-bin/meson/60
-bin/meson/62
-bin/meson/63
-bin/meson/64
-bin/meson/100
-bin/meson/120
 bin/swayimg
 bin/mc/slang
 bin/mc/curses/n

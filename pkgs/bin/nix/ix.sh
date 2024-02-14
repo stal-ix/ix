@@ -51,3 +51,7 @@ wrap_cc
 --disable-unit-tests
 --disable-functional-tests
 {% endblock %}
+
+{% block setup_target_flags %}
+export OPTFLAGS="${OPTFLAGS} -UNDEBUG"
+{% endblock %}
