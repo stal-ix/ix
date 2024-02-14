@@ -13,6 +13,10 @@ lib/c
 lib/c
 {% endblock %}
 
+{% block bld_tool %}
+bld/fake/binutils(bin_prefix={{target.gnu.three}}-)
+{% endblock %}
+
 {% block configure_flags %}
 --enable-install-gpg-error-config
 {% endblock %}
