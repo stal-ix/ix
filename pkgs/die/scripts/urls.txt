@@ -911,6 +911,7 @@ https://github.com/git/git/archive/refs/tags/v2.42.0.tar.gz
 https://github.com/git/git/archive/refs/tags/v2.42.1.tar.gz
 https://github.com/git/git/archive/refs/tags/v2.43.0.tar.gz
 https://github.com/git/git/archive/refs/tags/v2.43.1.tar.gz
+https://github.com/git/git/archive/refs/tags/v2.43.2.tar.gz
 https://github.com/glencoesoftware/jxrlib/archive/refs/tags/v0.2.4.tar.gz
 https://github.com/glennrp/libpng/archive/refs/tags/v1.6.40.tar.gz
 https://github.com/glennrp/libpng/archive/refs/tags/v1.6.41.tar.gz
