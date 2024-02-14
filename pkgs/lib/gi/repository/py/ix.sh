@@ -1,5 +1,10 @@
 {% extends '//lib/gi/repository/bootstrap/t/ix.sh' %}
 
+{% block bld_libs %}
+{{super()}}
+lib/gi/repository/bootstrap/shim
+{% endblock %}
+
 {% block install %}
 {{super()}}
 cd ${out}
