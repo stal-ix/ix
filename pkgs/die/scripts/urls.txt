@@ -1610,6 +1610,7 @@ https://github.com/vector-of-bool/cmrc/archive/refs/tags/2.0.1.tar.gz
 https://github.com/videolabs/libmicrodns/archive/refs/tags/0.2.0.tar.gz
 https://github.com/videolan/dav1d/archive/refs/tags/1.2.1.tar.gz
 https://github.com/videolan/dav1d/archive/refs/tags/1.3.0.tar.gz
+https://github.com/videolan/dav1d/archive/refs/tags/1.4.0.tar.gz
 https://github.com/vifm/vifm/archive/refs/tags/v0.13.tar.gz
 https://github.com/vim/vim/archive/refs/tags/v9.0.0006.tar.gz
 https://github.com/vmt/udis86/archive/refs/tags/v1.7.2.tar.gz
