@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/KhronosGroup/Vulkan-Loader/archive/refs/tags/vulkan-sdk-1.3.268.0.tar.gz
-sha:404fa621f1ab2731bcc68bcbff64d8c6de322faad2d87f9198641bd37255fd39
+https://github.com/KhronosGroup/Vulkan-Loader/archive/refs/tags/vulkan-sdk-1.3.275.0.tar.gz
+sha:f49a2653cd592439c5b4b987ffa0b2577b7fa72b7d344d7a2a89f7d6cb2b342e
 {% endblock %}
 
 {% block lib_deps %}
