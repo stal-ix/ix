@@ -7,5 +7,7 @@ OPENEXR_INSTALL_TOOLS=OFF
 
 {% block install %}
 {{super()}}
-sed -e 's|;PkgConfig::deflate||' -i ${out}/lib/cmake/OpenEXR/OpenEXRTargets.cmake
+sed -e 's|;PkgConfig::deflate||' \
+    -e 's|;libdeflate::libdeflate_static||' \
+    -i ${out}/lib/cmake/OpenEXR/OpenEXRTargets.cmake
 {% endblock %}
