@@ -38,6 +38,7 @@
 #bin/zellij
 #bin/gendesk
 bin/fluid/synth
+bin/dosbox/staging/debug
 bin/dosbox/staging
 bin/meson/1/2
 bin/meson/1/3
