@@ -746,6 +746,7 @@ https://github.com/benhoyt/goawk/archive/refs/tags/v1.25.0.tar.gz
 https://github.com/benhoyt/inih/archive/refs/tags/r57.tar.gz
 https://github.com/benhoyt/inih/archive/refs/tags/r58.tar.gz
 https://github.com/bensadeh/tailspin/archive/refs/tags/3.0.0.tar.gz
+https://github.com/berndporr/iir1/archive/refs/tags/1.9.4.tar.gz
 https://github.com/besser82/libxcrypt/archive/refs/tags/v4.4.36.tar.gz
 https://github.com/bfgroup/b2/archive/refs/tags/4.9.2.tar.gz
 https://github.com/biojppm/rapidyaml/releases/download/v0.4.1/rapidyaml-0.4.1-src.tgz
@@ -1153,6 +1154,7 @@ https://github.com/libsdl-org/SDL_image/archive/refs/tags/release-2.8.0.tar.gz
 https://github.com/libsdl-org/SDL_image/archive/refs/tags/release-2.8.1.tar.gz
 https://github.com/libsdl-org/SDL_mixer/archive/refs/tags/release-2.6.3.tar.gz
 https://github.com/libsdl-org/SDL_mixer/archive/refs/tags/release-2.8.0.tar.gz
+https://github.com/libsdl-org/SDL_net/archive/refs/tags/release-2.2.0.tar.gz
 https://github.com/libsdl-org/SDL_ttf/archive/refs/tags/release-2.20.2.tar.gz
 https://github.com/libsdl-org/SDL_ttf/archive/refs/tags/release-2.22.0.tar.gz
 https://github.com/libsdl-org/sdl12-compat/archive/refs/tags/release-1.2.60.tar.gz
@@ -1267,6 +1269,7 @@ https://github.com/mpv-player/mpv/archive/refs/tags/v0.37.0.tar.gz
 https://github.com/msgpack/msgpack-c/archive/refs/tags/c-6.0.0.tar.gz
 https://github.com/msoos/minisat/archive/refs/tags/2.2.1.tar.gz
 https://github.com/muesli/duf/archive/refs/tags/v0.8.1.tar.gz
+https://github.com/munt/munt/archive/refs/tags/libmt32emu_2_7_1.tar.gz
 https://github.com/museun/cargo-whatfeatures/archive/refs/tags/v0.9.9.tar.gz
 https://github.com/mvdan/sh/archive/refs/tags/v3.5.1.tar.gz
 https://github.com/namhyung/uftrace/archive/refs/tags/v0.12.tar.gz
