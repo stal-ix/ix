@@ -21,12 +21,9 @@ lib/opengl
 lib/sdl/deps
 lib/sdl/2/net
 lib/opus/file
+lib/fluid/synth
 lib/xiph/speex/dsp
 lib/shim/fake(lib_name=GL)
-{% endblock %}
-
-{% block meson_flags %}
-use_fluidsynth=false
 {% endblock %}
 
 {% block build_flags %}
