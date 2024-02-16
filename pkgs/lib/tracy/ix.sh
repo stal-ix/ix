@@ -13,3 +13,7 @@ lib/c++
 {% block bld_libs %}
 lib/kernel
 {% endblock %}
+
+{% block patch %}
+>public/client/TracyOverride.cpp
+{% endblock %}

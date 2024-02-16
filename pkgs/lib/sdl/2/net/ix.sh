@@ -13,4 +13,14 @@ lib/sdl/2
 
 {% block cmake_flags %}
 SDL2NET_SAMPLES=OFF
+BUILD_SHARED_LIBS=ON
+{% endblock %}
+
+{% block build_flags %}
+wrap_cc
+{% endblock %}
+
+{% block step_install %}
+{{super()}}
+sed -e 's|libSDL2_net-2.0.a|libSDL2_net.a|' -i ${out}/lib/cmake/SDL2_net/SDL2_net-shared-targets-release.cmake
 {% endblock %}
