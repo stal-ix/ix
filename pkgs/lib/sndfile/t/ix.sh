@@ -7,6 +7,13 @@ sha:3799ca9924d3125038880367bf1468e53a1b7e3686a934f098b7e1d286cdb80e
 
 {% block lib_deps %}
 lib/c
+lib/opus
+lib/lame
+lib/mpg123
+lib/xiph/ogg
+lib/xiph/flac
+lib/xiph/speex
+lib/xiph/vorbis
 {% endblock %}
 
 {% block cmake_flags %}
