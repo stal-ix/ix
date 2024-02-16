@@ -11,7 +11,6 @@ lib/z
 lib/c++
 lib/png
 lib/munt
-lib/alsa
 lib/tracy
 lib/slirp
 lib/iir/1
@@ -28,4 +27,8 @@ lib/shim/fake(lib_name=GL)
 
 {% block build_flags %}
 wrap_cc
+{% endblock %}
+
+{% block meson_flags %}
+use_alsa=false
 {% endblock %}
