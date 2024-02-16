@@ -13,6 +13,9 @@ args = sys.argv[2:]
 
 def it_linkable():
     for x in args:
+        if x.startswith('/'):
+            continue
+
         if x.endswith('.o'):
             yield x
         elif x.endswith('.a'):
@@ -55,6 +58,7 @@ def it_parts():
 
 cprog = '\n'.join(it_parts()).strip() + '\n'
 
+print(sys.argv)
 print(cprog, file=sys.stderr)
 
 subprocess.check_output(['clang', '-o', temp, '-c', '-x', 'c', '-'], input=cprog.encode())

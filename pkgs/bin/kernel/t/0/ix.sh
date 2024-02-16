@@ -1,5 +1,7 @@
 {% extends '//die/c/kconfig.sh' %}
 
+{% block task_pool %}full{% endblock %}
+
 {% block host_libs %}
 lib/elfutils
 lib/openssl/1
@@ -9,8 +11,8 @@ lib/build/muldefs
 {% endblock %}
 
 {% block c_compiler %}
-bin/gcc(for_target={{host.gnu.three}})
-bin/gcc(for_target={{target.gnu.three}})
+bin/gcc(gcc_ver=12,for_target={{host.gnu.three}})
+bin/gcc(gcc_ver=12,for_target={{target.gnu.three}})
 {% endblock %}
 
 {% block bld_tool %}

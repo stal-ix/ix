@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/KhronosGroup/glslang/archive/refs/tags/sdk-1.3.261.1.tar.gz
-sha:eb1f9c2ff0a1409151d7749fb37bc1988dc1fd908444c1e4f43d4190c90befcd
+https://github.com/KhronosGroup/glslang/archive/refs/tags/vulkan-sdk-1.3.275.0.tar.gz
+sha:920f99e7d37c6f74e97e5e4b0aeded8b6524b1cbf6a1ed4e760ed3b4b1250077
 {% endblock %}
 
 {% block bld_tool %}
@@ -16,10 +16,7 @@ lib/vulkan/spirv/tools
 lib/vulkan/spirv/headers
 {% endblock %}
 
-{% block patch %}
-sed -e 's|.*add_link_options.*||' -e 's|.*set.*ENABLE_OPT.*||' -i CMakeLists.txt
-{% endblock %}
-
 {% block cmake_flags %}
 ENABLE_OPT=ON
+ALLOW_EXTERNAL_SPIRV_TOOLS=ON
 {% endblock %}
