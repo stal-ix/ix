@@ -18,6 +18,7 @@ lib/iir/1
 lib/sdl/2
 lib/expat
 lib/opengl
+lib/sdl/deps
 lib/sdl/2/net
 lib/opus/file
 lib/xiph/speex/dsp
