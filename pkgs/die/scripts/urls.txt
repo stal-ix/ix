@@ -1671,6 +1671,7 @@ https://github.com/wmww/gtk-layer-shell/archive/refs/tags/v0.8.0.tar.gz
 https://github.com/wolfSSL/wolfssl/archive/refs/tags/v5.6.3-stable.tar.gz
 https://github.com/wolfSSL/wolfssl/archive/refs/tags/v5.6.4-stable.tar.gz
 https://github.com/wolfSSL/wolfssl/archive/refs/tags/v5.6.6-stable.tar.gz
+https://github.com/wolfpld/tracy/archive/refs/tags/v0.10.tar.gz
 https://github.com/wtfutil/wtf/archive/refs/tags/v0.41.0.tar.gz
 https://github.com/wxMaxima-developers/wxmaxima/archive/refs/tags/Version-23.07.0.tar.gz
 https://github.com/wxWidgets/wxWidgets/releases/download/v3.2.2.1/wxWidgets-3.2.2.1.tar.bz2
@@ -1740,6 +1741,7 @@ https://gitlab.freedesktop.org/libinput/libinput/-/archive/1.25.0/libinput-1.25.
 https://gitlab.freedesktop.org/mesa/glu/-/archive/glu-9.0.3/glu-glu-9.0.3.tar.bz2
 https://gitlab.freedesktop.org/mesa/mesa/-/archive/mesa-23.0.3/mesa-mesa-23.0.3.tar.bz2
 https://gitlab.freedesktop.org/mesa/mesa/-/archive/mesa-23.1.8/mesa-mesa-23.1.8.tar.bz2
+https://gitlab.freedesktop.org/slirp/libslirp/-/archive/v4.7.0/libslirp-v4.7.0.tar.bz2
 https://gitlab.freedesktop.org/upower/upower/-/archive/v1.90.1/upower-v1.90.1.tar.bz2
 https://gitlab.freedesktop.org/wayland/wayland-protocols/-/archive/1.32/wayland-protocols-1.32.tar.bz2
 https://gitlab.freedesktop.org/wayland/wayland-protocols/-/archive/1.33/wayland-protocols-1.33.tar.bz2
