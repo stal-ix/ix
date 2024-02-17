@@ -14,6 +14,7 @@ lib/pcap
 lib/sdl/2
 lib/slirp
 lib/curses
+lib/sdl/deps
 lib/sdl/2/net
 lib/fluid/synth
 {% endblock %}
@@ -36,4 +37,12 @@ shut_up
 {% block cpp_missing %}
 unistd.h
 fcntl.h
+{% endblock %}
+
+{% block cpp_includes %}
+${PWD}/include
+{% endblock %}
+
+{% block patch %}
+sed -e 's|return NULL;|return 0;|' -i src/dos/dos_programs.cpp
 {% endblock %}
