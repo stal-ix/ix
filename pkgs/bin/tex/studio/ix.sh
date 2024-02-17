@@ -3,8 +3,8 @@
 {# hard X11 dep #}
 
 {% block fetch %}
-https://github.com/texstudio-org/texstudio/archive/refs/tags/4.4.1.tar.gz
-sha:83c46c971081c053a01a186b4a7fbb492d75bef4070ff8fa045311eda186562b
+https://github.com/texstudio-org/texstudio/archive/refs/tags/4.7.2.tar.gz
+sha:c40bcdd50bb97d0174a6f67c6e2e3e135b265579185490c6757c30689ff7353d
 {% endblock %}
 
 {% block bld_libs %}
