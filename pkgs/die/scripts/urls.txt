@@ -1071,6 +1071,7 @@ https://github.com/johnsonjh/OpenVi/archive/refs/tags/7.4.24.tar.gz
 https://github.com/johnsonjh/OpenVi/archive/refs/tags/7.4.25.tar.gz
 https://github.com/johnsonjh/OpenVi/archive/refs/tags/7.4.27.tar.gz
 https://github.com/jonas/tig/archive/refs/tags/tig-2.5.8.tar.gz
+https://github.com/joncampbell123/dosbox-x/archive/refs/tags/dosbox-x-v2023.10.06.tar.gz
 https://github.com/josuttis/jthread/archive/0fa8d394254886c555d6faccd0a3de819b7d47f8.tar.gz
 https://github.com/jovanlanik/gtklock/archive/refs/tags/v2.0.1.tar.gz
 https://github.com/jstedfast/gmime/archive/refs/tags/3.2.13.tar.gz
@@ -1370,6 +1371,7 @@ https://github.com/protocolbuffers/protobuf/archive/refs/tags/v24.4.tar.gz
 https://github.com/protocolbuffers/protobuf/archive/refs/tags/v25.0.tar.gz
 https://github.com/protocolbuffers/protobuf/archive/refs/tags/v25.1.tar.gz
 https://github.com/protocolbuffers/protobuf/archive/refs/tags/v25.2.tar.gz
+https://github.com/protocolbuffers/protobuf/archive/refs/tags/v25.3.tar.gz
 https://github.com/psemiletov/tea-qt/archive/refs/tags/62.0.2.tar.gz
 https://github.com/ptitSeb/gl4es/archive/refs/tags/v1.1.4.tar.gz
 https://github.com/pullmoll/musl-rpmatch/archive/refs/tags/v1.0.tar.gz
