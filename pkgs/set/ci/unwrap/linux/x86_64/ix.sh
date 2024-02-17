@@ -37,6 +37,7 @@
 {% block run_deps %}
 #bin/zellij
 #bin/gendesk
+bin/dosbox/x
 bin/fluid/synth
 bin/dosbox/staging/debug
 bin/dosbox/staging

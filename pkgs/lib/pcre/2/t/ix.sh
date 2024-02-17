@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/PhilipHazel/pcre2/archive/refs/tags/pcre2-10.42.tar.gz
-sha:a8e52a9bd1bca8f51c5c24823adc2a99acb12288e289a6507090c1a4a4815010
+https://github.com/PhilipHazel/pcre2/archive/refs/tags/pcre2-10.43.tar.gz
+sha:f0048e26b02bdfaf43b8cec75030a9c2fe28552bf5caa693d3ccbf4d886fa930
 {% endblock %}
 
 {% block lib_deps %}

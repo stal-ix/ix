@@ -653,6 +653,7 @@ https://github.com/OpenVisualCloud/SVT-HEVC/archive/refs/tags/v1.5.1.tar.gz
 https://github.com/OpenVisualCloud/SVT-VP9/archive/refs/tags/v0.3.0.tar.gz
 https://github.com/P-H-C/phc-winner-argon2/archive/refs/tags/20190702.tar.gz
 https://github.com/PhilipHazel/pcre2/archive/refs/tags/pcre2-10.42.tar.gz
+https://github.com/PhilipHazel/pcre2/archive/refs/tags/pcre2-10.43.tar.gz
 https://github.com/PurpleI2P/i2pd/archive/refs/tags/2.48.0.tar.gz
 https://github.com/PurpleI2P/i2pd/archive/refs/tags/2.49.0.tar.gz
 https://github.com/PurpleI2P/i2pd/archive/refs/tags/2.50.0.tar.gz
@@ -1581,6 +1582,7 @@ https://github.com/tenox7/ttyplot/archive/refs/tags/1.6.1.tar.gz
 https://github.com/tesseract-ocr/tesseract/archive/refs/tags/5.2.0.tar.gz
 https://github.com/tetratelabs/wazero/archive/refs/tags/v1.5.0.tar.gz
 https://github.com/texstudio-org/texstudio/archive/refs/tags/4.4.1.tar.gz
+https://github.com/texstudio-org/texstudio/archive/refs/tags/4.7.2.tar.gz
 https://github.com/thepowersgang/mrustc/archive/1b1416bb2b44e2c331c7201833305cac29d571e8.zip
 https://github.com/thepowersgang/mrustc/archive/c70b86e138018b0e144dd179a5bd6c6e0972b350.zip
 https://github.com/thkukuk/libnsl/releases/download/v2.0.0/libnsl-2.0.0.tar.xz
