@@ -20,6 +20,7 @@ compress
 export PYTHONHOME=${TARGET_PYTHONHOME}
 export PYTHONPLATLIBDIR=${PYTHONHOME}/lib
 python3 ${PYTHONPLATLIBDIR}/aux/freeze/freeze.py -m {{self.entry_point()}} $(cat modules)
+cp $(find ${PYTHONPLATLIBDIR} -name config.c) ./
 make -j ${make_thrs}
 {% endblock %}
 
