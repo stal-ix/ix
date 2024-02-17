@@ -12,6 +12,7 @@ lib/sdl/2
 {% endblock %}
 
 {% block cmake_flags %}
+CMAKE_INSTALL_LIBDIR=lib
 SDL2NET_SAMPLES=OFF
 BUILD_SHARED_LIBS=ON
 {% endblock %}
@@ -23,4 +24,8 @@ wrap_cc
 {% block step_install %}
 {{super()}}
 sed -e 's|libSDL2_net-2.0.a|libSDL2_net.a|' -i ${out}/lib/cmake/SDL2_net/SDL2_net-shared-targets-release.cmake
+{% endblock %}
+
+{% block env %}
+export CPPFLAGS="-I${out}/include/SDL2 \${CPPFLAGS}"
 {% endblock %}
