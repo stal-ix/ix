@@ -32,11 +32,13 @@
 #bin/efitools
 #bin/colord
 #bin/tex/studio
+#bin/rr
 #}
 
 {% block run_deps %}
 #bin/zellij
 #bin/gendesk
+bin/capnc
 bin/dosbox/x
 bin/fluid/synth
 bin/dosbox/staging/debug
