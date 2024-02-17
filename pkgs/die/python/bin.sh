@@ -2,7 +2,7 @@
 
 {% block std_env %}
 bld/make
-lib/python/3/{{python_ver}}
+bld/python/{{python_ver}}
 {{super()}}
 {% endblock %}
 
@@ -20,6 +20,7 @@ compress
 export PYTHONHOME=${TARGET_PYTHONHOME}
 export PYTHONPLATLIBDIR=${PYTHONHOME}/lib
 python3 ${PYTHONPLATLIBDIR}/aux/freeze/freeze.py -m {{self.entry_point()}} $(cat modules)
+cp $(find ${PYTHONPLATLIBDIR} -name config.c) ./
 make -j ${make_thrs}
 {% endblock %}
 

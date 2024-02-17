@@ -1,8 +1,8 @@
 {% extends '//die/c/make.sh' %}
 
 {% block fetch %}
-https://github.com/illiliti/libudev-zero/archive/refs/tags/1.0.2.tar.gz
-sha:29dff942cab9519994fb92ba6407f57e08d3dd6e6c0b86bb93d7b1d681994ff8
+https://github.com/illiliti/libudev-zero/archive/refs/tags/1.0.3.tar.gz
+sha:0bd89b657d62d019598e6c7ed726ff8fed80e8ba092a83b484d66afb80b77da5
 {% endblock %}
 
 {% block lib_deps %}

@@ -24,3 +24,10 @@ bld/qt/6/tools/qml
 {% block cpp_defines %}
 QT_STATICPLUGIN
 {% endblock %}
+
+{% block install %}
+{{super()}}
+{# libudev-zero does not provide cmake targets #}
+sed -e 's|.*find.*UDev.*||' -i ${out}/lib/cmake/KF6CoreAddons/KF6CoreAddonsConfig.cmake
+sed -e 's|UDev::UDev|dl|' -i ${out}/lib/cmake/KF6CoreAddons/KF6CoreAddonsTargets.cmake
+{% endblock %}

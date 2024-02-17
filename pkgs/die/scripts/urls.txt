@@ -469,6 +469,7 @@ https://git.sr.ht/~mcf/samurai/refs/download/1.2/samurai-1.2.tar.gz
 https://git.sr.ht/~mil/lisgd/archive/0.3.7.tar.gz
 https://git.sr.ht/~mil/lisgd/archive/0.4.0.tar.gz
 https://git.sr.ht/~sircmpwn/scdoc/archive/1.11.2.tar.gz
+https://git.sr.ht/~sircmpwn/scdoc/archive/1.11.3.tar.gz
 https://git.sr.ht/~sircmpwn/wev/archive/1.0.0.tar.gz
 https://github.com/AOMediaCodec/libavif/archive/refs/tags/v1.0.1.tar.gz
 https://github.com/AOMediaCodec/libavif/archive/refs/tags/v1.0.2.tar.gz
@@ -552,6 +553,7 @@ https://github.com/Genivia/ugrep/archive/refs/tags/v4.4.1.tar.gz
 https://github.com/Genivia/ugrep/archive/refs/tags/v4.5.0.tar.gz
 https://github.com/Genivia/ugrep/archive/refs/tags/v4.5.1.tar.gz
 https://github.com/Genivia/ugrep/archive/refs/tags/v4.5.2.tar.gz
+https://github.com/Genivia/ugrep/archive/refs/tags/v5.0.0.tar.gz
 https://github.com/GrapheneOS/hardened_malloc/archive/refs/tags/11.tar.gz
 https://github.com/Hjdskes/cage/archive/refs/tags/v0.1.4.tar.gz
 https://github.com/HowardHinnant/date/archive/refs/tags/v3.0.1.tar.gz
@@ -591,6 +593,7 @@ https://github.com/KhronosGroup/Vulkan-Loader/archive/refs/tags/vulkan-sdk-1.3.2
 https://github.com/KhronosGroup/Vulkan-Tools/archive/refs/tags/sdk-1.3.250.0.tar.gz
 https://github.com/KhronosGroup/Vulkan-Tools/archive/refs/tags/sdk-1.3.261.1.tar.gz
 https://github.com/KhronosGroup/Vulkan-Tools/archive/refs/tags/vulkan-sdk-1.3.268.0.tar.gz
+https://github.com/KhronosGroup/Vulkan-Tools/archive/refs/tags/vulkan-sdk-1.3.275.0.tar.gz
 https://github.com/KhronosGroup/Vulkan-Utility-Libraries/archive/refs/tags/vulkan-sdk-1.3.275.0.tar.gz
 https://github.com/KhronosGroup/Vulkan-ValidationLayers/archive/refs/tags/sdk-1.3.250.0.tar.gz
 https://github.com/KhronosGroup/Vulkan-ValidationLayers/archive/refs/tags/sdk-1.3.261.1.tar.gz
@@ -661,6 +664,7 @@ https://github.com/PurpleI2P/i2pd/archive/refs/tags/2.50.1.tar.gz
 https://github.com/PurpleI2P/i2pd/archive/refs/tags/2.50.2.tar.gz
 https://github.com/RazrFalcon/resvg/archive/refs/tags/v0.38.0.tar.gz
 https://github.com/RazrFalcon/resvg/archive/refs/tags/v0.39.0.tar.gz
+https://github.com/RazrFalcon/resvg/archive/refs/tags/v0.40.0.tar.gz
 https://github.com/Samsung/rlottie/archive/refs/tags/v0.2.tar.gz
 https://github.com/SpartanJ/efsw/archive/refs/tags/1.3.1.tar.gz
 https://github.com/Syllo/nvtop/archive/refs/tags/3.0.2.tar.gz
@@ -684,6 +688,7 @@ https://github.com/WerWolv/ImHex/releases/download/v1.19.1/Full.Sources.tar.gz
 https://github.com/YaLTeR/niri/archive/refs/tags/v0.1.0-beta.1.tar.gz
 https://github.com/YaLTeR/niri/archive/refs/tags/v0.1.0.tar.gz
 https://github.com/YaLTeR/niri/archive/refs/tags/v0.1.1.tar.gz
+https://github.com/YaLTeR/niri/archive/refs/tags/v0.1.2.tar.gz
 https://github.com/Z3Prover/z3/archive/refs/tags/z3-4.12.2.tar.gz
 https://github.com/Z3Prover/z3/archive/refs/tags/z3-4.12.3.tar.gz
 https://github.com/Z3Prover/z3/archive/refs/tags/z3-4.12.4.tar.gz
@@ -1026,6 +1031,7 @@ https://github.com/ihhub/fheroes2/archive/refs/tags/1.0.8.tar.gz
 https://github.com/ihhub/fheroes2/archive/refs/tags/1.0.9.tar.gz
 https://github.com/ii8/havoc/archive/refs/tags/0.5.0.tar.gz
 https://github.com/illiliti/libudev-zero/archive/refs/tags/1.0.2.tar.gz
+https://github.com/illiliti/libudev-zero/archive/refs/tags/1.0.3.tar.gz
 https://github.com/imneme/pcg-cpp/archive/refs/tags/v0.98.1.tar.gz
 https://github.com/inotify-tools/inotify-tools/archive/refs/tags/3.20.11.0.tar.gz
 https://github.com/intel/intel-one-mono/releases/download/V1.2.1/otf.zip
@@ -1071,6 +1077,7 @@ https://github.com/johnsonjh/OpenVi/archive/refs/tags/7.4.24.tar.gz
 https://github.com/johnsonjh/OpenVi/archive/refs/tags/7.4.25.tar.gz
 https://github.com/johnsonjh/OpenVi/archive/refs/tags/7.4.27.tar.gz
 https://github.com/jonas/tig/archive/refs/tags/tig-2.5.8.tar.gz
+https://github.com/joncampbell123/dosbox-x/archive/refs/tags/dosbox-x-v2023.10.06.tar.gz
 https://github.com/josuttis/jthread/archive/0fa8d394254886c555d6faccd0a3de819b7d47f8.tar.gz
 https://github.com/jovanlanik/gtklock/archive/refs/tags/v2.0.1.tar.gz
 https://github.com/jstedfast/gmime/archive/refs/tags/3.2.13.tar.gz
@@ -1300,11 +1307,13 @@ https://github.com/nghttp2/nghttp2/archive/refs/tags/v1.59.0.tar.gz
 https://github.com/ngtcp2/nghttp3/archive/refs/tags/v0.15.0.tar.gz
 https://github.com/ngtcp2/nghttp3/archive/refs/tags/v1.0.0.tar.gz
 https://github.com/ngtcp2/nghttp3/archive/refs/tags/v1.1.0.tar.gz
+https://github.com/ngtcp2/nghttp3/releases/download/v1.2.0/nghttp3-1.2.0.tar.xz
 https://github.com/ngtcp2/ngtcp2/archive/refs/tags/v0.19.0.tar.gz
 https://github.com/ngtcp2/ngtcp2/archive/refs/tags/v1.0.0.tar.gz
 https://github.com/ngtcp2/ngtcp2/archive/refs/tags/v1.0.1.tar.gz
 https://github.com/ngtcp2/ngtcp2/archive/refs/tags/v1.1.0.tar.gz
 https://github.com/ngtcp2/ngtcp2/archive/refs/tags/v1.2.0.tar.gz
+https://github.com/ngtcp2/ngtcp2/archive/refs/tags/v1.3.0.tar.gz
 https://github.com/nhorman/rng-tools/archive/refs/tags/v6.15.tar.gz
 https://github.com/nibanks/msh3/archive/refs/tags/v0.6.0.tar.gz
 https://github.com/niklata/ndhc/archive/refs/tags/v2022-03-08-v2.tar.gz
@@ -1370,6 +1379,7 @@ https://github.com/protocolbuffers/protobuf/archive/refs/tags/v24.4.tar.gz
 https://github.com/protocolbuffers/protobuf/archive/refs/tags/v25.0.tar.gz
 https://github.com/protocolbuffers/protobuf/archive/refs/tags/v25.1.tar.gz
 https://github.com/protocolbuffers/protobuf/archive/refs/tags/v25.2.tar.gz
+https://github.com/protocolbuffers/protobuf/archive/refs/tags/v25.3.tar.gz
 https://github.com/psemiletov/tea-qt/archive/refs/tags/62.0.2.tar.gz
 https://github.com/ptitSeb/gl4es/archive/refs/tags/v1.1.4.tar.gz
 https://github.com/pullmoll/musl-rpmatch/archive/refs/tags/v1.0.tar.gz
@@ -1726,6 +1736,7 @@ https://gitlab.com/procps-ng/procps/-/archive/v4.0.4/procps-v4.0.4.tar.bz2
 https://gitlab.com/psmisc/psmisc/-/archive/v23.6/psmisc-v23.6.tar.bz2
 https://gitlab.com/qemu-project/keycodemapdb/-/archive/22b8996dba9041874845c7446ce89ec4ae2b713d/keycodemapdb-22b8996dba9041874845c7446ce89ec4ae2b713d.tar.bz2
 https://gitlab.com/sebholt/qastools/-/archive/v1.3.0/qastools-v1.3.0.tar.bz2
+https://gitlab.com/sebholt/qastools/-/archive/v1.4.0/qastools-v1.4.0.tar.bz2
 https://gitlab.freedesktop.org/cairo/cairo/-/archive/1.17.8/cairo-1.17.8.tar.bz2
 https://gitlab.freedesktop.org/cairo/cairo/-/archive/1.18.0/cairo-1.18.0.tar.bz2
 https://gitlab.freedesktop.org/freetype/freetype-demos/-/archive/VER-2-13-0/freetype-demos-VER-2-13-0.tar.bz2

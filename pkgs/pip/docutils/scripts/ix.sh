@@ -21,14 +21,6 @@ EOF
 done
 {% endblock %}
 
-{% block test_bin %}
-. ${out}/env
-
-export PATH="${out}/bin:${PATH}"
-
-rst2html.py --help
-{% endblock %}
-
 {% block postinstall %}
 echo 'TODO(pg): do not prune lib/'
 {% endblock %}

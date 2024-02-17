@@ -13,3 +13,17 @@ lib/vulkan/headers
 {% block cmake_flags %}
 VOLK_INSTALL=ON
 {% endblock %}
+
+{% block patch %}
+(
+echo '#pragma once'
+
+cat volk.h | grep extern | grep PFN | sed -e 's|extern ||' | sed -e 's| .*||' | sed -e 's|PFN_||' | sort | uniq | while read l; do
+    echo "#define ${l} volk_${l}"
+done
+
+cat volk.h
+) > _
+
+mv _ volk.h
+{% endblock %}

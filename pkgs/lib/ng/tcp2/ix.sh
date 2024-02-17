@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/ngtcp2/ngtcp2/archive/refs/tags/v1.2.0.tar.gz
-sha:15f3dd4cc4db2435bcd0b5253ccce4cbab26d18cc6ef4f00b5cb4af21ed06a0b
+https://github.com/ngtcp2/ngtcp2/archive/refs/tags/v1.3.0.tar.gz
+sha:b566a7574a6c58bb19ec5b916300141283ef05139768de2b021ff37676b63dff
 {% endblock %}
 
 {% block lib_deps %}
@@ -14,8 +14,8 @@ lib/ng/http/3
 
 {% block cmake_flags %}
 ENABLE_OPENSSL=ON
-ENABLE_LIB_ONLY=OFF
-ENABLE_STATIC_LIB=OFF
+ENABLE_STATIC_LIB=ON
+ENABLE_SHARED_LIB=OFF
 {% endblock %}
 
 {% block setup_target_flags %}
