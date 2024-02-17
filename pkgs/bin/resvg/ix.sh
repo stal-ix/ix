@@ -1,11 +1,11 @@
 {% extends '//die/rust/cargo.sh' %}
 
 {% block cargo_url %}
-https://github.com/RazrFalcon/resvg/archive/refs/tags/v0.39.0.tar.gz
+https://github.com/RazrFalcon/resvg/archive/refs/tags/v0.40.0.tar.gz
 {% endblock %}
 
 {% block cargo_sha %}
-45826f648fb0104a9409cff5bb5b4213d9c9a53f3d2b0ada28e41af0ee1df9fd
+c36f11f8141ca9b683513216bde90a067408370a8700e591efb5c3a23bf0927a
 {% endblock %}
 
 {% block cargo_refine %}
