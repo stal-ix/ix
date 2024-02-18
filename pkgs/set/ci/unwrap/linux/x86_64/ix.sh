@@ -38,6 +38,7 @@
 {% block run_deps %}
 #bin/zellij
 #bin/gendesk
+bin/miller
 bin/u/root
 bin/pspy
 bin/capnc
