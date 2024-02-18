@@ -23,7 +23,8 @@ class Manager:
     def __init__(self, config):
         self.cache = {}
         self.config = config
-        self.env = cj.Env(cv.UFS(config.overlays))
+        self.fs = cj.Loader(cv.UFS(config.overlays))
+        self.env = cj.Env(self.fs)
         self.mirrors = list(self.env.fs.source('//die/scripts/mirrors.txt')[0].strip().split())
 
     def cached(self, key, func):
