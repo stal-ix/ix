@@ -38,6 +38,7 @@
 {% block run_deps %}
 #bin/zellij
 #bin/gendesk
+bin/pspy
 bin/capnc
 bin/dosbox/x
 bin/fluid/synth
