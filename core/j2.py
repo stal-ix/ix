@@ -27,12 +27,12 @@ class MyCache(jinja2.BytecodeCache):
 
     def load_bytecode(self, bucket):
         try:
-            bucket.bytecode_from_string(self.c[bucket.key])
+            bucket.code = self.c[bucket.key]
         except KeyError:
             pass
 
     def dump_bytecode(self, bucket):
-        self.c[bucket.key] = bucket.bytecode_to_string()
+        self.c[bucket.key] = bucket.code
 
 
 class Loader:
