@@ -23,11 +23,6 @@ bld/gettext
 bin/neo/vim/puc(lua_ver=puc/5/2)
 {% endblock %}
 
-{% block script_init_env %}
-export LUA_PATH=
-{{super()}}
-{% endblock %}
-
 {% block setup_tools %}
 L=$(which lua)
 
