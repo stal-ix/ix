@@ -27,12 +27,12 @@ class MyCache(jinja2.BytecodeCache):
 
     def load_bytecode(self, bucket):
         try:
-            bucket.code = self.c[bucket.key]
+            bucket.code = self.c[bucket.checksum]
         except KeyError:
             pass
 
     def dump_bytecode(self, bucket):
-        self.c[bucket.key] = bucket.code
+        self.c[bucket.checksum] = bucket.code
 
 
 class Loader:
@@ -83,9 +83,6 @@ class Env(jinja2.Environment, jinja2.BaseLoader):
         self.filters['b64e'] = b64e
         self.filters['b64d'] = b64d
         self.filters['basename'] = os.path.basename
-
-    def child(self):
-        return Env(self.fs)
 
     def get_source(self, env, name):
         x, y = self.fs.source(name)
