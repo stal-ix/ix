@@ -66,7 +66,7 @@ class RenderContext:
     def load_file(self, name):
         n = os.path.join(os.path.dirname(self.package.name), name)
 
-        return self.package.manager.env.fs.source(n)[0]
+        return self.package.manager.fs.source(n)[0]
 
     def template(self, path):
         pkg = self.package
