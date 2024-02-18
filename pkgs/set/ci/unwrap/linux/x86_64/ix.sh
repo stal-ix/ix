@@ -38,6 +38,7 @@
 {% block run_deps %}
 #bin/zellij
 #bin/gendesk
+bin/clx
 bin/bore
 bin/corsixth
 bin/dns/x
