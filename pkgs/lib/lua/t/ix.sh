@@ -2,15 +2,11 @@
 
 {% block lib_deps %}
 lib/c
+lib/lua/env
 {% endblock %}
 
 {% block bld_tool %}
 bld/dlfcn
-{% endblock %}
-
-{% block script_init_env %}
-export LUA_PATH=
-{{super()}}
 {% endblock %}
 
 {% block patch %}
@@ -19,7 +15,7 @@ sed -e 's|.*return 0.*open failed.*|if (f == NULL) return (strstr(filename, ".so
 {% endblock %}
 
 {% block build %}
-(IFS=":"; for x in ${LUA_PATH}; do cat ${x}/mod; done) | sed -e 's|.* ||' | while read l; do
+(IFS=":"; for x in ${LUA_MOD}; do cat ${x}; done) | sed -e 's|.* ||' | while read l; do
     n=$(echo ${l} | sed -e 's|.*luaopen_||')
     echo "${n} ${l} ${l}"
 done | dl_stubs > dl.c

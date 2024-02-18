@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://www.mpg123.org/download/mpg123-1.32.4.tar.bz2
-sha:5a99664338fb2f751b662f40ee25804d0c9db6b575dcb5ce741c6dc64224a08a
+https://www.mpg123.org/download/mpg123-1.32.5.tar.bz2
+sha:af908cdf6cdb6544b97bc706a799f79894e69468af5881bf454a0ebb9171ed63
 {% endblock %}
 
 {% block lib_deps %}
