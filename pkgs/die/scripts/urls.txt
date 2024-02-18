@@ -1597,6 +1597,7 @@ https://github.com/telegramdesktop/tdesktop/releases/download/v4.14.6/tdesktop-4
 https://github.com/telegramdesktop/tdesktop/releases/download/v4.14.7/tdesktop-4.14.7-full.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v4.14.8/tdesktop-4.14.8-full.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v4.14.9/tdesktop-4.14.9-full.tar.gz
+https://github.com/telegramdesktop/tdesktop/releases/download/v4.15.0/tdesktop-4.15.0-full.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v4.8.10/tdesktop-4.8.10-full.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v4.8.12/tdesktop-4.8.12-full.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v4.9.0/tdesktop-4.9.0-full.tar.gz
