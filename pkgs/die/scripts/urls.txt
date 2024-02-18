@@ -969,6 +969,7 @@ https://github.com/google/crc32c/archive/refs/tags/1.1.2.tar.gz
 https://github.com/google/double-conversion/archive/refs/tags/v3.3.0.tar.gz
 https://github.com/google/fonts/archive/2855855a4cf481d4220e30ca3bff0704cc111a57.zip
 https://github.com/google/glog/archive/refs/tags/v0.6.0.tar.gz
+https://github.com/google/glog/archive/refs/tags/v0.7.0.tar.gz
 https://github.com/google/googletest/archive/refs/tags/v1.14.0.tar.gz
 https://github.com/google/gumbo-parser/archive/refs/tags/v0.10.1.tar.gz
 https://github.com/google/highway/archive/refs/tags/1.0.5.tar.gz
