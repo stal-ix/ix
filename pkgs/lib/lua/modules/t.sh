@@ -2,6 +2,7 @@
 
 {% block lib_deps %}
 lib/c
+lib/lua/modules/env
 {% endblock %}
 
 {% block bld_libs %}
@@ -34,7 +35,7 @@ export LUA_PATH=
 {{super()}}
 {% endblock %}
 
-{% block env_lib %}
+{% block env %}
 export LUA_PATH="${out}/share/lua:\${LUA_PATH}"
 {% endblock %}
 

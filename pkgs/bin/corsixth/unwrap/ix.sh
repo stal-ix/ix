@@ -14,4 +14,5 @@ lib/ffmpeg
 lib/sdl/deps
 lib/freetype
 lib/sdl/2/mixer
+lib/lua/modules/lfs/dl
 {% endblock %}
