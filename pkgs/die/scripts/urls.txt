@@ -506,6 +506,7 @@ https://github.com/BLAKE3-team/BLAKE3/archive/refs/tags/1.5.0.tar.gz
 https://github.com/Cyan4973/xxHash/archive/refs/tags/v0.8.2.tar.gz
 https://github.com/DanBloomberg/leptonica/archive/refs/tags/1.83.1.tar.gz
 https://github.com/DanBloomberg/leptonica/archive/refs/tags/1.84.1.tar.gz
+https://github.com/DominicBreuker/pspy/archive/refs/tags/v1.2.1.tar.gz
 https://github.com/Esri/lerc/archive/refs/tags/v4.0.0.tar.gz
 https://github.com/Exiv2/exiv2/archive/refs/tags/v0.27.6.tar.gz
 https://github.com/FFmpeg/FFmpeg/archive/refs/tags/n4.4.2.tar.gz
@@ -1074,6 +1075,7 @@ https://github.com/jjsullivan5196/wvkbd/archive/refs/tags/v0.12.tar.gz
 https://github.com/jjsullivan5196/wvkbd/archive/refs/tags/v0.14.1.tar.gz
 https://github.com/jjsullivan5196/wvkbd/archive/refs/tags/v0.14.3.tar.gz
 https://github.com/jjsullivan5196/wvkbd/archive/refs/tags/v0.14.tar.gz
+https://github.com/johnkerl/miller/archive/refs/tags/v6.11.0.tar.gz
 https://github.com/johnsonjh/OpenVi/archive/refs/tags/7.4.23.tar.gz
 https://github.com/johnsonjh/OpenVi/archive/refs/tags/7.4.24.tar.gz
 https://github.com/johnsonjh/OpenVi/archive/refs/tags/7.4.25.tar.gz
@@ -1627,6 +1629,7 @@ https://github.com/tukaani-project/xz/releases/download/v5.4.6/xz-5.4.6.tar.gz
 https://github.com/tulir/gomuks/archive/refs/tags/v0.3.0.tar.gz
 https://github.com/tvrzna/emptty/archive/refs/tags/v0.10.0.tar.gz
 https://github.com/tvrzna/emptty/archive/refs/tags/v0.11.0.tar.gz
+https://github.com/u-root/u-root/archive/refs/tags/v0.13.0.tar.gz
 https://github.com/uclouvain/openjpeg/archive/refs/tags/v2.5.0.tar.gz
 https://github.com/unicode-org/icu/archive/refs/tags/release-70-1.tar.gz
 https://github.com/upx/upx/releases/download/v4.1.0/upx-4.1.0-src.tar.xz
