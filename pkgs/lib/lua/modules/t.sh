@@ -3,14 +3,14 @@
 {% block lib_deps %}
 lib/c
 lib/lua
-lib/lua/modules/env
+lib/lua/env
 {% endblock %}
 
 {% block use_data %}
 {% if lib %}
 {{name}}(lua_ver={{lua_ver or error()}})
 {% endif %}
-lib/lua/modules/env
+lib/lua/env
 {% endblock %}
 
 {% block build %}
