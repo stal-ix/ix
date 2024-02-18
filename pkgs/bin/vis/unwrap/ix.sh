@@ -14,11 +14,6 @@ lib/lua/modules/lpeg
 lib/lua/modules/lpeg/dl
 {% endblock %}
 
-{% block script_init_env %}
-export LUA_PATH=
-{{super()}}
-{% endblock %}
-
 {% block configure %}
 sh ./configure \
     --prefix=${out} \
