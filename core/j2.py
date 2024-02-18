@@ -23,7 +23,7 @@ def cut_include(l):
 
 class Env(jinja2.Environment, jinja2.BaseLoader):
     def __init__(self, vfs):
-        jinja2.Environment.__init__(self, loader=self, auto_reload=False, trim_blocks=True, lstrip_blocks=True)
+        jinja2.Environment.__init__(self, loader=self, auto_reload=False, cache_size=-1, trim_blocks=True, lstrip_blocks=True)
         self.cache = {}
         self.vfs = vfs
         self.filters['b64e'] = b64e
