@@ -24,7 +24,7 @@ class Manager:
         self.cache = {}
         self.config = config
         self.env = cj.Env(cv.UFS(config.overlays))
-        self.mirrors = list(self.env.source('//die/scripts/mirrors.txt')[0].strip().split())
+        self.mirrors = list(self.env.fs.source('//die/scripts/mirrors.txt')[0].strip().split())
 
     def cached(self, key, func):
         while True:

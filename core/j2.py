@@ -21,14 +21,31 @@ def cut_include(l):
         return l
 
 
-class Env(jinja2.Environment, jinja2.BaseLoader):
+class MyCache(jinja2.BytecodeCache):
+    def __init__(self):
+        self.c = {}
+
+    def load_bytecode(self, bucket):
+        try:
+            bucket.bytecode_from_string(self.c[bucket.key])
+        except KeyError:
+            pass
+
+    def dump_bytecode(self, bucket):
+        self.c[bucket.key] = bucket.bytecode_to_string()
+
+
+class Loader:
     def __init__(self, vfs):
-        jinja2.Environment.__init__(self, loader=self, auto_reload=False, cache_size=-1, trim_blocks=True, lstrip_blocks=True)
-        self.cache = {}
         self.vfs = vfs
-        self.filters['b64e'] = b64e
-        self.filters['b64d'] = b64d
-        self.filters['basename'] = os.path.basename
+        self.bc = MyCache()
+        self.cache = {}
+
+    def join_path(self, tmpl, parent):
+        if tmpl.startswith('//'):
+            return tmpl
+
+        return os.path.join(os.path.dirname(parent), tmpl)
 
     def resolve_includes(self, data, name):
         def it():
@@ -39,11 +56,6 @@ class Env(jinja2.Environment, jinja2.BaseLoader):
                     yield l
 
         return '\n'.join(it())
-
-    def get_source(self, env, name):
-        x, y = self.source(name)
-
-        return x, y, lambda: True
 
     def source(self, name):
         while True:
@@ -63,8 +75,22 @@ class Env(jinja2.Environment, jinja2.BaseLoader):
 
         return self.resolve_includes(self.vfs.serve(name), name), name
 
-    def join_path(self, tmpl, parent):
-        if tmpl.startswith('//'):
-            return tmpl
 
-        return os.path.join(os.path.dirname(parent), tmpl)
+class Env(jinja2.Environment, jinja2.BaseLoader):
+    def __init__(self, vfs):
+        self.fs = Loader(vfs)
+        jinja2.Environment.__init__(self, bytecode_cache=self.fs.bc, loader=self, auto_reload=False, cache_size=-1, trim_blocks=True, lstrip_blocks=True, optimized=False)
+        self.filters['b64e'] = b64e
+        self.filters['b64d'] = b64d
+        self.filters['basename'] = os.path.basename
+
+    def child(self):
+        return Env(self.loader)
+
+    def get_source(self, env, name):
+        x, y = self.fs.source(name)
+
+        return x, y, lambda: True
+
+    def join_path(self, tmpl, parent):
+        return self.fs.join_path(tmpl, parent)
