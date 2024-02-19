@@ -749,6 +749,7 @@ https://github.com/aristocratos/btop/archive/refs/tags/v1.2.0.tar.gz
 https://github.com/artemsen/swayimg/archive/refs/tags/v1.12.tar.gz
 https://github.com/artemsen/swayimg/archive/refs/tags/v2.0.tar.gz
 https://github.com/artemsen/swayimg/archive/refs/tags/v2.1.tar.gz
+https://github.com/arvidn/libtorrent/releases/download/v2.0.10/libtorrent-rasterbar-2.0.10.tar.gz
 https://github.com/arvidn/libtorrent/releases/download/v2.0.9/libtorrent-rasterbar-2.0.9.tar.gz
 https://github.com/ascent12/drm_info/archive/refs/tags/v2.3.0.tar.gz
 https://github.com/axboe/liburing/archive/refs/tags/liburing-2.2.tar.gz
