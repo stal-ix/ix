@@ -857,6 +857,7 @@ https://github.com/editorconfig/editorconfig-core-c/archive/refs/tags/v0.12.6.ta
 https://github.com/ekzhang/bore/archive/refs/tags/v0.5.0.tar.gz
 https://github.com/elfmz/far2l/archive/refs/tags/v_2.5.0.tar.gz
 https://github.com/elfmz/far2l/archive/refs/tags/v_2.5.2.tar.gz
+https://github.com/elfmz/far2l/archive/refs/tags/v_2.6.0.tar.gz
 https://github.com/elves/elvish/archive/refs/tags/v0.19.2.tar.gz
 https://github.com/elves/elvish/archive/refs/tags/v0.20.0.tar.gz
 https://github.com/elves/elvish/archive/refs/tags/v0.20.1.tar.gz
