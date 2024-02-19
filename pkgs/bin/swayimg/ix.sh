@@ -17,7 +17,6 @@ lib/jpeg
 lib/avif
 lib/exif
 lib/cairo
-lib/giflib
 lib/wayland
 lib/openexr
 lib/xkb/common
