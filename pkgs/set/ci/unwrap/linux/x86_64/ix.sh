@@ -38,6 +38,7 @@
 {% block run_deps %}
 #bin/zellij
 #bin/gendesk
+bin/shadowsocks/rust
 bin/delta
 bin/cproxy
 bin/clx
