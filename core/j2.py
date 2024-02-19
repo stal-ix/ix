@@ -21,7 +21,7 @@ def cut_include(l):
         return l
 
 
-class Loader:
+class Loader(jinja2.BaseLoader):
     def __init__(self, vfs):
         self.vfs = vfs
         self.cache = {}
@@ -60,19 +60,18 @@ class Loader:
 
         return self.resolve_includes(self.vfs.serve(name), name), name
 
+    def get_source(self, env, name):
+        x, y = self.source(name)
 
-class Env(jinja2.Environment, jinja2.BaseLoader):
+        return x, y, lambda: True
+
+
+class Env(jinja2.Environment):
     def __init__(self, fs):
-        jinja2.Environment.__init__(self, loader=self, auto_reload=False, cache_size=-1, trim_blocks=True, lstrip_blocks=True, optimized=False)
-        self.fs = fs
+        jinja2.Environment.__init__(self, loader=fs, auto_reload=False, cache_size=-1, trim_blocks=True, lstrip_blocks=True, optimized=False)
         self.filters['b64e'] = b64e
         self.filters['b64d'] = b64d
         self.filters['basename'] = os.path.basename
 
-    def get_source(self, env, name):
-        x, y = self.fs.source(name)
-
-        return x, y, lambda: True
-
     def join_path(self, tmpl, parent):
-        return self.fs.join_path(tmpl, parent)
+        return self.loader.join_path(tmpl, parent)
