@@ -102,10 +102,13 @@ default
 {% if lib %}
 --lib
 {% endif %}
+{% if self.cargo_features().strip() == 'default' %}
+{% else %}
 --no-default-features
 {% for x in ix.parse_list(self.cargo_features()) %}
 --features {{x}}
 {% endfor %}
+{% endif %}
 {% endset %}
 
 {% block build %}

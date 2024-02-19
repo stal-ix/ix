@@ -13,9 +13,6 @@ lib/git/2
 lib/oniguruma
 {% endblock %}
 
-{% block cargo_features %}
-{% endblock %}
-
 {% block install %}
 mkdir ${out}/bin
 cp ${tmp}/release/delta ${out}/bin/
