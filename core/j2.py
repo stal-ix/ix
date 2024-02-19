@@ -21,24 +21,9 @@ def cut_include(l):
         return l
 
 
-class MyCache(jinja2.BytecodeCache):
-    def __init__(self):
-        self.c = {}
-
-    def load_bytecode(self, bucket):
-        try:
-            bucket.code = self.c[bucket.checksum]
-        except KeyError:
-            pass
-
-    def dump_bytecode(self, bucket):
-        self.c[bucket.checksum] = bucket.code
-
-
 class Loader:
     def __init__(self, vfs):
         self.vfs = vfs
-        self.bc = MyCache()
         self.cache = {}
 
     def join_path(self, tmpl, parent):
@@ -78,7 +63,7 @@ class Loader:
 
 class Env(jinja2.Environment, jinja2.BaseLoader):
     def __init__(self, fs):
-        jinja2.Environment.__init__(self, bytecode_cache=fs.bc, loader=self, auto_reload=False, cache_size=-1, trim_blocks=True, lstrip_blocks=True, optimized=False)
+        jinja2.Environment.__init__(self, loader=self, auto_reload=False, cache_size=-1, trim_blocks=True, lstrip_blocks=True, optimized=False)
         self.fs = fs
         self.filters['b64e'] = b64e
         self.filters['b64d'] = b64d
