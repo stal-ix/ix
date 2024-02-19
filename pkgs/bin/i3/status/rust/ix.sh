@@ -1,16 +1,16 @@
 {% extends '//die/rust/cargo.sh' %}
 
 {% block cargo_url %}
-https://github.com/dandavison/delta/archive/refs/tags/0.16.5.tar.gz
+https://github.com/greshake/i3status-rust/archive/refs/tags/v0.33.0.tar.gz
 {% endblock %}
 
 {% block cargo_sha %}
-515e69e0fa249bf7e34363dc60d26625ca93c4e963f1fcd905d4017a99f31fec
+73232f55d13d9160b3706ad659c39a417f5688aaa112a3d4a3214397c6c6b16b
 {% endblock %}
 
 {% block bld_libs %}
-lib/git/2
-lib/oniguruma
+lib/sensors
+lib/openssl
 {% endblock %}
 
 {% block cargo_features %}
@@ -18,5 +18,5 @@ lib/oniguruma
 
 {% block install %}
 mkdir ${out}/bin
-cp ${tmp}/release/delta ${out}/bin/
+cp ${tmp}/release/i3status-rs ${out}/bin/
 {% endblock %}

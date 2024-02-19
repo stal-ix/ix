@@ -12,3 +12,6 @@ https://github.com/ekzhang/bore/archive/refs/tags/v0.5.0.tar.gz
 mkdir ${out}/bin
 cp ${tmp}/release/bore ${out}/bin/
 {% endblock %}
+
+{% block cargo_features %}
+{% endblock %}

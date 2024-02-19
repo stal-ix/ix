@@ -10,10 +10,10 @@ lib/c
 lib/z
 lib/c++
 lib/png
+lib/gif
 lib/tiff
 lib/jpeg
 lib/webp
-lib/giflib
 lib/jpeg/open
 {% endblock %}
 

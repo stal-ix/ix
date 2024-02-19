@@ -90,6 +90,7 @@ chmod +x cc c++
 {% endblock %}
 
 {% block cargo_features %}
+default
 {% endblock %}
 
 {% set cargo_options %}
@@ -101,12 +102,10 @@ chmod +x cc c++
 {% if lib %}
 --lib
 {% endif %}
-{% if self.cargo_features().strip() %}
 --no-default-features
 {% for x in ix.parse_list(self.cargo_features()) %}
 --features {{x}}
 {% endfor %}
-{% endif %}
 {% endset %}
 
 {% block build %}

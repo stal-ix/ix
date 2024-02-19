@@ -1,4 +1,4 @@
-{% extends '//lib/giflib/ix.sh' %}
+{% extends '//lib/gif/ix.sh' %}
 
 {% block patch %}
 {{super()}}

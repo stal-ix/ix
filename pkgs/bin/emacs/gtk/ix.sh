@@ -2,13 +2,13 @@
 
 {% block bld_libs %}
 lib/png
+lib/gif
 lib/dbus
 lib/jpeg
 lib/webp
 lib/tiff
 lib/cairo
 lib/gtk/3
-lib/giflib
 lib/lcms/2
 lib/harfbuzz
 lib/gtk/deps
