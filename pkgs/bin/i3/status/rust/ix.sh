@@ -9,5 +9,14 @@ https://github.com/greshake/i3status-rust/archive/refs/tags/v0.33.0.tar.gz
 {% endblock %}
 
 {% block bld_libs %}
+lib/sensors
 lib/openssl
+{% endblock %}
+
+{% block cargo_features %}
+{% endblock %}
+
+{% block install %}
+mkdir ${out}/bin
+cp ${tmp}/release/i3status-rs ${out}/bin/
 {% endblock %}
