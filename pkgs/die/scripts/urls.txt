@@ -633,6 +633,7 @@ https://github.com/NLnetLabs/ldns/archive/refs/tags/1.8.3.tar.gz
 https://github.com/NLnetLabs/unbound/archive/refs/tags/release-1.18.0.tar.gz
 https://github.com/NLnetLabs/unbound/archive/refs/tags/release-1.19.0.tar.gz
 https://github.com/NLnetLabs/unbound/archive/refs/tags/release-1.19.1.tar.gz
+https://github.com/NOBLES5E/cproxy/archive/refs/tags/v4.1.6.post1.tar.gz
 https://github.com/NagyD/SDLPoP/archive/refs/tags/v1.23.tar.gz
 https://github.com/Nefelim4ag/Ananicy/archive/refs/tags/2.2.1.tar.gz
 https://github.com/NetworkConfiguration/dhcpcd/archive/refs/tags/v10.0.2.tar.gz
@@ -756,6 +757,7 @@ https://github.com/benhoyt/goawk/archive/refs/tags/v1.24.0.tar.gz
 https://github.com/benhoyt/goawk/archive/refs/tags/v1.25.0.tar.gz
 https://github.com/benhoyt/inih/archive/refs/tags/r57.tar.gz
 https://github.com/benhoyt/inih/archive/refs/tags/r58.tar.gz
+https://github.com/bensadeh/circumflex/archive/refs/tags/3.5.tar.gz
 https://github.com/bensadeh/tailspin/archive/refs/tags/3.0.0.tar.gz
 https://github.com/berndporr/iir1/archive/refs/tags/1.9.4.tar.gz
 https://github.com/besser82/libxcrypt/archive/refs/tags/v4.4.36.tar.gz
@@ -826,6 +828,7 @@ https://github.com/curl/curl/archive/refs/tags/curl-8_3_0.tar.gz
 https://github.com/curl/curl/archive/refs/tags/curl-8_4_0.tar.gz
 https://github.com/curl/curl/archive/refs/tags/curl-8_5_0.tar.gz
 https://github.com/curl/curl/archive/refs/tags/curl-8_6_0.tar.gz
+https://github.com/dandavison/delta/archive/refs/tags/0.16.5.tar.gz
 https://github.com/darkhz/bluetuith/archive/refs/tags/v0.1.7.tar.gz
 https://github.com/darktable-org/darktable/releases/download/release-4.0.0/darktable-4.0.0.tar.xz
 https://github.com/dboyan/wayland-tracer/archive/refs/tags/0.1.0.tar.gz
@@ -849,6 +852,7 @@ https://github.com/ebassi/graphene/archive/refs/tags/1.10.8.tar.gz
 https://github.com/ebiggers/libdeflate/archive/refs/tags/v1.18.tar.gz
 https://github.com/ebiggers/libdeflate/archive/refs/tags/v1.19.tar.gz
 https://github.com/editorconfig/editorconfig-core-c/archive/refs/tags/v0.12.6.tar.gz
+https://github.com/ekzhang/bore/archive/refs/tags/v0.5.0.tar.gz
 https://github.com/elfmz/far2l/archive/refs/tags/v_2.5.0.tar.gz
 https://github.com/elfmz/far2l/archive/refs/tags/v_2.5.2.tar.gz
 https://github.com/elves/elvish/archive/refs/tags/v0.19.2.tar.gz
@@ -965,10 +969,12 @@ https://github.com/google/crc32c/archive/refs/tags/1.1.2.tar.gz
 https://github.com/google/double-conversion/archive/refs/tags/v3.3.0.tar.gz
 https://github.com/google/fonts/archive/2855855a4cf481d4220e30ca3bff0704cc111a57.zip
 https://github.com/google/glog/archive/refs/tags/v0.6.0.tar.gz
+https://github.com/google/glog/archive/refs/tags/v0.7.0.tar.gz
 https://github.com/google/googletest/archive/refs/tags/v1.14.0.tar.gz
 https://github.com/google/gumbo-parser/archive/refs/tags/v0.10.1.tar.gz
 https://github.com/google/highway/archive/refs/tags/1.0.5.tar.gz
 https://github.com/google/highway/archive/refs/tags/1.0.7.tar.gz
+https://github.com/google/highway/archive/refs/tags/1.1.0.tar.gz
 https://github.com/google/minijail/archive/refs/tags/linux-v18.tar.gz
 https://github.com/google/re2/archive/refs/tags/2023-09-01.tar.gz
 https://github.com/google/re2/archive/refs/tags/2023-11-01.tar.gz
@@ -1140,6 +1146,7 @@ https://github.com/libexpat/libexpat/archive/refs/tags/R_2_5_0.tar.gz
 https://github.com/libexpat/libexpat/archive/refs/tags/R_2_6_0.tar.gz
 https://github.com/libffi/libffi/archive/refs/tags/v3.4.4.tar.gz
 https://github.com/libffi/libffi/archive/refs/tags/v3.4.5.tar.gz
+https://github.com/libffi/libffi/archive/refs/tags/v3.4.6.tar.gz
 https://github.com/libfuse/libfuse/archive/refs/tags/fuse-2.9.9.tar.gz
 https://github.com/libfuse/libfuse/archive/refs/tags/fuse-3.16.1.tar.gz
 https://github.com/libfuse/libfuse/archive/refs/tags/fuse-3.16.2.tar.gz
@@ -1590,6 +1597,7 @@ https://github.com/telegramdesktop/tdesktop/releases/download/v4.14.6/tdesktop-4
 https://github.com/telegramdesktop/tdesktop/releases/download/v4.14.7/tdesktop-4.14.7-full.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v4.14.8/tdesktop-4.14.8-full.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v4.14.9/tdesktop-4.14.9-full.tar.gz
+https://github.com/telegramdesktop/tdesktop/releases/download/v4.15.0/tdesktop-4.15.0-full.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v4.8.10/tdesktop-4.8.10-full.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v4.8.12/tdesktop-4.8.12-full.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v4.9.0/tdesktop-4.9.0-full.tar.gz
@@ -2055,6 +2063,7 @@ https://www.crufty.net/ftp/pub/sjg/bmake-20230909.tar.gz
 https://www.crufty.net/ftp/pub/sjg/bmake-20231124.tar.gz
 https://www.crufty.net/ftp/pub/sjg/bmake-20231210.tar.gz
 https://www.crufty.net/ftp/pub/sjg/bmake-20240108.tar.gz
+https://www.crufty.net/ftp/pub/sjg/bmake-20240212.tar.gz
 https://www.eecis.udel.edu/~ntp/ntp_spool/ntp4/ntp-4.2/ntp-4.2.8p15.tar.gz
 https://www.freedesktop.org/software/colord/releases/colord-1.4.6.tar.xz
 https://www.freedesktop.org/software/fontconfig/release/fontconfig-2.14.2.tar.xz

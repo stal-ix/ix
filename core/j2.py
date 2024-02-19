@@ -21,14 +21,16 @@ def cut_include(l):
         return l
 
 
-class Env(jinja2.Environment, jinja2.BaseLoader):
+class Loader(jinja2.BaseLoader):
     def __init__(self, vfs):
-        jinja2.Environment.__init__(self, loader=self, auto_reload=False, trim_blocks=True, lstrip_blocks=True)
-        self.cache = {}
         self.vfs = vfs
-        self.filters['b64e'] = b64e
-        self.filters['b64d'] = b64d
-        self.filters['basename'] = os.path.basename
+        self.cache = {}
+
+    def join_path(self, tmpl, parent):
+        if tmpl.startswith('//'):
+            return tmpl
+
+        return os.path.join(os.path.dirname(parent), tmpl)
 
     def resolve_includes(self, data, name):
         def it():
@@ -39,11 +41,6 @@ class Env(jinja2.Environment, jinja2.BaseLoader):
                     yield l
 
         return '\n'.join(it())
-
-    def get_source(self, env, name):
-        x, y = self.source(name)
-
-        return x, y, lambda: True
 
     def source(self, name):
         while True:
@@ -63,8 +60,18 @@ class Env(jinja2.Environment, jinja2.BaseLoader):
 
         return self.resolve_includes(self.vfs.serve(name), name), name
 
-    def join_path(self, tmpl, parent):
-        if tmpl.startswith('//'):
-            return tmpl
+    def get_source(self, env, name):
+        x, y = self.source(name)
 
-        return os.path.join(os.path.dirname(parent), tmpl)
+        return x, y, lambda: True
+
+
+class Env(jinja2.Environment):
+    def __init__(self, fs):
+        jinja2.Environment.__init__(self, loader=fs, auto_reload=False, cache_size=-1, trim_blocks=True, lstrip_blocks=True, optimized=False)
+        self.filters['b64e'] = b64e
+        self.filters['b64d'] = b64d
+        self.filters['basename'] = os.path.basename
+
+    def join_path(self, tmpl, parent):
+        return self.loader.join_path(tmpl, parent)

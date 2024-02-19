@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://github.com/libffi/libffi/archive/refs/tags/v3.4.5.tar.gz
-sha:0b942b74ed3ffc5e7670187a7ddb23ad5b51ed8d14317737f26e0431d1258f53
+https://github.com/libffi/libffi/archive/refs/tags/v3.4.6.tar.gz
+sha:9ac790464c1eb2f5ab5809e978a1683e9393131aede72d1b0a0703771d3c6cda
 {% endblock %}
 
 {% block lib_deps %}
