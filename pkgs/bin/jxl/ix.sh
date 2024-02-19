@@ -6,8 +6,8 @@ wrap_cc
 {% endblock %}
 
 {% block bld_libs %}
+lib/gif
 lib/jpeg
-lib/giflib
 lib/gflags
 lib/openexr
 {{super()}}

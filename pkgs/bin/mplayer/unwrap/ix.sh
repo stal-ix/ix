@@ -13,6 +13,7 @@ lib/z
 lib/a52
 lib/mad
 lib/png
+lib/gif
 lib/faac
 lib/faad2
 lib/mpeg2
@@ -20,7 +21,6 @@ lib/sdl/1
 lib/kernel
 lib/mpg123
 lib/ffmpeg
-lib/giflib
 lib/curses
 lib/fribidi
 lib/freetype

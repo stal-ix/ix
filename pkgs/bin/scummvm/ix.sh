@@ -12,12 +12,12 @@ lib/a52
 lib/c++
 lib/png
 lib/mad
+lib/gif
 lib/curl
 lib/jpeg
 lib/faad2
 lib/sdl/2
 lib/mpeg2
-lib/giflib
 lib/fribidi
 lib/sdl/deps
 lib/freetype
