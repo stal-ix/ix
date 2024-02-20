@@ -848,6 +848,7 @@ https://github.com/dosfstools/dosfstools/releases/download/v4.2/dosfstools-4.2.t
 https://github.com/doxygen/doxygen/archive/refs/tags/Release_1_10_0.tar.gz
 https://github.com/doxygen/doxygen/archive/refs/tags/Release_1_9_8.tar.gz
 https://github.com/dubiousjim/dcron/archive/refs/tags/v4.5.tar.gz
+https://github.com/dunst-project/dunst/archive/refs/tags/v1.10.0.tar.gz
 https://github.com/dunst-project/dunst/archive/refs/tags/v1.9.2.tar.gz
 https://github.com/easymodo/qimgv/archive/refs/tags/v1.0.2.tar.gz
 https://github.com/ebassi/graphene/archive/refs/tags/1.10.8.tar.gz
