@@ -6,11 +6,6 @@ lib/iconv
 lib/obstack
 {% endblock %}
 
-{% block std_box %}
-{{super()}}
-bld/fake(tool_name=makeinfo)
-{% endblock %}
-
 {% block unpack %}
 {{super()}}
 cd libtextstyle
