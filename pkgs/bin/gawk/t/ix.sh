@@ -27,3 +27,8 @@ xrealloc
 {% block configure_flags %}
 --disable-extensions
 {% endblock %}
+
+{% block install %}
+{{super()}}
+rm ${out}/bin/gawk-*
+{% endblock %}
