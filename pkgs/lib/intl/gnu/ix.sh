@@ -1,13 +1,8 @@
-{% extends '//die/c/autorehell.sh' %}
-
-{% block fetch %}
-{% include '//bin/gettext/unwrap/ver.sh' %}
-{% endblock %}
+{% extends '//bin/gettext/unwrap/t/ix.sh' %}
 
 {% block lib_deps %}
 lib/c
 lib/iconv
-
 {% if darwin %}
 lib/darwin/framework/CoreFoundation
 {% endif %}

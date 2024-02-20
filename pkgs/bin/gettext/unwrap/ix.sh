@@ -1,8 +1,4 @@
-{% extends '//die/c/autorehell.sh' %}
-
-{% block fetch %}
-{% include 'ver.sh' %}
-{% endblock %}
+{% extends 't/ix.sh' %}
 
 {% block purge_autohell %}configure{% endblock %}
 
