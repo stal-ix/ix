@@ -90,7 +90,15 @@ def popf(d, *f):
     return d
 
 
-ONE_LEVEL = ('setx', 'help', 'verbose', 'stage', 'rebuild', 'nostrip')
+ONE_LEVEL = (
+    'setx',
+    'help',
+    'verbose',
+    'stage',
+    'rebuild',
+    'nostrip',
+    'simulate_failure',
+)
 
 
 def sanitize(flags):
