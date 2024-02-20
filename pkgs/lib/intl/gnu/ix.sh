@@ -32,6 +32,7 @@ export COFLAGS="--with-libintl-prefix=${out} \${COFLAGS}"
 {% endblock %}
 
 {% block patch %}
+{{super()}}
 # WASI fix
 sed -e 's|SUBDIRS = .*|SUBDIRS = intl po|' -i Makefile.am
 {% endblock %}
