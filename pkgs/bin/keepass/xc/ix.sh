@@ -37,7 +37,7 @@ WITH_XC_FDOSECRETS=ON
 {% endblock %}
 
 {% block patch %}
-patch -p1 --fuzz 10 < ${src}/keepassxc-2.7.6-qt6-support.patch
+patcher patch -p1 --fuzz 10 < ${src}/keepassxc-2.7.6-qt6-support.patch
 sed -e 's|.*QXcbIntegrationPlugin.*||' -i src/main.cpp
 >src/core/Alloc.cpp
 {% endblock %}
