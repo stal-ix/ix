@@ -16,7 +16,7 @@ lib/wayland
 {% endblock %}
 
 {% block bld_tool %}
-bld/help2man
+bld/perl
 bld/wayland
 bld/pkg/config
 {% endblock %}
