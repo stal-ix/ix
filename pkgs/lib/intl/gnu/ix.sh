@@ -8,9 +8,23 @@ lib/darwin/framework/CoreFoundation
 {% endif %}
 {% endblock %}
 
+{% block bld_tool %}
+{{super()}}
+bld/fake/er(tool_name=gettext)
+bld/fake/er(tool_name=xgettext)
+bld/fake/er(tool_name=msgfmt)
+bld/fake/er(tool_name=msgmerge)
+{% endblock %}
+
 {% block unpack %}
 {{super()}}
 cd gettext-runtime
+{% endblock %}
+
+{% block autoreconf %}
+{{super()}}
+cd intl
+automake --add-missing
 {% endblock %}
 
 {% block c_rename_symbol %}
@@ -18,10 +32,8 @@ locale_charset
 {% endblock %}
 
 {% block configure_flags %}
---disable-c++
 --enable-relocatable
---disable-libasprintf
---with-included-gettext
+--disable-nls
 {% endblock %}
 
 {% block env %}
