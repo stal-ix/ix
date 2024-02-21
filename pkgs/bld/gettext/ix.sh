@@ -3,5 +3,5 @@
 {% block run_deps %}
 bld/tar
 bld/gzip
-bin/gettext/unwrap(intl_ver=gnu/boot)
+bld/gettext/unwrap
 {% endblock %}

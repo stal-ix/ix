@@ -30,9 +30,3 @@ cd gettext-tools
 {% block patch %}
 >../gettext-runtime/intl/localealias.c
 {% endblock %}
-
-{% block install %}
-{{super()}}
-cd ${out}/bin
-ln -s xgettext gettext
-{% endblock %}
