@@ -8,6 +8,8 @@ lib/obstack
 
 {% block unpack %}
 {{super()}}
+sed -e 's|/usr/bin/file|file|' -i build-aux/ltmain.sh
+sed -e 's|/usr/bin/file|file|' -i libtextstyle/build-aux/ltmain.sh
 cd libtextstyle
 {% endblock %}
 
