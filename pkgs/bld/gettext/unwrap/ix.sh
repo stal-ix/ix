@@ -19,4 +19,5 @@ bld/byacc
 --disable-c++
 --disable-nls
 --disable-curses
+--with-included-gettext
 {% endblock %}

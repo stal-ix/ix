@@ -21,6 +21,11 @@ bld/gettext
 sed -e 's|SUBDIRS = .*|SUBDIRS = intl po|' -i Makefile.am
 {% endblock %}
 
+{% block configure_flags %}
+{{super()}}
+--with-included-gettext
+{% endblock %}
+
 {% block unpack %}
 {{super()}}
 cd gettext-runtime
@@ -39,4 +44,3 @@ locale_charset
 {% block env %}
 export COFLAGS="--with-libintl-prefix=${out} \${COFLAGS}"
 {% endblock %}
-
