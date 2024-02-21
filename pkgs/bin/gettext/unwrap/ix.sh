@@ -6,7 +6,6 @@
 lib/c
 lib/intl
 lib/iconv
-lib/xml/2
 lib/shim/gnu
 lib/unistring
 lib/textstyle
