@@ -44,3 +44,8 @@ locale_charset
 {% block env %}
 export COFLAGS="--with-libintl-prefix=${out} \${COFLAGS}"
 {% endblock %}
+
+{% block install %}
+{{super()}}
+tes -f ${out}/lib/libintl.a
+{% endblock %}
