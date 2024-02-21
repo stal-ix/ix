@@ -1,4 +1,4 @@
-{% extends 't/ix.sh' %}
+{% extends '//lib/intl/gnu/t/ix.sh' %}
 
 {% block purge_autohell %}configure{% endblock %}
 
@@ -24,6 +24,7 @@ cd gettext-tools
 {% endblock %}
 
 {% block configure_flags %}
+{{super()}}
 --with-installed-libtextstyle
 {% endblock %}
 

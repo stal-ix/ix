@@ -1,4 +1,4 @@
-{% extends '//bin/gettext/unwrap/t/ix.sh' %}
+{% extends '//lib/intl/gnu/t/ix.sh' %}
 
 {% block lib_deps %}
 lib/c

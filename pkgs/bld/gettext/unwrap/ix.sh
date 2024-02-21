@@ -1,7 +1,7 @@
 {% extends '//die/c/autohell.sh' %}
 
 {% block fetch %}
-{% include '//bin/gettext/unwrap/t/ver.sh' %}
+{% include '//lib/intl/gnu/t/ver.sh' %}
 {% endblock %}
 
 {% block bld_libs %}
