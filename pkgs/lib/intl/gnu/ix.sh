@@ -47,5 +47,5 @@ export COFLAGS="--with-libintl-prefix=${out} \${COFLAGS}"
 
 {% block install %}
 {{super()}}
-tes -f ${out}/lib/libintl.a
+test -f ${out}/lib/libintl.a
 {% endblock %}
