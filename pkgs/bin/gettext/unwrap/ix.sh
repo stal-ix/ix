@@ -14,6 +14,7 @@ lib/textstyle
 
 {% block bld_tool %}
 bld/gzip
+bin/gperf
 bld/byacc
 {% endblock %}
 
