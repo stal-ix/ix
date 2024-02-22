@@ -1,15 +1,11 @@
-{% extends '//die/go/build.sh' %}
+{% extends '//die/go/build_v2.sh' %}
 
 {% block go_url %}
 https://github.com/alecthomas/chroma/archive/refs/tags/v2.9.1.tar.gz
 {% endblock %}
 
 {% block go_sha %}
-99d7f94f7c115ed9f69b4b521efcc5615318d2dce4d436a0435dce643513795f
-{% endblock %}
-
-{% block go_refine %}
-find . -type l -delete
+0120ec221ae4bb6651fafc39afe1173e87638c1b1717e5111ca053999861e326
 {% endblock %}
 
 {% block unpack %}
