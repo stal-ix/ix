@@ -1,11 +1,11 @@
-{% extends '//die/rust/cargo.sh' %}
+{% extends '//die/rust/cargo_v2.sh' %}
 
 {% block cargo_url %}
 https://github.com/sharkdp/binocle/archive/refs/tags/v0.3.2.tar.gz
 {% endblock %}
 
 {% block cargo_sha %}
-ccaa0f0164d95118e0d317bdac4e9755a78ebcc29388e55e3dca7baf32eef402
+a51d5bf0e63ee3c4d27255a8d30feae19acdd045b260e8e865d5fa4ade2578dd
 {% endblock %}
 
 {% block bld_libs %}
