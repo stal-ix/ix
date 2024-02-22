@@ -78,6 +78,9 @@ if command -v find; then
 fi
 {% endblock %}
 
+{% if simulate_failure %}
+exit 1
+{% endif %}
 {% if not skipsrc %}
 fast_rm 3 ${tmp}
 {% endif %}

@@ -1,16 +1,29 @@
-{% extends '//die/c/autorehell.sh' %}
-
-{% block fetch %}
-{% include '//bin/gettext/unwrap/ver.sh' %}
-{% endblock %}
+{% extends 't/ix.sh' %}
 
 {% block lib_deps %}
 lib/c
 lib/iconv
-
 {% if darwin %}
 lib/darwin/framework/CoreFoundation
 {% endif %}
+{% endblock %}
+
+{% block bld_tool %}
+{{super()}}
+bin/gperf
+bld/bison
+bld/gettext
+{% endblock %}
+
+{% block patch %}
+{{super()}}
+# WASI fix
+sed -e 's|SUBDIRS = .*|SUBDIRS = intl po|' -i Makefile.am
+{% endblock %}
+
+{% block configure_flags %}
+{{super()}}
+--with-included-gettext
 {% endblock %}
 
 {% block unpack %}
@@ -18,25 +31,21 @@ lib/darwin/framework/CoreFoundation
 cd gettext-runtime
 {% endblock %}
 
-{% block c_rename_symbol %}
-locale_charset
+{% block autoreconf %}
+{{super()}}
+cd intl
+automake --add-missing
 {% endblock %}
 
-{% block configure_flags %}
---disable-c++
---enable-relocatable
---disable-libasprintf
---with-included-gettext
+{% block c_rename_symbol %}
+locale_charset
 {% endblock %}
 
 {% block env %}
 export COFLAGS="--with-libintl-prefix=${out} \${COFLAGS}"
 {% endblock %}
 
-{% block touch_yl %}
-{% endblock %}
-
-{% block patch %}
-# WASI fix
-sed -e 's|SUBDIRS = .*|SUBDIRS = intl po|' -i Makefile.am
+{% block install %}
+{{super()}}
+test -f ${out}/lib/libintl.a
 {% endblock %}

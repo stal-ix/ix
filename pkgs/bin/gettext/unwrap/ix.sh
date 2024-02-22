@@ -1,8 +1,4 @@
-{% extends '//die/c/autorehell.sh' %}
-
-{% block fetch %}
-{% include 'ver.sh' %}
-{% endblock %}
+{% extends '//lib/intl/gnu/t/ix.sh' %}
 
 {% block purge_autohell %}configure{% endblock %}
 
@@ -10,7 +6,6 @@
 lib/c
 lib/intl
 lib/iconv
-lib/xml/2
 lib/shim/gnu
 lib/unistring
 lib/textstyle
@@ -18,6 +13,7 @@ lib/textstyle
 
 {% block bld_tool %}
 bld/gzip
+bin/gperf
 bld/byacc
 {% endblock %}
 
@@ -27,15 +23,10 @@ cd gettext-tools
 {% endblock %}
 
 {% block configure_flags %}
+{{super()}}
 --with-installed-libtextstyle
 {% endblock %}
 
 {% block patch %}
 >../gettext-runtime/intl/localealias.c
-{% endblock %}
-
-{% block install %}
-{{super()}}
-cd ${out}/bin
-ln -s xgettext gettext
 {% endblock %}

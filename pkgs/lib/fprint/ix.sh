@@ -1,8 +1,8 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://gitlab.freedesktop.org/libfprint/libfprint/-/archive/v1.94.5/libfprint-v1.94.5.tar.bz2
-sha:707309cc58012c4c22a318fdb0c6b43b2c96c8e70349ca5edb1feabb65afb63a
+https://gitlab.freedesktop.org/libfprint/libfprint/-/archive/v1.94.7/libfprint-v1.94.7.tar.bz2
+sha:632ddf4e294b12eb73d5971db7b9ec5e051c52131302fd34f539a20db4b0f9db
 {% endblock %}
 
 {% block lib_deps %}

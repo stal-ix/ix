@@ -12,6 +12,7 @@ cd ${out}
 
 find . -type f | while read l; do
     sed -e 's|#!.*/bin/sh|#!/usr/bin/env sh|' \
+        -e 's|/usr/bin/file|file|g' \
         -e 's|/.*/store/.*/bin/||g' \
         -i ${l}
 done

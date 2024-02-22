@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://github.com/NixOS/nix/archive/refs/tags/2.20.1.tar.gz
-sha:029b51f45f457ed834ec16d0e55cf54debcd873e2cf6d69987cf86e9d382b6d7
+https://github.com/NixOS/nix/archive/refs/tags/2.20.2.tar.gz
+sha:296d6cbe5ef404ea57944c464da86625bb65452fecc458ec943be1801534ae18
 {% endblock %}
 
 {% block bld_libs %}
@@ -53,5 +53,6 @@ wrap_cc
 {% endblock %}
 
 {% block setup_target_flags %}
+# https://github.com/NixOS/nix/pull/9997/commits/64cbd4c05a413eae55cde784594472f921fc7367
 export OPTFLAGS="${OPTFLAGS} -UNDEBUG"
 {% endblock %}

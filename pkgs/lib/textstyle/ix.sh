@@ -1,9 +1,4 @@
-{% extends '//die/c/autohell.sh' %}
-
-{% block fetch %}
-https://ftp.gnu.org/pub/gnu/gettext/gettext-0.21.tar.gz
-sha:c77d0da3102aec9c07f43671e60611ebff89a996ef159497ce8e59d075786b12
-{% endblock %}
+{% extends '//lib/intl/gnu/t/ix.sh' %}
 
 {% block lib_deps %}
 lib/c
@@ -13,7 +8,13 @@ lib/obstack
 
 {% block unpack %}
 {{super()}}
+sed -e 's|/usr/bin/file|file|' -i build-aux/ltmain.sh
+sed -e 's|/usr/bin/file|file|' -i libtextstyle/build-aux/ltmain.sh
 cd libtextstyle
+{% endblock %}
+
+{% block autoreconf %}
+sh ./autogen.sh --skip-gnulib
 {% endblock %}
 
 {% block env %}
