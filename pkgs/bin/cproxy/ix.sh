@@ -1,11 +1,11 @@
-{% extends '//die/rust/cargo.sh' %}
+{% extends '//die/rust/cargo_v2.sh' %}
 
 {% block cargo_url %}
 https://github.com/NOBLES5E/cproxy/archive/refs/tags/v4.1.6.post1.tar.gz
 {% endblock %}
 
 {% block cargo_sha %}
-0a370677281a837375081bfc92d92338bf00daf3043e49332268acc41702a353
+08927476e8e1930f9cd2383b7770dc47bbb709a28e327ab7da9a8706eab9cfbb
 {% endblock %}
 
 {% block install %}
