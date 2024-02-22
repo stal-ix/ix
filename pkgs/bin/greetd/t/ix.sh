@@ -1,4 +1,4 @@
-{% extends '//die/rust/cargo_v2.sh' %}
+{% extends '//die/rust/cargo.sh' %}
 
 {% block cargo_url %}
 https://git.sr.ht/~kennylevinsen/greetd/archive/0.9.0.tar.gz

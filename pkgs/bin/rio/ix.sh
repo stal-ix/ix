@@ -1,4 +1,4 @@
-{% extends '//die/rust/cargo_v2.sh' %}
+{% extends '//die/rust/cargo.sh' %}
 
 {% block cargo_url %}
 https://github.com/raphamorim/rio/archive/refs/tags/v0.0.34.tar.gz
