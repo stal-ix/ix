@@ -953,6 +953,7 @@ https://github.com/glencoesoftware/jxrlib/archive/refs/tags/v0.2.4.tar.gz
 https://github.com/glennrp/libpng/archive/refs/tags/v1.6.40.tar.gz
 https://github.com/glennrp/libpng/archive/refs/tags/v1.6.41.tar.gz
 https://github.com/glennrp/libpng/archive/refs/tags/v1.6.42.tar.gz
+https://github.com/glfw/glfw/archive/refs/tags/3.3.10.tar.gz
 https://github.com/glfw/glfw/archive/refs/tags/3.3.8.tar.gz
 https://github.com/glfw/glfw/archive/refs/tags/3.3.9.tar.gz
 https://github.com/glmark2/glmark2/archive/refs/tags/2023.01.tar.gz
