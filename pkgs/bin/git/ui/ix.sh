@@ -5,11 +5,7 @@ https://github.com/extrawurst/gitui/archive/refs/tags/v0.24.3.tar.gz
 {% endblock %}
 
 {% block cargo_sha %}
-7ec15f58c1ae42a465f8f554eb0475e6b94b195c89e31315550d77ef660bc7c3
-{% endblock %}
-
-{% block cargo_refine %}
-find . -type l -delete
+8a8ca38e8cd3a386cec33b24da0ebc2dd742e65f3e2daff18276ac7eb52a0289
 {% endblock %}
 
 {% block bld_libs %}
