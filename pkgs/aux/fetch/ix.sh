@@ -22,6 +22,10 @@ cd src
 extract 1 ../net/*
 {% endblock %}
 
+{% block packer %}
+stable_pack
+{% endblock %}
+
 {% block step_build %}
 set -xue
 {{super()}}
@@ -30,7 +34,7 @@ set -xue
 {% endif %}
 cd ..
 find src/
-stable_pack {{sha}} ${tmp}/{{fname}} src
+{{self.packer().strip()}} {{sha}} ${tmp}/{{fname}} src
 {% endblock %}
 
 {% block install %}

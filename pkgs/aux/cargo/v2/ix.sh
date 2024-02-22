@@ -24,3 +24,7 @@ cargo vendor vendored >> .cargo/config.toml
 
 find . -name '*.a' -type f -delete
 {% endblock %}
+
+{% block packer %}
+stable_pack_2
+{% endblock %}
