@@ -1,11 +1,11 @@
-{% extends '//die/rust/cargo.sh' %}
+{% extends '//die/rust/cargo_v2.sh' %}
 
 {% block cargo_url %}
 https://github.com/greshake/i3status-rust/archive/refs/tags/v0.33.0.tar.gz
 {% endblock %}
 
 {% block cargo_sha %}
-73232f55d13d9160b3706ad659c39a417f5688aaa112a3d4a3214397c6c6b16b
+33b94e150539fa30e6d4a610a0aaf6464ad2e7c64b3433fe8b51d71f3384e6e2
 {% endblock %}
 
 {% block bld_libs %}
