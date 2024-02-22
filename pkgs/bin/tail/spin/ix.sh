@@ -1,11 +1,11 @@
-{% extends '//die/rust/cargo.sh' %}
+{% extends '//die/rust/cargo_v2.sh' %}
 
 {% block cargo_url %}
 https://github.com/bensadeh/tailspin/archive/refs/tags/3.0.0.tar.gz
 {% endblock %}
 
 {% block cargo_sha %}
-37acaf24b5fe24c165aa0f26ceb3a121ead6cd4123cb4296bc1c2e8b65065bb9
+446bf55b04560da472e7cdf14c042328828b23adc17be84911114aeaaca48d3e
 {% endblock %}
 
 {% block install %}
