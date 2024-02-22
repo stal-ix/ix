@@ -1,11 +1,11 @@
-{% extends '//die/rust/cargo.sh' %}
+{% extends '//die/rust/cargo_v2.sh' %}
 
 {% block cargo_url %}
 https://github.com/raphamorim/rio/archive/refs/tags/v0.0.34.tar.gz
 {% endblock %}
 
 {% block cargo_sha %}
-8f78ecf1b0ff45fe4ab31feb58dc583b0e022353cb9bbec7b5c9e6b44dbf2969
+c229b28ab81b245f8fd3a97f4be30604610ba9d28e870222c823c5ab229c2418
 {% endblock %}
 
 {% block bld_libs %}

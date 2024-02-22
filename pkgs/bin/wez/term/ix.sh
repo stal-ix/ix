@@ -1,11 +1,11 @@
-{% extends '//die/rust/cargo.sh' %}
+{% extends '//die/rust/cargo_v2.sh' %}
 
 {% block cargo_url %}
 https://github.com/wez/wezterm/archive/refs/tags/20230712-072601-f4abf8fd.tar.gz
 {% endblock %}
 
 {% block cargo_sha %}
-69e9
+bde258346995542e0b396aa91dcb6f6de3a3324da1f8548410ab7236c4f84941
 {% endblock %}
 
 {% block bld_libs %}

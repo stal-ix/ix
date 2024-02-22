@@ -1,15 +1,11 @@
-{% extends '//die/rust/cargo.sh' %}
+{% extends '//die/rust/cargo_v2.sh' %}
 
 {% block cargo_url %}
 https://github.com/extrawurst/gitui/archive/refs/tags/v0.24.3.tar.gz
 {% endblock %}
 
 {% block cargo_sha %}
-7ec15f58c1ae42a465f8f554eb0475e6b94b195c89e31315550d77ef660bc7c3
-{% endblock %}
-
-{% block cargo_refine %}
-find . -type l -delete
+45b34ab5bee64e4717b54e67692bfc41e828f7e910ddfa7ebd5e2ce47841328c
 {% endblock %}
 
 {% block bld_libs %}

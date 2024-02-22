@@ -14,9 +14,13 @@ bin/cargo/whatfeatures
 {{super()}}
 {% endblock %}
 
+{% block unpacker %}
+stable_unpack
+{% endblock %}
+
 {% block unpack %}
 mkdir src; cd src
-stable_unpack ${src}/*lz4
+{{self.unpacker().strip()}} ${src}/*lz4
 rust_devendor vendored
 {% endblock %}
 
@@ -40,7 +44,7 @@ export LDFLAGS="-L${LD_LIBRARY_PATH} ${LDFLAGS}"
 {% endblock %}
 
 {% block setup_target_flags %}
-export CARGO_BUILD_JOBS=8
+export CARGO_BUILD_JOBS=16
 export CARGO_INSTALL_ROOT=${out}
 export CARGO_TARGET_DIR=${tmp}
 export CARGO_HOME=${PWD}/vendored
