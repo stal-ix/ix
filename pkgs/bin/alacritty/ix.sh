@@ -1,15 +1,11 @@
-{% extends '//die/rust/cargo.sh' %}
+{% extends '//die/rust/cargo_v2.sh' %}
 
 {% block cargo_url %}
 https://github.com/alacritty/alacritty/archive/refs/tags/v0.13.1.tar.gz
 {% endblock %}
 
 {% block cargo_sha %}
-3ff513555fb790559da08b682de3a4a66144f8275b77f2525ef0dfe9d7ffcf8b
-{% endblock %}
-
-{% block cargo_refine %}
-find . -type l -delete
+3bf13e3eb9f0dd0e3aa00de94723cdfe837739a7385fe9df9fe0e2586c04d5a6
 {% endblock %}
 
 {% block bld_libs %}
