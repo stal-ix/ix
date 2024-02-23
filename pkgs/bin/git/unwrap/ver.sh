@@ -1,2 +1,2 @@
-https://github.com/git/git/archive/refs/tags/v2.43.2.tar.gz
-sha:fe5a04be66d5e93aa8f84241a33893392a857d389a51d6a03b076802d04786df
+https://github.com/git/git/archive/refs/tags/v2.44.0.tar.gz
+318b9234cb188628c773e021bdfc5cf23e9963e29eb940b05cefd71bfc8d9a1a
