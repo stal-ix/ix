@@ -1,11 +1,11 @@
-{% extends '//die/go/build.sh' %}
+{% extends '//die/go/build_v2.sh' %}
 
 {% block go_url %}
 https://github.com/chenjiandongx/sniffer/archive/refs/tags/v0.6.1.tar.gz
 {% endblock %}
 
 {% block go_sha %}
-28ae63bbf927aa869a88ab7c0bd968ee6653e6ac913c19099fd58003b58bdb95
+9bb8d63301f4907618a41baf79ea244ee791ded5c2172fea39033cdb2f78d393
 {% endblock %}
 
 {% block bld_libs %}

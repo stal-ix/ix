@@ -5,7 +5,7 @@ https://github.com/zellij-org/zellij/archive/refs/tags/v0.39.2.tar.gz
 {% endblock %}
 
 {% block cargo_sha %}
-3bd7637d6256e3de68ce5018e8702702da0bed4a43a772dd0f6f36f7c0b6b84b
+1caa273c61d5dd09989e0419f7528ab0002159494414623844989b696cf2083f
 {% endblock %}
 
 {% block bld_libs %}

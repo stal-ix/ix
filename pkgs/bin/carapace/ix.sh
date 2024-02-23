@@ -1,11 +1,11 @@
-{% extends '//die/go/build.sh' %}
+{% extends '//die/go/build_v2.sh' %}
 
 {% block go_url %}
 https://github.com/rsteube/carapace-bin/archive/refs/tags/v0.29.1.tar.gz
 {% endblock %}
 
 {% block go_sha %}
-c4cd874e447b15e9aa3418ff44b35743237afd7ff0818a57fbfcd3fef06e7784
+d24bf8474e1e50d2d31c206564eb5d14bbbd45a471041fe5b359416809e7e17c
 {% endblock %}
 
 {% block unpack %}

@@ -5,7 +5,7 @@ https://github.com/YaLTeR/niri/archive/refs/tags/v0.1.2.tar.gz
 {% endblock %}
 
 {% block cargo_sha %}
-46d2700d0ae283cac1e647c43d38dc8b6eaac4ebb9604e0b8e2927c99b0b3dc6
+f4dbde12c6c6208d092d0049093086f69403c620628d92d324efe0bfd9a27f2c
 {% endblock %}
 
 {% block lib_deps %}

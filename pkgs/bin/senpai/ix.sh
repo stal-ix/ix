@@ -1,11 +1,11 @@
-{% extends '//die/go/build.sh' %}
+{% extends '//die/go/build_v2.sh' %}
 
 {% block go_url %}
 https://git.sr.ht/~delthas/senpai/archive/v0.3.0.tar.gz
 {% endblock %}
 
 {% block go_sha %}
-c47dcb7b728285afdd1d866985517c528c654a49cebc27d137246bc909470317
+4b33500025f18781e8aedd82d86941a52fcac7e3b977f61b656a8f79810ceedf
 {% endblock %}
 
 {% block go_refine %}

@@ -1,11 +1,11 @@
-{% extends '//die/go/build.sh' %}
+{% extends '//die/go/build_v2.sh' %}
 
 {% block go_url %}
 https://github.com/projectdiscovery/dnsx/archive/refs/tags/v1.1.6.tar.gz
 {% endblock %}
 
 {% block go_sha %}
-12556865ffcf6fb3964bd9dc5d860a67fef93c4323b480435adbd4a213b5cd5e
+0a193a5bb9b6d36d10569ca8da121701710b4b5c858e5086233e40f9d4b7d5ec
 {% endblock %}
 
 {% block unpack %}

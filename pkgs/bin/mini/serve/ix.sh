@@ -5,7 +5,7 @@ https://github.com/svenstaro/miniserve/archive/refs/tags/v0.26.0.tar.gz
 {% endblock %}
 
 {% block cargo_sha %}
-a062710e3c7c595b7221b8d43e6eb1583f4302a167acec105f1280b628dbc33e
+8c3536ffab0d1ba98421f79e726376b0d949ba98f5789cf76eb5a38140fd3669
 {% endblock %}
 
 {% block install %}

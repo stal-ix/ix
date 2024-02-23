@@ -1204,6 +1204,7 @@ https://github.com/libtom/libtomcrypt/releases/download/v1.18.2/crypt-1.18.2.tar
 https://github.com/libtom/libtommath/releases/download/v1.2.1/ltm-1.2.1.tar.xz
 https://github.com/libunwind/libunwind/archive/refs/tags/v1.7.2.tar.gz
 https://github.com/libunwind/libunwind/archive/refs/tags/v1.8.0.tar.gz
+https://github.com/libunwind/libunwind/archive/refs/tags/v1.8.1.tar.gz
 https://github.com/libusb/libusb/releases/download/v1.0.26/libusb-1.0.26.tar.bz2
 https://github.com/libusb/libusb/releases/download/v1.0.27/libusb-1.0.27.tar.bz2
 https://github.com/libuv/libuv/archive/refs/tags/v1.44.2.tar.gz
@@ -1741,6 +1742,7 @@ https://github.com/yquake2/yquake2/archive/refs/tags/QUAKE2_8_20.tar.gz
 https://github.com/yquake2/yquake2/archive/refs/tags/QUAKE2_8_30.tar.gz
 https://github.com/yrutschle/sslh/archive/refs/tags/v2.0.0.tar.gz
 https://github.com/yrutschle/sslh/archive/refs/tags/v2.0.1.tar.gz
+https://github.com/zed-industries/zed/archive/refs/tags/v0.123.2.tar.gz
 https://github.com/zellij-org/zellij/archive/refs/tags/v0.39.2.tar.gz
 https://github.com/zeux/volk/archive/refs/tags/vulkan-sdk-1.3.275.0.tar.gz
 https://github.com/zlib-ng/zlib-ng/archive/refs/tags/2.1.3.tar.gz

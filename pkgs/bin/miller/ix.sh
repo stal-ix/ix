@@ -1,11 +1,11 @@
-{% extends '//die/go/build.sh' %}
+{% extends '//die/go/build_v2.sh' %}
 
 {% block go_url %}
 https://github.com/johnkerl/miller/archive/refs/tags/v6.11.0.tar.gz
 {% endblock %}
 
 {% block go_sha %}
-c5a353497bdfc98bb399f44dd95a4bf2a9614ef207e909ba17086e79df2f16c5
+0d53b133a20a7307213c6079285cca0de40808b392395e5340bb31ab51100655
 {% endblock %}
 
 {% block unpack %}

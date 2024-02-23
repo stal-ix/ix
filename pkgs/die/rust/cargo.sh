@@ -14,13 +14,9 @@ bin/cargo/whatfeatures
 {{super()}}
 {% endblock %}
 
-{% block unpacker %}
-stable_unpack
-{% endblock %}
-
 {% block unpack %}
 mkdir src; cd src
-{{self.unpacker().strip()}} ${src}/*lz4
+stable_unpack_2 ${src}/*lz4
 rust_devendor vendored
 {% endblock %}
 
@@ -28,7 +24,7 @@ rust_devendor vendored
 {% endblock %}
 
 {% block cargo_ver %}
-v1
+v2
 {% endblock %}
 
 {% block bld_data %}

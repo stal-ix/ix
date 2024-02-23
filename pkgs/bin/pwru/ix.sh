@@ -1,11 +1,11 @@
-{% extends '//die/go/build.sh' %}
+{% extends '//die/go/build_v2.sh' %}
 
 {% block go_url %}
 https://github.com/cilium/pwru/archive/refs/tags/v1.0.5.tar.gz
 {% endblock %}
 
 {% block go_sha %}
-a7837209e1d114e5c51b377c722569b8b5eeed1027122f58d653a16dd3b5a9ee
+7344fee35e9db3eefadc6ad4281547a502d126a84f25f1287b296556e1ff6473
 {% endblock %}
 
 {% block bld_libs %}

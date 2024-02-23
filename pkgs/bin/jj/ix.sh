@@ -5,7 +5,7 @@ https://github.com/martinvonz/jj/archive/refs/tags/v0.13.0.tar.gz
 {% endblock %}
 
 {% block cargo_sha %}
-6732afc55fae50df135571f9ac5b4866b42735bc944e619ab11b085beb3e662c
+64d2420aeeb180b8343ac18fd4471a5926c5042cb480f61e63fc89e4dd0c99e0
 {% endblock %}
 
 {% block unpack %}

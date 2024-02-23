@@ -1,11 +1,11 @@
-{% extends '//die/go/build.sh' %}
+{% extends '//die/go/build_v2.sh' %}
 
 {% block go_url %}
 https://github.com/antonmedv/walk/archive/refs/tags/v1.7.0.tar.gz
 {% endblock %}
 
 {% block go_sha %}
-f355ec5b6658ee862885a279fe10dba5105af03403c4497e7241253d74f98b21
+d35f2922eb0cf2fc477ed88b1fba87641abb24313ca0c727b336602b10a2c104
 {% endblock %}
 
 {% block go_refine %}
