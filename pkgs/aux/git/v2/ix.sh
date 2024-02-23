@@ -1,10 +1,15 @@
-{% extends '//aux/fetch/ix.sh' %}
+{% extends '//aux/fetch/t/ix.sh' %}
 
-{% set fname %}git_{{parent_id}}.tar.lz4{% endset %}
+{% set fname %}git_v2_{{parent_id}}.tar.lz4{% endset %}
 
 {% block bld_tool %}
 bin/git/unwrap
 {{super()}}
+{% endblock %}
+
+{% block step_unpack %}
+mkdir src
+cd src
 {% endblock %}
 
 {% block build %}
