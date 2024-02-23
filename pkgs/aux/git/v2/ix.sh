@@ -1,6 +1,6 @@
 {% extends '//aux/fetch/t/ix.sh' %}
 
-{% set fname %}git_v2_{{parent_id}}.tar.lz4{% endset %}
+{% set fname %}git_v3_{{parent_id}}.tar.lz4{% endset %}
 
 {% block bld_tool %}
 bin/git/unwrap
@@ -24,6 +24,5 @@ done
 {% endblock %}
 
 {% block env %}
-{{super()}}
 export GIT_TGZ="${out}/share/{{fname}}"
 {% endblock %}
