@@ -1,11 +1,11 @@
-{% extends '//die/go/build.sh' %}
+{% extends '//die/go/build_v2.sh' %}
 
 {% block go_url %}
 https://github.com/yaegashi/muslstack/archive/d19cc5866abce3ca59dfc1666df7cc97097d0933.zip
 {% endblock %}
 
 {% block go_sha %}
-db461654ebf5ba9d2e8a10e34b3acc2b9b1abd5d951b8e0deefb6ce97ce82e38
+0d3778e50de950609bdef10a71ef4710fb973ed1004f18a1c83fed0f3b520cb5
 {% endblock %}
 
 {% block build %}
