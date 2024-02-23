@@ -14,17 +14,15 @@ v8.1.3
 {% endblock %}
 
 {% block git_sha %}
-4b8563270ff208c9d4550cdf3fe3edd081ed34b0bc676e0efffafe1be992cbc8
+1c344dd2b5ae50ed159380339a64f5d12c435eca4f287c2756f0e929d7882fc0
 {% endblock %}
 
-{% block git_refine %}
-rm roms/edk2/EmulatorPkg/Unix/Host/X11IncludeHack
-store_links .
+{% block git_version %}
+v2
 {% endblock %}
 
 {% block step_unpack %}
 {{super()}}
-restore_links .
 cd subprojects
 rm keycode*
 extract 0 ${src}/*bz2
