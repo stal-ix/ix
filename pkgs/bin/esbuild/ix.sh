@@ -1,4 +1,4 @@
-{% extends '//die/go/build_v2.sh' %}
+{% extends '//die/go/build.sh' %}
 
 {% block go_url %}
 https://github.com/evanw/esbuild/archive/refs/tags/v0.19.6.tar.gz

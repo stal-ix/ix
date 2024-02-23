@@ -1,4 +1,4 @@
-{% extends '//die/go/build_v2.sh' %}
+{% extends '//die/go/build.sh' %}
 
 {% block go_url %}
 https://github.com/bensadeh/circumflex/archive/refs/tags/3.5.tar.gz

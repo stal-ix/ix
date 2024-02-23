@@ -6,17 +6,13 @@ bld/stable/unpack
 {% endblock %}
 
 {% block go_version %}
-v1
-{% endblock %}
-
-{% block go_unpack %}
-stable_unpack
+v2
 {% endblock %}
 
 {% block unpack %}
 mkdir src
 cd src
-{{self.go_unpack().strip()}} ${src}/*lz4
+stable_unpack_2 ${src}/*lz4
 {% endblock %}
 
 {% block go_refine %}

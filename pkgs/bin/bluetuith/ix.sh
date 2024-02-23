@@ -1,4 +1,4 @@
-{% extends '//die/go/build_v2.sh' %}
+{% extends '//die/go/build.sh' %}
 
 {% block go_url %}
 https://github.com/darkhz/bluetuith/archive/refs/tags/v0.1.7.tar.gz

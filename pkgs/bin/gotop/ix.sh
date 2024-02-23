@@ -1,4 +1,4 @@
-{% extends '//die/go/build_v2.sh' %}
+{% extends '//die/go/build.sh' %}
 
 {% block go_url %}
 https://github.com/xxxserxxx/gotop/archive/refs/tags/v4.2.0.tar.gz
