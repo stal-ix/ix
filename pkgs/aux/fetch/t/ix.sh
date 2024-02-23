@@ -7,7 +7,7 @@ bld/stable/pack
 {% block use_network %}true{% endblock %}
 
 {% block predict_outputs %}
-[{"path": "share/{{fname}}", "sum": "{{sha}}"}]
+[{"path": "share/{{self.fname().strip()}}", "sum": "{{sha}}"}]
 {% endblock %}
 
 {% block step_build %}
@@ -17,12 +17,12 @@ set -xue
 {{refine | b64d}}
 {% endif %}
 cd ..
-stable_pack_2 {{sha}} ${tmp}/{{fname}} src
+stable_pack_2 {{sha}} ${tmp}/{{self.fname().strip()}} src
 {% endblock %}
 
 {% block install %}
 mkdir ${out}/share
-mv ${tmp}/{{fname}} ${out}/share/
+mv ${tmp}/{{self.fname().strip()}} ${out}/share/
 ls -la ${out}/share/
 sha256sum ${out}/share/*
 {% endblock %}
