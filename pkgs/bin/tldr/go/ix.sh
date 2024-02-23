@@ -1,11 +1,11 @@
-{% extends '//die/go/build.sh' %}
+{% extends '//die/go/build_v2.sh' %}
 
 {% block go_url %}
 https://github.com/isacikgoz/tldr/archive/refs/tags/v1.0.0-alpha.tar.gz
 {% endblock %}
 
 {% block go_sha %}
-cd6127670cf3287df44eb4fdf703af251281b709d29fcf3ade2fccb7268e3e4f
+eab51c58359fa62af1be9050f0d106e86718a2ab0a74ba379caacd79b679f0d0
 {% endblock %}
 
 {% block unpack %}
