@@ -1,11 +1,11 @@
-{% extends '//die/go/build.sh' %}
+{% extends '//die/go/build_v2.sh' %}
 
 {% block go_url %}
 https://github.com/rgburke/grv/archive/refs/tags/v0.3.2.tar.gz
 {% endblock %}
 
 {% block go_sha %}
-80f9fe9210862dd7359a2fdead7513864d021a5f3d4bc7d54ce6f24e34d03680
+48350e65c1ceabfc27fb9f1d89bf7dabd10cdb43fe6ce993d0277901fba1e8c7
 {% endblock %}
 
 {% block unpack %}
