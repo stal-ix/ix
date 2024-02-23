@@ -1,11 +1,11 @@
-{% extends '//die/go/build.sh' %}
+{% extends '//die/go/build_v2.sh' %}
 
 {% block go_url %}
 https://github.com/tulir/gomuks/archive/refs/tags/v0.3.0.tar.gz
 {% endblock %}
 
 {% block go_sha %}
-ae2f5127240591b4cce5be481bd857762dfb7e7e0bb77554e1a99340594c564b
+87569d4034f981c46e6aa3f2edf868925aee47c79daffe42ab2d3f44a47f59a0
 {% endblock %}
 
 {% block bld_libs %}
