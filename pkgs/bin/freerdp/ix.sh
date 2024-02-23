@@ -18,7 +18,7 @@ lib/cairo
 lib/ffmpeg
 lib/kernel
 lib/fuse/3
-lib/json/c
+lib/c/json
 lib/wayland
 lib/openssl
 lib/sdl/2/ttf
@@ -42,6 +42,8 @@ WITH_SAMPLE=ON
 WITH_SHADOW=OFF
 WITH_PKCS11=OFF
 WITH_WEBVIEW=OFF
+# SDL ok
+WITH_WAYLAND=OFF
 WITH_LIBSYSTEMD=OFF
 BUILTIN_CHANNELS=ON
 {% endblock %}

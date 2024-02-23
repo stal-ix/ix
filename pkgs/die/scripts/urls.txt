@@ -512,6 +512,7 @@ https://github.com/CorsixTH/CorsixTH/archive/refs/tags/v0.67.tar.gz
 https://github.com/Cyan4973/xxHash/archive/refs/tags/v0.8.2.tar.gz
 https://github.com/DanBloomberg/leptonica/archive/refs/tags/1.83.1.tar.gz
 https://github.com/DanBloomberg/leptonica/archive/refs/tags/1.84.1.tar.gz
+https://github.com/DaveGamble/cJSON/archive/refs/tags/v1.7.17.tar.gz
 https://github.com/DominicBreuker/pspy/archive/refs/tags/v1.2.1.tar.gz
 https://github.com/Esri/lerc/archive/refs/tags/v4.0.0.tar.gz
 https://github.com/Exiv2/exiv2/archive/refs/tags/v0.27.6.tar.gz
