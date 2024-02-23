@@ -1,51 +1,47 @@
 {% extends 'base.sh' %}
 
-{% set git_sha %}{% block git_sha %}{% endblock %}{% endset %}
+{% block git_sha %}
+{% endblock %}
 
-{% set git_repo %}
 {% block git_repo %}
 {% endblock %}
-{% endset %}
 
-{% set git_branch %}
 {% block git_branch %}
 {% endblock %}
-{% endset %}
 
-{% set git_commit %}
 {% block git_commit %}
 {% endblock %}
-{% endset %}
 
-{% set git_refine %}
 {% block git_refine %}
 {% endblock %}
-{% endset %}
 
-{% set git_refine_tools %}
-{% block git_refine_tools %}
+{% block git_version %}
+v1
 {% endblock %}
-{% endset %}
 
 {% block bld_deps %}
-{% if git_sha %}
+{% if self.git_sha().strip() %}
 bld/stable/unpack
 {% endif %}
 {{super()}}
 {% endblock %}
 
 {% block bld_data %}
-{% if git_sha %}
-aux/git(parent_id=src_{{git_sha.strip()}},sha={{git_sha.strip()}},branch={{git_branch.strip()}},repo={{git_repo.strip()}},commit={{git_commit.strip()}},refine={{git_refine.strip() | b64e}})
+{% if self.git_sha().strip() %}
+aux/git/{{self.git_version().strip()}}(parent_id=src_{{self.git_sha().strip()}},sha={{self.git_sha().strip()}},branch={{self.git_branch().strip()}},repo={{self.git_repo().strip()}},commit={{self.git_commit().strip()}},refine={{self.git_refine().strip() | b64e}})
 {% endif %}
 {{super()}}
 {% endblock %}
 
 {% block step_unpack %}
-{% if git_sha %}
+{% if self.git_sha().strip() %}
 mkdir src
 cd src
+{% if self.git_version().strip() == 'v1' %}
 stable_unpack ${GIT_TGZ}
+{% else %}
+stable_unpack_2 ${GIT_TGZ}
+{% endif %}
 {% else %}
 {{super()}}
 {% endif %}
