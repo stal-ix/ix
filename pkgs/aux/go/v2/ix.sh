@@ -23,7 +23,3 @@ find . -type f -name go.mod | while read l; do (
     go mod vendor
 ) done
 {% endblock %}
-
-{% block packer %}
-stable_pack_2
-{% endblock %}
