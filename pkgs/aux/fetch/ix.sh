@@ -15,3 +15,7 @@ mkdir src
 cd src
 extract 1 ../net/*
 {% endblock %}
+
+{% block env %}
+export src="${out}/share"
+{% endblock %}

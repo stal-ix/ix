@@ -26,7 +26,3 @@ mv ${tmp}/{{fname}} ${out}/share/
 ls -la ${out}/share/
 sha256sum ${out}/share/*
 {% endblock %}
-
-{% block env %}
-export src="${out}/share"
-{% endblock %}
