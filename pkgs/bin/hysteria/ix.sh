@@ -1,4 +1,4 @@
-{% extends '//die/go/build_v2.sh' %}
+{% extends '//die/go/build.sh' %}
 
 {% block go_url %}
 https://github.com/apernet/hysteria/archive/refs/tags/app/v2.2.3.tar.gz

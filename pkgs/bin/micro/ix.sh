@@ -1,4 +1,4 @@
-{% extends '//die/go/build_v2.sh' %}
+{% extends '//die/go/build.sh' %}
 
 {% block go_url %}
 https://github.com/zyedidia/micro/archive/refs/tags/v2.0.13.tar.gz

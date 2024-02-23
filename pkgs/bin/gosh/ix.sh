@@ -5,7 +5,7 @@ https://github.com/mvdan/sh/archive/refs/tags/v3.5.1.tar.gz
 {% endblock %}
 
 {% block go_sha %}
-409758272e8b4a34168f5bdf69e4d1f6d00b5ba1a972b7e021488dd6bce4c1f5
+cff12a84ad4349685d0ce1f2be8a6897a796128b6e80e5ac01b736fa903629cc
 {% endblock %}
 
 {% block unpack %}

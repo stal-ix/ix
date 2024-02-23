@@ -5,7 +5,7 @@ https://github.com/rs/curlie/archive/refs/tags/v1.6.9.tar.gz
 {% endblock %}
 
 {% block go_sha %}
-11e17bf6f1d0c637cd0defd66850ea10611b044e0c20b74c45deb14170c90a32
+d8a6f54c808b4b63c3fea37de7db35a72b6a3c0e089834eb6bc9e15f4f09e6c9
 {% endblock %}
 
 {% block patch %}

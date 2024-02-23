@@ -5,7 +5,7 @@ https://github.com/gcla/termshark/archive/refs/tags/v2.4.0.tar.gz
 {% endblock %}
 
 {% block go_sha %}
-c3c05d9c6ef7c48fbff0bf7c5170c2d5c7bfd6929f94693ed672694978972549
+976b38450c3c4c0070199e435448952d8a3d1131d67bae440edab9c3542646b1
 {% endblock %}
 
 {% block unpack %}

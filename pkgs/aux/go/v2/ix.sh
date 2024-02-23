@@ -1,6 +1,6 @@
 {% extends '//aux/fetch/ix.sh' %}
 
-{% set fname %}go_{{parent_id}}.tar.lz4{% endset %}
+{% set fname %}v2_go_{{parent_id}}.tar.lz4{% endset %}
 
 {% block bld_tool %}
 bin/go
@@ -22,8 +22,4 @@ find . -type f -name go.mod | while read l; do (
     go mod tidy
     go mod vendor
 ) done
-{% endblock %}
-
-{% block packer %}
-stable_pack_2
 {% endblock %}

@@ -512,6 +512,7 @@ https://github.com/CorsixTH/CorsixTH/archive/refs/tags/v0.67.tar.gz
 https://github.com/Cyan4973/xxHash/archive/refs/tags/v0.8.2.tar.gz
 https://github.com/DanBloomberg/leptonica/archive/refs/tags/1.83.1.tar.gz
 https://github.com/DanBloomberg/leptonica/archive/refs/tags/1.84.1.tar.gz
+https://github.com/DaveGamble/cJSON/archive/refs/tags/v1.7.17.tar.gz
 https://github.com/DominicBreuker/pspy/archive/refs/tags/v1.2.1.tar.gz
 https://github.com/Esri/lerc/archive/refs/tags/v4.0.0.tar.gz
 https://github.com/Exiv2/exiv2/archive/refs/tags/v0.27.6.tar.gz
@@ -526,6 +527,7 @@ https://github.com/FreeGLUTProject/freeglut/releases/download/v3.4.0/freeglut-3.
 https://github.com/FreeRDP/FreeRDP/archive/refs/tags/2.10.0.tar.gz
 https://github.com/FreeRDP/FreeRDP/archive/refs/tags/3.1.0.tar.gz
 https://github.com/FreeRDP/FreeRDP/archive/refs/tags/3.2.0.tar.gz
+https://github.com/FreeRDP/FreeRDP/archive/refs/tags/3.3.0.tar.gz
 https://github.com/GNOME/adwaita-icon-theme/archive/refs/tags/44.0.tar.gz
 https://github.com/GNOME/epiphany/archive/refs/tags/45.0.tar.gz
 https://github.com/GNOME/epiphany/archive/refs/tags/45.1.tar.gz
@@ -783,6 +785,7 @@ https://github.com/c-ares/c-ares/archive/refs/tags/cares-1_22_1.tar.gz
 https://github.com/c-ares/c-ares/archive/refs/tags/cares-1_24_0.tar.gz
 https://github.com/c-ares/c-ares/archive/refs/tags/cares-1_25_0.tar.gz
 https://github.com/c-ares/c-ares/archive/refs/tags/cares-1_26_0.tar.gz
+https://github.com/c-ares/c-ares/archive/refs/tags/cares-1_27_0.tar.gz
 https://github.com/c-util/c-dvar/archive/refs/tags/v1.1.0.tar.gz
 https://github.com/c-util/c-ini/archive/refs/tags/v1.1.0.tar.gz
 https://github.com/c-util/c-list/archive/refs/tags/v3.1.0.tar.gz
@@ -906,6 +909,7 @@ https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.7.0.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.7.1.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.8.2.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.8.3.tar.gz
+https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.8.4.tar.gz
 https://github.com/fastfloat/fast_float/archive/refs/tags/v3.8.1.tar.gz
 https://github.com/fastfloat/fast_float/archive/refs/tags/v5.2.0.tar.gz
 https://github.com/fenrus75/powertop/archive/refs/tags/v2.15.tar.gz
@@ -1851,6 +1855,7 @@ https://gitlab.gnome.org/GNOME/libsecret/-/archive/0.20.4/libsecret-0.20.4.tar.b
 https://gitlab.gnome.org/GNOME/libsecret/-/archive/0.21.1/libsecret-0.21.1.tar.bz2
 https://gitlab.gnome.org/GNOME/libsecret/-/archive/0.21.2/libsecret-0.21.2.tar.bz2
 https://gitlab.gnome.org/GNOME/libsecret/-/archive/0.21.3/libsecret-0.21.3.tar.bz2
+https://gitlab.gnome.org/GNOME/libsecret/-/archive/0.21.4/libsecret-0.21.4.tar.bz2
 https://gitlab.gnome.org/GNOME/libsoup/-/archive/3.4.2/libsoup-3.4.2.tar.bz2
 https://gitlab.gnome.org/GNOME/libsoup/-/archive/3.4.3/libsoup-3.4.3.tar.bz2
 https://gitlab.gnome.org/GNOME/libsoup/-/archive/3.4.4/libsoup-3.4.4.tar.bz2

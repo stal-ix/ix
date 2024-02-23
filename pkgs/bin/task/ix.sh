@@ -1,4 +1,4 @@
-{% extends '//die/go/build_v2.sh' %}
+{% extends '//die/go/build.sh' %}
 
 {% block go_url %}
 https://github.com/go-task/task/archive/refs/tags/v3.14.0.tar.gz
