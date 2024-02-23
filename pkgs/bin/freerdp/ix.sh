@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/FreeRDP/FreeRDP/archive/refs/tags/3.2.0.tar.gz
-sha:03251e25cc3c8dc688bd9276ce7dc6590058122b192e6c3a15574cb93fc83591
+https://github.com/FreeRDP/FreeRDP/archive/refs/tags/3.3.0.tar.gz
+sha:1667af42f8e84bd6e1478fe368c683f7bba6c736655483b0e778b25706bac9b3
 {% endblock %}
 
 {% block bld_libs %}
@@ -26,10 +26,6 @@ lib/uriparser
 lib/xkb/common
 {% endblock %}
 
-{% block bld_tool %}
-bld/wayland
-{% endblock %}
-
 {% block build_flags %}
 shut_up
 wrap_cc
@@ -45,7 +41,6 @@ WITH_CAIRO=ON
 WITH_SAMPLE=ON
 WITH_SHADOW=OFF
 WITH_PKCS11=OFF
-WITH_WAYLAND=ON
 WITH_WEBVIEW=OFF
 WITH_LIBSYSTEMD=OFF
 BUILTIN_CHANNELS=ON
