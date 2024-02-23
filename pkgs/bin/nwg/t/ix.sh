@@ -1,4 +1,4 @@
-{% extends '//die/go/build.sh' %}
+{% extends '//die/go/build_v2.sh' %}
 
 {% block bld_libs %}
 lib/c

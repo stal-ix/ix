@@ -1,6 +1,6 @@
 {% extends '//aux/fetch/ix.sh' %}
 
-{% set fname %}go_{{parent_id}}.tar.lz4{% endset %}
+{% set fname %}v2_go_{{parent_id}}.tar.lz4{% endset %}
 
 {% block bld_tool %}
 bin/go
