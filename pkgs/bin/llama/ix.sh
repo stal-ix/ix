@@ -1,11 +1,11 @@
-{% extends '//die/go/build.sh' %}
+{% extends '//die/go/build_v2.sh' %}
 
 {% block go_url %}
 https://github.com/antonmedv/llama/archive/refs/tags/v1.4.0.tar.gz
 {% endblock %}
 
 {% block go_sha %}
-ec37aa877e44b188e96af60d776f7fe11c7398d37b38972e96ac1823fe2c7774
+96d86dba895a9bf5077aabbb8a13913fba0f1854efd443861930b3de64a22a6f
 {% endblock %}
 
 {% block install %}
