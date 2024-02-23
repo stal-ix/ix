@@ -1,4 +1,4 @@
-{% extends '//die/go/build.sh' %}
+{% extends '//die/go/build_v2.sh' %}
 
 {# TODO(pg): get rid of /usr/bin/getent reference #}
 
@@ -7,7 +7,7 @@ https://github.com/tvrzna/emptty/archive/refs/tags/v0.11.0.tar.gz
 {% endblock %}
 
 {% block go_sha %}
-a8c9ad22240146687af3d67c2bcccecec76bf3d283d3bb500318cd919a242b11
+f9ddee1069a0120e3180cb1f9e6cb08c048a08f29e0be972510008fc7353eeaf
 {% endblock %}
 
 {% block go_tags %}
