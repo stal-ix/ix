@@ -10,6 +10,7 @@ lib/c
 lib/z
 lib/icu
 lib/usb
+lib/png
 lib/faac
 lib/alsa
 lib/sdl/2
@@ -19,11 +20,9 @@ lib/ffmpeg
 lib/kernel
 lib/fuse/3
 lib/c/json
-lib/wayland
 lib/openssl
 lib/sdl/2/ttf
 lib/uriparser
-lib/xkb/common
 {% endblock %}
 
 {% block build_flags %}
