@@ -1,5 +1,7 @@
 {% extends '//die/hub.sh' %}
 
+{# Intel anv + zink opengl #}
+
 {% block lib_deps %}
 lib/vulkan/loader/dl
 lib/mesa/drivers/valve(vulkan=intel,opengl=zink)

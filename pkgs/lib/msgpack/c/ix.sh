@@ -13,9 +13,3 @@ lib/c
 MSGPACK_BUILD_TESTS=OFF
 MSGPACK_BUILD_EXAMPLES=OFF
 {% endblock %}
-
-{% block install %}
-{{super()}}
-# for neovim
-cp ${out}/lib/libmsgpack-c.a ${out}/lib/libmsgpackc.a
-{% endblock %}

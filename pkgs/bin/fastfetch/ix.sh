@@ -8,13 +8,12 @@ sha:8d72869c91f3c4f6e7cd9bb91431147108bffbdc8c351aa616eb4a6c900386de
 {% block bld_libs %}
 lib/c
 lib/z
+lib/drm
 lib/glib
 lib/dbus
 lib/chafa
-#lib/opengl
 lib/sqlite/3
 lib/wayland/dl
-#lib/drivers/3d
 lib/pci/utils/dl
 lib/image/magick
 lib/vulkan/headers
