@@ -126,6 +126,7 @@ https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.5.9.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.6.1.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.6.10.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.6.14.tar.xz
+https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.6.18.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.6.2.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.6.3.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.6.4.tar.xz
@@ -140,6 +141,7 @@ https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.7.2.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.7.3.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.7.4.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.7.5.tar.xz
+https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.7.6.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.7.tar.xz
 https://cmocka.org/files/1.1/cmocka-1.1.7.tar.xz
 https://codeberg.org/dnkl/fcft/archive/2.5.0.tar.gz
@@ -373,6 +375,7 @@ https://ftp.gnu.org/gnu/libidn/libidn2-2.3.4.tar.gz
 https://ftp.gnu.org/gnu/libidn/libidn2-2.3.7.tar.gz
 https://ftp.gnu.org/gnu/libmicrohttpd/libmicrohttpd-0.9.76.tar.gz
 https://ftp.gnu.org/gnu/libmicrohttpd/libmicrohttpd-1.0.0.tar.gz
+https://ftp.gnu.org/gnu/libmicrohttpd/libmicrohttpd-1.0.1.tar.gz
 https://ftp.gnu.org/gnu/libsigsegv/libsigsegv-2.13.tar.gz
 https://ftp.gnu.org/gnu/libtasn1/libtasn1-4.19.0.tar.gz
 https://ftp.gnu.org/gnu/libunistring/libunistring-1.1.tar.xz
@@ -656,6 +659,7 @@ https://github.com/NixOS/nix/archive/refs/tags/2.19.2.tar.gz
 https://github.com/NixOS/nix/archive/refs/tags/2.19.3.tar.gz
 https://github.com/NixOS/nix/archive/refs/tags/2.20.1.tar.gz
 https://github.com/NixOS/nix/archive/refs/tags/2.20.2.tar.gz
+https://github.com/NixOS/nix/archive/refs/tags/2.20.3.tar.gz
 https://github.com/NixOS/patchelf/archive/refs/tags/0.18.0.tar.gz
 https://github.com/Novum/vkQuake/archive/refs/tags/1.30.1.tar.gz
 https://github.com/Old-Man-Programmer/tree/archive/refs/tags/2.1.1.tar.gz
@@ -910,6 +914,7 @@ https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.7.1.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.8.2.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.8.3.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.8.4.tar.gz
+https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.8.5.tar.gz
 https://github.com/fastfloat/fast_float/archive/refs/tags/v3.8.1.tar.gz
 https://github.com/fastfloat/fast_float/archive/refs/tags/v5.2.0.tar.gz
 https://github.com/fenrus75/powertop/archive/refs/tags/v2.15.tar.gz
@@ -956,13 +961,16 @@ https://github.com/git/git/archive/refs/tags/v2.42.1.tar.gz
 https://github.com/git/git/archive/refs/tags/v2.43.0.tar.gz
 https://github.com/git/git/archive/refs/tags/v2.43.1.tar.gz
 https://github.com/git/git/archive/refs/tags/v2.43.2.tar.gz
+https://github.com/git/git/archive/refs/tags/v2.44.0.tar.gz
 https://github.com/glencoesoftware/jxrlib/archive/refs/tags/v0.2.4.tar.gz
 https://github.com/glennrp/libpng/archive/refs/tags/v1.6.40.tar.gz
 https://github.com/glennrp/libpng/archive/refs/tags/v1.6.41.tar.gz
 https://github.com/glennrp/libpng/archive/refs/tags/v1.6.42.tar.gz
+https://github.com/glennrp/libpng/archive/refs/tags/v1.6.43.tar.gz
 https://github.com/glfw/glfw/archive/refs/tags/3.3.10.tar.gz
 https://github.com/glfw/glfw/archive/refs/tags/3.3.8.tar.gz
 https://github.com/glfw/glfw/archive/refs/tags/3.3.9.tar.gz
+https://github.com/glfw/glfw/archive/refs/tags/3.4.tar.gz
 https://github.com/glmark2/glmark2/archive/refs/tags/2023.01.tar.gz
 https://github.com/gnustep/libobjc2/archive/refs/tags/v2.2.tar.gz
 https://github.com/go-git/go-git/archive/refs/tags/v5.4.2.tar.gz
@@ -1890,6 +1898,7 @@ https://gitlab.xiph.org/xiph/vorbis/-/archive/v1.3.7/vorbis-v1.3.7.tar.bz2
 https://gnupg.org/ftp/gcrypt/libgcrypt/libgcrypt-1.10.2.tar.bz2
 https://gnupg.org/ftp/gcrypt/libgcrypt/libgcrypt-1.10.3.tar.bz2
 https://gnupg.org/ftp/gcrypt/libgpg-error/libgpg-error-1.47.tar.bz2
+https://gnupg.org/ftp/gcrypt/libgpg-error/libgpg-error-1.48.tar.bz2
 https://golang.org/dl/go1.4-bootstrap-20170531.tar.gz
 https://hewlettpackard.github.io/wireless-tools/wireless_tools.29.tar.gz
 https://hg.sr.ht/~scoopta/wofi/archive/v1.2.4.tar.gz
@@ -2107,6 +2116,7 @@ https://www.gnupg.org/ftp/gcrypt/gpgme/gpgme-1.23.1.tar.bz2
 https://www.gnupg.org/ftp/gcrypt/libassuan/libassuan-2.5.5.tar.bz2
 https://www.gnupg.org/ftp/gcrypt/libksba/libksba-1.6.3.tar.bz2
 https://www.gnupg.org/ftp/gcrypt/libksba/libksba-1.6.5.tar.bz2
+https://www.gnupg.org/ftp/gcrypt/libksba/libksba-1.6.6.tar.bz2
 https://www.gnupg.org/ftp/gcrypt/npth/npth-1.6.tar.bz2
 https://www.greenwoodsoftware.com/less/less-633.tar.gz
 https://www.ibiblio.org/pub/Linux/libs/graphics/t1lib-5.1.2.tar.gz
