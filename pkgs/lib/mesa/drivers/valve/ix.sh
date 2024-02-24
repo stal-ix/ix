@@ -31,7 +31,7 @@ vkGetBufferDeviceAddress
 {% block meson_flags %}
 {{super()}}
 vulkan-drivers={{vulkan}}
-gallium-drivers={{','.join((opengl or '').split('|'))}}
+gallium-drivers={{opengl}}
 {% endblock %}
 
 {% block setup_tools %}

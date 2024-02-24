@@ -68,7 +68,7 @@ class Loader(jinja2.BaseLoader):
 
 class Env(jinja2.Environment):
     def __init__(self, fs):
-        jinja2.Environment.__init__(self, loader=fs, auto_reload=False, cache_size=-1, trim_blocks=True, lstrip_blocks=True, optimized=False)
+        jinja2.Environment.__init__(self, loader=fs, auto_reload=False, cache_size=-1, trim_blocks=True, lstrip_blocks=True, optimized=True)
         self.filters['b64e'] = b64e
         self.filters['b64d'] = b64d
         self.filters['basename'] = os.path.basename
