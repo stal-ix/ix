@@ -12,19 +12,21 @@ B = '/bin/bin_ix'
 
 
 def run_cmd(cmd, input='', user='ix'):
-    if user == 'root':
+    if getpass.getuser() == user:
         suffix = [cmd[0]]
+        prefix = []
+    elif user == 'root':
+        suffix = [cmd[0]]
+        prefix = ['/bin/sudo']
     else:
         suffix = ['/bin/su', '-s', cmd[0], user]
+        prefix = ['/bin/sudo']
 
-    cmd = [
+    cmd = prefix + [
         '/bin/flock', '-x', '/ix',
         '/bin/chrt', '-i', '0',
         '/bin/nice', '-n', '20',
     ] + suffix + cmd[1:]
-
-    if os.getuid():
-        cmd = ['/bin/sudo'] + cmd
 
     try:
         subprocess.run(cmd, shell=False, input=input.encode(), check=True)
