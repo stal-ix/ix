@@ -1,15 +1,10 @@
 import os
 import json
-import getpass
 
 
 def construct_impl(cfg, kind):
     if not kind:
         kind = os.environ.get('IX_EXEC_KIND', None)
-
-    if not kind:
-        if getpass.getuser() == 'ix':
-            kind = 'local'
 
     if not kind:
         if os.path.isfile('/bin/bin_ix/assemble'):
