@@ -1,13 +1,8 @@
 import os
 import json
-import getpass
 
 
 def construct_impl(cfg, kind):
-    if not kind:
-        if getpass.getuser() == 'ix':
-            kind = 'local'
-
     if not kind:
         kind = os.environ.get('IX_EXEC_KIND', None)
 

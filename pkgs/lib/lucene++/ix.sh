@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/luceneplusplus/LucenePlusPlus/archive/refs/tags/rel_3.0.8.tar.gz
-sha:af5cf59a93cf6dce86828e108e010359517c25ce487152af68520785d183813c
+https://github.com/luceneplusplus/LucenePlusPlus/archive/refs/tags/rel_3.0.9.tar.gz
+sha:4e69e29d5d79a976498ef71eab70c9c88c7014708be4450a9fda7780fe93584e
 {% endblock %}
 
 {% block lib_deps %}
@@ -33,9 +33,6 @@ string.h
 
 {% block install %}
 {{super()}}
-cd ${out}
-mv include/pkgconfig lib/
-mv include/cmake lib/
-sed -e 's|.*exec_prefix.*||' -i lib/pkgconfig/liblucene++.pc
-sed -e 's|.*exec_prefix.*||' -i lib/pkgconfig/liblucene++-contrib.pc
+sed -e 's|.*exec_prefix.*||' -i ${out}/lib/pkgconfig/liblucene++.pc
+sed -e 's|.*exec_prefix.*||' -i ${out}/lib/pkgconfig/liblucene++-contrib.pc
 {% endblock %}
