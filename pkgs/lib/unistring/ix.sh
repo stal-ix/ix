@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://ftp.gnu.org/gnu/libunistring/libunistring-1.1.tar.xz
-sha:827c1eb9cb6e7c738b171745dac0888aa58c5924df2e59239318383de0729b98
+https://ftp.gnu.org/gnu/libunistring/libunistring-1.2.tar.xz
+sha:632bd65ed74a881ca8a0309a1001c428bd1cbd5cd7ddbf8cedcd2e65f4dcdc44
 {% endblock %}
 
 {% block lib_deps %}
@@ -18,6 +18,6 @@ sh autogen.sh --skip-gnulib
 locale_charset
 {% endblock %}
 
-{% block env_lib %}
+{% block env %}
 export COFLAGS="--with-libunistring-prefix=${out} \${COFLAGS}"
 {% endblock %}
