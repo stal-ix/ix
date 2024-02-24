@@ -9,6 +9,7 @@ sha:fc6734320d88b9e2537296aa0364a3c3b955fecc8d64dda26f1f3ede7c8d6c31
 lib/c
 lib/z
 lib/uv
+lib/xz
 lib/lz4
 lib/zip
 lib/magic
