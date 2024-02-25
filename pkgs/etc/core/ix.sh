@@ -8,6 +8,8 @@ mkdir fix; cd fix
 cat << EOF > passwd.sh
 cat etc/passwd.d/* > etc/passwd
 rm -r etc/passwd.d
+cat etc/hosts.d/* > etc/hosts
+rm -r etc/hosts.d
 EOF
 
 cat << EOF > mtab.sh
@@ -39,7 +41,9 @@ EOF
 
 echo {{hostname or 'stalix'}} > hostname
 
-cat << EOF > hosts
+mkdir hosts.d
+
+cat << EOF > hosts.d/00-localhost
 127.0.0.1  localhost $(cat hostname)
 ::1        localhost
 EOF
