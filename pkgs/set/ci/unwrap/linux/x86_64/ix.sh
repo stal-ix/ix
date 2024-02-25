@@ -120,12 +120,10 @@ bin/xfsprogs/6/1
 bin/xfsprogs/6/latest
 bin/qtile
 bin/dconf
-bin/ix/ci
 bin/fastfetch
 bin/gnome/terminal
 bin/speedtest/cli
 bin/wmenu
-bin/ix/mirror
 bin/python/12
 bin/ryzen/adj
 bin/sway(mesa_driver=iris)
