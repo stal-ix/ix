@@ -1,4 +1,4 @@
-{% extends '//lib/pci/utils/ix.sh' %}
+{% extends '//lib/pci/utils/t/ix.sh' %}
 
 {% block bld_libs %}
 lib/z
@@ -9,8 +9,4 @@ lib/kmod
 {% block bld_tool %}
 bld/pkg/config
 {{super()}}
-{% endblock %}
-
-{% block make_install_target %}
-install
 {% endblock %}
