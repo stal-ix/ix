@@ -22,16 +22,9 @@ cd ..
 
 mkdir etc; cd etc
 
-mkdir passwd.d
-
-cat << EOF > passwd.d/root
-root:x:0:0:root:/home/root:/bin/sh
-EOF
-
 mkdir group.d
 
 cat << EOF > group.d/00-default
-root:x:0:
 none:x:1:
 audio:x:1:
 EOF
