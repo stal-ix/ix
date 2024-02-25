@@ -686,6 +686,7 @@ https://github.com/RazrFalcon/resvg/archive/refs/tags/v0.40.0.tar.gz
 https://github.com/Samsung/rlottie/archive/refs/tags/v0.2.tar.gz
 https://github.com/SpartanJ/efsw/archive/refs/tags/1.3.1.tar.gz
 https://github.com/Syllo/nvtop/archive/refs/tags/3.0.2.tar.gz
+https://github.com/Syllo/nvtop/archive/refs/tags/3.1.0.tar.gz
 https://github.com/TartanLlama/expected/archive/refs/tags/v1.1.0.tar.gz
 https://github.com/Terraspace/UASM/archive/refs/tags/v2.56.2.tar.gz
 https://github.com/Tessil/robin-map/archive/refs/tags/v1.2.1.tar.gz
@@ -711,6 +712,7 @@ https://github.com/Z3Prover/z3/archive/refs/tags/z3-4.12.2.tar.gz
 https://github.com/Z3Prover/z3/archive/refs/tags/z3-4.12.3.tar.gz
 https://github.com/Z3Prover/z3/archive/refs/tags/z3-4.12.4.tar.gz
 https://github.com/Z3Prover/z3/archive/refs/tags/z3-4.12.5.tar.gz
+https://github.com/Z3Prover/z3/archive/refs/tags/z3-4.12.6.tar.gz
 https://github.com/a-j-wood/pv/releases/download/v1.7.24/pv-1.7.24.tar.gz
 https://github.com/abseil/abseil-cpp/archive/refs/tags/20230125.3.tar.gz
 https://github.com/abseil/abseil-cpp/archive/refs/tags/20230802.1.tar.gz
@@ -1444,6 +1446,7 @@ https://github.com/qpdf/qpdf/archive/refs/tags/v11.6.3.tar.gz
 https://github.com/qpdf/qpdf/archive/refs/tags/v11.6.4.tar.gz
 https://github.com/qpdf/qpdf/archive/refs/tags/v11.7.0.tar.gz
 https://github.com/qpdf/qpdf/archive/refs/tags/v11.8.0.tar.gz
+https://github.com/qpdf/qpdf/archive/refs/tags/v11.9.0.tar.gz
 https://github.com/qt/qt5compat/archive/refs/tags/v6.5.2.tar.gz
 https://github.com/qt/qt5compat/archive/refs/tags/v6.5.3.tar.gz
 https://github.com/qt/qt5compat/archive/refs/tags/v6.6.0.tar.gz
