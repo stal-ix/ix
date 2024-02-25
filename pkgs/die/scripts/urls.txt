@@ -61,6 +61,7 @@ http://pngquant.org/pngquant-2.9.1-src.tar.gz
 http://potrace.sourceforge.net/download/1.16/potrace-1.16.tar.gz
 http://prdownloads.sourceforge.net/swig/swig-4.1.1.tar.gz
 http://prdownloads.sourceforge.net/swig/swig-4.2.0.tar.gz
+http://prdownloads.sourceforge.net/swig/swig-4.2.1.tar.gz
 http://smarden.org/runit/runit-2.1.2.tar.gz
 http://sourceware.org/elfutils/ftp/0.189/elfutils-0.189.tar.bz2
 http://sourceware.org/elfutils/ftp/0.190/elfutils-0.190.tar.bz2
@@ -1505,6 +1506,7 @@ https://github.com/relan/exfat/releases/download/v1.4.0/exfat-utils-1.4.0.tar.gz
 https://github.com/rfc1036/whois/archive/refs/tags/v5.5.18.tar.gz
 https://github.com/rfc1036/whois/archive/refs/tags/v5.5.19.tar.gz
 https://github.com/rfc1036/whois/archive/refs/tags/v5.5.20.tar.gz
+https://github.com/rfc1036/whois/archive/refs/tags/v5.5.21.tar.gz
 https://github.com/rfjakob/earlyoom/archive/refs/tags/v1.7.tar.gz
 https://github.com/rgburke/grv/archive/refs/tags/v0.3.2.tar.gz
 https://github.com/rhash/RHash/archive/refs/tags/v1.4.4.tar.gz
