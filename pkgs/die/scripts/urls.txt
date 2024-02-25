@@ -1444,6 +1444,7 @@ https://github.com/qpdf/qpdf/archive/refs/tags/v11.6.3.tar.gz
 https://github.com/qpdf/qpdf/archive/refs/tags/v11.6.4.tar.gz
 https://github.com/qpdf/qpdf/archive/refs/tags/v11.7.0.tar.gz
 https://github.com/qpdf/qpdf/archive/refs/tags/v11.8.0.tar.gz
+https://github.com/qpdf/qpdf/archive/refs/tags/v11.9.0.tar.gz
 https://github.com/qt/qt5compat/archive/refs/tags/v6.5.2.tar.gz
 https://github.com/qt/qt5compat/archive/refs/tags/v6.5.3.tar.gz
 https://github.com/qt/qt5compat/archive/refs/tags/v6.6.0.tar.gz
