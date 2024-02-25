@@ -10,6 +10,8 @@ cat etc/passwd.d/* > etc/passwd
 rm -r etc/passwd.d
 cat etc/hosts.d/* > etc/hosts
 rm -r etc/hosts.d
+cat etc/group.d/* > etc/group
+rm -r etc/group.d
 EOF
 
 cat << EOF > mtab.sh
@@ -20,14 +22,9 @@ cd ..
 
 mkdir etc; cd etc
 
-mkdir passwd.d
+mkdir group.d
 
-cat << EOF > passwd.d/root
-root:x:0:0:root:/home/root:/bin/sh
-EOF
-
-cat << EOF > group
-root:x:0:
+cat << EOF > group.d/00-default
 none:x:1:
 audio:x:1:
 EOF
