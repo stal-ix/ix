@@ -38,6 +38,7 @@
 {% block run_deps %}
 #bin/zellij
 #bin/gendesk
+bin/avahi
 bin/mdadm
 bin/i3/status/rust
 bin/shadowsocks/rust
