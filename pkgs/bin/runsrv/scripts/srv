@@ -8,12 +8,12 @@ cd ${1}
 shift
 
 PP=$$
-P=/sys/fs/cgroup/${PP}
+P=/sys/fs/cgroup/srv/${PP}
 
 (
 set -xue
 
-mkdir ${P}
+mkdir -p ${P}
 
 echo ${PP} > ${P}/cgroup.procs
 
