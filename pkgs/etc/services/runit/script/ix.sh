@@ -12,6 +12,8 @@ EOF
 cat << EOF > run
 #!/bin/sh
 {% if srv_user %}
+mkdir -p /var/run/{{sd}}
+chown {{srv_user}} /var/run/{{sd}}
 exec srv {{sd}} /bin/su -s /bin/sh {{srv_user}} ${PWD}/cmd
 {% else %}
 exec srv {{sd}} /bin/sh ${PWD}/cmd
