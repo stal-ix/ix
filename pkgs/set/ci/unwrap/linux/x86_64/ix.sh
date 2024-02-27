@@ -37,6 +37,7 @@
 
 {% block run_deps %}
 #bin/gendesk
+bin/ptyxis
 bin/avahi
 bin/mdadm
 bin/clx
@@ -73,7 +74,6 @@ bin/dialog
 bin/niri
 bin/bcachefs/tools
 bin/cargo/whatfeatures
-bin/resvg
 bin/alacritty
 bin/bat
 bin/wl/maker

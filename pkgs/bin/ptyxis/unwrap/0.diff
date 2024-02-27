@@ -1,0 +1,29 @@
+--- a	2024-02-27 19:03:36.267839887 +0000
++++ b	2024-02-27 19:03:36.269839887 +0000
+@@ -324,18 +324,24 @@
+ ptyxis_agent_impl_handle_get_preferred_shell (PtyxisIpcAgent        *agent,
+                                               GDBusMethodInvocation *invocation)
+ {
+-  const char *default_shell = "/bin/sh";
++  const char *default_shell = NULL;
+   struct passwd *pw;
+ 
+   g_assert (PTYXIS_IS_AGENT_IMPL (agent));
+   g_assert (G_IS_DBUS_METHOD_INVOCATION (invocation));
+ 
+-  if ((pw = getpwuid (getuid ())))
++  default_shell = getenv("SHELL");
++
++  if (!default_shell && (pw = getpwuid (getuid ())))
+     {
+       if (access (pw->pw_shell, X_OK) == 0)
+         default_shell = pw->pw_shell;
+     }
+ 
++  if (!default_shell) {
++    default_shell = "/bin/sh";
++  }
++
+   ptyxis_ipc_agent_complete_get_preferred_shell (agent,
+                                                  g_steal_pointer (&invocation),
+                                                  default_shell);
