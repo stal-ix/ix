@@ -1,11 +1,13 @@
 #!/bin/sh
 
-cd /var/run
-
-mkdir -p ${1}/std
-cd ${1}
+SRV_DIR=/var/run/${1}
+STD_DIR=${SRV_DIR}/std
 
 shift
+
+mkdir -p ${STD_DIR}
+
+cd ${STD_DIR}
 
 PP=$$
 P=/sys/fs/cgroup/srv/${PP}
@@ -23,7 +25,7 @@ cleanup() (
 
 trap cleanup TERM INT EXIT
 
-flock lock /bin/logged std ${@} &
+flock lock logged ./ setcwd ${SRV_DIR} ${@} &
 
 wait
-) 1>>std/err 2>&1
+) 1>>err 2>&1

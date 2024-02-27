@@ -36,18 +36,12 @@
 #}
 
 {% block run_deps %}
-#bin/zellij
 #bin/gendesk
+bin/avahi
 bin/mdadm
-bin/i3/status/rust
-bin/shadowsocks/rust
-bin/delta
-bin/cproxy
 bin/clx
-bin/bore
 bin/corsixth
 bin/dns/x
-bin/binocle
 bin/miller
 bin/u/root
 bin/pspy
@@ -65,7 +59,6 @@ bin/copyq
 bin/keepass/xc
 bin/code/lite
 bin/psensor
-bin/rio
 bin/mplayer
 bin/wx/maxima
 bin/maxima
@@ -77,11 +70,6 @@ bin/tvedit
 bin/app/image/tool
 bin/cage/break
 bin/dialog
-bin/jj
-bin/eza
-bin/git/ui
-bin/coreutils/uutils
-bin/mini/serve
 bin/niri
 bin/bcachefs/tools
 bin/cargo/whatfeatures

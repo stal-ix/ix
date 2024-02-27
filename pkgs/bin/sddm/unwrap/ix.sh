@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/sddm/sddm/archive/refs/tags/v0.20.0.tar.gz
-sha:467c8bd91e0d4f76d4bc4e57ab334f1f48a33478482ba9476d93b0b3d7ace9fb
+https://github.com/sddm/sddm/archive/refs/tags/v0.21.0.tar.gz
+sha:f895de2683627e969e4849dbfbbb2b500787481ca5ba0de6d6dfdae5f1549abf
 {% endblock %}
 
 {% block bld_libs %}
@@ -14,9 +14,9 @@ lib/k/ecm
 lib/wayland
 lib/pam/unix
 lib/shim/x11
-lib/xkb/common
 lib/qt/6/base
 lib/qt/6/deps
+lib/xkb/common
 lib/qt/6/declarative/deps
 {% endblock %}
 
