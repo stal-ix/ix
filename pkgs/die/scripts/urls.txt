@@ -248,6 +248,7 @@ https://downloads.sourceforge.net/project/gnuplot/gnuplot/5.4.10/gnuplot-5.4.10.
 https://downloads.sourceforge.net/project/gnuplot/gnuplot/5.4.9/gnuplot-5.4.9.tar.gz
 https://downloads.sourceforge.net/project/gnuplot/gnuplot/6.0.0/gnuplot-6.0.0.tar.gz
 https://downloads.sourceforge.net/project/gparted/gparted/gparted-1.5.0/gparted-1.5.0.tar.gz
+https://downloads.sourceforge.net/project/gparted/gparted/gparted-1.6.0/gparted-1.6.0.tar.gz
 https://downloads.sourceforge.net/project/gtkspell/3.0.10/gtkspell3-3.0.10.tar.xz
 https://downloads.sourceforge.net/project/infozip/UnZip%206.x%20%28latest%29/UnZip%206.0/unzip60.tar.gz
 https://downloads.sourceforge.net/project/lame/lame/3.100/lame-3.100.tar.gz
