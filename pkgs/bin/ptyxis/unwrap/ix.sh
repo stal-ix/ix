@@ -12,6 +12,7 @@ lib/gtk
 lib/glib
 lib/portal
 lib/adwaita
+lib/gtk/deps
 lib/shim/wait
 lib/json/glib
 {% endblock %}
