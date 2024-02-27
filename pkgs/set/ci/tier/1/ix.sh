@@ -3,6 +3,7 @@
 {# broken
 bin/neo/vide
 bin/zellij
+bin/xplr
 #}
 
 {% block run_deps %}
@@ -18,7 +19,6 @@ bin/eza
 bin/git/ui
 bin/coreutils/uutils
 bin/mini/serve
-bin/xplr
 bin/tail/spin
 bin/wez/term
 bin/rio
