@@ -12,7 +12,7 @@ lib/kernel
 
 {% block patch %}
 {{super()}}
-sed -e 's|install-exec-hook:|install-exec-hook-xxx:|' -i src/Makefile.am
+#sed -e 's|install-exec-hook:|install-exec-hook-xxx:|' -i src/Makefile.am
 >src/reallocarray.c
 cat << EOF >> include/bsd/sys/cdefs.h
 #pragma once
