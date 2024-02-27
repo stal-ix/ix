@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/fastfloat/fast_float/archive/refs/tags/v5.2.0.tar.gz
-sha:72bbfd1914e414c920e39abdc81378adf910a622b62c45b4c61d344039425d18
+https://github.com/fastfloat/fast_float/archive/refs/tags/v6.1.0.tar.gz
+sha:a9c8ca8ca7d68c2dbb134434044f9c66cfd4c383d5e85c36b704d30f6be82506
 {% endblock %}
 
 {% block lib_deps %}
