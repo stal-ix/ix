@@ -13,6 +13,11 @@ lib/lz4
 lib/gtk/4
 {% endblock %}
 
+{% block bld_libs %}
+{{super()}}
+lib/fast/float
+{% endblock %}
+
 {% block meson_flags %}
 {{super()}}
 gtk3=false
@@ -29,20 +34,16 @@ export CFLAGS="-Wno-enum-constexpr-conversion ${CFLAGS}"
 {% endblock %}
 
 {% block patch %}
-patch --fuzz=5 -p1 < ${src}/0001-add-notification-and-shell-precmd-preexec.patch
+patch -p1 < ${src}/0001-add-notification-and-shell-precmd-preexec.patch
 {{super()}}
 cat - src/termprops.hh << EOF >> _
 #pragma once
-#include <stdlib.h>
-#include <string>
+#include <fast_float/fast_float.h>
 #include <charconv>
 namespace std {
     inline std::from_chars_result from_chars(const char* first, const char* last, double& value, std::chars_format fmt = std::chars_format::general) {
-        std::string s(first, last);
-        char* b = (char*)s.c_str();
-        char* e = b + s.length();
-        value = strtod(b, &e);
-        return {first + (e - b), {}};
+        auto ret = fast_float::from_chars(first, last, value);
+        return {ret.ptr, ret.ec};
     }
 }
 EOF
