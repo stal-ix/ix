@@ -26,5 +26,8 @@ bld/gettext
 >agent/x86/force_link_glibc_2.17.h
 >agent/x86_64/force_link_glibc_2.17.h
 >agent/libc-compat.h
+base64 -d << EOF | patch agent/ptyxis-agent-impl.c
+{% include '0.diff/base64' %}
+EOF
 sed -e 's|libc_compat = true|libc_compat = false|' -i agent/meson.build
 {% endblock %}
