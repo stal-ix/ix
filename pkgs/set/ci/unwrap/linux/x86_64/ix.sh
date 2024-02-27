@@ -37,6 +37,7 @@
 
 {% block run_deps %}
 #bin/gendesk
+bin/ptyxis
 bin/avahi
 bin/mdadm
 bin/clx
