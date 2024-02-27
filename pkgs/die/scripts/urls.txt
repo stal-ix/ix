@@ -1686,6 +1686,7 @@ https://github.com/tvrzna/emptty/archive/refs/tags/v0.10.0.tar.gz
 https://github.com/tvrzna/emptty/archive/refs/tags/v0.11.0.tar.gz
 https://github.com/u-root/u-root/archive/refs/tags/v0.13.0.tar.gz
 https://github.com/uclouvain/openjpeg/archive/refs/tags/v2.5.0.tar.gz
+https://github.com/uclouvain/openjpeg/archive/refs/tags/v2.5.1.tar.gz
 https://github.com/unicode-org/icu/archive/refs/tags/release-70-1.tar.gz
 https://github.com/upx/upx/releases/download/v4.1.0/upx-4.1.0-src.tar.xz
 https://github.com/upx/upx/releases/download/v4.2.0/upx-4.2.0-src.tar.xz
