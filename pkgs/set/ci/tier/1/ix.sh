@@ -4,6 +4,7 @@
 bin/neo/vide
 bin/zellij
 bin/xplr
+bin/wez/term
 #}
 
 {% block run_deps %}
@@ -20,6 +21,5 @@ bin/git/ui
 bin/coreutils/uutils
 bin/mini/serve
 bin/tail/spin
-bin/wez/term
 bin/rio
 {% endblock %}
