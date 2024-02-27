@@ -1,14 +1,18 @@
 {% extends '//die/c/ix.sh' %}
 
+{% block version %}
+1.0.1
+{% endblock %}
+
 {% block fetch %}
-https://github.com/g-truc/glm/archive/refs/tags/1.0.0.tar.gz
-sha:e51f6c89ff33b7cfb19daafb215f293d106cd900f8d681b9b1295312ccadbd23
+https://github.com/g-truc/glm/archive/refs/tags/{{self.version().strip()}}.tar.gz
+sha:9f3174561fd26904b23f0db5e560971cbf9b3cbda0b280f04d5c379d03bf234c
 {% endblock %}
 
 {% block lib_deps %}
 lib/c
 lib/c++
-lib/shim/fake/pkg(pkg_name=glm,pkg_ver=1.0.0)
+lib/shim/fake/pkg(pkg_name=glm,pkg_ver={{self.version().strip()}})
 {% endblock %}
 
 {% block install %}
