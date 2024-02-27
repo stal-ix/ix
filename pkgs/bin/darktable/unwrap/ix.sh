@@ -2,6 +2,14 @@
 
 {# TODO(pg): implement plugins support #}
 
+{#
+[77/795] Checking validity of cameras.xml
+FAILED: lib/darktable/rawspeed/data/cameras.xml.touch /home/ci/ix_root/build/rMBCFa4qkoGgeRF6/obj/lib/darktable/rawspeed/data/cameras.xml.touch
+cd /home/ci/ix_root/build/rMBCFa4qkoGgeRF6/obj/lib/darktable/rawspeed/data && /home/ci/ix_root/store/Dgvsu5w7rd9AaPhj-bin-xml-lint/bin/xmllint --nonet --valid --noout --schema /home/ci/ix_root/build/rMBCFa4qkoGgeRF6/src/src/external/rawspeed/data/cameras.xsd /home/ci/ix_root/build/rMBCFa4qkoGgeRF6/src/src/external/rawspeed/data/cameras.xml && /home/ci/ix_root/store/KRvCsUupqBGwnY6z-bin-cmake-lite/bin/cmake -E touch /home/ci/ix_root/build/rMBCFa4qkoGgeRF6/obj/lib/darktable/rawspeed/data/cameras.xml.touch
+/home/ci/ix_root/build/rMBCFa4qkoGgeRF6/src/src/external/rawspeed/data/cameras.xsd:193: element complexType: Schemas parser error : complex type 'CFA2Type': The content model is not determinist.
+WXS schema /home/ci/ix_root/build/rMBCFa4qkoGgeRF6/src/src/external/rawspeed/data/cameras.xsd failed to compile
+#}
+
 {% block fetch %}
 https://github.com/darktable-org/darktable/releases/download/release-4.0.0/darktable-4.0.0.tar.xz
 sha:1416f8f59717e65a6220541aaa12eacca93888ce5176f2c9ab6c17b9cc53cc2d
