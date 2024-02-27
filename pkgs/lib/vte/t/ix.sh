@@ -16,6 +16,10 @@ lib/pcre/2
 lib/fribidi
 {% endblock %}
 
+{% block bld_libs %}
+lib/shim/wait
+{% endblock %}
+
 {% block bld_tool %}
 bld/bash
 bld/glib
@@ -29,7 +33,6 @@ _systemd=false
 {% endblock %}
 
 {% block patch %}
-sed -e 's|W_EXITCODE.*|SIGKILL << 8;|' -i src/widget.cc
 sed -e 's|+ debug_sources||' -i src/app/meson.build
 {% endblock %}
 

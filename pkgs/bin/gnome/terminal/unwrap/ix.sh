@@ -11,7 +11,7 @@ lib/gtk
 lib/vte
 lib/glib
 lib/handy
-# uuid
+lib/shim/wait
 lib/linux/util
 lib/gsettings/desktop/schemas
 {% endblock %}
@@ -27,10 +27,6 @@ search_provider=false
 bld/gettext
 bld/fake/er(tool_name=itstool)
 bld/fake/er(tool_name=xsltproc)
-{% endblock %}
-
-{% block patch %}
-sed -e 's|W_EXITCODE.*|SIGKILL << 8;|' -i src/terminal.cc
 {% endblock %}
 
 {% block c_rename_symbol %}
