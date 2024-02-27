@@ -6,6 +6,7 @@ bin/zellij
 #}
 
 {% block run_deps %}
+bin/resvg
 bin/i3/status/rust
 bin/shadowsocks/rust
 bin/delta

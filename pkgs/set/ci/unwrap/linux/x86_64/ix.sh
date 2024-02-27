@@ -73,7 +73,6 @@ bin/dialog
 bin/niri
 bin/bcachefs/tools
 bin/cargo/whatfeatures
-bin/resvg
 bin/alacritty
 bin/bat
 bin/wl/maker
