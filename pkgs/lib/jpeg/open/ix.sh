@@ -12,6 +12,7 @@ BUILD_PKGCONFIG_FILES=ON
 
 {% block install %}
 {{super()}}
+>${out}/lib/cmake/openjpeg-{{self.version()}}/OpenJPEGTargets.cmake
 for i in ${out}/lib/pkgconfig/*.pc; do
     sed -e 's|bindir.*||' -i ${i}
 done
@@ -19,5 +20,5 @@ done
 
 {% block env %}
 {{super()}}
-export CPPFLAGS="-I${out}/include/openjpeg-{{self.version()[:3]}} \${CPPFLAGS}"
+export CPPFLAGS="-I${out}/include/openjpeg-{{self.version()}} \${CPPFLAGS}"
 {% endblock %}

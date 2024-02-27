@@ -1,9 +1,9 @@
 {% extends '//die/c/cmake.sh' %}
 
-{% block version %}2.5.1{% endblock %}
+{% block version %}2.5{% endblock %}
 
 {% block fetch %}
-https://github.com/uclouvain/openjpeg/archive/refs/tags/v{{self.version()}}.tar.gz
+https://github.com/uclouvain/openjpeg/archive/refs/tags/v{{self.version()}}.1.tar.gz
 sha:c0b92dadd65e33b1cf94f39dd9157d5469846744c2e0afb8ca10961f51f61da6
 {% endblock %}
 
