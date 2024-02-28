@@ -44,11 +44,11 @@ lib/image/magick
 {% block bld_tool %}
 bld/perl
 bld/bash
-bin/xml/lint
 bld/gettext
 bld/intltool
 bld/devendor
 bin/xsltproc
+bld/xml/lint
 {% endblock %}
 
 {% block build_flags %}

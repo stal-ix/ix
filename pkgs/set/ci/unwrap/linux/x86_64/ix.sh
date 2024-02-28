@@ -34,10 +34,10 @@
 #bin/tex/studio
 #bin/rr
 #bin/gendesk
-#bin/darktable
 #}
 
 {% block run_deps %}
+bin/darktable
 bin/ptyxis
 bin/avahi
 bin/mdadm
