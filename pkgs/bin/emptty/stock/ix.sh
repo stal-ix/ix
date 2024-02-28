@@ -3,11 +3,11 @@
 {# TODO(pg): get rid of /usr/bin/getent reference #}
 
 {% block go_url %}
-https://github.com/tvrzna/emptty/archive/refs/tags/v0.11.0.tar.gz
+https://github.com/tvrzna/emptty/archive/refs/tags/v0.12.0.tar.gz
 {% endblock %}
 
 {% block go_sha %}
-f9ddee1069a0120e3180cb1f9e6cb08c048a08f29e0be972510008fc7353eeaf
+f2dc327381f60f8fb1c0ce2b31b10dd07429ab346f69d9f645dfa75f2cb4337c
 {% endblock %}
 
 {% block go_tags %}

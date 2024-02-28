@@ -557,6 +557,7 @@ https://github.com/GNOME/libshumate/archive/refs/tags/1.1.3.tar.gz
 https://github.com/GStreamer/orc/archive/refs/tags/0.4.34.tar.gz
 https://github.com/GStreamer/orc/archive/refs/tags/0.4.35.tar.gz
 https://github.com/GStreamer/orc/archive/refs/tags/0.4.37.tar.gz
+https://github.com/GStreamer/orc/archive/refs/tags/0.4.38.tar.gz
 https://github.com/Genivia/ugrep/archive/refs/tags/v4.0.5.tar.gz
 https://github.com/Genivia/ugrep/archive/refs/tags/v4.1.0.tar.gz
 https://github.com/Genivia/ugrep/archive/refs/tags/v4.2.0.tar.gz
@@ -707,6 +708,7 @@ https://github.com/WayfireWM/wf-config/archive/refs/tags/v0.7.1.tar.gz
 https://github.com/WebAssembly/binaryen/archive/refs/tags/version_114.tar.gz
 https://github.com/WebAssembly/binaryen/archive/refs/tags/version_115.tar.gz
 https://github.com/WebAssembly/binaryen/archive/refs/tags/version_116.tar.gz
+https://github.com/WebAssembly/binaryen/archive/refs/tags/version_117.tar.gz
 https://github.com/WebPlatformForEmbedded/libwpe/archive/refs/tags/1.12.3.tar.gz
 https://github.com/WerWolv/ImHex/releases/download/v1.19.1/Full.Sources.tar.gz
 https://github.com/YaLTeR/niri/archive/refs/tags/v0.1.0-beta.1.tar.gz
@@ -1199,6 +1201,7 @@ https://github.com/libjpeg-turbo/libjpeg-turbo/archive/refs/tags/3.0.0.tar.gz
 https://github.com/libjpeg-turbo/libjpeg-turbo/archive/refs/tags/3.0.1.tar.gz
 https://github.com/libjpeg-turbo/libjpeg-turbo/archive/refs/tags/3.0.2.tar.gz
 https://github.com/libjxl/libjxl/archive/refs/tags/v0.10.0.tar.gz
+https://github.com/libjxl/libjxl/archive/refs/tags/v0.10.1.tar.gz
 https://github.com/libjxl/libjxl/archive/refs/tags/v0.8.2.tar.gz
 https://github.com/libjxl/libjxl/archive/refs/tags/v0.9.0.tar.gz
 https://github.com/libjxl/libjxl/archive/refs/tags/v0.9.1.tar.gz
@@ -1691,6 +1694,7 @@ https://github.com/tukaani-project/xz/releases/download/v5.6.0/xz-5.6.0.tar.gz
 https://github.com/tulir/gomuks/archive/refs/tags/v0.3.0.tar.gz
 https://github.com/tvrzna/emptty/archive/refs/tags/v0.10.0.tar.gz
 https://github.com/tvrzna/emptty/archive/refs/tags/v0.11.0.tar.gz
+https://github.com/tvrzna/emptty/archive/refs/tags/v0.12.0.tar.gz
 https://github.com/u-root/u-root/archive/refs/tags/v0.13.0.tar.gz
 https://github.com/uclouvain/openjpeg/archive/refs/tags/v2.5.0.tar.gz
 https://github.com/uclouvain/openjpeg/archive/refs/tags/v2.5.1.tar.gz
@@ -1891,6 +1895,7 @@ https://gitlab.gnome.org/GNOME/libsoup/-/archive/3.4.2/libsoup-3.4.2.tar.bz2
 https://gitlab.gnome.org/GNOME/libsoup/-/archive/3.4.3/libsoup-3.4.3.tar.bz2
 https://gitlab.gnome.org/GNOME/libsoup/-/archive/3.4.4/libsoup-3.4.4.tar.bz2
 https://gitlab.gnome.org/GNOME/libxml2/-/archive/v2.11.4/libxml2-v2.11.4.tar.bz2
+https://gitlab.gnome.org/GNOME/libxml2/-/archive/v2.11.7/libxml2-v2.11.7.tar.bz2
 https://gitlab.gnome.org/GNOME/libxml2/-/archive/v2.12.0/libxml2-v2.12.0.tar.bz2
 https://gitlab.gnome.org/GNOME/libxml2/-/archive/v2.12.1/libxml2-v2.12.1.tar.bz2
 https://gitlab.gnome.org/GNOME/libxml2/-/archive/v2.12.5/libxml2-v2.12.5.tar.bz2
@@ -1972,6 +1977,7 @@ https://luajit.org/download/LuaJIT-2.0.5.tar.gz
 https://memcached.org/files/memcached-1.6.21.tar.gz
 https://memcached.org/files/memcached-1.6.22.tar.gz
 https://memcached.org/files/memcached-1.6.23.tar.gz
+https://memcached.org/files/memcached-1.6.24.tar.gz
 https://mesa.freedesktop.org/archive/mesa-23.1.9.tar.xz
 https://mesa.freedesktop.org/archive/mesa-23.2.1.tar.xz
 https://mesa.freedesktop.org/archive/mesa-23.3.1.tar.xz
@@ -2213,6 +2219,7 @@ https://www.rarlab.com/rar/unrarsrc-7.0.3.tar.gz
 https://www.rarlab.com/rar/unrarsrc-7.0.4.tar.gz
 https://www.rarlab.com/rar/unrarsrc-7.0.5.tar.gz
 https://www.rarlab.com/rar/unrarsrc-7.0.6.tar.gz
+https://www.rarlab.com/rar/unrarsrc-7.0.7.tar.gz
 https://www.sqlite.org/2024/sqlite-autoconf-3450000.tar.gz
 https://www.sqlite.org/2024/sqlite-autoconf-3450100.tar.gz
 https://www.stunnel.org/downloads/stunnel-5.70.tar.gz
