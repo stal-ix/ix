@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/libjxl/libjxl/archive/refs/tags/v0.10.0.tar.gz
-sha:ab32d52b033c814d24762db4942a3b45315d9db37bf5c8a9741ccc1bb0a52d97
+https://github.com/libjxl/libjxl/archive/refs/tags/v0.10.1.tar.gz
+sha:91b9a83a230d608b5d35d2ab5068bd0ec7028797575e3013211be5928028c8cd
 {% endblock %}
 
 {% block lib_deps %}
