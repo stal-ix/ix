@@ -33,10 +33,11 @@
 #bin/colord
 #bin/tex/studio
 #bin/rr
+#bin/gendesk
+#bin/darktable
 #}
 
 {% block run_deps %}
-#bin/gendesk
 bin/ptyxis
 bin/avahi
 bin/mdadm
@@ -703,7 +704,6 @@ bin/dmidecode
 bin/qrencode
 bin/fswatch
 bin/xarchiver
-bin/darktable
 bin/jasper
 bin/earlyoom
 bin/chrony
