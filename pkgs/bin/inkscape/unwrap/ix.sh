@@ -30,6 +30,7 @@ lib/pango
 lib/cairo
 lib/boost
 lib/visio
+lib/xml/2
 lib/lcms/2
 lib/gspell
 lib/soup/2
@@ -62,6 +63,10 @@ WITH_X11=OFF
 
 {% block cpp_defines %}
 _LIBCPP_ENABLE_CXX17_REMOVED_FEATURES=1
+{% endblock %}
+
+{% block cpp_missing %}
+libxml/xmlmemory.h
 {% endblock %}
 
 {% block setup_target_flags %}
