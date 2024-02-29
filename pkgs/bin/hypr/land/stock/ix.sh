@@ -13,6 +13,7 @@ lib/input
 lib/opengl
 lib/wayland
 lib/shim/x11
+lib/hypr/lang
 lib/xkb/common
 lib/drivers/3d
 lib/mesa/gl/dl
@@ -41,6 +42,12 @@ sed -e "s|subproject.*wlroots.*|dependency('wlroots')|" \
 
 sed -e 's|.get_variable.*wlroots.*|,|' \
     -i src/meson.build
+
+sed -e 's|) {|) const {|' -i src/helpers/WLClasses.hpp
+
+base64 -d << EOF > src/debug/CrashReporter.cpp
+{% include 'CrashReporter.cpp/base64' %}
+EOF
 {% endblock %}
 
 {% block build_flags %}
