@@ -20,4 +20,5 @@ mkdir -p ${out}/share/mdns ${out}/sbin ${out}/bin ${out}/lib ${out}/include ${ou
 {{super()}}
 mv ${out}/sbin/* ${out}/bin/
 rm -rf ${out}/sbin
+cp build/prod/mDNS* ${out}/bin/
 {% endblock %}
