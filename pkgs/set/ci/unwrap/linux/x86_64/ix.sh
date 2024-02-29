@@ -37,6 +37,7 @@
 #}
 
 {% block run_deps %}
+bin/file/roller
 bin/darktable
 bin/ptyxis
 bin/avahi
