@@ -503,6 +503,7 @@ https://github.com/AbiWord/enchant/releases/download/v2.6.5/enchant-2.6.5.tar.gz
 https://github.com/AbiWord/enchant/releases/download/v2.6.6/enchant-2.6.6.tar.gz
 https://github.com/AbiWord/enchant/releases/download/v2.6.7/enchant-2.6.7.tar.gz
 https://github.com/AcademySoftwareFoundation/Imath/archive/refs/tags/v3.1.10.tar.gz
+https://github.com/AcademySoftwareFoundation/Imath/archive/refs/tags/v3.1.11.tar.gz
 https://github.com/AcademySoftwareFoundation/Imath/archive/refs/tags/v3.1.9.tar.gz
 https://github.com/AcademySoftwareFoundation/openexr/archive/refs/tags/v3.2.0.tar.gz
 https://github.com/AcademySoftwareFoundation/openexr/archive/refs/tags/v3.2.1.tar.gz
@@ -781,6 +782,7 @@ https://github.com/axel-download-accelerator/axel/archive/refs/tags/v2.17.12.tar
 https://github.com/axel-download-accelerator/axel/archive/refs/tags/v2.17.13.tar.gz
 https://github.com/benhoyt/goawk/archive/refs/tags/v1.24.0.tar.gz
 https://github.com/benhoyt/goawk/archive/refs/tags/v1.25.0.tar.gz
+https://github.com/benhoyt/goawk/archive/refs/tags/v1.26.0.tar.gz
 https://github.com/benhoyt/inih/archive/refs/tags/r57.tar.gz
 https://github.com/benhoyt/inih/archive/refs/tags/r58.tar.gz
 https://github.com/bensadeh/circumflex/archive/refs/tags/3.5.tar.gz
@@ -909,6 +911,7 @@ https://github.com/eza-community/eza/archive/refs/tags/v0.17.2.tar.gz
 https://github.com/eza-community/eza/archive/refs/tags/v0.17.3.tar.gz
 https://github.com/eza-community/eza/archive/refs/tags/v0.18.0.tar.gz
 https://github.com/eza-community/eza/archive/refs/tags/v0.18.4.tar.gz
+https://github.com/eza-community/eza/archive/refs/tags/v0.18.5.tar.gz
 https://github.com/facebook/zstd/archive/refs/tags/v1.5.5.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.1.2.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.2.0.tar.gz
@@ -1969,6 +1972,7 @@ https://liba52.sourceforge.io/files/a52dec-0.7.4.tar.gz
 https://libbsd.freedesktop.org/releases/libbsd-0.11.7.tar.xz
 https://libbsd.freedesktop.org/releases/libbsd-0.11.8.tar.xz
 https://libbsd.freedesktop.org/releases/libbsd-0.12.0.tar.xz
+https://libbsd.freedesktop.org/releases/libbsd-0.12.1.tar.xz
 https://libbsd.freedesktop.org/releases/libmd-1.1.0.tar.xz
 https://libisl.sourceforge.io/isl-0.26.tar.xz
 https://libmpeg2.sourceforge.io/files/libmpeg2-0.5.1.tar.gz
