@@ -2,9 +2,6 @@
 
 {% block install %}
 {{super()}}
-cd ${out}
-mv bin old
-mkdir bin
-mv old/avahi-daemon bin/
-rm -rf share etc/avahi old
+rm -rf ${out}/bin/avahi-daemon
+rm -rf ${out}/etc
 {% endblock %}
