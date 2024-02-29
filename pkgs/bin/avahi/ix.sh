@@ -49,3 +49,8 @@ cat << EOF >> avahi-daemon/Makefile
 install-data-local:
 EOF
 {% endblock %}
+
+{% block make_flags %}
+avahi_runtime_dir="/var/run/avahi"
+avahi_socket="/var/run/avahi/socket"
+{% endblock %}
