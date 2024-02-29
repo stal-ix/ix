@@ -6,6 +6,7 @@ bin/7z
 bin/lz4
 bin/zip
 bin/tar
+bin/cpio
 bin/gzip
 bin/lzip
 bin/zstd
