@@ -19,6 +19,7 @@ lib/cap
 lib/mnl
 lib/tirpc
 lib/elfutils
+lib/shim/gnu/basename/overlay
 {% endblock %}
 
 {% block bld_tool %}
