@@ -20,3 +20,16 @@ bld/gettext
 export LT_OPTS=-ci
 {{super()}}
 {% endblock %}
+
+{% block patch %}
+cat -  << EOF > _
+#pragma once
+#define statx musl_statx
+#define statx_timestamp musl_statx_timestamp
+#include <sys/stat.h>
+#undef statx
+#undef statx_timestamp
+#include <linux/stat.h>
+EOF
+mv _ libmount/src/hook_mount.c
+{% endblock %}
