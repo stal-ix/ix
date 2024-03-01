@@ -12,3 +12,7 @@ bld/gettext
 {% block lib_deps %}
 lib/c
 {% endblock %}
+
+{% block bld_libs %}
+lib/shim/gnu/basename/overlay
+{% endblock %}
