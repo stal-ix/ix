@@ -26,6 +26,7 @@ lib/udev
 lib/kernel
 lib/curses
 lib/sndfile
+# ieee754.h
 lib/shim/gnu
 lib/ini/parser
 lib/ladspa/sdk
