@@ -9,7 +9,6 @@ sha:6b8346a89fb0f0f1798e66f6a707a881d38b9b3a67256b30fc4628dac09f291a
 lib/c
 lib/c++
 lib/kernel
-lib/shim/gnu
 {% endblock %}
 
 {% block bld_tool %}
