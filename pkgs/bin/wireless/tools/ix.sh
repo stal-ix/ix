@@ -8,8 +8,7 @@ sha:6fb80935fe208538131ce2c4178221bab1078a1656306bce8909c19887e2e5a1
 {% block bld_libs %}
 lib/c
 lib/kernel
-# basename
-lib/shim/gnu
+lib/shim/gnu/basename/overlay
 {% endblock %}
 
 {% block make_flags %}
