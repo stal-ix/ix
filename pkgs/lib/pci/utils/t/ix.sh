@@ -19,3 +19,7 @@ SHAREDIR="${out}/share/hwdata"
 SBINDIR="${out}/bin"
 SHARED=no
 {% endblock %}
+
+{% block cpp_missing %}
+libgen.h
+{% endblock %}
