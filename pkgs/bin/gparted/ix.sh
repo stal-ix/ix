@@ -12,7 +12,6 @@ lib/glib
 lib/intl
 lib/parted
 lib/gtk/3/mm
-lib/shim/gnu
 {% endblock %}
 
 {% block bld_tool %}
