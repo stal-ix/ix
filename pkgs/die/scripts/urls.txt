@@ -761,6 +761,7 @@ https://github.com/apernet/hysteria/archive/refs/tags/app/v2.1.1.tar.gz
 https://github.com/apernet/hysteria/archive/refs/tags/app/v2.2.0.tar.gz
 https://github.com/apernet/hysteria/archive/refs/tags/app/v2.2.1.tar.gz
 https://github.com/apernet/hysteria/archive/refs/tags/app/v2.2.3.tar.gz
+https://github.com/apple-oss-distributions/mDNSResponder/archive/refs/tags/mDNSResponder-2200.80.16.tar.gz
 https://github.com/apple/swift-corelibs-libdispatch/archive/refs/tags/swift-5.8-RELEASE.tar.gz
 https://github.com/apple/swift-corelibs-libdispatch/archive/refs/tags/swift-5.9-RELEASE.tar.gz
 https://github.com/apple/swift-corelibs-libdispatch/archive/refs/tags/swift-5.9.2-RELEASE.tar.gz
@@ -1022,6 +1023,7 @@ https://github.com/google/minijail/archive/refs/tags/linux-v18.tar.gz
 https://github.com/google/re2/archive/refs/tags/2023-09-01.tar.gz
 https://github.com/google/re2/archive/refs/tags/2023-11-01.tar.gz
 https://github.com/google/re2/archive/refs/tags/2024-02-01.tar.gz
+https://github.com/google/re2/archive/refs/tags/2024-03-01.tar.gz
 https://github.com/google/shaderc/archive/refs/tags/v2023.6.tar.gz
 https://github.com/google/shaderc/archive/refs/tags/v2023.7.tar.gz
 https://github.com/google/shaderc/archive/refs/tags/v2023.8.tar.gz
