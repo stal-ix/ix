@@ -22,6 +22,7 @@ lib/opcodes
 lib/openssl
 lib/elfutils
 lib/readline
+lib/shim/gnu
 lib/trace/event
 lib/trace/event/plugins
 lib/shim/fake(lib_name=stdc++)
