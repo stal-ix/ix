@@ -222,6 +222,7 @@ https://download.qemu.org/qemu-8.0.0.tar.xz
 https://download.samba.org/pub/rsync/src/rsync-3.2.7.tar.gz
 https://download.samba.org/pub/samba/stable/samba-4.17.2.tar.gz
 https://download.savannah.gnu.org/releases/lzip/lzip-1.22.tar.gz
+https://download.savannah.gnu.org/releases/lzip/lzip-1.24.1.tar.gz
 https://download.savannah.gnu.org/releases/lzip/lzip-1.24.tar.gz
 https://download.savannah.gnu.org/releases/zutils/zutils-1.12.tar.lz
 https://download.savannah.gnu.org/releases/zutils/zutils-1.13.tar.lz
