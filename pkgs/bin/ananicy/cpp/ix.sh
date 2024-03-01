@@ -18,7 +18,6 @@ lib/c++
 lib/kernel
 lib/spdlog
 lib/execinfo
-lib/shim/gnu
 lib/fmt/polyfill
 lib/json/nlohmann
 lib/jthread/polyfill
