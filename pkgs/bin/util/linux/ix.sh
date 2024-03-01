@@ -9,6 +9,7 @@ lib/slang
 lib/magic
 lib/curses
 lib/cap/ng
+lib/shim/gnu/basename/overlay
 {% endblock %}
 
 {% block configure_flags %}
@@ -18,6 +19,7 @@ lib/cap/ng
 {% endblock %}
 
 {% block patch %}
+{{super()}}
 cd sys-utils
 bison hwclock-parse-date.y
 mv hwclock-parse-date.tab.c hwclock-parse-date.c
