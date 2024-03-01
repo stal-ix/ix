@@ -17,7 +17,6 @@ lib/kernel
 lib/sodium
 lib/key/utils
 lib/linux/util
-bin/bcachefs/tools/shim
 lib/shim/fake/pkg(pkg_name=udev,pkg_ver=1)
 {% endblock %}
 
