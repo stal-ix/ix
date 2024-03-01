@@ -7,6 +7,8 @@ sha:64312f9ac569ddcadb615593cd002c94b76e93a0d4625d3ce1abb49e08e2c2da
 
 {% block bld_libs %}
 lib/c
+# basename
+lib/shim/gnu
 {% endblock %}
 
 {% block patch %}
