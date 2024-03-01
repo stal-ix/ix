@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/google/re2/archive/refs/tags/2024-02-01.tar.gz
-sha:cd191a311b84fcf37310e5cd876845b4bf5aee76fdd755008eef3b6478ce07bb
+https://github.com/google/re2/archive/refs/tags/2024-03-01.tar.gz
+sha:7b2b3aa8241eac25f674e5b5b2e23d4ac4f0a8891418a2661869f736f03f57f4
 {% endblock %}
 
 {% block lib_deps %}

@@ -37,6 +37,8 @@
 #}
 
 {% block run_deps %}
+bin/mdns/responder
+bin/file/roller
 bin/darktable
 bin/ptyxis
 bin/avahi
