@@ -1,10 +1,19 @@
 #pragma once
 
-#include <libgen.h>
 #include_next <string.h>
 
+#if defined(_GNU_SOURCE)
+
 #if defined(__cplusplus)
-static inline char* basename(const char* s) {
-    return ::basename((char*)s);
+extern "C" {
+#endif
+
+char* __gnu_basename(const char* s);
+
+#define basename(x) __gnu_basename(x)
+
+#if defined(__cplusplus)
 }
+#endif
+
 #endif
