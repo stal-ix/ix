@@ -22,9 +22,9 @@ lib/opcodes
 lib/openssl
 lib/elfutils
 lib/readline
-lib/shim/gnu
 lib/trace/event
 lib/trace/event/plugins
+lib/shim/gnu/basename/overlay
 lib/shim/fake(lib_name=stdc++)
 {% endblock %}
 
@@ -67,6 +67,7 @@ V=1
 
 {% block build_flags %}
 wrap_cc
+no_werror
 {% endblock %}
 
 {% block patch %}

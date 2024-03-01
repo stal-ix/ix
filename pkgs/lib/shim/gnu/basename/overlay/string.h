@@ -4,6 +4,8 @@
 
 #if defined(_GNU_SOURCE)
 
+#include <libgen.h>
+
 #if defined(__cplusplus)
 extern "C" {
 #endif

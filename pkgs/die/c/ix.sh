@@ -8,6 +8,10 @@
     -w
   {% endif %}
 
+  {% if 'no_werror' in build_flags  %}
+    -Wno-error
+  {% endif %}
+
   {% block cpp_flags %}
   {% endblock %}
 
