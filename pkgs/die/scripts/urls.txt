@@ -1374,6 +1374,7 @@ https://github.com/nghttp2/nghttp2/archive/refs/tags/v1.56.0.tar.gz
 https://github.com/nghttp2/nghttp2/archive/refs/tags/v1.57.0.tar.gz
 https://github.com/nghttp2/nghttp2/archive/refs/tags/v1.58.0.tar.gz
 https://github.com/nghttp2/nghttp2/archive/refs/tags/v1.59.0.tar.gz
+https://github.com/nghttp2/nghttp2/archive/refs/tags/v1.60.0.tar.gz
 https://github.com/ngtcp2/nghttp3/archive/refs/tags/v0.15.0.tar.gz
 https://github.com/ngtcp2/nghttp3/archive/refs/tags/v1.0.0.tar.gz
 https://github.com/ngtcp2/nghttp3/archive/refs/tags/v1.1.0.tar.gz
