@@ -1,4 +1,4 @@
-#include "string.h"
+#include <string.h>
 
 char* __gnu_basename(const char* s) {
     const char* p = strrchr(s, '/');

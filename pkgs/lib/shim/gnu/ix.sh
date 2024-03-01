@@ -2,6 +2,9 @@
 
 {% block lib_deps %}
 lib/c
+{% if linux %}
+lib/shim/gnu/basename/overlay
+{% endif %}
 {% endblock %}
 
 {% block sources %}
