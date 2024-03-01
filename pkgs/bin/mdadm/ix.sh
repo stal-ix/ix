@@ -9,6 +9,7 @@ sha:1a38a5eed3738c130ead8fa5bea7d0ceec4676132c8c69536f176b9951b27b0b
 lib/c
 lib/udev
 lib/kernel
+lib/shim/gnu/basename/overlay
 {% endblock %}
 
 {% block build_flags %}

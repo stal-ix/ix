@@ -8,3 +8,7 @@ lib/shim/gnu/basename
 string.c
 string.h
 {% endblock %}
+
+{% block env %}
+export CPPFLAGS="-D_GNU_SOURCE \${CPPFLAGS}"
+{% endblock %}
