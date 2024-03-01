@@ -1194,6 +1194,7 @@ https://github.com/libevent/libevent/archive/refs/tags/release-2.1.12-stable.tar
 https://github.com/libexif/libexif/archive/refs/tags/v0.6.24.tar.gz
 https://github.com/libexpat/libexpat/archive/refs/tags/R_2_5_0.tar.gz
 https://github.com/libexpat/libexpat/archive/refs/tags/R_2_6_0.tar.gz
+https://github.com/libexpat/libexpat/archive/refs/tags/R_2_6_1.tar.gz
 https://github.com/libffi/libffi/archive/refs/tags/v3.4.4.tar.gz
 https://github.com/libffi/libffi/archive/refs/tags/v3.4.5.tar.gz
 https://github.com/libffi/libffi/archive/refs/tags/v3.4.6.tar.gz
