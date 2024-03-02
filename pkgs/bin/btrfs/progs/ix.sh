@@ -16,6 +16,7 @@ lib/gcrypt
 lib/execinfo
 lib/e2fsprogs
 lib/linux/util
+lib/shim/gnu/basename/overlay
 {% endblock %}
 
 {% block configure_flags %}
