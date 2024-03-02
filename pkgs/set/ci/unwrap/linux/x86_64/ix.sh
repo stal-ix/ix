@@ -37,6 +37,7 @@
 #}
 
 {% block run_deps %}
+bin/patch/darwin
 bin/mdns/responder
 bin/file/roller
 bin/darktable
