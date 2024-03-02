@@ -1,12 +1,4 @@
-{% extends '//die/c/make.sh' %}
-
-{% block make_tool %}
-bin/pmake
-{% endblock %}
-
-{% block make_bin %}
-pmake
-{% endblock %}
+{% extends '//die/c/pmake.sh' %}
 
 {% block fetch %}
 https://github.com/apple-oss-distributions/patch_cmds/archive/refs/tags/patch_cmds-61.tar.gz
@@ -25,12 +17,10 @@ lib/bsd/overlay
 
 {% block build_flags %}
 shut_up
-no_werror
 {% endblock %}
 
 {% block bld_tool %}
 bin/gzip
-bld/fake/binutils
 {% endblock %}
 
 {% block cpp_missing %}
@@ -45,22 +35,6 @@ st_mtimespec=st_mtim
 __APPLE__
 {% endblock %}
 
-{% block make_flags %}
-LD=ld
-LINKER_TYPE=lld
-MK_TESTS=no
-BINDIR=${out}/bin
-LIBDIR=${out}/lib
-INCDIR=${out}/include
-SHAREDIR=${out}/share
-MK_INSTALL_AS_USER=yes
-{% endblock %}
-
 {% block patch %}
 sed -e 's|util.c|util.c vcs.c|' -i Makefile
-{% endblock %}
-
-{% block install %}
-mkdir -p ${out}/bin ${out}/lib ${out}/include ${out}/share/man/man1
-{{super()}}
 {% endblock %}
