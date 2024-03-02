@@ -19,6 +19,7 @@ lib/pixman
 lib/opengl
 lib/wayland
 lib/xkb/common
+lib/shim/gnu/basename/overlay
 {% endblock %}
 
 {% block bld_tool %}
