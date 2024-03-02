@@ -1,10 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-http://sourceware.org/elfutils/ftp/0.189/elfutils-0.189.tar.bz2
-sha:39bd8f1a338e2b7cd4abc3ff11a0eddc6e690f69578a57478d8179b4148708c8
-#http://sourceware.org/elfutils/ftp/0.190/elfutils-0.190.tar.bz2
-#sha:8e00a3a9b5f04bc1dc273ae86281d2d26ed412020b391ffcc23198f10231d692
+http://sourceware.org/elfutils/ftp/0.191/elfutils-0.191.tar.bz2
+sha:df76db71366d1d708365fc7a6c60ca48398f14367eb2b8954efc8897147ad871
 {% endblock %}
 
 {% block lib_deps %}

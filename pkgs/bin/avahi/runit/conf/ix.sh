@@ -1,7 +1,11 @@
 {% extends '//die/proxy.sh' %}
 
 {% block install %}
-mkdir ${out}/etc
+mkdir -p ${out}/etc/dbus-1/system.d
+
+base64 -d << EOF > ${out}/etc/dbus-1/system.d/avahi-dbus.conf
+{% include 'avahi-dbus.conf/base64' %}
+EOF
 
 cat << EOF > ${out}/etc/avahi.conf
 [server]
