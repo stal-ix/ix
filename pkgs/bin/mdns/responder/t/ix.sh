@@ -31,8 +31,3 @@ limits.h
 {% block build_flags %}
 wrap_cc
 {% endblock %}
-
-{% block patch %}
->-lmbedtls
->-lmbedcrypto
-{% endblock %}

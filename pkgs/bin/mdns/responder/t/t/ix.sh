@@ -14,3 +14,8 @@ STARTUPSCRIPTDIR=${out}/share/mdns
 RUNLEVELSCRIPTSDIR=
 OPTINSTALL=
 {% endblock %}
+
+{% block patch %}
+>-lmbedtls
+>-lmbedcrypto
+{% endblock %}
