@@ -6,5 +6,5 @@ cd ${out}
 mv bin old
 mkdir bin
 mv old/avahi-daemon bin/
-rm -rf share etc/avahi old
+rm -rf share etc old
 {% endblock %}
