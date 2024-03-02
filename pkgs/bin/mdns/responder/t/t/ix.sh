@@ -16,6 +16,7 @@ OPTINSTALL=
 {% endblock %}
 
 {% block patch %}
+{{super()}}
 >-lmbedtls
 >-lmbedcrypto
 {% endblock %}
