@@ -11,6 +11,11 @@ lib/z
 lib/xz
 lib/zstd
 lib/openssl
+lib/shim/gnu/basename
+{% endblock %}
+
+{% block bld_libs %}
+lib/shim/gnu/basename/overlay
 {% endblock %}
 
 {% block bld_tool %}

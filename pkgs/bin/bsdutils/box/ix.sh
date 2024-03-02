@@ -17,8 +17,7 @@ for d in $(ls -A); do (
 ) done
 
 cat << EOF > main.c
-#define _GNU_SOURCE
-
+#include <libgen.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>

@@ -14,6 +14,9 @@ lib/mbedtls/2
 
 {% block unpack %}
 {{super()}}
+find . -type f | while read l; do
+    sed -e 's|/var/run|/var/run/mdnsd|g' -i "${l}"
+done
 cd mDNSPosix
 {% endblock %}
 
@@ -30,9 +33,4 @@ limits.h
 
 {% block build_flags %}
 wrap_cc
-{% endblock %}
-
-{% block patch %}
->-lmbedtls
->-lmbedcrypto
 {% endblock %}

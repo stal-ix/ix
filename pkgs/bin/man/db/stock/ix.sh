@@ -12,6 +12,7 @@ lib/gdbm
 lib/kernel
 lib/seccomp
 lib/pipeline
+# error
 lib/shim/gnu
 lib/bsd/overlay
 {% endblock %}

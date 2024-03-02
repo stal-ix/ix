@@ -14,16 +14,17 @@ lib/xz
 lib/fts
 lib/zstd
 lib/bzip/2
+lib/shim/gnu/basename
 {% endblock %}
 
 {% block bld_libs %}
-lib/obstack
-lib/shim/gnu
 {% if aarch64 %}
 lib/kernel
 {% endif %}
-lib/shim/fake(lib_name=stdc++)
+lib/obstack
 lib/argp/standalone
+lib/shim/gnu/basename/overlay
+lib/shim/fake(lib_name=stdc++)
 {% endblock %}
 
 {% block bld_tool %}

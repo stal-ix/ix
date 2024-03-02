@@ -1,7 +1,8 @@
 {% extends '//die/py.py' %}
 
 {% block fetch %}
-{% include '//lib/musl/t/ver.sh' %}
+http://musl.libc.org/releases/musl-1.2.4.tar.gz
+sha:7a35eae33d5372a7c0da1188de798726f68825513b7ae3ebe97aaaa52114f039
 {% endblock %}
 
 {% block lib_deps %}

@@ -12,8 +12,6 @@ sched.h
 sched.c
 qsort_r.h
 qsort_r.c
-string.h
-string.c
 ieee754.h
 ieee754.c
 {% endif %}
