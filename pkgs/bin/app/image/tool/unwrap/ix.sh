@@ -29,6 +29,7 @@ lib/archive
 lib/openssl
 lib/argp/standalone
 lib/squashfs/fuse/patched
+lib/shim/gnu/basename/overlay
 {% endblock %}
 
 {% block bld_tool %}
