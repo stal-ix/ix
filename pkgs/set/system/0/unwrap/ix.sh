@@ -17,8 +17,10 @@ bin/openresolv/runit
 {% if unbound %}
 bin/unbound/runit
 {% else %}
-bin/avahi/runit
-bin/avahi/dns/runit
+#bin/avahi/runit
+#bin/avahi/dns/runit
+bin/mdns/runit
+bin/mdns/dns/runit
 bin/dnsmasq/runit
 {% endif %}
 
