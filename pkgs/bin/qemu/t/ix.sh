@@ -29,6 +29,7 @@ lib/ucontext
 lib/sdl/deps
 lib/sdl/2/image
 lib/shim/fake(lib_name=stdc++)
+lib/shim/gnu/basename/overlay
 {% endblock %}
 
 {% block ninja_build_dir %}${PWD}/build{% endblock %}
