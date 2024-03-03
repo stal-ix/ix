@@ -1,8 +1,8 @@
 {% extends '//die/c/ix.sh' %}
 
 {% block fetch %}
-https://github.com/skeeto/u-config/archive/refs/tags/v0.31.1.tar.gz
-sha:ec66cf47f2912778618b40b83a6d43cdcb94dbd9b5ea6a5912a3b86267d3ad93
+https://github.com/skeeto/u-config/archive/refs/tags/v0.33.0.tar.gz
+sha:bed099bf49625b0ec616446f037b76cef85243ef5fcd7ad07ef8fcb82f20f00d
 {% endblock %}
 
 {% block bld_libs %}

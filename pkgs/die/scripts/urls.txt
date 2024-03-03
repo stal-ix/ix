@@ -461,6 +461,7 @@ https://git.openldap.org/openldap/openldap/-/archive/LMDB_0.9.32/openldap-LMDB_0
 https://git.pwmt.org/pwmt/girara/-/archive/0.4.0/girara-0.4.0.tar.bz2
 https://git.pwmt.org/pwmt/girara/-/archive/0.4.1/girara-0.4.1.tar.bz2
 https://git.pwmt.org/pwmt/girara/-/archive/0.4.2/girara-0.4.2.tar.bz2
+https://git.pwmt.org/pwmt/girara/-/archive/0.4.3/girara-0.4.3.tar.bz2
 https://git.pwmt.org/pwmt/zathura-cb/-/archive/0.1.10/zathura-cb-0.1.10.tar.bz2
 https://git.pwmt.org/pwmt/zathura/-/archive/0.5.2/zathura-0.5.2.tar.bz2
 https://git.pwmt.org/pwmt/zathura/-/archive/0.5.3/zathura-0.5.3.tar.bz2
@@ -1614,6 +1615,7 @@ https://github.com/skarnet/execline/archive/refs/tags/v2.9.4.0.tar.gz
 https://github.com/skarnet/mdevd/archive/refs/tags/v0.1.6.3.tar.gz
 https://github.com/skarnet/skalibs/archive/refs/tags/v2.14.1.0.tar.gz
 https://github.com/skeeto/u-config/archive/refs/tags/v0.31.1.tar.gz
+https://github.com/skeeto/u-config/archive/refs/tags/v0.33.0.tar.gz
 https://github.com/skvadrik/re2c/archive/refs/tags/3.1.tar.gz
 https://github.com/smuellerDD/jitterentropy-library/archive/refs/tags/v3.4.1.tar.gz
 https://github.com/stal-ix/sources/raw/main/bison-bootstrap-master.tar.bz2
