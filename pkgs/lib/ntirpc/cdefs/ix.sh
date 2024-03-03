@@ -19,6 +19,14 @@ cat << EOF > ${out}/include/sys/cdefs.h
 #define bool int
 #define rresvport_af(a, b) -1
 #define malloc_trim(x)
+#define __S_IFLNK S_IFLNK
+#define __S_IFDIR S_IFDIR
+#define __S_IFREG S_IFREG
+#define __S_IFSOCK S_IFSOCK
+#define __S_IFBLK S_IFBLK
+#define __S_IFCHR S_IFCHR
+#define __S_IFIFO S_IFIFO
+#define S_BLKSIZE DEV_BSIZE
 EOF
 
 cat << EOF > ${out}/include/mcheck.h
