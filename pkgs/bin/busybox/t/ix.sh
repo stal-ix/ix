@@ -1,8 +1,8 @@
 {% extends '//die/c/kconfig2.sh' %}
 
 {% block fetch %}
-https://busybox.net/downloads/busybox-1.36.0.tar.bz2
-sha:542750c8af7cb2630e201780b4f99f3dcceeb06f505b479ec68241c1e6af61a5
+https://busybox.net/downloads/busybox-1.36.1.tar.bz2
+sha:b8cc24c9574d809e7279c3be349795c5d5ceb6fdf19ca709f80cde50e47de314
 {% endblock %}
 
 {% block bld_libs %}
