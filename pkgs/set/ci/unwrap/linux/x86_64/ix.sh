@@ -37,6 +37,8 @@
 #}
 
 {% block run_deps %}
+bin/vsftpd
+bin/nfs/ganesha
 bin/prometheus
 bin/mdns/dns
 bin/avahi/dns

@@ -1,7 +1,5 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
-bin/prometheus/d
-bin/prometheus/ui
-bin/prometheus/tool
+etc/user/nologin(userid=108,user=ftp)
 {% endblock %}

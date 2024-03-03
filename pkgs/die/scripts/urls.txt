@@ -467,6 +467,7 @@ https://git.pwmt.org/pwmt/zathura-cb/-/archive/0.1.10/zathura-cb-0.1.10.tar.bz2
 https://git.pwmt.org/pwmt/zathura/-/archive/0.5.2/zathura-0.5.2.tar.bz2
 https://git.pwmt.org/pwmt/zathura/-/archive/0.5.3/zathura-0.5.3.tar.bz2
 https://git.pwmt.org/pwmt/zathura/-/archive/0.5.4/zathura-0.5.4.tar.bz2
+https://git.pwmt.org/pwmt/zathura/-/archive/0.5.5/zathura-0.5.5.tar.bz2
 https://git.savannah.nongnu.org/cgit/acl.git/snapshot/acl-2.3.1.tar.gz
 https://git.savannah.nongnu.org/cgit/acl.git/snapshot/acl-2.3.2.tar.gz
 https://git.savannah.nongnu.org/cgit/attr.git/snapshot/attr-2.5.1.tar.gz
@@ -887,6 +888,7 @@ https://github.com/dosbox-staging/dosbox-staging/archive/refs/tags/v0.81.0.tar.g
 https://github.com/dosfstools/dosfstools/releases/download/v4.2/dosfstools-4.2.tar.gz
 https://github.com/doxygen/doxygen/archive/refs/tags/Release_1_10_0.tar.gz
 https://github.com/doxygen/doxygen/archive/refs/tags/Release_1_9_8.tar.gz
+https://github.com/drakkan/sftpgo/archive/refs/tags/v2.5.6.tar.gz
 https://github.com/dubiousjim/dcron/archive/refs/tags/v4.5.tar.gz
 https://github.com/dunst-project/dunst/archive/refs/tags/v1.10.0.tar.gz
 https://github.com/dunst-project/dunst/archive/refs/tags/v1.9.2.tar.gz
@@ -1382,6 +1384,7 @@ https://github.com/neovim/neovim/archive/refs/tags/v0.9.2.tar.gz
 https://github.com/neovim/neovim/archive/refs/tags/v0.9.4.tar.gz
 https://github.com/neovim/neovim/archive/refs/tags/v0.9.5.tar.gz
 https://github.com/netwide-assembler/nasm/archive/refs/tags/nasm-2.16.01.tar.gz
+https://github.com/nfs-ganesha/ntirpc/archive/refs/tags/v5.0.tar.gz
 https://github.com/nghttp2/nghttp2/archive/refs/tags/v1.56.0.tar.gz
 https://github.com/nghttp2/nghttp2/archive/refs/tags/v1.57.0.tar.gz
 https://github.com/nghttp2/nghttp2/archive/refs/tags/v1.58.0.tar.gz
@@ -1443,6 +1446,7 @@ https://github.com/pg83/sbase/archive/refs/tags/v1.tar.gz
 https://github.com/pg83/shutil/archive/refs/tags/v1.tar.gz
 https://github.com/pg83/ted/archive/refs/tags/v6.tar.gz
 https://github.com/phillipberndt/pqiv/archive/refs/tags/2.12.tar.gz
+https://github.com/phillipberndt/pqiv/archive/refs/tags/2.13.tar.gz
 https://github.com/phracker/MacOSX-SDKs/releases/download/11.3/MacOSX11.0.sdk.tar.xz
 https://github.com/phracker/MacOSX-SDKs/releases/download/11.3/MacOSX11.3.sdk.tar.xz
 https://github.com/pkgconf/pkgconf/archive/refs/tags/pkgconf-2.0.2.tar.gz
@@ -1457,6 +1461,8 @@ https://github.com/premake/premake-core/archive/refs/tags/v5.0.0-beta2.tar.gz
 https://github.com/project-repo/cagebreak/archive/refs/tags/2.3.0.tar.gz
 https://github.com/project-repo/cagebreak/archive/refs/tags/2.3.1.tar.gz
 https://github.com/projectdiscovery/dnsx/archive/refs/tags/v1.1.6.tar.gz
+https://github.com/prometheus/prometheus/archive/refs/tags/v2.50.1.tar.gz
+https://github.com/prometheus/prometheus/releases/download/v2.50.1/prometheus-web-ui-2.50.1.tar.gz
 https://github.com/protobuf-c/protobuf-c/archive/refs/tags/v1.4.1.tar.gz
 https://github.com/protobuf-c/protobuf-c/archive/refs/tags/v1.5.0.tar.gz
 https://github.com/protocolbuffers/protobuf/archive/refs/tags/v24.3.tar.gz
@@ -1557,6 +1563,7 @@ https://github.com/rhboot/efivar/archive/refs/tags/38.tar.gz
 https://github.com/rhboot/efivar/archive/refs/tags/39.tar.gz
 https://github.com/rizinorg/rizin/releases/download/v0.4.0/rizin-src-v0.4.0.tar.xz
 https://github.com/rizinorg/rizin/releases/download/v0.7.0/rizin-src-v0.7.0.tar.xz
+https://github.com/rizinorg/rizin/releases/download/v0.7.1/rizin-src-v0.7.1.tar.xz
 https://github.com/rmyorston/pdpmake/archive/refs/tags/1.4.0.tar.gz
 https://github.com/rockdaboot/libpsl/releases/download/0.21.2/libpsl-0.21.2.tar.gz
 https://github.com/rockdaboot/libpsl/releases/download/0.21.5/libpsl-0.21.5.tar.gz
@@ -1887,6 +1894,7 @@ https://gitlab.gnome.org/GNOME/d-spy/-/archive/1.9.0/d-spy-1.9.0.tar.bz2
 https://gitlab.gnome.org/GNOME/gcr/-/archive/3.41.1/gcr-3.41.1.tar.bz2
 https://gitlab.gnome.org/GNOME/gcr/-/archive/4.1.0/gcr-4.1.0.tar.bz2
 https://gitlab.gnome.org/GNOME/gcr/-/archive/4.2.0/gcr-4.2.0.tar.bz2
+https://gitlab.gnome.org/GNOME/gcr/-/archive/4.2.1/gcr-4.2.1.tar.bz2
 https://gitlab.gnome.org/GNOME/glib-networking/-/archive/2.76.1/glib-networking-2.76.1.tar.bz2
 https://gitlab.gnome.org/GNOME/glib-networking/-/archive/2.78.0/glib-networking-2.78.0.tar.bz2
 https://gitlab.gnome.org/GNOME/glib-networking/-/archive/2.78.1/glib-networking-2.78.1.tar.bz2
@@ -2083,6 +2091,7 @@ https://secure.nic.cz/files/knot-dns/knot-3.3.2.tar.xz
 https://secure.nic.cz/files/knot-dns/knot-3.3.3.tar.xz
 https://secure.nic.cz/files/knot-dns/knot-3.3.4.tar.xz
 https://secure.nic.cz/files/knot-resolver/knot-resolver-5.6.0.tar.xz
+https://security.appspot.com/downloads/vsftpd-3.0.5.tar.gz
 https://skarnet.org/software/execline/execline-2.8.2.0.tar.gz
 https://skarnet.org/software/mdevd/mdevd-0.1.5.1.tar.gz
 https://skarnet.org/software/nsss/nsss-0.2.0.1.tar.gz
