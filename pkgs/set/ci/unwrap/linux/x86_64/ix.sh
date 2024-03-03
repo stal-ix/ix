@@ -37,6 +37,7 @@
 #}
 
 {% block run_deps %}
+bin/nfs/ganesha
 bin/prometheus
 bin/mdns/dns
 bin/avahi/dns
