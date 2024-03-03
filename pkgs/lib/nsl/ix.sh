@@ -2,5 +2,5 @@
 
 {% block lib_deps %}
 lib/tirpc
-lib/nsl/tirpc
+lib/nsl/naked
 {% endblock %}

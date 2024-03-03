@@ -19,9 +19,9 @@ lib/acl
 lib/dbus
 lib/urcu
 lib/kernel
-lib/ntirpc
 lib/execinfo
 lib/linux/util
+bin/nfs/ganesha/ntirpc
 {% endblock %}
 
 {% block bld_tool %}

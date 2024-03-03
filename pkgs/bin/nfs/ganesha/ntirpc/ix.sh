@@ -8,8 +8,8 @@ sha:c831398aa282cfb8b554c3301e7edb3334342405d222d88e1bef255d9a2b964f
 {% block lib_deps %}
 lib/c
 lib/urcu
-lib/nsl/tirpc
-lib/ntirpc/cdefs
+lib/nsl/naked
+bin/nfs/ganesha/ntirpc/cdefs
 {% endblock %}
 
 {% block cpp_missing %}
