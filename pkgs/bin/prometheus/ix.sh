@@ -2,5 +2,6 @@
 
 {% block run_deps %}
 bin/prometheus/d
+bin/prometheus/ui
 bin/prometheus/tool
 {% endblock %}
