@@ -9,7 +9,7 @@ sha:c831398aa282cfb8b554c3301e7edb3334342405d222d88e1bef255d9a2b964f
 lib/c
 lib/urcu
 lib/nsl/naked
-bin/nfs/ganesha/ntirpc/cdefs
+bin/nfs/ganesha/cdefs
 {% endblock %}
 
 {% block cpp_missing %}
