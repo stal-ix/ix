@@ -1560,6 +1560,7 @@ https://github.com/rhboot/efivar/archive/refs/tags/38.tar.gz
 https://github.com/rhboot/efivar/archive/refs/tags/39.tar.gz
 https://github.com/rizinorg/rizin/releases/download/v0.4.0/rizin-src-v0.4.0.tar.xz
 https://github.com/rizinorg/rizin/releases/download/v0.7.0/rizin-src-v0.7.0.tar.xz
+https://github.com/rizinorg/rizin/releases/download/v0.7.1/rizin-src-v0.7.1.tar.xz
 https://github.com/rmyorston/pdpmake/archive/refs/tags/1.4.0.tar.gz
 https://github.com/rockdaboot/libpsl/releases/download/0.21.2/libpsl-0.21.2.tar.gz
 https://github.com/rockdaboot/libpsl/releases/download/0.21.5/libpsl-0.21.5.tar.gz
