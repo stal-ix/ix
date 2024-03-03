@@ -1,8 +1,8 @@
 {% extends '//bin/gdb/t/ix.sh' %}
 
 {% block fetch %}
-https://ftp.gnu.org/gnu/gdb/gdb-14.1.tar.xz
-sha:d66df51276143451fcbff464cc8723d68f1e9df45a6a2d5635a54e71643edb80
+https://ftp.gnu.org/gnu/gdb/gdb-14.2.tar.xz
+sha:2d4dd8061d8ded12b6c63f55e45344881e8226105f4d2a9b234040efa5ce7772
 {% endblock %}
 
 {% block host_libs %}
