@@ -1,8 +1,8 @@
 {% extends '//die/c/wafbase.sh' %}
 
 {% block fetch %}
-https://download.samba.org/pub/samba/stable/samba-4.17.2.tar.gz
-sha:e55ddf4d5178f8c84316abf53c5edd7b35399e3b7d86bcb81b75261c827bb3b8
+https://download.samba.org/pub/samba/stable/samba-4.19.5.tar.gz
+sha:0e2405b4cec29d0459621f4340a1a74af771ec7cffedff43250cad7f1f87605e
 {% endblock %}
 
 {% block bld_libs %}
@@ -11,6 +11,7 @@ lib/z
 lib/aio
 lib/cap
 lib/acl
+lib/dbus
 lib/tirpc
 lib/uring
 lib/unwind
@@ -24,10 +25,16 @@ lib/ini/parser
 lib/bsd/overlay
 {% endblock %}
 
+{% block build_flags %}
+wrap_cc
+shut_up
+{% endblock %}
+
 {% block waf %}${PWD}/buildtools/bin/waf{% endblock %}
 
 {% block patch %}
 sed -e 's|/tmp/|/var/tmp/|g' -i lib/replace/wscript
+sed -e 's|mandatory=True|mandatory=False|' -i lib/replace/wscript
 {% endblock %}
 
 {% block setup_target_flags %}
@@ -49,4 +56,8 @@ bld/perl/yapp
 --without-ad-dc
 --disable-fault-handling
 --without-libarchive
+{% endblock %}
+
+{% block cpp_defines %}
+memset_explicit=memset
 {% endblock %}
