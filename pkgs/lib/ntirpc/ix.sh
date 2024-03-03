@@ -29,4 +29,5 @@ sed -e 's|bits/endian.h|endian.h|' -i src/xdr_float.c
 
 {% block env %}
 export NTIRPC_PREFIX=${out}
+export CPPFLAGS="-DBSDBASED=0 \${CPPFLAGS}"
 {% endblock %}

@@ -16,9 +16,13 @@ cat << EOF > ${out}/include/sys/cdefs.h
 
 #define PTHREAD_MUTEX_ADAPTIVE_NP PTHREAD_MUTEX_DEFAULT
 #define PTHREAD_ADAPTIVE_MUTEX_INITIALIZER_NP PTHREAD_MUTEX_INITIALIZER
-#define bool int
+
+#define bool char
+
 #define rresvport_af(a, b) -1
 #define malloc_trim(x)
+#define innetgr(...) 1
+
 #define __S_IFLNK S_IFLNK
 #define __S_IFDIR S_IFDIR
 #define __S_IFREG S_IFREG
