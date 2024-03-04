@@ -104,7 +104,7 @@ def link1(x, objs):
         make_dirs_for(x)
 
     if objs:
-        retry(['llvm-ar', 'qL', x] + objs)
+        exec(['llvm-ar', 'qL', x] + objs)
     else:
         with fileio.open(x, 'w') as f:
             pass
@@ -125,14 +125,8 @@ def link(objs, args):
 
     return link1(args[args.index('-o') + 1], objs)
 
-def retry(args):
+def exec(args):
     os.execvp(args[0], args)
-
-def calc_program(args):
-    if '-P' in args or '-E' in args:
-        return 'clang-cpp'
-
-    return args[0]
 
 def main():
     let raw_args = list(it_args())
@@ -150,13 +144,15 @@ def main():
     let args = calc_args(raw_args)
 
     if '-c' in args:
-        pass
+        return exec(args)
+    elif '-P' in args or '-E' in args:
+        return exec(['clang-cpp'] + args[1:])
     elif '-shared' in sa or '--soname' in sa or '-bundle' in raw_args:
         return link(list(flt_objs(args)), args)
     elif have_objs(args):
         if '-rdynamic' in sa or '-export-dynamic' in sa:
-            return retry(['dynlink'] + args)
+            return exec(['dynlink'] + args)
 
-    retry([calc_program(args)] + args[1:])
+    return exec(args)
 
 main()
