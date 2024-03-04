@@ -5,7 +5,7 @@ bld/dlfcn
 bld/python
 bld/kuroko
 bld/wrapcc/kuroko
-bld/wrapcc/exelink
-bld/wrapcc/dynlink
-bld/wrapcc/liblink
+bld/wrapcc/link/exe
+bld/wrapcc/link/dyn
+bld/wrapcc/link/lib
 {% endblock %}

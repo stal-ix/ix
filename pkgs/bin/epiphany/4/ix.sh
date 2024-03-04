@@ -8,7 +8,7 @@ lib/mesa/glesv2/dl
 {% endblock %}
 
 {% block std_env %}
-bld/wrapcc/dynlink/new
+bld/wrapcc/link/dyn/new
 {{super()}}
 {% endblock %}
 
