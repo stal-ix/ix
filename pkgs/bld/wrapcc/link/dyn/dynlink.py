@@ -47,5 +47,9 @@ def it_syms():
 
 dprog = '\n'.join(it_syms())
 cprog = subprocess.check_output(['dl_stubs'], input=dprog.encode())
-subprocess.check_output([comp, '-o', temp, '-c', '-x', 'c', '-'], input=cprog)
-subprocess.check_output([comp] + args + [temp])
+
+try:
+    subprocess.check_output([comp, '-o', temp, '-c', '-x', 'c', '-'], input=cprog)
+    subprocess.check_output(['exelink', comp] + args + [temp])
+finally:
+    os.unlink(temp)

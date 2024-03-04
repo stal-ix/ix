@@ -24,7 +24,7 @@ lib/gsettings/desktop/schemas
 {% endblock %}
 
 {% block bld_tool %}
-bld/wrapcc/link/dyn/new
+bld/wrapcc/link/new
 bld/gettext
 bld/dlfcn
 {% endblock %}
@@ -40,6 +40,7 @@ introspection=false
 
 {% block build_flags %}
 shut_up
+wrap_cc
 {% endblock %}
 
 {% block patch %}
@@ -62,12 +63,14 @@ func=register_evince_backend
 for x in pdf comics djvu tiff; do
     echo "${x}document ${func} ${func}_${x}"
 
-    for l in obj/backend/lib${x}document.a.p/*.o; do
+    for l in obj/backend/lib${x}document.*.p/*.o; do
         llvm-objcopy --preserve-dates --redefine-sym "${func}=${func}_${x}" ${l}
     done
 done | dl_stubs > stub.c
 
-dynlink clang++ -o evincexxx stub.c $(find -type f -name '*.o' | grep -v 'evinced.p' | grep -v 'test-')
+find .
+
+clang -o evincexxx stub.c $(find -type f -name '*.o' | grep -v 'evinced.p' | grep -v 'test-')
 {% endblock %}
 
 {% block install %}

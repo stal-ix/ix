@@ -6,6 +6,8 @@ import json
 import hashlib
 import subprocess
 
+print(f'EXELINK {sys.argv}', file=sys.stderr)
+
 uuid = hashlib.md5(json.dumps(sys.argv).encode()).hexdigest()
 temp = os.environ['tmp'] + f'/{uuid}.o'
 comp = sys.argv[1]
@@ -56,10 +58,18 @@ def it_parts():
     yield '\n'.join([x + ';' for x in call])
     yield '}'
 
-cprog = '\n'.join(it_parts()).strip() + '\n'
+def main():
+    try:
+        cprog = '\n'.join(it_parts()).strip() + '\n'
+    except Exception as e:
+        return subprocess.check_call(sys.argv[1:])
 
-print(sys.argv)
-print(cprog, file=sys.stderr)
+    print(cprog, file=sys.stderr)
 
-subprocess.check_output(['clang', '-o', temp, '-c', '-x', 'c', '-'], input=cprog.encode())
-subprocess.check_output([comp] + args + [temp])
+    try:
+        subprocess.check_output(['clang', '-o', temp, '-c', '-x', 'c', '-'], input=cprog.encode())
+        subprocess.check_output([comp] + args + [temp])
+    finally:
+        os.unlink(temp)
+
+main()
