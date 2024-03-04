@@ -20,10 +20,13 @@ def link_lib(x, objs):
         with open(x, 'w') as f:
             pass
 
-    tmpdir = os.environ['tmp'] + '/lib'
-    mkdir(tmpdir)
+
     f = os.path.basename(x)
-    subprocess.check_call(['cp', x, tmpdir + '/' + f[:f.index('.')] + '.a'])
+    
+    if '.so' in f or '.dylib' in f:
+        tmpdir = os.environ['tmp'] + '/lib'
+        mkdir(tmpdir)
+        subprocess.check_call(['cp', x, tmpdir + '/' + f[:f.index('.')] + '.a'])
 
 print(f'LIBLINK {sys.argv}', file=sys.stderr)
 link_lib(sys.argv[1], sys.argv[2:])
