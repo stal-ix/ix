@@ -223,6 +223,7 @@ https://download.open-mpi.org/release/hwloc/v2.9/hwloc-2.9.0.tar.bz2
 https://download.qemu.org/qemu-8.0.0.tar.xz
 https://download.samba.org/pub/rsync/src/rsync-3.2.7.tar.gz
 https://download.samba.org/pub/samba/stable/samba-4.17.2.tar.gz
+https://download.samba.org/pub/samba/stable/samba-4.19.5.tar.gz
 https://download.savannah.gnu.org/releases/lzip/lzip-1.22.tar.gz
 https://download.savannah.gnu.org/releases/lzip/lzip-1.24.1.tar.gz
 https://download.savannah.gnu.org/releases/lzip/lzip-1.24.tar.gz
@@ -2073,6 +2074,7 @@ https://poppler.freedesktop.org/poppler-23.11.0.tar.xz
 https://poppler.freedesktop.org/poppler-23.12.0.tar.xz
 https://poppler.freedesktop.org/poppler-24.01.0.tar.xz
 https://poppler.freedesktop.org/poppler-24.02.0.tar.xz
+https://poppler.freedesktop.org/poppler-24.03.0.tar.xz
 https://pwmt.org/projects/zathura-djvu/download/zathura-djvu-0.2.9.tar.xz
 https://pwmt.org/projects/zathura-pdf-poppler/download/zathura-pdf-poppler-0.3.1.tar.xz
 https://raw.githubusercontent.com/AppImageCommunity/libappimage/9c1fae809dedbb3015e9cd5b46e2b5aab06df36e/src/patches/squashfuse.patch
