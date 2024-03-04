@@ -16,15 +16,6 @@ cd tools/power/cpupower
 bld/gettext
 {% endblock %}
 
-{% block setup_target_flags %}
-export LDFLAGS="-L${PWD} ${LDFLAGS}"
-{% endblock %}
-
-{% block build %}
-ln -s libcpupower.so libcpupower.a
-{{super()}}
-{% endblock %}
-
 {% block make_flags %}
 CC=clang
 INSTALL=install
