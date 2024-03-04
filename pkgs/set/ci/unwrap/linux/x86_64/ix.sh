@@ -37,6 +37,7 @@
 #}
 
 {% block run_deps %}
+bin/sndio
 bin/vsftpd
 bin/nfs/ganesha
 bin/prometheus

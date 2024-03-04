@@ -153,6 +153,6 @@ def main():
         if '-rdynamic' in sa or '-export-dynamic' in sa:
             return exec(['dynlink'] + args)
 
-    return exec(args)
+    return exec(['exelink'] + args)
 
 main()
