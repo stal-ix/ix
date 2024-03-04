@@ -22,7 +22,7 @@ def link_lib(x, objs):
 
 
     f = os.path.basename(x)
-    
+
     if '.so' in f or '.dylib' in f:
         tmpdir = os.environ['tmp'] + '/lib'
         mkdir(tmpdir)
