@@ -20,7 +20,6 @@ def link_lib(x, objs):
         with open(x, 'w') as f:
             pass
 
-
     f = os.path.basename(x)
 
     if '.so' in f or '.dylib' in f:
