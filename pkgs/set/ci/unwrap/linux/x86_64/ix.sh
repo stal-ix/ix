@@ -140,7 +140,7 @@ bin/zathura/unwrap/mupdf
 bin/zathura/unwrap/poppler
 bin/minijail
 bin/hysteria
-bin/ipget
+bin/ip/get
 bin/clang/17
 bin/sslh
 bin/coreutils/9/4
