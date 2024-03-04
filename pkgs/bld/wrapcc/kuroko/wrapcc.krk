@@ -68,6 +68,8 @@ def flt_objs(argv):
     for x in argv:
         if x.endswith('.o'):
             yield x
+        elif x.endswith('.os'):
+            yield x
         elif x.startswith('-Wl,'):
             pass
         elif '/store/' in x:
@@ -78,6 +80,9 @@ def flt_objs(argv):
 def have_objs(args):
     for x in args:
         if x.endswith('.o'):
+            return True
+
+        if x.endswith('.os'):
             return True
 
 def link_lib(x, objs):
