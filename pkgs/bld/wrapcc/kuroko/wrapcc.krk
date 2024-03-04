@@ -119,6 +119,8 @@ def main():
 
     if '-c' in args:
         return exec(args)
+    elif '--version' in args:
+        return exec(args)
     elif '-P' in args or '-E' in args:
         return exec(['clang-cpp'] + args[1:])
     elif '-shared' in sa or '--soname' in sa or '-bundle' in raw_args:
