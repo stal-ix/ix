@@ -1,8 +1,20 @@
 {% extends '//die/c/cmake.sh' %}
 
+
 {% block fetch %}
+https://poppler.freedesktop.org/poppler-24.02.0.tar.xz
+sha:19187a3fdd05f33e7d604c4799c183de5ca0118640c88b370ddcf3136343222e
+{#
+/home/pg/ix_root/build/V358i8DzE3ImX5oC/src/src/extension/internal/pdfinput/svg-builder.cpp:1161:9: error: cannot initialize a variable of type 'int' with an rvalue of type 'Type'
+ 1161 |     int type = func->getType();
+      |         ^      ~~~~~~~~~~~~~~~
+/home/pg/ix_root/build/V358i8DzE3ImX5oC/src/src/extension/internal/pdfinput/svg-builder.cpp:1186:54: error: invalid operands to binary expression ('Type' and 'int')
+ 1186 |             if (stitchingFunc->getFunc(i)->getType() == 2) {    // process exponential fxn
+      |                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ^  ~
+2 errors generated.
 https://poppler.freedesktop.org/poppler-24.03.0.tar.xz
 sha:bafbf0db5713dec25b5d16eb2cd87e4a62351cdc40f050c3937cd8dd6882d446
+#}
 {% endblock %}
 
 {% block lib_deps %}
