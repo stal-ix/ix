@@ -835,7 +835,7 @@ bin/iozone
 bin/kmod
 bin/svg2png
 bin/llama
-bin/iputils
+bin/ip/utils
 bin/wayst
 bin/tex/info
 bin/feather/pad
