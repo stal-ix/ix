@@ -37,6 +37,10 @@ sed -e 's|/tmp/|/var/tmp/|g' -i lib/replace/wscript
 sed -e 's|mandatory=True|mandatory=False|' -i lib/replace/wscript
 {% endblock %}
 
+{% block cpp_includes %}
+${PWD}/third_party/heimdal/lib/hcrypto
+{% endblock %}
+
 {% block setup_target_flags %}
 export PYTHONHASHSEED=1
 {% endblock %}
