@@ -54,10 +54,17 @@ bld/perl/yapp
 --without-ldap
 --disable-python
 --without-ad-dc
+--without-gettext
+--without-systemd
 --disable-fault-handling
 --without-libarchive
+--with-static-modules=ALL
 {% endblock %}
 
-{% block cpp_defines %}
-memset_explicit=memset
+{% block configure %}
+{{super()}}
+cat << EOF >> bin/default/include/config.h
+#pragma once
+#undef HAVE_MEMSET_EXPLICIT
+EOF
 {% endblock %}
