@@ -7,4 +7,5 @@ bld/kuroko
 bld/wrapcc/kuroko
 bld/wrapcc/exelink
 bld/wrapcc/dynlink
+bld/wrapcc/liblink
 {% endblock %}

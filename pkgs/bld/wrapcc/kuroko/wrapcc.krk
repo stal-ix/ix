@@ -80,34 +80,8 @@ def have_objs(args):
         if x.endswith('.o'):
             return True
 
-def iter_dirs(path):
-    let cur = ''
-
-    for ch in path:
-        if ch == '/':
-            if cur:
-                yield cur
-                cur = ''
-            else:
-                cur += ch
-
-def make_dirs_for(path):
-    for d in iter_dirs(path):
-        try:
-            os.mkdir(d)
-        except OSError as e:
-            if 'File exists' not in str(e):
-                raise e
-
-def link1(x, objs):
-    if '/' in x:
-        make_dirs_for(x)
-
-    if objs:
-        exec(['llvm-ar', 'qL', x] + objs)
-    else:
-        with fileio.open(x, 'w') as f:
-            pass
+def link_lib(x, objs):
+    exec(['liblink'] + [x] + objs)
 
 def link(objs, args):
     for x in args:
@@ -115,15 +89,15 @@ def link(objs, args):
             continue
 
         if '.so' in x:
-            return link1(x, objs)
+            return link_lib(x, objs)
 
         if '.dylib' in x:
-            return link1(x, objs)
+            return link_lib(x, objs)
 
         if '.dll' in x:
-            return link1(x, objs)
+            return link_lib(x, objs)
 
-    return link1(args[args.index('-o') + 1], objs)
+    return link_lib(args[args.index('-o') + 1], objs)
 
 def exec(args):
     os.execvp(args[0], args)

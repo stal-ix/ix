@@ -1,10 +1,5 @@
 {% extends '//bin/mdns/responder/t/ix.sh' %}
 
-{% block bld_libs %}
-{{super()}}
-bin/mdns/responder/lib
-{% endblock %}
-
 {% block make_flags %}
 {{super()}}
 ETCBASE=${out}/etc
