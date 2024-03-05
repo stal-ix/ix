@@ -135,6 +135,7 @@ https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.6.10.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.6.14.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.6.18.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.6.2.tar.xz
+https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.6.20.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.6.3.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.6.4.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.6.5.tar.xz
@@ -1810,6 +1811,7 @@ https://github.com/wxWidgets/wxWidgets/releases/download/v3.2.4/wxWidgets-3.2.4.
 https://github.com/ximion/appstream/archive/refs/tags/v0.16.3.tar.gz
 https://github.com/xiph/flac/archive/refs/tags/1.4.3.tar.gz
 https://github.com/xiph/opus/archive/refs/tags/v1.4.tar.gz
+https://github.com/xiph/opus/archive/refs/tags/v1.5.1.tar.gz
 https://github.com/xkbcommon/libxkbcommon/archive/refs/tags/xkbcommon-1.5.0.tar.gz
 https://github.com/xkbcommon/libxkbcommon/archive/refs/tags/xkbcommon-1.6.0.tar.gz
 https://github.com/xxxserxxx/gotop/archive/refs/tags/v4.2.0.tar.gz

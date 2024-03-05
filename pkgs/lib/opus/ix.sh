@@ -1,10 +1,12 @@
 {% extends '//die/c/cmake.sh' %}
 
-{% set version %}1.4{% endset %}
+{% block version %}
+1.5.1
+{% endblock %}
 
 {% block fetch %}
-https://github.com/xiph/opus/archive/refs/tags/v{{version}}.tar.gz
-sha:659e6b223e42a51b0a898632b9a5f406ccd5c2e00aa526ddd1264789774b94e5
+https://github.com/xiph/opus/archive/refs/tags/v{{self.version().strip()}}.tar.gz
+sha:7ce44ef3d335a3268f26be7d53bb3bed7205b34eaf80bf92a99e69d490afe9d9
 {% endblock %}
 
 {% block lib_deps %}
@@ -17,7 +19,7 @@ lib/c
 
 {% block install %}
 {{super()}}
-sed -e 's|Version:.*|Version: {{version}}|' -i ${out}/lib/pkgconfig/opus.pc
+sed -e 's|Version:.*|Version: {{self.version().strip()}}|' -i ${out}/lib/pkgconfig/opus.pc
 {% endblock %}
 
 {% block env %}
