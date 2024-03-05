@@ -14,8 +14,12 @@ bld/fake/binutils
 {% endblock %}
 
 {% block make_flags %}
-LD=ld
+LD=clang
 LINKER_TYPE=lld
+X_LINKER_TYPE=lld
+X_LINKER_VERSION=17.0.6
+LINKER_VERSION=17.0.6
+LDFLAGS=
 BINDIR=${out}/bin
 LIBDIR=${out}/lib
 INCDIR=${out}/include
