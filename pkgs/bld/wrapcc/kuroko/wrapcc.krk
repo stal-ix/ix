@@ -68,6 +68,8 @@ def flt_objs(argv):
     for x in argv:
         if x.endswith('.o'):
             yield x
+        elif x.endswith('.os'):
+            yield x
         elif x.startswith('-Wl,'):
             pass
         elif '/store/' in x:
@@ -80,34 +82,11 @@ def have_objs(args):
         if x.endswith('.o'):
             return True
 
-def iter_dirs(path):
-    let cur = ''
+        if x.endswith('.os'):
+            return True
 
-    for ch in path:
-        if ch == '/':
-            if cur:
-                yield cur
-                cur = ''
-            else:
-                cur += ch
-
-def make_dirs_for(path):
-    for d in iter_dirs(path):
-        try:
-            os.mkdir(d)
-        except OSError as e:
-            if 'File exists' not in str(e):
-                raise e
-
-def link1(x, objs):
-    if '/' in x:
-        make_dirs_for(x)
-
-    if objs:
-        retry(['llvm-ar', 'qL', x] + objs)
-    else:
-        with fileio.open(x, 'w') as f:
-            pass
+def link_lib(x, objs):
+    exec(['liblink'] + [x] + objs)
 
 def link(objs, args):
     for x in args:
@@ -115,24 +94,18 @@ def link(objs, args):
             continue
 
         if '.so' in x:
-            return link1(x, objs)
+            return link_lib(x, objs)
 
         if '.dylib' in x:
-            return link1(x, objs)
+            return link_lib(x, objs)
 
         if '.dll' in x:
-            return link1(x, objs)
+            return link_lib(x, objs)
 
-    return link1(args[args.index('-o') + 1], objs)
+    return link_lib(args[args.index('-o') + 1], objs)
 
-def retry(args):
+def exec(args):
     os.execvp(args[0], args)
-
-def calc_program(args):
-    if '-P' in args or '-E' in args:
-        return 'clang-cpp'
-
-    return args[0]
 
 def main():
     let raw_args = list(it_args())
@@ -150,13 +123,21 @@ def main():
     let args = calc_args(raw_args)
 
     if '-c' in args:
-        pass
+        return exec(args)
+    elif '--version' in args:
+        return exec(args)
+    elif '-Wl,--version' in args:
+        return exec(args)
+    elif '-fsyntax-only' in args:
+        return exec(args)
+    elif '-P' in args or '-E' in args:
+        return exec(['clang-cpp'] + args[1:])
     elif '-shared' in sa or '--soname' in sa or '-bundle' in raw_args:
         return link(list(flt_objs(args)), args)
     elif have_objs(args):
         if '-rdynamic' in sa or '-export-dynamic' in sa:
-            return retry(['dynlink'] + args)
+            return exec(['dynlink'] + args)
 
-    retry([calc_program(args)] + args[1:])
+    return exec(['exelink'] + args)
 
 main()

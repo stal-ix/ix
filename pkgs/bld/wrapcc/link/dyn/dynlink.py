@@ -42,10 +42,18 @@ def sym_list():
 
 def it_syms():
     for s in sorted(sym_list()):
-        if s != 'main':
+        if s.startswith('_'):
+            pass
+        elif s == 'main':
+            pass
+        else:
             yield f'rdynamic {s} {s}'
 
-dprog = '\n'.join(it_syms())
+dprog = '\n'.join(sorted(frozenset(it_syms())))
 cprog = subprocess.check_output(['dl_stubs'], input=dprog.encode())
-subprocess.check_output([comp, '-o', temp, '-c', '-x', 'c', '-'], input=cprog)
-subprocess.check_output([comp] + args + [temp])
+
+try:
+    subprocess.check_output([comp, '-o', temp, '-c', '-x', 'c', '-'], input=cprog)
+    subprocess.check_output(['exelink', comp] + args + [temp])
+finally:
+    os.unlink(temp)

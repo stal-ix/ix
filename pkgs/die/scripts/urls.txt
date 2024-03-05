@@ -94,6 +94,7 @@ http://www.squid-cache.org/Versions/v6/squid-6.4.tar.xz
 http://www.squid-cache.org/Versions/v6/squid-6.5.tar.xz
 http://www.squid-cache.org/Versions/v6/squid-6.6.tar.xz
 http://www.squid-cache.org/Versions/v6/squid-6.7.tar.xz
+http://www.squid-cache.org/Versions/v6/squid-6.8.tar.xz
 http://zlib.net/zlib-1.3.1.tar.xz
 http://zlib.net/zlib-1.3.tar.xz
 https://7-zip.org/a/7z2200-src.tar.xz
@@ -148,6 +149,7 @@ https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.7.3.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.7.4.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.7.5.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.7.6.tar.xz
+https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.7.8.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.7.tar.xz
 https://cmocka.org/files/1.1/cmocka-1.1.7.tar.xz
 https://codeberg.org/dnkl/fcft/archive/2.5.0.tar.gz
@@ -223,6 +225,7 @@ https://download.open-mpi.org/release/hwloc/v2.9/hwloc-2.9.0.tar.bz2
 https://download.qemu.org/qemu-8.0.0.tar.xz
 https://download.samba.org/pub/rsync/src/rsync-3.2.7.tar.gz
 https://download.samba.org/pub/samba/stable/samba-4.17.2.tar.gz
+https://download.samba.org/pub/samba/stable/samba-4.19.5.tar.gz
 https://download.savannah.gnu.org/releases/lzip/lzip-1.22.tar.gz
 https://download.savannah.gnu.org/releases/lzip/lzip-1.24.1.tar.gz
 https://download.savannah.gnu.org/releases/lzip/lzip-1.24.tar.gz
@@ -474,6 +477,7 @@ https://git.savannah.nongnu.org/cgit/attr.git/snapshot/attr-2.5.1.tar.gz
 https://git.savannah.nongnu.org/cgit/attr.git/snapshot/attr-2.5.2.tar.gz
 https://git.sr.ht/~adnano/wmenu/archive/0.1.4.tar.gz
 https://git.sr.ht/~adnano/wmenu/archive/0.1.6.tar.gz
+https://git.sr.ht/~adnano/wmenu/archive/0.1.7.tar.gz
 https://git.sr.ht/~brocellous/wlrctl/archive/v0.2.2.tar.gz
 https://git.sr.ht/~delthas/senpai/archive/v0.3.0.tar.gz
 https://git.sr.ht/~emersion/basu/archive/v0.2.1.tar.gz
@@ -680,6 +684,7 @@ https://github.com/NixOS/nix/archive/refs/tags/2.19.3.tar.gz
 https://github.com/NixOS/nix/archive/refs/tags/2.20.1.tar.gz
 https://github.com/NixOS/nix/archive/refs/tags/2.20.2.tar.gz
 https://github.com/NixOS/nix/archive/refs/tags/2.20.3.tar.gz
+https://github.com/NixOS/nix/archive/refs/tags/2.20.4.tar.gz
 https://github.com/NixOS/patchelf/archive/refs/tags/0.18.0.tar.gz
 https://github.com/Novum/vkQuake/archive/refs/tags/1.30.1.tar.gz
 https://github.com/Old-Man-Programmer/tree/archive/refs/tags/2.1.1.tar.gz
@@ -1315,6 +1320,7 @@ https://github.com/managarm/mlibc/archive/refs/tags/3.0.0-rc2.tar.gz
 https://github.com/martanne/vis/archive/refs/tags/v0.8.tar.gz
 https://github.com/martijnvanbrummelen/nwipe/archive/refs/tags/v0.34.tar.gz
 https://github.com/martijnvanbrummelen/nwipe/archive/refs/tags/v0.35.tar.gz
+https://github.com/martijnvanbrummelen/nwipe/archive/refs/tags/v0.36.tar.gz
 https://github.com/martinus/robin-hood-hashing/archive/refs/tags/3.11.3.tar.gz
 https://github.com/martinvonz/jj/archive/refs/tags/v0.13.0.tar.gz
 https://github.com/marzer/tomlplusplus/archive/refs/tags/v3.4.0.tar.gz
@@ -1844,6 +1850,7 @@ https://gitlab.com/mbunkus/mkvtoolnix/-/archive/release-80.0/mkvtoolnix-release-
 https://gitlab.com/mbunkus/mkvtoolnix/-/archive/release-81.0/mkvtoolnix-release-81.0.tar.bz2
 https://gitlab.com/procps-ng/procps/-/archive/v4.0.4/procps-v4.0.4.tar.bz2
 https://gitlab.com/psmisc/psmisc/-/archive/v23.6/psmisc-v23.6.tar.bz2
+https://gitlab.com/psmisc/psmisc/-/archive/v23.7/psmisc-v23.7.tar.bz2
 https://gitlab.com/qemu-project/keycodemapdb/-/archive/22b8996dba9041874845c7446ce89ec4ae2b713d/keycodemapdb-22b8996dba9041874845c7446ce89ec4ae2b713d.tar.bz2
 https://gitlab.com/sebholt/qastools/-/archive/v1.3.0/qastools-v1.3.0.tar.bz2
 https://gitlab.com/sebholt/qastools/-/archive/v1.4.0/qastools-v1.4.0.tar.bz2
@@ -2040,6 +2047,7 @@ https://mirrors.edge.kernel.org/pub/linux/network/wireless/iwd-2.12.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/network/wireless/iwd-2.13.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/network/wireless/iwd-2.14.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/network/wireless/iwd-2.15.tar.xz
+https://mirrors.edge.kernel.org/pub/linux/network/wireless/iwd-2.16.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/network/wireless/iwd-2.8.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/network/wireless/iwd-2.9.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/utils/kbd/kbd-2.6.1.tar.xz
@@ -2073,6 +2081,7 @@ https://poppler.freedesktop.org/poppler-23.11.0.tar.xz
 https://poppler.freedesktop.org/poppler-23.12.0.tar.xz
 https://poppler.freedesktop.org/poppler-24.01.0.tar.xz
 https://poppler.freedesktop.org/poppler-24.02.0.tar.xz
+https://poppler.freedesktop.org/poppler-24.03.0.tar.xz
 https://pwmt.org/projects/zathura-djvu/download/zathura-djvu-0.2.9.tar.xz
 https://pwmt.org/projects/zathura-pdf-poppler/download/zathura-pdf-poppler-0.3.1.tar.xz
 https://raw.githubusercontent.com/AppImageCommunity/libappimage/9c1fae809dedbb3015e9cd5b46e2b5aab06df36e/src/patches/squashfuse.patch

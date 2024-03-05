@@ -1,10 +1,5 @@
 {% extends '//die/proxy.sh' %}
 
-{% block run_deps %}
-bld/dlfcn
-bld/python
-{% endblock %}
-
 {% block install %}
 cd ${out}; mkdir bin; cd bin
 

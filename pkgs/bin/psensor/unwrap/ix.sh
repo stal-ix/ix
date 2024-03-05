@@ -28,6 +28,9 @@ bin/muslstack
 export GLIB_COMPILE_SCHEMAS=glib-compile-schemas
 {% endblock %}
 
+{% block make_no_thrs %}
+{% endblock %}
+
 {% block build_flags %}
 wrap_cc
 {% endblock %}

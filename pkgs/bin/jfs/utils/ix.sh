@@ -19,12 +19,7 @@ _PATH_MNTTAB=\\\"/proc/mounts\\\"
 export CFLAGS="-fcommon ${CFLAGS}"
 {% endblock %}
 
-{% block patch %}
-patch -p1 << EOF
-{% include '0.diff' %}
-EOF
-
-patch -p1 << EOF
-{% include '1.diff' %}
-EOF
+{% block cpp_missing %}
+sys/sysmacros.h
+stdint.h
 {% endblock %}

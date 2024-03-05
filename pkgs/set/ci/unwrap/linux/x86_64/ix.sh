@@ -37,6 +37,7 @@
 #}
 
 {% block run_deps %}
+bin/sndio
 bin/vsftpd
 bin/nfs/ganesha
 bin/prometheus
@@ -139,7 +140,7 @@ bin/zathura/unwrap/mupdf
 bin/zathura/unwrap/poppler
 bin/minijail
 bin/hysteria
-bin/ipget
+bin/ip/get
 bin/clang/17
 bin/sslh
 bin/coreutils/9/4
@@ -157,7 +158,7 @@ bin/knot/resolver
 bin/whois
 bin/esbuild
 bin/redo
-bin/iproute2
+bin/ip/route2
 bin/sddm
 bin/ghost/script
 bin/havoc
@@ -834,7 +835,7 @@ bin/iozone
 bin/kmod
 bin/svg2png
 bin/llama
-bin/iputils
+bin/ip/utils
 bin/wayst
 bin/tex/info
 bin/feather/pad

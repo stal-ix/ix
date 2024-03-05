@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://gitlab.com/psmisc/psmisc/-/archive/v23.6/psmisc-v23.6.tar.bz2
-sha:91573ca0a1a50bd491b7c3cbe400126b0dadef9a2e328030d6469bb2448e0794
+https://gitlab.com/psmisc/psmisc/-/archive/v23.7/psmisc-v23.7.tar.bz2
+sha:c4b1df2e671e8194f6c3063e43cb9afa26cbe9859f1026ff6ad258ac562804f4
 {% endblock %}
 
 {% block conf_ver %}

@@ -1,4 +1,4 @@
-{% extends '//lib/sndio/t/ix.sh' %}
+{% extends 't/ix.sh' %}
 
 {% block configure_flags %}--disable-alsa{% endblock %}
 

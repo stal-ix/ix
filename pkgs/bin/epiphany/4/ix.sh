@@ -8,18 +8,14 @@ lib/mesa/glesv2/dl
 {% endblock %}
 
 {% block std_env %}
-bld/wrapcc/dynlink/new
+bld/wrapcc/link/xxx
+bld/wrapcc/link/new
 {{super()}}
 {% endblock %}
 
 {% block build_flags %}
 {{super()}}
 wrap_cc
-{% endblock %}
-
-{% block configure %}
-export LDFLAGS="-rdynamic ${LDFLAGS}"
-{{super()}}
 {% endblock %}
 
 {% block patch %}
