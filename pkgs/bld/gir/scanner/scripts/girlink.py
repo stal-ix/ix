@@ -14,21 +14,12 @@ if '-E' in sys.argv:
     subprocess.check_call(sys.argv[1:])
     sys.exit(0)
 
+print(f'GIRLINK {sys.argv}', file=sys.stderr)
+
 uuid = hashlib.md5(json.dumps(sys.argv).encode()).hexdigest()
 temp = os.environ['tmp'] + f'/{uuid}.o'
 comp = sys.argv[1]
-
-def flt_args(args):
-    for x in args:
-        # TODO(pg): need better solution for Xlinker
-        if x in ('-Xlinker', '-rdynamic', '-export-dynamic'):
-            pass
-        else:
-            yield x
-
-args = list(flt_args(sys.argv[2:]))
-
-print(f'GIRLINK {sys.argv}', file=sys.stderr)
+args = sys.argv[2:]
 
 def it_obj():
     for x in args:

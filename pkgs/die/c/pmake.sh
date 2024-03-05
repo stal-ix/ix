@@ -22,9 +22,14 @@ INCDIR=${out}/include
 SHAREDIR=${out}/share
 MK_TESTS=no
 MK_INSTALL_AS_USER=yes
+BINOWN=$(whoami)
+BINGRP=$(whoami)
+SHAREOWN=$(whoami)
+SHAREGRP=$(whoami)
 {% endblock %}
 
 {% block step_install %}
 mkdir -p ${out}/bin ${out}/lib ${out}/include ${out}/share/man/man1
 {{super()}}
+rm -rf ${out}/bin/.debug
 {% endblock %}

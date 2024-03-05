@@ -1,8 +1,8 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://github.com/rizinorg/rizin/releases/download/v0.7.1/rizin-src-v0.7.1.tar.xz
-sha:149dc8eed4070089b6e4e65071d55f571c0d2e4c72d2ee420562a2321308c294
+https://github.com/rizinorg/rizin/releases/download/v0.7.2/rizin-src-v0.7.2.tar.xz
+sha:fcff3fb45ae2b75e3f604bc7a08076e322e6e14def79098186378065ccb3582a
 {% endblock %}
 
 {% block bld_libs %}

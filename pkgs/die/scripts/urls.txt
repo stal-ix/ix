@@ -135,6 +135,7 @@ https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.6.10.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.6.14.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.6.18.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.6.2.tar.xz
+https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.6.20.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.6.3.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.6.4.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.6.5.tar.xz
@@ -1570,6 +1571,7 @@ https://github.com/rhboot/efivar/archive/refs/tags/39.tar.gz
 https://github.com/rizinorg/rizin/releases/download/v0.4.0/rizin-src-v0.4.0.tar.xz
 https://github.com/rizinorg/rizin/releases/download/v0.7.0/rizin-src-v0.7.0.tar.xz
 https://github.com/rizinorg/rizin/releases/download/v0.7.1/rizin-src-v0.7.1.tar.xz
+https://github.com/rizinorg/rizin/releases/download/v0.7.2/rizin-src-v0.7.2.tar.xz
 https://github.com/rmyorston/pdpmake/archive/refs/tags/1.4.0.tar.gz
 https://github.com/rockdaboot/libpsl/releases/download/0.21.2/libpsl-0.21.2.tar.gz
 https://github.com/rockdaboot/libpsl/releases/download/0.21.5/libpsl-0.21.5.tar.gz
@@ -1760,6 +1762,7 @@ https://github.com/vcrhonek/hwdata/archive/refs/tags/v0.376.tar.gz
 https://github.com/vcrhonek/hwdata/archive/refs/tags/v0.377.tar.gz
 https://github.com/vcrhonek/hwdata/archive/refs/tags/v0.378.tar.gz
 https://github.com/vcrhonek/hwdata/archive/refs/tags/v0.379.tar.gz
+https://github.com/vcrhonek/hwdata/archive/refs/tags/v0.380.tar.gz
 https://github.com/vector-of-bool/cmrc/archive/refs/tags/2.0.1.tar.gz
 https://github.com/videolabs/libmicrodns/archive/refs/tags/0.2.0.tar.gz
 https://github.com/videolan/dav1d/archive/refs/tags/1.2.1.tar.gz
@@ -1810,6 +1813,7 @@ https://github.com/wxWidgets/wxWidgets/releases/download/v3.2.4/wxWidgets-3.2.4.
 https://github.com/ximion/appstream/archive/refs/tags/v0.16.3.tar.gz
 https://github.com/xiph/flac/archive/refs/tags/1.4.3.tar.gz
 https://github.com/xiph/opus/archive/refs/tags/v1.4.tar.gz
+https://github.com/xiph/opus/archive/refs/tags/v1.5.1.tar.gz
 https://github.com/xkbcommon/libxkbcommon/archive/refs/tags/xkbcommon-1.5.0.tar.gz
 https://github.com/xkbcommon/libxkbcommon/archive/refs/tags/xkbcommon-1.6.0.tar.gz
 https://github.com/xxxserxxx/gotop/archive/refs/tags/v4.2.0.tar.gz
