@@ -16,5 +16,9 @@ export GI_SCANNER_DISABLE_CACHE=1
 exec g-ir-scanner-bin "\${@}"
 EOF
 
+base64 -d << EOF > ${out}/bin/girlink
+{% include 'girlink.py/base64' %}
+EOF
+
 chmod +x ${out}/bin/*
 {% endblock %}
