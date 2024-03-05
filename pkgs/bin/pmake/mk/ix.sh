@@ -6,8 +6,9 @@ sha:ebdb7af04060d0a52e713bab4eba274ab2c9c6b94e657e67b32c80086ccbeabc
 {% endblock %}
 
 {% block install %}
-mkdir ${out}/share
+mkdir -p ${out}/share ${out}/sys/conf
 cp -R share/mk ${out}/share/
+>${out}/sys/conf/newvers.sh
 {% endblock %}
 
 {% block env %}
