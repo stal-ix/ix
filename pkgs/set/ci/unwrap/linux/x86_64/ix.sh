@@ -37,6 +37,7 @@
 #}
 
 {% block run_deps %}
+bin/clang/18/bootstrapped
 bin/sndio
 bin/vsftpd
 bin/nfs/ganesha

@@ -458,6 +458,7 @@ https://git.kernel.org/pub/scm/linux/kernel/git/jejb/efitools.git/snapshot/efito
 https://git.kernel.org/pub/scm/network/iproute2/iproute2.git
 https://git.kernel.org/pub/scm/utils/kernel/kmod/kmod.git/snapshot/kmod-30.tar.gz
 https://git.kernel.org/pub/scm/utils/kernel/kmod/kmod.git/snapshot/kmod-31.tar.gz
+https://git.kernel.org/pub/scm/utils/kernel/kmod/kmod.git/snapshot/kmod-32.tar.gz
 https://git.kernel.org/pub/scm/utils/mdadm/mdadm.git/snapshot/mdadm-4.3.tar.gz
 https://git.kernel.org/pub/scm/utils/stalld/stalld.git/snapshot/stalld-1.17.1.tar.gz
 https://git.kernel.org/pub/scm/utils/stalld/stalld.git/snapshot/stalld-1.19.1.tar.gz
@@ -780,6 +781,7 @@ https://github.com/apernet/hysteria/archive/refs/tags/app/v2.2.1.tar.gz
 https://github.com/apernet/hysteria/archive/refs/tags/app/v2.2.3.tar.gz
 https://github.com/apple-oss-distributions/mDNSResponder/archive/refs/tags/mDNSResponder-2200.80.16.tar.gz
 https://github.com/apple-oss-distributions/patch_cmds/archive/refs/tags/patch_cmds-61.tar.gz
+https://github.com/apple/swift-corelibs-libdispatch/archive/refs/tags/swift-5.10-RELEASE.tar.gz
 https://github.com/apple/swift-corelibs-libdispatch/archive/refs/tags/swift-5.8-RELEASE.tar.gz
 https://github.com/apple/swift-corelibs-libdispatch/archive/refs/tags/swift-5.9-RELEASE.tar.gz
 https://github.com/apple/swift-corelibs-libdispatch/archive/refs/tags/swift-5.9.2-RELEASE.tar.gz
@@ -1028,7 +1030,9 @@ https://github.com/golang/go/archive/refs/tags/go1.21.4.tar.gz
 https://github.com/golang/go/archive/refs/tags/go1.21.5.tar.gz
 https://github.com/golang/go/archive/refs/tags/go1.21.6.tar.gz
 https://github.com/golang/go/archive/refs/tags/go1.21.7.tar.gz
+https://github.com/golang/go/archive/refs/tags/go1.21.8.tar.gz
 https://github.com/golang/go/archive/refs/tags/go1.22.0.tar.gz
+https://github.com/golang/go/archive/refs/tags/go1.22.1.tar.gz
 https://github.com/google/brotli/archive/refs/tags/v1.1.0.tar.gz
 https://github.com/google/crc32c/archive/refs/tags/1.1.2.tar.gz
 https://github.com/google/double-conversion/archive/refs/tags/v3.3.0.tar.gz
@@ -1244,6 +1248,7 @@ https://github.com/libproxy/libproxy/archive/refs/tags/0.5.3.tar.gz
 https://github.com/libproxy/libproxy/archive/refs/tags/0.5.4.tar.gz
 https://github.com/librsync/librsync/releases/download/v2.3.4/librsync-2.3.4.tar.gz
 https://github.com/libsdl-org/SDL/archive/refs/tags/release-2.30.0.tar.gz
+https://github.com/libsdl-org/SDL/archive/refs/tags/release-2.30.1.tar.gz
 https://github.com/libsdl-org/SDL/releases/download/release-2.28.3/SDL2-2.28.3.tar.gz
 https://github.com/libsdl-org/SDL/releases/download/release-2.28.4/SDL2-2.28.4.tar.gz
 https://github.com/libsdl-org/SDL/releases/download/release-2.28.5/SDL2-2.28.5.tar.gz
@@ -1301,6 +1306,7 @@ https://github.com/llvm/llvm-project/releases/download/llvmorg-17.0.3/llvm-proje
 https://github.com/llvm/llvm-project/releases/download/llvmorg-17.0.4/llvm-project-17.0.4.src.tar.xz
 https://github.com/llvm/llvm-project/releases/download/llvmorg-17.0.5/llvm-project-17.0.5.src.tar.xz
 https://github.com/llvm/llvm-project/releases/download/llvmorg-17.0.6/llvm-project-17.0.6.src.tar.xz
+https://github.com/llvm/llvm-project/releases/download/llvmorg-18.1.0/llvm-project-18.1.0.src.tar.xz
 https://github.com/lm-sensors/lm-sensors/archive/refs/tags/V3-6-0.tar.gz
 https://github.com/lsof-org/lsof/archive/refs/tags/4.98.0.tar.gz
 https://github.com/lsof-org/lsof/archive/refs/tags/4.99.0.tar.gz
@@ -1867,6 +1873,7 @@ https://gitlab.freedesktop.org/gstreamer/gstreamer/-/archive/1.22.6/gstreamer-1.
 https://gitlab.freedesktop.org/gstreamer/gstreamer/-/archive/1.22.7/gstreamer-1.22.7.tar.gz
 https://gitlab.freedesktop.org/gstreamer/gstreamer/-/archive/1.22.8/gstreamer-1.22.8.tar.gz
 https://gitlab.freedesktop.org/gstreamer/gstreamer/-/archive/1.22.9/gstreamer-1.22.9.tar.gz
+https://gitlab.freedesktop.org/gstreamer/gstreamer/-/archive/1.24.0/gstreamer-1.24.0.tar.gz
 https://gitlab.freedesktop.org/libdecor/libdecor/-/archive/0.2.0/libdecor-0.2.0.tar.bz2
 https://gitlab.freedesktop.org/libdecor/libdecor/-/archive/0.2.1/libdecor-0.2.1.tar.bz2
 https://gitlab.freedesktop.org/libdecor/libdecor/-/archive/0.2.2/libdecor-0.2.2.tar.bz2
@@ -1955,6 +1962,7 @@ https://gitlab.gnome.org/GNOME/mutter/-/archive/45.0/mutter-45.0.tar.bz2
 https://gitlab.gnome.org/GNOME/pango/-/archive/1.51.1/pango-1.51.1.tar.bz2
 https://gitlab.gnome.org/GNOME/pango/-/archive/1.51.2/pango-1.51.2.tar.bz2
 https://gitlab.gnome.org/GNOME/pango/-/archive/1.52.0/pango-1.52.0.tar.bz2
+https://gitlab.gnome.org/GNOME/pango/-/archive/1.52.1/pango-1.52.1.tar.bz2
 https://gitlab.gnome.org/GNOME/vala/-/archive/0.56.1/vala-0.56.1.tar.bz2
 https://gitlab.gnome.org/GNOME/vte/-/archive/0.72.2/vte-0.72.2.tar.bz2
 https://gitlab.gnome.org/GNOME/vte/-/archive/0.74.0/vte-0.74.0.tar.bz2

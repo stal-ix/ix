@@ -1,8 +1,8 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://gitlab.freedesktop.org/gstreamer/gstreamer/-/archive/1.22.10/gstreamer-1.22.10.tar.gz
-sha:bba3a87f82d509802d96a5caf2c47982234063928870623b222f60702f1f50eb
+https://gitlab.freedesktop.org/gstreamer/gstreamer/-/archive/1.24.0/gstreamer-1.24.0.tar.gz
+sha:c2932dc3867de8f3ce43eb3cf5ca084d6a19d7d55eb84d1cf3237f1dcb5262c9
 {% endblock %}
 
 {% block lib_deps %}
@@ -29,29 +29,14 @@ aux/iso/codes
 {% block bld_tool %}
 bin/orc
 bld/flex
+bld/glib
 bld/bison
 bld/gettext
-bld/glib
 bld/wayland
 {% endblock %}
 
-{% block setup_target_flags %}
-{#
-clang-16:
-/subprojects/gst-plugins-good/sys/v4l2/gstv4l2object.c
-../src/subprojects/gst-plugins-good/sys/v4l2/gstv4l2object.c:544:23:
-    error: incompatible function pointer types assigning to
-    'gint (*)(gint, ioctl_req_t, ...)'
-    (aka 'int (*)(int, unsigned long, ...)')
-    from 'int (int, int, ...)'
-    [-Wincompatible-function-pointer-types]
-    v4l2object->ioctl = ioctl;
-#}
-export CFLAGS="-Wno-incompatible-function-pointer-types ${CFLAGS}"
-{% endblock %}
-
-{% block patch %}
-sed -e 's|.get_shared_lib()||' -i meson.build
+{% block build_flags %}
+wrap_cc
 {% endblock %}
 
 {% block meson_flags %}
@@ -67,7 +52,6 @@ rtsp_server=disabled
 
 {% block install %}
 {{super()}}
-cp -R ${out}/lib/gstreamer*/* ${out}/lib/
 for x in ${out}/lib/pkgconfig/*.pc; do
     sed -e 's|toolsdir=.*||' -i ${x}
 done
