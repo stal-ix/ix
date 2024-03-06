@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://git.kernel.org/pub/scm/utils/kernel/kmod/kmod.git/snapshot/kmod-31.tar.gz
-sha:16c40aaa50fc953035b4811b29ce3182f220e95f3c9e5eacb4b07b1abf85f003
+https://git.kernel.org/pub/scm/utils/kernel/kmod/kmod.git/snapshot/kmod-32.tar.gz
+sha:9477fa096acfcddaa56c74b988045ad94ee0bac22e0c1caa84ba1b7d408da76e
 {% endblock %}
 
 {% block lib_deps %}
