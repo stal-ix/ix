@@ -37,6 +37,7 @@
 #}
 
 {% block run_deps %}
+bin/prometheus/node/exporter
 bin/clang/18/bootstrapped
 bin/sndio
 bin/vsftpd
