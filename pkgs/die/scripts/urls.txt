@@ -2113,6 +2113,7 @@ https://secure.nic.cz/files/knot-dns/knot-3.2.9.tar.xz
 https://secure.nic.cz/files/knot-dns/knot-3.3.2.tar.xz
 https://secure.nic.cz/files/knot-dns/knot-3.3.3.tar.xz
 https://secure.nic.cz/files/knot-dns/knot-3.3.4.tar.xz
+https://secure.nic.cz/files/knot-dns/knot-3.3.5.tar.xz
 https://secure.nic.cz/files/knot-resolver/knot-resolver-5.6.0.tar.xz
 https://security.appspot.com/downloads/vsftpd-3.0.5.tar.gz
 https://skarnet.org/software/execline/execline-2.8.2.0.tar.gz
