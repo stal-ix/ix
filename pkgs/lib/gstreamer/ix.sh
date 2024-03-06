@@ -39,21 +39,6 @@ bld/wayland
 wrap_cc
 {% endblock %}
 
-{% block setup_target_flags %}
-{#
-clang-16:
-/subprojects/gst-plugins-good/sys/v4l2/gstv4l2object.c
-../src/subprojects/gst-plugins-good/sys/v4l2/gstv4l2object.c:544:23:
-    error: incompatible function pointer types assigning to
-    'gint (*)(gint, ioctl_req_t, ...)'
-    (aka 'int (*)(int, unsigned long, ...)')
-    from 'int (int, int, ...)'
-    [-Wincompatible-function-pointer-types]
-    v4l2object->ioctl = ioctl;
-#}
-export CFLAGS="-Wno-incompatible-function-pointer-types ${CFLAGS}"
-{% endblock %}
-
 {% block meson_flags %}
 bad=disabled
 ges=disabled
