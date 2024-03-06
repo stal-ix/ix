@@ -1474,6 +1474,7 @@ https://github.com/premake/premake-core/archive/refs/tags/v5.0.0-beta2.tar.gz
 https://github.com/project-repo/cagebreak/archive/refs/tags/2.3.0.tar.gz
 https://github.com/project-repo/cagebreak/archive/refs/tags/2.3.1.tar.gz
 https://github.com/projectdiscovery/dnsx/archive/refs/tags/v1.1.6.tar.gz
+https://github.com/prometheus/node_exporter/archive/refs/tags/v1.7.0.tar.gz
 https://github.com/prometheus/prometheus/archive/refs/tags/v2.50.1.tar.gz
 https://github.com/prometheus/prometheus/releases/download/v2.50.1/prometheus-web-ui-2.50.1.tar.gz
 https://github.com/protobuf-c/protobuf-c/archive/refs/tags/v1.4.1.tar.gz
@@ -1555,6 +1556,7 @@ https://github.com/qt/qtwayland/archive/refs/tags/v6.6.1.tar.gz
 https://github.com/qt/qtwayland/archive/refs/tags/v6.6.2.tar.gz
 https://github.com/quictls/openssl/archive/refs/tags/openssl-3.1.2-quic1.tar.gz
 https://github.com/quictls/openssl/archive/refs/tags/openssl-3.1.4-quic1.tar.gz
+https://github.com/quictls/openssl/archive/refs/tags/openssl-3.1.5-quic1.tar.gz
 https://github.com/randombit/botan/archive/refs/tags/2.19.3.tar.gz
 https://github.com/randombit/botan/archive/refs/tags/3.3.0.tar.gz
 https://github.com/raphamorim/rio/archive/refs/tags/v0.0.34.tar.gz
@@ -2111,6 +2113,7 @@ https://secure.nic.cz/files/knot-dns/knot-3.2.9.tar.xz
 https://secure.nic.cz/files/knot-dns/knot-3.3.2.tar.xz
 https://secure.nic.cz/files/knot-dns/knot-3.3.3.tar.xz
 https://secure.nic.cz/files/knot-dns/knot-3.3.4.tar.xz
+https://secure.nic.cz/files/knot-dns/knot-3.3.5.tar.xz
 https://secure.nic.cz/files/knot-resolver/knot-resolver-5.6.0.tar.xz
 https://security.appspot.com/downloads/vsftpd-3.0.5.tar.gz
 https://skarnet.org/software/execline/execline-2.8.2.0.tar.gz
