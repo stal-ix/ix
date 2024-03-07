@@ -8,7 +8,6 @@ import shutil
 import string
 import itertools
 
-import core.gg as cg
 import core.log as cl
 import core.sign as cs
 import core.utils as cu
@@ -169,9 +168,7 @@ class RealmCtx:
             },
         }
 
-    def prepare(self):
-        cg.run(self.mngr.config.ops, [self])
-
+    def from_prepared(self):
         return Realm(self.mngr, self.pkg_name, self.out_dir)
 
 
