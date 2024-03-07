@@ -183,7 +183,7 @@ class BaseRealm:
         self.name = name
 
     def new_version(self, pkgs):
-        return prepare_realm(self.mngr, self.name, pkgs)
+        return prepare_realm_ctx(self.mngr, self.name, pkgs)
 
     def mut(self, patch):
         return self.new_version(apply_patch(self.pkgs['flags'], self.pkgs['list'], patch))
@@ -271,10 +271,10 @@ def load_realm_ro(config, name):
         raise ce.Error(f'malformed realm link "{rp}", prease remove it manualy', exception=e)
 
 
-def prepare_realm(mngr, name, pkgs):
+def prepare_realm_ctx(mngr, name, pkgs):
     check_name(name)
 
-    return RealmCtx(mngr, name, pkgs).prepare()
+    return RealmCtx(mngr, name, pkgs)
 
 
 class NewRealm(BaseRealm):

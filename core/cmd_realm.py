@@ -29,7 +29,7 @@ def prepare(ctx, args):
     mngr = cm.Manager(cf.config_from(ctx))
 
     for d in group_realms(cc.lex(args)):
-        yield mngr.ensure_realm(d[0][2]['r']).mut(d)
+        yield mngr.ensure_realm(d[0][2]['r']).mut(d).prepare()
 
 
 def cli_mut(ctx):
