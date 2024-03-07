@@ -1,4 +1,5 @@
 import os
+import json
 import shutil
 import subprocess
 
@@ -29,8 +30,14 @@ def group_realms(l):
 def prepare(ctx, args):
     mngr = cm.Manager(cf.config_from(ctx))
     nodes = [mngr.ensure_realm(d[0][2]['r']).mut(d) for d in group_realms(cc.lex(args))]
+    graph = cg.build_graph(nodes)
 
-    cg.run(mngr.config.ops, nodes)
+    if os.environ.get('IX_DUMP_GRAPH', ''):
+        print(json.dumps(graph, indent=4, sort_keys=True))
+
+        return
+
+    mngr.config.ops.execute_graph(graph)
 
     for n in nodes:
         yield n.from_prepared()

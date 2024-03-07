@@ -71,7 +71,3 @@ def build_graph(n):
             'network': 16,
         },
     }
-
-
-def run(ops, nodes):
-    ops.execute_graph(build_graph(nodes))
