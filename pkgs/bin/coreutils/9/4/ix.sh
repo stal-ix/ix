@@ -13,3 +13,8 @@ sha:5f600d9093973b0afe25393d9bc18c44f2232657f4ca0d95ea31c702eb66b739
 ${PWD}/lib
 {{super()}}
 {% endblock %}
+
+{% block patch %}
+{{super()}}
+sed -e 's|t, t, leapsec|t, t, (int)leapsec|' -i lib/posixtm.c
+{% endblock %}

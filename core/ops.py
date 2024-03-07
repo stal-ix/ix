@@ -2,7 +2,7 @@ import os
 import json
 
 
-def construct_impl(cfg, kind):
+def construct(cfg, kind=None):
     if not kind:
         kind = os.environ.get('IX_EXEC_KIND', None)
 
@@ -21,23 +21,3 @@ def construct_impl(cfg, kind):
     import core.ops_sys as o
 
     return o.Ops(cfg)
-
-
-class Dump:
-    def __init__(self, slave):
-        self.slave = slave
-
-    def execute_graph(self, graph):
-        print(json.dumps(graph, indent=4, sort_keys=True))
-
-    def __getattr__(self, name):
-        return getattr(self.slave, name)
-
-
-def construct(cfg, kind=None):
-    res = construct_impl(cfg, kind)
-
-    if os.environ.get('IX_DUMP_GRAPH', None):
-        res = Dump(res)
-
-    return res

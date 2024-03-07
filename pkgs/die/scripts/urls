@@ -9,7 +9,7 @@ export LC_ALL=C
 
 (
 cat urls.txt
-IX_DUMP_GRAPH=1 "${IX_BINARY}" build set/ci set/ci/tier/1 2>/dev/null | grep -v GOPROXY | grep '"http' | sed -e 's|.*"http|http|' | sed -e 's|".*||'
+IX_DUMP_GRAPH=1 "${IX_BINARY}" build set/ci set/ci/tier/1 | grep -v GOPROXY | grep '"http' | sed -e 's|.*"http|http|' | sed -e 's|".*||'
 find ${IX_PKGS_ROOT} -name '*.sh' | xargs cat | grep "http[s]*://"
 ) | grep -v '#'  \
   | grep -v ' '  \

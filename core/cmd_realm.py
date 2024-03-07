@@ -1,7 +1,9 @@
 import os
+import json
 import shutil
 import subprocess
 
+import core.gg as cg
 import core.lex as cc
 import core.repo as cr
 import core.utils as cu
@@ -27,9 +29,18 @@ def group_realms(l):
 
 def prepare(ctx, args):
     mngr = cm.Manager(cf.config_from(ctx))
+    nodes = [mngr.ensure_realm(d[0][2]['r']).mut(d) for d in group_realms(cc.lex(args))]
+    graph = cg.build_graph(nodes)
 
-    for d in group_realms(cc.lex(args)):
-        yield mngr.ensure_realm(d[0][2]['r']).mut(d)
+    if os.environ.get('IX_DUMP_GRAPH', ''):
+        print(json.dumps(graph, indent=4, sort_keys=True))
+
+        return
+
+    mngr.config.ops.execute_graph(graph)
+
+    for n in nodes:
+        yield n.from_prepared()
 
 
 def cli_mut(ctx):
