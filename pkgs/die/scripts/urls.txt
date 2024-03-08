@@ -37,6 +37,7 @@ http://ftp.gnu.org/gnu/mtools/mtools-4.0.43.tar.lz
 http://ftp.gnu.org/gnu/screen/screen-4.9.1.tar.gz
 http://ftp.gnu.org/pub/gnu/gperf/gperf-3.1.tar.gz
 http://ftp.rpm.org/popt/releases/popt-1.x/popt-1.19.tar.gz
+http://geeqie.org/cgi-bin/gitweb.cgi?p=geeqie.git;a=snapshot;h=f8c3ab333e95d45d4e68007256362dbdbdb3de3a;sf=tbz2
 http://geeqie.org/cgi-bin/gitweb.cgi?p=geeqie.git;a=snapshot;h=fa7667fb6a2d59f4facb11c083c4d74d0d80f459;sf=tbz2
 http://get.videolan.org/vlc/3.0.17.3/vlc-3.0.17.3.tar.xz
 http://github.com/zeux/pugixml/releases/download/v1.13/pugixml-1.13.tar.gz
@@ -538,6 +539,7 @@ https://github.com/DanBloomberg/leptonica/archive/refs/tags/1.83.1.tar.gz
 https://github.com/DanBloomberg/leptonica/archive/refs/tags/1.84.1.tar.gz
 https://github.com/DaveGamble/cJSON/archive/refs/tags/v1.7.17.tar.gz
 https://github.com/DominicBreuker/pspy/archive/refs/tags/v1.2.1.tar.gz
+https://github.com/Esri/lerc/archive/refs/tags/js_v4.0.4.tar.gz
 https://github.com/Esri/lerc/archive/refs/tags/v4.0.0.tar.gz
 https://github.com/Exiv2/exiv2/archive/refs/tags/v0.27.6.tar.gz
 https://github.com/FFmpeg/FFmpeg/archive/refs/tags/n4.4.2.tar.gz
