@@ -32,9 +32,11 @@ extract0 ${src}/*.whl
 {% endblock %}
 
 {% block build %}
+{% if lib %}
 py_exports > exports
-fix_dist
 cat exports
+{% endif %}
+fix_dist
 {% endblock %}
 
 {% block postinstall %}
