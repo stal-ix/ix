@@ -152,6 +152,7 @@ https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.7.4.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.7.5.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.7.6.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.7.8.tar.xz
+https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.7.9.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.7.tar.xz
 https://cmocka.org/files/1.1/cmocka-1.1.7.tar.xz
 https://codeberg.org/dnkl/fcft/archive/2.5.0.tar.gz
@@ -203,6 +204,7 @@ https://download.gnome.org/sources/glib/2.78/glib-2.78.1.tar.xz
 https://download.gnome.org/sources/glib/2.78/glib-2.78.2.tar.xz
 https://download.gnome.org/sources/glib/2.78/glib-2.78.3.tar.xz
 https://download.gnome.org/sources/glib/2.78/glib-2.78.4.tar.xz
+https://download.gnome.org/sources/glib/2.80/glib-2.80.0.tar.xz
 https://download.gnome.org/sources/glibmm/2.66/glibmm-2.66.6.tar.xz
 https://download.gnome.org/sources/glibmm/2.77/glibmm-2.77.0.tar.xz
 https://download.gnome.org/sources/glibmm/2.78/glibmm-2.78.1.tar.xz
@@ -1477,6 +1479,7 @@ https://github.com/pkgconf/pkgconf/archive/refs/tags/pkgconf-2.1.1.tar.gz
 https://github.com/plougher/squashfs-tools/archive/refs/tags/4.6.1.tar.gz
 https://github.com/podofo/podofo/archive/refs/tags/0.10.2.tar.gz
 https://github.com/podofo/podofo/archive/refs/tags/0.10.3.tar.gz
+https://github.com/pop-os/cosmic-term/archive/90179d5a5f837b60406bcd20315bb8a81cc3bb7d.zip
 https://github.com/posva/catimg/archive/refs/tags/2.7.0.tar.gz
 https://github.com/premake/premake-core/archive/refs/tags/v5.0.0-beta2.tar.gz
 https://github.com/project-repo/cagebreak/archive/refs/tags/2.3.0.tar.gz
