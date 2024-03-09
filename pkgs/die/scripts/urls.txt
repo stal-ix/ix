@@ -1639,6 +1639,7 @@ https://github.com/shadow-maint/shadow/archive/refs/tags/4.14.3.tar.gz
 https://github.com/shadow-maint/shadow/archive/refs/tags/4.14.4.tar.gz
 https://github.com/shadow-maint/shadow/archive/refs/tags/4.14.5.tar.gz
 https://github.com/shadow-maint/shadow/archive/refs/tags/4.14.6.tar.gz
+https://github.com/shadow-maint/shadow/archive/refs/tags/4.15.0.tar.gz
 https://github.com/shadowsocks/go-shadowsocks2/archive/refs/tags/v0.1.5.tar.gz
 https://github.com/shadowsocks/shadowsocks-libev/releases/download/v3.3.5/shadowsocks-libev-3.3.5.tar.gz
 https://github.com/shadowsocks/shadowsocks-rust/archive/refs/tags/v1.18.1.tar.gz
