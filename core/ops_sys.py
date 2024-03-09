@@ -13,8 +13,13 @@ B = '/bin/bin_ix'
 
 
 def run_cmd(cmd, input='', user='ix'):
-    if getpass.getuser() == user:
+    ru = getpass.getuser()
+
+    if ru == user:
         suffix = [cmd[0]]
+        prefix = []
+    elif ru == 'root':
+        suffix = ['/bin/su', '-s', cmd[0], user]
         prefix = []
     elif user == 'root':
         suffix = [cmd[0]]
