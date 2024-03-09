@@ -1639,6 +1639,7 @@ https://github.com/shadow-maint/shadow/archive/refs/tags/4.14.3.tar.gz
 https://github.com/shadow-maint/shadow/archive/refs/tags/4.14.4.tar.gz
 https://github.com/shadow-maint/shadow/archive/refs/tags/4.14.5.tar.gz
 https://github.com/shadow-maint/shadow/archive/refs/tags/4.14.6.tar.gz
+https://github.com/shadow-maint/shadow/archive/refs/tags/4.15.0.tar.gz
 https://github.com/shadowsocks/go-shadowsocks2/archive/refs/tags/v0.1.5.tar.gz
 https://github.com/shadowsocks/shadowsocks-libev/releases/download/v3.3.5/shadowsocks-libev-3.3.5.tar.gz
 https://github.com/shadowsocks/shadowsocks-rust/archive/refs/tags/v1.18.1.tar.gz
@@ -1754,6 +1755,7 @@ https://github.com/tsl0922/ttyd/archive/refs/tags/1.7.4.tar.gz
 https://github.com/tsujan/FeatherPad/archive/refs/tags/V1.3.4.tar.gz
 https://github.com/tukaani-project/xz/releases/download/v5.4.6/xz-5.4.6.tar.gz
 https://github.com/tukaani-project/xz/releases/download/v5.6.0/xz-5.6.0.tar.gz
+https://github.com/tukaani-project/xz/releases/download/v5.6.1/xz-5.6.1.tar.gz
 https://github.com/tulir/gomuks/archive/refs/tags/v0.3.0.tar.gz
 https://github.com/tvrzna/emptty/archive/refs/tags/v0.10.0.tar.gz
 https://github.com/tvrzna/emptty/archive/refs/tags/v0.11.0.tar.gz
