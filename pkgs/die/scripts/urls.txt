@@ -37,6 +37,7 @@ http://ftp.gnu.org/gnu/mtools/mtools-4.0.43.tar.lz
 http://ftp.gnu.org/gnu/screen/screen-4.9.1.tar.gz
 http://ftp.gnu.org/pub/gnu/gperf/gperf-3.1.tar.gz
 http://ftp.rpm.org/popt/releases/popt-1.x/popt-1.19.tar.gz
+http://geeqie.org/cgi-bin/gitweb.cgi?p=geeqie.git;a=snapshot;h=f8c3ab333e95d45d4e68007256362dbdbdb3de3a;sf=tbz2
 http://geeqie.org/cgi-bin/gitweb.cgi?p=geeqie.git;a=snapshot;h=fa7667fb6a2d59f4facb11c083c4d74d0d80f459;sf=tbz2
 http://get.videolan.org/vlc/3.0.17.3/vlc-3.0.17.3.tar.xz
 http://github.com/zeux/pugixml/releases/download/v1.13/pugixml-1.13.tar.gz
@@ -151,6 +152,7 @@ https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.7.4.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.7.5.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.7.6.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.7.8.tar.xz
+https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.7.9.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.7.tar.xz
 https://cmocka.org/files/1.1/cmocka-1.1.7.tar.xz
 https://codeberg.org/dnkl/fcft/archive/2.5.0.tar.gz
@@ -202,6 +204,7 @@ https://download.gnome.org/sources/glib/2.78/glib-2.78.1.tar.xz
 https://download.gnome.org/sources/glib/2.78/glib-2.78.2.tar.xz
 https://download.gnome.org/sources/glib/2.78/glib-2.78.3.tar.xz
 https://download.gnome.org/sources/glib/2.78/glib-2.78.4.tar.xz
+https://download.gnome.org/sources/glib/2.80/glib-2.80.0.tar.xz
 https://download.gnome.org/sources/glibmm/2.66/glibmm-2.66.6.tar.xz
 https://download.gnome.org/sources/glibmm/2.77/glibmm-2.77.0.tar.xz
 https://download.gnome.org/sources/glibmm/2.78/glibmm-2.78.1.tar.xz
@@ -538,6 +541,7 @@ https://github.com/DanBloomberg/leptonica/archive/refs/tags/1.83.1.tar.gz
 https://github.com/DanBloomberg/leptonica/archive/refs/tags/1.84.1.tar.gz
 https://github.com/DaveGamble/cJSON/archive/refs/tags/v1.7.17.tar.gz
 https://github.com/DominicBreuker/pspy/archive/refs/tags/v1.2.1.tar.gz
+https://github.com/Esri/lerc/archive/refs/tags/js_v4.0.4.tar.gz
 https://github.com/Esri/lerc/archive/refs/tags/v4.0.0.tar.gz
 https://github.com/Exiv2/exiv2/archive/refs/tags/v0.27.6.tar.gz
 https://github.com/FFmpeg/FFmpeg/archive/refs/tags/n4.4.2.tar.gz
@@ -591,6 +595,7 @@ https://github.com/Genivia/ugrep/archive/refs/tags/v4.5.0.tar.gz
 https://github.com/Genivia/ugrep/archive/refs/tags/v4.5.1.tar.gz
 https://github.com/Genivia/ugrep/archive/refs/tags/v4.5.2.tar.gz
 https://github.com/Genivia/ugrep/archive/refs/tags/v5.0.0.tar.gz
+https://github.com/Genivia/ugrep/archive/refs/tags/v5.1.0.tar.gz
 https://github.com/GrapheneOS/hardened_malloc/archive/refs/tags/11.tar.gz
 https://github.com/Hjdskes/cage/archive/refs/tags/v0.1.4.tar.gz
 https://github.com/HowardHinnant/date/archive/refs/tags/v3.0.1.tar.gz
@@ -669,6 +674,7 @@ https://github.com/NLnetLabs/ldns/archive/refs/tags/1.8.3.tar.gz
 https://github.com/NLnetLabs/unbound/archive/refs/tags/release-1.18.0.tar.gz
 https://github.com/NLnetLabs/unbound/archive/refs/tags/release-1.19.0.tar.gz
 https://github.com/NLnetLabs/unbound/archive/refs/tags/release-1.19.1.tar.gz
+https://github.com/NLnetLabs/unbound/archive/refs/tags/release-1.19.2.tar.gz
 https://github.com/NOBLES5E/cproxy/archive/refs/tags/v4.1.6.post1.tar.gz
 https://github.com/NagyD/SDLPoP/archive/refs/tags/v1.23.tar.gz
 https://github.com/Nefelim4ag/Ananicy/archive/refs/tags/2.2.1.tar.gz
@@ -687,6 +693,7 @@ https://github.com/NixOS/nix/archive/refs/tags/2.20.1.tar.gz
 https://github.com/NixOS/nix/archive/refs/tags/2.20.2.tar.gz
 https://github.com/NixOS/nix/archive/refs/tags/2.20.3.tar.gz
 https://github.com/NixOS/nix/archive/refs/tags/2.20.4.tar.gz
+https://github.com/NixOS/nix/archive/refs/tags/2.20.5.tar.gz
 https://github.com/NixOS/patchelf/archive/refs/tags/0.18.0.tar.gz
 https://github.com/Novum/vkQuake/archive/refs/tags/1.30.1.tar.gz
 https://github.com/Old-Man-Programmer/tree/archive/refs/tags/2.1.1.tar.gz
@@ -739,6 +746,7 @@ https://github.com/Z3Prover/z3/archive/refs/tags/z3-4.12.3.tar.gz
 https://github.com/Z3Prover/z3/archive/refs/tags/z3-4.12.4.tar.gz
 https://github.com/Z3Prover/z3/archive/refs/tags/z3-4.12.5.tar.gz
 https://github.com/Z3Prover/z3/archive/refs/tags/z3-4.12.6.tar.gz
+https://github.com/Z3Prover/z3/archive/refs/tags/z3-4.13.0.tar.gz
 https://github.com/a-j-wood/pv/releases/download/v1.7.24/pv-1.7.24.tar.gz
 https://github.com/abseil/abseil-cpp/archive/refs/tags/20230125.3.tar.gz
 https://github.com/abseil/abseil-cpp/archive/refs/tags/20230802.1.tar.gz
@@ -956,6 +964,7 @@ https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.8.4.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.8.5.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.8.6.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.8.7.tar.gz
+https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.8.8.tar.gz
 https://github.com/fastfloat/fast_float/archive/refs/tags/v3.8.1.tar.gz
 https://github.com/fastfloat/fast_float/archive/refs/tags/v5.2.0.tar.gz
 https://github.com/fastfloat/fast_float/archive/refs/tags/v6.1.0.tar.gz
@@ -1238,6 +1247,7 @@ https://github.com/libjpeg-turbo/libjpeg-turbo/archive/refs/tags/3.0.1.tar.gz
 https://github.com/libjpeg-turbo/libjpeg-turbo/archive/refs/tags/3.0.2.tar.gz
 https://github.com/libjxl/libjxl/archive/refs/tags/v0.10.0.tar.gz
 https://github.com/libjxl/libjxl/archive/refs/tags/v0.10.1.tar.gz
+https://github.com/libjxl/libjxl/archive/refs/tags/v0.10.2.tar.gz
 https://github.com/libjxl/libjxl/archive/refs/tags/v0.8.2.tar.gz
 https://github.com/libjxl/libjxl/archive/refs/tags/v0.9.0.tar.gz
 https://github.com/libjxl/libjxl/archive/refs/tags/v0.9.1.tar.gz
@@ -1469,6 +1479,7 @@ https://github.com/pkgconf/pkgconf/archive/refs/tags/pkgconf-2.1.1.tar.gz
 https://github.com/plougher/squashfs-tools/archive/refs/tags/4.6.1.tar.gz
 https://github.com/podofo/podofo/archive/refs/tags/0.10.2.tar.gz
 https://github.com/podofo/podofo/archive/refs/tags/0.10.3.tar.gz
+https://github.com/pop-os/cosmic-term/archive/90179d5a5f837b60406bcd20315bb8a81cc3bb7d.zip
 https://github.com/posva/catimg/archive/refs/tags/2.7.0.tar.gz
 https://github.com/premake/premake-core/archive/refs/tags/v5.0.0-beta2.tar.gz
 https://github.com/project-repo/cagebreak/archive/refs/tags/2.3.0.tar.gz
