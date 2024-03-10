@@ -737,6 +737,7 @@ https://github.com/WebAssembly/binaryen/archive/refs/tags/version_116.tar.gz
 https://github.com/WebAssembly/binaryen/archive/refs/tags/version_117.tar.gz
 https://github.com/WebPlatformForEmbedded/libwpe/archive/refs/tags/1.12.3.tar.gz
 https://github.com/WerWolv/ImHex/releases/download/v1.19.1/Full.Sources.tar.gz
+https://github.com/YaLTeR/niri/archive/1971a41fdd68f0a33bd5db22f776821682c23206.zip
 https://github.com/YaLTeR/niri/archive/refs/tags/v0.1.0-beta.1.tar.gz
 https://github.com/YaLTeR/niri/archive/refs/tags/v0.1.0.tar.gz
 https://github.com/YaLTeR/niri/archive/refs/tags/v0.1.1.tar.gz
@@ -1185,6 +1186,7 @@ https://github.com/junegunn/fzf/archive/refs/tags/0.44.1.tar.gz
 https://github.com/junegunn/fzf/archive/refs/tags/0.45.0.tar.gz
 https://github.com/junegunn/fzf/archive/refs/tags/0.46.0.tar.gz
 https://github.com/junegunn/fzf/archive/refs/tags/0.46.1.tar.gz
+https://github.com/junegunn/fzf/archive/refs/tags/0.47.0.tar.gz
 https://github.com/kaniini/libucontext/archive/refs/tags/libucontext-1.2.tar.gz
 https://github.com/kcat/openal-soft/archive/refs/tags/1.23.1.tar.gz
 https://github.com/keepassxreboot/keepassxc/releases/download/2.7.6/keepassxc-2.7.6-src.tar.xz
