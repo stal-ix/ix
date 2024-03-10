@@ -5,7 +5,7 @@ v2_go_{{parent_id}}.tar.lz4
 {% endblock %}
 
 {% block bld_tool %}
-bin/go
+bin/go/21
 {{super()}}
 {% endblock %}
 
