@@ -4,6 +4,12 @@
 bin/busybox
 {% endblock%}
 
+{% block run_deps %}
+{% if pubkey %}
+etc/sudoer(pubkey_name={{user}},pubkey_value={{pubkey}})
+{% endif %}
+{% endblock %}
+
 {% block install %}
 cd ${out}
 
@@ -18,12 +24,4 @@ mkdir -p etc/group.d
 cat << EOF > etc/group.d/{{user}}
 {{user}}:x:{{userid}}:
 EOF
-
-{% if pubkey %}
-mkdir -p etc/sud.d
-
-cat << EOF > etc/sud.d/{{user}}
-{{pubkey}}
-EOF
-{% endif %}
 {% endblock %}
