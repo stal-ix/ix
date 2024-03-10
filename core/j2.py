@@ -1,4 +1,5 @@
 import os
+import json
 import base64
 import jinja2
 
@@ -71,6 +72,8 @@ class Env(jinja2.Environment):
         jinja2.Environment.__init__(self, loader=fs, auto_reload=False, cache_size=-1, trim_blocks=True, lstrip_blocks=True, optimized=True)
         self.filters['b64e'] = b64e
         self.filters['b64d'] = b64d
+        self.filters['jl'] = json.loads
+        self.filters['jd'] = json.dumps
         self.filters['basename'] = os.path.basename
 
     def join_path(self, tmpl, parent):
