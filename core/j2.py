@@ -67,6 +67,23 @@ class Loader(jinja2.BaseLoader):
         return x, y, lambda: True
 
 
+def group_by(k):
+    def do(v):
+        res = {}
+
+        for x in v:
+            kk = x[k]
+
+            if kk in res:
+                res[kk].append(x)
+            else:
+                res[kk] = [x]
+
+        return res
+
+    return do
+
+
 class Env(jinja2.Environment):
     def __init__(self, fs):
         jinja2.Environment.__init__(self, loader=fs, auto_reload=False, cache_size=-1, trim_blocks=True, lstrip_blocks=True, optimized=True)
@@ -74,6 +91,7 @@ class Env(jinja2.Environment):
         self.filters['b64d'] = b64d
         self.filters['jl'] = json.loads
         self.filters['jd'] = json.dumps
+        self.filters['group_by'] = lambda x, y: group_by(y)(x)
         self.filters['basename'] = os.path.basename
 
     def join_path(self, tmpl, parent):
