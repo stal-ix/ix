@@ -10,8 +10,10 @@ cd etc/services/{{sd}}
 
 cat << EOF > cmd_1
 {% if srv_user %}
+{% block srv_user_prepare %}
 mkdir -p /var/run/{{sd}}
 chown {{srv_user}} /var/run/{{sd}}
+{% endblock %}
 exec /bin/su -s /bin/sh {{srv_user}} ${PWD}/cmd_2
 {% else %}
 exec /bin/sh ${PWD}/cmd_2
