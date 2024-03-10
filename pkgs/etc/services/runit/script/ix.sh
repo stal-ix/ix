@@ -21,7 +21,9 @@ exec /bin/sh ${PWD}/cmd_2
 EOF
 
 cat << EOF > cmd_2
+{% block srv_command %}
 {{srv_command}}
+{% endblock %}
 EOF
 
 cat << EOF > run
