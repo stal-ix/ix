@@ -1,16 +1,17 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
+bin/iwd/runit
+bin/seatd/runit
+bin/sndio/runit
+bin/acpi/d/runit
+
 bin/mdevd/runit
 bin/ix
 bin/sud
-bin/iwd/runit
 bin/runit/sys
 bin/dbus/runit
-bin/seatd/runit
-bin/sndio/runit
 bin/dhcpcd/runit
-bin/acpi/d/runit
 bin/openresolv/runit
 
 # https://wiki.musl-libc.org/functional-differences-from-glibc.html#Name-Resolver/DNS
