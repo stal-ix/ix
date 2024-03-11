@@ -7,8 +7,10 @@
 ]
 {% endblock %}
 
+{% set kk = self.json() | jl | ser %}
+
 {% block install %}
 cat << EOF
-{{(self.json() | jl | group_by("a"))[2][0]["b"]}}
+{{(kk | des | group_by("a"))[2][0]["b"]}}
 EOF
 {% endblock %}

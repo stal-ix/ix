@@ -2,6 +2,7 @@ import os
 import json
 import base64
 import jinja2
+import hashlib
 
 
 def b64e(data):
@@ -93,6 +94,17 @@ class Env(jinja2.Environment):
         self.filters['jd'] = json.dumps
         self.filters['group_by'] = lambda x, y: group_by(y)(x)
         self.filters['basename'] = os.path.basename
+        self.filters['ser'] = self.ser
+        self.filters['des'] = self.des
+        self.kv = {}
+
+    def ser(self, v):
+        k = hashlib.md5(json.dumps(v, sort_keys=True).encode()).hexdigest()
+        self.kv[k] = v
+        return k
+
+    def des(self, k):
+        return self.kv[k]
 
     def join_path(self, tmpl, parent):
         return self.loader.join_path(tmpl, parent)
