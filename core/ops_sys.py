@@ -96,9 +96,7 @@ def gen_fetch_curl(url, path, md5):
     yield from gen_cksum(path, md5)
 
 
-def gen_mirrors(sb, url, md5):
-    yield url
-
+def gen_mirrors(sb, md5):
     for x in sb.package.manager.mirrors:
         yield os.path.join(x, md5)
 
@@ -106,9 +104,9 @@ def gen_mirrors(sb, url, md5):
 def gen_fetch_aria_2(sb, url, path, sha):
     yield from gen_dir(os.path.dirname(path))
 
-    urls = list(gen_mirrors(sb, url, sha))
-
+    urls = list(gen_mirrors(sb, sha))
     random.Random(sb.config.seed + sha).shuffle(urls)
+    urls = urls + [url]
 
     yield [
         f'/bin/aria2c',
