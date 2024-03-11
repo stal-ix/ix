@@ -36,10 +36,10 @@ bin/sched/fstrim(delay=1000)
 bin/sched/builddir(delay=1000)
 bin/sched/trashdir(delay=100)
 
-bin/sched/stale/cgroups(delay=1000)
 bin/sched/stale/procs(delay=10)
-bin/sched/stale/homes(delay=10)
-bin/sched/stale/srvdirs(delay=10)
+bin/sched/stale/homes(delay=100)
+bin/sched/stale/srvdirs(delay=100)
+bin/sched/stale/cgroups(delay=1000)
 
 etc
 

@@ -2,4 +2,4 @@
 
 set -xue
 
-echo "${1}"
+mv "${1}" /ix/trash/ || rm -rf "${1}"
