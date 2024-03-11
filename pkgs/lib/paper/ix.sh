@@ -1,8 +1,8 @@
 {% extends '//die/c/autohell.sh' %}
 
 {% block fetch %}
-https://github.com/rrthomas/libpaper/releases/download/v2.1.3/libpaper-2.1.3.tar.gz
-sha:b798be7c52036e684a90a68f0be954f173fea87886f8a1d25c6514a279216f4a
+https://github.com/rrthomas/libpaper/releases/download/v2.2.3/libpaper-2.2.3.tar.gz
+sha:610912042e1f16d44738c2edf9886b9b1e3f5cd6e358ebacf6a62236ac4f0ee6
 {% endblock %}
 
 {% block lib_deps %}
