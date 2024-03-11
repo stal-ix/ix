@@ -106,7 +106,7 @@ def gen_fetch_aria_2(sb, url, path, sha):
 
     urls = list(gen_mirrors(sb, sha))
     random.Random(sb.config.seed + sha).shuffle(urls)
-    urls = urls + [url]
+    urls = urls[:5] + [url]
 
     yield [
         f'/bin/aria2c',
