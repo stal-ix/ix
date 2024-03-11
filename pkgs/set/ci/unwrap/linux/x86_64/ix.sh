@@ -37,6 +37,7 @@
 #}
 
 {% block run_deps %}
+set/stalix/server
 bin/prometheus/node/exporter
 bin/clang/18/bootstrapped
 bin/sndio
