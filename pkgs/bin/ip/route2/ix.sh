@@ -4,12 +4,12 @@
 https://git.kernel.org/pub/scm/network/iproute2/iproute2.git
 {% endblock %}
 
-{% block git_branch %}
-v6.7.0
+{% block git_commit %}
+e5fd785830671180e934a84a44da93c51cce839d
 {% endblock %}
 
 {% block git_sha %}
-bf65edbbe94323bc251448a0bf21e95af711581539898616e193276cac99567f
+79456e007fb719606a8c53443611867ff103a09346a5ca03d3ffd9d82ee0b963
 {% endblock %}
 
 {% block bld_libs %}
