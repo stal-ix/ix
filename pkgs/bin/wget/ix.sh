@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://ftp.gnu.org/gnu/wget/wget-1.21.2.tar.lz
-sha:1727a330a86acacb3e57615ce268f5f29978bf7adec4abe6a30d370207bc91b3
+https://ftp.gnu.org/gnu/wget/wget-1.24.5.tar.lz
+sha:57a107151e4ef94fdf94affecfac598963f372f13293ed9c74032105390b36ee
 {% endblock %}
 
 {% block bld_libs %}
@@ -16,6 +16,7 @@ lib/c/ares
 lib/metalink
 lib/shim/gnu
 lib/unistring
+lib/bsd/overlay
 {% endblock %}
 
 {% block bld_tool %}
@@ -25,6 +26,10 @@ bld/auto/archive
 
 {% block cpp_defines %}
 _GNU_SOURCE=1
+{% endblock %}
+
+{% block cpp_includes %}
+${PWD}/lib
 {% endblock %}
 
 {% block c_rename_symbol %}
