@@ -1,8 +1,8 @@
 {% extends '//lib/gtk/t/ix.sh' %}
 
 {% block fetch %}
-https://gitlab.gnome.org/GNOME/gtk/-/archive/4.13.6/gtk-4.13.6.tar.bz2
-sha:1e9e761db1a0e393feec88752704a6bcb56d57093bff06adac16a16416f841f2
+https://gitlab.gnome.org/GNOME/gtk/-/archive/4.14.0/gtk-4.14.0.tar.bz2
+sha:4451d8103dcce0f35274ecd25e1f1145cd7ccb866eadf8243f4f0b8499cdfeb2
 {% endblock %}
 
 {% block lib_deps %}
@@ -17,13 +17,12 @@ bin/sassc
 {% endblock %}
 
 {% block meson_flags %}
-demos=false
 vulkan=enabled
 x11-backend=false
+build-demos=false
 build-tests=false
 build-examples=false
 build-testsuite=false
-media-ffmpeg=disabled
 media-gstreamer=disabled
 {% endblock %}
 
