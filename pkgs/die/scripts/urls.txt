@@ -2320,6 +2320,7 @@ https://www.rarlab.com/rar/unrarsrc-7.0.6.tar.gz
 https://www.rarlab.com/rar/unrarsrc-7.0.7.tar.gz
 https://www.sqlite.org/2024/sqlite-autoconf-3450000.tar.gz
 https://www.sqlite.org/2024/sqlite-autoconf-3450100.tar.gz
+https://www.sqlite.org/2024/sqlite-autoconf-3450200.tar.gz
 https://www.stunnel.org/downloads/stunnel-5.70.tar.gz
 https://www.stunnel.org/downloads/stunnel-5.71.tar.gz
 https://www.stunnel.org/downloads/stunnel-5.72.tar.gz
