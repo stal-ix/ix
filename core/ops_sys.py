@@ -83,56 +83,6 @@ def gen_cksum(fr, md5):
         yield from gen_one_sum(fr, md5)
 
 
-def gen_fetch_curl(url, path, md5):
-    yield from gen_dir(os.path.dirname(path))
-
-    yield [
-        f'{B}/curl',
-        '--retry', '100',
-        '--retry-all-errors',
-        '--retry-delay', '2',
-        '-k', '-L', '-o', path, url,
-    ]
-
-    yield from gen_cksum(path, md5)
-
-
-def gen_mirrors(sb, md5):
-    for x in sb.package.manager.mirrors:
-        yield os.path.join(x, md5)
-
-
-def gen_fetch_aria_2(sb, url, path, sha):
-    yield from gen_dir(os.path.dirname(path))
-
-    urls = list(gen_mirrors(sb, sha))
-    random.Random(sb.config.seed + sha).shuffle(urls)
-    urls = urls[:5] + [url]
-
-    yield [
-        f'/bin/aria2c',
-        f'--checksum=sha-256={sha}',
-        '-o', os.path.basename(path),
-        '-d', os.path.dirname(path),
-        '-s', str(len(urls)),
-        '--console-log-level=notice',
-        '--async-dns=false',
-        '--no-conf=true',
-        '--uri-selector=inorder',
-        '--check-certificate=false',
-    ] + urls
-
-
-HAVE_ARIA = os.path.isfile('/bin/aria2c')
-
-
-def gen_fetch(sb, url, path, md5):
-    if HAVE_ARIA and md5.startswith('sha:') and len(md5) == 68:
-        yield from gen_fetch_aria_2(sb, url, path, md5[4:])
-    else:
-        yield from gen_fetch_curl(url, path, md5)
-
-
 def gen_links(files, out):
     yield from gen_dir(out)
 
@@ -170,7 +120,6 @@ class Ops:
 
     def fetch(self, sb, url, path, md5):
         return self.loc.fetch(sb, url, path, md5)
-        #return sb.cmds(gen_fetch(sb, url, path, md5))
 
     def link(self, sb, files, out):
         return sb.cmds(gen_links(files, out))
