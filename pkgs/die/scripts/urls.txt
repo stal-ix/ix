@@ -1451,6 +1451,7 @@ https://github.com/nwg-piotr/nwg-menu/archive/refs/tags/v0.1.1.tar.gz
 https://github.com/oneapi-src/oneTBB/archive/refs/tags/v2021.11.0.tar.gz
 https://github.com/oneapi-src/oneTBB/archive/refs/tags/v2021.7.0.tar.gz
 https://github.com/onetrueawk/awk/archive/refs/tags/20220122.tar.gz
+https://github.com/onetrueawk/awk/archive/refs/tags/20240311.tar.gz
 https://github.com/open-source-parsers/jsoncpp/archive/refs/tags/1.9.5.tar.gz
 https://github.com/openSUSE/hwinfo/archive/refs/tags/23.2.tar.gz
 https://github.com/openSUSE/xinetd/archive/refs/tags/2.3.15.4.tar.gz
