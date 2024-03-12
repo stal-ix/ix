@@ -96,6 +96,7 @@ class Env(jinja2.Environment):
         self.filters['basename'] = os.path.basename
         self.filters['ser'] = self.ser
         self.filters['des'] = self.des
+        self.filters['lines'] = lambda x: list(x.strip().split('\n'))
         self.kv = {}
 
     def ser(self, v):
