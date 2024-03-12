@@ -37,6 +37,7 @@
 #}
 
 {% block run_deps %}
+bin/q/bittorrent/nox
 bin/kernel/6/8
 set/stalix/server
 bin/prometheus/node/exporter
