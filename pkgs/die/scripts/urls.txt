@@ -2195,6 +2195,7 @@ https://tukaani.org/xz/xz-5.4.4.tar.xz
 https://tukaani.org/xz/xz-5.4.5.tar.xz
 https://w1.fi/releases/wpa_supplicant-2.10.tar.gz
 https://waf.io/waf-2.0.26.tar.bz2
+https://waf.io/waf-2.0.27.tar.bz2
 https://waterlan.home.xs4all.nl/dos2unix/dos2unix-7.5.1.tar.gz
 https://waterlan.home.xs4all.nl/dos2unix/dos2unix-7.5.2.tar.gz
 https://webkitgtk.org/releases/webkitgtk-2.41.91.tar.xz
