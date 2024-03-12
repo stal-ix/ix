@@ -54,7 +54,7 @@ def iter_bin():
 
 
 def iter_meth():
-    for p in ['/ix/realm/boot/bin', '/usr/bin']:
+    for p in ['/bin', '/bin/bin_ix', '/ix/realm/boot/bin', '/usr/bin']:
         for n, m in iter_bin():
             pp = os.path.join(p, n)
 

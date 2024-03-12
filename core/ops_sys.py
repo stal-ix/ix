@@ -7,6 +7,7 @@ import subprocess
 
 import core.utils as cu
 import core.error as ce
+import core.ops_loc as co
 
 
 B = '/bin/bin_ix'
@@ -153,6 +154,7 @@ def add_checks(sb, node):
 class Ops:
     def __init__(self, cfg):
         self.cfg = cfg
+        self.loc = co.Ops(self.cfg)
 
     def execute_graph(self, graph):
         run_cmd([f'{B}/assemble'], input=json.dumps(graph))
@@ -167,7 +169,8 @@ class Ops:
         return [f'{B}/bsdtar', '--no-same-permissions', '--no-same-owner', '-x', '-f']
 
     def fetch(self, sb, url, path, md5):
-        return sb.cmds(gen_fetch(sb, url, path, md5))
+        return self.loc.fetch(sb, url, path, md5)
+        #return sb.cmds(gen_fetch(sb, url, path, md5))
 
     def link(self, sb, files, out):
         return sb.cmds(gen_links(files, out))
