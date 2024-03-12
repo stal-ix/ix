@@ -1,16 +1,15 @@
 {% extends '//die/proxy.sh' %}
 
-{% block json %}
+{% set json | jl %}
 [
     {"a": 1, "b": "x"},
     {"a": 2, "b": "y"}
 ]
-{% endblock %}
-
-{% set kk = self.json() | jl | ser %}
+{% endset %}
 
 {% block install %}
 cat << EOF
-{{(kk | des | group_by("a"))[2][0]["b"]}}
+{{json | jd | lines}}
+{{(json | group_by("a"))[2][0]["b"]}}
 EOF
 {% endblock %}

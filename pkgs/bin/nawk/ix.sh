@@ -1,8 +1,8 @@
 {% extends '//die/c/make.sh' %}
 
 {% block fetch %}
-https://github.com/onetrueawk/awk/archive/refs/tags/20220122.tar.gz
-sha:720a06ff8dcc12686a5176e8a4c74b1295753df816e38468a6cf077562d54042
+https://github.com/onetrueawk/awk/archive/refs/tags/20240311.tar.gz
+sha:5d46ab41595bcade23928a0aa9cff16972ee46e0a904a2a28c318324ccb669ce
 {% endblock %}
 
 {% block bld_tool %}

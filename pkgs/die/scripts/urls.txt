@@ -154,6 +154,7 @@ https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.7.6.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.7.8.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.7.9.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.7.tar.xz
+https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.8.tar.xz
 https://cmocka.org/files/1.1/cmocka-1.1.7.tar.xz
 https://codeberg.org/dnkl/fcft/archive/2.5.0.tar.gz
 https://codeberg.org/dnkl/fcft/archive/3.1.6.tar.gz
@@ -536,6 +537,7 @@ https://github.com/ArtifexSoftware/jbig2dec/archive/refs/tags/0.20.tar.gz
 https://github.com/BLAKE2/libb2/archive/refs/tags/v0.98.1.tar.gz
 https://github.com/BLAKE3-team/BLAKE3/archive/refs/tags/1.4.1.tar.gz
 https://github.com/BLAKE3-team/BLAKE3/archive/refs/tags/1.5.0.tar.gz
+https://github.com/BLAKE3-team/BLAKE3/archive/refs/tags/1.5.1.tar.gz
 https://github.com/CorsixTH/CorsixTH/archive/refs/tags/v0.67.tar.gz
 https://github.com/Cyan4973/xxHash/archive/refs/tags/v0.8.2.tar.gz
 https://github.com/DanBloomberg/leptonica/archive/refs/tags/1.83.1.tar.gz
@@ -597,6 +599,7 @@ https://github.com/Genivia/ugrep/archive/refs/tags/v4.5.1.tar.gz
 https://github.com/Genivia/ugrep/archive/refs/tags/v4.5.2.tar.gz
 https://github.com/Genivia/ugrep/archive/refs/tags/v5.0.0.tar.gz
 https://github.com/Genivia/ugrep/archive/refs/tags/v5.1.0.tar.gz
+https://github.com/Genivia/ugrep/archive/refs/tags/v5.1.1.tar.gz
 https://github.com/GrapheneOS/hardened_malloc/archive/refs/tags/11.tar.gz
 https://github.com/Hjdskes/cage/archive/refs/tags/v0.1.4.tar.gz
 https://github.com/HowardHinnant/date/archive/refs/tags/v3.0.1.tar.gz
@@ -695,6 +698,7 @@ https://github.com/NixOS/nix/archive/refs/tags/2.20.2.tar.gz
 https://github.com/NixOS/nix/archive/refs/tags/2.20.3.tar.gz
 https://github.com/NixOS/nix/archive/refs/tags/2.20.4.tar.gz
 https://github.com/NixOS/nix/archive/refs/tags/2.20.5.tar.gz
+https://github.com/NixOS/nix/archive/refs/tags/2.21.0.tar.gz
 https://github.com/NixOS/patchelf/archive/refs/tags/0.18.0.tar.gz
 https://github.com/Novum/vkQuake/archive/refs/tags/1.30.1.tar.gz
 https://github.com/Old-Man-Programmer/tree/archive/refs/tags/2.1.1.tar.gz
@@ -769,6 +773,7 @@ https://github.com/akheron/jansson/archive/refs/tags/v2.14.tar.gz
 https://github.com/aklomp/base64/archive/refs/tags/v0.4.0.tar.gz
 https://github.com/alacritty/alacritty/archive/refs/tags/v0.13.1.tar.gz
 https://github.com/alacritty/alacritty/archive/refs/tags/v0.9.0.tar.gz
+https://github.com/alecthomas/chroma/archive/refs/tags/v2.13.0.tar.gz
 https://github.com/alecthomas/chroma/archive/refs/tags/v2.8.0.tar.gz
 https://github.com/alecthomas/chroma/archive/refs/tags/v2.9.1.tar.gz
 https://github.com/ammen99/wf-recorder/archive/refs/tags/v0.4.1.tar.gz
@@ -1155,6 +1160,7 @@ https://github.com/jasper-software/jasper/archive/refs/tags/version-4.1.1.tar.gz
 https://github.com/jasper-software/jasper/archive/refs/tags/version-4.1.2.tar.gz
 https://github.com/jasper-software/jasper/archive/refs/tags/version-4.2.0.tar.gz
 https://github.com/jasper-software/jasper/archive/refs/tags/version-4.2.1.tar.gz
+https://github.com/jasper-software/jasper/archive/refs/tags/version-4.2.2.tar.gz
 https://github.com/jbeder/yaml-cpp/archive/refs/tags/yaml-cpp-0.7.0.tar.gz
 https://github.com/jeaye/stdman/archive/refs/tags/2022.07.30.tar.gz
 https://github.com/jech/dht/archive/refs/tags/dht-0.27.tar.gz
@@ -1448,6 +1454,7 @@ https://github.com/nwg-piotr/nwg-menu/archive/refs/tags/v0.1.1.tar.gz
 https://github.com/oneapi-src/oneTBB/archive/refs/tags/v2021.11.0.tar.gz
 https://github.com/oneapi-src/oneTBB/archive/refs/tags/v2021.7.0.tar.gz
 https://github.com/onetrueawk/awk/archive/refs/tags/20220122.tar.gz
+https://github.com/onetrueawk/awk/archive/refs/tags/20240311.tar.gz
 https://github.com/open-source-parsers/jsoncpp/archive/refs/tags/1.9.5.tar.gz
 https://github.com/openSUSE/hwinfo/archive/refs/tags/23.2.tar.gz
 https://github.com/openSUSE/xinetd/archive/refs/tags/2.3.15.4.tar.gz
@@ -1473,6 +1480,7 @@ https://github.com/pg83/sbase/archive/refs/tags/v1.tar.gz
 https://github.com/pg83/shutil/archive/refs/tags/v1.tar.gz
 https://github.com/pg83/ted/archive/refs/tags/v6.tar.gz
 https://github.com/phillipberndt/pqiv/archive/refs/tags/2.12.tar.gz
+https://github.com/phillipberndt/pqiv/archive/refs/tags/2.13.1.tar.gz
 https://github.com/phillipberndt/pqiv/archive/refs/tags/2.13.tar.gz
 https://github.com/phracker/MacOSX-SDKs/releases/download/11.3/MacOSX11.0.sdk.tar.xz
 https://github.com/phracker/MacOSX-SDKs/releases/download/11.3/MacOSX11.3.sdk.tar.xz
@@ -1604,6 +1612,7 @@ https://github.com/rrthomas/libpaper/releases/download/v2.1.1/libpaper-2.1.1.tar
 https://github.com/rrthomas/libpaper/releases/download/v2.1.2/libpaper-2.1.2.tar.gz
 https://github.com/rrthomas/libpaper/releases/download/v2.1.3/libpaper-2.1.3.tar.gz
 https://github.com/rrthomas/libpaper/releases/download/v2.2.3/libpaper-2.2.3.tar.gz
+https://github.com/rrthomas/libpaper/releases/download/v2.2.5/libpaper-2.2.5.tar.gz
 https://github.com/rs/curlie/archive/refs/tags/v1.6.9.tar.gz
 https://github.com/rsms/inter/releases/download/v3.19/Inter-3.19.zip
 https://github.com/rsms/inter/releases/download/v4.0/Inter-4.0.zip
@@ -1921,6 +1930,7 @@ https://gitlab.freedesktop.org/wlroots/wlroots/-/archive/0.15.1/wlroots-0.15.1.t
 https://gitlab.freedesktop.org/wlroots/wlroots/-/archive/0.16.2/wlroots-0.16.2.tar.bz2
 https://gitlab.freedesktop.org/wlroots/wlroots/-/archive/0.17.0/wlroots-0.17.0.tar.bz2
 https://gitlab.freedesktop.org/wlroots/wlroots/-/archive/0.17.1/wlroots-0.17.1.tar.bz2
+https://gitlab.freedesktop.org/wlroots/wlroots/-/archive/0.17.2/wlroots-0.17.2.tar.bz2
 https://gitlab.freedesktop.org/xdg/desktop-file-utils/-/archive/0.27/desktop-file-utils-0.27.tar.bz2
 https://gitlab.freedesktop.org/xkeyboard-config/xkeyboard-config/-/archive/xkeyboard-config-2.39/xkeyboard-config-xkeyboard-config-2.39.tar.bz2
 https://gitlab.freedesktop.org/xkeyboard-config/xkeyboard-config/-/archive/xkeyboard-config-2.40/xkeyboard-config-xkeyboard-config-2.40.tar.bz2
@@ -2188,6 +2198,7 @@ https://tukaani.org/xz/xz-5.4.4.tar.xz
 https://tukaani.org/xz/xz-5.4.5.tar.xz
 https://w1.fi/releases/wpa_supplicant-2.10.tar.gz
 https://waf.io/waf-2.0.26.tar.bz2
+https://waf.io/waf-2.0.27.tar.bz2
 https://waterlan.home.xs4all.nl/dos2unix/dos2unix-7.5.1.tar.gz
 https://waterlan.home.xs4all.nl/dos2unix/dos2unix-7.5.2.tar.gz
 https://webkitgtk.org/releases/webkitgtk-2.41.91.tar.xz
@@ -2309,6 +2320,7 @@ https://www.rarlab.com/rar/unrarsrc-7.0.6.tar.gz
 https://www.rarlab.com/rar/unrarsrc-7.0.7.tar.gz
 https://www.sqlite.org/2024/sqlite-autoconf-3450000.tar.gz
 https://www.sqlite.org/2024/sqlite-autoconf-3450100.tar.gz
+https://www.sqlite.org/2024/sqlite-autoconf-3450200.tar.gz
 https://www.stunnel.org/downloads/stunnel-5.70.tar.gz
 https://www.stunnel.org/downloads/stunnel-5.71.tar.gz
 https://www.stunnel.org/downloads/stunnel-5.72.tar.gz

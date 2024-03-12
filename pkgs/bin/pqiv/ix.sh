@@ -1,8 +1,8 @@
 {% extends '//die/c/make.sh' %}
 
 {% block fetch %}
-https://github.com/phillipberndt/pqiv/archive/refs/tags/2.13.tar.gz
-sha:5dfe9272460edcc50e512dd3fec5eae6e2344dccd35ef6ee95fb747458dd5e9d
+https://github.com/phillipberndt/pqiv/archive/refs/tags/2.13.1.tar.gz
+sha:1db8567f75884dfc5dd41208f309b11e4e4ca48ecad537915885b64aa03857a4
 {% endblock %}
 
 {% block bld_libs %}

@@ -28,5 +28,6 @@ fix_shebangs
 {% endblock %}
 
 {% block configure_flags %}
+--sysconfdir=${out}/share
 --with-search-engine=glib
 {% endblock %}

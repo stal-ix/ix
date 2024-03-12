@@ -7,6 +7,7 @@ import subprocess
 
 import core.utils as cu
 import core.error as ce
+import core.ops_loc as co
 
 
 B = '/bin/bin_ix'
@@ -82,58 +83,6 @@ def gen_cksum(fr, md5):
         yield from gen_one_sum(fr, md5)
 
 
-def gen_fetch_curl(url, path, md5):
-    yield from gen_dir(os.path.dirname(path))
-
-    yield [
-        f'{B}/curl',
-        '--retry', '100',
-        '--retry-all-errors',
-        '--retry-delay', '2',
-        '-k', '-L', '-o', path, url,
-    ]
-
-    yield from gen_cksum(path, md5)
-
-
-def gen_mirrors(sb, url, md5):
-    yield url
-
-    for x in sb.package.manager.mirrors:
-        yield os.path.join(x, md5)
-
-
-def gen_fetch_aria_2(sb, url, path, sha):
-    yield from gen_dir(os.path.dirname(path))
-
-    urls = list(gen_mirrors(sb, url, sha))
-
-    random.Random(sb.config.seed + sha).shuffle(urls)
-
-    yield [
-        f'/bin/aria2c',
-        f'--checksum=sha-256={sha}',
-        '-o', os.path.basename(path),
-        '-d', os.path.dirname(path),
-        '-s', str(len(urls)),
-        '--console-log-level=notice',
-        '--async-dns=false',
-        '--no-conf=true',
-        '--uri-selector=inorder',
-        '--check-certificate=false',
-    ] + urls
-
-
-HAVE_ARIA = os.path.isfile('/bin/aria2c')
-
-
-def gen_fetch(sb, url, path, md5):
-    if HAVE_ARIA and md5.startswith('sha:') and len(md5) == 68:
-        yield from gen_fetch_aria_2(sb, url, path, md5[4:])
-    else:
-        yield from gen_fetch_curl(url, path, md5)
-
-
 def gen_links(files, out):
     yield from gen_dir(out)
 
@@ -155,6 +104,7 @@ def add_checks(sb, node):
 class Ops:
     def __init__(self, cfg):
         self.cfg = cfg
+        self.loc = co.Ops(self.cfg)
 
     def execute_graph(self, graph):
         run_cmd([f'{B}/assemble'], input=json.dumps(graph))
@@ -169,7 +119,7 @@ class Ops:
         return [f'{B}/bsdtar', '--no-same-permissions', '--no-same-owner', '-x', '-f']
 
     def fetch(self, sb, url, path, md5):
-        return sb.cmds(gen_fetch(sb, url, path, md5))
+        return self.loc.fetch(sb, url, path, md5)
 
     def link(self, sb, files, out):
         return sb.cmds(gen_links(files, out))
