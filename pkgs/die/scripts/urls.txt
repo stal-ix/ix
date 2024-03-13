@@ -1194,6 +1194,7 @@ https://github.com/junegunn/fzf/archive/refs/tags/0.45.0.tar.gz
 https://github.com/junegunn/fzf/archive/refs/tags/0.46.0.tar.gz
 https://github.com/junegunn/fzf/archive/refs/tags/0.46.1.tar.gz
 https://github.com/junegunn/fzf/archive/refs/tags/0.47.0.tar.gz
+https://github.com/junegunn/fzf/archive/refs/tags/0.48.0.tar.gz
 https://github.com/kaniini/libucontext/archive/refs/tags/libucontext-1.2.tar.gz
 https://github.com/kcat/openal-soft/archive/refs/tags/1.23.1.tar.gz
 https://github.com/keepassxreboot/keepassxc/releases/download/2.7.6/keepassxc-2.7.6-src.tar.xz
