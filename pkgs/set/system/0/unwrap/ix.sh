@@ -2,6 +2,7 @@
 
 {% block run_deps %}
 {% if not server %}
+bin/sud
 bin/iwd/runit
 bin/seatd/runit
 bin/sndio/runit
@@ -10,7 +11,6 @@ bin/acpi/d/runit
 
 bin/mdevd/runit
 bin/ix
-bin/sud
 bin/runit/sys
 bin/dbus/runit
 bin/dhcpcd/runit
