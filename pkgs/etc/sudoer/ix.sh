@@ -1,9 +1,6 @@
-{% extends '//die/proxy.sh' %}
+{% extends '//die/hub.sh' %}
 
-{% block install %}
-mkdir -p ${out}/etc/sud.d
-
-cat << EOF > ${out}/etc/sud.d/{{pubkey_name}}
-{{pubkey_value}}
-EOF
+{% block run_deps %}
+etc/sudoer/fix
+etc/sudoer/record
 {% endblock %}
