@@ -1362,6 +1362,7 @@ https://github.com/mesonbuild/meson/archive/refs/tags/1.2.2.tar.gz
 https://github.com/mesonbuild/meson/archive/refs/tags/1.2.3.tar.gz
 https://github.com/mesonbuild/meson/archive/refs/tags/1.3.0.tar.gz
 https://github.com/mesonbuild/meson/archive/refs/tags/1.3.2.tar.gz
+https://github.com/mesonbuild/meson/archive/refs/tags/1.4.0.tar.gz
 https://github.com/mheily/libkqueue/archive/refs/tags/v2.6.1.tar.gz
 https://github.com/microsoft/GSL/archive/refs/tags/v4.0.0.tar.gz
 https://github.com/microsoft/mimalloc/archive/refs/tags/v1.7.6.tar.gz
@@ -1373,6 +1374,7 @@ https://github.com/microsoft/msquic/archive/refs/tags/v2.2.4.tar.gz
 https://github.com/microsoft/msquic/archive/refs/tags/v2.3.1.tar.gz
 https://github.com/microsoft/msquic/archive/refs/tags/v2.3.2.tar.gz
 https://github.com/microsoft/msquic/archive/refs/tags/v2.3.4.tar.gz
+https://github.com/microsoft/msquic/archive/refs/tags/v2.3.5.tar.gz
 https://github.com/microsoft/snmalloc/archive/refs/tags/0.6.0.tar.gz
 https://github.com/microsoft/vcpkg-tool/archive/refs/tags/2022-11-10.tar.gz
 https://github.com/microsoft/vcpkg-tool/archive/refs/tags/2023-11-16.tar.gz
@@ -1965,6 +1967,7 @@ https://gitlab.gnome.org/GNOME/gtk/-/archive/4.12.3/gtk-4.12.3.tar.bz2
 https://gitlab.gnome.org/GNOME/gtk/-/archive/4.12.4/gtk-4.12.4.tar.bz2
 https://gitlab.gnome.org/GNOME/gtk/-/archive/4.12.5/gtk-4.12.5.tar.bz2
 https://gitlab.gnome.org/GNOME/gtk/-/archive/4.13.6/gtk-4.13.6.tar.bz2
+https://gitlab.gnome.org/GNOME/gtk/-/archive/4.14.0/gtk-4.14.0.tar.bz2
 https://gitlab.gnome.org/GNOME/gtksourceview/-/archive/5.10.0/gtksourceview-5.10.0.tar.bz2
 https://gitlab.gnome.org/GNOME/gtksourceview/-/archive/5.8.0/gtksourceview-5.8.0.tar.bz2
 https://gitlab.gnome.org/GNOME/json-glib/-/archive/1.6.6/json-glib-1.6.6.tar.bz2
