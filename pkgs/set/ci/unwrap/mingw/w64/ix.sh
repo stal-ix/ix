@@ -13,7 +13,7 @@ bin/curl
 bin/gperf
 bin/iconv
 bin/idn/2
-#bin/protoc
+bin/protoc
 bin/lld/16
 bin/bsdtar
 bin/doxygen
