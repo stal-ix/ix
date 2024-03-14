@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://storage.googleapis.com/aom-releases/libaom-3.8.1.tar.gz
-sha:dedc65060812a7df801c0270a2fe8bd773c6bb0b601f2144ecfbc62dc0f671ca
+https://storage.googleapis.com/aom-releases/libaom-3.8.2.tar.gz
+sha:98f7d6d7ddbf06d088735f5e51782df053fd1b08c553882c2924bd0b2021a202
 {% endblock %}
 
 {% block lib_deps %}
