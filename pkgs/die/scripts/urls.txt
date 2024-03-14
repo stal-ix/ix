@@ -108,6 +108,7 @@ https://archive.apache.org/dist/xerces/c/3/sources/xerces-c-3.2.4.tar.gz
 https://archive.apache.org/dist/xerces/c/3/sources/xerces-c-3.2.5.tar.gz
 https://astron.com/pub/file/file-5.45.tar.gz
 https://astron.com/pub/tcsh/tcsh-6.24.10.tar.gz
+https://astron.com/pub/tcsh/tcsh-6.24.11.tar.gz
 https://bearssl.org/bearssl-0.6.tar.gz
 https://bitbucket.org/multicoreware/x265_git/downloads/x265_3.5.tar.gz
 https://bitmath.org/code/mtdev/mtdev-1.1.6.tar.bz2
