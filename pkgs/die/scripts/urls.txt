@@ -529,6 +529,7 @@ https://github.com/AcademySoftwareFoundation/openexr/archive/refs/tags/v3.2.0.ta
 https://github.com/AcademySoftwareFoundation/openexr/archive/refs/tags/v3.2.1.tar.gz
 https://github.com/AcademySoftwareFoundation/openexr/archive/refs/tags/v3.2.126.tar.gz
 https://github.com/AcademySoftwareFoundation/openexr/archive/refs/tags/v3.2.2.tar.gz
+https://github.com/Alexays/Waybar/archive/refs/tags/0.10.0.tar.gz
 https://github.com/Alexays/Waybar/archive/refs/tags/0.9.22.tar.gz
 https://github.com/Alexays/Waybar/archive/refs/tags/0.9.23.tar.gz
 https://github.com/Alexays/Waybar/archive/refs/tags/0.9.24.tar.gz
@@ -1786,6 +1787,7 @@ https://github.com/tvrzna/emptty/archive/refs/tags/v0.12.0.tar.gz
 https://github.com/u-root/u-root/archive/refs/tags/v0.13.0.tar.gz
 https://github.com/uclouvain/openjpeg/archive/refs/tags/v2.5.0.tar.gz
 https://github.com/uclouvain/openjpeg/archive/refs/tags/v2.5.1.tar.gz
+https://github.com/umputun/reproxy/archive/refs/tags/v1.1.1.tar.gz
 https://github.com/unicode-org/icu/archive/refs/tags/release-70-1.tar.gz
 https://github.com/upx/upx/releases/download/v4.1.0/upx-4.1.0-src.tar.xz
 https://github.com/upx/upx/releases/download/v4.2.0/upx-4.2.0-src.tar.xz

@@ -1,8 +1,8 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://github.com/Alexays/Waybar/archive/refs/tags/0.9.24.tar.gz
-sha:57aa7860bc066ebf4f3327dafa9841100b098c0dec1dce4baaa1fae63e9b57ae
+https://github.com/Alexays/Waybar/archive/refs/tags/0.10.0.tar.gz
+sha:3af6665889868f2334ba1793c8b0f3104c4c3b176a8c759f0d08f07266ad2620
 {% endblock %}
 
 {% block bld_libs %}
@@ -37,7 +37,6 @@ bld/glib
 tests=disabled
 rfkill=enabled
 dbusmenu-gtk=enabled
-gtk-layer-shell=enabled
 {% endblock %}
 
 {% block build_flags %}
