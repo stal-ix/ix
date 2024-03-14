@@ -11,7 +11,7 @@ echo >> mdev.conf
 
 mkdir -p runit/1.d; cd runit/1.d
 
-cat << EOF > 00-mount-ro.sh
+cat << EOF > 01-mount-ro.sh
 # mount ro
 mount -t sysfs sysfs /sys
 mount -t debugfs none /sys/kernel/debug

@@ -108,6 +108,7 @@ https://archive.apache.org/dist/xerces/c/3/sources/xerces-c-3.2.4.tar.gz
 https://archive.apache.org/dist/xerces/c/3/sources/xerces-c-3.2.5.tar.gz
 https://astron.com/pub/file/file-5.45.tar.gz
 https://astron.com/pub/tcsh/tcsh-6.24.10.tar.gz
+https://astron.com/pub/tcsh/tcsh-6.24.11.tar.gz
 https://bearssl.org/bearssl-0.6.tar.gz
 https://bitbucket.org/multicoreware/x265_git/downloads/x265_3.5.tar.gz
 https://bitmath.org/code/mtdev/mtdev-1.1.6.tar.bz2
@@ -528,6 +529,7 @@ https://github.com/AcademySoftwareFoundation/openexr/archive/refs/tags/v3.2.0.ta
 https://github.com/AcademySoftwareFoundation/openexr/archive/refs/tags/v3.2.1.tar.gz
 https://github.com/AcademySoftwareFoundation/openexr/archive/refs/tags/v3.2.126.tar.gz
 https://github.com/AcademySoftwareFoundation/openexr/archive/refs/tags/v3.2.2.tar.gz
+https://github.com/Alexays/Waybar/archive/refs/tags/0.10.0.tar.gz
 https://github.com/Alexays/Waybar/archive/refs/tags/0.9.22.tar.gz
 https://github.com/Alexays/Waybar/archive/refs/tags/0.9.23.tar.gz
 https://github.com/Alexays/Waybar/archive/refs/tags/0.9.24.tar.gz
@@ -559,6 +561,7 @@ https://github.com/FreeRDP/FreeRDP/archive/refs/tags/2.10.0.tar.gz
 https://github.com/FreeRDP/FreeRDP/archive/refs/tags/3.1.0.tar.gz
 https://github.com/FreeRDP/FreeRDP/archive/refs/tags/3.2.0.tar.gz
 https://github.com/FreeRDP/FreeRDP/archive/refs/tags/3.3.0.tar.gz
+https://github.com/FreeRDP/FreeRDP/archive/refs/tags/3.4.0.tar.gz
 https://github.com/GNOME/adwaita-icon-theme/archive/refs/tags/44.0.tar.gz
 https://github.com/GNOME/epiphany/archive/refs/tags/45.0.tar.gz
 https://github.com/GNOME/epiphany/archive/refs/tags/45.1.tar.gz
@@ -679,6 +682,7 @@ https://github.com/NLnetLabs/unbound/archive/refs/tags/release-1.18.0.tar.gz
 https://github.com/NLnetLabs/unbound/archive/refs/tags/release-1.19.0.tar.gz
 https://github.com/NLnetLabs/unbound/archive/refs/tags/release-1.19.1.tar.gz
 https://github.com/NLnetLabs/unbound/archive/refs/tags/release-1.19.2.tar.gz
+https://github.com/NLnetLabs/unbound/archive/refs/tags/release-1.19.3.tar.gz
 https://github.com/NOBLES5E/cproxy/archive/refs/tags/v4.1.6.post1.tar.gz
 https://github.com/NagyD/SDLPoP/archive/refs/tags/v1.23.tar.gz
 https://github.com/Nefelim4ag/Ananicy/archive/refs/tags/2.2.1.tar.gz
@@ -735,6 +739,7 @@ https://github.com/WasmEdge/WasmEdge/archive/refs/tags/0.13.3.tar.gz
 https://github.com/WasmEdge/WasmEdge/archive/refs/tags/0.13.5.tar.gz
 https://github.com/WayfireWM/wayfire/releases/download/v0.7.5/wayfire-0.7.5.tar.xz
 https://github.com/WayfireWM/wayfire/releases/download/v0.8.0/wayfire-0.8.0.tar.xz
+https://github.com/WayfireWM/wayfire/releases/download/v0.8.1/wayfire-0.8.1.tar.xz
 https://github.com/WayfireWM/wf-config/archive/refs/tags/v0.7.1.tar.gz
 https://github.com/WebAssembly/binaryen/archive/refs/tags/version_114.tar.gz
 https://github.com/WebAssembly/binaryen/archive/refs/tags/version_115.tar.gz
@@ -1194,6 +1199,7 @@ https://github.com/junegunn/fzf/archive/refs/tags/0.45.0.tar.gz
 https://github.com/junegunn/fzf/archive/refs/tags/0.46.0.tar.gz
 https://github.com/junegunn/fzf/archive/refs/tags/0.46.1.tar.gz
 https://github.com/junegunn/fzf/archive/refs/tags/0.47.0.tar.gz
+https://github.com/junegunn/fzf/archive/refs/tags/0.48.0.tar.gz
 https://github.com/kaniini/libucontext/archive/refs/tags/libucontext-1.2.tar.gz
 https://github.com/kcat/openal-soft/archive/refs/tags/1.23.1.tar.gz
 https://github.com/keepassxreboot/keepassxc/releases/download/2.7.6/keepassxc-2.7.6-src.tar.xz
@@ -1239,6 +1245,7 @@ https://github.com/libexif/libexif/archive/refs/tags/v0.6.24.tar.gz
 https://github.com/libexpat/libexpat/archive/refs/tags/R_2_5_0.tar.gz
 https://github.com/libexpat/libexpat/archive/refs/tags/R_2_6_0.tar.gz
 https://github.com/libexpat/libexpat/archive/refs/tags/R_2_6_1.tar.gz
+https://github.com/libexpat/libexpat/archive/refs/tags/R_2_6_2.tar.gz
 https://github.com/libffi/libffi/archive/refs/tags/v3.4.4.tar.gz
 https://github.com/libffi/libffi/archive/refs/tags/v3.4.5.tar.gz
 https://github.com/libffi/libffi/archive/refs/tags/v3.4.6.tar.gz
@@ -1510,6 +1517,7 @@ https://github.com/protocolbuffers/protobuf/archive/refs/tags/v25.0.tar.gz
 https://github.com/protocolbuffers/protobuf/archive/refs/tags/v25.1.tar.gz
 https://github.com/protocolbuffers/protobuf/archive/refs/tags/v25.2.tar.gz
 https://github.com/protocolbuffers/protobuf/archive/refs/tags/v25.3.tar.gz
+https://github.com/protocolbuffers/protobuf/archive/refs/tags/v26.0.tar.gz
 https://github.com/psemiletov/tea-qt/archive/refs/tags/62.0.2.tar.gz
 https://github.com/ptitSeb/gl4es/archive/refs/tags/v1.1.4.tar.gz
 https://github.com/pullmoll/musl-rpmatch/archive/refs/tags/v1.0.tar.gz
@@ -1779,6 +1787,7 @@ https://github.com/tvrzna/emptty/archive/refs/tags/v0.12.0.tar.gz
 https://github.com/u-root/u-root/archive/refs/tags/v0.13.0.tar.gz
 https://github.com/uclouvain/openjpeg/archive/refs/tags/v2.5.0.tar.gz
 https://github.com/uclouvain/openjpeg/archive/refs/tags/v2.5.1.tar.gz
+https://github.com/umputun/reproxy/archive/refs/tags/v1.1.1.tar.gz
 https://github.com/unicode-org/icu/archive/refs/tags/release-70-1.tar.gz
 https://github.com/upx/upx/releases/download/v4.1.0/upx-4.1.0-src.tar.xz
 https://github.com/upx/upx/releases/download/v4.2.0/upx-4.2.0-src.tar.xz
@@ -1863,6 +1872,7 @@ https://github.com/yquake2/yquake2/archive/refs/tags/QUAKE2_8_20.tar.gz
 https://github.com/yquake2/yquake2/archive/refs/tags/QUAKE2_8_30.tar.gz
 https://github.com/yrutschle/sslh/archive/refs/tags/v2.0.0.tar.gz
 https://github.com/yrutschle/sslh/archive/refs/tags/v2.0.1.tar.gz
+https://github.com/yrutschle/sslh/archive/refs/tags/v2.1.0.tar.gz
 https://github.com/zed-industries/zed/archive/refs/tags/v0.123.2.tar.gz
 https://github.com/zellij-org/zellij/archive/refs/tags/v0.39.2.tar.gz
 https://github.com/zeux/volk/archive/refs/tags/vulkan-sdk-1.3.275.0.tar.gz
@@ -2079,6 +2089,7 @@ https://mesa.freedesktop.org/archive/mesa-23.3.4.tar.xz
 https://mesa.freedesktop.org/archive/mesa-23.3.5.tar.xz
 https://mesa.freedesktop.org/archive/mesa-24.0.1.tar.xz
 https://mesa.freedesktop.org/archive/mesa-24.0.2.tar.xz
+https://mesa.freedesktop.org/archive/mesa-24.0.3.tar.xz
 https://mirror.tochlab.net/pub/gnu/autoconf-archive/autoconf-archive-2023.02.20.tar.xz
 https://mirror.tochlab.net/pub/gnu/help2man/help2man-1.49.2.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/kernel/people/tytso/e2fsprogs/v1.46.6/e2fsprogs-1.46.6.tar.xz
@@ -2188,6 +2199,7 @@ https://storage.googleapis.com/aom-releases/libaom-3.7.0.tar.gz
 https://storage.googleapis.com/aom-releases/libaom-3.7.1.tar.gz
 https://storage.googleapis.com/aom-releases/libaom-3.8.0.tar.gz
 https://storage.googleapis.com/aom-releases/libaom-3.8.1.tar.gz
+https://storage.googleapis.com/aom-releases/libaom-3.8.2.tar.gz
 https://storage.googleapis.com/downloads.webmproject.org/releases/webp/libwebp-1.3.1.tar.gz
 https://storage.googleapis.com/downloads.webmproject.org/releases/webp/libwebp-1.3.2.tar.gz
 https://strace.io/files/6.5/strace-6.5.tar.xz
@@ -2238,6 +2250,7 @@ https://www.crufty.net/ftp/pub/sjg/bmake-20231210.tar.gz
 https://www.crufty.net/ftp/pub/sjg/bmake-20240108.tar.gz
 https://www.crufty.net/ftp/pub/sjg/bmake-20240212.tar.gz
 https://www.crufty.net/ftp/pub/sjg/bmake-20240301.tar.gz
+https://www.crufty.net/ftp/pub/sjg/bmake-20240309.tar.gz
 https://www.eecis.udel.edu/~ntp/ntp_spool/ntp4/ntp-4.2/ntp-4.2.8p15.tar.gz
 https://www.freedesktop.org/software/colord/releases/colord-1.4.6.tar.xz
 https://www.freedesktop.org/software/fontconfig/release/fontconfig-2.14.2.tar.xz

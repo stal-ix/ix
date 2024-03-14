@@ -54,7 +54,11 @@ chmod +x 2 3
 
 mkdir 1.d; cd 1.d
 
-cat << EOF > 00-mount-ro.sh
+cat << EOF > 00-path.sh
+export PATH=/bin
+EOF
+
+cat << EOF > 01-mount-ro.sh
 # mount ro
 mount -t devtmpfs devtmpfs /dev
 mount -t sysfs sysfs /sys
