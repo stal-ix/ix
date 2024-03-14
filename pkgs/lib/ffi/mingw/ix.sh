@@ -18,13 +18,7 @@ wrap_cc
 
 {% block configure %}
 {{super()}}
-
-cat << EOF > libtool
-#!/usr/bin/env sh
-exec slibtool-static "\${@}"
-EOF
-
-chmod +x libtool
-
-cp libtool x86_64-w64-mingw32/
+find . -name Makefile | while read l; do
+    sed -e 's|LIBTOOL = .*|LIBTOOL = slibtool-static|' -i ${l}
+done
 {% endblock %}
