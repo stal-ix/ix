@@ -1,4 +1,4 @@
-{% extends '//lib/ffi/ix.sh' %}
+{% extends '//lib/ffi/unix/ix.sh' %}
 
 {% block bld_tool %}
 {{super()}}
