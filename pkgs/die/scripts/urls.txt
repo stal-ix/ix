@@ -2082,6 +2082,7 @@ https://mesa.freedesktop.org/archive/mesa-23.3.4.tar.xz
 https://mesa.freedesktop.org/archive/mesa-23.3.5.tar.xz
 https://mesa.freedesktop.org/archive/mesa-24.0.1.tar.xz
 https://mesa.freedesktop.org/archive/mesa-24.0.2.tar.xz
+https://mesa.freedesktop.org/archive/mesa-24.0.3.tar.xz
 https://mirror.tochlab.net/pub/gnu/autoconf-archive/autoconf-archive-2023.02.20.tar.xz
 https://mirror.tochlab.net/pub/gnu/help2man/help2man-1.49.2.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/kernel/people/tytso/e2fsprogs/v1.46.6/e2fsprogs-1.46.6.tar.xz
@@ -2241,6 +2242,7 @@ https://www.crufty.net/ftp/pub/sjg/bmake-20231210.tar.gz
 https://www.crufty.net/ftp/pub/sjg/bmake-20240108.tar.gz
 https://www.crufty.net/ftp/pub/sjg/bmake-20240212.tar.gz
 https://www.crufty.net/ftp/pub/sjg/bmake-20240301.tar.gz
+https://www.crufty.net/ftp/pub/sjg/bmake-20240309.tar.gz
 https://www.eecis.udel.edu/~ntp/ntp_spool/ntp4/ntp-4.2/ntp-4.2.8p15.tar.gz
 https://www.freedesktop.org/software/colord/releases/colord-1.4.6.tar.xz
 https://www.freedesktop.org/software/fontconfig/release/fontconfig-2.14.2.tar.xz
