@@ -18,8 +18,12 @@ stable_unpack_2 ${src}/*lz4
 {% block go_refine %}
 {% endblock %}
 
+{% block go_tool %}
+bin/go/21
+{% endblock %}
+
 {% block bld_data %}
-aux/go/{{self.go_version().strip()}}(url={{self.go_url().strip()}},sha={{self.go_sha().strip()}},parent_id={{self.go_sha().strip()}},go_refine={{self.go_refine().strip() | b64e}})
+aux/go/{{self.go_version().strip()}}(url={{self.go_url().strip()}},sha={{self.go_sha().strip()}},parent_id={{self.go_sha().strip()}},go_refine={{self.go_refine().strip() | b64e}},go_tool={{self.go_tool().strip()}})
 {% endblock %}
 
 {% block go_build_flags %}
