@@ -97,7 +97,13 @@ class Env(jinja2.Environment):
         self.filters['ser'] = self.ser
         self.filters['des'] = self.des
         self.filters['lines'] = lambda x: list(x.strip().split('\n'))
+        self.filters['eval'] = self.eval
         self.kv = {}
+
+    def eval(self, v, code, *args):
+        ctx = {}
+        exec(code, ctx, ctx)
+        return ctx['do'](v, *args)
 
     def ser(self, v):
         k = hashlib.md5(json.dumps(v, sort_keys=True).encode()).hexdigest()

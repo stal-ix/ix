@@ -1,7 +1,7 @@
 http://ix-eparo-mirror.duckdns.org/
 http://ix-mirror.mooo.com/
 http://ix.kmeaw.com/
-http://ix.samokhvalov.xyz/
+http://ix.homelab.cam:8080/
 https://ix.vvzvlad.xyz/
 https://ix.7mind.io/
 http://fin1.mirror.stal-ix.org/
