@@ -1,11 +1,21 @@
 {% extends '//die/proxy.sh' %}
 
-{% set json | jl %}
+{% set data %}
 [
     {"a": 1, "b": "x"},
     {"a": 2, "b": "y"}
 ]
 {% endset %}
+
+{% set prog %}
+import json
+
+def do(data, arg):
+    print(arg)
+    return json.loads(data)
+{% endset %}
+
+{% set json = data | eval(prog, "qw") %}
 
 {% block install %}
 cat << EOF
