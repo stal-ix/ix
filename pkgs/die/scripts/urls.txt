@@ -1641,6 +1641,7 @@ https://github.com/rui314/mold/archive/refs/tags/v2.3.0.tar.gz
 https://github.com/rui314/mold/archive/refs/tags/v2.3.1.tar.gz
 https://github.com/rui314/mold/archive/refs/tags/v2.3.2.tar.gz
 https://github.com/rui314/mold/archive/refs/tags/v2.3.3.tar.gz
+https://github.com/rui314/mold/archive/refs/tags/v2.30.0.tar.gz
 https://github.com/rui314/mold/archive/refs/tags/v2.4.0.tar.gz
 https://github.com/rui314/mold/archive/refs/tags/v2.4.1.tar.gz
 https://github.com/rvaiya/keyd/archive/refs/tags/v2.4.3.tar.gz
