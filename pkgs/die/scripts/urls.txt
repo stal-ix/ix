@@ -580,6 +580,7 @@ https://github.com/GNOME/json-glib/archive/refs/tags/1.8.0.tar.gz
 https://github.com/GNOME/libadwaita/archive/refs/tags/1.4.0.tar.gz
 https://github.com/GNOME/libadwaita/archive/refs/tags/1.4.2.tar.gz
 https://github.com/GNOME/libadwaita/archive/refs/tags/1.4.beta.tar.gz
+https://github.com/GNOME/libadwaita/archive/refs/tags/1.5.0.tar.gz
 https://github.com/GNOME/libgudev/archive/refs/tags/237.tar.gz
 https://github.com/GNOME/libshumate/archive/refs/tags/1.0.5.tar.gz
 https://github.com/GNOME/libshumate/archive/refs/tags/1.1.0.tar.gz
