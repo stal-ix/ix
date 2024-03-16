@@ -1,8 +1,8 @@
 {% extends '//lib/web/kit/t/ix.sh' %}
 
 {% block fetch %}
-https://webkitgtk.org/releases/webkitgtk-2.42.5.tar.xz
-sha:b64278c1f20b8cfdbfb5ff573c37d871aba74a1db26d9b39f74e8953fe61e749
+https://webkitgtk.org/releases/webkitgtk-2.44.0.tar.xz
+sha:c66530e41ba59b1edba4ee89ef20b2188e273bed0497e95084729e3cfbe30c87
 {% endblock %}
 
 {% block lib_deps %}

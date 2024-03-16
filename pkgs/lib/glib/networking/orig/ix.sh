@@ -1,8 +1,8 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://gitlab.gnome.org/GNOME/glib-networking/-/archive/2.78.1/glib-networking-2.78.1.tar.bz2
-sha:5200c4373ff5c32c6b3d7843c1fa2ea9a1b38c502bb1a50f642bd483e34c8bbd
+https://gitlab.gnome.org/GNOME/glib-networking/-/archive/2.80.0/glib-networking-2.80.0.tar.bz2
+sha:c14cb3c666d2fd0562bee2ea2a43b50d81c47cf62f2159ba1e3895d38ca83044
 {% endblock %}
 
 {% block lib_deps %}
