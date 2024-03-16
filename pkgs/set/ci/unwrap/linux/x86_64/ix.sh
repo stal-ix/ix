@@ -749,7 +749,7 @@ bin/i3/status
 bin/gnupg
 bin/sixel
 bin/neo/mutt
-bin/balsa
+#bin/balsa
 bin/uuencode
 bin/uget
 bin/gnuplot
