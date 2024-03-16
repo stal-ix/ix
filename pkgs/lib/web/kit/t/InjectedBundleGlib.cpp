@@ -18,8 +18,8 @@ static void WKBundleInitialize(WKBundleRef bundle, WKTypeRef userData) {
 
 namespace WebKit {
 
-bool InjectedBundle::initialize(const WebProcessCreationParameters&, API::Object* initializationUserData) {
-    WKBundleInitialize(toAPI(this), toAPI(initializationUserData));
+bool InjectedBundle::initialize(const WebProcessCreationParameters&, RefPtr<API::Object>&& initializationUserData) {
+    WKBundleInitialize(toAPI(this), toAPI(initializationUserData.get()));
     return true;
 }
 
