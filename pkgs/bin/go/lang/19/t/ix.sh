@@ -1,4 +1,4 @@
-{% extends '//bin/go/4/ix.sh' %}
+{% extends '//bin/go/lang/4/ix.sh' %}
 
 {% block fetch %}
 https://github.com/golang/go/archive/refs/tags/go1.19.10.tar.gz

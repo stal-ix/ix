@@ -157,8 +157,8 @@ bin/python/9
 bin/xml/b
 bin/walk
 bin/lld/16
-bin/go/21
-bin/go/22
+bin/go/lang/21
+bin/go/lang/22
 bin/limine
 bin/emacs/gtk
 bin/knot/resolver
@@ -426,10 +426,10 @@ bin/bash
 bin/sed
 bin/neo/vim
 bin/light
-bin/go/4
+bin/go/lang/4
 bin/go
-bin/go/19
-bin/go/20
+bin/go/lang/19
+bin/go/lang/20
 bin/zip
 bin/zip/tool
 bin/openssl

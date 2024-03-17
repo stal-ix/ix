@@ -1,5 +1,5 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
-bin/go/22
+bin/go/lang/22
 {% endblock %}

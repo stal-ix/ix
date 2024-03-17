@@ -19,7 +19,7 @@ stable_unpack_2 ${src}/*lz4
 {% endblock %}
 
 {% block go_tool %}
-bin/go/21
+bin/go/lang/21
 {% endblock %}
 
 {% block bld_data %}
