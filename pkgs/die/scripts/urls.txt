@@ -202,6 +202,7 @@ https://download.gnome.org/sources/atkmm/2.28/atkmm-2.28.2.tar.xz
 https://download.gnome.org/sources/dconf/0.40/dconf-0.40.0.tar.xz
 https://download.gnome.org/sources/evince/44/evince-44.3.tar.xz
 https://download.gnome.org/sources/evince/45/evince-45.0.tar.xz
+https://download.gnome.org/sources/evince/46/evince-46.0.tar.xz
 https://download.gnome.org/sources/gdk-pixbuf/2.42/gdk-pixbuf-2.42.6.tar.xz
 https://download.gnome.org/sources/glib/2.74/glib-2.74.5.tar.xz
 https://download.gnome.org/sources/glib/2.78/glib-2.78.0.tar.xz
