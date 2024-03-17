@@ -100,8 +100,8 @@ bin/pass/secrets
 bin/sd/bus/codegen
 bin/geeqie
 bin/senpai
-bin/gosh
-bin/gosh/posix
+bin/go/sh
+bin/go/sh/posix
 bin/gotop
 bin/d/spy
 bin/dbus/broker
