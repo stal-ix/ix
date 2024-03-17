@@ -873,6 +873,7 @@ https://github.com/ccache/ccache/releases/download/v4.9.1/ccache-4.9.1.tar.xz
 https://github.com/ccxvii/mujs/archive/refs/tags/1.3.2.tar.gz
 https://github.com/celluloid-player/celluloid/archive/refs/tags/v0.26.tar.gz
 https://github.com/chenjiandongx/sniffer/archive/refs/tags/v0.6.1.tar.gz
+https://github.com/chmouel/gosmee/archive/refs/tags/v0.21.0.tar.gz
 https://github.com/cilium/pwru/archive/refs/tags/v1.0.4.tar.gz
 https://github.com/cilium/pwru/archive/refs/tags/v1.0.5.tar.gz
 https://github.com/cisco/openh264/archive/refs/tags/v2.3.1.tar.gz
@@ -1134,7 +1135,10 @@ https://github.com/hyprwm/Hyprland/releases/download/v0.33.1/source-v0.33.1.tar.
 https://github.com/hyprwm/Hyprland/releases/download/v0.34.0/source-v0.34.0.tar.gz
 https://github.com/hyprwm/Hyprland/releases/download/v0.35.0/source-v0.35.0.tar.gz
 https://github.com/hyprwm/Hyprland/releases/download/v0.36.0/source-v0.36.0.tar.gz
+https://github.com/hyprwm/Hyprland/releases/download/v0.37.1/source-v0.37.1.tar.gz
+https://github.com/hyprwm/hyprcursor/archive/refs/tags/v0.1.4.tar.gz
 https://github.com/hyprwm/hyprlang/archive/refs/tags/v0.4.1.tar.gz
+https://github.com/hyprwm/hyprlang/archive/refs/tags/v0.5.0.tar.gz
 https://github.com/hyprwm/hyprpaper/archive/refs/tags/v0.2.0.tar.gz
 https://github.com/hyprwm/hyprpicker/archive/refs/tags/v0.1.0.tar.gz
 https://github.com/ib/xarchiver/archive/refs/tags/0.5.4.20.tar.gz
@@ -1212,6 +1216,7 @@ https://github.com/junegunn/fzf/archive/refs/tags/0.46.0.tar.gz
 https://github.com/junegunn/fzf/archive/refs/tags/0.46.1.tar.gz
 https://github.com/junegunn/fzf/archive/refs/tags/0.47.0.tar.gz
 https://github.com/junegunn/fzf/archive/refs/tags/0.48.0.tar.gz
+https://github.com/junegunn/fzf/archive/refs/tags/0.48.1.tar.gz
 https://github.com/kaniini/libucontext/archive/refs/tags/libucontext-1.2.tar.gz
 https://github.com/kcat/openal-soft/archive/refs/tags/1.23.1.tar.gz
 https://github.com/keepassxreboot/keepassxc/releases/download/2.7.6/keepassxc-2.7.6-src.tar.xz
