@@ -196,7 +196,7 @@ bin/rpcgen
 bin/nfs/utils
 bin/redis/lite
 bin/dnsmasq
-bin/goawk
+bin/go/awk
 bin/sniffer
 bin/webp/gui
 bin/yt
