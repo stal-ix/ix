@@ -9,7 +9,7 @@ e5832cc3c1485fa0b14bbb89fd2e40d2c356fd5f3f8a30865d91195a23892be2
 {% endblock %}
 
 {% block go_compiler %}
-bin/go/20
+bin/go/lang/20
 {% endblock %}
 
 {% block install %}

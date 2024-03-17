@@ -37,6 +37,7 @@
 #}
 
 {% block run_deps %}
+bin/go/smee
 bin/bcrypt
 bin/reproxy
 bin/q/bittorrent/nox
@@ -100,16 +101,16 @@ bin/pass/secrets
 bin/sd/bus/codegen
 bin/geeqie
 bin/senpai
-bin/gosh
-bin/gosh/posix
-bin/gotop
+bin/go/sh
+bin/go/sh/posix
+bin/go/top
 bin/d/spy
 bin/dbus/broker
 bin/acpi/ca
 bin/quaternion
 bin/qemu/8/2
 bin/ssh/3
-bin/gomuks
+bin/go/muks
 bin/nheko
 bin/kmsxx
 bin/muslstack
@@ -157,8 +158,8 @@ bin/python/9
 bin/xml/b
 bin/walk
 bin/lld/16
-bin/go/21
-bin/go/22
+bin/go/lang/21
+bin/go/lang/22
 bin/limine
 bin/emacs/gtk
 bin/knot/resolver
@@ -196,7 +197,7 @@ bin/rpcgen
 bin/nfs/utils
 bin/redis/lite
 bin/dnsmasq
-bin/goawk
+bin/go/awk
 bin/sniffer
 bin/webp/gui
 bin/yt
@@ -426,10 +427,9 @@ bin/bash
 bin/sed
 bin/neo/vim
 bin/light
-bin/go/4
-bin/go
-bin/go/19
-bin/go/20
+bin/go/lang/4
+bin/go/lang/19
+bin/go/lang/20
 bin/zip
 bin/zip/tool
 bin/openssl
@@ -783,7 +783,7 @@ bin/curlie
 bin/autologin
 bin/autologin/runit
 bin/getent
-bin/gopass
+bin/go/pass
 bin/shadowsocks/go/2
 bin/shadowsocks/libev
 bin/task

@@ -9,7 +9,7 @@ https://github.com/pg83/bcrypt/archive/e8270a3fa761d9301199f828af90a67e2721c7a8.
 {% endblock %}
 
 {% block go_tool %}
-bin/go/22
+bin/go/lang/22
 {% endblock %}
 
 {% block install %}

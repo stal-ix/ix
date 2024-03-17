@@ -2,7 +2,7 @@
 
 {% block std_box %}
 {% block go_compiler %}
-bin/go
+bin/go/lang
 {% endblock %}
 {{super()}}
 {% endblock %}

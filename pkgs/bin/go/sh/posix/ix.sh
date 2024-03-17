@@ -1,4 +1,4 @@
-{% extends '//bin/gosh/ix.sh' %}
+{% extends '//bin/go/sh/ix.sh' %}
 
 {% block install %}
 {{super()}}

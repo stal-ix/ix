@@ -18,6 +18,7 @@ lib/xkb/common
 lib/drivers/3d
 lib/mesa/gl/dl
 lib/mesa/egl/dl
+lib/hypr/cursor
 bin/hypr/wlroots
 lib/toml/plus/plus
 lib/mesa/glesv2/dl
