@@ -102,7 +102,7 @@ bin/geeqie
 bin/senpai
 bin/go/sh
 bin/go/sh/posix
-bin/gotop
+bin/go/top
 bin/d/spy
 bin/dbus/broker
 bin/acpi/ca
