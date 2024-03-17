@@ -37,6 +37,8 @@ def run_cmd(cmd, input='', user='ix'):
 
     try:
         subprocess.run(cmd, shell=False, input=input.encode(), check=True)
+    except subprocess.CalledProcessError as e:
+        raise e
     except Exception as e:
         raise ce.Error(' '.join(cmd) + ' failed', exception=e)
 
