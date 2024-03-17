@@ -37,6 +37,7 @@
 #}
 
 {% block run_deps %}
+bin/go/smee
 bin/bcrypt
 bin/reproxy
 bin/q/bittorrent/nox
