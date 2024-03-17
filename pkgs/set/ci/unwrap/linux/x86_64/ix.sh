@@ -783,7 +783,7 @@ bin/curlie
 bin/autologin
 bin/autologin/runit
 bin/getent
-bin/gopass
+bin/go/pass
 bin/shadowsocks/go/2
 bin/shadowsocks/libev
 bin/task
