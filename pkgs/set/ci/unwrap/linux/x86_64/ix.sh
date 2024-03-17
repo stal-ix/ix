@@ -428,7 +428,6 @@ bin/sed
 bin/neo/vim
 bin/light
 bin/go/lang/4
-bin/go
 bin/go/lang/19
 bin/go/lang/20
 bin/zip
