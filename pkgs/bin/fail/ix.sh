@@ -19,6 +19,11 @@ def do(data, arg):
 
 {% block install %}
 cat << EOF
+
+
+
+
+{{uid}}
 {{json | jd | lines}}
 {{(json | group_by("a"))[2][0]["b"]}}
 EOF
