@@ -2095,6 +2095,7 @@ https://libbsd.freedesktop.org/releases/libbsd-0.11.7.tar.xz
 https://libbsd.freedesktop.org/releases/libbsd-0.11.8.tar.xz
 https://libbsd.freedesktop.org/releases/libbsd-0.12.0.tar.xz
 https://libbsd.freedesktop.org/releases/libbsd-0.12.1.tar.xz
+https://libbsd.freedesktop.org/releases/libbsd-0.12.2.tar.xz
 https://libbsd.freedesktop.org/releases/libmd-1.1.0.tar.xz
 https://libisl.sourceforge.io/isl-0.26.tar.xz
 https://libmpeg2.sourceforge.io/files/libmpeg2-0.5.1.tar.gz
