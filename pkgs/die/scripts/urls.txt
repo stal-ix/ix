@@ -2038,6 +2038,7 @@ https://gitlab.gnome.org/GNOME/vte/-/archive/0.72.2/vte-0.72.2.tar.bz2
 https://gitlab.gnome.org/GNOME/vte/-/archive/0.74.0/vte-0.74.0.tar.bz2
 https://gitlab.gnome.org/GNOME/vte/-/archive/0.74.1/vte-0.74.1.tar.bz2
 https://gitlab.gnome.org/GNOME/vte/-/archive/0.74.2/vte-0.74.2.tar.bz2
+https://gitlab.gnome.org/GNOME/vte/-/archive/0.76.0/vte-0.76.0.tar.bz2
 https://gitlab.gnome.org/GNOME/vte/-/archive/9e8824480ef51374bf9b42ad8ee59f64d50456b1/vte-9e8824480ef51374bf9b42ad8ee59f64d50456b1.tar.bz2
 https://gitlab.gnome.org/GNOME/zenity/-/archive/3.44.0/zenity-3.44.0.tar.bz2
 https://gitlab.gnome.org/GNOME/zenity/-/archive/3.90.0/zenity-3.90.0.tar.bz2
