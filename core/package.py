@@ -145,11 +145,12 @@ class Package:
         self.manager = mngr
         self.selector = fix_selector(selector, self.config)
         self.pkg_name = self.calc_pkg_name()
+        self.uid = cs.UID
         self.descr = cr.RenderContext(self).render()
 
         if self.buildable():
-            self.uid = cs.UID
             self.uid = list(self.iter_build_commands())[-1]['uid']
+            self.descr = cr.RenderContext(self).render()
         else:
             self.uid = cu.struct_hash(self.selector)
 

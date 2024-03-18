@@ -202,6 +202,7 @@ https://download.gnome.org/sources/atkmm/2.28/atkmm-2.28.2.tar.xz
 https://download.gnome.org/sources/dconf/0.40/dconf-0.40.0.tar.xz
 https://download.gnome.org/sources/evince/44/evince-44.3.tar.xz
 https://download.gnome.org/sources/evince/45/evince-45.0.tar.xz
+https://download.gnome.org/sources/evince/46/evince-46.0.tar.xz
 https://download.gnome.org/sources/gdk-pixbuf/2.42/gdk-pixbuf-2.42.6.tar.xz
 https://download.gnome.org/sources/glib/2.74/glib-2.74.5.tar.xz
 https://download.gnome.org/sources/glib/2.78/glib-2.78.0.tar.xz
@@ -2001,6 +2002,7 @@ https://gitlab.gnome.org/GNOME/gtk/-/archive/4.12.4/gtk-4.12.4.tar.bz2
 https://gitlab.gnome.org/GNOME/gtk/-/archive/4.12.5/gtk-4.12.5.tar.bz2
 https://gitlab.gnome.org/GNOME/gtk/-/archive/4.13.6/gtk-4.13.6.tar.bz2
 https://gitlab.gnome.org/GNOME/gtk/-/archive/4.14.0/gtk-4.14.0.tar.bz2
+https://gitlab.gnome.org/GNOME/gtk/-/archive/4.14.1/gtk-4.14.1.tar.bz2
 https://gitlab.gnome.org/GNOME/gtksourceview/-/archive/5.10.0/gtksourceview-5.10.0.tar.bz2
 https://gitlab.gnome.org/GNOME/gtksourceview/-/archive/5.8.0/gtksourceview-5.8.0.tar.bz2
 https://gitlab.gnome.org/GNOME/json-glib/-/archive/1.6.6/json-glib-1.6.6.tar.bz2
@@ -2036,6 +2038,7 @@ https://gitlab.gnome.org/GNOME/vte/-/archive/0.72.2/vte-0.72.2.tar.bz2
 https://gitlab.gnome.org/GNOME/vte/-/archive/0.74.0/vte-0.74.0.tar.bz2
 https://gitlab.gnome.org/GNOME/vte/-/archive/0.74.1/vte-0.74.1.tar.bz2
 https://gitlab.gnome.org/GNOME/vte/-/archive/0.74.2/vte-0.74.2.tar.bz2
+https://gitlab.gnome.org/GNOME/vte/-/archive/0.76.0/vte-0.76.0.tar.bz2
 https://gitlab.gnome.org/GNOME/vte/-/archive/9e8824480ef51374bf9b42ad8ee59f64d50456b1/vte-9e8824480ef51374bf9b42ad8ee59f64d50456b1.tar.bz2
 https://gitlab.gnome.org/GNOME/zenity/-/archive/3.44.0/zenity-3.44.0.tar.bz2
 https://gitlab.gnome.org/GNOME/zenity/-/archive/3.90.0/zenity-3.90.0.tar.bz2
@@ -2093,6 +2096,7 @@ https://libbsd.freedesktop.org/releases/libbsd-0.11.7.tar.xz
 https://libbsd.freedesktop.org/releases/libbsd-0.11.8.tar.xz
 https://libbsd.freedesktop.org/releases/libbsd-0.12.0.tar.xz
 https://libbsd.freedesktop.org/releases/libbsd-0.12.1.tar.xz
+https://libbsd.freedesktop.org/releases/libbsd-0.12.2.tar.xz
 https://libbsd.freedesktop.org/releases/libmd-1.1.0.tar.xz
 https://libisl.sourceforge.io/isl-0.26.tar.xz
 https://libmpeg2.sourceforge.io/files/libmpeg2-0.5.1.tar.gz
