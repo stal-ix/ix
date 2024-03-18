@@ -91,7 +91,6 @@ class RenderContext:
             kind: True,
             tp['os']: True,
             tp['arch']: True,
-            'uid': pkg.uid,
         }, pkg.flags)
 
         if args['boot']:
