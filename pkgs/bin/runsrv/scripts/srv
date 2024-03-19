@@ -1,5 +1,8 @@
 #!/bin/sh
 
+# reload here, cause we can not reload runit/1
+. /etc/env
+
 SRV_DIR=/var/run/${1}
 STD_DIR=${SRV_DIR}/std
 

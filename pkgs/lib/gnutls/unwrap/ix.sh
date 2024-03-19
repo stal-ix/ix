@@ -25,6 +25,7 @@ glthread_rwlock_unlock_multithreaded
 glthread_rwlock_wrlock_multithreaded
 hash_string
 hash_lookup
+nettle_rsa_compute_root_tr
 {% endblock %}
 
 {% block patch %}
