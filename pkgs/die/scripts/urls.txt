@@ -997,6 +997,7 @@ https://github.com/fish-shell/fish-shell/archive/refs/tags/3.6.1.tar.gz
 https://github.com/fish-shell/fish-shell/archive/refs/tags/3.6.3.tar.gz
 https://github.com/fish-shell/fish-shell/archive/refs/tags/3.6.4.tar.gz
 https://github.com/fish-shell/fish-shell/archive/refs/tags/3.7.0.tar.gz
+https://github.com/fish-shell/fish-shell/archive/refs/tags/3.7.1.tar.gz
 https://github.com/flacjacket/pywayland/archive/refs/tags/v0.4.17.tar.gz
 https://github.com/flacjacket/pywlroots/archive/refs/tags/v0.16.6.tar.gz
 https://github.com/flatpak/libportal/archive/refs/tags/0.7.1.tar.gz

@@ -10,7 +10,7 @@ sleep {{delay}}
 
 date
 
-find /etc/sche.d/{{delay}} -type l -name '*.sh'| while read l; do
+find /etc/sched/{{delay}} -type l -name '*.sh'| while read l; do
     echo "run \${l}"
     sh "\${l}" || true
     sleep 1

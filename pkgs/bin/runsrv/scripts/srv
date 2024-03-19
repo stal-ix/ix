@@ -9,6 +9,9 @@ mkdir -p ${STD_DIR}
 
 cd ${STD_DIR}
 
+# TODO(pg): check it
+export TMPDIR=${PWD}
+
 PP=$$
 P=/sys/fs/cgroup/srv/${PP}
 
