@@ -24,7 +24,6 @@ chmod +x reboot
 cat << EOF > init
 #!/bin/sh
 export PATH=/bin
-export TMPDIR=/var/tmp
 exec chpst -0 -1 -2 runit
 EOF
 
@@ -34,6 +33,12 @@ cd ..
 
 mkdir fix; base64 -d << EOF > fix/run1.sh
 {% include 'run1.sh/base64' %}
+EOF
+
+mkdir -p etc/env.d
+
+cat << EOF > etc/env.d/00-env.sh
+export TMPDIR=/var/tmp
 EOF
 
 mkdir -p etc/runit; cd etc/runit
@@ -54,7 +59,7 @@ chmod +x 2 3
 
 mkdir 1.d; cd 1.d
 
-cat << EOF > 00-path.sh
+cat << EOF > 00-env.sh
 export PATH=/bin
 EOF
 

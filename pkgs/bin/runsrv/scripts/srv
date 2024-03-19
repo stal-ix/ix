@@ -1,5 +1,7 @@
 #!/bin/sh
 
+. /etc/env
+
 SRV_DIR=/var/run/${1}
 STD_DIR=${SRV_DIR}/std
 

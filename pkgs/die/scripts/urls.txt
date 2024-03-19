@@ -758,6 +758,7 @@ https://github.com/WebAssembly/binaryen/archive/refs/tags/version_117.tar.gz
 https://github.com/WebPlatformForEmbedded/libwpe/archive/refs/tags/1.12.3.tar.gz
 https://github.com/WerWolv/ImHex/releases/download/v1.19.1/Full.Sources.tar.gz
 https://github.com/YaLTeR/niri/archive/1971a41fdd68f0a33bd5db22f776821682c23206.zip
+https://github.com/YaLTeR/niri/archive/db49deb7fd2fbe805ceec060aa4dec65009ad7a7.zip
 https://github.com/YaLTeR/niri/archive/refs/tags/v0.1.0-beta.1.tar.gz
 https://github.com/YaLTeR/niri/archive/refs/tags/v0.1.0.tar.gz
 https://github.com/YaLTeR/niri/archive/refs/tags/v0.1.1.tar.gz
@@ -1528,6 +1529,7 @@ https://github.com/project-repo/cagebreak/archive/refs/tags/2.3.1.tar.gz
 https://github.com/projectdiscovery/dnsx/archive/refs/tags/v1.1.6.tar.gz
 https://github.com/prometheus/node_exporter/archive/refs/tags/v1.7.0.tar.gz
 https://github.com/prometheus/prometheus/archive/refs/tags/v2.50.1.tar.gz
+https://github.com/prometheus/prometheus/archive/refs/tags/v2.51.0.tar.gz
 https://github.com/prometheus/prometheus/releases/download/v2.50.1/prometheus-web-ui-2.50.1.tar.gz
 https://github.com/protobuf-c/protobuf-c/archive/refs/tags/v1.4.1.tar.gz
 https://github.com/protobuf-c/protobuf-c/archive/refs/tags/v1.5.0.tar.gz
@@ -2293,6 +2295,7 @@ https://www.gnupg.org/ftp/gcrypt/gnupg/gnupg-2.4.4.tar.bz2
 https://www.gnupg.org/ftp/gcrypt/gnutls/v3.8/gnutls-3.8.1.tar.xz
 https://www.gnupg.org/ftp/gcrypt/gnutls/v3.8/gnutls-3.8.2.tar.xz
 https://www.gnupg.org/ftp/gcrypt/gnutls/v3.8/gnutls-3.8.3.tar.xz
+https://www.gnupg.org/ftp/gcrypt/gnutls/v3.8/gnutls-3.8.4.tar.xz
 https://www.gnupg.org/ftp/gcrypt/gpgme/gpgme-1.22.0.tar.bz2
 https://www.gnupg.org/ftp/gcrypt/gpgme/gpgme-1.23.0.tar.bz2
 https://www.gnupg.org/ftp/gcrypt/gpgme/gpgme-1.23.1.tar.bz2

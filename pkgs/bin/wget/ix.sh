@@ -39,6 +39,8 @@ glthread_once_multithreaded
 
 {% block configure_flags %}
 --with-cares
+# fix wgetrc in /etc
+--sysconfdir=${out}/share/wget
 {% endblock %}
 
 {% block patch %}
