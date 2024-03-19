@@ -94,9 +94,4 @@ hostname -F /etc/hostname
 echo 0 > /proc/sys/kernel/printk
 dmesg > /var/log/boot
 EOF
-
-cat << EOF > 101-env.sh
-# env
-. /etc/env
-EOF
 {% endblock %}
