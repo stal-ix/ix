@@ -2,7 +2,7 @@ set -xue
 
 cd etc
 
-ls | grep '.*\.d$' | while read l; do
+ls | grep '.*\.d$' | grep -v ananicy | while read l; do
     cat ${l}/* > ${l%.d}
     rm -r ${l}
 done
