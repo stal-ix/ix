@@ -16,7 +16,7 @@ pidfile   /var/run/ntpd/ntp.pid
 leapfile  /var/run/ntpd/ntp.leapseconds
 EOF
 
-mkdir -p sche.d/{{delay}}; cd sche.d/{{delay}}
+mkdir -p sched/{{delay}}; cd sched/{{delay}}
 
 cat << EOF > ntpd.sh
 ntpd -dd -n -q

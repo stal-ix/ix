@@ -5,13 +5,8 @@ cd ${out}
 
 mkdir fix; cd fix
 
-cat << EOF > passwd.sh
-cat etc/passwd.d/* > etc/passwd
-rm -r etc/passwd.d
-cat etc/hosts.d/* > etc/hosts
-rm -r etc/hosts.d
-cat etc/group.d/* > etc/group
-rm -r etc/group.d
+base64 -d << EOF > 00-concat.sh
+{% include 'concat.sh/base64' %}
 EOF
 
 cat << EOF > mtab.sh

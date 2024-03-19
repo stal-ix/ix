@@ -5,7 +5,7 @@ bin/sched(delay={{delay}})
 {% endblock %}
 
 {% block install %}
-cd ${out}; mkdir -p etc/sche.d/{{delay}}; cd etc/sche.d/{{delay}}
+cd ${out}; mkdir -p etc/sched/{{delay}}; cd etc/sched/{{delay}}
 
 cat << EOF > builddir.sh
 /bin/flock -nx /ix /bin/sh -c 'mv /ix/build/* /ix/trash/'
