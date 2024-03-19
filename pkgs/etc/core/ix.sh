@@ -21,7 +21,6 @@ mkdir group.d
 
 cat << EOF > group.d/00-default
 none:x:1:
-audio:x:1:
 EOF
 
 cat << EOF > os-release
