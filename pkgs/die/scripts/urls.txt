@@ -28,6 +28,7 @@ http://downloads.sourceforge.net/djvu/djvulibre-3.5.28.tar.gz
 http://downloads.sourceforge.net/freeimage/FreeImage3180.zip
 http://downloads.uclibc-ng.org/releases/1.0.41/uClibc-ng-1.0.41.tar.xz
 http://downloads.uclibc-ng.org/releases/1.0.45/uClibc-ng-1.0.45.tar.xz
+http://downloads.uclibc-ng.org/releases/1.0.46/uClibc-ng-1.0.46.tar.xz
 http://downloads.xiph.org/releases/opus/opusfile-0.12.tar.gz
 http://downloads.xiph.org/releases/theora/libtheora-1.1.1.tar.bz2
 http://fossies.org/linux/misc/libev-4.33.tar.gz
@@ -1353,6 +1354,7 @@ https://github.com/llvm/llvm-project/releases/download/llvmorg-17.0.4/llvm-proje
 https://github.com/llvm/llvm-project/releases/download/llvmorg-17.0.5/llvm-project-17.0.5.src.tar.xz
 https://github.com/llvm/llvm-project/releases/download/llvmorg-17.0.6/llvm-project-17.0.6.src.tar.xz
 https://github.com/llvm/llvm-project/releases/download/llvmorg-18.1.0/llvm-project-18.1.0.src.tar.xz
+https://github.com/llvm/llvm-project/releases/download/llvmorg-18.1.2/llvm-project-18.1.2.src.tar.xz
 https://github.com/lm-sensors/lm-sensors/archive/refs/tags/V3-6-0.tar.gz
 https://github.com/lsof-org/lsof/archive/refs/tags/4.98.0.tar.gz
 https://github.com/lsof-org/lsof/archive/refs/tags/4.99.0.tar.gz
@@ -2236,6 +2238,7 @@ https://storage.googleapis.com/downloads.webmproject.org/releases/webp/libwebp-1
 https://strace.io/files/6.5/strace-6.5.tar.xz
 https://strace.io/files/6.6/strace-6.6.tar.xz
 https://strace.io/files/6.7/strace-6.7.tar.xz
+https://strace.io/files/6.8/strace-6.8.tar.xz
 https://taglib.org/releases/taglib-1.13.1.tar.gz
 https://the.earth.li/~sgtatham/putty/0.76/putty-0.76.tar.gz
 https://thekelleys.org.uk/dnsmasq/dnsmasq-2.89.tar.xz

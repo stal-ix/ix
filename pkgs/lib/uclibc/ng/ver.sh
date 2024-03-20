@@ -1,2 +1,2 @@
-http://downloads.uclibc-ng.org/releases/1.0.45/uClibc-ng-1.0.45.tar.xz
-sha:c2f4c6b6e19d7c9c226992a3746efd7ab932040463c15ee0bc8f4132b5777ac4
+http://downloads.uclibc-ng.org/releases/1.0.46/uClibc-ng-1.0.46.tar.xz
+sha:d6eb01fced11c5e3b319bf4132d67685b1c33494426e9426032e31979d7d8ad7
