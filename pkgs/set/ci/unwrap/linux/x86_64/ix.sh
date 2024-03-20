@@ -37,6 +37,7 @@
 #}
 
 {% block run_deps %}
+bin/irq/balance
 bin/go/smee
 bin/bcrypt
 bin/reproxy
