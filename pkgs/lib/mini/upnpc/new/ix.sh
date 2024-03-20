@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/miniupnp/miniupnp/archive/refs/tags/miniupnpd_2_3_4.tar.gz
-sha:4686ff5a071fa58d50c1e0b81d447851dd9ea509c9cc82f0ceb4286473919ce9
+https://github.com/miniupnp/miniupnp/archive/refs/tags/miniupnpd_2_3_6.tar.gz
+sha:6e5ee2239030486675f558cc840d154e5e2db9517efc96c5b0ab2b2c34c1a128
 {% endblock %}
 
 {% block unpack %}
