@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://github.com/vstakhov/libucl/archive/refs/tags/0.9.0.tar.gz
-sha:87b233048bca7d307b14cffb882d3c198dc3fff96b19e0c3515428f027b3ebfe
+https://github.com/vstakhov/libucl/archive/refs/tags/0.9.1.tar.gz
+sha:e3efc73db5dfbfd4866bbff46f73efbecdb6b8f851e604d3a22ea65d5ede7b98
 {% endblock %}
 
 {% block lib_deps %}
