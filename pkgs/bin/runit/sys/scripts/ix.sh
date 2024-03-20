@@ -85,6 +85,7 @@ EOF
 
 cat << EOF > 100-fini.sh
 # fini
+sysctl -w net.ipv4.ping_group_range="0 4294967294"
 sysctl -w vm.swappiness=10
 echo always > /sys/kernel/mm/transparent_hugepage/enabled
 echo 1 > /sys/kernel/mm/transparent_hugepage/khugepaged/scan_sleep_millisecs
