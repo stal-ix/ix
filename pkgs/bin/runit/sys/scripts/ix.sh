@@ -41,6 +41,16 @@ cat << EOF > etc/env.d/00-env.sh
 export TMPDIR=/var/tmp
 EOF
 
+mkdir -p etc/sysctl.d
+
+cat << EOF > etc/sysctl.d/ping.conf
+net.ipv4.ping_group_range = 0 4294967294
+EOF
+
+cat << EOF > etc/sysctl.d/swap.conf
+vm.swappiness = 10
+EOF
+
 mkdir -p etc/runit; cd etc/runit
 
 cat << EOF > 2
@@ -83,10 +93,13 @@ mount -t tmpfs tmpfs /var/run
 mount -t tmpfs tmpfs /var/tmp
 EOF
 
-cat << EOF > 100-fini.sh
+cat << EOF > 98-sysctl.sh
+# apply sysctls
+sysctl -p /etc/sysctl
+EOF
+
+cat << EOF > 99-fini.sh
 # fini
-sysctl -w net.ipv4.ping_group_range="0 4294967294"
-sysctl -w vm.swappiness=10
 echo always > /sys/kernel/mm/transparent_hugepage/enabled
 echo 1 > /sys/kernel/mm/transparent_hugepage/khugepaged/scan_sleep_millisecs
 (echo 1000 > /sys/kernel/mm/lru_gen/min_ttl_ms) || true
