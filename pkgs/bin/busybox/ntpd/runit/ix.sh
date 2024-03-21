@@ -1,8 +1,7 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
-bin/sched
 bin/busybox
 bin/busybox/conf
-bin/busybox/ntpd/scripts
+etc/services/runit(srv_dir=ntpd,srv_command=exec ntpd -n -d -N)
 {% endblock %}

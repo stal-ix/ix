@@ -18,6 +18,9 @@ bin/dbus/runit
 bin/dhcpcd/runit
 bin/openresolv/runit
 
+bin/chrony/runit
+#bin/busybox/ntpd/runit
+
 # https://wiki.musl-libc.org/functional-differences-from-glibc.html#Name-Resolver/DNS
 {% if unbound %}
 bin/unbound/runit
@@ -53,7 +56,6 @@ bin/ip/utils(intl_ver=stub)
 bin/bsdutils/env
 bin/busybox
 bin/busybox/syslogd
-bin/busybox/ntpd(delay=100)
 {% endblock %}
 
 {% block run_data %}

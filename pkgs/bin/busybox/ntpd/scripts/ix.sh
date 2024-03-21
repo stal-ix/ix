@@ -1,24 +1,9 @@
 {% extends '//die/proxy.sh' %}
 
 {% block install %}
-cd ${out}
+mkdir -p ${out}/etc/sched/{{delay}}
 
-mkdir etc; cd etc
-
-cat << EOF > ntp.conf
-server 0.asia.pool.ntp.org
-server 0.oceania.pool.ntp.org
-server 0.europe.pool.ntp.org
-server 0.north-america.pool.ntp.org
-server 2.south-america.pool.ntp.org
-driftfile /var/run/ntpd/ntp.drift
-pidfile   /var/run/ntpd/ntp.pid
-leapfile  /var/run/ntpd/ntp.leapseconds
-EOF
-
-mkdir -p sched/{{delay}}; cd sched/{{delay}}
-
-cat << EOF > ntpd.sh
+cat << EOF > ${out}/etc/sched/{{delay}}/ntpd.sh
 ntpd -dd -n -q
 hwclock -u -w
 EOF
