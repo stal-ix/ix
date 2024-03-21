@@ -17,7 +17,9 @@ bin/runit/sys
 bin/dbus/runit
 bin/dhcpcd/runit
 bin/openresolv/runit
-bin/busybox/ntpd/runit
+
+bin/chrony/runit
+#bin/busybox/ntpd/runit
 
 # https://wiki.musl-libc.org/functional-differences-from-glibc.html#Name-Resolver/DNS
 {% if unbound %}
