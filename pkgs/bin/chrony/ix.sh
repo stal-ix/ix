@@ -1,8 +1,8 @@
 {% extends '//die/c/configure.sh' %}
 
 {% block fetch %}
-https://download.tuxfamily.org/chrony/chrony-4.4.tar.gz
-sha:eafb07e6daf92b142200f478856dfed6efc9ea2d146eeded5edcb09b93127088
+https://download.tuxfamily.org/chrony/chrony-4.5.tar.gz
+sha:19fe1d9f4664d445a69a96c71e8fdb60bcd8df24c73d1386e02287f7366ad422
 {% endblock %}
 
 {% block bld_libs %}
