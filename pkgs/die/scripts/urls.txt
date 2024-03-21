@@ -1374,6 +1374,7 @@ https://github.com/lyonel/lshw/archive/refs/tags/B.02.19.tar.gz
 https://github.com/lyonel/lshw/archive/refs/tags/B.02.20.tar.gz
 https://github.com/lz4/lz4/archive/refs/tags/v1.9.4.tar.gz
 https://github.com/magicant/yash/releases/download/2.55/yash-2.55.tar.xz
+https://github.com/magicant/yash/releases/download/2.56.1/yash-2.56.1.tar.xz
 https://github.com/managarm/mlibc/archive/refs/tags/3.0.0-rc2.tar.gz
 https://github.com/martanne/vis/archive/refs/tags/v0.8.tar.gz
 https://github.com/martijnvanbrummelen/nwipe/archive/refs/tags/v0.34.tar.gz
