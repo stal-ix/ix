@@ -675,6 +675,7 @@ https://github.com/Kitware/CMake/archive/refs/tags/v3.28.0.tar.gz
 https://github.com/Kitware/CMake/archive/refs/tags/v3.28.1.tar.gz
 https://github.com/Kitware/CMake/archive/refs/tags/v3.28.2.tar.gz
 https://github.com/Kitware/CMake/archive/refs/tags/v3.28.3.tar.gz
+https://github.com/Kitware/CMake/archive/refs/tags/v3.28.4.tar.gz
 https://github.com/LBCrion/sfwbar/archive/refs/tags/v1.0_beta13.tar.gz
 https://github.com/LBCrion/sfwbar/archive/refs/tags/v1.0_beta9.tar.gz
 https://github.com/LibRaw/LibRaw/archive/refs/tags/0.21.1.tar.gz
@@ -719,6 +720,7 @@ https://github.com/NixOS/patchelf/archive/refs/tags/0.18.0.tar.gz
 https://github.com/Novum/vkQuake/archive/refs/tags/1.30.1.tar.gz
 https://github.com/Old-Man-Programmer/tree/archive/refs/tags/2.1.1.tar.gz
 https://github.com/OpenTTD/OpenTTD/archive/refs/tags/13.4.tar.gz
+https://github.com/OpenVPN/openvpn/archive/refs/tags/v2.6.10.tar.gz
 https://github.com/OpenVPN/openvpn/archive/refs/tags/v2.6.6.tar.gz
 https://github.com/OpenVPN/openvpn/archive/refs/tags/v2.6.7.tar.gz
 https://github.com/OpenVPN/openvpn/archive/refs/tags/v2.6.8.tar.gz
@@ -2291,6 +2293,7 @@ https://www.crufty.net/ftp/pub/sjg/bmake-20240108.tar.gz
 https://www.crufty.net/ftp/pub/sjg/bmake-20240212.tar.gz
 https://www.crufty.net/ftp/pub/sjg/bmake-20240301.tar.gz
 https://www.crufty.net/ftp/pub/sjg/bmake-20240309.tar.gz
+https://www.crufty.net/ftp/pub/sjg/bmake-20240314.tar.gz
 https://www.eecis.udel.edu/~ntp/ntp_spool/ntp4/ntp-4.2/ntp-4.2.8p15.tar.gz
 https://www.freedesktop.org/software/colord/releases/colord-1.4.6.tar.xz
 https://www.freedesktop.org/software/fontconfig/release/fontconfig-2.14.2.tar.xz
