@@ -4,14 +4,13 @@
 cd ${out}; mkdir -p etc/services/mingetty{{slot}}; cd etc/services/mingetty{{slot}}
 
 cat << EOF > daemon
-#!/bin/setsid /bin/sh
 fixtty /dev/tty{{slot}}
 exec mingetty tty{{slot}}
 EOF
 
 cat << EOF > run
 #!/bin/sh
-exec srv mingetty{{slot}} ${PWD}/daemon
+exec srv mingetty{{slot}} /bin/setsid /bin/sh ${PWD}/daemon
 EOF
 
 chmod +x run daemon

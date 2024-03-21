@@ -1,0 +1,36 @@
+#!/bin/sh
+
+. /etc/env
+
+SRV_DIR=/var/run/${1}
+STD_DIR=${SRV_DIR}/std
+
+shift
+
+mkdir -p ${STD_DIR}
+
+cd ${STD_DIR}
+
+# TODO(pg): check it
+export TMPDIR=${PWD}
+
+PP=$$
+P=/sys/fs/cgroup/srv/${PP}
+
+(
+set -xue
+
+mkdir -p ${P}
+
+echo ${PP} > ${P}/cgroup.procs
+
+cleanup() (
+    echo 1 > ${P}/cgroup.kill
+)
+
+trap cleanup TERM INT EXIT
+
+flock lock logged2 ./ setcwd ${SRV_DIR} ${@} &
+
+wait
+) 1>>err 2>&1
