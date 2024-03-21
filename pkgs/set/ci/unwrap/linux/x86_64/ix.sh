@@ -37,6 +37,7 @@
 #}
 
 {% block run_deps %}
+bin/yash/lite
 bin/irq/balance
 bin/go/smee
 bin/bcrypt
