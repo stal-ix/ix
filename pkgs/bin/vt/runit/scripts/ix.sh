@@ -10,7 +10,7 @@ EOF
 
 cat << EOF > run
 #!/bin/sh
-exec srv2 vt{{slot}} /bin/setsid /bin/sh ${PWD}/daemon
+exec srv vt{{slot}} /bin/setsid /bin/sh ${PWD}/daemon
 EOF
 
 chmod +x run daemon
