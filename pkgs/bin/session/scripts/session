@@ -1,4 +1,4 @@
-#!/bin/subreaper /bin/sh
+#!/bin/sh
 
 unset LANG
 

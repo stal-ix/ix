@@ -8,7 +8,7 @@ cat << EOF > daemon
 export USER=root
 export HOME=/home/root
 fixtty /dev/tty{{slot}}
-exec subreaper openvt -c {{slot}} -w /bin/sh -l
+exec subreaper busybox openvt -c {{slot}} -w /bin/sh -l
 EOF
 
 cat << EOF > run

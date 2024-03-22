@@ -28,7 +28,7 @@ EOF
 
 cat << EOF > run
 #!/bin/sh
-exec srv {{sd}} /bin/sh ${PWD}/hi
+exec srv{{srv_version}} {{sd}} /bin/sh ${PWD}/hi
 EOF
 
 chmod +x run

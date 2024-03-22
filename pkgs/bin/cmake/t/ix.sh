@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/Kitware/CMake/archive/refs/tags/v3.28.4.tar.gz
-sha:13bfa0f77a90024837e8af39704c8de56152c99adc1e8dedd36880d430e1b52f
+https://github.com/Kitware/CMake/archive/refs/tags/v3.29.0.tar.gz
+sha:da2c148562389ad9145f996e15b589872ecc8c06d673c05c7ff66dc259380119
 {% endblock %}
 
 {% block bld_libs %}

@@ -32,12 +32,14 @@ bin/mdns/dns/runit
 bin/dnsmasq/runit
 {% endif %}
 
-{% if mingetty %}
+{% if vt %}
+bin/dm(getty=vt)
+{% elif mingetty %}
 bin/dm(getty=mingetty)
 {% elif emptty %}
 bin/dm(getty=emptty)
 {% else %}
-bin/dm(getty=mingetty)
+bin/dm(getty=vt)
 {% endif %}
 
 bin/sched/fstrim(delay=1000)
@@ -52,6 +54,7 @@ bin/sched/stale/cgroups(delay=1000)
 etc
 
 bin/session
+bin/kbd/vt
 bin/ip/utils(intl_ver=stub)
 bin/bsdutils/env
 bin/busybox

@@ -13,14 +13,13 @@ TTY_NUMBER={{slot}}
 EOF
 
 cat << EOF > daemon
-#!/bin/sh
 fixtty /dev/tty{{slot}}
-exec openvt -c {{slot}} -w emptty --config ${PWD}/emptty.conf
+exec setsid openvt -c {{slot}} -f -e emptty --config ${PWD}/emptty.conf
 EOF
 
 cat << EOF > run
 #!/bin/sh
-exec srv emptty{{slot}} ${PWD}/daemon
+exec srv emptty{{slot}} /bin/sh ${PWD}/daemon
 EOF
 
 chmod +x run daemon

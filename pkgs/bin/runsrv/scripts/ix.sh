@@ -7,6 +7,10 @@ base64 -d << EOF > srv
 {% include 'srv/base64' %}
 EOF
 
+base64 -d << EOF > srv2
+{% include 'srv2/base64' %}
+EOF
+
 base64 -d << EOF > logged
 {% include 'logged/base64' %}
 EOF
