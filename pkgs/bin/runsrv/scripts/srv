@@ -1,8 +1,5 @@
 #!/bin/sh
 
-exec 1>>"err"
-exec 2>&1
-
 . /etc/env
 
 set -xue
@@ -15,6 +12,9 @@ shift
 mkdir -p ${STD_DIR}
 
 cd ${STD_DIR}
+
+exec 1>>"err"
+exec 2>&1
 
 # TODO(pg): check it
 export TMPDIR=${PWD}
