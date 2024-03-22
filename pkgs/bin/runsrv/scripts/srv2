@@ -30,7 +30,7 @@ cleanup() (
 
 trap cleanup TERM INT EXIT
 
-flock lock logged2 ./ setcwd ${SRV_DIR} ${@} &
+flock lock logged ./ setcwd ${SRV_DIR} ${@} &
 
 wait
 ) 1>>err 2>&1

@@ -15,9 +15,5 @@ base64 -d << EOF > logged
 {% include 'logged/base64' %}
 EOF
 
-base64 -d << EOF > logged2
-{% include 'logged2/base64' %}
-EOF
-
 chmod +x *
 {% endblock %}

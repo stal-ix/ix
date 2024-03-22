@@ -1,7 +1,0 @@
-#!/bin/bash
-
-set -xue
-date
-D=${1}
-shift
-exec tinylog ${D} < <(exec ${@} 2>&1)
