@@ -1,6 +1,11 @@
 #!/bin/sh
 
+exec 1>>"err"
+exec 2>&1
+
 . /etc/env
+
+set -xue
 
 SRV_DIR=/var/run/${1}
 STD_DIR=${SRV_DIR}/std
@@ -17,9 +22,6 @@ export TMPDIR=${PWD}
 PP=$$
 P=/sys/fs/cgroup/srv/${PP}
 
-(
-set -xue
-
 mkdir -p ${P}
 
 echo ${PP} > ${P}/cgroup.procs
@@ -33,4 +35,3 @@ trap cleanup TERM INT EXIT
 flock lock logged ./ setcwd ${SRV_DIR} ${@} &
 
 wait
-) 1>>err 2>&1
