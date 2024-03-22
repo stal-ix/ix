@@ -7,7 +7,7 @@ cat << EOF > daemon
 fixtty /dev/tty1
 reset
 export LANG=C
-exec setsid openvt -e -c 1 ly
+exec setsid openvt -f -e -c 1 ly
 EOF
 
 cat << EOF > run

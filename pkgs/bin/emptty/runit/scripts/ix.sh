@@ -14,7 +14,7 @@ EOF
 
 cat << EOF > daemon
 fixtty /dev/tty{{slot}}
-exec setsid openvt -c {{slot}} -e emptty --config ${PWD}/emptty.conf
+exec setsid openvt -c {{slot}} -f -e emptty --config ${PWD}/emptty.conf
 EOF
 
 cat << EOF > run
