@@ -1,5 +1,8 @@
 #!/bin/sh
 
+exec 1>>"err"
+exec 2>&1
+
 . /etc/env
 
 set -xue
@@ -13,25 +16,7 @@ mkdir -p ${STD_DIR}
 
 cd ${STD_DIR}
 
-exec 1>>"err"
-exec 2>&1
-
 # TODO(pg): check it
 export TMPDIR=${PWD}
 
-PP=$$
-P=/sys/fs/cgroup/srv/${PP}
-
-mkdir -p ${P}
-
-echo ${PP} > ${P}/cgroup.procs
-
-cleanup() (
-    echo 1 > ${P}/cgroup.kill
-)
-
-trap cleanup TERM INT EXIT
-
-flock lock logged ./ setcwd ${SRV_DIR} ${@} &
-
-wait
+exec cguard flock lock logged ./ setcwd ${SRV_DIR} ${@}
