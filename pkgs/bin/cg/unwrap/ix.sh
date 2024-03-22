@@ -10,7 +10,7 @@ lib/c
 {% endblock %}
 
 {% block name %}
-cguard
+cg
 {% endblock %}
 
 {% block sources %}
