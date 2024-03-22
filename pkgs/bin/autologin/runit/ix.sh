@@ -4,16 +4,15 @@
 cd ${out}; mkdir -p etc/services/autologin{{slot}}; cd etc/services/autologin{{slot}}
 
 cat << EOF > daemon
-#!/bin/sh
 export USER=root
 export HOME=/home/root
 fixtty /dev/tty{{slot}}
-exec subreaper busybox openvt -c {{slot}} -w /bin/sh -l
+exec subreaper setsid openvt -c {{slot}} -e /bin/sh -l
 EOF
 
 cat << EOF > run
 #!/bin/sh
-exec srv autologin{{slot}} ${PWD}/daemon
+exec srv autologin{{slot}} /bin/sh ${PWD}/daemon
 EOF
 
 chmod +x run daemon

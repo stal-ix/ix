@@ -19,4 +19,4 @@ cd ${STD_DIR}
 # TODO(pg): check it
 export TMPDIR=${PWD}
 
-exec cguard flock lock logged ./ setcwd ${SRV_DIR} ${@}
+exec cg flock lock logged ./ setcwd ${SRV_DIR} ${@}
