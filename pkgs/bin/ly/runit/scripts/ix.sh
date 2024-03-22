@@ -6,6 +6,7 @@ cd ${out}; mkdir -p etc/services/ly; cd etc/services/ly
 cat << EOF > daemon
 fixtty /dev/tty1
 reset
+clear
 export LANG=C
 exec setsid openvt -f -e -c 1 ly
 EOF

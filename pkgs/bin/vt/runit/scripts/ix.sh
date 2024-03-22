@@ -5,8 +5,7 @@ cd ${out}; mkdir -p etc/services/vt{{slot}}; cd etc/services/vt{{slot}}
 
 cat << EOF > daemon
 fixtty /dev/tty{{slot}}
-reset
-exec subreaper setsid openvt -c {{slot}} -f -e /bin/login
+exec subreaper setsid openvt -c {{slot}} -f -e -- /bin/sh -c 'reset; clear; exec login'
 EOF
 
 cat << EOF > run
