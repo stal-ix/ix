@@ -54,6 +54,7 @@ bin/sched/stale/cgroups(delay=1000)
 etc
 
 bin/session
+bin/kbd/vt
 bin/ip/utils(intl_ver=stub)
 bin/bsdutils/env
 bin/busybox
