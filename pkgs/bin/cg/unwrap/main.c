@@ -59,7 +59,7 @@ int main(int argc, char** argv) {
 
     if (argc < 2) {
         errno = EINVAL;
-        onerr(1, "usage: cguard [command]");
+        onerr(1, "usage: cg [command]");
     }
 
     char* mypid = str(getpid());

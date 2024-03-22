@@ -37,6 +37,7 @@
 #}
 
 {% block run_deps %}
+bin/cg
 bin/chrony/runit
 bin/yash/lite
 bin/irq/balance
