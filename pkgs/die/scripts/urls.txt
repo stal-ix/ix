@@ -943,6 +943,7 @@ https://github.com/easymodo/qimgv/archive/refs/tags/v1.0.2.tar.gz
 https://github.com/ebassi/graphene/archive/refs/tags/1.10.8.tar.gz
 https://github.com/ebiggers/libdeflate/archive/refs/tags/v1.18.tar.gz
 https://github.com/ebiggers/libdeflate/archive/refs/tags/v1.19.tar.gz
+https://github.com/ebiggers/libdeflate/archive/refs/tags/v1.20.tar.gz
 https://github.com/editorconfig/editorconfig-core-c/archive/refs/tags/v0.12.6.tar.gz
 https://github.com/ekzhang/bore/archive/refs/tags/v0.5.0.tar.gz
 https://github.com/elfmz/far2l/archive/refs/tags/v_2.5.0.tar.gz
