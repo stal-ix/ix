@@ -37,6 +37,7 @@
 #}
 
 {% block run_deps %}
+bin/wl/color/picker
 bin/cg
 bin/chrony/runit
 bin/yash/lite
