@@ -1149,6 +1149,7 @@ https://github.com/hyprwm/Hyprland/releases/download/v0.35.0/source-v0.35.0.tar.
 https://github.com/hyprwm/Hyprland/releases/download/v0.36.0/source-v0.36.0.tar.gz
 https://github.com/hyprwm/Hyprland/releases/download/v0.37.1/source-v0.37.1.tar.gz
 https://github.com/hyprwm/hyprcursor/archive/refs/tags/v0.1.4.tar.gz
+https://github.com/hyprwm/hyprcursor/archive/refs/tags/v0.1.5.tar.gz
 https://github.com/hyprwm/hyprlang/archive/refs/tags/v0.4.1.tar.gz
 https://github.com/hyprwm/hyprlang/archive/refs/tags/v0.5.0.tar.gz
 https://github.com/hyprwm/hyprpaper/archive/refs/tags/v0.2.0.tar.gz
@@ -1837,6 +1838,7 @@ https://github.com/uriparser/uriparser/archive/refs/tags/uriparser-0.9.6.tar.gz
 https://github.com/util-linux/util-linux/archive/refs/tags/v2.39.1.tar.gz
 https://github.com/uutils/coreutils/archive/refs/tags/0.0.23.tar.gz
 https://github.com/uutils/coreutils/archive/refs/tags/0.0.24.tar.gz
+https://github.com/uutils/coreutils/archive/refs/tags/0.0.25.tar.gz
 https://github.com/uutils/coreutils/archive/refs/tags/0.0.8.tar.gz
 https://github.com/varlink/libvarlink/archive/refs/tags/23.tar.gz
 https://github.com/vasi/squashfuse/archive/1f980303b89c779eabfd0a0fdd36d6a7a311bf92.zip

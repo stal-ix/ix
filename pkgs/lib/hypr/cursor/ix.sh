@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/hyprwm/hyprcursor/archive/refs/tags/v0.1.4.tar.gz
-sha:082c7866a8139993be0c476873dafea357bb579c8d1839280be6bfdef3177193
+https://github.com/hyprwm/hyprcursor/archive/refs/tags/v0.1.5.tar.gz
+sha:3958b0d7b80bcabca1c46841016c7354afc3cbcbf86b785b7b6289524cb5ec5c
 {% endblock %}
 
 {% block lib_deps %}
@@ -15,9 +15,4 @@ lib/hypr/lang
 
 {% block bld_libs %}
 lib/hypr/rsvg
-{% endblock %}
-
-{% block patch %}
-sed -e 's|DATA->data + DATA->readNeedle|(char*)DATA->data + DATA->readNeedle|' -i libhyprcursor/hyprcursor.cpp
-sed -e 's|.*target.*std=.*||' -i CMakeLists.txt
 {% endblock %}
