@@ -37,6 +37,7 @@
 #}
 
 {% block run_deps %}
+bin/q/bittorrent/nox
 bin/wl/color/picker
 bin/cg
 bin/chrony/runit
