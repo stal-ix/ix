@@ -2,7 +2,7 @@
 
 {% block bld_libs %}
 {{super()}}
-lib/qt/6/base/nogui
+lib/qt/6/base
 {% endblock %}
 
 {% block cmake_flags %}
