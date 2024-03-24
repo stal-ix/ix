@@ -1,13 +1,5 @@
-{% extends '//die/inline/program.sh' %}
+{% extends '//die/hub.sh' %}
 
-{% block bld_libs %}
-lib/c
-{% endblock %}
-
-{% block sources %}
-cwd.c
-{% endblock %}
-
-{% block name %}
-setcwd
+{% block run_deps %}
+bin/setcwd/unwrap(bumpalloc_buf=10000)
 {% endblock %}
