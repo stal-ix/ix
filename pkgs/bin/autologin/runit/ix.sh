@@ -7,7 +7,7 @@ cat << EOF > daemon
 export USER=root
 export HOME=/home/root
 fixtty /dev/tty{{slot}}
-exec subreaper setsid openvt -c {{slot}} -e /bin/sh -l
+exec subreaper setsid openvt -f -c {{slot}} -e /bin/sh -l
 EOF
 
 cat << EOF > run
