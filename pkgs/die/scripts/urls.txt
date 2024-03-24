@@ -817,6 +817,7 @@ https://github.com/apernet/hysteria/archive/refs/tags/app/v2.1.1.tar.gz
 https://github.com/apernet/hysteria/archive/refs/tags/app/v2.2.0.tar.gz
 https://github.com/apernet/hysteria/archive/refs/tags/app/v2.2.1.tar.gz
 https://github.com/apernet/hysteria/archive/refs/tags/app/v2.2.3.tar.gz
+https://github.com/apernet/hysteria/archive/refs/tags/app/v2.4.0.tar.gz
 https://github.com/apple-oss-distributions/mDNSResponder/archive/refs/tags/mDNSResponder-2200.80.16.tar.gz
 https://github.com/apple-oss-distributions/patch_cmds/archive/refs/tags/patch_cmds-61.tar.gz
 https://github.com/apple/swift-corelibs-libdispatch/archive/refs/tags/swift-5.10-RELEASE.tar.gz
@@ -1200,6 +1201,7 @@ https://github.com/jedisct1/libsodium/archive/refs/tags/1.0.18.tar.gz
 https://github.com/jedisct1/libsodium/archive/refs/tags/1.0.19.tar.gz
 https://github.com/jemalloc/jemalloc/archive/refs/tags/5.3.0.tar.gz
 https://github.com/jesseduffield/lazygit/archive/refs/tags/v0.40.2.tar.gz
+https://github.com/jesseduffield/lazygit/archive/refs/tags/v0.41.0.tar.gz
 https://github.com/jhawthorn/fzy/archive/refs/tags/1.0.tar.gz
 https://github.com/jirka-h/haveged/archive/refs/tags/v1.9.18.tar.gz
 https://github.com/jjsullivan5196/wvkbd/archive/refs/tags/v0.12.tar.gz
