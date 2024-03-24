@@ -13,6 +13,8 @@ mkdir -p ${STD_DIR}
 
 cd ${STD_DIR}
 
+mv err err.old || true
+
 exec 1>>"err"
 exec 2>&1
 
