@@ -9,7 +9,7 @@ lib/lua
 
 {% block use_data %}
 {% if lib %}
-{{name}}(lua_ver={{lua_ver or error()}})
+{{name}}(lua_ver={{lua_ver | defined('lua_ver')}})
 {% endif %}
 lib/lua/env
 {% endblock %}

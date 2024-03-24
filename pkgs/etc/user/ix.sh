@@ -15,8 +15,8 @@ cd ${out}
 
 mkdir -p etc/passwd.d
 
-cat << EOF > etc/passwd.d/{{user or error()}}
-{{user}}:{{hash or error()}}:{{userid or error()}}:{{userid}}:none:/home/{{user}}:{{login_shell or '/bin/sh'}}
+cat << EOF > etc/passwd.d/{{user | defined('user')}}
+{{user}}:{{hash | defined('hash')}}:{{userid | defined('userid')}}:{{userid}}:none:/home/{{user}}:{{login_shell or '/bin/sh'}}
 EOF
 
 mkdir -p etc/group.d

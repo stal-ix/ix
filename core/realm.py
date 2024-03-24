@@ -6,7 +6,9 @@ import json
 import base64
 import shutil
 import string
+import getpass
 import itertools
+import subprocess
 
 import core.log as cl
 import core.sign as cs
@@ -235,7 +237,15 @@ class Realm(BaseRealm):
 
         os.symlink(self.path, tmp)
         cu.sync()
-        os.rename(tmp, path)
+
+        try:
+            os.rename(tmp, path)
+        except PermissionError:
+            cl.log(f'FIXLN {path} permissions', color='y')
+            u = getpass.getuser()
+            subprocess.check_call(['sudo', 'chown', '-h', f'{u}:{u}', path])
+            os.rename(tmp, path)
+
         cu.sync()
 
 
