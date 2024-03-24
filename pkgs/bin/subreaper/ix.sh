@@ -1,13 +1,5 @@
-{% extends '//die/inline/program.sh' %}
+{% extends '//die/hub.sh' %}
 
-{% block bld_libs %}
-lib/c
-{% endblock %}
-
-{% block name %}
-subreaper
-{% endblock %}
-
-{% block sources %}
-main.c
+{% block run_deps %}
+bin/subreaper/unwrap(bumpalloc_buf=10000)
 {% endblock %}

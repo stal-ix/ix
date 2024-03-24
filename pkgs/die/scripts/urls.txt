@@ -531,6 +531,7 @@ https://github.com/AbiWord/enchant/releases/download/v2.6.4/enchant-2.6.4.tar.gz
 https://github.com/AbiWord/enchant/releases/download/v2.6.5/enchant-2.6.5.tar.gz
 https://github.com/AbiWord/enchant/releases/download/v2.6.6/enchant-2.6.6.tar.gz
 https://github.com/AbiWord/enchant/releases/download/v2.6.7/enchant-2.6.7.tar.gz
+https://github.com/AbiWord/enchant/releases/download/v2.6.8/enchant-2.6.8.tar.gz
 https://github.com/AcademySoftwareFoundation/Imath/archive/refs/tags/v3.1.10.tar.gz
 https://github.com/AcademySoftwareFoundation/Imath/archive/refs/tags/v3.1.11.tar.gz
 https://github.com/AcademySoftwareFoundation/Imath/archive/refs/tags/v3.1.9.tar.gz
@@ -816,6 +817,7 @@ https://github.com/apernet/hysteria/archive/refs/tags/app/v2.1.1.tar.gz
 https://github.com/apernet/hysteria/archive/refs/tags/app/v2.2.0.tar.gz
 https://github.com/apernet/hysteria/archive/refs/tags/app/v2.2.1.tar.gz
 https://github.com/apernet/hysteria/archive/refs/tags/app/v2.2.3.tar.gz
+https://github.com/apernet/hysteria/archive/refs/tags/app/v2.4.0.tar.gz
 https://github.com/apple-oss-distributions/mDNSResponder/archive/refs/tags/mDNSResponder-2200.80.16.tar.gz
 https://github.com/apple-oss-distributions/patch_cmds/archive/refs/tags/patch_cmds-61.tar.gz
 https://github.com/apple/swift-corelibs-libdispatch/archive/refs/tags/swift-5.10-RELEASE.tar.gz
@@ -942,6 +944,7 @@ https://github.com/easymodo/qimgv/archive/refs/tags/v1.0.2.tar.gz
 https://github.com/ebassi/graphene/archive/refs/tags/1.10.8.tar.gz
 https://github.com/ebiggers/libdeflate/archive/refs/tags/v1.18.tar.gz
 https://github.com/ebiggers/libdeflate/archive/refs/tags/v1.19.tar.gz
+https://github.com/ebiggers/libdeflate/archive/refs/tags/v1.20.tar.gz
 https://github.com/editorconfig/editorconfig-core-c/archive/refs/tags/v0.12.6.tar.gz
 https://github.com/ekzhang/bore/archive/refs/tags/v0.5.0.tar.gz
 https://github.com/elfmz/far2l/archive/refs/tags/v_2.5.0.tar.gz
@@ -1146,6 +1149,7 @@ https://github.com/hyprwm/Hyprland/releases/download/v0.35.0/source-v0.35.0.tar.
 https://github.com/hyprwm/Hyprland/releases/download/v0.36.0/source-v0.36.0.tar.gz
 https://github.com/hyprwm/Hyprland/releases/download/v0.37.1/source-v0.37.1.tar.gz
 https://github.com/hyprwm/hyprcursor/archive/refs/tags/v0.1.4.tar.gz
+https://github.com/hyprwm/hyprcursor/archive/refs/tags/v0.1.5.tar.gz
 https://github.com/hyprwm/hyprlang/archive/refs/tags/v0.4.1.tar.gz
 https://github.com/hyprwm/hyprlang/archive/refs/tags/v0.5.0.tar.gz
 https://github.com/hyprwm/hyprpaper/archive/refs/tags/v0.2.0.tar.gz
@@ -1198,6 +1202,7 @@ https://github.com/jedisct1/libsodium/archive/refs/tags/1.0.18.tar.gz
 https://github.com/jedisct1/libsodium/archive/refs/tags/1.0.19.tar.gz
 https://github.com/jemalloc/jemalloc/archive/refs/tags/5.3.0.tar.gz
 https://github.com/jesseduffield/lazygit/archive/refs/tags/v0.40.2.tar.gz
+https://github.com/jesseduffield/lazygit/archive/refs/tags/v0.41.0.tar.gz
 https://github.com/jhawthorn/fzy/archive/refs/tags/1.0.tar.gz
 https://github.com/jirka-h/haveged/archive/refs/tags/v1.9.18.tar.gz
 https://github.com/jjsullivan5196/wvkbd/archive/refs/tags/v0.12.tar.gz
@@ -1258,6 +1263,7 @@ https://github.com/leo-arch/clifm/archive/refs/tags/v1.14.5.tar.gz
 https://github.com/leo-arch/clifm/archive/refs/tags/v1.14.tar.gz
 https://github.com/leo-arch/clifm/archive/refs/tags/v1.16.tar.gz
 https://github.com/leo-arch/clifm/archive/refs/tags/v1.17.tar.gz
+https://github.com/leo-arch/clifm/archive/refs/tags/v1.18.tar.gz
 https://github.com/libarchive/libarchive/archive/refs/tags/v3.7.1.tar.gz
 https://github.com/libarchive/libarchive/archive/refs/tags/v3.7.2.tar.gz
 https://github.com/libass/libass/archive/refs/tags/0.17.1.tar.gz
@@ -1832,6 +1838,7 @@ https://github.com/uriparser/uriparser/archive/refs/tags/uriparser-0.9.6.tar.gz
 https://github.com/util-linux/util-linux/archive/refs/tags/v2.39.1.tar.gz
 https://github.com/uutils/coreutils/archive/refs/tags/0.0.23.tar.gz
 https://github.com/uutils/coreutils/archive/refs/tags/0.0.24.tar.gz
+https://github.com/uutils/coreutils/archive/refs/tags/0.0.25.tar.gz
 https://github.com/uutils/coreutils/archive/refs/tags/0.0.8.tar.gz
 https://github.com/varlink/libvarlink/archive/refs/tags/23.tar.gz
 https://github.com/vasi/squashfuse/archive/1f980303b89c779eabfd0a0fdd36d6a7a311bf92.zip
@@ -1900,6 +1907,7 @@ https://github.com/xiph/opus/archive/refs/tags/v1.4.tar.gz
 https://github.com/xiph/opus/archive/refs/tags/v1.5.1.tar.gz
 https://github.com/xkbcommon/libxkbcommon/archive/refs/tags/xkbcommon-1.5.0.tar.gz
 https://github.com/xkbcommon/libxkbcommon/archive/refs/tags/xkbcommon-1.6.0.tar.gz
+https://github.com/xkbcommon/libxkbcommon/archive/refs/tags/xkbcommon-1.7.0.tar.gz
 https://github.com/xxxserxxx/gotop/archive/refs/tags/v4.2.0.tar.gz
 https://github.com/xyproto/gendesk/archive/refs/tags/1.0.9.tar.gz
 https://github.com/yaegashi/muslstack/archive/d19cc5866abce3ca59dfc1666df7cc97097d0933.zip
@@ -1954,6 +1962,7 @@ https://gitlab.freedesktop.org/gstreamer/gstreamer/-/archive/1.22.7/gstreamer-1.
 https://gitlab.freedesktop.org/gstreamer/gstreamer/-/archive/1.22.8/gstreamer-1.22.8.tar.gz
 https://gitlab.freedesktop.org/gstreamer/gstreamer/-/archive/1.22.9/gstreamer-1.22.9.tar.gz
 https://gitlab.freedesktop.org/gstreamer/gstreamer/-/archive/1.24.0/gstreamer-1.24.0.tar.gz
+https://gitlab.freedesktop.org/gstreamer/gstreamer/-/archive/1.24.1/gstreamer-1.24.1.tar.gz
 https://gitlab.freedesktop.org/libdecor/libdecor/-/archive/0.2.0/libdecor-0.2.0.tar.bz2
 https://gitlab.freedesktop.org/libdecor/libdecor/-/archive/0.2.1/libdecor-0.2.1.tar.bz2
 https://gitlab.freedesktop.org/libdecor/libdecor/-/archive/0.2.2/libdecor-0.2.2.tar.bz2
@@ -1986,6 +1995,7 @@ https://gitlab.freedesktop.org/xdg/desktop-file-utils/-/archive/0.27/desktop-fil
 https://gitlab.freedesktop.org/xkeyboard-config/xkeyboard-config/-/archive/xkeyboard-config-2.39/xkeyboard-config-xkeyboard-config-2.39.tar.bz2
 https://gitlab.freedesktop.org/xkeyboard-config/xkeyboard-config/-/archive/xkeyboard-config-2.40/xkeyboard-config-xkeyboard-config-2.40.tar.bz2
 https://gitlab.freedesktop.org/xkeyboard-config/xkeyboard-config/-/archive/xkeyboard-config-2.41/xkeyboard-config-xkeyboard-config-2.41.tar.bz2
+https://gitlab.freedesktop.org/xorg/lib/libpciaccess/-/archive/libpciaccess-0.18.1/libpciaccess-libpciaccess-0.18.1.tar.bz2
 https://gitlab.freedesktop.org/xorg/lib/libpciaccess/-/archive/libpciaccess-0.18/libpciaccess-libpciaccess-0.18.tar.bz2
 https://gitlab.gnome.org/GNOME/atk/-/archive/ATK_2_36_0/atk-ATK_2_36_0.tar.bz2
 https://gitlab.gnome.org/GNOME/console/-/archive/44.4/console-44.4.tar.bz2

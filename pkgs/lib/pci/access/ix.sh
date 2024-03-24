@@ -1,8 +1,8 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://gitlab.freedesktop.org/xorg/lib/libpciaccess/-/archive/libpciaccess-0.18/libpciaccess-libpciaccess-0.18.tar.bz2
-sha:c087f68008d91ebe0b5e5e77ca8568cf2c1ab35379f55cc098a5e87958808d90
+https://gitlab.freedesktop.org/xorg/lib/libpciaccess/-/archive/libpciaccess-0.18.1/libpciaccess-libpciaccess-0.18.1.tar.bz2
+sha:6faca7b27ed76547bdd44a152a04b37d9ddc8de7f17e58780e7f80fb2c0971cd
 {% endblock %}
 
 {% block lib_deps %}

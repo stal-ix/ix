@@ -4,10 +4,10 @@
 lib/tiny
 {% endblock %}
 
-{% block name %}
-cg
+{% block sources %}
+cwd.c
 {% endblock %}
 
-{% block sources %}
-main.c
+{% block name %}
+setcwd
 {% endblock %}

@@ -1,19 +1,8 @@
-{% extends '//die/proxy.sh' %}
+{% extends '//etc/services/runit/script/ix.sh' %}
 
-{% block install %}
-cd ${out}; mkdir -p etc/services/autologin{{slot}}; cd etc/services/autologin{{slot}}
-
-cat << EOF > daemon
+{% block srv_command %}
 export USER=root
 export HOME=/home/root
-fixtty /dev/tty{{slot}}
-exec subreaper setsid openvt -c {{slot}} -e /bin/sh -l
-EOF
-
-cat << EOF > run
-#!/bin/sh
-exec srv autologin{{slot}} /bin/sh ${PWD}/daemon
-EOF
-
-chmod +x run daemon
+fixtty /dev/tty{{slot or error()}}
+exec subreaper setsid openvt -f -c {{slot}} -e /bin/sh -l
 {% endblock %}

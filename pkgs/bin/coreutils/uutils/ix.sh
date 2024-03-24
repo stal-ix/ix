@@ -1,11 +1,11 @@
 {% extends '//die/rust/cargo.sh' %}
 
 {% block cargo_url %}
-https://github.com/uutils/coreutils/archive/refs/tags/0.0.24.tar.gz
+https://github.com/uutils/coreutils/archive/refs/tags/0.0.25.tar.gz
 {% endblock %}
 
 {% block cargo_sha %}
-da976e18fc9df9de52d3b4eecab31e8e1438bdbcff295e5934492e488c94fbaa
+55f45419612356aff8ffbc4729034172650c28bf008c5b4d403aaea65254067b
 {% endblock %}
 
 {% block bld_libs %}

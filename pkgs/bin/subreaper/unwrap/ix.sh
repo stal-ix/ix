@@ -5,7 +5,7 @@ lib/tiny
 {% endblock %}
 
 {% block name %}
-cg
+subreaper
 {% endblock %}
 
 {% block sources %}

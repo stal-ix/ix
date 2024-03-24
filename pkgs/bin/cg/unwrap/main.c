@@ -48,11 +48,6 @@ static void cleanup() {
     write_file(concat(where, "/cgroup.kill"), "1\n");
 }
 
-static void sighndl(int signal) {
-    // assume atexit works
-    exit(signal);
-}
-
 int main(int argc, char** argv) {
     int pid;
     int err;
@@ -70,8 +65,8 @@ int main(int argc, char** argv) {
 
     write_file(concat(where, "/cgroup.procs"), mypid);
     atexit(cleanup);
-    signal(SIGINT, sighndl);
-    signal(SIGTERM, sighndl);
+    signal(SIGINT, exit);
+    signal(SIGTERM, exit);
 
     if (posix_spawnp(&pid, argv[1], 0, 0, &argv[1], environ)) {
         onerr(3, "posix_spawnp");
