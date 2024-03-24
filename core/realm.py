@@ -241,7 +241,7 @@ class Realm(BaseRealm):
         try:
             os.rename(tmp, path)
         except PermissionError:
-            cl.log(f'FIXLN {path} permissions', color='y')
+            cl.log(f'FIXLN {path} owner', color='y')
             u = getpass.getuser()
             subprocess.check_call(['sudo', 'chown', '-h', f'{u}:{u}', path])
             os.rename(tmp, path)
