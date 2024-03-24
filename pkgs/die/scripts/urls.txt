@@ -1262,6 +1262,7 @@ https://github.com/leo-arch/clifm/archive/refs/tags/v1.14.5.tar.gz
 https://github.com/leo-arch/clifm/archive/refs/tags/v1.14.tar.gz
 https://github.com/leo-arch/clifm/archive/refs/tags/v1.16.tar.gz
 https://github.com/leo-arch/clifm/archive/refs/tags/v1.17.tar.gz
+https://github.com/leo-arch/clifm/archive/refs/tags/v1.18.tar.gz
 https://github.com/libarchive/libarchive/archive/refs/tags/v3.7.1.tar.gz
 https://github.com/libarchive/libarchive/archive/refs/tags/v3.7.2.tar.gz
 https://github.com/libass/libass/archive/refs/tags/0.17.1.tar.gz
