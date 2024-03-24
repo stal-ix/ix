@@ -1,5 +1,5 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
-bin/ix/respawn/unwrap(allocator=bumpalloc,bumpalloc_buf=100000)
+bin/ix/respawn/unwrap(bumpalloc_buf=10000)
 {% endblock %}
