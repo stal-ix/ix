@@ -221,8 +221,6 @@ class Realm(BaseRealm):
     def install(self):
         path = self.managed_path
 
-        cl.log(f'SYMLN {path}', color='y', bright=True)
-
         try:
             os.makedirs(os.path.dirname(path))
         except Exception:
@@ -247,6 +245,8 @@ class Realm(BaseRealm):
             os.rename(tmp, path)
 
         cu.sync()
+
+        cl.log(f'SYMLN {path}', color='y', bright=True)
 
 
 class RORealm:
