@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://github.com/shadow-maint/shadow/archive/refs/tags/4.15.0.tar.gz
-sha:b5860a0f27238591118901fc4a3013583795794cfc7ecfb6c3dbe8adcbdcf9d4
+https://github.com/shadow-maint/shadow/archive/refs/tags/4.15.1.tar.gz
+sha:ac716da9f1120f7839c452e6a45bd00b1a626ca98b2a8195cb2496eab358e0d8
 {% endblock %}
 
 {% block bld_libs %}
