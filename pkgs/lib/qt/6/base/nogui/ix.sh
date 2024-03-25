@@ -18,11 +18,12 @@ lib/kernel
 {% block cmake_flags %}
 {{super()}}
 QT_FEATURE_sql=ON
-QT_FEATURE_system_sqlite=ON
 QT_FEATURE_gui=OFF
-QT_FEATURE_widgets=OFF
 QT_FEATURE_opengl=OFF
 QT_FEATURE_testlib=OFF
+QT_FEATURE_widgets=OFF
+QT_FEATURE_system_sqlite=ON
+QT_FEATURE_openssl_linked=ON
 {% endblock %}
 
 {% block env %}
