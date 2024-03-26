@@ -9,7 +9,7 @@ cat << EOF > doas
 #!/usr/bin/env sh
 user="\${1}"
 shift
-exec sud_client -p 1 -o 'StrictHostKeyChecking no' -q -t "\${user}@localhost" /bin/env "TMPDIR=\${TMPDIR}" /bin/setcwd "\${PWD}" "\${@}"
+exec sud_client -p 1 -o 'StrictHostKeyChecking no' -q -t "\${user}@localhost" /bin/env "PATH=\${PATH}" "TMPDIR=\${TMPDIR}" /bin/setcwd "\${PWD}" "\${@}"
 EOF
 
 cat << EOF > sudo
