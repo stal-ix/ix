@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://github.com/curl/curl/archive/refs/tags/curl-8_6_0.tar.gz
-sha:95d94af73fe84e6ea26480035865c83763dc54911fd4d99b0eb52bb8d165e1a6
+https://github.com/curl/curl/archive/refs/tags/curl-8_7_1.tar.gz
+sha:0e46c856f517602c347bb5fe5b73174f8ee798bc87f1a97235c95761f75fcc28
 {% endblock %}
 
 {% block lib_deps %}
@@ -38,7 +38,7 @@ bld/auto
 {% endif %}
 {% endblock %}
 
-{% block patch %}
+{% block patch1 %}
 sed -e 's|usigned.*|unsigned char buf\[1024\];|' \
     -i lib/curl_ntlm_wb.c
 {% endblock %}
