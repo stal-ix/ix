@@ -920,6 +920,7 @@ https://github.com/curl/curl/archive/refs/tags/curl-8_3_0.tar.gz
 https://github.com/curl/curl/archive/refs/tags/curl-8_4_0.tar.gz
 https://github.com/curl/curl/archive/refs/tags/curl-8_5_0.tar.gz
 https://github.com/curl/curl/archive/refs/tags/curl-8_6_0.tar.gz
+https://github.com/curl/curl/archive/refs/tags/curl-8_7_1.tar.gz
 https://github.com/dandavison/delta/archive/refs/tags/0.16.5.tar.gz
 https://github.com/darkhz/bluetuith/archive/refs/tags/v0.1.7.tar.gz
 https://github.com/darktable-org/darktable/releases/download/release-4.0.0/darktable-4.0.0.tar.xz
