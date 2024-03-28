@@ -1,8 +1,8 @@
 {% extends '//die/c/make.sh' %}
 
 {% block fetch %}
-https://github.com/libtom/libtommath/releases/download/v1.2.1/ltm-1.2.1.tar.xz
-sha:986025d7b374276fee2e30e99f3649e4ac0db8a02257a37ee10eae72abed0d1f
+https://github.com/libtom/libtommath/releases/download/v1.3.0/ltm-1.3.0.tar.xz
+sha:296272d93435991308eb73607600c034b558807a07e829e751142e65ccfa9d08
 {% endblock %}
 
 {% block lib_deps %}
