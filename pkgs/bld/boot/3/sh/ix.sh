@@ -10,7 +10,3 @@ bld/boot/3/lib/c
 bld/boot/3/make
 bld/boot/2/env
 {% endblock %}
-
-{% block setup_tools %}
-ln -s $(which nawk) awk
-{% endblock %}

@@ -12,6 +12,6 @@ bld/boot/3/env
 
 {% block install %}
 {{super()}}
-
-cd ${out}/bin && ln -s mawk awk
+cd ${out}/bin
+ln -s mawk awk
 {% endblock %}

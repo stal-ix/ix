@@ -10,4 +10,4 @@ bld/boot/1/env
 {% endblock %}
 
 {% block heirloom_make %}bmake{% endblock %}
-{% block heirloom_tools %}nawk grep diff cmp{% endblock %}
+{% block heirloom_tools %}diff{% endblock %}
