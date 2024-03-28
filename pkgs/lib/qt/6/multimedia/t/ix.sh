@@ -1,8 +1,8 @@
 {% extends '//die/c/qt.sh' %}
 
 {% block fetch %}
-https://github.com/qt/qtmultimedia/archive/refs/tags/v6.6.2.tar.gz
-sha:e8d0707bf10759d98ca03a2f601ab34b08b9ff1dafdcc9975c24a8993926d604
+https://github.com/qt/qtmultimedia/archive/refs/tags/v6.6.3.tar.gz
+sha:045ec362e4ea7b05d68dfbcb73e58d3958cec2735532f03d07167389ac9d7124
 {% endblock %}
 
 {% block lib_deps %}
