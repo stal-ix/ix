@@ -1,8 +1,8 @@
 {% extends '//die/c/qt.sh' %}
 
 {% block fetch %}
-https://github.com/qt/qtcharts/archive/refs/tags/v6.6.2.tar.gz
-sha:c152c7d2c1b166d7af9cd04b92f4dce9c1242496b6ace2bc1c39c6e9b9ad4251
+https://github.com/qt/qtcharts/archive/refs/tags/v6.6.3.tar.gz
+sha:e812042a3ea3d6f69e42f5ee2445f88094f7af7ab33a98b1c9021ae87b3673b9
 {% endblock %}
 
 {% block lib_deps %}
