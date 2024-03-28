@@ -6,6 +6,11 @@ lib/ffmpeg
 {{super()}}
 {% endblock %}
 
+{% block bld_tool %}
+{{super()}}
+bld/qt/6/tools/qml
+{% endblock %}
+
 {% block cmake_flags %}
 {{super()}}
 FEATURE_alsa=OFF
