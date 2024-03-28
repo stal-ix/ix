@@ -9,6 +9,7 @@ sha:045ec362e4ea7b05d68dfbcb73e58d3958cec2735532f03d07167389ac9d7124
 lib/c
 lib/c++
 lib/qt/6/base
+lib/qt/6/declarative
 lib/qt/6/shadertools
 {% endblock %}
 
