@@ -53,3 +53,8 @@ EOF
 {{super()}}
 cp ${out}/bin/xinstall ${out}/bin/install
 {% endblock %}
+
+{% block env %}
+{{super()}}
+export ac_cv_path_GREP=grep
+{% endblock %}

@@ -24,3 +24,7 @@ cd minised*
 mkdir -p ${out}/bin
 ${CC} ${CPPFLAGS} ${CFLAGS} ${LDFLAGS} *.c -o ${out}/bin/sed
 {% endblock %}
+
+{% block env %}
+export ac_cv_path_SED=sed
+{% endblock %}

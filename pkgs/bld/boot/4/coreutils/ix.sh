@@ -11,14 +11,6 @@ bld/boot/4/mawk
 bld/boot/3/env
 {% endblock %}
 
-{% block setup_tools %}
-cat << EOF > makeinfo
-#!$(which sh)
-EOF
-
-chmod +x makeinfo
-{% endblock %}
-
 {% block cpp_includes %}
 ${PWD}/lib
 {% endblock %}
