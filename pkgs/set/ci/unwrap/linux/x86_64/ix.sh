@@ -37,6 +37,7 @@
 #}
 
 {% block run_deps %}
+bin/coreutils/9/5
 bin/wak
 bin/q/bittorrent/nox
 bin/wl/color/picker

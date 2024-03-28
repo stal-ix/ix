@@ -363,6 +363,7 @@ https://ftp.gnu.org/gnu/coreutils/coreutils-9.1.tar.gz
 https://ftp.gnu.org/gnu/coreutils/coreutils-9.2.tar.gz
 https://ftp.gnu.org/gnu/coreutils/coreutils-9.3.tar.gz
 https://ftp.gnu.org/gnu/coreutils/coreutils-9.4.tar.gz
+https://ftp.gnu.org/gnu/coreutils/coreutils-9.5.tar.gz
 https://ftp.gnu.org/gnu/cpio/cpio-2.14.tar.bz2
 https://ftp.gnu.org/gnu/cpio/cpio-2.15.tar.bz2
 https://ftp.gnu.org/gnu/diffutils/diffutils-3.10.tar.xz
