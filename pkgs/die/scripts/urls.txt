@@ -1900,6 +1900,7 @@ https://github.com/wireshark/wireshark/archive/refs/tags/v4.2.0.tar.gz
 https://github.com/wireshark/wireshark/archive/refs/tags/v4.2.1.tar.gz
 https://github.com/wireshark/wireshark/archive/refs/tags/v4.2.2.tar.gz
 https://github.com/wireshark/wireshark/archive/refs/tags/v4.2.3.tar.gz
+https://github.com/wireshark/wireshark/archive/refs/tags/v4.2.4.tar.gz
 https://github.com/wmww/gtk-layer-shell/archive/refs/tags/v0.8.0.tar.gz
 https://github.com/wolfSSL/wolfssl/archive/refs/tags/v5.6.3-stable.tar.gz
 https://github.com/wolfSSL/wolfssl/archive/refs/tags/v5.6.4-stable.tar.gz
