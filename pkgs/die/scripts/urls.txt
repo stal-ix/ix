@@ -1649,6 +1649,7 @@ https://github.com/quictls/openssl/archive/refs/tags/openssl-3.1.5-quic1.tar.gz
 https://github.com/randombit/botan/archive/refs/tags/2.19.3.tar.gz
 https://github.com/randombit/botan/archive/refs/tags/3.3.0.tar.gz
 https://github.com/raphamorim/rio/archive/refs/tags/v0.0.34.tar.gz
+https://github.com/raygard/wak/archive/dca8c09e9e20581330dd930b0219b07f431f2388.tar.gz
 https://github.com/redis/hiredis/archive/refs/tags/v1.2.0.tar.gz
 https://github.com/redis/redis/archive/refs/tags/7.2.0.tar.gz
 https://github.com/redis/redis/archive/refs/tags/7.2.2.tar.gz
