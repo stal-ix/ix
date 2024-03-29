@@ -31,7 +31,7 @@ done
 {{refine | b64d}}
 {% endif %}
 cd ..
-{% block packer %}stable_pack_v1{% endblock $} {{sha}} {{git_tgz}} src
+{% block packer %}stable_pack_v1{% endblock %} {{sha}} {{git_tgz}} src
 {% endblock %}
 
 {% block install %}
