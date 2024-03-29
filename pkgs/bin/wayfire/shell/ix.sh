@@ -9,7 +9,11 @@ c9639087aca3ad69bbd8f56f4213768639b4c8d0
 {% endblock %}
 
 {% block git_sha %}
-3c5ccc00263eb81c9f1fe079f848d328a80fa619544b96d030a468f70251b7c8
+1786797dbe28c1dd107ee478048c46a59dea98245ef2e57d0e5ed75c4de68b10
+{% endblock %}
+
+{% block git_version %}
+v3
 {% endblock %}
 
 {% block bld_libs %}
