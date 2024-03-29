@@ -2193,6 +2193,7 @@ https://mirrors.edge.kernel.org/pub/linux/network/wireless/iwd-2.13.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/network/wireless/iwd-2.14.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/network/wireless/iwd-2.15.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/network/wireless/iwd-2.16.tar.xz
+https://mirrors.edge.kernel.org/pub/linux/network/wireless/iwd-2.17.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/network/wireless/iwd-2.8.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/network/wireless/iwd-2.9.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/utils/kbd/kbd-2.6.1.tar.xz
