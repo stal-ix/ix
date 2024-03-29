@@ -16,6 +16,8 @@ for l in sys.stdin.readlines():
     rt = rec['type']
     p = rec['path']
 
+    print(f'extract {rt} {p}', file=sys.stderr)
+
     mk_dirs(p)
 
     if rt == 'file':
