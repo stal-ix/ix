@@ -9,11 +9,11 @@ https://gn.googlesource.com/gn
 {% endblock %}
 
 {% block git_sha %}
-b7ad44ee1b469db6690eda0720dbd806fecf02bc6ab179d92d31fc5302697d79
+b8ee18fd144347fae9beca7e9e53038295f853e3e2fcecc1836bb0aa181c17fd
 {% endblock %}
 
 {% block git_version %}
-v2
+v3
 {% endblock %}
 
 {% block bld_libs %}
