@@ -1,0 +1,5 @@
+#!/usr/bin/env sh
+
+set -xue
+
+ser_py "${1}" | zstd -10 -c > "${2}"
