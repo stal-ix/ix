@@ -37,11 +37,7 @@ aux/git/{{self.git_version().strip()}}(parent_id=src_{{self.git_sha().strip()}},
 {% if self.git_sha().strip() %}
 mkdir src
 cd src
-{% if self.git_version().strip() == 'v1' %}
-stable_unpack ${GIT_TGZ}
-{% else %}
-stable_unpack_2 ${GIT_TGZ}
-{% endif %}
+stable_unpack_{{self.git_version().strip()}} ${GIT_TGZ}
 {% else %}
 {{super()}}
 {% endif %}

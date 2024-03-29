@@ -2,4 +2,4 @@
 
 set -xue
 
-cat "${1}" | zstd -d | (mkdir -p "${2}"; cd "${2}"; des_py)
+zstd --no-sparse -d "${1}" -o /dev/stdout | (mkdir -p "${2}"; cd "${2}"; des_py)

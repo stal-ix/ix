@@ -4,17 +4,22 @@
 bin/lz4
 bld/tar
 bld/r/w
+bld/stable/serdes
 {% endblock %}
 
 {% block install %}
 mkdir ${out}/bin
 
-base64 -d << EOF > ${out}/bin/stable_unpack
+base64 -d << EOF > ${out}/bin/stable_unpack_v1
 {% include 'stable_unpack/base64' %}
 EOF
 
-base64 -d << EOF > ${out}/bin/stable_unpack_2
+base64 -d << EOF > ${out}/bin/stable_unpack_v2
 {% include 'stable_unpack_2/base64' %}
+EOF
+
+base64 -d << EOF > ${out}/bin/stable_unpack_v3
+{% include 'stable_unpack_3/base64' %}
 EOF
 
 base64 -d << EOF > ${out}/bin/restore_links

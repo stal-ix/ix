@@ -22,7 +22,7 @@ bld/stable/pack
 node workspaces/arborist/bin/index.js reify
 node bin/npm-cli.js install
 rm -rf undefined
-stable_pack_2 {{sum}} ${tmp}/npm.tar.lz4 .
+stable_pack_v2 {{sum}} ${tmp}/npm.tar.lz4 .
 {% endblock %}
 
 {% block install %}
