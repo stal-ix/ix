@@ -5,15 +5,20 @@ import sys
 import json
 import base64
 
+def mk_dirs(p):
+    try:
+        os.makedirs(os.path.dirname(p))
+    except OSError:
+        pass
+
 for l in sys.stdin.readlines():
     rec = json.loads(l)
     rt = rec['type']
+    p = rec['path']
+
+    mk_dirs(p)
+
     if rt == 'file':
-        p = rec['path']
-        try:
-            os.makedirs(os.path.dirname(p))
-        except OSError:
-            pass
         with open(p, 'wb') as f:
             f.write(base64.b64decode(rec['data'].encode()))
 
@@ -22,4 +27,4 @@ for l in sys.stdin.readlines():
         else:
             os.chmod(p, 0o644)
     elif rt == 'symlink':
-        os.symlink(rec['from'], rec['path'])
+        os.symlink(rec['from'], p)
