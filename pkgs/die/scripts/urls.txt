@@ -1558,6 +1558,7 @@ https://github.com/projectdiscovery/dnsx/archive/refs/tags/v1.1.6.tar.gz
 https://github.com/prometheus/node_exporter/archive/refs/tags/v1.7.0.tar.gz
 https://github.com/prometheus/prometheus/archive/refs/tags/v2.50.1.tar.gz
 https://github.com/prometheus/prometheus/archive/refs/tags/v2.51.0.tar.gz
+https://github.com/prometheus/prometheus/archive/refs/tags/v2.51.1.tar.gz
 https://github.com/prometheus/prometheus/releases/download/v2.50.1/prometheus-web-ui-2.50.1.tar.gz
 https://github.com/protobuf-c/protobuf-c/archive/refs/tags/v1.4.1.tar.gz
 https://github.com/protobuf-c/protobuf-c/archive/refs/tags/v1.5.0.tar.gz

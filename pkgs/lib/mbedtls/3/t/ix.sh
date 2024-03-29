@@ -1,8 +1,15 @@
 {% extends '//lib/mbedtls/t/ix.sh' %}
 
-{% block fetch %}
-https://github.com/ARMmbed/mbedtls/archive/refs/tags/v3.5.2.tar.gz
-sha:35890edf1a2c7a7e29eac3118d43302c3e1173e0df0ebaf5db56126dabe5bb05
+{% block git_repo %}
+https://github.com/ARMmbed/mbedtls
+{% endblock %}
+
+{% block git_branch %}
+v3.6.0
+{% endblock %}
+
+{% block git_sha %}
+649026e3d4c04de2203059b36ed2866217990b62876b99bd915e9138ee28f47b
 {% endblock %}
 
 {% block lib_deps %}
