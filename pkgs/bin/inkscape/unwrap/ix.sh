@@ -9,11 +9,11 @@ INKSCAPE_1_3_2
 {% endblock %}
 
 {% block git_sha %}
-cc724c88a6d35a6815ee3858c2cfe092a444fd0f220e533c34aafbde7f65fc1c
+56a65cd65c051007dc55edaeb022185d741a9d7058f279c8ff0d23e6164dbd1b
 {% endblock %}
 
 {% block git_version %}
-v2
+v3
 {% endblock %}
 
 {% block bld_libs %}
