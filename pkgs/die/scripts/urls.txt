@@ -975,6 +975,7 @@ https://github.com/etcd-io/etcd/archive/refs/tags/v3.4.22.tar.gz
 https://github.com/etcd-io/etcd/archive/refs/tags/v3.5.10.tar.gz
 https://github.com/etcd-io/etcd/archive/refs/tags/v3.5.11.tar.gz
 https://github.com/etcd-io/etcd/archive/refs/tags/v3.5.12.tar.gz
+https://github.com/etcd-io/etcd/archive/refs/tags/v3.5.13.tar.gz
 https://github.com/evanw/esbuild/archive/refs/tags/v0.18.14.tar.gz
 https://github.com/evanw/esbuild/archive/refs/tags/v0.19.6.tar.gz
 https://github.com/exfatprogs/exfatprogs/archive/refs/tags/1.2.2.tar.gz
@@ -1133,6 +1134,7 @@ https://github.com/harfbuzz/harfbuzz/archive/refs/tags/8.2.1.tar.gz
 https://github.com/harfbuzz/harfbuzz/archive/refs/tags/8.2.2.tar.gz
 https://github.com/harfbuzz/harfbuzz/archive/refs/tags/8.3.0.tar.gz
 https://github.com/harfbuzz/harfbuzz/archive/refs/tags/8.3.1.tar.gz
+https://github.com/harfbuzz/harfbuzz/archive/refs/tags/8.4.0.tar.gz
 https://github.com/hboetes/mg/archive/refs/tags/20221112.tar.gz
 https://github.com/hluk/CopyQ/archive/refs/tags/v7.0.0.tar.gz
 https://github.com/hluk/CopyQ/archive/refs/tags/v7.1.0.tar.gz
