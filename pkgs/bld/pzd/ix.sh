@@ -3,5 +3,5 @@
 {% block run_deps %}
 bin/zstd
 bld/python
-bld/stable/serdes/scripts
+bld/pzd/scripts
 {% endblock %}

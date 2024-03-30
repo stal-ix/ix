@@ -4,7 +4,7 @@
 bin/lz4
 bld/tar
 bld/r/w
-bld/stable/serdes
+bld/pzd
 {% endblock %}
 
 {% block install %}
