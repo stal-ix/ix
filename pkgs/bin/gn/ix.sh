@@ -9,7 +9,7 @@ https://gn.googlesource.com/gn
 {% endblock %}
 
 {% block git_sha %}
-b8ee18fd144347fae9beca7e9e53038295f853e3e2fcecc1836bb0aa181c17fd
+df85614c3baccb8ef74a0211dae9bd9a9fe9281d413984466aa7514e6c085ee7
 {% endblock %}
 
 {% block git_version %}
