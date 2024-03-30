@@ -9,7 +9,7 @@ https://github.com/containers/crun
 {% endblock %}
 
 {% block git_sha %}
-a9c776e93bebdc870bd1c3065122e539b48d48ad56a24077aff34086efc8ad43
+80ab96db5ac9136a741527f5de589983194da76dd2875da80030823b7ce4ad97
 {% endblock %}
 
 {% block git_version %}
