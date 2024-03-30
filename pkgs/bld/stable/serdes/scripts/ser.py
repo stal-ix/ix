@@ -7,6 +7,11 @@ import base64
 
 def it_items(p):
     for a, b, c in os.walk(p):
+        yield {
+            'type': 'dir',
+            'path': a[len(p) + 1:],
+        }
+
         for f in c:
             fp = os.path.join(a, f)
             ff = fp[len(p) + 1:]

@@ -18,9 +18,10 @@ for l in sys.stdin.readlines():
 
     print(f'extract {rt} {p}', file=sys.stderr)
 
-    mk_dirs(p)
-
-    if rt == 'file':
+    if rt == 'dir':
+        if p:
+            os.makedirs(p)
+    elif rt == 'file':
         with open(p, 'wb') as f:
             f.write(base64.b64decode(rec['data'].encode()))
 
