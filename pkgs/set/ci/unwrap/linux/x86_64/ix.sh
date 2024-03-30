@@ -179,7 +179,6 @@ bin/sddm
 bin/ghost/script
 bin/havoc
 bin/qemu/8/2
-bin/qemu/8/1
 bin/qemu/8/0
 bin/npm
 bin/protoc/c
