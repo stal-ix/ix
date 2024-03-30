@@ -34,6 +34,7 @@
 #bin/tex/studio
 #bin/rr
 #bin/gendesk
+#bin/qemu/8/1
 #}
 
 {% block run_deps %}
@@ -160,7 +161,6 @@ bin/ip/get
 bin/clang/17
 bin/sslh
 bin/coreutils/9/4
-bin/qemu/8/1
 bin/weechat
 bin/python/9
 bin/xml/b
