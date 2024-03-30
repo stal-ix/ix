@@ -12,7 +12,11 @@ v2
 {% block unpack %}
 mkdir src
 cd src
-stable_unpack_{{self.go_version().strip()}} ${src}/*lz4
+{% if self.go_version().strip() == 'v2' %}
+stable_unpack_v2 ${src}/*lz4
+{% else %}
+stable_unpack_{{self.go_version().strip()}} ${src}/*.serdes
+{% endif %}
 {% endblock %}
 
 {% block go_refine %}
