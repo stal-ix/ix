@@ -5,7 +5,7 @@ https://github.com/neovide/neovide/archive/refs/tags/0.12.2.tar.gz
 {% endblock %}
 
 {% block cargo_sha %}
-46ceea9523529e4517e39f7e24150456f885aa0ae07b390c94896001a3f94e32
+1738020d1b9ac868b395e5db6b8241501e538a69f7f2d22c02be440ccf33cb55
 {% endblock %}
 
 {#
@@ -16,4 +16,8 @@ https://github.com/neovide/neovide/archive/refs/tags/0.12.2.tar.gz
 {% block bld_libs %}
 lib/c
 lib/c++
+{% endblock %}
+
+{% block cargo_ver %}
+v3
 {% endblock %}
