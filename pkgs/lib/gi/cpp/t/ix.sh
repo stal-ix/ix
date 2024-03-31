@@ -1,7 +1,7 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block git_sha %}
-057257f2c9fe3bcbf693f337c6043c9dfacdb59303f897e6b3557ab5d7a5041b
+55fc4a4296cca0fe2921d9ff097f7bed0c8976312cc33230d764655da09cad73
 {% endblock %}
 
 {% block git_repo %}
