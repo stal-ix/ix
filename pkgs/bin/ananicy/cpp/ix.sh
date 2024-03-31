@@ -51,3 +51,7 @@ __priority_which_t=int
 {% block build_flags %}
 shut_up
 {% endblock %}
+
+{% block git_version %}
+v3
+{% endblock %}
