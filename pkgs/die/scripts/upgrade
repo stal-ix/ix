@@ -39,7 +39,10 @@ def upgr(data):
         return subst_sha(data + VER, '1' * 64)
 
 def call(*cmd):
-    return subprocess.check_output(list(cmd), stderr=subprocess.STDOUT)
+    try:
+        return subprocess.check_output(list(cmd), stderr=subprocess.STDOUT)
+    except Exception as e:
+        return e.stdout
 
 def fix(n):
     pn = 'pkgs/' + n + '/ix.sh'
@@ -57,11 +60,13 @@ def fix(n):
         f.write(nd)
 
     try:
-        out = call(sys.executable, os.environ['IX_BINARY'], 'build', n, '--rebuild', str(time.time()))
+        out = call(sys.executable, os.environ['IX_BINARY'], 'build', n, '--rebuild=' + str(time.time()).replace('.', '_')).decode()
 
-        print(out)
-
-        sha = parse_sha(out)
+        for l in out.split('\n'):
+            if '  ' in l:
+                if '.pzd' in l:
+                    if 'echo ' not in l:
+                        sha = parse_sha(l)
 
         with open(pn, 'w') as f:
             f.write(subst_sha(nd, sha))

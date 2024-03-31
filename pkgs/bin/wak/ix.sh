@@ -9,7 +9,7 @@ dca8c09e9e20581330dd930b0219b07f431f2388
 {% endblock %}
 
 {% block git_sha %}
-020c66792dc53ad8babda721bc574c2b8afc87e6c87b827f831dfd74aa35d310
+4306f350539f59f6238c9234ab0f60d992bf5e0c00e78ed398fbb33da04c26a6
 {% endblock %}
 
 {% block bld_libs %}
@@ -23,4 +23,8 @@ cc monosrc/mono.c -o wak
 {% block install %}
 mkdir ${out}/bin
 cp wak ${out}/bin/
+{% endblock %}
+
+{% block git_version %}
+v3
 {% endblock %}
