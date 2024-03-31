@@ -9,7 +9,7 @@ a1ae8a903e13152e360fe719ecbe0ba7c2d817af
 {% endblock %}
 
 {% block git_sha %}
-492a1a238ceedceebbb1acb6fa766d00de10b20ed6e62ef2acaa2a617e741db0
+a9e202b652e12992a182245001aa7bbe063bfa3e34e879e8f835c6f27a54f928
 {% endblock %}
 
 {% block bld_tool %}
@@ -34,4 +34,8 @@ export CFLAGS="-fno-builtin ${CFLAGS}"
 {% block env %}
 export CPPFLAGS="-fno-pic -fno-pie -isystem ${out}/include \${CPPFLAGS}"
 export LDFLAGS="-static \${LDFLAGS}"
+{% endblock %}
+
+{% block git_version %}
+v3
 {% endblock %}
