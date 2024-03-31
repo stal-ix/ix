@@ -9,7 +9,7 @@ d4de233e76946e91fab6c879717d53da62d94f57
 {% endblock %}
 
 {% block git_sha %}
-ea5e22ba1214228f3cbdf5d10441ae9019ea316dcc70f581bc120f315d6051a9
+627b64f7a39e35c84c9dd2f154873023949b22a6a1f69ff1f6862803ef5c7adf
 {% endblock %}
 
 {% block git_refine %}
@@ -78,4 +78,8 @@ base64 -d << EOF > src/server/rate_estimator.c
 {% include 'rate_estimator.c/base64' %}
 EOF
 cat src/server/rate_estimator.c >> src/server/linear_resampler.c
+{% endblock %}
+
+{% block git_version %}
+v3
 {% endblock %}
