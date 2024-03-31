@@ -9,7 +9,7 @@ bd950eb128bff337153de217b11270f948d04bb4
 {% endblock %}
 
 {% block git_sha %}
-3df74d165f145d775767a70df8d79709e68c20efb0630905b358d482990e8dc8
+56e0525bd9457b9b43fd4d2cbf8666882a3f9b5e9dfff5887a4908e7756ccd67
 {% endblock %}
 
 {% block make_flags %}
@@ -49,4 +49,8 @@ rm *.o
 {% block env %}
 export CPPFLAGS="-isystem ${out}/include -D_WASI_EMULATED_SIGNAL -D_WASI_EMULATED_PROCESS_CLOCKS -D_WASI_EMULATED_MMAN \${CPPFLAGS}"
 export LDFLAGS="-static \${LDFLAGS}"
+{% endblock %}
+
+{% block git_version %}
+v3
 {% endblock %}
