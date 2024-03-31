@@ -5,7 +5,7 @@ https://github.com/tetratelabs/wazero/archive/refs/tags/v1.7.0.tar.gz
 {% endblock %}
 
 {% block go_sha %}
-30b719e301b23776c78ff19b2bc046d399c49f81f5ff6aa2e9f722839a89c8a5
+85f0e55db6e8f6cfd075f0d5bed2010fceef7d9584b519d297acae7c3ee37caa
 {% endblock %}
 
 {% block unpack %}
@@ -16,4 +16,8 @@ cd cmd/wazero
 {% block install %}
 mkdir -p ${out}/bin
 cp wazero ${out}/bin/
+{% endblock %}
+
+{% block go_version %}
+v3
 {% endblock %}
