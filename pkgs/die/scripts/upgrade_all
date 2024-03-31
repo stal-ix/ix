@@ -3,5 +3,16 @@
 set -xue
 
 find . -name 'ix.sh' | grep -v '/t/' | sed -e 's|/ix.sh||' | grep -v '/bld/' | sed -e 's|./pkgs/||' | grep 'bin/' | while read l; do
-    ./ix upgrade ${l} && git diff && ./ix build ${l} && (git add -A; git commit -m "upgrade"; git push)
+    if ./ix upgrade ${l}; then
+        git diff
+
+        if ./ix build ${l}; then
+            git add -A
+            git commit -m "upgrade"
+            git push
+        else
+            echo "$l" >> bad
+            git checkout .
+        fi
+    fi
 done

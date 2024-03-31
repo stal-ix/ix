@@ -9,7 +9,7 @@ v1.0.2
 {% endblock %}
 
 {% block git_sha %}
-fc24f8170b9ecb3f39a7a07d68cae3edb73769387460be2b076b44c66c8a8965
+647783ec95e2fcd78bc55fb679b1e9c3ea62824c4690e3df238e8913af9fc8ca
 {% endblock %}
 
 {% block bld_libs %}
@@ -50,4 +50,8 @@ __priority_which_t=int
 
 {% block build_flags %}
 shut_up
+{% endblock %}
+
+{% block git_version %}
+v3
 {% endblock %}
