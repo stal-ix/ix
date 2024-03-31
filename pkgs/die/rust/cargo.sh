@@ -16,7 +16,11 @@ bin/cargo/whatfeatures
 
 {% block unpack %}
 mkdir src; cd src
-stable_unpack_{{self.cargo_ver().strip()}} ${src}/*lz4
+{% if self.cargo_ver().strip() == 'v2' %}
+stable_unpack_v2 ${src}/*lz4
+{% else %}
+stable_unpack_{{self.cargo_ver().strip()}} ${src}/*.pzd
+{% endif %}
 rust_devendor vendored
 {% endblock %}
 

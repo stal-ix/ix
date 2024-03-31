@@ -5,7 +5,7 @@ git_v3_{{parent_id}}.tar.lz4
 {% endblock %}
 
 {% block bld_tool %}
-bin/git/unwrap
+bld/git
 {{super()}}
 {% endblock %}
 

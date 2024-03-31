@@ -9,7 +9,7 @@
 {% endblock %}
 
 {% block bld_tool %}
-bin/git
+bld/git
 bld/stable/pack
 {% endblock %}
 
