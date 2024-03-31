@@ -9,7 +9,7 @@ https://github.com/managarm/cxxshim
 {% endblock %}
 
 {% block git_sha %}
-04a88d31b120e57ffb60cc984eb7dd15479e5aee0cf948526f6580738ac7763e
+1259e5229ceb4dd22d8d511a568b0fef75b82067fa4036a91dfe833503f150d2
 {% endblock %}
 
 {% block meson_flags %}

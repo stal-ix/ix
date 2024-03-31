@@ -9,7 +9,7 @@ https://github.com/nihilowy/surfer
 {% endblock %}
 
 {% block git_sha %}
-722acb8e3dc9bf8ba0250b8a362afe2ccfc50b177d88e4f7be259f3b0e260b96
+d62b516e8937ae6fcd7e6f0f0bc15b046eacd4d566445666ddf08e72b1a85b75
 {% endblock %}
 
 {% block bld_libs %}

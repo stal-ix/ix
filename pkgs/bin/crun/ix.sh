@@ -12,10 +12,6 @@ https://github.com/containers/crun
 80ab96db5ac9136a741527f5de589983194da76dd2875da80030823b7ce4ad97
 {% endblock %}
 
-{% block git_version %}
-v3
-{% endblock %}
-
 {% block bld_libs %}
 lib/c
 lib/cap

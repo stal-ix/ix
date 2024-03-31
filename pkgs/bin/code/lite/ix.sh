@@ -9,7 +9,7 @@ https://github.com/eranif/codelite
 {% endblock %}
 
 {% block git_sha %}
-4f69c90f0e5c5c3b118935011a7e020b86946a35accf62b6ee37b4e8a19e8a0f
+8817987ef233c51db316bd76eaa8dda2685304e48747c7b59d9f9f5c8c278ca0
 {% endblock %}
 
 {% block bld_libs %}

@@ -9,7 +9,7 @@ https://github.com/managarm/frigg
 {% endblock %}
 
 {% block git_sha %}
-d229c1d108d4a9fa0d1dfc1fb06c4a7ccbc1a44c6834a4bac8eb33eb2b903900
+ef5fb6c25cc3c87b040be18758c26e02c998da9fd018b835149be6f132f5bf9b
 {% endblock %}
 
 {% block meson_flags %}

@@ -1,7 +1,7 @@
 {% extends '//die/std/ix.sh' %}
 
 {% block bld_tool %}
-bld/stable/pack
+bld/pzd
 {% endblock %}
 
 {% block use_network %}true{% endblock %}
@@ -17,7 +17,7 @@ set -xue
 {{refine | b64d}}
 {% endif %}
 cd ..
-{% block packer %}stable_pack_v2{% endblock %} {{sha}} ${tmp}/{{self.fname().strip()}} src
+stable_pack_v3 {{sha}} ${tmp}/{{self.fname().strip()}} src
 {% endblock %}
 
 {% block install %}

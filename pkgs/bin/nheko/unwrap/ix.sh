@@ -9,7 +9,7 @@ b4afeada58dbf2695a8dd4cac675a8d6c06ad251
 {% endblock %}
 
 {% block git_sha %}
-8560ca8ea8f491b34da558de3cd9772d6782bf1fa30f1a69a0b7aa05ad6138a6
+674030fd7844e6bd027ba7f242aaade03b2e0a275257c1097720ae3c8fba78f5
 {% endblock %}
 
 {% block bld_libs %}

@@ -5,7 +5,7 @@ https://github.com/yaegashi/muslstack/archive/d19cc5866abce3ca59dfc1666df7cc9709
 {% endblock %}
 
 {% block go_sha %}
-0d3778e50de950609bdef10a71ef4710fb973ed1004f18a1c83fed0f3b520cb5
+e044e27f1948ce305b159cef01e754f5e50fa342f07582a515482c2127c9e5bd
 {% endblock %}
 
 {% block build %}

@@ -1,0 +1,84 @@
+#!/usr/bin/env python3
+
+import os
+import sys
+import time
+import subprocess
+
+VER = '''
+{% block go_version %}
+v3
+{% endblock %}
+'''
+
+GOOD = frozenset('0123456789abcdef')
+
+def is_sha(x):
+    if len(x) != 64:
+        return False
+
+    for ch in x:
+        if ch not in GOOD:
+            return False
+
+    return True
+
+def parse_sha(data):
+    for l in data.split('\n'):
+        for x in l.split(' '):
+            if is_sha(x):
+                return x
+
+    raise Exception('no sha')
+
+def subst_sha(data, to):
+    return data.replace(parse_sha(data), to)
+
+def upgr(data):
+    if 'cargo_url' in data:
+        return
+
+    if 'go_url' in data and 'go_version' not in data:
+        return subst_sha(data + VER, '1' * 64)
+
+def call(*cmd):
+    try:
+        return subprocess.check_output(list(cmd), stderr=subprocess.STDOUT)
+    except Exception as e:
+        return e.stdout
+
+def fix(n):
+    pn = 'pkgs/' + n + '/ix.sh'
+
+    with open(pn) as f:
+        data = f.read()
+
+    nd = upgr(data)
+
+    if not nd or nd == data:
+        raise Exception('nothing to do')
+
+    with open(pn, 'w') as f:
+        f.write(nd)
+
+    out = call(sys.executable, os.environ['IX_BINARY'], 'build', n, '--rebuild=' + str(time.time()).replace('.', '_')).decode()
+
+    for l in out.split('\n'):
+        if '  ' in l:
+            if '.pzd' in l:
+                if 'echo ' not in l:
+                    sha = parse_sha(l)
+
+    res = subst_sha(nd, sha)
+
+    if '111111111111111111111111111111111' in res:
+        raise Exception('shit happen')
+
+    with open(pn, 'w') as f:
+        f.write(res)
+
+try:
+    fix(sys.argv[1])
+except Exception as e:
+    print(f'{e}')
+    sys.exit(1)

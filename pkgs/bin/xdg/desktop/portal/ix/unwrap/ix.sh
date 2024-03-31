@@ -9,7 +9,7 @@ https://github.com/pg83/portal/archive/{{self.version().strip()}}.zip
 {% endblock %}
 
 {% block go_sha %}
-0850ce10b5ea73eaa7a9d2fb6aecb019bbe24d36ce836d9069be5ab6107ae070
+3a95f4d5d4758ef3610995522cb49c12b4a32a7399c3a7b80a635572e877a4cc
 {% endblock %}
 
 {% block install %}

@@ -5,7 +5,7 @@ https://github.com/antonmedv/walk/archive/refs/tags/v1.7.0.tar.gz
 {% endblock %}
 
 {% block go_sha %}
-d35f2922eb0cf2fc477ed88b1fba87641abb24313ca0c727b336602b10a2c104
+965f4dfe8127f506d7902cc901bfe572691442c902e816173e12a9309a11c8af
 {% endblock %}
 
 {% block go_refine %}

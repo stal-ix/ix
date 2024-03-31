@@ -5,7 +5,7 @@ https://github.com/elves/elvish/archive/refs/tags/v0.20.1.tar.gz
 {% endblock %}
 
 {% block go_sha %}
-a1da4d127c40f8a5bc82420fe7ee9b5ea046d47c498b71785bca068e76b65282
+d0885bd4c8c565a5da6413368fc193fce5152ae2bbe6bf00c66ced0d626065de
 {% endblock %}
 
 {% block unpack %}

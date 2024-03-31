@@ -9,7 +9,7 @@ https://github.com/wmcbrine/PDCurses
 {% endblock %}
 
 {% block git_sha %}
-11bd44e412f2eadd28186809317c7da5c82db918a7bf1354e26c8acfce627602
+4c731cde3eb6786b1cd6db47b52e5abcb597d63ae28698cf2177f0309671f910
 {% endblock %}
 
 {% block lib_deps %}

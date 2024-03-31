@@ -9,7 +9,7 @@ https://github.com/ec-/Quake3e
 {% endblock %}
 
 {% block git_sha %}
-25053f09e61068463a81f220077d28efe5fd84dea70c705eff52b4d660f9afcc
+a08119cae889dacd8024b6b6091b0d589fe79285b2ec8fb170af3ab4ddddd051
 {% endblock %}
 
 {% block bld_libs %}

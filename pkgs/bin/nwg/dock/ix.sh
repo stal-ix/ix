@@ -5,7 +5,7 @@ https://github.com/nwg-piotr/nwg-dock/archive/refs/tags/v0.3.1.tar.gz
 {% endblock %}
 
 {% block go_sha %}
-c252dcac4603df93cf160babd9797bc1c1cdbcf5b7d6feeeca364b561e488fbc
+1a9425a48b43770aa5d24c106b0eea002fb9c299f9fb33773e2e3f7b24a256bd
 {% endblock %}
 
 {% block install %}

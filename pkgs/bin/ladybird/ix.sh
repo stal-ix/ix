@@ -11,7 +11,7 @@ https://github.com/SerenityOS/serenity
 {% endblock %}
 
 {% block git_sha %}
-fd0cfa9fc9eaf6c642c893f7abed6444f63c5f4451d5ddc5be42f13ca6e5caa0
+c8f997ecd7ec813983276a6682c70eb5b0f3a150d9b2704724dcb0aebe85a8eb
 {% endblock %}
 
 {% block git_refine %}

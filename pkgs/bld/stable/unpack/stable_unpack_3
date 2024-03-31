@@ -1,5 +1,0 @@
-#!/usr/bin/env sh
-
-set -xue
-
-des "${1}" .

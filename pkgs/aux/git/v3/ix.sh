@@ -4,8 +4,6 @@
 git_v3_{{parent_id}}.pzd
 {% endblock %}
 
-{% block packer %}stable_pack_v3{% endblock %}
-
 {% block bld_tool %}
 bld/git
 {{super()}}

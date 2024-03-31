@@ -1,7 +1,7 @@
 {% extends '//bin/mariadb/t/ix.sh' %}
 
 {% block git_sha %}
-bb624a4e2c44695c6afd9f7fe332be634b8cd4b5d8bd7de65eb9b2369d109baa
+856efcfd22f36a08d5aa33715953e2581d8a0fc77031f1e41a7583eaebac42f0
 {% endblock %}
 
 {% block git_repo %}

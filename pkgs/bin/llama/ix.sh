@@ -5,7 +5,7 @@ https://github.com/antonmedv/llama/archive/refs/tags/v1.4.0.tar.gz
 {% endblock %}
 
 {% block go_sha %}
-96d86dba895a9bf5077aabbb8a13913fba0f1854efd443861930b3de64a22a6f
+3a8829e942f38c85297e680c60cd72948038029f034100371e01b87c41401ee0
 {% endblock %}
 
 {% block install %}

@@ -32,4 +32,3 @@ nsvgParse
 nsvgParseFromFile
 nsvgRasterize
 {% endblock %}
-

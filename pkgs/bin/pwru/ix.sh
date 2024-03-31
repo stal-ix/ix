@@ -5,7 +5,7 @@ https://github.com/cilium/pwru/archive/refs/tags/v1.0.5.tar.gz
 {% endblock %}
 
 {% block go_sha %}
-7344fee35e9db3eefadc6ad4281547a502d126a84f25f1287b296556e1ff6473
+38aa1e210e9f07f229769547711ba89cacbde548693ce173ebbf000f80e6a7be
 {% endblock %}
 
 {% block bld_libs %}

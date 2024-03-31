@@ -9,7 +9,7 @@ https://github.com/webview/webview
 {% endblock %}
 
 {% block git_sha %}
-921220b5fe49637a1e15b3104b03b030e9c804594f63474a69b560024e3bfe60
+5a2d83648c012b0fcdcf2a39e2b9ead5051f5374bf1f54b09bd3d57bb2836690
 {% endblock %}
 
 {% block lib_deps %}

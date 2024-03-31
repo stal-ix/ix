@@ -5,7 +5,7 @@ https://github.com/greshake/i3status-rust/archive/refs/tags/v0.33.0.tar.gz
 {% endblock %}
 
 {% block cargo_sha %}
-33b94e150539fa30e6d4a610a0aaf6464ad2e7c64b3433fe8b51d71f3384e6e2
+1db61f3eab477cc9eedb8c0b33eb2d3dc18e72a5a80551b15fcee862be527501
 {% endblock %}
 
 {% block bld_libs %}

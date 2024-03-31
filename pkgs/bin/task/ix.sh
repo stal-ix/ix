@@ -5,7 +5,7 @@ https://github.com/go-task/task/archive/refs/tags/v3.14.0.tar.gz
 {% endblock %}
 
 {% block go_sha %}
-f6391d190bd42b0cffe14a5677e2fedfd1f2b7e1a3c74f83341200e7945d339c
+140e9e91906b8f2c1a2ea66ee62c2dc6a9ec5f2cc672e878c81c3058deb46dda
 {% endblock %}
 
 {% block unpack %}

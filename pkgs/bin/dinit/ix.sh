@@ -12,10 +12,6 @@ v0.17.0
 7a1ea5922197debea66855645478d45274f157c6d8a8a4a51399e06bdca163b7
 {% endblock %}
 
-{% block git_version %}
-v3
-{% endblock %}
-
 {% block bld_libs %}
 lib/c
 lib/c++

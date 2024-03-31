@@ -9,7 +9,7 @@ https://github.com/lbonn/rofi
 {% endblock %}
 
 {% block git_sha %}
-23d591ecb08804251e2d12984fe53032cbc8c7afff50df176351b835a2d14bdf
+372c1c5016a224853c07eba9d592de269d2e191a94272ae1f55eb3d7d909c3fd
 {% endblock %}
 
 {% block bld_libs %}

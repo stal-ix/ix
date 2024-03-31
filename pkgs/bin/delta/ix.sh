@@ -5,7 +5,7 @@ https://github.com/dandavison/delta/archive/refs/tags/0.16.5.tar.gz
 {% endblock %}
 
 {% block cargo_sha %}
-4477d8b3e4fa91a2d6e0dca5fefef9cf99685bf21a39f5dcff576cafed1aef52
+7a8de5688aa19858f9af8a87e75fb75f406ac9b128dfdd51c2bf7c7fe6e7ebe7
 {% endblock %}
 
 {% block bld_libs %}

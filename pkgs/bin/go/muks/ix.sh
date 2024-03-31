@@ -5,7 +5,7 @@ https://github.com/tulir/gomuks/archive/refs/tags/v0.3.0.tar.gz
 {% endblock %}
 
 {% block go_sha %}
-87569d4034f981c46e6aa3f2edf868925aee47c79daffe42ab2d3f44a47f59a0
+46ac07dd18576172081302702280e1fa97a029f4088c8f9550113dbf9317de2d
 {% endblock %}
 
 {% block bld_libs %}

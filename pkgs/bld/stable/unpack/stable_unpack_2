@@ -1,4 +1,0 @@
-#!/usr/bin/env sh
-
-stable_unpack_v1 "${@}"
-restore_links .

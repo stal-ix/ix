@@ -5,7 +5,7 @@ https://github.com/sharkdp/binocle/archive/refs/tags/v0.3.2.tar.gz
 {% endblock %}
 
 {% block cargo_sha %}
-a51d5bf0e63ee3c4d27255a8d30feae19acdd045b260e8e865d5fa4ade2578dd
+dfeeada61a338cd39d7c3c35b9a1559a1f90d3605286699eaf4cde0cd4b44813
 {% endblock %}
 
 {% block bld_libs %}

@@ -16,12 +16,12 @@
 {% endblock %}
 
 {% block git_version %}
-v1
+v3
 {% endblock %}
 
 {% block bld_deps %}
 {% if self.git_sha().strip() %}
-bld/stable/unpack
+bld/pzd
 {% endif %}
 {{super()}}
 {% endblock %}
@@ -37,7 +37,7 @@ aux/git/{{self.git_version().strip()}}(parent_id=src_{{self.git_sha().strip()}},
 {% if self.git_sha().strip() %}
 mkdir src
 cd src
-stable_unpack_{{self.git_version().strip()}} ${GIT_TGZ}
+des ${GIT_TGZ} .
 {% else %}
 {{super()}}
 {% endif %}

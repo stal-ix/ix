@@ -5,7 +5,7 @@ https://github.com/projectdiscovery/dnsx/archive/refs/tags/v1.1.6.tar.gz
 {% endblock %}
 
 {% block go_sha %}
-0a193a5bb9b6d36d10569ca8da121701710b4b5c858e5086233e40f9d4b7d5ec
+feb0072a980a2fad7a7d5c1a7a3d1e463043b5d4e536ae1936d36a9ec845aab2
 {% endblock %}
 
 {% block unpack %}

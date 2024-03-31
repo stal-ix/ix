@@ -5,7 +5,7 @@ https://github.com/xyproto/gendesk/archive/refs/tags/1.0.9.tar.gz
 {% endblock %}
 
 {% block go_sha %}
-81cf78b86132c609d1926bff1e0f7f0fceb4f4d2070e6f486e79935ae27b42be
+1441a2f11499fc6bdb6b61ec9be3d25fca3ea7bb42981cca364193b96fd2ca26
 {% endblock %}
 
 {% block install %}

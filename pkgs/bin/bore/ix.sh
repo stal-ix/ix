@@ -5,7 +5,7 @@ https://github.com/ekzhang/bore/archive/refs/tags/v0.5.0.tar.gz
 {% endblock %}
 
 {% block cargo_sha %}
-10a59a3d4b5f83b7a137ac98b395be40c9b05d006a4b0553e362517f1da1f3a4
+5afaad495162d5f82b095ca225ec845abb383248764c82976d74584119d96f99
 {% endblock %}
 
 {% block install %}

@@ -9,7 +9,7 @@ https://git.kernel.org/pub/scm/linux/kernel/git/dhowells/keyutils.git
 {% endblock %}
 
 {% block git_sha %}
-4f76a7d450f20ebe98c17e136e72348f471d2c5c0fdebbb180312f7401dab527
+bb66c1b437df345123cb7104f6a95755876e04c0e90aa13e9d5624a623a8e38b
 {% endblock %}
 
 {% block lib_deps %}

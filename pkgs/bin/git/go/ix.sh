@@ -5,7 +5,7 @@ https://github.com/go-git/go-git/archive/refs/tags/v5.4.2.tar.gz
 {% endblock %}
 
 {% block go_sha %}
-f02fb68b225614a7b492dc2ad8dcba0ca1d5bb952e966806978f9b26d8fa910e
+88947a372e5ebe0a107dc331c4dde9610ec94396b57ee986bb6f018602ca41c0
 {% endblock %}
 
 {% block unpack %}

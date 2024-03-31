@@ -5,7 +5,7 @@ https://github.com/nwg-piotr/nwg-look/archive/refs/tags/v0.2.4.tar.gz
 {% endblock %}
 
 {% block go_sha %}
-4d074fb9280f7ebf49a227f0dff8eb5f3e3626d3b517cc780f965bf5c8dd1f81
+718ae175227f7b119edfcc8343ee9bd24981267739b1f016aa9f363f3bcda495
 {% endblock %}
 
 {% block bld_tool %}

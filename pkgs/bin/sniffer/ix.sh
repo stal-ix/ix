@@ -5,7 +5,7 @@ https://github.com/chenjiandongx/sniffer/archive/refs/tags/v0.6.1.tar.gz
 {% endblock %}
 
 {% block go_sha %}
-9bb8d63301f4907618a41baf79ea244ee791ded5c2172fea39033cdb2f78d393
+6f1ba90e975ba1fb3b512e3cdaabcaec36cac5696bfcda05d4af78ec6f79b467
 {% endblock %}
 
 {% block bld_libs %}

@@ -5,7 +5,7 @@ https://github.com/wtfutil/wtf/archive/refs/tags/v0.41.0.tar.gz
 {% endblock %}
 
 {% block go_sha %}
-e94b4b22229591462fb54d26a599a7045d6b322c10f30c43aabd6501c9f53af2
+0cf27a0b438cb6d4f25806cb3f407c99d1f3a0722305347effda92715e11fdba
 {% endblock %}
 
 {% block go_build_flags %}

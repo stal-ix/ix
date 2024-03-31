@@ -5,7 +5,7 @@ https://github.com/cli/cli/archive/refs/tags/v2.14.4.tar.gz
 {% endblock %}
 
 {% block go_sha %}
-43e96dddb579f32e7f5427d17adf5ba877a0d27b4aec4c72cd12c80abbeab213
+4390612d4739b90b539d713d6c566fa79f5641d7b5e5d30d4686e85136c6b8c3
 {% endblock %}
 
 {% block unpack %}

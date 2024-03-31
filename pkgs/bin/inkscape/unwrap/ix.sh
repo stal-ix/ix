@@ -12,10 +12,6 @@ INKSCAPE_1_3_2
 fd54f48357323f61b31166f77e3c1a1414104f9e351186b2777f04d40588e145
 {% endblock %}
 
-{% block git_version %}
-v3
-{% endblock %}
-
 {% block bld_libs %}
 lib/c
 lib/c++

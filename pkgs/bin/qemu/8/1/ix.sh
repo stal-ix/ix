@@ -17,10 +17,6 @@ v8.1.3
 aa8d39a5094ce4a9b1f2431056327821531763ced5d65eecb7ac60651596680e
 {% endblock %}
 
-{% block git_version %}
-v3
-{% endblock %}
-
 {% block step_unpack %}
 {{super()}}
 cd subprojects

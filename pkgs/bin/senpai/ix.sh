@@ -5,7 +5,7 @@ https://git.sr.ht/~delthas/senpai/archive/v0.3.0.tar.gz
 {% endblock %}
 
 {% block go_sha %}
-4b33500025f18781e8aedd82d86941a52fcac7e3b977f61b656a8f79810ceedf
+47581757e313e23bc3ecf6434e200cbc7f2fbc9f581c711a065d937b3e7c3c0b
 {% endblock %}
 
 {% block go_refine %}

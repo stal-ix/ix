@@ -12,10 +12,6 @@ https://github.com/wasm3/wasm3
 6f4a81f6d62818a68e7d96d69a98e4f937bccc2e0a7b8af68be9dbf9fe05e9ad
 {% endblock %}
 
-{% block git_version %}
-v3
-{% endblock %}
-
 {% block bld_libs %}
 lib/c
 lib/wasi/uv

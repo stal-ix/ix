@@ -9,7 +9,7 @@ https://github.com/asmjit/asmjit
 {% endblock %}
 
 {% block git_sha %}
-85ea3eea68eb3251532ad78c65c6cf7e4e5492405b509a223f5c25ca6674685a
+71f072fbb23afcf3230dd9047567c5fc753215749b0cec68c3dc2f08234994d0
 {% endblock %}
 
 {% block lib_deps %}

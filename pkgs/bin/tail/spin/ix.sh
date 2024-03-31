@@ -5,7 +5,7 @@ https://github.com/bensadeh/tailspin/archive/refs/tags/3.0.0.tar.gz
 {% endblock %}
 
 {% block cargo_sha %}
-446bf55b04560da472e7cdf14c042328828b23adc17be84911114aeaaca48d3e
+89581650da222c69bb0746f94c820c696402f7680f09b812e9c2007504108212
 {% endblock %}
 
 {% block install %}

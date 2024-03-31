@@ -12,10 +12,6 @@ https://github.com/AppImage/AppImageKit
 e6653329128be46307c891f2040cc4cb1a2005408ffc97f779c06e35bf00ba33
 {% endblock %}
 
-{% block git_version %}
-v3
-{% endblock %}
-
 {% block bld_libs %}
 lib/c
 lib/z

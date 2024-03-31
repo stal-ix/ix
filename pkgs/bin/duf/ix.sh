@@ -5,7 +5,7 @@ https://github.com/muesli/duf/archive/refs/tags/v0.8.1.tar.gz
 {% endblock %}
 
 {% block go_sha %}
-4ffb366c2ec0e9cb49e8637239c602b4e2a40cf9f2c2656f6c5067e206381110
+87e574a7c998142ee1e9b1b57062edfba4fe0ee1308def9d386b71e6abc5c119
 {% endblock %}
 
 {% block install %}

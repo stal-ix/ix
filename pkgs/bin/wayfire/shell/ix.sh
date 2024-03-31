@@ -12,10 +12,6 @@ c9639087aca3ad69bbd8f56f4213768639b4c8d0
 21056561118a3c66466925a8da67715f09ee936a9c35a311fb8c7891e9d813e5
 {% endblock %}
 
-{% block git_version %}
-v3
-{% endblock %}
-
 {% block bld_libs %}
 lib/c
 lib/gtk/3/mm

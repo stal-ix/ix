@@ -9,7 +9,7 @@ https://github.com/Nheko-Reborn/mtxclient
 {% endblock %}
 
 {% block git_sha %}
-e5f5f1eb17cd7a088787f73e653b79d5302526ae5399cab69cb614a8c7acf6ae
+cab195dc2fb83593b37356d244ff0a101f2e821377277330176a26ba767a880a
 {% endblock %}
 
 {% block lib_deps %}
