@@ -9,7 +9,7 @@ d511080814dc78ad39a63f2071003c07ee37673c
 {% endblock %}
 
 {% block git_sha %}
-e51ad8446a2ef36200f6e3a10dc63f27fecf1ca9e5b4f0b3b5b42100942e9f30
+d8fa178f2ca08d831d4b4e0441dff38d10e4d0ffe93882b71b98f063bbfc6a61
 {% endblock %}
 
 {% block bld_libs %}
@@ -78,4 +78,8 @@ wrap_cc
 {% block install %}
 {{super()}}
 rm -rf ${out}/bin/imhex-updater
+{% endblock %}
+
+{% block git_version %}
+v3
 {% endblock %}
