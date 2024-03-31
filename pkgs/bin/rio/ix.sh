@@ -5,7 +5,7 @@ https://github.com/raphamorim/rio/archive/refs/tags/v0.0.34.tar.gz
 {% endblock %}
 
 {% block cargo_sha %}
-c229b28ab81b245f8fd3a97f4be30604610ba9d28e870222c823c5ab229c2418
+4d0df148058032b2de78a719eecd055fd6da233036647af08b67e9160b4d74cd
 {% endblock %}
 
 {% block bld_libs %}
@@ -29,4 +29,8 @@ lib/xkb/common/dl
 {% block install %}
 mkdir ${out}/bin
 cp ${tmp}/release/rio ${out}/bin/
+{% endblock %}
+
+{% block cargo_ver %}
+v3
 {% endblock %}
