@@ -8,7 +8,7 @@ find . -name 'ix.sh' | grep -v '/t/' | sed -e 's|/ix.sh||' | grep -v '/bld/' | s
         git add -A
         git commit -m "upgrade"
         git push
-    else:
+    else
         git checkout .
     fi
 done
