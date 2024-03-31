@@ -5,7 +5,7 @@ https://github.com/rs/curlie/archive/refs/tags/v1.6.9.tar.gz
 {% endblock %}
 
 {% block go_sha %}
-d8a6f54c808b4b63c3fea37de7db35a72b6a3c0e089834eb6bc9e15f4f09e6c9
+f08e8fcbd57cadb644a8b52ad19fdafcb0575062c30d3d17d4d147fb61d2d21c
 {% endblock %}
 
 {% block patch %}
@@ -15,4 +15,8 @@ rm curlie
 {% block install %}
 mkdir ${out}/bin
 cp curlie ${out}/bin/
+{% endblock %}
+
+{% block go_version %}
+v3
 {% endblock %}
