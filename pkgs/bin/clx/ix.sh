@@ -5,10 +5,14 @@ https://github.com/bensadeh/circumflex/archive/refs/tags/3.5.tar.gz
 {% endblock %}
 
 {% block go_sha %}
-82663cb2b1f634dcb0a18394d81975099f3a8d864d27ff5645f1f3e45ad69a22
+2c8c5594176cf067025a538474255d7aba9b360022e5961fb100ae5534a0099c
 {% endblock %}
 
 {% block install %}
 mkdir ${out}/bin
 cp clx ${out}/bin/
+{% endblock %}
+
+{% block go_version %}
+v3
 {% endblock %}
