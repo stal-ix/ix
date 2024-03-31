@@ -5,10 +5,14 @@ https://github.com/prometheus/node_exporter/archive/refs/tags/v1.7.0.tar.gz
 {% endblock %}
 
 {% block go_sha %}
-d19990eb9d4775fe4ac3c150de744d9229e6eb780a64beba8d0b532602899388
+67b07335221810969fffdc83df9f548471e32d81d111ff5c25543c9ff0d4b8e3
 {% endblock %}
 
 {% block install %}
 mkdir ${out}/bin
 cp node_exporter ${out}/bin/
+{% endblock %}
+
+{% block go_version %}
+v3
 {% endblock %}
