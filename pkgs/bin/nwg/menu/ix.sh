@@ -12,7 +12,3 @@ db511009ace82f4bc945541566d71f1cf50298da2b20fcfd2b3cde64370e9ca8
 mkdir ${out}/bin
 cp nwg-menu ${out}/bin/
 {% endblock %}
-
-{% block go_version %}
-v3
-{% endblock %}

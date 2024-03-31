@@ -16,7 +16,3 @@ go build main.go
 mkdir ${out}/bin
 cp main ${out}/bin/muslstack
 {% endblock %}
-
-{% block go_version %}
-v3
-{% endblock %}

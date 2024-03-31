@@ -17,7 +17,3 @@ cd cmd/gh
 mkdir ${out}/bin
 cp gh ${out}/bin/
 {% endblock %}
-
-{% block go_version %}
-v3
-{% endblock %}

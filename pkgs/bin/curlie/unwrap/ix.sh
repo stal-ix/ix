@@ -16,7 +16,3 @@ rm curlie
 mkdir ${out}/bin
 cp curlie ${out}/bin/
 {% endblock %}
-
-{% block go_version %}
-v3
-{% endblock %}

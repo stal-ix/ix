@@ -17,7 +17,3 @@ cd cli/go-git
 mkdir ${out}/bin
 cp go-git ${out}/bin/
 {% endblock %}
-
-{% block go_version %}
-v3
-{% endblock %}

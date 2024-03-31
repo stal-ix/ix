@@ -17,7 +17,3 @@ cd cmd/wazero
 mkdir -p ${out}/bin
 cp wazero ${out}/bin/
 {% endblock %}
-
-{% block go_version %}
-v3
-{% endblock %}

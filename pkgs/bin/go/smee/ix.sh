@@ -16,7 +16,3 @@ cp gosmee.bin ${out}/bin/gosmee
 {% block go_build_flags %}
 -o gosmee.bin
 {% endblock %}
-
-{% block go_version %}
-v3
-{% endblock %}

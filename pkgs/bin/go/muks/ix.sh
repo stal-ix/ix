@@ -17,7 +17,3 @@ lib/shim/fake(lib_name=stdc++)
 mkdir ${out}/bin
 cp gomuks ${out}/bin/
 {% endblock %}
-
-{% block go_version %}
-v3
-{% endblock %}

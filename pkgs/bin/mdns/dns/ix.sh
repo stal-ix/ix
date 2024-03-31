@@ -12,7 +12,3 @@ https://github.com/pg83/mdns2dns/archive/refs/tags/v1.tar.gz
 mkdir ${out}/bin
 cp mdns2dns ${out}/bin/
 {% endblock %}
-
-{% block go_version %}
-v3
-{% endblock %}

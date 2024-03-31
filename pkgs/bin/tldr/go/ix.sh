@@ -17,7 +17,3 @@ cd cmd/tldr
 mkdir ${out}/bin
 cp tldr ${out}/bin/
 {% endblock %}
-
-{% block go_version %}
-v3
-{% endblock %}

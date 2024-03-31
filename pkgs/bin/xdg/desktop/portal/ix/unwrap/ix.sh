@@ -24,7 +24,3 @@ Name=org.freedesktop.portal.Desktop
 Exec=/bin/sh -c "exec xdg-portal-ix"
 EOF
 {% endblock %}
-
-{% block go_version %}
-v3
-{% endblock %}

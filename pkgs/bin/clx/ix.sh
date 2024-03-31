@@ -12,7 +12,3 @@ https://github.com/bensadeh/circumflex/archive/refs/tags/3.5.tar.gz
 mkdir ${out}/bin
 cp clx ${out}/bin/
 {% endblock %}
-
-{% block go_version %}
-v3
-{% endblock %}

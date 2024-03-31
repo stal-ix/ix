@@ -21,7 +21,3 @@ cp app ${out}/bin/
 {% block setup_target_flags %}
 export GOWORK=off
 {% endblock %}
-
-{% block go_version %}
-v3
-{% endblock %}

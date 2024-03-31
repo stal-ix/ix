@@ -34,7 +34,3 @@ go env -w "CC=clang-17"
 go generate
 {{super()}}
 {% endblock %}
-
-{% block go_version %}
-v3
-{% endblock %}

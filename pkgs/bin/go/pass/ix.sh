@@ -12,7 +12,3 @@ e82a085324332eac34e51c9e1eb115c4f8728b3144f137900935f5f72991c73a
 mkdir ${out}/bin
 cp gopass ${out}/bin/
 {% endblock %}
-
-{% block go_version %}
-v3
-{% endblock %}

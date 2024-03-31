@@ -12,7 +12,3 @@ https://github.com/antonmedv/llama/archive/refs/tags/v1.4.0.tar.gz
 mkdir ${out}/bin
 cp llama ${out}/bin/
 {% endblock %}
-
-{% block go_version %}
-v3
-{% endblock %}

@@ -22,7 +22,3 @@ lib/git/2
 mkdir ${out}/bin
 cp grv ${out}/bin/
 {% endblock %}
-
-{% block go_version %}
-v3
-{% endblock %}

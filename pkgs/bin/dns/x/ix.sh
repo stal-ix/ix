@@ -17,7 +17,3 @@ cd cmd/dnsx
 mkdir ${out}/bin
 cp dnsx ${out}/bin/
 {% endblock %}
-
-{% block go_version %}
-v3
-{% endblock %}

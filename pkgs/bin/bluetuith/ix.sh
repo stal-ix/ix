@@ -12,7 +12,3 @@ e9226fc57118d73d2fc7552bd87bf85eb15442c5b277c32159f195dd89b1a25e
 mkdir ${out}/bin
 cp bluetuith ${out}/bin/
 {% endblock %}
-
-{% block go_version %}
-v3
-{% endblock %}

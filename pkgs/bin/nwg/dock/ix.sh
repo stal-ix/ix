@@ -12,7 +12,3 @@ https://github.com/nwg-piotr/nwg-dock/archive/refs/tags/v0.3.1.tar.gz
 mkdir ${out}/bin
 cp nwg-dock ${out}/bin/
 {% endblock %}
-
-{% block go_version %}
-v3
-{% endblock %}

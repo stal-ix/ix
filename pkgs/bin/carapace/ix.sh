@@ -17,7 +17,3 @@ cd cmd/carapace
 mkdir ${out}/bin
 cp carapace ${out}/bin/
 {% endblock %}
-
-{% block go_version %}
-v3
-{% endblock %}

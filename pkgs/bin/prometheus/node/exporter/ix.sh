@@ -12,7 +12,3 @@ https://github.com/prometheus/node_exporter/archive/refs/tags/v1.7.0.tar.gz
 mkdir ${out}/bin
 cp node_exporter ${out}/bin/
 {% endblock %}
-
-{% block go_version %}
-v3
-{% endblock %}

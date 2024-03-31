@@ -12,7 +12,3 @@ https://github.com/muesli/duf/archive/refs/tags/v0.8.1.tar.gz
 mkdir ${out}/bin
 cp duf ${out}/bin/
 {% endblock %}
-
-{% block go_version %}
-v3
-{% endblock %}

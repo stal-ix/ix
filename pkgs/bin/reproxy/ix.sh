@@ -17,7 +17,3 @@ cd app
 mkdir ${out}/bin
 cp app ${out}/bin/reproxy
 {% endblock %}
-
-{% block go_version %}
-v3
-{% endblock %}

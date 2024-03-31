@@ -16,7 +16,3 @@ bin/go/lang/20
 mkdir ${out}/bin
 cp ipget ${out}/bin/
 {% endblock %}
-
-{% block go_version %}
-v3
-{% endblock %}

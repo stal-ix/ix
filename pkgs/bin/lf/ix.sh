@@ -12,7 +12,3 @@ https://github.com/gokcehan/lf/archive/refs/tags/r31.tar.gz
 mkdir ${out}/bin
 cp lf ${out}/bin/
 {% endblock %}
-
-{% block go_version %}
-v3
-{% endblock %}

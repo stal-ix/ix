@@ -17,7 +17,3 @@ cd cmd/gosh
 mkdir ${out}/bin
 cp gosh ${out}/bin/
 {% endblock %}
-
-{% block go_version %}
-v3
-{% endblock %}

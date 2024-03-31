@@ -22,7 +22,3 @@ cd cmd/senpai
 mkdir ${out}/bin
 cp senpai ${out}/bin/
 {% endblock %}
-
-{% block go_version %}
-v3
-{% endblock %}

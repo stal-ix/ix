@@ -17,7 +17,3 @@ go mod tidy -compat=1.21
 mkdir ${out}/bin
 cp fzf ${out}/bin/
 {% endblock %}
-
-{% block go_version %}
-v3
-{% endblock %}

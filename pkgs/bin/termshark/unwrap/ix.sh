@@ -17,7 +17,3 @@ cd cmd/termshark
 mkdir ${out}/bin
 cp termshark ${out}/bin/
 {% endblock %}
-
-{% block go_version %}
-v3
-{% endblock %}

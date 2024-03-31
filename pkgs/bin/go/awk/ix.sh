@@ -12,7 +12,3 @@ https://github.com/benhoyt/goawk/archive/refs/tags/v1.26.0.tar.gz
 mkdir ${out}/bin
 cp goawk ${out}/bin/
 {% endblock %}
-
-{% block go_version %}
-v3
-{% endblock %}

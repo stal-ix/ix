@@ -17,7 +17,3 @@ cd cmd/mlr
 mkdir ${out}/bin
 cp mlr ${out}/bin/
 {% endblock %}
-
-{% block go_version %}
-v3
-{% endblock %}

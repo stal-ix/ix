@@ -12,7 +12,3 @@ ef501aa19e17c125c95f84e442f235e29e78671615aa559fa7de8903511f9b38
 mkdir ${out}/bin
 cp pspy ${out}/bin/
 {% endblock %}
-
-{% block go_version %}
-v3
-{% endblock %}

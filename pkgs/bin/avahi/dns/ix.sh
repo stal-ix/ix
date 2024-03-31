@@ -12,7 +12,3 @@ c88ea94823aa15625f23b7401c0b0d2138ddffea016828b148328c3d9e27f2c4
 mkdir ${out}/bin
 cp avahi2dns ${out}/bin/
 {% endblock %}
-
-{% block go_version %}
-v3
-{% endblock %}

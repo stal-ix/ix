@@ -17,7 +17,3 @@ cd cmd/esbuild
 mkdir ${out}/bin
 cp esbuild ${out}/bin/
 {% endblock %}
-
-{% block go_version %}
-v3
-{% endblock %}

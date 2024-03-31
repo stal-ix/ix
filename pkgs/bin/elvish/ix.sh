@@ -17,7 +17,3 @@ cd cmd/elvish
 mkdir ${out}/bin
 cp elvish ${out}/bin/
 {% endblock %}
-
-{% block go_version %}
-v3
-{% endblock %}

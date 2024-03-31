@@ -12,7 +12,3 @@ ff50657702615e8b59b9dc3f9089fe90c9b96f46b7c0e5e51ba9db4c659c76ab
 mkdir ${out}/bin
 cp u-root ${out}/bin/
 {% endblock %}
-
-{% block go_version %}
-v3
-{% endblock %}

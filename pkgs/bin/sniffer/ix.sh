@@ -18,7 +18,3 @@ lib/kernel
 mkdir ${out}/bin
 cp sniffer ${out}/bin/
 {% endblock %}
-
-{% block go_version %}
-v3
-{% endblock %}

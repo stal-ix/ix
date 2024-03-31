@@ -23,7 +23,3 @@ cd cmd/gotop
 mkdir ${out}/bin
 cp gotop ${out}/bin/
 {% endblock %}
-
-{% block go_version %}
-v3
-{% endblock %}

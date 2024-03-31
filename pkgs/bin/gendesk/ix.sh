@@ -12,7 +12,3 @@ https://github.com/xyproto/gendesk/archive/refs/tags/1.0.9.tar.gz
 mkdir ${out}/bin
 cp gendesk ${out}/bin/
 {% endblock %}
-
-{% block go_version %}
-v3
-{% endblock %}

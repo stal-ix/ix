@@ -12,7 +12,3 @@ https://github.com/nwg-piotr/nwg-drawer/archive/refs/tags/v0.3.7.tar.gz
 mkdir ${out}/bin
 cp nwg-drawer ${out}/bin/
 {% endblock %}
-
-{% block go_version %}
-v3
-{% endblock %}

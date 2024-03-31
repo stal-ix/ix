@@ -17,7 +17,3 @@ cd cmd/chroma
 mkdir ${out}/bin
 cp chroma ${out}/bin/
 {% endblock %}
-
-{% block go_version %}
-v3
-{% endblock %}

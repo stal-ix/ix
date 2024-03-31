@@ -16,7 +16,3 @@ https://github.com/wtfutil/wtf/archive/refs/tags/v0.41.0.tar.gz
 mkdir ${out}/bin
 cp wtfutil ${out}/bin/
 {% endblock %}
-
-{% block go_version %}
-v3
-{% endblock %}

@@ -20,7 +20,3 @@ noutmp
 mkdir ${out}/bin
 cp emptty ${out}/bin/
 {% endblock %}
-
-{% block go_version %}
-v3
-{% endblock %}

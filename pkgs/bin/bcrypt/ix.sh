@@ -16,7 +16,3 @@ bin/go/lang/22
 mkdir ${out}/bin
 cp bcrypt ${out}/bin/
 {% endblock %}
-
-{% block go_version %}
-v3
-{% endblock %}

@@ -24,7 +24,3 @@ mkdir bin
 cp nwg-look bin/
 make DESTDIR=${out} install
 {% endblock %}
-
-{% block go_version %}
-v3
-{% endblock %}

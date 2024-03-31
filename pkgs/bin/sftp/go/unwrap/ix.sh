@@ -12,7 +12,3 @@ https://github.com/drakkan/sftpgo/archive/refs/tags/v2.5.6.tar.gz
 mkdir ${out}/bin
 cp sftpgo ${out}/bin
 {% endblock %}
-
-{% block go_version %}
-v3
-{% endblock %}

@@ -17,7 +17,3 @@ cd cmd/task
 mkdir ${out}/bin
 cp task ${out}/bin/
 {% endblock %}
-
-{% block go_version %}
-v3
-{% endblock %}

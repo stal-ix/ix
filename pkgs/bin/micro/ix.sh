@@ -17,7 +17,3 @@ cd cmd/micro
 mkdir ${out}/bin
 cp micro ${out}/bin/
 {% endblock %}
-
-{% block go_version %}
-v3
-{% endblock %}
