@@ -9,7 +9,7 @@ https://github.com/tomba/kmsxx
 {% endblock %}
 
 {% block git_sha %}
-b594f5b27fffde8272132a281ff5c9545e8ec4e346813f4884b5146d22cde008
+0bbc8eb93f87223956913e8e18abbf828eb3cd88e7e35d7a9b2cfbee42c6a394
 {% endblock %}
 
 {% block lib_deps %}
@@ -17,4 +17,8 @@ lib/c
 lib/c++
 lib/drm
 lib/fmt
+{% endblock %}
+
+{% block git_version %}
+v3
 {% endblock %}
