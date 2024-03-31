@@ -9,7 +9,7 @@ https://kernel.googlesource.com/pub/scm/bluetooth/sbc
 {% endblock %}
 
 {% block git_sha %}
-078efe273e3bc5f836e740163feef973ce5f710606a96d89b1d29bbb470de7d3
+14acd73967509f76393204656187ca2257cff7fc8066ad07286d87033c28313a
 {% endblock %}
 
 {% block lib_deps %}
@@ -19,4 +19,8 @@ lib/sndfile
 
 {% block bld_libs %}
 lib/kernel
+{% endblock %}
+
+{% block git_version %}
+v3
 {% endblock %}
