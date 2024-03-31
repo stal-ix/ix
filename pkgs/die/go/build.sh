@@ -1,7 +1,7 @@
 {% extends 'base.sh' %}
 
 {% block std_box %}
-bld/stable/unpack
+bld/pzd
 {{super()}}
 {% endblock %}
 
@@ -10,13 +10,8 @@ v3
 {% endblock %}
 
 {% block unpack %}
-mkdir src
-cd src
-{% if self.go_version().strip() == 'v2' %}
-stable_unpack_v2 ${src}/*lz4
-{% else %}
-stable_unpack_{{self.go_version().strip()}} ${src}/*.pzd
-{% endif %}
+mkdir src; cd src
+des ${src}/*.pzd .
 {% endblock %}
 
 {% block go_refine %}

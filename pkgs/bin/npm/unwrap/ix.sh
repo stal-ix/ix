@@ -5,13 +5,13 @@ bin/npm/source
 {% endblock %}
 
 {% block bld_tool %}
-bld/stable/unpack
+bld/pzd
 {% endblock %}
 
 {% block install %}
 mkdir -p ${out}/bin/bin_npm
 cd ${out}/bin/bin_npm
-stable_unpack_v2 ${src}
+des ${src} .
 cd ..
 ln -s bin_npm/bin/npm-cli.js npm
 {% endblock %}

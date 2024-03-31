@@ -1,7 +1,5 @@
 {% extends '//aux/fetch/ix.sh' %}
 
-{% block packer %}stable_pack_v3{% endblock %}
-
 {% block fname %}
 go_v3_{{parent_id}}.pzd
 {% endblock %}
