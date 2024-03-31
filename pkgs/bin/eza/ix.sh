@@ -5,7 +5,7 @@ https://github.com/eza-community/eza/archive/refs/tags/v0.18.5.tar.gz
 {% endblock %}
 
 {% block cargo_sha %}
-abbc45a8b0fd3f47616a0cb940b82553ee187623f7b91256bcff097c4cb00948
+d6448dd5176c77077af820bde3fc2386b2785895b704b0a7b818abffacbd5f39
 {% endblock %}
 
 {% block bld_libs %}
@@ -15,4 +15,8 @@ lib/git/2
 {% block install %}
 mkdir ${out}/bin
 cp ${tmp}/release/eza ${out}/bin/
+{% endblock %}
+
+{% block cargo_ver %}
+v3
 {% endblock %}
