@@ -6,7 +6,7 @@ import time
 import subprocess
 
 VER = '''
-{% block cargo_ver %}
+{% block go_version %}
 v3
 {% endblock %}
 '''
@@ -35,7 +35,10 @@ def subst_sha(data, to):
     return data.replace(parse_sha(data), to)
 
 def upgr(data):
-    if 'cargo_url' in data and 'cargo_ver' not in data:
+    if 'cargo_url' in data:
+        return
+
+    if 'go_url' in data and 'go_version' not in data:
         return subst_sha(data + VER, '1' * 64)
 
 def call(*cmd):
