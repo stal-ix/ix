@@ -9,7 +9,7 @@ cd61d52c4dfc242032062e5f7d0822dd4b75b3cf
 {% endblock %}
 
 {% block git_sha %}
-0ecb68151824ca114c932a2135d9c7c246bb5ea473a86c59241375a7620b3444
+83858d9f52e68333a9a642da3a3dd27be40cb4227386be8b7b017eba065570bd
 {% endblock %}
 
 {% block bld_libs %}
@@ -20,4 +20,8 @@ lib/c++
 {% block cmake_flags %}
 BUILD_IMGUI=ON
 BUILD_TESTS=OFF
+{% endblock %}
+
+{% block git_version %}
+v3
 {% endblock %}
