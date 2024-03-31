@@ -5,7 +5,7 @@ https://github.com/zed-industries/zed/archive/refs/tags/v0.123.2.tar.gz
 {% endblock %}
 
 {% block cargo_sha %}
-0dfa74ee1a06d22879b078638cef6a4940c504c73247e47e729875859ae83184
+d71133e166c0bca8b5ba471609024c3b96a23a7867edc96c73143001cbec0036
 {% endblock %}
 
 {% block bld_libs %}
@@ -20,4 +20,8 @@ lib/fontconfig
 lib/xkb/common
 lib/vulkan/loader
 lib/vulkan/headers
+{% endblock %}
+
+{% block cargo_ver %}
+v3
 {% endblock %}
