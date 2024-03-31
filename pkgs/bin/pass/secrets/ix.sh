@@ -9,7 +9,7 @@ https://github.com/nullobsi/pass-secrets
 {% endblock %}
 
 {% block git_sha %}
-aa64a3312573f7664f9507727d28e1d519f7d2038410a38ebf19e6c1623deb72
+accefcc8aa90eeae21168ecad684552eb6c32efb84c076106c979e4abb39fdde
 {% endblock %}
 
 {% block bld_libs %}
@@ -20,4 +20,8 @@ lib/sd/bus/c++
 
 {% block bld_tool %}
 bin/sd/bus/codegen
+{% endblock %}
+
+{% block git_version %}
+v3
 {% endblock %}
