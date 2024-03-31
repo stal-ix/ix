@@ -5,7 +5,7 @@ https://github.com/alacritty/alacritty/archive/refs/tags/v0.13.2.tar.gz
 {% endblock %}
 
 {% block cargo_sha %}
-6e5e70bd4fa7b3bf09c5150190c50d6c561652ad381d41d5594b2f6a5542c002
+59cc035e9dd9e6061e4d0be5214ef439ca64d952d91e488a1773c94225103eb8
 {% endblock %}
 
 {% block bld_libs %}
@@ -38,4 +38,8 @@ wayland
 {% block install %}
 mkdir ${out}/bin
 cp ${tmp}/release/alacritty ${out}/bin/
+{% endblock %}
+
+{% block cargo_ver %}
+v3
 {% endblock %}
