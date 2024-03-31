@@ -5,7 +5,7 @@ https://github.com/uutils/coreutils/archive/refs/tags/0.0.25.tar.gz
 {% endblock %}
 
 {% block cargo_sha %}
-55f45419612356aff8ffbc4729034172650c28bf008c5b4d403aaea65254067b
+49182545facd064bc7e1d47ef4e644af3258189d074d8e4adc2b621d11877d66
 {% endblock %}
 
 {% block bld_libs %}
@@ -39,4 +39,8 @@ set -xue
 make list | tr ' ' '\n' | grep -v '^$' | sort | uniq | grep -v coreutils | while read l; do
     ln -s coreutils ${out}/bin/${l}
 done
+{% endblock %}
+
+{% block cargo_ver %}
+v3
 {% endblock %}
