@@ -5,7 +5,7 @@ https://github.com/johnkerl/miller/archive/refs/tags/v6.11.0.tar.gz
 {% endblock %}
 
 {% block go_sha %}
-0d53b133a20a7307213c6079285cca0de40808b392395e5340bb31ab51100655
+c4bb6a2091ff8c4acd5a2a584267f6bb794108bce19c23a12d1067d6d686941d
 {% endblock %}
 
 {% block unpack %}
@@ -16,4 +16,8 @@ cd cmd/mlr
 {% block install %}
 mkdir ${out}/bin
 cp mlr ${out}/bin/
+{% endblock %}
+
+{% block go_version %}
+v3
 {% endblock %}
