@@ -1,7 +1,7 @@
 {% extends '//aux/fetch/t/ix.sh' %}
 
 {% block fname %}
-git_v3_{{parent_id}}.tar.lz4
+git_v2_{{parent_id}}.tar.lz4
 {% endblock %}
 
 {% block bld_tool %}
