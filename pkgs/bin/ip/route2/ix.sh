@@ -9,7 +9,7 @@ e5fd785830671180e934a84a44da93c51cce839d
 {% endblock %}
 
 {% block git_sha %}
-79456e007fb719606a8c53443611867ff103a09346a5ca03d3ffd9d82ee0b963
+138e7babe4e8ba57d0a0257744d4f6e3fbb05d4a9539faa2e3fa965753494185
 {% endblock %}
 
 {% block bld_libs %}
@@ -51,4 +51,8 @@ CONF_ETC_DIR=${out}/etc/iproute2
 NETNS_RUN_DIR=${out}/var/run/iproute2
 NETNS_ETC_DIR=${out}/etc/netns
 ARPDDIR=${out}/var/run/arpd
+{% endblock %}
+
+{% block git_version %}
+v3
 {% endblock %}
