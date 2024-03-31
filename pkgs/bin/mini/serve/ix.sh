@@ -12,7 +12,3 @@ https://github.com/svenstaro/miniserve/archive/refs/tags/v0.26.0.tar.gz
 mkdir ${out}/bin
 cp ${tmp}/release/miniserve ${out}/bin/
 {% endblock %}
-
-{% block cargo_ver %}
-v3
-{% endblock %}

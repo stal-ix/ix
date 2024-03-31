@@ -17,7 +17,3 @@ cd crates/resvg
 mkdir ${out}/bin/
 cp ${tmp}/release/resvg ${out}/bin/
 {% endblock %}
-
-{% block cargo_ver %}
-v3
-{% endblock %}

@@ -2,14 +2,20 @@
 
 import os
 
-VER = '''
+VER1 = '''
 {% block git_version %}
 v3
 {% endblock %}
 '''
 
+VER2 = '''
+{% block cargo_ver %}
+v3
+{% endblock %}
+'''
+
 def fix(d, p):
-    return d.replace(VER, '').strip() + '\n'
+    return d.replace(VER2, '').strip() + '\n'
 
 for a, b, c in os.walk('.'):
     for x in c:

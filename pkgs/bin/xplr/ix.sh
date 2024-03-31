@@ -19,7 +19,3 @@ bld/make
 cat .cargo/config
 rm .cargo/config
 {% endblock %}
-
-{% block cargo_ver %}
-v3
-{% endblock %}

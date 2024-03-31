@@ -16,7 +16,3 @@ lib/c
 mkdir ${out}/bin
 cp ${tmp}/release/binocle ${out}/bin/
 {% endblock %}
-
-{% block cargo_ver %}
-v3
-{% endblock %}

@@ -30,7 +30,3 @@ lib/xkb/common/dl
 mkdir ${out}/bin
 cp target/release/wezterm ${out}/bin/
 {% endblock %}
-
-{% block cargo_ver %}
-v3
-{% endblock %}

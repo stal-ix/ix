@@ -12,7 +12,3 @@ https://github.com/bensadeh/tailspin/archive/refs/tags/3.0.0.tar.gz
 mkdir ${out}/bin
 cp ${tmp}/release/tspin ${out}/bin/
 {% endblock %}
-
-{% block cargo_ver %}
-v3
-{% endblock %}

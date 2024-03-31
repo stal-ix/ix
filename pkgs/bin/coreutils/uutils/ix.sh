@@ -40,7 +40,3 @@ make list | tr ' ' '\n' | grep -v '^$' | sort | uniq | grep -v coreutils | while
     ln -s coreutils ${out}/bin/${l}
 done
 {% endblock %}
-
-{% block cargo_ver %}
-v3
-{% endblock %}

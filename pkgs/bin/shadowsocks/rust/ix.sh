@@ -20,7 +20,3 @@ make PREFIX=${out}/bin TARGET=release install
 {% block patch %}
 sed -e "s|target/|${tmp}/|" -i Makefile
 {% endblock %}
-
-{% block cargo_ver %}
-v3
-{% endblock %}

@@ -39,7 +39,3 @@ wayland
 mkdir ${out}/bin
 cp ${tmp}/release/alacritty ${out}/bin/
 {% endblock %}
-
-{% block cargo_ver %}
-v3
-{% endblock %}

@@ -12,7 +12,3 @@ https://github.com/NOBLES5E/cproxy/archive/refs/tags/v4.1.6.post1.tar.gz
 mkdir ${out}/bin
 cp ${tmp}/release/cproxy ${out}/bin/
 {% endblock %}
-
-{% block cargo_ver %}
-v3
-{% endblock %}

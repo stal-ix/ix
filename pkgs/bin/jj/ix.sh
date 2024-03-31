@@ -23,7 +23,3 @@ lib/openssl
 mkdir ${out}/bin
 cp ${tmp}/release/jj ${out}/bin/
 {% endblock %}
-
-{% block cargo_ver %}
-v3
-{% endblock %}

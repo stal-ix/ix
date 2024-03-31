@@ -20,7 +20,3 @@ lib/oniguruma
 mkdir ${out}/bin
 cp ${tmp}/release/bat ${out}/bin/
 {% endblock %}
-
-{% block cargo_ver %}
-v3
-{% endblock %}

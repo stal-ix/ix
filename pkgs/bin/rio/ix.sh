@@ -30,7 +30,3 @@ lib/xkb/common/dl
 mkdir ${out}/bin
 cp ${tmp}/release/rio ${out}/bin/
 {% endblock %}
-
-{% block cargo_ver %}
-v3
-{% endblock %}

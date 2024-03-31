@@ -20,7 +20,3 @@ lib/openssl
 mkdir ${out}/bin
 cp ${tmp}/release/i3status-rs ${out}/bin/
 {% endblock %}
-
-{% block cargo_ver %}
-v3
-{% endblock %}

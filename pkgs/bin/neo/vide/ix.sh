@@ -17,7 +17,3 @@ https://github.com/neovide/neovide/archive/refs/tags/0.12.2.tar.gz
 lib/c
 lib/c++
 {% endblock %}
-
-{% block cargo_ver %}
-v3
-{% endblock %}

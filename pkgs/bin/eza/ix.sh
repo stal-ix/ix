@@ -16,7 +16,3 @@ lib/git/2
 mkdir ${out}/bin
 cp ${tmp}/release/eza ${out}/bin/
 {% endblock %}
-
-{% block cargo_ver %}
-v3
-{% endblock %}

@@ -21,7 +21,3 @@ lib/xkb/common
 lib/vulkan/loader
 lib/vulkan/headers
 {% endblock %}
-
-{% block cargo_ver %}
-v3
-{% endblock %}

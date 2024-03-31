@@ -3,11 +3,11 @@
 {% block task_pool %}full{% endblock %}
 
 {% block std_box %}
+bld/pzd
 bld/rust
 bld/python
 bld/pkg/config
 bld/rust/devendor
-bld/stable/unpack
 {% if help %}
 bin/cargo/whatfeatures
 {% endif %}
@@ -16,11 +16,7 @@ bin/cargo/whatfeatures
 
 {% block unpack %}
 mkdir src; cd src
-{% if self.cargo_ver().strip() == 'v2' %}
-stable_unpack_v2 ${src}/*lz4
-{% else %}
-stable_unpack_{{self.cargo_ver().strip()}} ${src}/*.pzd
-{% endif %}
+des ${src}/*.pzd .
 rust_devendor vendored
 {% endblock %}
 
@@ -28,7 +24,7 @@ rust_devendor vendored
 {% endblock %}
 
 {% block cargo_ver %}
-v2
+v3
 {% endblock %}
 
 {% block bld_data %}
