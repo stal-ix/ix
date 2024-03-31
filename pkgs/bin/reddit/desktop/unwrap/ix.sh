@@ -9,7 +9,7 @@ https://github.com/sgiurgiu/reddit_desktop
 {% endblock %}
 
 {% block git_sha %}
-6c84e066ff2fd773dd41bf2553491c8e306c822e4f80898f9690757832dfc88e
+2bd8949264bac9d36162448001fdc09881efec58b267817a587227c59f47e3b7
 {% endblock %}
 
 {% block bld_libs %}
@@ -41,4 +41,8 @@ ENABLE_TESTS=OFF
 {{super()}}
 cd ${out}/bin
 ln -s ../share/reddit_desktop/fonts ./
+{% endblock %}
+
+{% block git_version %}
+v3
 {% endblock %}
