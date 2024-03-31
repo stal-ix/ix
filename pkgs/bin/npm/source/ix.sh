@@ -10,7 +10,7 @@ sha:d8c7bf11ea8c0cf13b936e8ad936358745a682f3f64fc22e5c50d48f06966f66
 {% set sum %}2c431a7fb7c04a5f400f7ba{% endset %}
 
 {% block predict_outputs %}
-[{"path": "share/npm_2.tar.lz4", "sum": "{{sum}}"}]
+[{"path": "share/npm_2.pzd", "sum": "{{sum}}"}]
 {% endblock %}
 
 {% block bld_tool %}
