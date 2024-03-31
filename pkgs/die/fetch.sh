@@ -16,7 +16,7 @@
 {% endblock %}
 
 {% block git_version %}
-v1
+v3
 {% endblock %}
 
 {% block bld_deps %}
