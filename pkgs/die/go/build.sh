@@ -6,7 +6,7 @@ bld/stable/unpack
 {% endblock %}
 
 {% block go_version %}
-v2
+v3
 {% endblock %}
 
 {% block unpack %}
