@@ -5,7 +5,7 @@ https://github.com/dragonflydb/dragonfly
 {% endblock %}
 
 {% block git_sha %}
-3572f6485a2b6127ef2fc9ff30fe5e2c989d10d111bc6145d5d281ce51277ccf
+9ee040b5e7928e74c1be39398f8c7d320ee0c687b80248ef6c2d09b5ce8d62a0
 {% endblock %}
 
 {% block git_branch %}
@@ -57,4 +57,8 @@ find . -type f -name CMakeLists.txt | while read l; do
         -e 's|glog::glog||g' \
         -i ${l}
 done
+{% endblock %}
+
+{% block git_version %}
+v3
 {% endblock %}
