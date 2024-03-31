@@ -69,7 +69,7 @@ sh ./configure \
 {% endblock %}
 
 {% block setup_target_flags %}
-export CPPFLAGS="-isystem${PWD}/linux-headers ${CPPFLAGS}"
+export CPPFLAGS="-isystem${PWD}/linux-headers -iquote${PWD} -iquote${PWD}/include ${CPPFLAGS}"
 {% endblock %}
 
 {% block patch %}

@@ -5,9 +5,9 @@ cargo_{{parent_id}}.tar.lz4
 {% endblock %}
 
 {% block bld_tool %}
+bld/git
 bld/rust
 aux/ca/bundle
-bin/git/unwrap
 {{super()}}
 {% endblock %}
 

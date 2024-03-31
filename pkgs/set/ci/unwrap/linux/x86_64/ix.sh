@@ -34,12 +34,11 @@
 #bin/tex/studio
 #bin/rr
 #bin/gendesk
-#bin/qemu/8/1
-#bin/qemu/8/2
-#bin/qemu/8/0
 #}
 
 {% block run_deps %}
+bin/qemu/8/1
+bin/qemu/8/2
 bin/coreutils/9/5
 bin/wak
 bin/q/bittorrent/nox
