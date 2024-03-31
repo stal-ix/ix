@@ -5,10 +5,14 @@ https://github.com/svenstaro/miniserve/archive/refs/tags/v0.26.0.tar.gz
 {% endblock %}
 
 {% block cargo_sha %}
-8c3536ffab0d1ba98421f79e726376b0d949ba98f5789cf76eb5a38140fd3669
+06f801796df58f036d51af1847264d37f25384ece33c89c816eecbd44de4bb75
 {% endblock %}
 
 {% block install %}
 mkdir ${out}/bin
 cp ${tmp}/release/miniserve ${out}/bin/
+{% endblock %}
+
+{% block cargo_ver %}
+v3
 {% endblock %}
