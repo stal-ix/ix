@@ -5,7 +5,7 @@ https://github.com/pg83/bcrypt/archive/e8270a3fa761d9301199f828af90a67e2721c7a8.
 {% endblock %}
 
 {% block go_sha %}
-936b3d97f5f378ba986e6c24415223ddeed0e12b186a4211c4ed647c6f91de75
+bc6036393794c97638c3510ba69381bb7087b0335281f652bddfc76c2cb263e6
 {% endblock %}
 
 {% block go_tool %}
@@ -15,4 +15,8 @@ bin/go/lang/22
 {% block install %}
 mkdir ${out}/bin
 cp bcrypt ${out}/bin/
+{% endblock %}
+
+{% block go_version %}
+v3
 {% endblock %}
