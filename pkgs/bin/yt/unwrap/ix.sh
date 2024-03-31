@@ -9,7 +9,7 @@ c39e2e8a9a262feadb55bb9e13c42b3af65784b9
 {% endblock %}
 
 {% block git_sha %}
-f45032e5557236d782e4cf8fee2021ea6f8197989486955ffdafd18bc1a48bd3
+17ca48e0fac79e774d8a01109db20cb8e73a33b95fac5b1ba89a4b2c9baea427
 {% endblock %}
 
 {% block task_pool %}full{% endblock %}
@@ -77,4 +77,8 @@ ytserver-all
 {% block install %}
 mkdir ${out}/bin
 cp ${tmp}/obj/yt/yt/server/all/ytserver-all ${out}/bin/
+{% endblock %}
+
+{% block git_version %}
+v3
 {% endblock %}
