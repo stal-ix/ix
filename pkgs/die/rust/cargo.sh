@@ -16,7 +16,7 @@ bin/cargo/whatfeatures
 
 {% block unpack %}
 mkdir src; cd src
-stable_unpack_2 ${src}/*lz4
+stable_unpack_{{self.cargo_ver().strip()}} ${src}/*lz4
 rust_devendor vendored
 {% endblock %}
 

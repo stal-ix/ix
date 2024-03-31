@@ -1,0 +1,7 @@
+#!/usr/bin/env sh
+
+set -xue
+
+ser "${3}" > "${2}"
+sha256sum "${2}"
+echo "${1}  ${2}" | sha256sum -cw

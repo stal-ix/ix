@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://github.com/util-linux/util-linux/archive/refs/tags/v2.39.1.tar.gz
-sha:d8db91a48ba96f11a981a39e75e395af9aad7d65e08a8601680abfdd3af5c2bd
+https://github.com/util-linux/util-linux/archive/refs/tags/v2.40.tar.gz
+sha:f7ff8573289313e38ee3378cbc2938f34444a8cb546e1236e46151834be69784
 {% endblock %}
 
 {% block lib_deps %}
@@ -11,6 +11,7 @@ lib/kernel
 {% endblock %}
 
 {% block bld_tool %}
+bld/flex
 bld/bash
 bld/bison
 bld/gettext

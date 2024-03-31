@@ -9,11 +9,11 @@ ed7a302fa78717ac496aeb2f2bd3256618f07d99
 {% endblock %}
 
 {% block git_sha %}
-cbba859b4d8d576a58dc569747bd977f94a413f9c4c61037909fceaccadb7555
+7a2d27130c9f140be75239b9a89b4edb797338fd280992892a20b3007e2480c8
 {% endblock %}
 
 {% block git_version %}
-v2
+v3
 {% endblock %}
 
 {% block bld_libs %}

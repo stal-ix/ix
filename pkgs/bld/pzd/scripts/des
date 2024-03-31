@@ -1,0 +1,5 @@
+#!/usr/bin/env sh
+
+set -xue
+
+zstd --no-sparse -d "${1}" -o /dev/stdout | (mkdir -p "${2}"; cd "${2}"; des_py)

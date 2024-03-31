@@ -9,11 +9,11 @@ https://github.com/AppImage/AppImageKit
 {% endblock %}
 
 {% block git_sha %}
-cee7579d205ce4014952fdf634742113900da1d93f3b1a554baaed08f3f3c747
+e6653329128be46307c891f2040cc4cb1a2005408ffc97f779c06e35bf00ba33
 {% endblock %}
 
 {% block git_version %}
-v2
+v3
 {% endblock %}
 
 {% block bld_libs %}

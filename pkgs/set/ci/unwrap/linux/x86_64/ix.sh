@@ -34,6 +34,9 @@
 #bin/tex/studio
 #bin/rr
 #bin/gendesk
+#bin/qemu/8/1
+#bin/qemu/8/2
+#bin/qemu/8/0
 #}
 
 {% block run_deps %}
@@ -116,7 +119,6 @@ bin/d/spy
 bin/dbus/broker
 bin/acpi/ca
 bin/quaternion
-bin/qemu/8/2
 bin/ssh/3
 bin/go/muks
 bin/nheko
@@ -160,7 +162,6 @@ bin/ip/get
 bin/clang/17
 bin/sslh
 bin/coreutils/9/4
-bin/qemu/8/1
 bin/weechat
 bin/python/9
 bin/xml/b
@@ -178,9 +179,6 @@ bin/ip/route2
 bin/sddm
 bin/ghost/script
 bin/havoc
-bin/qemu/8/2
-bin/qemu/8/1
-bin/qemu/8/0
 bin/npm
 bin/protoc/c
 bin/systool

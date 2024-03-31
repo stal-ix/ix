@@ -21,7 +21,7 @@ bld/stable/pack
 {% block build %}
 npm install
 rm -rf undefined
-stable_pack_2 {{sum}} ${tmp}/npm_2.tar.lz4 .
+stable_pack_v2 {{sum}} ${tmp}/npm_2.tar.lz4 .
 {% endblock %}
 
 {% block install %}

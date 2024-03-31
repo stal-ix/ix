@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://github.com/intel/thermal_daemon/archive/refs/tags/v2.5.5.tar.gz
-sha:d5d6d8213fcfd6f3cf073b993225699154b1e22f6053332830231da5038ce8a9
+https://github.com/intel/thermal_daemon/archive/refs/tags/v2.5.7.tar.gz
+sha:b7df06bbd813bf039893a533d1e30073102a2494f6fdd432ae7c05f376c7cc15
 {% endblock %}
 
 {% block bld_libs %}
