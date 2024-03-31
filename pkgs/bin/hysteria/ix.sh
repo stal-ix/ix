@@ -5,7 +5,7 @@ https://github.com/apernet/hysteria/archive/refs/tags/app/v2.4.0.tar.gz
 {% endblock %}
 
 {% block go_sha %}
-e168302d818f416af9f59ffd88f1f4ffa80d70f98e651f422eeaca0b5bd23364
+61cb10d9daa81224b21003b33d85546efa720edb6bf18e9c0baa0e8cfde471a0
 {% endblock %}
 
 {% block unpack %}
@@ -20,4 +20,8 @@ cp app ${out}/bin/
 
 {% block setup_target_flags %}
 export GOWORK=off
+{% endblock %}
+
+{% block go_version %}
+v3
 {% endblock %}
