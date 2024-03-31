@@ -9,7 +9,7 @@ https://github.com/quotient-im/Quaternion
 {% endblock %}
 
 {% block git_sha %}
-0b78df78a6c1e967b2d973d5089e1aab24d3a91be4d0d11c8f971246af370a81
+244084db9a99df244a9be714d1456d3a641b159d10a67dfb50c4ed22672f8ed3
 {% endblock %}
 
 {% block bld_libs %}
@@ -27,4 +27,8 @@ lib/qt/6/declarative
 bld/qt/6
 bld/qt/6/tools
 bld/qt/6/tools/qml
+{% endblock %}
+
+{% block git_version %}
+v3
 {% endblock %}
