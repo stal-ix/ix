@@ -9,7 +9,7 @@ https://github.com/Kufat/st-sdl
 {% endblock %}
 
 {% block git_sha %}
-c09117fc90a33328ad0a5683edf5931b0901b25ab5d18084183d6166bdf00bf5
+aa78e4a191f3b3b181dd9a58ed142948a026899dcfbb2671bd4ce6d287be5562
 {% endblock %}
 
 {% block bld_libs %}
@@ -50,4 +50,8 @@ find . -type f | while read l; do
 done
 
 sed -e 's|.*tic -s.*||' -i Makefile
+{% endblock %}
+
+{% block git_version %}
+v3
 {% endblock %}
