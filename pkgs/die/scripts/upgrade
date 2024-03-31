@@ -58,20 +58,21 @@ def fix(n):
     with open(pn, 'w') as f:
         f.write(nd)
 
-    try:
-        out = call(sys.executable, os.environ['IX_BINARY'], 'build', n, '--rebuild=' + str(time.time()).replace('.', '_')).decode()
+    out = call(sys.executable, os.environ['IX_BINARY'], 'build', n, '--rebuild=' + str(time.time()).replace('.', '_')).decode()
 
-        for l in out.split('\n'):
-            if '  ' in l:
-                if '.pzd' in l:
-                    if 'echo ' not in l:
-                        sha = parse_sha(l)
+    for l in out.split('\n'):
+        if '  ' in l:
+            if '.pzd' in l:
+                if 'echo ' not in l:
+                    sha = parse_sha(l)
 
-        with open(pn, 'w') as f:
-            f.write(subst_sha(nd, sha))
-    except Exception as e:
-        print(call('git', 'checkout', pn))
-        raise e
+    res = subst_sha(nd, sha)
+
+    if '111111111111111111111111111111111' in res:
+        raise Exception('shit happen')
+
+    with open(pn, 'w') as f:
+        f.write(res)
 
 try:
     fix(sys.argv[1])
