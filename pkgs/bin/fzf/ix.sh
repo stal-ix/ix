@@ -5,7 +5,7 @@ https://github.com/junegunn/fzf/archive/refs/tags/0.48.1.tar.gz
 {% endblock %}
 
 {% block go_sha %}
-d2b0efc1b39fc9bf8d24efe129fccbc1e7f1eda65f26d2cec888d9a936251968
+203d9a2c4a6a54ba63c2fbcfca83a211712808632dc1a5a61eabb4464addbf73
 {% endblock %}
 
 {% block go_refine %}
@@ -16,4 +16,8 @@ go mod tidy -compat=1.21
 {% block install %}
 mkdir ${out}/bin
 cp fzf ${out}/bin/
+{% endblock %}
+
+{% block go_version %}
+v3
 {% endblock %}
