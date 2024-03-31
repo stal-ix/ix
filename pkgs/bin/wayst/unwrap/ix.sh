@@ -9,7 +9,7 @@ f8b218eec1af706fd5ae287f5073e6422eb8b6d8
 {% endblock %}
 
 {% block git_sha %}
-0d9bf560e9d35e718aa28ee34908fcfd46f5e4fcbb4fb6ec99eb4c5a1edf2de0
+0c85cfa391e8bd8101875b51d923df9e7c9fe6d94349889252f544a9b5d9a34b
 {% endblock %}
 
 {% block bld_libs %}
@@ -32,4 +32,8 @@ window_protocol=wayland
 {% block install %}
 mkdir ${out}/bin
 {{super()}}
+{% endblock %}
+
+{% block git_version %}
+v3
 {% endblock %}
