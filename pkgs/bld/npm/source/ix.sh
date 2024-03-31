@@ -7,7 +7,7 @@ sha:7a6c27c9c0fe6f39069365c33a93e43f5ae2b09f80943ec9309240f809440128
 
 {% block use_network %}true{% endblock %}
 
-{% set sum %}a7eda19befd096018b45f6b59{% endset %}
+{% set sum %}356ee88ecf8b0f12d6cccd02d3cfc8096af33ce68d5a9a11711e114c74e1221b{% endset %}
 
 {% block predict_outputs %}
 [{"path": "share/npm.pzd", "sum": "{{sum}}"}]
