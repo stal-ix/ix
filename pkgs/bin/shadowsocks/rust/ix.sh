@@ -5,7 +5,7 @@ https://github.com/shadowsocks/shadowsocks-rust/archive/refs/tags/v1.18.1.tar.gz
 {% endblock %}
 
 {% block cargo_sha %}
-38f304ef9005af50263154676df1ef32c4272406538ad4ab3c95856de569e9e8
+5f3539867497ead81df339bf0edeeb950e3ad4290fc7ebcaa7f457a3e1801e29
 {% endblock %}
 
 {% block bld_tool %}
@@ -19,4 +19,8 @@ make PREFIX=${out}/bin TARGET=release install
 
 {% block patch %}
 sed -e "s|target/|${tmp}/|" -i Makefile
+{% endblock %}
+
+{% block cargo_ver %}
+v3
 {% endblock %}
