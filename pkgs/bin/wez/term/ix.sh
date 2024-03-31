@@ -5,7 +5,7 @@ https://github.com/wez/wezterm/archive/refs/tags/20230712-072601-f4abf8fd.tar.gz
 {% endblock %}
 
 {% block cargo_sha %}
-bde258346995542e0b396aa91dcb6f6de3a3324da1f8548410ab7236c4f84941
+072cbba6708e59214335ee2e79ddf5e857d9dc3486798218cf1d40dbeaed6b95
 {% endblock %}
 
 {% block bld_libs %}
@@ -29,4 +29,8 @@ lib/xkb/common/dl
 {% block install %}
 mkdir ${out}/bin
 cp target/release/wezterm ${out}/bin/
+{% endblock %}
+
+{% block cargo_ver %}
+v3
 {% endblock %}
