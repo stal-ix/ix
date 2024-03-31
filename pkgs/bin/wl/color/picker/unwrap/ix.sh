@@ -9,7 +9,7 @@ ec88e430ba4c1e06df50f07def1772a7e247edcb
 {% endblock %}
 
 {% block git_sha %}
-c04e49dd0b6a8c0d8f7efcc881b8dfa2aead2f61ec5f53e49d1219cc16fa8a68
+730b2f208e5b84f6fa841b52da3264d746d50d0bab027a1cbad953db3365b5a8
 {% endblock %}
 
 {% block install %}
@@ -21,4 +21,8 @@ cp wl-color-picker.sh ${out}/bin/wl-color-picker
 cp wl-color-picker.png ${out}/share/icons/
 cp wl-color-picker.svg ${out}/share/icons/hicolor/scalable/apps/
 cp wl-color-picker.desktop ${out}/share/applications/
+{% endblock %}
+
+{% block git_version %}
+v3
 {% endblock %}
