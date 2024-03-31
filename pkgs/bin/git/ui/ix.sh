@@ -5,7 +5,7 @@ https://github.com/extrawurst/gitui/archive/refs/tags/v0.24.3.tar.gz
 {% endblock %}
 
 {% block cargo_sha %}
-45b34ab5bee64e4717b54e67692bfc41e828f7e910ddfa7ebd5e2ce47841328c
+2eeb5287086e33f1b38474fed9d320815f6bc12747ebff7d50b4f29351b9e80a
 {% endblock %}
 
 {% block bld_libs %}
@@ -19,4 +19,8 @@ lib/oniguruma
 {% block install %}
 mkdir ${out}/bin
 cp ${tmp}/release/gitui ${out}/bin/
+{% endblock %}
+
+{% block cargo_ver %}
+v3
 {% endblock %}
