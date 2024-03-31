@@ -12,10 +12,14 @@ a9205620b19e0c25cf9f6165b0b3937edf9ce62e
 {% endblock %}
 
 {% block git_sha %}
-b676c7be6a38182cb5144f3ab70373e2698e6c9dde467f76d44623927a52b4b8
+2d6e6fcc8c2d285f22e18bafdd84b2250976e0d316f6662ed51f2b6401897bad
 {% endblock %}
 
 {% block bld_libs %}
 {{super()}}
 lib/placebo/6
+{% endblock %}
+
+{% block git_version %}
+v3
 {% endblock %}
