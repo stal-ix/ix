@@ -53,8 +53,7 @@ def fix(n):
     nd = upgr(data)
 
     if not nd or nd == data:
-        print('nothing to do')
-        return
+        raise Exception('nothing to do')
 
     with open(pn, 'w') as f:
         f.write(nd)
@@ -74,4 +73,8 @@ def fix(n):
         print(call('git', 'checkout', pn))
         raise e
 
-fix(sys.argv[1])
+try:
+    fix(sys.argv[1])
+except Exception as e:
+    print(f'{e}')
+    sys.exit(1)
