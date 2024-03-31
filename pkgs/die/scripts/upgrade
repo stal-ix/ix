@@ -1,0 +1,72 @@
+#!/usr/bin/env python3
+
+import os
+import sys
+import time
+import subprocess
+
+VER = '''
+{% block git_version %}
+v3
+{% endblock %}
+'''
+
+GOOD = frozenset('0123456789abcdef')
+
+def is_sha(x):
+    if len(x) != 64:
+        return False
+
+    for ch in x:
+        if ch not in GOOD:
+            return False
+
+    return True
+
+def parse_sha(data):
+    for l in data.split('\n'):
+        for x in l.split(' '):
+            if is_sha(x):
+                return x
+
+    raise Exception('no sha')
+
+def subst_sha(data, to):
+    return data.replace(parse_sha(data), to)
+
+def upgr(data):
+    if 'git_repo' in data and 'git_version' not in data:
+        return subst_sha(data + VER, '1' * 64)
+
+def call(*cmd):
+    return subprocess.check_output(list(cmd), stderr=subprocess.STDOUT)
+
+def fix(n):
+    pn = 'pkgs/' + n + '/ix.sh'
+
+    with open(pn) as f:
+        data = f.read()
+
+    nd = upgr(data)
+
+    if not nd or nd == data:
+        print('nothing to do')
+        return
+
+    with open(pn, 'w') as f:
+        f.write(nd)
+
+    try:
+        out = call(sys.executable, os.environ['IX_BINARY'], 'build', n, '--rebuild', str(time.time()))
+
+        print(out)
+
+        sha = parse_sha(out)
+
+        with open(pn, 'w') as f:
+            f.write(subst_sha(nd, sha))
+    except Exception as e:
+        print(call('git', 'checkout', pn))
+        raise e
+
+fix(sys.argv[1])

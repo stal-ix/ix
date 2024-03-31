@@ -24,4 +24,3 @@ cc monosrc/mono.c -o wak
 mkdir ${out}/bin
 cp wak ${out}/bin/
 {% endblock %}
-
