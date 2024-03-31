@@ -9,7 +9,7 @@ a5724ea5b0b00147109b0605c377f1e54c353ba2
 {% endblock %}
 
 {% block git_sha %}
-18f526731823d5a87dcc25d38f0d5cb3248abe026069cbc5ef73a2558fee0d36
+35e08d63b0496d724a80102cf6ea917eff135de327bfaaaebca24f392a2a074b
 {% endblock %}
 
 {% block lib_deps %}
@@ -20,4 +20,8 @@ lib/google/test
 
 {% block cmake_flags %}
 RC_ENABLE_GTEST=ON
+{% endblock %}
+
+{% block git_version %}
+v3
 {% endblock %}
