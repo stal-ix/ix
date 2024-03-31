@@ -9,7 +9,7 @@ https://github.com/TelegramMessenger/rlottie
 {% endblock %}
 
 {% block git_sha %}
-e56a0e69d14b6545bbc4b363c1125c5b6c027321c9f59d721c24271aada72436
+f6bc7ad3b9ff7f7a1b820999de8dcf2d5f8104dc3bb66346adb99cb1ff3e591b
 {% endblock %}
 
 {% block lib_deps %}
@@ -24,4 +24,8 @@ shut_up
 {% block cmake_flags %}
 LOTTIE_MODULE=OFF
 LIB_INSTALL_DIR=${out}/lib
+{% endblock %}
+
+{% block git_version %}
+v3
 {% endblock %}
