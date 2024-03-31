@@ -31,7 +31,3 @@ done
 {{super()}}
 shut_up
 {% endblock %}
-
-{% block git_version %}
-v3
-{% endblock %}

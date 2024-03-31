@@ -46,7 +46,3 @@ sed -e 's|.*setAuxDir.*saved_auxdir.*||' -i pygnulib/GLTestDir.py
 {% block env %}
 export src=${out}/share
 {% endblock %}
-
-{% block git_version %}
-v3
-{% endblock %}

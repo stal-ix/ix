@@ -61,7 +61,3 @@ sed -e 's|/usr||g' -i Makefile
 {% block make_flags %}
 DESTDIR=${out}
 {% endblock %}
-
-{% block git_version %}
-v3
-{% endblock %}

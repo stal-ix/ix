@@ -51,7 +51,3 @@ done
 
 sed -e 's|.*tic -s.*||' -i Makefile
 {% endblock %}
-
-{% block git_version %}
-v3
-{% endblock %}

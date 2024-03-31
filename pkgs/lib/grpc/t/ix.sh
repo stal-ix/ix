@@ -12,10 +12,6 @@ v1.62.1
 07e63e9f8c302b60b59df56fcbad46763952bddbbd7058c56b0caeccc88a2808
 {% endblock %}
 
-{% block git_version %}
-v3
-{% endblock %}
-
 {% block lib_deps %}
 lib/c
 lib/z

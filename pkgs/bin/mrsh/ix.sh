@@ -20,7 +20,3 @@ lib/readline
 {% block patch %}
 sed -e 's|elif host_machine.*|elif 1 == 1|' -i meson.build
 {% endblock %}
-
-{% block git_version %}
-v3
-{% endblock %}

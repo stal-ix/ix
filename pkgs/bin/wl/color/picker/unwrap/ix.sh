@@ -22,7 +22,3 @@ cp wl-color-picker.png ${out}/share/icons/
 cp wl-color-picker.svg ${out}/share/icons/hicolor/scalable/apps/
 cp wl-color-picker.desktop ${out}/share/applications/
 {% endblock %}
-
-{% block git_version %}
-v3
-{% endblock %}

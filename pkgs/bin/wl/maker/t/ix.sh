@@ -12,10 +12,6 @@ ed7a302fa78717ac496aeb2f2bd3256618f07d99
 7a2d27130c9f140be75239b9a89b4edb797338fd280992892a20b3007e2480c8
 {% endblock %}
 
-{% block git_version %}
-v3
-{% endblock %}
-
 {% block bld_libs %}
 lib/c
 lib/drm

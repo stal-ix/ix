@@ -79,7 +79,3 @@ wrap_cc
 {{super()}}
 rm -rf ${out}/bin/imhex-updater
 {% endblock %}
-
-{% block git_version %}
-v3
-{% endblock %}

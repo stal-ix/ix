@@ -29,7 +29,3 @@ ckati
 mkdir ${out}/bin
 cp ckati ${out}/bin/
 {% endblock %}
-
-{% block git_version %}
-v3
-{% endblock %}

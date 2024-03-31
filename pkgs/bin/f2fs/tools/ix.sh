@@ -15,4 +15,3 @@ lib/bsd/overlay
 {% block cpp_defines %}
 aligned_alloc=memalign
 {% endblock %}
-

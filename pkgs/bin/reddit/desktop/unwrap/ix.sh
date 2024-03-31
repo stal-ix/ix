@@ -42,7 +42,3 @@ ENABLE_TESTS=OFF
 cd ${out}/bin
 ln -s ../share/reddit_desktop/fonts ./
 {% endblock %}
-
-{% block git_version %}
-v3
-{% endblock %}

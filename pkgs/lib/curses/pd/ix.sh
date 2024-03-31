@@ -33,7 +33,3 @@ ln -s libpdcurses.a libcurses.a
 {% block env %}
 export CPPFLAGS="-I${out}/include/xcurses \${CPPFLAGS}"
 {% endblock %}
-
-{% block git_version %}
-v3
-{% endblock %}

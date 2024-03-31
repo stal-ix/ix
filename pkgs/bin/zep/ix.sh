@@ -21,7 +21,3 @@ lib/c++
 BUILD_IMGUI=ON
 BUILD_TESTS=OFF
 {% endblock %}
-
-{% block git_version %}
-v3
-{% endblock %}

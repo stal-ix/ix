@@ -40,7 +40,3 @@ ENABLE_UNICODE_DATABASE_DOWNLOAD=OFF
 {% block patch %}
 chmod +x ../Userland/Libraries/LibWeb/Scripts/GenerateStyleSheetSource.sh
 {% endblock %}
-
-{% block git_version %}
-v3
-{% endblock %}

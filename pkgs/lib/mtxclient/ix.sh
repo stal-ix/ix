@@ -12,10 +12,6 @@ https://github.com/Nheko-Reborn/mtxclient
 cab195dc2fb83593b37356d244ff0a101f2e821377277330176a26ba767a880a
 {% endblock %}
 
-{% block git_version %}
-v3
-{% endblock %}
-
 {% block lib_deps %}
 lib/c
 lib/re2

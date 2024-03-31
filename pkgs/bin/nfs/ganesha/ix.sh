@@ -50,7 +50,3 @@ sed -e 's|typedef.*_t;||' -i include/nlm4.h
 shut_up
 wrap_cc
 {% endblock %}
-
-{% block git_version %}
-v3
-{% endblock %}

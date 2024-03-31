@@ -29,7 +29,3 @@ mkdir ${out}/lib ${out}/include
 cp *.a ${out}/lib/
 cp *.h ${out}/include/
 {% endblock %}
-
-{% block git_version %}
-v3
-{% endblock %}

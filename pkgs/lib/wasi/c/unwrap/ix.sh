@@ -50,7 +50,3 @@ rm *.o
 export CPPFLAGS="-isystem ${out}/include -D_WASI_EMULATED_SIGNAL -D_WASI_EMULATED_PROCESS_CLOCKS -D_WASI_EMULATED_MMAN \${CPPFLAGS}"
 export LDFLAGS="-static \${LDFLAGS}"
 {% endblock %}
-
-{% block git_version %}
-v3
-{% endblock %}

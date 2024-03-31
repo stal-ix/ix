@@ -39,7 +39,3 @@ USRLIBDIR=${out}/lib
 BINDIR=${out}/bin
 ETCDIR=${out}/etc
 {% endblock %}
-
-{% block git_version %}
-v3
-{% endblock %}

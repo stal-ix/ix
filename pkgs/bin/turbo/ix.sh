@@ -26,7 +26,3 @@ TURBO_OPTIMIZE_BUILD=OFF
 TURBO_USE_SYSTEM_DEPS=ON
 TURBO_USE_SYSTEM_TVISION=ON
 {% endblock %}
-
-{% block git_version %}
-v3
-{% endblock %}

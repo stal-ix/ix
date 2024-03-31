@@ -21,7 +21,3 @@ lib/sd/bus/c++
 {% block bld_tool %}
 bin/sd/bus/codegen
 {% endblock %}
-
-{% block git_version %}
-v3
-{% endblock %}

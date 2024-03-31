@@ -22,7 +22,3 @@ lib/omp
 {% block build_flags %}
 wrap_cc
 {% endblock %}
-
-{% block git_version %}
-v3
-{% endblock %}

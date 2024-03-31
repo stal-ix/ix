@@ -12,4 +12,3 @@ lib/c/util/stdaux
 {% block build_flags %}
 wrap_cc
 {% endblock %}
-

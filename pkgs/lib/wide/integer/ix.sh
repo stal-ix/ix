@@ -16,7 +16,3 @@ d4ab8f42402d26bade2901fcc83c58a2bb9c5037
 lib/c
 lib/c++
 {% endblock %}
-
-{% block git_version %}
-v3
-{% endblock %}

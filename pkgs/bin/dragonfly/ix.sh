@@ -58,7 +58,3 @@ find . -type f -name CMakeLists.txt | while read l; do
         -i ${l}
 done
 {% endblock %}
-
-{% block git_version %}
-v3
-{% endblock %}

@@ -71,7 +71,3 @@ export CXXFLAGS="-std=c++17 ${CXXFLAGS}"
 {% block build_flags %}
 shut_up
 {% endblock %}
-
-{% block git_version %}
-v3
-{% endblock %}

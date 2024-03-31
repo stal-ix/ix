@@ -19,7 +19,3 @@ lib/c
 {% block configure %}
 sh ./configure --prefix=${out} --disable-x11
 {% endblock %}
-
-{% block git_version %}
-v3
-{% endblock %}

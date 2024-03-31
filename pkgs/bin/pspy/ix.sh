@@ -12,4 +12,3 @@ https://github.com/DominicBreuker/pspy/archive/refs/tags/v1.2.1.tar.gz
 mkdir ${out}/bin
 cp pspy ${out}/bin/
 {% endblock %}
-

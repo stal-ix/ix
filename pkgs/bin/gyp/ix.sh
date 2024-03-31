@@ -28,7 +28,3 @@ chmod +x ${out}/bin/gyp
 {% block test %}
 ${out}/bin/gyp --help
 {% endblock %}
-
-{% block git_version %}
-v3
-{% endblock %}

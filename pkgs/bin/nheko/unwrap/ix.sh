@@ -46,7 +46,3 @@ bld/qt/6
 bld/qt/6/tools
 bld/qt/6/tools/qml
 {% endblock %}
-
-{% block git_version %}
-v3
-{% endblock %}

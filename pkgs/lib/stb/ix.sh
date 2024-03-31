@@ -20,7 +20,3 @@ lib/c
 mkdir ${out}/include
 cp *.h ${out}/include/
 {% endblock %}
-
-{% block git_version %}
-v3
-{% endblock %}

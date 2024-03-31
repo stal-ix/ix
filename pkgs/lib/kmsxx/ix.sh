@@ -18,7 +18,3 @@ lib/c++
 lib/drm
 lib/fmt
 {% endblock %}
-
-{% block git_version %}
-v3
-{% endblock %}

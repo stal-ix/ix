@@ -19,7 +19,3 @@ a9205620b19e0c25cf9f6165b0b3937edf9ce62e
 {{super()}}
 lib/placebo/6
 {% endblock %}
-
-{% block git_version %}
-v3
-{% endblock %}

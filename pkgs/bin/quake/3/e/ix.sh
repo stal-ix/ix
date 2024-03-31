@@ -37,7 +37,3 @@ mkdir ${out}/bin
 cp $(find ${tmp} -type f -name quake3e) ${out}/bin/
 cp $(find ${tmp} -type f -name quake3e.ded) ${out}/bin/
 {% endblock %}
-
-{% block git_version %}
-v3
-{% endblock %}

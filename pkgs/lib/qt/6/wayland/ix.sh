@@ -21,4 +21,3 @@ QT_FEATURE_wayland_compositor_quick=ON
 zwp_linux_dmabuf_v1_interface
 zwp_linux_buffer_params_v1_interface
 {% endblock %}
-

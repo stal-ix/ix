@@ -39,7 +39,3 @@ install-lib-static
 {% block configure %}
 bash ./configure --prefix=${out}
 {% endblock %}
-
-{% block git_version %}
-v3
-{% endblock %}

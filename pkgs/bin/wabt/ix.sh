@@ -26,7 +26,3 @@ bld/python
 BUILD_TESTS=OFF
 USE_SYSTEM_GTEST=ON
 {% endblock %}
-
-{% block git_version %}
-v3
-{% endblock %}

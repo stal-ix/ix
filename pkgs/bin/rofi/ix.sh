@@ -32,7 +32,3 @@ bld/wayland
 {% block meson_flags %}
 xcb=disabled
 {% endblock %}
-
-{% block git_version %}
-v3
-{% endblock %}

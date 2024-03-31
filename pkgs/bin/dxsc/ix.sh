@@ -48,7 +48,3 @@ LLVM_INCLUDE_TESTS=OFF
 >${tmp}/obj/bin/llvm-as
 >${tmp}/obj/bin/llvm-dis
 {% endblock %}
-
-{% block git_version %}
-v3
-{% endblock %}

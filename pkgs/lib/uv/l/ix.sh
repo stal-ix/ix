@@ -24,7 +24,3 @@ lib/c
 lib/uv
 lib/lua
 {% endblock %}
-
-{% block git_version %}
-v3
-{% endblock %}

@@ -52,7 +52,3 @@ NETNS_RUN_DIR=${out}/var/run/iproute2
 NETNS_ETC_DIR=${out}/etc/netns
 ARPDDIR=${out}/var/run/arpd
 {% endblock %}
-
-{% block git_version %}
-v3
-{% endblock %}

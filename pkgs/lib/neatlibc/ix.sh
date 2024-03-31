@@ -35,7 +35,3 @@ export CFLAGS="-fno-builtin ${CFLAGS}"
 export CPPFLAGS="-fno-pic -fno-pie -isystem ${out}/include \${CPPFLAGS}"
 export LDFLAGS="-static \${LDFLAGS}"
 {% endblock %}
-
-{% block git_version %}
-v3
-{% endblock %}

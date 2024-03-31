@@ -27,7 +27,3 @@ cp *.a ${out}/lib/
 cp *.pc ${out}/lib/pkgconfig/
 sed -e "s|/usr|${out}|" -i ${out}/lib/pkgconfig/iniparser.pc
 {% endblock %}
-
-{% block git_version %}
-v3
-{% endblock %}

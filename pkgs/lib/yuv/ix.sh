@@ -23,7 +23,3 @@ lib/shim/fake/pkg(pkg_name=libyuv,pkg_ver=100.0.0)
 {% block build_flags %}
 wrap_cc
 {% endblock %}
-
-{% block git_version %}
-v3
-{% endblock %}

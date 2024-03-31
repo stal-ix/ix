@@ -33,7 +33,3 @@ cd ${out}
 mv usr/* ./
 rm -r usr
 {% endblock %}
-
-{% block git_version %}
-v3
-{% endblock %}

@@ -22,4 +22,3 @@ bash_completion=false
 {% block bld_tool %}
 bld/glib
 {% endblock %}
-

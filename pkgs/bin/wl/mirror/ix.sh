@@ -22,7 +22,3 @@ lib/drivers/3d
 {% block bld_tool %}
 bld/wayland
 {% endblock %}
-
-{% block git_version %}
-v3
-{% endblock %}

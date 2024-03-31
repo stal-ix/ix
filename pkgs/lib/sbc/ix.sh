@@ -20,7 +20,3 @@ lib/sndfile
 {% block bld_libs %}
 lib/kernel
 {% endblock %}
-
-{% block git_version %}
-v3
-{% endblock %}

@@ -78,7 +78,3 @@ ytserver-all
 mkdir ${out}/bin
 cp ${tmp}/obj/yt/yt/server/all/ytserver-all ${out}/bin/
 {% endblock %}
-
-{% block git_version %}
-v3
-{% endblock %}

@@ -21,7 +21,3 @@ lib/google/test
 {% block cmake_flags %}
 RC_ENABLE_GTEST=ON
 {% endblock %}
-
-{% block git_version %}
-v3
-{% endblock %}

@@ -25,7 +25,3 @@ shut_up
 LOTTIE_MODULE=OFF
 LIB_INSTALL_DIR=${out}/lib
 {% endblock %}
-
-{% block git_version %}
-v3
-{% endblock %}

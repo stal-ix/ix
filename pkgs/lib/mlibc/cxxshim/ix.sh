@@ -15,7 +15,3 @@ https://github.com/managarm/cxxshim
 {% block meson_flags %}
 install_headers=true
 {% endblock %}
-
-{% block git_version %}
-v3
-{% endblock %}

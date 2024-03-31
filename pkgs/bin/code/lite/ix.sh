@@ -54,7 +54,3 @@ sys/types.h
 {% block cmake_flags %}
 CL_PREFIX=${out}
 {% endblock %}
-
-{% block git_version %}
-v3
-{% endblock %}

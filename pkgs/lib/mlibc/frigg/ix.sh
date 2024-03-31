@@ -19,7 +19,3 @@ build_tests=disabled
 {% block bld_libs %}
 lib/musl/pure
 {% endblock %}
-
-{% block git_version %}
-v3
-{% endblock %}

@@ -12,10 +12,6 @@ https://gn.googlesource.com/gn
 df85614c3baccb8ef74a0211dae9bd9a9fe9281d413984466aa7514e6c085ee7
 {% endblock %}
 
-{% block git_version %}
-v3
-{% endblock %}
-
 {% block bld_libs %}
 lib/c
 lib/c++

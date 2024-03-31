@@ -79,7 +79,3 @@ base64 -d << EOF > src/server/rate_estimator.c
 EOF
 cat src/server/rate_estimator.c >> src/server/linear_resampler.c
 {% endblock %}
-
-{% block git_version %}
-v3
-{% endblock %}

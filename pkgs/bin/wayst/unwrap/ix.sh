@@ -33,7 +33,3 @@ window_protocol=wayland
 mkdir ${out}/bin
 {{super()}}
 {% endblock %}
-
-{% block git_version %}
-v3
-{% endblock %}
