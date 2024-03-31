@@ -5,7 +5,7 @@ https://github.com/xxxserxxx/gotop/archive/refs/tags/v4.2.0.tar.gz
 {% endblock %}
 
 {% block go_sha %}
-9ff20cfc28a30f0cc6cef7284f0057897f99831e5db7407b998192dfb4635cfd
+f3e38a9d9ee7bdca0bb2a233b90a0cb3ecb8b975965a8d16293c74ead0aa0b5f
 {% endblock %}
 
 {% block go_refine %}
@@ -22,4 +22,8 @@ cd cmd/gotop
 {% block install %}
 mkdir ${out}/bin
 cp gotop ${out}/bin/
+{% endblock %}
+
+{% block go_version %}
+v3
 {% endblock %}
