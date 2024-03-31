@@ -9,7 +9,7 @@ e10e5a48af3808a4857a158fab87164309cf4698
 {% endblock %}
 
 {% block git_sha %}
-7a569e8d89356eed31672eba787663f3888ab6d1ef4c07d261655f344fba0dd3
+c93ad5af12e52ec419fc8b20696b27c967bd920a434415e23720a4069519ae93
 {% endblock %}
 
 {% block lib_deps %}
@@ -45,4 +45,8 @@ sed -e 's|.*setAuxDir.*saved_auxdir.*||' -i pygnulib/GLTestDir.py
 
 {% block env %}
 export src=${out}/share
+{% endblock %}
+
+{% block git_version %}
+v3
 {% endblock %}
