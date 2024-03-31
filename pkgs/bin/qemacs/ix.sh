@@ -9,7 +9,7 @@ https://github.com/qemacs/qemacs
 {% endblock %}
 
 {% block git_sha %}
-2601362b6c56fa9985ed1cbad3729d264206f5fc0cd7d053e05f1c4199577a59
+b0159b341c724e4e5e73bb45b31a3b4241056614e73de73d24db12a92ff5a3b1
 {% endblock %}
 
 {% block bld_libs %}
@@ -18,4 +18,8 @@ lib/c
 
 {% block configure %}
 sh ./configure --prefix=${out} --disable-x11
+{% endblock %}
+
+{% block git_version %}
+v3
 {% endblock %}
