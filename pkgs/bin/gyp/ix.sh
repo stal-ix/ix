@@ -9,7 +9,7 @@ d6c5dd51dc3a60bf4ff32a5256713690a1a10376
 {% endblock %}
 
 {% block git_sha %}
-f2a5d728e0c030cec335d49ba88eda2a1555646b63256ebfdf2612492a145537
+7a6b73d97878eeb2ae967a9bb5b62bea7529f791007430a322a98c12f04bf99f
 {% endblock %}
 
 {% block bld_tool %}
@@ -27,4 +27,8 @@ chmod +x ${out}/bin/gyp
 
 {% block test %}
 ${out}/bin/gyp --help
+{% endblock %}
+
+{% block git_version %}
+v3
 {% endblock %}
