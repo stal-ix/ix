@@ -9,7 +9,7 @@ https://github.com/ec-/Quake3e
 {% endblock %}
 
 {% block git_sha %}
-25053f09e61068463a81f220077d28efe5fd84dea70c705eff52b4d660f9afcc
+a08119cae889dacd8024b6b6091b0d589fe79285b2ec8fb170af3ab4ddddd051
 {% endblock %}
 
 {% block bld_libs %}
@@ -36,4 +36,8 @@ sed -e 's|(.*checksum != pak_check.*)|(0)|' -i code/qcommon/files.c
 mkdir ${out}/bin
 cp $(find ${tmp} -type f -name quake3e) ${out}/bin/
 cp $(find ${tmp} -type f -name quake3e.ded) ${out}/bin/
+{% endblock %}
+
+{% block git_version %}
+v3
 {% endblock %}
