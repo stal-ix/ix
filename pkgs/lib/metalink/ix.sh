@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://launchpad.net/libmetalink/trunk/libmetalink-0.1.3/+download/libmetalink-0.1.3.tar.xz
-md5:f2c097557e2487313cd0be62d55952de
+https://distfiles.gentoo.org/distfiles/79/libmetalink-0.1.3.tar.bz2
+sha:0753ae1152d970dc3bf327d0ce5cfefeca2f1ab13294b115e64811163a68fd4f
 {% endblock %}
 
 {% block lib_deps %}
