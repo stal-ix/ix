@@ -1078,6 +1078,7 @@ https://github.com/go-git/go-git/archive/refs/tags/v5.4.2.tar.gz
 https://github.com/go-task/task/archive/refs/tags/v3.14.0.tar.gz
 https://github.com/gokcehan/lf/archive/refs/tags/r27.tar.gz
 https://github.com/gokcehan/lf/archive/refs/tags/r31.tar.gz
+https://github.com/gokcehan/lf/archive/refs/tags/r32.tar.gz
 https://github.com/golang/go/archive/refs/tags/go1.19.10.tar.gz
 https://github.com/golang/go/archive/refs/tags/go1.20.7.tar.gz
 https://github.com/golang/go/archive/refs/tags/go1.21.1.tar.gz
