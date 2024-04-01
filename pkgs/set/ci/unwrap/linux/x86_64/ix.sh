@@ -37,6 +37,8 @@
 #}
 
 {% block run_deps %}
+bin/iperf
+bin/iperf/3
 bin/qemu/8/1
 bin/qemu/8/2
 bin/coreutils/9/5
