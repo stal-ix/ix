@@ -10,7 +10,7 @@ EOF
 
 cat << EOF > ${out}/bin/g-ir-scanner
 #!/usr/bin/env sh
-export REALCC=\${CC}
+export REALCC=\${HOST_CC}
 export CC=gircc
 export GI_SCANNER_DISABLE_CACHE=1
 exec g-ir-scanner-bin "\${@}"

@@ -49,8 +49,19 @@ def it_syms():
 dprog = '\n'.join(sorted(frozenset(it_syms())))
 cprog = subprocess.check_output(['dl_stubs'], input=dprog.encode())
 
+def flt_args(a):
+    for x in a:
+        if x.startswith('-l'):
+            pass
+        elif x.startswith('-L'):
+            pass
+        elif x.startswith('-Wl'):
+            pass
+        else:
+            yield x
+
 try:
     subprocess.check_output([comp, '-o', temp, '-c', '-x', 'c', '-'], input=cprog)
-    subprocess.check_output([comp] + args + [temp])
+    subprocess.check_output([comp] + list(flt_args(args)) + [temp])
 finally:
     os.unlink(temp)
