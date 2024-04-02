@@ -1292,6 +1292,7 @@ https://github.com/libarchive/libarchive/archive/refs/tags/v3.7.2.tar.gz
 https://github.com/libass/libass/archive/refs/tags/0.17.1.tar.gz
 https://github.com/libbpf/libbpf/archive/refs/tags/v1.2.2.tar.gz
 https://github.com/libbpf/libbpf/archive/refs/tags/v1.3.0.tar.gz
+https://github.com/libbpf/libbpf/archive/refs/tags/v1.4.0.tar.gz
 https://github.com/libcgroup/libcgroup/releases/download/v2.0.2/libcgroup-2.0.2.tar.gz
 https://github.com/libconfuse/libconfuse/archive/refs/tags/v3.3.tar.gz
 https://github.com/libcxxrt/libcxxrt/archive/fd484be8d1e94a1fcf6bc5c67e5c07b65ada19b6.tar.gz
@@ -1820,6 +1821,7 @@ https://github.com/telegramdesktop/tdesktop/releases/download/v4.14.7/tdesktop-4
 https://github.com/telegramdesktop/tdesktop/releases/download/v4.14.8/tdesktop-4.14.8-full.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v4.14.9/tdesktop-4.14.9-full.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v4.15.0/tdesktop-4.15.0-full.tar.gz
+https://github.com/telegramdesktop/tdesktop/releases/download/v4.15.1/tdesktop-4.15.1-full.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v4.8.10/tdesktop-4.8.10-full.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v4.8.12/tdesktop-4.8.12-full.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v4.9.0/tdesktop-4.9.0-full.tar.gz
