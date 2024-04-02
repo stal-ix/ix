@@ -18,3 +18,7 @@ bld/python
 {{super()}}
 mv ${out}/sbin ${out}/bin
 {% endblock %}
+
+{% block make_flags %}
+etcprefix=${out}
+{% endblock %}
