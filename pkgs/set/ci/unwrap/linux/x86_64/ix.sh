@@ -37,6 +37,7 @@
 #}
 
 {% block run_deps %}
+bin/mcelog
 bin/iperf
 bin/iperf/3
 bin/qemu/8/1
