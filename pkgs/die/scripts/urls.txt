@@ -1422,6 +1422,7 @@ https://github.com/martinvonz/jj/archive/refs/tags/v0.13.0.tar.gz
 https://github.com/marzer/tomlplusplus/archive/refs/tags/v3.4.0.tar.gz
 https://github.com/mauke/unibilium/archive/refs/tags/v2.0.0.tar.gz
 https://github.com/mawww/kakoune/archive/refs/tags/v2023.08.05.tar.gz
+https://github.com/mchehab/rasdaemon/archive/refs/tags/v0.8.0.tar.gz
 https://github.com/mesonbuild/meson/archive/refs/tags/0.60.2.tar.gz
 https://github.com/mesonbuild/meson/archive/refs/tags/0.62.1.tar.gz
 https://github.com/mesonbuild/meson/archive/refs/tags/0.63.2.tar.gz
@@ -1468,6 +1469,7 @@ https://github.com/mozilla/mozjpeg/archive/refs/tags/v4.1.5.tar.gz
 https://github.com/mpv-player/mpv/archive/refs/tags/v0.36.0.tar.gz
 https://github.com/mpv-player/mpv/archive/refs/tags/v0.37.0.tar.gz
 https://github.com/msgpack/msgpack-c/archive/refs/tags/c-6.0.0.tar.gz
+https://github.com/msgpack/msgpack-c/archive/refs/tags/c-6.0.1.tar.gz
 https://github.com/msoos/minisat/archive/refs/tags/2.2.1.tar.gz
 https://github.com/muesli/duf/archive/refs/tags/v0.8.1.tar.gz
 https://github.com/munt/munt/archive/refs/tags/libmt32emu_2_7_1.tar.gz
