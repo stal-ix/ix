@@ -37,5 +37,6 @@ limits.h
 {% endblock %}
 
 {% block setup_target_flags %}
+{# too much memory with llvm toolchain #}
 export LD=ld
 {% endblock %}
