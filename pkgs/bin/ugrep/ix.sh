@@ -25,3 +25,7 @@ find m4/ -type f | while read l; do
     sed -e 's|/usr/|/nowhere/|' -e 's|/usr |/nowhere |' -i ${l}
 done
 {% endblock %}
+
+{% block cpp_missing %}
+sys/types.h
+{% endblock %}
