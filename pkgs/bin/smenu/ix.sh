@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://github.com/p-gen/smenu/archive/refs/tags/v1.3.0.tar.gz
-sha:f69480f98e0bb42f3465a303a109c968ad29e6757a6fb94595ded61b4896ad3e
+https://github.com/p-gen/smenu/archive/refs/tags/v1.4.0.tar.gz
+sha:76b5f2ba181ac4d377fde30181fc6f2ecc7cdef82cf78796c18e59b7a033b9c9
 {% endblock %}
 
 {% block conf_ver %}2/71{% endblock %}

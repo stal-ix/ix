@@ -1545,6 +1545,7 @@ https://github.com/openssh/openssh-portable/archive/refs/tags/V_9_6_P1.tar.gz
 https://github.com/openssh/openssh-portable/archive/refs/tags/V_9_7_P1.tar.gz
 https://github.com/opsengine/cpulimit/archive/refs/tags/v0.2.tar.gz
 https://github.com/p-gen/smenu/archive/refs/tags/v1.3.0.tar.gz
+https://github.com/p-gen/smenu/archive/refs/tags/v1.4.0.tar.gz
 https://github.com/p11-glue/p11-kit/archive/refs/tags/0.24.0.tar.gz
 https://github.com/p7zip-project/p7zip/archive/refs/tags/v17.05.tar.gz
 https://github.com/pciutils/pciutils/archive/refs/tags/v3.10.0.tar.gz
@@ -2246,6 +2247,7 @@ https://mupdf.com/downloads/archive/mupdf-1.23.6-source.tar.gz
 https://mupdf.com/downloads/archive/mupdf-1.23.8-source.tar.gz
 https://mupdf.com/downloads/archive/mupdf-1.23.9-source.tar.gz
 https://mupdf.com/downloads/archive/mupdf-1.24.0-source.tar.gz
+https://mupdf.com/downloads/archive/mupdf-1.24.1-source.tar.gz
 https://nav.dl.sourceforge.net/project/sbcl/sbcl/2.2.1/sbcl-2.2.1-source.tar.bz2
 https://nav.dl.sourceforge.net/project/sbcl/sbcl/2.3.7/sbcl-2.3.7-source.tar.bz2
 https://nav.dl.sourceforge.net/project/sbcl/sbcl/2.3.9/sbcl-2.3.9-source.tar.bz2
