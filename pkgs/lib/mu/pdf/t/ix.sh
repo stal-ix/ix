@@ -1,8 +1,8 @@
 {% extends '//die/c/make.sh' %}
 
 {% block fetch %}
-https://mupdf.com/downloads/archive/mupdf-1.24.0-source.tar.gz
-sha:52f63003a6f4d89f234e9edfb4b4c83d216b83aaeb323cfda6047cb754599ae0
+https://mupdf.com/downloads/archive/mupdf-1.24.1-source.tar.gz
+sha:5840308280a2be7bd55f5e8a0b5a3ab8839689fa389a48a91433dcabd465be4d
 {% endblock %}
 
 {% block lib_deps %}
@@ -37,5 +37,6 @@ limits.h
 {% endblock %}
 
 {% block setup_target_flags %}
+{# too much memory with llvm toolchain #}
 export LD=ld
 {% endblock %}
