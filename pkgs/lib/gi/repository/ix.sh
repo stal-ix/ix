@@ -1,6 +1,6 @@
 {% extends 't/ix.sh' %}
 
-{% block bld_libs %}
+{% block host_libs %}
 {{super()}}
 lib/glib/dl
 lib/gi/repository/bootstrap/dl

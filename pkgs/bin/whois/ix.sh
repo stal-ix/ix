@@ -1,8 +1,8 @@
 {% extends '//die/c/make.sh' %}
 
 {% block fetch %}
-https://github.com/rfc1036/whois/archive/refs/tags/v5.5.21.tar.gz
-sha:4366a1c5e0e3e3e696de833bfa2620f8107d8fec9fc044c4a616eb805b08cc77
+https://github.com/rfc1036/whois/archive/refs/tags/v5.5.22.tar.gz
+sha:b7de4288700951b141420e2b4408f0906eaf4e97409cf5043aee80ef4d31e2b4
 {% endblock %}
 
 {% block bld_libs %}

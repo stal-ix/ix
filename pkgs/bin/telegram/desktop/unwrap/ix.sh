@@ -46,6 +46,11 @@ lib/qt/6/imageformats
 lib/{{allocator}}/trim(delay=3,bytes=30000000)
 {% endblock %}
 
+{% block host_libs %}
+lib/c
+lib/glib
+{% endblock %}
+
 {% block build_flags %}
 shut_up
 {% endblock %}
@@ -136,6 +141,22 @@ mv _ Telegram/SourceFiles/platform/linux/notifications_manager_linux.cpp
 sed -e 's|.*add_cppgir().*||' -i cmake/external/glib/CMakeLists.txt
 
 sed -e 's|DESKTOP_APP_DISABLE_WAYLAND_INTEGRATION|TRUE|' -i Telegram/lib_webview/CMakeLists.txt
+
+find . -type f -name '*.cpp' | while read l; do
+    sed -e 's|GObject::Object|gi::repository::GObject::Object|g' -i ${l}
+done
+
+cat - Telegram/SourceFiles/info/info_content_widget.cpp << EOF > _
+#include "Telegram/lib_ui/ui/effects/numbers_animation.h"
+EOF
+
+mv _ Telegram/SourceFiles/info/info_content_widget.cpp
+
+cat - Telegram/SourceFiles/info/media/info_media_list_widget.cpp << EOF > _
+#include "Telegram/lib_ui/ui/effects/numbers_animation.h"
+EOF
+
+mv _ Telegram/SourceFiles/info/media/info_media_list_widget.cpp
 
 cd Telegram/ThirdParty/scudo
 
