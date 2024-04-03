@@ -1830,6 +1830,7 @@ https://github.com/telegramdesktop/tdesktop/releases/download/v4.15.5/tdesktop-4
 https://github.com/telegramdesktop/tdesktop/releases/download/v4.15.6/tdesktop-4.15.6-full.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v4.15.7/tdesktop-4.15.7-full.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v4.16.0/tdesktop-4.16.0-full.tar.gz
+https://github.com/telegramdesktop/tdesktop/releases/download/v4.16.1/tdesktop-4.16.1-full.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v4.8.10/tdesktop-4.8.10-full.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v4.8.12/tdesktop-4.8.12-full.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v4.9.0/tdesktop-4.9.0-full.tar.gz
@@ -2446,6 +2447,7 @@ https://www.prevanders.net/libdwarf-0.6.0.tar.xz
 https://www.prevanders.net/libdwarf-0.8.0.tar.xz
 https://www.prevanders.net/libdwarf-0.9.0.tar.xz
 https://www.prevanders.net/libdwarf-0.9.1.tar.xz
+https://www.prevanders.net/libdwarf-0.9.2.tar.xz
 https://www.python.org/ftp/python/2.7.18/Python-2.7.18.tar.xz
 https://www.python.org/ftp/python/3.10.13/Python-3.10.13.tar.xz
 https://www.python.org/ftp/python/3.8.17/Python-3.8.17.tgz
