@@ -37,7 +37,7 @@
 #}
 
 {% block run_deps %}
-bin/ras/daemon
+#bin/ras/daemon
 bin/mcelog
 bin/iperf
 bin/iperf/3
