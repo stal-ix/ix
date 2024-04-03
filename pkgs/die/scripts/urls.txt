@@ -160,6 +160,7 @@ https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.7.9.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.7.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.8.1.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.8.2.tar.xz
+https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.8.3.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.8.tar.xz
 https://cmocka.org/files/1.1/cmocka-1.1.7.tar.xz
 https://codeberg.org/dnkl/fcft/archive/2.5.0.tar.gz
@@ -623,6 +624,7 @@ https://github.com/Genivia/ugrep/archive/refs/tags/v4.5.2.tar.gz
 https://github.com/Genivia/ugrep/archive/refs/tags/v5.0.0.tar.gz
 https://github.com/Genivia/ugrep/archive/refs/tags/v5.1.0.tar.gz
 https://github.com/Genivia/ugrep/archive/refs/tags/v5.1.1.tar.gz
+https://github.com/Genivia/ugrep/archive/refs/tags/v5.1.2.tar.gz
 https://github.com/GrapheneOS/hardened_malloc/archive/refs/tags/11.tar.gz
 https://github.com/Hjdskes/cage/archive/refs/tags/v0.1.4.tar.gz
 https://github.com/HowardHinnant/date/archive/refs/tags/v3.0.1.tar.gz
@@ -2093,6 +2095,7 @@ https://gitlab.gnome.org/GNOME/gtk/-/archive/4.12.5/gtk-4.12.5.tar.bz2
 https://gitlab.gnome.org/GNOME/gtk/-/archive/4.13.6/gtk-4.13.6.tar.bz2
 https://gitlab.gnome.org/GNOME/gtk/-/archive/4.14.0/gtk-4.14.0.tar.bz2
 https://gitlab.gnome.org/GNOME/gtk/-/archive/4.14.1/gtk-4.14.1.tar.bz2
+https://gitlab.gnome.org/GNOME/gtk/-/archive/4.14.2/gtk-4.14.2.tar.bz2
 https://gitlab.gnome.org/GNOME/gtksourceview/-/archive/5.10.0/gtksourceview-5.10.0.tar.bz2
 https://gitlab.gnome.org/GNOME/gtksourceview/-/archive/5.8.0/gtksourceview-5.8.0.tar.bz2
 https://gitlab.gnome.org/GNOME/json-glib/-/archive/1.6.6/json-glib-1.6.6.tar.bz2
