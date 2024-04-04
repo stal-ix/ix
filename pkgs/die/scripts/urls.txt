@@ -1400,6 +1400,7 @@ https://github.com/llvm/llvm-project/releases/download/llvmorg-17.0.5/llvm-proje
 https://github.com/llvm/llvm-project/releases/download/llvmorg-17.0.6/llvm-project-17.0.6.src.tar.xz
 https://github.com/llvm/llvm-project/releases/download/llvmorg-18.1.0/llvm-project-18.1.0.src.tar.xz
 https://github.com/llvm/llvm-project/releases/download/llvmorg-18.1.2/llvm-project-18.1.2.src.tar.xz
+https://github.com/llvm/llvm-project/releases/download/llvmorg-18.1.3/llvm-project-18.1.3.src.tar.xz
 https://github.com/lm-sensors/lm-sensors/archive/refs/tags/V3-6-0.tar.gz
 https://github.com/lsof-org/lsof/archive/refs/tags/4.98.0.tar.gz
 https://github.com/lsof-org/lsof/archive/refs/tags/4.99.0.tar.gz
