@@ -112,6 +112,7 @@ https://astron.com/pub/tcsh/tcsh-6.24.10.tar.gz
 https://astron.com/pub/tcsh/tcsh-6.24.11.tar.gz
 https://bearssl.org/bearssl-0.6.tar.gz
 https://bitbucket.org/multicoreware/x265_git/downloads/x265_3.5.tar.gz
+https://bitbucket.org/multicoreware/x265_git/downloads/x265_3.6.tar.gz
 https://bitmath.org/code/mtdev/mtdev-1.1.6.tar.bz2
 https://boostorg.jfrog.io/artifactory/main/release/1.82.0/source/boost_1_82_0.tar.bz2
 https://breakfastquay.com/files/releases/rubberband-3.1.1.tar.bz2
@@ -161,6 +162,7 @@ https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.7.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.8.1.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.8.2.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.8.3.tar.xz
+https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.8.4.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.8.tar.xz
 https://cmocka.org/files/1.1/cmocka-1.1.7.tar.xz
 https://codeberg.org/dnkl/fcft/archive/2.5.0.tar.gz
@@ -539,6 +541,7 @@ https://github.com/AbiWord/enchant/releases/download/v2.6.5/enchant-2.6.5.tar.gz
 https://github.com/AbiWord/enchant/releases/download/v2.6.6/enchant-2.6.6.tar.gz
 https://github.com/AbiWord/enchant/releases/download/v2.6.7/enchant-2.6.7.tar.gz
 https://github.com/AbiWord/enchant/releases/download/v2.6.8/enchant-2.6.8.tar.gz
+https://github.com/AbiWord/enchant/releases/download/v2.6.9/enchant-2.6.9.tar.gz
 https://github.com/AcademySoftwareFoundation/Imath/archive/refs/tags/v3.1.10.tar.gz
 https://github.com/AcademySoftwareFoundation/Imath/archive/refs/tags/v3.1.11.tar.gz
 https://github.com/AcademySoftwareFoundation/Imath/archive/refs/tags/v3.1.9.tar.gz
@@ -1505,6 +1508,7 @@ https://github.com/nghttp2/nghttp2/archive/refs/tags/v1.57.0.tar.gz
 https://github.com/nghttp2/nghttp2/archive/refs/tags/v1.58.0.tar.gz
 https://github.com/nghttp2/nghttp2/archive/refs/tags/v1.59.0.tar.gz
 https://github.com/nghttp2/nghttp2/archive/refs/tags/v1.60.0.tar.gz
+https://github.com/nghttp2/nghttp2/archive/refs/tags/v1.61.0.tar.gz
 https://github.com/ngtcp2/nghttp3/archive/refs/tags/v0.15.0.tar.gz
 https://github.com/ngtcp2/nghttp3/archive/refs/tags/v1.0.0.tar.gz
 https://github.com/ngtcp2/nghttp3/archive/refs/tags/v1.1.0.tar.gz
@@ -1917,6 +1921,7 @@ https://github.com/vcrhonek/hwdata/archive/refs/tags/v0.377.tar.gz
 https://github.com/vcrhonek/hwdata/archive/refs/tags/v0.378.tar.gz
 https://github.com/vcrhonek/hwdata/archive/refs/tags/v0.379.tar.gz
 https://github.com/vcrhonek/hwdata/archive/refs/tags/v0.380.tar.gz
+https://github.com/vcrhonek/hwdata/archive/refs/tags/v0.381.tar.gz
 https://github.com/vector-of-bool/cmrc/archive/refs/tags/2.0.1.tar.gz
 https://github.com/videolabs/libmicrodns/archive/refs/tags/0.2.0.tar.gz
 https://github.com/videolan/dav1d/archive/refs/tags/1.2.1.tar.gz
@@ -2401,6 +2406,7 @@ https://www.gnupg.org/ftp/gcrypt/gnutls/v3.8/gnutls-3.8.1.tar.xz
 https://www.gnupg.org/ftp/gcrypt/gnutls/v3.8/gnutls-3.8.2.tar.xz
 https://www.gnupg.org/ftp/gcrypt/gnutls/v3.8/gnutls-3.8.3.tar.xz
 https://www.gnupg.org/ftp/gcrypt/gnutls/v3.8/gnutls-3.8.4.tar.xz
+https://www.gnupg.org/ftp/gcrypt/gnutls/v3.8/gnutls-3.8.5.tar.xz
 https://www.gnupg.org/ftp/gcrypt/gpgme/gpgme-1.22.0.tar.bz2
 https://www.gnupg.org/ftp/gcrypt/gpgme/gpgme-1.23.0.tar.bz2
 https://www.gnupg.org/ftp/gcrypt/gpgme/gpgme-1.23.1.tar.bz2
@@ -2451,6 +2457,7 @@ https://www.mpg123.org/download/mpg123-1.32.2.tar.bz2
 https://www.mpg123.org/download/mpg123-1.32.3.tar.bz2
 https://www.mpg123.org/download/mpg123-1.32.4.tar.bz2
 https://www.mpg123.org/download/mpg123-1.32.5.tar.bz2
+https://www.mpg123.org/download/mpg123-1.32.6.tar.bz2
 https://www.nano-editor.org/dist/v7/nano-7.2.tar.xz
 https://www.nasm.us/pub/nasm/releasebuilds/2.16.01/nasm-2.16.01.tar.gz
 https://www.openldap.org/software/download/OpenLDAP/openldap-release/openldap-2.6.5.tgz
