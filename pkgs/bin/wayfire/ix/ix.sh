@@ -1,9 +1,5 @@
 {% extends '//bin/wayfire/stock/ix.sh' %}
 
-{% block c_compiler %}
-bin/clang/18/bootstrapped/full
-{% endblock %}
-
 {% block patch %}
 base64 -d << EOF > src/api/wayfire/option-wrapper.hpp
 {% include 'opts.h/base64' %}
