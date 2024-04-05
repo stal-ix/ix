@@ -38,6 +38,7 @@
 
 {% block run_deps %}
 #bin/ras/daemon
+bin/nebula
 bin/mcelog
 bin/iperf
 bin/iperf/3
