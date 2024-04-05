@@ -2,13 +2,11 @@
 
 {% block fetch %}
 https://bitbucket.org/multicoreware/x265_git/downloads/x265_3.6.tar.gz
-sha:f63de00f91fea8fd20ebd738dd8cfa68e19f3a9da40aaea9b708a13e1c03c6cb
+sha:663531f341c5389f460d730e62e10a4fcca3428ca2ca109693867bc5fe2e2807
 {% endblock %}
 
 {% block unpack %}
-mkdir src
-cd src
-extract 0 ${src}/*gz
+{{super()}}
 cd source
 {% endblock %}
 
