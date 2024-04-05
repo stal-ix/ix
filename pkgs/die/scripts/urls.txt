@@ -1471,6 +1471,7 @@ https://github.com/misterdanb/avizo/archive/refs/tags/1.2.1.tar.gz
 https://github.com/mity/md4c/archive/refs/tags/release-0.5.1.tar.gz
 https://github.com/mjansson/rpmalloc/archive/refs/tags/1.4.4.tar.gz
 https://github.com/mkj/dropbear/archive/refs/tags/DROPBEAR_2022.83.tar.gz
+https://github.com/mkj/dropbear/archive/refs/tags/DROPBEAR_2024.84.tar.gz
 https://github.com/mm2/Little-CMS/archive/refs/tags/lcms2.15.tar.gz
 https://github.com/mm2/Little-CMS/archive/refs/tags/lcms2.16.tar.gz
 https://github.com/mobile-shell/mosh/archive/refs/tags/mosh-1.4.0.tar.gz
@@ -1519,6 +1520,7 @@ https://github.com/ngtcp2/ngtcp2/archive/refs/tags/v1.0.1.tar.gz
 https://github.com/ngtcp2/ngtcp2/archive/refs/tags/v1.1.0.tar.gz
 https://github.com/ngtcp2/ngtcp2/archive/refs/tags/v1.2.0.tar.gz
 https://github.com/ngtcp2/ngtcp2/archive/refs/tags/v1.3.0.tar.gz
+https://github.com/ngtcp2/ngtcp2/archive/refs/tags/v1.4.0.tar.gz
 https://github.com/nhorman/rng-tools/archive/refs/tags/v6.15.tar.gz
 https://github.com/nibanks/msh3/archive/refs/tags/v0.6.0.tar.gz
 https://github.com/niklata/ndhc/archive/refs/tags/v2022-03-08-v2.tar.gz
@@ -1775,6 +1777,7 @@ https://github.com/skarnet/skalibs/archive/refs/tags/v2.14.1.0.tar.gz
 https://github.com/skeeto/u-config/archive/refs/tags/v0.31.1.tar.gz
 https://github.com/skeeto/u-config/archive/refs/tags/v0.33.0.tar.gz
 https://github.com/skvadrik/re2c/archive/refs/tags/3.1.tar.gz
+https://github.com/slackhq/nebula/archive/refs/tags/v1.8.2.tar.gz
 https://github.com/smuellerDD/jitterentropy-library/archive/refs/tags/v3.4.1.tar.gz
 https://github.com/stal-ix/sources/raw/main/bison-bootstrap-master.tar.bz2
 https://github.com/stal-ix/sources/raw/main/bmake-20210808.tar.gz
