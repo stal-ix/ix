@@ -5,3 +5,7 @@
 {% block kernel_flags %}
 {% include '//bin/kernel/configs/cfg_6_6_0' %}
 {% endblock %}
+
+{% block bld_libs %}
+lib/firmware/full
+{% endblock %}
