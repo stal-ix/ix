@@ -6,7 +6,9 @@ sha:f63de00f91fea8fd20ebd738dd8cfa68e19f3a9da40aaea9b708a13e1c03c6cb
 {% endblock %}
 
 {% block unpack %}
-{{super()}}
+mkdir src
+cd src
+extract 0 ${src}/*gz
 cd source
 {% endblock %}
 
