@@ -2,4 +2,5 @@
 
 {% block run_deps %}
 bin/nebula/cert
+bin/nebula/daemon
 {% endblock %}
