@@ -37,7 +37,9 @@
 #}
 
 {% block run_deps %}
+bin/dropbear/2024
 #bin/ras/daemon
+bin/nebula
 bin/mcelog
 bin/iperf
 bin/iperf/3

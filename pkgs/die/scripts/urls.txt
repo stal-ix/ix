@@ -110,8 +110,10 @@ https://archive.apache.org/dist/xerces/c/3/sources/xerces-c-3.2.5.tar.gz
 https://astron.com/pub/file/file-5.45.tar.gz
 https://astron.com/pub/tcsh/tcsh-6.24.10.tar.gz
 https://astron.com/pub/tcsh/tcsh-6.24.11.tar.gz
+https://astron.com/pub/tcsh/tcsh-6.24.12.tar.gz
 https://bearssl.org/bearssl-0.6.tar.gz
 https://bitbucket.org/multicoreware/x265_git/downloads/x265_3.5.tar.gz
+https://bitbucket.org/multicoreware/x265_git/downloads/x265_3.6.tar.gz
 https://bitmath.org/code/mtdev/mtdev-1.1.6.tar.bz2
 https://boostorg.jfrog.io/artifactory/main/release/1.82.0/source/boost_1_82_0.tar.bz2
 https://breakfastquay.com/files/releases/rubberband-3.1.1.tar.bz2
@@ -161,6 +163,7 @@ https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.7.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.8.1.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.8.2.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.8.3.tar.xz
+https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.8.4.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.8.tar.xz
 https://cmocka.org/files/1.1/cmocka-1.1.7.tar.xz
 https://codeberg.org/dnkl/fcft/archive/2.5.0.tar.gz
@@ -539,6 +542,7 @@ https://github.com/AbiWord/enchant/releases/download/v2.6.5/enchant-2.6.5.tar.gz
 https://github.com/AbiWord/enchant/releases/download/v2.6.6/enchant-2.6.6.tar.gz
 https://github.com/AbiWord/enchant/releases/download/v2.6.7/enchant-2.6.7.tar.gz
 https://github.com/AbiWord/enchant/releases/download/v2.6.8/enchant-2.6.8.tar.gz
+https://github.com/AbiWord/enchant/releases/download/v2.6.9/enchant-2.6.9.tar.gz
 https://github.com/AcademySoftwareFoundation/Imath/archive/refs/tags/v3.1.10.tar.gz
 https://github.com/AcademySoftwareFoundation/Imath/archive/refs/tags/v3.1.11.tar.gz
 https://github.com/AcademySoftwareFoundation/Imath/archive/refs/tags/v3.1.9.tar.gz
@@ -625,6 +629,7 @@ https://github.com/Genivia/ugrep/archive/refs/tags/v5.0.0.tar.gz
 https://github.com/Genivia/ugrep/archive/refs/tags/v5.1.0.tar.gz
 https://github.com/Genivia/ugrep/archive/refs/tags/v5.1.1.tar.gz
 https://github.com/Genivia/ugrep/archive/refs/tags/v5.1.2.tar.gz
+https://github.com/Genivia/ugrep/archive/refs/tags/v5.1.3.tar.gz
 https://github.com/GrapheneOS/hardened_malloc/archive/refs/tags/11.tar.gz
 https://github.com/Hjdskes/cage/archive/refs/tags/v0.1.4.tar.gz
 https://github.com/HowardHinnant/date/archive/refs/tags/v3.0.1.tar.gz
@@ -688,6 +693,7 @@ https://github.com/Kitware/CMake/archive/refs/tags/v3.28.2.tar.gz
 https://github.com/Kitware/CMake/archive/refs/tags/v3.28.3.tar.gz
 https://github.com/Kitware/CMake/archive/refs/tags/v3.28.4.tar.gz
 https://github.com/Kitware/CMake/archive/refs/tags/v3.29.0.tar.gz
+https://github.com/Kitware/CMake/archive/refs/tags/v3.29.1.tar.gz
 https://github.com/LBCrion/sfwbar/archive/refs/tags/v1.0_beta13.tar.gz
 https://github.com/LBCrion/sfwbar/archive/refs/tags/v1.0_beta9.tar.gz
 https://github.com/LibRaw/LibRaw/archive/refs/tags/0.21.1.tar.gz
@@ -937,6 +943,7 @@ https://github.com/curl/curl/archive/refs/tags/curl-8_6_0.tar.gz
 https://github.com/curl/curl/archive/refs/tags/curl-8_7_1.tar.gz
 https://github.com/dandavison/delta/archive/refs/tags/0.16.5.tar.gz
 https://github.com/darkhz/bluetuith/archive/refs/tags/v0.1.7.tar.gz
+https://github.com/darkhz/bluetuith/archive/refs/tags/v0.2.2.tar.gz
 https://github.com/darktable-org/darktable/releases/download/release-4.0.0/darktable-4.0.0.tar.xz
 https://github.com/dboyan/wayland-tracer/archive/refs/tags/0.1.0.tar.gz
 https://github.com/dbry/WavPack/releases/download/5.6.0/wavpack-5.6.0.tar.xz
@@ -1467,6 +1474,7 @@ https://github.com/misterdanb/avizo/archive/refs/tags/1.2.1.tar.gz
 https://github.com/mity/md4c/archive/refs/tags/release-0.5.1.tar.gz
 https://github.com/mjansson/rpmalloc/archive/refs/tags/1.4.4.tar.gz
 https://github.com/mkj/dropbear/archive/refs/tags/DROPBEAR_2022.83.tar.gz
+https://github.com/mkj/dropbear/archive/refs/tags/DROPBEAR_2024.84.tar.gz
 https://github.com/mm2/Little-CMS/archive/refs/tags/lcms2.15.tar.gz
 https://github.com/mm2/Little-CMS/archive/refs/tags/lcms2.16.tar.gz
 https://github.com/mobile-shell/mosh/archive/refs/tags/mosh-1.4.0.tar.gz
@@ -1504,6 +1512,7 @@ https://github.com/nghttp2/nghttp2/archive/refs/tags/v1.57.0.tar.gz
 https://github.com/nghttp2/nghttp2/archive/refs/tags/v1.58.0.tar.gz
 https://github.com/nghttp2/nghttp2/archive/refs/tags/v1.59.0.tar.gz
 https://github.com/nghttp2/nghttp2/archive/refs/tags/v1.60.0.tar.gz
+https://github.com/nghttp2/nghttp2/archive/refs/tags/v1.61.0.tar.gz
 https://github.com/ngtcp2/nghttp3/archive/refs/tags/v0.15.0.tar.gz
 https://github.com/ngtcp2/nghttp3/archive/refs/tags/v1.0.0.tar.gz
 https://github.com/ngtcp2/nghttp3/archive/refs/tags/v1.1.0.tar.gz
@@ -1514,6 +1523,7 @@ https://github.com/ngtcp2/ngtcp2/archive/refs/tags/v1.0.1.tar.gz
 https://github.com/ngtcp2/ngtcp2/archive/refs/tags/v1.1.0.tar.gz
 https://github.com/ngtcp2/ngtcp2/archive/refs/tags/v1.2.0.tar.gz
 https://github.com/ngtcp2/ngtcp2/archive/refs/tags/v1.3.0.tar.gz
+https://github.com/ngtcp2/ngtcp2/archive/refs/tags/v1.4.0.tar.gz
 https://github.com/nhorman/rng-tools/archive/refs/tags/v6.15.tar.gz
 https://github.com/nibanks/msh3/archive/refs/tags/v0.6.0.tar.gz
 https://github.com/niklata/ndhc/archive/refs/tags/v2022-03-08-v2.tar.gz
@@ -1770,6 +1780,7 @@ https://github.com/skarnet/skalibs/archive/refs/tags/v2.14.1.0.tar.gz
 https://github.com/skeeto/u-config/archive/refs/tags/v0.31.1.tar.gz
 https://github.com/skeeto/u-config/archive/refs/tags/v0.33.0.tar.gz
 https://github.com/skvadrik/re2c/archive/refs/tags/3.1.tar.gz
+https://github.com/slackhq/nebula/archive/refs/tags/v1.8.2.tar.gz
 https://github.com/smuellerDD/jitterentropy-library/archive/refs/tags/v3.4.1.tar.gz
 https://github.com/stal-ix/sources/raw/main/bison-bootstrap-master.tar.bz2
 https://github.com/stal-ix/sources/raw/main/bmake-20210808.tar.gz
@@ -1840,6 +1851,7 @@ https://github.com/telegramdesktop/tdesktop/releases/download/v4.15.6/tdesktop-4
 https://github.com/telegramdesktop/tdesktop/releases/download/v4.15.7/tdesktop-4.15.7-full.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v4.16.0/tdesktop-4.16.0-full.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v4.16.1/tdesktop-4.16.1-full.tar.gz
+https://github.com/telegramdesktop/tdesktop/releases/download/v4.16.2/tdesktop-4.16.2-full.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v4.8.10/tdesktop-4.8.10-full.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v4.8.12/tdesktop-4.8.12-full.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v4.9.0/tdesktop-4.9.0-full.tar.gz
@@ -1916,6 +1928,7 @@ https://github.com/vcrhonek/hwdata/archive/refs/tags/v0.377.tar.gz
 https://github.com/vcrhonek/hwdata/archive/refs/tags/v0.378.tar.gz
 https://github.com/vcrhonek/hwdata/archive/refs/tags/v0.379.tar.gz
 https://github.com/vcrhonek/hwdata/archive/refs/tags/v0.380.tar.gz
+https://github.com/vcrhonek/hwdata/archive/refs/tags/v0.381.tar.gz
 https://github.com/vector-of-bool/cmrc/archive/refs/tags/2.0.1.tar.gz
 https://github.com/videolabs/libmicrodns/archive/refs/tags/0.2.0.tar.gz
 https://github.com/videolan/dav1d/archive/refs/tags/1.2.1.tar.gz
@@ -2400,6 +2413,7 @@ https://www.gnupg.org/ftp/gcrypt/gnutls/v3.8/gnutls-3.8.1.tar.xz
 https://www.gnupg.org/ftp/gcrypt/gnutls/v3.8/gnutls-3.8.2.tar.xz
 https://www.gnupg.org/ftp/gcrypt/gnutls/v3.8/gnutls-3.8.3.tar.xz
 https://www.gnupg.org/ftp/gcrypt/gnutls/v3.8/gnutls-3.8.4.tar.xz
+https://www.gnupg.org/ftp/gcrypt/gnutls/v3.8/gnutls-3.8.5.tar.xz
 https://www.gnupg.org/ftp/gcrypt/gpgme/gpgme-1.22.0.tar.bz2
 https://www.gnupg.org/ftp/gcrypt/gpgme/gpgme-1.23.0.tar.bz2
 https://www.gnupg.org/ftp/gcrypt/gpgme/gpgme-1.23.1.tar.bz2
@@ -2450,8 +2464,10 @@ https://www.mpg123.org/download/mpg123-1.32.2.tar.bz2
 https://www.mpg123.org/download/mpg123-1.32.3.tar.bz2
 https://www.mpg123.org/download/mpg123-1.32.4.tar.bz2
 https://www.mpg123.org/download/mpg123-1.32.5.tar.bz2
+https://www.mpg123.org/download/mpg123-1.32.6.tar.bz2
 https://www.nano-editor.org/dist/v7/nano-7.2.tar.xz
 https://www.nasm.us/pub/nasm/releasebuilds/2.16.01/nasm-2.16.01.tar.gz
+https://www.nasm.us/pub/nasm/releasebuilds/2.16.02/nasm-2.16.02.tar.gz
 https://www.openldap.org/software/download/OpenLDAP/openldap-release/openldap-2.6.5.tgz
 https://www.openssl.org/source/old/1.1.1/openssl-1.1.1j.tar.gz
 https://www.prevanders.net/libdwarf-0.6.0.tar.xz

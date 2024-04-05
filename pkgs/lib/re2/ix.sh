@@ -16,5 +16,11 @@ RE2_BUILD_TESTING=OFF
 {% endblock %}
 
 {% block env %}
-export CMFLAGS="-Dre2_DIR=${out}/lib/cmake/re2 \${CMFLAGS}"
+export CMFLAGS="-Dre2_DIR=${out}/lib/cmake/re2 -Dre2_INCLUDE_DIR=${out}/include \${CMFLAGS}"
+{% endblock %}
+
+{% block install %}
+{{super()}}
+sed -e "s|.*re2_INCLUDE_DIR.*|set(re2_INCLUDE_DIR ${out}/include)|" \
+    -i ${out}/lib/cmake/re2/re2Config.cmake
 {% endblock %}

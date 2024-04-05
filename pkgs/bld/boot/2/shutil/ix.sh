@@ -36,6 +36,17 @@ EOF
 
 ${CC} ${CFLAGS} ${CPPFLAGS} ${LDFLAGS} -o mv mv.c
 
+cat << EOF > uname.c
+#include <stdio.h>
+
+int main() {
+    printf("{{target.cmake_system_name}}\n");
+    return 0;
+}
+EOF
+
+${CC} ${CFLAGS} ${CPPFLAGS} ${LDFLAGS} -o uname uname.c
+
 cp() (
     cat ${1} > ${2}
     chmod ${2}
@@ -43,7 +54,7 @@ cp() (
 
 mkdir ${out}/bin
 
-for i in mkdir cat tr dirname echo chmod rm test mv; do
+for i in mkdir cat tr dirname echo chmod rm test mv uname; do
     cp ${i} ${out}/bin/${i}
 done
 {% endblock %}
