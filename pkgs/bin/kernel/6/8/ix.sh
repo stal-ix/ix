@@ -577,6 +577,7 @@ amdgpu/sdma_5_2_6.bin
 
 {% block firmware %}
 {{super()}}
+
 {% block mediatek %}
 mediatek/mt8173/vpu_d.bin
 mediatek/mt8173/vpu_p.bin
@@ -650,5 +651,40 @@ mediatek/mt7986_rom_patch_mt7975.bin
 mediatek/mt7986_wm.bin
 mediatek/mt7986_wo_0.bin
 mediatek/mt7986_wo_1.bin
+{% endblock %}
+
+{% block rtl_nic %}
+rtl_nic/rtl8105e-1.fw
+rtl_nic/rtl8106e-1.fw
+rtl_nic/rtl8106e-2.fw
+rtl_nic/rtl8107e-1.fw
+rtl_nic/rtl8107e-2.fw
+rtl_nic/rtl8125a-3.fw
+rtl_nic/rtl8125b-1.fw
+rtl_nic/rtl8125b-2.fw
+rtl_nic/rtl8126a-2.fw
+rtl_nic/rtl8153a-2.fw
+rtl_nic/rtl8153a-3.fw
+rtl_nic/rtl8153a-4.fw
+rtl_nic/rtl8153b-2.fw
+rtl_nic/rtl8153c-1.fw
+rtl_nic/rtl8156a-2.fw
+rtl_nic/rtl8156b-2.fw
+rtl_nic/rtl8168d-1.fw
+rtl_nic/rtl8168d-2.fw
+rtl_nic/rtl8168e-1.fw
+rtl_nic/rtl8168e-2.fw
+rtl_nic/rtl8168e-3.fw
+rtl_nic/rtl8168f-1.fw
+rtl_nic/rtl8168f-2.fw
+rtl_nic/rtl8168fp-3.fw
+rtl_nic/rtl8168g-1.fw
+rtl_nic/rtl8168g-2.fw
+rtl_nic/rtl8168g-3.fw
+rtl_nic/rtl8168h-1.fw
+rtl_nic/rtl8168h-2.fw
+rtl_nic/rtl8402-1.fw
+rtl_nic/rtl8411-1.fw
+rtl_nic/rtl8411-2.fw
 {% endblock %}
 {% endblock %}
