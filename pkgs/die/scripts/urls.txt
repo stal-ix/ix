@@ -115,6 +115,7 @@ https://bearssl.org/bearssl-0.6.tar.gz
 https://bitbucket.org/multicoreware/x265_git/downloads/x265_3.5.tar.gz
 https://bitbucket.org/multicoreware/x265_git/downloads/x265_3.6.tar.gz
 https://bitmath.org/code/mtdev/mtdev-1.1.6.tar.bz2
+https://bitmath.org/code/mtdev/mtdev-1.1.7.tar.bz2
 https://boostorg.jfrog.io/artifactory/main/release/1.82.0/source/boost_1_82_0.tar.bz2
 https://breakfastquay.com/files/releases/rubberband-3.1.1.tar.bz2
 https://busybox.net/downloads/busybox-1.36.0.tar.bz2

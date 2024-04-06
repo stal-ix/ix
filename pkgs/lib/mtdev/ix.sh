@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://bitmath.org/code/mtdev/mtdev-1.1.6.tar.bz2
-md5:bf8ef2482e84a00b5db8fbd3ce00e249
+https://bitmath.org/code/mtdev/mtdev-1.1.7.tar.bz2
+sha:a107adad2101fecac54ac7f9f0e0a0dd155d954193da55c2340c97f2ff1d814e
 {% endblock %}
 
 {% block lib_deps %}
