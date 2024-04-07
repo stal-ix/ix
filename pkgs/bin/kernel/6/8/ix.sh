@@ -3,7 +3,7 @@
 {% include 'ver.sh' %}
 
 {% block kernel_flags %}
-{% include '//bin/kernel/configs/cfg_6_6_0' %}
+{% include '//bin/kernel/configs/cfg_6_8_4' %}
 {% endblock %}
 
 {% block bld_libs %}
