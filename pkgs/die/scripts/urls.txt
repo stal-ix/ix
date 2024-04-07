@@ -244,6 +244,7 @@ https://download.netsurf-browser.org/libs/releases/libnsgif-0.2.1-src.tar.gz
 https://download.open-mpi.org/release/hwloc/v2.9/hwloc-2.9.0.tar.bz2
 https://download.qemu.org/qemu-8.0.0.tar.xz
 https://download.samba.org/pub/rsync/src/rsync-3.2.7.tar.gz
+https://download.samba.org/pub/rsync/src/rsync-3.3.0.tar.gz
 https://download.samba.org/pub/samba/stable/samba-4.17.2.tar.gz
 https://download.samba.org/pub/samba/stable/samba-4.19.5.tar.gz
 https://download.savannah.gnu.org/releases/lzip/lzip-1.22.tar.gz
