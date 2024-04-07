@@ -16,5 +16,4 @@ lib/toml/plus/plus
 
 {% block bld_libs %}
 lib/hypr/rsvg
-lib/shim/fake/pkg(pkg_name=tomlplusplus,pkg_ver=100.500)
 {% endblock %}
