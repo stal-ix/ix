@@ -1259,6 +1259,7 @@ https://github.com/johnsonjh/OpenVi/archive/refs/tags/7.4.23.tar.gz
 https://github.com/johnsonjh/OpenVi/archive/refs/tags/7.4.24.tar.gz
 https://github.com/johnsonjh/OpenVi/archive/refs/tags/7.4.25.tar.gz
 https://github.com/johnsonjh/OpenVi/archive/refs/tags/7.4.27.tar.gz
+https://github.com/johnsonjh/OpenVi/archive/refs/tags/7.5.28.tar.gz
 https://github.com/jonas/tig/archive/refs/tags/tig-2.5.8.tar.gz
 https://github.com/jonas/tig/archive/refs/tags/tig-2.5.9.tar.gz
 https://github.com/joncampbell123/dosbox-x/archive/refs/tags/dosbox-x-v2023.10.06.tar.gz
