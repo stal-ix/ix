@@ -6,6 +6,7 @@ lib/firmware
 {% endblock %}
 
 {% block firmware %}
+{% block amd_gpu %}
 amdgpu/arcturus_asd.bin
 amdgpu/arcturus_gpu_info.bin
 amdgpu/arcturus_mec.bin
@@ -465,6 +466,7 @@ amdgpu/yellow_carp_sdma.bin
 amdgpu/yellow_carp_ta.bin
 amdgpu/yellow_carp_toc.bin
 amdgpu/yellow_carp_vcn.bin
+{% endblock %}
 
 iwlwifi-cc-a0-46.ucode
 iwlwifi-cc-a0-48.ucode

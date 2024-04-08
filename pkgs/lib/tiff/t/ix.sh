@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-http://download.osgeo.org/libtiff/tiff-4.6.0.tar.gz
-sha:88b3979e6d5c7e32b50d7ec72fb15af724f6ab2cbf7e10880c360a77e4b5d99a
+https://gitlab.com/faxguy/libtiff-tools/-/archive/v4.6.0t/libtiff-tools-v4.6.0t.tar.bz2
+sha:80f1b2ffd1c4b12c19bd5e716c5af10b1feac185c74266d4d1d6d0eeab6461ba
 {% endblock %}
 
 {% block lib_deps %}

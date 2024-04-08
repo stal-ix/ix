@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://download.samba.org/pub/rsync/src/rsync-3.2.7.tar.gz
-sha:4e7d9d3f6ed10878c58c5fb724a67dacf4b6aac7340b13e488fb2dc41346f2bb
+https://download.samba.org/pub/rsync/src/rsync-3.3.0.tar.gz
+sha:7399e9a6708c32d678a72a63219e96f23be0be2336e50fd1348498d07041df90
 {% endblock %}
 
 {% block bld_libs %}
