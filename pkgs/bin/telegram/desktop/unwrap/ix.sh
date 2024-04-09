@@ -158,9 +158,9 @@ EOF
 
 mv _ Telegram/SourceFiles/info/media/info_media_list_widget.cpp
 
-cd Telegram/ThirdParty/scudo
+cd Telegram/ThirdParty/jemalloc
 
-find . -type f -name '*.cpp' | while read l; do
+find . -type f -name '*.c' | while read l; do
     echo > ${l}
 done
 
