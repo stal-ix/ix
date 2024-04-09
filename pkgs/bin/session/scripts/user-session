@@ -1,0 +1,9 @@
+#!/bin/sh
+
+cd ${HOME}
+
+if test -f .session; then
+    exec ./.session
+fi
+
+exec /bin/sh
