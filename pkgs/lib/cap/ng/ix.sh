@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://github.com/stevegrubb/libcap-ng/archive/refs/tags/v0.8.4.tar.gz
-sha:5615c76a61039e283a6bd107c4faf345ae5ad4dcd45907defe5e474d8fdb6fd2
+https://github.com/stevegrubb/libcap-ng/archive/refs/tags/v0.8.5.tar.gz
+sha:e4be07fdd234f10b866433f224d183626003c65634ed0552b02e654a380244c2
 {% endblock %}
 
 {% block lib_deps %}
