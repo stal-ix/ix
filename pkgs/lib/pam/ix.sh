@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://github.com/linux-pam/linux-pam/archive/refs/tags/v1.5.3.tar.gz
-sha:631f7eb4f0356ca5b6d13e96655b2f1a57ef7cd117a0a18024891c107d25a0ca
+https://github.com/linux-pam/linux-pam/archive/refs/tags/v1.6.1.tar.gz
+sha:2d7bd19782ede2a8284e1dfede70c01e81ee7bc8e05b91fe00aac85d2cc7d2c4
 {% endblock %}
 
 {% block bld_tool %}

@@ -1,9 +1,9 @@
 {% block kernel_version %}
-6.8.4
+6.8.5
 {% endblock %}
 
 {% block kernel_sha %}
-d5dec495fc00605fa9e04114df547fbc92b33d9ea7a4a2b7073c589590e79e63
+138923e5d73748b4bdbe9b5a0b8f36dfac9fcc16753a9222928dc6c963effa89
 {% endblock %}
 
 {% include '//bin/kernel/t/ver.sh' %}
