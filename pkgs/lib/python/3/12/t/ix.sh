@@ -1,8 +1,8 @@
 {% extends '//lib/python/3/11/ix.sh' %}
 
 {% block fetch %}
-https://github.com/python/cpython/archive/refs/tags/v3.12.2.tar.gz
-sha:6a7643423ce81d95ab798fc7ca91d3e487f8538467d439c4a64261cac3fcf77b
+https://github.com/python/cpython/archive/refs/tags/v3.12.3.tar.gz
+sha:5c91f5e64a3c85c582cd0454edafb820d4f6226a8eab232cd05185de60350c8d
 {% endblock %}
 
 {% block conf_ver %}

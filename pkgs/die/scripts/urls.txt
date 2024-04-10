@@ -1632,6 +1632,7 @@ https://github.com/python/cpython/archive/refs/tags/v3.11.8.tar.gz
 https://github.com/python/cpython/archive/refs/tags/v3.12.0.tar.gz
 https://github.com/python/cpython/archive/refs/tags/v3.12.1.tar.gz
 https://github.com/python/cpython/archive/refs/tags/v3.12.2.tar.gz
+https://github.com/python/cpython/archive/refs/tags/v3.12.3.tar.gz
 https://github.com/qbittorrent/qBittorrent/archive/refs/tags/release-4.5.4.tar.gz
 https://github.com/qbittorrent/qBittorrent/archive/refs/tags/release-4.6.0.tar.gz
 https://github.com/qbittorrent/qBittorrent/archive/refs/tags/release-4.6.1.tar.gz
