@@ -3,7 +3,7 @@
 {% block install %}
 mkdir ${out}/bin
 
-base64 << EOF > ${out}/bin/shh
+base64 -d << EOF > ${out}/bin/shh
 {% include 'shh/base64' %}
 EOF
 
