@@ -33,7 +33,6 @@ func GenerateCert(priv crypto.PrivateKey, reader io.Reader) (*x509.Certificate) 
 		DNSNames:              []string{"*", "selfsigned.ssh3"},
 		IsCA:                  true,
 	}
-
 	return &cert
 }
 
