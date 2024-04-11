@@ -1,0 +1,3 @@
+#!/usr/bin/env sh
+
+exec ssh3 -pubkey-for-agent ~/.ssh/id_rsa.pub ${1}:8011/ssh3-term

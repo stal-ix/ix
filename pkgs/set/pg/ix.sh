@@ -11,6 +11,7 @@ bin/bash
 bin/less
 set/debug
 bin/waybar
+set/pg/shh
 bin/iwd/ctl
 bin/alacritty
 set/stalix/gui
