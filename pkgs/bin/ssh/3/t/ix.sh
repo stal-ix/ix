@@ -1,9 +1,9 @@
 {% extends '//die/go/build.sh' %}
 
 {% block go_url %}
-https://github.com/francoismichel/ssh3/archive/refs/tags/v0.1.7.tar.gz
+https://github.com/pg83/ssh3/archive/068856ab41189b28ea8c93547d5e27356f882690.zip
 {% endblock %}
 
 {% block go_sha %}
-dbc610014112ee1eca99b7ef04b9d272b765dd5cb1383c773ad2cebf4679bff8
+824d0e3024d0e0aa360077304f0f09dd417165c06853141135e56e53de12d788
 {% endblock %}
