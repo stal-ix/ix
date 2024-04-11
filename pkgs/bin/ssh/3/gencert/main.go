@@ -9,12 +9,28 @@ import (
 	"encoding/pem"
 	"math/big"
 	"os"
+	"io"
 	"time"
 )
 
+var (
+    ENTROPY io.Reader
+)
+
+func RandRead() io.Reader {
+	if ENTROPY == nil {
+		res, err := os.Open("qw")
+		if err != nil {
+			panic(err)
+		}
+		ENTROPY = res
+	}
+	return ENTROPY
+}
+
 func GenerateCert(priv crypto.PrivateKey) (*x509.Certificate) {
 	serialNumberLimit := new(big.Int).Lsh(big.NewInt(1), 128)
-	serialNumber, err := rand.Int(rand.Reader, serialNumberLimit)
+	serialNumber, err := rand.Int(RandRead(), serialNumberLimit)
 	if err != nil {
 		panic(err)
 	}
@@ -38,7 +54,7 @@ func GenerateCert(priv crypto.PrivateKey) (*x509.Certificate) {
 }
 
 func DumpCertAndKeyToFiles(cert *x509.Certificate, pubkey crypto.PublicKey, privkey crypto.PrivateKey, certPath, keyPath string) {
-	certBytes, err := x509.CreateCertificate(rand.Reader, cert, cert, pubkey, privkey)
+	certBytes, err := x509.CreateCertificate(RandRead(), cert, cert, pubkey, privkey)
 	if err != nil {
 		panic(err)
 	}
@@ -68,7 +84,7 @@ func DumpCertAndKeyToFiles(cert *x509.Certificate, pubkey crypto.PublicKey, priv
 }
 
 func main() {
-	pubkey, privkey, err := ed25519.GenerateKey(rand.Reader)
+	pubkey, privkey, err := ed25519.GenerateKey(RandRead())
 	if err != nil {
 	    panic(err)
 	}
