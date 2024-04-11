@@ -27,7 +27,6 @@ func GenerateCert(priv crypto.PrivateKey, reader io.Reader) (*x509.Certificate) 
 		},
 		NotBefore: from,
 		NotAfter:  from.Add(time.Hour * 24 * 365 * 100),
-
 		KeyUsage:              x509.KeyUsageKeyEncipherment | x509.KeyUsageDigitalSignature | x509.KeyUsageCertSign,
 		ExtKeyUsage:           []x509.ExtKeyUsage{x509.ExtKeyUsageServerAuth},
 		BasicConstraintsValid: true,
@@ -57,7 +56,6 @@ func DumpCertAndKeyToFiles(cert *x509.Certificate, pubkey crypto.PublicKey, priv
 		panic(err)
 	}
 	defer keyFile.Close()
-
 	keyBytes, err := x509.MarshalPKCS8PrivateKey(privkey)
 	if err != nil {
 		panic(err)
