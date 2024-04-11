@@ -1487,6 +1487,8 @@ https://github.com/microsoft/vcpkg-tool/archive/refs/tags/2024-01-11.tar.gz
 https://github.com/microsoft/vcpkg-tool/archive/refs/tags/2024-02-05.tar.gz
 https://github.com/microsoft/vcpkg-tool/archive/refs/tags/2024-02-07.tar.gz
 https://github.com/microsoft/vcpkg-tool/archive/refs/tags/2024-03-14.tar.gz
+https://github.com/minio/mc/archive/refs/tags/RELEASE.2024-03-30T15-29-52Z.tar.gz
+https://github.com/minio/minio/archive/refs/tags/RELEASE.2024-04-06T05-26-02Z.tar.gz
 https://github.com/miniupnp/miniupnp/archive/refs/tags/miniupnpd_2_3_3.tar.gz
 https://github.com/miniupnp/miniupnp/archive/refs/tags/miniupnpd_2_3_4.tar.gz
 https://github.com/miniupnp/miniupnp/archive/refs/tags/miniupnpd_2_3_6.tar.gz
@@ -1549,6 +1551,7 @@ https://github.com/nhorman/rng-tools/archive/refs/tags/v6.15.tar.gz
 https://github.com/nibanks/msh3/archive/refs/tags/v0.6.0.tar.gz
 https://github.com/niklata/ndhc/archive/refs/tags/v2022-03-08-v2.tar.gz
 https://github.com/ninja-build/ninja/archive/refs/tags/v1.11.1.tar.gz
+https://github.com/ninja-build/ninja/archive/refs/tags/v1.12.0.tar.gz
 https://github.com/nlohmann/json/archive/refs/tags/v3.10.5.tar.gz
 https://github.com/nlohmann/json/archive/refs/tags/v3.11.2.tar.gz
 https://github.com/nodejs/uvwasi/archive/refs/tags/v0.0.18.tar.gz
