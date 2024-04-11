@@ -10,6 +10,7 @@ bin/niri
 bin/bash
 bin/less
 set/debug
+bin/nebula
 bin/waybar
 set/pg/shh
 bin/iwd/ctl
