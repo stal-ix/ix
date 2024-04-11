@@ -37,6 +37,7 @@
 #}
 
 {% block run_deps %}
+bin/minio
 bin/dropbear/2024
 #bin/ras/daemon
 bin/nebula
