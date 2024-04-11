@@ -13,35 +13,20 @@ import (
 	"time"
 )
 
-var (
-    ENTROPY io.Reader
-)
-
-func RandRead() io.Reader {
-	if ENTROPY == nil {
-		res, err := os.Open("qw")
-		if err != nil {
-			panic(err)
-		}
-		ENTROPY = res
-	}
-	return ENTROPY
-}
-
-func GenerateCert(priv crypto.PrivateKey) (*x509.Certificate) {
+func GenerateCert(priv crypto.PrivateKey, reader io.Reader) (*x509.Certificate) {
 	serialNumberLimit := new(big.Int).Lsh(big.NewInt(1), 128)
-	serialNumber, err := rand.Int(RandRead(), serialNumberLimit)
+	serialNumber, err := rand.Int(reader, serialNumberLimit)
 	if err != nil {
 		panic(err)
 	}
-
+	from := time.Unix(0, 0)
 	cert := x509.Certificate{
 		SerialNumber: serialNumber,
 		Subject: pkix.Name{
 			Organization: []string{"SSH3Organization"},
 		},
-		NotBefore: time.Now(),
-		NotAfter:  time.Now().Add(time.Hour * 24 * 365 * 10),
+		NotBefore: from,
+		NotAfter:  from.Add(time.Hour * 24 * 365 * 100),
 
 		KeyUsage:              x509.KeyUsageKeyEncipherment | x509.KeyUsageDigitalSignature | x509.KeyUsageCertSign,
 		ExtKeyUsage:           []x509.ExtKeyUsage{x509.ExtKeyUsageServerAuth},
@@ -53,8 +38,8 @@ func GenerateCert(priv crypto.PrivateKey) (*x509.Certificate) {
 	return &cert
 }
 
-func DumpCertAndKeyToFiles(cert *x509.Certificate, pubkey crypto.PublicKey, privkey crypto.PrivateKey, certPath, keyPath string) {
-	certBytes, err := x509.CreateCertificate(RandRead(), cert, cert, pubkey, privkey)
+func DumpCertAndKeyToFiles(cert *x509.Certificate, pubkey crypto.PublicKey, privkey crypto.PrivateKey, certPath, keyPath string, reader io.Reader) {
+	certBytes, err := x509.CreateCertificate(reader, cert, cert, pubkey, privkey)
 	if err != nil {
 		panic(err)
 	}
@@ -84,10 +69,14 @@ func DumpCertAndKeyToFiles(cert *x509.Certificate, pubkey crypto.PublicKey, priv
 }
 
 func main() {
-	pubkey, privkey, err := ed25519.GenerateKey(RandRead())
+	reader, err := os.Open(os.Getenv("ENTROPY"))
+	if err != nil {
+		panic(err)
+	}
+	pubkey, privkey, err := ed25519.GenerateKey(reader)
 	if err != nil {
 	    panic(err)
 	}
-	cert := GenerateCert(privkey)
-	DumpCertAndKeyToFiles(cert, pubkey, privkey, "cert", "key")
+	cert := GenerateCert(privkey, reader)
+	DumpCertAndKeyToFiles(cert, pubkey, privkey, "cert", "key", reader)
 }
