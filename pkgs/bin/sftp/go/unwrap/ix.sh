@@ -1,11 +1,15 @@
 {% extends '//die/go/build.sh' %}
 
 {% block go_url %}
-https://github.com/drakkan/sftpgo/archive/refs/tags/v2.5.6.tar.gz
+https://github.com/drakkan/sftpgo/archive/019edf38f3a1c9b7bcd318b5ad94373ce7adeae1.zip
 {% endblock %}
 
 {% block go_sha %}
-1a988fc8195017ee13178c1e3eff222bd2a64163ab1cac55397c02744d0c2a33
+a22e542c14988d504592d733b51ef4d1e1ef7f17d9474d986a245e2d09202791
+{% endblock %}
+
+{% block go_tool %}
+bin/go/lang/22
 {% endblock %}
 
 {% block install %}

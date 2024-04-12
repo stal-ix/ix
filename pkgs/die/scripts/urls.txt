@@ -971,6 +971,7 @@ https://github.com/dosbox-staging/dosbox-staging/archive/refs/tags/v0.81.0.tar.g
 https://github.com/dosfstools/dosfstools/releases/download/v4.2/dosfstools-4.2.tar.gz
 https://github.com/doxygen/doxygen/archive/refs/tags/Release_1_10_0.tar.gz
 https://github.com/doxygen/doxygen/archive/refs/tags/Release_1_9_8.tar.gz
+https://github.com/drakkan/sftpgo/archive/019edf38f3a1c9b7bcd318b5ad94373ce7adeae1.zip
 https://github.com/drakkan/sftpgo/archive/refs/tags/v2.5.6.tar.gz
 https://github.com/dubiousjim/dcron/archive/refs/tags/v4.5.tar.gz
 https://github.com/dunst-project/dunst/archive/refs/tags/v1.10.0.tar.gz
@@ -1599,6 +1600,7 @@ https://github.com/pg83/sbase/archive/refs/tags/v1.tar.gz
 https://github.com/pg83/shutil/archive/refs/tags/v1.tar.gz
 https://github.com/pg83/ssh3/archive/068856ab41189b28ea8c93547d5e27356f882690.zip
 https://github.com/pg83/ssh3/archive/75d80cf4e6a372ffed22a2254f6e3d67373fdc61.zip
+https://github.com/pg83/ssh3/archive/d900eb49a68945f924d6308765eead9f9eec7c27.zip
 https://github.com/pg83/ted/archive/refs/tags/v6.tar.gz
 https://github.com/phillipberndt/pqiv/archive/refs/tags/2.12.tar.gz
 https://github.com/phillipberndt/pqiv/archive/refs/tags/2.13.1.tar.gz
