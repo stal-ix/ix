@@ -1,3 +1,0 @@
-#!/usr/bin/env sh
-
-exec $(command -v ssh3) ${1}:8011/ssh3-term

@@ -10,9 +10,9 @@ bin/niri
 bin/bash
 bin/less
 set/debug
+bin/ssh/3
 bin/nebula
 bin/waybar
-set/pg/shh
 bin/iwd/ctl
 bin/alacritty
 set/stalix/gui
