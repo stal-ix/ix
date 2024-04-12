@@ -4,6 +4,7 @@
 cd ${out}; mkdir -p etc/services/mingetty{{slot}}; cd etc/services/mingetty{{slot}}
 
 cat << EOF > daemon
+export TERM=linux
 fixtty /dev/tty{{slot}}
 exec mingetty tty{{slot}}
 EOF
