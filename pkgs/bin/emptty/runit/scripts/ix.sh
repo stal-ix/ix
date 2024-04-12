@@ -13,6 +13,7 @@ TTY_NUMBER={{slot}}
 EOF
 
 cat << EOF > daemon
+export TERM=linux
 fixtty /dev/tty{{slot}}
 exec setsid openvt -c {{slot}} -f -e emptty --config ${PWD}/emptty.conf
 EOF
