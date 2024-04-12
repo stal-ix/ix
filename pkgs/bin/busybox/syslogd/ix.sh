@@ -2,5 +2,5 @@
 
 {% block run_deps %}
 bin/busybox
-etc/services/runit(srv_dir=syslogd,srv_command=exec syslogd -n -O /var/run/syslogd/log)
+etc/services/runit(srv_dir=syslogd,srv_command=exec syslogd -n -O /dev/stdout)
 {% endblock %}
