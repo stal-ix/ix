@@ -51,6 +51,12 @@ cat << EOF > etc/sysctl.d/swap.conf
 vm.swappiness = 10
 EOF
 
+{# https://github.com/quic-go/quic-go/wiki/UDP-Buffer-Sizes #}
+cat << EOF > etc/sysctl.d/quic.conf
+net.core.rmem_max = 2500000
+net.core.wmem_max = 2500000
+EOF
+
 mkdir -p etc/runit; cd etc/runit
 
 cat << EOF > 2

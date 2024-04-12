@@ -17,7 +17,7 @@ static void onerr(int c, const char* s) {
 }
 
 static char* concat(const char* s1, const char* s2) {
-    char* ret = malloc(strlen(s1) + strlen(s1) + 1);
+    char* ret = malloc(strlen(s1) + strlen(s2) + 1);
     sprintf(ret, "%s%s", s1, s2);
     return ret;
 }
