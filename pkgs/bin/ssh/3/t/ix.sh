@@ -1,9 +1,10 @@
 {% extends '//die/go/build.sh' %}
 
 {% block go_url %}
-https://github.com/pg83/ssh3/archive/068856ab41189b28ea8c93547d5e27356f882690.zip
+
+https://github.com/pg83/ssh3/archive/75d80cf4e6a372ffed22a2254f6e3d67373fdc61.zip
 {% endblock %}
 
 {% block go_sha %}
-824d0e3024d0e0aa360077304f0f09dd417165c06853141135e56e53de12d788
+c251892df404273538564788053d3cea4fad41eb318da7d5172c89a3c58d5356
 {% endblock %}

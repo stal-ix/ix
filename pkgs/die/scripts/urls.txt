@@ -1598,6 +1598,7 @@ https://github.com/pg83/portal/archive/refs/tags/1.tar.gz
 https://github.com/pg83/sbase/archive/refs/tags/v1.tar.gz
 https://github.com/pg83/shutil/archive/refs/tags/v1.tar.gz
 https://github.com/pg83/ssh3/archive/068856ab41189b28ea8c93547d5e27356f882690.zip
+https://github.com/pg83/ssh3/archive/75d80cf4e6a372ffed22a2254f6e3d67373fdc61.zip
 https://github.com/pg83/ted/archive/refs/tags/v6.tar.gz
 https://github.com/phillipberndt/pqiv/archive/refs/tags/2.12.tar.gz
 https://github.com/phillipberndt/pqiv/archive/refs/tags/2.13.1.tar.gz
