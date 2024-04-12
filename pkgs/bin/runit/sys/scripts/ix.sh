@@ -61,6 +61,7 @@ mkdir -p etc/runit; cd etc/runit
 
 cat << EOF > 2
 #!/bin/sh
+unset TERM
 mkdir -p /var/run/runsvdir
 cd /var/run/runsvdir
 exec runsvdir -P /etc/services 1>>out 2>>out
