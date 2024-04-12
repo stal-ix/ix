@@ -66,7 +66,7 @@ mkdir -p /var/run/runsvdir
 cd /var/run/runsvdir
 exec 1>out
 exec 2>&1
-exec nohup runsvdir -P /etc/services
+exec runsvdir -P /etc/services
 EOF
 
 cat << EOF > 3
