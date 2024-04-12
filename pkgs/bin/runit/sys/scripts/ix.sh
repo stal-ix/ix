@@ -64,7 +64,9 @@ cat << EOF > 2
 unset TERM
 mkdir -p /var/run/runsvdir
 cd /var/run/runsvdir
-exec runsvdir -P /etc/services 1>>out 2>>out
+exec 1>out
+exec 2>&1
+exec nohup runsvdir -P /etc/services
 EOF
 
 cat << EOF > 3
