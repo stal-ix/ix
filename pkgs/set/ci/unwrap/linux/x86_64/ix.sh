@@ -37,6 +37,7 @@
 #}
 
 {% block run_deps %}
+bin/fire/jail
 bin/minio
 bin/dropbear/2024
 #bin/ras/daemon
