@@ -97,9 +97,11 @@ EOF
 cat << EOF > 10-mount-rw.sh
 # mount rw
 mount -o remount,rw none /
-mkdir -p /var/run /var/tmp /var/log
-mount -t tmpfs tmpfs /var/run
-mount -t tmpfs tmpfs /var/tmp
+rm -rf /var
+mkdir /var
+mount -t tmpfs tmpfs /var
+mkdir -p /var/run /var/tmp /var/log /var/mnt
+chmod 01777 /var/tmp
 EOF
 
 cat << EOF > 98-sysctl.sh
