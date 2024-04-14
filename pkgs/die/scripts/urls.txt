@@ -168,6 +168,7 @@ https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.8.2.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.8.3.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.8.4.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.8.5.tar.xz
+https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.8.6.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.8.tar.xz
 https://cmocka.org/files/1.1/cmocka-1.1.7.tar.xz
 https://codeberg.org/dnkl/fcft/archive/2.5.0.tar.gz
@@ -749,6 +750,7 @@ https://github.com/NixOS/patchelf/archive/refs/tags/0.18.0.tar.gz
 https://github.com/Novum/vkQuake/archive/refs/tags/1.30.1.tar.gz
 https://github.com/Old-Man-Programmer/tree/archive/refs/tags/2.1.1.tar.gz
 https://github.com/OpenTTD/OpenTTD/archive/refs/tags/13.4.tar.gz
+https://github.com/OpenTTD/OpenTTD/archive/refs/tags/14.0.tar.gz
 https://github.com/OpenVPN/openvpn/archive/refs/tags/v2.6.10.tar.gz
 https://github.com/OpenVPN/openvpn/archive/refs/tags/v2.6.6.tar.gz
 https://github.com/OpenVPN/openvpn/archive/refs/tags/v2.6.7.tar.gz
