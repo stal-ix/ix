@@ -104,6 +104,12 @@ mkdir -p /var/run /var/tmp /var/log /var/mnt
 chmod 01777 /var/tmp
 EOF
 
+cat << EOF > 11-log.sh
+exec 1>/var/log/boot
+exec 2>&1
+set -x
+EOF
+
 cat << EOF > 98-sysctl.sh
 # apply sysctls
 sysctl -p /etc/sysctl
@@ -117,6 +123,6 @@ echo 1 > /sys/kernel/mm/transparent_hugepage/khugepaged/scan_sleep_millisecs
 ifconfig lo 127.0.0.1
 hostname -F /etc/hostname
 echo 0 > /proc/sys/kernel/printk
-dmesg > /var/log/boot
+dmesg
 EOF
 {% endblock %}
