@@ -9,7 +9,7 @@ EOF
 ls bin/kernel-* | sort -r | while read l; do
     cat << EOF >> etc/grub.cfg
 menuentry "${l}" {
-    linux /${l} ro root=PARTUUID=\$rootuuid quiet=1
+    linux /${l} ro root=PARTUUID=\$rootuuid __flags__
     boot
 }
 EOF
