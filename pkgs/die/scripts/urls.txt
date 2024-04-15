@@ -2201,6 +2201,7 @@ https://gitlab.gnome.org/GNOME/zenity/-/archive/3.90.0/zenity-3.90.0.tar.bz2
 https://gitlab.gnome.org/GNOME/zenity/-/archive/4.0.0/zenity-4.0.0.tar.bz2
 https://gitlab.gnome.org/GNOME/zenity/-/archive/4.0.1/zenity-4.0.1.tar.bz2
 https://gitlab.gnome.org/chergert/ptyxis/-/archive/08564402b8a9bc53bc2dbd3ff14f9d9598c14b7b/ptyxis-08564402b8a9bc53bc2dbd3ff14f9d9598c14b7b.tar.bz2
+https://gitlab.gnome.org/chergert/ptyxis/-/archive/46.1/ptyxis-46.1.tar.bz2
 https://gitlab.gnome.org/chergert/ptyxis/-/raw/08564402b8a9bc53bc2dbd3ff14f9d9598c14b7b/build-aux/0001-add-notification-and-shell-precmd-preexec.patch
 https://gitlab.gnome.org/crab2313/evince/-/archive/4c91df66ca83f8f1d057f0aa9069675b8bf5b6d6/evince-4c91df66ca83f8f1d057f0aa9069675b8bf5b6d6.tar.bz2
 https://gitlab.gnome.org/jadahl/libdecor/-/archive/0.1.1/libdecor-0.1.1.tar.bz2
