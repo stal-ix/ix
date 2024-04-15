@@ -6,7 +6,7 @@
 
 {% block step_unpack %}
 {{super()}}
-cd subprojects/wlroots
+cd subprojects/wlroots-hyprland
 {% endblock %}
 
 {% block lib_deps %}
