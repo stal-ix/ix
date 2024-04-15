@@ -15,7 +15,14 @@ base64 -d << EOF > ${out}/etc/nebula/key
 {{nebula_key}}
 EOF
 
-base64 -d << EOF > ${out}/etc/nebula/config.yaml
+cat << EOF > ${out}/etc/nebula/config.yaml
+pki:
+  ca: /etc/nebula/ca
+  cert: /etc/nebula/crt
+  key: /etc/nebula/key
+EOF
+
+base64 -d << EOF >> ${out}/etc/nebula/config.yaml
 {{nebula_config}}
 EOF
 {% endblock %}

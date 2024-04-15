@@ -1,0 +1,68 @@
+static_host_map:
+  "192.168.100.1":
+    - "5.188.103.251:4242"
+    - "10.0.0.64:4242"
+    - "10.0.0.65:4242"
+    - "10.0.0.66:4242"
+    - "10.0.0.67:4242"
+  "192.168.100.2":
+    - "5.188.103.251:4243"
+    - "10.0.0.68:4242"
+    - "10.0.0.69:4242"
+    - "10.0.0.70:4242"
+    - "10.0.0.71:4242"
+  "192.168.100.3":
+    - "5.188.103.251:4244"
+    - "10.0.0.72:4242"
+    - "10.0.0.73:4242"
+    - "10.0.0.74:4242"
+    - "10.0.0.75:4242"
+
+listen:
+  host: 0.0.0.0
+  port: 4243
+
+tun:
+  disabled: false
+  dev: nebula0
+  drop_local_broadcast: false
+  drop_multicast: false
+  tx_queue: 500
+  mtu: 1300
+
+lighthouse:
+  am_lighthouse: false
+  interval: 60
+  hosts:
+    - "192.168.100.1"
+    - "192.168.100.2"
+    - "192.168.100.3"
+punchy:
+  punch: true
+
+relay:
+  am_relay: false
+  use_relays: false
+
+logging:
+  level: info
+  format: text
+
+firewall:
+  outbound_action: drop
+  inbound_action: drop
+
+  conntrack:
+    tcp_timeout: 12m
+    udp_timeout: 3m
+    default_timeout: 10m
+
+  outbound:
+    - port: any
+      proto: any
+      host: any
+
+  inbound:
+    - port: any
+      proto: any
+      host: any
