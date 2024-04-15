@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/hyprwm/hyprlang/archive/refs/tags/v0.5.0.tar.gz
-sha:c59e705f2c2ff9ea4e2b183fdf0bc20a62b7162604a657d6352716a1fd5061b2
+https://github.com/hyprwm/hyprlang/archive/refs/tags/v0.5.1.tar.gz
+sha:7f521906d3f40b8d7b2bfcbe29a8286e9c65a7a601994344278bc16325bbd75d
 {% endblock %}
 
 {% block lib_deps %}

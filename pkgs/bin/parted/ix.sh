@@ -5,3 +5,8 @@ lib/intl
 lib/readline
 {{super()}}
 {% endblock %}
+
+{% block configure_flags %}
+{{super()}}
+--with-readline
+{% endblock %}

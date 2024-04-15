@@ -1,8 +1,8 @@
 {% extends '//die/c/gnome.sh' %}
 
 {% block fetch %}
-https://gitlab.gnome.org/chergert/ptyxis/-/archive/08564402b8a9bc53bc2dbd3ff14f9d9598c14b7b/ptyxis-08564402b8a9bc53bc2dbd3ff14f9d9598c14b7b.tar.bz2
-sha:2409fb6f1b9e6ad1ab28347945fe6896ba3f956f82edcbb7b7a0d10da5296bc3
+https://gitlab.gnome.org/chergert/ptyxis/-/archive/46.1/ptyxis-46.1.tar.bz2
+sha:83d718c94ce9c4e8d425dcfadec08a5b0ceb5a1a2583adb186611b720bb4e676
 {% endblock %}
 
 {% block bld_libs %}
@@ -26,8 +26,5 @@ bld/gettext
 >agent/x86/force_link_glibc_2.17.h
 >agent/x86_64/force_link_glibc_2.17.h
 >agent/libc-compat.h
-base64 -d << EOF | patch agent/ptyxis-agent-impl.c
-{% include '0.diff/base64' %}
-EOF
 sed -e 's|libc_compat = true|libc_compat = false|' -i agent/meson.build
 {% endblock %}

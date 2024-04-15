@@ -119,7 +119,7 @@ cat << EOF > 99-fini.sh
 # fini
 echo always > /sys/kernel/mm/transparent_hugepage/enabled
 echo 1 > /sys/kernel/mm/transparent_hugepage/khugepaged/scan_sleep_millisecs
-(echo 1000 > /sys/kernel/mm/lru_gen/min_ttl_ms) || true
+echo 1000 > /sys/kernel/mm/lru_gen/min_ttl_ms
 ifconfig lo 127.0.0.1
 hostname -F /etc/hostname
 echo 0 > /proc/sys/kernel/printk

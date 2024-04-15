@@ -37,6 +37,8 @@
 #}
 
 {% block run_deps %}
+bin/tinc
+bin/yggdrasil/go
 bin/fire/jail
 bin/minio
 bin/dropbear/2024
