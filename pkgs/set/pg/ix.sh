@@ -11,7 +11,6 @@ bin/bash
 bin/less
 set/debug
 bin/ssh/3
-bin/nebula
 bin/waybar
 bin/iwd/ctl
 bin/alacritty
