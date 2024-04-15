@@ -1816,6 +1816,7 @@ https://github.com/sharkdp/bat/archive/refs/tags/v0.24.0.tar.gz
 https://github.com/sharkdp/binocle/archive/refs/tags/v0.3.2.tar.gz
 https://github.com/sivel/speedtest-cli/archive/refs/tags/v2.1.3.tar.gz
 https://github.com/skarnet/execline/archive/refs/tags/v2.9.4.0.tar.gz
+https://github.com/skarnet/execline/archive/refs/tags/v2.9.5.0.tar.gz
 https://github.com/skarnet/mdevd/archive/refs/tags/v0.1.6.3.tar.gz
 https://github.com/skarnet/skalibs/archive/refs/tags/v2.14.1.0.tar.gz
 https://github.com/skeeto/u-config/archive/refs/tags/v0.31.1.tar.gz
@@ -1898,6 +1899,7 @@ https://github.com/telegramdesktop/tdesktop/releases/download/v4.16.3/tdesktop-4
 https://github.com/telegramdesktop/tdesktop/releases/download/v4.16.4/tdesktop-4.16.4-full.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v4.16.5/tdesktop-4.16.5-full.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v4.16.6/tdesktop-4.16.6-full.tar.gz
+https://github.com/telegramdesktop/tdesktop/releases/download/v4.16.7/tdesktop-4.16.7-full.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v4.8.10/tdesktop-4.8.10-full.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v4.8.12/tdesktop-4.8.12-full.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v4.9.0/tdesktop-4.9.0-full.tar.gz
