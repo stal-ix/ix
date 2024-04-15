@@ -2137,6 +2137,7 @@ https://gitlab.gnome.org/GNOME/gcr/-/archive/3.41.1/gcr-3.41.1.tar.bz2
 https://gitlab.gnome.org/GNOME/gcr/-/archive/4.1.0/gcr-4.1.0.tar.bz2
 https://gitlab.gnome.org/GNOME/gcr/-/archive/4.2.0/gcr-4.2.0.tar.bz2
 https://gitlab.gnome.org/GNOME/gcr/-/archive/4.2.1/gcr-4.2.1.tar.bz2
+https://gitlab.gnome.org/GNOME/gcr/-/archive/4.3.0/gcr-4.3.0.tar.bz2
 https://gitlab.gnome.org/GNOME/glib-networking/-/archive/2.76.1/glib-networking-2.76.1.tar.bz2
 https://gitlab.gnome.org/GNOME/glib-networking/-/archive/2.78.0/glib-networking-2.78.0.tar.bz2
 https://gitlab.gnome.org/GNOME/glib-networking/-/archive/2.78.1/glib-networking-2.78.1.tar.bz2
