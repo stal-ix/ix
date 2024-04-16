@@ -119,6 +119,7 @@ https://bitbucket.org/multicoreware/x265_git/downloads/x265_3.6.tar.gz
 https://bitmath.org/code/mtdev/mtdev-1.1.6.tar.bz2
 https://bitmath.org/code/mtdev/mtdev-1.1.7.tar.bz2
 https://boostorg.jfrog.io/artifactory/main/release/1.82.0/source/boost_1_82_0.tar.bz2
+https://boostorg.jfrog.io/artifactory/main/release/1.85.0/source/boost_1_85_0.tar.bz2
 https://breakfastquay.com/files/releases/rubberband-3.1.1.tar.bz2
 https://busybox.net/downloads/busybox-1.36.0.tar.bz2
 https://busybox.net/downloads/busybox-1.36.1.tar.bz2
@@ -182,6 +183,7 @@ https://codeberg.org/dnkl/foot/archive/1.16.1.tar.gz
 https://codeberg.org/dnkl/foot/archive/1.16.2.tar.gz
 https://codeberg.org/dnkl/foot/archive/1.17.0.tar.gz
 https://codeberg.org/dnkl/fuzzel/archive/1.10.0.tar.gz
+https://codeberg.org/dnkl/fuzzel/archive/1.10.2.tar.gz
 https://codeberg.org/dnkl/fuzzel/archive/1.9.2.tar.gz
 https://codeberg.org/dnkl/tllist/archive/1.1.0.tar.gz
 https://codeberg.org/dnkl/yambar/archive/1.10.0.tar.gz
@@ -885,6 +887,7 @@ https://github.com/bensadeh/tailspin/archive/refs/tags/3.0.0.tar.gz
 https://github.com/berndporr/iir1/archive/refs/tags/1.9.4.tar.gz
 https://github.com/besser82/libxcrypt/archive/refs/tags/v4.4.36.tar.gz
 https://github.com/bfgroup/b2/archive/refs/tags/4.9.2.tar.gz
+https://github.com/bfgroup/b2/archive/refs/tags/5.1.0.tar.gz
 https://github.com/biojppm/rapidyaml/releases/download/v0.4.1/rapidyaml-0.4.1-src.tgz
 https://github.com/bugaevc/wl-clipboard/archive/refs/tags/v2.2.0.tar.gz
 https://github.com/bus1/dbus-broker/archive/refs/tags/v35.tar.gz
@@ -1012,6 +1015,7 @@ https://github.com/evanw/esbuild/archive/refs/tags/v0.19.6.tar.gz
 https://github.com/exfatprogs/exfatprogs/archive/refs/tags/1.2.2.tar.gz
 https://github.com/exfatprogs/exfatprogs/releases/download/1.2.0/exfatprogs-1.2.0.tar.xz
 https://github.com/extrawurst/gitui/archive/refs/tags/v0.24.3.tar.gz
+https://github.com/extrawurst/gitui/archive/refs/tags/v0.26.1.tar.gz
 https://github.com/eza-community/eza/archive/refs/tags/v0.17.2.tar.gz
 https://github.com/eza-community/eza/archive/refs/tags/v0.17.3.tar.gz
 https://github.com/eza-community/eza/archive/refs/tags/v0.18.0.tar.gz
@@ -1044,6 +1048,7 @@ https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.8.8.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.8.9.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.9.0.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.9.1.tar.gz
+https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.9.2.tar.gz
 https://github.com/fastfloat/fast_float/archive/refs/tags/v3.8.1.tar.gz
 https://github.com/fastfloat/fast_float/archive/refs/tags/v5.2.0.tar.gz
 https://github.com/fastfloat/fast_float/archive/refs/tags/v6.1.0.tar.gz
@@ -1743,6 +1748,7 @@ https://github.com/rfc1036/whois/archive/refs/tags/v5.5.20.tar.gz
 https://github.com/rfc1036/whois/archive/refs/tags/v5.5.21.tar.gz
 https://github.com/rfc1036/whois/archive/refs/tags/v5.5.22.tar.gz
 https://github.com/rfjakob/earlyoom/archive/refs/tags/v1.7.tar.gz
+https://github.com/rfjakob/earlyoom/archive/refs/tags/v1.8.tar.gz
 https://github.com/rgburke/grv/archive/refs/tags/v0.3.2.tar.gz
 https://github.com/rhash/RHash/archive/refs/tags/v1.4.4.tar.gz
 https://github.com/rhboot/efibootmgr/archive/refs/tags/18.tar.gz
@@ -1814,6 +1820,7 @@ https://github.com/sharkdp/bat/archive/refs/tags/v0.24.0.tar.gz
 https://github.com/sharkdp/binocle/archive/refs/tags/v0.3.2.tar.gz
 https://github.com/sivel/speedtest-cli/archive/refs/tags/v2.1.3.tar.gz
 https://github.com/skarnet/execline/archive/refs/tags/v2.9.4.0.tar.gz
+https://github.com/skarnet/execline/archive/refs/tags/v2.9.5.0.tar.gz
 https://github.com/skarnet/mdevd/archive/refs/tags/v0.1.6.3.tar.gz
 https://github.com/skarnet/skalibs/archive/refs/tags/v2.14.1.0.tar.gz
 https://github.com/skeeto/u-config/archive/refs/tags/v0.31.1.tar.gz
@@ -1896,6 +1903,7 @@ https://github.com/telegramdesktop/tdesktop/releases/download/v4.16.3/tdesktop-4
 https://github.com/telegramdesktop/tdesktop/releases/download/v4.16.4/tdesktop-4.16.4-full.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v4.16.5/tdesktop-4.16.5-full.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v4.16.6/tdesktop-4.16.6-full.tar.gz
+https://github.com/telegramdesktop/tdesktop/releases/download/v4.16.7/tdesktop-4.16.7-full.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v4.8.10/tdesktop-4.8.10-full.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v4.8.12/tdesktop-4.8.12-full.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v4.9.0/tdesktop-4.9.0-full.tar.gz
@@ -2047,6 +2055,7 @@ https://github.com/yrutschle/sslh/archive/refs/tags/v2.1.0.tar.gz
 https://github.com/yrutschle/sslh/archive/refs/tags/v2.1.1.tar.gz
 https://github.com/zed-industries/zed/archive/refs/tags/v0.123.2.tar.gz
 https://github.com/zellij-org/zellij/archive/refs/tags/v0.39.2.tar.gz
+https://github.com/zellij-org/zellij/archive/refs/tags/v0.40.0.tar.gz
 https://github.com/zeux/volk/archive/refs/tags/vulkan-sdk-1.3.275.0.tar.gz
 https://github.com/zlib-ng/zlib-ng/archive/refs/tags/2.1.3.tar.gz
 https://github.com/zlib-ng/zlib-ng/archive/refs/tags/2.1.4.tar.gz
@@ -2135,6 +2144,7 @@ https://gitlab.gnome.org/GNOME/gcr/-/archive/3.41.1/gcr-3.41.1.tar.bz2
 https://gitlab.gnome.org/GNOME/gcr/-/archive/4.1.0/gcr-4.1.0.tar.bz2
 https://gitlab.gnome.org/GNOME/gcr/-/archive/4.2.0/gcr-4.2.0.tar.bz2
 https://gitlab.gnome.org/GNOME/gcr/-/archive/4.2.1/gcr-4.2.1.tar.bz2
+https://gitlab.gnome.org/GNOME/gcr/-/archive/4.3.0/gcr-4.3.0.tar.bz2
 https://gitlab.gnome.org/GNOME/glib-networking/-/archive/2.76.1/glib-networking-2.76.1.tar.bz2
 https://gitlab.gnome.org/GNOME/glib-networking/-/archive/2.78.0/glib-networking-2.78.0.tar.bz2
 https://gitlab.gnome.org/GNOME/glib-networking/-/archive/2.78.1/glib-networking-2.78.1.tar.bz2
@@ -2546,6 +2556,7 @@ https://www.rarlab.com/rar/unrarsrc-7.0.7.tar.gz
 https://www.sqlite.org/2024/sqlite-autoconf-3450000.tar.gz
 https://www.sqlite.org/2024/sqlite-autoconf-3450100.tar.gz
 https://www.sqlite.org/2024/sqlite-autoconf-3450200.tar.gz
+https://www.sqlite.org/2024/sqlite-autoconf-3450300.tar.gz
 https://www.stunnel.org/downloads/stunnel-5.70.tar.gz
 https://www.stunnel.org/downloads/stunnel-5.71.tar.gz
 https://www.stunnel.org/downloads/stunnel-5.72.tar.gz

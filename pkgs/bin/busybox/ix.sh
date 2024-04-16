@@ -1,5 +1,6 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
-bin/busybox/ix(purec=uclibc/ng,libc=uclibc/ng)
+{# UTC-only date in uclibc/ng #}
+bin/busybox/ix(purec=musl/pure,libc=musl/pure)
 {% endblock %}

@@ -1,3 +1,4 @@
+import base64
 import getpass
 
 
@@ -7,6 +8,12 @@ def tok(p):
 
         if '=' in p:
             k, v = p.split('=', maxsplit=1)
+
+            if k.startswith('embed:'):
+                k = k[6:]
+
+                with open(v, 'rb') as f:
+                    v = base64.b64encode(f.read()).decode()
         else:
             k, v = p, '1'
 

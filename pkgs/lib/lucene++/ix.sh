@@ -1,8 +1,15 @@
 {% extends '//die/c/cmake.sh' %}
 
-{% block fetch %}
-https://github.com/luceneplusplus/LucenePlusPlus/archive/refs/tags/rel_3.0.9.tar.gz
-sha:4e69e29d5d79a976498ef71eab70c9c88c7014708be4450a9fda7780fe93584e
+{% block git_repo %}
+https://github.com/luceneplusplus/LucenePlusPlus
+{% endblock %}
+
+{% block git_commit %}
+76dc90f2b65d81be018c499714ff11e121ba5585
+{% endblock %}
+
+{% block git_sha %}
+4a881d9fa25c46436bca26f701cde333ed52f7bcdc63a88be6b70e5593cef0e2
 {% endblock %}
 
 {% block lib_deps %}

@@ -1,8 +1,8 @@
 {% extends '//die/c/ix.sh' %}
 
 {% block fetch %}
-https://github.com/bfgroup/b2/archive/refs/tags/4.9.2.tar.gz
-sha:7e1a135b308999d2a65fce3eba8f4ffb41ca82ae133f8494cc42cbca63c890de
+https://github.com/bfgroup/b2/archive/refs/tags/5.1.0.tar.gz
+sha:4d1e5d262f8055e6d639703c5c1ae0aca70c7c453d51a2adc28367fe501d9fa5
 {% endblock %}
 
 {% block bld_libs %}

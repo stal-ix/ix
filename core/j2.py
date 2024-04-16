@@ -86,8 +86,8 @@ def group_by(k):
 
 
 def flt_defined(v, s):
-    if v is None:
-        raise Exception(s)
+    if 'jinja2.runtime.Undefined' in str(type(v)):
+        raise Exception(f'{s} undefined')
 
     return v
 
