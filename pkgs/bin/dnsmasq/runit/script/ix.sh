@@ -17,7 +17,7 @@ exec subreaper /bin/dnsmasq \
     --keep-in-foreground \
     --server=/local/127.0.0.1#5354 \
     --pid-file= \
-    --log-facility=/dev/stdout \
+    --log-facility=/proc/self/fd/1 \
     --conf-file=/var/run/resolvconf/dnsmasq_conf.conf \
     --resolv-file=/var/run/resolvconf/dnsmasq_resolv.conf
 {% endblock %}
