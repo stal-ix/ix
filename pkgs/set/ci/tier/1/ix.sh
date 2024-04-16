@@ -8,6 +8,7 @@ bin/wez/term
 #}
 
 {% block run_deps %}
+bin/cosmic/term
 bin/resvg
 bin/i3/status/rust
 bin/shadowsocks/rust
