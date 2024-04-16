@@ -42,6 +42,7 @@ bin/dm(getty=emptty)
 bin/dm(getty=vt)
 {% endif %}
 
+bin/sched/dmesg(delay=100)
 bin/sched/fstrim(delay=1000)
 bin/sched/builddir(delay=1000)
 bin/sched/trashdir(delay=100)
