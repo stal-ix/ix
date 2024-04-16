@@ -1,8 +1,8 @@
 {% extends '//die/c/make.sh' %}
 
 {% block fetch %}
-https://github.com/rfjakob/earlyoom/archive/refs/tags/v1.7.tar.gz
-sha:ebda1279a813d9b0f7860ce5029ccf5ea9f8868be070f2eaf40f90f2e64b6414
+https://github.com/rfjakob/earlyoom/archive/refs/tags/v1.8.tar.gz
+sha:bbb050a2294e60dafc0b129fcec705ef95d9d27f4c9dae1d3b4f25e4f698ae41
 {% endblock %}
 
 {% block bld_libs %}

@@ -1748,6 +1748,7 @@ https://github.com/rfc1036/whois/archive/refs/tags/v5.5.20.tar.gz
 https://github.com/rfc1036/whois/archive/refs/tags/v5.5.21.tar.gz
 https://github.com/rfc1036/whois/archive/refs/tags/v5.5.22.tar.gz
 https://github.com/rfjakob/earlyoom/archive/refs/tags/v1.7.tar.gz
+https://github.com/rfjakob/earlyoom/archive/refs/tags/v1.8.tar.gz
 https://github.com/rgburke/grv/archive/refs/tags/v0.3.2.tar.gz
 https://github.com/rhash/RHash/archive/refs/tags/v1.4.4.tar.gz
 https://github.com/rhboot/efibootmgr/archive/refs/tags/18.tar.gz
@@ -2054,6 +2055,7 @@ https://github.com/yrutschle/sslh/archive/refs/tags/v2.1.0.tar.gz
 https://github.com/yrutschle/sslh/archive/refs/tags/v2.1.1.tar.gz
 https://github.com/zed-industries/zed/archive/refs/tags/v0.123.2.tar.gz
 https://github.com/zellij-org/zellij/archive/refs/tags/v0.39.2.tar.gz
+https://github.com/zellij-org/zellij/archive/refs/tags/v0.40.0.tar.gz
 https://github.com/zeux/volk/archive/refs/tags/vulkan-sdk-1.3.275.0.tar.gz
 https://github.com/zlib-ng/zlib-ng/archive/refs/tags/2.1.3.tar.gz
 https://github.com/zlib-ng/zlib-ng/archive/refs/tags/2.1.4.tar.gz
