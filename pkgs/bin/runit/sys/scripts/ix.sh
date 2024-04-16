@@ -66,6 +66,9 @@ mkdir -p /var/run/runsvdir
 cd /var/run/runsvdir
 exec 1>out
 exec 2>&1
+set -x
+cat /var/log/boot
+rm -rf /var/log
 exec runsvdir -P /etc/services
 EOF
 
