@@ -1,11 +1,11 @@
 {% extends '//die/go/build.sh' %}
 
 {% block go_url %}
-https://github.com/tetratelabs/wazero/archive/refs/tags/v1.7.0.tar.gz
+https://github.com/tetratelabs/wazero/archive/refs/tags/v1.7.1.tar.gz
 {% endblock %}
 
 {% block go_sha %}
-85f0e55db6e8f6cfd075f0d5bed2010fceef7d9584b519d297acae7c3ee37caa
+a5d4a55863ee37fab632d65d3a3a85411d799fba8b6679b599131c8d1ef8296e
 {% endblock %}
 
 {% block unpack %}
