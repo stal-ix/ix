@@ -1,2 +1,2 @@
 set -xue
-dmesg -c | logger
+dmesg -c | logger -t dmesg
