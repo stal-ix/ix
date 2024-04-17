@@ -828,7 +828,7 @@ bin/rhash
 bin/vis
 bin/w3m
 bin/tea
-bin/ladybird
+#bin/ladybird
 bin/shadow
 bin/pdpmake
 bin/premake
