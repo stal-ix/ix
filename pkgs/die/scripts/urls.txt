@@ -594,6 +594,7 @@ https://github.com/FreeRDP/FreeRDP/archive/refs/tags/3.1.0.tar.gz
 https://github.com/FreeRDP/FreeRDP/archive/refs/tags/3.2.0.tar.gz
 https://github.com/FreeRDP/FreeRDP/archive/refs/tags/3.3.0.tar.gz
 https://github.com/FreeRDP/FreeRDP/archive/refs/tags/3.4.0.tar.gz
+https://github.com/FreeRDP/FreeRDP/archive/refs/tags/3.5.0.tar.gz
 https://github.com/GNOME/adwaita-icon-theme/archive/refs/tags/44.0.tar.gz
 https://github.com/GNOME/epiphany/archive/refs/tags/45.0.tar.gz
 https://github.com/GNOME/epiphany/archive/refs/tags/45.1.tar.gz
@@ -1423,6 +1424,7 @@ https://github.com/linuxwacom/libwacom/releases/download/libwacom-2.8.0/libwacom
 https://github.com/linuxwacom/libwacom/releases/download/libwacom-2.9.0/libwacom-2.9.0.tar.xz
 https://github.com/lite-xl/lite-xl/archive/refs/tags/v2.1.1.tar.gz
 https://github.com/lite-xl/lite-xl/archive/refs/tags/v2.1.3.tar.gz
+https://github.com/lite-xl/lite-xl/archive/refs/tags/v2.1.4.tar.gz
 https://github.com/litespeedtech/ls-qpack/archive/refs/tags/v2.2.3.tar.gz
 https://github.com/lloyd/yajl/archive/refs/tags/2.1.0.tar.gz
 https://github.com/llvm/llvm-project/archive/refs/tags/llvmorg-12.0.1.tar.gz
@@ -1821,6 +1823,7 @@ https://github.com/sharkdp/binocle/archive/refs/tags/v0.3.2.tar.gz
 https://github.com/sivel/speedtest-cli/archive/refs/tags/v2.1.3.tar.gz
 https://github.com/skarnet/execline/archive/refs/tags/v2.9.4.0.tar.gz
 https://github.com/skarnet/execline/archive/refs/tags/v2.9.5.0.tar.gz
+https://github.com/skarnet/execline/archive/refs/tags/v2.9.5.1.tar.gz
 https://github.com/skarnet/mdevd/archive/refs/tags/v0.1.6.3.tar.gz
 https://github.com/skarnet/skalibs/archive/refs/tags/v2.14.1.0.tar.gz
 https://github.com/skeeto/u-config/archive/refs/tags/v0.31.1.tar.gz
@@ -1915,6 +1918,7 @@ https://github.com/tenox7/ttyplot/archive/refs/tags/1.6.1.tar.gz
 https://github.com/tesseract-ocr/tesseract/archive/refs/tags/5.2.0.tar.gz
 https://github.com/tetratelabs/wazero/archive/refs/tags/v1.5.0.tar.gz
 https://github.com/tetratelabs/wazero/archive/refs/tags/v1.7.0.tar.gz
+https://github.com/tetratelabs/wazero/archive/refs/tags/v1.7.1.tar.gz
 https://github.com/texstudio-org/texstudio/archive/refs/tags/4.4.1.tar.gz
 https://github.com/texstudio-org/texstudio/archive/refs/tags/4.7.2.tar.gz
 https://github.com/thepowersgang/mrustc/archive/1b1416bb2b44e2c331c7201833305cac29d571e8.zip

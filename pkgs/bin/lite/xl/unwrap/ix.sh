@@ -1,8 +1,8 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://github.com/lite-xl/lite-xl/archive/refs/tags/v2.1.3.tar.gz
-sha:a13c423588a5549e42fda7dfe9064bd3776b6202c170c7bb493d96a692360383
+https://github.com/lite-xl/lite-xl/archive/refs/tags/v2.1.4.tar.gz
+sha:611ab123a131bae990dc2103072a9c102171403b77e30169f557d3516f502cf6
 {% endblock %}
 
 {% block bld_libs %}

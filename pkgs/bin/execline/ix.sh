@@ -1,8 +1,8 @@
 {% extends '//die/c/autohell.sh' %}
 
 {% block fetch %}
-https://github.com/skarnet/execline/archive/refs/tags/v2.9.5.0.tar.gz
-sha:e5d6238f295acb65b1e327af62e0cac381c8c10e3fd3d49e9fd1fb83155cf92e
+https://github.com/skarnet/execline/archive/refs/tags/v2.9.5.1.tar.gz
+sha:75e5b680504b321d78ccf53cbf3f679d26a784dcc5a08fb3cf44c9e127353577
 {% endblock %}
 
 {% block lib_deps %}
