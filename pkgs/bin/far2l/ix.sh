@@ -49,13 +49,6 @@ ${PWD}
 USEWX=no
 {% endblock %}
 
-{% block patch %}
-cat << EOF | dl_stubs >> far2l/src/init.c
-c GetPathTranslationPrefix GetPathTranslationPrefix
-c GetPathTranslationPrefixA GetPathTranslationPrefixA
-EOF
-
-find . -type f | while read l; do
-    sed -e 's|src/main.cpp|src/main.cpp src/init.c|' -i ${l}
-done
+{% block build_flags %}
+wrap_cc
 {% endblock %}
