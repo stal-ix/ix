@@ -1215,6 +1215,7 @@ https://github.com/hyprwm/Hyprland/releases/download/v0.36.0/source-v0.36.0.tar.
 https://github.com/hyprwm/Hyprland/releases/download/v0.37.1/source-v0.37.1.tar.gz
 https://github.com/hyprwm/Hyprland/releases/download/v0.38.1/source-v0.38.1.tar.gz
 https://github.com/hyprwm/Hyprland/releases/download/v0.39.0/source-v0.39.0-rev1.tar.gz
+https://github.com/hyprwm/Hyprland/releases/download/v0.39.1/source-v0.39.1.tar.gz
 https://github.com/hyprwm/hyprcursor/archive/refs/tags/v0.1.4.tar.gz
 https://github.com/hyprwm/hyprcursor/archive/refs/tags/v0.1.5.tar.gz
 https://github.com/hyprwm/hyprcursor/archive/refs/tags/v0.1.6.tar.gz
@@ -2549,6 +2550,7 @@ https://www.mpg123.org/download/mpg123-1.32.6.tar.bz2
 https://www.nano-editor.org/dist/v7/nano-7.2.tar.xz
 https://www.nasm.us/pub/nasm/releasebuilds/2.16.01/nasm-2.16.01.tar.gz
 https://www.nasm.us/pub/nasm/releasebuilds/2.16.02/nasm-2.16.02.tar.gz
+https://www.nasm.us/pub/nasm/releasebuilds/2.16.03/nasm-2.16.03.tar.gz
 https://www.openldap.org/software/download/OpenLDAP/openldap-release/openldap-2.6.5.tgz
 https://www.openssl.org/source/old/1.1.1/openssl-1.1.1j.tar.gz
 https://www.prevanders.net/libdwarf-0.6.0.tar.xz
