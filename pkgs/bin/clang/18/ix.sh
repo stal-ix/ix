@@ -18,3 +18,10 @@ lib/llvm/{{self.clang_major_version().strip()}}/tblgen
 {% endif %}
 {{super()}}
 {% endblock %}
+
+{% block patch %}
+{{super()}}
+base64 -d << EOF | patch clang/lib/Sema/TreeTransform.h
+{% include '0.diff/base64' %}
+EOF
+{% endblock %}
