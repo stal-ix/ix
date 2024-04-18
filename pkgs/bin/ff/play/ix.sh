@@ -1,4 +1,4 @@
-{% extends '//lib/ffmpeg/trunk/ix.sh' %}
+{% extends '//lib/ffmpeg/7/ix.sh' %}
 
 {% block bld_libs %}
 {{super()}}

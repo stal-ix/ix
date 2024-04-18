@@ -5,5 +5,6 @@ bin/clang/lib
 {% endblock %}
 
 {% block run_deps %}
-bld/compiler/unwrap(opt=O3)
+bld/compiler/unwrap
+#(opt=O3)
 {% endblock %}
