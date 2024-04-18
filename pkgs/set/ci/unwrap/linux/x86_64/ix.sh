@@ -37,6 +37,7 @@
 #}
 
 {% block run_deps %}
+bin/btfs
 bin/tinc
 bin/yggdrasil/go
 bin/fire/jail
