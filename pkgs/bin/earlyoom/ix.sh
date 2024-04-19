@@ -1,8 +1,8 @@
 {% extends '//die/c/make.sh' %}
 
 {% block fetch %}
-https://github.com/rfjakob/earlyoom/archive/refs/tags/v1.8.tar.gz
-sha:bbb050a2294e60dafc0b129fcec705ef95d9d27f4c9dae1d3b4f25e4f698ae41
+https://github.com/rfjakob/earlyoom/archive/refs/tags/v1.8.1.tar.gz
+sha:d7d180353216c064a99619e20e3071ac838e6642221d197fd685e6a0cc8bb032
 {% endblock %}
 
 {% block bld_libs %}
@@ -10,6 +10,7 @@ lib/c
 {% endblock %}
 
 {% block bld_tool %}
+bld/fakegit
 bld/fake(tool_name=chcon)
 bld/fake(tool_name=systemctl)
 {% endblock %}
