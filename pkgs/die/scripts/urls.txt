@@ -1281,6 +1281,7 @@ https://github.com/jjsullivan5196/wvkbd/archive/refs/tags/v0.12.tar.gz
 https://github.com/jjsullivan5196/wvkbd/archive/refs/tags/v0.14.1.tar.gz
 https://github.com/jjsullivan5196/wvkbd/archive/refs/tags/v0.14.3.tar.gz
 https://github.com/jjsullivan5196/wvkbd/archive/refs/tags/v0.14.tar.gz
+https://github.com/johang/btfs/archive/refs/tags/v2.24.tar.gz
 https://github.com/johnkerl/miller/archive/refs/tags/v6.11.0.tar.gz
 https://github.com/johnsonjh/OpenVi/archive/refs/tags/7.4.23.tar.gz
 https://github.com/johnsonjh/OpenVi/archive/refs/tags/7.4.24.tar.gz
@@ -1465,6 +1466,8 @@ https://github.com/lunarmodules/luafilesystem/archive/refs/tags/v1_8_0.tar.gz
 https://github.com/lxde/libfm/archive/refs/tags/1.3.2.tar.gz
 https://github.com/lxde/menu-cache/archive/refs/tags/1.1.0.tar.gz
 https://github.com/lxde/pcmanfm/archive/refs/tags/1.3.2.tar.gz
+https://github.com/lxqt/libqtxdg/archive/refs/tags/4.0.0.tar.gz
+https://github.com/lxqt/lxqt-build-tools/archive/refs/tags/2.0.0.tar.gz
 https://github.com/lyonel/lshw/archive/refs/tags/B.02.19.tar.gz
 https://github.com/lyonel/lshw/archive/refs/tags/B.02.20.tar.gz
 https://github.com/lz4/lz4/archive/refs/tags/v1.9.4.tar.gz
@@ -2188,6 +2191,7 @@ https://gitlab.gnome.org/GNOME/gtk/-/archive/4.13.6/gtk-4.13.6.tar.bz2
 https://gitlab.gnome.org/GNOME/gtk/-/archive/4.14.0/gtk-4.14.0.tar.bz2
 https://gitlab.gnome.org/GNOME/gtk/-/archive/4.14.1/gtk-4.14.1.tar.bz2
 https://gitlab.gnome.org/GNOME/gtk/-/archive/4.14.2/gtk-4.14.2.tar.bz2
+https://gitlab.gnome.org/GNOME/gtk/-/archive/4.14.3/gtk-4.14.3.tar.bz2
 https://gitlab.gnome.org/GNOME/gtksourceview/-/archive/5.10.0/gtksourceview-5.10.0.tar.bz2
 https://gitlab.gnome.org/GNOME/gtksourceview/-/archive/5.8.0/gtksourceview-5.8.0.tar.bz2
 https://gitlab.gnome.org/GNOME/json-glib/-/archive/1.6.6/json-glib-1.6.6.tar.bz2
