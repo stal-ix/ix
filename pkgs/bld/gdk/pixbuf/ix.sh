@@ -4,7 +4,7 @@
 lib/c
 lib/png
 lib/glib
-lib/jpeg
+#lib/jpeg
 {% endblock %}
 
 {% block meson_flags %}
