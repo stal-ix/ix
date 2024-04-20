@@ -37,6 +37,7 @@
 #}
 
 {% block run_deps %}
+bin/mount
 bin/btfs
 bin/tinc
 bin/yggdrasil/go
