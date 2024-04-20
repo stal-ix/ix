@@ -16,4 +16,6 @@ lib/kernel
 --without-libmagic
 --disable-all-programs
 --enable-mount
+--disable-makeinstall-chown
+--disable-makeinstall-setuid
 {% endblock %}
