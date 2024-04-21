@@ -37,6 +37,7 @@
 #}
 
 {% block run_deps %}
+bin/gdu
 bin/greetd
 bin/mount
 bin/btfs
