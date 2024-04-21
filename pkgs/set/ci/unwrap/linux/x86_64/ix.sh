@@ -37,6 +37,7 @@
 #}
 
 {% block run_deps %}
+bin/greetd
 bin/mount
 bin/btfs
 bin/tinc
