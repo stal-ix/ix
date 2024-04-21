@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://github.com/AbiWord/enchant/releases/download/v2.6.9/enchant-2.6.9.tar.gz
-sha:d9a5a10dc9b38a43b3a0fa22c76ed6ebb7e09eb535aff62954afcdbd40efff6b
+https://github.com/AbiWord/enchant/releases/download/v2.7.0/enchant-2.7.0.tar.gz
+sha:2a073dc6ebe753196c0674a781ccf321bed25d1c6e43bffb97e2c92af420952c
 {% endblock %}
 
 {% block conf_ver %}
@@ -23,6 +23,10 @@ rawmemchr
 bld/fake(tool_name=groff)
 {% endblock %}
 
-{% block setup_target_flags %}
-export CPPFLAGS="-isystem${PWD}/lib ${CPPFLAGS}"
+{% block cpp_includes %}
+${PWD}/lib
+{% endblock %}
+
+{% block configure_flags %}
+--enable-relocatable
 {% endblock %}
