@@ -223,6 +223,7 @@ https://download.gnome.org/sources/dconf/0.40/dconf-0.40.0.tar.xz
 https://download.gnome.org/sources/evince/44/evince-44.3.tar.xz
 https://download.gnome.org/sources/evince/45/evince-45.0.tar.xz
 https://download.gnome.org/sources/evince/46/evince-46.0.tar.xz
+https://download.gnome.org/sources/gdk-pixbuf/2.42/gdk-pixbuf-2.42.11.tar.xz
 https://download.gnome.org/sources/gdk-pixbuf/2.42/gdk-pixbuf-2.42.6.tar.xz
 https://download.gnome.org/sources/glib/2.74/glib-2.74.5.tar.xz
 https://download.gnome.org/sources/glib/2.78/glib-2.78.0.tar.xz
@@ -623,6 +624,7 @@ https://github.com/GNOME/libshumate/archive/refs/tags/1.1.1.tar.gz
 https://github.com/GNOME/libshumate/archive/refs/tags/1.1.2.tar.gz
 https://github.com/GNOME/libshumate/archive/refs/tags/1.1.3.tar.gz
 https://github.com/GNOME/libshumate/archive/refs/tags/1.2.0.tar.gz
+https://github.com/GNOME/libshumate/archive/refs/tags/1.2.1.tar.gz
 https://github.com/GStreamer/orc/archive/refs/tags/0.4.34.tar.gz
 https://github.com/GStreamer/orc/archive/refs/tags/0.4.35.tar.gz
 https://github.com/GStreamer/orc/archive/refs/tags/0.4.37.tar.gz
@@ -661,9 +663,11 @@ https://github.com/JuliaStrings/utf8proc/archive/refs/tags/v2.8.0.tar.gz
 https://github.com/JuliaStrings/utf8proc/archive/refs/tags/v2.9.0.tar.gz
 https://github.com/Juniper/libxo/archive/refs/tags/1.6.0.tar.gz
 https://github.com/Juniper/libxo/archive/refs/tags/1.7.3.tar.gz
+https://github.com/Juniper/libxo/archive/refs/tags/1.7.5.tar.gz
 https://github.com/KDAB/KDSingleApplication/archive/refs/tags/v1.0.0.tar.gz
 https://github.com/KDAB/KDSingleApplication/archive/refs/tags/v1.1.0.tar.gz
 https://github.com/KDE/extra-cmake-modules/archive/refs/tags/v5.247.0.tar.gz
+https://github.com/KDE/extra-cmake-modules/archive/refs/tags/v6.1.0.tar.gz
 https://github.com/KDE/kcoreaddons/archive/refs/tags/v5.247.0.tar.gz
 https://github.com/KDE/kimageformats/archive/refs/tags/v5.112.0.tar.gz
 https://github.com/KDE/kimageformats/archive/refs/tags/v5.98.0.tar.gz
@@ -811,6 +815,7 @@ https://github.com/YaLTeR/niri/archive/refs/tags/v0.1.0.tar.gz
 https://github.com/YaLTeR/niri/archive/refs/tags/v0.1.1.tar.gz
 https://github.com/YaLTeR/niri/archive/refs/tags/v0.1.2.tar.gz
 https://github.com/YaLTeR/niri/archive/refs/tags/v0.1.4.tar.gz
+https://github.com/YaLTeR/niri/archive/refs/tags/v0.1.5.tar.gz
 https://github.com/Z3Prover/z3/archive/refs/tags/z3-4.12.2.tar.gz
 https://github.com/Z3Prover/z3/archive/refs/tags/z3-4.12.3.tar.gz
 https://github.com/Z3Prover/z3/archive/refs/tags/z3-4.12.4.tar.gz
@@ -1150,6 +1155,7 @@ https://github.com/google/gumbo-parser/archive/refs/tags/v0.10.1.tar.gz
 https://github.com/google/highway/archive/refs/tags/1.0.5.tar.gz
 https://github.com/google/highway/archive/refs/tags/1.0.7.tar.gz
 https://github.com/google/highway/archive/refs/tags/1.1.0.tar.gz
+https://github.com/google/liblc3/archive/refs/tags/v1.1.1.tar.gz
 https://github.com/google/minijail/archive/refs/tags/linux-v18.tar.gz
 https://github.com/google/re2/archive/refs/tags/2023-09-01.tar.gz
 https://github.com/google/re2/archive/refs/tags/2023-11-01.tar.gz
@@ -1466,6 +1472,7 @@ https://github.com/lunarmodules/luafilesystem/archive/refs/tags/v1_8_0.tar.gz
 https://github.com/lxde/libfm/archive/refs/tags/1.3.2.tar.gz
 https://github.com/lxde/menu-cache/archive/refs/tags/1.1.0.tar.gz
 https://github.com/lxde/pcmanfm/archive/refs/tags/1.3.2.tar.gz
+https://github.com/lxqt/liblxqt/archive/refs/tags/2.0.0.tar.gz
 https://github.com/lxqt/libqtxdg/archive/refs/tags/4.0.0.tar.gz
 https://github.com/lxqt/lxqt-build-tools/archive/refs/tags/2.0.0.tar.gz
 https://github.com/lyonel/lshw/archive/refs/tags/B.02.19.tar.gz
@@ -1764,6 +1771,7 @@ https://github.com/rfc1036/whois/archive/refs/tags/v5.5.20.tar.gz
 https://github.com/rfc1036/whois/archive/refs/tags/v5.5.21.tar.gz
 https://github.com/rfc1036/whois/archive/refs/tags/v5.5.22.tar.gz
 https://github.com/rfjakob/earlyoom/archive/refs/tags/v1.7.tar.gz
+https://github.com/rfjakob/earlyoom/archive/refs/tags/v1.8.1.tar.gz
 https://github.com/rfjakob/earlyoom/archive/refs/tags/v1.8.tar.gz
 https://github.com/rgburke/grv/archive/refs/tags/v0.3.2.tar.gz
 https://github.com/rhash/RHash/archive/refs/tags/v1.4.4.tar.gz
@@ -1882,6 +1890,7 @@ https://github.com/swaywm/wlroots/archive/refs/tags/0.12.0.tar.gz
 https://github.com/syslog-ng/syslog-ng/releases/download/syslog-ng-4.3.1/syslog-ng-4.3.1.tar.gz
 https://github.com/syslog-ng/syslog-ng/releases/download/syslog-ng-4.4.0/syslog-ng-4.4.0.tar.gz
 https://github.com/syslog-ng/syslog-ng/releases/download/syslog-ng-4.6.0/syslog-ng-4.6.0.tar.gz
+https://github.com/syslog-ng/syslog-ng/releases/download/syslog-ng-4.7.1/syslog-ng-4.7.1.tar.gz
 https://github.com/tdlib/td/archive/refs/tags/v1.8.0.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v4.10.1/tdesktop-4.10.1-full.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v4.10.2/tdesktop-4.10.2-full.tar.gz
@@ -2018,6 +2027,7 @@ https://github.com/vslavik/poedit/releases/download/v3.4.2-oss/poedit-3.4.2.tar.
 https://github.com/vstakhov/libucl/archive/refs/tags/0.8.2.tar.gz
 https://github.com/vstakhov/libucl/archive/refs/tags/0.9.0.tar.gz
 https://github.com/vstakhov/libucl/archive/refs/tags/0.9.1.tar.gz
+https://github.com/vstakhov/libucl/archive/refs/tags/0.9.2.tar.gz
 https://github.com/warmcat/libwebsockets/archive/refs/tags/v4.3.2.tar.gz
 https://github.com/wasmx/fizzy/archive/refs/tags/v0.8.0.tar.gz
 https://github.com/webmproject/libvpx/archive/refs/tags/v1.13.0.tar.gz
@@ -2269,6 +2279,7 @@ https://imagemagick.org/archive/releases/ImageMagick-7.1.1-23.tar.xz
 https://imagemagick.org/archive/releases/ImageMagick-7.1.1-27.tar.xz
 https://imagemagick.org/archive/releases/ImageMagick-7.1.1-28.tar.xz
 https://imagemagick.org/archive/releases/ImageMagick-7.1.1-29.tar.xz
+https://invent.kde.org/frameworks/kwindowsystem/-/archive/v6.1.0/kwindowsystem-v6.1.0.tar.bz2
 https://invisible-island.net/archives/dialog/dialog-1.3-20240101.tgz
 https://invisible-mirror.net/archives/byacc/byacc-20211224.tgz
 https://invisible-mirror.net/archives/byacc/byacc-20230521.tgz
@@ -2485,6 +2496,7 @@ https://www.crufty.net/ftp/pub/sjg/bmake-20240301.tar.gz
 https://www.crufty.net/ftp/pub/sjg/bmake-20240309.tar.gz
 https://www.crufty.net/ftp/pub/sjg/bmake-20240314.tar.gz
 https://www.crufty.net/ftp/pub/sjg/bmake-20240404.tar.gz
+https://www.crufty.net/ftp/pub/sjg/bmake-20240414.tar.gz
 https://www.eecis.udel.edu/~ntp/ntp_spool/ntp4/ntp-4.2/ntp-4.2.8p15.tar.gz
 https://www.freedesktop.org/software/colord/releases/colord-1.4.6.tar.xz
 https://www.freedesktop.org/software/fontconfig/release/fontconfig-2.14.2.tar.xz

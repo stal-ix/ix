@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://github.com/Juniper/libxo/archive/refs/tags/1.7.3.tar.gz
-sha:3fddffd39ae5abee610dbee3a17f91437f24ad38fd84710a7b1147f6ff165dda
+https://github.com/Juniper/libxo/archive/refs/tags/1.7.5.tar.gz
+sha:a4d3bd1cbbbfe7de6dad7a7e6f87757f9881753eb32d6ce6894e00e6eb28f841
 {% endblock %}
 
 {% block lib_deps %}
