@@ -1,8 +1,8 @@
 {% extends '//lib/vte/t/ix.sh' %}
 
 {% block fetch %}
-https://gitlab.gnome.org/GNOME/vte/-/archive/0.76.0/vte-0.76.0.tar.bz2
-sha:7d235b3699107a308515e2a333d5b3ca55a7568de756b04c28f333e6b5cb735b
+https://gitlab.gnome.org/GNOME/vte/-/archive/0.76.1/vte-0.76.1.tar.bz2
+sha:ca50048f23c1ee1c1c009ffe4d32648e31232e2f4ec9d068b83bd6da7d2b06ce
 {% endblock %}
 
 {% block lib_deps %}

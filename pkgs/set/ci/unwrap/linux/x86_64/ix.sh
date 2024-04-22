@@ -37,6 +37,7 @@
 #}
 
 {% block run_deps %}
+bin/waycheck
 bin/gdu
 bin/greetd
 bin/mount

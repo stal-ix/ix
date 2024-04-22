@@ -9,8 +9,8 @@ sha:291135923b6da1c71b7415206b35d4b6e7376d6bfdb1210eca231451893658ed
 lib/c
 lib/c++
 lib/wayland
-lib/xkb/common
 lib/qt/6/base
+lib/xkb/common
 {% endblock %}
 
 {% block bld_tool %}

@@ -687,4 +687,10 @@ rtl_nic/rtl8402-1.fw
 rtl_nic/rtl8411-1.fw
 rtl_nic/rtl8411-2.fw
 {% endblock %}
+
+{% block regulatory %}
+regulatory.db
+regulatory.bin
+regulatory.db.p7s
+{% endblock %}
 {% endblock %}
