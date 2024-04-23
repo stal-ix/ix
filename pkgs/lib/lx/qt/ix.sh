@@ -1,4 +1,4 @@
-{% extends '//die/c/cmake.sh' %}
+{% extends '//die/c/lxqt.sh' %}
 
 {% block fetch %}
 https://github.com/lxqt/liblxqt/archive/refs/tags/2.0.0.tar.gz
@@ -13,12 +13,8 @@ lib/qt/6/base
 lib/k/window/system
 {% endblock %}
 
-{% block bld_tool %}
-bld/lxqt
-bld/qt/6/tools
-{% endblock %}
-
 {% block cmake_flags %}
+{{super()}}
 BUILD_BACKLIGHT_LINUX_BACKEND=OFF
 {% endblock %}
 

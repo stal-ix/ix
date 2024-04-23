@@ -1,4 +1,4 @@
-{% extends '//die/c/cmake.sh' %}
+{% extends '//die/c/lxqt.sh' %}
 
 {% block fetch %}
 https://github.com/lxqt/libqtxdg/archive/refs/tags/4.0.0.tar.gz
@@ -10,10 +10,6 @@ lib/c
 lib/c++
 lib/qt/6/svg
 lib/qt/6/base
-{% endblock %}
-
-{% block bld_tool %}
-bld/lxqt
 {% endblock %}
 
 {% block c_rename_symbol %}

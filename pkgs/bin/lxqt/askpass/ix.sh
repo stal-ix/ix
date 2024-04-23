@@ -1,4 +1,4 @@
-{% extends '//die/c/cmake.sh' %}
+{% extends '//die/c/lxqt.sh' %}
 
 {% block fetch %}
 https://github.com/lxqt/lxqt-openssh-askpass/archive/refs/tags/2.0.0.tar.gz
@@ -15,6 +15,5 @@ lib/qt/6/deps
 
 {% block bld_tool %}
 bld/perl
-bld/lxqt
-bld/qt/6/tools
+{{super()}}
 {% endblock %}
