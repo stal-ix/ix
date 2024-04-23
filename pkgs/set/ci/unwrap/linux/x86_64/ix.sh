@@ -37,7 +37,7 @@
 #}
 
 {% block run_deps %}
-bin/lxqt/askpass
+#bin/lxqt/askpass
 bin/waycheck
 bin/gdu
 bin/greetd

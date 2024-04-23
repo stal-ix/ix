@@ -1,7 +1,5 @@
 {% extends '//die/c/cmake.sh' %}
 
-{# hard X11 dep #}
-
 {% block fetch %}
 https://github.com/lxqt/liblxqt/archive/refs/tags/2.0.0.tar.gz
 sha:464090c3e3eba5204c59500b2585c4210b44f9438438864fcceb3d09669611a5
