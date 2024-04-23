@@ -25,3 +25,7 @@ QIconCacheGtkReader
 {% block build_flags %}
 wrap_cc
 {% endblock %}
+
+{% block cmake_flags %}
+QTXDG_DEFAPPS_CONF_INSTALL_DIR=${out}/share/xdg
+{% endblock %}
