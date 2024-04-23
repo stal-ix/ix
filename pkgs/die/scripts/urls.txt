@@ -1211,6 +1211,7 @@ https://github.com/htop-dev/htop/archive/refs/tags/3.3.0.tar.gz
 https://github.com/hughsie/libgusb/archive/refs/tags/0.4.6.tar.gz
 https://github.com/hughsie/libgusb/archive/refs/tags/0.4.7.tar.gz
 https://github.com/hughsie/libgusb/archive/refs/tags/0.4.8.tar.gz
+https://github.com/hughsie/libgusb/archive/refs/tags/0.4.9.tar.gz
 https://github.com/hughsie/libxmlb/archive/refs/tags/0.3.14.tar.gz
 https://github.com/hughsie/libxmlb/archive/refs/tags/0.3.15.tar.gz
 https://github.com/hughsie/libxmlb/archive/refs/tags/0.3.18.tar.gz
