@@ -23,3 +23,9 @@ bld/qt/6/tools
 {% block cmake_flags %}
 BUILD_BACKLIGHT_LINUX_BACKEND=OFF
 {% endblock %}
+
+{% block patch %}
+sed -e 's|.*X11.*||' -i CMakeLists.txt
+>lxqtscreensaver.cpp
+>lxqtsingleapplication.cpp
+{% endblock %}
