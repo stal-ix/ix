@@ -21,6 +21,7 @@ lib/qt/6/deps
 lib/qt/keychain
 lib/qt/6/multimedia
 lib/qt/6/declarative
+lib/qt/6/declarative/deps
 {% endblock %}
 
 {% block bld_tool %}

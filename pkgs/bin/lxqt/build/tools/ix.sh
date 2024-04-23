@@ -18,4 +18,3 @@ bld/qt/6
 sed -e 's|.*set.*LXQT.*tools/share.*||' \
     -i ${out}/share/cmake/lxqt2-build-tools/modules/LXQtConfigVars.cmake
 {% endblock %}
-
