@@ -572,6 +572,7 @@ https://github.com/AcademySoftwareFoundation/openexr/archive/refs/tags/v3.2.1.ta
 https://github.com/AcademySoftwareFoundation/openexr/archive/refs/tags/v3.2.126.tar.gz
 https://github.com/AcademySoftwareFoundation/openexr/archive/refs/tags/v3.2.2.tar.gz
 https://github.com/Alexays/Waybar/archive/refs/tags/0.10.0.tar.gz
+https://github.com/Alexays/Waybar/archive/refs/tags/0.10.1.tar.gz
 https://github.com/Alexays/Waybar/archive/refs/tags/0.9.22.tar.gz
 https://github.com/Alexays/Waybar/archive/refs/tags/0.9.23.tar.gz
 https://github.com/Alexays/Waybar/archive/refs/tags/0.9.24.tar.gz
@@ -1215,6 +1216,7 @@ https://github.com/hughsie/libgusb/archive/refs/tags/0.4.9.tar.gz
 https://github.com/hughsie/libxmlb/archive/refs/tags/0.3.14.tar.gz
 https://github.com/hughsie/libxmlb/archive/refs/tags/0.3.15.tar.gz
 https://github.com/hughsie/libxmlb/archive/refs/tags/0.3.18.tar.gz
+https://github.com/hughsie/libxmlb/archive/refs/tags/0.3.19.tar.gz
 https://github.com/hunspell/hunspell/archive/refs/tags/v1.7.1.tar.gz
 https://github.com/hyperrealm/libconfig/archive/refs/tags/v1.7.3.tar.gz
 https://github.com/hyprwm/Hyprland/releases/download/v0.29.0/source-v0.29.0.tar.gz
