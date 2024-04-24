@@ -1,8 +1,8 @@
 {% extends '//die/c/make.sh' %}
 
 {% block fetch %}
-http://download.savannah.gnu.org/releases/dmidecode/dmidecode-3.5.tar.xz
-sha:79d76735ee8e25196e2a722964cf9683f5a09581503537884b256b01389cc073
+http://git.savannah.nongnu.org/cgit/dmidecode.git/snapshot/dmidecode-3-6.tar.gz
+sha:fe25e4fe567dedf213c5fed0978cb684613ad599d9a50d710476147f58cdb2c1
 {% endblock %}
 
 {% block bld_libs %}

@@ -1,4 +1,4 @@
-{% extends '//die/c/cmake.sh' %}
+{% extends '//die/c/lxqt.sh' %}
 
 {% block fetch %}
 https://github.com/lxqt/libqtxdg/archive/refs/tags/4.0.0.tar.gz
@@ -12,10 +12,6 @@ lib/qt/6/svg
 lib/qt/6/base
 {% endblock %}
 
-{% block bld_tool %}
-bld/lxqt
-{% endblock %}
-
 {% block c_rename_symbol %}
 ScalableEntry
 PixmapEntry
@@ -24,4 +20,8 @@ QIconCacheGtkReader
 
 {% block build_flags %}
 wrap_cc
+{% endblock %}
+
+{% block cmake_flags %}
+QTXDG_DEFAPPS_CONF_INSTALL_DIR=${out}/share/xdg
 {% endblock %}
