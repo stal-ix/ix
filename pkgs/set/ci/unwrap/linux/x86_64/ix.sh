@@ -37,6 +37,7 @@
 #}
 
 {% block run_deps %}
+bin/bcache/tools
 bin/lxqt/askpass
 bin/waycheck
 bin/gdu
