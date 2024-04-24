@@ -116,7 +116,7 @@ bin/app/image/tool
 bin/cage/break
 bin/dialog
 bin/niri
-bin/bcachefs/tools
+bin/bcache/fs/tools
 bin/cargo/whatfeatures
 bin/alacritty
 bin/bat
