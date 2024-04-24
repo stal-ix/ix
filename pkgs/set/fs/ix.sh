@@ -10,5 +10,6 @@ bin/dosfstools
 bin/f2fs/tools
 bin/exfat/progs
 bin/btrfs/progs
-bin/bcachefs/tools
+bin/bcache/tools
+bin/bcache/fs/tools
 {% endblock %}

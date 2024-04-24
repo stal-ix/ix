@@ -6,6 +6,7 @@
 --enable-libuuid-force-uuidd
 --enable-libblkid
 --enable-libmount
+--enable-libsmartcols
 --without-cap-ng
 --without-libz
 --without-libmagic
