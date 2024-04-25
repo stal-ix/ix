@@ -1,8 +1,8 @@
 {% extends '//die/c/kconfig.sh' %}
 
 {% block fetch %}
-https://github.com/landley/toybox/archive/refs/tags/0.8.10.tar.gz
-sha:3c31e235fe87e74e6c6cf7cd7299fcbffb0f4a4834dae607aa26bb4f1583549a
+https://github.com/landley/toybox/archive/refs/tags/0.8.11.tar.gz
+sha:83a3a88cbe1fa30f099c2f58295baef4637aaf988085aaea56e03aa29168175d
 {% endblock %}
 
 {% block bld_libs %}
@@ -12,6 +12,7 @@ lib/kernel
 
 {% block bld_tool %}
 bld/bash
+bin/gzip
 {% endblock %}
 
 {% block setup_target_flags %}
