@@ -40,7 +40,9 @@ bin/mdns/dns/runit
 bin/dnsmasq/runit
 {% endif %}
 
-{% if vt %}
+{% if getty %}
+bin/dm
+{% elif vt %}
 bin/dm(getty=vt)
 {% elif mingetty %}
 bin/dm(getty=mingetty)
