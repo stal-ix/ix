@@ -85,16 +85,19 @@ cat << EOF > 00-env.sh
 export PATH=/bin
 EOF
 
-cat << EOF > 01-mount-ro.sh
+cat << EOF > 01-00-mount-ro.sh
 # mount ro
-mount -t devtmpfs devtmpfs /dev
 mount -t sysfs sysfs /sys
 mount -t debugfs none /sys/kernel/debug
 mount -t proc proc /proc
 mount -t cgroup2 none /sys/fs/cgroup
-mkdir /dev/pts /dev/shm
-mount -t devpts devpts /dev/pts
-mount -t tmpfs shmfs /dev/shm
+EOF
+
+cat << EOF > 01-02-mount-ro.sh
+# populate some nodes
+ln -s /proc/self/fd/0 /dev/stdin
+ln -s /proc/self/fd/1 /dev/stdout
+ln -s /proc/self/fd/2 /dev/stderr
 EOF
 
 cat << EOF > 10-mount-rw.sh

@@ -20,7 +20,7 @@ mount -t tmpfs shmfs /dev/shm
 EOF
 
 cat << EOF > 01-03-mount-ro.sh
-# setup /dev
-mdevd-coldplug
+# one shot setup /dev
+mdev -s
 EOF
 {% endblock %}
