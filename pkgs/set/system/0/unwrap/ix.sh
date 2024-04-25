@@ -15,6 +15,8 @@ bin/acpi/d/runit
 bin/mdevd/runit
 {% elif devfs %}
 bin/runit/devfs
+{% elif mdev %}
+bin/busybox/mdev
 {% else %}
 bin/mdevd/runit
 {% endif %}
