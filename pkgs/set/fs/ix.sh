@@ -1,6 +1,7 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
+bin/mdadm
 bin/parted
 bin/xfsprogs
 bin/gptfdisk
