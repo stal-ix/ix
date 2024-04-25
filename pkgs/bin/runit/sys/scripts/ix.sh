@@ -93,14 +93,6 @@ mount -t proc proc /proc
 mount -t cgroup2 none /sys/fs/cgroup
 EOF
 
-cat << EOF > 01-01-mount-ro.sh
-# mount dev
-mount -t devtmpfs devtmpfs /dev
-mkdir /dev/pts /dev/shm
-mount -t devpts devpts /dev/pts
-mount -t tmpfs shmfs /dev/shm
-EOF
-
 cat << EOF > 01-02-mount-ro.sh
 # populate some nodes
 ln -s /proc/self/fd/0 /dev/stdin

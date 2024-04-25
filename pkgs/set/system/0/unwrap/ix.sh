@@ -11,7 +11,14 @@ bin/sndio/runit
 bin/acpi/d/runit
 {% endif %}
 
+{% if mdevd %}
 bin/mdevd/runit
+{% elif devfs %}
+bin/runit/devfs
+{% else %}
+bin/mdevd/runit
+{% endif %}
+
 bin/ix
 bin/runit/sys
 bin/dbus/runit
@@ -19,7 +26,6 @@ bin/dhcpcd/runit
 bin/openresolv/runit
 
 bin/chrony/runit
-#bin/busybox/ntpd/runit
 
 # https://wiki.musl-libc.org/functional-differences-from-glibc.html#Name-Resolver/DNS
 {% if unbound %}
