@@ -11,15 +11,7 @@ bin/sndio/runit
 bin/acpi/d/runit
 {% endif %}
 
-{% if mdevd %}
-bin/mdevd/runit
-{% elif devfs %}
-bin/runit/devfs
-{% elif mdev %}
-bin/busybox/mdev
-{% else %}
-bin/mdevd/runit
-{% endif %}
+set/system/0/dev/{{dev_mngr or 'mdevd'}}
 
 bin/ix
 bin/runit/sys
