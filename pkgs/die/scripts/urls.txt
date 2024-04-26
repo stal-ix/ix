@@ -713,6 +713,7 @@ https://github.com/KhronosGroup/glslang/archive/refs/tags/sdk-1.3.261.1.tar.gz
 https://github.com/KhronosGroup/glslang/archive/refs/tags/vulkan-sdk-1.3.275.0.tar.gz
 https://github.com/Kistler-Group/sdbus-cpp/archive/refs/tags/v1.4.0.tar.gz
 https://github.com/Kistler-Group/sdbus-cpp/archive/refs/tags/v1.5.0.tar.gz
+https://github.com/Kistler-Group/sdbus-cpp/archive/refs/tags/v1.6.0.tar.gz
 https://github.com/Kitware/CMake/archive/refs/tags/v3.24.1.tar.gz
 https://github.com/Kitware/CMake/archive/refs/tags/v3.27.4.tar.gz
 https://github.com/Kitware/CMake/archive/refs/tags/v3.27.5.tar.gz
@@ -1045,6 +1046,7 @@ https://github.com/extrawurst/gitui/archive/refs/tags/v0.26.1.tar.gz
 https://github.com/eza-community/eza/archive/refs/tags/v0.17.2.tar.gz
 https://github.com/eza-community/eza/archive/refs/tags/v0.17.3.tar.gz
 https://github.com/eza-community/eza/archive/refs/tags/v0.18.0.tar.gz
+https://github.com/eza-community/eza/archive/refs/tags/v0.18.13.tar.gz
 https://github.com/eza-community/eza/archive/refs/tags/v0.18.4.tar.gz
 https://github.com/eza-community/eza/archive/refs/tags/v0.18.5.tar.gz
 https://github.com/facebook/zstd/archive/refs/tags/v1.5.5.tar.gz
@@ -1106,6 +1108,7 @@ https://github.com/frankosterfeld/qtkeychain/archive/refs/tags/0.14.1.tar.gz
 https://github.com/freebsd/freebsd-src/archive/refs/tags/release/14.0.0.tar.gz
 https://github.com/freequaos/schedtool/archive/refs/tags/schedtool-1.3.0.tar.gz
 https://github.com/fribidi/fribidi/archive/refs/tags/v1.0.13.tar.gz
+https://github.com/fribidi/fribidi/archive/refs/tags/v1.0.14.tar.gz
 https://github.com/fukuchi/libqrencode/archive/refs/tags/v4.1.1.tar.gz
 https://github.com/g-truc/glm/archive/refs/tags/0.9.9.8.tar.gz
 https://github.com/g-truc/glm/archive/refs/tags/1.0.0.tar.gz
@@ -1355,6 +1358,7 @@ https://github.com/labwc/labwc/archive/refs/tags/0.6.6.tar.gz
 https://github.com/labwc/labwc/archive/refs/tags/0.7.0.tar.gz
 https://github.com/labwc/labwc/archive/refs/tags/0.7.1.tar.gz
 https://github.com/landley/toybox/archive/refs/tags/0.8.10.tar.gz
+https://github.com/landley/toybox/archive/refs/tags/0.8.11.tar.gz
 https://github.com/lavv17/lftp/releases/download/v4.8.3/lftp-4.8.3.tar.gz
 https://github.com/lbonn/rofi/releases/download/1.7.3%2Bwayland1/rofi-1.7.3+wayland1.tar.xz
 https://github.com/leo-arch/clifm/archive/refs/tags/v1.14.5.tar.gz
@@ -1407,6 +1411,7 @@ https://github.com/libmpack/libmpack/archive/refs/tags/1.0.5.tar.gz
 https://github.com/libproxy/libproxy/archive/refs/tags/0.5.3.tar.gz
 https://github.com/libproxy/libproxy/archive/refs/tags/0.5.4.tar.gz
 https://github.com/libproxy/libproxy/archive/refs/tags/0.5.5.tar.gz
+https://github.com/libproxy/libproxy/archive/refs/tags/0.5.6.tar.gz
 https://github.com/librsync/librsync/releases/download/v2.3.4/librsync-2.3.4.tar.gz
 https://github.com/libsdl-org/SDL/archive/refs/tags/release-2.30.0.tar.gz
 https://github.com/libsdl-org/SDL/archive/refs/tags/release-2.30.1.tar.gz
@@ -1550,6 +1555,7 @@ https://github.com/mity/md4c/archive/refs/tags/release-0.5.1.tar.gz
 https://github.com/mjansson/rpmalloc/archive/refs/tags/1.4.4.tar.gz
 https://github.com/mkj/dropbear/archive/refs/tags/DROPBEAR_2022.83.tar.gz
 https://github.com/mkj/dropbear/archive/refs/tags/DROPBEAR_2024.84.tar.gz
+https://github.com/mkj/dropbear/archive/refs/tags/DROPBEAR_2024.85.tar.gz
 https://github.com/mm2/Little-CMS/archive/refs/tags/lcms2.15.tar.gz
 https://github.com/mm2/Little-CMS/archive/refs/tags/lcms2.16.tar.gz
 https://github.com/mobile-shell/mosh/archive/refs/tags/mosh-1.4.0.tar.gz
@@ -2614,6 +2620,7 @@ https://www.rarlab.com/rar/unrarsrc-7.0.4.tar.gz
 https://www.rarlab.com/rar/unrarsrc-7.0.5.tar.gz
 https://www.rarlab.com/rar/unrarsrc-7.0.6.tar.gz
 https://www.rarlab.com/rar/unrarsrc-7.0.7.tar.gz
+https://www.rarlab.com/rar/unrarsrc-7.0.8.tar.gz
 https://www.sqlite.org/2024/sqlite-autoconf-3450000.tar.gz
 https://www.sqlite.org/2024/sqlite-autoconf-3450100.tar.gz
 https://www.sqlite.org/2024/sqlite-autoconf-3450200.tar.gz
