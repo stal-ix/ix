@@ -37,6 +37,7 @@
 #}
 
 {% block run_deps %}
+bin/yazi
 bin/util/wipefs
 bin/bcache/tools
 bin/lxqt/askpass
