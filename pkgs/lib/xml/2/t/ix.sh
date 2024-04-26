@@ -18,5 +18,4 @@ lib/iconv
 --without-python
 --with-legacy
 --with-sax1
---enable_shared=xno
 {% endblock %}

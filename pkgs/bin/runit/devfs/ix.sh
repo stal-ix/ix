@@ -11,6 +11,5 @@ mount -t devpts devpts /dev/pts
 mount -t tmpfs shmfs /dev/shm
 # apply some quirks from mdev.conf
 chmod 0666 /dev/dri/*
-chmod 0666 /dev/snd/*
 EOF
 {% endblock %}
