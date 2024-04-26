@@ -3,13 +3,12 @@
 {% block bld_libs %}
 lib/c
 lib/alsa
-lib/udev
-lib/intl
-lib/curses
-lib/samplerate
+lib/intl/no
 {% endblock %}
 
 {% block configure_flags %}
+--disable-alsaloop
+--disable-alsaconf
+--disable-alsamixer
 {{super()}}
---with-curses=ncurses
 {% endblock %}
