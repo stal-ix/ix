@@ -37,6 +37,7 @@
 #}
 
 {% block run_deps %}
+bin/openntpd
 #bin/cups
 bin/yazi
 bin/util/wipefs
