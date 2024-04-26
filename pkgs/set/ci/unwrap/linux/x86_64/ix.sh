@@ -37,7 +37,7 @@
 #}
 
 {% block run_deps %}
-bin/cups
+#bin/cups
 bin/yazi
 bin/util/wipefs
 bin/bcache/tools
