@@ -12,7 +12,7 @@ lib/iconv
 
 {% block configure_flags %}
 --with-ftp=off
---with-http=off
+--with-http=no
 --with-modules=off
 --disable-python
 --without-python

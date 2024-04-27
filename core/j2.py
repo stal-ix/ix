@@ -92,6 +92,10 @@ def flt_defined(v, s):
     return v
 
 
+def flt_strip_prefix(v, s):
+    return v.removeprefix(s)
+
+
 class Env(jinja2.Environment):
     def __init__(self, fs):
         jinja2.Environment.__init__(self, loader=fs, auto_reload=False, cache_size=-1, trim_blocks=True, lstrip_blocks=True, optimized=True)
@@ -106,6 +110,7 @@ class Env(jinja2.Environment):
         self.filters['lines'] = lambda x: list(x.strip().split('\n'))
         self.filters['eval'] = self.eval
         self.filters['defined'] = flt_defined
+        self.filters['strip_prefix'] = flt_strip_prefix
         self.kv = {}
 
     def eval(self, v, code, *args):

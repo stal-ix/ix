@@ -175,6 +175,7 @@ https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.8.5.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.8.6.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.8.7.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.8.tar.xz
+https://cdn.openbsd.org/pub/OpenBSD/OpenNTPD/openntpd-6.8p1.tar.gz
 https://cmocka.org/files/1.1/cmocka-1.1.7.tar.xz
 https://codeberg.org/dnkl/fcft/archive/2.5.0.tar.gz
 https://codeberg.org/dnkl/fcft/archive/3.1.6.tar.gz
@@ -567,6 +568,7 @@ https://github.com/AbiWord/enchant/releases/download/v2.6.7/enchant-2.6.7.tar.gz
 https://github.com/AbiWord/enchant/releases/download/v2.6.8/enchant-2.6.8.tar.gz
 https://github.com/AbiWord/enchant/releases/download/v2.6.9/enchant-2.6.9.tar.gz
 https://github.com/AbiWord/enchant/releases/download/v2.7.0/enchant-2.7.0.tar.gz
+https://github.com/AbiWord/enchant/releases/download/v2.7.1/enchant-2.7.1.tar.gz
 https://github.com/AcademySoftwareFoundation/Imath/archive/refs/tags/v3.1.10.tar.gz
 https://github.com/AcademySoftwareFoundation/Imath/archive/refs/tags/v3.1.11.tar.gz
 https://github.com/AcademySoftwareFoundation/Imath/archive/refs/tags/v3.1.9.tar.gz
@@ -775,6 +777,7 @@ https://github.com/NixOS/nix/archive/refs/tags/2.22.0.tar.gz
 https://github.com/NixOS/patchelf/archive/refs/tags/0.18.0.tar.gz
 https://github.com/Novum/vkQuake/archive/refs/tags/1.30.1.tar.gz
 https://github.com/Old-Man-Programmer/tree/archive/refs/tags/2.1.1.tar.gz
+https://github.com/OpenPrinting/cups/archive/refs/tags/v2.4.8.tar.gz
 https://github.com/OpenTTD/OpenTTD/archive/refs/tags/13.4.tar.gz
 https://github.com/OpenTTD/OpenTTD/archive/refs/tags/14.0.tar.gz
 https://github.com/OpenVPN/openvpn/archive/refs/tags/v2.6.10.tar.gz
@@ -1115,6 +1118,7 @@ https://github.com/g-truc/glm/archive/refs/tags/1.0.0.tar.gz
 https://github.com/g-truc/glm/archive/refs/tags/1.0.1.tar.gz
 https://github.com/gabime/spdlog/archive/refs/tags/v1.12.0.tar.gz
 https://github.com/gabime/spdlog/archive/refs/tags/v1.13.0.tar.gz
+https://github.com/gabime/spdlog/archive/refs/tags/v1.14.0.tar.gz
 https://github.com/gambit/gambit/archive/refs/tags/v4.9.5.tar.gz
 https://github.com/gavinhoward/bc/archive/refs/tags/6.6.0.tar.gz
 https://github.com/gavinhoward/bc/archive/refs/tags/6.6.1.tar.gz
@@ -1244,6 +1248,7 @@ https://github.com/hyprwm/Hyprland/releases/download/v0.39.1/source-v0.39.1.tar.
 https://github.com/hyprwm/hyprcursor/archive/refs/tags/v0.1.4.tar.gz
 https://github.com/hyprwm/hyprcursor/archive/refs/tags/v0.1.5.tar.gz
 https://github.com/hyprwm/hyprcursor/archive/refs/tags/v0.1.6.tar.gz
+https://github.com/hyprwm/hyprcursor/archive/refs/tags/v0.1.8.tar.gz
 https://github.com/hyprwm/hyprlang/archive/refs/tags/v0.4.1.tar.gz
 https://github.com/hyprwm/hyprlang/archive/refs/tags/v0.5.0.tar.gz
 https://github.com/hyprwm/hyprlang/archive/refs/tags/v0.5.1.tar.gz
@@ -1369,6 +1374,7 @@ https://github.com/leo-arch/clifm/archive/refs/tags/v1.18.tar.gz
 https://github.com/libarchive/libarchive/archive/refs/tags/v3.7.1.tar.gz
 https://github.com/libarchive/libarchive/archive/refs/tags/v3.7.2.tar.gz
 https://github.com/libarchive/libarchive/archive/refs/tags/v3.7.3.tar.gz
+https://github.com/libarchive/libarchive/archive/refs/tags/v3.7.4.tar.gz
 https://github.com/libass/libass/archive/refs/tags/0.17.1.tar.gz
 https://github.com/libbpf/libbpf/archive/refs/tags/v1.2.2.tar.gz
 https://github.com/libbpf/libbpf/archive/refs/tags/v1.3.0.tar.gz
@@ -1912,6 +1918,7 @@ https://github.com/swaywm/swaybg/archive/refs/tags/v1.2.0.tar.gz
 https://github.com/swaywm/swayidle/archive/refs/tags/1.8.0.tar.gz
 https://github.com/swaywm/swaylock/archive/refs/tags/v1.7.2.tar.gz
 https://github.com/swaywm/wlroots/archive/refs/tags/0.12.0.tar.gz
+https://github.com/sxyazi/yazi/archive/refs/tags/v0.2.5.tar.gz
 https://github.com/syslog-ng/syslog-ng/releases/download/syslog-ng-4.3.1/syslog-ng-4.3.1.tar.gz
 https://github.com/syslog-ng/syslog-ng/releases/download/syslog-ng-4.4.0/syslog-ng-4.4.0.tar.gz
 https://github.com/syslog-ng/syslog-ng/releases/download/syslog-ng-4.6.0/syslog-ng-4.6.0.tar.gz
@@ -2021,6 +2028,7 @@ https://github.com/util-linux/util-linux/archive/refs/tags/v2.40.tar.gz
 https://github.com/uutils/coreutils/archive/refs/tags/0.0.23.tar.gz
 https://github.com/uutils/coreutils/archive/refs/tags/0.0.24.tar.gz
 https://github.com/uutils/coreutils/archive/refs/tags/0.0.25.tar.gz
+https://github.com/uutils/coreutils/archive/refs/tags/0.0.26.tar.gz
 https://github.com/uutils/coreutils/archive/refs/tags/0.0.8.tar.gz
 https://github.com/varlink/libvarlink/archive/refs/tags/23.tar.gz
 https://github.com/vasi/squashfuse/archive/1f980303b89c779eabfd0a0fdd36d6a7a311bf92.zip
@@ -2173,6 +2181,7 @@ https://gitlab.freedesktop.org/wayland/wayland-protocols/-/archive/1.32/wayland-
 https://gitlab.freedesktop.org/wayland/wayland-protocols/-/archive/1.33/wayland-protocols-1.33.tar.bz2
 https://gitlab.freedesktop.org/wayland/wayland-protocols/-/archive/1.34/wayland-protocols-1.34.tar.bz2
 https://gitlab.freedesktop.org/wayland/wayland-protocols/-/archive/1.35/wayland-protocols-1.35.tar.bz2
+https://gitlab.freedesktop.org/wayland/wayland-protocols/-/archive/1.36/wayland-protocols-1.36.tar.bz2
 https://gitlab.freedesktop.org/wayland/wayland-utils/-/archive/wayland-info-1.0.0/wayland-utils-wayland-info-1.0.0.tar.bz2
 https://gitlab.freedesktop.org/wayland/wayland-utils/-/archive/wayland-utils-1.0.0/wayland-utils-wayland-utils-1.0.0.tar.bz2
 https://gitlab.freedesktop.org/wayland/wayland/-/releases/1.22.0/downloads/wayland-1.22.0.tar.xz
@@ -2184,6 +2193,7 @@ https://gitlab.freedesktop.org/wlroots/wlroots/-/archive/0.16.2/wlroots-0.16.2.t
 https://gitlab.freedesktop.org/wlroots/wlroots/-/archive/0.17.0/wlroots-0.17.0.tar.bz2
 https://gitlab.freedesktop.org/wlroots/wlroots/-/archive/0.17.1/wlroots-0.17.1.tar.bz2
 https://gitlab.freedesktop.org/wlroots/wlroots/-/archive/0.17.2/wlroots-0.17.2.tar.bz2
+https://gitlab.freedesktop.org/wlroots/wlroots/-/archive/0.17.3/wlroots-0.17.3.tar.bz2
 https://gitlab.freedesktop.org/xdg/desktop-file-utils/-/archive/0.27/desktop-file-utils-0.27.tar.bz2
 https://gitlab.freedesktop.org/xkeyboard-config/xkeyboard-config/-/archive/xkeyboard-config-2.39/xkeyboard-config-xkeyboard-config-2.39.tar.bz2
 https://gitlab.freedesktop.org/xkeyboard-config/xkeyboard-config/-/archive/xkeyboard-config-2.40/xkeyboard-config-xkeyboard-config-2.40.tar.bz2
@@ -2363,6 +2373,7 @@ https://mirrors.edge.kernel.org/pub/linux/libs/ell/ell-0.61.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/libs/ell/ell-0.62.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/libs/ell/ell-0.63.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/libs/ell/ell-0.64.tar.xz
+https://mirrors.edge.kernel.org/pub/linux/libs/ell/ell-0.65.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/network/wireless/iwd-2.10.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/network/wireless/iwd-2.11.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/network/wireless/iwd-2.12.tar.xz
@@ -2455,6 +2466,7 @@ https://sourceforge.net/projects/s-tar/files/star-1.6.tar.bz2
 https://sourceware.org/pub/bzip2/bzip2-1.0.8.tar.gz
 https://sourceware.org/pub/valgrind/valgrind-3.19.0.tar.bz2
 https://sourceware.org/pub/valgrind/valgrind-3.22.0.tar.bz2
+https://sourceware.org/pub/valgrind/valgrind-3.23.0.tar.bz2
 https://sqlite.org/2023/sqlite-autoconf-3430000.tar.gz
 https://sqlite.org/2023/sqlite-autoconf-3430100.tar.gz
 https://sqlite.org/2023/sqlite-autoconf-3430200.tar.gz

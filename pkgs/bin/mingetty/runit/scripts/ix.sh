@@ -11,7 +11,7 @@ EOF
 
 cat << EOF > run
 #!/bin/sh
-exec srv{{srv_version}} mingetty{{slot}} /bin/setsid /bin/sh ${PWD}/daemon
+exec srv mingetty{{slot}} /bin/setsid /bin/sh ${PWD}/daemon
 EOF
 
 chmod +x run daemon
