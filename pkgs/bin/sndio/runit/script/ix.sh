@@ -1,6 +1,7 @@
 {% extends '//etc/services/runit/script/ix.sh' %}
 
 {% block srv_command %}
+# TODO(pg): should pe part of some devman
 chown sndiod:sndiod /dev/snd/*
 amixer -D {{alsa_device}} sset Master unmute
 amixer -D {{alsa_device}} sset Master 100%
