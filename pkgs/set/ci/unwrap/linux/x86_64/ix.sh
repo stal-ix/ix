@@ -37,6 +37,7 @@
 #}
 
 {% block run_deps %}
+bin/dns/proxy
 bin/openntpd
 #bin/cups
 bin/yazi
