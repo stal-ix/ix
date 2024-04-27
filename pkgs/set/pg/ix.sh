@@ -29,6 +29,7 @@ bin/xdg/open
 bin/alacritty
 bin/fontconfig
 bin/brightnessctl
+bin/coreutils/uutils
 {% endblock %}
 
 {% block run_data %}
