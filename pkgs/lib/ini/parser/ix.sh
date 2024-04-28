@@ -1,15 +1,8 @@
 {% extends '//die/c/make.sh' %}
 
-{% block git_repo %}
-https://github.com/ndevilla/iniparser
-{% endblock %}
-
-{% block git_commit %}
-deb85ad4936d4ca32cc2260ce43323d47936410d
-{% endblock %}
-
-{% block git_sha %}
-a5876c2b204a43f34b5f3d664067003ddb063138b9bc5d55001865c97159dddb
+{% block fetch %}
+https://github.com/ndevilla/iniparser/archive/refs/tags/v4.2.tar.gz
+sha:dbcbaf3aedb4f88a9fc0df4b315737ddd10e6c37918e3d89f0ecc475333bde4d
 {% endblock %}
 
 {% block lib_deps %}
