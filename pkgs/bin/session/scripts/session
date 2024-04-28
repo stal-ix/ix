@@ -9,6 +9,8 @@ export TMPDIR="${IX_SDIR}/$$"
 export XDG_DATA_DIRS="/ix/realm/${USER}/share"
 export XDG_RUNTIME_DIR="${TMPDIR}"
 
+. /ix/realm/${USER}/etc/env
+
 mkdir -m 0700 -p ${XDG_RUNTIME_DIR}
 
 exec user-session

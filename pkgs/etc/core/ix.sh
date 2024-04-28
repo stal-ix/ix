@@ -5,10 +5,6 @@ cd ${out}
 
 mkdir fix; cd fix
 
-base64 -d << EOF > 00-concat.sh
-{% include 'concat.sh/base64' %}
-EOF
-
 cat << EOF > mtab.sh
 ln -s /proc/self/mounts etc/mtab
 EOF
