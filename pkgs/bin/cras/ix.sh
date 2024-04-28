@@ -43,6 +43,10 @@ lib/xiph/speex/dsp
 shut_up
 {% endblock %}
 
+{% block cpp_defines %}
+_GNU_SOURCE=1
+{% endblock %}
+
 {% block shell %}
 bin/bash/lite/sh
 {% endblock %}
@@ -55,6 +59,8 @@ bld/fake(tool_name=cargo)
 {% endblock %}
 
 {% block cpp_missing %}
+string.h
+stdlib.h
 sys/types.h
 {% endblock %}
 

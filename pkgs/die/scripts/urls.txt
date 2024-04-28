@@ -174,6 +174,7 @@ https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.8.4.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.8.5.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.8.6.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.8.7.tar.xz
+https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.8.8.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.8.tar.xz
 https://cdn.openbsd.org/pub/OpenBSD/OpenNTPD/openntpd-6.8p1.tar.gz
 https://cmocka.org/files/1.1/cmocka-1.1.7.tar.xz
@@ -227,6 +228,7 @@ https://download.gnome.org/sources/dconf/0.40/dconf-0.40.0.tar.xz
 https://download.gnome.org/sources/evince/44/evince-44.3.tar.xz
 https://download.gnome.org/sources/evince/45/evince-45.0.tar.xz
 https://download.gnome.org/sources/evince/46/evince-46.0.tar.xz
+https://download.gnome.org/sources/evince/46/evince-46.1.tar.xz
 https://download.gnome.org/sources/gdk-pixbuf/2.42/gdk-pixbuf-2.42.11.tar.xz
 https://download.gnome.org/sources/gdk-pixbuf/2.42/gdk-pixbuf-2.42.6.tar.xz
 https://download.gnome.org/sources/glib/2.74/glib-2.74.5.tar.xz
@@ -479,6 +481,7 @@ https://ftp.gnu.org/pub/gnu/gettext/gettext-0.22.4.tar.gz
 https://ftp.gnu.org/pub/gnu/gettext/gettext-0.22.5.tar.gz
 https://ftp.gnu.org/pub/gnu/libiconv/libiconv-1.17.tar.gz
 https://ftp.gnu.org/pub/gnu/ncurses/ncurses-6.4.tar.gz
+https://ftp.gnu.org/pub/gnu/ncurses/ncurses-6.5.tar.gz
 https://ftp.isc.org/isc/dhcp/4.4.2-P1/dhcp-4.4.2-P1.tar.gz
 https://ftp.mozilla.org/pub/nspr/releases/v4.35/src/nspr-4.35.tar.gz
 https://ftp.mozilla.org/pub/security/nss/releases/NSS_3_93_RTM/src/nss-3.93.tar.gz
@@ -569,6 +572,7 @@ https://github.com/AbiWord/enchant/releases/download/v2.6.8/enchant-2.6.8.tar.gz
 https://github.com/AbiWord/enchant/releases/download/v2.6.9/enchant-2.6.9.tar.gz
 https://github.com/AbiWord/enchant/releases/download/v2.7.0/enchant-2.7.0.tar.gz
 https://github.com/AbiWord/enchant/releases/download/v2.7.1/enchant-2.7.1.tar.gz
+https://github.com/AbiWord/enchant/releases/download/v2.7.2/enchant-2.7.2.tar.gz
 https://github.com/AcademySoftwareFoundation/Imath/archive/refs/tags/v3.1.10.tar.gz
 https://github.com/AcademySoftwareFoundation/Imath/archive/refs/tags/v3.1.11.tar.gz
 https://github.com/AcademySoftwareFoundation/Imath/archive/refs/tags/v3.1.9.tar.gz
@@ -576,6 +580,7 @@ https://github.com/AcademySoftwareFoundation/openexr/archive/refs/tags/v3.2.0.ta
 https://github.com/AcademySoftwareFoundation/openexr/archive/refs/tags/v3.2.1.tar.gz
 https://github.com/AcademySoftwareFoundation/openexr/archive/refs/tags/v3.2.126.tar.gz
 https://github.com/AcademySoftwareFoundation/openexr/archive/refs/tags/v3.2.2.tar.gz
+https://github.com/AdguardTeam/dnsproxy/archive/refs/tags/v0.71.0.tar.gz
 https://github.com/Alexays/Waybar/archive/refs/tags/0.10.0.tar.gz
 https://github.com/Alexays/Waybar/archive/refs/tags/0.10.1.tar.gz
 https://github.com/Alexays/Waybar/archive/refs/tags/0.10.2.tar.gz
@@ -881,6 +886,7 @@ https://github.com/apernet/hysteria/archive/refs/tags/app/v2.2.0.tar.gz
 https://github.com/apernet/hysteria/archive/refs/tags/app/v2.2.1.tar.gz
 https://github.com/apernet/hysteria/archive/refs/tags/app/v2.2.3.tar.gz
 https://github.com/apernet/hysteria/archive/refs/tags/app/v2.4.0.tar.gz
+https://github.com/apernet/hysteria/archive/refs/tags/app/v2.4.2.tar.gz
 https://github.com/apple-oss-distributions/mDNSResponder/archive/refs/tags/mDNSResponder-2200.80.16.tar.gz
 https://github.com/apple-oss-distributions/patch_cmds/archive/refs/tags/patch_cmds-61.tar.gz
 https://github.com/apple/swift-corelibs-libdispatch/archive/refs/tags/swift-5.10-RELEASE.tar.gz
@@ -1297,6 +1303,7 @@ https://github.com/jasper-software/jasper/archive/refs/tags/version-4.2.0.tar.gz
 https://github.com/jasper-software/jasper/archive/refs/tags/version-4.2.1.tar.gz
 https://github.com/jasper-software/jasper/archive/refs/tags/version-4.2.2.tar.gz
 https://github.com/jasper-software/jasper/archive/refs/tags/version-4.2.3.tar.gz
+https://github.com/jasper-software/jasper/archive/refs/tags/version-4.2.4.tar.gz
 https://github.com/jbeder/yaml-cpp/archive/refs/tags/yaml-cpp-0.7.0.tar.gz
 https://github.com/jeaye/stdman/archive/refs/tags/2022.07.30.tar.gz
 https://github.com/jech/dht/archive/refs/tags/dht-0.27.tar.gz
@@ -1579,6 +1586,7 @@ https://github.com/museun/cargo-whatfeatures/archive/refs/tags/v0.9.9.tar.gz
 https://github.com/mvdan/sh/archive/refs/tags/v3.5.1.tar.gz
 https://github.com/namhyung/uftrace/archive/refs/tags/v0.12.tar.gz
 https://github.com/ncopa/su-exec/archive/refs/tags/v0.2.tar.gz
+https://github.com/ndevilla/iniparser/archive/refs/tags/v4.2.tar.gz
 https://github.com/nemtrif/utfcpp/archive/refs/tags/v3.2.4.tar.gz
 https://github.com/nemtrif/utfcpp/archive/refs/tags/v3.2.5.tar.gz
 https://github.com/nemtrif/utfcpp/archive/refs/tags/v4.0.0.tar.gz
@@ -2238,6 +2246,7 @@ https://gitlab.gnome.org/GNOME/gtk/-/archive/4.14.0/gtk-4.14.0.tar.bz2
 https://gitlab.gnome.org/GNOME/gtk/-/archive/4.14.1/gtk-4.14.1.tar.bz2
 https://gitlab.gnome.org/GNOME/gtk/-/archive/4.14.2/gtk-4.14.2.tar.bz2
 https://gitlab.gnome.org/GNOME/gtk/-/archive/4.14.3/gtk-4.14.3.tar.bz2
+https://gitlab.gnome.org/GNOME/gtk/-/archive/4.15.0/gtk-4.15.0.tar.bz2
 https://gitlab.gnome.org/GNOME/gtksourceview/-/archive/5.10.0/gtksourceview-5.10.0.tar.bz2
 https://gitlab.gnome.org/GNOME/gtksourceview/-/archive/5.8.0/gtksourceview-5.8.0.tar.bz2
 https://gitlab.gnome.org/GNOME/json-glib/-/archive/1.6.6/json-glib-1.6.6.tar.bz2
