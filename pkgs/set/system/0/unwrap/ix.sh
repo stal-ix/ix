@@ -11,7 +11,7 @@ bin/sndio/runit
 bin/acpi/d/runit
 {% endif %}
 
-set/system/0/dev/{{dev_mngr or 'mdevd'}}
+set/system/0/dev/{{dev_mngr or 'fs'}}
 
 bin/ix
 bin/runit/sys
