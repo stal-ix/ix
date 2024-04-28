@@ -871,6 +871,7 @@ https://github.com/andikleen/mcelog/archive/refs/tags/v198.tar.gz
 https://github.com/anholt/libepoxy/archive/refs/tags/1.5.10.tar.gz
 https://github.com/anrieff/libcpuid/archive/refs/tags/v0.6.3.tar.gz
 https://github.com/anrieff/libcpuid/archive/refs/tags/v0.6.4.tar.gz
+https://github.com/anrieff/libcpuid/archive/refs/tags/v0.6.5.tar.gz
 https://github.com/antonmedv/llama/archive/refs/tags/v1.4.0.tar.gz
 https://github.com/antonmedv/walk/archive/refs/tags/v1.6.2.tar.gz
 https://github.com/antonmedv/walk/archive/refs/tags/v1.7.0.tar.gz
