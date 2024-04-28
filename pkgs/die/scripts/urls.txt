@@ -1923,6 +1923,7 @@ https://github.com/swaywm/sway/archive/refs/tags/1.8.1.tar.gz
 https://github.com/swaywm/sway/archive/refs/tags/1.9-rc1.tar.gz
 https://github.com/swaywm/sway/archive/refs/tags/1.9.tar.gz
 https://github.com/swaywm/swaybg/archive/refs/tags/v1.2.0.tar.gz
+https://github.com/swaywm/swaybg/archive/refs/tags/v1.2.1.tar.gz
 https://github.com/swaywm/swayidle/archive/refs/tags/1.8.0.tar.gz
 https://github.com/swaywm/swaylock/archive/refs/tags/v1.7.2.tar.gz
 https://github.com/swaywm/wlroots/archive/refs/tags/0.12.0.tar.gz
@@ -1964,6 +1965,7 @@ https://github.com/telegramdesktop/tdesktop/releases/download/v4.15.6/tdesktop-4
 https://github.com/telegramdesktop/tdesktop/releases/download/v4.15.7/tdesktop-4.15.7-full.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v4.16.0/tdesktop-4.16.0-full.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v4.16.1/tdesktop-4.16.1-full.tar.gz
+https://github.com/telegramdesktop/tdesktop/releases/download/v4.16.10/tdesktop-4.16.10-full.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v4.16.2/tdesktop-4.16.2-full.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v4.16.3/tdesktop-4.16.3-full.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v4.16.4/tdesktop-4.16.4-full.tar.gz
@@ -2231,6 +2233,7 @@ https://gitlab.gnome.org/GNOME/gnome-text-editor/-/archive/44.0/gnome-text-edito
 https://gitlab.gnome.org/GNOME/gnome-text-editor/-/archive/45.0/gnome-text-editor-45.0.tar.bz2
 https://gitlab.gnome.org/GNOME/gnome-text-editor/-/archive/45.2/gnome-text-editor-45.2.tar.bz2
 https://gitlab.gnome.org/GNOME/gnome-text-editor/-/archive/45.3/gnome-text-editor-45.3.tar.bz2
+https://gitlab.gnome.org/GNOME/gnome-text-editor/-/archive/46.1/gnome-text-editor-46.1.tar.bz2
 https://gitlab.gnome.org/GNOME/gobject-introspection/-/archive/1.72.0/gobject-introspection-1.72.0.tar.bz2
 https://gitlab.gnome.org/GNOME/gobject-introspection/-/archive/1.78.1/gobject-introspection-1.78.1.tar.bz2
 https://gitlab.gnome.org/GNOME/gobject-introspection/-/archive/1.80.1/gobject-introspection-1.80.1.tar.bz2
