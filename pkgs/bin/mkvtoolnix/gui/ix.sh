@@ -19,3 +19,9 @@ mkdir bin
 mv old/mkvtoolnix-gui bin/
 rm -rf old
 {% endblock %}
+
+{% block patch %}
+{{super()}}
+sed -e 's|std::result_of|boost::result_of|' \
+    -i src/common/sorting.h
+{% endblock %}
