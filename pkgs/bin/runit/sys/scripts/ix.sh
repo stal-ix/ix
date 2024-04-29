@@ -81,7 +81,7 @@ chmod +x 2 3
 
 mkdir 1.d; cd 1.d
 
-cat << EOF > 00-env.sh
+cat << EOF > 00-00-env.sh
 export PATH=/bin
 EOF
 
