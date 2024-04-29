@@ -37,6 +37,7 @@
 #}
 
 {% block run_deps %}
+bin/sway/fx
 bin/dns/proxy
 bin/openntpd
 #bin/cups
