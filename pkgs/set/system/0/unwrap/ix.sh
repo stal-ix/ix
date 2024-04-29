@@ -11,6 +11,10 @@ bin/sndio/runit
 bin/acpi/d/runit
 {% endif %}
 
+{% if immutable %}
+etc/immutable
+{% endif %}
+
 set/system/0/dev/{{dev_mngr or 'fs'}}
 
 bin/ix
