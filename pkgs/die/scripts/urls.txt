@@ -322,6 +322,7 @@ https://downloads.sourceforge.net/project/sbcl/sbcl/2.4.0/sbcl-2.4.0-source.tar.
 https://downloads.sourceforge.net/project/sbcl/sbcl/2.4.1/sbcl-2.4.1-source.tar.bz2
 https://downloads.sourceforge.net/project/sbcl/sbcl/2.4.2/sbcl-2.4.2-source.tar.bz2
 https://downloads.sourceforge.net/project/sbcl/sbcl/2.4.3/sbcl-2.4.3-source.tar.bz2
+https://downloads.sourceforge.net/project/sbcl/sbcl/2.4.4/sbcl-2.4.4-source.tar.bz2
 https://downloads.sourceforge.net/project/scons/scons/4.5.2/SCons-4.5.2.tar.gz
 https://downloads.sourceforge.net/project/sdlgfx/SDL_gfx-2.0.25.tar.gz
 https://downloads.sourceforge.net/project/sox/sox/14.4.2/sox-14.4.2.tar.bz2
@@ -552,6 +553,7 @@ https://git.sr.ht/~mil/lisgd/archive/0.4.0.tar.gz
 https://git.sr.ht/~sircmpwn/scdoc/archive/1.11.2.tar.gz
 https://git.sr.ht/~sircmpwn/scdoc/archive/1.11.3.tar.gz
 https://git.sr.ht/~sircmpwn/wev/archive/1.0.0.tar.gz
+https://git.zx2c4.com/cgit/snapshot/cgit-1.2.3.tar.xz
 https://github.com/AOMediaCodec/libavif/archive/refs/tags/v1.0.1.tar.gz
 https://github.com/AOMediaCodec/libavif/archive/refs/tags/v1.0.2.tar.gz
 https://github.com/AOMediaCodec/libavif/archive/refs/tags/v1.0.3.tar.gz
@@ -828,6 +830,7 @@ https://github.com/WebAssembly/binaryen/archive/refs/tags/version_116.tar.gz
 https://github.com/WebAssembly/binaryen/archive/refs/tags/version_117.tar.gz
 https://github.com/WebPlatformForEmbedded/libwpe/archive/refs/tags/1.12.3.tar.gz
 https://github.com/WerWolv/ImHex/releases/download/v1.19.1/Full.Sources.tar.gz
+https://github.com/WillPower3309/swayfx/archive/refs/tags/0.4.tar.gz
 https://github.com/YaLTeR/niri/archive/1971a41fdd68f0a33bd5db22f776821682c23206.zip
 https://github.com/YaLTeR/niri/archive/db49deb7fd2fbe805ceec060aa4dec65009ad7a7.zip
 https://github.com/YaLTeR/niri/archive/refs/tags/v0.1.0-beta.1.tar.gz
@@ -871,6 +874,7 @@ https://github.com/andikleen/mcelog/archive/refs/tags/v198.tar.gz
 https://github.com/anholt/libepoxy/archive/refs/tags/1.5.10.tar.gz
 https://github.com/anrieff/libcpuid/archive/refs/tags/v0.6.3.tar.gz
 https://github.com/anrieff/libcpuid/archive/refs/tags/v0.6.4.tar.gz
+https://github.com/anrieff/libcpuid/archive/refs/tags/v0.6.5.tar.gz
 https://github.com/antonmedv/llama/archive/refs/tags/v1.4.0.tar.gz
 https://github.com/antonmedv/walk/archive/refs/tags/v1.6.2.tar.gz
 https://github.com/antonmedv/walk/archive/refs/tags/v1.7.0.tar.gz
@@ -1142,6 +1146,7 @@ https://github.com/git/git/archive/refs/tags/v2.43.0.tar.gz
 https://github.com/git/git/archive/refs/tags/v2.43.1.tar.gz
 https://github.com/git/git/archive/refs/tags/v2.43.2.tar.gz
 https://github.com/git/git/archive/refs/tags/v2.44.0.tar.gz
+https://github.com/git/git/archive/refs/tags/v2.45.0.tar.gz
 https://github.com/glencoesoftware/jxrlib/archive/refs/tags/v0.2.4.tar.gz
 https://github.com/glennrp/libpng/archive/refs/tags/v1.6.40.tar.gz
 https://github.com/glennrp/libpng/archive/refs/tags/v1.6.41.tar.gz
@@ -1923,6 +1928,7 @@ https://github.com/swaywm/sway/archive/refs/tags/1.8.1.tar.gz
 https://github.com/swaywm/sway/archive/refs/tags/1.9-rc1.tar.gz
 https://github.com/swaywm/sway/archive/refs/tags/1.9.tar.gz
 https://github.com/swaywm/swaybg/archive/refs/tags/v1.2.0.tar.gz
+https://github.com/swaywm/swaybg/archive/refs/tags/v1.2.1.tar.gz
 https://github.com/swaywm/swayidle/archive/refs/tags/1.8.0.tar.gz
 https://github.com/swaywm/swaylock/archive/refs/tags/v1.7.2.tar.gz
 https://github.com/swaywm/wlroots/archive/refs/tags/0.12.0.tar.gz
@@ -1964,6 +1970,7 @@ https://github.com/telegramdesktop/tdesktop/releases/download/v4.15.6/tdesktop-4
 https://github.com/telegramdesktop/tdesktop/releases/download/v4.15.7/tdesktop-4.15.7-full.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v4.16.0/tdesktop-4.16.0-full.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v4.16.1/tdesktop-4.16.1-full.tar.gz
+https://github.com/telegramdesktop/tdesktop/releases/download/v4.16.10/tdesktop-4.16.10-full.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v4.16.2/tdesktop-4.16.2-full.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v4.16.3/tdesktop-4.16.3-full.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v4.16.4/tdesktop-4.16.4-full.tar.gz
@@ -2092,6 +2099,7 @@ https://github.com/wireshark/wireshark/archive/refs/tags/v4.2.1.tar.gz
 https://github.com/wireshark/wireshark/archive/refs/tags/v4.2.2.tar.gz
 https://github.com/wireshark/wireshark/archive/refs/tags/v4.2.3.tar.gz
 https://github.com/wireshark/wireshark/archive/refs/tags/v4.2.4.tar.gz
+https://github.com/wlrfx/scenefx/archive/refs/tags/0.1.tar.gz
 https://github.com/wmww/gtk-layer-shell/archive/refs/tags/v0.8.0.tar.gz
 https://github.com/wolfSSL/wolfssl/archive/refs/tags/v5.6.3-stable.tar.gz
 https://github.com/wolfSSL/wolfssl/archive/refs/tags/v5.6.4-stable.tar.gz
@@ -2141,6 +2149,7 @@ https://gitlab.com/faxguy/libtiff-tools/-/archive/v4.6.0t/libtiff-tools-v4.6.0t.
 https://gitlab.com/freetype/freetype/-/archive/VER-2-13-2/freetype-VER-2-13-2.tar.bz2
 https://gitlab.com/giomasce/flex/-/raw/506e9605baf4638ba47d37133c348df1385ef06c/scan.lex.l
 https://gitlab.com/graphviz/graphviz/-/archive/10.0.1/graphviz-10.0.1.tar.bz2
+https://gitlab.com/graphviz/graphviz/-/archive/11.0.0/graphviz-11.0.0.tar.bz2
 https://gitlab.com/graphviz/graphviz/-/archive/7.0.3/graphviz-7.0.3.tar.bz2
 https://gitlab.com/graphviz/graphviz/-/archive/8.1.0/graphviz-8.1.0.tar.bz2
 https://gitlab.com/graphviz/graphviz/-/archive/9.0.0/graphviz-9.0.0.tar.bz2
@@ -2152,6 +2161,7 @@ https://gitlab.com/mbunkus/mkvtoolnix/-/archive/release-79.0/mkvtoolnix-release-
 https://gitlab.com/mbunkus/mkvtoolnix/-/archive/release-80.0/mkvtoolnix-release-80.0.tar.bz2
 https://gitlab.com/mbunkus/mkvtoolnix/-/archive/release-81.0/mkvtoolnix-release-81.0.tar.bz2
 https://gitlab.com/mbunkus/mkvtoolnix/-/archive/release-83.0/mkvtoolnix-release-83.0.tar.bz2
+https://gitlab.com/mbunkus/mkvtoolnix/-/archive/release-84.0/mkvtoolnix-release-84.0.tar.bz2
 https://gitlab.com/procps-ng/procps/-/archive/v4.0.4/procps-v4.0.4.tar.bz2
 https://gitlab.com/psmisc/psmisc/-/archive/v23.6/psmisc-v23.6.tar.bz2
 https://gitlab.com/psmisc/psmisc/-/archive/v23.7/psmisc-v23.7.tar.bz2
@@ -2231,6 +2241,7 @@ https://gitlab.gnome.org/GNOME/gnome-text-editor/-/archive/44.0/gnome-text-edito
 https://gitlab.gnome.org/GNOME/gnome-text-editor/-/archive/45.0/gnome-text-editor-45.0.tar.bz2
 https://gitlab.gnome.org/GNOME/gnome-text-editor/-/archive/45.2/gnome-text-editor-45.2.tar.bz2
 https://gitlab.gnome.org/GNOME/gnome-text-editor/-/archive/45.3/gnome-text-editor-45.3.tar.bz2
+https://gitlab.gnome.org/GNOME/gnome-text-editor/-/archive/46.1/gnome-text-editor-46.1.tar.bz2
 https://gitlab.gnome.org/GNOME/gobject-introspection/-/archive/1.72.0/gobject-introspection-1.72.0.tar.bz2
 https://gitlab.gnome.org/GNOME/gobject-introspection/-/archive/1.78.1/gobject-introspection-1.78.1.tar.bz2
 https://gitlab.gnome.org/GNOME/gobject-introspection/-/archive/1.80.1/gobject-introspection-1.80.1.tar.bz2

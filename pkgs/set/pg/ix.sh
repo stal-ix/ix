@@ -21,6 +21,7 @@ bin/fuzzel
 bin/python
 bin/waybar
 bin/evince
+bin/sway/bg
 bin/iwd/ctl
 bin/swayimg
 bin/epiphany
