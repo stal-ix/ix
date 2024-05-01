@@ -184,6 +184,7 @@ https://codeberg.org/dnkl/fcft/archive/3.1.7.tar.gz
 https://codeberg.org/dnkl/fcft/archive/3.1.8.tar.gz
 https://codeberg.org/dnkl/fnott/archive/1.4.1.tar.gz
 https://codeberg.org/dnkl/fnott/archive/1.5.0.tar.gz
+https://codeberg.org/dnkl/fnott/archive/1.6.0.tar.gz
 https://codeberg.org/dnkl/foot/archive/1.15.3.tar.gz
 https://codeberg.org/dnkl/foot/archive/1.16.0.tar.gz
 https://codeberg.org/dnkl/foot/archive/1.16.1.tar.gz
@@ -913,6 +914,7 @@ https://github.com/arvidn/libtorrent/releases/download/v2.0.9/libtorrent-rasterb
 https://github.com/ascent12/drm_info/archive/refs/tags/v2.3.0.tar.gz
 https://github.com/avahi/avahi/releases/download/v0.8/avahi-0.8.tar.gz
 https://github.com/axboe/liburing/archive/refs/tags/liburing-2.2.tar.gz
+https://github.com/axboe/liburing/archive/refs/tags/liburing-2.6.tar.gz
 https://github.com/axel-download-accelerator/axel/archive/refs/tags/v2.17.12.tar.gz
 https://github.com/axel-download-accelerator/axel/archive/refs/tags/v2.17.13.tar.gz
 https://github.com/benhoyt/goawk/archive/refs/tags/v1.24.0.tar.gz
@@ -1067,6 +1069,7 @@ https://github.com/facebook/zstd/archive/refs/tags/v1.5.6.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.1.2.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.10.1.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.10.2.tar.gz
+https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.11.0.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.2.0.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.2.2.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.2.3.tar.gz
@@ -1129,6 +1132,7 @@ https://github.com/g-truc/glm/archive/refs/tags/1.0.1.tar.gz
 https://github.com/gabime/spdlog/archive/refs/tags/v1.12.0.tar.gz
 https://github.com/gabime/spdlog/archive/refs/tags/v1.13.0.tar.gz
 https://github.com/gabime/spdlog/archive/refs/tags/v1.14.0.tar.gz
+https://github.com/gabime/spdlog/archive/refs/tags/v1.14.1.tar.gz
 https://github.com/gambit/gambit/archive/refs/tags/v4.9.5.tar.gz
 https://github.com/gavinhoward/bc/archive/refs/tags/6.6.0.tar.gz
 https://github.com/gavinhoward/bc/archive/refs/tags/6.6.1.tar.gz
@@ -1197,6 +1201,7 @@ https://github.com/google/re2/archive/refs/tags/2024-04-01.tar.gz
 https://github.com/google/shaderc/archive/refs/tags/v2023.6.tar.gz
 https://github.com/google/shaderc/archive/refs/tags/v2023.7.tar.gz
 https://github.com/google/shaderc/archive/refs/tags/v2023.8.tar.gz
+https://github.com/google/shaderc/archive/refs/tags/v2024.1.tar.gz
 https://github.com/google/snappy/archive/refs/tags/1.1.10.tar.gz
 https://github.com/google/snappy/archive/refs/tags/1.1.9.tar.gz
 https://github.com/google/woff2/archive/refs/tags/v1.0.2.tar.gz
@@ -1562,6 +1567,8 @@ https://github.com/microsoft/vcpkg-tool/archive/refs/tags/2024-01-11.tar.gz
 https://github.com/microsoft/vcpkg-tool/archive/refs/tags/2024-02-05.tar.gz
 https://github.com/microsoft/vcpkg-tool/archive/refs/tags/2024-02-07.tar.gz
 https://github.com/microsoft/vcpkg-tool/archive/refs/tags/2024-03-14.tar.gz
+https://github.com/microsoft/vcpkg-tool/archive/refs/tags/2024-04-23.tar.gz
+https://github.com/minio/console/archive/refs/tags/v1.3.0.tar.gz
 https://github.com/minio/mc/archive/refs/tags/RELEASE.2024-03-30T15-29-52Z.tar.gz
 https://github.com/minio/minio/archive/refs/tags/RELEASE.2024-04-06T05-26-02Z.tar.gz
 https://github.com/miniupnp/miniupnp/archive/refs/tags/miniupnpd_2_3_3.tar.gz
@@ -2180,6 +2187,7 @@ https://gitlab.freedesktop.org/gstreamer/gstreamer/-/archive/1.22.9/gstreamer-1.
 https://gitlab.freedesktop.org/gstreamer/gstreamer/-/archive/1.24.0/gstreamer-1.24.0.tar.gz
 https://gitlab.freedesktop.org/gstreamer/gstreamer/-/archive/1.24.1/gstreamer-1.24.1.tar.gz
 https://gitlab.freedesktop.org/gstreamer/gstreamer/-/archive/1.24.2/gstreamer-1.24.2.tar.gz
+https://gitlab.freedesktop.org/gstreamer/gstreamer/-/archive/1.24.3/gstreamer-1.24.3.tar.gz
 https://gitlab.freedesktop.org/libdecor/libdecor/-/archive/0.2.0/libdecor-0.2.0.tar.bz2
 https://gitlab.freedesktop.org/libdecor/libdecor/-/archive/0.2.1/libdecor-0.2.1.tar.bz2
 https://gitlab.freedesktop.org/libdecor/libdecor/-/archive/0.2.2/libdecor-0.2.2.tar.bz2
