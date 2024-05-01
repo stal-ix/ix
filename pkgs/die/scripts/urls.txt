@@ -1068,6 +1068,7 @@ https://github.com/facebook/zstd/archive/refs/tags/v1.5.6.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.1.2.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.10.1.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.10.2.tar.gz
+https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.11.0.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.2.0.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.2.2.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.2.3.tar.gz
@@ -1130,6 +1131,7 @@ https://github.com/g-truc/glm/archive/refs/tags/1.0.1.tar.gz
 https://github.com/gabime/spdlog/archive/refs/tags/v1.12.0.tar.gz
 https://github.com/gabime/spdlog/archive/refs/tags/v1.13.0.tar.gz
 https://github.com/gabime/spdlog/archive/refs/tags/v1.14.0.tar.gz
+https://github.com/gabime/spdlog/archive/refs/tags/v1.14.1.tar.gz
 https://github.com/gambit/gambit/archive/refs/tags/v4.9.5.tar.gz
 https://github.com/gavinhoward/bc/archive/refs/tags/6.6.0.tar.gz
 https://github.com/gavinhoward/bc/archive/refs/tags/6.6.1.tar.gz
