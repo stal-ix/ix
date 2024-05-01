@@ -1566,6 +1566,7 @@ https://github.com/microsoft/vcpkg-tool/archive/refs/tags/2024-01-11.tar.gz
 https://github.com/microsoft/vcpkg-tool/archive/refs/tags/2024-02-05.tar.gz
 https://github.com/microsoft/vcpkg-tool/archive/refs/tags/2024-02-07.tar.gz
 https://github.com/microsoft/vcpkg-tool/archive/refs/tags/2024-03-14.tar.gz
+https://github.com/microsoft/vcpkg-tool/archive/refs/tags/2024-04-23.tar.gz
 https://github.com/minio/console/archive/refs/tags/v1.3.0.tar.gz
 https://github.com/minio/mc/archive/refs/tags/RELEASE.2024-03-30T15-29-52Z.tar.gz
 https://github.com/minio/minio/archive/refs/tags/RELEASE.2024-04-06T05-26-02Z.tar.gz
