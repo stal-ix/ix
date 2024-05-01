@@ -913,6 +913,7 @@ https://github.com/arvidn/libtorrent/releases/download/v2.0.9/libtorrent-rasterb
 https://github.com/ascent12/drm_info/archive/refs/tags/v2.3.0.tar.gz
 https://github.com/avahi/avahi/releases/download/v0.8/avahi-0.8.tar.gz
 https://github.com/axboe/liburing/archive/refs/tags/liburing-2.2.tar.gz
+https://github.com/axboe/liburing/archive/refs/tags/liburing-2.6.tar.gz
 https://github.com/axel-download-accelerator/axel/archive/refs/tags/v2.17.12.tar.gz
 https://github.com/axel-download-accelerator/axel/archive/refs/tags/v2.17.13.tar.gz
 https://github.com/benhoyt/goawk/archive/refs/tags/v1.24.0.tar.gz
@@ -1562,6 +1563,7 @@ https://github.com/microsoft/vcpkg-tool/archive/refs/tags/2024-01-11.tar.gz
 https://github.com/microsoft/vcpkg-tool/archive/refs/tags/2024-02-05.tar.gz
 https://github.com/microsoft/vcpkg-tool/archive/refs/tags/2024-02-07.tar.gz
 https://github.com/microsoft/vcpkg-tool/archive/refs/tags/2024-03-14.tar.gz
+https://github.com/minio/console/archive/refs/tags/v1.3.0.tar.gz
 https://github.com/minio/mc/archive/refs/tags/RELEASE.2024-03-30T15-29-52Z.tar.gz
 https://github.com/minio/minio/archive/refs/tags/RELEASE.2024-04-06T05-26-02Z.tar.gz
 https://github.com/miniupnp/miniupnp/archive/refs/tags/miniupnpd_2_3_3.tar.gz
