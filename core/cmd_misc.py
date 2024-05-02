@@ -60,7 +60,7 @@ def cli_misc_fetch(ctx):
 
 def iter_cached(sha, mirrors):
     for x in mirrors:
-        yield os.path.join(x, sha[4:])
+        yield x + sha[4:]
 
 
 def iter_fetch(url, sha, mirrors):
