@@ -175,6 +175,7 @@ https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.8.5.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.8.6.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.8.7.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.8.8.tar.xz
+https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.8.9.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.8.tar.xz
 https://cdn.openbsd.org/pub/OpenBSD/OpenNTPD/openntpd-6.8p1.tar.gz
 https://cmocka.org/files/1.1/cmocka-1.1.7.tar.xz
