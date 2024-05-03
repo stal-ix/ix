@@ -1,14 +1,6 @@
-{% extends '//bin/assemble/ix.sh' %}
+{% extends '//die/hub.sh' %}
 
-{% block build_flags %}
-{{super()}}
-compress
-{% endblock %}
-
-{% block install %}
-{{super()}}
-cd ${out}
-mv bin old
-mkdir bin
-mv old bin/bin_ix
+{% block run_deps %}
+bin/ix/assemble/env
+bin/ix/assemble/unwrap
 {% endblock %}
