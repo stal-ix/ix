@@ -1074,6 +1074,7 @@ https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.10.1.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.10.2.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.11.0.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.11.1.tar.gz
+https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.11.2.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.2.0.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.2.2.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.2.3.tar.gz
@@ -2073,6 +2074,7 @@ https://github.com/vcrhonek/hwdata/archive/refs/tags/v0.378.tar.gz
 https://github.com/vcrhonek/hwdata/archive/refs/tags/v0.379.tar.gz
 https://github.com/vcrhonek/hwdata/archive/refs/tags/v0.380.tar.gz
 https://github.com/vcrhonek/hwdata/archive/refs/tags/v0.381.tar.gz
+https://github.com/vcrhonek/hwdata/archive/refs/tags/v0.382.tar.gz
 https://github.com/vector-of-bool/cmrc/archive/refs/tags/2.0.1.tar.gz
 https://github.com/videolabs/libmicrodns/archive/refs/tags/0.2.0.tar.gz
 https://github.com/videolan/dav1d/archive/refs/tags/1.2.1.tar.gz
