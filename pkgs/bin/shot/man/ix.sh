@@ -1,6 +1,6 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
-bin/ix/assemble/env
-bin/ix/assemble/unwrap
+bin/slurp
+bin/shot/man/unwrap
 {% endblock %}

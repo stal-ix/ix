@@ -175,6 +175,7 @@ https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.8.5.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.8.6.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.8.7.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.8.8.tar.xz
+https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.8.9.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.8.tar.xz
 https://cdn.openbsd.org/pub/OpenBSD/OpenNTPD/openntpd-6.8p1.tar.gz
 https://cmocka.org/files/1.1/cmocka-1.1.7.tar.xz
@@ -554,6 +555,7 @@ https://git.sr.ht/~mil/lisgd/archive/0.4.0.tar.gz
 https://git.sr.ht/~sircmpwn/scdoc/archive/1.11.2.tar.gz
 https://git.sr.ht/~sircmpwn/scdoc/archive/1.11.3.tar.gz
 https://git.sr.ht/~sircmpwn/wev/archive/1.0.0.tar.gz
+https://git.sr.ht/~whynothugo/shotman/archive/99baca7747e6d48801f91b58bc392b7df46dc56b.tar.gz
 https://git.zx2c4.com/cgit/snapshot/cgit-1.2.3.tar.xz
 https://github.com/AOMediaCodec/libavif/archive/refs/tags/v1.0.1.tar.gz
 https://github.com/AOMediaCodec/libavif/archive/refs/tags/v1.0.2.tar.gz
@@ -606,6 +608,8 @@ https://github.com/DominicBreuker/pspy/archive/refs/tags/v1.2.1.tar.gz
 https://github.com/Esri/lerc/archive/refs/tags/js_v4.0.4.tar.gz
 https://github.com/Esri/lerc/archive/refs/tags/v4.0.0.tar.gz
 https://github.com/Exiv2/exiv2/archive/refs/tags/v0.27.6.tar.gz
+https://github.com/Exiv2/exiv2/archive/refs/tags/v0.28.0.tar.gz
+https://github.com/Exiv2/exiv2/archive/refs/tags/v0.28.2.tar.gz
 https://github.com/FFmpeg/FFmpeg/archive/refs/tags/n4.4.2.tar.gz
 https://github.com/FedoraQt/adwaita-qt/archive/refs/tags/1.4.1.tar.gz
 https://github.com/FluidSynth/fluidsynth/archive/refs/tags/v2.3.4.tar.gz
@@ -1070,6 +1074,8 @@ https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.1.2.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.10.1.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.10.2.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.11.0.tar.gz
+https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.11.1.tar.gz
+https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.11.2.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.2.0.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.2.2.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.2.3.tar.gz
@@ -1354,6 +1360,7 @@ https://github.com/junegunn/fzf/archive/refs/tags/0.47.0.tar.gz
 https://github.com/junegunn/fzf/archive/refs/tags/0.48.0.tar.gz
 https://github.com/junegunn/fzf/archive/refs/tags/0.48.1.tar.gz
 https://github.com/junegunn/fzf/archive/refs/tags/0.50.0.tar.gz
+https://github.com/junegunn/fzf/archive/refs/tags/0.51.0.tar.gz
 https://github.com/kaniini/libucontext/archive/refs/tags/libucontext-1.2.tar.gz
 https://github.com/kcat/openal-soft/archive/refs/tags/1.23.1.tar.gz
 https://github.com/keepassxreboot/keepassxc/releases/download/2.7.6/keepassxc-2.7.6-src.tar.xz
@@ -1396,6 +1403,7 @@ https://github.com/libass/libass/archive/refs/tags/0.17.1.tar.gz
 https://github.com/libbpf/libbpf/archive/refs/tags/v1.2.2.tar.gz
 https://github.com/libbpf/libbpf/archive/refs/tags/v1.3.0.tar.gz
 https://github.com/libbpf/libbpf/archive/refs/tags/v1.4.0.tar.gz
+https://github.com/libbpf/libbpf/archive/refs/tags/v1.4.1.tar.gz
 https://github.com/libcgroup/libcgroup/releases/download/v2.0.2/libcgroup-2.0.2.tar.gz
 https://github.com/libconfuse/libconfuse/archive/refs/tags/v3.3.tar.gz
 https://github.com/libcxxrt/libcxxrt/archive/fd484be8d1e94a1fcf6bc5c67e5c07b65ada19b6.tar.gz
@@ -1439,6 +1447,7 @@ https://github.com/librsync/librsync/releases/download/v2.3.4/librsync-2.3.4.tar
 https://github.com/libsdl-org/SDL/archive/refs/tags/release-2.30.0.tar.gz
 https://github.com/libsdl-org/SDL/archive/refs/tags/release-2.30.1.tar.gz
 https://github.com/libsdl-org/SDL/archive/refs/tags/release-2.30.2.tar.gz
+https://github.com/libsdl-org/SDL/archive/refs/tags/release-2.30.3.tar.gz
 https://github.com/libsdl-org/SDL/releases/download/release-2.28.3/SDL2-2.28.3.tar.gz
 https://github.com/libsdl-org/SDL/releases/download/release-2.28.4/SDL2-2.28.4.tar.gz
 https://github.com/libsdl-org/SDL/releases/download/release-2.28.5/SDL2-2.28.5.tar.gz
@@ -1491,6 +1500,7 @@ https://github.com/llvm/llvm-project/archive/refs/tags/llvmorg-12.0.1.tar.gz
 https://github.com/llvm/llvm-project/archive/refs/tags/llvmorg-14.0.6.tar.gz
 https://github.com/llvm/llvm-project/archive/refs/tags/llvmorg-15.0.7.tar.gz
 https://github.com/llvm/llvm-project/archive/refs/tags/llvmorg-18.1.4.tar.gz
+https://github.com/llvm/llvm-project/archive/refs/tags/llvmorg-18.1.5.tar.gz
 https://github.com/llvm/llvm-project/releases/download/llvmorg-13.0.1/llvm-project-13.0.1.src.tar.xz
 https://github.com/llvm/llvm-project/releases/download/llvmorg-16.0.6/llvm-project-16.0.6.src.tar.xz
 https://github.com/llvm/llvm-project/releases/download/llvmorg-17.0.0-rc3/llvm-project-17.0.0rc3.src.tar.xz
@@ -1858,6 +1868,7 @@ https://github.com/rui314/mold/archive/refs/tags/v2.3.1.tar.gz
 https://github.com/rui314/mold/archive/refs/tags/v2.3.2.tar.gz
 https://github.com/rui314/mold/archive/refs/tags/v2.3.3.tar.gz
 https://github.com/rui314/mold/archive/refs/tags/v2.30.0.tar.gz
+https://github.com/rui314/mold/archive/refs/tags/v2.31.0.tar.gz
 https://github.com/rui314/mold/archive/refs/tags/v2.4.0.tar.gz
 https://github.com/rui314/mold/archive/refs/tags/v2.4.1.tar.gz
 https://github.com/rvaiya/keyd/archive/refs/tags/v2.4.3.tar.gz
@@ -2064,6 +2075,7 @@ https://github.com/vcrhonek/hwdata/archive/refs/tags/v0.378.tar.gz
 https://github.com/vcrhonek/hwdata/archive/refs/tags/v0.379.tar.gz
 https://github.com/vcrhonek/hwdata/archive/refs/tags/v0.380.tar.gz
 https://github.com/vcrhonek/hwdata/archive/refs/tags/v0.381.tar.gz
+https://github.com/vcrhonek/hwdata/archive/refs/tags/v0.382.tar.gz
 https://github.com/vector-of-bool/cmrc/archive/refs/tags/2.0.1.tar.gz
 https://github.com/videolabs/libmicrodns/archive/refs/tags/0.2.0.tar.gz
 https://github.com/videolan/dav1d/archive/refs/tags/1.2.1.tar.gz
@@ -2568,6 +2580,7 @@ https://www.crufty.net/ftp/pub/sjg/bmake-20240309.tar.gz
 https://www.crufty.net/ftp/pub/sjg/bmake-20240314.tar.gz
 https://www.crufty.net/ftp/pub/sjg/bmake-20240404.tar.gz
 https://www.crufty.net/ftp/pub/sjg/bmake-20240414.tar.gz
+https://www.crufty.net/ftp/pub/sjg/bmake-20240430.tar.gz
 https://www.eecis.udel.edu/~ntp/ntp_spool/ntp4/ntp-4.2/ntp-4.2.8p15.tar.gz
 https://www.freedesktop.org/software/colord/releases/colord-1.4.6.tar.xz
 https://www.freedesktop.org/software/fontconfig/release/fontconfig-2.14.2.tar.xz
@@ -2609,6 +2622,7 @@ https://www.kernel.org/pub/linux/kernel/people/kdave/btrfs-progs/btrfs-progs-v6.
 https://www.kernel.org/pub/linux/kernel/people/kdave/btrfs-progs/btrfs-progs-v6.6.tar.xz
 https://www.kernel.org/pub/linux/kernel/people/kdave/btrfs-progs/btrfs-progs-v6.7.1.tar.xz
 https://www.kernel.org/pub/linux/kernel/people/kdave/btrfs-progs/btrfs-progs-v6.7.tar.xz
+https://www.kernel.org/pub/linux/kernel/people/kdave/btrfs-progs/btrfs-progs-v6.8.1.tar.xz
 https://www.kernel.org/pub/linux/kernel/people/kdave/btrfs-progs/btrfs-progs-v6.8.tar.xz
 https://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2/libcap-2.69.tar.gz
 https://www.kernel.org/pub/linux/utils/fs/xfs/xfsprogs/xfsprogs-6.1.0.tar.xz

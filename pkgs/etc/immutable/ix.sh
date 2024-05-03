@@ -1,7 +1,7 @@
 {% extends '//die/proxy.sh' %}
 
 {% block install %}
-mkdir -p ${out}/etc/runit/1.d
+mkdir -p ${out}/etc/env.d ${out}/etc/runit/1.d
 
 cat << EOF > ${out}/etc/runit/1.d/00-01-immutable.sh
 # prepare tmpfs root
@@ -22,5 +22,9 @@ EOF
 cat << EOF > ${out}/etc/runit/1.d/10-mount-rw.sh
 # mount rw
 mount -o remount,rw none /var/mnt/root
+EOF
+
+cat << EOF > ${out}/etc/env.d/ix_root.sh
+export IX_ROOT=/var/mnt/root/ix
 EOF
 {% endblock %}

@@ -6,7 +6,7 @@ cd ${out}; mkdir -p etc/services/vt{{slot}}; cd etc/services/vt{{slot}}
 cat << EOF > daemon
 export TERM=linux
 fixtty /dev/tty{{slot}}
-exec subreaper setsid openvt -c {{slot}} -f -e -- /bin/sh -c 'reset; clear; exec login'
+exec subreaper setsid openvt -c {{slot}} -f -e -- /bin/sh -c 'reset; clear; exec login -p'
 EOF
 
 cat << EOF > run

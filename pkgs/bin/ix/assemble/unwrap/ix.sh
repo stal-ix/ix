@@ -1,4 +1,4 @@
-{% extends '//bin/curl/mbedtls/ix.sh' %}
+{% extends '//bin/assemble/ix.sh' %}
 
 {% block build_flags %}
 {{super()}}
@@ -8,8 +8,6 @@ compress
 {% block install %}
 {{super()}}
 cd ${out}
-rm -r share
-rm bin/curl-config
 mv bin old
 mkdir bin
 mv old bin/bin_ix
