@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.11.1.tar.gz
-sha:ea0d5e3652c78b7cebb7c370d2e6732edfed4d5dda6e8e06c02a1f0216cabe2e
+https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.11.2.tar.gz
+sha:de5dda91077d923780407e3c738e3afcf052025298d449d589b7b32fe4e8b9f2
 {% endblock %}
 
 {% block bld_libs %}
@@ -18,8 +18,4 @@ lib/pci/utils/dl
 lib/image/magick
 lib/vulkan/headers
 lib/vulkan/loader/dl
-{% endblock %}
-
-{% block patch %}
-sed -e 's|command-not-found|mc|' -i src/detection/terminalshell/terminalshell_linux.c
 {% endblock %}
