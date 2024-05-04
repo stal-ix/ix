@@ -792,6 +792,7 @@ https://github.com/Old-Man-Programmer/tree/archive/refs/tags/2.1.1.tar.gz
 https://github.com/OpenPrinting/cups/archive/refs/tags/v2.4.8.tar.gz
 https://github.com/OpenTTD/OpenTTD/archive/refs/tags/13.4.tar.gz
 https://github.com/OpenTTD/OpenTTD/archive/refs/tags/14.0.tar.gz
+https://github.com/OpenTTD/OpenTTD/archive/refs/tags/14.1.tar.gz
 https://github.com/OpenVPN/openvpn/archive/refs/tags/v2.6.10.tar.gz
 https://github.com/OpenVPN/openvpn/archive/refs/tags/v2.6.6.tar.gz
 https://github.com/OpenVPN/openvpn/archive/refs/tags/v2.6.7.tar.gz
@@ -1286,6 +1287,7 @@ https://github.com/ihhub/fheroes2/archive/refs/tags/1.0.7.tar.gz
 https://github.com/ihhub/fheroes2/archive/refs/tags/1.0.8.tar.gz
 https://github.com/ihhub/fheroes2/archive/refs/tags/1.0.9.tar.gz
 https://github.com/ii8/havoc/archive/refs/tags/0.5.0.tar.gz
+https://github.com/ikatson/rqbit/archive/refs/tags/v5.6.4.tar.gz
 https://github.com/illiliti/libudev-zero/archive/refs/tags/1.0.2.tar.gz
 https://github.com/illiliti/libudev-zero/archive/refs/tags/1.0.3.tar.gz
 https://github.com/imneme/pcg-cpp/archive/refs/tags/v0.98.1.tar.gz
