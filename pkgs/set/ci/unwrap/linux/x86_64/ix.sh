@@ -37,6 +37,7 @@
 #}
 
 {% block run_deps %}
+bin/rqbit
 bin/shot/man
 bin/sway/fx
 bin/dns/proxy
