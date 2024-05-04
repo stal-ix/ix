@@ -102,7 +102,7 @@ EOF
 
 cat << EOF > 10-mount-rw.sh
 # mount rw
-mount -o remount,rw none /
+mount -o remount,rw /
 rm -rf /var
 mkdir /var
 mount -t tmpfs tmpfs /var
@@ -110,7 +110,16 @@ mkdir -p /var/run /var/tmp /var/log /var/mnt
 chmod 01777 /var/tmp
 EOF
 
-cat << EOF > 11-log.sh
+cat << EOF > 11-fix-perm.sh
+# fix permissions
+chown ix:ix /ix
+chown ix:ix /ix/*
+mkdir -p /ix/realm /ix/trash
+chmod 01777 /ix/realm
+chmod 01777 /ix/trash
+EOF
+
+cat << EOF > 12-log.sh
 exec 1>/var/log/boot
 exec 2>&1
 set -x
