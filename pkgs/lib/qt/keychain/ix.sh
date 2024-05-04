@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/frankosterfeld/qtkeychain/archive/refs/tags/0.14.1.tar.gz
-sha:afb2d120722141aca85f8144c4ef017bd74977ed45b80e5d9e9614015dadd60c
+https://github.com/frankosterfeld/qtkeychain/archive/refs/tags/0.14.3.tar.gz
+sha:a22c708f351431d8736a0ac5c562414f2b7bb919a6292cbca1ff7ac0849cb0a7
 {% endblock %}
 
 {% block lib_deps %}
