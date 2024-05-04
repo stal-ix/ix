@@ -17,8 +17,7 @@ mkdir home
 ln -s / usr
 pivot_root /sys /sys/var/mnt/root
 cd /
-/var/mnt/root/bin/mount /var/mnt/root/ix /ix
-cd /
+mount /var/mnt/root/ix /ix
 mount /var/mnt/root/home /home
 mkdir -p dev sys proc var/run var/tmp var/log
 chmod 01777 var/tmp
