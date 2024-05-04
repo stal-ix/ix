@@ -32,3 +32,8 @@ bin/fontconfig
 bin/brightnessctl
 bin/coreutils/uutils
 {% endblock %}
+
+{% block run_data %}
+aux/fonts/inter
+set/fonts/default
+{% endblock %}
