@@ -233,7 +233,7 @@ class Realm(BaseRealm):
         except Exception:
             pass
 
-        os.symlink('../store/' + os.path.basename(self.path), tmp)
+        os.symlink(self.path, tmp)
         cu.sync()
 
         try:

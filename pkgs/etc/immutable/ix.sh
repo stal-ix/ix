@@ -10,11 +10,15 @@ cd /sys
 mkdir -p var/mnt/root
 ln -s ix/realm/system/bin bin
 ln -s ix/realm/system/etc etc
-ln -s var/mnt/root/ix ix
-ln -s var/mnt/root/home home
+mkdir ix
+mkdir home
 ln -s / usr
 pivot_root /sys /sys/var/mnt/root
 cd /
+/var/mnt/root/bin/mount /var/mnt/root/ix /ix
+mount /var/mnt/root/home /home
+mount -o remount,rw /ix
+mount -o remount,rw /home
 mkdir -p dev sys proc var/run var/tmp var/log
 chmod 01777 var/tmp
 EOF
@@ -25,6 +29,6 @@ mount -o remount,rw none /var/mnt/root
 EOF
 
 cat << EOF > ${out}/etc/env.d/ix_root.sh
-export IX_ROOT=/var/mnt/root/ix
+export IX_ROOT=/ix
 EOF
 {% endblock %}
