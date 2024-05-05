@@ -2,6 +2,6 @@
 
 {% block run_data %}
 aux/adwaita/icons/png
-aux/hicolor-icon-theme
+aux/hicolor/icon/theme
 aux/adwaita/icons/scalable
 {% endblock %}
