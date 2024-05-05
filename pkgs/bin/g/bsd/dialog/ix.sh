@@ -18,4 +18,7 @@ bld/pkg/config
 
 {% block patch %}
 sed -e 's|addr.sun_len =|int x =|' -i src/gbsddialog.c
+find . -type f -name '*.c' | while read l; do
+    sed -e 's|DISPLAY|WAYLAND_DISPLAY|' -i ${l}
+done
 {% endblock %}
