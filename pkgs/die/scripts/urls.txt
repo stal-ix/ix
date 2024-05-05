@@ -1339,6 +1339,7 @@ https://github.com/jjsullivan5196/wvkbd/archive/refs/tags/v0.12.tar.gz
 https://github.com/jjsullivan5196/wvkbd/archive/refs/tags/v0.14.1.tar.gz
 https://github.com/jjsullivan5196/wvkbd/archive/refs/tags/v0.14.3.tar.gz
 https://github.com/jjsullivan5196/wvkbd/archive/refs/tags/v0.14.tar.gz
+https://github.com/jjsullivan5196/wvkbd/archive/refs/tags/v0.15.tar.gz
 https://github.com/johang/btfs/archive/refs/tags/v2.24.tar.gz
 https://github.com/johnkerl/miller/archive/refs/tags/v6.11.0.tar.gz
 https://github.com/johnsonjh/OpenVi/archive/refs/tags/7.4.23.tar.gz
