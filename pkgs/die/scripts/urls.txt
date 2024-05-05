@@ -535,6 +535,7 @@ https://git.savannah.nongnu.org/cgit/attr.git/snapshot/attr-2.5.2.tar.gz
 https://git.sr.ht/~adnano/wmenu/archive/0.1.4.tar.gz
 https://git.sr.ht/~adnano/wmenu/archive/0.1.6.tar.gz
 https://git.sr.ht/~adnano/wmenu/archive/0.1.7.tar.gz
+https://git.sr.ht/~adnano/wmenu/archive/0.1.8.tar.gz
 https://git.sr.ht/~brocellous/wlrctl/archive/v0.2.2.tar.gz
 https://git.sr.ht/~delthas/senpai/archive/v0.3.0.tar.gz
 https://git.sr.ht/~emersion/basu/archive/v0.2.1.tar.gz
@@ -1372,6 +1373,7 @@ https://github.com/junegunn/fzf/archive/refs/tags/0.51.0.tar.gz
 https://github.com/kaniini/libucontext/archive/refs/tags/libucontext-1.2.tar.gz
 https://github.com/kcat/openal-soft/archive/refs/tags/1.23.1.tar.gz
 https://github.com/keepassxreboot/keepassxc/releases/download/2.7.6/keepassxc-2.7.6-src.tar.xz
+https://github.com/khorben/gbsddialog/archive/refs/tags/gbsddialog_0-9-0.tar.gz
 https://github.com/kkos/oniguruma/archive/refs/tags/v6.9.8.tar.gz
 https://github.com/kkos/oniguruma/archive/refs/tags/v6.9.9.tar.gz
 https://github.com/klange/bim/archive/refs/tags/v3.1.0.tar.gz

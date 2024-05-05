@@ -1,8 +1,8 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://git.sr.ht/~adnano/wmenu/archive/0.1.7.tar.gz
-sha:f86c9bfb32a907d467c59d34123c8e7d55cda08524735b7c640b682830f854b9
+https://git.sr.ht/~adnano/wmenu/archive/0.1.8.tar.gz
+sha:0079d3bbe82e0b02035450b4b31609dd5b822116ea4c14979d2e26d91db3c461
 {% endblock %}
 
 {% block bld_libs %}
