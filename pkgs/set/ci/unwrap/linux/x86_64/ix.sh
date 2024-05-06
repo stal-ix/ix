@@ -147,7 +147,7 @@ bin/quaternion
 bin/ssh/3
 bin/go/muks
 bin/nheko
-bin/kmsxx
+bin/kms/xx
 bin/muslstack
 bin/aom
 bin/ff/play
