@@ -1,5 +1,5 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
-bin/inkscape/unwrap(gtk_icons=aux/hicolor/icon/theme)
+bin/kms/con(kmscon_fast=1)
 {% endblock %}

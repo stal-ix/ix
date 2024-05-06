@@ -37,6 +37,11 @@
 #}
 
 {% block run_deps %}
+bin/kms/con
+bin/kms/con/full
+bin/kms/con/pretty
+bin/kms/con/fast
+bin/g/bsd/dialog
 bin/rqbit
 bin/shot/man
 bin/sway/fx
@@ -146,7 +151,7 @@ bin/quaternion
 bin/ssh/3
 bin/go/muks
 bin/nheko
-bin/kmsxx
+bin/kms/xx
 bin/muslstack
 bin/aom
 bin/ff/play

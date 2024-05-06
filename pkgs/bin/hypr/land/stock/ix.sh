@@ -7,6 +7,7 @@
 {% block bld_libs %}
 lib/c
 lib/c++
+lib/uuid
 lib/pango
 lib/cairo
 lib/input
@@ -27,8 +28,9 @@ bin/hypr/wlroots/dl
 
 {% block bld_tool %}
 bin/jq
-bld/fakegit
 bld/wayland
+bld/fakegit
+bin/hypr/wayland/scanner
 {% endblock %}
 
 {% block patch %}

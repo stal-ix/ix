@@ -5,6 +5,5 @@
 {% endblock %}
 
 {% block run_deps %}
-set/pg/hosts
 bin/nebula/runit(nebula_config={{self.config_yaml().strip()}})
 {% endblock %}
