@@ -1,26 +1,18 @@
-{% extends '//die/c/meson.sh' %}
+{% extends 'stock/ix.sh' %}
 
-{% block fetch %}
-https://github.com/Aetf/kmscon/archive/refs/tags/v9.0.0.tar.gz
-sha:eb594e48768962b665959aa9a643934f986bee68163b4ab593b9e6c987be825c
+{% block bld_tool %}
+{{super()}}
+bld/dlfcn
 {% endblock %}
 
-{% block bld_libs %}
-lib/c
-lib/drm
-lib/tsm
-lib/udev
-lib/xkb/common
-{% if kmscon_pretty %}
-lib/pango
-{% endif %}
-{% if kmscon_fast %}
-lib/mesa/egl
-lib/drivers/3d
-lib/mesa/glesv2
-{% endif %}
-{% endblock %}
-
-{% block meson_flags %}
-tests=false
+{% block postinstall %}
+cd ${tmp}/obj/src
+ls mod*.a | while read l; do
+    mn=$(echo ${l} | sed -e 's|mod-||' | sed -e 's|\.a||')
+    llvm-objcopy --redefine-sym=module=${mn}_module ${l}
+    echo "mod-${mn} module ${mn}_module"
+done | dl_stubs > stubs.c
+cat stubs.c
+cc -o kmscon1 stubs.c $(find kmscon.p -type f -name '*.o') $(find -type f -name '*.a')
+cp kmscon1 ${out}/bin/
 {% endblock %}
