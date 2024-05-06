@@ -37,7 +37,7 @@
 #}
 
 {% block run_deps %}
-bin/kms/con
+bin/kms/con/lite
 bin/g/bsd/dialog
 bin/rqbit
 bin/shot/man
