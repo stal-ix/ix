@@ -10,6 +10,7 @@ EOF
 
 cat << EOF > seatd
 #!/bin/sh
+chmod 0666 /dev/dri/render*
 export SEATD_LOGLEVEL=debug
 rm -f seatd.sock
 exec seatd -u root
