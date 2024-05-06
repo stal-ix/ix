@@ -588,6 +588,8 @@ https://github.com/AcademySoftwareFoundation/openexr/archive/refs/tags/v3.2.1.ta
 https://github.com/AcademySoftwareFoundation/openexr/archive/refs/tags/v3.2.126.tar.gz
 https://github.com/AcademySoftwareFoundation/openexr/archive/refs/tags/v3.2.2.tar.gz
 https://github.com/AdguardTeam/dnsproxy/archive/refs/tags/v0.71.0.tar.gz
+https://github.com/Aetf/kmscon/archive/refs/tags/v9.0.0.tar.gz
+https://github.com/Aetf/libtsm/archive/refs/tags/v4.0.2.tar.gz
 https://github.com/Alexays/Waybar/archive/refs/tags/0.10.0.tar.gz
 https://github.com/Alexays/Waybar/archive/refs/tags/0.10.1.tar.gz
 https://github.com/Alexays/Waybar/archive/refs/tags/0.10.2.tar.gz
