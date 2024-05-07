@@ -1,7 +1,7 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
-bin/python/10
+bin/python/frozen
 bin/dash
 bld/all
 {% endblock %}
