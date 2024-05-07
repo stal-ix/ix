@@ -18,7 +18,6 @@ bin/bash
 bin/less
 set/debug
 bin/fuzzel
-bin/python
 bin/waybar
 bin/evince
 bin/sway/bg
