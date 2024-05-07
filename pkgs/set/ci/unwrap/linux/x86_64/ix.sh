@@ -37,6 +37,7 @@
 #}
 
 {% block run_deps %}
+bin/amixer
 bin/kms/con
 bin/kms/con/full
 bin/kms/con/pretty
