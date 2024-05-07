@@ -242,6 +242,7 @@ https://download.gnome.org/sources/glib/2.78/glib-2.78.2.tar.xz
 https://download.gnome.org/sources/glib/2.78/glib-2.78.3.tar.xz
 https://download.gnome.org/sources/glib/2.78/glib-2.78.4.tar.xz
 https://download.gnome.org/sources/glib/2.80/glib-2.80.0.tar.xz
+https://download.gnome.org/sources/glib/2.80/glib-2.80.1.tar.xz
 https://download.gnome.org/sources/glibmm/2.66/glibmm-2.66.6.tar.xz
 https://download.gnome.org/sources/glibmm/2.77/glibmm-2.77.0.tar.xz
 https://download.gnome.org/sources/glibmm/2.78/glibmm-2.78.1.tar.xz
@@ -751,6 +752,7 @@ https://github.com/Kitware/CMake/archive/refs/tags/v3.28.4.tar.gz
 https://github.com/Kitware/CMake/archive/refs/tags/v3.29.0.tar.gz
 https://github.com/Kitware/CMake/archive/refs/tags/v3.29.1.tar.gz
 https://github.com/Kitware/CMake/archive/refs/tags/v3.29.2.tar.gz
+https://github.com/Kitware/CMake/archive/refs/tags/v3.29.3.tar.gz
 https://github.com/LBCrion/sfwbar/archive/refs/tags/v1.0_beta13.tar.gz
 https://github.com/LBCrion/sfwbar/archive/refs/tags/v1.0_beta9.tar.gz
 https://github.com/LibRaw/LibRaw/archive/refs/tags/0.21.1.tar.gz
