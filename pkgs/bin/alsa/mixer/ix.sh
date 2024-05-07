@@ -12,3 +12,12 @@ lib/intl/no
 --disable-alsamixer
 {{super()}}
 {% endblock %}
+
+{% block install %}
+{{super()}}
+cd ${out}
+mv bin old
+mkdir bin
+mv old/amixer bin/
+rm -rf old share
+{% endblock %}
