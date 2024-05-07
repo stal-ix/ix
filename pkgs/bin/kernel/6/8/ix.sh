@@ -1,5 +1,10 @@
 {% extends '//bin/kernel/t/3/ix.sh' %}
 
+{% block c_compiler %}
+bin/gcc(gcc_ver=14,for_target={{host.gnu.three}})
+bin/gcc(gcc_ver=14,for_target={{target.gnu.three}})
+{% endblock %}
+
 {% include 'ver.sh' %}
 
 {% block kernel_flags %}
