@@ -11,3 +11,8 @@ wrap_cc
 {% endblock %}
 
 {% block configure_flags %}--enable-alsa{% endblock %}
+
+{% block install %}
+{{super()}}
+rm -rf ${out}/bin/aucat ${out}/bin/midicut
+{% endblock %}
