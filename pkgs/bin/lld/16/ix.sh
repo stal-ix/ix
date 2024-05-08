@@ -1,14 +1,5 @@
 {% extends '//bin/clang/t/t/ix.sh' %}
 
-{% block shell %}
-bin/bash/lite/sh
-{% endblock %}
-
-{% block prologue %}
-set -x
-{{super()}}
-{% endblock %}
-
 {% block fetch %}
 {% include '//lib/llvm/16/ver.sh' %}
 {% endblock %}
@@ -31,15 +22,8 @@ lld
 {% endblock %}
 
 {% block configure %}
-echo '----------------------------------'
-env
-echo '----------------------------------'
-/bin/busybox env
-echo '----------------------------------'
-echo $PATH
-echo '----------------------------------'
-which python3
-echo '----------------------------------'
+export PYTHON3=$(command -v python3)
+echo ${PYTHON3}
 {{super()}}
 {% endblock %}
 
@@ -47,7 +31,7 @@ echo '----------------------------------'
 {{super()}}
 LLVM_INCLUDE_BENCHMARKS=OFF
 LLVM_INCLUDE_TESTS=OFF
-Python3_EXECUTABLE=python3
+Python3_EXECUTABLE=${PYTHON3}
 {% endblock %}
 
 {% block install %}
