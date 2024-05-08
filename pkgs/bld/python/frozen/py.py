@@ -1,3 +1,4 @@
+import os
 import sys
 import code
 import runpy
@@ -52,14 +53,10 @@ def parse_args(argv):
 
     return args
 
-if __name__ == '__main__':
-    args = parse_args(sys.argv[1:])
+def run_code(s):
+    exec(s, globals(), globals())
 
-    sys.argv = [sys.argv[0]] + args.rest
-
-    def run_code(s):
-        exec(s, globals(), globals())
-
+def main(args):
     if args.command:
         run_code(args.command)
     elif args.module:
@@ -69,5 +66,21 @@ if __name__ == '__main__':
     else:
         if sys.stdin.isatty():
             code.interact()
+            os._exit(0)
         else:
             run_code(sys.stdin.read())
+
+if __name__ == '__main__':
+    args = parse_args(sys.argv[1:])
+    sys.argv = [sys.argv[0]] + args.rest
+
+    if args.i:
+        try:
+            try:
+                main(args)
+            except Exception as e:
+                print(e, file=sys.stderr)
+        finally:
+            code.interact()
+    else:
+        main(args)
