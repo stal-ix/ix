@@ -4,6 +4,11 @@
 bin/bash/lite/sh
 {% endblock %}
 
+{% block prologue %}
+set -x
+{{super()}}
+{% endblock %}
+
 {% block fetch %}
 {% include '//lib/llvm/16/ver.sh' %}
 {% endblock %}
