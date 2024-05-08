@@ -58,7 +58,7 @@ if __name__ == '__main__':
     sys.argv = [sys.argv[0]] + args.rest
 
     def run_code(s):
-        exec(s)
+        exec(s, globals(), globals())
 
     if args.command:
         run_code(args.command)
