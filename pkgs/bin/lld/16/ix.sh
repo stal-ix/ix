@@ -21,10 +21,17 @@ bin/muslstack
 lld
 {% endblock %}
 
+{% block configure %}
+export PYTHON3=$(command -v python3)
+echo ${PYTHON3}
+{{super()}}
+{% endblock %}
+
 {% block cmake_flags %}
 {{super()}}
 LLVM_INCLUDE_BENCHMARKS=OFF
 LLVM_INCLUDE_TESTS=OFF
+Python3_EXECUTABLE=${PYTHON3}
 {% endblock %}
 
 {% block install %}

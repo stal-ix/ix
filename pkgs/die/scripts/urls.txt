@@ -242,6 +242,7 @@ https://download.gnome.org/sources/glib/2.78/glib-2.78.2.tar.xz
 https://download.gnome.org/sources/glib/2.78/glib-2.78.3.tar.xz
 https://download.gnome.org/sources/glib/2.78/glib-2.78.4.tar.xz
 https://download.gnome.org/sources/glib/2.80/glib-2.80.0.tar.xz
+https://download.gnome.org/sources/glib/2.80/glib-2.80.1.tar.xz
 https://download.gnome.org/sources/glibmm/2.66/glibmm-2.66.6.tar.xz
 https://download.gnome.org/sources/glibmm/2.77/glibmm-2.77.0.tar.xz
 https://download.gnome.org/sources/glibmm/2.78/glibmm-2.78.1.tar.xz
@@ -751,6 +752,7 @@ https://github.com/Kitware/CMake/archive/refs/tags/v3.28.4.tar.gz
 https://github.com/Kitware/CMake/archive/refs/tags/v3.29.0.tar.gz
 https://github.com/Kitware/CMake/archive/refs/tags/v3.29.1.tar.gz
 https://github.com/Kitware/CMake/archive/refs/tags/v3.29.2.tar.gz
+https://github.com/Kitware/CMake/archive/refs/tags/v3.29.3.tar.gz
 https://github.com/LBCrion/sfwbar/archive/refs/tags/v1.0_beta13.tar.gz
 https://github.com/LBCrion/sfwbar/archive/refs/tags/v1.0_beta9.tar.gz
 https://github.com/LibRaw/LibRaw/archive/refs/tags/0.21.1.tar.gz
@@ -1200,6 +1202,7 @@ https://github.com/golang/go/archive/refs/tags/go1.21.8.tar.gz
 https://github.com/golang/go/archive/refs/tags/go1.22.0.tar.gz
 https://github.com/golang/go/archive/refs/tags/go1.22.1.tar.gz
 https://github.com/golang/go/archive/refs/tags/go1.22.2.tar.gz
+https://github.com/golang/go/archive/refs/tags/go1.22.3.tar.gz
 https://github.com/google/brotli/archive/refs/tags/v1.1.0.tar.gz
 https://github.com/google/crc32c/archive/refs/tags/1.1.2.tar.gz
 https://github.com/google/double-conversion/archive/refs/tags/v3.3.0.tar.gz
@@ -1380,6 +1383,7 @@ https://github.com/junegunn/fzf/archive/refs/tags/0.48.0.tar.gz
 https://github.com/junegunn/fzf/archive/refs/tags/0.48.1.tar.gz
 https://github.com/junegunn/fzf/archive/refs/tags/0.50.0.tar.gz
 https://github.com/junegunn/fzf/archive/refs/tags/0.51.0.tar.gz
+https://github.com/junegunn/fzf/archive/refs/tags/0.52.0.tar.gz
 https://github.com/kaniini/libucontext/archive/refs/tags/libucontext-1.2.tar.gz
 https://github.com/kcat/openal-soft/archive/refs/tags/1.23.1.tar.gz
 https://github.com/keepassxreboot/keepassxc/releases/download/2.7.6/keepassxc-2.7.6-src.tar.xz

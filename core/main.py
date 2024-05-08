@@ -3,7 +3,6 @@ import core.utils as cu
 import os
 import sys
 import random
-import profile
 import importlib
 import subprocess
 
@@ -78,7 +77,6 @@ def main_func(args, binary, seed):
         mod = importlib.import_module(k)
         mod.__dict__['cli_' + v](ctx)
 
-    # profile.runctx('run()', locals(), globals())
     run()
 
 
