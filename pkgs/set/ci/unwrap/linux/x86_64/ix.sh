@@ -37,6 +37,7 @@
 #}
 
 {% block run_deps %}
+bin/q/cache/grind
 bin/sysprof
 bin/gcc/14
 bin/amixer
