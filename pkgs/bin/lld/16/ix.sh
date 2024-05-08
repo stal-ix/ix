@@ -1,5 +1,9 @@
 {% extends '//bin/clang/t/t/ix.sh' %}
 
+{% block shell %}
+bin/bash/lite/sh
+{% endblock %}
+
 {% block fetch %}
 {% include '//lib/llvm/16/ver.sh' %}
 {% endblock %}
