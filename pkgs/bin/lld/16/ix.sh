@@ -21,6 +21,11 @@ bin/muslstack
 lld
 {% endblock %}
 
+{% block configure %}
+env
+{{super()}}
+{% endblock %}
+
 {% block cmake_flags %}
 {{super()}}
 LLVM_INCLUDE_BENCHMARKS=OFF
