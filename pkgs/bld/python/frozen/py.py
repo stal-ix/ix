@@ -65,7 +65,7 @@ def main(args):
         runpy.run_path(args.file, run_name='__main__')
     else:
         if sys.stdin.isatty():
-            code.interact()
+            code.interact(banner=args.banner, exitmsg='')
             os._exit(0)
         else:
             run_code(sys.stdin.read())
@@ -74,6 +74,11 @@ if __name__ == '__main__':
     args = parse_args(sys.argv[1:])
     sys.argv = [sys.argv[0]] + args.rest
 
+    if args.q:
+        args.banner = ''
+    else:
+        args.banner = None
+
     if args.i:
         try:
             try:
@@ -81,6 +86,6 @@ if __name__ == '__main__':
             except Exception as e:
                 print(e, file=sys.stderr)
         finally:
-            code.interact()
+            code.interact(banner=args.banner, exitmsg='')
     else:
         main(args)
