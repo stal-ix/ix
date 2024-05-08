@@ -37,6 +37,7 @@
 #}
 
 {% block run_deps %}
+bin/sysprof
 bin/gcc/14
 bin/amixer
 bin/kms/con
