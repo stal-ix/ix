@@ -25,6 +25,7 @@ lld
 {{super()}}
 LLVM_INCLUDE_BENCHMARKS=OFF
 LLVM_INCLUDE_TESTS=OFF
+Python3_EXECUTABLE=python3
 {% endblock %}
 
 {% block install %}
