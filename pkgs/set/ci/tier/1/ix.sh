@@ -7,6 +7,7 @@ bin/wez/term
 #}
 
 {% block run_deps %}
+bin/arti
 bin/zellij
 bin/cosmic/term
 bin/resvg
