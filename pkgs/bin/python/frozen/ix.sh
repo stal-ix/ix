@@ -1,5 +1,5 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
-bld/python/frozen(python_ver=12)
+bin/python/frozen/unwrap(python_ver=12)
 {% endblock %}
