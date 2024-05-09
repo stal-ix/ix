@@ -2056,6 +2056,7 @@ https://github.com/thkukuk/rpcsvc-proto/archive/refs/tags/v1.4.3.tar.gz
 https://github.com/thom311/libnl/releases/download/libnl3_8_0/libnl-3.8.0.tar.gz
 https://github.com/thom311/libnl/releases/download/libnl3_9_0/libnl-3.9.0.tar.gz
 https://github.com/tinyalsa/tinyalsa/archive/refs/tags/v2.0.0.tar.gz
+https://github.com/tinyproxy/tinyproxy/archive/refs/tags/1.11.2.tar.gz
 https://github.com/tjko/jpegoptim/archive/refs/tags/v1.5.2.tar.gz
 https://github.com/tldr-pages/tldr-c-client/archive/refs/tags/v1.5.0.tar.gz
 https://github.com/tmux/tmux/releases/download/3.3a/tmux-3.3a.tar.gz
@@ -2093,6 +2094,7 @@ https://github.com/upx/upx/releases/download/v4.2.0/upx-4.2.0-src.tar.xz
 https://github.com/upx/upx/releases/download/v4.2.1/upx-4.2.1-src.tar.xz
 https://github.com/upx/upx/releases/download/v4.2.2/upx-4.2.2-src.tar.xz
 https://github.com/upx/upx/releases/download/v4.2.3/upx-4.2.3-src.tar.xz
+https://github.com/upx/upx/releases/download/v4.2.4/upx-4.2.4-src.tar.xz
 https://github.com/uriparser/uriparser/archive/refs/tags/uriparser-0.9.6.tar.gz
 https://github.com/util-linux/util-linux/archive/refs/tags/v2.39.1.tar.gz
 https://github.com/util-linux/util-linux/archive/refs/tags/v2.40.1.tar.gz
