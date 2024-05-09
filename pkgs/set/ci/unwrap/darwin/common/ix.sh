@@ -4,7 +4,7 @@
 bin/z3
 bin/lld/16
 bin/wget
-bin/tmux
+#bin/tmux
 bin/git
 bin/dosbox
 bin/cctools

@@ -37,6 +37,7 @@
 #}
 
 {% block run_deps %}
+bin/upnpc
 bin/smart/mon/tools
 bin/q/cache/grind
 bin/sysprof
