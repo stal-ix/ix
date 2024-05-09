@@ -11,7 +11,7 @@ def parse_args_2(argv):
         def error(self, message):
             raise Eception(message)
 
-    ap = AP(exit_on_error=False)
+    ap = AP(exit_on_error=False, add_help=False)
 
     for x in ('b', 'bb', 'B', 'd', 'E', 'i', 'I', 'O', 'O0', 'P', 'q', 's', 'S', 'u', 'v', 'V'):
         ap.add_argument(f'-{x}', dest=x, required=False, default=False, action='store_true')
