@@ -10,3 +10,7 @@ lib/c
 lib/kernel
 lib/cap/ng
 {% endblock %}
+
+{% block configure_flags %}
+--with-libcap-ng=yes
+{% endblock %}
