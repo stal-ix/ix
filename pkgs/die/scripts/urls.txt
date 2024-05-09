@@ -702,6 +702,7 @@ https://github.com/KDAB/KDSingleApplication/archive/refs/tags/v1.0.0.tar.gz
 https://github.com/KDAB/KDSingleApplication/archive/refs/tags/v1.1.0.tar.gz
 https://github.com/KDE/extra-cmake-modules/archive/refs/tags/v5.247.0.tar.gz
 https://github.com/KDE/extra-cmake-modules/archive/refs/tags/v6.1.0.tar.gz
+https://github.com/KDE/kcachegrind/archive/refs/tags/v24.04.80.tar.gz
 https://github.com/KDE/kcoreaddons/archive/refs/tags/v5.247.0.tar.gz
 https://github.com/KDE/kimageformats/archive/refs/tags/v5.112.0.tar.gz
 https://github.com/KDE/kimageformats/archive/refs/tags/v5.98.0.tar.gz
@@ -1569,6 +1570,7 @@ https://github.com/martanne/vis/archive/refs/tags/v0.8.tar.gz
 https://github.com/martijnvanbrummelen/nwipe/archive/refs/tags/v0.34.tar.gz
 https://github.com/martijnvanbrummelen/nwipe/archive/refs/tags/v0.35.tar.gz
 https://github.com/martijnvanbrummelen/nwipe/archive/refs/tags/v0.36.tar.gz
+https://github.com/martijnvanbrummelen/nwipe/archive/refs/tags/v0.37.tar.gz
 https://github.com/martinus/robin-hood-hashing/archive/refs/tags/3.11.3.tar.gz
 https://github.com/martinvonz/jj/archive/refs/tags/v0.13.0.tar.gz
 https://github.com/marzer/tomlplusplus/archive/refs/tags/v3.4.0.tar.gz
@@ -2319,8 +2321,10 @@ https://gitlab.gnome.org/GNOME/json-glib/-/archive/1.6.6/json-glib-1.6.6.tar.bz2
 https://gitlab.gnome.org/GNOME/json-glib/-/archive/1.8.0/json-glib-1.8.0.tar.bz2
 https://gitlab.gnome.org/GNOME/libadwaita/-/archive/1.5.beta/libadwaita-1.5.beta.tar.bz2
 https://gitlab.gnome.org/GNOME/libdazzle/-/archive/3.44.0/libdazzle-3.44.0.tar.bz2
+https://gitlab.gnome.org/GNOME/libdex/-/archive/0.6.0/libdex-0.6.0.tar.bz2
 https://gitlab.gnome.org/GNOME/libgtop/-/archive/2.40.0/libgtop-2.40.0.tar.bz2
 https://gitlab.gnome.org/GNOME/libhandy/-/archive/1.8.2/libhandy-1.8.2.tar.bz2
+https://gitlab.gnome.org/GNOME/libpanel/-/archive/1.6.0/libpanel-1.6.0.tar.bz2
 https://gitlab.gnome.org/GNOME/libsecret/-/archive/0.20.4/libsecret-0.20.4.tar.bz2
 https://gitlab.gnome.org/GNOME/libsecret/-/archive/0.21.1/libsecret-0.21.1.tar.bz2
 https://gitlab.gnome.org/GNOME/libsecret/-/archive/0.21.2/libsecret-0.21.2.tar.bz2
@@ -2344,6 +2348,7 @@ https://gitlab.gnome.org/GNOME/pango/-/archive/1.51.2/pango-1.51.2.tar.bz2
 https://gitlab.gnome.org/GNOME/pango/-/archive/1.52.0/pango-1.52.0.tar.bz2
 https://gitlab.gnome.org/GNOME/pango/-/archive/1.52.1/pango-1.52.1.tar.bz2
 https://gitlab.gnome.org/GNOME/pango/-/archive/1.52.2/pango-1.52.2.tar.bz2
+https://gitlab.gnome.org/GNOME/sysprof/-/archive/46.0/sysprof-46.0.tar.bz2
 https://gitlab.gnome.org/GNOME/vala/-/archive/0.56.1/vala-0.56.1.tar.bz2
 https://gitlab.gnome.org/GNOME/vte/-/archive/0.72.2/vte-0.72.2.tar.bz2
 https://gitlab.gnome.org/GNOME/vte/-/archive/0.74.0/vte-0.74.0.tar.bz2

@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://github.com/martijnvanbrummelen/nwipe/archive/refs/tags/v0.36.tar.gz
-sha:4165a02fdfbf91a22bf862b35f057d7672052ef02509c97387068b5df6bb5c5b
+https://github.com/martijnvanbrummelen/nwipe/archive/refs/tags/v0.37.tar.gz
+sha:f35ed567f3d4f36ed14e0d0153166acac519238f2ff186b06b501b2d8ad86585
 {% endblock %}
 
 {% block conf_ver %}
