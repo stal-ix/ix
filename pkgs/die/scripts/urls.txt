@@ -243,6 +243,7 @@ https://download.gnome.org/sources/glib/2.78/glib-2.78.3.tar.xz
 https://download.gnome.org/sources/glib/2.78/glib-2.78.4.tar.xz
 https://download.gnome.org/sources/glib/2.80/glib-2.80.0.tar.xz
 https://download.gnome.org/sources/glib/2.80/glib-2.80.1.tar.xz
+https://download.gnome.org/sources/glib/2.80/glib-2.80.2.tar.xz
 https://download.gnome.org/sources/glibmm/2.66/glibmm-2.66.6.tar.xz
 https://download.gnome.org/sources/glibmm/2.77/glibmm-2.77.0.tar.xz
 https://download.gnome.org/sources/glibmm/2.78/glibmm-2.78.1.tar.xz
@@ -333,6 +334,7 @@ https://downloads.sourceforge.net/project/sdlgfx/SDL_gfx-2.0.25.tar.gz
 https://downloads.sourceforge.net/project/sox/sox/14.4.2/sox-14.4.2.tar.bz2
 https://downloads.sourceforge.net/project/traceroute/traceroute/traceroute-2.1.1/traceroute-2.1.1.tar.gz
 https://downloads.sourceforge.net/project/w3m/w3m/w3m-0.5.3/w3m-0.5.3.tar.gz
+https://downloads.sourceforge.net/sourceforge/smartmontools/smartmontools-7.4.tar.gz
 https://downloads.sourceforge.net/urlget/uget-2.2.3-1.tar.gz
 https://downloads.xvid.com/downloads/xvidcore-1.3.7.tar.gz
 https://dri.freedesktop.org/libdrm/libdrm-2.4.116.tar.xz
@@ -499,6 +501,7 @@ https://ftp.osuosl.org/pub/rpm/releases/rpm-4.19.x/rpm-4.19.0.tar.bz2
 https://ftp.postgresql.org/pub/source/v15.4/postgresql-15.4.tar.bz2
 https://ftp.postgresql.org/pub/source/v16.0/postgresql-16.0.tar.bz2
 https://ftp.postgresql.org/pub/source/v16.1/postgresql-16.1.tar.bz2
+https://ftp.postgresql.org/pub/source/v16.3/postgresql-16.3.tar.bz2
 https://ftpmirror.gnu.org/libtool/libtool-2.4.6.tar.gz
 https://gameoftrees.org/releases/portable/got-portable-0.92.tar.gz
 https://gameoftrees.org/releases/portable/got-portable-0.93.tar.gz
@@ -702,6 +705,7 @@ https://github.com/KDAB/KDSingleApplication/archive/refs/tags/v1.0.0.tar.gz
 https://github.com/KDAB/KDSingleApplication/archive/refs/tags/v1.1.0.tar.gz
 https://github.com/KDE/extra-cmake-modules/archive/refs/tags/v5.247.0.tar.gz
 https://github.com/KDE/extra-cmake-modules/archive/refs/tags/v6.1.0.tar.gz
+https://github.com/KDE/kcachegrind/archive/refs/tags/v24.04.80.tar.gz
 https://github.com/KDE/kcoreaddons/archive/refs/tags/v5.247.0.tar.gz
 https://github.com/KDE/kimageformats/archive/refs/tags/v5.112.0.tar.gz
 https://github.com/KDE/kimageformats/archive/refs/tags/v5.98.0.tar.gz
@@ -1456,6 +1460,7 @@ https://github.com/libical/libical/archive/refs/tags/v3.0.18.tar.gz
 https://github.com/libjpeg-turbo/libjpeg-turbo/archive/refs/tags/3.0.0.tar.gz
 https://github.com/libjpeg-turbo/libjpeg-turbo/archive/refs/tags/3.0.1.tar.gz
 https://github.com/libjpeg-turbo/libjpeg-turbo/archive/refs/tags/3.0.2.tar.gz
+https://github.com/libjpeg-turbo/libjpeg-turbo/archive/refs/tags/3.0.3.tar.gz
 https://github.com/libjxl/libjxl/archive/refs/tags/v0.10.0.tar.gz
 https://github.com/libjxl/libjxl/archive/refs/tags/v0.10.1.tar.gz
 https://github.com/libjxl/libjxl/archive/refs/tags/v0.10.2.tar.gz
@@ -1568,6 +1573,7 @@ https://github.com/martanne/vis/archive/refs/tags/v0.8.tar.gz
 https://github.com/martijnvanbrummelen/nwipe/archive/refs/tags/v0.34.tar.gz
 https://github.com/martijnvanbrummelen/nwipe/archive/refs/tags/v0.35.tar.gz
 https://github.com/martijnvanbrummelen/nwipe/archive/refs/tags/v0.36.tar.gz
+https://github.com/martijnvanbrummelen/nwipe/archive/refs/tags/v0.37.tar.gz
 https://github.com/martinus/robin-hood-hashing/archive/refs/tags/3.11.3.tar.gz
 https://github.com/martinvonz/jj/archive/refs/tags/v0.13.0.tar.gz
 https://github.com/marzer/tomlplusplus/archive/refs/tags/v3.4.0.tar.gz
@@ -1664,6 +1670,7 @@ https://github.com/ngtcp2/nghttp3/archive/refs/tags/v0.15.0.tar.gz
 https://github.com/ngtcp2/nghttp3/archive/refs/tags/v1.0.0.tar.gz
 https://github.com/ngtcp2/nghttp3/archive/refs/tags/v1.1.0.tar.gz
 https://github.com/ngtcp2/nghttp3/releases/download/v1.2.0/nghttp3-1.2.0.tar.xz
+https://github.com/ngtcp2/nghttp3/releases/download/v1.3.0/nghttp3-1.3.0.tar.xz
 https://github.com/ngtcp2/ngtcp2/archive/refs/tags/v0.19.0.tar.gz
 https://github.com/ngtcp2/ngtcp2/archive/refs/tags/v1.0.0.tar.gz
 https://github.com/ngtcp2/ngtcp2/archive/refs/tags/v1.0.1.tar.gz
@@ -1750,6 +1757,7 @@ https://github.com/prometheus/prometheus/archive/refs/tags/v2.50.1.tar.gz
 https://github.com/prometheus/prometheus/archive/refs/tags/v2.51.0.tar.gz
 https://github.com/prometheus/prometheus/archive/refs/tags/v2.51.1.tar.gz
 https://github.com/prometheus/prometheus/archive/refs/tags/v2.51.2.tar.gz
+https://github.com/prometheus/prometheus/archive/refs/tags/v2.52.0.tar.gz
 https://github.com/prometheus/prometheus/releases/download/v2.50.1/prometheus-web-ui-2.50.1.tar.gz
 https://github.com/protobuf-c/protobuf-c/archive/refs/tags/v1.4.1.tar.gz
 https://github.com/protobuf-c/protobuf-c/archive/refs/tags/v1.5.0.tar.gz
@@ -1944,6 +1952,7 @@ https://github.com/skeeto/u-config/archive/refs/tags/v0.31.1.tar.gz
 https://github.com/skeeto/u-config/archive/refs/tags/v0.33.0.tar.gz
 https://github.com/skvadrik/re2c/archive/refs/tags/3.1.tar.gz
 https://github.com/slackhq/nebula/archive/refs/tags/v1.8.2.tar.gz
+https://github.com/slackhq/nebula/archive/refs/tags/v1.9.0.tar.gz
 https://github.com/smuellerDD/jitterentropy-library/archive/refs/tags/v3.4.1.tar.gz
 https://github.com/stal-ix/sources/raw/main/bison-bootstrap-master.tar.bz2
 https://github.com/stal-ix/sources/raw/main/bmake-20210808.tar.gz
@@ -2049,6 +2058,7 @@ https://github.com/thkukuk/rpcsvc-proto/archive/refs/tags/v1.4.3.tar.gz
 https://github.com/thom311/libnl/releases/download/libnl3_8_0/libnl-3.8.0.tar.gz
 https://github.com/thom311/libnl/releases/download/libnl3_9_0/libnl-3.9.0.tar.gz
 https://github.com/tinyalsa/tinyalsa/archive/refs/tags/v2.0.0.tar.gz
+https://github.com/tinyproxy/tinyproxy/archive/refs/tags/1.11.2.tar.gz
 https://github.com/tjko/jpegoptim/archive/refs/tags/v1.5.2.tar.gz
 https://github.com/tldr-pages/tldr-c-client/archive/refs/tags/v1.5.0.tar.gz
 https://github.com/tmux/tmux/releases/download/3.3a/tmux-3.3a.tar.gz
@@ -2086,6 +2096,7 @@ https://github.com/upx/upx/releases/download/v4.2.0/upx-4.2.0-src.tar.xz
 https://github.com/upx/upx/releases/download/v4.2.1/upx-4.2.1-src.tar.xz
 https://github.com/upx/upx/releases/download/v4.2.2/upx-4.2.2-src.tar.xz
 https://github.com/upx/upx/releases/download/v4.2.3/upx-4.2.3-src.tar.xz
+https://github.com/upx/upx/releases/download/v4.2.4/upx-4.2.4-src.tar.xz
 https://github.com/uriparser/uriparser/archive/refs/tags/uriparser-0.9.6.tar.gz
 https://github.com/util-linux/util-linux/archive/refs/tags/v2.39.1.tar.gz
 https://github.com/util-linux/util-linux/archive/refs/tags/v2.40.1.tar.gz
@@ -2317,8 +2328,10 @@ https://gitlab.gnome.org/GNOME/json-glib/-/archive/1.6.6/json-glib-1.6.6.tar.bz2
 https://gitlab.gnome.org/GNOME/json-glib/-/archive/1.8.0/json-glib-1.8.0.tar.bz2
 https://gitlab.gnome.org/GNOME/libadwaita/-/archive/1.5.beta/libadwaita-1.5.beta.tar.bz2
 https://gitlab.gnome.org/GNOME/libdazzle/-/archive/3.44.0/libdazzle-3.44.0.tar.bz2
+https://gitlab.gnome.org/GNOME/libdex/-/archive/0.6.0/libdex-0.6.0.tar.bz2
 https://gitlab.gnome.org/GNOME/libgtop/-/archive/2.40.0/libgtop-2.40.0.tar.bz2
 https://gitlab.gnome.org/GNOME/libhandy/-/archive/1.8.2/libhandy-1.8.2.tar.bz2
+https://gitlab.gnome.org/GNOME/libpanel/-/archive/1.6.0/libpanel-1.6.0.tar.bz2
 https://gitlab.gnome.org/GNOME/libsecret/-/archive/0.20.4/libsecret-0.20.4.tar.bz2
 https://gitlab.gnome.org/GNOME/libsecret/-/archive/0.21.1/libsecret-0.21.1.tar.bz2
 https://gitlab.gnome.org/GNOME/libsecret/-/archive/0.21.2/libsecret-0.21.2.tar.bz2
@@ -2342,6 +2355,7 @@ https://gitlab.gnome.org/GNOME/pango/-/archive/1.51.2/pango-1.51.2.tar.bz2
 https://gitlab.gnome.org/GNOME/pango/-/archive/1.52.0/pango-1.52.0.tar.bz2
 https://gitlab.gnome.org/GNOME/pango/-/archive/1.52.1/pango-1.52.1.tar.bz2
 https://gitlab.gnome.org/GNOME/pango/-/archive/1.52.2/pango-1.52.2.tar.bz2
+https://gitlab.gnome.org/GNOME/sysprof/-/archive/46.0/sysprof-46.0.tar.bz2
 https://gitlab.gnome.org/GNOME/vala/-/archive/0.56.1/vala-0.56.1.tar.bz2
 https://gitlab.gnome.org/GNOME/vte/-/archive/0.72.2/vte-0.72.2.tar.bz2
 https://gitlab.gnome.org/GNOME/vte/-/archive/0.74.0/vte-0.74.0.tar.bz2
@@ -2479,6 +2493,7 @@ https://mupdf.com/downloads/archive/mupdf-1.23.8-source.tar.gz
 https://mupdf.com/downloads/archive/mupdf-1.23.9-source.tar.gz
 https://mupdf.com/downloads/archive/mupdf-1.24.0-source.tar.gz
 https://mupdf.com/downloads/archive/mupdf-1.24.1-source.tar.gz
+https://mupdf.com/downloads/archive/mupdf-1.24.2-source.tar.gz
 https://nav.dl.sourceforge.net/project/sbcl/sbcl/2.2.1/sbcl-2.2.1-source.tar.bz2
 https://nav.dl.sourceforge.net/project/sbcl/sbcl/2.3.7/sbcl-2.3.7-source.tar.bz2
 https://nav.dl.sourceforge.net/project/sbcl/sbcl/2.3.9/sbcl-2.3.9-source.tar.bz2

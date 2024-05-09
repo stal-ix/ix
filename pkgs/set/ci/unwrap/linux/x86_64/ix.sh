@@ -37,6 +37,9 @@
 #}
 
 {% block run_deps %}
+bin/smart/mon/tools
+bin/q/cache/grind
+bin/sysprof
 bin/gcc/14
 bin/amixer
 bin/kms/con
