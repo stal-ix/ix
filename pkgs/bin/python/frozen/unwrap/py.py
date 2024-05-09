@@ -39,6 +39,15 @@ def parse_args_max(argv):
     return parse_args_1(argv, [])
 
 def parse_args(argv):
+    if '--help' in argv and len(argv) > 1:
+        argv.remove('--help')
+
+    if '-h' in argv and len(argv) > 1:
+        argv.remove('-h')
+
+    if '-?' in argv and len(argv) > 1:
+        argv.remove('-?')
+
     args = parse_args_max(argv)
 
     args.file = None
