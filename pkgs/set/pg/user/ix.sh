@@ -29,6 +29,7 @@ bin/xdg/open
 bin/alacritty
 bin/fontconfig
 bin/brightnessctl
+bin/q/cache/grind
 bin/coreutils/uutils
 {% endblock %}
 
