@@ -50,8 +50,12 @@
         "url": "https://files.pythonhosted.org/packages/17/be/a5d2c16317c6a890502725970589ae7f06cfc66b2e6916ba0a86973403c8/cairocffi-1.6.1-py3-none-any.whl"
     },
     "certifi/ix.sh": {
-        "md5": "24735e31df35eb3820bef77e3f8010b2",
-        "url": "https://files.pythonhosted.org/packages/71/4c/3db2b8021bd6f2f0ceb0e088d6b2d49147671f25832fb17970e9b583d742/certifi-2022.12.7-py3-none-any.whl"
+        "md5": "fe1838e892615b884f84483607c86077",
+        "url": "https://files.pythonhosted.org/packages/ba/06/a07f096c664aeb9f01624f858c3add0a4e913d6c96257acb4fce61e7de14/certifi-2024.2.2-py3-none-any.whl"
+    },
+    "charset_normalizer/ix.sh": {
+        "md5": "ea733f7299c80a232262a7f71a4fc698",
+        "url": "https://files.pythonhosted.org/packages/28/76/e6222113b83e3622caa4bb41032d0b1bf785250607392e1b778aca0b8a7d/charset_normalizer-3.3.2-py3-none-any.whl"
     },
     "dacite/ix.sh": {
         "md5": "453fe8c295400d7791b56cf08e780983",
@@ -76,6 +80,10 @@
             "pip/setuptools"
         ],
         "url": "https://files.pythonhosted.org/packages/b6/8c/d5cc5123e8e4bd6c54b781d3bf19139c4d591629c677d3d3529bfc8da127/glad2-2.0.4-py3-none-any.whl"
+    },
+    "idna/ix.sh": {
+        "md5": "6077da9f00e02686ad1bc7a3c0397edc",
+        "url": "https://files.pythonhosted.org/packages/e5/3e/741d8c82801c347547f8a2a06aa57dbb1992be9e948df2ea0eda2c8b79e8/idna-3.7-py3-none-any.whl"
     },
     "jinja2/ix.sh": {
         "md5": "00ccdb509d3592cc2163b286177d75c8",
@@ -136,6 +144,16 @@
     "pyxdg/ix.sh": {
         "md5": "7b6c3ba8a2bf3b44033642dc8b09d1df",
         "url": "https://files.pythonhosted.org/packages/e5/8d/cf41b66a8110670e3ad03dab9b759704eeed07fa96e90fdc0357b2ba70e2/pyxdg-0.28-py2.py3-none-any.whl"
+    },
+    "requests/ix.sh": {
+        "md5": "0cb4b772a1a652cf3d170a6c42a69098",
+        "run": [
+            "pip/urllib3",
+            "pip/charset_normalizer",
+            "pip/idna",
+            "pip/certifi"
+        ],
+        "url": "https://files.pythonhosted.org/packages/70/8e/0e2d847013cb52cd35b38c009bb167a1a26b2ce6cd6965bf26b47bc0bf44/requests-2.31.0-py3-none-any.whl"
     },
     "s3transfer/ix.sh": {
         "md5": "a8e4ac6484afa66b26e2cc9f92d908f1",
