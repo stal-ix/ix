@@ -9,7 +9,6 @@ https://github.com/pzmarzly/portforwarder-rs/archive/refs/tags/0.1.0.tar.gz
 {% endblock %}
 
 {% block install %}
-exit 1
 mkdir ${out}/bin
 cp ${tmp}/release/pf ${out}/bin/
 {% endblock %}
