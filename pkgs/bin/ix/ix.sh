@@ -4,6 +4,6 @@
 bin/wget
 bin/curl
 bin/ix/bsdtar
-bin/ix/python
 bin/ix/assemble
+bin/python/frozen
 {% endblock %}
