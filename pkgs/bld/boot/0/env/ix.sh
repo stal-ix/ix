@@ -6,4 +6,5 @@ bld/boot/0/sys
 {% else %}
 bld/boot/0/mix
 {% endif %}
+bld/boot/0/extract
 {% endblock %}
