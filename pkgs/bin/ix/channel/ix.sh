@@ -10,20 +10,31 @@ bin/unzip
 {% endblock %}
 
 {% block step_unpack %}
-mkdir ${out}/bin
-unzip -d ${out}/bin/ ${src}/*.zip
+:
 {% endblock %}
 
 {% block install %}
-cd ${out}/bin
-bin=$(echo */ix)
-cat << EOF > ix
-#!/usr/bin/env sh
-exec ${PWD}/${bin} "\${@}"
-EOF
-chmod +x ix
-{% endblock %}
+mkdir -p ${out}/bin ${out}/share/ix
 
-{% block postinstall %}
-:
+cp ${src}/*.zip ${out}/share/ix/ix.zip
+
+base64 -d << EOF > ${out}/share/ix/ix.py
+{% include 'ix.py/base64' %}
+EOF
+
+base64 -d << EOF > ${out}/share/ix/mount.py
+{% include 'mo.py/base64' %}
+EOF
+
+cat << EOF > ${out}/bin/ix
+#!/usr/bin/env sh
+data="${out}/share/ix"
+root="$(unzip -l ${out}/share/ix/ix.zip | head -n 10 | grep 'README.md' | sed -e 's|.* ||' | sed -e 's|/.*||')"
+EOF
+
+base64 -d << EOF >> ${out}/bin/ix
+{% include 'ix/base64' %}
+EOF
+
+chmod +x ${out}/bin/*
 {% endblock %}
