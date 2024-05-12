@@ -802,6 +802,7 @@ https://github.com/NixOS/nix/archive/refs/tags/2.21.0.tar.gz
 https://github.com/NixOS/nix/archive/refs/tags/2.21.1.tar.gz
 https://github.com/NixOS/nix/archive/refs/tags/2.21.2.tar.gz
 https://github.com/NixOS/nix/archive/refs/tags/2.22.0.tar.gz
+https://github.com/NixOS/nix/archive/refs/tags/2.22.1.tar.gz
 https://github.com/NixOS/patchelf/archive/refs/tags/0.18.0.tar.gz
 https://github.com/Novum/vkQuake/archive/refs/tags/1.30.1.tar.gz
 https://github.com/Old-Man-Programmer/tree/archive/refs/tags/2.1.1.tar.gz
@@ -1685,6 +1686,7 @@ https://github.com/nibanks/msh3/archive/refs/tags/v0.6.0.tar.gz
 https://github.com/niklata/ndhc/archive/refs/tags/v2022-03-08-v2.tar.gz
 https://github.com/ninja-build/ninja/archive/refs/tags/v1.11.1.tar.gz
 https://github.com/ninja-build/ninja/archive/refs/tags/v1.12.0.tar.gz
+https://github.com/ninja-build/ninja/archive/refs/tags/v1.12.1.tar.gz
 https://github.com/nlohmann/json/archive/refs/tags/v3.10.5.tar.gz
 https://github.com/nlohmann/json/archive/refs/tags/v3.11.2.tar.gz
 https://github.com/nodejs/uvwasi/archive/refs/tags/v0.0.18.tar.gz
@@ -1771,6 +1773,7 @@ https://github.com/protocolbuffers/protobuf/archive/refs/tags/v25.2.tar.gz
 https://github.com/protocolbuffers/protobuf/archive/refs/tags/v25.3.tar.gz
 https://github.com/protocolbuffers/protobuf/archive/refs/tags/v26.0.tar.gz
 https://github.com/psemiletov/tea-qt/archive/refs/tags/62.0.2.tar.gz
+https://github.com/psemiletov/tea-qt/archive/refs/tags/63.0.1.tar.gz
 https://github.com/ptitSeb/gl4es/archive/refs/tags/v1.1.4.tar.gz
 https://github.com/pullmoll/musl-rpmatch/archive/refs/tags/v1.0.tar.gz
 https://github.com/pwmt/zathura-pdf-mupdf/archive/refs/tags/0.4.0.tar.gz
@@ -1782,6 +1785,7 @@ https://github.com/python/cpython/archive/refs/tags/v3.12.0.tar.gz
 https://github.com/python/cpython/archive/refs/tags/v3.12.1.tar.gz
 https://github.com/python/cpython/archive/refs/tags/v3.12.2.tar.gz
 https://github.com/python/cpython/archive/refs/tags/v3.12.3.tar.gz
+https://github.com/pzmarzly/portforwarder-rs/archive/refs/tags/0.1.0.tar.gz
 https://github.com/qbittorrent/qBittorrent/archive/refs/tags/release-4.5.4.tar.gz
 https://github.com/qbittorrent/qBittorrent/archive/refs/tags/release-4.6.0.tar.gz
 https://github.com/qbittorrent/qBittorrent/archive/refs/tags/release-4.6.1.tar.gz
@@ -1870,6 +1874,7 @@ https://github.com/rfc1036/whois/archive/refs/tags/v5.5.19.tar.gz
 https://github.com/rfc1036/whois/archive/refs/tags/v5.5.20.tar.gz
 https://github.com/rfc1036/whois/archive/refs/tags/v5.5.21.tar.gz
 https://github.com/rfc1036/whois/archive/refs/tags/v5.5.22.tar.gz
+https://github.com/rfc1036/whois/archive/refs/tags/v5.5.23.tar.gz
 https://github.com/rfjakob/earlyoom/archive/refs/tags/v1.7.tar.gz
 https://github.com/rfjakob/earlyoom/archive/refs/tags/v1.8.1.tar.gz
 https://github.com/rfjakob/earlyoom/archive/refs/tags/v1.8.2.tar.gz
@@ -1941,6 +1946,7 @@ https://github.com/shadow-maint/shadow/archive/refs/tags/4.15.1.tar.gz
 https://github.com/shadowsocks/go-shadowsocks2/archive/refs/tags/v0.1.5.tar.gz
 https://github.com/shadowsocks/shadowsocks-libev/releases/download/v3.3.5/shadowsocks-libev-3.3.5.tar.gz
 https://github.com/shadowsocks/shadowsocks-rust/archive/refs/tags/v1.18.1.tar.gz
+https://github.com/shadowsocks/shadowsocks-rust/archive/refs/tags/v1.18.4.tar.gz
 https://github.com/sharkdp/bat/archive/refs/tags/v0.18.3.tar.gz
 https://github.com/sharkdp/bat/archive/refs/tags/v0.24.0.tar.gz
 https://github.com/sharkdp/binocle/archive/refs/tags/v0.3.2.tar.gz
@@ -2372,6 +2378,7 @@ https://gitlab.gnome.org/GNOME/zenity/-/archive/4.0.0/zenity-4.0.0.tar.bz2
 https://gitlab.gnome.org/GNOME/zenity/-/archive/4.0.1/zenity-4.0.1.tar.bz2
 https://gitlab.gnome.org/chergert/ptyxis/-/archive/08564402b8a9bc53bc2dbd3ff14f9d9598c14b7b/ptyxis-08564402b8a9bc53bc2dbd3ff14f9d9598c14b7b.tar.bz2
 https://gitlab.gnome.org/chergert/ptyxis/-/archive/46.1/ptyxis-46.1.tar.bz2
+https://gitlab.gnome.org/chergert/ptyxis/-/archive/46.2/ptyxis-46.2.tar.bz2
 https://gitlab.gnome.org/chergert/ptyxis/-/raw/08564402b8a9bc53bc2dbd3ff14f9d9598c14b7b/build-aux/0001-add-notification-and-shell-precmd-preexec.patch
 https://gitlab.gnome.org/crab2313/evince/-/archive/4c91df66ca83f8f1d057f0aa9069675b8bf5b6d6/evince-4c91df66ca83f8f1d057f0aa9069675b8bf5b6d6.tar.bz2
 https://gitlab.gnome.org/jadahl/libdecor/-/archive/0.1.1/libdecor-0.1.1.tar.bz2
@@ -2635,6 +2642,7 @@ https://www.crufty.net/ftp/pub/sjg/bmake-20240314.tar.gz
 https://www.crufty.net/ftp/pub/sjg/bmake-20240404.tar.gz
 https://www.crufty.net/ftp/pub/sjg/bmake-20240414.tar.gz
 https://www.crufty.net/ftp/pub/sjg/bmake-20240430.tar.gz
+https://www.crufty.net/ftp/pub/sjg/bmake-20240508.tar.gz
 https://www.eecis.udel.edu/~ntp/ntp_spool/ntp4/ntp-4.2/ntp-4.2.8p15.tar.gz
 https://www.freedesktop.org/software/colord/releases/colord-1.4.6.tar.xz
 https://www.freedesktop.org/software/fontconfig/release/fontconfig-2.14.2.tar.xz

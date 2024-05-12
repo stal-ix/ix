@@ -3,11 +3,7 @@
 import sys
 sys.dont_write_bytecode = True
 
-import traceback
-sys.excepthook = traceback.print_exception
-
 import os
-os.environ['SSL_CERT_FILE'] = 'nowhere'
 
 me = os.path.normpath(os.path.abspath(__file__))
 
@@ -16,29 +12,6 @@ sys.path.append(os.path.dirname(me))
 for x in ('jinja-3.1.2/src', 'markupsafe-2.1.1/src'):
     sys.path.append(os.path.join(os.path.dirname(me), 'deps', x))
 
-try:
-    import ssl
-    ssl._create_default_https_context = ssl._create_unverified_context
-except ImportError:
-    pass
-
-try:
-    # we always download with checksums
-    # and can not assume proper cert availability in bootstrap context
-    # so we safely disable cert validation
-    import urllib3
-    urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
-except ImportError:
-    pass
-
-import fcntl
-fcntl.fcntl(1, fcntl.F_SETFL, 0)
-
-import time
-
-import core.main as cm
-
-
 if __name__ == '__main__':
-    seed = os.environ.get('IX_SEED', str(time.time()))
-    sys.exit(cm.main(sys.argv, me, seed))
+    import core.entry as ce
+    ce.entry(me)

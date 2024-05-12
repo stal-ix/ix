@@ -1,0 +1,7 @@
+zipf=${data}/ix.zip
+zipr=${zipf}/${root}
+
+export IX_PATH=${data}
+export PYTHONPATH="${zipr}:${zipr}/deps/jinja-3.1.2/src:${zipr}/deps/markupsafe-2.1.1/src"
+
+exec python3 ${data}/ix.py "${@}"

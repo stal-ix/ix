@@ -37,5 +37,5 @@ atexit.register(footer)
 {% endblock %}
 
 {% block script_exec %}
-runpy
+{{' '.join(ix.package.config.ops.runpy())}}
 {% endblock %}

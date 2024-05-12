@@ -16,7 +16,7 @@ class FS:
 
     def serve(self, path):
         try:
-            with open(os.path.join(self.root, path), 'r') as f:
+            with open(os.path.join(self.root, path), 'rb') as f:
                 return f.read()
         except FileNotFoundError as e:
             a, sep, c = path.partition('/')

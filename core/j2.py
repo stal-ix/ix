@@ -60,7 +60,7 @@ class Loader(jinja2.BaseLoader):
 
             return b64e(d), n
 
-        return self.resolve_includes(self.vfs.serve(name), name), name
+        return self.resolve_includes(self.vfs.serve(name).decode(), name), name
 
     def get_source(self, env, name):
         x, y = self.source(name)
