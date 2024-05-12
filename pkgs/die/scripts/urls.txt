@@ -1686,6 +1686,7 @@ https://github.com/nibanks/msh3/archive/refs/tags/v0.6.0.tar.gz
 https://github.com/niklata/ndhc/archive/refs/tags/v2022-03-08-v2.tar.gz
 https://github.com/ninja-build/ninja/archive/refs/tags/v1.11.1.tar.gz
 https://github.com/ninja-build/ninja/archive/refs/tags/v1.12.0.tar.gz
+https://github.com/ninja-build/ninja/archive/refs/tags/v1.12.1.tar.gz
 https://github.com/nlohmann/json/archive/refs/tags/v3.10.5.tar.gz
 https://github.com/nlohmann/json/archive/refs/tags/v3.11.2.tar.gz
 https://github.com/nodejs/uvwasi/archive/refs/tags/v0.0.18.tar.gz
