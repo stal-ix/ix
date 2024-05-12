@@ -59,8 +59,12 @@ def gen_pkg(rec):
     return t
 
 
-def serve(x):
+def serve_str(x):
     try:
         return gen_pkg(PYPI[x.replace('/t/ix.sh', '/ix.sh')])
     except KeyError:
         raise FileNotFoundError(x)
+
+
+def serve(x):
+    return serve_str(x).encode()
