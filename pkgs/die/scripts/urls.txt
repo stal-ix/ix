@@ -179,6 +179,7 @@ https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.8.7.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.8.8.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.8.9.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.8.tar.xz
+https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.9.tar.xz
 https://cdn.openbsd.org/pub/OpenBSD/OpenNTPD/openntpd-6.8p1.tar.gz
 https://cmocka.org/files/1.1/cmocka-1.1.7.tar.xz
 https://codeberg.org/dnkl/fcft/archive/2.5.0.tar.gz
@@ -1325,6 +1326,7 @@ https://github.com/intel/thermal_daemon/archive/refs/tags/v2.5.5.tar.gz
 https://github.com/intel/thermal_daemon/archive/refs/tags/v2.5.7.tar.gz
 https://github.com/ipfs/ipget/archive/refs/tags/v0.10.0.tar.gz
 https://github.com/ipfs/ipget/archive/refs/tags/v0.9.2.tar.gz
+https://github.com/iproute2/iproute2/archive/refs/tags/v6.9.0.tar.gz
 https://github.com/iputils/iputils/archive/refs/tags/20221126.tar.gz
 https://github.com/iputils/iputils/archive/refs/tags/20240117.tar.gz
 https://github.com/isacikgoz/tldr/archive/refs/tags/v1.0.0-alpha.tar.gz

@@ -1,15 +1,8 @@
 {% extends '//die/c/make.sh' %}
 
-{% block git_repo %}
-https://git.kernel.org/pub/scm/network/iproute2/iproute2.git
-{% endblock %}
-
-{% block git_commit %}
-e5fd785830671180e934a84a44da93c51cce839d
-{% endblock %}
-
-{% block git_sha %}
-138e7babe4e8ba57d0a0257744d4f6e3fbb05d4a9539faa2e3fa965753494185
+{% block fetch %}
+https://github.com/iproute2/iproute2/archive/refs/tags/v6.9.0.tar.gz
+sha:19bb63b3630ba9c7e2c50b88908764d6b57e2fa5a8ac56c2dd3060ccab553d59
 {% endblock %}
 
 {% block bld_libs %}
