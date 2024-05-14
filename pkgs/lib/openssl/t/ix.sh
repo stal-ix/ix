@@ -66,7 +66,10 @@ perl ./Configure \
     {{ix.fix_list(openssl_conf_opts)}}
 {% endblock %}
 
-{% block env_lib %}
+{% block env %}
+{{super()}}
+{% if lib %}
 export SSL_DIR="${out}"
 export COFLAGS="--with-ssl=${out} --with-openssl=${out} --with-openssldir=${out} --with-ssl-dir=$out \${COFLAGS}"
+{% endif %}
 {% endblock %}

@@ -99,10 +99,13 @@ find ${out}/ | grep __pycache__ | xargs rm -rf
 find ${out}/bin/ ${out}/share/ | grep '\.[ao]$' | xargs rm{% if lib %} || true{% endif %}
 {% endblock %}
 
-{% block env_lib %}
+{% block env %}
+{{super()}}
+{% if lib %}
 export TARGET_PYTHONHOME="${out}"
 export CPPFLAGS="-I$(echo ${out}/include/python*) \${CPPFLAGS}"
 export CMFLAGS="-DPython_ROOT_DIR=${out} -DPython3_ROOT_DIR=${out} \${CMFLAGS}"
+{% endif %}
 {% endblock %}
 
 {% block purge_empty_dirs %}
