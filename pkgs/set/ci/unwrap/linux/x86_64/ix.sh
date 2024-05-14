@@ -268,7 +268,7 @@ bin/transmission/qt
 bin/tor
 bin/empty
 bin/zutils
-set/system/0
+set/stalix
 bin/dinit
 bin/i2pd
 bin/lite/xl

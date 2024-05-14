@@ -11,7 +11,6 @@ links = [
     ('bin/kernel/latest', 'bin/kernel/6/8'),
     ('bld/python/10/lite', 'bld/python/10'),
     ('lib/llvm/latest', 'lib/llvm/17'),
-    ('set/stalix', 'set/system/0'),
 ]
 
 class ZFS:
