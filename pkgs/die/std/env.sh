@@ -1,9 +1,5 @@
 cat << EOF > ${out}/env
 {% block env %}
-{% if lib %}
-{% block env_lib %}
-{% endblock %}
-{% endif %}
 {% endblock %}
 EOF
 
@@ -55,8 +51,6 @@ EOF
             done
         fi
     )
-{% endblock %}
-{% block more_env %}
 {% endblock %}
 ) >> ${out}/env
 
