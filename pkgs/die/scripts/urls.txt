@@ -1101,6 +1101,7 @@ https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.11.2.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.11.3.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.11.4.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.11.5.tar.gz
+https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.12.0.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.2.0.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.2.2.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.2.3.tar.gz
@@ -1395,6 +1396,7 @@ https://github.com/junegunn/fzf/archive/refs/tags/0.48.1.tar.gz
 https://github.com/junegunn/fzf/archive/refs/tags/0.50.0.tar.gz
 https://github.com/junegunn/fzf/archive/refs/tags/0.51.0.tar.gz
 https://github.com/junegunn/fzf/archive/refs/tags/0.52.0.tar.gz
+https://github.com/junegunn/fzf/archive/refs/tags/0.52.1.tar.gz
 https://github.com/kaniini/libucontext/archive/refs/tags/libucontext-1.2.tar.gz
 https://github.com/kcat/openal-soft/archive/refs/tags/1.23.1.tar.gz
 https://github.com/keepassxreboot/keepassxc/releases/download/2.7.6/keepassxc-2.7.6-src.tar.xz
