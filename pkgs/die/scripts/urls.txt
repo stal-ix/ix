@@ -1072,6 +1072,7 @@ https://github.com/epasveer/seer/archive/refs/tags/v2.2.tar.gz
 https://github.com/eranif/codelite/releases/download/17.0.0/codelite-17.0.0.tar.gz
 https://github.com/ericniebler/range-v3/archive/refs/tags/0.12.0.tar.gz
 https://github.com/esnet/iperf/archive/refs/tags/3.16.tar.gz
+https://github.com/esnet/iperf/archive/refs/tags/3.17.1.tar.gz
 https://github.com/etcd-io/etcd/archive/refs/tags/v3.4.22.tar.gz
 https://github.com/etcd-io/etcd/archive/refs/tags/v3.5.10.tar.gz
 https://github.com/etcd-io/etcd/archive/refs/tags/v3.5.11.tar.gz
@@ -2191,6 +2192,7 @@ https://github.com/wxMaxima-developers/wxmaxima/archive/refs/tags/Version-23.07.
 https://github.com/wxWidgets/wxWidgets/releases/download/v3.2.2.1/wxWidgets-3.2.2.1.tar.bz2
 https://github.com/wxWidgets/wxWidgets/releases/download/v3.2.3/wxWidgets-3.2.3.tar.bz2
 https://github.com/wxWidgets/wxWidgets/releases/download/v3.2.4/wxWidgets-3.2.4.tar.bz2
+https://github.com/wxWidgets/wxWidgets/releases/download/v3.2.5/wxWidgets-3.2.5.tar.bz2
 https://github.com/ximion/appstream/archive/refs/tags/v0.16.3.tar.gz
 https://github.com/xiph/flac/archive/refs/tags/1.4.3.tar.gz
 https://github.com/xiph/opus/archive/refs/tags/v1.4.tar.gz
