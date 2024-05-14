@@ -115,7 +115,7 @@ class Ops:
         run_cmd(['/bin/env', 'IX_EXEC_KIND=local', sys.executable, self.cfg.binary, 'gc'] + kind, user='root')
 
     def runpy(self):
-        return [f'{B}/python', '-']
+        return [f'/bin/python3']
 
     def extract(self):
         return [f'{B}/bsdtar', '--no-same-permissions', '--no-same-owner', '-x', '-f']

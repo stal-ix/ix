@@ -37,6 +37,7 @@
 #}
 
 {% block run_deps %}
+bin/kernel/6/9
 bin/port/forwarder/rs
 bin/upnpc
 bin/smart/mon/tools

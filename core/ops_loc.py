@@ -25,7 +25,7 @@ class Ops:
         return [sb.cmd(self.misc() + list(args))]
 
     def runpy(self):
-        return [sys.executable, '-']
+        return [sys.executable]
 
     def extract(self):
         return self.misc() + ['extract']
