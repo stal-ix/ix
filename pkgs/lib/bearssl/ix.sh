@@ -15,7 +15,7 @@ cp build/libbearssl.a ${out}/lib
 cp -R inc ${out}/include
 {% endblock %}
 
-{% block env_lib %}
+{% block env %}
 export COFLAGS="--with-bearssl=${out} \${COFLAGS}"
 {% endblock %}
 

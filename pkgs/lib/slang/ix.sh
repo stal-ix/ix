@@ -33,6 +33,6 @@ static
 install-static
 {% endblock %}
 
-{% block env_lib %}
+{% block env %}
 export COFLAGS="--with-slang=${out} \${COFLAGS}"
 {% endblock %}

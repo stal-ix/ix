@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://github.com/esnet/iperf/archive/refs/tags/3.16.tar.gz
-sha:be859e7168d0c867029e7013a8de273a169b4842ec7c24cd6570af75d5080aa3
+https://github.com/esnet/iperf/archive/refs/tags/3.17.1.tar.gz
+sha:105b4fe7fbce31c9b94a3fec10c46e3b4b298adc076e1e3af52b990e1faf2db9
 {% endblock %}
 
 {% block bld_libs %}

@@ -1,4 +1,4 @@
-{% extends '//lib/z/adler/ix.sh' %}
+{% extends '//lib/z/adler/t/ix.sh' %}
 
 {% block fetch %}
 https://sortix.org/libz/release/libz-1.2.8.2015.12.26.tar.gz

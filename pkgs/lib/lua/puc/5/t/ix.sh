@@ -9,9 +9,12 @@ LIBS="${PWD}/dl.o"
 src/loadlib.c
 {% endblock %}
 
-{% block env_lib %}
+{% block env %}
+{{super()}}
+{% if lib %}
 export LUA_INCLUDE_DIR="${out}/include"
 export CMFLAGS="-DWITH_LUA_ENGINE=Lua \${CMFLAGS}"
+{% endif %}
 {% endblock %}
 
 {% block patch %}

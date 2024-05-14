@@ -617,6 +617,7 @@ https://github.com/Cyan4973/xxHash/archive/refs/tags/v0.8.2.tar.gz
 https://github.com/DanBloomberg/leptonica/archive/refs/tags/1.83.1.tar.gz
 https://github.com/DanBloomberg/leptonica/archive/refs/tags/1.84.1.tar.gz
 https://github.com/DaveGamble/cJSON/archive/refs/tags/v1.7.17.tar.gz
+https://github.com/DaveGamble/cJSON/archive/refs/tags/v1.7.18.tar.gz
 https://github.com/DominicBreuker/pspy/archive/refs/tags/v1.2.1.tar.gz
 https://github.com/Esri/lerc/archive/refs/tags/js_v4.0.4.tar.gz
 https://github.com/Esri/lerc/archive/refs/tags/v4.0.0.tar.gz
@@ -827,6 +828,7 @@ https://github.com/PurpleI2P/i2pd/archive/refs/tags/2.50.0.tar.gz
 https://github.com/PurpleI2P/i2pd/archive/refs/tags/2.50.1.tar.gz
 https://github.com/PurpleI2P/i2pd/archive/refs/tags/2.50.2.tar.gz
 https://github.com/PurpleI2P/i2pd/archive/refs/tags/2.51.0.tar.gz
+https://github.com/PurpleI2P/i2pd/archive/refs/tags/2.52.0.tar.gz
 https://github.com/RazrFalcon/resvg/archive/refs/tags/v0.38.0.tar.gz
 https://github.com/RazrFalcon/resvg/archive/refs/tags/v0.39.0.tar.gz
 https://github.com/RazrFalcon/resvg/archive/refs/tags/v0.40.0.tar.gz
@@ -1071,6 +1073,7 @@ https://github.com/epasveer/seer/archive/refs/tags/v2.2.tar.gz
 https://github.com/eranif/codelite/releases/download/17.0.0/codelite-17.0.0.tar.gz
 https://github.com/ericniebler/range-v3/archive/refs/tags/0.12.0.tar.gz
 https://github.com/esnet/iperf/archive/refs/tags/3.16.tar.gz
+https://github.com/esnet/iperf/archive/refs/tags/3.17.1.tar.gz
 https://github.com/etcd-io/etcd/archive/refs/tags/v3.4.22.tar.gz
 https://github.com/etcd-io/etcd/archive/refs/tags/v3.5.10.tar.gz
 https://github.com/etcd-io/etcd/archive/refs/tags/v3.5.11.tar.gz
@@ -1100,6 +1103,7 @@ https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.11.2.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.11.3.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.11.4.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.11.5.tar.gz
+https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.12.0.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.2.0.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.2.2.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.2.3.tar.gz
@@ -1182,6 +1186,7 @@ https://github.com/git/git/archive/refs/tags/v2.43.1.tar.gz
 https://github.com/git/git/archive/refs/tags/v2.43.2.tar.gz
 https://github.com/git/git/archive/refs/tags/v2.44.0.tar.gz
 https://github.com/git/git/archive/refs/tags/v2.45.0.tar.gz
+https://github.com/git/git/archive/refs/tags/v2.45.1.tar.gz
 https://github.com/glencoesoftware/jxrlib/archive/refs/tags/v0.2.4.tar.gz
 https://github.com/glennrp/libpng/archive/refs/tags/v1.6.40.tar.gz
 https://github.com/glennrp/libpng/archive/refs/tags/v1.6.41.tar.gz
@@ -1261,6 +1266,7 @@ https://github.com/harfbuzz/harfbuzz/archive/refs/tags/8.2.2.tar.gz
 https://github.com/harfbuzz/harfbuzz/archive/refs/tags/8.3.0.tar.gz
 https://github.com/harfbuzz/harfbuzz/archive/refs/tags/8.3.1.tar.gz
 https://github.com/harfbuzz/harfbuzz/archive/refs/tags/8.4.0.tar.gz
+https://github.com/harfbuzz/harfbuzz/archive/refs/tags/8.5.0.tar.gz
 https://github.com/hboetes/mg/archive/refs/tags/20221112.tar.gz
 https://github.com/hluk/CopyQ/archive/refs/tags/v7.0.0.tar.gz
 https://github.com/hluk/CopyQ/archive/refs/tags/v7.1.0.tar.gz
@@ -1394,6 +1400,7 @@ https://github.com/junegunn/fzf/archive/refs/tags/0.48.1.tar.gz
 https://github.com/junegunn/fzf/archive/refs/tags/0.50.0.tar.gz
 https://github.com/junegunn/fzf/archive/refs/tags/0.51.0.tar.gz
 https://github.com/junegunn/fzf/archive/refs/tags/0.52.0.tar.gz
+https://github.com/junegunn/fzf/archive/refs/tags/0.52.1.tar.gz
 https://github.com/kaniini/libucontext/archive/refs/tags/libucontext-1.2.tar.gz
 https://github.com/kcat/openal-soft/archive/refs/tags/1.23.1.tar.gz
 https://github.com/keepassxreboot/keepassxc/releases/download/2.7.6/keepassxc-2.7.6-src.tar.xz
@@ -1602,6 +1609,7 @@ https://github.com/microsoft/mimalloc/archive/refs/tags/v1.7.6.tar.gz
 https://github.com/microsoft/mimalloc/archive/refs/tags/v1.8.2.tar.gz
 https://github.com/microsoft/mimalloc/archive/refs/tags/v2.1.2.tar.gz
 https://github.com/microsoft/mimalloc/archive/refs/tags/v2.1.4.tar.gz
+https://github.com/microsoft/mimalloc/archive/refs/tags/v2.1.6.tar.gz
 https://github.com/microsoft/msquic/archive/refs/tags/v2.2.2.tar.gz
 https://github.com/microsoft/msquic/archive/refs/tags/v2.2.3.tar.gz
 https://github.com/microsoft/msquic/archive/refs/tags/v2.2.4.tar.gz
@@ -1671,6 +1679,7 @@ https://github.com/nghttp2/nghttp2/archive/refs/tags/v1.58.0.tar.gz
 https://github.com/nghttp2/nghttp2/archive/refs/tags/v1.59.0.tar.gz
 https://github.com/nghttp2/nghttp2/archive/refs/tags/v1.60.0.tar.gz
 https://github.com/nghttp2/nghttp2/archive/refs/tags/v1.61.0.tar.gz
+https://github.com/nghttp2/nghttp2/archive/refs/tags/v1.62.0.tar.gz
 https://github.com/ngtcp2/nghttp3/archive/refs/tags/v0.15.0.tar.gz
 https://github.com/ngtcp2/nghttp3/archive/refs/tags/v1.0.0.tar.gz
 https://github.com/ngtcp2/nghttp3/archive/refs/tags/v1.1.0.tar.gz
@@ -1777,6 +1786,7 @@ https://github.com/protocolbuffers/protobuf/archive/refs/tags/v25.3.tar.gz
 https://github.com/protocolbuffers/protobuf/archive/refs/tags/v26.0.tar.gz
 https://github.com/psemiletov/tea-qt/archive/refs/tags/62.0.2.tar.gz
 https://github.com/psemiletov/tea-qt/archive/refs/tags/63.0.1.tar.gz
+https://github.com/psemiletov/tea-qt/archive/refs/tags/63.0.2.tar.gz
 https://github.com/ptitSeb/gl4es/archive/refs/tags/v1.1.4.tar.gz
 https://github.com/pullmoll/musl-rpmatch/archive/refs/tags/v1.0.tar.gz
 https://github.com/pwmt/zathura-pdf-mupdf/archive/refs/tags/0.4.0.tar.gz
@@ -2186,6 +2196,7 @@ https://github.com/wxMaxima-developers/wxmaxima/archive/refs/tags/Version-23.07.
 https://github.com/wxWidgets/wxWidgets/releases/download/v3.2.2.1/wxWidgets-3.2.2.1.tar.bz2
 https://github.com/wxWidgets/wxWidgets/releases/download/v3.2.3/wxWidgets-3.2.3.tar.bz2
 https://github.com/wxWidgets/wxWidgets/releases/download/v3.2.4/wxWidgets-3.2.4.tar.bz2
+https://github.com/wxWidgets/wxWidgets/releases/download/v3.2.5/wxWidgets-3.2.5.tar.bz2
 https://github.com/ximion/appstream/archive/refs/tags/v0.16.3.tar.gz
 https://github.com/xiph/flac/archive/refs/tags/1.4.3.tar.gz
 https://github.com/xiph/opus/archive/refs/tags/v1.4.tar.gz
@@ -2358,6 +2369,7 @@ https://gitlab.gnome.org/GNOME/libxml2/-/archive/v2.12.0/libxml2-v2.12.0.tar.bz2
 https://gitlab.gnome.org/GNOME/libxml2/-/archive/v2.12.1/libxml2-v2.12.1.tar.bz2
 https://gitlab.gnome.org/GNOME/libxml2/-/archive/v2.12.5/libxml2-v2.12.5.tar.bz2
 https://gitlab.gnome.org/GNOME/libxml2/-/archive/v2.12.6/libxml2-v2.12.6.tar.bz2
+https://gitlab.gnome.org/GNOME/libxml2/-/archive/v2.12.7/libxml2-v2.12.7.tar.bz2
 https://gitlab.gnome.org/GNOME/libxslt/-/archive/v1.1.38/libxslt-v1.1.38.tar.bz2
 https://gitlab.gnome.org/GNOME/libxslt/-/archive/v1.1.39/libxslt-v1.1.39.tar.bz2
 https://gitlab.gnome.org/GNOME/mutter/-/archive/44.beta/mutter-44.beta.tar.bz2
