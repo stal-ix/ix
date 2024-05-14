@@ -24,6 +24,6 @@ bld/glib
 bld/wayland
 {% endblock %}
 
-{% block env_lib %}
+{% block env %}
 export CPPFLAGS="-I${out}/include/wpe-fdo-1.0 \${CPPFLAGS}"
 {% endblock %}
