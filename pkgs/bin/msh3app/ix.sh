@@ -1,4 +1,4 @@
-{% extends '//lib/msh3/ix.sh' %}
+{% extends '//lib/msh3/t/ix.sh' %}
 
 {% block cmake_flags %}
 {{super()}}
