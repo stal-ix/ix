@@ -1,7 +1,7 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-{% include '//lib/z/adler/ver.sh' %}
+{% include '//lib/z/adler/t/ver.sh' %}
 {% endblock %}
 
 {% block lib_deps %}

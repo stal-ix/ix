@@ -1,4 +1,4 @@
-{% extends '//lib/z/adler/ix.sh' %}
+{% extends '//lib/z/adler/t/ix.sh' %}
 
 {% block install %}
 {{super()}}
