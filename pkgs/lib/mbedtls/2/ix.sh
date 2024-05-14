@@ -8,3 +8,8 @@ sha:bc55232bf71fd66045122ba9050a29ea7cb2e8f99b064a9e6334a82f715881a0
 {% block lib_deps %}
 lib/c
 {% endblock %}
+
+{% block env %}
+{{super()}}
+export COFLAGS="--with-mbedtls=${out} --with-crypto-library=mbedtls \${COFLAGS}"
+{% endblock %}
