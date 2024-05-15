@@ -2756,6 +2756,7 @@ https://www.rarlab.com/rar/unrarsrc-7.0.5.tar.gz
 https://www.rarlab.com/rar/unrarsrc-7.0.6.tar.gz
 https://www.rarlab.com/rar/unrarsrc-7.0.7.tar.gz
 https://www.rarlab.com/rar/unrarsrc-7.0.8.tar.gz
+https://www.rarlab.com/rar/unrarsrc-7.0.9.tar.gz
 https://www.sqlite.org/2024/sqlite-autoconf-3450000.tar.gz
 https://www.sqlite.org/2024/sqlite-autoconf-3450100.tar.gz
 https://www.sqlite.org/2024/sqlite-autoconf-3450200.tar.gz
