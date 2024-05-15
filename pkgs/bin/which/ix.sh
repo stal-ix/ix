@@ -2,7 +2,7 @@
 
 {% block fetch %}
 https://ftp.gnu.org/gnu/which/which-2.21.tar.gz
-md5:097ff1a324ae02e0a3b0369f07a7544a
+sha:f4a245b94124b377d8b49646bf421f9155d36aa7614b6ebf83705d3ffc76eaad
 {% endblock %}
 
 {% block bld_libs %}
