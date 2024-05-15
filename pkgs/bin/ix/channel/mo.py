@@ -9,7 +9,6 @@ Z = zipfile.ZipFile(io.BytesIO(parent.serve('ix.zip')), 'r')
 
 links = [
     ('bin/kernel/latest', 'bin/kernel/6/8'),
-    ('bld/python/10/lite', 'bld/python/10'),
     ('lib/llvm/latest', 'lib/llvm/17'),
 ]
 
