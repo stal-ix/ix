@@ -2,7 +2,7 @@
 
 {% block fetch %}
 https://github.com/sass/sassc/archive/refs/tags/3.6.2.tar.gz
-md5:4c3b06ce2979f2a9f0a35093e501d8bb
+sha:608dc9002b45a91d11ed59e352469ecc05e4f58fc1259fc9a9f5b8f0f8348a03
 {% endblock %}
 
 {% block lib_deps %}
