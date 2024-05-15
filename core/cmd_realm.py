@@ -55,13 +55,13 @@ def cli_let(ctx):
 def cli_run(ctx):
     args = ctx['args']
 
-    for r in reversed(list(prepare(ctx, ['ephemeral'] + args[:args.index('--')] + ['bin/bash/lite/sh']))):
-        cmd = f'. {r.path}/env; ' + ' '.join(args[args.index('--') + 1:])
+    for r in reversed(list(prepare(ctx, ['ephemeral'] + args[:args.index('--')] + ['bin/ix/runner']))):
+        cmd = ['runner_entry', f'{r.path}/env'] + args[args.index('--') + 1:]
         env = os.environ.copy()
         env['PATH'] = f'/nowhere:{r.path}/bin'
-        sh = shutil.which('sh', path=env['PATH'])
+        exe = shutil.which(cmd[0], path=env['PATH'])
 
-        return os.execvpe(sh, [sh, '-c', cmd], env)
+        return os.execvpe(exe, cmd, env)
 
 
 def cli_build(ctx):
