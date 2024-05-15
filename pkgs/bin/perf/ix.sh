@@ -1,6 +1,6 @@
 {% extends '//die/c/make.sh' %}
 
-{% include '//bin/kernel/6/8/ver.sh' %}
+{% include '//bin/kernel/6/9/ver.sh' %}
 
 {% block bld_libs %}
 lib/c
@@ -22,6 +22,7 @@ lib/opcodes
 lib/openssl
 lib/elfutils
 lib/readline
+lib/cap/stone
 lib/trace/event
 lib/trace/event/plugins
 lib/shim/gnu/basename/overlay
