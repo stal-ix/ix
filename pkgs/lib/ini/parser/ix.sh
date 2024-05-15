@@ -1,8 +1,8 @@
 {% extends '//die/c/make.sh' %}
 
 {% block fetch %}
-https://github.com/ndevilla/iniparser/archive/refs/tags/v4.2.tar.gz
-sha:dbcbaf3aedb4f88a9fc0df4b315737ddd10e6c37918e3d89f0ecc475333bde4d
+https://github.com/ndevilla/iniparser/archive/refs/tags/v4.2.1.tar.gz
+sha:9120fd13260be1dbec74b8aaf47777c434976626f3b3288c0d17b70e21cce2d2
 {% endblock %}
 
 {% block lib_deps %}
