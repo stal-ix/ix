@@ -1,7 +1,7 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-{% include '//lib/llvm/17/ver.sh' %}
+{% include '//lib/llvm/18/ver.sh' %}
 {% endblock %}
 
 {% block lib_deps %}
