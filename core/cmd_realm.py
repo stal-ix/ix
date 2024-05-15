@@ -55,7 +55,7 @@ def cli_let(ctx):
 def cli_run(ctx):
     args = ctx['args']
 
-    for r in reversed(list(prepare(ctx, ['ephemeral'] + args[:args.index('--')]))):
+    for r in reversed(list(prepare(ctx, ['ephemeral'] + args[:args.index('--')] + ['bin/bash/lite/sh']))):
         cmd = f'. {r.path}/env; ' + ' '.join(args[args.index('--') + 1:])
         env = os.environ.copy()
         env['PATH'] = f'/nowhere:{r.path}/bin'
