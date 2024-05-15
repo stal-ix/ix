@@ -2,7 +2,7 @@
 
 {% block fetch %}
 https://git.sr.ht/~kennylevinsen/wlsunset/archive/0.2.0.tar.gz
-md5:63fbe599dad95084d7850efe7a063cc5
+sha:88bce695722a09d79545f14d404cc0659f7176bb08d5db5f4f23228b6ba8bb03
 {% endblock %}
 
 {% block bld_libs %}
