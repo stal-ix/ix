@@ -5,6 +5,9 @@ bin/clang/lib
 {% endblock %}
 
 {% block run_deps %}
+{% if clang_ver %}
 bld/compiler/unwrap
-#(opt=O3)
+{% else %}
+bld/compiler/unwrap(clang_ver=18,std_env=bld/boot/9/clang/env)
+{% endif %}
 {% endblock %}
