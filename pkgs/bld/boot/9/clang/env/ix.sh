@@ -2,9 +2,9 @@
 
 {% block run_deps %}
 {% if linux %}
-bld/compiler/0(libc=musl/pure,purec=musl/unwrap)
+bld/boot/9/clang(libc=musl/pure,purec=musl/unwrap)
 {% else %}
-bld/compiler/0
+bld/boot/9/clang
 {% endif %}
 bld/boot/8/env/box
 {% endblock %}
