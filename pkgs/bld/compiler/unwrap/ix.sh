@@ -2,8 +2,8 @@
 
 {% block run_deps %}
 {% if clang_ver %}
-bin/clang/{{clang_ver}}(clang_ver=)
+bld/compiler/dispatch
 {% else %}
-bin/clang/18(std_env=bld/boot/8/env/cxx)
+bld/compiler/dispatch(clang_ver=18,std_env=bld/compiler/0/env)
 {% endif %}
 {% endblock %}
