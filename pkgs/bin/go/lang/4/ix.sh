@@ -2,7 +2,7 @@
 
 {% block fetch %}
 https://golang.org/dl/go1.4-bootstrap-20170531.tar.gz
-md5:d2cc61cb9f829b3510ee39c0c5568014
+sha:49f806f66762077861b7de7081f586995940772d29d4c45068c134441a743fa2
 {% endblock %}
 
 {% block bld_tool %}

@@ -1043,6 +1043,7 @@ https://github.com/doxygen/doxygen/archive/refs/tags/Release_1_10_0.tar.gz
 https://github.com/doxygen/doxygen/archive/refs/tags/Release_1_9_8.tar.gz
 https://github.com/drakkan/sftpgo/archive/019edf38f3a1c9b7bcd318b5ad94373ce7adeae1.zip
 https://github.com/drakkan/sftpgo/archive/refs/tags/v2.5.6.tar.gz
+https://github.com/drakkan/sftpgo/archive/refs/tags/v2.6.0.tar.gz
 https://github.com/dubiousjim/dcron/archive/refs/tags/v4.5.tar.gz
 https://github.com/dundee/gdu/archive/refs/tags/v5.28.0.tar.gz
 https://github.com/dunst-project/dunst/archive/refs/tags/v1.10.0.tar.gz
@@ -1422,11 +1423,13 @@ https://github.com/kspalaiologos/bzip3/archive/refs/tags/1.3.2.tar.gz
 https://github.com/kspalaiologos/bzip3/archive/refs/tags/1.4.0.tar.gz
 https://github.com/kuroko-lang/kuroko/archive/refs/tags/v1.3.1.tar.gz
 https://github.com/kuroko-lang/kuroko/archive/refs/tags/v1.4.0.tar.gz
+https://github.com/l4l/yofi/archive/refs/tags/0.2.2.tar.gz
 https://github.com/labwc/labwc/archive/refs/tags/0.6.4.tar.gz
 https://github.com/labwc/labwc/archive/refs/tags/0.6.5.tar.gz
 https://github.com/labwc/labwc/archive/refs/tags/0.6.6.tar.gz
 https://github.com/labwc/labwc/archive/refs/tags/0.7.0.tar.gz
 https://github.com/labwc/labwc/archive/refs/tags/0.7.1.tar.gz
+https://github.com/labwc/labwc/archive/refs/tags/0.7.2.tar.gz
 https://github.com/landley/toybox/archive/refs/tags/0.8.10.tar.gz
 https://github.com/landley/toybox/archive/refs/tags/0.8.11.tar.gz
 https://github.com/lavv17/lftp/releases/download/v4.8.3/lftp-4.8.3.tar.gz
@@ -1655,6 +1658,7 @@ https://github.com/museun/cargo-whatfeatures/archive/refs/tags/v0.9.9.tar.gz
 https://github.com/mvdan/sh/archive/refs/tags/v3.5.1.tar.gz
 https://github.com/namhyung/uftrace/archive/refs/tags/v0.12.tar.gz
 https://github.com/ncopa/su-exec/archive/refs/tags/v0.2.tar.gz
+https://github.com/ndevilla/iniparser/archive/refs/tags/v4.2.1.tar.gz
 https://github.com/ndevilla/iniparser/archive/refs/tags/v4.2.tar.gz
 https://github.com/nemtrif/utfcpp/archive/refs/tags/v3.2.4.tar.gz
 https://github.com/nemtrif/utfcpp/archive/refs/tags/v3.2.5.tar.gz
@@ -2184,6 +2188,7 @@ https://github.com/wireshark/wireshark/archive/refs/tags/v4.2.1.tar.gz
 https://github.com/wireshark/wireshark/archive/refs/tags/v4.2.2.tar.gz
 https://github.com/wireshark/wireshark/archive/refs/tags/v4.2.3.tar.gz
 https://github.com/wireshark/wireshark/archive/refs/tags/v4.2.4.tar.gz
+https://github.com/wireshark/wireshark/archive/refs/tags/v4.2.5.tar.gz
 https://github.com/wlrfx/scenefx/archive/refs/tags/0.1.tar.gz
 https://github.com/wmww/gtk-layer-shell/archive/refs/tags/v0.8.0.tar.gz
 https://github.com/wolfSSL/wolfssl/archive/refs/tags/v5.6.3-stable.tar.gz
@@ -2606,6 +2611,7 @@ https://strace.io/files/6.5/strace-6.5.tar.xz
 https://strace.io/files/6.6/strace-6.6.tar.xz
 https://strace.io/files/6.7/strace-6.7.tar.xz
 https://strace.io/files/6.8/strace-6.8.tar.xz
+https://strace.io/files/6.9/strace-6.9.tar.xz
 https://taglib.org/releases/taglib-1.13.1.tar.gz
 https://the.earth.li/~sgtatham/putty/0.76/putty-0.76.tar.gz
 https://thekelleys.org.uk/dnsmasq/dnsmasq-2.89.tar.xz
@@ -2628,6 +2634,7 @@ https://webkitgtk.org/releases/webkitgtk-2.44.0.tar.xz
 https://webkitgtk.org/releases/webkitgtk-2.44.1.tar.xz
 https://wpewebkit.org/releases/wpewebkit-2.36.2.tar.xz
 https://wpitchoune.net/psensor/files/psensor-1.2.1.tar.gz
+https://www.7-zip.org/a/7z2405-src.tar.xz
 https://www.agner.org/optimize/asmlib.zip
 https://www.alsa-project.org/files/pub/lib/alsa-lib-1.2.10.tar.bz2
 https://www.alsa-project.org/files/pub/lib/alsa-lib-1.2.11.tar.bz2
@@ -2753,6 +2760,7 @@ https://www.rarlab.com/rar/unrarsrc-7.0.5.tar.gz
 https://www.rarlab.com/rar/unrarsrc-7.0.6.tar.gz
 https://www.rarlab.com/rar/unrarsrc-7.0.7.tar.gz
 https://www.rarlab.com/rar/unrarsrc-7.0.8.tar.gz
+https://www.rarlab.com/rar/unrarsrc-7.0.9.tar.gz
 https://www.sqlite.org/2024/sqlite-autoconf-3450000.tar.gz
 https://www.sqlite.org/2024/sqlite-autoconf-3450100.tar.gz
 https://www.sqlite.org/2024/sqlite-autoconf-3450200.tar.gz

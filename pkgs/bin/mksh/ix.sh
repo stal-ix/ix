@@ -2,7 +2,7 @@
 
 {% block fetch %}
 http://www.mirbsd.org/MirOS/dist/mir/mksh/mksh-R59c.tgz
-md5:99f8ac3c1d8a30b913d509f1969a4aaa
+sha:77ae1665a337f1c48c61d6b961db3e52119b38e58884d1c89684af31f87bc506
 {% endblock %}
 
 {% block bld_tool %}

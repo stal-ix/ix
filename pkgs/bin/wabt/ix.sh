@@ -5,11 +5,11 @@ https://github.com/WebAssembly/wabt
 {% endblock %}
 
 {% block git_branch %}
-1.0.33
+1.0.35
 {% endblock %}
 
 {% block git_sha %}
-4d90bf8167ae0ede7ae6c0681e1e533d2cfbced3396bd41904670a50af59a5ee
+eeaa5fd9cb0e36d92c60c376eaf68f333acce35588098e431f921cb30010c380
 {% endblock %}
 
 {% block bld_libs %}

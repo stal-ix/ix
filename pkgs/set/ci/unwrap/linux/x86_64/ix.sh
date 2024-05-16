@@ -37,6 +37,7 @@
 #}
 
 {% block run_deps %}
+bin/yofi
 bin/kernel/6/9
 bin/port/forwarder/rs
 bin/upnpc

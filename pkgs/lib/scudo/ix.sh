@@ -1,7 +1,7 @@
 {% extends '//die/c/ix.sh' %}
 
 {% block fetch %}
-{% include '//lib/llvm/latest/ver.sh' %}
+{% include '//lib/llvm/18/ver.sh' %}
 {% endblock %}
 
 {% block unpack %}

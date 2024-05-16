@@ -2,7 +2,7 @@
 
 {% block fetch %}
 http://mandoc.bsd.lv/snapshots/mandoc-1.14.6.tar.gz
-md5:f0adf24e8fdef5f3e332191f653e422a
+sha:8bf0d570f01e70a6e124884088870cbed7537f36328d512909eb10cd53179d9c
 {% endblock %}
 
 {% block bld_libs %}
