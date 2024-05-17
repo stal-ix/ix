@@ -3,6 +3,6 @@
 {# grub can't see it :( #}
 
 {% block fetch %}
-https://www.kernel.org/pub/linux/utils/fs/xfs/xfsprogs/xfsprogs-6.7.0.tar.xz
-sha:e75d1e012853e11597411cfcb80e26c811881cf0ca03715e852b42946cc61e1f
+https://www.kernel.org/pub/linux/utils/fs/xfs/xfsprogs/xfsprogs-6.8.0.tar.xz
+sha:78b6ab776eebe5ab52e0884a70fa1b3633e64a282b1ecfae91f5dd1d9ec5f07d
 {% endblock %}
