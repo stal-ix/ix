@@ -1,5 +1,9 @@
 {% extends '//lib/compiler_rt/t/ix.sh' %}
 
+{% block fetch %}
+{% include '//lib/llvm/14/ver.sh' %}
+{% endblock %}
+
 {% block cmake_flags %}
 {{super()}}
 COMPILER_RT_EXCLUDE_ATOMIC_BUILTIN=OFF

@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/libgit2/libgit2/archive/refs/tags/v1.8.0.tar.gz
-sha:9e1d6a880d59026b675456fbb1593c724c68d73c34c0d214d6eb848e9bbd8ae4
+https://github.com/libgit2/libgit2/archive/refs/tags/v1.8.1.tar.gz
+sha:8c1eaf0cf07cba0e9021920bfba9502140220786ed5d8a8ec6c7ad9174522f8e
 {% endblock %}
 
 {% block lib_deps %}

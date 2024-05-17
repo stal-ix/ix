@@ -60,6 +60,7 @@ http://mirror.koddos.net/gcc/releases/gcc-12.3.0/gcc-12.3.0.tar.xz
 http://mirror.koddos.net/gcc/releases/gcc-13.2.0/gcc-13.2.0.tar.xz
 http://mirrors.kernel.org/sourceware/lvm2/LVM2.2.03.22.tgz
 http://mirrors.kernel.org/sourceware/lvm2/LVM2.2.03.23.tgz
+http://mirrors.kernel.org/sourceware/lvm2/LVM2.2.03.24.tgz
 http://musl.libc.org/releases/musl-1.2.4.tar.gz
 http://musl.libc.org/releases/musl-1.2.5.tar.gz
 http://penma.de/code/gettext-stub/gettext-stub-1.tar.gz
@@ -179,6 +180,7 @@ https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.8.7.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.8.8.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.8.9.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.8.tar.xz
+https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.9.1.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.9.tar.xz
 https://cdn.openbsd.org/pub/OpenBSD/OpenNTPD/openntpd-6.8p1.tar.gz
 https://cmocka.org/files/1.1/cmocka-1.1.7.tar.xz
@@ -1083,6 +1085,7 @@ https://github.com/etcd-io/etcd/archive/refs/tags/v3.5.13.tar.gz
 https://github.com/evanw/esbuild/archive/refs/tags/v0.18.14.tar.gz
 https://github.com/evanw/esbuild/archive/refs/tags/v0.19.6.tar.gz
 https://github.com/evanw/esbuild/archive/refs/tags/v0.21.0.tar.gz
+https://github.com/evanw/esbuild/archive/refs/tags/v0.21.3.tar.gz
 https://github.com/exfatprogs/exfatprogs/archive/refs/tags/1.2.2.tar.gz
 https://github.com/exfatprogs/exfatprogs/releases/download/1.2.0/exfatprogs-1.2.0.tar.xz
 https://github.com/extrawurst/gitui/archive/refs/tags/v0.24.3.tar.gz
@@ -1468,6 +1471,7 @@ https://github.com/libgit2/libgit2/archive/refs/tags/v1.0.1.tar.gz
 https://github.com/libgit2/libgit2/archive/refs/tags/v1.7.0.tar.gz
 https://github.com/libgit2/libgit2/archive/refs/tags/v1.7.2.tar.gz
 https://github.com/libgit2/libgit2/archive/refs/tags/v1.8.0.tar.gz
+https://github.com/libgit2/libgit2/archive/refs/tags/v1.8.1.tar.gz
 https://github.com/libical/libical/archive/refs/tags/v3.0.16.tar.gz
 https://github.com/libical/libical/archive/refs/tags/v3.0.17.tar.gz
 https://github.com/libical/libical/archive/refs/tags/v3.0.18.tar.gz
@@ -2222,6 +2226,7 @@ https://github.com/yrutschle/sslh/archive/refs/tags/v2.0.0.tar.gz
 https://github.com/yrutschle/sslh/archive/refs/tags/v2.0.1.tar.gz
 https://github.com/yrutschle/sslh/archive/refs/tags/v2.1.0.tar.gz
 https://github.com/yrutschle/sslh/archive/refs/tags/v2.1.1.tar.gz
+https://github.com/yrutschle/sslh/archive/refs/tags/v2.1.2.tar.gz
 https://github.com/zed-industries/zed/archive/refs/tags/v0.123.2.tar.gz
 https://github.com/zellij-org/zellij/archive/refs/tags/v0.39.2.tar.gz
 https://github.com/zellij-org/zellij/archive/refs/tags/v0.40.0.tar.gz
@@ -2632,6 +2637,7 @@ https://webkitgtk.org/releases/webkitgtk-2.42.4.tar.xz
 https://webkitgtk.org/releases/webkitgtk-2.42.5.tar.xz
 https://webkitgtk.org/releases/webkitgtk-2.44.0.tar.xz
 https://webkitgtk.org/releases/webkitgtk-2.44.1.tar.xz
+https://webkitgtk.org/releases/webkitgtk-2.44.2.tar.xz
 https://wpewebkit.org/releases/wpewebkit-2.36.2.tar.xz
 https://wpitchoune.net/psensor/files/psensor-1.2.1.tar.gz
 https://www.7-zip.org/a/7z2405-src.tar.xz

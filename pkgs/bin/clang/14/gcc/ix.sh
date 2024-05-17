@@ -17,11 +17,6 @@ shut_up
 {{super()}}
 {% endblock %}
 
-{% block cmake_flags %}
-{{super()}}
-LLVM_TARGETS_TO_BUILD={{target.llvm_target}}
-{% endblock %}
-
 {% block postinstall %}
 rm -rf ${out}/lib ${out}/include
 {% endblock %}
