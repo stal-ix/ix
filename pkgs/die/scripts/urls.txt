@@ -2225,6 +2225,7 @@ https://github.com/yrutschle/sslh/archive/refs/tags/v2.0.0.tar.gz
 https://github.com/yrutschle/sslh/archive/refs/tags/v2.0.1.tar.gz
 https://github.com/yrutschle/sslh/archive/refs/tags/v2.1.0.tar.gz
 https://github.com/yrutschle/sslh/archive/refs/tags/v2.1.1.tar.gz
+https://github.com/yrutschle/sslh/archive/refs/tags/v2.1.2.tar.gz
 https://github.com/zed-industries/zed/archive/refs/tags/v0.123.2.tar.gz
 https://github.com/zellij-org/zellij/archive/refs/tags/v0.39.2.tar.gz
 https://github.com/zellij-org/zellij/archive/refs/tags/v0.40.0.tar.gz
@@ -2635,6 +2636,7 @@ https://webkitgtk.org/releases/webkitgtk-2.42.4.tar.xz
 https://webkitgtk.org/releases/webkitgtk-2.42.5.tar.xz
 https://webkitgtk.org/releases/webkitgtk-2.44.0.tar.xz
 https://webkitgtk.org/releases/webkitgtk-2.44.1.tar.xz
+https://webkitgtk.org/releases/webkitgtk-2.44.2.tar.xz
 https://wpewebkit.org/releases/wpewebkit-2.36.2.tar.xz
 https://wpitchoune.net/psensor/files/psensor-1.2.1.tar.gz
 https://www.7-zip.org/a/7z2405-src.tar.xz

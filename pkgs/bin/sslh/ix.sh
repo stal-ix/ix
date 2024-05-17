@@ -1,8 +1,8 @@
 {% extends '//die/c/autohell.sh' %}
 
 {% block fetch %}
-https://github.com/yrutschle/sslh/archive/refs/tags/v2.1.1.tar.gz
-sha:28eaa46b0fdcc0b1855f524a5a12480f1c93f8b4961c48574afc7a7785604405
+https://github.com/yrutschle/sslh/archive/refs/tags/v2.1.2.tar.gz
+sha:7ffafaffbc006bb9d9af4015a10f15982ed182ea2a454a917bdbeb5f04e27a90
 {% endblock %}
 
 {% block bld_libs %}
