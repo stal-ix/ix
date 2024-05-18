@@ -10,9 +10,6 @@
       {% else %}
         bld/compiler(clang_ver={{clang_ver}})
       {% endif %}
-      {% block no_mold %}
-        bld/linker
-      {% endblock %}
     {% endblock %}
     {% if std_box %}
       {{std_box}}
