@@ -2,8 +2,8 @@
 
 {% block run_deps %}
 {% if linux %}
-bld/boot/8/nasm/base(libc=musl/pure,purec=musl/pure)
+bld/boot/9/nasm/base(libc=musl/pure,purec=musl/pure)
 {% else %}
-bld/boot/8/nasm/base
+bld/boot/9/nasm/base
 {% endif %}
 {% endblock %}
