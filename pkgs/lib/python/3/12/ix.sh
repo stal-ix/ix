@@ -1,7 +1,7 @@
 {% extends 't/ix.sh' %}
 
 {% block lib_deps %}
-{% if purec %}
+{% if purec or libc_lite %}
 lib/dlfcn
 {% endif %}
 {{super()}}
