@@ -8,6 +8,6 @@ bin/sched(delay={{delay}})
 cd ${out}; mkdir -p etc/sched/{{delay}}; cd etc/sched/{{delay}}
 
 cat << EOF > trash_dir_{{trash_dir | b64e}}.sh
-rm -rf {{trash_dir}}/*
+exec rm -rf {{trash_dir}}/*
 EOF
 {% endblock %}

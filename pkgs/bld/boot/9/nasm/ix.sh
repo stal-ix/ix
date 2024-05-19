@@ -1,7 +1,5 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
-{% if linux %}
-#bld/mold
-{% endif %}
+bld/boot/9/nasm/base(libc_lite=1)
 {% endblock %}

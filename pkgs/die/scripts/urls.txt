@@ -526,6 +526,7 @@ https://git.kernel.org/pub/scm/utils/kernel/kmod/kmod.git/snapshot/kmod-32.tar.g
 https://git.kernel.org/pub/scm/utils/mdadm/mdadm.git/snapshot/mdadm-4.3.tar.gz
 https://git.kernel.org/pub/scm/utils/stalld/stalld.git/snapshot/stalld-1.17.1.tar.gz
 https://git.kernel.org/pub/scm/utils/stalld/stalld.git/snapshot/stalld-1.19.1.tar.gz
+https://git.kernel.org/pub/scm/utils/stalld/stalld.git/snapshot/stalld-1.19.3.tar.gz
 https://git.midipix.org/slibtool/snapshot/slibtool-0.5.34.tar.bz2
 https://git.midipix.org/slibtool/snapshot/slibtool-0.5.35.tar.bz2
 https://git.openldap.org/openldap/openldap/-/archive/LMDB_0.9.32/openldap-LMDB_0.9.32.tar.bz2
@@ -867,6 +868,7 @@ https://github.com/YaLTeR/niri/archive/refs/tags/v0.1.1.tar.gz
 https://github.com/YaLTeR/niri/archive/refs/tags/v0.1.2.tar.gz
 https://github.com/YaLTeR/niri/archive/refs/tags/v0.1.4.tar.gz
 https://github.com/YaLTeR/niri/archive/refs/tags/v0.1.5.tar.gz
+https://github.com/YaLTeR/niri/archive/refs/tags/v0.1.6.tar.gz
 https://github.com/Z3Prover/z3/archive/refs/tags/z3-4.12.2.tar.gz
 https://github.com/Z3Prover/z3/archive/refs/tags/z3-4.12.3.tar.gz
 https://github.com/Z3Prover/z3/archive/refs/tags/z3-4.12.4.tar.gz
@@ -899,6 +901,7 @@ https://github.com/alecthomas/chroma/archive/refs/tags/v2.8.0.tar.gz
 https://github.com/alecthomas/chroma/archive/refs/tags/v2.9.1.tar.gz
 https://github.com/ammen99/wf-recorder/archive/refs/tags/v0.4.1.tar.gz
 https://github.com/andikleen/mcelog/archive/refs/tags/v198.tar.gz
+https://github.com/andikleen/mcelog/archive/refs/tags/v199.tar.gz
 https://github.com/anholt/libepoxy/archive/refs/tags/1.5.10.tar.gz
 https://github.com/anrieff/libcpuid/archive/refs/tags/v0.6.3.tar.gz
 https://github.com/anrieff/libcpuid/archive/refs/tags/v0.6.4.tar.gz
@@ -1552,6 +1555,7 @@ https://github.com/llvm/llvm-project/archive/refs/tags/llvmorg-14.0.6.tar.gz
 https://github.com/llvm/llvm-project/archive/refs/tags/llvmorg-15.0.7.tar.gz
 https://github.com/llvm/llvm-project/archive/refs/tags/llvmorg-18.1.4.tar.gz
 https://github.com/llvm/llvm-project/archive/refs/tags/llvmorg-18.1.5.tar.gz
+https://github.com/llvm/llvm-project/archive/refs/tags/llvmorg-18.1.6.tar.gz
 https://github.com/llvm/llvm-project/releases/download/llvmorg-13.0.1/llvm-project-13.0.1.src.tar.xz
 https://github.com/llvm/llvm-project/releases/download/llvmorg-16.0.6/llvm-project-16.0.6.src.tar.xz
 https://github.com/llvm/llvm-project/releases/download/llvmorg-17.0.0-rc3/llvm-project-17.0.0rc3.src.tar.xz
@@ -1598,6 +1602,7 @@ https://github.com/marzer/tomlplusplus/archive/refs/tags/v3.4.0.tar.gz
 https://github.com/mauke/unibilium/archive/refs/tags/v2.0.0.tar.gz
 https://github.com/mawww/kakoune/archive/refs/tags/v2023.08.05.tar.gz
 https://github.com/mawww/kakoune/archive/refs/tags/v2024.05.09.tar.gz
+https://github.com/mawww/kakoune/archive/refs/tags/v2024.05.18.tar.gz
 https://github.com/mchehab/rasdaemon/archive/refs/tags/v0.8.0.tar.gz
 https://github.com/mesonbuild/meson/archive/refs/tags/0.60.2.tar.gz
 https://github.com/mesonbuild/meson/archive/refs/tags/0.62.1.tar.gz
@@ -1762,6 +1767,7 @@ https://github.com/phillipberndt/pqiv/archive/refs/tags/2.13.1.tar.gz
 https://github.com/phillipberndt/pqiv/archive/refs/tags/2.13.tar.gz
 https://github.com/phracker/MacOSX-SDKs/releases/download/11.3/MacOSX11.0.sdk.tar.xz
 https://github.com/phracker/MacOSX-SDKs/releases/download/11.3/MacOSX11.3.sdk.tar.xz
+https://github.com/pikhq/musl-nscd/archive/refs/tags/v1.1.1.tar.gz
 https://github.com/pkgconf/pkgconf/archive/refs/tags/pkgconf-2.0.2.tar.gz
 https://github.com/pkgconf/pkgconf/archive/refs/tags/pkgconf-2.0.3.tar.gz
 https://github.com/pkgconf/pkgconf/archive/refs/tags/pkgconf-2.1.0.tar.gz
@@ -2239,6 +2245,7 @@ https://github.com/zyedidia/micro/archive/refs/tags/v2.0.11.tar.gz
 https://github.com/zyedidia/micro/archive/refs/tags/v2.0.13.tar.gz
 https://gitlab.com/AOMediaCodec/SVT-AV1/-/archive/v1.7.0/SVT-AV1-v1.7.0.tar.bz2
 https://gitlab.com/AOMediaCodec/SVT-AV1/-/archive/v1.8.0/SVT-AV1-v1.8.0.tar.bz2
+https://gitlab.com/AOMediaCodec/SVT-AV1/-/archive/v2.1.0/SVT-AV1-v2.1.0.tar.bz2
 https://gitlab.com/cardboardwm/cardboard/-/archive/b54758d85164fb19468f5ca52588ebea576cd027/cardboard-b54758d85164fb19468f5ca52588ebea576cd027.tar.bz2
 https://gitlab.com/craigbarnes/dte/-/archive/v1.10/dte-v1.10.tar.bz2
 https://gitlab.com/faxguy/libtiff-tools/-/archive/v4.6.0t/libtiff-tools-v4.6.0t.tar.bz2
@@ -2721,11 +2728,13 @@ https://www.kernel.org/pub/linux/utils/fs/xfs/xfsprogs/xfsprogs-6.4.0.tar.xz
 https://www.kernel.org/pub/linux/utils/fs/xfs/xfsprogs/xfsprogs-6.5.0.tar.xz
 https://www.kernel.org/pub/linux/utils/fs/xfs/xfsprogs/xfsprogs-6.6.0.tar.xz
 https://www.kernel.org/pub/linux/utils/fs/xfs/xfsprogs/xfsprogs-6.7.0.tar.xz
+https://www.kernel.org/pub/linux/utils/fs/xfs/xfsprogs/xfsprogs-6.8.0.tar.xz
 https://www.kernel.org/pub/linux/utils/usb/usbutils/usbutils-014.tar.xz
 https://www.kernel.org/pub/linux/utils/usb/usbutils/usbutils-016.tar.xz
 https://www.kernel.org/pub/linux/utils/usb/usbutils/usbutils-017.tar.xz
 https://www.kernel.org/pub/software/network/iw/iw-5.19.tar.xz
 https://www.kernel.org/pub/software/network/iw/iw-6.7.tar.xz
+https://www.kernel.org/pub/software/network/iw/iw-6.9.tar.xz
 https://www.kernel.org/pub/software/utils/dtc/dtc-1.7.0.tar.xz
 https://www.leonerd.org.uk/code/libvterm/libvterm-0.3.tar.gz
 https://www.libssh.org/files/0.10/libssh-0.10.5.tar.xz

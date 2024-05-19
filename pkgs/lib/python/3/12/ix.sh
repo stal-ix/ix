@@ -1,9 +1,7 @@
 {% extends 't/ix.sh' %}
 
 {% block lib_deps %}
-{% if purec %}
 lib/dlfcn
-{% endif %}
 {{super()}}
 {% endblock %}
 
