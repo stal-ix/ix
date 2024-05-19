@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://github.com/nghttp2/nghttp2/archive/refs/tags/v1.62.0.tar.gz
-sha:c69e357d9464eedd8bb6e425cf81365e03f884d0b6433ca248e66ae124d96ada
+https://github.com/nghttp2/nghttp2/archive/refs/tags/v1.62.1.tar.gz
+sha:73c8af772dd2b30cedc114d37291cf1485b0a7ce11833595fc2aec7b3ce3ba5c
 {% endblock %}
 
 {% block lib_deps %}
