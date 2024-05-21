@@ -1,9 +1,8 @@
 {% extends '//die/c/autohell.sh' %}
 
 {% block fetch %}
-# TODO(pg): 2.5.0
-https://ftpmirror.gnu.org/libtool/libtool-2.4.6.tar.gz
-sha:e3bd4d5d3d025a36c21dd6af7ea818a2afcd4dfc1ea5a17b39d7854bcd0c06e3
+https://ftpmirror.gnu.org/libtool/libtool-2.4.7.tar.gz
+sha:04e96c2404ea70c590c546eba4202a4e12722c640016c12b9b2f1ce3d481e9a8
 {% endblock %}
 
 {% block bld_tool %}
