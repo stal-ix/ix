@@ -125,6 +125,7 @@ def get_raw_arch(n):
             'kernel': 'linux',
             'obj_fmt': 'elf',
             'cmake_system_name': 'Linux',
+            'gnu_vendor': 'pc',
         }
 
     if n == 'darwin':
@@ -152,13 +153,22 @@ def get_raw_arch(n):
         }
 
     if n == 'x86_64':
-        return {'gnu_arch': 'x86_64', 'family': 'x86'}
+        return {
+            'gnu_arch': 'x86_64',
+            'family': 'x86',
+        }
 
     if n == 'wasm32':
-        return {'gnu_arch': 'wasm32', 'family': 'wasm'}
+        return {
+            'gnu_arch': 'wasm32',
+            'family': 'wasm',
+        }
 
     if n == 'wasm64':
-        return {'gnu_arch': 'wasm64', 'family': 'wasm'}
+        return {
+            'gnu_arch': 'wasm64',
+            'family': 'wasm',
+        }
 
     if n == 'arm64':
         return du(a('aarch64'), {'arch': 'arm64'})
@@ -166,60 +176,45 @@ def get_raw_arch(n):
     if n == 'aarch64':
         return {'gnu_arch': 'aarch64', 'family': 'arm'}
 
-    if n == 'armv7-gnueabihf':
+    if n == 'armv7':
         return {
             'bits': 32,
             'gnu_arch': 'armv7',
             'family': 'arm',
+        }
+
+    if n == 'gnueabihf':
+        return {
+            'hard_float': True,
             'gnu': {
                 'three': 'armv7-linux-gnueabihf',
             },
         }
 
     if n == 'riscv64':
-        return {'gnu_arch': 'riscv64', 'family': 'riscv'}
-
-    if n == 'darwin-arm64':
-        return du(a('darwin'), a('arm64'))
-
-    if n == 'darwin-x86_64':
-        return du(a('darwin'), a('x86_64'))
-
-    if n == 'linux-x86_64':
-        return du(a('linux'), a('x86_64'), {'gnu_vendor': 'pc'})
-
-    if n == 'linux-aarch64':
-        return du(a('linux'), a('aarch64'), {'gnu_vendor': 'pc'})
-
-    if n == 'linux-armv7-gnueabihf':
-        return du(a('linux'), a('armv7-gnueabihf'), {'gnu_vendor': 'pc'})
-
-    if n == 'linux-riscv64':
-        return du(a('linux'), a('riscv64'), {'gnu_vendor': 'unknown'})
+        return {
+            'gnu_arch': 'riscv64',
+            'family': 'riscv',
+            'gnu_vendor': 'unknown',
+        }
 
     if n == 'wasi32':
-        return du(a('wasi'), a('wasm32'))
-
-    if n == 'wasi-wasm32':
-        return a('wasi32')
+        return a('wasi-wasm32')
 
     if n == 'wasi64':
-        return du(a('wasi'), a('wasm64'))
-
-    if n == 'wasi-wasm64':
-        return a('wasi64')
-
-    if n == 'mingw-w64-x86_64':
-        return du(a('mingw-w64'), a('x86_64'))
+        return a('wasi-wasm64')
 
     if n == 'mingw64':
-        return a('mingw-w64-x86_64')
+        return a('mingw_w64-x86_64')
+
+    if '-' in n:
+        return du(*[a(x) for x in n.split('-')])
 
     raise ce.Error(f'unknown target {n}')
 
 
 def arch(n):
-    return enrich(get_raw_arch(n))
+    return enrich(get_raw_arch(n.replace('mingw-w64', 'mingw_w64')))
 
 
 class Config:
