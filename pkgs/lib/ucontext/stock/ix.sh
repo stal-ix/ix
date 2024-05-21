@@ -13,7 +13,11 @@ lib/c/naked
 INCLUDEDIR=/include
 PKGCONFIGDIR=/lib/pkgconfig
 DESTDIR=${out}
+{% if armv7 %}
+ARCH=arm
+{% else %}
 ARCH={{target.arch}}
+{% endif %}
 FREESTANDING=yes
 {% endblock %}
 

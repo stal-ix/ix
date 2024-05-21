@@ -7,6 +7,7 @@ sha:b79162d571a6d8c406272dd6f3af936631a1fd1adcf909deb2d13416ef85f0cf
 
 {% block lib_deps %}
 lib/c
+lib/dlfcn
 lib/kernel
 {% endblock %}
 

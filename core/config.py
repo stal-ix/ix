@@ -57,6 +57,7 @@ def enrich(d):
         d['llvm_target'] = {
             'aarch64': 'AArch64',
             'x86_64': 'X86',
+            'armv7': 'TODO',
             'riscv64': 'TODO',
             'wasm32': 'TODO',
             'wasm64': 'TODO',
@@ -66,6 +67,7 @@ def enrich(d):
         d['linux_arch'] = {
             'aarch64': 'arm64',
             'riscv64': 'riscv',
+            'armv7': 'arm',
         }.get(d['gnu_arch'], d['gnu_arch'])
 
     if 'go_arch' not in d:
@@ -164,6 +166,16 @@ def get_raw_arch(n):
     if n == 'aarch64':
         return {'gnu_arch': 'aarch64', 'family': 'arm'}
 
+    if n == 'armv7-gnueabihv':
+        return {
+            'bits': 32,
+            'gnu_arch': 'armv7',
+            'family': 'arm',
+            'gnu': {
+                'three': 'armv7-linux-gnueabihv',
+            },
+        }
+
     if n == 'riscv64':
         return {'gnu_arch': 'riscv64', 'family': 'riscv'}
 
@@ -178,6 +190,9 @@ def get_raw_arch(n):
 
     if n == 'linux-aarch64':
         return du(a('linux'), a('aarch64'), {'gnu_vendor': 'pc'})
+
+    if n == 'linux-armv7-gnueabihv':
+        return du(a('linux'), a('armv7-gnueabihv'), {'gnu_vendor': 'pc'})
 
     if n == 'linux-riscv64':
         return du(a('linux'), a('riscv64'), {'gnu_vendor': 'unknown'})
