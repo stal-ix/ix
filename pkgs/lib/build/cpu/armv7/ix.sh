@@ -1,5 +1,10 @@
 {% extends '//die/env.sh' %}
 
 {% block env %}
-export CFLAGS="-mcpu=cortex-a53 -march=armv7 -mfloat-abi=hard ${CFLAGS}"
+export CFLAGS="-march=armv7 ${CFLAGS}"
+{% if hard_float %}
+export CFLAGS="-mfloat-abi=hard ${CFLAGS}"
+{% else %}
+export CFLAGS="-mfloat-abi=soft ${CFLAGS}"
+{% endif %}
 {% endblock %}
