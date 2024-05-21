@@ -166,13 +166,13 @@ def get_raw_arch(n):
     if n == 'aarch64':
         return {'gnu_arch': 'aarch64', 'family': 'arm'}
 
-    if n == 'armv7-gnueabihv':
+    if n == 'armv7-gnueabihf':
         return {
             'bits': 32,
             'gnu_arch': 'armv7',
             'family': 'arm',
             'gnu': {
-                'three': 'armv7-linux-gnueabihv',
+                'three': 'armv7-linux-gnueabihf',
             },
         }
 
@@ -191,8 +191,8 @@ def get_raw_arch(n):
     if n == 'linux-aarch64':
         return du(a('linux'), a('aarch64'), {'gnu_vendor': 'pc'})
 
-    if n == 'linux-armv7-gnueabihv':
-        return du(a('linux'), a('armv7-gnueabihv'), {'gnu_vendor': 'pc'})
+    if n == 'linux-armv7-gnueabihf':
+        return du(a('linux'), a('armv7-gnueabihf'), {'gnu_vendor': 'pc'})
 
     if n == 'linux-riscv64':
         return du(a('linux'), a('riscv64'), {'gnu_vendor': 'unknown'})
