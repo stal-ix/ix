@@ -109,6 +109,9 @@ def get_raw_arch(n):
     a = get_raw_arch
     du = multi_update
 
+    if '-' in n:
+        return du(*[a(x) for x in n.split('-')])
+
     if n == 'wasi':
         return {
             'os': 'wasi',
@@ -141,7 +144,7 @@ def get_raw_arch(n):
             'symbol_prefix': '_',
         }
 
-    if n == 'mingw-w64':
+    if n == 'mingw_w64':
         return {
             'os': 'mingw32',
             'kernel': 'nt',
@@ -206,9 +209,6 @@ def get_raw_arch(n):
 
     if n == 'mingw64':
         return a('mingw_w64-x86_64')
-
-    if '-' in n:
-        return du(*[a(x) for x in n.split('-')])
 
     raise ce.Error(f'unknown target {n}')
 
