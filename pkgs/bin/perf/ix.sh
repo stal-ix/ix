@@ -10,9 +10,7 @@ lib/c++
 lib/cap
 lib/bfd
 lib/ctf
-{% if not armv7 %}
 lib/glib
-{% endif %}
 lib/zstd
 lib/numa
 lib/slang
