@@ -59,6 +59,9 @@ PLATFORM_linux_riscv64="linux64-riscv64"
 {% if mingw32 %}
 PLATFORM_mingw32_x86_64="mingw64"
 {% endif %}
+{% if armv7 %}
+PLATFORM_linux_armv7="linux-generic32"
+{% endif %}
 {% endblock %}
 
 perl ./Configure \

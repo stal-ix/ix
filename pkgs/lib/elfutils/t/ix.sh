@@ -10,6 +10,8 @@ lib/c
 lib/z
 lib/xz
 lib/fts
+#__cxa_demangle
+lib/c++
 lib/zstd
 lib/bzip/2
 lib/shim/gnu/basename

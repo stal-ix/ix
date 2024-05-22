@@ -20,6 +20,7 @@ lib/utf8/proc
 {% endblock %}
 
 {% block bld_tool %}
+bin/libtool/prev
 bld/python/2
 {% endblock %}
 

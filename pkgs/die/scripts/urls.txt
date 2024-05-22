@@ -507,6 +507,7 @@ https://ftp.postgresql.org/pub/source/v16.0/postgresql-16.0.tar.bz2
 https://ftp.postgresql.org/pub/source/v16.1/postgresql-16.1.tar.bz2
 https://ftp.postgresql.org/pub/source/v16.3/postgresql-16.3.tar.bz2
 https://ftpmirror.gnu.org/libtool/libtool-2.4.6.tar.gz
+https://ftpmirror.gnu.org/libtool/libtool-2.4.7.tar.gz
 https://gameoftrees.org/releases/portable/got-portable-0.92.tar.gz
 https://gameoftrees.org/releases/portable/got-portable-0.93.tar.gz
 https://git.kernel.org/pub/scm/libs/libcap/libcap.git/snapshot/libcap-cap/v1.2.64.tar.gz
@@ -1112,6 +1113,7 @@ https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.11.3.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.11.4.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.11.5.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.12.0.tar.gz
+https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.13.1.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.2.0.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.2.2.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.2.3.tar.gz
@@ -1388,6 +1390,7 @@ https://github.com/johnsonjh/OpenVi/archive/refs/tags/7.4.24.tar.gz
 https://github.com/johnsonjh/OpenVi/archive/refs/tags/7.4.25.tar.gz
 https://github.com/johnsonjh/OpenVi/archive/refs/tags/7.4.27.tar.gz
 https://github.com/johnsonjh/OpenVi/archive/refs/tags/7.5.28.tar.gz
+https://github.com/johnsonjh/OpenVi/archive/refs/tags/7.5.29.tar.gz
 https://github.com/jonas/tig/archive/refs/tags/tig-2.5.8.tar.gz
 https://github.com/jonas/tig/archive/refs/tags/tig-2.5.9.tar.gz
 https://github.com/joncampbell123/dosbox-x/archive/refs/tags/dosbox-x-v2023.10.06.tar.gz
@@ -1625,6 +1628,7 @@ https://github.com/microsoft/mimalloc/archive/refs/tags/v1.8.2.tar.gz
 https://github.com/microsoft/mimalloc/archive/refs/tags/v2.1.2.tar.gz
 https://github.com/microsoft/mimalloc/archive/refs/tags/v2.1.4.tar.gz
 https://github.com/microsoft/mimalloc/archive/refs/tags/v2.1.6.tar.gz
+https://github.com/microsoft/mimalloc/archive/refs/tags/v2.1.7.tar.gz
 https://github.com/microsoft/msquic/archive/refs/tags/v2.2.2.tar.gz
 https://github.com/microsoft/msquic/archive/refs/tags/v2.2.3.tar.gz
 https://github.com/microsoft/msquic/archive/refs/tags/v2.2.4.tar.gz
@@ -1671,6 +1675,7 @@ https://github.com/mvdan/sh/archive/refs/tags/v3.5.1.tar.gz
 https://github.com/namhyung/uftrace/archive/refs/tags/v0.12.tar.gz
 https://github.com/ncopa/su-exec/archive/refs/tags/v0.2.tar.gz
 https://github.com/ndevilla/iniparser/archive/refs/tags/v4.2.1.tar.gz
+https://github.com/ndevilla/iniparser/archive/refs/tags/v4.2.2.tar.gz
 https://github.com/ndevilla/iniparser/archive/refs/tags/v4.2.tar.gz
 https://github.com/nemtrif/utfcpp/archive/refs/tags/v3.2.4.tar.gz
 https://github.com/nemtrif/utfcpp/archive/refs/tags/v3.2.5.tar.gz
@@ -2126,6 +2131,7 @@ https://github.com/tulir/gomuks/archive/refs/tags/v0.3.0.tar.gz
 https://github.com/tvrzna/emptty/archive/refs/tags/v0.10.0.tar.gz
 https://github.com/tvrzna/emptty/archive/refs/tags/v0.11.0.tar.gz
 https://github.com/tvrzna/emptty/archive/refs/tags/v0.12.0.tar.gz
+https://github.com/tytso/e2fsprogs/archive/refs/tags/v1.46.6.tar.gz
 https://github.com/u-root/u-root/archive/refs/tags/v0.13.0.tar.gz
 https://github.com/uclouvain/openjpeg/archive/refs/tags/v2.5.0.tar.gz
 https://github.com/uclouvain/openjpeg/archive/refs/tags/v2.5.1.tar.gz
@@ -2504,6 +2510,7 @@ https://mesa.freedesktop.org/archive/mesa-24.0.7.tar.xz
 https://mirror.tochlab.net/pub/gnu/autoconf-archive/autoconf-archive-2023.02.20.tar.xz
 https://mirror.tochlab.net/pub/gnu/help2man/help2man-1.49.2.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/kernel/people/tytso/e2fsprogs/v1.46.6/e2fsprogs-1.46.6.tar.xz
+https://mirrors.edge.kernel.org/pub/linux/kernel/people/tytso/e2fsprogs/v1.47.1/e2fsprogs-1.47.1.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/libs/ell/ell-0.58.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/libs/ell/ell-0.60.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/libs/ell/ell-0.61.tar.xz
