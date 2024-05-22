@@ -27,6 +27,10 @@ lib/ng/http/2
 lib/c
 {% endblock %}
 
+{% block build_flags %}
+wrap_cc
+{% endblock %}
+
 {% block bld_tool %}
 bin/gzip
 {% endblock %}
@@ -35,6 +39,11 @@ bin/gzip
 --enable-developer
 --disable-warn-error
 --with-libnghttp2=yes
+{% endblock %}
+
+{% block patch %}
+sed -e 's|.*SUBD.*tests.*||' -i Makefile.am
+sed -e 's|tests||' -e 's|plugins||' -i bin/Makefile.am
 {% endblock %}
 
 {% block configure %}
