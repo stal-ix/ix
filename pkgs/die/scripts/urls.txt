@@ -1628,6 +1628,7 @@ https://github.com/microsoft/mimalloc/archive/refs/tags/v1.8.2.tar.gz
 https://github.com/microsoft/mimalloc/archive/refs/tags/v2.1.2.tar.gz
 https://github.com/microsoft/mimalloc/archive/refs/tags/v2.1.4.tar.gz
 https://github.com/microsoft/mimalloc/archive/refs/tags/v2.1.6.tar.gz
+https://github.com/microsoft/mimalloc/archive/refs/tags/v2.1.7.tar.gz
 https://github.com/microsoft/msquic/archive/refs/tags/v2.2.2.tar.gz
 https://github.com/microsoft/msquic/archive/refs/tags/v2.2.3.tar.gz
 https://github.com/microsoft/msquic/archive/refs/tags/v2.2.4.tar.gz
@@ -2130,6 +2131,7 @@ https://github.com/tulir/gomuks/archive/refs/tags/v0.3.0.tar.gz
 https://github.com/tvrzna/emptty/archive/refs/tags/v0.10.0.tar.gz
 https://github.com/tvrzna/emptty/archive/refs/tags/v0.11.0.tar.gz
 https://github.com/tvrzna/emptty/archive/refs/tags/v0.12.0.tar.gz
+https://github.com/tytso/e2fsprogs/archive/refs/tags/v1.46.6.tar.gz
 https://github.com/u-root/u-root/archive/refs/tags/v0.13.0.tar.gz
 https://github.com/uclouvain/openjpeg/archive/refs/tags/v2.5.0.tar.gz
 https://github.com/uclouvain/openjpeg/archive/refs/tags/v2.5.1.tar.gz
