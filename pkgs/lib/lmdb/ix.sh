@@ -1,8 +1,8 @@
 {% extends '//die/c/make.sh' %}
 
 {% block fetch %}
-https://git.openldap.org/openldap/openldap/-/archive/LMDB_0.9.32/openldap-LMDB_0.9.32.tar.bz2
-sha:039be48414f71299d04fb01da3e1a6461075bb77eaeeeda36ee5285de804ebf6
+https://git.openldap.org/openldap/openldap/-/archive/LMDB_0.9.33/openldap-LMDB_0.9.33.tar.bz2
+sha:d19d52725800177b89d235161c0af8ae8b2932207e3c9eb87e95b61f1925206d
 {% endblock %}
 
 {% block unpack %}
