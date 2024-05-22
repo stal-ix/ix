@@ -22,6 +22,10 @@ lib/kernel
 {% endblock %}
 
 {% block build_flags %}
-#wrap_cc
 no_werror
+{% endblock %}
+
+{% block install %}
+{{super()}}
+cp -R ../include ${out}/
 {% endblock %}
