@@ -10,6 +10,7 @@ lib/c++
 lib/cap
 lib/bfd
 lib/ctf
+lib/pfm
 lib/glib
 lib/zstd
 lib/numa
