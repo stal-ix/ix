@@ -10,6 +10,9 @@ lib/c
 {% if mingw32 %}
 lib/shim/dll(dll_name=iphlpapi)
 {% endif %}
+{% if darwin %}
+lib/darwin/framework/SystemConfiguration
+{% endif %}
 {% endblock %}
 
 {% block cmake_flags %}
