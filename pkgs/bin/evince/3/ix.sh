@@ -1,8 +1,8 @@
 {% extends '//die/c/gnome.sh' %}
 
 {% block fetch %}
-https://download.gnome.org/sources/evince/46/evince-46.2.tar.xz
-sha:8afb533cd6660fe4006339aaa03c0fe449e60d1042d25bbe51dc98fbee789f8b
+https://download.gnome.org/sources/evince/46/evince-46.3.tar.xz
+sha:bc0d1d41b9d7ffc762e99d2abfafacbf745182f0b31d86db5eec8c67f5f3006b
 {% endblock %}
 
 {% block bld_libs %}
