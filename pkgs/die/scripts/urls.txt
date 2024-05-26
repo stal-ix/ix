@@ -181,6 +181,7 @@ https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.8.8.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.8.9.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.8.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.9.1.tar.xz
+https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.9.2.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.9.tar.xz
 https://cdn.openbsd.org/pub/OpenBSD/OpenNTPD/openntpd-6.8p1.tar.gz
 https://cmocka.org/files/1.1/cmocka-1.1.7.tar.xz
@@ -1382,6 +1383,7 @@ https://github.com/jeaye/stdman/archive/refs/tags/2022.07.30.tar.gz
 https://github.com/jech/dht/archive/refs/tags/dht-0.27.tar.gz
 https://github.com/jedisct1/libsodium/archive/refs/tags/1.0.18.tar.gz
 https://github.com/jedisct1/libsodium/archive/refs/tags/1.0.19.tar.gz
+https://github.com/jedisct1/libsodium/archive/refs/tags/1.0.20.tar.gz
 https://github.com/jemalloc/jemalloc/archive/refs/tags/5.3.0.tar.gz
 https://github.com/jesseduffield/lazygit/archive/refs/tags/v0.40.2.tar.gz
 https://github.com/jesseduffield/lazygit/archive/refs/tags/v0.41.0.tar.gz
