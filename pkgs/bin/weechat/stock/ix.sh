@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/weechat/weechat/archive/refs/tags/v4.2.2.tar.gz
-sha:064856ae2b999ab13e5eb6c40d15333d3afe428d636ed3849f2d48a825379706
+https://github.com/weechat/weechat/archive/refs/tags/v4.3.0.tar.gz
+sha:38bbe7fa8c58609ff91004c3253ce99fadc71e74821124dc2f29252fd4f8725c
 {% endblock %}
 
 {% block bld_libs %}
@@ -12,6 +12,7 @@ lib/intl
 lib/curl
 lib/gcrypt
 lib/gnutls
+lib/c/json
 lib/enchant
 lib/shim/fake/pkg(pkg_name=lua,pkg_ver=5.4)
 {% endblock %}
