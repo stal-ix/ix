@@ -164,7 +164,7 @@ bin/nheko
 bin/kms/xx
 bin/muslstack
 bin/aom
-bin/ff/play
+#bin/ff/play
 bin/tinylog
 bin/qemacs
 bin/uasm
