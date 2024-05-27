@@ -1,8 +1,8 @@
 {% extends '//die/c/make.sh' %}
 
 {% block fetch %}
-https://www.7-zip.org/a/7z2405-src.tar.xz
-sha:63f341cf80b8d287c6e945519b3da0fa75553c85572a471b7fa6e68f9a90b790
+https://www.7-zip.org/a/7z2406-src.tar.xz
+sha:2aa1660c773525b2ed84d6cd7ff0680c786ec0893b87e4db44654dcb7f5ac8b5
 {% endblock %}
 
 {% block lib_deps %}

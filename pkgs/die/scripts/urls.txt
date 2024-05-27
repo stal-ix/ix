@@ -2680,6 +2680,7 @@ https://webkitgtk.org/releases/webkitgtk-2.44.2.tar.xz
 https://wpewebkit.org/releases/wpewebkit-2.36.2.tar.xz
 https://wpitchoune.net/psensor/files/psensor-1.2.1.tar.gz
 https://www.7-zip.org/a/7z2405-src.tar.xz
+https://www.7-zip.org/a/7z2406-src.tar.xz
 https://www.agner.org/optimize/asmlib.zip
 https://www.alsa-project.org/files/pub/lib/alsa-lib-1.2.10.tar.bz2
 https://www.alsa-project.org/files/pub/lib/alsa-lib-1.2.11.tar.bz2
