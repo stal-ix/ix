@@ -1,14 +1,17 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/c-ares/c-ares/archive/refs/tags/cares-1_28_1.tar.gz
-sha:e520d971415e48e607819c2f4b377b0aa69044ef6619160bb41bdba15ab4d545
+https://github.com/c-ares/c-ares/archive/refs/tags/cares-1_29_0.tar.gz
+sha:48c9205a64d5df05e6ac18bce2d7fb6d71240617f8c6243cac0589acc3d991f1
 {% endblock %}
 
 {% block lib_deps %}
 lib/c
 {% if mingw32 %}
 lib/shim/dll(dll_name=iphlpapi)
+{% endif %}
+{% if darwin %}
+lib/darwin/framework/SystemConfiguration
 {% endif %}
 {% endblock %}
 

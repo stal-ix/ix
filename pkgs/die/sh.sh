@@ -48,6 +48,7 @@ cd ${tmp}
 mkdir tmp
 
 export TMPDIR=${PWD}/tmp
+export HOME=${TMPDIR}
 {% endblock %}
 
 (

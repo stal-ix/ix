@@ -181,6 +181,7 @@ https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.8.8.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.8.9.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.8.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.9.1.tar.xz
+https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.9.2.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.9.tar.xz
 https://cdn.openbsd.org/pub/OpenBSD/OpenNTPD/openntpd-6.8p1.tar.gz
 https://cmocka.org/files/1.1/cmocka-1.1.7.tar.xz
@@ -236,6 +237,8 @@ https://download.gnome.org/sources/evince/44/evince-44.3.tar.xz
 https://download.gnome.org/sources/evince/45/evince-45.0.tar.xz
 https://download.gnome.org/sources/evince/46/evince-46.0.tar.xz
 https://download.gnome.org/sources/evince/46/evince-46.1.tar.xz
+https://download.gnome.org/sources/evince/46/evince-46.2.tar.xz
+https://download.gnome.org/sources/evince/46/evince-46.3.tar.xz
 https://download.gnome.org/sources/gdk-pixbuf/2.42/gdk-pixbuf-2.42.11.tar.xz
 https://download.gnome.org/sources/gdk-pixbuf/2.42/gdk-pixbuf-2.42.6.tar.xz
 https://download.gnome.org/sources/glib/2.74/glib-2.74.5.tar.xz
@@ -353,6 +356,7 @@ https://ffmpeg.org/releases/ffmpeg-6.0.1.tar.xz
 https://ffmpeg.org/releases/ffmpeg-6.0.tar.xz
 https://ffmpeg.org/releases/ffmpeg-6.1.1.tar.xz
 https://ffmpeg.org/releases/ffmpeg-6.1.tar.xz
+https://ffmpeg.org/releases/ffmpeg-7.0.1.tar.xz
 https://ffmpeg.org/releases/ffmpeg-7.0.tar.xz
 https://files.pythonhosted.org/packages/03/3b/68690a035ba7347860f1b8c0cde853230ba69ff41df5884ea7d89fe68cd3/Mako-1.2.4-py3-none-any.whl
 https://files.pythonhosted.org/packages/08/f4/ffa743f860f34a5e8c60abaaa686f82c9ac7a2b50e5a1c3b1eb564d59159/PyYAML-6.0-cp39-cp39-win_amd64.whl
@@ -439,6 +443,7 @@ https://ftp.gnu.org/gnu/groff/groff-1.23.0.tar.gz
 https://ftp.gnu.org/gnu/grub/grub-2.06.tar.xz
 https://ftp.gnu.org/gnu/grub/grub-2.12.tar.xz
 https://ftp.gnu.org/gnu/gsl/gsl-2.7.1.tar.gz
+https://ftp.gnu.org/gnu/gsl/gsl-2.8.tar.gz
 https://ftp.gnu.org/gnu/gzip/gzip-1.13.tar.xz
 https://ftp.gnu.org/gnu/inetutils/inetutils-2.4.tar.xz
 https://ftp.gnu.org/gnu/inetutils/inetutils-2.5.tar.xz
@@ -662,6 +667,7 @@ https://github.com/GNOME/libadwaita/archive/refs/tags/1.4.0.tar.gz
 https://github.com/GNOME/libadwaita/archive/refs/tags/1.4.2.tar.gz
 https://github.com/GNOME/libadwaita/archive/refs/tags/1.4.beta.tar.gz
 https://github.com/GNOME/libadwaita/archive/refs/tags/1.5.0.tar.gz
+https://github.com/GNOME/libadwaita/archive/refs/tags/1.5.1.tar.gz
 https://github.com/GNOME/libgudev/archive/refs/tags/237.tar.gz
 https://github.com/GNOME/libshumate/archive/refs/tags/1.0.5.tar.gz
 https://github.com/GNOME/libshumate/archive/refs/tags/1.1.0.tar.gz
@@ -796,6 +802,7 @@ https://github.com/NetworkConfiguration/dhcpcd/archive/refs/tags/v10.0.3.tar.gz
 https://github.com/NetworkConfiguration/dhcpcd/archive/refs/tags/v10.0.4.tar.gz
 https://github.com/NetworkConfiguration/dhcpcd/archive/refs/tags/v10.0.5.tar.gz
 https://github.com/NetworkConfiguration/dhcpcd/archive/refs/tags/v10.0.6.tar.gz
+https://github.com/NetworkConfiguration/dhcpcd/archive/refs/tags/v10.0.8.tar.gz
 https://github.com/NetworkConfiguration/openresolv/archive/refs/tags/v3.13.2.tar.gz
 https://github.com/NixOS/nix/archive/refs/tags/2.17.0.tar.gz
 https://github.com/NixOS/nix/archive/refs/tags/2.18.0.tar.gz
@@ -978,6 +985,7 @@ https://github.com/c-ares/c-ares/archive/refs/tags/cares-1_25_0.tar.gz
 https://github.com/c-ares/c-ares/archive/refs/tags/cares-1_26_0.tar.gz
 https://github.com/c-ares/c-ares/archive/refs/tags/cares-1_27_0.tar.gz
 https://github.com/c-ares/c-ares/archive/refs/tags/cares-1_28_1.tar.gz
+https://github.com/c-ares/c-ares/archive/refs/tags/cares-1_29_0.tar.gz
 https://github.com/c-util/c-dvar/archive/refs/tags/v1.1.0.tar.gz
 https://github.com/c-util/c-ini/archive/refs/tags/v1.1.0.tar.gz
 https://github.com/c-util/c-list/archive/refs/tags/v3.1.0.tar.gz
@@ -1117,6 +1125,7 @@ https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.11.4.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.11.5.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.12.0.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.13.1.tar.gz
+https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.13.2.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.2.0.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.2.2.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.2.3.tar.gz
@@ -1317,6 +1326,7 @@ https://github.com/hyprwm/hyprcursor/archive/refs/tags/v0.1.4.tar.gz
 https://github.com/hyprwm/hyprcursor/archive/refs/tags/v0.1.5.tar.gz
 https://github.com/hyprwm/hyprcursor/archive/refs/tags/v0.1.6.tar.gz
 https://github.com/hyprwm/hyprcursor/archive/refs/tags/v0.1.8.tar.gz
+https://github.com/hyprwm/hyprcursor/archive/refs/tags/v0.1.9.tar.gz
 https://github.com/hyprwm/hyprlang/archive/refs/tags/v0.4.1.tar.gz
 https://github.com/hyprwm/hyprlang/archive/refs/tags/v0.5.0.tar.gz
 https://github.com/hyprwm/hyprlang/archive/refs/tags/v0.5.1.tar.gz
@@ -1375,6 +1385,7 @@ https://github.com/jeaye/stdman/archive/refs/tags/2022.07.30.tar.gz
 https://github.com/jech/dht/archive/refs/tags/dht-0.27.tar.gz
 https://github.com/jedisct1/libsodium/archive/refs/tags/1.0.18.tar.gz
 https://github.com/jedisct1/libsodium/archive/refs/tags/1.0.19.tar.gz
+https://github.com/jedisct1/libsodium/archive/refs/tags/1.0.20.tar.gz
 https://github.com/jemalloc/jemalloc/archive/refs/tags/5.3.0.tar.gz
 https://github.com/jesseduffield/lazygit/archive/refs/tags/v0.40.2.tar.gz
 https://github.com/jesseduffield/lazygit/archive/refs/tags/v0.41.0.tar.gz
@@ -1463,6 +1474,7 @@ https://github.com/libbpf/libbpf/archive/refs/tags/v1.2.2.tar.gz
 https://github.com/libbpf/libbpf/archive/refs/tags/v1.3.0.tar.gz
 https://github.com/libbpf/libbpf/archive/refs/tags/v1.4.0.tar.gz
 https://github.com/libbpf/libbpf/archive/refs/tags/v1.4.1.tar.gz
+https://github.com/libbpf/libbpf/archive/refs/tags/v1.4.2.tar.gz
 https://github.com/libcgroup/libcgroup/releases/download/v2.0.2/libcgroup-2.0.2.tar.gz
 https://github.com/libconfuse/libconfuse/archive/refs/tags/v3.3.tar.gz
 https://github.com/libcxxrt/libcxxrt/archive/fd484be8d1e94a1fcf6bc5c67e5c07b65ada19b6.tar.gz
@@ -1830,6 +1842,7 @@ https://github.com/qbittorrent/qBittorrent/archive/refs/tags/release-4.6.0.tar.g
 https://github.com/qbittorrent/qBittorrent/archive/refs/tags/release-4.6.1.tar.gz
 https://github.com/qbittorrent/qBittorrent/archive/refs/tags/release-4.6.3.tar.gz
 https://github.com/qbittorrent/qBittorrent/archive/refs/tags/release-4.6.4.tar.gz
+https://github.com/qbittorrent/qBittorrent/archive/refs/tags/release-4.6.5.tar.gz
 https://github.com/qpdf/qpdf/archive/refs/tags/v11.6.1.tar.gz
 https://github.com/qpdf/qpdf/archive/refs/tags/v11.6.2.tar.gz
 https://github.com/qpdf/qpdf/archive/refs/tags/v11.6.3.tar.gz
@@ -2090,6 +2103,7 @@ https://github.com/telegramdesktop/tdesktop/releases/download/v4.9.4/tdesktop-4.
 https://github.com/telegramdesktop/tdesktop/releases/download/v4.9.6/tdesktop-4.9.6-full.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v4.9.8/tdesktop-4.9.8-full.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v5.0.1/tdesktop-5.0.1-full.tar.gz
+https://github.com/telegramdesktop/tdesktop/releases/download/v5.0.2/tdesktop-5.0.2-full.tar.gz
 https://github.com/tenox7/ttyplot/archive/refs/tags/1.6.1.tar.gz
 https://github.com/tesseract-ocr/tesseract/archive/refs/tags/5.2.0.tar.gz
 https://github.com/tetratelabs/wazero/archive/refs/tags/v1.5.0.tar.gz
@@ -2201,6 +2215,7 @@ https://github.com/weechat/weechat/archive/refs/tags/v4.1.3.tar.gz
 https://github.com/weechat/weechat/archive/refs/tags/v4.2.0.tar.gz
 https://github.com/weechat/weechat/archive/refs/tags/v4.2.1.tar.gz
 https://github.com/weechat/weechat/archive/refs/tags/v4.2.2.tar.gz
+https://github.com/weechat/weechat/archive/refs/tags/v4.3.0.tar.gz
 https://github.com/westes/flex/archive/refs/tags/flex-2-5-10.tar.gz
 https://github.com/westes/flex/files/981163/flex-2.6.4.tar.gz
 https://github.com/wez/wezterm/archive/refs/tags/20230712-072601-f4abf8fd.tar.gz
@@ -2417,6 +2432,7 @@ https://gitlab.gnome.org/GNOME/vte/-/archive/0.74.1/vte-0.74.1.tar.bz2
 https://gitlab.gnome.org/GNOME/vte/-/archive/0.74.2/vte-0.74.2.tar.bz2
 https://gitlab.gnome.org/GNOME/vte/-/archive/0.76.0/vte-0.76.0.tar.bz2
 https://gitlab.gnome.org/GNOME/vte/-/archive/0.76.1/vte-0.76.1.tar.bz2
+https://gitlab.gnome.org/GNOME/vte/-/archive/0.76.2/vte-0.76.2.tar.bz2
 https://gitlab.gnome.org/GNOME/vte/-/archive/9e8824480ef51374bf9b42ad8ee59f64d50456b1/vte-9e8824480ef51374bf9b42ad8ee59f64d50456b1.tar.bz2
 https://gitlab.gnome.org/GNOME/zenity/-/archive/3.44.0/zenity-3.44.0.tar.bz2
 https://gitlab.gnome.org/GNOME/zenity/-/archive/3.90.0/zenity-3.90.0.tar.bz2
@@ -2461,6 +2477,7 @@ https://imagemagick.org/archive/releases/ImageMagick-7.1.1-28.tar.xz
 https://imagemagick.org/archive/releases/ImageMagick-7.1.1-29.tar.xz
 https://imagemagick.org/archive/releases/ImageMagick-7.1.1-31.tar.xz
 https://imagemagick.org/archive/releases/ImageMagick-7.1.1-32.tar.xz
+https://imagemagick.org/archive/releases/ImageMagick-7.1.1-33.tar.xz
 https://invent.kde.org/frameworks/kwindowsystem/-/archive/v6.1.0/kwindowsystem-v6.1.0.tar.bz2
 https://invisible-island.net/archives/dialog/dialog-1.3-20240101.tgz
 https://invisible-mirror.net/archives/byacc/byacc-20211224.tgz
@@ -2663,6 +2680,7 @@ https://webkitgtk.org/releases/webkitgtk-2.44.2.tar.xz
 https://wpewebkit.org/releases/wpewebkit-2.36.2.tar.xz
 https://wpitchoune.net/psensor/files/psensor-1.2.1.tar.gz
 https://www.7-zip.org/a/7z2405-src.tar.xz
+https://www.7-zip.org/a/7z2406-src.tar.xz
 https://www.agner.org/optimize/asmlib.zip
 https://www.alsa-project.org/files/pub/lib/alsa-lib-1.2.10.tar.bz2
 https://www.alsa-project.org/files/pub/lib/alsa-lib-1.2.11.tar.bz2
@@ -2796,6 +2814,7 @@ https://www.sqlite.org/2024/sqlite-autoconf-3450000.tar.gz
 https://www.sqlite.org/2024/sqlite-autoconf-3450100.tar.gz
 https://www.sqlite.org/2024/sqlite-autoconf-3450200.tar.gz
 https://www.sqlite.org/2024/sqlite-autoconf-3450300.tar.gz
+https://www.sqlite.org/2024/sqlite-autoconf-3460000.tar.gz
 https://www.stunnel.org/downloads/stunnel-5.70.tar.gz
 https://www.stunnel.org/downloads/stunnel-5.71.tar.gz
 https://www.stunnel.org/downloads/stunnel-5.72.tar.gz
