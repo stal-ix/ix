@@ -49,7 +49,7 @@ def gen_show_cksum(path):
 
 
 def gen_dir(out):
-    yield ['/bin/rm', '-rf', out]
+    yield ['/bin/purge', out]
     yield ['/bin/mkdir', '-p', out]
 
 
@@ -103,24 +103,41 @@ def add_checks(sb, node):
     return node
 
 
+def choice(*args):
+    for x in args:
+        if os.path.isfile(x):
+            return x
+
+    raise Exception(f'can not find any of {args}')
+
+
 class Ops:
     def __init__(self, cfg):
         self.cfg = cfg
-        self.loc = co.Ops(self.cfg)
+        self.assemble = choice('/bin/assemble', f'{B}/assemble')
+
+        try:
+            self.fetcher = choice('/bin/fetcher')
+        except Exception:
+            self.fetcher = None
+            self.loc = co.Ops(self.cfg)
 
     def execute_graph(self, graph):
-        run_cmd([f'{B}/assemble'], input=json.dumps(graph))
+        run_cmd([self.assemble], input=json.dumps(graph))
 
     def gc(self, kind):
         run_cmd(['/bin/env', 'IX_EXEC_KIND=local', sys.executable, self.cfg.binary, 'gc'] + kind, user='root')
 
     def runpy(self):
-        return [f'/bin/python3']
+        return ['/bin/python3']
 
     def extract(self):
         return [f'{B}/bsdtar', '--no-same-permissions', '--no-same-owner', '-x', '-f']
 
     def fetch(self, sb, url, path, md5):
+        if self.fetcher:
+            return [sb.cmd([self.fetcher, url, path, md5])]
+
         return self.loc.fetch(sb, url, path, md5)
 
     def link(self, sb, files, out):

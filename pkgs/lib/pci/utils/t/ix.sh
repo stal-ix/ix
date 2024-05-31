@@ -1,8 +1,8 @@
 {% extends '//die/c/make.sh' %}
 
 {% block fetch %}
-https://mirrors.edge.kernel.org/pub/software/utils/pciutils/pciutils-3.12.0.tar.xz
-sha:f185d116d5ff99b797497efce8f19f1ee8ccc5a668b97a159e3d13472f674154
+https://github.com/pciutils/pciutils/archive/refs/tags/v3.13.0.tar.gz
+sha:861fc26151a4596f5c3cb6f97d6c75c675051fa014959e26fb871c8c932ebc67
 {% endblock %}
 
 {% block lib_deps %}
