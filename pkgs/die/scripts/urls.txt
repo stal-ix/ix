@@ -340,6 +340,7 @@ https://downloads.sourceforge.net/project/sbcl/sbcl/2.4.1/sbcl-2.4.1-source.tar.
 https://downloads.sourceforge.net/project/sbcl/sbcl/2.4.2/sbcl-2.4.2-source.tar.bz2
 https://downloads.sourceforge.net/project/sbcl/sbcl/2.4.3/sbcl-2.4.3-source.tar.bz2
 https://downloads.sourceforge.net/project/sbcl/sbcl/2.4.4/sbcl-2.4.4-source.tar.bz2
+https://downloads.sourceforge.net/project/sbcl/sbcl/2.4.5/sbcl-2.4.5-source.tar.bz2
 https://downloads.sourceforge.net/project/scons/scons/4.5.2/SCons-4.5.2.tar.gz
 https://downloads.sourceforge.net/project/sdlgfx/SDL_gfx-2.0.25.tar.gz
 https://downloads.sourceforge.net/project/sox/sox/14.4.2/sox-14.4.2.tar.bz2
@@ -2117,6 +2118,7 @@ https://github.com/telegramdesktop/tdesktop/releases/download/v4.9.8/tdesktop-4.
 https://github.com/telegramdesktop/tdesktop/releases/download/v5.0.1/tdesktop-5.0.1-full.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v5.0.2/tdesktop-5.0.2-full.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v5.0.4/tdesktop-5.0.4-full.tar.gz
+https://github.com/telegramdesktop/tdesktop/releases/download/v5.0.6/tdesktop-5.0.6-full.tar.gz
 https://github.com/tenox7/ttyplot/archive/refs/tags/1.6.1.tar.gz
 https://github.com/tesseract-ocr/tesseract/archive/refs/tags/5.2.0.tar.gz
 https://github.com/tetratelabs/wazero/archive/refs/tags/v1.5.0.tar.gz
@@ -2197,6 +2199,7 @@ https://github.com/vcrhonek/hwdata/archive/refs/tags/v0.379.tar.gz
 https://github.com/vcrhonek/hwdata/archive/refs/tags/v0.380.tar.gz
 https://github.com/vcrhonek/hwdata/archive/refs/tags/v0.381.tar.gz
 https://github.com/vcrhonek/hwdata/archive/refs/tags/v0.382.tar.gz
+https://github.com/vcrhonek/hwdata/archive/refs/tags/v0.383.tar.gz
 https://github.com/vector-of-bool/cmrc/archive/refs/tags/2.0.1.tar.gz
 https://github.com/videolabs/libmicrodns/archive/refs/tags/0.2.0.tar.gz
 https://github.com/videolan/dav1d/archive/refs/tags/1.2.1.tar.gz
