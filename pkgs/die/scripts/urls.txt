@@ -2738,6 +2738,7 @@ https://www.freedesktop.org/software/colord/releases/colord-1.4.6.tar.xz
 https://www.freedesktop.org/software/fontconfig/release/fontconfig-2.14.2.tar.xz
 https://www.freedesktop.org/software/fontconfig/release/fontconfig-2.15.0.tar.xz
 https://www.freedesktop.org/software/libevdev/libevdev-1.13.1.tar.xz
+https://www.freedesktop.org/software/libevdev/libevdev-1.13.2.tar.xz
 https://www.freedesktop.org/software/uchardet/releases/uchardet-0.0.8.tar.xz
 https://www.gnupg.org/ftp/gcrypt/gnupg/gnupg-2.2.40.tar.bz2
 https://www.gnupg.org/ftp/gcrypt/gnupg/gnupg-2.4.3.tar.bz2
