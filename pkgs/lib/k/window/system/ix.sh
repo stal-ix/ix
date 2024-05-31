@@ -30,6 +30,8 @@ KWINDOWSYSTEM_WAYLAND=ON
 
 {% block build_flags %}
 wrap_cc
+no_werror
+shut_up
 {% endblock %}
 
 {% block postinstall %}
