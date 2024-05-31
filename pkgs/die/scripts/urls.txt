@@ -1778,6 +1778,7 @@ https://github.com/p-gen/smenu/archive/refs/tags/v1.4.0.tar.gz
 https://github.com/p11-glue/p11-kit/archive/refs/tags/0.24.0.tar.gz
 https://github.com/p7zip-project/p7zip/archive/refs/tags/v17.05.tar.gz
 https://github.com/pciutils/pciutils/archive/refs/tags/v3.10.0.tar.gz
+https://github.com/pciutils/pciutils/archive/refs/tags/v3.13.0.tar.gz
 https://github.com/pg83/bcrypt/archive/e8270a3fa761d9301199f828af90a67e2721c7a8.zip
 https://github.com/pg83/dlopen/archive/refs/tags/v2.tar.gz
 https://github.com/pg83/heirloom/archive/a47c4acf9fb43b89f9fb0afdcf9008121d50d806.zip
