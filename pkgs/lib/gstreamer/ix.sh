@@ -2,7 +2,7 @@
 
 {% block fetch %}
 https://gitlab.freedesktop.org/gstreamer/gstreamer/-/archive/1.24.4/gstreamer-1.24.4.tar.gz
-sha:
+sha:3121a186f707b2bd5a8ecbb4a84e9a31a25401cdaa03acff891b634b112800e1
 {% endblock %}
 
 {% block lib_deps %}
