@@ -114,7 +114,7 @@ def choice(*args):
 class Ops:
     def __init__(self, cfg):
         self.cfg = cfg
-        self.assemble = choice('/bin/assembly', f'{B}/assemble')
+        self.assemble = choice('/bin/assemble', f'{B}/assemble')
 
         try:
             self.fetcher = choice('/bin/fetcher')
