@@ -2535,6 +2535,7 @@ https://memcached.org/files/memcached-1.6.24.tar.gz
 https://memcached.org/files/memcached-1.6.25.tar.gz
 https://memcached.org/files/memcached-1.6.26.tar.gz
 https://memcached.org/files/memcached-1.6.27.tar.gz
+https://memcached.org/files/memcached-1.6.28.tar.gz
 https://mesa.freedesktop.org/archive/mesa-23.1.9.tar.xz
 https://mesa.freedesktop.org/archive/mesa-23.2.1.tar.xz
 https://mesa.freedesktop.org/archive/mesa-23.3.1.tar.xz
