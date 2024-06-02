@@ -1115,6 +1115,7 @@ https://github.com/exfatprogs/exfatprogs/archive/refs/tags/1.2.2.tar.gz
 https://github.com/exfatprogs/exfatprogs/releases/download/1.2.0/exfatprogs-1.2.0.tar.xz
 https://github.com/extrawurst/gitui/archive/refs/tags/v0.24.3.tar.gz
 https://github.com/extrawurst/gitui/archive/refs/tags/v0.26.1.tar.gz
+https://github.com/extrawurst/gitui/archive/refs/tags/v0.26.3.tar.gz
 https://github.com/eza-community/eza/archive/refs/tags/v0.17.2.tar.gz
 https://github.com/eza-community/eza/archive/refs/tags/v0.17.3.tar.gz
 https://github.com/eza-community/eza/archive/refs/tags/v0.18.0.tar.gz
