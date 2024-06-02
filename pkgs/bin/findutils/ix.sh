@@ -1,26 +1,6 @@
-{% extends '//die/c/autohell.sh' %}
+{% extends 'old/ix.sh' %}
 
 {% block fetch %}
-https://ftp.gnu.org/gnu/findutils/findutils-4.8.0.tar.xz
-sha:57127b7e97d91282c6ace556378d5455a9509898297e46e10443016ea1387164
-{% endblock %}
-
-{% block bld_libs %}
-lib/c
-lib/intl
-{% endblock %}
-
-{% block patch %}
-cd gl/lib/malloc
-
-cat - dynarray-skeleton.c << EOF > _
-#define __nonnull(x)
-EOF
-
-mv _ dynarray-skeleton.c
-{% endblock %}
-
-{% block install %}
-{{super()}}
-sed -e 's|/.*/bin/sort|sort|' -i ${out}/bin/updatedb
+https://ftp.gnu.org/gnu/findutils/findutils-4.10.0.tar.xz
+sha:1387e0b67ff247d2abde998f90dfbf70c1491391a59ddfecb8ae698789f0a4f5
 {% endblock %}
