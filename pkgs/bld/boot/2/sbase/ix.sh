@@ -53,13 +53,6 @@ int main() {
 EOF
 {% endblock %}
 
-{% block install %}
-{{super()}}
-{% if linux %}
-cp ${out}/bin/xinstall ${out}/bin/install
-{% endif %}
-{% endblock %}
-
 {% block env %}
 {{super()}}
 export ac_cv_path_GREP=grep
