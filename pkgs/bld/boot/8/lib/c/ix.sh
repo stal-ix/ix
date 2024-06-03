@@ -5,6 +5,6 @@
 lib/musl/pure(std_env=bld/boot/8/env/cxx,boot=1)
 {% endif %}
 {% if darwin %}
-lib/darwin/c
+lib/darwin/c(boot=1)
 {% endif %}
 {% endblock %}
