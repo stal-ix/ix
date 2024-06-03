@@ -4,7 +4,7 @@
 {% if linux %}
 bld/boot/0/sys
 {% else %}
-bld/boot/0/mix
+bld/boot/0/sys
 {% endif %}
 bld/boot/0/extract
 {% endblock %}

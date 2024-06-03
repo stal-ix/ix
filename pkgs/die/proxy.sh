@@ -8,6 +8,10 @@ set +u # TODO(pg): relax
 {{std_box or super()}}
 {% endblock %}
 
+{% block std_env %}
+{{std_env or super()}}
+{% endblock %}
+
 {% block decompressor %}
 {% endblock %}
 
