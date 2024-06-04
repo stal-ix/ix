@@ -2,7 +2,7 @@
 
 {% block fetch %}
 https://github.com/ccache/ccache/archive/refs/tags/v4.10.tar.gz
-sha:d4927d898053bf55b26e444a51f60218683835d43aa82fcde5429712f00d9d11
+sha:37bdb163a99bc5890746b993ed22db7f35a8cede4c68266df007f079abdfefca
 {% endblock %}
 
 {% block bld_libs %}
