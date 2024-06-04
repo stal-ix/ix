@@ -8,7 +8,11 @@ bld/glib
 {% block install %}
 {{super()}}
 find ${out}/ -type f -name '*.pc' | while read i; do
-    sed -e 's|.*bindir.*||' -i ${i}
+    sed -e 's|.*bindir.*||' \
+{% if darwin %}
+        -e 's|Libs: .*||' \
+{% endif %}
+        -i ${i}
 done
 {% endblock %}
 
