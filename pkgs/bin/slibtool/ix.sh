@@ -1,8 +1,8 @@
 {% extends '//die/c/autohell.sh' %}
 
 {% block fetch %}
-https://git.midipix.org/slibtool/snapshot/slibtool-0.5.35.tar.bz2
-sha:2a236d527b35e52317c1503512779f7b129ca1f6b14d32c11b8dd023d5568702
+https://git.midipix.org/slibtool/snapshot/slibtool-0.6.0.tar.bz2
+sha:f4fd554da3744ddf356ae391ed3385054cbbee6ff6df86da20cd23479604d621
 {% endblock %}
 
 {% block bld_libs %}
