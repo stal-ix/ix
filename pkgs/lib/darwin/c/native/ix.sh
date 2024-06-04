@@ -7,7 +7,7 @@ out = os.environ['out']
 sdk = '/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk'
 
 data = r"""
-export MACOSX_DEPLOYMENT_TARGET=11.0
+export MACOSX_DEPLOYMENT_TARGET={{sdk_target or '11.0'}}
 export OSX_SDK="{sdk}"
 export CPPFLAGS="--sysroot ${OSX_SDK} -isystem${OSX_SDK}/usr/include -F${OSX_SDK} ${CPPFLAGS}"
 export LDFLAGS="--sysroot ${OSX_SDK} -L${OSX_SDK}/usr/lib -F${OSX_SDK} -Wl,-platform_version -Wl,macos -Wl,${MACOSX_DEPLOYMENT_TARGET} -Wl,${MACOSX_DEPLOYMENT_TARGET} -lc ${LDFLAGS}"

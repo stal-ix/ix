@@ -14,3 +14,7 @@ lib/curses
 {% block bld_tool %}
 bld/perl
 {% endblock %}
+
+{% block cpp_includes %}
+${PWD}/gnulib/lib
+{% endblock %}
