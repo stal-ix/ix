@@ -13,6 +13,7 @@ lib/intl
 lib/iconv
 lib/pcre/2
 {% if darwin %}
+lib/darwin/framework/AppKit
 lib/darwin/framework/CoreServices
 lib/darwin/framework/Foundation
 {% endif %}

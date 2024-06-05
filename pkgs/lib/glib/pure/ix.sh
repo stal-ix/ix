@@ -18,4 +18,7 @@ done
 
 {% block env %}
 export CPPFLAGS="-I${out}/include/glib-2.0 -I${out}/lib/glib-2.0/include \${CPPFLAGS}"
+{% if darwin %}
+export LDFLAGS="-lresolv \${LDFLAGS}"
+{% endif %}
 {% endblock %}
