@@ -5,7 +5,7 @@ https://github.com/pzmarzly/portforwarder-rs/archive/refs/tags/0.1.0.tar.gz
 {% endblock %}
 
 {% block cargo_sha %}
-5c746ea4b4086f0835b7676f2b279523e1cd8d71ebafdd38d7b0b578516196b0
+11dcdfd92a498765650765c1d19cff783606f9bba2f1c183e14b1889aefce65a
 {% endblock %}
 
 {% block install %}
