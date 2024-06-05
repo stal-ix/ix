@@ -125,12 +125,16 @@ def fetch_url_impl(url, out, tout):
         print('')
 
 
+def tout_prefix(tout):
+    return ['/bin/subreaper', '/bin/timeout', str(tout) + 's']
+
+
 def fetch_url_wget(wget, url, out, tout):
-    return subprocess.check_call([wget, '--timeout', str(tout), '-t', '1', '--no-check-certificate', '-O', out, url], shell=False)
+    return subprocess.check_call(tout_prefix(tout) + [wget, '--timeout', str(tout), '-t', '1', '--no-check-certificate', '-O', out, url], shell=False)
 
 
 def fetch_url_curl(curl, url, out, tout):
-    return subprocess.check_call([curl, '--connect-timeout', str(tout), '--retry', '0', '-k', '-L', '--output', out, url], shell=False)
+    return subprocess.check_call(tout_prefix(tout) + [curl, '--connect-timeout', str(tout), '--retry', '0', '-k', '-L', '--output', out, url], shell=False)
 
 
 def iter_bin():
@@ -156,7 +160,6 @@ def iter_fetch_url(url):
 
 def main():
     mirrors = list(M.strip().split('\n'))
-    random.shuffle(mirrors)
     do_fetch(sys.argv[1], sys.argv[2], sys.argv[3], *mirrors)
 
 
