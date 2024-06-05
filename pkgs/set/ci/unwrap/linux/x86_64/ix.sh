@@ -37,6 +37,7 @@
 #}
 
 {% block run_deps %}
+bin/time/limit
 bin/nscd
 bin/yofi
 bin/kernel/6/9

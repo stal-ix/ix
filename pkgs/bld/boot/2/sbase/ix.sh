@@ -20,8 +20,12 @@ bld/boot/1/env
 mkdir src; cd src; extract0 ${src}/*.gz; cd *
 {% endblock %}
 
-{% block setup_target_flags %}
+{% block setup_compiler %}
 export PATH="${out}/bin:${PWD}:${PATH}"
+{% for x in ix.parse_list(self.cpp_defines()) %}
+export CPPFLAGS="-D{{x}} ${CPPFLAGS}"
+{% endfor %}
+{{super()}}
 {% endblock %}
 
 {% block cpp_defines %}
@@ -47,11 +51,6 @@ int main() {
     return 0;
 }
 EOF
-{% endblock %}
-
-{% block install %}
-{{super()}}
-cp ${out}/bin/xinstall ${out}/bin/install
 {% endblock %}
 
 {% block env %}

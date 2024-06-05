@@ -17,11 +17,13 @@ for x in '-nostdinc++'; do
     fi
 done
 
+{% if linux %}
 case "${CC}" in
     *clang*)
         LDFLAGS="-fuse-ld=lld ${LDFLAGS}"
     ;;
 esac
+{% endif %}
 
 for ld in '-nostdlib' '-nostdlib++' '-fno-use-linker-plugin'; do
     if ${CXX} ${ld} -c _.cpp > /dev/null 2>&1; then
@@ -87,6 +89,9 @@ if command -v clang++; then
     export CXX=clang++
 fi
 
+{% if darwin %}
+export CPP="clang -E"
+{% else %}
 if command -v cpp; then
     export CPP=cpp
 fi
@@ -94,6 +99,7 @@ fi
 if command -v clang-cpp; then
     export CPP=clang-cpp
 fi
+{% endif %}
 
 if command -v ar; then
     export AR=ar

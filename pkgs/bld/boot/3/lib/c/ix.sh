@@ -5,6 +5,6 @@
 lib/musl/boot(std_env=bld/boot/3/make/env,boot=1)
 {% endif %}
 {% if darwin %}
-lib/darwin/c
+lib/darwin/c(boot=1)
 {% endif %}
 {% endblock %}

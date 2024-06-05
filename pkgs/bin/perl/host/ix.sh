@@ -15,7 +15,13 @@ lib/shim/fake(lib_name=nsl)
 
 {% block bld_tool %}
 bld/bash
+{% if darwin %}
+bld/sw/vers
+{% endif %}
 bld/fake(tool_name=install_name_tool,std_box={{std_box}})
+{% endblock %}
+
+{% block sw_vers %}
 {% endblock %}
 
 {% block build_flags %}

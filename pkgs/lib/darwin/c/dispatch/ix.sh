@@ -5,6 +5,9 @@
 lib/darwin/c/{{macos_sdk}}
 {% elif native %}
 lib/darwin/c/native
+{% if boot %}
+lib/darwin/c/native/crt
+{% endif %}
 {% else %}
 lib/darwin/c/phracker
 {% endif %}

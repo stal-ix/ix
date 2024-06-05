@@ -18,6 +18,11 @@ def construct(cfg, kind=None):
 
         return o.Ops(cfg)
 
+    if kind == 'fake':
+        import core.ops_fake as o
+
+        return o.Ops()
+
     import core.ops_sys as o
 
     return o.Ops(cfg)

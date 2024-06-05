@@ -1,5 +1,10 @@
 {% extends '//bin/clang/17/ix.sh' %}
 
+{% block bld_libs %}
+{{super()}}
+lib/blake3/c
+{% endblock %}
+
 {% block clang_major_version %}
 18
 {% endblock %}

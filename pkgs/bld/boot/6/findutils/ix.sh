@@ -1,4 +1,4 @@
-{% extends '//bin/findutils/ix.sh' %}
+{% extends '//bin/findutils/old/ix.sh' %}
 
 {% block bld_libs %}
 {% endblock %}

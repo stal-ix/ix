@@ -22,10 +22,12 @@ echo localhost
 EOF
 
 {% if darwin %}
+{% block sw_vers %}
 cat << EOF > sw_vers
 #!$(which sh)
 echo \${MACOSX_DEPLOYMENT_TARGET}
 EOF
+{% endblock %}
 {% endif %}
 
 chmod +x *
