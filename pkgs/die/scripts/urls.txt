@@ -1598,6 +1598,7 @@ https://github.com/llvm/llvm-project/archive/refs/tags/llvmorg-15.0.7.tar.gz
 https://github.com/llvm/llvm-project/archive/refs/tags/llvmorg-18.1.4.tar.gz
 https://github.com/llvm/llvm-project/archive/refs/tags/llvmorg-18.1.5.tar.gz
 https://github.com/llvm/llvm-project/archive/refs/tags/llvmorg-18.1.6.tar.gz
+https://github.com/llvm/llvm-project/archive/refs/tags/llvmorg-18.1.7.tar.gz
 https://github.com/llvm/llvm-project/releases/download/llvmorg-13.0.1/llvm-project-13.0.1.src.tar.xz
 https://github.com/llvm/llvm-project/releases/download/llvmorg-16.0.6/llvm-project-16.0.6.src.tar.xz
 https://github.com/llvm/llvm-project/releases/download/llvmorg-17.0.0-rc3/llvm-project-17.0.0rc3.src.tar.xz
