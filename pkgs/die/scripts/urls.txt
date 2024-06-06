@@ -784,6 +784,7 @@ https://github.com/Kitware/CMake/archive/refs/tags/v3.29.1.tar.gz
 https://github.com/Kitware/CMake/archive/refs/tags/v3.29.2.tar.gz
 https://github.com/Kitware/CMake/archive/refs/tags/v3.29.3.tar.gz
 https://github.com/Kitware/CMake/archive/refs/tags/v3.29.4.tar.gz
+https://github.com/Kitware/CMake/archive/refs/tags/v3.29.5.tar.gz
 https://github.com/LBCrion/sfwbar/archive/refs/tags/v1.0_beta13.tar.gz
 https://github.com/LBCrion/sfwbar/archive/refs/tags/v1.0_beta9.tar.gz
 https://github.com/LibRaw/LibRaw/archive/refs/tags/0.21.1.tar.gz
