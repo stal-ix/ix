@@ -80,7 +80,7 @@ def do_fetch(url, path, sha, *mirrors):
                 print(f'while fetching cached {url}, with {sha}: {e}')
             else:
                 if '404' in str(e):
-                    raise ce.Error(f'can not fetch {url}: {e}', exception=e)
+                    raise Exception(f'can not fetch {url}: {e}')
 
                 if 'checksum' in str(e):
                     raise e
