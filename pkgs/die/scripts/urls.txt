@@ -1847,6 +1847,7 @@ https://github.com/protocolbuffers/protobuf/archive/refs/tags/v25.1.tar.gz
 https://github.com/protocolbuffers/protobuf/archive/refs/tags/v25.2.tar.gz
 https://github.com/protocolbuffers/protobuf/archive/refs/tags/v25.3.tar.gz
 https://github.com/protocolbuffers/protobuf/archive/refs/tags/v26.0.tar.gz
+https://github.com/protocolbuffers/protobuf/archive/refs/tags/v27.1.tar.gz
 https://github.com/psemiletov/tea-qt/archive/refs/tags/62.0.2.tar.gz
 https://github.com/psemiletov/tea-qt/archive/refs/tags/63.0.1.tar.gz
 https://github.com/psemiletov/tea-qt/archive/refs/tags/63.0.2.tar.gz
@@ -2569,6 +2570,7 @@ https://mesa.freedesktop.org/archive/mesa-24.0.5.tar.xz
 https://mesa.freedesktop.org/archive/mesa-24.0.6.tar.xz
 https://mesa.freedesktop.org/archive/mesa-24.0.7.tar.xz
 https://mesa.freedesktop.org/archive/mesa-24.0.8.tar.xz
+https://mesa.freedesktop.org/archive/mesa-24.1.1.tar.xz
 https://mirror.tochlab.net/pub/gnu/autoconf-archive/autoconf-archive-2023.02.20.tar.xz
 https://mirror.tochlab.net/pub/gnu/help2man/help2man-1.49.2.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/kernel/people/tytso/e2fsprogs/v1.46.6/e2fsprogs-1.46.6.tar.xz
