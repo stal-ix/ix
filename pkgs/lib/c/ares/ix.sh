@@ -1,5 +1,12 @@
 {% extends 't/ix.sh' %}
 
+{% block lib_deps %}
+{{super()}}
+{% if darwin %}
+lib/shim/dll(dll_name=resolv)
+{% endif %}
+{% endblock %}
+
 {% block cmake_flags %}
 {{super()}}
 CARES_BUILD_TOOLS=OFF
@@ -8,9 +15,6 @@ CARES_BUILD_TOOLS=OFF
 {% block env %}
 export CPPFLAGS="-DCARES_STATICLIB=1 \${CPPFLAGS}"
 export COFLAGS="--with-ares=${out} --enable-ares=${out} \${COFLAGS}"
-{% if darwin %}
-export LDFLAGS="-lresolv \${LDFLAGS}"
-{% endif %}
 {% endblock %}
 
 {% block install %}
