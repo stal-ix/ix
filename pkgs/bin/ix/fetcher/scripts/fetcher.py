@@ -88,7 +88,7 @@ def do_fetch(url, path, sha, *mirrors):
                 print(f'while fetching {url}: {e}, will retry after {tout}')
 
                 time.sleep(tout)
-                tout = min(tout * 1.2, 60)
+                tout = min(tout * 1.3, 60)
 
 
 def check_md5(path, old_cs):
@@ -130,11 +130,11 @@ def tout_prefix(tout):
 
 
 def fetch_url_wget(wget, url, out, tout):
-    return subprocess.check_call(tout_prefix(tout) + [wget, '--timeout', str(tout), '-t', '1', '--no-check-certificate', '-O', out, url], shell=False)
+    return subprocess.check_call(tout_prefix(tout) + [wget, '-t', '1', '--no-check-certificate', '-O', out, url], shell=False)
 
 
 def fetch_url_curl(curl, url, out, tout):
-    return subprocess.check_call(tout_prefix(tout) + [curl, '--connect-timeout', str(tout), '--retry', '0', '-k', '-L', '--output', out, url], shell=False)
+    return subprocess.check_call(tout_prefix(tout) + [curl, '--retry', '0', '-k', '-L', '--output', out, url], shell=False)
 
 
 def iter_bin():
