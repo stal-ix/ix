@@ -68,7 +68,7 @@ def iter_fetch(url, sha, mirrors):
 def do_fetch(url, path, sha, *mirrors):
     prepare_dir(os.path.dirname(path))
 
-    tout = 1.0
+    tout = 3.1415926
 
     for f, best_effort in iter_fetch(url, sha, mirrors):
         try:
