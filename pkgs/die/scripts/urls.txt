@@ -949,6 +949,7 @@ https://github.com/apernet/hysteria/archive/refs/tags/app/v2.4.5.tar.gz
 https://github.com/apple-oss-distributions/mDNSResponder/archive/refs/tags/mDNSResponder-2200.80.16.tar.gz
 https://github.com/apple-oss-distributions/patch_cmds/archive/refs/tags/patch_cmds-61.tar.gz
 https://github.com/apple/swift-corelibs-libdispatch/archive/refs/tags/swift-5.10-RELEASE.tar.gz
+https://github.com/apple/swift-corelibs-libdispatch/archive/refs/tags/swift-5.10.1-RELEASE.tar.gz
 https://github.com/apple/swift-corelibs-libdispatch/archive/refs/tags/swift-5.8-RELEASE.tar.gz
 https://github.com/apple/swift-corelibs-libdispatch/archive/refs/tags/swift-5.9-RELEASE.tar.gz
 https://github.com/apple/swift-corelibs-libdispatch/archive/refs/tags/swift-5.9.2-RELEASE.tar.gz
@@ -1143,6 +1144,7 @@ https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.12.0.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.13.1.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.13.2.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.14.0.tar.gz
+https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.15.0.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.2.0.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.2.2.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.2.3.tar.gz
@@ -1866,6 +1868,7 @@ https://github.com/python/cpython/archive/refs/tags/v3.12.0.tar.gz
 https://github.com/python/cpython/archive/refs/tags/v3.12.1.tar.gz
 https://github.com/python/cpython/archive/refs/tags/v3.12.2.tar.gz
 https://github.com/python/cpython/archive/refs/tags/v3.12.3.tar.gz
+https://github.com/python/cpython/archive/refs/tags/v3.12.4.tar.gz
 https://github.com/pzmarzly/portforwarder-rs/archive/refs/tags/0.1.0.tar.gz
 https://github.com/qbittorrent/qBittorrent/archive/refs/tags/release-4.5.4.tar.gz
 https://github.com/qbittorrent/qBittorrent/archive/refs/tags/release-4.6.0.tar.gz
@@ -2138,6 +2141,7 @@ https://github.com/telegramdesktop/tdesktop/releases/download/v5.0.2/tdesktop-5.
 https://github.com/telegramdesktop/tdesktop/releases/download/v5.0.4/tdesktop-5.0.4-full.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v5.0.6/tdesktop-5.0.6-full.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v5.1.1/tdesktop-5.1.1-full.tar.gz
+https://github.com/telegramdesktop/tdesktop/releases/download/v5.1.4/tdesktop-5.1.4-full.tar.gz
 https://github.com/tenox7/ttyplot/archive/refs/tags/1.6.1.tar.gz
 https://github.com/tesseract-ocr/tesseract/archive/refs/tags/5.2.0.tar.gz
 https://github.com/tetratelabs/wazero/archive/refs/tags/v1.5.0.tar.gz
@@ -2255,6 +2259,7 @@ https://github.com/weechat/weechat/archive/refs/tags/v4.2.1.tar.gz
 https://github.com/weechat/weechat/archive/refs/tags/v4.2.2.tar.gz
 https://github.com/weechat/weechat/archive/refs/tags/v4.3.0.tar.gz
 https://github.com/weechat/weechat/archive/refs/tags/v4.3.1.tar.gz
+https://github.com/weechat/weechat/archive/refs/tags/v4.3.2.tar.gz
 https://github.com/westes/flex/archive/refs/tags/flex-2-5-10.tar.gz
 https://github.com/westes/flex/files/981163/flex-2.6.4.tar.gz
 https://github.com/wez/wezterm/archive/refs/tags/20230712-072601-f4abf8fd.tar.gz
@@ -2618,6 +2623,7 @@ https://mupdf.com/downloads/archive/mupdf-1.23.9-source.tar.gz
 https://mupdf.com/downloads/archive/mupdf-1.24.0-source.tar.gz
 https://mupdf.com/downloads/archive/mupdf-1.24.1-source.tar.gz
 https://mupdf.com/downloads/archive/mupdf-1.24.2-source.tar.gz
+https://mupdf.com/downloads/archive/mupdf-1.24.3-source.tar.gz
 https://nav.dl.sourceforge.net/project/sbcl/sbcl/2.2.1/sbcl-2.2.1-source.tar.bz2
 https://nav.dl.sourceforge.net/project/sbcl/sbcl/2.3.7/sbcl-2.3.7-source.tar.bz2
 https://nav.dl.sourceforge.net/project/sbcl/sbcl/2.3.9/sbcl-2.3.9-source.tar.bz2
