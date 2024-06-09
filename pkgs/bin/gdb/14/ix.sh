@@ -33,4 +33,7 @@ gdb::unique_xmalloc_ptr<char> gdb_demangle(const char* name, int options) {
     return gdb_demangle_xxx(name, options);
 }
 EOF
+
+# fix (?) some braindamage
+sed -e 's/asm_demangle,/demangle || asm_demangle,/' -i gdb/printcmd.c
 {% endblock %}
