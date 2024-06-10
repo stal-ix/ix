@@ -1,8 +1,8 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://gitlab.gnome.org/GNOME/pango/-/archive/1.52.2/pango-1.52.2.tar.bz2
-sha:73919f3e0290349ce3959aa81d921b15de444f1a84e4447b8902a8d6ad42b35f
+https://gitlab.gnome.org/GNOME/pango/-/archive/1.54.0/pango-1.54.0.tar.bz2
+sha:bb0931ad1d915966bee87dd54823f551f14f153df95d30b60b38c7e175c16da8
 {% endblock %}
 
 {% block lib_deps %}
