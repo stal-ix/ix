@@ -90,6 +90,7 @@ http://www.haproxy.org/download/2.9/src/haproxy-2.9.5.tar.gz
 http://www.haproxy.org/download/2.9/src/haproxy-2.9.6.tar.gz
 http://www.haproxy.org/download/2.9/src/haproxy-2.9.7.tar.gz
 http://www.haproxy.org/download/3.0/src/haproxy-3.0.0.tar.gz
+http://www.haproxy.org/download/3.0/src/haproxy-3.0.1.tar.gz
 http://www.ijg.org/files/jpegsrc.v9e.tar.gz
 http://www.inf.puc-rio.br/~roberto/lpeg/lpeg-1.1.0.tar.gz
 http://www.jedrea.com/chmlib/chmlib-0.40.tar.bz2
@@ -253,6 +254,7 @@ https://download.gnome.org/sources/glib/2.78/glib-2.78.4.tar.xz
 https://download.gnome.org/sources/glib/2.80/glib-2.80.0.tar.xz
 https://download.gnome.org/sources/glib/2.80/glib-2.80.1.tar.xz
 https://download.gnome.org/sources/glib/2.80/glib-2.80.2.tar.xz
+https://download.gnome.org/sources/glib/2.80/glib-2.80.3.tar.xz
 https://download.gnome.org/sources/glibmm/2.66/glibmm-2.66.6.tar.xz
 https://download.gnome.org/sources/glibmm/2.77/glibmm-2.77.0.tar.xz
 https://download.gnome.org/sources/glibmm/2.78/glibmm-2.78.1.tar.xz
@@ -1266,6 +1268,7 @@ https://github.com/google/double-conversion/archive/refs/tags/v3.3.0.tar.gz
 https://github.com/google/fonts/archive/2855855a4cf481d4220e30ca3bff0704cc111a57.zip
 https://github.com/google/glog/archive/refs/tags/v0.6.0.tar.gz
 https://github.com/google/glog/archive/refs/tags/v0.7.0.tar.gz
+https://github.com/google/glog/archive/refs/tags/v0.7.1.tar.gz
 https://github.com/google/googletest/archive/refs/tags/v1.14.0.tar.gz
 https://github.com/google/gumbo-parser/archive/refs/tags/v0.10.1.tar.gz
 https://github.com/google/highway/archive/refs/tags/1.0.5.tar.gz
@@ -1999,6 +2002,7 @@ https://github.com/rui314/mold/archive/refs/tags/v2.3.2.tar.gz
 https://github.com/rui314/mold/archive/refs/tags/v2.3.3.tar.gz
 https://github.com/rui314/mold/archive/refs/tags/v2.30.0.tar.gz
 https://github.com/rui314/mold/archive/refs/tags/v2.31.0.tar.gz
+https://github.com/rui314/mold/archive/refs/tags/v2.32.0.tar.gz
 https://github.com/rui314/mold/archive/refs/tags/v2.4.0.tar.gz
 https://github.com/rui314/mold/archive/refs/tags/v2.4.1.tar.gz
 https://github.com/rvaiya/keyd/archive/refs/tags/v2.4.3.tar.gz
@@ -2048,6 +2052,7 @@ https://github.com/slackhq/nebula/archive/refs/tags/v1.8.2.tar.gz
 https://github.com/slackhq/nebula/archive/refs/tags/v1.9.0.tar.gz
 https://github.com/slackhq/nebula/archive/refs/tags/v1.9.1.tar.gz
 https://github.com/smuellerDD/jitterentropy-library/archive/refs/tags/v3.4.1.tar.gz
+https://github.com/squid-cache/squid/archive/refs/tags/SQUID_6_10.tar.gz
 https://github.com/stal-ix/sources/raw/main/bison-bootstrap-master.tar.bz2
 https://github.com/stal-ix/sources/raw/main/bmake-20210808.tar.gz
 https://github.com/stal-ix/sources/raw/main/libmnl-1.0.5.tar.bz2
@@ -2474,6 +2479,7 @@ https://gitlab.gnome.org/GNOME/pango/-/archive/1.51.2/pango-1.51.2.tar.bz2
 https://gitlab.gnome.org/GNOME/pango/-/archive/1.52.0/pango-1.52.0.tar.bz2
 https://gitlab.gnome.org/GNOME/pango/-/archive/1.52.1/pango-1.52.1.tar.bz2
 https://gitlab.gnome.org/GNOME/pango/-/archive/1.52.2/pango-1.52.2.tar.bz2
+https://gitlab.gnome.org/GNOME/pango/-/archive/1.54.0/pango-1.54.0.tar.bz2
 https://gitlab.gnome.org/GNOME/sysprof/-/archive/46.0/sysprof-46.0.tar.bz2
 https://gitlab.gnome.org/GNOME/vala/-/archive/0.56.1/vala-0.56.1.tar.bz2
 https://gitlab.gnome.org/GNOME/vte/-/archive/0.72.2/vte-0.72.2.tar.bz2
