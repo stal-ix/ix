@@ -1978,6 +1978,7 @@ https://github.com/rizinorg/rizin/releases/download/v0.7.1/rizin-src-v0.7.1.tar.
 https://github.com/rizinorg/rizin/releases/download/v0.7.2/rizin-src-v0.7.2.tar.xz
 https://github.com/rizinorg/rizin/releases/download/v0.7.3/rizin-src-v0.7.3.tar.xz
 https://github.com/rmyorston/pdpmake/archive/refs/tags/1.4.0.tar.gz
+https://github.com/rmyorston/pdpmake/archive/refs/tags/1.4.3.tar.gz
 https://github.com/rockdaboot/libpsl/releases/download/0.21.2/libpsl-0.21.2.tar.gz
 https://github.com/rockdaboot/libpsl/releases/download/0.21.5/libpsl-0.21.5.tar.gz
 https://github.com/rpodgorny/unionfs-fuse/archive/refs/tags/v3.4.tar.gz
