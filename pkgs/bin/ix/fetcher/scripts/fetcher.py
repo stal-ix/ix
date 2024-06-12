@@ -69,9 +69,8 @@ def iter_tout():
     tout = 5
 
     while True:
-        yield tout
-
-        tout = min(tout * 1.5, 200)
+        yield tout * (0.5 + random.random())
+        tout = tout * 1.5
 
 
 def do_fetch(url, path, sha, *mirrors):
