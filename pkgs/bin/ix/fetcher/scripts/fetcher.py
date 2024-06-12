@@ -68,7 +68,7 @@ def iter_fetch(url, sha, mirrors):
 def do_fetch(url, path, sha, *mirrors):
     prepare_dir(os.path.dirname(path))
 
-    tout = 3.1415926
+    tout = 5
 
     for f, best_effort in iter_fetch(url, sha, mirrors):
         try:
@@ -88,7 +88,7 @@ def do_fetch(url, path, sha, *mirrors):
                 print(f'while fetching {url}: {e}, will retry after {tout}')
 
                 time.sleep(tout)
-                tout = min(tout * 1.3, 60)
+                tout = min(tout * 1.5, 200)
 
 
 def check_md5(path, old_cs):
