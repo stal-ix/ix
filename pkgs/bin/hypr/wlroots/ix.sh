@@ -21,3 +21,13 @@ lib/display/info
 {{super()}}
 bin/git/unwrap
 {% endblock %}
+
+{% block install %}
+{{super()}}
+mv ${out}/share/pkgconfig ${out}/lib/
+{% endblock %}
+
+{% block env %}
+{{super()}}
+export CPPFLAGS="-I${out}/include/hyprland \${CPPFLAGS}"
+{% endblock %}
