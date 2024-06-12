@@ -65,12 +65,19 @@ def iter_fetch(url, sha, mirrors):
             yield f, False
 
 
+def iter_tout():
+    tout = 5
+
+    while True:
+        yield tout
+
+        tout = min(tout * 1.5, 200)
+
+
 def do_fetch(url, path, sha, *mirrors):
     prepare_dir(os.path.dirname(path))
 
-    tout = 5
-
-    for f, best_effort in iter_fetch(url, sha, mirrors):
+    for (f, best_effort), tout in zip(iter_fetch(url, sha, mirrors), iter_tout()):
         try:
             f(path, int(tout))
 
@@ -85,10 +92,7 @@ def do_fetch(url, path, sha, *mirrors):
                 if 'checksum' in str(e):
                     raise e
 
-                print(f'while fetching {url}: {e}, will retry after {tout}')
-
-                time.sleep(tout)
-                tout = min(tout * 1.5, 200)
+                print(f'while fetching {url}: {e}, will retry')
 
 
 def check_md5(path, old_cs):
