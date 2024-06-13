@@ -52,6 +52,13 @@ sed -e 's|) {|) const {|' -i src/helpers/WLClasses.hpp
 base64 -d << EOF > src/debug/CrashReporter.cpp
 {% include 'CrashReporter.cpp/base64' %}
 EOF
+
+cat << EOF > scripts/generateVersion.sh
+#!/usr/bin/env sh
+EOF
+chmod +x scripts/generateVersion.sh
+
+sed -e 's|wayland-server|wayland-scanner|' -i protocols/meson.build
 {% endblock %}
 
 {% block build_flags %}

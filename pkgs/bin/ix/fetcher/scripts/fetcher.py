@@ -65,12 +65,18 @@ def iter_fetch(url, sha, mirrors):
             yield f, False
 
 
+def iter_tout():
+    tout = 5
+
+    while True:
+        yield tout * (0.5 + random.random())
+        tout = tout * 1.5
+
+
 def do_fetch(url, path, sha, *mirrors):
     prepare_dir(os.path.dirname(path))
 
-    tout = 3.1415926
-
-    for f, best_effort in iter_fetch(url, sha, mirrors):
+    for (f, best_effort), tout in zip(iter_fetch(url, sha, mirrors), iter_tout()):
         try:
             f(path, int(tout))
 
@@ -85,10 +91,7 @@ def do_fetch(url, path, sha, *mirrors):
                 if 'checksum' in str(e):
                     raise e
 
-                print(f'while fetching {url}: {e}, will retry after {tout}')
-
-                time.sleep(tout)
-                tout = min(tout * 1.3, 60)
+                print(f'while fetching {url}: {e}, will retry')
 
 
 def check_md5(path, old_cs):
@@ -98,63 +101,20 @@ def check_md5(path, old_cs):
         raise Exception(f'got {new_cs} checksum, not {old_cs}')
 
 
-def fetch_url_impl(url, out, tout):
-    print(f'fetch {url} into {out}')
-
-    def iter_chunks():
-        r = ur.urlopen(url, timeout=tout)
-
-        while True:
-            c = r.read(1 * 1024 * 1024)
-
-            if c:
-                yield c
-            else:
-                return
-
-    with open(out, 'wb') as f:
-        cnt = 0
-
-        for c in iter_chunks():
-            cnt += len(c)
-
-            print('\r' + chr(27) + '[0K' + f'got {cnt} bytes', end='')
-
-            f.write(c)
-
-        print('')
-
-
 def tout_prefix(tout):
     return ['/bin/subreaper', '/bin/timeout', str(tout) + 's']
 
 
-def fetch_url_wget(wget, url, out, tout):
-    return subprocess.check_call(tout_prefix(tout) + [wget, '-t', '1', '--no-check-certificate', '-O', out, url], shell=False)
+def fetch_url_wget(url, out, tout):
+    return subprocess.check_call(tout_prefix(tout) + ['wget', '-t', '1', '--no-check-certificate', '-O', out, url], shell=False)
 
 
-def fetch_url_curl(curl, url, out, tout):
-    return subprocess.check_call(tout_prefix(tout) + [curl, '--retry', '0', '-k', '-L', '--output', out, url], shell=False)
-
-
-def iter_bin():
-    yield 'wget', fetch_url_wget
-    yield 'curl', fetch_url_curl
-
-
-def iter_meth():
-    for p in ['/bin', '/bin/bin_ix', '/ix/realm/boot/bin', '/usr/bin']:
-        for n, m in iter_bin():
-            pp = os.path.join(p, n)
-
-            if os.path.isfile(pp):
-                yield functools.partial(m, pp)
-
-    yield fetch_url_impl
+def fetch_url_curl(url, out, tout):
+    return subprocess.check_call(tout_prefix(tout) + ['curl', '--retry', '0', '-k', '-L', '--output', out, url], shell=False)
 
 
 def iter_fetch_url(url):
-    for meth in iter_meth():
+    for meth in (fetch_url_wget, fetch_url_curl):
         yield functools.partial(meth, url)
 
 
