@@ -17,8 +17,8 @@ lib/gtk/3
 lib/handy
 lib/secret
 lib/archive
-lib/poppler
 lib/djvulibre
+lib/poppler/next
 lib/gdk/pixbuf/svg
 lib/gsettings/desktop/schemas
 {% endblock %}
