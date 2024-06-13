@@ -7,5 +7,5 @@ sha:ee8127532cc6f92bf32d48a6a0d4c61e33cd4df49a3159e57592877ba19e108b
 
 {% block lib_deps %}
 {{super()}}
-lib/poppler/next
+lib/poppler
 {% endblock %}

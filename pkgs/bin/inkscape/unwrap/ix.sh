@@ -30,7 +30,6 @@ lib/xml/2
 lib/lcms/2
 lib/gspell
 lib/soup/2
-lib/poppler
 lib/boehmgc
 lib/potrace
 lib/gtk/3/mm
@@ -39,6 +38,7 @@ lib/harfbuzz
 lib/freetype
 lib/dbus/glib
 lib/fontconfig
+lib/poppler/old
 lib/image/magick
 lib/gdk/pixbuf/svg
 lib/double/conversion
