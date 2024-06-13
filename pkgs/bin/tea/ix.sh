@@ -8,11 +8,11 @@ sha:0726011d96ff1a09424d618d47a0d2110b229c3c8dd8a9e8b91a48a811ce2bb2
 {% block bld_libs %}
 lib/c
 lib/c++
-lib/poppler
 lib/djvulibre
 lib/qt/6/base
 lib/qt/6/deps
 lib/qt/6/compat
+lib/poppler/next
 {% endblock %}
 
 {% block cmake_flags %}
