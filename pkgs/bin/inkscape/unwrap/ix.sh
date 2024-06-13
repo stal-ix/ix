@@ -66,7 +66,7 @@ libxml/xmlmemory.h
 {% endblock %}
 
 {% block setup_target_flags %}
-export CXXFLAGS="-Wno-register ${CXXFLAGS}"
+export CXXFLAGS="-Wno-register -std=c++20 ${CXXFLAGS}"
 {% endblock %}
 
 {% block patch %}

@@ -59,6 +59,7 @@ http://mirror.koddos.net/gcc/releases/gcc-11.4.0/gcc-11.4.0.tar.xz
 http://mirror.koddos.net/gcc/releases/gcc-12.2.0/gcc-12.2.0.tar.xz
 http://mirror.koddos.net/gcc/releases/gcc-12.3.0/gcc-12.3.0.tar.xz
 http://mirror.koddos.net/gcc/releases/gcc-13.2.0/gcc-13.2.0.tar.xz
+http://mirror.koddos.net/gcc/releases/gcc-13.3.0/gcc-13.3.0.tar.xz
 http://mirrors.kernel.org/sourceware/lvm2/LVM2.2.03.22.tgz
 http://mirrors.kernel.org/sourceware/lvm2/LVM2.2.03.23.tgz
 http://mirrors.kernel.org/sourceware/lvm2/LVM2.2.03.24.tgz
@@ -834,6 +835,7 @@ https://github.com/NixOS/nix/archive/refs/tags/2.21.1.tar.gz
 https://github.com/NixOS/nix/archive/refs/tags/2.21.2.tar.gz
 https://github.com/NixOS/nix/archive/refs/tags/2.22.0.tar.gz
 https://github.com/NixOS/nix/archive/refs/tags/2.22.1.tar.gz
+https://github.com/NixOS/nix/archive/refs/tags/2.23.0.tar.gz
 https://github.com/NixOS/patchelf/archive/refs/tags/0.18.0.tar.gz
 https://github.com/Novum/vkQuake/archive/refs/tags/1.30.1.tar.gz
 https://github.com/Old-Man-Programmer/tree/archive/refs/tags/2.1.1.tar.gz
@@ -1130,6 +1132,7 @@ https://github.com/eza-community/eza/archive/refs/tags/v0.17.2.tar.gz
 https://github.com/eza-community/eza/archive/refs/tags/v0.17.3.tar.gz
 https://github.com/eza-community/eza/archive/refs/tags/v0.18.0.tar.gz
 https://github.com/eza-community/eza/archive/refs/tags/v0.18.13.tar.gz
+https://github.com/eza-community/eza/archive/refs/tags/v0.18.18.tar.gz
 https://github.com/eza-community/eza/archive/refs/tags/v0.18.4.tar.gz
 https://github.com/eza-community/eza/archive/refs/tags/v0.18.5.tar.gz
 https://github.com/facebook/zstd/archive/refs/tags/v1.5.5.tar.gz
@@ -1756,6 +1759,7 @@ https://github.com/ngtcp2/nghttp3/archive/refs/tags/v1.0.0.tar.gz
 https://github.com/ngtcp2/nghttp3/archive/refs/tags/v1.1.0.tar.gz
 https://github.com/ngtcp2/nghttp3/releases/download/v1.2.0/nghttp3-1.2.0.tar.xz
 https://github.com/ngtcp2/nghttp3/releases/download/v1.3.0/nghttp3-1.3.0.tar.xz
+https://github.com/ngtcp2/nghttp3/releases/download/v1.4.0/nghttp3-1.4.0.tar.xz
 https://github.com/ngtcp2/ngtcp2/archive/refs/tags/v0.19.0.tar.gz
 https://github.com/ngtcp2/ngtcp2/archive/refs/tags/v1.0.0.tar.gz
 https://github.com/ngtcp2/ngtcp2/archive/refs/tags/v1.0.1.tar.gz
@@ -1764,6 +1768,7 @@ https://github.com/ngtcp2/ngtcp2/archive/refs/tags/v1.2.0.tar.gz
 https://github.com/ngtcp2/ngtcp2/archive/refs/tags/v1.3.0.tar.gz
 https://github.com/ngtcp2/ngtcp2/archive/refs/tags/v1.4.0.tar.gz
 https://github.com/ngtcp2/ngtcp2/archive/refs/tags/v1.5.0.tar.gz
+https://github.com/ngtcp2/ngtcp2/archive/refs/tags/v1.6.0.tar.gz
 https://github.com/nhorman/rng-tools/archive/refs/tags/v6.15.tar.gz
 https://github.com/nibanks/msh3/archive/refs/tags/v0.6.0.tar.gz
 https://github.com/niklata/ndhc/archive/refs/tags/v2022-03-08-v2.tar.gz
@@ -2479,6 +2484,7 @@ https://gitlab.gnome.org/GNOME/libxml2/-/archive/v2.12.7/libxml2-v2.12.7.tar.bz2
 https://gitlab.gnome.org/GNOME/libxml2/-/archive/v2.12.8/libxml2-v2.12.8.tar.bz2
 https://gitlab.gnome.org/GNOME/libxslt/-/archive/v1.1.38/libxslt-v1.1.38.tar.bz2
 https://gitlab.gnome.org/GNOME/libxslt/-/archive/v1.1.39/libxslt-v1.1.39.tar.bz2
+https://gitlab.gnome.org/GNOME/libxslt/-/archive/v1.1.40/libxslt-v1.1.40.tar.bz2
 https://gitlab.gnome.org/GNOME/mutter/-/archive/44.beta/mutter-44.beta.tar.bz2
 https://gitlab.gnome.org/GNOME/mutter/-/archive/45.0/mutter-45.0.tar.bz2
 https://gitlab.gnome.org/GNOME/pango/-/archive/1.51.1/pango-1.51.1.tar.bz2
@@ -2656,6 +2662,7 @@ https://poppler.freedesktop.org/poppler-23.12.0.tar.xz
 https://poppler.freedesktop.org/poppler-24.01.0.tar.xz
 https://poppler.freedesktop.org/poppler-24.02.0.tar.xz
 https://poppler.freedesktop.org/poppler-24.03.0.tar.xz
+https://poppler.freedesktop.org/poppler-24.06.1.tar.xz
 https://pwmt.org/projects/zathura-djvu/download/zathura-djvu-0.2.9.tar.xz
 https://pwmt.org/projects/zathura-pdf-poppler/download/zathura-pdf-poppler-0.3.1.tar.xz
 https://raw.githubusercontent.com/AppImageCommunity/libappimage/9c1fae809dedbb3015e9cd5b46e2b5aab06df36e/src/patches/squashfuse.patch
@@ -2674,6 +2681,7 @@ https://secure.nic.cz/files/knot-dns/knot-3.3.2.tar.xz
 https://secure.nic.cz/files/knot-dns/knot-3.3.3.tar.xz
 https://secure.nic.cz/files/knot-dns/knot-3.3.4.tar.xz
 https://secure.nic.cz/files/knot-dns/knot-3.3.5.tar.xz
+https://secure.nic.cz/files/knot-dns/knot-3.3.6.tar.xz
 https://secure.nic.cz/files/knot-resolver/knot-resolver-5.6.0.tar.xz
 https://security.appspot.com/downloads/vsftpd-3.0.5.tar.gz
 https://skarnet.org/software/execline/execline-2.8.2.0.tar.gz

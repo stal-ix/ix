@@ -19,6 +19,12 @@ cat << EOF > etc/passwd.d/{{user | defined('user')}}
 {{user}}:{{hash | defined('hash')}}:{{userid | defined('userid')}}:{{userid}}:none:/home/{{user}}:{{login_shell or '/bin/sh'}}
 EOF
 
+mkdir -p etc/shells.d
+
+cat << EOF > etc/shells.d/{{user}}
+{{login_shell or '/bin/sh'}}
+EOF
+
 mkdir -p etc/group.d
 
 cat << EOF > etc/group.d/{{user}}
