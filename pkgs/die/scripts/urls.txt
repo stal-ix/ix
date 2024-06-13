@@ -612,6 +612,7 @@ https://github.com/AbiWord/enchant/releases/download/v2.7.0/enchant-2.7.0.tar.gz
 https://github.com/AbiWord/enchant/releases/download/v2.7.1/enchant-2.7.1.tar.gz
 https://github.com/AbiWord/enchant/releases/download/v2.7.2/enchant-2.7.2.tar.gz
 https://github.com/AbiWord/enchant/releases/download/v2.7.3/enchant-2.7.3.tar.gz
+https://github.com/AbiWord/enchant/releases/download/v2.8.1/enchant-2.8.1.tar.gz
 https://github.com/AcademySoftwareFoundation/Imath/archive/refs/tags/v3.1.10.tar.gz
 https://github.com/AcademySoftwareFoundation/Imath/archive/refs/tags/v3.1.11.tar.gz
 https://github.com/AcademySoftwareFoundation/Imath/archive/refs/tags/v3.1.9.tar.gz
