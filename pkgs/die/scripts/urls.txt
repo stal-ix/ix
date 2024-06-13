@@ -59,6 +59,7 @@ http://mirror.koddos.net/gcc/releases/gcc-11.4.0/gcc-11.4.0.tar.xz
 http://mirror.koddos.net/gcc/releases/gcc-12.2.0/gcc-12.2.0.tar.xz
 http://mirror.koddos.net/gcc/releases/gcc-12.3.0/gcc-12.3.0.tar.xz
 http://mirror.koddos.net/gcc/releases/gcc-13.2.0/gcc-13.2.0.tar.xz
+http://mirror.koddos.net/gcc/releases/gcc-13.3.0/gcc-13.3.0.tar.xz
 http://mirrors.kernel.org/sourceware/lvm2/LVM2.2.03.22.tgz
 http://mirrors.kernel.org/sourceware/lvm2/LVM2.2.03.23.tgz
 http://mirrors.kernel.org/sourceware/lvm2/LVM2.2.03.24.tgz
@@ -1130,6 +1131,7 @@ https://github.com/eza-community/eza/archive/refs/tags/v0.17.2.tar.gz
 https://github.com/eza-community/eza/archive/refs/tags/v0.17.3.tar.gz
 https://github.com/eza-community/eza/archive/refs/tags/v0.18.0.tar.gz
 https://github.com/eza-community/eza/archive/refs/tags/v0.18.13.tar.gz
+https://github.com/eza-community/eza/archive/refs/tags/v0.18.18.tar.gz
 https://github.com/eza-community/eza/archive/refs/tags/v0.18.4.tar.gz
 https://github.com/eza-community/eza/archive/refs/tags/v0.18.5.tar.gz
 https://github.com/facebook/zstd/archive/refs/tags/v1.5.5.tar.gz
