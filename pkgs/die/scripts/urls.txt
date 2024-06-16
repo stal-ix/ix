@@ -1731,6 +1731,7 @@ https://github.com/namhyung/uftrace/archive/refs/tags/v0.12.tar.gz
 https://github.com/ncopa/su-exec/archive/refs/tags/v0.2.tar.gz
 https://github.com/ndevilla/iniparser/archive/refs/tags/v4.2.1.tar.gz
 https://github.com/ndevilla/iniparser/archive/refs/tags/v4.2.2.tar.gz
+https://github.com/ndevilla/iniparser/archive/refs/tags/v4.2.4.tar.gz
 https://github.com/ndevilla/iniparser/archive/refs/tags/v4.2.tar.gz
 https://github.com/nemtrif/utfcpp/archive/refs/tags/v3.2.4.tar.gz
 https://github.com/nemtrif/utfcpp/archive/refs/tags/v3.2.5.tar.gz
