@@ -514,7 +514,7 @@ bin/coreutils/9/1
 bin/coreutils/lite
 bin/coreutils
 bin/f2fs/tools
-bin/inkscape
+#bin/inkscape
 bin/b2
 bin/exfat/progs
 bin/exfat/utils
