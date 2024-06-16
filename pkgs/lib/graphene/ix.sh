@@ -8,8 +8,6 @@ sha:922dc109d2dc5dc56617a29bd716c79dd84db31721a8493a13a5f79109a4a4ed
 {% block lib_deps %}
 lib/c
 lib/glib
-# temp hack
-lib/intrin
 {% endblock %}
 
 {% block env %}

@@ -26,8 +26,8 @@ introspection=false
 
 {% block bld_tool %}
 bld/glib
-bld/rust
 bld/gettext
+bld/fake(tool_name=cargo)
 bld/fake(tool_name=itstool)
 {% endblock %}
 
