@@ -8,8 +8,15 @@ sha:922dc109d2dc5dc56617a29bd716c79dd84db31721a8493a13a5f79109a4a4ed
 {% block lib_deps %}
 lib/c
 lib/glib
+# temp hack
+lib/intrin
 {% endblock %}
 
 {% block env %}
 export CPPFLAGS="-I${out}/include/graphene-1.0 -I${out}/lib/graphene-1.0/include \${CPPFLAGS}"
+{% endblock %}
+
+{% block install %}
+{{super()}}
+sed -e 's|-mfpmath.*||' -i ${out}/lib/pkgconfig/graphene-1.0.pc
 {% endblock %}
