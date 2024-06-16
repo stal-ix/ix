@@ -1325,6 +1325,7 @@ https://github.com/hluk/CopyQ/archive/refs/tags/v7.1.0.tar.gz
 https://github.com/hoytech/lmdbxx/archive/refs/tags/1.0.0.tar.gz
 https://github.com/hpjansson/chafa/archive/refs/tags/1.12.4.tar.gz
 https://github.com/hpjansson/chafa/archive/refs/tags/1.14.0.tar.gz
+https://github.com/hramrach/lm-sensors/archive/refs/tags/V3-6-2.tar.gz
 https://github.com/htop-dev/htop/archive/refs/tags/3.2.2.tar.gz
 https://github.com/htop-dev/htop/archive/refs/tags/3.3.0.tar.gz
 https://github.com/hughsie/libgusb/archive/refs/tags/0.4.6.tar.gz
