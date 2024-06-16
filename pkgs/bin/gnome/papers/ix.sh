@@ -30,11 +30,3 @@ bld/gettext
 bld/fake(tool_name=cargo)
 bld/fake(tool_name=itstool)
 {% endblock %}
-
-{% block build_flags %}
-shut_up
-{% endblock %}
-
-{% block setup_target_flags %}
-export CFLAGS="-msse4 -msse3 -mavx -mavx2 \${CFLAGS}"
-{% endblock %}
