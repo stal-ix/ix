@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/ndevilla/iniparser/archive/refs/tags/v4.2.2.tar.gz
-sha:82983d9712e321494ee67e1d90963545b6788c198611dab094804a7b7414b233
+https://github.com/ndevilla/iniparser/archive/refs/tags/v4.2.4.tar.gz
+sha:c05bb41df87f31a029516943ebb7f38ca1f0e38ff36f3836f1163a9a529857df
 {% endblock %}
 
 {% block lib_deps %}

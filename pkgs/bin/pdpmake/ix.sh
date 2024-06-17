@@ -1,8 +1,8 @@
 {% extends '//die/c/make.sh' %}
 
 {% block fetch %}
-https://github.com/rmyorston/pdpmake/archive/refs/tags/1.4.3.tar.gz
-sha:e078ab376683de2a3044826c301f0cdef1147065f5244b52af33727797489819
+https://github.com/rmyorston/pdpmake/archive/refs/tags/2.0.0.tar.gz
+sha:72ef8b7e691dfdf1cc5dd979654870e8cf664a4305ac155165ddfb77ba945854
 {% endblock %}
 
 {% block bld_libs %}

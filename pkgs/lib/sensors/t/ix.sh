@@ -1,8 +1,8 @@
 {% extends '//die/c/make.sh'  %}
 
 {% block fetch %}
-https://github.com/lm-sensors/lm-sensors/archive/refs/tags/V3-6-0.tar.gz
-sha:0591f9fa0339f0d15e75326d0365871c2d4e2ed8aa1ff759b3a55d3734b7d197
+https://github.com/hramrach/lm-sensors/archive/refs/tags/V3-6-2.tar.gz
+sha:c6a0587e565778a40d88891928bf8943f27d353f382d5b745a997d635978a8f0
 {% endblock %}
 
 {% block bld_libs %}
