@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://ftp.gnu.org/gnu/nettle/nettle-3.9.1.tar.gz
-sha:ccfeff981b0ca71bbd6fbcb054f407c60ffb644389a5be80d6716d5b550c6ce3
+https://ftp.gnu.org/gnu/nettle/nettle-3.10.tar.gz
+sha:b4c518adb174e484cb4acea54118f02380c7133771e7e9beb98a0787194ee47c
 {% endblock %}
 
 {% block lib_deps %}
