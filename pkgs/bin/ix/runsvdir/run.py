@@ -5,7 +5,6 @@ import sys
 import json
 import time
 import hashlib
-import threading
 import subprocess
 
 where = sys.argv[-1]
