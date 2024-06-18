@@ -15,6 +15,10 @@ sed -e 's|$<T.*qmltyperegistrar>|qmltyperegistrar|' \
     -e 's|$<T.*qmllint>|qmllint|' \
     -e 's|$<T.*cachegen_name}>|qmlcachegen|' \
     -i src/qml/Qt6QmlMacros.cmake
+sed -e 's|$<T.*qmltyperegistrar>|qmltyperegistrar|' \
+    -e 's|$<T.*qmllint>|qmllint|' \
+    -e 's|$<T.*cachegen_name}>|qmlcachegen|' \
+    -i src/qml/CMakeLists.txt
 {% endblock %}
 
 {% block postinstall %}

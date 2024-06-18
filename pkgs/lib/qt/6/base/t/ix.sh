@@ -1,8 +1,8 @@
 {% extends '//die/c/qt.sh' %}
 
 {% block fetch %}
-https://github.com/qt/qtbase/archive/refs/tags/v6.6.3.tar.gz
-sha:11abfcae323d295129f644f1828064e05af7d64d49edb0e00bfb8e8cb9691259
+https://github.com/qt/qtbase/archive/refs/tags/v6.7.2.tar.gz
+sha:96b96e4fd0fc306502ed8b94a34cfa0bacc8a25d43c2e958dd6772b28f6b0e42
 {% endblock %}
 
 {% block lib_deps %}

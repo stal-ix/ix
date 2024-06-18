@@ -66,7 +66,7 @@ def iter_fetch(url, sha, mirrors):
 
 
 def iter_tout():
-    tout = 5
+    tout = 60
 
     while True:
         yield tout * (0.5 + random.random())
