@@ -21,13 +21,6 @@ def readf(p):
         return f.read()
 
 def step():
-    for md5, proc in list(running.items()):
-        if proc.poll() is None:
-            log(f'{md5} alive')
-        else:
-            log(f'{md5} dead')
-            running.pop(md5)
-
     cur = []
 
     for d in os.listdir(where):
@@ -52,6 +45,12 @@ def step():
         if md5 not in cur:
             log(f'{md5} stale')
             proc.terminate()
+
+        if proc.poll() is None:
+            log(f'{md5} alive')
+        else:
+            log(f'{md5} dead')
+            running.pop(md5)
 
 while True:
     try:
