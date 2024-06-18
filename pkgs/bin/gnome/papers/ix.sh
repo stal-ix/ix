@@ -30,3 +30,9 @@ bld/gettext
 bld/fake(tool_name=cargo)
 bld/fake(tool_name=itstool)
 {% endblock %}
+
+{% block build %}
+mkdir -p ${tmp}/obj/shell-rs/src/release
+>${tmp}/obj/shell-rs/src/release/papers
+{{super()}}
+{% endblock %}
