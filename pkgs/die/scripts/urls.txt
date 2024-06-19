@@ -1309,6 +1309,7 @@ https://github.com/gperftools/gperftools/archive/refs/tags/gperftools-2.14.tar.g
 https://github.com/gperftools/gperftools/archive/refs/tags/gperftools-2.15.tar.gz
 https://github.com/gphoto/libgphoto2/archive/refs/tags/v2.5.30.tar.gz
 https://github.com/greshake/i3status-rust/archive/refs/tags/v0.33.0.tar.gz
+https://github.com/grpc/grpc-java/archive/refs/tags/v1.63.1.tar.gz
 https://github.com/haasn/libplacebo/archive/refs/tags/v5.264.1.tar.gz
 https://github.com/haasn/libplacebo/archive/refs/tags/v6.292.1.tar.gz
 https://github.com/haasn/libplacebo/archive/refs/tags/v6.338.0.tar.gz
@@ -1623,6 +1624,7 @@ https://github.com/llvm/llvm-project/archive/refs/tags/llvmorg-18.1.4.tar.gz
 https://github.com/llvm/llvm-project/archive/refs/tags/llvmorg-18.1.5.tar.gz
 https://github.com/llvm/llvm-project/archive/refs/tags/llvmorg-18.1.6.tar.gz
 https://github.com/llvm/llvm-project/archive/refs/tags/llvmorg-18.1.7.tar.gz
+https://github.com/llvm/llvm-project/archive/refs/tags/llvmorg-18.1.8.tar.gz
 https://github.com/llvm/llvm-project/releases/download/llvmorg-13.0.1/llvm-project-13.0.1.src.tar.xz
 https://github.com/llvm/llvm-project/releases/download/llvmorg-16.0.6/llvm-project-16.0.6.src.tar.xz
 https://github.com/llvm/llvm-project/releases/download/llvmorg-17.0.0-rc3/llvm-project-17.0.0rc3.src.tar.xz

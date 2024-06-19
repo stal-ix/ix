@@ -1,2 +1,2 @@
-https://github.com/llvm/llvm-project/archive/refs/tags/llvmorg-18.1.7.tar.gz
-sha:b60df7cbe02cef2523f7357120fb0d46cbb443791cde3a5fb36b82c335c0afc9
+https://github.com/llvm/llvm-project/archive/refs/tags/llvmorg-18.1.8.tar.gz
+sha:09c08693a9afd6236f27a2ebae62cda656eba19021ef3f94d59e931d662d4856
