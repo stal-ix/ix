@@ -1,8 +1,8 @@
 {% extends '//die/c/autohell.sh' %}
 
 {% block fetch %}
-https://gnupg.org/ftp/gcrypt/libgpg-error/libgpg-error-1.48.tar.bz2
-89ce1ae893e122924b858de84dc4f67aae29ffa610ebf668d5aa539045663d6f
+https://gnupg.org/ftp/gcrypt/libgpg-error/libgpg-error-1.49.tar.bz2
+sha:8b79d54639dbf4abc08b5406fb2f37e669a2dec091dd024fb87dd367131c63a9
 {% endblock %}
 
 {% block lib_deps %}
