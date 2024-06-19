@@ -1009,6 +1009,7 @@ https://github.com/c-ares/c-ares/archive/refs/tags/cares-1_26_0.tar.gz
 https://github.com/c-ares/c-ares/archive/refs/tags/cares-1_27_0.tar.gz
 https://github.com/c-ares/c-ares/archive/refs/tags/cares-1_28_1.tar.gz
 https://github.com/c-ares/c-ares/archive/refs/tags/cares-1_29_0.tar.gz
+https://github.com/c-ares/c-ares/archive/refs/tags/v1.31.0.tar.gz
 https://github.com/c-util/c-dvar/archive/refs/tags/v1.1.0.tar.gz
 https://github.com/c-util/c-ini/archive/refs/tags/v1.1.0.tar.gz
 https://github.com/c-util/c-list/archive/refs/tags/v3.1.0.tar.gz
