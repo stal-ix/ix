@@ -37,6 +37,7 @@
 #}
 
 {% block run_deps %}
+bin/grpc/java
 bin/time/limit
 bin/nscd
 bin/yofi
