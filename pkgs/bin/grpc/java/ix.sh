@@ -17,10 +17,10 @@ cd compiler/src/java_plugin/cpp
 {% endblock %}
 
 {% block build %}
-c++ *.cpp -o grpc-java-plugin
+c++ *.cpp -o grpc_java
 {% endblock %}
 
 {% block install %}
 mkdir ${out}/bin
-cp grpc-java-plugin ${out}/bin/
+cp grpc_java ${out}/bin/
 {% endblock %}
