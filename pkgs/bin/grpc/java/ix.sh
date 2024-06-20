@@ -22,5 +22,5 @@ c++ *.cpp -o grpc_java
 
 {% block install %}
 mkdir ${out}/bin
-cp grpc_java ${out}/bin/
+cp grpc_java{{target.exe_suffix}} ${out}/bin/
 {% endblock %}

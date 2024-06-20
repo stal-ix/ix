@@ -12,6 +12,10 @@ lib/execinfo
 {% if darwin %}
 lib/darwin/framework/CoreFoundation
 {% endif %}
+{% if mingw32 %}
+lib/shim/dll(dll_name=advapi32)
+lib/shim/dll(dll_name=dbghelp)
+{% endif %}
 {% endblock %}
 
 {% block bld_libs %}
