@@ -75,4 +75,5 @@ with open('meta.json', 'w') as f:
 with open('env', 'w') as f:
     f.write('\n'.join(f'. {x}/env' for x in reversed(meta['links'])) + '\n')
 
+subprocess.run(['chro', path], check=True)
 subprocess.run(['check_realm', 'meta.json'], check=True)
