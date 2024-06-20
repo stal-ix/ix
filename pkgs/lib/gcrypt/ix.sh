@@ -29,3 +29,7 @@ sed -e 's|#error|#warning|' -i random/jitterentropy-base.c
 --disable-O-flag-munging
 --disable-instrumentation-munging
 {% endblock %}
+
+{% block c_rename_symbol %}
+gf_mul
+{% endblock %}
