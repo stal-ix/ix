@@ -2564,6 +2564,7 @@ https://gnupg.org/ftp/gcrypt/libgcrypt/libgcrypt-1.11.0.tar.bz2
 https://gnupg.org/ftp/gcrypt/libgpg-error/libgpg-error-1.47.tar.bz2
 https://gnupg.org/ftp/gcrypt/libgpg-error/libgpg-error-1.48.tar.bz2
 https://gnupg.org/ftp/gcrypt/libgpg-error/libgpg-error-1.49.tar.bz2
+https://gnupg.org/ftp/gcrypt/libgpg-error/libgpg-error-1.50.tar.bz2
 https://golang.org/dl/go1.4-bootstrap-20170531.tar.gz
 https://hewlettpackard.github.io/wireless-tools/wireless_tools.29.tar.gz
 https://hg.sr.ht/~scoopta/wofi/archive/v1.2.4.tar.gz
