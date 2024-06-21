@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://github.com/adrianlopezroche/fdupes/archive/refs/tags/v2.3.0.tar.gz
-sha:8f38d21eb53e27a43f6652f0c6fa80c673f18466760281e812e84f56c1d359e3
+https://github.com/adrianlopezroche/fdupes/archive/refs/tags/v2.3.1.tar.gz
+sha:fbf0a455d398d2bfeb86da832d736557a6ee09d0b1456b869698dc43c5cf5072
 {% endblock %}
 
 {% block bld_libs %}

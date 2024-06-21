@@ -1,0 +1,13 @@
+#!/usr/bin/env sh
+
+set -ue
+
+find ${1} -type f | sort -r | while read l; do
+    chmod a-w "${l}"
+done
+
+find ${1} -type d | sort -r | while read l; do
+    chmod a-w "${l}"
+done
+
+chmod +w ${1}

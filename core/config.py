@@ -174,7 +174,7 @@ def get_raw_arch(n):
         }
 
     if n == 'arm64':
-        return du(a('aarch64'), {'arch': 'arm64'})
+        return du(a('darwin-aarch64'), {'arch': 'arm64'})
 
     if n == 'aarch64':
         return {'gnu_arch': 'aarch64', 'family': 'arm'}
