@@ -58,6 +58,7 @@ http://mirror.koddos.net/gcc/releases/gcc-11.3.0/gcc-11.3.0.tar.xz
 http://mirror.koddos.net/gcc/releases/gcc-11.4.0/gcc-11.4.0.tar.xz
 http://mirror.koddos.net/gcc/releases/gcc-12.2.0/gcc-12.2.0.tar.xz
 http://mirror.koddos.net/gcc/releases/gcc-12.3.0/gcc-12.3.0.tar.xz
+http://mirror.koddos.net/gcc/releases/gcc-12.4.0/gcc-12.4.0.tar.xz
 http://mirror.koddos.net/gcc/releases/gcc-13.2.0/gcc-13.2.0.tar.xz
 http://mirror.koddos.net/gcc/releases/gcc-13.3.0/gcc-13.3.0.tar.xz
 http://mirrors.kernel.org/sourceware/lvm2/LVM2.2.03.22.tgz
@@ -1111,6 +1112,7 @@ https://github.com/elves/elvish/archive/refs/tags/v0.20.1.tar.gz
 https://github.com/emacs-mirror/emacs/archive/refs/tags/emacs-29.1.tar.gz
 https://github.com/emacs-mirror/emacs/archive/refs/tags/emacs-29.2.tar.gz
 https://github.com/emacs-mirror/emacs/archive/refs/tags/emacs-29.3.tar.gz
+https://github.com/emacs-mirror/emacs/archive/refs/tags/emacs-29.4.tar.gz
 https://github.com/emcrisostomo/fswatch/archive/refs/tags/1.17.1.tar.gz
 https://github.com/emersion/mako/archive/refs/tags/v1.7.1.tar.gz
 https://github.com/emersion/mako/archive/refs/tags/v1.9.0.tar.gz
@@ -2256,6 +2258,7 @@ https://github.com/uutils/coreutils/archive/refs/tags/0.0.23.tar.gz
 https://github.com/uutils/coreutils/archive/refs/tags/0.0.24.tar.gz
 https://github.com/uutils/coreutils/archive/refs/tags/0.0.25.tar.gz
 https://github.com/uutils/coreutils/archive/refs/tags/0.0.26.tar.gz
+https://github.com/uutils/coreutils/archive/refs/tags/0.0.27.tar.gz
 https://github.com/uutils/coreutils/archive/refs/tags/0.0.8.tar.gz
 https://github.com/varlink/libvarlink/archive/refs/tags/23.tar.gz
 https://github.com/vasi/squashfuse/archive/1f980303b89c779eabfd0a0fdd36d6a7a311bf92.zip
@@ -2309,6 +2312,7 @@ https://github.com/weechat/weechat/archive/refs/tags/v4.2.2.tar.gz
 https://github.com/weechat/weechat/archive/refs/tags/v4.3.0.tar.gz
 https://github.com/weechat/weechat/archive/refs/tags/v4.3.1.tar.gz
 https://github.com/weechat/weechat/archive/refs/tags/v4.3.2.tar.gz
+https://github.com/weechat/weechat/archive/refs/tags/v4.3.3.tar.gz
 https://github.com/westes/flex/archive/refs/tags/flex-2-5-10.tar.gz
 https://github.com/westes/flex/files/981163/flex-2.6.4.tar.gz
 https://github.com/wez/wezterm/archive/refs/tags/20230712-072601-f4abf8fd.tar.gz
@@ -2347,6 +2351,7 @@ https://github.com/yaml/libyaml/archive/refs/tags/0.2.5.tar.gz
 https://github.com/yandex/porto/archive/refs/tags/v5.3.15.tar.gz
 https://github.com/yasm/yasm/releases/download/v1.3.0/yasm-1.3.0.tar.gz
 https://github.com/yggdrasil-network/yggdrasil-go/archive/refs/tags/v0.5.5.tar.gz
+https://github.com/yorukot/superfile/archive/refs/tags/v1.1.3.tar.gz
 https://github.com/yquake2/yquake2/archive/refs/tags/QUAKE2_8_20.tar.gz
 https://github.com/yquake2/yquake2/archive/refs/tags/QUAKE2_8_30.tar.gz
 https://github.com/yrutschle/sslh/archive/refs/tags/v2.0.0.tar.gz
@@ -2398,6 +2403,7 @@ https://gitlab.com/sebholt/qastools/-/archive/v1.4.0/qastools-v1.4.0.tar.bz2
 https://gitlab.com/timelimit/timelimit/-/archive/archive/debian/1.9.2-2/timelimit-archive-debian-1.9.2-2.tar.bz2
 https://gitlab.freedesktop.org/cairo/cairo/-/archive/1.17.8/cairo-1.17.8.tar.bz2
 https://gitlab.freedesktop.org/cairo/cairo/-/archive/1.18.0/cairo-1.18.0.tar.bz2
+https://gitlab.freedesktop.org/emersion/libdisplay-info/-/archive/0.2.0/libdisplay-info-0.2.0.tar.bz2
 https://gitlab.freedesktop.org/freetype/freetype-demos/-/archive/VER-2-13-0/freetype-demos-VER-2-13-0.tar.bz2
 https://gitlab.freedesktop.org/gstreamer/gstreamer/-/archive/1.22.10/gstreamer-1.22.10.tar.gz
 https://gitlab.freedesktop.org/gstreamer/gstreamer/-/archive/1.22.5/gstreamer-1.22.5.tar.gz
@@ -2687,6 +2693,7 @@ https://mupdf.com/downloads/archive/mupdf-1.24.0-source.tar.gz
 https://mupdf.com/downloads/archive/mupdf-1.24.1-source.tar.gz
 https://mupdf.com/downloads/archive/mupdf-1.24.2-source.tar.gz
 https://mupdf.com/downloads/archive/mupdf-1.24.3-source.tar.gz
+https://mupdf.com/downloads/archive/mupdf-1.24.4-source.tar.gz
 https://nav.dl.sourceforge.net/project/sbcl/sbcl/2.2.1/sbcl-2.2.1-source.tar.bz2
 https://nav.dl.sourceforge.net/project/sbcl/sbcl/2.3.7/sbcl-2.3.7-source.tar.bz2
 https://nav.dl.sourceforge.net/project/sbcl/sbcl/2.3.9/sbcl-2.3.9-source.tar.bz2

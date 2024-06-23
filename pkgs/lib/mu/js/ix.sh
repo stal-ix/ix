@@ -1,11 +1,10 @@
 {% extends '//die/c/make.sh' %}
 
-{% block version %}1.3.2{% endblock %}
+{% block version %}1.3.5{% endblock %}
 
 {% block fetch %}
-# 1.3.3 broke static build
 https://github.com/ccxvii/mujs/archive/refs/tags/{{self.version()}}.tar.gz
-sha:59763cc32776714b4f00a0efede83f4f56b381c9dbaced4756d665c214249dca
+sha:78a311ae4224400774cb09ef5baa2633c26971513f8b931d3224a0eb85b13e0b
 {% endblock %}
 
 {% block lib_deps %}
@@ -16,12 +15,8 @@ lib/c
 HAVE_READLINE=no
 {% endblock %}
 
-{% block make_target %}
-static
-{% endblock %}
-
-{% block make_install_target %}
-install-static
+{% block build_flags %}
+wrap_cc
 {% endblock %}
 
 {% block install %}

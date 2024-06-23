@@ -37,6 +37,8 @@
 #}
 
 {% block run_deps %}
+bin/super/file
+bin/mujs
 bin/grpc/java
 bin/time/limit
 bin/nscd
