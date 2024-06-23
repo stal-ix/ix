@@ -1,8 +1,8 @@
 {% extends '//bin/gcc/11/unwrap/ix.sh' %}
 
 {% block fetch %}
-http://mirror.koddos.net/gcc/releases/gcc-12.3.0/gcc-12.3.0.tar.xz
-sha:949a5d4f99e786421a93b532b22ffab5578de7321369975b91aec97adfda8c3b
+http://mirror.koddos.net/gcc/releases/gcc-12.4.0/gcc-12.4.0.tar.xz
+sha:704f652604ccbccb14bdabf3478c9511c89788b12cb3bbffded37341916a9175
 {% endblock %}
 
 {% block patch %}
