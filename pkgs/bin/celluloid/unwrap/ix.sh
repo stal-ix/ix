@@ -1,8 +1,8 @@
 {% extends '//die/c/gnome.sh' %}
 
 {% block fetch %}
-https://github.com/celluloid-player/celluloid/archive/refs/tags/v0.26.tar.gz
-sha:6a66297544dd7754557d03e22e67ef4c1028ba667a7ad7db0d6fe76a137a937c
+https://github.com/celluloid-player/celluloid/archive/refs/tags/v0.27.tar.gz
+sha:6c216a3dead5baf931bd52876cab7e08abcb9aef2132ca3a9ea35bf9dffe7644
 {% endblock %}
 
 {% block bld_libs %}
