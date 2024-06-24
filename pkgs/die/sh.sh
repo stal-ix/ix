@@ -2,7 +2,7 @@
 
 {% block script_body %}
 {% if show_script %}
-base64 -d << EOF
+base64 -d << EOF | cat -n
 {{self.script_body_sh() | b64e}}
 EOF
 {% else %}
