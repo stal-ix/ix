@@ -1,6 +1,16 @@
 {% extends 'script.json' %}
 
 {% block script_body %}
+{% if show_script %}
+base64 -d << EOF
+{{self.script_body_sh() | b64e}}
+EOF
+{% else %}
+{{self.script_body_sh().strip()}}
+{% endif %}
+{% endblock %}
+
+{% block script_body_sh %}
 # {{rebuild}}
 {% block prologue %}
 set -eu
