@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/msgpack/msgpack-c/archive/refs/tags/c-6.0.1.tar.gz
-sha:58d5fe49d0ee2b374d60a61aabf8028b2c92004e6f11bff04e74b639fc8ad541
+https://github.com/msgpack/msgpack-c/archive/refs/tags/c-6.0.2.tar.gz
+sha:f5b031d7b2f6639936826baeea4d3080e7db5db76838c7230089ec3d1f97e6a2
 {% endblock %}
 
 {% block lib_deps %}
