@@ -1746,6 +1746,7 @@ https://github.com/muesli/duf/archive/refs/tags/v0.8.1.tar.gz
 https://github.com/munt/munt/archive/refs/tags/libmt32emu_2_7_1.tar.gz
 https://github.com/museun/cargo-whatfeatures/archive/refs/tags/v0.9.9.tar.gz
 https://github.com/mvdan/sh/archive/refs/tags/v3.5.1.tar.gz
+https://github.com/mvdan/sh/archive/refs/tags/v3.8.0.tar.gz
 https://github.com/namhyung/uftrace/archive/refs/tags/v0.12.tar.gz
 https://github.com/ncopa/su-exec/archive/refs/tags/v0.2.tar.gz
 https://github.com/ndevilla/iniparser/archive/refs/tags/v4.2.1.tar.gz
@@ -2889,6 +2890,7 @@ https://www.kernel.org/pub/linux/kernel/people/kdave/btrfs-progs/btrfs-progs-v6.
 https://www.kernel.org/pub/linux/kernel/people/kdave/btrfs-progs/btrfs-progs-v6.7.tar.xz
 https://www.kernel.org/pub/linux/kernel/people/kdave/btrfs-progs/btrfs-progs-v6.8.1.tar.xz
 https://www.kernel.org/pub/linux/kernel/people/kdave/btrfs-progs/btrfs-progs-v6.8.tar.xz
+https://www.kernel.org/pub/linux/kernel/people/kdave/btrfs-progs/btrfs-progs-v6.9.1.tar.xz
 https://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2/libcap-2.69.tar.gz
 https://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2/libcap-2.70.tar.gz
 https://www.kernel.org/pub/linux/utils/fs/xfs/xfsprogs/xfsprogs-6.1.0.tar.xz
