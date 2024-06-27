@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://github.com/NixOS/nix/archive/refs/tags/2.23.0.tar.gz
-sha:6a528adb64770460806df3d8b47544e450062a02fab2a7c62b99c92b1748cba1
+https://github.com/NixOS/nix/archive/refs/tags/2.23.1.tar.gz
+sha:c7cf1492f642fdfdc3f1ca8ebaad03274282720565b55f5144aba4850a44a3da
 {% endblock %}
 
 {% block bld_libs %}
