@@ -37,6 +37,7 @@
 #}
 
 {% block run_deps %}
+bin/sh/fmt
 bin/super/file
 bin/mujs
 bin/grpc/java

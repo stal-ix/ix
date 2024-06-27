@@ -1,11 +1,11 @@
-{% extends 't/ix.sh' %}
+{% extends '//bin/go/sh/t/ix.sh' %}
 
 {% block unpack %}
 {{super()}}
-cd cmd/gosh
+cd cmd/shfmt
 {% endblock %}
 
 {% block install %}
 mkdir ${out}/bin
-cp gosh ${out}/bin/
+cp shfmt ${out}/bin/
 {% endblock %}

@@ -98,6 +98,7 @@ ONE_LEVEL = (
     'rebuild',
     'nostrip',
     'simulate_failure',
+    'show_script',
 )
 
 
