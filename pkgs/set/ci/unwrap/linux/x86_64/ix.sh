@@ -37,6 +37,7 @@
 #}
 
 {% block run_deps %}
+bin/modetest
 bin/sh/fmt
 bin/super/file
 bin/mujs
