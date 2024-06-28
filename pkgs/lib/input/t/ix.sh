@@ -1,8 +1,8 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://gitlab.freedesktop.org/libinput/libinput/-/archive/1.26.0/libinput-1.26.0.tar.bz2
-sha:8c582b86c6865aaee2516ee96b299cef60c98e113d1391bbd2683eac08221a07
+https://gitlab.freedesktop.org/libinput/libinput/-/archive/1.26.1/libinput-1.26.1.tar.bz2
+sha:da0ac450902a2aef29028bcab0bec26eb5e08b4c36ffc2925746d807794991b6
 {% endblock %}
 
 {% block bld_libs %}
