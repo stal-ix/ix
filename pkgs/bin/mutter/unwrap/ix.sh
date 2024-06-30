@@ -39,6 +39,7 @@ lib/vulkan/loader
 lib/mesa/glesv2/dl
 lib/vulkan/headers
 lib/shim/fake/pkg(pkg_name=ice,pkg_ver=100.500)
+lib/shim/fake/pkg(pkg_name=udev,pkg_ver=100.500)
 lib/gsettings/desktop/schemas
 {% endblock %}
 
@@ -81,7 +82,6 @@ wrap_cc
 {% block patch %}
 find . -type f -name 'meson.build' | while read l; do
     sed -e 's|.*logind_provider.*||' \
-        -e 's|.* udev_dep = .*||' \
         -i ${l}
 done
 {% endblock %}
