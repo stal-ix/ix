@@ -37,6 +37,7 @@
 #}
 
 {% block run_deps %}
+bin/cvt
 bin/modetest
 bin/sh/fmt
 bin/super/file

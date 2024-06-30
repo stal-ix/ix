@@ -2473,6 +2473,7 @@ https://gitlab.freedesktop.org/xkeyboard-config/xkeyboard-config/-/archive/xkeyb
 https://gitlab.freedesktop.org/xkeyboard-config/xkeyboard-config/-/archive/xkeyboard-config-2.41/xkeyboard-config-xkeyboard-config-2.41.tar.bz2
 https://gitlab.freedesktop.org/xorg/lib/libpciaccess/-/archive/libpciaccess-0.18.1/libpciaccess-libpciaccess-0.18.1.tar.bz2
 https://gitlab.freedesktop.org/xorg/lib/libpciaccess/-/archive/libpciaccess-0.18/libpciaccess-libpciaccess-0.18.tar.bz2
+https://gitlab.freedesktop.org/xorg/lib/libxcvt/-/archive/libxcvt-0.1.2/libxcvt-libxcvt-0.1.2.tar.bz2
 https://gitlab.gnome.org/GNOME/Incubator/papers/-/archive/46.1/papers-46.1.tar.bz2
 https://gitlab.gnome.org/GNOME/atk/-/archive/ATK_2_36_0/atk-ATK_2_36_0.tar.bz2
 https://gitlab.gnome.org/GNOME/console/-/archive/44.4/console-44.4.tar.bz2
