@@ -16,7 +16,6 @@ f4286f8a090ccbe4bf97f408364b4092cf6f6c8f0795f80d10eae9933c8b6614
 lib/c
 lib/ei
 lib/atk
-lib/gtk
 lib/dbus
 lib/udev
 lib/glib
@@ -31,6 +30,7 @@ lib/colord
 lib/wayland
 lib/canberra
 lib/graphene
+lib/gdk/pixbuf
 lib/xkb/common
 lib/json/glib
 lib/drivers/3d
