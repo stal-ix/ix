@@ -30,18 +30,18 @@ lib/colord
 lib/wayland
 lib/canberra
 lib/graphene
+lib/json/glib
 lib/gdk/pixbuf
 lib/xkb/common
-lib/json/glib
 lib/drivers/3d
 lib/mesa/gl/dl
 lib/vulkan/loader
 lib/mesa/glesv2/dl
 lib/vulkan/headers
+lib/gsettings/desktop/schemas
 lib/shim/fake/pkg(pkg_name=ice,pkg_ver=100.500)
 lib/shim/fake/pkg(pkg_name=udev,pkg_ver=100.500)
 lib/shim/fake/pkg(pkg_name=libelogind,pkg_ver=100.500)
-lib/gsettings/desktop/schemas
 {% endblock %}
 
 {% block bld_tool %}
