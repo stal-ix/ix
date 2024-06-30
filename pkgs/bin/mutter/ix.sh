@@ -1,19 +1,25 @@
 {% extends '//die/c/meson.sh' %}
 
-{% block fetch %}
-https://gitlab.gnome.org/GNOME/mutter/-/archive/45.0/mutter-45.0.tar.bz2
-sha:98116db4c6e25eb6d708552cae182714e54cf6d610425104fd49afbc3aa6b8f9
+{% block git_repo %}
+https://gitlab.gnome.org/GNOME/mutter
 {% endblock %}
 
-{# hard X11 dep #}
+{% block git_commit %}
+4134d12789df15094a6674684b21f8916b42546a
+{% endblock %}
+
+{% block git_sha %}
+f4286f8a090ccbe4bf97f408364b4092cf6f6c8f0795f80d10eae9933c8b6614
+{% endblock %}
 
 {% block bld_libs %}
 lib/c
 lib/ei
+lib/atk
+lib/gtk
 lib/dbus
 lib/udev
 lib/glib
-lib/gtk/3
 lib/input
 lib/wacom
 lib/cairo
@@ -23,7 +29,6 @@ lib/udev/g
 lib/opengl
 lib/colord
 lib/wayland
-lib/shim/x11
 lib/canberra
 lib/graphene
 lib/xkb/common
@@ -43,6 +48,7 @@ bld/wayland
 {% endblock %}
 
 {% block meson_flags %}
+x11=false
 wayland=true
 xwayland=false
 native_backend=false
@@ -57,9 +63,7 @@ sm=false
 introspection=false
 cogl_tests=false
 clutter_tests=false
-core_tests=false
-native_tests=false
-tests=false
+tests=disabled
 kvm_tests=false
 tty_tests=false
 profiler=false
@@ -67,8 +71,11 @@ opengl=false
 udev=false
 {% endblock %}
 
+{% block build_flags %}
+shut_up
+wrap_cc
+{% endblock %}
+
 {% block patch %}
-sed -e 's|ice_dep = .*||' \
-    -e 's|have_x11 = .*|have_x11 = false|' \
-    -i meson.build
+sed -e 's|.*ice_dep.*||' -i meson.build
 {% endblock %}
