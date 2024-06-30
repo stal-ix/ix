@@ -40,6 +40,7 @@ lib/mesa/glesv2/dl
 lib/vulkan/headers
 lib/shim/fake/pkg(pkg_name=ice,pkg_ver=100.500)
 lib/shim/fake/pkg(pkg_name=udev,pkg_ver=100.500)
+lib/shim/fake/pkg(pkg_name=libelogind,pkg_ver=100.500)
 lib/gsettings/desktop/schemas
 {% endblock %}
 
@@ -77,11 +78,4 @@ udev_dir=${out}/share/udev
 {% block build_flags %}
 shut_up
 wrap_cc
-{% endblock %}
-
-{% block patch %}
-find . -type f -name 'meson.build' | while read l; do
-    sed -e 's|.*logind_provider.*||' \
-        -i ${l}
-done
 {% endblock %}
