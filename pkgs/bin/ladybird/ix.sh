@@ -1,27 +1,27 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block git_repo %}
-https://github.com/SerenityOS/serenity
+https://github.com/LadybirdBrowser/ladybird
 {% endblock %}
 
 {% block git_commit %}
-c87e32154aac3a8942a44927f996887c398165fb
+bce7b24cfb86ba1b8a253d999e5bcc9d330cba6b
 {% endblock %}
 
 {% block git_sha %}
-0815fcabd1b77d6c2bbcfeb82b27d6ef23a4138fe0878ffdfdb95fd34566baff
+9440057cdb4d21d483d9db504a0b61cd9a4fdb3db8405d4a80c33f506b1a2180
 {% endblock %}
 
-{% block step_unpack %}
+{% block patch %}
 {{super()}}
 sed -e 's|.*ENABLE_PUBLIC_SUFFIX.*||' \
     -i Userland/Libraries/LibWebView/CMakeLists.txt
-cd Ladybird
 {% endblock %}
 
 {% block bld_libs %}
 lib/c
 lib/c++
+lib/woff2
 lib/execinfo
 lib/qt/6/base
 lib/qt/6/deps
@@ -35,6 +35,8 @@ bld/qt/6/tools/qml
 {% endblock %}
 
 {% block cmake_flags %}
+ENABLE_QT=ON
+CMAKE_INSTALL_DATADIR=share
 ENABLE_COMMONMARK_SPEC_DOWNLOAD=OFF
 ENABLE_PUBLIC_SUFFIX_DOWNLOAD=OFF
 ENABLE_CACERT_DOWNLOAD=OFF
