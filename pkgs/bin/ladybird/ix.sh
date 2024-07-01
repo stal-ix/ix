@@ -19,6 +19,7 @@ sed -e 's|.*ENABLE_PUBLIC_SUFFIX.*||' \
 sed -e 's|.*find.*unoff.*||' \
     -e 's|unofficial::skia::skia||' \
     -i Userland/Libraries/LibWeb/CMakeLists.txt
+sed -e 's|explicit StringBuilder|StringBuilder|' -i AK/StringBuilder.h
 {% endblock %}
 
 {% block bld_libs %}
