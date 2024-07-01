@@ -1,12 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://github.com/openssh/openssh-portable/archive/refs/tags/V_9_7_P1.tar.gz
-sha:f0c22a08eeaa7dfbae3ba553031a8c7d5322e498216d99ad8074a076b28c6f90
-https://raw.githubusercontent.com/Homebrew/patches/1860b0a745f1fe726900974845d1b0dd3c3398d6/openssh/patch-sandbox-darwin.c-apple-sandbox-named-external.diff
-sha:d886b98f99fd27e3157b02b5b57f3fb49f43fd33806195970d4567f12be66e71
-https://raw.githubusercontent.com/Homebrew/patches/d8b2d8c2612fd251ac6de17bf0cc5174c3aab94c/openssh/patch-sshd.c-apple-sandbox-named-external.diff
-sha:3505c58bf1e584c8af92d916fe5f3f1899a6b15cc64a00ddece1dc0874b2f78f
+https://github.com/openssh/openssh-portable/archive/refs/tags/V_9_8_P1.tar.gz
+sha:d8f6802914e4c344dc74599c29915651554bb318102d71cb4063e1f4a0d8286f
 {% endblock %}
 
 {% block bld_libs %}
@@ -28,9 +24,6 @@ bld/texinfo
 __APPLE_SANDBOX_NAMED_EXTERNAL__
 {% endblock %}
 
-{% block patch %}
-cat ${src}/*.diff | patch -p1
-{% endblock %}
 
 {% block configure_flags %}
 --disable-strip
