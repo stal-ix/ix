@@ -16,11 +16,15 @@ bce7b24cfb86ba1b8a253d999e5bcc9d330cba6b
 {{super()}}
 sed -e 's|.*ENABLE_PUBLIC_SUFFIX.*||' \
     -i Userland/Libraries/LibWebView/CMakeLists.txt
+sed -e 's|.*find.*unoff.*||' \
+    -e 's|unofficial::skia::skia||' \
+    -i Userland/Libraries/LibWeb/CMakeLists.txt
 {% endblock %}
 
 {% block bld_libs %}
 lib/c
 lib/c++
+lib/skia
 lib/woff2
 lib/execinfo
 lib/qt/6/base

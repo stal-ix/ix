@@ -23,7 +23,30 @@ done
 
 {% block lib_deps %}
 lib/c
+lib/z
 lib/c++
+lib/icu
+lib/webp
+lib/jpeg
+lib/expat
+lib/opengl
 lib/freetype
 lib/harfbuzz
+{% endblock %}
+
+{% block cpp_defines %}
+__WORDSIZE=64
+{% endblock %}
+
+{% block gn_args %}
+is_official_build=true
+skia_use_system_harfbuzz=true
+skia_use_x11=false
+skia_use_egl=true
+{% endblock %}
+
+{% block install %}
+mkdir -p ${out}/lib ${out}/include
+cp ${tmp}/obj/*.a ${out}/lib/
+cp -R include ${out}/include/skia
 {% endblock %}
