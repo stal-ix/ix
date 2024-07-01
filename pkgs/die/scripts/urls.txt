@@ -239,6 +239,7 @@ https://dl.suckless.org/tools/9base-6.tar.gz
 https://dl.xpdfreader.com/xpdf-4.04.tar.gz
 https://dl.xpdfreader.com/xpdf-4.05.tar.gz
 https://dotat.at/prog/unifdef/unifdef-2.12.tar.xz
+https://download.gnome.org/sources/at-spi2-core/2.52/at-spi2-core-2.52.0.tar.xz
 https://download.gnome.org/sources/atkmm/2.28/atkmm-2.28.2.tar.xz
 https://download.gnome.org/sources/dconf/0.40/dconf-0.40.0.tar.xz
 https://download.gnome.org/sources/evince/44/evince-44.3.tar.xz
@@ -348,6 +349,7 @@ https://downloads.sourceforge.net/project/sbcl/sbcl/2.4.2/sbcl-2.4.2-source.tar.
 https://downloads.sourceforge.net/project/sbcl/sbcl/2.4.3/sbcl-2.4.3-source.tar.bz2
 https://downloads.sourceforge.net/project/sbcl/sbcl/2.4.4/sbcl-2.4.4-source.tar.bz2
 https://downloads.sourceforge.net/project/sbcl/sbcl/2.4.5/sbcl-2.4.5-source.tar.bz2
+https://downloads.sourceforge.net/project/sbcl/sbcl/2.4.6/sbcl-2.4.6-source.tar.bz2
 https://downloads.sourceforge.net/project/scons/scons/4.5.2/SCons-4.5.2.tar.gz
 https://downloads.sourceforge.net/project/sdlgfx/SDL_gfx-2.0.25.tar.gz
 https://downloads.sourceforge.net/project/sox/sox/14.4.2/sox-14.4.2.tar.bz2
@@ -677,6 +679,7 @@ https://github.com/GNOME/epiphany/archive/refs/tags/45.3.tar.gz
 https://github.com/GNOME/epiphany/archive/refs/tags/45.beta.tar.gz
 https://github.com/GNOME/epiphany/archive/refs/tags/46.0.tar.gz
 https://github.com/GNOME/epiphany/archive/refs/tags/46.1.tar.gz
+https://github.com/GNOME/epiphany/archive/refs/tags/46.2.tar.gz
 https://github.com/GNOME/file-roller/archive/refs/tags/43.1.tar.gz
 https://github.com/GNOME/gthumb/archive/refs/tags/3.12.2.tar.gz
 https://github.com/GNOME/gtk-doc/archive/refs/tags/GTK_DOC_1_32.tar.gz
@@ -905,6 +908,7 @@ https://github.com/YaLTeR/niri/archive/refs/tags/v0.1.2.tar.gz
 https://github.com/YaLTeR/niri/archive/refs/tags/v0.1.4.tar.gz
 https://github.com/YaLTeR/niri/archive/refs/tags/v0.1.5.tar.gz
 https://github.com/YaLTeR/niri/archive/refs/tags/v0.1.6.tar.gz
+https://github.com/YaLTeR/niri/archive/refs/tags/v0.1.7.tar.gz
 https://github.com/Z3Prover/z3/archive/refs/tags/z3-4.12.2.tar.gz
 https://github.com/Z3Prover/z3/archive/refs/tags/z3-4.12.3.tar.gz
 https://github.com/Z3Prover/z3/archive/refs/tags/z3-4.12.4.tar.gz
@@ -945,6 +949,7 @@ https://github.com/anrieff/libcpuid/archive/refs/tags/v0.6.3.tar.gz
 https://github.com/anrieff/libcpuid/archive/refs/tags/v0.6.4.tar.gz
 https://github.com/anrieff/libcpuid/archive/refs/tags/v0.6.5.tar.gz
 https://github.com/antonmedv/llama/archive/refs/tags/v1.4.0.tar.gz
+https://github.com/antonmedv/walk/archive/refs/tags/v1.10.0.tar.gz
 https://github.com/antonmedv/walk/archive/refs/tags/v1.6.2.tar.gz
 https://github.com/antonmedv/walk/archive/refs/tags/v1.7.0.tar.gz
 https://github.com/apache/serf/archive/refs/tags/1.3.9.tar.gz
@@ -961,6 +966,7 @@ https://github.com/apernet/hysteria/archive/refs/tags/app/v2.2.3.tar.gz
 https://github.com/apernet/hysteria/archive/refs/tags/app/v2.4.0.tar.gz
 https://github.com/apernet/hysteria/archive/refs/tags/app/v2.4.2.tar.gz
 https://github.com/apernet/hysteria/archive/refs/tags/app/v2.4.5.tar.gz
+https://github.com/apernet/hysteria/archive/refs/tags/app/v2.5.0.tar.gz
 https://github.com/apple-oss-distributions/mDNSResponder/archive/refs/tags/mDNSResponder-2200.80.16.tar.gz
 https://github.com/apple-oss-distributions/patch_cmds/archive/refs/tags/patch_cmds-61.tar.gz
 https://github.com/apple/swift-corelibs-libdispatch/archive/refs/tags/swift-5.10-RELEASE.tar.gz
@@ -1026,8 +1032,10 @@ https://github.com/c-util/c-utf8/archive/refs/tags/v1.1.0.tar.gz
 https://github.com/capnproto/capnproto/archive/refs/tags/v1.0.2.tar.gz
 https://github.com/capstone-engine/capstone/archive/refs/tags/5.0-rc2.tar.gz
 https://github.com/capstone-engine/capstone/archive/refs/tags/5.0.1.tar.gz
+https://github.com/carapace-sh/carapace-bin/archive/refs/tags/v1.0.4.tar.gz
 https://github.com/catboost/catboost/archive/refs/tags/v1.0.6.tar.gz
 https://github.com/cboxdoerfer/fsearch/archive/refs/tags/0.2.3.tar.gz
+https://github.com/ccache/ccache/archive/refs/tags/v4.10.1.tar.gz
 https://github.com/ccache/ccache/archive/refs/tags/v4.10.tar.gz
 https://github.com/ccache/ccache/releases/download/v4.8.3/ccache-4.8.3.tar.xz
 https://github.com/ccache/ccache/releases/download/v4.9.1/ccache-4.9.1.tar.xz
@@ -1136,6 +1144,7 @@ https://github.com/evanw/esbuild/archive/refs/tags/v0.18.14.tar.gz
 https://github.com/evanw/esbuild/archive/refs/tags/v0.19.6.tar.gz
 https://github.com/evanw/esbuild/archive/refs/tags/v0.21.0.tar.gz
 https://github.com/evanw/esbuild/archive/refs/tags/v0.21.3.tar.gz
+https://github.com/evanw/esbuild/archive/refs/tags/v0.22.0.tar.gz
 https://github.com/exfatprogs/exfatprogs/archive/refs/tags/1.2.2.tar.gz
 https://github.com/exfatprogs/exfatprogs/archive/refs/tags/1.2.4.tar.gz
 https://github.com/exfatprogs/exfatprogs/releases/download/1.2.0/exfatprogs-1.2.0.tar.xz
@@ -1167,6 +1176,7 @@ https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.13.2.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.14.0.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.15.0.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.16.0.tar.gz
+https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.17.0.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.2.0.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.2.2.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.2.3.tar.gz
@@ -1335,6 +1345,7 @@ https://github.com/harfbuzz/harfbuzz/archive/refs/tags/8.3.0.tar.gz
 https://github.com/harfbuzz/harfbuzz/archive/refs/tags/8.3.1.tar.gz
 https://github.com/harfbuzz/harfbuzz/archive/refs/tags/8.4.0.tar.gz
 https://github.com/harfbuzz/harfbuzz/archive/refs/tags/8.5.0.tar.gz
+https://github.com/harfbuzz/harfbuzz/archive/refs/tags/9.0.0.tar.gz
 https://github.com/hboetes/mg/archive/refs/tags/20221112.tar.gz
 https://github.com/hluk/CopyQ/archive/refs/tags/v7.0.0.tar.gz
 https://github.com/hluk/CopyQ/archive/refs/tags/v7.1.0.tar.gz
@@ -1560,6 +1571,7 @@ https://github.com/libjpeg-turbo/libjpeg-turbo/archive/refs/tags/3.0.3.tar.gz
 https://github.com/libjxl/libjxl/archive/refs/tags/v0.10.0.tar.gz
 https://github.com/libjxl/libjxl/archive/refs/tags/v0.10.1.tar.gz
 https://github.com/libjxl/libjxl/archive/refs/tags/v0.10.2.tar.gz
+https://github.com/libjxl/libjxl/archive/refs/tags/v0.10.3.tar.gz
 https://github.com/libjxl/libjxl/archive/refs/tags/v0.8.2.tar.gz
 https://github.com/libjxl/libjxl/archive/refs/tags/v0.9.0.tar.gz
 https://github.com/libjxl/libjxl/archive/refs/tags/v0.9.1.tar.gz
@@ -1627,6 +1639,7 @@ https://github.com/linuxwacom/libwacom/releases/download/libwacom-2.9.0/libwacom
 https://github.com/lite-xl/lite-xl/archive/refs/tags/v2.1.1.tar.gz
 https://github.com/lite-xl/lite-xl/archive/refs/tags/v2.1.3.tar.gz
 https://github.com/lite-xl/lite-xl/archive/refs/tags/v2.1.4.tar.gz
+https://github.com/lite-xl/lite-xl/archive/refs/tags/v2.1.5.tar.gz
 https://github.com/litespeedtech/ls-qpack/archive/refs/tags/v2.2.3.tar.gz
 https://github.com/lloyd/yajl/archive/refs/tags/2.1.0.tar.gz
 https://github.com/llvm/llvm-project/archive/refs/tags/llvmorg-12.0.1.tar.gz
@@ -1835,6 +1848,7 @@ https://github.com/openssh/openssh-portable/archive/refs/tags/V_9_4_P1.tar.gz
 https://github.com/openssh/openssh-portable/archive/refs/tags/V_9_5_P1.tar.gz
 https://github.com/openssh/openssh-portable/archive/refs/tags/V_9_6_P1.tar.gz
 https://github.com/openssh/openssh-portable/archive/refs/tags/V_9_7_P1.tar.gz
+https://github.com/openssh/openssh-portable/archive/refs/tags/V_9_8_P1.tar.gz
 https://github.com/opsengine/cpulimit/archive/refs/tags/v0.2.tar.gz
 https://github.com/p-gen/smenu/archive/refs/tags/v1.3.0.tar.gz
 https://github.com/p-gen/smenu/archive/refs/tags/v1.4.0.tar.gz
@@ -2197,6 +2211,7 @@ https://github.com/telegramdesktop/tdesktop/releases/download/v5.0.6/tdesktop-5.
 https://github.com/telegramdesktop/tdesktop/releases/download/v5.1.1/tdesktop-5.1.1-full.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v5.1.4/tdesktop-5.1.4-full.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v5.1.8/tdesktop-5.1.8-full.tar.gz
+https://github.com/telegramdesktop/tdesktop/releases/download/v5.2.0/tdesktop-5.2.0-full.tar.gz
 https://github.com/tenox7/ttyplot/archive/refs/tags/1.6.1.tar.gz
 https://github.com/tesseract-ocr/tesseract/archive/refs/tags/5.2.0.tar.gz
 https://github.com/tetratelabs/wazero/archive/refs/tags/v1.5.0.tar.gz
@@ -2458,12 +2473,14 @@ https://gitlab.freedesktop.org/wlroots/wlroots/-/archive/0.17.0/wlroots-0.17.0.t
 https://gitlab.freedesktop.org/wlroots/wlroots/-/archive/0.17.1/wlroots-0.17.1.tar.bz2
 https://gitlab.freedesktop.org/wlroots/wlroots/-/archive/0.17.2/wlroots-0.17.2.tar.bz2
 https://gitlab.freedesktop.org/wlroots/wlroots/-/archive/0.17.3/wlroots-0.17.3.tar.bz2
+https://gitlab.freedesktop.org/wlroots/wlroots/-/archive/0.17.4/wlroots-0.17.4.tar.bz2
 https://gitlab.freedesktop.org/xdg/desktop-file-utils/-/archive/0.27/desktop-file-utils-0.27.tar.bz2
 https://gitlab.freedesktop.org/xkeyboard-config/xkeyboard-config/-/archive/xkeyboard-config-2.39/xkeyboard-config-xkeyboard-config-2.39.tar.bz2
 https://gitlab.freedesktop.org/xkeyboard-config/xkeyboard-config/-/archive/xkeyboard-config-2.40/xkeyboard-config-xkeyboard-config-2.40.tar.bz2
 https://gitlab.freedesktop.org/xkeyboard-config/xkeyboard-config/-/archive/xkeyboard-config-2.41/xkeyboard-config-xkeyboard-config-2.41.tar.bz2
 https://gitlab.freedesktop.org/xorg/lib/libpciaccess/-/archive/libpciaccess-0.18.1/libpciaccess-libpciaccess-0.18.1.tar.bz2
 https://gitlab.freedesktop.org/xorg/lib/libpciaccess/-/archive/libpciaccess-0.18/libpciaccess-libpciaccess-0.18.tar.bz2
+https://gitlab.freedesktop.org/xorg/lib/libxcvt/-/archive/libxcvt-0.1.2/libxcvt-libxcvt-0.1.2.tar.bz2
 https://gitlab.gnome.org/GNOME/Incubator/papers/-/archive/46.1/papers-46.1.tar.bz2
 https://gitlab.gnome.org/GNOME/atk/-/archive/ATK_2_36_0/atk-ATK_2_36_0.tar.bz2
 https://gitlab.gnome.org/GNOME/console/-/archive/44.4/console-44.4.tar.bz2

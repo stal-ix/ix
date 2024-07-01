@@ -1,13 +1,15 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://gitlab.gnome.org/GNOME/atk/-/archive/ATK_2_36_0/atk-ATK_2_36_0.tar.bz2
-sha:395894d43f0628497f919dff1b769f5482af99a8991127277e365f9374f46d57
+https://download.gnome.org/sources/at-spi2-core/2.52/at-spi2-core-2.52.0.tar.xz
+sha:0ac3fc8320c8d01fa147c272ba7fa03806389c6b03d3c406d0823e30e35ff5ab
 {% endblock %}
 
 {% block lib_deps %}
 lib/c
 lib/glib
+lib/dbus
+lib/xml/2
 {% endblock %}
 
 {% block bld_tool %}
@@ -15,7 +17,8 @@ bld/glib
 {% endblock %}
 
 {% block meson_flags %}
-introspection=false
+atk_only=true
+introspection=disabled
 {% endblock %}
 
 {% block env %}
