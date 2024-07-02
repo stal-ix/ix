@@ -326,6 +326,7 @@ https://downloads.sourceforge.net/project/gtkspell/3.0.10/gtkspell3-3.0.10.tar.x
 https://downloads.sourceforge.net/project/infozip/UnZip%206.x%20%28latest%29/UnZip%206.0/unzip60.tar.gz
 https://downloads.sourceforge.net/project/lame/lame/3.100/lame-3.100.tar.gz
 https://downloads.sourceforge.net/project/libb64/libb64/libb64/libb64-1.2.src.zip
+https://downloads.sourceforge.net/project/libpng-apng/libpng16/1.6.43/libpng-1.6.43-apng.patch.gz
 https://downloads.sourceforge.net/project/libwpd/librevenge/librevenge-0.0.4/librevenge-0.0.4.tar.xz
 https://downloads.sourceforge.net/project/libwpd/libwpd/libwpd-0.10.3/libwpd-0.10.3.tar.xz
 https://downloads.sourceforge.net/project/libwpg/libwpg/libwpg-0.3.3/libwpg-0.3.3.tar.xz
@@ -2265,6 +2266,7 @@ https://github.com/uclouvain/openjpeg/archive/refs/tags/v2.5.1.tar.gz
 https://github.com/umputun/reproxy/archive/refs/tags/v1.1.1.tar.gz
 https://github.com/umputun/reproxy/archive/refs/tags/v1.2.2.tar.gz
 https://github.com/unicode-org/icu/archive/refs/tags/release-70-1.tar.gz
+https://github.com/unicode-org/icu/archive/refs/tags/release-75-1.tar.gz
 https://github.com/upx/upx/releases/download/v4.1.0/upx-4.1.0-src.tar.xz
 https://github.com/upx/upx/releases/download/v4.2.0/upx-4.2.0-src.tar.xz
 https://github.com/upx/upx/releases/download/v4.2.1/upx-4.2.1-src.tar.xz
@@ -2740,6 +2742,7 @@ https://poppler.freedesktop.org/poppler-24.01.0.tar.xz
 https://poppler.freedesktop.org/poppler-24.02.0.tar.xz
 https://poppler.freedesktop.org/poppler-24.03.0.tar.xz
 https://poppler.freedesktop.org/poppler-24.06.1.tar.xz
+https://poppler.freedesktop.org/poppler-24.07.0.tar.xz
 https://pwmt.org/projects/zathura-djvu/download/zathura-djvu-0.2.9.tar.xz
 https://pwmt.org/projects/zathura-pdf-poppler/download/zathura-pdf-poppler-0.3.1.tar.xz
 https://raw.githubusercontent.com/AppImageCommunity/libappimage/9c1fae809dedbb3015e9cd5b46e2b5aab06df36e/src/patches/squashfuse.patch
