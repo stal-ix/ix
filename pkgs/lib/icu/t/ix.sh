@@ -3,8 +3,6 @@
 {% block fetch %}
 https://github.com/unicode-org/icu/archive/refs/tags/release-75-1.tar.gz
 sha:925e6b4b8cf8856e0ac214f6f34e30dee63b7bb7a50460ab4603950eff48f89e
-#https://github.com/unicode-org/icu/archive/refs/tags/release-70-1.tar.gz
-#sha:f30d670bdc03ba999638a2d2511952ab94adf204d0e14898666f2e0cacb7fef1
 {% endblock %}
 
 {% block unpack %}
@@ -21,11 +19,16 @@ lib/c++
 bld/python
 {% endblock %}
 
-{% block configure_flags %}
---with-data-packaging=archive
-{% endblock %}
-
 {% block make_flags %}
 GEN_DEPS.c=true
 GEN_DEPS.cc=true
+{% endblock %}
+
+{% block install %}
+{{super()}}
+{% if lib %}
+find ${out} -type f -name '*.pc' | while read l; do
+    sed -e 's|^#.*||' -i ${l}
+done
+{% endif %}
 {% endblock %}

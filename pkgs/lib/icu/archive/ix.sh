@@ -1,7 +1,7 @@
-{% extends '//lib/icu/t/ix.sh' %}
+{% extends 't/ix.sh' %}
 
 {% block use_data %}
-lib/icu/data
+lib/icu/archive/data
 {% endblock %}
 
 {% block cpp_defines %}
