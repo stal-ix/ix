@@ -193,6 +193,7 @@ https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.9.3.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.9.tar.xz
 https://cdn.openbsd.org/pub/OpenBSD/OpenNTPD/openntpd-6.8p1.tar.gz
 https://cmocka.org/files/1.1/cmocka-1.1.7.tar.xz
+https://code.videolan.org/videolan/libplacebo/-/archive/v7.349.0/libplacebo-v7.349.0.tar.bz2
 https://codeberg.org/dnkl/fcft/archive/2.5.0.tar.gz
 https://codeberg.org/dnkl/fcft/archive/3.1.6.tar.gz
 https://codeberg.org/dnkl/fcft/archive/3.1.7.tar.gz
