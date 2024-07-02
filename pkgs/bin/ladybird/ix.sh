@@ -25,6 +25,7 @@ sed -e 's|explicit StringBuilder|StringBuilder|' -i AK/StringBuilder.h
 {% block bld_libs %}
 lib/c
 lib/c++
+lib/png
 lib/skia
 lib/woff2
 lib/execinfo

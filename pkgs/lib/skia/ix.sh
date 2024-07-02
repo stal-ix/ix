@@ -46,7 +46,11 @@ skia_use_egl=true
 {% endblock %}
 
 {% block install %}
-mkdir -p ${out}/lib ${out}/include
+mkdir -p ${out}/lib ${out}/include/skia
 cp ${tmp}/obj/*.a ${out}/lib/
-cp -R include ${out}/include/skia
+cp -R include ${out}/include/skia/
+{% endblock %}
+
+{% block env %}
+export CPPFLAGS="-I${out}/include/skia -I${out}/include/skia/include \${CPPFLAGS}"
 {% endblock %}
