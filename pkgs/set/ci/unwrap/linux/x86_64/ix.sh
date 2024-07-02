@@ -37,6 +37,7 @@
 #}
 
 {% block run_deps %}
+bin/ladybird
 bin/cvt
 bin/modetest
 bin/sh/fmt

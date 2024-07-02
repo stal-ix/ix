@@ -48,7 +48,9 @@ skia_use_egl=true
 {% block install %}
 mkdir -p ${out}/lib ${out}/include/skia
 cp ${tmp}/obj/*.a ${out}/lib/
-cp -R include ${out}/include/skia/
+find include modules -name '*.h' | while read l; do
+    install -v -D ${l} ${out}/include/skia/${l}
+done
 {% endblock %}
 
 {% block env %}
