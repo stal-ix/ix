@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/FreeRDP/FreeRDP/archive/refs/tags/3.5.1.tar.gz
-sha:bb40028c90c156799bc26a8b5837754a62805ee371e988efc61903c7263843b1
+https://github.com/FreeRDP/FreeRDP/archive/refs/tags/3.6.2.tar.gz
+sha:e16260946a1d3289339bf158f335d9dddd9af43b96050b6b6fba287310df9924
 {% endblock %}
 
 {% block bld_libs %}
@@ -48,5 +48,5 @@ BUILTIN_CHANNELS=ON
 {% endblock %}
 
 {% block patch %}
-sed -e 's|.*add_sub.*man.*||' -i client/SDL/CMakeLists.txt
+sed -e 's|.*add_sub.*man.*||' -i client/SDL/SDL2/CMakeLists.txt
 {% endblock %}
