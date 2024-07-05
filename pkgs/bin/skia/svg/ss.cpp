@@ -8,4 +8,21 @@
 #include "tools/fonts/FontToolUtils.h"
 
 int main(int argc, char** argv) {
+    auto stream = SkStream::MakeFromFile(argv[1]);
+
+    if (!stream) {
+        abort();
+    }
+
+    auto predecode = skresources::ImageDecodeStrategy::kPreDecode;
+
+    auto dom = SkSVGDOM::Builder()
+        .setTextShapingFactory(SkShapers::BestAvailable())
+        .make(*stream);
+
+    if (!dom) {
+        abort();
+    }
+
+    dom->setContainerSize(SkSize::Make(256, 256));
 }
