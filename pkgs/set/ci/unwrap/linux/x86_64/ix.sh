@@ -37,6 +37,7 @@
 #}
 
 {% block run_deps %}
+bin/skia/svg
 bin/ladybird
 bin/cvt
 bin/modetest
