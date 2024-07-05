@@ -30,6 +30,8 @@ int main(int argc, char** argv) {
         abort();
     }
 
+    canvas->scale(16, 16);
+
     dom->render(canvas.get());
 
     SkPixmap pixmap;
