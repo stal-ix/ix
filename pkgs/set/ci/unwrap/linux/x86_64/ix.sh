@@ -409,8 +409,6 @@ bin/waybar
 bin/mandoc
 bin/sud
 bin/stdman
-bin/graphviz/cmake
-bin/graphviz/autohell
 bin/graphviz
 bin/mawk
 bin/scons
