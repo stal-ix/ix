@@ -1,13 +1,5 @@
-{% extends 't/lib/ix.sh' %}
+{% extends '//die/hub.sh' %}
 
-{% block install %}
-{{super()}}
-
-cd ${out}
-
-rm -r share
-
-find . -type f -name '*.pc' | while read l; do
-    sed -e 's|^#.*||' -i ${l}
-done
+{% block lib_deps %}
+lib/icu/{{libicu_ver or 'archive'}}
 {% endblock %}

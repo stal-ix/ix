@@ -37,6 +37,7 @@
 #}
 
 {% block run_deps %}
+bin/skia/svg
 bin/ladybird
 bin/cvt
 bin/modetest
@@ -253,7 +254,7 @@ bin/dnsmasq
 bin/go/awk
 bin/sniffer
 bin/webp/gui
-bin/yt
+#bin/yt
 bin/links/sdl
 bin/icc
 bin/xdg/desktop/portal/ix
@@ -409,8 +410,6 @@ bin/waybar
 bin/mandoc
 bin/sud
 bin/stdman
-bin/graphviz/cmake
-bin/graphviz/autohell
 bin/graphviz
 bin/mawk
 bin/scons

@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/zlib-ng/zlib-ng/archive/refs/tags/2.1.7.tar.gz
-sha:59e68f67cbb16999842daeb517cdd86fc25b177b4affd335cd72b76ddc2a46d8
+https://github.com/zlib-ng/zlib-ng/archive/refs/tags/2.2.1.tar.gz
+sha:ec6a76169d4214e2e8b737e0850ba4acb806c69eeace6240ed4481b9f5c57cdf
 {% endblock %}
 
 {% block lib_deps %}

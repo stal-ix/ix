@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://gitlab.gnome.org/GNOME/libxslt/-/archive/v1.1.41/libxslt-v1.1.41.tar.bz2
-sha:addd5e812fd9697d4ef00adc44b7bae54249d84663b8519a0311a2ef5e09ae06
+https://gitlab.gnome.org/GNOME/libxslt/-/archive/v1.1.42/libxslt-v1.1.42.tar.bz2
+sha:1df3134451708a0098850f9b9e8d86734af7a08f5bea5890f7a3e02b9ccd59d9
 {% endblock %}
 
 {% block lib_deps %}

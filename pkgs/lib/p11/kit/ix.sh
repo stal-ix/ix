@@ -1,8 +1,8 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://github.com/p11-glue/p11-kit/archive/refs/tags/0.24.0.tar.gz
-sha:284d209e045ebc7e30ccb479c7b559edfcb5433d665b497386dd35291826e39c
+https://github.com/p11-glue/p11-kit/releases/download/0.25.4/p11-kit-0.25.4.tar.xz
+sha:4c4153f81167444ff6d5e7ca118472ae607bd25c0cf6346fcc5dcc30451e97ce
 {% endblock %}
 
 {% block lib_deps %}
@@ -12,4 +12,8 @@ lib/glib
 
 {% block c_rename_symbol %}
 getprogname
+{% endblock %}
+
+{% block meson_flags %}
+test=false
 {% endblock %}

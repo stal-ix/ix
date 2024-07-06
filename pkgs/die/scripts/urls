@@ -14,6 +14,7 @@ find ${IX_PKGS_ROOT} -name '*.sh' | xargs cat | grep "http[s]*://"
 ) | grep -v '#'  \
   | grep -v ' '  \
   | grep -v '{{' \
+  | grep -v 'skia.google' \
   | python3 ./urls_flt.py \
   > _
 mv _ urls.txt

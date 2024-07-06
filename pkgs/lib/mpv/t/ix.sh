@@ -13,7 +13,7 @@ lib/sndio
 lib/ffmpeg
 lib/archive
 lib/uchardet
-lib/placebo/6
+lib/placebo/7
 {% endblock %}
 
 {% block bld_tool %}

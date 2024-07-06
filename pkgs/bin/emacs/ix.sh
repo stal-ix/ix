@@ -36,4 +36,5 @@ bld/texinfo
 {% block c_rename_symbol %}
 hash_lookup
 hash_string
+insert_string
 {% endblock %}
