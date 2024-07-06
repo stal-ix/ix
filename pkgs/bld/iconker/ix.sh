@@ -2,5 +2,5 @@
 
 {% block run_deps %}
 bld/iconker/tool
-bld/iconker/resvg
+bld/iconker/skia
 {% endblock %}
