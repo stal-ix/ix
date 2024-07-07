@@ -18,10 +18,8 @@ int main(int argc, char** argv) {
         abort();
     }
 
-    auto w = 256;
-    auto h = 256;
-
-    dom->setContainerSize(SkSize::Make(w, h));
+    auto w = 192;
+    auto h = 192;
 
     auto pixels = new SkPMColor[w * h];
     auto canvas = SkCanvas::MakeRasterDirectN32(w, h, pixels, w * 4);
@@ -30,7 +28,8 @@ int main(int argc, char** argv) {
         abort();
     }
 
-    canvas->scale(16, 16);
+    auto cs = dom->containerSize();
+    canvas->scale((double)w / cs.width(), (double)h / cs.height());
 
     dom->render(canvas.get());
 

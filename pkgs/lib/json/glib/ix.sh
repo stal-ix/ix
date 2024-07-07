@@ -1,8 +1,8 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://github.com/GNOME/json-glib/archive/refs/tags/1.8.0.tar.gz
-sha:97bc058fad49ebf5195ec539240370454ef6589d2b97bf626d7a9e2353d25e3f
+https://github.com/GNOME/json-glib/archive/refs/tags/1.9.2.tar.gz
+sha:277c3b7fc98712e30115ee3a60c3eac8acc34570cb98d3ff78de85ed804e0c80
 {% endblock %}
 
 {% block lib_deps %}
