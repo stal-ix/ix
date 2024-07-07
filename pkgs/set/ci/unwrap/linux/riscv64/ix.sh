@@ -1,7 +1,6 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
-bin/gdb/reloc
 bin/iwd
 bin/gdb
 bin/git
