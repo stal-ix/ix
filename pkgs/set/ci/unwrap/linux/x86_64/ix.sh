@@ -821,7 +821,7 @@ bin/fzy
 bin/wf/recorder
 bin/mle
 bin/sfm
-bin/imhex
+#bin/imhex
 bin/stunnel
 bin/emptty
 bin/fzf
