@@ -39,6 +39,8 @@ __WORDSIZE=64
 
 {% block gn_args %}
 is_official_build=true
+skia_use_piex=false
+skia_use_perfetto=false
 skia_use_system_harfbuzz=true
 skia_use_x11=false
 {% endblock %}

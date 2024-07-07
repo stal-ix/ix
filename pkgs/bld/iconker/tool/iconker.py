@@ -37,4 +37,4 @@ for svg, name in it_svg(fr):
         if os.path.exists(out):
             print(f'skip {out}', file=sys.stderr)
         else:
-            subprocess.check_call(['convert', f(), '-resize', f'{w}x{w}', out])
+            subprocess.check_call(['magick', f(), '-resize', f'{w}x{w}', out])
