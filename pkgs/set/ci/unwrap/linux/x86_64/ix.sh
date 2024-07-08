@@ -268,7 +268,6 @@ bin/jpegoptim
 bin/openttd
 bin/pngquant
 bin/glmark2
-bin/gdb/reloc
 bin/wayland/tracer
 bin/stp
 bin/cpuid

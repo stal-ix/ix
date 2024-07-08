@@ -12,7 +12,7 @@ to = sys.argv[2]
 def it_svg(pp):
     for a, b, c in os.walk(fr):
         for x in c:
-            if '.svg' not in x:
+            if not x.endswith('.svg'):
                 continue
 
             p = os.path.join(a, x)
@@ -37,4 +37,5 @@ for svg, name in it_svg(fr):
         if os.path.exists(out):
             print(f'skip {out}', file=sys.stderr)
         else:
-            subprocess.check_call(['convert', f(), '-resize', f'{w}x{w}', out])
+            print(f'render {out}', file=sys.stderr)
+            subprocess.check_call(['magick', f(), '-resize', f'{w}x{w}', out])
