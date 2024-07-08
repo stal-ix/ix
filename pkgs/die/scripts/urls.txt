@@ -453,6 +453,7 @@ https://ftp.gnu.org/gnu/gdb/gdb-12.1.tar.xz
 https://ftp.gnu.org/gnu/gdb/gdb-13.2.tar.xz
 https://ftp.gnu.org/gnu/gdb/gdb-14.1.tar.xz
 https://ftp.gnu.org/gnu/gdb/gdb-14.2.tar.xz
+https://ftp.gnu.org/gnu/gdb/gdb-15.1.tar.xz
 https://ftp.gnu.org/gnu/gdbm/gdbm-1.19.tar.gz
 https://ftp.gnu.org/gnu/gdbm/gdbm-1.24.tar.gz
 https://ftp.gnu.org/gnu/gmp/gmp-6.3.0.tar.xz
@@ -676,6 +677,7 @@ https://github.com/FreeRDP/FreeRDP/archive/refs/tags/3.4.0.tar.gz
 https://github.com/FreeRDP/FreeRDP/archive/refs/tags/3.5.0.tar.gz
 https://github.com/FreeRDP/FreeRDP/archive/refs/tags/3.5.1.tar.gz
 https://github.com/FreeRDP/FreeRDP/archive/refs/tags/3.6.2.tar.gz
+https://github.com/FreeRDP/FreeRDP/archive/refs/tags/3.6.3.tar.gz
 https://github.com/GNOME/adwaita-icon-theme/archive/refs/tags/44.0.tar.gz
 https://github.com/GNOME/epiphany/archive/refs/tags/45.0.tar.gz
 https://github.com/GNOME/epiphany/archive/refs/tags/45.1.tar.gz
@@ -854,6 +856,7 @@ https://github.com/NixOS/nix/archive/refs/tags/2.22.1.tar.gz
 https://github.com/NixOS/nix/archive/refs/tags/2.23.0.tar.gz
 https://github.com/NixOS/nix/archive/refs/tags/2.23.1.tar.gz
 https://github.com/NixOS/nix/archive/refs/tags/2.23.2.tar.gz
+https://github.com/NixOS/nix/archive/refs/tags/2.23.3.tar.gz
 https://github.com/NixOS/patchelf/archive/refs/tags/0.18.0.tar.gz
 https://github.com/Novum/vkQuake/archive/refs/tags/1.30.1.tar.gz
 https://github.com/Old-Man-Programmer/tree/archive/refs/tags/2.1.1.tar.gz
@@ -2025,8 +2028,10 @@ https://github.com/quictls/openssl/archive/refs/tags/openssl-3.1.2-quic1.tar.gz
 https://github.com/quictls/openssl/archive/refs/tags/openssl-3.1.4-quic1.tar.gz
 https://github.com/quictls/openssl/archive/refs/tags/openssl-3.1.5-quic1.tar.gz
 https://github.com/randombit/botan/archive/refs/tags/2.19.3.tar.gz
+https://github.com/randombit/botan/archive/refs/tags/2.19.5.tar.gz
 https://github.com/randombit/botan/archive/refs/tags/3.3.0.tar.gz
 https://github.com/randombit/botan/archive/refs/tags/3.4.0.tar.gz
+https://github.com/randombit/botan/archive/refs/tags/3.5.0.tar.gz
 https://github.com/raphamorim/rio/archive/refs/tags/v0.0.34.tar.gz
 https://github.com/raygard/wak/archive/dca8c09e9e20581330dd930b0219b07f431f2388.tar.gz
 https://github.com/redis/hiredis/archive/refs/tags/v1.2.0.tar.gz
