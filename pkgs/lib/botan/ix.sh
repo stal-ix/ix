@@ -1,8 +1,8 @@
 {% extends '//die/c/make.sh' %}
 
 {% block fetch %}
-https://github.com/randombit/botan/archive/refs/tags/2.19.3.tar.gz
-sha:8f568bf74c2e476d92ac8a1cfc2ba8407ec038fe9458bd0a11e7da827a9b8199
+https://github.com/randombit/botan/archive/refs/tags/2.19.5.tar.gz
+sha:8d4a3826787f9febbdc225172ad2d39d7d3960346c5721fe46cb27d480d7e1de
 {% endblock %}
 
 {% block bld_tool %}
