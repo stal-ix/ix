@@ -453,6 +453,7 @@ https://ftp.gnu.org/gnu/gdb/gdb-12.1.tar.xz
 https://ftp.gnu.org/gnu/gdb/gdb-13.2.tar.xz
 https://ftp.gnu.org/gnu/gdb/gdb-14.1.tar.xz
 https://ftp.gnu.org/gnu/gdb/gdb-14.2.tar.xz
+https://ftp.gnu.org/gnu/gdb/gdb-15.1.tar.xz
 https://ftp.gnu.org/gnu/gdbm/gdbm-1.19.tar.gz
 https://ftp.gnu.org/gnu/gdbm/gdbm-1.24.tar.gz
 https://ftp.gnu.org/gnu/gmp/gmp-6.3.0.tar.xz
@@ -676,6 +677,7 @@ https://github.com/FreeRDP/FreeRDP/archive/refs/tags/3.4.0.tar.gz
 https://github.com/FreeRDP/FreeRDP/archive/refs/tags/3.5.0.tar.gz
 https://github.com/FreeRDP/FreeRDP/archive/refs/tags/3.5.1.tar.gz
 https://github.com/FreeRDP/FreeRDP/archive/refs/tags/3.6.2.tar.gz
+https://github.com/FreeRDP/FreeRDP/archive/refs/tags/3.6.3.tar.gz
 https://github.com/GNOME/adwaita-icon-theme/archive/refs/tags/44.0.tar.gz
 https://github.com/GNOME/epiphany/archive/refs/tags/45.0.tar.gz
 https://github.com/GNOME/epiphany/archive/refs/tags/45.1.tar.gz
