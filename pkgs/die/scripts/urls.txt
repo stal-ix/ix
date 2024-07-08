@@ -50,6 +50,7 @@ http://gondor.apana.org.au/~herbert/dash/files/dash-0.5.12.tar.gz
 http://haddonthethird.net/m4/m4-2.tar.bz2
 http://hpc.sourceforge.net/f2c.tar
 http://jfs.sourceforge.net/project/pub/jfsutils-1.1.15.tar.gz
+http://libspectre.freedesktop.org/releases/libspectre-0.2.12.tar.gz
 http://links.twibright.com/download/links-2.29.tar.bz2
 http://mandoc.bsd.lv/snapshots/mandoc-1.14.6.tar.gz
 http://miniupnp.free.fr/files/download.php?file=miniupnpc-2.2.3.tar.gz
@@ -1849,6 +1850,7 @@ https://github.com/numactl/numactl/archive/refs/tags/v2.0.17.tar.gz
 https://github.com/numactl/numactl/archive/refs/tags/v2.0.18.tar.gz
 https://github.com/nwg-piotr/nwg-dock/archive/refs/tags/v0.3.1.tar.gz
 https://github.com/nwg-piotr/nwg-drawer/archive/refs/tags/v0.3.7.tar.gz
+https://github.com/nwg-piotr/nwg-drawer/archive/refs/tags/v0.4.9.tar.gz
 https://github.com/nwg-piotr/nwg-launchers/archive/refs/tags/v0.6.3.tar.gz
 https://github.com/nwg-piotr/nwg-look/archive/refs/tags/v0.2.4.tar.gz
 https://github.com/nwg-piotr/nwg-menu/archive/refs/tags/v0.1.1.tar.gz
