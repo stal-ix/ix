@@ -569,6 +569,7 @@ https://git.pwmt.org/pwmt/girara/-/archive/0.4.1/girara-0.4.1.tar.bz2
 https://git.pwmt.org/pwmt/girara/-/archive/0.4.2/girara-0.4.2.tar.bz2
 https://git.pwmt.org/pwmt/girara/-/archive/0.4.3/girara-0.4.3.tar.bz2
 https://git.pwmt.org/pwmt/zathura-cb/-/archive/0.1.10/zathura-cb-0.1.10.tar.bz2
+https://git.pwmt.org/pwmt/zathura-ps/-/archive/0.2.7/zathura-ps-0.2.7.tar.bz2
 https://git.pwmt.org/pwmt/zathura/-/archive/0.5.2/zathura-0.5.2.tar.bz2
 https://git.pwmt.org/pwmt/zathura/-/archive/0.5.3/zathura-0.5.3.tar.bz2
 https://git.pwmt.org/pwmt/zathura/-/archive/0.5.4/zathura-0.5.4.tar.bz2
