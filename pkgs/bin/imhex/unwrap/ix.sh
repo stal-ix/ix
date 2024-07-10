@@ -34,7 +34,6 @@ lib/shim/fake(lib_name=glfw)
 {% endblock %}
 
 {% block bld_tool %}
-bld/dlfcn
 bld/python
 {% endblock %}
 

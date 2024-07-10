@@ -16,6 +16,7 @@ lib/xml/2
 lib/gtk/3
 lib/handy
 lib/secret
+lib/spectre
 lib/archive
 lib/poppler
 lib/djvulibre
@@ -30,6 +31,7 @@ bld/dlfcn
 {% endblock %}
 
 {% block meson_flags %}
+ps=enabled
 gtk_doc=false
 user_doc=false
 nautilus=false
@@ -60,7 +62,7 @@ cd ${tmp}
 
 func=register_evince_backend
 
-for x in pdf comics djvu tiff; do
+for x in ps pdf comics djvu tiff; do
     echo "${x}document ${func} ${func}_${x}"
 
     for l in obj/backend/lib${x}document.*.p/*.o; do

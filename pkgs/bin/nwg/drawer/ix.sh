@@ -1,11 +1,15 @@
 {% extends '//bin/nwg/t/ix.sh' %}
 
 {% block go_url %}
-https://github.com/nwg-piotr/nwg-drawer/archive/refs/tags/v0.3.7.tar.gz
+https://github.com/nwg-piotr/nwg-drawer/archive/refs/tags/v0.4.9.tar.gz
 {% endblock %}
 
 {% block go_sha %}
-888b9f8a111321a78b60d799d298428a8fe60294e2b092029e6c4c295511c0e3
+1c3e466aff9b667d9f75decc4cf883dec73eb35292bffc60cbcda4de4d936963
+{% endblock %}
+
+{% block go_tool %}
+bin/go/lang/22
 {% endblock %}
 
 {% block install %}

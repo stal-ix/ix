@@ -50,6 +50,7 @@ http://gondor.apana.org.au/~herbert/dash/files/dash-0.5.12.tar.gz
 http://haddonthethird.net/m4/m4-2.tar.bz2
 http://hpc.sourceforge.net/f2c.tar
 http://jfs.sourceforge.net/project/pub/jfsutils-1.1.15.tar.gz
+http://libspectre.freedesktop.org/releases/libspectre-0.2.12.tar.gz
 http://links.twibright.com/download/links-2.29.tar.bz2
 http://mandoc.bsd.lv/snapshots/mandoc-1.14.6.tar.gz
 http://miniupnp.free.fr/files/download.php?file=miniupnpc-2.2.3.tar.gz
@@ -261,6 +262,7 @@ https://download.gnome.org/sources/glib/2.80/glib-2.80.0.tar.xz
 https://download.gnome.org/sources/glib/2.80/glib-2.80.1.tar.xz
 https://download.gnome.org/sources/glib/2.80/glib-2.80.2.tar.xz
 https://download.gnome.org/sources/glib/2.80/glib-2.80.3.tar.xz
+https://download.gnome.org/sources/glib/2.80/glib-2.80.4.tar.xz
 https://download.gnome.org/sources/glibmm/2.66/glibmm-2.66.6.tar.xz
 https://download.gnome.org/sources/glibmm/2.77/glibmm-2.77.0.tar.xz
 https://download.gnome.org/sources/glibmm/2.78/glibmm-2.78.1.tar.xz
@@ -567,6 +569,7 @@ https://git.pwmt.org/pwmt/girara/-/archive/0.4.1/girara-0.4.1.tar.bz2
 https://git.pwmt.org/pwmt/girara/-/archive/0.4.2/girara-0.4.2.tar.bz2
 https://git.pwmt.org/pwmt/girara/-/archive/0.4.3/girara-0.4.3.tar.bz2
 https://git.pwmt.org/pwmt/zathura-cb/-/archive/0.1.10/zathura-cb-0.1.10.tar.bz2
+https://git.pwmt.org/pwmt/zathura-ps/-/archive/0.2.7/zathura-ps-0.2.7.tar.bz2
 https://git.pwmt.org/pwmt/zathura/-/archive/0.5.2/zathura-0.5.2.tar.bz2
 https://git.pwmt.org/pwmt/zathura/-/archive/0.5.3/zathura-0.5.3.tar.bz2
 https://git.pwmt.org/pwmt/zathura/-/archive/0.5.4/zathura-0.5.4.tar.bz2
@@ -732,6 +735,7 @@ https://github.com/Genivia/ugrep/archive/refs/tags/v5.1.3.tar.gz
 https://github.com/Genivia/ugrep/archive/refs/tags/v5.1.4.tar.gz
 https://github.com/Genivia/ugrep/archive/refs/tags/v6.0.0.tar.gz
 https://github.com/Genivia/ugrep/archive/refs/tags/v6.1.0.tar.gz
+https://github.com/Genivia/ugrep/archive/refs/tags/v6.2.0.tar.gz
 https://github.com/GrapheneOS/hardened_malloc/archive/refs/tags/11.tar.gz
 https://github.com/Hjdskes/cage/archive/refs/tags/v0.1.4.tar.gz
 https://github.com/HowardHinnant/date/archive/refs/tags/v3.0.1.tar.gz
@@ -907,6 +911,7 @@ https://github.com/WebAssembly/binaryen/archive/refs/tags/version_114.tar.gz
 https://github.com/WebAssembly/binaryen/archive/refs/tags/version_115.tar.gz
 https://github.com/WebAssembly/binaryen/archive/refs/tags/version_116.tar.gz
 https://github.com/WebAssembly/binaryen/archive/refs/tags/version_117.tar.gz
+https://github.com/WebAssembly/binaryen/archive/refs/tags/version_118.tar.gz
 https://github.com/WebPlatformForEmbedded/libwpe/archive/refs/tags/1.12.3.tar.gz
 https://github.com/WerWolv/ImHex/releases/download/v1.19.1/Full.Sources.tar.gz
 https://github.com/WillPower3309/swayfx/archive/refs/tags/0.4.tar.gz
@@ -1509,6 +1514,7 @@ https://github.com/junegunn/fzf/archive/refs/tags/0.51.0.tar.gz
 https://github.com/junegunn/fzf/archive/refs/tags/0.52.0.tar.gz
 https://github.com/junegunn/fzf/archive/refs/tags/0.52.1.tar.gz
 https://github.com/junegunn/fzf/archive/refs/tags/0.53.0.tar.gz
+https://github.com/junegunn/fzf/archive/refs/tags/v0.54.0.tar.gz
 https://github.com/kaniini/libucontext/archive/refs/tags/libucontext-1.2.tar.gz
 https://github.com/kcat/openal-soft/archive/refs/tags/1.23.1.tar.gz
 https://github.com/keepassxreboot/keepassxc/releases/download/2.7.6/keepassxc-2.7.6-src.tar.xz
@@ -1849,6 +1855,7 @@ https://github.com/numactl/numactl/archive/refs/tags/v2.0.17.tar.gz
 https://github.com/numactl/numactl/archive/refs/tags/v2.0.18.tar.gz
 https://github.com/nwg-piotr/nwg-dock/archive/refs/tags/v0.3.1.tar.gz
 https://github.com/nwg-piotr/nwg-drawer/archive/refs/tags/v0.3.7.tar.gz
+https://github.com/nwg-piotr/nwg-drawer/archive/refs/tags/v0.4.9.tar.gz
 https://github.com/nwg-piotr/nwg-launchers/archive/refs/tags/v0.6.3.tar.gz
 https://github.com/nwg-piotr/nwg-look/archive/refs/tags/v0.2.4.tar.gz
 https://github.com/nwg-piotr/nwg-menu/archive/refs/tags/v0.1.1.tar.gz
@@ -2381,6 +2388,7 @@ https://github.com/wolfSSL/wolfssl/archive/refs/tags/v5.6.3-stable.tar.gz
 https://github.com/wolfSSL/wolfssl/archive/refs/tags/v5.6.4-stable.tar.gz
 https://github.com/wolfSSL/wolfssl/archive/refs/tags/v5.6.6-stable.tar.gz
 https://github.com/wolfSSL/wolfssl/archive/refs/tags/v5.7.0-stable.tar.gz
+https://github.com/wolfSSL/wolfssl/archive/refs/tags/v5.7.2-stable.tar.gz
 https://github.com/wolfpld/tracy/archive/refs/tags/v0.10.tar.gz
 https://github.com/wtfutil/wtf/archive/refs/tags/v0.41.0.tar.gz
 https://github.com/wxMaxima-developers/wxmaxima/archive/refs/tags/Version-23.07.0.tar.gz
@@ -2723,6 +2731,7 @@ https://mirrors.edge.kernel.org/pub/linux/libs/ell/ell-0.63.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/libs/ell/ell-0.64.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/libs/ell/ell-0.65.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/libs/ell/ell-0.66.tar.xz
+https://mirrors.edge.kernel.org/pub/linux/libs/ell/ell-0.67.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/network/wireless/iwd-2.10.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/network/wireless/iwd-2.11.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/network/wireless/iwd-2.12.tar.xz
@@ -2732,6 +2741,7 @@ https://mirrors.edge.kernel.org/pub/linux/network/wireless/iwd-2.15.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/network/wireless/iwd-2.16.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/network/wireless/iwd-2.17.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/network/wireless/iwd-2.18.tar.xz
+https://mirrors.edge.kernel.org/pub/linux/network/wireless/iwd-2.19.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/network/wireless/iwd-2.8.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/network/wireless/iwd-2.9.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/utils/kbd/kbd-2.6.1.tar.xz
@@ -2916,6 +2926,7 @@ https://www.freedesktop.org/software/uchardet/releases/uchardet-0.0.8.tar.xz
 https://www.gnupg.org/ftp/gcrypt/gnupg/gnupg-2.2.40.tar.bz2
 https://www.gnupg.org/ftp/gcrypt/gnupg/gnupg-2.4.3.tar.bz2
 https://www.gnupg.org/ftp/gcrypt/gnupg/gnupg-2.4.4.tar.bz2
+https://www.gnupg.org/ftp/gcrypt/gnupg/gnupg-2.4.5.tar.bz2
 https://www.gnupg.org/ftp/gcrypt/gnutls/v3.8/gnutls-3.8.1.tar.xz
 https://www.gnupg.org/ftp/gcrypt/gnutls/v3.8/gnutls-3.8.2.tar.xz
 https://www.gnupg.org/ftp/gcrypt/gnutls/v3.8/gnutls-3.8.3.tar.xz

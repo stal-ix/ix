@@ -822,7 +822,7 @@ bin/fzy
 bin/wf/recorder
 bin/mle
 bin/sfm
-#bin/imhex
+bin/imhex
 bin/stunnel
 bin/emptty
 bin/fzf
@@ -866,7 +866,7 @@ bin/rhash
 bin/vis
 bin/w3m
 bin/tea
-#bin/ladybird
+bin/ladybird
 bin/shadow
 bin/pdpmake
 bin/premake

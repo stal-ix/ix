@@ -5,6 +5,7 @@ lib/magic
 lib/seccomp
 lib/sqlite/3
 bin/zathura/cb
+bin/zathura/ps
 bin/zathura/djvu
 bin/zathura/{{pdf_plugin}}
 {{super()}}
@@ -37,6 +38,7 @@ cd ${tmp}
 ver='5_6'
 
 dl_stubs << EOF >> stubs.c
+ps      zathura_plugin_${ver} ps_zathura_plugin_${ver}
 cb      zathura_plugin_${ver} cb_zathura_plugin_${ver}
 djvu    zathura_plugin_${ver} djvu_zathura_plugin_${ver}
 {{pdf_plugin}}   zathura_plugin_${ver} {{pdf_plugin}}_zathura_plugin_${ver}
@@ -46,7 +48,8 @@ cc -o zathura stubs.c \
     $(find . -name '*.o')          \
     ${lib_zathura_djvu}/mod/*.a    \
     ${lib_zathura_{{pdf_plugin}}}/mod/*.a \
-    ${lib_zathura_cb}/mod/*.a
+    ${lib_zathura_cb}/mod/*.a \
+    ${lib_zathura_ps}/mod/*.a
 {% endblock %}
 
 {% block install %}
