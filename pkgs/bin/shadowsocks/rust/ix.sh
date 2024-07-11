@@ -1,11 +1,11 @@
 {% extends '//die/rust/cargo.sh' %}
 
 {% block cargo_url %}
-https://github.com/shadowsocks/shadowsocks-rust/archive/refs/tags/v1.18.4.tar.gz
+https://github.com/shadowsocks/shadowsocks-rust/archive/refs/tags/v1.20.2.tar.gz
 {% endblock %}
 
 {% block cargo_sha %}
-039dc6ddc6705367d7424caf6aeec798d02b0f67e1ee2286d1007a595be8b7fe
+3bf35b2f0adbe85fc2ecd1b4cd912db858f59580ca9771eef2ef17d0fe21de36
 {% endblock %}
 
 {% block bld_tool %}
