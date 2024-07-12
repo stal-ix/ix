@@ -37,6 +37,7 @@
 #}
 
 {% block run_deps %}
+bin/iron/bar
 bin/gdb/14
 bin/gdb/15
 bin/skia/svg
