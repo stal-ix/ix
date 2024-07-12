@@ -409,6 +409,7 @@ https://ftp.gnu.org/gnu/autoconf/autoconf-2.72.tar.xz
 https://ftp.gnu.org/gnu/automake/automake-1.16.1.tar.xz
 https://ftp.gnu.org/gnu/automake/automake-1.16.3.tar.xz
 https://ftp.gnu.org/gnu/automake/automake-1.16.5.tar.xz
+https://ftp.gnu.org/gnu/automake/automake-1.17.tar.xz
 https://ftp.gnu.org/gnu/bash/bash-3.2.57.tar.gz
 https://ftp.gnu.org/gnu/bash/bash-4.4.18.tar.gz
 https://ftp.gnu.org/gnu/bash/bash-5.1.16.tar.gz
@@ -746,6 +747,7 @@ https://github.com/Igalia/WPEBackend-fdo/archive/refs/tags/1.12.0.tar.gz
 https://github.com/Igalia/cog/archive/refs/tags/0.12.4.tar.gz
 https://github.com/Irqbalance/irqbalance/archive/refs/tags/v1.9.4.tar.gz
 https://github.com/J-Lentz/iwgtk/archive/refs/tags/v0.9.tar.gz
+https://github.com/JakeStanger/ironbar/archive/refs/tags/v0.15.1.tar.gz
 https://github.com/JuliaStrings/utf8proc/archive/refs/tags/v2.8.0.tar.gz
 https://github.com/JuliaStrings/utf8proc/archive/refs/tags/v2.9.0.tar.gz
 https://github.com/Juniper/libxo/archive/refs/tags/1.6.0.tar.gz
