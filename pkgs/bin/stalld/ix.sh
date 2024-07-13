@@ -1,8 +1,8 @@
 {% extends '//die/c/make.sh' %}
 
 {% block fetch %}
-https://git.kernel.org/pub/scm/utils/stalld/stalld.git/snapshot/stalld-1.19.3.tar.gz
-sha:89ad3659240b3063a9369c96ef9d410c649d539cdb5b2f3300a2baeb87de735c
+https://git.kernel.org/pub/scm/utils/stalld/stalld.git/snapshot/stalld-1.19.4.tar.gz
+sha:cc5c6ef7811da280931e33cdaf4e03b9acaf4bf3e6670e4de6cec593024d75a7
 {% endblock %}
 
 {% block bld_libs %}
@@ -21,6 +21,7 @@ sed -e 's|/usr/|/|' -i Makefile
 
 {% block make_flags %}
 USE_BPF=0
+LDFLAGS=
 DESTDIR=${out}
 {% endblock %}
 
