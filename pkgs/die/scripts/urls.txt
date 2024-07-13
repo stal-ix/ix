@@ -999,6 +999,7 @@ https://github.com/apple/swift-corelibs-libdispatch/archive/refs/tags/swift-5.8-
 https://github.com/apple/swift-corelibs-libdispatch/archive/refs/tags/swift-5.9-RELEASE.tar.gz
 https://github.com/apple/swift-corelibs-libdispatch/archive/refs/tags/swift-5.9.2-RELEASE.tar.gz
 https://github.com/appneta/tcpreplay/releases/download/v4.4.4/tcpreplay-4.4.4.tar.xz
+https://github.com/appneta/tcpreplay/releases/download/v4.5.1/tcpreplay-4.5.1.tar.xz
 https://github.com/ar-/incron/archive/refs/tags/0.5.12.tar.gz
 https://github.com/archlinux/svntogit-community/archive/515367ae9616cb3fa53eaf041634dd6e0637a774.tar.gz
 https://github.com/argp-standalone/argp-standalone/archive/refs/tags/1.5.0.tar.gz
