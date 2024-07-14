@@ -37,6 +37,8 @@
 #}
 
 {% block run_deps %}
+bin/bpf/tool
+bin/iron/bar
 bin/gdb/14
 bin/gdb/15
 bin/skia/svg

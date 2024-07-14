@@ -4,9 +4,8 @@ import os
 import sys
 import json
 import string
+import subprocess
 import collections
-
-import urllib.request as ur
 
 
 R = os.environ.get('IX_PKGS_ROOT') or sys.argv[1]
@@ -79,7 +78,7 @@ for w, c in toks.items():
 
 
 def fetch():
-    return ur.urlopen('https://repology.org/api/experimental/updates').read()
+    return subprocess.check_output(['wget', '-q', '-O', '-', 'https://repology.org/api/experimental/updates'])
 
 
 def exact_m(p):

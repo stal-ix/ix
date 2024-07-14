@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://github.com/appneta/tcpreplay/releases/download/v4.4.4/tcpreplay-4.4.4.tar.xz
-sha:3ff9753cc43bb15e77832cee657e3030dbcdd957fa247e6abacc605689e24051
+https://github.com/appneta/tcpreplay/releases/download/v4.5.1/tcpreplay-4.5.1.tar.xz
+sha:5126613f783062b43f514b05ad981376050a8fee35b03c8de4445ddeefd95049
 {% endblock %}
 
 {% block bld_libs %}

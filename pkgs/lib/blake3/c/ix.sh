@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/BLAKE3-team/BLAKE3/archive/refs/tags/1.5.1.tar.gz
-sha:822cd37f70152e5985433d2c50c8f6b2ec83aaf11aa31be9fe71486a91744f37
+https://github.com/BLAKE3-team/BLAKE3/archive/refs/tags/1.5.2.tar.gz
+sha:1bc38cd3cc501458054c3bb473e5e00338d6175121424040079025ea305ddef3
 {% endblock %}
 
 {% block lib_deps %}
