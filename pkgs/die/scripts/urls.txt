@@ -658,6 +658,7 @@ https://github.com/BLAKE3-team/BLAKE3/archive/refs/tags/1.4.1.tar.gz
 https://github.com/BLAKE3-team/BLAKE3/archive/refs/tags/1.5.0.tar.gz
 https://github.com/BLAKE3-team/BLAKE3/archive/refs/tags/1.5.1.tar.gz
 https://github.com/BLAKE3-team/BLAKE3/archive/refs/tags/1.5.2.tar.gz
+https://github.com/BLAKE3-team/BLAKE3/archive/refs/tags/1.5.3.tar.gz
 https://github.com/CorsixTH/CorsixTH/archive/refs/tags/v0.67.tar.gz
 https://github.com/Cyan4973/xxHash/archive/refs/tags/v0.8.2.tar.gz
 https://github.com/DanBloomberg/leptonica/archive/refs/tags/1.83.1.tar.gz
@@ -953,6 +954,7 @@ https://github.com/adrian-thurston/ragel/archive/refs/tags/7.0.4.tar.gz
 https://github.com/adrianlopezroche/fdupes/archive/refs/tags/v2.2.1.tar.gz
 https://github.com/adrianlopezroche/fdupes/archive/refs/tags/v2.3.0.tar.gz
 https://github.com/adrianlopezroche/fdupes/archive/refs/tags/v2.3.1.tar.gz
+https://github.com/adrianlopezroche/fdupes/archive/refs/tags/v2.3.2.tar.gz
 https://github.com/adsr/mle/archive/refs/tags/v1.7.2.tar.gz
 https://github.com/afify/sfm/archive/refs/tags/v0.4.tar.gz
 https://github.com/akamai/re2g/archive/refs/tags/v0.1.35.tar.gz
@@ -1011,6 +1013,7 @@ https://github.com/artemsen/swayimg/archive/refs/tags/v2.0.tar.gz
 https://github.com/artemsen/swayimg/archive/refs/tags/v2.1.tar.gz
 https://github.com/artemsen/swayimg/archive/refs/tags/v2.2.tar.gz
 https://github.com/artemsen/swayimg/archive/refs/tags/v2.3.tar.gz
+https://github.com/artemsen/swayimg/archive/refs/tags/v2.4.tar.gz
 https://github.com/arvidn/libtorrent/releases/download/v2.0.10/libtorrent-rasterbar-2.0.10.tar.gz
 https://github.com/arvidn/libtorrent/releases/download/v2.0.9/libtorrent-rasterbar-2.0.9.tar.gz
 https://github.com/ascent12/drm_info/archive/refs/tags/v2.3.0.tar.gz
@@ -1050,6 +1053,7 @@ https://github.com/c-ares/c-ares/archive/refs/tags/cares-1_29_0.tar.gz
 https://github.com/c-ares/c-ares/archive/refs/tags/v1.31.0.tar.gz
 https://github.com/c-ares/c-ares/archive/refs/tags/v1.32.0.tar.gz
 https://github.com/c-ares/c-ares/archive/refs/tags/v1.32.1.tar.gz
+https://github.com/c-ares/c-ares/archive/refs/tags/v1.32.2.tar.gz
 https://github.com/c-util/c-dvar/archive/refs/tags/v1.1.0.tar.gz
 https://github.com/c-util/c-ini/archive/refs/tags/v1.1.0.tar.gz
 https://github.com/c-util/c-list/archive/refs/tags/v3.1.0.tar.gz
@@ -1332,6 +1336,7 @@ https://github.com/google/glog/archive/refs/tags/v0.6.0.tar.gz
 https://github.com/google/glog/archive/refs/tags/v0.7.0.tar.gz
 https://github.com/google/glog/archive/refs/tags/v0.7.1.tar.gz
 https://github.com/google/googletest/archive/refs/tags/v1.14.0.tar.gz
+https://github.com/google/googletest/archive/refs/tags/v1.15.0.tar.gz
 https://github.com/google/gumbo-parser/archive/refs/tags/v0.10.1.tar.gz
 https://github.com/google/highway/archive/refs/tags/1.0.5.tar.gz
 https://github.com/google/highway/archive/refs/tags/1.0.7.tar.gz
@@ -2390,6 +2395,7 @@ https://github.com/weechat/weechat/archive/refs/tags/v4.3.1.tar.gz
 https://github.com/weechat/weechat/archive/refs/tags/v4.3.2.tar.gz
 https://github.com/weechat/weechat/archive/refs/tags/v4.3.3.tar.gz
 https://github.com/weechat/weechat/archive/refs/tags/v4.3.4.tar.gz
+https://github.com/weechat/weechat/archive/refs/tags/v4.3.5.tar.gz
 https://github.com/westes/flex/archive/refs/tags/flex-2-5-10.tar.gz
 https://github.com/westes/flex/files/981163/flex-2.6.4.tar.gz
 https://github.com/wez/wezterm/archive/refs/tags/20230712-072601-f4abf8fd.tar.gz
@@ -2688,6 +2694,7 @@ https://imagemagick.org/archive/releases/ImageMagick-7.1.1-31.tar.xz
 https://imagemagick.org/archive/releases/ImageMagick-7.1.1-32.tar.xz
 https://imagemagick.org/archive/releases/ImageMagick-7.1.1-33.tar.xz
 https://imagemagick.org/archive/releases/ImageMagick-7.1.1-34.tar.xz
+https://imagemagick.org/archive/releases/ImageMagick-7.1.1-35.tar.xz
 https://invent.kde.org/frameworks/kwindowsystem/-/archive/v6.1.0/kwindowsystem-v6.1.0.tar.bz2
 https://invisible-island.net/archives/dialog/dialog-1.3-20240101.tgz
 https://invisible-mirror.net/archives/byacc/byacc-20211224.tgz
@@ -2939,6 +2946,7 @@ https://www.crufty.net/ftp/pub/sjg/bmake-20240414.tar.gz
 https://www.crufty.net/ftp/pub/sjg/bmake-20240430.tar.gz
 https://www.crufty.net/ftp/pub/sjg/bmake-20240508.tar.gz
 https://www.crufty.net/ftp/pub/sjg/bmake-20240602.tar.gz
+https://www.crufty.net/ftp/pub/sjg/bmake-20240711.tar.gz
 https://www.eecis.udel.edu/~ntp/ntp_spool/ntp4/ntp-4.2/ntp-4.2.8p15.tar.gz
 https://www.freedesktop.org/software/colord/releases/colord-1.4.6.tar.xz
 https://www.freedesktop.org/software/fontconfig/release/fontconfig-2.14.2.tar.xz
