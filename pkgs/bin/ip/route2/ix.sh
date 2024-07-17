@@ -1,8 +1,8 @@
 {% extends '//die/c/make.sh' %}
 
 {% block fetch %}
-https://github.com/iproute2/iproute2/archive/refs/tags/v6.9.0.tar.gz
-sha:19bb63b3630ba9c7e2c50b88908764d6b57e2fa5a8ac56c2dd3060ccab553d59
+https://github.com/iproute2/iproute2/archive/refs/tags/v6.10.0.tar.gz
+sha:060ee42dfcdf8b9daf9f986eee26d16ac5bdf39c8784702957b13bebec538541
 {% endblock %}
 
 {% block bld_libs %}
@@ -35,6 +35,7 @@ ${PWD}/include
 
 {% block cpp_missing %}
 limits.h
+endian.h
 {% endblock %}
 
 {% block make_flags %}
