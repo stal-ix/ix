@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://github.com/troglobit/sysklogd/archive/refs/tags/v2.5.2.tar.gz
-sha:f23950e671bf1c76ee06ce2cb7d343e644dd4d08e4ea4323f37644286dadd801
+https://github.com/troglobit/sysklogd/archive/refs/tags/v2.6.0.tar.gz
+sha:198507d9c659284e4e022fc000069444bd0048562579ed3915ce2c039d8b0bdc
 {% endblock %}
 
 {% block bld_libs %}
