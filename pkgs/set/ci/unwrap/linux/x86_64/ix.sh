@@ -37,6 +37,7 @@
 #}
 
 {% block run_deps %}
+bin/kernel/6/10
 bin/nftables
 bin/bpf/tool
 bin/iron/bar
