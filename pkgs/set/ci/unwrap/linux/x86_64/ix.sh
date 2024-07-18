@@ -37,6 +37,7 @@
 #}
 
 {% block run_deps %}
+bin/nftables
 bin/bpf/tool
 bin/iron/bar
 bin/gdb/14
