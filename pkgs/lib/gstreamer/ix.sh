@@ -11,6 +11,7 @@ lib/z
 lib/orc
 lib/drm
 lib/glib
+lib/ffmpeg
 lib/opengl
 lib/udev/g
 lib/wayland
@@ -40,6 +41,7 @@ wrap_cc
 {% endblock %}
 
 {% block meson_flags %}
+libav=enabled
 bad=disabled
 ges=disabled
 base=enabled
