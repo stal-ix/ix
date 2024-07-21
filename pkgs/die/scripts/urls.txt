@@ -898,6 +898,7 @@ https://github.com/PurpleI2P/i2pd/archive/refs/tags/2.50.1.tar.gz
 https://github.com/PurpleI2P/i2pd/archive/refs/tags/2.50.2.tar.gz
 https://github.com/PurpleI2P/i2pd/archive/refs/tags/2.51.0.tar.gz
 https://github.com/PurpleI2P/i2pd/archive/refs/tags/2.52.0.tar.gz
+https://github.com/PurpleI2P/i2pd/archive/refs/tags/2.53.0.tar.gz
 https://github.com/RazrFalcon/resvg/archive/refs/tags/v0.38.0.tar.gz
 https://github.com/RazrFalcon/resvg/archive/refs/tags/v0.39.0.tar.gz
 https://github.com/RazrFalcon/resvg/archive/refs/tags/v0.40.0.tar.gz
