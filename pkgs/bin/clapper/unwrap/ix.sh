@@ -14,6 +14,7 @@ lib/adwaita
 lib/gtk/deps
 lib/micro/dns
 lib/gstreamer
+lib/gstreamer/dl
 {% endblock %}
 
 {% block bld_tool %}
