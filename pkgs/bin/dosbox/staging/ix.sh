@@ -1,8 +1,8 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://github.com/dosbox-staging/dosbox-staging/archive/refs/tags/v0.81.0.tar.gz
-sha:9b133dbf2fe8410bb475267a8f26844d56b9025079783ec6a4574841888ae600
+https://github.com/dosbox-staging/dosbox-staging/archive/refs/tags/v0.81.2.tar.gz
+sha:6676a3b6957c144a80ca8c3ffec2a0bec0320274382f23af9c57dd1c20b2eb1b
 {% endblock %}
 
 {% block bld_libs %}
