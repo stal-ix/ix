@@ -37,6 +37,8 @@
 #}
 
 {% block run_deps %}
+bin/clapper
+bin/kernel/6/10
 bin/nftables
 bin/bpf/tool
 bin/iron/bar
