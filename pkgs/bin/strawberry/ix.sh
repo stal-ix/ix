@@ -22,6 +22,7 @@ lib/gstreamer
 lib/qt/6/base
 lib/qt/6/deps
 lib/tag/parser
+lib/gstreamer/dl
 lib/kd/single/application
 {% endblock %}
 
