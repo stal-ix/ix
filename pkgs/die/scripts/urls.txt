@@ -1075,6 +1075,7 @@ https://github.com/carapace-sh/carapace-bin/archive/refs/tags/v1.0.4.tar.gz
 https://github.com/catboost/catboost/archive/refs/tags/v1.0.6.tar.gz
 https://github.com/cboxdoerfer/fsearch/archive/refs/tags/0.2.3.tar.gz
 https://github.com/ccache/ccache/archive/refs/tags/v4.10.1.tar.gz
+https://github.com/ccache/ccache/archive/refs/tags/v4.10.2.tar.gz
 https://github.com/ccache/ccache/archive/refs/tags/v4.10.tar.gz
 https://github.com/ccache/ccache/releases/download/v4.8.3/ccache-4.8.3.tar.xz
 https://github.com/ccache/ccache/releases/download/v4.9.1/ccache-4.9.1.tar.xz
