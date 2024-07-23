@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/bytecodealliance/wasm-micro-runtime/archive/refs/tags/WAMR-1.3.2.tar.gz
-sha:58961ba387ed66ace2dd903597f1670a42b8154a409757ae6f06f43fe867a98c
+https://github.com/bytecodealliance/wasm-micro-runtime/archive/refs/tags/WAMR-2.1.1.tar.gz
+sha:04daaa934ca5bd1972432dd353b9d04a046c2d956fc923b01f74fe6af6f44f4b
 {% endblock %}
 
 {% block bld_libs %}
