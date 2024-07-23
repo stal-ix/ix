@@ -2210,6 +2210,7 @@ https://github.com/strukturag/libheif/archive/refs/tags/v1.17.4.tar.gz
 https://github.com/strukturag/libheif/archive/refs/tags/v1.17.5.tar.gz
 https://github.com/strukturag/libheif/archive/refs/tags/v1.17.6.tar.gz
 https://github.com/strukturag/libheif/archive/refs/tags/v1.18.0.tar.gz
+https://github.com/strukturag/libheif/archive/refs/tags/v1.18.1.tar.gz
 https://github.com/svenstaro/miniserve/archive/refs/tags/v0.26.0.tar.gz
 https://github.com/swaywm/sway/archive/refs/tags/1.8.1.tar.gz
 https://github.com/swaywm/sway/archive/refs/tags/1.9-rc1.tar.gz
