@@ -20,6 +20,7 @@ bld/fakegit
 
 {% block cpp_defines %}
 JQ_VERSION=\\\"{{self.version()}}\\\"
+umain=main
 {% endblock %}
 
 {% block patch %}
