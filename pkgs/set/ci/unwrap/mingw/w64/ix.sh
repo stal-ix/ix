@@ -1,6 +1,7 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
+bin/jq
 bin/b64
 bin/sed
 bin/idn
