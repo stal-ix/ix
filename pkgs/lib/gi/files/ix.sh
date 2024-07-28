@@ -16,6 +16,7 @@ cp *.gir ${out}/share/gir-1.0/
 {% endblock %}
 
 {% block env %}
+export GIRPATH="${out}/share/gir-1.0:\${GIRPATH}"
 export VALAFLAGS="--girdir=${out}/share/gir-1.0 \${VALAFLAGS}"
 export GIRSFLAGS="--add-include-path=${out}/share/gir-1.0 \${GIRSFLAGS}"
 export GIRCFLAGS="--includedir=${out}/share/gir-1.0 \${GIRCFLAGS}"
