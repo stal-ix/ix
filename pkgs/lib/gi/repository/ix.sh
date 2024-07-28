@@ -1,5 +1,11 @@
 {% extends 't/ix.sh' %}
 
+{% block lib_deps %}
+{{super()}}
+lib/build/gir
+lib/build/vala
+{% endblock %}
+
 {% block host_libs %}
 {{super()}}
 lib/glib/dl
@@ -19,7 +25,9 @@ gi_cross_use_prebuilt_gi=true
 
 {% block env %}
 {{super()}}
-export XDG_DATA_DIRS=${out}/lib
+export VALAFLAGS="--girdir=${out}/share/gir-1.0 \${VALAFLAGS}"
+export GIRSFLAGS="--add-include-path=${out}/share/gir-1.0 \${GIRSFLAGS}"
+export GIRCFLAGS="--includedir=${out}/share/gir-1.0 \${GIRCFLAGS}"
 {% endblock %}
 
 {% block install %}
