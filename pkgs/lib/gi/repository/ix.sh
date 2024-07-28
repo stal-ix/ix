@@ -27,5 +27,8 @@ export XDG_DATA_DIRS=${out}/lib
 rm -rf ${out}/lib/gobject-introspection/giscanner
 sed -e 's|.*bindir.*||' -i ${out}/lib/pkgconfig/gobject-introspection-no-export-1.0.pc
 sed -e 's|.*bindir.*||' -i ${out}/lib/pkgconfig/gobject-introspection-1.0.pc
-mv ${out}/share/gir-1.0 ${out}/lib/
+{% endblock %}
+
+{% block postinstall %}
+: mv ${out}/share/gir-1.0 ${out}/lib/
 {% endblock %}
