@@ -35,6 +35,7 @@ rm -rf ${out}/include ${out}/doc ${out}/bin ${out}/lib
 {% endblock %}
 
 {% block env %}
+export GIRPATH="${out}/share/gir-1.0:\${GIRPATH}"
 export GIRSFLAGS="--add-include-path=${out}/share/gir-1.0 \${GIRSFLAGS}"
 export GIRCFLAGS="--includedir=${out}/share/gir-1.0 \${GIRCFLAGS}"
 {% endblock %}
