@@ -29,10 +29,6 @@ bin/vala
 bld/gettext
 {% endblock %}
 
-{% block build_flags %}
-wrap_cc
-{% endblock %}
-
 {% block cmake_flags %}
 USE_SOUP3=ON
 {% endblock %}
