@@ -6,6 +6,7 @@ sha:29f37dc3a54fb123f223964d01de76fcea038ca6d134aa35b75c62b07acb9d03
 {% endblock %}
 
 {% block bld_libs %}
+
 lib/c
 lib/gtk
 lib/gee
@@ -20,11 +21,15 @@ lib/adwaita
 lib/sqlite/3
 lib/qrencode
 lib/gstreamer
+lib/adwaita/vapi
 lib/glib/networking
 lib/signal/protocol/c
+lib/build/vala
+lib/build/gir
 {% endblock %}
 
 {% block bld_tool %}
+bld/glib
 bin/vala
 bld/gettext
 {% endblock %}

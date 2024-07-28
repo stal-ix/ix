@@ -37,6 +37,7 @@
 #}
 
 {% block run_deps %}
+bin/dino
 bin/vala
 bin/vala/bootstrap
 bin/clapper

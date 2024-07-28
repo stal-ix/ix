@@ -8,5 +8,10 @@ cat << EOF > ${out}/bin/valac
 exec valac-0.56 \${VALAFLAGS} "\${@}"
 EOF
 
-chmod +x ${out}/bin/valac
+cat << EOF > ${out}/bin/vapigen
+#!/usr/bin/env sh
+exec vapigen-0.56 \${VALAFLAGS} "\${@}"
+EOF
+
+chmod +x ${out}/bin/*
 {% endblock %}
