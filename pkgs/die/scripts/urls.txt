@@ -286,6 +286,7 @@ https://download.gnome.org/sources/libsigc++/3.4/libsigc%2B%2B-3.4.0.tar.xz
 https://download.gnome.org/sources/libsoup/2.74/libsoup-2.74.2.tar.xz
 https://download.gnome.org/sources/pango/1.50/pango-1.50.14.tar.xz
 https://download.gnome.org/sources/pangomm/2.46/pangomm-2.46.2.tar.xz
+https://download.gnome.org/sources/vala/0.48/vala-0.48.25.tar.xz
 https://download.java.net/openjdk/jdk17/ri/openjdk-17+35_linux-x64_bin.tar.gz
 https://download.kde.org/stable/frameworks/5.112/extra-cmake-modules-5.112.0.tar.xz
 https://download.kde.org/stable/frameworks/5.99/extra-cmake-modules-5.99.0.tar.xz
@@ -2146,6 +2147,7 @@ https://github.com/rui314/mold/archive/refs/tags/v2.32.1.tar.gz
 https://github.com/rui314/mold/archive/refs/tags/v2.4.0.tar.gz
 https://github.com/rui314/mold/archive/refs/tags/v2.4.1.tar.gz
 https://github.com/rvaiya/keyd/archive/refs/tags/v2.4.3.tar.gz
+https://github.com/rvaiya/keyd/archive/refs/tags/v2.5.0.tar.gz
 https://github.com/rzvncj/xCHM/archive/refs/tags/1.35.tar.gz
 https://github.com/rzvncj/xCHM/archive/refs/tags/1.36.tar.gz
 https://github.com/sabotage-linux/netbsd-curses/archive/refs/tags/v0.3.2.tar.gz
@@ -2663,6 +2665,7 @@ https://gitlab.gnome.org/GNOME/pango/-/archive/1.52.2/pango-1.52.2.tar.bz2
 https://gitlab.gnome.org/GNOME/pango/-/archive/1.54.0/pango-1.54.0.tar.bz2
 https://gitlab.gnome.org/GNOME/sysprof/-/archive/46.0/sysprof-46.0.tar.bz2
 https://gitlab.gnome.org/GNOME/vala/-/archive/0.56.1/vala-0.56.1.tar.bz2
+https://gitlab.gnome.org/GNOME/vala/-/archive/0.56.17/vala-0.56.17.tar.bz2
 https://gitlab.gnome.org/GNOME/vte/-/archive/0.72.2/vte-0.72.2.tar.bz2
 https://gitlab.gnome.org/GNOME/vte/-/archive/0.74.0/vte-0.74.0.tar.bz2
 https://gitlab.gnome.org/GNOME/vte/-/archive/0.74.1/vte-0.74.1.tar.bz2
