@@ -6,7 +6,6 @@ sha:29f37dc3a54fb123f223964d01de76fcea038ca6d134aa35b75c62b07acb9d03
 {% endblock %}
 
 {% block bld_libs %}
-
 lib/c
 lib/gtk
 lib/gee
@@ -36,4 +35,8 @@ bld/gettext
 
 {% block cmake_flags %}
 USE_SOUP3=ON
+{% endblock %}
+
+{% block build_flags %}
+wrap_cc
 {% endblock %}
