@@ -19,6 +19,7 @@ lib/srtp/2
 lib/adwaita
 lib/sqlite/3
 lib/qrencode
+lib/gtk/deps
 lib/gstreamer
 lib/adwaita/vapi
 lib/glib/networking
