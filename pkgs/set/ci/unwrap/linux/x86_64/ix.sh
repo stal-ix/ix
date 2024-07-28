@@ -37,6 +37,7 @@
 #}
 
 {% block run_deps %}
+bin/vala
 bin/vala/bootstrap
 bin/clapper
 bin/kernel/6/10
