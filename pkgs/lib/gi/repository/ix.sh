@@ -31,4 +31,5 @@ sed -e 's|.*bindir.*||' -i ${out}/lib/pkgconfig/gobject-introspection-1.0.pc
 
 {% block postinstall %}
 rm -rf ${out}/bin
+cp -R ${out}/share/gir-1.0 ${out}/lib/
 {% endblock %}

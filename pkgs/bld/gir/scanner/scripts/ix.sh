@@ -13,7 +13,7 @@ cat << EOF > ${out}/bin/g-ir-scanner
 export REALCC=\${HOST_CC}
 export CC=gircc
 export GI_SCANNER_DISABLE_CACHE=1
-exec g-ir-scanner-bin "\${@}"
+exec g-ir-scanner-bin \${GIRFLAGS} "\${@}"
 EOF
 
 base64 -d << EOF > ${out}/bin/girlink
