@@ -10,11 +10,17 @@ lib/harfbuzz/gir
 lib/c
 lib/glib
 lib/pango/dl
+lib/harfbuzz/dl
 {% endblock %}
 
 {% block bld_tool %}
 {{super()}}
 bld/gir
+{% endblock %}
+
+{% block build_flags %}
+{{super()}}
+wrap_cc
 {% endblock %}
 
 {% block meson_flags %}
