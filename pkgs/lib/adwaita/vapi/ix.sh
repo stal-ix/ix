@@ -9,12 +9,16 @@ lib/glib/gir
 {% block host_libs %}
 {{super()}}
 lib/adwaita
+lib/harfbuzz/gir
 {% endblock %}
 
 {% block bld_tool %}
 {{super()}}
 bld/gir
 bin/vala
+lib/harfbuzz/gir
+lib/build/gir
+lib/build/vala
 {% endblock %}
 
 {% block c_rename_symbol %}

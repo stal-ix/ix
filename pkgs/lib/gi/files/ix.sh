@@ -13,6 +13,7 @@ lib/build/vala
 {% block postinstall %}
 mkdir -p ${out}/share/gir-1.0
 cp *.gir ${out}/share/gir-1.0/
+rm ${out}/share/gir-1.0/Harf*
 {% endblock %}
 
 {% block env %}
