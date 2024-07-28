@@ -1,5 +1,6 @@
 {% extends '//die/env.sh' %}
 
 {% block env %}
-export GIRFLAGS=""
+export GIRSFLAGS=""
+export GIRCFLAGS=""
 {% endblock %}

@@ -1,15 +1,15 @@
-{% extends '//lib/gdk/pixbuf/t/ix.sh' %}
+{% extends '//lib/pango/t/ix.sh' %}
 
 {% block lib_deps %}
 {{super()}}
-lib/build/gir
-lib/gi/repository
+lib/harfbuzz/gir
 {% endblock %}
 
 {% block host_libs %}
 {{super()}}
 lib/c
 lib/glib
+lib/pango/dl
 {% endblock %}
 
 {% block bld_tool %}
@@ -29,5 +29,5 @@ rm -rf ${out}/include ${out}/doc ${out}/bin ${out}/lib
 
 {% block env %}
 export GIRSFLAGS="--add-include-path=${out}/share/gir-1.0 \${GIRSFLAGS}"
-export GIRCFLAGS="--includedir=${out}/share/gir-1.0 \${GIRCFLAGS}"
+export GIRCFLAGS="--includedir=${out}/share/gir-1.0 \${GIRCSFLAGS}"
 {% endblock %}

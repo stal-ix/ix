@@ -1,4 +1,4 @@
-{% extends '//lib/gdk/pixbuf/t/ix.sh' %}
+{% extends '//lib/harfbuzz/unwrap/ix.sh' %}
 
 {% block lib_deps %}
 {{super()}}
@@ -10,6 +10,8 @@ lib/gi/repository
 {{super()}}
 lib/c
 lib/glib
+lib/harfbuzz/dl/core
+lib/harfbuzz/dl/gobject
 {% endblock %}
 
 {% block bld_tool %}
@@ -20,6 +22,12 @@ bld/gir
 {% block meson_flags %}
 {{super()}}
 introspection=enabled
+default_library=shared
+{% endblock %}
+
+{% block build_flags %}
+{{super()}}
+wrap_cc
 {% endblock %}
 
 {% block postinstall %}
