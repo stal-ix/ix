@@ -21,6 +21,7 @@ lib/sqlite/3
 lib/qrencode
 lib/gstreamer
 lib/glib/networking
+lib/signal/protocol/c
 {% endblock %}
 
 {% block bld_tool %}

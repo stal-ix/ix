@@ -1095,6 +1095,7 @@ https://github.com/chenjiandongx/sniffer/archive/refs/tags/v0.6.1.tar.gz
 https://github.com/chmouel/gosmee/archive/refs/tags/v0.21.0.tar.gz
 https://github.com/cilium/pwru/archive/refs/tags/v1.0.4.tar.gz
 https://github.com/cilium/pwru/archive/refs/tags/v1.0.5.tar.gz
+https://github.com/cisco/libsrtp/archive/refs/tags/v2.6.0.tar.gz
 https://github.com/cisco/openh264/archive/refs/tags/v2.3.1.tar.gz
 https://github.com/cisco/openh264/archive/refs/tags/v2.4.0.tar.gz
 https://github.com/cisco/openh264/archive/refs/tags/v2.4.1.tar.gz
@@ -2186,6 +2187,7 @@ https://github.com/shadowsocks/shadowsocks-rust/archive/refs/tags/v1.20.2.tar.gz
 https://github.com/sharkdp/bat/archive/refs/tags/v0.18.3.tar.gz
 https://github.com/sharkdp/bat/archive/refs/tags/v0.24.0.tar.gz
 https://github.com/sharkdp/binocle/archive/refs/tags/v0.3.2.tar.gz
+https://github.com/signalapp/libsignal-protocol-c/archive/refs/tags/v2.3.3.tar.gz
 https://github.com/sivel/speedtest-cli/archive/refs/tags/v2.1.3.tar.gz
 https://github.com/skarnet/execline/archive/refs/tags/v2.9.4.0.tar.gz
 https://github.com/skarnet/execline/archive/refs/tags/v2.9.5.0.tar.gz
@@ -2755,6 +2757,7 @@ https://libbsd.freedesktop.org/releases/libbsd-0.12.2.tar.xz
 https://libbsd.freedesktop.org/releases/libmd-1.1.0.tar.xz
 https://libisl.sourceforge.io/isl-0.26.tar.xz
 https://libmpeg2.sourceforge.io/files/libmpeg2-0.5.1.tar.gz
+https://libnice.freedesktop.org/releases/libnice-0.1.22.tar.gz
 https://libopenraw.freedesktop.org/download/exempi-2.6.5.tar.xz
 https://libopenraw.freedesktop.org/download/libopenraw-0.3.5.tar.bz2
 https://libzip.org/download/libzip-1.10.1.tar.xz
