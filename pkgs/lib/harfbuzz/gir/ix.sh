@@ -2,8 +2,7 @@
 
 {% block lib_deps %}
 {{super()}}
-lib/build/gir
-lib/gi/repository
+lib/glib/gir
 {% endblock %}
 
 {% block host_libs %}

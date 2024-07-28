@@ -8,8 +8,7 @@ sha:422966fa906f0e3bd6a5a1f8a13af4ecc835307c8ba8a6f313a0028fe0ab5ee7
 {% block lib_deps %}
 lib/c
 lib/glib
-lib/build/vala
-lib/gi/repository
+lib/gi/files
 {% endblock %}
 
 {% block bld_tool %}
