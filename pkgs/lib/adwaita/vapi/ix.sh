@@ -2,6 +2,7 @@
 
 {% block bld_libs %}
 {{super()}}
+lib/harfbuzz/gir
 lib/gi/files
 lib/gi/repository
 {% endblock %}
