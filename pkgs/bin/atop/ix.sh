@@ -1,8 +1,8 @@
 {% extends '//die/c/make.sh' %}
 
 {% block fetch %}
-https://www.atoptool.nl/download/atop-2.10.0.tar.gz
-sha:e7a673cf2c82578e7dd82ecb0dec83fd9ecb30828b2561c28a9fa5aaf75d5f93
+https://www.atoptool.nl/download/atop-2.11.0.tar.gz
+sha:9b94c666602efff7bf402ecce706c347f38c39cb63498f9d39626861e5646e20
 {% endblock %}
 
 {% block bld_libs %}
