@@ -115,6 +115,7 @@ http://zlib.net/zlib-1.3.1.tar.xz
 http://zlib.net/zlib-1.3.tar.xz
 https://7-zip.org/a/7z2200-src.tar.xz
 https://7-zip.org/a/7z2301-src.tar.xz
+https://alpha.gnu.org/gnu/libtool/libtool-2.5.1.tar.xz
 https://archive.apache.org/dist/apr/apr-1.7.0.tar.bz2
 https://archive.apache.org/dist/apr/apr-util-1.6.2.tar.bz2
 https://archive.apache.org/dist/subversion/subversion-1.14.2.tar.bz2
@@ -216,6 +217,7 @@ https://codeberg.org/dnkl/fuzzel/archive/1.9.2.tar.gz
 https://codeberg.org/dnkl/tllist/archive/1.1.0.tar.gz
 https://codeberg.org/dnkl/yambar/archive/1.10.0.tar.gz
 https://codeberg.org/dnkl/yambar/archive/1.11.0.tar.gz
+https://codeberg.org/dwl/dwl/archive/v0.6.tar.gz
 https://codeberg.org/grisha/gumbo-parser/archive/0.12.0.tar.gz
 https://codeberg.org/grisha/gumbo-parser/archive/0.12.1.tar.gz
 https://codeberg.org/soundtouch/soundtouch/archive/2.3.1.tar.gz
@@ -233,6 +235,7 @@ https://dbus.freedesktop.org/releases/dbus/dbus-1.14.10.tar.xz
 https://dev-www.libreoffice.org/src/libcdr/libcdr-0.1.7.tar.xz
 https://dev-www.libreoffice.org/src/libvisio/libvisio-0.1.7.tar.xz
 https://dev.yorhel.nl/download/ncdu-1.18.1.tar.gz
+https://dev.yorhel.nl/download/ncdu-1.20.tar.gz
 https://devimages-cdn.apple.com/design/resources/download/NY.dmg
 https://devimages-cdn.apple.com/design/resources/download/SF-Compact.dmg
 https://devimages-cdn.apple.com/design/resources/download/SF-Mono.dmg
@@ -283,6 +286,7 @@ https://download.gnome.org/sources/libsigc++/3.4/libsigc%2B%2B-3.4.0.tar.xz
 https://download.gnome.org/sources/libsoup/2.74/libsoup-2.74.2.tar.xz
 https://download.gnome.org/sources/pango/1.50/pango-1.50.14.tar.xz
 https://download.gnome.org/sources/pangomm/2.46/pangomm-2.46.2.tar.xz
+https://download.gnome.org/sources/vala/0.48/vala-0.48.25.tar.xz
 https://download.java.net/openjdk/jdk17/ri/openjdk-17+35_linux-x64_bin.tar.gz
 https://download.kde.org/stable/frameworks/5.112/extra-cmake-modules-5.112.0.tar.xz
 https://download.kde.org/stable/frameworks/5.99/extra-cmake-modules-5.99.0.tar.xz
@@ -313,6 +317,7 @@ https://downloads.sourceforge.net/hdparm/hdparm-9.64.tar.gz
 https://downloads.sourceforge.net/iperf2/iperf-2.1.9.tar.gz
 https://downloads.sourceforge.net/libtirpc/libtirpc-1.3.3.tar.bz2
 https://downloads.sourceforge.net/libtirpc/libtirpc-1.3.4.tar.bz2
+https://downloads.sourceforge.net/libtirpc/libtirpc-1.3.5.tar.bz2
 https://downloads.sourceforge.net/modplug-xmms/libmodplug-0.8.9.0.tar.gz
 https://downloads.sourceforge.net/project/acpid2/acpid-2.0.34.tar.xz
 https://downloads.sourceforge.net/project/codeblocks/Sources/20.03/codeblocks-20.03.tar.xz
@@ -358,6 +363,7 @@ https://downloads.sourceforge.net/project/sbcl/sbcl/2.4.3/sbcl-2.4.3-source.tar.
 https://downloads.sourceforge.net/project/sbcl/sbcl/2.4.4/sbcl-2.4.4-source.tar.bz2
 https://downloads.sourceforge.net/project/sbcl/sbcl/2.4.5/sbcl-2.4.5-source.tar.bz2
 https://downloads.sourceforge.net/project/sbcl/sbcl/2.4.6/sbcl-2.4.6-source.tar.bz2
+https://downloads.sourceforge.net/project/sbcl/sbcl/2.4.7/sbcl-2.4.7-source.tar.bz2
 https://downloads.sourceforge.net/project/scons/scons/4.5.2/SCons-4.5.2.tar.gz
 https://downloads.sourceforge.net/project/sdlgfx/SDL_gfx-2.0.25.tar.gz
 https://downloads.sourceforge.net/project/sox/sox/14.4.2/sox-14.4.2.tar.bz2
@@ -1022,6 +1028,7 @@ https://github.com/artemsen/swayimg/archive/refs/tags/v2.1.tar.gz
 https://github.com/artemsen/swayimg/archive/refs/tags/v2.2.tar.gz
 https://github.com/artemsen/swayimg/archive/refs/tags/v2.3.tar.gz
 https://github.com/artemsen/swayimg/archive/refs/tags/v2.4.tar.gz
+https://github.com/artemsen/swayimg/archive/refs/tags/v2.5.tar.gz
 https://github.com/arvidn/libtorrent/releases/download/v2.0.10/libtorrent-rasterbar-2.0.10.tar.gz
 https://github.com/arvidn/libtorrent/releases/download/v2.0.9/libtorrent-rasterbar-2.0.9.tar.gz
 https://github.com/ascent12/drm_info/archive/refs/tags/v2.3.0.tar.gz
@@ -1088,6 +1095,7 @@ https://github.com/chenjiandongx/sniffer/archive/refs/tags/v0.6.1.tar.gz
 https://github.com/chmouel/gosmee/archive/refs/tags/v0.21.0.tar.gz
 https://github.com/cilium/pwru/archive/refs/tags/v1.0.4.tar.gz
 https://github.com/cilium/pwru/archive/refs/tags/v1.0.5.tar.gz
+https://github.com/cisco/libsrtp/archive/refs/tags/v2.6.0.tar.gz
 https://github.com/cisco/openh264/archive/refs/tags/v2.3.1.tar.gz
 https://github.com/cisco/openh264/archive/refs/tags/v2.4.0.tar.gz
 https://github.com/cisco/openh264/archive/refs/tags/v2.4.1.tar.gz
@@ -1135,6 +1143,7 @@ https://github.com/desktop-app/tg_owt/archive/1eab2d736a2fecce01686689b72e39ad8c
 https://github.com/dimkr/loksh/releases/download/7.3/loksh-7.3.tar.xz
 https://github.com/dimkr/loksh/releases/download/7.4/loksh-7.4.tar.xz
 https://github.com/dinhvh/libetpan/archive/refs/tags/1.9.4.tar.gz
+https://github.com/dino/dino/archive/refs/tags/v0.4.4.tar.gz
 https://github.com/djpohly/dwl/archive/refs/tags/v0.3.1.tar.gz
 https://github.com/dlbeer/quirc/archive/refs/tags/v1.2.tar.gz
 https://github.com/dosbox-staging/dosbox-staging/archive/refs/tags/v0.81.0.tar.gz
@@ -1228,6 +1237,7 @@ https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.19.1.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.2.0.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.2.2.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.2.3.tar.gz
+https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.20.0.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.3.1.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.3.2.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.3.3.tar.gz
@@ -1547,6 +1557,7 @@ https://github.com/junegunn/fzf/archive/refs/tags/0.52.0.tar.gz
 https://github.com/junegunn/fzf/archive/refs/tags/0.52.1.tar.gz
 https://github.com/junegunn/fzf/archive/refs/tags/0.53.0.tar.gz
 https://github.com/junegunn/fzf/archive/refs/tags/v0.54.0.tar.gz
+https://github.com/junegunn/fzf/archive/refs/tags/v0.54.2.tar.gz
 https://github.com/kaniini/libucontext/archive/refs/tags/libucontext-1.2.tar.gz
 https://github.com/kcat/openal-soft/archive/refs/tags/1.23.1.tar.gz
 https://github.com/keepassxreboot/keepassxc/releases/download/2.7.6/keepassxc-2.7.6-src.tar.xz
@@ -2139,6 +2150,7 @@ https://github.com/rui314/mold/archive/refs/tags/v2.32.1.tar.gz
 https://github.com/rui314/mold/archive/refs/tags/v2.4.0.tar.gz
 https://github.com/rui314/mold/archive/refs/tags/v2.4.1.tar.gz
 https://github.com/rvaiya/keyd/archive/refs/tags/v2.4.3.tar.gz
+https://github.com/rvaiya/keyd/archive/refs/tags/v2.5.0.tar.gz
 https://github.com/rzvncj/xCHM/archive/refs/tags/1.35.tar.gz
 https://github.com/rzvncj/xCHM/archive/refs/tags/1.36.tar.gz
 https://github.com/sabotage-linux/netbsd-curses/archive/refs/tags/v0.3.2.tar.gz
@@ -2175,6 +2187,7 @@ https://github.com/shadowsocks/shadowsocks-rust/archive/refs/tags/v1.20.2.tar.gz
 https://github.com/sharkdp/bat/archive/refs/tags/v0.18.3.tar.gz
 https://github.com/sharkdp/bat/archive/refs/tags/v0.24.0.tar.gz
 https://github.com/sharkdp/binocle/archive/refs/tags/v0.3.2.tar.gz
+https://github.com/signalapp/libsignal-protocol-c/archive/refs/tags/v2.3.3.tar.gz
 https://github.com/sivel/speedtest-cli/archive/refs/tags/v2.1.3.tar.gz
 https://github.com/skarnet/execline/archive/refs/tags/v2.9.4.0.tar.gz
 https://github.com/skarnet/execline/archive/refs/tags/v2.9.5.0.tar.gz
@@ -2231,6 +2244,7 @@ https://github.com/syslog-ng/syslog-ng/releases/download/syslog-ng-4.3.1/syslog-
 https://github.com/syslog-ng/syslog-ng/releases/download/syslog-ng-4.4.0/syslog-ng-4.4.0.tar.gz
 https://github.com/syslog-ng/syslog-ng/releases/download/syslog-ng-4.6.0/syslog-ng-4.6.0.tar.gz
 https://github.com/syslog-ng/syslog-ng/releases/download/syslog-ng-4.7.1/syslog-ng-4.7.1.tar.gz
+https://github.com/syslog-ng/syslog-ng/releases/download/syslog-ng-4.8.0/syslog-ng-4.8.0.tar.gz
 https://github.com/tdlib/td/archive/refs/tags/v1.8.0.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v4.10.1/tdesktop-4.10.1-full.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v4.10.2/tdesktop-4.10.2-full.tar.gz
@@ -2459,6 +2473,7 @@ https://github.com/yggdrasil-network/yggdrasil-go/archive/refs/tags/v0.5.5.tar.g
 https://github.com/yorukot/superfile/archive/refs/tags/v1.1.3.tar.gz
 https://github.com/yquake2/yquake2/archive/refs/tags/QUAKE2_8_20.tar.gz
 https://github.com/yquake2/yquake2/archive/refs/tags/QUAKE2_8_30.tar.gz
+https://github.com/yquake2/yquake2/archive/refs/tags/QUAKE2_8_40.tar.gz
 https://github.com/yrutschle/sslh/archive/refs/tags/v2.0.0.tar.gz
 https://github.com/yrutschle/sslh/archive/refs/tags/v2.0.1.tar.gz
 https://github.com/yrutschle/sslh/archive/refs/tags/v2.1.0.tar.gz
@@ -2619,6 +2634,7 @@ https://gitlab.gnome.org/GNOME/json-glib/-/archive/1.8.0/json-glib-1.8.0.tar.bz2
 https://gitlab.gnome.org/GNOME/libadwaita/-/archive/1.5.beta/libadwaita-1.5.beta.tar.bz2
 https://gitlab.gnome.org/GNOME/libdazzle/-/archive/3.44.0/libdazzle-3.44.0.tar.bz2
 https://gitlab.gnome.org/GNOME/libdex/-/archive/0.6.0/libdex-0.6.0.tar.bz2
+https://gitlab.gnome.org/GNOME/libgee/-/archive/0.20.6/libgee-0.20.6.tar.bz2
 https://gitlab.gnome.org/GNOME/libgtop/-/archive/2.40.0/libgtop-2.40.0.tar.bz2
 https://gitlab.gnome.org/GNOME/libhandy/-/archive/1.8.2/libhandy-1.8.2.tar.bz2
 https://gitlab.gnome.org/GNOME/libpanel/-/archive/1.6.0/libpanel-1.6.0.tar.bz2
@@ -2655,6 +2671,7 @@ https://gitlab.gnome.org/GNOME/pango/-/archive/1.52.2/pango-1.52.2.tar.bz2
 https://gitlab.gnome.org/GNOME/pango/-/archive/1.54.0/pango-1.54.0.tar.bz2
 https://gitlab.gnome.org/GNOME/sysprof/-/archive/46.0/sysprof-46.0.tar.bz2
 https://gitlab.gnome.org/GNOME/vala/-/archive/0.56.1/vala-0.56.1.tar.bz2
+https://gitlab.gnome.org/GNOME/vala/-/archive/0.56.17/vala-0.56.17.tar.bz2
 https://gitlab.gnome.org/GNOME/vte/-/archive/0.72.2/vte-0.72.2.tar.bz2
 https://gitlab.gnome.org/GNOME/vte/-/archive/0.74.0/vte-0.74.0.tar.bz2
 https://gitlab.gnome.org/GNOME/vte/-/archive/0.74.1/vte-0.74.1.tar.bz2
@@ -2715,6 +2732,7 @@ https://imagemagick.org/archive/releases/ImageMagick-7.1.1-32.tar.xz
 https://imagemagick.org/archive/releases/ImageMagick-7.1.1-33.tar.xz
 https://imagemagick.org/archive/releases/ImageMagick-7.1.1-34.tar.xz
 https://imagemagick.org/archive/releases/ImageMagick-7.1.1-35.tar.xz
+https://imagemagick.org/archive/releases/ImageMagick-7.1.1-36.tar.xz
 https://invent.kde.org/frameworks/kwindowsystem/-/archive/v6.1.0/kwindowsystem-v6.1.0.tar.bz2
 https://invisible-island.net/archives/dialog/dialog-1.3-20240101.tgz
 https://invisible-mirror.net/archives/byacc/byacc-20211224.tgz
@@ -2739,6 +2757,7 @@ https://libbsd.freedesktop.org/releases/libbsd-0.12.2.tar.xz
 https://libbsd.freedesktop.org/releases/libmd-1.1.0.tar.xz
 https://libisl.sourceforge.io/isl-0.26.tar.xz
 https://libmpeg2.sourceforge.io/files/libmpeg2-0.5.1.tar.gz
+https://libnice.freedesktop.org/releases/libnice-0.1.22.tar.gz
 https://libopenraw.freedesktop.org/download/exempi-2.6.5.tar.xz
 https://libopenraw.freedesktop.org/download/libopenraw-0.3.5.tar.bz2
 https://libzip.org/download/libzip-1.10.1.tar.xz
@@ -2817,6 +2836,7 @@ https://mupdf.com/downloads/archive/mupdf-1.24.4-source.tar.gz
 https://mupdf.com/downloads/archive/mupdf-1.24.5-source.tar.gz
 https://mupdf.com/downloads/archive/mupdf-1.24.6-source.tar.gz
 https://mupdf.com/downloads/archive/mupdf-1.24.7-source.tar.gz
+https://mupdf.com/downloads/archive/mupdf-1.24.8-source.tar.gz
 https://nav.dl.sourceforge.net/project/sbcl/sbcl/2.2.1/sbcl-2.2.1-source.tar.bz2
 https://nav.dl.sourceforge.net/project/sbcl/sbcl/2.3.7/sbcl-2.3.7-source.tar.bz2
 https://nav.dl.sourceforge.net/project/sbcl/sbcl/2.3.9/sbcl-2.3.9-source.tar.bz2
@@ -2943,6 +2963,7 @@ https://www.alsa-project.org/files/pub/lib/alsa-lib-1.2.10.tar.bz2
 https://www.alsa-project.org/files/pub/lib/alsa-lib-1.2.11.tar.bz2
 https://www.alsa-project.org/files/pub/lib/alsa-lib-1.2.12.tar.bz2
 https://www.atoptool.nl/download/atop-2.10.0.tar.gz
+https://www.atoptool.nl/download/atop-2.11.0.tar.gz
 https://www.atoptool.nl/download/atop-2.9.0.tar.gz
 https://www.bytereef.org/software/mpdecimal/releases/mpdecimal-2.5.1.tar.gz
 https://www.bytereef.org/software/mpdecimal/releases/mpdecimal-4.0.0.tar.gz

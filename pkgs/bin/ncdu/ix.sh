@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://dev.yorhel.nl/download/ncdu-1.18.1.tar.gz
-sha:7c0fa1eb29d85aaed4ba174164bdbb8f011b5c390d017c57d668fc7231332405
+https://dev.yorhel.nl/download/ncdu-1.20.tar.gz
+sha:5fe2bb841abe72374bb242dbb93293c4ae053078432d896a7481b2ff10be9572
 {% endblock %}
 
 {% block bld_libs %}

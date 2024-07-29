@@ -5,11 +5,11 @@ https://github.com/microsoft/LightGBM
 {% endblock %}
 
 {% block git_branch %}
-v4.4.0
+v4.5.0
 {% endblock %}
 
 {% block git_sha %}
-56df5d1c08c7cebd2fd6e5cc70e20aa85053083b7c08604cef52f99b0afb301b
+b34a4e1d2b953462d345413c8461f6f4885f59a700d1d6f6080facc277cb88dd
 {% endblock %}
 
 {% block bld_libs %}

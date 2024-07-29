@@ -20,4 +20,5 @@ gi_cross_use_prebuilt_gi=true
 {% block install %}
 {{super()}}
 rm ${out}/bin/g-ir-scanner
+mv ${out}/bin/g-ir-compiler ${out}/bin/g-ir-compiler-bin
 {% endblock %}

@@ -16,6 +16,10 @@ if '-E' in sys.argv:
 
 print(f'GIRLINK {sys.argv}', file=sys.stderr)
 
+def call(*args, **kwargs):
+    print(f'call {args}', file=sys.stdout)
+    return subprocess.check_output(*args, **kwargs)
+
 uuid = hashlib.md5(json.dumps(sys.argv).encode()).hexdigest()
 temp = os.environ['tmp'] + f'/{uuid}.o'
 comp = sys.argv[1]
@@ -35,7 +39,7 @@ def sym_list():
         '--extern-only',
     ] + list(it_obj())
 
-    for l in subprocess.check_output(cmd).decode().split('\n'):
+    for l in call(cmd).decode().split('\n'):
         if ' ' in l:
             yield l.split(' ')[-1].strip()
 
@@ -47,7 +51,7 @@ def it_syms():
             yield f'rdynamic {s} {s}'
 
 dprog = '\n'.join(sorted(frozenset(it_syms())))
-cprog = subprocess.check_output(['dl_stubs'], input=dprog.encode())
+cprog = call(['dl_stubs'], input=dprog.encode())
 
 def flt_args(a):
     for x in a:
@@ -61,7 +65,7 @@ def flt_args(a):
             yield x
 
 try:
-    subprocess.check_output([comp, '-o', temp, '-c', '-x', 'c', '-'], input=cprog)
-    subprocess.check_output([comp] + list(flt_args(args)) + [temp])
+    call([comp, '-o', temp, '-c', '-x', 'c', '-'], input=cprog)
+    call([comp] + list(flt_args(args)) + [temp])
 finally:
     os.unlink(temp)

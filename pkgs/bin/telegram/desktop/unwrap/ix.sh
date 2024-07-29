@@ -47,8 +47,7 @@ lib/{{allocator}}/trim(delay=3,bytes=30000000)
 {% endblock %}
 
 {% block host_libs %}
-lib/c
-lib/glib
+lib/glib/gir
 {% endblock %}
 
 {% block build_flags %}
@@ -83,12 +82,11 @@ TDESKTOP_LAUNCHER_BASENAME=telegram-desktop
 {% endblock %}
 
 {% block bld_tool %}
-bld/gir
 bld/qt/6
 bld/glib
 bld/python
 bin/protoc
-bin/cppgir
+bld/gir/cpp
 bld/wayland
 bld/pkg/config
 bld/qt/6/tools
