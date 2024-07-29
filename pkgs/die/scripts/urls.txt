@@ -52,6 +52,7 @@ http://hpc.sourceforge.net/f2c.tar
 http://jfs.sourceforge.net/project/pub/jfsutils-1.1.15.tar.gz
 http://libspectre.freedesktop.org/releases/libspectre-0.2.12.tar.gz
 http://links.twibright.com/download/links-2.29.tar.bz2
+http://links.twibright.com/download/links-2.30.tar.bz2
 http://mandoc.bsd.lv/snapshots/mandoc-1.14.6.tar.gz
 http://miniupnp.free.fr/files/download.php?file=miniupnpc-2.2.3.tar.gz
 http://mirror.koddos.net/gcc/releases/gcc-11.2.0/gcc-11.2.0.tar.xz
@@ -674,6 +675,7 @@ https://github.com/DanBloomberg/leptonica/archive/refs/tags/1.84.1.tar.gz
 https://github.com/DaveGamble/cJSON/archive/refs/tags/v1.7.17.tar.gz
 https://github.com/DaveGamble/cJSON/archive/refs/tags/v1.7.18.tar.gz
 https://github.com/DominicBreuker/pspy/archive/refs/tags/v1.2.1.tar.gz
+https://github.com/ErikReider/SwayNotificationCenter/archive/refs/tags/v0.10.1.tar.gz
 https://github.com/Esri/lerc/archive/refs/tags/js_v4.0.4.tar.gz
 https://github.com/Esri/lerc/archive/refs/tags/v4.0.0.tar.gz
 https://github.com/Exiv2/exiv2/archive/refs/tags/v0.27.6.tar.gz
@@ -1165,6 +1167,7 @@ https://github.com/ebiggers/libdeflate/archive/refs/tags/v1.19.tar.gz
 https://github.com/ebiggers/libdeflate/archive/refs/tags/v1.20.tar.gz
 https://github.com/editorconfig/editorconfig-core-c/archive/refs/tags/v0.12.6.tar.gz
 https://github.com/ekzhang/bore/archive/refs/tags/v0.5.0.tar.gz
+https://github.com/elementary/granite/archive/refs/tags/6.2.0.tar.gz
 https://github.com/elfmz/far2l/archive/refs/tags/v_2.5.0.tar.gz
 https://github.com/elfmz/far2l/archive/refs/tags/v_2.5.2.tar.gz
 https://github.com/elfmz/far2l/archive/refs/tags/v_2.6.0.tar.gz
@@ -1392,6 +1395,7 @@ https://github.com/gphoto/libgphoto2/archive/refs/tags/v2.5.30.tar.gz
 https://github.com/greshake/i3status-rust/archive/refs/tags/v0.33.0.tar.gz
 https://github.com/grpc/grpc-java/archive/refs/tags/v1.51.3.tar.gz
 https://github.com/grpc/grpc-java/archive/refs/tags/v1.63.1.tar.gz
+https://github.com/gtk-rs/gir-files/archive/refs/tags/0.20.0.tar.gz
 https://github.com/haasn/libplacebo/archive/refs/tags/v5.264.1.tar.gz
 https://github.com/haasn/libplacebo/archive/refs/tags/v6.292.1.tar.gz
 https://github.com/haasn/libplacebo/archive/refs/tags/v6.338.0.tar.gz
