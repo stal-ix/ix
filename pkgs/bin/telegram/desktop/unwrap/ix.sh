@@ -19,7 +19,6 @@ lib/gsl/ms
 lib/xxhash
 lib/openal
 lib/gi/cpp
-lib/tg/owt
 lib/tg/voip
 lib/openssl
 lib/protobuf
@@ -33,6 +32,7 @@ lib/glib/mm/3
 lib/tg/rlottie
 lib/drivers/3d
 lib/mesa/gl/dl
+lib/tg/owt/new
 lib/mesa/egl/dl
 lib/qt/6/compat
 lib/qt/6/wayland
@@ -104,8 +104,8 @@ sed -e 's|Q_OS_LINUX|SHIT|' -i Telegram/lib_base/base/platform/linux/base_info_l
 
 >Telegram/lib_ui/ui/text/qtextitemint.cpp
 
-prepend Telegram/SourceFiles/calls/group/calls_group_call.cpp << EOF
-#include "Telegram/ThirdParty/libtgvoip/webrtc_dsp/rtc_base/scoped_ref_ptr.h"
+base64 -d << EOF > Telegram/lib_webrtc/webrtc/webrtc_create_adm.h
+{% include 'webrtc_create_adm.h/base64' %}
 EOF
 
 base64 -d << EOF > cmake/external/glib/generate_cppgir.cmake

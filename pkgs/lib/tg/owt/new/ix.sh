@@ -51,6 +51,10 @@ sed -e 's|.*modules/desktop_capture/linux/.*||' \
 >src/modules/desktop_capture/screen_drawer_linux.cc
 >src/third_party/libyuv/empty.cpp
 
+base64 -d << EOF > src/modules/video_capture/video_capture_factory.cc
+{% include 'video_capture_factory.cc/base64' %}
+EOF
+
 cat << EOF > cmake/libyuv.cmake
 add_library(libyuv OBJECT EXCLUDE_FROM_ALL)
 init_target(libyuv)
