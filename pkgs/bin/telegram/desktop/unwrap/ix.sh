@@ -112,10 +112,6 @@ base64 -d << EOF > cmake/external/glib/generate_cppgir.cmake
 {% include 'generate_cppgir.cmake/base64' %}
 EOF
 
-find Telegram/lib_base/base/platform/linux -type f | while read l; do
-    sed -e 's|Fn(|std::function(|' -i ${l}
-done
-
 sed -e 's|ranges::contains(cap|Contains(cap|' \
     -e 's|ranges::all_of(std::initializer_list|ranges::all_of(std::initializer_list<const char*>|' \
     -i Telegram/SourceFiles/platform/linux/notifications_manager_linux.cpp
