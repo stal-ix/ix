@@ -31,7 +31,6 @@ lib/kernel
 {% endblock %}
 
 {% block bld_tool %}
-bin/yasm
 bld/devendor
 {% endblock %}
 
