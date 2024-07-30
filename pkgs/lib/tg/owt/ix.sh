@@ -20,7 +20,6 @@ lib/jpeg
 lib/opus
 lib/crc32c
 lib/ffmpeg
-#lib/srtp/2
 lib/openssl
 lib/usrsctp
 lib/openh264
@@ -70,12 +69,6 @@ find . -type f | while read l; do
         -e 's|third_party/crc32c/src/include/crc32c|crc32c|' \
         -i ${l}
 done
-
-{#
-#devendor src/third_party/libsrtp
--e 's|third_party/libsrtp/crypto/include|srtp2|' \
--e 's|third_party/libsrtp/include|srtp2|' \
-#}
 {% endblock %}
 
 {% block install %}
