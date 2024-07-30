@@ -9,7 +9,7 @@ lib/c
 lib/c++
 lib/alsa
 lib/opus
-lib/tg/owt/new
+lib/tg/owt
 lib/shim/fake/pkg(pkg_name=tgvoip,pkg_ver=2.4.4)
 {% endblock %}
 

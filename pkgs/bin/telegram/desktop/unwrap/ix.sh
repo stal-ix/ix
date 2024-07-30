@@ -19,6 +19,7 @@ lib/gsl/ms
 lib/xxhash
 lib/openal
 lib/gi/cpp
+lib/tg/owt
 lib/tg/voip
 lib/openssl
 lib/protobuf
@@ -32,7 +33,6 @@ lib/glib/mm/3
 lib/tg/rlottie
 lib/drivers/3d
 lib/mesa/gl/dl
-lib/tg/owt/new
 lib/mesa/egl/dl
 lib/qt/6/compat
 lib/qt/6/wayland

@@ -1,8 +1,15 @@
 {% extends '//die/c/cmake.sh' %}
 
-{% block fetch %}
-https://github.com/desktop-app/tg_owt/archive/1eab2d736a2fecce01686689b72e39ad8c314ebb.zip
-sha:c241fc27dce6900268c445ce1d2bec58eef15c06598825c27270cce494dd396b
+{% block git_repo %}
+https://github.com/desktop-app/tg_owt
+{% endblock %}
+
+{% block git_commit %}
+48c9c31d591509799a8385542ff3fb04f4d58327
+{% endblock %}
+
+{% block git_sha %}
+580779537a63d8f04d441539841c68a7ea9114f774d427809175b0a8671e0fc4
 {% endblock %}
 
 {% block lib_deps %}
@@ -36,13 +43,17 @@ TG_OWT_USE_PIPEWIRE=OFF
 
 {% block patch %}
 sed -e 's|.*WEBRTC_USE_X11.*||' -i cmake/libwebrtcbuild.cmake
-sed -e 's|.*modules/desktop_capture/linux/.*||' -e 's|.*link_x11.*||' -i CMakeLists.txt
+sed -e 's|.*modules/desktop_capture/linux/.*||' \
+    -e 's|.*modules/video_capture/linux/.*||' \
+    -e 's|.*link_x11.*||' \
+    -i CMakeLists.txt
 
 >src/modules/desktop_capture/screen_drawer_linux.cc
 >src/third_party/libyuv/empty.cpp
 
-sed -e 's|.*\.h.*||' -i cmake/libopenh264.cmake
-devendor src/third_party/openh264
+base64 -d << EOF > src/modules/video_capture/video_capture_factory.cc
+{% include 'video_capture_factory.cc/base64' %}
+EOF
 
 cat << EOF > cmake/libyuv.cmake
 add_library(libyuv OBJECT EXCLUDE_FROM_ALL)
