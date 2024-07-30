@@ -15,7 +15,20 @@ lib/handy
 lib/notify
 lib/granite
 lib/json/glib
+lib/handy/gir
 lib/gtk/layer/shell
+{% endblock %}
+
+{% block host_libs %}
+lib/handy/gir
+{% endblock %}
+
+{% block script_init_env %}
+{{super()}}
+export GIRPATH=
+export VALAFLAGS=
+export GIRSFLAGS=
+export GIRCFLAGS=
 {% endblock %}
 
 {% block bld_tool %}
@@ -24,8 +37,15 @@ bin/vala
 bin/sassc
 bld/gnome
 bin/scdoc
+lib/handy/gir
 {% endblock %}
 
 {% block meson_flags %}
 pulse-audio=false
+{% endblock %}
+
+{% block build %}
+which vala
+echo ${VALAFLAGS}
+{{super()}}
 {% endblock %}

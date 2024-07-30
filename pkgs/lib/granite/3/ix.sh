@@ -23,6 +23,4 @@ bld/gnome
 bld/gettext
 lib/gee
 lib/harfbuzz/gir
-lib/build/gir
-lib/build/vala
 {% endblock %}

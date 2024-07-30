@@ -24,8 +24,6 @@ lib/gstreamer
 lib/adwaita/vapi
 lib/glib/networking
 lib/signal/protocol/c
-lib/build/vala
-lib/build/gir
 {% endblock %}
 
 {% block bld_tool %}

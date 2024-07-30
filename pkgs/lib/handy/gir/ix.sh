@@ -24,8 +24,6 @@ bld/gir
 bin/vala
 lib/harfbuzz/gir
 lib/glib/gir
-lib/build/gir
-lib/build/vala
 {% endblock %}
 
 {% block postinstall %}
