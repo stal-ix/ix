@@ -112,6 +112,8 @@ base64 -d << EOF > cmake/external/glib/generate_cppgir.cmake
 {% include 'generate_cppgir.cmake/base64' %}
 EOF
 
+sed -e 's|.*add_cppgir().*||' -i cmake/external/glib/CMakeLists.txt
+
 sed -e 's|ranges::contains(cap|Contains(cap|' \
     -e 's|ranges::all_of(std::initializer_list|ranges::all_of(std::initializer_list<const char*>|' \
     -i Telegram/SourceFiles/platform/linux/notifications_manager_linux.cpp
@@ -128,8 +130,6 @@ inline bool Contains(const T& t, const R& r) {
     return false;
 }
 EOF
-
-sed -e 's|.*add_cppgir().*||' -i cmake/external/glib/CMakeLists.txt
 
 sed -e 's|DESKTOP_APP_DISABLE_WAYLAND_INTEGRATION|TRUE|' -i Telegram/lib_webview/CMakeLists.txt
 
