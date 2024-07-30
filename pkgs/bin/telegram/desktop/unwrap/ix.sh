@@ -104,12 +104,6 @@ sed -e 's|Q_OS_LINUX|SHIT|' -i Telegram/lib_base/base/platform/linux/base_info_l
 
 >Telegram/lib_ui/ui/text/qtextitemint.cpp
 
-cat << EOF >> Telegram/SourceFiles/stdafx.h
-#if defined(__cplusplus)
-#include "Telegram/lib_ui/ui/widgets/scroll_area.h"
-#endif
-EOF
-
 prepend Telegram/SourceFiles/calls/group/calls_group_call.cpp << EOF
 #include "Telegram/ThirdParty/libtgvoip/webrtc_dsp/rtc_base/scoped_ref_ptr.h"
 EOF
