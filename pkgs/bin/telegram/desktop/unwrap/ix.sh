@@ -50,6 +50,10 @@ lib/{{allocator}}/trim(delay=3,bytes=30000000)
 lib/gi/files
 {% endblock %}
 
+{% block host_libs %}
+lib/glib/dl
+{% endblock %}
+
 {% block build_flags %}
 shut_up
 {% endblock %}
