@@ -8,7 +8,7 @@ lib/glib/gir
 
 {% block host_libs %}
 {{super()}}
-lib/adwaita
+lib/adwaita/dl
 lib/harfbuzz/gir
 {% endblock %}
 
