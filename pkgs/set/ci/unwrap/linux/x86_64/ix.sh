@@ -37,6 +37,7 @@
 #}
 
 {% block run_deps %}
+bin/minder
 bin/sway/nc
 bin/dino
 bin/vala

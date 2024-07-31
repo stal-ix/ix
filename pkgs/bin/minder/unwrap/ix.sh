@@ -33,3 +33,18 @@ lib/handy/gir
 lib/granite/{{gtk_ver}}/gir
 lib/gtk/source/view/{{1 + gtk_ver | int}}/gir
 {% endblock %}
+
+{% block patch %}
+sed -e 's|testing = .*|testing = app;|' \
+    -e 's|testing.run()|testing.run(args)|' \
+    -i src/Application.vala
+cat << EOF > meson/post_install.py
+#!/usr/bin/env python3
+EOF
+chmod +x meson/post_install.py
+{% endblock %}
+
+{% block install %}
+{{super()}}
+mv ${out}/bin/com* ${out}/bin/minder
+{% endblock %}
