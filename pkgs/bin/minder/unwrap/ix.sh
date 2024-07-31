@@ -15,6 +15,7 @@ lib/handy
 lib/granite
 lib/archive
 lib/discount
+lib/gtk/deps
 lib/json/glib
 lib/gtk/source/view
 lib/gtk/source/view/4/ctor
