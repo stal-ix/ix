@@ -11,6 +11,11 @@ lib/handy
 lib/handy/dl
 {% endblock %}
 
+{% block bld_libs %}
+{{super()}}
+lib/gi/repository
+{% endblock %}
+
 {% block bld_data %}
 lib/gi/files
 lib/harfbuzz/gir
