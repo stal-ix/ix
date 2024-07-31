@@ -8,7 +8,11 @@ sha:691721734b0c5a368fa82ce82b0de652d42aed2133cf9275fd66493365eaa1dd
 {% block bld_libs %}
 lib/c
 lib/glib
-lib/glib/gir
+lib/gi/repository
+{% endblock %}
+
+{% block bld_data %}
+lib/gi/files
 {% endblock %}
 
 {% block bld_tool %}

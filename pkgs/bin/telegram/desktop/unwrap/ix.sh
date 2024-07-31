@@ -46,8 +46,8 @@ lib/qt/6/imageformats
 lib/{{allocator}}/trim(delay=3,bytes=30000000)
 {% endblock %}
 
-{% block host_libs %}
-lib/glib/gir
+{% block bld_data %}
+lib/gi/files
 {% endblock %}
 
 {% block build_flags %}

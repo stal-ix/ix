@@ -26,6 +26,11 @@ lib/glib/networking
 lib/signal/protocol/c
 {% endblock %}
 
+{% block bld_data %}
+lib/gee/gir
+lib/gi/files
+{% endblock %}
+
 {% block bld_tool %}
 bld/glib
 bin/vala

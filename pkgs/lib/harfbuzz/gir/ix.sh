@@ -1,14 +1,17 @@
 {% extends '//lib/harfbuzz/unwrap/ix.sh' %}
 
-{% block lib_deps %}
+{% block bld_data %}
 {{super()}}
-lib/glib/gir
+lib/gi/files
+{% endblock %}
+
+{% block bld_libs %}
+{{super()}}
+lib/gi/repository
 {% endblock %}
 
 {% block host_libs %}
 {{super()}}
-lib/c
-lib/glib
 lib/harfbuzz/dl/core
 lib/harfbuzz/dl/gobject
 {% endblock %}

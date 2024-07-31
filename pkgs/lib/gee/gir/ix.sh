@@ -1,30 +1,13 @@
-{% extends '//lib/handy/t/ix.sh' %}
+{% extends '//lib/gee/ix.sh' %}
 
-{% block meson_flags %}
+{% block bld_libs %}
 {{super()}}
-introspection=enabled
+lib/gi/repository
 {% endblock %}
 
-{% block host_libs %}
+{% block install %}
 {{super()}}
-lib/handy
-lib/handy/dl
-{% endblock %}
-
-{% block bld_data %}
-lib/gi/files
-lib/harfbuzz/gir
-{% endblock %}
-
-{% block bld_tool %}
-{{super()}}
-bld/gir
-bin/vala
-{% endblock %}
-
-{% block postinstall %}
 mv ${out}/lib/gi* ${out}/share/
-rm -rf ${out}/bin ${out}/lib ${out}/include
 {% endblock %}
 
 {% block env %}

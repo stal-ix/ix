@@ -23,14 +23,6 @@ lib/gtk/layer/shell
 lib/handy/gir
 {% endblock %}
 
-{% block script_init_env %}
-{{super()}}
-export GIRPATH=
-export VALAFLAGS=
-export GIRSFLAGS=
-export GIRCFLAGS=
-{% endblock %}
-
 {% block bld_tool %}
 bld/glib
 bin/vala
