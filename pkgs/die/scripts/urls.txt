@@ -1567,6 +1567,7 @@ https://github.com/junegunn/fzf/archive/refs/tags/0.52.1.tar.gz
 https://github.com/junegunn/fzf/archive/refs/tags/0.53.0.tar.gz
 https://github.com/junegunn/fzf/archive/refs/tags/v0.54.0.tar.gz
 https://github.com/junegunn/fzf/archive/refs/tags/v0.54.2.tar.gz
+https://github.com/junegunn/fzf/archive/refs/tags/v0.54.3.tar.gz
 https://github.com/kaniini/libucontext/archive/refs/tags/libucontext-1.2.tar.gz
 https://github.com/kcat/openal-soft/archive/refs/tags/1.23.1.tar.gz
 https://github.com/keepassxreboot/keepassxc/releases/download/2.7.6/keepassxc-2.7.6-src.tar.xz
@@ -1956,6 +1957,7 @@ https://github.com/pg83/ssh3/archive/068856ab41189b28ea8c93547d5e27356f882690.zi
 https://github.com/pg83/ssh3/archive/75d80cf4e6a372ffed22a2254f6e3d67373fdc61.zip
 https://github.com/pg83/ssh3/archive/d900eb49a68945f924d6308765eead9f9eec7c27.zip
 https://github.com/pg83/ted/archive/refs/tags/v6.tar.gz
+https://github.com/phase1geo/Minder/archive/refs/tags/1.16.4.tar.gz
 https://github.com/phillipberndt/pqiv/archive/refs/tags/2.12.tar.gz
 https://github.com/phillipberndt/pqiv/archive/refs/tags/2.13.1.tar.gz
 https://github.com/phillipberndt/pqiv/archive/refs/tags/2.13.tar.gz
@@ -2609,6 +2611,7 @@ https://gitlab.gnome.org/GNOME/gcr/-/archive/4.1.0/gcr-4.1.0.tar.bz2
 https://gitlab.gnome.org/GNOME/gcr/-/archive/4.2.0/gcr-4.2.0.tar.bz2
 https://gitlab.gnome.org/GNOME/gcr/-/archive/4.2.1/gcr-4.2.1.tar.bz2
 https://gitlab.gnome.org/GNOME/gcr/-/archive/4.3.0/gcr-4.3.0.tar.bz2
+https://gitlab.gnome.org/GNOME/geary/-/archive/46.0/geary-46.0.tar.bz2
 https://gitlab.gnome.org/GNOME/glib-networking/-/archive/2.76.1/glib-networking-2.76.1.tar.bz2
 https://gitlab.gnome.org/GNOME/glib-networking/-/archive/2.78.0/glib-networking-2.78.0.tar.bz2
 https://gitlab.gnome.org/GNOME/glib-networking/-/archive/2.78.1/glib-networking-2.78.1.tar.bz2
@@ -2639,6 +2642,7 @@ https://gitlab.gnome.org/GNOME/gtk/-/archive/4.14.2/gtk-4.14.2.tar.bz2
 https://gitlab.gnome.org/GNOME/gtk/-/archive/4.14.3/gtk-4.14.3.tar.bz2
 https://gitlab.gnome.org/GNOME/gtk/-/archive/4.15.0/gtk-4.15.0.tar.bz2
 https://gitlab.gnome.org/GNOME/gtk/-/archive/4.15.3/gtk-4.15.3.tar.bz2
+https://gitlab.gnome.org/GNOME/gtksourceview/-/archive/4.8.4/gtksourceview-4.8.4.tar.bz2
 https://gitlab.gnome.org/GNOME/gtksourceview/-/archive/5.10.0/gtksourceview-5.10.0.tar.bz2
 https://gitlab.gnome.org/GNOME/gtksourceview/-/archive/5.12.1/gtksourceview-5.12.1.tar.bz2
 https://gitlab.gnome.org/GNOME/gtksourceview/-/archive/5.8.0/gtksourceview-5.8.0.tar.bz2
@@ -3092,6 +3096,7 @@ https://www.nasm.us/pub/nasm/releasebuilds/2.16.02/nasm-2.16.02.tar.gz
 https://www.nasm.us/pub/nasm/releasebuilds/2.16.03/nasm-2.16.03.tar.gz
 https://www.openldap.org/software/download/OpenLDAP/openldap-release/openldap-2.6.5.tgz
 https://www.openssl.org/source/old/1.1.1/openssl-1.1.1j.tar.gz
+https://www.pell.portland.or.us/~orc/Code/discount/discount-2.2.7d.tar.bz2
 https://www.prevanders.net/libdwarf-0.10.0.tar.xz
 https://www.prevanders.net/libdwarf-0.10.1.tar.xz
 https://www.prevanders.net/libdwarf-0.6.0.tar.xz
