@@ -16,7 +16,7 @@ lib/pcre/2
 lib/adwaita
 lib/enchant
 lib/gtk/deps
-lib/gtk/source/view
+lib/gtk/source/view/5
 lib/editor/config/core/c
 lib/gsettings/desktop/schemas
 {% endblock %}
