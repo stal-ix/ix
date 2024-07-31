@@ -22,6 +22,8 @@ lib/gtk/layer/shell
 lib/gee/gir
 lib/gi/files
 lib/handy/gir
+lib/harfbuzz/gir
+lib/gtk/layer/shell/gir
 lib/granite/{{gtk_ver}}/gir
 {% endblock %}
 
