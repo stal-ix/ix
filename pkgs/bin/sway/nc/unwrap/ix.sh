@@ -15,12 +15,14 @@ lib/handy
 lib/notify
 lib/granite
 lib/json/glib
-lib/handy/gir
 lib/gtk/layer/shell
 {% endblock %}
 
-{% block host_libs %}
+{% block bld_data %}
+lib/gee/gir
+lib/gi/files
 lib/handy/gir
+lib/granite/{{gtk_ver}}/gir
 {% endblock %}
 
 {% block bld_tool %}
@@ -29,7 +31,6 @@ bin/vala
 bin/sassc
 bld/gnome
 bin/scdoc
-lib/handy/gir
 {% endblock %}
 
 {% block meson_flags %}
