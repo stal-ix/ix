@@ -38,9 +38,3 @@ bin/scdoc
 {% block meson_flags %}
 pulse-audio=false
 {% endblock %}
-
-{% block build %}
-which vala
-echo ${VALAFLAGS}
-{{super()}}
-{% endblock %}
