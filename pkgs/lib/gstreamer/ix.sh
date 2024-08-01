@@ -11,6 +11,7 @@ lib/z
 lib/orc
 lib/drm
 lib/glib
+lib/openal
 lib/ffmpeg
 lib/opengl
 lib/udev/g
@@ -42,11 +43,12 @@ wrap_cc
 
 {% block meson_flags %}
 libav=enabled
-bad=disabled
+bad=enabled
 ges=disabled
 base=enabled
 good=enabled
 gst-plugins-good:soup=disabled
+gst-plugins-bad:openal=enabled
 ugly=disabled
 devtools=disabled
 rtsp_server=disabled
@@ -57,6 +59,11 @@ rtsp_server=disabled
 for x in ${out}/lib/pkgconfig/*.pc; do
     sed -e 's|toolsdir=.*||' -i ${x}
 done
+{% endblock %}
+
+{% block patch %}
+sed -e "s|'auto'|'disabled'|g" \
+    -i subprojects/gst-plugins-bad/meson_options.txt
 {% endblock %}
 
 {% block env %}
