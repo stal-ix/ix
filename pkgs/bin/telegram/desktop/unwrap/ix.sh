@@ -46,8 +46,12 @@ lib/qt/6/imageformats
 lib/{{allocator}}/trim(delay=3,bytes=30000000)
 {% endblock %}
 
+{% block bld_data %}
+lib/gi/files
+{% endblock %}
+
 {% block host_libs %}
-lib/glib/gir
+lib/glib/dl
 {% endblock %}
 
 {% block build_flags %}
@@ -88,6 +92,7 @@ bld/python
 bin/protoc
 bld/gir/cpp
 bld/wayland
+bld/prepend
 bld/pkg/config
 bld/qt/6/tools
 bld/qt/6/wayland
@@ -103,26 +108,21 @@ sed -e 's|Q_OS_LINUX|SHIT|' -i Telegram/lib_base/base/platform/linux/base_info_l
 
 >Telegram/lib_ui/ui/text/qtextitemint.cpp
 
-cat << EOF >> Telegram/SourceFiles/stdafx.h
-#if defined(__cplusplus)
-#include "Telegram/lib_ui/ui/widgets/scroll_area.h"
-#include "Telegram/ThirdParty/libtgvoip/webrtc_dsp/rtc_base/scoped_ref_ptr.h"
-#endif
+base64 -d << EOF > Telegram/lib_webrtc/webrtc/webrtc_create_adm.h
+{% include 'webrtc_create_adm.h/base64' %}
 EOF
 
 base64 -d << EOF > cmake/external/glib/generate_cppgir.cmake
 {% include 'generate_cppgir.cmake/base64' %}
 EOF
 
-find Telegram/lib_base/base/platform/linux -type f | while read l; do
-    sed -e 's|Fn(|std::function(|' -i ${l}
-done
+sed -e 's|.*add_cppgir().*||' -i cmake/external/glib/CMakeLists.txt
 
 sed -e 's|ranges::contains(cap|Contains(cap|' \
     -e 's|ranges::all_of(std::initializer_list|ranges::all_of(std::initializer_list<const char*>|' \
     -i Telegram/SourceFiles/platform/linux/notifications_manager_linux.cpp
 
-cat - Telegram/SourceFiles/platform/linux/notifications_manager_linux.cpp << EOF > _
+prepend Telegram/SourceFiles/platform/linux/notifications_manager_linux.cpp << EOF
 template <class T, class R>
 inline bool Contains(const T& t, const R& r) {
     for (const auto& x : t) {
@@ -134,27 +134,16 @@ inline bool Contains(const T& t, const R& r) {
     return false;
 }
 EOF
-mv _ Telegram/SourceFiles/platform/linux/notifications_manager_linux.cpp
-
-sed -e 's|.*add_cppgir().*||' -i cmake/external/glib/CMakeLists.txt
 
 sed -e 's|DESKTOP_APP_DISABLE_WAYLAND_INTEGRATION|TRUE|' -i Telegram/lib_webview/CMakeLists.txt
 
-find . -type f -name '*.cpp' | while read l; do
-    sed -e 's|GObject::Object|gi::repository::GObject::Object|g' -i ${l}
-done
-
-cat - Telegram/SourceFiles/info/info_content_widget.cpp << EOF > _
+prepend Telegram/SourceFiles/info/info_content_widget.cpp << EOF
 #include "Telegram/lib_ui/ui/effects/numbers_animation.h"
 EOF
 
-mv _ Telegram/SourceFiles/info/info_content_widget.cpp
-
-cat - Telegram/SourceFiles/info/media/info_media_list_widget.cpp << EOF > _
+prepend Telegram/SourceFiles/info/media/info_media_list_widget.cpp << EOF
 #include "Telegram/lib_ui/ui/effects/numbers_animation.h"
 EOF
-
-mv _ Telegram/SourceFiles/info/media/info_media_list_widget.cpp
 
 cd Telegram/ThirdParty/jemalloc
 

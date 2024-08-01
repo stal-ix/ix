@@ -18,6 +18,15 @@ lib/json/glib
 lib/gtk/layer/shell
 {% endblock %}
 
+{% block bld_data %}
+lib/gee/gir
+lib/gi/files
+lib/handy/gir
+lib/harfbuzz/gir
+lib/gtk/layer/shell/gir
+lib/granite/{{gtk_ver}}/gir
+{% endblock %}
+
 {% block bld_tool %}
 bld/glib
 bin/vala

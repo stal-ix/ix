@@ -1,15 +1,5 @@
-{% extends '//lib/gtk/source/view/t/ix.sh' %}
+{% extends '//die/hub.sh' %}
 
-{% block use_data %}
-lib/gtk/source/view/data
-{% endblock %}
-
-{% block bld_tool %}
-{{super()}}
-bld/reloc
-{% endblock %}
-
-{% block configure %}
-{{super()}}
-relocate "${SOURCE_VIEW_DATA}"
+{% block lib_deps %}
+lib/gtk/source/view/{{1 + gtk_ver | int}}
 {% endblock %}

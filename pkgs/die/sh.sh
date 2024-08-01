@@ -52,6 +52,10 @@ export ACLOCAL_PATH=
 export PKG_CONFIG_PATH=
 export CMAKE_PREFIX_PATH=
 export PYTHONDONTWRITEBYTECODE=1
+export GIRPATH=
+export VALAFLAGS=
+export GIRSFLAGS=
+export GIRCFLAGS=
 {% endblock %}
 
 source_env "${IX_B_DIR}"

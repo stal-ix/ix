@@ -1,11 +1,5 @@
 {% extends 't/ix.sh' %}
 
-{% block lib_deps %}
-{{super()}}
-lib/build/gir
-lib/build/vala
-{% endblock %}
-
 {% block host_libs %}
 {{super()}}
 lib/glib/dl

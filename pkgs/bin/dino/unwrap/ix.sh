@@ -21,11 +21,14 @@ lib/sqlite/3
 lib/qrencode
 lib/gtk/deps
 lib/gstreamer
-lib/adwaita/vapi
 lib/glib/networking
 lib/signal/protocol/c
-lib/build/vala
-lib/build/gir
+{% endblock %}
+
+{% block bld_data %}
+lib/gee/gir
+lib/gi/files
+lib/adwaita/vapi
 {% endblock %}
 
 {% block bld_tool %}

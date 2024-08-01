@@ -52,6 +52,7 @@ http://hpc.sourceforge.net/f2c.tar
 http://jfs.sourceforge.net/project/pub/jfsutils-1.1.15.tar.gz
 http://libspectre.freedesktop.org/releases/libspectre-0.2.12.tar.gz
 http://links.twibright.com/download/links-2.29.tar.bz2
+http://links.twibright.com/download/links-2.30.tar.bz2
 http://mandoc.bsd.lv/snapshots/mandoc-1.14.6.tar.gz
 http://miniupnp.free.fr/files/download.php?file=miniupnpc-2.2.3.tar.gz
 http://mirror.koddos.net/gcc/releases/gcc-11.2.0/gcc-11.2.0.tar.xz
@@ -554,7 +555,9 @@ https://gameoftrees.org/releases/portable/got-portable-0.93.tar.gz
 https://git.kernel.org/pub/scm/libs/libcap/libcap.git/snapshot/libcap-cap/v1.2.64.tar.gz
 https://git.kernel.org/pub/scm/libs/libtrace/libtraceevent.git/snapshot/libtraceevent-1.7.3.tar.gz
 https://git.kernel.org/pub/scm/libs/libtrace/libtraceevent.git/snapshot/libtraceevent-1.8.0.tar.gz
+https://git.kernel.org/pub/scm/libs/libtrace/libtraceevent.git/snapshot/libtraceevent-1.8.3.tar.gz
 https://git.kernel.org/pub/scm/libs/libtrace/libtracefs.git/snapshot/libtracefs-1.7.0.tar.gz
+https://git.kernel.org/pub/scm/libs/libtrace/libtracefs.git/snapshot/libtracefs-1.8.1.tar.gz
 https://git.kernel.org/pub/scm/linux/kernel/git/colyli/bcache-tools.git/snapshot/bcache-tools-1.1.tar.gz
 https://git.kernel.org/pub/scm/linux/kernel/git/dhowells/keyutils.git
 https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/snapshot/linux-firmware-20220209.tar.gz
@@ -621,6 +624,7 @@ https://github.com/AOMediaCodec/libavif/archive/refs/tags/v1.0.2.tar.gz
 https://github.com/AOMediaCodec/libavif/archive/refs/tags/v1.0.3.tar.gz
 https://github.com/AOMediaCodec/libavif/archive/refs/tags/v1.0.4.tar.gz
 https://github.com/AOMediaCodec/libavif/archive/refs/tags/v1.1.0.tar.gz
+https://github.com/AOMediaCodec/libavif/archive/refs/tags/v1.1.1.tar.gz
 https://github.com/ARMmbed/mbedtls/archive/refs/tags/v2.28.2.tar.gz
 https://github.com/ARMmbed/mbedtls/archive/refs/tags/v3.4.1.tar.gz
 https://github.com/ARMmbed/mbedtls/archive/refs/tags/v3.5.0.tar.gz
@@ -674,6 +678,7 @@ https://github.com/DanBloomberg/leptonica/archive/refs/tags/1.84.1.tar.gz
 https://github.com/DaveGamble/cJSON/archive/refs/tags/v1.7.17.tar.gz
 https://github.com/DaveGamble/cJSON/archive/refs/tags/v1.7.18.tar.gz
 https://github.com/DominicBreuker/pspy/archive/refs/tags/v1.2.1.tar.gz
+https://github.com/ErikReider/SwayNotificationCenter/archive/refs/tags/v0.10.1.tar.gz
 https://github.com/Esri/lerc/archive/refs/tags/js_v4.0.4.tar.gz
 https://github.com/Esri/lerc/archive/refs/tags/v4.0.0.tar.gz
 https://github.com/Exiv2/exiv2/archive/refs/tags/v0.27.6.tar.gz
@@ -908,6 +913,7 @@ https://github.com/PurpleI2P/i2pd/archive/refs/tags/2.50.2.tar.gz
 https://github.com/PurpleI2P/i2pd/archive/refs/tags/2.51.0.tar.gz
 https://github.com/PurpleI2P/i2pd/archive/refs/tags/2.52.0.tar.gz
 https://github.com/PurpleI2P/i2pd/archive/refs/tags/2.53.0.tar.gz
+https://github.com/PurpleI2P/i2pd/archive/refs/tags/2.53.1.tar.gz
 https://github.com/Rafostar/clapper/archive/refs/tags/0.6.1.tar.gz
 https://github.com/RazrFalcon/resvg/archive/refs/tags/v0.38.0.tar.gz
 https://github.com/RazrFalcon/resvg/archive/refs/tags/v0.39.0.tar.gz
@@ -1131,6 +1137,7 @@ https://github.com/curl/curl/archive/refs/tags/curl-8_5_0.tar.gz
 https://github.com/curl/curl/archive/refs/tags/curl-8_6_0.tar.gz
 https://github.com/curl/curl/archive/refs/tags/curl-8_7_1.tar.gz
 https://github.com/curl/curl/archive/refs/tags/curl-8_8_0.tar.gz
+https://github.com/curl/curl/archive/refs/tags/curl-8_9_1.tar.gz
 https://github.com/dandavison/delta/archive/refs/tags/0.16.5.tar.gz
 https://github.com/darkhz/bluetuith/archive/refs/tags/v0.1.7.tar.gz
 https://github.com/darkhz/bluetuith/archive/refs/tags/v0.2.2.tar.gz
@@ -1165,6 +1172,7 @@ https://github.com/ebiggers/libdeflate/archive/refs/tags/v1.19.tar.gz
 https://github.com/ebiggers/libdeflate/archive/refs/tags/v1.20.tar.gz
 https://github.com/editorconfig/editorconfig-core-c/archive/refs/tags/v0.12.6.tar.gz
 https://github.com/ekzhang/bore/archive/refs/tags/v0.5.0.tar.gz
+https://github.com/elementary/granite/archive/refs/tags/6.2.0.tar.gz
 https://github.com/elfmz/far2l/archive/refs/tags/v_2.5.0.tar.gz
 https://github.com/elfmz/far2l/archive/refs/tags/v_2.5.2.tar.gz
 https://github.com/elfmz/far2l/archive/refs/tags/v_2.6.0.tar.gz
@@ -1320,6 +1328,7 @@ https://github.com/git/git/archive/refs/tags/v2.44.0.tar.gz
 https://github.com/git/git/archive/refs/tags/v2.45.0.tar.gz
 https://github.com/git/git/archive/refs/tags/v2.45.1.tar.gz
 https://github.com/git/git/archive/refs/tags/v2.45.2.tar.gz
+https://github.com/git/git/archive/refs/tags/v2.46.0.tar.gz
 https://github.com/glencoesoftware/jxrlib/archive/refs/tags/v0.2.4.tar.gz
 https://github.com/glennrp/libpng/archive/refs/tags/v1.6.40.tar.gz
 https://github.com/glennrp/libpng/archive/refs/tags/v1.6.41.tar.gz
@@ -1392,6 +1401,7 @@ https://github.com/gphoto/libgphoto2/archive/refs/tags/v2.5.30.tar.gz
 https://github.com/greshake/i3status-rust/archive/refs/tags/v0.33.0.tar.gz
 https://github.com/grpc/grpc-java/archive/refs/tags/v1.51.3.tar.gz
 https://github.com/grpc/grpc-java/archive/refs/tags/v1.63.1.tar.gz
+https://github.com/gtk-rs/gir-files/archive/refs/tags/0.20.0.tar.gz
 https://github.com/haasn/libplacebo/archive/refs/tags/v5.264.1.tar.gz
 https://github.com/haasn/libplacebo/archive/refs/tags/v6.292.1.tar.gz
 https://github.com/haasn/libplacebo/archive/refs/tags/v6.338.0.tar.gz
@@ -1558,6 +1568,7 @@ https://github.com/junegunn/fzf/archive/refs/tags/0.52.1.tar.gz
 https://github.com/junegunn/fzf/archive/refs/tags/0.53.0.tar.gz
 https://github.com/junegunn/fzf/archive/refs/tags/v0.54.0.tar.gz
 https://github.com/junegunn/fzf/archive/refs/tags/v0.54.2.tar.gz
+https://github.com/junegunn/fzf/archive/refs/tags/v0.54.3.tar.gz
 https://github.com/kaniini/libucontext/archive/refs/tags/libucontext-1.2.tar.gz
 https://github.com/kcat/openal-soft/archive/refs/tags/1.23.1.tar.gz
 https://github.com/keepassxreboot/keepassxc/releases/download/2.7.6/keepassxc-2.7.6-src.tar.xz
@@ -1947,6 +1958,7 @@ https://github.com/pg83/ssh3/archive/068856ab41189b28ea8c93547d5e27356f882690.zi
 https://github.com/pg83/ssh3/archive/75d80cf4e6a372ffed22a2254f6e3d67373fdc61.zip
 https://github.com/pg83/ssh3/archive/d900eb49a68945f924d6308765eead9f9eec7c27.zip
 https://github.com/pg83/ted/archive/refs/tags/v6.tar.gz
+https://github.com/phase1geo/Minder/archive/refs/tags/1.16.4.tar.gz
 https://github.com/phillipberndt/pqiv/archive/refs/tags/2.12.tar.gz
 https://github.com/phillipberndt/pqiv/archive/refs/tags/2.13.1.tar.gz
 https://github.com/phillipberndt/pqiv/archive/refs/tags/2.13.tar.gz
@@ -2097,6 +2109,7 @@ https://github.com/redis/redis/archive/refs/tags/7.2.0.tar.gz
 https://github.com/redis/redis/archive/refs/tags/7.2.2.tar.gz
 https://github.com/redis/redis/archive/refs/tags/7.2.3.tar.gz
 https://github.com/redis/redis/archive/refs/tags/7.2.4.tar.gz
+https://github.com/redis/redis/archive/refs/tags/7.4.0.tar.gz
 https://github.com/relan/exfat/releases/download/v1.4.0/exfat-utils-1.4.0.tar.gz
 https://github.com/rfc1036/whois/archive/refs/tags/v5.5.18.tar.gz
 https://github.com/rfc1036/whois/archive/refs/tags/v5.5.19.tar.gz
@@ -2302,6 +2315,7 @@ https://github.com/telegramdesktop/tdesktop/releases/download/v5.1.4/tdesktop-5.
 https://github.com/telegramdesktop/tdesktop/releases/download/v5.1.8/tdesktop-5.1.8-full.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v5.2.0/tdesktop-5.2.0-full.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v5.2.3/tdesktop-5.2.3-full.tar.gz
+https://github.com/telegramdesktop/tdesktop/releases/download/v5.2.6/tdesktop-5.2.6-full.tar.gz
 https://github.com/tenox7/ttyplot/archive/refs/tags/1.6.1.tar.gz
 https://github.com/tesseract-ocr/tesseract/archive/refs/tags/5.2.0.tar.gz
 https://github.com/tetratelabs/wazero/archive/refs/tags/v1.5.0.tar.gz
@@ -2336,6 +2350,7 @@ https://github.com/troglobit/editline/archive/refs/tags/1.17.1.tar.gz
 https://github.com/troglobit/sysklogd/archive/refs/tags/v2.5.1.tar.gz
 https://github.com/troglobit/sysklogd/archive/refs/tags/v2.5.2.tar.gz
 https://github.com/troglobit/sysklogd/archive/refs/tags/v2.6.0.tar.gz
+https://github.com/troglobit/sysklogd/archive/refs/tags/v2.6.1.tar.gz
 https://github.com/troydhanson/uthash/archive/refs/tags/v2.3.0.tar.gz
 https://github.com/tsl0922/ttyd/archive/refs/tags/1.7.3.tar.gz
 https://github.com/tsl0922/ttyd/archive/refs/tags/1.7.4.tar.gz
@@ -2540,6 +2555,7 @@ https://gitlab.freedesktop.org/gstreamer/gstreamer/-/archive/1.24.2/gstreamer-1.
 https://gitlab.freedesktop.org/gstreamer/gstreamer/-/archive/1.24.3/gstreamer-1.24.3.tar.gz
 https://gitlab.freedesktop.org/gstreamer/gstreamer/-/archive/1.24.4/gstreamer-1.24.4.tar.gz
 https://gitlab.freedesktop.org/gstreamer/gstreamer/-/archive/1.24.5/gstreamer-1.24.5.tar.gz
+https://gitlab.freedesktop.org/gstreamer/gstreamer/-/archive/1.24.6/gstreamer-1.24.6.tar.gz
 https://gitlab.freedesktop.org/libdecor/libdecor/-/archive/0.2.0/libdecor-0.2.0.tar.bz2
 https://gitlab.freedesktop.org/libdecor/libdecor/-/archive/0.2.1/libdecor-0.2.1.tar.bz2
 https://gitlab.freedesktop.org/libdecor/libdecor/-/archive/0.2.2/libdecor-0.2.2.tar.bz2
@@ -2596,6 +2612,7 @@ https://gitlab.gnome.org/GNOME/gcr/-/archive/4.1.0/gcr-4.1.0.tar.bz2
 https://gitlab.gnome.org/GNOME/gcr/-/archive/4.2.0/gcr-4.2.0.tar.bz2
 https://gitlab.gnome.org/GNOME/gcr/-/archive/4.2.1/gcr-4.2.1.tar.bz2
 https://gitlab.gnome.org/GNOME/gcr/-/archive/4.3.0/gcr-4.3.0.tar.bz2
+https://gitlab.gnome.org/GNOME/geary/-/archive/46.0/geary-46.0.tar.bz2
 https://gitlab.gnome.org/GNOME/glib-networking/-/archive/2.76.1/glib-networking-2.76.1.tar.bz2
 https://gitlab.gnome.org/GNOME/glib-networking/-/archive/2.78.0/glib-networking-2.78.0.tar.bz2
 https://gitlab.gnome.org/GNOME/glib-networking/-/archive/2.78.1/glib-networking-2.78.1.tar.bz2
@@ -2626,6 +2643,7 @@ https://gitlab.gnome.org/GNOME/gtk/-/archive/4.14.2/gtk-4.14.2.tar.bz2
 https://gitlab.gnome.org/GNOME/gtk/-/archive/4.14.3/gtk-4.14.3.tar.bz2
 https://gitlab.gnome.org/GNOME/gtk/-/archive/4.15.0/gtk-4.15.0.tar.bz2
 https://gitlab.gnome.org/GNOME/gtk/-/archive/4.15.3/gtk-4.15.3.tar.bz2
+https://gitlab.gnome.org/GNOME/gtksourceview/-/archive/4.8.4/gtksourceview-4.8.4.tar.bz2
 https://gitlab.gnome.org/GNOME/gtksourceview/-/archive/5.10.0/gtksourceview-5.10.0.tar.bz2
 https://gitlab.gnome.org/GNOME/gtksourceview/-/archive/5.12.1/gtksourceview-5.12.1.tar.bz2
 https://gitlab.gnome.org/GNOME/gtksourceview/-/archive/5.8.0/gtksourceview-5.8.0.tar.bz2
@@ -3029,6 +3047,7 @@ https://www.ivarch.com/programs/sources/pv-1.8.9.tar.gz
 https://www.jedsoft.org/releases/jed/jed-0.99-19.tar.bz2
 https://www.jedsoft.org/releases/most/most-5.2.0.tar.gz
 https://www.jedsoft.org/releases/slang/slang-2.3.3.tar.bz2
+https://www.kernel.org/pub/linux/kernel/people/kdave/btrfs-progs/btrfs-progs-v6.10.tar.xz
 https://www.kernel.org/pub/linux/kernel/people/kdave/btrfs-progs/btrfs-progs-v6.5.1.tar.xz
 https://www.kernel.org/pub/linux/kernel/people/kdave/btrfs-progs/btrfs-progs-v6.5.2.tar.xz
 https://www.kernel.org/pub/linux/kernel/people/kdave/btrfs-progs/btrfs-progs-v6.5.3.tar.xz
@@ -3078,6 +3097,7 @@ https://www.nasm.us/pub/nasm/releasebuilds/2.16.02/nasm-2.16.02.tar.gz
 https://www.nasm.us/pub/nasm/releasebuilds/2.16.03/nasm-2.16.03.tar.gz
 https://www.openldap.org/software/download/OpenLDAP/openldap-release/openldap-2.6.5.tgz
 https://www.openssl.org/source/old/1.1.1/openssl-1.1.1j.tar.gz
+https://www.pell.portland.or.us/~orc/Code/discount/discount-2.2.7d.tar.bz2
 https://www.prevanders.net/libdwarf-0.10.0.tar.xz
 https://www.prevanders.net/libdwarf-0.10.1.tar.xz
 https://www.prevanders.net/libdwarf-0.6.0.tar.xz

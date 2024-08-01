@@ -30,7 +30,8 @@ def it_obj():
         if x.endswith('.o'):
             yield x
         elif x.endswith('.a'):
-            yield x
+            if 'obj/src/' not in x:
+                yield x
 
 def sym_list():
     cmd = [
@@ -60,6 +61,8 @@ def flt_args(a):
         elif x.startswith('-L'):
             pass
         elif x.startswith('-Wl'):
+            pass
+        elif 'obj/src/' in x and '.a' in x:
             pass
         else:
             yield x

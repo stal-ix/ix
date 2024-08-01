@@ -1,8 +1,8 @@
 {% extends '//die/c/autohell.sh' %}
 
 {% block fetch %}
-http://links.twibright.com/download/links-2.29.tar.bz2
-sha:22aa96c0b38e1a6f8f7ed9d7a4167a47fc37246097759ef6059ecf8f9ead7998
+http://links.twibright.com/download/links-2.30.tar.bz2
+sha:c4631c6b5a11527cdc3cb7872fc23b7f2b25c2b021d596be410dadb40315f166
 {% endblock %}
 
 {% block bld_libs %}

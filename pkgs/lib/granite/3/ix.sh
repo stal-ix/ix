@@ -11,9 +11,10 @@ lib/gee
 lib/gtk/3
 {% endblock %}
 
-{% block bld_libs %}
+{% block bld_data %}
+lib/gee/gir
+lib/gi/files
 lib/harfbuzz/gir
-lib/glib/gir
 {% endblock %}
 
 {% block bld_tool %}
@@ -21,8 +22,4 @@ bld/gir
 bin/vala
 bld/gnome
 bld/gettext
-lib/gee
-lib/harfbuzz/gir
-lib/build/gir
-lib/build/vala
 {% endblock %}

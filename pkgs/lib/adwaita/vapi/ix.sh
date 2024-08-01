@@ -2,23 +2,23 @@
 
 {% block bld_libs %}
 {{super()}}
-lib/harfbuzz/gir
-lib/glib/gir
+lib/gi/repository
 {% endblock %}
 
 {% block host_libs %}
 {{super()}}
-lib/adwaita
+lib/adwaita/dl
+{% endblock %}
+
+{% block bld_data %}
 lib/harfbuzz/gir
+lib/gi/files
 {% endblock %}
 
 {% block bld_tool %}
 {{super()}}
 bld/gir
 bin/vala
-lib/harfbuzz/gir
-lib/build/gir
-lib/build/vala
 {% endblock %}
 
 {% block c_rename_symbol %}
