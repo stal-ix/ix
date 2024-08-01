@@ -128,11 +128,21 @@ class RealmCtx:
     def iter_all_runtime_depends(self):
         return list(cu.uniq_p(self.calc_all_runtime_depends()))
 
+    def calc_all_fix_depends(self):
+        for d in self.iter_all_runtime_depends():
+            yield from d.descr['fix']['deps']
+
+    @cu.cached_method
+    def iter_all_fix_depends(self):
+        return list(cu.uniq_p(self.calc_all_fix_depends()))
+
     def calc_all_build_depends(self):
         flags = {}
 
         for k, v in self.pkgs['flags'].items():
             flags['target_' + k] = v
+
+        flags['target_fixers'] = '\n'.join(self.iter_all_fix_depends())
 
         for p in self.load_packages([{'name': 'bld/realm', 'flags': flags}]):
             yield p

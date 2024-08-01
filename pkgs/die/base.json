@@ -11,6 +11,9 @@
         "deps": {% block runtime_depends %}[]{% endblock %},
         "data": {% block runtime_data %}[]{% endblock %}
     },
+    "fix": {
+        "deps": {% block fix_deps %}[]{% endblock %}
+    },
     "lib": {
         "deps": {% block library_depends %}[]{% endblock %}
     },

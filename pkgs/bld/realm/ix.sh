@@ -12,4 +12,5 @@ bld/realm/materialize
 {% else %}
 bld/realm/symlink
 {% endif %}
+{{target_fixers}}
 {% endblock %}
