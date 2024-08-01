@@ -2907,6 +2907,7 @@ https://skarnet.org/software/execline/execline-2.8.2.0.tar.gz
 https://skarnet.org/software/mdevd/mdevd-0.1.5.1.tar.gz
 https://skarnet.org/software/nsss/nsss-0.2.0.1.tar.gz
 https://skarnet.org/software/skalibs/skalibs-2.11.1.0.tar.gz
+https://sndio.org/sndio-1.10.0.tar.gz
 https://sndio.org/sndio-1.9.0.tar.gz
 https://snowballstem.org/dist/libstemmer_c-2.2.0.tar.gz
 https://sortix.org/libz/release/libz-1.2.8.2015.12.26.tar.gz
