@@ -77,6 +77,8 @@ clang -o evincexxx stub.c $(find -type f -name '*.o' | grep -v 'evinced.p' | gre
 
 {% block install %}
 {{super()}}
+cp -R ${out}/share/evince/icons ${out}/share/
+rm -rf ${out}/share/evince/icons
 rm -r ${out}/bin/bin_*
 cp ${tmp}/evincexxx ${out}/bin/evince
 {% endblock %}
