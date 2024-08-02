@@ -1,4 +1,4 @@
-http://ix-eparo-mirror.duckdns.org/
+http://ix-mirror-0.paroshin.xyz/
 http://ix-mirror.mooo.com/
 http://ix.kmeaw.com/
 http://ix.homelab.cam:8080/?
