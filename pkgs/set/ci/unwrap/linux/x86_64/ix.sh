@@ -43,6 +43,7 @@
 #}
 
 {% block run_deps %}
+bin/elementary/terminal
 bin/avizo
 bin/valkey
 bin/minder
