@@ -730,6 +730,7 @@ https://github.com/GNOME/libshumate/archive/refs/tags/1.1.2.tar.gz
 https://github.com/GNOME/libshumate/archive/refs/tags/1.1.3.tar.gz
 https://github.com/GNOME/libshumate/archive/refs/tags/1.2.0.tar.gz
 https://github.com/GNOME/libshumate/archive/refs/tags/1.2.1.tar.gz
+https://github.com/GNOME/libshumate/archive/refs/tags/1.2.3.tar.gz
 https://github.com/GStreamer/orc/archive/refs/tags/0.4.34.tar.gz
 https://github.com/GStreamer/orc/archive/refs/tags/0.4.35.tar.gz
 https://github.com/GStreamer/orc/archive/refs/tags/0.4.37.tar.gz
@@ -2882,6 +2883,7 @@ https://poppler.freedesktop.org/poppler-24.02.0.tar.xz
 https://poppler.freedesktop.org/poppler-24.03.0.tar.xz
 https://poppler.freedesktop.org/poppler-24.06.1.tar.xz
 https://poppler.freedesktop.org/poppler-24.07.0.tar.xz
+https://poppler.freedesktop.org/poppler-24.08.0.tar.xz
 https://pwmt.org/projects/zathura-djvu/download/zathura-djvu-0.2.9.tar.xz
 https://pwmt.org/projects/zathura-pdf-poppler/download/zathura-pdf-poppler-0.3.1.tar.xz
 https://raw.githubusercontent.com/AppImageCommunity/libappimage/9c1fae809dedbb3015e9cd5b46e2b5aab06df36e/src/patches/squashfuse.patch
