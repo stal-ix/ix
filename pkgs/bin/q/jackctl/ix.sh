@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://download.sourceforge.net/qjackctl/qjackctl-0.9.10.tar.gz
-sha:9c07a8a98744b42c53a93864e47842d818dfaaea85078356851c6592997f1eee
+https://download.sourceforge.net/qjackctl/qjackctl-1.0.1.tar.gz
+sha:b955b00e72272da027f8fffa02822529d6d993b3c4782a764cda9c4c2f27c13d
 {% endblock %}
 
 {% block bld_libs %}
