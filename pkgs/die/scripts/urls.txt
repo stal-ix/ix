@@ -2718,6 +2718,7 @@ https://gitlab.gnome.org/GNOME/zenity/-/archive/3.90.0/zenity-3.90.0.tar.bz2
 https://gitlab.gnome.org/GNOME/zenity/-/archive/4.0.0/zenity-4.0.0.tar.bz2
 https://gitlab.gnome.org/GNOME/zenity/-/archive/4.0.1/zenity-4.0.1.tar.bz2
 https://gitlab.gnome.org/GNOME/zenity/-/archive/4.0.2/zenity-4.0.2.tar.bz2
+https://gitlab.gnome.org/World/libcloudproviders/-/archive/0.3.6/libcloudproviders-0.3.6.tar.bz2
 https://gitlab.gnome.org/chergert/ptyxis/-/archive/08564402b8a9bc53bc2dbd3ff14f9d9598c14b7b/ptyxis-08564402b8a9bc53bc2dbd3ff14f9d9598c14b7b.tar.bz2
 https://gitlab.gnome.org/chergert/ptyxis/-/archive/46.1/ptyxis-46.1.tar.bz2
 https://gitlab.gnome.org/chergert/ptyxis/-/archive/46.2/ptyxis-46.2.tar.bz2
