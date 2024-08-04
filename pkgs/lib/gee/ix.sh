@@ -11,6 +11,7 @@ lib/glib
 {% endblock %}
 
 {% block bld_data %}
+lib/gi/repository/gir
 lib/gi/files
 {% endblock %}
 
@@ -23,4 +24,5 @@ bld/auto/archive
 {% block make_flags %}
 INTROSPECTION_SCANNER=g-ir-scanner
 INTROSPECTION_COMPILER=g-ir-compiler
+INTROSPECTION_MAKEFILE=${INTROSPECTION_MAKEFILE}
 {% endblock %}
