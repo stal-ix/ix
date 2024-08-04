@@ -13,6 +13,7 @@ lib/gi/repository
 
 {% block host_libs %}
 {{super()}}
+lib/gi/repository
 lib/harfbuzz/dl/core
 lib/harfbuzz/dl/gobject
 {% endblock %}

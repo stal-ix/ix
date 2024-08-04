@@ -9,6 +9,7 @@ sha:8d722e958244747989973c743d1b1e5d9b7adba0cf6f7193daef4045e79b896d
 mkdir -p ${out}/share/gir-1.0
 cp *.gir ${out}/share/gir-1.0/
 rm ${out}/share/gir-1.0/Harf*
+rm ${out}/share/gir-1.0/Grap*
 {% endblock %}
 
 {#rm ${out}/share/gir-1.0/Pango*#}
