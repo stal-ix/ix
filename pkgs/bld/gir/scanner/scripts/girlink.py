@@ -17,3 +17,4 @@ if '-E' in sys.argv:
 print(f'GIRLINK {sys.argv}', file=sys.stderr)
 
 subprocess.check_call(['dynlink'] + sys.argv[1:])
+#subprocess.check_call(['dynlink', sys.argv[1], '-Wl,--whole-archive', '-Wl,--no-as-needed', '-Wl,-z,muldefs'] + sys.argv[2:])
