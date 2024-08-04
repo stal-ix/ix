@@ -1,8 +1,8 @@
 {% extends '//bin/zathura/t/ix.sh' %}
 
 {% block fetch %}
-https://git.pwmt.org/pwmt/zathura-ps/-/archive/0.2.7/zathura-ps-0.2.7.tar.bz2
-sha:8c66733b121ec9df91c8860336535bfe5299a9ab7412af3c3990bdb2150c95f8
+https://github.com/pwmt/zathura-ps/archive/refs/tags/0.2.8.tar.gz
+sha:b8b42c4517e4bdaee4c84c1c6e7298cabf00fc40b9b95f59feee0f61fe780b54
 {% endblock %}
 
 {% block lib_deps %}
