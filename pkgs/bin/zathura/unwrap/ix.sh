@@ -1,6 +1,7 @@
 {% extends '//bin/zathura/headers/ix.sh' %}
 
 {% block bld_libs %}
+lib/build/muldefs
 lib/magic
 lib/seccomp
 lib/sqlite/3
@@ -35,7 +36,7 @@ sed -e "s|plugindir = .*|plugindir = join_paths(datadir, 'plugins')|" -i meson.b
 
 cd ${tmp}
 
-ver='5_6'
+ver='6_7'
 
 dl_stubs << EOF >> stubs.c
 ps      zathura_plugin_${ver} ps_zathura_plugin_${ver}
