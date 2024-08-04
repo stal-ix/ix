@@ -9,6 +9,7 @@
 {% block bld_libs %}
 lib/c
 lib/z
+lib/ada
 lib/lz4
 lib/c++
 lib/vpx
@@ -159,4 +160,11 @@ done
 {% block c_rename_symbol %}
 zwp_linux_dmabuf_v1_interface
 zwp_linux_buffer_params_v1_interface
+{% endblock %}
+
+{% block configure %}
+{{super()}}
+sed -e 's|cmake/external/cld3/protobuf$:$:protoc|'"$(which protoc)"'|g' \
+    -e 's|protobuf::protoc|protoc|g' \
+    -i ${tmp}/obj/build.ninja
 {% endblock %}

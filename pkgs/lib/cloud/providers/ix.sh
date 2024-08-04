@@ -2,6 +2,6 @@
 
 {% block meson_flags %}
 {{super()}}
-vapi=false
+vapigen=false
 introspection=false
 {% endblock %}

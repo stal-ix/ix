@@ -21,6 +21,16 @@ typedef void* Window;
 #define DisplayHeight(X, Y) 0
 EOF
 
+cat << EOF > ${out}/include/X11/Xatom.h
+#pragma once
+#include <X11/Xlib.h>
+EOF
+
+cat << EOF > ${out}/include/X11/Xregion.h
+#pragma once
+#include <X11/Xlib.h>
+EOF
+
 cat << EOF > ${out}/include/X11/Xutil.h
 #pragma once
 #include <X11/Xlib.h>

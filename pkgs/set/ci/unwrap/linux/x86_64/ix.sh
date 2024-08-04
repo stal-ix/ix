@@ -28,15 +28,24 @@
 #bin/claws/mail
 #bin/samba
 #bin/grv
-#bin/avizo
 #bin/efitools
 #bin/colord
 #bin/tex/studio
 #bin/rr
 #bin/gendesk
+#bin/cups
+#bin/ras/daemon
+#bin/ff/play
+#bin/npm
+#bin/yt
+#bin/inkscape
+#bin/balsa
 #}
 
 {% block run_deps %}
+bin/elementary/files
+bin/elementary/terminal
+bin/avizo
 bin/valkey
 bin/minder
 bin/sway/nc
@@ -79,7 +88,6 @@ bin/shot/man
 bin/sway/fx
 bin/dns/proxy
 bin/openntpd
-#bin/cups
 bin/yazi
 bin/util/wipefs
 bin/bcache/tools
@@ -94,7 +102,6 @@ bin/yggdrasil/go
 bin/fire/jail
 bin/minio
 bin/dropbear/2024
-#bin/ras/daemon
 bin/nebula
 bin/mcelog
 bin/iperf
@@ -186,7 +193,6 @@ bin/nheko
 bin/kms/xx
 bin/muslstack
 bin/aom
-#bin/ff/play
 bin/tinylog
 bin/qemacs
 bin/uasm
@@ -240,7 +246,6 @@ bin/ip/route2
 bin/sddm
 bin/ghost/script
 bin/havoc
-#bin/npm
 bin/protoc/c
 bin/systool
 bin/hwinfo
@@ -267,7 +272,6 @@ bin/dnsmasq
 bin/go/awk
 bin/sniffer
 bin/webp/gui
-#bin/yt
 bin/links/sdl
 bin/icc
 bin/xdg/desktop/portal/ix
@@ -532,7 +536,6 @@ bin/coreutils/9/1
 bin/coreutils/lite
 bin/coreutils
 bin/f2fs/tools
-#bin/inkscape
 bin/b2
 bin/exfat/progs
 bin/exfat/utils
