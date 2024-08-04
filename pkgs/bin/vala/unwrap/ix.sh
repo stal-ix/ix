@@ -12,6 +12,7 @@ lib/gi/repository
 {% endblock %}
 
 {% block bld_data %}
+lib/gi/repository/gir
 lib/gi/files
 {% endblock %}
 

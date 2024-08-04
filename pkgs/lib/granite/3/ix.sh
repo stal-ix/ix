@@ -13,8 +13,9 @@ lib/gtk/3
 
 {% block bld_data %}
 lib/gee/gir
-lib/gi/files
+lib/gi/repository/gir
 lib/harfbuzz/gir
+lib/gi/files
 {% endblock %}
 
 {% block bld_tool %}
