@@ -15,6 +15,8 @@ lib/pango
 lib/portal
 lib/granite
 lib/canberra
+lib/shim/gdk
+lib/shim/x11
 lib/sqlite/3
 lib/dbus/glib
 lib/git/2/glib
