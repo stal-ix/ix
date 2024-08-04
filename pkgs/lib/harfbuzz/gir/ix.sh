@@ -2,6 +2,7 @@
 
 {% block bld_data %}
 {{super()}}
+lib/gi/repository/gir
 lib/gi/files
 {% endblock %}
 

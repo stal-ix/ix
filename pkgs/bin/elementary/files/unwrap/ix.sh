@@ -44,6 +44,7 @@ lib/cloud/providers/gir
 lib/portal/gir(gtk_ver={{gtk_ver}})
 lib/granite/{{gtk_ver}}/gir
 lib/canberra/gir
+lib/gi/repository/gir
 lib/gi/files
 {% endblock %}
 

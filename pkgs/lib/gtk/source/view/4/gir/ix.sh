@@ -19,8 +19,9 @@ lib/shim/fake/pkg(pkg_name=vapigen,pkg_ver=100.500)
 {% endblock %}
 
 {% block bld_data %}
-lib/gi/files
+lib/gi/repository/gir
 lib/harfbuzz/gir
+lib/gi/files
 {% endblock %}
 
 {% block bld_tool %}

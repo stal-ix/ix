@@ -30,10 +30,11 @@ bld/gettext
 
 {% block bld_data %}
 lib/gee/gir
-lib/gi/files
 lib/handy/gir
 lib/granite/{{gtk_ver}}/gir
 lib/gtk/source/view/{{1 + gtk_ver | int}}/gir
+lib/gi/repository/gir
+lib/gi/files
 {% endblock %}
 
 {% block patch %}

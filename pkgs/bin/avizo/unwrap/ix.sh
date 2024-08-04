@@ -25,7 +25,8 @@ lib/gdk/pixbuf
 {% endblock %}
 
 {% block bld_data %}
-lib/gi/files
 lib/harfbuzz/gir
 lib/gtk/layer/shell/gir
+lib/gi/repository/gir
+lib/gi/files
 {% endblock %}

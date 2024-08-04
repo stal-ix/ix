@@ -1,13 +1,13 @@
-{% extends '//lib/gtk/layer/shell/t/ix.sh' %}
+{% extends '//lib/pango/t/ix.sh' %}
 
 {% block meson_flags %}
 {{super()}}
-introspection=true
+introspection=enabled
 {% endblock %}
 
 {% block host_libs %}
 {{super()}}
-lib/gtk/layer/shell
+lib/pango/dl
 {% endblock %}
 
 {% block bld_libs %}
@@ -24,7 +24,6 @@ lib/gi/files
 {% block bld_tool %}
 {{super()}}
 bld/gir
-bin/vala
 {% endblock %}
 
 {% block install %}
@@ -34,7 +33,7 @@ mv ${out}/lib/gi* ${out}/share/
 
 {% block env %}
 export GIRPATH="${out}/share/gir-1.0:\${GIRPATH}"
-export VALAFLAGS="--girdir=${out}/share/gir-1.0 --vapidir=${out}/share/vala/vapi \${VALAFLAGS}"
+export VALAFLAGS="--girdir=${out}/share/gir-1.0 \${VALAFLAGS}"
 export GIRSFLAGS="--add-include-path=${out}/share/gir-1.0 \${GIRSFLAGS}"
 export GIRCFLAGS="--includedir=${out}/share/gir-1.0 \${GIRCFLAGS}"
 {% endblock %}

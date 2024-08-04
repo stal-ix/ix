@@ -691,6 +691,7 @@ https://github.com/FFmpeg/FFmpeg/archive/refs/tags/n4.4.2.tar.gz
 https://github.com/FedoraQt/adwaita-qt/archive/refs/tags/1.4.1.tar.gz
 https://github.com/FluidSynth/fluidsynth/archive/refs/tags/v2.3.4.tar.gz
 https://github.com/FluidSynth/fluidsynth/archive/refs/tags/v2.3.5.tar.gz
+https://github.com/FluidSynth/fluidsynth/archive/refs/tags/v2.3.6.tar.gz
 https://github.com/FlyGoat/RyzenAdj/archive/refs/tags/v0.13.0.tar.gz
 https://github.com/FlyGoat/RyzenAdj/archive/refs/tags/v0.14.0.tar.gz
 https://github.com/FortAwesome/Font-Awesome/archive/refs/tags/5.15.4.tar.gz
@@ -969,6 +970,7 @@ https://github.com/a-j-wood/pv/releases/download/v1.7.24/pv-1.7.24.tar.gz
 https://github.com/abseil/abseil-cpp/archive/refs/tags/20230125.3.tar.gz
 https://github.com/abseil/abseil-cpp/archive/refs/tags/20230802.1.tar.gz
 https://github.com/abseil/abseil-cpp/archive/refs/tags/20240116.0.tar.gz
+https://github.com/ada-url/ada/archive/refs/tags/v2.9.0.tar.gz
 https://github.com/adah1972/libunibreak/archive/refs/tags/libunibreak_5_1.tar.gz
 https://github.com/adah1972/libunibreak/archive/refs/tags/libunibreak_6_0.tar.gz
 https://github.com/adah1972/libunibreak/archive/refs/tags/libunibreak_6_1.tar.gz

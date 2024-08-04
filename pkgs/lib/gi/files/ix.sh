@@ -11,6 +11,8 @@ cp *.gir ${out}/share/gir-1.0/
 rm ${out}/share/gir-1.0/Harf*
 {% endblock %}
 
+{#rm ${out}/share/gir-1.0/Pango*#}
+
 {% block env %}
 export GIRPATH="${out}/share/gir-1.0:\${GIRPATH}"
 export VALAFLAGS="--girdir=${out}/share/gir-1.0 \${VALAFLAGS}"

@@ -20,11 +20,12 @@ lib/gtk/layer/shell
 
 {% block bld_data %}
 lib/gee/gir
-lib/gi/files
 lib/handy/gir
 lib/harfbuzz/gir
 lib/gtk/layer/shell/gir
 lib/granite/{{gtk_ver}}/gir
+lib/gi/repository/gir
+lib/gi/files
 {% endblock %}
 
 {% block bld_tool %}
