@@ -16,5 +16,16 @@ if '-E' in sys.argv:
 
 print(f'GIRLINK {sys.argv}', file=sys.stderr)
 
-subprocess.check_call(['dynlink'] + sys.argv[1:])
+def flt_args(args):
+    for x in args:
+        if x.startswith('-L/'):
+            pass
+        elif x.startswith('-l'):
+            pass
+        elif '/obj/' in x and x.endswith('.a'):
+            pass
+        else:
+            yield x
+
+subprocess.check_call(['dynlink'] + list(flt_args(sys.argv[1:])))
 #subprocess.check_call(['dynlink', sys.argv[1], '-Wl,--whole-archive', '-Wl,--no-as-needed', '-Wl,-z,muldefs'] + sys.argv[2:])

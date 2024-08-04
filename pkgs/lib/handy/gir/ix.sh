@@ -7,7 +7,6 @@ introspection=enabled
 
 {% block host_libs %}
 {{super()}}
-lib/handy
 lib/handy/dl
 {% endblock %}
 
