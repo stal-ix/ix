@@ -22,7 +22,7 @@ def flt_args(args):
             pass
         elif x.startswith('-l'):
             pass
-        elif '/obj/' in x and x.endswith('.a'):
+        elif '/obj/' in x and x.endswith('.a') and 'Telegram' not in x:
             pass
         else:
             yield x
