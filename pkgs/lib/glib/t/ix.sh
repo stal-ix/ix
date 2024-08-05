@@ -21,7 +21,7 @@ lib/darwin/framework/Foundation
 {% endblock %}
 
 {% block bld_tool %}
-bld/meson
+bld/meson/1
 pip/packaging
 {% if darwin %}
 bld/cctools

@@ -5,12 +5,8 @@ https://gitlab.gnome.org/GNOME/mutter/-/archive/47.beta/mutter-47.beta.tar.bz2
 sha:e24bbbf36f8372284da28ba2d4042949d0991a1dbdfccc45ca55f067ba97bf57
 {% endblock %}
 
-{% block meson_binary %}
-bin/meson/1/4
-{% endblock %}
-
-{% block meson_pkg_config %}
-bld/pkg/config/wrapped
+{% block meson_tool %}
+bld/meson/4
 {% endblock %}
 
 {% block bld_libs %}
