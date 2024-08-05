@@ -2,5 +2,5 @@
 
 {% block bld_libs %}
 {{super()}}
-bin/mutter/plugin/dl
+bin/mutter/dl
 {% endblock %}

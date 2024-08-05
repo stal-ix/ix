@@ -1,11 +1,7 @@
-{% extends '//die/dl/lib.sh' %}
+{% extends '//die/dl/fix.sh' %}
 
-{% block lib_deps %}
-bin/mutter/plugin
-{% endblock %}
-
-{% block export_libs %}
-libdefault.a
+{% block export_symbols %}
+meta_plugin_register_type
 {% endblock %}
 
 {% block export_lib %}
