@@ -430,6 +430,7 @@ https://ftp.gnu.org/gnu/bash/bash-5.2.tar.gz
 https://ftp.gnu.org/gnu/bc/bc-1.07.1.tar.gz
 https://ftp.gnu.org/gnu/binutils/binutils-2.41.tar.bz2
 https://ftp.gnu.org/gnu/binutils/binutils-2.42.tar.bz2
+https://ftp.gnu.org/gnu/binutils/binutils-2.43.tar.bz2
 https://ftp.gnu.org/gnu/bison/bison-3.4.1.tar.xz
 https://ftp.gnu.org/gnu/bison/bison-3.5.1.tar.xz
 https://ftp.gnu.org/gnu/bison/bison-3.6.1.tar.xz
@@ -1178,6 +1179,7 @@ https://github.com/ebassi/graphene/archive/refs/tags/1.10.8.tar.gz
 https://github.com/ebiggers/libdeflate/archive/refs/tags/v1.18.tar.gz
 https://github.com/ebiggers/libdeflate/archive/refs/tags/v1.19.tar.gz
 https://github.com/ebiggers/libdeflate/archive/refs/tags/v1.20.tar.gz
+https://github.com/ebiggers/libdeflate/archive/refs/tags/v1.21.tar.gz
 https://github.com/editorconfig/editorconfig-core-c/archive/refs/tags/v0.12.6.tar.gz
 https://github.com/ekzhang/bore/archive/refs/tags/v0.5.0.tar.gz
 https://github.com/elementary/files/archive/refs/tags/7.0.0.tar.gz
@@ -1257,6 +1259,7 @@ https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.2.0.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.2.2.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.2.3.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.20.0.tar.gz
+https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.21.0.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.3.1.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.3.2.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.3.3.tar.gz
@@ -3040,6 +3043,7 @@ https://www.crufty.net/ftp/pub/sjg/bmake-20240430.tar.gz
 https://www.crufty.net/ftp/pub/sjg/bmake-20240508.tar.gz
 https://www.crufty.net/ftp/pub/sjg/bmake-20240602.tar.gz
 https://www.crufty.net/ftp/pub/sjg/bmake-20240711.tar.gz
+https://www.crufty.net/ftp/pub/sjg/bmake-20240722.tar.gz
 https://www.eecis.udel.edu/~ntp/ntp_spool/ntp4/ntp-4.2/ntp-4.2.8p15.tar.gz
 https://www.freedesktop.org/software/colord/releases/colord-1.4.6.tar.xz
 https://www.freedesktop.org/software/fontconfig/release/fontconfig-2.14.2.tar.xz

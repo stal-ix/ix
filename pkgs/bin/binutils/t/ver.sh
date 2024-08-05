@@ -1,2 +1,2 @@
-https://ftp.gnu.org/gnu/binutils/binutils-2.42.tar.bz2
-sha:aa54850ebda5064c72cd4ec2d9b056c294252991486350d9a97ab2a6dfdfaf12
+https://ftp.gnu.org/gnu/binutils/binutils-2.43.tar.bz2
+sha:fed3c3077f0df7a4a1aa47b080b8c53277593ccbb4e5e78b73ffb4e3f265e750
