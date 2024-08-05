@@ -10,6 +10,7 @@ bld/meson/4
 {% endblock %}
 
 {% block bld_libs %}
+lib/linux/headers/new
 lib/c
 lib/ei
 lib/atk
@@ -43,6 +44,7 @@ lib/shim/fake/pkg(pkg_name=libelogind,pkg_ver=100.500)
 {% endblock %}
 
 {% block bld_tool %}
+bin/mutter/exe
 bin/cvt
 bld/glib
 bld/gettext

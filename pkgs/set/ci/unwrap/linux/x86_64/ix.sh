@@ -43,6 +43,7 @@
 #}
 
 {% block run_deps %}
+bin/mutter
 bin/elementary/files
 bin/elementary/terminal
 bin/avizo
