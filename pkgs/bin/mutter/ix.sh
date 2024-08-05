@@ -2,4 +2,5 @@
 
 {% block run_deps %}
 bin/mutter/unwrap
+bin/xdg/er(wrap=mutter)
 {% endblock %}

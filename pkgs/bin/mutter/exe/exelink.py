@@ -18,4 +18,10 @@ def it_libs():
     except FileNotFoundError:
         pass
 
-subprocess.check_call(sys.argv[1:] + ['-L' + lib] + list(it_libs()))
+args = sys.argv[1:] + ['-L' + lib] + list(it_libs())
+
+if 'src/mutter' in args:
+    if pl := os.environ.get('PLUGIN', None):
+        args = args + [pl]
+
+subprocess.check_call(args)
