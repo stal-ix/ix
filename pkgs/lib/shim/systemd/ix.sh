@@ -8,7 +8,7 @@ cat << EOF > ${out}/include/systemd/sd-login.h
 #define sd_session_get_type(...) -1
 #define sd_uid_get_sessions(...) -1
 #define sd_pid_get_user_unit(...) -1
-#define sd_session_is_active(...) -1
+#define sd_session_is_active(...) 0
 #define sd_uid_get_display(...) -1
 #define sd_session_get_class(...) -1
 #define sd_session_get_state(...) -1
