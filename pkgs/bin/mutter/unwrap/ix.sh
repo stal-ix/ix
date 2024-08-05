@@ -32,6 +32,7 @@ lib/gdk/pixbuf
 lib/xkb/common
 lib/drivers/3d
 lib/mesa/gl/dl
+lib/shim/systemd
 lib/vulkan/loader
 lib/mesa/glesv2/dl
 lib/vulkan/headers
