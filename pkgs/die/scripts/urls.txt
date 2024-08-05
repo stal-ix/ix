@@ -717,6 +717,7 @@ https://github.com/GNOME/epiphany/archive/refs/tags/46.0.tar.gz
 https://github.com/GNOME/epiphany/archive/refs/tags/46.1.tar.gz
 https://github.com/GNOME/epiphany/archive/refs/tags/46.2.tar.gz
 https://github.com/GNOME/file-roller/archive/refs/tags/43.1.tar.gz
+https://github.com/GNOME/gsettings-desktop-schemas/archive/refs/tags/47.beta.tar.gz
 https://github.com/GNOME/gthumb/archive/refs/tags/3.12.2.tar.gz
 https://github.com/GNOME/gtk-doc/archive/refs/tags/GTK_DOC_1_32.tar.gz
 https://github.com/GNOME/json-glib/archive/refs/tags/1.8.0.tar.gz
@@ -2708,6 +2709,7 @@ https://gitlab.gnome.org/GNOME/libxslt/-/archive/v1.1.41/libxslt-v1.1.41.tar.bz2
 https://gitlab.gnome.org/GNOME/libxslt/-/archive/v1.1.42/libxslt-v1.1.42.tar.bz2
 https://gitlab.gnome.org/GNOME/mutter/-/archive/44.beta/mutter-44.beta.tar.bz2
 https://gitlab.gnome.org/GNOME/mutter/-/archive/45.0/mutter-45.0.tar.bz2
+https://gitlab.gnome.org/GNOME/mutter/-/archive/47.beta/mutter-47.beta.tar.bz2
 https://gitlab.gnome.org/GNOME/pango/-/archive/1.51.1/pango-1.51.1.tar.bz2
 https://gitlab.gnome.org/GNOME/pango/-/archive/1.51.2/pango-1.51.2.tar.bz2
 https://gitlab.gnome.org/GNOME/pango/-/archive/1.52.0/pango-1.52.0.tar.bz2

@@ -1,8 +1,8 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://gitlab.gnome.org/GNOME/gsettings-desktop-schemas/-/archive/44.0/gsettings-desktop-schemas-44.0.tar.bz2
-sha:b1bff22c6131c0bf638505811f2c72a77a6577aee8a4a851e16f79c317dbc50d
+https://github.com/GNOME/gsettings-desktop-schemas/archive/refs/tags/47.beta.tar.gz
+sha:f2b0d4f621426b78011c6de99e16a29e469b0e9f9ba1f1b354415095c95499b7
 {% endblock %}
 
 {% block bld_tool %}
