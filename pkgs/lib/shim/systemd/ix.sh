@@ -12,6 +12,6 @@ cat << EOF > ${out}/include/systemd/sd-login.h
 #define sd_uid_get_display(...) -1
 #define sd_session_get_class(...) -1
 #define sd_session_get_state(...) -1
-#define sd_session_get_seat(...) -1
+#define sd_session_get_seat(A, B) (*B = strdup("2"), 0)
 EOF
 {% endblock %}
