@@ -1,15 +1,16 @@
 {% extends '//die/c/meson.sh' %}
 
-{% block git_repo %}
-https://gitlab.gnome.org/GNOME/mutter
+{% block fetch %}
+https://gitlab.gnome.org/GNOME/mutter/-/archive/47.beta/mutter-47.beta.tar.bz2
+sha:e24bbbf36f8372284da28ba2d4042949d0991a1dbdfccc45ca55f067ba97bf57
 {% endblock %}
 
-{% block git_commit %}
-4134d12789df15094a6674684b21f8916b42546a
+{% block meson_binary %}
+bin/meson/1/4
 {% endblock %}
 
-{% block git_sha %}
-f4286f8a090ccbe4bf97f408364b4092cf6f6c8f0795f80d10eae9933c8b6614
+{% block meson_pkg_config %}
+bld/pkg/config/wrapped
 {% endblock %}
 
 {% block bld_libs %}

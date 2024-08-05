@@ -10,7 +10,9 @@ bld/meson
 {% block meson_cmake %}
 bld/cmake
 {% endblock %}
+{% block meson_pkg_config %}
 bld/pkg/config
+{% endblock %}
 {{super()}}
 {% endblock %}
 
