@@ -301,6 +301,7 @@ https://download.samba.org/pub/rsync/src/rsync-3.2.7.tar.gz
 https://download.samba.org/pub/rsync/src/rsync-3.3.0.tar.gz
 https://download.samba.org/pub/samba/stable/samba-4.17.2.tar.gz
 https://download.samba.org/pub/samba/stable/samba-4.19.5.tar.gz
+https://download.samba.org/pub/samba/stable/samba-4.20.4.tar.gz
 https://download.savannah.gnu.org/releases/lzip/lzip-1.22.tar.gz
 https://download.savannah.gnu.org/releases/lzip/lzip-1.24.1.tar.gz
 https://download.savannah.gnu.org/releases/lzip/lzip-1.24.tar.gz
@@ -2433,6 +2434,7 @@ https://github.com/vcrhonek/hwdata/archive/refs/tags/v0.381.tar.gz
 https://github.com/vcrhonek/hwdata/archive/refs/tags/v0.382.tar.gz
 https://github.com/vcrhonek/hwdata/archive/refs/tags/v0.383.tar.gz
 https://github.com/vcrhonek/hwdata/archive/refs/tags/v0.384.tar.gz
+https://github.com/vcrhonek/hwdata/archive/refs/tags/v0.385.tar.gz
 https://github.com/vector-of-bool/cmrc/archive/refs/tags/2.0.1.tar.gz
 https://github.com/videolabs/libmicrodns/archive/refs/tags/0.2.0.tar.gz
 https://github.com/videolan/dav1d/archive/refs/tags/1.2.1.tar.gz
