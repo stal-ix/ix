@@ -10,6 +10,7 @@ import subprocess
 import urllib.error as ue
 import urllib.request as ur
 
+random.seed(int(time.time() * 1000000000000))
 
 def prepare_dir(d):
     try:
