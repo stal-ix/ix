@@ -1,8 +1,8 @@
 {% extends '//die/c/wafbase.sh' %}
 
 {% block fetch %}
-https://download.samba.org/pub/samba/stable/samba-4.19.5.tar.gz
-sha:0e2405b4cec29d0459621f4340a1a74af771ec7cffedff43250cad7f1f87605e
+https://download.samba.org/pub/samba/stable/samba-4.20.4.tar.gz
+sha:3a92e97eaeb345b6b32232f503e14d34f03a7aa64c451fe8c258a11bbda908e5
 {% endblock %}
 
 {% block bld_libs %}
