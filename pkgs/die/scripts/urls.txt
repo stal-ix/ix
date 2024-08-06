@@ -1378,6 +1378,7 @@ https://github.com/golang/go/archive/refs/tags/go1.22.2.tar.gz
 https://github.com/golang/go/archive/refs/tags/go1.22.3.tar.gz
 https://github.com/golang/go/archive/refs/tags/go1.22.4.tar.gz
 https://github.com/golang/go/archive/refs/tags/go1.22.5.tar.gz
+https://github.com/golang/go/archive/refs/tags/go1.22.6.tar.gz
 https://github.com/google/brotli/archive/refs/tags/v1.1.0.tar.gz
 https://github.com/google/crc32c/archive/refs/tags/1.1.2.tar.gz
 https://github.com/google/double-conversion/archive/refs/tags/v3.3.0.tar.gz
