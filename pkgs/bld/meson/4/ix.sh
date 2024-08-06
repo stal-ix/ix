@@ -1,6 +1,8 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
-bin/mutter/unwrap
-bin/xdg/er(wrap=mutter)
+bld/cmake
+bld/python
+bin/meson/1/4
+bld/pkg/config/wrapped
 {% endblock %}

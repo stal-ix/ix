@@ -20,7 +20,8 @@ bld/gzip
 bld/help2man
 bld/m4
 bld/make
-bld/meson
+bld/meson/1
+bld/meson/2
 bld/ninja
 bld/perl
 bld/pkg/config

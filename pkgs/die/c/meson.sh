@@ -4,13 +4,9 @@
 {% if darwin %}
 bld/cctools
 {% endif %}
-{% block meson_binary %}
-bld/meson
+{% block meson_tool %}
+bld/meson/2
 {% endblock %}
-{% block meson_cmake %}
-bld/cmake
-{% endblock %}
-bld/pkg/config
 {{super()}}
 {% endblock %}
 
