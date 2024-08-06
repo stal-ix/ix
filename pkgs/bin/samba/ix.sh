@@ -49,6 +49,7 @@ export PYTHONHASHSEED=1
 bld/perl
 bld/flex
 bld/bison
+lib/tasn1
 bld/perl/yapp
 {% endblock %}
 
