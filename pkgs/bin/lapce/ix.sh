@@ -10,6 +10,9 @@ e82e1a7bb47e56352693cfcdc5f7f0d7a1d8871f95ac8602bd680281a4c1edeb
 
 {% block bld_libs %}
 lib/c
+lib/ssh/2
+lib/git/2
+lib/openssl
 {% endblock %}
 
 {% block install %}
