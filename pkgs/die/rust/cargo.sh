@@ -43,7 +43,7 @@ export LDFLAGS="-L${LD_LIBRARY_PATH} ${LDFLAGS}"
 export CARGO_BUILD_JOBS=16
 export CARGO_INSTALL_ROOT=${out}
 export CARGO_TARGET_DIR=${tmp}
-export CARGO_HOME=${PWD}/vendored
+export CARGO_HOME=${PWD}/.cargo
 export OPENSSL_NO_VENDOR=yes
 {% endblock %}
 
