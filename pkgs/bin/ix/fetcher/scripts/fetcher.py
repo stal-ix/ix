@@ -10,7 +10,9 @@ import subprocess
 import urllib.error as ue
 import urllib.request as ur
 
+
 random.seed(int(time.time() * 1000000000000))
+
 
 def prepare_dir(d):
     try:
@@ -58,7 +60,7 @@ def iter_fetch(url, sha, mirrors):
             for u in iter_cached(sha, mirrors):
                 yield from iter_fetch_url(u)
 
-        for f in list(sorted(list(it()), key=lambda x: random.random()))[:10]:
+        for f in list(it())[:10]:
             yield f, True
 
     while True:
@@ -121,6 +123,7 @@ def iter_fetch_url(url):
 
 def main():
     mirrors = list(M.strip().split('\n'))
+    random.shuffle(mirrors)
     do_fetch(sys.argv[1], sys.argv[2], sys.argv[3], *mirrors)
 
 
