@@ -8,3 +8,11 @@ sha:1243ee9f03ad38e624f6844427b7bc1f0a05aa5de70f15f3b03805a364b971d6
 {% block lib_deps %}
 lib/c/naked
 {% endblock %}
+
+{% block bld_libs %}
+lib/c
+{% endblock %}
+
+{% block meson_flags %}
+cpu={{target.arch}}
+{% endblock %}
