@@ -574,6 +574,7 @@ https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/snap
 https://git.kernel.org/pub/scm/linux/kernel/git/jaegeuk/f2fs-tools.git/snapshot/f2fs-tools-1.16.0.tar.gz
 https://git.kernel.org/pub/scm/linux/kernel/git/jejb/efitools.git/snapshot/efitools-1.9.2.tar.gz
 https://git.kernel.org/pub/scm/linux/kernel/git/sforshee/wireless-regdb.git/snapshot/wireless-regdb-master-2023-09-01.tar.gz
+https://git.kernel.org/pub/scm/linux/kernel/git/xiang/erofs-utils.git/snapshot/erofs-utils-1.8.tar.gz
 https://git.kernel.org/pub/scm/network/iproute2/iproute2.git
 https://git.kernel.org/pub/scm/utils/kernel/kmod/kmod.git/snapshot/kmod-30.tar.gz
 https://git.kernel.org/pub/scm/utils/kernel/kmod/kmod.git/snapshot/kmod-31.tar.gz
@@ -1598,6 +1599,7 @@ https://github.com/junegunn/fzf/archive/refs/tags/v0.54.0.tar.gz
 https://github.com/junegunn/fzf/archive/refs/tags/v0.54.2.tar.gz
 https://github.com/junegunn/fzf/archive/refs/tags/v0.54.3.tar.gz
 https://github.com/kaniini/libucontext/archive/refs/tags/libucontext-1.2.tar.gz
+https://github.com/kaniini/libucontext/archive/refs/tags/libucontext-1.3.1.tar.gz
 https://github.com/kcat/openal-soft/archive/refs/tags/1.23.1.tar.gz
 https://github.com/keepassxreboot/keepassxc/releases/download/2.7.6/keepassxc-2.7.6-src.tar.xz
 https://github.com/khorben/gbsddialog/archive/refs/tags/gbsddialog_0-9-0.tar.gz
@@ -2678,6 +2680,7 @@ https://gitlab.gnome.org/GNOME/gobject-introspection/-/archive/1.78.1/gobject-in
 https://gitlab.gnome.org/GNOME/gobject-introspection/-/archive/1.80.1/gobject-introspection-1.80.1.tar.bz2
 https://gitlab.gnome.org/GNOME/gsettings-desktop-schemas/-/archive/44.0/gsettings-desktop-schemas-44.0.tar.bz2
 https://gitlab.gnome.org/GNOME/gspell/-/archive/1.12.2/gspell-1.12.2.tar.bz2
+https://gitlab.gnome.org/GNOME/gspell/-/archive/1.13.1/gspell-1.13.1.tar.bz2
 https://gitlab.gnome.org/GNOME/gtk/-/archive/4.12.1/gtk-4.12.1.tar.bz2
 https://gitlab.gnome.org/GNOME/gtk/-/archive/4.12.2/gtk-4.12.2.tar.bz2
 https://gitlab.gnome.org/GNOME/gtk/-/archive/4.12.3/gtk-4.12.3.tar.bz2

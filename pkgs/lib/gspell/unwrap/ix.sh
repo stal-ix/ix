@@ -1,12 +1,8 @@
-{% extends '//die/c/autorehell.sh' %}
+{% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://gitlab.gnome.org/GNOME/gspell/-/archive/1.12.2/gspell-1.12.2.tar.bz2
-sha:e703bc41c5f3832d746cef7314cb5765f70d49c16250c65a669ded69eb0c8824
-{% endblock %}
-
-{% block conf_ver %}
-2/71
+https://gitlab.gnome.org/GNOME/gspell/-/archive/1.13.1/gspell-1.13.1.tar.bz2
+sha:0877f91abd8b315482e20a8f736012d4587deee8b4656ee0faaab1fa47451160
 {% endblock %}
 
 {% block lib_deps %}
@@ -18,23 +14,13 @@ lib/enchant
 {% endblock %}
 
 {% block bld_tool %}
-bld/vala
 bld/glib
-bld/gtkdoc
-bld/gir/m4
-bin/xml/lint
-bld/gettext
-bld/intltool
-bld/auto/archive
 {% endblock %}
 
-{% block configure_flags %}
---disable-gtk-doc
---enable-introspection=no
---enable-vala=no
-{% endblock %}
-
-{% block make_flags %}
-GLIB_COMPILE_RESOURCES=glib-compile-resources
-GLIB_MKENUMS=glib-mkenums
+{% block meson_flags %}
+gobject_introspection=false
+gspell_app=false
+gtk_doc=false
+tests=false
+vapi=false
 {% endblock %}
