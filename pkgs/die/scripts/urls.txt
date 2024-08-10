@@ -902,6 +902,7 @@ https://github.com/NixOS/nix/archive/refs/tags/2.23.0.tar.gz
 https://github.com/NixOS/nix/archive/refs/tags/2.23.1.tar.gz
 https://github.com/NixOS/nix/archive/refs/tags/2.23.2.tar.gz
 https://github.com/NixOS/nix/archive/refs/tags/2.23.3.tar.gz
+https://github.com/NixOS/nix/archive/refs/tags/2.24.1.tar.gz
 https://github.com/NixOS/patchelf/archive/refs/tags/0.18.0.tar.gz
 https://github.com/Novum/vkQuake/archive/refs/tags/1.30.1.tar.gz
 https://github.com/Old-Man-Programmer/tree/archive/refs/tags/2.1.1.tar.gz
@@ -945,6 +946,7 @@ https://github.com/Terraspace/UASM/archive/refs/tags/v2.56.2.tar.gz
 https://github.com/Tessil/robin-map/archive/refs/tags/v1.2.1.tar.gz
 https://github.com/Tomas-M/iotop/archive/refs/tags/v1.23.tar.gz
 https://github.com/Tomas-M/iotop/archive/refs/tags/v1.26.tar.gz
+https://github.com/ToruNiina/toml11/archive/refs/tags/v4.1.0.tar.gz
 https://github.com/USCiLab/cereal/archive/refs/tags/v1.3.2.tar.gz
 https://github.com/VirusTotal/yara/archive/refs/tags/v4.2.2.tar.gz
 https://github.com/WasmEdge/WasmEdge/archive/refs/tags/0.13.3.tar.gz
