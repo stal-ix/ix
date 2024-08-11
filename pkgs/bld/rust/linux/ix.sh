@@ -2,5 +2,5 @@
 
 {% block run_deps %}
 bld/musl
-bld/rust/linux/unwrap
+bld/rust/linux/{{rustc_ver}}
 {% endblock %}

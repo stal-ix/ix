@@ -2,15 +2,19 @@
 
 {% block task_pool %}full{% endblock %}
 
+{% block rustc_ver %}
+80
+{% endblock %}
+
 {% block std_box %}
 bld/pzd
-bld/rust
 bld/python
 bld/pkg/config
 bld/rust/devendor
 {% if help %}
 bin/cargo/whatfeatures
 {% endif %}
+bld/rust(rustc_ver={{self.rustc_ver().strip()}})
 {{super()}}
 {% endblock %}
 
