@@ -1,37 +1,18 @@
-{% extends '//die/c/make.sh' %}
+{% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://github.com/kaniini/libucontext/archive/refs/tags/libucontext-1.2.tar.gz
-sha:937fba9d0beebd7cf957b79979b19fe3a29bb9c4bfd25e869477d7154bbf8fd3
+https://github.com/kaniini/libucontext/archive/refs/tags/libucontext-1.3.1.tar.gz
+sha:1243ee9f03ad38e624f6844427b7bc1f0a05aa5de70f15f3b03805a364b971d6
 {% endblock %}
 
 {% block lib_deps %}
 lib/c/naked
 {% endblock %}
 
-{% block make_flags %}
-INCLUDEDIR=/include
-PKGCONFIGDIR=/lib/pkgconfig
-DESTDIR=${out}
-{% if armv7 %}
-ARCH=arm
-{% else %}
-ARCH={{target.arch}}
-{% endif %}
-FREESTANDING=yes
+{% block bld_libs %}
+lib/c
 {% endblock %}
 
-{% block make_target %}
-libucontext.a
-libucontext.pc
-{% endblock %}
-
-{% block make_install_target %}
-install_static
-{% endblock %}
-
-{% block patch %}
-base64 -d << EOF >> Makefile
-{% include 'Makefile/base64' %}
-EOF
+{% block meson_flags %}
+cpu={{target.arch}}
 {% endblock %}

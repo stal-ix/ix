@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://github.com/NixOS/nix/archive/refs/tags/2.23.3.tar.gz
-sha:1298570f8d905eff46049814c7c656c98c809e07407b0c5aac89c0a20cc052f2
+https://github.com/NixOS/nix/archive/refs/tags/2.24.1.tar.gz
+sha:7f9fea61ea6696549b5b4024d9e7ff683637ab91664ab9ca69476a572de1af9c
 {% endblock %}
 
 {% block bld_libs %}
@@ -16,6 +16,7 @@ lib/kernel
 lib/brotli
 lib/sodium
 lib/bzip/2
+lib/toml/11
 lib/lowdown
 lib/seccomp
 lib/openssl
@@ -50,6 +51,14 @@ wrap_cc
 --disable-doc-gen
 --disable-unit-tests
 --disable-functional-tests
+{% endblock %}
+
+{% block patch %}
+find . -type f | while read l; do
+    sed -e 's|-Werror=suggest-override||g' \
+        -e 's|-Werror=switch-enum||g' \
+        -i ${l}
+done
 {% endblock %}
 
 {% block setup_target_flags %}

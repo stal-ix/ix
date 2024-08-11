@@ -2,15 +2,19 @@
 
 {% block task_pool %}full{% endblock %}
 
+{% block rustc_ver %}
+80
+{% endblock %}
+
 {% block std_box %}
 bld/pzd
-bld/rust
 bld/python
 bld/pkg/config
 bld/rust/devendor
 {% if help %}
 bin/cargo/whatfeatures
 {% endif %}
+bld/rust(rustc_ver={{self.rustc_ver().strip()}})
 {{super()}}
 {% endblock %}
 
@@ -43,7 +47,7 @@ export LDFLAGS="-L${LD_LIBRARY_PATH} ${LDFLAGS}"
 export CARGO_BUILD_JOBS=16
 export CARGO_INSTALL_ROOT=${out}
 export CARGO_TARGET_DIR=${tmp}
-export CARGO_HOME=${PWD}/vendored
+export CARGO_HOME=${PWD}/.cargo
 export OPENSSL_NO_VENDOR=yes
 {% endblock %}
 

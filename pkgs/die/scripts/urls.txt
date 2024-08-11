@@ -556,6 +556,7 @@ https://ftp.postgresql.org/pub/source/v15.4/postgresql-15.4.tar.bz2
 https://ftp.postgresql.org/pub/source/v16.0/postgresql-16.0.tar.bz2
 https://ftp.postgresql.org/pub/source/v16.1/postgresql-16.1.tar.bz2
 https://ftp.postgresql.org/pub/source/v16.3/postgresql-16.3.tar.bz2
+https://ftp.postgresql.org/pub/source/v16.4/postgresql-16.4.tar.bz2
 https://ftpmirror.gnu.org/libtool/libtool-2.4.6.tar.gz
 https://ftpmirror.gnu.org/libtool/libtool-2.4.7.tar.gz
 https://gameoftrees.org/releases/portable/got-portable-0.92.tar.gz
@@ -573,6 +574,7 @@ https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/snap
 https://git.kernel.org/pub/scm/linux/kernel/git/jaegeuk/f2fs-tools.git/snapshot/f2fs-tools-1.16.0.tar.gz
 https://git.kernel.org/pub/scm/linux/kernel/git/jejb/efitools.git/snapshot/efitools-1.9.2.tar.gz
 https://git.kernel.org/pub/scm/linux/kernel/git/sforshee/wireless-regdb.git/snapshot/wireless-regdb-master-2023-09-01.tar.gz
+https://git.kernel.org/pub/scm/linux/kernel/git/xiang/erofs-utils.git/snapshot/erofs-utils-1.8.tar.gz
 https://git.kernel.org/pub/scm/network/iproute2/iproute2.git
 https://git.kernel.org/pub/scm/utils/kernel/kmod/kmod.git/snapshot/kmod-30.tar.gz
 https://git.kernel.org/pub/scm/utils/kernel/kmod/kmod.git/snapshot/kmod-31.tar.gz
@@ -711,6 +713,7 @@ https://github.com/FreeRDP/FreeRDP/archive/refs/tags/3.5.0.tar.gz
 https://github.com/FreeRDP/FreeRDP/archive/refs/tags/3.5.1.tar.gz
 https://github.com/FreeRDP/FreeRDP/archive/refs/tags/3.6.2.tar.gz
 https://github.com/FreeRDP/FreeRDP/archive/refs/tags/3.6.3.tar.gz
+https://github.com/FreeRDP/FreeRDP/archive/refs/tags/3.7.0.tar.gz
 https://github.com/GNOME/adwaita-icon-theme/archive/refs/tags/44.0.tar.gz
 https://github.com/GNOME/epiphany/archive/refs/tags/45.0.tar.gz
 https://github.com/GNOME/epiphany/archive/refs/tags/45.1.tar.gz
@@ -794,6 +797,7 @@ https://github.com/KDE/kcachegrind/archive/refs/tags/v24.04.80.tar.gz
 https://github.com/KDE/kcoreaddons/archive/refs/tags/v5.247.0.tar.gz
 https://github.com/KDE/kimageformats/archive/refs/tags/v5.112.0.tar.gz
 https://github.com/KDE/kimageformats/archive/refs/tags/v5.98.0.tar.gz
+https://github.com/KarsMulder/evsieve/archive/refs/tags/v1.4.0.tar.gz
 https://github.com/KhronosGroup/SPIRV-Cross/archive/refs/tags/sdk-1.3.261.1.tar.gz
 https://github.com/KhronosGroup/SPIRV-Cross/archive/refs/tags/vulkan-sdk-1.3.268.0.tar.gz
 https://github.com/KhronosGroup/SPIRV-Cross/archive/refs/tags/vulkan-sdk-1.3.275.0.tar.gz
@@ -899,6 +903,7 @@ https://github.com/NixOS/nix/archive/refs/tags/2.23.0.tar.gz
 https://github.com/NixOS/nix/archive/refs/tags/2.23.1.tar.gz
 https://github.com/NixOS/nix/archive/refs/tags/2.23.2.tar.gz
 https://github.com/NixOS/nix/archive/refs/tags/2.23.3.tar.gz
+https://github.com/NixOS/nix/archive/refs/tags/2.24.1.tar.gz
 https://github.com/NixOS/patchelf/archive/refs/tags/0.18.0.tar.gz
 https://github.com/Novum/vkQuake/archive/refs/tags/1.30.1.tar.gz
 https://github.com/Old-Man-Programmer/tree/archive/refs/tags/2.1.1.tar.gz
@@ -932,6 +937,7 @@ https://github.com/RazrFalcon/resvg/archive/refs/tags/v0.38.0.tar.gz
 https://github.com/RazrFalcon/resvg/archive/refs/tags/v0.39.0.tar.gz
 https://github.com/RazrFalcon/resvg/archive/refs/tags/v0.40.0.tar.gz
 https://github.com/RazrFalcon/resvg/archive/refs/tags/v0.41.0.tar.gz
+https://github.com/RazrFalcon/resvg/archive/refs/tags/v0.43.0.tar.gz
 https://github.com/Samsung/rlottie/archive/refs/tags/v0.2.tar.gz
 https://github.com/SpartanJ/efsw/archive/refs/tags/1.3.1.tar.gz
 https://github.com/Syllo/nvtop/archive/refs/tags/3.0.2.tar.gz
@@ -941,6 +947,7 @@ https://github.com/Terraspace/UASM/archive/refs/tags/v2.56.2.tar.gz
 https://github.com/Tessil/robin-map/archive/refs/tags/v1.2.1.tar.gz
 https://github.com/Tomas-M/iotop/archive/refs/tags/v1.23.tar.gz
 https://github.com/Tomas-M/iotop/archive/refs/tags/v1.26.tar.gz
+https://github.com/ToruNiina/toml11/archive/refs/tags/v4.1.0.tar.gz
 https://github.com/USCiLab/cereal/archive/refs/tags/v1.3.2.tar.gz
 https://github.com/VirusTotal/yara/archive/refs/tags/v4.2.2.tar.gz
 https://github.com/WasmEdge/WasmEdge/archive/refs/tags/0.13.3.tar.gz
@@ -967,6 +974,7 @@ https://github.com/YaLTeR/niri/archive/refs/tags/v0.1.4.tar.gz
 https://github.com/YaLTeR/niri/archive/refs/tags/v0.1.5.tar.gz
 https://github.com/YaLTeR/niri/archive/refs/tags/v0.1.6.tar.gz
 https://github.com/YaLTeR/niri/archive/refs/tags/v0.1.7.tar.gz
+https://github.com/YaLTeR/niri/archive/refs/tags/v0.1.8.tar.gz
 https://github.com/Z3Prover/z3/archive/refs/tags/z3-4.12.2.tar.gz
 https://github.com/Z3Prover/z3/archive/refs/tags/z3-4.12.3.tar.gz
 https://github.com/Z3Prover/z3/archive/refs/tags/z3-4.12.4.tar.gz
@@ -1268,6 +1276,7 @@ https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.2.2.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.2.3.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.20.0.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.21.0.tar.gz
+https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.21.1.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.3.1.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.3.2.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.3.3.tar.gz
@@ -1595,6 +1604,7 @@ https://github.com/junegunn/fzf/archive/refs/tags/v0.54.0.tar.gz
 https://github.com/junegunn/fzf/archive/refs/tags/v0.54.2.tar.gz
 https://github.com/junegunn/fzf/archive/refs/tags/v0.54.3.tar.gz
 https://github.com/kaniini/libucontext/archive/refs/tags/libucontext-1.2.tar.gz
+https://github.com/kaniini/libucontext/archive/refs/tags/libucontext-1.3.1.tar.gz
 https://github.com/kcat/openal-soft/archive/refs/tags/1.23.1.tar.gz
 https://github.com/keepassxreboot/keepassxc/releases/download/2.7.6/keepassxc-2.7.6-src.tar.xz
 https://github.com/khorben/gbsddialog/archive/refs/tags/gbsddialog_0-9-0.tar.gz
@@ -1626,6 +1636,7 @@ https://github.com/labwc/labwc/archive/refs/tags/0.7.3.tar.gz
 https://github.com/labwc/labwc/archive/refs/tags/0.7.4.tar.gz
 https://github.com/landley/toybox/archive/refs/tags/0.8.10.tar.gz
 https://github.com/landley/toybox/archive/refs/tags/0.8.11.tar.gz
+https://github.com/lapce/lapce/archive/refs/tags/v0.4.1.tar.gz
 https://github.com/lavv17/lftp/releases/download/v4.8.3/lftp-4.8.3.tar.gz
 https://github.com/lbonn/rofi/releases/download/1.7.3%2Bwayland1/rofi-1.7.3+wayland1.tar.xz
 https://github.com/leo-arch/clifm/archive/refs/tags/v1.14.5.tar.gz
@@ -1842,6 +1853,7 @@ https://github.com/microsoft/msquic/archive/refs/tags/v2.3.2.tar.gz
 https://github.com/microsoft/msquic/archive/refs/tags/v2.3.4.tar.gz
 https://github.com/microsoft/msquic/archive/refs/tags/v2.3.5.tar.gz
 https://github.com/microsoft/msquic/archive/refs/tags/v2.3.6.tar.gz
+https://github.com/microsoft/msquic/archive/refs/tags/v2.4.3.tar.gz
 https://github.com/microsoft/snmalloc/archive/refs/tags/0.6.0.tar.gz
 https://github.com/microsoft/vcpkg-tool/archive/refs/tags/2022-11-10.tar.gz
 https://github.com/microsoft/vcpkg-tool/archive/refs/tags/2023-11-16.tar.gz
@@ -2673,6 +2685,7 @@ https://gitlab.gnome.org/GNOME/gobject-introspection/-/archive/1.78.1/gobject-in
 https://gitlab.gnome.org/GNOME/gobject-introspection/-/archive/1.80.1/gobject-introspection-1.80.1.tar.bz2
 https://gitlab.gnome.org/GNOME/gsettings-desktop-schemas/-/archive/44.0/gsettings-desktop-schemas-44.0.tar.bz2
 https://gitlab.gnome.org/GNOME/gspell/-/archive/1.12.2/gspell-1.12.2.tar.bz2
+https://gitlab.gnome.org/GNOME/gspell/-/archive/1.13.1/gspell-1.13.1.tar.bz2
 https://gitlab.gnome.org/GNOME/gtk/-/archive/4.12.1/gtk-4.12.1.tar.bz2
 https://gitlab.gnome.org/GNOME/gtk/-/archive/4.12.2/gtk-4.12.2.tar.bz2
 https://gitlab.gnome.org/GNOME/gtk/-/archive/4.12.3/gtk-4.12.3.tar.bz2
@@ -2983,6 +2996,7 @@ https://sqlite.org/2023/sqlite-autoconf-3440200.tar.gz
 https://src.fedoraproject.org/repo/pkgs/zip/zip30.tar.gz/7b74551e63f8ee6aab6fbc86676c0d37/zip30.tar.gz
 https://static.rust-lang.org/dist/rust-1.56.1-x86_64-unknown-linux-gnu.tar.gz
 https://static.rust-lang.org/dist/rust-1.75.0-x86_64-unknown-linux-musl.tar.gz
+https://static.rust-lang.org/dist/rust-1.80.0-x86_64-unknown-linux-musl.tar.gz
 https://static.rust-lang.org/dist/rustc-1.54.0-src.tar.gz
 https://storage.googleapis.com/aom-releases/libaom-3.7.0.tar.gz
 https://storage.googleapis.com/aom-releases/libaom-3.7.1.tar.gz
@@ -3131,6 +3145,7 @@ https://www.kernel.org/pub/software/utils/dtc/dtc-1.7.0.tar.xz
 https://www.leonerd.org.uk/code/libvterm/libvterm-0.3.tar.gz
 https://www.libssh.org/files/0.10/libssh-0.10.5.tar.xz
 https://www.libssh.org/files/0.10/libssh-0.10.6.tar.xz
+https://www.libssh.org/files/0.11/libssh-0.11.0.tar.xz
 https://www.lua.org/ftp/lua-5.1.5.tar.gz
 https://www.lua.org/ftp/lua-5.2.4.tar.gz
 https://www.lua.org/ftp/lua-5.4.6.tar.gz

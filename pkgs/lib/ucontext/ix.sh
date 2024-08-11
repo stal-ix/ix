@@ -2,7 +2,7 @@
 
 {% block lib_deps %}
 {% if linux %}
-lib/ucontext/posix
 lib/ucontext/iface
+lib/ucontext/stock
 {% endif %}
 {% endblock %}
