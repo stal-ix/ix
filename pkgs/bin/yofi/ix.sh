@@ -1,5 +1,9 @@
 {% extends '//die/rust/cargo.sh' %}
 
+{% block rustc_ver %}
+75
+{% endblock %}
+
 {% block cargo_url %}
 https://github.com/l4l/yofi/archive/refs/tags/0.2.2.tar.gz
 {% endblock %}
