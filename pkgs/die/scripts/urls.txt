@@ -1166,6 +1166,7 @@ https://github.com/curl/curl/archive/refs/tags/curl-8_9_1.tar.gz
 https://github.com/dandavison/delta/archive/refs/tags/0.16.5.tar.gz
 https://github.com/darkhz/bluetuith/archive/refs/tags/v0.1.7.tar.gz
 https://github.com/darkhz/bluetuith/archive/refs/tags/v0.2.2.tar.gz
+https://github.com/darkhz/bluetuith/archive/refs/tags/v0.2.3.tar.gz
 https://github.com/darktable-org/darktable/releases/download/release-4.0.0/darktable-4.0.0.tar.xz
 https://github.com/dboyan/wayland-tracer/archive/refs/tags/0.1.0.tar.gz
 https://github.com/dbry/WavPack/releases/download/5.6.0/wavpack-5.6.0.tar.xz
