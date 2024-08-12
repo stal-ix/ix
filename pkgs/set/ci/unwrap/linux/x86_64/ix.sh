@@ -43,6 +43,7 @@
 #}
 
 {% block run_deps %}
+bin/cosmic/comp
 bin/evsieve
 bin/erofs/utils
 bin/mutter
