@@ -1,8 +1,8 @@
 {% extends '//die/c/make.sh' %}
 
 {% block fetch %}
-https://github.com/Terraspace/UASM/archive/refs/tags/v2.56.2.tar.gz
-sha:a624cf17cce9b11155aebb5b954b2a6d93052d7e2857284ba087c546442b5eeb
+https://github.com/Terraspace/UASM/archive/refs/tags/v2.57r.tar.gz
+sha:09fa69445f2af47551e82819d024e6b4b629fcfd47af4a22ccffbf37714230e5
 {% endblock %}
 
 {% block bld_libs %}
@@ -11,7 +11,7 @@ lib/c++
 {% endblock %}
 
 {% block make_flags %}
--f Makefile_Linux
+-f Makefile_Linux.mak
 CC=clang
 {% endblock %}
 
