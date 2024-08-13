@@ -20,15 +20,3 @@ lib/drivers/3d
 lib/mesa/egl/dl
 lib/xkb/common/dl
 {% endblock %}
-
-{% block install %}
-mkdir ${out}/bin
-cp ${tmp}/release/lapce ${out}/bin/
-mkdir -p ${out}/share/fonts
-(
-    find . -type f -name '*.ttf'
-    find . -type f -name '*.otf'
-) | while read l; do
-    cp ${l} ${out}/share/fonts/
-done
-{% endblock %}
