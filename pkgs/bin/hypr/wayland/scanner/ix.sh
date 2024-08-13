@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/hyprwm/hyprwayland-scanner/archive/refs/tags/v0.3.9.tar.gz
-sha:94b1be527cf91071b59269bacf610b0c5992706a648dbea15797bdb5e15828f0
+https://github.com/hyprwm/hyprwayland-scanner/archive/refs/tags/v0.4.0.tar.gz
+sha:4091122777ade12b8edc8de6f2df4917ced73b81cd40d946a995de73880ec71f
 {% endblock %}
 
 {% block bld_libs %}
