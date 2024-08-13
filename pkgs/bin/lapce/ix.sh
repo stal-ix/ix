@@ -20,3 +20,8 @@ lib/drivers/3d
 lib/mesa/egl/dl
 lib/xkb/common/dl
 {% endblock %}
+
+{% block install %}
+mkdir ${out}/bin
+cp ${tmp}/release/lapce ${out}/bin/
+{% endblock %}
