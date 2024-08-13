@@ -34,7 +34,5 @@ bin/coreutils/uutils
 {% endblock %}
 
 {% block run_data %}
-aux/fonts/inter
 set/fonts/default
-aux/fonts/google/noto/otf
 {% endblock %}
