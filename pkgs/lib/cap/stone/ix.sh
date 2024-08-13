@@ -1,8 +1,12 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block version %}
+5.0.2
+{% endblock %}
+
 {% block fetch %}
-https://github.com/capstone-engine/capstone/archive/refs/tags/5.0.1.tar.gz
-sha:2b9c66915923fdc42e0e32e2a9d7d83d3534a45bb235e163a70047951890c01a
+https://github.com/capstone-engine/capstone/archive/refs/tags/{{self.version().strip()}}.tar.gz
+sha:9d0be727cc942075a1696f576b88918eb0daf9db7a02f563f0c4e51a439a611d
 {% endblock %}
 
 {% block lib_deps %}
@@ -16,5 +20,7 @@ CAPSTONE_BUILD_SHARED=OFF
 
 {% block install %}
 {{super()}}
-sed -e 's|Version: .*|Version: 5.0|' -e 's|archs=.*||' -i ${out}/lib/pkgconfig/capstone.pc
+sed -e 's|Version: .*|Version: {{self.version().strip()}}|' \
+    -e 's|archs=.*||' \
+    -i ${out}/lib/pkgconfig/capstone.pc
 {% endblock %}
