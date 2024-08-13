@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/c-ares/c-ares/archive/refs/tags/v1.32.2.tar.gz
-sha:27a2a64cab0e3105c320c9d7c4b799a6c61557a9368e5431d8f990d93796a4c2
+https://github.com/c-ares/c-ares/archive/refs/tags/v1.33.0.tar.gz
+sha:3ff8f6f74a4f2b9267d06b4ffc1f082918ae8316c7f37c5a52f1a6e7a9694df7
 {% endblock %}
 
 {% block lib_deps %}
