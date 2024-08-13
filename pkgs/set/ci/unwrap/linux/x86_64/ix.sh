@@ -40,6 +40,7 @@
 #bin/yt
 #bin/inkscape
 #bin/balsa
+#bin/scummvm
 #}
 
 {% block run_deps %}
@@ -688,7 +689,6 @@ bin/brightnessctl
 bin/vim/g
 bin/vim
 bin/dosbox
-#bin/scummvm
 bin/st/sdl/2
 bin/transmission/gtk
 bin/transmission/remote
@@ -819,7 +819,6 @@ bin/i3/status
 bin/gnupg
 bin/sixel
 bin/neo/mutt
-#bin/balsa
 bin/uuencode
 bin/uget
 bin/gnuplot
