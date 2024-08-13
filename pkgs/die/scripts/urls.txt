@@ -2018,6 +2018,7 @@ https://github.com/pkgconf/pkgconf/archive/refs/tags/pkgconf-2.3.0.tar.gz
 https://github.com/plougher/squashfs-tools/archive/refs/tags/4.6.1.tar.gz
 https://github.com/podofo/podofo/archive/refs/tags/0.10.2.tar.gz
 https://github.com/podofo/podofo/archive/refs/tags/0.10.3.tar.gz
+https://github.com/pop-os/cosmic-comp/archive/refs/tags/epoch-1.0.0-alpha.1.tar.gz
 https://github.com/pop-os/cosmic-term/archive/90179d5a5f837b60406bcd20315bb8a81cc3bb7d.zip
 https://github.com/posva/catimg/archive/refs/tags/2.7.0.tar.gz
 https://github.com/premake/premake-core/archive/refs/tags/v5.0.0-beta2.tar.gz
@@ -2569,6 +2570,7 @@ https://gitlab.com/cardboardwm/cardboard/-/archive/b54758d85164fb19468f5ca52588e
 https://gitlab.com/craigbarnes/dte/-/archive/v1.10/dte-v1.10.tar.bz2
 https://gitlab.com/faxguy/libtiff-tools/-/archive/v4.6.0t/libtiff-tools-v4.6.0t.tar.bz2
 https://gitlab.com/freetype/freetype/-/archive/VER-2-13-2/freetype-VER-2-13-2.tar.bz2
+https://gitlab.com/freetype/freetype/-/archive/VER-2-13-3/freetype-VER-2-13-3.tar.bz2
 https://gitlab.com/giomasce/flex/-/raw/506e9605baf4638ba47d37133c348df1385ef06c/scan.lex.l
 https://gitlab.com/graphviz/graphviz/-/archive/10.0.1/graphviz-10.0.1.tar.bz2
 https://gitlab.com/graphviz/graphviz/-/archive/11.0.0/graphviz-11.0.0.tar.bz2
