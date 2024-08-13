@@ -34,6 +34,8 @@ bin/coreutils/uutils
 {% endblock %}
 
 {% block run_data %}
+aux/fonts/google/fira
+aux/fonts/google/noto/full
 aux/fonts/inter
 set/fonts/default
 {% endblock %}
