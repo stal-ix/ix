@@ -1401,6 +1401,7 @@ https://github.com/google/brotli/archive/refs/tags/v1.1.0.tar.gz
 https://github.com/google/crc32c/archive/refs/tags/1.1.2.tar.gz
 https://github.com/google/double-conversion/archive/refs/tags/v3.3.0.tar.gz
 https://github.com/google/fonts/archive/2855855a4cf481d4220e30ca3bff0704cc111a57.zip
+https://github.com/google/fonts/archive/eb794afc63d198685334f4b60939e767ef5c1814.zip
 https://github.com/google/glog/archive/refs/tags/v0.6.0.tar.gz
 https://github.com/google/glog/archive/refs/tags/v0.7.0.tar.gz
 https://github.com/google/glog/archive/refs/tags/v0.7.1.tar.gz
@@ -1953,6 +1954,7 @@ https://github.com/nlohmann/json/archive/refs/tags/v3.11.2.tar.gz
 https://github.com/nodejs/uvwasi/archive/refs/tags/v0.0.18.tar.gz
 https://github.com/noocsharp/wayclip/archive/refs/tags/0.4.1.tar.gz
 https://github.com/noocsharp/wayclip/archive/refs/tags/0.4.2.tar.gz
+https://github.com/notofonts/notofonts.github.io/archive/refs/tags/noto-monthly-release-24.8.1.tar.gz
 https://github.com/npm/cli/archive/refs/tags/v10.4.0.tar.gz
 https://github.com/npm/cli/archive/refs/tags/v9.8.0.tar.gz
 https://github.com/npm/cli/archive/refs/tags/v9.8.1.tar.gz
