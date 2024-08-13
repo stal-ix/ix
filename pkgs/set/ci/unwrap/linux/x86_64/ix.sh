@@ -688,7 +688,7 @@ bin/brightnessctl
 bin/vim/g
 bin/vim
 bin/dosbox
-bin/scummvm
+#bin/scummvm
 bin/st/sdl/2
 bin/transmission/gtk
 bin/transmission/remote
