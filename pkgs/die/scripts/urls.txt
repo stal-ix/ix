@@ -3046,6 +3046,7 @@ https://wpitchoune.net/psensor/files/psensor-1.2.1.tar.gz
 https://www.7-zip.org/a/7z2405-src.tar.xz
 https://www.7-zip.org/a/7z2406-src.tar.xz
 https://www.7-zip.org/a/7z2407-src.tar.xz
+https://www.7-zip.org/a/7z2408-src.tar.xz
 https://www.agner.org/optimize/asmlib.zip
 https://www.alsa-project.org/files/pub/lib/alsa-lib-1.2.10.tar.bz2
 https://www.alsa-project.org/files/pub/lib/alsa-lib-1.2.11.tar.bz2
