@@ -44,6 +44,7 @@
 #}
 
 {% block run_deps %}
+bin/lapce
 bin/cosmic/comp
 bin/evsieve
 bin/erofs/utils
