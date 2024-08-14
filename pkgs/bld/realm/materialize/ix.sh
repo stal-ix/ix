@@ -5,7 +5,6 @@ bld/sh
 bld/box
 bin/rsync
 bld/python
-bld/glib/old
 {% endblock %}
 
 {% block install %}

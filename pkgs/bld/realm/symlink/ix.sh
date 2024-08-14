@@ -4,7 +4,6 @@
 bld/sh
 bld/box
 bld/python
-bld/glib/old
 {% endblock %}
 
 {% block install %}

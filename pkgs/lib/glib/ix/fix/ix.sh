@@ -1,5 +1,9 @@
 {% extends '//die/proxy.sh' %}
 
+{% block fix_deps %}
+["bld/glib"]
+{% endblock %}
+
 {% block install %}
 mkdir -p ${out}/fix
 cat << EOF > ${out}/fix/glib_compile_schemas.sh

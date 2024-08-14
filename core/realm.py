@@ -136,7 +136,7 @@ class RealmCtx:
 
     @cu.cached_method
     def iter_all_fix_depends(self):
-        return list(cu.uniq_p(self.calc_all_fix_depends()))
+        return list(cu.uniq_list(self.calc_all_fix_depends()))
 
     def calc_all_build_depends(self):
         flags = {}
