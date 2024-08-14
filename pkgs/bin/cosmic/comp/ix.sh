@@ -1,15 +1,11 @@
 {% extends '//die/rust/cargo.sh' %}
 
 {% block cargo_url %}
-https://github.com/pop-os/cosmic-term/archive/90179d5a5f837b60406bcd20315bb8a81cc3bb7d.zip
+https://github.com/pop-os/cosmic-comp/archive/refs/tags/epoch-1.0.0-alpha.1.tar.gz
 {% endblock %}
 
 {% block cargo_sha %}
-d68aa5d12eadee32bac71e8fb52fed47ded5602b182cfd147e2d28fa39740000
-{% endblock %}
-
-{% block rustc_ver %}
-75
+e73d203c5417de8f063ffce8b77a3cfee9f2541b6b244540c9bf1c2bcb94a5f4
 {% endblock %}
 
 {% block bld_tool %}
@@ -24,6 +20,10 @@ export VERGEN_GIT_SHA="x"
 
 {% block bld_libs %}
 lib/c
+lib/seat
+lib/udev
+lib/input
+lib/pixman
 lib/wayland/dl
 lib/mesa/gl/dl
 lib/drivers/3d
@@ -33,5 +33,5 @@ lib/xkb/common/dl
 
 {% block install %}
 mkdir ${out}/bin
-cp ${tmp}/release/cosmic-term ${out}/bin/
+cp ${tmp}/release/cosmic-comp ${out}/bin/
 {% endblock %}

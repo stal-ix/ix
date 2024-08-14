@@ -1,6 +1,6 @@
 {% extends '//die/fonts.sh' %}
 
 {% block fetch %}
-https://github.com/google/fonts/archive/2855855a4cf481d4220e30ca3bff0704cc111a57.zip
-sha:c8dc7e5278c4d31ab5e4778f93e98d04ddcb9b6f7f0b8440382b2b2e251bb197
+https://github.com/google/fonts/archive/eb794afc63d198685334f4b60939e767ef5c1814.zip
+sha:436435f14a094c42c9ccd6a1f846c6af00be953dd0880fec083d402f1158ed90
 {% endblock %}

@@ -1,9 +1,9 @@
 {% extends '//die/go/build.sh' %}
 
 {% block go_url %}
-https://github.com/yggdrasil-network/yggdrasil-go/archive/refs/tags/v0.5.5.tar.gz
+https://github.com/yggdrasil-network/yggdrasil-go/archive/refs/tags/v0.5.8.tar.gz
 {% endblock %}
 
 {% block go_sha %}
-dcd87d381b7c9cc1241a683bfa11f1c400b9015fbe6b665f532e86ad4164153e
+eb9c308ceaecc046707b50d4f7fb44bdb8297960a1ee275ee01d4f40dba80ea3
 {% endblock %}

@@ -9,8 +9,10 @@ lib/p11/kit
 {% endblock %}
 
 {% block bld_tool %}
-bld/gettext
 bld/glib
+bld/gettext
+bld/fake(tool_name=ssh-add)
+bld/fake(tool_name=ssh-agent)
 {% endblock %}
 
 {% block meson_flags %}
@@ -24,13 +26,6 @@ introspection=false
 cat << EOF > meson_post_install.py
 #!$(which sh)
 EOF
-{% endblock %}
-
-{% block setup_tools %}
->ssh-add
->ssh-agent
-
-chmod +x ssh-add ssh-agent
 {% endblock %}
 
 {% block setup_target_flags %}

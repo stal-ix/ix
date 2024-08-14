@@ -9,6 +9,7 @@ etc/tmpfs
 set/stalix
 bin/kernel/6/10
 bin/kernel/6/9
+bin/ix/keyboard
 bin/kernel/gengrub
 set/pg/system/hosts
 set/pg/system/nebula

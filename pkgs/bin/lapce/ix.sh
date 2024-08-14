@@ -10,9 +10,15 @@ e82e1a7bb47e56352693cfcdc5f7f0d7a1d8871f95ac8602bd680281a4c1edeb
 
 {% block bld_libs %}
 lib/c
+lib/zstd
 lib/ssh/2
 lib/git/2
 lib/openssl
+lib/wayland/dl
+lib/mesa/gl/dl
+lib/drivers/3d
+lib/mesa/egl/dl
+lib/xkb/common/dl
 {% endblock %}
 
 {% block install %}

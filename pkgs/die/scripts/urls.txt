@@ -944,6 +944,7 @@ https://github.com/Syllo/nvtop/archive/refs/tags/3.0.2.tar.gz
 https://github.com/Syllo/nvtop/archive/refs/tags/3.1.0.tar.gz
 https://github.com/TartanLlama/expected/archive/refs/tags/v1.1.0.tar.gz
 https://github.com/Terraspace/UASM/archive/refs/tags/v2.56.2.tar.gz
+https://github.com/Terraspace/UASM/archive/refs/tags/v2.57r.tar.gz
 https://github.com/Tessil/robin-map/archive/refs/tags/v1.2.1.tar.gz
 https://github.com/Tomas-M/iotop/archive/refs/tags/v1.23.tar.gz
 https://github.com/Tomas-M/iotop/archive/refs/tags/v1.26.tar.gz
@@ -1058,6 +1059,7 @@ https://github.com/artemsen/swayimg/archive/refs/tags/v2.3.tar.gz
 https://github.com/artemsen/swayimg/archive/refs/tags/v2.4.tar.gz
 https://github.com/artemsen/swayimg/archive/refs/tags/v2.5.tar.gz
 https://github.com/artemsen/swayimg/archive/refs/tags/v3.0.tar.gz
+https://github.com/artemsen/swayimg/archive/refs/tags/v3.1.tar.gz
 https://github.com/arvidn/libtorrent/releases/download/v2.0.10/libtorrent-rasterbar-2.0.10.tar.gz
 https://github.com/arvidn/libtorrent/releases/download/v2.0.9/libtorrent-rasterbar-2.0.9.tar.gz
 https://github.com/ascent12/drm_info/archive/refs/tags/v2.3.0.tar.gz
@@ -1099,6 +1101,7 @@ https://github.com/c-ares/c-ares/archive/refs/tags/v1.31.0.tar.gz
 https://github.com/c-ares/c-ares/archive/refs/tags/v1.32.0.tar.gz
 https://github.com/c-ares/c-ares/archive/refs/tags/v1.32.1.tar.gz
 https://github.com/c-ares/c-ares/archive/refs/tags/v1.32.2.tar.gz
+https://github.com/c-ares/c-ares/archive/refs/tags/v1.33.0.tar.gz
 https://github.com/c-util/c-dvar/archive/refs/tags/v1.1.0.tar.gz
 https://github.com/c-util/c-ini/archive/refs/tags/v1.1.0.tar.gz
 https://github.com/c-util/c-list/archive/refs/tags/v3.1.0.tar.gz
@@ -1164,6 +1167,7 @@ https://github.com/curl/curl/archive/refs/tags/curl-8_9_1.tar.gz
 https://github.com/dandavison/delta/archive/refs/tags/0.16.5.tar.gz
 https://github.com/darkhz/bluetuith/archive/refs/tags/v0.1.7.tar.gz
 https://github.com/darkhz/bluetuith/archive/refs/tags/v0.2.2.tar.gz
+https://github.com/darkhz/bluetuith/archive/refs/tags/v0.2.3.tar.gz
 https://github.com/darktable-org/darktable/releases/download/release-4.0.0/darktable-4.0.0.tar.xz
 https://github.com/dboyan/wayland-tracer/archive/refs/tags/0.1.0.tar.gz
 https://github.com/dbry/WavPack/releases/download/5.6.0/wavpack-5.6.0.tar.xz
@@ -1397,6 +1401,7 @@ https://github.com/google/brotli/archive/refs/tags/v1.1.0.tar.gz
 https://github.com/google/crc32c/archive/refs/tags/1.1.2.tar.gz
 https://github.com/google/double-conversion/archive/refs/tags/v3.3.0.tar.gz
 https://github.com/google/fonts/archive/2855855a4cf481d4220e30ca3bff0704cc111a57.zip
+https://github.com/google/fonts/archive/eb794afc63d198685334f4b60939e767ef5c1814.zip
 https://github.com/google/glog/archive/refs/tags/v0.6.0.tar.gz
 https://github.com/google/glog/archive/refs/tags/v0.7.0.tar.gz
 https://github.com/google/glog/archive/refs/tags/v0.7.1.tar.gz
@@ -1487,6 +1492,7 @@ https://github.com/hyprwm/Hyprland/releases/download/v0.39.0/source-v0.39.0-rev1
 https://github.com/hyprwm/Hyprland/releases/download/v0.39.1/source-v0.39.1.tar.gz
 https://github.com/hyprwm/Hyprland/releases/download/v0.40.0/source-v0.40.0.tar.gz
 https://github.com/hyprwm/Hyprland/releases/download/v0.41.0/source-v0.41.0.tar.gz
+https://github.com/hyprwm/aquamarine/archive/refs/tags/v0.3.1.tar.gz
 https://github.com/hyprwm/hyprcursor/archive/refs/tags/v0.1.4.tar.gz
 https://github.com/hyprwm/hyprcursor/archive/refs/tags/v0.1.5.tar.gz
 https://github.com/hyprwm/hyprcursor/archive/refs/tags/v0.1.6.tar.gz
@@ -1498,8 +1504,10 @@ https://github.com/hyprwm/hyprlang/archive/refs/tags/v0.5.1.tar.gz
 https://github.com/hyprwm/hyprpaper/archive/refs/tags/v0.2.0.tar.gz
 https://github.com/hyprwm/hyprpaper/archive/refs/tags/v0.7.0.tar.gz
 https://github.com/hyprwm/hyprpicker/archive/refs/tags/v0.1.0.tar.gz
+https://github.com/hyprwm/hyprutils/archive/refs/tags/v0.2.1.tar.gz
 https://github.com/hyprwm/hyprwayland-scanner/archive/refs/tags/v0.3.4.tar.gz
 https://github.com/hyprwm/hyprwayland-scanner/archive/refs/tags/v0.3.9.tar.gz
+https://github.com/hyprwm/hyprwayland-scanner/archive/refs/tags/v0.4.0.tar.gz
 https://github.com/ib/xarchiver/archive/refs/tags/0.5.4.20.tar.gz
 https://github.com/ib/xarchiver/archive/refs/tags/0.5.4.23.tar.gz
 https://github.com/ihhub/fheroes2/archive/refs/tags/1.0.10.tar.gz
@@ -1949,6 +1957,7 @@ https://github.com/nlohmann/json/archive/refs/tags/v3.11.2.tar.gz
 https://github.com/nodejs/uvwasi/archive/refs/tags/v0.0.18.tar.gz
 https://github.com/noocsharp/wayclip/archive/refs/tags/0.4.1.tar.gz
 https://github.com/noocsharp/wayclip/archive/refs/tags/0.4.2.tar.gz
+https://github.com/notofonts/notofonts.github.io/archive/refs/tags/noto-monthly-release-24.8.1.tar.gz
 https://github.com/npm/cli/archive/refs/tags/v10.4.0.tar.gz
 https://github.com/npm/cli/archive/refs/tags/v9.8.0.tar.gz
 https://github.com/npm/cli/archive/refs/tags/v9.8.1.tar.gz
@@ -2015,6 +2024,7 @@ https://github.com/pkgconf/pkgconf/archive/refs/tags/pkgconf-2.3.0.tar.gz
 https://github.com/plougher/squashfs-tools/archive/refs/tags/4.6.1.tar.gz
 https://github.com/podofo/podofo/archive/refs/tags/0.10.2.tar.gz
 https://github.com/podofo/podofo/archive/refs/tags/0.10.3.tar.gz
+https://github.com/pop-os/cosmic-comp/archive/refs/tags/epoch-1.0.0-alpha.1.tar.gz
 https://github.com/pop-os/cosmic-term/archive/90179d5a5f837b60406bcd20315bb8a81cc3bb7d.zip
 https://github.com/posva/catimg/archive/refs/tags/2.7.0.tar.gz
 https://github.com/premake/premake-core/archive/refs/tags/v5.0.0-beta2.tar.gz
@@ -2538,6 +2548,7 @@ https://github.com/yaml/libyaml/archive/refs/tags/0.2.5.tar.gz
 https://github.com/yandex/porto/archive/refs/tags/v5.3.15.tar.gz
 https://github.com/yasm/yasm/releases/download/v1.3.0/yasm-1.3.0.tar.gz
 https://github.com/yggdrasil-network/yggdrasil-go/archive/refs/tags/v0.5.5.tar.gz
+https://github.com/yggdrasil-network/yggdrasil-go/archive/refs/tags/v0.5.8.tar.gz
 https://github.com/yorukot/superfile/archive/refs/tags/v1.1.3.tar.gz
 https://github.com/yquake2/yquake2/archive/refs/tags/QUAKE2_8_20.tar.gz
 https://github.com/yquake2/yquake2/archive/refs/tags/QUAKE2_8_30.tar.gz
@@ -2566,10 +2577,12 @@ https://gitlab.com/cardboardwm/cardboard/-/archive/b54758d85164fb19468f5ca52588e
 https://gitlab.com/craigbarnes/dte/-/archive/v1.10/dte-v1.10.tar.bz2
 https://gitlab.com/faxguy/libtiff-tools/-/archive/v4.6.0t/libtiff-tools-v4.6.0t.tar.bz2
 https://gitlab.com/freetype/freetype/-/archive/VER-2-13-2/freetype-VER-2-13-2.tar.bz2
+https://gitlab.com/freetype/freetype/-/archive/VER-2-13-3/freetype-VER-2-13-3.tar.bz2
 https://gitlab.com/giomasce/flex/-/raw/506e9605baf4638ba47d37133c348df1385ef06c/scan.lex.l
 https://gitlab.com/graphviz/graphviz/-/archive/10.0.1/graphviz-10.0.1.tar.bz2
 https://gitlab.com/graphviz/graphviz/-/archive/11.0.0/graphviz-11.0.0.tar.bz2
 https://gitlab.com/graphviz/graphviz/-/archive/12.0.0/graphviz-12.0.0.tar.bz2
+https://gitlab.com/graphviz/graphviz/-/archive/12.1.0/graphviz-12.1.0.tar.bz2
 https://gitlab.com/graphviz/graphviz/-/archive/7.0.3/graphviz-7.0.3.tar.bz2
 https://gitlab.com/graphviz/graphviz/-/archive/8.1.0/graphviz-8.1.0.tar.bz2
 https://gitlab.com/graphviz/graphviz/-/archive/9.0.0/graphviz-9.0.0.tar.bz2
@@ -2699,6 +2712,7 @@ https://gitlab.gnome.org/GNOME/gtk/-/archive/4.14.3/gtk-4.14.3.tar.bz2
 https://gitlab.gnome.org/GNOME/gtk/-/archive/4.15.0/gtk-4.15.0.tar.bz2
 https://gitlab.gnome.org/GNOME/gtk/-/archive/4.15.3/gtk-4.15.3.tar.bz2
 https://gitlab.gnome.org/GNOME/gtk/-/archive/4.15.4/gtk-4.15.4.tar.bz2
+https://gitlab.gnome.org/GNOME/gtk/-/archive/4.15.5/gtk-4.15.5.tar.bz2
 https://gitlab.gnome.org/GNOME/gtksourceview/-/archive/4.8.4/gtksourceview-4.8.4.tar.bz2
 https://gitlab.gnome.org/GNOME/gtksourceview/-/archive/5.10.0/gtksourceview-5.10.0.tar.bz2
 https://gitlab.gnome.org/GNOME/gtksourceview/-/archive/5.12.1/gtksourceview-5.12.1.tar.bz2
@@ -3040,6 +3054,7 @@ https://wpitchoune.net/psensor/files/psensor-1.2.1.tar.gz
 https://www.7-zip.org/a/7z2405-src.tar.xz
 https://www.7-zip.org/a/7z2406-src.tar.xz
 https://www.7-zip.org/a/7z2407-src.tar.xz
+https://www.7-zip.org/a/7z2408-src.tar.xz
 https://www.agner.org/optimize/asmlib.zip
 https://www.alsa-project.org/files/pub/lib/alsa-lib-1.2.10.tar.bz2
 https://www.alsa-project.org/files/pub/lib/alsa-lib-1.2.11.tar.bz2
@@ -3192,12 +3207,14 @@ https://www.sqlite.org/2024/sqlite-autoconf-3450100.tar.gz
 https://www.sqlite.org/2024/sqlite-autoconf-3450200.tar.gz
 https://www.sqlite.org/2024/sqlite-autoconf-3450300.tar.gz
 https://www.sqlite.org/2024/sqlite-autoconf-3460000.tar.gz
+https://www.sqlite.org/2024/sqlite-autoconf-3460100.tar.gz
 https://www.stunnel.org/downloads/stunnel-5.70.tar.gz
 https://www.stunnel.org/downloads/stunnel-5.71.tar.gz
 https://www.stunnel.org/downloads/stunnel-5.72.tar.gz
 https://www.tcpdump.org/release/libpcap-1.10.4.tar.gz
 https://www.tcpdump.org/release/tcpdump-4.99.4.tar.gz
 https://www.thrysoee.dk/editline/libedit-20230827-3.1.tar.gz
+https://www.thrysoee.dk/editline/libedit-20240808-3.1.tar.gz
 https://www.uclibc.org/downloads/uClibc-0.9.33.tar.xz
 https://www.x.org/pub/individual/util/util-macros-1.19.3.tar.bz2
 https://www.x.org/releases/individual/lib/libX11-1.8.6.tar.xz
