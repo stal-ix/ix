@@ -114,7 +114,9 @@ class RealmCtx:
         return f'{self.mngr.config.store_dir}/{self.uid}-rlm-{self.pkg_name}'
 
     def flat_pkgs(self):
-        return flatten(self.pkgs['flags'], self.pkgs['list'])
+        flags = cu.dict_dict_update(self.pkgs['flags'], {'target_realm': self.pkg_name})
+
+        return flatten(flags, self.pkgs['list'])
 
     def load_packages(self, pkgs):
         return self.mngr.load_packages(pkgs, self.fake_selector())
