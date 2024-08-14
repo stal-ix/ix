@@ -9,6 +9,10 @@ sha:fbd032683370d761ba68dba2566d3280a154f5290634172d60a79b24d366d9dc
 lib/c
 {% endblock %}
 
+{% block bld_tool %}
+bld/fake(tool_name=install_name_tool)
+{% endblock %}
+
 {% block unpack %}
 {{super()}}
 cd expat
@@ -21,9 +25,4 @@ EXPAT_SHARED_LIBS=OFF
 {% if linux %}
 EXPAT_WITH_GETRANDOM=ON
 {% endif %}
-{% endblock %}
-
-{% block setup_tools %}
->install_name_tool
-chmod +x install_name_tool
 {% endblock %}
