@@ -72,3 +72,8 @@ sed -e 's|/run|/var/run|' \
 {{super()}}
 export CPPFLAGS="-I${out}/include/gio-unix-2.0 \${CPPFLAGS}"
 {% endblock %}
+
+{% block run_data %}
+{{super()}}
+lib/glib/ix/fix
+{% endblock %}
