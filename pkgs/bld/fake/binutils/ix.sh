@@ -18,5 +18,10 @@ cat << EOF > {{bin_prefix}}objcopy
 exec llvm-objcopy "\${@}"
 EOF
 
+cat << EOF > {{bin_prefix}}ar
+#!/usr/bin/env sh
+exec llvm-ar "\${@}"
+EOF
+
 chmod +x *
 {% endblock %}

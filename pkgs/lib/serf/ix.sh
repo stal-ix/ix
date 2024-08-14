@@ -16,15 +16,11 @@ lib/apr/util
 {% block bld_tool %}
 bld/scons
 bld/pkg/config
+bld/fake/binutils
 {% endblock %}
 
 {% block build_flags %}
 shut_up
-{% endblock %}
-
-{% block setup_tools %}
-which llvm-ar
-ln -s $(which llvm-ar) ar
 {% endblock %}
 
 {% block patch %}
@@ -40,7 +36,6 @@ EOF
 {% block build %}
 scons \
     CC=$(which clang)    \
-    AR=$(which llvm-ar)  \
     PREFIX=${out}        \
     OPENSSL="${SSL_DIR}" \
     APR="$(which apr-1-config)" \
