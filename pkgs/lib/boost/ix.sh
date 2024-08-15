@@ -1,8 +1,8 @@
 {% extends '//die/c/ix.sh' %}
 
 {% block fetch %}
-https://boostorg.jfrog.io/artifactory/main/release/1.85.0/source/boost_1_85_0.tar.bz2
-sha:7009fe1faa1697476bdc7027703a2badb84e849b7b0baad5086b087b971f8617
+https://boostorg.jfrog.io/artifactory/main/release/1.86.0/source/boost_1_86_0.tar.bz2
+sha:1bed88e40401b2cb7a1f76d4bab499e352fa4d0c5f31c0dbae64e24d34d7513b
 {% endblock %}
 
 {% block bld_tool %}
@@ -33,7 +33,7 @@ b2 link=static
 
 {% block install %}
 b2 link=static install
-sed -e 's|len + 1}|int(len + 1)}|' -i ${out}/include/boost/process/detail/posix/executor.hpp
+#sed -e 's|len + 1}|int(len + 1)}|' -i ${out}/include/boost/process/detail/posix/executor.hpp
 {% endblock %}
 
 {% block build_flags %}
