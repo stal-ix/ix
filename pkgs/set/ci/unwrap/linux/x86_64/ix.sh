@@ -44,6 +44,7 @@
 #}
 
 {% block run_deps %}
+bin/go/lang/23
 bin/lapce
 bin/cosmic/comp
 bin/evsieve

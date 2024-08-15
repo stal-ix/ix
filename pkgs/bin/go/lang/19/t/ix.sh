@@ -19,18 +19,6 @@ bld/python
 aux/ca/bundle
 {% endblock %}
 
-{% block setup_tools %}
-cat << EOF > xcrun
-#!$(which python3)
-import sys
-import subprocess
-
-subprocess.check_call(sys.argv[1:])
-EOF
-
-chmod +x xcrun
-{% endblock %}
-
 {% block patch %}
 {{super()}}
 find . -type f -name '*.go' | while read l; do
