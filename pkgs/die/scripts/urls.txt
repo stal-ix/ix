@@ -2393,6 +2393,7 @@ https://github.com/tetratelabs/wazero/archive/refs/tags/v1.7.0.tar.gz
 https://github.com/tetratelabs/wazero/archive/refs/tags/v1.7.1.tar.gz
 https://github.com/tetratelabs/wazero/archive/refs/tags/v1.7.2.tar.gz
 https://github.com/tetratelabs/wazero/archive/refs/tags/v1.7.3.tar.gz
+https://github.com/tetratelabs/wazero/archive/refs/tags/v1.8.0.tar.gz
 https://github.com/texstudio-org/texstudio/archive/refs/tags/4.4.1.tar.gz
 https://github.com/texstudio-org/texstudio/archive/refs/tags/4.7.2.tar.gz
 https://github.com/thepowersgang/mrustc/archive/1b1416bb2b44e2c331c7201833305cac29d571e8.zip
