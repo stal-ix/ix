@@ -1,11 +1,11 @@
 {% extends '//die/go/build.sh' %}
 
 {% block go_url %}
-https://github.com/elves/elvish/archive/refs/tags/v0.20.1.tar.gz
+https://github.com/elves/elvish/archive/refs/tags/v0.21.0.tar.gz
 {% endblock %}
 
 {% block go_sha %}
-d0885bd4c8c565a5da6413368fc193fce5152ae2bbe6bf00c66ced0d626065de
+e89800f0c41135b1a7b7717036fa47e4e4ef6f99d38863d89ccd71de16bf60f6
 {% endblock %}
 
 {% block unpack %}
