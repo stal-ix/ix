@@ -6,3 +6,8 @@ ls | grep '.*\.d$' | grep -v ananicy | grep -v bash_completion | grep -v grub | 
     cat ${l}/* > ${l%.d}
     rm -r ${l}
 done
+
+if test -f shells; then
+    cat shells | sort | uniq > _
+    mv _ shells
+fi
