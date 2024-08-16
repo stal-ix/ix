@@ -1663,6 +1663,7 @@ https://github.com/leo-arch/clifm/archive/refs/tags/v1.16.tar.gz
 https://github.com/leo-arch/clifm/archive/refs/tags/v1.17.tar.gz
 https://github.com/leo-arch/clifm/archive/refs/tags/v1.18.tar.gz
 https://github.com/leo-arch/clifm/archive/refs/tags/v1.19.tar.gz
+https://github.com/leo-arch/clifm/archive/refs/tags/v1.20.tar.gz
 https://github.com/libarchive/libarchive/archive/refs/tags/v3.7.1.tar.gz
 https://github.com/libarchive/libarchive/archive/refs/tags/v3.7.2.tar.gz
 https://github.com/libarchive/libarchive/archive/refs/tags/v3.7.3.tar.gz
@@ -2574,6 +2575,7 @@ https://github.com/yrutschle/sslh/archive/refs/tags/v2.1.0.tar.gz
 https://github.com/yrutschle/sslh/archive/refs/tags/v2.1.1.tar.gz
 https://github.com/yrutschle/sslh/archive/refs/tags/v2.1.2.tar.gz
 https://github.com/zed-industries/zed/archive/refs/tags/v0.123.2.tar.gz
+https://github.com/zed-industries/zed/archive/refs/tags/v0.148.1.tar.gz
 https://github.com/zellij-org/zellij/archive/refs/tags/v0.39.2.tar.gz
 https://github.com/zellij-org/zellij/archive/refs/tags/v0.40.0.tar.gz
 https://github.com/zeux/volk/archive/refs/tags/vulkan-sdk-1.3.275.0.tar.gz

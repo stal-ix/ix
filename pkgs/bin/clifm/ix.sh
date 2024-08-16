@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/leo-arch/clifm/archive/refs/tags/v1.19.tar.gz
-sha:98fe9a1d26b02d661440787ae811363c97da537a11fd3df78ff98d40f42dc487
+https://github.com/leo-arch/clifm/archive/refs/tags/v1.20.tar.gz
+sha:36f41d332985b9888a24a2ebb09ef837f40acea744b38498cd5e5313690ec10f
 {% endblock %}
 
 {% block bld_libs %}
