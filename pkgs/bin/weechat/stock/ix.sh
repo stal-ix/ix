@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/weechat/weechat/archive/refs/tags/v4.3.6.tar.gz
-sha:587e940ede80a00bc1167b21062d7738d21ca4fbbdb82f42189e64691e5d70a5
+https://github.com/weechat/weechat/archive/refs/tags/v4.4.0.tar.gz
+sha:8c8abda3790dfe784c315d0256c80d99dc0e65bd6be701f9b3787f96b7576255
 {% endblock %}
 
 {% block bld_libs %}
