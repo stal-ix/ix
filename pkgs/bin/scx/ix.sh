@@ -13,7 +13,6 @@ bin/bpf/clang
 {% endblock %}
 
 {% block bld_libs %}
-lib/linux/headers/new
 lib/c
 lib/z
 lib/xz
