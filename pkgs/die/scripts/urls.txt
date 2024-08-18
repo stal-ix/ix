@@ -436,6 +436,7 @@ https://ftp.gnu.org/gnu/bash/bash-5.2.tar.gz
 https://ftp.gnu.org/gnu/bc/bc-1.07.1.tar.gz
 https://ftp.gnu.org/gnu/binutils/binutils-2.41.tar.bz2
 https://ftp.gnu.org/gnu/binutils/binutils-2.42.tar.bz2
+https://ftp.gnu.org/gnu/binutils/binutils-2.43.1.tar.bz2
 https://ftp.gnu.org/gnu/binutils/binutils-2.43.tar.bz2
 https://ftp.gnu.org/gnu/bison/bison-3.4.1.tar.xz
 https://ftp.gnu.org/gnu/bison/bison-3.5.1.tar.xz
@@ -1041,6 +1042,7 @@ https://github.com/apernet/hysteria/archive/refs/tags/app/v2.4.0.tar.gz
 https://github.com/apernet/hysteria/archive/refs/tags/app/v2.4.2.tar.gz
 https://github.com/apernet/hysteria/archive/refs/tags/app/v2.4.5.tar.gz
 https://github.com/apernet/hysteria/archive/refs/tags/app/v2.5.0.tar.gz
+https://github.com/apernet/hysteria/archive/refs/tags/app/v2.5.1.tar.gz
 https://github.com/apple-oss-distributions/mDNSResponder/archive/refs/tags/mDNSResponder-2200.80.16.tar.gz
 https://github.com/apple-oss-distributions/patch_cmds/archive/refs/tags/patch_cmds-61.tar.gz
 https://github.com/apple/swift-corelibs-libdispatch/archive/refs/tags/swift-5.10-RELEASE.tar.gz
