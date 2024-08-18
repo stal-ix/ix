@@ -35,3 +35,7 @@ wrap_cc
 install
 install_headers
 {% endblock %}
+
+{% block env %}
+export BPF_HEADERS="${out}/include"
+{% endblock %}
