@@ -33,8 +33,3 @@ bpftool=disabled
 enable_rust=false
 enable_stress=false
 {% endblock %}
-
-{% block patch %}
-prepend scheds/include/scx/compat.h << EOF
-EOF
-{% endblock %}
