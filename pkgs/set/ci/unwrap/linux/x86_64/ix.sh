@@ -44,6 +44,7 @@
 #}
 
 {% block run_deps %}
+bin/ubpf
 bin/scx
 bin/python/13
 bin/go/lang/23
