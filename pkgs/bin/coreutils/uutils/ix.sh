@@ -39,4 +39,5 @@ set -xue
 make list | tr ' ' '\n' | grep -v '^$' | sort | uniq | grep -v coreutils | while read l; do
     ln -s coreutils ${out}/bin/${l}
 done
+rm ${out}/bin/uptime
 {% endblock %}

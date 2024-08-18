@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://github.com/AbiWord/enchant/releases/download/v2.8.1/enchant-2.8.1.tar.gz
-sha:ff79de470b8eb16f53849dc49f2bce8ca4eb7decabfc1349716fe12616e52f4e
+https://github.com/AbiWord/enchant/releases/download/v2.8.2/enchant-2.8.2.tar.gz
+sha:8f19535adb5577b83b00e02f330fe9b9eb40dd21f19e2899636fc4d3a7696375
 {% endblock %}
 
 {% block conf_ver %}

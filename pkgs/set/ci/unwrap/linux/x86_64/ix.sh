@@ -44,6 +44,8 @@
 #}
 
 {% block run_deps %}
+bin/scx
+bin/python/13
 bin/go/lang/23
 bin/lapce
 bin/cosmic/comp

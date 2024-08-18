@@ -6,7 +6,9 @@ sha:d433ce4de6e69d72de7692424dc5f6bed492c09130a8a59bcd63b20f4d88d328
 {% endblock %}
 
 {% block bld_libs %}
-lib/qt/6/base
+lib/c
+lib/c++
+lib/qt/6/base/nogui
 {% endblock %}
 
 {% block bld_tool %}

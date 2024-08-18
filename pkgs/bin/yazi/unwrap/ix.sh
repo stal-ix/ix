@@ -1,11 +1,11 @@
 {% extends '//die/rust/cargo.sh' %}
 
 {% block cargo_url %}
-https://github.com/sxyazi/yazi/archive/refs/tags/v0.2.5.tar.gz
+https://github.com/sxyazi/yazi/archive/refs/tags/v0.3.1.tar.gz
 {% endblock %}
 
 {% block cargo_sha %}
-5eff3a8625641587967ddf771dfd13e8e2c24c5b158fa0721ddb9af69b062a0a
+2b71bcab5aac4b702a3782037c68b0bdcfaeac8b7d9acf1fdb2861857c4ee181
 {% endblock %}
 
 {% block bld_libs %}
