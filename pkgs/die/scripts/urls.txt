@@ -1908,6 +1908,7 @@ https://github.com/mpv-player/mpv/archive/refs/tags/v0.38.0.tar.gz
 https://github.com/msgpack/msgpack-c/archive/refs/tags/c-6.0.0.tar.gz
 https://github.com/msgpack/msgpack-c/archive/refs/tags/c-6.0.1.tar.gz
 https://github.com/msgpack/msgpack-c/archive/refs/tags/c-6.0.2.tar.gz
+https://github.com/msgpack/msgpack-c/archive/refs/tags/c-6.1.0.tar.gz
 https://github.com/msoos/minisat/archive/refs/tags/2.2.1.tar.gz
 https://github.com/muesli/duf/archive/refs/tags/v0.8.1.tar.gz
 https://github.com/munt/munt/archive/refs/tags/libmt32emu_2_7_1.tar.gz
