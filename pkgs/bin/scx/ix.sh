@@ -8,11 +8,13 @@ sha:32087e9dfcc62169e2218bb77bc10b573858d393629bb8916740e002ded0bc38
 {% block bld_tool %}
 bin/jq
 bld/make
+bld/prepend
 bin/bpf/tool
 bin/bpf/clang
 {% endblock %}
 
 {% block bld_libs %}
+lib/linux/headers/new
 lib/c
 lib/z
 lib/xz
@@ -30,4 +32,9 @@ bpf_clang=bpf_clang
 bpftool=disabled
 enable_rust=false
 enable_stress=false
+{% endblock %}
+
+{% block patch %}
+prepend scheds/include/scx/compat.h << EOF
+EOF
 {% endblock %}
