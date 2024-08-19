@@ -44,6 +44,7 @@
 #}
 
 {% block run_deps %}
+bin/ebpf/verifier
 bin/cpu/fetch
 bin/ubpf
 bin/scx
