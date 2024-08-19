@@ -1058,6 +1058,7 @@ https://github.com/argp-standalone/argp-standalone/archive/refs/tags/1.5.0.tar.g
 https://github.com/aria2/aria2/archive/refs/tags/release-1.36.0.tar.gz
 https://github.com/aria2/aria2/archive/refs/tags/release-1.37.0.tar.gz
 https://github.com/aristocratos/btop/archive/refs/tags/v1.2.0.tar.gz
+https://github.com/aristocratos/btop/archive/refs/tags/v1.3.2.tar.gz
 https://github.com/artemsen/swayimg/archive/refs/tags/v1.12.tar.gz
 https://github.com/artemsen/swayimg/archive/refs/tags/v2.0.tar.gz
 https://github.com/artemsen/swayimg/archive/refs/tags/v2.1.tar.gz
