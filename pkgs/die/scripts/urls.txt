@@ -1073,6 +1073,7 @@ https://github.com/ascent12/drm_info/archive/refs/tags/v2.3.0.tar.gz
 https://github.com/avahi/avahi/releases/download/v0.8/avahi-0.8.tar.gz
 https://github.com/axboe/liburing/archive/refs/tags/liburing-2.2.tar.gz
 https://github.com/axboe/liburing/archive/refs/tags/liburing-2.6.tar.gz
+https://github.com/axboe/liburing/archive/refs/tags/liburing-2.7.tar.gz
 https://github.com/axel-download-accelerator/axel/archive/refs/tags/v2.17.12.tar.gz
 https://github.com/axel-download-accelerator/axel/archive/refs/tags/v2.17.13.tar.gz
 https://github.com/benhoyt/goawk/archive/refs/tags/v1.24.0.tar.gz
