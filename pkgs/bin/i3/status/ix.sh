@@ -1,8 +1,8 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://i3wm.org/i3status/i3status-2.14.tar.xz
-sha:5c4d0273410f9fa3301fd32065deda32e9617fcae8b3cb34793061bf21644924
+https://i3wm.org/i3status/i3status-2.15.tar.xz
+sha:6c67f52cae4f139df764ad1cc736562be0f97750791bc212b53f34c06eaf2205
 {% endblock %}
 
 {% block bld_libs %}

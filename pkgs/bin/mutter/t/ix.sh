@@ -10,7 +10,6 @@ bld/meson/4
 {% endblock %}
 
 {% block bld_libs %}
-lib/linux/headers/new
 lib/c
 lib/ei
 lib/atk

@@ -44,6 +44,9 @@
 #}
 
 {% block run_deps %}
+bin/ebpf/verifier
+bin/cpu/fetch
+bin/ubpf
 bin/scx
 bin/python/13
 bin/go/lang/23
@@ -296,7 +299,7 @@ bin/pngquant
 bin/glmark2
 bin/wayland/tracer
 bin/stp
-bin/cpuid
+bin/cpu/id
 bin/smenu
 bin/tty/d
 bin/svgren
@@ -722,7 +725,7 @@ bin/lsof
 bin/telegram
 bin/hypr
 bin/schedtool
-bin/cpulimit
+bin/cpu/limit
 bin/opj
 bin/xpdf
 bin/heif
@@ -766,7 +769,7 @@ bin/pqiv
 bin/gtk/doc
 bin/gtk/lock
 bin/pcmanfm
-bin/cpupower
+bin/cpu/power
 bin/sfwbar
 bin/wayclip
 bin/sysklogd
