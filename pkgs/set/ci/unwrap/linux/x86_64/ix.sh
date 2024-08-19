@@ -44,6 +44,7 @@
 #}
 
 {% block run_deps %}
+bin/cpu/fetch
 bin/ubpf
 bin/scx
 bin/python/13
