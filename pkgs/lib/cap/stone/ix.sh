@@ -1,12 +1,12 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block version %}
-5.0.2
+5.0.3
 {% endblock %}
 
 {% block fetch %}
 https://github.com/capstone-engine/capstone/archive/refs/tags/{{self.version().strip()}}.tar.gz
-sha:9d0be727cc942075a1696f576b88918eb0daf9db7a02f563f0c4e51a439a611d
+sha:3970c63ca1f8755f2c8e69b41432b710ff634f1b45ee4e5351defec4ec8e1753
 {% endblock %}
 
 {% block lib_deps %}
