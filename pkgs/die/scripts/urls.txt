@@ -685,6 +685,7 @@ https://github.com/BLAKE3-team/BLAKE3/archive/refs/tags/1.5.0.tar.gz
 https://github.com/BLAKE3-team/BLAKE3/archive/refs/tags/1.5.1.tar.gz
 https://github.com/BLAKE3-team/BLAKE3/archive/refs/tags/1.5.2.tar.gz
 https://github.com/BLAKE3-team/BLAKE3/archive/refs/tags/1.5.3.tar.gz
+https://github.com/BLAKE3-team/BLAKE3/archive/refs/tags/1.5.4.tar.gz
 https://github.com/CorsixTH/CorsixTH/archive/refs/tags/v0.67.tar.gz
 https://github.com/Cyan4973/xxHash/archive/refs/tags/v0.8.2.tar.gz
 https://github.com/DanBloomberg/leptonica/archive/refs/tags/1.83.1.tar.gz
@@ -2536,6 +2537,7 @@ https://github.com/weechat/weechat/archive/refs/tags/v4.3.4.tar.gz
 https://github.com/weechat/weechat/archive/refs/tags/v4.3.5.tar.gz
 https://github.com/weechat/weechat/archive/refs/tags/v4.3.6.tar.gz
 https://github.com/weechat/weechat/archive/refs/tags/v4.4.0.tar.gz
+https://github.com/weechat/weechat/archive/refs/tags/v4.4.1.tar.gz
 https://github.com/westes/flex/archive/refs/tags/flex-2-5-10.tar.gz
 https://github.com/westes/flex/files/981163/flex-2.6.4.tar.gz
 https://github.com/wez/wezterm/archive/refs/tags/20230712-072601-f4abf8fd.tar.gz
