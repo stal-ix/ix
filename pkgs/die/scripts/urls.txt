@@ -397,6 +397,7 @@ https://ffmpeg.org/releases/ffmpeg-5.1.2.tar.xz
 https://ffmpeg.org/releases/ffmpeg-6.0.1.tar.xz
 https://ffmpeg.org/releases/ffmpeg-6.0.tar.xz
 https://ffmpeg.org/releases/ffmpeg-6.1.1.tar.xz
+https://ffmpeg.org/releases/ffmpeg-6.1.2.tar.xz
 https://ffmpeg.org/releases/ffmpeg-6.1.tar.xz
 https://ffmpeg.org/releases/ffmpeg-7.0.1.tar.xz
 https://ffmpeg.org/releases/ffmpeg-7.0.tar.xz
