@@ -44,6 +44,7 @@
 #}
 
 {% block run_deps %}
+bin/elementary/dock
 bin/ebpf/verifier
 bin/cpu/fetch
 bin/ubpf
