@@ -1,7 +1,7 @@
 {% extends '//bin/wayfire/stock/ix.sh' %}
 
 {% block patch %}
-base64 -d << EOF > src/api/wayfire/option-wrapper.hpp
+base64 -d << EOF > src/api/wayfire/option-wrapper.hpp1
 {% include 'opts.h/base64' %}
 EOF
 
