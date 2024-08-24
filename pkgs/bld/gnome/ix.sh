@@ -7,6 +7,10 @@ cat << EOF > gtk-update-icon-cache
 #!/usr/bin/env sh
 EOF
 
+cat << EOF > gtk4-update-icon-cache
+#!/usr/bin/env sh
+EOF
+
 cat << EOF > update-desktop-database
 #!/usr/bin/env sh
 EOF
