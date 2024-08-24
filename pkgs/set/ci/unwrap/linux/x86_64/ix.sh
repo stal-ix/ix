@@ -44,6 +44,8 @@
 #}
 
 {% block run_deps %}
+#bin/sway(mesa_driver=iris)
+#bin/sway(mesa_driver=radeonsi)
 bin/elementary/dock
 bin/ebpf/verifier
 bin/cpu/fetch
@@ -222,8 +224,6 @@ bin/speedtest/cli
 bin/wmenu
 bin/python/12
 bin/ryzen/adj
-bin/sway(mesa_driver=iris)
-bin/sway(mesa_driver=radeonsi)
 bin/unionfs/fuse
 bin/seer
 bin/dxsc
