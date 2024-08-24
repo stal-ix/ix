@@ -3079,6 +3079,7 @@ https://strace.io/files/6.7/strace-6.7.tar.xz
 https://strace.io/files/6.8/strace-6.8.tar.xz
 https://strace.io/files/6.9/strace-6.9.tar.xz
 https://taglib.org/releases/taglib-1.13.1.tar.gz
+https://taglib.org/releases/taglib-2.0.2.tar.gz
 https://the.earth.li/~sgtatham/putty/0.76/putty-0.76.tar.gz
 https://thekelleys.org.uk/dnsmasq/dnsmasq-2.89.tar.xz
 https://thekelleys.org.uk/dnsmasq/dnsmasq-2.90.tar.xz
