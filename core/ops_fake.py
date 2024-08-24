@@ -15,7 +15,7 @@ class Ops:
         return []
 
     def fetch(self, sb, url, path, md5):
-        return []
+        return [url]
 
     def link(self, sb, files, out):
         return []

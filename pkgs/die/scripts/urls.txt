@@ -144,6 +144,7 @@ https://cache.ruby-lang.org/pub/ruby/3.1/ruby-3.1.3.tar.gz
 https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.18.14.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.1.71.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.10.3.tar.xz
+https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.10.6.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.2.14.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.3.13.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.4.12.tar.xz
@@ -168,6 +169,7 @@ https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.6.28.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.6.3.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.6.30.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.6.4.tar.xz
+https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.6.47.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.6.5.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.6.6.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.6.7.tar.xz
@@ -198,6 +200,7 @@ https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.8.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.9.1.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.9.2.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.9.3.tar.xz
+https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.9.9.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.9.tar.xz
 https://cdn.openbsd.org/pub/OpenBSD/OpenNTPD/openntpd-6.8p1.tar.gz
 https://cmocka.org/files/1.1/cmocka-1.1.7.tar.xz
@@ -780,6 +783,7 @@ https://github.com/Genivia/ugrep/archive/refs/tags/v6.1.0.tar.gz
 https://github.com/Genivia/ugrep/archive/refs/tags/v6.2.0.tar.gz
 https://github.com/Genivia/ugrep/archive/refs/tags/v6.3.0.tar.gz
 https://github.com/Genivia/ugrep/archive/refs/tags/v6.4.0.tar.gz
+https://github.com/Genivia/ugrep/archive/refs/tags/v6.5.0.tar.gz
 https://github.com/GrapheneOS/hardened_malloc/archive/refs/tags/11.tar.gz
 https://github.com/Hjdskes/cage/archive/refs/tags/v0.1.4.tar.gz
 https://github.com/HowardHinnant/date/archive/refs/tags/v3.0.1.tar.gz
@@ -871,6 +875,7 @@ https://github.com/Matroska-Org/libebml/archive/refs/tags/release-1.4.5.tar.gz
 https://github.com/Matroska-Org/libmatroska/archive/refs/tags/release-1.7.1.tar.gz
 https://github.com/MidnightCommander/mc/archive/refs/tags/4.8.30.tar.gz
 https://github.com/MidnightCommander/mc/archive/refs/tags/4.8.31.tar.gz
+https://github.com/MidnightCommander/mc/archive/refs/tags/4.8.32.tar.gz
 https://github.com/MisterTea/EternalTerminal/archive/refs/tags/et-v6.2.4.tar.gz
 https://github.com/NLnetLabs/ldns/archive/refs/tags/1.8.3.tar.gz
 https://github.com/NLnetLabs/ldns/archive/refs/tags/1.8.4.tar.gz
@@ -912,6 +917,7 @@ https://github.com/NixOS/nix/archive/refs/tags/2.23.2.tar.gz
 https://github.com/NixOS/nix/archive/refs/tags/2.23.3.tar.gz
 https://github.com/NixOS/nix/archive/refs/tags/2.24.1.tar.gz
 https://github.com/NixOS/nix/archive/refs/tags/2.24.2.tar.gz
+https://github.com/NixOS/nix/archive/refs/tags/2.24.3.tar.gz
 https://github.com/NixOS/patchelf/archive/refs/tags/0.18.0.tar.gz
 https://github.com/Novum/vkQuake/archive/refs/tags/1.30.1.tar.gz
 https://github.com/Old-Man-Programmer/tree/archive/refs/tags/2.1.1.tar.gz
@@ -1070,6 +1076,7 @@ https://github.com/artemsen/swayimg/archive/refs/tags/v2.4.tar.gz
 https://github.com/artemsen/swayimg/archive/refs/tags/v2.5.tar.gz
 https://github.com/artemsen/swayimg/archive/refs/tags/v3.0.tar.gz
 https://github.com/artemsen/swayimg/archive/refs/tags/v3.1.tar.gz
+https://github.com/artemsen/swayimg/archive/refs/tags/v3.2.tar.gz
 https://github.com/arvidn/libtorrent/releases/download/v2.0.10/libtorrent-rasterbar-2.0.10.tar.gz
 https://github.com/arvidn/libtorrent/releases/download/v2.0.9/libtorrent-rasterbar-2.0.9.tar.gz
 https://github.com/ascent12/drm_info/archive/refs/tags/v2.3.0.tar.gz
@@ -1123,6 +1130,7 @@ https://github.com/c-util/c-utf8/archive/refs/tags/v1.1.0.tar.gz
 https://github.com/capnproto/capnproto/archive/refs/tags/v1.0.2.tar.gz
 https://github.com/capstone-engine/capstone/archive/refs/tags/5.0-rc2.tar.gz
 https://github.com/capstone-engine/capstone/archive/refs/tags/5.0.1.tar.gz
+https://github.com/capstone-engine/capstone/archive/refs/tags/5.0.3.tar.gz
 https://github.com/carapace-sh/carapace-bin/archive/refs/tags/v1.0.4.tar.gz
 https://github.com/catboost/catboost/archive/refs/tags/v1.0.6.tar.gz
 https://github.com/catchorg/Catch2/archive/refs/tags/v3.7.0.tar.gz
@@ -1133,6 +1141,7 @@ https://github.com/ccache/ccache/archive/refs/tags/v4.10.tar.gz
 https://github.com/ccache/ccache/releases/download/v4.8.3/ccache-4.8.3.tar.xz
 https://github.com/ccache/ccache/releases/download/v4.9.1/ccache-4.9.1.tar.xz
 https://github.com/ccxvii/mujs/archive/refs/tags/1.3.2.tar.gz
+https://github.com/ccxvii/mujs/archive/refs/tags/1.3.5.tar.gz
 https://github.com/celluloid-player/celluloid/archive/refs/tags/v0.26.tar.gz
 https://github.com/celluloid-player/celluloid/archive/refs/tags/v0.27.tar.gz
 https://github.com/chenjiandongx/sniffer/archive/refs/tags/v0.6.1.tar.gz
@@ -1364,6 +1373,7 @@ https://github.com/gavinhoward/bc/archive/refs/tags/6.6.1.tar.gz
 https://github.com/gavinhoward/bc/archive/refs/tags/6.7.0.tar.gz
 https://github.com/gavinhoward/bc/archive/refs/tags/6.7.3.tar.gz
 https://github.com/gavinhoward/bc/archive/refs/tags/6.7.5.tar.gz
+https://github.com/gavinhoward/bc/archive/refs/tags/7.0.0.tar.gz
 https://github.com/gcla/termshark/archive/refs/tags/v2.4.0.tar.gz
 https://github.com/geany/geany/archive/refs/tags/1.38.0.tar.gz
 https://github.com/geany/geany/archive/refs/tags/2.0.0.tar.gz
@@ -2248,6 +2258,7 @@ https://github.com/sabotage-linux/netbsd-curses/archive/refs/tags/v0.3.2.tar.gz
 https://github.com/sammycage/lunasvg/archive/refs/tags/v2.3.8.tar.gz
 https://github.com/sammycage/lunasvg/archive/refs/tags/v2.3.9.tar.gz
 https://github.com/sammycage/lunasvg/archive/refs/tags/v2.4.0.tar.gz
+https://github.com/sammycage/lunasvg/archive/refs/tags/v2.4.1.tar.gz
 https://github.com/sass/libsass/archive/refs/tags/3.6.5.tar.gz
 https://github.com/sass/libsass/archive/refs/tags/3.6.6.tar.gz
 https://github.com/sass/sassc/archive/refs/tags/3.6.2.tar.gz
@@ -2310,6 +2321,7 @@ https://github.com/strawberrymusicplayer/strawberry/archive/refs/tags/1.0.20.tar
 https://github.com/strawberrymusicplayer/strawberry/archive/refs/tags/1.0.21.tar.gz
 https://github.com/strawberrymusicplayer/strawberry/archive/refs/tags/1.0.22.tar.gz
 https://github.com/strawberrymusicplayer/strawberry/archive/refs/tags/1.0.23.tar.gz
+https://github.com/strawberrymusicplayer/strawberry/archive/refs/tags/1.1.1.tar.gz
 https://github.com/strukturag/libde265/archive/refs/tags/v1.0.12.tar.gz
 https://github.com/strukturag/libde265/archive/refs/tags/v1.0.13.tar.gz
 https://github.com/strukturag/libde265/archive/refs/tags/v1.0.14.tar.gz
