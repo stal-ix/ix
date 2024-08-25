@@ -41,6 +41,7 @@ xmlconfig=disabled
 llvm=enabled
 shared-llvm=disabled
 cpp_rtti=false
+shader-cache=disabled
 {% endblock %}
 
 {% block meson_cross %}
