@@ -16,7 +16,6 @@ lib/vulkan/spirv/tools
 {% endblock %}
 
 {% block bld_tool %}
-pip/ply
 pip/Mako
 bld/flex
 bld/bison
@@ -42,6 +41,7 @@ llvm=enabled
 shared-llvm=disabled
 cpp_rtti=false
 shader-cache=disabled
+intel-rt=disabled
 {% endblock %}
 
 {% block meson_cross %}
