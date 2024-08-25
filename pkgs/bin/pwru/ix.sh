@@ -11,7 +11,7 @@ https://github.com/cilium/pwru/archive/refs/tags/v1.0.5.tar.gz
 {% block bld_libs %}
 lib/c
 lib/pcap
-lib/llvm/17
+lib/llvm/18
 {% endblock %}
 
 {% block bld_tool %}
@@ -30,7 +30,7 @@ export CGO_CXXFLAGS="${CXXFLAGS}"
 export CGO_LDFLAGS="${LDFLAGS}"
 export GOFLAGS="-buildmode=pie -mod=vendor -modcacherw"
 export TARGET_GOARCH=amd64
-go env -w "CC=clang-17"
+go env -w "CC=clang-18"
 go generate
 {{super()}}
 {% endblock %}
