@@ -9,5 +9,6 @@ lib/vulkan/spirv/tools
 
 {% block bld_tool %}
 {{super()}}
+pip/ply
 bld/spirv/tools
 {% endblock %}
