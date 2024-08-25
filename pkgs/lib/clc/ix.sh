@@ -1,14 +1,18 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/llvm/llvm-project/releases/download/llvmorg-18.1.8/libclc-18.1.8.src.tar.xz
-sha:905bd59e9f810d6bd0ae6874725a8f8a3c91cb416199c03f2b98b57437cfb32e
+{% include '//lib/llvm/18/ver.sh' %}
 {% endblock %}
 
 {% block lib_deps %}
 lib/c
 lib/c++
 lib/llvm/18
+{% endblock %}
+
+{% block step_unpack %}
+{{super()}}
+cd libclc
 {% endblock %}
 
 {% block bld_tool %}
