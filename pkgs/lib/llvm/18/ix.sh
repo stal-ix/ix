@@ -23,6 +23,12 @@ lib/Target/AMDGPU/AMDGPUGenAsmMatcher.inc
 LLVM_ENABLE_PROJECTS="lld;clang"
 {% endblock %}
 
+{% block postinstall %}
+{{super()}}
+mkdir ${out}/bin
+echo > ${out}/bin/lld
+{% endblock %}
+
 {% block env %}
 {{super()}}
 export LLVM_DIR=${out}

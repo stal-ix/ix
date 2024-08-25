@@ -19,8 +19,8 @@ lib/cap
 lib/bpf
 lib/bfd
 lib/iberty
-lib/llvm/17
 lib/opcodes
+lib/llvm/18
 {% endblock %}
 
 {% block step_unpack %}
@@ -31,6 +31,7 @@ cd src
 {% block make_flags %}
 LLVM=1
 V=1
+CLANG_BPF_CO_RE_PROBE_CMD='echo 1'
 bash_compdir=${out}/share/bash
 {% endblock %}
 
@@ -41,4 +42,8 @@ PACKAGE_VERSION=1
 {% block install %}
 {{super()}}
 mv ${out}/sbin ${out}/bin
+{% endblock %}
+
+{% block bld_tool %}
+bld/llvm/config
 {% endblock %}

@@ -85,6 +85,7 @@ http://www.alsa-project.org/files/pub/utils/alsa-utils-1.2.10.tar.bz2
 http://www.colm.net/files/ragel/ragel-6.10.tar.gz
 http://www.dest-unreach.org/socat/download/socat-1.7.4.4.tar.gz
 http://www.dest-unreach.org/socat/download/socat-1.8.0.0.tar.gz
+http://www.dest-unreach.org/socat/download/socat-1.8.0.1.tar.gz
 http://www.etallen.com/cpuid/cpuid-20230120.src.tar.gz
 http://www.haproxy.org/download/2.8/src/haproxy-2.8.3.tar.gz
 http://www.haproxy.org/download/2.8/src/haproxy-2.8.4.tar.gz
@@ -412,6 +413,7 @@ https://files.pythonhosted.org/packages/62/d5/5f610ebe421e85889f2e55e33b7f9a6795
 https://files.pythonhosted.org/packages/64/de/375aa14daaee107f987da76ca32f7a907fea00fa8b8afb67dc09bec0de91/pyrsistent-0.19.3-py3-none-any.whl
 https://files.pythonhosted.org/packages/6c/10/a7d0fa5baea8fe7b50f448ab742f26f52b80bfca85ac2be9d35cdd9a3246/pyparsing-3.0.9-py3-none-any.whl
 https://files.pythonhosted.org/packages/93/69/e391bd51bc08ed9141ecd899a0ddb61ab6465309f1eb470905c0c8868081/docutils-0.19-py3-none-any.whl
+https://files.pythonhosted.org/packages/a3/58/35da89ee790598a0700ea49b2a66594140f44dec458c07e8e3d4979137fc/ply-3.11-py2.py3-none-any.whl
 https://files.pythonhosted.org/packages/ab/c3/57f0601a2d4fe15de7a553c00adbc901425661bf048f2a22dfc500caf121/packaging-23.1-py3-none-any.whl
 https://files.pythonhosted.org/packages/b6/8c/d5cc5123e8e4bd6c54b781d3bf19139c4d591629c677d3d3529bfc8da127/glad2-2.0.4-py3-none-any.whl
 https://files.pythonhosted.org/packages/bc/c3/f068337a370801f372f2f8f6bad74a5c140f6fda3d9de154052708dd3c65/Jinja2-3.1.2-py3-none-any.whl
@@ -819,6 +821,7 @@ https://github.com/KhronosGroup/SPIRV-Headers/archive/refs/tags/sdk-1.3.261.1.ta
 https://github.com/KhronosGroup/SPIRV-Headers/archive/refs/tags/vulkan-sdk-1.3.268.0.tar.gz
 https://github.com/KhronosGroup/SPIRV-Headers/archive/refs/tags/vulkan-sdk-1.3.275.0.tar.gz
 https://github.com/KhronosGroup/SPIRV-Headers/archive/refs/tags/vulkan-sdk-1.3.290.0.tar.gz
+https://github.com/KhronosGroup/SPIRV-LLVM-Translator/archive/refs/tags/v18.1.3.tar.gz
 https://github.com/KhronosGroup/SPIRV-Tools/archive/refs/tags/sdk-1.3.261.1.zip
 https://github.com/KhronosGroup/SPIRV-Tools/archive/refs/tags/v2023.2.tar.gz
 https://github.com/KhronosGroup/SPIRV-Tools/archive/refs/tags/vulkan-sdk-1.3.268.0.zip
@@ -1688,6 +1691,7 @@ https://github.com/labwc/labwc/archive/refs/tags/0.8.0.tar.gz
 https://github.com/landley/toybox/archive/refs/tags/0.8.10.tar.gz
 https://github.com/landley/toybox/archive/refs/tags/0.8.11.tar.gz
 https://github.com/lapce/lapce/archive/refs/tags/v0.4.1.tar.gz
+https://github.com/lapce/lapce/archive/refs/tags/v0.4.2.tar.gz
 https://github.com/lavv17/lftp/releases/download/v4.8.3/lftp-4.8.3.tar.gz
 https://github.com/lbonn/rofi/releases/download/1.7.3%2Bwayland1/rofi-1.7.3+wayland1.tar.xz
 https://github.com/leo-arch/clifm/archive/refs/tags/v1.14.5.tar.gz
@@ -1839,6 +1843,7 @@ https://github.com/llvm/llvm-project/releases/download/llvmorg-17.0.6/llvm-proje
 https://github.com/llvm/llvm-project/releases/download/llvmorg-18.1.0/llvm-project-18.1.0.src.tar.xz
 https://github.com/llvm/llvm-project/releases/download/llvmorg-18.1.2/llvm-project-18.1.2.src.tar.xz
 https://github.com/llvm/llvm-project/releases/download/llvmorg-18.1.3/llvm-project-18.1.3.src.tar.xz
+https://github.com/llvm/llvm-project/releases/download/llvmorg-18.1.8/libclc-18.1.8.src.tar.xz
 https://github.com/lm-sensors/lm-sensors/archive/refs/tags/V3-6-0.tar.gz
 https://github.com/lsof-org/lsof/archive/refs/tags/4.98.0.tar.gz
 https://github.com/lsof-org/lsof/archive/refs/tags/4.99.0.tar.gz

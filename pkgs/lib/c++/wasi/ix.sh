@@ -1,7 +1,7 @@
 {% extends '//lib/llvm/t/ix.sh' %}
 
 {% block fetch %}
-{% include '//lib/llvm/16/ver.sh' %}
+{% include '//lib/llvm/18/ver.sh' %}
 {% endblock %}
 
 {% block lib_deps %}
@@ -23,6 +23,7 @@ LIBCXXABI_ENABLE_EXCEPTIONS=OFF
 LIBCXXABI_ENABLE_SHARED=OFF
 LIBCXXABI_SILENT_TERMINATE=ON
 LIBCXXABI_ENABLE_PIC=OFF
+LIBCXXABI_USE_LLVM_UNWINDER=OFF
 
 LLVM_ENABLE_RUNTIMES="libcxx;libcxxabi"
 {% endblock %}
