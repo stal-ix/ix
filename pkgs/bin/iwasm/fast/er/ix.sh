@@ -2,11 +2,11 @@
 
 {% block bld_libs %}
 {{super()}}
-lib/llvm/15
+lib/llvm/18
 {% endblock %}
 
 {% block cmake_flags %}
 {{super()}}
-LLVM_DIR=/xxx
+LLVM_DIR=${LLVM_DIR}
 WAMR_BUILD_JIT=1
 {% endblock %}
