@@ -2,7 +2,16 @@
 
 {% block lib_deps %}
 {{super()}}
-lib/llvm/16
+lib/llvm/18
+#bin/llvm/spirv
+#lib/vulkan/spirv/tools
+{% endblock %}
+
+{% block bld_tool %}
+{{super()}}
+bld/python
+bld/llvm/config
+#bld/spirv/tools
 {% endblock %}
 
 {% block meson_flags %}
