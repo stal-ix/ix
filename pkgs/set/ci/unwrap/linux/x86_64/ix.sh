@@ -46,6 +46,7 @@
 {% block run_deps %}
 #bin/sway(mesa_driver=iris)
 #bin/sway(mesa_driver=radeonsi)
+bin/llvm/spirv
 bin/elementary/dock
 bin/ebpf/verifier
 bin/cpu/fetch
