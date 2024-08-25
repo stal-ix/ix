@@ -8,7 +8,6 @@
 lib/c
 lib/z
 lib/clc
-lib/expat
 lib/kernel
 lib/llvm/18
 bin/llvm/spirv
@@ -32,9 +31,8 @@ dri3=disabled
 gallium-drivers=
 vulkan-drivers=
 platforms=
-tools=intel
+tools=
 intel-clc=enabled
-install-intel-clc=true
 video-codecs=
 xmlconfig=disabled
 llvm=enabled
