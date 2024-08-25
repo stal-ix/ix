@@ -1,11 +1,11 @@
 {% extends '//die/rust/cargo.sh' %}
 
 {% block cargo_url %}
-https://github.com/lapce/lapce/archive/refs/tags/v0.4.1.tar.gz
+https://github.com/lapce/lapce/archive/refs/tags/v0.4.2.tar.gz
 {% endblock %}
 
 {% block cargo_sha %}
-e82e1a7bb47e56352693cfcdc5f7f0d7a1d8871f95ac8602bd680281a4c1edeb
+98d96bf6c5a4723fce7cf73ba19f16e058480e762f5d2ffb15efb11753ae71bb
 {% endblock %}
 
 {% block bld_libs %}
