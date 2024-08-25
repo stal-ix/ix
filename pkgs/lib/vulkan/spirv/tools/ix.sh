@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/KhronosGroup/SPIRV-Tools/archive/refs/tags/vulkan-sdk-1.3.275.0.zip
-sha:ab2c284ce1d27143afb55e5ea52ba08b35d13e6f2ebec6a37e2e92ac7f1c76d0
+https://github.com/KhronosGroup/SPIRV-Tools/archive/refs/tags/vulkan-sdk-1.3.290.0.zip
+sha:3a38426a75d0ed4d8de1f6988a6e11a1487179f9a794ccd8982fde95d6b7e4d5
 {% include '//lib/vulkan/spirv/headers/ver.sh' %}
 {% endblock %}
 

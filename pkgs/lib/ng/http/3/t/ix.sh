@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/ngtcp2/nghttp3/releases/download/v1.4.0/nghttp3-1.4.0.tar.xz
-sha:c87b27ef33982a3b831dd349f4a75c55bd4c22a8ec0890095b84b54009df9d6a
+https://github.com/ngtcp2/nghttp3/releases/download/v1.5.0/nghttp3-1.5.0.tar.xz
+sha:8c00e3910ea2ad1218dafebcf8dd2ffdf030c992d9ceb65834d29e5e5278dd0d
 {% endblock %}
 
 {% block lib_deps %}

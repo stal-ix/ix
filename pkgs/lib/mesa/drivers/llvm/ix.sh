@@ -2,7 +2,13 @@
 
 {% block lib_deps %}
 {{super()}}
-lib/llvm/16
+lib/llvm/18
+{% endblock %}
+
+{% block bld_tool %}
+{{super()}}
+bld/python
+bld/llvm/config
 {% endblock %}
 
 {% block meson_flags %}

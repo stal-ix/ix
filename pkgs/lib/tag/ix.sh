@@ -1,11 +1,12 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://taglib.org/releases/taglib-1.13.1.tar.gz
-sha:c8da2b10f1bfec2cd7dbfcd33f4a2338db0765d851a50583d410bacf055cfd0b
+https://taglib.org/releases/taglib-2.0.2.tar.gz
+sha:0de288d7fe34ba133199fd8512f19cc1100196826eafcb67a33b224ec3a59737
 {% endblock %}
 
 {% block lib_deps %}
 lib/c
 lib/c++
+lib/utf8/cpp
 {% endblock %}

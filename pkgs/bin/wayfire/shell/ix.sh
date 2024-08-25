@@ -4,18 +4,20 @@
 https://github.com/WayfireWM/wf-shell
 {% endblock %}
 
-{% block git_commit %}
-c9639087aca3ad69bbd8f56f4213768639b4c8d0
+{% block git_branch %}
+v0.9.0
 {% endblock %}
 
 {% block git_sha %}
-21056561118a3c66466925a8da67715f09ee936a9c35a311fb8c7891e9d813e5
+4fa64a152d3964f1b666ee213181d4486c3244bd8352795d6c27a3bebb7de602
 {% endblock %}
 
 {% block bld_libs %}
 lib/c
+lib/gtk/deps
 lib/gtk/3/mm
 lib/wf/config
+lib/dbus/menu
 lib/gtk/layer/shell
 {% endblock %}
 
