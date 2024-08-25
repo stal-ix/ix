@@ -31,6 +31,7 @@ cd src
 {% block make_flags %}
 LLVM=1
 V=1
+CLANG_BPF_CO_RE_PROBE_CMD='echo 1'
 bash_compdir=${out}/share/bash
 {% endblock %}
 
