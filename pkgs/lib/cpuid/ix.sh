@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/anrieff/libcpuid/archive/refs/tags/v0.6.5.tar.gz
-sha:4d106d66d211f2bfaf876eb62c84d4b54664e1c2b47eb6138161d3c608c0bc5e
+https://github.com/anrieff/libcpuid/archive/refs/tags/v0.7.0.tar.gz
+sha:cfd9e6bcda5da3f602273e55f983bdd747cb93dde0b9ec06560e074939314210
 {% endblock %}
 
 {% block lib_deps %}
