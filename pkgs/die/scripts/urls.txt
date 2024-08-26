@@ -2489,6 +2489,7 @@ https://github.com/tulir/gomuks/archive/refs/tags/v0.3.0.tar.gz
 https://github.com/tvrzna/emptty/archive/refs/tags/v0.10.0.tar.gz
 https://github.com/tvrzna/emptty/archive/refs/tags/v0.11.0.tar.gz
 https://github.com/tvrzna/emptty/archive/refs/tags/v0.12.0.tar.gz
+https://github.com/tvrzna/emptty/archive/refs/tags/v0.13.0.tar.gz
 https://github.com/tytso/e2fsprogs/archive/refs/tags/v1.46.6.tar.gz
 https://github.com/u-root/u-root/archive/refs/tags/v0.13.0.tar.gz
 https://github.com/uclouvain/openjpeg/archive/refs/tags/v2.5.0.tar.gz
