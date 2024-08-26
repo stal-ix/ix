@@ -1,9 +1,9 @@
 diff --git a/gio/gcontenttype.c b/gio/gcontenttype.c
-index 3e5b841..5073838 100644
+index aa8f404..fe47bff 100644
 --- a/gio/gcontenttype.c
 +++ b/gio/gcontenttype.c
-@@ -734,6 +734,8 @@ g_content_type_from_mime_type (const gchar *mime_type)
-   return umime;
+@@ -308,6 +308,8 @@ g_content_type_from_mime_type (const gchar *mime_type)
+   return g_content_type_from_mime_type_impl (mime_type);
  }
  
 +const char* magic_mime_type_ex(const char* path, const void* data, size_t len);
@@ -11,10 +11,10 @@ index 3e5b841..5073838 100644
  /**
   * g_content_type_guess:
   * @filename: (nullable) (type filename): a path, or %NULL
-@@ -763,6 +765,18 @@ g_content_type_guess (const gchar  *filename,
-   int n_name_mimetypes;
-   int sniffed_prio;
- 
+@@ -330,6 +332,18 @@ g_content_type_guess (const gchar  *filename,
+                       gsize         data_size,
+                       gboolean     *result_uncertain)
+ {
 +  const char* mtype;
 +
 +  if (data) {
@@ -27,6 +27,6 @@ index 3e5b841..5073838 100644
 +    }
 +  }
 +
-   sniffed_prio = 0;
-   n_name_mimetypes = 0;
-   sniffed_mimetype = XDG_MIME_TYPE_UNKNOWN;
+   return g_content_type_guess_impl (filename, data, data_size, result_uncertain);
+ }
+ 
