@@ -2099,6 +2099,7 @@ https://github.com/prometheus/prometheus/archive/refs/tags/v2.52.0.tar.gz
 https://github.com/prometheus/prometheus/archive/refs/tags/v2.52.1.tar.gz
 https://github.com/prometheus/prometheus/archive/refs/tags/v2.53.0.tar.gz
 https://github.com/prometheus/prometheus/archive/refs/tags/v2.53.1.tar.gz
+https://github.com/prometheus/prometheus/archive/refs/tags/v2.54.1.tar.gz
 https://github.com/prometheus/prometheus/releases/download/v2.50.1/prometheus-web-ui-2.50.1.tar.gz
 https://github.com/protobuf-c/protobuf-c/archive/refs/tags/v1.4.1.tar.gz
 https://github.com/protobuf-c/protobuf-c/archive/refs/tags/v1.5.0.tar.gz
