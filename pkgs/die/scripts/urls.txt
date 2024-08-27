@@ -2645,6 +2645,7 @@ https://github.com/zlib-ng/zlib-ng/archive/refs/tags/2.1.7.tar.gz
 https://github.com/zlib-ng/zlib-ng/archive/refs/tags/2.2.1.tar.gz
 https://github.com/zyedidia/micro/archive/refs/tags/v2.0.11.tar.gz
 https://github.com/zyedidia/micro/archive/refs/tags/v2.0.13.tar.gz
+https://github.com/zyedidia/micro/archive/refs/tags/v2.0.14.tar.gz
 https://gitlab.com/AOMediaCodec/SVT-AV1/-/archive/v1.7.0/SVT-AV1-v1.7.0.tar.bz2
 https://gitlab.com/AOMediaCodec/SVT-AV1/-/archive/v1.8.0/SVT-AV1-v1.8.0.tar.bz2
 https://gitlab.com/AOMediaCodec/SVT-AV1/-/archive/v2.1.0/SVT-AV1-v2.1.0.tar.bz2
