@@ -280,6 +280,7 @@ https://download.gnome.org/sources/glib/2.80/glib-2.80.1.tar.xz
 https://download.gnome.org/sources/glib/2.80/glib-2.80.2.tar.xz
 https://download.gnome.org/sources/glib/2.80/glib-2.80.3.tar.xz
 https://download.gnome.org/sources/glib/2.80/glib-2.80.4.tar.xz
+https://download.gnome.org/sources/glib/2.82/glib-2.82.0.tar.xz
 https://download.gnome.org/sources/glibmm/2.66/glibmm-2.66.6.tar.xz
 https://download.gnome.org/sources/glibmm/2.77/glibmm-2.77.0.tar.xz
 https://download.gnome.org/sources/glibmm/2.78/glibmm-2.78.1.tar.xz
@@ -393,6 +394,7 @@ https://dri.freedesktop.org/libdrm/libdrm-2.4.119.tar.xz
 https://dri.freedesktop.org/libdrm/libdrm-2.4.120.tar.xz
 https://dri.freedesktop.org/libdrm/libdrm-2.4.121.tar.xz
 https://dri.freedesktop.org/libdrm/libdrm-2.4.122.tar.xz
+https://dri.freedesktop.org/libdrm/libdrm-2.4.123.tar.xz
 https://evilpiepirate.org/bcachefs-tools/bcachefs-tools-1.4.1.tar.zst
 https://ffmpeg.org/releases/ffmpeg-5.1.2.tar.xz
 https://ffmpeg.org/releases/ffmpeg-6.0.1.tar.xz
@@ -1047,6 +1049,7 @@ https://github.com/anholt/libepoxy/archive/refs/tags/1.5.10.tar.gz
 https://github.com/anrieff/libcpuid/archive/refs/tags/v0.6.3.tar.gz
 https://github.com/anrieff/libcpuid/archive/refs/tags/v0.6.4.tar.gz
 https://github.com/anrieff/libcpuid/archive/refs/tags/v0.6.5.tar.gz
+https://github.com/anrieff/libcpuid/archive/refs/tags/v0.7.0.tar.gz
 https://github.com/antonmedv/llama/archive/refs/tags/v1.4.0.tar.gz
 https://github.com/antonmedv/walk/archive/refs/tags/v1.10.0.tar.gz
 https://github.com/antonmedv/walk/archive/refs/tags/v1.6.2.tar.gz
@@ -1322,6 +1325,7 @@ https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.20.0.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.21.0.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.21.1.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.21.3.tar.gz
+https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.22.0.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.3.1.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.3.2.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.3.3.tar.gz
@@ -1592,6 +1596,7 @@ https://github.com/jackaudio/jack2/archive/v1.9.19.tar.gz
 https://github.com/janmojzis/tinyssh/archive/refs/tags/20220801.tar.gz
 https://github.com/janmojzis/tinyssh/archive/refs/tags/20240101.tar.gz
 https://github.com/jarun/nnn/archive/refs/tags/v4.9.tar.gz
+https://github.com/jarun/nnn/archive/refs/tags/v5.0.tar.gz
 https://github.com/jasper-software/jasper/archive/refs/tags/version-3.0.5.tar.gz
 https://github.com/jasper-software/jasper/archive/refs/tags/version-4.0.1.tar.gz
 https://github.com/jasper-software/jasper/archive/refs/tags/version-4.1.0.tar.gz
@@ -1911,6 +1916,7 @@ https://github.com/microsoft/msquic/archive/refs/tags/v2.3.4.tar.gz
 https://github.com/microsoft/msquic/archive/refs/tags/v2.3.5.tar.gz
 https://github.com/microsoft/msquic/archive/refs/tags/v2.3.6.tar.gz
 https://github.com/microsoft/msquic/archive/refs/tags/v2.4.3.tar.gz
+https://github.com/microsoft/msquic/archive/refs/tags/v2.4.4.tar.gz
 https://github.com/microsoft/snmalloc/archive/refs/tags/0.6.0.tar.gz
 https://github.com/microsoft/vcpkg-tool/archive/refs/tags/2022-11-10.tar.gz
 https://github.com/microsoft/vcpkg-tool/archive/refs/tags/2023-11-16.tar.gz
@@ -1981,6 +1987,7 @@ https://github.com/nghttp2/nghttp2/archive/refs/tags/v1.60.0.tar.gz
 https://github.com/nghttp2/nghttp2/archive/refs/tags/v1.61.0.tar.gz
 https://github.com/nghttp2/nghttp2/archive/refs/tags/v1.62.0.tar.gz
 https://github.com/nghttp2/nghttp2/archive/refs/tags/v1.62.1.tar.gz
+https://github.com/nghttp2/nghttp2/archive/refs/tags/v1.63.0.tar.gz
 https://github.com/ngtcp2/nghttp3/archive/refs/tags/v0.15.0.tar.gz
 https://github.com/ngtcp2/nghttp3/archive/refs/tags/v1.0.0.tar.gz
 https://github.com/ngtcp2/nghttp3/archive/refs/tags/v1.1.0.tar.gz
@@ -2487,6 +2494,7 @@ https://github.com/tulir/gomuks/archive/refs/tags/v0.3.0.tar.gz
 https://github.com/tvrzna/emptty/archive/refs/tags/v0.10.0.tar.gz
 https://github.com/tvrzna/emptty/archive/refs/tags/v0.11.0.tar.gz
 https://github.com/tvrzna/emptty/archive/refs/tags/v0.12.0.tar.gz
+https://github.com/tvrzna/emptty/archive/refs/tags/v0.13.0.tar.gz
 https://github.com/tytso/e2fsprogs/archive/refs/tags/v1.46.6.tar.gz
 https://github.com/u-root/u-root/archive/refs/tags/v0.13.0.tar.gz
 https://github.com/uclouvain/openjpeg/archive/refs/tags/v2.5.0.tar.gz
@@ -2805,6 +2813,7 @@ https://gitlab.gnome.org/GNOME/libsecret/-/archive/0.21.4/libsecret-0.21.4.tar.b
 https://gitlab.gnome.org/GNOME/libsoup/-/archive/3.4.2/libsoup-3.4.2.tar.bz2
 https://gitlab.gnome.org/GNOME/libsoup/-/archive/3.4.3/libsoup-3.4.3.tar.bz2
 https://gitlab.gnome.org/GNOME/libsoup/-/archive/3.4.4/libsoup-3.4.4.tar.bz2
+https://gitlab.gnome.org/GNOME/libsoup/-/archive/3.6.0/libsoup-3.6.0.tar.bz2
 https://gitlab.gnome.org/GNOME/libxml2/-/archive/v2.11.4/libxml2-v2.11.4.tar.bz2
 https://gitlab.gnome.org/GNOME/libxml2/-/archive/v2.11.7/libxml2-v2.11.7.tar.bz2
 https://gitlab.gnome.org/GNOME/libxml2/-/archive/v2.12.0/libxml2-v2.12.0.tar.bz2
@@ -3043,6 +3052,7 @@ https://secure.nic.cz/files/knot-dns/knot-3.3.4.tar.xz
 https://secure.nic.cz/files/knot-dns/knot-3.3.5.tar.xz
 https://secure.nic.cz/files/knot-dns/knot-3.3.6.tar.xz
 https://secure.nic.cz/files/knot-dns/knot-3.3.8.tar.xz
+https://secure.nic.cz/files/knot-dns/knot-3.3.9.tar.xz
 https://secure.nic.cz/files/knot-resolver/knot-resolver-5.6.0.tar.xz
 https://security.appspot.com/downloads/vsftpd-3.0.5.tar.gz
 https://skarnet.org/software/execline/execline-2.8.2.0.tar.gz
@@ -3220,6 +3230,7 @@ https://www.kernel.org/pub/linux/kernel/people/kdave/btrfs-progs/btrfs-progs-v6.
 https://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2/libcap-2.69.tar.gz
 https://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2/libcap-2.70.tar.gz
 https://www.kernel.org/pub/linux/utils/fs/xfs/xfsprogs/xfsprogs-6.1.0.tar.xz
+https://www.kernel.org/pub/linux/utils/fs/xfs/xfsprogs/xfsprogs-6.10.0.tar.xz
 https://www.kernel.org/pub/linux/utils/fs/xfs/xfsprogs/xfsprogs-6.4.0.tar.xz
 https://www.kernel.org/pub/linux/utils/fs/xfs/xfsprogs/xfsprogs-6.5.0.tar.xz
 https://www.kernel.org/pub/linux/utils/fs/xfs/xfsprogs/xfsprogs-6.6.0.tar.xz
