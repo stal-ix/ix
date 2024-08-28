@@ -41,6 +41,12 @@ def it_init():
         if 'ephy_web_extension_get_resource' in l:
             continue
 
+        if 'cairo_surface_' in l:
+            continue
+
+        if 'g_static_resource_' in l:
+            continue
+
         if l.endswith('_get_type'):
             yield f'void* {l}(void)', f'{l}()'
         elif l.endswith('_get_resource'):

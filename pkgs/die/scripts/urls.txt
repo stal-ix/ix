@@ -1296,6 +1296,7 @@ https://github.com/eza-community/eza/archive/refs/tags/v0.18.22.tar.gz
 https://github.com/eza-community/eza/archive/refs/tags/v0.18.24.tar.gz
 https://github.com/eza-community/eza/archive/refs/tags/v0.18.4.tar.gz
 https://github.com/eza-community/eza/archive/refs/tags/v0.18.5.tar.gz
+https://github.com/eza-community/eza/archive/refs/tags/v0.19.1.tar.gz
 https://github.com/facebook/zstd/archive/refs/tags/v1.5.5.tar.gz
 https://github.com/facebook/zstd/archive/refs/tags/v1.5.6.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.1.2.tar.gz
@@ -2099,6 +2100,7 @@ https://github.com/prometheus/prometheus/archive/refs/tags/v2.52.0.tar.gz
 https://github.com/prometheus/prometheus/archive/refs/tags/v2.52.1.tar.gz
 https://github.com/prometheus/prometheus/archive/refs/tags/v2.53.0.tar.gz
 https://github.com/prometheus/prometheus/archive/refs/tags/v2.53.1.tar.gz
+https://github.com/prometheus/prometheus/archive/refs/tags/v2.54.1.tar.gz
 https://github.com/prometheus/prometheus/releases/download/v2.50.1/prometheus-web-ui-2.50.1.tar.gz
 https://github.com/protobuf-c/protobuf-c/archive/refs/tags/v1.4.1.tar.gz
 https://github.com/protobuf-c/protobuf-c/archive/refs/tags/v1.5.0.tar.gz
@@ -2377,6 +2379,7 @@ https://github.com/swaywm/swaylock/archive/refs/tags/v1.8.0.tar.gz
 https://github.com/swaywm/wlroots/archive/refs/tags/0.12.0.tar.gz
 https://github.com/sxyazi/yazi/archive/refs/tags/v0.2.5.tar.gz
 https://github.com/sxyazi/yazi/archive/refs/tags/v0.3.1.tar.gz
+https://github.com/sxyazi/yazi/archive/refs/tags/v0.3.2.tar.gz
 https://github.com/syslog-ng/syslog-ng/releases/download/syslog-ng-4.3.1/syslog-ng-4.3.1.tar.gz
 https://github.com/syslog-ng/syslog-ng/releases/download/syslog-ng-4.4.0/syslog-ng-4.4.0.tar.gz
 https://github.com/syslog-ng/syslog-ng/releases/download/syslog-ng-4.6.0/syslog-ng-4.6.0.tar.gz
@@ -2645,6 +2648,7 @@ https://github.com/zlib-ng/zlib-ng/archive/refs/tags/2.1.7.tar.gz
 https://github.com/zlib-ng/zlib-ng/archive/refs/tags/2.2.1.tar.gz
 https://github.com/zyedidia/micro/archive/refs/tags/v2.0.11.tar.gz
 https://github.com/zyedidia/micro/archive/refs/tags/v2.0.13.tar.gz
+https://github.com/zyedidia/micro/archive/refs/tags/v2.0.14.tar.gz
 https://gitlab.com/AOMediaCodec/SVT-AV1/-/archive/v1.7.0/SVT-AV1-v1.7.0.tar.bz2
 https://gitlab.com/AOMediaCodec/SVT-AV1/-/archive/v1.8.0/SVT-AV1-v1.8.0.tar.bz2
 https://gitlab.com/AOMediaCodec/SVT-AV1/-/archive/v2.1.0/SVT-AV1-v2.1.0.tar.bz2
