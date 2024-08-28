@@ -1,5 +1,9 @@
 {% extends '//die/vala/meson.sh' %}
 
+{#
+** (io.elementary.screenshot:9490): WARNING **: 23:45:33.213: Application.vala:117: Failed to take screenshot via portal: GDBus.Error:org.freedesktop.DBus.Error.UnknownInterface: Object does not implement the interface 'org.freedesktop.portal.Screenshot'
+#}
+
 {% block git_repo %}
 https://github.com/elementary/screenshot
 {% endblock %}
