@@ -1366,6 +1366,7 @@ https://github.com/flacjacket/pywayland/archive/refs/tags/v0.4.17.tar.gz
 https://github.com/flacjacket/pywlroots/archive/refs/tags/v0.16.6.tar.gz
 https://github.com/flatpak/libportal/archive/refs/tags/0.7.1.tar.gz
 https://github.com/flatpak/libportal/releases/download/0.7/libportal-0.7.tar.xz
+https://github.com/flatpak/xdg-dbus-proxy/archive/refs/tags/0.1.6.tar.gz
 https://github.com/flatpak/xdg-desktop-portal-gtk/archive/refs/tags/1.14.1.tar.gz
 https://github.com/flatpak/xdg-desktop-portal/archive/dc898cac4d7075b45fe9294acb959b07cd7ecf6a.tar.gz
 https://github.com/fmtlib/fmt/archive/refs/tags/10.1.1.tar.gz
