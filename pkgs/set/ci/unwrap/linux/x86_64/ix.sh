@@ -44,6 +44,7 @@
 #}
 
 {% block run_deps %}
+bin/elementary/screenshot
 bin/sway(mesa_driver=iris)
 bin/sway(mesa_driver=radeonsi)
 bin/llvm/spirv

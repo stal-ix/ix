@@ -39,6 +39,7 @@ http://ftp.gnu.org/gnu/gcc/gcc-14.2.0/gcc-14.2.0.tar.xz
 http://ftp.gnu.org/gnu/mtools/mtools-4.0.43.tar.lz
 http://ftp.gnu.org/gnu/mtools/mtools-4.0.44.tar.lz
 http://ftp.gnu.org/gnu/screen/screen-4.9.1.tar.gz
+http://ftp.gnu.org/gnu/screen/screen-5.0.0.tar.gz
 http://ftp.gnu.org/pub/gnu/gperf/gperf-3.1.tar.gz
 http://ftp.rpm.org/popt/releases/popt-1.x/popt-1.19.tar.gz
 http://geeqie.org/cgi-bin/gitweb.cgi?p=geeqie.git;a=snapshot;h=f8c3ab333e95d45d4e68007256362dbdbdb3de3a;sf=tbz2
@@ -284,6 +285,7 @@ https://download.gnome.org/sources/glib/2.82/glib-2.82.0.tar.xz
 https://download.gnome.org/sources/glibmm/2.66/glibmm-2.66.6.tar.xz
 https://download.gnome.org/sources/glibmm/2.77/glibmm-2.77.0.tar.xz
 https://download.gnome.org/sources/glibmm/2.78/glibmm-2.78.1.tar.xz
+https://download.gnome.org/sources/glibmm/2.82/glibmm-2.82.0.tar.xz
 https://download.gnome.org/sources/gtk+/3.24/gtk%2B-3.24.37.tar.xz
 https://download.gnome.org/sources/gtk+/3.24/gtk%2B-3.24.39.tar.xz
 https://download.gnome.org/sources/gtk+/3.24/gtk%2B-3.24.40.tar.xz
@@ -934,6 +936,7 @@ https://github.com/NixOS/nix/archive/refs/tags/2.23.3.tar.gz
 https://github.com/NixOS/nix/archive/refs/tags/2.24.1.tar.gz
 https://github.com/NixOS/nix/archive/refs/tags/2.24.2.tar.gz
 https://github.com/NixOS/nix/archive/refs/tags/2.24.3.tar.gz
+https://github.com/NixOS/nix/archive/refs/tags/2.24.4.tar.gz
 https://github.com/NixOS/patchelf/archive/refs/tags/0.18.0.tar.gz
 https://github.com/Novum/vkQuake/archive/refs/tags/1.30.1.tar.gz
 https://github.com/Old-Man-Programmer/tree/archive/refs/tags/2.1.1.tar.gz
@@ -1397,6 +1400,7 @@ https://github.com/gavinhoward/bc/archive/refs/tags/6.7.0.tar.gz
 https://github.com/gavinhoward/bc/archive/refs/tags/6.7.3.tar.gz
 https://github.com/gavinhoward/bc/archive/refs/tags/6.7.5.tar.gz
 https://github.com/gavinhoward/bc/archive/refs/tags/7.0.0.tar.gz
+https://github.com/gavinhoward/bc/archive/refs/tags/7.0.1.tar.gz
 https://github.com/gcla/termshark/archive/refs/tags/v2.4.0.tar.gz
 https://github.com/geany/geany/archive/refs/tags/1.38.0.tar.gz
 https://github.com/geany/geany/archive/refs/tags/2.0.0.tar.gz
@@ -1662,6 +1666,7 @@ https://github.com/junegunn/fzf/archive/refs/tags/0.53.0.tar.gz
 https://github.com/junegunn/fzf/archive/refs/tags/v0.54.0.tar.gz
 https://github.com/junegunn/fzf/archive/refs/tags/v0.54.2.tar.gz
 https://github.com/junegunn/fzf/archive/refs/tags/v0.54.3.tar.gz
+https://github.com/junegunn/fzf/archive/refs/tags/v0.55.0.tar.gz
 https://github.com/kaniini/libucontext/archive/refs/tags/libucontext-1.2.tar.gz
 https://github.com/kaniini/libucontext/archive/refs/tags/libucontext-1.3.1.tar.gz
 https://github.com/kcat/openal-soft/archive/refs/tags/1.23.1.tar.gz
@@ -1902,6 +1907,7 @@ https://github.com/mesonbuild/meson/archive/refs/tags/1.4.1.tar.gz
 https://github.com/mesonbuild/meson/archive/refs/tags/1.5.0.tar.gz
 https://github.com/mheily/libkqueue/archive/refs/tags/v2.6.1.tar.gz
 https://github.com/microsoft/GSL/archive/refs/tags/v4.0.0.tar.gz
+https://github.com/microsoft/cascadia-code/archive/refs/tags/v2404.23.tar.gz
 https://github.com/microsoft/mimalloc/archive/refs/tags/v1.7.6.tar.gz
 https://github.com/microsoft/mimalloc/archive/refs/tags/v1.8.2.tar.gz
 https://github.com/microsoft/mimalloc/archive/refs/tags/v2.1.2.tar.gz
@@ -2596,6 +2602,7 @@ https://github.com/wireshark/wireshark/archive/refs/tags/v4.2.3.tar.gz
 https://github.com/wireshark/wireshark/archive/refs/tags/v4.2.4.tar.gz
 https://github.com/wireshark/wireshark/archive/refs/tags/v4.2.5.tar.gz
 https://github.com/wireshark/wireshark/archive/refs/tags/v4.2.6.tar.gz
+https://github.com/wireshark/wireshark/archive/refs/tags/v4.4.0.tar.gz
 https://github.com/wlrfx/scenefx/archive/refs/tags/0.1.tar.gz
 https://github.com/wmww/gtk-layer-shell/archive/refs/tags/v0.8.0.tar.gz
 https://github.com/wolfSSL/wolfssl/archive/refs/tags/v5.6.3-stable.tar.gz
@@ -2937,6 +2944,7 @@ https://libopenraw.freedesktop.org/download/exempi-2.6.5.tar.xz
 https://libopenraw.freedesktop.org/download/libopenraw-0.3.5.tar.bz2
 https://libzip.org/download/libzip-1.10.1.tar.xz
 https://lttng.org/files/urcu/userspace-rcu-0.14.0.tar.bz2
+https://lttng.org/files/urcu/userspace-rcu-0.14.1.tar.bz2
 https://luajit.org/download/LuaJIT-2.0.5.tar.gz
 https://memcached.org/files/memcached-1.6.21.tar.gz
 https://memcached.org/files/memcached-1.6.22.tar.gz

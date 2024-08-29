@@ -1,8 +1,8 @@
 {% extends '//die/c/make.sh' %}
 
 {% block fetch %}
-https://github.com/gavinhoward/bc/archive/refs/tags/7.0.0.tar.gz
-sha:b7db4b76e66af45c70a9576f210370015bbeecbf2cb917aa9fa08c2d8c3339b8
+https://github.com/gavinhoward/bc/archive/refs/tags/7.0.1.tar.gz
+sha:a53d649e9c53301222b7f834764c967b535f8acc1048698c21687f72ce715ec4
 {% endblock %}
 
 {% block host_libs %}

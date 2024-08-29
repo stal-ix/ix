@@ -17,6 +17,7 @@ lib/gi/repository
 {% endblock %}
 
 {% block bld_data %}
+lib/graphene/gir
 lib/gi/repository/gir
 lib/harfbuzz/gir
 lib/gi/files
