@@ -39,6 +39,7 @@ http://ftp.gnu.org/gnu/gcc/gcc-14.2.0/gcc-14.2.0.tar.xz
 http://ftp.gnu.org/gnu/mtools/mtools-4.0.43.tar.lz
 http://ftp.gnu.org/gnu/mtools/mtools-4.0.44.tar.lz
 http://ftp.gnu.org/gnu/screen/screen-4.9.1.tar.gz
+http://ftp.gnu.org/gnu/screen/screen-5.0.0.tar.gz
 http://ftp.gnu.org/pub/gnu/gperf/gperf-3.1.tar.gz
 http://ftp.rpm.org/popt/releases/popt-1.x/popt-1.19.tar.gz
 http://geeqie.org/cgi-bin/gitweb.cgi?p=geeqie.git;a=snapshot;h=f8c3ab333e95d45d4e68007256362dbdbdb3de3a;sf=tbz2
@@ -2941,6 +2942,7 @@ https://libopenraw.freedesktop.org/download/exempi-2.6.5.tar.xz
 https://libopenraw.freedesktop.org/download/libopenraw-0.3.5.tar.bz2
 https://libzip.org/download/libzip-1.10.1.tar.xz
 https://lttng.org/files/urcu/userspace-rcu-0.14.0.tar.bz2
+https://lttng.org/files/urcu/userspace-rcu-0.14.1.tar.bz2
 https://luajit.org/download/LuaJIT-2.0.5.tar.gz
 https://memcached.org/files/memcached-1.6.21.tar.gz
 https://memcached.org/files/memcached-1.6.22.tar.gz
