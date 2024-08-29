@@ -1467,6 +1467,7 @@ https://github.com/google/highway/archive/refs/tags/1.0.5.tar.gz
 https://github.com/google/highway/archive/refs/tags/1.0.7.tar.gz
 https://github.com/google/highway/archive/refs/tags/1.1.0.tar.gz
 https://github.com/google/liblc3/archive/refs/tags/v1.1.1.tar.gz
+https://github.com/google/libultrahdr/archive/refs/tags/v1.1.1.tar.gz
 https://github.com/google/minijail/archive/refs/tags/linux-v18.tar.gz
 https://github.com/google/re2/archive/refs/tags/2023-09-01.tar.gz
 https://github.com/google/re2/archive/refs/tags/2023-11-01.tar.gz
@@ -2985,6 +2986,7 @@ https://mirrors.edge.kernel.org/pub/linux/libs/ell/ell-0.64.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/libs/ell/ell-0.65.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/libs/ell/ell-0.66.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/libs/ell/ell-0.67.tar.xz
+https://mirrors.edge.kernel.org/pub/linux/libs/ell/ell-0.68.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/network/wireless/iwd-2.10.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/network/wireless/iwd-2.11.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/network/wireless/iwd-2.12.tar.xz
@@ -2995,6 +2997,7 @@ https://mirrors.edge.kernel.org/pub/linux/network/wireless/iwd-2.16.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/network/wireless/iwd-2.17.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/network/wireless/iwd-2.18.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/network/wireless/iwd-2.19.tar.xz
+https://mirrors.edge.kernel.org/pub/linux/network/wireless/iwd-2.20.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/network/wireless/iwd-2.8.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/network/wireless/iwd-2.9.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/utils/kbd/kbd-2.6.1.tar.xz
