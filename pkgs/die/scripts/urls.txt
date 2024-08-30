@@ -121,6 +121,7 @@ http://zlib.net/zlib-1.3.tar.xz
 https://7-zip.org/a/7z2200-src.tar.xz
 https://7-zip.org/a/7z2301-src.tar.xz
 https://alpha.gnu.org/gnu/libtool/libtool-2.5.1.tar.xz
+https://alpha.gnu.org/gnu/libtool/libtool-2.5.2.tar.xz
 https://archive.apache.org/dist/apr/apr-1.7.0.tar.bz2
 https://archive.apache.org/dist/apr/apr-util-1.6.2.tar.bz2
 https://archive.apache.org/dist/subversion/subversion-1.14.2.tar.bz2
