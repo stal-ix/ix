@@ -1,6 +1,6 @@
 {% extends '//bin/libtool/ix.sh' %}
 
 {% block fetch %}
-https://alpha.gnu.org/gnu/libtool/libtool-2.5.1.tar.xz
-sha:d280e64c8cdbf145d76fb91b3b219edab01bdb43cb99402e4acb97d0100636fd
+https://alpha.gnu.org/gnu/libtool/libtool-2.5.2.tar.xz
+sha:7b60b4f4c364e8785130d34a98ff07bfa9a6172c20c5db708ab49c6913e48263
 {% endblock %}

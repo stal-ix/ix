@@ -121,6 +121,7 @@ http://zlib.net/zlib-1.3.tar.xz
 https://7-zip.org/a/7z2200-src.tar.xz
 https://7-zip.org/a/7z2301-src.tar.xz
 https://alpha.gnu.org/gnu/libtool/libtool-2.5.1.tar.xz
+https://alpha.gnu.org/gnu/libtool/libtool-2.5.2.tar.xz
 https://archive.apache.org/dist/apr/apr-1.7.0.tar.bz2
 https://archive.apache.org/dist/apr/apr-util-1.6.2.tar.bz2
 https://archive.apache.org/dist/subversion/subversion-1.14.2.tar.bz2
@@ -381,6 +382,7 @@ https://downloads.sourceforge.net/project/sbcl/sbcl/2.4.4/sbcl-2.4.4-source.tar.
 https://downloads.sourceforge.net/project/sbcl/sbcl/2.4.5/sbcl-2.4.5-source.tar.bz2
 https://downloads.sourceforge.net/project/sbcl/sbcl/2.4.6/sbcl-2.4.6-source.tar.bz2
 https://downloads.sourceforge.net/project/sbcl/sbcl/2.4.7/sbcl-2.4.7-source.tar.bz2
+https://downloads.sourceforge.net/project/sbcl/sbcl/2.4.8/sbcl-2.4.8-source.tar.bz2
 https://downloads.sourceforge.net/project/scons/scons/4.5.2/SCons-4.5.2.tar.gz
 https://downloads.sourceforge.net/project/sdlgfx/SDL_gfx-2.0.25.tar.gz
 https://downloads.sourceforge.net/project/sox/sox/14.4.2/sox-14.4.2.tar.bz2
@@ -880,6 +882,7 @@ https://github.com/Kitware/CMake/archive/refs/tags/v3.29.5.tar.gz
 https://github.com/Kitware/CMake/archive/refs/tags/v3.29.6.tar.gz
 https://github.com/Kitware/CMake/archive/refs/tags/v3.30.0.tar.gz
 https://github.com/Kitware/CMake/archive/refs/tags/v3.30.1.tar.gz
+https://github.com/Kitware/CMake/archive/refs/tags/v3.30.3.tar.gz
 https://github.com/LBCrion/sfwbar/archive/refs/tags/v1.0_beta13.tar.gz
 https://github.com/LBCrion/sfwbar/archive/refs/tags/v1.0_beta9.tar.gz
 https://github.com/LibRaw/LibRaw/archive/refs/tags/0.21.1.tar.gz
@@ -1366,6 +1369,7 @@ https://github.com/flacjacket/pywayland/archive/refs/tags/v0.4.17.tar.gz
 https://github.com/flacjacket/pywlroots/archive/refs/tags/v0.16.6.tar.gz
 https://github.com/flatpak/libportal/archive/refs/tags/0.7.1.tar.gz
 https://github.com/flatpak/libportal/releases/download/0.7/libportal-0.7.tar.xz
+https://github.com/flatpak/xdg-dbus-proxy/archive/refs/tags/0.1.6.tar.gz
 https://github.com/flatpak/xdg-desktop-portal-gtk/archive/refs/tags/1.14.1.tar.gz
 https://github.com/flatpak/xdg-desktop-portal/archive/dc898cac4d7075b45fe9294acb959b07cd7ecf6a.tar.gz
 https://github.com/fmtlib/fmt/archive/refs/tags/10.1.1.tar.gz
@@ -1466,6 +1470,7 @@ https://github.com/google/highway/archive/refs/tags/1.0.5.tar.gz
 https://github.com/google/highway/archive/refs/tags/1.0.7.tar.gz
 https://github.com/google/highway/archive/refs/tags/1.1.0.tar.gz
 https://github.com/google/liblc3/archive/refs/tags/v1.1.1.tar.gz
+https://github.com/google/libultrahdr/archive/refs/tags/v1.1.1.tar.gz
 https://github.com/google/minijail/archive/refs/tags/linux-v18.tar.gz
 https://github.com/google/re2/archive/refs/tags/2023-09-01.tar.gz
 https://github.com/google/re2/archive/refs/tags/2023-11-01.tar.gz
@@ -2726,6 +2731,7 @@ https://gitlab.freedesktop.org/mesa/glu/-/archive/glu-9.0.3/glu-glu-9.0.3.tar.bz
 https://gitlab.freedesktop.org/mesa/mesa/-/archive/mesa-23.0.3/mesa-mesa-23.0.3.tar.bz2
 https://gitlab.freedesktop.org/mesa/mesa/-/archive/mesa-23.1.8/mesa-mesa-23.1.8.tar.bz2
 https://gitlab.freedesktop.org/serebit/waycheck/-/archive/v1.2.1/waycheck-v1.2.1.tar.bz2
+https://gitlab.freedesktop.org/serebit/waycheck/-/archive/v1.3.0/waycheck-v1.3.0.tar.bz2
 https://gitlab.freedesktop.org/slirp/libslirp/-/archive/v4.7.0/libslirp-v4.7.0.tar.bz2
 https://gitlab.freedesktop.org/upower/upower/-/archive/v1.90.1/upower-v1.90.1.tar.bz2
 https://gitlab.freedesktop.org/wayland/wayland-protocols/-/archive/1.32/wayland-protocols-1.32.tar.bz2
@@ -2788,6 +2794,7 @@ https://gitlab.gnome.org/GNOME/gobject-introspection/-/archive/1.80.1/gobject-in
 https://gitlab.gnome.org/GNOME/gsettings-desktop-schemas/-/archive/44.0/gsettings-desktop-schemas-44.0.tar.bz2
 https://gitlab.gnome.org/GNOME/gspell/-/archive/1.12.2/gspell-1.12.2.tar.bz2
 https://gitlab.gnome.org/GNOME/gspell/-/archive/1.13.1/gspell-1.13.1.tar.bz2
+https://gitlab.gnome.org/GNOME/gspell/-/archive/1.13.2/gspell-1.13.2.tar.bz2
 https://gitlab.gnome.org/GNOME/gtk/-/archive/4.12.1/gtk-4.12.1.tar.bz2
 https://gitlab.gnome.org/GNOME/gtk/-/archive/4.12.2/gtk-4.12.2.tar.bz2
 https://gitlab.gnome.org/GNOME/gtk/-/archive/4.12.3/gtk-4.12.3.tar.bz2
@@ -2984,6 +2991,7 @@ https://mirrors.edge.kernel.org/pub/linux/libs/ell/ell-0.64.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/libs/ell/ell-0.65.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/libs/ell/ell-0.66.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/libs/ell/ell-0.67.tar.xz
+https://mirrors.edge.kernel.org/pub/linux/libs/ell/ell-0.68.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/network/wireless/iwd-2.10.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/network/wireless/iwd-2.11.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/network/wireless/iwd-2.12.tar.xz
@@ -2994,6 +3002,7 @@ https://mirrors.edge.kernel.org/pub/linux/network/wireless/iwd-2.16.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/network/wireless/iwd-2.17.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/network/wireless/iwd-2.18.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/network/wireless/iwd-2.19.tar.xz
+https://mirrors.edge.kernel.org/pub/linux/network/wireless/iwd-2.20.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/network/wireless/iwd-2.8.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/network/wireless/iwd-2.9.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/utils/kbd/kbd-2.6.1.tar.xz
@@ -3106,6 +3115,7 @@ https://static.rust-lang.org/dist/rust-1.56.1-x86_64-unknown-linux-gnu.tar.gz
 https://static.rust-lang.org/dist/rust-1.75.0-x86_64-unknown-linux-musl.tar.gz
 https://static.rust-lang.org/dist/rust-1.80.0-x86_64-unknown-linux-musl.tar.gz
 https://static.rust-lang.org/dist/rustc-1.54.0-src.tar.gz
+https://storage.googleapis.com/aom-releases/libaom-3.10.0.tar.gz
 https://storage.googleapis.com/aom-releases/libaom-3.7.0.tar.gz
 https://storage.googleapis.com/aom-releases/libaom-3.7.1.tar.gz
 https://storage.googleapis.com/aom-releases/libaom-3.8.0.tar.gz
@@ -3260,6 +3270,7 @@ https://www.leonerd.org.uk/code/libvterm/libvterm-0.3.tar.gz
 https://www.libssh.org/files/0.10/libssh-0.10.5.tar.xz
 https://www.libssh.org/files/0.10/libssh-0.10.6.tar.xz
 https://www.libssh.org/files/0.11/libssh-0.11.0.tar.xz
+https://www.libssh.org/files/0.11/libssh-0.11.1.tar.xz
 https://www.lua.org/ftp/lua-5.1.5.tar.gz
 https://www.lua.org/ftp/lua-5.2.4.tar.gz
 https://www.lua.org/ftp/lua-5.4.6.tar.gz

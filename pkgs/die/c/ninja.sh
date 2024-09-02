@@ -35,7 +35,7 @@ find ${tmp} -name build.ninja | while read l; do
 
     sed -e 's|/usr/include|/nowhere|g'      \
         -e 's|/usr/lib|/nowhere|g'          \
-        -e 's|/nowhere[^ ]*lib[^ ]*\.so||g' \
+        -e 's|/nowhere[^ ]*lib[^ ]*\.so[^ ]*||g' \
         -e 's|/nowhere[^ ]*lib[^ ]*\.a||g'  \
         -i ${l}
 done

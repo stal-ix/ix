@@ -1,8 +1,8 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://gitlab.gnome.org/GNOME/gspell/-/archive/1.13.1/gspell-1.13.1.tar.bz2
-sha:0877f91abd8b315482e20a8f736012d4587deee8b4656ee0faaab1fa47451160
+https://gitlab.gnome.org/GNOME/gspell/-/archive/1.13.2/gspell-1.13.2.tar.bz2
+sha:2b40c01eb350fb47a5055086574e0f9e84cd237d1955985d1ee1295c07935679
 {% endblock %}
 
 {% block lib_deps %}
