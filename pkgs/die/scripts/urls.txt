@@ -3058,6 +3058,7 @@ https://poppler.freedesktop.org/poppler-24.03.0.tar.xz
 https://poppler.freedesktop.org/poppler-24.06.1.tar.xz
 https://poppler.freedesktop.org/poppler-24.07.0.tar.xz
 https://poppler.freedesktop.org/poppler-24.08.0.tar.xz
+https://poppler.freedesktop.org/poppler-24.09.0.tar.xz
 https://pwmt.org/projects/zathura-djvu/download/zathura-djvu-0.2.10.tar.xz
 https://pwmt.org/projects/zathura-djvu/download/zathura-djvu-0.2.9.tar.xz
 https://pwmt.org/projects/zathura-pdf-poppler/download/zathura-pdf-poppler-0.3.1.tar.xz
