@@ -41,6 +41,7 @@
 #bin/inkscape
 #bin/balsa
 #bin/scummvm
+#bin/code/lite
 #}
 
 {% block run_deps %}
@@ -175,7 +176,6 @@ bin/secret/tool
 bin/su/exec
 bin/copyq
 bin/keepass/xc
-bin/code/lite
 bin/psensor
 bin/mplayer
 bin/wx/maxima
