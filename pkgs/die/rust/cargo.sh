@@ -81,15 +81,21 @@ def flt_target(cmd):
 def flt_host(cmd):
     return cmd
 
-if '--no' in str(sys.argv):
-    cc = host_cc
-else:
-    cc = target_cc
+def run():
+    for cc in (host_cc, target_cc):
+        try:
+            return subprocess.check_call([cc] + sys.argv[1:])
+        except Exception as e:
+            err = e
 
-try:
-    subprocess.check_call([cc] + sys.argv[1:])
-except:
-    subprocess.check_call(list(flt_target([cc] + sys.argv[1:])))
+        try:
+            return subprocess.check_call(list(flt_target([cc] + sys.argv[1:])))
+        except Exception as e:
+            err = e
+
+    raise err
+
+run()
 EOF
 
 cp cc c++
@@ -130,5 +136,5 @@ export HOST_CC=${CC}
 export HOST_CXX=${CXX}
 export TRAGET_CC=${CC}
 export TRAGET_CXX=${CXX}
-cargo build --locked --offline --release {{ix.fix_list(cargo_options)}}
+cargo build --offline --release {{ix.fix_list(cargo_options)}}
 {% endblock %}

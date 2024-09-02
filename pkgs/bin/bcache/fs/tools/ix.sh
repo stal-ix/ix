@@ -1,41 +1,39 @@
-{% extends '//die/c/make.sh' %}
+{% extends '//die/rust/cargo.sh' %}
 
-{% block fetch %}
-https://evilpiepirate.org/bcachefs-tools/bcachefs-tools-1.4.1.tar.zst
-sha:b73b81af2ee7fea1ddad57dacf8ebeb443f9dca8cccde41d56eb1da1736884b5
+{% block cargo_url %}
+https://github.com/koverstreet/bcachefs-tools/archive/refs/tags/v1.11.0.tar.gz
+{% endblock %}
+
+{% block cargo_sha %}
+6db9e2832d51847a74d2a73d8cb31c9e727ed9547862858c1676ee207c414900
 {% endblock %}
 
 {% block bld_libs %}
-lib/c
 lib/z
-lib/aio
-lib/lz4
-lib/zstd
-lib/urcu
-lib/udev
-lib/kernel
-lib/sodium
-lib/key/utils
-lib/linux/util
-lib/shim/fake/pkg(pkg_name=udev,pkg_ver=1)
+lib/ffi
+lib/ncurses
+lib/llvm/18
+lib/bcache/fs
+lib/shim/fake(lib_name=stdc++)
 {% endblock %}
 
 {% block bld_tool %}
-bin/zstd
-bld/pkg/config
-{% endblock %}
-
-{% block cpp_defines %}
-crc32c=crc32c_bcachefs
-{% endblock %}
-
-{% block make_flags %}
-NO_RUST=1
-ROOT_SBINDIR=${out}/bin
-INITRAMFS_DIR=${out}/share/initramfs-tools
-PKGCONFIG_UDEVDIR=${out}/share/udev
+{{super()}}
+bld/llvm/config
 {% endblock %}
 
 {% block patch %}
-sed -e 's|.*UDEVDIR.*udevdir.*||' -i Makefile
+{{super()}}
+sed -e 's|"runtime"|"static"|' \
+    -i vendored/bindgen/Cargo.toml
+{% endblock %}
+
+{% block build %}
+>libbcachefs.a
+{{super()}}
+{% endblock %}
+
+{% block install %}
+mkdir ${out}/bin
+cp ${tmp}/release/bcachefs ${out}/bin/
 {% endblock %}
