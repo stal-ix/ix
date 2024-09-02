@@ -18,7 +18,10 @@ TARGET_LIBS="${PWD}/dl.o"
 
 {% block install %}
 {{super()}}
-cd ${out}/include; mv luajit*/* ./
+cd ${out}/include
+mv luajit*/* ./
+sed -e 's|/luajit-.*||' \
+    -i ${out}/lib/pkgconfig/luajit.pc
 {% endblock %}
 
 {% block lua_dlopen %}

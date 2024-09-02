@@ -149,6 +149,7 @@ https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.18.14.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.1.71.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.10.3.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.10.6.tar.xz
+https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.10.7.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.2.14.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.3.13.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.4.12.tar.xz
@@ -1686,6 +1687,7 @@ https://github.com/knik0/faad2/archive/refs/tags/2.10.1.tar.gz
 https://github.com/knik0/faad2/archive/refs/tags/2.11.0.tar.gz
 https://github.com/knik0/faad2/archive/refs/tags/2.11.1.tar.gz
 https://github.com/kondrak/vkQuake2/archive/refs/tags/1.5.8.tar.gz
+https://github.com/koverstreet/bcachefs-tools/archive/refs/tags/v1.11.0.tar.gz
 https://github.com/kovidgoyal/kitty/archive/refs/tags/v0.25.0.tar.gz
 https://github.com/kovidgoyal/kitty/archive/refs/tags/v0.31.0.tar.gz
 https://github.com/kraxarn/spotify-qt/archive/refs/tags/v3.9.tar.gz
@@ -3084,6 +3086,7 @@ https://secure.nic.cz/files/knot-dns/knot-3.3.8.tar.xz
 https://secure.nic.cz/files/knot-dns/knot-3.3.9.tar.xz
 https://secure.nic.cz/files/knot-dns/knot-3.4.0.tar.xz
 https://secure.nic.cz/files/knot-resolver/knot-resolver-5.6.0.tar.xz
+https://secure.nic.cz/files/knot-resolver/knot-resolver-5.7.4.tar.xz
 https://security.appspot.com/downloads/vsftpd-3.0.5.tar.gz
 https://skarnet.org/software/execline/execline-2.8.2.0.tar.gz
 https://skarnet.org/software/mdevd/mdevd-0.1.5.1.tar.gz
