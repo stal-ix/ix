@@ -888,6 +888,7 @@ https://github.com/LBCrion/sfwbar/archive/refs/tags/v1.0_beta9.tar.gz
 https://github.com/LibRaw/LibRaw/archive/refs/tags/0.21.1.tar.gz
 https://github.com/LibRaw/LibRaw/archive/refs/tags/0.21.2.tar.gz
 https://github.com/LouisBrunner/avahi2dns/archive/9349a6495ad4cafcd1d44e089b8ea2215165888e.zip
+https://github.com/LuaJIT/LuaJIT/archive/refs/tags/v2.0.5.tar.gz
 https://github.com/MariaDB/server.git
 https://github.com/Martchus/cpp-utilities/archive/refs/tags/v5.20.0.tar.gz
 https://github.com/Martchus/tagparser/archive/refs/tags/v11.2.1.tar.gz
