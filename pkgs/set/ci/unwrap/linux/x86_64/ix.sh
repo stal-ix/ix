@@ -44,6 +44,7 @@
 #}
 
 {% block run_deps %}
+bin/bloaty
 bin/ultra/hdr/app
 bin/xdg/dbus/proxy
 bin/elementary/screenshot
