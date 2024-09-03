@@ -2,7 +2,7 @@
 
 {% block fetch %}
 https://github.com/PurpleI2P/i2pd/archive/refs/tags/2.53.1.tar.gz
-sha:99c3d739530b08b28a796544ead4254394c7226a873bf813db4e7b3c1524d757
+sha:c6863d853905e7594ea661595ea591055f8f2f018b9b90507d5a43a6456188ea
 {% endblock %}
 
 {% block bld_libs %}

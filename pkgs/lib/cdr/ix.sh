@@ -14,11 +14,8 @@ lib/lcms/2
 lib/revenge
 {% endblock %}
 
-{% block bld_tool %}
-bin/doxygen
-{% endblock %}
-
 {% block configure_flags %}
+--without-docs
 --disable-werror
 --disable-tests
 {% endblock %}

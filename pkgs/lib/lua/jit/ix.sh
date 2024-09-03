@@ -1,8 +1,8 @@
 {% extends '//lib/lua/t/ix.sh' %}
 
 {% block fetch %}
-https://luajit.org/download/LuaJIT-2.0.5.tar.gz
-md5:48353202cbcacab84ee41a5a70ea0a2c
+https://github.com/LuaJIT/LuaJIT/archive/refs/tags/v2.0.5.tar.gz
+sha:8bb29d84f06eb23c7ea4aa4794dbb248ede9fcb23b6989cbef81dc79352afc97
 {% endblock %}
 
 {% block lib_deps %}
@@ -18,7 +18,10 @@ TARGET_LIBS="${PWD}/dl.o"
 
 {% block install %}
 {{super()}}
-cd ${out}/include; mv luajit*/* ./
+cd ${out}/include
+mv luajit*/* ./
+sed -e 's|/luajit-.*||' \
+    -i ${out}/lib/pkgconfig/luajit.pc
 {% endblock %}
 
 {% block lua_dlopen %}

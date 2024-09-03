@@ -1,8 +1,8 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://github.com/linuxwacom/libwacom/releases/download/libwacom-2.12.1/libwacom-2.12.1.tar.xz
-sha:5b047a28d20b01dd744e194c56c1ba5db54b5d6ee3a8b2d820a1ad6e33d85572
+https://github.com/linuxwacom/libwacom/releases/download/libwacom-2.13.0/libwacom-2.13.0.tar.xz
+sha:acd18121441bbc00fc5c881fca08a33319ab814b798eac8d0be6354923f8fb08
 {% endblock %}
 
 {% block lib_deps %}

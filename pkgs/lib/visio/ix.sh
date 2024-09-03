@@ -17,10 +17,10 @@ lib/revenge
 {% block bld_tool %}
 bld/perl
 bin/gperf
-bin/doxygen
 {% endblock %}
 
 {% block configure_flags %}
+--without-docs
 --disable-werror
 --disable-tests
 {% endblock %}

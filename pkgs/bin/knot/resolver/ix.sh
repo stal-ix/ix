@@ -1,8 +1,8 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://secure.nic.cz/files/knot-resolver/knot-resolver-5.6.0.tar.xz
-sha:0c82ae937b685dc477fb3176098e3dc106c898b7cd83553e5bc54dccb83c80d7
+https://secure.nic.cz/files/knot-resolver/knot-resolver-5.7.4.tar.xz
+sha:6b6da6ecf06828041afad44dfa227781f0ae34ad183a667008509355d18bd9c8
 {% endblock %}
 
 {% block bld_libs %}

@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://libisl.sourceforge.io/isl-0.26.tar.xz
-sha:a0b5cb06d24f9fa9e77b55fabbe9a3c94a336190345c2555f9915bb38e976504
+https://libisl.sourceforge.io/isl-0.27.tar.xz
+sha:6d8babb59e7b672e8cb7870e874f3f7b813b6e00e6af3f8b04f7579965643d5c
 {% endblock %}
 
 {% block lib_deps %}

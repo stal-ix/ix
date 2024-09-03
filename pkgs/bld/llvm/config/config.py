@@ -8,6 +8,9 @@ C = 'aarch64 aarch64asmparser aarch64codegen aarch64desc aarch64disassembler aar
 if '--version' in sys.argv:
     print(os.environ['LLVM_FULL_VERSION'])
 
+if '--prefix' in sys.argv:
+    print(os.environ['LLVM_DIR'])
+
 if '--libdir' in sys.argv:
     print(os.environ['LLVM_DIR'] + '/lib')
 
