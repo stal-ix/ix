@@ -1,8 +1,8 @@
 {% extends '//die/c/make.sh' %}
 
 {% block fetch %}
-https://downloadmirror.intel.com/783534/acpica-unix-20230628.tar.gz
-sha:86876a745e3d224dcfd222ed3de465b47559e85811df2db9820ef09a9dff5cce
+https://github.com/acpica/acpica/archive/refs/tags/version-20240827.tar.gz
+sha:fe5b043d83521d489246c8e8f9a32aed24f9dfddf3e676453fe5d3bd0316a740
 {% endblock %}
 
 {% block bld_libs %}
