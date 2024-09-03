@@ -45,6 +45,7 @@
 #}
 
 {% block run_deps %}
+bin/evdev
 bin/bloaty
 bin/ultra/hdr/app
 bin/xdg/dbus/proxy
