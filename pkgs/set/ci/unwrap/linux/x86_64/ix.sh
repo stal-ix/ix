@@ -91,7 +91,6 @@ bin/grpc/java
 bin/time/limit
 bin/nscd
 bin/yofi
-bin/kernel/6/9
 bin/port/forwarder/rs
 bin/upnpc
 bin/smart/mon/tools
@@ -141,7 +140,6 @@ bin/go/smee
 bin/bcrypt
 bin/reproxy
 bin/q/bittorrent/nox
-bin/kernel/6/8
 set/stalix/server
 bin/prometheus/node/exporter
 bin/clang/18/bootstrapped
@@ -394,7 +392,6 @@ bin/git
 bin/git/2
 bin/git/go
 bin/kernel/6/6
-bin/kernel/6/7
 bin/swayimg
 bin/mc/slang
 bin/mc/curses/n
