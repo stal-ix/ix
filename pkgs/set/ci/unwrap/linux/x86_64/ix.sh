@@ -579,7 +579,7 @@ bin/xml/lint
 bin/curl/lite
 bin/curl/mbedtls
 bin/curl/bearssl
-bin/curl/full
+bin/curl/openssl
 bin/curl
 bin/curl/ms
 bin/curl/wolf
