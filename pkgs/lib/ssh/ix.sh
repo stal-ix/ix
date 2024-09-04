@@ -21,9 +21,3 @@ WITH_EXAMPLES=OFF
 WITH_DEBUG_CALLTRACE=OFF
 WITH_SYMBOL_VERSIONING=OFF
 {% endblock %}
-
-{% block install %}
-{{super()}}
-sed -e 's|OpenSSL::Crypto|c|' \
-    -i ${out}/lib/cmake/libssh/libssh-config.cmake
-{% endblock %}

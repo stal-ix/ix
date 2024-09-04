@@ -1,7 +1,7 @@
 {% extends '//lib/openssl/t/ix.sh' %}
 
 {% block openssl_conf_opts %}
---libdir=${out}/lib
+--libdir=lib
 no-makedepend
 {% endblock %}
 
