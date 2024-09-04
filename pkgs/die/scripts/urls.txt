@@ -1586,6 +1586,7 @@ https://github.com/ihhub/fheroes2/archive/refs/tags/1.0.9.tar.gz
 https://github.com/ihhub/fheroes2/archive/refs/tags/1.1.0.tar.gz
 https://github.com/ihhub/fheroes2/archive/refs/tags/1.1.1.tar.gz
 https://github.com/ii8/havoc/archive/refs/tags/0.5.0.tar.gz
+https://github.com/ii8/havoc/archive/refs/tags/0.6.0.tar.gz
 https://github.com/ikatson/rqbit/archive/refs/tags/v5.6.4.tar.gz
 https://github.com/illiliti/libudev-zero/archive/refs/tags/1.0.2.tar.gz
 https://github.com/illiliti/libudev-zero/archive/refs/tags/1.0.3.tar.gz
