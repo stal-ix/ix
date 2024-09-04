@@ -7,5 +7,6 @@ ENABLE_LIB_ONLY=ON
 
 {% block env %}
 {{super()}}
+export CPPFLAGS="-DNGHTTP3_STATICLIB=1 \${CPPFLAGS}"
 export COFLAGS="--with-nghttp3=${out} \${COFLAGS}"
 {% endblock %}

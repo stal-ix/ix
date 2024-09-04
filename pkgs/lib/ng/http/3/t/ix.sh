@@ -17,3 +17,8 @@ lib/c++
 ENABLE_STATIC_LIB=ON
 ENABLE_SHARED_LIB=OFF
 {% endblock %}
+
+{% block cpp_defines %}
+{{super()}}
+NGHTTP3_STATICLIB=1
+{% endblock %}
