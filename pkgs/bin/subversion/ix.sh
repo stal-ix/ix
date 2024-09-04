@@ -2,5 +2,5 @@
 
 {% block run_deps %}
 bin/openssh/client
-bin/subversion/unwrap(openssl=1)
+bin/subversion/unwrap(libopenssl_ver=1)
 {% endblock %}

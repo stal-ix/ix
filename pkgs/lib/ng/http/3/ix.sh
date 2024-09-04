@@ -4,3 +4,8 @@
 ENABLE_LIB_ONLY=ON
 {{super()}}
 {% endblock %}
+
+{% block env %}
+{{super()}}
+export COFLAGS="--with-nghttp3=${out} \${COFLAGS}"
+{% endblock %}

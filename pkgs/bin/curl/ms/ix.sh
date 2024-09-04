@@ -1,5 +1,5 @@
-{% extends '//bin/curl/full/ix.sh' %}
+{% extends '//die/hub.sh' %}
 
-{% block curl_http3 %}
-lib/msh3
+{% block run_deps %}
+bin/curl/ms/unwrap(libopenssl_ver=3/quic)
 {% endblock %}

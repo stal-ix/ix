@@ -12,19 +12,16 @@ lib/openssl
 lib/ng/http/3
 {% endblock %}
 
+{% block build_flags %}
+wrap_cc
+{% endblock %}
+
 {% block cmake_flags %}
 ENABLE_OPENSSL=ON
-ENABLE_STATIC_LIB=ON
-ENABLE_SHARED_LIB=OFF
+ENABLE_STATIC_LIB=OFF
+ENABLE_SHARED_LIB=ON
 {% endblock %}
 
-{% block setup_target_flags %}
-# for example
-export CXXFLAGS="-std=c++17 ${CXXFLAGS}"
-{% endblock %}
-
-{% block patch %}
-touch crypto/includes/ngtcp2/ngtcp2_crypto_openssl.h
-sed -e 's|.*add_sub.*examples.*||' -i CMakeLists.txt
-sed -e 's|.*add_sub.*tests.*||' -i CMakeLists.txt
+{% block env %}
+export COFLAGS="--with-ngtcp2=${out} \${COFLAGS}"
 {% endblock %}

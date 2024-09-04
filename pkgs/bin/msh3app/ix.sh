@@ -1,13 +1,5 @@
-{% extends '//lib/msh3/t/ix.sh' %}
+{% extends '//die/hub.sh' %}
 
-{% block cmake_flags %}
-{{super()}}
-MSH3_TOOL=ON
-{% endblock %}
-
-{% block install %}
-{{super()}}
-cd ${out}
-mkdir bin
-mv lib/msh3app bin/
+{% block run_deps %}
+bin/msh3app/unwrap(libopenssl_ver=3/quic)
 {% endblock %}
