@@ -42,6 +42,9 @@
 #bin/balsa
 #bin/scummvm
 #bin/code/lite
+#bin/mrustc/cargo
+#bin/mrustc
+#bin/mrustc/boot
 #}
 
 {% block run_deps %}
@@ -234,7 +237,6 @@ bin/seer
 bin/dxsc
 bin/dwarf/dump
 bin/rpm
-bin/mrustc/boot
 bin/bluetuith
 bin/glib/tools
 bin/neo/vim/jit
@@ -712,8 +714,6 @@ bin/vifm
 bin/dte
 bin/joe
 bin/kakoune
-bin/mrustc/cargo
-bin/mrustc
 bin/exif
 bin/mtools
 bin/fdupes
