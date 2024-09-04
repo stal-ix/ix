@@ -1752,6 +1752,7 @@ https://github.com/libexpat/libexpat/archive/refs/tags/R_2_5_0.tar.gz
 https://github.com/libexpat/libexpat/archive/refs/tags/R_2_6_0.tar.gz
 https://github.com/libexpat/libexpat/archive/refs/tags/R_2_6_1.tar.gz
 https://github.com/libexpat/libexpat/archive/refs/tags/R_2_6_2.tar.gz
+https://github.com/libexpat/libexpat/archive/refs/tags/R_2_6_3.tar.gz
 https://github.com/libffi/libffi/archive/refs/tags/v3.4.4.tar.gz
 https://github.com/libffi/libffi/archive/refs/tags/v3.4.5.tar.gz
 https://github.com/libffi/libffi/archive/refs/tags/v3.4.6.tar.gz
@@ -2072,6 +2073,7 @@ https://github.com/openssh/openssh-portable/archive/refs/tags/V_9_5_P1.tar.gz
 https://github.com/openssh/openssh-portable/archive/refs/tags/V_9_6_P1.tar.gz
 https://github.com/openssh/openssh-portable/archive/refs/tags/V_9_7_P1.tar.gz
 https://github.com/openssh/openssh-portable/archive/refs/tags/V_9_8_P1.tar.gz
+https://github.com/openssl/openssl/archive/refs/tags/openssl-3.3.2.tar.gz
 https://github.com/opsengine/cpulimit/archive/refs/tags/v0.2.tar.gz
 https://github.com/p-gen/smenu/archive/refs/tags/v1.3.0.tar.gz
 https://github.com/p-gen/smenu/archive/refs/tags/v1.4.0.tar.gz
