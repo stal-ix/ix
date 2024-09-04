@@ -1,8 +1,8 @@
 {% extends '//die/c/make.sh' %}
 
 {% block fetch %}
-https://github.com/libbpf/libbpf/archive/refs/tags/v1.4.5.tar.gz
-sha:e225c1fe694b9540271b1f2f15eb882c21c34511ba7b8835b0a13003b3ebde8c
+https://github.com/libbpf/libbpf/archive/refs/tags/v1.4.6.tar.gz
+sha:d4cf3ee697d9bd959ad3c0f5c6757370a2559e54448761271e15a23c31c1082e
 {% endblock %}
 
 {% block lib_deps %}

@@ -1742,6 +1742,7 @@ https://github.com/libbpf/libbpf/archive/refs/tags/v1.4.2.tar.gz
 https://github.com/libbpf/libbpf/archive/refs/tags/v1.4.3.tar.gz
 https://github.com/libbpf/libbpf/archive/refs/tags/v1.4.4.tar.gz
 https://github.com/libbpf/libbpf/archive/refs/tags/v1.4.5.tar.gz
+https://github.com/libbpf/libbpf/archive/refs/tags/v1.4.6.tar.gz
 https://github.com/libcgroup/libcgroup/releases/download/v2.0.2/libcgroup-2.0.2.tar.gz
 https://github.com/libconfuse/libconfuse/archive/refs/tags/v3.3.tar.gz
 https://github.com/libcxxrt/libcxxrt/archive/fd484be8d1e94a1fcf6bc5c67e5c07b65ada19b6.tar.gz
