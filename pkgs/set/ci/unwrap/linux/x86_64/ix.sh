@@ -45,6 +45,7 @@
 #}
 
 {% block run_deps %}
+bin/curl/ngtcp2
 bin/evdev
 bin/bloaty
 bin/ultra/hdr/app
