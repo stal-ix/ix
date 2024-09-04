@@ -11,4 +11,5 @@ lib/bsd/overlay
 --disable-openssl
 --without-openssl
 --with-openssl=no
+--without-openssl-quic
 {% endblock %}
