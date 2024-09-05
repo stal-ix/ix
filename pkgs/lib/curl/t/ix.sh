@@ -14,10 +14,9 @@ lib/ssh/2
 lib/idn/2
 lib/brotli
 lib/c/ares
+lib/openssl
 lib/ng/http/2
-lib/{{curlssl or 'openssl'}}
 {% block curl_http3 %}
-lib/ng/tcp2
 lib/ng/http/3
 {% endblock %}
 {% if darwin %}

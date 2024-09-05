@@ -42,9 +42,14 @@
 #bin/balsa
 #bin/scummvm
 #bin/code/lite
+#bin/mrustc/cargo
+#bin/mrustc
+#bin/mrustc/boot
 #}
 
 {% block run_deps %}
+bin/curl/ngtcp2
+bin/evdev
 bin/bloaty
 bin/ultra/hdr/app
 bin/xdg/dbus/proxy
@@ -232,7 +237,6 @@ bin/seer
 bin/dxsc
 bin/dwarf/dump
 bin/rpm
-bin/mrustc/boot
 bin/bluetuith
 bin/glib/tools
 bin/neo/vim/jit
@@ -577,7 +581,7 @@ bin/xml/lint
 bin/curl/lite
 bin/curl/mbedtls
 bin/curl/bearssl
-bin/curl/full
+bin/curl/openssl
 bin/curl
 bin/curl/ms
 bin/curl/wolf
@@ -710,8 +714,6 @@ bin/vifm
 bin/dte
 bin/joe
 bin/kakoune
-bin/mrustc/cargo
-bin/mrustc
 bin/exif
 bin/mtools
 bin/fdupes

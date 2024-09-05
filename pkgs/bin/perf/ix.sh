@@ -1,6 +1,6 @@
 {% extends '//die/c/make.sh' %}
 
-{% include '//bin/kernel/6/9/ver.sh' %}
+{% include '//bin/kernel/6/10/ver.sh' %}
 
 {% block bld_libs %}
 lib/c
@@ -65,6 +65,7 @@ HOSTLD=${HOST_CC}
 {% if verbose %}
 V=1
 {% endif %}
+LIBTRACEEVENT_DIR=${PKG_CONFIG_PATH}
 {% endblock %}
 
 {% block build_flags %}

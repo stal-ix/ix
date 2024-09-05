@@ -12,6 +12,10 @@ lib/c++
 lib/openssl
 {% endblock %}
 
+{% block bld_tool %}
+bld/prepend
+{% endblock %}
+
 {% block env %}
 export COFLAGS="--with-libssh=${out} \${COFLAGS}"
 {% endblock %}
@@ -24,6 +28,7 @@ WITH_SYMBOL_VERSIONING=OFF
 
 {% block install %}
 {{super()}}
-sed -e 's|OpenSSL::Crypto|c|' \
-    -i ${out}/lib/cmake/libssh/libssh-config.cmake
+prepend ${out}/lib/cmake/libssh/libssh-config.cmake << EOF
+find_package(OpenSSL)
+EOF
 {% endblock %}

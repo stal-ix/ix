@@ -46,9 +46,7 @@ _musl_=1
 
 {% block patch %}
 find . -type f -name CMakeLists.txt | while read l; do
-    sed -e 's|OpenSSL::OpenSSL||g' \
-        -e 's|c-ares::c-ares||g' \
-        -i ${l}
+    sed -e 's|c-ares::c-ares||g' -i ${l}
 done
 
 devendor contrib/libs/cxxsupp
