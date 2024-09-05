@@ -42,12 +42,12 @@
 #bin/balsa
 #bin/scummvm
 #bin/code/lite
-#bin/mrustc/cargo
-#bin/mrustc
-#bin/mrustc/boot
 #}
 
 {% block run_deps %}
+bin/mrustc/cargo
+bin/mrustc
+bin/mrustc/boot
 bin/curl/ngtcp2
 bin/evdev
 bin/bloaty
