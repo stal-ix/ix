@@ -6,8 +6,8 @@
 #}
 
 {% block fetch %}
-https://github.com/iputils/iputils/archive/refs/tags/20240117.tar.gz
-sha:a5d66e2997945b2541b8f780a7f5a5ec895d53a517ae1dc4f3ab762573edea9a
+https://github.com/iputils/iputils/archive/refs/tags/20240905.tar.gz
+sha:055b4e6e4f298c97fd5848898099e59b4590db63fac3f7ad4fa796354ad44403
 {% endblock %}
 
 {% block bld_libs %}
