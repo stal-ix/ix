@@ -3,9 +3,9 @@
 {% block bld_libs %}
 lib/z
 lib/xz
-lib/curl
 lib/openssl
 lib/git/2/old
+lib/curl/lite
 {{super()}}
 {% endblock %}
 
