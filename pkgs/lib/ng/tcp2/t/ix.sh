@@ -8,7 +8,6 @@ sha:dc9e6f65358de461ee6932b4a8375f68136bcd706067255410e13f92db46d2a7
 {% block lib_deps %}
 lib/c
 lib/ev
-lib/openssl
 lib/ng/http/3
 {% endblock %}
 
@@ -17,7 +16,6 @@ wrap_cc
 {% endblock %}
 
 {% block cmake_flags %}
-ENABLE_OPENSSL=ON
 ENABLE_STATIC_LIB=OFF
 ENABLE_SHARED_LIB=ON
 {% endblock %}
