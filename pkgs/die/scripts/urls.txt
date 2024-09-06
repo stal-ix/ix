@@ -248,6 +248,7 @@ https://cpan.metacpan.org/authors/id/W/WB/WBRASWELL/Parse-Yapp-1.21.tar.gz
 https://data.iana.org/time-zones/releases/tzdb-2023c.tar.lz
 https://data.iana.org/time-zones/releases/tzdb-2023d.tar.lz
 https://data.iana.org/time-zones/releases/tzdb-2024a.tar.lz
+https://data.iana.org/time-zones/releases/tzdb-2024b.tar.lz
 https://dbus.freedesktop.org/releases/dbus-glib/dbus-glib-0.112.tar.gz
 https://dbus.freedesktop.org/releases/dbus/dbus-1.14.10.tar.xz
 https://dev-www.libreoffice.org/src/libcdr/libcdr-0.1.7.tar.xz
@@ -1466,6 +1467,7 @@ https://github.com/golang/go/archive/refs/tags/go1.22.4.tar.gz
 https://github.com/golang/go/archive/refs/tags/go1.22.5.tar.gz
 https://github.com/golang/go/archive/refs/tags/go1.22.6.tar.gz
 https://github.com/golang/go/archive/refs/tags/go1.23.0.tar.gz
+https://github.com/golang/go/archive/refs/tags/go1.23.1.tar.gz
 https://github.com/google/brotli/archive/refs/tags/v1.1.0.tar.gz
 https://github.com/google/crc32c/archive/refs/tags/1.1.2.tar.gz
 https://github.com/google/double-conversion/archive/refs/tags/v3.3.0.tar.gz
@@ -1608,6 +1610,7 @@ https://github.com/iproute2/iproute2/archive/refs/tags/v6.10.0.tar.gz
 https://github.com/iproute2/iproute2/archive/refs/tags/v6.9.0.tar.gz
 https://github.com/iputils/iputils/archive/refs/tags/20221126.tar.gz
 https://github.com/iputils/iputils/archive/refs/tags/20240117.tar.gz
+https://github.com/iputils/iputils/archive/refs/tags/20240905.tar.gz
 https://github.com/isacikgoz/tldr/archive/refs/tags/v1.0.0-alpha.tar.gz
 https://github.com/isc-projects/bind9/archive/refs/tags/v9.19.15.tar.gz
 https://github.com/ispc/ispc/archive/refs/tags/v1.18.1.tar.gz
@@ -3060,6 +3063,7 @@ https://mupdf.com/downloads/archive/mupdf-1.24.5-source.tar.gz
 https://mupdf.com/downloads/archive/mupdf-1.24.6-source.tar.gz
 https://mupdf.com/downloads/archive/mupdf-1.24.7-source.tar.gz
 https://mupdf.com/downloads/archive/mupdf-1.24.8-source.tar.gz
+https://mupdf.com/downloads/archive/mupdf-1.24.9-source.tar.gz
 https://nav.dl.sourceforge.net/project/sbcl/sbcl/2.2.1/sbcl-2.2.1-source.tar.bz2
 https://nav.dl.sourceforge.net/project/sbcl/sbcl/2.3.7/sbcl-2.3.7-source.tar.bz2
 https://nav.dl.sourceforge.net/project/sbcl/sbcl/2.3.9/sbcl-2.3.9-source.tar.bz2
@@ -3326,6 +3330,7 @@ https://www.openssl.org/source/old/1.1.1/openssl-1.1.1j.tar.gz
 https://www.pell.portland.or.us/~orc/Code/discount/discount-2.2.7d.tar.bz2
 https://www.prevanders.net/libdwarf-0.10.0.tar.xz
 https://www.prevanders.net/libdwarf-0.10.1.tar.xz
+https://www.prevanders.net/libdwarf-0.11.0.tar.xz
 https://www.prevanders.net/libdwarf-0.6.0.tar.xz
 https://www.prevanders.net/libdwarf-0.8.0.tar.xz
 https://www.prevanders.net/libdwarf-0.9.0.tar.xz
