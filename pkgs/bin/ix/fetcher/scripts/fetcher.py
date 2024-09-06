@@ -108,16 +108,12 @@ def tout_prefix(tout):
     return ['/bin/subreaper', '/bin/timeout', str(tout) + 's']
 
 
-def fetch_url_wget(url, out, tout):
-    return subprocess.check_call(tout_prefix(tout) + ['wget', '-t', '1', '--no-check-certificate', '-O', out, url], shell=False)
-
-
 def fetch_url_curl(url, out, tout):
     return subprocess.check_call(tout_prefix(tout) + ['curl', '--retry', '0', '-k', '-L', '--output', out, url], shell=False)
 
 
 def iter_fetch_url(url):
-    for meth in (fetch_url_wget, fetch_url_curl):
+    for meth in [fetch_url_curl]:
         yield functools.partial(meth, url)
 
 
