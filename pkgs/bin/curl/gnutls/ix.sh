@@ -1,15 +1,11 @@
-{% extends '//lib/curl/lite/t/ix.sh' %}
+{% extends '//lib/curl/t/ix.sh' %}
 
-{% block bld_libs %}
-{{super()}}
-lib/gnutls
+{% block curl_http3 %}
 lib/bsd/overlay
+lib/ng/tcp2/gnutls
 {% endblock %}
 
-{% block configure_flags %}
+{% block setup_target_flags %}
 {{super()}}
---disable-openssl
---without-openssl
---with-openssl=no
---without-openssl-quic
+export COFLAGS=$(echo "${COFLAGS}" | tr ' ' '\n' | grep -v with-openssl | tr '\n' ' ')
 {% endblock %}
