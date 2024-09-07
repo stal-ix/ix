@@ -1,7 +1,6 @@
 {% extends '//die/proxy.sh' %}
 
 {% block run_deps %}
-bin/wget
 bin/curl
 bld/python
 {% endblock %}

@@ -6,10 +6,9 @@ lib/ev
 lib/xml/2
 lib/boost
 lib/c/ares
-lib/ng/tcp2
 lib/jansson
-lib/openssl
 lib/ng/http/3
+lib/ng/tcp2/openssl
 {{super()}}
 {% endblock %}
 
