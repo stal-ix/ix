@@ -150,5 +150,5 @@ sys.stdout = sys.stderr
 try:
     main()
 except Exception as e:
-    print(e, file=sys.stderr)
+    print(e)
     sys.exit(1)
