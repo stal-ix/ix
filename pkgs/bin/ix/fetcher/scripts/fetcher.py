@@ -60,7 +60,7 @@ def iter_fetch(url, sha, mirrors):
             for u in iter_cached(sha, mirrors):
                 yield from iter_fetch_url(u)
 
-        for f in list(it())[:10]:
+        for f in list(it())[:4]:
             yield f, True
 
     while True:
