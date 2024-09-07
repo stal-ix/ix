@@ -88,6 +88,7 @@ class RenderContext:
             'uniq_id': pkg.uniq_id,
             'native': hp['id'] == tp['id'],
             'trash_dir': self.package.manager.config.trash_dir,
+            'isfile': os.path.isfile,
             kind: True,
             tp['os']: True,
             tp['arch']: True,
