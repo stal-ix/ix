@@ -60,7 +60,7 @@ def iter_fetch(url, sha, mirrors):
             for u in iter_cached(sha, mirrors):
                 yield from iter_fetch_url(u)
 
-        for f in list(it())[:10]:
+        for f in list(it())[:4]:
             yield f, True
 
     while True:
@@ -109,7 +109,18 @@ def tout_prefix(tout):
 
 
 def fetch_url_curl(url, out, tout):
-    return subprocess.check_call(tout_prefix(tout) + ['curl', '--retry', '0', '-k', '-L', '--output', out, url], shell=False)
+    cmd = tout_prefix(tout) + [
+        'curl',
+        '--retry', '0',
+        '-k',
+        '-L',
+        '--output', out,
+        url,
+    ]
+
+    print(f'run {cmd}')
+
+    return subprocess.check_call(cmd, shell=False)
 
 
 def iter_fetch_url(url):
@@ -122,6 +133,7 @@ def main():
     random.shuffle(mirrors)
     do_fetch(sys.argv[1], sys.argv[2], sys.argv[3], *mirrors)
 
+sys.stdout = sys.stderr
 
 try:
     main()

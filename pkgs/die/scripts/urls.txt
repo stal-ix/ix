@@ -947,6 +947,7 @@ https://github.com/NixOS/nix/archive/refs/tags/2.24.1.tar.gz
 https://github.com/NixOS/nix/archive/refs/tags/2.24.2.tar.gz
 https://github.com/NixOS/nix/archive/refs/tags/2.24.3.tar.gz
 https://github.com/NixOS/nix/archive/refs/tags/2.24.4.tar.gz
+https://github.com/NixOS/nix/archive/refs/tags/2.24.5.tar.gz
 https://github.com/NixOS/patchelf/archive/refs/tags/0.18.0.tar.gz
 https://github.com/Novum/vkQuake/archive/refs/tags/1.30.1.tar.gz
 https://github.com/Old-Man-Programmer/tree/archive/refs/tags/2.1.1.tar.gz
@@ -1646,6 +1647,7 @@ https://github.com/jesseduffield/lazygit/archive/refs/tags/v0.40.2.tar.gz
 https://github.com/jesseduffield/lazygit/archive/refs/tags/v0.41.0.tar.gz
 https://github.com/jesseduffield/lazygit/archive/refs/tags/v0.42.0.tar.gz
 https://github.com/jesseduffield/lazygit/archive/refs/tags/v0.43.1.tar.gz
+https://github.com/jesseduffield/lazygit/archive/refs/tags/v0.44.0.tar.gz
 https://github.com/jhawthorn/fzy/archive/refs/tags/1.0.tar.gz
 https://github.com/jirka-h/haveged/archive/refs/tags/v1.9.18.tar.gz
 https://github.com/jjsullivan5196/wvkbd/archive/refs/tags/v0.12.tar.gz
@@ -2166,6 +2168,7 @@ https://github.com/python/cpython/archive/refs/tags/v3.12.2.tar.gz
 https://github.com/python/cpython/archive/refs/tags/v3.12.3.tar.gz
 https://github.com/python/cpython/archive/refs/tags/v3.12.4.tar.gz
 https://github.com/python/cpython/archive/refs/tags/v3.12.5.tar.gz
+https://github.com/python/cpython/archive/refs/tags/v3.12.6.tar.gz
 https://github.com/pzmarzly/portforwarder-rs/archive/refs/tags/0.1.0.tar.gz
 https://github.com/qbittorrent/qBittorrent/archive/refs/tags/release-4.5.4.tar.gz
 https://github.com/qbittorrent/qBittorrent/archive/refs/tags/release-4.6.0.tar.gz
@@ -2719,6 +2722,7 @@ https://gitlab.com/mbunkus/mkvtoolnix/-/archive/release-83.0/mkvtoolnix-release-
 https://gitlab.com/mbunkus/mkvtoolnix/-/archive/release-84.0/mkvtoolnix-release-84.0.tar.bz2
 https://gitlab.com/mbunkus/mkvtoolnix/-/archive/release-85.0/mkvtoolnix-release-85.0.tar.bz2
 https://gitlab.com/mbunkus/mkvtoolnix/-/archive/release-86.0/mkvtoolnix-release-86.0.tar.bz2
+https://gitlab.com/mbunkus/mkvtoolnix/-/archive/release-87.0/mkvtoolnix-release-87.0.tar.bz2
 https://gitlab.com/procps-ng/procps/-/archive/v4.0.4/procps-v4.0.4.tar.bz2
 https://gitlab.com/psmisc/psmisc/-/archive/v23.6/psmisc-v23.6.tar.bz2
 https://gitlab.com/psmisc/psmisc/-/archive/v23.7/psmisc-v23.7.tar.bz2
@@ -2841,6 +2845,7 @@ https://gitlab.gnome.org/GNOME/gtk/-/archive/4.15.0/gtk-4.15.0.tar.bz2
 https://gitlab.gnome.org/GNOME/gtk/-/archive/4.15.3/gtk-4.15.3.tar.bz2
 https://gitlab.gnome.org/GNOME/gtk/-/archive/4.15.4/gtk-4.15.4.tar.bz2
 https://gitlab.gnome.org/GNOME/gtk/-/archive/4.15.5/gtk-4.15.5.tar.bz2
+https://gitlab.gnome.org/GNOME/gtk/-/archive/4.16.0/gtk-4.16.0.tar.bz2
 https://gitlab.gnome.org/GNOME/gtksourceview/-/archive/4.8.4/gtksourceview-4.8.4.tar.bz2
 https://gitlab.gnome.org/GNOME/gtksourceview/-/archive/5.10.0/gtksourceview-5.10.0.tar.bz2
 https://gitlab.gnome.org/GNOME/gtksourceview/-/archive/5.12.1/gtksourceview-5.12.1.tar.bz2
