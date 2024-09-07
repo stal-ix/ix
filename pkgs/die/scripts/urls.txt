@@ -2845,6 +2845,7 @@ https://gitlab.gnome.org/GNOME/gtk/-/archive/4.15.0/gtk-4.15.0.tar.bz2
 https://gitlab.gnome.org/GNOME/gtk/-/archive/4.15.3/gtk-4.15.3.tar.bz2
 https://gitlab.gnome.org/GNOME/gtk/-/archive/4.15.4/gtk-4.15.4.tar.bz2
 https://gitlab.gnome.org/GNOME/gtk/-/archive/4.15.5/gtk-4.15.5.tar.bz2
+https://gitlab.gnome.org/GNOME/gtk/-/archive/4.16.0/gtk-4.16.0.tar.bz2
 https://gitlab.gnome.org/GNOME/gtksourceview/-/archive/4.8.4/gtksourceview-4.8.4.tar.bz2
 https://gitlab.gnome.org/GNOME/gtksourceview/-/archive/5.10.0/gtksourceview-5.10.0.tar.bz2
 https://gitlab.gnome.org/GNOME/gtksourceview/-/archive/5.12.1/gtksourceview-5.12.1.tar.bz2
