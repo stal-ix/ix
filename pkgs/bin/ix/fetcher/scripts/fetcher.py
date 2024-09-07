@@ -122,7 +122,7 @@ def fetch_url_curl(url, out, tout):
 
     print(f'run {cmd}')
 
-    return subprocess.check_call(cmd, shell=False, stderr=subprocess.STDOUT)
+    return subprocess.check_call(cmd, shell=False)
 
 
 def iter_fetch_url(url):
@@ -135,6 +135,7 @@ def main():
     random.shuffle(mirrors)
     do_fetch(sys.argv[1], sys.argv[2], sys.argv[3], *mirrors)
 
+sys.stdout = sys.stderr
 
 try:
     main()
