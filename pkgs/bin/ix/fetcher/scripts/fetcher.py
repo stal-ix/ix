@@ -143,7 +143,9 @@ def main():
     random.shuffle(mirrors)
     do_fetch(sys.argv[1], sys.argv[2], sys.argv[3], *mirrors)
 
+
 sys.stdout = sys.stderr
+
 
 try:
     main()
