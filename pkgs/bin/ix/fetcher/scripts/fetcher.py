@@ -109,7 +109,20 @@ def tout_prefix(tout):
 
 
 def fetch_url_curl(url, out, tout):
-    return subprocess.check_call(tout_prefix(tout) + ['curl', '--retry', '0', '-k', '-L', '--output', out, url], shell=False)
+    cmd = tout_prefix(tout) + [
+        'curl',
+        '--retry',
+        '0',
+        '-k',
+        '-L',
+        '--output',
+        out,
+        url,
+    ]
+
+    print(f'run {cmd}')
+
+    return subprocess.check_call(cmd, shell=False, stderr=subprocess.STDOUT)
 
 
 def iter_fetch_url(url):
