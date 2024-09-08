@@ -6,5 +6,6 @@ sha:71d4048479ae28f1f5794619c3d72df9c01df49b1c628ef85fde37596dc31a33
 {% endblock %}
 
 {% block bld_tool %}
-bld/texinfo
+bld/fake(tool_name=texinfo)
+bld/fake(tool_name=makeinfo)
 {% endblock %}

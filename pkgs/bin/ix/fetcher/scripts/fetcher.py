@@ -15,6 +15,9 @@ random.seed(int(time.time() * 1000000000000))
 
 
 def prepare_dir(d):
+    if not d:
+        return
+
     try:
         shutil.rmtree(d)
     except FileNotFoundError:
@@ -73,7 +76,8 @@ def iter_tout():
 
     while True:
         yield tout * (0.5 + random.random())
-        tout = tout * 1.5
+
+        tout = min(tout * 1.5, 10000)
 
 
 def do_fetch(url, path, sha, *mirrors):
@@ -98,6 +102,9 @@ def do_fetch(url, path, sha, *mirrors):
 
 
 def check_md5(path, old_cs):
+    if '__skip__' in old_cs:
+        return
+
     new_cs = calc_chksum(path, old_cs)
 
     if new_cs != old_cs:
@@ -105,7 +112,10 @@ def check_md5(path, old_cs):
 
 
 def tout_prefix(tout):
-    return ['/bin/subreaper', '/bin/timeout', str(tout) + 's']
+    if os.path.isfile('/bin/subreaper'):
+        return ['/bin/subreaper', '/bin/timeout', str(tout) + 's']
+
+    return []
 
 
 def fetch_url_curl(url, out, tout):
@@ -133,10 +143,12 @@ def main():
     random.shuffle(mirrors)
     do_fetch(sys.argv[1], sys.argv[2], sys.argv[3], *mirrors)
 
+
 sys.stdout = sys.stderr
+
 
 try:
     main()
 except Exception as e:
-    print(e, file=sys.stderr)
+    print(e)
     sys.exit(1)

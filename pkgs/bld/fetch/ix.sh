@@ -1,14 +1,10 @@
-{% extends '//die/proxy.sh' %}
+{% extends '//die/hub.sh' %}
 
 {% block run_deps %}
+{% if not isfile('/bin/fetcher') %}
 bin/curl
 bld/python
-{% endblock %}
-
-{% block install %}
-mkdir ${out}/bin
-base64 -d << EOF > ${out}/bin/fetch
-{% include 'fetch.py/base64' %}
-EOF
-chmod +x ${out}/bin/fetch
+bin/ix/fetcher/scripts
+{% endif %}
+bld/fetch/scripts
 {% endblock %}

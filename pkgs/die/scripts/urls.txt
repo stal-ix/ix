@@ -548,6 +548,7 @@ https://ftp.gnu.org/gnu/sed/sed-4.8.tar.xz
 https://ftp.gnu.org/gnu/sed/sed-4.9.tar.xz
 https://ftp.gnu.org/gnu/tar/tar-1.35.tar.xz
 https://ftp.gnu.org/gnu/texinfo/texinfo-7.0.3.tar.xz
+https://ftp.gnu.org/gnu/texinfo/texinfo-7.1.1.tar.xz
 https://ftp.gnu.org/gnu/texinfo/texinfo-7.1.tar.xz
 https://ftp.gnu.org/gnu/time/time-1.9.tar.gz
 https://ftp.gnu.org/gnu/wget/wget-1.21.2.tar.lz
@@ -2487,6 +2488,7 @@ https://github.com/telegramdesktop/tdesktop/releases/download/v5.3.1/tdesktop-5.
 https://github.com/telegramdesktop/tdesktop/releases/download/v5.4.0/tdesktop-5.4.0-full.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v5.4.1/tdesktop-5.4.1-full.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v5.4.5/tdesktop-5.4.5-full.tar.gz
+https://github.com/telegramdesktop/tdesktop/releases/download/v5.5.1/tdesktop-5.5.1-full.tar.gz
 https://github.com/tenox7/ttyplot/archive/refs/tags/1.6.1.tar.gz
 https://github.com/tesseract-ocr/tesseract/archive/refs/tags/5.2.0.tar.gz
 https://github.com/tetratelabs/wazero/archive/refs/tags/v1.5.0.tar.gz
@@ -2524,6 +2526,7 @@ https://github.com/troglobit/sysklogd/archive/refs/tags/v2.5.1.tar.gz
 https://github.com/troglobit/sysklogd/archive/refs/tags/v2.5.2.tar.gz
 https://github.com/troglobit/sysklogd/archive/refs/tags/v2.6.0.tar.gz
 https://github.com/troglobit/sysklogd/archive/refs/tags/v2.6.1.tar.gz
+https://github.com/troglobit/sysklogd/archive/refs/tags/v2.6.2.tar.gz
 https://github.com/troydhanson/uthash/archive/refs/tags/v2.3.0.tar.gz
 https://github.com/tsl0922/ttyd/archive/refs/tags/1.7.3.tar.gz
 https://github.com/tsl0922/ttyd/archive/refs/tags/1.7.4.tar.gz
@@ -3001,6 +3004,7 @@ https://memcached.org/files/memcached-1.6.26.tar.gz
 https://memcached.org/files/memcached-1.6.27.tar.gz
 https://memcached.org/files/memcached-1.6.28.tar.gz
 https://memcached.org/files/memcached-1.6.30.tar.gz
+https://memcached.org/files/memcached-1.6.31.tar.gz
 https://mesa.freedesktop.org/archive/mesa-23.1.9.tar.xz
 https://mesa.freedesktop.org/archive/mesa-23.2.1.tar.xz
 https://mesa.freedesktop.org/archive/mesa-23.3.1.tar.xz
