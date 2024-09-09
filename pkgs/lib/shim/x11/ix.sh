@@ -8,7 +8,40 @@ lib/shim/fake/pkg(pkg_name=xcursor,pkg_ver=100500)
 {% endblock %}
 
 {% block install %}
-mkdir -p ${out}/include/X11
+mkdir -p ${out}/include/X11/Xcursor
+
+cat << EOF > ${out}/include/X11/Xcursor/Xcursor.h
+#pragma once
+
+struct XImage {
+    int width;
+    int height;
+    int xhot;
+    int yhot;
+    void* pixels;
+    int delay;
+};
+
+struct XcursorImages {
+    size_t nimage;
+    XImage** images;
+};
+
+static inline const char* XcursorLibraryPath() {
+    return nullptr;
+}
+
+static XcursorImages* XcursorShapeLoadImages(int, const char*, size_t) {
+    return nullptr;
+}
+
+static XcursorImages* XcursorFileLoadImages(FILE*, size_t) {
+    return nullptr;
+}
+
+static void XcursorImagesDestroy(XcursorImages*) {
+}
+EOF
 
 cat << EOF > ${out}/include/X11/Xlib.h
 #pragma once
