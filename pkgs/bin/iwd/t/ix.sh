@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://mirrors.edge.kernel.org/pub/linux/network/wireless/iwd-2.20.tar.xz
-sha:86827b97cb5b19ddecce36568c59378da2fae8cf37a0e2b9eacd1269f24c6f8e
+https://mirrors.edge.kernel.org/pub/linux/network/wireless/iwd-2.21.tar.xz
+sha:d911398242cdae78a474fe712de7bd138ddc39122f52709b52c8c3bf03716392
 {% endblock %}
 
 {% block bld_libs %}

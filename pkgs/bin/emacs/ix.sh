@@ -21,7 +21,7 @@ lib/sqlite/3
 {% block bld_tool %}
 bin/gzip
 bld/gettext
-bld/texinfo
+bin/tex/info
 {% endblock %}
 
 {% block configure_flags %}

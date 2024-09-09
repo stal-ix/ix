@@ -19,11 +19,15 @@ lib/xkb/common
 lib/drivers/3d
 lib/mesa/gl/dl
 lib/mesa/egl/dl
+lib/aqua/marine
 lib/hypr/cursor
-bin/hypr/wlroots
+lib/build/muldefs
 lib/toml/plus/plus
 lib/mesa/glesv2/dl
-bin/hypr/wlroots/dl
+{% endblock %}
+
+{% block meson_tool %}
+bld/meson/4
 {% endblock %}
 
 {% block bld_tool %}
@@ -31,6 +35,10 @@ bin/jq
 bld/wayland
 bld/fakegit
 bin/hypr/wayland/scanner
+{% endblock %}
+
+{% block cpp_defines %}
+__time_t=time_t
 {% endblock %}
 
 {% block patch %}

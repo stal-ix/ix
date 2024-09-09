@@ -1,11 +1,11 @@
 {% extends '//die/rust/cargo.sh' %}
 
 {% block cargo_url %}
-https://github.com/dandavison/delta/archive/refs/tags/0.16.5.tar.gz
+https://github.com/dandavison/delta/archive/refs/tags/0.18.1.tar.gz
 {% endblock %}
 
 {% block cargo_sha %}
-7a8de5688aa19858f9af8a87e75fb75f406ac9b128dfdd51c2bf7c7fe6e7ebe7
+ac263aad9108362372a67199649db644148ff57cee90474a4094a117dca91d09
 {% endblock %}
 
 {% block bld_libs %}
