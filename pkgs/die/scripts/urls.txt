@@ -3039,6 +3039,7 @@ https://mirrors.edge.kernel.org/pub/linux/libs/ell/ell-0.65.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/libs/ell/ell-0.66.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/libs/ell/ell-0.67.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/libs/ell/ell-0.68.tar.xz
+https://mirrors.edge.kernel.org/pub/linux/libs/ell/ell-0.69.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/network/wireless/iwd-2.10.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/network/wireless/iwd-2.11.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/network/wireless/iwd-2.12.tar.xz
@@ -3050,6 +3051,7 @@ https://mirrors.edge.kernel.org/pub/linux/network/wireless/iwd-2.17.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/network/wireless/iwd-2.18.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/network/wireless/iwd-2.19.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/network/wireless/iwd-2.20.tar.xz
+https://mirrors.edge.kernel.org/pub/linux/network/wireless/iwd-2.21.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/network/wireless/iwd-2.8.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/network/wireless/iwd-2.9.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/utils/kbd/kbd-2.6.1.tar.xz
