@@ -1,11 +1,15 @@
 {% extends '//die/rust/cargo.sh' %}
 
 {% block cargo_url %}
-https://github.com/svenstaro/miniserve/archive/refs/tags/v0.26.0.tar.gz
+https://github.com/svenstaro/miniserve/archive/172c321c0809198ef7cafffc81aa3f8f688c5544.zip
 {% endblock %}
 
 {% block cargo_sha %}
-06f801796df58f036d51af1847264d37f25384ece33c89c816eecbd44de4bb75
+b4c65cc5ee685f4e574bba090a064d5c2efc807a5fb55a853a0b4ea8bca591b6
+{% endblock %}
+
+{% block bld_libs %}
+lib/zstd
 {% endblock %}
 
 {% block install %}
