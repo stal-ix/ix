@@ -4,6 +4,7 @@
 lib/c
 lib/shim/fake(lib_name=X11)
 lib/shim/fake(lib_name=xcb)
+lib/shim/fake/pkg(pkg_name=xcursor,pkg_ver=100500)
 {% endblock %}
 
 {% block install %}

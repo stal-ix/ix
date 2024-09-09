@@ -728,7 +728,7 @@ bin/tree
 bin/ntp
 bin/lsof
 bin/telegram
-bin/hypr
+#bin/hypr
 bin/schedtool
 bin/cpu/limit
 bin/opj
