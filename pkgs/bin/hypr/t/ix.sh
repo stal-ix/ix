@@ -22,7 +22,7 @@ make protocols
 {% endblock %}
 
 {% block patch %}
-sed -e 's|c++23|c++2b|' -i CMakeLists.txt
+sed -e 's|-std=c++23||' -i CMakeLists.txt
 {% endblock %}
 
 {% block cpp_defines %}

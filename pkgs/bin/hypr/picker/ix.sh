@@ -1,8 +1,13 @@
 {% extends '//bin/hypr/t/ix.sh' %}
 
 {% block fetch %}
-https://github.com/hyprwm/hyprpicker/archive/refs/tags/v0.1.0.tar.gz
-sha:a347e8884f08853f16765c281f37dae7ad9518e3dd998816b5ecf0a29941a010
+https://github.com/hyprwm/hyprpicker/archive/refs/tags/v0.3.0.tar.gz
+sha:a443188ef7619be48c9992ea208121772b7e1da6662d672c650e30e159eeb891
+{% endblock %}
+
+{% block bld_libs %}
+{{super()}}
+lib/xkb/common
 {% endblock %}
 
 {% block install %}
