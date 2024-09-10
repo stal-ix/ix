@@ -47,6 +47,9 @@ def it_init():
         if 'g_static_resource_' in l:
             continue
 
+        if 'ddjvu_document_' in l:
+            continue
+
         if l.endswith('_get_type'):
             yield f'void* {l}(void)', f'{l}()'
         elif l.endswith('_get_resource'):
