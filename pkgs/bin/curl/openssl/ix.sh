@@ -1,1 +1,1 @@
-{% extends '//lib/curl/ix.sh' %}
+{% extends '//lib/curl/full/ix.sh' %}

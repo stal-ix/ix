@@ -16,7 +16,6 @@ cd src
 
 {% block build %}
 git init
-git config http.version HTTP/1.1
 git remote add origin {{repo}}
 git fetch origin --depth 1 {{commit or branch}}
 git reset --hard FETCH_HEAD
