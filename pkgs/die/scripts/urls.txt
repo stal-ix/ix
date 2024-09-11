@@ -1217,6 +1217,7 @@ https://github.com/cppfw/svgren/archive/refs/tags/0.6.2.tar.gz
 https://github.com/cppfw/utki/archive/refs/tags/1.1.187.tar.gz
 https://github.com/cppfw/utki/archive/refs/tags/1.1.224.tar.gz
 https://github.com/curl/curl/archive/refs/tags/curl-7_80_0.tar.gz
+https://github.com/curl/curl/archive/refs/tags/curl-8_10_0.tar.gz
 https://github.com/curl/curl/archive/refs/tags/curl-8_2_1.tar.gz
 https://github.com/curl/curl/archive/refs/tags/curl-8_3_0.tar.gz
 https://github.com/curl/curl/archive/refs/tags/curl-8_4_0.tar.gz
