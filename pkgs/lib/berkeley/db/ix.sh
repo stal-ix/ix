@@ -18,5 +18,14 @@ cd build_unix
 ../dist/configure
 {% endblock %}
 
+{% block configure_flags %}
+--enable-compat185
+--enable-static
+--enable-dbm
+{% endblock %}
+
+{% block build_flags %}
+shut_up
+{% endblock %}
 
 
