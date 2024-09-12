@@ -1,11 +1,11 @@
 {% extends '//die/rust/cargo.sh' %}
 
 {% block cargo_url %}
-https://github.com/eza-community/eza/archive/refs/tags/v0.19.2.tar.gz
+https://github.com/eza-community/eza/archive/refs/tags/v0.19.3.tar.gz
 {% endblock %}
 
 {% block cargo_sha %}
-82bdd54f6bafbfa6184d1029745b97dbd6099bfd06df95b63e14eb96ecf19cc4
+1fee46ccc2d34b47d90a91ed499d1d1c1171de2ad7b0af9fb9d9e08cd13beca4
 {% endblock %}
 
 {% block bld_libs %}
