@@ -318,6 +318,9 @@ class Package:
     def run_closure(self):
         return visit_lst(self.all_run_deps(), lambda x: x.run_closure())
 
+    def synth_uid(self):
+        return cu.struct_hash([x.uid for x in self.iter_all_runtime_depends()])
+
     def iter_all_runtime_depends(self):
         return filter(lambda x: x.buildable(), self.run_closure())
 

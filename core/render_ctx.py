@@ -68,6 +68,9 @@ class RenderContext:
 
         return self.package.manager.fs.source(n)[0]
 
+    def intro(self, p):
+        return self.package.load_package(p, self.package.flags)
+
     def template(self, path):
         pkg = self.package
 
@@ -89,6 +92,7 @@ class RenderContext:
             'native': hp['id'] == tp['id'],
             'trash_dir': self.package.manager.config.trash_dir,
             'isfile': os.path.isfile,
+            'intro': self.intro,
             kind: True,
             tp['os']: True,
             tp['arch']: True,

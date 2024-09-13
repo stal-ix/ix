@@ -28,6 +28,9 @@ EOF
 
 cat << EOF > run
 #!/bin/sh
+{% if srv_deps %}
+# {{intro(srv_deps).synth_uid()}}
+{% endif %}
 exec srv {{sd}} /bin/sh ${PWD}/hi
 EOF
 
