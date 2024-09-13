@@ -2860,6 +2860,7 @@ https://gitlab.gnome.org/GNOME/gsettings-desktop-schemas/-/archive/44.0/gsetting
 https://gitlab.gnome.org/GNOME/gspell/-/archive/1.12.2/gspell-1.12.2.tar.bz2
 https://gitlab.gnome.org/GNOME/gspell/-/archive/1.13.1/gspell-1.13.1.tar.bz2
 https://gitlab.gnome.org/GNOME/gspell/-/archive/1.13.2/gspell-1.13.2.tar.bz2
+https://gitlab.gnome.org/GNOME/gspell/-/archive/1.14.0/gspell-1.14.0.tar.bz2
 https://gitlab.gnome.org/GNOME/gtk/-/archive/4.12.1/gtk-4.12.1.tar.bz2
 https://gitlab.gnome.org/GNOME/gtk/-/archive/4.12.2/gtk-4.12.2.tar.bz2
 https://gitlab.gnome.org/GNOME/gtk/-/archive/4.12.3/gtk-4.12.3.tar.bz2
