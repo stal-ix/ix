@@ -1,8 +1,8 @@
-{% extends '//die/c/make.sh' %}
+{% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://github.com/mauke/unibilium/archive/refs/tags/v2.0.0.tar.gz
-md5:a89b8ef6e752cc76098e1863ff4b5457
+https://github.com/neovim/unibilium/archive/refs/tags/v2.1.2.tar.gz
+sha:370ecb07fbbc20d91d1b350c55f1c806b06bf86797e164081ccc977fc9b3af7a
 {% endblock %}
 
 {% block lib_deps %}

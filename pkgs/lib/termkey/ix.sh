@@ -7,6 +7,7 @@ sha:7567e1de8232bf4a35cb713456c63b329755b56182bdc2c9cebfa0f0192615dd
 
 {% block lib_deps %}
 lib/c
+lib/curses
 lib/unibilium
 {% endblock %}
 
