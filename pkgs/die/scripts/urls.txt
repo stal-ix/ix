@@ -1765,6 +1765,7 @@ https://github.com/libarchive/libarchive/archive/refs/tags/v3.7.1.tar.gz
 https://github.com/libarchive/libarchive/archive/refs/tags/v3.7.2.tar.gz
 https://github.com/libarchive/libarchive/archive/refs/tags/v3.7.3.tar.gz
 https://github.com/libarchive/libarchive/archive/refs/tags/v3.7.4.tar.gz
+https://github.com/libarchive/libarchive/archive/refs/tags/v3.7.5.tar.gz
 https://github.com/libass/libass/archive/refs/tags/0.17.1.tar.gz
 https://github.com/libass/libass/archive/refs/tags/0.17.2.tar.gz
 https://github.com/libass/libass/archive/refs/tags/0.17.3.tar.gz
@@ -2882,6 +2883,7 @@ https://gitlab.gnome.org/GNOME/gtk/-/archive/4.15.3/gtk-4.15.3.tar.bz2
 https://gitlab.gnome.org/GNOME/gtk/-/archive/4.15.4/gtk-4.15.4.tar.bz2
 https://gitlab.gnome.org/GNOME/gtk/-/archive/4.15.5/gtk-4.15.5.tar.bz2
 https://gitlab.gnome.org/GNOME/gtk/-/archive/4.16.0/gtk-4.16.0.tar.bz2
+https://gitlab.gnome.org/GNOME/gtk/-/archive/4.16.1/gtk-4.16.1.tar.bz2
 https://gitlab.gnome.org/GNOME/gtksourceview/-/archive/4.8.4/gtksourceview-4.8.4.tar.bz2
 https://gitlab.gnome.org/GNOME/gtksourceview/-/archive/5.10.0/gtksourceview-5.10.0.tar.bz2
 https://gitlab.gnome.org/GNOME/gtksourceview/-/archive/5.12.1/gtksourceview-5.12.1.tar.bz2
