@@ -2,6 +2,7 @@
 
 {% block bld_libs %}
 {{super()}}
+bin/neo/vim/doc/dl
 lib/lua/modules/lpeg
 lib/lua/modules/bitop
 lib/tree/sitter/plugins
