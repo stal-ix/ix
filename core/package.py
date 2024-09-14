@@ -152,7 +152,8 @@ class Package:
             self.uid = cs.UID
             self.uid = list(self.iter_build_commands())[-1]['uid']
         else:
-            self.uid = cu.struct_hash(self.selector)
+            # TODO(pg): check it
+            self.uid = cu.struct_hash([x.uid for x in self.iter_all_runtime_depends()])
 
     @property
     def norm_name(self):
@@ -317,9 +318,6 @@ class Package:
     @cu.cached_method
     def run_closure(self):
         return visit_lst(self.all_run_deps(), lambda x: x.run_closure())
-
-    def synth_uid(self):
-        return cu.struct_hash([x.uid for x in self.iter_all_runtime_depends()])
 
     def iter_all_runtime_depends(self):
         return filter(lambda x: x.buildable(), self.run_closure())
