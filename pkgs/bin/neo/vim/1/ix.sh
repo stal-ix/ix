@@ -1,13 +1,13 @@
-{% extends 't/ix.sh' %}
+{% extends '//lib/lua/jit/ix.sh' %}
 
 {% block bld_libs %}
-{{super()}}
 lib/lua/modules/lpeg
 lib/lua/modules/bitop
 bin/neo/vim/unwrap/nlua0/dl
+{{super()}}
 {% endblock %}
 
-{% block bld_tool %}
+{% block install %}
 {{super()}}
-bin/neo/vim/1(lua_ver={{lua_ver}})
+mv ${out}/bin/luajit ${out}/bin/lua
 {% endblock %}
