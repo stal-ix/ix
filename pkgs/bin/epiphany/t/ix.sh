@@ -1,8 +1,8 @@
 {% extends '//die/c/gnome.sh' %}
 
 {% block fetch %}
-https://github.com/GNOME/epiphany/archive/refs/tags/46.2.tar.gz
-sha:78927f95bedce6283b403f24050ef3c83f14829036eeba77d2ccf6f2b5c9e95c
+https://github.com/GNOME/epiphany/archive/refs/tags/46.4.tar.gz
+sha:2d15575980d5f02110b15b78269c4ee4295984dc538bcff6ff181fe18234fadc
 {% endblock %}
 
 {% block bld_libs %}
