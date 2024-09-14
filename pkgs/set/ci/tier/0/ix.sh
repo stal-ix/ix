@@ -1,6 +1,5 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
-set/ci/tier/0
-set/ci/tier/1
+set/ci/unwrap(seed=1,slot=1)
 {% endblock %}
