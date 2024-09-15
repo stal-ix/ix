@@ -1,8 +1,8 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://codeberg.org/dnkl/fuzzel/archive/1.11.0.tar.gz
-sha:4071728173dddac0df3d1b0af08ed92c4fdd4e86ff6bcf106d255a0acb67efdb
+https://codeberg.org/dnkl/fuzzel/archive/1.11.1.tar.gz
+sha:7b22fefdada10e4658ec1f914a7296ddde73a5d20a2a1ed3c02c50bf2e701d3b
 {% endblock %}
 
 {% block bld_libs %}

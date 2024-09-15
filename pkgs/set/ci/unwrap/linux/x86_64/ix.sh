@@ -45,6 +45,7 @@
 #}
 
 {% block run_deps %}
+bin/impala
 bin/mrustc/cargo
 bin/mrustc
 bin/mrustc/boot
