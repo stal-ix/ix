@@ -1,2 +1,2 @@
-https://github.com/git/git/archive/refs/tags/v2.46.0.tar.gz
-sha:d9a72f1648406806d2cb3049b4a73f357e2dc8df5d2962ce6d24220f3861a221
+https://github.com/git/git/archive/refs/tags/v2.46.1.tar.gz
+sha:9ddbaa79efa7a55efc30acceb0a37949f16dcab0734e36a6ad46a835aa8400f0
