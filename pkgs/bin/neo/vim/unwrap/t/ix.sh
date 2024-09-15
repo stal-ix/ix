@@ -11,7 +11,6 @@ lib/lua
 lib/uv/l
 lib/intl
 lib/vterm
-#lib/termkey
 lib/unibilium
 lib/msgpack/c
 lib/tree/sitter

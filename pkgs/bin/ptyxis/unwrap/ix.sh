@@ -1,8 +1,8 @@
 {% extends '//die/c/gnome.sh' %}
 
 {% block fetch %}
-https://gitlab.gnome.org/chergert/ptyxis/-/archive/46.3/ptyxis-46.3.tar.bz2
-sha:831047d7bf1bc4be58faba55bcb1c72281034fa2a051409b500167335bed2e08
+https://gitlab.gnome.org/chergert/ptyxis/-/archive/47.0/ptyxis-47.0.tar.bz2
+sha:8122cdc302ced44a5316d37b22ffd5516154c5de1cb6dd1f383d24a3db6cae6e
 {% endblock %}
 
 {% block bld_libs %}
@@ -23,7 +23,6 @@ bld/gettext
 {% endblock %}
 
 {% block patch %}
->agent/x86/force_link_glibc_2.17.h
 >agent/x86_64/force_link_glibc_2.17.h
 >agent/libc-compat.h
 sed -e 's|libc_compat = true|libc_compat = false|' -i agent/meson.build
