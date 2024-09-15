@@ -23,18 +23,13 @@ gtk4=false
 bld/prepend
 {% endblock %}
 
-{% block build_flags %}
-{{super()}}
-shut_up
-{% endblock %}
-
 {% block patch %}
 {{super()}}
 echo 'int main() {}'  > src/color-test.cc
 prepend src/icu-glue.hh << EOF
 #include <string_view>
 EOF
-cat - src/termprops.hh << EOF >> _
+prepend src/termprops.hh << EOF
 #pragma once
 #include <fast_float/fast_float.h>
 #include <charconv>
@@ -45,7 +40,6 @@ namespace std {
     }
 }
 EOF
-mv _ src/termprops.hh
 prepend src/minifont.cc << EOF
 #include <algorithm>
 EOF
