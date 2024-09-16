@@ -1,6 +1,6 @@
 {% extends 't/ix.sh' %}
 
 {% block fetch %}
-https://www.gnupg.org/ftp/gcrypt/gnupg/gnupg-2.4.5.tar.bz2
-sha:f68f7d75d06cb1635c336d34d844af97436c3f64ea14bcb7c869782f96f44277
+https://www.gnupg.org/ftp/gcrypt/gnupg/gnupg-2.5.1.tar.bz2
+sha:8a34bb318499867962c939e156666ada93ed81f01926590ac68f3ff79178375e
 {% endblock %}

@@ -2990,6 +2990,7 @@ https://gitlab.xiph.org/xiph/rnnoise/-/archive/7f449bf8bd3b933891d12c30112268c40
 https://gitlab.xiph.org/xiph/speex/-/archive/Speex-1.2.1/speex-Speex-1.2.1.tar.bz2
 https://gitlab.xiph.org/xiph/speexdsp/-/archive/SpeexDSP-1.2.1/speexdsp-SpeexDSP-1.2.1.tar.bz2
 https://gitlab.xiph.org/xiph/vorbis/-/archive/v1.3.7/vorbis-v1.3.7.tar.bz2
+https://gnupg.org/ftp/gcrypt/libassuan/libassuan-3.0.1.tar.bz2
 https://gnupg.org/ftp/gcrypt/libgcrypt/libgcrypt-1.10.2.tar.bz2
 https://gnupg.org/ftp/gcrypt/libgcrypt/libgcrypt-1.10.3.tar.bz2
 https://gnupg.org/ftp/gcrypt/libgcrypt/libgcrypt-1.11.0.tar.bz2
@@ -3321,6 +3322,7 @@ https://www.gnupg.org/ftp/gcrypt/gnupg/gnupg-2.2.40.tar.bz2
 https://www.gnupg.org/ftp/gcrypt/gnupg/gnupg-2.4.3.tar.bz2
 https://www.gnupg.org/ftp/gcrypt/gnupg/gnupg-2.4.4.tar.bz2
 https://www.gnupg.org/ftp/gcrypt/gnupg/gnupg-2.4.5.tar.bz2
+https://www.gnupg.org/ftp/gcrypt/gnupg/gnupg-2.5.1.tar.bz2
 https://www.gnupg.org/ftp/gcrypt/gnutls/v3.8/gnutls-3.8.1.tar.xz
 https://www.gnupg.org/ftp/gcrypt/gnutls/v3.8/gnutls-3.8.2.tar.xz
 https://www.gnupg.org/ftp/gcrypt/gnutls/v3.8/gnutls-3.8.3.tar.xz
