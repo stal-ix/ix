@@ -1143,6 +1143,7 @@ https://github.com/axel-download-accelerator/axel/archive/refs/tags/v2.17.13.tar
 https://github.com/benhoyt/goawk/archive/refs/tags/v1.24.0.tar.gz
 https://github.com/benhoyt/goawk/archive/refs/tags/v1.25.0.tar.gz
 https://github.com/benhoyt/goawk/archive/refs/tags/v1.26.0.tar.gz
+https://github.com/benhoyt/goawk/archive/refs/tags/v1.28.1.tar.gz
 https://github.com/benhoyt/inih/archive/refs/tags/r57.tar.gz
 https://github.com/benhoyt/inih/archive/refs/tags/r58.tar.gz
 https://github.com/bensadeh/circumflex/archive/refs/tags/3.5.tar.gz
