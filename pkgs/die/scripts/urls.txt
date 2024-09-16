@@ -2616,6 +2616,7 @@ https://github.com/uutils/coreutils/archive/refs/tags/0.0.26.tar.gz
 https://github.com/uutils/coreutils/archive/refs/tags/0.0.27.tar.gz
 https://github.com/uutils/coreutils/archive/refs/tags/0.0.8.tar.gz
 https://github.com/valkey-io/valkey/archive/refs/tags/7.2.6.tar.gz
+https://github.com/valkey-io/valkey/archive/refs/tags/8.0.0.tar.gz
 https://github.com/varlink/libvarlink/archive/refs/tags/23.tar.gz
 https://github.com/vasi/squashfuse/archive/1f980303b89c779eabfd0a0fdd36d6a7a311bf92.zip
 https://github.com/vasi/squashfuse/archive/refs/tags/0.4.0.tar.gz

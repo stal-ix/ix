@@ -1,6 +1,6 @@
 {% extends '//bin/redis/t/ix.sh' %}
 
 {% block fetch %}
-https://github.com/valkey-io/valkey/archive/refs/tags/7.2.6.tar.gz
-sha:5272f244deecd5655d805aabc71c84a7c7699bc4fa009dd7fc550806a042d512
+https://github.com/valkey-io/valkey/archive/refs/tags/8.0.0.tar.gz
+sha:f87fef2ba81ae4bce891b874fba58cfde2d19370a3bcac20f0e17498b33c33c0
 {% endblock %}
