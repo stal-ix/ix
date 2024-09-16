@@ -50,6 +50,9 @@ def it_init():
         if 'ddjvu_document_' in l:
             continue
 
+        if 'g_variant_get_type' in l:
+            continue
+
         if l.endswith('_get_type'):
             yield f'void* {l}(void)', f'{l}()'
         elif l.endswith('_get_resource'):
