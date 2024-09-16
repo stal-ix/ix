@@ -45,6 +45,7 @@
 #}
 
 {% block run_deps %}
+bin/e2tools
 bin/httping
 bin/cast/text
 bin/impala
