@@ -762,6 +762,7 @@ https://github.com/GNOME/epiphany/archive/refs/tags/46.2.tar.gz
 https://github.com/GNOME/epiphany/archive/refs/tags/46.4.tar.gz
 https://github.com/GNOME/epiphany/archive/refs/tags/47.0.tar.gz
 https://github.com/GNOME/file-roller/archive/refs/tags/43.1.tar.gz
+https://github.com/GNOME/gsettings-desktop-schemas/archive/refs/tags/47.0.tar.gz
 https://github.com/GNOME/gsettings-desktop-schemas/archive/refs/tags/47.beta.tar.gz
 https://github.com/GNOME/gthumb/archive/refs/tags/3.12.2.tar.gz
 https://github.com/GNOME/gtk-doc/archive/refs/tags/GTK_DOC_1_32.tar.gz

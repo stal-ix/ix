@@ -1,8 +1,8 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://github.com/GNOME/gsettings-desktop-schemas/archive/refs/tags/47.beta.tar.gz
-sha:f2b0d4f621426b78011c6de99e16a29e469b0e9f9ba1f1b354415095c95499b7
+https://github.com/GNOME/gsettings-desktop-schemas/archive/refs/tags/47.0.tar.gz
+sha:83ae478c74b549e8fd97ae94c92023f4ad8f9815abfa7fcfee896615b1647a6e
 {% endblock %}
 
 {% block bld_tool %}
