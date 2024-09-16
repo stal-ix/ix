@@ -25,7 +25,6 @@ lib/gsettings/desktop/schemas
 {% endblock %}
 
 {% block bld_tool %}
-bld/wrapcc/link/new
 bld/gettext
 bld/dlfcn
 {% endblock %}
