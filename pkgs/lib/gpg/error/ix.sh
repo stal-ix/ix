@@ -18,6 +18,11 @@ lib/c
 bld/fake/binutils(bin_prefix={{target.gnu.three}}-)
 {% endblock %}
 
+{% block patch %}
+# broken on macos
+sed -e 's|environ = act->environ||' -i src/spawn-posix.c
+{% endblock %}
+
 {% block configure_flags %}
 --enable-install-gpg-error-config
 {% endblock %}
