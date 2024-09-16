@@ -45,6 +45,7 @@
 #}
 
 {% block run_deps %}
+bin/httping
 bin/cast/text
 bin/impala
 bin/mrustc/cargo

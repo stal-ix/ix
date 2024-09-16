@@ -7,6 +7,7 @@ ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDGZ3aEKhxpG9JHG3uso/gUuUKe9NzHOXKAenZIDiDq
 {% block run_deps %}
 etc/tmpfs
 set/stalix
+bin/kernel/6/11
 bin/kernel/6/10
 bin/ix/keyboard
 bin/kernel/gengrub

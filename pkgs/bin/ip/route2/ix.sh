@@ -1,8 +1,8 @@
 {% extends '//die/c/make.sh' %}
 
 {% block fetch %}
-https://github.com/iproute2/iproute2/archive/refs/tags/v6.10.0.tar.gz
-sha:060ee42dfcdf8b9daf9f986eee26d16ac5bdf39c8784702957b13bebec538541
+https://github.com/iproute2/iproute2/archive/refs/tags/v6.11.0.tar.gz
+sha:e5ad1c86aa788a979ba1b68cd6ee948b37983d99efabf6a0bf556b061569cc4d
 {% endblock %}
 
 {% block bld_libs %}
@@ -11,6 +11,7 @@ lib/bpf
 lib/cap
 lib/mnl
 lib/tirpc
+lib/kernel
 lib/elfutils
 lib/shim/gnu/basename/overlay
 {% endblock %}
@@ -23,6 +24,7 @@ bld/pkg/config
 
 {% block patch %}
 sed -e "s|/etc/iproute2|${out}/etc/iproute2|" -i Makefile
+rm -rf include/uapi
 {% endblock %}
 
 {% block configure %}
@@ -33,9 +35,14 @@ sh ./configure --prefix=${out}
 ${PWD}/include
 {% endblock %}
 
+{% block cpp_defines %}
+__UAPI_DEF_IN6_ADDR=0
+{% endblock %}
+
 {% block cpp_missing %}
 limits.h
 endian.h
+netinet/in.h
 {% endblock %}
 
 {% block make_flags %}

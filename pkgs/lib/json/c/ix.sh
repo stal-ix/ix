@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://s3.amazonaws.com/json-c_releases/releases/json-c-0.17.tar.gz
-sha:7550914d58fb63b2c3546f3ccfbe11f1c094147bd31a69dcd23714d7956159e6
+https://s3.amazonaws.com/json-c_releases/releases/json-c-0.18.tar.gz
+sha:876ab046479166b869afc6896d288183bbc0e5843f141200c677b3e8dfb11724
 {% endblock %}
 
 {% block lib_deps %}
