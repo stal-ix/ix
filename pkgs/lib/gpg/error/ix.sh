@@ -15,12 +15,14 @@ lib/c
 {% endblock %}
 
 {% block bld_tool %}
+bld/prepend
 bld/fake/binutils(bin_prefix={{target.gnu.three}}-)
 {% endblock %}
 
 {% block patch %}
-# broken on macos
-sed -e 's|environ = act->environ||' -i src/spawn-posix.c
+prepend src/spawn-posix.c << EOF
+extern char** environ;
+EOF
 {% endblock %}
 
 {% block configure_flags %}
