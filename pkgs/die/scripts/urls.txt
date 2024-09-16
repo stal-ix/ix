@@ -2884,6 +2884,7 @@ https://gitlab.gnome.org/GNOME/gnome-font-viewer/-/archive/44.0/gnome-font-viewe
 https://gitlab.gnome.org/GNOME/gnome-font-viewer/-/archive/45.0/gnome-font-viewer-45.0.tar.bz2
 https://gitlab.gnome.org/GNOME/gnome-keyring/-/archive/46.1/gnome-keyring-46.1.tar.bz2
 https://gitlab.gnome.org/GNOME/gnome-terminal/-/archive/3.50.1/gnome-terminal-3.50.1.tar.bz2
+https://gitlab.gnome.org/GNOME/gnome-terminal/-/archive/3.54.0/gnome-terminal-3.54.0.tar.bz2
 https://gitlab.gnome.org/GNOME/gnome-text-editor/-/archive/44.0/gnome-text-editor-44.0.tar.bz2
 https://gitlab.gnome.org/GNOME/gnome-text-editor/-/archive/45.0/gnome-text-editor-45.0.tar.bz2
 https://gitlab.gnome.org/GNOME/gnome-text-editor/-/archive/45.2/gnome-text-editor-45.2.tar.bz2
