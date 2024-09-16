@@ -11,12 +11,6 @@ lib/gtk/3
 lib/gdk/pixbuf/svg
 {% endblock %}
 
-{% block bld_tool %}
-bld/glib
-bld/gettext
-{{super()}}
-{% endblock %}
-
 {% block cpp_defines %}
 _GNU_SOURCE=1
 {% endblock %}

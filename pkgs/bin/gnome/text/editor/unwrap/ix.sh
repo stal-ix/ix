@@ -22,10 +22,6 @@ lib/editor/config/core/c
 lib/gsettings/desktop/schemas
 {% endblock %}
 
-{% block bld_tool %}
-bld/gettext
-{% endblock %}
-
 {% block patch %}
 sed -e 's|.*subdir.*help.*||' -i meson.build
 {% endblock %}

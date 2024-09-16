@@ -7,6 +7,7 @@ bld/wrapcc/link/new
 {% endif %}
 bld/glib
 bld/gnome
+bld/gettext
 {{super()}}
 {% endblock %}
 

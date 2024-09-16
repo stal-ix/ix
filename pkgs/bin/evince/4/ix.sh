@@ -27,11 +27,6 @@ lib/gdk/pixbuf/svg
 lib/gsettings/desktop/schemas
 {% endblock %}
 
-{% block bld_tool %}
-bld/dlfcn
-bld/gettext
-{% endblock %}
-
 {% block meson_flags %}
 gtk_doc=false
 user_doc=false
@@ -41,7 +36,12 @@ thumbnailer=false
 introspection=false
 {% endblock %}
 
+{% block bld_tool %}
+bld/dlfcn
+{% endblock %}
+
 {% block build_flags %}
+{{super()}}
 shut_up
 {% endblock %}
 

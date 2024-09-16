@@ -17,11 +17,6 @@ lib/shim/wait
 lib/json/glib
 {% endblock %}
 
-{% block bld_tool %}
-bld/glib
-bld/gettext
-{% endblock %}
-
 {% block patch %}
 >agent/x86_64/force_link_glibc_2.17.h
 >agent/libc-compat.h

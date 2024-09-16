@@ -24,7 +24,6 @@ search_provider=false
 
 {% block bld_tool %}
 {{super()}}
-bld/gettext
 bld/fake/er(tool_name=itstool)
 bld/fake/er(tool_name=xsltproc)
 {% endblock %}

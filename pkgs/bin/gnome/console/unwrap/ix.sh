@@ -18,7 +18,6 @@ lib/gsettings/desktop/schemas
 
 {% block bld_tool %}
 bin/sassc
-bld/gettext
 {% endblock %}
 
 {% block patch %}
