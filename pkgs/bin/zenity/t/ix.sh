@@ -9,7 +9,6 @@ lib/notify
 
 {% block bld_tool %}
 bld/perl
-bld/gettext
 bld/fake(tool_name=itstool)
 {% endblock %}
 

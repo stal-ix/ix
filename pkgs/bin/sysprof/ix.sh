@@ -21,11 +21,6 @@ wrap_cc
 shut_up
 {% endblock %}
 
-{% block bld_tool %}
-{{super()}}
-bld/gettext
-{% endblock %}
-
 {% block meson_flags %}
 help=false
 tools=false

@@ -16,7 +16,6 @@ lib/gtk/deps
 {% endblock %}
 
 {% block bld_tool %}
-bld/gettext
 bld/fake/er(tool_name=itstool)
 {% endblock %}
 

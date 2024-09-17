@@ -7,17 +7,6 @@ lib/mesa/glesv2/dl
 {{super()}}
 {% endblock %}
 
-{% block std_env %}
-bld/wrapcc/link/xxx
-bld/wrapcc/link/new
-{{super()}}
-{% endblock %}
-
-{% block build_flags %}
-{{super()}}
-wrap_cc
-{% endblock %}
-
 {% block patch %}
 {{super()}}
 sed -e 's|.*No available application.*|return ix_xdg_open(path);|' \

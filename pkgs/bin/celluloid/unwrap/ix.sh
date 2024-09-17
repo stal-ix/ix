@@ -14,12 +14,6 @@ lib/adwaita
 lib/gtk/deps
 {% endblock %}
 
-{% block bld_tool %}
-bld/glib
-bld/gettext
-{{super()}}
-{% endblock %}
-
 {% block patch %}
 cat << EOF > meson-post-install.py
 #!/usr/bin/env python3

@@ -28,10 +28,6 @@ lib/gsettings/desktop/schemas
 lib/{{allocator}}/trim(delay=5,bytes=10000000)
 {% endblock %}
 
-{% block bld_tool %}
-bld/gettext
-{% endblock %}
-
 {% block use_data %}
 aux/iso/codes
 {% endblock %}

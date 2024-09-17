@@ -1,12 +1,12 @@
-{% extends '//die/c/autorehell.sh' %}
+{% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://github.com/GNOME/adwaita-icon-theme/archive/refs/tags/44.0.tar.gz
-sha:3bafd3b3b651ff83c7b7ae08ff3fff22ccfe4ca2e6a1687027233138020fb793
+https://github.com/GNOME/adwaita-icon-theme/archive/refs/tags/47.0.tar.gz
+sha:e0845b6a398b67e048a3b1a2700b4da16f90b95c19d0ea1ff0ba65d78609dd2f
 {% endblock %}
 
-{% block autoreconf %}
-sh autogen.sh
+{% block bld_tool %}
+bld/gnome
 {% endblock %}
 
 {% block strip_pc %}

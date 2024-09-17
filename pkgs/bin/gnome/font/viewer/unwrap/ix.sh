@@ -22,7 +22,3 @@ find . -type f | while read l; do
         -i ${l}
 done
 {% endblock %}
-
-{% block bld_tool %}
-bld/gettext
-{% endblock %}

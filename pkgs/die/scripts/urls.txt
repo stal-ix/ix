@@ -751,6 +751,7 @@ https://github.com/FreeRDP/FreeRDP/archive/refs/tags/3.6.2.tar.gz
 https://github.com/FreeRDP/FreeRDP/archive/refs/tags/3.6.3.tar.gz
 https://github.com/FreeRDP/FreeRDP/archive/refs/tags/3.7.0.tar.gz
 https://github.com/GNOME/adwaita-icon-theme/archive/refs/tags/44.0.tar.gz
+https://github.com/GNOME/adwaita-icon-theme/archive/refs/tags/47.0.tar.gz
 https://github.com/GNOME/epiphany/archive/refs/tags/45.0.tar.gz
 https://github.com/GNOME/epiphany/archive/refs/tags/45.1.tar.gz
 https://github.com/GNOME/epiphany/archive/refs/tags/45.2.tar.gz
@@ -763,6 +764,7 @@ https://github.com/GNOME/epiphany/archive/refs/tags/46.4.tar.gz
 https://github.com/GNOME/epiphany/archive/refs/tags/47.0.tar.gz
 https://github.com/GNOME/file-roller/archive/refs/tags/43.1.tar.gz
 https://github.com/GNOME/gsettings-desktop-schemas/archive/refs/tags/47.0.tar.gz
+https://github.com/GNOME/gsettings-desktop-schemas/archive/refs/tags/47.1.tar.gz
 https://github.com/GNOME/gsettings-desktop-schemas/archive/refs/tags/47.beta.tar.gz
 https://github.com/GNOME/gthumb/archive/refs/tags/3.12.2.tar.gz
 https://github.com/GNOME/gtk-doc/archive/refs/tags/GTK_DOC_1_32.tar.gz
@@ -1271,6 +1273,7 @@ https://github.com/dubiousjim/dcron/archive/refs/tags/v4.5.tar.gz
 https://github.com/dundee/gdu/archive/refs/tags/v5.28.0.tar.gz
 https://github.com/dunst-project/dunst/archive/refs/tags/v1.10.0.tar.gz
 https://github.com/dunst-project/dunst/archive/refs/tags/v1.9.2.tar.gz
+https://github.com/e2tools/e2tools/archive/refs/tags/v0.1.2.tar.gz
 https://github.com/easymodo/qimgv/archive/refs/tags/v1.0.2.tar.gz
 https://github.com/ebassi/graphene/archive/refs/tags/1.10.8.tar.gz
 https://github.com/ebiggers/libdeflate/archive/refs/tags/v1.18.tar.gz
@@ -1693,6 +1696,7 @@ https://github.com/jjsullivan5196/wvkbd/archive/refs/tags/v0.14.3.tar.gz
 https://github.com/jjsullivan5196/wvkbd/archive/refs/tags/v0.14.tar.gz
 https://github.com/jjsullivan5196/wvkbd/archive/refs/tags/v0.15.tar.gz
 https://github.com/johang/btfs/archive/refs/tags/v2.24.tar.gz
+https://github.com/johanmattssonm/xmlbird/archive/refs/tags/v1.2.14.tar.gz
 https://github.com/johnkerl/miller/archive/refs/tags/v6.11.0.tar.gz
 https://github.com/johnsonjh/OpenVi/archive/refs/tags/7.4.23.tar.gz
 https://github.com/johnsonjh/OpenVi/archive/refs/tags/7.4.24.tar.gz
@@ -2863,6 +2867,7 @@ https://gitlab.gnome.org/GNOME/atk/-/archive/ATK_2_36_0/atk-ATK_2_36_0.tar.bz2
 https://gitlab.gnome.org/GNOME/console/-/archive/44.4/console-44.4.tar.bz2
 https://gitlab.gnome.org/GNOME/console/-/archive/45.0/console-45.0.tar.bz2
 https://gitlab.gnome.org/GNOME/console/-/archive/46.0/console-46.0.tar.bz2
+https://gitlab.gnome.org/GNOME/console/-/archive/47.0/console-47.0.tar.bz2
 https://gitlab.gnome.org/GNOME/d-spy/-/archive/1.10.0/d-spy-1.10.0.tar.bz2
 https://gitlab.gnome.org/GNOME/d-spy/-/archive/1.9.0/d-spy-1.9.0.tar.bz2
 https://gitlab.gnome.org/GNOME/d-spy/-/archive/47.0/d-spy-47.0.tar.bz2
@@ -2880,6 +2885,7 @@ https://gitlab.gnome.org/GNOME/gnome-font-viewer/-/archive/44.0/gnome-font-viewe
 https://gitlab.gnome.org/GNOME/gnome-font-viewer/-/archive/45.0/gnome-font-viewer-45.0.tar.bz2
 https://gitlab.gnome.org/GNOME/gnome-keyring/-/archive/46.1/gnome-keyring-46.1.tar.bz2
 https://gitlab.gnome.org/GNOME/gnome-terminal/-/archive/3.50.1/gnome-terminal-3.50.1.tar.bz2
+https://gitlab.gnome.org/GNOME/gnome-terminal/-/archive/3.54.0/gnome-terminal-3.54.0.tar.bz2
 https://gitlab.gnome.org/GNOME/gnome-text-editor/-/archive/44.0/gnome-text-editor-44.0.tar.bz2
 https://gitlab.gnome.org/GNOME/gnome-text-editor/-/archive/45.0/gnome-text-editor-45.0.tar.bz2
 https://gitlab.gnome.org/GNOME/gnome-text-editor/-/archive/45.2/gnome-text-editor-45.2.tar.bz2

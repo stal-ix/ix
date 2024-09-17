@@ -11,8 +11,3 @@ lib/gtk
 lib/glib
 lib/adwaita
 {% endblock %}
-
-{% block bld_tool %}
-{{super()}}
-bld/gettext
-{% endblock %}
