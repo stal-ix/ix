@@ -35,4 +35,5 @@ bin/coreutils/uutils
 
 {% block run_data %}
 set/fonts/default
+aux/fonts/ms/cascadia
 {% endblock %}
