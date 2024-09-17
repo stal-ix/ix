@@ -1114,6 +1114,7 @@ https://github.com/apple/swift-corelibs-libdispatch/archive/refs/tags/swift-5.10
 https://github.com/apple/swift-corelibs-libdispatch/archive/refs/tags/swift-5.8-RELEASE.tar.gz
 https://github.com/apple/swift-corelibs-libdispatch/archive/refs/tags/swift-5.9-RELEASE.tar.gz
 https://github.com/apple/swift-corelibs-libdispatch/archive/refs/tags/swift-5.9.2-RELEASE.tar.gz
+https://github.com/apple/swift-corelibs-libdispatch/archive/refs/tags/swift-6.0-RELEASE.tar.gz
 https://github.com/appneta/tcpreplay/releases/download/v4.4.4/tcpreplay-4.4.4.tar.xz
 https://github.com/appneta/tcpreplay/releases/download/v4.5.1/tcpreplay-4.5.1.tar.xz
 https://github.com/ar-/incron/archive/refs/tags/0.5.12.tar.gz
@@ -2927,6 +2928,7 @@ https://gitlab.gnome.org/GNOME/json-glib/-/archive/1.8.0/json-glib-1.8.0.tar.bz2
 https://gitlab.gnome.org/GNOME/libadwaita/-/archive/1.5.beta/libadwaita-1.5.beta.tar.bz2
 https://gitlab.gnome.org/GNOME/libdazzle/-/archive/3.44.0/libdazzle-3.44.0.tar.bz2
 https://gitlab.gnome.org/GNOME/libdex/-/archive/0.6.0/libdex-0.6.0.tar.bz2
+https://gitlab.gnome.org/GNOME/libdex/-/archive/0.8.0/libdex-0.8.0.tar.bz2
 https://gitlab.gnome.org/GNOME/libgee/-/archive/0.20.6/libgee-0.20.6.tar.bz2
 https://gitlab.gnome.org/GNOME/libgit2-glib/-/archive/v1.2.0/libgit2-glib-v1.2.0.tar.bz2
 https://gitlab.gnome.org/GNOME/libgtop/-/archive/2.40.0/libgtop-2.40.0.tar.bz2
@@ -3326,6 +3328,7 @@ https://www.crufty.net/ftp/pub/sjg/bmake-20240711.tar.gz
 https://www.crufty.net/ftp/pub/sjg/bmake-20240722.tar.gz
 https://www.crufty.net/ftp/pub/sjg/bmake-20240808.tar.gz
 https://www.crufty.net/ftp/pub/sjg/bmake-20240901.tar.gz
+https://www.crufty.net/ftp/pub/sjg/bmake-20240909.tar.gz
 https://www.eecis.udel.edu/~ntp/ntp_spool/ntp4/ntp-4.2/ntp-4.2.8p15.tar.gz
 https://www.freedesktop.org/software/colord/releases/colord-1.4.6.tar.xz
 https://www.freedesktop.org/software/fontconfig/release/fontconfig-2.14.2.tar.xz
