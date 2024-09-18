@@ -37,7 +37,7 @@ gRPC_BUILD_CSHARP_EXT=OFF
 {% endblock %}
 
 {% block setup_target_flags %}
-export CXXFLAGS="-std=c++20 ${CXXFLAGS}"
+export CXXFLAGS="-Wno-missing-template-arg-list-after-template-kw -std=c++20 ${CXXFLAGS}"
 {% endblock %}
 
 {% block patch %}
