@@ -824,7 +824,7 @@ bin/pango
 bin/tesseract
 bin/z3
 bin/inetutils
-bin/poedit
+#bin/poedit
 bin/wxrc
 bin/clifm
 bin/reddit/desktop
