@@ -60,6 +60,7 @@ http://miniupnp.free.fr/files/download.php?file=miniupnpc-2.2.3.tar.gz
 http://mirror.koddos.net/gcc/releases/gcc-11.2.0/gcc-11.2.0.tar.xz
 http://mirror.koddos.net/gcc/releases/gcc-11.3.0/gcc-11.3.0.tar.xz
 http://mirror.koddos.net/gcc/releases/gcc-11.4.0/gcc-11.4.0.tar.xz
+http://mirror.koddos.net/gcc/releases/gcc-11.5.0/gcc-11.5.0.tar.xz
 http://mirror.koddos.net/gcc/releases/gcc-12.2.0/gcc-12.2.0.tar.xz
 http://mirror.koddos.net/gcc/releases/gcc-12.3.0/gcc-12.3.0.tar.xz
 http://mirror.koddos.net/gcc/releases/gcc-12.4.0/gcc-12.4.0.tar.xz
@@ -185,6 +186,7 @@ https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.6.48.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.6.49.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.6.5.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.6.50.tar.xz
+https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.6.52.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.6.6.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.6.7.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.6.8.tar.xz
@@ -916,6 +918,7 @@ https://github.com/LBCrion/sfwbar/archive/refs/tags/v1.0_beta13.tar.gz
 https://github.com/LBCrion/sfwbar/archive/refs/tags/v1.0_beta9.tar.gz
 https://github.com/LibRaw/LibRaw/archive/refs/tags/0.21.1.tar.gz
 https://github.com/LibRaw/LibRaw/archive/refs/tags/0.21.2.tar.gz
+https://github.com/LibRaw/LibRaw/archive/refs/tags/0.21.3.tar.gz
 https://github.com/LouisBrunner/avahi2dns/archive/9349a6495ad4cafcd1d44e089b8ea2215165888e.zip
 https://github.com/LuaJIT/LuaJIT/archive/refs/tags/v2.0.5.tar.gz
 https://github.com/MariaDB/server.git
