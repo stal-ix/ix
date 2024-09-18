@@ -307,7 +307,7 @@ bin/mkvtoolnix
 bin/mkvtoolnix/gui
 bin/sdlpop
 bin/jpegoptim
-bin/openttd
+#bin/openttd
 bin/pngquant
 bin/glmark2
 bin/wayland/tracer
