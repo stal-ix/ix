@@ -29,10 +29,16 @@ export LLVM_SPIRV=$(command -v llvm-spirv)
 {% endblock %}
 
 {% block cmake_flags %}
+CLANG=${LLVM_CLANG}
+LLVM_TOOL_clang=${LLVM_CLANG}
 LLVM_CLANG=${LLVM_CLANG}
+LLVM_TOOL_llvm-as=${LLVM_AS}
 LLVM_AS=${LLVM_AS}
+LLVM_TOOL_llvm-link=${LLVM_LINK}
 LLVM_LINK=${LLVM_LINK}
+LLVM_TOOL_opt=${LLVM_OPT}
 LLVM_OPT=${LLVM_OPT}
+LLVM_TOOL_spirv=${LLVM_SPIRV}
 LLVM_SPIRV=${LLVM_SPIRV}
 {% endblock %}
 
