@@ -1,0 +1,46 @@
+diff --git a/pkgs/lib/web/kit/gtk/t/ix.sh b/pkgs/lib/web/kit/gtk/t/ix.sh
+index b7cfcfe90..25ef075b7 100644
+--- a/pkgs/lib/web/kit/gtk/t/ix.sh
++++ b/pkgs/lib/web/kit/gtk/t/ix.sh
+@@ -48,6 +48,7 @@ PORT=GTK
+ USE_JPEGXL=ON
+ ENABLE_WEBDRIVER=OFF
+ USE_GSTREAMER_TRANSCODER=OFF
++USE_SYSTEM_SYSPROF_CAPTURE=OFF
+ {% endblock %}
+ 
+ {% block patch %}
+diff --git a/pkgs/lib/web/kit/t/InjectedBundleGlib.cpp b/pkgs/lib/web/kit/t/InjectedBundleGlib.cpp
+index 13d8e9491..60cc1fc7c 100644
+--- a/pkgs/lib/web/kit/t/InjectedBundleGlib.cpp
++++ b/pkgs/lib/web/kit/t/InjectedBundleGlib.cpp
+@@ -23,10 +23,12 @@ bool InjectedBundle::initialize(const WebProcessCreationParameters&, RefPtr<API:
+     return true;
+ }
+ 
+-void InjectedBundle::setBundleParameter(WTF::String const&, IPC::DataReference const&) {
++void InjectedBundle::setBundleParameter(WTF::String const&, std::span<const uint8_t>)
++{
+ }
+ 
+-void InjectedBundle::setBundleParameters(const IPC::DataReference&) {
++void InjectedBundle::setBundleParameters(std::span<const uint8_t>)
++{
+ }
+ 
+ } // namespace WebKit
+diff --git a/pkgs/lib/web/kit/t/ix.sh b/pkgs/lib/web/kit/t/ix.sh
+index f4a4426d2..f2e635463 100644
+--- a/pkgs/lib/web/kit/t/ix.sh
++++ b/pkgs/lib/web/kit/t/ix.sh
+@@ -47,6 +47,10 @@ _caches
+ _xdg_binary_or_text_fallback
+ {% endblock %}
+ 
++{% block cpp_includes %}
++${PWD}/Source/ThirdParty/ANGLE/include
++{% endblock %}
++
+ {% block cpp_defines %}
+ WL_EGL_PLATFORM=1
+ {% endblock %}

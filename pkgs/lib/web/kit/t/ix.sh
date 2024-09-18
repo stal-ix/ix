@@ -56,8 +56,11 @@ shut_up
 wrap_cc
 {% endblock %}
 
+{% block cpp_includes %}
+${PWD}/Source/ThirdParty/ANGLE/include
+{% endblock %}
+
 {% block setup_target_flags %}
-export CPPFLAGS=$(echo ${CPPFLAGS} | tr ' ' '\n' | grep -v mesa | tr '\n' ' ')
 export CXXFLAGS="-Wno-register -Wno-missing-template-arg-list-after-template-kw ${CXXFLAGS}"
 {% endblock %}
 
