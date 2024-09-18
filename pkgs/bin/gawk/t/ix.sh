@@ -1,8 +1,8 @@
 {% extends '//die/c/autohell.sh' %}
 
 {% block fetch %}
-https://ftp.gnu.org/gnu/gawk/gawk-5.3.0.tar.xz
-sha:ca9c16d3d11d0ff8c69d79dc0b47267e1329a69b39b799895604ed447d3ca90b
+https://ftp.gnu.org/gnu/gawk/gawk-5.3.1.tar.xz
+sha:694db764812a6236423d4ff40ceb7b6c4c441301b72ad502bb5c27e00cd56f78
 {% endblock %}
 
 {% block bld_libs %}
