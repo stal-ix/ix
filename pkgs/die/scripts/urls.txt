@@ -2754,6 +2754,7 @@ https://github.com/zlib-ng/zlib-ng/archive/refs/tags/2.1.5.tar.gz
 https://github.com/zlib-ng/zlib-ng/archive/refs/tags/2.1.6.tar.gz
 https://github.com/zlib-ng/zlib-ng/archive/refs/tags/2.1.7.tar.gz
 https://github.com/zlib-ng/zlib-ng/archive/refs/tags/2.2.1.tar.gz
+https://github.com/zlib-ng/zlib-ng/archive/refs/tags/2.2.2.tar.gz
 https://github.com/zyedidia/micro/archive/refs/tags/v2.0.11.tar.gz
 https://github.com/zyedidia/micro/archive/refs/tags/v2.0.13.tar.gz
 https://github.com/zyedidia/micro/archive/refs/tags/v2.0.14.tar.gz
