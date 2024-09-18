@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/FlyGoat/RyzenAdj/archive/refs/tags/v0.14.0.tar.gz
-sha:adb9f040b10fe0a7c1a4317b4c9b404f6db66631754300fc364003779312a0b1
+https://github.com/FlyGoat/RyzenAdj/archive/refs/tags/v0.16.0.tar.gz
+sha:7bef7dbde006afbe316091d8da8c8c551d5d7d43185d9e62281671959b7a3ca2
 {% endblock %}
 
 {% block bld_libs %}
