@@ -30,7 +30,7 @@ export CGO_CXXFLAGS="${CXXFLAGS}"
 export CGO_LDFLAGS="${LDFLAGS}"
 export GOFLAGS="-buildmode=pie -mod=vendor -modcacherw"
 export TARGET_GOARCH=amd64
-go env -w "CC=clang-18"
+go env -w "CC=clang-19"
 go generate
 {{super()}}
 {% endblock %}
