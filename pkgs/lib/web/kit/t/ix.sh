@@ -58,7 +58,7 @@ wrap_cc
 
 {% block setup_target_flags %}
 export CPPFLAGS=$(echo ${CPPFLAGS} | tr ' ' '\n' | grep -v mesa | tr '\n' ' ')
-export CXXFLAGS="-Wno-register ${CXXFLAGS}"
+export CXXFLAGS="-Wno-register -Wno-missing-template-arg-list-after-template-kw ${CXXFLAGS}"
 {% endblock %}
 
 {% block patch %}
