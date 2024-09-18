@@ -1,6 +1,5 @@
-{% extends 't/ix.sh' %}
+{% extends '//die/hub.sh' %}
 
-{% block cmake_flags %}
-{{super()}}
-WASMEDGE_BUILD_AOT_RUNTIME=OFF
+{% block run_deps %}
+bin/wasm/edge/unwrap(libfmt_ver=10)
 {% endblock %}
