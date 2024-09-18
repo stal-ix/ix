@@ -11,7 +11,7 @@ https://github.com/cilium/pwru/archive/refs/tags/v1.0.5.tar.gz
 {% block bld_libs %}
 lib/c
 lib/pcap
-lib/llvm/18
+lib/llvm/19
 {% endblock %}
 
 {% block bld_tool %}

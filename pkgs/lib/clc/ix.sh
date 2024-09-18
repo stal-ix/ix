@@ -1,13 +1,13 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-{% include '//lib/llvm/18/ver.sh' %}
+{% include '//lib/llvm/19/ver.sh' %}
 {% endblock %}
 
 {% block lib_deps %}
 lib/c
 lib/c++
-lib/llvm/18
+lib/llvm/19
 {% endblock %}
 
 {% block step_unpack %}

@@ -9,7 +9,7 @@ lib/c
 lib/z
 lib/clc
 lib/kernel
-lib/llvm/18
+lib/llvm/19
 bin/llvm/spirv
 lib/vulkan/spirv/tools
 {% endblock %}
