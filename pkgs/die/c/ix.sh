@@ -3,6 +3,18 @@
 {% block functions %}
 {{super()}}
 
+{% block cxx_flags %}
+{% endblock %}
+
+{% block c_flags %}
+{% endblock %}
+
+{% block ld_flags %}
+{% endblock %}
+
+{% block opt_flags %}
+{% endblock %}
+
 {% set cpp_flags %}
   {% if 'shut_up' in build_flags  %}
     -w
@@ -58,6 +70,18 @@ setup_target_env() {
     export CPPFLAGS="{{f}} ${CPPFLAGS}"
 {% endfor %}
 {% block setup_target_flags %}
+{% for f in ix.parse_list(self.cxx_flags()) %}
+    export CXXFLAGS="{{f}} ${CXXFLAGS}"
+{% endfor %}
+{% for f in ix.parse_list(self.c_flags()) %}
+    export CFLAGS="{{f}} ${CFLAGS}"
+{% endfor %}
+{% for f in ix.parse_list(self.ld_flags()) %}
+    export LDFLAGS="{{f}} ${LDFLAGS}"
+{% endfor %}
+{% for f in ix.parse_list(self.opt_flags()) %}
+    export OPTFLAGS="{{f}} ${OPTFLAGS}"
+{% endfor %}
 {% endblock %}
 }
 {% endblock %}
