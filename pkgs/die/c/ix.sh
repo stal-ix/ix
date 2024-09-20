@@ -1,8 +1,5 @@
 {% extends 'ix_unwrap.sh' %}
 
-{% block functions %}
-{{super()}}
-
 {% block cxx_flags %}
 {% endblock %}
 
@@ -14,6 +11,13 @@
 
 {% block opt_flags %}
 {% endblock %}
+
+{% block functions %}
+{{super()}}
+
+
+
+
 
 {% set cpp_flags %}
   {% if 'shut_up' in build_flags  %}
