@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://github.com/openssh/openssh-portable/archive/refs/tags/V_9_8_P1.tar.gz
-sha:d8f6802914e4c344dc74599c29915651554bb318102d71cb4063e1f4a0d8286f
+https://github.com/openssh/openssh-portable/archive/refs/tags/V_9_9_P1.tar.gz
+sha:e8858153f188754d0bbf109477690eba226132879b6840cf08b51afb38151040
 {% endblock %}
 
 {% block bld_libs %}
@@ -23,7 +23,6 @@ bld/texinfo
 {% block cpp_defines %}
 __APPLE_SANDBOX_NAMED_EXTERNAL__
 {% endblock %}
-
 
 {% block configure_flags %}
 --disable-strip
