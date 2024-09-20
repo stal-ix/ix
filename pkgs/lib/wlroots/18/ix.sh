@@ -1,6 +1,6 @@
 {% extends '//lib/wlroots/17/ix.sh' %}
 
 {% block fetch %}
-https://gitlab.freedesktop.org/wlroots/wlroots/-/archive/0.18.0/wlroots-0.18.0.tar.bz2
-sha:5d46f6a4734ca659ad144c2bcab5da781987091dcbb0744c8aa05940eb73d372
+https://gitlab.freedesktop.org/wlroots/wlroots/-/archive/0.18.1/wlroots-0.18.1.tar.bz2
+sha:c42269d6c6c3e2bc3b19d5254c0a9defb81b92707efa7af4c0cf1b550039a5d3
 {% endblock %}
