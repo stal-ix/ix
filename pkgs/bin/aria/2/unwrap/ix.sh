@@ -24,8 +24,8 @@ lib/sqlite/3
 bld/gettext
 {% endblock %}
 
-{% block setup_target_flags %}
-export CXXFLAGS="-std=c++14 ${CXXFLAGS}"
+{% block cxx_flags %}
+-std=c++14
 {% endblock %}
 
 {% block configure_flags %}
