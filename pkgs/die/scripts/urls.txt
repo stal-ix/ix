@@ -1999,6 +1999,7 @@ https://github.com/mesonbuild/meson/archive/refs/tags/1.3.2.tar.gz
 https://github.com/mesonbuild/meson/archive/refs/tags/1.4.0.tar.gz
 https://github.com/mesonbuild/meson/archive/refs/tags/1.4.1.tar.gz
 https://github.com/mesonbuild/meson/archive/refs/tags/1.5.0.tar.gz
+https://github.com/mesonbuild/meson/archive/refs/tags/1.5.2.tar.gz
 https://github.com/mheily/libkqueue/archive/refs/tags/v2.6.1.tar.gz
 https://github.com/microsoft/GSL/archive/refs/tags/v4.0.0.tar.gz
 https://github.com/microsoft/cascadia-code/archive/refs/tags/v2404.23.tar.gz
