@@ -39,8 +39,9 @@ unistd.h
 sys/time.h
 {% endblock %}
 
-{% block setup_target_flags %}
-export CXXFLAGS="-Wno-missing-template-arg-list-after-template-kw -include sstream ${CXXFLAGS}"
+{% block cxx_flags %}
+-Wno-missing-template-arg-list-after-template-kw
+-includesstream
 {% endblock %}
 
 {% block cpp_defines %}
