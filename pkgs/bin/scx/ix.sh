@@ -1,8 +1,8 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://github.com/sched-ext/scx/archive/refs/tags/v1.0.2.tar.gz
-sha:32087e9dfcc62169e2218bb77bc10b573858d393629bb8916740e002ded0bc38
+https://github.com/sched-ext/scx/archive/refs/tags/v1.0.4.tar.gz
+sha:c6d76765cafca8c6146aca092e1dde0f8256c94e3f7fa7da86a3b37c84287efd
 {% endblock %}
 
 {% block bld_tool %}
@@ -30,4 +30,8 @@ bpf_clang=bpf_clang
 bpftool=disabled
 enable_rust=false
 enable_stress=false
+{% endblock %}
+
+{% block patch %}
+sed -e 's|.*subdir.*rust.*||' -i meson.build
 {% endblock %}
