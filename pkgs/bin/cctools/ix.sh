@@ -37,8 +37,8 @@ reallocf
 {% endif %}
 {% endblock %}
 
-{% block setup_target_flags %}
-export CPPFLAGS="-iquote ${PWD}/ld64/src/3rd ${CPPFLAGS}"
+{% block c_flags %}
+-iquote${PWD}/ld64/src/3rd
 {% endblock %}
 
 {% block patch %}
