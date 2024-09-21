@@ -40,7 +40,7 @@ sys/time.h
 {% endblock %}
 
 {% block setup_target_flags %}
-export CXXFLAGS="-include sstream ${CXXFLAGS}"
+export CXXFLAGS="-Wno-missing-template-arg-list-after-template-kw -include sstream ${CXXFLAGS}"
 {% endblock %}
 
 {% block cpp_defines %}

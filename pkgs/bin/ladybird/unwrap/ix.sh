@@ -55,3 +55,7 @@ ENABLE_UNICODE_DATABASE_DOWNLOAD=OFF
 >${tmp}/obj/Lagom/cacert.pem
 {{super()}}
 {% endblock %}
+
+{% block cxx_flags %}
+-Wno-delete-incomplete
+{% endblock %}

@@ -36,4 +36,5 @@ bld/libtool
 bld/cctools
 bld/kuroko
 bld/xz
+bin/dash
 {% endblock %}

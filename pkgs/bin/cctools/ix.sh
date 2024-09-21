@@ -12,6 +12,10 @@ lib/objc
 lib/bsd/overlay
 {% endblock %}
 
+{% block build_flags %}
+shut_up
+{% endblock %}
+
 {% block bld_tool %}
 bld/auto
 {% endblock %}
@@ -38,6 +42,9 @@ export CPPFLAGS="-iquote ${PWD}/ld64/src/3rd ${CPPFLAGS}"
 {% endblock %}
 
 {% block patch %}
+sed -e 's|.*Blob.*clone.*||' \
+    -i ld64/src/ld/code-sign-blobs/blob.h
+
 cat << EOF > libobjc2/Makefile.am
 noinst_LTLIBRARIES = libobjc.la
 libobjc_la_LDFLAGS =

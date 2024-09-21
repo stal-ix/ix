@@ -45,6 +45,7 @@
 #}
 
 {% block run_deps %}
+bin/dcraw
 bin/e2tools
 bin/httping
 bin/cast/text
@@ -306,7 +307,7 @@ bin/mkvtoolnix
 bin/mkvtoolnix/gui
 bin/sdlpop
 bin/jpegoptim
-bin/openttd
+#bin/openttd
 bin/pngquant
 bin/glmark2
 bin/wayland/tracer
@@ -823,7 +824,7 @@ bin/pango
 bin/tesseract
 bin/z3
 bin/inetutils
-bin/poedit
+#bin/poedit
 bin/wxrc
 bin/clifm
 bin/reddit/desktop

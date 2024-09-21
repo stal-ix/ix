@@ -10,6 +10,13 @@ cd mingw-w64-headers
 --enable-sdk=all
 {% endblock %}
 
+{% block install %}
+{{super()}}
+# conflict with clang19
+sed -e 's|void __cpuidex|void __cpuidex_xxx|' \
+    -i ${out}/include/psdk_inc/intrin-impl.h
+{% endblock %}
+
 {% block env %}
 export CPPFLAGS="-isystem${out}/include \${CPPFLAGS}"
 {% endblock %}

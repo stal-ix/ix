@@ -20,7 +20,7 @@ lib/bpf
 lib/bfd
 lib/iberty
 lib/opcodes
-lib/llvm/18
+lib/llvm/19
 {% endblock %}
 
 {% block step_unpack %}

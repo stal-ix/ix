@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.24.0.tar.gz
-sha:675ac3f9dbe00277416744fa36a28fc9cd1284d17f055a4db339063bfc6a8209
+https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.25.0.tar.gz
+sha:17ea39fd062d5bccc9c608e868f593a665d569646bc9b447111b3a608b648783
 {% endblock %}
 
 {% block bld_libs %}
@@ -22,4 +22,5 @@ lib/vulkan/loader/dl
 
 {% block cmake_flags %}
 IS_MUSL=ON
+ENABLE_LTO=OFF
 {% endblock %}

@@ -2,7 +2,7 @@
 
 {% block bld_libs %}
 {{super()}}
-lib/llvm/18
+lib/llvm/19
 {% endblock %}
 
 {% block cmake_flags %}

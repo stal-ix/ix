@@ -1,7 +1,7 @@
 {% extends '//die/std/ix.sh' %}
 
 {% block fetch %}
-{% include '//lib/llvm/18/ver.sh' %}
+{% include '//lib/llvm/19/ver.sh' %}
 {% endblock %}
 
 {% block install %}

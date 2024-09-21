@@ -2,4 +2,4 @@
 
 set -ue
 
-exec clang-18 -I${KERNEL_HEADERS} -I${BPF_HEADERS} "${@}"
+exec clang-19 -I${KERNEL_HEADERS} -I${BPF_HEADERS} "${@}"

@@ -26,6 +26,10 @@ bld/windres(for_target={{target.gnu.three}})
 wrap_cc
 {% endblock %}
 
+{% block setup_target_flags %}
+export CXXFLAGS="-Wno-missing-template-arg-list-after-template-kw ${CXXFLAGS}"
+{% endblock %}
+
 {% block cmake_flags %}
 CORESERVICES_LIB=
 use_sys_spdlog=ON

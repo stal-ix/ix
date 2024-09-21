@@ -5,6 +5,8 @@
 lib/ffi/boot
 {% elif mingw32 %}
 lib/ffi/mingw
+{% elif darwin %}
+lib/ffi/darwin
 {% else %}
 lib/ffi/unix
 {% endif %}

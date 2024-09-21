@@ -13,3 +13,8 @@ lib/c++
 {% block cmake_flags %}
 OLM_TESTS=OFF
 {% endblock %}
+
+{% block patch %}
+sed -e 's|T \* const other_pos|auto other_pos|' \
+    -i include/olm/list.hh
+{% endblock %}

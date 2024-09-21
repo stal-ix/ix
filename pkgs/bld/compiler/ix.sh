@@ -8,6 +8,6 @@ bin/clang/lib
 {% if clang_ver %}
 bld/compiler/unwrap
 {% else %}
-bld/compiler/unwrap(clang_ver=18,std_env=bld/boot/9/clang/env)
+bld/compiler/unwrap(clang_ver=19,std_env=bld/boot/9/clang/env)
 {% endif %}
 {% endblock %}

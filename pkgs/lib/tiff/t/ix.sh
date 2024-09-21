@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://gitlab.com/faxguy/libtiff-tools/-/archive/v4.6.0t/libtiff-tools-v4.6.0t.tar.bz2
-sha:80f1b2ffd1c4b12c19bd5e716c5af10b1feac185c74266d4d1d6d0eeab6461ba
+https://gitlab.com/libtiff/libtiff/-/archive/v4.7.0/libtiff-v4.7.0.tar.bz2
+sha:2b8b5c4e79cb2a4651796602e45d6179b7f18bc283feab417b8e881ef7e81862
 {% endblock %}
 
 {% block lib_deps %}
