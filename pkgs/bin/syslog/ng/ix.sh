@@ -33,8 +33,8 @@ autoreconf -if
 {{super()}}
 {% endblock %}
 
-{% block setup_target_flags %}
-export CXXFLAGS="-std=c++20 ${CXXFLAGS}"
+{% block cxx_flags %}
+-std=c++20
 {% endblock %}
 
 {% block patch %}
