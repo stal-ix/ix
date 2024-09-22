@@ -26,8 +26,8 @@ bld/windres(for_target={{target.gnu.three}})
 wrap_cc
 {% endblock %}
 
-{% block setup_target_flags %}
-export CXXFLAGS="-Wno-missing-template-arg-list-after-template-kw ${CXXFLAGS}"
+{% block cxx_flags %}
+-Wno-missing-template-arg-list-after-template-kw
 {% endblock %}
 
 {% block cmake_flags %}

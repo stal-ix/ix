@@ -1,8 +1,8 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-http://geeqie.org/cgi-bin/gitweb.cgi?p=geeqie.git;a=snapshot;h=f8c3ab333e95d45d4e68007256362dbdbdb3de3a;sf=tbz2
-sha:41bb7d3177982aeeec0e92f1d969e601042b2e6855db25c6bdd83dd68d503994
+http://geeqie.org/cgi-bin/gitweb.cgi?p=geeqie.git;a=snapshot;h=24407f761ea43dbe22436f8dd197df482a907af6;sf=tgz
+sha:392d9642946045bfd8178d80ec9951d5a4cedb28350902d9893f22c6fff68f39
 {% endblock %}
 
 {% block bld_libs %}
