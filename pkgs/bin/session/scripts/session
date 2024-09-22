@@ -1,5 +1,8 @@
 #!/bin/sh
 
+reset
+clear
+
 unset LANG
 
 export XDG_SESSION_ID=$$
