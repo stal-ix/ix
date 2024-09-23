@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/Martchus/tagparser/archive/refs/tags/v11.2.1.tar.gz
-sha:daa881d2416bdcfac5c086b5e8ce780103477cf6bc11e71d75798f5ba5422c65
+https://github.com/Martchus/tagparser/archive/refs/tags/v12.3.1.tar.gz
+sha:16cbf52cdf7c996d77c9c5b5487177515329ce9c3f5e68d1bb19ae4a8f49fb1c
 {% endblock %}
 
 {% block lib_deps %}

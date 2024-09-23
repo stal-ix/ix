@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/Martchus/cpp-utilities/archive/refs/tags/v5.20.0.tar.gz
-sha:0aeebdaab93ebdb70f5e77f008e229db765da8575989842dbe4cbe20f3dc08e7
+https://github.com/Martchus/cpp-utilities/archive/refs/tags/v5.21.0.tar.gz
+sha:8c94bead63eaa17346438f1ed7df13d58006ae753a39fe21185d48303df1aa27
 {% endblock %}
 
 {% block lib_deps %}
