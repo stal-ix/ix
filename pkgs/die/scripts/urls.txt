@@ -466,6 +466,7 @@ https://ftp.gnu.org/gnu/bash/bash-3.2.57.tar.gz
 https://ftp.gnu.org/gnu/bash/bash-4.4.18.tar.gz
 https://ftp.gnu.org/gnu/bash/bash-5.1.16.tar.gz
 https://ftp.gnu.org/gnu/bash/bash-5.2.21.tar.gz
+https://ftp.gnu.org/gnu/bash/bash-5.2.37.tar.gz
 https://ftp.gnu.org/gnu/bash/bash-5.2.tar.gz
 https://ftp.gnu.org/gnu/bc/bc-1.07.1.tar.gz
 https://ftp.gnu.org/gnu/binutils/binutils-2.41.tar.bz2
@@ -1471,6 +1472,7 @@ https://github.com/gavinhoward/bc/archive/refs/tags/6.7.5.tar.gz
 https://github.com/gavinhoward/bc/archive/refs/tags/7.0.0.tar.gz
 https://github.com/gavinhoward/bc/archive/refs/tags/7.0.1.tar.gz
 https://github.com/gavinhoward/bc/archive/refs/tags/7.0.2.tar.gz
+https://github.com/gavinhoward/bc/archive/refs/tags/7.0.3.tar.gz
 https://github.com/gcla/termshark/archive/refs/tags/v2.4.0.tar.gz
 https://github.com/geany/geany/archive/refs/tags/1.38.0.tar.gz
 https://github.com/geany/geany/archive/refs/tags/2.0.0.tar.gz
@@ -1487,6 +1489,7 @@ https://github.com/git/git/archive/refs/tags/v2.45.1.tar.gz
 https://github.com/git/git/archive/refs/tags/v2.45.2.tar.gz
 https://github.com/git/git/archive/refs/tags/v2.46.0.tar.gz
 https://github.com/git/git/archive/refs/tags/v2.46.1.tar.gz
+https://github.com/git/git/archive/refs/tags/v2.46.2.tar.gz
 https://github.com/glencoesoftware/jxrlib/archive/refs/tags/v0.2.4.tar.gz
 https://github.com/glennrp/libpng/archive/refs/tags/v1.6.40.tar.gz
 https://github.com/glennrp/libpng/archive/refs/tags/v1.6.41.tar.gz
@@ -1551,6 +1554,7 @@ https://github.com/google/shaderc/archive/refs/tags/v2023.7.tar.gz
 https://github.com/google/shaderc/archive/refs/tags/v2023.8.tar.gz
 https://github.com/google/shaderc/archive/refs/tags/v2024.1.tar.gz
 https://github.com/google/shaderc/archive/refs/tags/v2024.2.tar.gz
+https://github.com/google/shaderc/archive/refs/tags/v2024.3.tar.gz
 https://github.com/google/snappy/archive/refs/tags/1.1.10.tar.gz
 https://github.com/google/snappy/archive/refs/tags/1.1.9.tar.gz
 https://github.com/google/woff2/archive/refs/tags/v1.0.2.tar.gz
@@ -1575,6 +1579,7 @@ https://github.com/haasn/libplacebo/archive/refs/tags/v6.338.1.tar.gz
 https://github.com/haasn/libplacebo/archive/refs/tags/v6.338.2.tar.gz
 https://github.com/haikarainen/light/archive/refs/tags/v1.2.2.tar.gz
 https://github.com/hanslub42/rlwrap/archive/refs/tags/0.46.1.tar.gz
+https://github.com/harfbuzz/harfbuzz/archive/refs/tags/10.0.0.tar.gz
 https://github.com/harfbuzz/harfbuzz/archive/refs/tags/8.2.0.tar.gz
 https://github.com/harfbuzz/harfbuzz/archive/refs/tags/8.2.1.tar.gz
 https://github.com/harfbuzz/harfbuzz/archive/refs/tags/8.2.2.tar.gz
@@ -2055,6 +2060,7 @@ https://github.com/mozilla/mozjpeg/archive/refs/tags/v4.1.5.tar.gz
 https://github.com/mpv-player/mpv/archive/refs/tags/v0.36.0.tar.gz
 https://github.com/mpv-player/mpv/archive/refs/tags/v0.37.0.tar.gz
 https://github.com/mpv-player/mpv/archive/refs/tags/v0.38.0.tar.gz
+https://github.com/mpv-player/mpv/archive/refs/tags/v0.39.0.tar.gz
 https://github.com/msgpack/msgpack-c/archive/refs/tags/c-6.0.0.tar.gz
 https://github.com/msgpack/msgpack-c/archive/refs/tags/c-6.0.1.tar.gz
 https://github.com/msgpack/msgpack-c/archive/refs/tags/c-6.0.2.tar.gz
@@ -2478,6 +2484,7 @@ https://github.com/strawberrymusicplayer/strawberry/archive/refs/tags/1.0.23.tar
 https://github.com/strawberrymusicplayer/strawberry/archive/refs/tags/1.1.1.tar.gz
 https://github.com/strawberrymusicplayer/strawberry/archive/refs/tags/1.1.2.tar.gz
 https://github.com/strawberrymusicplayer/strawberry/archive/refs/tags/1.1.3.tar.gz
+https://github.com/strawberrymusicplayer/strawberry/archive/refs/tags/1.2.0.tar.gz
 https://github.com/strukturag/libde265/archive/refs/tags/v1.0.12.tar.gz
 https://github.com/strukturag/libde265/archive/refs/tags/v1.0.13.tar.gz
 https://github.com/strukturag/libde265/archive/refs/tags/v1.0.14.tar.gz
@@ -2953,6 +2960,7 @@ https://gitlab.gnome.org/GNOME/gtk/-/archive/4.15.4/gtk-4.15.4.tar.bz2
 https://gitlab.gnome.org/GNOME/gtk/-/archive/4.15.5/gtk-4.15.5.tar.bz2
 https://gitlab.gnome.org/GNOME/gtk/-/archive/4.16.0/gtk-4.16.0.tar.bz2
 https://gitlab.gnome.org/GNOME/gtk/-/archive/4.16.1/gtk-4.16.1.tar.bz2
+https://gitlab.gnome.org/GNOME/gtk/-/archive/4.16.2/gtk-4.16.2.tar.bz2
 https://gitlab.gnome.org/GNOME/gtksourceview/-/archive/4.8.4/gtksourceview-4.8.4.tar.bz2
 https://gitlab.gnome.org/GNOME/gtksourceview/-/archive/5.10.0/gtksourceview-5.10.0.tar.bz2
 https://gitlab.gnome.org/GNOME/gtksourceview/-/archive/5.12.1/gtksourceview-5.12.1.tar.bz2
