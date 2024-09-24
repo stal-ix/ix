@@ -45,6 +45,7 @@
 #}
 
 {% block run_deps %}
+bld/git
 bin/dcraw
 bin/e2tools
 bin/httping
