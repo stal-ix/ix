@@ -26,7 +26,3 @@ done
 {% block make_flags %}
 SBINDIR=${out}/bin
 {% endblock %}
-
-{% block setup_target_flags %}
-export CXXFLAGS="-Wno-register ${CXXFLAGS}"
-{% endblock %}
