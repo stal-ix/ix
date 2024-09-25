@@ -10,3 +10,8 @@ lib/c
 lib/kernel
 {% endblock %}
 
+{% block make_flags %}
+sysconfdir=${out}/etc
+sbindir=${out}/bin
+{% endblock %}
+
