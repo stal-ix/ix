@@ -163,8 +163,12 @@ zwp_linux_dmabuf_v1_interface
 zwp_linux_buffer_params_v1_interface
 {% endblock %}
 
+{% block cxx_flags %}
+{{super()}}
+-Wno-missing-template-arg-list-after-template-kw
+{% endblock %}
+
 {% block configure %}
-export CXXFLAGS="-Wno-missing-template-arg-list-after-template-kw ${CXXFLAGS}"
 {{super()}}
 sed -e 's|cmake/external/cld3/protobuf$:$:protoc|'"$(which protoc)"'|g' \
     -e 's|protobuf::protoc|protoc|g' \
