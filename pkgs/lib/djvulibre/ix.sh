@@ -16,6 +16,6 @@ lib/jpeg
 bin/gzip
 {% endblock %}
 
-{% block setup_target_flags %}
-export CFLAGS="-Wno-register ${CFLAGS}"
+{% block cxx_flags %}
+-Wno-register
 {% endblock %}
