@@ -17,5 +17,6 @@ bin/gzip
 {% endblock %}
 
 {% block cxx_flags %}
+{{super()}}
 -Wno-register
 {% endblock %}

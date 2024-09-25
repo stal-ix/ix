@@ -10,7 +10,12 @@ lib/c
 lib/c++
 {% endblock %}
 
-{% block setup_target_flags %}
-export CXXFLAGS="-Wno-register ${CXXFLAGS}"
-export OPTFLAGS="${OPTFLAGS} -fno-fast-math"
+{% block cxx_flags %}
+{{super()}}
+-Wno-register
+{% endblock %}
+
+{% block opt_flags %}
+{{super()}}
+-fno-fast-math
 {% endblock %}
