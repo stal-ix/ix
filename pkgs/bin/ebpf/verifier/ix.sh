@@ -30,8 +30,9 @@ find src/test -type f -name '*.cpp' | while read l; do
 done
 {% endblock %}
 
-{% block setup_target_flags %}
-export CXXFLAGS="-Wno-c++11-narrowing ${CXXFLAGS}"
+{% block cxx_flags %}
+{{super()}}
+-Wno-c++11-narrowing
 {% endblock %}
 
 {% block install %}
