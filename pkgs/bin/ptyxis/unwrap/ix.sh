@@ -1,8 +1,8 @@
 {% extends '//die/c/gnome.sh' %}
 
 {% block fetch %}
-https://gitlab.gnome.org/chergert/ptyxis/-/archive/47.0/ptyxis-47.0.tar.bz2
-sha:8122cdc302ced44a5316d37b22ffd5516154c5de1cb6dd1f383d24a3db6cae6e
+https://gitlab.gnome.org/chergert/ptyxis/-/archive/47.1/ptyxis-47.1.tar.bz2
+sha:5248e9055bc0fc5e2dd8864a1063ba4d0d57b900f61ed56d938dbf7663445bfc
 {% endblock %}
 
 {% block bld_libs %}
