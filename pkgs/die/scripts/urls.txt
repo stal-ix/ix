@@ -1570,6 +1570,7 @@ https://github.com/gperftools/gperftools/archive/refs/tags/gperftools-2.12.tar.g
 https://github.com/gperftools/gperftools/archive/refs/tags/gperftools-2.13.tar.gz
 https://github.com/gperftools/gperftools/archive/refs/tags/gperftools-2.14.tar.gz
 https://github.com/gperftools/gperftools/archive/refs/tags/gperftools-2.15.tar.gz
+https://github.com/gperftools/gperftools/archive/refs/tags/gperftools-2.16.tar.gz
 https://github.com/gphoto/libgphoto2/archive/refs/tags/v2.5.30.tar.gz
 https://github.com/greshake/i3status-rust/archive/refs/tags/v0.33.0.tar.gz
 https://github.com/grpc/grpc-java/archive/refs/tags/v1.51.3.tar.gz
