@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/apple/swift-corelibs-libdispatch/archive/refs/tags/swift-6.0-RELEASE.tar.gz
-sha:fa6fe877cf88391d3faba14147ed5531871b424b28e854534f28e83fc77d2081
+https://github.com/apple/swift-corelibs-libdispatch/archive/refs/tags/swift-6.0.1-RELEASE.tar.gz
+sha:150066ba341e49b8518a0b879ba82941d6d8734ab37cb76683f2a155369e5030
 {% endblock %}
 
 {% block lib_deps %}

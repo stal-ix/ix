@@ -1,8 +1,8 @@
 {% extends '//die/c/meson_cross.sh' %}
 
 {% block fetch %}
-https://github.com/fribidi/fribidi/archive/refs/tags/v1.0.14.tar.gz
-sha:7b1b3837f6583432068c71ca333a8988c803e9b94259edbd37c85367bbc51446
+https://github.com/fribidi/fribidi/archive/refs/tags/v1.0.16.tar.gz
+sha:5a1d187a33daa58fcee2ad77f0eb9d136dd6fa4096239199ba31e850d397e8a8
 {% endblock %}
 
 {% block lib_deps %}
