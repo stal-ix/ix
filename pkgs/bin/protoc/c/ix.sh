@@ -21,9 +21,9 @@ done
 cp -R ${PROTO_PATH}/google ./
 {% endblock %}
 
-{% block setup_target_flags %}
+{% block cxx_flags %}
 {{super()}}
-export CXXFLAGS="-std=c++17 ${CXXFLAGS}"
+-std=c++17
 {% endblock %}
 
 {% block cpp_defines %}

@@ -5,7 +5,7 @@
 {% if armv7 %}
 lib/compiler_rt/builtins/hack
 {% else %}
-lib/compiler_rt/builtins/{{crt_ver or '18'}}
+lib/compiler_rt/builtins/{{crt_ver or '19'}}
 {% endif %}
 {% else %}
 # TODO(pg): fix builtins for darwin

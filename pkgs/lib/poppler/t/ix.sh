@@ -50,10 +50,6 @@ ENABLE_GOBJECT_INTROSPECTION=OFF
 shut_up
 {% endblock %}
 
-{% block setup_target_flags %}
-export CPPFLAGS="-Wno-register ${CPPFLAGS}"
-{% endblock %}
-
 {% block patch %}
 sed -e 's|.*static_assert.*Z_NULL.*||' -i poppler/FlateEncoder.cc
 {% endblock %}

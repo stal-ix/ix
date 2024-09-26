@@ -26,8 +26,9 @@ mv sbin/* bin/
 rm -rf sbin
 {% endblock %}
 
-{% block setup_target_flags %}
-export CXXFLAGS="-std=c++14 ${CXXFLAGS}"
+{% block cxx_flags %}
+{{super()}}
+-std=c++14
 {% endblock %}
 
 {% block patch %}

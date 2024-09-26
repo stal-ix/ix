@@ -9,7 +9,3 @@ sha:38044ee4f255578165a54eaeb089b67fb64f7f7c0ce5fa690cd47c9df10b263c
 lib/c
 lib/opengl
 {% endblock %}
-
-{% block setup_target_flags %}
-export CXXFLAGS="-Wno-register ${CXXFLAGS}"
-{% endblock %}

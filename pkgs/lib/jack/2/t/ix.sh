@@ -19,8 +19,9 @@ bld/bash
 {{super()}}
 {% endblock %}
 
-{% block setup_target_flags %}
-export CXXFLAGS="-Wno-register ${CXXFLAGS}"
+{% block cxx_flags %}
+{{super()}}
+-Wno-register
 {% endblock %}
 
 {% block waf_flags %}

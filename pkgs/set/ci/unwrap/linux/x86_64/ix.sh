@@ -45,6 +45,7 @@
 #}
 
 {% block run_deps %}
+bin/actkbd
 bld/git
 bin/dcraw
 bin/e2tools
