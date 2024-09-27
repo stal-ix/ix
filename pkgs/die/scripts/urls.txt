@@ -587,6 +587,7 @@ https://ftp.mozilla.org/pub/nspr/releases/v4.35/src/nspr-4.35.tar.gz
 https://ftp.mozilla.org/pub/security/nss/releases/NSS_3_100_RTM/src/nss-3.100.tar.gz
 https://ftp.mozilla.org/pub/security/nss/releases/NSS_3_102_RTM/src/nss-3.102.tar.gz
 https://ftp.mozilla.org/pub/security/nss/releases/NSS_3_103_RTM/src/nss-3.103.tar.gz
+https://ftp.mozilla.org/pub/security/nss/releases/NSS_3_105_RTM/src/nss-3.105.tar.gz
 https://ftp.mozilla.org/pub/security/nss/releases/NSS_3_93_RTM/src/nss-3.93.tar.gz
 https://ftp.mozilla.org/pub/security/nss/releases/NSS_3_94_RTM/src/nss-3.94.tar.gz
 https://ftp.mozilla.org/pub/security/nss/releases/NSS_3_96_RTM/src/nss-3.96.tar.gz
@@ -1571,6 +1572,7 @@ https://github.com/gperftools/gperftools/archive/refs/tags/gperftools-2.13.tar.g
 https://github.com/gperftools/gperftools/archive/refs/tags/gperftools-2.14.tar.gz
 https://github.com/gperftools/gperftools/archive/refs/tags/gperftools-2.15.tar.gz
 https://github.com/gperftools/gperftools/archive/refs/tags/gperftools-2.16.tar.gz
+https://github.com/gperftools/gperftools/releases/download/gperftools-2.16/gperftools-2.16.tar.gz
 https://github.com/gphoto/libgphoto2/archive/refs/tags/v2.5.30.tar.gz
 https://github.com/greshake/i3status-rust/archive/refs/tags/v0.33.0.tar.gz
 https://github.com/grpc/grpc-java/archive/refs/tags/v1.51.3.tar.gz
@@ -2618,6 +2620,7 @@ https://github.com/tjko/jpegoptim/archive/refs/tags/v1.5.2.tar.gz
 https://github.com/tldr-pages/tldr-c-client/archive/refs/tags/v1.5.0.tar.gz
 https://github.com/tmux/tmux/releases/download/3.3a/tmux-3.3a.tar.gz
 https://github.com/tmux/tmux/releases/download/3.4/tmux-3.4.tar.gz
+https://github.com/tmux/tmux/releases/download/3.5/tmux-3.5.tar.gz
 https://github.com/tpoechtrager/cctools-port/archive/236a426c1205a3bfcf0dbb2e2faf2296f0a100e5.tar.gz
 https://github.com/transmission-remote-gtk/transmission-remote-gtk/archive/refs/tags/1.5.1.tar.gz
 https://github.com/transmission/dht/commit/b02da598.patch
