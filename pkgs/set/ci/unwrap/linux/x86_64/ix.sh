@@ -45,6 +45,7 @@
 #}
 
 {% block run_deps %}
+bin/postgresql/17
 bin/actkbd
 bld/git
 bin/dcraw
