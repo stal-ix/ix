@@ -13,6 +13,9 @@ lib/c++/dispatch
 {% block bld_libs %}
 lib/c/naked
 lib/bumpalloc/small
+{% if not x86_64 %}
+lib/compiler_rt/builtins
+{% endif %}
 {% endblock %}
 
 {% block patch %}
