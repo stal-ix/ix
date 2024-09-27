@@ -598,6 +598,7 @@ https://ftp.postgresql.org/pub/source/v16.0/postgresql-16.0.tar.bz2
 https://ftp.postgresql.org/pub/source/v16.1/postgresql-16.1.tar.bz2
 https://ftp.postgresql.org/pub/source/v16.3/postgresql-16.3.tar.bz2
 https://ftp.postgresql.org/pub/source/v16.4/postgresql-16.4.tar.bz2
+https://ftp.postgresql.org/pub/source/v17.0/postgresql-17.0.tar.bz2
 https://ftpmirror.gnu.org/libtool/libtool-2.4.6.tar.gz
 https://ftpmirror.gnu.org/libtool/libtool-2.4.7.tar.gz
 https://gameoftrees.org/releases/portable/got-portable-0.92.tar.gz
@@ -920,6 +921,7 @@ https://github.com/Kitware/CMake/archive/refs/tags/v3.29.6.tar.gz
 https://github.com/Kitware/CMake/archive/refs/tags/v3.30.0.tar.gz
 https://github.com/Kitware/CMake/archive/refs/tags/v3.30.1.tar.gz
 https://github.com/Kitware/CMake/archive/refs/tags/v3.30.3.tar.gz
+https://github.com/Kitware/CMake/archive/refs/tags/v3.30.4.tar.gz
 https://github.com/LBCrion/sfwbar/archive/refs/tags/v1.0_beta13.tar.gz
 https://github.com/LBCrion/sfwbar/archive/refs/tags/v1.0_beta9.tar.gz
 https://github.com/LibRaw/LibRaw/archive/refs/tags/0.21.1.tar.gz
