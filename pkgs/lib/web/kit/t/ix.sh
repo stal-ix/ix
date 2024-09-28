@@ -47,6 +47,10 @@ _caches
 _xdg_binary_or_text_fallback
 {% endblock %}
 
+{% block cpp_includes %}
+${PWD}/Source/ThirdParty/ANGLE/include
+{% endblock %}
+
 {% block cpp_defines %}
 WL_EGL_PLATFORM=1
 {% endblock %}
@@ -56,12 +60,9 @@ shut_up
 wrap_cc
 {% endblock %}
 
-{% block cpp_includes %}
-${PWD}/Source/ThirdParty/ANGLE/include
-{% endblock %}
-
-{% block setup_target_flags %}
-export CXXFLAGS="-Wno-register -Wno-missing-template-arg-list-after-template-kw ${CXXFLAGS}"
+{% block cxx_flags %}
+-Wno-register
+-Wno-missing-template-arg-list-after-template-kw
 {% endblock %}
 
 {% block patch %}
