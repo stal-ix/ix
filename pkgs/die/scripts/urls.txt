@@ -1515,6 +1515,7 @@ https://github.com/go-task/task/archive/refs/tags/v3.14.0.tar.gz
 https://github.com/gokcehan/lf/archive/refs/tags/r27.tar.gz
 https://github.com/gokcehan/lf/archive/refs/tags/r31.tar.gz
 https://github.com/gokcehan/lf/archive/refs/tags/r32.tar.gz
+https://github.com/golang/go/archive/refs/tags/go1.13.14.tar.gz
 https://github.com/golang/go/archive/refs/tags/go1.19.10.tar.gz
 https://github.com/golang/go/archive/refs/tags/go1.20.7.tar.gz
 https://github.com/golang/go/archive/refs/tags/go1.21.1.tar.gz
@@ -2680,6 +2681,7 @@ https://github.com/uutils/coreutils/archive/refs/tags/0.0.25.tar.gz
 https://github.com/uutils/coreutils/archive/refs/tags/0.0.26.tar.gz
 https://github.com/uutils/coreutils/archive/refs/tags/0.0.27.tar.gz
 https://github.com/uutils/coreutils/archive/refs/tags/0.0.8.tar.gz
+https://github.com/v-byte-cpu/wirez/archive/2628dbf16fd4ed7c3943476d313bd4266db2eff9.zip
 https://github.com/valkey-io/valkey/archive/refs/tags/7.2.6.tar.gz
 https://github.com/valkey-io/valkey/archive/refs/tags/8.0.0.tar.gz
 https://github.com/varlink/libvarlink/archive/refs/tags/23.tar.gz
@@ -2829,6 +2831,7 @@ https://gitlab.com/graphviz/graphviz/-/archive/11.0.0/graphviz-11.0.0.tar.bz2
 https://gitlab.com/graphviz/graphviz/-/archive/12.0.0/graphviz-12.0.0.tar.bz2
 https://gitlab.com/graphviz/graphviz/-/archive/12.1.0/graphviz-12.1.0.tar.bz2
 https://gitlab.com/graphviz/graphviz/-/archive/12.1.1/graphviz-12.1.1.tar.bz2
+https://gitlab.com/graphviz/graphviz/-/archive/12.1.2/graphviz-12.1.2.tar.bz2
 https://gitlab.com/graphviz/graphviz/-/archive/7.0.3/graphviz-7.0.3.tar.bz2
 https://gitlab.com/graphviz/graphviz/-/archive/8.1.0/graphviz-8.1.0.tar.bz2
 https://gitlab.com/graphviz/graphviz/-/archive/9.0.0/graphviz-9.0.0.tar.bz2
