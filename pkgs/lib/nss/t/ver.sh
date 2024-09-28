@@ -1,2 +1,2 @@
-https://ftp.mozilla.org/pub/security/nss/releases/NSS_3_103_RTM/src/nss-3.103.tar.gz
-sha:7b4ab657f772dc7520c46e8d481940b292dcfc6a4c90150a7c26672384cee962
+https://ftp.mozilla.org/pub/security/nss/releases/NSS_3_105_RTM/src/nss-3.105.tar.gz
+sha:8e8e4c8c88ca5c828b207cfaf66c6188e7f96c97cc18946d3db7da4c0d395619

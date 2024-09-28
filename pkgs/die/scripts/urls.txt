@@ -587,6 +587,7 @@ https://ftp.mozilla.org/pub/nspr/releases/v4.35/src/nspr-4.35.tar.gz
 https://ftp.mozilla.org/pub/security/nss/releases/NSS_3_100_RTM/src/nss-3.100.tar.gz
 https://ftp.mozilla.org/pub/security/nss/releases/NSS_3_102_RTM/src/nss-3.102.tar.gz
 https://ftp.mozilla.org/pub/security/nss/releases/NSS_3_103_RTM/src/nss-3.103.tar.gz
+https://ftp.mozilla.org/pub/security/nss/releases/NSS_3_105_RTM/src/nss-3.105.tar.gz
 https://ftp.mozilla.org/pub/security/nss/releases/NSS_3_93_RTM/src/nss-3.93.tar.gz
 https://ftp.mozilla.org/pub/security/nss/releases/NSS_3_94_RTM/src/nss-3.94.tar.gz
 https://ftp.mozilla.org/pub/security/nss/releases/NSS_3_96_RTM/src/nss-3.96.tar.gz
@@ -597,6 +598,7 @@ https://ftp.postgresql.org/pub/source/v16.0/postgresql-16.0.tar.bz2
 https://ftp.postgresql.org/pub/source/v16.1/postgresql-16.1.tar.bz2
 https://ftp.postgresql.org/pub/source/v16.3/postgresql-16.3.tar.bz2
 https://ftp.postgresql.org/pub/source/v16.4/postgresql-16.4.tar.bz2
+https://ftp.postgresql.org/pub/source/v17.0/postgresql-17.0.tar.bz2
 https://ftpmirror.gnu.org/libtool/libtool-2.4.6.tar.gz
 https://ftpmirror.gnu.org/libtool/libtool-2.4.7.tar.gz
 https://gameoftrees.org/releases/portable/got-portable-0.92.tar.gz
@@ -919,6 +921,7 @@ https://github.com/Kitware/CMake/archive/refs/tags/v3.29.6.tar.gz
 https://github.com/Kitware/CMake/archive/refs/tags/v3.30.0.tar.gz
 https://github.com/Kitware/CMake/archive/refs/tags/v3.30.1.tar.gz
 https://github.com/Kitware/CMake/archive/refs/tags/v3.30.3.tar.gz
+https://github.com/Kitware/CMake/archive/refs/tags/v3.30.4.tar.gz
 https://github.com/LBCrion/sfwbar/archive/refs/tags/v1.0_beta13.tar.gz
 https://github.com/LBCrion/sfwbar/archive/refs/tags/v1.0_beta9.tar.gz
 https://github.com/LibRaw/LibRaw/archive/refs/tags/0.21.1.tar.gz
@@ -984,6 +987,7 @@ https://github.com/NixOS/nix/archive/refs/tags/2.24.4.tar.gz
 https://github.com/NixOS/nix/archive/refs/tags/2.24.5.tar.gz
 https://github.com/NixOS/nix/archive/refs/tags/2.24.6.tar.gz
 https://github.com/NixOS/nix/archive/refs/tags/2.24.7.tar.gz
+https://github.com/NixOS/nix/archive/refs/tags/2.24.8.tar.gz
 https://github.com/NixOS/patchelf/archive/refs/tags/0.18.0.tar.gz
 https://github.com/Novum/vkQuake/archive/refs/tags/1.30.1.tar.gz
 https://github.com/Old-Man-Programmer/tree/archive/refs/tags/2.1.1.tar.gz
@@ -1570,6 +1574,8 @@ https://github.com/gperftools/gperftools/archive/refs/tags/gperftools-2.12.tar.g
 https://github.com/gperftools/gperftools/archive/refs/tags/gperftools-2.13.tar.gz
 https://github.com/gperftools/gperftools/archive/refs/tags/gperftools-2.14.tar.gz
 https://github.com/gperftools/gperftools/archive/refs/tags/gperftools-2.15.tar.gz
+https://github.com/gperftools/gperftools/archive/refs/tags/gperftools-2.16.tar.gz
+https://github.com/gperftools/gperftools/releases/download/gperftools-2.16/gperftools-2.16.tar.gz
 https://github.com/gphoto/libgphoto2/archive/refs/tags/v2.5.30.tar.gz
 https://github.com/greshake/i3status-rust/archive/refs/tags/v0.33.0.tar.gz
 https://github.com/grpc/grpc-java/archive/refs/tags/v1.51.3.tar.gz
@@ -2617,6 +2623,7 @@ https://github.com/tjko/jpegoptim/archive/refs/tags/v1.5.2.tar.gz
 https://github.com/tldr-pages/tldr-c-client/archive/refs/tags/v1.5.0.tar.gz
 https://github.com/tmux/tmux/releases/download/3.3a/tmux-3.3a.tar.gz
 https://github.com/tmux/tmux/releases/download/3.4/tmux-3.4.tar.gz
+https://github.com/tmux/tmux/releases/download/3.5/tmux-3.5.tar.gz
 https://github.com/tpoechtrager/cctools-port/archive/236a426c1205a3bfcf0dbb2e2faf2296f0a100e5.tar.gz
 https://github.com/transmission-remote-gtk/transmission-remote-gtk/archive/refs/tags/1.5.1.tar.gz
 https://github.com/transmission/dht/commit/b02da598.patch
@@ -2998,6 +3005,7 @@ https://gitlab.gnome.org/GNOME/libsoup/-/archive/3.4.3/libsoup-3.4.3.tar.bz2
 https://gitlab.gnome.org/GNOME/libsoup/-/archive/3.4.4/libsoup-3.4.4.tar.bz2
 https://gitlab.gnome.org/GNOME/libsoup/-/archive/3.6.0/libsoup-3.6.0.tar.bz2
 https://gitlab.gnome.org/GNOME/libspelling/-/archive/0.4.0/libspelling-0.4.0.tar.bz2
+https://gitlab.gnome.org/GNOME/libspelling/-/archive/0.4.1/libspelling-0.4.1.tar.bz2
 https://gitlab.gnome.org/GNOME/libxml2/-/archive/v2.11.4/libxml2-v2.11.4.tar.bz2
 https://gitlab.gnome.org/GNOME/libxml2/-/archive/v2.11.7/libxml2-v2.11.7.tar.bz2
 https://gitlab.gnome.org/GNOME/libxml2/-/archive/v2.12.0/libxml2-v2.12.0.tar.bz2
