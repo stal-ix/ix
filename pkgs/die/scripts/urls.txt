@@ -38,6 +38,7 @@ http://ftp.gnu.org/gnu/gcc/gcc-14.1.0/gcc-14.1.0.tar.xz
 http://ftp.gnu.org/gnu/gcc/gcc-14.2.0/gcc-14.2.0.tar.xz
 http://ftp.gnu.org/gnu/mtools/mtools-4.0.43.tar.lz
 http://ftp.gnu.org/gnu/mtools/mtools-4.0.44.tar.lz
+http://ftp.gnu.org/gnu/mtools/mtools-4.0.45.tar.lz
 http://ftp.gnu.org/gnu/screen/screen-4.9.1.tar.gz
 http://ftp.gnu.org/gnu/screen/screen-5.0.0.tar.gz
 http://ftp.gnu.org/pub/gnu/gperf/gperf-3.1.tar.gz
