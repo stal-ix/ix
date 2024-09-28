@@ -16,6 +16,7 @@ bin/htop
 bin/niri
 bin/bash
 bin/less
+bin/wirez
 set/debug
 bin/fuzzel
 bin/waybar
@@ -30,6 +31,7 @@ bin/alacritty
 bin/fontconfig
 bin/brightnessctl
 bin/q/cache/grind
+set/pg/user/scripts
 bin/coreutils/uutils
 {% endblock %}
 

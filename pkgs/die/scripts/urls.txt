@@ -38,6 +38,7 @@ http://ftp.gnu.org/gnu/gcc/gcc-14.1.0/gcc-14.1.0.tar.xz
 http://ftp.gnu.org/gnu/gcc/gcc-14.2.0/gcc-14.2.0.tar.xz
 http://ftp.gnu.org/gnu/mtools/mtools-4.0.43.tar.lz
 http://ftp.gnu.org/gnu/mtools/mtools-4.0.44.tar.lz
+http://ftp.gnu.org/gnu/mtools/mtools-4.0.45.tar.lz
 http://ftp.gnu.org/gnu/screen/screen-4.9.1.tar.gz
 http://ftp.gnu.org/gnu/screen/screen-5.0.0.tar.gz
 http://ftp.gnu.org/pub/gnu/gperf/gperf-3.1.tar.gz
@@ -1022,6 +1023,7 @@ https://github.com/RazrFalcon/resvg/archive/refs/tags/v0.39.0.tar.gz
 https://github.com/RazrFalcon/resvg/archive/refs/tags/v0.40.0.tar.gz
 https://github.com/RazrFalcon/resvg/archive/refs/tags/v0.41.0.tar.gz
 https://github.com/RazrFalcon/resvg/archive/refs/tags/v0.43.0.tar.gz
+https://github.com/RazrFalcon/resvg/archive/refs/tags/v0.44.0.tar.gz
 https://github.com/Samsung/rlottie/archive/refs/tags/v0.2.tar.gz
 https://github.com/SpartanJ/efsw/archive/refs/tags/1.3.1.tar.gz
 https://github.com/Syllo/nvtop/archive/refs/tags/3.0.2.tar.gz
@@ -1071,6 +1073,7 @@ https://github.com/Z3Prover/z3/archive/refs/tags/z3-4.12.4.tar.gz
 https://github.com/Z3Prover/z3/archive/refs/tags/z3-4.12.5.tar.gz
 https://github.com/Z3Prover/z3/archive/refs/tags/z3-4.12.6.tar.gz
 https://github.com/Z3Prover/z3/archive/refs/tags/z3-4.13.0.tar.gz
+https://github.com/Z3Prover/z3/archive/refs/tags/z3-4.13.2.tar.gz
 https://github.com/a-j-wood/pv/releases/download/v1.7.24/pv-1.7.24.tar.gz
 https://github.com/abseil/abseil-cpp/archive/refs/tags/20230125.3.tar.gz
 https://github.com/abseil/abseil-cpp/archive/refs/tags/20230802.1.tar.gz
@@ -1514,6 +1517,7 @@ https://github.com/go-task/task/archive/refs/tags/v3.14.0.tar.gz
 https://github.com/gokcehan/lf/archive/refs/tags/r27.tar.gz
 https://github.com/gokcehan/lf/archive/refs/tags/r31.tar.gz
 https://github.com/gokcehan/lf/archive/refs/tags/r32.tar.gz
+https://github.com/golang/go/archive/refs/tags/go1.13.14.tar.gz
 https://github.com/golang/go/archive/refs/tags/go1.19.10.tar.gz
 https://github.com/golang/go/archive/refs/tags/go1.20.7.tar.gz
 https://github.com/golang/go/archive/refs/tags/go1.21.1.tar.gz
@@ -2679,6 +2683,7 @@ https://github.com/uutils/coreutils/archive/refs/tags/0.0.25.tar.gz
 https://github.com/uutils/coreutils/archive/refs/tags/0.0.26.tar.gz
 https://github.com/uutils/coreutils/archive/refs/tags/0.0.27.tar.gz
 https://github.com/uutils/coreutils/archive/refs/tags/0.0.8.tar.gz
+https://github.com/v-byte-cpu/wirez/archive/2628dbf16fd4ed7c3943476d313bd4266db2eff9.zip
 https://github.com/valkey-io/valkey/archive/refs/tags/7.2.6.tar.gz
 https://github.com/valkey-io/valkey/archive/refs/tags/8.0.0.tar.gz
 https://github.com/varlink/libvarlink/archive/refs/tags/23.tar.gz
@@ -2828,6 +2833,7 @@ https://gitlab.com/graphviz/graphviz/-/archive/11.0.0/graphviz-11.0.0.tar.bz2
 https://gitlab.com/graphviz/graphviz/-/archive/12.0.0/graphviz-12.0.0.tar.bz2
 https://gitlab.com/graphviz/graphviz/-/archive/12.1.0/graphviz-12.1.0.tar.bz2
 https://gitlab.com/graphviz/graphviz/-/archive/12.1.1/graphviz-12.1.1.tar.bz2
+https://gitlab.com/graphviz/graphviz/-/archive/12.1.2/graphviz-12.1.2.tar.bz2
 https://gitlab.com/graphviz/graphviz/-/archive/7.0.3/graphviz-7.0.3.tar.bz2
 https://gitlab.com/graphviz/graphviz/-/archive/8.1.0/graphviz-8.1.0.tar.bz2
 https://gitlab.com/graphviz/graphviz/-/archive/9.0.0/graphviz-9.0.0.tar.bz2
