@@ -1403,6 +1403,7 @@ https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.22.0.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.23.0.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.24.0.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.25.0.tar.gz
+https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.26.0.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.3.1.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.3.2.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.3.3.tar.gz
@@ -2781,6 +2782,7 @@ https://github.com/ximion/appstream/archive/refs/tags/v0.16.3.tar.gz
 https://github.com/xiph/flac/archive/refs/tags/1.4.3.tar.gz
 https://github.com/xiph/opus/archive/refs/tags/v1.4.tar.gz
 https://github.com/xiph/opus/archive/refs/tags/v1.5.1.tar.gz
+https://github.com/xjasonlyu/tun2socks/archive/56786517dc3d4de051980a45dff71d33c924862b.zip
 https://github.com/xkbcommon/libxkbcommon/archive/refs/tags/xkbcommon-1.5.0.tar.gz
 https://github.com/xkbcommon/libxkbcommon/archive/refs/tags/xkbcommon-1.6.0.tar.gz
 https://github.com/xkbcommon/libxkbcommon/archive/refs/tags/xkbcommon-1.7.0.tar.gz
