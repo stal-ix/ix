@@ -1818,6 +1818,7 @@ https://github.com/landley/toybox/archive/refs/tags/0.8.10.tar.gz
 https://github.com/landley/toybox/archive/refs/tags/0.8.11.tar.gz
 https://github.com/lapce/lapce/archive/refs/tags/v0.4.1.tar.gz
 https://github.com/lapce/lapce/archive/refs/tags/v0.4.2.tar.gz
+https://github.com/laurikari/tre/archive/refs/tags/v0.9.0.tar.gz
 https://github.com/lavv17/lftp/releases/download/v4.8.3/lftp-4.8.3.tar.gz
 https://github.com/lbonn/rofi/releases/download/1.7.3%2Bwayland1/rofi-1.7.3+wayland1.tar.xz
 https://github.com/leo-arch/clifm/archive/refs/tags/v1.14.5.tar.gz
