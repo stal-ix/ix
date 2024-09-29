@@ -2230,6 +2230,7 @@ https://github.com/podofo/podofo/archive/refs/tags/0.10.2.tar.gz
 https://github.com/podofo/podofo/archive/refs/tags/0.10.3.tar.gz
 https://github.com/podofo/podofo/archive/refs/tags/0.10.4.tar.gz
 https://github.com/pop-os/cosmic-comp/archive/refs/tags/epoch-1.0.0-alpha.1.tar.gz
+https://github.com/pop-os/cosmic-files/archive/refs/tags/epoch-1.0.0-alpha.2.tar.gz
 https://github.com/pop-os/cosmic-term/archive/90179d5a5f837b60406bcd20315bb8a81cc3bb7d.zip
 https://github.com/posva/catimg/archive/refs/tags/2.7.0.tar.gz
 https://github.com/premake/premake-core/archive/refs/tags/v5.0.0-beta2.tar.gz

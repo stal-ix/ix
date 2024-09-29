@@ -45,6 +45,7 @@
 #}
 
 {% block run_deps %}
+bin/cosmic/files
 bin/agrep
 bin/wstunnel
 bin/tun2socks
