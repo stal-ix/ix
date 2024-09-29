@@ -45,6 +45,7 @@
 #}
 
 {% block run_deps %}
+bin/just
 bin/cosmic
 bin/agrep
 bin/wstunnel
