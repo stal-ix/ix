@@ -16,4 +16,3 @@ bin/go/lang/19
 mkdir ${out}/bin
 cp wirez ${out}/bin/
 {% endblock %}
-
