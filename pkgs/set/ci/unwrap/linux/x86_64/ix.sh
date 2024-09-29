@@ -45,6 +45,7 @@
 #}
 
 {% block run_deps %}
+bin/wstunnel
 bin/tun2socks
 bin/postgresql/17
 bin/actkbd
