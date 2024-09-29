@@ -45,7 +45,7 @@
 #}
 
 {% block run_deps %}
-bin/cosmic/files
+bin/cosmic
 bin/agrep
 bin/wstunnel
 bin/tun2socks
@@ -77,7 +77,6 @@ bin/scx
 bin/python/13
 bin/go/lang/23
 bin/lapce
-bin/cosmic/comp
 bin/evsieve
 bin/erofs/utils
 bin/mutter
