@@ -9,6 +9,7 @@ db2a363e19cced2af836fc66aa3bf9f0b3e906efbcba02b006761d62f45790fa
 {% endblock %}
 
 {% block bld_tool %}
+bin/just
 bld/fakegit
 {% endblock %}
 
@@ -16,6 +17,7 @@ bld/fakegit
 export VERGEN_GIT_COMMIT_DATE="x"
 export VERGEN_GIT_SHA="x"
 {{super()}}
+cargo build --offline --release {{ix.fix_list(cargo_options)}} --package cosmic-files-applet
 {% endblock %}
 
 {% block bld_libs %}
@@ -29,6 +31,5 @@ lib/xkb/common/dl
 {% endblock %}
 
 {% block install %}
-mkdir ${out}/bin
-cp ${tmp}/release/cosmic-files ${out}/bin/
+just --set prefix ${out} install
 {% endblock %}
