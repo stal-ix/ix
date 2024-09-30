@@ -45,6 +45,7 @@
 #}
 
 {% block run_deps %}
+bin/sing/box
 bin/just
 bin/cosmic
 bin/agrep
