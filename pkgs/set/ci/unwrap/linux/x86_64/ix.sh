@@ -45,6 +45,11 @@
 #}
 
 {% block run_deps %}
+bin/sing/box
+bin/just
+bin/cosmic
+bin/agrep
+bin/wstunnel
 bin/tun2socks
 bin/postgresql/17
 bin/actkbd
@@ -74,7 +79,6 @@ bin/scx
 bin/python/13
 bin/go/lang/23
 bin/lapce
-bin/cosmic/comp
 bin/evsieve
 bin/erofs/utils
 bin/mutter

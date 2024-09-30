@@ -12,6 +12,5 @@ bin/ix/keyboard
 bin/kernel/gengrub
 set/pg/system/hosts
 set/pg/system/nebula
-etc/services/runit(srv_dir=socks5,srv_user=pg,srv_command=/ix/realm/pg/bin/ssh -D 10000 -N ec2-user@13.50.197.102)
 etc/user/0(hash={{pg_hash}},user=pg,pubkey={{self.pg_pubkey().strip()}})
 {% endblock %}
