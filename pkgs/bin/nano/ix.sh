@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://www.nano-editor.org/dist/v7/nano-7.2.tar.xz
-sha:86f3442768bd2873cec693f83cdf80b4b444ad3cc14760b74361474fc87a4526
+https://www.nano-editor.org/dist/v8/nano-8.2.tar.xz
+sha:d5ad07dd862facae03051c54c6535e54c7ed7407318783fcad1ad2d7076fffeb
 {% endblock %}
 
 {% block bld_libs %}
