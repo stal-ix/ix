@@ -1,11 +1,11 @@
 {% extends '//die/rust/cargo.sh' %}
 
 {% block cargo_url %}
-https://gitlab.torproject.org/tpo/core/arti/-/archive/arti-v1.2.2/arti-arti-v1.2.2.tar.bz2
+https://gitlab.torproject.org/tpo/core/arti/-/archive/arti-v1.2.8/arti-arti-v1.2.8.tar.bz2
 {% endblock %}
 
 {% block cargo_sha %}
-3d3d88f4fc11901f5e74457677615970920e7fa5c042ae631c543a64eab03629
+4d578e90ca069371073d37a579d71411770ac4416be5fcbdebb2ca1f0b64706a
 {% endblock %}
 
 {% block bld_libs %}
