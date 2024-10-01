@@ -21,15 +21,12 @@ bin/openresolv/runit
 
 bin/chrony/runit
 
-# https://wiki.musl-libc.org/functional-differences-from-glibc.html#Name-Resolver/DNS
 {% if unbound %}
-bin/unbound/runit
+set/stalix/dns(dns_mngr=unbound)
+{% elif dnsmasq %}
+set/stalix/dns(dns_mngr=dnsmasq)
 {% else %}
-#bin/avahi/runit
-#bin/avahi/dns/runit
-bin/mdns/runit
-bin/mdns/dns/runit
-bin/dns/masq/runit
+set/stalix/dns(dns_mngr={{dns_mngr or 'dnsproxy'}})
 {% endif %}
 
 {% if getty %}
