@@ -42,6 +42,9 @@
 #bin/balsa
 #bin/scummvm
 #bin/code/lite
+#bin/openttd
+#bin/poedit
+#bin/wf/recorder
 #}
 
 {% block run_deps %}
@@ -315,7 +318,6 @@ bin/mkvtoolnix
 bin/mkvtoolnix/gui
 bin/sdlpop
 bin/jpegoptim
-#bin/openttd
 bin/pngquant
 bin/glmark2
 bin/wayland/tracer
@@ -832,7 +834,6 @@ bin/pango
 bin/tesseract
 bin/z3
 bin/inetutils
-#bin/poedit
 bin/wxrc
 bin/clifm
 bin/reddit/desktop
@@ -861,7 +862,6 @@ bin/tldr
 bin/interception/tools
 bin/pstree
 bin/fzy
-bin/wf/recorder
 bin/mle
 bin/sfm
 bin/imhex

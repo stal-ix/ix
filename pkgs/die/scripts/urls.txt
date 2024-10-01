@@ -431,6 +431,7 @@ https://ffmpeg.org/releases/ffmpeg-6.1.2.tar.xz
 https://ffmpeg.org/releases/ffmpeg-6.1.tar.xz
 https://ffmpeg.org/releases/ffmpeg-7.0.1.tar.xz
 https://ffmpeg.org/releases/ffmpeg-7.0.tar.xz
+https://ffmpeg.org/releases/ffmpeg-7.1.tar.xz
 https://files.pythonhosted.org/packages/03/3b/68690a035ba7347860f1b8c0cde853230ba69ff41df5884ea7d89fe68cd3/Mako-1.2.4-py3-none-any.whl
 https://files.pythonhosted.org/packages/08/f4/ffa743f860f34a5e8c60abaaa686f82c9ac7a2b50e5a1c3b1eb564d59159/PyYAML-6.0-cp39-cp39-win_amd64.whl
 https://files.pythonhosted.org/packages/0e/a3/b9a8b0adfe672bf0df5901707aa929d30a97ee390ba651910186776746d2/setuptools_scm-8.0.4-py3-none-any.whl
@@ -707,6 +708,7 @@ https://github.com/AcademySoftwareFoundation/openexr/archive/refs/tags/v3.2.0.ta
 https://github.com/AcademySoftwareFoundation/openexr/archive/refs/tags/v3.2.1.tar.gz
 https://github.com/AcademySoftwareFoundation/openexr/archive/refs/tags/v3.2.126.tar.gz
 https://github.com/AcademySoftwareFoundation/openexr/archive/refs/tags/v3.2.2.tar.gz
+https://github.com/AcademySoftwareFoundation/openexr/archive/refs/tags/v3.3.0.tar.gz
 https://github.com/AdguardTeam/dnsproxy/archive/refs/tags/v0.71.0.tar.gz
 https://github.com/Aetf/kmscon/archive/refs/tags/v9.0.0.tar.gz
 https://github.com/Aetf/libtsm/archive/refs/tags/v4.0.2.tar.gz
@@ -1218,6 +1220,7 @@ https://github.com/capstone-engine/capstone/archive/refs/tags/5.0.1.tar.gz
 https://github.com/capstone-engine/capstone/archive/refs/tags/5.0.3.tar.gz
 https://github.com/carapace-sh/carapace-bin/archive/refs/tags/v1.0.4.tar.gz
 https://github.com/casey/just/archive/refs/tags/1.35.0.tar.gz
+https://github.com/casey/just/archive/refs/tags/1.36.0.tar.gz
 https://github.com/catboost/catboost/archive/refs/tags/v1.0.6.tar.gz
 https://github.com/catchorg/Catch2/archive/refs/tags/v3.7.0.tar.gz
 https://github.com/cboxdoerfer/fsearch/archive/refs/tags/0.2.3.tar.gz
@@ -1802,6 +1805,7 @@ https://github.com/kraxarn/spotify-qt/archive/refs/tags/v3.9.tar.gz
 https://github.com/kristapsdz/lowdown/archive/refs/tags/VERSION_1_0_2.tar.gz
 https://github.com/kristapsdz/lowdown/archive/refs/tags/VERSION_1_1_0.tar.gz
 https://github.com/kristapsdz/lowdown/archive/refs/tags/VERSION_1_1_1.tar.gz
+https://github.com/kristapsdz/lowdown/archive/refs/tags/VERSION_1_1_2.tar.gz
 https://github.com/kspalaiologos/bzip3/archive/refs/tags/1.3.2.tar.gz
 https://github.com/kspalaiologos/bzip3/archive/refs/tags/1.4.0.tar.gz
 https://github.com/kuroko-lang/kuroko/archive/refs/tags/v1.3.1.tar.gz
@@ -1830,6 +1834,7 @@ https://github.com/leo-arch/clifm/archive/refs/tags/v1.17.tar.gz
 https://github.com/leo-arch/clifm/archive/refs/tags/v1.18.tar.gz
 https://github.com/leo-arch/clifm/archive/refs/tags/v1.19.tar.gz
 https://github.com/leo-arch/clifm/archive/refs/tags/v1.20.tar.gz
+https://github.com/leo-arch/clifm/archive/refs/tags/v1.21.tar.gz
 https://github.com/libarchive/libarchive/archive/refs/tags/v3.7.1.tar.gz
 https://github.com/libarchive/libarchive/archive/refs/tags/v3.7.2.tar.gz
 https://github.com/libarchive/libarchive/archive/refs/tags/v3.7.3.tar.gz
@@ -2055,6 +2060,7 @@ https://github.com/microsoft/msquic/archive/refs/tags/v2.3.5.tar.gz
 https://github.com/microsoft/msquic/archive/refs/tags/v2.3.6.tar.gz
 https://github.com/microsoft/msquic/archive/refs/tags/v2.4.3.tar.gz
 https://github.com/microsoft/msquic/archive/refs/tags/v2.4.4.tar.gz
+https://github.com/microsoft/msquic/archive/refs/tags/v2.4.5.tar.gz
 https://github.com/microsoft/snmalloc/archive/refs/tags/0.6.0.tar.gz
 https://github.com/microsoft/vcpkg-tool/archive/refs/tags/2022-11-10.tar.gz
 https://github.com/microsoft/vcpkg-tool/archive/refs/tags/2023-11-16.tar.gz
