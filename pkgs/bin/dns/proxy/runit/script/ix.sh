@@ -11,5 +11,6 @@ exec /bin/dnsproxy \
     --hosts-file-enabled=false \
     -u 1.1.1.1:53 \
     -u 8.8.8.8:53 \
-    -u 9.9.9.9:53
+    -u 9.9.9.9:53 \
+    -u [/local/]127.0.0.1:5354
 {% endblock %}
