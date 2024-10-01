@@ -1220,6 +1220,7 @@ https://github.com/capstone-engine/capstone/archive/refs/tags/5.0.1.tar.gz
 https://github.com/capstone-engine/capstone/archive/refs/tags/5.0.3.tar.gz
 https://github.com/carapace-sh/carapace-bin/archive/refs/tags/v1.0.4.tar.gz
 https://github.com/casey/just/archive/refs/tags/1.35.0.tar.gz
+https://github.com/casey/just/archive/refs/tags/1.36.0.tar.gz
 https://github.com/catboost/catboost/archive/refs/tags/v1.0.6.tar.gz
 https://github.com/catchorg/Catch2/archive/refs/tags/v3.7.0.tar.gz
 https://github.com/cboxdoerfer/fsearch/archive/refs/tags/0.2.3.tar.gz
