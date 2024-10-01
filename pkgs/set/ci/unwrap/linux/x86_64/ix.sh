@@ -305,7 +305,7 @@ bin/cppgir
 bin/rpcgen
 bin/nfs/utils
 bin/redis/lite
-bin/dnsmasq
+bin/dns/masq
 bin/go/awk
 bin/sniffer
 bin/webp/gui

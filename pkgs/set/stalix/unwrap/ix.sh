@@ -29,7 +29,7 @@ bin/unbound/runit
 #bin/avahi/dns/runit
 bin/mdns/runit
 bin/mdns/dns/runit
-bin/dnsmasq/runit
+bin/dns/masq/runit
 {% endif %}
 
 {% if getty %}
