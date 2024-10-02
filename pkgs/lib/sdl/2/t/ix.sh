@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/libsdl-org/SDL/archive/refs/tags/release-2.30.7.tar.gz
-sha:1578c96f62c9ae36b64e431b2aa0e0b0fd07c275dedbc694afc38e19056688f5
+https://github.com/libsdl-org/SDL/archive/refs/tags/release-2.30.8.tar.gz
+sha:ea638d142ee2bf71e2896fbc87e2eaa5956d2c91322aa55cf41049382a6e7730
 {% endblock %}
 
 {% block lib_deps %}
@@ -21,8 +21,8 @@ SDL_LIBSAMPLERATE=OFF
 SDL_LIBSAMPLERATE_SHARED=OFF
 {% endblock %}
 
-{% block setup_target_flags %}
-export CFLAGS="-Wno-incompatible-function-pointer-types ${CFLAGS}"
+{% block c_flags %}
+-Wno-incompatible-function-pointer-types
 {% endblock %}
 
 {% block patch %}
