@@ -8,7 +8,11 @@ lib/aio
 {% block configure_flags %}
 {{super()}}
 --enable-static_link
---with-default-system-dir=${out}/etc/lvm
+{% endblock %}
+
+{% block make_flags %}
+{{super()}}
+confdir=${out}/etc/lvm
 {% endblock %}
 
 {% block patch %}
