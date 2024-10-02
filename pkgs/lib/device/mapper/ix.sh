@@ -1,5 +1,11 @@
 {% extends 't/ix.sh' %}
 
+{% block configure_flags %}
+{{super()}}
+--enable-pkgconfig
+--enable-static_link
+{% endblock %}
+
 {% block make_target %}
 device-mapper
 {% endblock %}

@@ -22,8 +22,3 @@ bld/auto/archive
 {% block build_flags %}
 wrap_cc
 {% endblock %}
-
-{% block configure_flags %}
---enable-pkgconfig
---enable-static_link
-{% endblock %}
