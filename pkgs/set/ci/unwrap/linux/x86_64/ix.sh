@@ -472,7 +472,7 @@ bin/gperf
 bin/imv
 bin/b64
 bin/kitty
-bin/nano
+#bin/nano
 bin/wget/2
 bin/wget
 bin/nwipe
