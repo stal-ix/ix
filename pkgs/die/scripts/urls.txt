@@ -682,6 +682,7 @@ https://github.com/AOMediaCodec/libavif/archive/refs/tags/v1.0.4.tar.gz
 https://github.com/AOMediaCodec/libavif/archive/refs/tags/v1.1.0.tar.gz
 https://github.com/AOMediaCodec/libavif/archive/refs/tags/v1.1.1.tar.gz
 https://github.com/ARMmbed/mbedtls/archive/refs/tags/v2.28.2.tar.gz
+https://github.com/ARMmbed/mbedtls/archive/refs/tags/v2.28.9.tar.gz
 https://github.com/ARMmbed/mbedtls/archive/refs/tags/v3.4.1.tar.gz
 https://github.com/ARMmbed/mbedtls/archive/refs/tags/v3.5.0.tar.gz
 https://github.com/ARMmbed/mbedtls/archive/refs/tags/v3.5.1.tar.gz
