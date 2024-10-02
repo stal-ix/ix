@@ -11,18 +11,7 @@ lib/gtk/3
 {% endblock %}
 
 {% block bld_tool %}
-bld/iconker
-bin/convert
-{% endblock %}
-
-{% block build %}
-render_icon usbview_icon.svg icon.png
-for x in 16x16 22x22 32x32 48x48 64x64 256x256; do
-    mkdir -p hicolor/${x}/apps
-    magick convert -geometry ${x} icon.png hicolor/${x}/apps/usbview.png
-    magick convert -geometry ${x} icon.png hicolor/${x}/apps/usbview_icon.xpm
-done
-{{super()}}
+bld/convert
 {% endblock %}
 
 {% block install %}
