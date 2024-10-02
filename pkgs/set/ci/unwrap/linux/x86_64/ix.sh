@@ -48,6 +48,7 @@
 #}
 
 {% block run_deps %}
+bin/usb/view
 bin/gost
 bin/sing/box
 bin/just

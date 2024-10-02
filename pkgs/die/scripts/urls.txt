@@ -110,6 +110,7 @@ http://www.haproxy.org/download/3.0/src/haproxy-3.0.5.tar.gz
 http://www.ijg.org/files/jpegsrc.v9e.tar.gz
 http://www.inf.puc-rio.br/~roberto/lpeg/lpeg-1.1.0.tar.gz
 http://www.jedrea.com/chmlib/chmlib-0.40.tar.bz2
+http://www.kroah.com/linux/usb/usbview-3.1.tar.gz
 http://www.ladspa.org/download/ladspa_sdk_1.17.tgz
 http://www.mirbsd.org/MirOS/dist/mir/mksh/mksh-R59c.tgz
 http://www.oberhumer.com/opensource/lzo/download/lzo-2.10.tar.gz
