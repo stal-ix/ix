@@ -13,5 +13,5 @@ sed -e 's|.*pidfile.*"syslogd".*||' -i sysklogd/syslogd.c
 
 {% block install %}
 {{super()}}
-rm ${out}/bin/reboot ${out}/bin/halt
+rm ${out}/bin/reboot ${out}/bin/halt ${out}/bin/timeout
 {% endblock %}

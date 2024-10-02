@@ -112,10 +112,7 @@ def check_md5(path, old_cs):
 
 
 def tout_prefix(tout):
-    if os.path.isfile('/bin/subreaper'):
-        return ['/bin/subreaper', '/bin/timeout', str(tout) + 's']
-
-    return []
+    return ['timeout', str(tout) + 's']
 
 
 def fetch_url_curl(url, out, tout):
