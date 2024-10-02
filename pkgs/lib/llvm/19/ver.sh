@@ -1,2 +1,2 @@
-https://github.com/llvm/llvm-project/archive/refs/tags/llvmorg-19.1.0.tar.gz
-sha:0a08341036ca99a106786f50f9c5cb3fbe458b3b74cab6089fd368d0edb2edfe
+https://github.com/llvm/llvm-project/archive/refs/tags/llvmorg-19.1.1.tar.gz
+sha:115dfd98a353d05bffdab3f80db22f159da48aca0124e8c416f437adcd54b77f

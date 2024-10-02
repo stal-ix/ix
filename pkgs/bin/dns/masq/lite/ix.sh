@@ -1,4 +1,4 @@
-{% extends '//bin/dnsmasq/t/ix.sh' %}
+{% extends '//bin/dns/masq/t/ix.sh' %}
 
 {% block setup_target_flags %}
 {{super()}}

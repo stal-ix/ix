@@ -48,6 +48,8 @@
 #}
 
 {% block run_deps %}
+bin/usb/view
+bin/gost
 bin/sing/box
 bin/just
 bin/cosmic
@@ -304,7 +306,7 @@ bin/cppgir
 bin/rpcgen
 bin/nfs/utils
 bin/redis/lite
-bin/dnsmasq
+bin/dns/masq
 bin/go/awk
 bin/sniffer
 bin/webp/gui
@@ -471,7 +473,7 @@ bin/gperf
 bin/imv
 bin/b64
 bin/kitty
-bin/nano
+#bin/nano
 bin/wget/2
 bin/wget
 bin/nwipe

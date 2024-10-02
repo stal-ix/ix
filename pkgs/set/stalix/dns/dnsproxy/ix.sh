@@ -1,5 +1,7 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
-bin/dnsmasq/unwrap(lua_ver=puc/5/2)
+bin/mdns/runit
+bin/mdns/dns/runit
+bin/dns/proxy/runit
 {% endblock %}
