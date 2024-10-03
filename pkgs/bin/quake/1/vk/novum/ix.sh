@@ -1,8 +1,8 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://github.com/Novum/vkQuake/archive/refs/tags/1.30.1.tar.gz
-sha:b88d3dfc869d89820766e2dd18bdadb9681adfc4c9d05e09cbbebcc17ef1d150
+https://github.com/Novum/vkQuake/archive/refs/tags/1.31.2.tar.gz
+sha:1bcad045bee99784fa40f2c7e05c7f3879944261c1cdcce8eaab5a766681eb26
 {% endblock %}
 
 {% block bld_libs %}

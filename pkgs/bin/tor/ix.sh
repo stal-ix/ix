@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://gitlab.torproject.org/tpo/core/tor/-/archive/tor-0.4.8.11/tor-tor-0.4.8.11.tar.bz2
-sha:4b09cd7cba054ee89cb57af349f10c55a7e3d8a968bb5670641ae9bcead652b9
+https://gitlab.torproject.org/tpo/core/tor/-/archive/tor-0.4.8.12/tor-tor-0.4.8.12.tar.bz2
+sha:9ff12b51062b7a8a8e006d034c5e09690f27a9fd963f7bc38a0565363b6f435a
 {% endblock %}
 
 {% block bld_libs %}

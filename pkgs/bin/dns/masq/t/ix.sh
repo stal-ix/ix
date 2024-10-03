@@ -15,10 +15,15 @@ lib/gmp
 lib/idn/2
 lib/nettle
 lib/kernel
+lib/net/filter/conntrack
+{% endblock %}
+
+{% block build_flags %}
+shut_up
 {% endblock %}
 
 {% block setup_target_flags %}
-export COPTS="-DHAVE_NETTLEHASH -DHAVE_LIBIDN2"
+export COPTS="-DHAVE_NETTLEHASH -DHAVE_LIBIDN2 -DHAVE_CONNTRACK"
 {% endblock %}
 
 {% block make_flags %}

@@ -1,25 +1,24 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block git_repo %}
-git://git.netfilter.org/libnftnl
+git://git.netfilter.org/libnetfilter_conntrack
 {% endblock %}
 
 {% block git_branch %}
-libnftnl-1.2.8
+libnetfilter_conntrack-1.1.0
 {% endblock %}
 
 {% block git_sha %}
-4372748fa18d5414552a8e3cd4c306440543627a2c6694d92534126aba27cdf9
+260dacf58b18f9661fd67b62ae13af09f53244e1968b145fefb76407b7f43dbd
 {% endblock %}
 
 {% block lib_deps %}
 lib/c
 lib/mnl
+lib/nfnetlink
 {% endblock %}
 
 {% block bld_libs %}
 lib/kernel
 {% endblock %}
-
-
 
