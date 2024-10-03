@@ -3264,6 +3264,7 @@ https://mupdf.com/downloads/archive/mupdf-1.23.8-source.tar.gz
 https://mupdf.com/downloads/archive/mupdf-1.23.9-source.tar.gz
 https://mupdf.com/downloads/archive/mupdf-1.24.0-source.tar.gz
 https://mupdf.com/downloads/archive/mupdf-1.24.1-source.tar.gz
+https://mupdf.com/downloads/archive/mupdf-1.24.10-source.tar.gz
 https://mupdf.com/downloads/archive/mupdf-1.24.2-source.tar.gz
 https://mupdf.com/downloads/archive/mupdf-1.24.3-source.tar.gz
 https://mupdf.com/downloads/archive/mupdf-1.24.4-source.tar.gz
