@@ -1,6 +1,6 @@
 {% extends '//die/c/make.sh' %}
 
-{% include '//bin/kernel/6/10/ver.sh' %}
+{% include '//bin/kernel/6/11/ver.sh' %}
 
 {% block bld_libs %}
 lib/c
