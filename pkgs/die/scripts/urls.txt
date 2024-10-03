@@ -1347,6 +1347,7 @@ https://github.com/emersion/slurp/archive/refs/tags/v1.5.0.tar.gz
 https://github.com/epasveer/seer/archive/refs/tags/v2.2.tar.gz
 https://github.com/eranif/codelite/releases/download/17.0.0/codelite-17.0.0.tar.gz
 https://github.com/erebe/wstunnel/archive/refs/tags/v10.1.2.tar.gz
+https://github.com/erebe/wstunnel/archive/refs/tags/v10.1.3.tar.gz
 https://github.com/ericniebler/range-v3/archive/refs/tags/0.12.0.tar.gz
 https://github.com/esnet/iperf/archive/refs/tags/3.16.tar.gz
 https://github.com/esnet/iperf/archive/refs/tags/3.17.1.tar.gz
@@ -2723,6 +2724,7 @@ https://github.com/uutils/coreutils/archive/refs/tags/0.0.8.tar.gz
 https://github.com/v-byte-cpu/wirez/archive/2628dbf16fd4ed7c3943476d313bd4266db2eff9.zip
 https://github.com/valkey-io/valkey/archive/refs/tags/7.2.6.tar.gz
 https://github.com/valkey-io/valkey/archive/refs/tags/8.0.0.tar.gz
+https://github.com/valkey-io/valkey/archive/refs/tags/8.0.1.tar.gz
 https://github.com/varlink/libvarlink/archive/refs/tags/23.tar.gz
 https://github.com/varnishcache/varnish-cache/archive/refs/tags/varnish-7.6.0.tar.gz
 https://github.com/vasi/squashfuse/archive/1f980303b89c779eabfd0a0fdd36d6a7a311bf92.zip
