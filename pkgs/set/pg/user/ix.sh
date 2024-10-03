@@ -23,7 +23,6 @@ bin/fuzzel
 bin/waybar
 bin/evince
 bin/openssl
-bin/haproxy
 bin/sway/bg
 bin/iwd/ctl
 bin/swayimg
