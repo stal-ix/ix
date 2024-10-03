@@ -45,6 +45,8 @@
 #bin/openttd
 #bin/poedit
 #bin/wf/recorder
+#bin/tor
+#bin/nano
 #}
 
 {% block run_deps %}
@@ -331,7 +333,6 @@ bin/smenu
 bin/tty/d
 bin/svgren
 bin/transmission/qt
-bin/tor
 bin/empty
 bin/zutils
 set/stalix
@@ -475,7 +476,6 @@ bin/gperf
 bin/imv
 bin/b64
 bin/kitty
-#bin/nano
 bin/wget/2
 bin/wget
 bin/nwipe
