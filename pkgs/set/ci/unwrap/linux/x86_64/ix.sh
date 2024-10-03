@@ -48,6 +48,7 @@
 #}
 
 {% block run_deps %}
+bin/go/dispatch/proxy
 bin/dm/setup
 bin/usb/view
 bin/gost
