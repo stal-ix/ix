@@ -45,11 +45,11 @@
 #bin/openttd
 #bin/poedit
 #bin/wf/recorder
-#bin/tor
-#bin/nano
 #}
 
 {% block run_deps %}
+bin/tor
+bin/nano
 bin/conntrack/tools
 bin/think/fan
 bin/go/dispatch/proxy
