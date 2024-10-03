@@ -50,6 +50,7 @@
 #}
 
 {% block run_deps %}
+bin/think/fan
 bin/go/dispatch/proxy
 bin/dm/setup
 bin/usb/view
