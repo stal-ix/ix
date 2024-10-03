@@ -5,11 +5,11 @@ git://git.netfilter.org/nftables
 {% endblock %}
 
 {% block git_branch %}
-v1.1.0
+v1.1.1
 {% endblock %}
 
 {% block git_sha %}
-55c108bfb936a7569c0d637084c17b75c3285321c6fac441c3c9990a589fe1c9
+d79d1e76b4e6ee69edf41bdd33a382b52b0055984ad66e9498b735420f8b616e
 {% endblock %}
 
 {% block bld_libs %}
