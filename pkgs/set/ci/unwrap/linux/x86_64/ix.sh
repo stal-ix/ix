@@ -50,6 +50,7 @@
 #}
 
 {% block run_deps %}
+bin/conntrack/tools
 bin/think/fan
 bin/go/dispatch/proxy
 bin/dm/setup
