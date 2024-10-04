@@ -2264,6 +2264,7 @@ https://github.com/podofo/podofo/archive/refs/tags/0.10.3.tar.gz
 https://github.com/podofo/podofo/archive/refs/tags/0.10.4.tar.gz
 https://github.com/pop-os/cosmic-comp/archive/refs/tags/epoch-1.0.0-alpha.1.tar.gz
 https://github.com/pop-os/cosmic-files/archive/refs/tags/epoch-1.0.0-alpha.2.tar.gz
+https://github.com/pop-os/cosmic-launcher/archive/refs/tags/epoch-1.0.0-alpha.2.tar.gz
 https://github.com/pop-os/cosmic-term/archive/90179d5a5f837b60406bcd20315bb8a81cc3bb7d.zip
 https://github.com/posva/catimg/archive/refs/tags/2.7.0.tar.gz
 https://github.com/premake/premake-core/archive/refs/tags/v5.0.0-beta2.tar.gz
@@ -2645,6 +2646,7 @@ https://github.com/telegramdesktop/tdesktop/releases/download/v5.4.5/tdesktop-5.
 https://github.com/telegramdesktop/tdesktop/releases/download/v5.5.1/tdesktop-5.5.1-full.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v5.5.3/tdesktop-5.5.3-full.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v5.5.5/tdesktop-5.5.5-full.tar.gz
+https://github.com/telegramdesktop/tdesktop/releases/download/v5.5.8/tdesktop-5.5.8-full.tar.gz
 https://github.com/tenox7/ttyplot/archive/refs/tags/1.6.1.tar.gz
 https://github.com/tesseract-ocr/tesseract/archive/refs/tags/5.2.0.tar.gz
 https://github.com/tetratelabs/wazero/archive/refs/tags/v1.5.0.tar.gz
@@ -2680,6 +2682,7 @@ https://github.com/transmission/transmission/releases/download/3.00/transmission
 https://github.com/tree-sitter/tree-sitter-python/archive/refs/tags/v0.21.0.tar.gz
 https://github.com/tree-sitter/tree-sitter/archive/refs/tags/v0.20.8.tar.gz
 https://github.com/tree-sitter/tree-sitter/archive/refs/tags/v0.23.0.tar.gz
+https://github.com/tree-sitter/tree-sitter/archive/refs/tags/v0.24.0.tar.gz
 https://github.com/troglobit/editline/archive/refs/tags/1.17.1.tar.gz
 https://github.com/troglobit/sysklogd/archive/refs/tags/v2.5.1.tar.gz
 https://github.com/troglobit/sysklogd/archive/refs/tags/v2.5.2.tar.gz
