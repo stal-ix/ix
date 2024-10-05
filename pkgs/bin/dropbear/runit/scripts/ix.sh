@@ -19,6 +19,7 @@ cd /var/run/dropbear
 
 exec /bin/dropbear \
     -E -F -P pid   \
+    {{dropbear_flags}} \
     -r /etc/keys/dss   \
     -r /etc/keys/rsa   \
     -r /etc/keys/ecdsa \
