@@ -2673,6 +2673,7 @@ https://github.com/tinyalsa/tinyalsa/archive/refs/tags/v2.0.0.tar.gz
 https://github.com/tinyproxy/tinyproxy/archive/refs/tags/1.11.2.tar.gz
 https://github.com/tjko/jpegoptim/archive/refs/tags/v1.5.2.tar.gz
 https://github.com/tldr-pages/tldr-c-client/archive/refs/tags/v1.5.0.tar.gz
+https://github.com/tmux/tmux/archive/refs/tags/3.5a.tar.gz
 https://github.com/tmux/tmux/releases/download/3.3a/tmux-3.3a.tar.gz
 https://github.com/tmux/tmux/releases/download/3.4/tmux-3.4.tar.gz
 https://github.com/tmux/tmux/releases/download/3.5/tmux-3.5.tar.gz
