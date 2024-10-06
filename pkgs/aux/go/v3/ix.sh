@@ -11,6 +11,7 @@ go_v3_{{parent_id}}.pzd
 
 {% block build %}
 export GOSUMDB=off
+export GOWORK=off
 export GOCACHE=${tmp}/cgo
 export GOMODCACHE=${tmp}/gmc
 export GOPROXY="https://proxy.golang.org,direct"
