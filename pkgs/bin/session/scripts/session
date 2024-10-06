@@ -6,8 +6,7 @@ clear
 unset LANG
 
 export XDG_SESSION_ID=$$
-export PATH="/ix/realm/${USER}/bin:/bin"
-export IX_SDIR="/var/tmp/$(id -u)"
+export IX_SDIR="${TMPDIR}/$(id -u)"
 export TMPDIR="${IX_SDIR}/${XDG_SESSION_ID}"
 export XDG_DATA_DIRS="/ix/realm/${USER}/share"
 export XDG_RUNTIME_DIR="${TMPDIR}"

@@ -48,6 +48,7 @@
 #}
 
 {% block run_deps %}
+bin/bye/dpi
 bin/tor
 bin/nano
 bin/conntrack/tools

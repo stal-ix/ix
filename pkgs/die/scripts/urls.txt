@@ -164,6 +164,7 @@ https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.10.7.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.10.8.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.10.9.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.11.1.tar.xz
+https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.11.2.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.2.14.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.3.13.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.4.12.tar.xz
@@ -972,6 +973,7 @@ https://github.com/NetworkConfiguration/dhcpcd/archive/refs/tags/v10.0.4.tar.gz
 https://github.com/NetworkConfiguration/dhcpcd/archive/refs/tags/v10.0.5.tar.gz
 https://github.com/NetworkConfiguration/dhcpcd/archive/refs/tags/v10.0.6.tar.gz
 https://github.com/NetworkConfiguration/dhcpcd/archive/refs/tags/v10.0.8.tar.gz
+https://github.com/NetworkConfiguration/dhcpcd/archive/refs/tags/v10.1.0.tar.gz
 https://github.com/NetworkConfiguration/openresolv/archive/refs/tags/v3.13.2.tar.gz
 https://github.com/NixOS/nix/archive/refs/tags/2.17.0.tar.gz
 https://github.com/NixOS/nix/archive/refs/tags/2.18.0.tar.gz
@@ -1641,6 +1643,7 @@ https://github.com/hpjansson/chafa/archive/refs/tags/1.14.4.tar.gz
 https://github.com/hramrach/lm-sensors/archive/refs/tags/V3-6-2.tar.gz
 https://github.com/htop-dev/htop/archive/refs/tags/3.2.2.tar.gz
 https://github.com/htop-dev/htop/archive/refs/tags/3.3.0.tar.gz
+https://github.com/hufrea/byedpi/archive/refs/tags/v0.14.1.tar.gz
 https://github.com/hughsie/libgusb/archive/refs/tags/0.4.6.tar.gz
 https://github.com/hughsie/libgusb/archive/refs/tags/0.4.7.tar.gz
 https://github.com/hughsie/libgusb/archive/refs/tags/0.4.8.tar.gz
@@ -2466,6 +2469,7 @@ https://github.com/rui314/mold/archive/refs/tags/v2.32.0.tar.gz
 https://github.com/rui314/mold/archive/refs/tags/v2.32.1.tar.gz
 https://github.com/rui314/mold/archive/refs/tags/v2.33.0.tar.gz
 https://github.com/rui314/mold/archive/refs/tags/v2.34.0.tar.gz
+https://github.com/rui314/mold/archive/refs/tags/v2.34.1.tar.gz
 https://github.com/rui314/mold/archive/refs/tags/v2.4.0.tar.gz
 https://github.com/rui314/mold/archive/refs/tags/v2.4.1.tar.gz
 https://github.com/rvaiya/keyd/archive/refs/tags/v2.4.3.tar.gz
@@ -2669,6 +2673,7 @@ https://github.com/tinyalsa/tinyalsa/archive/refs/tags/v2.0.0.tar.gz
 https://github.com/tinyproxy/tinyproxy/archive/refs/tags/1.11.2.tar.gz
 https://github.com/tjko/jpegoptim/archive/refs/tags/v1.5.2.tar.gz
 https://github.com/tldr-pages/tldr-c-client/archive/refs/tags/v1.5.0.tar.gz
+https://github.com/tmux/tmux/archive/refs/tags/3.5a.tar.gz
 https://github.com/tmux/tmux/releases/download/3.3a/tmux-3.3a.tar.gz
 https://github.com/tmux/tmux/releases/download/3.4/tmux-3.4.tar.gz
 https://github.com/tmux/tmux/releases/download/3.5/tmux-3.5.tar.gz
@@ -2683,6 +2688,7 @@ https://github.com/tree-sitter/tree-sitter-python/archive/refs/tags/v0.21.0.tar.
 https://github.com/tree-sitter/tree-sitter/archive/refs/tags/v0.20.8.tar.gz
 https://github.com/tree-sitter/tree-sitter/archive/refs/tags/v0.23.0.tar.gz
 https://github.com/tree-sitter/tree-sitter/archive/refs/tags/v0.24.0.tar.gz
+https://github.com/tree-sitter/tree-sitter/archive/refs/tags/v0.24.1.tar.gz
 https://github.com/troglobit/editline/archive/refs/tags/1.17.1.tar.gz
 https://github.com/troglobit/sysklogd/archive/refs/tags/v2.5.1.tar.gz
 https://github.com/troglobit/sysklogd/archive/refs/tags/v2.5.2.tar.gz
@@ -3033,6 +3039,7 @@ https://gitlab.gnome.org/GNOME/gtk/-/archive/4.15.5/gtk-4.15.5.tar.bz2
 https://gitlab.gnome.org/GNOME/gtk/-/archive/4.16.0/gtk-4.16.0.tar.bz2
 https://gitlab.gnome.org/GNOME/gtk/-/archive/4.16.1/gtk-4.16.1.tar.bz2
 https://gitlab.gnome.org/GNOME/gtk/-/archive/4.16.2/gtk-4.16.2.tar.bz2
+https://gitlab.gnome.org/GNOME/gtk/-/archive/4.16.3/gtk-4.16.3.tar.bz2
 https://gitlab.gnome.org/GNOME/gtksourceview/-/archive/4.8.4/gtksourceview-4.8.4.tar.bz2
 https://gitlab.gnome.org/GNOME/gtksourceview/-/archive/5.10.0/gtksourceview-5.10.0.tar.bz2
 https://gitlab.gnome.org/GNOME/gtksourceview/-/archive/5.12.1/gtksourceview-5.12.1.tar.bz2
@@ -3062,6 +3069,7 @@ https://gitlab.gnome.org/GNOME/libsoup/-/archive/3.4.4/libsoup-3.4.4.tar.bz2
 https://gitlab.gnome.org/GNOME/libsoup/-/archive/3.6.0/libsoup-3.6.0.tar.bz2
 https://gitlab.gnome.org/GNOME/libspelling/-/archive/0.4.0/libspelling-0.4.0.tar.bz2
 https://gitlab.gnome.org/GNOME/libspelling/-/archive/0.4.1/libspelling-0.4.1.tar.bz2
+https://gitlab.gnome.org/GNOME/libspelling/-/archive/0.4.2/libspelling-0.4.2.tar.bz2
 https://gitlab.gnome.org/GNOME/libxml2/-/archive/v2.11.4/libxml2-v2.11.4.tar.bz2
 https://gitlab.gnome.org/GNOME/libxml2/-/archive/v2.11.7/libxml2-v2.11.7.tar.bz2
 https://gitlab.gnome.org/GNOME/libxml2/-/archive/v2.12.0/libxml2-v2.12.0.tar.bz2
@@ -3112,6 +3120,7 @@ https://gitlab.gnome.org/chergert/ptyxis/-/archive/46.2/ptyxis-46.2.tar.bz2
 https://gitlab.gnome.org/chergert/ptyxis/-/archive/46.3/ptyxis-46.3.tar.bz2
 https://gitlab.gnome.org/chergert/ptyxis/-/archive/47.0/ptyxis-47.0.tar.bz2
 https://gitlab.gnome.org/chergert/ptyxis/-/archive/47.1/ptyxis-47.1.tar.bz2
+https://gitlab.gnome.org/chergert/ptyxis/-/archive/47.2/ptyxis-47.2.tar.bz2
 https://gitlab.gnome.org/chergert/ptyxis/-/raw/08564402b8a9bc53bc2dbd3ff14f9d9598c14b7b/build-aux/0001-add-notification-and-shell-precmd-preexec.patch
 https://gitlab.gnome.org/crab2313/evince/-/archive/4c91df66ca83f8f1d057f0aa9069675b8bf5b6d6/evince-4c91df66ca83f8f1d057f0aa9069675b8bf5b6d6.tar.bz2
 https://gitlab.gnome.org/jadahl/libdecor/-/archive/0.1.1/libdecor-0.1.1.tar.bz2
@@ -3454,6 +3463,7 @@ https://www.crufty.net/ftp/pub/sjg/bmake-20240722.tar.gz
 https://www.crufty.net/ftp/pub/sjg/bmake-20240808.tar.gz
 https://www.crufty.net/ftp/pub/sjg/bmake-20240901.tar.gz
 https://www.crufty.net/ftp/pub/sjg/bmake-20240909.tar.gz
+https://www.crufty.net/ftp/pub/sjg/bmake-20240921.tar.gz
 https://www.eecis.udel.edu/~ntp/ntp_spool/ntp4/ntp-4.2/ntp-4.2.8p15.tar.gz
 https://www.freedesktop.org/software/colord/releases/colord-1.4.6.tar.xz
 https://www.freedesktop.org/software/fontconfig/release/fontconfig-2.14.2.tar.xz

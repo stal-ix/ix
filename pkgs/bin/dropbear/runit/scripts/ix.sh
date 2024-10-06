@@ -14,11 +14,15 @@ cat << EOF > script
 
 set -xue
 
-mkdir -p /var/run/dropbear
-cd /var/run/dropbear
+export TMPDIR=\${PWD}/tmp
+
+rm -rf \${TMPDIR}
+mkdir -p \${TMPDIR}
+chmod 01777 \${TMPDIR}
 
 exec /bin/dropbear \
-    -E -F -P pid   \
+    -e -E -F -P pid    \
+    {{dropbear_flags}} \
     -r /etc/keys/dss   \
     -r /etc/keys/rsa   \
     -r /etc/keys/ecdsa \
