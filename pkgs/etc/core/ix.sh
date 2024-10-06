@@ -26,6 +26,10 @@ ID_LIKE=linux
 HOME_URL="https://stal-ix.github.io/"
 EOF
 
+cat << EOF > profile
+export PATH="/ix/realm/\${USER}/bin:\${PATH}"
+EOF
+
 echo {{hostname or 'stalix'}} > hostname
 
 mkdir hosts.d
