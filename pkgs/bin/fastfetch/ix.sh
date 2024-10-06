@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.26.1.tar.gz
-sha:4320d1c304df6880e8c944e6a36340d12a3340477be40b2ead42be308a7fcdaf
+https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.27.1.tar.gz
+sha:de12f8cdb52bc1f123aa9b37813f009eeb09f15cbf43b033693c2936716e2626
 {% endblock %}
 
 {% block bld_libs %}
