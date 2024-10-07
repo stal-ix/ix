@@ -32,7 +32,6 @@ DEVEL_PREFIX="/"
 
 {% block patch %}
 sed -e "s|/tmp/|${TMPDIR}/|" -i Rules.mak
-sed -e 's|"/tmp/|"/var/tmp/|' -i include/paths.h
 base64 -d << EOF > extra/scripts/gen_bits_syscall_h.sh
 {% include 'gen.sh/base64' %}
 EOF
