@@ -1032,6 +1032,7 @@ https://github.com/PurpleI2P/i2pd/archive/refs/tags/2.51.0.tar.gz
 https://github.com/PurpleI2P/i2pd/archive/refs/tags/2.52.0.tar.gz
 https://github.com/PurpleI2P/i2pd/archive/refs/tags/2.53.0.tar.gz
 https://github.com/PurpleI2P/i2pd/archive/refs/tags/2.53.1.tar.gz
+https://github.com/PurpleI2P/i2pd/archive/refs/tags/2.54.0.tar.gz
 https://github.com/Rafostar/clapper/archive/refs/tags/0.6.1.tar.gz
 https://github.com/RazrFalcon/resvg/archive/refs/tags/v0.38.0.tar.gz
 https://github.com/RazrFalcon/resvg/archive/refs/tags/v0.39.0.tar.gz
@@ -2497,6 +2498,7 @@ https://github.com/sayanarijit/xplr/archive/refs/tags/v0.21.5.tar.gz
 https://github.com/sbcl/sbcl/archive/refs/tags/sbcl-2.3.10.tar.gz
 https://github.com/sched-ext/scx/archive/refs/tags/v1.0.2.tar.gz
 https://github.com/sched-ext/scx/archive/refs/tags/v1.0.4.tar.gz
+https://github.com/sched-ext/scx/archive/refs/tags/v1.0.5.tar.gz
 https://github.com/sctplab/usrsctp/archive/refs/tags/0.9.5.0.tar.gz
 https://github.com/sddm/sddm/archive/refs/tags/v0.20.0.tar.gz
 https://github.com/sddm/sddm/archive/refs/tags/v0.21.0.tar.gz
@@ -3583,6 +3585,7 @@ https://www.prevanders.net/libdwarf-0.9.1.tar.xz
 https://www.prevanders.net/libdwarf-0.9.2.tar.xz
 https://www.python.org/ftp/python/2.7.18/Python-2.7.18.tar.xz
 https://www.python.org/ftp/python/3.10.13/Python-3.10.13.tar.xz
+https://www.python.org/ftp/python/3.13.0/Python-3.13.0.tar.xz
 https://www.python.org/ftp/python/3.13.0/Python-3.13.0rc1.tar.xz
 https://www.python.org/ftp/python/3.8.17/Python-3.8.17.tgz
 https://www.python.org/ftp/python/3.9.17/Python-3.9.17.tar.xz
