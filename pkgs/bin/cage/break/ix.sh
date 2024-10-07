@@ -1,8 +1,8 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://github.com/project-repo/cagebreak/archive/refs/tags/2.3.1.tar.gz
-sha:0ea5e896e710c8b89485d13149e58b73b5f6fed53b3a173dfc558b600b2bf413
+https://github.com/project-repo/cagebreak/archive/refs/tags/2.4.0.tar.gz
+sha:5c2d1688a231dd1a311143aa595637078d2161789c735aad994622a021f84e6f
 {% endblock %}
 
 {% block bld_libs %}
@@ -10,8 +10,12 @@ lib/c
 lib/pango
 lib/cairo
 lib/wayland
-lib/wlroots/17
+lib/wlroots/18
 lib/xkb/common
+{% endblock %}
+
+{% block meson_tool %}
+bld/meson/4
 {% endblock %}
 
 {% block bld_tool %}
