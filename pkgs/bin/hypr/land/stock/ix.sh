@@ -45,9 +45,8 @@ EOF
 cat << EOF > scripts/generateVersion.sh
 #!/usr/bin/env sh
 EOF
-chmod +x scripts/generateVersion.sh
 
-sed -e 's|wayland-server|wayland-scanner|' -i protocols/meson.build
+chmod +x scripts/generateVersion.sh
 {% endblock %}
 
 {% block build_flags %}
