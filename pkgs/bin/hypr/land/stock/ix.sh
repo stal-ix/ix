@@ -38,12 +38,6 @@ bin/hypr/wayland/scanner
 {% endblock %}
 
 {% block patch %}
-sed -e 's|.*define PI .*||' -i src/macros.hpp
-sed -e 's|PI |M_PI |g' -i src/config/ConfigManager.cpp
-sed -e 's|PI |M_PI |g' -i src/render/OpenGL.cpp
-sed -e 's|PI |M_PI |g' -i src/desktop/Window.cpp
-sed -e 's|PI |M_PI |g' -i src/debug/HyprCtl.cpp
-
 sed -e 's|) {|) const {|' -i src/helpers/WLClasses.hpp
 
 base64 -d << EOF > src/debug/CrashReporter.cpp
