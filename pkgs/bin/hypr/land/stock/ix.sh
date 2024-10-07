@@ -38,8 +38,6 @@ bin/hypr/wayland/scanner
 {% endblock %}
 
 {% block patch %}
-sed -e 's|) {|) const {|' -i src/helpers/WLClasses.hpp
-
 base64 -d << EOF > src/debug/CrashReporter.cpp
 {% include 'CrashReporter.cpp/base64' %}
 EOF
