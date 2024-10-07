@@ -44,9 +44,6 @@ sed -e 's|PI |M_PI |g' -i src/render/OpenGL.cpp
 sed -e 's|PI |M_PI |g' -i src/desktop/Window.cpp
 sed -e 's|PI |M_PI |g' -i src/debug/HyprCtl.cpp
 
-sed -e 's|have_xwlr = .*|have_xwlr = false|' \
-    -i meson.build
-
 sed -e 's|) {|) const {|' -i src/helpers/WLClasses.hpp
 
 base64 -d << EOF > src/debug/CrashReporter.cpp
