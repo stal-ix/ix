@@ -15,8 +15,7 @@ mount /home home
 ln -s / usr
 pivot_root /sys /sys/var/mnt/root
 cd /
-mkdir -p dev sys proc var/run var/tmp var/log
-chmod 01777 var/tmp
+mkdir -p dev sys proc var/run var/log
 EOF
 
 cat << EOF > ${out}/etc/runit/1.d/10-mount-rw.sh

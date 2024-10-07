@@ -38,7 +38,6 @@ EOF
 mkdir -p etc/env.d
 
 cat << EOF > etc/env.d/00-env.sh
-export TMPDIR=/var/tmp
 EOF
 
 mkdir -p etc/sysctl.d
@@ -64,6 +63,7 @@ cat << EOF > 2
 unset TERM
 mkdir -p /var/run/runsvdir
 cd /var/run/runsvdir
+export TMPDIR=/var/run/runsvdir
 exec 1>out
 exec 2>&1
 set -x
@@ -106,8 +106,7 @@ mount -o remount,rw /
 rm -rf /var
 mkdir /var
 mount -t tmpfs tmpfs /var
-mkdir -p /var/run /var/tmp /var/log /var/mnt
-chmod 01777 /var/tmp
+mkdir -p /var/run /var/log /var/mnt
 EOF
 
 cat << EOF > 11-fix-perm.sh
