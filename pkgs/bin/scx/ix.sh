@@ -1,8 +1,8 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://github.com/sched-ext/scx/archive/refs/tags/v1.0.4.tar.gz
-sha:c6d76765cafca8c6146aca092e1dde0f8256c94e3f7fa7da86a3b37c84287efd
+https://github.com/sched-ext/scx/archive/refs/tags/v1.0.5.tar.gz
+sha:0bf24244de51441a8f7ede0ffc0ee7275644c7a93ac6f6b691eee952d6744f9c
 {% endblock %}
 
 {% block bld_tool %}
