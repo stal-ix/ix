@@ -1,8 +1,8 @@
 {% extends '//die/c/configure.sh' %}
 
 {% block fetch %}
-https://gitlab.com/chrony/chrony/-/archive/4.6/chrony-4.6.tar.bz2
-sha:c6d13f555f8e59735190588bbe86ca4ef9fc770da6695f2ffed491128f6d9118
+https://github.com/mlichvar/chrony/archive/refs/tags/4.6.1.tar.gz
+sha:5eda8cf417db1a6b6098e9c72b9cf896468c4f5a84dd5b3171712ec240197312
 {% endblock %}
 
 {% block bld_libs %}

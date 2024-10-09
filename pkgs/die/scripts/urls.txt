@@ -2124,6 +2124,7 @@ https://github.com/mjansson/rpmalloc/archive/refs/tags/1.4.4.tar.gz
 https://github.com/mkj/dropbear/archive/refs/tags/DROPBEAR_2022.83.tar.gz
 https://github.com/mkj/dropbear/archive/refs/tags/DROPBEAR_2024.84.tar.gz
 https://github.com/mkj/dropbear/archive/refs/tags/DROPBEAR_2024.85.tar.gz
+https://github.com/mlichvar/chrony/archive/refs/tags/4.6.1.tar.gz
 https://github.com/mm2/Little-CMS/archive/refs/tags/lcms2.15.tar.gz
 https://github.com/mm2/Little-CMS/archive/refs/tags/lcms2.16.tar.gz
 https://github.com/mobile-shell/mosh/archive/refs/tags/mosh-1.4.0.tar.gz
