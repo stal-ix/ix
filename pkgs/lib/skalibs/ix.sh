@@ -1,8 +1,8 @@
 {% extends '//die/c/autohell.sh' %}
 
 {% block fetch %}
-https://github.com/skarnet/skalibs/archive/refs/tags/v2.14.1.0.tar.gz
-sha:148cd184754fef201d23ace2819b903006a220781da17304d8186b23f9725cd8
+https://github.com/skarnet/skalibs/archive/refs/tags/v2.14.3.0.tar.gz
+sha:d4d46b4a1a8418de638beecc6f063f6a87027e000ba8a2ab90033580f73e5e8f
 {% endblock %}
 
 {% block lib_deps %}
@@ -11,12 +11,6 @@ lib/c/naked
 
 {% block patch %}
 sed -e 's|ifdef SKALIBS_HASDIRFD|if 1|' -i src/libstddjb/dir_fd.c
-{% endblock %}
-
-{% block install %}
-{{super()}}
-cd ${out}/lib
-mv skalibs/*.a ./
 {% endblock %}
 
 {% block env %}
