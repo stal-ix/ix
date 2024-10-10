@@ -1,11 +1,11 @@
 {% extends '//die/rust/cargo.sh' %}
 
 {% block cargo_url %}
-https://github.com/erebe/wstunnel/archive/refs/tags/v10.1.3.tar.gz
+https://github.com/erebe/wstunnel/archive/refs/tags/v10.1.4.tar.gz
 {% endblock %}
 
 {% block cargo_sha %}
-8b4077beeaba62bb87b04b04a554f4a783b15e5bc8e593e600dba76a1b683281
+a07dcf54a7c2893e1ffc9aad40e72d1f9a16ac9d661513b8f138e9ad08108a54
 {% endblock %}
 
 {% block bld_libs %}

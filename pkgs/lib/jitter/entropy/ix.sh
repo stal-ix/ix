@@ -1,8 +1,8 @@
 {% extends '//die/c/make.sh' %}
 
 {% block fetch %}
-https://github.com/smuellerDD/jitterentropy-library/archive/refs/tags/v3.4.1.tar.gz
-sha:33352369092b5a0d1463c720f5a8a3e870dbd63502ea57692e7da84a65c0c5c3
+https://github.com/smuellerDD/jitterentropy-library/archive/refs/tags/v3.6.0.tar.gz
+sha:e2af325cdc7d951a66af782fad4bcdd622e9d8355dd024b7562e2f8b3f6079cd
 {% endblock %}
 
 {% block lib_deps %}

@@ -5,11 +5,11 @@ https://gitlab.com/inkscape/inkscape
 {% endblock %}
 
 {% block git_branch %}
-INKSCAPE_1_3_2
+INKSCAPE_1_4
 {% endblock %}
 
 {% block git_sha %}
-fd54f48357323f61b31166f77e3c1a1414104f9e351186b2777f04d40588e145
+cef56bd89b8e42320b80dc686f4e8357cca218031899370c6988f25617758cab
 {% endblock %}
 
 {% block bld_libs %}
@@ -73,4 +73,5 @@ export CXXFLAGS="-Wno-register -std=c++20 ${CXXFLAGS}"
 sed -e 's|PAGE_SIZE|X_PAGE_SIZE|' -i src/attributes.cpp
 sed -e 's|PAGE_SIZE|X_PAGE_SIZE|' -i src/attributes.h
 sed -e 's|PAGE_SIZE|X_PAGE_SIZE|' -i src/object/sp-page.cpp
+sed -e 's|other.p|other._p|' -i src/util/gobjectptr.h
 {% endblock %}

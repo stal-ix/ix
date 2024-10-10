@@ -1,8 +1,8 @@
 {% extends '//die/c/make.sh' %}
 
 {% block fetch %}
-https://github.com/tree-sitter/tree-sitter/archive/refs/tags/v0.24.1.tar.gz
-sha:7adb5bb3b3c2c4f4fdc980a9a13df8fbf3526a82b5c37dd9cf2ed29de56a4683
+https://github.com/tree-sitter/tree-sitter/archive/refs/tags/v0.24.3.tar.gz
+sha:0a8d0cf8e09caba22ed0d8439f7fa1e3d8453800038e43ccad1f34ef29537da1
 {% endblock %}
 
 {% block lib_deps %}

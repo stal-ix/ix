@@ -38,7 +38,6 @@
 #bin/ff/play
 #bin/npm
 #bin/yt
-#bin/inkscape
 #bin/balsa
 #bin/scummvm
 #bin/code/lite
@@ -48,6 +47,7 @@
 #}
 
 {% block run_deps %}
+bin/inkscape
 bin/bye/dpi
 bin/tor
 bin/nano
