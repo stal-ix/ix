@@ -12,6 +12,7 @@ lib/sdl/2
 {% endblock %}
 
 {% block cmake_flags %}
+CMAKE_INSTALL_LIBDIR=lib
 SDL2NET_SAMPLES=OFF
 BUILD_SHARED_LIBS=ON
 {% endblock %}
