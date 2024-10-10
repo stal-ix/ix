@@ -5,5 +5,5 @@ https://github.com/mvdan/sh/archive/refs/tags/v3.8.0.tar.gz
 {% endblock %}
 
 {% block go_sha %}
-3525ae04bb813eb5a202c5518032297ec6af22f89538f5bda94dbe625609b648
+d43c550c15e0c6f0b53254c825eb277bb8928ac4cfde08a8e1d83fa92c6af10b
 {% endblock %}
