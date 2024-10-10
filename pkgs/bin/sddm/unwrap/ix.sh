@@ -35,7 +35,6 @@ LIBXAU_INCLUDE_DIRS=/nowhere
 NO_SYSTEMD=ON
 BUILD_WITH_QT6=ON
 ENABLE_JOURNALD=OFF
-CMAKE_INSTALL_SYSCONFDIR=${out}/etc
 {% endblock %}
 
 {% block patch %}

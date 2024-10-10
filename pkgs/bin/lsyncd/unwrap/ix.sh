@@ -13,7 +13,3 @@ lib/lua
 {% block bld_tool %}
 lib/lua/{{lua_ver}}
 {% endblock %}
-
-{% block cmake_flags %}
-CMAKE_INSTALL_MANDIR=${out}/doc
-{% endblock %}

@@ -48,8 +48,13 @@ ${CMFLAGS}
 
 {% block cmake_install_dirs %}
 -DCMAKE_INSTALL_PREFIX="${out}"
--DCMAKE_INSTALL_LIBDIR="${out}/lib"
--DCMAKE_INSTALL_LIBEXECDIR="${out}/{{kind}}/{{uniq_id}}"
+-DCMAKE_INSTALL_LIBDIR=lib
+-DCMAKE_INSTALL_BINDIR=bin
+-DCMAKE_INSTALL_MANDIR=doc
+-DCMAKE_INSTALL_DATADIR=share
+-DCMAKE_INSTALL_SYSCONFDIR=etc
+-DCMAKE_INSTALL_INCLUDEDIR=include
+-DCMAKE_INSTALL_LIBEXECDIR={{kind}}/{{uniq_id}}
 {% endblock %}
 
 -DCMAKE_C_COMPILER="$(which ${CC})"
