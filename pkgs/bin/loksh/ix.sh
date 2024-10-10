@@ -5,11 +5,11 @@ https://github.com/dimkr/loksh
 {% endblock %}
 
 {% block git_branch %}
-7.5
+7.6
 {% endblock %}
 
 {% block git_sha %}
-7a298122f5b08c2c9c7a37b2f509641674f6467d867cf1b8acbffde460c2752b
+b002d6c7dea0d0547b36bc5bd91c2b804438531d2c35ba222b2e2ce226927ac5
 {% endblock %}
 
 {% block lib_deps %}
