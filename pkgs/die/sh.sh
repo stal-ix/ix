@@ -3,7 +3,12 @@
 {% block script_functions %}
 {{super()}}
 
-main_f() {
+script_f() (
+{% block sh_script %}
+{% endblock %}
+)
+
+prepare_f() {
     source_env "${IX_B_DIR}"
 
     fast_rm 1 ${out}
@@ -14,12 +19,9 @@ main_f() {
 
     cd ${tmp}
     mkdir tmp
+}
 
-(
-{% block sh_script %}
-{% endblock %}
-)
-
+cleanup_f() {
 {% block fix_mtime  %}
     find ${out} -type f | while read l; do
         touch -t 200001010000.00 "${l}"
@@ -40,6 +42,12 @@ main_f() {
 {% if not skipsrc %}
     fast_rm 3 ${tmp}
 {% endif %}
+}
+
+main_f() {
+    prepare_f
+    script_f
+    cleanup_f
 }
 {% endblock %}
 
