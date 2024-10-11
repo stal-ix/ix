@@ -56,3 +56,7 @@ bin/xsltproc
 {% block build_flags %}
 shut_up
 {% endblock %}
+
+{% block patch %}
+sed -e 's|.*find_package.*CARES.*||' -i CMakeLists.txt
+{% endblock %}
