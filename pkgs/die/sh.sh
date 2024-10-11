@@ -109,5 +109,5 @@ fast_rm 3 ${tmp}
 {% endblock %}
 
 {% block script_exec %}
-sh -s
+["sh", "-s"]
 {% endblock %}
