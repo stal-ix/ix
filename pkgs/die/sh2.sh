@@ -1,6 +1,7 @@
 {% extends 'sh1.sh' %}
 
 {% block script_prologue %}
+{{super()}}
 set -eu
 {% if setx or verbose %}
 set -x
@@ -9,6 +10,7 @@ cd /
 {% endblock %}
 
 {% block script_init_env %}
+{{super()}}
 export PATH=
 export COFLAGS=
 export CMFLAGS=

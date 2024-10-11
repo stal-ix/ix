@@ -1,7 +1,7 @@
 {% extends 'sh0.sh' %}
 
 {% block script_body_sh %}
-# {{rebuild}}
+{{super()}}
 {% block script_functions %}
 {% endblock %}
 {% block script_prologue %}

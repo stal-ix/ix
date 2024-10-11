@@ -19,6 +19,7 @@ exit 1
 {% endblock %}
 
 {% block script_body_sh %}
+# {{rebuild}}
 {% endblock %}
 
 {% block script_exec %}

@@ -68,5 +68,6 @@ main_f() {
 {% endblock %}
 
 {% block script_main %}
+{{super()}}
 main_f
 {% endblock %}
