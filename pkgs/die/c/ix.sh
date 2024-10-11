@@ -12,12 +12,8 @@
 {% block opt_flags %}
 {% endblock %}
 
-{% block functions %}
+{% block script_functions %}
 {{super()}}
-
-
-
-
 
 {% set cpp_flags %}
   {% if 'shut_up' in build_flags  %}

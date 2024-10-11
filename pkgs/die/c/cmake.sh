@@ -13,7 +13,7 @@ fix_cmake_lib
 {% endif %}
 {% endblock %}
 
-{% block functions %}
+{% block script_functions %}
 {{super()}}
 
 add_suffix() (

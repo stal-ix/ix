@@ -1,109 +1,48 @@
-{% extends 'script.json' %}
+{% extends 'sh2.sh' %}
 
-{% block bld_deps %}
+{% block script_functions %}
 {{super()}}
-{% if show_script %}
-bin/sh/fmt
-{% endif %}
-{% endblock %}
 
-{% block script_body %}
-{% if show_script %}
-base64 -d << EOF | shfmt -i 4 | cat -n
-{{self.script_body_sh() | b64e}}
-EOF
-exit 1
-{% else %}
-{{self.script_body_sh().strip()}}
-{% endif %}
-{% endblock %}
+main_f() {
+    source_env "${IX_B_DIR}"
 
-{% block script_body_sh %}
-# {{rebuild}}
-{% block prologue %}
-set -eu
+    fast_rm 1 ${out}
+    mkdir -p ${out}
 
-{% if setx or verbose %}
-set -x
-{% endif %}
+    fast_rm 2 ${tmp}
+    mkdir -p ${tmp}
 
-cd /
-
-source_env() {
-    OFS=${IFS}; IFS=':'; for x in ${1}; do
-        IFS=${OFS}; . "${x}/env"; IFS=':'
-    done; IFS=${OFS}
-}
-
-fast_rm() (
-    mv "${2}" "{{trash_dir}}/${IX_RANDOM}_${1}" || true
-)
-
-{% block functions %}
-{% endblock %}
-
-# init
-{% block script_init_env %}
-export PATH=
-export COFLAGS=
-export CMFLAGS=
-export PYTHONPATH=
-export ACLOCAL_PATH=
-export PKG_CONFIG_PATH=
-export CMAKE_PREFIX_PATH=
-export PYTHONDONTWRITEBYTECODE=1
-export GIRPATH=
-export VALAFLAGS=
-export GIRSFLAGS=
-export GIRCFLAGS=
-{% endblock %}
-
-source_env "${IX_B_DIR}"
-
-fast_rm 1 ${out}
-mkdir -p ${out}
-
-fast_rm 2 ${tmp}
-mkdir -p ${tmp}
-
-cd ${tmp}
-mkdir tmp
-
-export TMPDIR=${PWD}/tmp
-export HOME=${TMPDIR}
-{% endblock %}
+    cd ${tmp}
+    mkdir tmp
 
 (
 {% block sh_script %}
 {% endblock %}
-) < /dev/null
+)
 
-{# https://gist.github.com/pg83/4e54f757ce838ba6aaf746b6b9a2b8b3 #}
-
-{% block epilogue %}
 {% block fix_mtime  %}
-find ${out} -type f | while read l; do
-    touch -t 200001010000.00 "${l}"
-done
+    find ${out} -type f | while read l; do
+        touch -t 200001010000.00 "${l}"
+    done
 {% endblock %}
 
 {% block chmod_ro %}
-find ${out} | sort -r | while read l; do
-    chmod a-w "${l}" || rm "${l}"
-done
+    find ${out} | sort -r | while read l; do
+        chmod a-w "${l}" || rm "${l}"
+    done
 
-chmod +w ${out}
-{% endblock %}
+    chmod +w ${out}
 {% endblock %}
 
 {% if simulate_failure %}
-exit 1
+    exit 1
 {% endif %}
 {% if not skipsrc %}
-fast_rm 3 ${tmp}
+    fast_rm 3 ${tmp}
 {% endif %}
+}
 {% endblock %}
 
-{% block script_exec %}
-["sh", "-s"]
+{% block script_main %}
+main_f
 {% endblock %}

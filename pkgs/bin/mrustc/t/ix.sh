@@ -41,8 +41,9 @@ export RUSTC_SRC=${PWD}/rustc-${RUSTC_VERSION}-src
 export VENDOR_DIR=${RUSTC_SRC}/vendor
 {% endblock %}
 
-{% block functions %}
+{% block script_functions %}
 {{super()}}
+
 cargo() (
     export MRUSTC_PATH=$(which mrustc)
 

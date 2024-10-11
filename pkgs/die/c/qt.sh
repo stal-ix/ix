@@ -46,7 +46,7 @@ echo 'TODO(pg): no postinstall for qt binaries?'
 {% endif %}
 {% endblock %}
 
-{% block functions %}
+{% block script_functions %}
 {{super()}}
 
 qt_cm_flags() (
