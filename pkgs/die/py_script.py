@@ -30,10 +30,8 @@ def footer():
 header()
 atexit.register(footer)
 
-# suc
 {% block py_script %}
 {% endblock %}
-# euc
 {% endblock %}
 
 {% block script_exec %}
