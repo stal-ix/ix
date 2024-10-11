@@ -31,8 +31,13 @@ def execute_cmd(c, mt):
 
     cl.log(f'ENTER {descr}', color='b')
 
+    stdin = c.get('stdin', None)
+
+    if stdin:
+        stdin = stdin.encode()
+
     try:
-        subprocess.run(args, env=env, input=c.get('stdin', '').encode(), check=True)
+        subprocess.run(args, env=env, input=stdin, check=True)
     except subprocess.CalledProcessError as e:
         cl.log(f'ERROR {descr}', color='r')
         os.kill(0, signal.SIGKILL)
