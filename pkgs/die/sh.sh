@@ -82,21 +82,18 @@ export HOME=${TMPDIR}
 
 {% block epilogue %}
 {% block fix_mtime  %}
-if command -v find; then
-    find ${out} -type f | while read l; do
-        touch -t 200001010000.00 "${l}"
-    done
-fi
+find ${out} -type f | while read l; do
+    touch -t 200001010000.00 "${l}"
+done
 {% endblock %}
 
 {% block chmod_ro %}
-if command -v find; then
-    find ${out} | sort -r | while read l; do
-        chmod a-w "${l}" || rm "${l}"
-    done
+find ${out} | sort -r | while read l; do
+    chmod a-w "${l}" || rm "${l}"
+done
 
-    chmod +w ${out}
-fi
+chmod +w ${out}
+{% endblock %}
 {% endblock %}
 
 {% if simulate_failure %}
@@ -105,7 +102,6 @@ exit 1
 {% if not skipsrc %}
 fast_rm 3 ${tmp}
 {% endif %}
-{% endblock %}
 {% endblock %}
 
 {% block script_exec %}
