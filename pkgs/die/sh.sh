@@ -3,6 +3,16 @@
 {% block script_functions %}
 {{super()}}
 
+source_env() {
+    OFS=${IFS}; IFS=':'; for x in ${1}; do
+        IFS=${OFS}; . "${x}/env"; IFS=':'
+    done; IFS=${OFS}
+}
+
+fast_rm() (
+    mv "${2}" "{{trash_dir}}/${IX_RANDOM}_${1}" || true
+)
+
 script_f() (
 {% block sh_script %}
 {% endblock %}
@@ -21,13 +31,15 @@ prepare_f() {
     mkdir tmp
 }
 
-cleanup_f() {
+fix_mtime_f() (
 {% block fix_mtime  %}
     find ${out} -type f | while read l; do
         touch -t 200001010000.00 "${l}"
     done
 {% endblock %}
+)
 
+chmod_ro_f() (
 {% block chmod_ro %}
     find ${out} | sort -r | while read l; do
         chmod a-w "${l}" || rm "${l}"
@@ -35,7 +47,11 @@ cleanup_f() {
 
     chmod +w ${out}
 {% endblock %}
+)
 
+cleanup_f() {
+    fix_mtime_f
+    chmod_ro_f
 {% if simulate_failure %}
     exit 1
 {% endif %}

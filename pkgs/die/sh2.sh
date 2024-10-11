@@ -1,17 +1,5 @@
 {% extends 'sh1.sh' %}
 
-{% block script_functions %}
-source_env() {
-    OFS=${IFS}; IFS=':'; for x in ${1}; do
-        IFS=${OFS}; . "${x}/env"; IFS=':'
-    done; IFS=${OFS}
-}
-
-fast_rm() (
-    mv "${2}" "{{trash_dir}}/${IX_RANDOM}_${1}" || true
-)
-{% endblock %}
-
 {% block script_prologue %}
 set -eu
 {% if setx or verbose %}
