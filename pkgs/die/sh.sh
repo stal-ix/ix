@@ -73,8 +73,10 @@ export TMPDIR=${PWD}/tmp
 export HOME=${TMPDIR}
 {% endblock %}
 
+(
 {% block sh_script %}
 {% endblock %}
+) < /dev/null
 
 {# https://gist.github.com/pg83/4e54f757ce838ba6aaf746b6b9a2b8b3 #}
 
