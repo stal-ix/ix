@@ -13,11 +13,6 @@ fast_rm() (
     mv "${2}" "{{trash_dir}}/${IX_RANDOM}_${1}" || true
 )
 
-script_f() (
-{% block sh_script %}
-{% endblock %}
-)
-
 prepare_f() {
     source_env "${IX_B_DIR}"
 
@@ -59,6 +54,11 @@ cleanup_f() {
     fast_rm 3 ${tmp}
 {% endif %}
 }
+
+script_f() (
+{% block sh_script %}
+{% endblock %}
+)
 
 main_f() {
     prepare_f
