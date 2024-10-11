@@ -12,6 +12,7 @@ lib/c
 {% block cmake_flags %}
 {{super()}}
 PNG_SUPPORTED=OFF
+CMAKE_INSTALL_LIBDIR=${out}/lib
 {% endblock %}
 
 {% block bld_tool %}
