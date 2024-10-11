@@ -5,9 +5,11 @@ echo 'nothing to fix'
 {% endblock %}
 
 {% block chmod_ro %}
+:
 {% endblock %}
 
 {% block fix_mtime %}
+:
 {% endblock %}
 
 {% block env %}
