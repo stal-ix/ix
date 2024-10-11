@@ -35,6 +35,8 @@ def execute_cmd(c, mt):
 
     if stdin:
         stdin = stdin.encode()
+    else:
+        stdin = None
 
     try:
         subprocess.run(args, env=env, input=stdin, check=True)
