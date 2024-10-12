@@ -47,6 +47,7 @@
 #}
 
 {% block run_deps %}
+bin/co2mon
 bin/inkscape
 bin/bye/dpi
 bin/tor
