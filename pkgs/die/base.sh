@@ -1,6 +1,6 @@
 {% extends 'sh.sh' %}
 
-{% block functions %}
+{% block script_functions %}
 {{super()}}
 
 step_unpack() {

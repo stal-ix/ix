@@ -49,7 +49,7 @@ class CmdBuild:
     def script(self, sb, src_dir):
         build = self.package.descr['bld']['script']
 
-        return sb.build_cmd_script(list(build['exec'].split()), build['data'], dict(self.iter_env(src_dir)))
+        return sb.build_cmd_script(build['exec'], build['data'], dict(self.iter_env(src_dir)))
 
     def iter_env(self, src_dir):
         h_lib = []

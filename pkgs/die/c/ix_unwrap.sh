@@ -19,7 +19,7 @@
   {% endif %}
 {% endblock %}
 
-{% block functions %}
+{% block script_functions %}
 {{super()}}
 
 setup_tc_here() {

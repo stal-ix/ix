@@ -415,6 +415,7 @@ https://downloads.sourceforge.net/project/sbcl/sbcl/2.4.5/sbcl-2.4.5-source.tar.
 https://downloads.sourceforge.net/project/sbcl/sbcl/2.4.6/sbcl-2.4.6-source.tar.bz2
 https://downloads.sourceforge.net/project/sbcl/sbcl/2.4.7/sbcl-2.4.7-source.tar.bz2
 https://downloads.sourceforge.net/project/sbcl/sbcl/2.4.8/sbcl-2.4.8-source.tar.bz2
+https://downloads.sourceforge.net/project/sbcl/sbcl/2.4.9/sbcl-2.4.9-source.tar.bz2
 https://downloads.sourceforge.net/project/scons/scons/4.5.2/SCons-4.5.2.tar.gz
 https://downloads.sourceforge.net/project/sdlgfx/SDL_gfx-2.0.25.tar.gz
 https://downloads.sourceforge.net/project/sox/sox/14.4.2/sox-14.4.2.tar.bz2
@@ -1096,6 +1097,7 @@ https://github.com/Z3Prover/z3/archive/refs/tags/z3-4.12.5.tar.gz
 https://github.com/Z3Prover/z3/archive/refs/tags/z3-4.12.6.tar.gz
 https://github.com/Z3Prover/z3/archive/refs/tags/z3-4.13.0.tar.gz
 https://github.com/Z3Prover/z3/archive/refs/tags/z3-4.13.2.tar.gz
+https://github.com/Z3Prover/z3/archive/refs/tags/z3-4.13.3.tar.gz
 https://github.com/a-j-wood/pv/releases/download/v1.7.24/pv-1.7.24.tar.gz
 https://github.com/abseil/abseil-cpp/archive/refs/tags/20230125.3.tar.gz
 https://github.com/abseil/abseil-cpp/archive/refs/tags/20230802.1.tar.gz
@@ -1984,6 +1986,7 @@ https://github.com/libuv/libuv/archive/refs/tags/v1.46.0.tar.gz
 https://github.com/libuv/libuv/archive/refs/tags/v1.47.0.tar.gz
 https://github.com/libuv/libuv/archive/refs/tags/v1.48.0.tar.gz
 https://github.com/libuv/libuv/archive/refs/tags/v1.49.0.tar.gz
+https://github.com/libuv/libuv/archive/refs/tags/v1.49.1.tar.gz
 https://github.com/libxmp/libxmp/archive/refs/tags/libxmp-4.6.0.tar.gz
 https://github.com/limine-bootloader/limine/releases/download/v5.20230801.0/limine-5.20230801.0.tar.xz
 https://github.com/linux-nvme/libnvme/archive/refs/tags/v1.10.tar.gz
@@ -2546,6 +2549,7 @@ https://github.com/skarnet/execline/archive/refs/tags/v2.9.5.0.tar.gz
 https://github.com/skarnet/execline/archive/refs/tags/v2.9.5.1.tar.gz
 https://github.com/skarnet/execline/archive/refs/tags/v2.9.6.1.tar.gz
 https://github.com/skarnet/mdevd/archive/refs/tags/v0.1.6.3.tar.gz
+https://github.com/skarnet/mdevd/archive/refs/tags/v0.1.6.5.tar.gz
 https://github.com/skarnet/skalibs/archive/refs/tags/v2.14.1.0.tar.gz
 https://github.com/skarnet/skalibs/archive/refs/tags/v2.14.3.0.tar.gz
 https://github.com/skeeto/u-config/archive/refs/tags/v0.31.1.tar.gz

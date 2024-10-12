@@ -1,8 +1,8 @@
 {% extends '//die/c/autohell.sh' %}
 
 {% block fetch %}
-https://github.com/skarnet/mdevd/archive/refs/tags/v0.1.6.3.tar.gz
-sha:97a0481d95a9f76ed810d39ccfb57c41b3f4b4ddeb1796f94743c474719ded24
+https://github.com/skarnet/mdevd/archive/refs/tags/v0.1.6.5.tar.gz
+sha:e06b541d092e98b5bc9b92f5833ce4e56da10c0457444bcacf83604957b48ace
 {% endblock %}
 
 {% block bld_libs %}

@@ -54,7 +54,7 @@ bin/nano
 bin/conntrack/tools
 bin/think/fan
 bin/go/dispatch/proxy
-bin/dm/setup
+bin/dm/setup(verbose=1,setx=1)
 bin/usb/view
 bin/gost
 bin/sing/box
@@ -662,7 +662,7 @@ bin/poppler
 bin/elfutils
 bin/fontconfig
 bin/dav1d
-bin/re2c
+bin/re2c(verbose=1,setx=1)
 bin/aserver
 bin/tinyalsa
 bin/alsa/utils

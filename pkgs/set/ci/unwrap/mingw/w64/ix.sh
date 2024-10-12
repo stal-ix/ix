@@ -9,7 +9,7 @@ bin/file
 bin/yajl
 bin/gzip
 bin/nasm
-bin/re2c
+bin/re2c(verbose=1,setx=1)
 bin/gperf
 bin/iconv
 bin/idn/2

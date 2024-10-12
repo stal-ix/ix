@@ -10,7 +10,7 @@ rename_dynlib
 {% endblock %}
 {% endset %}
 
-{% block functions %}
+{% block script_functions %}
 {{super()}}
 {% include 'functions.sh' %}
 {% endblock %}

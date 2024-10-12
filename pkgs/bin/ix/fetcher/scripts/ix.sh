@@ -3,7 +3,7 @@
 {% block install %}
 mkdir ${out}/bin
 cat << EOF > ${out}/bin/fetcher
-#!/bin/python3
+#!/usr/bin/env python3
 M = '''
 {% include '//die/scripts/mirrors.txt' %}
 '''

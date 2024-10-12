@@ -1,33 +1,7 @@
-{% extends 'script.json' %}
+{% extends 'sh2.sh' %}
 
-{% block bld_deps %}
+{% block script_functions %}
 {{super()}}
-{% if show_script %}
-bin/sh/fmt
-{% endif %}
-{% endblock %}
-
-{% block script_body %}
-{% if show_script %}
-base64 -d << EOF | shfmt -i 4 | cat -n
-{{self.script_body_sh() | b64e}}
-EOF
-exit 1
-{% else %}
-{{self.script_body_sh().strip()}}
-{% endif %}
-{% endblock %}
-
-{% block script_body_sh %}
-# {{rebuild}}
-{% block prologue %}
-set -eu
-
-{% if setx or verbose %}
-set -x
-{% endif %}
-
-cd /
 
 source_env() {
     OFS=${IFS}; IFS=':'; for x in ${1}; do
@@ -39,77 +13,61 @@ fast_rm() (
     mv "${2}" "{{trash_dir}}/${IX_RANDOM}_${1}" || true
 )
 
-{% block functions %}
-{% endblock %}
+prepare_f() {
+    source_env "${IX_B_DIR}"
 
-# init
-{% block script_init_env %}
-export PATH=
-export COFLAGS=
-export CMFLAGS=
-export PYTHONPATH=
-export ACLOCAL_PATH=
-export PKG_CONFIG_PATH=
-export CMAKE_PREFIX_PATH=
-export PYTHONDONTWRITEBYTECODE=1
-export GIRPATH=
-export VALAFLAGS=
-export GIRSFLAGS=
-export GIRCFLAGS=
-{% endblock %}
+    fast_rm 1 ${out}
+    mkdir -p ${out}
 
-source_env "${IX_B_DIR}"
+    fast_rm 2 ${tmp}
+    mkdir -p ${tmp}
 
-fast_rm 1 ${out}
-mkdir -p ${out}
+    cd ${tmp}
+    mkdir tmp
+}
 
-fast_rm 2 ${tmp}
-mkdir -p ${tmp}
-
-cd ${tmp}
-mkdir tmp
-
-export TMPDIR=${PWD}/tmp
-export HOME=${TMPDIR}
-{% endblock %}
-
-(
-# suc
-{% block sh_script %}
-{% endblock %}
-# euc
-) < /dev/null
-
-{# https://gist.github.com/pg83/4e54f757ce838ba6aaf746b6b9a2b8b3 #}
-
-{% block epilogue %}
+fix_mtime_f() (
 {% block fix_mtime  %}
-if command -v find; then
     find ${out} -type f | while read l; do
         touch -t 200001010000.00 "${l}"
     done
-fi
 {% endblock %}
+)
 
+chmod_ro_f() (
 {% block chmod_ro %}
-if command -v find; then
     find ${out} | sort -r | while read l; do
         chmod a-w "${l}" || rm "${l}"
     done
 
     chmod +w ${out}
-fi
 {% endblock %}
+)
 
+cleanup_f() {
+    fix_mtime_f
+    chmod_ro_f
 {% if simulate_failure %}
-exit 1
+    exit 1
 {% endif %}
 {% if not skipsrc %}
-fast_rm 3 ${tmp}
+    fast_rm 3 ${tmp}
 {% endif %}
+}
+
+script_f() (
+{% block sh_script %}
 {% endblock %}
+)
+
+main_f() {
+    prepare_f
+    script_f
+    cleanup_f
+}
 {% endblock %}
 
-{% block script_exec %}
-sh -s
+{% block script_main %}
+{{super()}}
+main_f
 {% endblock %}
