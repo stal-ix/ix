@@ -1,8 +1,8 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://gitlab.freedesktop.org/serebit/waycheck/-/archive/v1.3.1/waycheck-v1.3.1.tar.bz2
-sha:f565f31353a9388f443ad1818ac9abe6414bdf25cdeb6c1401cf713851da203f
+https://gitlab.freedesktop.org/serebit/waycheck/-/archive/v1.4.0/waycheck-v1.4.0.tar.bz2
+sha:bac5a9ba69883d30058c2e5cd5a0882d08509f01160be40656e349f4e40b014a
 {% endblock %}
 
 {% block bld_libs %}
