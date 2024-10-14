@@ -1,8 +1,8 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://github.com/hughsie/libxmlb/archive/refs/tags/0.3.19.tar.gz
-sha:7050a3e43c4e1f53020cfbdfcb6fd5dc664c6c240faceb5ae3c8830423918262
+https://github.com/hughsie/libxmlb/archive/refs/tags/0.3.20.tar.gz
+sha:1bbff8cda1653cf196ba436fb51950630322e2bc133cbc52e3cdcf395e0c8075
 {% endblock %}
 
 {% block lib_deps %}
