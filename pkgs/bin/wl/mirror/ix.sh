@@ -5,11 +5,11 @@ https://github.com/Ferdi265/wl-mirror
 {% endblock %}
 
 {% block git_branch %}
-v0.13.1
+v0.17.0
 {% endblock %}
 
 {% block git_sha %}
-8e756f97728fa3eda591e70dcfa72e78d0bacef6442a43753c47c7f4af991528
+34439022a11c7dead96ea05cccddcbe2afb351ec0b7f256cbfc45c69f300ed77
 {% endblock %}
 
 {% block bld_libs %}
