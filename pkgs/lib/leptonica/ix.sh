@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/DanBloomberg/leptonica/archive/refs/tags/1.84.1.tar.gz
-sha:ecd7a868403b3963c4e33623595d77f2c87667e2cfdd9b370f87729192061bef
+https://github.com/DanBloomberg/leptonica/archive/refs/tags/1.85.0.tar.gz
+sha:c01376bce0379d4ea4bc2ec5d5cbddaa49e2f06f88242619ab8c059e21adf233
 {% endblock %}
 
 {% block lib_deps %}
