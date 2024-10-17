@@ -2706,6 +2706,7 @@ https://github.com/telegramdesktop/tdesktop/releases/download/v5.5.5/tdesktop-5.
 https://github.com/telegramdesktop/tdesktop/releases/download/v5.5.8/tdesktop-5.5.8-full.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v5.6.1/tdesktop-5.6.1-full.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v5.6.2/tdesktop-5.6.2-full.tar.gz
+https://github.com/telegramdesktop/tdesktop/releases/download/v5.6.3/tdesktop-5.6.3-full.tar.gz
 https://github.com/tenox7/ttyplot/archive/refs/tags/1.6.1.tar.gz
 https://github.com/tesseract-ocr/tesseract/archive/refs/tags/5.2.0.tar.gz
 https://github.com/tetratelabs/wazero/archive/refs/tags/v1.5.0.tar.gz
