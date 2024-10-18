@@ -9,6 +9,17 @@ CONFIG_SHA256_HWACCEL=n
 {% block patch %}
 {{super()}}
 sed -e 's|.*pidfile.*"syslogd".*||' -i sysklogd/syslogd.c
+sed -e 's|exec_login_shell|exec_login_shell_impl|' \
+    -i libbb/run_shell.c
+cat << EOF >> libbb/run_shell.c
+void FAST_FUNC exec_login_shell(const char* shell) {
+    const char* ls = getenv("LOGIN_SCRIPT");
+    if (!ls) {
+        ls = shell;
+    }
+    exec_shell(ls, 1, NULL);
+}
+EOF
 {% endblock %}
 
 {% block install %}
