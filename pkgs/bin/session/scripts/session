@@ -4,6 +4,7 @@ reset
 clear
 
 unset LANG
+unset LOGIN_SCRIPT
 
 export XDG_SESSION_ID=$$
 export IX_SDIR="${TMPDIR}/$(id -u)"
