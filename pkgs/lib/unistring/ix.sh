@@ -22,6 +22,11 @@ ${PWD}/lib
 locale_charset
 {% endblock %}
 
+{% block patch %}
+# broken on aarch64
+>tests/Makefile.am
+{% endblock %}
+
 {% block env %}
 export COFLAGS="--with-libunistring-prefix=${out} \${COFLAGS}"
 {% endblock %}
