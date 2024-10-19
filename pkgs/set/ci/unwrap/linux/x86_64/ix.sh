@@ -124,7 +124,7 @@ bin/grpc/java
 bin/time/limit
 bin/nscd
 bin/yofi
-bin/port/forwarder/rs
+#bin/port/forwarder/rs
 bin/upnpc
 bin/smart/mon/tools
 bin/q/cache/grind
