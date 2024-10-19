@@ -47,7 +47,7 @@
 #}
 
 {% block run_deps %}
-bin/s3fs/fuse
+bin/s3/fs/fuse
 bin/co2mon
 bin/inkscape
 bin/bye/dpi
