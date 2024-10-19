@@ -11,6 +11,11 @@ sed -e 's|error.*;|abort();|' -i libdw/libdw_alloc.c
 --disable-debuginfod
 {% endblock %}
 
+{% block install %}
+{{super()}}
+cp lib/libeu.a ${out}/lib/
+{% endblock %}
+
 {% block env %}
 export CPPFLAGS="-I${out}/include/elfutils \${CPPFLAGS}"
 {% endblock %}

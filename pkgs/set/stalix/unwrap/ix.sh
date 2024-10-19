@@ -29,16 +29,14 @@ set/stalix/dns(dns_mngr=dnsmasq)
 set/stalix/dns(dns_mngr={{dns_mngr or 'dnsproxy'}})
 {% endif %}
 
-{% if getty %}
-bin/dm
-{% elif vt %}
+{% if vt %}
 bin/dm(getty=vt)
 {% elif mingetty %}
 bin/dm(getty=mingetty)
 {% elif emptty %}
 bin/dm(getty=emptty)
 {% else %}
-bin/dm(getty=vt)
+bin/dm(getty={{getty or 'vt'}})
 {% endif %}
 
 bin/sched/dmesg(delay=100)
