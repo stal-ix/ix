@@ -47,6 +47,7 @@
 #}
 
 {% block run_deps %}
+bin/s3/baker
 bin/s3/fs/fuse
 bin/co2mon
 bin/inkscape
