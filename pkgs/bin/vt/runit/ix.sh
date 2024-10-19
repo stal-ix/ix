@@ -3,6 +3,7 @@
 {% block run_deps %}
 bin/fixtty
 bin/runsrv
+bin/session
 bin/subreaper
 bin/vt/runit/scripts(slot={{vt_slot}})
 {% endblock %}
