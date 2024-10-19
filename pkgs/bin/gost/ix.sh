@@ -1,11 +1,11 @@
 {% extends '//die/go/build.sh' %}
 
 {% block go_url %}
-https://github.com/go-gost/gost/archive/refs/tags/v3.0.0-nightly.20240927.tar.gz
+https://github.com/go-gost/gost/archive/1fa5067d1450c7d0c7c4bfb5cbddc7ddbb49f76c.zip
 {% endblock %}
 
 {% block go_sha %}
-ccf39943c8ded49264f18de7e8ad096dbb5e8ea4a81fe98b2f6b2c409b7346f5
+9bf67cf61bcf4ba1645e601104fff3975c137346129ba17c5cc59cf32c709aee
 {% endblock %}
 
 {% block go_tool %}
