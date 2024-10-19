@@ -7,6 +7,7 @@ bld/extract
 {% endblock %}
 
 {% block step_unpack %}
+set -xue
 mkdir net
 cd net
 fetch "{{url}}"
