@@ -9,11 +9,10 @@ https://github.com/koverstreet/bcachefs-tools/archive/refs/tags/v1.11.0.tar.gz
 {% endblock %}
 
 {% block bld_libs %}
-lib/z
-lib/ffi
-lib/ncurses
 lib/llvm/18
 lib/bcache/fs
+lib/shim/fake(lib_name=ffi)
+lib/shim/fake(lib_name=ncursesw)
 lib/shim/fake(lib_name=stdc++)
 {% endblock %}
 
