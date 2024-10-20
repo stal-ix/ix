@@ -20,7 +20,6 @@ lib/shim/fake(lib_name=stdc++)
 
 {% block bld_tool %}
 {{super()}}
-bin/bpf/tool
 bin/bpf/clang
 bld/llvm/config
 {% endblock %}
