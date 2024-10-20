@@ -3,13 +3,14 @@
 {# no wayland support currently #}
 
 {% block fetch %}
-https://github.com/hluk/CopyQ/archive/refs/tags/v7.1.0.tar.gz
-sha:ce0265b0a86350fda7bfa1a9d4b74d794a4077551b28186012683567d6fd8158
+https://github.com/hluk/CopyQ/archive/refs/tags/v9.1.0.tar.gz
+sha:500893c01b662d1f157e26432f75ffeaef61862e551b831d53a79b14579ad0b3
 {% endblock %}
 
 {% block bld_libs %}
 lib/c
 lib/c++
+lib/k/ecm
 lib/qt/6/base
 lib/qt/6/deps
 lib/qt/6/declarative
@@ -26,6 +27,7 @@ bld/qt/6/tools/qml
 USE_QXT=OFF
 WITH_QT6=ON
 WITH_PLUGINS=OFF
+WITH_NATIVE_NOTIFICATIONS=OFF
 {% endblock %}
 
 {% block cpp_defines %}
