@@ -86,6 +86,7 @@ http://smarden.org/runit/runit-2.1.2.tar.gz
 http://sourceware.org/elfutils/ftp/0.189/elfutils-0.189.tar.bz2
 http://sourceware.org/elfutils/ftp/0.190/elfutils-0.190.tar.bz2
 http://sourceware.org/elfutils/ftp/0.191/elfutils-0.191.tar.bz2
+http://sourceware.org/elfutils/ftp/0.192/elfutils-0.192.tar.bz2
 http://www.alsa-project.org/files/pub/utils/alsa-utils-1.2.10.tar.bz2
 http://www.colm.net/files/ragel/ragel-6.10.tar.gz
 http://www.dest-unreach.org/socat/download/socat-1.7.4.4.tar.gz
@@ -136,6 +137,7 @@ https://archive.apache.org/dist/subversion/subversion-1.14.3.tar.bz2
 https://archive.apache.org/dist/subversion/subversion-1.14.4.tar.bz2
 https://archive.apache.org/dist/xerces/c/3/sources/xerces-c-3.2.4.tar.gz
 https://archive.apache.org/dist/xerces/c/3/sources/xerces-c-3.2.5.tar.gz
+https://archive.apache.org/dist/xerces/c/3/sources/xerces-c-3.3.0.tar.gz
 https://astron.com/pub/file/file-5.45.tar.gz
 https://astron.com/pub/tcsh/tcsh-6.24.10.tar.gz
 https://astron.com/pub/tcsh/tcsh-6.24.11.tar.gz
@@ -167,6 +169,7 @@ https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.10.9.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.11.1.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.11.2.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.11.3.tar.xz
+https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.11.4.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.2.14.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.3.13.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.4.12.tar.xz
@@ -312,6 +315,7 @@ https://download.gnome.org/sources/glib/2.80/glib-2.80.3.tar.xz
 https://download.gnome.org/sources/glib/2.80/glib-2.80.4.tar.xz
 https://download.gnome.org/sources/glib/2.82/glib-2.82.0.tar.xz
 https://download.gnome.org/sources/glib/2.82/glib-2.82.1.tar.xz
+https://download.gnome.org/sources/glib/2.82/glib-2.82.2.tar.xz
 https://download.gnome.org/sources/glibmm/2.66/glibmm-2.66.6.tar.xz
 https://download.gnome.org/sources/glibmm/2.77/glibmm-2.77.0.tar.xz
 https://download.gnome.org/sources/glibmm/2.78/glibmm-2.78.1.tar.xz
@@ -367,6 +371,7 @@ https://downloads.sourceforge.net/iperf2/iperf-2.1.9.tar.gz
 https://downloads.sourceforge.net/libtirpc/libtirpc-1.3.3.tar.bz2
 https://downloads.sourceforge.net/libtirpc/libtirpc-1.3.4.tar.bz2
 https://downloads.sourceforge.net/libtirpc/libtirpc-1.3.5.tar.bz2
+https://downloads.sourceforge.net/libtirpc/libtirpc-1.3.6.tar.bz2
 https://downloads.sourceforge.net/modplug-xmms/libmodplug-0.8.9.0.tar.gz
 https://downloads.sourceforge.net/project/acpid2/acpid-2.0.34.tar.xz
 https://downloads.sourceforge.net/project/codeblocks/Sources/20.03/codeblocks-20.03.tar.xz
@@ -551,6 +556,7 @@ https://ftp.gnu.org/gnu/libsigsegv/libsigsegv-2.13.tar.gz
 https://ftp.gnu.org/gnu/libtasn1/libtasn1-4.19.0.tar.gz
 https://ftp.gnu.org/gnu/libunistring/libunistring-1.1.tar.xz
 https://ftp.gnu.org/gnu/libunistring/libunistring-1.2.tar.xz
+https://ftp.gnu.org/gnu/libunistring/libunistring-1.3.tar.xz
 https://ftp.gnu.org/gnu/m4/m4-1.4.18.tar.xz
 https://ftp.gnu.org/gnu/m4/m4-1.4.19.tar.xz
 https://ftp.gnu.org/gnu/make/make-4.3.tar.gz
@@ -748,6 +754,7 @@ https://github.com/CorsixTH/CorsixTH/archive/refs/tags/v0.67.tar.gz
 https://github.com/Cyan4973/xxHash/archive/refs/tags/v0.8.2.tar.gz
 https://github.com/DanBloomberg/leptonica/archive/refs/tags/1.83.1.tar.gz
 https://github.com/DanBloomberg/leptonica/archive/refs/tags/1.84.1.tar.gz
+https://github.com/DanBloomberg/leptonica/archive/refs/tags/1.85.0.tar.gz
 https://github.com/DaveGamble/cJSON/archive/refs/tags/v1.7.17.tar.gz
 https://github.com/DaveGamble/cJSON/archive/refs/tags/v1.7.18.tar.gz
 https://github.com/DominicBreuker/pspy/archive/refs/tags/v1.2.1.tar.gz
@@ -792,6 +799,7 @@ https://github.com/GNOME/epiphany/archive/refs/tags/46.1.tar.gz
 https://github.com/GNOME/epiphany/archive/refs/tags/46.2.tar.gz
 https://github.com/GNOME/epiphany/archive/refs/tags/46.4.tar.gz
 https://github.com/GNOME/epiphany/archive/refs/tags/47.0.tar.gz
+https://github.com/GNOME/epiphany/archive/refs/tags/47.1.tar.gz
 https://github.com/GNOME/file-roller/archive/refs/tags/43.1.tar.gz
 https://github.com/GNOME/gsettings-desktop-schemas/archive/refs/tags/47.0.tar.gz
 https://github.com/GNOME/gsettings-desktop-schemas/archive/refs/tags/47.1.tar.gz
@@ -970,6 +978,7 @@ https://github.com/NLnetLabs/unbound/archive/refs/tags/release-1.19.3.tar.gz
 https://github.com/NLnetLabs/unbound/archive/refs/tags/release-1.20.0.tar.gz
 https://github.com/NLnetLabs/unbound/archive/refs/tags/release-1.21.0.tar.gz
 https://github.com/NLnetLabs/unbound/archive/refs/tags/release-1.21.1.tar.gz
+https://github.com/NLnetLabs/unbound/archive/refs/tags/release-1.22.0.tar.gz
 https://github.com/NOBLES5E/cproxy/archive/refs/tags/v4.1.6.post1.tar.gz
 https://github.com/NagyD/SDLPoP/archive/refs/tags/v1.23.tar.gz
 https://github.com/Nefelim4ag/Ananicy/archive/refs/tags/2.2.1.tar.gz
@@ -1047,6 +1056,7 @@ https://github.com/RazrFalcon/resvg/archive/refs/tags/v0.40.0.tar.gz
 https://github.com/RazrFalcon/resvg/archive/refs/tags/v0.41.0.tar.gz
 https://github.com/RazrFalcon/resvg/archive/refs/tags/v0.43.0.tar.gz
 https://github.com/RazrFalcon/resvg/archive/refs/tags/v0.44.0.tar.gz
+https://github.com/SagerNet/sing-box/archive/refs/tags/v1.10.1.tar.gz
 https://github.com/SagerNet/sing-box/archive/refs/tags/v1.9.6.tar.gz
 https://github.com/SagerNet/sing-box/archive/refs/tags/v1.9.7.tar.gz
 https://github.com/Samsung/rlottie/archive/refs/tags/v0.2.tar.gz
@@ -1170,6 +1180,7 @@ https://github.com/apple/swift-corelibs-libdispatch/archive/refs/tags/swift-6.0.
 https://github.com/appneta/tcpreplay/releases/download/v4.4.4/tcpreplay-4.4.4.tar.xz
 https://github.com/appneta/tcpreplay/releases/download/v4.5.1/tcpreplay-4.5.1.tar.xz
 https://github.com/ar-/incron/archive/refs/tags/0.5.12.tar.gz
+https://github.com/archiecobbs/s3backer/archive/refs/tags/2.1.3.tar.gz
 https://github.com/archlinux/svntogit-community/archive/515367ae9616cb3fa53eaf041634dd6e0637a774.tar.gz
 https://github.com/argp-standalone/argp-standalone/archive/refs/tags/1.5.0.tar.gz
 https://github.com/aria2/aria2/archive/refs/tags/release-1.36.0.tar.gz
@@ -1187,6 +1198,7 @@ https://github.com/artemsen/swayimg/archive/refs/tags/v3.0.tar.gz
 https://github.com/artemsen/swayimg/archive/refs/tags/v3.1.tar.gz
 https://github.com/artemsen/swayimg/archive/refs/tags/v3.2.tar.gz
 https://github.com/artemsen/swayimg/archive/refs/tags/v3.3.tar.gz
+https://github.com/artemsen/swayimg/archive/refs/tags/v3.4.tar.gz
 https://github.com/arvidn/libtorrent/releases/download/v2.0.10/libtorrent-rasterbar-2.0.10.tar.gz
 https://github.com/arvidn/libtorrent/releases/download/v2.0.9/libtorrent-rasterbar-2.0.9.tar.gz
 https://github.com/ascent12/drm_info/archive/refs/tags/v2.3.0.tar.gz
@@ -1232,6 +1244,7 @@ https://github.com/c-ares/c-ares/archive/refs/tags/v1.32.1.tar.gz
 https://github.com/c-ares/c-ares/archive/refs/tags/v1.32.2.tar.gz
 https://github.com/c-ares/c-ares/archive/refs/tags/v1.33.0.tar.gz
 https://github.com/c-ares/c-ares/archive/refs/tags/v1.34.1.tar.gz
+https://github.com/c-ares/c-ares/archive/refs/tags/v1.34.2.tar.gz
 https://github.com/c-util/c-dvar/archive/refs/tags/v1.1.0.tar.gz
 https://github.com/c-util/c-ini/archive/refs/tags/v1.1.0.tar.gz
 https://github.com/c-util/c-list/archive/refs/tags/v3.1.0.tar.gz
@@ -1410,6 +1423,8 @@ https://github.com/eza-community/eza/archive/refs/tags/v0.19.4.tar.gz
 https://github.com/eza-community/eza/archive/refs/tags/v0.20.0.tar.gz
 https://github.com/eza-community/eza/archive/refs/tags/v0.20.1.tar.gz
 https://github.com/eza-community/eza/archive/refs/tags/v0.20.2.tar.gz
+https://github.com/eza-community/eza/archive/refs/tags/v0.20.3.tar.gz
+https://github.com/eza-community/eza/archive/refs/tags/v0.20.4.tar.gz
 https://github.com/facebook/zstd/archive/refs/tags/v1.5.5.tar.gz
 https://github.com/facebook/zstd/archive/refs/tags/v1.5.6.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.1.2.tar.gz
@@ -1557,6 +1572,7 @@ https://github.com/glfw/glfw/archive/refs/tags/3.4.tar.gz
 https://github.com/glmark2/glmark2/archive/refs/tags/2023.01.tar.gz
 https://github.com/gnustep/libobjc2/archive/refs/tags/v2.2.tar.gz
 https://github.com/go-git/go-git/archive/refs/tags/v5.4.2.tar.gz
+https://github.com/go-gost/gost/archive/1fa5067d1450c7d0c7c4bfb5cbddc7ddbb49f76c.zip
 https://github.com/go-gost/gost/archive/refs/tags/v3.0.0-nightly.20240927.tar.gz
 https://github.com/go-task/task/archive/refs/tags/v3.14.0.tar.gz
 https://github.com/gokcehan/lf/archive/refs/tags/r27.tar.gz
@@ -1655,6 +1671,7 @@ https://github.com/hboetes/mg/archive/refs/tags/20221112.tar.gz
 https://github.com/heyjuvi/avizo/archive/refs/tags/1.3.tar.gz
 https://github.com/hluk/CopyQ/archive/refs/tags/v7.0.0.tar.gz
 https://github.com/hluk/CopyQ/archive/refs/tags/v7.1.0.tar.gz
+https://github.com/hluk/CopyQ/archive/refs/tags/v9.1.0.tar.gz
 https://github.com/hoytech/lmdbxx/archive/refs/tags/1.0.0.tar.gz
 https://github.com/hpjansson/chafa/archive/refs/tags/1.12.4.tar.gz
 https://github.com/hpjansson/chafa/archive/refs/tags/1.14.0.tar.gz
@@ -1927,6 +1944,7 @@ https://github.com/libgit2/libgit2/archive/refs/tags/v1.7.0.tar.gz
 https://github.com/libgit2/libgit2/archive/refs/tags/v1.7.2.tar.gz
 https://github.com/libgit2/libgit2/archive/refs/tags/v1.8.0.tar.gz
 https://github.com/libgit2/libgit2/archive/refs/tags/v1.8.1.tar.gz
+https://github.com/libgit2/libgit2/archive/refs/tags/v1.8.2.tar.gz
 https://github.com/libical/libical/archive/refs/tags/v3.0.16.tar.gz
 https://github.com/libical/libical/archive/refs/tags/v3.0.17.tar.gz
 https://github.com/libical/libical/archive/refs/tags/v3.0.18.tar.gz
@@ -1994,6 +2012,7 @@ https://github.com/libuv/libuv/archive/refs/tags/v1.47.0.tar.gz
 https://github.com/libuv/libuv/archive/refs/tags/v1.48.0.tar.gz
 https://github.com/libuv/libuv/archive/refs/tags/v1.49.0.tar.gz
 https://github.com/libuv/libuv/archive/refs/tags/v1.49.1.tar.gz
+https://github.com/libuv/libuv/archive/refs/tags/v1.49.2.tar.gz
 https://github.com/libxmp/libxmp/archive/refs/tags/libxmp-4.6.0.tar.gz
 https://github.com/limine-bootloader/limine/releases/download/v5.20230801.0/limine-5.20230801.0.tar.xz
 https://github.com/linux-nvme/libnvme/archive/refs/tags/v1.10.tar.gz
@@ -2031,6 +2050,7 @@ https://github.com/llvm/llvm-project/archive/refs/tags/llvmorg-18.1.7.tar.gz
 https://github.com/llvm/llvm-project/archive/refs/tags/llvmorg-18.1.8.tar.gz
 https://github.com/llvm/llvm-project/archive/refs/tags/llvmorg-19.1.0.tar.gz
 https://github.com/llvm/llvm-project/archive/refs/tags/llvmorg-19.1.1.tar.gz
+https://github.com/llvm/llvm-project/archive/refs/tags/llvmorg-19.1.2.tar.gz
 https://github.com/llvm/llvm-project/releases/download/llvmorg-13.0.1/llvm-project-13.0.1.src.tar.xz
 https://github.com/llvm/llvm-project/releases/download/llvmorg-16.0.6/llvm-project-16.0.6.src.tar.xz
 https://github.com/llvm/llvm-project/releases/download/llvmorg-17.0.0-rc3/llvm-project-17.0.0rc3.src.tar.xz
@@ -2213,6 +2233,7 @@ https://github.com/ngtcp2/ngtcp2/archive/refs/tags/v1.5.0.tar.gz
 https://github.com/ngtcp2/ngtcp2/archive/refs/tags/v1.6.0.tar.gz
 https://github.com/ngtcp2/ngtcp2/archive/refs/tags/v1.7.0.tar.gz
 https://github.com/ngtcp2/ngtcp2/archive/refs/tags/v1.8.0.tar.gz
+https://github.com/ngtcp2/ngtcp2/archive/refs/tags/v1.8.1.tar.gz
 https://github.com/nhorman/rng-tools/archive/refs/tags/v6.15.tar.gz
 https://github.com/nibanks/msh3/archive/refs/tags/v0.6.0.tar.gz
 https://github.com/niklata/ndhc/archive/refs/tags/v2022-03-08-v2.tar.gz
@@ -2510,6 +2531,7 @@ https://github.com/rvaiya/keyd/archive/refs/tags/v2.4.3.tar.gz
 https://github.com/rvaiya/keyd/archive/refs/tags/v2.5.0.tar.gz
 https://github.com/rzvncj/xCHM/archive/refs/tags/1.35.tar.gz
 https://github.com/rzvncj/xCHM/archive/refs/tags/1.36.tar.gz
+https://github.com/s3fs-fuse/s3fs-fuse/archive/refs/tags/v1.94.tar.gz
 https://github.com/sabotage-linux/netbsd-curses/archive/refs/tags/v0.3.2.tar.gz
 https://github.com/sammycage/lunasvg/archive/refs/tags/v2.3.8.tar.gz
 https://github.com/sammycage/lunasvg/archive/refs/tags/v2.3.9.tar.gz
@@ -2691,6 +2713,8 @@ https://github.com/telegramdesktop/tdesktop/releases/download/v5.5.3/tdesktop-5.
 https://github.com/telegramdesktop/tdesktop/releases/download/v5.5.5/tdesktop-5.5.5-full.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v5.5.8/tdesktop-5.5.8-full.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v5.6.1/tdesktop-5.6.1-full.tar.gz
+https://github.com/telegramdesktop/tdesktop/releases/download/v5.6.2/tdesktop-5.6.2-full.tar.gz
+https://github.com/telegramdesktop/tdesktop/releases/download/v5.6.3/tdesktop-5.6.3-full.tar.gz
 https://github.com/tenox7/ttyplot/archive/refs/tags/1.6.1.tar.gz
 https://github.com/tesseract-ocr/tesseract/archive/refs/tags/5.2.0.tar.gz
 https://github.com/tetratelabs/wazero/archive/refs/tags/v1.5.0.tar.gz
@@ -2808,6 +2832,7 @@ https://github.com/videolan/dav1d/archive/refs/tags/1.3.0.tar.gz
 https://github.com/videolan/dav1d/archive/refs/tags/1.4.0.tar.gz
 https://github.com/videolan/dav1d/archive/refs/tags/1.4.1.tar.gz
 https://github.com/videolan/dav1d/archive/refs/tags/1.4.3.tar.gz
+https://github.com/videolan/dav1d/archive/refs/tags/1.5.0.tar.gz
 https://github.com/vifm/vifm/archive/refs/tags/v0.13.tar.gz
 https://github.com/vim/vim/archive/refs/tags/v9.0.0006.tar.gz
 https://github.com/vmatare/thinkfan/archive/refs/tags/1.3.1.tar.gz
@@ -2950,6 +2975,7 @@ https://gitlab.com/mbunkus/mkvtoolnix/-/archive/release-84.0/mkvtoolnix-release-
 https://gitlab.com/mbunkus/mkvtoolnix/-/archive/release-85.0/mkvtoolnix-release-85.0.tar.bz2
 https://gitlab.com/mbunkus/mkvtoolnix/-/archive/release-86.0/mkvtoolnix-release-86.0.tar.bz2
 https://gitlab.com/mbunkus/mkvtoolnix/-/archive/release-87.0/mkvtoolnix-release-87.0.tar.bz2
+https://gitlab.com/mbunkus/mkvtoolnix/-/archive/release-88.0/mkvtoolnix-release-88.0.tar.bz2
 https://gitlab.com/procps-ng/procps/-/archive/v4.0.4/procps-v4.0.4.tar.bz2
 https://gitlab.com/psmisc/psmisc/-/archive/v23.6/psmisc-v23.6.tar.bz2
 https://gitlab.com/psmisc/psmisc/-/archive/v23.7/psmisc-v23.7.tar.bz2
@@ -3059,6 +3085,7 @@ https://gitlab.gnome.org/GNOME/gnome-text-editor/-/archive/45.2/gnome-text-edito
 https://gitlab.gnome.org/GNOME/gnome-text-editor/-/archive/45.3/gnome-text-editor-45.3.tar.bz2
 https://gitlab.gnome.org/GNOME/gnome-text-editor/-/archive/46.1/gnome-text-editor-46.1.tar.bz2
 https://gitlab.gnome.org/GNOME/gnome-text-editor/-/archive/47.0/gnome-text-editor-47.0.tar.bz2
+https://gitlab.gnome.org/GNOME/gnome-text-editor/-/archive/47.1/gnome-text-editor-47.1.tar.bz2
 https://gitlab.gnome.org/GNOME/gobject-introspection/-/archive/1.72.0/gobject-introspection-1.72.0.tar.bz2
 https://gitlab.gnome.org/GNOME/gobject-introspection/-/archive/1.78.1/gobject-introspection-1.78.1.tar.bz2
 https://gitlab.gnome.org/GNOME/gobject-introspection/-/archive/1.80.1/gobject-introspection-1.80.1.tar.bz2
@@ -3097,12 +3124,14 @@ https://gitlab.gnome.org/GNOME/libadwaita/-/archive/1.5.beta/libadwaita-1.5.beta
 https://gitlab.gnome.org/GNOME/libdazzle/-/archive/3.44.0/libdazzle-3.44.0.tar.bz2
 https://gitlab.gnome.org/GNOME/libdex/-/archive/0.6.0/libdex-0.6.0.tar.bz2
 https://gitlab.gnome.org/GNOME/libdex/-/archive/0.8.0/libdex-0.8.0.tar.bz2
+https://gitlab.gnome.org/GNOME/libdex/-/archive/0.8.1/libdex-0.8.1.tar.bz2
 https://gitlab.gnome.org/GNOME/libgee/-/archive/0.20.6/libgee-0.20.6.tar.bz2
 https://gitlab.gnome.org/GNOME/libgit2-glib/-/archive/v1.2.0/libgit2-glib-v1.2.0.tar.bz2
 https://gitlab.gnome.org/GNOME/libgtop/-/archive/2.40.0/libgtop-2.40.0.tar.bz2
 https://gitlab.gnome.org/GNOME/libhandy/-/archive/1.8.2/libhandy-1.8.2.tar.bz2
 https://gitlab.gnome.org/GNOME/libpanel/-/archive/1.6.0/libpanel-1.6.0.tar.bz2
 https://gitlab.gnome.org/GNOME/libpanel/-/archive/1.8.0/libpanel-1.8.0.tar.bz2
+https://gitlab.gnome.org/GNOME/libpanel/-/archive/1.8.1/libpanel-1.8.1.tar.bz2
 https://gitlab.gnome.org/GNOME/libsecret/-/archive/0.20.4/libsecret-0.20.4.tar.bz2
 https://gitlab.gnome.org/GNOME/libsecret/-/archive/0.21.1/libsecret-0.21.1.tar.bz2
 https://gitlab.gnome.org/GNOME/libsecret/-/archive/0.21.2/libsecret-0.21.2.tar.bz2
@@ -3115,6 +3144,7 @@ https://gitlab.gnome.org/GNOME/libsoup/-/archive/3.6.0/libsoup-3.6.0.tar.bz2
 https://gitlab.gnome.org/GNOME/libspelling/-/archive/0.4.0/libspelling-0.4.0.tar.bz2
 https://gitlab.gnome.org/GNOME/libspelling/-/archive/0.4.1/libspelling-0.4.1.tar.bz2
 https://gitlab.gnome.org/GNOME/libspelling/-/archive/0.4.2/libspelling-0.4.2.tar.bz2
+https://gitlab.gnome.org/GNOME/libspelling/-/archive/0.4.3/libspelling-0.4.3.tar.bz2
 https://gitlab.gnome.org/GNOME/libxml2/-/archive/v2.11.4/libxml2-v2.11.4.tar.bz2
 https://gitlab.gnome.org/GNOME/libxml2/-/archive/v2.11.7/libxml2-v2.11.7.tar.bz2
 https://gitlab.gnome.org/GNOME/libxml2/-/archive/v2.12.0/libxml2-v2.12.0.tar.bz2
@@ -3166,6 +3196,7 @@ https://gitlab.gnome.org/chergert/ptyxis/-/archive/46.3/ptyxis-46.3.tar.bz2
 https://gitlab.gnome.org/chergert/ptyxis/-/archive/47.0/ptyxis-47.0.tar.bz2
 https://gitlab.gnome.org/chergert/ptyxis/-/archive/47.1/ptyxis-47.1.tar.bz2
 https://gitlab.gnome.org/chergert/ptyxis/-/archive/47.2/ptyxis-47.2.tar.bz2
+https://gitlab.gnome.org/chergert/ptyxis/-/archive/47.3/ptyxis-47.3.tar.bz2
 https://gitlab.gnome.org/chergert/ptyxis/-/raw/08564402b8a9bc53bc2dbd3ff14f9d9598c14b7b/build-aux/0001-add-notification-and-shell-precmd-preexec.patch
 https://gitlab.gnome.org/crab2313/evince/-/archive/4c91df66ca83f8f1d057f0aa9069675b8bf5b6d6/evince-4c91df66ca83f8f1d057f0aa9069675b8bf5b6d6.tar.bz2
 https://gitlab.gnome.org/jadahl/libdecor/-/archive/0.1.1/libdecor-0.1.1.tar.bz2
@@ -3354,6 +3385,7 @@ https://poppler.freedesktop.org/poppler-24.06.1.tar.xz
 https://poppler.freedesktop.org/poppler-24.07.0.tar.xz
 https://poppler.freedesktop.org/poppler-24.08.0.tar.xz
 https://poppler.freedesktop.org/poppler-24.09.0.tar.xz
+https://poppler.freedesktop.org/poppler-24.10.0.tar.xz
 https://pwmt.org/projects/zathura-djvu/download/zathura-djvu-0.2.10.tar.xz
 https://pwmt.org/projects/zathura-djvu/download/zathura-djvu-0.2.9.tar.xz
 https://pwmt.org/projects/zathura-pdf-poppler/download/zathura-pdf-poppler-0.3.1.tar.xz
@@ -3571,6 +3603,7 @@ https://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2/libcap-2.70.t
 https://www.kernel.org/pub/linux/utils/fs/xfs/xfsprogs/xfsprogs-6.1.0.tar.xz
 https://www.kernel.org/pub/linux/utils/fs/xfs/xfsprogs/xfsprogs-6.10.0.tar.xz
 https://www.kernel.org/pub/linux/utils/fs/xfs/xfsprogs/xfsprogs-6.10.1.tar.xz
+https://www.kernel.org/pub/linux/utils/fs/xfs/xfsprogs/xfsprogs-6.11.0.tar.xz
 https://www.kernel.org/pub/linux/utils/fs/xfs/xfsprogs/xfsprogs-6.4.0.tar.xz
 https://www.kernel.org/pub/linux/utils/fs/xfs/xfsprogs/xfsprogs-6.5.0.tar.xz
 https://www.kernel.org/pub/linux/utils/fs/xfs/xfsprogs/xfsprogs-6.6.0.tar.xz

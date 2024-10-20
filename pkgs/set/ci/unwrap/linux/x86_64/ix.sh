@@ -47,6 +47,8 @@
 #}
 
 {% block run_deps %}
+bin/s3/baker
+bin/s3/fs/fuse
 bin/co2mon
 bin/inkscape
 bin/bye/dpi
@@ -122,7 +124,7 @@ bin/grpc/java
 bin/time/limit
 bin/nscd
 bin/yofi
-bin/port/forwarder/rs
+#bin/port/forwarder/rs
 bin/upnpc
 bin/smart/mon/tools
 bin/q/cache/grind
@@ -325,7 +327,6 @@ bin/qpack
 bin/lvm2
 bin/ag
 bin/mkvtoolnix
-bin/mkvtoolnix/gui
 bin/sdlpop
 bin/jpegoptim
 bin/pngquant

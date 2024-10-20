@@ -6,4 +6,4 @@ if test -f .session; then
     exec ./.session
 fi
 
-exec /bin/sh
+exec ${SHELL}

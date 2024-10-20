@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://ftp.gnu.org/gnu/libunistring/libunistring-1.2.tar.xz
-sha:632bd65ed74a881ca8a0309a1001c428bd1cbd5cd7ddbf8cedcd2e65f4dcdc44
+https://ftp.gnu.org/gnu/libunistring/libunistring-1.3.tar.xz
+sha:f245786c831d25150f3dfb4317cda1acc5e3f79a5da4ad073ddca58886569527
 {% endblock %}
 
 {% block lib_deps %}
@@ -20,6 +20,11 @@ ${PWD}/lib
 
 {% block c_rename_symbol %}
 locale_charset
+{% endblock %}
+
+{% block patch %}
+# broken on aarch64
+>tests/Makefile.am
 {% endblock %}
 
 {% block env %}

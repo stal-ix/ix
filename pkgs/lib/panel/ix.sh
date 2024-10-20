@@ -1,8 +1,8 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://gitlab.gnome.org/GNOME/libpanel/-/archive/1.8.0/libpanel-1.8.0.tar.bz2
-sha:0db6c7904fe212afdf0a4a26c697606576e46c0e400e7fe577077e51fc726ca3
+https://gitlab.gnome.org/GNOME/libpanel/-/archive/1.8.1/libpanel-1.8.1.tar.bz2
+sha:541c7326395f5031b0a259434288f3afda8f61d71f8e68c3eb5441379e2c1756
 {% endblock %}
 
 {% block bld_libs %}

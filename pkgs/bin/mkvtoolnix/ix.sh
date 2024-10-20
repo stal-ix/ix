@@ -2,5 +2,5 @@
 
 {% block run_deps %}
 bin/mkvtoolnix/cli
-bin/mkvtoolnix/gui
+#bin/mkvtoolnix/gui
 {% endblock %}

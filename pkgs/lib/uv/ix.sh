@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/libuv/libuv/archive/refs/tags/v1.49.1.tar.gz
-sha:94312ede44c6cae544ae316557e2651aea65efce5da06f8d44685db08392ec5d
+https://github.com/libuv/libuv/archive/refs/tags/v1.49.2.tar.gz
+sha:388ffcf3370d4cf7c4b3a3205504eea06c4be5f9e80d2ab32d19f8235accc1cf
 {% endblock %}
 
 {% block lib_deps %}

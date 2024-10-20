@@ -1,12 +1,16 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://downloads.sourceforge.net/libtirpc/libtirpc-1.3.5.tar.bz2
-sha:9b31370e5a38d3391bf37edfa22498e28fe2142467ae6be7a17c9068ec0bf12f
+https://downloads.sourceforge.net/libtirpc/libtirpc-1.3.6.tar.bz2
+sha:bbd26a8f0df5690a62a47f6aa30f797f3ef8d02560d1bc449a83066b5a1d3508
 {% endblock %}
 
 {% block lib_deps %}
 lib/c
+{% endblock %}
+
+{% block conf_ver %}
+2/71
 {% endblock %}
 
 {% block bld_libs %}

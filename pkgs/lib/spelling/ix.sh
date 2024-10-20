@@ -1,8 +1,8 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://gitlab.gnome.org/GNOME/libspelling/-/archive/0.4.2/libspelling-0.4.2.tar.bz2
-sha:42c78491d73b2e5be83526ee079cfe43bf04f25f445cfcc58613f149c586c566
+https://gitlab.gnome.org/GNOME/libspelling/-/archive/0.4.3/libspelling-0.4.3.tar.bz2
+sha:7ae594242b537513ffe333530dad752eeeffb9e52872468d73ceccbda58932b9
 {% endblock %}
 
 {% block lib_deps %}
