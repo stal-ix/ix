@@ -1,16 +1,19 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://downloads.sourceforge.net/project/nfs/nfs-utils/2.6.4/nfs-utils-2.6.4.tar.xz
-sha:0b52349312fecb6de1d379fe93cf78432f3653fb0f27c15368cbafb0b12d6642
+https://downloads.sourceforge.net/project/nfs/nfs-utils/2.8.1/nfs-utils-2.8.1.tar.xz
+sha:794583651702c0cbe12a66b16bef4f100d6661bcff94206d7a5a404bd16d75ab
 {% endblock %}
 
 {% block bld_libs %}
 lib/c
+lib/nl
 lib/event
 lib/tirpc
+lib/xml/2
 lib/kernel
 lib/sqlite/3
+lib/readline
 lib/linux/util
 lib/bsd/overlay
 lib/rpcsvc/proto
