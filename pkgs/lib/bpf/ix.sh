@@ -25,15 +25,7 @@ bld/pkg/config
 
 {% block make_flags %}
 LIBSUBDIR=lib
-{% endblock %}
-
-{% block build_flags %}
-wrap_cc
-{% endblock %}
-
-{% block make_install_target %}
-install
-install_headers
+BUILD_STATIC_ONLY=1
 {% endblock %}
 
 {% block env %}
