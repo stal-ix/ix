@@ -1224,6 +1224,7 @@ https://github.com/besser82/libxcrypt/archive/refs/tags/v4.4.36.tar.gz
 https://github.com/bfgroup/b2/archive/refs/tags/4.9.2.tar.gz
 https://github.com/bfgroup/b2/archive/refs/tags/5.1.0.tar.gz
 https://github.com/biojppm/rapidyaml/releases/download/v0.4.1/rapidyaml-0.4.1-src.tgz
+https://github.com/bpftrace/bpftrace/archive/refs/tags/v0.21.2.tar.gz
 https://github.com/bugaevc/wl-clipboard/archive/refs/tags/v2.2.0.tar.gz
 https://github.com/bus1/dbus-broker/archive/refs/tags/v35.tar.gz
 https://github.com/bytecodealliance/wasm-micro-runtime/archive/refs/tags/WAMR-1.2.3.tar.gz
@@ -2546,6 +2547,7 @@ https://github.com/sass/libsass/archive/refs/tags/3.6.6.tar.gz
 https://github.com/sass/sassc/archive/refs/tags/3.6.2.tar.gz
 https://github.com/sayanarijit/xplr/archive/refs/tags/v0.21.5.tar.gz
 https://github.com/sbcl/sbcl/archive/refs/tags/sbcl-2.3.10.tar.gz
+https://github.com/sched-ext/scx/archive/fb3f1d0b43d8a1f69cbc434f4a43145dbd983076.tar.gz
 https://github.com/sched-ext/scx/archive/refs/tags/v1.0.2.tar.gz
 https://github.com/sched-ext/scx/archive/refs/tags/v1.0.4.tar.gz
 https://github.com/sched-ext/scx/archive/refs/tags/v1.0.5.tar.gz
