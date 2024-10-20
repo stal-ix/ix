@@ -9,12 +9,11 @@ f01d770704663bb3feb10e070e8eab88a55ad29978eafb9817d941cb1be653d1
 {% endblock %}
 
 {% block bld_libs %}
-lib/z
 lib/bpf
-lib/ffi
 lib/kernel
-lib/ncurses
 lib/llvm/19
+lib/shim/fake(lib_name=ffi)
+lib/shim/fake(lib_name=ncursesw)
 lib/shim/fake(lib_name=stdc++)
 {% endblock %}
 
