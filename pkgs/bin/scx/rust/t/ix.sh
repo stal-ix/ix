@@ -24,12 +24,18 @@ bin/bpf/clang
 bld/llvm/config
 {% endblock %}
 
+{% block binary %}
+{% endblock %}
+
 {% block cargo_options %}
---package scx_rustland
+--package {{self.binary().strip()}}
 {% endblock %}
 
 {% block patch %}
 {{super()}}
+find . -type f | while read l; do
+    sed -e 's|__handle_mm_fault|handle_mm_fault|g' -i ${l}
+done
 sed -e 's|"runtime"|"static"|' \
     -i vendored/bindgen/Cargo.toml
 ln -s ../../scheds/include rust/scx_utils/bpf_h
@@ -43,5 +49,5 @@ export BPF_CLANG=bpf_clang
 
 {% block install %}
 mkdir ${out}/bin
-cp ${tmp}/release/scx_rustland ${out}/bin/
+cp ${tmp}/release/{{self.binary().strip()}} ${out}/bin/
 {% endblock %}
