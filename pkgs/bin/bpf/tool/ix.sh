@@ -16,11 +16,12 @@ v7.4.0
 lib/c
 lib/z
 lib/cap
-lib/bpf
+#lib/bpf
 lib/bfd
 lib/iberty
 lib/opcodes
 lib/llvm/19
+lib/elfutils
 {% endblock %}
 
 {% block step_unpack %}
@@ -30,7 +31,7 @@ cd src
 
 {% block make_flags %}
 LLVM=1
-V=1
+V=0
 CLANG_BPF_CO_RE_PROBE_CMD='echo 1'
 bash_compdir=${out}/share/bash
 {% endblock %}
@@ -45,5 +46,6 @@ mv ${out}/sbin ${out}/bin
 {% endblock %}
 
 {% block bld_tool %}
+bld/pkg/config
 bld/llvm/config
 {% endblock %}
