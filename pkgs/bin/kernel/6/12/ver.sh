@@ -10,11 +10,6 @@ c9b271cc559588796a80f06f4198a4de2823bc28cb5cd2632f3b80401035b91d
 https://git.kernel.org/torvalds/t/linux-6.12-rc3.tar.gz
 {% endblock %}
 
-{#
-file:///home/pg/repos/linux-6.12-rc3.tar.gz
-https://git.kernel.org/torvalds/t/linux-6.12-rc3.tar.gz
-#}
-
 {% block fetch %}
 {{self.kernel_url().strip()}}
 {{self.kernel_sha().strip()}}
