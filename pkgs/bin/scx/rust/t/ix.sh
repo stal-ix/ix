@@ -32,9 +32,6 @@ bld/llvm/config
 
 {% block patch %}
 {{super()}}
-find . -type f | while read l; do
-    sed -e 's|__handle_mm_fault|handle_mm_fault|g' -i ${l}
-done
 sed -e 's|"runtime"|"static"|' \
     -i vendored/bindgen/Cargo.toml
 ln -s ../../scheds/include rust/scx_utils/bpf_h
