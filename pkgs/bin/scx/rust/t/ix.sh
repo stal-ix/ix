@@ -1,11 +1,11 @@
 {% extends '//die/rust/cargo.sh' %}
 
 {% block cargo_url %}
-https://github.com/sched-ext/scx/archive/refs/tags/v1.0.5.tar.gz
+https://github.com/sched-ext/scx/archive/fb3f1d0b43d8a1f69cbc434f4a43145dbd983076.tar.gz
 {% endblock %}
 
 {% block cargo_sha %}
-f01d770704663bb3feb10e070e8eab88a55ad29978eafb9817d941cb1be653d1
+734999cb82ad41e1eab2baadcc4496356d427b878c77883314495d006464a97f
 {% endblock %}
 
 {% block bld_libs %}
