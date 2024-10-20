@@ -27,7 +27,7 @@ lib/bsd/overlay
 libbpf_a=disabled
 offline=true
 bpf_clang=bpf_clang
-bpftool=disabled
+bpftool=bpftool
 enable_rust=false
 enable_stress=false
 {% endblock %}
