@@ -135,7 +135,7 @@ export CC=$(command -v cc)
 export CXX=$(command -v c++)
 export HOST_CC=${CC}
 export HOST_CXX=${CXX}
-export TRAGET_CC=${CC}
-export TRAGET_CXX=${CXX}
+export TARGET_CC=${CC}
+export TARGET_CXX=${CXX}
 cargo build --offline --release {{ix.fix_list(cargo_options)}}
 {% endblock %}
