@@ -16,7 +16,7 @@ v7.4.0
 lib/c
 lib/z
 lib/cap
-#lib/bpf
+lib/bpf
 lib/bfd
 lib/iberty
 lib/opcodes
@@ -31,9 +31,12 @@ cd src
 
 {% block make_flags %}
 LLVM=1
-V=0
+V=1
 CLANG_BPF_CO_RE_PROBE_CMD='echo 1'
 bash_compdir=${out}/share/bash
+CC=clang
+CLANG=clang-19
+HOSTCC=cc
 {% endblock %}
 
 {% block cpp_defines %}
