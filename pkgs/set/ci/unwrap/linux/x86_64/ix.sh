@@ -327,7 +327,6 @@ bin/qpack
 bin/lvm2
 bin/ag
 bin/mkvtoolnix
-bin/mkvtoolnix/gui
 bin/sdlpop
 bin/jpegoptim
 bin/pngquant
