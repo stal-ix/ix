@@ -81,9 +81,9 @@ def iter_tout():
 
 
 def do_fetch(url, path, sha, *mirrors):
-    prepare_dir(os.path.dirname(path))
-
     for (f, best_effort), tout in zip(iter_fetch(url, sha, mirrors), iter_tout()):
+        prepare_dir(os.path.dirname(path))
+
         try:
             f(path, int(tout))
 
