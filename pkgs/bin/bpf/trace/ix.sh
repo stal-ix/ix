@@ -25,15 +25,3 @@ bld/flex
 bld/bison
 bld/llvm/config
 {% endblock %}
-
-{% block cmake_flags %}
-LLVM_REQUESTED_VERSION=18
-LLVM_VERSION_MAJOR=18
-MAX_LLVM_MAJOR=18
-{% endblock %}
-
-{% block patch %}
-sed -e 's|.*find_package.*LLVM.*||'  \
-    -e 's|.*find_package.*Clang.*||' \
-    -i CMakeLists.txt
-{% endblock %}
