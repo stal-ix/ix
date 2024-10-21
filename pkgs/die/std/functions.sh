@@ -12,8 +12,23 @@ rm -rf ${out}/lib ${out}/include
 {% endif %}
 )
 
+env_static_f() (
+cat << EOF
+{% block env %}
+{% endblock %}
+EOF
+)
+
+env_auto_f() (
+{% include 'env_auto.sh' %}
+)
+
 env_f() (
-{% include 'env.sh' %}
+    (
+        env_static_f
+        env_auto_f
+    ) > ${out}/env
+    cat ${out}/env
 )
 
 unpack_f() {
