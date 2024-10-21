@@ -35,9 +35,15 @@ unpack_f() {
 {% include 'unpack.sh' %}
 }
 
-step_setup_f() {
-export bld=${PWD}
+setup_f() {
 {% include 'setup.sh' %}
+}
+
+step_setup_f() {
+    export bld=${PWD}
+    mkpushd ${tmp}/bin
+    setup_f
+    popd
 }
 
 step_install_install_f() (
@@ -62,10 +68,6 @@ step_install_f() (
     step_install_install_f
     step_install_postinstall_f
     step_install_prepare_env_f
-)
-
-setup_bt_f() (
-{% include 'bt.sh' %}
 )
 
 setup_compiler_f() {

@@ -3,6 +3,7 @@
 {% block run_deps %}
 bin/sed
 bin/patch
+bld/box/shim
 bin/diffutils
 bin/findutils
 bin/gawk/lite

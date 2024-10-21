@@ -1,6 +1,7 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
+bld/boot/3/bt
 bld/boot/9/nasm
 bld/boot/8/env/box
 bld/boot/9/flex/2.6.4.2.sh
