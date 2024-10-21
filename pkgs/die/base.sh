@@ -26,10 +26,8 @@ echo 'no setup'
 }
 
 step_configure() (
-{% block step_configure %}
 {% block configure %}
 echo 'no configure'
-{% endblock %}
 {% endblock %}
 )
 
@@ -40,10 +38,8 @@ echo 'no build'
 )
 
 step_test() (
-{% block step_test %}
 {% block test %}
 echo 'no tests'
-{% endblock %}
 {% endblock %}
 )
 
