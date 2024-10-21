@@ -10,7 +10,7 @@ bld/pzd
 [{"path": "share/{{self.fname().strip()}}", "sum": "{{sha}}"}]
 {% endblock %}
 
-{% block step_build %}
+{% block build %}
 set -xue
 {{super()}}
 {% if refine %}

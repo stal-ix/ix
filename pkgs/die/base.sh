@@ -34,10 +34,8 @@ echo 'no configure'
 )
 
 step_build() (
-{% block step_build %}
 {% block build %}
 echo 'no build'
-{% endblock %}
 {% endblock %}
 )
 
