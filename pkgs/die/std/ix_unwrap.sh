@@ -16,20 +16,27 @@ rename_dynlib
 {% endblock %}
 
 {% block unpack %}
-{% include 'unpack.sh' %}
+unpack_f
 {% endblock %}
 
 {% block step_setup %}
-export bld=${PWD}
-{% include 'setup.sh' %}
+step_setup_f
 {% endblock %}
 
 {% block step_install %}
-{% include 'install.sh' %}
+step_install_f
 {% endblock %}
 
 {% block std_env %}
-{% block std_box %}
-{% include 'stdenv.sh' %}
-{% endblock %}
+  {% block std_box %}
+    {% block shell %}
+      bld/sh
+    {% endblock %}
+    {% block box %}
+      bld/box
+    {% endblock %}
+    {% block decompressor %}
+      bld/extract
+    {% endblock %}
+  {% endblock %}
 {% endblock %}

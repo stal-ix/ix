@@ -1,17 +1,44 @@
-DS="nowhere"
+{% include 'util.sh' %}
 
-pushd() {
-    DS="${PWD}:${DS}"; cd ${1}
+postinstall_f() (
+{% if boot %}
+{% if bin %}
+rm -rf ${out}/lib ${out}/include
+{% else %}
+: skip
+{% endif %}
+{% else %}
+{% include 'postinstall.sh' %}
+{% endif %}
+)
+
+env_f() (
+{% include 'env.sh' %}
+)
+
+unpack_f() {
+{% include 'unpack.sh' %}
 }
 
-mkpushd() {
-    mkdir ${1}; pushd ${1}
+step_setup_f() {
+export bld=${PWD}
+{% include 'setup.sh' %}
 }
 
-pushcwd() {
-    pushd ${PWD}
-}
+step_install_f() (
+(
+{% block install %}
+echo 'do install'
+{% endblock %}
+)
 
-popd() {
-    O=${IFS}; IFS=':'; set ${DS}; cd ${1}; shift; DS=${*}; IFS=${O}
-}
+(
+{% block postinstall %}
+postinstall_f
+{% endblock %}
+)
+
+{% block prepare_env %}
+env_f
+{% endblock %}
+)
