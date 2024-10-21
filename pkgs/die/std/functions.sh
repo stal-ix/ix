@@ -25,20 +25,26 @@ export bld=${PWD}
 {% include 'setup.sh' %}
 }
 
-step_install_f() (
-(
+step_install_install_f() (
 {% block install %}
-echo 'do install'
+    echo 'do install'
 {% endblock %}
 )
 
-(
+step_install_postinstall_f() (
 {% block postinstall %}
-postinstall_f
+    postinstall_f
 {% endblock %}
 )
 
+step_install_prepare_env_f() (
 {% block prepare_env %}
-env_f
+    env_f
 {% endblock %}
+)
+
+step_install_f() (
+    step_install_install_f
+    step_install_postinstall_f
+    step_install_prepare_env_f
 )
