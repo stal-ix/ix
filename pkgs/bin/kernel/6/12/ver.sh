@@ -1,13 +1,13 @@
 {% block kernel_version %}
-6.12-rc3
+6.12-rc4
 {% endblock %}
 
 {% block kernel_sha %}
-c9b271cc559588796a80f06f4198a4de2823bc28cb5cd2632f3b80401035b91d
+41356c3cac4b55170506629cab54f3a0ab5a57c0fd1f0e976dbbe66a0a74cc87
 {% endblock %}
 
 {% block kernel_url %}
-https://git.kernel.org/torvalds/t/linux-6.12-rc3.tar.gz
+https://git.kernel.org/torvalds/t/linux-{{self.kernel_version().strip()}}.tar.gz
 {% endblock %}
 
 {% block fetch %}
