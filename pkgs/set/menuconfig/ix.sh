@@ -7,6 +7,7 @@ bld/box
 bld/flex
 bld/make
 bld/bison
+bin/pahole
 bld/compiler
 bin/clang/env
 bld/pkg/config

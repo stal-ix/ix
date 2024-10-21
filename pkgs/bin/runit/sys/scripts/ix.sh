@@ -89,6 +89,7 @@ cat << EOF > 01-00-mount-ro.sh
 # mount ro
 mount -t sysfs sysfs /sys
 mount -t debugfs none /sys/kernel/debug
+mount -t tracefs none /sys/kernel/tracing
 mount -t proc proc /proc
 mount -t cgroup2 none /sys/fs/cgroup
 EOF

@@ -3,4 +3,4 @@
 set -xue
 
 cp "${1}" .config
-exec "${IX_BINARY}" run set/menuconfig -- sh -c "make HOSTCC=cc menuconfig; cp .config ${1}"
+exec "${IX_BINARY}" run set/menuconfig -- sh -c "make HOSTCC=cc LLVM=1 menuconfig; cp .config ${1}"

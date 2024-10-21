@@ -47,6 +47,8 @@
 #}
 
 {% block run_deps %}
+bin/pahole
+bin/read/pe
 bin/s3/baker
 bin/s3/fs/fuse
 bin/co2mon

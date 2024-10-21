@@ -21,6 +21,7 @@ lib/bfd
 lib/iberty
 lib/opcodes
 lib/llvm/19
+lib/elfutils
 {% endblock %}
 
 {% block step_unpack %}
@@ -33,6 +34,9 @@ LLVM=1
 V=1
 CLANG_BPF_CO_RE_PROBE_CMD='echo 1'
 bash_compdir=${out}/share/bash
+CC=clang
+CLANG=clang-19
+HOSTCC=cc
 {% endblock %}
 
 {% block cpp_defines %}
@@ -45,5 +49,6 @@ mv ${out}/sbin ${out}/bin
 {% endblock %}
 
 {% block bld_tool %}
+bld/pkg/config
 bld/llvm/config
 {% endblock %}

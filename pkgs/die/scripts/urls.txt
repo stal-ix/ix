@@ -405,6 +405,7 @@ https://downloads.sourceforge.net/project/mscorefonts2/cabs/PowerPointViewer.exe
 https://downloads.sourceforge.net/project/net-tools/net-tools-2.10.tar.xz
 https://downloads.sourceforge.net/project/nfs/nfs-utils/2.6.3/nfs-utils-2.6.3.tar.xz
 https://downloads.sourceforge.net/project/nfs/nfs-utils/2.6.4/nfs-utils-2.6.4.tar.xz
+https://downloads.sourceforge.net/project/nfs/nfs-utils/2.8.1/nfs-utils-2.8.1.tar.xz
 https://downloads.sourceforge.net/project/pcre/pcre/8.45/pcre-8.45.tar.bz2
 https://downloads.sourceforge.net/project/perfmon2/libpfm4/libpfm-4.13.0.tar.gz
 https://downloads.sourceforge.net/project/podofo/podofo/0.9.8/podofo-0.9.8.tar.gz
@@ -622,6 +623,7 @@ https://ftpmirror.gnu.org/libtool/libtool-2.4.6.tar.gz
 https://ftpmirror.gnu.org/libtool/libtool-2.4.7.tar.gz
 https://gameoftrees.org/releases/portable/got-portable-0.92.tar.gz
 https://gameoftrees.org/releases/portable/got-portable-0.93.tar.gz
+https://git.kernel.org/pub/scm/devel/pahole/pahole.git
 https://git.kernel.org/pub/scm/libs/libcap/libcap.git/snapshot/libcap-cap/v1.2.64.tar.gz
 https://git.kernel.org/pub/scm/libs/libtrace/libtraceevent.git/snapshot/libtraceevent-1.7.3.tar.gz
 https://git.kernel.org/pub/scm/libs/libtrace/libtraceevent.git/snapshot/libtraceevent-1.8.0.tar.gz
@@ -645,6 +647,7 @@ https://git.kernel.org/pub/scm/utils/stalld/stalld.git/snapshot/stalld-1.17.1.ta
 https://git.kernel.org/pub/scm/utils/stalld/stalld.git/snapshot/stalld-1.19.1.tar.gz
 https://git.kernel.org/pub/scm/utils/stalld/stalld.git/snapshot/stalld-1.19.3.tar.gz
 https://git.kernel.org/pub/scm/utils/stalld/stalld.git/snapshot/stalld-1.19.4.tar.gz
+https://git.kernel.org/torvalds/t/linux-6.12-rc3.tar.gz
 https://git.midipix.org/slibtool/snapshot/slibtool-0.5.34.tar.bz2
 https://git.midipix.org/slibtool/snapshot/slibtool-0.5.35.tar.bz2
 https://git.midipix.org/slibtool/snapshot/slibtool-0.6.0.tar.bz2
@@ -1221,6 +1224,7 @@ https://github.com/besser82/libxcrypt/archive/refs/tags/v4.4.36.tar.gz
 https://github.com/bfgroup/b2/archive/refs/tags/4.9.2.tar.gz
 https://github.com/bfgroup/b2/archive/refs/tags/5.1.0.tar.gz
 https://github.com/biojppm/rapidyaml/releases/download/v0.4.1/rapidyaml-0.4.1-src.tgz
+https://github.com/bpftrace/bpftrace/archive/refs/tags/v0.21.2.tar.gz
 https://github.com/bugaevc/wl-clipboard/archive/refs/tags/v2.2.0.tar.gz
 https://github.com/bus1/dbus-broker/archive/refs/tags/v35.tar.gz
 https://github.com/bytecodealliance/wasm-micro-runtime/archive/refs/tags/WAMR-1.2.3.tar.gz
@@ -2104,6 +2108,7 @@ https://github.com/mawww/kakoune/archive/refs/tags/v2023.08.05.tar.gz
 https://github.com/mawww/kakoune/archive/refs/tags/v2024.05.09.tar.gz
 https://github.com/mawww/kakoune/archive/refs/tags/v2024.05.18.tar.gz
 https://github.com/mchehab/rasdaemon/archive/refs/tags/v0.8.0.tar.gz
+https://github.com/mentebinaria/readpe/archive/refs/tags/v0.84.tar.gz
 https://github.com/mesonbuild/meson/archive/refs/tags/0.60.2.tar.gz
 https://github.com/mesonbuild/meson/archive/refs/tags/0.62.1.tar.gz
 https://github.com/mesonbuild/meson/archive/refs/tags/0.63.2.tar.gz
@@ -2542,6 +2547,7 @@ https://github.com/sass/libsass/archive/refs/tags/3.6.6.tar.gz
 https://github.com/sass/sassc/archive/refs/tags/3.6.2.tar.gz
 https://github.com/sayanarijit/xplr/archive/refs/tags/v0.21.5.tar.gz
 https://github.com/sbcl/sbcl/archive/refs/tags/sbcl-2.3.10.tar.gz
+https://github.com/sched-ext/scx/archive/fb3f1d0b43d8a1f69cbc434f4a43145dbd983076.tar.gz
 https://github.com/sched-ext/scx/archive/refs/tags/v1.0.2.tar.gz
 https://github.com/sched-ext/scx/archive/refs/tags/v1.0.4.tar.gz
 https://github.com/sched-ext/scx/archive/refs/tags/v1.0.5.tar.gz
@@ -2916,6 +2922,7 @@ https://github.com/yandex/porto/archive/refs/tags/v5.3.15.tar.gz
 https://github.com/yasm/yasm/releases/download/v1.3.0/yasm-1.3.0.tar.gz
 https://github.com/yggdrasil-network/yggdrasil-go/archive/refs/tags/v0.5.5.tar.gz
 https://github.com/yggdrasil-network/yggdrasil-go/archive/refs/tags/v0.5.8.tar.gz
+https://github.com/yggdrasil-network/yggdrasil-go/archive/refs/tags/v0.5.9.tar.gz
 https://github.com/yorukot/superfile/archive/refs/tags/v1.1.3.tar.gz
 https://github.com/yquake2/yquake2/archive/refs/tags/QUAKE2_8_20.tar.gz
 https://github.com/yquake2/yquake2/archive/refs/tags/QUAKE2_8_30.tar.gz
