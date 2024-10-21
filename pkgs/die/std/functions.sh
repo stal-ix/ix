@@ -48,3 +48,19 @@ step_install_f() (
     step_install_postinstall_f
     step_install_prepare_env_f
 )
+
+setup_bt_f() (
+{% include 'bt.sh' %}
+)
+
+setup_compiler_f() {
+{% block setup_compiler %}
+    : skip compiler setup
+{% endblock %}
+}
+
+setup_tools_f() (
+{% block setup_tools %}
+    : skip user tools
+{% endblock %}
+)

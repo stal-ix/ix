@@ -3,32 +3,18 @@ mkpushd ${tmp}/bin
 # setup build tools
 mkpushd bt
 export PATH="${PWD}:${PATH}"
-
-(
-{% include 'bt.sh' %}
-)
-
+setup_bt_f
 popd
 
 # setup toolchain
 mkpushd tc
-
-{% block setup_compiler %}
-: skip compiler setup
-{% endblock %}
-
+setup_compiler_f
 export PATH="${PWD}:${PATH}"
 popd
 
 # setup user tools
 mkpushd ut
-
-(
-{% block setup_tools %}
-: skip user tools
-{% endblock %}
-)
-
+setup_tools_f
 export PATH="${PWD}:${PATH}"
 popd
 
