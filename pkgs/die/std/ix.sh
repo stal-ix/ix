@@ -1,4 +1,4 @@
-{% extends 'ix_unwrap.sh' %}
+{% extends 'ix2.sh' %}
 
 {% block std_box %}
   {% if linux and 'compress' in build_flags %}
