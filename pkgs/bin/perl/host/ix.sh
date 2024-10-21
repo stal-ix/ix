@@ -54,6 +54,8 @@ bash Configure -des    \
     -Dcc=clang
 
 sed -e 's|/.*/bin/sh|/bin/sh|' -e 's|/.*/bin/sed|sed|' -i config.h
+
+echo '#undef HAS_MALLOC_SIZE' >> config.h
 {% endblock %}
 
 {% block postinstall %}
