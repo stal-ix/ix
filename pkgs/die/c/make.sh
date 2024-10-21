@@ -16,7 +16,7 @@ make
 -s
 {% endif %}
 
-SHELL="$(which sh)"
+SHELL=sh
 PREFIX="${out}"
 prefix="${out}"
 

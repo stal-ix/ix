@@ -46,10 +46,5 @@ export CONLYFLAGS=
 {% endblock %}
 
 {% block setup_compiler %}
-if command -v ls; then
-    {% include 'cross_tc.sh' %}
-else
-    source_env "${IX_T_DIR}"
-    setup_tc_here
-fi
+{% include 'cross_tc.sh' %}
 {% endblock %}

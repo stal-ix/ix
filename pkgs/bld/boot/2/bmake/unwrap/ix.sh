@@ -16,11 +16,17 @@ bld/boot/1/env
 
 {% block unpack %}
 cd ${out}
+mkdir bin
+cd bin
+mkdir src
+cd src
+extract0 ${src}/bmake*
+cd bmake*
+{% endblock %}
 
-mkdir bin; cd bin
-mkdir src; cd src
-
-extract0 ${src}/bmake*; cd bmake*
+{% block setup_compiler %}
+source_env "${IX_T_DIR}"
+setup_tc_here
 {% endblock %}
 
 {% block step_setup %}
