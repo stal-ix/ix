@@ -792,6 +792,7 @@ https://github.com/FreeRDP/FreeRDP/archive/refs/tags/3.5.1.tar.gz
 https://github.com/FreeRDP/FreeRDP/archive/refs/tags/3.6.2.tar.gz
 https://github.com/FreeRDP/FreeRDP/archive/refs/tags/3.6.3.tar.gz
 https://github.com/FreeRDP/FreeRDP/archive/refs/tags/3.7.0.tar.gz
+https://github.com/FreeRDP/FreeRDP/archive/refs/tags/3.9.0.tar.gz
 https://github.com/GNOME/adwaita-icon-theme/archive/refs/tags/44.0.tar.gz
 https://github.com/GNOME/adwaita-icon-theme/archive/refs/tags/47.0.tar.gz
 https://github.com/GNOME/epiphany/archive/refs/tags/45.0.tar.gz
