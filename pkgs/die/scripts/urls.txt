@@ -278,6 +278,7 @@ https://dbus.freedesktop.org/releases/dbus-glib/dbus-glib-0.112.tar.gz
 https://dbus.freedesktop.org/releases/dbus/dbus-1.14.10.tar.xz
 https://dev-www.libreoffice.org/src/libcdr/libcdr-0.1.7.tar.xz
 https://dev-www.libreoffice.org/src/libvisio/libvisio-0.1.7.tar.xz
+https://dev-www.libreoffice.org/src/libvisio/libvisio-0.1.8.tar.xz
 https://dev.yorhel.nl/download/ncdu-1.18.1.tar.gz
 https://dev.yorhel.nl/download/ncdu-1.20.tar.gz
 https://devimages-cdn.apple.com/design/resources/download/NY.dmg
