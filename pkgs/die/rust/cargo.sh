@@ -6,7 +6,7 @@
 80
 {% endblock %}
 
-{% block std_box %}
+{% block std_env %}
 bld/pzd
 bld/python
 bld/pkg/config
@@ -14,8 +14,8 @@ bld/rust/devendor
 {% if help %}
 bin/cargo/whatfeatures
 {% endif %}
-bld/rust(rustc_ver={{self.rustc_ver().strip()}})
 {{super()}}
+bld/rust(rustc_ver={{self.rustc_ver().strip()}})
 {% endblock %}
 
 {% block unpack %}

@@ -26,9 +26,8 @@ ninja -C {{ninja_build_dir}} -j {% block ninja_threads %}${make_thrs}{% endblock
 ninja -C {{ninja_build_dir}} {{ix.fix_list(ninja_install_targets)}}
 {% endblock %}
 
-{% block step_configure %}
+{% block configure %}
 {{super()}}
-
 {% block sanitize_build_files %}
 find ${tmp} -name build.ninja | while read l; do
     echo "sanitize ${l}"

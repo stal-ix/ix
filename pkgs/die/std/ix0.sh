@@ -1,4 +1,4 @@
-{% extends 'base.sh' %}
+{% extends '//die/base.sh' %}
 
 {% block git_sha %}
 {% endblock %}

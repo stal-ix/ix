@@ -82,6 +82,7 @@ http://potrace.sourceforge.net/download/1.16/potrace-1.16.tar.gz
 http://prdownloads.sourceforge.net/swig/swig-4.1.1.tar.gz
 http://prdownloads.sourceforge.net/swig/swig-4.2.0.tar.gz
 http://prdownloads.sourceforge.net/swig/swig-4.2.1.tar.gz
+http://prdownloads.sourceforge.net/swig/swig-4.3.0.tar.gz
 http://smarden.org/runit/runit-2.1.2.tar.gz
 http://sourceware.org/elfutils/ftp/0.189/elfutils-0.189.tar.bz2
 http://sourceware.org/elfutils/ftp/0.190/elfutils-0.190.tar.bz2
@@ -604,6 +605,7 @@ https://ftp.gnu.org/pub/gnu/ncurses/ncurses-6.4.tar.gz
 https://ftp.gnu.org/pub/gnu/ncurses/ncurses-6.5.tar.gz
 https://ftp.isc.org/isc/dhcp/4.4.2-P1/dhcp-4.4.2-P1.tar.gz
 https://ftp.mozilla.org/pub/nspr/releases/v4.35/src/nspr-4.35.tar.gz
+https://ftp.mozilla.org/pub/nspr/releases/v4.36/src/nspr-4.36.tar.gz
 https://ftp.mozilla.org/pub/security/nss/releases/NSS_3_100_RTM/src/nss-3.100.tar.gz
 https://ftp.mozilla.org/pub/security/nss/releases/NSS_3_102_RTM/src/nss-3.102.tar.gz
 https://ftp.mozilla.org/pub/security/nss/releases/NSS_3_103_RTM/src/nss-3.103.tar.gz
@@ -682,6 +684,7 @@ https://git.sr.ht/~exec64/imv/archive/v4.4.0.tar.gz
 https://git.sr.ht/~exec64/imv/archive/v4.5.0.tar.gz
 https://git.sr.ht/~kennylevinsen/greetd/archive/0.9.0.tar.gz
 https://git.sr.ht/~kennylevinsen/seatd/archive/0.8.0.tar.gz
+https://git.sr.ht/~kennylevinsen/seatd/archive/0.9.0.tar.gz
 https://git.sr.ht/~kennylevinsen/wlsunset/archive/0.2.0.tar.gz
 https://git.sr.ht/~leon_plickat/lavalauncher/archive/v2.1.1.tar.gz
 https://git.sr.ht/~leon_plickat/wlopm/archive/v0.1.0.tar.gz
@@ -773,6 +776,7 @@ https://github.com/FedoraQt/adwaita-qt/archive/refs/tags/1.4.1.tar.gz
 https://github.com/FluidSynth/fluidsynth/archive/refs/tags/v2.3.4.tar.gz
 https://github.com/FluidSynth/fluidsynth/archive/refs/tags/v2.3.5.tar.gz
 https://github.com/FluidSynth/fluidsynth/archive/refs/tags/v2.3.6.tar.gz
+https://github.com/FluidSynth/fluidsynth/archive/refs/tags/v2.3.7.tar.gz
 https://github.com/FlyGoat/RyzenAdj/archive/refs/tags/v0.13.0.tar.gz
 https://github.com/FlyGoat/RyzenAdj/archive/refs/tags/v0.14.0.tar.gz
 https://github.com/FlyGoat/RyzenAdj/archive/refs/tags/v0.16.0.tar.gz
@@ -790,6 +794,7 @@ https://github.com/FreeRDP/FreeRDP/archive/refs/tags/3.5.1.tar.gz
 https://github.com/FreeRDP/FreeRDP/archive/refs/tags/3.6.2.tar.gz
 https://github.com/FreeRDP/FreeRDP/archive/refs/tags/3.6.3.tar.gz
 https://github.com/FreeRDP/FreeRDP/archive/refs/tags/3.7.0.tar.gz
+https://github.com/FreeRDP/FreeRDP/archive/refs/tags/3.9.0.tar.gz
 https://github.com/GNOME/adwaita-icon-theme/archive/refs/tags/44.0.tar.gz
 https://github.com/GNOME/adwaita-icon-theme/archive/refs/tags/47.0.tar.gz
 https://github.com/GNOME/epiphany/archive/refs/tags/45.0.tar.gz
@@ -2123,6 +2128,7 @@ https://github.com/mesonbuild/meson/archive/refs/tags/1.4.0.tar.gz
 https://github.com/mesonbuild/meson/archive/refs/tags/1.4.1.tar.gz
 https://github.com/mesonbuild/meson/archive/refs/tags/1.5.0.tar.gz
 https://github.com/mesonbuild/meson/archive/refs/tags/1.5.2.tar.gz
+https://github.com/mesonbuild/meson/archive/refs/tags/1.6.0.tar.gz
 https://github.com/mheily/libkqueue/archive/refs/tags/v2.6.1.tar.gz
 https://github.com/microsoft/GSL/archive/refs/tags/v4.0.0.tar.gz
 https://github.com/microsoft/cascadia-code/archive/refs/tags/v2404.23.tar.gz
@@ -2182,6 +2188,7 @@ https://github.com/msoos/minisat/archive/refs/tags/2.2.1.tar.gz
 https://github.com/muesli/duf/archive/refs/tags/v0.8.1.tar.gz
 https://github.com/munt/munt/archive/refs/tags/libmt32emu_2_7_1.tar.gz
 https://github.com/museun/cargo-whatfeatures/archive/refs/tags/v0.9.9.tar.gz
+https://github.com/mvdan/sh/archive/refs/tags/v3.10.0.tar.gz
 https://github.com/mvdan/sh/archive/refs/tags/v3.5.1.tar.gz
 https://github.com/mvdan/sh/archive/refs/tags/v3.8.0.tar.gz
 https://github.com/namhyung/uftrace/archive/refs/tags/v0.12.tar.gz
@@ -2220,6 +2227,7 @@ https://github.com/nghttp2/nghttp2/archive/refs/tags/v1.61.0.tar.gz
 https://github.com/nghttp2/nghttp2/archive/refs/tags/v1.62.0.tar.gz
 https://github.com/nghttp2/nghttp2/archive/refs/tags/v1.62.1.tar.gz
 https://github.com/nghttp2/nghttp2/archive/refs/tags/v1.63.0.tar.gz
+https://github.com/nghttp2/nghttp2/archive/refs/tags/v1.64.0.tar.gz
 https://github.com/ngtcp2/nghttp3/archive/refs/tags/v0.15.0.tar.gz
 https://github.com/ngtcp2/nghttp3/archive/refs/tags/v1.0.0.tar.gz
 https://github.com/ngtcp2/nghttp3/archive/refs/tags/v1.1.0.tar.gz
@@ -2272,6 +2280,7 @@ https://github.com/onetrueawk/awk/archive/refs/tags/20240311.tar.gz
 https://github.com/onetrueawk/awk/archive/refs/tags/20240422.tar.gz
 https://github.com/open-source-parsers/jsoncpp/archive/refs/tags/1.9.5.tar.gz
 https://github.com/openSUSE/hwinfo/archive/refs/tags/23.2.tar.gz
+https://github.com/openSUSE/hwinfo/archive/refs/tags/23.3.tar.gz
 https://github.com/openSUSE/xinetd/archive/refs/tags/2.3.15.4.tar.gz
 https://github.com/opencv/opencv/archive/refs/tags/4.10.0.tar.gz
 https://github.com/opencv/opencv/archive/refs/tags/4.8.0.tar.gz
@@ -2467,6 +2476,7 @@ https://github.com/randombit/botan/archive/refs/tags/2.19.5.tar.gz
 https://github.com/randombit/botan/archive/refs/tags/3.3.0.tar.gz
 https://github.com/randombit/botan/archive/refs/tags/3.4.0.tar.gz
 https://github.com/randombit/botan/archive/refs/tags/3.5.0.tar.gz
+https://github.com/randombit/botan/archive/refs/tags/3.6.0.tar.gz
 https://github.com/raphamorim/rio/archive/refs/tags/v0.0.34.tar.gz
 https://github.com/raygard/wak/archive/dca8c09e9e20581330dd930b0219b07f431f2388.tar.gz
 https://github.com/redis/hiredis/archive/refs/tags/v1.2.0.tar.gz
@@ -3189,6 +3199,7 @@ https://gitlab.gnome.org/GNOME/vte/-/archive/0.76.1/vte-0.76.1.tar.bz2
 https://gitlab.gnome.org/GNOME/vte/-/archive/0.76.2/vte-0.76.2.tar.bz2
 https://gitlab.gnome.org/GNOME/vte/-/archive/0.76.3/vte-0.76.3.tar.bz2
 https://gitlab.gnome.org/GNOME/vte/-/archive/0.78.0/vte-0.78.0.tar.bz2
+https://gitlab.gnome.org/GNOME/vte/-/archive/0.78.1/vte-0.78.1.tar.bz2
 https://gitlab.gnome.org/GNOME/vte/-/archive/9e8824480ef51374bf9b42ad8ee59f64d50456b1/vte-9e8824480ef51374bf9b42ad8ee59f64d50456b1.tar.bz2
 https://gitlab.gnome.org/GNOME/zenity/-/archive/3.44.0/zenity-3.44.0.tar.bz2
 https://gitlab.gnome.org/GNOME/zenity/-/archive/3.90.0/zenity-3.90.0.tar.bz2
@@ -3296,6 +3307,7 @@ https://memcached.org/files/memcached-1.6.27.tar.gz
 https://memcached.org/files/memcached-1.6.28.tar.gz
 https://memcached.org/files/memcached-1.6.30.tar.gz
 https://memcached.org/files/memcached-1.6.31.tar.gz
+https://memcached.org/files/memcached-1.6.32.tar.gz
 https://mesa.freedesktop.org/archive/mesa-23.1.9.tar.xz
 https://mesa.freedesktop.org/archive/mesa-23.2.1.tar.xz
 https://mesa.freedesktop.org/archive/mesa-23.3.1.tar.xz
@@ -3343,6 +3355,7 @@ https://mirrors.edge.kernel.org/pub/linux/network/wireless/iwd-2.21.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/network/wireless/iwd-2.22.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/network/wireless/iwd-2.8.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/network/wireless/iwd-2.9.tar.xz
+https://mirrors.edge.kernel.org/pub/linux/network/wireless/iwd-3.0.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/utils/kbd/kbd-2.6.1.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/utils/kbd/kbd-2.6.3.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/utils/kbd/kbd-2.6.4.tar.xz
@@ -3504,6 +3517,7 @@ https://webkitgtk.org/releases/webkitgtk-2.44.1.tar.xz
 https://webkitgtk.org/releases/webkitgtk-2.44.2.tar.xz
 https://webkitgtk.org/releases/webkitgtk-2.46.0.tar.xz
 https://webkitgtk.org/releases/webkitgtk-2.46.1.tar.xz
+https://webkitgtk.org/releases/webkitgtk-2.46.2.tar.xz
 https://wpewebkit.org/releases/wpewebkit-2.36.2.tar.xz
 https://wpitchoune.net/psensor/files/psensor-1.2.1.tar.gz
 https://www.7-zip.org/a/7z2405-src.tar.xz
@@ -3681,6 +3695,7 @@ https://www.sqlite.org/2024/sqlite-autoconf-3450200.tar.gz
 https://www.sqlite.org/2024/sqlite-autoconf-3450300.tar.gz
 https://www.sqlite.org/2024/sqlite-autoconf-3460000.tar.gz
 https://www.sqlite.org/2024/sqlite-autoconf-3460100.tar.gz
+https://www.sqlite.org/2024/sqlite-autoconf-3470000.tar.gz
 https://www.stunnel.org/downloads/stunnel-5.70.tar.gz
 https://www.stunnel.org/downloads/stunnel-5.71.tar.gz
 https://www.stunnel.org/downloads/stunnel-5.72.tar.gz

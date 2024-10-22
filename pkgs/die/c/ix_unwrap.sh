@@ -4,6 +4,11 @@
   {% if std_env %}
     {{std_env}}
   {% else %}
+    {% if std_box %}
+      {{std_box}}
+    {% else %}
+      {{super()}}
+    {% endif %}
     {% block c_compiler %}
       {% if c_compiler %}
         {{c_compiler}}
@@ -11,11 +16,6 @@
         bld/compiler(clang_ver={{clang_ver}})
       {% endif %}
     {% endblock %}
-    {% if std_box %}
-      {{std_box}}
-    {% else %}
-      {{super()}}
-    {% endif %}
   {% endif %}
 {% endblock %}
 
@@ -46,10 +46,5 @@ export CONLYFLAGS=
 {% endblock %}
 
 {% block setup_compiler %}
-if command -v ls; then
-    {% include 'cross_tc.sh' %}
-else
-    source_env "${IX_T_DIR}"
-    setup_tc_here
-fi
+{% include 'cross_tc.sh' %}
 {% endblock %}

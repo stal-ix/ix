@@ -15,13 +15,7 @@ lib/shim/fake(lib_name=nsl)
 
 {% block bld_tool %}
 bld/bash
-{% if darwin %}
-bld/sw/vers
-{% endif %}
 bld/fake(tool_name=install_name_tool,std_box={{std_box}})
-{% endblock %}
-
-{% block sw_vers %}
 {% endblock %}
 
 {% block build_flags %}
@@ -60,6 +54,8 @@ bash Configure -des    \
     -Dcc=clang
 
 sed -e 's|/.*/bin/sh|/bin/sh|' -e 's|/.*/bin/sed|sed|' -i config.h
+
+echo '#undef HAS_MALLOC_SIZE' >> config.h
 {% endblock %}
 
 {% block postinstall %}

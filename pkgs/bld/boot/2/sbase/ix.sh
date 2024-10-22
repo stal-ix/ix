@@ -12,12 +12,15 @@ bmake
 
 {% block bld_deps %}
 bld/boot/2/shutil
-bld/boot/2/bmake
+bld/boot/2/bmake/unwrap
 bld/boot/1/env
 {% endblock %}
 
 {% block unpack %}
-mkdir src; cd src; extract0 ${src}/*.gz; cd *
+mkdir src
+cd src
+extract0 ${src}/*.gz
+cd *
 {% endblock %}
 
 {% block setup_compiler %}
@@ -25,7 +28,8 @@ export PATH="${out}/bin:${PWD}:${PATH}"
 {% for x in ix.parse_list(self.cpp_defines()) %}
 export CPPFLAGS="-D{{x}} ${CPPFLAGS}"
 {% endfor %}
-{{super()}}
+source_env "${IX_T_DIR}"
+setup_tc_here
 {% endblock %}
 
 {% block cpp_defines %}

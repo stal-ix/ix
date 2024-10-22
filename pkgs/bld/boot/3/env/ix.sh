@@ -5,6 +5,7 @@ bld/boot/3/lib/c
 {% endblock %}
 
 {% block run_deps %}
+bld/boot/3/bt
 bld/boot/3/shim
 bld/boot/3/sh
 bld/boot/3/make/1
