@@ -561,7 +561,7 @@ bin/auto/make/1/16/1
 bin/auto/make/1/16/3
 bin/auto/make/1/16/5
 bin/unrar
-bin/usbutils
+bin/usb/utils
 bin/tmux
 bin/make/lite
 bin/make
