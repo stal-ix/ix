@@ -1,8 +1,8 @@
-{% extends '//die/c/make.sh' %}
+{% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://github.com/jovanlanik/gtklock/archive/refs/tags/v2.0.1.tar.gz
-sha:d1802a7fcb8cace0408ab34627841d7ea28d630f934c8b7884536f9dfa76910e
+https://github.com/jovanlanik/gtklock/archive/refs/tags/v4.0.0.tar.gz
+sha:db20bf27bd5dd01901ea1753c89c170777dd7cf8fca19130cf90f5f4e3fb9633
 {% endblock %}
 
 {% block bld_libs %}
@@ -11,6 +11,7 @@ lib/gtk/3
 lib/wayland
 lib/pam/unix
 lib/gtk/layer/shell
+lib/gtk/session/lock
 {% endblock %}
 
 {% block bld_tool %}
@@ -21,6 +22,6 @@ bin/xml/lint
 bld/pkg/config
 {% endblock %}
 
-{% block patch %}
-sed -e 's|/etc/pam.d|$(PREFIX)/etc/pam.d|' -i makefile
+{% block c_flags %}
+-Wno-implicit-function-declaration
 {% endblock %}

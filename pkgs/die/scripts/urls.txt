@@ -758,6 +758,7 @@ https://github.com/BLAKE3-team/BLAKE3/archive/refs/tags/1.5.2.tar.gz
 https://github.com/BLAKE3-team/BLAKE3/archive/refs/tags/1.5.3.tar.gz
 https://github.com/BLAKE3-team/BLAKE3/archive/refs/tags/1.5.4.tar.gz
 https://github.com/CorsixTH/CorsixTH/archive/refs/tags/v0.67.tar.gz
+https://github.com/Cu3PO42/gtk-session-lock/archive/refs/tags/v0.2.0.tar.gz
 https://github.com/Cyan4973/xxHash/archive/refs/tags/v0.8.2.tar.gz
 https://github.com/DanBloomberg/leptonica/archive/refs/tags/1.83.1.tar.gz
 https://github.com/DanBloomberg/leptonica/archive/refs/tags/1.84.1.tar.gz
@@ -1839,6 +1840,7 @@ https://github.com/joncampbell123/dosbox-x/archive/refs/tags/dosbox-x-v2024.07.0
 https://github.com/joncampbell123/dosbox-x/archive/refs/tags/dosbox-x-v2024.10.01.tar.gz
 https://github.com/josuttis/jthread/archive/0fa8d394254886c555d6faccd0a3de819b7d47f8.tar.gz
 https://github.com/jovanlanik/gtklock/archive/refs/tags/v2.0.1.tar.gz
+https://github.com/jovanlanik/gtklock/archive/refs/tags/v4.0.0.tar.gz
 https://github.com/jstedfast/gmime/archive/refs/tags/3.2.13.tar.gz
 https://github.com/jtanx/libclipboard/archive/refs/tags/v1.1.tar.gz
 https://github.com/jtheoof/swappy/archive/refs/tags/v1.5.1.tar.gz
