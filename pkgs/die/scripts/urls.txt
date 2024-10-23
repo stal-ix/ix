@@ -171,6 +171,7 @@ https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.11.1.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.11.2.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.11.3.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.11.4.tar.xz
+https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.11.5.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.2.14.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.3.13.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.4.12.tar.xz
@@ -203,6 +204,7 @@ https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.6.50.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.6.52.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.6.53.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.6.54.tar.xz
+https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.6.58.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.6.6.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.6.7.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.6.8.tar.xz
@@ -278,6 +280,7 @@ https://dbus.freedesktop.org/releases/dbus-glib/dbus-glib-0.112.tar.gz
 https://dbus.freedesktop.org/releases/dbus/dbus-1.14.10.tar.xz
 https://dev-www.libreoffice.org/src/libcdr/libcdr-0.1.7.tar.xz
 https://dev-www.libreoffice.org/src/libvisio/libvisio-0.1.7.tar.xz
+https://dev-www.libreoffice.org/src/libvisio/libvisio-0.1.8.tar.xz
 https://dev.yorhel.nl/download/ncdu-1.18.1.tar.gz
 https://dev.yorhel.nl/download/ncdu-1.20.tar.gz
 https://devimages-cdn.apple.com/design/resources/download/NY.dmg
@@ -757,6 +760,7 @@ https://github.com/BLAKE3-team/BLAKE3/archive/refs/tags/1.5.2.tar.gz
 https://github.com/BLAKE3-team/BLAKE3/archive/refs/tags/1.5.3.tar.gz
 https://github.com/BLAKE3-team/BLAKE3/archive/refs/tags/1.5.4.tar.gz
 https://github.com/CorsixTH/CorsixTH/archive/refs/tags/v0.67.tar.gz
+https://github.com/Cu3PO42/gtk-session-lock/archive/refs/tags/v0.2.0.tar.gz
 https://github.com/Cyan4973/xxHash/archive/refs/tags/v0.8.2.tar.gz
 https://github.com/DanBloomberg/leptonica/archive/refs/tags/1.83.1.tar.gz
 https://github.com/DanBloomberg/leptonica/archive/refs/tags/1.84.1.tar.gz
@@ -1838,6 +1842,7 @@ https://github.com/joncampbell123/dosbox-x/archive/refs/tags/dosbox-x-v2024.07.0
 https://github.com/joncampbell123/dosbox-x/archive/refs/tags/dosbox-x-v2024.10.01.tar.gz
 https://github.com/josuttis/jthread/archive/0fa8d394254886c555d6faccd0a3de819b7d47f8.tar.gz
 https://github.com/jovanlanik/gtklock/archive/refs/tags/v2.0.1.tar.gz
+https://github.com/jovanlanik/gtklock/archive/refs/tags/v4.0.0.tar.gz
 https://github.com/jstedfast/gmime/archive/refs/tags/3.2.13.tar.gz
 https://github.com/jtanx/libclipboard/archive/refs/tags/v1.1.tar.gz
 https://github.com/jtheoof/swappy/archive/refs/tags/v1.5.1.tar.gz
@@ -2294,6 +2299,7 @@ https://github.com/openssh/openssh-portable/archive/refs/tags/V_9_7_P1.tar.gz
 https://github.com/openssh/openssh-portable/archive/refs/tags/V_9_8_P1.tar.gz
 https://github.com/openssh/openssh-portable/archive/refs/tags/V_9_9_P1.tar.gz
 https://github.com/openssl/openssl/archive/refs/tags/openssl-3.3.2.tar.gz
+https://github.com/openssl/openssl/archive/refs/tags/openssl-3.4.0.tar.gz
 https://github.com/opsengine/cpulimit/archive/refs/tags/v0.2.tar.gz
 https://github.com/p-gen/smenu/archive/refs/tags/v1.3.0.tar.gz
 https://github.com/p-gen/smenu/archive/refs/tags/v1.4.0.tar.gz
@@ -2352,6 +2358,7 @@ https://github.com/prometheus/prometheus/archive/refs/tags/v2.52.1.tar.gz
 https://github.com/prometheus/prometheus/archive/refs/tags/v2.53.0.tar.gz
 https://github.com/prometheus/prometheus/archive/refs/tags/v2.53.1.tar.gz
 https://github.com/prometheus/prometheus/archive/refs/tags/v2.54.1.tar.gz
+https://github.com/prometheus/prometheus/archive/refs/tags/v2.55.0.tar.gz
 https://github.com/prometheus/prometheus/releases/download/v2.50.1/prometheus-web-ui-2.50.1.tar.gz
 https://github.com/protobuf-c/protobuf-c/archive/refs/tags/v1.4.1.tar.gz
 https://github.com/protobuf-c/protobuf-c/archive/refs/tags/v1.5.0.tar.gz
@@ -3634,6 +3641,7 @@ https://www.kernel.org/pub/linux/utils/fs/xfs/xfsprogs/xfsprogs-6.9.0.tar.xz
 https://www.kernel.org/pub/linux/utils/usb/usbutils/usbutils-014.tar.xz
 https://www.kernel.org/pub/linux/utils/usb/usbutils/usbutils-016.tar.xz
 https://www.kernel.org/pub/linux/utils/usb/usbutils/usbutils-017.tar.xz
+https://www.kernel.org/pub/linux/utils/usb/usbutils/usbutils-018.tar.xz
 https://www.kernel.org/pub/software/network/iw/iw-5.19.tar.xz
 https://www.kernel.org/pub/software/network/iw/iw-6.7.tar.xz
 https://www.kernel.org/pub/software/network/iw/iw-6.9.tar.xz

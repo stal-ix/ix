@@ -109,7 +109,7 @@ bin/dino
 bin/vala
 bin/vala/bootstrap
 bin/clapper
-bin/kernel/6/10
+bin/kernel/6/11
 bin/nftables
 bin/bpf/tool
 bin/iron/bar
@@ -386,8 +386,6 @@ bin/clang/env
 bin/clang/env/wrapper
 bin/jed
 bin/binutils
-bin/quake/1/vk/pg83
-bin/quake/1/vk/novum
 bin/quake/1/vk
 bin/quake/2/yamagi
 bin/quake/3/e
@@ -561,7 +559,7 @@ bin/auto/make/1/16/1
 bin/auto/make/1/16/3
 bin/auto/make/1/16/5
 bin/unrar
-bin/usbutils
+bin/usb/utils
 bin/tmux
 bin/make/lite
 bin/make
