@@ -1,8 +1,8 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://github.com/elementary/files/archive/refs/tags/7.0.0.tar.gz
-sha:e199c316cece15be255fa3110083e5118bdfbc0e1e3f0fc5e3b9027f28b9dc8e
+https://github.com/elementary/files/archive/refs/tags/7.1.0.tar.gz
+sha:d26ca8e95a61052ab3d5ac65abd355209458dba4b94b09108718ce1bbc58d701
 {% endblock %}
 
 {% block bld_libs %}
