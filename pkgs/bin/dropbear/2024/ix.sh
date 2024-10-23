@@ -1,8 +1,8 @@
 {% extends '//bin/dropbear/stock/ix.sh' %}
 
 {% block fetch %}
-https://github.com/mkj/dropbear/archive/refs/tags/DROPBEAR_2024.85.tar.gz
-sha:694a1e8d78c7da00f8a4eb29f61381900bb264d716d5b4f839b3e16336f8aeb6
+https://github.com/mkj/dropbear/archive/refs/tags/DROPBEAR_2024.86.tar.gz
+sha:d16285f0233a2400a84affa0235e34a71c660908079c639fdef889c2e90c9f5f
 {% endblock %}
 
 {% block conf_ver %}
