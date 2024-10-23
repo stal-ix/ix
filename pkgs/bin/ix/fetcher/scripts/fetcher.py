@@ -115,15 +115,14 @@ def tout_prefix(tout):
     return ['timeout', str(tout) + 's']
 
 
-def fetch_url_curl(url, out, tout):
+def fetch_url_curl(url, args, out, tout):
     cmd = tout_prefix(tout) + [
         'curl',
         '--retry', '0',
         '-k',
         '-L',
         '--output', out,
-        url,
-    ]
+    ] + args + [url]
 
     print(f'run {cmd}')
 
@@ -132,7 +131,10 @@ def fetch_url_curl(url, out, tout):
 
 def iter_fetch_url(url):
     for meth in [fetch_url_curl]:
-        yield functools.partial(meth, url)
+        for p in P.strip().split(';'):
+            yield functools.partial(meth, url, ['--socks5', p])
+
+        yield functools.partial(meth, url, [])
 
 
 def main():

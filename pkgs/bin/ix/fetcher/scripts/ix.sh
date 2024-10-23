@@ -7,6 +7,9 @@ cat << EOF > ${out}/bin/fetcher
 M = '''
 {% include '//die/scripts/mirrors.txt' %}
 '''
+P = '''
+{{fetcher_socks5_proxy}}
+'''
 EOF
 base64 -d << EOF >> ${out}/bin/fetcher
 {% include 'fetcher.py/base64' %}
