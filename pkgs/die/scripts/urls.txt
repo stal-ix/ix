@@ -2559,6 +2559,7 @@ https://github.com/rvaiya/keyd/archive/refs/tags/v2.4.3.tar.gz
 https://github.com/rvaiya/keyd/archive/refs/tags/v2.5.0.tar.gz
 https://github.com/rzvncj/xCHM/archive/refs/tags/1.35.tar.gz
 https://github.com/rzvncj/xCHM/archive/refs/tags/1.36.tar.gz
+https://github.com/rzvncj/xCHM/archive/refs/tags/1.37.tar.gz
 https://github.com/s3fs-fuse/s3fs-fuse/archive/refs/tags/v1.94.tar.gz
 https://github.com/sabotage-linux/netbsd-curses/archive/refs/tags/v0.3.2.tar.gz
 https://github.com/sammycage/lunasvg/archive/refs/tags/v2.3.8.tar.gz
