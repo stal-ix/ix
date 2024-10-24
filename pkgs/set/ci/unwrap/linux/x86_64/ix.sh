@@ -47,6 +47,7 @@
 #}
 
 {% block run_deps %}
+bin/logalize
 bin/curl/ressl
 bin/pahole
 bin/read/pe
