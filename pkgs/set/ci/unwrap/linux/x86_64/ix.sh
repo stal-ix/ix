@@ -47,6 +47,7 @@
 #}
 
 {% block run_deps %}
+bin/curl/ressl
 bin/pahole
 bin/read/pe
 bin/s3/baker

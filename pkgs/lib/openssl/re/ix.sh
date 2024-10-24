@@ -1,5 +1,6 @@
 {% extends '//die/hub.sh' %}
 
 {% block lib_deps %}
-lib/curl/{{libcurl_ver or 'full'}}
+lib/ressl
+lib/openssl/re/env
 {% endblock %}
