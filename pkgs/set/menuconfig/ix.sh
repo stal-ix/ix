@@ -2,7 +2,6 @@
 
 {% block run_deps %}
 bld/sh
-bin/gcc
 bld/box
 bld/flex
 bld/make
