@@ -841,6 +841,7 @@ https://github.com/GNOME/libshumate/archive/refs/tags/1.2.0.tar.gz
 https://github.com/GNOME/libshumate/archive/refs/tags/1.2.1.tar.gz
 https://github.com/GNOME/libshumate/archive/refs/tags/1.2.3.tar.gz
 https://github.com/GNOME/libshumate/archive/refs/tags/1.3.0.tar.gz
+https://github.com/GNOME/zenity/archive/refs/tags/4.0.3.tar.gz
 https://github.com/GStreamer/orc/archive/refs/tags/0.4.34.tar.gz
 https://github.com/GStreamer/orc/archive/refs/tags/0.4.35.tar.gz
 https://github.com/GStreamer/orc/archive/refs/tags/0.4.37.tar.gz
