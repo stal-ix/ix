@@ -1,8 +1,8 @@
 {% extends '//bin/zenity/t/ix.sh' %}
 
 {% block fetch %}
-https://gitlab.gnome.org/GNOME/zenity/-/archive/4.0.2/zenity-4.0.2.tar.bz2
-sha:183df6499752c7b29e44c56248a796a91ed20c3d0eb8d719b72746be01cf7d43
+https://github.com/GNOME/zenity/archive/refs/tags/4.0.3.tar.gz
+sha:5f50c315a937e1061f0ec5267a8dcc1f430c6aca6ca285373820fd03f420980c
 {% endblock %}
 
 {% block bld_libs %}
