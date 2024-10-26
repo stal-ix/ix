@@ -1,6 +1,6 @@
 #include <glib.h>
 #include <string>
-#include <lunasvg.h>
+#include <lunasvg/lunasvg.h>
 #include <gdk-pixbuf/gdk-pixbuf.h>
 
 using namespace lunasvg;
