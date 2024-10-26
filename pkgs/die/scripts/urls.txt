@@ -2829,6 +2829,7 @@ https://github.com/umputun/reproxy/archive/refs/tags/v1.1.1.tar.gz
 https://github.com/umputun/reproxy/archive/refs/tags/v1.2.2.tar.gz
 https://github.com/unicode-org/icu/archive/refs/tags/release-70-1.tar.gz
 https://github.com/unicode-org/icu/archive/refs/tags/release-75-1.tar.gz
+https://github.com/unicode-org/icu/archive/refs/tags/release-76-1.tar.gz
 https://github.com/upx/upx/releases/download/v4.1.0/upx-4.1.0-src.tar.xz
 https://github.com/upx/upx/releases/download/v4.2.0/upx-4.2.0-src.tar.xz
 https://github.com/upx/upx/releases/download/v4.2.1/upx-4.2.1-src.tar.xz
