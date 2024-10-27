@@ -7,4 +7,5 @@ sha:090dd5d38e04e0900bf6843b2b38ce7108cab815c1b5496c934af65c51965618
 
 {% block lib_deps %}
 lib/c
+lib/png
 {% endblock %}
