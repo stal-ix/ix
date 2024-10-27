@@ -18,6 +18,7 @@ lib/vulkan/spirv/tools
 pip/Mako
 bld/flex
 bld/bison
+pip/PyYAML
 bld/llvm/config
 bld/spirv/tools
 {% endblock %}
