@@ -118,6 +118,8 @@ def tout_prefix(tout):
 def fetch_url_curl(url, args, out, tout):
     cmd = tout_prefix(tout) + [
         'curl',
+        '-f',
+        '--remove-on-error',
         '--retry', '0',
         '-k',
         '-L',

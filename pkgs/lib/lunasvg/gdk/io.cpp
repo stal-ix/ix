@@ -1,6 +1,6 @@
 #include <glib.h>
 #include <string>
-#include <lunasvg.h>
+#include <lunasvg/lunasvg.h>
 #include <gdk-pixbuf/gdk-pixbuf.h>
 
 using namespace lunasvg;
@@ -125,7 +125,7 @@ namespace {
 
             auto bit = l.doc->renderToBitmap(std::max(l.width, 1), std::max(l.height, 1));
 
-            if (!bit.valid()) {
+            if (bit.isNull()) {
                 throw std::runtime_error("render error");
             }
 

@@ -1,12 +1,13 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://github.com/labwc/labwc/archive/refs/tags/0.8.0.tar.gz
-sha:1bfe5791c6002c1355821046623fa64231afd42e4d2ec1f6a9af44ef3b24f780
+https://github.com/labwc/labwc/archive/refs/tags/0.8.1.tar.gz
+sha:8e510655cf0c84875c541f4afeb636e707d365210993ad22d64d8bc3108a3433
 {% endblock %}
 
 {% block bld_libs %}
 lib/c
+lib/sfdo
 lib/glib
 lib/xml/2
 lib/pango

@@ -1,16 +1,18 @@
-{% extends '//lib/lunasvg/ix.sh' %}
+{% extends '//die/c/ix.sh' %}
 
-{% block bld_libs %}
-{{super()}}
-lib/png
+{% block fetch %}
+{% include '//lib/lunasvg/ver.sh' %}
 {% endblock %}
 
-{% block cmake_flags %}
-{{super()}}
-LUNASVG_BUILD_EXAMPLES=ON
+{% block bld_libs %}
+lib/lunasvg
+{% endblock %}
+
+{% block build %}
+cc -o svg2png examples/svg2png.cpp
 {% endblock %}
 
 {% block install %}
 mkdir ${out}/bin
-cp ${tmp}/obj/svg2png ${out}/bin/
+cp svg2png ${out}/bin/
 {% endblock %}

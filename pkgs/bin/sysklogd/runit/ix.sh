@@ -1,6 +1,6 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
-bin/sysklogd
-etc/services/runit(srv_deps=bin/sysklogd,srv_dir=sysklogd,srv_command=exec /bin/syslogd -ss -F -P /var/run/sysklogd/pid -C /var/run/sysklogd/seq)
+bin/sysklogd/runit/deps
+etc/services/runit(srv_deps=bin/sysklogd/runit/deps,srv_dir=syslogd,srv_command=exec syslogd -ss -k -K -F -f /etc/syslog.conf -P /proc/self/fd/1 -C /dev/null)
 {% endblock %}

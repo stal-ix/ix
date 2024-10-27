@@ -1,8 +1,8 @@
 {% extends '//die/c/make.sh' %}
 
 {% block fetch %}
-https://github.com/axboe/liburing/archive/refs/tags/liburing-2.7.tar.gz
-sha:56202ad443c50e684dde3692819be3b91bbe003e1c14bf5abfa11973669978c1
+https://github.com/axboe/liburing/archive/refs/tags/liburing-2.8.tar.gz
+sha:3ed7891d1b2bbe743ef3fb6d0a4970e630aa02d7c7bd3b0212791fb7be815984
 {% endblock %}
 
 {% block lib_deps %}
