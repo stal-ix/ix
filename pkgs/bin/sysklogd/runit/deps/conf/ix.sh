@@ -4,6 +4,6 @@
 mkdir ${out}/etc
 
 cat << EOF > ${out}/etc/syslog.conf
-*.* /var/run/syslogd/std/log
+*.* /proc/self/fd/1
 EOF
 {% endblock %}
