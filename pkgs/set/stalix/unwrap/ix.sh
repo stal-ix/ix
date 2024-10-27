@@ -55,8 +55,11 @@ etc
 bin/kbd/vt
 bin/ip/utils(intl_ver=stub)
 bin/bsdutils/env
+
+bin/sysklogd/runit
+#bin/busybox/syslogd
+
 bin/busybox
-bin/busybox/syslogd
 {% endblock %}
 
 {% block run_data %}
