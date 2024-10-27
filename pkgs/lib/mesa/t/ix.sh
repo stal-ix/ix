@@ -16,6 +16,7 @@ lib/vulkan/headers
 
 {% block bld_libs %}
 pip/Mako
+pip/PyYAML
 lib/mesa/fakes
 {% endblock %}
 

@@ -72,9 +72,11 @@ done
 {% block install %}
 {{super()}}
 
+set -x
+
 cd ${out}/lib
 
-mv dri/*.so libgallium.a
+mv libgallium* libgallium.a
 patchns libgallium.a o_
 
 {% if vulkan %}
