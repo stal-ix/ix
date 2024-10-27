@@ -79,10 +79,6 @@ cd ${out}/lib
 mv libgallium* libgallium.a
 patchns libgallium.a o_
 
-llvm-objcopy --redefine-sym \
-    o_dri_loader_get_extensions=dri_loader_get_extensions \
-    libgallium.a
-
 {% if vulkan %}
 patchns libvulkan_* v_
 llvm-ar qL libgldrivers.a libgallium* libvulkan_*

@@ -4,7 +4,5 @@
 {% if mesa_driver %}
 lib/mesa/egl
 lib/mesa/drivers/{{mesa_driver}}
-{% else %}
-lib/mesa/drivers/fake
 {% endif %}
 {% endblock %}
