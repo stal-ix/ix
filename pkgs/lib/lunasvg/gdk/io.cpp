@@ -125,7 +125,7 @@ namespace {
 
             auto bit = l.doc->renderToBitmap(std::max(l.width, 1), std::max(l.height, 1));
 
-            if (!bit.valid()) {
+            if (bit.isNull()) {
                 throw std::runtime_error("render error");
             }
 
