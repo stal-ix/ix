@@ -9,10 +9,11 @@ gallium-drivers=
 {% block install %}
 {{super()}}
 cd ${out}/lib
-rm -r dri
+rm *.so
 cd pkgconfig
 find . -type f -name '*.pc' | while read l; do
     sed -e 's|glesv1_cm,||g' -i ${l}
+    sed -e 's|-lgallium.*||' -i ${l}
 done
 cp opengl.pc glesv2.pc
 {% endblock %}

@@ -1,5 +1,10 @@
 {% extends '//bin/sway/t/ix.sh' %}
 
+{% block bld_libs %}
+lib/mesa/drivers/fake
+{{super()}}
+{% endblock %}
+
 {% block meson_flags %}
 {{super()}}
 tray=enabled

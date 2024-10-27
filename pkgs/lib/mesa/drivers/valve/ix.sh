@@ -72,10 +72,16 @@ done
 {% block install %}
 {{super()}}
 
+set -x
+
 cd ${out}/lib
 
-mv dri/*.so libgallium.a
+mv libgallium* libgallium.a
 patchns libgallium.a o_
+
+llvm-objcopy --redefine-sym \
+    o_dri_loader_get_extensions=dri_loader_get_extensions \
+    libgallium.a
 
 {% if vulkan %}
 patchns libvulkan_* v_
