@@ -138,6 +138,6 @@ echo 1000 > /sys/kernel/mm/lru_gen/min_ttl_ms
 ifconfig lo 127.0.0.1
 hostname -F /etc/hostname
 echo 0 > /proc/sys/kernel/printk
-dmesg
+dmesg -c
 EOF
 {% endblock %}
