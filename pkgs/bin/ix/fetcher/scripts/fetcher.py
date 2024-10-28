@@ -57,18 +57,13 @@ def iter_cached(sha, mirrors):
         yield x + sha[4:]
 
 
-def iter_fetch(url, sha, mirrors):
+def iter_urls(url, sha, mirrors):
     if sha.startswith('sha:') and len(sha) == 68:
-        def it():
-            for u in iter_cached(sha, mirrors):
-                yield from iter_fetch_url(u)
-
-        for f in list(it())[:4]:
-            yield f, True
+        for u in list(iter_cached(sha, mirrors))[:4]:
+            yield u, True
 
     while True:
-        for f in iter_fetch_url(url):
-            yield f, False
+        yield url, False
 
 
 def iter_tout():
@@ -81,11 +76,11 @@ def iter_tout():
 
 
 def do_fetch(url, path, sha, *mirrors):
-    for (f, best_effort), tout in zip(iter_fetch(url, sha, mirrors), iter_tout()):
+    for (u, best_effort), tout, ff in zip(iter_urls(url, sha, mirrors), iter_tout(), iter_ff()):
         prepare_dir(os.path.dirname(path))
 
         try:
-            f(path, int(tout))
+            ff(u, path, int(tout))
 
             return check_md5(path, sha)
         except Exception as e:
@@ -115,7 +110,7 @@ def tout_prefix(tout):
     return ['timeout', str(tout) + 's']
 
 
-def fetch_url_curl(url, args, out, tout):
+def fetch_url_curl(args, url, out, tout):
     cmd = tout_prefix(tout) + [
         'curl',
         '-f',
@@ -131,12 +126,17 @@ def fetch_url_curl(url, args, out, tout):
     return subprocess.check_call(cmd, shell=False)
 
 
-def iter_fetch_url(url):
+def iter_ff_0():
     for meth in [fetch_url_curl]:
         for p in P.strip().split(';'):
-            yield functools.partial(meth, url, ['--socks5', p])
+            yield functools.partial(meth, ['--socks5', p])
 
-        yield functools.partial(meth, url, [])
+        yield functools.partial(meth, [])
+
+
+def iter_ff():
+    while True:
+        yield from iter_ff_0()
 
 
 def main():
