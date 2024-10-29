@@ -47,6 +47,7 @@
 #}
 
 {% block run_deps %}
+bin/geesefs
 bin/orbiton
 bin/logalize
 bin/curl/ressl
