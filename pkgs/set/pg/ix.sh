@@ -1,6 +1,7 @@
 {% extends '//die/hub.sh' %}
 
 {% block sys_args %}
+libcplpl_ver=19
 alsa_device=hw:1
 dev_mngr=fs
 failsafe=1

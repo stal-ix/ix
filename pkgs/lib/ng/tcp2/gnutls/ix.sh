@@ -11,6 +11,11 @@ ENABLE_OPENSSL=OFF
 ENABLE_GNUTLS=ON
 {% endblock %}
 
+{% block patch %}
+{{super()}}
+>examples/CMakeLists.txt
+{% endblock %}
+
 {% block env %}
 {{super()}}
 export COFLAGS="--with-gnutls --without-openssl \${COFLAGS}"
