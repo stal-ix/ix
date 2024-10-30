@@ -47,6 +47,7 @@
 #}
 
 {% block run_deps %}
+bin/git/ea
 bin/geesefs
 bin/orbiton
 bin/logalize
