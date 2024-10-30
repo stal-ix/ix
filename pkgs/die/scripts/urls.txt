@@ -1605,6 +1605,7 @@ https://github.com/glfw/glfw/archive/refs/tags/3.4.tar.gz
 https://github.com/glmark2/glmark2/archive/refs/tags/2023.01.tar.gz
 https://github.com/gnustep/libobjc2/archive/refs/tags/v2.2.tar.gz
 https://github.com/go-git/go-git/archive/refs/tags/v5.4.2.tar.gz
+https://github.com/go-gitea/gitea/archive/refs/tags/v1.22.3.tar.gz
 https://github.com/go-gost/gost/archive/1fa5067d1450c7d0c7c4bfb5cbddc7ddbb49f76c.zip
 https://github.com/go-gost/gost/archive/refs/tags/v3.0.0-nightly.20240927.tar.gz
 https://github.com/go-task/task/archive/refs/tags/v3.14.0.tar.gz
@@ -2934,6 +2935,7 @@ https://github.com/weechat/weechat/archive/refs/tags/v4.3.6.tar.gz
 https://github.com/weechat/weechat/archive/refs/tags/v4.4.0.tar.gz
 https://github.com/weechat/weechat/archive/refs/tags/v4.4.1.tar.gz
 https://github.com/weechat/weechat/archive/refs/tags/v4.4.2.tar.gz
+https://github.com/weechat/weechat/archive/refs/tags/v4.4.3.tar.gz
 https://github.com/westes/flex/archive/refs/tags/flex-2-5-10.tar.gz
 https://github.com/westes/flex/files/981163/flex-2.6.4.tar.gz
 https://github.com/wez/wezterm/archive/refs/tags/20230712-072601-f4abf8fd.tar.gz
