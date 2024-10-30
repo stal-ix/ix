@@ -2309,6 +2309,7 @@ https://github.com/nwg-piotr/nwg-look/archive/refs/tags/v0.2.4.tar.gz
 https://github.com/nwg-piotr/nwg-menu/archive/refs/tags/v0.1.1.tar.gz
 https://github.com/nwg-piotr/nwg-menu/archive/refs/tags/v0.1.5.tar.gz
 https://github.com/oneapi-src/oneTBB/archive/refs/tags/v2021.11.0.tar.gz
+https://github.com/oneapi-src/oneTBB/archive/refs/tags/v2021.13.0.tar.gz
 https://github.com/oneapi-src/oneTBB/archive/refs/tags/v2021.7.0.tar.gz
 https://github.com/onetrueawk/awk/archive/refs/tags/20220122.tar.gz
 https://github.com/onetrueawk/awk/archive/refs/tags/20240311.tar.gz
