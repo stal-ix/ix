@@ -47,6 +47,7 @@
 #}
 
 {% block run_deps %}
+bin/forge/jo
 bin/git/ea
 bin/geesefs
 bin/orbiton
