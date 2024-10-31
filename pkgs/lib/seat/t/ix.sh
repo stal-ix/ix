@@ -1,8 +1,8 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://git.sr.ht/~kennylevinsen/seatd/archive/0.9.0.tar.gz
-sha:4276d1380c67e30a63c289b35f7bf955e126e6daf3596cd5aa6080670aa1214c
+https://git.sr.ht/~kennylevinsen/seatd/archive/0.9.1.tar.gz
+sha:819979c922a0be258aed133d93920bce6a3d3565a60588d6d372ce9db2712cd3
 {% endblock %}
 
 {% block lib_deps %}

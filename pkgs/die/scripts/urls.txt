@@ -696,6 +696,7 @@ https://git.sr.ht/~exec64/imv/archive/v4.5.0.tar.gz
 https://git.sr.ht/~kennylevinsen/greetd/archive/0.9.0.tar.gz
 https://git.sr.ht/~kennylevinsen/seatd/archive/0.8.0.tar.gz
 https://git.sr.ht/~kennylevinsen/seatd/archive/0.9.0.tar.gz
+https://git.sr.ht/~kennylevinsen/seatd/archive/0.9.1.tar.gz
 https://git.sr.ht/~kennylevinsen/wlsunset/archive/0.2.0.tar.gz
 https://git.sr.ht/~leon_plickat/lavalauncher/archive/v2.1.1.tar.gz
 https://git.sr.ht/~leon_plickat/wlopm/archive/v0.1.0.tar.gz
