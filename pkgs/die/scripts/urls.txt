@@ -2063,11 +2063,13 @@ https://github.com/libuv/libuv/archive/refs/tags/v1.49.2.tar.gz
 https://github.com/libxmp/libxmp/archive/refs/tags/libxmp-4.6.0.tar.gz
 https://github.com/limine-bootloader/limine/releases/download/v5.20230801.0/limine-5.20230801.0.tar.xz
 https://github.com/linux-nvme/libnvme/archive/refs/tags/v1.10.tar.gz
+https://github.com/linux-nvme/libnvme/archive/refs/tags/v1.11.tar.gz
 https://github.com/linux-nvme/libnvme/archive/refs/tags/v1.5.tar.gz
 https://github.com/linux-nvme/libnvme/archive/refs/tags/v1.6.tar.gz
 https://github.com/linux-nvme/libnvme/archive/refs/tags/v1.8.tar.gz
 https://github.com/linux-nvme/libnvme/archive/refs/tags/v1.9.tar.gz
 https://github.com/linux-nvme/nvme-cli/archive/refs/tags/v2.10.2.tar.gz
+https://github.com/linux-nvme/nvme-cli/archive/refs/tags/v2.11.tar.gz
 https://github.com/linux-nvme/nvme-cli/archive/refs/tags/v2.5.tar.gz
 https://github.com/linux-nvme/nvme-cli/archive/refs/tags/v2.6.tar.gz
 https://github.com/linux-nvme/nvme-cli/archive/refs/tags/v2.8.tar.gz
