@@ -5,3 +5,9 @@
 --disable-debuginfod
 --disable-libdebuginfod
 {% endblock %}
+
+{% block install %}
+{{super()}}
+# stub conflict
+rm ${out}/bin/strip
+{% endblock %}
