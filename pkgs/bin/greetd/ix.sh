@@ -4,4 +4,3 @@
 bin/greetd/d
 bin/greetd/agreety
 {% endblock %}
-
