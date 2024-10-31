@@ -3497,6 +3497,7 @@ https://secure.nic.cz/files/knot-dns/knot-3.3.8.tar.xz
 https://secure.nic.cz/files/knot-dns/knot-3.3.9.tar.xz
 https://secure.nic.cz/files/knot-dns/knot-3.4.0.tar.xz
 https://secure.nic.cz/files/knot-dns/knot-3.4.1.tar.xz
+https://secure.nic.cz/files/knot-dns/knot-3.4.2.tar.xz
 https://secure.nic.cz/files/knot-resolver/knot-resolver-5.6.0.tar.xz
 https://secure.nic.cz/files/knot-resolver/knot-resolver-5.7.4.tar.xz
 https://security.appspot.com/downloads/vsftpd-3.0.5.tar.gz
