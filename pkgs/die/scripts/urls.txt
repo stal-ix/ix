@@ -790,6 +790,7 @@ https://github.com/FluidSynth/fluidsynth/archive/refs/tags/v2.3.4.tar.gz
 https://github.com/FluidSynth/fluidsynth/archive/refs/tags/v2.3.5.tar.gz
 https://github.com/FluidSynth/fluidsynth/archive/refs/tags/v2.3.6.tar.gz
 https://github.com/FluidSynth/fluidsynth/archive/refs/tags/v2.3.7.tar.gz
+https://github.com/FluidSynth/fluidsynth/archive/refs/tags/v2.4.0.tar.gz
 https://github.com/FlyGoat/RyzenAdj/archive/refs/tags/v0.13.0.tar.gz
 https://github.com/FlyGoat/RyzenAdj/archive/refs/tags/v0.14.0.tar.gz
 https://github.com/FlyGoat/RyzenAdj/archive/refs/tags/v0.16.0.tar.gz
