@@ -6,6 +6,7 @@ lib/png
 lib/jpeg
 lib/jpeg/open
 lib/gdk/pixbuf
+lib/build/muldefs
 {{super()}}
 {% endblock %}
 
