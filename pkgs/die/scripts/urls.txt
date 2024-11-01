@@ -3289,6 +3289,7 @@ https://gitlab.gnome.org/jadahl/libdecor/-/archive/0.1.1/libdecor-0.1.1.tar.bz2
 https://gitlab.matrix.org/matrix-org/olm/-/archive/3.2.15/olm-3.2.15.tar.bz2
 https://gitlab.torproject.org/tpo/core/arti/-/archive/arti-v1.2.2/arti-arti-v1.2.2.tar.bz2
 https://gitlab.torproject.org/tpo/core/arti/-/archive/arti-v1.2.8/arti-arti-v1.2.8.tar.bz2
+https://gitlab.torproject.org/tpo/core/arti/-/archive/arti-v1.3.0/arti-arti-v1.3.0.tar.bz2
 https://gitlab.torproject.org/tpo/core/tor/-/archive/tor-0.4.7.14/tor-tor-0.4.7.14.tar.bz2
 https://gitlab.torproject.org/tpo/core/tor/-/archive/tor-0.4.7.15/tor-tor-0.4.7.15.tar.bz2
 https://gitlab.torproject.org/tpo/core/tor/-/archive/tor-0.4.8.11/tor-tor-0.4.8.11.tar.bz2
