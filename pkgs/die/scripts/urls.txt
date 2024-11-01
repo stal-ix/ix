@@ -544,6 +544,7 @@ https://ftp.gnu.org/gnu/gdb/gdb-13.2.tar.xz
 https://ftp.gnu.org/gnu/gdb/gdb-14.1.tar.xz
 https://ftp.gnu.org/gnu/gdb/gdb-14.2.tar.xz
 https://ftp.gnu.org/gnu/gdb/gdb-15.1.tar.xz
+https://ftp.gnu.org/gnu/gdb/gdb-15.2.tar.xz
 https://ftp.gnu.org/gnu/gdbm/gdbm-1.19.tar.gz
 https://ftp.gnu.org/gnu/gdbm/gdbm-1.24.tar.gz
 https://ftp.gnu.org/gnu/gmp/gmp-6.3.0.tar.xz
