@@ -21,3 +21,8 @@ export UDEV_RULES_PATH=${out}/share/udev
 export INIT_D_PATH=${out}/etc/init.d
 {{super()}}
 {% endblock %}
+
+{% block install %}
+{{super()}}
+rm -rf ${out}/etc
+{% endblock %}

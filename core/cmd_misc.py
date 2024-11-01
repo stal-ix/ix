@@ -4,6 +4,7 @@ import time
 import shutil
 import random
 import hashlib
+import subprocess
 
 import core.log as cl
 import core.error as ce
@@ -55,7 +56,12 @@ def cli_misc_extract(ctx):
 
 
 def cli_misc_fetch(ctx):
-    do_fetch(*ctx['args'])
+    args = ctx['args']
+
+    if os.path.isfile('/bin/fetcher'):
+        subprocess.check_call(['/bin/fetcher'] + args[:3])
+    else:
+        do_fetch(*args)
 
 
 def iter_cached(sha, mirrors):

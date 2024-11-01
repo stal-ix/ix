@@ -5,7 +5,7 @@ go_v3_{{parent_id}}.pzd
 {% endblock %}
 
 {% block bld_tool %}
-{{go_tool}}
+{{go_tool | b64d}}
 {{super()}}
 {% endblock %}
 

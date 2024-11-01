@@ -47,6 +47,10 @@
 #}
 
 {% block run_deps %}
+bin/regreet
+bin/forge/jo
+bin/git/ea
+bin/geesefs
 bin/orbiton
 bin/logalize
 bin/curl/ressl
