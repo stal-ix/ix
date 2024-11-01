@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://libzip.org/download/libzip-1.11.tar.xz
-sha:428c0be525df5486c9a73308fbaeb474d7306264e21b78662925182592de7ff5
+https://libzip.org/download/libzip-1.11.2.tar.xz
+sha:5d471308cef4c4752bbcf973d9cd37ba4cb53739116c30349d4764ba1410dfc1
 {% endblock %}
 
 {% block lib_deps %}
