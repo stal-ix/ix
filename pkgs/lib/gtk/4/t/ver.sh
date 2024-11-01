@@ -1,2 +1,2 @@
-https://gitlab.gnome.org/GNOME/gtk/-/archive/4.16.3/gtk-4.16.3.tar.bz2
-sha:a5bf574c2a37c93f92618688d94857c7fb28dc14379e6416c7f3284e34576be2
+https://gitlab.gnome.org/GNOME/gtk/-/archive/4.16.4/gtk-4.16.4.tar.bz2
+sha:3e3f802f70036fe7e8e81a23c7f77a702acaf24c1a437b12bcadb8a34e7f6b49
