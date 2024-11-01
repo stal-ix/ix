@@ -1,2 +1,2 @@
-https://github.com/telegramdesktop/tdesktop/releases/download/v5.7.0/tdesktop-5.7.0-full.tar.gz
-sha:150e8f900bee05e0722fb7d5ebfb081d844d36a650f9fe495aa952c222bc9d2c
+https://github.com/telegramdesktop/tdesktop/releases/download/v5.7.1/tdesktop-5.7.1-full.tar.gz
+sha:180a46a5c7fce131e98f033245183634eaeed903a8d91d883e22cd39a3235aca
