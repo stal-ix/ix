@@ -1,11 +1,11 @@
 {% extends '//die/go/build.sh' %}
 
 {% block go_url %}
-https://github.com/gokcehan/lf/archive/refs/tags/r32.tar.gz
+https://github.com/gokcehan/lf/archive/refs/tags/r33.tar.gz
 {% endblock %}
 
 {% block go_sha %}
-aac62aafaaa338517379e4177b6bec4f562c7e5f79254c6ebf1194505c78db4e
+9c97177fd4d2791a77b90a0868ccf3a5aff805f8a84b88233dbd4e113fce3710
 {% endblock %}
 
 {% block install %}
