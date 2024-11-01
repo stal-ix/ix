@@ -172,6 +172,7 @@ https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.11.2.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.11.3.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.11.4.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.11.5.tar.xz
+https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.11.6.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.2.14.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.3.13.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.4.12.tar.xz
@@ -543,6 +544,7 @@ https://ftp.gnu.org/gnu/gdb/gdb-13.2.tar.xz
 https://ftp.gnu.org/gnu/gdb/gdb-14.1.tar.xz
 https://ftp.gnu.org/gnu/gdb/gdb-14.2.tar.xz
 https://ftp.gnu.org/gnu/gdb/gdb-15.1.tar.xz
+https://ftp.gnu.org/gnu/gdb/gdb-15.2.tar.xz
 https://ftp.gnu.org/gnu/gdbm/gdbm-1.19.tar.gz
 https://ftp.gnu.org/gnu/gdbm/gdbm-1.24.tar.gz
 https://ftp.gnu.org/gnu/gmp/gmp-6.3.0.tar.xz
@@ -790,6 +792,7 @@ https://github.com/FluidSynth/fluidsynth/archive/refs/tags/v2.3.4.tar.gz
 https://github.com/FluidSynth/fluidsynth/archive/refs/tags/v2.3.5.tar.gz
 https://github.com/FluidSynth/fluidsynth/archive/refs/tags/v2.3.6.tar.gz
 https://github.com/FluidSynth/fluidsynth/archive/refs/tags/v2.3.7.tar.gz
+https://github.com/FluidSynth/fluidsynth/archive/refs/tags/v2.4.0.tar.gz
 https://github.com/FlyGoat/RyzenAdj/archive/refs/tags/v0.13.0.tar.gz
 https://github.com/FlyGoat/RyzenAdj/archive/refs/tags/v0.14.0.tar.gz
 https://github.com/FlyGoat/RyzenAdj/archive/refs/tags/v0.16.0.tar.gz
@@ -2696,6 +2699,8 @@ https://github.com/strukturag/libheif/archive/refs/tags/v1.17.6.tar.gz
 https://github.com/strukturag/libheif/archive/refs/tags/v1.18.0.tar.gz
 https://github.com/strukturag/libheif/archive/refs/tags/v1.18.1.tar.gz
 https://github.com/strukturag/libheif/archive/refs/tags/v1.18.2.tar.gz
+https://github.com/strukturag/libheif/archive/refs/tags/v1.19.0.tar.gz
+https://github.com/strukturag/libheif/archive/refs/tags/v1.19.1.tar.gz
 https://github.com/svenstaro/miniserve/archive/172c321c0809198ef7cafffc81aa3f8f688c5544.zip
 https://github.com/svenstaro/miniserve/archive/refs/tags/v0.26.0.tar.gz
 https://github.com/swaywm/sway/archive/refs/tags/1.10.tar.gz
@@ -2787,6 +2792,7 @@ https://github.com/telegramdesktop/tdesktop/releases/download/v5.5.8/tdesktop-5.
 https://github.com/telegramdesktop/tdesktop/releases/download/v5.6.1/tdesktop-5.6.1-full.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v5.6.2/tdesktop-5.6.2-full.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v5.6.3/tdesktop-5.6.3-full.tar.gz
+https://github.com/telegramdesktop/tdesktop/releases/download/v5.7.0/tdesktop-5.7.0-full.tar.gz
 https://github.com/tenox7/ttyplot/archive/refs/tags/1.6.1.tar.gz
 https://github.com/tesseract-ocr/tesseract/archive/refs/tags/5.2.0.tar.gz
 https://github.com/tetratelabs/wazero/archive/refs/tags/v1.5.0.tar.gz
@@ -3289,6 +3295,7 @@ https://gitlab.gnome.org/jadahl/libdecor/-/archive/0.1.1/libdecor-0.1.1.tar.bz2
 https://gitlab.matrix.org/matrix-org/olm/-/archive/3.2.15/olm-3.2.15.tar.bz2
 https://gitlab.torproject.org/tpo/core/arti/-/archive/arti-v1.2.2/arti-arti-v1.2.2.tar.bz2
 https://gitlab.torproject.org/tpo/core/arti/-/archive/arti-v1.2.8/arti-arti-v1.2.8.tar.bz2
+https://gitlab.torproject.org/tpo/core/arti/-/archive/arti-v1.3.0/arti-arti-v1.3.0.tar.bz2
 https://gitlab.torproject.org/tpo/core/tor/-/archive/tor-0.4.7.14/tor-tor-0.4.7.14.tar.bz2
 https://gitlab.torproject.org/tpo/core/tor/-/archive/tor-0.4.7.15/tor-tor-0.4.7.15.tar.bz2
 https://gitlab.torproject.org/tpo/core/tor/-/archive/tor-0.4.8.11/tor-tor-0.4.8.11.tar.bz2
@@ -3362,6 +3369,7 @@ https://libnice.freedesktop.org/releases/libnice-0.1.22.tar.gz
 https://libopenraw.freedesktop.org/download/exempi-2.6.5.tar.xz
 https://libopenraw.freedesktop.org/download/libopenraw-0.3.5.tar.bz2
 https://libzip.org/download/libzip-1.10.1.tar.xz
+https://libzip.org/download/libzip-1.11.2.tar.xz
 https://libzip.org/download/libzip-1.11.tar.xz
 https://lttng.org/files/urcu/userspace-rcu-0.14.0.tar.bz2
 https://lttng.org/files/urcu/userspace-rcu-0.14.1.tar.bz2
@@ -3536,6 +3544,7 @@ https://sourceware.org/pub/bzip2/bzip2-1.0.8.tar.gz
 https://sourceware.org/pub/valgrind/valgrind-3.19.0.tar.bz2
 https://sourceware.org/pub/valgrind/valgrind-3.22.0.tar.bz2
 https://sourceware.org/pub/valgrind/valgrind-3.23.0.tar.bz2
+https://sourceware.org/pub/valgrind/valgrind-3.24.0.tar.bz2
 https://sqlite.org/2023/sqlite-autoconf-3430000.tar.gz
 https://sqlite.org/2023/sqlite-autoconf-3430100.tar.gz
 https://sqlite.org/2023/sqlite-autoconf-3430200.tar.gz
