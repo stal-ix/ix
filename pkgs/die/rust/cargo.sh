@@ -9,6 +9,7 @@
 {% block std_env %}
 bld/pzd
 bld/python
+bld/rust/cc
 bld/pkg/config
 bld/rust/devendor
 {% if help %}
@@ -19,7 +20,8 @@ bld/rust(rustc_ver={{self.rustc_ver().strip()}})
 {% endblock %}
 
 {% block unpack %}
-mkdir src; cd src
+mkdir src
+cd src
 des ${src}/*.pzd .
 rust_devendor vendored
 {% endblock %}
@@ -56,47 +58,10 @@ export OPENSSL_NO_VENDOR=yes
 export TARGET_CC=$(which cc)
 
 cat << EOF > cc
-#!/usr/bin/env python3
-
-import sys
-import subprocess
-
-target_cc="${TARGET_CC}"
-host_cc="${HOST_CC}"
-
-def flt_target(cmd):
-    for x in cmd:
-        if 'self-contained' in x and '.o' in x:
-            continue
-        elif 'self-contained' in x:
-            yield '/nowhere'
-        elif '-Wl,' in x:
-            continue
-        elif '-lunwind' in x:
-            continue
-        elif x == '-static-pie':
-            continue
-        else:
-            yield x
-
-def flt_host(cmd):
-    return cmd
-
-def run():
-    for cc in (host_cc, target_cc):
-        try:
-            return subprocess.check_call([cc] + sys.argv[1:])
-        except Exception as e:
-            err = e
-
-        try:
-            return subprocess.check_call(list(flt_target([cc] + sys.argv[1:])))
-        except Exception as e:
-            err = e
-
-    raise err
-
-run()
+#!/usr/bin/env sh
+export target_cc="${TARGET_CC}"
+export host_cc="${HOST_CC}"
+exec rustcc "\${@}"
 EOF
 
 cp cc c++
@@ -105,26 +70,51 @@ chmod +x cc c++
 {% endblock %}
 
 {% block cargo_features %}
-default
+__default__
 {% endblock %}
 
-{% set cargo_options %}
-{% block cargo_options %}
+{% block cargo_packages %}
 {% endblock %}
+
+{% block cargo_flags %}
+build
+--offline
+--profile {{self.cargo_profile().strip()}}
+
 {% if bin %}
---bins
+  --bins
 {% endif %}
+
 {% if lib %}
---lib
+  --lib
 {% endif %}
-{% if self.cargo_features().strip() == 'default' %}
+
+{% if '__default__' in self.cargo_features() %}
 {% else %}
---no-default-features
-{% for x in ix.parse_list(self.cargo_features()) %}
---features {{x}}
-{% endfor %}
+  --no-default-features
 {% endif %}
-{% endset %}
+
+{% for x in ix.parse_list(self.cargo_features()) %}
+  {% if x != '__default__' %}
+    --features {{x}}
+  {% endif %}
+{% endfor %}
+{% endblock %}
+
+{% block configure %}
+cat Cargo.toml | cargo_strip_profile > _
+mv _ Cargo.toml
+
+cat << EOF >> Cargo.toml
+[profile.release]
+opt-level = 2
+split-debuginfo = 'off'
+EOF
+{% endblock %}
+
+{% block cargo_profile %}
+release
+{% endblock %}
 
 {% block build %}
 {% if help %}
@@ -137,5 +127,11 @@ export HOST_CC=${CC}
 export HOST_CXX=${CXX}
 export TARGET_CC=${CC}
 export TARGET_CXX=${CXX}
-cargo build --offline --release {{ix.fix_list(cargo_options)}}
+{% if self.cargo_packages().strip() %}
+{% for x in ix.parse_list(self.cargo_packages()) %}
+cargo {{ix.fix_list(self.cargo_flags().strip())}} --package {{x}}
+{% endfor %}
+{% else %}
+cargo {{ix.fix_list(self.cargo_flags().strip())}}
+{% endif %}
 {% endblock %}

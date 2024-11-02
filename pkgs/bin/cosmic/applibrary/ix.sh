@@ -1,19 +1,18 @@
 {% extends '//bin/cosmic/t/ix.sh' %}
 
 {% block cargo_url %}
-https://github.com/pop-os/cosmic-launcher/archive/refs/tags/epoch-1.0.0-alpha.3.tar.gz
+https://github.com/pop-os/cosmic-applibrary/archive/refs/tags/epoch-1.0.0-alpha.3.tar.gz
 {% endblock %}
 
 {% block cargo_sha %}
-6e0e7400bc8dcd741946346fd0cc91277d08179f30732ea24caf5ffb2f4b2bd6
+3d99559e4932b7ecd3a3d9e611eb606166ec730c02f1b18134cc8af4efc6fcc2
 {% endblock %}
 
 {% block bld_libs %}
-lib/xz
-lib/glib
-lib/zstd
-lib/bzip/2
+lib/c
 lib/wayland/dl
 lib/drivers/3d
+lib/mesa/gl/dl
+lib/mesa/egl/dl
 lib/xkb/common/dl
 {% endblock %}
