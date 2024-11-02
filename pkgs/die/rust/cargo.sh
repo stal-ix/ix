@@ -80,9 +80,6 @@ default
 build
 --offline
 --profile {{self.cargo_profile().strip()}}
-{% for x in ix.parse_list(self.cargo_packages()) %}
---package {{x}}
-{% endfor %}
 {% if bin %}
 --bins
 {% endif %}
@@ -121,5 +118,11 @@ export HOST_CC=${CC}
 export HOST_CXX=${CXX}
 export TARGET_CC=${CC}
 export TARGET_CXX=${CXX}
+{% if self.cargo_packages().strip() %}
+{% for x in ix.parse_list(self.cargo_packages()) %}
+cargo {{ix.fix_list(self.cargo_options().strip())}} --package {{x}}
+{% endfor %}
+{% else %}
 cargo {{ix.fix_list(self.cargo_options().strip())}}
+{% endif %}
 {% endblock %}

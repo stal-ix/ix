@@ -8,9 +8,9 @@ https://github.com/pop-os/cosmic-files/archive/refs/tags/epoch-1.0.0-alpha.2.tar
 db2a363e19cced2af836fc66aa3bf9f0b3e906efbcba02b006761d62f45790fa
 {% endblock %}
 
-{% block build %}
-{{super()}}
-cargo {{ix.fix_list(self.cargo_options())}} --package cosmic-files-applet
+{% block cargo_packages %}
+cosmic-files
+cosmic-files-applet
 {% endblock %}
 
 {% block bld_libs %}
