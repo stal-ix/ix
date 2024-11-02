@@ -10,7 +10,7 @@ db2a363e19cced2af836fc66aa3bf9f0b3e906efbcba02b006761d62f45790fa
 
 {% block build %}
 {{super()}}
-cargo build --offline --release {{ix.fix_list(cargo_options)}} --package cosmic-files-applet
+cargo {{ix.fix_list(self.cargo_options())}} --package cosmic-files-applet
 {% endblock %}
 
 {% block bld_libs %}

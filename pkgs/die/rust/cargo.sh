@@ -72,9 +72,11 @@ chmod +x cc c++
 default
 {% endblock %}
 
-{% set cargo_options %}
 {% block cargo_options %}
-{% endblock %}
+build
+--offline
+--profile
+{{self.cargo_profile().strip()}}
 {% if bin %}
 --bins
 {% endif %}
@@ -88,7 +90,7 @@ default
 --features {{x}}
 {% endfor %}
 {% endif %}
-{% endset %}
+{% endblock %}
 
 {% block configure %}
 cat Cargo.toml | cargo_strip_profile > _
@@ -116,5 +118,5 @@ export HOST_CC=${CC}
 export HOST_CXX=${CXX}
 export TARGET_CC=${CC}
 export TARGET_CXX=${CXX}
-cargo build --offline --profile {{self.cargo_profile().strip()}} {{ix.fix_list(cargo_options)}}
+cargo {{ix.fix_list(self.cargo_options().strip())}}
 {% endblock %}
