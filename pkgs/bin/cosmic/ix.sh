@@ -6,6 +6,6 @@ bin/cosmic/term
 bin/cosmic/files
 bin/cosmic/panel
 bin/cosmic/launcher
-bin/cosmic/workspace
+bin/cosmic/workspaces
 {% endblock %}
 
