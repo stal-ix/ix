@@ -1,6 +1,7 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
+bin/cosmic/edit
 bin/cosmic/comp
 bin/cosmic/term
 bin/cosmic/files
