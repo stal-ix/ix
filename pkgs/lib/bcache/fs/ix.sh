@@ -1,8 +1,10 @@
 {% extends '//die/c/make.sh' %}
 
-{% block fetch %}
 {% include '//bin/bcache/fs/tools/ver.sh' %}
-sha:cc7196505eba3a71e2ab8b9d0d19c6b16959b15aeb6e57e696dc14bd735ee0d5
+
+{% block fetch %}
+{{self.cargo_url()}}
+{{self.http_sha()}}
 {% endblock %}
 
 {% block lib_deps %}
