@@ -70,26 +70,35 @@ chmod +x cc c++
 {% endblock %}
 
 {% block cargo_features %}
-default
+__default__
 {% endblock %}
 
 {% block cargo_packages %}
 {% endblock %}
 
-{% block cargo_options %}
+{% block cargo_flags %}
 build
 --offline
 --profile {{self.cargo_profile().strip()}}
+
 {% if bin %}
---bins
+  --bins
 {% endif %}
+
 {% if lib %}
---lib
+  --lib
 {% endif %}
-{% if self.cargo_features().strip() == 'default' %}
+
+{% if '__default__' in self.cargo_features() %}
 {% else %}
---no-default-features
+  --no-default-features
 {% endif %}
+
+{% for x in ix.parse_list(self.cargo_features()) %}
+  {% if x != '__default__' %}
+    --features {{x}}
+  {% endif %}
+{% endfor %}
 {% endblock %}
 
 {% block configure %}
@@ -120,9 +129,9 @@ export TARGET_CC=${CC}
 export TARGET_CXX=${CXX}
 {% if self.cargo_packages().strip() %}
 {% for x in ix.parse_list(self.cargo_packages()) %}
-cargo {{ix.fix_list(self.cargo_options().strip())}} --package {{x}}
+cargo {{ix.fix_list(self.cargo_flags().strip())}} --package {{x}}
 {% endfor %}
 {% else %}
-cargo {{ix.fix_list(self.cargo_options().strip())}}
+cargo {{ix.fix_list(self.cargo_flags().strip())}}
 {% endif %}
 {% endblock %}
