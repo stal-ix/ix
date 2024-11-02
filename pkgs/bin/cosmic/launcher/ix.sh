@@ -13,7 +13,5 @@ lib/xz
 lib/glib
 lib/zstd
 lib/bzip/2
-lib/wayland/dl
-lib/drivers/3d
-lib/xkb/common/dl
+{{super()}}
 {% endblock %}

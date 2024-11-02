@@ -9,11 +9,6 @@ https://github.com/pop-os/cosmic-panel/archive/refs/tags/epoch-1.0.0-alpha.3.tar
 {% endblock %}
 
 {% block bld_libs %}
-lib/c
-lib/opengl
-lib/xkb/common
-lib/wayland/dl
-lib/drivers/3d
-lib/mesa/egl/dl
+{{super()}}
 lib/wayland/dl/server
 {% endblock %}
