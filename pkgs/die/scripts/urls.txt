@@ -411,6 +411,7 @@ https://downloads.sourceforge.net/project/mikmod/libmikmod/3.3.11.1/libmikmod-3.
 https://downloads.sourceforge.net/project/mingw-w64/mingw-w64/mingw-w64-release/mingw-w64-v11.0.1.tar.bz2
 https://downloads.sourceforge.net/project/mpg123/mpg123/1.32.7/mpg123-1.32.7.tar.bz2
 https://downloads.sourceforge.net/project/mpg123/mpg123/1.32.8/mpg123-1.32.8.tar.bz2
+https://downloads.sourceforge.net/project/mpg123/mpg123/1.32.9/mpg123-1.32.9.tar.bz2
 https://downloads.sourceforge.net/project/mscorefonts2/cabs/PowerPointViewer.exe
 https://downloads.sourceforge.net/project/net-tools/net-tools-2.10.tar.xz
 https://downloads.sourceforge.net/project/nfs/nfs-utils/2.6.3/nfs-utils-2.6.3.tar.xz
