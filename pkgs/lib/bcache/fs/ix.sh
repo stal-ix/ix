@@ -1,8 +1,8 @@
 {% extends '//die/c/make.sh' %}
 
 {% block fetch %}
-https://github.com/koverstreet/bcachefs-tools/archive/refs/tags/v1.11.0.tar.gz
-sha:eab4bc7982c8b91796f5a9d6ceeb5f96a7075295df40ee43f5e57e8b7405faff
+{% include '//bin/bcache/fs/tools/ver.sh' %}
+sha:cc7196505eba3a71e2ab8b9d0d19c6b16959b15aeb6e57e696dc14bd735ee0d5
 {% endblock %}
 
 {% block lib_deps %}
