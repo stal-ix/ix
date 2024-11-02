@@ -20,7 +20,8 @@ bld/rust(rustc_ver={{self.rustc_ver().strip()}})
 {% endblock %}
 
 {% block unpack %}
-mkdir src; cd src
+mkdir src
+cd src
 des ${src}/*.pzd .
 rust_devendor vendored
 {% endblock %}
