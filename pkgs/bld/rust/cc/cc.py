@@ -26,7 +26,7 @@ def flt_host(cmd):
     return cmd
 
 def run():
-    for cc in (host_cc, target_cc):
+    for cc in (target_cc, host_cc):
         try:
             return subprocess.check_call([cc] + sys.argv[1:])
         except Exception as e:
