@@ -2,8 +2,9 @@
 
 {% block run_deps %}
 bin/cosmic/comp
-bin/cosmic/files
 bin/cosmic/term
+bin/cosmic/files
+bin/cosmic/panel
 bin/cosmic/launcher
 bin/cosmic/workspace
 {% endblock %}
