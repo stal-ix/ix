@@ -126,6 +126,21 @@ default
 {% endif %}
 {% endset %}
 
+{% block configure %}
+cat Cargo.toml | cargo_strip_profile > _
+mv _ Cargo.toml
+
+cat << EOF >> Cargo.toml
+[profile.release]
+opt-level = 2
+split-debuginfo = 'off'
+EOF
+{% endblock %}
+
+{% block cargo_profile %}
+release
+{% endblock %}
+
 {% block build %}
 {% if help %}
 cargo whatfeatures --offline .
@@ -137,5 +152,5 @@ export HOST_CC=${CC}
 export HOST_CXX=${CXX}
 export TARGET_CC=${CC}
 export TARGET_CXX=${CXX}
-cargo build --offline --release {{ix.fix_list(cargo_options)}}
+cargo build --offline --profile {{self.cargo_profile().strip()}} {{ix.fix_list(cargo_options)}}
 {% endblock %}

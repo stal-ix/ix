@@ -12,6 +12,3 @@ dddede76c0aa2845e02837f0fb7dd57388bbcfed28473d6b988317f23692a537
 mkdir ${out}/bin
 cp ${tmp}/release/just ${out}/bin/
 {% endblock %}
-
-
-
