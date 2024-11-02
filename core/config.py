@@ -102,6 +102,15 @@ def enrich(d):
     if 'id' not in d:
         d['id'] = calc_id(d)
 
+    if 'rust_os' not in d:
+        d['rust_os'] = d['os']
+
+    if 'rust_vendor' not in d:
+        d['rust_vendor'] = d['gnu_vendor']
+
+    if 'rust' not in d:
+        d['rust'] = f'{d["gnu_arch"]}-{d["rust_vendor"]}-{d["rust_os"]}'
+
     return d
 
 
@@ -129,6 +138,8 @@ def get_raw_arch(n):
             'obj_fmt': 'elf',
             'cmake_system_name': 'Linux',
             'gnu_vendor': 'pc',
+            'rust_vendor': 'unknown',
+            'rust_os': 'linux-musl',
         }
 
     if n == 'darwin':
