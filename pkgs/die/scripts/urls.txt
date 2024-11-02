@@ -2388,7 +2388,9 @@ https://github.com/podofo/podofo/archive/refs/tags/0.10.4.tar.gz
 https://github.com/pop-os/cosmic-comp/archive/refs/tags/epoch-1.0.0-alpha.1.tar.gz
 https://github.com/pop-os/cosmic-comp/archive/refs/tags/epoch-1.0.0-alpha.3.tar.gz
 https://github.com/pop-os/cosmic-files/archive/refs/tags/epoch-1.0.0-alpha.2.tar.gz
+https://github.com/pop-os/cosmic-files/archive/refs/tags/epoch-1.0.0-alpha.3.tar.gz
 https://github.com/pop-os/cosmic-launcher/archive/refs/tags/epoch-1.0.0-alpha.2.tar.gz
+https://github.com/pop-os/cosmic-launcher/archive/refs/tags/epoch-1.0.0-alpha.3.tar.gz
 https://github.com/pop-os/cosmic-panel/archive/refs/tags/epoch-1.0.0-alpha.3.tar.gz
 https://github.com/pop-os/cosmic-term/archive/90179d5a5f837b60406bcd20315bb8a81cc3bb7d.zip
 https://github.com/pop-os/cosmic-workspaces-epoch/archive/refs/tags/epoch-1.0.0-alpha.3.tar.gz
