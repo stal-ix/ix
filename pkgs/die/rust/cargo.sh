@@ -73,11 +73,16 @@ chmod +x cc c++
 default
 {% endblock %}
 
+{% block cargo_packages %}
+{% endblock %}
+
 {% block cargo_options %}
 build
 --offline
---profile
-{{self.cargo_profile().strip()}}
+--profile {{self.cargo_profile().strip()}}
+{% for x in ix.parse_list(self.cargo_packages()) %}
+--package {{x}}
+{% endfor %}
 {% if bin %}
 --bins
 {% endif %}
@@ -87,9 +92,6 @@ build
 {% if self.cargo_features().strip() == 'default' %}
 {% else %}
 --no-default-features
-{% for x in ix.parse_list(self.cargo_features()) %}
---features {{x}}
-{% endfor %}
 {% endif %}
 {% endblock %}
 

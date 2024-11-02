@@ -26,9 +26,8 @@ bld/llvm/config
 {% block binary %}
 {% endblock %}
 
-{% block cargo_options %}
-{{super()}}
---package {{self.binary().strip()}}
+{% block cargo_packages %}
+{{self.binary().strip()}}
 {% endblock %}
 
 {% block patch %}
