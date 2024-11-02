@@ -2,7 +2,7 @@
 
 {% block lib_deps %}
 {{super()}}
-lib/llvm/18
+lib/llvm/19
 {% endblock %}
 
 {% block bld_tool %}
