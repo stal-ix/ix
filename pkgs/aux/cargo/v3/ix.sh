@@ -12,8 +12,6 @@ aux/ca/bundle
 {% endblock %}
 
 {% block build %}
-git config --global http.proxy 'socks5://lab1.local:8015'
-
 export SSL_CERT_FILE=${CA_BUNDLE}
 export CARGO_HOME=${tmp}/crg
 
