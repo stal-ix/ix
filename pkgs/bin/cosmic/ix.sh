@@ -8,4 +8,3 @@ bin/cosmic/panel
 bin/cosmic/launcher
 bin/cosmic/workspaces
 {% endblock %}
-
