@@ -45,5 +45,5 @@ export BPF_CLANG=bpf_clang
 
 {% block install %}
 mkdir ${out}/bin
-cp ${tmp}/release/{{self.binary().strip()}} ${out}/bin/
+cp ${tmp}/out/{{self.binary().strip()}} ${out}/bin/
 {% endblock %}

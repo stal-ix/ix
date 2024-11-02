@@ -34,7 +34,7 @@ make list
 
 {% block install %}
 mkdir ${out}/bin
-cp ${tmp}/release/coreutils ${out}/bin/
+cp ${tmp}/out/coreutils ${out}/bin/
 set -xue
 make list | tr ' ' '\n' | grep -v '^$' | sort | uniq | grep -v coreutils | while read l; do
     ln -s coreutils ${out}/bin/${l}

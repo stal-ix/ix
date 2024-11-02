@@ -14,5 +14,5 @@ lib/git/2
 
 {% block install %}
 mkdir ${out}/bin
-cp ${tmp}/release/eza ${out}/bin/
+cp ${tmp}/out/eza ${out}/bin/
 {% endblock %}

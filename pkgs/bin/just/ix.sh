@@ -10,5 +10,5 @@ dddede76c0aa2845e02837f0fb7dd57388bbcfed28473d6b988317f23692a537
 
 {% block install %}
 mkdir ${out}/bin
-cp ${tmp}/release/just ${out}/bin/
+cp ${tmp}/out/just ${out}/bin/
 {% endblock %}

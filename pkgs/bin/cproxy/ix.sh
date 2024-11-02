@@ -10,5 +10,5 @@ https://github.com/NOBLES5E/cproxy/archive/refs/tags/v4.1.6.post1.tar.gz
 
 {% block install %}
 mkdir ${out}/bin
-cp ${tmp}/release/cproxy ${out}/bin/
+cp ${tmp}/out/cproxy ${out}/bin/
 {% endblock %}

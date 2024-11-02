@@ -7,5 +7,5 @@ cd agreety
 
 {% block install %}
 mkdir ${out}/bin
-cp ${tmp}/release/agreety ${out}/bin/
+cp ${tmp}/out/agreety ${out}/bin/
 {% endblock %}

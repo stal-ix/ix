@@ -8,7 +8,7 @@ lib/pam/unix
 
 {% block install %}
 mkdir ${out}/bin
-cp ${tmp}/release/greetd ${out}/bin/
+cp ${tmp}/out/greetd ${out}/bin/
 {% endblock %}
 
 {% block unpack %}

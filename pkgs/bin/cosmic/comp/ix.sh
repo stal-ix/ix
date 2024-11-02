@@ -18,5 +18,5 @@ lib/pixman
 
 {% block install %}
 mkdir ${out}/bin
-cp ${tmp}/release/cosmic-comp ${out}/bin/
+cp ${tmp}/out/cosmic-comp ${out}/bin/
 {% endblock %}

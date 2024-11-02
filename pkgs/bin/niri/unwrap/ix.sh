@@ -31,5 +31,5 @@ dbus
 
 {% block install %}
 mkdir ${out}/bin
-cp ${tmp}/release/niri ${out}/bin/
+cp ${tmp}/out/niri ${out}/bin/
 {% endblock %}

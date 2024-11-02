@@ -10,5 +10,5 @@ af8b68f0de7a819013b3a3142b6132f368d2b558930e0c88e2300cd26f60e849
 
 {% block install %}
 mkdir ${out}/bin
-cp ${tmp}/release/impala ${out}/bin/
+cp ${tmp}/out/impala ${out}/bin/
 {% endblock %}

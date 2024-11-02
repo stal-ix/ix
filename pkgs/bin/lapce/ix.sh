@@ -24,5 +24,5 @@ lib/tree/sitter/plugins
 
 {% block install %}
 mkdir ${out}/bin
-cp ${tmp}/release/lapce ${out}/bin/
+cp ${tmp}/out/lapce ${out}/bin/
 {% endblock %}

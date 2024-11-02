@@ -37,5 +37,5 @@ wayland
 
 {% block install %}
 mkdir ${out}/bin
-cp ${tmp}/release/alacritty ${out}/bin/
+cp ${tmp}/out/alacritty ${out}/bin/
 {% endblock %}

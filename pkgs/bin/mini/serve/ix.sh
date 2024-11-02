@@ -14,5 +14,5 @@ lib/zstd
 
 {% block install %}
 mkdir ${out}/bin
-cp ${tmp}/release/miniserve ${out}/bin/
+cp ${tmp}/out/miniserve ${out}/bin/
 {% endblock %}

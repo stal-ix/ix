@@ -19,5 +19,5 @@ cd yazi-fm
 
 {% block install %}
 mkdir ${out}/bin
-cp ${tmp}/release/yazi ${out}/bin/
+cp ${tmp}/out/yazi ${out}/bin/
 {% endblock %}

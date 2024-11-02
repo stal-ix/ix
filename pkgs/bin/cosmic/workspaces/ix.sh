@@ -17,5 +17,5 @@ lib/input
 
 {% block install %}
 mkdir ${out}/bin
-cp ${tmp}/release/cosmic-workspaces ${out}/bin/
+cp ${tmp}/out/cosmic-workspaces ${out}/bin/
 {% endblock %}

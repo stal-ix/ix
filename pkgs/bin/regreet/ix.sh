@@ -14,5 +14,5 @@ lib/gtk/4
 
 {% block install %}
 mkdir ${out}/bin
-cp ${tmp}/release/regreet ${out}/bin/
+cp ${tmp}/out/regreet ${out}/bin/
 {% endblock %}

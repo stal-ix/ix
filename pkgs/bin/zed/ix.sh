@@ -31,7 +31,7 @@ bin/protoc
 
 {% block install %}
 mkdir ${out}/bin
-cp ${tmp}/release/zed ${out}/bin/
+cp ${tmp}/out/zed ${out}/bin/
 {% endblock %}
 
 {% block patch %}

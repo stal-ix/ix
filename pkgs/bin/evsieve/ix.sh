@@ -15,6 +15,6 @@ lib/evdev
 
 {% block install %}
 mkdir ${out}/bin
-cp ${tmp}/release/evsieve ${out}/bin/
+cp ${tmp}/out/evsieve ${out}/bin/
 {% endblock %}
 

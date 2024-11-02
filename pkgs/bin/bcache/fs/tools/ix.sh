@@ -28,5 +28,5 @@ sed -e 's|"runtime"|"static"|' \
 
 {% block install %}
 mkdir ${out}/bin
-cp ${tmp}/release/bcachefs ${out}/bin/
+cp ${tmp}/out/bcachefs ${out}/bin/
 {% endblock %}

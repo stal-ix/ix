@@ -27,5 +27,5 @@ sed -e 's|.*"volume".*||' -i Cargo.toml
 
 {% block install %}
 mkdir ${out}/bin
-cp ${tmp}/release/ironbar ${out}/bin/
+cp ${tmp}/out/ironbar ${out}/bin/
 {% endblock %}

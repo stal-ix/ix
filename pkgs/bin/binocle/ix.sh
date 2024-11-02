@@ -14,5 +14,5 @@ lib/c
 
 {% block install %}
 mkdir ${out}/bin
-cp ${tmp}/release/binocle ${out}/bin/
+cp ${tmp}/out/binocle ${out}/bin/
 {% endblock %}

@@ -19,5 +19,5 @@ lib/fontconfig/dl
 
 {% block install %}
 mkdir ${out}/bin
-cp ${tmp}/release/yofi ${out}/bin/
+cp ${tmp}/out/yofi ${out}/bin/
 {% endblock %}

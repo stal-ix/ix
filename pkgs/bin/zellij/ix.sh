@@ -15,5 +15,5 @@ lib/openssl
 
 {% block install %}
 mkdir ${out}/bin
-cp ${tmp}/release/zellij ${out}/bin/
+cp ${tmp}/out/zellij ${out}/bin/
 {% endblock %}

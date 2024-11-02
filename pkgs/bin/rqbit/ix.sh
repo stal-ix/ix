@@ -10,7 +10,7 @@ https://github.com/ikatson/rqbit/archive/refs/tags/v5.6.4.tar.gz
 
 {% block install %}
 mkdir ${out}/bin
-cp ${tmp}/release/rqbit ${out}/bin/
+cp ${tmp}/out/rqbit ${out}/bin/
 {% endblock %}
 
 {% block bld_libs %}
