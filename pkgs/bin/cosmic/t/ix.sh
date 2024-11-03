@@ -13,6 +13,7 @@ export VERGEN_GIT_SHA="x"
 {% endblock %}
 
 {% block install %}
+export CARGO_TARGET_DIR=${tmp}/{{target.rust}}
 just --set prefix ${out} install
 {% endblock %}
 
