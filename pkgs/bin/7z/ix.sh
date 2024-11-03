@@ -11,7 +11,7 @@ lib/c++
 {% endblock %}
 
 {% block bld_tool %}
-{% if x86_64%}
+{% if x86_64 %}
 bin/uasm
 {% endif %}
 {% endblock %}
