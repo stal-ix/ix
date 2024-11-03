@@ -31,7 +31,7 @@ chmod +x init
 
 cd ..
 
-mkdir fix; base64 -d << EOF > fix/run1.sh
+mkdir fix; base64 -d << EOF > fix/00-run1.sh
 {% include 'run1.sh/base64' %}
 EOF
 
