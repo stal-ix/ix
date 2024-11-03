@@ -40,7 +40,7 @@ rawmemchr
 {% endblock %}
 
 {% block configure_flags %}
---with-default-trust-store-file=/etc/ssl/certs.pem
+--with-default-trust-store-file=/etc/ssl/cert.pem
 {% if darwin %}
 --disable-hardware-acceleration
 {% endif %}

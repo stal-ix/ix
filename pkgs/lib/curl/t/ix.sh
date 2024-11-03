@@ -26,7 +26,7 @@ bld/auto
 
 {% block configure_flags %}
 {% if linux %}
---with-ca-bundle=/etc/ssl/certs.pem
+--with-ca-bundle=/etc/ssl/cert.pem
 --with-random="/dev/urandom"
 {% endif %}
 {% if darwin %}

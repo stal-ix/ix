@@ -13,7 +13,7 @@ extract 1 ${src}/nss*
 {% endblock %}
 
 {% block pem_dir %}
-etc/ssl/certs.pem.d
+etc/ssl/cert.pem.d
 {% endblock %}
 
 {% block pem_path %}
