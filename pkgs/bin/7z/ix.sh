@@ -11,7 +11,7 @@ lib/c++
 {% endblock %}
 
 {% block bld_tool %}
-{% if x86_64 %}
+{% if linux and x86_64 %}
 bin/uasm
 {% endif %}
 {% endblock %}
@@ -25,7 +25,7 @@ cd CPP/7zip/Bundles/Alone2
 
 {% block make_flags %}
 -f
-{% if x86_64 %}
+{% if linux and x86_64 %}
 ../../cmpl_gcc_x64.mak
 MY_ASM=uasm
 {% else %}
