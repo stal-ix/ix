@@ -12,3 +12,7 @@ bin/cosmic/applibrary
 bin/cosmic/workspaces
 bin/cosmic/notifications
 {% endblock %}
+
+{% block run_data %}
+bin/cosmic/icons
+{% endblock %}

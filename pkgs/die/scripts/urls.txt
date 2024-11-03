@@ -2396,6 +2396,7 @@ https://github.com/pop-os/cosmic-edit/archive/refs/tags/epoch-1.0.0-alpha.3.tar.
 https://github.com/pop-os/cosmic-files/archive/refs/tags/epoch-1.0.0-alpha.2.tar.gz
 https://github.com/pop-os/cosmic-files/archive/refs/tags/epoch-1.0.0-alpha.3.tar.gz
 https://github.com/pop-os/cosmic-greeter/archive/refs/tags/epoch-1.0.0-alpha.3.tar.gz
+https://github.com/pop-os/cosmic-icons/archive/refs/tags/epoch-1.0.0-alpha.3.tar.gz
 https://github.com/pop-os/cosmic-launcher/archive/refs/tags/epoch-1.0.0-alpha.2.tar.gz
 https://github.com/pop-os/cosmic-launcher/archive/refs/tags/epoch-1.0.0-alpha.3.tar.gz
 https://github.com/pop-os/cosmic-notifications/archive/refs/tags/epoch-1.0.0-alpha.3.tar.gz
