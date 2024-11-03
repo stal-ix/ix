@@ -1,4 +1,4 @@
-{% extends '//die/proxy.sh' %}
+{% extends '//die/gen.sh' %}
 
 {% block install %}
 cd ${out}; mkdir -p etc/services/seatd; cd etc/services/seatd

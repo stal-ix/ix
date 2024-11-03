@@ -1,4 +1,4 @@
-{% extends '//die/proxy.sh' %}
+{% extends '//die/gen.sh' %}
 
 {% block bld_data %}
 aux/entropy(entropy_seed={{seed | b64e}}ksjfhbgasfdg76,entropy_size=1000000)
