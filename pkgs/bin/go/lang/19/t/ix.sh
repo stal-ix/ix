@@ -15,17 +15,6 @@ bld/python
 {{super()}}
 {% endblock %}
 
-{% block use_data %}
-aux/ca/bundle
-{% endblock %}
-
-{% block patch %}
-{{super()}}
-find . -type f -name '*.go' | while read l; do
-    sed -e "s|/etc/.*/ca-bundle.crt|${CA_BUNDLE}|" -i ${l}
-done
-{% endblock %}
-
 {% block build %}
 cp -R ${GOROOT_BOOTSTRAP} ${tmp}/boot
 

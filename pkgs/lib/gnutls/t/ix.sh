@@ -29,10 +29,6 @@ lib/unistring
 lib/shim/gnu
 {% endblock %}
 
-{% block use_data %}
-aux/ca/bundle
-{% endblock %}
-
 {% block bld_tool %}
 bld/gettext
 {% endblock %}
@@ -44,7 +40,7 @@ rawmemchr
 {% endblock %}
 
 {% block configure_flags %}
---with-default-trust-store-file=${CA_BUNDLE}
+--with-default-trust-store-file=/etc/ssl/certs.pem
 {% if darwin %}
 --disable-hardware-acceleration
 {% endif %}

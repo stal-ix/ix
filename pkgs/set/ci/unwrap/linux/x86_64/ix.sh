@@ -610,7 +610,6 @@ bin/fixtty
 bin/keyd
 bin/cpio
 bin/xml/lint
-bin/curl/lite
 bin/curl/mbedtls
 bin/curl/bearssl
 bin/curl/openssl

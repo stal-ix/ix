@@ -15,10 +15,6 @@ lib/idn/2
 lib/brotli
 lib/c/ares
 lib/ng/http/2
-{% block curl_http3 %}
-lib/openssl
-lib/ng/http/3
-{% endblock %}
 {% if darwin %}
 lib/darwin/framework/SystemConfiguration
 {% endif %}
@@ -30,6 +26,7 @@ bld/auto
 
 {% block configure_flags %}
 {% if linux %}
+--with-ca-bundle=/etc/ssl/certs.pem
 --with-random="/dev/urandom"
 {% endif %}
 {% if darwin %}
