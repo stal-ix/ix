@@ -10,6 +10,12 @@ lib/c
 lib/c++
 {% endblock %}
 
+{% block bld_tool %}
+{% if x86_64%}
+bin/uasm
+{% endif %}
+{% endblock %}
+
 {% block skip_dirs %}0{% endblock %}
 
 {% block unpack %}
@@ -18,7 +24,13 @@ cd CPP/7zip/Bundles/Alone2
 {% endblock %}
 
 {% block make_flags %}
--f ../../cmpl_gcc.mak
+-f
+{% if x86_64 %}
+../../cmpl_gcc_x64.mak
+MY_ASM=uasm
+{% else %}
+../../cmpl_gcc.mak
+{% endif %}
 DISABLE_RAR_COMPRESS=1
 {% endblock %}
 
