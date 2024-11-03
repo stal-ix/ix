@@ -12,6 +12,14 @@ extract 1 ${src}/curl*
 extract 1 ${src}/nss*
 {% endblock %}
 
+{% block pem_dir %}
+etc/ssl/cert.pem.d
+{% endblock %}
+
+{% block pem_path %}
+{{self.pem_dir().strip()}}/mozilla.pem
+{% endblock %}
+
 {% block bld_tool %}
 bld/perl
 bin/openssl
@@ -23,12 +31,11 @@ perl lib/mk-ca-bundle.pl -n -k - > ca-bundle.crt
 {% endblock %}
 
 {% block install %}
-mkdir -p ${out}/share/ssl
-cat ca-bundle.crt | grep -v '\##' > ${out}/share/ssl/cert.pem
-sha256sum ${out}/share/ssl/cert.pem
+mkdir -p ${out}/{{self.pem_dir().strip()}}
+cat ca-bundle.crt | grep -v '\##' > ${out}/{{self.pem_path().strip()}}
+sha256sum ${out}/{{self.pem_path().strip()}}
 {% endblock %}
 
 {% block env %}
-export CA_BUNDLE="${out}/share/ssl/cert.pem"
-export OPENSSL_CERT_DIR="${out}/share/ssl"
+export CA_BUNDLE="${out}/{{self.pem_path().strip()}}"
 {% endblock %}

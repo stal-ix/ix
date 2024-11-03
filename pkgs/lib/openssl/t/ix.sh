@@ -20,10 +20,6 @@ bld/windres(for_target={{target.gnu.three}})
 {% endif %}
 {% endblock %}
 
-{% block use_data %}
-aux/ca/bundle
-{% endblock %}
-
 {% block setup_target_flags %}
 export AR=ar
 export RANLIB=ranlib
@@ -47,7 +43,7 @@ no-dso
 no-tests
 
 --prefix="${out}"
---openssldir={% block openssl_cert_dir %}"${OPENSSL_CERT_DIR}"{% endblock %}
+--openssldir=/etc/ssl
 {% endset %}
 
 {% block openssl_platforms %}

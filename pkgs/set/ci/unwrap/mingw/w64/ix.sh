@@ -19,5 +19,4 @@ bin/bsdtar
 bin/doxygen
 bin/mawk/lite
 bin/bison/3/8
-bin/curl/lite
 {% endblock %}

@@ -2401,6 +2401,7 @@ https://github.com/pop-os/cosmic-launcher/archive/refs/tags/epoch-1.0.0-alpha.2.
 https://github.com/pop-os/cosmic-launcher/archive/refs/tags/epoch-1.0.0-alpha.3.tar.gz
 https://github.com/pop-os/cosmic-notifications/archive/refs/tags/epoch-1.0.0-alpha.3.tar.gz
 https://github.com/pop-os/cosmic-panel/archive/refs/tags/epoch-1.0.0-alpha.3.tar.gz
+https://github.com/pop-os/cosmic-settings/archive/refs/tags/epoch-1.0.0-alpha.3.tar.gz
 https://github.com/pop-os/cosmic-term/archive/90179d5a5f837b60406bcd20315bb8a81cc3bb7d.zip
 https://github.com/pop-os/cosmic-term/archive/refs/tags/epoch-1.0.0-alpha.3.tar.gz
 https://github.com/pop-os/cosmic-workspaces-epoch/archive/refs/tags/epoch-1.0.0-alpha.3.tar.gz
@@ -2683,6 +2684,7 @@ https://github.com/smuellerDD/jitterentropy-library/archive/refs/tags/v3.4.1.tar
 https://github.com/smuellerDD/jitterentropy-library/archive/refs/tags/v3.6.0.tar.gz
 https://github.com/squid-cache/squid/archive/refs/tags/SQUID_6_10.tar.gz
 https://github.com/squid-cache/squid/archive/refs/tags/SQUID_6_11.tar.gz
+https://github.com/squidowl/halloy/archive/refs/tags/2024.14.tar.gz
 https://github.com/stal-ix/sources/raw/main/bison-bootstrap-master.tar.bz2
 https://github.com/stal-ix/sources/raw/main/bmake-20210808.tar.gz
 https://github.com/stal-ix/sources/raw/main/libmnl-1.0.5.tar.bz2
@@ -3506,6 +3508,7 @@ https://poppler.freedesktop.org/poppler-24.07.0.tar.xz
 https://poppler.freedesktop.org/poppler-24.08.0.tar.xz
 https://poppler.freedesktop.org/poppler-24.09.0.tar.xz
 https://poppler.freedesktop.org/poppler-24.10.0.tar.xz
+https://poppler.freedesktop.org/poppler-24.11.0.tar.xz
 https://pwmt.org/projects/zathura-djvu/download/zathura-djvu-0.2.10.tar.xz
 https://pwmt.org/projects/zathura-djvu/download/zathura-djvu-0.2.9.tar.xz
 https://pwmt.org/projects/zathura-pdf-poppler/download/zathura-pdf-poppler-0.3.1.tar.xz

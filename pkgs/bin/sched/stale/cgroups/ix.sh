@@ -1,4 +1,4 @@
-{% extends '//die/proxy.sh' %}
+{% extends '//die/gen.sh' %}
 
 {% block run_deps %}
 bin/sched(delay={{delay}})

@@ -47,6 +47,7 @@
 #}
 
 {% block run_deps %}
+bin/halloy
 bin/regreet
 bin/forge/jo
 bin/git/ea
@@ -609,7 +610,6 @@ bin/fixtty
 bin/keyd
 bin/cpio
 bin/xml/lint
-bin/curl/lite
 bin/curl/mbedtls
 bin/curl/bearssl
 bin/curl/openssl

@@ -65,4 +65,5 @@ bin/busybox
 
 {% block run_data %}
 aux/tzdata
+aux/ca/bundle
 {% endblock %}

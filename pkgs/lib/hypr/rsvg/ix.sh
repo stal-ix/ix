@@ -1,4 +1,4 @@
-{% extends '//die/proxy.sh' %}
+{% extends '//die/gen.sh' %}
 
 {% block lib_deps %}
 lib/shim/fake/pkg(pkg_name=librsvg-2.0,pkg_ver=2.100.500)

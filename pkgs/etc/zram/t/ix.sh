@@ -1,4 +1,4 @@
-{% extends '//die/proxy.sh' %}
+{% extends '//die/gen.sh' %}
 
 {% set num %}{% block num %}{% endblock %}{% endset %}
 

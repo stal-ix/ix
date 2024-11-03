@@ -1,4 +1,4 @@
-{% extends '//die/proxy.sh' %}
+{% extends '//die/gen.sh' %}
 
 {% block bld_data %}
 bin/npm/source

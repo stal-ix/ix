@@ -1,4 +1,4 @@
-{% extends '//die/c/autorehell.sh' %}
+{% extends 't/ix.sh' %}
 
 {% block fetch %}
 https://github.com/curl/curl/archive/refs/tags/curl-8_10_1.tar.gz
@@ -15,29 +15,15 @@ lib/idn/2
 lib/brotli
 lib/c/ares
 lib/ng/http/2
-{% block curl_http3 %}
-lib/openssl
-lib/ng/http/3
-{% endblock %}
 {% if darwin %}
 lib/darwin/framework/SystemConfiguration
 {% endif %}
 {% endblock %}
 
-{% block bld_tool %}
-bld/auto
-{% endblock %}
-
 {% block configure_flags %}
+{{super()}}
 {% if linux %}
---with-random="/dev/urandom"
+--with-ca-fallback
+--with-ca-bundle=/etc/ssl/cert.pem
 {% endif %}
-{% if darwin %}
---disable-ldap
-{% endif %}
-{% endblock %}
-
-{% block patch1 %}
-sed -e 's|usigned.*|unsigned char buf\[1024\];|' \
-    -i lib/curl_ntlm_wb.c
 {% endblock %}

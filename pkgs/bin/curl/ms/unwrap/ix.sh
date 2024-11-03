@@ -1,5 +1,6 @@
-{% extends '//bin/curl/openssl/ix.sh' %}
+{% extends '//lib/curl/t/ix.sh' %}
 
-{% block curl_http3 %}
+{% block bld_libs %}
+{{super()}}
 lib/msh3
 {% endblock %}
