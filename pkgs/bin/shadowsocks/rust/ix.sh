@@ -14,7 +14,7 @@ bld/make
 
 {% block install %}
 mkdir ${out}/bin
-make PREFIX=${out}/bin TARGET=release install
+make PREFIX=${out}/bin TARGET={{target.rust}}/release install
 {% endblock %}
 
 {% block patch %}
