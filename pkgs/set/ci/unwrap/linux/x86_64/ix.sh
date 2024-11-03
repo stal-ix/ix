@@ -47,6 +47,7 @@
 #}
 
 {% block run_deps %}
+bin/halloy
 bin/regreet
 bin/forge/jo
 bin/git/ea
