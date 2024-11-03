@@ -1,4 +1,4 @@
-{% extends '//lib/curl/t/ix.sh' %}
+{% extends '//lib/curl/t/t/ix.sh' %}
 
 {% block lib_deps %}
 lib/c
