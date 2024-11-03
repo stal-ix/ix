@@ -28,5 +28,5 @@ lib/xkb/common/dl
 
 {% block install %}
 mkdir ${out}/bin
-cp ${tmp}/release/rio ${out}/bin/
+cp ${tmp}/out/rio ${out}/bin/
 {% endblock %}

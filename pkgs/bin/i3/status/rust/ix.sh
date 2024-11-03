@@ -18,5 +18,5 @@ lib/openssl
 
 {% block install %}
 mkdir ${out}/bin
-cp ${tmp}/release/i3status-rs ${out}/bin/
+cp ${tmp}/out/i3status-rs ${out}/bin/
 {% endblock %}

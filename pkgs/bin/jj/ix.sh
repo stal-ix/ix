@@ -21,5 +21,5 @@ lib/openssl
 
 {% block install %}
 mkdir ${out}/bin
-cp ${tmp}/release/jj ${out}/bin/
+cp ${tmp}/out/jj ${out}/bin/
 {% endblock %}

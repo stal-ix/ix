@@ -79,6 +79,7 @@ __default__
 {% block cargo_flags %}
 build
 --offline
+--target {{target.rust}}
 --profile {{self.cargo_profile().strip()}}
 
 {% if bin %}
@@ -134,4 +135,5 @@ cargo {{ix.fix_list(self.cargo_flags().strip())}} --package {{x}}
 {% else %}
 cargo {{ix.fix_list(self.cargo_flags().strip())}}
 {% endif %}
+ln -s ${tmp}/{{target.rust}}/{{self.cargo_profile().strip()}} ${tmp}/out
 {% endblock %}

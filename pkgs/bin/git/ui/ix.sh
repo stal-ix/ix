@@ -23,5 +23,5 @@ bld/fakegit
 
 {% block install %}
 mkdir ${out}/bin
-cp ${tmp}/release/gitui ${out}/bin/
+cp ${tmp}/out/gitui ${out}/bin/
 {% endblock %}

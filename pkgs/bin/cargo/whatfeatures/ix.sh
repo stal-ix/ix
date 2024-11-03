@@ -14,5 +14,5 @@ lib/openssl
 
 {% block install %}
 mkdir ${out}/bin
-cp ${tmp}/release/cargo-whatfeatures ${out}/bin/
+cp ${tmp}/out/cargo-whatfeatures ${out}/bin/
 {% endblock %}

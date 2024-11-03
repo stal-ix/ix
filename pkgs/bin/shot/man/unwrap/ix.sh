@@ -18,5 +18,5 @@ lib/xkb/common
 
 {% block install %}
 mkdir ${out}/bin
-cp ${tmp}/release/shotman ${out}/bin/
+cp ${tmp}/out/shotman ${out}/bin/
 {% endblock %}

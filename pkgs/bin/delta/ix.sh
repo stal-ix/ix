@@ -15,5 +15,5 @@ lib/oniguruma
 
 {% block install %}
 mkdir ${out}/bin
-cp ${tmp}/release/delta ${out}/bin/
+cp ${tmp}/out/delta ${out}/bin/
 {% endblock %}

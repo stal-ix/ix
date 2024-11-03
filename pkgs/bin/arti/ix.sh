@@ -18,5 +18,5 @@ lib/sqlite/3
 
 {% block install %}
 mkdir ${out}/bin
-cp ${tmp}/release/arti ${out}/bin/
+cp ${tmp}/out/arti ${out}/bin/
 {% endblock %}

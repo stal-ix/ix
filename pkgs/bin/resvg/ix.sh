@@ -15,5 +15,5 @@ cd crates/resvg
 
 {% block install %}
 mkdir ${out}/bin/
-cp ${tmp}/release/resvg ${out}/bin/
+cp ${tmp}/out/resvg ${out}/bin/
 {% endblock %}

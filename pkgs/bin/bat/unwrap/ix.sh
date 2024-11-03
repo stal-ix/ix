@@ -18,5 +18,5 @@ lib/oniguruma
 
 {% block install %}
 mkdir ${out}/bin
-cp ${tmp}/release/bat ${out}/bin/
+cp ${tmp}/out/bat ${out}/bin/
 {% endblock %}

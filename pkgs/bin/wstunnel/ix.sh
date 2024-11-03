@@ -14,5 +14,5 @@ lib/c
 
 {% block install %}
 mkdir ${out}/bin
-cp ${tmp}/release/wstunnel ${out}/bin/
+cp ${tmp}/out/wstunnel ${out}/bin/
 {% endblock %}

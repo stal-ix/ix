@@ -10,5 +10,5 @@ https://github.com/bensadeh/tailspin/archive/refs/tags/3.0.0.tar.gz
 
 {% block install %}
 mkdir ${out}/bin
-cp ${tmp}/release/tspin ${out}/bin/
+cp ${tmp}/out/tspin ${out}/bin/
 {% endblock %}

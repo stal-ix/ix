@@ -13,5 +13,14 @@ export VERGEN_GIT_SHA="x"
 {% endblock %}
 
 {% block install %}
+export CARGO_TARGET_DIR=${tmp}/{{target.rust}}
 just --set prefix ${out} install
+{% endblock %}
+
+{% block bld_libs %}
+lib/wayland/dl
+lib/mesa/gl/dl
+lib/drivers/3d
+lib/mesa/egl/dl
+lib/xkb/common/dl
 {% endblock %}
