@@ -1,8 +1,8 @@
 {% extends '//die/c/ix.sh' %}
 
 {% block fetch %}
-https://github.com/xyproto/orbiton/archive/refs/tags/v2.68.1.tar.gz
-sha:fc881e6d5d7686d98026bcd3b99531a010bd6b787a01fb239b0d766668a2eee3
+{% include 'ver.sh' %}
+sha:3facf3b4f066d9a6ba33a969fd0b540c224bdfdfde1d4abe3fcc70e072dbee1b
 {% endblock %}
 
 {% block bld_libs %}

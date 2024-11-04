@@ -1,11 +1,11 @@
 {% extends '//die/go/build.sh' %}
 
 {% block go_url %}
-https://github.com/xyproto/orbiton/archive/refs/tags/v2.68.1.tar.gz
+{% include '//bin/orbiton/g/ver.sh' %}
 {% endblock %}
 
 {% block go_sha %}
-ffcc64c0002de9aad22b6356c9cb99b0b1bfea498273a32ce42474aa4c970736
+db6bf8150dcc29bd184f6113865b8eb2f56094675ebd7269dcec446f596797bb
 {% endblock %}
 
 {% block go_tool %}
