@@ -107,7 +107,7 @@ build
 {% block configure %}
 cat Cargo.toml \
     | t2j \
-    | deprof \
+    | jstrip profile \
     | j2t \
     > _
 

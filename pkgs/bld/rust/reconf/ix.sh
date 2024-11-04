@@ -11,8 +11,8 @@ base64 -d << EOF > ${out}/bin/j2t
 {% include 'j2t.py/base64' %}
 EOF
 
-base64 -d << EOF > ${out}/bin/deprof
-{% include 'deprof.py/base64' %}
+base64 -d << EOF > ${out}/bin/jstrip
+{% include 'strip.py/base64' %}
 EOF
 
 chmod +x ${out}/bin/*
