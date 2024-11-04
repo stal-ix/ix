@@ -6,6 +6,7 @@ bin/cosmic/idle
 bin/cosmic/edit
 bin/cosmic/comp
 bin/cosmic/term
+bin/cosmic/randr
 bin/cosmic/files
 bin/cosmic/panel
 bin/cosmic/greeter
