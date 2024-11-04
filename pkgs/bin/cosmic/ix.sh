@@ -2,6 +2,7 @@
 
 {% block run_deps %}
 bin/cosmic/bg
+bin/cosmic/idle
 bin/cosmic/edit
 bin/cosmic/comp
 bin/cosmic/term
