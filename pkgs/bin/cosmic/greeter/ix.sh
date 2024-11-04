@@ -12,6 +12,7 @@ b1463d268f70116b60f2e77a044f8356b6ccbd4d883fd2a118657fe53e273e9b
 {{super()}}
 lib/pam
 lib/udev
+lib/input
 lib/llvm/19
 lib/shim/fake(lib_name=ffi)
 lib/shim/fake(lib_name=ncursesw)
@@ -23,7 +24,9 @@ lib/shim/fake(lib_name=stdc++)
 bld/llvm/config
 {% endblock %}
 
-{% block cargo_features %}
+{% block cargo_packages %}
+cosmic-greeter-daemon
+cosmic-greeter
 {% endblock %}
 
 {% block patch %}

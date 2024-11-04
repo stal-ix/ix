@@ -7,6 +7,7 @@ bin/cosmic/comp
 bin/cosmic/term
 bin/cosmic/files
 bin/cosmic/panel
+bin/cosmic/greeter
 bin/cosmic/launcher
 bin/cosmic/applibrary
 bin/cosmic/workspaces
