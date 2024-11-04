@@ -8,12 +8,8 @@
 
 {% block std_env %}
 bld/pzd
-pip/toml
-bld/python
-bld/rust/cc
 bld/pkg/config
-bld/rust/reconf
-bld/rust/devendor
+bld/rust/helpers
 {% if help %}
 bin/cargo/whatfeatures
 {% endif %}
