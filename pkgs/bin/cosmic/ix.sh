@@ -11,6 +11,7 @@ bin/cosmic/files
 bin/cosmic/panel
 bin/cosmic/greeter
 bin/cosmic/launcher
+bin/cosmic/screenshot
 bin/cosmic/applibrary
 bin/cosmic/workspaces
 bin/cosmic/notifications
