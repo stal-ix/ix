@@ -1502,6 +1502,7 @@ https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.26.0.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.26.1.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.27.1.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.28.0.tar.gz
+https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.29.0.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.3.1.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.3.2.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.3.3.tar.gz
@@ -2399,10 +2400,14 @@ https://github.com/pop-os/cosmic-files/archive/refs/tags/epoch-1.0.0-alpha.2.tar
 https://github.com/pop-os/cosmic-files/archive/refs/tags/epoch-1.0.0-alpha.3.tar.gz
 https://github.com/pop-os/cosmic-greeter/archive/refs/tags/epoch-1.0.0-alpha.3.tar.gz
 https://github.com/pop-os/cosmic-icons/archive/refs/tags/epoch-1.0.0-alpha.3.tar.gz
+https://github.com/pop-os/cosmic-idle/archive/refs/tags/epoch-1.0.0-alpha.3.tar.gz
 https://github.com/pop-os/cosmic-launcher/archive/refs/tags/epoch-1.0.0-alpha.2.tar.gz
 https://github.com/pop-os/cosmic-launcher/archive/refs/tags/epoch-1.0.0-alpha.3.tar.gz
 https://github.com/pop-os/cosmic-notifications/archive/refs/tags/epoch-1.0.0-alpha.3.tar.gz
 https://github.com/pop-os/cosmic-panel/archive/refs/tags/epoch-1.0.0-alpha.3.tar.gz
+https://github.com/pop-os/cosmic-randr/archive/refs/tags/epoch-1.0.0-alpha.3.tar.gz
+https://github.com/pop-os/cosmic-screenshot/archive/refs/tags/epoch-1.0.0-alpha.3.tar.gz
+https://github.com/pop-os/cosmic-session/archive/refs/tags/epoch-1.0.0-alpha.3.tar.gz
 https://github.com/pop-os/cosmic-settings/archive/refs/tags/epoch-1.0.0-alpha.3.tar.gz
 https://github.com/pop-os/cosmic-term/archive/90179d5a5f837b60406bcd20315bb8a81cc3bb7d.zip
 https://github.com/pop-os/cosmic-term/archive/refs/tags/epoch-1.0.0-alpha.3.tar.gz
@@ -2629,6 +2634,7 @@ https://github.com/sammycage/lunasvg/archive/refs/tags/v2.3.9.tar.gz
 https://github.com/sammycage/lunasvg/archive/refs/tags/v2.4.0.tar.gz
 https://github.com/sammycage/lunasvg/archive/refs/tags/v2.4.1.tar.gz
 https://github.com/sammycage/lunasvg/archive/refs/tags/v3.0.0.tar.gz
+https://github.com/sammycage/lunasvg/archive/refs/tags/v3.0.1.tar.gz
 https://github.com/sammycage/plutovg/archive/refs/tags/v0.0.8.tar.gz
 https://github.com/sass/libsass/archive/refs/tags/3.6.5.tar.gz
 https://github.com/sass/libsass/archive/refs/tags/3.6.6.tar.gz
@@ -3039,6 +3045,7 @@ https://github.com/zed-industries/zed/archive/refs/tags/v0.123.2.tar.gz
 https://github.com/zed-industries/zed/archive/refs/tags/v0.148.1.tar.gz
 https://github.com/zellij-org/zellij/archive/refs/tags/v0.39.2.tar.gz
 https://github.com/zellij-org/zellij/archive/refs/tags/v0.40.0.tar.gz
+https://github.com/zellij-org/zellij/archive/refs/tags/v0.41.0.tar.gz
 https://github.com/zeux/volk/archive/refs/tags/vulkan-sdk-1.3.275.0.tar.gz
 https://github.com/zeux/volk/archive/refs/tags/vulkan-sdk-1.3.290.0.tar.gz
 https://github.com/zlib-ng/zlib-ng/archive/refs/tags/2.1.3.tar.gz

@@ -1,11 +1,11 @@
 {% extends '//die/rust/cargo.sh' %}
 
 {% block cargo_url %}
-https://github.com/zellij-org/zellij/archive/refs/tags/v0.40.0.tar.gz
+https://github.com/zellij-org/zellij/archive/refs/tags/v0.41.0.tar.gz
 {% endblock %}
 
 {% block cargo_sha %}
-6039ae97fc4ace6bb412283084cd0de85444612ac06287bcda6e4a0c7c01ffc3
+36e02ada369951d2a506aa1e4dbd666c342b5d67c4056f380324a7eaeccda222
 {% endblock %}
 
 {% block bld_libs %}
