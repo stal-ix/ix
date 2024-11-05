@@ -1,8 +1,8 @@
 {% extends '//die/c/gnome.sh' %}
 
 {% block fetch %}
-https://gitlab.gnome.org/GNOME/sysprof/-/archive/46.0/sysprof-46.0.tar.bz2
-sha:c8cb852301ec01b1b2234793249a3674050c96f09f5a9ae3bf8c56a1750ec006
+https://gitlab.gnome.org/GNOME/sysprof/-/archive/47.1/sysprof-47.1.tar.bz2
+sha:c38f48a527ab1a857776b8218e019091e27533b5c252526c4583c6313f0f9088
 {% endblock %}
 
 {% block bld_libs %}
@@ -28,10 +28,6 @@ tests=false
 examples=false
 sysprofd=none
 systemdunitdir=${out}/share/systemd
-{% endblock %}
-
-{% block setup_target_flags %}
-export LDFLAGS="-Wl,--error-limit=0 ${LDFLAGS}"
 {% endblock %}
 
 {% block patch %}
