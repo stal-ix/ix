@@ -47,6 +47,7 @@
 #}
 
 {% block run_deps %}
+bin/x264
 bin/halloy
 bin/regreet
 bin/forge/jo
