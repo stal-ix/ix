@@ -1,8 +1,8 @@
 {% extends '//die/c/lxqt.sh' %}
 
 {% block fetch %}
-https://github.com/lxqt/liblxqt/archive/refs/tags/2.0.0.tar.gz
-sha:464090c3e3eba5204c59500b2585c4210b44f9438438864fcceb3d09669611a5
+https://github.com/lxqt/liblxqt/archive/refs/tags/2.1.0.tar.gz
+sha:549ce9547a70ac1947a59bfc41cd62d71851f2c06964ee6e77d3f6643413d2c0
 {% endblock %}
 
 {% block lib_deps %}
