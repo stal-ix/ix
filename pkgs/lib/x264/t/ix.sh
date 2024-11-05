@@ -32,4 +32,5 @@ bash
 
 {% block configure_all_flags %}
 --prefix=${out}
+--host={{target.gnu.three}}
 {% endblock %}
