@@ -19,7 +19,11 @@ lib/c
 {% block bld_tool %}
 bld/nasm
 bld/bash
-bld/elfutils
+{% endblock %}
+
+{% block configure %}
+export STRINGS=llvm-strings
+{{super()}}
 {% endblock %}
 
 {% block configure_shell %}
