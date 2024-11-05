@@ -334,7 +334,6 @@ bin/links/sdl
 bin/icc
 bin/xdg/desktop/portal/ix
 bin/qpack
-bin/lvm2
 bin/ag
 bin/mkvtoolnix
 bin/sdlpop

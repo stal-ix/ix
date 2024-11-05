@@ -74,6 +74,7 @@ http://mirrors.kernel.org/sourceware/lvm2/LVM2.2.03.24.tgz
 http://mirrors.kernel.org/sourceware/lvm2/LVM2.2.03.25.tgz
 http://mirrors.kernel.org/sourceware/lvm2/LVM2.2.03.26.tgz
 http://mirrors.kernel.org/sourceware/lvm2/LVM2.2.03.27.tgz
+http://mirrors.kernel.org/sourceware/lvm2/LVM2.2.03.28.tgz
 http://musl.libc.org/releases/musl-1.2.4.tar.gz
 http://musl.libc.org/releases/musl-1.2.5.tar.gz
 http://penma.de/code/gettext-stub/gettext-stub-1.tar.gz

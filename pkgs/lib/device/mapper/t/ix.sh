@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-http://mirrors.kernel.org/sourceware/lvm2/LVM2.2.03.27.tgz
-sha:3133415905b9b46d152d064865d52f32eee4fcbeb0e8a69e3510caeaae0c56a9
+http://mirrors.kernel.org/sourceware/lvm2/LVM2.2.03.28.tgz
+sha:b822baff6b62df36382c717ceba98a2688ebb31bf2b768f3ffa2b6d5e2557242
 {% endblock %}
 
 {% block lib_deps %}
@@ -15,7 +15,6 @@ lib/kernel
 {% endblock %}
 
 {% block bld_tool %}
-bld/elfutils
 bld/auto/archive
 {% endblock %}
 
