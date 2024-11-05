@@ -4,6 +4,7 @@
 lib/mnl
 lib/bsd
 lib/event
+lib/openssl
 {{super()}}
 {% endblock %}
 

@@ -1,6 +1,5 @@
-{% extends '//lib/unbound/t/ix.sh' %}
+{% extends '//die/hub.sh' %}
 
-{% block configure_flags %}
-{{super()}}
---with-libunbound-only
+{% block lib_deps %}
+lib/unbound/{{libunbound_ver or 'openssl'}}
 {% endblock %}
