@@ -183,6 +183,14 @@
         "md5": "529d7fd7e14612ccde86417b4402d6f3",
         "url": "https://files.pythonhosted.org/packages/d9/5a/e7c31adbe875f2abbb91bd84cf2dc52d792b5a01506781dbcf25c91daf11/six-1.16.0-py2.py3-none-any.whl"
     },
+    "toml/ix.sh": {
+        "md5": "dc26cd71b80d6757139f38156a43c545",
+        "url": "https://files.pythonhosted.org/packages/44/6f/7120676b6d73228c96e17f1f794d8ab046fc910d781c8d151120c3f1569e/toml-0.10.2-py2.py3-none-any.whl"
+    },
+    "tomli_w/ix.sh": {
+        "md5": "0fd3a1c93129acb21bbd3359a12209dd",
+        "url": "https://files.pythonhosted.org/packages/c4/ac/ce90573ba446a9bbe65838ded066a805234d159b4446ae9f8ec5bbd36cbd/tomli_w-1.1.0-py3-none-any.whl"
+    },
     "urllib3/ix.sh": {
         "md5": "fcbb4def4b423b7739e3a82a34d5196a",
         "url": "https://files.pythonhosted.org/packages/7b/f5/890a0baca17a61c1f92f72b81d3c31523c99bec609e60c292ea55b387ae8/urllib3-1.26.15-py2.py3-none-any.whl"

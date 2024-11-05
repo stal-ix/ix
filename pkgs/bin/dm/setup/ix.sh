@@ -3,6 +3,12 @@
 {% block bld_libs %}
 {{super()}}
 lib/aio
+lib/readline
+{% endblock %}
+
+{% block bld_tool %}
+{{super()}}
+bld/elfutils
 {% endblock %}
 
 {% block configure_flags %}

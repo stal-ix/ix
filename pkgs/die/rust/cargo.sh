@@ -8,10 +8,8 @@
 
 {% block std_env %}
 bld/pzd
-bld/python
-bld/rust/cc
 bld/pkg/config
-bld/rust/devendor
+bld/rust/helpers
 {% if help %}
 bin/cargo/whatfeatures
 {% endif %}
@@ -103,7 +101,12 @@ build
 {% endblock %}
 
 {% block configure %}
-cat Cargo.toml | cargo_strip_profile > _
+cat Cargo.toml \
+    | t2j \
+    | jstrip profile \
+    | j2t \
+    > _
+
 mv _ Cargo.toml
 
 cat << EOF >> Cargo.toml
