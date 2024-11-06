@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://github.com/curl/curl/archive/refs/tags/curl-8_10_1.tar.gz
-sha:5aaf131294f734756325dd99d849518c9a5060fc702517ab3064c76257dc700c
+https://github.com/curl/curl/archive/refs/tags/curl-8_11_0.tar.gz
+sha:5a231145114589491fc52da118f9c7ef8abee885d1cb1ced99c7290e9a352f07
 {% endblock %}
 
 {% block bld_tool %}
