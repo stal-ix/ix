@@ -1,6 +1,5 @@
-{% extends '//lib/curl/lite/t/ix.sh' %}
+{% extends '//die/hub.sh' %}
 
-{% block bld_libs %}
-{{super()}}
-lib/wolfssl
+{% block run_deps %}
+bin/curl/wolf/unwrap(libssh2_ver=wolfssl,libcurl_no_fallback=1)
 {% endblock %}

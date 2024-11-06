@@ -23,7 +23,10 @@ lib/darwin/framework/SystemConfiguration
 {% block configure_flags %}
 {{super()}}
 {% if linux %}
+{% if libcurl_no_fallback %}
+{% else %}
 --with-ca-fallback
+{% endif %}
 --with-ca-bundle=/etc/ssl/cert.pem
 {% endif %}
 {% endblock %}
