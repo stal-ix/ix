@@ -27,3 +27,7 @@ getopt
 getopt_long
 getopt_long_only
 {% endblock %}
+
+{% block env %}
+export COFLAGS="--with-nettle=${out} \${COFLAGS}"
+{% endblock %}

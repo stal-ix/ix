@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/lxqt/lxqt-build-tools/archive/refs/tags/2.0.0.tar.gz
-sha:d433ce4de6e69d72de7692424dc5f6bed492c09130a8a59bcd63b20f4d88d328
+https://github.com/lxqt/lxqt-build-tools/archive/refs/tags/2.1.0.tar.gz
+sha:f24679bd4f50900981cf614c1341b6fbcf81d8ab3dbccae435f7ee878fc1b060
 {% endblock %}
 
 {% block bld_libs %}

@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://www.gnupg.org/ftp/gcrypt/gnutls/v3.8/gnutls-3.8.7.1.tar.xz
-sha:9ca0ddaccce28a74fa18d738744190afb3b0daebef74e6ad686bf7bef99abd60
+https://www.gnupg.org/ftp/gcrypt/gnutls/v3.8/gnutls-3.8.8.tar.xz
+sha:ac4f020e583880b51380ed226e59033244bc536cad2623f2e26f5afa2939d8fb
 {% endblock %}
 
 {% block lib_deps %}
@@ -46,4 +46,11 @@ rawmemchr
 {% endif %}
 --disable-tests
 --without-p11-kit
+--with-zlib=link
+--with-zstd=link
+--with-brotli=link
+{% endblock %}
+
+{% block setup_target_flags %}
+export COFLAGS=$(echo ${COFLAGS} | sed -e 's|zstd=|xxx=|')
 {% endblock %}
