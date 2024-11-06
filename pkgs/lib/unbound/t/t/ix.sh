@@ -2,5 +2,6 @@
 
 {% block configure_flags %}
 {{super()}}
+--disable-flto
 --with-libunbound-only
 {% endblock %}
