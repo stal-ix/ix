@@ -1044,6 +1044,7 @@ https://github.com/NixOS/nix/archive/refs/tags/2.23.1.tar.gz
 https://github.com/NixOS/nix/archive/refs/tags/2.23.2.tar.gz
 https://github.com/NixOS/nix/archive/refs/tags/2.23.3.tar.gz
 https://github.com/NixOS/nix/archive/refs/tags/2.24.1.tar.gz
+https://github.com/NixOS/nix/archive/refs/tags/2.24.10.tar.gz
 https://github.com/NixOS/nix/archive/refs/tags/2.24.2.tar.gz
 https://github.com/NixOS/nix/archive/refs/tags/2.24.3.tar.gz
 https://github.com/NixOS/nix/archive/refs/tags/2.24.4.tar.gz
