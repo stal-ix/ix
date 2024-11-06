@@ -9,6 +9,12 @@ sha:89a4c1e1e45e0b23dffe708202cb2eaffde0fe3727d7692b2e1739fec78a7dac
 lib/c
 {% endblock %}
 
+{% block bld_libs %}
+{% if riscv64 %}
+lib/kernel
+{% endif %}
+{% endblock %}
+
 {% block env %}
 export CPPFLAGS="-I${out}/include/pixman-1 \${CPPFLAGS}"
 {% endblock %}
