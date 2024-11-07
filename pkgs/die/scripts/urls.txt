@@ -3040,6 +3040,7 @@ https://github.com/yaegashi/muslstack/archive/d19cc5866abce3ca59dfc1666df7cc9709
 https://github.com/yaml/libyaml/archive/refs/tags/0.2.5.tar.gz
 https://github.com/yandex-cloud/geesefs/archive/ad455fd2b4e820f4d9becad4faf9fafeb29b8f2a.zip
 https://github.com/yandex-cloud/geesefs/archive/refs/tags/v0.42.0.tar.gz
+https://github.com/yandex-cloud/geesefs/archive/refs/tags/v0.42.1.tar.gz
 https://github.com/yandex/porto/archive/refs/tags/v5.3.15.tar.gz
 https://github.com/yasm/yasm/releases/download/v1.3.0/yasm-1.3.0.tar.gz
 https://github.com/yggdrasil-network/yggdrasil-go/archive/refs/tags/v0.5.5.tar.gz
