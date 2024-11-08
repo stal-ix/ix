@@ -2659,6 +2659,7 @@ https://github.com/sched-ext/scx/archive/fb3f1d0b43d8a1f69cbc434f4a43145dbd98307
 https://github.com/sched-ext/scx/archive/refs/tags/v1.0.2.tar.gz
 https://github.com/sched-ext/scx/archive/refs/tags/v1.0.4.tar.gz
 https://github.com/sched-ext/scx/archive/refs/tags/v1.0.5.tar.gz
+https://github.com/sched-ext/scx/archive/refs/tags/v1.0.6.tar.gz
 https://github.com/sctplab/usrsctp/archive/refs/tags/0.9.5.0.tar.gz
 https://github.com/sddm/sddm/archive/refs/tags/v0.20.0.tar.gz
 https://github.com/sddm/sddm/archive/refs/tags/v0.21.0.tar.gz
