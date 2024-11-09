@@ -1,2 +1,2 @@
-https://github.com/hyprwm/Hyprland/releases/download/v0.44.1/source-v0.44.1.tar.gz
-sha:a901b9ce5dac48a2b92f287d902c5dc33a05e9946fd082c43142f205246dfc63
+https://github.com/hyprwm/Hyprland/releases/download/v0.45.0/source-v0.45.0.tar.gz
+sha:9690b5c0c10fdc277ea7988a28318941dde854260ede4339634dbf2bba8192a3
