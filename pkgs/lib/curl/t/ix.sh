@@ -1,10 +1,5 @@
 {% extends 't/ix.sh' %}
 
-{% block fetch %}
-https://github.com/curl/curl/archive/refs/tags/curl-8_10_1.tar.gz
-sha:5aaf131294f734756325dd99d849518c9a5060fc702517ab3064c76257dc700c
-{% endblock %}
-
 {% block lib_deps %}
 lib/c
 lib/z

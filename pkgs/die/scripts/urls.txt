@@ -174,6 +174,7 @@ https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.11.3.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.11.4.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.11.5.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.11.6.tar.xz
+https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.11.7.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.2.14.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.3.13.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.4.12.tar.xz
@@ -982,6 +983,7 @@ https://github.com/Kitware/CMake/archive/refs/tags/v3.30.1.tar.gz
 https://github.com/Kitware/CMake/archive/refs/tags/v3.30.3.tar.gz
 https://github.com/Kitware/CMake/archive/refs/tags/v3.30.4.tar.gz
 https://github.com/Kitware/CMake/archive/refs/tags/v3.30.5.tar.gz
+https://github.com/Kitware/CMake/archive/refs/tags/v3.31.0.tar.gz
 https://github.com/LBCrion/sfwbar/archive/refs/tags/v1.0_beta13.tar.gz
 https://github.com/LBCrion/sfwbar/archive/refs/tags/v1.0_beta9.tar.gz
 https://github.com/LibRaw/LibRaw/archive/refs/tags/0.21.1.tar.gz
@@ -1319,6 +1321,7 @@ https://github.com/cisco/libsrtp/archive/refs/tags/v2.6.0.tar.gz
 https://github.com/cisco/openh264/archive/refs/tags/v2.3.1.tar.gz
 https://github.com/cisco/openh264/archive/refs/tags/v2.4.0.tar.gz
 https://github.com/cisco/openh264/archive/refs/tags/v2.4.1.tar.gz
+https://github.com/cisco/openh264/archive/refs/tags/v2.5.0.tar.gz
 https://github.com/cjlin1/liblinear/archive/v247/liblinear-247.tar.gz
 https://github.com/cli/cli/archive/refs/tags/v2.14.4.tar.gz
 https://github.com/commonmark/cmark/archive/refs/tags/0.30.3.tar.gz
@@ -1346,6 +1349,7 @@ https://github.com/cppfw/utki/archive/refs/tags/1.1.224.tar.gz
 https://github.com/curl/curl/archive/refs/tags/curl-7_80_0.tar.gz
 https://github.com/curl/curl/archive/refs/tags/curl-8_10_0.tar.gz
 https://github.com/curl/curl/archive/refs/tags/curl-8_10_1.tar.gz
+https://github.com/curl/curl/archive/refs/tags/curl-8_11_0.tar.gz
 https://github.com/curl/curl/archive/refs/tags/curl-8_2_1.tar.gz
 https://github.com/curl/curl/archive/refs/tags/curl-8_3_0.tar.gz
 https://github.com/curl/curl/archive/refs/tags/curl-8_4_0.tar.gz
@@ -1646,9 +1650,11 @@ https://github.com/golang/go/archive/refs/tags/go1.22.4.tar.gz
 https://github.com/golang/go/archive/refs/tags/go1.22.5.tar.gz
 https://github.com/golang/go/archive/refs/tags/go1.22.6.tar.gz
 https://github.com/golang/go/archive/refs/tags/go1.22.8.tar.gz
+https://github.com/golang/go/archive/refs/tags/go1.22.9.tar.gz
 https://github.com/golang/go/archive/refs/tags/go1.23.0.tar.gz
 https://github.com/golang/go/archive/refs/tags/go1.23.1.tar.gz
 https://github.com/golang/go/archive/refs/tags/go1.23.2.tar.gz
+https://github.com/golang/go/archive/refs/tags/go1.23.3.tar.gz
 https://github.com/google/brotli/archive/refs/tags/v1.1.0.tar.gz
 https://github.com/google/crc32c/archive/refs/tags/1.1.2.tar.gz
 https://github.com/google/double-conversion/archive/refs/tags/v3.3.0.tar.gz
@@ -1951,6 +1957,7 @@ https://github.com/lapce/lapce/archive/refs/tags/v0.4.1.tar.gz
 https://github.com/lapce/lapce/archive/refs/tags/v0.4.2.tar.gz
 https://github.com/laurikari/tre/archive/refs/tags/v0.9.0.tar.gz
 https://github.com/lavv17/lftp/releases/download/v4.8.3/lftp-4.8.3.tar.gz
+https://github.com/lavv17/lftp/releases/download/v4.9.3/lftp-4.9.3.tar.gz
 https://github.com/lbonn/rofi/releases/download/1.7.3%2Bwayland1/rofi-1.7.3+wayland1.tar.xz
 https://github.com/leo-arch/clifm/archive/refs/tags/v1.14.5.tar.gz
 https://github.com/leo-arch/clifm/archive/refs/tags/v1.14.tar.gz
@@ -1990,6 +1997,7 @@ https://github.com/libexpat/libexpat/archive/refs/tags/R_2_6_0.tar.gz
 https://github.com/libexpat/libexpat/archive/refs/tags/R_2_6_1.tar.gz
 https://github.com/libexpat/libexpat/archive/refs/tags/R_2_6_2.tar.gz
 https://github.com/libexpat/libexpat/archive/refs/tags/R_2_6_3.tar.gz
+https://github.com/libexpat/libexpat/archive/refs/tags/R_2_6_4.tar.gz
 https://github.com/libffi/libffi/archive/refs/tags/v3.4.4.tar.gz
 https://github.com/libffi/libffi/archive/refs/tags/v3.4.5.tar.gz
 https://github.com/libffi/libffi/archive/refs/tags/v3.4.6.tar.gz
@@ -2436,6 +2444,7 @@ https://github.com/prometheus/prometheus/archive/refs/tags/v2.53.0.tar.gz
 https://github.com/prometheus/prometheus/archive/refs/tags/v2.53.1.tar.gz
 https://github.com/prometheus/prometheus/archive/refs/tags/v2.54.1.tar.gz
 https://github.com/prometheus/prometheus/archive/refs/tags/v2.55.0.tar.gz
+https://github.com/prometheus/prometheus/archive/refs/tags/v2.55.1.tar.gz
 https://github.com/prometheus/prometheus/releases/download/v2.50.1/prometheus-web-ui-2.50.1.tar.gz
 https://github.com/protobuf-c/protobuf-c/archive/refs/tags/v1.4.1.tar.gz
 https://github.com/protobuf-c/protobuf-c/archive/refs/tags/v1.5.0.tar.gz
@@ -2652,6 +2661,7 @@ https://github.com/sched-ext/scx/archive/fb3f1d0b43d8a1f69cbc434f4a43145dbd98307
 https://github.com/sched-ext/scx/archive/refs/tags/v1.0.2.tar.gz
 https://github.com/sched-ext/scx/archive/refs/tags/v1.0.4.tar.gz
 https://github.com/sched-ext/scx/archive/refs/tags/v1.0.5.tar.gz
+https://github.com/sched-ext/scx/archive/refs/tags/v1.0.6.tar.gz
 https://github.com/sctplab/usrsctp/archive/refs/tags/0.9.5.0.tar.gz
 https://github.com/sddm/sddm/archive/refs/tags/v0.20.0.tar.gz
 https://github.com/sddm/sddm/archive/refs/tags/v0.21.0.tar.gz
@@ -2735,6 +2745,7 @@ https://github.com/strukturag/libheif/archive/refs/tags/v1.18.1.tar.gz
 https://github.com/strukturag/libheif/archive/refs/tags/v1.18.2.tar.gz
 https://github.com/strukturag/libheif/archive/refs/tags/v1.19.0.tar.gz
 https://github.com/strukturag/libheif/archive/refs/tags/v1.19.1.tar.gz
+https://github.com/strukturag/libheif/archive/refs/tags/v1.19.2.tar.gz
 https://github.com/svenstaro/miniserve/archive/172c321c0809198ef7cafffc81aa3f8f688c5544.zip
 https://github.com/svenstaro/miniserve/archive/refs/tags/v0.26.0.tar.gz
 https://github.com/swaywm/sway/archive/refs/tags/1.10.tar.gz
@@ -3037,6 +3048,7 @@ https://github.com/yaegashi/muslstack/archive/d19cc5866abce3ca59dfc1666df7cc9709
 https://github.com/yaml/libyaml/archive/refs/tags/0.2.5.tar.gz
 https://github.com/yandex-cloud/geesefs/archive/ad455fd2b4e820f4d9becad4faf9fafeb29b8f2a.zip
 https://github.com/yandex-cloud/geesefs/archive/refs/tags/v0.42.0.tar.gz
+https://github.com/yandex-cloud/geesefs/archive/refs/tags/v0.42.1.tar.gz
 https://github.com/yandex/porto/archive/refs/tags/v5.3.15.tar.gz
 https://github.com/yasm/yasm/releases/download/v1.3.0/yasm-1.3.0.tar.gz
 https://github.com/yggdrasil-network/yggdrasil-go/archive/refs/tags/v0.5.5.tar.gz
@@ -3463,6 +3475,7 @@ https://mirrors.edge.kernel.org/pub/linux/libs/ell/ell-0.66.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/libs/ell/ell-0.67.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/libs/ell/ell-0.68.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/libs/ell/ell-0.69.tar.xz
+https://mirrors.edge.kernel.org/pub/linux/libs/ell/ell-0.70.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/network/wireless/iwd-2.10.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/network/wireless/iwd-2.11.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/network/wireless/iwd-2.12.tar.xz
@@ -3479,6 +3492,7 @@ https://mirrors.edge.kernel.org/pub/linux/network/wireless/iwd-2.22.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/network/wireless/iwd-2.8.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/network/wireless/iwd-2.9.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/network/wireless/iwd-3.0.tar.xz
+https://mirrors.edge.kernel.org/pub/linux/network/wireless/iwd-3.1.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/utils/kbd/kbd-2.6.1.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/utils/kbd/kbd-2.6.3.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/utils/kbd/kbd-2.6.4.tar.xz
@@ -3717,6 +3731,7 @@ https://www.gnupg.org/ftp/gcrypt/gnutls/v3.8/gnutls-3.8.8.tar.xz
 https://www.gnupg.org/ftp/gcrypt/gpgme/gpgme-1.22.0.tar.bz2
 https://www.gnupg.org/ftp/gcrypt/gpgme/gpgme-1.23.0.tar.bz2
 https://www.gnupg.org/ftp/gcrypt/gpgme/gpgme-1.23.1.tar.bz2
+https://www.gnupg.org/ftp/gcrypt/gpgme/gpgme-1.24.0.tar.bz2
 https://www.gnupg.org/ftp/gcrypt/libassuan/libassuan-2.5.5.tar.bz2
 https://www.gnupg.org/ftp/gcrypt/libassuan/libassuan-2.5.7.tar.bz2
 https://www.gnupg.org/ftp/gcrypt/libksba/libksba-1.6.3.tar.bz2
@@ -3821,6 +3836,7 @@ https://www.rarlab.com/rar/unrarsrc-7.0.6.tar.gz
 https://www.rarlab.com/rar/unrarsrc-7.0.7.tar.gz
 https://www.rarlab.com/rar/unrarsrc-7.0.8.tar.gz
 https://www.rarlab.com/rar/unrarsrc-7.0.9.tar.gz
+https://www.rarlab.com/rar/unrarsrc-7.1.1.tar.gz
 https://www.sqlite.org/2024/sqlite-autoconf-3450000.tar.gz
 https://www.sqlite.org/2024/sqlite-autoconf-3450100.tar.gz
 https://www.sqlite.org/2024/sqlite-autoconf-3450200.tar.gz

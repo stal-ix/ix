@@ -1,11 +1,11 @@
 {% extends '//die/go/build.sh' %}
 
 {% block go_url %}
-https://github.com/yandex-cloud/geesefs/archive/ad455fd2b4e820f4d9becad4faf9fafeb29b8f2a.zip
+https://github.com/yandex-cloud/geesefs/archive/refs/tags/v0.42.1.tar.gz
 {% endblock %}
 
 {% block go_sha %}
-09e7226ddcd1d1b2084fdd94cf875736ff519dbce5aa403714e10ab0f91db58a
+a60582f2d1f31d1d68708d555b3d7d47aed19e5636507ca149d4413458662637
 {% endblock %}
 
 {% block install %}
