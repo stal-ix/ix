@@ -1792,6 +1792,7 @@ https://github.com/hyprwm/hyprpicker/archive/refs/tags/v0.4.1.tar.gz
 https://github.com/hyprwm/hyprutils/archive/refs/tags/v0.2.1.tar.gz
 https://github.com/hyprwm/hyprutils/archive/refs/tags/v0.2.2.tar.gz
 https://github.com/hyprwm/hyprutils/archive/refs/tags/v0.2.3.tar.gz
+https://github.com/hyprwm/hyprutils/archive/refs/tags/v0.2.4.tar.gz
 https://github.com/hyprwm/hyprwayland-scanner/archive/refs/tags/v0.3.4.tar.gz
 https://github.com/hyprwm/hyprwayland-scanner/archive/refs/tags/v0.3.9.tar.gz
 https://github.com/hyprwm/hyprwayland-scanner/archive/refs/tags/v0.4.0.tar.gz
