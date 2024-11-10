@@ -1,11 +1,20 @@
 {% extends '//die/rust/cargo.sh' %}
 
 {% block cargo_url %}
-https://github.com/ikatson/rqbit/archive/refs/tags/v5.6.4.tar.gz
+https://github.com/ikatson/rqbit/archive/refs/tags/v7.0.1.tar.gz
 {% endblock %}
 
 {% block cargo_sha %}
-5597584d7db116b918f5a13c1d2a15b5fb1514dcc4262ac5caf841104784fbbc
+a7d08848a9de24789eddb4ae9798738a66cf2d7e0bb740823d5c08cbd81d9b50
+{% endblock %}
+
+{% block cargo_ver %}
+v4
+{% endblock %}
+
+{% block bld_tool %}
+{{super()}}
+bld/fake(tool_name=npm)
 {% endblock %}
 
 {% block install %}
