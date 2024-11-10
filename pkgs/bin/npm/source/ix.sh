@@ -15,7 +15,7 @@ sha:d8c7bf11ea8c0cf13b936e8ad936358745a682f3f64fc22e5c50d48f06966f66
 
 {% block bld_tool %}
 bld/npm
-bld/pzd
+bld/pzd/ser
 {% endblock %}
 
 {% block build %}

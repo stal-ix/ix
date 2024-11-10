@@ -12,7 +12,7 @@ def it_items(p):
             'path': a[len(p) + 1:],
         }
 
-        for f in c:
+        for f in c + b:
             fp = os.path.join(a, f)
             ff = fp[len(p) + 1:]
 
@@ -22,6 +22,8 @@ def it_items(p):
                     'from': os.readlink(fp),
                     'path': ff,
                 }
+            elif os.path.isdir(fp):
+                pass
             else:
                 with open(fp, 'rb') as fd:
                     d = fd.read()

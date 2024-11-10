@@ -14,7 +14,7 @@ v4
 
 {% block bld_tool %}
 {{super()}}
-bld/fake(tool_name=npm)
+bld/npm
 {% endblock %}
 
 {% block install %}

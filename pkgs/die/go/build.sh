@@ -1,7 +1,7 @@
 {% extends 'base.sh' %}
 
 {% block std_box %}
-bld/pzd
+bld/pzd/des
 {{super()}}
 {% endblock %}
 

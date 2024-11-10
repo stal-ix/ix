@@ -5,7 +5,7 @@ bin/npm/source
 {% endblock %}
 
 {% block bld_tool %}
-bld/pzd
+bld/pzd/des
 {% endblock %}
 
 {% block install %}

@@ -7,7 +7,7 @@
 {% endblock %}
 
 {% block std_env %}
-bld/pzd
+bld/pzd/des
 bld/pkg/config
 bld/rust/helpers
 {% if help %}

@@ -21,7 +21,7 @@ v3
 
 {% block bld_deps %}
 {% if self.git_sha().strip() %}
-bld/pzd
+bld/pzd/des
 {% endif %}
 {{super()}}
 {% endblock %}
