@@ -14,7 +14,25 @@ v4
 
 {% block bld_tool %}
 {{super()}}
-bld/npm
+bld/pzd/des
+bld/fake(tool_name=npm)
+{% endblock %}
+
+{% block bld_data %}
+{{super()}}
+bin/rqbit/web
+{% endblock %}
+
+{% block build %}
+mkdir www
+cd www
+des ${RQ_UI} .
+cd ..
+rm -rf desktop
+mv www/desktop ./
+rm -rf crates/librqbit/webui
+mv www/webui crates/librqbit/
+{{super()}}
 {% endblock %}
 
 {% block install %}
