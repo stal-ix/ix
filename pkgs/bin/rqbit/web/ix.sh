@@ -12,7 +12,7 @@ bld/pzd/ser
 
 {% block use_network %}true{% endblock %}
 
-{% set sum %}01d989a8fd937c8a48688d1e027bbfc195872cc7297d51fe9cda835796b6d6a1{% endset %}
+{% set sum %}d6bee03a27798320f7bf2df7ac0fb0e0e6c70c941e0bbb618eb1703690cd3d88{% endset %}
 {% set nam %}web_{{sum}}.pzd{% endset %}
 
 {% block predict_outputs %}
@@ -28,6 +28,7 @@ npm install
 (
 cd crates/librqbit/webui
 npm install
+npm run build
 )
 
 mkdir www

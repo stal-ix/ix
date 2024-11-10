@@ -147,7 +147,7 @@ bin/kms/con/full
 bin/kms/con/pretty
 bin/kms/con/fast
 bin/g/bsd/dialog
-#bin/rqbit
+bin/rqbit
 bin/shot/man
 bin/sway/fx
 bin/dns/proxy
