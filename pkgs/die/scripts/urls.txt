@@ -1132,6 +1132,7 @@ https://github.com/YaLTeR/niri/archive/db49deb7fd2fbe805ceec060aa4dec65009ad7a7.
 https://github.com/YaLTeR/niri/archive/refs/tags/v0.1.0-beta.1.tar.gz
 https://github.com/YaLTeR/niri/archive/refs/tags/v0.1.0.tar.gz
 https://github.com/YaLTeR/niri/archive/refs/tags/v0.1.1.tar.gz
+https://github.com/YaLTeR/niri/archive/refs/tags/v0.1.10.tar.gz
 https://github.com/YaLTeR/niri/archive/refs/tags/v0.1.2.tar.gz
 https://github.com/YaLTeR/niri/archive/refs/tags/v0.1.4.tar.gz
 https://github.com/YaLTeR/niri/archive/refs/tags/v0.1.5.tar.gz
@@ -2374,6 +2375,7 @@ https://github.com/openssh/openssh-portable/archive/refs/tags/V_9_9_P1.tar.gz
 https://github.com/openssl/openssl/archive/refs/tags/openssl-3.3.2.tar.gz
 https://github.com/openssl/openssl/archive/refs/tags/openssl-3.4.0.tar.gz
 https://github.com/opsengine/cpulimit/archive/refs/tags/v0.2.tar.gz
+https://github.com/optozorax/car_drift/archive/8fbfd0f82f614d9d32bbf78176b77e98affdadcb.zip
 https://github.com/p-gen/smenu/archive/refs/tags/v1.3.0.tar.gz
 https://github.com/p-gen/smenu/archive/refs/tags/v1.4.0.tar.gz
 https://github.com/p11-glue/p11-kit/archive/refs/tags/0.24.0.tar.gz
