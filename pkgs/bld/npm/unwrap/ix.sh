@@ -15,5 +15,4 @@ des ${src} .
 cd ..
 ln -s bin_npm/bin/npm-cli.js npm
 chmod +x bin_npm/bin/*
-exit 1
 {% endblock %}
