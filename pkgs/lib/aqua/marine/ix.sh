@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/hyprwm/aquamarine/archive/refs/tags/v0.3.1.tar.gz
-sha:fcd1fd001bfbb0555004d86a0a57e3eb89c01eae0e25c171dc22c45b4d0cf860
+https://github.com/hyprwm/aquamarine/archive/refs/tags/v0.4.2.tar.gz
+sha:8bcbd05dc667c6614840df442b570198e4395bd3766d3a34d501da1f467cd5d0
 {% endblock %}
 
 {% block lib_deps %}
@@ -38,5 +38,7 @@ WAYLAND_CLIENT_DIR=${WAYLAND_CLIENT_DIR}
 {% endblock %}
 
 {% block patch %}
-sed -e 's|.*pkg.*WAYLAND_CLIENT_DIR.*||' -i CMakeLists.txt
+sed -e 's|.*pkg.*WAYLAND_CLIENT_DIR.*||' \
+    -e 's|OpenGL::OpenGL||' \
+    -i CMakeLists.txt
 {% endblock %}
