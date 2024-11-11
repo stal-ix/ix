@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://ftp.gnu.org/gnu/wget/wget-1.24.5.tar.lz
-sha:57a107151e4ef94fdf94affecfac598963f372f13293ed9c74032105390b36ee
+https://ftp.gnu.org/gnu/wget/wget-1.25.0.tar.lz
+sha:19225cc756b0a088fc81148dc6a40a0c8f329af7fd8483f1c7b2fe50f4e08a1f
 {% endblock %}
 
 {% block bld_libs %}
