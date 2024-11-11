@@ -36,7 +36,6 @@
 #bin/cups
 #bin/ras/daemon
 #bin/ff/play
-#bin/npm
 #bin/yt
 #bin/balsa
 #bin/scummvm
@@ -47,6 +46,7 @@
 #}
 
 {% block run_deps %}
+bin/npm
 bin/x264
 bin/halloy
 bin/regreet

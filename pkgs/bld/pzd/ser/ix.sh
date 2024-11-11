@@ -1,6 +1,7 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
-bld/pzd/des
-bld/pzd/ser
+bin/zstd
+bld/python
+bld/pzd/ser/scripts
 {% endblock %}

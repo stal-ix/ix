@@ -1,7 +1,7 @@
 {% extends '//die/std/ix.sh' %}
 
 {% block bld_tool %}
-bld/pzd
+bld/pzd/ser
 {% endblock %}
 
 {% block use_network %}true{% endblock %}
