@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-http://www.alsa-project.org/files/pub/utils/alsa-utils-1.2.10.tar.bz2
-sha:104b62ec7f02a7ce16ca779f4815616df1cc21933503783a9107b5944f83063a
+http://www.alsa-project.org/files/pub/utils/alsa-utils-1.2.13.tar.bz2
+sha:1702a6b1cdf9ba3e996ecbc1ddcf9171e6808f5961d503d0f27e80ee162f1daa
 {% endblock %}
 
 {% block bld_tool %}
