@@ -2,6 +2,9 @@
 
 {% block bld_tool %}
 bld/pzd/ser
+{% if refine_tools %}
+{{refine_tools | b64d}}
+{% endif %}
 {% endblock %}
 
 {% block use_network %}true{% endblock %}

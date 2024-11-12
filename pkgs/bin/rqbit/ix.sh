@@ -5,30 +5,33 @@ https://github.com/ikatson/rqbit/archive/refs/tags/v7.0.1.tar.gz
 {% endblock %}
 
 {% block cargo_sha %}
-a7d08848a9de24789eddb4ae9798738a66cf2d7e0bb740823d5c08cbd81d9b50
+8e48523b50ee55629bf0edf6cb66237701b9e3eab456ec1e418fe9fce2a52cc8
 {% endblock %}
 
 {% block cargo_ver %}
 v4
 {% endblock %}
 
+{% block cargo_refine %}
+(
+cd desktop
+npm install
+)
+(
+cd crates/librqbit/webui
+npm install
+npm run build
+)
+{% endblock %}
+
+{% block cargo_refine_tools %}
+bld/npm
+{% endblock %}
+
 {% block bld_tool %}
 {{super()}}
 bld/pzd/des
 bld/fake(tool_name=npm)
-{% endblock %}
-
-{% block bld_data %}
-{{super()}}
-bin/rqbit/web
-{% endblock %}
-
-{% block build %}
-rm -rf desktop
-rm -rf crates/librqbit/webui
-des ${RQ_UI} .
-mv webui crates/librqbit/
-{{super()}}
 {% endblock %}
 
 {% block install %}
