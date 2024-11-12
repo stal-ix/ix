@@ -1210,6 +1210,7 @@ https://github.com/apernet/hysteria/archive/refs/tags/app/v2.4.5.tar.gz
 https://github.com/apernet/hysteria/archive/refs/tags/app/v2.5.0.tar.gz
 https://github.com/apernet/hysteria/archive/refs/tags/app/v2.5.1.tar.gz
 https://github.com/apernet/hysteria/archive/refs/tags/app/v2.5.2.tar.gz
+https://github.com/apernet/hysteria/archive/refs/tags/app/v2.6.0.tar.gz
 https://github.com/apple-oss-distributions/mDNSResponder/archive/refs/tags/mDNSResponder-2200.80.16.tar.gz
 https://github.com/apple-oss-distributions/patch_cmds/archive/refs/tags/patch_cmds-61.tar.gz
 https://github.com/apple/swift-corelibs-libdispatch/archive/refs/tags/swift-5.10-RELEASE.tar.gz
