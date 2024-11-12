@@ -15,6 +15,13 @@ lib/c
 cd libcap
 {% endblock %}
 
+{% block cpp_defines %}
+{{super()}}
+{% if aarch64 or riscv64 %}
+SYS_getdents=SYS_getdents64
+{% endif %}
+{% endblock %}
+
 {% block make_flags %}
 {{super()}}
 BUILD_CC=${HOST_CC}
