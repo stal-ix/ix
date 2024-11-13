@@ -3762,6 +3762,7 @@ https://www.gnupg.org/ftp/gcrypt/libksba/libksba-1.6.3.tar.bz2
 https://www.gnupg.org/ftp/gcrypt/libksba/libksba-1.6.5.tar.bz2
 https://www.gnupg.org/ftp/gcrypt/libksba/libksba-1.6.6.tar.bz2
 https://www.gnupg.org/ftp/gcrypt/npth/npth-1.6.tar.bz2
+https://www.gnupg.org/ftp/gcrypt/npth/npth-1.8.tar.bz2
 https://www.greenwoodsoftware.com/less/less-633.tar.gz
 https://www.greenwoodsoftware.com/less/less-661.tar.gz
 https://www.ibiblio.org/pub/Linux/libs/graphics/t1lib-5.1.2.tar.gz
