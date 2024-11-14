@@ -1,4 +1,4 @@
-{% extends '//die/c/autohell.sh' %}
+{% extends '//die/c/configure.sh' %}
 
 {% block fetch %}
 {% include 'ver.sh' %}
@@ -10,6 +10,14 @@ lib/build
 
 {% block configure_script %}
 ./configure
+{% endblock %}
+
+{% block configure_flags %}
+--target={{target.gnu.three}}
+--host={{target.gnu.three}}
+--build={{host.gnu.three}}
+--enable-static
+--disable-shared
 {% endblock %}
 
 {% block setup_target_flags %}

@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/wxMaxima-developers/wxmaxima/archive/refs/tags/Version-23.07.0.tar.gz
-sha:410cbd98af570945f0bb619ad8913b32ee90b9369ff7970606b1cdbd6e1a807b
+https://github.com/wxMaxima-developers/wxmaxima/archive/refs/tags/Version-24.11.0.tar.gz
+sha:e01fd8ca9bb8054e38f6d973f619e2549ab6ab9d0aaebae70c4ed73580258055
 {% endblock %}
 
 {% block bld_libs %}

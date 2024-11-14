@@ -35,7 +35,13 @@ def enrich(d):
     d = cu.copy_dict(d)
 
     if 'vendor' not in d:
-        d['vendor'] = 'ix'
+        d['vendor'] = 'unknown'
+
+    if 'gnu_vendor' not in d:
+        d['gnu_vendor'] = d['vendor']
+
+    if 'rust_vendor' not in d:
+        d['rust_vendor'] = d['gnu_vendor']
 
     if 'gnu_arch' not in d:
         if x := d.get('arch'):
@@ -105,9 +111,6 @@ def enrich(d):
     if 'rust_os' not in d:
         d['rust_os'] = d['os']
 
-    if 'rust_vendor' not in d:
-        d['rust_vendor'] = d['gnu_vendor']
-
     if 'rust' not in d:
         d['rust'] = f'{d["gnu_arch"]}-{d["rust_vendor"]}-{d["rust_os"]}'
 
@@ -125,8 +128,6 @@ def get_raw_arch(n):
         return {
             'os': 'wasi',
             'kernel': 'wasi',
-            'vendor': 'unknown',
-            'gnu_vendor': 'unknown',
             'obj_fmt': 'wasm',
             'cmake_system_name': 'Wasi', # wild guess
         }
@@ -137,8 +138,6 @@ def get_raw_arch(n):
             'kernel': 'linux',
             'obj_fmt': 'elf',
             'cmake_system_name': 'Linux',
-            'gnu_vendor': 'pc',
-            'rust_vendor': 'unknown',
             'rust_os': 'linux-musl',
         }
 
@@ -148,7 +147,6 @@ def get_raw_arch(n):
             'os': 'darwin',
             'kernel': 'xnu',
             'vendor': 'apple',
-            'gnu_vendor': 'apple',
             'obj_fmt': 'mach-o',
             'cmake_system_name': 'Darwin',
             'dl_suffix': 'dylib',
@@ -162,7 +160,6 @@ def get_raw_arch(n):
             'obj_fmt': 'coff',
             'cmake_system_name': 'Windows',
             'vendor': 'w64',
-            'gnu_vendor': 'w64',
             'exe_suffix': '.exe',
         }
 
@@ -209,7 +206,6 @@ def get_raw_arch(n):
         return {
             'gnu_arch': 'riscv64',
             'family': 'riscv',
-            'gnu_vendor': 'unknown',
         }
 
     if n == 'wasi32':

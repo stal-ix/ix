@@ -47,7 +47,6 @@ bld/bison
 bld/python
 bld/shebangs
 bld/pkg/config
-bin/ld(for_target={{target.gnu.three}})
 {% endblock %}
 
 {% block make_flags %}
