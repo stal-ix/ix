@@ -22,7 +22,9 @@ LIBTOOL=${LIBTOOL}
 
 {% block configure %}
 {% if not tool %}
+{% if self.host_libs().strip() %}
 export CC_FOR_BUILD=${HOST_CC}
+{% endif %}
 {% endif %}
 {% if not boot %}
 export ac_ct_CC=${CC}
