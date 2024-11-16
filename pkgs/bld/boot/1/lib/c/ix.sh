@@ -2,6 +2,7 @@
 
 {% block lib_deps %}
 {% if linux %}
+lib/musl/env
 bld/boot/1/lib/musl
 {% endif %}
 {% if darwin %}
