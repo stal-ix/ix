@@ -8,5 +8,5 @@ bld/boot/3/lib/c
 {% endblock %}
 
 {% block bld_deps %}
-bld/boot/6/env/cxx
+bld/boot/7/env/cxx
 {% endblock %}

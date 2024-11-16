@@ -17,7 +17,7 @@ bld/boot/8/lib/cxx
 
 {% block bld_deps %}
 bld/boot/8/samurai
-bld/boot/6/env/std
+bld/boot/7/env/std
 {% endblock %}
 
 {% block run_deps %}

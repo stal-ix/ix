@@ -12,7 +12,7 @@ bld/boot/8/lib/compiler_rt
 {% endblock %}
 
 {% block bld_deps %}
-bld/boot/6/env/std
+bld/boot/7/env/std
 {% endblock %}
 
 {% block autoreconf %}

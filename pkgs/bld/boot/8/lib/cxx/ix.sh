@@ -11,5 +11,5 @@ bld/boot/8/lib/linux
 {% endblock %}
 
 {% block bld_deps %}
-bld/boot/6/env/std
+bld/boot/7/env/std
 {% endblock %}
