@@ -11,9 +11,9 @@ lib/c
 
 {% block configure_cross %}
 {% if linux %}
---target={{target.gnu_arch}}-unknown-linux-musl
---build={{host.gnu_arch}}-unknown-linux-musl
---host={{target.gnu_arch}}-unknown-linux-musl
+--target={{target.gnu.three}}-musl
+--build={{host.gnu.three}}-musl
+--host={{target.gnu.three}}-musl
 {% else %}
 {{super()}}
 {% endif %}
