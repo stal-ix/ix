@@ -46,6 +46,7 @@
 #}
 
 {% block run_deps %}
+bin/uncrustify
 bin/hefur
 bin/npm
 bin/x264
