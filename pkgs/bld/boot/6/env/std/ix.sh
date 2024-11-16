@@ -6,6 +6,6 @@ bld/boot/3/lib/c
 
 {% block run_deps %}
 bld/boot/3/cc
-bld/boot/5/env/box
+bld/boot/6/env/box
 bld/boot/0/env
 {% endblock %}

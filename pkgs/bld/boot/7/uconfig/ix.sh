@@ -9,7 +9,7 @@ sha:ec66cf47f2912778618b40b83a6d43cdcb94dbd9b5ea6a5912a3b86267d3ad93
 {% endblock %}
 
 {% block bld_deps %}
-bld/boot/5/env/std
+bld/boot/6/env/std
 {% endblock %}
 
 {% block env %}

@@ -1,8 +1,8 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
-bld/boot/5/sed
-bld/boot/5/make
-bld/boot/5/gawk
-bld/boot/5/grep
+bld/boot/6/sed
+bld/boot/6/make
+bld/boot/6/gawk
+bld/boot/6/grep
 {% endblock %}
