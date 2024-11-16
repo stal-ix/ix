@@ -14,6 +14,7 @@ lib/build
 {% endblock %}
 
 {% block bld_deps %}
+bld/boot/1/sh
 bld/boot/0/env
 {% endblock %}
 
@@ -113,8 +114,4 @@ done
 export CFLAGS="-fno-stack-protector \${CFLAGS}"
 export CPPFLAGS="${MFLAGS} \${CPPFLAGS}"
 export LDFLAGS="-static -nostdlib -L${PWD} -lmusl \${LDFLAGS}"
-{% endblock %}
-
-{% block script_exec %}
-["/usr/bin/env", "PATH={{ix_boot_path}}", "/bin/sh", "-s"]
 {% endblock %}
