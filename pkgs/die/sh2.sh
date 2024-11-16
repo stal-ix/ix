@@ -11,7 +11,6 @@ cd /
 
 {% block script_init_env %}
 {{super()}}
-export PATH=
 export COFLAGS=
 export CMFLAGS=
 export GIRPATH=

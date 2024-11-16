@@ -64,5 +64,5 @@ export ac_cv_path_GREP=grep
 {% endblock %}
 
 {% block script_exec %}
-["/bin/sh", "-s"]
+["/usr/bin/env", "PATH=/ix/realm/boot/bin:/bin:/usr/bin:/usr/local/bin", "/bin/sh", "-s"]
 {% endblock %}

@@ -121,5 +121,5 @@ export LDFLAGS="-static -nostdlib -L${PWD} -lmusl \${LDFLAGS}"
 {% endblock %}
 
 {% block script_exec %}
-["/bin/sh", "-s"]
+["/usr/bin/env", "PATH=/ix/realm/boot/bin:/bin:/usr/bin:/usr/local/bin", "/bin/sh", "-s"]
 {% endblock %}

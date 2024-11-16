@@ -7,21 +7,15 @@ bld/boot/2/env
 {% block install %}
 mkdir ${out}/bin
 
-cat << EOF > ${out}/bin/egrep
+{% for x in ['clang', 'clang++', 'clang-cpp', 'llvm-ar', 'llvm-nm', 'llvm-ranlib'] %}
+cat << EOF > ${out}/bin/{{x}}
 #!/usr/bin/env sh
-exec grep -E "\${@}"
+export PATH=/ix/realm/boot/bin:/bin:/usr/bin:/usr/local/bin
+exec {{x}} "\${@}"
 EOF
+{% endfor %}
 
-cat << EOF > ${out}/bin/fgrep
-#!/usr/bin/env sh
-exec grep -F "\${@}"
-EOF
-
-cat << EOF > ${out}/bin/makeinfo
-#!/usr/bin/env sh
-EOF
-
-chmod +x ${out}/bin/egrep ${out}/bin/fgrep ${out}/bin/makeinfo
+chmod +x ${out}/bin/*
 {% endblock%}
 
 {% block script_exec %}
