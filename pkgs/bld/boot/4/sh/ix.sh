@@ -5,8 +5,5 @@ bld/boot/3/lib/c
 {% endblock %}
 
 {% block bld_deps %}
-bld/boot/3/cc
-bld/boot/3/sh/0
-bld/boot/3/make/1
-bld/boot/2/env
+bld/boot/3/env
 {% endblock %}

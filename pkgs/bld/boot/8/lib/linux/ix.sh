@@ -4,7 +4,7 @@
 {% endblock %}
 
 {% block host_libs %}
-bld/boot/3/lib/c
+bld/boot/4/lib/c
 {% endblock %}
 
 {% block bld_deps %}

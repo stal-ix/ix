@@ -10,7 +10,7 @@ sha:7fd4cd1e1fae9290fe089171181bbc6291dfd9bca939ca804f0ddb851c8b8237
 
 {% block bld_deps %}
 bld/boot/5/byacc
-bld/boot/3/env
+bld/boot/4/env
 {% endblock %}
 
 {% block cpp_missing %}

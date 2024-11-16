@@ -7,7 +7,7 @@
 {% endblock %}
 
 {% block bld_deps %}
-bld/boot/3/env
+bld/boot/4/env
 {% endblock %}
 
 {% block patch %}

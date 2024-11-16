@@ -7,7 +7,7 @@ bld/boot/1/lib/c
 {% endblock %}
 
 {% block bld_deps %}
-bld/boot/3/make/0
+bld/boot/3/make
 bld/boot/2/env
 {% endblock %}
 

@@ -1,9 +1,9 @@
 {% extends '//die/hub.sh' %}
 
 {% block ind_deps %}
-bld/boot/3/lib/c
+bld/boot/4/lib/c
 {% endblock %}
 
 {% block run_deps %}
-bld/boot/3/env/box
+bld/boot/4/env/box
 {% endblock %}

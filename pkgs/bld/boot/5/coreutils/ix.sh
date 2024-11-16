@@ -8,7 +8,7 @@ bld/boot/5/lib/compiler_rt
 bld/boot/5/patch
 bld/boot/5/byacc
 bld/boot/5/mawk
-bld/boot/3/env
+bld/boot/4/env
 {% endblock %}
 
 {% block cpp_includes %}
