@@ -176,6 +176,7 @@ https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.11.4.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.11.5.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.11.6.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.11.7.tar.xz
+https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.11.8.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.2.14.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.3.13.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.4.12.tar.xz
@@ -2933,6 +2934,7 @@ https://github.com/uclouvain/openjpeg/archive/refs/tags/v2.5.0.tar.gz
 https://github.com/uclouvain/openjpeg/archive/refs/tags/v2.5.1.tar.gz
 https://github.com/umputun/reproxy/archive/refs/tags/v1.1.1.tar.gz
 https://github.com/umputun/reproxy/archive/refs/tags/v1.2.2.tar.gz
+https://github.com/uncrustify/uncrustify/archive/refs/tags/uncrustify-0.80.0.tar.gz
 https://github.com/unicode-org/icu/archive/refs/tags/release-70-1.tar.gz
 https://github.com/unicode-org/icu/archive/refs/tags/release-75-1.tar.gz
 https://github.com/unicode-org/icu/archive/refs/tags/release-76-1.tar.gz

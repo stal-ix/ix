@@ -1,4 +1,4 @@
-{% extends 'wrapped.sh' %}
+{% extends 'ix0.sh' %}
 
 {% block std_env %}
   {% if std_env %}
@@ -43,8 +43,4 @@ export OPTFLAGS=
 export CPPFLAGS=
 export CXXFLAGS=
 export CONLYFLAGS=
-{% endblock %}
-
-{% block setup_compiler %}
-{% include 'cross_tc.sh' %}
 {% endblock %}

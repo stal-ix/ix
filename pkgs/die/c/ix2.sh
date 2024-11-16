@@ -1,3 +1,6 @@
+{% extends 'ix1.sh' %}
+
+{% block setup_compiler %}
 {% block setup_host_tc %}
 (
 {% block setup_host_flags %}
@@ -47,4 +50,5 @@ done
 for x in ar nm ranlib; do
     ln -s target/${x} ${x}
 done
+{% endblock %}
 {% endblock %}
