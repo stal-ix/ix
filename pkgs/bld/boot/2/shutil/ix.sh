@@ -10,6 +10,7 @@ bld/boot/0/ind
 {% endblock %}
 
 {% block bld_deps %}
+bld/boot/1/sh
 bld/boot/1/env
 {% endblock %}
 
@@ -67,8 +68,4 @@ mkdir ${out}/bin
 for i in mkdir cat tr dirname echo chmod rm test mv uname; do
     cp ${i} ${out}/bin/${i}
 done
-{% endblock %}
-
-{% block script_exec %}
-["/usr/bin/env", "PATH={{ix_boot_path}}", "/bin/sh", "-s"]
 {% endblock %}

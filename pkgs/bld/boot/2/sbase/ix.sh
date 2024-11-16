@@ -14,6 +14,7 @@ bld/boot/0/ind
 {% block bld_deps %}
 bld/boot/2/shutil
 bld/boot/2/bmake/unwrap
+bld/boot/1/sh
 bld/boot/1/env
 {% endblock %}
 
@@ -61,8 +62,4 @@ EOF
 {% block env %}
 {{super()}}
 export ac_cv_path_GREP=grep
-{% endblock %}
-
-{% block script_exec %}
-["/usr/bin/env", "PATH={{ix_boot_path}}", "/bin/sh", "-s"]
 {% endblock %}

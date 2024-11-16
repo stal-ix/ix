@@ -11,6 +11,7 @@ bld/boot/0/ind
 
 {% block bld_deps %}
 bld/boot/2/shutil
+bld/boot/1/sh
 bld/boot/1/env
 {% endblock %}
 
@@ -65,8 +66,4 @@ ${CC} -w -I. \
     str.c stresep.c suff.c targ.c trace.c \
     util.c var.c                          \
     -o ${out}/bin/bmake
-{% endblock %}
-
-{% block script_exec %}
-["/usr/bin/env", "PATH={{ix_boot_path}}", "/bin/sh", "-s"]
 {% endblock %}

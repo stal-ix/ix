@@ -11,6 +11,7 @@ bld/boot/0/ind
 
 {% block bld_deps %}
 bld/boot/2/sbase
+bld/boot/1/sh
 bld/boot/1/env
 {% endblock %}
 
@@ -24,8 +25,4 @@ cd wak*
 {% block build %}
 mkdir -p ${out}/bin
 ${CC} ${CPPFLAGS} ${CFLAGS} ${LDFLAGS} monosrc/mono.c -o ${out}/bin/awk
-{% endblock %}
-
-{% block script_exec %}
-["/usr/bin/env", "PATH={{ix_boot_path}}", "/bin/sh", "-s"]
 {% endblock %}

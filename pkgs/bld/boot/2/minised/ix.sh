@@ -11,6 +11,7 @@ bld/boot/0/ind
 
 {% block bld_deps %}
 bld/boot/2/sbase
+bld/boot/1/sh
 bld/boot/1/env
 {% endblock %}
 
@@ -28,8 +29,4 @@ ${CC} ${CPPFLAGS} ${CFLAGS} ${LDFLAGS} *.c -o ${out}/bin/sed
 
 {% block env %}
 export ac_cv_path_SED=sed
-{% endblock %}
-
-{% block script_exec %}
-["/usr/bin/env", "PATH={{ix_boot_path}}", "/bin/sh", "-s"]
 {% endblock %}
