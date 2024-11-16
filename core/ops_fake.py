@@ -8,9 +8,6 @@ class Ops:
     def misc_cmd(self, sb, *args):
         return []
 
-    def runpy(self):
-        return []
-
     def extract(self):
         return []
 
