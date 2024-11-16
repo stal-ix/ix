@@ -23,3 +23,7 @@ EOF
 
 chmod +x ${out}/bin/egrep ${out}/bin/fgrep ${out}/bin/makeinfo
 {% endblock%}
+
+{% block script_exec %}
+["/bin/sh", "-s"]
+{% endblock %}

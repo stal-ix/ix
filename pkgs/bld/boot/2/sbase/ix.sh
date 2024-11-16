@@ -8,6 +8,7 @@ bmake
 {% endblock %}
 
 {% block bld_libs %}
+bld/boot/0/ind
 {% endblock %}
 
 {% block bld_deps %}
@@ -60,4 +61,8 @@ EOF
 {% block env %}
 {{super()}}
 export ac_cv_path_GREP=grep
+{% endblock %}
+
+{% block script_exec %}
+["/bin/sh", "-s"]
 {% endblock %}

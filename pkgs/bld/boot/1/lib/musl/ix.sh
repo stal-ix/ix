@@ -1,4 +1,4 @@
-{% extends '//die/py.py' %}
+{% extends '//die/c/ix.sh' %}
 
 {% block fetch %}
 http://musl.libc.org/releases/musl-1.2.4.tar.gz
@@ -17,35 +17,24 @@ lib/build
 bld/boot/0/env
 {% endblock %}
 
-{% block script %}
+{% block script_init_env %}
+{{super()}}
+export PATH=/ix/realm/boot/bin:/bin:/usr/bin:/usr/local/bin
+{% endblock %}
+
+{% block unpack %}
 cd ${out}
 extract0 ${src}/musl*
 cd musl*
+{% endblock %}
 
-setup_compiler
-setup_ar
+{% block setup_compiler %}
+source_env "${IX_T_DIR}"
+setup_tc_here
+{% endblock %}
 
-(
-    (while read l; do printf "$l\n"; done) << EOF
-{% include 'alltypes.h' %}
-EOF
-) > arch/x86_64/bits/alltypes.h
-
-(
-    (while read l; do printf "$l\n"; done) << EOF
-{% include 'syscall.h' %}
-EOF
-) > arch/x86_64/bits/syscall.h
-
-(
-    (while read l; do printf "$l\n"; done) << EOF
-#define VERSION "bootstrap"
-EOF
-) > src/internal/version.h
-
->include/sys/cdefs.h
->include/sys/sysctl.h
-
+{% block step_setup %}
+export MFLAGS=
 export MFLAGS="${MFLAGS} -iquote ${PWD}/arch/x86_64"
 export MFLAGS="${MFLAGS} -iquote ${PWD}/src/internal"
 export MFLAGS="${MFLAGS} -isystem ${PWD}/arch/x86_64"
@@ -53,10 +42,28 @@ export MFLAGS="${MFLAGS} -isystem ${PWD}/arch/generic"
 export MFLAGS="${MFLAGS} -isystem ${PWD}/src/include"
 export MFLAGS="${MFLAGS} -isystem ${PWD}/src/internal"
 export MFLAGS="${MFLAGS} -isystem ${PWD}/include"
-
+export CPPFLAGS="${MFLAGS} ${CPPFLAGS}"
 export CFLAGS="-w ${MFLAGS} -D__STDC_HOSTED__ -D_XOPEN_SOURCE=700 -U_GNU_SOURCE ${CPPFLAGS} -ffreestanding -std=c99 ${CFLAGS} -O0 -fno-builtin -fno-stack-protector"
+{{super()}}
+{% endblock %}
 
-(
+{% block patch %}
+cat << EOF > arch/x86_64/bits/alltypes.h
+{% include 'alltypes.h' %}
+EOF
+cat << EOF > arch/x86_64/bits/syscall.h
+{% include 'syscall.h' %}
+EOF
+cat << EOF > src/internal/version.h
+#define VERSION "bootstrap"
+EOF
+>include/sys/cdefs.h
+>include/sys/sysctl.h
+{% endblock %}
+
+{% block build %}
+set +x
+
 objs=""
 
 for i in src/*; do
@@ -66,7 +73,7 @@ for i in src/*; do
             ;;
             *)
                 objs="$s.o $objs"
-                ${CC} ${CFLAGS} $s -c -o $s.o
+                cc $s -c -o $s.o
             ;;
         esac
     done
@@ -77,7 +84,7 @@ for i in src/*; do
             ;;
             *)
                 objs="$s.o $objs"
-                ${CC} ${CFLAGS} $s -c -o $s.o
+                cc $s -c -o $s.o
             ;;
         esac
     done
@@ -85,50 +92,34 @@ done
 
 for s in src/malloc/mallocng/*.c; do
     objs="$s.o $objs"
-    ${CC} ${CFLAGS} $s -c -o $s.o
+    cc $s -c -o $s.o
 done
 
 for s in crt/x86_64/*.s crt/crt1.c; do
-    ${CC} ${CFLAGS} $s -c -o $s.o
+    cc $s -c -o $s.o
     objs="$s.o $objs"
 done
 
-${AR} q libmusl.a $objs
-${RANLIB} libmusl.a
+ar q libmusl.a $objs
+ranlib libmusl.a
 
 >empty.c
 
-${CC} -o empty.o -c ./empty.c
+cc -o empty.o -c ./empty.c
 
 for x in m pthread dl; do
-    ${AR} q lib${x}.a empty.o
-    ${RANLIB} lib${x}.a
+    ar q lib${x}.a empty.o
+    ranlib lib${x}.a
 done
-) 1>&2 2>stderr
+{% endblock %}
 
-${CC} ${CFLAGS} -c -o tool.o -x c - << EOF
-#include <stdio.h>
-#include <errno.h>
-#include <stdlib.h>
-
-int main() {
-    char buf[1024];
-    ssize_t n;
-
-    while ((n = fread(buf, 1, sizeof(buf), stdin)) > 0) {
-        fwrite(buf, 1, n, stdout);
-    }
-
-    exit(errno = 0);
-}
-EOF
-
-${CC} -static -nostdlib ${LDFLAGS} -L${PWD} tool.o -lmusl -o tool
-
-./tool << EOF > ${out}/env
+{% block env %}
 # or sometimes gcc assume glibc, and insert unexpected fs:28 calls
 export CFLAGS="-fno-stack-protector \${CFLAGS}"
 export CPPFLAGS="${MFLAGS} \${CPPFLAGS}"
 export LDFLAGS="-static -nostdlib -L${PWD} -lmusl \${LDFLAGS}"
-EOF
+{% endblock %}
+
+{% block script_exec %}
+["/bin/sh", "-s"]
 {% endblock %}

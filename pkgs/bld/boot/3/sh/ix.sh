@@ -3,10 +3,14 @@
 {% block make_no_thrs %}{% endblock %}
 
 {% block bld_libs %}
-bld/boot/3/lib/c
+bld/boot/1/lib/c
 {% endblock %}
 
 {% block bld_deps %}
 bld/boot/3/make
 bld/boot/2/env
+{% endblock %}
+
+{% block script_exec %}
+["/bin/sh", "-s"]
 {% endblock %}
