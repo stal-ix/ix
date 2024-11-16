@@ -1,4 +1,4 @@
-{% extends 'ix_unwrap.sh' %}
+{% extends 'ix0.sh' %}
 
 {% block cxx_flags %}
 {% endblock %}

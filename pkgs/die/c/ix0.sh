@@ -1,4 +1,4 @@
-{% extends 'wrapped.sh' %}
+{% extends 'ix1.sh' %}
 
 {% block std_env %}
   {% if std_env %}
