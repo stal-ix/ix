@@ -17,11 +17,6 @@ lib/build
 bld/boot/0/env
 {% endblock %}
 
-{% block script_init_env %}
-{{super()}}
-export PATH={{ix_boot_path}}
-{% endblock %}
-
 {% block unpack %}
 cd ${out}
 extract0 ${src}/musl*
