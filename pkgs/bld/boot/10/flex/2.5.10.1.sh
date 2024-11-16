@@ -8,7 +8,7 @@
 
 {% block bld_deps %}
 bld/boot/10/flex/2.5.10.0.sh
-bld/boot/4/byacc
+bld/boot/5/byacc
 bld/boot/9/env/std
 {% endblock %}
 

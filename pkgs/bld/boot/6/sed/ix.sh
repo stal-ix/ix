@@ -9,7 +9,7 @@ sha:f79b0cfea71b37a8eeec8490db6c5f7ae7719c35587f21edb0617f370eeff633
 {% endblock %}
 
 {% block bld_deps %}
-bld/boot/4/env
+bld/boot/5/env
 {% endblock %}
 
 {% block setup_target_flags %}

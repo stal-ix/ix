@@ -10,7 +10,7 @@ bld/boot/10/m4
 {% block bld_deps %}
 {% block boot_flex %}
 bld/boot/10/flex/2.5.10.1.sh
-bld/boot/4/byacc
+bld/boot/5/byacc
 {% endblock %}
 bld/boot/10/m4
 bld/boot/9/env/std

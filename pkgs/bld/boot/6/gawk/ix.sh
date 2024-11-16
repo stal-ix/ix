@@ -9,6 +9,6 @@ sha:d87629386e894bbea11a5e00515fc909dc9b7249529dad9e6a3a2c77085f7ea2
 {% endblock %}
 
 {% block bld_deps %}
-bld/boot/4/byacc
-bld/boot/4/env
+bld/boot/5/byacc
+bld/boot/5/env
 {% endblock %}

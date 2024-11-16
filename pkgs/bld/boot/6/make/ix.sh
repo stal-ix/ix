@@ -4,5 +4,5 @@
 {% endblock %}
 
 {% block bld_deps %}
-bld/boot/4/env
+bld/boot/5/env
 {% endblock %}

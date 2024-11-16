@@ -1,11 +1,11 @@
-{% extends '//bld/boot/4/coreutils/ix.sh' %}
+{% extends '//bld/boot/5/coreutils/ix.sh' %}
 
 {% block bld_libs %}
-bld/boot/4/lib/compiler_rt
+bld/boot/5/lib/compiler_rt
 {% endblock %}
 
 {% block bld_deps %}
 bld/boot/6/env/std
-bld/boot/4/patch
-bld/boot/4/byacc
+bld/boot/5/patch
+bld/boot/5/byacc
 {% endblock %}
