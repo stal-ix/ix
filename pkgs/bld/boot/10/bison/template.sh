@@ -3,7 +3,7 @@
 {% block bld_deps %}
 bld/boot/10/m4
 bld/boot/10/flex/2.6.4.1.sh
-bld/boot/8/env/std
+bld/boot/9/env/std
 {% block bison %}
 {% endblock %}
 {% endblock %}

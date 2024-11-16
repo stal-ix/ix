@@ -13,7 +13,7 @@ bld/boot/10/flex/2.5.10.1.sh
 bld/boot/4/byacc
 {% endblock %}
 bld/boot/10/m4
-bld/boot/8/env/std
+bld/boot/9/env/std
 {% endblock %}
 
 {% block patch %}
