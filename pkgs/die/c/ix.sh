@@ -1,4 +1,4 @@
-{% extends 'ix1.sh' %}
+{% extends 'ix2.sh' %}
 
 {% block cxx_flags %}
 {% endblock %}

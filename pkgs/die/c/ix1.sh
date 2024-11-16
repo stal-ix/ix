@@ -44,7 +44,3 @@ export CPPFLAGS=
 export CXXFLAGS=
 export CONLYFLAGS=
 {% endblock %}
-
-{% block setup_compiler %}
-{% include 'cross_tc.sh' %}
-{% endblock %}
