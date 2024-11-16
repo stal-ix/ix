@@ -1,4 +1,4 @@
-{% extends '//bld/boot/7/lib/compiler_rt/ix.sh' %}
+{% extends '//bld/boot/8/lib/compiler_rt/ix.sh' %}
 
 {% block lib_deps %}
 {% endblock %}

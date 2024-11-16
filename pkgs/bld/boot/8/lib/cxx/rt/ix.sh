@@ -6,7 +6,7 @@ sha:7f9cb5669f17d858bef77500ed2e3bc1dbe71ab17c97038d95a90e7c15368f60
 {% endblock %}
 
 {% block lib_deps %}
-bld/boot/7/lib/cxx/unwind
+bld/boot/8/lib/cxx/unwind
 {% endblock %}
 
 {% block bld_libs %}

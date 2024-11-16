@@ -2,13 +2,13 @@
 
 {% block bld_libs %}
 {% if linux %}
-bld/boot/7/lib/linux
+bld/boot/8/lib/linux
 {% endif %}
 {% if darwin %}
 lib/darwin/framework/SystemConfiguration
 {% endif %}
-bld/boot/7/lib/z
-bld/boot/7/lib/compiler_rt
+bld/boot/8/lib/z
+bld/boot/8/lib/compiler_rt
 {% endblock %}
 
 {% block bld_deps %}
