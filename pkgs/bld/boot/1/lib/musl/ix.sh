@@ -19,7 +19,7 @@ bld/boot/0/env
 
 {% block script_init_env %}
 {{super()}}
-export PATH=/ix/realm/boot/bin:/bin:/usr/bin:/usr/local/bin
+export PATH={{ix_boot_path}}
 {% endblock %}
 
 {% block unpack %}
@@ -121,5 +121,5 @@ export LDFLAGS="-static -nostdlib -L${PWD} -lmusl \${LDFLAGS}"
 {% endblock %}
 
 {% block script_exec %}
-["/usr/bin/env", "PATH=/ix/realm/boot/bin:/bin:/usr/bin:/usr/local/bin", "/bin/sh", "-s"]
+["/usr/bin/env", "PATH={{ix_boot_path}}", "/bin/sh", "-s"]
 {% endblock %}

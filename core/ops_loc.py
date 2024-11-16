@@ -35,3 +35,6 @@ class Ops:
 
     def fix(self, sb, node):
         return node
+
+    def boot_path(self):
+        return os.environ['PATH']

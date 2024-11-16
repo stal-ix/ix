@@ -11,6 +11,9 @@ class Ops:
     def extract(self):
         return []
 
+    def boot_path(self):
+        return ''
+
     def fetch(self, sb, url, path, md5):
         return [url]
 

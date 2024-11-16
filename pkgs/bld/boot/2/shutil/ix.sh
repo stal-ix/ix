@@ -70,5 +70,5 @@ done
 {% endblock %}
 
 {% block script_exec %}
-["/usr/bin/env", "PATH=/ix/realm/boot/bin:/bin:/usr/bin:/usr/local/bin", "/bin/sh", "-s"]
+["/usr/bin/env", "PATH={{ix_boot_path}}", "/bin/sh", "-s"]
 {% endblock %}

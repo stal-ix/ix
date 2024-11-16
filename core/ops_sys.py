@@ -145,3 +145,6 @@ class Ops:
             return add_checks(sb, cu.copy_dict(node))
 
         return node
+
+    def boot_path(self):
+        return '/ix/realm/boot/bin:/bin:/usr/bin:/usr/local/bin'
