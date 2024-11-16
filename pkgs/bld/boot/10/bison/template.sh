@@ -1,15 +1,15 @@
 {% extends 'base.sh' %}
 
 {% block bld_deps %}
-bld/boot/9/m4
-bld/boot/9/flex/2.6.4.1.sh
+bld/boot/10/m4
+bld/boot/10/flex/2.6.4.1.sh
 bld/boot/8/env/std
 {% block bison %}
 {% endblock %}
 {% endblock %}
 
 {% block run_deps %}
-bld/boot/9/m4
+bld/boot/10/m4
 {% endblock %}
 
 {% block setup_tools %}

@@ -13,7 +13,7 @@ sha:3b18eb2dffe85c695c3000f8255f0849bb7bb996311c66c949b60efeb2a0a5eb
 {% endblock %}
 
 {% block bld_deps %}
-bld/boot/9/lex
+bld/boot/10/lex
 bld/boot/4/byacc
 bld/boot/8/env/std
 {% endblock %}

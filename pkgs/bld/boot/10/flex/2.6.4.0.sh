@@ -1,7 +1,7 @@
 {% extends '//bin/flex/t/ix.sh' %}
 
 {% block run_deps %}
-bld/boot/9/m4
+bld/boot/10/m4
 {% endblock %}
 
 {% block bld_libs %}
@@ -9,10 +9,10 @@ bld/boot/9/m4
 
 {% block bld_deps %}
 {% block boot_flex %}
-bld/boot/9/flex/2.5.10.1.sh
+bld/boot/10/flex/2.5.10.1.sh
 bld/boot/4/byacc
 {% endblock %}
-bld/boot/9/m4
+bld/boot/10/m4
 bld/boot/8/env/std
 {% endblock %}
 
