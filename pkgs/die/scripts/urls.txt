@@ -2935,6 +2935,7 @@ https://github.com/uclouvain/openjpeg/archive/refs/tags/v2.5.1.tar.gz
 https://github.com/umputun/reproxy/archive/refs/tags/v1.1.1.tar.gz
 https://github.com/umputun/reproxy/archive/refs/tags/v1.2.2.tar.gz
 https://github.com/uncrustify/uncrustify/archive/refs/tags/uncrustify-0.80.0.tar.gz
+https://github.com/uncrustify/uncrustify/archive/refs/tags/uncrustify-0.80.1.tar.gz
 https://github.com/unicode-org/icu/archive/refs/tags/release-70-1.tar.gz
 https://github.com/unicode-org/icu/archive/refs/tags/release-75-1.tar.gz
 https://github.com/unicode-org/icu/archive/refs/tags/release-76-1.tar.gz
