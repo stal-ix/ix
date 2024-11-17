@@ -1,4 +1,4 @@
-{% extends '//bin/make/old/ix.sh' %}
+{% extends '//bin/make/ix.sh' %}
 
 {% block bld_libs %}
 bld/boot/3/lib/c
