@@ -1938,6 +1938,7 @@ https://github.com/kaniini/libucontext/archive/refs/tags/libucontext-1.2.tar.gz
 https://github.com/kaniini/libucontext/archive/refs/tags/libucontext-1.3.1.tar.gz
 https://github.com/kaniini/libucontext/archive/refs/tags/libucontext-1.3.2.tar.gz
 https://github.com/kcat/openal-soft/archive/refs/tags/1.23.1.tar.gz
+https://github.com/kcat/openal-soft/archive/refs/tags/1.24.0.tar.gz
 https://github.com/keepassxreboot/keepassxc/releases/download/2.7.6/keepassxc-2.7.6-src.tar.xz
 https://github.com/khorben/gbsddialog/archive/refs/tags/gbsddialog_0-9-0.tar.gz
 https://github.com/kkos/oniguruma/archive/refs/tags/v6.9.8.tar.gz
