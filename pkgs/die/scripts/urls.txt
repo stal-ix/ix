@@ -2956,6 +2956,7 @@ https://github.com/uutils/coreutils/archive/refs/tags/0.0.24.tar.gz
 https://github.com/uutils/coreutils/archive/refs/tags/0.0.25.tar.gz
 https://github.com/uutils/coreutils/archive/refs/tags/0.0.26.tar.gz
 https://github.com/uutils/coreutils/archive/refs/tags/0.0.27.tar.gz
+https://github.com/uutils/coreutils/archive/refs/tags/0.0.28.tar.gz
 https://github.com/uutils/coreutils/archive/refs/tags/0.0.8.tar.gz
 https://github.com/v-byte-cpu/wirez/archive/2628dbf16fd4ed7c3943476d313bd4266db2eff9.zip
 https://github.com/valkey-io/valkey/archive/refs/tags/7.2.6.tar.gz
