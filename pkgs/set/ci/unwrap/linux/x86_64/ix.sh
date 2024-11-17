@@ -46,6 +46,7 @@
 #}
 
 {% block run_deps %}
+bin/lzfse
 bin/uncrustify
 bin/hefur
 bin/npm
