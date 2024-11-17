@@ -19,3 +19,7 @@ bld/boot/2/env
 >lib/fnmatch.c
 {% endif %}
 {% endblock %}
+
+{% block script_exec %}
+["/usr/bin/env", "PATH={{ix_boot_path}}", "/bin/sh", "-s"]
+{% endblock %}

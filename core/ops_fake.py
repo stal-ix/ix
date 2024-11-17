@@ -8,11 +8,11 @@ class Ops:
     def misc_cmd(self, sb, *args):
         return []
 
-    def runpy(self):
-        return []
-
     def extract(self):
         return []
+
+    def boot_path(self):
+        return ''
 
     def fetch(self, sb, url, path, md5):
         return [url]

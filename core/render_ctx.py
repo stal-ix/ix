@@ -83,6 +83,7 @@ class RenderContext:
         args = cu.dict_dict_update({
             'ix': self,
             'ix_extract': ' '.join(pkg.config.ops.extract()),
+            'ix_boot_path': pkg.config.ops.boot_path(),
             'host': hp,
             'tool': pkg.name.startswith('bld/'),
             'boot': pkg.name.startswith('bld/boot/'),

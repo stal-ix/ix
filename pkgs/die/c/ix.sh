@@ -1,4 +1,4 @@
-{% extends 'ix2.sh' %}
+{% extends 'ix3.sh' %}
 
 {% block cxx_flags %}
 {% endblock %}
@@ -88,12 +88,4 @@ setup_target_env() {
 
 {% block setup_target %}
 setup_target_env
-{% endblock %}
-
-{% block setup_host_tc %}
-{% if self.host_libs().strip() %}
-{{super()}}
-{% else %}
-echo 'skip host toolchain'
-{% endif %}
 {% endblock %}

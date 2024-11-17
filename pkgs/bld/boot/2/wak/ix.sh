@@ -6,10 +6,12 @@ sha:d7f814eefafa5cfa5b3eb9a1ef7a700f39cb8dd5a3d3695a0213c82f5b48d779
 {% endblock %}
 
 {% block bld_libs %}
+bld/boot/0/ind
 {% endblock %}
 
 {% block bld_deps %}
 bld/boot/2/sbase
+bld/boot/1/sh
 bld/boot/1/env
 {% endblock %}
 

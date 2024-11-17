@@ -2,7 +2,7 @@
 
 {% block lib_deps %}
 {% if linux %}
-lib/musl/boot(std_env=bld/boot/3/make/env,boot=1)
+lib/musl/boot(std_env=bld/boot/3/env/box,boot=1)
 {% endif %}
 {% if darwin %}
 lib/darwin/c(boot=1)

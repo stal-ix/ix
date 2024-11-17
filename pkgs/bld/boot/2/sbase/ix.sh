@@ -8,11 +8,13 @@ bmake
 {% endblock %}
 
 {% block bld_libs %}
+bld/boot/0/ind
 {% endblock %}
 
 {% block bld_deps %}
 bld/boot/2/shutil
 bld/boot/2/bmake/unwrap
+bld/boot/1/sh
 bld/boot/1/env
 {% endblock %}
 
