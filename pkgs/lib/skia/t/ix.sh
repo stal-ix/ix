@@ -9,7 +9,7 @@ https://skia.googlesource.com/skia.git
 {% endblock %}
 
 {% block git_sha %}
-4451c9e3689604790f5dcc514c948d83e8aec073cfa4de9c41ecb74be55b9aec
+6887d074c1849bbb7816afdd141a4d081db720783a9d727dff3f69b98fa80885
 {% endblock %}
 
 {% block git_refine %}
