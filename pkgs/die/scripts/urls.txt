@@ -2518,6 +2518,7 @@ https://github.com/qbittorrent/qBittorrent/archive/refs/tags/release-4.6.4.tar.g
 https://github.com/qbittorrent/qBittorrent/archive/refs/tags/release-4.6.5.tar.gz
 https://github.com/qbittorrent/qBittorrent/archive/refs/tags/release-5.0.0.tar.gz
 https://github.com/qbittorrent/qBittorrent/archive/refs/tags/release-5.0.1.tar.gz
+https://github.com/qbittorrent/qBittorrent/archive/refs/tags/release-5.0.2.tar.gz
 https://github.com/qpdf/qpdf/archive/refs/tags/v11.6.1.tar.gz
 https://github.com/qpdf/qpdf/archive/refs/tags/v11.6.2.tar.gz
 https://github.com/qpdf/qpdf/archive/refs/tags/v11.6.3.tar.gz
