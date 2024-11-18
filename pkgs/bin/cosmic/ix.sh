@@ -8,7 +8,7 @@ bin/cosmic/comp
 bin/cosmic/term
 bin/cosmic/randr
 bin/cosmic/files
-bin/cosmic/panel
+#bin/cosmic/panel
 bin/cosmic/greeter
 bin/cosmic/session
 bin/cosmic/launcher
