@@ -178,6 +178,7 @@ https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.11.6.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.11.7.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.11.8.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.11.9.tar.xz
+https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.12.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.2.14.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.3.13.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.4.12.tar.xz

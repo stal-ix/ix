@@ -46,6 +46,7 @@
 #}
 
 {% block run_deps %}
+bin/kernel/6/12
 bin/lzfse
 bin/uncrustify
 bin/hefur
