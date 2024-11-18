@@ -177,6 +177,7 @@ https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.11.5.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.11.6.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.11.7.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.11.8.tar.xz
+https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.11.9.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.2.14.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.3.13.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.4.12.tar.xz
@@ -2168,6 +2169,7 @@ https://github.com/lsof-org/lsof/archive/refs/tags/4.98.0.tar.gz
 https://github.com/lsof-org/lsof/archive/refs/tags/4.99.0.tar.gz
 https://github.com/lsof-org/lsof/archive/refs/tags/4.99.1.tar.gz
 https://github.com/lsof-org/lsof/archive/refs/tags/4.99.3.tar.gz
+https://github.com/lsof-org/lsof/archive/refs/tags/4.99.4.tar.gz
 https://github.com/lsyncd/lsyncd/archive/refs/tags/v2.3.1.tar.gz
 https://github.com/luceneplusplus/LucenePlusPlus/archive/refs/tags/rel_3.0.8.tar.gz
 https://github.com/luceneplusplus/LucenePlusPlus/archive/refs/tags/rel_3.0.9.tar.gz
