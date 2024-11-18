@@ -1,16 +1,9 @@
 {% block kernel_version %}
-6.12-rc6
+6.12
 {% endblock %}
 
 {% block kernel_sha %}
-7932703bbf3859932f615c21de4c5ae56d99dc85525bc2361d543216cff7e4ca
+b1a2562be56e42afb3f8489d4c2a7ac472ac23098f1ef1c1e40da601f54625eb
 {% endblock %}
 
-{% block kernel_url %}
-https://git.kernel.org/torvalds/t/linux-{{self.kernel_version().strip()}}.tar.gz
-{% endblock %}
-
-{% block fetch %}
-{{self.kernel_url().strip()}}
-{{self.kernel_sha().strip()}}
-{% endblock %}
+{% include '//bin/kernel/t/ver.sh' %}
