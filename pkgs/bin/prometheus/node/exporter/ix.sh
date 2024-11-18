@@ -5,7 +5,7 @@ https://github.com/prometheus/node_exporter/archive/refs/tags/v1.7.0.tar.gz
 {% endblock %}
 
 {% block go_sha %}
-67b07335221810969fffdc83df9f548471e32d81d111ff5c25543c9ff0d4b8e3
+bd32277c8a742bb73a9e4be101439da7ecd3101887e3e378b16c6c48f0cbdd37
 {% endblock %}
 
 {% block install %}
