@@ -34,8 +34,6 @@ bld/llvm/config
 {{super()}}
 sed -e 's|"runtime"|"static"|' \
     -i vendored/bindgen/Cargo.toml
-ln -s ../../scheds/include rust/scx_utils/bpf_h
-ln -s ../../scheds/include rust/scx_rustland_core/bpf_h
 {% endblock %}
 
 {% block build %}
