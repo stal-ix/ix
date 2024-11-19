@@ -45,18 +45,6 @@ namespace {
         return shash(p) + "|" + shash(readf(p));
     }
 
-    using DirList = std::vector<std::string>;
-
-    static DirList listDir(const std::string& where) {
-        DirList res;
-
-        for (const auto& entry : std::filesystem::directory_iterator(where)) {
-            res.push_back(entry.path().string());
-        }
-
-        return res;
-    }
-
     struct Proc {
         Proc(const std::string& p) {
         }
@@ -91,10 +79,10 @@ namespace {
         }
 
         void step() {
-            std::vector<std::string> cur;
+            std::set<std::string> cur;
 
-            for (auto d : listDir(where)) {
-                auto p = where + d + "/run";
+            for (const auto& entry : std::filesystem::directory_iterator(where)) {
+                auto p = where + "/" + entry.path().string() + "/run";
 
                 try {
                     auto md5 = fhash(p);
@@ -107,20 +95,19 @@ namespace {
                         proc = std::make_shared<Proc>(p);
                     }
 
-                    cur.push_back(p);
+                    cur.insert(p);
                 } catch (...) {
                     log("skip " + p + ": " + currentException());
                 }
             }
 
-            std::set<std::string> scur(cur.begin(), cur.end());
             std::vector<std::string> dead;
 
             for (auto& item : running) {
                 auto md5 = item.first;
                 auto proc = item.second;
 
-                if (scur.find(md5) == scur.end()) {
+                if (cur.find(md5) == cur.end()) {
                     log(md5 + " stale");
                     proc->terminate();
                 }
