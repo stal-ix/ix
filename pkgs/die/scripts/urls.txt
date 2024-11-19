@@ -3202,6 +3202,7 @@ https://gitlab.freedesktop.org/libinput/libinput/-/archive/1.25.0/libinput-1.25.
 https://gitlab.freedesktop.org/libinput/libinput/-/archive/1.26.0/libinput-1.26.0.tar.bz2
 https://gitlab.freedesktop.org/libinput/libinput/-/archive/1.26.1/libinput-1.26.1.tar.bz2
 https://gitlab.freedesktop.org/libinput/libinput/-/archive/1.26.2/libinput-1.26.2.tar.bz2
+https://gitlab.freedesktop.org/libinput/libinput/-/archive/1.27.0/libinput-1.27.0.tar.bz2
 https://gitlab.freedesktop.org/mesa/glu/-/archive/glu-9.0.3/glu-glu-9.0.3.tar.bz2
 https://gitlab.freedesktop.org/mesa/mesa/-/archive/mesa-23.0.3/mesa-mesa-23.0.3.tar.bz2
 https://gitlab.freedesktop.org/mesa/mesa/-/archive/mesa-23.1.8/mesa-mesa-23.1.8.tar.bz2
