@@ -46,6 +46,9 @@
 #}
 
 {% block run_deps %}
+bin/ix/runsvdir/cpp
+bin/ix/runsvdir/python
+bin/ix/runsvdir/rust
 bin/kernel/6/12
 bin/lzfse
 bin/uncrustify
