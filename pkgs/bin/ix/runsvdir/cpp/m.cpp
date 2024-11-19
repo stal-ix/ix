@@ -2,13 +2,19 @@
 #include <set>
 #include <string>
 #include <vector>
-#include <time.h>
 #include <fstream>
 #include <sstream>
 #include <iostream>
-#include <unistd.h>
+#include <stdexcept>
 #include <exception>
 #include <filesystem>
+
+#include <time.h>
+#include <spawn.h>
+#include <signal.h>
+#include <unistd.h>
+#include <sys/wait.h>
+
 #include <xxhash.h>
 
 namespace {
@@ -52,14 +58,25 @@ namespace {
     }
 
     struct Proc {
+        int pid;
+
         Proc(const std::string& p) {
+            char* cmd[] = {
+                (char*)p.c_str(),
+                0,
+            };
+
+            if (posix_spawnp(&pid, cmd[0], 0, 0, cmd, 0)) {
+                throw std::runtime_error("can not spaawn " + p);
+            }
         }
 
         void terminate() {
+            kill(pid, SIGTERM);
         }
 
         bool alive() {
-            return true;
+            return kill(pid, 0) == 0;
         }
     };
 
@@ -129,6 +146,11 @@ namespace {
             for (auto d : dead) {
                 log("erase dead " + d);
                 running.erase(d);
+            }
+
+            int status;
+
+            while (waitpid(-1, &status, WNOHANG) > 0) {
             }
         }
     };
