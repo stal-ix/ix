@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/skvadrik/re2c/archive/refs/tags/3.1.tar.gz
-sha:087c44de0400fb15caafde09fd72edc7381e688a35ef505ee65e0e3d2fac688b
+https://github.com/skvadrik/re2c/archive/refs/tags/4.0.tar.gz
+sha:61074bb053c6e76c21cd5c0171c9b15b487db2a2eb3401b873b24839aba13c94
 {% endblock %}
 
 {% block bld_libs %}
