@@ -2199,6 +2199,7 @@ https://github.com/magicant/yash/releases/download/2.55/yash-2.55.tar.xz
 https://github.com/magicant/yash/releases/download/2.56.1/yash-2.56.1.tar.xz
 https://github.com/magicant/yash/releases/download/2.57/yash-2.57.tar.xz
 https://github.com/managarm/mlibc/archive/refs/tags/3.0.0-rc2.tar.gz
+https://github.com/maratik123/runsvdir/archive/0cbddbc386a66f9bbec1be0e1277d6ad85224eb2.zip
 https://github.com/martanne/vis/archive/refs/tags/v0.8.tar.gz
 https://github.com/martijnvanbrummelen/nwipe/archive/refs/tags/v0.34.tar.gz
 https://github.com/martijnvanbrummelen/nwipe/archive/refs/tags/v0.35.tar.gz
@@ -2350,6 +2351,7 @@ https://github.com/ngtcp2/ngtcp2/archive/refs/tags/v1.6.0.tar.gz
 https://github.com/ngtcp2/ngtcp2/archive/refs/tags/v1.7.0.tar.gz
 https://github.com/ngtcp2/ngtcp2/archive/refs/tags/v1.8.0.tar.gz
 https://github.com/ngtcp2/ngtcp2/archive/refs/tags/v1.8.1.tar.gz
+https://github.com/ngtcp2/ngtcp2/archive/refs/tags/v1.9.0.tar.gz
 https://github.com/nhorman/rng-tools/archive/refs/tags/v6.15.tar.gz
 https://github.com/nibanks/msh3/archive/refs/tags/v0.6.0.tar.gz
 https://github.com/niklata/ndhc/archive/refs/tags/v2022-03-08-v2.tar.gz

@@ -8,7 +8,7 @@ lib/boost
 lib/c/ares
 lib/jansson
 lib/ng/http/3
-lib/ng/tcp2/openssl
+lib/ng/tcp2/gnutls
 {{super()}}
 {% endblock %}
 
