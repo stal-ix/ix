@@ -157,13 +157,13 @@ namespace {
 }
 
 int main(int argc, char** argv) {
-    if (argc < 2) {
+    if (argc < 3) {
         abort();
     }
 
-    if (!argv[1]) {
+    if (!argv[2]) {
         abort();
     }
 
-    Context(argv[1]).run();
+    Context(argv[2]).run();
 }
