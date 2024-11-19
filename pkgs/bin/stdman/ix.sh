@@ -11,7 +11,7 @@ bld/gzip
 {% endblock %}
 
 {% block configure %}
-bash configure --prefix="${out}"
+bash ./configure --prefix="${out}"
 {% endblock %}
 
 {% block build %}

@@ -177,6 +177,8 @@ https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.11.5.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.11.6.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.11.7.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.11.8.tar.xz
+https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.11.9.tar.xz
+https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.12.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.2.14.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.3.13.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.4.12.tar.xz
@@ -1188,6 +1190,7 @@ https://github.com/ammen99/wf-recorder/archive/refs/tags/v0.4.1.tar.gz
 https://github.com/andikleen/mcelog/archive/refs/tags/v198.tar.gz
 https://github.com/andikleen/mcelog/archive/refs/tags/v199.tar.gz
 https://github.com/andikleen/mcelog/archive/refs/tags/v200.tar.gz
+https://github.com/andikleen/mcelog/archive/refs/tags/v201.tar.gz
 https://github.com/anholt/libepoxy/archive/refs/tags/1.5.10.tar.gz
 https://github.com/anrieff/libcpuid/archive/refs/tags/v0.6.3.tar.gz
 https://github.com/anrieff/libcpuid/archive/refs/tags/v0.6.4.tar.gz
@@ -1526,6 +1529,8 @@ https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.3.1.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.3.2.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.3.3.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.3.4.tar.gz
+https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.30.0.tar.gz
+https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.30.1.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.4.0.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.5.0.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.6.0.tar.gz
@@ -1685,6 +1690,7 @@ https://github.com/google/highway/archive/refs/tags/1.0.7.tar.gz
 https://github.com/google/highway/archive/refs/tags/1.1.0.tar.gz
 https://github.com/google/liblc3/archive/refs/tags/v1.1.1.tar.gz
 https://github.com/google/libultrahdr/archive/refs/tags/v1.1.1.tar.gz
+https://github.com/google/libultrahdr/archive/refs/tags/v1.3.0.tar.gz
 https://github.com/google/minijail/archive/refs/tags/linux-v18.tar.gz
 https://github.com/google/re2/archive/refs/tags/2023-09-01.tar.gz
 https://github.com/google/re2/archive/refs/tags/2023-11-01.tar.gz
@@ -1781,6 +1787,7 @@ https://github.com/hyprwm/Hyprland/releases/download/v0.43.0/source-v0.43.0.tar.
 https://github.com/hyprwm/Hyprland/releases/download/v0.44.0/source-v0.44.0.tar.gz
 https://github.com/hyprwm/Hyprland/releases/download/v0.44.1/source-v0.44.1.tar.gz
 https://github.com/hyprwm/Hyprland/releases/download/v0.45.0/source-v0.45.0.tar.gz
+https://github.com/hyprwm/Hyprland/releases/download/v0.45.1/source-v0.45.1.tar.gz
 https://github.com/hyprwm/aquamarine/archive/refs/tags/v0.3.1.tar.gz
 https://github.com/hyprwm/aquamarine/archive/refs/tags/v0.4.2.tar.gz
 https://github.com/hyprwm/hyprcursor/archive/refs/tags/v0.1.4.tar.gz
@@ -1938,6 +1945,7 @@ https://github.com/kaniini/libucontext/archive/refs/tags/libucontext-1.2.tar.gz
 https://github.com/kaniini/libucontext/archive/refs/tags/libucontext-1.3.1.tar.gz
 https://github.com/kaniini/libucontext/archive/refs/tags/libucontext-1.3.2.tar.gz
 https://github.com/kcat/openal-soft/archive/refs/tags/1.23.1.tar.gz
+https://github.com/kcat/openal-soft/archive/refs/tags/1.24.0.tar.gz
 https://github.com/keepassxreboot/keepassxc/releases/download/2.7.6/keepassxc-2.7.6-src.tar.xz
 https://github.com/khorben/gbsddialog/archive/refs/tags/gbsddialog_0-9-0.tar.gz
 https://github.com/kkos/oniguruma/archive/refs/tags/v6.9.8.tar.gz
@@ -2166,6 +2174,7 @@ https://github.com/lsof-org/lsof/archive/refs/tags/4.98.0.tar.gz
 https://github.com/lsof-org/lsof/archive/refs/tags/4.99.0.tar.gz
 https://github.com/lsof-org/lsof/archive/refs/tags/4.99.1.tar.gz
 https://github.com/lsof-org/lsof/archive/refs/tags/4.99.3.tar.gz
+https://github.com/lsof-org/lsof/archive/refs/tags/4.99.4.tar.gz
 https://github.com/lsyncd/lsyncd/archive/refs/tags/v2.3.1.tar.gz
 https://github.com/luceneplusplus/LucenePlusPlus/archive/refs/tags/rel_3.0.8.tar.gz
 https://github.com/luceneplusplus/LucenePlusPlus/archive/refs/tags/rel_3.0.9.tar.gz
@@ -2185,6 +2194,7 @@ https://github.com/lyonel/lshw/archive/refs/tags/B.02.19.tar.gz
 https://github.com/lyonel/lshw/archive/refs/tags/B.02.20.tar.gz
 https://github.com/lz4/lz4/archive/refs/tags/v1.10.0.tar.gz
 https://github.com/lz4/lz4/archive/refs/tags/v1.9.4.tar.gz
+https://github.com/lzfse/lzfse/archive/refs/tags/lzfse-1.0.tar.gz
 https://github.com/magicant/yash/releases/download/2.55/yash-2.55.tar.xz
 https://github.com/magicant/yash/releases/download/2.56.1/yash-2.56.1.tar.xz
 https://github.com/magicant/yash/releases/download/2.57/yash-2.57.tar.xz
@@ -2512,6 +2522,7 @@ https://github.com/qbittorrent/qBittorrent/archive/refs/tags/release-4.6.4.tar.g
 https://github.com/qbittorrent/qBittorrent/archive/refs/tags/release-4.6.5.tar.gz
 https://github.com/qbittorrent/qBittorrent/archive/refs/tags/release-5.0.0.tar.gz
 https://github.com/qbittorrent/qBittorrent/archive/refs/tags/release-5.0.1.tar.gz
+https://github.com/qbittorrent/qBittorrent/archive/refs/tags/release-5.0.2.tar.gz
 https://github.com/qpdf/qpdf/archive/refs/tags/v11.6.1.tar.gz
 https://github.com/qpdf/qpdf/archive/refs/tags/v11.6.2.tar.gz
 https://github.com/qpdf/qpdf/archive/refs/tags/v11.6.3.tar.gz
@@ -2664,6 +2675,7 @@ https://github.com/rui314/mold/archive/refs/tags/v2.4.0.tar.gz
 https://github.com/rui314/mold/archive/refs/tags/v2.4.1.tar.gz
 https://github.com/rvaiya/keyd/archive/refs/tags/v2.4.3.tar.gz
 https://github.com/rvaiya/keyd/archive/refs/tags/v2.5.0.tar.gz
+https://github.com/ryanoasis/nerd-fonts/releases/download/v3.3.0/NerdFontsSymbolsOnly.zip
 https://github.com/rzvncj/xCHM/archive/refs/tags/1.35.tar.gz
 https://github.com/rzvncj/xCHM/archive/refs/tags/1.36.tar.gz
 https://github.com/rzvncj/xCHM/archive/refs/tags/1.37.tar.gz
@@ -2865,6 +2877,8 @@ https://github.com/telegramdesktop/tdesktop/releases/download/v5.6.3/tdesktop-5.
 https://github.com/telegramdesktop/tdesktop/releases/download/v5.7.0/tdesktop-5.7.0-full.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v5.7.1/tdesktop-5.7.1-full.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v5.7.2/tdesktop-5.7.2-full.tar.gz
+https://github.com/telegramdesktop/tdesktop/releases/download/v5.8.0/tdesktop-5.8.0-full.tar.gz
+https://github.com/telegramdesktop/tdesktop/releases/download/v5.8.1/tdesktop-5.8.1-full.tar.gz
 https://github.com/tenox7/ttyplot/archive/refs/tags/1.6.1.tar.gz
 https://github.com/tesseract-ocr/tesseract/archive/refs/tags/5.2.0.tar.gz
 https://github.com/tetratelabs/wazero/archive/refs/tags/v1.5.0.tar.gz
@@ -2955,6 +2969,7 @@ https://github.com/uutils/coreutils/archive/refs/tags/0.0.24.tar.gz
 https://github.com/uutils/coreutils/archive/refs/tags/0.0.25.tar.gz
 https://github.com/uutils/coreutils/archive/refs/tags/0.0.26.tar.gz
 https://github.com/uutils/coreutils/archive/refs/tags/0.0.27.tar.gz
+https://github.com/uutils/coreutils/archive/refs/tags/0.0.28.tar.gz
 https://github.com/uutils/coreutils/archive/refs/tags/0.0.8.tar.gz
 https://github.com/v-byte-cpu/wirez/archive/2628dbf16fd4ed7c3943476d313bd4266db2eff9.zip
 https://github.com/valkey-io/valkey/archive/refs/tags/7.2.6.tar.gz
@@ -3660,6 +3675,7 @@ https://storage.googleapis.com/downloads.webmproject.org/releases/webp/libwebp-1
 https://storage.googleapis.com/downloads.webmproject.org/releases/webp/libwebp-1.3.2.tar.gz
 https://strace.io/files/6.10/strace-6.10.tar.xz
 https://strace.io/files/6.11/strace-6.11.tar.xz
+https://strace.io/files/6.12/strace-6.12.tar.xz
 https://strace.io/files/6.5/strace-6.5.tar.xz
 https://strace.io/files/6.6/strace-6.6.tar.xz
 https://strace.io/files/6.7/strace-6.7.tar.xz

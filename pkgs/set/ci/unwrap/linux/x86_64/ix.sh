@@ -46,6 +46,8 @@
 #}
 
 {% block run_deps %}
+bin/kernel/6/12
+bin/lzfse
 bin/uncrustify
 bin/hefur
 bin/npm
@@ -75,7 +77,7 @@ bin/usb/view
 bin/gost
 bin/sing/box
 bin/just
-bin/cosmic
+#bin/cosmic
 bin/agrep
 bin/wstunnel
 bin/tun2socks

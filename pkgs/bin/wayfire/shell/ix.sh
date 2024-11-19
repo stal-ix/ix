@@ -9,7 +9,7 @@ v0.9.0
 {% endblock %}
 
 {% block git_sha %}
-4fa64a152d3964f1b666ee213181d4486c3244bd8352795d6c27a3bebb7de602
+5a76cc4a1bd8cdb433945acb312cd10d91f38869cc6e723a3758660ac3421548
 {% endblock %}
 
 {% block bld_libs %}

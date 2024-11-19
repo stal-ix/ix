@@ -9,7 +9,7 @@ https://github.com/wasm3/wasm3
 {% endblock %}
 
 {% block git_sha %}
-6f4a81f6d62818a68e7d96d69a98e4f937bccc2e0a7b8af68be9dbf9fe05e9ad
+9868cd17486c57a493daca3d0ea4f38a0b72c94272f2c619f0cbed4a1c74248e
 {% endblock %}
 
 {% block bld_libs %}

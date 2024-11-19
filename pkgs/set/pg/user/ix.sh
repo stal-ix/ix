@@ -27,6 +27,7 @@ bin/sway/bg
 bin/iwd/ctl
 bin/swayimg
 bin/tcpdump
+bin/iron/bar
 bin/sing/box
 bin/epiphany
 bin/telegram
