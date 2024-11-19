@@ -5,7 +5,7 @@
 {% endblock %}
 
 {% block cargo_sha %}
-4a54b6f0c453f4b1fa9d6f17359ba98a2d31b296424f01d1df9a408107dd7dca
+50bc2347311b57183878e932645387117ad916f49c8208570ed355930bd1184b
 {% endblock %}
 
 {% block bld_libs %}
