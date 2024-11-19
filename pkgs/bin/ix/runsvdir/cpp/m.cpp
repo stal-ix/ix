@@ -9,6 +9,7 @@
 #include <unistd.h>
 #include <exception>
 #include <filesystem>
+#include <xxhash.h>
 
 namespace {
     static void log0(const std::string& s) {
@@ -22,6 +23,11 @@ namespace {
     static inline std::string readf(const std::string& path) {
         std::ostringstream buf;
         std::ifstream input(path);
+
+        if (!input) {
+            throw std::runtime_error("can not open " + path);
+        }
+
         buf << input.rdbuf();
 
         return buf.str();
@@ -38,7 +44,7 @@ namespace {
     }
 
     static std::string shash(const std::string& s) {
-        return std::string{};
+        return std::to_string(XXH64(s.c_str(), s.length(), 0));
     }
 
     static std::string fhash(const std::string& p) {
@@ -82,7 +88,7 @@ namespace {
             std::set<std::string> cur;
 
             for (const auto& entry : std::filesystem::directory_iterator(where)) {
-                auto p = where + "/" + entry.path().string() + "/run";
+                auto p = entry.path().string() + "/run";
 
                 try {
                     auto md5 = fhash(p);
@@ -95,7 +101,7 @@ namespace {
                         proc = std::make_shared<Proc>(p);
                     }
 
-                    cur.insert(p);
+                    cur.insert(md5);
                 } catch (...) {
                     log("skip " + p + ": " + currentException());
                 }
