@@ -49,12 +49,14 @@ namespace {
         return "unknown error";
     }
 
-    static std::string shash(const std::string& s) {
-        return std::to_string(XXH64(s.c_str(), s.length(), 0));
+    static auto shash(const std::string& s) {
+        return XXH64(s.c_str(), s.length(), 0);
     }
 
-    static std::string fhash(const std::string& p) {
-        return shash(p) + "|" + shash(readf(p));
+    using ui128 = std::pair<uint64_t, uint64_t>;
+
+    static ui128 fhash(const std::string& p) {
+        return std::make_pair(shash(p), shash(readf(p)));
     }
 
     struct Proc {
@@ -80,9 +82,11 @@ namespace {
         }
     };
 
+    using ProcID = ui128;
+
     struct Context {
         const std::string where;
-        std::map<std::string, std::shared_ptr<Proc>> running;
+        std::map<ProcID, std::shared_ptr<Proc>> running;
 
         Context(const std::string& where_)
             : where(where_)
@@ -102,7 +106,7 @@ namespace {
         }
 
         void step() {
-            std::set<std::string> cur;
+            std::set<ProcID> cur;
 
             for (const auto& entry : std::filesystem::directory_iterator(where)) {
                 auto p = entry.path().string() + "/run";
@@ -112,9 +116,8 @@ namespace {
                     auto& proc = running[md5];
 
                     if (proc.get()) {
-                        log(p + " already running as " + md5);
+                        // already running
                     } else {
-                        log("spawn " + p + " as " + md5);
                         proc = std::make_shared<Proc>(p);
                     }
 
@@ -124,27 +127,24 @@ namespace {
                 }
             }
 
-            std::vector<std::string> dead;
+            std::vector<ProcID> dead;
 
             for (auto& item : running) {
                 auto md5 = item.first;
                 auto proc = item.second;
 
                 if (cur.find(md5) == cur.end()) {
-                    log(md5 + " stale");
                     proc->terminate();
                 }
 
                 if (proc->alive()) {
-                    log(md5 + " alive");
+                    // alive
                 } else {
-                    log(md5 + " dead");
                     dead.push_back(md5);
                 }
             }
 
             for (auto d : dead) {
-                log("erase dead " + d);
                 running.erase(d);
             }
 
