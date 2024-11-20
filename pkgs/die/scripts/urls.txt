@@ -2155,6 +2155,7 @@ https://github.com/llvm/llvm-project/archive/refs/tags/llvmorg-19.1.0.tar.gz
 https://github.com/llvm/llvm-project/archive/refs/tags/llvmorg-19.1.1.tar.gz
 https://github.com/llvm/llvm-project/archive/refs/tags/llvmorg-19.1.2.tar.gz
 https://github.com/llvm/llvm-project/archive/refs/tags/llvmorg-19.1.3.tar.gz
+https://github.com/llvm/llvm-project/archive/refs/tags/llvmorg-19.1.4.tar.gz
 https://github.com/llvm/llvm-project/releases/download/llvmorg-13.0.1/llvm-project-13.0.1.src.tar.xz
 https://github.com/llvm/llvm-project/releases/download/llvmorg-16.0.6/llvm-project-16.0.6.src.tar.xz
 https://github.com/llvm/llvm-project/releases/download/llvmorg-17.0.0-rc3/llvm-project-17.0.0rc3.src.tar.xz
@@ -2199,6 +2200,7 @@ https://github.com/magicant/yash/releases/download/2.55/yash-2.55.tar.xz
 https://github.com/magicant/yash/releases/download/2.56.1/yash-2.56.1.tar.xz
 https://github.com/magicant/yash/releases/download/2.57/yash-2.57.tar.xz
 https://github.com/managarm/mlibc/archive/refs/tags/3.0.0-rc2.tar.gz
+https://github.com/maratik123/runsvdir/archive/0cbddbc386a66f9bbec1be0e1277d6ad85224eb2.zip
 https://github.com/martanne/vis/archive/refs/tags/v0.8.tar.gz
 https://github.com/martijnvanbrummelen/nwipe/archive/refs/tags/v0.34.tar.gz
 https://github.com/martijnvanbrummelen/nwipe/archive/refs/tags/v0.35.tar.gz
@@ -2350,6 +2352,7 @@ https://github.com/ngtcp2/ngtcp2/archive/refs/tags/v1.6.0.tar.gz
 https://github.com/ngtcp2/ngtcp2/archive/refs/tags/v1.7.0.tar.gz
 https://github.com/ngtcp2/ngtcp2/archive/refs/tags/v1.8.0.tar.gz
 https://github.com/ngtcp2/ngtcp2/archive/refs/tags/v1.8.1.tar.gz
+https://github.com/ngtcp2/ngtcp2/archive/refs/tags/v1.9.0.tar.gz
 https://github.com/nhorman/rng-tools/archive/refs/tags/v6.15.tar.gz
 https://github.com/nibanks/msh3/archive/refs/tags/v0.6.0.tar.gz
 https://github.com/niklata/ndhc/archive/refs/tags/v2022-03-08-v2.tar.gz
@@ -2738,6 +2741,7 @@ https://github.com/skarnet/skalibs/archive/refs/tags/v2.14.3.0.tar.gz
 https://github.com/skeeto/u-config/archive/refs/tags/v0.31.1.tar.gz
 https://github.com/skeeto/u-config/archive/refs/tags/v0.33.0.tar.gz
 https://github.com/skvadrik/re2c/archive/refs/tags/3.1.tar.gz
+https://github.com/skvadrik/re2c/archive/refs/tags/4.0.tar.gz
 https://github.com/slackhq/nebula/archive/refs/tags/v1.8.2.tar.gz
 https://github.com/slackhq/nebula/archive/refs/tags/v1.9.0.tar.gz
 https://github.com/slackhq/nebula/archive/refs/tags/v1.9.1.tar.gz
@@ -2783,6 +2787,7 @@ https://github.com/strukturag/libheif/archive/refs/tags/v1.19.0.tar.gz
 https://github.com/strukturag/libheif/archive/refs/tags/v1.19.1.tar.gz
 https://github.com/strukturag/libheif/archive/refs/tags/v1.19.2.tar.gz
 https://github.com/strukturag/libheif/archive/refs/tags/v1.19.3.tar.gz
+https://github.com/strukturag/libheif/archive/refs/tags/v1.19.5.tar.gz
 https://github.com/svenstaro/miniserve/archive/172c321c0809198ef7cafffc81aa3f8f688c5544.zip
 https://github.com/svenstaro/miniserve/archive/refs/tags/v0.26.0.tar.gz
 https://github.com/swaywm/sway/archive/refs/tags/1.10.tar.gz
@@ -3112,6 +3117,7 @@ https://github.com/zed-industries/zed/archive/refs/tags/v0.148.1.tar.gz
 https://github.com/zellij-org/zellij/archive/refs/tags/v0.39.2.tar.gz
 https://github.com/zellij-org/zellij/archive/refs/tags/v0.40.0.tar.gz
 https://github.com/zellij-org/zellij/archive/refs/tags/v0.41.0.tar.gz
+https://github.com/zellij-org/zellij/archive/refs/tags/v0.41.2.tar.gz
 https://github.com/zeux/volk/archive/refs/tags/vulkan-sdk-1.3.275.0.tar.gz
 https://github.com/zeux/volk/archive/refs/tags/vulkan-sdk-1.3.290.0.tar.gz
 https://github.com/zlib-ng/zlib-ng/archive/refs/tags/2.1.3.tar.gz
@@ -3202,6 +3208,7 @@ https://gitlab.freedesktop.org/libinput/libinput/-/archive/1.25.0/libinput-1.25.
 https://gitlab.freedesktop.org/libinput/libinput/-/archive/1.26.0/libinput-1.26.0.tar.bz2
 https://gitlab.freedesktop.org/libinput/libinput/-/archive/1.26.1/libinput-1.26.1.tar.bz2
 https://gitlab.freedesktop.org/libinput/libinput/-/archive/1.26.2/libinput-1.26.2.tar.bz2
+https://gitlab.freedesktop.org/libinput/libinput/-/archive/1.27.0/libinput-1.27.0.tar.bz2
 https://gitlab.freedesktop.org/mesa/glu/-/archive/glu-9.0.3/glu-glu-9.0.3.tar.bz2
 https://gitlab.freedesktop.org/mesa/mesa/-/archive/mesa-23.0.3/mesa-mesa-23.0.3.tar.bz2
 https://gitlab.freedesktop.org/mesa/mesa/-/archive/mesa-23.1.8/mesa-mesa-23.1.8.tar.bz2
@@ -3560,6 +3567,7 @@ https://mupdf.com/downloads/archive/mupdf-1.23.9-source.tar.gz
 https://mupdf.com/downloads/archive/mupdf-1.24.0-source.tar.gz
 https://mupdf.com/downloads/archive/mupdf-1.24.1-source.tar.gz
 https://mupdf.com/downloads/archive/mupdf-1.24.10-source.tar.gz
+https://mupdf.com/downloads/archive/mupdf-1.24.11-source.tar.gz
 https://mupdf.com/downloads/archive/mupdf-1.24.2-source.tar.gz
 https://mupdf.com/downloads/archive/mupdf-1.24.3-source.tar.gz
 https://mupdf.com/downloads/archive/mupdf-1.24.4-source.tar.gz

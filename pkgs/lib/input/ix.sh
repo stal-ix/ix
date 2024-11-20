@@ -31,4 +31,6 @@ list_insert
 list_append
 list_remove
 list_empty
+strv_from_string
+strv_join
 {% endblock %}

@@ -1,9 +1,6 @@
-{% extends '//die/gen.sh' %}
+{% extends '//die/hub.sh' %}
 
-{% block install %}
-mkdir ${out}/bin
-base64 -d << EOF > ${out}/bin/runsvdir
-{% include 'run.py/base64' %}
-EOF
-chmod +x ${out}/bin/*
+{% block run_deps %}
+bin/ix/runsvdir/cpp
+#bin/ix/runsvdir/python
 {% endblock %}

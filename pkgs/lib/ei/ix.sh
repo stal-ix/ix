@@ -17,3 +17,8 @@ pip/attrs
 pip/jinja2
 lib/kernel
 {% endblock %}
+
+{% block c_rename_symbol %}
+strv_from_string
+strv_join
+{% endblock %}

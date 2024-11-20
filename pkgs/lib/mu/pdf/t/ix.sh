@@ -1,8 +1,8 @@
 {% extends '//die/c/make.sh' %}
 
 {% block fetch %}
-https://mupdf.com/downloads/archive/mupdf-1.24.10-source.tar.gz
-sha:939285b5f97caf770fd46cbe7e6cc3a695ab19bb5bfaf5712904549cef390b7b
+https://mupdf.com/downloads/archive/mupdf-1.24.11-source.tar.gz
+sha:191227b96775f6705ef7d9551187511932b519273b34535a331491cf7d98163f
 {% endblock %}
 
 {% block lib_deps %}
