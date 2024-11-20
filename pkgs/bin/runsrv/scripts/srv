@@ -13,12 +13,13 @@ mkdir -p ${STD_DIR}
 
 cd ${STD_DIR}
 
-mv err err.old || true
+exec 0</dev/null
+exec 1>>"out"
+exec 2>>"err"
 
-exec 1>>"err"
-exec 2>&1
+flock 2
 
 # TODO(pg): check it
 export TMPDIR=${PWD}
 
-exec cg flock lock logged ./ setcwd ${SRV_DIR} ${@}
+exec cg logged ./ setcwd ${SRV_DIR} ${@}
