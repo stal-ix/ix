@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://github.com/NixOS/nix/archive/refs/tags/2.24.10.tar.gz
-sha:6a7da2160a76aaf303b40cc7afdb8da71c04c8b05f238656e0914a032d1acce3
+https://github.com/NixOS/nix/archive/refs/tags/2.25.2.tar.gz
+sha:854fefe06d632188eef312b971395013c94676824e860bf4f5b60a41205b802a
 {% endblock %}
 
 {% block bld_libs %}
@@ -59,6 +59,10 @@ find . -type f | while read l; do
         -e 's|-Werror=switch-enum||g' \
         -i ${l}
 done
+{% endblock %}
+
+{% block cpp_defines %}
+SYS_close_range=436
 {% endblock %}
 
 {% block setup_target_flags %}

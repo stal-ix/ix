@@ -1,17 +1,17 @@
 {% extends '//die/c/make.sh' %}
 
 {% block fetch %}
-https://github.com/iproute2/iproute2/archive/refs/tags/v6.11.0.tar.gz
-sha:e5ad1c86aa788a979ba1b68cd6ee948b37983d99efabf6a0bf556b061569cc4d
+https://github.com/iproute2/iproute2/archive/refs/tags/v6.12.0.tar.gz
+sha:fe6e612a9d04bc96cb557d33e4b6c92a550a08182ee5403bd0dc7008032ec05d
 {% endblock %}
 
 {% block bld_libs %}
+lib/linux/headers/next
 lib/c
 lib/bpf
 lib/cap
 lib/mnl
 lib/tirpc
-lib/kernel
 lib/elfutils
 lib/shim/gnu/basename/overlay
 {% endblock %}

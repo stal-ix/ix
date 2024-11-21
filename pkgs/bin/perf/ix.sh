@@ -1,6 +1,6 @@
 {% extends '//die/c/make.sh' %}
 
-{% include '//bin/kernel/6/11/ver.sh' %}
+{% include '//bin/kernel/6/12/ver.sh' %}
 
 {% block bld_libs %}
 lib/c
@@ -21,6 +21,7 @@ lib/iberty
 lib/curses
 lib/opcodes
 lib/openssl
+lib/llvm/19
 lib/elfutils
 lib/readline
 lib/cap/stone
@@ -47,6 +48,7 @@ bld/bison
 bld/python
 bld/shebangs
 bld/pkg/config
+bld/llvm/config
 {% endblock %}
 
 {% block make_flags %}
@@ -75,7 +77,7 @@ no_werror
 {% block patch %}
 fix_shebangs check-headers.sh
 find . -type f | while read l; do
-    sed -e 's|/tmp/|/var/tmp/|g' -i ${l}
+    sed -e 's|/tmp/|'${TMPDIR}'/|g' -i ${l}
 done
 {% endblock %}
 

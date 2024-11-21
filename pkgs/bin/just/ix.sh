@@ -1,11 +1,11 @@
 {% extends '//die/rust/cargo.sh' %}
 
 {% block cargo_url %}
-https://github.com/casey/just/archive/refs/tags/1.36.0.tar.gz
+https://github.com/casey/just/archive/refs/tags/1.37.0.tar.gz
 {% endblock %}
 
 {% block cargo_sha %}
-dddede76c0aa2845e02837f0fb7dd57388bbcfed28473d6b988317f23692a537
+8e8818f424e1e1e4b75e62b522625e168da4f436cb3c00d6954b462e8141b8a6
 {% endblock %}
 
 {% block install %}
