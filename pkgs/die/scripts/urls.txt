@@ -1063,6 +1063,7 @@ https://github.com/NixOS/nix/archive/refs/tags/2.24.6.tar.gz
 https://github.com/NixOS/nix/archive/refs/tags/2.24.7.tar.gz
 https://github.com/NixOS/nix/archive/refs/tags/2.24.8.tar.gz
 https://github.com/NixOS/nix/archive/refs/tags/2.24.9.tar.gz
+https://github.com/NixOS/nix/archive/refs/tags/2.25.2.tar.gz
 https://github.com/NixOS/patchelf/archive/refs/tags/0.18.0.tar.gz
 https://github.com/Novum/vkQuake/archive/refs/tags/1.30.1.tar.gz
 https://github.com/Novum/vkQuake/archive/refs/tags/1.31.2.tar.gz
@@ -2037,6 +2038,7 @@ https://github.com/libfuse/libfuse/archive/refs/tags/fuse-2.9.9.tar.gz
 https://github.com/libfuse/libfuse/archive/refs/tags/fuse-3.16.1.tar.gz
 https://github.com/libfuse/libfuse/archive/refs/tags/fuse-3.16.2.tar.gz
 https://github.com/libgd/libgd/archive/refs/tags/gd-2.3.3.tar.gz
+https://github.com/libgit2/libgit2/archive/c6111ec06cc0b0126cd67bdab78f8091e4cfaa10.tar.gz
 https://github.com/libgit2/libgit2/archive/refs/tags/v1.0.1.tar.gz
 https://github.com/libgit2/libgit2/archive/refs/tags/v1.7.0.tar.gz
 https://github.com/libgit2/libgit2/archive/refs/tags/v1.7.2.tar.gz
