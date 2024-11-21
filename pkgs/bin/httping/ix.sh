@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/folkertvanheusden/HTTPing/archive/refs/tags/v4.1.0.tar.gz
-sha:41b29bedd19ad2aa0f744149c70ad925c9f28400717dcefbdaf77d321176cbfb
+https://github.com/folkertvanheusden/HTTPing/archive/refs/tags/v4.2.0.tar.gz
+sha:d6eb16a1f7d8724b883f07ffe71f75ae13f0535dbab077ff19ab8f36ab90d96a
 {% endblock %}
 
 {% block bld_libs %}
