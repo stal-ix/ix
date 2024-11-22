@@ -39,6 +39,7 @@ http://ftp.gnu.org/gnu/gcc/gcc-14.2.0/gcc-14.2.0.tar.xz
 http://ftp.gnu.org/gnu/mtools/mtools-4.0.43.tar.lz
 http://ftp.gnu.org/gnu/mtools/mtools-4.0.44.tar.lz
 http://ftp.gnu.org/gnu/mtools/mtools-4.0.45.tar.lz
+http://ftp.gnu.org/gnu/mtools/mtools-4.0.46.tar.lz
 http://ftp.gnu.org/gnu/screen/screen-4.9.1.tar.gz
 http://ftp.gnu.org/gnu/screen/screen-5.0.0.tar.gz
 http://ftp.gnu.org/pub/gnu/gperf/gperf-3.1.tar.gz
@@ -631,6 +632,7 @@ https://ftp.mozilla.org/pub/security/nss/releases/NSS_3_102_RTM/src/nss-3.102.ta
 https://ftp.mozilla.org/pub/security/nss/releases/NSS_3_103_RTM/src/nss-3.103.tar.gz
 https://ftp.mozilla.org/pub/security/nss/releases/NSS_3_105_RTM/src/nss-3.105.tar.gz
 https://ftp.mozilla.org/pub/security/nss/releases/NSS_3_106_RTM/src/nss-3.106.tar.gz
+https://ftp.mozilla.org/pub/security/nss/releases/NSS_3_107_RTM/src/nss-3.107.tar.gz
 https://ftp.mozilla.org/pub/security/nss/releases/NSS_3_93_RTM/src/nss-3.93.tar.gz
 https://ftp.mozilla.org/pub/security/nss/releases/NSS_3_94_RTM/src/nss-3.94.tar.gz
 https://ftp.mozilla.org/pub/security/nss/releases/NSS_3_96_RTM/src/nss-3.96.tar.gz
@@ -643,6 +645,7 @@ https://ftp.postgresql.org/pub/source/v16.1/postgresql-16.1.tar.bz2
 https://ftp.postgresql.org/pub/source/v16.3/postgresql-16.3.tar.bz2
 https://ftp.postgresql.org/pub/source/v16.4/postgresql-16.4.tar.bz2
 https://ftp.postgresql.org/pub/source/v17.0/postgresql-17.0.tar.bz2
+https://ftp.postgresql.org/pub/source/v17.2/postgresql-17.2.tar.bz2
 https://ftpmirror.gnu.org/libtool/libtool-2.4.6.tar.gz
 https://ftpmirror.gnu.org/libtool/libtool-2.4.7.tar.gz
 https://gameoftrees.org/releases/portable/got-portable-0.92.tar.gz
@@ -992,6 +995,7 @@ https://github.com/Kitware/CMake/archive/refs/tags/v3.30.3.tar.gz
 https://github.com/Kitware/CMake/archive/refs/tags/v3.30.4.tar.gz
 https://github.com/Kitware/CMake/archive/refs/tags/v3.30.5.tar.gz
 https://github.com/Kitware/CMake/archive/refs/tags/v3.31.0.tar.gz
+https://github.com/Kitware/CMake/archive/refs/tags/v3.31.1.tar.gz
 https://github.com/LBCrion/sfwbar/archive/refs/tags/v1.0_beta13.tar.gz
 https://github.com/LBCrion/sfwbar/archive/refs/tags/v1.0_beta9.tar.gz
 https://github.com/LibRaw/LibRaw/archive/refs/tags/0.21.1.tar.gz
@@ -1103,6 +1107,7 @@ https://github.com/RazrFalcon/resvg/archive/refs/tags/v0.41.0.tar.gz
 https://github.com/RazrFalcon/resvg/archive/refs/tags/v0.43.0.tar.gz
 https://github.com/RazrFalcon/resvg/archive/refs/tags/v0.44.0.tar.gz
 https://github.com/SagerNet/sing-box/archive/refs/tags/v1.10.1.tar.gz
+https://github.com/SagerNet/sing-box/archive/refs/tags/v1.10.2.tar.gz
 https://github.com/SagerNet/sing-box/archive/refs/tags/v1.9.6.tar.gz
 https://github.com/SagerNet/sing-box/archive/refs/tags/v1.9.7.tar.gz
 https://github.com/Samsung/rlottie/archive/refs/tags/v0.2.tar.gz
@@ -1220,6 +1225,7 @@ https://github.com/apernet/hysteria/archive/refs/tags/app/v2.5.1.tar.gz
 https://github.com/apernet/hysteria/archive/refs/tags/app/v2.5.2.tar.gz
 https://github.com/apernet/hysteria/archive/refs/tags/app/v2.6.0.tar.gz
 https://github.com/apple-oss-distributions/mDNSResponder/archive/refs/tags/mDNSResponder-2200.80.16.tar.gz
+https://github.com/apple-oss-distributions/mDNSResponder/archive/refs/tags/mDNSResponder-2559.1.1.tar.gz
 https://github.com/apple-oss-distributions/patch_cmds/archive/refs/tags/patch_cmds-61.tar.gz
 https://github.com/apple/swift-corelibs-libdispatch/archive/refs/tags/swift-5.10-RELEASE.tar.gz
 https://github.com/apple/swift-corelibs-libdispatch/archive/refs/tags/swift-5.10.1-RELEASE.tar.gz
@@ -1558,6 +1564,7 @@ https://github.com/fastfloat/fast_float/archive/refs/tags/v6.1.0.tar.gz
 https://github.com/fastfloat/fast_float/archive/refs/tags/v6.1.4.tar.gz
 https://github.com/fastfloat/fast_float/archive/refs/tags/v6.1.5.tar.gz
 https://github.com/fastfloat/fast_float/archive/refs/tags/v6.1.6.tar.gz
+https://github.com/fastfloat/fast_float/archive/refs/tags/v7.0.0.tar.gz
 https://github.com/fenrus75/powertop/archive/refs/tags/v2.15.tar.gz
 https://github.com/fish-shell/fish-shell/archive/refs/tags/3.6.1.tar.gz
 https://github.com/fish-shell/fish-shell/archive/refs/tags/3.6.3.tar.gz
@@ -2775,6 +2782,7 @@ https://github.com/strawberrymusicplayer/strawberry/archive/refs/tags/1.1.1.tar.
 https://github.com/strawberrymusicplayer/strawberry/archive/refs/tags/1.1.2.tar.gz
 https://github.com/strawberrymusicplayer/strawberry/archive/refs/tags/1.1.3.tar.gz
 https://github.com/strawberrymusicplayer/strawberry/archive/refs/tags/1.2.0.tar.gz
+https://github.com/strawberrymusicplayer/strawberry/archive/refs/tags/1.2.1.tar.gz
 https://github.com/strukturag/libde265/archive/refs/tags/v1.0.12.tar.gz
 https://github.com/strukturag/libde265/archive/refs/tags/v1.0.13.tar.gz
 https://github.com/strukturag/libde265/archive/refs/tags/v1.0.14.tar.gz
@@ -3321,6 +3329,7 @@ https://gitlab.gnome.org/GNOME/gtksourceview/-/archive/4.8.4/gtksourceview-4.8.4
 https://gitlab.gnome.org/GNOME/gtksourceview/-/archive/5.10.0/gtksourceview-5.10.0.tar.bz2
 https://gitlab.gnome.org/GNOME/gtksourceview/-/archive/5.12.1/gtksourceview-5.12.1.tar.bz2
 https://gitlab.gnome.org/GNOME/gtksourceview/-/archive/5.14.0/gtksourceview-5.14.0.tar.bz2
+https://gitlab.gnome.org/GNOME/gtksourceview/-/archive/5.14.2/gtksourceview-5.14.2.tar.bz2
 https://gitlab.gnome.org/GNOME/gtksourceview/-/archive/5.8.0/gtksourceview-5.8.0.tar.bz2
 https://gitlab.gnome.org/GNOME/gvdb/-/archive/2b42fc75f09dbe1cd1057580b5782b08f2dcb400/gvdb-2b42fc75f09dbe1cd1057580b5782b08f2dcb400.tar.bz2
 https://gitlab.gnome.org/GNOME/json-glib/-/archive/1.6.6/json-glib-1.6.6.tar.bz2
@@ -3406,6 +3415,7 @@ https://gitlab.gnome.org/chergert/ptyxis/-/archive/47.1/ptyxis-47.1.tar.bz2
 https://gitlab.gnome.org/chergert/ptyxis/-/archive/47.2/ptyxis-47.2.tar.bz2
 https://gitlab.gnome.org/chergert/ptyxis/-/archive/47.3/ptyxis-47.3.tar.bz2
 https://gitlab.gnome.org/chergert/ptyxis/-/archive/47.4/ptyxis-47.4.tar.bz2
+https://gitlab.gnome.org/chergert/ptyxis/-/archive/47.5/ptyxis-47.5.tar.bz2
 https://gitlab.gnome.org/chergert/ptyxis/-/raw/08564402b8a9bc53bc2dbd3ff14f9d9598c14b7b/build-aux/0001-add-notification-and-shell-precmd-preexec.patch
 https://gitlab.gnome.org/crab2313/evince/-/archive/4c91df66ca83f8f1d057f0aa9069675b8bf5b6d6/evince-4c91df66ca83f8f1d057f0aa9069675b8bf5b6d6.tar.bz2
 https://gitlab.gnome.org/jadahl/libdecor/-/archive/0.1.1/libdecor-0.1.1.tar.bz2
