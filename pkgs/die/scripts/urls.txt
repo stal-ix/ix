@@ -632,6 +632,7 @@ https://ftp.mozilla.org/pub/security/nss/releases/NSS_3_102_RTM/src/nss-3.102.ta
 https://ftp.mozilla.org/pub/security/nss/releases/NSS_3_103_RTM/src/nss-3.103.tar.gz
 https://ftp.mozilla.org/pub/security/nss/releases/NSS_3_105_RTM/src/nss-3.105.tar.gz
 https://ftp.mozilla.org/pub/security/nss/releases/NSS_3_106_RTM/src/nss-3.106.tar.gz
+https://ftp.mozilla.org/pub/security/nss/releases/NSS_3_107_RTM/src/nss-3.107.tar.gz
 https://ftp.mozilla.org/pub/security/nss/releases/NSS_3_93_RTM/src/nss-3.93.tar.gz
 https://ftp.mozilla.org/pub/security/nss/releases/NSS_3_94_RTM/src/nss-3.94.tar.gz
 https://ftp.mozilla.org/pub/security/nss/releases/NSS_3_96_RTM/src/nss-3.96.tar.gz
