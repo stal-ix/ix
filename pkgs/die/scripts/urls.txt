@@ -1562,6 +1562,7 @@ https://github.com/fastfloat/fast_float/archive/refs/tags/v6.1.0.tar.gz
 https://github.com/fastfloat/fast_float/archive/refs/tags/v6.1.4.tar.gz
 https://github.com/fastfloat/fast_float/archive/refs/tags/v6.1.5.tar.gz
 https://github.com/fastfloat/fast_float/archive/refs/tags/v6.1.6.tar.gz
+https://github.com/fastfloat/fast_float/archive/refs/tags/v7.0.0.tar.gz
 https://github.com/fenrus75/powertop/archive/refs/tags/v2.15.tar.gz
 https://github.com/fish-shell/fish-shell/archive/refs/tags/3.6.1.tar.gz
 https://github.com/fish-shell/fish-shell/archive/refs/tags/3.6.3.tar.gz
