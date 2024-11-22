@@ -1,11 +1,11 @@
 {% extends '//die/go/build.sh' %}
 
 {% block go_url %}
-https://github.com/SagerNet/sing-box/archive/refs/tags/v1.10.1.tar.gz
+https://github.com/SagerNet/sing-box/archive/refs/tags/v1.10.2.tar.gz
 {% endblock %}
 
 {% block go_sha %}
-e4341c51262a38ab540a8aea35138d8ec12f559552b4cf378f716972e38607aa
+7d24d35d8c2f5ad3567d520d259a830592598ee270c5272d70332187ab323218
 {% endblock %}
 
 {% block step_unpack %}
