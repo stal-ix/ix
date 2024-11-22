@@ -1,8 +1,8 @@
 {% extends '//die/c/make.sh' %}
 
 {% block fetch %}
-https://github.com/apple-oss-distributions/mDNSResponder/archive/refs/tags/mDNSResponder-2200.80.16.tar.gz
-sha:c7a8447d8b0dc53dbc84a2019158b7757370e115f7d11ccf14d5aceffc4650d5
+https://github.com/apple-oss-distributions/mDNSResponder/archive/refs/tags/mDNSResponder-2559.1.1.tar.gz
+sha:f3c4d25c572ae6e64e42e906672d410898fd3f3c59ed538d46c20de8d7725ed0
 {% endblock %}
 
 {% block bld_libs %}
@@ -17,6 +17,9 @@ lib/mbedtls/2
 find . -type f | while read l; do
     sed -e 's|/var/run|/var/run/mdnsd|g' -i "${l}"
 done
+patch mDNSShared/dnssd_clientstub.c << EOF
+{% include '0.diff' %}
+EOF
 cd mDNSPosix
 {% endblock %}
 
@@ -29,6 +32,7 @@ OPTIONALTARG=
 
 {% block cpp_missing %}
 limits.h
+sys/param.h
 {% endblock %}
 
 {% block build_flags %}
