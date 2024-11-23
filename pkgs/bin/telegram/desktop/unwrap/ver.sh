@@ -1,2 +1,2 @@
-https://github.com/telegramdesktop/tdesktop/releases/download/v5.8.2/tdesktop-5.8.2-full.tar.gz
-sha:c523d190fb9fc402df146178a2bd3cfe0cef23b73267a3c3de6094218cb1d5cf
+https://github.com/telegramdesktop/tdesktop/releases/download/v5.8.3/tdesktop-5.8.3-full.tar.gz
+sha:c2c8c1809a08a1ea54a96cf8a67c0612cfd83c36db08d4320b891601070d758e

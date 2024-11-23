@@ -46,6 +46,7 @@
 #}
 
 {% block run_deps %}
+bin/ip/traf/ng
 bin/ix/runsvdir/cpp
 bin/ix/runsvdir/python
 bin/ix/runsvdir/rust
