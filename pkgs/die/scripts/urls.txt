@@ -1864,6 +1864,7 @@ https://github.com/iproute2/iproute2/archive/refs/tags/v6.10.0.tar.gz
 https://github.com/iproute2/iproute2/archive/refs/tags/v6.11.0.tar.gz
 https://github.com/iproute2/iproute2/archive/refs/tags/v6.12.0.tar.gz
 https://github.com/iproute2/iproute2/archive/refs/tags/v6.9.0.tar.gz
+https://github.com/iptraf-ng/iptraf-ng/archive/refs/tags/v1.2.2.tar.gz
 https://github.com/iputils/iputils/archive/refs/tags/20221126.tar.gz
 https://github.com/iputils/iputils/archive/refs/tags/20240117.tar.gz
 https://github.com/iputils/iputils/archive/refs/tags/20240905.tar.gz
