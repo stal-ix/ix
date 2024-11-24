@@ -1429,6 +1429,7 @@ https://github.com/elementary/files/archive/refs/tags/7.0.0.tar.gz
 https://github.com/elementary/files/archive/refs/tags/7.1.0.tar.gz
 https://github.com/elementary/granite/archive/refs/tags/6.2.0.tar.gz
 https://github.com/elementary/granite/archive/refs/tags/7.5.0.tar.gz
+https://github.com/elementary/granite/archive/refs/tags/7.6.0.tar.gz
 https://github.com/elementary/terminal/archive/refs/tags/6.2.0.tar.gz
 https://github.com/elfmz/far2l/archive/refs/tags/v_2.5.0.tar.gz
 https://github.com/elfmz/far2l/archive/refs/tags/v_2.5.2.tar.gz
