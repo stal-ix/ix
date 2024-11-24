@@ -343,6 +343,7 @@ https://download.gnome.org/sources/gtk+/3.24/gtk%2B-3.24.40.tar.xz
 https://download.gnome.org/sources/gtk+/3.24/gtk%2B-3.24.42.tar.xz
 https://download.gnome.org/sources/gtk+/3.24/gtk%2B-3.24.43.tar.xz
 https://download.gnome.org/sources/gtkmm/3.24/gtkmm-3.24.8.tar.xz
+https://download.gnome.org/sources/gtkmm/4.16/gtkmm-4.16.0.tar.xz
 https://download.gnome.org/sources/libnotify/0.8/libnotify-0.8.2.tar.xz
 https://download.gnome.org/sources/libnotify/0.8/libnotify-0.8.3.tar.xz
 https://download.gnome.org/sources/librsvg/2.40/librsvg-2.40.21.tar.xz
@@ -351,6 +352,7 @@ https://download.gnome.org/sources/libsigc++/3.4/libsigc%2B%2B-3.4.0.tar.xz
 https://download.gnome.org/sources/libsoup/2.74/libsoup-2.74.2.tar.xz
 https://download.gnome.org/sources/pango/1.50/pango-1.50.14.tar.xz
 https://download.gnome.org/sources/pangomm/2.46/pangomm-2.46.2.tar.xz
+https://download.gnome.org/sources/pangomm/2.54/pangomm-2.54.0.tar.xz
 https://download.gnome.org/sources/vala/0.48/vala-0.48.25.tar.xz
 https://download.java.net/openjdk/jdk17/ri/openjdk-17+35_linux-x64_bin.tar.gz
 https://download.kde.org/stable/frameworks/5.112/extra-cmake-modules-5.112.0.tar.xz
@@ -1118,6 +1120,7 @@ https://github.com/Samsung/rlottie/archive/refs/tags/v0.2.tar.gz
 https://github.com/SpartanJ/efsw/archive/refs/tags/1.3.1.tar.gz
 https://github.com/Syllo/nvtop/archive/refs/tags/3.0.2.tar.gz
 https://github.com/Syllo/nvtop/archive/refs/tags/3.1.0.tar.gz
+https://github.com/System64fumo/syshud/archive/734d632ca0665a288d1308f883d974462fa2d349.zip
 https://github.com/TartanLlama/expected/archive/refs/tags/v1.1.0.tar.gz
 https://github.com/Terraspace/UASM/archive/refs/tags/v2.56.2.tar.gz
 https://github.com/Terraspace/UASM/archive/refs/tags/v2.57r.tar.gz
@@ -1429,6 +1432,7 @@ https://github.com/elementary/files/archive/refs/tags/7.0.0.tar.gz
 https://github.com/elementary/files/archive/refs/tags/7.1.0.tar.gz
 https://github.com/elementary/granite/archive/refs/tags/6.2.0.tar.gz
 https://github.com/elementary/granite/archive/refs/tags/7.5.0.tar.gz
+https://github.com/elementary/granite/archive/refs/tags/7.6.0.tar.gz
 https://github.com/elementary/terminal/archive/refs/tags/6.2.0.tar.gz
 https://github.com/elfmz/far2l/archive/refs/tags/v_2.5.0.tar.gz
 https://github.com/elfmz/far2l/archive/refs/tags/v_2.5.2.tar.gz
@@ -2014,6 +2018,7 @@ https://github.com/leo-arch/clifm/archive/refs/tags/v1.18.tar.gz
 https://github.com/leo-arch/clifm/archive/refs/tags/v1.19.tar.gz
 https://github.com/leo-arch/clifm/archive/refs/tags/v1.20.tar.gz
 https://github.com/leo-arch/clifm/archive/refs/tags/v1.21.tar.gz
+https://github.com/leo-arch/clifm/archive/refs/tags/v1.22.tar.gz
 https://github.com/libarchive/libarchive/archive/refs/tags/v3.7.1.tar.gz
 https://github.com/libarchive/libarchive/archive/refs/tags/v3.7.2.tar.gz
 https://github.com/libarchive/libarchive/archive/refs/tags/v3.7.3.tar.gz
@@ -2384,6 +2389,7 @@ https://github.com/noocsharp/wayclip/archive/refs/tags/0.4.1.tar.gz
 https://github.com/noocsharp/wayclip/archive/refs/tags/0.4.2.tar.gz
 https://github.com/notofonts/notofonts.github.io/archive/refs/tags/noto-monthly-release-24.8.1.tar.gz
 https://github.com/npm/cli/archive/refs/tags/v10.4.0.tar.gz
+https://github.com/npm/cli/archive/refs/tags/v10.9.1.tar.gz
 https://github.com/npm/cli/archive/refs/tags/v9.8.0.tar.gz
 https://github.com/npm/cli/archive/refs/tags/v9.8.1.tar.gz
 https://github.com/numactl/numactl/archive/refs/tags/v2.0.16.tar.gz
@@ -2788,6 +2794,7 @@ https://github.com/strawberrymusicplayer/strawberry/archive/refs/tags/1.1.2.tar.
 https://github.com/strawberrymusicplayer/strawberry/archive/refs/tags/1.1.3.tar.gz
 https://github.com/strawberrymusicplayer/strawberry/archive/refs/tags/1.2.0.tar.gz
 https://github.com/strawberrymusicplayer/strawberry/archive/refs/tags/1.2.1.tar.gz
+https://github.com/strawberrymusicplayer/strawberry/archive/refs/tags/1.2.2.tar.gz
 https://github.com/strukturag/libde265/archive/refs/tags/v1.0.12.tar.gz
 https://github.com/strukturag/libde265/archive/refs/tags/v1.0.13.tar.gz
 https://github.com/strukturag/libde265/archive/refs/tags/v1.0.14.tar.gz
@@ -3088,6 +3095,7 @@ https://github.com/wireshark/wireshark/archive/refs/tags/v4.4.1.tar.gz
 https://github.com/wireshark/wireshark/archive/refs/tags/v4.4.2.tar.gz
 https://github.com/wlrfx/scenefx/archive/refs/tags/0.1.tar.gz
 https://github.com/wmww/gtk-layer-shell/archive/refs/tags/v0.8.0.tar.gz
+https://github.com/wmww/gtk4-layer-shell/archive/refs/tags/v1.0.4.tar.gz
 https://github.com/wolfSSL/wolfssl/archive/refs/tags/v5.6.3-stable.tar.gz
 https://github.com/wolfSSL/wolfssl/archive/refs/tags/v5.6.4-stable.tar.gz
 https://github.com/wolfSSL/wolfssl/archive/refs/tags/v5.6.6-stable.tar.gz
@@ -3333,6 +3341,7 @@ https://gitlab.gnome.org/GNOME/gtk/-/archive/4.16.3/gtk-4.16.3.tar.bz2
 https://gitlab.gnome.org/GNOME/gtk/-/archive/4.16.4/gtk-4.16.4.tar.bz2
 https://gitlab.gnome.org/GNOME/gtk/-/archive/4.16.5/gtk-4.16.5.tar.bz2
 https://gitlab.gnome.org/GNOME/gtk/-/archive/4.16.6/gtk-4.16.6.tar.bz2
+https://gitlab.gnome.org/GNOME/gtk/-/archive/4.16.7/gtk-4.16.7.tar.bz2
 https://gitlab.gnome.org/GNOME/gtksourceview/-/archive/4.8.4/gtksourceview-4.8.4.tar.bz2
 https://gitlab.gnome.org/GNOME/gtksourceview/-/archive/5.10.0/gtksourceview-5.10.0.tar.bz2
 https://gitlab.gnome.org/GNOME/gtksourceview/-/archive/5.12.1/gtksourceview-5.12.1.tar.bz2
@@ -3409,6 +3418,7 @@ https://gitlab.gnome.org/GNOME/vte/-/archive/0.76.2/vte-0.76.2.tar.bz2
 https://gitlab.gnome.org/GNOME/vte/-/archive/0.76.3/vte-0.76.3.tar.bz2
 https://gitlab.gnome.org/GNOME/vte/-/archive/0.78.0/vte-0.78.0.tar.bz2
 https://gitlab.gnome.org/GNOME/vte/-/archive/0.78.1/vte-0.78.1.tar.bz2
+https://gitlab.gnome.org/GNOME/vte/-/archive/0.78.2/vte-0.78.2.tar.bz2
 https://gitlab.gnome.org/GNOME/vte/-/archive/9e8824480ef51374bf9b42ad8ee59f64d50456b1/vte-9e8824480ef51374bf9b42ad8ee59f64d50456b1.tar.bz2
 https://gitlab.gnome.org/GNOME/zenity/-/archive/3.44.0/zenity-3.44.0.tar.bz2
 https://gitlab.gnome.org/GNOME/zenity/-/archive/3.90.0/zenity-3.90.0.tar.bz2
@@ -3664,6 +3674,7 @@ https://security.appspot.com/downloads/vsftpd-3.0.5.tar.gz
 https://skarnet.org/software/execline/execline-2.8.2.0.tar.gz
 https://skarnet.org/software/mdevd/mdevd-0.1.5.1.tar.gz
 https://skarnet.org/software/nsss/nsss-0.2.0.1.tar.gz
+https://skarnet.org/software/nsss/nsss-0.2.0.5.tar.gz
 https://skarnet.org/software/skalibs/skalibs-2.11.1.0.tar.gz
 https://sndio.org/sndio-1.10.0.tar.gz
 https://sndio.org/sndio-1.9.0.tar.gz

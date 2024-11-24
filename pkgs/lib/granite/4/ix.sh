@@ -1,8 +1,8 @@
 {% extends '//die/vala/meson.sh' %}
 
 {% block fetch %}
-https://github.com/elementary/granite/archive/refs/tags/7.5.0.tar.gz
-sha:9439733169c07cfc658144ceef90bebac5f024ffda4bbb65e8c1ab68e5580908
+https://github.com/elementary/granite/archive/refs/tags/7.6.0.tar.gz
+sha:4b4e4f7f86eb3f55116faec42ebd87e04c3e424d82715ecd967ed39540dca5ef
 {% endblock %}
 
 {% block lib_deps %}
