@@ -1,13 +1,13 @@
 {% extends '//die/std/ix.sh' %}
 
 {% block fetch %}
-https://github.com/npm/cli/archive/refs/tags/v10.4.0.tar.gz
-sha:d8c7bf11ea8c0cf13b936e8ad936358745a682f3f64fc22e5c50d48f06966f66
+https://github.com/npm/cli/archive/refs/tags/v10.9.1.tar.gz
+sha:8f8dc61374b66992ad1613185fa66b4059c8826964164c2766dbc75eb609b9fd
 {% endblock %}
 
 {% block use_network %}true{% endblock %}
 
-{% set sum %}8b0e07912f36743c37eab28da01ba6e2582b1587cf0249bf65ba169f2326d407{% endset %}
+{% set sum %}986eb91733ee4189aa095e61c320f36f16afad83d6bf23d210630f45dc8b24e9{% endset %}
 {% set nam %}npm_{{sum}}.pzd{% endset %}
 
 {% block predict_outputs %}
