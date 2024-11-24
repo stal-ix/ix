@@ -843,6 +843,7 @@ https://github.com/GNOME/epiphany/archive/refs/tags/47.0.tar.gz
 https://github.com/GNOME/epiphany/archive/refs/tags/47.1.tar.gz
 https://github.com/GNOME/epiphany/archive/refs/tags/47.2.tar.gz
 https://github.com/GNOME/file-roller/archive/refs/tags/43.1.tar.gz
+https://github.com/GNOME/gnome-terminal/archive/refs/tags/3.54.2.tar.gz
 https://github.com/GNOME/gsettings-desktop-schemas/archive/refs/tags/47.0.tar.gz
 https://github.com/GNOME/gsettings-desktop-schemas/archive/refs/tags/47.1.tar.gz
 https://github.com/GNOME/gsettings-desktop-schemas/archive/refs/tags/47.beta.tar.gz
