@@ -1,8 +1,8 @@
 {% extends '//die/c/autohell.sh' %}
 
 {% block fetch %}
-https://skarnet.org/software/nsss/nsss-0.2.0.1.tar.gz
-sha:7d984ea627b3a8d7649d9bf24c79693f338e911d2b11040b89c4febfb1b3125b
+https://skarnet.org/software/nsss/nsss-0.2.0.5.tar.gz
+sha:954c1b25791cc36d07c3e123ec03436d3e296bf5233f1d08bc016d6d7e6279d2
 {% endblock %}
 
 {% block lib_deps %}
@@ -16,13 +16,6 @@ lib/kernel
 
 {% block configure_flags %}
 --with-nsssd-socket=/var/run/nsssd/nsssd.sock
-{% endblock %}
-
-{% block install %}
-{{super()}}
-cd ${out}/lib
-mv nsss/* .
-rm -r nsss
 {% endblock %}
 
 {% block env %}
