@@ -95,6 +95,8 @@ def do_fetch(url, path, sha, *mirrors):
 
                 print(f'while fetching {url}: {e}, will retry')
 
+            time.sleep(1)
+
 
 def check_md5(path, old_cs):
     if '__skip__' in old_cs:
