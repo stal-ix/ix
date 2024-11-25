@@ -1399,6 +1399,7 @@ https://github.com/dbry/WavPack/releases/download/5.6.0/wavpack-5.6.0.tar.xz
 https://github.com/dcantrell/bsdutils/archive/refs/tags/v13.1.tar.gz
 https://github.com/ddccontrol/ddccontrol/archive/refs/tags/1.0.3.tar.gz
 https://github.com/deponian/logalize/archive/refs/tags/v0.4.1.tar.gz
+https://github.com/deponian/logalize/archive/refs/tags/v0.4.2.tar.gz
 https://github.com/desktop-app/tg_owt/archive/1eab2d736a2fecce01686689b72e39ad8c314ebb.zip
 https://github.com/dimkr/loksh/releases/download/7.3/loksh-7.3.tar.xz
 https://github.com/dimkr/loksh/releases/download/7.4/loksh-7.4.tar.xz
