@@ -1,5 +1,7 @@
 import os
 import json
+import shutil
+import functools
 
 import core.utils as cu
 import core.error as ce
@@ -37,6 +39,12 @@ def parse_urls(urls):
         if len(cur) == 2:
             yield cur
             cur = {}
+
+
+@functools.lru_cache
+def ix_which(cmd, path):
+    print(cmd, path)
+    return shutil.which(cmd, path=path)
 
 
 class RenderContext:
@@ -79,11 +87,13 @@ class RenderContext:
 
         hp = pkg.host
         tp = pkg.flags['target']
+        bp = pkg.config.ops.boot_path()
 
         args = cu.dict_dict_update({
             'ix': self,
             'ix_extract': ' '.join(pkg.config.ops.extract()),
-            'ix_boot_path': pkg.config.ops.boot_path(),
+            'ix_boot_path': bp,
+            'ix_boot_tool': lambda x: ix_which(x, bp),
             'host': hp,
             'tool': pkg.name.startswith('bld/'),
             'boot': pkg.name.startswith('bld/boot/'),
