@@ -1922,6 +1922,7 @@ https://github.com/jjsullivan5196/wvkbd/archive/refs/tags/v0.14.1.tar.gz
 https://github.com/jjsullivan5196/wvkbd/archive/refs/tags/v0.14.3.tar.gz
 https://github.com/jjsullivan5196/wvkbd/archive/refs/tags/v0.14.tar.gz
 https://github.com/jjsullivan5196/wvkbd/archive/refs/tags/v0.15.tar.gz
+https://github.com/jjsullivan5196/wvkbd/archive/refs/tags/v0.16.tar.gz
 https://github.com/johang/btfs/archive/refs/tags/v2.24.tar.gz
 https://github.com/johanmattssonm/xmlbird/archive/refs/tags/v1.2.14.tar.gz
 https://github.com/johnkerl/miller/archive/refs/tags/v6.11.0.tar.gz
@@ -2441,6 +2442,7 @@ https://github.com/p7zip-project/p7zip/archive/refs/tags/v17.05.tar.gz
 https://github.com/pciutils/pciutils/archive/refs/tags/v3.10.0.tar.gz
 https://github.com/pciutils/pciutils/archive/refs/tags/v3.13.0.tar.gz
 https://github.com/pg83/bcrypt/archive/e8270a3fa761d9301199f828af90a67e2721c7a8.zip
+https://github.com/pg83/deya/archive/refs/tags/1.tar.gz
 https://github.com/pg83/dlopen/archive/refs/tags/v2.tar.gz
 https://github.com/pg83/heirloom/archive/a47c4acf9fb43b89f9fb0afdcf9008121d50d806.zip
 https://github.com/pg83/heirloom/archive/refs/tags/v1.tar.gz
@@ -3135,6 +3137,7 @@ https://github.com/yandex-cloud/geesefs/archive/ad455fd2b4e820f4d9becad4faf9fafe
 https://github.com/yandex-cloud/geesefs/archive/refs/tags/v0.42.0.tar.gz
 https://github.com/yandex-cloud/geesefs/archive/refs/tags/v0.42.1.tar.gz
 https://github.com/yandex/porto/archive/refs/tags/v5.3.15.tar.gz
+https://github.com/yandex/yatool/archive/1e46384bba9016b27f7b0251fe9971db3c65fe6e.zip
 https://github.com/yasm/yasm/releases/download/v1.3.0/yasm-1.3.0.tar.gz
 https://github.com/yggdrasil-network/yggdrasil-go/archive/refs/tags/v0.5.5.tar.gz
 https://github.com/yggdrasil-network/yggdrasil-go/archive/refs/tags/v0.5.8.tar.gz
