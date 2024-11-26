@@ -148,6 +148,7 @@ https://astron.com/pub/tcsh/tcsh-6.24.10.tar.gz
 https://astron.com/pub/tcsh/tcsh-6.24.11.tar.gz
 https://astron.com/pub/tcsh/tcsh-6.24.12.tar.gz
 https://astron.com/pub/tcsh/tcsh-6.24.13.tar.gz
+https://astron.com/pub/tcsh/tcsh-6.24.14.tar.gz
 https://bearssl.org/bearssl-0.6.tar.gz
 https://bitbucket.org/multicoreware/x265_git/downloads/x265_3.5.tar.gz
 https://bitbucket.org/multicoreware/x265_git/downloads/x265_3.6.tar.gz
