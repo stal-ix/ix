@@ -47,11 +47,14 @@ YMAKE_EXCLUDE_IDL_TOOL=yes
 HAVE_CUDA=no
 EMBED_SBOM=no
 YMAKE_USE_PY3=yes
+USE_ARCADIA_PYTHON=yes
+USE_PYTHON3=yes
 {% endblock %}
 
 {% block ya_make_cmd %}
 ya-bin
 make
+-k
 -rT
 --musl
 {% for x in ix.parse_list(self.ya_make_flags()) %}
@@ -63,7 +66,7 @@ make
 --c-compiler ${YA_CLANG}
 --ymake-bin ${YA_YMAKE}
 --no-yt-store
-devtools/ymake/bin
+devtools/ya/bin
 {% endblock %}
 
 {% block build %}
