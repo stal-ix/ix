@@ -62,11 +62,11 @@ make
 --host-platform-flag={{x}}
 {% endfor %}
 --no-ya-bin-resource
---cxx-compiler ${YA_CLANGXX}
---c-compiler ${YA_CLANG}
---ymake-bin ${YA_YMAKE}
+--cxx-compiler=${YA_CLANGXX}
+--c-compiler=${YA_CLANG}
+--ymake-bin=${YA_YMAKE}
 --no-yt-store
-devtools/ya/bin
+devtools/ymake/bin
 {% endblock %}
 
 {% block build %}
