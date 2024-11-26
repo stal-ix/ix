@@ -1,8 +1,8 @@
 {% extends '//die/std/ix.sh' %}
 
 {% block fetch %}
-https://github.com/pg83/yaboot/raw/refs/heads/main/Makefile.gz
-sha:a4c09a6418ab814ad33ebc4e9248e8c12e5c39d2e5708ec2ba578c7fa80cdd05
+https://github.com/pg83/yaboot/archive/refs/tags/1.tar.gz
+sha:80266d00f71380ec78c7c31a52ef56d624030ffa636403b5f5c1f0f42e1927c5
 {% endblock %}
 
 {% block git_repo %}
@@ -39,14 +39,21 @@ export CONLYFLAGS=
 
 {% block step_unpack %}
 {{super()}}
-gzip -c -d ${src}/Makefile.gz > Makefile
+extract 0 ${src}/1.tar.gz
+mv yaboot* y
+mv y/Makefile ./
+mkdir -p ${tmp}/devtools/ymake/lang
+mv y/generated/* ${tmp}/devtools/ymake/lang/
+touch ${tmp}/devtools/ymake/lang/*
 {% endblock %}
 
 {% block build %}
-make S=${PWD} B=${tmp} -j 16 ${tmp}/devtools/ya/bin/ya-bin
+make S=${PWD} B=${tmp} -j ${make_thrs} \
+    ${tmp}/devtools/ymake/bin/ymake \
+    ${tmp}/devtools/ya/bin/ya-bin
 {% endblock %}
 
 {% block install %}
 mkdir ${out}/bin
-cp ${tmp}/devtools/ya/bin/ya-bin ${out}/bin/
+cp ${tmp}/devtools/ymake/bin/ymake ${tmp}/devtools/ya/bin/ya-bin ${out}/bin/
 {% endblock %}
