@@ -1,5 +1,15 @@
 {% extends '//die/hub.sh' %}
 
 {% block lib_deps %}
-bin/clang/lib
+{% if ix_boot_path %}
+  {% if ix_boot_tool('clang++') %}
+    bin/clang/lib
+  {% elif ix_boot_tool('g++') %}
+    bin/gcc/env
+  {% else %}
+    {{error('can not find suitable bootstrap compiler')}}
+  {% endif %}
+{% else %}
+# not bootstrap tools for fake runner
+{% endif %}
 {% endblock %}

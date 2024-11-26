@@ -2,6 +2,7 @@ import os
 import sys
 
 import core.repo as cr
+import core.utils as cu
 import core.execute as ce
 
 
@@ -36,5 +37,6 @@ class Ops:
     def fix(self, sb, node):
         return node
 
+    @cu.cached_method
     def boot_path(self):
         return os.environ['PATH']
