@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://mirrors.edge.kernel.org/pub/linux/libs/ell/ell-0.70.tar.xz
-sha:1bb7f5d73df34b46c4dd340fec98442d7dac2a7b4ce0ee3fc779ca2fbe6fe591
+https://mirrors.edge.kernel.org/pub/linux/libs/ell/ell-0.71.tar.xz
+sha:850f79cc993791f00232fd31cbaf3e8212edcef25ca0515f98c6d48dfb5952d7
 {% endblock %}
 
 {% block lib_deps %}
