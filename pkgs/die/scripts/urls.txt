@@ -113,6 +113,7 @@ http://www.haproxy.org/download/3.0/src/haproxy-3.0.2.tar.gz
 http://www.haproxy.org/download/3.0/src/haproxy-3.0.3.tar.gz
 http://www.haproxy.org/download/3.0/src/haproxy-3.0.4.tar.gz
 http://www.haproxy.org/download/3.0/src/haproxy-3.0.5.tar.gz
+http://www.haproxy.org/download/3.1/src/haproxy-3.1.0.tar.gz
 http://www.ijg.org/files/jpegsrc.v9e.tar.gz
 http://www.inf.puc-rio.br/~roberto/lpeg/lpeg-1.1.0.tar.gz
 http://www.jedrea.com/chmlib/chmlib-0.40.tar.bz2
@@ -2455,6 +2456,7 @@ https://github.com/pg83/ssh3/archive/068856ab41189b28ea8c93547d5e27356f882690.zi
 https://github.com/pg83/ssh3/archive/75d80cf4e6a372ffed22a2254f6e3d67373fdc61.zip
 https://github.com/pg83/ssh3/archive/d900eb49a68945f924d6308765eead9f9eec7c27.zip
 https://github.com/pg83/ted/archive/refs/tags/v6.tar.gz
+https://github.com/pg83/yaboot/archive/refs/tags/1.tar.gz
 https://github.com/phase1geo/Minder/archive/refs/tags/1.16.4.tar.gz
 https://github.com/phillipberndt/pqiv/archive/refs/tags/2.12.tar.gz
 https://github.com/phillipberndt/pqiv/archive/refs/tags/2.13.1.tar.gz
