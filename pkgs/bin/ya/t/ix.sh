@@ -2,6 +2,7 @@
 
 {% block bld_tool %}
 bld/python
+bin/ya/java
 bin/ya/clang
 bin/clang/18
 bin/ya/wrapper
@@ -25,7 +26,7 @@ EMBED_SBOM=no
 USE_ICONV=static
 YMAKE_USE_PY3=yes
 YA_OPENSOURCE=yes
-USE_SYSTEM_JDK=/usr
+USE_SYSTEM_JDK=${YA_JAVA_DIR}
 OPENSOURCE_PROJECT=ya
 YMAKE_EXCLUDE_IDL_TOOL=yes
 {% endblock %}
@@ -40,6 +41,7 @@ make
 -D{{x}}
 --host-platform-flag={{x}}
 {% endfor %}
+devtools/ymake/bin
 devtools/ya/bin
 {% endblock %}
 
@@ -49,7 +51,7 @@ devtools/ya/bin
 
 {% block install %}
 mkdir ${out}/bin
-cp devtools/ya/bin/ya-bin ${out}/bin/
+cp devtools/ya/bin/ya-bin devtools/ymake/bin/ymake ${out}/bin/
 {% endblock %}
 
 {% block patch %}
