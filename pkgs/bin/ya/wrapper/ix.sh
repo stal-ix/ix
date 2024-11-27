@@ -1,0 +1,1 @@
+{% extends '//die/gen.sh' %}
