@@ -5,11 +5,11 @@ https://github.com/yandex/yatool
 {% endblock %}
 
 {% block git_commit %}
-326a61a16480c9e5dd91fb09844388c72443e78a
+ff47bb5d587380afbc57da8a463f5f394ee8b528
 {% endblock %}
 
 {% block git_sha %}
-c57c9998443e4e8bdf5b3b1c33df643993116b8d96ddea9735fb8ac55db45737
+8c53df0645d6127a109f48aa63a7578019967496b0b62b724ac0cc564ea13bd3
 {% endblock %}
 
 {% block bld_tool %}
@@ -49,12 +49,14 @@ EMBED_SBOM=no
 YMAKE_USE_PY3=yes
 USE_ARCADIA_PYTHON=yes
 USE_PYTHON3=yes
+OBJCOPY_TOOL=${YA_OBJCOPY}
+OBJDUMP_TOOL=${YA_OBJDUMP}
+STRIP_TOOL=${YA_STRIP}
 {% endblock %}
 
 {% block ya_make_cmd %}
 ya-bin
 make
--k
 -rT
 --musl
 {% for x in ix.parse_list(self.ya_make_flags()) %}
@@ -66,7 +68,7 @@ make
 --c-compiler=${YA_CLANG}
 --ymake-bin=${YA_YMAKE}
 --no-yt-store
-devtools/ymake/bin
+devtools/ya/bin
 {% endblock %}
 
 {% block build %}
@@ -74,6 +76,9 @@ export YA_YMAKE=$(which ymake)
 export YA_PYTHON=$(which python3)
 export YA_CLANG=$(which clang)
 export YA_CLANGXX=$(which clang++)
+export YA_OBJCOPY=$(which llvm-objcopy)
+export YA_OBJDUMP=$(which llvm-objdump)
+export YA_STRIP=$(which llvm-strip)
 export YA_TC=no
 export YA_NO_RESPAWN=1
 export YA_CACHE_DIR=${tmp}/ya
@@ -81,5 +86,12 @@ export YA_CACHE_DIR=${tmp}/ya
 {% endblock %}
 
 {% block install %}
-exit 1
+mkdir ${out}/bin
+cp devtools/ya/bin/ya-bin ${out}/bin/
+{% endblock %}
+
+{% block patch %}
+sed -e 's|.*NEED_BINUTILS_PEERDIR=yes.*||' \
+    -e 's|.*BINUTILS_ROOT_RESOURCE_GLOBAL.*||' \
+    -i build/ymake.core.conf
 {% endblock %}
