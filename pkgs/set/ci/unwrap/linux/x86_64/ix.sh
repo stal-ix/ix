@@ -46,6 +46,7 @@
 #}
 
 {% block run_deps %}
+bin/ya
 bin/deya
 bin/scx/rust/land/runit
 bin/sys/hud
