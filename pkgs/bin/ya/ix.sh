@@ -28,10 +28,5 @@ bin/ya/1
 {% endblock %}
 
 {% block ya_make_targets %}
-devtools/ymake/bin
-{% endblock %}
-
-{% block install %}
-mkdir ${out}/bin
-cp devtools/ymake/bin/ymake ${out}/bin/
+devtools/ymake/bin/ymake
 {% endblock %}

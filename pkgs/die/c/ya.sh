@@ -22,6 +22,9 @@ export CONLYFLAGS=
 {% block ya_make_flags %}
 {% endblock %}
 
+{% block ya_make_targets %}
+{% endblock %}
+
 {% block ya_make_cmd %}
 ya
 make
@@ -31,10 +34,18 @@ make
 -D{{x}}
 --host-platform-flag={{x}}
 {% endfor %}
-{% block ya_make_targets %}
-{% endblock %}
+{% for x in ix.parse_list(self.ya_make_targets()) %}
+{{x | dirname}}
+{% endfor %}
 {% endblock %}
 
 {% block build %}
 {{ix.fix_list(self.ya_make_cmd())}}
+{% endblock %}
+
+{% block install %}
+mkdir ${out}/bin
+{% for x in ix.parse_list(self.ya_make_targets()) %}
+cp {{x}} ${out}/bin/
+{% endfor %}
 {% endblock %}
