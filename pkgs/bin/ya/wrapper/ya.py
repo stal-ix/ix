@@ -19,9 +19,15 @@ def it_extra_d(args):
     yield 'BUILD_PYTHON_BIN', sys.executable
     yield 'USE_ARCADIA_PYTHON', 'yes'
     yield 'USE_PYTHON3', 'yes'
-    yield 'OBJCOPY_TOOL', which('llvm-objcopy')
-    yield 'OBJDUMP_TOOL', which('llvm-objdump')
-    yield 'STRIP_TOOL', which('llvm-strip')
+    x = which('llvm-objcopy')
+    yield 'OBJCOPY_TOOL', x
+    yield 'OBJCOPY_TOOL_VENDOR', x
+    x = which('llvm-objdump')
+    yield 'OBJDUMP_TOOL', x
+    yield 'OBJDUMP_TOOL_VENDOR', x
+    x = which('llvm-strip')
+    yield 'STRIP_TOOL', x
+    yield 'STRIP_TOOL_VENDOR', x
 
     if '--musl' in args:
         yield 'MUSL', 'yes'

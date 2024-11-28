@@ -26,3 +26,10 @@ extract 1 ${src}/1.tar.gz
 bin/ya/0
 {{super()}}
 {% endblock %}
+
+{% block patch %}
+{{super()}}
+sed -e 's|.*NEED_BINUTILS_PEERDIR=yes.*||' \
+    -e 's|.*BINUTILS_ROOT_RESOURCE_GLOBAL.*||' \
+    -i build/ymake.core.conf
+{% endblock %}

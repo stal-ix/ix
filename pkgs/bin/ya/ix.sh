@@ -10,11 +10,11 @@ https://github.com/yandex/yatool
 {% endblock %}
 
 {% block git_commit %}
-702f80b1a7d3500072cc3a0d65b2bcff6cd6f4e5
+eea1fb8c884fb069deea75baf3bcc470975d8876
 {% endblock %}
 
 {% block git_sha %}
-8655dee89e25e68a21f4caaf4315529415ebd593ecbd7ce5d0a99960ce653f46
+99dbbe3254724b10d845f8878b2158a213eaf65dcb6d8bba7bf7e44f709b3dba
 {% endblock %}
 
 {% block step_unpack %}
@@ -23,6 +23,6 @@ extract 1 ${src}/1.tar.gz
 {% endblock %}
 
 {% block bld_tool %}
-bin/ya/1
+bin/ya/0
 {{super()}}
 {% endblock %}

@@ -53,9 +53,3 @@ devtools/ya/bin
 mkdir ${out}/bin
 cp devtools/ya/bin/ya-bin devtools/ymake/bin/ymake ${out}/bin/
 {% endblock %}
-
-{% block patch %}
-sed -e 's|.*NEED_BINUTILS_PEERDIR=yes.*||' \
-    -e 's|.*BINUTILS_ROOT_RESOURCE_GLOBAL.*||' \
-    -i build/ymake.core.conf
-{% endblock %}
