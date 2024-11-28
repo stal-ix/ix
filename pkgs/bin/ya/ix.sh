@@ -23,6 +23,15 @@ extract 1 ${src}/1.tar.gz
 {% endblock %}
 
 {% block bld_tool %}
-bin/ya/0
+bin/ya/1
 {{super()}}
+{% endblock %}
+
+{% block ya_make_targets %}
+devtools/ymake/bin
+{% endblock %}
+
+{% block install %}
+mkdir ${out}/bin
+cp devtools/ymake/bin/ymake ${out}/bin/
 {% endblock %}

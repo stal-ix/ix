@@ -10,11 +10,11 @@ https://github.com/yandex/yatool
 {% endblock %}
 
 {% block git_commit %}
-ff47bb5d587380afbc57da8a463f5f394ee8b528
+eea1fb8c884fb069deea75baf3bcc470975d8876
 {% endblock %}
 
 {% block git_sha %}
-8c53df0645d6127a109f48aa63a7578019967496b0b62b724ac0cc564ea13bd3
+99dbbe3254724b10d845f8878b2158a213eaf65dcb6d8bba7bf7e44f709b3dba
 {% endblock %}
 
 {% block step_unpack %}
@@ -27,9 +27,12 @@ bin/ya/0
 {{super()}}
 {% endblock %}
 
-{% block patch %}
-{{super()}}
-sed -e 's|.*NEED_BINUTILS_PEERDIR=yes.*||' \
-    -e 's|.*BINUTILS_ROOT_RESOURCE_GLOBAL.*||' \
-    -i build/ymake.core.conf
+{% block ya_make_targets %}
+devtools/ya/bin
+devtools/ymake/bin
+{% endblock %}
+
+{% block install %}
+mkdir ${out}/bin
+cp devtools/ya/bin/ya-bin devtools/ymake/bin/ymake ${out}/bin/
 {% endblock %}
