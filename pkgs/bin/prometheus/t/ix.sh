@@ -1,11 +1,11 @@
 {% extends '//die/go/build.sh' %}
 
 {% block go_url %}
-https://github.com/prometheus/prometheus/archive/refs/tags/v2.55.1.tar.gz
+https://github.com/prometheus/prometheus/archive/refs/tags/v3.0.1.tar.gz
 {% endblock %}
 
 {% block go_sha %}
-56840537c836bf5b12a14bc35e224ede419ab7ed1cf180c1dc78871d8b78b69b
+8ba4235173f46e52102576c5ce6ae8422aa2446e23c34f0e7282ead5f5a97418
 {% endblock %}
 
 {% block go_tool %}

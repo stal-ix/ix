@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://dev-www.libreoffice.org/src/libcdr/libcdr-0.1.7.tar.xz
-sha:5666249d613466b9aa1e987ea4109c04365866e9277d80f6cd9663e86b8ecdd4
+https://dev-www.libreoffice.org/src/libcdr/libcdr-0.1.8.tar.xz
+sha:ced677c8300b29c91d3004bb1dddf0b99761bf5544991c26c2ee8f427e87193c
 {% endblock %}
 
 {% block lib_deps %}

@@ -105,6 +105,7 @@ class Env(jinja2.Environment):
         self.filters['jd'] = json.dumps
         self.filters['group_by'] = lambda x, y: group_by(y)(x)
         self.filters['basename'] = os.path.basename
+        self.filters['dirname'] = os.path.dirname
         self.filters['ser'] = self.ser
         self.filters['des'] = self.des
         self.filters['lines'] = lambda x: list(x.strip().split('\n'))
