@@ -125,7 +125,19 @@ def fetch_url_curl(args, url, out, tout):
 
     print(f'run {cmd}')
 
-    return subprocess.check_call(cmd, shell=False)
+    try:
+        print(subprocess.check_output(cmd, stderr=subprocess.STDOUT))
+    except subprocess.CalledProcessError as e:
+        o = []
+
+        o.append(str(e))
+
+        try:
+            o.append(e.output.decode())
+        except Exception:
+            pass
+
+        raise Exception('\n'.join(o))
 
 
 def iter_ff_0():
