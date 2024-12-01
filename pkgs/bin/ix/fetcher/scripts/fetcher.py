@@ -126,7 +126,7 @@ def fetch_url_curl(args, url, out, tout):
     print(f'run {cmd}')
 
     try:
-        print(subprocess.check_output(cmd, stderr=subprocess.STDOUT))
+        sys.stdout.buffer.write(subprocess.check_output(cmd, stderr=subprocess.STDOUT))
     except subprocess.CalledProcessError as e:
         o = []
 
