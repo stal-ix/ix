@@ -17,3 +17,11 @@ lib/pci/utils
 bld/gettext
 bld/auto/archive
 {% endblock %}
+
+{% block configure %}
+{{super()}}
+cat << EOF > po/Makefile
+all:
+install:
+EOF
+{% endblock %}
