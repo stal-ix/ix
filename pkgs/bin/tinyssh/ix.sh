@@ -1,8 +1,8 @@
 {% extends '//die/c/make.sh' %}
 
 {% block fetch %}
-https://github.com/janmojzis/tinyssh/archive/refs/tags/20241111.tar.gz
-sha:c33e0c2a403058c70a279a6c0c0b65fba5d54f9217f51ddce04d0d7fed73abac
+https://github.com/janmojzis/tinyssh/archive/refs/tags/20241201.tar.gz
+sha:cfd8ef3553f07886723823f3e0c2c5a773f29d1eb5be1fb57fe4a9a5ef89db21
 {% endblock %}
 
 {% block bld_libs %}
