@@ -1,8 +1,8 @@
 {% extends '//lib/cap/t/ix.sh' %}
 
 {% block fetch %}
-https://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2/libcap-2.72.tar.gz
-sha:4a0f4874fa920aede6e7f9c7ef53e116bb9fb8d295aca86ffc813fea40a2e2a7
+https://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2/libcap-2.73.tar.gz
+sha:16d8e4e625d2a2ed1601172704c560de3745bac64ab1384a8074379c03165948
 {% endblock %}
 
 {% block host_libs %}
@@ -13,13 +13,6 @@ lib/c
 {% block unpack %}
 {{super()}}
 cd libcap
-{% endblock %}
-
-{% block cpp_defines %}
-{{super()}}
-{% if aarch64 or riscv64 %}
-SYS_getdents=SYS_getdents64
-{% endif %}
 {% endblock %}
 
 {% block make_flags %}
