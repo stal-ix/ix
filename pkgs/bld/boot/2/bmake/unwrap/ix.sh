@@ -52,8 +52,7 @@ EOF
 {% endblock %}
 
 {% block build %}
-${CC} -w -I. \
-    ${CPPFLAGS} ${CFLAGS} ${LDFLAGS}      \
+cc -w -I. \
     -DHAVE_CONFIG_H                       \
     -DMAKE_NATIVE                         \
     -DUSE_META                            \
@@ -65,5 +64,5 @@ ${CC} -w -I. \
     meta.c metachar.c parse.c sigcompat.c \
     str.c stresep.c suff.c targ.c trace.c \
     util.c var.c                          \
-    -o ${out}/bin/bmake
+    -o ${out}/bin/make
 {% endblock %}

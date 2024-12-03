@@ -7,7 +7,7 @@ bld/boot/2/env
 {% block install %}
 mkdir ${out}/bin
 
-{% for x in ['clang', 'clang++', 'clang-cpp', 'llvm-ar', 'llvm-nm', 'llvm-ranlib'] %}
+{% for x in ['clang', 'clang++', 'clang-cpp', 'llvm-ar', 'llvm-nm', 'llvm-ranlib', 'gcc', 'g++', 'ar', 'nm', 'ranlib', 'as', 'ld', 'cpp'] %}
 cat << EOF > ${out}/bin/{{x}}
 #!/usr/bin/env sh
 export PATH={{ix_boot_path}}

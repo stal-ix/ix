@@ -5,6 +5,7 @@ bld/boot/5/lib/compiler_rt
 {% endblock %}
 
 {% block bld_deps %}
+bld/boot/5/sed
 bld/boot/5/patch
 bld/boot/5/byacc
 bld/boot/5/mawk

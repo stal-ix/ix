@@ -1,16 +1,14 @@
 {% extends '//bin/make/old/ix.sh' %}
 
-{% block make_bin %}
-bmake
-{% endblock %}
-
 {% block make_no_thrs %}{% endblock %}
 
 {% block bld_libs %}
-bld/boot/1/lib/c
+bld/boot/2/lib/c
 {% endblock %}
 
 {% block bld_deps %}
+bld/boot/3/sh
+bld/boot/3/cc
 bld/boot/2/env
 {% endblock %}
 
@@ -18,8 +16,4 @@ bld/boot/2/env
 {% if linux %}
 >lib/fnmatch.c
 {% endif %}
-{% endblock %}
-
-{% block script_exec %}
-["/usr/bin/env", "PATH={{ix_boot_path}}", "/bin/sh", "-s"]
 {% endblock %}

@@ -10,7 +10,7 @@ source_env() {
 }
 
 fast_rm() (
-    mv "${2}" "{{trash_dir}}/${IX_RANDOM}_${1}" || true
+    mv "${2}" "{{trash_dir}}/${IX_RANDOM}_${1}" || rm -rf "${2}"
 )
 
 prepare_f() {
