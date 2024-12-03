@@ -1,8 +1,12 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://www.cairographics.org/releases/pixman-0.44.0.tar.gz
-sha:89a4c1e1e45e0b23dffe708202cb2eaffde0fe3727d7692b2e1739fec78a7dac
+https://www.cairographics.org/releases/pixman-0.44.2.tar.gz
+sha:6349061ce1a338ab6952b92194d1b0377472244208d47ff25bef86fc71973466
+{% endblock %}
+
+{% block meson_tool %}
+bld/meson/4
 {% endblock %}
 
 {% block lib_deps %}
