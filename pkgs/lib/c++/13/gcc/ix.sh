@@ -1,6 +1,6 @@
-{% extends '//lib/c++/13/ix.sh' %}
+{% extends '//die/hub.sh' %}
 
-{% block setup_target_flags %}
-{{super()}}
-export CXXFLAGS="-std=c++14 ${CXXFLAGS}"
+{% block lib_deps %}
+lib/c++/13/gcc/base
+lib/c++/13/gcc/shim
 {% endblock %}
