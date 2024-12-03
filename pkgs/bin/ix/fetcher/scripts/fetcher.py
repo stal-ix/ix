@@ -136,15 +136,13 @@ def fetch_url_curl(args, url, out, tout):
 
     try:
         out = subprocess.check_output(cmd, stderr=subprocess.STDOUT)
-
-        if b'The requested URL returned error' in out:
-            raise Exception(safe_decode(out))
-        else:
-            sys.stdout.buffer.write(out)
     except subprocess.CalledProcessError as e:
-        descr = [str(e), safe_decode(e.output)]
+        raise Exception('\n'.join([str(e), safe_decode(e.output)]))
 
-        raise Exception('\n'.join(descr))
+    if b'The requested URL returned error' in out:
+        raise Exception(safe_decode(out))
+
+    sys.stdout.buffer.write(out)
 
 
 def iter_ff_0():
