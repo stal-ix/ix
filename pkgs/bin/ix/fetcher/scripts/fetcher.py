@@ -88,12 +88,12 @@ def do_fetch(url, path, sha, *mirrors):
                 print(f'while fetching cached {url}, with {sha}: {e}')
             else:
                 if '404' in str(e):
-                    raise Exception(f'can not fetch {url}: {e}')
+                    raise Exception(f'can not fetch {url}:\n{e}'.strip())
 
                 if 'checksum' in str(e):
                     raise e
 
-                print(f'while fetching {url}: {e}, will retry')
+                print(f'while fetching {url}:\n{e}\nwill retry')
 
             time.sleep(1)
 
@@ -112,6 +112,15 @@ def tout_prefix(tout):
     return ['timeout', str(tout) + 's']
 
 
+def safe_decode(s):
+    try:
+        return s.decode()
+    except Exception:
+        pass
+
+    return str(s)
+
+
 def fetch_url_curl(args, url, out, tout):
     cmd = tout_prefix(tout) + [
         'curl',
@@ -126,18 +135,16 @@ def fetch_url_curl(args, url, out, tout):
     print(f'run {cmd}')
 
     try:
-        sys.stdout.buffer.write(subprocess.check_output(cmd, stderr=subprocess.STDOUT))
+        out = subprocess.check_output(cmd, stderr=subprocess.STDOUT)
+
+        if b'The requested URL returned error' in out:
+            raise Exception(safe_decode(out))
+        else:
+            sys.stdout.buffer.write(out)
     except subprocess.CalledProcessError as e:
-        o = []
+        descr = [str(e), safe_decode(e.output)]
 
-        o.append(str(e))
-
-        try:
-            o.append(e.output.decode())
-        except Exception:
-            pass
-
-        raise Exception('\n'.join(o))
+        raise Exception('\n'.join(descr))
 
 
 def iter_ff_0():
