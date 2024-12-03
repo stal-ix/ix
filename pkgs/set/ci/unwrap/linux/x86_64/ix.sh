@@ -46,6 +46,7 @@
 #}
 
 {% block run_deps %}
+bin/rtorrent
 bin/ya
 bin/deya
 bin/scx/rust/land/runit
