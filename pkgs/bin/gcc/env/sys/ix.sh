@@ -40,5 +40,9 @@ setup_ar() {
     export OBJCOPY=objcopy
     export OBJDUMP=objdump
     export STRIP=strip
+
+    ln -s $(which ar) ar
+    ln -s $(which nm) nm
+    ln -s $(which ranlib) ranlib
 }
 {% endblock %}

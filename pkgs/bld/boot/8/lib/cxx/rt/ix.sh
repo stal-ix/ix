@@ -17,6 +17,14 @@ bld/boot/7/env/std
 {% endblock %}
 
 {% block build %}
+cat << EOF > src/terminate.cc
+#include <stdlib.h>
+
+extern "C" void __cxa_call_terminate() {
+    abort();
+}
+EOF
+
 for s in src/*.cc; do
     c++ -std=c++11 -c ${s}
 done
@@ -24,6 +32,8 @@ done
 for s in src/*.c; do
     cc -c ${s}
 done
+
+ls -la *.o
 
 ar qs libcxxrt.a *.o
 {% endblock %}
