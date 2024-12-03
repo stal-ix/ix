@@ -10,10 +10,20 @@ lib/darwin/framework/CoreFoundation
 {% endif %}
 {% endblock %}
 
+{% block llvm_projects %}
+clang
+lld
+polly
+{% if 'flang' in self.llvm_all_targets() %}
+flang
+{% endif %}
+{{llvm_extra_projects}}
+{% endblock %}
+
 {% block cmake_flags %}
 {{super()}}
 LLVM_ENABLE_TERMINFO=OFF
-LLVM_ENABLE_PROJECTS="clang;lld;polly"
+LLVM_ENABLE_PROJECTS="{{';'.join(ix.parse_list(self.llvm_projects()))}}"
 CLANG_ENABLE_STATIC_ANALYZER=OFF
 CLANG_ENABLE_ARCMT=OFF
 {% endblock %}
@@ -22,17 +32,18 @@ CLANG_ENABLE_ARCMT=OFF
 llvm
 {% endblock %}
 
-{% set targets %}
+{% block llvm_all_targets %}
 {% block llvm_targets %}
 {% endblock %}
-{% endset %}
+{{llvm_extra_targets}}
+{% endblock %}
 
 {% block ninja_build_targets %}
-{{targets}}
+{{self.llvm_all_targets()}}
 {% endblock %}
 
 {% block ninja_install_targets %}
-{% for t in ix.parse_list(targets) %}
+{% for t in ix.parse_list(self.llvm_all_targets()) %}
 install-{{t}}
 {% endfor %}
 {% endblock %}
