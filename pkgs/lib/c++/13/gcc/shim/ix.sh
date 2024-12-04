@@ -4,7 +4,7 @@
 {% endblock %}
 
 {% block lib_deps %}
-lib/c
+lib/c/naked
 {% endblock %}
 
 {% block step_unpack %}
