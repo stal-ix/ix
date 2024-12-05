@@ -11,7 +11,6 @@ mkdir ${out}/bin
 ln -s {{ix_boot_tool(x)}} ${out}/bin/{{x}}
 {% endif %}
 {% endfor %}
-chmod +x ${out}/bin/*
 {% endblock%}
 
 {% block script_exec %}
