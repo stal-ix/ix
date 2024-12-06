@@ -43,8 +43,10 @@ def parse_urls(urls):
 
 @functools.lru_cache
 def ix_which(cmd, path):
-    print(cmd, path)
-    return shutil.which(cmd, path=path)
+    if ret := shutil.which(cmd, path=path):
+        # print(ret)
+
+        return ret
 
 
 class RenderContext:
