@@ -24,9 +24,12 @@ ln -s {{ix_boot_tool(x)}} ${out}/bin/{{x}}
 {% else %}
 error('shit happen')
 {% endif %}
-ls -la ${out}/bin/
+find ${out} > ${out}/lst
 {% endblock%}
 
+{% block postinstall %}
+echo 'no postinstall'
+{% endblock %}
 
 {% block script_exec %}
 ["/usr/bin/env", "PATH={{ix_boot_path}}", "/bin/sh", "-s"]
