@@ -12,24 +12,26 @@ mkdir ${out}/bin
 {% if not ix_boot_tool(x) %}
 {{error(x + ' not in path')}}
 {% endif %}
-ln -s {{ix_boot_tool(x)}} ${out}/bin/{{x}}
+cat << EOF > ${out}/bin/{{x}}
+#!/usr/bin/env sh
+exec {{ix_boot_tool(x)}} "\${@}"
+EOF
 {% endfor %}
 {% elif ix_boot_tool('g++') %}
 {% for x in ['gcc', 'g++', 'ar', 'nm', 'ranlib', 'as', 'ld', 'cpp'] %}
 {% if not ix_boot_tool(x) %}
 {{error(x + ' not in path')}}
 {% endif %}
-ln -s {{ix_boot_tool(x)}} ${out}/bin/{{x}}
+cat << EOF > ${out}/bin/{{x}}
+#!/usr/bin/env sh
+exec {{ix_boot_tool(x)}} "\${@}"
+EOF
 {% endfor %}
 {% else %}
 error('shit happen')
 {% endif %}
-find ${out} > ${out}/lst
+chmod +x ${out}/bin/*
 {% endblock%}
-
-{% block postinstall %}
-echo 'no postinstall'
-{% endblock %}
 
 {% block script_exec %}
 ["/usr/bin/env", "PATH={{ix_boot_path}}", "/bin/sh", "-s"]
