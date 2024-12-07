@@ -1,9 +1,5 @@
 {% extends '//bin/sbase/t/ix.sh' %}
 
-{% block make_bin %}
-bmake
-{% endblock %}
-
 {% block make_no_thrs %}
 {% endblock %}
 
@@ -42,7 +38,7 @@ chroot=printf
 {% endblock %}
 
 {% block make_flags %}
-CC=${CC}
+CC=cc
 AR=${AR}
 RANLIB=${RANLIB}
 CFLAGS="${CFLAGS} ${CPPFLAGS}"

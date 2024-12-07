@@ -27,6 +27,8 @@ setup_tc_here
 {% endblock %}
 
 {% block build %}
+export CC=cc
+
 . ./build.sh
 
 cat << EOF > mv.c

@@ -112,6 +112,7 @@ class Env(jinja2.Environment):
         self.filters['eval'] = self.eval
         self.filters['defined'] = flt_defined
         self.filters['strip_prefix'] = flt_strip_prefix
+        self.filters['print'] = print
         self.kv = {}
 
     def eval(self, v, code, *args):

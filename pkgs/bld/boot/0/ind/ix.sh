@@ -5,7 +5,7 @@
   {% if ix_boot_tool('clang++') %}
     bin/clang/lib
   {% elif ix_boot_tool('g++') %}
-    bin/gcc/env
+    bin/gcc/env/sys
   {% else %}
     {{error('can not find suitable bootstrap compiler')}}
   {% endif %}

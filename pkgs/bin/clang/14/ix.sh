@@ -21,13 +21,11 @@ LLVM_TARGETS_TO_BUILD={{target.llvm_target}}
 {% endif %}
 {% endblock %}
 
-{% set clang_export_ver %}
 {% block clang_export_ver %}
 14.0.0
 {% endblock %}
-{% endset %}
 
 {% block env %}
 {{super()}}
-export CLANG_VERSION={{clang_export_ver.strip()}}
+export CLANG_VERSION={{self.clang_export_ver().strip()}}
 {% endblock %}

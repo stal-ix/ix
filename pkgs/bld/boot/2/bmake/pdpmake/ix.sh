@@ -19,5 +19,5 @@ cd p*
 
 {% block build %}
 mkdir ${out}/bin
-${CC} -w ${CPPFLAGS} ${CFLAGS} ${LDFLAGS} *.c -o ${out}/bin/bmake
+${CC} -w ${CPPFLAGS} ${CFLAGS} ${LDFLAGS} *.c -o ${out}/bin/make
 {% endblock %}

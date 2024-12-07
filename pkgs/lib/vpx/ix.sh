@@ -13,7 +13,7 @@ lib/c++
 {% block bld_tool %}
 bld/perl
 bld/nasm
-bld/elfutils
+bld/fake/binutils
 {% endblock %}
 
 {% block configure %}
