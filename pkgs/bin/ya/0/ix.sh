@@ -42,6 +42,12 @@ export CONLYFLAGS=
 extract 0 ${src}/1.tar.gz
 mv yaboot* y
 mv y/Makefile ./
+sed -e 's|-DXXXX|-DNDEBUG -O1|g' \
+    -e 's|-g -ggnu-pubnames||g' \
+    -e 's|-O3||g' \
+    -e 's|-fdebug-prefix-map=.*-pipe|-pipe|' \
+    -e 's|-UNDEBUG||g' \
+    -i Makefile
 mkdir -p ${tmp}/devtools/ymake/lang
 mv y/generated/* ${tmp}/devtools/ymake/lang/
 touch ${tmp}/devtools/ymake/lang/*
