@@ -31,6 +31,7 @@ def it_extra_d(args):
 
     if '--musl' in args:
         yield 'MUSL', 'yes'
+        yield 'USE_ICONV', 'static'
 
 def it_flags(args):
     for k, v in it_extra_d(args):
