@@ -2418,6 +2418,7 @@ https://github.com/noocsharp/wayclip/archive/refs/tags/0.4.2.tar.gz
 https://github.com/notofonts/notofonts.github.io/archive/refs/tags/noto-monthly-release-24.8.1.tar.gz
 https://github.com/npm/cli/archive/refs/tags/v10.4.0.tar.gz
 https://github.com/npm/cli/archive/refs/tags/v10.9.1.tar.gz
+https://github.com/npm/cli/archive/refs/tags/v10.9.2.tar.gz
 https://github.com/npm/cli/archive/refs/tags/v9.8.0.tar.gz
 https://github.com/npm/cli/archive/refs/tags/v9.8.1.tar.gz
 https://github.com/numactl/numactl/archive/refs/tags/v2.0.16.tar.gz
