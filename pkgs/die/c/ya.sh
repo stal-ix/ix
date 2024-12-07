@@ -10,6 +10,7 @@ bld/fake/binutils
 
 {% block script_init_env %}
 {{super()}}
+export ENFORCE_TTY=1
 export CFLAGS=
 export LDFLAGS=
 export CTRFLAGS=
