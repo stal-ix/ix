@@ -1,8 +1,8 @@
 {% extends '//die/std/ix.sh' %}
 
 {% block bld_tool %}
+bin/ya/clang(ya_c_flags={{self.ya_c_flags().strip()}})
 bld/python
-bin/ya/clang
 bin/clang/18
 bin/ya/wrapper
 bld/fake/binutils
@@ -10,6 +10,7 @@ bld/fake/binutils
 
 {% block script_init_env %}
 {{super()}}
+export ENFORCE_TTY=1
 export CFLAGS=
 export LDFLAGS=
 export CTRFLAGS=
@@ -17,6 +18,9 @@ export OPTFLAGS=
 export CPPFLAGS=
 export CXXFLAGS=
 export CONLYFLAGS=
+{% endblock %}
+
+{% block ya_c_flags %}
 {% endblock %}
 
 {% block ya_make_flags %}
