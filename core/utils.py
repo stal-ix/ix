@@ -17,17 +17,14 @@ B62 = string.digits + string.ascii_letters
 def b62(b):
     i = int.from_bytes(b, 'little')
 
-    while i:
+    for x in range(0, 22):
         yield B62[i % len(B62)]
 
         i //= len(B62)
 
 
 def string_hash(s):
-    res = ''.join(b62(hashlib.md5(s.encode()).digest()))
-    res = '0' * (22 - len(res)) + res
-
-    return res
+    return ''.join(b62(hashlib.md5(s.encode()).digest()))
 
 
 def struct_hash(d):
