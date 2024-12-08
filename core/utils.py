@@ -24,7 +24,10 @@ def b62(b):
 
 
 def string_hash(s):
-    return ''.join(b62(hashlib.md5(s.encode()).digest()))[:16]
+    res = ''.join(b62(hashlib.md5(s.encode()).digest()))
+    res = '0' * (22 - len(res)) + res
+
+    return res
 
 
 def struct_hash(d):
