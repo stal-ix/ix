@@ -4000,6 +4000,7 @@ https://www.sqlite.org/2024/sqlite-autoconf-3460000.tar.gz
 https://www.sqlite.org/2024/sqlite-autoconf-3460100.tar.gz
 https://www.sqlite.org/2024/sqlite-autoconf-3470000.tar.gz
 https://www.sqlite.org/2024/sqlite-autoconf-3470100.tar.gz
+https://www.sqlite.org/2024/sqlite-autoconf-3470200.tar.gz
 https://www.stunnel.org/downloads/stunnel-5.70.tar.gz
 https://www.stunnel.org/downloads/stunnel-5.71.tar.gz
 https://www.stunnel.org/downloads/stunnel-5.72.tar.gz
