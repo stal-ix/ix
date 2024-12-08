@@ -1,8 +1,8 @@
 {% extends '//die/c/make.sh' %}
 
 {% block fetch %}
-https://github.com/andikleen/mcelog/archive/refs/tags/v201.tar.gz
-sha:635a2bdce0801fc67f4c5df901daec6d3843226801615d809e56d9f3759ccbe9
+https://github.com/andikleen/mcelog/archive/refs/tags/v202.tar.gz
+sha:3d7efb1fbcb2d4db399d0d27a20cadb9e8f5f9311dba2f9e0f20ea3835cd8529
 {% endblock %}
 
 {% block bld_libs %}

@@ -1219,6 +1219,7 @@ https://github.com/andikleen/mcelog/archive/refs/tags/v198.tar.gz
 https://github.com/andikleen/mcelog/archive/refs/tags/v199.tar.gz
 https://github.com/andikleen/mcelog/archive/refs/tags/v200.tar.gz
 https://github.com/andikleen/mcelog/archive/refs/tags/v201.tar.gz
+https://github.com/andikleen/mcelog/archive/refs/tags/v202.tar.gz
 https://github.com/anholt/libepoxy/archive/refs/tags/1.5.10.tar.gz
 https://github.com/anrieff/libcpuid/archive/refs/tags/v0.6.3.tar.gz
 https://github.com/anrieff/libcpuid/archive/refs/tags/v0.6.4.tar.gz
