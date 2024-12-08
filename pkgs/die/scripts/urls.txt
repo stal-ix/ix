@@ -392,6 +392,7 @@ https://downloadmirror.intel.com/783534/acpica-unix-20230628.tar.gz
 https://downloads.scummvm.org/frs/scummvm/2.7.1/scummvm-2.7.1.tar.xz
 https://downloads.scummvm.org/frs/scummvm/2.8.0/scummvm-2.8.0.tar.xz
 https://downloads.scummvm.org/frs/scummvm/2.8.1/scummvm-2.8.1.tar.xz
+https://downloads.scummvm.org/frs/scummvm/2.9.0/scummvm-2.9.0.tar.xz
 https://downloads.sourceforge.net/gptfdisk/gptfdisk-1.0.10.tar.gz
 https://downloads.sourceforge.net/gptfdisk/gptfdisk-1.0.9.tar.gz
 https://downloads.sourceforge.net/hdparm/hdparm-9.64.tar.gz
