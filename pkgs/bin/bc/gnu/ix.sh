@@ -13,7 +13,7 @@ lib/readline
 {% endblock %}
 
 {% block bld_tool %}
-bld/ed
+bin/ed
 bld/flex
 bld/bash
 bld/byacc
@@ -29,4 +29,9 @@ bld/texinfo
 
 {% block patch %}
 rm bc/scan.c bc/bc.c bc/bc.h
+{% endblock %}
+
+{% block script_init_env %}
+{{super()}}
+export XDG_RUNTIME_DIR=${TMPDIR}
 {% endblock %}

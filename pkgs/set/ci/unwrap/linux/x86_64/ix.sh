@@ -434,7 +434,6 @@ bin/cmake/gui
 bin/cmake
 bin/dropbear
 bin/dropbear/runit
-bin/heirloom/ed
 bin/weston
 bin/slurp
 bin/mingetty/runit
