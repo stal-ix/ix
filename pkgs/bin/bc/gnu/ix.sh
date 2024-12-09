@@ -30,8 +30,3 @@ bld/texinfo
 {% block patch %}
 rm bc/scan.c bc/bc.c bc/bc.h
 {% endblock %}
-
-{% block script_init_env %}
-{{super()}}
-export XDG_RUNTIME_DIR=${TMPDIR}
-{% endblock %}

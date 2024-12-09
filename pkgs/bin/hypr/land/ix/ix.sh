@@ -14,8 +14,8 @@ ix.h
 {% block patch %}
 {{super()}}
 find . -type f | while read l; do
-    sed -e 's|"/tmp/hypr/"|(std::string(ix_temp_session_dir()) + "/")|g' \
-        -e 's|"/tmp/hypr"|ix_temp_session_dir()|g' \
+    sed -e 's|"/tmp/hypr/"|(std::string(ix_temp_dir()) + "/")|g' \
+        -e 's|"/tmp/hypr"|ix_temp_dir()|g' \
         -i ${l}
 done
 sed -e 's|.*udis.*||' -i meson.build

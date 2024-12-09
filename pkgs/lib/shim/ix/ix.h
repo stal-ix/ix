@@ -5,7 +5,6 @@ extern "C" {
 #endif
 
 const char* ix_temp_dir();
-const char* ix_temp_session_dir();
 const char* ix_uniq_socket();
 
 char* ix_mkstemp_template();

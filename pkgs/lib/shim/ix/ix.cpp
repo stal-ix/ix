@@ -36,14 +36,6 @@ namespace {
         return h->intern(s);
     }
 
-    static auto sessionDir() {
-        if (auto env = getenv("XDG_RUNTIME_DIR"); env) {
-            return std::string(env);
-        }
-
-        die("no XDG_RUNTIME_DIR in environment");
-    }
-
     static auto tmpDir() {
         if (auto env = getenv("TMPDIR"); env) {
             return std::string(env);
@@ -53,16 +45,12 @@ namespace {
     }
 
     static auto uniqSocket() {
-        return sessionDir() + "/socket." + std::to_string(getpid());
+        return tmpDir() + "/socket." + std::to_string(getpid());
     }
 
     static auto mkstempTemplate() {
-        return sessionDir() + "/" + std::to_string(getpid()) + ".XXXXXX";
+        return tmpDir() + "/" + std::to_string(getpid()) + ".XXXXXX";
     }
-}
-
-extern "C" const char* ix_temp_session_dir() {
-    return intern(sessionDir());
 }
 
 extern "C" const char* ix_temp_dir() {
@@ -78,18 +66,22 @@ extern "C" char* ix_mkstemp_template() {
 }
 
 extern "C" int ix_mkstemp() {
-    auto name = mkstempTemplate();
-
 #if defined(__linux__)
-    if (auto fd = memfd_create(name.c_str(), 0); fd >= 0) {
-        return fd;
+    {
+        if (auto fd = memfd_create("mkstemp", 0); fd >= 0) {
+            return fd;
+        }
     }
 #endif
 
-    if (auto fd = mkstemp(name.data()); fd >= 0) {
-        unlink(name.data());
+    {
+        auto name = mkstempTemplate();
 
-        return fd;
+        if (auto fd = mkstemp(name.data()); fd >= 0) {
+            unlink(name.data());
+
+            return fd;
+        }
     }
 
     return -1;
