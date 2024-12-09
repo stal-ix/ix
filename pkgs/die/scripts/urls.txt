@@ -140,6 +140,7 @@ https://archive.apache.org/dist/apr/apr-util-1.6.2.tar.bz2
 https://archive.apache.org/dist/subversion/subversion-1.14.2.tar.bz2
 https://archive.apache.org/dist/subversion/subversion-1.14.3.tar.bz2
 https://archive.apache.org/dist/subversion/subversion-1.14.4.tar.bz2
+https://archive.apache.org/dist/subversion/subversion-1.14.5.tar.bz2
 https://archive.apache.org/dist/xerces/c/3/sources/xerces-c-3.2.4.tar.gz
 https://archive.apache.org/dist/xerces/c/3/sources/xerces-c-3.2.5.tar.gz
 https://archive.apache.org/dist/xerces/c/3/sources/xerces-c-3.3.0.tar.gz
