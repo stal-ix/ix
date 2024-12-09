@@ -2,7 +2,6 @@
 
 {% block script_body %}
 sed -xue
-export PATH=/ix/realm/boot/bin:/bin:/usr/bin:/usr/local/bin
 rm -rf ${out}
 mkdir ${out}
 cat << EOF > ${out}/env
@@ -14,5 +13,5 @@ EOF
 {% endblock %}
 
 {% block script_exec %}
-["/bin/sh", "-s"]
+["/usr/bin/env", "PATH={{ix_boot_path}}", "/bin/sh", "-s"]
 {% endblock %}
