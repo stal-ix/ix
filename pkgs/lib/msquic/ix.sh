@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/microsoft/msquic/archive/refs/tags/v2.4.5.tar.gz
-sha:5e0164422e5794b4c18af5de048ab33528ddb6267d8c65e10d875dd09bd29202
+https://github.com/microsoft/msquic/archive/refs/tags/v2.4.7.tar.gz
+sha:afc76d811d192b745388204bdd2a06a1cde621f54531854323ecda788703ccc6
 {% endblock %}
 
 {% block lib_deps %}
@@ -28,6 +28,7 @@ QUIC_SKIP_CI_CHECKS=ON
 
 {% block patch %}
 sed -e 's|QUIC_TLS STREQUAL "openssl"|0|' -i CMakeLists.txt
+sed -e 's|.*APPEND.*OTHER_TARGETS.*OpenSSL.*||' -i src/bin/CMakeLists.txt
 {% endblock %}
 
 {% block install %}
