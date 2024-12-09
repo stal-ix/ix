@@ -13,11 +13,11 @@ lib/readline
 {% endblock %}
 
 {% block bld_tool %}
+bld/ed
 bld/flex
 bld/bash
 bld/byacc
 bld/texinfo
-bin/heirloom/ed
 {% endblock %}
 
 {% block make_no_thrs %}
