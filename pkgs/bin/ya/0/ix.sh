@@ -56,7 +56,6 @@ touch ${tmp}/devtools/ymake/lang/*
 {% block build %}
 ulimit -s unlimited
 ulimit -a
-exit 1
 make SHELL=$(command -v sh) S=${PWD} B=${tmp} -j ${make_thrs} \
     ${tmp}/devtools/ymake/bin/ymake \
     ${tmp}/devtools/ya/bin/ya-bin
