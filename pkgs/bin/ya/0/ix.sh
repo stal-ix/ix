@@ -56,7 +56,7 @@ touch ${tmp}/devtools/ymake/lang/*
 
 {% block build %}
 strace -f make SHELL=$(command -v sh) S=${PWD} B=${tmp} -j ${make_thrs} \
-    ${tmp}/contrib/libs/musl/libcontrib-libs-musl.a >& log
+    ${tmp}/contrib/libs/musl/libcontrib-libs-musl.a 2>&1 >log
 # ${tmp}/devtools/ymake/bin/ymake
 # ${tmp}/devtools/ya/bin/ya-bin
 {% endblock %}
