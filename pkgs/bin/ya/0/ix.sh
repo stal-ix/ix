@@ -54,6 +54,7 @@ touch ${tmp}/devtools/ymake/lang/*
 {% endblock %}
 
 {% block build %}
+ulimit -s unlimited
 make S=${PWD} B=${tmp} -j ${make_thrs} \
     ${tmp}/devtools/ymake/bin/ymake \
     ${tmp}/devtools/ya/bin/ya-bin
