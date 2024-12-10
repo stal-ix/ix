@@ -69,11 +69,3 @@ SYS_close_range=436
 # https://github.com/NixOS/nix/pull/9997/commits/64cbd4c05a413eae55cde784594472f921fc7367
 export OPTFLAGS="${OPTFLAGS} -UNDEBUG"
 {% endblock %}
-
-{% block build %}
-# ARG_MAX
-set -x
-ulimit -s 1000000
-ulimit -s
-{{super()}}
-{% endblock %}

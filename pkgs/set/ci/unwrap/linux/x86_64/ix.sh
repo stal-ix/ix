@@ -48,8 +48,7 @@
 {% block run_deps %}
 bin/pixman
 bin/rtorrent
-#ARG_MAX
-#bin/ya
+bin/ya
 bin/deya
 bin/scx/rust/land/runit
 bin/sys/hud
@@ -945,7 +944,7 @@ bin/premake
 bin/efsw
 bin/lm/sensors
 bin/lowdown
-bin/nix
+#bin/nix
 bin/fusermount/3
 bin/fusermount/2
 bin/powertop
