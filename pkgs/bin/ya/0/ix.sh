@@ -48,6 +48,7 @@ sed -e 's|-DXXXX|-DNDEBUG -O1|g' \
     -e 's|-fdebug-prefix-map=.*-pipe|-pipe|' \
     -e 's|-UNDEBUG||g' \
     -i Makefile
+sed -e 's|mkdir |ulimit -a; mkdir |' -i Makefile
 mkdir -p ${tmp}/devtools/ymake/lang
 mv y/generated/* ${tmp}/devtools/ymake/lang/
 touch ${tmp}/devtools/ymake/lang/*
