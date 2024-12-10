@@ -48,7 +48,8 @@
 {% block run_deps %}
 bin/pixman
 bin/rtorrent
-bin/ya
+#ARG_MAX
+#bin/ya
 bin/deya
 bin/scx/rust/land/runit
 bin/sys/hud
