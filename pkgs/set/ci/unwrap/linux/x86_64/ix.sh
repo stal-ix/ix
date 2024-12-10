@@ -845,7 +845,7 @@ bin/lightgbm
 bin/dmidecode
 bin/qrencode
 bin/fswatch
-bin/xarchiver
+#bin/xarchiver
 bin/jasper
 bin/earlyoom
 bin/chrony
