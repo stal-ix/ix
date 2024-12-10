@@ -1,9 +1,8 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
-# ymake
-bin/ya/2
-# ya
-bin/ya/1
-bin/ya/wrapper
+bld/sh
+bin/wget
+bin/python/frozen
+bin/ix/upver/scripts
 {% endblock %}

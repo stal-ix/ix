@@ -48,7 +48,8 @@
 {% block run_deps %}
 bin/pixman
 bin/rtorrent
-bin/ya
+#ARG_MAX
+#bin/ya
 bin/deya
 bin/scx/rust/land/runit
 bin/sys/hud
@@ -434,7 +435,6 @@ bin/cmake/gui
 bin/cmake
 bin/dropbear
 bin/dropbear/runit
-bin/heirloom/ed
 bin/weston
 bin/slurp
 bin/mingetty/runit
@@ -846,7 +846,7 @@ bin/lightgbm
 bin/dmidecode
 bin/qrencode
 bin/fswatch
-bin/xarchiver
+#bin/xarchiver
 bin/jasper
 bin/earlyoom
 bin/chrony
@@ -945,7 +945,8 @@ bin/premake
 bin/efsw
 bin/lm/sensors
 bin/lowdown
-bin/nix
+#ARG_MAX limit
+#bin/nix
 bin/fusermount/3
 bin/fusermount/2
 bin/powertop

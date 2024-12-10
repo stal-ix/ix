@@ -1,12 +1,16 @@
-{% extends '//die/c/autohell.sh' %}
-
-{% block fetch %}
-https://ftp.gnu.org/gnu/ed/ed-1.20.2.tar.lz
-sha:65fec7318f48c2ca17f334ac0f4703defe62037bb13cc23920de077b5fa24523
-{% endblock %}
+{% extends 'stock/ix.sh' %}
 
 {% block bld_libs %}
-lib/c
-lib/intl
-lib/sigsegv
+{{super()}}
+lib/shim/ix
+{% endblock %}
+
+{% block patch %}
+{{super()}}
+sed -e 's|tmpfile()|fdopen(ix_mkstemp(), "w+b")|' -i buffer.c
+{% endblock %}
+
+{% block cpp_missing %}
+{{super()}}
+ix.h
 {% endblock %}

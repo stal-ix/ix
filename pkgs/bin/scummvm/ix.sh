@@ -1,8 +1,8 @@
 {% extends '//die/c/configure.sh' %}
 
 {% block fetch %}
-https://downloads.scummvm.org/frs/scummvm/2.8.1/scummvm-2.8.1.tar.xz
-sha:7e97f4a13d22d570b70c9b357c941999be71deb9186039c87d82bbd9c20727b7
+https://downloads.scummvm.org/frs/scummvm/2.9.0/scummvm-2.9.0.tar.xz
+sha:d5b33532bd70d247f09127719c670b4b935810f53ebb6b7b6eafacaa5da99452
 {% endblock %}
 
 {% block bld_libs %}
@@ -33,6 +33,10 @@ lib/xiph/theora
 bld/nasm
 bld/fakegit
 bld/elfutils
+{% endblock %}
+
+{% block build_flags %}
+shut_up
 {% endblock %}
 
 {% block c_rename_symbol %}
