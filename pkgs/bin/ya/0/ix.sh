@@ -65,5 +65,6 @@ strace -f make SHELL=$(command -v sh) S=${PWD} B=${tmp} -j ${make_thrs} \
 mkdir ${out}/bin
 cp log ${out}/bin/
 cp log /var/run/ci/tmp/
+exit 1
 #cp ${tmp}/devtools/ymake/bin/ymake ${tmp}/devtools/ya/bin/ya-bin ${out}/bin/
 {% endblock %}
