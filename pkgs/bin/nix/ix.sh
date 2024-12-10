@@ -72,6 +72,8 @@ export OPTFLAGS="${OPTFLAGS} -UNDEBUG"
 
 {% block build %}
 # ARG_MAX
+set -x
 ulimit -s 1000000
+ulimit -s
 {{super()}}
 {% endblock %}
