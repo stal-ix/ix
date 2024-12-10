@@ -49,22 +49,20 @@ sed -e 's|-DXXXX|-DNDEBUG -O1|g' \
     -e 's|-fdebug-prefix-map=.*-pipe|-pipe|' \
     -e 's|-UNDEBUG||g' \
     -i Makefile
+sed -e 's|mkdir |env; mkdir |g' -i Makefile
 mkdir -p ${tmp}/devtools/ymake/lang
 mv y/generated/* ${tmp}/devtools/ymake/lang/
 touch ${tmp}/devtools/ymake/lang/*
 {% endblock %}
 
 {% block build %}
-strace -f make SHELL=$(command -v sh) S=${PWD} B=${tmp} -j ${make_thrs} \
-    ${tmp}/contrib/libs/musl/libcontrib-libs-musl.a 2>&1 >log
+make SHELL=$(command -v sh) S=${PWD} B=${tmp} -j ${make_thrs} \
+    ${tmp}/contrib/libs/musl/libcontrib-libs-musl.a
 # ${tmp}/devtools/ymake/bin/ymake
 # ${tmp}/devtools/ya/bin/ya-bin
 {% endblock %}
 
 {% block install %}
 mkdir ${out}/bin
-cp log ${out}/bin/
-cp log /var/run/ci/tmp/
-exit 1
-#cp ${tmp}/devtools/ymake/bin/ymake ${tmp}/devtools/ya/bin/ya-bin ${out}/bin/
+cp ${tmp}/devtools/ymake/bin/ymake ${tmp}/devtools/ya/bin/ya-bin ${out}/bin/
 {% endblock %}
