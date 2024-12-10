@@ -944,7 +944,8 @@ bin/premake
 bin/efsw
 bin/lm/sensors
 bin/lowdown
-bin/nix
+#ARG_MAX limit
+#bin/nix
 bin/fusermount/3
 bin/fusermount/2
 bin/powertop
