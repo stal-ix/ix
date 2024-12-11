@@ -1,4 +1,4 @@
-{% extends '2.5.10.0.sh' %}
+{% extends '//bld/boot/10/flex/0/ix.sh' %}
 
 {% block flex_extra_fetch %}
 {% endblock %}
@@ -7,7 +7,7 @@
 {% endblock %}
 
 {% block bld_deps %}
-bld/boot/10/flex/2.5.10.0.sh
+bld/boot/10/flex/0
 bld/boot/5/byacc
 bld/boot/9/env/std
 {% endblock %}
