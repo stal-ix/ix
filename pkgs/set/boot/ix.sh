@@ -2,6 +2,5 @@
 
 {% block run_deps %}
 bld/sh
-bin/gcc/14
-bin/binutils
+bld/compiler
 {% endblock %}
