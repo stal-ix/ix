@@ -1,4 +1,4 @@
-{% extends '//bld/boot/10/bison/3.4.1_t.sh' %}
+{% extends 't/ix.sh' %}
 
 {% block bison_patch %}
 cp bb/parse-gram.* src/
