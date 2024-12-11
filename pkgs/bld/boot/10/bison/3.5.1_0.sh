@@ -6,7 +6,7 @@ sha:3e7e097bd9709a2d5e40e69446b74b149733b3de864fadb7a9b54eca7b2a4dd0
 {% endblock %}
 
 {% block bison %}
-bld/boot/10/bison/3.4.1_2.sh
+bld/boot/10/bison/2
 {% endblock %}
 
 {% block bison_patch %}
