@@ -20,7 +20,6 @@ f900bf83c523e4ae2688381a15c8ff5915e160a45c6f94fdfed8d1f4172f2ea7
 {% block bld_tool %}
 bld/gzip
 bld/make
-bin/strace
 bin/ya/clang
 bin/clang/18
 bin/util/linux
@@ -49,7 +48,6 @@ sed -e 's|-DXXXX|-DNDEBUG -O1|g' \
     -e 's|-fdebug-prefix-map=.*-pipe|-pipe|' \
     -e 's|-UNDEBUG||g' \
     -i Makefile
-sed -e 's|mkdir |env; mkdir |g' -i Makefile
 mkdir -p ${tmp}/devtools/ymake/lang
 mv y/generated/* ${tmp}/devtools/ymake/lang/
 touch ${tmp}/devtools/ymake/lang/*
@@ -57,10 +55,11 @@ touch ${tmp}/devtools/ymake/lang/*
 
 {% block build %}
 make SHELL=$(command -v sh) S=${PWD} B=${tmp} -j ${make_thrs} \
-    ${tmp}/contrib/libs/musl/libcontrib-libs-musl.a
-# ${tmp}/devtools/ymake/bin/ymake
-# ${tmp}/devtools/ya/bin/ya-bin
+    ${tmp}/devtools/ymake/bin/ymake \
+    ${tmp}/devtools/ya/bin/ya-bin
 {% endblock %}
+
+{# ${tmp}/contrib/libs/musl/libcontrib-libs-musl.a #}
 
 {% block install %}
 mkdir ${out}/bin
