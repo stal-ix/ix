@@ -1,7 +1,7 @@
 {% extends '3.4.1_t.sh' %}
 
 {% block bison %}
-bld/boot/10/bison/3.4.1_0.sh
+bld/boot/10/bison/0
 {% endblock %}
 
 {% block bison_patch %}
