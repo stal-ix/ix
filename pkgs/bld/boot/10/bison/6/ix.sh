@@ -1,7 +1,7 @@
-{% extends '3.6.1_0.sh' %}
+{% extends '//bld/boot/10/bison/5/ix.sh' %}
 
 {% block bison %}
-bld/boot/10/bison/3.6.1_0.sh
+bld/boot/10/bison/5
 {% endblock %}
 
 {% block bison_patch %}

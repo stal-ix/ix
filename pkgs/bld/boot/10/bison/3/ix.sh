@@ -1,4 +1,4 @@
-{% extends 'template.sh' %}
+{% extends '//bld/boot/10/bison/template.sh' %}
 
 {% block fetch %}
 https://ftp.gnu.org/gnu/bison/bison-3.5.1.tar.xz
@@ -11,6 +11,5 @@ bld/boot/10/bison/2
 
 {% block bison_patch %}
 cd src
-
 cat parse-gram.y | grep -v 'define api.token.raw' > _ && mv _ parse-gram.y
 {% endblock %}
