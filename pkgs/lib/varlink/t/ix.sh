@@ -1,8 +1,8 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://github.com/varlink/libvarlink/archive/refs/tags/23.tar.gz
-sha:a5575e070e446e7c4486d424393950e6cb7a3b376ee20d517b0c13a876659a8d
+https://github.com/varlink/libvarlink/archive/refs/tags/24.tar.gz
+sha:0586263ab8f4e8e26a2f2f54830f8f92e403326663b10e14fcf1a6c95e9eab95
 {% endblock %}
 
 {% block lib_deps %}
