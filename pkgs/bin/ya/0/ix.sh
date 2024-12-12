@@ -54,10 +54,12 @@ touch ${tmp}/devtools/ymake/lang/*
 {% endblock %}
 
 {% block build %}
-make S=${PWD} B=${tmp} -j ${make_thrs} \
+make SHELL=$(command -v sh) S=${PWD} B=${tmp} -j ${make_thrs} \
     ${tmp}/devtools/ymake/bin/ymake \
     ${tmp}/devtools/ya/bin/ya-bin
 {% endblock %}
+
+{# ${tmp}/contrib/libs/musl/libcontrib-libs-musl.a #}
 
 {% block install %}
 mkdir ${out}/bin

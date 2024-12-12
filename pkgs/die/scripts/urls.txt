@@ -96,6 +96,7 @@ http://www.colm.net/files/ragel/ragel-6.10.tar.gz
 http://www.dest-unreach.org/socat/download/socat-1.7.4.4.tar.gz
 http://www.dest-unreach.org/socat/download/socat-1.8.0.0.tar.gz
 http://www.dest-unreach.org/socat/download/socat-1.8.0.1.tar.gz
+http://www.dest-unreach.org/socat/download/socat-1.8.0.2.tar.gz
 http://www.etallen.com/cpuid/cpuid-20230120.src.tar.gz
 http://www.haproxy.org/download/2.8/src/haproxy-2.8.3.tar.gz
 http://www.haproxy.org/download/2.8/src/haproxy-2.8.4.tar.gz
@@ -667,6 +668,7 @@ https://ftpmirror.gnu.org/libtool/libtool-2.4.6.tar.gz
 https://ftpmirror.gnu.org/libtool/libtool-2.4.7.tar.gz
 https://gameoftrees.org/releases/portable/got-portable-0.92.tar.gz
 https://gameoftrees.org/releases/portable/got-portable-0.93.tar.gz
+https://git.alpinelinux.org/aports/plain/main/musl/getconf.c
 https://git.kernel.org/pub/scm/devel/pahole/pahole.git
 https://git.kernel.org/pub/scm/libs/libcap/libcap.git/snapshot/libcap-cap/v1.2.64.tar.gz
 https://git.kernel.org/pub/scm/libs/libtrace/libtraceevent.git/snapshot/libtraceevent-1.7.3.tar.gz
@@ -1349,6 +1351,7 @@ https://github.com/carapace-sh/carapace-bin/archive/refs/tags/v1.1.0.tar.gz
 https://github.com/casey/just/archive/refs/tags/1.35.0.tar.gz
 https://github.com/casey/just/archive/refs/tags/1.36.0.tar.gz
 https://github.com/casey/just/archive/refs/tags/1.37.0.tar.gz
+https://github.com/casey/just/archive/refs/tags/1.38.0.tar.gz
 https://github.com/catboost/catboost/archive/refs/tags/v1.0.6.tar.gz
 https://github.com/catchorg/Catch2/archive/refs/tags/v3.7.0.tar.gz
 https://github.com/cboxdoerfer/fsearch/archive/refs/tags/0.2.3.tar.gz
@@ -1398,6 +1401,7 @@ https://github.com/curl/curl/archive/refs/tags/curl-7_80_0.tar.gz
 https://github.com/curl/curl/archive/refs/tags/curl-8_10_0.tar.gz
 https://github.com/curl/curl/archive/refs/tags/curl-8_10_1.tar.gz
 https://github.com/curl/curl/archive/refs/tags/curl-8_11_0.tar.gz
+https://github.com/curl/curl/archive/refs/tags/curl-8_11_1.tar.gz
 https://github.com/curl/curl/archive/refs/tags/curl-8_2_1.tar.gz
 https://github.com/curl/curl/archive/refs/tags/curl-8_3_0.tar.gz
 https://github.com/curl/curl/archive/refs/tags/curl-8_4_0.tar.gz
@@ -2017,6 +2021,7 @@ https://github.com/kristapsdz/lowdown/archive/refs/tags/VERSION_1_1_2.tar.gz
 https://github.com/kristapsdz/lowdown/archive/refs/tags/VERSION_1_2_0.tar.gz
 https://github.com/kristapsdz/lowdown/archive/refs/tags/VERSION_1_3_0.tar.gz
 https://github.com/kristapsdz/lowdown/archive/refs/tags/VERSION_1_3_1.tar.gz
+https://github.com/kristapsdz/lowdown/archive/refs/tags/VERSION_1_3_2.tar.gz
 https://github.com/kspalaiologos/bzip3/archive/refs/tags/1.3.2.tar.gz
 https://github.com/kspalaiologos/bzip3/archive/refs/tags/1.4.0.tar.gz
 https://github.com/kuroko-lang/kuroko/archive/refs/tags/v1.3.1.tar.gz
@@ -3058,6 +3063,7 @@ https://github.com/valkey-io/valkey/archive/refs/tags/7.2.6.tar.gz
 https://github.com/valkey-io/valkey/archive/refs/tags/8.0.0.tar.gz
 https://github.com/valkey-io/valkey/archive/refs/tags/8.0.1.tar.gz
 https://github.com/varlink/libvarlink/archive/refs/tags/23.tar.gz
+https://github.com/varlink/libvarlink/archive/refs/tags/24.tar.gz
 https://github.com/varnishcache/varnish-cache/archive/refs/tags/varnish-7.6.0.tar.gz
 https://github.com/vasi/squashfuse/archive/1f980303b89c779eabfd0a0fdd36d6a7a311bf92.zip
 https://github.com/vasi/squashfuse/archive/refs/tags/0.4.0.tar.gz
@@ -3678,6 +3684,7 @@ https://mupdf.com/downloads/archive/mupdf-1.24.7-source.tar.gz
 https://mupdf.com/downloads/archive/mupdf-1.24.8-source.tar.gz
 https://mupdf.com/downloads/archive/mupdf-1.24.9-source.tar.gz
 https://mupdf.com/downloads/archive/mupdf-1.25.1-source.tar.gz
+https://mupdf.com/downloads/archive/mupdf-1.25.2-source.tar.gz
 https://nav.dl.sourceforge.net/project/sbcl/sbcl/2.2.1/sbcl-2.2.1-source.tar.bz2
 https://nav.dl.sourceforge.net/project/sbcl/sbcl/2.3.7/sbcl-2.3.7-source.tar.bz2
 https://nav.dl.sourceforge.net/project/sbcl/sbcl/2.3.9/sbcl-2.3.9-source.tar.bz2
@@ -3685,6 +3692,7 @@ https://nheko.im/nheko-reborn/coeurl/-/archive/v0.3.0/coeurl-v0.3.0.tar.bz2
 https://nmap.org/dist/nmap-7.93.tar.bz2
 https://nmap.org/dist/nmap-7.95.tar.bz2
 https://nodejs.org/dist/v18.16.1/node-v18.16.1.tar.gz
+https://nodejs.org/dist/v23.4.0/node-v23.4.0.tar.gz
 https://notroj.github.io/neon/neon-0.32.5.tar.gz
 https://notroj.github.io/neon/neon-0.33.0.tar.gz
 https://notroj.github.io/neon/neon-0.34.0.tar.gz

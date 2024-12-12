@@ -9,7 +9,7 @@ bld/boot/10/m4
 
 {% block bld_deps %}
 {% block boot_flex %}
-bld/boot/10/flex/2.5.10.1.sh
+bld/boot/10/flex/1
 bld/boot/5/byacc
 {% endblock %}
 bld/boot/10/m4
@@ -30,6 +30,5 @@ cd src && rm parse.c parse.h scan.c skel.c
     echo 'extern int yylval;' >> parse.h
 )
 {% endblock %}
-
 {{super()}}
 {% endblock %}

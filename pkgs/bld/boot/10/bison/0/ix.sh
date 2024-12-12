@@ -1,4 +1,4 @@
-{% extends '3.4.1_t.sh' %}
+{% extends 't/ix.sh' %}
 
 {% block bison_patch %}
 cp bb/parse-gram.* src/
