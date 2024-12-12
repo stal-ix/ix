@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/elfmz/far2l/archive/refs/tags/v_2.6.1.tar.gz
-sha:0729400a10ed754c103e3fd1d537b0332ec317dd031563ce967df19234cdd6ad
+https://github.com/elfmz/far2l/archive/refs/tags/v_2.6.4.tar.gz
+sha:49bf67dd5cb2069b1212ff3256d85123ceaee74470bedeef9ef1836582e4a5bc
 {% endblock %}
 
 {% block bld_libs %}
@@ -11,6 +11,7 @@ lib/fmt
 lib/ssh
 lib/pcre
 lib/magic
+lib/xml/2
 lib/spdlog
 lib/kernel
 lib/archive
