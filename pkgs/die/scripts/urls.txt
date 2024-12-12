@@ -2817,6 +2817,7 @@ https://github.com/skeeto/u-config/archive/refs/tags/v0.31.1.tar.gz
 https://github.com/skeeto/u-config/archive/refs/tags/v0.33.0.tar.gz
 https://github.com/skvadrik/re2c/archive/refs/tags/3.1.tar.gz
 https://github.com/skvadrik/re2c/archive/refs/tags/4.0.1.tar.gz
+https://github.com/skvadrik/re2c/archive/refs/tags/4.0.2.tar.gz
 https://github.com/skvadrik/re2c/archive/refs/tags/4.0.tar.gz
 https://github.com/slackhq/nebula/archive/refs/tags/v1.8.2.tar.gz
 https://github.com/slackhq/nebula/archive/refs/tags/v1.9.0.tar.gz
