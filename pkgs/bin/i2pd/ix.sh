@@ -8,9 +8,9 @@ sha:5c3f703417bb5f3e5dda642d39c5d30593a5dcf69d5a5ecfe82d5e8a7d454aaf
 {% block bld_libs %}
 lib/c
 lib/c++
-lib/boost
 lib/kernel
 lib/openssl
+lib/boost/85
 lib/shim/fake(lib_name=atomic)
 {% endblock %}
 
