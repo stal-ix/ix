@@ -163,6 +163,7 @@ https://bitmath.org/code/mtdev/mtdev-1.1.7.tar.bz2
 https://boostorg.jfrog.io/artifactory/main/release/1.82.0/source/boost_1_82_0.tar.bz2
 https://boostorg.jfrog.io/artifactory/main/release/1.85.0/source/boost_1_85_0.tar.bz2
 https://boostorg.jfrog.io/artifactory/main/release/1.86.0/source/boost_1_86_0.tar.bz2
+https://boostorg.jfrog.io/artifactory/main/release/1.87.0/source/boost_1_87_0.tar.bz2
 https://breakfastquay.com/files/releases/rubberband-3.1.1.tar.bz2
 https://busybox.net/downloads/busybox-1.36.0.tar.bz2
 https://busybox.net/downloads/busybox-1.36.1.tar.bz2
@@ -1310,6 +1311,7 @@ https://github.com/berndporr/iir1/archive/refs/tags/1.9.4.tar.gz
 https://github.com/besser82/libxcrypt/archive/refs/tags/v4.4.36.tar.gz
 https://github.com/bfgroup/b2/archive/refs/tags/4.9.2.tar.gz
 https://github.com/bfgroup/b2/archive/refs/tags/5.1.0.tar.gz
+https://github.com/bfgroup/b2/archive/refs/tags/5.2.0.tar.gz
 https://github.com/biojppm/rapidyaml/releases/download/v0.4.1/rapidyaml-0.4.1-src.tgz
 https://github.com/bpftrace/bpftrace/archive/refs/tags/v0.21.2.tar.gz
 https://github.com/bugaevc/wl-clipboard/archive/refs/tags/v2.2.0.tar.gz
