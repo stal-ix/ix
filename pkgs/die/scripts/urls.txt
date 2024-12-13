@@ -115,6 +115,7 @@ http://www.haproxy.org/download/3.0/src/haproxy-3.0.3.tar.gz
 http://www.haproxy.org/download/3.0/src/haproxy-3.0.4.tar.gz
 http://www.haproxy.org/download/3.0/src/haproxy-3.0.5.tar.gz
 http://www.haproxy.org/download/3.1/src/haproxy-3.1.0.tar.gz
+http://www.haproxy.org/download/3.1/src/haproxy-3.1.1.tar.gz
 http://www.ijg.org/files/jpegsrc.v9e.tar.gz
 http://www.inf.puc-rio.br/~roberto/lpeg/lpeg-1.1.0.tar.gz
 http://www.jedrea.com/chmlib/chmlib-0.40.tar.bz2
@@ -344,6 +345,7 @@ https://download.gnome.org/sources/glib/2.80/glib-2.80.4.tar.xz
 https://download.gnome.org/sources/glib/2.82/glib-2.82.0.tar.xz
 https://download.gnome.org/sources/glib/2.82/glib-2.82.1.tar.xz
 https://download.gnome.org/sources/glib/2.82/glib-2.82.2.tar.xz
+https://download.gnome.org/sources/glib/2.82/glib-2.82.4.tar.xz
 https://download.gnome.org/sources/glibmm/2.66/glibmm-2.66.6.tar.xz
 https://download.gnome.org/sources/glibmm/2.77/glibmm-2.77.0.tar.xz
 https://download.gnome.org/sources/glibmm/2.78/glibmm-2.78.1.tar.xz
@@ -836,6 +838,7 @@ https://github.com/FredHucht/pstree/archive/refs/tags/v2.40.tar.gz
 https://github.com/FreeGLUTProject/freeglut/releases/download/v3.4.0/freeglut-3.4.0.tar.gz
 https://github.com/FreeRDP/FreeRDP/archive/refs/tags/2.10.0.tar.gz
 https://github.com/FreeRDP/FreeRDP/archive/refs/tags/3.1.0.tar.gz
+https://github.com/FreeRDP/FreeRDP/archive/refs/tags/3.10.0.tar.gz
 https://github.com/FreeRDP/FreeRDP/archive/refs/tags/3.2.0.tar.gz
 https://github.com/FreeRDP/FreeRDP/archive/refs/tags/3.3.0.tar.gz
 https://github.com/FreeRDP/FreeRDP/archive/refs/tags/3.4.0.tar.gz
@@ -1463,6 +1466,7 @@ https://github.com/elfmz/far2l/archive/refs/tags/v_2.5.0.tar.gz
 https://github.com/elfmz/far2l/archive/refs/tags/v_2.5.2.tar.gz
 https://github.com/elfmz/far2l/archive/refs/tags/v_2.6.0.tar.gz
 https://github.com/elfmz/far2l/archive/refs/tags/v_2.6.1.tar.gz
+https://github.com/elfmz/far2l/archive/refs/tags/v_2.6.4.tar.gz
 https://github.com/elves/elvish/archive/refs/tags/v0.19.2.tar.gz
 https://github.com/elves/elvish/archive/refs/tags/v0.20.0.tar.gz
 https://github.com/elves/elvish/archive/refs/tags/v0.20.1.tar.gz
@@ -1525,6 +1529,7 @@ https://github.com/eza-community/eza/archive/refs/tags/v0.20.0.tar.gz
 https://github.com/eza-community/eza/archive/refs/tags/v0.20.1.tar.gz
 https://github.com/eza-community/eza/archive/refs/tags/v0.20.10.tar.gz
 https://github.com/eza-community/eza/archive/refs/tags/v0.20.11.tar.gz
+https://github.com/eza-community/eza/archive/refs/tags/v0.20.12.tar.gz
 https://github.com/eza-community/eza/archive/refs/tags/v0.20.2.tar.gz
 https://github.com/eza-community/eza/archive/refs/tags/v0.20.3.tar.gz
 https://github.com/eza-community/eza/archive/refs/tags/v0.20.4.tar.gz
@@ -1904,6 +1909,7 @@ https://github.com/iputils/iputils/archive/refs/tags/20240117.tar.gz
 https://github.com/iputils/iputils/archive/refs/tags/20240905.tar.gz
 https://github.com/isacikgoz/tldr/archive/refs/tags/v1.0.0-alpha.tar.gz
 https://github.com/isc-projects/bind9/archive/refs/tags/v9.19.15.tar.gz
+https://github.com/isc-projects/bind9/archive/refs/tags/v9.20.4.tar.gz
 https://github.com/ispc/ispc/archive/refs/tags/v1.18.1.tar.gz
 https://github.com/ivmai/bdwgc/archive/refs/tags/v8.2.4.tar.gz
 https://github.com/ivmai/bdwgc/archive/refs/tags/v8.2.6.tar.gz
@@ -2815,6 +2821,7 @@ https://github.com/skeeto/u-config/archive/refs/tags/v0.31.1.tar.gz
 https://github.com/skeeto/u-config/archive/refs/tags/v0.33.0.tar.gz
 https://github.com/skvadrik/re2c/archive/refs/tags/3.1.tar.gz
 https://github.com/skvadrik/re2c/archive/refs/tags/4.0.1.tar.gz
+https://github.com/skvadrik/re2c/archive/refs/tags/4.0.2.tar.gz
 https://github.com/skvadrik/re2c/archive/refs/tags/4.0.tar.gz
 https://github.com/slackhq/nebula/archive/refs/tags/v1.8.2.tar.gz
 https://github.com/slackhq/nebula/archive/refs/tags/v1.9.0.tar.gz
@@ -3333,6 +3340,7 @@ https://gitlab.freedesktop.org/wlroots/wlroots/-/archive/0.17.3/wlroots-0.17.3.t
 https://gitlab.freedesktop.org/wlroots/wlroots/-/archive/0.17.4/wlroots-0.17.4.tar.bz2
 https://gitlab.freedesktop.org/wlroots/wlroots/-/archive/0.18.0/wlroots-0.18.0.tar.bz2
 https://gitlab.freedesktop.org/wlroots/wlroots/-/archive/0.18.1/wlroots-0.18.1.tar.bz2
+https://gitlab.freedesktop.org/wlroots/wlroots/-/archive/0.18.2/wlroots-0.18.2.tar.bz2
 https://gitlab.freedesktop.org/xdg/desktop-file-utils/-/archive/0.27/desktop-file-utils-0.27.tar.bz2
 https://gitlab.freedesktop.org/xkeyboard-config/xkeyboard-config/-/archive/xkeyboard-config-2.39/xkeyboard-config-xkeyboard-config-2.39.tar.bz2
 https://gitlab.freedesktop.org/xkeyboard-config/xkeyboard-config/-/archive/xkeyboard-config-2.40/xkeyboard-config-xkeyboard-config-2.40.tar.bz2
