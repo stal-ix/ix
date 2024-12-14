@@ -50,7 +50,7 @@ bin/pixman
 bin/rtorrent
 #argmax problem
 #bin/ya
-#bin/nix
+bin/nix
 bin/deya
 bin/scx/rust/land/runit
 bin/sys/hud
