@@ -42,6 +42,11 @@ export CONLYFLAGS=
 extract 0 ${src}/1.tar.gz
 mv yaboot* y
 mv y/Makefile ./
+base64 -d << EOF > preproc.py
+{% include 'preproc.py/base64' %}
+EOF
+cat Makefile | python3 preproc.py > _
+mv _ Makefile
 sed -e 's|-DXXXX|-DNDEBUG -O1|g' \
     -e 's|-g -ggnu-pubnames||g' \
     -e 's|-O3||g' \

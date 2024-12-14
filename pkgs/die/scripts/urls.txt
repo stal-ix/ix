@@ -1266,6 +1266,7 @@ https://github.com/apple/swift-corelibs-libdispatch/archive/refs/tags/swift-5.9.
 https://github.com/apple/swift-corelibs-libdispatch/archive/refs/tags/swift-6.0-RELEASE.tar.gz
 https://github.com/apple/swift-corelibs-libdispatch/archive/refs/tags/swift-6.0.1-RELEASE.tar.gz
 https://github.com/apple/swift-corelibs-libdispatch/archive/refs/tags/swift-6.0.2-RELEASE.tar.gz
+https://github.com/apple/swift-corelibs-libdispatch/archive/refs/tags/swift-6.0.3-RELEASE.tar.gz
 https://github.com/appneta/tcpreplay/releases/download/v4.4.4/tcpreplay-4.4.4.tar.xz
 https://github.com/appneta/tcpreplay/releases/download/v4.5.1/tcpreplay-4.5.1.tar.xz
 https://github.com/ar-/incron/archive/refs/tags/0.5.12.tar.gz
@@ -2118,6 +2119,7 @@ https://github.com/libjpeg-turbo/libjpeg-turbo/archive/refs/tags/3.0.1.tar.gz
 https://github.com/libjpeg-turbo/libjpeg-turbo/archive/refs/tags/3.0.2.tar.gz
 https://github.com/libjpeg-turbo/libjpeg-turbo/archive/refs/tags/3.0.3.tar.gz
 https://github.com/libjpeg-turbo/libjpeg-turbo/archive/refs/tags/3.0.4.tar.gz
+https://github.com/libjpeg-turbo/libjpeg-turbo/archive/refs/tags/3.1.0.tar.gz
 https://github.com/libjxl/libjxl/archive/refs/tags/v0.10.0.tar.gz
 https://github.com/libjxl/libjxl/archive/refs/tags/v0.10.1.tar.gz
 https://github.com/libjxl/libjxl/archive/refs/tags/v0.10.2.tar.gz
@@ -4042,6 +4044,7 @@ https://www.stunnel.org/downloads/stunnel-5.70.tar.gz
 https://www.stunnel.org/downloads/stunnel-5.71.tar.gz
 https://www.stunnel.org/downloads/stunnel-5.72.tar.gz
 https://www.stunnel.org/downloads/stunnel-5.73.tar.gz
+https://www.stunnel.org/downloads/stunnel-5.74.tar.gz
 https://www.tcpdump.org/release/libpcap-1.10.4.tar.gz
 https://www.tcpdump.org/release/tcpdump-4.99.4.tar.gz
 https://www.thrysoee.dk/editline/libedit-20230827-3.1.tar.gz
