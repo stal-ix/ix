@@ -38,6 +38,7 @@ def it_flags(args):
         yield f'-D{k}={v}'
         yield f'--host-platform-flag={k}={v}'
 
+    yield '--no-local-executor'
     yield '--no-ya-bin-resource'
     yield '--no-yt-store'
     yield '--cxx-compiler=' + which('clang++')
