@@ -39,10 +39,6 @@ bin/lowdown
 bld/auto/archive
 {% endblock %}
 
-{% block make_tool %}
-bin/make/proper
-{% endblock %}
-
 {% block shell %}
 bin/bash/lite/sh
 {% endblock %}
