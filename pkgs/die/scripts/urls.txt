@@ -192,6 +192,7 @@ https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.12.1.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.12.2.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.12.3.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.12.4.tar.xz
+https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.12.5.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.12.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.2.14.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.3.13.tar.xz
@@ -2007,6 +2008,7 @@ https://github.com/junegunn/fzf/archive/refs/tags/v0.56.0.tar.gz
 https://github.com/junegunn/fzf/archive/refs/tags/v0.56.1.tar.gz
 https://github.com/junegunn/fzf/archive/refs/tags/v0.56.2.tar.gz
 https://github.com/junegunn/fzf/archive/refs/tags/v0.56.3.tar.gz
+https://github.com/junegunn/fzf/archive/refs/tags/v0.57.0.tar.gz
 https://github.com/kaniini/libucontext/archive/refs/tags/libucontext-1.2.tar.gz
 https://github.com/kaniini/libucontext/archive/refs/tags/libucontext-1.3.1.tar.gz
 https://github.com/kaniini/libucontext/archive/refs/tags/libucontext-1.3.2.tar.gz
