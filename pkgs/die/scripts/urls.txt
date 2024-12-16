@@ -645,6 +645,7 @@ https://ftp.gnu.org/pub/gnu/gettext/gettext-0.22.4.tar.gz
 https://ftp.gnu.org/pub/gnu/gettext/gettext-0.22.5.tar.gz
 https://ftp.gnu.org/pub/gnu/gettext/gettext-0.23.tar.gz
 https://ftp.gnu.org/pub/gnu/libiconv/libiconv-1.17.tar.gz
+https://ftp.gnu.org/pub/gnu/libiconv/libiconv-1.18.tar.gz
 https://ftp.gnu.org/pub/gnu/ncurses/ncurses-6.4.tar.gz
 https://ftp.gnu.org/pub/gnu/ncurses/ncurses-6.5.tar.gz
 https://ftp.isc.org/isc/dhcp/4.4.2-P1/dhcp-4.4.2-P1.tar.gz
@@ -843,6 +844,7 @@ https://github.com/FreeGLUTProject/freeglut/releases/download/v3.4.0/freeglut-3.
 https://github.com/FreeRDP/FreeRDP/archive/refs/tags/2.10.0.tar.gz
 https://github.com/FreeRDP/FreeRDP/archive/refs/tags/3.1.0.tar.gz
 https://github.com/FreeRDP/FreeRDP/archive/refs/tags/3.10.0.tar.gz
+https://github.com/FreeRDP/FreeRDP/archive/refs/tags/3.10.1.tar.gz
 https://github.com/FreeRDP/FreeRDP/archive/refs/tags/3.2.0.tar.gz
 https://github.com/FreeRDP/FreeRDP/archive/refs/tags/3.3.0.tar.gz
 https://github.com/FreeRDP/FreeRDP/archive/refs/tags/3.4.0.tar.gz
