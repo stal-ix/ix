@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://github.com/kspalaiologos/bzip3/archive/refs/tags/1.5.0.tar.gz
-sha:aa279f1b4bdcef7847b205f7b4b9e9312ada23f6cc09241aeaa30c43c7af4238
+https://github.com/kspalaiologos/bzip3/archive/refs/tags/1.5.1.tar.gz
+sha:1116c5984c87c2193f3981b53669c8cbb4ffd1b158de880be3c5ff27a35db400
 {% endblock %}
 
 {% block lib_deps %}
