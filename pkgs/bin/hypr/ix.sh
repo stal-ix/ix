@@ -5,5 +5,6 @@ bin/hypr/land
 bin/hypr/lock
 bin/hypr/idle
 bin/hypr/paper
+bin/hypr/cursor
 bin/hypr/picker
 {% endblock %}
