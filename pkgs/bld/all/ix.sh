@@ -29,6 +29,7 @@ bld/re2c
 bld/sh
 bld/tar
 bld/texinfo
+bld/texinfo/lite
 bld/compiler
 bld/mold
 bld/libtool
