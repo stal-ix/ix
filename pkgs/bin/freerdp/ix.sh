@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/FreeRDP/FreeRDP/archive/refs/tags/3.10.0.tar.gz
-sha:fb776f1f7ef401f8ceb54eb9fce5457c1e2ac04230d62fbc31dc25d9bdca0b1a
+https://github.com/FreeRDP/FreeRDP/archive/refs/tags/3.10.2.tar.gz
+sha:a5338b891260ffc5030a478a77ed483ca83a0e9ebcc76e1c0ad9686843539f0d
 {% endblock %}
 
 {% block bld_libs %}

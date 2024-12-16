@@ -192,6 +192,7 @@ https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.12.1.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.12.2.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.12.3.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.12.4.tar.xz
+https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.12.5.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.12.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.2.14.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.3.13.tar.xz
@@ -290,6 +291,7 @@ https://codeberg.org/dwl/dwl/archive/v0.7.tar.gz
 https://codeberg.org/forgejo/forgejo/archive/v9.0.1.tar.gz
 https://codeberg.org/grisha/gumbo-parser/archive/0.12.0.tar.gz
 https://codeberg.org/grisha/gumbo-parser/archive/0.12.1.tar.gz
+https://codeberg.org/grisha/gumbo-parser/archive/0.12.3.tar.gz
 https://codeberg.org/soundtouch/soundtouch/archive/2.3.1.tar.gz
 https://codeberg.org/tenacityteam/libmad/archive/0.16.3.tar.gz
 https://codeberg.org/tenacityteam/libmad/archive/0.16.4.tar.gz
@@ -435,6 +437,7 @@ https://downloads.sourceforge.net/project/linux-diag/sysfsutils/2.1.0/sysfsutils
 https://downloads.sourceforge.net/project/maxima/Maxima-source/5.47.0-source/maxima-5.47.0.tar.gz
 https://downloads.sourceforge.net/project/mikmod/libmikmod/3.3.11.1/libmikmod-3.3.11.1.tar.gz
 https://downloads.sourceforge.net/project/mingw-w64/mingw-w64/mingw-w64-release/mingw-w64-v11.0.1.tar.bz2
+https://downloads.sourceforge.net/project/mpg123/mpg123/1.32.10/mpg123-1.32.10.tar.bz2
 https://downloads.sourceforge.net/project/mpg123/mpg123/1.32.7/mpg123-1.32.7.tar.bz2
 https://downloads.sourceforge.net/project/mpg123/mpg123/1.32.8/mpg123-1.32.8.tar.bz2
 https://downloads.sourceforge.net/project/mpg123/mpg123/1.32.9/mpg123-1.32.9.tar.bz2
@@ -643,6 +646,7 @@ https://ftp.gnu.org/pub/gnu/gettext/gettext-0.22.4.tar.gz
 https://ftp.gnu.org/pub/gnu/gettext/gettext-0.22.5.tar.gz
 https://ftp.gnu.org/pub/gnu/gettext/gettext-0.23.tar.gz
 https://ftp.gnu.org/pub/gnu/libiconv/libiconv-1.17.tar.gz
+https://ftp.gnu.org/pub/gnu/libiconv/libiconv-1.18.tar.gz
 https://ftp.gnu.org/pub/gnu/ncurses/ncurses-6.4.tar.gz
 https://ftp.gnu.org/pub/gnu/ncurses/ncurses-6.5.tar.gz
 https://ftp.isc.org/isc/dhcp/4.4.2-P1/dhcp-4.4.2-P1.tar.gz
@@ -686,6 +690,7 @@ https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/snap
 https://git.kernel.org/pub/scm/linux/kernel/git/jaegeuk/f2fs-tools.git/snapshot/f2fs-tools-1.16.0.tar.gz
 https://git.kernel.org/pub/scm/linux/kernel/git/jejb/efitools.git/snapshot/efitools-1.9.2.tar.gz
 https://git.kernel.org/pub/scm/linux/kernel/git/sforshee/wireless-regdb.git/snapshot/wireless-regdb-master-2023-09-01.tar.gz
+https://git.kernel.org/pub/scm/linux/kernel/git/xiang/erofs-utils.git/snapshot/erofs-utils-1.8.3.tar.gz
 https://git.kernel.org/pub/scm/linux/kernel/git/xiang/erofs-utils.git/snapshot/erofs-utils-1.8.tar.gz
 https://git.kernel.org/pub/scm/network/iproute2/iproute2.git
 https://git.kernel.org/pub/scm/utils/kernel/kmod/kmod.git/snapshot/kmod-30.tar.gz
@@ -840,6 +845,8 @@ https://github.com/FreeGLUTProject/freeglut/releases/download/v3.4.0/freeglut-3.
 https://github.com/FreeRDP/FreeRDP/archive/refs/tags/2.10.0.tar.gz
 https://github.com/FreeRDP/FreeRDP/archive/refs/tags/3.1.0.tar.gz
 https://github.com/FreeRDP/FreeRDP/archive/refs/tags/3.10.0.tar.gz
+https://github.com/FreeRDP/FreeRDP/archive/refs/tags/3.10.1.tar.gz
+https://github.com/FreeRDP/FreeRDP/archive/refs/tags/3.10.2.tar.gz
 https://github.com/FreeRDP/FreeRDP/archive/refs/tags/3.2.0.tar.gz
 https://github.com/FreeRDP/FreeRDP/archive/refs/tags/3.3.0.tar.gz
 https://github.com/FreeRDP/FreeRDP/archive/refs/tags/3.4.0.tar.gz
@@ -1456,6 +1463,7 @@ https://github.com/ebiggers/libdeflate/archive/refs/tags/v1.19.tar.gz
 https://github.com/ebiggers/libdeflate/archive/refs/tags/v1.20.tar.gz
 https://github.com/ebiggers/libdeflate/archive/refs/tags/v1.21.tar.gz
 https://github.com/ebiggers/libdeflate/archive/refs/tags/v1.22.tar.gz
+https://github.com/ebiggers/libdeflate/archive/refs/tags/v1.23.tar.gz
 https://github.com/editorconfig/editorconfig-core-c/archive/refs/tags/v0.12.6.tar.gz
 https://github.com/ekzhang/bore/archive/refs/tags/v0.5.0.tar.gz
 https://github.com/elementary/dock/archive/refs/tags/8.0.0.tar.gz
@@ -1847,6 +1855,7 @@ https://github.com/hyprwm/Hyprland/releases/download/v0.45.0/source-v0.45.0.tar.
 https://github.com/hyprwm/Hyprland/releases/download/v0.45.1/source-v0.45.1.tar.gz
 https://github.com/hyprwm/aquamarine/archive/refs/tags/v0.3.1.tar.gz
 https://github.com/hyprwm/aquamarine/archive/refs/tags/v0.4.2.tar.gz
+https://github.com/hyprwm/hyprcursor/archive/refs/tags/v0.1.10.tar.gz
 https://github.com/hyprwm/hyprcursor/archive/refs/tags/v0.1.4.tar.gz
 https://github.com/hyprwm/hyprcursor/archive/refs/tags/v0.1.5.tar.gz
 https://github.com/hyprwm/hyprcursor/archive/refs/tags/v0.1.6.tar.gz
@@ -1858,6 +1867,7 @@ https://github.com/hyprwm/hyprlang/archive/refs/tags/v0.4.1.tar.gz
 https://github.com/hyprwm/hyprlang/archive/refs/tags/v0.5.0.tar.gz
 https://github.com/hyprwm/hyprlang/archive/refs/tags/v0.5.1.tar.gz
 https://github.com/hyprwm/hyprlang/archive/refs/tags/v0.5.3.tar.gz
+https://github.com/hyprwm/hyprlang/archive/refs/tags/v0.6.0.tar.gz
 https://github.com/hyprwm/hyprlock/archive/refs/tags/v0.5.0.tar.gz
 https://github.com/hyprwm/hyprpaper/archive/refs/tags/v0.2.0.tar.gz
 https://github.com/hyprwm/hyprpaper/archive/refs/tags/v0.7.0.tar.gz
@@ -2004,6 +2014,7 @@ https://github.com/junegunn/fzf/archive/refs/tags/v0.56.0.tar.gz
 https://github.com/junegunn/fzf/archive/refs/tags/v0.56.1.tar.gz
 https://github.com/junegunn/fzf/archive/refs/tags/v0.56.2.tar.gz
 https://github.com/junegunn/fzf/archive/refs/tags/v0.56.3.tar.gz
+https://github.com/junegunn/fzf/archive/refs/tags/v0.57.0.tar.gz
 https://github.com/kaniini/libucontext/archive/refs/tags/libucontext-1.2.tar.gz
 https://github.com/kaniini/libucontext/archive/refs/tags/libucontext-1.3.1.tar.gz
 https://github.com/kaniini/libucontext/archive/refs/tags/libucontext-1.3.2.tar.gz
@@ -2034,6 +2045,8 @@ https://github.com/kristapsdz/lowdown/archive/refs/tags/VERSION_1_3_1.tar.gz
 https://github.com/kristapsdz/lowdown/archive/refs/tags/VERSION_1_3_2.tar.gz
 https://github.com/kspalaiologos/bzip3/archive/refs/tags/1.3.2.tar.gz
 https://github.com/kspalaiologos/bzip3/archive/refs/tags/1.4.0.tar.gz
+https://github.com/kspalaiologos/bzip3/archive/refs/tags/1.5.0.tar.gz
+https://github.com/kspalaiologos/bzip3/archive/refs/tags/1.5.1.tar.gz
 https://github.com/kuroko-lang/kuroko/archive/refs/tags/v1.3.1.tar.gz
 https://github.com/kuroko-lang/kuroko/archive/refs/tags/v1.4.0.tar.gz
 https://github.com/l4l/yofi/archive/refs/tags/0.2.2.tar.gz
@@ -2759,6 +2772,7 @@ https://github.com/rui314/mold/archive/refs/tags/v2.33.0.tar.gz
 https://github.com/rui314/mold/archive/refs/tags/v2.34.0.tar.gz
 https://github.com/rui314/mold/archive/refs/tags/v2.34.1.tar.gz
 https://github.com/rui314/mold/archive/refs/tags/v2.35.0.tar.gz
+https://github.com/rui314/mold/archive/refs/tags/v2.35.1.tar.gz
 https://github.com/rui314/mold/archive/refs/tags/v2.4.0.tar.gz
 https://github.com/rui314/mold/archive/refs/tags/v2.4.1.tar.gz
 https://github.com/rvaiya/keyd/archive/refs/tags/v2.4.3.tar.gz

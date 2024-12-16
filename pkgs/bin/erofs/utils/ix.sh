@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://git.kernel.org/pub/scm/linux/kernel/git/xiang/erofs-utils.git/snapshot/erofs-utils-1.8.tar.gz
-sha:117f9e5d9411e8188abb6bf77d9fa967291f60a9ee65f3dcb8e9f88e5307afdf
+https://git.kernel.org/pub/scm/linux/kernel/git/xiang/erofs-utils.git/snapshot/erofs-utils-1.8.3.tar.gz
+sha:3c5cc03603ea08ba9ae5e0420eeaea5ff17ed29e2280685310356cbf25304e85
 {% endblock %}
 
 {% block bld_libs %}

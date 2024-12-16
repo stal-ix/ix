@@ -8,6 +8,7 @@ sha:f14c83cfebcc9427f2c3cea7258bd90df972d92eb26752da4ddad81c87a0faa4
 {% block bld_tool %}
 bld/m4
 bld/perl
+bld/texinfo/lite
 {% endblock %}
 
 {% block install %}
