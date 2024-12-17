@@ -1,8 +1,8 @@
-{% extends '//die/c/autorehell.sh' %}
+{% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://dbus.freedesktop.org/releases/dbus/dbus-1.14.10.tar.xz
-sha:ba1f21d2bd9d339da2d4aa8780c09df32fea87998b73da24f49ab9df1e36a50f
+https://dbus.freedesktop.org/releases/dbus/dbus-1.16.0.tar.xz
+sha:9f8ca5eb51cbe09951aec8624b86c292990ae2428b41b856e2bed17ec65c8849
 {% endblock %}
 
 {% block lib_deps %}
@@ -10,12 +10,8 @@ lib/c
 lib/expat
 {% endblock %}
 
-{% block bld_tool %}
-bld/auto/archive
-{% endblock %}
-
-{% block configure_flags %}
---with-system-socket="/var/run/dbus/system_bus_socket"
+{% block meson_flags %}
+system_socket="/var/run/dbus/system_bus_socket"
 {% endblock %}
 
 {% block install %}

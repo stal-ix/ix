@@ -2,7 +2,10 @@
 
 {% block install %}
 {{super()}}
-sed -e 's|.*bindir.*||' -e 's|-DDBUS_STATIC_BUILD||' -i ${out}/lib/pkgconfig/dbus-1.pc
+sed -e 's|.*bindir.*||' \
+    -e 's|-DDBUS_STATIC_BUILD||' \
+    -e 's| -pthread||g' \
+    -i ${out}/lib/pkgconfig/dbus-1.pc
 rm -rf ${out}/lib/lib_*
 {% endblock %}
 

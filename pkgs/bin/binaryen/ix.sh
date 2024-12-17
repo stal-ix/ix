@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/WebAssembly/binaryen/archive/refs/tags/version_120.tar.gz
-sha:a4edd532d37b33d88e28e8d770f7177a7c0bb4495eabc6f5ecd41ffc5fd4db90
+https://github.com/WebAssembly/binaryen/archive/refs/tags/version_121.tar.gz
+sha:93f3b3d62def4aee6d09b11e6de75b955d29bc37878117e4ed30c3057a2ca4b4
 {% endblock %}
 
 {% block bld_libs %}
