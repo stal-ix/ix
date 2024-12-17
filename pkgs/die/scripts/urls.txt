@@ -3685,6 +3685,7 @@ https://mirrors.edge.kernel.org/pub/linux/network/wireless/iwd-3.2.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/utils/kbd/kbd-2.6.1.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/utils/kbd/kbd-2.6.3.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/utils/kbd/kbd-2.6.4.tar.xz
+https://mirrors.edge.kernel.org/pub/linux/utils/kbd/kbd-2.7.1.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/utils/kbd/kbd-2.7.tar.xz
 https://mirrors.edge.kernel.org/pub/software/network/ethtool/ethtool-6.2.tar.xz
 https://mirrors.edge.kernel.org/pub/software/network/ethtool/ethtool-6.7.tar.xz
