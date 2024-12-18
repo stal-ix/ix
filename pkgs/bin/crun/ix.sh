@@ -5,11 +5,11 @@ https://github.com/containers/crun
 {% endblock %}
 
 {% block git_branch %}
-1.19
+1.19.1
 {% endblock %}
 
 {% block git_sha %}
-11dfecac680cf2a75c596f7765683c588a97b508926cf4c6073f78a4a3ca82a2
+71f5b69ff552927d81b8d0871c407131d8e71cafd4b1e620a2e9053c9e2a6ea2
 {% endblock %}
 
 {% block bld_libs %}
