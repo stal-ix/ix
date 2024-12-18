@@ -52,7 +52,7 @@ bin/rtorrent
 bin/ya
 #bin/nix
 bin/deya
-#bin/scx/rust/land/runit
+bin/scx/rust/land/runit
 bin/sys/hud
 bin/ip/traf/ng
 bin/ix/runsvdir/cpp
@@ -117,7 +117,7 @@ bin/elementary/dock
 bin/ebpf/verifier
 bin/cpu/fetch
 bin/ubpf
-#bin/scx
+bin/scx
 bin/python/13
 bin/go/lang/23
 bin/lapce
