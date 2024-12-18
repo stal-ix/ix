@@ -2602,6 +2602,7 @@ https://github.com/pwmt/zathura-cb/archive/refs/tags/0.1.11.tar.gz
 https://github.com/pwmt/zathura-pdf-mupdf/archive/refs/tags/0.4.0.tar.gz
 https://github.com/pwmt/zathura-pdf-mupdf/archive/refs/tags/0.4.4.tar.gz
 https://github.com/pwmt/zathura-ps/archive/refs/tags/0.2.8.tar.gz
+https://github.com/pwmt/zathura/archive/refs/tags/0.5.11.tar.gz
 https://github.com/pwmt/zathura/archive/refs/tags/0.5.6.tar.gz
 https://github.com/pwmt/zathura/archive/refs/tags/0.5.8.tar.gz
 https://github.com/pwmt/zathura/archive/refs/tags/0.5.9.tar.gz
