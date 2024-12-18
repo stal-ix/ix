@@ -5,7 +5,7 @@
 {% endblock %}
 
 {% block go_sha %}
-f13d7d89cc391eb20de9a18827a5b6364f38ef82465de518f4efae81ff1b1444
+96c08e12b71cada0135429fe7c57327b4c27107d7f6cb31d27de11f7ee2bd3d4
 {% endblock %}
 
 {% block go_tool %}
