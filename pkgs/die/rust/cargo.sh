@@ -34,8 +34,12 @@ rust_devendor vendored
 v3
 {% endblock %}
 
+{% block cargoc_ver %}
+75
+{% endblock %}
+
 {% block bld_data %}
-aux/cargo/{{self.cargo_ver().strip()}}(url={{self.cargo_url().strip()}},sha={{self.cargo_sha().strip()}},parent_id={{self.cargo_sha().strip()}},refine={{self.cargo_refine().strip() | b64e}},refine_tools={{self.cargo_refine_tools().strip() | b64e}})
+aux/cargo/{{self.cargo_ver().strip()}}(url={{self.cargo_url().strip()}},sha={{self.cargo_sha().strip()}},parent_id={{self.cargo_sha().strip()}},refine={{self.cargo_refine().strip() | b64e}},refine_tools={{self.cargo_refine_tools().strip() | b64e}},cargoc_ver={{self.cargoc_ver().strip()}})
 {% endblock %}
 
 {% block host_libs %}

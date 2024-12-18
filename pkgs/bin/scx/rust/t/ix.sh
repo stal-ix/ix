@@ -5,7 +5,7 @@
 {% endblock %}
 
 {% block cargo_sha %}
-50bc2347311b57183878e932645387117ad916f49c8208570ed355930bd1184b
+bfa8e726032ea12b620d033e11970e607290781251fbabe41db820144211b38d
 {% endblock %}
 
 {% block bld_libs %}
@@ -15,6 +15,14 @@ lib/llvm/19
 lib/shim/fake(lib_name=ffi)
 lib/shim/fake(lib_name=ncursesw)
 lib/shim/fake(lib_name=stdc++)
+{% endblock %}
+
+{% block cargoc_ver %}
+83
+{% endblock %}
+
+{% block rustc_ver %}
+83
 {% endblock %}
 
 {% block bld_tool %}

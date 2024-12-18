@@ -2806,6 +2806,7 @@ https://github.com/sched-ext/scx/archive/refs/tags/v1.0.2.tar.gz
 https://github.com/sched-ext/scx/archive/refs/tags/v1.0.4.tar.gz
 https://github.com/sched-ext/scx/archive/refs/tags/v1.0.5.tar.gz
 https://github.com/sched-ext/scx/archive/refs/tags/v1.0.6.tar.gz
+https://github.com/sched-ext/scx/archive/refs/tags/v1.0.8.tar.gz
 https://github.com/sctplab/usrsctp/archive/refs/tags/0.9.5.0.tar.gz
 https://github.com/sddm/sddm/archive/refs/tags/v0.20.0.tar.gz
 https://github.com/sddm/sddm/archive/refs/tags/v0.21.0.tar.gz
@@ -3818,6 +3819,7 @@ https://src.fedoraproject.org/repo/pkgs/zip/zip30.tar.gz/7b74551e63f8ee6aab6fbc8
 https://static.rust-lang.org/dist/rust-1.56.1-x86_64-unknown-linux-gnu.tar.gz
 https://static.rust-lang.org/dist/rust-1.75.0-x86_64-unknown-linux-musl.tar.gz
 https://static.rust-lang.org/dist/rust-1.80.0-x86_64-unknown-linux-musl.tar.gz
+https://static.rust-lang.org/dist/rust-1.83.0-x86_64-unknown-linux-musl.tar.gz
 https://static.rust-lang.org/dist/rustc-1.54.0-src.tar.gz
 https://storage.googleapis.com/aom-releases/libaom-3.10.0.tar.gz
 https://storage.googleapis.com/aom-releases/libaom-3.11.0.tar.gz
