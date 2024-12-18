@@ -95,6 +95,10 @@ cat << EOF > ${out}/include/xcb/xcb_icccm.h
 #pragma once
 EOF
 
+cat << EOF > ${out}/include/xcb/res.h
+#pragma once
+EOF
+
 cat << EOF > ${out}/include/X11/Xauth.h
 #pragma once
 struct Xauth {
