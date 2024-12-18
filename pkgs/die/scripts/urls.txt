@@ -2175,6 +2175,7 @@ https://github.com/libsdl-org/SDL/releases/download/release-2.28.5/SDL2-2.28.5.t
 https://github.com/libsdl-org/SDL_image/archive/refs/tags/release-2.6.2.tar.gz
 https://github.com/libsdl-org/SDL_image/archive/refs/tags/release-2.8.0.tar.gz
 https://github.com/libsdl-org/SDL_image/archive/refs/tags/release-2.8.1.tar.gz
+https://github.com/libsdl-org/SDL_image/archive/refs/tags/release-2.8.3.tar.gz
 https://github.com/libsdl-org/SDL_mixer/archive/refs/tags/release-2.6.3.tar.gz
 https://github.com/libsdl-org/SDL_mixer/archive/refs/tags/release-2.8.0.tar.gz
 https://github.com/libsdl-org/SDL_net/archive/refs/tags/release-2.2.0.tar.gz
