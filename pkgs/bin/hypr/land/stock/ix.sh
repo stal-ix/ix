@@ -53,15 +53,7 @@ chmod +x scripts/generateVersion.sh
 
 find . -type f -name '*.cpp' | while read l; do
 prepend ${l} << EOF
-namespace std {
-    template <typename... Args>
-    inline void print(Args&&...) {
-    }
-
-    template <typename... Args>
-    inline void println(Args&&...) {
-    }
-}
+#include <print>
 EOF
 done
 
