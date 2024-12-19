@@ -4,5 +4,5 @@ std::string getRandomMessage() {
     return "oops";
 }
 
-void CrashReporter::createAndSaveCrash(int) {
+void NCrashReporter::createAndSaveCrash(int) {
 }
