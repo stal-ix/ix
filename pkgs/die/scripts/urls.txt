@@ -3223,6 +3223,7 @@ https://github.com/xyproto/orbiton/archive/refs/tags/v2.68.2.tar.gz
 https://github.com/xyproto/orbiton/archive/refs/tags/v2.68.3.tar.gz
 https://github.com/xyproto/orbiton/archive/refs/tags/v2.68.4.tar.gz
 https://github.com/xyproto/orbiton/archive/refs/tags/v2.68.5.tar.gz
+https://github.com/xyproto/orbiton/archive/refs/tags/v2.68.6.tar.gz
 https://github.com/yaegashi/muslstack/archive/d19cc5866abce3ca59dfc1666df7cc97097d0933.zip
 https://github.com/yaml/libyaml/archive/refs/tags/0.2.5.tar.gz
 https://github.com/yandex-cloud/geesefs/archive/ad455fd2b4e820f4d9becad4faf9fafeb29b8f2a.zip
