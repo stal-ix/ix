@@ -1,1 +1,1 @@
-https://github.com/xyproto/orbiton/archive/refs/tags/v2.68.5.tar.gz
+https://github.com/xyproto/orbiton/archive/refs/tags/v2.68.6.tar.gz

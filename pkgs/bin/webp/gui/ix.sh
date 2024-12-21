@@ -2,7 +2,7 @@
 
 {% block bld_libs %}
 lib/glu
-lib/sdl/1
+lib/sdl/2
 lib/sdl/deps
 lib/freeglut
 lib/shim/fake(lib_name=OpenGL)
