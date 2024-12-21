@@ -45,10 +45,12 @@ cat << EOF >> Modules/Setup.local
 _ssl _ssl.c
 _hashlib _hashopenssl.c
 _multiprocessing _multiprocessing/multiprocessing.c _multiprocessing/socket_connection.c _multiprocessing/semaphore.c
+_ctypes _ctypes/_ctypes.c _ctypes/callbacks.c _ctypes/callproc.c _ctypes/stgdict.c _ctypes/cfield.c
 EOF
 {% endblock %}
 
 {% block configure_flags %}
+--with-system-ffi
 --without-ensurepip
 #--libdir=${out}/share/python2
 {% endblock %}
