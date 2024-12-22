@@ -14,6 +14,11 @@ pyexpat expat/xmlparse.c expat/xmlrole.c expat/xmltok.c pyexpat.c
 EOF
 {% endblock %}
 
+{% block build_flags %}
+{{super()}}
+wrap_cc
+{% endblock %}
+
 {% block cpp_defines %}
 {{super()}}
 HAVE_EXPAT_CONFIG_H=1
