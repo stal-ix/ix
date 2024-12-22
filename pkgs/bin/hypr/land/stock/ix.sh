@@ -51,12 +51,6 @@ EOF
 
 chmod +x scripts/generateVersion.sh
 
-find . -type f -name '*.cpp' | while read l; do
-prepend ${l} << EOF
-#include <print>
-EOF
-done
-
 sed -e 's|logOfs.native_handle.*|-1;|' \
     -i src/debug/Log.cpp
 {% endblock %}
