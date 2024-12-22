@@ -5,11 +5,11 @@ https://github.com/davmac314/dinit
 {% endblock %}
 
 {% block git_branch %}
-v0.19.1
+v0.19.2
 {% endblock %}
 
 {% block git_sha %}
-fd73e442e125208fc881739761b7d6d60a822ab783ba178e247a8c1ee56ac58c
+99108dbe8c8e13aab61e94e153def74c3d85fce2aa8bc6af374a28f4108ccd0f
 {% endblock %}
 
 {% block bld_libs %}
