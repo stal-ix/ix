@@ -59,8 +59,6 @@ done
 
 sed -e 's|logOfs.native_handle.*|-1;|' \
     -i src/debug/Log.cpp
-
-rm src/xwayland/Dnd.cpp
 {% endblock %}
 
 {% block build_flags %}
