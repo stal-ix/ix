@@ -1689,6 +1689,7 @@ https://github.com/geany/geany/archive/refs/tags/1.38.0.tar.gz
 https://github.com/geany/geany/archive/refs/tags/2.0.0.tar.gz
 https://github.com/gflags/gflags/archive/refs/tags/v2.2.2.tar.gz
 https://github.com/ggreer/the_silver_searcher/archive/refs/tags/2.2.0.tar.gz
+https://github.com/ginuerzh/gost/archive/refs/tags/v2.12.0.tar.gz
 https://github.com/git/git/archive/refs/tags/v2.42.0.tar.gz
 https://github.com/git/git/archive/refs/tags/v2.42.1.tar.gz
 https://github.com/git/git/archive/refs/tags/v2.43.0.tar.gz
