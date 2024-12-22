@@ -5,6 +5,9 @@
 {% endblock %}
 {% endset %}
 
+{% block export_symbols %}
+{% endblock %}
+
 {% block export_map %}
 cat << EOF
 {% for sym in ix.parse_list(self.export_symbols()) %}

@@ -89,7 +89,7 @@ bin/usb/view
 bin/gost
 bin/sing/box
 bin/just
-#bin/cosmic
+bin/cosmic
 bin/agrep
 bin/wstunnel
 bin/tun2socks
@@ -847,7 +847,7 @@ bin/lightgbm
 bin/dmidecode
 bin/qrencode
 bin/fswatch
-#bin/xarchiver
+bin/xarchiver
 bin/jasper
 bin/earlyoom
 bin/chrony

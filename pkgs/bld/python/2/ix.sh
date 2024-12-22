@@ -49,6 +49,7 @@ EOF
 {% endblock %}
 
 {% block configure_flags %}
+--with-system-ffi
 --without-ensurepip
 #--libdir=${out}/share/python2
 {% endblock %}
