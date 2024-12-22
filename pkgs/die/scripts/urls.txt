@@ -1871,6 +1871,7 @@ https://github.com/hyprwm/aquamarine/archive/refs/tags/v0.3.1.tar.gz
 https://github.com/hyprwm/aquamarine/archive/refs/tags/v0.4.2.tar.gz
 https://github.com/hyprwm/aquamarine/archive/refs/tags/v0.4.5.tar.gz
 https://github.com/hyprwm/hyprcursor/archive/refs/tags/v0.1.10.tar.gz
+https://github.com/hyprwm/hyprcursor/archive/refs/tags/v0.1.11.tar.gz
 https://github.com/hyprwm/hyprcursor/archive/refs/tags/v0.1.4.tar.gz
 https://github.com/hyprwm/hyprcursor/archive/refs/tags/v0.1.5.tar.gz
 https://github.com/hyprwm/hyprcursor/archive/refs/tags/v0.1.6.tar.gz
