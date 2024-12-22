@@ -1,7 +1,7 @@
 {% extends 'script.json' %}
 
 {% block script_body %}
-sed -xue
+set -xue
 rm -rf ${out}
 mkdir ${out}
 cat << EOF > ${out}/env
@@ -13,5 +13,5 @@ EOF
 {% endblock %}
 
 {% block script_exec %}
-["/usr/bin/env", "PATH={{ix_boot_path}}", "/bin/sh", "-s"]
+["/usr/bin/env", "PATH={{ix_boot_path}}", "sh", "-s"]
 {% endblock %}
