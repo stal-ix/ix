@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/capnproto/capnproto/archive/refs/tags/v1.0.2.tar.gz
-sha:3cfd0ed58080d78b3a3381305489f2175cdaf1ef1cb55425d8fc8246a76bdff3
+https://github.com/capnproto/capnproto/archive/refs/tags/v1.1.0.tar.gz
+sha:c0a0d78a07e821f7bae26c7fcac20a9202eb3d639a673b2606b76092a1f35b6b
 {% endblock %}
 
 {% block lib_deps %}

@@ -86,7 +86,8 @@ bin/think/fan
 bin/go/dispatch/proxy
 bin/dm/setup(verbose=1,setx=1)
 bin/usb/view
-bin/gost
+bin/gost/2
+bin/gost/3
 bin/sing/box
 bin/just
 bin/cosmic

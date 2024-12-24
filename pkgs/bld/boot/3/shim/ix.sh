@@ -25,5 +25,5 @@ chmod +x ${out}/bin/egrep ${out}/bin/fgrep ${out}/bin/makeinfo
 {% endblock%}
 
 {% block script_exec %}
-["/usr/bin/env", "PATH={{ix_boot_path}}", "/bin/sh", "-s"]
+["/usr/bin/env", "PATH={{ix_boot_path}}", "sh", "-s"]
 {% endblock %}
