@@ -1,3 +1,0 @@
-#!/usr/bin/env sh
-
-exec ${IX_BINARY} run bin/ix/tools/upver -- ix_upver "${@}"
