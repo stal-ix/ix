@@ -1,0 +1,20 @@
+#!/usr/bin/env sh
+
+set -ue
+
+cd $(dirname ${IX_BINARY})/pkgs/die/scripts/
+
+export LANG=C
+export LC_ALL=C
+
+(
+cat urls.txt
+IX_DUMP_GRAPH=1 IX_EXEC_KIND=fake "${IX_BINARY}" build set/ci | grep -v GOPROXY | grep '"http' | sed -e 's|.*"http|http|' | sed -e 's|".*||'
+find ${IX_PKGS_ROOT} -name '*.sh' | xargs cat | grep "http[s]*://"
+) | grep -v '#'  \
+  | grep -v ' '  \
+  | grep -v '{{' \
+  | grep -v 'skia.google' \
+  | ix_urls_flt \
+  > _
+mv _ urls.txt
