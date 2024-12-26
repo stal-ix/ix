@@ -4,5 +4,5 @@
 bld/sh
 bin/wget
 bin/python/frozen
-bin/ix/upver/scripts
+bin/ix/tools/upver/scripts
 {% endblock %}

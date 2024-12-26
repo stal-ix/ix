@@ -1,0 +1,13 @@
+#!/usr/bin/env sh
+
+C=${1}
+
+shift
+
+cd ${IX_WHERE}
+
+if test -f ${C}; then
+    exec ./${C} ${@}
+else
+    exec ${IX_BINARY} run bin/ix/tools/${C} -- ix_${C} ${@}
+fi
