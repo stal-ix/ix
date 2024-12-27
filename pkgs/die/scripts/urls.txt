@@ -2728,7 +2728,9 @@ https://github.com/quictls/openssl/archive/refs/tags/openssl-3.1.4-quic1.tar.gz
 https://github.com/quictls/openssl/archive/refs/tags/openssl-3.1.5-quic1.tar.gz
 https://github.com/quictls/openssl/archive/refs/tags/openssl-3.1.7-quic1.tar.gz
 https://github.com/rakshasa/libtorrent/archive/refs/tags/v0.14.0.tar.gz
+https://github.com/rakshasa/libtorrent/archive/refs/tags/v0.15.0.tar.gz
 https://github.com/rakshasa/rtorrent/archive/refs/tags/v0.10.0.tar.gz
+https://github.com/rakshasa/rtorrent/archive/refs/tags/v0.15.0.tar.gz
 https://github.com/randombit/botan/archive/refs/tags/2.19.3.tar.gz
 https://github.com/randombit/botan/archive/refs/tags/2.19.5.tar.gz
 https://github.com/randombit/botan/archive/refs/tags/3.3.0.tar.gz
