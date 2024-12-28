@@ -11,10 +11,12 @@ bfa8e726032ea12b620d033e11970e607290781251fbabe41db820144211b38d
 {% block bld_libs %}
 lib/bpf
 lib/kernel
+{% endblock %}
+
+{% block host_libs %}
+{{super()}}
+lib/bpf
 lib/llvm/19
-lib/shim/fake(lib_name=ffi)
-lib/shim/fake(lib_name=ncursesw)
-lib/shim/fake(lib_name=stdc++)
 {% endblock %}
 
 {% block cargoc_ver %}
@@ -28,7 +30,6 @@ lib/shim/fake(lib_name=stdc++)
 {% block bld_tool %}
 {{super()}}
 bin/bpf/clang
-bld/llvm/config
 {% endblock %}
 
 {% block binary %}
@@ -42,6 +43,10 @@ bld/llvm/config
 {{super()}}
 sed -e 's|"runtime"|"static"|' \
     -i vendored/bindgen/Cargo.toml
+cat << EOF > vendored/clang-sys/build/static.rs
+pub fn link() {
+}
+EOF
 {% endblock %}
 
 {% block build %}

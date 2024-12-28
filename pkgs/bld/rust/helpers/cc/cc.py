@@ -36,15 +36,19 @@ fs_cc = [
     '-nostdlib++',
 ]
 
+def call(args):
+    print(f'call {args}', file=sys.stderr)
+    return subprocess.check_call(args)
+
 def run():
     for cc in (fs_cc, [target_cc], [host_cc]):
         try:
-            return subprocess.check_call(cc + sys.argv[1:])
+            return call(cc + sys.argv[1:])
         except Exception as e:
             err = e
 
         try:
-            return subprocess.check_call(list(flt_target(cc + sys.argv[1:])))
+            return call(list(flt_target(cc + sys.argv[1:])))
         except Exception as e:
             err = e
 
