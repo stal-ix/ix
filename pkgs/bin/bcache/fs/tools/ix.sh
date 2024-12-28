@@ -5,20 +5,16 @@
 {% block bld_libs %}
 lib/llvm/19
 lib/bcache/fs
-lib/shim/fake(lib_name=ffi)
-lib/shim/fake(lib_name=ncursesw)
-lib/shim/fake(lib_name=stdc++)
-{% endblock %}
-
-{% block bld_tool %}
-{{super()}}
-bld/llvm/config
 {% endblock %}
 
 {% block patch %}
 {{super()}}
 sed -e 's|"runtime"|"static"|' \
     -i vendored/bindgen/Cargo.toml
+cat << EOF > vendored/clang-sys/build/static.rs
+pub fn link() {
+}
+EOF
 {% endblock %}
 
 {% block build %}
