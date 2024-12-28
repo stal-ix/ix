@@ -20,6 +20,11 @@ lib/input
 lib/llvm/19
 {% endblock %}
 
+{% block bld_tool %}
+{{super()}}
+bld/rust/helpers/patch/bindgen
+{% endblock %}
+
 {% block cargo_packages %}
 cosmic-greeter-daemon
 cosmic-greeter
@@ -27,13 +32,5 @@ cosmic-greeter
 
 {% block patch %}
 {{super()}}
-sed -e 's|"runtime"|"static"|g' \
-    -i vendored/bindgen/Cargo.toml
-cat << EOF >> vendored/clang-sys/Cargo.toml
-default = ["static"]
-EOF
-cat << EOF > vendored/clang-sys/build/static.rs
-pub fn link() {
-}
-EOF
+patch_bindgen
 {% endblock %}

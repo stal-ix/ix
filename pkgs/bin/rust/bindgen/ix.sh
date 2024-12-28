@@ -17,16 +17,14 @@ lib/llvm/19
 static
 {% endblock %}
 
+{% block bld_tool %}
+{{super()}}
+bld/rust/helpers/patch/bindgen
+{% endblock %}
+
 {% block patch %}
 {{super()}}
-sed -e 's|"runtime"|"static"|' \
-    -i bindgen/Cargo.toml
-sed -e 's|"runtime"|"static"|' \
-    -i vendored/clang-sys/Cargo.toml
-cat << EOF > vendored/clang-sys/build/static.rs
-pub fn link() {
-}
-EOF
+patch_bindgen
 {% endblock %}
 
 {% block install %}

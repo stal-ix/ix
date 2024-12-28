@@ -30,6 +30,7 @@ lib/llvm/19
 {% block bld_tool %}
 {{super()}}
 bin/bpf/clang
+bld/rust/helpers/patch/bindgen
 {% endblock %}
 
 {% block binary %}
@@ -41,12 +42,7 @@ bin/bpf/clang
 
 {% block patch %}
 {{super()}}
-sed -e 's|"runtime"|"static"|' \
-    -i vendored/bindgen/Cargo.toml
-cat << EOF > vendored/clang-sys/build/static.rs
-pub fn link() {
-}
-EOF
+patch_bindgen
 {% endblock %}
 
 {% block build %}
