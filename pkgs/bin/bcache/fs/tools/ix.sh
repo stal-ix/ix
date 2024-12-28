@@ -18,7 +18,7 @@ bld/rust/helpers/patch/bindgen
 
 {% block patch %}
 {{super()}}
-patch_bindgen
+patch_bindgen vendored
 {% endblock %}
 
 {% block build %}

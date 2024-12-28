@@ -32,5 +32,5 @@ cosmic-greeter
 
 {% block patch %}
 {{super()}}
-patch_bindgen
+patch_bindgen vendored
 {% endblock %}

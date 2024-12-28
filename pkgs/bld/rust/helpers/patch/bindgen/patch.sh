@@ -3,12 +3,12 @@
 set -xue
 
 sed -e 's|"runtime"|"static"|' \
-    -i bindgen/Cargo.toml
+    -i ${1}/bindgen/Cargo.toml
 
 sed -e 's|"runtime"|"static"|' \
-    -i vendored/clang-sys/Cargo.toml
+    -i ${1}/clang-sys/Cargo.toml
 
-cat << EOF > vendored/clang-sys/build/static.rs
+cat << EOF > ${1}/clang-sys/build/static.rs
 pub fn link() {
 }
 EOF
