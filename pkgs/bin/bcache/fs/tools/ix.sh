@@ -3,8 +3,12 @@
 {% include 'ver.sh' %}
 
 {% block bld_libs %}
-lib/llvm/19
 lib/bcache/fs
+{% endblock %}
+
+{% block host_libs %}
+{{super()}}
+lib/llvm/19
 {% endblock %}
 
 {% block patch %}

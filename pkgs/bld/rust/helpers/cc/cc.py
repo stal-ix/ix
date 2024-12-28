@@ -17,6 +17,10 @@ def flt_target(cmd):
             continue
         elif '-lunwind' in x:
             continue
+        elif '-lgcc_s' in x:
+            continue
+        elif x == '-lc':
+            continue
         elif x == '-static-pie':
             continue
         else:
@@ -25,15 +29,22 @@ def flt_target(cmd):
 def flt_host(cmd):
     return cmd
 
+fs_cc = [
+    'clang-19',
+    '-fuse-ld=lld',
+    '-nostdlib',
+    '-nostdlib++',
+]
+
 def run():
-    for cc in (target_cc, host_cc):
+    for cc in (fs_cc, [target_cc], [host_cc]):
         try:
-            return subprocess.check_call([cc] + sys.argv[1:])
+            return subprocess.check_call(cc + sys.argv[1:])
         except Exception as e:
             err = e
 
         try:
-            return subprocess.check_call(list(flt_target([cc] + sys.argv[1:])))
+            return subprocess.check_call(list(flt_target(cc + sys.argv[1:])))
         except Exception as e:
             err = e
 
