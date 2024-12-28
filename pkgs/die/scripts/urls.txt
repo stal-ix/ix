@@ -195,6 +195,7 @@ https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.12.3.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.12.4.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.12.5.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.12.6.tar.xz
+https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.12.7.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.12.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.2.14.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.3.13.tar.xz
@@ -3321,6 +3322,7 @@ https://gitlab.com/mbunkus/mkvtoolnix/-/archive/release-85.0/mkvtoolnix-release-
 https://gitlab.com/mbunkus/mkvtoolnix/-/archive/release-86.0/mkvtoolnix-release-86.0.tar.bz2
 https://gitlab.com/mbunkus/mkvtoolnix/-/archive/release-87.0/mkvtoolnix-release-87.0.tar.bz2
 https://gitlab.com/mbunkus/mkvtoolnix/-/archive/release-88.0/mkvtoolnix-release-88.0.tar.bz2
+https://gitlab.com/mbunkus/mkvtoolnix/-/archive/release-89.0/mkvtoolnix-release-89.0.tar.bz2
 https://gitlab.com/procps-ng/procps/-/archive/v4.0.4/procps-v4.0.4.tar.bz2
 https://gitlab.com/psmisc/psmisc/-/archive/v23.6/psmisc-v23.6.tar.bz2
 https://gitlab.com/psmisc/psmisc/-/archive/v23.7/psmisc-v23.7.tar.bz2
