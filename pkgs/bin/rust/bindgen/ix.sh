@@ -11,14 +11,6 @@ https://github.com/rust-lang/rust-bindgen/archive/refs/tags/v0.71.1.tar.gz
 {% block bld_libs %}
 lib/z
 lib/llvm/19
-lib/shim/fake(lib_name=ffi)
-lib/shim/fake(lib_name=stdc++)
-lib/shim/fake(lib_name=ncursesw)
-{% endblock %}
-
-{% block bld_tool %}
-{{super()}}
-bld/llvm/config
 {% endblock %}
 
 {% block cargo_features %}
@@ -31,6 +23,10 @@ sed -e 's|"runtime"|"static"|' \
     -i bindgen/Cargo.toml
 sed -e 's|"runtime"|"static"|' \
     -i vendored/clang-sys/Cargo.toml
+cat << EOF > vendored/clang-sys/build/static.rs
+pub fn link() {
+}
+EOF
 {% endblock %}
 
 {% block install %}
