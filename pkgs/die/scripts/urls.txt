@@ -650,6 +650,7 @@ https://ftp.gnu.org/pub/gnu/gettext/gettext-0.22.2.tar.gz
 https://ftp.gnu.org/pub/gnu/gettext/gettext-0.22.3.tar.gz
 https://ftp.gnu.org/pub/gnu/gettext/gettext-0.22.4.tar.gz
 https://ftp.gnu.org/pub/gnu/gettext/gettext-0.22.5.tar.gz
+https://ftp.gnu.org/pub/gnu/gettext/gettext-0.23.1.tar.gz
 https://ftp.gnu.org/pub/gnu/gettext/gettext-0.23.tar.gz
 https://ftp.gnu.org/pub/gnu/libiconv/libiconv-1.17.tar.gz
 https://ftp.gnu.org/pub/gnu/libiconv/libiconv-1.18.tar.gz
