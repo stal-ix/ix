@@ -1147,6 +1147,7 @@ https://github.com/PurpleI2P/i2pd/archive/refs/tags/2.52.0.tar.gz
 https://github.com/PurpleI2P/i2pd/archive/refs/tags/2.53.0.tar.gz
 https://github.com/PurpleI2P/i2pd/archive/refs/tags/2.53.1.tar.gz
 https://github.com/PurpleI2P/i2pd/archive/refs/tags/2.54.0.tar.gz
+https://github.com/PurpleI2P/i2pd/archive/refs/tags/2.55.0.tar.gz
 https://github.com/Rafostar/clapper/archive/refs/tags/0.6.1.tar.gz
 https://github.com/RazrFalcon/resvg/archive/refs/tags/v0.38.0.tar.gz
 https://github.com/RazrFalcon/resvg/archive/refs/tags/v0.39.0.tar.gz
@@ -1331,6 +1332,7 @@ https://github.com/bensadeh/circumflex/archive/refs/tags/3.5.tar.gz
 https://github.com/bensadeh/tailspin/archive/refs/tags/3.0.0.tar.gz
 https://github.com/berndporr/iir1/archive/refs/tags/1.9.4.tar.gz
 https://github.com/besser82/libxcrypt/archive/refs/tags/v4.4.36.tar.gz
+https://github.com/besser82/libxcrypt/archive/refs/tags/v4.4.37.tar.gz
 https://github.com/bfgroup/b2/archive/refs/tags/4.9.2.tar.gz
 https://github.com/bfgroup/b2/archive/refs/tags/5.1.0.tar.gz
 https://github.com/bfgroup/b2/archive/refs/tags/5.2.0.tar.gz
