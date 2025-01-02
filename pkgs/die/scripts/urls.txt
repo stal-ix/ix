@@ -1466,6 +1466,7 @@ https://github.com/dosfstools/dosfstools/releases/download/v4.2/dosfstools-4.2.t
 https://github.com/doxygen/doxygen/archive/refs/tags/Release_1_10_0.tar.gz
 https://github.com/doxygen/doxygen/archive/refs/tags/Release_1_12_0.tar.gz
 https://github.com/doxygen/doxygen/archive/refs/tags/Release_1_13_0.tar.gz
+https://github.com/doxygen/doxygen/archive/refs/tags/Release_1_13_1.tar.gz
 https://github.com/doxygen/doxygen/archive/refs/tags/Release_1_9_8.tar.gz
 https://github.com/drakkan/sftpgo/archive/019edf38f3a1c9b7bcd318b5ad94373ce7adeae1.zip
 https://github.com/drakkan/sftpgo/archive/refs/tags/v2.5.6.tar.gz
