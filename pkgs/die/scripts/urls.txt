@@ -536,6 +536,7 @@ https://ftp.gnu.org/gnu/bash/bash-5.2.21.tar.gz
 https://ftp.gnu.org/gnu/bash/bash-5.2.37.tar.gz
 https://ftp.gnu.org/gnu/bash/bash-5.2.tar.gz
 https://ftp.gnu.org/gnu/bc/bc-1.07.1.tar.gz
+https://ftp.gnu.org/gnu/bc/bc-1.08.0.tar.gz
 https://ftp.gnu.org/gnu/binutils/binutils-2.41.tar.bz2
 https://ftp.gnu.org/gnu/binutils/binutils-2.42.tar.bz2
 https://ftp.gnu.org/gnu/binutils/binutils-2.43.1.tar.bz2
