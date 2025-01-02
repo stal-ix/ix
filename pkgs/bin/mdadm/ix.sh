@@ -1,8 +1,8 @@
 {% extends '//die/c/make.sh' %}
 
 {% block fetch %}
-https://git.kernel.org/pub/scm/utils/mdadm/mdadm.git/snapshot/mdadm-4.3.tar.gz
-sha:1a38a5eed3738c130ead8fa5bea7d0ceec4676132c8c69536f176b9951b27b0b
+https://git.kernel.org/pub/scm/utils/mdadm/mdadm.git/snapshot/mdadm-4.4.tar.gz
+sha:680fed532857088e0cd87c56c00033ae35eae0a3f9cb7e1523b345ba8717fb93
 {% endblock %}
 
 {% block bld_libs %}
