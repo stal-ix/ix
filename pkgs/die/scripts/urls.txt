@@ -2337,6 +2337,7 @@ https://github.com/martinus/robin-hood-hashing/archive/refs/tags/3.11.3.tar.gz
 https://github.com/martinvonz/jj/archive/refs/tags/v0.13.0.tar.gz
 https://github.com/martinvonz/jj/archive/refs/tags/v0.21.0.tar.gz
 https://github.com/martinvonz/jj/archive/refs/tags/v0.22.0.tar.gz
+https://github.com/martinvonz/jj/archive/refs/tags/v0.25.0.tar.gz
 https://github.com/marzer/tomlplusplus/archive/refs/tags/v3.4.0.tar.gz
 https://github.com/mauke/unibilium/archive/refs/tags/v2.0.0.tar.gz
 https://github.com/mawww/kakoune/archive/refs/tags/v2023.08.05.tar.gz
