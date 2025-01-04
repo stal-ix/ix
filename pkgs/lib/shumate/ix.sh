@@ -2,7 +2,7 @@
 
 {% block fetch %}
 https://github.com/GNOME/libshumate/archive/refs/tags/1.3.1.tar.gz
-sha:
+sha:c7a5478d763ddbdd0ad64bab3fa78adf8be9dcf9e77e982c798e26225d809099
 {% endblock %}
 
 {% block lib_deps %}
