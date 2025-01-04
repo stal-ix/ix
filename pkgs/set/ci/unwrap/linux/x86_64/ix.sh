@@ -90,7 +90,7 @@ bin/gost/2
 bin/gost/3
 bin/sing/box
 bin/just
-bin/cosmic
+#bin/cosmic
 bin/agrep
 bin/wstunnel
 bin/tun2socks
