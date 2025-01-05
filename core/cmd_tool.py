@@ -3,6 +3,10 @@ import os
 
 def cli_tool(ctx):
     args = ctx['args']
+
+    if not args:
+        args = ['list']
+
     pkgs = os.path.dirname(ctx['binary'])
     where = os.path.join(pkgs, 'pkgs', 'die', 'scripts')
     script = os.path.join(where, 'runner')
