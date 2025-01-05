@@ -2377,6 +2377,7 @@ https://github.com/microsoft/mimalloc/archive/refs/tags/v2.1.4.tar.gz
 https://github.com/microsoft/mimalloc/archive/refs/tags/v2.1.6.tar.gz
 https://github.com/microsoft/mimalloc/archive/refs/tags/v2.1.7.tar.gz
 https://github.com/microsoft/mimalloc/archive/refs/tags/v2.1.8.tar.gz
+https://github.com/microsoft/mimalloc/archive/refs/tags/v3.0.1.tar.gz
 https://github.com/microsoft/msquic/archive/refs/tags/v2.2.2.tar.gz
 https://github.com/microsoft/msquic/archive/refs/tags/v2.2.3.tar.gz
 https://github.com/microsoft/msquic/archive/refs/tags/v2.2.4.tar.gz
