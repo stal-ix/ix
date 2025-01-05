@@ -3,22 +3,22 @@
 {% include 'ver.sh' %}
 
 {% block bld_libs %}
-lib/llvm/19
 lib/bcache/fs
-lib/shim/fake(lib_name=ffi)
-lib/shim/fake(lib_name=ncursesw)
-lib/shim/fake(lib_name=stdc++)
+{% endblock %}
+
+{% block host_libs %}
+{{super()}}
+lib/llvm/19
 {% endblock %}
 
 {% block bld_tool %}
 {{super()}}
-bld/llvm/config
+bld/rust/helpers/patch/bindgen
 {% endblock %}
 
 {% block patch %}
 {{super()}}
-sed -e 's|"runtime"|"static"|' \
-    -i vendored/bindgen/Cargo.toml
+patch_bindgen vendored
 {% endblock %}
 
 {% block build %}

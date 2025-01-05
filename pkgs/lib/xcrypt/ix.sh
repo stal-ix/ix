@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh'%}
 
 {% block fetch %}
-https://github.com/besser82/libxcrypt/archive/refs/tags/v4.4.36.tar.gz
-sha:b979838d5f1f238869d467484793b72b8bca64c4eae696fdbba0a9e0b6c28453
+https://github.com/besser82/libxcrypt/archive/refs/tags/v4.4.37.tar.gz
+sha:e02e1150f43de89c65f331f50b3c008fe47967bbbf62e7171c7a335583a4bd74
 {% endblock %}
 
 {% block lib_deps %}

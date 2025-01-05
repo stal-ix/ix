@@ -125,7 +125,7 @@ def fetch_url_curl(args, url, out, tout):
     cmd = tout_prefix(tout) + [
         'curl',
         '-f',
-        '--connect-timeout', '10',
+        '--connect-timeout', str(int(0.1 * tout)),
         '--remove-on-error',
         '--retry', '0',
         '-k',

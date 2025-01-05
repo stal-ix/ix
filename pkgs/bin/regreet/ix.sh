@@ -1,11 +1,11 @@
 {% extends '//die/rust/cargo.sh' %}
 
 {% block cargo_url %}
-https://github.com/rharish101/ReGreet/archive/9ff3e11bb1b66b52f6e44a9b6c0fe93a8c993f74.zip
+https://github.com/rharish101/ReGreet/archive/refs/tags/0.1.3.tar.gz
 {% endblock %}
 
 {% block cargo_sha %}
-abe0f8ed8bba9bd32a639b268eea98cca1317b001a1f8f623fa1e068f3a88a82
+b79d163eead2b062c7ffc90865ef25d8f5e5b831bda0feccae32afe44a34b7e8
 {% endblock %}
 
 {% block bld_libs %}

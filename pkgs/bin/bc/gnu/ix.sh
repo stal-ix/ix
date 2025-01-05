@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://ftp.gnu.org/gnu/bc/bc-1.07.1.tar.gz
-sha:62adfca89b0a1c0164c2cdca59ca210c1d44c3ffc46daf9931cf4942664cb02a
+https://ftp.gnu.org/gnu/bc/bc-1.08.0.tar.gz
+sha:7db49996cbe16d7602936fef586e69e492c3df65765c0a891841025a1ad741ef
 {% endblock %}
 
 {% block bld_libs %}
@@ -29,4 +29,6 @@ bld/texinfo
 
 {% block patch %}
 rm bc/scan.c bc/bc.c bc/bc.h
+echo > "dc/-lreadline"
+echo > "dc/-lncurses"
 {% endblock %}

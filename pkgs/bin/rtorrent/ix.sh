@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://github.com/rakshasa/rtorrent/archive/refs/tags/v0.10.0.tar.gz
-sha:f1112e8ad9f4be09dc1ee2539fd73758de7fcd86a391814e73fb671c929f79b2
+https://github.com/rakshasa/rtorrent/archive/refs/tags/v0.15.0.tar.gz
+sha:9a47f284616c4b3867c787b78f98de25730e7506909824a951399b612d17314a
 {% endblock %}
 
 {% block lib_deps %}

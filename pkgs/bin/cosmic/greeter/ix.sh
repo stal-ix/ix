@@ -13,15 +13,16 @@ b1463d268f70116b60f2e77a044f8356b6ccbd4d883fd2a118657fe53e273e9b
 lib/pam
 lib/udev
 lib/input
+{% endblock %}
+
+{% block host_libs %}
+{{super()}}
 lib/llvm/19
-lib/shim/fake(lib_name=ffi)
-lib/shim/fake(lib_name=ncursesw)
-lib/shim/fake(lib_name=stdc++)
 {% endblock %}
 
 {% block bld_tool %}
 {{super()}}
-bld/llvm/config
+bld/rust/helpers/patch/bindgen
 {% endblock %}
 
 {% block cargo_packages %}
@@ -31,9 +32,5 @@ cosmic-greeter
 
 {% block patch %}
 {{super()}}
-sed -e 's|"runtime"|"static"|g' \
-    -i vendored/bindgen/Cargo.toml
-cat << EOF >> vendored/clang-sys/Cargo.toml
-default = ["static"]
-EOF
+patch_bindgen vendored
 {% endblock %}

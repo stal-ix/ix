@@ -1,11 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://github.com/tytso/e2fsprogs/archive/refs/tags/v1.46.6.tar.gz
-sha:9aba7176751fd8c50a1c5a49dd86192a5fe45a25d13cf62390977541d5d03bfe
-#broke bin/btrfs/progs
-#https://mirrors.edge.kernel.org/pub/linux/kernel/people/tytso/e2fsprogs/v1.47.1/e2fsprogs-1.47.1.tar.xz
-#sha:5a33dc047fd47284bca4bb10c13cfe7896377ae3d01cb81a05d406025d99e0d1
+https://github.com/tytso/e2fsprogs/archive/refs/tags/v1.47.2.tar.gz
+sha:be7edd7031734d1fef8a319f0901828f8ab89e8f3b5073e6b18740be3771a95c
 {% endblock %}
 
 {% block conf_ver %}2/71{% endblock %}

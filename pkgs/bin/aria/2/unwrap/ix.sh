@@ -39,3 +39,7 @@ bld/gettext
 --with-libcares
 --with-libz
 {% endblock %}
+
+{% block patch %}
+sed -e 's|0.18|0.23|' -i configure.ac
+{% endblock %}
