@@ -1412,6 +1412,7 @@ https://github.com/cisco/openh264/archive/refs/tags/v2.4.0.tar.gz
 https://github.com/cisco/openh264/archive/refs/tags/v2.4.1.tar.gz
 https://github.com/cisco/openh264/archive/refs/tags/v2.5.0.tar.gz
 https://github.com/cjlin1/liblinear/archive/v247/liblinear-247.tar.gz
+https://github.com/cjlin1/liblinear/archive/v247/liblinear-248.tar.gz
 https://github.com/cli/cli/archive/refs/tags/v2.14.4.tar.gz
 https://github.com/commonmark/cmark/archive/refs/tags/0.30.3.tar.gz
 https://github.com/containers/crun/releases/download/1.9/crun-1.9.tar.xz
