@@ -1,8 +1,8 @@
 {% extends '//die/c/autohell.sh' %}
 
 {% block fetch %}
-https://www.thrysoee.dk/editline/libedit-20240808-3.1.tar.gz
-sha:5f0573349d77c4a48967191cdd6634dd7aa5f6398c6a57fe037cc02696d6099f
+https://www.thrysoee.dk/editline/libedit-20250104-3.1.tar.gz
+sha:23792701694550a53720630cd1cd6167101b5773adddcb4104f7345b73a568ac
 {% endblock %}
 
 {% block lib_deps %}

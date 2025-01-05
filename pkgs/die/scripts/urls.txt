@@ -4148,6 +4148,7 @@ https://www.tcpdump.org/release/libpcap-1.10.4.tar.gz
 https://www.tcpdump.org/release/tcpdump-4.99.4.tar.gz
 https://www.thrysoee.dk/editline/libedit-20230827-3.1.tar.gz
 https://www.thrysoee.dk/editline/libedit-20240808-3.1.tar.gz
+https://www.thrysoee.dk/editline/libedit-20250104-3.1.tar.gz
 https://www.uclibc.org/downloads/uClibc-0.9.33.tar.xz
 https://www.x.org/pub/individual/util/util-macros-1.19.3.tar.bz2
 https://www.x.org/releases/individual/lib/libX11-1.8.6.tar.xz
