@@ -1,8 +1,8 @@
 {% extends '//lib/mimalloc/2/ix.sh' %}
 
 {% block fetch %}
-https://github.com/microsoft/mimalloc/archive/refs/tags/v1.8.2.tar.gz
-sha:4058d53d6ceb75862f32c30a6ee686c3cbb5e965b2c324b828ca454f7fe064f9
+https://github.com/microsoft/mimalloc/archive/refs/tags/v1.8.9.tar.gz
+sha:3aabe30485c4e908c1bf04136d5b95c08c6e73fa6fe6e1ec68b4851d3c60ee47
 {% endblock %}
 
 {% block bld_libs %}

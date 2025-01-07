@@ -1412,6 +1412,7 @@ https://github.com/cisco/openh264/archive/refs/tags/v2.4.0.tar.gz
 https://github.com/cisco/openh264/archive/refs/tags/v2.4.1.tar.gz
 https://github.com/cisco/openh264/archive/refs/tags/v2.5.0.tar.gz
 https://github.com/cjlin1/liblinear/archive/v247/liblinear-247.tar.gz
+https://github.com/cjlin1/liblinear/archive/v247/liblinear-248.tar.gz
 https://github.com/cli/cli/archive/refs/tags/v2.14.4.tar.gz
 https://github.com/commonmark/cmark/archive/refs/tags/0.30.3.tar.gz
 https://github.com/containers/crun/releases/download/1.9/crun-1.9.tar.xz
@@ -2372,11 +2373,13 @@ https://github.com/microsoft/GSL/archive/refs/tags/v4.0.0.tar.gz
 https://github.com/microsoft/cascadia-code/archive/refs/tags/v2404.23.tar.gz
 https://github.com/microsoft/mimalloc/archive/refs/tags/v1.7.6.tar.gz
 https://github.com/microsoft/mimalloc/archive/refs/tags/v1.8.2.tar.gz
+https://github.com/microsoft/mimalloc/archive/refs/tags/v1.8.9.tar.gz
 https://github.com/microsoft/mimalloc/archive/refs/tags/v2.1.2.tar.gz
 https://github.com/microsoft/mimalloc/archive/refs/tags/v2.1.4.tar.gz
 https://github.com/microsoft/mimalloc/archive/refs/tags/v2.1.6.tar.gz
 https://github.com/microsoft/mimalloc/archive/refs/tags/v2.1.7.tar.gz
 https://github.com/microsoft/mimalloc/archive/refs/tags/v2.1.8.tar.gz
+https://github.com/microsoft/mimalloc/archive/refs/tags/v3.0.1.tar.gz
 https://github.com/microsoft/msquic/archive/refs/tags/v2.2.2.tar.gz
 https://github.com/microsoft/msquic/archive/refs/tags/v2.2.3.tar.gz
 https://github.com/microsoft/msquic/archive/refs/tags/v2.2.4.tar.gz
@@ -4145,6 +4148,7 @@ https://www.tcpdump.org/release/libpcap-1.10.4.tar.gz
 https://www.tcpdump.org/release/tcpdump-4.99.4.tar.gz
 https://www.thrysoee.dk/editline/libedit-20230827-3.1.tar.gz
 https://www.thrysoee.dk/editline/libedit-20240808-3.1.tar.gz
+https://www.thrysoee.dk/editline/libedit-20250104-3.1.tar.gz
 https://www.uclibc.org/downloads/uClibc-0.9.33.tar.xz
 https://www.x.org/pub/individual/util/util-macros-1.19.3.tar.bz2
 https://www.x.org/releases/individual/lib/libX11-1.8.6.tar.xz

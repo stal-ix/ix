@@ -49,19 +49,9 @@ def print_help():
 
 
 def main_func(args, binary, seed):
-    if args and '/' in args[0]:
-        args = args[1:]
-
     hndl = find_handler(args)
 
     if not hndl:
-        try:
-            return main_func(['tool'] + args, binary, seed)
-        except IndexError:
-            pass
-        except FileNotFoundError:
-            pass
-
         print_help()
         sys.exit(1)
 
