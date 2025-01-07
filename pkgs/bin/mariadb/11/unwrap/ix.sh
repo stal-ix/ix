@@ -1,7 +1,7 @@
 {% extends '//bin/mariadb/t/ix.sh' %}
 
 {% block git_sha %}
-6a40263e1260a7305c4347549703aa514644c14f02e6fe093efc28592230624c
+903e27dcfd8df4b8fcc8bd5e076924ce4586a89dcb307d6d88d81ece2e372907
 {% endblock %}
 
 {% block git_repo %}
@@ -9,7 +9,7 @@ https://github.com/MariaDB/server.git
 {% endblock %}
 
 {% block git_branch %}
-mariadb-11.5.2
+mariadb-11.8.0
 {% endblock %}
 
 {% block git_refine %}
