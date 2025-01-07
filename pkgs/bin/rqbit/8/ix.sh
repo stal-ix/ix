@@ -5,7 +5,7 @@ https://github.com/ikatson/rqbit/archive/refs/tags/v8.0.0.tar.gz
 {% endblock %}
 
 {% block cargo_sha %}
-df840031e02c12de33e8ec3a50d916404fe7b6d30e560de95b4d16c6f6d070aa
+e34ab238ee69e589a53c84a5afb0cac27d66a825ebc38a7c8ee3821e6c125e7b
 {% endblock %}
 
 {% block cargo_ver %}
@@ -20,11 +20,13 @@ v4
 make webui-deps
 (
 cd crates/librqbit/webui
-npm i @rollup/rollup-linux-x64-musl
+npm install --save --save-exact vite@4.5.3
+npm install --save --save-exact rollup@3.29.0
 )
 (
 cd desktop
-npm i @rollup/rollup-linux-x64-musl
+npm install --save --save-exact vite@4.5.3
+npm install --save --save-exact rollup@3.29.0
 )
 {% endblock %}
 
@@ -45,4 +47,9 @@ cp ${tmp}/out/rqbit ${out}/bin/
 
 {% block bld_libs %}
 lib/openssl
+{% endblock %}
+
+{% block patch %}
+sed -e "s|manifestPath = .*|manifestPath = 'manifest.json';|" \
+    -i crates/librqbit/webui/post-build
 {% endblock %}
