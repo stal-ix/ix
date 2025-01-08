@@ -1,11 +1,11 @@
 {% extends '//bin/ya/2/ix.sh' %}
 
 {% block git_commit %}
-e7d6af6a60b41bd912f9723c946ba9464d7c8b31
+46ab84268076f9b4cb8406f7844ee5e389295ca4
 {% endblock %}
 
 {% block git_sha %}
-f79044618d02b96d22aa9d0e4c51d94461e9261d1f81433d90b7e4b0e228975d
+2e3f6b84cc7c30b5f3c773b1fe6783b07718c09c79f824a4847d0612230190d5
 {% endblock %}
 
 {% block bld_tool %}
