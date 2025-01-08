@@ -1,19 +1,27 @@
 {% extends '//die/rust/cargo.sh' %}
 
 {% block cargo_url %}
-https://github.com/ikatson/rqbit/archive/refs/tags/v7.0.1.tar.gz
+https://github.com/ikatson/rqbit/archive/refs/tags/v8.0.0.tar.gz
 {% endblock %}
 
 {% block cargo_sha %}
-974cfa5fa83d3ad77873c6b1e691d2f86144ee1a3b87296f91707b44bded2cdb
+ddbc916633aef8f6159e63c59c152cc73730c8d547a3a665d2774b95c3b7d417
 {% endblock %}
 
 {% block cargo_ver %}
 v4
 {% endblock %}
 
+{% block cargoc_ver %}
+83
+{% endblock %}
+
 {% block cargo_refine %}
 make webui-deps
+(
+cd crates/librqbit/webui
+npm install --save --save-exact vite@4.5.3
+)
 {% endblock %}
 
 {% block cargo_refine_tools %}
@@ -33,4 +41,9 @@ cp ${tmp}/out/rqbit ${out}/bin/
 
 {% block bld_libs %}
 lib/openssl
+{% endblock %}
+
+{% block patch %}
+sed -e "s|manifestPath = .*|manifestPath = 'manifest.json';|" \
+    -i crates/librqbit/webui/post-build
 {% endblock %}

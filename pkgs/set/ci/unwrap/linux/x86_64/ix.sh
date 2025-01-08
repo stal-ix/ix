@@ -46,7 +46,6 @@
 #}
 
 {% block run_deps %}
-bin/rqbit/8
 bin/pixman
 bin/rtorrent
 #argmax problem

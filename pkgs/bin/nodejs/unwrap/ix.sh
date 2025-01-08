@@ -10,7 +10,7 @@ lib/c
 lib/z
 lib/uv
 lib/xz
-#lib/icu
+lib/icu
 lib/c++
 lib/kernel
 lib/c/ares
@@ -45,7 +45,7 @@ bin/python/huge
 --shared-simdjson
 
 --without-npm
---with-intl=none
+--with-intl=system-icu
 
 --experimental-http-parser
 {% endblock %}
