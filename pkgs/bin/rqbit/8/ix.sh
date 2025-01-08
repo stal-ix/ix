@@ -5,7 +5,7 @@ https://github.com/ikatson/rqbit/archive/refs/tags/v8.0.0.tar.gz
 {% endblock %}
 
 {% block cargo_sha %}
-e34ab238ee69e589a53c84a5afb0cac27d66a825ebc38a7c8ee3821e6c125e7b
+0098e200dd224d9b4fca6caa302d051c817dee8fb0b6ef0e144c46ccc5a67fe1
 {% endblock %}
 
 {% block cargo_ver %}
@@ -21,12 +21,10 @@ make webui-deps
 (
 cd crates/librqbit/webui
 npm install --save --save-exact vite@4.5.3
-npm install --save --save-exact rollup@3.29.0
 )
 (
 cd desktop
 npm install --save --save-exact vite@4.5.3
-npm install --save --save-exact rollup@3.29.0
 )
 {% endblock %}
 
