@@ -46,8 +46,6 @@ bin/python/huge
 
 --without-npm
 --with-intl=system-icu
-
---experimental-http-parser
 {% endblock %}
 
 {% block build_flags %}
