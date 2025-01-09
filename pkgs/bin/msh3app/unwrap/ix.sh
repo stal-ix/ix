@@ -5,9 +5,8 @@
 MSH3_TOOL=ON
 {% endblock %}
 
-{% block install %}
+{% block bld_libs %}
 {{super()}}
-cd ${out}
-mkdir bin
-mv lib/msh3app bin/
+lib/shim/fake(lib_name=OpenSSL)
+lib/shim/fake(lib_name=base_link)
 {% endblock %}
