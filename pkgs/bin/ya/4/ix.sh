@@ -1,14 +1,15 @@
 {% extends '//bin/ya/t/ymake/ix.sh' %}
 
 {% block git_commit %}
-e7d6af6a60b41bd912f9723c946ba9464d7c8b31
+2c1b5b75ea9fd913cda4d28c8c18dfe38a320852
 {% endblock %}
 
 {% block git_sha %}
-f79044618d02b96d22aa9d0e4c51d94461e9261d1f81433d90b7e4b0e228975d
+c0c448b86c0220eb15f5090a26dd14e68015e792281510c1f88c359a0174d5bc
 {% endblock %}
 
 {% block bld_tool %}
+bin/ya/3
 bin/ya/1
 {{super()}}
 {% endblock %}

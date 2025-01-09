@@ -2,7 +2,7 @@
 
 {% block run_deps %}
 # ymake
-bin/ya/2
+bin/ya/4
 # ya
 bin/ya/1
 bin/ya/wrapper
