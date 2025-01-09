@@ -3427,6 +3427,7 @@ https://gitlab.freedesktop.org/serebit/waycheck/-/archive/v1.3.1/waycheck-v1.3.1
 https://gitlab.freedesktop.org/serebit/waycheck/-/archive/v1.4.0/waycheck-v1.4.0.tar.bz2
 https://gitlab.freedesktop.org/slirp/libslirp/-/archive/v4.7.0/libslirp-v4.7.0.tar.bz2
 https://gitlab.freedesktop.org/upower/upower/-/archive/v1.90.1/upower-v1.90.1.tar.bz2
+https://gitlab.freedesktop.org/upower/upower/-/archive/v1.90.7/upower-v1.90.7.tar.bz2
 https://gitlab.freedesktop.org/vyivel/libsfdo/-/archive/v0.1.3/libsfdo-v0.1.3.tar.bz2
 https://gitlab.freedesktop.org/wayland/wayland-protocols/-/archive/1.32/wayland-protocols-1.32.tar.bz2
 https://gitlab.freedesktop.org/wayland/wayland-protocols/-/archive/1.33/wayland-protocols-1.33.tar.bz2
