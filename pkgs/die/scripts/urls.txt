@@ -2540,6 +2540,7 @@ https://github.com/openSUSE/hwinfo/archive/refs/tags/23.2.tar.gz
 https://github.com/openSUSE/hwinfo/archive/refs/tags/23.3.tar.gz
 https://github.com/openSUSE/xinetd/archive/refs/tags/2.3.15.4.tar.gz
 https://github.com/opencv/opencv/archive/refs/tags/4.10.0.tar.gz
+https://github.com/opencv/opencv/archive/refs/tags/4.11.0.tar.gz
 https://github.com/opencv/opencv/archive/refs/tags/4.8.0.tar.gz
 https://github.com/opencv/opencv/archive/refs/tags/4.8.1.tar.gz
 https://github.com/opencv/opencv/archive/refs/tags/4.9.0.tar.gz
