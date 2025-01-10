@@ -630,7 +630,7 @@ bin/curl/mbedtls
 bin/curl/bearssl
 bin/curl/openssl
 bin/curl
-bin/curl/ms
+#bin/curl/ms
 bin/curl/wolf
 bin/curl/gnutls
 bin/wayland/utils

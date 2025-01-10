@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/litespeedtech/ls-qpack/archive/refs/tags/v2.2.3.tar.gz
-sha:62f6afb7c662ad7af54fec604e441d7e016ff9fc71f9d80e067e50becf77d1ac
+https://github.com/litespeedtech/ls-qpack/archive/refs/tags/v2.6.0.tar.gz
+sha:567a7a86f801eef5df28ce0cc89826d9008a57135027bdf63ba4a1d0639d0c58
 {% endblock %}
 
 {% block lib_deps %}
@@ -15,11 +15,9 @@ lib/bsd/overlay
 {% endblock %}
 
 {% block install %}
-mkdir ${out}/lib ${out}/include
-cp *.h ${out}/include/
-find ${tmp} -name '*.a' | while read l; do
-    cp ${l} ${out}/lib/
-done
+{{super()}}
+sed -e 's|.*LINK.*XXH.*||' \
+    -i ${out}/lib/cmake/ls-qpack/ls-qpack-config.cmake
 {% endblock %}
 
 {% block cmake_flags %}

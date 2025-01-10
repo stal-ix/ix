@@ -37,4 +37,6 @@ cd src/inc
 cp msquic.hpp *.h ${out}/include/
 mkdir ${out}/lib/cmake
 mv ${out}/share/msquic ${out}/lib/cmake/
+cd ${out}/lib
+ln -s . lib
 {% endblock %}
