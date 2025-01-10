@@ -3057,6 +3057,7 @@ https://github.com/telegramdesktop/tdesktop/releases/download/v5.0.6/tdesktop-5.
 https://github.com/telegramdesktop/tdesktop/releases/download/v5.1.1/tdesktop-5.1.1-full.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v5.1.4/tdesktop-5.1.4-full.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v5.1.8/tdesktop-5.1.8-full.tar.gz
+https://github.com/telegramdesktop/tdesktop/releases/download/v5.10.2/tdesktop-5.10.2-full.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v5.2.0/tdesktop-5.2.0-full.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v5.2.3/tdesktop-5.2.3-full.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v5.2.6/tdesktop-5.2.6-full.tar.gz
