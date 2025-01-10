@@ -1,6 +1,8 @@
 {% extends '//etc/services/runit/script/ix.sh' %}
 
 {% block srv_command %}
+export GOMAXPROCS=2
+
 exec /bin/dnsproxy \
     -v -o /proc/self/fd/1 \
     --ipv6-disabled \
