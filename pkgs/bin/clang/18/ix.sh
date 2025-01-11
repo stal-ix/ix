@@ -14,7 +14,7 @@ lib/blake3/c
 {% endblock %}
 
 {% block clang_export_ver %}
-{{self.clang_major_version().strip()}}.1.0
+{{self.clang_major_version().strip()}}
 {% endblock %}
 
 {% block bld_tool %}
