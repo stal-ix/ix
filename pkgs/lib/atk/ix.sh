@@ -1,8 +1,8 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://download.gnome.org/sources/at-spi2-core/2.54/at-spi2-core-2.54.0.tar.xz
-sha:d7eee7e75beddcc272cedc2b60535600f3aae6e481589ebc667afc437c0a6079
+https://download.gnome.org/sources/at-spi2-core/2.54/at-spi2-core-2.54.1.tar.xz
+sha:f0729e5c8765feb1969bb6c1fba18afa2582126b0359aa75a173fda1acf93c4c
 {% endblock %}
 
 {% block lib_deps %}
