@@ -400,6 +400,7 @@ https://download.savannah.gnu.org/releases/lzip/lzip-1.24.1.tar.gz
 https://download.savannah.gnu.org/releases/lzip/lzip-1.24.tar.gz
 https://download.savannah.gnu.org/releases/zutils/zutils-1.12.tar.lz
 https://download.savannah.gnu.org/releases/zutils/zutils-1.13.tar.lz
+https://download.savannah.gnu.org/releases/zutils/zutils-1.14.tar.lz
 https://download.savannah.nongnu.org/releases/libpipeline/libpipeline-1.5.8.tar.gz
 https://download.sourceforge.net/qjackctl/qjackctl-0.9.10.tar.gz
 https://download.sourceforge.net/qjackctl/qjackctl-1.0.1.tar.gz
