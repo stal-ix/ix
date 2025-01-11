@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-http://github.com/zeux/pugixml/releases/download/v1.13/pugixml-1.13.tar.gz
-sha:40c0b3914ec131485640fa57e55bf1136446026b41db91c1bef678186a12abbe
+http://github.com/zeux/pugixml/releases/download/v1.15/pugixml-1.15.tar.gz
+sha:655ade57fa703fb421c2eb9a0113b5064bddb145d415dd1f88c79353d90d511a
 {% endblock %}
 
 {% block lib_deps %}
