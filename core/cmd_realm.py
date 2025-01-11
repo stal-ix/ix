@@ -58,6 +58,7 @@ def cli_run(ctx):
     for r in reversed(list(prepare(ctx, ['ephemeral'] + args[:args.index('--')] + ['bin/ix/runner']))):
         cmd = ['runner_entry', f'{r.path}/env'] + args[args.index('--') + 1:]
         env = os.environ.copy()
+        env['OLDPATH'] = env.get('PATH', '')
         env['PATH'] = f'/nowhere:{r.path}/bin'
         exe = shutil.which(cmd[0], path=env['PATH'])
 
