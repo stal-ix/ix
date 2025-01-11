@@ -1058,6 +1058,7 @@ https://github.com/Kitware/CMake/archive/refs/tags/v3.31.0.tar.gz
 https://github.com/Kitware/CMake/archive/refs/tags/v3.31.1.tar.gz
 https://github.com/Kitware/CMake/archive/refs/tags/v3.31.2.tar.gz
 https://github.com/Kitware/CMake/archive/refs/tags/v3.31.3.tar.gz
+https://github.com/Kitware/CMake/archive/refs/tags/v3.31.4.tar.gz
 https://github.com/LBCrion/sfwbar/archive/refs/tags/v1.0_beta13.tar.gz
 https://github.com/LBCrion/sfwbar/archive/refs/tags/v1.0_beta9.tar.gz
 https://github.com/LibRaw/LibRaw/archive/refs/tags/0.21.1.tar.gz
@@ -1845,6 +1846,7 @@ https://github.com/hanslub42/rlwrap/archive/refs/tags/0.46.1.tar.gz
 https://github.com/harfbuzz/harfbuzz/archive/refs/tags/10.0.0.tar.gz
 https://github.com/harfbuzz/harfbuzz/archive/refs/tags/10.0.1.tar.gz
 https://github.com/harfbuzz/harfbuzz/archive/refs/tags/10.1.0.tar.gz
+https://github.com/harfbuzz/harfbuzz/archive/refs/tags/10.2.0.tar.gz
 https://github.com/harfbuzz/harfbuzz/archive/refs/tags/8.2.0.tar.gz
 https://github.com/harfbuzz/harfbuzz/archive/refs/tags/8.2.1.tar.gz
 https://github.com/harfbuzz/harfbuzz/archive/refs/tags/8.2.2.tar.gz
@@ -2580,6 +2582,7 @@ https://github.com/pciutils/pciutils/archive/refs/tags/v3.13.0.tar.gz
 https://github.com/pg83/bcrypt/archive/e8270a3fa761d9301199f828af90a67e2721c7a8.zip
 https://github.com/pg83/deya/archive/refs/tags/1.tar.gz
 https://github.com/pg83/dlopen/archive/refs/tags/v2.tar.gz
+https://github.com/pg83/gg/archive/3a99d108518d46ee46732ef7b7b62e46df70440e.zip
 https://github.com/pg83/heirloom/archive/a47c4acf9fb43b89f9fb0afdcf9008121d50d806.zip
 https://github.com/pg83/heirloom/archive/refs/tags/v1.tar.gz
 https://github.com/pg83/mdns2dns/archive/refs/tags/v1.tar.gz
