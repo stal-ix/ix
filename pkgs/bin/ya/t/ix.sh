@@ -2,7 +2,6 @@
 
 {% block bld_tool %}
 bin/ya/java
-bld/prepend
 {{super()}}
 {% endblock %}
 
@@ -18,15 +17,10 @@ YA_OPENSOURCE=yes
 OPENSOURCE_PROJECT=ya
 YMAKE_EXCLUDE_IDL_TOOL=yes
 USE_SYSTEM_JDK=${YA_JAVA_DIR}
+SANDBOXING=no
+NEED_PLATFORM_PEERDIRS=yes
 {% endblock %}
 
 {% block patch %}
-{{super()}}
-prepend build/ymake_conf.py << EOF
-import os
-os.environ["FREESTANDING_CLANG"] = "${FREESTANDING_CLANG}"
-os.environ["CLANG_HEADERS"] = "${CLANG_HEADERS}"
-EOF
-sed -e 's|.*from.*__future__.*||' \
-    -i build/ymake_conf.py
+sed -e 's|.*--ld-path.*||' -i build/platform/lld/ya.make
 {% endblock %}

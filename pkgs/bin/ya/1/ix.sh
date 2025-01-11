@@ -24,10 +24,10 @@ extract 1 ${src}/1.tar.gz
 
 {% block bld_tool %}
 bin/ya/0
+bin/ya/gg
 {{super()}}
 {% endblock %}
 
 {% block ya_make_targets %}
-devtools/ya/bin/ya-bin
 devtools/ymake/bin/ymake
 {% endblock %}

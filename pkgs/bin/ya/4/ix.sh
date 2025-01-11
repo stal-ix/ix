@@ -10,6 +10,6 @@ c0c448b86c0220eb15f5090a26dd14e68015e792281510c1f88c359a0174d5bc
 
 {% block bld_tool %}
 bin/ya/3
-bin/ya/1
+bin/ya/gg
 {{super()}}
 {% endblock %}

@@ -10,6 +10,6 @@
 
 {% block bld_tool %}
 bin/ya/2
-bin/ya/1
+bin/ya/gg
 {{super()}}
 {% endblock %}

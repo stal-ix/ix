@@ -21,7 +21,7 @@ f900bf83c523e4ae2688381a15c8ff5915e160a45c6f94fdfed8d1f4172f2ea7
 bld/gzip
 bld/make
 bin/ya/clang
-bin/clang/18
+bld/compiler
 bin/util/linux
 bld/fake/binutils
 {% endblock %}
@@ -59,14 +59,15 @@ touch ${tmp}/devtools/ymake/lang/*
 {% endblock %}
 
 {% block build %}
-make SHELL=$(command -v sh) S=${PWD} B=${tmp} -j ${make_thrs} \
-    ${tmp}/devtools/ymake/bin/ymake \
-    ${tmp}/devtools/ya/bin/ya-bin
+make \
+    SHELL=$(command -v sh) \
+    S=${PWD} \
+    B=${tmp} \
+    -j ${make_thrs} \
+    ${tmp}/devtools/ymake/bin/ymake
 {% endblock %}
-
-{# ${tmp}/contrib/libs/musl/libcontrib-libs-musl.a #}
 
 {% block install %}
 mkdir ${out}/bin
-cp ${tmp}/devtools/ymake/bin/ymake ${tmp}/devtools/ya/bin/ya-bin ${out}/bin/
+cp ${tmp}/devtools/ymake/bin/ymake ${out}/bin/
 {% endblock %}
