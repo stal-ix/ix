@@ -5,7 +5,7 @@ d4e46645fe1f35d5406bc096e373db1d72201231
 {% endblock %}
 
 {% block ya_git_sha %}
-qw
+d04918e700c2a90eba543cd668dac12a29cd4c7652a5107ba87bfeb9a07f4824
 {% endblock %}
 
 {% block run_deps %}

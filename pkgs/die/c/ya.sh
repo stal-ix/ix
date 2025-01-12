@@ -28,15 +28,15 @@ export CONLYFLAGS=
 {% block ya_make_targets %}
 {% endblock %}
 
-{#--host-platform-flag={{x}}#}
-
 {% block ya_make_cmd %}
 ya
 make
 -r
+-T
 -j ${make_thrs}
 {% for x in ix.parse_list(self.ya_make_flags()) %}
 -D{{x}}
+--host-platform-flag={{x}}
 {% endfor %}
 {% for x in ix.parse_list(self.ya_make_targets()) %}
 {{x | dirname}}
