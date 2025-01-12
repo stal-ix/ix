@@ -32,6 +32,7 @@ bld/make
 {% block bld_tool %}
 {{super()}}
 bld/npm
+bin/esbuild/18
 {% endblock %}
 
 {% block install %}
@@ -44,6 +45,10 @@ lib/openssl
 {% endblock %}
 
 {% block patch %}
+find . -name esbuild -type f | while read l; do
+    rm ${l}
+    cp $(command -v esbuild) ${l}
+done
 sed -e "s|manifestPath = .*|manifestPath = 'manifest.json';|" \
     -i crates/librqbit/webui/post-build
 {% endblock %}
