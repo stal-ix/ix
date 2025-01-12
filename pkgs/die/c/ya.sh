@@ -4,7 +4,6 @@
 bin/ya/clang(ya_c_flags={{self.ya_c_flags().strip()}})
 bld/python
 bld/compiler
-bin/ya/wrapper
 bld/fake/binutils
 {% endblock %}
 
