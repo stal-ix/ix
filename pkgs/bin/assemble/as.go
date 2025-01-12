@@ -1,7 +1,6 @@
 package main
 
 import (
-	"bufio"
 	"encoding/json"
 	"fmt"
 	"io"
@@ -10,6 +9,7 @@ import (
 	"os/exec"
 	"strings"
 	"sync"
+	"sync/atomic"
 	"syscall"
 )
 
@@ -233,15 +233,15 @@ func cat[T any](a []T, b []T) []T {
 	return append(append([]T{}, a...), b...)
 }
 
-func executeNode(node *Node, thrs int, out io.Writer) {
+func (self *executor) executeNode(node *Node, thrs int, out io.Writer) {
 	net := node.Pool == "network"
 	nouts := outs(node)
 
 	for _, o := range nouts {
 		if net {
-			fmt.Fprintln(out, color(M, "FETCH "+o))
+			fmt.Fprintln(out, color(M, self.complete()+" FETCH "+o))
 		} else {
-			fmt.Fprintln(out, color(B, "BUILD "+o))
+			fmt.Fprintln(out, color(B, self.complete()+" BUILD "+o))
 		}
 	}
 
@@ -260,7 +260,7 @@ func executeNode(node *Node, thrs int, out io.Writer) {
 			file.Close()
 		}
 
-		fmt.Fprintln(out, color(G, "LEAVE "+o))
+		fmt.Fprintln(out, color(G, self.complete()+" LEAVE "+o))
 	}
 
 	syscall.Sync()
@@ -276,24 +276,31 @@ func (self *future) callOnce() {
 }
 
 type executor struct {
-	thr int
-	out map[string]*future
-	sem map[string]*semaphore
+	thr  int
+	out  map[string]*future
+	sem  map[string]*semaphore
+	wait atomic.Uint64
+	done atomic.Uint64
+}
+
+func (self *executor) complete() string {
+	return fmt.Sprintf("{%d/%d}", self.done.Load()+1, self.wait.Load())
 }
 
 func (self *executor) execute(node *Node) {
-	buf := bufio.NewWriterSize(os.Stderr, 1024*8)
-	defer buf.Flush()
+	buf := os.Stdout
 
 	if complete(node, buf) {
 		return
 	}
 
+	self.wait.Add(1)
+	defer self.done.Add(1)
 	self.visitAll(ins(node))
 	sem, _ := self.sem[node.Pool]
 	sem.acquire()
 	defer sem.release()
-	executeNode(node, self.thr, buf)
+	self.executeNode(node, self.thr, buf)
 }
 
 func newNodeFuture(ex *executor, node *Node) *future {
