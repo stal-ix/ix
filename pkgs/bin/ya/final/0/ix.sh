@@ -1,8 +1,6 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
-# ymake
-bin/ya/4
-# ya
-bin/ya/gg
+bin/ya/wrapper
+bin/ya/final/unwrap(ya_boot_tc=bin/ya)
 {% endblock %}

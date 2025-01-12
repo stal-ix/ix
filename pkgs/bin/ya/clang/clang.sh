@@ -1,8 +1,8 @@
 set -ue
 
-exec clang-18 \
+exec ${FREESTANDING_CLANG} \
     -Wno-unused-command-line-argument \
     -fuse-ld=lld \
-    -isystem$(dirname $(dirname $(command -v clang-18)))/share/include \
+    -isystem${CLANG_HEADERS} \
     "${@}" \
     ${YA_C_FLAGS}

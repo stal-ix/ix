@@ -22,10 +22,12 @@ LLVM_TARGETS_TO_BUILD={{target.llvm_target}}
 {% endblock %}
 
 {% block clang_export_ver %}
-14.0.0
+14
 {% endblock %}
 
 {% block env %}
 {{super()}}
+export CLANG_HEADERS=${out}/share/include
 export CLANG_VERSION={{self.clang_export_ver().strip()}}
+export FREESTANDING_CLANG=clang-{{self.clang_export_ver().strip()}}
 {% endblock %}

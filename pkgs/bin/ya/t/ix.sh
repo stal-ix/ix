@@ -18,3 +18,7 @@ OPENSOURCE_PROJECT=ya
 YMAKE_EXCLUDE_IDL_TOOL=yes
 USE_SYSTEM_JDK=${YA_JAVA_DIR}
 {% endblock %}
+
+{% block patch %}
+sed -e 's|.*--ld-path.*||' -i build/platform/lld/ya.make
+{% endblock %}

@@ -21,7 +21,7 @@ bin/llvm/spirv
 {% endblock %}
 
 {% block setup_target_flags %}
-export LLVM_CLANG=$(command -v clang-19)
+export LLVM_CLANG=$(command -v ${FREESTANDING_CLANG})
 export LLVM_AS=$(command -v llvm-as)
 export LLVM_LINK=$(command -v llvm-link)
 export LLVM_OPT=$(command -v opt)

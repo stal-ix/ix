@@ -3,8 +3,7 @@
 {% block bld_tool %}
 bin/ya/clang(ya_c_flags={{self.ya_c_flags().strip()}})
 bld/python
-bin/clang/18
-bin/ya/wrapper
+bld/compiler
 bld/fake/binutils
 {% endblock %}
 
@@ -34,9 +33,12 @@ ya
 make
 -r
 -T
+-j ${make_thrs}
+--host-platform=default-{{host.os}}-{{host.gnu_arch}}
+--target-platform=default-{{target.os}}-{{target.gnu_arch}}
 {% for x in ix.parse_list(self.ya_make_flags()) %}
 -D{{x}}
---host-platform-flag={{x}}
+--hpf={{x}}
 {% endfor %}
 {% for x in ix.parse_list(self.ya_make_targets()) %}
 {{x | dirname}}

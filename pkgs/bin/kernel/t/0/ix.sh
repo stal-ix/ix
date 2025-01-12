@@ -24,7 +24,7 @@ bin/openssl
 {% endblock %}
 
 {% block mk_flags %}
-CC=clang-19
+CC=${FREESTANDING_CLANG}
 LD=ld.lld
 AR=llvm-ar
 NM=llvm-nm
@@ -39,7 +39,6 @@ HOSTLD=ld.lld
 {% endblock %}
 
 {% block configure %}
-clang-19 --help
 make {{self.mk_flags().replace('\n', ' ')}} mrproper
 cat << EOF > .config
 {% block kconfig_flags %}

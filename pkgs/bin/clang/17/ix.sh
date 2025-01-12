@@ -5,7 +5,7 @@
 {% endblock %}
 
 {% block clang_export_ver %}
-17.0.0
+17
 {% endblock %}
 
 {% block llvm_targets %}

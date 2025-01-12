@@ -50,6 +50,7 @@ http://geeqie.org/cgi-bin/gitweb.cgi?p=geeqie.git;a=snapshot;h=fa7667fb6a2d59f4f
 http://get.videolan.org/vlc/3.0.17.3/vlc-3.0.17.3.tar.xz
 http://git.savannah.nongnu.org/cgit/dmidecode.git/snapshot/dmidecode-3-6.tar.gz
 http://github.com/zeux/pugixml/releases/download/v1.13/pugixml-1.13.tar.gz
+http://github.com/zeux/pugixml/releases/download/v1.15/pugixml-1.15.tar.gz
 http://gondor.apana.org.au/~herbert/dash/files/dash-0.5.11.3.tar.gz
 http://gondor.apana.org.au/~herbert/dash/files/dash-0.5.12.tar.gz
 http://haddonthethird.net/m4/m4-2.tar.bz2
@@ -333,6 +334,7 @@ https://dl.xpdfreader.com/xpdf-4.05.tar.gz
 https://dotat.at/prog/unifdef/unifdef-2.12.tar.xz
 https://download.gnome.org/sources/at-spi2-core/2.52/at-spi2-core-2.52.0.tar.xz
 https://download.gnome.org/sources/at-spi2-core/2.54/at-spi2-core-2.54.0.tar.xz
+https://download.gnome.org/sources/at-spi2-core/2.54/at-spi2-core-2.54.1.tar.xz
 https://download.gnome.org/sources/atkmm/2.28/atkmm-2.28.2.tar.xz
 https://download.gnome.org/sources/dconf/0.40/dconf-0.40.0.tar.xz
 https://download.gnome.org/sources/evince/44/evince-44.3.tar.xz
@@ -398,6 +400,7 @@ https://download.savannah.gnu.org/releases/lzip/lzip-1.24.1.tar.gz
 https://download.savannah.gnu.org/releases/lzip/lzip-1.24.tar.gz
 https://download.savannah.gnu.org/releases/zutils/zutils-1.12.tar.lz
 https://download.savannah.gnu.org/releases/zutils/zutils-1.13.tar.lz
+https://download.savannah.gnu.org/releases/zutils/zutils-1.14.tar.lz
 https://download.savannah.nongnu.org/releases/libpipeline/libpipeline-1.5.8.tar.gz
 https://download.sourceforge.net/qjackctl/qjackctl-0.9.10.tar.gz
 https://download.sourceforge.net/qjackctl/qjackctl-1.0.1.tar.gz
@@ -907,6 +910,7 @@ https://github.com/GNOME/libadwaita/archive/refs/tags/1.5.1.tar.gz
 https://github.com/GNOME/libadwaita/archive/refs/tags/1.6.0.tar.gz
 https://github.com/GNOME/libadwaita/archive/refs/tags/1.6.1.tar.gz
 https://github.com/GNOME/libadwaita/archive/refs/tags/1.6.2.tar.gz
+https://github.com/GNOME/libadwaita/archive/refs/tags/1.6.3.tar.gz
 https://github.com/GNOME/libgudev/archive/refs/tags/237.tar.gz
 https://github.com/GNOME/libgudev/archive/refs/tags/238.tar.gz
 https://github.com/GNOME/libshumate/archive/refs/tags/1.0.5.tar.gz
@@ -1056,6 +1060,7 @@ https://github.com/Kitware/CMake/archive/refs/tags/v3.31.0.tar.gz
 https://github.com/Kitware/CMake/archive/refs/tags/v3.31.1.tar.gz
 https://github.com/Kitware/CMake/archive/refs/tags/v3.31.2.tar.gz
 https://github.com/Kitware/CMake/archive/refs/tags/v3.31.3.tar.gz
+https://github.com/Kitware/CMake/archive/refs/tags/v3.31.4.tar.gz
 https://github.com/LBCrion/sfwbar/archive/refs/tags/v1.0_beta13.tar.gz
 https://github.com/LBCrion/sfwbar/archive/refs/tags/v1.0_beta9.tar.gz
 https://github.com/LibRaw/LibRaw/archive/refs/tags/0.21.1.tar.gz
@@ -1133,6 +1138,7 @@ https://github.com/NixOS/patchelf/archive/refs/tags/0.18.0.tar.gz
 https://github.com/Novum/vkQuake/archive/refs/tags/1.30.1.tar.gz
 https://github.com/Novum/vkQuake/archive/refs/tags/1.31.2.tar.gz
 https://github.com/Novum/vkQuake/archive/refs/tags/1.31.3.tar.gz
+https://github.com/Novum/vkQuake/archive/refs/tags/1.32.0.tar.gz
 https://github.com/Old-Man-Programmer/tree/archive/refs/tags/2.1.1.tar.gz
 https://github.com/OpenPrinting/cups/archive/refs/tags/v2.4.8.tar.gz
 https://github.com/OpenTTD/OpenTTD/archive/refs/tags/13.4.tar.gz
@@ -1219,6 +1225,7 @@ https://github.com/YaLTeR/niri/archive/refs/tags/v0.1.6.tar.gz
 https://github.com/YaLTeR/niri/archive/refs/tags/v0.1.7.tar.gz
 https://github.com/YaLTeR/niri/archive/refs/tags/v0.1.8.tar.gz
 https://github.com/YaLTeR/niri/archive/refs/tags/v0.1.9.tar.gz
+https://github.com/YaLTeR/niri/archive/refs/tags/v25.01.tar.gz
 https://github.com/Z3Prover/z3/archive/refs/tags/z3-4.12.2.tar.gz
 https://github.com/Z3Prover/z3/archive/refs/tags/z3-4.12.3.tar.gz
 https://github.com/Z3Prover/z3/archive/refs/tags/z3-4.12.4.tar.gz
@@ -1735,6 +1742,7 @@ https://github.com/git/git/archive/refs/tags/v2.46.1.tar.gz
 https://github.com/git/git/archive/refs/tags/v2.46.2.tar.gz
 https://github.com/git/git/archive/refs/tags/v2.47.0.tar.gz
 https://github.com/git/git/archive/refs/tags/v2.47.1.tar.gz
+https://github.com/git/git/archive/refs/tags/v2.48.0.tar.gz
 https://github.com/glencoesoftware/jxrlib/archive/refs/tags/v0.2.4.tar.gz
 https://github.com/glennrp/libpng/archive/refs/tags/v1.6.40.tar.gz
 https://github.com/glennrp/libpng/archive/refs/tags/v1.6.41.tar.gz
@@ -1842,6 +1850,7 @@ https://github.com/hanslub42/rlwrap/archive/refs/tags/0.46.1.tar.gz
 https://github.com/harfbuzz/harfbuzz/archive/refs/tags/10.0.0.tar.gz
 https://github.com/harfbuzz/harfbuzz/archive/refs/tags/10.0.1.tar.gz
 https://github.com/harfbuzz/harfbuzz/archive/refs/tags/10.1.0.tar.gz
+https://github.com/harfbuzz/harfbuzz/archive/refs/tags/10.2.0.tar.gz
 https://github.com/harfbuzz/harfbuzz/archive/refs/tags/8.2.0.tar.gz
 https://github.com/harfbuzz/harfbuzz/archive/refs/tags/8.2.1.tar.gz
 https://github.com/harfbuzz/harfbuzz/archive/refs/tags/8.2.2.tar.gz
@@ -2014,6 +2023,7 @@ https://github.com/jesseduffield/lazygit/archive/refs/tags/v0.42.0.tar.gz
 https://github.com/jesseduffield/lazygit/archive/refs/tags/v0.43.1.tar.gz
 https://github.com/jesseduffield/lazygit/archive/refs/tags/v0.44.0.tar.gz
 https://github.com/jesseduffield/lazygit/archive/refs/tags/v0.44.1.tar.gz
+https://github.com/jesseduffield/lazygit/archive/refs/tags/v0.45.0.tar.gz
 https://github.com/jhawthorn/fzy/archive/refs/tags/1.0.tar.gz
 https://github.com/jirka-h/haveged/archive/refs/tags/v1.9.18.tar.gz
 https://github.com/jirka-h/haveged/archive/refs/tags/v1.9.19.tar.gz
@@ -2074,6 +2084,7 @@ https://github.com/kaniini/libucontext/archive/refs/tags/libucontext-1.3.1.tar.g
 https://github.com/kaniini/libucontext/archive/refs/tags/libucontext-1.3.2.tar.gz
 https://github.com/kcat/openal-soft/archive/refs/tags/1.23.1.tar.gz
 https://github.com/kcat/openal-soft/archive/refs/tags/1.24.0.tar.gz
+https://github.com/kcat/openal-soft/archive/refs/tags/1.24.2.tar.gz
 https://github.com/keepassxreboot/keepassxc/releases/download/2.7.6/keepassxc-2.7.6-src.tar.xz
 https://github.com/khorben/gbsddialog/archive/refs/tags/gbsddialog_0-9-0.tar.gz
 https://github.com/kkos/oniguruma/archive/refs/tags/v6.9.8.tar.gz
@@ -2237,6 +2248,7 @@ https://github.com/libsdl-org/SDL_ttf/archive/refs/tags/release-2.24.0.tar.gz
 https://github.com/libsdl-org/sdl12-compat/archive/refs/tags/release-1.2.60.tar.gz
 https://github.com/libsdl-org/sdl12-compat/archive/refs/tags/release-1.2.64.tar.gz
 https://github.com/libsixel/libsixel/archive/refs/tags/v1.10.3.tar.gz
+https://github.com/libsixel/libsixel/archive/refs/tags/v1.10.5.tar.gz
 https://github.com/libsndfile/libsamplerate/archive/refs/tags/0.2.2.tar.gz
 https://github.com/libsndfile/libsndfile/releases/download/1.2.2/libsndfile-1.2.2.tar.xz
 https://github.com/libssh2/libssh2/archive/refs/tags/libssh2-1.11.0.tar.gz
@@ -2576,6 +2588,8 @@ https://github.com/pciutils/pciutils/archive/refs/tags/v3.13.0.tar.gz
 https://github.com/pg83/bcrypt/archive/e8270a3fa761d9301199f828af90a67e2721c7a8.zip
 https://github.com/pg83/deya/archive/refs/tags/1.tar.gz
 https://github.com/pg83/dlopen/archive/refs/tags/v2.tar.gz
+https://github.com/pg83/gg/archive/3a99d108518d46ee46732ef7b7b62e46df70440e.zip
+https://github.com/pg83/gg/archive/a09345e9e07e71e32b0c1585072eb6b9ac594642.zip
 https://github.com/pg83/heirloom/archive/a47c4acf9fb43b89f9fb0afdcf9008121d50d806.zip
 https://github.com/pg83/heirloom/archive/refs/tags/v1.tar.gz
 https://github.com/pg83/mdns2dns/archive/refs/tags/v1.tar.gz
@@ -2807,6 +2821,7 @@ https://github.com/rfjakob/earlyoom/archive/refs/tags/v1.8.tar.gz
 https://github.com/rgburke/grv/archive/refs/tags/v0.3.2.tar.gz
 https://github.com/rharish101/ReGreet/archive/9ff3e11bb1b66b52f6e44a9b6c0fe93a8c993f74.zip
 https://github.com/rharish101/ReGreet/archive/refs/tags/0.1.3.tar.gz
+https://github.com/rharish101/ReGreet/archive/refs/tags/0.2.0.tar.gz
 https://github.com/rhash/RHash/archive/refs/tags/v1.4.4.tar.gz
 https://github.com/rhash/RHash/archive/refs/tags/v1.4.5.tar.gz
 https://github.com/rhboot/efibootmgr/archive/refs/tags/18.tar.gz
@@ -2960,6 +2975,7 @@ https://github.com/strawberrymusicplayer/strawberry/archive/refs/tags/1.2.0.tar.
 https://github.com/strawberrymusicplayer/strawberry/archive/refs/tags/1.2.1.tar.gz
 https://github.com/strawberrymusicplayer/strawberry/archive/refs/tags/1.2.2.tar.gz
 https://github.com/strawberrymusicplayer/strawberry/archive/refs/tags/1.2.3.tar.gz
+https://github.com/strawberrymusicplayer/strawberry/archive/refs/tags/1.2.4.tar.gz
 https://github.com/strukturag/libde265/archive/refs/tags/v1.0.12.tar.gz
 https://github.com/strukturag/libde265/archive/refs/tags/v1.0.13.tar.gz
 https://github.com/strukturag/libde265/archive/refs/tags/v1.0.14.tar.gz
@@ -3562,6 +3578,7 @@ https://gitlab.gnome.org/GNOME/libsoup/-/archive/3.4.3/libsoup-3.4.3.tar.bz2
 https://gitlab.gnome.org/GNOME/libsoup/-/archive/3.4.4/libsoup-3.4.4.tar.bz2
 https://gitlab.gnome.org/GNOME/libsoup/-/archive/3.6.0/libsoup-3.6.0.tar.bz2
 https://gitlab.gnome.org/GNOME/libsoup/-/archive/3.6.1/libsoup-3.6.1.tar.bz2
+https://gitlab.gnome.org/GNOME/libsoup/-/archive/3.6.3/libsoup-3.6.3.tar.bz2
 https://gitlab.gnome.org/GNOME/libspelling/-/archive/0.4.0/libspelling-0.4.0.tar.bz2
 https://gitlab.gnome.org/GNOME/libspelling/-/archive/0.4.1/libspelling-0.4.1.tar.bz2
 https://gitlab.gnome.org/GNOME/libspelling/-/archive/0.4.2/libspelling-0.4.2.tar.bz2

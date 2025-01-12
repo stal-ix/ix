@@ -35,7 +35,7 @@ V=1
 CLANG_BPF_CO_RE_PROBE_CMD='echo 1'
 bash_compdir=${out}/share/bash
 CC=clang
-CLANG=clang-19
+CLANG=${FREESTANDING_CLANG}
 HOSTCC=cc
 {% endblock %}
 

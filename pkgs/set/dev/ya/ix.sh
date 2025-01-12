@@ -7,5 +7,5 @@ bld/box
 bld/python
 bin/ya/clang(ya_c_flags=-Wno-error)
 bld/fake/binutils
-bin/clang/18
+bld/compiler
 {% endblock %}
