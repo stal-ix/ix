@@ -1,14 +1,14 @@
 {% extends '//die/hub.sh' %}
 
 {% block ya_git_commit %}
-d4e46645fe1f35d5406bc096e373db1d72201231
+4ff6a77559396e5434ed2c7fc5695c7eadf3fc14
 {% endblock %}
 
 {% block ya_git_sha %}
-d04918e700c2a90eba543cd668dac12a29cd4c7652a5107ba87bfeb9a07f4824
+7b0752970a482c6e31739f2fb499d59dde9bbd033f76ae105a623d65d5efb404
 {% endblock %}
 
 {% block run_deps %}
 bin/ya/wrapper
-bin/ya/final/unwrap(ya_boot_tc=bin/ya/final/0,ya_git_commit={{self.ya_git_commit().strip()}},ya_git_sha={{self.ya_git_sha().strip()}})
+bin/ya/final/unwrap(ya_boot_tc=bin/ya/final/0,ya_git_commit={{self.ya_git_commit().strip()}},ya_git_sha={{self.ya_git_sha().strip()}},clang_ver=18)
 {% endblock %}

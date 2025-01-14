@@ -9,7 +9,7 @@
 {% endblock %}
 
 {% block bld_tool %}
-{{ya_boot_tc}}(ya_git_commit={{ya_git_commit}},ya_git_sha={{ya_git_sha}})
+{{ya_boot_tc}}(ya_git_commit={{ya_git_commit}},ya_git_sha={{ya_git_sha}},clang_ver={{clang_ver}})
 {{super()}}
 {% endblock %}
 
