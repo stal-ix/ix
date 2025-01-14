@@ -36,8 +36,10 @@ make
 -r
 -T
 -j ${make_thrs}
+{% block ya_platform %}
 --host-platform=default-{{host.os}}-{{host.gnu_arch}}
 --target-platform=default-{{target.os}}-{{target.gnu_arch}}
+{% endblock %}
 {% for x in ix.parse_list(self.ya_make_flags()) %}
 -D{{x}}
 --{{ya_flag or 'hpf'}}={{x}}
