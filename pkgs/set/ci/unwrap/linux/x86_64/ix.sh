@@ -46,6 +46,7 @@
 #}
 
 {% block run_deps %}
+bin/ya/final
 bin/pixman
 bin/rtorrent
 #argmax problem
