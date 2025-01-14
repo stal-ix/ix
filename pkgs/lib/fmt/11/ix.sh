@@ -1,6 +1,6 @@
 {% extends '//lib/fmt/t/ix.sh' %}
 
 {% block fetch %}
-https://github.com/fmtlib/fmt/archive/refs/tags/11.1.1.tar.gz
-sha:a3267a911d3a30160cbb5a8d65e135f2c8c604737bee13bdf589fbc3e94d58b5
+https://github.com/fmtlib/fmt/archive/refs/tags/11.1.2.tar.gz
+sha:d8773cf062cc806d4dd4df658111f15ba7a2c9c65db5084d2491696828b1eb97
 {% endblock %}
