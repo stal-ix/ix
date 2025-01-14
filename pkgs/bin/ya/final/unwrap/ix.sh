@@ -1,4 +1,4 @@
-{% extends '//bin/ya/t/ymake/ix.sh' %}
+{% extends '//bin/ya/bootstrap/t/ix.sh' %}
 
 {% block git_commit %}
 {{ya_git_commit}}
