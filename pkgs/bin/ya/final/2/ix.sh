@@ -3,11 +3,6 @@
 {% block ya_clang_wrapper %}
 {% endblock %}
 
-{% block bld_tool %}
-{{super()}}
-bld/prepend
-{% endblock %}
-
 {% block ya_make_cmd %}
 {{super()}}
 --cxx-compiler $(command -v clang-18)
