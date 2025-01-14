@@ -1,7 +1,9 @@
 {% extends '//die/std/ix.sh' %}
 
 {% block bld_tool %}
+{% block ya_clang_wrapper %}
 bin/ya/clang(ya_c_flags={{self.ya_c_flags().strip()}})
+{% endblock %}
 bld/python
 bld/compiler(clang_ver={{clang_ver}})
 bld/fake/binutils
