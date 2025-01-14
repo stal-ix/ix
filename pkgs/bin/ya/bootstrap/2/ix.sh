@@ -9,7 +9,7 @@
 {% endblock %}
 
 {% block bld_tool %}
-bin/ya/2
-bin/ya/gg
+bin/gg
+bin/ya/bootstrap/1
 {{super()}}
 {% endblock %}

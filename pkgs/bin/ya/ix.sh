@@ -1,8 +1,8 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
-# ymake
-bin/ya/4
 # ya
-bin/ya/gg
+bin/gg
+# ymake
+bin/ya/bootstrap/3
 {% endblock %}

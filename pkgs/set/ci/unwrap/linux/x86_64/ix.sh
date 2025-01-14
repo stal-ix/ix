@@ -51,6 +51,7 @@ bin/pixman
 bin/rtorrent
 #argmax problem
 bin/ya
+bin/gg
 #bin/nix
 bin/deya
 bin/scx/rust/land/runit
