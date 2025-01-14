@@ -9,6 +9,6 @@
 {% endblock %}
 
 {% block run_deps %}
-bin/ya/wrapper
+bin/ya/tools/wrapper
 bin/ya/final/2(ya_boot_tc=bin/ya/final/1,ya_git_commit={{self.ya_git_commit().strip()}},ya_git_sha={{self.ya_git_sha().strip()}},clang_ver=18,ya_flag=host-platform-flag)
 {% endblock %}

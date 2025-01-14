@@ -1,7 +1,7 @@
 {% extends '//die/c/ya.sh' %}
 
 {% block bld_tool %}
-bin/ya/java
+bin/ya/tools/java
 {{super()}}
 {% endblock %}
 
