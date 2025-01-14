@@ -38,7 +38,7 @@ make
 --target-platform=default-{{target.os}}-{{target.gnu_arch}}
 {% for x in ix.parse_list(self.ya_make_flags()) %}
 -D{{x}}
---hpf={{x}}
+--{{ya_flag or 'hpf'}}={{x}}
 {% endfor %}
 {% for x in ix.parse_list(self.ya_make_targets()) %}
 {{x | dirname}}
