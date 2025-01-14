@@ -17,3 +17,10 @@
 devtools/ymake/bin/ymake
 devtools/ya/bin/ya-bin
 {% endblock %}
+
+{% block patch %}
+{{super()}}
+find contrib/libs/libunwind -type f | while read l; do
+    sed -e 's|#pragma.*||' -i ${l}
+done
+{% endblock %}

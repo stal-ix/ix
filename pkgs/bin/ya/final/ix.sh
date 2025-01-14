@@ -10,5 +10,5 @@
 
 {% block run_deps %}
 bin/ya/wrapper
-bin/ya/final/unwrap(ya_boot_tc=bin/ya/final/0,ya_git_commit={{self.ya_git_commit().strip()}},ya_git_sha={{self.ya_git_sha().strip()}},clang_ver=18)
+bin/ya/final/unwrap(ya_boot_tc=bin/ya/final/1,ya_git_commit={{self.ya_git_commit().strip()}},ya_git_sha={{self.ya_git_sha().strip()}},clang_ver=18)
 {% endblock %}
