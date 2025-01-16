@@ -381,6 +381,7 @@ https://download.gnome.org/sources/libsoup/2.74/libsoup-2.74.2.tar.xz
 https://download.gnome.org/sources/pango/1.50/pango-1.50.14.tar.xz
 https://download.gnome.org/sources/pangomm/2.46/pangomm-2.46.2.tar.xz
 https://download.gnome.org/sources/pangomm/2.54/pangomm-2.54.0.tar.xz
+https://download.gnome.org/sources/pangomm/2.56/pangomm-2.56.1.tar.xz
 https://download.gnome.org/sources/vala/0.48/vala-0.48.25.tar.xz
 https://download.java.net/openjdk/jdk17/ri/openjdk-17+35_linux-x64_bin.tar.gz
 https://download.kde.org/stable/frameworks/5.112/extra-cmake-modules-5.112.0.tar.xz
@@ -392,6 +393,7 @@ https://download.oracle.com/berkeley-db/db-6.2.32.tar.gz
 https://download.qemu.org/qemu-8.0.0.tar.xz
 https://download.samba.org/pub/rsync/src/rsync-3.2.7.tar.gz
 https://download.samba.org/pub/rsync/src/rsync-3.3.0.tar.gz
+https://download.samba.org/pub/rsync/src/rsync-3.4.1.tar.gz
 https://download.samba.org/pub/samba/stable/samba-4.17.2.tar.gz
 https://download.samba.org/pub/samba/stable/samba-4.19.5.tar.gz
 https://download.samba.org/pub/samba/stable/samba-4.20.4.tar.gz
@@ -1147,6 +1149,7 @@ https://github.com/OpenTTD/OpenTTD/archive/refs/tags/14.1.tar.gz
 https://github.com/OpenVPN/openvpn/archive/refs/tags/v2.6.10.tar.gz
 https://github.com/OpenVPN/openvpn/archive/refs/tags/v2.6.11.tar.gz
 https://github.com/OpenVPN/openvpn/archive/refs/tags/v2.6.12.tar.gz
+https://github.com/OpenVPN/openvpn/archive/refs/tags/v2.6.13.tar.gz
 https://github.com/OpenVPN/openvpn/archive/refs/tags/v2.6.6.tar.gz
 https://github.com/OpenVPN/openvpn/archive/refs/tags/v2.6.7.tar.gz
 https://github.com/OpenVPN/openvpn/archive/refs/tags/v2.6.8.tar.gz
@@ -1590,6 +1593,7 @@ https://github.com/eza-community/eza/archive/refs/tags/v0.20.12.tar.gz
 https://github.com/eza-community/eza/archive/refs/tags/v0.20.13.tar.gz
 https://github.com/eza-community/eza/archive/refs/tags/v0.20.15.tar.gz
 https://github.com/eza-community/eza/archive/refs/tags/v0.20.16.tar.gz
+https://github.com/eza-community/eza/archive/refs/tags/v0.20.17.tar.gz
 https://github.com/eza-community/eza/archive/refs/tags/v0.20.2.tar.gz
 https://github.com/eza-community/eza/archive/refs/tags/v0.20.3.tar.gz
 https://github.com/eza-community/eza/archive/refs/tags/v0.20.4.tar.gz
@@ -2273,6 +2277,7 @@ https://github.com/libuv/libuv/archive/refs/tags/v1.48.0.tar.gz
 https://github.com/libuv/libuv/archive/refs/tags/v1.49.0.tar.gz
 https://github.com/libuv/libuv/archive/refs/tags/v1.49.1.tar.gz
 https://github.com/libuv/libuv/archive/refs/tags/v1.49.2.tar.gz
+https://github.com/libuv/libuv/archive/refs/tags/v1.50.0.tar.gz
 https://github.com/libxmp/libxmp/archive/refs/tags/libxmp-4.6.0.tar.gz
 https://github.com/limine-bootloader/limine/releases/download/v5.20230801.0/limine-5.20230801.0.tar.xz
 https://github.com/linux-nvme/libnvme/archive/refs/tags/v1.10.tar.gz
@@ -2595,6 +2600,7 @@ https://github.com/pg83/deya/archive/refs/tags/1.tar.gz
 https://github.com/pg83/dlopen/archive/refs/tags/v2.tar.gz
 https://github.com/pg83/gg/archive/13475763df8faee726a8dfffc94498bb808aba64.zip
 https://github.com/pg83/gg/archive/3a99d108518d46ee46732ef7b7b62e46df70440e.zip
+https://github.com/pg83/gg/archive/9499cb7d4506596f99e7888bd97901b8d0579d8f.zip
 https://github.com/pg83/gg/archive/a09345e9e07e71e32b0c1585072eb6b9ac594642.zip
 https://github.com/pg83/heirloom/archive/a47c4acf9fb43b89f9fb0afdcf9008121d50d806.zip
 https://github.com/pg83/heirloom/archive/refs/tags/v1.tar.gz
@@ -2844,6 +2850,7 @@ https://github.com/rmyorston/pdpmake/archive/refs/tags/1.4.3.tar.gz
 https://github.com/rmyorston/pdpmake/archive/refs/tags/2.0.0.tar.gz
 https://github.com/rockdaboot/libpsl/releases/download/0.21.2/libpsl-0.21.2.tar.gz
 https://github.com/rockdaboot/libpsl/releases/download/0.21.5/libpsl-0.21.5.tar.gz
+https://github.com/rockowitz/ddcutil/archive/refs/tags/v2.1.4.tar.gz
 https://github.com/rpodgorny/unionfs-fuse/archive/refs/tags/v3.4.tar.gz
 https://github.com/rr-debugger/rr/archive/refs/tags/5.7.0.tar.gz
 https://github.com/rrthomas/libpaper/releases/download/v2.1.1/libpaper-2.1.1.tar.gz
@@ -3582,6 +3589,7 @@ https://gitlab.gnome.org/GNOME/libsecret/-/archive/0.21.1/libsecret-0.21.1.tar.b
 https://gitlab.gnome.org/GNOME/libsecret/-/archive/0.21.2/libsecret-0.21.2.tar.bz2
 https://gitlab.gnome.org/GNOME/libsecret/-/archive/0.21.3/libsecret-0.21.3.tar.bz2
 https://gitlab.gnome.org/GNOME/libsecret/-/archive/0.21.4/libsecret-0.21.4.tar.bz2
+https://gitlab.gnome.org/GNOME/libsecret/-/archive/0.21.6/libsecret-0.21.6.tar.bz2
 https://gitlab.gnome.org/GNOME/libsoup/-/archive/3.4.2/libsoup-3.4.2.tar.bz2
 https://gitlab.gnome.org/GNOME/libsoup/-/archive/3.4.3/libsoup-3.4.3.tar.bz2
 https://gitlab.gnome.org/GNOME/libsoup/-/archive/3.4.4/libsoup-3.4.4.tar.bz2
@@ -4058,6 +4066,7 @@ https://www.gnupg.org/ftp/gcrypt/gnupg/gnupg-2.4.3.tar.bz2
 https://www.gnupg.org/ftp/gcrypt/gnupg/gnupg-2.4.4.tar.bz2
 https://www.gnupg.org/ftp/gcrypt/gnupg/gnupg-2.4.5.tar.bz2
 https://www.gnupg.org/ftp/gcrypt/gnupg/gnupg-2.5.1.tar.bz2
+https://www.gnupg.org/ftp/gcrypt/gnupg/gnupg-2.5.3.tar.bz2
 https://www.gnupg.org/ftp/gcrypt/gnutls/v3.8/gnutls-3.8.1.tar.xz
 https://www.gnupg.org/ftp/gcrypt/gnutls/v3.8/gnutls-3.8.2.tar.xz
 https://www.gnupg.org/ftp/gcrypt/gnutls/v3.8/gnutls-3.8.3.tar.xz

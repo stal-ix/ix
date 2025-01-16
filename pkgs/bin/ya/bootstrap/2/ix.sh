@@ -1,4 +1,4 @@
-{% extends '//bin/ya/t/ymake/ix.sh' %}
+{% extends '//bin/ya/bootstrap/t/ix.sh' %}
 
 {% block git_commit %}
 46ab84268076f9b4cb8406f7844ee5e389295ca4
@@ -9,7 +9,7 @@
 {% endblock %}
 
 {% block bld_tool %}
-bin/ya/2
-bin/ya/gg
+bin/gg
+bin/ya/bootstrap/1
 {{super()}}
 {% endblock %}
