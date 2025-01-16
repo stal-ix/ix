@@ -1147,6 +1147,7 @@ https://github.com/OpenTTD/OpenTTD/archive/refs/tags/14.1.tar.gz
 https://github.com/OpenVPN/openvpn/archive/refs/tags/v2.6.10.tar.gz
 https://github.com/OpenVPN/openvpn/archive/refs/tags/v2.6.11.tar.gz
 https://github.com/OpenVPN/openvpn/archive/refs/tags/v2.6.12.tar.gz
+https://github.com/OpenVPN/openvpn/archive/refs/tags/v2.6.13.tar.gz
 https://github.com/OpenVPN/openvpn/archive/refs/tags/v2.6.6.tar.gz
 https://github.com/OpenVPN/openvpn/archive/refs/tags/v2.6.7.tar.gz
 https://github.com/OpenVPN/openvpn/archive/refs/tags/v2.6.8.tar.gz
@@ -2595,6 +2596,7 @@ https://github.com/pg83/deya/archive/refs/tags/1.tar.gz
 https://github.com/pg83/dlopen/archive/refs/tags/v2.tar.gz
 https://github.com/pg83/gg/archive/13475763df8faee726a8dfffc94498bb808aba64.zip
 https://github.com/pg83/gg/archive/3a99d108518d46ee46732ef7b7b62e46df70440e.zip
+https://github.com/pg83/gg/archive/9499cb7d4506596f99e7888bd97901b8d0579d8f.zip
 https://github.com/pg83/gg/archive/a09345e9e07e71e32b0c1585072eb6b9ac594642.zip
 https://github.com/pg83/heirloom/archive/a47c4acf9fb43b89f9fb0afdcf9008121d50d806.zip
 https://github.com/pg83/heirloom/archive/refs/tags/v1.tar.gz
@@ -4058,6 +4060,7 @@ https://www.gnupg.org/ftp/gcrypt/gnupg/gnupg-2.4.3.tar.bz2
 https://www.gnupg.org/ftp/gcrypt/gnupg/gnupg-2.4.4.tar.bz2
 https://www.gnupg.org/ftp/gcrypt/gnupg/gnupg-2.4.5.tar.bz2
 https://www.gnupg.org/ftp/gcrypt/gnupg/gnupg-2.5.1.tar.bz2
+https://www.gnupg.org/ftp/gcrypt/gnupg/gnupg-2.5.3.tar.bz2
 https://www.gnupg.org/ftp/gcrypt/gnutls/v3.8/gnutls-3.8.1.tar.xz
 https://www.gnupg.org/ftp/gcrypt/gnutls/v3.8/gnutls-3.8.2.tar.xz
 https://www.gnupg.org/ftp/gcrypt/gnutls/v3.8/gnutls-3.8.3.tar.xz
