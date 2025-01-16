@@ -1,8 +1,8 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://download.gnome.org/sources/pangomm/2.54/pangomm-2.54.0.tar.xz
-sha:4a5b1fd1b7c47a1af45277ea82b5abeaca8e08fb10a27daa6394cf88d74e7acf
+https://download.gnome.org/sources/pangomm/2.56/pangomm-2.56.1.tar.xz
+sha:539f5aa60e9bdc6b955bb448e2a62cc14562744df690258040fbb74bf885755d
 {% endblock %}
 
 {% block lib_deps %}

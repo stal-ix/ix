@@ -381,6 +381,7 @@ https://download.gnome.org/sources/libsoup/2.74/libsoup-2.74.2.tar.xz
 https://download.gnome.org/sources/pango/1.50/pango-1.50.14.tar.xz
 https://download.gnome.org/sources/pangomm/2.46/pangomm-2.46.2.tar.xz
 https://download.gnome.org/sources/pangomm/2.54/pangomm-2.54.0.tar.xz
+https://download.gnome.org/sources/pangomm/2.56/pangomm-2.56.1.tar.xz
 https://download.gnome.org/sources/vala/0.48/vala-0.48.25.tar.xz
 https://download.java.net/openjdk/jdk17/ri/openjdk-17+35_linux-x64_bin.tar.gz
 https://download.kde.org/stable/frameworks/5.112/extra-cmake-modules-5.112.0.tar.xz
