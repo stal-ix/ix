@@ -392,6 +392,7 @@ https://download.oracle.com/berkeley-db/db-6.2.32.tar.gz
 https://download.qemu.org/qemu-8.0.0.tar.xz
 https://download.samba.org/pub/rsync/src/rsync-3.2.7.tar.gz
 https://download.samba.org/pub/rsync/src/rsync-3.3.0.tar.gz
+https://download.samba.org/pub/rsync/src/rsync-3.4.1.tar.gz
 https://download.samba.org/pub/samba/stable/samba-4.17.2.tar.gz
 https://download.samba.org/pub/samba/stable/samba-4.19.5.tar.gz
 https://download.samba.org/pub/samba/stable/samba-4.20.4.tar.gz
