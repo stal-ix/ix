@@ -17,3 +17,11 @@ os.environ["CLANG_HEADERS"] = "${CLANG_HEADERS}"
 EOF
 sed -e 's|.*__future__.*||' -i build/ymake_conf.py
 {% endblock %}
+
+{% block ya_make_targets %}
+devtools/local_cache/toolscache/server/ya-tc
+devtools/ya/bin/ya-bin
+devtools/ya/test/programs/test_tool/bin/test_tool
+devtools/yexport/bin/yexport
+devtools/ymake/bin/ymake
+{% endblock %}
