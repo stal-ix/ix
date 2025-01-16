@@ -1592,6 +1592,7 @@ https://github.com/eza-community/eza/archive/refs/tags/v0.20.12.tar.gz
 https://github.com/eza-community/eza/archive/refs/tags/v0.20.13.tar.gz
 https://github.com/eza-community/eza/archive/refs/tags/v0.20.15.tar.gz
 https://github.com/eza-community/eza/archive/refs/tags/v0.20.16.tar.gz
+https://github.com/eza-community/eza/archive/refs/tags/v0.20.17.tar.gz
 https://github.com/eza-community/eza/archive/refs/tags/v0.20.2.tar.gz
 https://github.com/eza-community/eza/archive/refs/tags/v0.20.3.tar.gz
 https://github.com/eza-community/eza/archive/refs/tags/v0.20.4.tar.gz
