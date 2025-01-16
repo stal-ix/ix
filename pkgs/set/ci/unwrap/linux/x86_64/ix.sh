@@ -46,6 +46,7 @@
 #}
 
 {% block run_deps %}
+bin/ddc/util
 bin/ya/final
 bin/pixman
 bin/rtorrent

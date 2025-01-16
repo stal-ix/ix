@@ -2850,6 +2850,7 @@ https://github.com/rmyorston/pdpmake/archive/refs/tags/1.4.3.tar.gz
 https://github.com/rmyorston/pdpmake/archive/refs/tags/2.0.0.tar.gz
 https://github.com/rockdaboot/libpsl/releases/download/0.21.2/libpsl-0.21.2.tar.gz
 https://github.com/rockdaboot/libpsl/releases/download/0.21.5/libpsl-0.21.5.tar.gz
+https://github.com/rockowitz/ddcutil/archive/refs/tags/v2.1.4.tar.gz
 https://github.com/rpodgorny/unionfs-fuse/archive/refs/tags/v3.4.tar.gz
 https://github.com/rr-debugger/rr/archive/refs/tags/5.7.0.tar.gz
 https://github.com/rrthomas/libpaper/releases/download/v2.1.1/libpaper-2.1.1.tar.gz
