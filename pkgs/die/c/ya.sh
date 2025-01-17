@@ -42,7 +42,7 @@ make
 {% endblock %}
 {% for x in ix.parse_list(self.ya_make_flags()) %}
 -D{{x}}
---{{ya_flag or 'hpf'}}={{x}}
+--host-platform-flag={{x}}
 {% endfor %}
 {% for x in ix.parse_list(self.ya_make_targets()) %}
 {{x | dirname}}
