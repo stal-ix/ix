@@ -2602,6 +2602,7 @@ https://github.com/pg83/dlopen/archive/refs/tags/v2.tar.gz
 https://github.com/pg83/gg/archive/13475763df8faee726a8dfffc94498bb808aba64.zip
 https://github.com/pg83/gg/archive/2a334b9f7b77491dccc32a0a2653206ee6213f92.zip
 https://github.com/pg83/gg/archive/3a99d108518d46ee46732ef7b7b62e46df70440e.zip
+https://github.com/pg83/gg/archive/556fe3d54160bb266248171f7d603fd1ad2c37ea.zip
 https://github.com/pg83/gg/archive/9499cb7d4506596f99e7888bd97901b8d0579d8f.zip
 https://github.com/pg83/gg/archive/a09345e9e07e71e32b0c1585072eb6b9ac594642.zip
 https://github.com/pg83/heirloom/archive/a47c4acf9fb43b89f9fb0afdcf9008121d50d806.zip
