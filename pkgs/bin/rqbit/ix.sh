@@ -32,6 +32,7 @@ bld/make
 {% block bld_tool %}
 {{super()}}
 bld/npm
+bld/de/bloat
 bin/esbuild/21
 {% endblock %}
 
@@ -45,6 +46,10 @@ lib/openssl
 {% endblock %}
 
 {% block patch %}
+find . -name esbuild -type f | while read l; do
+    echo > ${l}
+done
+debloat ${PWD}
 find . -name esbuild -type f | while read l; do
     rm ${l}
     cp $(command -v esbuild) ${l}
