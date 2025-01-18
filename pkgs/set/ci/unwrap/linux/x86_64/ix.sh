@@ -334,7 +334,7 @@ bin/wazero
 bin/wasm/edge/aot
 bin/wasm/edge
 bin/wasm/3
-bin/fizzy
+#bin/fizzy
 bin/wabt/wasi
 bin/binaryen
 bin/wabt
