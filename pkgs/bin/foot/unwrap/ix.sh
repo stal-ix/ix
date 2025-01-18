@@ -1,8 +1,8 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://codeberg.org/dnkl/foot/archive/1.20.1.tar.gz
-sha:a89ad5b45c55397862b6746a921e11448ce7d320726ae7193bacb72a33209bdd
+https://codeberg.org/dnkl/foot/archive/1.20.2.tar.gz
+sha:9a8832e2485923c8a79e77958c8b0357abd159dfa8958609402362da8e56c073
 {% endblock %}
 
 {% block bld_libs %}
@@ -34,4 +34,3 @@ default-terminfo=xterm-256color
 {% block c_rename_symbol %}
 is_valid_utf8
 {% endblock %}
-
