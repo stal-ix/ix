@@ -819,7 +819,7 @@ bin/ar
 bin/aria/2
 bin/gas
 bin/slsh
-bin/nghttp2
+#bin/nghttp2
 bin/pqiv
 bin/gtk/doc
 bin/gtk/lock
