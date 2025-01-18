@@ -46,6 +46,8 @@
 #}
 
 {% block run_deps %}
+bin/gdb/16
+bin/gdb/15
 bin/ddc/util
 bin/ya/final
 bin/pixman
@@ -875,7 +877,7 @@ bin/reddit/desktop
 bin/iotop
 bin/uriparser
 bin/urldec
-#bin/qpdf
+bin/qpdf
 bin/i3/status
 bin/gnupg
 bin/sixel
