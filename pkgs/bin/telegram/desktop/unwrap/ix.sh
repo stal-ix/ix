@@ -147,6 +147,12 @@ prepend Telegram/SourceFiles/info/media/info_media_list_widget.cpp << EOF
 #include "Telegram/lib_ui/ui/effects/numbers_animation.h"
 EOF
 
+sed -e 's|.*_tinyCache = {}.*||'\
+    -i Telegram/SourceFiles/api/api_user_names.cpp
+
+sed -e 's|.*_userpicUniqueKey = {}.*||' \
+    -i Telegram/SourceFiles/ui/controls/userpic_button.cpp
+
 cd Telegram/ThirdParty/jemalloc
 
 find . -type f -name '*.c' | while read l; do

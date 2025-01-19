@@ -30,7 +30,7 @@ bin/tcpdump
 bin/iron/bar
 bin/sing/box
 bin/epiphany
-#bin/telegram
+bin/telegram
 bin/xdg/open
 bin/tun2socks
 bin/alacritty
