@@ -59,3 +59,5 @@ mkdir ${out}/bin
 cp {{x}} ${out}/bin/
 {% endfor %}
 {% endblock %}
+
+{% block task_pool %}full{% endblock %}
