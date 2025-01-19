@@ -82,7 +82,7 @@ bin/read/pe
 bin/s3/baker
 bin/s3/fs/fuse
 bin/co2mon
-bin/inkscape
+#bin/inkscape
 bin/bye/dpi
 bin/tor
 bin/nano
