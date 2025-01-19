@@ -1,8 +1,8 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://github.com/artemsen/swayimg/archive/refs/tags/v3.6.tar.gz
-sha:82de841c426fb2da7cb0f1fa9fe6790ea1770471d3df070bd7e7a81b1fdac873
+https://github.com/artemsen/swayimg/archive/refs/tags/v3.7.tar.gz
+sha:967a335cc2e62b155f0523a2a9e7592f076a5eec4828fcc6306ae165d19b8a96
 {% endblock %}
 
 {% block bld_libs %}
