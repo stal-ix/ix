@@ -707,7 +707,7 @@ bin/loksh
 bin/nvme/cli
 bin/potrace
 bin/sassc
-bin/vte
+#bin/vte
 bin/wayfire/shell
 bin/wayfire
 bin/vulkan/tools
