@@ -779,7 +779,7 @@ bin/exiv2
 bin/tree
 bin/ntp
 bin/lsof
-bin/telegram
+#bin/telegram
 #bin/hypr
 bin/schedtool
 bin/cpu/limit
