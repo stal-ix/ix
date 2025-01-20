@@ -75,6 +75,6 @@ sed -e 's|ENABLE(DEVELOPER_MODE)|1|g' \
 
 sed -e 's|.*find.*TOUCH.*||' -i Source/JavaScriptCore/CMakeLists.txt
 
-sed -e 's|memcpy(qData.begin()|memcpy(qData.data()|' \
+sed -e 's|memcmp(qData.begin()|memcpy(qData.data()|' \
     -i Source/WebCore/crypto/gcrypt/GCryptRFC8032.cpp
 {% endblock %}
