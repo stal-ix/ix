@@ -648,7 +648,7 @@ bin/unbound
 bin/execline
 bin/xsltproc
 bin/jq
-bin/webkitproc
+#bin/webkitproc
 bin/acpi/d/2
 bin/acpi/d/rules
 bin/acpi/d/runit
