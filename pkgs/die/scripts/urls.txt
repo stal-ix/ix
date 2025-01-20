@@ -240,6 +240,7 @@ https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.6.6.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.6.63.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.6.67.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.6.7.tar.xz
+https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.6.72.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.6.8.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.6.9.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.6.tar.xz
@@ -2159,6 +2160,7 @@ https://github.com/leo-arch/clifm/archive/refs/tags/v1.19.tar.gz
 https://github.com/leo-arch/clifm/archive/refs/tags/v1.20.tar.gz
 https://github.com/leo-arch/clifm/archive/refs/tags/v1.21.tar.gz
 https://github.com/leo-arch/clifm/archive/refs/tags/v1.22.tar.gz
+https://github.com/leo-arch/clifm/archive/refs/tags/v1.23.tar.gz
 https://github.com/libarchive/libarchive/archive/refs/tags/v3.7.1.tar.gz
 https://github.com/libarchive/libarchive/archive/refs/tags/v3.7.2.tar.gz
 https://github.com/libarchive/libarchive/archive/refs/tags/v3.7.3.tar.gz
