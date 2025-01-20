@@ -55,6 +55,7 @@
 #}
 
 {% block run_deps %}
+bin/kernel/6/13
 bin/gdb/16
 bin/gdb/15
 bin/ddc/util
