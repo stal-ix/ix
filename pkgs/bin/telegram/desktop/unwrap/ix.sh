@@ -30,7 +30,6 @@ lib/qt/6/svg
 lib/expected
 lib/qt/6/base
 lib/qt/6/deps
-lib/shim/zero
 lib/glib/mm/3
 lib/tg/rlottie
 lib/drivers/3d
@@ -147,12 +146,6 @@ EOF
 prepend Telegram/SourceFiles/info/media/info_media_list_widget.cpp << EOF
 #include "Telegram/lib_ui/ui/effects/numbers_animation.h"
 EOF
-
-#sed -e 's|_tinyCache = {}|Zero(_tinyCache)|'\
-#    -i Telegram/SourceFiles/api/api_user_names.cpp
-
-#sed -e 's|_userpicUniqueKey = {}|Zero(_userpicUniqueKey)|' \
-#    -i Telegram/SourceFiles/ui/controls/userpic_button.cpp
 
 cd Telegram/ThirdParty/jemalloc
 
