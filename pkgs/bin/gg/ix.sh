@@ -1,5 +1,5 @@
 {% extends '//die/go/build.sh' %}
-
+556fe3d54160bb266248171f7d603fd1ad2c37ea
 {% block go_url %}
 https://github.com/pg83/gg/archive/556fe3d54160bb266248171f7d603fd1ad2c37ea.zip
 {% endblock %}
