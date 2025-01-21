@@ -45,7 +45,6 @@
 #bin/wf/recorder
 #argmax problem
 #bin/nix
-#bin/inkscape
 #bin/cosmic
 #bin/port/forwarder/rs
 #bin/qemu/8/1
@@ -54,6 +53,7 @@
 #}
 
 {% block run_deps %}
+bin/inkscape
 bin/fizzy
 bin/kernel/6/13
 bin/gdb/16
