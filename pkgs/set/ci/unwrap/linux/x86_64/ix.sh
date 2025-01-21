@@ -36,7 +36,6 @@
 #bin/cups
 #bin/ras/daemon
 #bin/ff/play
-#bin/yt
 #bin/balsa
 #bin/scummvm
 #bin/code/lite
