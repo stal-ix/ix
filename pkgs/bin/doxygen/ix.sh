@@ -28,6 +28,7 @@ wrap_cc
 
 {% block cxx_flags %}
 -Wno-missing-template-arg-list-after-template-kw
+-std=c++20
 {% endblock %}
 
 {% block cmake_flags %}

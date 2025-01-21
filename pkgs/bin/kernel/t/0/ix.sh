@@ -19,6 +19,7 @@ bin/gzip
 bin/zstd
 bld/perl
 bld/bison
+bin/pahole
 bld/python
 bin/openssl
 {% endblock %}

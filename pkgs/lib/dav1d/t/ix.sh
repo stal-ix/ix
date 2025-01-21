@@ -1,8 +1,8 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://github.com/videolan/dav1d/archive/refs/tags/1.5.0.tar.gz
-sha:78b15d9954b513ea92d27f39362535ded2243e1b0924fde39f37a31ebed5f76b
+https://github.com/videolan/dav1d/archive/refs/tags/1.5.1.tar.gz
+sha:fa635e2bdb25147b1384007c83e15de44c589582bb3b9a53fc1579cb9d74b695
 {% endblock %}
 
 {% block lib_deps %}

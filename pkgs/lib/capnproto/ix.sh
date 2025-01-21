@@ -15,4 +15,5 @@ bin/capnc
 {% block cmake_flags %}
 {{super()}}
 EXTERNAL_CAPNP=ON
+CAPNP_LITE=ON
 {% endblock %}

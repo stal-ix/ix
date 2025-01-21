@@ -5,7 +5,7 @@ https://github.com/ikatson/rqbit/archive/refs/tags/v8.0.0.tar.gz
 {% endblock %}
 
 {% block cargo_sha %}
-91083362e055bca25f4a585042d5a7bc375563e9fa276abeee00cab54d28003c
+2f867685a41e545f71a37ec415b4f2fea689db2741dac7eaa523d30d334cff97
 {% endblock %}
 
 {% block cargo_ver %}
@@ -32,6 +32,7 @@ bld/make
 {% block bld_tool %}
 {{super()}}
 bld/npm
+bld/de/bloat
 bin/esbuild/21
 {% endblock %}
 
@@ -45,6 +46,10 @@ lib/openssl
 {% endblock %}
 
 {% block patch %}
+find . -name esbuild -type f | while read l; do
+    echo > ${l}
+done
+debloat ${PWD}
 find . -name esbuild -type f | while read l; do
     rm ${l}
     cp $(command -v esbuild) ${l}

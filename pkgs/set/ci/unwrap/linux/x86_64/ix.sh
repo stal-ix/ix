@@ -43,17 +43,27 @@
 #bin/openttd
 #bin/poedit
 #bin/wf/recorder
+#argmax problem
+#bin/nix
+#bin/inkscape
+#bin/cosmic
+#bin/port/forwarder/rs
+#bin/qemu/8/1
+#bin/qemu/8/2
+#bin/fizzy
+#bin/curl/ms
 #}
 
 {% block run_deps %}
+bin/kernel/6/13
+bin/gdb/16
+bin/gdb/15
 bin/ddc/util
 bin/ya/final
 bin/pixman
 bin/rtorrent
-#argmax problem
 bin/ya
 bin/gg
-#bin/nix
 bin/deya
 bin/scx/rust/land/runit
 bin/sys/hud
@@ -80,7 +90,6 @@ bin/read/pe
 bin/s3/baker
 bin/s3/fs/fuse
 bin/co2mon
-bin/inkscape
 bin/bye/dpi
 bin/tor
 bin/nano
@@ -93,7 +102,6 @@ bin/gost/2
 bin/gost/3
 bin/sing/box
 bin/just
-#bin/cosmic
 bin/agrep
 bin/wstunnel
 bin/tun2socks
@@ -155,7 +163,6 @@ bin/grpc/java
 bin/time/limit
 bin/nscd
 bin/yofi
-#bin/port/forwarder/rs
 bin/upnpc
 bin/smart/mon/tools
 bin/q/cache/grind
@@ -190,8 +197,6 @@ bin/nebula
 bin/mcelog
 bin/iperf
 bin/iperf/3
-#bin/qemu/8/1
-#bin/qemu/8/2
 bin/coreutils/9/5
 bin/wak
 bin/q/bittorrent/nox
@@ -334,7 +339,6 @@ bin/wazero
 bin/wasm/edge/aot
 bin/wasm/edge
 bin/wasm/3
-bin/fizzy
 bin/wabt/wasi
 bin/binaryen
 bin/wabt
@@ -633,7 +637,6 @@ bin/curl/mbedtls
 bin/curl/bearssl
 bin/curl/openssl
 bin/curl
-#bin/curl/ms
 bin/curl/wolf
 bin/curl/gnutls
 bin/wayland/utils
@@ -646,7 +649,6 @@ bin/unbound
 bin/execline
 bin/xsltproc
 bin/jq
-bin/webkitproc
 bin/acpi/d/2
 bin/acpi/d/rules
 bin/acpi/d/runit
@@ -778,7 +780,7 @@ bin/tree
 bin/ntp
 bin/lsof
 bin/telegram
-bin/hypr
+#bin/hypr
 bin/schedtool
 bin/cpu/limit
 bin/opj
@@ -819,7 +821,7 @@ bin/ar
 bin/aria/2
 bin/gas
 bin/slsh
-bin/nghttp2
+#bin/nghttp2
 bin/pqiv
 bin/gtk/doc
 bin/gtk/lock
