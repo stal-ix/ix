@@ -7,6 +7,9 @@ for a, b, c in os.walk(sys.argv[1]):
     for d in c:
         path = os.path.join(a, d)
 
+        if os.path.islink(path):
+            continue
+
         with open(path, 'rb') as f:
             data = f.read(4)
 
