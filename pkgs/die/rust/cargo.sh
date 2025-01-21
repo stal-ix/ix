@@ -8,7 +8,6 @@
 
 {% block std_env %}
 bld/pzd/des
-bld/de/bloat
 bld/pkg/config
 bld/rust/helpers
 {% if help %}
@@ -23,7 +22,6 @@ mkdir src
 cd src
 des ${src}/*.pzd .
 rust_devendor vendored
-debloat ${PWD}
 {% endblock %}
 
 {% block cargo_refine %}

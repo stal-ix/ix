@@ -2,7 +2,6 @@
 
 {% block std_box %}
 bld/pzd/des
-bld/de/bloat
 {{super()}}
 {% endblock %}
 
@@ -13,7 +12,6 @@ v3
 {% block unpack %}
 mkdir src; cd src
 des ${src}/*.pzd .
-debloat ${PWD}
 {% endblock %}
 
 {% block go_refine %}
