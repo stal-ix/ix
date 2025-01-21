@@ -50,11 +50,11 @@
 #bin/port/forwarder/rs
 #bin/qemu/8/1
 #bin/qemu/8/2
-#bin/fizzy
 #bin/curl/ms
 #}
 
 {% block run_deps %}
+bin/fizzy
 bin/kernel/6/13
 bin/gdb/16
 bin/gdb/15
