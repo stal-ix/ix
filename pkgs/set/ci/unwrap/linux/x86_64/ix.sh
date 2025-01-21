@@ -745,11 +745,7 @@ bin/wl/clipboard
 bin/wl/sunset
 bin/wl/mirror
 bin/wl/opm
-bin/nwg/launchers
-bin/nwg/drawer
-bin/nwg/menu
 bin/nwg
-bin/nwg/dock
 bin/fnott
 bin/brightnessctl
 bin/vim/g
