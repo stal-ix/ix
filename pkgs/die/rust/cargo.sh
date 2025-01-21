@@ -23,7 +23,7 @@ mkdir src
 cd src
 des ${src}/*.pzd .
 rust_devendor vendored
-debloat vendored
+debloat ${PWD}
 {% endblock %}
 
 {% block cargo_refine %}
