@@ -2146,6 +2146,7 @@ https://github.com/labwc/labwc/archive/refs/tags/0.8.1.tar.gz
 https://github.com/labwc/labwc/archive/refs/tags/0.8.2.tar.gz
 https://github.com/landley/toybox/archive/refs/tags/0.8.10.tar.gz
 https://github.com/landley/toybox/archive/refs/tags/0.8.11.tar.gz
+https://github.com/landley/toybox/archive/refs/tags/0.8.12.tar.gz
 https://github.com/lapce/lapce/archive/refs/tags/v0.4.1.tar.gz
 https://github.com/lapce/lapce/archive/refs/tags/v0.4.2.tar.gz
 https://github.com/laurikari/tre/archive/refs/tags/v0.9.0.tar.gz
@@ -2569,6 +2570,7 @@ https://github.com/nwg-piotr/nwg-dock/archive/refs/tags/v0.3.1.tar.gz
 https://github.com/nwg-piotr/nwg-drawer/archive/refs/tags/v0.3.7.tar.gz
 https://github.com/nwg-piotr/nwg-drawer/archive/refs/tags/v0.4.9.tar.gz
 https://github.com/nwg-piotr/nwg-drawer/archive/refs/tags/v0.5.0.tar.gz
+https://github.com/nwg-piotr/nwg-drawer/archive/refs/tags/v0.6.1.tar.gz
 https://github.com/nwg-piotr/nwg-launchers/archive/refs/tags/v0.6.3.tar.gz
 https://github.com/nwg-piotr/nwg-look/archive/refs/tags/v0.2.4.tar.gz
 https://github.com/nwg-piotr/nwg-menu/archive/refs/tags/v0.1.1.tar.gz
@@ -3932,6 +3934,7 @@ https://secure.nic.cz/files/knot-dns/knot-3.4.2.tar.xz
 https://secure.nic.cz/files/knot-dns/knot-3.4.3.tar.xz
 https://secure.nic.cz/files/knot-resolver/knot-resolver-5.6.0.tar.xz
 https://secure.nic.cz/files/knot-resolver/knot-resolver-5.7.4.tar.xz
+https://secure.nic.cz/files/knot-resolver/knot-resolver-6.0.10.tar.xz
 https://security.appspot.com/downloads/vsftpd-3.0.5.tar.gz
 https://skarnet.org/software/execline/execline-2.8.2.0.tar.gz
 https://skarnet.org/software/mdevd/mdevd-0.1.5.1.tar.gz
