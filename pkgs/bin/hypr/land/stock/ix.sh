@@ -69,11 +69,6 @@ xwayland=disabled
 systemd=disabled
 {% endblock %}
 
-{% block cxx_flags %}
--std=c++23
--D_LIBCPP_STD_VER=23
-{% endblock %}
-
 {% block install %}
 {{super()}}
 rm -rf ${out}/share/pkgconfig

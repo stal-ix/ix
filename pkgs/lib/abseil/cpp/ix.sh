@@ -34,10 +34,6 @@ sed -e 's|APPLE AND CMAKE|APPLE_XXX AND CMAKE|' \
 export CXXFLAGS="-std=c++20 ${CXXFLAGS}"
 {% endblock %}
 
-{% block env %}
-export CXXFLAGS="-std=c++20 \${CXXFLAGS}"
-{% endblock %}
-
 {% block cmake_flags %}
 CMAKE_CXX_STANDARD=20
 # we propagate it ourselves
