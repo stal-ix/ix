@@ -5,11 +5,11 @@ https://git.kernel.org/pub/scm/devel/pahole/pahole.git
 {% endblock %}
 
 {% block git_branch %}
-v1.27
+v1.29
 {% endblock %}
 
 {% block git_sha %}
-3c73b57fe2e54901a0c6f64252ab89bfaf074298417fa22d1cd1723de022ed67
+0d7e240e7bf3023344e37518ebae1986db96d5e99571ec6c6584bd262e43a646
 {% endblock %}
 
 {% block bld_libs %}
