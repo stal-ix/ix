@@ -1,11 +1,11 @@
 {% extends '//die/rust/cargo.sh' %}
 
 {% block cargo_url %}
-https://github.com/extrawurst/gitui/archive/refs/tags/v0.26.3.tar.gz
+https://github.com/extrawurst/gitui/archive/refs/tags/v0.27.0.tar.gz
 {% endblock %}
 
 {% block cargo_sha %}
-625263d80b8842bec1b5d3b34b489bdd6273774a9b0fef7242b7ff08fb75fa77
+58ec4734de029cf31ada0cc9bb41fba20d294471f45ecce40bdbb8e58cd7bf5f
 {% endblock %}
 
 {% block bld_libs %}
@@ -14,14 +14,21 @@ lib/iconv
 lib/git/2
 lib/openssl
 lib/oniguruma
+lib/build/muldefs
 {% endblock %}
 
 {% block bld_tool %}
 {{super()}}
+bld/make
+bld/cmake
 bld/fakegit
 {% endblock %}
 
 {% block install %}
 mkdir ${out}/bin
 cp ${tmp}/out/gitui ${out}/bin/
+{% endblock %}
+
+{% block rustc_ver %}
+83
 {% endblock %}
