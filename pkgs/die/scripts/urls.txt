@@ -1577,6 +1577,7 @@ https://github.com/exfatprogs/exfatprogs/releases/download/1.2.0/exfatprogs-1.2.
 https://github.com/extrawurst/gitui/archive/refs/tags/v0.24.3.tar.gz
 https://github.com/extrawurst/gitui/archive/refs/tags/v0.26.1.tar.gz
 https://github.com/extrawurst/gitui/archive/refs/tags/v0.26.3.tar.gz
+https://github.com/extrawurst/gitui/archive/refs/tags/v0.27.0.tar.gz
 https://github.com/extremecoders-re/go-dispatch-proxy/archive/refs/tags/v7.tar.gz
 https://github.com/eza-community/eza/archive/refs/tags/v0.17.2.tar.gz
 https://github.com/eza-community/eza/archive/refs/tags/v0.17.3.tar.gz
@@ -2864,6 +2865,7 @@ https://github.com/rizinorg/rizin/releases/download/v0.7.4/rizin-src-v0.7.4.tar.
 https://github.com/rmyorston/pdpmake/archive/refs/tags/1.4.0.tar.gz
 https://github.com/rmyorston/pdpmake/archive/refs/tags/1.4.3.tar.gz
 https://github.com/rmyorston/pdpmake/archive/refs/tags/2.0.0.tar.gz
+https://github.com/rmyorston/pdpmake/archive/refs/tags/2.0.3.tar.gz
 https://github.com/rockdaboot/libpsl/releases/download/0.21.2/libpsl-0.21.2.tar.gz
 https://github.com/rockdaboot/libpsl/releases/download/0.21.5/libpsl-0.21.5.tar.gz
 https://github.com/rockowitz/ddcutil/archive/refs/tags/v2.1.4.tar.gz
@@ -3932,6 +3934,7 @@ https://secure.nic.cz/files/knot-dns/knot-3.4.0.tar.xz
 https://secure.nic.cz/files/knot-dns/knot-3.4.1.tar.xz
 https://secure.nic.cz/files/knot-dns/knot-3.4.2.tar.xz
 https://secure.nic.cz/files/knot-dns/knot-3.4.3.tar.xz
+https://secure.nic.cz/files/knot-dns/knot-3.4.4.tar.xz
 https://secure.nic.cz/files/knot-resolver/knot-resolver-5.6.0.tar.xz
 https://secure.nic.cz/files/knot-resolver/knot-resolver-5.7.4.tar.xz
 https://secure.nic.cz/files/knot-resolver/knot-resolver-6.0.10.tar.xz

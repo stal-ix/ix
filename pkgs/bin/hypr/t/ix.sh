@@ -21,10 +21,6 @@ make protocols
 {{super()}}
 {% endblock %}
 
-{% block patch %}
-sed -e 's|-std=c++23||' -i CMakeLists.txt
-{% endblock %}
-
 {% block cpp_defines %}
 uint=uint32_t
 {% endblock %}

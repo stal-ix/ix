@@ -16,3 +16,7 @@ lib/protobuf
 {% block bld_tool %}
 bin/protoc
 {% endblock %}
+
+{% block cxx_flags %}
+-std=c++20
+{% endblock %}
