@@ -14,7 +14,6 @@ lib/iconv
 lib/git/2
 lib/openssl
 lib/oniguruma
-lib/build/muldefs
 {% endblock %}
 
 {% block bld_tool %}
@@ -31,4 +30,10 @@ cp ${tmp}/out/gitui ${out}/bin/
 
 {% block rustc_ver %}
 83
+{% endblock %}
+
+{% block c_rename_symbol %}
+alloc_deflate
+alloc_inflate
+free_inflate
 {% endblock %}
