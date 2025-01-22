@@ -52,6 +52,7 @@
 #}
 
 {% block run_deps %}
+bin/coreutils/9/6
 bin/inkscape
 bin/fizzy
 bin/kernel/6/13
