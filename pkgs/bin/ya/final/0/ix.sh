@@ -1,5 +1,5 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
-bin/ya(clang_ver=)
+bin/ya/gg(clang_ver=)
 {% endblock %}
