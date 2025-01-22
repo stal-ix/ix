@@ -32,3 +32,8 @@ cp ${tmp}/out/gitui ${out}/bin/
 {% block rustc_ver %}
 83
 {% endblock %}
+
+{% block patch %}
+{{super()}}
+rust_remove_c vendored/libz-ng-sys
+{% endblock %}
