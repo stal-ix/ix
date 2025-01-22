@@ -36,7 +36,6 @@
 #bin/cups
 #bin/ras/daemon
 #bin/ff/play
-#bin/yt
 #bin/balsa
 #bin/scummvm
 #bin/code/lite
@@ -45,16 +44,16 @@
 #bin/wf/recorder
 #argmax problem
 #bin/nix
-#bin/inkscape
 #bin/cosmic
 #bin/port/forwarder/rs
 #bin/qemu/8/1
 #bin/qemu/8/2
-#bin/fizzy
 #bin/curl/ms
 #}
 
 {% block run_deps %}
+bin/inkscape
+bin/fizzy
 bin/kernel/6/13
 bin/gdb/16
 bin/gdb/15
@@ -745,11 +744,7 @@ bin/wl/clipboard
 bin/wl/sunset
 bin/wl/mirror
 bin/wl/opm
-bin/nwg/launchers
-bin/nwg/drawer
-bin/nwg/menu
 bin/nwg
-bin/nwg/dock
 bin/fnott
 bin/brightnessctl
 bin/vim/g

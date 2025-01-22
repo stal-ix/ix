@@ -1,15 +1,25 @@
-{% extends '//bin/nwg/t/ix.sh' %}
+{% extends '//die/go/build.sh' %}
+
+{# hard x11 deps #}
 
 {% block go_url %}
-https://github.com/nwg-piotr/nwg-drawer/archive/refs/tags/v0.5.0.tar.gz
+https://github.com/nwg-piotr/nwg-drawer/archive/refs/tags/v0.6.1.tar.gz
 {% endblock %}
 
 {% block go_sha %}
-b12e9209af5dad2061b22085d42e7417ff1e031d93c87461d7e2edf4bd3b9965
+4e893ac3a232290e65c19d48e0f265827e91375f2e39a82d78e131304a0fe968
 {% endblock %}
 
 {% block go_tool %}
-bin/go/lang/22
+bin/go/lang/23
+{% endblock %}
+
+{% block bld_libs %}
+lib/atk
+lib/glib
+lib/gtk/3
+lib/gi/repository
+lib/gtk/layer/shell
 {% endblock %}
 
 {% block install %}
