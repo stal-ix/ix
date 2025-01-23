@@ -14,3 +14,7 @@ pip/glad2
 {{super()}}
 sed -e 's|.*PYTHONPATH.*||' -i meson.build
 {% endblock %}
+
+{% block cpp_includes %}
+${tmp}/obj/src
+{% endblock %}

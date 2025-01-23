@@ -2,7 +2,7 @@
 
 {% block fetch %}
 https://github.com/KhronosGroup/SPIRV-Cross/archive/refs/tags/vulkan-sdk-1.3.296.0.tar.gz
-sha:635b9b9ed2318df5ac65a0e1db1f92deb1
+sha:4f7f9a8a643e6694f155712016b9b572c13a9444e65b3f43b27bb464c0ab76e0
 {% endblock %}
 
 {% block lib_deps %}
