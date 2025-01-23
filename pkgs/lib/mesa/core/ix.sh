@@ -1,13 +1,21 @@
 {% extends '//lib/mesa/t/ix.sh' %}
 
+{% block meson_flags %}
+{{super()}}
+vulkan-drivers=
+gallium-drivers=
+{% endblock %}
+
 {% block install %}
 {{super()}}
-mv ${out}/lib/libgallium* ${out}/lib/libgallium.a
-find ${out}/lib/pkgconfig -type f -name '*.pc' | while read l; do
+cd ${out}/lib
+rm *.so
+cd pkgconfig
+find . -type f -name '*.pc' | while read l; do
     sed -e 's|glesv1_cm,||g' -i ${l}
     sed -e 's|-lgallium.*||' -i ${l}
 done
-cp ${out}/lib/pkgconfig/opengl.pc ${out}/lib/pkgconfig/glesv2.pc
+cp opengl.pc glesv2.pc
 {% endblock %}
 
 {% block env %}

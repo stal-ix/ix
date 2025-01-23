@@ -3,6 +3,6 @@
 {% block lib_deps %}
 {% if mesa_driver %}
 lib/mesa/egl
-lib/mesa/drivers/{{mesa_driver}}/reg
+lib/mesa/drivers/{{mesa_driver}}
 {% endif %}
 {% endblock %}

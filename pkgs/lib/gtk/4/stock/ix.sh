@@ -26,5 +26,4 @@ wl_cursor_theme_get_cursor
 xcursor_images_destroy
 g_openuri_portal_open_uri_async
 g_openuri_portal_open_uri_finish
-os_create_anonymous_file
 {% endblock %}
