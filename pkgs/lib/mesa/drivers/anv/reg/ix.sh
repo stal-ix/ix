@@ -3,5 +3,7 @@
 {# Intel anv + zink opengl #}
 
 {% block lib_deps %}
-lib/mesa/drivers/intel(vulkan=intel,opengl=zink)
+lib/vulkan/loader/dl
+lib/mesa/drivers/opengl(driver=zink)
+lib/mesa/drivers/vulkan(driver=intel)
 {% endblock %}
