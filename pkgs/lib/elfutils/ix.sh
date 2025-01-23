@@ -15,7 +15,3 @@ sed -e 's|error.*;|abort();|' -i libdw/libdw_alloc.c
 {{super()}}
 cp lib/libeu.a ${out}/lib/
 {% endblock %}
-
-{% block env %}
-export CPPFLAGS="-I${out}/include/elfutils \${CPPFLAGS}"
-{% endblock %}
