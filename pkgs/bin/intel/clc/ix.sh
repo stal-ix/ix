@@ -28,7 +28,6 @@ src/intel/compiler/intel_clc
 {% endblock %}
 
 {% block meson_flags %}
-dri3=disabled
 gallium-drivers=
 vulkan-drivers=
 platforms=
