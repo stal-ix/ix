@@ -4,6 +4,7 @@
 {% if mesa_driver %}
 lib/mesa/egl
 lib/mesa/drivers/dl
+lib/mesa/drivers/gbm
 lib/mesa/drivers/{{mesa_driver}}/reg
 {% endif %}
 {% endblock %}

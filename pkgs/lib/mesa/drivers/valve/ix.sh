@@ -34,8 +34,9 @@ gallium-drivers={{opengl}}
 {% block install %}
 {{super()}}
 {% if vulkan %}
-llvm-ar qL ${out}/lib/libgldrivers.a ${out}/lib/libgallium* ${out}/lib/libvulkan*
+llvm-ar qL ${out}/lib/libgldrivers.a ${out}/lib/libgallium* ${out}/lib/libvulkan* ${out}/lib/gbm/*
 rm ${out}/lib/libgallium* ${out}/lib/libvulkan*
+rm -rf ${out}/lib/gbm
 {% else %}
 mv ${out}/lib/libgallium* ${out}/lib/libgldrivers.a
 {% endif %}
