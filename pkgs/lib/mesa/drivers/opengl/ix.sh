@@ -5,8 +5,6 @@ o_
 {% endblock %}
 
 {% block export_symbols %}
-__driDriverGetExtensions_{{driver}}
-dri_loader_get_extensions
 {% endblock %}
 
 {% block export_lib %}

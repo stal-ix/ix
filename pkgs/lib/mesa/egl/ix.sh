@@ -5,5 +5,5 @@ lib/mesa
 {% endblock %}
 
 {% block env %}
-export LDFLAGS="-lEGL \${LDFLAGS}"
+export LDFLAGS="-lgbm -lEGL \${LDFLAGS}"
 {% endblock %}
