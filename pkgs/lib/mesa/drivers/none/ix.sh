@@ -1,4 +1,4 @@
-{% extends '//lib/mesa/core/ix.sh' %}
+{% extends '//lib/mesa/drivers/base/ix.sh' %}
 
 {% block meson_flags %}
 {{super()}}

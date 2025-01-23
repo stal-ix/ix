@@ -1,14 +1,8 @@
-{% extends '//lib/mesa/core/ix.sh' %}
+{% extends '//lib/mesa/drivers/base/ix.sh' %}
 
 {% block lib_deps %}
 lib/elfutils
 {{super()}}
-{% endblock %}
-
-{% block bld_tool %}
-{{super()}}
-bld/librarian
-bld/wrapcc/ar
 {% endblock %}
 
 {% block c_rename_symbol %}
@@ -52,20 +46,10 @@ mv ${out}/lib/libgallium* ${out}/lib/extra/libgallium.a
 export LDFLAGS="-L${out}/lib -lglapi -L${out}/lib/extra -Wl,--whole-archive -lgldrivers -Wl,--no-whole-archive \${LDFLAGS}"
 {% endblock %}
 
-{% block setup_tools %}
-cat << EOF > ${AR}
-#!/usr/bin/env sh
-exec wrapar "$(command -v ${AR})" "\${@}"
-EOF
-chmod +x ${AR}
-{{super()}}
-{% endblock %}
-
 {% block patch %}
 (
 {{super()}}
 )
-
 
 (
 cd src/gallium/frontends/dri
