@@ -8,14 +8,20 @@ gallium-drivers=
 
 {% block install %}
 {{super()}}
-cd ${out}/lib
-rm *.so
-cd pkgconfig
-find . -type f -name '*.pc' | while read l; do
+
+#llvm-ar q ${out}/lib/libmesa_utils.a \
+#    ${tmp}/obj/src/gallium/frontends/dri/libdri.a.p/*.o \
+#    ${tmp}/obj/src/gallium/auxiliary/libgallium.a.p/*.o \
+#    ${tmp}/obj/src/mesa/libmesa.a.p/*.o
+
+cp ${tmp}/obj/src/gallium/targets/dri/libgallium-24.3.4.so ${out}/lib/libgallium.a
+
+find ${out}/lib/pkgconfig -type f -name '*.pc' | while read l; do
     sed -e 's|glesv1_cm,||g' -i ${l}
     sed -e 's|-lgallium.*||' -i ${l}
 done
-cp opengl.pc glesv2.pc
+
+cp ${out}/lib/pkgconfig/opengl.pc ${out}/lib/pkgconfig/glesv2.pc
 {% endblock %}
 
 {% block env %}
