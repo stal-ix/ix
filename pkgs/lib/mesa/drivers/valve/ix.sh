@@ -33,17 +33,17 @@ gallium-drivers={{opengl}}
 
 {% block install %}
 {{super()}}
-mkdir ${out}/lib/extra
 {% if vulkan %}
-llvm-ar qL ${out}/lib/extra/libgldrivers.a ${out}/lib/libgallium* ${out}/lib/libvulkan*
+llvm-ar qL ${out}/lib/libgldrivers.a ${out}/lib/libgallium* ${out}/lib/libvulkan*
+rm ${out}/lib/libgallium* ${out}/lib/libvulkan*
 {% else %}
-mv ${out}/lib/libgallium* ${out}/lib/extra/libgallium.a
+mv ${out}/lib/libgallium* ${out}/lib/libgldrivers.a
 {% endif %}
 {% endblock %}
 
 {% block env %}
 {{super()}}
-export LDFLAGS="-L${out}/lib -lglapi -L${out}/lib/extra -Wl,--whole-archive -lgldrivers -Wl,--no-whole-archive \${LDFLAGS}"
+export LDFLAGS="-L${out}/lib -lglapi -lgldrivers \${LDFLAGS}"
 {% endblock %}
 
 {% block patch %}
