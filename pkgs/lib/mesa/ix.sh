@@ -2,5 +2,5 @@
 
 {% block lib_deps %}
 lib/mesa/shim
-lib/mesa/core
+lib/mesa/drivers/{{mesa_driver or 'none'}}
 {% endblock %}

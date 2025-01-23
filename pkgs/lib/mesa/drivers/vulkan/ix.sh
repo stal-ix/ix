@@ -1,9 +1,5 @@
 {% extends '//die/dl/fix.sh' %}
 
-{% block export_prefix %}
-v_
-{% endblock %}
-
 {% block export_symbols %}
 vk_icdGetInstanceProcAddr
 vk_icdNegotiateLoaderICDInterfaceVersion
