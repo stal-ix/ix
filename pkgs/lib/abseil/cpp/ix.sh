@@ -6,9 +6,8 @@ sha:987ce98f02eefbaf930d6e38ab16aa05737234d7afbab2d5c4ea7adbe50c28ed
 {% endblock %}
 
 {% block lib_deps %}
-lib/c
-lib/c++
-lib/execinfo
+lib/c/naked
+lib/c++/dispatch
 {% if darwin %}
 lib/darwin/framework/CoreFoundation
 {% endif %}

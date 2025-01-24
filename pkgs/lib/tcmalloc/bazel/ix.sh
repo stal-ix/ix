@@ -6,8 +6,6 @@ sha:a5480b4012f0e36ab03f47479c8ba2f27ea70607156825266e3da84f6a28caf9
 {% endblock %}
 
 {% block lib_deps %}
-lib/c
-lib/c++
 lib/abseil/cpp
 {% endblock %}
 
@@ -31,6 +29,9 @@ rm -rf tcmalloc/testing
 
 {% block build %}
 set -x
+echo 'tcmalloc/internal/percpu_rseq_asm.S' | while read l; do
+    c++ -c ${l} -o ${l}.o
+done
 find tcmalloc -type f -name '*.cc' | while read l; do
     c++ -c ${l} -o ${l}.o
 done
