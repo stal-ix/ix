@@ -42,6 +42,14 @@ sed -e 's|.*static_assert.*||'   \
     -i gio/gio-launch-desktop.c
 {% endblock %}
 
+{% block configure %}
+{{super()}}
+cat << EOF >> ${tmp}/obj/config.h
+#undef HAVE_FREE_SIZED
+#undef HAVE_FREE_ALIGNED_SIZED
+EOF
+{% endblock %}
+
 {% block meson_flags %}
 tests=false
 {% endblock %}
