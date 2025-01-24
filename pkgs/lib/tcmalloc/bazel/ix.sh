@@ -17,6 +17,10 @@ lib/kernel
 ${PWD}
 {% endblock %}
 
+{% block cpp_defines %}
+TCMALLOC_INTERNAL_8K_PAGES
+{% endblock %}
+
 {% block patch %}
 find . -type f -name '*_test.*' -delete
 find . -type f -name '*_fuzz.*' -delete
@@ -32,7 +36,7 @@ set -x
 echo 'tcmalloc/internal/percpu_rseq_asm.S' | while read l; do
     c++ -c ${l} -o ${l}.o
 done
-find tcmalloc -type f -name '*.cc' | while read l; do
+find tcmalloc -type f -name '*.cc' | grep -v 'want_' | while read l; do
     c++ -c ${l} -o ${l}.o
 done
 ar q libtcmalloc.a $(find . -type f -name '*.o')
