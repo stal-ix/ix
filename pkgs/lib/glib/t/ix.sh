@@ -42,7 +42,7 @@ sed -e 's|.*static_assert.*||'   \
     -i gio/gio-launch-desktop.c
 {% endblock %}
 
-{% block configure %}
+{% block configure1 %}
 {{super()}}
 cat << EOF >> ${tmp}/obj/config.h
 #undef HAVE_FREE_SIZED

@@ -7,7 +7,7 @@ sha:a5480b4012f0e36ab03f47479c8ba2f27ea70607156825266e3da84f6a28caf9
 
 {% block lib_deps %}
 lib/abseil/cpp
-lib/reallocarray
+lib/tcmalloc/bazel/headers
 {% endblock %}
 
 {% block bld_libs %}
@@ -49,6 +49,7 @@ cp libtcmalloc.a ${out}/lib/
 {% endblock %}
 
 {% block env %}
+export ac_cv_func_reallocarray=yes
 export ac_cv_func_malloc_0_nonnull=yes
 export ac_cv_func_realloc_0_nonnull=yes
 {% endblock %}
