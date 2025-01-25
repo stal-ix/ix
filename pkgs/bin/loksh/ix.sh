@@ -16,3 +16,7 @@ b002d6c7dea0d0547b36bc5bd91c2b804438531d2c35ba222b2e2ce226927ac5
 lib/c
 lib/curses
 {% endblock %}
+
+{% block patch %}
+>subprojects/lolibc/reallocarray.c
+{% endblock %}
