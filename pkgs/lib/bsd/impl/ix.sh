@@ -3,7 +3,6 @@
 {% block lib_deps %}
 lib/c
 lib/md
-lib/reallocarray
 {% endblock %}
 
 {% block bld_libs %}
