@@ -7,6 +7,7 @@ sha:a5480b4012f0e36ab03f47479c8ba2f27ea70607156825266e3da84f6a28caf9
 
 {% block lib_deps %}
 lib/abseil/cpp
+lib/build/w/include/next
 lib/tcmalloc/bazel/headers
 {% endblock %}
 
