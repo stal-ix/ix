@@ -3,6 +3,6 @@
 {% block run_deps %}
 bld/sh
 bld/box
-bin/python/frozen
+bld/python
 bin/ix/tools/urls/scripts
 {% endblock %}
