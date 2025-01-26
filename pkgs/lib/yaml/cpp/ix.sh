@@ -14,7 +14,3 @@ lib/c++
 YAML_CPP_BUILD_TOOLS=OFF
 YAML_CPP_BUILD_TESTS=OFF
 {% endblock %}
-
-{% block c_flags %}
--Wno-gnu-include-next
-{% endblock %}

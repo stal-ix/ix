@@ -10,10 +10,6 @@ lib/c
 lib/c++
 {% endblock %}
 
-{% block c_flags %}
--Wno-gnu-include-next
-{% endblock %}
-
 {% block install %}
 mkdir ${out}/lib
 cp src/libb64.a ${out}/lib/
