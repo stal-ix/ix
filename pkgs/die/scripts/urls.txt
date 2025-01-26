@@ -1421,6 +1421,7 @@ https://github.com/capstone-engine/capstone/archive/refs/tags/5.0.3.tar.gz
 https://github.com/carapace-sh/carapace-bin/archive/refs/tags/v1.0.4.tar.gz
 https://github.com/carapace-sh/carapace-bin/archive/refs/tags/v1.1.0.tar.gz
 https://github.com/carapace-sh/carapace-bin/archive/refs/tags/v1.1.1.tar.gz
+https://github.com/carapace-sh/carapace-bin/archive/refs/tags/v1.2.1.tar.gz
 https://github.com/casey/just/archive/refs/tags/1.35.0.tar.gz
 https://github.com/casey/just/archive/refs/tags/1.36.0.tar.gz
 https://github.com/casey/just/archive/refs/tags/1.37.0.tar.gz
@@ -3686,6 +3687,7 @@ https://gitlab.gnome.org/GNOME/vte/-/archive/0.76.3/vte-0.76.3.tar.bz2
 https://gitlab.gnome.org/GNOME/vte/-/archive/0.78.0/vte-0.78.0.tar.bz2
 https://gitlab.gnome.org/GNOME/vte/-/archive/0.78.1/vte-0.78.1.tar.bz2
 https://gitlab.gnome.org/GNOME/vte/-/archive/0.78.2/vte-0.78.2.tar.bz2
+https://gitlab.gnome.org/GNOME/vte/-/archive/0.78.3/vte-0.78.3.tar.bz2
 https://gitlab.gnome.org/GNOME/vte/-/archive/9e8824480ef51374bf9b42ad8ee59f64d50456b1/vte-9e8824480ef51374bf9b42ad8ee59f64d50456b1.tar.bz2
 https://gitlab.gnome.org/GNOME/zenity/-/archive/3.44.0/zenity-3.44.0.tar.bz2
 https://gitlab.gnome.org/GNOME/zenity/-/archive/3.90.0/zenity-3.90.0.tar.bz2
