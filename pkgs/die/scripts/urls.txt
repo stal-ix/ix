@@ -1720,6 +1720,7 @@ https://github.com/fmtlib/fmt/archive/refs/tags/11.0.1.tar.gz
 https://github.com/fmtlib/fmt/archive/refs/tags/11.1.0.tar.gz
 https://github.com/fmtlib/fmt/archive/refs/tags/11.1.1.tar.gz
 https://github.com/fmtlib/fmt/archive/refs/tags/11.1.2.tar.gz
+https://github.com/fmtlib/fmt/archive/refs/tags/11.1.3.tar.gz
 https://github.com/fmtlib/fmt/archive/refs/tags/9.1.0.tar.gz
 https://github.com/folkertvanheusden/HTTPing/archive/refs/tags/v4.1.0.tar.gz
 https://github.com/folkertvanheusden/HTTPing/archive/refs/tags/v4.2.0.tar.gz
