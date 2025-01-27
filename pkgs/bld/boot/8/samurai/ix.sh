@@ -1,4 +1,4 @@
-{% extends '//bin/samurai/ix.sh' %}
+{% extends '//bin/samurai/unwrap/ix.sh' %}
 
 {% block bld_libs %}
 {% endblock %}

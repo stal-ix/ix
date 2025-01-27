@@ -25,12 +25,14 @@ lib/double/conversion
 {% endblock %}
 
 {% block bld_tool %}
+bin/gzip
 bld/wayland
 {{super()}}
 {% endblock %}
 
 {% block cmake_flags %}
 {{super()}}
+QT_AVOID_CMAKE_ARCHIVING_API=ON
 QT_FEATURE_androiddeployqt=OFF
 QT_FEATURE_journald=OFF
 QT_FEATURE_vulkan=ON

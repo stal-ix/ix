@@ -2,6 +2,10 @@
 
 {% block patch %}
 sed -e 's|error.*;|abort();|' -i libdw/libdw_alloc.c
+# lib/argp/standalone dep
+cat << EOF > libdwfl/argp-std.c
+int dwfl_standard_argp;
+EOF
 {{super()}}
 {% endblock %}
 
@@ -14,8 +18,4 @@ sed -e 's|error.*;|abort();|' -i libdw/libdw_alloc.c
 {% block install %}
 {{super()}}
 cp lib/libeu.a ${out}/lib/
-{% endblock %}
-
-{% block env %}
-export CPPFLAGS="-I${out}/include/elfutils \${CPPFLAGS}"
 {% endblock %}

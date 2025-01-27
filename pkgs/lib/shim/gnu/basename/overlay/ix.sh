@@ -2,6 +2,7 @@
 
 {% block lib_deps %}
 lib/shim/gnu/basename
+lib/build/w/include/next
 {% endblock %}
 
 {% block sources %}

@@ -24,3 +24,7 @@ lib/shim/gnu/basename/overlay
 --disable-documentation
 --disable-python
 {% endblock %}
+
+{% block patch %}
+>libbtrfsutil/stubs.c
+{% endblock %}

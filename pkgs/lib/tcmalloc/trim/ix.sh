@@ -12,12 +12,9 @@ lib/tcmalloc
 #include <thread>
 #include <unistd.h>
 
-extern "C" void MallocExtension_ReleaseToSystem(size_t numBytes);
-
 static void threadFunc() {
     while (true) {
         sleep({{delay}});
-        MallocExtension_ReleaseToSystem({{bytes}});
     }
 }
 

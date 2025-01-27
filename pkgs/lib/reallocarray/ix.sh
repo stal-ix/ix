@@ -2,6 +2,8 @@
 
 {% block lib_deps %}
 lib/c/naked
+lib/reallocarray/headers
+lib/build/w/include/next
 {% endblock %}
 
 {% block setup_target_flags %}

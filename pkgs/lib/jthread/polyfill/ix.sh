@@ -2,6 +2,7 @@
 
 {% block lib_deps %}
 lib/jthread
+lib/build/w/include/next
 {% endblock %}
 
 {% block install %}

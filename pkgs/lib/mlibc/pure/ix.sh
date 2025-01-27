@@ -12,6 +12,7 @@ lib/kernel
 {% block bld_libs %}
 lib/mlibc/frigg
 lib/mlibc/cxxshim
+lib/build/w/include/next
 {% endblock %}
 
 {% block patch %}

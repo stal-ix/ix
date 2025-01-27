@@ -2,6 +2,7 @@
 
 {% block lib_deps %}
 lib/wasi/c/unwrap
+lib/build/w/include/next
 {% endblock %}
 
 {% block sources %}

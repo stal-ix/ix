@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://github.com/seccomp/libseccomp/archive/refs/tags/v2.5.5.tar.gz
-sha:7082b016d3cbda3e15c0e71ebd018023d693bb7507389b32f943db13f935e01d
+https://github.com/seccomp/libseccomp/archive/refs/tags/v2.6.0.tar.gz
+sha:0889a8da98e37f86019c90789fd4ff7eda6e1ceb9ef07d4c51c67aeb50a77860
 {% endblock %}
 
 {% block lib_deps %}

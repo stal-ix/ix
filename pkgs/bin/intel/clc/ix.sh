@@ -1,7 +1,7 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-{% include '//lib/mesa/t/ver.sh' %}
+{% include '//lib/mesa/drivers/t/ver.sh' %}
 {% endblock %}
 
 {% block bld_libs %}
@@ -28,7 +28,6 @@ src/intel/compiler/intel_clc
 {% endblock %}
 
 {% block meson_flags %}
-dri3=disabled
 gallium-drivers=
 vulkan-drivers=
 platforms=

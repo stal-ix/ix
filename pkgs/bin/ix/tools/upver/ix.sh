@@ -3,6 +3,6 @@
 {% block run_deps %}
 bld/sh
 bin/wget
-bin/python/frozen
+bld/python
 bin/ix/tools/upver/scripts
 {% endblock %}

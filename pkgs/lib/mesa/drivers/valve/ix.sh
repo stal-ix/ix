@@ -1,14 +1,8 @@
-{% extends '//lib/mesa/t/ix.sh' %}
+{% extends '//lib/mesa/drivers/base/ix.sh' %}
 
 {% block lib_deps %}
 lib/elfutils
 {{super()}}
-{% endblock %}
-
-{% block bld_tool %}
-{{super()}}
-bld/librarian
-bld/wrapcc/ar
 {% endblock %}
 
 {% block c_rename_symbol %}
@@ -34,13 +28,23 @@ vulkan-drivers={{vulkan}}
 gallium-drivers={{opengl}}
 {% endblock %}
 
-{% block setup_tools %}
-cat << EOF > ${AR}
-#!/usr/bin/env sh
-exec wrapar "$(command -v ${AR})" "\${@}"
-EOF
-chmod +x ${AR}
+{% block skip_auto_lib_env %}
+{% endblock %}
+
+{% block install %}
 {{super()}}
+{% if vulkan %}
+llvm-ar qL ${out}/lib/libgldrivers.a ${out}/lib/libgallium* ${out}/lib/libvulkan* ${out}/lib/gbm/*
+rm ${out}/lib/libgallium* ${out}/lib/libvulkan*
+rm -rf ${out}/lib/gbm
+{% else %}
+mv ${out}/lib/libgallium* ${out}/lib/libgldrivers.a
+{% endif %}
+{% endblock %}
+
+{% block env %}
+{{super()}}
+export LDFLAGS="-L${out}/lib -lglapi -lgldrivers \${LDFLAGS}"
 {% endblock %}
 
 {% block patch %}
@@ -69,50 +73,8 @@ done
 )
 {% endblock %}
 
-{% block install %}
-{{super()}}
-
-set -x
-
-cd ${out}/lib
-
-mv libgallium* libgallium.a
-patchns libgallium.a o_
-
-{% if vulkan %}
-patchns libvulkan_* v_
-llvm-ar qL libgldrivers.a libgallium* libvulkan_*
-llvm-objcopy \
-    --redefine-sym "vk_format_get_ycbcr_info=v_vk_format_get_ycbcr_info" \
-    --redefine-sym "vk_format_to_pipe_format=v_vk_format_to_pipe_format" \
-    libgldrivers.a
-{% else %}
-mv libgallium.a libgldrivers.a
-{% endif %}
-
-# some sanity checks
-llvm-nm libgldrivers.a | grep ' T ' | sort | uniq -c | grep -v ' 1 ' | while read l; do
-    echo 'broken libgldrivers.a'
-    exit 1
-done
-
-cd ${out}
-
-mv lib tmp
-mkdir lib
-mv tmp/libgldrivers.a lib/
-rm -r tmp
-{% endblock %}
-
-{% block skip_auto_lib_env %}
-{% endblock %}
-
 {% block cpp_defines %}
 {{super()}}
 VK_COMPONENT_TYPE_MAX_ENUM_NV=VK_COMPONENT_TYPE_MAX_ENUM_KHR
 VK_SCOPE_MAX_ENUM_NV=VK_SCOPE_MAX_ENUM_KHR
-{% endblock %}
-
-{% block env %}
-export LDFLAGS="-L${out}/lib -Wl,--whole-archive -lgldrivers -Wl,--no-whole-archive \${LDFLAGS}"
 {% endblock %}
