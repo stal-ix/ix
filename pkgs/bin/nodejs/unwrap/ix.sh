@@ -12,6 +12,7 @@ lib/uv
 lib/xz
 lib/icu
 lib/c++
+lib/dlfcn
 lib/kernel
 lib/c/ares
 lib/brotli
