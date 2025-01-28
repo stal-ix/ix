@@ -75,7 +75,7 @@ namespace {
             };
 
             if (posix_spawnp(&pid, cmd[0], 0, 0, cmd, 0)) {
-                throw std::runtime_error("can not spaawn " + p);
+                throw std::runtime_error("can not spawn " + p);
             }
         }
 
