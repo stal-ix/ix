@@ -93,7 +93,3 @@ static inline bool disk_cache_get_function_identifier(void* ptr, struct mesa_sha
 }
 EOF
 {% endblock %}
-
-{% block postinstall %}
-echo 'temp'
-{% endblock %}

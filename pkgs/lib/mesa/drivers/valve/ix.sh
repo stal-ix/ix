@@ -78,3 +78,8 @@ done
 VK_COMPONENT_TYPE_MAX_ENUM_NV=VK_COMPONENT_TYPE_MAX_ENUM_KHR
 VK_SCOPE_MAX_ENUM_NV=VK_SCOPE_MAX_ENUM_KHR
 {% endblock %}
+
+{% block postinstall %}
+mkdir ${out}/lib/gallium-pipe
+echo > ${out}/lib/gallium-pipe/pipe_{{opengl}}.so
+{% endblock %}
