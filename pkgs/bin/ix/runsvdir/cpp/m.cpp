@@ -116,13 +116,13 @@ namespace {
 
                 try {
                     auto md5 = fhash(p);
-                    auto& proc = running[md5];
 
-                    if (proc.get()) {
-                        // already running
-                    } else {
-                        proc = std::make_shared<Proc>(p);
+                    if (auto it = running.find(md5); it == running.end()) {
+                        auto proc = std::make_shared<Proc>(p);
+
+                        // assume will not throw
                         pids[proc->pid] = md5;
+                        running[md5] = proc;
                     }
 
                     cur.insert(md5);
