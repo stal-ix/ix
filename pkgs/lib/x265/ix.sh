@@ -26,6 +26,7 @@ CMAKE_RC_COMPILER={{target.gnu.three}}-windres
 
 {% block lib_deps %}
 lib/c
+lib/c++
 {% endblock %}
 
 {% block build_flags %}

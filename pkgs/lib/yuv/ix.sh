@@ -18,6 +18,10 @@ lib/jpeg
 lib/shim/fake/pkg(pkg_name=libyuv,pkg_ver=100.0.0)
 {% endblock %}
 
+{% block bld_libs %}
+lib/dlfcn
+{% endblock %}
+
 {% block skip_dirs %}0{% endblock %}
 
 {% block build_flags %}

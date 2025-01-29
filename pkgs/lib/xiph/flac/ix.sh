@@ -11,5 +11,6 @@ bld/gettext
 
 {% block lib_deps %}
 lib/c
+lib/c++
 lib/xiph/ogg
 {% endblock %}
