@@ -28,6 +28,7 @@ lib/webp
 lib/jpeg
 lib/dbus
 lib/avif
+lib/event
 lib/dlfcn
 lib/pango
 lib/cairo
@@ -171,6 +172,10 @@ google_api_key=\"$_google_api_key\"
 google_default_client_id=\"$_google_default_client_id\"
 google_default_client_secret=\"$_google_default_client_secret\"
 #}
+
+{% block cpp_defines %}
+__is_cpp17_contiguous_iterator=__libcpp_is_contiguous_iterator
+{% endblock %}
 
 {% block gn_args %}
 clang_base_path=""
