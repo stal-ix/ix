@@ -26,9 +26,9 @@ lib/xslt
 lib/opus
 lib/webp
 lib/jpeg
-lib/curl
 lib/dbus
 lib/avif
+lib/dlfcn
 lib/event
 lib/pango
 lib/cairo
@@ -56,6 +56,7 @@ lib/xiph/speex
 lib/fontconfig
 lib/xkb/common
 lib/shim/extra
+lib/shim/fake(lib_name=atomic)
 {% endblock %}
 
 {% block bld_tool %}
@@ -65,6 +66,10 @@ bld/bison
 bin/brotli
 bin/nodejs
 bld/elfutils
+{% endblock %}
+
+{% block cxx_flags %}
+-Wno-missing-template-arg-list-after-template-kw
 {% endblock %}
 
 {% block build_flags %}
@@ -145,25 +150,21 @@ find . -type f -path "*third_party/$_lib/*" \
 -delete
 done
 
-python3 build/linux/unbundle/replace_gn_files.py --system-libraries \
-$use_system
+python3 build/linux/unbundle/replace_gn_files.py --system-libraries $use_system
 python3 third_party/libaddressinput/chromium/tools/update-strings.py
 
 # prevent annoying errors when regenerating gni
-sed -i 's,^update_readme$,#update_readme,' \
-third_party/libvpx/generate_gni.sh
+sed -i 's,^update_readme$,#update_readme,' third_party/libvpx/generate_gni.sh
 
 # allow system dependencies in "official builds"
-sed -i 's/OFFICIAL_BUILD/GOOGLE_CHROME_BUILD/' \
-tools/generate_shim_headers/generate_shim_headers.py
+sed -i 's/OFFICIAL_BUILD/GOOGLE_CHROME_BUILD/' tools/generate_shim_headers/generate_shim_headers.py
 
 # https://crbug.com/893950
 sed -i -e 's/\<xmlMalloc\>/malloc/' -e 's/\<xmlFree\>/free/' \
-third_party/blink/renderer/core/xml/*.cc \
-third_party/blink/renderer/core/xml/parser/xml_document_parser.cc \
-third_party/libxml/chromium/*.cc \
-third_party/maldoca/src/maldoca/ole/oss_utils.h
-
+    third_party/blink/renderer/core/xml/*.cc \
+    third_party/blink/renderer/core/xml/parser/xml_document_parser.cc \
+    third_party/libxml/chromium/*.cc \
+    third_party/maldoca/src/maldoca/ole/oss_utils.h
 {% endblock %}
 
 {#
@@ -284,8 +285,6 @@ chrome
 
 {% block configure %}
 {{super()}}
-sed -e 's|\.\./.*clang|clang|' \
-    -e 's|/usr/bin/brotli|'$(which brotli)'|' \
-    -e 's|clang_gcc_impl.h||g' \
+sed -e 's|/usr/bin/brotli|'$(which brotli)'|' \
     -i ${tmp}/obj/toolchain.ninja
 {% endblock %}
