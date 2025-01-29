@@ -1,5 +1,5 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
-bin/chromium/unwrap(libc_lite=1)
+bin/chromium/unwrap(libc_lite=1,libopenssl_ver=qw)
 {% endblock %}

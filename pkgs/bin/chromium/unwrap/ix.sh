@@ -29,7 +29,7 @@ lib/jpeg
 lib/dbus
 lib/avif
 lib/dlfcn
-lib/event
+#lib/event
 lib/pango
 lib/cairo
 lib/xml/2
