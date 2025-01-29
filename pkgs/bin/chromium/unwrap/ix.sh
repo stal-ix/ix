@@ -29,7 +29,6 @@ lib/jpeg
 lib/dbus
 lib/avif
 lib/dlfcn
-#lib/event
 lib/pango
 lib/cairo
 lib/xml/2
@@ -174,7 +173,7 @@ google_default_client_secret=\"$_google_default_client_secret\"
 #}
 
 {% block gn_args %}
-clang_base_path="/usr"
+clang_base_path=""
 
 custom_toolchain="//build/toolchain/linux/unbundle:default"
 host_toolchain="//build/toolchain/linux/unbundle:default"
