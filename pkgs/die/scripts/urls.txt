@@ -4161,6 +4161,7 @@ https://www.ivarch.com/programs/sources/pv-1.9.15.tar.gz
 https://www.ivarch.com/programs/sources/pv-1.9.24.tar.gz
 https://www.ivarch.com/programs/sources/pv-1.9.25.tar.gz
 https://www.ivarch.com/programs/sources/pv-1.9.27.tar.gz
+https://www.ivarch.com/programs/sources/pv-1.9.31.tar.gz
 https://www.ivarch.com/programs/sources/pv-1.9.7.tar.gz
 https://www.jedsoft.org/releases/jed/jed-0.99-19.tar.bz2
 https://www.jedsoft.org/releases/most/most-5.2.0.tar.gz
