@@ -10,6 +10,7 @@ cdc0f12d784b7e04f527af5eef3bbfdf10037e270e3c1bd193e6b87cba39f922
 
 {% block bld_libs %}
 lib/c
+lib/c++
 lib/evdev
 {% endblock %}
 
@@ -17,4 +18,3 @@ lib/evdev
 mkdir ${out}/bin
 cp ${tmp}/out/evsieve ${out}/bin/
 {% endblock %}
-
