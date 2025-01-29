@@ -10,6 +10,10 @@ lib/xxhash
 runsvdir
 {% endblock %}
 
+{% block cxx_flags %}
+-std=c++20
+{% endblock %}
+
 {% block sources %}
 m.cpp
 {% endblock %}

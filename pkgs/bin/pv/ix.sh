@@ -1,8 +1,8 @@
 {% extends '//die/c/autohell.sh' %}
 
 {% block fetch %}
-https://www.ivarch.com/programs/sources/pv-1.9.27.tar.gz
-sha:253659dc86569363f065f5e881e135a0c9594b987f34a19b104c7414a2d2c479
+https://www.ivarch.com/programs/sources/pv-1.9.31.tar.gz
+sha:a35e92ec4ac0e8f380e8e840088167ae01014bfa008a3a9d6506b848079daedf
 {% endblock %}
 
 {% block bld_libs %}

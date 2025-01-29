@@ -47,6 +47,7 @@ cat << EOF > ${out}/include/X11/Xlib.h
 #pragma once
 typedef void* Display;
 typedef void* Window;
+typedef void* Pixmap;
 #define XResetScreenSaver(X)
 #define XKeysymToString(X) ""
 #define XOpenDisplay(X) NULL
@@ -116,5 +117,11 @@ struct Xauth {
 #define FamilyLocal 0
 #define FamilyWild 0
 #define XauWriteAuth(...) 1
+EOF
+
+mkdir ${out}/include/gdk
+
+cat << EOF > ${out}/include/gdk/gdkx.h
+#pragma once
 EOF
 {% endblock %}

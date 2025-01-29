@@ -59,6 +59,12 @@ namespace {
         return std::make_pair(shash(p), shash(readf(p)));
     }
 
+    static auto wait_pid() {
+        int status;
+
+        return waitpid(-1, &status, WNOHANG);
+    }
+
     struct Proc {
         int pid;
 
@@ -69,16 +75,12 @@ namespace {
             };
 
             if (posix_spawnp(&pid, cmd[0], 0, 0, cmd, 0)) {
-                throw std::runtime_error("can not spaawn " + p);
+                throw std::runtime_error("can not spawn " + p);
             }
         }
 
         void terminate() {
             kill(pid, SIGTERM);
-        }
-
-        bool alive() {
-            return kill(pid, 0) == 0;
         }
     };
 
@@ -87,6 +89,7 @@ namespace {
     struct Context {
         const std::string where;
         std::map<ProcID, std::shared_ptr<Proc>> running;
+        std::map<uint32_t, ProcID> pids;
 
         Context(const std::string& where_)
             : where(where_)
@@ -113,12 +116,13 @@ namespace {
 
                 try {
                     auto md5 = fhash(p);
-                    auto& proc = running[md5];
 
-                    if (proc.get()) {
-                        // already running
-                    } else {
-                        proc = std::make_shared<Proc>(p);
+                    if (auto it = running.find(md5); it == running.end()) {
+                        auto proc = std::make_shared<Proc>(p);
+
+                        // assume will not throw
+                        pids[proc->pid] = md5;
+                        running[md5] = proc;
                     }
 
                     cur.insert(md5);
@@ -127,8 +131,6 @@ namespace {
                 }
             }
 
-            std::vector<ProcID> dead;
-
             for (auto& item : running) {
                 auto md5 = item.first;
                 auto proc = item.second;
@@ -136,21 +138,16 @@ namespace {
                 if (cur.find(md5) == cur.end()) {
                     proc->terminate();
                 }
+            }
 
-                if (proc->alive()) {
-                    // alive
+            for (int pid = wait_pid(); pid  > 0; pid = wait_pid()) {
+                if (auto it = pids.find(pid); it != pids.end()) {
+                    running.erase(it->second);
+                    pids.erase(it);
+                    log("complete " + std::to_string(pid));
                 } else {
-                    dead.push_back(md5);
+                    log("unknown pid " + std::to_string(pid));
                 }
-            }
-
-            for (auto d : dead) {
-                running.erase(d);
-            }
-
-            int status;
-
-            while (waitpid(-1, &status, WNOHANG) > 0) {
             }
         }
     };

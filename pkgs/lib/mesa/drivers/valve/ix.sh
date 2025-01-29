@@ -28,6 +28,11 @@ vulkan-drivers={{vulkan}}
 gallium-drivers={{opengl}}
 {% endblock %}
 
+{% block c_flags %}
+{{super()}}
+-Wno-missing-prototypes
+{% endblock %}
+
 {% block skip_auto_lib_env %}
 {% endblock %}
 
@@ -71,6 +76,19 @@ for l in *.c *.h *.cpp; do
     done
 done
 )
+
+sed -e 's|pipe_loader_find_module|pipe_loader_find_module_xxx|' \
+    -i src/gallium/auxiliary/pipe-loader/pipe_loader.c
+
+cat << EOF >> src/gallium/auxiliary/pipe-loader/pipe_loader.c
+struct util_dl_library* pipe_loader_find_module(const char* driver_name, const char* library_paths) {
+   char path[PATH_MAX];
+
+   snprintf(path, sizeof(path), "%s%s%s", MODULE_PREFIX, driver_name, UTIL_DL_EXT);
+
+   return util_dl_open(path);
+}
+EOF
 {% endblock %}
 
 {% block cpp_defines %}
