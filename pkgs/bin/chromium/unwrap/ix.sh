@@ -73,8 +73,8 @@ bld/elfutils
 -Wno-invalid-offsetof
 {% endblock %}
 
-{% block cpp_includes %}
-${NSS_HEADERS}
+{% block cpp_flags %}
+-isystem${NSS_HEADERS}
 {% endblock %}
 
 {% block build_flags %}
