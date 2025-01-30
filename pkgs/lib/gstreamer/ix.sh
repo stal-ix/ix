@@ -1,8 +1,8 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://gitlab.freedesktop.org/gstreamer/gstreamer/-/archive/1.24.11/gstreamer-1.24.11.tar.gz
-sha:a7b9bf0904d3ae103291fc586679f55bd78dd96a1e871d8a58acfae7c71c7105
+https://gitlab.freedesktop.org/gstreamer/gstreamer/-/archive/1.24.12/gstreamer-1.24.12.tar.gz
+sha:a7b9bf0904d3ae1
 {% endblock %}
 
 {% block lib_deps %}
