@@ -189,7 +189,6 @@ __is_cpp17_contiguous_iterator=__libcpp_is_contiguous_iterator
 {% endblock %}
 
 {% block gn_args %}
-rtc_build_libsrtp=false
 #angle_shared_libvulkan=false
 #compile_suid_client=false
 #compile_syscall_broker=false
