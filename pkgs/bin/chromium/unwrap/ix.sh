@@ -169,6 +169,9 @@ sed -i -e 's/\<xmlMalloc\>/malloc/' -e 's/\<xmlFree\>/free/' \
 
 sed -e 's|deque_->size()|deque_->Size()|' \
     -i net/third_party/quiche/src/quiche/quic/core/quic_interval_deque.h
+
+sed -e 's|int close|int close_xxx|' \
+    -i base/files/scoped_file_linux.cc
 {% endblock %}
 
 {#
@@ -234,7 +237,6 @@ proprietary_codecs=false
 rtc_use_pipewire=false
 symbol_level=0
 treat_warnings_as_errors=false
-#use_allocator="none"
 use_allocator_shim=false
 use_cfi_icall=false
 use_thin_lto=false
@@ -283,8 +285,8 @@ use_system_libjpeg=true
 use_system_zlib=true
 use_thin_lto=false
 use_vaapi=false
-#use_partition_alloc_as_malloc=false
-#enable_backup_ref_ptr_support=false
+use_partition_alloc_as_malloc=false
+enable_backup_ref_ptr_support=false
 
 angle_build_tests=false
 angle_enable_commit_id=false
@@ -295,7 +297,7 @@ clang_version=19
 #compile_syscall_broker=false
 dawn_enable_vulkan_validation_layers=false
 use_static_angle=true
-enable_base_tracing=false
+#enable_base_tracing=false
 enable_browser_speech_service=false
 enable_component_updater=false
 enable_gwp_asan=false
