@@ -70,7 +70,6 @@ bld/elfutils
 {% endblock %}
 
 {% block cxx_flags %}
--Wno-missing-template-arg-list-after-template-kw
 -Wno-invalid-offsetof
 {% endblock %}
 
@@ -172,8 +171,8 @@ sed -i -e 's/\<xmlMalloc\>/malloc/' -e 's/\<xmlFree\>/free/' \
     third_party/libxml/chromium/*.cc \
     third_party/maldoca/src/maldoca/ole/oss_utils.h
 
-sed -e 's|deque_->size()|deque_->Size()|' \
-    -i net/third_party/quiche/src/quiche/quic/core/quic_interval_deque.h
+#sed -e 's|deque_->size()|deque_->Size()|' \
+#    -i net/third_party/quiche/src/quiche/quic/core/quic_interval_deque.h
 
 sed -e 's|int close|int close_xxx|' \
     -i base/files/scoped_file_linux.cc
@@ -190,6 +189,7 @@ __is_cpp17_contiguous_iterator=__libcpp_is_contiguous_iterator
 {% endblock %}
 
 {% block gn_args %}
+rtc_build_libsrtp=false
 #angle_shared_libvulkan=false
 #compile_suid_client=false
 #compile_syscall_broker=false
