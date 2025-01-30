@@ -65,7 +65,7 @@ else:
     xcomp = comp
 
 try:
-    subprocess.check_output([xcomp, '-o', temp, '-c', '-x', 'c', '-'], input=cprog)
+    subprocess.check_output([xcomp, '-fno-builtin', '-o', temp, '-c', '-x', 'c', '-'], input=cprog)
     subprocess.check_output(['exelink', comp] + args + [temp])
 finally:
     os.unlink(temp)

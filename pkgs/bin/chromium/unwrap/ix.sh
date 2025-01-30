@@ -55,7 +55,7 @@ lib/xiph/speex
 lib/fontconfig
 lib/xkb/common
 lib/shim/extra
-#lib/bsd/overlay
+lib/bsd/overlay
 lib/shim/fake(lib_name=atomic)
 {% endblock %}
 
@@ -71,6 +71,11 @@ bld/elfutils
 
 {% block cxx_flags %}
 -Wno-missing-template-arg-list-after-template-kw
+-Wno-invalid-offsetof
+{% endblock %}
+
+{% block cpp_includes %}
+${NSS_HEADERS}
 {% endblock %}
 
 {% block build_flags %}
@@ -199,7 +204,7 @@ build_with_tflite_lib=false
 chrome_pgo_phase=0
 clang_base_path=""
 clang_use_chrome_plugins=false
-clang_version=19
+clang_version={{clang_ver}}
 custom_toolchain="//build/toolchain/linux/unbundle:default"
 dawn_enable_vulkan_validation_layers=false
 disable_fieldtrial_testing_config=true
@@ -228,7 +233,6 @@ fatal_linker_warnings=false
 ffmpeg_branding="Chrome"
 has_native_accessibility=false
 host_toolchain="//build/toolchain/linux/unbundle:default"
-icu_use_data_file=false
 icu_use_data_file=true
 is_cfi=false
 is_clang=true
@@ -260,7 +264,7 @@ use_gnome_keyring=false
 use_gtk=false
 use_kerberos=false
 use_lld=true
-use_nss_certs=false
+use_nss_certs=true
 use_partition_alloc_as_malloc=false
 use_pulseaudio=false
 use_qt=false
@@ -293,4 +297,9 @@ chrome
 {{super()}}
 sed -e 's|/usr/bin/brotli|'$(which brotli)'|' \
     -i ${tmp}/obj/toolchain.ninja
+{% endblock %}
+
+{% block setup_target_flags %}
+{{super()}}
+export CPPFLAGS=$(echo "${CPPFLAGS}" | tr ' ' '\n' | grep -v vulkan-headers | grep -v lib-mesa | tr '\n' ' ')
 {% endblock %}
