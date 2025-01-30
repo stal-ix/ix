@@ -16,7 +16,6 @@ lib/nss
 lib/drm
 lib/icu
 lib/drm
-lib/bsd
 lib/cap
 lib/ffi
 lib/usb
@@ -56,10 +55,12 @@ lib/xiph/speex
 lib/fontconfig
 lib/xkb/common
 lib/shim/extra
+#lib/bsd/overlay
 lib/shim/fake(lib_name=atomic)
 {% endblock %}
 
 {% block bld_tool %}
+bin/gzip
 bld/flex
 bin/gperf
 bld/bison
@@ -165,6 +166,9 @@ sed -i -e 's/\<xmlMalloc\>/malloc/' -e 's/\<xmlFree\>/free/' \
     third_party/blink/renderer/core/xml/parser/xml_document_parser.cc \
     third_party/libxml/chromium/*.cc \
     third_party/maldoca/src/maldoca/ole/oss_utils.h
+
+sed -e 's|deque_->size()|deque_->Size()|' \
+    -i net/third_party/quiche/src/quiche/quic/core/quic_interval_deque.h
 {% endblock %}
 
 {#
@@ -230,7 +234,7 @@ proprietary_codecs=false
 rtc_use_pipewire=false
 symbol_level=0
 treat_warnings_as_errors=false
-use_allocator="none"
+#use_allocator="none"
 use_allocator_shim=false
 use_cfi_icall=false
 use_thin_lto=false
@@ -279,8 +283,38 @@ use_system_libjpeg=true
 use_system_zlib=true
 use_thin_lto=false
 use_vaapi=false
-use_partition_alloc_as_malloc=false
-enable_backup_ref_ptr_support=false
+#use_partition_alloc_as_malloc=false
+#enable_backup_ref_ptr_support=false
+
+angle_build_tests=false
+angle_enable_commit_id=false
+#angle_shared_libvulkan=false
+build_dawn_tests=false
+clang_version=19
+#compile_suid_client=false
+#compile_syscall_broker=false
+dawn_enable_vulkan_validation_layers=false
+use_static_angle=true
+enable_base_tracing=false
+enable_browser_speech_service=false
+enable_component_updater=false
+enable_gwp_asan=false
+enable_nocompile_tests=false
+enable_pdf=false
+enable_perfetto_unittests=false
+enable_plugins=false
+enable_ppapi=false
+enable_printing=false
+enable_reporting=false
+enable_speech_service=false
+is_unsafe_developer_build=true
+monolithic_binaries=true
+ozone_platform="wayland"
+perfetto_force_dcheck="off"
+use_kerberos=false
+use_system_libpng=true
+use_system_libtiff=true
+
 {% endblock %}
 
 {% block ninja_build_targets %}
