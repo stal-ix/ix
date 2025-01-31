@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://downloads.sourceforge.net/project/gparted/gparted/gparted-1.6.0/gparted-1.6.0.tar.gz
-sha:9b9f51b3ce494ddcb59a55e1ae6679c09436604e331dbf5a536d60ded6c6ea5b
+https://downloads.sourceforge.net/project/gparted/gparted/gparted-1.7.0/gparted-1.7.0.tar.gz
+sha:84ae3b9973e443a2175f07aa0dc2aceeadb1501e0f8953cec83b0ec3347b7d52
 {% endblock %}
 
 {% block bld_libs %}
