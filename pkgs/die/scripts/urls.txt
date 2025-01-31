@@ -2093,6 +2093,7 @@ https://github.com/johnsonjh/OpenVi/archive/refs/tags/7.4.27.tar.gz
 https://github.com/johnsonjh/OpenVi/archive/refs/tags/7.5.28.tar.gz
 https://github.com/johnsonjh/OpenVi/archive/refs/tags/7.5.29.tar.gz
 https://github.com/johnsonjh/OpenVi/archive/refs/tags/7.6.30.tar.gz
+https://github.com/jonas/tig/archive/refs/tags/tig-2.5.11.tar.gz
 https://github.com/jonas/tig/archive/refs/tags/tig-2.5.8.tar.gz
 https://github.com/jonas/tig/archive/refs/tags/tig-2.5.9.tar.gz
 https://github.com/joncampbell123/dosbox-x/archive/refs/tags/dosbox-x-v2023.10.06.tar.gz
@@ -4134,6 +4135,7 @@ https://www.crufty.net/ftp/pub/sjg/bmake-20240909.tar.gz
 https://www.crufty.net/ftp/pub/sjg/bmake-20240921.tar.gz
 https://www.crufty.net/ftp/pub/sjg/bmake-20241124.tar.gz
 https://www.crufty.net/ftp/pub/sjg/bmake-20250120.tar.gz
+https://www.crufty.net/ftp/pub/sjg/bmake-20250125.tar.gz
 https://www.eecis.udel.edu/~ntp/ntp_spool/ntp4/ntp-4.2/ntp-4.2.8p15.tar.gz
 https://www.freedesktop.org/software/colord/releases/colord-1.4.6.tar.xz
 https://www.freedesktop.org/software/fontconfig/release/fontconfig-2.14.2.tar.xz

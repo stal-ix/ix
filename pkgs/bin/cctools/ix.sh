@@ -63,3 +63,7 @@ EOF
 --with-sysroot=${OSX_SDK}
 {% endif %}
 {% endblock %}
+
+{% block setup_target_flags %}
+export CTRFLAGS="-I${BSD_HEADERS} ${CTRFLAGS}"
+{% endblock %}
