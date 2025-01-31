@@ -14,3 +14,7 @@ lib/c++
 BUILD_TESTS=OFF
 ENABLE_WERROR=OFF
 {% endblock %}
+
+{% block build_flags %}
+wrap_cc
+{% endblock %}
