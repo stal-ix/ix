@@ -19,6 +19,7 @@ lib/drm
 lib/cap
 lib/ffi
 lib/usb
+lib/alsa
 lib/exif
 lib/glib
 lib/xslt
