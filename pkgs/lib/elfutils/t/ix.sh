@@ -49,10 +49,11 @@ FNM_EXTMATCH=0
 crc32
 {% endblock %}
 
-{% block cpp_includes %}
-${PWD}
-{% endblock %}
-
 {% block make_flags %}
 READELF=true
+{% endblock %}
+
+{% block setup_target_flags %}
+# stack
+export CTRFLAGS="${CPPFLAGS} ${CTRFLAGS}"
 {% endblock %}
