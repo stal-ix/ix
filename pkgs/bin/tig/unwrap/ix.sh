@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://github.com/jonas/tig/archive/refs/tags/tig-2.5.9.tar.gz
-sha:f759ec005bb918cab224df7e2a538b55b38f79762e925c359c13bfe2bc8fe48b
+https://github.com/jonas/tig/archive/refs/tags/tig-2.5.11.tar.gz
+sha:f54f720378c4105a5d3df257e59386b2bd892bd01437f2c5769bd1813300d0b3
 {% endblock %}
 
 {% block bld_libs %}
