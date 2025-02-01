@@ -39,10 +39,6 @@ unistd.h
 fcntl.h
 {% endblock %}
 
-{% block cpp_includes %}
-${PWD}/include
-{% endblock %}
-
 {% block patch %}
 sed -e 's|return NULL;|return 0;|' -i src/dos/dos_programs.cpp
 {% endblock %}
