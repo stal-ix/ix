@@ -16,10 +16,6 @@ lib/qpack/ls
 lib/bsd/overlay
 {% endblock %}
 
-{% block cpp_includes %}
-${PWD}
-{% endblock %}
-
 {% block setup_target_flags %}
 export CXXFLAGS="-std=c++20 ${CXXFLAGS}"
 {% endblock %}
