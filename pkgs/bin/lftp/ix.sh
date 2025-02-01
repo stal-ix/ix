@@ -24,21 +24,11 @@ bld/bison
 bld/gettext
 {% endblock %}
 
-{% block cpp_includes %}
-${PWD}/lib
-${PWD}/trio
-{% endblock %}
-
 {% block cpp_defines %}
 error=ix_error
 {% endblock %}
 
-{% block cpp_missing %}
-${PWD}/lib/config.h
-{% endblock %}
-
 {% block patch %}
->lib/config.h
 >lib/unistr/u8-uctomb-aux.c
 sed -e 's|? 1 ; -1|? 1 : -1|' -i trio/trionan.c
 {% endblock %}
