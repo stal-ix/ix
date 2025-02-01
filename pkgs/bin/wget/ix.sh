@@ -28,10 +28,6 @@ bld/auto/archive
 _GNU_SOURCE=1
 {% endblock %}
 
-{% block cpp_includes %}
-${PWD}/lib
-{% endblock %}
-
 {% block c_rename_symbol %}
 # conflicts with gnutls
 glthread_once_multithreaded
