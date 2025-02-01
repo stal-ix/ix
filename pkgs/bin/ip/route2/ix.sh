@@ -31,10 +31,6 @@ rm -rf include/uapi
 sh ./configure --prefix=${out}
 {% endblock %}
 
-{% block cpp_includes %}
-${PWD}/include
-{% endblock %}
-
 {% block cpp_defines %}
 __UAPI_DEF_IN6_ADDR=0
 {% endblock %}
