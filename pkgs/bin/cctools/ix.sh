@@ -65,5 +65,7 @@ EOF
 {% endblock %}
 
 {% block setup_target_flags %}
+{% if linux %}
 export CTRFLAGS="-I${BSD_HEADERS} ${CTRFLAGS}"
+{% endif %}
 {% endblock %}
