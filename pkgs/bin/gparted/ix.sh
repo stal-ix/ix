@@ -12,6 +12,8 @@ lib/glib
 lib/intl
 lib/parted
 lib/gtk/3/mm
+# libparted.a broken
+lib/build/muldefs
 {% endblock %}
 
 {% block bld_tool %}
