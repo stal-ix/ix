@@ -14,6 +14,8 @@ lib/z/adler
 cd contrib/minizip
 {% endblock %}
 
-{% block cpp_missing %}
-zconf.h
+{% block patch %}
+(base64 -d | patch -p1) << EOF
+{% include 'zlib-1.2.8-minizip-include.patch/base64' %}
+EOF
 {% endblock %}

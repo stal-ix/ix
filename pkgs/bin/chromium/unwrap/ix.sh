@@ -49,6 +49,7 @@ lib/sqlite/3
 lib/json/cpp
 lib/freetype
 lib/harfbuzz
+lib/mini/zip
 lib/dbus/glib
 lib/pci/utils
 lib/xiph/flac
