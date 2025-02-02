@@ -172,11 +172,12 @@ sed -i -e 's/\<xmlMalloc\>/malloc/' -e 's/\<xmlFree\>/free/' \
     third_party/libxml/chromium/*.cc \
     third_party/maldoca/src/maldoca/ole/oss_utils.h
 
-#sed -e 's|deque_->size()|deque_->Size()|' \
-#    -i net/third_party/quiche/src/quiche/quic/core/quic_interval_deque.h
-
 sed -e 's|int close|int close_xxx|' \
     -i base/files/scoped_file_linux.cc
+
+find content/common -type f | while read l; do
+    sed -e 's|setproctitle|SetProcTitle|' -i ${l}
+done
 {% endblock %}
 
 {#
@@ -297,9 +298,4 @@ chrome
 {{super()}}
 sed -e 's|/usr/bin/brotli|'$(which brotli)'|' \
     -i ${tmp}/obj/toolchain.ninja
-{% endblock %}
-
-{% block setup_target_flags %}
-{{super()}}
-export CPPFLAGS=$(echo "${CPPFLAGS}" | tr ' ' '\n' | grep -v vulkan-headers | grep -v lib-mesa | tr '\n' ' ')
 {% endblock %}
