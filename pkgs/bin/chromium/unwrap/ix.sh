@@ -28,6 +28,7 @@ lib/webp
 lib/jpeg
 lib/dbus
 lib/avif
+lib/curl
 lib/event
 lib/dlfcn
 lib/pango
