@@ -23,10 +23,6 @@ rawmemchr
 bld/fake(tool_name=groff)
 {% endblock %}
 
-{% block cpp_includes %}
-${PWD}/lib
-{% endblock %}
-
 {% block configure_flags %}
 --enable-relocatable
 {% endblock %}

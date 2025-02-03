@@ -31,6 +31,7 @@ export CFLAGS="-Wno-implicit-function-declaration ${CFLAGS}"
 {% block setup_target_flags %}
 {{super()}}
 export CFLAGS="-Wno-implicit-function-declaration ${CFLAGS}"
+export CTRFLAGS="-I${CPPFLAGS} ${CTRFLAGS}"
 {% endblock %}
 
 {% block make_no_thrs %}{% endblock %}

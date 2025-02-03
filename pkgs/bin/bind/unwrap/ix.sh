@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://github.com/isc-projects/bind9/archive/refs/tags/v9.20.4.tar.gz
-sha:b76cfe98abbaa9ed2d5814eece780a36aa0da42aa43961627a0b3b8cb364c31b
+https://github.com/isc-projects/bind9/archive/refs/tags/v9.20.5.tar.gz
+sha:b3cddaab40b928180c486cf5a48583e48d36e950851f039f3a246f0e22177788
 {% endblock %}
 
 {% block bld_libs %}

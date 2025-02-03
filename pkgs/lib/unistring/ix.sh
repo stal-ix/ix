@@ -14,10 +14,6 @@ lib/iconv
 sh autogen.sh --skip-gnulib
 {% endblock %}
 
-{% block cpp_includes %}
-${PWD}/lib
-{% endblock %}
-
 {% block c_rename_symbol %}
 locale_charset
 {% endblock %}

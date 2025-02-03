@@ -10,3 +10,10 @@ lib/vulkan/headers
 lib/vulkan/loader
 {{super()}}
 {% endblock %}
+
+{% block patch %}
+{{super()}}
+(base64 -d | patch -p1) << EOF
+{% include 'add-av_stream_get_first_dts-for-chromium.patch/base64' %}
+EOF
+{% endblock %}

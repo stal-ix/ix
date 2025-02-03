@@ -1,13 +1,6 @@
-{% extends '//die/gen.sh' %}
+{% extends '//die/hub.sh' %}
 
 {% block run_deps %}
-bin/sched(delay={{delay}})
-{% endblock %}
-
-{% block install %}
-cd ${out}; mkdir -p etc/sched/{{delay}}; cd etc/sched/{{delay}}
-
-cat << EOF > builddir.sh
-/bin/flock -nx /ix /bin/sh -c 'mv /ix/build/* /ix/trash/'
-EOF
+bin/sched
+bin/sched/builddir/scripts
 {% endblock %}

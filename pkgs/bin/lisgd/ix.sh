@@ -11,7 +11,3 @@ lib/input
 lib/wayland
 lib/shim/x11
 {% endblock %}
-
-{% block cpp_includes %}
-${PWD}
-{% endblock %}

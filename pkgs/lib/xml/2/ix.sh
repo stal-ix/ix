@@ -1,11 +1,5 @@
-{% extends 't/ix.sh' %}
+{% extends '//die/hub.sh' %}
 
-{% block cpp_defines %}
-{{super()}}
-LIBXML_STATIC=1
-{% endblock %}
-
-{% block env %}
-export COFLAGS="--with-libxml2-prefix=${out} \${COFLAGS}"
-export CPPFLAGS="-DLIBXML_STATIC=1 -I${out}/include/libxml2 \${CPPFLAGS}"
+{% block lib_deps %}
+lib/xml/2/{{libxml_ver or 'latest'}}
 {% endblock %}

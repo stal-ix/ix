@@ -19,10 +19,6 @@ MANDIR="${out}/man"
 UNIX
 {% endblock %}
 
-{% block cpp_includes %}
-${PWD}
-{% endblock %}
-
 {% block make_target %}
 zips
 {% endblock %}

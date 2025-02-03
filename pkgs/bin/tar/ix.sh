@@ -13,7 +13,3 @@ lib/intl
 lib/iconv
 lib/bzip/2
 {% endblock %}
-
-{% block cpp_includes %}
-${PWD}/gnu
-{% endblock %}
