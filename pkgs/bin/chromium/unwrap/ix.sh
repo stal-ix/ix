@@ -301,3 +301,8 @@ chrome
 sed -e 's|/usr/bin/brotli|'$(which brotli)'|' \
     -i ${tmp}/obj/toolchain.ninja
 {% endblock %}
+
+{% block build1 %}
+ninja -C {{ninja_build_dir}} --verbose -n chrome
+exit 1
+{% endblock %}
