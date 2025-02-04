@@ -258,6 +258,7 @@ sysroot="/"
 treat_warnings_as_errors=false
 use_allocator_shim=false
 use_atk=false
+use_glib=false
 use_aura=true
 use_cfi_icall=false
 use_cups=false
