@@ -59,6 +59,7 @@ lib/fontconfig
 lib/xkb/common
 lib/shim/extra
 lib/bsd/overlay
+lib/build/muldefs
 lib/shim/fake(lib_name=atomic)
 {% endblock %}
 
