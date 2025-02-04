@@ -1,11 +1,11 @@
 {% extends '//die/go/build.sh' %}
 
 {% block go_url %}
-https://github.com/pg83/gg/archive/612a55279ddd0fc96b82ad310798be08153a57c2.zip
+https://github.com/pg83/gg/archive/9b25bd18cc9528933fc9ba3ff483ad3ac3136f31.zip
 {% endblock %}
 
 {% block go_sha %}
-967b45a61426cfd10ebe3831e9faf405b90965104e2ef016b2375eb581089400
+9be20e9a8a58d2be8637e12efadf67557bbcefebb7198f98f841b95bf6c1589d
 {% endblock %}
 
 {% block go_tool %}
