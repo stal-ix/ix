@@ -2160,6 +2160,7 @@ https://github.com/knik0/faad2/archive/refs/tags/2.11.1.tar.gz
 https://github.com/kondrak/vkQuake2/archive/refs/tags/1.5.8.tar.gz
 https://github.com/koverstreet/bcachefs-tools/archive/refs/tags/v1.11.0.tar.gz
 https://github.com/koverstreet/bcachefs-tools/archive/refs/tags/v1.13.0.tar.gz
+https://github.com/koverstreet/bcachefs-tools/archive/refs/tags/v1.20.0.tar.gz
 https://github.com/kovidgoyal/kitty/archive/refs/tags/v0.25.0.tar.gz
 https://github.com/kovidgoyal/kitty/archive/refs/tags/v0.31.0.tar.gz
 https://github.com/kraxarn/spotify-qt/archive/refs/tags/v3.9.tar.gz
@@ -2425,6 +2426,7 @@ https://github.com/lzfse/lzfse/archive/refs/tags/lzfse-1.0.tar.gz
 https://github.com/magicant/yash/releases/download/2.55/yash-2.55.tar.xz
 https://github.com/magicant/yash/releases/download/2.56.1/yash-2.56.1.tar.xz
 https://github.com/magicant/yash/releases/download/2.57/yash-2.57.tar.xz
+https://github.com/magicant/yash/releases/download/2.58.1/yash-2.58.1.tar.xz
 https://github.com/magicant/yash/releases/download/2.58/yash-2.58.tar.xz
 https://github.com/managarm/mlibc/archive/refs/tags/3.0.0-rc2.tar.gz
 https://github.com/maratik123/runsvdir/archive/0cbddbc386a66f9bbec1be0e1277d6ad85224eb2.zip
@@ -3310,6 +3312,7 @@ https://github.com/vcrhonek/hwdata/archive/refs/tags/v0.387.tar.gz
 https://github.com/vcrhonek/hwdata/archive/refs/tags/v0.388.tar.gz
 https://github.com/vcrhonek/hwdata/archive/refs/tags/v0.389.tar.gz
 https://github.com/vcrhonek/hwdata/archive/refs/tags/v0.391.tar.gz
+https://github.com/vcrhonek/hwdata/archive/refs/tags/v0.392.tar.gz
 https://github.com/vector-of-bool/cmrc/archive/refs/tags/2.0.1.tar.gz
 https://github.com/videolabs/libmicrodns/archive/refs/tags/0.2.0.tar.gz
 https://github.com/videolan/dav1d/archive/refs/tags/1.2.1.tar.gz
