@@ -178,6 +178,12 @@ sed -i -e 's/\<xmlMalloc\>/malloc/' -e 's/\<xmlFree\>/free/' \
 sed -e 's|int close|int close_xxx|' \
     -i base/files/scoped_file_linux.cc
 
+sed -e 's|"localtime"|"localtime_xxx"|' \
+    -e 's|"localtime64"|"localtime64_xxx"|' \
+    -e 's|"localtime_r"|"localtime_r_xxx"|' \
+    -e 's|"localtime64_r"|"localtime64_r_xxx"|' \
+    -i sandbox/linux/services/libc_interceptor.cc
+
 find content/common -type f | while read l; do
     sed -e 's|setproctitle|SetProcTitle|' -i ${l}
 done
@@ -223,6 +229,7 @@ enable_nacl=false
 enable_nacl_nonsfi=false
 enable_nocompile_tests=false
 enable_pdf=false
+enable_screen_ai_service=false
 enable_perfetto_unittests=false
 enable_plugins=false
 enable_ppapi=false
