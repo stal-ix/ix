@@ -1,8 +1,8 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://gitlab.freedesktop.org/libinput/libei/-/archive/1.3.0/libei-1.3.0.tar.bz2
-sha:167692196e735e6141dd7027e294fd9f99a4ce7cf0c797b5051764ffe147ec80
+https://gitlab.freedesktop.org/libinput/libei/-/archive/1.3.901/libei-1.3.901.tar.bz2
+sha:ecf41a071a38d712da633b579d8afbbf2ca134cbe0ab2162172f79941ae39e81
 {% endblock %}
 
 {% block lib_deps %}
