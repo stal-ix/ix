@@ -88,6 +88,27 @@ def have_objs(args):
 def link_lib(x, objs):
     exec(['liblink'] + [x] + objs)
 
+def is_link_lib(sa, raw_args):
+    if 'chrome' in raw_args:
+        return False
+
+    if '-shared' in raw_args:
+        return True
+
+    if '--shared' in raw_args:
+        return True
+
+    if '-bundle' in raw_args:
+        return True
+
+    if '--soname' in sa:
+        return True
+
+    if '-Wl,-soname' in sa:
+        return True
+
+    return False
+
 def link(objs, args):
     for x in args:
         if '-Wl' in x:
@@ -134,7 +155,7 @@ def main():
         return exec(args)
     elif '-P' in args or '-E' in args:
         return exec(['clang-cpp'] + args[1:])
-    elif '-shared' in sa or '--soname' in sa or '-bundle' in raw_args:
+    elif is_link_lib(sa, raw_args):
         return link(list(flt_objs(args)), args)
     elif have_objs(args):
         if '-rdynamic' in sa or '-export-dynamic' in sa:

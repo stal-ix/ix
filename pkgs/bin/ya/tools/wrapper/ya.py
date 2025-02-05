@@ -13,7 +13,6 @@ def which(x):
 def it_extra_d(args):
     yield 'USE_PREBUILT_TOOLS', 'no'
     yield 'OPENSOURCE', 'yes'
-    yield 'DISABLE_YMAKE_CONF_CUSTOMIZATION', 'yes'
     yield 'OS_SDK', 'local'
     yield 'BUILD_PYTHON3_BIN', sys.executable
     yield 'BUILD_PYTHON_BIN', sys.executable

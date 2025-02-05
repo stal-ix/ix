@@ -1,11 +1,19 @@
 {% extends '//die/rust/cargo.sh' %}
 
 {% block cargo_url %}
-https://github.com/squidowl/halloy/archive/refs/tags/2024.14.tar.gz
+https://github.com/squidowl/halloy/archive/refs/tags/2025.1.tar.gz
 {% endblock %}
 
 {% block cargo_sha %}
-b655b20370d6b58c36a0e8207fc5fa153aa7ee84a90620968cd4ceaed87e5f63
+c402e6dce7f078a314fbeedac8f30c233a7d6065ad08cac5221e5e98ee9c5013
+{% endblock %}
+
+{% block rustc_ver %}
+83
+{% endblock %}
+
+{% block cargoc_ver %}
+80
 {% endblock %}
 
 {% block bld_libs %}

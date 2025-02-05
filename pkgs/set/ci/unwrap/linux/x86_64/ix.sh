@@ -811,7 +811,6 @@ bin/psmisc
 bin/dunst
 bin/perf
 bin/numactl
-bin/gold
 bin/ld
 bin/ar
 bin/aria/2

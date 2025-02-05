@@ -59,6 +59,7 @@ lib/fontconfig
 lib/xkb/common
 lib/shim/extra
 lib/bsd/overlay
+lib/build/muldefs
 lib/shim/fake(lib_name=atomic)
 {% endblock %}
 
@@ -257,12 +258,11 @@ sysroot="/"
 treat_warnings_as_errors=false
 use_allocator_shim=false
 use_atk=false
+use_glib=false
 use_aura=true
 use_cfi_icall=false
 use_cups=false
 use_custom_libcxx=false
-use_dbus=false
-use_glib=false
 use_gnome_keyring=false
 use_gtk=false
 use_kerberos=false
@@ -300,4 +300,9 @@ chrome
 {{super()}}
 sed -e 's|/usr/bin/brotli|'$(which brotli)'|' \
     -i ${tmp}/obj/toolchain.ninja
+{% endblock %}
+
+{% block build1 %}
+ninja -C {{ninja_build_dir}} --verbose -n chrome
+exit 1
 {% endblock %}
