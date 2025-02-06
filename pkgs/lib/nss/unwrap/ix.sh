@@ -1,31 +1,15 @@
 {% extends '//lib/nss/t/ix.sh' %}
 
-{% block libs %}
-libfreebl
-libfreeblpriv
-libnss
-libnssutil
-libsmime
-libsoftokn
-libssl
-{% endblock %}
-
-{% block postinstall %}
+{% block install %}
 {{super()}}
+rm ${out}/lib/*TOC ${out}/lib/*.so
 cp -R ../dist/public ${out}/include
 cd ${out}/lib
-rm libssl3.a
-mv libssl.a libssl3.a
-rm libsoftokn3.a libsoftokn.a
-mv libsoftokn_static.a libsoftokn3.a
-rm libfreebl.a libfreebl3.a
-mv libfreebl_static.a libfreebl3.a
-mv libnss_static.a libnss3.a
+mv libfreebl_static.a libfreebl.a
+mv libnss_static.a libnss.a
 mv libnsssysinit_static.a libnsssysinit.a
 mv libpk11wrap_static.a libpk11wrap.a
-mv libnssutil3.a libnssutil.a
-rm libfreeblpriv3.a
-rm libsmime3.a
+mv libsoftokn_static.a libsoftokn.a
 {% endblock %}
 
 {% block env %}
