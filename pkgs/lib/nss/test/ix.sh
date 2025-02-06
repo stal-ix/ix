@@ -3,7 +3,6 @@
 {% block bld_libs %}
 lib/c
 lib/nss
-lib/nss/dl
 {% endblock %}
 
 {% block name %}
