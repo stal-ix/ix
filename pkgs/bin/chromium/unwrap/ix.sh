@@ -182,6 +182,7 @@ sed -e 's|"localtime"|"localtime_xxx"|' \
     -e 's|"localtime64"|"localtime64_xxx"|' \
     -e 's|"localtime_r"|"localtime_r_xxx"|' \
     -e 's|"localtime64_r"|"localtime64_r_xxx"|' \
+    -e 's|int getaddrinfo|int getaddrinfo_xxx|' \
     -i sandbox/linux/services/libc_interceptor.cc
 
 find content/common -type f | while read l; do
@@ -301,6 +302,7 @@ v8_use_external_startup_data=false
 
 {% block ninja_build_targets %}
 chrome
+chrome_sandbox
 {% endblock %}
 
 {% block configure %}
