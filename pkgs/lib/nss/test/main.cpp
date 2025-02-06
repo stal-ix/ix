@@ -5,8 +5,9 @@
 #include <prinit.h>
 #include <prtime.h>
 #include <secmod.h>
+#include <iostream>
 
 int main() {
     PR_Init(PR_USER_THREAD, PR_PRIORITY_NORMAL, 0);
-    NSS_NoDB_Init(nullptr);
+    std::cerr << (int)NSS_NoDB_Init(nullptr) << std::endl;
 }
