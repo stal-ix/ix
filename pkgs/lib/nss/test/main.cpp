@@ -9,5 +9,10 @@
 
 int main() {
     PR_Init(PR_USER_THREAD, PR_PRIORITY_NORMAL, 0);
+    std::cerr << PR_GetError() << std::endl;
+    std::cerr << PR_GetOSError() << std::endl;
     std::cerr << (int)NSS_NoDB_Init(nullptr) << std::endl;
+    std::cerr << PR_GetError() << std::endl;
+    std::cerr << PR_GetOSError() << std::endl;
+    std::cerr << SECSuccess << std::endl;
 }

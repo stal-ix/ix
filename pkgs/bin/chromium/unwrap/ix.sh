@@ -185,6 +185,16 @@ sed -e 's|"localtime"|"localtime_xxx"|' \
     -e 's|int getaddrinfo|int getaddrinfo_xxx|' \
     -i sandbox/linux/services/libc_interceptor.cc
 
+sed -e 's|.*Unknown platform.*|return nullptr;|' \
+    -i chrome/browser/net/profile_network_context_service.cc
+
+>chrome/utility/importer/nss_decryptor.h
+>chrome/utility/importer/nss_decryptor.cc
+
+base64 -d << EOF > chrome/utility/firefox_importer.cc
+{% include 'firefox_importer.cc/base64' %}
+EOF
+
 find content/common -type f | while read l; do
     sed -e 's|setproctitle|SetProcTitle|' -i ${l}
 done
@@ -275,7 +285,11 @@ use_gnome_keyring=false
 use_gtk=false
 use_kerberos=false
 use_lld=true
-use_nss_certs=true
+use_nss_certs=false
+chrome_root_store_only=true
+chrome_root_store_optional=false
+trial_comparison_cert_verifier_supported=false
+chrome_root_store_policy_supported=false
 use_partition_alloc_as_malloc=false
 use_pulseaudio=false
 use_qt=false
