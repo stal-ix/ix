@@ -46,6 +46,7 @@ lib/ffmpeg
 lib/lcms/2
 lib/opengl
 lib/wayland
+lib/nss/init
 lib/sqlite/3
 lib/json/cpp
 lib/freetype
@@ -59,7 +60,6 @@ lib/fontconfig
 lib/xkb/common
 lib/shim/extra
 lib/bsd/overlay
-lib/build/muldefs
 lib/shim/fake(lib_name=atomic)
 {% endblock %}
 
@@ -188,8 +188,6 @@ sed -e 's|"localtime"|"localtime_xxx"|' \
 find content/common -type f | while read l; do
     sed -e 's|setproctitle|SetProcTitle|' -i ${l}
 done
-
-sed -e 's|FATAL|ERROR|' -i crypto/nss_util.cc
 {% endblock %}
 
 {#
@@ -317,7 +315,15 @@ sed -e 's|/usr/bin/brotli|'$(which brotli)'|' \
     -i ${tmp}/obj/toolchain.ninja
 {% endblock %}
 
-{% block build1 %}
-ninja -C {{ninja_build_dir}} --verbose -n chrome
-exit 1
+{% block c_rename_symbol %}
+SHA224_Update
+SHA256_Update
+SHA384_Update
+SHA512_Update
+CMAC_Init
+CMAC_Update
+HMAC_Init
+HMAC_Update
+MD5_Update
+SHA1_Update
 {% endblock %}
