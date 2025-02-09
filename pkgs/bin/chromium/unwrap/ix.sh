@@ -60,6 +60,7 @@ lib/fontconfig
 lib/xkb/common
 lib/shim/extra
 lib/bsd/overlay
+lib/build/errlimit
 lib/shim/fake(lib_name=atomic)
 {% endblock %}
 
