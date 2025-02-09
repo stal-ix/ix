@@ -1,22 +1,15 @@
 {% extends '//lib/nss/t/ix.sh' %}
 
-{% block libs %}
-libfreebl
-libfreeblpriv
-libnss
-libnssutil
-libsmime
-libsoftokn
-libssl
-{% endblock %}
-
-{% block postinstall %}
-rm ${out}/lib/*TOC ${out}/lib/*_static.a
+{% block install %}
 {{super()}}
+rm ${out}/lib/*TOC ${out}/lib/*.so
 cp -R ../dist/public ${out}/include
-{% for x in self.libs().split() %}
-mv ${out}/lib/{{x}}3.a ${out}/lib/{{x}}.a
-{% endfor %}
+cd ${out}/lib
+mv libfreebl_static.a libfreebl.a
+mv libnss_static.a libnss.a
+mv libnsssysinit_static.a libnsssysinit.a
+mv libpk11wrap_static.a libpk11wrap.a
+mv libsoftokn_static.a libsoftokn.a
 {% endblock %}
 
 {% block env %}

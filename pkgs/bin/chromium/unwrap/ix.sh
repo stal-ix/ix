@@ -178,9 +178,18 @@ sed -i -e 's/\<xmlMalloc\>/malloc/' -e 's/\<xmlFree\>/free/' \
 sed -e 's|int close|int close_xxx|' \
     -i base/files/scoped_file_linux.cc
 
+sed -e 's|"localtime"|"localtime_xxx"|' \
+    -e 's|"localtime64"|"localtime64_xxx"|' \
+    -e 's|"localtime_r"|"localtime_r_xxx"|' \
+    -e 's|"localtime64_r"|"localtime64_r_xxx"|' \
+    -e 's|int getaddrinfo|int getaddrinfo_xxx|' \
+    -i sandbox/linux/services/libc_interceptor.cc
+
 find content/common -type f | while read l; do
     sed -e 's|setproctitle|SetProcTitle|' -i ${l}
 done
+
+sed -e 's|FATAL|ERROR|' -i crypto/nss_util.cc
 {% endblock %}
 
 {#
@@ -223,6 +232,7 @@ enable_nacl=false
 enable_nacl_nonsfi=false
 enable_nocompile_tests=false
 enable_pdf=false
+enable_screen_ai_service=false
 enable_perfetto_unittests=false
 enable_plugins=false
 enable_ppapi=false
@@ -268,6 +278,10 @@ use_gtk=false
 use_kerberos=false
 use_lld=true
 use_nss_certs=true
+#chrome_root_store_only=true
+#chrome_root_store_optional=false
+#trial_comparison_cert_verifier_supported=false
+#chrome_root_store_policy_supported=false
 use_partition_alloc_as_malloc=false
 use_pulseaudio=false
 use_qt=false
@@ -294,6 +308,7 @@ v8_use_external_startup_data=false
 
 {% block ninja_build_targets %}
 chrome
+chrome_sandbox
 {% endblock %}
 
 {% block configure %}

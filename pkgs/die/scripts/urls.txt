@@ -157,6 +157,7 @@ https://astron.com/pub/tcsh/tcsh-6.24.11.tar.gz
 https://astron.com/pub/tcsh/tcsh-6.24.12.tar.gz
 https://astron.com/pub/tcsh/tcsh-6.24.13.tar.gz
 https://astron.com/pub/tcsh/tcsh-6.24.14.tar.gz
+https://astron.com/pub/tcsh/tcsh-6.24.15.tar.gz
 https://bearssl.org/bearssl-0.6.tar.gz
 https://bitbucket.org/multicoreware/x265_git/downloads/x265_3.5.tar.gz
 https://bitbucket.org/multicoreware/x265_git/downloads/x265_3.6.tar.gz
@@ -1847,6 +1848,7 @@ https://github.com/golang/go/archive/refs/tags/go1.23.1.tar.gz
 https://github.com/golang/go/archive/refs/tags/go1.23.2.tar.gz
 https://github.com/golang/go/archive/refs/tags/go1.23.3.tar.gz
 https://github.com/golang/go/archive/refs/tags/go1.23.4.tar.gz
+https://github.com/golang/go/archive/refs/tags/go1.23.6.tar.gz
 https://github.com/google/brotli/archive/refs/tags/v1.1.0.tar.gz
 https://github.com/google/crc32c/archive/refs/tags/1.1.2.tar.gz
 https://github.com/google/double-conversion/archive/refs/tags/v3.3.0.tar.gz
@@ -2669,6 +2671,7 @@ https://github.com/pg83/gg/archive/3a99d108518d46ee46732ef7b7b62e46df70440e.zip
 https://github.com/pg83/gg/archive/556fe3d54160bb266248171f7d603fd1ad2c37ea.zip
 https://github.com/pg83/gg/archive/612a55279ddd0fc96b82ad310798be08153a57c2.zip
 https://github.com/pg83/gg/archive/9499cb7d4506596f99e7888bd97901b8d0579d8f.zip
+https://github.com/pg83/gg/archive/9b25bd18cc9528933fc9ba3ff483ad3ac3136f31.zip
 https://github.com/pg83/gg/archive/a09345e9e07e71e32b0c1585072eb6b9ac594642.zip
 https://github.com/pg83/heirloom/archive/a47c4acf9fb43b89f9fb0afdcf9008121d50d806.zip
 https://github.com/pg83/heirloom/archive/refs/tags/v1.tar.gz
@@ -2877,6 +2880,7 @@ https://github.com/randombit/botan/archive/refs/tags/3.4.0.tar.gz
 https://github.com/randombit/botan/archive/refs/tags/3.5.0.tar.gz
 https://github.com/randombit/botan/archive/refs/tags/3.6.0.tar.gz
 https://github.com/randombit/botan/archive/refs/tags/3.6.1.tar.gz
+https://github.com/randombit/botan/archive/refs/tags/3.7.0.tar.gz
 https://github.com/raphamorim/rio/archive/refs/tags/v0.0.34.tar.gz
 https://github.com/raygard/wak/archive/dca8c09e9e20581330dd930b0219b07f431f2388.tar.gz
 https://github.com/redis/hiredis/archive/refs/tags/v1.2.0.tar.gz
@@ -3536,6 +3540,7 @@ https://gitlab.freedesktop.org/libinput/libei/-/archive/1.1.0/libei-1.1.0.tar.bz
 https://gitlab.freedesktop.org/libinput/libei/-/archive/1.2.0/libei-1.2.0.tar.bz2
 https://gitlab.freedesktop.org/libinput/libei/-/archive/1.2.1/libei-1.2.1.tar.bz2
 https://gitlab.freedesktop.org/libinput/libei/-/archive/1.3.0/libei-1.3.0.tar.bz2
+https://gitlab.freedesktop.org/libinput/libei/-/archive/1.3.901/libei-1.3.901.tar.bz2
 https://gitlab.freedesktop.org/libinput/libinput/-/archive/1.25.0/libinput-1.25.0.tar.bz2
 https://gitlab.freedesktop.org/libinput/libinput/-/archive/1.26.0/libinput-1.26.0.tar.bz2
 https://gitlab.freedesktop.org/libinput/libinput/-/archive/1.26.1/libinput-1.26.1.tar.bz2
@@ -3858,6 +3863,7 @@ https://memcached.org/files/memcached-1.6.31.tar.gz
 https://memcached.org/files/memcached-1.6.32.tar.gz
 https://memcached.org/files/memcached-1.6.33.tar.gz
 https://memcached.org/files/memcached-1.6.35.tar.gz
+https://memcached.org/files/memcached-1.6.36.tar.gz
 https://mesa.freedesktop.org/archive/mesa-23.1.9.tar.xz
 https://mesa.freedesktop.org/archive/mesa-23.2.1.tar.xz
 https://mesa.freedesktop.org/archive/mesa-23.3.1.tar.xz
@@ -3977,6 +3983,7 @@ https://poppler.freedesktop.org/poppler-24.08.0.tar.xz
 https://poppler.freedesktop.org/poppler-24.09.0.tar.xz
 https://poppler.freedesktop.org/poppler-24.10.0.tar.xz
 https://poppler.freedesktop.org/poppler-24.11.0.tar.xz
+https://poppler.freedesktop.org/poppler-25.02.0.tar.xz
 https://pwmt.org/projects/zathura-djvu/download/zathura-djvu-0.2.10.tar.xz
 https://pwmt.org/projects/zathura-djvu/download/zathura-djvu-0.2.9.tar.xz
 https://pwmt.org/projects/zathura-pdf-poppler/download/zathura-pdf-poppler-0.3.1.tar.xz
