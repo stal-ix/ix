@@ -60,6 +60,7 @@ lib/fontconfig
 lib/xkb/common
 lib/shim/extra
 lib/bsd/overlay
+lib/build/muldefs
 lib/build/errlimit
 lib/shim/fake(lib_name=atomic)
 {% endblock %}
@@ -327,4 +328,11 @@ HMAC_Init
 HMAC_Update
 MD5_Update
 SHA1_Update
+{% endblock %}
+
+{% block install %}
+base64 -d << EOF > install.sh
+{% include 'install.sh/base64' %}
+EOF
+sh install.sh ${tmp}/obj ${out}
 {% endblock %}
