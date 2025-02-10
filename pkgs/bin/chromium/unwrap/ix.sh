@@ -45,6 +45,7 @@ lib/brotli
 lib/ffmpeg
 lib/lcms/2
 lib/opengl
+lib/curl/dl
 lib/wayland
 lib/nss/init
 lib/sqlite/3
@@ -59,8 +60,11 @@ lib/xiph/speex
 lib/fontconfig
 lib/xkb/common
 lib/shim/extra
+lib/wayland/dl
+lib/mesa/egl/dl
 lib/bsd/overlay
 lib/build/muldefs
+lib/mesa/glesv2/dl
 lib/build/errlimit
 lib/shim/fake(lib_name=atomic)
 {% endblock %}
