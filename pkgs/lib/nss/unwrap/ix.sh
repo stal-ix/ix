@@ -10,6 +10,7 @@ mv libnss_static.a libnss.a
 mv libnsssysinit_static.a libnsssysinit.a
 mv libpk11wrap_static.a libpk11wrap.a
 mv libsoftokn_static.a libsoftokn.a
+cp ${tmp}/lib/libnssckbi.a ./
 {% endblock %}
 
 {% block env %}

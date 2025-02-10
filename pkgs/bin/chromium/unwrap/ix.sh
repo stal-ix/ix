@@ -56,13 +56,16 @@ lib/mini/zip
 lib/dbus/glib
 lib/pci/utils
 lib/xiph/flac
+lib/wayland/dl
 lib/xiph/speex
 lib/fontconfig
 lib/xkb/common
 lib/shim/extra
 lib/wayland/dl
+lib/drivers/3d
 lib/mesa/egl/dl
 lib/bsd/overlay
+lib/nss/nssckbi
 lib/build/muldefs
 lib/mesa/glesv2/dl
 lib/build/errlimit
