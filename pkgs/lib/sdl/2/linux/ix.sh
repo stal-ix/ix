@@ -44,6 +44,7 @@ cd ${out}
 for x in lib/pkgconfig/sdl2.pc bin/sdl2-config; do
     sed -e 's|-l.*sndio.a|-lsndio|'  \
         -e 's|-l-.*sndio |-lsndio |' \
+        -e 's|-l-L.*|-lsndio|' \
         -e 's|prefix}//.*|prefix}/lib|' \
         -i ${x}
 done

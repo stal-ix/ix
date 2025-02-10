@@ -36,3 +36,7 @@ wrap_cc
 mkdir ${out}/lib
 cp ${tmp}/lib/libvk_swiftshader.a ${out}/lib/
 {% endblock %}
+
+{% block env %}
+export SWIFTSHADER_LIB=${out}/lib/libvk_swiftshader.a
+{% endblock %}
