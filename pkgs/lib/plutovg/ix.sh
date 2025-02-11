@@ -1,8 +1,8 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://github.com/sammycage/plutovg/archive/refs/tags/v0.0.11.tar.gz
-sha:f6c34ff2594566e1e7698098653b853cdbc77fafe96021300e65be9d16764f64
+https://github.com/sammycage/plutovg/archive/refs/tags/v0.0.12.tar.gz
+sha:b26b01f4540259784955d224a6adf91f4cff5f38fb64f6098984bf91df8fbd8f
 {% endblock %}
 
 {% block lib_deps %}
