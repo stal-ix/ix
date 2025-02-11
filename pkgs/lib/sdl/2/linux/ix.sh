@@ -3,11 +3,16 @@
 {% block lib_deps %}
 lib/decor
 lib/sndio
-lib/opengl
+#lib/opengl
 lib/wayland
 lib/xkb/common
 lib/vulkan/loader
 {{super()}}
+{% endblock %}
+
+{% block bld_libs %}
+lib/shim/fake(lib_name=EGL)
+lib/shim/fake/pkg(pkg_name=egl,pkg_ver=100500)
 {% endblock %}
 
 {% block bld_tool %}
@@ -18,7 +23,8 @@ bld/wayland
 {% block cmake_flags %}
 {{super()}}
 SDL_VULKAN=ON
-SDL_OPENGLES=ON
+SDL_OPENGL=OFF
+SDL_OPENGLES=OFF
 SDL_OSS=OFF
 SDL_ALSA=OFF
 SDL_ALSA_SHARED=OFF
