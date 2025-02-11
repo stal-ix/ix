@@ -15,12 +15,9 @@ lib/dbus/dl
 lib/xiph/ogg
 lib/opus/file
 lib/xiph/flac
-#lib/drivers/3d
+lib/drivers/3d
 lib/xiph/vorbis
-lib/vulkan/loader
 bin/quake/1/vk/dl
-lib/vulkan/loader/dl
-lib/swift/shader/driver
 {% endblock %}
 
 {% block bld_tool %}
