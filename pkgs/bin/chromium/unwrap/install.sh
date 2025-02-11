@@ -12,6 +12,7 @@ cp \
     xdg-mime \
     xdg-settings \
     *.pak \
+    *.bin \
     ${2}/bin/bin_chromium/
 
 cp -R locales ${2}/bin/bin_chromium/
