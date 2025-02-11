@@ -2,7 +2,6 @@
 
 {% block lib_deps %}
 lib/wayland/dl
-lib/swift/shader/driver/wl
+lib/wayland/dl/protocols
 lib/swift/shader/driver/dl
-lib/swift/shader/driver/lib
 {% endblock %}

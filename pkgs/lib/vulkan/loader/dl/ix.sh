@@ -1,6 +1,7 @@
 {% extends '//die/dl/fix.sh' %}
 
 {% block lib_deps %}
+lib/dlfcn
 lib/vulkan/loader
 {% endblock %}
 

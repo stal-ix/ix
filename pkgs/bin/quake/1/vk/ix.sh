@@ -25,12 +25,18 @@ lib/swift/shader/driver
 
 {% block bld_tool %}
 bin/glslang
+{% if linux %}
+bin/muslstack
+{% endif %}
 bld/spirv/tools
 {% endblock %}
 
 {% block install %}
 mkdir ${out}/bin
 cp $(find ${tmp} -type f -name vkquake) ${out}/bin/
+{% if linux %}
+muslstack -s 8388608 ${out}/bin/vkquake
+{% endif %}
 {% endblock %}
 
 {% block build_flags %}

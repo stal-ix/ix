@@ -1,5 +1,10 @@
 {% extends '//die/dl/fix.sh' %}
 
+{% block lib_deps %}
+lib/dlfcn
+lib/swift/shader/driver/lib
+{% endblock %}
+
 {% block export_symbols %}
 vk_icdGetInstanceProcAddr
 vk_icdNegotiateLoaderICDInterfaceVersion
@@ -11,5 +16,5 @@ sw_
 {% endblock %}
 
 {% block export_lib %}
-vulkan_lvp
+vulkan_swiftshader
 {% endblock %}

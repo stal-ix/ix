@@ -2,6 +2,7 @@
 
 {% block lib_deps %}
 lib/c
+lib/dlfcn
 {% endblock %}
 
 {% block export_lib %}

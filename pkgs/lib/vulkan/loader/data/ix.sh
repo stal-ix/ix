@@ -4,7 +4,7 @@
 cd ${out}; mkdir -p etc/vulkan/icd.d; cd etc/vulkan/icd.d
 
 # all mesa drivers go there, need better solution
-for x in broadcom freedreno intel lvp panfrost radeon virtio; do
+for x in broadcom freedreno intel lvp panfrost radeon virtio swiftshader; do
     cat << EOF > ${x}_icd.{{target.arch}}.json
 {
     "ICD": {
