@@ -2035,6 +2035,7 @@ https://github.com/intel/thermal_daemon/archive/refs/tags/v2.5.3.tar.gz
 https://github.com/intel/thermal_daemon/archive/refs/tags/v2.5.5.tar.gz
 https://github.com/intel/thermal_daemon/archive/refs/tags/v2.5.7.tar.gz
 https://github.com/intel/thermal_daemon/archive/refs/tags/v2.5.8.tar.gz
+https://github.com/intel/thermal_daemon/archive/refs/tags/v2.5.9.tar.gz
 https://github.com/ipfs/ipget/archive/refs/tags/v0.10.0.tar.gz
 https://github.com/ipfs/ipget/archive/refs/tags/v0.9.2.tar.gz
 https://github.com/iproute2/iproute2/archive/refs/tags/v6.10.0.tar.gz
@@ -2521,6 +2522,7 @@ https://github.com/mkj/dropbear/archive/refs/tags/DROPBEAR_2024.86.tar.gz
 https://github.com/mlichvar/chrony/archive/refs/tags/4.6.1.tar.gz
 https://github.com/mm2/Little-CMS/archive/refs/tags/lcms2.15.tar.gz
 https://github.com/mm2/Little-CMS/archive/refs/tags/lcms2.16.tar.gz
+https://github.com/mm2/Little-CMS/archive/refs/tags/lcms2.17.tar.gz
 https://github.com/mobile-shell/mosh/archive/refs/tags/mosh-1.4.0.tar.gz
 https://github.com/mozilla/mozjpeg/archive/refs/tags/v4.1.4.tar.gz
 https://github.com/mozilla/mozjpeg/archive/refs/tags/v4.1.5.tar.gz
@@ -3416,6 +3418,7 @@ https://github.com/xjasonlyu/tun2socks/archive/56786517dc3d4de051980a45dff71d33c
 https://github.com/xkbcommon/libxkbcommon/archive/refs/tags/xkbcommon-1.5.0.tar.gz
 https://github.com/xkbcommon/libxkbcommon/archive/refs/tags/xkbcommon-1.6.0.tar.gz
 https://github.com/xkbcommon/libxkbcommon/archive/refs/tags/xkbcommon-1.7.0.tar.gz
+https://github.com/xkbcommon/libxkbcommon/archive/refs/tags/xkbcommon-1.8.0.tar.gz
 https://github.com/xxxserxxx/gotop/archive/refs/tags/v4.2.0.tar.gz
 https://github.com/xyproto/gendesk/archive/refs/tags/1.0.9.tar.gz
 https://github.com/xyproto/orbiton/archive/refs/tags/v2.68.0.tar.gz
@@ -3594,6 +3597,7 @@ https://gitlab.freedesktop.org/xkeyboard-config/xkeyboard-config/-/archive/xkeyb
 https://gitlab.freedesktop.org/xkeyboard-config/xkeyboard-config/-/archive/xkeyboard-config-2.40/xkeyboard-config-xkeyboard-config-2.40.tar.bz2
 https://gitlab.freedesktop.org/xkeyboard-config/xkeyboard-config/-/archive/xkeyboard-config-2.41/xkeyboard-config-xkeyboard-config-2.41.tar.bz2
 https://gitlab.freedesktop.org/xkeyboard-config/xkeyboard-config/-/archive/xkeyboard-config-2.41/xkeyboard-config-xkeyboard-config-2.43.tar.bz2
+https://gitlab.freedesktop.org/xkeyboard-config/xkeyboard-config/-/archive/xkeyboard-config-2.41/xkeyboard-config-xkeyboard-config-2.44.tar.bz2
 https://gitlab.freedesktop.org/xorg/lib/libpciaccess/-/archive/libpciaccess-0.18.1/libpciaccess-libpciaccess-0.18.1.tar.bz2
 https://gitlab.freedesktop.org/xorg/lib/libpciaccess/-/archive/libpciaccess-0.18/libpciaccess-libpciaccess-0.18.tar.bz2
 https://gitlab.freedesktop.org/xorg/lib/libxcvt/-/archive/libxcvt-0.1.2/libxcvt-libxcvt-0.1.2.tar.bz2
@@ -3775,6 +3779,7 @@ https://gitlab.torproject.org/tpo/core/arti/-/archive/arti-v1.2.2/arti-arti-v1.2
 https://gitlab.torproject.org/tpo/core/arti/-/archive/arti-v1.2.8/arti-arti-v1.2.8.tar.bz2
 https://gitlab.torproject.org/tpo/core/arti/-/archive/arti-v1.3.0/arti-arti-v1.3.0.tar.bz2
 https://gitlab.torproject.org/tpo/core/arti/-/archive/arti-v1.3.1/arti-arti-v1.3.1.tar.bz2
+https://gitlab.torproject.org/tpo/core/arti/-/archive/arti-v1.4.0/arti-arti-v1.4.0.tar.bz2
 https://gitlab.torproject.org/tpo/core/tor/-/archive/tor-0.4.7.14/tor-tor-0.4.7.14.tar.bz2
 https://gitlab.torproject.org/tpo/core/tor/-/archive/tor-0.4.7.15/tor-tor-0.4.7.15.tar.bz2
 https://gitlab.torproject.org/tpo/core/tor/-/archive/tor-0.4.8.11/tor-tor-0.4.8.11.tar.bz2
@@ -3911,6 +3916,7 @@ https://mirrors.edge.kernel.org/pub/linux/libs/ell/ell-0.68.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/libs/ell/ell-0.69.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/libs/ell/ell-0.70.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/libs/ell/ell-0.71.tar.xz
+https://mirrors.edge.kernel.org/pub/linux/libs/ell/ell-0.72.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/network/wireless/iwd-2.10.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/network/wireless/iwd-2.11.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/network/wireless/iwd-2.12.tar.xz
@@ -3930,6 +3936,7 @@ https://mirrors.edge.kernel.org/pub/linux/network/wireless/iwd-3.0.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/network/wireless/iwd-3.1.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/network/wireless/iwd-3.2.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/network/wireless/iwd-3.3.tar.xz
+https://mirrors.edge.kernel.org/pub/linux/network/wireless/iwd-3.4.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/utils/kbd/kbd-2.6.1.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/utils/kbd/kbd-2.6.3.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/utils/kbd/kbd-2.6.4.tar.xz
