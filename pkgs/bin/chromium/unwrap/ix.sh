@@ -45,7 +45,9 @@ lib/brotli
 lib/ffmpeg
 lib/lcms/2
 lib/opengl
+lib/curl/dl
 lib/wayland
+lib/nss/init
 lib/sqlite/3
 lib/json/cpp
 lib/freetype
@@ -54,12 +56,18 @@ lib/mini/zip
 lib/dbus/glib
 lib/pci/utils
 lib/xiph/flac
+lib/wayland/dl
 lib/xiph/speex
 lib/fontconfig
 lib/xkb/common
 lib/shim/extra
+lib/wayland/dl
+lib/drivers/3d
+lib/mesa/egl/dl
 lib/bsd/overlay
-lib/build/muldefs
+lib/nss/nssckbi
+lib/mesa/glesv2/dl
+lib/build/errlimit
 lib/shim/fake(lib_name=atomic)
 {% endblock %}
 
@@ -188,8 +196,6 @@ sed -e 's|"localtime"|"localtime_xxx"|' \
 find content/common -type f | while read l; do
     sed -e 's|setproctitle|SetProcTitle|' -i ${l}
 done
-
-sed -e 's|FATAL|ERROR|' -i crypto/nss_util.cc
 {% endblock %}
 
 {#
@@ -278,10 +284,6 @@ use_gtk=false
 use_kerberos=false
 use_lld=true
 use_nss_certs=true
-#chrome_root_store_only=true
-#chrome_root_store_optional=false
-#trial_comparison_cert_verifier_supported=false
-#chrome_root_store_policy_supported=false
 use_partition_alloc_as_malloc=false
 use_pulseaudio=false
 use_qt=false
@@ -300,10 +302,7 @@ use_thin_lto=false
 use_udev=false
 use_vaapi=false
 use_x11=false
-v8_enable_i18n_support=false
-v8_monolithic=true
 v8_static_library=true
-v8_use_external_startup_data=false
 {% endblock %}
 
 {% block ninja_build_targets %}
@@ -317,7 +316,75 @@ sed -e 's|/usr/bin/brotli|'$(which brotli)'|' \
     -i ${tmp}/obj/toolchain.ninja
 {% endblock %}
 
-{% block build1 %}
-ninja -C {{ninja_build_dir}} --verbose -n chrome
-exit 1
+{% block c_rename_symbol %}
+SHA224_Update
+SHA256_Update
+SHA384_Update
+SHA512_Update
+CMAC_Init
+CMAC_Update
+HMAC_Init
+HMAC_Update
+MD5_Update
+SHA1_Update
+wl_display_cancel_read
+wl_display_connect
+wl_display_connect_to_fd
+wl_display_create_queue
+wl_display_disconnect
+wl_display_dispatch
+wl_display_dispatch_pending
+wl_display_dispatch_queue
+wl_display_dispatch_queue_pending
+wl_display_flush
+wl_display_get_error
+wl_display_get_fd
+wl_display_get_protocol_error
+wl_display_prepare_read
+wl_display_prepare_read_queue
+wl_display_read_events
+wl_display_roundtrip
+wl_display_roundtrip_queue
+wl_event_queue_destroy
+wl_log_set_handler_client
+wl_os_accept_cloexec
+wl_os_dupfd_cloexec
+wl_os_epoll_create_cloexec
+wl_os_mremap_maymove
+wl_os_recvmsg_cloexec
+wl_os_socket_cloexec
+wl_os_socket_peercred
+wl_proxy_add_dispatcher
+wl_proxy_add_listener
+wl_proxy_create
+wl_proxy_create_wrapper
+wl_proxy_destroy
+wl_proxy_get_class
+wl_proxy_get_id
+wl_proxy_get_listener
+wl_proxy_get_tag
+wl_proxy_get_user_data
+wl_proxy_get_version
+wl_proxy_marshal
+wl_proxy_marshal_array
+wl_proxy_marshal_array_constructor
+wl_proxy_marshal_array_constructor_versioned
+wl_proxy_marshal_array_flags
+wl_proxy_marshal_constructor
+wl_proxy_marshal_constructor_versioned
+wl_proxy_marshal_flags
+wl_proxy_set_queue
+wl_proxy_set_tag
+wl_proxy_set_user_data
+wl_proxy_wrapper_destroy
+os_resize_anonymous_file
+_caches
+_xdg_binary_or_text_fallback
+{% endblock %}
+
+{% block install %}
+base64 -d << EOF > install.sh
+{% include 'install.sh/base64' %}
+EOF
+sh install.sh ${tmp}/obj ${out}
 {% endblock %}

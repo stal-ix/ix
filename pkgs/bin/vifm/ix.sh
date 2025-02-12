@@ -1,8 +1,8 @@
 {% extends '//die/c/autohell.sh' %}
 
 {% block fetch %}
-https://github.com/vifm/vifm/archive/refs/tags/v0.13.tar.gz
-sha:8379397b2824cc74a91f5cfa00b5496f5d08cdcec18e3d13b64c480151225ca8
+https://github.com/vifm/vifm/archive/refs/tags/v0.14.tar.gz
+sha:c78d585327571f5572ecc5636571086d0247158d9ff56f2bd53f016cd0b2e3b5
 {% endblock %}
 
 {% block bld_libs %}

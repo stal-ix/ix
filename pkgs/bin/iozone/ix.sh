@@ -1,8 +1,8 @@
 {% extends '//die/c/make.sh' %}
 
 {% block fetch %}
-https://www.iozone.org/src/current/iozone3_494.tgz
-sha:a36d43831e2829dbc9dc3d5a5a7eb1ca733c9ecc8cbb634022a52928e9b78662
+https://www.iozone.org/src/current/iozone3_507.tgz
+sha:dd03eccd3768e8400816d67ae0e47f4646cb5834cfc2fc09927fe7b87a6fca7a
 {% endblock %}
 
 {% block bld_libs %}

@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://github.com/mm2/Little-CMS/archive/refs/tags/lcms2.16.tar.gz
-sha:cb4bf968aa66e3d5d16d1f094a99595966d4330cbd6be46c66129f2747ad2b0d
+https://github.com/mm2/Little-CMS/archive/refs/tags/lcms2.17.tar.gz
+sha:6e6f6411db50e85ae8ff7777f01b2da0614aac13b7b9fcbea66dc56a1bc71418
 {% endblock %}
 
 {% block lib_deps %}

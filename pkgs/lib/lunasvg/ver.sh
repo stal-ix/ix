@@ -1,2 +1,2 @@
-https://github.com/sammycage/lunasvg/archive/refs/tags/v3.1.0.tar.gz
-sha:2e05791bcc7c30c77efc4fee23557c5c4c9ccd4cf626a3167c0b4a4a316ae2b6
+https://github.com/sammycage/lunasvg/archive/refs/tags/v3.1.1.tar.gz
+sha:90b9c821944b2cddb9ab4d0d1ccd043712a8b12db7dcdcf451663c04737e40e2

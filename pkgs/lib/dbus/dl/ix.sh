@@ -2,6 +2,7 @@
 
 {% block lib_deps %}
 lib/dbus
+lib/dlfcn
 {% endblock %}
 
 {% block export_libs %}

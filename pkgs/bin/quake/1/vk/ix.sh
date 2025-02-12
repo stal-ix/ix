@@ -17,18 +17,23 @@ lib/opus/file
 lib/xiph/flac
 lib/drivers/3d
 lib/xiph/vorbis
-lib/vulkan/loader
 bin/quake/1/vk/dl
 {% endblock %}
 
 {% block bld_tool %}
 bin/glslang
+{% if linux %}
+bin/muslstack
+{% endif %}
 bld/spirv/tools
 {% endblock %}
 
 {% block install %}
 mkdir ${out}/bin
 cp $(find ${tmp} -type f -name vkquake) ${out}/bin/
+{% if linux %}
+muslstack -s 8388608 ${out}/bin/vkquake
+{% endif %}
 {% endblock %}
 
 {% block build_flags %}

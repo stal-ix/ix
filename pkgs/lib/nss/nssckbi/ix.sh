@@ -1,14 +1,13 @@
 {% extends '//die/dl/lib.sh' %}
 
 {% block lib_deps %}
-lib/dlfcn
-lib/wayland
+lib/nss
 {% endblock %}
 
 {% block export_libs %}
-libwayland-server.a
+libnssckbi.a
 {% endblock %}
 
 {% block export_lib %}
-wayland-server
+nssckbi
 {% endblock %}
