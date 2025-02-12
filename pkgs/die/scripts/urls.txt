@@ -1170,6 +1170,7 @@ https://github.com/NixOS/nix/archive/refs/tags/2.24.9.tar.gz
 https://github.com/NixOS/nix/archive/refs/tags/2.25.2.tar.gz
 https://github.com/NixOS/nix/archive/refs/tags/2.25.3.tar.gz
 https://github.com/NixOS/nix/archive/refs/tags/2.25.5.tar.gz
+https://github.com/NixOS/nix/archive/refs/tags/2.26.1.tar.gz
 https://github.com/NixOS/patchelf/archive/refs/tags/0.18.0.tar.gz
 https://github.com/Novum/vkQuake/archive/refs/tags/1.30.1.tar.gz
 https://github.com/Novum/vkQuake/archive/refs/tags/1.31.2.tar.gz
@@ -1204,6 +1205,7 @@ https://github.com/PurpleI2P/i2pd/archive/refs/tags/2.53.0.tar.gz
 https://github.com/PurpleI2P/i2pd/archive/refs/tags/2.53.1.tar.gz
 https://github.com/PurpleI2P/i2pd/archive/refs/tags/2.54.0.tar.gz
 https://github.com/PurpleI2P/i2pd/archive/refs/tags/2.55.0.tar.gz
+https://github.com/PurpleI2P/i2pd/archive/refs/tags/2.56.0.tar.gz
 https://github.com/Rafostar/clapper/archive/refs/tags/0.6.1.tar.gz
 https://github.com/RazrFalcon/resvg/archive/refs/tags/v0.38.0.tar.gz
 https://github.com/RazrFalcon/resvg/archive/refs/tags/v0.39.0.tar.gz
@@ -1470,6 +1472,7 @@ https://github.com/cisco/openh264/archive/refs/tags/v2.3.1.tar.gz
 https://github.com/cisco/openh264/archive/refs/tags/v2.4.0.tar.gz
 https://github.com/cisco/openh264/archive/refs/tags/v2.4.1.tar.gz
 https://github.com/cisco/openh264/archive/refs/tags/v2.5.0.tar.gz
+https://github.com/cisco/openh264/archive/refs/tags/v2.6.0.tar.gz
 https://github.com/cjlin1/liblinear/archive/v247/liblinear-247.tar.gz
 https://github.com/cjlin1/liblinear/archive/v247/liblinear-248.tar.gz
 https://github.com/cli/cli/archive/refs/tags/v2.14.4.tar.gz
@@ -1852,6 +1855,7 @@ https://github.com/golang/go/archive/refs/tags/go1.23.2.tar.gz
 https://github.com/golang/go/archive/refs/tags/go1.23.3.tar.gz
 https://github.com/golang/go/archive/refs/tags/go1.23.4.tar.gz
 https://github.com/golang/go/archive/refs/tags/go1.23.6.tar.gz
+https://github.com/golang/go/archive/refs/tags/go1.24.0.tar.gz
 https://github.com/google/brotli/archive/refs/tags/v1.1.0.tar.gz
 https://github.com/google/crc32c/archive/refs/tags/1.1.2.tar.gz
 https://github.com/google/double-conversion/archive/refs/tags/v3.3.0.tar.gz
@@ -2659,6 +2663,7 @@ https://github.com/openssh/openssh-portable/archive/refs/tags/V_9_8_P1.tar.gz
 https://github.com/openssh/openssh-portable/archive/refs/tags/V_9_9_P1.tar.gz
 https://github.com/openssl/openssl/archive/refs/tags/openssl-3.3.2.tar.gz
 https://github.com/openssl/openssl/archive/refs/tags/openssl-3.4.0.tar.gz
+https://github.com/openssl/openssl/archive/refs/tags/openssl-3.4.1.tar.gz
 https://github.com/opsengine/cpulimit/archive/refs/tags/v0.2.tar.gz
 https://github.com/optozorax/car_drift/archive/8fbfd0f82f614d9d32bbf78176b77e98affdadcb.zip
 https://github.com/p-gen/smenu/archive/refs/tags/v1.3.0.tar.gz
@@ -3413,6 +3418,7 @@ https://github.com/wxWidgets/wxWidgets/releases/download/v3.2.4/wxWidgets-3.2.4.
 https://github.com/wxWidgets/wxWidgets/releases/download/v3.2.5/wxWidgets-3.2.5.tar.bz2
 https://github.com/ximion/appstream/archive/refs/tags/v0.16.3.tar.gz
 https://github.com/xiph/flac/archive/refs/tags/1.4.3.tar.gz
+https://github.com/xiph/flac/archive/refs/tags/1.5.0.tar.gz
 https://github.com/xiph/opus/archive/refs/tags/v1.4.tar.gz
 https://github.com/xiph/opus/archive/refs/tags/v1.5.1.tar.gz
 https://github.com/xjasonlyu/tun2socks/archive/56786517dc3d4de051980a45dff71d33c924862b.zip
