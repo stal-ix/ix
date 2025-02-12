@@ -38,7 +38,7 @@ EOF
 
 {% block configure %}
 {% if help %}
-cat meson_options.txt
+cat meson_options.txt meson.options
 exit 1
 {% else %}
 {% set command_args %}
