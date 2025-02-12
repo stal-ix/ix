@@ -50,6 +50,7 @@
 #}
 
 {% block run_deps %}
+bin/ruff
 bin/nix
 bin/coreutils/9/6
 bin/inkscape
