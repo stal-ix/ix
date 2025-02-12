@@ -1,5 +1,4 @@
 import os
-import json
 import shutil
 import random
 import signal
@@ -33,7 +32,7 @@ def execute_cmd(c, mt):
 
     try:
         subprocess.run(args, env=env, input=c.get('stdin', '').encode(), check=True)
-    except subprocess.CalledProcessError as e:
+    except subprocess.CalledProcessError:
         cl.log(f'ERROR {descr}', color='r')
         os.kill(0, signal.SIGKILL)
     except Exception as e:

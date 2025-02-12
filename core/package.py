@@ -1,10 +1,7 @@
-import os
-import string
 import itertools
 
 import core.sign as cs
 import core.utils as cu
-import core.error as ce
 import core.gen_cmds as cg
 import core.render_ctx as cr
 

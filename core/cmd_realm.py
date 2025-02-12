@@ -1,12 +1,10 @@
 import os
 import json
 import shutil
-import subprocess
 
 import core.gg as cg
 import core.lex as cc
 import core.repo as cr
-import core.utils as cu
 import core.config as cf
 import core.manager as cm
 
