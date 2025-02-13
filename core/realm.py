@@ -1,13 +1,9 @@
 #!/usr/bin/env python3
 
 import os
-import sys
 import json
-import base64
-import shutil
 import string
 import getpass
-import itertools
 import subprocess
 
 import core.log as cl

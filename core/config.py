@@ -1,5 +1,4 @@
 import os
-import random
 import platform
 
 import core.ops as co

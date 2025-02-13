@@ -1,12 +1,6 @@
 import os
-import sys
-import json
-import jinja2
-import itertools
 
 import core.sign as cs
-import core.utils as cu
-import core.error as ce
 
 
 class ScriptBuilder:

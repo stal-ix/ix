@@ -56,7 +56,7 @@ class Manager:
     def ensure_realm(self, name):
         try:
             return cr.load_realm_ro(self.config, name).to_rw(self)
-        except FileNotFoundError as e:
+        except FileNotFoundError:
             pass
 
         return self.empty_realm(name)

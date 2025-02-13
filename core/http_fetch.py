@@ -1,12 +1,9 @@
 import os
-import sys
 import functools
 import subprocess
 
-import urllib.error as ue
 import urllib.request as ur
 
-import core.error as ce
 
 
 def fetch_url_data(url):

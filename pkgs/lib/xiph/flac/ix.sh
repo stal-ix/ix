@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://github.com/xiph/flac/archive/refs/tags/1.4.3.tar.gz
-sha:0a4bb82a30609b606650d538a804a7b40205366ce8fc98871b0ecf3fbb0611ee
+https://github.com/xiph/flac/archive/refs/tags/1.5.0.tar.gz
+sha:aea54ed186ad07a34750399cb27fc216a2b62d0ffcd6dc2e3064a3518c3146f8
 {% endblock %}
 
 {% block bld_tool %}

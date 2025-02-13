@@ -1,5 +1,4 @@
 import os
-import json
 
 
 def construct(cfg, kind=None):
