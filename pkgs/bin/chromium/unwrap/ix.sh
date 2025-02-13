@@ -7,6 +7,8 @@ https://gitlab.alpinelinux.org/alpine/aports/-/archive/ed25dc0164fd410ab1866b69c
 sha:15bbbfd8d129cfa74aa13d51e5810943faca18f05096bb5aecb88f62c4cfc66e
 {% endblock %}
 
+{% block task_pool %}full{% endblock %}
+
 {% block bld_libs %}
 lib/c
 lib/z
