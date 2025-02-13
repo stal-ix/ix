@@ -19,11 +19,14 @@ lib/qt/6/deps
 lib/qt/6/compat
 lib/reflection/cpp
 lib/qt/6/multimedia
+lib/qt/6/declarative/deps
+lib/shim/fake(lib_name=xcb)
 {% endblock %}
 
 {% block bld_tool %}
 bin/tic
 bld/qt/6
+bld/prepend
 bld/qt/6/tools
 bld/qt/6/tools/qml
 bld/qt/6/tools/shader
@@ -31,4 +34,14 @@ bld/qt/6/tools/shader
 
 {% block cmake_flags %}
 CONTOUR_WITH_UTEMPTER=OFF
+{% endblock %}
+
+{% block patch %}
+sed -e 's|.*_3_3_.*||' -i src/contour/display/Blur.h
+prepend src/contour/display/OpenGLRenderer.cpp << EOF
+#include <GL/gl.h>
+EOF
+base64 -d << EOF > src/contour/BlurBehind.cpp
+{% include 'BlurBehind.cpp/base64' %}
+EOF
 {% endblock %}
