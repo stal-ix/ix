@@ -1,8 +1,8 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://github.com/flatpak/libportal/archive/refs/tags/0.9.0.tar.gz
-sha:0fdf42ca371eeb1213ed25ab0c5681cd51750eb9a3e04adcd6a8dc2af4f4d440
+https://github.com/flatpak/libportal/archive/refs/tags/0.9.1.tar.gz
+sha:ea422b789ae487e04194d387bea031fd7485bf88a18aef8c767f7d1c29496a4e
 {% endblock %}
 
 {% block lib_deps %}
