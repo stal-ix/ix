@@ -14,5 +14,21 @@ lib/yaml/cpp
 lib/range/v3
 lib/freetype
 lib/boxed/cpp
+lib/qt/6/base
+lib/qt/6/deps
+lib/qt/6/compat
 lib/reflection/cpp
+lib/qt/6/multimedia
+{% endblock %}
+
+{% block bld_tool %}
+bin/tic
+bld/qt/6
+bld/qt/6/tools
+bld/qt/6/tools/qml
+bld/qt/6/tools/shader
+{% endblock %}
+
+{% block cmake_flags %}
+CONTOUR_WITH_UTEMPTER=OFF
 {% endblock %}
