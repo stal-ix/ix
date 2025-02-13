@@ -13,4 +13,6 @@ lib/unicode
 lib/yaml/cpp
 lib/range/v3
 lib/freetype
+lib/boxed/cpp
+lib/reflection/cpp
 {% endblock %}
