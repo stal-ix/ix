@@ -7,7 +7,7 @@
 {% block lib_deps %}
 lib/c
 lib/c++
-lib/plutovg
+lib/pluto/vg
 {% endblock %}
 
 {% block env %}
