@@ -3,16 +3,11 @@
 {% block lib_deps %}
 lib/decor
 lib/sndio
-#lib/opengl
+lib/sdl/gl
 lib/wayland
 lib/xkb/common
 lib/vulkan/loader
 {{super()}}
-{% endblock %}
-
-{% block bld_libs %}
-lib/shim/fake(lib_name=EGL)
-lib/shim/fake/pkg(pkg_name=egl,pkg_ver=100500)
 {% endblock %}
 
 {% block bld_tool %}
