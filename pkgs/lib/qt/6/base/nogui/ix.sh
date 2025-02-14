@@ -28,5 +28,6 @@ QT_FEATURE_openssl_linked=ON
 
 {% block env %}
 {{super()}}
+export CPPFLAGS="-DQT_STATICPLUGIN=1 \${CPPFLAGS}"
 export CMFLAGS="-DQT_DISABLE_NO_DEFAULT_PATH_IN_QT_PACKAGES=ON -DBUILD_WITH_QT6=ON \${CMFLAGS}"
 {% endblock %}

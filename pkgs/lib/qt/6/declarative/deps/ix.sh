@@ -7,11 +7,6 @@ lib/qt/6/declarative
 
 {% block premain_lang %}c++ -std=c++20{% endblock %}
 
-{% block cpp_defines %}
-{{super()}}
-QT_STATICPLUGIN=1
-{% endblock %}
-
 {% block premain_code %}
 #include <QtCore/QtPlugin>
 

@@ -32,10 +32,6 @@ bld/qt/6/tools/qml
 bld/qt/6/tools/shader
 {% endblock %}
 
-{% block cpp_defines %}
-QT_STATICPLUGIN=1
-{% endblock %}
-
 {% block cmake_flags %}
 CONTOUR_WITH_UTEMPTER=OFF
 CONTOUR_BUILD_STATIC=ON

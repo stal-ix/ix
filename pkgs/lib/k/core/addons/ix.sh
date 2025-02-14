@@ -21,10 +21,6 @@ bld/qt/6/tools
 bld/qt/6/tools/qml
 {% endblock %}
 
-{% block cpp_defines %}
-QT_STATICPLUGIN
-{% endblock %}
-
 {% block install %}
 {{super()}}
 {# libudev-zero does not provide cmake targets #}

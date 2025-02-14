@@ -65,10 +65,6 @@ ${PWD}
 ${PWD}/Telegram/ThirdParty/libtgvoip
 {% endblock %}
 
-{% block cpp_defines %}
-QT_STATICPLUGIN=1
-{% endblock %}
-
 {% block cmake_flags %}
 DESKTOP_APP_DISABLE_CRASH_REPORTS=ON
 DESKTOP_APP_DISABLE_JEMALLOC=ON
