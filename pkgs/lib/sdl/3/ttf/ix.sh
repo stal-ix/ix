@@ -11,16 +11,10 @@ lib/sdl/3
 lib/freetype
 lib/harfbuzz
 lib/pluto/svg
-lib/shim/fake(lib_name=EGL)
-lib/shim/fake/pkg(pkg_name=egl,pkg_ver=100500)
 {% endblock %}
 
 {% block cmake_flags %}
 SDLTTF_SAMPLES=OFF
 SDLTTF_INSTALL=ON
 SDLTTF_VENDORED=OFF
-{% endblock %}
-
-{% block cmake_trace1 %}
---trace
 {% endblock %}
