@@ -44,4 +44,7 @@ EOF
 base64 -d << EOF > src/contour/BlurBehind.cpp
 {% include 'BlurBehind.cpp/base64' %}
 EOF
+base64 -d << EOF > src/contour/ContourGuiApp.cpp
+{% include 'ContourGuiApp.cpp/base64' %}
+EOF
 {% endblock %}
