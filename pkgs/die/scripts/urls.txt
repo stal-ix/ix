@@ -711,6 +711,7 @@ https://ftp.postgresql.org/pub/source/v16.3/postgresql-16.3.tar.bz2
 https://ftp.postgresql.org/pub/source/v16.4/postgresql-16.4.tar.bz2
 https://ftp.postgresql.org/pub/source/v17.0/postgresql-17.0.tar.bz2
 https://ftp.postgresql.org/pub/source/v17.2/postgresql-17.2.tar.bz2
+https://ftp.postgresql.org/pub/source/v17.3/postgresql-17.3.tar.bz2
 https://ftpmirror.gnu.org/libtool/libtool-2.4.6.tar.gz
 https://ftpmirror.gnu.org/libtool/libtool-2.4.7.tar.gz
 https://gameoftrees.org/releases/portable/got-portable-0.92.tar.gz
@@ -891,6 +892,7 @@ https://github.com/FreeRDP/FreeRDP/archive/refs/tags/3.10.0.tar.gz
 https://github.com/FreeRDP/FreeRDP/archive/refs/tags/3.10.1.tar.gz
 https://github.com/FreeRDP/FreeRDP/archive/refs/tags/3.10.2.tar.gz
 https://github.com/FreeRDP/FreeRDP/archive/refs/tags/3.10.3.tar.gz
+https://github.com/FreeRDP/FreeRDP/archive/refs/tags/3.12.0.tar.gz
 https://github.com/FreeRDP/FreeRDP/archive/refs/tags/3.2.0.tar.gz
 https://github.com/FreeRDP/FreeRDP/archive/refs/tags/3.3.0.tar.gz
 https://github.com/FreeRDP/FreeRDP/archive/refs/tags/3.4.0.tar.gz
@@ -1482,6 +1484,10 @@ https://github.com/cjlin1/liblinear/archive/v247/liblinear-248.tar.gz
 https://github.com/cli/cli/archive/refs/tags/v2.14.4.tar.gz
 https://github.com/commonmark/cmark/archive/refs/tags/0.30.3.tar.gz
 https://github.com/containers/crun/releases/download/1.9/crun-1.9.tar.xz
+https://github.com/contour-terminal/boxed-cpp/archive/refs/tags/v1.4.3.tar.gz
+https://github.com/contour-terminal/contour/archive/refs/tags/v0.6.1.7494.tar.gz
+https://github.com/contour-terminal/libunicode/archive/refs/tags/v0.6.0.tar.gz
+https://github.com/contour-terminal/reflection-cpp/archive/refs/tags/v0.1.0.tar.gz
 https://github.com/cppfw/agg/archive/refs/tags/2.8.17.tar.gz
 https://github.com/cppfw/agg/archive/refs/tags/2.8.22.tar.gz
 https://github.com/cppfw/cssom/archive/refs/tags/0.2.1.tar.gz
@@ -1650,6 +1656,7 @@ https://github.com/eza-community/eza/archive/refs/tags/v0.20.17.tar.gz
 https://github.com/eza-community/eza/archive/refs/tags/v0.20.18.tar.gz
 https://github.com/eza-community/eza/archive/refs/tags/v0.20.19.tar.gz
 https://github.com/eza-community/eza/archive/refs/tags/v0.20.2.tar.gz
+https://github.com/eza-community/eza/archive/refs/tags/v0.20.21.tar.gz
 https://github.com/eza-community/eza/archive/refs/tags/v0.20.3.tar.gz
 https://github.com/eza-community/eza/archive/refs/tags/v0.20.4.tar.gz
 https://github.com/eza-community/eza/archive/refs/tags/v0.20.5.tar.gz
@@ -2102,6 +2109,7 @@ https://github.com/jesseduffield/lazygit/archive/refs/tags/v0.43.1.tar.gz
 https://github.com/jesseduffield/lazygit/archive/refs/tags/v0.44.0.tar.gz
 https://github.com/jesseduffield/lazygit/archive/refs/tags/v0.44.1.tar.gz
 https://github.com/jesseduffield/lazygit/archive/refs/tags/v0.45.0.tar.gz
+https://github.com/jesseduffield/lazygit/archive/refs/tags/v0.46.0.tar.gz
 https://github.com/jhawthorn/fzy/archive/refs/tags/1.0.tar.gz
 https://github.com/jirka-h/haveged/archive/refs/tags/v1.9.18.tar.gz
 https://github.com/jirka-h/haveged/archive/refs/tags/v1.9.19.tar.gz
@@ -2318,6 +2326,7 @@ https://github.com/libsdl-org/SDL/archive/refs/tags/release-2.30.7.tar.gz
 https://github.com/libsdl-org/SDL/archive/refs/tags/release-2.30.8.tar.gz
 https://github.com/libsdl-org/SDL/archive/refs/tags/release-2.30.9.tar.gz
 https://github.com/libsdl-org/SDL/archive/refs/tags/release-2.32.0.tar.gz
+https://github.com/libsdl-org/SDL/archive/refs/tags/release-3.2.4.tar.gz
 https://github.com/libsdl-org/SDL/releases/download/release-2.28.3/SDL2-2.28.3.tar.gz
 https://github.com/libsdl-org/SDL/releases/download/release-2.28.4/SDL2-2.28.4.tar.gz
 https://github.com/libsdl-org/SDL/releases/download/release-2.28.5/SDL2-2.28.5.tar.gz
@@ -2328,6 +2337,7 @@ https://github.com/libsdl-org/SDL_image/archive/refs/tags/release-2.8.3.tar.gz
 https://github.com/libsdl-org/SDL_mixer/archive/refs/tags/release-2.6.3.tar.gz
 https://github.com/libsdl-org/SDL_mixer/archive/refs/tags/release-2.8.0.tar.gz
 https://github.com/libsdl-org/SDL_net/archive/refs/tags/release-2.2.0.tar.gz
+https://github.com/libsdl-org/SDL_ttf/archive/refs/tags/preview-3.1.0.tar.gz
 https://github.com/libsdl-org/SDL_ttf/archive/refs/tags/release-2.20.2.tar.gz
 https://github.com/libsdl-org/SDL_ttf/archive/refs/tags/release-2.22.0.tar.gz
 https://github.com/libsdl-org/SDL_ttf/archive/refs/tags/release-2.24.0.tar.gz
@@ -2995,6 +3005,7 @@ https://github.com/sammycage/lunasvg/archive/refs/tags/v3.0.0.tar.gz
 https://github.com/sammycage/lunasvg/archive/refs/tags/v3.0.1.tar.gz
 https://github.com/sammycage/lunasvg/archive/refs/tags/v3.1.0.tar.gz
 https://github.com/sammycage/lunasvg/archive/refs/tags/v3.1.1.tar.gz
+https://github.com/sammycage/plutosvg/archive/refs/tags/v0.0.5.tar.gz
 https://github.com/sammycage/plutovg/archive/refs/tags/v0.0.11.tar.gz
 https://github.com/sammycage/plutovg/archive/refs/tags/v0.0.12.tar.gz
 https://github.com/sammycage/plutovg/archive/refs/tags/v0.0.8.tar.gz
@@ -3783,6 +3794,7 @@ https://gitlab.gnome.org/chergert/ptyxis/-/archive/46.2/ptyxis-46.2.tar.bz2
 https://gitlab.gnome.org/chergert/ptyxis/-/archive/46.3/ptyxis-46.3.tar.bz2
 https://gitlab.gnome.org/chergert/ptyxis/-/archive/47.0/ptyxis-47.0.tar.bz2
 https://gitlab.gnome.org/chergert/ptyxis/-/archive/47.1/ptyxis-47.1.tar.bz2
+https://gitlab.gnome.org/chergert/ptyxis/-/archive/47.10/ptyxis-47.10.tar.bz2
 https://gitlab.gnome.org/chergert/ptyxis/-/archive/47.2/ptyxis-47.2.tar.bz2
 https://gitlab.gnome.org/chergert/ptyxis/-/archive/47.3/ptyxis-47.3.tar.bz2
 https://gitlab.gnome.org/chergert/ptyxis/-/archive/47.4/ptyxis-47.4.tar.bz2
@@ -4368,6 +4380,7 @@ https://www.thrysoee.dk/editline/libedit-20230827-3.1.tar.gz
 https://www.thrysoee.dk/editline/libedit-20240808-3.1.tar.gz
 https://www.thrysoee.dk/editline/libedit-20250104-3.1.tar.gz
 https://www.uclibc.org/downloads/uClibc-0.9.33.tar.xz
+https://www.unicode.org/Public/16.0.0/ucd/UCD.zip
 https://www.x.org/pub/individual/util/util-macros-1.19.3.tar.bz2
 https://www.x.org/releases/individual/lib/libX11-1.8.6.tar.xz
 https://www.x.org/releases/individual/proto/xorgproto-2023.2.tar.xz
