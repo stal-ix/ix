@@ -76,6 +76,7 @@ bin/gperf
 bld/bison
 bin/brotli
 bin/nodejs
+bld/devendor
 bld/elfutils
 {% endblock %}
 
@@ -198,6 +199,8 @@ done
 base64 -d << EOF > chrome/BUILD.gn
 {% include 'BUILD.gn/base64' %}
 EOF
+
+devendor_c third_party/vulkan-deps/vulkan-loader
 {% endblock %}
 
 {#
