@@ -1,11 +1,11 @@
 {% extends '//die/go/build.sh' %}
 
 {% block go_url %}
-https://github.com/jesseduffield/lazygit/archive/refs/tags/v0.45.0.tar.gz
+https://github.com/jesseduffield/lazygit/archive/refs/tags/v0.46.0.tar.gz
 {% endblock %}
 
 {% block go_sha %}
-8fc8bb604b45c7522d6ed8d7aeb62b19c7919bdec2a3492a5f083aee0df06051
+ddd068f64aab3ad0ecc537822bb5c50ab8609e0c01fc1324d7ad67688f1ed72e
 {% endblock %}
 
 {% block go_tool %}
