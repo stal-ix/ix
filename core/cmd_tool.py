@@ -1,6 +1,11 @@
 import os
 
 
+def cli_recache(ctx):
+    ctx['args'] = ['recache'] + ctx['args']
+    cli_tool(ctx)
+
+
 def cli_tool(ctx):
     args = ctx['args']
 
