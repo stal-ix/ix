@@ -70,6 +70,7 @@ lib/bsd/overlay
 lib/nss/nssckbi
 lib/mesa/glesv2/dl
 lib/build/errlimit
+lib/vulkan/loader/dl
 lib/shim/fake(lib_name=atomic)
 {% endblock %}
 
@@ -198,6 +199,10 @@ sed -e 's|"localtime"|"localtime_xxx"|' \
 find content/common -type f | while read l; do
     sed -e 's|setproctitle|SetProcTitle|' -i ${l}
 done
+
+base64 -d << EOF > chrome/BUILD.gn
+{% include 'BUILD.gn/base64' %}
+EOF
 {% endblock %}
 
 {#
@@ -215,6 +220,8 @@ __is_cpp17_contiguous_iterator=__libcpp_is_contiguous_iterator
 #compile_suid_client=false
 #compile_syscall_broker=false
 #enable_base_tracing=false
+angle_use_custom_libvulkan=false
+angle_shared_libvulkan=false
 angle_build_tests=false
 angle_enable_commit_id=false
 angle_static_library=true
