@@ -46,7 +46,6 @@ lib/snappy
 lib/brotli
 lib/ffmpeg
 lib/lcms/2
-lib/opengl
 lib/curl/dl
 lib/wayland
 lib/nss/init
@@ -63,12 +62,8 @@ lib/xiph/speex
 lib/fontconfig
 lib/xkb/common
 lib/shim/extra
-lib/wayland/dl
-lib/drivers/3d
-lib/mesa/egl/dl
 lib/bsd/overlay
 lib/nss/nssckbi
-lib/mesa/glesv2/dl
 lib/build/errlimit
 lib/vulkan/loader/dl
 lib/shim/fake(lib_name=atomic)
