@@ -1,6 +1,6 @@
 {% extends '//die/hub.sh' %}
 
 {% block lib_deps %}
-lib/drivers/vulkan
+lib/vulkan/drivers
 lib/drivers/opengl
 {% endblock %}

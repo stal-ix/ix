@@ -11,7 +11,7 @@ lib/volk
 lib/kernel
 lib/vulkan/loader
 lib/vulkan/headers
-lib/drivers/vulkan
+lib/vulkan/drivers
 {% endblock %}
 
 {% block bld_tool %}
