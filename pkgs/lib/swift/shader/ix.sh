@@ -16,6 +16,12 @@ https://github.com/google/swiftshader
 lib/c
 lib/c++
 lib/wayland
+lib/shim/ix
+lib/execinfo
+{% endblock %}
+
+{% block cxx_flags %}
+-includeix.h
 {% endblock %}
 
 {% block bld_libs %}
@@ -23,6 +29,7 @@ lib/swift/shader/shim
 {% endblock %}
 
 {% block cmake_flags %}
+REACTOR_BACKEND=Subzero
 SWIFTSHADER_BUILD_WSI_XCB=OFF
 SWIFTSHADER_BUILD_TESTS=OFF
 SWIFTSHADER_WARNINGS_AS_ERRORS=OFF
@@ -39,4 +46,10 @@ cp ${tmp}/lib/libvk_swiftshader.a ${out}/lib/
 
 {% block env %}
 export SWIFTSHADER_LIB=${out}/lib/libvk_swiftshader.a
+{% endblock %}
+
+{% block patch %}
+sed -e 's|.*path.*tmp.*||' \
+    -e 's|mkstemp.*|ix_mkstemp();|' \
+    -i src/WSI/WaylandSurfaceKHR.cpp
 {% endblock %}

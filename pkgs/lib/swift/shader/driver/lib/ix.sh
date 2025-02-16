@@ -4,6 +4,14 @@
 :
 {% endblock %}
 
+{% block lib_deps %}
+lib/c
+lib/c++
+lib/wayland
+lib/shim/ix
+lib/execinfo
+{% endblock %}
+
 {% block bld_tool %}
 bld/librarian
 {% endblock %}
