@@ -25,7 +25,7 @@ mv snd_mixa.s snd_mixa.S
 lib/c
 lib/alsa
 lib/sdl/2
-lib/drivers/3d
 lib/vulkan/loader
 lib/vulkan/headers
+lib/drivers/vulkan
 {% endblock %}

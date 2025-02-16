@@ -7,6 +7,8 @@ https://gitlab.alpinelinux.org/alpine/aports/-/archive/ed25dc0164fd410ab1866b69c
 sha:15bbbfd8d129cfa74aa13d51e5810943faca18f05096bb5aecb88f62c4cfc66e
 {% endblock %}
 
+{% block task_pool %}full{% endblock %}
+
 {% block bld_libs %}
 lib/c
 lib/z
@@ -44,7 +46,6 @@ lib/snappy
 lib/brotli
 lib/ffmpeg
 lib/lcms/2
-lib/opengl
 lib/curl/dl
 lib/wayland
 lib/nss/init
@@ -61,14 +62,12 @@ lib/xiph/speex
 lib/fontconfig
 lib/xkb/common
 lib/shim/extra
-lib/wayland/dl
-lib/drivers/3d
-lib/mesa/egl/dl
 lib/bsd/overlay
 lib/nss/nssckbi
-lib/mesa/glesv2/dl
 lib/build/errlimit
+lib/vulkan/loader/dl
 lib/shim/fake(lib_name=atomic)
+lib/shim/fake/pkg(pkg_name=dri,pkg_ver=100500,pkg_extra=dridriverdir: /nowhere)
 {% endblock %}
 
 {% block bld_tool %}
@@ -78,6 +77,8 @@ bin/gperf
 bld/bison
 bin/brotli
 bin/nodejs
+bld/prepend
+bld/devendor
 bld/elfutils
 {% endblock %}
 
@@ -196,6 +197,16 @@ sed -e 's|"localtime"|"localtime_xxx"|' \
 find content/common -type f | while read l; do
     sed -e 's|setproctitle|SetProcTitle|' -i ${l}
 done
+
+base64 -d << EOF > chrome/BUILD.gn
+{% include 'BUILD.gn/base64' %}
+EOF
+
+devendor_c third_party/vulkan-deps/vulkan-loader
+
+prepend third_party/minigbm/src/drv.c << EOF
+#include <libgen.h>
+EOF
 {% endblock %}
 
 {#
@@ -213,6 +224,10 @@ __is_cpp17_contiguous_iterator=__libcpp_is_contiguous_iterator
 #compile_suid_client=false
 #compile_syscall_broker=false
 #enable_base_tracing=false
+#use_wayland_gbm=false
+use_system_minigbm=false
+angle_use_custom_libvulkan=false
+angle_shared_libvulkan=false
 angle_build_tests=false
 angle_enable_commit_id=false
 angle_static_library=true

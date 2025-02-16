@@ -33,14 +33,11 @@ lib/qt/6/deps
 lib/glib/mm/3
 lib/tg/rlottie
 lib/drivers/3d
-lib/mesa/gl/dl
-lib/mesa/egl/dl
 lib/qt/6/compat
 lib/qt/6/wayland
 lib/xiph/rnnoise
 lib/gi/repository
 lib/k/core/addons
-lib/mesa/glesv2/dl
 lib/k/image/formats
 lib/qt/6/declarative
 lib/qt/6/imageformats
@@ -63,10 +60,6 @@ shut_up
 {% block cpp_includes %}
 ${PWD}
 ${PWD}/Telegram/ThirdParty/libtgvoip
-{% endblock %}
-
-{% block cpp_defines %}
-QT_STATICPLUGIN=1
 {% endblock %}
 
 {% block cmake_flags %}

@@ -1,11 +1,11 @@
 {% extends '//die/rust/cargo.sh' %}
 
 {% block cargo_url %}
-https://github.com/martinvonz/jj/archive/refs/tags/v0.25.0.tar.gz
+https://github.com/martinvonz/jj/archive/refs/tags/v0.26.0.tar.gz
 {% endblock %}
 
 {% block cargo_sha %}
-bfe45536ceede66c626df0a3e59618ef3616974e7b200eca109e9aae54bad895
+1e9a3ae078be571ff0fff154ae7f631bc049d6e67618ef6b50ef2a60c06aae75
 {% endblock %}
 
 {% block unpack %}

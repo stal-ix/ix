@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/simdjson/simdjson/archive/refs/tags/v3.11.4.tar.gz
-sha:1029aff6bcca7811fb7b6d5421c5c9024b8e74e84cd268680265723f42e23cf2
+https://github.com/simdjson/simdjson/archive/refs/tags/v3.12.1.tar.gz
+sha:b73e21f78eabdaf89bf026d8ef0d65d2f1a9bfdc1cb26659c4ec88959989bf70
 {% endblock %}
 
 {% block lib_deps %}

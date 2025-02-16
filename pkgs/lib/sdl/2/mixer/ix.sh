@@ -38,7 +38,12 @@ SDL2MIXER_VORBIS=VORBISFILE
 SDL2MIXER_VORBIS_VORBISFILE_SHARED=OFF
 {% endblock %}
 
-{% block install %}
+{% block step_install %}
 {{super()}}
 test -f ${out}/lib/pkgconfig/SDL2_mixer.pc
+find ${out}/lib/cmake -type f | while read l; do
+    sed -e 's|-2\.0\.a|\.a|g' \
+        -e 's|.*INTERFACE_SDL2_SHARED.*||' \
+        -i ${l}
+done
 {% endblock %}

@@ -29,7 +29,3 @@ for x in lib/*.a; do
     llvm-objcopy --localize-symbol=_Z7ADWAITAv ${x}
 done
 {% endblock %}
-
-{% block cpp_defines %}
-QT_STATICPLUGIN=1
-{% endblock %}

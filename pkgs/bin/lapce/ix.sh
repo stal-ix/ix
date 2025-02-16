@@ -15,9 +15,7 @@ lib/ssh/2
 lib/git/2
 lib/openssl
 lib/wayland/dl
-lib/mesa/gl/dl
 lib/drivers/3d
-lib/mesa/egl/dl
 lib/xkb/common/dl
 lib/tree/sitter/plugins
 {% endblock %}

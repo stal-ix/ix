@@ -23,7 +23,6 @@ lib/bzip/2
 lib/opengl
 lib/drivers/3d
 lib/wayland/dl
-lib/mesa/egl/dl
 lib/display/info
 lib/xkb/common/dl
 lib/wayland/dl/server

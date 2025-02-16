@@ -30,7 +30,3 @@ find ${out}/lib/plugins -name '*.a' -type f | while read l; do
     cp ${l} ${out}/lib/
 done
 {% endblock %}
-
-{% block cpp_defines %}
-QT_STATICPLUGIN
-{% endblock %}

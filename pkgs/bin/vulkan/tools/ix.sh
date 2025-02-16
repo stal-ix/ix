@@ -9,9 +9,9 @@ sha:9d8a941f3cedd904774e888871840dd9b5df4de7682d741181b5c9af58a46420
 lib/c
 lib/volk
 lib/kernel
-lib/drivers/3d
 lib/vulkan/loader
 lib/vulkan/headers
+lib/drivers/vulkan
 {% endblock %}
 
 {% block bld_tool %}

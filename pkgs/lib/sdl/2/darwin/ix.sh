@@ -2,6 +2,7 @@
 
 {% block lib_deps %}
 lib/iconv
+lib/opengl
 lib/darwin/framework/Metal
 lib/darwin/framework/Cocoa
 lib/darwin/framework/IOKit
@@ -19,13 +20,6 @@ lib/darwin/framework/GameController
 {% block bld_tool %}
 bld/cctools
 {{super()}}
-{% endblock %}
-
-{% block cmake_flags %}
-{{super()}}
-SDL_OPENGL=OFF
-SDL_OPENGLES=OFF
-SDL_VULKAN=OFF
 {% endblock %}
 
 {% block build_flags %}

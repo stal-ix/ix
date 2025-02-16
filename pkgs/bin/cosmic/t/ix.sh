@@ -19,8 +19,6 @@ just --set prefix ${out} install
 
 {% block bld_libs %}
 lib/wayland/dl
-lib/mesa/gl/dl
 lib/drivers/3d
-lib/mesa/egl/dl
 lib/xkb/common/dl
 {% endblock %}

@@ -31,10 +31,8 @@ lib/json/glib
 lib/gdk/pixbuf
 lib/xkb/common
 lib/drivers/3d
-lib/mesa/gl/dl
 lib/shim/systemd
 lib/vulkan/loader
-lib/mesa/glesv2/dl
 lib/vulkan/headers
 lib/gsettings/desktop/schemas
 lib/shim/fake/pkg(pkg_name=ice,pkg_ver=100.500)

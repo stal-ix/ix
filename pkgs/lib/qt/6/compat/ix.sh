@@ -9,4 +9,12 @@ sha:331a1e617952217868beeef7964828500388abeeb502ea3436f16eec816426c4
 lib/c
 lib/c++
 lib/qt/6/base
+lib/qt/6/declarative
+{% endblock %}
+
+{% block bld_tool %}
+bld/qt/6
+bld/qt/6/tools
+bld/qt/6/tools/qml
+bld/qt/6/tools/shader
 {% endblock %}

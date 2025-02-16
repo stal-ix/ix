@@ -5,5 +5,7 @@ bld/genpc
 {% endblock %}
 
 {% block install %}
-genpc {{pkg_name}} {{pkg_ver}}
+genpc {{pkg_name}} {{pkg_ver}} << EOF
+{{pkg_extra}}
+EOF
 {% endblock %}

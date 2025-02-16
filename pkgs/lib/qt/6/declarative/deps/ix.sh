@@ -1,6 +1,7 @@
 {% extends '//die/c/premain.sh' %}
 
 {% block lib_deps %}
+lib/qt/6/compat
 lib/qt/6/declarative
 {% endblock %}
 
@@ -8,6 +9,9 @@ lib/qt/6/declarative
 
 {% block premain_code %}
 #include <QtCore/QtPlugin>
+
+Q_IMPORT_PLUGIN(QtGraphicalEffectsPlugin)
+Q_IMPORT_PLUGIN(QtGraphicalEffectsPrivatePlugin)
 
 Q_IMPORT_PLUGIN(QGifPlugin)
 Q_IMPORT_PLUGIN(QICOPlugin)

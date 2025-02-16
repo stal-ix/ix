@@ -4,9 +4,17 @@
 lib/vulkan/loader/data
 {% endblock %}
 
+{% block lib_deps %}
+{{super()}}
+{% if darwin %}
+lib/darwin/framework/CoreFoundation
+{% endif %}
+{% endblock %}
+
 {% block bld_tool %}
 {{super()}}
 bld/reloc
+bld/fake(tool_name=install_name_tool)
 {% endblock %}
 
 {% block configure %}

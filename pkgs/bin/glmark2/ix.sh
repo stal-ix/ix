@@ -12,8 +12,6 @@ lib/jpeg
 lib/opengl
 lib/wayland
 lib/drivers/3d
-lib/mesa/gl/dl
-lib/mesa/egl/dl
 {% endblock %}
 
 {% block meson_flags %}

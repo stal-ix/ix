@@ -9,3 +9,7 @@ sha:b26b01f4540259784955d224a6adf91f4cff5f38fb64f6098984bf91df8fbd8f
 lib/c
 lib/png
 {% endblock %}
+
+{% block env %}
+export CPPFLAGS="-I${out}/include/plutovg \${CPPFLAGS}"
+{% endblock %}
