@@ -6,5 +6,6 @@
     lib/mesa/egl
   {% elif darwin %}
     lib/darwin/framework/Carbon
+    lib/darwin/framework/OpenGL
   {% endif %}
 {% endblock %}
