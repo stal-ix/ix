@@ -2,5 +2,5 @@
 
 {% block lib_deps %}
 lib/vulkan/drivers
-lib/drivers/opengl
+lib/opengl/drivers
 {% endblock %}
