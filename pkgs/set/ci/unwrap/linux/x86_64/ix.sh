@@ -50,6 +50,7 @@
 #}
 
 {% block run_deps %}
+bin/hugo
 bin/contour
 bin/ruff
 bin/nix
