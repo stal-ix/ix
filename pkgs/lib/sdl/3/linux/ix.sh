@@ -18,8 +18,6 @@ bld/wayland
 {% block cmake_flags %}
 {{super()}}
 SDL_VULKAN=ON
-SDL_OPENGL=OFF
-SDL_OPENGLES=OFF
 SDL_OSS=OFF
 SDL_ALSA=OFF
 SDL_ALSA_SHARED=OFF
@@ -32,9 +30,4 @@ SDL_PIPEWIRE=OFF
 SDL_PIPEWIRE_SHARED=OFF
 SDL_PULSEAUDIO=OFF
 SDL_PULSEAUDIO_SHARED=OFF
-{% endblock %}
-
-{% block cpp_defines %}
-{{super()}}
-SDL_VIDEO_OPENGL_EGL=1
 {% endblock %}
