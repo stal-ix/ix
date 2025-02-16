@@ -20,9 +20,6 @@ lib/poppler
 lib/adwaita
 lib/djvulibre
 lib/drivers/3d
-lib/mesa/gl/dl
-lib/mesa/egl/dl
-lib/mesa/glesv2/dl
 lib/gdk/pixbuf/svg
 lib/gsettings/desktop/schemas
 {% endblock %}

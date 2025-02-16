@@ -20,9 +20,7 @@ c402e6dce7f078a314fbeedac8f30c233a7d6065ad08cac5221e5e98ee9c5013
 lib/alsa
 lib/openssl
 lib/wayland/dl
-lib/mesa/gl/dl
 lib/drivers/3d
-lib/mesa/egl/dl
 lib/xkb/common/dl
 {% endblock %}
 

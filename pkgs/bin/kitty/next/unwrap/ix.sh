@@ -2,7 +2,7 @@
 
 {% block bld_libs %}
 lib/python
-lib/mesa/egl/dl
+lib/drivers/3d
 lib/fontconfig/dl
 bin/kitty/next/py
 bin/kitty/next/modules

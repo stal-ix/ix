@@ -3,7 +3,7 @@
 {% block bld_libs %}
 lib/adwaita
 lib/shim/xdg
-lib/mesa/glesv2/dl
+lib/drivers/3d
 {{super()}}
 {% endblock %}
 

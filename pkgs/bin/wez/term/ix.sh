@@ -20,9 +20,7 @@ lib/wayland
 lib/freetype
 lib/harfbuzz
 lib/wayland/dl
-lib/mesa/gl/dl
 lib/drivers/3d
-lib/mesa/egl/dl
 lib/xkb/common/dl
 {% endblock %}
 

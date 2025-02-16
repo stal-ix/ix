@@ -15,9 +15,7 @@ lib/xkb/common
 lib/pango
 {% endif %}
 {% if kmscon_fast %}
-lib/mesa/egl
 lib/drivers/3d
-lib/mesa/glesv2
 {% endif %}
 {% endblock %}
 

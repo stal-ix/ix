@@ -18,14 +18,11 @@ lib/shim/x11
 lib/hypr/lang
 lib/xkb/common
 lib/drivers/3d
-lib/mesa/gl/dl
-lib/mesa/egl/dl
 lib/aqua/marine
 lib/hypr/cursor
 lib/hypr/graphics
 lib/build/muldefs
 lib/toml/plus/plus
-lib/mesa/glesv2/dl
 {% endblock %}
 
 {% block meson_tool %}

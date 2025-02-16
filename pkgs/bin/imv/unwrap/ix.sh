@@ -16,9 +16,9 @@ lib/pango
 lib/opengl
 lib/ns/gif
 lib/wayland
-lib/xkb/common
 lib/freeimage
 lib/drivers/3d
+lib/xkb/common
 {% endblock %}
 
 {% block bld_tool %}
