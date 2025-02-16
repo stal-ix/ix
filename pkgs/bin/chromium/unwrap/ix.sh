@@ -67,6 +67,7 @@ lib/nss/nssckbi
 lib/build/errlimit
 lib/vulkan/loader/dl
 lib/shim/fake(lib_name=atomic)
+lib/shim/fake/pkg(pkg_name=dri,pkg_ver=100500,pkg_extra=dridriverdir: /nowhere)
 {% endblock %}
 
 {% block bld_tool %}
@@ -76,6 +77,7 @@ bin/gperf
 bld/bison
 bin/brotli
 bin/nodejs
+bld/prepend
 bld/devendor
 bld/elfutils
 {% endblock %}
@@ -201,6 +203,10 @@ base64 -d << EOF > chrome/BUILD.gn
 EOF
 
 devendor_c third_party/vulkan-deps/vulkan-loader
+
+prepend third_party/minigbm/src/drv.c << EOF
+#include <libgen.h>
+EOF
 {% endblock %}
 
 {#
@@ -218,6 +224,8 @@ __is_cpp17_contiguous_iterator=__libcpp_is_contiguous_iterator
 #compile_suid_client=false
 #compile_syscall_broker=false
 #enable_base_tracing=false
+#use_wayland_gbm=false
+use_system_minigbm=false
 angle_use_custom_libvulkan=false
 angle_shared_libvulkan=false
 angle_build_tests=false
