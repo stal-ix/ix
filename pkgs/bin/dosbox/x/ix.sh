@@ -14,6 +14,7 @@ lib/pcap
 lib/sdl/2
 lib/slirp
 lib/curses
+lib/kernel
 lib/sdl/deps
 lib/sdl/2/net
 lib/fluid/synth
