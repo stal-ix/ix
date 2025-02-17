@@ -1,8 +1,8 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://gitlab.freedesktop.org/wayland/wayland-protocols/-/archive/1.39/wayland-protocols-1.39.tar.bz2
-sha:5778d7a99a7ef34d4ee2e4e2896236311fa49a3fb3dd01f358e508637cafe657
+https://gitlab.freedesktop.org/wayland/wayland-protocols/-/archive/1.41/wayland-protocols-1.41.tar.bz2
+sha:0abbb958dd5b85fb5ab537b4c59cc0a51d1678179c4ca679b1b925605b467cba
 {% endblock %}
 
 {% block bld_tool %}

@@ -1135,6 +1135,7 @@ https://github.com/NOBLES5E/cproxy/archive/refs/tags/v4.1.6.post1.tar.gz
 https://github.com/NagyD/SDLPoP/archive/refs/tags/v1.23.tar.gz
 https://github.com/Nefelim4ag/Ananicy/archive/refs/tags/2.2.1.tar.gz
 https://github.com/Netatalk/netatalk/archive/refs/tags/netatalk-3-2-8.tar.gz
+https://github.com/Netflix/bpftop/archive/refs/tags/v0.6.0.tar.gz
 https://github.com/NetworkConfiguration/dhcpcd/archive/refs/tags/v10.0.2.tar.gz
 https://github.com/NetworkConfiguration/dhcpcd/archive/refs/tags/v10.0.3.tar.gz
 https://github.com/NetworkConfiguration/dhcpcd/archive/refs/tags/v10.0.4.tar.gz
@@ -3615,6 +3616,7 @@ https://gitlab.freedesktop.org/wayland/wayland-protocols/-/archive/1.34/wayland-
 https://gitlab.freedesktop.org/wayland/wayland-protocols/-/archive/1.35/wayland-protocols-1.35.tar.bz2
 https://gitlab.freedesktop.org/wayland/wayland-protocols/-/archive/1.36/wayland-protocols-1.36.tar.bz2
 https://gitlab.freedesktop.org/wayland/wayland-protocols/-/archive/1.39/wayland-protocols-1.39.tar.bz2
+https://gitlab.freedesktop.org/wayland/wayland-protocols/-/archive/1.41/wayland-protocols-1.41.tar.bz2
 https://gitlab.freedesktop.org/wayland/wayland-utils/-/archive/wayland-info-1.0.0/wayland-utils-wayland-info-1.0.0.tar.bz2
 https://gitlab.freedesktop.org/wayland/wayland-utils/-/archive/wayland-utils-1.0.0/wayland-utils-wayland-utils-1.0.0.tar.bz2
 https://gitlab.freedesktop.org/wayland/wayland/-/releases/1.22.0/downloads/wayland-1.22.0.tar.xz
