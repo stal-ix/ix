@@ -1,11 +1,11 @@
 {% extends '//die/hub.sh' %}
 
 {% block ya_git_commit %}
-a9b1ae79502da4ef29c689ec7df73a94bdb845aa
+8c3d07be192209a91266dd19f883ddff01488b1b
 {% endblock %}
 
 {% block ya_git_sha %}
-a64682926a36118f277300e1b52e67d9c355a761436bfc0693a3266f66a351ba
+df99b2ba52a1e7797426739a0364bdddb047f188f407aa69840261161c1bcf6f
 {% endblock %}
 
 {% block run_deps %}
