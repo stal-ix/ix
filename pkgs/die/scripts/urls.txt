@@ -207,6 +207,7 @@ https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.12.9.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.12.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.13.1.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.13.2.tar.xz
+https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.13.3.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.13.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.2.14.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.3.13.tar.xz
@@ -1176,6 +1177,7 @@ https://github.com/NixOS/nix/archive/refs/tags/2.25.2.tar.gz
 https://github.com/NixOS/nix/archive/refs/tags/2.25.3.tar.gz
 https://github.com/NixOS/nix/archive/refs/tags/2.25.5.tar.gz
 https://github.com/NixOS/nix/archive/refs/tags/2.26.1.tar.gz
+https://github.com/NixOS/nix/archive/refs/tags/2.26.2.tar.gz
 https://github.com/NixOS/patchelf/archive/refs/tags/0.18.0.tar.gz
 https://github.com/Novum/vkQuake/archive/refs/tags/1.30.1.tar.gz
 https://github.com/Novum/vkQuake/archive/refs/tags/1.31.2.tar.gz
@@ -1307,6 +1309,7 @@ https://github.com/alacritty/alacritty/archive/refs/tags/v0.13.1.tar.gz
 https://github.com/alacritty/alacritty/archive/refs/tags/v0.13.2.tar.gz
 https://github.com/alacritty/alacritty/archive/refs/tags/v0.14.0.tar.gz
 https://github.com/alacritty/alacritty/archive/refs/tags/v0.15.0.tar.gz
+https://github.com/alacritty/alacritty/archive/refs/tags/v0.15.1.tar.gz
 https://github.com/alacritty/alacritty/archive/refs/tags/v0.9.0.tar.gz
 https://github.com/alecthomas/chroma/archive/refs/tags/v2.13.0.tar.gz
 https://github.com/alecthomas/chroma/archive/refs/tags/v2.8.0.tar.gz
@@ -1838,6 +1841,7 @@ https://github.com/go-gitea/gitea/archive/refs/tags/v1.22.3.tar.gz
 https://github.com/go-gost/gost/archive/1fa5067d1450c7d0c7c4bfb5cbddc7ddbb49f76c.zip
 https://github.com/go-gost/gost/archive/refs/tags/v3.0.0-nightly.20240927.tar.gz
 https://github.com/go-task/task/archive/refs/tags/v3.14.0.tar.gz
+https://github.com/gohugoio/hugo/archive/refs/tags/v0.143.1.tar.gz
 https://github.com/gokcehan/lf/archive/refs/tags/r27.tar.gz
 https://github.com/gokcehan/lf/archive/refs/tags/r31.tar.gz
 https://github.com/gokcehan/lf/archive/refs/tags/r32.tar.gz
@@ -2574,6 +2578,7 @@ https://github.com/ncopa/su-exec/archive/refs/tags/v0.2.tar.gz
 https://github.com/ndevilla/iniparser/archive/refs/tags/v4.2.1.tar.gz
 https://github.com/ndevilla/iniparser/archive/refs/tags/v4.2.2.tar.gz
 https://github.com/ndevilla/iniparser/archive/refs/tags/v4.2.4.tar.gz
+https://github.com/ndevilla/iniparser/archive/refs/tags/v4.2.6.tar.gz
 https://github.com/ndevilla/iniparser/archive/refs/tags/v4.2.tar.gz
 https://github.com/nemtrif/utfcpp/archive/refs/tags/v3.2.4.tar.gz
 https://github.com/nemtrif/utfcpp/archive/refs/tags/v3.2.5.tar.gz
@@ -3075,6 +3080,7 @@ https://github.com/skvadrik/re2c/archive/refs/tags/3.1.tar.gz
 https://github.com/skvadrik/re2c/archive/refs/tags/4.0.1.tar.gz
 https://github.com/skvadrik/re2c/archive/refs/tags/4.0.2.tar.gz
 https://github.com/skvadrik/re2c/archive/refs/tags/4.0.tar.gz
+https://github.com/skvadrik/re2c/archive/refs/tags/4.1.tar.gz
 https://github.com/slackhq/nebula/archive/refs/tags/v1.8.2.tar.gz
 https://github.com/slackhq/nebula/archive/refs/tags/v1.9.0.tar.gz
 https://github.com/slackhq/nebula/archive/refs/tags/v1.9.1.tar.gz
