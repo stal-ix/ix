@@ -4,6 +4,7 @@
 lib/c
 lib/z
 lib/openssl
+lib/ca/bundle
 {% if darwin %}
 lib/darwin/framework/SystemConfiguration
 {% endif %}
