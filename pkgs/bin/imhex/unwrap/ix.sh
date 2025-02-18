@@ -30,7 +30,9 @@ lib/cap/stone
 lib/glfw/deps
 lib/python/3/10
 lib/json/nlohmann
+lib/shim/fake(lib_name=GLX)
 lib/shim/fake(lib_name=glfw)
+lib/shim/fake(lib_name=OpenGL)
 {% endblock %}
 
 {% block bld_tool %}
@@ -53,10 +55,6 @@ EOF
 {% endblock %}
 
 {% block cmake_flags %}
-OPENGL_opengl_LIBRARY=/
-OPENGL_glx_LIBRARY=/
-OPENGL_GLX_INCLUDE_DIR=/nowhere
-OPENGL_INCLUDE_DIR=/nowhere
 IMHEX_STATIC_LINK_PLUGINS=ON
 IMHEX_OFFLINE_BUILD=ON
 USE_SYSTEM_FMT=ON
