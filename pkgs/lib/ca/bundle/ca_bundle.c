@@ -1,6 +1,9 @@
-#include <string.h>
-
 #include "ca_bundle.h"
+
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <string.h>
+#include <unistd.h>
 
 // possible certificate files; stop after finding one.
 // stolen from go sources
@@ -14,5 +17,14 @@ static const char* knownLocations[] = {
 };
 
 const char* ix_ca_bundle() {
-     return knownLocations[0];
+    struct stat buf;
+
+    for (size_t i = 0; i < sizeof(knownLocations) / sizeof(*knownLocations); ++i) {
+        if (stat(knownLocations[i], &buf) == 0) {
+            return knownLocations[i];
+        }
+    }
+
+    // need return something
+    return knownLocations[0];
 }
