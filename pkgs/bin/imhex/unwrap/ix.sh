@@ -47,10 +47,6 @@ llvm=llvm_imhex
 {% endblock %}
 
 {% block patch %}
-find . -type f | while read l; do
-    sed -e 's|tellg() + a_length|tellg() + (std::streamoff)a_length|g' -i "${l}"
-done
-
 sed -e 's|OBJECT|STATIC|' \
     -i plugins/script_loader/support/c/CMakeLists.txt
 
