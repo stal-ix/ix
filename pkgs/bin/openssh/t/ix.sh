@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://github.com/openssh/openssh-portable/archive/refs/tags/V_9_9_P1.tar.gz
-sha:e8858153f188754d0bbf109477690eba226132879b6840cf08b51afb38151040
+https://github.com/openssh/openssh-portable/archive/refs/tags/V_9_9_P2.tar.gz
+sha:082dffcf651b9db762ddbe56ca25cc75a0355a7bea41960b47f3c139974c5e3e
 {% endblock %}
 
 {% block bld_libs %}

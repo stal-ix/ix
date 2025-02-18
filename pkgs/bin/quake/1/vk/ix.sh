@@ -17,7 +17,7 @@ lib/opus/file
 lib/xiph/flac
 lib/xiph/vorbis
 bin/quake/1/vk/dl
-lib/drivers/vulkan
+lib/vulkan/drivers
 {% endblock %}
 
 {% block bld_tool %}

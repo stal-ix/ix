@@ -5,11 +5,11 @@ https://github.com/WerWolv/ImHex
 {% endblock %}
 
 {% block git_commit %}
-d511080814dc78ad39a63f2071003c07ee37673c
+v1.37.1
 {% endblock %}
 
 {% block git_sha %}
-d8fa178f2ca08d831d4b4e0441dff38d10e4d0ffe93882b71b98f063bbfc6a61
+ab96820deb435e3c88476393a3721387ff415fc46b1838b89f27507c42767046
 {% endblock %}
 
 {% block bld_libs %}
@@ -30,15 +30,14 @@ lib/cap/stone
 lib/glfw/deps
 lib/python/3/10
 lib/json/nlohmann
+lib/shim/fake(lib_name=GLX)
 lib/shim/fake(lib_name=glfw)
+lib/shim/fake(lib_name=OpenGL)
 {% endblock %}
 
 {% block bld_tool %}
 bld/python
-{% endblock %}
-
-{% block cpp_includes %}
-${PWD}/lib/third_party/llvm-demangle/include
+bld/prepend
 {% endblock %}
 
 {% block cpp_defines %}
@@ -46,20 +45,16 @@ llvm=llvm_imhex
 {% endblock %}
 
 {% block patch %}
-find . -type f | while read l; do
-    sed -e 's|tellg() + a_length|tellg() + (std::streamoff)a_length|g' -i "${l}"
-done
+sed -e 's|OBJECT|STATIC|' \
+    -i plugins/script_loader/support/c/CMakeLists.txt
 
-base64 -d << EOF > lib/third_party/nativefiledialog/src/nfd_portal.cpp
-{% include 'nfd_portal.cpp/base64' %}
+prepend main/gui/source/messaging/linux.cpp << EOF
+#include <unistd.h>
+#include <jthread.hpp>
 EOF
 {% endblock %}
 
 {% block cmake_flags %}
-OPENGL_opengl_LIBRARY=/
-OPENGL_glx_LIBRARY=/
-OPENGL_GLX_INCLUDE_DIR=/nowhere
-OPENGL_INCLUDE_DIR=/nowhere
 IMHEX_STATIC_LINK_PLUGINS=ON
 IMHEX_OFFLINE_BUILD=ON
 USE_SYSTEM_FMT=ON

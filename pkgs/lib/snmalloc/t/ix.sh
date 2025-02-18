@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/microsoft/snmalloc/archive/refs/tags/0.6.0.tar.gz
-sha:de1bfb86407d5aac9fdad88319efdd5593ca2f6c61fc13371c4f34aee0b6664f
+https://github.com/microsoft/snmalloc/archive/refs/tags/0.7.1.tar.gz
+sha:91824fdf553f03cf6ef8be57f29f1d4f79cd651667455e9fe4af8b7c09e705d3
 {% endblock %}
 
 {% block lib_deps %}

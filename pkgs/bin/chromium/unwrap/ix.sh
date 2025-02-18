@@ -220,17 +220,12 @@ __is_cpp17_contiguous_iterator=__libcpp_is_contiguous_iterator
 {% endblock %}
 
 {% block gn_args %}
-#angle_shared_libvulkan=false
-#compile_suid_client=false
-#compile_syscall_broker=false
-#enable_base_tracing=false
-#use_wayland_gbm=false
+use_wayland_gbm=false
 use_system_minigbm=false
 angle_use_custom_libvulkan=false
 angle_shared_libvulkan=false
 angle_build_tests=false
 angle_enable_commit_id=false
-angle_static_library=true
 blink_enable_generated_code_formatting=false
 blink_symbol_level=0
 build_dawn_tests=false
@@ -247,7 +242,6 @@ enable_browser_speech_service=false
 enable_component_updater=false
 enable_gwp_asan=false
 enable_hangout_services_extension=false
-enable_js_type_check=false
 enable_mojom_closure_compile=false
 enable_nacl=false
 enable_nacl_nonsfi=false

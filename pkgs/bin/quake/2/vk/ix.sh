@@ -27,5 +27,5 @@ lib/alsa
 lib/sdl/2
 lib/vulkan/loader
 lib/vulkan/headers
-lib/drivers/vulkan
+lib/vulkan/drivers
 {% endblock %}

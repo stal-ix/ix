@@ -50,6 +50,8 @@
 #}
 
 {% block run_deps %}
+bin/bpf/top
+bin/hugo
 bin/contour
 bin/ruff
 bin/nix

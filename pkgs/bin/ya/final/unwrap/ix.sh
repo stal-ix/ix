@@ -23,4 +23,7 @@ devtools/ya/bin/ya-bin
 find contrib/libs/libunwind -type f | while read l; do
     sed -e 's|#pragma.*||' -i ${l}
 done
+base64 -d << EOF > contrib/libs/openssl/ar.pyplugin
+{% include 'ar.pyplugin/base64' %}
+EOF
 {% endblock %}
