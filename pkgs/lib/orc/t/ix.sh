@@ -1,8 +1,8 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://gitlab.freedesktop.org/gstreamer/orc/-/archive/0.4.40/orc-0.4.40.tar.bz2
-sha:cee70f3c101ecd78ed3e400c32d62d2202dadb1cb13f0e7f32ade4b8d6f740e9
+https://gitlab.freedesktop.org/gstreamer/orc/-/archive/0.4.40/orc-0.4.41.tar.bz2
+sha:29b6114976f0cd50b78eeb2cce06bf3436f2d72ea787a1b03317ac01bac96432
 {% endblock %}
 
 {% block lib_deps %}
