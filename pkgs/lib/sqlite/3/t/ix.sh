@@ -1,16 +1,20 @@
-{% extends '//die/c/autorehell.sh' %}
+{% extends '//die/c/configure.sh' %}
 
 {% block fetch %}
-https://www.sqlite.org/2024/sqlite-autoconf-3470200.tar.gz
-sha:f1b2ee412c28d7472bc95ba996368d6f0cdcf00362affdadb27ed286c179540b
+https://github.com/sqlite/sqlite/archive/refs/tags/version-3.49.1.tar.gz
+sha:bc0ae92c7f7158c6060378582ecb6ae9001a1c2eb08719e12e08940ee076cdb8
 {% endblock %}
 
 {% block lib_deps %}
 lib/c
 {% endblock %}
 
-{% block configure_flags %}
---enable-dynamic-extensions=no
+{% block configure_all_flags %}
+--prefix=${out}
+--disable-shared
+--build={{host.gnu.three}}
+--host={{target.gnu.three}}
+--disable-load-extension
 {% endblock %}
 
 {% block cpp_defines %}
