@@ -2,6 +2,6 @@
 
 set -xue
 
-export PATH="/bin:${PATH}"
+export PATH="${PATH}:/bin"
 
 exec fetcher "${1}" "$(basename ${1})" "__skip__"
