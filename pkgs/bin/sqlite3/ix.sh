@@ -6,7 +6,9 @@ lib/readline
 {{super()}}
 {% endblock %}
 
-{% block configure_flags %}
---enable-readline
+{% block configure_all_flags %}
 {{super()}}
+--readline
+--with-readline-ldflags="-lreadline"
+--with-readline-cflags="-I/nowhere"
 {% endblock %}
