@@ -1719,6 +1719,7 @@ https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.34.0.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.34.1.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.35.0.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.36.1.tar.gz
+https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.37.0.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.4.0.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.5.0.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.6.0.tar.gz
@@ -2692,6 +2693,7 @@ https://github.com/openssh/openssh-portable/archive/refs/tags/V_9_6_P1.tar.gz
 https://github.com/openssh/openssh-portable/archive/refs/tags/V_9_7_P1.tar.gz
 https://github.com/openssh/openssh-portable/archive/refs/tags/V_9_8_P1.tar.gz
 https://github.com/openssh/openssh-portable/archive/refs/tags/V_9_9_P1.tar.gz
+https://github.com/openssh/openssh-portable/archive/refs/tags/V_9_9_P2.tar.gz
 https://github.com/openssl/openssl/archive/refs/tags/openssl-3.3.2.tar.gz
 https://github.com/openssl/openssl/archive/refs/tags/openssl-3.4.0.tar.gz
 https://github.com/openssl/openssl/archive/refs/tags/openssl-3.4.1.tar.gz
@@ -3610,6 +3612,7 @@ https://gitlab.freedesktop.org/serebit/waycheck/-/archive/v1.2.1/waycheck-v1.2.1
 https://gitlab.freedesktop.org/serebit/waycheck/-/archive/v1.3.0/waycheck-v1.3.0.tar.bz2
 https://gitlab.freedesktop.org/serebit/waycheck/-/archive/v1.3.1/waycheck-v1.3.1.tar.bz2
 https://gitlab.freedesktop.org/serebit/waycheck/-/archive/v1.4.0/waycheck-v1.4.0.tar.bz2
+https://gitlab.freedesktop.org/serebit/waycheck/-/archive/v1.6.0/waycheck-v1.6.0.tar.bz2
 https://gitlab.freedesktop.org/slirp/libslirp/-/archive/v4.7.0/libslirp-v4.7.0.tar.bz2
 https://gitlab.freedesktop.org/upower/upower/-/archive/v1.90.1/upower-v1.90.1.tar.bz2
 https://gitlab.freedesktop.org/upower/upower/-/archive/v1.90.7/upower-v1.90.7.tar.bz2
@@ -3991,6 +3994,7 @@ https://mirrors.edge.kernel.org/pub/linux/utils/kbd/kbd-2.6.3.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/utils/kbd/kbd-2.6.4.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/utils/kbd/kbd-2.7.1.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/utils/kbd/kbd-2.7.tar.xz
+https://mirrors.edge.kernel.org/pub/software/network/ethtool/ethtool-6.11.tar.xz
 https://mirrors.edge.kernel.org/pub/software/network/ethtool/ethtool-6.2.tar.xz
 https://mirrors.edge.kernel.org/pub/software/network/ethtool/ethtool-6.7.tar.xz
 https://mirrors.edge.kernel.org/pub/software/utils/pciutils/pciutils-3.11.1.tar.xz
