@@ -16,8 +16,6 @@ bin/htop
 bin/niri
 bin/bash
 bin/less
-bin/iperf
-bin/wirez
 set/debug
 bin/fuzzel
 bin/waybar
@@ -27,7 +25,6 @@ bin/sway/bg
 bin/iwd/ctl
 bin/swayimg
 bin/tcpdump
-bin/iron/bar
 bin/sing/box
 bin/epiphany
 bin/telegram
@@ -36,7 +33,6 @@ bin/tun2socks
 bin/alacritty
 bin/fontconfig
 bin/brightnessctl
-bin/q/cache/grind
 set/pg/user/scripts
 bin/coreutils/uutils
 {% endblock %}

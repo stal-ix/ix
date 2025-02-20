@@ -120,6 +120,7 @@ http://www.haproxy.org/download/3.1/src/haproxy-3.1.0.tar.gz
 http://www.haproxy.org/download/3.1/src/haproxy-3.1.1.tar.gz
 http://www.haproxy.org/download/3.1/src/haproxy-3.1.2.tar.gz
 http://www.haproxy.org/download/3.1/src/haproxy-3.1.3.tar.gz
+http://www.haproxy.org/download/3.1/src/haproxy-3.1.4.tar.gz
 http://www.ijg.org/files/jpegsrc.v9e.tar.gz
 http://www.inf.puc-rio.br/~roberto/lpeg/lpeg-1.1.0.tar.gz
 http://www.jedrea.com/chmlib/chmlib-0.40.tar.bz2
@@ -1285,6 +1286,7 @@ https://github.com/Z3Prover/z3/archive/refs/tags/z3-4.13.0.tar.gz
 https://github.com/Z3Prover/z3/archive/refs/tags/z3-4.13.2.tar.gz
 https://github.com/Z3Prover/z3/archive/refs/tags/z3-4.13.3.tar.gz
 https://github.com/Z3Prover/z3/archive/refs/tags/z3-4.13.4.tar.gz
+https://github.com/Z3Prover/z3/archive/refs/tags/z3-4.14.0.tar.gz
 https://github.com/a-j-wood/pv/releases/download/v1.7.24/pv-1.7.24.tar.gz
 https://github.com/abseil/abseil-cpp/archive/refs/tags/20230125.3.tar.gz
 https://github.com/abseil/abseil-cpp/archive/refs/tags/20230802.1.tar.gz
@@ -1330,6 +1332,7 @@ https://github.com/anrieff/libcpuid/archive/refs/tags/v0.6.5.tar.gz
 https://github.com/anrieff/libcpuid/archive/refs/tags/v0.7.0.tar.gz
 https://github.com/antonmedv/llama/archive/refs/tags/v1.4.0.tar.gz
 https://github.com/antonmedv/walk/archive/refs/tags/v1.10.0.tar.gz
+https://github.com/antonmedv/walk/archive/refs/tags/v1.13.0.tar.gz
 https://github.com/antonmedv/walk/archive/refs/tags/v1.6.2.tar.gz
 https://github.com/antonmedv/walk/archive/refs/tags/v1.7.0.tar.gz
 https://github.com/apache/serf/archive/refs/tags/1.3.9.tar.gz
@@ -1719,6 +1722,7 @@ https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.34.0.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.34.1.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.35.0.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.36.1.tar.gz
+https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.37.0.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.4.0.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.5.0.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.6.0.tar.gz
@@ -2079,6 +2083,7 @@ https://github.com/isacikgoz/tldr/archive/refs/tags/v1.0.0-alpha.tar.gz
 https://github.com/isc-projects/bind9/archive/refs/tags/v9.19.15.tar.gz
 https://github.com/isc-projects/bind9/archive/refs/tags/v9.20.4.tar.gz
 https://github.com/isc-projects/bind9/archive/refs/tags/v9.20.5.tar.gz
+https://github.com/isc-projects/bind9/archive/refs/tags/v9.20.6.tar.gz
 https://github.com/ispc/ispc/archive/refs/tags/v1.18.1.tar.gz
 https://github.com/ivmai/bdwgc/archive/refs/tags/v8.2.4.tar.gz
 https://github.com/ivmai/bdwgc/archive/refs/tags/v8.2.6.tar.gz
@@ -2448,6 +2453,7 @@ https://github.com/luceneplusplus/LucenePlusPlus/archive/refs/tags/rel_3.0.8.tar
 https://github.com/luceneplusplus/LucenePlusPlus/archive/refs/tags/rel_3.0.9.tar.gz
 https://github.com/lunarmodules/luafilesystem/archive/refs/tags/v1_8_0.tar.gz
 https://github.com/lxde/libfm/archive/refs/tags/1.3.2.tar.gz
+https://github.com/lxde/libfm/archive/refs/tags/1.4.0.tar.gz
 https://github.com/lxde/menu-cache/archive/refs/tags/1.1.0.tar.gz
 https://github.com/lxde/pcmanfm/archive/refs/tags/1.3.2.tar.gz
 https://github.com/lxqt/liblxqt/archive/refs/tags/2.0.0.tar.gz
@@ -2692,6 +2698,7 @@ https://github.com/openssh/openssh-portable/archive/refs/tags/V_9_6_P1.tar.gz
 https://github.com/openssh/openssh-portable/archive/refs/tags/V_9_7_P1.tar.gz
 https://github.com/openssh/openssh-portable/archive/refs/tags/V_9_8_P1.tar.gz
 https://github.com/openssh/openssh-portable/archive/refs/tags/V_9_9_P1.tar.gz
+https://github.com/openssh/openssh-portable/archive/refs/tags/V_9_9_P2.tar.gz
 https://github.com/openssl/openssl/archive/refs/tags/openssl-3.3.2.tar.gz
 https://github.com/openssl/openssl/archive/refs/tags/openssl-3.4.0.tar.gz
 https://github.com/openssl/openssl/archive/refs/tags/openssl-3.4.1.tar.gz
@@ -3090,6 +3097,7 @@ https://github.com/slackhq/nebula/archive/refs/tags/v1.9.0.tar.gz
 https://github.com/slackhq/nebula/archive/refs/tags/v1.9.1.tar.gz
 https://github.com/smuellerDD/jitterentropy-library/archive/refs/tags/v3.4.1.tar.gz
 https://github.com/smuellerDD/jitterentropy-library/archive/refs/tags/v3.6.0.tar.gz
+https://github.com/sqlite/sqlite/archive/refs/tags/version-3.49.1.tar.gz
 https://github.com/squid-cache/squid/archive/refs/tags/SQUID_6_10.tar.gz
 https://github.com/squid-cache/squid/archive/refs/tags/SQUID_6_11.tar.gz
 https://github.com/squid-cache/squid/archive/refs/tags/SQUID_6_13.tar.gz
@@ -3251,6 +3259,7 @@ https://github.com/tetratelabs/wazero/archive/refs/tags/v1.7.3.tar.gz
 https://github.com/tetratelabs/wazero/archive/refs/tags/v1.8.0.tar.gz
 https://github.com/tetratelabs/wazero/archive/refs/tags/v1.8.1.tar.gz
 https://github.com/tetratelabs/wazero/archive/refs/tags/v1.8.2.tar.gz
+https://github.com/tetratelabs/wazero/archive/refs/tags/v1.9.0.tar.gz
 https://github.com/texstudio-org/texstudio/archive/refs/tags/4.4.1.tar.gz
 https://github.com/texstudio-org/texstudio/archive/refs/tags/4.7.2.tar.gz
 https://github.com/thepowersgang/mrustc/archive/1b1416bb2b44e2c331c7201833305cac29d571e8.zip
@@ -3610,6 +3619,7 @@ https://gitlab.freedesktop.org/serebit/waycheck/-/archive/v1.2.1/waycheck-v1.2.1
 https://gitlab.freedesktop.org/serebit/waycheck/-/archive/v1.3.0/waycheck-v1.3.0.tar.bz2
 https://gitlab.freedesktop.org/serebit/waycheck/-/archive/v1.3.1/waycheck-v1.3.1.tar.bz2
 https://gitlab.freedesktop.org/serebit/waycheck/-/archive/v1.4.0/waycheck-v1.4.0.tar.bz2
+https://gitlab.freedesktop.org/serebit/waycheck/-/archive/v1.6.0/waycheck-v1.6.0.tar.bz2
 https://gitlab.freedesktop.org/slirp/libslirp/-/archive/v4.7.0/libslirp-v4.7.0.tar.bz2
 https://gitlab.freedesktop.org/upower/upower/-/archive/v1.90.1/upower-v1.90.1.tar.bz2
 https://gitlab.freedesktop.org/upower/upower/-/archive/v1.90.7/upower-v1.90.7.tar.bz2
@@ -3839,6 +3849,7 @@ https://gitlab.xiph.org/xiph/speex/-/archive/Speex-1.2.1/speex-Speex-1.2.1.tar.b
 https://gitlab.xiph.org/xiph/speexdsp/-/archive/SpeexDSP-1.2.1/speexdsp-SpeexDSP-1.2.1.tar.bz2
 https://gitlab.xiph.org/xiph/vorbis/-/archive/v1.3.7/vorbis-v1.3.7.tar.bz2
 https://gnupg.org/ftp/gcrypt/libassuan/libassuan-3.0.1.tar.bz2
+https://gnupg.org/ftp/gcrypt/libassuan/libassuan-3.0.2.tar.bz2
 https://gnupg.org/ftp/gcrypt/libgcrypt/libgcrypt-1.10.2.tar.bz2
 https://gnupg.org/ftp/gcrypt/libgcrypt/libgcrypt-1.10.3.tar.bz2
 https://gnupg.org/ftp/gcrypt/libgcrypt/libgcrypt-1.11.0.tar.bz2
@@ -3991,6 +4002,7 @@ https://mirrors.edge.kernel.org/pub/linux/utils/kbd/kbd-2.6.3.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/utils/kbd/kbd-2.6.4.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/utils/kbd/kbd-2.7.1.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/utils/kbd/kbd-2.7.tar.xz
+https://mirrors.edge.kernel.org/pub/software/network/ethtool/ethtool-6.11.tar.xz
 https://mirrors.edge.kernel.org/pub/software/network/ethtool/ethtool-6.2.tar.xz
 https://mirrors.edge.kernel.org/pub/software/network/ethtool/ethtool-6.7.tar.xz
 https://mirrors.edge.kernel.org/pub/software/utils/pciutils/pciutils-3.11.1.tar.xz
