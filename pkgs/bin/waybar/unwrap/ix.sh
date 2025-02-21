@@ -1,8 +1,8 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://github.com/Alexays/Waybar/archive/refs/tags/0.11.0.tar.gz
-sha:6a0e9f0f7f2eff503951958cbb16dc39041c0b67e86c35154e8507677c61be9d
+https://github.com/Alexays/Waybar/archive/refs/tags/0.12.0.tar.gz
+sha:80454a0778176f575c112bdef9107f272621b578aa629bcc257ad9844a6c7165
 {% endblock %}
 
 {% block bld_libs %}
