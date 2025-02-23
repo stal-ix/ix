@@ -12,7 +12,6 @@ cp ${out}/lib/pkgconfig/opengl.pc ${out}/lib/pkgconfig/glesv2.pc
 {% block env %}
 export CPPFLAGS="-DEGL_NO_X11=1 \${CPPFLAGS}"
 export COFLAGS="--with-gallium=${out} \${COFLAGS}"
-export MESA_HEADERS=${out}/include
 {% endblock %}
 
 {% block patch %}
