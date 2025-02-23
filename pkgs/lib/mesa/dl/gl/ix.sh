@@ -1,9 +1,5 @@
 {% extends '//die/dl/fix.sh' %}
 
-{% block lib_deps %}
-lib/mesa/gl/dl/glx
-{% endblock %}
-
 {% block export_symbols %}
 glXGetProcAddressARB
 glAccum
