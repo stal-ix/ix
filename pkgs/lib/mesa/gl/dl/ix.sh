@@ -1,7 +1,6 @@
 {% extends '//die/dl/fix.sh' %}
 
 {% block lib_deps %}
-lib/mesa/gl
 lib/mesa/gl/dl/glx
 {% endblock %}
 

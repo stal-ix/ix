@@ -1,9 +1,5 @@
 {% extends '//die/dl/fix.sh' %}
 
-{% block lib_deps %}
-lib/mesa/glesv2
-{% endblock %}
-
 {% block export_lib %}
 GLESv2
 {% endblock %}
