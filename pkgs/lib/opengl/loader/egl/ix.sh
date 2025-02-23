@@ -1,4 +1,4 @@
-{% extends '//die/c/implib.sh' %}
+{% extends '//die/dl/implib.sh' %}
 
 {% block implib_name %}
 EGL
