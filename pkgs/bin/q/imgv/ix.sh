@@ -1,8 +1,15 @@
 {% extends '//die/c/cmake.sh' %}
 
-{% block fetch %}
-https://github.com/easymodo/qimgv/archive/refs/tags/v1.0.2.tar.gz
-sha:ace75077c5b6f3cb2b0d40b24482b3778728d98dce75ed8186c7ae4282e57634
+{% block git_repo %}
+https://github.com/easymodo/qimgv
+{% endblock %}
+
+{% block git_commit %}
+c913500832f735a271f5880527738ec4e584b15b
+{% endblock %}
+
+{% block git_sha %}
+7af96d5201690e3826921af297057774e469ab9073c59d17dc13cc8d9c9fcc2e
 {% endblock %}
 
 {% block bld_libs %}
@@ -18,6 +25,7 @@ lib/qt/6/compat
 
 {% block bld_tool %}
 bld/qt/6
+bld/qt/6/tools
 {% endblock %}
 
 {% block build_flags %}
