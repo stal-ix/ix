@@ -26,7 +26,6 @@ bin/iwd/ctl
 bin/swayimg
 bin/tcpdump
 bin/sing/box
-bin/epiphany
 bin/telegram
 bin/xdg/open
 bin/tun2socks
