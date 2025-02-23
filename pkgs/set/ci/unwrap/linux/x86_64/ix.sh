@@ -449,7 +449,7 @@ bin/cmake/gui
 bin/cmake
 bin/dropbear
 bin/dropbear/runit
-bin/weston
+#bin/weston
 bin/slurp
 bin/mingetty/runit
 bin/mingetty
