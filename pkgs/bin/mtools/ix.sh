@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-http://ftp.gnu.org/gnu/mtools/mtools-4.0.47.tar.lz
-sha:2709cd2f42d65500829b056cb0630edd515d7060b4865bad31277f0da9f9e9d5
+http://ftp.gnu.org/gnu/mtools/mtools-4.0.48.tar.lz
+sha:7d57f14a2482dc4658e4b386180793ef50f0de89ee3a9a28f0a371630baac7c4
 {% endblock %}
 
 {% block bld_libs %}

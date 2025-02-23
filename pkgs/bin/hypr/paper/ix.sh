@@ -1,14 +1,20 @@
 {% extends '//bin/hypr/t/ix.sh' %}
 
 {% block fetch %}
-https://github.com/hyprwm/hyprpaper/archive/refs/tags/v0.7.0.tar.gz
-sha:4840425013b95b49120aeb87d4d4e7d83f8956e847a537e1e6dd7f58a4b643b4
+https://github.com/hyprwm/hyprpaper/archive/refs/tags/v0.7.4.tar.gz
+sha:a2375dae58d29293b942a60cd465771b2c3c85cfcac628ec4897f11e7008666f
 {% endblock %}
 
 {% block bld_libs %}
 {{super()}}
 lib/webp
 lib/hypr/lang
+lib/hypr/graphics
+{% endblock %}
+
+{% block bld_tool %}
+{{super()}}
+bin/hypr/wayland/scanner
 {% endblock %}
 
 {% block install %}

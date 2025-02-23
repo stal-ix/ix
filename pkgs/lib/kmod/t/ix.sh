@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://git.kernel.org/pub/scm/utils/kernel/kmod/kmod.git/snapshot/kmod-32.tar.gz
-sha:9477fa096acfcddaa56c74b988045ad94ee0bac22e0c1caa84ba1b7d408da76e
+https://git.kernel.org/pub/scm/utils/kernel/kmod/kmod.git/snapshot/kmod-34.tar.gz
+sha:cb47be49366b596e4554eeeb7595b128feb261619c7675603e004b07c5ebbd5b
 {% endblock %}
 
 {% block lib_deps %}
@@ -27,6 +27,7 @@ bld/fake/er(tool_name=xsltproc)
 --with-zlib
 --with-zstd
 --with-openssl
+--disable-manpages
 {% endblock %}
 
 {% block patch %}

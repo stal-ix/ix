@@ -1,8 +1,8 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://github.com/harfbuzz/harfbuzz/archive/refs/tags/10.2.0.tar.gz
-sha:11749926914fd488e08e744538f19329332487a6243eec39ef3c63efa154a578
+https://github.com/harfbuzz/harfbuzz/archive/refs/tags/10.3.0.tar.gz
+sha:39cd3df7217f2477cf31f3c9d3a002e4d5ef0ba6822151e82ea6b46e42ea1cb2
 {% endblock %}
 
 {% block lib_deps %}

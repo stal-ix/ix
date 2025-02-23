@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/hyprwm/hyprwayland-scanner/archive/refs/tags/v0.4.2.tar.gz
-sha:2f1e54336ed6cc3dbab5ad5279f2520eae1a90fc80852ab005a8250a5a15d1ac
+https://github.com/hyprwm/hyprwayland-scanner/archive/refs/tags/v0.4.4.tar.gz
+sha:ac73f626019f8d819ff79a5fca06ce4768ce8a3bded6f48c404445f3afaa25ac
 {% endblock %}
 
 {% block bld_libs %}
@@ -14,4 +14,3 @@ lib/pugixml
 {% block postinstall %}
 :
 {% endblock %}
-

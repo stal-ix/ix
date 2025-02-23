@@ -9,6 +9,7 @@ lib/c
 lib/c++
 lib/re2
 lib/uuid
+lib/glaze
 lib/pango
 lib/cairo
 lib/input

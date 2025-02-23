@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/hyprwm/hyprlock/archive/refs/tags/v0.5.0.tar.gz
-sha:4f8a0199de205ad21a4e3da88c0196514a0ba3c6162e44f93e7cfb96371daf99
+https://github.com/hyprwm/hyprlock/archive/refs/tags/v0.7.0.tar.gz
+sha:0ee8d363cfe84bbca9b32062e34926aa713b9505927117593cc595d6e1e67cbe
 {% endblock %}
 
 {% block bld_libs %}
@@ -22,14 +22,22 @@ lib/hypr/utils
 lib/xkb/common
 lib/drivers/3d
 lib/sd/bus/c++/2
+lib/hypr/graphics
 lib/shim/fake(lib_name=OpenGL)
 lib/shim/fake(lib_name=GLX)
 {% endblock %}
 
 {% block bld_tool %}
+bld/prepend
 bld/wayland
+bin/hypr/wayland/scanner
+{% endblock %}
+
+{% block build_flags %}
+shut_up
 {% endblock %}
 
 {% block patch %}
-sed -e 's|OpenGL::GL||' -i CMakeLists.txt
+sed -e 's|190100|10005000|' \
+    -i src/renderer/widgets/IWidget.cpp
 {% endblock %}
