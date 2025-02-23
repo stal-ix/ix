@@ -50,6 +50,7 @@
 #}
 
 {% block run_deps %}
+#bin/hypr
 bin/bpf/top
 bin/hugo
 bin/contour
@@ -779,7 +780,6 @@ bin/tree
 bin/ntp
 bin/lsof
 bin/telegram
-bin/hypr
 bin/schedtool
 bin/cpu/limit
 bin/opj
