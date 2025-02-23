@@ -1,5 +1,9 @@
 {% extends '//die/dl/fix.sh' %}
 
+{% block export_prefix %}
+mesa_egl_
+{% endblock %}
+
 {% block export_symbols %}
 eglBindAPI
 eglBindTexImage

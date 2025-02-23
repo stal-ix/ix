@@ -1,5 +1,5 @@
 #include <dlfcn.h>
 
-void* glXGetProcAddressARB(const char* name) {
+void* mesa_glesv2_glXGetProcAddressARB(const char* name) {
     return dlsym(dlopen("GL", RTLD_GLOBAL), name);
 }

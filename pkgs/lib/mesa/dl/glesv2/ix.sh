@@ -1,5 +1,9 @@
 {% extends '//die/dl/fix.sh' %}
 
+{% block export_prefix %}
+mesa_glesv2_
+{% endblock %}
+
 {% block export_lib %}
 GLESv2
 {% endblock %}

@@ -2,16 +2,8 @@
 
 {% block install %}
 {{super()}}
-find ${out}/lib/pkgconfig -type f -name '*.pc' | while read l; do
-    sed -e 's|glesv1_cm,||g' -i ${l}
-    sed -e 's|-lgallium.*||' -i ${l}
-done
-cp ${out}/lib/pkgconfig/opengl.pc ${out}/lib/pkgconfig/glesv2.pc
-{% endblock %}
-
-{% block env %}
-export CPPFLAGS="-DEGL_NO_X11=1 \${CPPFLAGS}"
-export COFLAGS="--with-gallium=${out} \${COFLAGS}"
+rm -rf ${out}/lib/pkgconfig
+rm -rf ${out}/include
 {% endblock %}
 
 {% block patch %}
