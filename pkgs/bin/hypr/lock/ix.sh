@@ -28,10 +28,16 @@ lib/shim/fake(lib_name=GLX)
 {% endblock %}
 
 {% block bld_tool %}
+bld/prepend
 bld/wayland
 bin/hypr/wayland/scanner
 {% endblock %}
 
 {% block build_flags %}
 shut_up
+{% endblock %}
+
+{% block patch %}
+sed -e 's|190100|10005000|' \
+    -i src/renderer/widgets/IWidget.cpp
 {% endblock %}

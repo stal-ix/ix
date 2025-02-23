@@ -1,13 +1,8 @@
 {% extends '//lib/date/t/ix.sh' %}
 
-{% block bld_tool %}
+{% block lib_deps %}
 {{super()}}
-bld/genpc
-{% endblock %}
-
-{% block install %}
-{{super()}}
-genpc "date" "{{self.version()}}"
+lib/shim/fake/pkg(pkg_name=date,pkg_ver={{self.version()}})
 {% endblock %}
 
 {% block patch %}
