@@ -5,7 +5,6 @@ mesa_glesv2_
 {% endblock %}
 
 {% block export_symbols %}
-glXGetProcAddressARB
 glAccum
 glActiveShaderProgram
 glActiveTexture

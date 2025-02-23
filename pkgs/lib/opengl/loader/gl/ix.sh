@@ -5,7 +5,6 @@ GL
 {% endblock %}
 
 {% block implib_symbols %}
-glXGetProcAddressARB
 glAccum
 glActiveShaderProgram
 glActiveTexture
