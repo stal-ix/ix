@@ -15,6 +15,7 @@ lib/json/c
 lib/wayland
 lib/wlroots/18
 lib/gdk/pixbuf
+lib/vulkan/loader/dl
 {% endblock %}
 
 {% block bld_tool %}

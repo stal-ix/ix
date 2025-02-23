@@ -1,4 +1,4 @@
-{% extends '//lib/tcmalloc/11/ix.sh' %}
+{% extends '//lib/gperftools/11/ix.sh' %}
 
 {% block fetch %}
 https://github.com/gperftools/gperftools/archive/refs/tags/gperftools-2.15.tar.gz
