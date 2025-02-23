@@ -51,7 +51,7 @@
 
 {% block run_deps %}
 bin/syd/box
-bin/hypr
+#bin/hypr
 bin/bpf/top
 bin/hugo
 bin/contour
@@ -127,8 +127,8 @@ bin/bloaty
 bin/ultra/hdr/app
 bin/xdg/dbus/proxy
 bin/elementary/screenshot
-bin/sway(mesa_driver=iris)
-bin/sway(mesa_driver=radeonsi)
+#bin/sway(mesa_driver=iris)
+#bin/sway(mesa_driver=radeonsi)
 bin/llvm/spirv
 bin/elementary/dock
 bin/ebpf/verifier
@@ -181,7 +181,7 @@ bin/kms/con/fast
 bin/g/bsd/dialog
 bin/rqbit
 bin/shot/man
-bin/sway/fx
+#bin/sway/fx
 bin/dns/proxy
 bin/openntpd
 bin/yazi
@@ -496,11 +496,11 @@ bin/dhcpcd
 bin/gn
 bin/glib/codegen
 bin/pv
-bin/sway/tools
-bin/sway/lock
-bin/sway/idle
-bin/sway/bg
-bin/sway
+#bin/sway/tools
+#bin/sway/lock
+#bin/sway/idle
+#bin/sway/bg
+#bin/sway
 bin/bmake
 bin/waybar
 bin/mandoc
