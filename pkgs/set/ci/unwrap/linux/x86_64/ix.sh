@@ -140,7 +140,6 @@ bin/go/lang/23
 bin/lapce
 bin/evsieve
 bin/erofs/utils
-bin/mutter
 bin/elementary/files
 bin/elementary/terminal
 bin/avizo
