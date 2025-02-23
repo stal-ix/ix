@@ -50,6 +50,7 @@
 #}
 
 {% block run_deps %}
+bin/syd/box
 bin/hypr
 bin/bpf/top
 bin/hugo
