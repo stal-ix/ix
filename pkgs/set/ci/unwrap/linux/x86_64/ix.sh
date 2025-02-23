@@ -51,7 +51,7 @@
 
 {% block run_deps %}
 bin/syd/box
-#bin/hypr
+bin/hypr
 bin/bpf/top
 bin/hugo
 bin/contour
@@ -181,7 +181,7 @@ bin/kms/con/fast
 bin/g/bsd/dialog
 bin/rqbit
 bin/shot/man
-#bin/sway/fx
+bin/sway/fx
 bin/dns/proxy
 bin/openntpd
 bin/yazi
@@ -449,7 +449,7 @@ bin/cmake/gui
 bin/cmake
 bin/dropbear
 bin/dropbear/runit
-#bin/weston
+bin/weston
 bin/slurp
 bin/mingetty/runit
 bin/mingetty
@@ -496,11 +496,11 @@ bin/dhcpcd
 bin/gn
 bin/glib/codegen
 bin/pv
-#bin/sway/tools
-#bin/sway/lock
-#bin/sway/idle
-#bin/sway/bg
-#bin/sway
+bin/sway/tools
+bin/sway/lock
+bin/sway/idle
+bin/sway/bg
+bin/sway
 bin/bmake
 bin/waybar
 bin/mandoc
