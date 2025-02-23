@@ -62,6 +62,7 @@ NO_XWAYLAND=ON
 {% endblock %}
 
 {% block meson_flags %}
+hyprpm=disabled
 xwayland=disabled
 systemd=disabled
 {% endblock %}

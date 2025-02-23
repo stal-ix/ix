@@ -50,7 +50,7 @@
 #}
 
 {% block run_deps %}
-#bin/hypr
+bin/hypr
 bin/bpf/top
 bin/hugo
 bin/contour
