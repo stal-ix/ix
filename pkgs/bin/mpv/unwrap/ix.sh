@@ -6,6 +6,7 @@ lib/mu/js
 lib/opengl
 lib/wayland
 lib/blueray
+lib/x265/dl
 lib/xkb/common
 lib/drivers/3d
 lib/rubber/band
