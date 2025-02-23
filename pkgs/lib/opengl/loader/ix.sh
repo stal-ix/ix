@@ -1,52 +1,12 @@
-{% extends '//die/c/implib.sh' %}
+{% extends '//die/hub.sh' %}
 
-{% block implib_name %}
-EGL
-{% endblock %}
-
-{% block implib_symbols %}
-eglBindAPI
-eglBindTexImage
-eglChooseConfig
-eglClientWaitSync
-eglCopyBuffers
-eglCreateContext
-eglCreateImage
-eglCreatePbufferFromClientBuffer
-eglCreatePbufferSurface
-eglCreatePixmapSurface
-eglCreatePlatformPixmapSurface
-eglCreatePlatformWindowSurface
-eglCreateSync
-eglCreateWindowSurface
-eglDestroyContext
-eglDestroyImage
-eglDestroySurface
-eglDestroySync
-eglGetConfigAttrib
-eglGetConfigs
-eglGetCurrentContext
-eglGetCurrentDisplay
-eglGetCurrentSurface
-eglGetDisplay
-eglGetError
-eglGetPlatformDisplay
-eglGetProcAddress
-eglGetSyncAttrib
-eglInitialize
-eglMakeCurrent
-eglQueryAPI
-eglQueryContext
-eglQueryString
-eglQuerySurface
-eglReleaseTexImage
-eglReleaseThread
-eglSurfaceAttrib
-eglSwapBuffers
-eglSwapInterval
-eglTerminate
-eglWaitClient
-eglWaitGL
-eglWaitNative
-eglWaitSync
+{% block lib_deps %}
+lib/opengl/headers
+lib/opengl/loader/gl
+lib/opengl/loader/egl
+lib/opengl/loader/glesv2
+lib/shim/fake/pkg(pkg_name=dri,pkg_ver=100500)
+lib/shim/fake/pkg(pkg_name=egl,pkg_ver=100500)
+lib/shim/fake/pkg(pkg_name=glesv2,pkg_ver=100500)
+lib/shim/fake/pkg(pkg_name=opengl,pkg_ver=100500)
 {% endblock %}
