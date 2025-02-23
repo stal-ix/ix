@@ -3,14 +3,11 @@
 {% block fetch %}
 https://webkitgtk.org/releases/webkitgtk-2.46.5.tar.xz
 sha:bad4020bb0cfb3e740df3082c2d9cbf67cf4095596588a56aecdde6702137805
-#https://webkitgtk.org/releases/webkitgtk-2.46.4.tar.xz
-#sha:0eff5f0ab0a2872ec87df62bc32e3289c8af625716ac71e94b298d74e0374176
 {% endblock %}
 
 {% block lib_deps %}
 lib/c
 lib/z
-lib/wpe
 lib/atk
 lib/icu
 lib/c++
