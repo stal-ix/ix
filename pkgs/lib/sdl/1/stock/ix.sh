@@ -7,6 +7,7 @@ sha:3e308e817c7f0c6383225485e9a67bf1119ad684b8cc519038671cc1b5d29861
 
 {% block lib_deps %}
 lib/c
+lib/glu
 lib/opengl
 {% endblock %}
 
@@ -20,10 +21,6 @@ cd ${out}/lib
 mv libSDL-1.2.a libSDL.a || mv libSDL-1.2.0.a libSDL.a
 cd pkgconfig
 cp sdl12_compat.pc sdl.pc
-{% endblock %}
-
-{% block patch %}
-sed -e 's|.*glu.h.*||' -i include/SDL/SDL_opengl.h
 {% endblock %}
 
 {% block env %}
