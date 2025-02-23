@@ -17,6 +17,9 @@ https://github.com/squidowl/halloy/archive/refs/tags/2025.2.tar.gz
 {% endblock %}
 
 {% block bld_libs %}
+lib/z
+lib/xz
+lib/zstd
 lib/alsa
 lib/opengl
 lib/openssl
