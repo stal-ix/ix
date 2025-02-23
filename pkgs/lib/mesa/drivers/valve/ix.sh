@@ -52,6 +52,8 @@ patchns ${out}/lib/libEGL.a mesa_egl_
 mv ${out}/lib/libEGL.a ${out}/lib/libmesa_EGL.a
 patchns ${out}/lib/libGLESv2.a mesa_glesv2_
 mv ${out}/lib/libGLESv2.a ${out}/lib/libmesa_GLESv2.a
+patchns ${out}/lib/libgbm.a mesa_gbm_
+mv ${out}/lib/libgbm.a ${out}/lib/libmesa_gbm.a
 {% endblock %}
 
 {% block patch %}
