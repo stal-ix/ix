@@ -1,11 +1,6 @@
-{% extends '//die/gen.sh' %}
+{% extends '//die/hub.sh' %}
 
-{% block install %}
-cd ${out}; mkdir bin; cd bin
-
-base64 -d << EOF > debloat
-{% include 'debloat.py/base64' %}
-EOF
-
-chmod +x *
+{% block run_deps %}
+bin/pax/utils
+bld/de/bloat/scripts
 {% endblock %}

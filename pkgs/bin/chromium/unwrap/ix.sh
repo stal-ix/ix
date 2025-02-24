@@ -78,6 +78,7 @@ bld/bison
 bin/brotli
 bin/nodejs
 bld/prepend
+bld/de/bloat
 bld/devendor
 bld/elfutils
 {% endblock %}
@@ -127,6 +128,7 @@ temp-failure-retry.patch
 
 {% block patch %}
 ulimit -n 4096
+debloat .
 {% for i in ix.parse_list(self.patches()) %}
 patch -p1 < aports/community/chromium/{{i}}
 {% endfor %}
