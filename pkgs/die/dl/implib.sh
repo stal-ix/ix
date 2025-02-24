@@ -27,10 +27,10 @@ void {{x}}() {
 }
 {% endfor %}
 EOF
-${FREESTANDING_CLANG} -fuse-ld=lld -shared -nodefaultlibs -nostartfiles \
+${FREESTANDING_CLANG} --target={{target.gnu.three}} -fuse-ld=lld -shared -nodefaultlibs -nostartfiles \
     -o {{self.implib_name().strip()}}.so \
     {{self.implib_name().strip()}}.c
-implib-gen.py {{self.implib_name().strip()}}.so
+implib-gen.py --target {{target.gnu_arch}}-linux-gnu {{self.implib_name().strip()}}.so
 find .
 cc -c -o tramp.o {{self.implib_name().strip()}}.so.tramp.S
 cc -c -o init.o {{self.implib_name().strip()}}.so.init.c
