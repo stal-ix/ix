@@ -10,11 +10,13 @@ https://github.com/alacritty/alacritty/archive/refs/tags/v0.15.1.tar.gz
 
 {% block bld_libs %}
 lib/c
+lib/gbm
 lib/png
 lib/glib
 lib/iconv
 lib/expat
 lib/brotli
+lib/bzip/2
 lib/pcre/2
 lib/wayland
 lib/freetype
