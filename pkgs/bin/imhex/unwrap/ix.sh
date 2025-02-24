@@ -20,6 +20,7 @@ lib/dbus
 lib/curl
 lib/yara
 lib/glfw
+lib/kernel
 lib/opengl
 lib/archive
 lib/freetype
