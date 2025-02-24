@@ -127,8 +127,8 @@ bin/bloaty
 bin/ultra/hdr/app
 bin/xdg/dbus/proxy
 bin/elementary/screenshot
-bin/sway(mesa_driver=iris)
-bin/sway(mesa_driver=radeonsi)
+#bin/sway(mesa_driver=iris)
+#bin/sway(mesa_driver=radeonsi)
 bin/llvm/spirv
 bin/elementary/dock
 bin/ebpf/verifier
@@ -140,7 +140,6 @@ bin/go/lang/23
 bin/lapce
 bin/evsieve
 bin/erofs/utils
-bin/mutter
 bin/elementary/files
 bin/elementary/terminal
 bin/avizo

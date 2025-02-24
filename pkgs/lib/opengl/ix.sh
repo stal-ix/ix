@@ -2,8 +2,7 @@
 
 {% block lib_deps %}
   {% if linux %}
-    lib/mesa/gl
-    lib/mesa/egl
+    lib/opengl/loader
   {% elif darwin %}
     lib/darwin/framework/Carbon
     lib/darwin/framework/OpenGL

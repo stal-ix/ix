@@ -7,6 +7,9 @@ sha:3e308e817c7f0c6383225485e9a67bf1119ad684b8cc519038671cc1b5d29861
 
 {% block lib_deps %}
 lib/c
+{% if linux %}
+lib/glu
+{% endif %}
 lib/opengl
 {% endblock %}
 

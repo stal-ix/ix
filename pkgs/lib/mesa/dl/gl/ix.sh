@@ -1,75 +1,10 @@
-{% extends '//lib/web/kit/t/ix.sh' %}
+{% extends '//die/dl/fix.sh' %}
 
-{% block fetch %}
-https://webkitgtk.org/releases/webkitgtk-2.46.5.tar.xz
-sha:bad4020bb0cfb3e740df3082c2d9cbf67cf4095596588a56aecdde6702137805
+{% block export_prefix %}
+mesa_glesv2_
 {% endblock %}
 
-{% block lib_deps %}
-lib/c
-lib/z
-lib/atk
-lib/icu
-lib/c++
-lib/gtk
-lib/png
-lib/jxl
-lib/avif
-lib/webp
-lib/glib
-lib/jpeg
-lib/xslt
-lib/tasn1
-lib/cairo
-lib/pango
-lib/epoxy
-lib/woff2
-lib/xml/2
-lib/gcrypt
-lib/secret
-lib/soup/3
-lib/lcms/2
-lib/notify
-lib/wayland
-lib/seccomp
-lib/sqlite/3
-lib/freetype
-lib/harfbuzz
-lib/jpeg/open
-lib/gstreamer
-lib/fontconfig
-lib/harfbuzz/icu
-{% endblock %}
-
-{% block cmake_flags %}
-{{super()}}
-PORT=GTK
-USE_JPEGXL=ON
-ENABLE_WEBDRIVER=OFF
-USE_GSTREAMER_TRANSCODER=OFF
-USE_SYSTEM_SYSPROF_CAPTURE=OFF
-{% endblock %}
-
-{% block patch %}
-{{super()}}
-
-sed -e 's|static_cast<EGLNativeWindowType>|(EGLNativeWindowType)|' \
-    -i Source/WebCore/platform/graphics/egl/GLContextLibWPE.cpp
-
-sed -e 's|GRefPtr.h>|GRefPtr.h>\n#include <wtf/glib/GUniquePtr.h>|' \
-    -i Source/WebKit/UIProcess/gtk/ClipboardGtk4.cpp
-
-sed -e 's|std::strlen|!characters ? 0 : std::strlen|' \
-    -i Source/WTF/wtf/text/StringConcatenate.h
-{% endblock %}
-
-{% block bld_tool %}
-{{super()}}
-bin/unifdef
-{% endblock %}
-
-{% block c_rename_symbol %}
-{{super()}}
+{% block export_symbols %}
 glAccum
 glActiveShaderProgram
 glActiveTexture
@@ -1114,4 +1049,8 @@ glWindowPos3i
 glWindowPos3iv
 glWindowPos3s
 glWindowPos3sv
+{% endblock %}
+
+{% block export_lib %}
+GL
 {% endblock %}
