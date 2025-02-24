@@ -14,6 +14,10 @@ lib/vulkan/loader
 lib/vulkan/headers
 {% endblock %}
 
+{% block bld_libs %}
+lib/kernel
+{% endblock %}
+
 {% block bld_tool %}
 lib/k/ecm
 bld/wayland
