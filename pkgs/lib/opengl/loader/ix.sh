@@ -1,7 +1,6 @@
 {% extends '//die/hub.sh' %}
 
 {% block lib_deps %}
-lib/gbm
 lib/opengl/headers
 lib/opengl/loader/gl
 lib/opengl/loader/egl

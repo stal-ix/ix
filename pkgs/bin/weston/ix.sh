@@ -7,6 +7,7 @@ sha:ad4863a7d87afcc3f63e9f646a934d99981cef2ae6106afe524d30ac84731c7f
 
 {% block bld_libs %}
 lib/c
+lib/gbm
 lib/pam
 lib/seat
 lib/webp
