@@ -13,6 +13,7 @@ lib/python
 lib/lcms/2
 lib/opengl
 lib/xxhash
+lib/kernel
 lib/harfbuzz
 lib/xkb/common
 lib/fontconfig
