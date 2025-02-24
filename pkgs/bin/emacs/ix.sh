@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://github.com/emacs-mirror/emacs/archive/refs/tags/emacs-29.4.tar.gz
-sha:b4e7faa61e17b29f5490c452a927f4a4253a38e171c6a54105b4ba4c216d6c5c
+https://github.com/emacs-mirror/emacs/archive/refs/tags/emacs-30.1.tar.gz
+sha:459e0524b1a5db42cd06c99be21d93d09768d2c3e642a1d1a9d239caea35384a
 {% endblock %}
 
 {% block bld_libs %}
@@ -37,4 +37,8 @@ bin/tex/info
 hash_lookup
 hash_string
 insert_string
+{% endblock %}
+
+{% block cpp_defines %}
+memset_explicit=memset
 {% endblock %}
