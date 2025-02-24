@@ -8,7 +8,7 @@ sha:822ce38345bc4c1b95966c79ee72ff18d753aa923c83e9aa64e9d82eebf55a38
 {% block lib_deps %}
 lib/c
 lib/c++
-lib/drm
+lib/gbm
 lib/seat
 lib/input
 lib/opengl

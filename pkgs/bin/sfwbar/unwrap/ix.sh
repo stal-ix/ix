@@ -10,6 +10,7 @@ lib/c
 lib/glib
 lib/gtk/3
 lib/json/c
+lib/kernel
 lib/gtk/layer/shell
 {% endblock %}
 

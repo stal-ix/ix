@@ -630,7 +630,6 @@ bin/gdbm
 bin/idn/2
 bin/idn
 bin/libtool
-bin/cardboard
 bin/openresolv/runit
 bin/kbd
 bin/fixtty

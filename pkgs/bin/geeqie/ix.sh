@@ -12,6 +12,7 @@ lib/jxl
 lib/heif
 lib/gtk/3
 lib/exiv2
+lib/kernel
 lib/archive
 {% endblock %}
 

@@ -9,6 +9,7 @@ sha:0ee8d363cfe84bbca9b32062e34926aa713b9505927117593cc595d6e1e67cbe
 lib/c
 lib/c++
 lib/pam
+lib/gbm
 lib/date
 lib/jpeg
 lib/webp

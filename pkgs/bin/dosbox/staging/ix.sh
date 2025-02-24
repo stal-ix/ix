@@ -17,6 +17,7 @@ lib/iir/1
 lib/sdl/2
 lib/expat
 lib/opengl
+lib/kernel
 lib/sdl/deps
 lib/sdl/2/net
 lib/opus/file

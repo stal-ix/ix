@@ -7,6 +7,7 @@ md5:7c8a3246e7ddb724bf7397a2f8f9b782
 
 {% block lib_deps %}
 lib/c
+lib/gbm
 lib/drm
 lib/udev
 lib/seat

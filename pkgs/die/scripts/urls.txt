@@ -1142,6 +1142,7 @@ https://github.com/NLnetLabs/unbound/archive/refs/tags/release-1.21.0.tar.gz
 https://github.com/NLnetLabs/unbound/archive/refs/tags/release-1.21.1.tar.gz
 https://github.com/NLnetLabs/unbound/archive/refs/tags/release-1.22.0.tar.gz
 https://github.com/NOBLES5E/cproxy/archive/refs/tags/v4.1.6.post1.tar.gz
+https://github.com/NVIDIA/libglvnd/archive/refs/tags/v1.7.0.tar.gz
 https://github.com/NagyD/SDLPoP/archive/refs/tags/v1.23.tar.gz
 https://github.com/Nefelim4ag/Ananicy/archive/refs/tags/2.2.1.tar.gz
 https://github.com/Netatalk/netatalk/archive/refs/tags/netatalk-3-2-8.tar.gz
@@ -1154,6 +1155,7 @@ https://github.com/NetworkConfiguration/dhcpcd/archive/refs/tags/v10.0.6.tar.gz
 https://github.com/NetworkConfiguration/dhcpcd/archive/refs/tags/v10.0.8.tar.gz
 https://github.com/NetworkConfiguration/dhcpcd/archive/refs/tags/v10.1.0.tar.gz
 https://github.com/NetworkConfiguration/dhcpcd/archive/refs/tags/v10.2.0.tar.gz
+https://github.com/NetworkConfiguration/dhcpcd/archive/refs/tags/v10.2.1.tar.gz
 https://github.com/NetworkConfiguration/openresolv/archive/refs/tags/v3.13.2.tar.gz
 https://github.com/NixOS/nix/archive/refs/tags/2.17.0.tar.gz
 https://github.com/NixOS/nix/archive/refs/tags/2.18.0.tar.gz
@@ -1608,6 +1610,7 @@ https://github.com/emacs-mirror/emacs/archive/refs/tags/emacs-29.1.tar.gz
 https://github.com/emacs-mirror/emacs/archive/refs/tags/emacs-29.2.tar.gz
 https://github.com/emacs-mirror/emacs/archive/refs/tags/emacs-29.3.tar.gz
 https://github.com/emacs-mirror/emacs/archive/refs/tags/emacs-29.4.tar.gz
+https://github.com/emacs-mirror/emacs/archive/refs/tags/emacs-30.1.tar.gz
 https://github.com/emcrisostomo/fswatch/archive/refs/tags/1.17.1.tar.gz
 https://github.com/emersion/mako/archive/refs/tags/v1.7.1.tar.gz
 https://github.com/emersion/mako/archive/refs/tags/v1.9.0.tar.gz
@@ -3532,6 +3535,7 @@ https://github.com/yrutschle/sslh/archive/refs/tags/v2.1.0.tar.gz
 https://github.com/yrutschle/sslh/archive/refs/tags/v2.1.1.tar.gz
 https://github.com/yrutschle/sslh/archive/refs/tags/v2.1.2.tar.gz
 https://github.com/yrutschle/sslh/archive/refs/tags/v2.1.3.tar.gz
+https://github.com/yugr/Implib.so/archive/91095d7c52742edf775aba410eb1bb4afbecfc38.zip
 https://github.com/zed-industries/zed/archive/refs/tags/v0.123.2.tar.gz
 https://github.com/zed-industries/zed/archive/refs/tags/v0.148.1.tar.gz
 https://github.com/zellij-org/zellij/archive/refs/tags/v0.39.2.tar.gz
@@ -3643,6 +3647,7 @@ https://gitlab.freedesktop.org/libinput/libinput/-/archive/1.27.0/libinput-1.27.
 https://gitlab.freedesktop.org/mesa/glu/-/archive/glu-9.0.3/glu-glu-9.0.3.tar.bz2
 https://gitlab.freedesktop.org/mesa/mesa/-/archive/mesa-23.0.3/mesa-mesa-23.0.3.tar.bz2
 https://gitlab.freedesktop.org/mesa/mesa/-/archive/mesa-23.1.8/mesa-mesa-23.1.8.tar.bz2
+https://gitlab.freedesktop.org/mesa/mesa/-/raw/06391759f0c705f24d0763a2e3691f55ce5f4f22/src/gbm/main/gbm.h
 https://gitlab.freedesktop.org/serebit/waycheck/-/archive/v1.2.1/waycheck-v1.2.1.tar.bz2
 https://gitlab.freedesktop.org/serebit/waycheck/-/archive/v1.3.0/waycheck-v1.3.0.tar.bz2
 https://gitlab.freedesktop.org/serebit/waycheck/-/archive/v1.3.1/waycheck-v1.3.1.tar.bz2

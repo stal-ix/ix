@@ -19,6 +19,7 @@ lib/fast/float
 {% endblock %}
 
 {% block bld_libs %}
+lib/kernel
 lib/shim/wait
 {% endblock %}
 
