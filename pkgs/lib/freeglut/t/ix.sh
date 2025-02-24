@@ -12,6 +12,10 @@ lib/wayland
 lib/xkb/common
 {% endblock %}
 
+{% block bld_libs %}
+lib/kernel
+{% endblock %}
+
 {% block cmake_flags %}
 FREEGLUT_GLES=ON
 FREEGLUT_WAYLAND=ON
