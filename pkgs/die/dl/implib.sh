@@ -31,7 +31,6 @@ ${FREESTANDING_CLANG} --target={{target.gnu.three}} -fuse-ld=lld -shared -nodefa
     -o {{self.implib_name().strip()}}.so \
     {{self.implib_name().strip()}}.c
 implib-gen.py --target {{target.gnu_arch}}-linux-gnu {{self.implib_name().strip()}}.so
-find .
 cc -c -o tramp.o {{self.implib_name().strip()}}.so.tramp.S
 cc -c -o init.o {{self.implib_name().strip()}}.so.init.c
 ar q libimplib.a tramp.o init.o
