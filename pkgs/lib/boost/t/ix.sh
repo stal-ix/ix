@@ -8,6 +8,7 @@ bld/b2
 lib/c
 lib/z
 lib/c++
+lib/kernel
 {% endblock %}
 
 {% block bld_libs %}
