@@ -13,6 +13,7 @@ https://github.com/YaLTeR/niri/archive/refs/tags/v25.02.tar.gz
 {% endblock %}
 
 {% block lib_deps %}
+lib/gbm
 lib/seat
 lib/udev
 lib/glib
