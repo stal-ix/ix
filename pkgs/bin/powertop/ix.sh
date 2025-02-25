@@ -20,5 +20,5 @@ bld/auto/archive
 
 {% block patch %}
 rm autogen.sh
-sed -e 's|0.18.2|0.23|' -i configure.ac
+sed -e 's|0.18.2|0.24|' -i configure.ac
 {% endblock %}

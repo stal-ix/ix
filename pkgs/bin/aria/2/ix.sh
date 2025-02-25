@@ -41,7 +41,7 @@ bld/gettext
 {% endblock %}
 
 {% block patch %}
-sed -e 's|0.18|0.23|' -i configure.ac
+sed -e 's|0.18|0.24|' -i configure.ac
 sed -e 's|std::end(buf_)|buf_.data() + buf_.size()|' \
     -i src/SocketRecvBuffer.cc
 {% endblock %}
