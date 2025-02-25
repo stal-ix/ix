@@ -1,15 +1,15 @@
 {% extends '//die/go/build.sh' %}
 
 {% block go_url %}
-https://github.com/umputun/reproxy/archive/refs/tags/v1.2.2.tar.gz
+https://github.com/umputun/reproxy/archive/refs/tags/v1.2.3.tar.gz
 {% endblock %}
 
 {% block go_sha %}
-6afa743ca66df048e35d747da698f630d76849eae9fa18ae1a2a9dd0606ea0a3
+1adc0e896ca52d5c09007f56cfaf05f2db45e7f975a6457c78ba3961f533feb7
 {% endblock %}
 
 {% block go_tool %}
-bin/go/lang/22
+bin/go/lang/23
 {% endblock %}
 
 {% block unpack %}

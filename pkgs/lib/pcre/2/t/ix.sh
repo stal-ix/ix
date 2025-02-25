@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/PhilipHazel/pcre2/archive/refs/tags/pcre2-10.43.tar.gz
-sha:f0048e26b02bdfaf43b8cec75030a9c2fe28552bf5caa693d3ccbf4d886fa930
+https://github.com/PCRE2Project/pcre2/releases/download/pcre2-10.45/pcre2-10.45.tar.bz2
+sha:21547f3516120c75597e5b30a992e27a592a31950b5140e7b8bfde3f192033c4
 {% endblock %}
 
 {% block lib_deps %}
@@ -22,14 +22,4 @@ PCRE2_SUPPORT_JIT=ON
 {% endif %}
 PCRE2_BUILD_TESTS=OFF
 PCRE2_SUPPORT_UNICODE=ON
-{% endblock %}
-
-{% block install %}
-{{super()}}
-for x in ${out}/lib/pkgconfig/*.pc; do
-    sed -e 's|//.*/lib|/lib|' -i ${x}
-done
-cd ${out}
-mkdir lib/cmake
-mv cmake lib/cmake/pcre2
 {% endblock %}

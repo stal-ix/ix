@@ -1110,6 +1110,7 @@ https://github.com/Kitware/CMake/archive/refs/tags/v3.31.1.tar.gz
 https://github.com/Kitware/CMake/archive/refs/tags/v3.31.2.tar.gz
 https://github.com/Kitware/CMake/archive/refs/tags/v3.31.3.tar.gz
 https://github.com/Kitware/CMake/archive/refs/tags/v3.31.4.tar.gz
+https://github.com/Kitware/CMake/archive/refs/tags/v3.31.6.tar.gz
 https://github.com/LBCrion/sfwbar/archive/refs/tags/v1.0_beta13.tar.gz
 https://github.com/LBCrion/sfwbar/archive/refs/tags/v1.0_beta9.tar.gz
 https://github.com/LibRaw/LibRaw/archive/refs/tags/0.21.1.tar.gz
@@ -1212,6 +1213,7 @@ https://github.com/OpenVPN/openvpn/archive/refs/tags/v2.6.9.tar.gz
 https://github.com/OpenVisualCloud/SVT-HEVC/archive/refs/tags/v1.5.1.tar.gz
 https://github.com/OpenVisualCloud/SVT-VP9/archive/refs/tags/v0.3.0.tar.gz
 https://github.com/P-H-C/phc-winner-argon2/archive/refs/tags/20190702.tar.gz
+https://github.com/PCRE2Project/pcre2/releases/download/pcre2-10.45/pcre2-10.45.tar.bz2
 https://github.com/PhilipHazel/pcre2/archive/refs/tags/pcre2-10.42.tar.gz
 https://github.com/PhilipHazel/pcre2/archive/refs/tags/pcre2-10.43.tar.gz
 https://github.com/PurpleI2P/i2pd/archive/refs/tags/2.48.0.tar.gz
