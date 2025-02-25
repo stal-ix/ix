@@ -21,18 +21,17 @@ bld/fake/binutils
 {% endblock %}
 
 {% block build %}
-cat << EOF > {{self.implib_name().strip()}}.c
+cat << EOF > {{self.implib_name().strip()}}.def
+LIBRARY lib{{self.implib_name().strip()}}.so
+EXPORTS
 {% for x in ix.parse_list(self.implib_symbols()) %}
-void {{x}}() {
-}
+  {{x}}
 {% endfor %}
 EOF
-${FREESTANDING_CLANG} --target={{target.gnu.three}} -fuse-ld=lld -shared -nodefaultlibs -nostartfiles \
-    -o {{self.implib_name().strip()}}.so \
-    {{self.implib_name().strip()}}.c
-implib-gen.py --target {{target.gnu_arch}}-linux-gnu {{self.implib_name().strip()}}.so
-cc -c -o tramp.o {{self.implib_name().strip()}}.so.tramp.S
-cc -c -o init.o {{self.implib_name().strip()}}.so.init.c
+cat {{self.implib_name().strip()}}.def
+implib-gen.py --target {{target.gnu_arch}}-linux-gnu {{self.implib_name().strip()}}.def
+cc -c -o tramp.o {{self.implib_name().strip()}}.tramp.S
+cc -c -o init.o {{self.implib_name().strip()}}.init.c
 ar q libimplib.a tramp.o init.o
 {% endblock %}
 
