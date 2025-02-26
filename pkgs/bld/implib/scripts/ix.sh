@@ -1,12 +1,12 @@
 {% extends '//die/std/ix.sh' %}
 
 {% block version %}
-b6f5478959e1ccfd520a0d51e21c7080ac914a79
+4eab9f58090f6f53e78533ce53e65c4125600872
 {% endblock %}
 
 {% block fetch %}
 https://github.com/yugr/Implib.so/archive/{{self.version().strip()}}.zip
-sha:9c85eed64412ef35b29e5f34c86e33a24d0c3f4b77c553f206ed9a9be4751b47
+sha:ba1e05b89df39c414042cb042a6283f69d54222af9bf7d6fd6337d8554ededfc
 {% endblock %}
 
 {% block step_unpack %}
