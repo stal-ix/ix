@@ -81,6 +81,9 @@ class RenderContext:
     def intro(self, p):
         return self.package.load_package(p, self.package.flags)
 
+    def error(self, msg):
+        raise ce.Error(msg)
+
     def template(self, path):
         pkg = self.package
 

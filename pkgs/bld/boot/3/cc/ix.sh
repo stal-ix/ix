@@ -10,7 +10,7 @@ mkdir ${out}/bin
 {% if ix_boot_tool('clang++') %}
 {% for x in ['clang', 'clang++', 'clang-cpp', 'llvm-ar', 'llvm-nm', 'llvm-ranlib'] %}
 {% if not ix_boot_tool(x) %}
-{{error(x + ' not in path')}}
+{{ix.error(x + ' not in path')}}
 {% endif %}
 cat << EOF > ${out}/bin/{{x}}
 #!/usr/bin/env sh
@@ -20,7 +20,7 @@ EOF
 {% elif ix_boot_tool('g++') %}
 {% for x in ['gcc', 'g++', 'ar', 'nm', 'ranlib', 'as', 'ld', 'cpp'] %}
 {% if not ix_boot_tool(x) %}
-{{error(x + ' not in path')}}
+{{ix.error(x + ' not in path')}}
 {% endif %}
 cat << EOF > ${out}/bin/{{x}}
 #!/usr/bin/env sh
@@ -28,7 +28,7 @@ exec {{ix_boot_tool(x)}} "\${@}"
 EOF
 {% endfor %}
 {% else %}
-error('shit happen')
+{{ix.error('shit happen')}}
 {% endif %}
 chmod +x ${out}/bin/*
 {% endblock%}
