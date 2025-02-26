@@ -25,3 +25,12 @@ bld/auto/archive
 --disable-libuuid
 --disable-libblkid
 {% endblock %}
+
+{% block configure %}
+{{super()}}
+# fucking gettext
+cat << EOF > po/Makefile
+all:
+install:
+EOF
+{% endblock %}

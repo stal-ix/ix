@@ -694,6 +694,7 @@ https://ftp.gnu.org/pub/gnu/gettext/gettext-0.22.4.tar.gz
 https://ftp.gnu.org/pub/gnu/gettext/gettext-0.22.5.tar.gz
 https://ftp.gnu.org/pub/gnu/gettext/gettext-0.23.1.tar.gz
 https://ftp.gnu.org/pub/gnu/gettext/gettext-0.23.tar.gz
+https://ftp.gnu.org/pub/gnu/gettext/gettext-0.24.tar.gz
 https://ftp.gnu.org/pub/gnu/libiconv/libiconv-1.17.tar.gz
 https://ftp.gnu.org/pub/gnu/libiconv/libiconv-1.18.tar.gz
 https://ftp.gnu.org/pub/gnu/ncurses/ncurses-6.4.tar.gz
@@ -808,6 +809,7 @@ https://github.com/AOMediaCodec/libavif/archive/refs/tags/v1.0.3.tar.gz
 https://github.com/AOMediaCodec/libavif/archive/refs/tags/v1.0.4.tar.gz
 https://github.com/AOMediaCodec/libavif/archive/refs/tags/v1.1.0.tar.gz
 https://github.com/AOMediaCodec/libavif/archive/refs/tags/v1.1.1.tar.gz
+https://github.com/AOMediaCodec/libavif/archive/refs/tags/v1.2.0.tar.gz
 https://github.com/ARMmbed/mbedtls/archive/refs/tags/v2.28.2.tar.gz
 https://github.com/ARMmbed/mbedtls/archive/refs/tags/v2.28.9.tar.gz
 https://github.com/ARMmbed/mbedtls/archive/refs/tags/v3.4.1.tar.gz
@@ -1827,6 +1829,7 @@ https://github.com/gavinhoward/bc/archive/refs/tags/7.0.3.tar.gz
 https://github.com/gcla/termshark/archive/refs/tags/v2.4.0.tar.gz
 https://github.com/geany/geany/archive/refs/tags/1.38.0.tar.gz
 https://github.com/geany/geany/archive/refs/tags/2.0.0.tar.gz
+https://github.com/gentoo/pax-utils/archive/refs/tags/v1.3.8.tar.gz
 https://github.com/gflags/gflags/archive/refs/tags/v2.2.2.tar.gz
 https://github.com/ggreer/the_silver_searcher/archive/refs/tags/2.2.0.tar.gz
 https://github.com/ginuerzh/gost/archive/refs/tags/v2.12.0.tar.gz
@@ -2149,6 +2152,7 @@ https://github.com/jesseduffield/lazygit/archive/refs/tags/v0.44.1.tar.gz
 https://github.com/jesseduffield/lazygit/archive/refs/tags/v0.45.0.tar.gz
 https://github.com/jesseduffield/lazygit/archive/refs/tags/v0.46.0.tar.gz
 https://github.com/jesseduffield/lazygit/archive/refs/tags/v0.47.1.tar.gz
+https://github.com/jesseduffield/lazygit/archive/refs/tags/v0.47.2.tar.gz
 https://github.com/jhawthorn/fzy/archive/refs/tags/1.0.tar.gz
 https://github.com/jirka-h/haveged/archive/refs/tags/v1.9.18.tar.gz
 https://github.com/jirka-h/haveged/archive/refs/tags/v1.9.19.tar.gz
@@ -3088,6 +3092,7 @@ https://github.com/shadow-maint/shadow/archive/refs/tags/4.15.1.tar.gz
 https://github.com/shadow-maint/shadow/archive/refs/tags/4.16.0.tar.gz
 https://github.com/shadow-maint/shadow/archive/refs/tags/4.17.0.tar.gz
 https://github.com/shadow-maint/shadow/archive/refs/tags/4.17.2.tar.gz
+https://github.com/shadow-maint/shadow/archive/refs/tags/4.17.3.tar.gz
 https://github.com/shadowsocks/go-shadowsocks2/archive/refs/tags/v0.1.5.tar.gz
 https://github.com/shadowsocks/shadowsocks-libev/releases/download/v3.3.5/shadowsocks-libev-3.3.5.tar.gz
 https://github.com/shadowsocks/shadowsocks-rust/archive/refs/tags/v1.18.1.tar.gz
@@ -3353,6 +3358,7 @@ https://github.com/uclouvain/openjpeg/archive/refs/tags/v2.5.0.tar.gz
 https://github.com/uclouvain/openjpeg/archive/refs/tags/v2.5.1.tar.gz
 https://github.com/umputun/reproxy/archive/refs/tags/v1.1.1.tar.gz
 https://github.com/umputun/reproxy/archive/refs/tags/v1.2.2.tar.gz
+https://github.com/umputun/reproxy/archive/refs/tags/v1.2.3.tar.gz
 https://github.com/uncrustify/uncrustify/archive/refs/tags/uncrustify-0.80.0.tar.gz
 https://github.com/uncrustify/uncrustify/archive/refs/tags/uncrustify-0.80.1.tar.gz
 https://github.com/unicode-org/icu/archive/refs/tags/release-70-1.tar.gz
@@ -3475,6 +3481,7 @@ https://github.com/wireshark/wireshark/archive/refs/tags/v4.4.0.tar.gz
 https://github.com/wireshark/wireshark/archive/refs/tags/v4.4.1.tar.gz
 https://github.com/wireshark/wireshark/archive/refs/tags/v4.4.2.tar.gz
 https://github.com/wireshark/wireshark/archive/refs/tags/v4.4.3.tar.gz
+https://github.com/wireshark/wireshark/archive/refs/tags/v4.4.5.tar.gz
 https://github.com/wlrfx/scenefx/archive/refs/tags/0.1.tar.gz
 https://github.com/wmww/gtk-layer-shell/archive/refs/tags/v0.8.0.tar.gz
 https://github.com/wmww/gtk-layer-shell/archive/refs/tags/v0.9.0.tar.gz
@@ -3758,11 +3765,13 @@ https://gitlab.gnome.org/GNOME/gtk/-/archive/4.16.4/gtk-4.16.4.tar.bz2
 https://gitlab.gnome.org/GNOME/gtk/-/archive/4.16.5/gtk-4.16.5.tar.bz2
 https://gitlab.gnome.org/GNOME/gtk/-/archive/4.16.6/gtk-4.16.6.tar.bz2
 https://gitlab.gnome.org/GNOME/gtk/-/archive/4.16.7/gtk-4.16.7.tar.bz2
+https://gitlab.gnome.org/GNOME/gtk/-/archive/4.17.5/gtk-4.17.5.tar.bz2
 https://gitlab.gnome.org/GNOME/gtksourceview/-/archive/4.8.4/gtksourceview-4.8.4.tar.bz2
 https://gitlab.gnome.org/GNOME/gtksourceview/-/archive/5.10.0/gtksourceview-5.10.0.tar.bz2
 https://gitlab.gnome.org/GNOME/gtksourceview/-/archive/5.12.1/gtksourceview-5.12.1.tar.bz2
 https://gitlab.gnome.org/GNOME/gtksourceview/-/archive/5.14.0/gtksourceview-5.14.0.tar.bz2
 https://gitlab.gnome.org/GNOME/gtksourceview/-/archive/5.14.2/gtksourceview-5.14.2.tar.bz2
+https://gitlab.gnome.org/GNOME/gtksourceview/-/archive/5.15.1/gtksourceview-5.15.1.tar.bz2
 https://gitlab.gnome.org/GNOME/gtksourceview/-/archive/5.8.0/gtksourceview-5.8.0.tar.bz2
 https://gitlab.gnome.org/GNOME/gvdb/-/archive/2b42fc75f09dbe1cd1057580b5782b08f2dcb400/gvdb-2b42fc75f09dbe1cd1057580b5782b08f2dcb400.tar.bz2
 https://gitlab.gnome.org/GNOME/json-glib/-/archive/1.6.6/json-glib-1.6.6.tar.bz2
@@ -3773,6 +3782,7 @@ https://gitlab.gnome.org/GNOME/libdex/-/archive/0.6.0/libdex-0.6.0.tar.bz2
 https://gitlab.gnome.org/GNOME/libdex/-/archive/0.8.0/libdex-0.8.0.tar.bz2
 https://gitlab.gnome.org/GNOME/libdex/-/archive/0.8.1/libdex-0.8.1.tar.bz2
 https://gitlab.gnome.org/GNOME/libdex/-/archive/0.9.0/libdex-0.9.0.tar.bz2
+https://gitlab.gnome.org/GNOME/libdex/-/archive/0.9.1/libdex-0.9.1.tar.bz2
 https://gitlab.gnome.org/GNOME/libgee/-/archive/0.20.6/libgee-0.20.6.tar.bz2
 https://gitlab.gnome.org/GNOME/libgee/-/archive/0.20.8/libgee-0.20.8.tar.bz2
 https://gitlab.gnome.org/GNOME/libgit2-glib/-/archive/v1.2.0/libgit2-glib-v1.2.0.tar.bz2

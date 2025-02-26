@@ -1,8 +1,12 @@
 {% extends '//die/std/ix.sh' %}
 
+{% block version %}
+b6f5478959e1ccfd520a0d51e21c7080ac914a79
+{% endblock %}
+
 {% block fetch %}
-https://github.com/yugr/Implib.so/archive/91095d7c52742edf775aba410eb1bb4afbecfc38.zip
-sha:135e34016f0fe7ad8e0d2a91fd039616feed23c2ecc9d2483cdb0bda0a245701
+https://github.com/yugr/Implib.so/archive/{{self.version().strip()}}.zip
+sha:9c85eed64412ef35b29e5f34c86e33a24d0c3f4b77c553f206ed9a9be4751b47
 {% endblock %}
 
 {% block step_unpack %}
@@ -12,6 +16,6 @@ sha:135e34016f0fe7ad8e0d2a91fd039616feed23c2ecc9d2483cdb0bda0a245701
 {% block install %}
 mkdir ${out}/bin
 cd ${out}/bin
-extract 1 ${src}/91095d7c52742edf775aba410eb1bb4afbecfc38.zip
+extract 1 ${src}/{{self.version().strip()}}.zip
 chmod +x implib-gen.py
 {% endblock %}
