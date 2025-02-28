@@ -213,6 +213,7 @@ https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.13.1.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.13.2.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.13.3.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.13.4.tar.xz
+https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.13.5.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.13.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.2.14.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.3.13.tar.xz
@@ -334,6 +335,7 @@ https://data.iana.org/time-zones/releases/tzdb-2025a.tar.lz
 https://dbus.freedesktop.org/releases/dbus-glib/dbus-glib-0.112.tar.gz
 https://dbus.freedesktop.org/releases/dbus/dbus-1.14.10.tar.xz
 https://dbus.freedesktop.org/releases/dbus/dbus-1.16.0.tar.xz
+https://dbus.freedesktop.org/releases/dbus/dbus-1.16.2.tar.xz
 https://dev-www.libreoffice.org/src/libcdr/libcdr-0.1.7.tar.xz
 https://dev-www.libreoffice.org/src/libcdr/libcdr-0.1.8.tar.xz
 https://dev-www.libreoffice.org/src/libvisio/libvisio-0.1.7.tar.xz
@@ -869,6 +871,7 @@ https://github.com/BLAKE3-team/BLAKE3/archive/refs/tags/1.5.3.tar.gz
 https://github.com/BLAKE3-team/BLAKE3/archive/refs/tags/1.5.4.tar.gz
 https://github.com/BLAKE3-team/BLAKE3/archive/refs/tags/1.5.5.tar.gz
 https://github.com/BLAKE3-team/BLAKE3/archive/refs/tags/1.6.0.tar.gz
+https://github.com/BLAKE3-team/BLAKE3/archive/refs/tags/1.6.1.tar.gz
 https://github.com/CorsixTH/CorsixTH/archive/refs/tags/v0.67.tar.gz
 https://github.com/Cu3PO42/gtk-session-lock/archive/refs/tags/v0.2.0.tar.gz
 https://github.com/Cyan4973/xxHash/archive/refs/tags/v0.8.2.tar.gz
@@ -1934,6 +1937,7 @@ https://github.com/google/shaderc/archive/refs/tags/v2023.8.tar.gz
 https://github.com/google/shaderc/archive/refs/tags/v2024.1.tar.gz
 https://github.com/google/shaderc/archive/refs/tags/v2024.2.tar.gz
 https://github.com/google/shaderc/archive/refs/tags/v2024.3.tar.gz
+https://github.com/google/shaderc/archive/refs/tags/v2025.1.tar.gz
 https://github.com/google/snappy/archive/refs/tags/1.1.10.tar.gz
 https://github.com/google/snappy/archive/refs/tags/1.1.9.tar.gz
 https://github.com/google/tcmalloc/archive/432d115adab8935b0a937d659c345aa8f82add57.tar.gz
