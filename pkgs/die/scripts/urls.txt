@@ -1685,6 +1685,7 @@ https://github.com/eza-community/eza/archive/refs/tags/v0.20.18.tar.gz
 https://github.com/eza-community/eza/archive/refs/tags/v0.20.19.tar.gz
 https://github.com/eza-community/eza/archive/refs/tags/v0.20.2.tar.gz
 https://github.com/eza-community/eza/archive/refs/tags/v0.20.21.tar.gz
+https://github.com/eza-community/eza/archive/refs/tags/v0.20.23.tar.gz
 https://github.com/eza-community/eza/archive/refs/tags/v0.20.3.tar.gz
 https://github.com/eza-community/eza/archive/refs/tags/v0.20.4.tar.gz
 https://github.com/eza-community/eza/archive/refs/tags/v0.20.5.tar.gz
@@ -1792,6 +1793,7 @@ https://github.com/fmtlib/fmt/archive/refs/tags/11.1.0.tar.gz
 https://github.com/fmtlib/fmt/archive/refs/tags/11.1.1.tar.gz
 https://github.com/fmtlib/fmt/archive/refs/tags/11.1.2.tar.gz
 https://github.com/fmtlib/fmt/archive/refs/tags/11.1.3.tar.gz
+https://github.com/fmtlib/fmt/archive/refs/tags/11.1.4.tar.gz
 https://github.com/fmtlib/fmt/archive/refs/tags/9.1.0.tar.gz
 https://github.com/folkertvanheusden/HTTPing/archive/refs/tags/v4.1.0.tar.gz
 https://github.com/folkertvanheusden/HTTPing/archive/refs/tags/v4.2.0.tar.gz
@@ -4092,6 +4094,7 @@ https://nmap.org/dist/nmap-7.95.tar.bz2
 https://nodejs.org/dist/v18.16.1/node-v18.16.1.tar.gz
 https://nodejs.org/dist/v23.4.0/node-v23.4.0.tar.gz
 https://nodejs.org/dist/v23.6.0/node-v23.6.0.tar.gz
+https://nodejs.org/dist/v23.9.0/node-v23.9.0.tar.gz
 https://notroj.github.io/neon/neon-0.32.5.tar.gz
 https://notroj.github.io/neon/neon-0.33.0.tar.gz
 https://notroj.github.io/neon/neon-0.34.0.tar.gz
@@ -4443,6 +4446,7 @@ https://www.rarlab.com/rar/unrarsrc-7.0.9.tar.gz
 https://www.rarlab.com/rar/unrarsrc-7.1.1.tar.gz
 https://www.rarlab.com/rar/unrarsrc-7.1.3.tar.gz
 https://www.rarlab.com/rar/unrarsrc-7.1.4.tar.gz
+https://www.rarlab.com/rar/unrarsrc-7.1.5.tar.gz
 https://www.sqlite.org/2024/sqlite-autoconf-3450000.tar.gz
 https://www.sqlite.org/2024/sqlite-autoconf-3450100.tar.gz
 https://www.sqlite.org/2024/sqlite-autoconf-3450200.tar.gz

@@ -5,11 +5,11 @@ https://github.com/WerWolv/ImHex
 {% endblock %}
 
 {% block git_commit %}
-v1.37.1
+v1.37.4
 {% endblock %}
 
 {% block git_sha %}
-ab96820deb435e3c88476393a3721387ff415fc46b1838b89f27507c42767046
+3603f529a50ce54801ca67c49768548bb5632d094dffd3dbd88f69fa22d4d773
 {% endblock %}
 
 {% block bld_libs %}
