@@ -1,10 +1,14 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://github.com/knik0/faac/archive/refs/tags/1_30.tar.gz
-sha:adc387ce588cca16d98c03b6ec1e58f0ffd9fc6eadb00e254157d6b16203b2d2
+https://github.com/knik0/faac/archive/refs/tags/faac-1.31.tar.gz
+sha:92894e3205ca7fbb0b0d38161ae94c9e884efe5af65886e5ad60eb1a318c78f1
 {% endblock %}
 
 {% block lib_deps %}
 lib/c
+{% endblock %}
+
+{% block conf_ver %}
+2/71
 {% endblock %}
