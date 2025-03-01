@@ -502,6 +502,7 @@ https://downloads.sourceforge.net/project/sbcl/sbcl/2.4.7/sbcl-2.4.7-source.tar.
 https://downloads.sourceforge.net/project/sbcl/sbcl/2.4.8/sbcl-2.4.8-source.tar.bz2
 https://downloads.sourceforge.net/project/sbcl/sbcl/2.4.9/sbcl-2.4.9-source.tar.bz2
 https://downloads.sourceforge.net/project/sbcl/sbcl/2.5.1/sbcl-2.5.1-source.tar.bz2
+https://downloads.sourceforge.net/project/sbcl/sbcl/2.5.2/sbcl-2.5.2-source.tar.bz2
 https://downloads.sourceforge.net/project/scons/scons/4.5.2/SCons-4.5.2.tar.gz
 https://downloads.sourceforge.net/project/sdlgfx/SDL_gfx-2.0.25.tar.gz
 https://downloads.sourceforge.net/project/sox/sox/14.4.2/sox-14.4.2.tar.bz2
@@ -2160,6 +2161,7 @@ https://github.com/jesseduffield/lazygit/archive/refs/tags/v0.45.0.tar.gz
 https://github.com/jesseduffield/lazygit/archive/refs/tags/v0.46.0.tar.gz
 https://github.com/jesseduffield/lazygit/archive/refs/tags/v0.47.1.tar.gz
 https://github.com/jesseduffield/lazygit/archive/refs/tags/v0.47.2.tar.gz
+https://github.com/jesseduffield/lazygit/archive/refs/tags/v0.48.0.tar.gz
 https://github.com/jhawthorn/fzy/archive/refs/tags/1.0.tar.gz
 https://github.com/jirka-h/haveged/archive/refs/tags/v1.9.18.tar.gz
 https://github.com/jirka-h/haveged/archive/refs/tags/v1.9.19.tar.gz
