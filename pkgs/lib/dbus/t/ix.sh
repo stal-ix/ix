@@ -1,8 +1,8 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://dbus.freedesktop.org/releases/dbus/dbus-1.16.0.tar.xz
-sha:9f8ca5eb51cbe09951aec8624b86c292990ae2428b41b856e2bed17ec65c8849
+https://dbus.freedesktop.org/releases/dbus/dbus-1.16.2.tar.xz
+sha:0ba2a1a4b16afe7bceb2c07e9ce99a8c2c3508e5dec290dbb643384bd6beb7e2
 {% endblock %}
 
 {% block lib_deps %}
