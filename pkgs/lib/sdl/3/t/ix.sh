@@ -42,3 +42,8 @@ sed -e 's|define SDL_DYNAMIC_API 1|define SDL_DYNAMIC_API 0|' \
 export SDL3_LIBRARY=${out}/lib/libSDL3.a
 export SDL3_HEADERS=${out}/include/SDL3
 {% endblock %}
+
+{% block c_rename_symbol %}
+g_object_ref
+g_object_ref_sink
+{% endblock %}
