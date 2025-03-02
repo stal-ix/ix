@@ -967,6 +967,7 @@ https://github.com/GNOME/libshumate/archive/refs/tags/1.2.3.tar.gz
 https://github.com/GNOME/libshumate/archive/refs/tags/1.3.0.tar.gz
 https://github.com/GNOME/libshumate/archive/refs/tags/1.3.1.tar.gz
 https://github.com/GNOME/libshumate/archive/refs/tags/1.3.2.tar.gz
+https://github.com/GNOME/vte/archive/refs/tags/0.78.4.tar.gz
 https://github.com/GNOME/zenity/archive/refs/tags/4.0.3.tar.gz
 https://github.com/GStreamer/orc/archive/refs/tags/0.4.34.tar.gz
 https://github.com/GStreamer/orc/archive/refs/tags/0.4.35.tar.gz
@@ -2292,6 +2293,7 @@ https://github.com/leo-arch/clifm/archive/refs/tags/v1.20.tar.gz
 https://github.com/leo-arch/clifm/archive/refs/tags/v1.21.tar.gz
 https://github.com/leo-arch/clifm/archive/refs/tags/v1.22.tar.gz
 https://github.com/leo-arch/clifm/archive/refs/tags/v1.23.tar.gz
+https://github.com/leo-arch/clifm/archive/refs/tags/v1.24.tar.gz
 https://github.com/libarchive/libarchive/archive/refs/tags/v3.7.1.tar.gz
 https://github.com/libarchive/libarchive/archive/refs/tags/v3.7.2.tar.gz
 https://github.com/libarchive/libarchive/archive/refs/tags/v3.7.3.tar.gz
@@ -2664,6 +2666,7 @@ https://github.com/nghttp2/nghttp2/archive/refs/tags/v1.62.0.tar.gz
 https://github.com/nghttp2/nghttp2/archive/refs/tags/v1.62.1.tar.gz
 https://github.com/nghttp2/nghttp2/archive/refs/tags/v1.63.0.tar.gz
 https://github.com/nghttp2/nghttp2/archive/refs/tags/v1.64.0.tar.gz
+https://github.com/nghttp2/nghttp2/archive/refs/tags/v1.65.0.tar.gz
 https://github.com/ngtcp2/nghttp3/archive/refs/tags/v0.15.0.tar.gz
 https://github.com/ngtcp2/nghttp3/archive/refs/tags/v1.0.0.tar.gz
 https://github.com/ngtcp2/nghttp3/archive/refs/tags/v1.1.0.tar.gz
