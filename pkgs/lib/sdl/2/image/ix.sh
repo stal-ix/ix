@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/libsdl-org/SDL_image/archive/refs/tags/release-2.8.3.tar.gz
-sha:bec07e848f72b71cbb98e75f1be549e39375f6fdb6c44360a2029cc083ef90f4
+https://github.com/libsdl-org/SDL_image/archive/refs/tags/release-2.8.6.tar.gz
+sha:4668ab6189f81f7a9bbd9cfebde4e463e581ed6b57787c58ed37cda9c419fad8
 {% endblock %}
 
 {% block lib_deps %}
