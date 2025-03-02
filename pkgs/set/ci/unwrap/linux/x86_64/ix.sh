@@ -50,6 +50,7 @@
 #}
 
 {% block run_deps %}
+bin/sniff/net
 bin/pax/utils
 bin/syd/box
 bin/hypr
