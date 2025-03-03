@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://github.com/jedisct1/libsodium/archive/refs/tags/1.0.20.tar.gz
-sha:b4712cda8c8f4dd4d3d56fa26e1c2b543ff131b88e0bd2590fc63c1ace9eda3d
+https://github.com/jedisct1/libsodium/archive/refs/tags/1.0.20-RELEASE.tar.gz
+sha:8e5aeca07a723a27bbecc3beef14b0068d37e7fc0e97f51b3f1c82d2a58005c1
 {% endblock %}
 
 {% block lib_deps %}
