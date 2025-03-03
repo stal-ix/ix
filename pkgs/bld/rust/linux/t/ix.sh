@@ -19,3 +19,7 @@ find ${out} -type f -executable | while read l; do
     patchelf --set-interpreter ${LDSO} ${l} || true
 done
 {% endblock %}
+
+{% block env %}
+export LD_LIBRARY_PATH=\${LD_LIBRARY_PATH}:${out}/lib
+{% endblock %}

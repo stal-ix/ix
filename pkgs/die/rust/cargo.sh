@@ -143,7 +143,7 @@ export TARGET_CXX=${CXX}
 cargo {{ix.fix_list(self.cargo_flags().strip())}} --package {{x}}
 {% endfor %}
 {% else %}
-cargo {{ix.fix_list(self.cargo_flags().strip())}}
+jail ${tmp}/jug {{ix_dir}} env LD_LIBRARY_PATH=${LD_LIBRARY_PATH} cargo {{ix.fix_list(self.cargo_flags().strip())}}
 {% endif %}
 ln -s ${tmp}/{{target.rust}}/{{self.cargo_profile().strip()}} ${tmp}/out
 {% endblock %}
