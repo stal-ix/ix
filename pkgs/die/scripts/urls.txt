@@ -528,6 +528,7 @@ https://ffmpeg.org/releases/ffmpeg-6.1.2.tar.xz
 https://ffmpeg.org/releases/ffmpeg-6.1.tar.xz
 https://ffmpeg.org/releases/ffmpeg-7.0.1.tar.xz
 https://ffmpeg.org/releases/ffmpeg-7.0.tar.xz
+https://ffmpeg.org/releases/ffmpeg-7.1.1.tar.xz
 https://ffmpeg.org/releases/ffmpeg-7.1.tar.xz
 https://files.pythonhosted.org/packages/03/3b/68690a035ba7347860f1b8c0cde853230ba69ff41df5884ea7d89fe68cd3/Mako-1.2.4-py3-none-any.whl
 https://files.pythonhosted.org/packages/08/f4/ffa743f860f34a5e8c60abaaa686f82c9ac7a2b50e5a1c3b1eb564d59159/PyYAML-6.0-cp39-cp39-win_amd64.whl
@@ -1012,6 +1013,7 @@ https://github.com/Genivia/ugrep/archive/refs/tags/v7.2.0.tar.gz
 https://github.com/Genivia/ugrep/archive/refs/tags/v7.2.1.tar.gz
 https://github.com/Genivia/ugrep/archive/refs/tags/v7.2.2.tar.gz
 https://github.com/GrapheneOS/hardened_malloc/archive/refs/tags/11.tar.gz
+https://github.com/GyulyVGC/sniffnet/archive/refs/tags/v1.3.2.tar.gz
 https://github.com/Hjdskes/cage/archive/refs/tags/v0.1.4.tar.gz
 https://github.com/HowardHinnant/date/archive/refs/tags/v3.0.1.tar.gz
 https://github.com/Hummer12007/brightnessctl/archive/refs/tags/0.5.1.tar.gz
@@ -1340,6 +1342,7 @@ https://github.com/alacritty/alacritty/archive/refs/tags/v0.9.0.tar.gz
 https://github.com/alecthomas/chroma/archive/refs/tags/v2.13.0.tar.gz
 https://github.com/alecthomas/chroma/archive/refs/tags/v2.8.0.tar.gz
 https://github.com/alecthomas/chroma/archive/refs/tags/v2.9.1.tar.gz
+https://github.com/altlinux/libutempter/archive/refs/tags/1.2.3-alt1.tar.gz
 https://github.com/ammen99/wf-recorder/archive/refs/tags/v0.4.1.tar.gz
 https://github.com/analogdevicesinc/libiio/archive/refs/tags/v0.26.tar.gz
 https://github.com/andikleen/mcelog/archive/refs/tags/v198.tar.gz
@@ -1748,6 +1751,7 @@ https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.34.1.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.35.0.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.36.1.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.37.0.tar.gz
+https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.38.0.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.4.0.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.5.0.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.6.0.tar.gz
@@ -2152,6 +2156,7 @@ https://github.com/jeaye/stdman/archive/refs/tags/2024.07.05.tar.gz
 https://github.com/jech/dht/archive/refs/tags/dht-0.27.tar.gz
 https://github.com/jedisct1/libsodium/archive/refs/tags/1.0.18.tar.gz
 https://github.com/jedisct1/libsodium/archive/refs/tags/1.0.19.tar.gz
+https://github.com/jedisct1/libsodium/archive/refs/tags/1.0.20-RELEASE.tar.gz
 https://github.com/jedisct1/libsodium/archive/refs/tags/1.0.20.tar.gz
 https://github.com/jemalloc/jemalloc/archive/refs/tags/5.3.0.tar.gz
 https://github.com/jesseduffield/lazygit/archive/refs/tags/v0.40.2.tar.gz
@@ -2223,6 +2228,7 @@ https://github.com/junegunn/fzf/archive/refs/tags/v0.56.3.tar.gz
 https://github.com/junegunn/fzf/archive/refs/tags/v0.57.0.tar.gz
 https://github.com/junegunn/fzf/archive/refs/tags/v0.59.0.tar.gz
 https://github.com/junegunn/fzf/archive/refs/tags/v0.60.0.tar.gz
+https://github.com/junegunn/fzf/archive/refs/tags/v0.60.3.tar.gz
 https://github.com/kaniini/libucontext/archive/refs/tags/libucontext-1.2.tar.gz
 https://github.com/kaniini/libucontext/archive/refs/tags/libucontext-1.3.1.tar.gz
 https://github.com/kaniini/libucontext/archive/refs/tags/libucontext-1.3.2.tar.gz
@@ -2384,7 +2390,9 @@ https://github.com/libsdl-org/SDL/archive/refs/tags/release-2.30.7.tar.gz
 https://github.com/libsdl-org/SDL/archive/refs/tags/release-2.30.8.tar.gz
 https://github.com/libsdl-org/SDL/archive/refs/tags/release-2.30.9.tar.gz
 https://github.com/libsdl-org/SDL/archive/refs/tags/release-2.32.0.tar.gz
+https://github.com/libsdl-org/SDL/archive/refs/tags/release-2.32.2.tar.gz
 https://github.com/libsdl-org/SDL/archive/refs/tags/release-3.2.4.tar.gz
+https://github.com/libsdl-org/SDL/archive/refs/tags/release-3.2.6.tar.gz
 https://github.com/libsdl-org/SDL/releases/download/release-2.28.3/SDL2-2.28.3.tar.gz
 https://github.com/libsdl-org/SDL/releases/download/release-2.28.4/SDL2-2.28.4.tar.gz
 https://github.com/libsdl-org/SDL/releases/download/release-2.28.5/SDL2-2.28.5.tar.gz
@@ -2392,6 +2400,8 @@ https://github.com/libsdl-org/SDL_image/archive/refs/tags/release-2.6.2.tar.gz
 https://github.com/libsdl-org/SDL_image/archive/refs/tags/release-2.8.0.tar.gz
 https://github.com/libsdl-org/SDL_image/archive/refs/tags/release-2.8.1.tar.gz
 https://github.com/libsdl-org/SDL_image/archive/refs/tags/release-2.8.3.tar.gz
+https://github.com/libsdl-org/SDL_image/archive/refs/tags/release-2.8.6.tar.gz
+https://github.com/libsdl-org/SDL_image/archive/refs/tags/release-3.2.2.tar.gz
 https://github.com/libsdl-org/SDL_mixer/archive/refs/tags/release-2.6.3.tar.gz
 https://github.com/libsdl-org/SDL_mixer/archive/refs/tags/release-2.8.0.tar.gz
 https://github.com/libsdl-org/SDL_net/archive/refs/tags/release-2.2.0.tar.gz
@@ -2400,6 +2410,7 @@ https://github.com/libsdl-org/SDL_ttf/archive/refs/tags/preview-3.1.0.tar.gz
 https://github.com/libsdl-org/SDL_ttf/archive/refs/tags/release-2.20.2.tar.gz
 https://github.com/libsdl-org/SDL_ttf/archive/refs/tags/release-2.22.0.tar.gz
 https://github.com/libsdl-org/SDL_ttf/archive/refs/tags/release-2.24.0.tar.gz
+https://github.com/libsdl-org/SDL_ttf/archive/refs/tags/release-3.2.0.tar.gz
 https://github.com/libsdl-org/sdl12-compat/archive/refs/tags/release-1.2.60.tar.gz
 https://github.com/libsdl-org/sdl12-compat/archive/refs/tags/release-1.2.64.tar.gz
 https://github.com/libsixel/libsixel/archive/refs/tags/v1.10.3.tar.gz
@@ -3032,6 +3043,7 @@ https://github.com/rrthomas/libpaper/releases/download/v2.1.3/libpaper-2.1.3.tar
 https://github.com/rrthomas/libpaper/releases/download/v2.2.3/libpaper-2.2.3.tar.gz
 https://github.com/rrthomas/libpaper/releases/download/v2.2.5/libpaper-2.2.5.tar.gz
 https://github.com/rs/curlie/archive/refs/tags/v1.6.9.tar.gz
+https://github.com/rs/curlie/archive/refs/tags/v1.8.1.tar.gz
 https://github.com/rsms/inter/releases/download/v3.19/Inter-3.19.zip
 https://github.com/rsms/inter/releases/download/v4.0/Inter-4.0.zip
 https://github.com/rsteube/carapace-bin/archive/refs/tags/v0.28.3.tar.gz
@@ -3196,6 +3208,7 @@ https://github.com/strukturag/libheif/archive/refs/tags/v1.19.1.tar.gz
 https://github.com/strukturag/libheif/archive/refs/tags/v1.19.2.tar.gz
 https://github.com/strukturag/libheif/archive/refs/tags/v1.19.3.tar.gz
 https://github.com/strukturag/libheif/archive/refs/tags/v1.19.5.tar.gz
+https://github.com/strukturag/libheif/archive/refs/tags/v1.19.7.tar.gz
 https://github.com/svenstaro/miniserve/archive/172c321c0809198ef7cafffc81aa3f8f688c5544.zip
 https://github.com/svenstaro/miniserve/archive/refs/tags/v0.26.0.tar.gz
 https://github.com/swaywm/sway/archive/refs/tags/1.10.1.tar.gz
@@ -3859,6 +3872,7 @@ https://gitlab.gnome.org/GNOME/sysprof/-/archive/46.0/sysprof-46.0.tar.bz2
 https://gitlab.gnome.org/GNOME/sysprof/-/archive/47.1/sysprof-47.1.tar.bz2
 https://gitlab.gnome.org/GNOME/vala/-/archive/0.56.1/vala-0.56.1.tar.bz2
 https://gitlab.gnome.org/GNOME/vala/-/archive/0.56.17/vala-0.56.17.tar.bz2
+https://gitlab.gnome.org/GNOME/vala/-/archive/0.56.18/vala-0.56.18.tar.bz2
 https://gitlab.gnome.org/GNOME/vte/-/archive/0.72.2/vte-0.72.2.tar.bz2
 https://gitlab.gnome.org/GNOME/vte/-/archive/0.74.0/vte-0.74.0.tar.bz2
 https://gitlab.gnome.org/GNOME/vte/-/archive/0.74.1/vte-0.74.1.tar.bz2

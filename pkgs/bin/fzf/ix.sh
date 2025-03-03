@@ -1,11 +1,11 @@
 {% extends '//die/go/build.sh' %}
 
 {% block go_url %}
-https://github.com/junegunn/fzf/archive/refs/tags/v0.60.0.tar.gz
+https://github.com/junegunn/fzf/archive/refs/tags/v0.60.3.tar.gz
 {% endblock %}
 
 {% block go_sha %}
-e6458988f7f8af78fdc64c7875cf069bc0902685b6587e235c3d70bb4b7ad785
+af0fdfb4fc8681dcf763ad0e34bcd86ab4e1975aae6a39b0d1b7844fd09f1752
 {% endblock %}
 
 {% block install %}
