@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://gitlab.gnome.org/GNOME/vala/-/archive/0.56.17/vala-0.56.17.tar.bz2
-sha:691721734b0c5a368fa82ce82b0de652d42aed2133cf9275fd66493365eaa1dd
+https://gitlab.gnome.org/GNOME/vala/-/archive/0.56.18/vala-0.56.18.tar.bz2
+sha:702e82db5cd462870a5d30ac3da415dd7156b084920b2e41e7ec61d36e2b5b98
 {% endblock %}
 
 {% block bld_libs %}
