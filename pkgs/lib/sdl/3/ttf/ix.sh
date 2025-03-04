@@ -17,4 +17,9 @@ lib/pluto/svg
 SDLTTF_SAMPLES=OFF
 SDLTTF_INSTALL=ON
 SDLTTF_VENDORED=OFF
+BUILD_SHARED_LIBS=ON
+{% endblock %}
+
+{% block build_flags %}
+wrap_cc
 {% endblock %}
