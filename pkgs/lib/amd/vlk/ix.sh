@@ -7,6 +7,7 @@ pip/jinja2
 bin/glslang
 bld/wayland
 bld/pzd/des
+pip/ruamel.yaml
 {% endblock %}
 
 {% block lib_deps %}
@@ -29,6 +30,10 @@ lib/shim/fake/pkg(pkg_name=xshmfence,pkg_ver=100500)
 PAL_BUILD_DRI3=OFF
 PAL_XCB_REQUIRED=OFF
 BUILD_WAYLAND_SUPPORT=On
+{% endblock %}
+
+{% block cpp_defines %}
+ACCESSPERMS=0777
 {% endblock %}
 
 {% block patch %}

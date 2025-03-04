@@ -159,6 +159,10 @@
         ],
         "url": "https://files.pythonhosted.org/packages/70/8e/0e2d847013cb52cd35b38c009bb167a1a26b2ce6cd6965bf26b47bc0bf44/requests-2.31.0-py3-none-any.whl"
     },
+    "ruamel.yaml/ix.sh": {
+        "md5": "951333761b87f737ab3cce04494c1364",
+        "url": "https://files.pythonhosted.org/packages/c2/36/dfc1ebc0081e6d39924a2cc53654497f967a084a436bb64402dfce4254d9/ruamel.yaml-0.18.10-py3-none-any.whl"
+    },
     "s3transfer/ix.sh": {
         "md5": "a8e4ac6484afa66b26e2cc9f92d908f1",
         "run": [
