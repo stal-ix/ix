@@ -50,7 +50,7 @@
 #}
 
 {% block run_deps %}
-#bin/bcache/fs/tools
+bin/bcache/fs/tools
 bin/sniff/net
 bin/pax/utils
 bin/syd/box
