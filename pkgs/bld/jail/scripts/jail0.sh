@@ -10,8 +10,12 @@ mkdir -p ./${store}
 mkdir dev
 >dev/null
 >dev/zero
+>dev/random
+>dev/urandom
 mount --bind /dev/null dev/null
 mount --bind /dev/zero dev/zero
+mount --bind /dev/zero dev/random
+mount --bind /dev/zero dev/urandom
 cp -P /dev/stdin dev/
 cp -P /dev/stdout dev/
 cp -P /dev/stderr dev/
