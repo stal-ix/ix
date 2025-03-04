@@ -3,7 +3,7 @@
 {% block task_pool %}full{% endblock %}
 
 {% block rustc_ver %}
-80
+{{rustc_ver or '80'}}
 {% endblock %}
 
 {% block std_env %}
@@ -83,6 +83,7 @@ __default__
 
 {% block cargo_flags %}
 build
+
 --offline
 --target {{target.rust}}
 --profile {{self.cargo_profile().strip()}}

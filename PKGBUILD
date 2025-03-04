@@ -1,0 +1,416 @@
+# Maintainer: lilydjwg <lilydjwg@gmail.com>
+
+pkgname=(rust-nightly
+         rustfmt-nightly
+         cargo-nightly
+         rust-clippy-nightly
+         rust-analyzer-nightly
+         rust-miri-nightly
+         rust-src-nightly
+         rust-docs-nightly
+         rust-std-nightly-arm-unknown-linux-gnueabihf
+         rust-std-nightly-armv7-unknown-linux-gnueabihf
+         rust-std-nightly-x86_64-unknown-linux-gnu
+         rust-std-nightly-i686-unknown-linux-gnu
+         rust-std-nightly-i686-pc-windows-gnu
+         rust-std-nightly-x86_64-pc-windows-gnu
+         rust-std-nightly-wasm32-unknown-unknown
+         rust-std-nightly-aarch64-linux-android
+         rust-std-nightly-x86_64-unknown-linux-musl
+        )
+pkgver=1.87.0_20250226
+pkgrel=4
+epoch=4
+pkgdesc="A safe, concurrent, practical language from Mozilla (nightly version)"
+arch=('i686' 'x86_64')
+url="https://www.rust-lang.org/"
+license=('MIT' 'Apache')
+validpgpkeys=('108F66205EAEB0AAA8DD5E1C85AB96E6FA1BE5FE')
+makedepends=('git')
+source=(
+        'https://static.rust-lang.org/dist/2025-02-26/rust-nightly-x86_64-unknown-linux-gnu.tar.xz'
+        'https://static.rust-lang.org/dist/2025-02-26/rust-nightly-x86_64-unknown-linux-gnu.tar.xz.asc'
+        'https://static.rust-lang.org/dist/2025-02-26/rust-src-nightly.tar.xz'
+        'https://static.rust-lang.org/dist/2025-02-26/rust-src-nightly.tar.xz.asc'
+        'https://static.rust-lang.org/dist/2025-02-26/clippy-nightly-x86_64-unknown-linux-gnu.tar.xz'
+        'https://static.rust-lang.org/dist/2025-02-26/clippy-nightly-x86_64-unknown-linux-gnu.tar.xz.asc'
+
+        'https://static.rust-lang.org/dist/2025-02-26/rust-std-nightly-arm-unknown-linux-gnueabihf.tar.xz'
+        'https://static.rust-lang.org/dist/2025-02-26/rust-std-nightly-arm-unknown-linux-gnueabihf.tar.xz.asc'
+        'https://static.rust-lang.org/dist/2025-02-26/rust-std-nightly-armv7-unknown-linux-gnueabihf.tar.xz'
+        'https://static.rust-lang.org/dist/2025-02-26/rust-std-nightly-armv7-unknown-linux-gnueabihf.tar.xz.asc'
+        'https://static.rust-lang.org/dist/2025-02-26/rust-std-nightly-x86_64-unknown-linux-gnu.tar.xz'
+        'https://static.rust-lang.org/dist/2025-02-26/rust-std-nightly-x86_64-unknown-linux-gnu.tar.xz.asc'
+        'https://static.rust-lang.org/dist/2025-02-26/rust-std-nightly-i686-unknown-linux-gnu.tar.xz'
+        'https://static.rust-lang.org/dist/2025-02-26/rust-std-nightly-i686-unknown-linux-gnu.tar.xz.asc'
+        'https://static.rust-lang.org/dist/2025-02-26/rust-std-nightly-i686-pc-windows-gnu.tar.xz'
+        'https://static.rust-lang.org/dist/2025-02-26/rust-std-nightly-i686-pc-windows-gnu.tar.xz.asc'
+        'https://static.rust-lang.org/dist/2025-02-26/rust-std-nightly-x86_64-pc-windows-gnu.tar.xz'
+        'https://static.rust-lang.org/dist/2025-02-26/rust-std-nightly-x86_64-pc-windows-gnu.tar.xz.asc'
+        'https://static.rust-lang.org/dist/2025-02-26/rust-std-nightly-wasm32-unknown-unknown.tar.xz'
+        'https://static.rust-lang.org/dist/2025-02-26/rust-std-nightly-wasm32-unknown-unknown.tar.xz.asc'
+        'https://static.rust-lang.org/dist/2025-02-26/rust-std-nightly-aarch64-linux-android.tar.xz'
+        'https://static.rust-lang.org/dist/2025-02-26/rust-std-nightly-aarch64-linux-android.tar.xz.asc'
+        'https://static.rust-lang.org/dist/2025-02-26/rust-std-nightly-x86_64-unknown-linux-musl.tar.xz'
+        'https://static.rust-lang.org/dist/2025-02-26/rust-std-nightly-x86_64-unknown-linux-musl.tar.xz.asc'
+        'git+https://github.com/rust-lang/zsh-config')
+sha512sums=(
+            'SKIP'
+            'SKIP'
+            'SKIP'
+            'SKIP'
+            'SKIP'
+            'SKIP'
+            'SKIP'
+            'SKIP'
+            'SKIP'
+            'SKIP'
+            'SKIP'
+            'SKIP'
+            'SKIP'
+            'SKIP'
+            'SKIP'
+            'SKIP'
+            'SKIP'
+            'SKIP'
+            'SKIP'
+            'SKIP'
+            'SKIP'
+            'SKIP'
+            'SKIP'
+            'SKIP'
+            'SKIP')
+
+build() {
+  true
+}
+
+_copy_files () {
+  _name=$1
+
+  mkdir -p "$pkgdir/usr"
+  cp -r bin share "$pkgdir/usr"
+
+  mkdir -p "$pkgdir/usr/share/licenses/$pkgname"
+  mv "$pkgdir/usr/share/doc/$_name/"LICENSE* "$pkgdir/usr/share/licenses/$pkgname/"
+  mv "$pkgdir/usr/share/doc/$_name" "$pkgdir/usr/share/doc/$pkgname"
+
+  if [[ -d etc/bash_completion.d ]]; then
+    mkdir "$pkgdir/usr/share/bash-completion"
+    cp -r etc/bash_completion.d "$pkgdir/usr/share/bash-completion/completions"
+  fi
+
+  if [[ -d libexec ]]; then
+    mkdir "$pkgdir/usr/lib"
+    cp -r libexec/* "$pkgdir/usr/lib"
+  fi
+  hardlink "$pkgdir"
+}
+
+package_rust-nightly() {
+  depends=("rust-std-nightly-$CARCH-unknown-linux-gnu=$epoch:$pkgver")
+  optdepends=('rust-docs-nightly: language and API documentation'
+              'rust-src-nightly: source code'
+              'vim-rust-git: support for Vim'
+
+              'rust-std-nightly-arm-unknown-linux-gnueabihf: cross compile for arm-unknown-linux-gnueabihf'
+              'rust-std-nightly-armv7-unknown-linux-gnueabihf: cross compile for armv7-unknown-linux-gnueabihf'
+              'rust-std-nightly-x86_64-unknown-linux-gnu: cross compile for x86_64-unknown-linux-gnu'
+              'rust-std-nightly-i686-unknown-linux-gnu: cross compile for i686-unknown-linux-gnu'
+              'rust-std-nightly-i686-pc-windows-gnu: cross compile for i686-pc-windows-gnu'
+              'rust-std-nightly-x86_64-pc-windows-gnu: cross compile for x86_64-pc-windows-gnu'
+              'rust-std-nightly-wasm32-unknown-unknown: cross compile for wasm32-unknown-unknown'
+              'rust-std-nightly-aarch64-linux-android: cross compile for aarch64-linux-android'
+              'rust-std-nightly-x86_64-unknown-linux-musl: cross compile for x86_64-unknown-linux-musl'
+              'cargo-nightly: Rust package manager')
+  provides=(rust=1.87.0)
+  conflicts=(rust)
+  options=(!strip)
+
+  install -Dm644 "$srcdir"/zsh-config/_rust "$pkgdir/usr/share/zsh/site-functions/_rust"
+
+  cd rust-nightly-$CARCH-unknown-linux-gnu
+  ./install.sh --destdir="$pkgdir" --prefix=/usr --disable-ldconfig --components=rustc
+  rm "$pkgdir"/usr/lib/rustlib/{components,manifest-*,rust-installer-version,install.log,uninstall.sh}
+
+  mv "$pkgdir"/usr/libexec/* "$pkgdir"/usr/lib/
+  rm -r "$pkgdir"/usr/libexec
+
+  rm -r "$pkgdir/usr/share/doc"
+  cd "$pkgdir"/usr/lib
+  for so in *.so; do
+    if [[ $so != libstd-* && $so != libtest-* ]]; then
+      continue
+    fi
+    rm $so
+    ln -s rustlib/"$CARCH"-unknown-linux-gnu/lib/$so .
+  done
+  hardlink "$pkgdir"
+}
+
+package_rust-docs-nightly() {
+  pkgdesc="A safe, concurrent, practical language from Mozilla. (Language and API documentation, for nightly version)"
+  arch=('any')
+  options=('!strip')
+  optdepends=('rust-nightly: to compile and run the programs you can write using this documentation')
+  provides=('rust-doc=1.87.0')
+  conflicts=('rust-doc')
+
+  cd rust-nightly-$CARCH-unknown-linux-gnu/rust-docs
+  mkdir -p "$pkgdir/usr"
+  cp -r share "$pkgdir/usr"
+  hardlink "$pkgdir"
+}
+
+package_rustfmt-nightly() {
+  pkgdesc="A safe, concurrent, practical language from Mozilla. (rustfmt formatter, for nightly version)"
+  provides=('rustfmt=1.8.0')
+  conflicts=('rustup')
+  depends=("rust-nightly=$epoch:$pkgver")
+
+  cd rust-nightly-$CARCH-unknown-linux-gnu/rustfmt-preview
+  _copy_files rustfmt
+}
+
+package_rust-clippy-nightly() {
+  pkgdesc="A collection of lints to catch common mistakes and improve your Rust code (nightly version)"
+  provides=('rust-clippy=0.1.86')
+  conflicts=('rustup')
+  depends=("rust-nightly=$epoch:$pkgver")
+
+  cd rust-nightly-$CARCH-unknown-linux-gnu/clippy-preview
+  _copy_files clippy
+}
+
+package_rust-analyzer-nightly() {
+  pkgdesc="Rust compiler front-end for IDEs (nightly version)"
+  provides=('rust-analyzer')
+  conflicts=('rustup' 'rust-analyzer')
+  depends=("rust-nightly=$epoch:$pkgver")
+  optdepends=('rust-src')
+
+  cd rust-nightly-$CARCH-unknown-linux-gnu/rust-analyzer-preview
+  _copy_files rust-analyzer
+}
+
+package_rust-miri-nightly() {
+  pkgdesc="An interpreter for Rust's mid-level intermediate representation (nightly version)"
+  provides=('rust-miri=0.1.0')
+  conflicts=('rustup')
+  depends=("rust-nightly=$epoch:$pkgver")
+
+  cd rust-nightly-$CARCH-unknown-linux-gnu/miri-preview
+  _copy_files miri
+}
+
+package_cargo-nightly() {
+  pkgdesc="Rust package manager (nightly version)"
+  depends=('rust-nightly')
+  provides=('cargo=0.88.0')
+  conflicts=('rustup')
+
+  cd rust-nightly-$CARCH-unknown-linux-gnu/cargo
+  _copy_files cargo
+}
+
+package_rust-src-nightly() {
+  pkgdesc="A safe, concurrent, practical language from Mozilla. (Source code, for nightly version)"
+  arch=('any')
+  options=('!strip')
+  optdepends=('rust-nightly')
+  provides=('rust-src=1.87.0')
+  conflicts=('rust-src')
+
+  cd rust-src-nightly/rust-src
+  mkdir -p "$pkgdir/usr"
+  cp -r lib "$pkgdir/usr"
+  hardlink "$pkgdir"
+}
+
+
+package_rust-std-nightly-arm-unknown-linux-gnueabihf(){
+  pkgdesc="A safe, concurrent, practical language from Mozilla. (standard library, for nightly version, for (cross-)compiling to and running on arm-unknown-linux-gnueabihf)"
+  arch=('any')
+  options=('!strip' 'staticlibs')
+
+
+
+  cd rust-std-nightly-arm-unknown-linux-gnueabihf
+  chmod +x install.sh
+  sed -i 's/\r//g' install.sh
+  ./install.sh --destdir="$pkgdir" --prefix=/usr --disable-ldconfig
+  rm "$pkgdir"/usr/lib/rustlib/{components,manifest-*,rust-installer-version,install.log,uninstall.sh}
+  find "$pkgdir"/usr/lib -name '*.so' -exec chmod +x {} +
+
+  mkdir -p "$pkgdir/usr/share/"{doc,licenses}"/$pkgname"
+  cp COPYRIGHT LICENSE-* "$pkgdir/usr/share/licenses/$pkgname"
+  cp README.md "$pkgdir/usr/share/doc/$pkgname"
+  hardlink "$pkgdir"
+}
+
+package_rust-std-nightly-armv7-unknown-linux-gnueabihf(){
+  pkgdesc="A safe, concurrent, practical language from Mozilla. (standard library, for nightly version, for (cross-)compiling to and running on armv7-unknown-linux-gnueabihf)"
+  arch=('any')
+  options=('!strip' 'staticlibs')
+
+
+
+  cd rust-std-nightly-armv7-unknown-linux-gnueabihf
+  chmod +x install.sh
+  sed -i 's/\r//g' install.sh
+  ./install.sh --destdir="$pkgdir" --prefix=/usr --disable-ldconfig
+  rm "$pkgdir"/usr/lib/rustlib/{components,manifest-*,rust-installer-version,install.log,uninstall.sh}
+  find "$pkgdir"/usr/lib -name '*.so' -exec chmod +x {} +
+
+  mkdir -p "$pkgdir/usr/share/"{doc,licenses}"/$pkgname"
+  cp COPYRIGHT LICENSE-* "$pkgdir/usr/share/licenses/$pkgname"
+  cp README.md "$pkgdir/usr/share/doc/$pkgname"
+  hardlink "$pkgdir"
+}
+
+package_rust-std-nightly-x86_64-unknown-linux-gnu(){
+  pkgdesc="A safe, concurrent, practical language from Mozilla. (standard library, for nightly version, for (cross-)compiling to and running on x86_64-unknown-linux-gnu)"
+  arch=('any')
+  options=('!strip' 'staticlibs')
+
+
+
+  cd rust-std-nightly-x86_64-unknown-linux-gnu
+  chmod +x install.sh
+  sed -i 's/\r//g' install.sh
+  ./install.sh --destdir="$pkgdir" --prefix=/usr --disable-ldconfig
+  rm "$pkgdir"/usr/lib/rustlib/{components,manifest-*,rust-installer-version,install.log,uninstall.sh}
+  find "$pkgdir"/usr/lib -name '*.so' -exec chmod +x {} +
+
+  mkdir -p "$pkgdir/usr/share/"{doc,licenses}"/$pkgname"
+  cp COPYRIGHT LICENSE-* "$pkgdir/usr/share/licenses/$pkgname"
+  cp README.md "$pkgdir/usr/share/doc/$pkgname"
+  hardlink "$pkgdir"
+}
+
+package_rust-std-nightly-i686-unknown-linux-gnu(){
+  pkgdesc="A safe, concurrent, practical language from Mozilla. (standard library, for nightly version, for (cross-)compiling to and running on i686-unknown-linux-gnu)"
+  arch=('any')
+  options=('!strip' 'staticlibs')
+
+
+  provides=('lib32-rust-libs')
+
+  cd rust-std-nightly-i686-unknown-linux-gnu
+  chmod +x install.sh
+  sed -i 's/\r//g' install.sh
+  ./install.sh --destdir="$pkgdir" --prefix=/usr --disable-ldconfig
+  rm "$pkgdir"/usr/lib/rustlib/{components,manifest-*,rust-installer-version,install.log,uninstall.sh}
+  find "$pkgdir"/usr/lib -name '*.so' -exec chmod +x {} +
+
+  mkdir -p "$pkgdir/usr/share/"{doc,licenses}"/$pkgname"
+  cp COPYRIGHT LICENSE-* "$pkgdir/usr/share/licenses/$pkgname"
+  cp README.md "$pkgdir/usr/share/doc/$pkgname"
+  hardlink "$pkgdir"
+}
+
+package_rust-std-nightly-i686-pc-windows-gnu(){
+  pkgdesc="A safe, concurrent, practical language from Mozilla. (standard library, for nightly version, for (cross-)compiling to and running on i686-pc-windows-gnu)"
+  arch=('any')
+  options=('!strip' 'staticlibs')
+
+  optdepends=('mingw-w64-gcc')
+
+
+  cd rust-std-nightly-i686-pc-windows-gnu
+  chmod +x install.sh
+  sed -i 's/\r//g' install.sh
+  ./install.sh --destdir="$pkgdir" --prefix=/usr --disable-ldconfig
+  rm "$pkgdir"/usr/lib/rustlib/{components,manifest-*,rust-installer-version,install.log,uninstall.sh}
+  find "$pkgdir"/usr/lib -name '*.so' -exec chmod +x {} +
+
+  mkdir -p "$pkgdir/usr/share/"{doc,licenses}"/$pkgname"
+  cp COPYRIGHT LICENSE-* "$pkgdir/usr/share/licenses/$pkgname"
+  cp README.md "$pkgdir/usr/share/doc/$pkgname"
+  hardlink "$pkgdir"
+}
+
+package_rust-std-nightly-x86_64-pc-windows-gnu(){
+  pkgdesc="A safe, concurrent, practical language from Mozilla. (standard library, for nightly version, for (cross-)compiling to and running on x86_64-pc-windows-gnu)"
+  arch=('any')
+  options=('!strip' 'staticlibs')
+
+  optdepends=('mingw-w64-gcc')
+
+
+  cd rust-std-nightly-x86_64-pc-windows-gnu
+  chmod +x install.sh
+  sed -i 's/\r//g' install.sh
+  ./install.sh --destdir="$pkgdir" --prefix=/usr --disable-ldconfig
+  rm "$pkgdir"/usr/lib/rustlib/{components,manifest-*,rust-installer-version,install.log,uninstall.sh}
+  find "$pkgdir"/usr/lib -name '*.so' -exec chmod +x {} +
+
+  mkdir -p "$pkgdir/usr/share/"{doc,licenses}"/$pkgname"
+  cp COPYRIGHT LICENSE-* "$pkgdir/usr/share/licenses/$pkgname"
+  cp README.md "$pkgdir/usr/share/doc/$pkgname"
+  hardlink "$pkgdir"
+}
+
+package_rust-std-nightly-wasm32-unknown-unknown(){
+  pkgdesc="A safe, concurrent, practical language from Mozilla. (standard library, for nightly version, for (cross-)compiling to and running on wasm32-unknown-unknown)"
+  arch=('any')
+  options=('!strip' 'staticlibs')
+
+
+  provides=('rust-wasm')
+
+  cd rust-std-nightly-wasm32-unknown-unknown
+  chmod +x install.sh
+  sed -i 's/\r//g' install.sh
+  ./install.sh --destdir="$pkgdir" --prefix=/usr --disable-ldconfig
+  rm "$pkgdir"/usr/lib/rustlib/{components,manifest-*,rust-installer-version,install.log,uninstall.sh}
+  find "$pkgdir"/usr/lib -name '*.so' -exec chmod +x {} +
+
+  mkdir -p "$pkgdir/usr/share/"{doc,licenses}"/$pkgname"
+  cp COPYRIGHT LICENSE-* "$pkgdir/usr/share/licenses/$pkgname"
+  cp README.md "$pkgdir/usr/share/doc/$pkgname"
+  hardlink "$pkgdir"
+}
+
+package_rust-std-nightly-aarch64-linux-android(){
+  pkgdesc="A safe, concurrent, practical language from Mozilla. (standard library, for nightly version, for (cross-)compiling to and running on aarch64-linux-android)"
+  arch=('any')
+  options=('!strip' 'staticlibs')
+
+  optdepends=('android-ndk')
+
+
+  cd rust-std-nightly-aarch64-linux-android
+  chmod +x install.sh
+  sed -i 's/\r//g' install.sh
+  ./install.sh --destdir="$pkgdir" --prefix=/usr --disable-ldconfig
+  rm "$pkgdir"/usr/lib/rustlib/{components,manifest-*,rust-installer-version,install.log,uninstall.sh}
+  find "$pkgdir"/usr/lib -name '*.so' -exec chmod +x {} +
+
+  mkdir -p "$pkgdir/usr/share/"{doc,licenses}"/$pkgname"
+  cp COPYRIGHT LICENSE-* "$pkgdir/usr/share/licenses/$pkgname"
+  cp README.md "$pkgdir/usr/share/doc/$pkgname"
+  hardlink "$pkgdir"
+}
+
+package_rust-std-nightly-x86_64-unknown-linux-musl(){
+  pkgdesc="A safe, concurrent, practical language from Mozilla. (standard library, for nightly version, for (cross-)compiling to and running on x86_64-unknown-linux-musl)"
+  arch=('any')
+  options=('!strip' 'staticlibs')
+
+
+  provides=('rust-musl')
+
+  cd rust-std-nightly-x86_64-unknown-linux-musl
+  chmod +x install.sh
+  sed -i 's/\r//g' install.sh
+  ./install.sh --destdir="$pkgdir" --prefix=/usr --disable-ldconfig
+  rm "$pkgdir"/usr/lib/rustlib/{components,manifest-*,rust-installer-version,install.log,uninstall.sh}
+  find "$pkgdir"/usr/lib -name '*.so' -exec chmod +x {} +
+
+  mkdir -p "$pkgdir/usr/share/"{doc,licenses}"/$pkgname"
+  cp COPYRIGHT LICENSE-* "$pkgdir/usr/share/licenses/$pkgname"
+  cp README.md "$pkgdir/usr/share/doc/$pkgname"
+  hardlink "$pkgdir"
+}
+
