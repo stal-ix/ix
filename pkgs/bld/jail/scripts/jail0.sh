@@ -15,8 +15,8 @@ mkdir dev
 >dev/urandom
 mount --bind /dev/null dev/null
 mount --bind /dev/zero dev/zero
-mount --bind /dev/zero dev/random
-mount --bind /dev/zero dev/urandom
+mount --bind /dev/random dev/random
+mount --bind /dev/urandom dev/urandom
 cp -P /dev/stdin dev/
 cp -P /dev/stdout dev/
 cp -P /dev/stderr dev/
