@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/microsoft/msquic/archive/refs/tags/v2.4.7.tar.gz
-sha:afc76d811d192b745388204bdd2a06a1cde621f54531854323ecda788703ccc6
+https://github.com/microsoft/msquic/archive/refs/tags/v2.4.8.tar.gz
+sha:071c11611a03ae65c1efd2a14919b03504e9c08a405779d9ef0793629bd1d00c
 {% endblock %}
 
 {% block lib_deps %}

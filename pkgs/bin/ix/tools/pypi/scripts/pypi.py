@@ -1,11 +1,27 @@
 #!/usr/bin/env python3
 
 import os
+
+os.environ['SSL_CERT_FILE'] = 'nowhere'
+
 import sys
 import json
 import itertools
 
 import urllib.request as ur
+
+
+try:
+    import ssl
+    ssl._create_default_https_context = ssl._create_unverified_context
+except ImportError:
+    pass
+
+try:
+    import urllib3
+    urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
+except ImportError:
+    pass
 
 def iter_recs(args):
     for a in args:

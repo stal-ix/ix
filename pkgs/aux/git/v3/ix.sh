@@ -26,5 +26,5 @@ done
 {% endblock %}
 
 {% block env %}
-export GIT_TGZ="${out}/share/{{self.fname().strip()}}"
+export {{src_path or 'GIT_TGZ'}}="${out}/share/{{self.fname().strip()}}"
 {% endblock %}
