@@ -8,7 +8,10 @@ mount -t tmpfs tmpfs ${where}
 cd ${where}
 mkdir -p ./${store}
 mkdir dev
-cp /dev/null dev/
+>dev/null
+>dev/zero
+mount --bind /dev/null dev/null
+mount --bind /dev/zero dev/zero
 cp -P /dev/stdin dev/
 cp -P /dev/stdout dev/
 cp -P /dev/stderr dev/
