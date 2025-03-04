@@ -13,10 +13,13 @@ lib/c
 bld/pkg/config
 {% endblock %}
 
+{% block build_flags %}
+wrap_cc
+{% endblock %}
+
 {% block cmake_flags %}
-LIBTYPE=STATIC
-SDL_STATIC=ON
-SDL_SHARED=OFF
+SDL_STATIC=OFF
+SDL_SHARED=ON
 SDL_ARTS=OFF
 SDL_ARTS_SHARED=OFF
 SDL_ESD=OFF
