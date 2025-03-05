@@ -30,4 +30,7 @@ mkdir etc
 cat << EOF > etc/passwd
 root:x:0:0:none:/home/root:/bin/sh
 EOF
+cat << EOF > etc/group
+root:x:0:
+EOF
 exec ${@}
