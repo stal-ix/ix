@@ -1,5 +1,1 @@
-void rallocx() {
-}
 
-void mallocx() {
-}
