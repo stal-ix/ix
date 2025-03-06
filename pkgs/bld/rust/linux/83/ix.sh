@@ -7,6 +7,8 @@ https://static.rust-lang.org/dist/rust-std-1.83.0-aarch64-unknown-linux-musl.tar
 sha:bb10f2db36538990ec43170c40b33995aed4f2fcfd9e1ff8014336644c3cb339
 https://static.rust-lang.org/dist/rust-std-1.83.0-aarch64-apple-darwin.tar.gz
 sha:7b9fa15213cf3fae3a4ae80bb2a0ebabdce29599aa381bbb7b12bb5043fe9a04
+https://static.rust-lang.org/dist/rust-std-1.83.0-x86_64-apple-darwin.tar.gz
+sha:f66146cde62697a6ff2587b3282b4a00f54c35f17109a7a86f5c56b1d0917261
 {% endblock %}
 
 {% block bld_tool %}
