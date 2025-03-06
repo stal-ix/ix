@@ -20,4 +20,12 @@ v4
 {% block bld_libs %}
 lib/c
 lib/zstd
+lib/shim/je
+{{super()}}
+{% endblock %}
+
+{% block host_libs %}
+lib/c
+lib/zstd
+{{super()}}
 {% endblock %}

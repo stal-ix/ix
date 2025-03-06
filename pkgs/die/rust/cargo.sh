@@ -47,7 +47,7 @@ lib/shim/fake(lib_name=gcc_s)
 {% endblock %}
 
 {% block setup_host_flags %}
-export LDFLAGS="-L${LD_LIBRARY_PATH} ${LDFLAGS}"
+export LDFLAGS="-L$(echo ${LD_LIBRARY_PATH} | sed -e 's|:| -L|') -lc ${LDFLAGS}"
 {% endblock %}
 
 {% block setup_target_flags %}
