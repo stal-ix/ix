@@ -20,17 +20,7 @@ v4
 {% block bld_libs %}
 lib/c
 lib/zstd
-lib/shim/je
-{% if mingw32 %}
-lib/mimalloc/1
-lib/build/muldefs
-lib/shim/dll(dll_name=ole32)
-lib/shim/dll(dll_name=netapi32)
-lib/shim/dll(dll_name=shell32)
-lib/shim/fake(lib_name=unwind)
-lib/shim/fake(lib_name=windows.0.52.0)
-lib/shim/fake(lib_name=windows.0.48.5)
-{% endif %}
+bin/ruff/{{target.os}}
 {{super()}}
 {% endblock %}
 

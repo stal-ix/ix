@@ -1,0 +1,5 @@
+void rallocx() {
+}
+
+void mallocx() {
+}

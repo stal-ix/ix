@@ -6,6 +6,3 @@ void mallocx() {
 
 void sdallocx() {
 }
-
-void WinMain() {
-}
