@@ -17,7 +17,9 @@ bld/pkg/config
 
 {% block patch %}
 find . -type f | while read l; do
-    sed -e 's|/usr/bin/pkg|pkg|' -i ${l}
+    sed -e 's|/usr/bin/pkg|pkg|' \
+        -e 's|/usr/bin/install|install|' \
+        -i ${l}
 done
 {% endblock %}
 
