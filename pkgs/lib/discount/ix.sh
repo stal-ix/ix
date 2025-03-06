@@ -10,6 +10,7 @@ lib/c
 {% endblock %}
 
 {% block configure %}
+export AC_PATH=${PATH}
 sh ./configure.sh \
     --prefix=${out} \
     --enable-all-features
