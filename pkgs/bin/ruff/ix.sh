@@ -21,6 +21,8 @@ v4
 lib/c
 lib/zstd
 lib/shim/je
+lib/build/muldefs
+lib/shim/fake(lib_name=unwind)
 {{super()}}
 {% endblock %}
 
@@ -28,4 +30,9 @@ lib/shim/je
 lib/c
 lib/zstd
 {{super()}}
+{% endblock %}
+
+{% block cargo_flags %}
+{{super()}}
+--config 'target.x86_64-pc-windows-gnullvm.linker = "clang"'
 {% endblock %}

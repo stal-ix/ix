@@ -1,5 +1,5 @@
 {% extends '//die/env.sh' %}
 
 {% block env %}
-export LDFLAGS="-Wl,-z,muldefs ${LDFLAGS}"
+export LDFLAGS="-Wl,--allow-multiple-definition ${LDFLAGS}"
 {% endblock %}
