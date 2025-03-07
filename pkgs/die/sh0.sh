@@ -6,7 +6,6 @@
 bin/sh/fmt
 {% endif %}
 {% if jail %}
-bld/exec
 bld/jail
 {% endif %}
 {% endblock %}
@@ -17,8 +16,6 @@ base64 -d << EOF | shfmt -i 4 | cat -n
 {{self.script_body_sh() | b64e}}
 EOF
 exit 1
-{% elif jail %}
-jail ${tmp}/jug {{ix_dir}} exec_script {{self.script_body_sh().strip() | b64e}}
 {% else %}
 {{self.script_body_sh().strip()}}
 {% endif %}
@@ -29,5 +26,9 @@ jail ${tmp}/jug {{ix_dir}} exec_script {{self.script_body_sh().strip() | b64e}}
 {% endblock %}
 
 {% block script_exec %}
+{% if jail %}
+["jail", "/sys", "{{ix_dir}}", "sh", "-s"]
+{% else %}
 ["sh", "-s"]
+{% endif %}
 {% endblock %}
