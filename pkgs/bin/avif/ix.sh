@@ -3,6 +3,8 @@
 {% block bld_libs %}
 lib/png
 lib/jpeg
+lib/xml/2
+lib/argp/standalone
 {{super()}}
 {% endblock %}
 

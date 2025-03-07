@@ -671,7 +671,7 @@ bin/openvi
 bin/openvi/stalix
 bin/evince
 bin/djvulibre
-bin/avif
+#bin/avif
 bin/intltool
 bin/labwc
 bin/fish
