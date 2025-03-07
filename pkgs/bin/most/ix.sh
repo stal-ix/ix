@@ -11,6 +11,8 @@ lib/slang
 lib/shim/fake(lib_name=termcap)
 {% endblock %}
 
-{% block setup_target_flags %}
-export CPPFLAGS="-iquote ${PWD}/src ${CPPFLAGS}"
+{% block patch %}
+find . -type f | while read l; do
+    sed -e 's|/bin/cp|cp|' -e 's|/bin/rm|rm|' -i ${l}
+done
 {% endblock %}
