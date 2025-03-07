@@ -25,3 +25,9 @@ export JED_ROOT=${out}/share/jed
 {% block make_flags %}
 JED_ROOT="${JED_ROOT}"
 {% endblock %}
+
+{% block patch %}
+find . -type f | while read l; do
+    sed -e 's|/bin/cp|cp|' -e 's|/bin/rm|rm|' -i ${l}
+done
+{% endblock %}
