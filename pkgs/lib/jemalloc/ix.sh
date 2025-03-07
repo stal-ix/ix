@@ -33,8 +33,10 @@ lib/c++/dispatch
 shut_up
 {% endblock %}
 
-{% block cpp_defines %}
+{% block cpp_defines1 %}
+{% if linux %}
 JEMALLOC_BACKGROUND_THREAD=1
+{% endif %}
 {% endblock %}
 
 {% block env %}
