@@ -20,6 +20,8 @@ mount --bind /dev/urandom dev/urandom
 cp -P /dev/stdin dev/
 cp -P /dev/stdout dev/
 cp -P /dev/stderr dev/
+mkdir dev/shm
+mount --bind /dev/shm dev/shm
 mkdir proc
 mount --bind /proc proc
 mkdir bin
