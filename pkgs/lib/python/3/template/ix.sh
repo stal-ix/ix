@@ -110,3 +110,13 @@ export CMFLAGS="-DPython_ROOT_DIR=${out} -DPython3_ROOT_DIR=${out} \${CMFLAGS}"
 
 {% block purge_empty_dirs %}
 {% endblock %}
+
+{% block configure %}
+{{super()}}{% if jail %}
+cat << EOF >> pyconfig.h
+#undef HAVE_BROKEN_SEM_GETVALUE
+#define HAVE_DEV_PTMX 1
+#undef POSIX_SEMAPHORES_NOT_ENABLED
+EOF
+{% endif %}
+{% endblock %}

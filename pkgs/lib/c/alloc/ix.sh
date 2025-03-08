@@ -1,7 +1,9 @@
 {% extends '//die/hub.sh' %}
 
 {% block lib_deps %}
-{% if linux %}
+{% if force_allocator %}
+lib/{{force_allocator}}
+{% elif linux %}
 lib/{{allocator or 'tcmalloc'}}
 {% elif darwin %}
 lib/reallocarray

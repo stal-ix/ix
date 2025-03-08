@@ -11,7 +11,9 @@ lib/kernel
 {% endblock %}
 
 {% block bld_tool %}
+bld/bash
 bld/python
+bld/shebangs
 {% endblock %}
 
 {% block install %}
@@ -21,4 +23,8 @@ mv ${out}/sbin ${out}/bin
 
 {% block make_flags %}
 etcprefix=${out}
+{% endblock %}
+
+{% block patch %}
+fix_shebangs mkcputype
 {% endblock %}

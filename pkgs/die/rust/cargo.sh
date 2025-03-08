@@ -3,7 +3,7 @@
 {% block task_pool %}full{% endblock %}
 
 {% block rustc_ver %}
-80
+{{rustc_ver or '80'}}
 {% endblock %}
 
 {% block std_env %}
@@ -47,7 +47,7 @@ lib/shim/fake(lib_name=gcc_s)
 {% endblock %}
 
 {% block setup_host_flags %}
-export LDFLAGS="-L${LD_LIBRARY_PATH} ${LDFLAGS}"
+export LDFLAGS="-L$(echo ${LD_LIBRARY_PATH} | sed -e 's|:| -L|') -lc ${LDFLAGS}"
 {% endblock %}
 
 {% block setup_target_flags %}
@@ -83,6 +83,7 @@ __default__
 
 {% block cargo_flags %}
 build
+
 --offline
 --target {{target.rust}}
 --profile {{self.cargo_profile().strip()}}
@@ -143,7 +144,7 @@ export TARGET_CXX=${CXX}
 cargo {{ix.fix_list(self.cargo_flags().strip())}} --package {{x}}
 {% endfor %}
 {% else %}
-jail ${tmp}/jug {{ix_dir}} env LD_LIBRARY_PATH=${LD_LIBRARY_PATH} cargo {{ix.fix_list(self.cargo_flags().strip())}}
+cargo {{ix.fix_list(self.cargo_flags().strip())}}
 {% endif %}
 ln -s ${tmp}/{{target.rust}}/{{self.cargo_profile().strip()}} ${tmp}/out
 {% endblock %}

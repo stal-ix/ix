@@ -10,7 +10,7 @@ https://github.com/astral-sh/ruff/archive/refs/tags/0.9.6.tar.gz
 
 {% block install %}
 mkdir ${out}/bin
-cp ${tmp}/out/ruff ${out}/bin/
+cp ${tmp}/out/ruff{{target.exe_suffix}} ${out}/bin/
 {% endblock %}
 
 {% block cargo_ver %}
@@ -20,4 +20,17 @@ v4
 {% block bld_libs %}
 lib/c
 lib/zstd
+bin/ruff/{{target.os}}
+{{super()}}
+{% endblock %}
+
+{% block host_libs %}
+lib/c
+lib/zstd
+{{super()}}
+{% endblock %}
+
+{% block cargo_flags %}
+{{super()}}
+--config 'target.x86_64-pc-windows-gnullvm.linker = "clang"'
 {% endblock %}

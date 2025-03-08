@@ -754,6 +754,7 @@ https://git.kernel.org/pub/scm/network/iproute2/iproute2.git
 https://git.kernel.org/pub/scm/utils/kernel/kmod/kmod.git/snapshot/kmod-30.tar.gz
 https://git.kernel.org/pub/scm/utils/kernel/kmod/kmod.git/snapshot/kmod-31.tar.gz
 https://git.kernel.org/pub/scm/utils/kernel/kmod/kmod.git/snapshot/kmod-32.tar.gz
+https://git.kernel.org/pub/scm/utils/kernel/kmod/kmod.git/snapshot/kmod-34.1.tar.gz
 https://git.kernel.org/pub/scm/utils/kernel/kmod/kmod.git/snapshot/kmod-34.tar.gz
 https://git.kernel.org/pub/scm/utils/mdadm/mdadm.git/snapshot/mdadm-4.3.tar.gz
 https://git.kernel.org/pub/scm/utils/mdadm/mdadm.git/snapshot/mdadm-4.4.tar.gz
@@ -915,6 +916,7 @@ https://github.com/FreeRDP/FreeRDP/archive/refs/tags/3.10.1.tar.gz
 https://github.com/FreeRDP/FreeRDP/archive/refs/tags/3.10.2.tar.gz
 https://github.com/FreeRDP/FreeRDP/archive/refs/tags/3.10.3.tar.gz
 https://github.com/FreeRDP/FreeRDP/archive/refs/tags/3.12.0.tar.gz
+https://github.com/FreeRDP/FreeRDP/archive/refs/tags/3.13.0.tar.gz
 https://github.com/FreeRDP/FreeRDP/archive/refs/tags/3.2.0.tar.gz
 https://github.com/FreeRDP/FreeRDP/archive/refs/tags/3.3.0.tar.gz
 https://github.com/FreeRDP/FreeRDP/archive/refs/tags/3.4.0.tar.gz
@@ -3072,6 +3074,7 @@ https://github.com/rui314/mold/archive/refs/tags/v2.34.1.tar.gz
 https://github.com/rui314/mold/archive/refs/tags/v2.35.0.tar.gz
 https://github.com/rui314/mold/archive/refs/tags/v2.35.1.tar.gz
 https://github.com/rui314/mold/archive/refs/tags/v2.36.0.tar.gz
+https://github.com/rui314/mold/archive/refs/tags/v2.37.0.tar.gz
 https://github.com/rui314/mold/archive/refs/tags/v2.4.0.tar.gz
 https://github.com/rui314/mold/archive/refs/tags/v2.4.1.tar.gz
 https://github.com/rust-lang/rust-bindgen/archive/refs/tags/v0.71.1.tar.gz
@@ -3558,6 +3561,7 @@ https://github.com/xyproto/orbiton/archive/refs/tags/v2.68.5.tar.gz
 https://github.com/xyproto/orbiton/archive/refs/tags/v2.68.6.tar.gz
 https://github.com/xyproto/orbiton/archive/refs/tags/v2.68.7.tar.gz
 https://github.com/xyproto/orbiton/archive/refs/tags/v2.68.8.tar.gz
+https://github.com/xyproto/orbiton/archive/refs/tags/v2.68.9.tar.gz
 https://github.com/yaegashi/muslstack/archive/d19cc5866abce3ca59dfc1666df7cc97097d0933.zip
 https://github.com/yaml/libyaml/archive/refs/tags/0.2.5.tar.gz
 https://github.com/yandex-cloud/geesefs/archive/ad455fd2b4e820f4d9becad4faf9fafeb29b8f2a.zip
@@ -4226,6 +4230,10 @@ https://static.rust-lang.org/dist/rust-1.56.1-x86_64-unknown-linux-gnu.tar.gz
 https://static.rust-lang.org/dist/rust-1.75.0-x86_64-unknown-linux-musl.tar.gz
 https://static.rust-lang.org/dist/rust-1.80.0-x86_64-unknown-linux-musl.tar.gz
 https://static.rust-lang.org/dist/rust-1.83.0-x86_64-unknown-linux-musl.tar.gz
+https://static.rust-lang.org/dist/rust-std-1.83.0-aarch64-apple-darwin.tar.gz
+https://static.rust-lang.org/dist/rust-std-1.83.0-aarch64-unknown-linux-musl.tar.gz
+https://static.rust-lang.org/dist/rust-std-1.83.0-x86_64-apple-darwin.tar.gz
+https://static.rust-lang.org/dist/rust-std-1.83.0-x86_64-pc-windows-gnullvm.tar.gz
 https://static.rust-lang.org/dist/rustc-1.54.0-src.tar.gz
 https://storage.googleapis.com/aom-releases/libaom-3.10.0.tar.gz
 https://storage.googleapis.com/aom-releases/libaom-3.11.0.tar.gz

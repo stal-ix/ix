@@ -15,6 +15,7 @@ bld/flex
 bld/bash
 bld/bison
 bld/gettext
+bld/shebangs
 {% endblock %}
 
 {% block autoreconf %}
@@ -23,6 +24,7 @@ export LT_OPTS=-ci
 {% endblock %}
 
 {% block patch %}
+fix_shebangs ./tools/all_syscalls
 cat - libmount/src/hook_mount.c << EOF > _
 #pragma once
 #define statx musl_statx

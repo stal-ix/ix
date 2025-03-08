@@ -25,16 +25,19 @@ lib/reallocarray
 {% endblock %}
 
 {% block bld_libs %}
-lib/bumpalloc/small
 lib/c++/dispatch
+lib/bumpalloc/small
+lib/compiler_rt/builtins
 {% endblock %}
 
 {% block build_flags %}
 shut_up
 {% endblock %}
 
-{% block cpp_defines %}
+{% block cpp_defines1 %}
+{% if linux %}
 JEMALLOC_BACKGROUND_THREAD=1
+{% endif %}
 {% endblock %}
 
 {% block env %}

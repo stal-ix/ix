@@ -111,7 +111,10 @@ def enrich(d):
         d['rust_os'] = d['os']
 
     if 'rust' not in d:
-        d['rust'] = f'{d["gnu_arch"]}-{d["rust_vendor"]}-{d["rust_os"]}'
+        if d['os'] == 'mingw32':
+            d['rust'] = f'{d["gnu_arch"]}-pc-windows-gnullvm'
+        else:
+            d['rust'] = f'{d["gnu_arch"]}-{d["rust_vendor"]}-{d["rust_os"]}'
 
     return d
 

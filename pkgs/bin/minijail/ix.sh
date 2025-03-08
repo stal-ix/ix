@@ -15,6 +15,11 @@ wrap_cc
 shut_up
 {% endblock %}
 
+{% block patch %}
+sed -e 's|/bin/echo|echo|' -i Makefile
+sed -e 's|/bin/echo|echo|' -i common.mk
+{% endblock %}
+
 {% block install %}
 mkdir ${out}/bin
 cp minijail0 ${out}/bin/
