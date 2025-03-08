@@ -1,5 +1,5 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
-set/stalix/unwrap(curses=netbsd,intl_ver=no,libc_lite=1)
+set/stalix/unwrap(curses=netbsd,intl_ver=no,libc_lite=1,jail=1)
 {% endblock %}
