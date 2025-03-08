@@ -63,7 +63,7 @@ bin/nix
 bin/coreutils/9/6
 bin/inkscape
 bin/fizzy
-#bin/kernel/6/13
+bin/kernel/6/13
 bin/gdb/16
 bin/gdb/15
 bin/ddc/util
@@ -79,7 +79,7 @@ bin/ip/traf/ng
 bin/ix/runsvdir/cpp
 bin/ix/runsvdir/python
 bin/ix/runsvdir/rust
-#bin/kernel/6/12
+bin/kernel/6/12
 bin/lzfse
 bin/uncrustify
 bin/hefur
@@ -130,8 +130,8 @@ bin/bloaty
 bin/ultra/hdr/app
 bin/xdg/dbus/proxy
 bin/elementary/screenshot
-#bin/sway(mesa_driver=iris)
-#bin/sway(mesa_driver=radeonsi)
+bin/sway(mesa_driver=iris)
+bin/sway(mesa_driver=radeonsi)
 bin/llvm/spirv
 bin/elementary/dock
 bin/ebpf/verifier
@@ -153,7 +153,7 @@ bin/dino
 bin/vala
 bin/vala/bootstrap
 bin/clapper
-#bin/kernel/6/11
+bin/kernel/6/11
 bin/nftables
 bin/bpf/tool
 bin/iron/bar
@@ -457,7 +457,7 @@ bin/mingetty
 bin/git
 bin/git/2
 bin/git/go
-#bin/kernel/6/6
+bin/kernel/6/6
 bin/swayimg
 bin/mc/slang
 bin/mc/curses/n
