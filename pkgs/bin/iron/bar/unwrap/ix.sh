@@ -25,3 +25,7 @@ sed -e 's|.*"volume".*||' -i Cargo.toml
 mkdir ${out}/bin
 cp ${tmp}/out/ironbar ${out}/bin/
 {% endblock %}
+
+{% block rustc_ver %}
+75
+{% endblock %}
