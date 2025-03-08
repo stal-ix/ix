@@ -23,3 +23,9 @@ lib/llvm/{{self.clang_major_version().strip()}}/tblgen
 {% endif %}
 {{super()}}
 {% endblock %}
+
+{% block clang_fix_includes %}
+mkdir -p ${out}/share
+mv ${out}/lib/clang/2*/include ${out}/share/
+rm -rf ${out}/libexec
+{% endblock %}
