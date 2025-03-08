@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/warmcat/libwebsockets/archive/refs/tags/v4.3.2.tar.gz
-sha:6a85a1bccf25acc7e8e5383e4934c9b32a102880d1e4c37c70b27ae2a42406e1
+https://github.com/warmcat/libwebsockets/archive/refs/tags/v4.3.5.tar.gz
+sha:87f99ad32803ed325fceac5327aae1f5c1b417d54ee61ad36cffc8df5f5ab276
 {% endblock %}
 
 {% block lib_deps %}
@@ -14,6 +14,10 @@ lib/openssl
 
 {% block bld_libs %}
 lib/kernel
+{% endblock %}
+
+{% block c_flags %}
+-Wno-implicit-int-conversion
 {% endblock %}
 
 {% block cmake_flags %}
