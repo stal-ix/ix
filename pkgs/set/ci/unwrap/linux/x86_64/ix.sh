@@ -50,6 +50,7 @@
 #}
 
 {% block run_deps %}
+bin/clang/20/bootstrapped
 bin/bcache/fs/tools
 bin/sniff/net
 bin/pax/utils
