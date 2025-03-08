@@ -23,10 +23,6 @@ lib/llvm/19
 83
 {% endblock %}
 
-{% block rustc_ver %}
-83
-{% endblock %}
-
 {% block bld_tool %}
 {{super()}}
 bin/bpf/clang

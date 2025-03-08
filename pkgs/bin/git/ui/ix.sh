@@ -29,10 +29,6 @@ mkdir ${out}/bin
 cp ${tmp}/out/gitui ${out}/bin/
 {% endblock %}
 
-{% block rustc_ver %}
-83
-{% endblock %}
-
 {% block patch %}
 {{super()}}
 rust_remove_c vendored/libz-ng-sys

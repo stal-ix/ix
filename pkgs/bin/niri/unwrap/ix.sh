@@ -8,10 +8,6 @@ https://github.com/YaLTeR/niri/archive/refs/tags/v25.02.tar.gz
 3a25af6b676f2ccbe2b9f0a2df438d104a10b911aec19b04170d6a3d5279cf4e
 {% endblock %}
 
-{% block rustc_ver %}
-83
-{% endblock %}
-
 {% block lib_deps %}
 lib/gbm
 lib/seat

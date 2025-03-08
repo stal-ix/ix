@@ -8,10 +8,6 @@ https://github.com/squidowl/halloy/archive/refs/tags/2025.2.tar.gz
 8058f54ef893deb96d1385d677210eca7b9282cb9fcfd1b7b1f24cdf19d822ad
 {% endblock %}
 
-{% block rustc_ver %}
-83
-{% endblock %}
-
 {% block cargoc_ver %}
 80
 {% endblock %}
