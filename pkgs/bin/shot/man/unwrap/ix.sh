@@ -1,9 +1,5 @@
 {% extends '//die/rust/cargo.sh' %}
 
-{% block rustc_ver %}
-75
-{% endblock %}
-
 {% block cargo_url %}
 https://git.sr.ht/~whynothugo/shotman/archive/99baca7747e6d48801f91b58bc392b7df46dc56b.tar.gz
 {% endblock %}
@@ -19,4 +15,8 @@ lib/xkb/common
 {% block install %}
 mkdir ${out}/bin
 cp ${tmp}/out/shotman ${out}/bin/
+{% endblock %}
+
+{% block rustc_ver %}
+75
 {% endblock %}

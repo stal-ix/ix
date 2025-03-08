@@ -1,9 +1,5 @@
 {% extends '//die/rust/cargo.sh' %}
 
-{% block rustc_ver %}
-75
-{% endblock %}
-
 {% block cargo_url %}
 https://github.com/JakeStanger/ironbar/archive/refs/tags/v0.15.1.tar.gz
 {% endblock %}
@@ -28,4 +24,8 @@ sed -e 's|.*"volume".*||' -i Cargo.toml
 {% block install %}
 mkdir ${out}/bin
 cp ${tmp}/out/ironbar ${out}/bin/
+{% endblock %}
+
+{% block rustc_ver %}
+75
 {% endblock %}

@@ -33,7 +33,3 @@ cp ${tmp}/out/bpftop ${out}/bin/
 {% block cargoc_ver %}
 83
 {% endblock %}
-
-{% block rustc_ver %}
-83
-{% endblock %}
