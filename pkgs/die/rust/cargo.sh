@@ -3,7 +3,7 @@
 {% block task_pool %}full{% endblock %}
 
 {% block rustc_ver %}
-{{rustc_ver or '80'}}
+{{rustc_ver or '83'}}
 {% endblock %}
 
 {% block std_env %}
