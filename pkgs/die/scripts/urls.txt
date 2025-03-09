@@ -200,6 +200,7 @@ https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.11.9.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.12.1.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.12.13.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.12.16.tar.xz
+https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.12.18.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.12.2.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.12.3.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.12.4.tar.xz
@@ -214,6 +215,7 @@ https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.13.2.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.13.3.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.13.4.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.13.5.tar.xz
+https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.13.6.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.13.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.2.14.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.3.13.tar.xz
@@ -320,6 +322,7 @@ https://codeberg.org/forgejo/forgejo/archive/v9.0.1.tar.gz
 https://codeberg.org/grisha/gumbo-parser/archive/0.12.0.tar.gz
 https://codeberg.org/grisha/gumbo-parser/archive/0.12.1.tar.gz
 https://codeberg.org/grisha/gumbo-parser/archive/0.12.3.tar.gz
+https://codeberg.org/grisha/gumbo-parser/archive/0.13.0.tar.gz
 https://codeberg.org/soundtouch/soundtouch/archive/2.3.1.tar.gz
 https://codeberg.org/tenacityteam/libmad/archive/0.16.3.tar.gz
 https://codeberg.org/tenacityteam/libmad/archive/0.16.4.tar.gz
@@ -644,6 +647,7 @@ https://ftp.gnu.org/gnu/libidn/libidn-1.41.tar.gz
 https://ftp.gnu.org/gnu/libidn/libidn-1.42.tar.gz
 https://ftp.gnu.org/gnu/libidn/libidn2-2.3.4.tar.gz
 https://ftp.gnu.org/gnu/libidn/libidn2-2.3.7.tar.gz
+https://ftp.gnu.org/gnu/libidn/libidn2-2.3.8.tar.gz
 https://ftp.gnu.org/gnu/libmicrohttpd/libmicrohttpd-0.9.76.tar.gz
 https://ftp.gnu.org/gnu/libmicrohttpd/libmicrohttpd-1.0.0.tar.gz
 https://ftp.gnu.org/gnu/libmicrohttpd/libmicrohttpd-1.0.1.tar.gz
@@ -1503,6 +1507,7 @@ https://github.com/cboxdoerfer/fsearch/archive/refs/tags/0.2.3.tar.gz
 https://github.com/ccache/ccache/archive/refs/tags/v4.10.1.tar.gz
 https://github.com/ccache/ccache/archive/refs/tags/v4.10.2.tar.gz
 https://github.com/ccache/ccache/archive/refs/tags/v4.10.tar.gz
+https://github.com/ccache/ccache/archive/refs/tags/v4.11.tar.gz
 https://github.com/ccache/ccache/releases/download/v4.8.3/ccache-4.8.3.tar.xz
 https://github.com/ccache/ccache/releases/download/v4.9.1/ccache-4.9.1.tar.xz
 https://github.com/ccxvii/mujs/archive/refs/tags/1.3.2.tar.gz
@@ -2490,6 +2495,7 @@ https://github.com/llvm/llvm-project/archive/refs/tags/llvmorg-19.1.4.tar.gz
 https://github.com/llvm/llvm-project/archive/refs/tags/llvmorg-19.1.5.tar.gz
 https://github.com/llvm/llvm-project/archive/refs/tags/llvmorg-19.1.6.tar.gz
 https://github.com/llvm/llvm-project/archive/refs/tags/llvmorg-19.1.7.tar.gz
+https://github.com/llvm/llvm-project/archive/refs/tags/llvmorg-20.1.0.tar.gz
 https://github.com/llvm/llvm-project/commit/e9f851de24baefd5710c3cac6ef3cafaea0eeb9d.diff
 https://github.com/llvm/llvm-project/releases/download/llvmorg-13.0.1/llvm-project-13.0.1.src.tar.xz
 https://github.com/llvm/llvm-project/releases/download/llvmorg-16.0.6/llvm-project-16.0.6.src.tar.xz
@@ -2551,6 +2557,7 @@ https://github.com/martinvonz/jj/archive/refs/tags/v0.21.0.tar.gz
 https://github.com/martinvonz/jj/archive/refs/tags/v0.22.0.tar.gz
 https://github.com/martinvonz/jj/archive/refs/tags/v0.25.0.tar.gz
 https://github.com/martinvonz/jj/archive/refs/tags/v0.26.0.tar.gz
+https://github.com/maryla-uc/libargparse/archive/49170d4e27da404c4f1093dce6cf7a64dd34ce38.zip
 https://github.com/marzer/tomlplusplus/archive/refs/tags/v3.4.0.tar.gz
 https://github.com/mauke/unibilium/archive/refs/tags/v2.0.0.tar.gz
 https://github.com/mawww/kakoune/archive/refs/tags/v2023.08.05.tar.gz
@@ -3097,6 +3104,7 @@ https://github.com/sammycage/lunasvg/archive/refs/tags/v3.0.0.tar.gz
 https://github.com/sammycage/lunasvg/archive/refs/tags/v3.0.1.tar.gz
 https://github.com/sammycage/lunasvg/archive/refs/tags/v3.1.0.tar.gz
 https://github.com/sammycage/lunasvg/archive/refs/tags/v3.1.1.tar.gz
+https://github.com/sammycage/lunasvg/archive/refs/tags/v3.2.1.tar.gz
 https://github.com/sammycage/plutosvg/archive/refs/tags/v0.0.5.tar.gz
 https://github.com/sammycage/plutovg/archive/refs/tags/v0.0.11.tar.gz
 https://github.com/sammycage/plutovg/archive/refs/tags/v0.0.12.tar.gz
@@ -3159,6 +3167,7 @@ https://github.com/skarnet/skalibs/archive/refs/tags/v2.14.3.0.tar.gz
 https://github.com/skeeto/u-config/archive/refs/tags/v0.31.1.tar.gz
 https://github.com/skeeto/u-config/archive/refs/tags/v0.33.0.tar.gz
 https://github.com/skeeto/u-config/archive/refs/tags/v0.33.2.tar.gz
+https://github.com/skeeto/u-config/archive/refs/tags/v0.33.3.tar.gz
 https://github.com/skvadrik/re2c/archive/refs/tags/3.1.tar.gz
 https://github.com/skvadrik/re2c/archive/refs/tags/4.0.1.tar.gz
 https://github.com/skvadrik/re2c/archive/refs/tags/4.0.2.tar.gz
@@ -3302,6 +3311,7 @@ https://github.com/telegramdesktop/tdesktop/releases/download/v5.1.4/tdesktop-5.
 https://github.com/telegramdesktop/tdesktop/releases/download/v5.1.8/tdesktop-5.1.8-full.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v5.10.2/tdesktop-5.10.2-full.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v5.10.6/tdesktop-5.10.6-full.tar.gz
+https://github.com/telegramdesktop/tdesktop/releases/download/v5.12.1/tdesktop-5.12.1-full.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v5.2.0/tdesktop-5.2.0-full.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v5.2.3/tdesktop-5.2.3-full.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v5.2.6/tdesktop-5.2.6-full.tar.gz
@@ -3661,6 +3671,7 @@ https://gitlab.exherbo.org/sydbox/sydbox/-/archive/v3.32.3/sydbox-v3.32.3.tar.bz
 https://gitlab.freedesktop.org/cairo/cairo/-/archive/1.17.8/cairo-1.17.8.tar.bz2
 https://gitlab.freedesktop.org/cairo/cairo/-/archive/1.18.0/cairo-1.18.0.tar.bz2
 https://gitlab.freedesktop.org/cairo/cairo/-/archive/1.18.2/cairo-1.18.2.tar.bz2
+https://gitlab.freedesktop.org/cairo/cairo/-/archive/1.18.4/cairo-1.18.4.tar.bz2
 https://gitlab.freedesktop.org/emersion/libdisplay-info/-/archive/0.2.0/libdisplay-info-0.2.0.tar.bz2
 https://gitlab.freedesktop.org/freetype/freetype-demos/-/archive/VER-2-13-0/freetype-demos-VER-2-13-0.tar.bz2
 https://gitlab.freedesktop.org/gstreamer/gstreamer/-/archive/1.22.10/gstreamer-1.22.10.tar.gz
@@ -4480,6 +4491,7 @@ https://www.python.org/ftp/python/2.7.18/Python-2.7.18.tar.xz
 https://www.python.org/ftp/python/3.10.13/Python-3.10.13.tar.xz
 https://www.python.org/ftp/python/3.13.0/Python-3.13.0.tar.xz
 https://www.python.org/ftp/python/3.13.0/Python-3.13.0rc1.tar.xz
+https://www.python.org/ftp/python/3.13.2/Python-3.13.2.tar.xz
 https://www.python.org/ftp/python/3.8.17/Python-3.8.17.tgz
 https://www.python.org/ftp/python/3.9.17/Python-3.9.17.tar.xz
 https://www.python.org/ftp/python/3.9.18/Python-3.9.18.tar.xz

@@ -1,8 +1,8 @@
 {% extends '//lib/python/3/12/t/ix.sh' %}
 
 {% block fetch %}
-https://www.python.org/ftp/python/3.13.0/Python-3.13.0.tar.xz
-sha:086de5882e3cb310d4dca48457522e2e48018ecd43da9cdf827f6a0759efb07d
+https://www.python.org/ftp/python/3.13.2/Python-3.13.2.tar.xz
+sha:d984bcc57cd67caab26f7def42e523b1c015bbc5dc07836cf4f0b63fa159eb56
 {% endblock %}
 
 {% block configure_flags %}

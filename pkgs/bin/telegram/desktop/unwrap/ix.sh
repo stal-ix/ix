@@ -140,6 +140,10 @@ prepend Telegram/SourceFiles/info/media/info_media_list_widget.cpp << EOF
 #include "Telegram/lib_ui/ui/effects/numbers_animation.h"
 EOF
 
+prepend Telegram/lib_webview/webview/webview_data_stream_memory.cpp << EOF
+#include <unistd.h>
+EOF
+
 cd Telegram/ThirdParty/jemalloc
 
 find . -type f -name '*.c' | while read l; do
