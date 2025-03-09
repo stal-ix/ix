@@ -382,6 +382,7 @@ https://download.gnome.org/sources/glib/2.82/glib-2.82.0.tar.xz
 https://download.gnome.org/sources/glib/2.82/glib-2.82.1.tar.xz
 https://download.gnome.org/sources/glib/2.82/glib-2.82.2.tar.xz
 https://download.gnome.org/sources/glib/2.82/glib-2.82.4.tar.xz
+https://download.gnome.org/sources/glib/2.84/glib-2.84.0.tar.xz
 https://download.gnome.org/sources/glibmm/2.66/glibmm-2.66.6.tar.xz
 https://download.gnome.org/sources/glibmm/2.77/glibmm-2.77.0.tar.xz
 https://download.gnome.org/sources/glibmm/2.78/glibmm-2.78.1.tar.xz
@@ -2814,6 +2815,7 @@ https://github.com/pkgconf/pkgconf/archive/refs/tags/pkgconf-2.1.0.tar.gz
 https://github.com/pkgconf/pkgconf/archive/refs/tags/pkgconf-2.1.1.tar.gz
 https://github.com/pkgconf/pkgconf/archive/refs/tags/pkgconf-2.2.0.tar.gz
 https://github.com/pkgconf/pkgconf/archive/refs/tags/pkgconf-2.3.0.tar.gz
+https://github.com/pkgconf/pkgconf/archive/refs/tags/pkgconf-2.4.1.tar.gz
 https://github.com/plougher/squashfs-tools/archive/refs/tags/4.6.1.tar.gz
 https://github.com/podofo/podofo/archive/refs/tags/0.10.2.tar.gz
 https://github.com/podofo/podofo/archive/refs/tags/0.10.3.tar.gz
@@ -3075,6 +3077,7 @@ https://github.com/rui314/mold/archive/refs/tags/v2.35.0.tar.gz
 https://github.com/rui314/mold/archive/refs/tags/v2.35.1.tar.gz
 https://github.com/rui314/mold/archive/refs/tags/v2.36.0.tar.gz
 https://github.com/rui314/mold/archive/refs/tags/v2.37.0.tar.gz
+https://github.com/rui314/mold/archive/refs/tags/v2.37.1.tar.gz
 https://github.com/rui314/mold/archive/refs/tags/v2.4.0.tar.gz
 https://github.com/rui314/mold/archive/refs/tags/v2.4.1.tar.gz
 https://github.com/rust-lang/rust-bindgen/archive/refs/tags/v0.71.1.tar.gz
@@ -3480,6 +3483,7 @@ https://github.com/vstakhov/libucl/archive/refs/tags/0.9.0.tar.gz
 https://github.com/vstakhov/libucl/archive/refs/tags/0.9.1.tar.gz
 https://github.com/vstakhov/libucl/archive/refs/tags/0.9.2.tar.gz
 https://github.com/warmcat/libwebsockets/archive/refs/tags/v4.3.2.tar.gz
+https://github.com/warmcat/libwebsockets/archive/refs/tags/v4.3.5.tar.gz
 https://github.com/wasmx/fizzy/archive/refs/tags/v0.8.0.tar.gz
 https://github.com/webmproject/libvpx/archive/refs/tags/v1.13.0.tar.gz
 https://github.com/webmproject/libvpx/archive/refs/tags/v1.14.0.tar.gz
@@ -3785,6 +3789,7 @@ https://gitlab.gnome.org/GNOME/gspell/-/archive/1.12.2/gspell-1.12.2.tar.bz2
 https://gitlab.gnome.org/GNOME/gspell/-/archive/1.13.1/gspell-1.13.1.tar.bz2
 https://gitlab.gnome.org/GNOME/gspell/-/archive/1.13.2/gspell-1.13.2.tar.bz2
 https://gitlab.gnome.org/GNOME/gspell/-/archive/1.14.0/gspell-1.14.0.tar.bz2
+https://gitlab.gnome.org/GNOME/gtk/-/archive/3.24.49/gtk-3.24.49.tar.bz2
 https://gitlab.gnome.org/GNOME/gtk/-/archive/4.12.1/gtk-4.12.1.tar.bz2
 https://gitlab.gnome.org/GNOME/gtk/-/archive/4.12.2/gtk-4.12.2.tar.bz2
 https://gitlab.gnome.org/GNOME/gtk/-/archive/4.12.3/gtk-4.12.3.tar.bz2
@@ -4339,6 +4344,7 @@ https://www.crufty.net/ftp/pub/sjg/bmake-20240921.tar.gz
 https://www.crufty.net/ftp/pub/sjg/bmake-20241124.tar.gz
 https://www.crufty.net/ftp/pub/sjg/bmake-20250120.tar.gz
 https://www.crufty.net/ftp/pub/sjg/bmake-20250125.tar.gz
+https://www.crufty.net/ftp/pub/sjg/bmake-20250225.tar.gz
 https://www.eecis.udel.edu/~ntp/ntp_spool/ntp4/ntp-4.2/ntp-4.2.8p15.tar.gz
 https://www.freedesktop.org/software/colord/releases/colord-1.4.6.tar.xz
 https://www.freedesktop.org/software/fontconfig/release/fontconfig-2.14.2.tar.xz

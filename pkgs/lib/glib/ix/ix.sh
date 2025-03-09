@@ -1,4 +1,4 @@
-{% extends '//lib/glib/pure/ix.sh' %}
+{% extends '//lib/glib/t/ix.sh' %}
 
 {% block lib_deps %}
 lib/mimetype
@@ -8,6 +8,22 @@ lib/mimetype
 {% block bld_libs %}
 lib/kernel
 {{super()}}
+{% endblock %}
+
+{% block bld_tool %}
+bld/glib
+{{super()}}
+{% endblock %}
+
+{% block install %}
+{{super()}}
+find ${out}/ -type f -name '*.pc' | while read i; do
+    sed -e 's|.*bindir.*||' \
+{% if darwin %}
+        -e 's|Libs: .*||' \
+{% endif %}
+        -i ${i}
+done
 {% endblock %}
 
 {% block patch %}
@@ -70,7 +86,7 @@ sed -e 's|/run|/var/run|' \
 
 {% block env %}
 {{super()}}
-export CPPFLAGS="-I${out}/include/gio-unix-2.0 \${CPPFLAGS}"
+export CPPFLAGS="-I${out}/include/glib-2.0 -I${out}/lib/glib-2.0/include -I${out}/include/gio-unix-2.0 \${CPPFLAGS}"
 {% endblock %}
 
 {% block run_data %}

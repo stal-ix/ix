@@ -25,3 +25,16 @@ sed -e 's|flatpak_required =.*|flatpak_required = false|' \
 
 {% block strip_pc %}
 {% endblock %}
+
+{% block c_rename_symbol %}
+gvdb_table_free
+gvdb_table_get_names
+gvdb_table_get_raw_value
+gvdb_table_get_table
+gvdb_table_get_value
+gvdb_table_has_value
+gvdb_table_is_valid
+gvdb_table_list
+gvdb_table_new
+gvdb_table_new_from_bytes
+{% endblock %}

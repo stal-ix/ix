@@ -1,5 +1,9 @@
 {% extends '//die/hub.sh' %}
 
+{% block ind_deps %}
+bin/clang/lib
+{% endblock %}
+
 {% block run_deps %}
-set/stalix/unwrap(curses=netbsd,intl_ver=no,libc_lite=1,jail=1)
+bin/clang/20
 {% endblock %}
