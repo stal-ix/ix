@@ -1,8 +1,8 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://gitlab.freedesktop.org/cairo/cairo/-/archive/1.18.2/cairo-1.18.2.tar.bz2
-sha:0b895967abfae888ecad9ace4bce475a27e1b9aaeedaaf334b97c96f13ccc604
+https://gitlab.freedesktop.org/cairo/cairo/-/archive/1.18.4/cairo-1.18.4.tar.bz2
+sha:6d9281e786fd289d382324d4588d59973a36911e1865b40e64f9ec39936ceba8
 {% endblock %}
 
 {% block meson_tool %}
