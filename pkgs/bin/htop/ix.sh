@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://github.com/htop-dev/htop/archive/refs/tags/3.3.0.tar.gz
-sha:1e5cc328eee2bd1acff89f860e3179ea24b85df3ac483433f92a29977b14b045
+https://github.com/htop-dev/htop/archive/refs/tags/3.4.0.tar.gz
+sha:7a45cd93b393eaa5804a7e490d58d0940b1c74bb24ecff2ae7b5c49e7a3c1198
 {% endblock %}
 
 {% block bld_libs %}
@@ -19,4 +19,5 @@ lib/unwind
 --enable-unwind
 --enable-cgroup
 --enable-delayacct
+--with-curses=ncursesw6
 {% endblock %}
