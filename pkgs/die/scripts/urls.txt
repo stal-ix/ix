@@ -1501,6 +1501,7 @@ https://github.com/casey/just/archive/refs/tags/1.36.0.tar.gz
 https://github.com/casey/just/archive/refs/tags/1.37.0.tar.gz
 https://github.com/casey/just/archive/refs/tags/1.38.0.tar.gz
 https://github.com/casey/just/archive/refs/tags/1.39.0.tar.gz
+https://github.com/casey/just/archive/refs/tags/1.40.0.tar.gz
 https://github.com/catboost/catboost/archive/refs/tags/v1.0.6.tar.gz
 https://github.com/catchorg/Catch2/archive/refs/tags/v3.7.0.tar.gz
 https://github.com/cboxdoerfer/fsearch/archive/refs/tags/0.2.3.tar.gz
@@ -2011,6 +2012,7 @@ https://github.com/hpjansson/chafa/archive/refs/tags/1.14.5.tar.gz
 https://github.com/hramrach/lm-sensors/archive/refs/tags/V3-6-2.tar.gz
 https://github.com/htop-dev/htop/archive/refs/tags/3.2.2.tar.gz
 https://github.com/htop-dev/htop/archive/refs/tags/3.3.0.tar.gz
+https://github.com/htop-dev/htop/archive/refs/tags/3.4.0.tar.gz
 https://github.com/hufrea/byedpi/archive/refs/tags/v0.14.1.tar.gz
 https://github.com/hughsie/libgusb/archive/refs/tags/0.4.6.tar.gz
 https://github.com/hughsie/libgusb/archive/refs/tags/0.4.7.tar.gz
@@ -2926,6 +2928,7 @@ https://github.com/qpdf/qpdf/archive/refs/tags/v11.6.4.tar.gz
 https://github.com/qpdf/qpdf/archive/refs/tags/v11.7.0.tar.gz
 https://github.com/qpdf/qpdf/archive/refs/tags/v11.8.0.tar.gz
 https://github.com/qpdf/qpdf/archive/refs/tags/v11.9.0.tar.gz
+https://github.com/qpdf/qpdf/archive/refs/tags/v12.0.0.tar.gz
 https://github.com/qt/qt5compat/archive/refs/tags/v6.5.2.tar.gz
 https://github.com/qt/qt5compat/archive/refs/tags/v6.5.3.tar.gz
 https://github.com/qt/qt5compat/archive/refs/tags/v6.6.0.tar.gz
@@ -3994,6 +3997,7 @@ https://imagemagick.org/archive/releases/ImageMagick-7.1.1-40.tar.xz
 https://imagemagick.org/archive/releases/ImageMagick-7.1.1-41.tar.xz
 https://imagemagick.org/archive/releases/ImageMagick-7.1.1-42.tar.xz
 https://imagemagick.org/archive/releases/ImageMagick-7.1.1-44.tar.xz
+https://imagemagick.org/archive/releases/ImageMagick-7.1.1-45.tar.xz
 https://invent.kde.org/frameworks/kwindowsystem/-/archive/v6.1.0/kwindowsystem-v6.1.0.tar.bz2
 https://invisible-island.net/archives/dialog/dialog-1.3-20240101.tgz
 https://invisible-mirror.net/archives/byacc/byacc-20211224.tgz
