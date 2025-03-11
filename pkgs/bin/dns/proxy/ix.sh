@@ -1,15 +1,15 @@
 {% extends '//die/go/build.sh' %}
 
 {% block go_url %}
-https://github.com/AdguardTeam/dnsproxy/archive/refs/tags/v0.74.1.tar.gz
+https://github.com/AdguardTeam/dnsproxy/archive/refs/tags/v0.75.1.tar.gz
 {% endblock %}
 
 {% block go_sha %}
-98f58edeeb27a671ab56ea0d30cfb5d77600316ac03689d5ae9c1a2ab80808c1
+daa98f81d0ce6b53589b5778709bc0808decfb3a08670fe6ce5a2128b9043ce3
 {% endblock %}
 
 {% block go_tool %}
-bin/go/lang/23
+bin/go/lang/24
 {% endblock %}
 
 {% block install %}
