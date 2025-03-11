@@ -11,7 +11,7 @@ bin/wez/term
 bin/zellij
 bin/resvg
 bin/i3/status/rust
-bin/shadowsocks/rust
+#bin/shadowsocks/rust
 bin/delta
 bin/cproxy
 bin/bore
