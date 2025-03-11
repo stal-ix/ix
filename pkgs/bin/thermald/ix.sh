@@ -2,7 +2,7 @@
 
 {% block fetch %}
 https://github.com/intel/thermal_daemon/archive/refs/tags/v2.5.9.tar.gz
-sha:68c02e23e428e7a4b32e429c1e6862f1b8f37a54538329ef9f9f5639415902dd
+sha:32fc75861e5e42b4b6ce0718af3e5b275f3febfccf6e7a3d3fbb5254791d7e74
 {% endblock %}
 
 {% block bld_libs %}
