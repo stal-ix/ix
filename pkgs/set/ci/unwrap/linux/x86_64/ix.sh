@@ -49,10 +49,8 @@
 
 {% block run_deps %}
 bin/clang/20/bootstrapped
-bin/bcache/fs/tools
 bin/pax/utils
 bin/hypr
-bin/bpf/top
 bin/hugo
 bin/contour
 bin/nix
@@ -68,8 +66,6 @@ bin/pixman
 bin/ya
 bin/gg
 bin/deya
-bin/scx/rust/land/runit
-bin/sys/hud
 bin/ip/traf/ng
 bin/ix/runsvdir/cpp
 bin/ix/runsvdir/python
@@ -80,7 +76,6 @@ bin/uncrustify
 bin/hefur
 bin/npm
 bin/x264
-bin/regreet
 bin/forge/jo
 bin/git/ea
 bin/geesefs
@@ -103,7 +98,6 @@ bin/usb/view
 bin/gost/2
 bin/gost/3
 bin/sing/box
-bin/just
 bin/agrep
 bin/tun2socks
 bin/postgresql/17
@@ -130,10 +124,8 @@ bin/elementary/dock
 bin/ebpf/verifier
 bin/cpu/fetch
 bin/ubpf
-bin/scx
 bin/python/13
 bin/go/lang/23
-bin/lapce
 bin/erofs/utils
 bin/elementary/files
 bin/elementary/terminal
@@ -160,7 +152,6 @@ bin/mujs
 bin/grpc/java
 bin/time/limit
 bin/nscd
-bin/yofi
 bin/upnpc
 bin/smart/mon/tools
 bin/q/cache/grind

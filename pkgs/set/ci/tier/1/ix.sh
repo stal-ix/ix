@@ -7,6 +7,15 @@
 #bin/neo/vide
 #bin/xplr
 #bin/wez/term
+bin/just
+bin/bcache/fs/tools
+bin/bpf/top
+bin/scx/rust/land/runit
+bin/sys/hud
+bin/regreet
+bin/scx
+bin/lapce
+bin/yofi
 bin/sniff/net
 bin/syd/box
 bin/ruff
