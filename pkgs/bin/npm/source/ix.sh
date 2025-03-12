@@ -7,7 +7,7 @@ sha:74ab2ea044ba55447e5d65f31a9ab6aefe9224eb755cbdf64a1b6c057e777992
 
 {% block use_network %}true{% endblock %}
 
-{% set sum %}722c8b353849a34dbc01f9a5fb77fe6ffe53fb2d12296beeb4c80a4a29f11de6{% endset %}
+{% set sum %}fdf91c248eb4fd1d39dce9e85194a223be42db8c8128ba9a1997bf147bca1dd6{% endset %}
 {% set nam %}npm_{{sum}}.pzd{% endset %}
 
 {% block predict_outputs %}
