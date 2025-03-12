@@ -7,6 +7,8 @@
 #bin/neo/vide
 #bin/xplr
 #bin/wez/term
+bin/cargo/whatfeatures
+bin/ix/runsvdir/rust
 bin/greetd
 bin/impala
 bin/just
