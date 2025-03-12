@@ -7,6 +7,8 @@
 #bin/neo/vide
 #bin/xplr
 #bin/wez/term
+bin/greetd
+bin/impala
 bin/just
 bin/bcache/fs/tools
 bin/bpf/top

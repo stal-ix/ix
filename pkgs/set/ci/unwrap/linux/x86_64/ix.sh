@@ -107,7 +107,6 @@ bin/dcraw
 bin/e2tools
 bin/httping
 bin/cast/text
-bin/impala
 bin/mrustc/cargo
 bin/mrustc
 bin/mrustc/boot
@@ -172,7 +171,6 @@ bin/bcache/tools
 bin/lxqt/askpass
 bin/waycheck
 bin/gdu
-bin/greetd
 bin/mount
 bin/btfs
 bin/tinc
