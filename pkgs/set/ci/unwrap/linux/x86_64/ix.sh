@@ -6,7 +6,6 @@
 #bin/lldb
 #bin/minibrowser
 #bin/icontool
-#bin/chromium
 #bin/porto
 #bin/putty
 #bin/surfer
@@ -42,7 +41,6 @@
 #bin/openttd
 #bin/poedit
 #bin/wf/recorder
-#bin/cosmic
 #bin/port/forwarder/rs
 #bin/qemu/8/1
 #bin/qemu/8/2
@@ -52,14 +50,11 @@
 {% block run_deps %}
 bin/clang/20/bootstrapped
 bin/bcache/fs/tools
-bin/sniff/net
 bin/pax/utils
-bin/syd/box
 bin/hypr
 bin/bpf/top
 bin/hugo
 bin/contour
-bin/ruff
 bin/nix
 bin/coreutils/9/6
 bin/inkscape
@@ -70,7 +65,6 @@ bin/gdb/15
 bin/ddc/util
 bin/ya/final
 bin/pixman
-bin/rtorrent
 bin/ya
 bin/gg
 bin/deya
@@ -86,7 +80,6 @@ bin/uncrustify
 bin/hefur
 bin/npm
 bin/x264
-bin/halloy
 bin/regreet
 bin/forge/jo
 bin/git/ea
@@ -112,7 +105,6 @@ bin/gost/3
 bin/sing/box
 bin/just
 bin/agrep
-bin/wstunnel
 bin/tun2socks
 bin/postgresql/17
 bin/actkbd
@@ -142,7 +134,6 @@ bin/scx
 bin/python/13
 bin/go/lang/23
 bin/lapce
-bin/evsieve
 bin/erofs/utils
 bin/elementary/files
 bin/elementary/terminal
@@ -157,7 +148,6 @@ bin/clapper
 bin/kernel/6/11
 bin/nftables
 bin/bpf/tool
-bin/iron/bar
 bin/gdb/14
 bin/gdb/15
 bin/skia/svg
@@ -182,12 +172,10 @@ bin/kms/con/full
 bin/kms/con/pretty
 bin/kms/con/fast
 bin/g/bsd/dialog
-bin/rqbit
 bin/shot/man
 bin/sway/fx
 bin/dns/proxy
 bin/openntpd
-bin/yazi
 bin/util/wipefs
 bin/bcache/tools
 bin/lxqt/askpass
@@ -263,10 +251,7 @@ bin/tvedit
 bin/app/image/tool
 bin/cage/break
 bin/dialog
-bin/niri
 bin/cargo/whatfeatures
-bin/alacritty
-bin/bat
 bin/wl/maker
 bin/kati
 bin/tty/plot
