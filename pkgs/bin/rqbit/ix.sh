@@ -5,7 +5,7 @@ https://github.com/ikatson/rqbit/archive/refs/tags/v8.0.0.tar.gz
 {% endblock %}
 
 {% block cargo_sha %}
-2f867685a41e545f71a37ec415b4f2fea689db2741dac7eaa523d30d334cff97
+b7483d917f35894913bd02fd264d0e7818984ee9acbb285bf5c9cff5dfebe4c5
 {% endblock %}
 
 {% block cargo_ver %}
