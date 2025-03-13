@@ -1,17 +1,41 @@
 {% extends '//die/hub.sh' %}
 
-{# broken
-bin/neo/vide
-bin/xplr
-bin/wez/term
-#}
-
 {% block run_deps %}
 #bin/arti
+#bin/cosmic
+#bin/shadowsocks/rust
+#bin/neo/vide
+#bin/xplr
+#bin/wez/term
+bin/cargo/whatfeatures
+bin/ix/runsvdir/rust
+bin/greetd
+bin/impala
+bin/just
+bin/bcache/fs/tools
+bin/bpf/top
+bin/scx/rust/land/runit
+bin/sys/hud
+bin/regreet
+bin/scx
+bin/lapce
+bin/yofi
+bin/sniff/net
+bin/syd/box
+bin/ruff
+bin/rtorrent
+bin/halloy
+bin/wstunnel
+bin/evsieve
+bin/iron/bar
+bin/rqbit
+bin/yazi
+bin/niri
+bin/alacritty
+bin/bat
 bin/zellij
 bin/resvg
 bin/i3/status/rust
-bin/shadowsocks/rust
 bin/delta
 bin/cproxy
 bin/bore
