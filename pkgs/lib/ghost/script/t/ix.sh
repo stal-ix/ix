@@ -1,8 +1,8 @@
 {% extends '//die/c/autohell.sh' %}
 
 {% block fetch %}
-https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs10012/ghostscript-10.01.2.tar.gz
-sha:a4cd61a07fec161bee35da0211a5e5cde8ff8a0aaf942fc0176715e499d21661
+https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs10050/ghostscript-10.05.0.tar.gz
+sha:56e77833de683825c420d0af8cb90aa8ba7da71ea6fb5624290cbc1b53fe7942
 {% endblock %}
 
 {% block lib_deps %}

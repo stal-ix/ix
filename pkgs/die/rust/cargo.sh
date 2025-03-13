@@ -148,3 +148,15 @@ cargo {{ix.fix_list(self.cargo_flags().strip())}}
 {% endif %}
 ln -s ${tmp}/{{target.rust}}/{{self.cargo_profile().strip()}} ${tmp}/out
 {% endblock %}
+
+{% block cargo_bins %}
+{% endblock %}
+
+{% block install %}
+{% if bin %}
+mkdir ${out}/bin
+{% for x in ix.parse_list(self.cargo_bins()) %}
+cp ${tmp}/out/{{x}}{{target.exe_suffix}} ${out}/bin/
+{% endfor %}
+{% endif %}
+{% endblock %}
