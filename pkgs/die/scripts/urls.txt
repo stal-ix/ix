@@ -294,6 +294,7 @@ https://codeberg.org/dnkl/fcft/archive/3.1.6.tar.gz
 https://codeberg.org/dnkl/fcft/archive/3.1.7.tar.gz
 https://codeberg.org/dnkl/fcft/archive/3.1.8.tar.gz
 https://codeberg.org/dnkl/fcft/archive/3.1.9.tar.gz
+https://codeberg.org/dnkl/fcft/archive/3.3.0.tar.gz
 https://codeberg.org/dnkl/fnott/archive/1.4.1.tar.gz
 https://codeberg.org/dnkl/fnott/archive/1.5.0.tar.gz
 https://codeberg.org/dnkl/fnott/archive/1.6.0.tar.gz
@@ -2031,6 +2032,7 @@ https://github.com/hughsie/libxmlb/archive/refs/tags/0.3.15.tar.gz
 https://github.com/hughsie/libxmlb/archive/refs/tags/0.3.18.tar.gz
 https://github.com/hughsie/libxmlb/archive/refs/tags/0.3.19.tar.gz
 https://github.com/hughsie/libxmlb/archive/refs/tags/0.3.20.tar.gz
+https://github.com/hughsie/libxmlb/archive/refs/tags/0.3.22.tar.gz
 https://github.com/hunspell/hunspell/archive/refs/tags/v1.7.1.tar.gz
 https://github.com/hyperrealm/libconfig/archive/refs/tags/v1.7.3.tar.gz
 https://github.com/hyprwm/Hyprland/releases/download/v0.29.0/source-v0.29.0.tar.gz
@@ -3579,6 +3581,7 @@ https://github.com/xkbcommon/libxkbcommon/archive/refs/tags/xkbcommon-1.5.0.tar.
 https://github.com/xkbcommon/libxkbcommon/archive/refs/tags/xkbcommon-1.6.0.tar.gz
 https://github.com/xkbcommon/libxkbcommon/archive/refs/tags/xkbcommon-1.7.0.tar.gz
 https://github.com/xkbcommon/libxkbcommon/archive/refs/tags/xkbcommon-1.8.0.tar.gz
+https://github.com/xkbcommon/libxkbcommon/archive/refs/tags/xkbcommon-1.8.1.tar.gz
 https://github.com/xxxserxxx/gotop/archive/refs/tags/v4.2.0.tar.gz
 https://github.com/xyproto/gendesk/archive/refs/tags/1.0.9.tar.gz
 https://github.com/xyproto/orbiton/archive/refs/tags/v2.68.0.tar.gz
@@ -3900,6 +3903,7 @@ https://gitlab.gnome.org/GNOME/libxslt/-/archive/v1.1.39/libxslt-v1.1.39.tar.bz2
 https://gitlab.gnome.org/GNOME/libxslt/-/archive/v1.1.40/libxslt-v1.1.40.tar.bz2
 https://gitlab.gnome.org/GNOME/libxslt/-/archive/v1.1.41/libxslt-v1.1.41.tar.bz2
 https://gitlab.gnome.org/GNOME/libxslt/-/archive/v1.1.42/libxslt-v1.1.42.tar.bz2
+https://gitlab.gnome.org/GNOME/libxslt/-/archive/v1.1.43/libxslt-v1.1.43.tar.bz2
 https://gitlab.gnome.org/GNOME/mutter/-/archive/44.beta/mutter-44.beta.tar.bz2
 https://gitlab.gnome.org/GNOME/mutter/-/archive/45.0/mutter-45.0.tar.bz2
 https://gitlab.gnome.org/GNOME/mutter/-/archive/47.beta/mutter-47.beta.tar.bz2
