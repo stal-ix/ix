@@ -4,7 +4,7 @@
 {% if force_allocator %}
 lib/{{force_allocator}}
 {% elif linux %}
-lib/{{allocator or 'tcmalloc'}}
+lib/{{allocator or 'gperftools'}}
 {% elif darwin %}
 lib/reallocarray
 lib/reallocarray/headers
