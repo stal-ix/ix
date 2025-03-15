@@ -27,9 +27,9 @@ lib/signal/protocol/c
 
 {% block bld_data %}
 lib/gee/gir
+lib/glib/gir
 lib/adwaita/vapi
 lib/gi/repository/gir
-lib/gi/files
 {% endblock %}
 
 {% block bld_tool %}
