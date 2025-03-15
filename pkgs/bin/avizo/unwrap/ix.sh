@@ -1,7 +1,5 @@
 {% extends '//die/c/meson.sh' %}
 
-{# need vala #}
-
 {% block fetch %}
 https://github.com/heyjuvi/avizo/archive/refs/tags/1.3.tar.gz
 sha:2b1f5817a916e518b0c10c4c94a3678a5054b879eb32c10b5d1425faa6387127
@@ -25,8 +23,11 @@ lib/gdk/pixbuf
 {% endblock %}
 
 {% block bld_data %}
+lib/glib/gir
+lib/gtk/3/gir
+lib/pango/gir
 lib/harfbuzz/gir
-lib/gtk/layer/shell/gir
+lib/gdk/pixbuf/gir
 lib/gi/repository/gir
-lib/gi/files
+lib/gtk/layer/shell/gir
 {% endblock %}
