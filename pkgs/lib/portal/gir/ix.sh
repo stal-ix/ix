@@ -17,10 +17,13 @@ lib/gi/repository
 {% endblock %}
 
 {% block bld_data %}
+lib/glib/gir
+lib/pango/gir
 lib/graphene/gir
-lib/gi/repository/gir
 lib/harfbuzz/gir
-lib/gi/files
+lib/gdk/pixbuf/gir
+lib/gi/repository/gir
+lib/gtk/{{gtk_ver}}/gir
 {% endblock %}
 
 {% block install %}

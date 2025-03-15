@@ -11,9 +11,13 @@ lib/adwaita/dl
 {% endblock %}
 
 {% block bld_data %}
+lib/glib/gir
+lib/pango/gir
+lib/gtk/4/gir
 lib/graphene/gir
-lib/gi/repository/gir
 lib/harfbuzz/gir
+#lib/gdk/pixbuf/gir
+lib/gi/repository/gir
 lib/gi/files
 {% endblock %}
 
