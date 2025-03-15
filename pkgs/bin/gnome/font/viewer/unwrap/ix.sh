@@ -1,8 +1,8 @@
 {% extends '//die/c/gnome.sh' %}
 
 {% block fetch %}
-https://gitlab.gnome.org/GNOME/gnome-font-viewer/-/archive/45.0/gnome-font-viewer-45.0.tar.bz2
-sha:124abfb43675c5f302e0233918b5e7325c8d2405571f28eac461c8a3aca5bbf9
+https://gitlab.gnome.org/GNOME/gnome-font-viewer/-/archive/48.0/gnome-font-viewer-48.0.tar.bz2
+sha:7c713efe47d00d974b7da5b82173c24425745b661fa0947b7dbf24b913158da8
 {% endblock %}
 
 {% block bld_libs %}
