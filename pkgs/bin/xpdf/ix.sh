@@ -2,5 +2,5 @@
 
 {% block run_deps %}
 bin/xpdf/tools
-bin/xpdf/viewer(allocator=tcmalloc)
+bin/xpdf/viewer(allocator={{default_allocator}})
 {% endblock %}

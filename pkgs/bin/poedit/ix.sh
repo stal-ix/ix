@@ -3,5 +3,5 @@
 {% block run_deps %}
 bin/gettext/unwrap
 bin/xdg/er(wrap=poedit)
-bin/poedit/unwrap(allocator=tcmalloc)
+bin/poedit/unwrap(allocator={{default_allocator}})
 {% endblock %}
