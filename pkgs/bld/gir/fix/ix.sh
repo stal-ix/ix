@@ -1,5 +1,6 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
-bin/webkitproc/unwrap(allocator={{default_allocator}})
+bin/xml/lint
+bld/gir/fix/scripts
 {% endblock %}

@@ -29,5 +29,4 @@ USE_CPU_AFFINITY=0
 
 {% block patch %}
 sed -e 's|dlopen|dlopenxxx|g' -i src/tools.c
-sed -e 's|int malloc_trim|int malloc_trimxxx|' -i src/pool.c
 {% endblock %}

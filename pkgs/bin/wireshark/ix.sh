@@ -5,5 +5,5 @@ bin/wireshark/tui
 bin/sudo/er(wrap=tshark)
 bin/sudo/er(wrap=dumpcap)
 bin/xdg/er(wrap=wireshark)
-bin/wireshark/gui(allocator=tcmalloc)
+bin/wireshark/gui(allocator={{default_allocator}})
 {% endblock %}

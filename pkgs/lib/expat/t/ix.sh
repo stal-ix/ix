@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/libexpat/libexpat/archive/refs/tags/R_2_6_4.tar.gz
-sha:372b18f6527d162fa9658f1c74d22a37429b82d822f5a1e1fc7e00f6045a06a2
+https://github.com/libexpat/libexpat/archive/refs/tags/R_2_7_0.tar.gz
+sha:d5ff350414fec2a0c35855e29a08297cbb3d9ce6b3eff773b08f537dbc352b3d
 {% endblock %}
 
 {% block lib_deps %}

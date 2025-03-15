@@ -2,5 +2,5 @@
 
 {% block run_deps %}
 bin/notify/send
-bin/foot/unwrap(allocator=tcmalloc)
+bin/foot/unwrap(allocator={{default_allocator}})
 {% endblock %}

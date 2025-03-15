@@ -14,5 +14,12 @@ __file__ = "${out}/bin/g-ir-scanner-bin"
 import sys
 import _giscanner
 sys.modules['giscanner._giscanner'] = _giscanner
+def flt():
+    for x in sys.argv:
+        if x.startswith('--doc-format'):
+            pass
+        else:
+            yield x
+sys.argv = list(flt())
 EOF
 {% endblock %}

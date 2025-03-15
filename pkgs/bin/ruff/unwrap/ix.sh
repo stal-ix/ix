@@ -1,11 +1,11 @@
 {% extends '//die/rust/cargo.sh' %}
 
 {% block cargo_url %}
-https://github.com/astral-sh/ruff/archive/refs/tags/0.9.6.tar.gz
+https://github.com/astral-sh/ruff/archive/refs/tags/0.11.0.tar.gz
 {% endblock %}
 
 {% block cargo_sha %}
-26897ac3da13a0f43532323db923f4094f53f3955683fc3b003332c3ac8a4c81
+b70f057dc3f3abb60657f69b0e615c4f1d608f03e3545c35bbfa266fd9653561
 {% endblock %}
 
 {% block cargo_bins %}

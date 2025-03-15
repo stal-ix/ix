@@ -11,8 +11,8 @@ lib/glib
 {% endblock %}
 
 {% block bld_data %}
+lib/glib/gir
 lib/gi/repository/gir
-lib/gi/files
 {% endblock %}
 
 {% block bld_tool %}

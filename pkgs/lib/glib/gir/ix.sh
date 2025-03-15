@@ -1,13 +1,8 @@
-{% extends '//lib/pango/t/ix.sh' %}
+{% extends '//lib/glib/t/ix.sh' %}
 
 {% block meson_flags %}
 {{super()}}
 introspection=enabled
-{% endblock %}
-
-{% block host_libs %}
-{{super()}}
-lib/pango/dl
 {% endblock %}
 
 {% block bld_libs %}
@@ -15,20 +10,25 @@ lib/pango/dl
 lib/gi/repository
 {% endblock %}
 
-{% block bld_data %}
-lib/glib/gir
-lib/harfbuzz/gir
-lib/gi/repository/gir
+{% block host_libs %}
+{{super()}}
+lib/glib/dl
+lib/glib/gir/deps/dl
 {% endblock %}
 
 {% block bld_tool %}
 {{super()}}
 bld/gir
+bld/gir/fix
 {% endblock %}
 
-{% block install %}
-{{super()}}
+{% block postinstall %}
 mv ${out}/lib/gi* ${out}/share/
+rm -rf ${out}/bin ${out}/lib ${out}/include
+find ${out} -type f -name '*.gir' | while read l; do
+    cat ${l} | fix_gir > _
+    mv _ ${l}
+done
 {% endblock %}
 
 {% block env %}

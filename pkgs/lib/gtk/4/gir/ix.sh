@@ -1,24 +1,21 @@
-{% extends '//lib/pango/t/ix.sh' %}
-
-{% block meson_flags %}
-{{super()}}
-introspection=enabled
-{% endblock %}
-
-{% block host_libs %}
-{{super()}}
-lib/pango/dl
-{% endblock %}
+{% extends '//lib/gtk/4/t/ix.sh' %}
 
 {% block bld_libs %}
 {{super()}}
 lib/gi/repository
 {% endblock %}
 
+{% block host_libs %}
+{{super()}}
+lib/gtk/4/dl/dl
+{% endblock %}
+
 {% block bld_data %}
 lib/glib/gir
+lib/graphene/gir
 lib/harfbuzz/gir
 lib/gi/repository/gir
+lib/gi/files
 {% endblock %}
 
 {% block bld_tool %}
@@ -26,9 +23,14 @@ lib/gi/repository/gir
 bld/gir
 {% endblock %}
 
-{% block install %}
+{% block meson_flags %}
 {{super()}}
+introspection=enabled
+{% endblock %}
+
+{% block postinstall %}
 mv ${out}/lib/gi* ${out}/share/
+rm -rf ${out}/bin ${out}/lib ${out}/include
 {% endblock %}
 
 {% block env %}

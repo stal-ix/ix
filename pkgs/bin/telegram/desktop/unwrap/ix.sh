@@ -45,8 +45,7 @@ lib/{{allocator}}/trim(delay=3,bytes=30000000)
 {% endblock %}
 
 {% block bld_data %}
-lib/gi/repository/gir
-lib/gi/files
+lib/glib/gir
 {% endblock %}
 
 {% block host_libs %}

@@ -28,3 +28,8 @@ g_openuri_portal_open_uri_async
 g_openuri_portal_open_uri_finish
 os_create_anonymous_file
 {% endblock %}
+
+{% block run_data %}
+{{super()}}
+aux/fonts/adwaita
+{% endblock %}

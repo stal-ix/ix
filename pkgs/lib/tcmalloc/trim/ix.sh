@@ -10,11 +10,15 @@ lib/tcmalloc
 
 {% block premain_code %}
 #include <thread>
+#include <stdlib.h>
 #include <unistd.h>
+
+extern "C" size_t MallocExtension_Internal_ReleaseMemoryToSystem(size_t bytes);
 
 static void threadFunc() {
     while (true) {
         sleep({{delay}});
+        MallocExtension_Internal_ReleaseMemoryToSystem({{bytes}});
     }
 }
 

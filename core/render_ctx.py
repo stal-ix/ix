@@ -107,6 +107,7 @@ class RenderContext:
             'ix_dir': self.package.manager.config.ix_dir,
             'isfile': os.path.isfile,
             'intro': self.intro,
+            'default_allocator': 'gperftools',
             kind: True,
             tp['os']: True,
             tp['arch']: True,
