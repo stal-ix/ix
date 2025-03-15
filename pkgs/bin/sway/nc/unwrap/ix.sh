@@ -20,12 +20,15 @@ lib/gtk/layer/shell
 
 {% block bld_data %}
 lib/gee/gir
+lib/glib/gir
 lib/handy/gir
+lib/pango/gir
 lib/harfbuzz/gir
-lib/gtk/layer/shell/gir
-lib/granite/{{gtk_ver}}/gir
+lib/gdk/pixbuf/gir
 lib/gi/repository/gir
-lib/gi/files
+lib/gtk/layer/shell/gir
+lib/gtk/{{gtk_ver}}/gir
+lib/granite/{{gtk_ver}}/gir
 {% endblock %}
 
 {% block bld_tool %}
