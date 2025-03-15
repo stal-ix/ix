@@ -19,11 +19,16 @@ lib/glib/gir/deps/dl
 {% block bld_tool %}
 {{super()}}
 bld/gir
+bld/gir/fix
 {% endblock %}
 
 {% block postinstall %}
 mv ${out}/lib/gi* ${out}/share/
 rm -rf ${out}/bin ${out}/lib ${out}/include
+find ${out} -type f -name '*.gir' | while read l; do
+    cat ${l} | fix_gir > _
+    mv _ ${l}
+done
 {% endblock %}
 
 {% block env %}
