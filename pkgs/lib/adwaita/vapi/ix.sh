@@ -16,9 +16,8 @@ lib/pango/gir
 lib/gtk/4/gir
 lib/graphene/gir
 lib/harfbuzz/gir
-#lib/gdk/pixbuf/gir
+lib/gdk/pixbuf/gir
 lib/gi/repository/gir
-lib/gi/files
 {% endblock %}
 
 {% block bld_tool %}
