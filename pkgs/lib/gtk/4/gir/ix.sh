@@ -12,10 +12,11 @@ lib/gtk/4/dl/dl
 
 {% block bld_data %}
 lib/glib/gir
+lib/pango/gir
 lib/graphene/gir
 lib/harfbuzz/gir
+lib/gdk/pixbuf/gir
 lib/gi/repository/gir
-lib/gi/files
 {% endblock %}
 
 {% block bld_tool %}
