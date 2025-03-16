@@ -4,5 +4,5 @@
 bld/cmake
 bld/python
 bin/meson/1/4
-bld/pkg/config/wrapped
+bld/pkg/config
 {% endblock %}
