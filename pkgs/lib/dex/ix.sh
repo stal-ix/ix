@@ -1,8 +1,8 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://gitlab.gnome.org/GNOME/libdex/-/archive/0.9.1/libdex-0.9.1.tar.bz2
-sha:e4cc4beb08acc62474c437d4f698067f0176afbc5863f362a646b9714f9b21d2
+https://gitlab.gnome.org/GNOME/libdex/-/archive/0.10.0/libdex-0.10.0.tar.bz2
+sha:afbe81ac5258844be14db1205687d3caf699dd268ce03c6171ffd83b45b92041
 {% endblock %}
 
 {% block lib_deps %}
