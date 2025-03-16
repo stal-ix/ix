@@ -10,6 +10,7 @@ var = [
     'gdbus-codegen',
     'glib-compile-schemas',
     'g-ir-scanner',
+    'g-ir-compiler',
     'glib-compile-resources',
     'gio-querymodules',
 ]
