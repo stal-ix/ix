@@ -1,8 +1,8 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://github.com/emersion/mako/archive/refs/tags/v1.9.0.tar.gz
-sha:5a9f0d58ad0b3dc5bed7084934519fb86648d853b4afd4d1c0cc4a7af3a82f0c
+https://github.com/emersion/mako/archive/refs/tags/v1.10.0.tar.gz
+sha:3ca44f6bb85c941a4f637a9787931c22ee9a7fe6b8039e6985baf863719b0f95
 {% endblock %}
 
 {% block lib_deps %}
