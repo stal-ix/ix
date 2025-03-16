@@ -16,9 +16,12 @@ lib/gi/repository
 {% endblock %}
 
 {% block bld_data %}
-lib/gi/repository/gir
+lib/glib/gir
+lib/pango/gir
+lib/gtk/3/gir
 lib/harfbuzz/gir
-lib/gi/files
+lib/gdk/pixbuf/gir
+lib/gi/repository/gir
 {% endblock %}
 
 {% block bld_tool %}
