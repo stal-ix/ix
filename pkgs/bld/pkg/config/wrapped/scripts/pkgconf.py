@@ -11,6 +11,7 @@ var = [
     'glib-compile-schemas',
     'g-ir-scanner',
     'glib-compile-resources',
+    'gio-querymodules',
 ]
 
 for v in var:
