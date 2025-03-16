@@ -24,7 +24,7 @@ lib/json/cpp
 lib/dbus/menu
 lib/xkb/common
 lib/app/indicator
-lib/gtk/layer/shell
+lib/gtk/layer/shell/3
 {% endblock %}
 
 {% block bld_tool %}

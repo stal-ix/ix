@@ -26,9 +26,9 @@ lib/pango/gir
 lib/harfbuzz/gir
 lib/gdk/pixbuf/gir
 lib/gi/repository/gir
-lib/gtk/layer/shell/gir
 lib/gtk/{{gtk_ver}}/gir
 lib/granite/{{gtk_ver}}/gir
+lib/gtk/layer/shell/{{gtk_ver}}/gir
 {% endblock %}
 
 {% block bld_tool %}

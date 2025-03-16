@@ -24,10 +24,10 @@ lib/gdk/pixbuf
 
 {% block bld_data %}
 lib/glib/gir
-lib/gtk/3/gir
 lib/pango/gir
 lib/harfbuzz/gir
 lib/gdk/pixbuf/gir
 lib/gi/repository/gir
-lib/gtk/layer/shell/gir
+lib/gtk/{{gtk_ver}}/gir
+lib/gtk/layer/shell/{{gtk_ver}}/gir
 {% endblock %}

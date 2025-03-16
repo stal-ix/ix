@@ -1,4 +1,4 @@
-{% extends '//lib/gtk/layer/shell/t/ix.sh' %}
+{% extends '//lib/gtk/layer/shell/3/t/ix.sh' %}
 
 {% block meson_flags %}
 {{super()}}

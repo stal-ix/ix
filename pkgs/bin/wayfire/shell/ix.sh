@@ -18,7 +18,7 @@ lib/gtk/deps
 lib/gtk/3/mm
 lib/wf/config
 lib/dbus/menu
-lib/gtk/layer/shell
+lib/gtk/layer/shell/3
 {% endblock %}
 
 {% block patch %}
