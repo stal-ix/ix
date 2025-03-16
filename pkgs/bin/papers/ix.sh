@@ -43,8 +43,6 @@ bld/gettext
 bld/rust(rustc_ver=83)
 {% endblock %}
 
-{% block use_network %}true{% endblock %}
-
 {% block build_flags %}
 shut_up
 {% endblock %}
