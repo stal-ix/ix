@@ -7,7 +7,7 @@ introspection=true
 
 {% block host_libs %}
 {{super()}}
-lib/gtk/layer/shell
+lib/gtk/layer/shell/3
 {% endblock %}
 
 {% block bld_libs %}
