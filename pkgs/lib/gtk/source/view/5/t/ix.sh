@@ -1,8 +1,8 @@
 {% extends '//die/c/gnome.sh' %}
 
 {% block fetch %}
-https://gitlab.gnome.org/GNOME/gtksourceview/-/archive/5.15.1/gtksourceview-5.15.1.tar.bz2
-sha:6e0d84900cfbce55964ef0936a2c61009140d33c21b92d319724567d0a0a7fab
+https://gitlab.gnome.org/GNOME/gtksourceview/-/archive/5.16.0/gtksourceview-5.16.0.tar.bz2
+sha:e7399ca309bde4b5f04d7ce443b1ab0077dc7cc18b6dfd13ab49f5305b00203c
 {% endblock %}
 
 {% block lib_deps %}
