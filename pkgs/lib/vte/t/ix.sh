@@ -23,10 +23,6 @@ lib/kernel
 lib/shim/wait
 {% endblock %}
 
-{% block meson_tool %}
-bld/meson/4
-{% endblock %}
-
 {% block bld_tool %}
 bld/bash
 bld/glib

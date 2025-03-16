@@ -26,10 +26,6 @@ lib/build/muldefs
 lib/toml/plus/plus
 {% endblock %}
 
-{% block meson_tool %}
-bld/meson/4
-{% endblock %}
-
 {% block bld_tool %}
 bin/jq
 bld/prepend

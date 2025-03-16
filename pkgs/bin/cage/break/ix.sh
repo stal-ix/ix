@@ -14,10 +14,6 @@ lib/wlroots/18
 lib/xkb/common
 {% endblock %}
 
-{% block meson_tool %}
-bld/meson/4
-{% endblock %}
-
 {% block bld_tool %}
 bld/wayland
 {% endblock %}

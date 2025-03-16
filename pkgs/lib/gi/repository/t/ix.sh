@@ -18,10 +18,6 @@ bld/flex
 bld/bison
 {% endblock %}
 
-{% block meson_tool %}
-bld/meson/4
-{% endblock %}
-
 {% block build_flags %}
 wrap_cc
 {% endblock %}
