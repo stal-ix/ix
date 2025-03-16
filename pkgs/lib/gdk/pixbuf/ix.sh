@@ -21,7 +21,9 @@ EOF
 
 {% block install %}
 {{super()}}
-sed -e 's|.*bin.*||' -i ${out}/lib/pkgconfig/gdk-pixbuf-2.0.pc
+sed -e 's|${bindir}/||' \
+    -e 's|.*bindir.*||' \
+    -i ${out}/lib/pkgconfig/gdk-pixbuf-2.0.pc
 {% endblock %}
 
 {% block env %}
