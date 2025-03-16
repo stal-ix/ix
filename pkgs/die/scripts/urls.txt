@@ -325,6 +325,7 @@ https://codeberg.org/grisha/gumbo-parser/archive/0.12.0.tar.gz
 https://codeberg.org/grisha/gumbo-parser/archive/0.12.1.tar.gz
 https://codeberg.org/grisha/gumbo-parser/archive/0.12.3.tar.gz
 https://codeberg.org/grisha/gumbo-parser/archive/0.13.0.tar.gz
+https://codeberg.org/mbunkus/mkvtoolnix/archive/release-91.0.tar.gz
 https://codeberg.org/soundtouch/soundtouch/archive/2.3.1.tar.gz
 https://codeberg.org/tenacityteam/libmad/archive/0.16.3.tar.gz
 https://codeberg.org/tenacityteam/libmad/archive/0.16.4.tar.gz
