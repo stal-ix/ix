@@ -374,6 +374,7 @@ https://download.gnome.org/sources/evince/46/evince-46.1.tar.xz
 https://download.gnome.org/sources/evince/46/evince-46.2.tar.xz
 https://download.gnome.org/sources/evince/46/evince-46.3.1.tar.xz
 https://download.gnome.org/sources/evince/46/evince-46.3.tar.xz
+https://download.gnome.org/sources/evince/48/evince-48.0.tar.xz
 https://download.gnome.org/sources/gdk-pixbuf/2.42/gdk-pixbuf-2.42.11.tar.xz
 https://download.gnome.org/sources/gdk-pixbuf/2.42/gdk-pixbuf-2.42.6.tar.xz
 https://download.gnome.org/sources/glib/2.74/glib-2.74.5.tar.xz
@@ -916,6 +917,7 @@ https://github.com/FluidSynth/fluidsynth/archive/refs/tags/v2.3.6.tar.gz
 https://github.com/FluidSynth/fluidsynth/archive/refs/tags/v2.3.7.tar.gz
 https://github.com/FluidSynth/fluidsynth/archive/refs/tags/v2.4.0.tar.gz
 https://github.com/FluidSynth/fluidsynth/archive/refs/tags/v2.4.1.tar.gz
+https://github.com/FluidSynth/fluidsynth/archive/refs/tags/v2.4.4.tar.gz
 https://github.com/FlyGoat/RyzenAdj/archive/refs/tags/v0.13.0.tar.gz
 https://github.com/FlyGoat/RyzenAdj/archive/refs/tags/v0.14.0.tar.gz
 https://github.com/FlyGoat/RyzenAdj/archive/refs/tags/v0.16.0.tar.gz
@@ -957,6 +959,7 @@ https://github.com/GNOME/epiphany/archive/refs/tags/47.1.tar.gz
 https://github.com/GNOME/epiphany/archive/refs/tags/47.2.tar.gz
 https://github.com/GNOME/file-roller/archive/refs/tags/43.1.tar.gz
 https://github.com/GNOME/gnome-terminal/archive/refs/tags/3.54.2.tar.gz
+https://github.com/GNOME/gnome-terminal/archive/refs/tags/3.56.0.tar.gz
 https://github.com/GNOME/gsettings-desktop-schemas/archive/refs/tags/47.0.tar.gz
 https://github.com/GNOME/gsettings-desktop-schemas/archive/refs/tags/47.1.tar.gz
 https://github.com/GNOME/gsettings-desktop-schemas/archive/refs/tags/47.beta.tar.gz
@@ -2117,6 +2120,7 @@ https://github.com/hyprwm/hyprwayland-scanner/archive/refs/tags/v0.4.2.tar.gz
 https://github.com/hyprwm/hyprwayland-scanner/archive/refs/tags/v0.4.4.tar.gz
 https://github.com/ib/xarchiver/archive/refs/tags/0.5.4.20.tar.gz
 https://github.com/ib/xarchiver/archive/refs/tags/0.5.4.23.tar.gz
+https://github.com/ib/xarchiver/archive/refs/tags/0.5.4.24.tar.gz
 https://github.com/ihhub/fheroes2/archive/refs/tags/1.0.10.tar.gz
 https://github.com/ihhub/fheroes2/archive/refs/tags/1.0.11.tar.gz
 https://github.com/ihhub/fheroes2/archive/refs/tags/1.0.12.tar.gz
@@ -3870,6 +3874,7 @@ https://gitlab.gnome.org/GNOME/gtk/-/archive/4.16.6/gtk-4.16.6.tar.bz2
 https://gitlab.gnome.org/GNOME/gtk/-/archive/4.16.7/gtk-4.16.7.tar.bz2
 https://gitlab.gnome.org/GNOME/gtk/-/archive/4.17.5/gtk-4.17.5.tar.bz2
 https://gitlab.gnome.org/GNOME/gtk/-/archive/4.18.1/gtk-4.18.1.tar.bz2
+https://gitlab.gnome.org/GNOME/gtk/-/archive/4.18.2/gtk-4.18.2.tar.bz2
 https://gitlab.gnome.org/GNOME/gtksourceview/-/archive/4.8.4/gtksourceview-4.8.4.tar.bz2
 https://gitlab.gnome.org/GNOME/gtksourceview/-/archive/5.10.0/gtksourceview-5.10.0.tar.bz2
 https://gitlab.gnome.org/GNOME/gtksourceview/-/archive/5.12.1/gtksourceview-5.12.1.tar.bz2

@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://github.com/ib/xarchiver/archive/refs/tags/0.5.4.23.tar.gz
-sha:319935cd323e865d8aa12023b5286c314c128491ac58e853e63f6d6ea3da2a27
+https://github.com/ib/xarchiver/archive/refs/tags/0.5.4.24.tar.gz
+sha:ac5775309820196761a7fab4355251e0e74b7fa09156db279b3a440183f97bd7
 {% endblock %}
 
 {% block bld_libs %}

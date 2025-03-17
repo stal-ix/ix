@@ -1,2 +1,2 @@
-https://gitlab.gnome.org/GNOME/gtk/-/archive/4.18.1/gtk-4.18.1.tar.bz2
-sha:d2744600f7487e93cd76fb79ebfc4143e1847fdea2b436a731e51e904082c659
+https://gitlab.gnome.org/GNOME/gtk/-/archive/4.18.2/gtk-4.18.2.tar.bz2
+sha:5b743401689a4f7f8a4ad0959bf18850f21373912eb982a7d168d3005bf903ad

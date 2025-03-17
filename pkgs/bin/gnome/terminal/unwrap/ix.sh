@@ -1,8 +1,8 @@
 {% extends '//die/c/gnome.sh' %}
 
 {% block fetch %}
-https://github.com/GNOME/gnome-terminal/archive/refs/tags/3.54.2.tar.gz
-sha:101e69d2c4abec2789e01605588d09e43d8a65fdf327e13b74d78773c71f55b5
+https://github.com/GNOME/gnome-terminal/archive/refs/tags/3.56.0.tar.gz
+sha:aaa248152c62a51657367376d1c3262ce7c09d5c8321b30de63043a6de3720b1
 {% endblock %}
 
 {% block bld_libs %}
