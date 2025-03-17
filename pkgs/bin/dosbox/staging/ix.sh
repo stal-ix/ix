@@ -32,4 +32,5 @@ wrap_cc
 
 {% block meson_flags %}
 use_alsa=false
+use_zlib_ng=false
 {% endblock %}
