@@ -310,6 +310,7 @@ https://codeberg.org/dnkl/foot/archive/1.18.1.tar.gz
 https://codeberg.org/dnkl/foot/archive/1.19.0.tar.gz
 https://codeberg.org/dnkl/foot/archive/1.20.1.tar.gz
 https://codeberg.org/dnkl/foot/archive/1.20.2.tar.gz
+https://codeberg.org/dnkl/foot/archive/1.21.0.tar.gz
 https://codeberg.org/dnkl/fuzzel/archive/1.10.0.tar.gz
 https://codeberg.org/dnkl/fuzzel/archive/1.10.2.tar.gz
 https://codeberg.org/dnkl/fuzzel/archive/1.11.0.tar.gz
@@ -830,6 +831,7 @@ https://github.com/AOMediaCodec/libavif/archive/refs/tags/v1.0.4.tar.gz
 https://github.com/AOMediaCodec/libavif/archive/refs/tags/v1.1.0.tar.gz
 https://github.com/AOMediaCodec/libavif/archive/refs/tags/v1.1.1.tar.gz
 https://github.com/AOMediaCodec/libavif/archive/refs/tags/v1.2.0.tar.gz
+https://github.com/AOMediaCodec/libavif/archive/refs/tags/v1.2.1.tar.gz
 https://github.com/ARMmbed/mbedtls/archive/refs/tags/v2.28.2.tar.gz
 https://github.com/ARMmbed/mbedtls/archive/refs/tags/v2.28.9.tar.gz
 https://github.com/ARMmbed/mbedtls/archive/refs/tags/v3.4.1.tar.gz
