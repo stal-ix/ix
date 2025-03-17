@@ -11,7 +11,7 @@ lib/c++
 lib/gtk/3/mm
 lib/json/nlohmann
 lib/gdk/pixbuf/svg
-lib/gtk/layer/shell
+lib/gtk/layer/shell/3
 {% endblock %}
 
 {% block patch %}

@@ -14,7 +14,7 @@ lib/atk
 lib/gtk
 lib/glib
 lib/openssl
-lib/gtk/layer/shell
+lib/gtk/layer/shell/3
 {% endblock %}
 
 {% block patch %}

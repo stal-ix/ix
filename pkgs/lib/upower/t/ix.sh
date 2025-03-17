@@ -10,10 +10,6 @@ lib/c
 lib/glib
 {% endblock %}
 
-{% block meson_tool %}
-bld/meson/4
-{% endblock %}
-
 {% block meson_strip_dirs %}
 {% endblock %}
 

@@ -10,8 +10,8 @@ lib/c
 lib/gtk/3
 lib/wayland
 lib/pam/unix
-lib/gtk/layer/shell
 lib/gtk/session/lock
+lib/gtk/layer/shell/3
 {% endblock %}
 
 {% block bld_tool %}

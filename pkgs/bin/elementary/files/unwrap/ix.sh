@@ -39,13 +39,13 @@ systemduserunitdir=no
 
 {% block bld_data %}
 lib/gee/gir
+lib/glib/gir
 lib/handy/gir
-lib/cloud/providers/gir
-lib/portal/gir(gtk_ver={{gtk_ver}})
-lib/granite/{{gtk_ver}}/gir
 lib/canberra/gir
 lib/gi/repository/gir
-lib/gi/files
+lib/cloud/providers/gir
+lib/granite/{{gtk_ver}}/gir
+lib/portal/gir(gtk_ver={{gtk_ver}})
 {% endblock %}
 
 {% block setup_target_flags %}

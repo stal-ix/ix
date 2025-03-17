@@ -12,6 +12,7 @@ lib/pango/dl
 
 {% block bld_libs %}
 {{super()}}
+lib/glib
 lib/gi/repository
 {% endblock %}
 

@@ -5,7 +5,7 @@
 bld/cctools
 {% endif %}
 {% block meson_tool %}
-bld/meson/2
+bld/meson/4
 {% endblock %}
 {{super()}}
 {% endblock %}

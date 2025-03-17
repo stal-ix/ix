@@ -1,6 +1,6 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://github.com/protobuf-c/protobuf-c/archive/refs/tags/v1.5.0.tar.gz
-sha:d4cb022d55f49796959b07a9d83040822e39129bc0eb28f4e8301da17d758f62
+https://github.com/protobuf-c/protobuf-c/archive/refs/tags/v1.5.1.tar.gz
+sha:f3046f94ef6f85cf4311f6c4c51e2095c381ce7bb7fd4f90ea8d9cd99fca3c04
 {% endblock %}

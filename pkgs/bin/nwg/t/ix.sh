@@ -3,7 +3,7 @@
 {% block bld_libs %}
 lib/c
 lib/gtk/3
-lib/gtk/layer/shell
+lib/gtk/layer/shell/3
 {% endblock %}
 
 {% block go_tags %}

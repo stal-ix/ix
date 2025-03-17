@@ -19,7 +19,7 @@ lib/atk
 lib/glib
 lib/gtk/3
 lib/gi/repository
-lib/gtk/layer/shell
+lib/gtk/layer/shell/3
 {% endblock %}
 
 {% block install %}

@@ -27,7 +27,10 @@ lib/shim/fake/pkg(pkg_name=xshmfence,pkg_ver=100500)
 {% endblock %}
 
 {% block cmake_flags %}
+VKI_ENABLE_LTO=OFF
+VKI_BUILD_DRI3=OFF
 PAL_BUILD_DRI3=OFF
+PAL_BUILD_WAYLAND=ON
 PAL_XCB_REQUIRED=OFF
 BUILD_WAYLAND_SUPPORT=On
 {% endblock %}

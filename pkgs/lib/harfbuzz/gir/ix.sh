@@ -2,8 +2,7 @@
 
 {% block bld_data %}
 {{super()}}
-lib/gi/repository/gir
-lib/gi/files
+lib/glib/gir
 {% endblock %}
 
 {% block bld_libs %}
@@ -13,7 +12,6 @@ lib/gi/repository
 
 {% block host_libs %}
 {{super()}}
-lib/gi/repository
 lib/harfbuzz/dl/core
 lib/harfbuzz/dl/gobject
 {% endblock %}
