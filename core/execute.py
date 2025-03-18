@@ -134,7 +134,10 @@ class Executor:
         except FileNotFoundError:
             pass
         except Exception:
-            shutil.rmtree(d, ignore_errors=False)
+            try:
+                shutil.rmtree(d)
+            except FileNotFoundError:
+                pass
 
         os.makedirs(d, exist_ok=True)
 
