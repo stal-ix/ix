@@ -11,15 +11,12 @@ cat << EOF > ${out}/include/librsvg/rsvg.h
 #pragma once
 
 #include <stdlib.h>
-
-struct GError {
-    const char* message;
-};
+#include <glib-object.h>
 
 using RsvgHandle = void;
 
 static inline RsvgHandle* rsvg_handle_new_from_data(const unsigned char*, size_t, GError** error) {
-    static GError* err = new GError{"unimplemented"};
+    static GError* err = g_error_new_literal(g_quark_from_string("rsvg"), 1, "unimplemented");
 
     if (error) {
         *error = err;
