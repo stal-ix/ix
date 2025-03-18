@@ -35,4 +35,3 @@ EOF
 cat << EOF > etc/group
 root:x:0:
 EOF
-exec ${@}

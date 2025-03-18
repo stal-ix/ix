@@ -6,7 +6,7 @@
 bin/sh/fmt
 {% endif %}
 {% if jail %}
-bld/jail
+bld/jail(tmpfs={{tmpfs}})
 {% endif %}
 {% endblock %}
 
