@@ -29,12 +29,18 @@ exit 1
 {% endblock %}
 
 {% block script_parts %}
+{% if jail or tmpfs %}
+unshare
+-r
+-U
+-m
+{% endif %}
 {% if jail %}
 jail
 /sys
 {{ix_dir}}
 {% endif %}
-{% if jail %}
+{% if tmpfs %}
 tmpfs
 {{ix_dir}}
 {% endif %}

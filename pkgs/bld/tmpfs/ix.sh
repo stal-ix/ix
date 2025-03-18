@@ -2,5 +2,6 @@
 
 {% block run_deps %}
 bin/mount
+bld/jail/helpers
 bld/tmpfs/scripts
 {% endblock %}
