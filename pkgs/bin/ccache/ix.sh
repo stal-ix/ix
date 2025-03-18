@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/ccache/ccache/archive/refs/tags/v4.11.tar.gz
-sha:6e14d2f7f4fee556d232c51ff81843fa164f557a0c7136764ec5412be561a90a
+https://github.com/ccache/ccache/archive/refs/tags/v4.11.1.tar.gz
+sha:b38eb8b239296829a07cfb7a1aeeb31660d2f25eaa6c1cf1ede4b4370708e589
 {% endblock %}
 
 {% block bld_libs %}
