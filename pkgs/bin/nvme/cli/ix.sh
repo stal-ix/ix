@@ -1,8 +1,8 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://github.com/linux-nvme/nvme-cli/archive/refs/tags/v2.11.tar.gz
-sha:5e4dc73dbb488c6b1e6ad1c78d0c62b624076fcb0c052bd9039674a1dbd6517b
+https://github.com/linux-nvme/nvme-cli/archive/refs/tags/v2.12.tar.gz
+sha:bb6528d0528ccf5d05fbe8e90b82b7632cc0896ffcbe2f4c823ff2de1e79693e
 {% endblock %}
 
 {% block bld_libs %}

@@ -7,6 +7,7 @@
 #bin/neo/vide
 #bin/xplr
 #bin/wez/term
+bin/amd/gpu/top
 bin/u/utils
 bin/cargo/whatfeatures
 bin/ix/runsvdir/rust
