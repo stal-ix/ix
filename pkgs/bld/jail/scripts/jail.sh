@@ -1,5 +1,6 @@
 #!/usr/bin/env sh
 set -xue
+curdir=${PWD}
 where=${1}
 shift
 store=${1}
@@ -35,4 +36,4 @@ EOF
 cat << EOF > etc/group
 root:x:0:
 EOF
-exec chroot ${where} ${@}
+exec chroot ${where} setcwd ${curdir} ${@}
