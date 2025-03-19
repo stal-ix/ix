@@ -28,3 +28,7 @@ lib/shim/gnu/basename/overlay
 {% block patch %}
 >libbtrfsutil/stubs.c
 {% endblock %}
+
+{% block c_rename_symbol %}
+parse_range
+{% endblock %}
