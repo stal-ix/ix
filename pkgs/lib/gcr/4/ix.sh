@@ -1,8 +1,8 @@
 {% extends '//lib/gcr/t/ix.sh' %}
 
 {% block fetch %}
-https://gitlab.gnome.org/GNOME/gcr/-/archive/4.3.91/gcr-4.3.91.tar.bz2
-sha:323a90547cf9c3a0f07b7af9ecd38a8c7cf912bd0190e87d19dfa89b2e854567
+https://gitlab.gnome.org/GNOME/gcr/-/archive/4.4.0.1/gcr-4.4.0.1.tar.bz2
+sha:886b7d1614b3fe109169d1ea20234fbc262eff2b36eb787fc0d2bf77cc368bc7
 {% endblock %}
 
 {% block lib_deps %}
