@@ -10,6 +10,10 @@ lib/c++/headers
 lib/shim/alloc
 {% endblock %}
 
+{% block c_rename_symbol %}
+strdup
+{% endblock %}
+
 {% block cmake_flags %}
 MI_USE_CXX=ON
 MI_OVERRIDE=ON
