@@ -35,4 +35,4 @@ EOF
 cat << EOF > etc/group
 root:x:0:
 EOF
-exec chroot ${where} setcwd ${PWD} ${@}
+exec chroot ${where} ${@}
