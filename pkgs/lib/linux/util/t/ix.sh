@@ -23,8 +23,13 @@ export LT_OPTS=-ci
 {{super()}}
 {% endblock %}
 
+{% block c_rename_symbol %}
+parse_range
+{% endblock %}
+
 {% block patch %}
 fix_shebangs ./tools/all_syscalls
+fix_shebangs ./tools/all_errnos
 cat - libmount/src/hook_mount.c << EOF > _
 #pragma once
 #define statx musl_statx
