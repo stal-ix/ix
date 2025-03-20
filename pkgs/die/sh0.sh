@@ -8,6 +8,9 @@ bin/sh/fmt
 {% if jail %}
 bld/jail
 {% endif %}
+{% if tmpfs %}
+bld/tmpfs
+{% endif %}
 {% endblock %}
 
 {% block script_body %}
@@ -25,10 +28,26 @@ exit 1
 # {{rebuild}}
 {% endblock %}
 
-{% block script_exec %}
-{% if jail %}
-["jail", "/sys", "{{ix_dir}}", "sh", "-s"]
-{% else %}
-["sh", "-s"]
+{% block script_parts %}
+{% if jail or tmpfs %}
+unshare
+-r
+-U
+-m
 {% endif %}
+{% if jail %}
+jail
+/sys
+{{ix_dir}}
+{% endif %}
+{% if tmpfs %}
+tmpfs
+{{ix_dir}}
+{% endif %}
+sh
+-s
+{% endblock %}
+
+{% block script_exec %}
+{{ix.list_to_json(self.script_parts())}}
 {% endblock %}

@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://github.com/util-linux/util-linux/archive/refs/tags/v2.40.3.tar.gz
-sha:27f427b95fd5568edabc2a988c2f60a1befbe68dbf1d7bb73c2d7c514316198e
+https://github.com/util-linux/util-linux/archive/refs/tags/v2.41.tar.gz
+sha:277407acf21815006eb4bb2ee9c2fa2ea6f4f84bfc57486c460c6bc8c77a4445
 {% endblock %}
 
 {% block lib_deps %}
@@ -23,8 +23,13 @@ export LT_OPTS=-ci
 {{super()}}
 {% endblock %}
 
+{% block c_rename_symbol %}
+parse_range
+{% endblock %}
+
 {% block patch %}
 fix_shebangs ./tools/all_syscalls
+fix_shebangs ./tools/all_errnos
 cat - libmount/src/hook_mount.c << EOF > _
 #pragma once
 #define statx musl_statx

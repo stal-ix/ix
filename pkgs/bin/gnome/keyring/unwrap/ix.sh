@@ -1,10 +1,10 @@
-{% extends '//die/c/autorehell.sh' %}
+{% extends '//die/c/meson.sh' %}
 
 {# need to statlink plugins #}
 
 {% block fetch %}
-https://gitlab.gnome.org/GNOME/gnome-keyring/-/archive/46.1/gnome-keyring-46.1.tar.bz2
-sha:4bafb5af5859cb4aa6b9e95ee0cca9762139535e1f1bf896d69180c9bf2d6519
+https://gitlab.gnome.org/GNOME/gnome-keyring/-/archive/48.0/gnome-keyring-48.0.tar.bz2
+sha:f0fb25865d13665c475cead8eb9ed6fee0780e04c7f7e8d2b3d18551b3aa0986
 {% endblock %}
 
 {% block bld_libs %}
@@ -21,18 +21,12 @@ bld/glib
 bld/gettext
 {% endblock %}
 
-{% block configure_flags %}
---disable-doc
---without-systemd
-{% endblock %}
-
-{% block setup_target_flags %}
-export GLIB_COMPILE_SCHEMAS=glib-compile-schemas
-{% endblock %}
-
-{% block make_flags %}
-P11_MODULE_PATH=${out}/lib
-P11_SYSTEM_CONFIG_MODULES=${out}/lib
+{% block meson_flags %}
+systemd=disabled
+manpage=false
+debug-mode=false
+pkcs11-modules=${out}/lib
+pkcs11-config=${out}/lib
 {% endblock %}
 
 {% block patch %}

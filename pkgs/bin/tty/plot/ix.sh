@@ -1,8 +1,8 @@
 {% extends '//die/c/make.sh' %}
 
 {% block fetch %}
-https://github.com/tenox7/ttyplot/archive/refs/tags/1.6.1.tar.gz
-sha:a6d0cfb2ec37ea6b4aaf978a8190ca0f42eacd4841f62da4ea2d93ecefc4dd28
+https://github.com/tenox7/ttyplot/archive/refs/tags/1.7.1.tar.gz
+sha:d1624eea52abec5538c9b19bae00f81642c2d2886cd7755988466b74424ce9ca
 {% endblock %}
 
 {% block bld_libs %}

@@ -3,8 +3,8 @@
 {# broken libtool #}
 
 {% block fetch %}
-https://github.com/varnishcache/varnish-cache/archive/refs/tags/varnish-7.6.0.tar.gz
-sha:7565fe0311043b58a2e86191d85ea6c015c12169b5f021333fb31939c0984928
+https://github.com/varnishcache/varnish-cache/archive/refs/tags/varnish-7.7.0.tar.gz
+sha:5c90b75e548585f940b6abee8a5805738698d70fb4e09780142953f9d72ac7a7
 {% endblock %}
 
 {% block bld_libs %}
@@ -25,4 +25,3 @@ bld/fake/er(tool_name=sphinx-build)
 wrap_cc
 no_werror
 {% endblock %}
-

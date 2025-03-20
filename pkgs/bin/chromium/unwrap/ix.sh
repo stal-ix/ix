@@ -12,12 +12,12 @@ sha:15bbbfd8d129cfa74aa13d51e5810943faca18f05096bb5aecb88f62c4cfc66e
 {% block bld_libs %}
 lib/c
 lib/z
+lib/gbm
 lib/aom
 lib/c++
 lib/nss
 lib/drm
 lib/icu
-lib/drm
 lib/cap
 lib/ffi
 lib/usb
@@ -62,6 +62,7 @@ lib/xiph/speex
 lib/fontconfig
 lib/xkb/common
 lib/shim/extra
+lib/drivers/3d
 lib/bsd/overlay
 lib/nss/nssckbi
 lib/build/errlimit
@@ -222,8 +223,6 @@ __is_cpp17_contiguous_iterator=__libcpp_is_contiguous_iterator
 {% endblock %}
 
 {% block gn_args %}
-use_wayland_gbm=false
-use_system_minigbm=false
 angle_use_custom_libvulkan=false
 angle_shared_libvulkan=false
 angle_build_tests=false
