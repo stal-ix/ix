@@ -48,6 +48,7 @@
 #}
 
 {% block run_deps %}
+bin/ip/tables
 bin/web/hook
 bin/go/crypt/fs
 bin/efivar
