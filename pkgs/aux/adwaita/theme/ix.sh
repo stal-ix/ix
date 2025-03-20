@@ -1,8 +1,8 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://github.com/GNOME/adwaita-icon-theme/archive/refs/tags/47.0.tar.gz
-sha:e0845b6a398b67e048a3b1a2700b4da16f90b95c19d0ea1ff0ba65d78609dd2f
+https://github.com/GNOME/adwaita-icon-theme/archive/refs/tags/48.0.tar.gz
+sha:6d9bdd482f94209e7c440c5203a60012854f37a8c78bfae9c6e4744a27e59188
 {% endblock %}
 
 {% block bld_tool %}
