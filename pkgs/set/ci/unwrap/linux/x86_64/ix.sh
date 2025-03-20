@@ -48,6 +48,7 @@
 #}
 
 {% block run_deps %}
+bin/web/hook
 bin/go/crypt/fs
 bin/efivar
 bin/clang/20/bootstrapped
