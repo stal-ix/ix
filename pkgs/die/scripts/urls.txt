@@ -948,6 +948,7 @@ https://github.com/FreeRDP/FreeRDP/archive/refs/tags/3.7.0.tar.gz
 https://github.com/FreeRDP/FreeRDP/archive/refs/tags/3.9.0.tar.gz
 https://github.com/GNOME/adwaita-icon-theme/archive/refs/tags/44.0.tar.gz
 https://github.com/GNOME/adwaita-icon-theme/archive/refs/tags/47.0.tar.gz
+https://github.com/GNOME/adwaita-icon-theme/archive/refs/tags/48.0.tar.gz
 https://github.com/GNOME/epiphany/archive/refs/tags/45.0.tar.gz
 https://github.com/GNOME/epiphany/archive/refs/tags/45.1.tar.gz
 https://github.com/GNOME/epiphany/archive/refs/tags/45.2.tar.gz
@@ -3976,6 +3977,7 @@ https://gitlab.gnome.org/GNOME/pango/-/archive/1.56.2/pango-1.56.2.tar.bz2
 https://gitlab.gnome.org/GNOME/pango/-/archive/1.56.3/pango-1.56.3.tar.bz2
 https://gitlab.gnome.org/GNOME/sysprof/-/archive/46.0/sysprof-46.0.tar.bz2
 https://gitlab.gnome.org/GNOME/sysprof/-/archive/47.1/sysprof-47.1.tar.bz2
+https://gitlab.gnome.org/GNOME/sysprof/-/archive/48.0/sysprof-48.0.tar.bz2
 https://gitlab.gnome.org/GNOME/vala/-/archive/0.56.1/vala-0.56.1.tar.bz2
 https://gitlab.gnome.org/GNOME/vala/-/archive/0.56.17/vala-0.56.17.tar.bz2
 https://gitlab.gnome.org/GNOME/vala/-/archive/0.56.18/vala-0.56.18.tar.bz2
