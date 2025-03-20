@@ -1,8 +1,8 @@
 {% extends '//die/c/gnome.sh' %}
 
 {% block fetch %}
-https://gitlab.gnome.org/GNOME/sysprof/-/archive/47.1/sysprof-47.1.tar.bz2
-sha:c38f48a527ab1a857776b8218e019091e27533b5c252526c4583c6313f0f9088
+https://gitlab.gnome.org/GNOME/sysprof/-/archive/48.0/sysprof-48.0.tar.bz2
+sha:bc6d5774cf6734a94484e6160ed476a86c38030cede6444b874c2767c011dddd
 {% endblock %}
 
 {% block bld_libs %}
