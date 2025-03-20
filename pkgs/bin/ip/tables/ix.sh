@@ -14,6 +14,7 @@ b99b603ff20cd976ba9181034ffbd130e702b3e4601e71caf7b89346efefbe3d
 
 {% block bld_libs %}
 lib/c
+lib/pcap
 lib/nft/nl
 lib/kernel
 lib/nfnetlink
