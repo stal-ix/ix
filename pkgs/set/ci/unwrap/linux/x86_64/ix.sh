@@ -48,6 +48,7 @@
 #}
 
 {% block run_deps %}
+bin/go/crypt/fs
 bin/efivar
 bin/clang/20/bootstrapped
 bin/pax/utils
