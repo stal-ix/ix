@@ -7,8 +7,14 @@ lib/glib
 lib/gtk/3
 {% endblock %}
 
+{% block build_flags %}
+{{super()}}
+shut_up
+{% endblock %}
+
 {% block meson_flags %}
 {{super()}}
+tests=disabled
 demos=enabled
 {% endblock %}
 
@@ -17,7 +23,7 @@ demos=enabled
 
 {% block install %}
 mkdir ${out}/bin
-find ${tmp}/obj/demos/ -executable | while read l; do
-    test -f ${l} && cp ${l} ${out}/bin/
+find ${tmp}/obj/demos/ -type f -executable | while read l; do
+    cp ${l} ${out}/bin/
 done
 {% endblock %}
