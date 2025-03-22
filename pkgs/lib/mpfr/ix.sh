@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://ftp.gnu.org/gnu/mpfr/mpfr-4.2.0.tar.xz
-sha:06a378df13501248c1b2db5aa977a2c8126ae849a9d9b7be2546fb4a9c26d993
+https://ftp.gnu.org/gnu/mpfr/mpfr-4.2.2.tar.xz
+sha:b67ba0383ef7e8a8563734e2e889ef5ec3c3b898a01d00fa0a6869ad81c6ce01
 {% endblock %}
 
 {% block lib_deps %}
