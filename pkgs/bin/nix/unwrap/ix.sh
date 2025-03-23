@@ -21,6 +21,7 @@ lib/lowdown
 lib/seccomp
 lib/openssl
 lib/archive
+lib/blake3/c
 lib/editline
 lib/sqlite/3
 lib/rapidcheck
