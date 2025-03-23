@@ -19,5 +19,11 @@ find . -name '*.so' | while read l; do
     done
 done | dl_stubs > dl_stubs.c
 cat dl_stubs.c
-clang -o ${out}/bin/weechat dl_stubs.c $(find . -name '*.a') $(find . -name 'main.c.o')
+clang -o ${out}/bin/weechat \
+    dl_stubs.c \
+    $(find . -name '*.a') \
+    $(find . -name 'main.c.o') \
+    src/gui/CMakeFiles/weechat_gui_common.dir/*.o \
+    src/core/CMakeFiles/weechat_core.dir/*.o \
+    src/core/CMakeFiles/weechat_core.dir/hook/*.o
 {% endblock %}
