@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://ftp.gnu.org/gnu/libidn/libidn-1.42.tar.gz
-sha:d6c199dcd806e4fe279360cb4b08349a0d39560ed548ffd1ccadda8cdecb4723
+https://ftp.gnu.org/gnu/libidn/libidn-1.43.tar.gz
+sha:bdc662c12d041b2539d0e638f3a6e741130cdb33a644ef3496963a443482d164
 {% endblock %}
 
 {% block lib_deps %}

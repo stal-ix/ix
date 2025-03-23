@@ -1,8 +1,8 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://github.com/NixOS/nix/archive/refs/tags/2.26.3.tar.gz
-sha:d58eff360de1e26a19d871be5e4946dfc2a57a617709b8135b710c9543e64104
+https://github.com/NixOS/nix/archive/refs/tags/2.27.0.tar.gz
+sha:900925bf3750fe5cd6ea93e644ca268b5758c8e17083d12473e6dc59904b3528
 {% endblock %}
 
 {% block bld_libs %}
@@ -21,6 +21,7 @@ lib/lowdown
 lib/seccomp
 lib/openssl
 lib/archive
+lib/blake3/c
 lib/editline
 lib/sqlite/3
 lib/rapidcheck
