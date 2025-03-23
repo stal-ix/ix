@@ -341,6 +341,7 @@ https://data.iana.org/time-zones/releases/tzdb-2023d.tar.lz
 https://data.iana.org/time-zones/releases/tzdb-2024a.tar.lz
 https://data.iana.org/time-zones/releases/tzdb-2024b.tar.lz
 https://data.iana.org/time-zones/releases/tzdb-2025a.tar.lz
+https://data.iana.org/time-zones/releases/tzdb-2025b.tar.lz
 https://dbus.freedesktop.org/releases/dbus-glib/dbus-glib-0.112.tar.gz
 https://dbus.freedesktop.org/releases/dbus-glib/dbus-glib-0.114.tar.gz
 https://dbus.freedesktop.org/releases/dbus/dbus-1.14.10.tar.xz
@@ -1542,6 +1543,7 @@ https://github.com/ccache/ccache/archive/refs/tags/v4.10.1.tar.gz
 https://github.com/ccache/ccache/archive/refs/tags/v4.10.2.tar.gz
 https://github.com/ccache/ccache/archive/refs/tags/v4.10.tar.gz
 https://github.com/ccache/ccache/archive/refs/tags/v4.11.1.tar.gz
+https://github.com/ccache/ccache/archive/refs/tags/v4.11.2.tar.gz
 https://github.com/ccache/ccache/archive/refs/tags/v4.11.tar.gz
 https://github.com/ccache/ccache/releases/download/v4.8.3/ccache-4.8.3.tar.xz
 https://github.com/ccache/ccache/releases/download/v4.9.1/ccache-4.9.1.tar.xz
@@ -3305,6 +3307,7 @@ https://github.com/swaywm/swaybg/archive/refs/tags/v1.2.1.tar.gz
 https://github.com/swaywm/swayidle/archive/refs/tags/1.8.0.tar.gz
 https://github.com/swaywm/swaylock/archive/refs/tags/v1.7.2.tar.gz
 https://github.com/swaywm/swaylock/archive/refs/tags/v1.8.0.tar.gz
+https://github.com/swaywm/swaylock/archive/refs/tags/v1.8.2.tar.gz
 https://github.com/swaywm/wlroots/archive/refs/tags/0.12.0.tar.gz
 https://github.com/sxyazi/yazi/archive/refs/tags/v0.2.5.tar.gz
 https://github.com/sxyazi/yazi/archive/refs/tags/v0.3.1.tar.gz
@@ -3590,6 +3593,7 @@ https://github.com/weechat/weechat/archive/refs/tags/v4.4.0.tar.gz
 https://github.com/weechat/weechat/archive/refs/tags/v4.4.1.tar.gz
 https://github.com/weechat/weechat/archive/refs/tags/v4.4.2.tar.gz
 https://github.com/weechat/weechat/archive/refs/tags/v4.4.3.tar.gz
+https://github.com/weechat/weechat/archive/refs/tags/v4.6.0.tar.gz
 https://github.com/westes/flex/archive/refs/tags/flex-2-5-10.tar.gz
 https://github.com/westes/flex/files/981163/flex-2.6.4.tar.gz
 https://github.com/wez/wezterm/archive/refs/tags/20230712-072601-f4abf8fd.tar.gz
