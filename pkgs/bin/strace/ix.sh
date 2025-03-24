@@ -7,6 +7,7 @@ sha:c47da93be45b6055f4dc741d7f20efaf50ca10160a5b100c109b294fd9c0bdfe
 
 {% block bld_libs %}
 lib/c
+lib/uring
 lib/iberty
 lib/elfutils
 lib/linux/headers/next
