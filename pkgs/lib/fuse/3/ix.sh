@@ -1,8 +1,8 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://github.com/libfuse/libfuse/archive/refs/tags/fuse-3.16.2.tar.gz
-sha:1bc306be1a1f4f6c8965fbdd79c9ccca021fdc4b277d501483a711cbd7dbcd6c
+https://github.com/libfuse/libfuse/archive/refs/tags/fuse-3.17.1.tar.gz
+sha:b81027fc8f444fb574de7f13edf0cf9810643d2935670c4fe19f140354241208
 {% endblock %}
 
 {% block lib_deps %}
