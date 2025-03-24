@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/akheron/jansson/archive/refs/tags/v2.14.tar.gz
-md5:bc78f39c7cd7fab1dd5fc4a2c3be1661
+https://github.com/akheron/jansson/archive/refs/tags/v2.14.1.tar.gz
+sha:979210eaffdffbcf54cfc34d047fccde13f21b529a381df26db871d886f729a4
 {% endblock %}
 
 {% block lib_deps %}
