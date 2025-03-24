@@ -1,5 +1,10 @@
 {% extends '//bin/kernel/t/3/ix.sh' %}
 
+{% block fetch %}
+{{self.kernel_url().strip()}}
+{{self.kernel_sha().strip()}}
+{% endblock %}
+
 {% block bld_libs %}
 lib/firmware/full
 {% endblock %}

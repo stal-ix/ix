@@ -435,7 +435,6 @@ bin/mingetty
 bin/git
 bin/git/2
 bin/git/go
-bin/kernel/6/6
 bin/swayimg
 bin/mc/slang
 bin/mc/curses/n

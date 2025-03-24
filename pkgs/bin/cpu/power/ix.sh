@@ -2,6 +2,11 @@
 
 {% include '//bin/kernel/6/13/ver.sh' %}
 
+{% block fetch %}
+{{self.kernel_url().strip()}}
+{{self.kernel_sha().strip()}}
+{% endblock %}
+
 {% block lib_deps %}
 lib/c
 lib/pci/utils
