@@ -1,8 +1,8 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://download.gnome.org/sources/gtkmm/3.24/gtkmm-3.24.8.tar.xz
-sha:d2940c64922e5b958554b23d4c41d1839ea9e43e0d2e5b3819cfb46824a098c4
+https://download.gnome.org/sources/gtkmm/3.24/gtkmm-3.24.10.tar.xz
+sha:7ab7e2266808716e26c39924ace1fb46da86c17ef39d989624c42314b32b5a76
 {% endblock %}
 
 {% block lib_deps %}
