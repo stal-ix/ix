@@ -1,8 +1,8 @@
 {% extends '//bin/hypr/t/ix.sh' %}
 
 {% block fetch %}
-https://github.com/hyprwm/hyprpicker/archive/refs/tags/v0.4.2.tar.gz
-sha:60c1472357be2653f9413016b277276456cfe670b79039aaa10860df3023d9c6
+https://github.com/hyprwm/hyprpicker/archive/refs/tags/v0.4.3.tar.gz
+sha:bd6a4a0bb264905570a08cef2c4a37170df89bc64fdd0a359440b55f97e84a5b
 {% endblock %}
 
 {% block bld_libs %}

@@ -1,8 +1,8 @@
 {% extends '//die/c/make.sh' %}
 
 {% block fetch %}
-https://github.com/iproute2/iproute2/archive/refs/tags/v6.13.0.tar.gz
-sha:cd9940cb2499ff98cc21669889faf0271a57daf985293e8668cf9be9dd45eebc
+https://github.com/iproute2/iproute2/archive/refs/tags/v6.14.0.tar.gz
+sha:96aa279cd044098daf715f691f4a3891f44221e9d3d844084dadfee01e42142f
 {% endblock %}
 
 {% block bld_libs %}

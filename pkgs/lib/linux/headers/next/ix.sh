@@ -1,8 +1,8 @@
 {% extends '//lib/linux/headers/t/ix.sh' %}
 
 {% block fetch %}
-https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.12.tar.xz
-sha:b1a2562be56e42afb3f8489d4c2a7ac472ac23098f1ef1c1e40da601f54625eb
+https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.14.tar.xz
+sha:a294b683e7b161bb0517bb32ec7ed1d2ea7603dfbabad135170ed12d00c47670
 {% endblock %}
 
 {% block host_libs %}

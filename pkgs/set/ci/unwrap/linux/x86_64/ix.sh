@@ -48,6 +48,7 @@
 #}
 
 {% block run_deps %}
+bin/kernel/6/14
 bin/ip/tables
 bin/web/hook
 bin/go/crypt/fs
@@ -434,7 +435,6 @@ bin/mingetty
 bin/git
 bin/git/2
 bin/git/go
-bin/kernel/6/6
 bin/swayimg
 bin/mc/slang
 bin/mc/curses/n

@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/hyprwm/aquamarine/archive/refs/tags/v0.7.2.tar.gz
-sha:822ce38345bc4c1b95966c79ee72ff18d753aa923c83e9aa64e9d82eebf55a38
+https://github.com/hyprwm/aquamarine/archive/refs/tags/v0.8.0.tar.gz
+sha:1c3570de268fff008c6dd76472d783710b7f62c545f76091580c9edd13ad23d5
 {% endblock %}
 
 {% block lib_deps %}
