@@ -10,7 +10,6 @@ lib/c
 lib/uring
 lib/iberty
 lib/elfutils
-lib/linux/headers/next
 {% endblock %}
 
 {% block host_libs %}
