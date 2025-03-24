@@ -218,6 +218,7 @@ https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.13.4.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.13.5.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.13.6.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.13.tar.xz
+https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.14.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.2.14.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.3.13.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.4.12.tar.xz
@@ -406,6 +407,7 @@ https://download.gnome.org/sources/gtk+/3.24/gtk%2B-3.24.39.tar.xz
 https://download.gnome.org/sources/gtk+/3.24/gtk%2B-3.24.40.tar.xz
 https://download.gnome.org/sources/gtk+/3.24/gtk%2B-3.24.42.tar.xz
 https://download.gnome.org/sources/gtk+/3.24/gtk%2B-3.24.43.tar.xz
+https://download.gnome.org/sources/gtkmm/3.24/gtkmm-3.24.10.tar.xz
 https://download.gnome.org/sources/gtkmm/3.24/gtkmm-3.24.8.tar.xz
 https://download.gnome.org/sources/gtkmm/4.16/gtkmm-4.16.0.tar.xz
 https://download.gnome.org/sources/gtkmm/4.18/gtkmm-4.18.0.tar.xz
@@ -2184,6 +2186,7 @@ https://github.com/iproute2/iproute2/archive/refs/tags/v6.10.0.tar.gz
 https://github.com/iproute2/iproute2/archive/refs/tags/v6.11.0.tar.gz
 https://github.com/iproute2/iproute2/archive/refs/tags/v6.12.0.tar.gz
 https://github.com/iproute2/iproute2/archive/refs/tags/v6.13.0.tar.gz
+https://github.com/iproute2/iproute2/archive/refs/tags/v6.14.0.tar.gz
 https://github.com/iproute2/iproute2/archive/refs/tags/v6.9.0.tar.gz
 https://github.com/iptraf-ng/iptraf-ng/archive/refs/tags/v1.2.2.tar.gz
 https://github.com/iputils/iputils/archive/refs/tags/20221126.tar.gz
@@ -2412,6 +2415,7 @@ https://github.com/libffi/libffi/commit/8308bed5b2423878aa20d7884a99cf2e30b8daf7
 https://github.com/libfuse/libfuse/archive/refs/tags/fuse-2.9.9.tar.gz
 https://github.com/libfuse/libfuse/archive/refs/tags/fuse-3.16.1.tar.gz
 https://github.com/libfuse/libfuse/archive/refs/tags/fuse-3.16.2.tar.gz
+https://github.com/libfuse/libfuse/archive/refs/tags/fuse-3.17.1.tar.gz
 https://github.com/libgd/libgd/archive/refs/tags/gd-2.3.3.tar.gz
 https://github.com/libgit2/libgit2/archive/c6111ec06cc0b0126cd67bdab78f8091e4cfaa10.tar.gz
 https://github.com/libgit2/libgit2/archive/refs/tags/v1.0.1.tar.gz
