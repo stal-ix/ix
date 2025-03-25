@@ -1,8 +1,8 @@
 {% extends '//die/c/make.sh' %}
 
 {% block fetch %}
-https://www.rarlab.com/rar/unrarsrc-7.1.5.tar.gz
-sha:d1acac7ed5b45db587294b357fdd6e74982ce21f5edfcb113c4ca263bc0c666d
+https://www.rarlab.com/rar/unrarsrc-7.1.6.tar.gz
+sha:ca5e1da37dd6fa1b78bb5ed675486413f79e4a917709744aa04b6f93dfd914f0
 {% endblock %}
 
 {% block bld_libs %}
