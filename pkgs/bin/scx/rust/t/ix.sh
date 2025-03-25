@@ -20,7 +20,7 @@ lib/llvm/19
 {% endblock %}
 
 {% block cargoc_ver %}
-83
+bld/cargo/83
 {% endblock %}
 
 {% block bld_tool %}
