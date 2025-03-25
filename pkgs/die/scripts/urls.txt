@@ -2324,6 +2324,7 @@ https://github.com/kondrak/vkQuake2/archive/refs/tags/1.5.8.tar.gz
 https://github.com/koverstreet/bcachefs-tools/archive/refs/tags/v1.11.0.tar.gz
 https://github.com/koverstreet/bcachefs-tools/archive/refs/tags/v1.13.0.tar.gz
 https://github.com/koverstreet/bcachefs-tools/archive/refs/tags/v1.20.0.tar.gz
+https://github.com/koverstreet/bcachefs-tools/archive/refs/tags/v1.25.0.tar.gz
 https://github.com/kovidgoyal/kitty/archive/refs/tags/v0.25.0.tar.gz
 https://github.com/kovidgoyal/kitty/archive/refs/tags/v0.31.0.tar.gz
 https://github.com/kraxarn/spotify-qt/archive/refs/tags/v3.9.tar.gz
@@ -2753,6 +2754,7 @@ https://github.com/neovim/neovim/archive/refs/tags/v0.9.4.tar.gz
 https://github.com/neovim/neovim/archive/refs/tags/v0.9.5.tar.gz
 https://github.com/neovim/tree-sitter-vimdoc/archive/refs/tags/v3.0.0.tar.gz
 https://github.com/neovim/unibilium/archive/refs/tags/v2.1.2.tar.gz
+https://github.com/netblue30/firejail/archive/refs/tags/0.9.74.tar.gz
 https://github.com/netblue30/firejail/archive/refs/tags/landlock-split.tar.gz
 https://github.com/netwide-assembler/nasm/archive/refs/tags/nasm-2.16.01.tar.gz
 https://github.com/nfs-ganesha/ntirpc/archive/refs/tags/v5.0.tar.gz
@@ -3488,6 +3490,7 @@ https://github.com/tvrzna/emptty/archive/refs/tags/v0.10.0.tar.gz
 https://github.com/tvrzna/emptty/archive/refs/tags/v0.11.0.tar.gz
 https://github.com/tvrzna/emptty/archive/refs/tags/v0.12.0.tar.gz
 https://github.com/tvrzna/emptty/archive/refs/tags/v0.13.0.tar.gz
+https://github.com/twogood/unshield/archive/refs/tags/1.6.0.tar.gz
 https://github.com/tytso/e2fsprogs/archive/refs/tags/v1.46.6.tar.gz
 https://github.com/tytso/e2fsprogs/archive/refs/tags/v1.47.2.tar.gz
 https://github.com/u-root/u-root/archive/refs/tags/v0.13.0.tar.gz

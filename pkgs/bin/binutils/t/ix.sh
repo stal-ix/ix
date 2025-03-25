@@ -17,7 +17,9 @@ bld/perl
 
 {% block configure %}
 {{super()}}
-sed -e 's|../.*/lib.*a||g' -i Makefile
+sed -e 's|../.*/lib.*\.a||g' \
+    -e 's|../.*/lib.*\.la||g' \
+    -i Makefile
 {% endblock %}
 
 {% block make_flags %}
