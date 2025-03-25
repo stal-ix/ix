@@ -6,7 +6,7 @@ cargo_v4_{{parent_id}}.pzd
 
 {% block bld_tool %}
 bld/git
-bld/rust(rustc_ver={{cargoc_ver}})
+{{cargoc_ver}}
 {{super()}}
 {% endblock %}
 

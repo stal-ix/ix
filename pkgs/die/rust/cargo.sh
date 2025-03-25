@@ -35,7 +35,7 @@ v3
 {% endblock %}
 
 {% block cargoc_ver %}
-75
+bld/cargo/75
 {% endblock %}
 
 {% block bld_data %}
