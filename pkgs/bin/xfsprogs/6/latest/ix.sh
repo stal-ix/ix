@@ -8,6 +8,7 @@ sha:0459933f93d94c82bc2789e7bd63742273d9d74207cdae67dc3032038da08337
 {% endblock %}
 
 {% block bld_libs %}
+lib/linux/headers/prev
 {{super()}}
 lib/attr
 {% endblock %}
