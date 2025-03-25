@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://github.com/netblue30/firejail/archive/refs/tags/landlock-split.tar.gz
-sha:a149c1fc7be77325a301afb986da386855eca1554d71aaf022086f31d04d0a82
+https://github.com/netblue30/firejail/archive/refs/tags/0.9.74.tar.gz
+sha:fa54d64d1a6c9d45d72c37d1b8135c50f6e9468e75db7b2dd5ee66983f5a23dd
 {% endblock %}
 
 {% block bld_libs %}
