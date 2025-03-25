@@ -621,6 +621,7 @@ https://ftp.gnu.org/gnu/ed/ed-1.19.tar.lz
 https://ftp.gnu.org/gnu/ed/ed-1.20.1.tar.lz
 https://ftp.gnu.org/gnu/ed/ed-1.20.2.tar.lz
 https://ftp.gnu.org/gnu/ed/ed-1.20.tar.lz
+https://ftp.gnu.org/gnu/ed/ed-1.21.1.tar.lz
 https://ftp.gnu.org/gnu/ed/ed-1.21.tar.lz
 https://ftp.gnu.org/gnu/findutils/findutils-4.10.0.tar.xz
 https://ftp.gnu.org/gnu/findutils/findutils-4.8.0.tar.xz
@@ -2323,6 +2324,7 @@ https://github.com/kondrak/vkQuake2/archive/refs/tags/1.5.8.tar.gz
 https://github.com/koverstreet/bcachefs-tools/archive/refs/tags/v1.11.0.tar.gz
 https://github.com/koverstreet/bcachefs-tools/archive/refs/tags/v1.13.0.tar.gz
 https://github.com/koverstreet/bcachefs-tools/archive/refs/tags/v1.20.0.tar.gz
+https://github.com/koverstreet/bcachefs-tools/archive/refs/tags/v1.25.0.tar.gz
 https://github.com/kovidgoyal/kitty/archive/refs/tags/v0.25.0.tar.gz
 https://github.com/kovidgoyal/kitty/archive/refs/tags/v0.31.0.tar.gz
 https://github.com/kraxarn/spotify-qt/archive/refs/tags/v3.9.tar.gz
@@ -2752,6 +2754,7 @@ https://github.com/neovim/neovim/archive/refs/tags/v0.9.4.tar.gz
 https://github.com/neovim/neovim/archive/refs/tags/v0.9.5.tar.gz
 https://github.com/neovim/tree-sitter-vimdoc/archive/refs/tags/v3.0.0.tar.gz
 https://github.com/neovim/unibilium/archive/refs/tags/v2.1.2.tar.gz
+https://github.com/netblue30/firejail/archive/refs/tags/0.9.74.tar.gz
 https://github.com/netblue30/firejail/archive/refs/tags/landlock-split.tar.gz
 https://github.com/netwide-assembler/nasm/archive/refs/tags/nasm-2.16.01.tar.gz
 https://github.com/nfs-ganesha/ntirpc/archive/refs/tags/v5.0.tar.gz
@@ -2980,6 +2983,7 @@ https://github.com/python/cpython/archive/refs/tags/v3.12.5.tar.gz
 https://github.com/python/cpython/archive/refs/tags/v3.12.6.tar.gz
 https://github.com/python/cpython/archive/refs/tags/v3.12.7.tar.gz
 https://github.com/pythops/impala/archive/refs/tags/v0.2.3.tar.gz
+https://github.com/pytorch/cpuinfo/archive/5e3d2445e6a84d9599bee2bf78edbb4d80865e1d.zip
 https://github.com/pzmarzly/portforwarder-rs/archive/refs/tags/0.1.0.tar.gz
 https://github.com/qbittorrent/qBittorrent/archive/refs/tags/release-4.5.4.tar.gz
 https://github.com/qbittorrent/qBittorrent/archive/refs/tags/release-4.6.0.tar.gz
@@ -3162,6 +3166,8 @@ https://github.com/rui314/mold/archive/refs/tags/v2.37.0.tar.gz
 https://github.com/rui314/mold/archive/refs/tags/v2.37.1.tar.gz
 https://github.com/rui314/mold/archive/refs/tags/v2.4.0.tar.gz
 https://github.com/rui314/mold/archive/refs/tags/v2.4.1.tar.gz
+https://github.com/rust-lang/cargo/archive/refs/tags/0.80.0.tar.gz
+https://github.com/rust-lang/cargo/archive/refs/tags/0.83.0.tar.gz
 https://github.com/rust-lang/rust-bindgen/archive/refs/tags/v0.71.1.tar.gz
 https://github.com/rvaiya/keyd/archive/refs/tags/v2.4.3.tar.gz
 https://github.com/rvaiya/keyd/archive/refs/tags/v2.5.0.tar.gz
@@ -3484,6 +3490,7 @@ https://github.com/tvrzna/emptty/archive/refs/tags/v0.10.0.tar.gz
 https://github.com/tvrzna/emptty/archive/refs/tags/v0.11.0.tar.gz
 https://github.com/tvrzna/emptty/archive/refs/tags/v0.12.0.tar.gz
 https://github.com/tvrzna/emptty/archive/refs/tags/v0.13.0.tar.gz
+https://github.com/twogood/unshield/archive/refs/tags/1.6.0.tar.gz
 https://github.com/tytso/e2fsprogs/archive/refs/tags/v1.46.6.tar.gz
 https://github.com/tytso/e2fsprogs/archive/refs/tags/v1.47.2.tar.gz
 https://github.com/u-root/u-root/archive/refs/tags/v0.13.0.tar.gz
@@ -3714,6 +3721,7 @@ https://gitlab.com/AOMediaCodec/SVT-AV1/-/archive/v1.8.0/SVT-AV1-v1.8.0.tar.bz2
 https://gitlab.com/AOMediaCodec/SVT-AV1/-/archive/v2.1.0/SVT-AV1-v2.1.0.tar.bz2
 https://gitlab.com/AOMediaCodec/SVT-AV1/-/archive/v2.2.1/SVT-AV1-v2.2.1.tar.bz2
 https://gitlab.com/AOMediaCodec/SVT-AV1/-/archive/v2.3.0/SVT-AV1-v2.3.0.tar.bz2
+https://gitlab.com/AOMediaCodec/SVT-AV1/-/archive/v3.0.2/SVT-AV1-v3.0.2.tar.bz2
 https://gitlab.com/cardboardwm/cardboard/-/archive/b54758d85164fb19468f5ca52588ebea576cd027/cardboard-b54758d85164fb19468f5ca52588ebea576cd027.tar.bz2
 https://gitlab.com/chrony/chrony/-/archive/4.6/chrony-4.6.tar.bz2
 https://gitlab.com/craigbarnes/dte/-/archive/v1.10/dte-v1.10.tar.bz2
@@ -3890,6 +3898,7 @@ https://gitlab.gnome.org/GNOME/gnome-text-editor/-/archive/47.1/gnome-text-edito
 https://gitlab.gnome.org/GNOME/gnome-text-editor/-/archive/47.2/gnome-text-editor-47.2.tar.bz2
 https://gitlab.gnome.org/GNOME/gnome-text-editor/-/archive/47.3/gnome-text-editor-47.3.tar.bz2
 https://gitlab.gnome.org/GNOME/gnome-text-editor/-/archive/48.1/gnome-text-editor-48.1.tar.bz2
+https://gitlab.gnome.org/GNOME/gnome-text-editor/-/archive/48.2/gnome-text-editor-48.2.tar.bz2
 https://gitlab.gnome.org/GNOME/gobject-introspection/-/archive/1.72.0/gobject-introspection-1.72.0.tar.bz2
 https://gitlab.gnome.org/GNOME/gobject-introspection/-/archive/1.78.1/gobject-introspection-1.78.1.tar.bz2
 https://gitlab.gnome.org/GNOME/gobject-introspection/-/archive/1.80.1/gobject-introspection-1.80.1.tar.bz2
@@ -4063,6 +4072,7 @@ https://gitlab.torproject.org/tpo/core/tor/-/archive/tor-0.4.8.11/tor-tor-0.4.8.
 https://gitlab.torproject.org/tpo/core/tor/-/archive/tor-0.4.8.12/tor-tor-0.4.8.12.tar.bz2
 https://gitlab.torproject.org/tpo/core/tor/-/archive/tor-0.4.8.13/tor-tor-0.4.8.13.tar.bz2
 https://gitlab.torproject.org/tpo/core/tor/-/archive/tor-0.4.8.15/tor-tor-0.4.8.15.tar.bz2
+https://gitlab.torproject.org/tpo/core/tor/-/archive/tor-0.4.8.16/tor-tor-0.4.8.16.tar.bz2
 https://gitlab.xiph.org/xiph/ogg/-/archive/v1.3.5/ogg-v1.3.5.tar.bz2
 https://gitlab.xiph.org/xiph/rnnoise/-/archive/7f449bf8bd3b933891d12c30112268c4090e4d59/rnnoise-7f449bf8bd3b933891d12c30112268c4090e4d59.tar.bz2
 https://gitlab.xiph.org/xiph/speex/-/archive/Speex-1.2.1/speex-Speex-1.2.1.tar.bz2
@@ -4384,6 +4394,7 @@ https://storage.googleapis.com/downloads.webmproject.org/releases/webp/libwebp-1
 https://strace.io/files/6.10/strace-6.10.tar.xz
 https://strace.io/files/6.11/strace-6.11.tar.xz
 https://strace.io/files/6.12/strace-6.12.tar.xz
+https://strace.io/files/6.14/strace-6.14.tar.xz
 https://strace.io/files/6.5/strace-6.5.tar.xz
 https://strace.io/files/6.6/strace-6.6.tar.xz
 https://strace.io/files/6.7/strace-6.7.tar.xz
@@ -4484,6 +4495,7 @@ https://www.freedesktop.org/software/fontconfig/release/fontconfig-2.16.0.tar.xz
 https://www.freedesktop.org/software/libevdev/libevdev-1.13.1.tar.xz
 https://www.freedesktop.org/software/libevdev/libevdev-1.13.2.tar.xz
 https://www.freedesktop.org/software/libevdev/libevdev-1.13.3.tar.xz
+https://www.freedesktop.org/software/libevdev/libevdev-1.13.4.tar.xz
 https://www.freedesktop.org/software/uchardet/releases/uchardet-0.0.8.tar.xz
 https://www.gnupg.org/ftp/gcrypt/gnupg/gnupg-2.2.40.tar.bz2
 https://www.gnupg.org/ftp/gcrypt/gnupg/gnupg-2.4.3.tar.bz2
@@ -4630,6 +4642,7 @@ https://www.rarlab.com/rar/unrarsrc-7.1.1.tar.gz
 https://www.rarlab.com/rar/unrarsrc-7.1.3.tar.gz
 https://www.rarlab.com/rar/unrarsrc-7.1.4.tar.gz
 https://www.rarlab.com/rar/unrarsrc-7.1.5.tar.gz
+https://www.rarlab.com/rar/unrarsrc-7.1.6.tar.gz
 https://www.sqlite.org/2024/sqlite-autoconf-3450000.tar.gz
 https://www.sqlite.org/2024/sqlite-autoconf-3450100.tar.gz
 https://www.sqlite.org/2024/sqlite-autoconf-3450200.tar.gz

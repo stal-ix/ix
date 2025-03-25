@@ -5,11 +5,11 @@ https://github.com/ARMmbed/mbedtls
 {% endblock %}
 
 {% block git_branch %}
-v3.6.2
+v3.6.3
 {% endblock %}
 
 {% block git_sha %}
-57aeacc28b721e65dfa5438f2fa9a350eabb179308e3ccb63668950f8b751c72
+eb7872419e93852c04034872786d6b38839c784c76c2444f7c00f3a1c4dfc45b
 {% endblock %}
 
 {% block lib_deps %}

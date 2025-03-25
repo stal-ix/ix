@@ -1,12 +1,13 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://gitlab.com/AOMediaCodec/SVT-AV1/-/archive/v2.3.0/SVT-AV1-v2.3.0.tar.bz2
-sha:f65358499f572a47d6b076dda73681a8162b02c0b619a551bc2d62ead8ee719a
+https://gitlab.com/AOMediaCodec/SVT-AV1/-/archive/v3.0.2/SVT-AV1-v3.0.2.tar.bz2
+sha:7548a380cd58a46998ab4f1a02901ef72c37a7c6317c930cde5df2e6349e437b
 {% endblock %}
 
 {% block lib_deps %}
 lib/c
+lib/cpu/info
 {% endblock %}
 
 {% block bld_tool %}
@@ -19,6 +20,7 @@ bld/cctools
 {% endblock %}
 
 {% block cmake_flags %}
+USE_CPUINFO=SYSTEM
 {% if x86_64 %}
 ENABLE_NASM=ON
 {% endif %}

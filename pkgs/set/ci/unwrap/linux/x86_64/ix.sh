@@ -48,6 +48,7 @@
 #}
 
 {% block run_deps %}
+bin/unshield
 bin/kernel/6/14
 bin/ip/tables
 bin/web/hook
