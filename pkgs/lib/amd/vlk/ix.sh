@@ -10,6 +10,10 @@ bld/pzd/des
 pip/ruamel.yaml
 {% endblock %}
 
+{% block build_flags %}
+wrap_cc
+{% endblock %}
+
 {% block lib_deps %}
 lib/c
 lib/c++
@@ -27,6 +31,7 @@ lib/shim/fake/pkg(pkg_name=xshmfence,pkg_ver=100500)
 {% endblock %}
 
 {% block cmake_flags %}
+XCB_REQUIRED=OFF
 VKI_ENABLE_LTO=OFF
 VKI_BUILD_DRI3=OFF
 PAL_BUILD_DRI3=OFF
@@ -39,9 +44,14 @@ BUILD_WAYLAND_SUPPORT=On
 ACCESSPERMS=0777
 {% endblock %}
 
+{% block cpp_flags %}
+-UVK_USE_PLATFORM_XCB_KHR
+{% endblock %}
+
 {% block patch %}
 sed -e 's|.*PAL_XCB_REQUIRED ON.*||' \
     -i ../pal/src/core/os/amdgpu/include/CMakeLists.txt
+sed -e 's|XCB_REQUIRED ON|XCB_REQUIRED OFF|' -i xgl/cmake/XglOverrides.cmake
 {% endblock %}
 
 {% block bld_data %}
