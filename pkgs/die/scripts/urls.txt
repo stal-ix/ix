@@ -323,6 +323,7 @@ https://codeberg.org/dnkl/yambar/archive/1.10.0.tar.gz
 https://codeberg.org/dnkl/yambar/archive/1.11.0.tar.gz
 https://codeberg.org/dwl/dwl/archive/v0.6.tar.gz
 https://codeberg.org/dwl/dwl/archive/v0.7.tar.gz
+https://codeberg.org/forgejo/forgejo/archive/v10.0.3.tar.gz
 https://codeberg.org/forgejo/forgejo/archive/v9.0.1.tar.gz
 https://codeberg.org/grisha/gumbo-parser/archive/0.12.0.tar.gz
 https://codeberg.org/grisha/gumbo-parser/archive/0.12.1.tar.gz
@@ -946,6 +947,7 @@ https://github.com/FreeRDP/FreeRDP/archive/refs/tags/3.10.3.tar.gz
 https://github.com/FreeRDP/FreeRDP/archive/refs/tags/3.12.0.tar.gz
 https://github.com/FreeRDP/FreeRDP/archive/refs/tags/3.13.0.tar.gz
 https://github.com/FreeRDP/FreeRDP/archive/refs/tags/3.14.0.tar.gz
+https://github.com/FreeRDP/FreeRDP/archive/refs/tags/3.14.1.tar.gz
 https://github.com/FreeRDP/FreeRDP/archive/refs/tags/3.2.0.tar.gz
 https://github.com/FreeRDP/FreeRDP/archive/refs/tags/3.3.0.tar.gz
 https://github.com/FreeRDP/FreeRDP/archive/refs/tags/3.4.0.tar.gz
@@ -1326,6 +1328,7 @@ https://github.com/WebAssembly/binaryen/archive/refs/tags/version_119.tar.gz
 https://github.com/WebAssembly/binaryen/archive/refs/tags/version_120.tar.gz
 https://github.com/WebAssembly/binaryen/archive/refs/tags/version_121.tar.gz
 https://github.com/WebAssembly/binaryen/archive/refs/tags/version_122.tar.gz
+https://github.com/WebAssembly/binaryen/archive/refs/tags/version_123.tar.gz
 https://github.com/WebPlatformForEmbedded/libwpe/archive/refs/tags/1.12.3.tar.gz
 https://github.com/WerWolv/ImHex/releases/download/v1.19.1/Full.Sources.tar.gz
 https://github.com/WillPower3309/swayfx/archive/refs/tags/0.4.tar.gz
@@ -2716,6 +2719,7 @@ https://github.com/mpv-player/mpv/archive/refs/tags/v0.36.0.tar.gz
 https://github.com/mpv-player/mpv/archive/refs/tags/v0.37.0.tar.gz
 https://github.com/mpv-player/mpv/archive/refs/tags/v0.38.0.tar.gz
 https://github.com/mpv-player/mpv/archive/refs/tags/v0.39.0.tar.gz
+https://github.com/mpv-player/mpv/archive/refs/tags/v0.40.0.tar.gz
 https://github.com/msgpack/msgpack-c/archive/refs/tags/c-6.0.0.tar.gz
 https://github.com/msgpack/msgpack-c/archive/refs/tags/c-6.0.1.tar.gz
 https://github.com/msgpack/msgpack-c/archive/refs/tags/c-6.0.2.tar.gz
@@ -3485,6 +3489,7 @@ https://github.com/tukaani-project/xz/releases/download/v5.6.1/xz-5.6.1.tar.gz
 https://github.com/tukaani-project/xz/releases/download/v5.6.2/xz-5.6.2.tar.gz
 https://github.com/tukaani-project/xz/releases/download/v5.6.3/xz-5.6.3.tar.gz
 https://github.com/tukaani-project/xz/releases/download/v5.6.4/xz-5.6.4.tar.gz
+https://github.com/tukaani-project/xz/releases/download/v5.8.0/xz-5.8.0.tar.gz
 https://github.com/tulir/gomuks/archive/refs/tags/v0.3.0.tar.gz
 https://github.com/tvrzna/emptty/archive/refs/tags/v0.10.0.tar.gz
 https://github.com/tvrzna/emptty/archive/refs/tags/v0.11.0.tar.gz
