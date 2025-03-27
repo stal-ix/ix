@@ -8,6 +8,7 @@ bin/glslang
 bld/wayland
 bld/pzd/des
 pip/ruamel.yaml
+bld/fake/binutils
 {% endblock %}
 
 {% block build_flags %}
@@ -51,7 +52,7 @@ ACCESSPERMS=0777
 {% block patch %}
 sed -e 's|.*PAL_XCB_REQUIRED ON.*||' \
     -i ../pal/src/core/os/amdgpu/include/CMakeLists.txt
-sed -e 's|XCB_REQUIRED ON|XCB_REQUIRED OFF|' -i xgl/cmake/XglOverrides.cmake
+sed -e 's|XCB_REQUIRED ON|XCB_REQUIRED OFF|' -i ../xgl/cmake/XglOverrides.cmake
 {% endblock %}
 
 {% block bld_data %}
