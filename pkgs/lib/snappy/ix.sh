@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/google/snappy/archive/refs/tags/1.1.10.tar.gz
-sha:49d831bffcc5f3d01482340fe5af59852ca2fe76c3e05df0e67203ebbe0f1d90
+https://github.com/google/snappy/archive/refs/tags/1.2.2.tar.gz
+sha:90f74bc1fbf78a6c56b3c4a082a05103b3a56bb17bca1a27e052ea11723292dc
 {% endblock %}
 
 {% block lib_deps %}
