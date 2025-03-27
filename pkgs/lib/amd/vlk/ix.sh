@@ -98,3 +98,12 @@ des ${GIT7} .
 popd
 cd xgl
 {% endblock %}
+
+{% block install %}
+mkdir ${out}/lib
+cp ${tmp}/lib/amdvlk64.a ${out}/lib/libamdvlk64.a
+{% endblock %}
+
+{% block env %}
+export AMDVLK_LIB=${out}/lib/libamdvlk64.a
+{% endblock %}
