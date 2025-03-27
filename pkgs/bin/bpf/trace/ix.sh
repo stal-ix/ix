@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/bpftrace/bpftrace/archive/refs/tags/v0.21.2.tar.gz
-sha:7c2cb089da6e6074574edc164cf9242e06843e66c493304a9d2739258e6a1459
+https://github.com/bpftrace/bpftrace/archive/refs/tags/v0.23.0.tar.gz
+sha:bc9cbccdfdb7450edffad00db248f89b7036ac9944b566638df0b5685f2fda67
 {% endblock %}
 
 {% block bld_libs %}

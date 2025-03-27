@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://gitlab.gnome.org/GNOME/libxml2/-/archive/v2.13.5/libxml2-v2.13.5.tar.bz2
-sha:0d87484ecf395eca1e178976966f20885b050253695d5605646b66982df61325
+https://gitlab.gnome.org/GNOME/libxml2/-/archive/v2.13.7/libxml2-v2.13.7.tar.bz2
+sha:b940402ba9f89cd6ddc0a80b12d748587efef68e335ec7fb17b32303db868563
 {% endblock %}
 
 {% block lib_deps %}

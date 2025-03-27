@@ -1,8 +1,8 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://github.com/mpv-player/mpv/archive/refs/tags/v0.39.0.tar.gz
-sha:2ca92437affb62c2b559b4419ea4785c70d023590500e8a52e95ea3ab4554683
+https://github.com/mpv-player/mpv/archive/refs/tags/v0.40.0.tar.gz
+sha:10a0f4654f62140a6dd4d380dcf0bbdbdcf6e697556863dc499c296182f081a3
 {% endblock %}
 
 {% block lib_deps %}
