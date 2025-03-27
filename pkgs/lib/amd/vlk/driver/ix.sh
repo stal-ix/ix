@@ -1,5 +1,5 @@
 {% extends '//die/hub.sh' %}
 
 {% block lib_deps %}
-lib/swift/shader/driver/dl
+lib/amd/vlk/driver/dl
 {% endblock %}
