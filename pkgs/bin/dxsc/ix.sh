@@ -54,3 +54,13 @@ LLVM_INCLUDE_TESTS=OFF
 {% block build_flags %}
 wrap_cc
 {% endblock %}
+
+{% block patch %}
+sed -e 's|bool DxilLibIsEnabled|bool DxilLibIsEnabledXXX|' \
+    -i tools/clang/tools/dxcompiler/dxillib.cpp
+cat << EOF >> tools/clang/tools/dxcompiler/dxillib.cpp
+bool DxilLibIsEnabled() {
+    return false;
+}
+EOF
+{% endblock %}
