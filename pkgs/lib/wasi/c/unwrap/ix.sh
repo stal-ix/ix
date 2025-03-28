@@ -4,12 +4,16 @@
 https://github.com/WebAssembly/wasi-libc
 {% endblock %}
 
-{% block git_commit %}
-bd950eb128bff337153de217b11270f948d04bb4
+{% block git_branch %}
+wasi-sdk-25
 {% endblock %}
 
 {% block git_sha %}
-56e0525bd9457b9b43fd4d2cbf8666882a3f9b5e9dfff5887a4908e7756ccd67
+4fad94464caa6fe4c78e599013eda224112999d6818ace32026b6da3ab636795
+{% endblock %}
+
+{% block bld_tool %}
+bld/bash
 {% endblock %}
 
 {% block make_flags %}
@@ -30,7 +34,7 @@ sed -e 's|finish: check-symbols||' -i Makefile
 {% endblock %}
 
 {% block build %}
-mkdir -p build/wasm32-wasi
+mkdir -p build/wasm32-wasi-threads
 {{super()}}
 mkdir -p sysroot/share
 {% endblock %}
@@ -47,6 +51,6 @@ rm *.o
 {% endblock %}
 
 {% block env %}
-export CPPFLAGS="-isystem ${out}/include -D_WASI_EMULATED_SIGNAL -D_WASI_EMULATED_PROCESS_CLOCKS -D_WASI_EMULATED_MMAN \${CPPFLAGS}"
+export CPPFLAGS="-isystem ${out}/include/wasm32-wasi-threads -D_WASI_EMULATED_SIGNAL -D_WASI_EMULATED_PROCESS_CLOCKS -D_WASI_EMULATED_MMAN -D_WASI_EMULATED_PTHREAD \${CPPFLAGS}"
 export LDFLAGS="-static \${LDFLAGS}"
 {% endblock %}
