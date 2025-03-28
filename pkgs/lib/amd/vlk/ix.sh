@@ -8,6 +8,11 @@ bin/glslang
 bld/wayland
 bld/pzd/des
 pip/ruamel.yaml
+bld/fake/binutils
+{% endblock %}
+
+{% block build_flags %}
+wrap_cc
 {% endblock %}
 
 {% block lib_deps %}
@@ -27,6 +32,7 @@ lib/shim/fake/pkg(pkg_name=xshmfence,pkg_ver=100500)
 {% endblock %}
 
 {% block cmake_flags %}
+XCB_REQUIRED=OFF
 VKI_ENABLE_LTO=OFF
 VKI_BUILD_DRI3=OFF
 PAL_BUILD_DRI3=OFF
@@ -39,9 +45,14 @@ BUILD_WAYLAND_SUPPORT=On
 ACCESSPERMS=0777
 {% endblock %}
 
+{% block cpp_flags %}
+-UVK_USE_PLATFORM_XCB_KHR
+{% endblock %}
+
 {% block patch %}
 sed -e 's|.*PAL_XCB_REQUIRED ON.*||' \
     -i ../pal/src/core/os/amdgpu/include/CMakeLists.txt
+sed -e 's|XCB_REQUIRED ON|XCB_REQUIRED OFF|' -i ../xgl/cmake/XglOverrides.cmake
 {% endblock %}
 
 {% block bld_data %}
@@ -86,4 +97,13 @@ pushd third_party/cwpack
 des ${GIT7} .
 popd
 cd xgl
+{% endblock %}
+
+{% block install %}
+mkdir ${out}/lib
+cp ${tmp}/lib/amdvlk64.a ${out}/lib/libamdvlk64.a
+{% endblock %}
+
+{% block env %}
+export AMDVLK_LIB=${out}/lib/libamdvlk64.a
 {% endblock %}

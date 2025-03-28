@@ -1,7 +1,8 @@
 {% extends '//die/hub.sh' %}
 
 {% block lib_deps %}
-{% if mesa_driver %}
-lib/mesa/drivers
-{% endif %}
+lib/drm/dl
+lib/drm/dl/amd
+lib/wayland/dl
+lib/amd/vlk/driver/dl
 {% endblock %}
