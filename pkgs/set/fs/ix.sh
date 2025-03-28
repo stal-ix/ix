@@ -12,6 +12,6 @@ bin/f2fs/tools
 bin/util/wipefs
 bin/exfat/progs
 bin/btrfs/progs
-bin/bcache/tools
-bin/bcache/fs/tools
+#bin/bcache/tools
+#bin/bcache/fs/tools
 {% endblock %}
