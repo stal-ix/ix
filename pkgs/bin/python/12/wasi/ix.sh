@@ -6,10 +6,12 @@
 {% block bld_libs %}
 lib/c
 lib/z
+lib/mpdecimal
 {% endblock %}
 
 {% block configure_flags %}
 {{super()}}
+--disable-ipv6
 --host=wasm32-wasi
 --target=wasm32-wasi
 {% endblock %}
