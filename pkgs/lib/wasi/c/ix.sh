@@ -6,4 +6,5 @@ lib/wasi/c/threads
 {% else %}
 lib/wasi/c/simple
 {% endif %}
+lib/wasi/c/shim
 {% endblock %}

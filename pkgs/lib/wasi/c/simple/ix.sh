@@ -15,7 +15,7 @@ export ac_cv_func_pthread_condattr_setclock=no
 export ac_cv_func_pthread_detach=no
 export ac_cv_have_pthread_t=no
 export ac_cv_header_pthread_h=no
-export CPPFLAGS="-isystem${out}/include/wasm32-wasi \${CPPFLAGS}"
+export CPPFLAGS="-isystem${out}/include/wasm32-wasi -DHAVE_PTHREAD_STUBS=1 \${CPPFLAGS}"
 export CMFLAGS="-DLIBCXX_ENABLE_THREADS=OFF \${CMFLAGS}"
 export CMFLAGS="-DLIBCXXABI_ENABLE_THREADS=OFF \${CMFLAGS}"
 {{super()}}
