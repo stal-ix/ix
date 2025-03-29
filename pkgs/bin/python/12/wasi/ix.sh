@@ -19,11 +19,6 @@ lib/z
 
 {% block configure %}
 export CONFIG_SITE=${PWD}/Tools/wasm/config.site-wasm32-wasi
-export ac_cv_func_memfd_create=no
-export ac_cv_func_pthread_condattr_setclock=no
-export ac_cv_func_pthread_detach=no
-export ac_cv_have_pthread_t=no
-export ac_cv_header_pthread_h=no
 {{super()}}
 {% endblock %}
 

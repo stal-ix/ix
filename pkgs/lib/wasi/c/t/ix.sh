@@ -22,7 +22,6 @@ AR=llvm-ar
 NM=llvm-nm
 EXTRA_CFLAGS="${EF}"
 INSTALL_DIR=${out}
-THREAD_MODEL=posix
 {% endblock %}
 
 {% block setup_target_flags %}
@@ -34,7 +33,6 @@ sed -e 's|finish: check-symbols||' -i Makefile
 {% endblock %}
 
 {% block build %}
-mkdir -p build/wasm32-wasi-threads
 {{super()}}
 mkdir -p sysroot/share
 {% endblock %}
@@ -51,6 +49,7 @@ rm *.o
 {% endblock %}
 
 {% block env %}
-export CPPFLAGS="-isystem ${out}/include/wasm32-wasi-threads -D_WASI_EMULATED_SIGNAL -D_WASI_EMULATED_PROCESS_CLOCKS -D_WASI_EMULATED_MMAN -D_WASI_EMULATED_PTHREAD \${CPPFLAGS}"
+export ac_cv_func_memfd_create=no
+export CPPFLAGS="-D_WASI_EMULATED_SIGNAL -D_WASI_EMULATED_PROCESS_CLOCKS -D_WASI_EMULATED_MMAN \${CPPFLAGS}"
 export LDFLAGS="-static \${LDFLAGS}"
 {% endblock %}
