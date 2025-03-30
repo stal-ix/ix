@@ -1,8 +1,8 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://github.com/benhoyt/inih/archive/refs/tags/r58.tar.gz
-sha:e79216260d5dffe809bda840be48ab0eec7737b2bb9f02d2275c1b46344ea7b7
+https://github.com/benhoyt/inih/archive/refs/tags/r59.tar.gz
+sha:062279922805f5e9a369551a08d5ddb506140fe50774183ffdbb7c22bb97e3f4
 {% endblock %}
 
 {% block lib_deps %}
