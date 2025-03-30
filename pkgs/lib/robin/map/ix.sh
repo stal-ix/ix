@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/Tessil/robin-map/archive/refs/tags/v1.2.1.tar.gz
-sha:2b54d2c1de2f73bea5c51d5dcbd64813a08caf1bfddcfdeee40ab74e9599e8e3
+https://github.com/Tessil/robin-map/archive/refs/tags/v1.4.0.tar.gz
+sha:7930dbf9634acfc02686d87f615c0f4f33135948130b8922331c16d90a03250c
 {% endblock %}
 
 {% block lib_deps %}
