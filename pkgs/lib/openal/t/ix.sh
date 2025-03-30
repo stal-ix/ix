@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/kcat/openal-soft/archive/refs/tags/1.24.2.tar.gz
-sha:7efd383d70508587fbc146e4c508771a2235a5fc8ae05bf6fe721c20a348bd7c
+https://github.com/kcat/openal-soft/archive/refs/tags/1.24.3.tar.gz
+sha:7e1fecdeb45e7f78722b776c5cf30bd33934b961d7fd2a11e0494e064cc631ce
 {% endblock %}
 
 {% block lib_deps %}
