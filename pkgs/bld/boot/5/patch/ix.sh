@@ -3,6 +3,11 @@
 {% block bld_libs %}
 {% endblock %}
 
+{% block fetch %}
+https://ftp.gnu.org/gnu/patch/patch-2.7.6.tar.xz
+sha:ac610bda97abe0d9f6b7c963255a11dcb196c25e337c61f94e4778d632f1d8fd
+{% endblock %}
+
 {% block bld_deps %}
 bld/boot/5/sed
 bld/boot/5/mawk

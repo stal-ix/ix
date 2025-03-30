@@ -1,8 +1,8 @@
 {% extends '//die/c/autohell.sh' %}
 
 {% block fetch %}
-https://ftp.gnu.org/gnu/patch/patch-2.7.6.tar.xz
-sha:ac610bda97abe0d9f6b7c963255a11dcb196c25e337c61f94e4778d632f1d8fd
+https://ftp.gnu.org/gnu/patch/patch-2.8.tar.xz
+sha:f87cee69eec2b4fcbf60a396b030ad6aa3415f192aa5f7ee84cad5e11f7f5ae3
 {% endblock %}
 
 {% block bld_libs %}
