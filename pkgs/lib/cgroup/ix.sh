@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://github.com/libcgroup/libcgroup/releases/download/v2.0.2/libcgroup-2.0.2.tar.gz
-sha:8ef63b32e0aff619547dbb8a25e1f6bab152d7c4864795cf915571a5994d0cf8
+https://github.com/libcgroup/libcgroup/releases/download/v2.0.3/libcgroup-2.0.3.tar.gz
+sha:b29b5704de3d0fadf199fe4e17eeeaecba7f0dd1b85569c96eec37c7672e3026
 {% endblock %}
 
 {% block lib_deps %}
