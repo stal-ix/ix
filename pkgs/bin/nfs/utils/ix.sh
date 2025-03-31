@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://downloads.sourceforge.net/project/nfs/nfs-utils/2.8.1/nfs-utils-2.8.1.tar.xz
-sha:794583651702c0cbe12a66b16bef4f100d6661bcff94206d7a5a404bd16d75ab
+https://downloads.sourceforge.net/project/nfs/nfs-utils/2.8.3/nfs-utils-2.8.3.tar.xz
+sha:7251a867f6be8c681bc92e4671c983be09c06a053e514c4b486de36fb8221f65
 {% endblock %}
 
 {% block bld_libs %}
@@ -18,6 +18,7 @@ lib/linux/util
 lib/bsd/overlay
 lib/rpcsvc/proto
 lib/device/mapper
+lib/shim/gnu/basename/overlay
 lib/shim/fake(lib_name=keyutils)
 {% endblock %}
 
