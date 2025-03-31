@@ -790,7 +790,7 @@ bin/xdg/open
 bin/xdg/desktop/portal/gtk
 bin/xdg/desktop/portal
 bin/psmisc
-bin/dunst
+#bin/dunst
 bin/perf
 bin/numactl
 bin/ld
