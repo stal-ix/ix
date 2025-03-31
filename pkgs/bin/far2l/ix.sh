@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/elfmz/far2l/archive/refs/tags/v_2.6.4.tar.gz
-sha:49bf67dd5cb2069b1212ff3256d85123ceaee74470bedeef9ef1836582e4a5bc
+https://github.com/elfmz/far2l/archive/refs/tags/v_2.6.5.tar.gz
+sha:0e68efff1c5d950c86cdad0387bf1aae7b152dbdd7d24b70bbefeeb4f873a9c9
 {% endblock %}
 
 {% block bld_libs %}

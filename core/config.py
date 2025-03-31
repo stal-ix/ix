@@ -131,7 +131,7 @@ def get_raw_arch(n):
             'os': 'wasi',
             'kernel': 'wasi',
             'obj_fmt': 'wasm',
-            'cmake_system_name': 'Wasi', # wild guess
+            'cmake_system_name': 'WASI', # wild guess
         }
 
     if n == 'linux':

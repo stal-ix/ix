@@ -1,8 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-https://github.com/rakshasa/libtorrent/archive/refs/tags/v0.15.1.tar.gz
-sha:27bdd00949ef0b43161002a475f5eeb777929ad96dddd6c9b2f76f14c9be3a69
+https://github.com/rakshasa/libtorrent/archive/refs/tags/v0.15.2.tar.gz
+sha:045cfc796579dd08445745c3cd38427004202eaa7529d349e482c2b67f3b52b0
 {% endblock %}
 
 {% block lib_deps %}
@@ -14,4 +14,8 @@ lib/openssl
 
 {% block bld_libs %}
 lib/kernel
+{% endblock %}
+
+{% block shell %}
+bin/bash/lite/sh
 {% endblock %}

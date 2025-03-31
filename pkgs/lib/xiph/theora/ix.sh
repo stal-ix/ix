@@ -1,12 +1,16 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block fetch %}
-http://downloads.xiph.org/releases/theora/libtheora-1.1.1.tar.bz2
-sha:b6ae1ee2fa3d42ac489287d3ec34c5885730b1296f0801ae577a35193d3affbc
+https://github.com/xiph/theora/archive/refs/tags/v1.2.0.tar.gz
+sha:e0c35771b425c32a052ffb358a2aed14219340ab850b48dc85b01939c0513a31
 {% endblock %}
 
 {% block lib_deps %}
 lib/c
 lib/xiph/ogg
 lib/xiph/vorbis
+{% endblock %}
+
+{% block conf_ver %}
+2/71
 {% endblock %}

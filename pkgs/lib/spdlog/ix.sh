@@ -1,8 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/gabime/spdlog/archive/refs/tags/v1.15.0.tar.gz
-sha:9962648c9b4f1a7bbc76fd8d9172555bad1871fdb14ff4f842ef87949682caa5
+https://github.com/gabime/spdlog/archive/refs/tags/v1.15.2.tar.gz
+sha:7a80896357f3e8e920e85e92633b14ba0f229c506e6f978578bdc35ba09e9a5d
 {% endblock %}
 
 {% block lib_deps %}

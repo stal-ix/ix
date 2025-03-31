@@ -26,7 +26,6 @@ shut_up
 
 {% block configure %}
 export CONFIG_SITE=${PWD}/Tools/wasm/config.site-wasm32-wasi
-export ac_cv_func_memfd_create=no
 export py_cv_module_fcntl=n/a
 export py_cv_module__posixsubprocess=n/a
 {{super()}}

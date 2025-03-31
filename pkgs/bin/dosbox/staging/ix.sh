@@ -1,8 +1,8 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://github.com/dosbox-staging/dosbox-staging/archive/refs/tags/v0.81.2.tar.gz
-sha:6676a3b6957c144a80ca8c3ffec2a0bec0320274382f23af9c57dd1c20b2eb1b
+https://github.com/dosbox-staging/dosbox-staging/archive/refs/tags/v0.82.1.tar.gz
+sha:311200268e2ce07c2bd684ff2d6d423b21f3e9aa90416147d418de8950120083
 {% endblock %}
 
 {% block bld_libs %}
@@ -33,4 +33,8 @@ wrap_cc
 {% block meson_flags %}
 use_alsa=false
 use_zlib_ng=false
+{% endblock %}
+
+{% block bld_tool %}
+bld/bash
 {% endblock %}
