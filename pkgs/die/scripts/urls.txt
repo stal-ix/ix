@@ -507,6 +507,7 @@ https://downloads.sourceforge.net/project/net-tools/net-tools-2.10.tar.xz
 https://downloads.sourceforge.net/project/nfs/nfs-utils/2.6.3/nfs-utils-2.6.3.tar.xz
 https://downloads.sourceforge.net/project/nfs/nfs-utils/2.6.4/nfs-utils-2.6.4.tar.xz
 https://downloads.sourceforge.net/project/nfs/nfs-utils/2.8.1/nfs-utils-2.8.1.tar.xz
+https://downloads.sourceforge.net/project/nfs/nfs-utils/2.8.3/nfs-utils-2.8.3.tar.xz
 https://downloads.sourceforge.net/project/pcre/pcre/8.45/pcre-8.45.tar.bz2
 https://downloads.sourceforge.net/project/perfmon2/libpfm4/libpfm-4.13.0.tar.gz
 https://downloads.sourceforge.net/project/podofo/podofo/0.9.8/podofo-0.9.8.tar.gz
@@ -3570,6 +3571,7 @@ https://github.com/v-byte-cpu/wirez/archive/2628dbf16fd4ed7c3943476d313bd4266db2
 https://github.com/valkey-io/valkey/archive/refs/tags/7.2.6.tar.gz
 https://github.com/valkey-io/valkey/archive/refs/tags/8.0.0.tar.gz
 https://github.com/valkey-io/valkey/archive/refs/tags/8.0.1.tar.gz
+https://github.com/valkey-io/valkey/archive/refs/tags/8.1.0.tar.gz
 https://github.com/varlink/libvarlink/archive/refs/tags/23.tar.gz
 https://github.com/varlink/libvarlink/archive/refs/tags/24.tar.gz
 https://github.com/varnishcache/varnish-cache/archive/refs/tags/varnish-7.6.0.tar.gz
