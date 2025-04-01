@@ -111,7 +111,7 @@ class Ops:
     def __init__(self, cfg):
         self.cfg = cfg
         self.assemble = choice('/bin/assemble', '/bin/bin_ix/assemble')
-        self.bsdtar = choice('/bin/bsdtar', '/bin/bin_ix/bsdtar')
+        self.bsdtar = choice('/ix/realm/system/bin/bsdtar', '/bin/bin_ix/bsdtar')
 
         try:
             self.fetcher = choice('/bin/fetcher')

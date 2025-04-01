@@ -9,8 +9,6 @@ fetcher_socks5_proxy=lab1.local:8015;lab2.local:8015;lab3.local:8015
 curses=netbsd
 intl_ver=no
 libc_lite=1
-jail=1
-tmpfs=1
 {% endblock %}
 
 {% block run_deps %}
