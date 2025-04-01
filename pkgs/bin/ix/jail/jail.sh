@@ -29,7 +29,8 @@ mkdir bin
 cp $(command -v sh) bin/
 mkdir -p usr/bin
 cp $(command -v env) usr/bin/
-mkdir etc
+mkdir -p etc/ssl
+mount --bind /etc/ssl /etc/ssl
 cat << EOF > etc/passwd
 root:x:0:0:none:/home/root:/bin/sh
 EOF
