@@ -2427,6 +2427,7 @@ https://github.com/libbpf/libbpf/archive/refs/tags/v1.4.5.tar.gz
 https://github.com/libbpf/libbpf/archive/refs/tags/v1.4.6.tar.gz
 https://github.com/libbpf/libbpf/archive/refs/tags/v1.5.0.tar.gz
 https://github.com/libcgroup/libcgroup/releases/download/v2.0.2/libcgroup-2.0.2.tar.gz
+https://github.com/libcgroup/libcgroup/releases/download/v2.0.3/libcgroup-2.0.3.tar.gz
 https://github.com/libconfuse/libconfuse/archive/refs/tags/v3.3.tar.gz
 https://github.com/libcxxrt/libcxxrt/archive/fd484be8d1e94a1fcf6bc5c67e5c07b65ada19b6.tar.gz
 https://github.com/libevent/libevent/archive/refs/tags/release-2.1.12-stable.tar.gz
@@ -2501,6 +2502,8 @@ https://github.com/libsdl-org/SDL/archive/refs/tags/release-2.30.8.tar.gz
 https://github.com/libsdl-org/SDL/archive/refs/tags/release-2.30.9.tar.gz
 https://github.com/libsdl-org/SDL/archive/refs/tags/release-2.32.0.tar.gz
 https://github.com/libsdl-org/SDL/archive/refs/tags/release-2.32.2.tar.gz
+https://github.com/libsdl-org/SDL/archive/refs/tags/release-2.32.4.tar.gz
+https://github.com/libsdl-org/SDL/archive/refs/tags/release-3.2.10.tar.gz
 https://github.com/libsdl-org/SDL/archive/refs/tags/release-3.2.4.tar.gz
 https://github.com/libsdl-org/SDL/archive/refs/tags/release-3.2.6.tar.gz
 https://github.com/libsdl-org/SDL/releases/download/release-2.28.3/SDL2-2.28.3.tar.gz
@@ -4314,6 +4317,7 @@ https://mupdf.com/downloads/archive/mupdf-1.25.2-source.tar.gz
 https://mupdf.com/downloads/archive/mupdf-1.25.3-source.tar.gz
 https://mupdf.com/downloads/archive/mupdf-1.25.4-source.tar.gz
 https://mupdf.com/downloads/archive/mupdf-1.25.5-source.tar.gz
+https://mupdf.com/downloads/archive/mupdf-1.25.6-source.tar.gz
 https://nav.dl.sourceforge.net/project/sbcl/sbcl/2.2.1/sbcl-2.2.1-source.tar.bz2
 https://nav.dl.sourceforge.net/project/sbcl/sbcl/2.3.7/sbcl-2.3.7-source.tar.bz2
 https://nav.dl.sourceforge.net/project/sbcl/sbcl/2.3.9/sbcl-2.3.9-source.tar.bz2
@@ -4374,6 +4378,7 @@ https://secure.nic.cz/files/knot-dns/knot-3.4.1.tar.xz
 https://secure.nic.cz/files/knot-dns/knot-3.4.2.tar.xz
 https://secure.nic.cz/files/knot-dns/knot-3.4.3.tar.xz
 https://secure.nic.cz/files/knot-dns/knot-3.4.4.tar.xz
+https://secure.nic.cz/files/knot-dns/knot-3.4.5.tar.xz
 https://secure.nic.cz/files/knot-resolver/knot-resolver-5.6.0.tar.xz
 https://secure.nic.cz/files/knot-resolver/knot-resolver-5.7.4.tar.xz
 https://secure.nic.cz/files/knot-resolver/knot-resolver-6.0.10.tar.xz
