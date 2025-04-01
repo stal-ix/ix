@@ -9,9 +9,6 @@ import core.error as ce
 import core.ops_loc as co
 
 
-B = '/bin/bin_ix'
-
-
 def run_cmd(cmd, input='', user='ix'):
     ru = getpass.getuser()
 
@@ -113,7 +110,8 @@ def choice(*args):
 class Ops:
     def __init__(self, cfg):
         self.cfg = cfg
-        self.assemble = choice('/bin/assemble', f'{B}/assemble')
+        self.assemble = choice('/bin/assemble', '/bin/bin_ix/assemble')
+        self.bsdtar = choice('/bin/bsdtar', '/bin/bin_ix/bsdtar')
 
         try:
             self.fetcher = choice('/bin/fetcher')
@@ -128,7 +126,7 @@ class Ops:
         run_cmd(['/bin/env', 'IX_EXEC_KIND=local', sys.executable, self.cfg.binary, 'gc'] + kind, user='root')
 
     def extract(self):
-        return [f'{B}/bsdtar', '--no-same-permissions', '--no-same-owner', '-x', '-f']
+        return [self.bsdtar, '--no-same-permissions', '--no-same-owner', '-x', '-f']
 
     def fetch(self, sb, url, path, md5):
         if self.fetcher:
