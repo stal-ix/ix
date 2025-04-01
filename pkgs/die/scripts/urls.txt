@@ -1964,6 +1964,7 @@ https://github.com/go-gost/gost/archive/1fa5067d1450c7d0c7c4bfb5cbddc7ddbb49f76c
 https://github.com/go-gost/gost/archive/refs/tags/v3.0.0-nightly.20240927.tar.gz
 https://github.com/go-task/task/archive/refs/tags/v3.14.0.tar.gz
 https://github.com/gohugoio/hugo/archive/refs/tags/v0.143.1.tar.gz
+https://github.com/gohugoio/hugo/archive/refs/tags/v0.145.0.tar.gz
 https://github.com/gokcehan/lf/archive/refs/tags/r27.tar.gz
 https://github.com/gokcehan/lf/archive/refs/tags/r31.tar.gz
 https://github.com/gokcehan/lf/archive/refs/tags/r32.tar.gz
