@@ -1,6 +1,7 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
+bin/pidns
 bin/fixtty
 bin/runsrv
 bin/session
