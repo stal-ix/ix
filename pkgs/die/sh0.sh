@@ -30,10 +30,6 @@ exit 1
 
 {% block script_parts %}
 {% if isfile('/bin/confine') %}
-/bin/unshare
--r
--U
--m
 /bin/confine
 {% else %}
 {% if jail or tmpfs %}
