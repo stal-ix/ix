@@ -3,6 +3,6 @@
 {% block run_deps %}
 bin/mount
 bin/setcwd
+bin/ix/jail
 bld/jail/helpers
-bld/jail/scripts
 {% endblock %}
