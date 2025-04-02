@@ -1,11 +1,11 @@
 {% extends '//die/go/build.sh' %}
 
 {% block go_url %}
-https://github.com/gohugoio/hugo/archive/refs/tags/v0.143.1.tar.gz
+https://github.com/gohugoio/hugo/archive/refs/tags/v0.145.0.tar.gz
 {% endblock %}
 
 {% block go_sha %}
-34dfb24169e71743d92f39e9b38d0908db066068c90c6295680fc23b581be652
+e27b3e243580537e2f6b0644d6785ab8d25c74634f2e01ac7a807f0eb92d97bf
 {% endblock %}
 
 {% block go_tool %}

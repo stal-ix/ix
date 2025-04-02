@@ -1,7 +1,9 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
-bin/ix/bsdtar
+bin/bsdtar
+bin/ix/jail
+bin/ix/confine
 bin/ix/fetcher
 bin/ix/assemble
 bin/ix/runsvdir
