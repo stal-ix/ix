@@ -35,7 +35,6 @@ cd alacritty
 wayland
 {% endblock %}
 
-{% block install %}
-mkdir ${out}/bin
-cp ${tmp}/out/alacritty ${out}/bin/
+{% block cargo_bins %}
+alacritty
 {% endblock %}
