@@ -33,6 +33,10 @@ error('shit happen')
 chmod +x ${out}/bin/*
 {% endblock%}
 
-{% block script_exec %}
-["/usr/bin/env", "PATH={{ix_boot_path}}", "env", "sh", "-s"]
+{% block script_parts %}
+/usr/bin/env
+PATH={{ix_boot_path}}
+env
+sh
+-s
 {% endblock %}
