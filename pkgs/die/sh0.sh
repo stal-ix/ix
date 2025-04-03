@@ -28,6 +28,10 @@ exit 1
 # {{rebuild}}
 {% endblock %}
 
+{% block script_confine %}
+{% if isfile('/bin/confine') %}
+/bin/confine
+{% endif %}
 {% block script_parts %}
 {% if jail or tmpfs %}
 unshare
@@ -47,13 +51,8 @@ tmpfs
 sh
 -s
 {% endblock %}
-
-{% block script_confine %}
-{% if isfile('/bin/confine') %}
-/bin/confine
-{% endif %}
 {% endblock %}
 
 {% block script_exec %}
-{{ix.list_to_json(self.script_confine() + '\n' + self.script_parts())}}
+{{ix.list_to_json(self.script_confine())}}
 {% endblock %}
