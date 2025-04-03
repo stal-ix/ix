@@ -2,4 +2,6 @@
 set -xue
 OLDPATH=${PATH}
 export PATH=${PATH}:/ix/realm/system/bin
-exec unshare -r -U -m jail /sys /ix env PATH=${OLDPATH} "${@}"
+where=${1}
+shift
+exec unshare -r -U -m jail /sys ${where} env PATH=${OLDPATH} "${@}"

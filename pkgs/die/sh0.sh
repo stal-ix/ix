@@ -31,8 +31,8 @@ exit 1
 {% block script_confine %}
 {% if isfile('/bin/confine') %}
 /bin/confine
+{{ix_dir}}
 {% endif %}
-{% block script_parts %}
 {% if jail or tmpfs %}
 unshare
 -r
@@ -48,6 +48,7 @@ jail
 tmpfs
 {{ix_dir}}
 {% endif %}
+{% block script_parts %}
 sh
 -s
 {% endblock %}
