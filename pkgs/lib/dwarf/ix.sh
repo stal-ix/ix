@@ -1,8 +1,8 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://www.prevanders.net/libdwarf-0.11.1.tar.xz
-sha:b5be211b1bd0c1ee41b871b543c73cbff5822f76994f6b160fc70d01d1b5a1bf
+https://www.prevanders.net/libdwarf-0.12.0.tar.xz
+sha:444dc1c5176f04d3ebc50341552a8b2ea6c334f8f1868a023a740ace0e6eae9f
 {% endblock %}
 
 {% block lib_deps %}
