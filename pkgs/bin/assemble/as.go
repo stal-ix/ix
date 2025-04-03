@@ -97,7 +97,6 @@ type Cmd struct {
 	Args  []string          `json:"args"`
 	Stdin string            `json:"stdin"`
 	Env   map[string]string `json:"env"`
-	Confine bool `json:"confine"`
 }
 
 type Node struct {
@@ -207,10 +206,6 @@ func executeCmd(c *Cmd, net bool, thrs int, out io.Writer) error {
 	if !net {
 		// unshare network namespace
 		args = append(args, "/bin/unshare", "-r", "-n")
-	}
-
-	if c.Confine {
-		args = append(args, "/bin/confine")
 	}
 
 	// resolve full path to real binary

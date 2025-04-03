@@ -48,6 +48,12 @@ sh
 -s
 {% endblock %}
 
+{% block script_confine %}
+{% if isfile('/bin/confine') %}
+/bin/confine
+{% endif %}
+{% endblock %}
+
 {% block script_exec %}
-{{ix.list_to_json(self.script_parts())}}
+{{ix.list_to_json(self.script_confine() + '\n' + self.script_parts())}}
 {% endblock %}
