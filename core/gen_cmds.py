@@ -19,16 +19,17 @@ class ScriptBuilder:
             args['args']
             return args
         except TypeError:
-            return self.build_cmd_script(args, '', {})
+            return self.build_cmd_script(args, '', {}, False)
 
     def cmds(self, cmds):
         return [self.cmd(x) for x in cmds]
 
-    def build_cmd_script(self, args, stdin, env):
+    def build_cmd_script(self, args, stdin, env, confine):
         return {
             'args': args,
             'stdin': stdin,
             'env': env,
+            'confine': confine,
         }
 
 
@@ -43,7 +44,12 @@ class CmdBuild:
     def script(self, sb, src_dir):
         build = self.package.descr['bld']['script']
 
-        return sb.build_cmd_script(build['exec'], build['data'], dict(self.iter_env(src_dir)))
+        return sb.build_cmd_script(
+            build['exec'],
+            build['data'],
+            dict(self.iter_env(src_dir)),
+            True,
+        )
 
     def iter_env(self, src_dir):
         h_lib = []

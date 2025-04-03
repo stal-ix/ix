@@ -1,4 +1,4 @@
-#!/usr/bin/env sh
+#!/bin/sh
 set -xue
 OLDPATH=${PATH}
 export PATH=${PATH}:/ix/realm/system/bin
