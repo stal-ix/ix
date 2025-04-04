@@ -28,10 +28,15 @@ exit 1
 # {{rebuild}}
 {% endblock %}
 
-{% block script_parts %}
+{% block script_confine %}
 {% if isfile('/bin/confine') %}
-/bin/confine
-{% else %}
+/ix/realm/system/bin/confine
+{{ix_dir}}
+{% endif %}
+{% if isfile('/bin/tmpfs') %}
+/ix/realm/system/bin/tmpfs
+{{ix_dir}}
+{% endif %}
 {% if jail or tmpfs %}
 unshare
 -r
@@ -47,11 +52,12 @@ jail
 tmpfs
 {{ix_dir}}
 {% endif %}
-{% endif %}
+{% block script_parts %}
 sh
 -s
 {% endblock %}
+{% endblock %}
 
 {% block script_exec %}
-{{ix.list_to_json(self.script_parts())}}
+{{ix.list_to_json(self.script_confine())}}
 {% endblock %}

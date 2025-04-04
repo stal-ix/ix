@@ -1,8 +1,10 @@
 {% extends '//lib/web/kit/t/ix.sh' %}
 
 {% block fetch %}
-https://webkitgtk.org/releases/webkitgtk-2.46.5.tar.xz
-sha:bad4020bb0cfb3e740df3082c2d9cbf67cf4095596588a56aecdde6702137805
+#https://webkitgtk.org/releases/webkitgtk-2.46.5.tar.xz
+#sha:bad4020bb0cfb3e740df3082c2d9cbf67cf4095596588a56aecdde6702137805
+https://webkitgtk.org/releases/webkitgtk-2.48.1.tar.xz
+sha:98efdf21c4cdca0fe0b73ab5a8cb52093b5aa52d9b1b016a93f71dbfa1eb258f
 {% endblock %}
 
 {% block lib_deps %}
@@ -19,6 +21,7 @@ lib/webp
 lib/glib
 lib/jpeg
 lib/xslt
+lib/flite
 lib/tasn1
 lib/cairo
 lib/pango

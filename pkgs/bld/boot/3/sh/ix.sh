@@ -10,6 +10,10 @@ bld/boot/2/lib/c
 bld/boot/2/env
 {% endblock %}
 
-{% block script_exec %}
-["/usr/bin/env", "PATH={{ix_boot_path}}", "sh", "-s"]
+{% block script_parts %}
+/usr/bin/env
+PATH={{ix_boot_path}}
+env
+sh
+-s
 {% endblock %}
