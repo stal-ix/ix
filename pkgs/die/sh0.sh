@@ -30,7 +30,11 @@ exit 1
 
 {% block script_confine %}
 {% if isfile('/bin/confine') %}
-/bin/confine
+/ix/realm/system/bin/confine
+{{ix_dir}}
+{% endif %}
+{% if isfile('/bin/tmpfs') %}
+/ix/realm/system/bin/tmpfs
 {{ix_dir}}
 {% endif %}
 {% if jail or tmpfs %}
