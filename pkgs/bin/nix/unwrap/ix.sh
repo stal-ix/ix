@@ -1,8 +1,8 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://github.com/NixOS/nix/archive/refs/tags/2.27.1.tar.gz
-sha:55e3ad1faa70d1f4d4c93a3833d0e33bb1d5a5d34d576d825fa8f7ad2f05b2ea
+https://github.com/NixOS/nix/archive/refs/tags/2.28.0.tar.gz
+sha:ef868764307a3c2af2a73a22cd425db7555f14ea2e7f3286db9a40d410330f08
 {% endblock %}
 
 {% block bld_libs %}
