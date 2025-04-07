@@ -1,11 +1,11 @@
 {% extends '//die/rust/cargo.sh' %}
 
 {% block cargo_url %}
-https://gitlab.exherbo.org/sydbox/sydbox/-/archive/v3.32.6/sydbox-v3.32.6.tar.bz2
+https://gitlab.exherbo.org/sydbox/sydbox/-/archive/v3.32.7/sydbox-v3.32.7.tar.bz2
 {% endblock %}
 
 {% block cargo_sha %}
-e61ea2b16ef6c23ae1089cedc297258ea76fc9db827094847e71ab4fee3405e1
+b2ae323da876bf268545d0ae105d47ddf6b1a23989d06146224024fea3a026d5
 {% endblock %}
 
 {% block bld_libs %}
