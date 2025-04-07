@@ -1,6 +1,6 @@
 {% extends '//bin/meson/1/6/ix.sh' %}
 
 {% block fetch %}
-https://github.com/mesonbuild/meson/archive/refs/tags/1.7.1.tar.gz
-sha:86edf3a28d9ce1e98838bba7d648446fa38a7912b2dfc328e84d6b20717eeb5c
+https://github.com/mesonbuild/meson/archive/refs/tags/1.7.2.tar.gz
+sha:3640ef596523393100df31ba790bc5fe732215e9711a66b673a21c4eb39bc8f1
 {% endblock %}
