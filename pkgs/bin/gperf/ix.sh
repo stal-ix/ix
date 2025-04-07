@@ -1,8 +1,8 @@
 {% extends '//die/c/autohell.sh' %}
 
 {% block fetch %}
-http://ftp.gnu.org/pub/gnu/gperf/gperf-3.1.tar.gz
-sha:588546b945bba4b70b6a3a616e80b4ab466e3f33024a352fc2198112cdbb3ae2
+http://ftp.gnu.org/pub/gnu/gperf/gperf-3.2.tar.gz
+sha:e0ddadebb396906a3e3e4cac2f697c8d6ab92dffa5d365a5bc23c7d41d30ef62
 {% endblock %}
 
 {% block bld_libs %}
