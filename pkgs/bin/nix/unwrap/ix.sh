@@ -1,8 +1,8 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-https://github.com/NixOS/nix/archive/refs/tags/2.28.0.tar.gz
-sha:ef868764307a3c2af2a73a22cd425db7555f14ea2e7f3286db9a40d410330f08
+https://github.com/NixOS/nix/archive/refs/tags/2.28.1.tar.gz
+sha:5081f335d5d4754e0a34f47ea76b3826faa1108f464aa5b7f6c4d43034b07bc1
 {% endblock %}
 
 {% block bld_libs %}
@@ -59,6 +59,7 @@ bld/meson/6
 find . -type f | while read l; do
     sed -e 's|-Werror=suggest-override||g' \
         -e 's|-Werror=switch-enum||g' \
+        -e 's|-Werror=undef||g' \
         -e 's|.*prelink.*true.*||' \
         -i ${l}
 done
