@@ -1511,6 +1511,7 @@ https://github.com/benhoyt/goawk/archive/refs/tags/v1.28.1.tar.gz
 https://github.com/benhoyt/inih/archive/refs/tags/r57.tar.gz
 https://github.com/benhoyt/inih/archive/refs/tags/r58.tar.gz
 https://github.com/benhoyt/inih/archive/refs/tags/r59.tar.gz
+https://github.com/benhoyt/inih/archive/refs/tags/r60.tar.gz
 https://github.com/bensadeh/circumflex/archive/refs/tags/3.5.tar.gz
 https://github.com/bensadeh/tailspin/archive/refs/tags/3.0.0.tar.gz
 https://github.com/berndporr/iir1/archive/refs/tags/1.9.4.tar.gz
@@ -1547,6 +1548,7 @@ https://github.com/c-ares/c-ares/archive/refs/tags/v1.33.0.tar.gz
 https://github.com/c-ares/c-ares/archive/refs/tags/v1.34.1.tar.gz
 https://github.com/c-ares/c-ares/archive/refs/tags/v1.34.2.tar.gz
 https://github.com/c-ares/c-ares/archive/refs/tags/v1.34.3.tar.gz
+https://github.com/c-ares/c-ares/archive/refs/tags/v1.34.5.tar.gz
 https://github.com/c-util/c-dvar/archive/refs/tags/v1.1.0.tar.gz
 https://github.com/c-util/c-ini/archive/refs/tags/v1.1.0.tar.gz
 https://github.com/c-util/c-list/archive/refs/tags/v3.1.0.tar.gz
@@ -2906,6 +2908,7 @@ https://github.com/openssh/openssh-portable/archive/refs/tags/V_9_9_P2.tar.gz
 https://github.com/openssl/openssl/archive/refs/tags/openssl-3.3.2.tar.gz
 https://github.com/openssl/openssl/archive/refs/tags/openssl-3.4.0.tar.gz
 https://github.com/openssl/openssl/archive/refs/tags/openssl-3.4.1.tar.gz
+https://github.com/openssl/openssl/archive/refs/tags/openssl-3.5.0.tar.gz
 https://github.com/opsengine/cpulimit/archive/refs/tags/v0.2.tar.gz
 https://github.com/optozorax/car_drift/archive/8fbfd0f82f614d9d32bbf78176b77e98affdadcb.zip
 https://github.com/p-gen/smenu/archive/refs/tags/v1.3.0.tar.gz
@@ -3904,6 +3907,7 @@ https://gitlab.freedesktop.org/wayland/wayland-protocols/-/archive/1.36/wayland-
 https://gitlab.freedesktop.org/wayland/wayland-protocols/-/archive/1.39/wayland-protocols-1.39.tar.bz2
 https://gitlab.freedesktop.org/wayland/wayland-protocols/-/archive/1.41/wayland-protocols-1.41.tar.bz2
 https://gitlab.freedesktop.org/wayland/wayland-protocols/-/archive/1.42/wayland-protocols-1.42.tar.bz2
+https://gitlab.freedesktop.org/wayland/wayland-protocols/-/archive/1.43/wayland-protocols-1.43.tar.bz2
 https://gitlab.freedesktop.org/wayland/wayland-utils/-/archive/wayland-info-1.0.0/wayland-utils-wayland-info-1.0.0.tar.bz2
 https://gitlab.freedesktop.org/wayland/wayland-utils/-/archive/wayland-utils-1.0.0/wayland-utils-wayland-utils-1.0.0.tar.bz2
 https://gitlab.freedesktop.org/wayland/wayland/-/releases/1.22.0/downloads/wayland-1.22.0.tar.xz
@@ -4164,6 +4168,7 @@ https://gnupg.org/ftp/gcrypt/libgpg-error/libgpg-error-1.48.tar.bz2
 https://gnupg.org/ftp/gcrypt/libgpg-error/libgpg-error-1.49.tar.bz2
 https://gnupg.org/ftp/gcrypt/libgpg-error/libgpg-error-1.50.tar.bz2
 https://gnupg.org/ftp/gcrypt/libgpg-error/libgpg-error-1.51.tar.bz2
+https://gnupg.org/ftp/gcrypt/libgpg-error/libgpg-error-1.52.tar.bz2
 https://golang.org/dl/go1.4-bootstrap-20170531.tar.gz
 https://hewlettpackard.github.io/wireless-tools/wireless_tools.29.tar.gz
 https://hg.sr.ht/~scoopta/wofi/archive/v1.2.4.tar.gz
@@ -4319,6 +4324,7 @@ https://mirrors.edge.kernel.org/pub/linux/utils/kbd/kbd-2.6.4.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/utils/kbd/kbd-2.7.1.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/utils/kbd/kbd-2.7.tar.xz
 https://mirrors.edge.kernel.org/pub/software/network/ethtool/ethtool-6.11.tar.xz
+https://mirrors.edge.kernel.org/pub/software/network/ethtool/ethtool-6.14.tar.xz
 https://mirrors.edge.kernel.org/pub/software/network/ethtool/ethtool-6.2.tar.xz
 https://mirrors.edge.kernel.org/pub/software/network/ethtool/ethtool-6.7.tar.xz
 https://mirrors.edge.kernel.org/pub/software/utils/pciutils/pciutils-3.11.1.tar.xz
