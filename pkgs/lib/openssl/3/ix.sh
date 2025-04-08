@@ -1,8 +1,8 @@
 {% extends 't/ix.sh' %}
 
 {% block fetch %}
-https://github.com/openssl/openssl/archive/refs/tags/openssl-3.4.1.tar.gz
-sha:d4b22527a645acf76b53e44487a8db687c6eed621d7246891d025e38ba8c9651
+https://github.com/openssl/openssl/archive/refs/tags/openssl-3.5.0.tar.gz
+sha:576740bfe93209efda2be7cecb00dfeabe77fe9c5c908c1790cbe8fa50b223d0
 {% endblock %}
 
 {% block env %}
