@@ -1,17 +1,17 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block fetch %}
-https://github.com/hyprwm/hyprgraphics/archive/refs/tags/v0.1.1.tar.gz
-sha:123a29e53a00bfaf37e7971b929433fb716fd497b3555f72c2d0419ae18e65c7
+https://github.com/hyprwm/hyprgraphics/archive/refs/tags/v0.1.3.tar.gz
+sha:0e11457135a9e7160cf147d361fae3c5dc40035a4ebd894c5d409baa896f43cf
 {% endblock %}
 
 {% block lib_deps %}
 lib/c
 lib/c++
-lib/png
 lib/jxl
 lib/jpeg
 lib/webp
+lib/spng
 lib/magic
 lib/cairo
 lib/pixman

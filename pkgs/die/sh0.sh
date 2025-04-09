@@ -33,9 +33,12 @@ exit 1
 /ix/realm/system/bin/confine
 {{ix_dir}}
 {% endif %}
+{% if skipsrc %}
+{% else %}
 {% if isfile('/bin/tmpfs') %}
 /ix/realm/system/bin/tmpfs
 {{ix_dir}}
+{% endif %}
 {% endif %}
 {% if jail or tmpfs %}
 unshare

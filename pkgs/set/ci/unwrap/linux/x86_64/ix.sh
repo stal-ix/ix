@@ -270,7 +270,7 @@ bin/qemacs
 bin/uasm
 bin/celluloid
 bin/less/gnu
-bin/kitty
+#bin/kitty
 bin/xfsprogs/6/1
 bin/xfsprogs/6/latest
 bin/qtile
@@ -495,7 +495,6 @@ bin/ted
 bin/gperf
 bin/imv
 bin/b64
-bin/kitty
 bin/wget/2
 bin/wget
 bin/nwipe
