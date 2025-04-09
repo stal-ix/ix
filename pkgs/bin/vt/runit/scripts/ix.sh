@@ -12,7 +12,7 @@ fixtty /dev/tty{{slot}}
 rm -rf \${TMPDIR}
 mkdir -p \${TMPDIR}
 chmod 01777 \${TMPDIR}
-exec pidns setsid openvt -c {{slot}} -f -e -- /bin/sh -c 'reset; clear; exec login -p'
+exec subreaper setsid openvt -c {{slot}} -f -e -- /bin/sh -c 'reset; clear; exec login -p'
 EOF
 
 cat << EOF > run
