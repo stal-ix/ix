@@ -54,6 +54,7 @@ export ac_cv_func_getdtablesize=yes
 export ac_cv_func_memcmp_working=yes
 export ac_cv_func_working_mktime=yes
 export gl_cv_func_realpath_works=yes
+export gl_cv_func_strcasecmp_works=y
 export ac_cv_func_mmap_fixed_mapped=yes
 export gl_cv_header_working_fcntl_h=yes
 export ac_cv_func_stat_empty_string_bug=no
