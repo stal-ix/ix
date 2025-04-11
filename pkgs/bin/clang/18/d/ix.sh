@@ -1,19 +1,18 @@
 {% extends '//bin/clang/18/ix.sh' %}
 
-{% block cmake_flags %}
+{% block llvm_projects %}
 {{super()}}
-LLVM_ENABLE_PROJECTS="clang;clang-tools-extra"
+clang-tools-extra
 {% endblock %}
 
-{% block ninja_build_targets %}
+{% block llvm_targets %}
 clangd
+clang-resource-headers
 {% endblock %}
 
 {% block postinstall %}
 :
 {% endblock %}
 
-{% block install %}
-mkdir ${out}/bin
-cp ${tmp}/obj/bin/clangd ${out}/bin/
+{% block clang_fix_includes %}
 {% endblock %}
