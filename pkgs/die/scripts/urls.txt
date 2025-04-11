@@ -622,6 +622,7 @@ https://ftp.gnu.org/gnu/cpio/cpio-2.14.tar.bz2
 https://ftp.gnu.org/gnu/cpio/cpio-2.15.tar.bz2
 https://ftp.gnu.org/gnu/diffutils/diffutils-3.10.tar.xz
 https://ftp.gnu.org/gnu/diffutils/diffutils-3.11.tar.xz
+https://ftp.gnu.org/gnu/diffutils/diffutils-3.12.tar.xz
 https://ftp.gnu.org/gnu/diffutils/diffutils-3.7.tar.xz
 https://ftp.gnu.org/gnu/diffutils/diffutils-3.9.tar.xz
 https://ftp.gnu.org/gnu/ed/ed-1.19.tar.lz
@@ -1264,6 +1265,7 @@ https://github.com/NixOS/nix/archive/refs/tags/2.26.3.tar.gz
 https://github.com/NixOS/nix/archive/refs/tags/2.27.0.tar.gz
 https://github.com/NixOS/nix/archive/refs/tags/2.27.1.tar.gz
 https://github.com/NixOS/nix/archive/refs/tags/2.28.0.tar.gz
+https://github.com/NixOS/nix/archive/refs/tags/2.28.1.tar.gz
 https://github.com/NixOS/patchelf/archive/refs/tags/0.18.0.tar.gz
 https://github.com/Novum/vkQuake/archive/refs/tags/1.30.1.tar.gz
 https://github.com/Novum/vkQuake/archive/refs/tags/1.31.2.tar.gz
@@ -2171,6 +2173,7 @@ https://github.com/hyprwm/hyprlang/archive/refs/tags/v0.5.3.tar.gz
 https://github.com/hyprwm/hyprlang/archive/refs/tags/v0.6.0.tar.gz
 https://github.com/hyprwm/hyprlock/archive/refs/tags/v0.5.0.tar.gz
 https://github.com/hyprwm/hyprlock/archive/refs/tags/v0.7.0.tar.gz
+https://github.com/hyprwm/hyprlock/archive/refs/tags/v0.8.0.tar.gz
 https://github.com/hyprwm/hyprpaper/archive/refs/tags/v0.2.0.tar.gz
 https://github.com/hyprwm/hyprpaper/archive/refs/tags/v0.7.0.tar.gz
 https://github.com/hyprwm/hyprpaper/archive/refs/tags/v0.7.4.tar.gz
@@ -2898,6 +2901,7 @@ https://github.com/opencv/opencv/archive/refs/tags/4.8.0.tar.gz
 https://github.com/opencv/opencv/archive/refs/tags/4.8.1.tar.gz
 https://github.com/opencv/opencv/archive/refs/tags/4.9.0.tar.gz
 https://github.com/openresty/luajit2/archive/refs/tags/v2.1-20230911.tar.gz
+https://github.com/openssh/openssh-portable/archive/refs/tags/V_10_0_P1.tar.gz
 https://github.com/openssh/openssh-portable/archive/refs/tags/V_9_4_P1.tar.gz
 https://github.com/openssh/openssh-portable/archive/refs/tags/V_9_5_P1.tar.gz
 https://github.com/openssh/openssh-portable/archive/refs/tags/V_9_6_P1.tar.gz
