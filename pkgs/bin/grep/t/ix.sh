@@ -10,3 +10,16 @@ lib/c
 lib/intl
 lib/sigsegv
 {% endblock %}
+
+{% block configure %}
+{{super()}}
+# pthread rwlock broken on aarch64
+cat << EOF > tests/Makefile
+all:
+install:
+EOF
+cat << EOF > gnulib-tests/Makefile
+all:
+install:
+EOF
+{% endblock %}
