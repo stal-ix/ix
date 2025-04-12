@@ -1,5 +1,9 @@
 {% extends '//lib/xml/2/latest/ix.sh' %}
 
+{% block pkg_name %}
+libxml2
+{% endblock %}
+
 {% block version %}
 2.11.4
 {% endblock %}

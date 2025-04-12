@@ -1,5 +1,9 @@
 {% extends '//die/c/gnome.sh' %}
 
+{% block pkg_name %}
+Incubator
+{% endblock %}
+
 {% block version %}
 46.1
 {% endblock %}

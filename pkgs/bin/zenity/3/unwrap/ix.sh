@@ -1,5 +1,9 @@
 {% extends '//bin/zenity/t/ix.sh' %}
 
+{% block pkg_name %}
+zenity
+{% endblock %}
+
 {% block version %}
 3.44.0
 {% endblock %}

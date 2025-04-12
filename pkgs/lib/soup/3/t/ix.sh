@@ -1,5 +1,9 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block pkg_name %}
+libsoup
+{% endblock %}
+
 {% block version %}
 3.6.5
 {% endblock %}

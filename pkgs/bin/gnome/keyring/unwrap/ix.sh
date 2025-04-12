@@ -1,5 +1,9 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block pkg_name %}
+gnome-keyring
+{% endblock %}
+
 {% block version %}
 48.0
 {% endblock %}

@@ -1,5 +1,9 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block pkg_name %}
+geary
+{% endblock %}
+
 {% block version %}
 46.0
 {% endblock %}

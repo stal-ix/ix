@@ -1,5 +1,9 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block pkg_name %}
+libpanel
+{% endblock %}
+
 {% block version %}
 1.10.0
 {% endblock %}

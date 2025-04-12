@@ -1,5 +1,9 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block pkg_name %}
+libdazzle
+{% endblock %}
+
 {% block version %}
 3.44.0
 {% endblock %}

@@ -1,5 +1,9 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block pkg_name %}
+libgee
+{% endblock %}
+
 {% block version %}
 0.20.8
 {% endblock %}

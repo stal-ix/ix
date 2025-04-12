@@ -1,5 +1,9 @@
 {% extends '//die/c/gnome.sh' %}
 
+{% block pkg_name %}
+gnome-text-editor
+{% endblock %}
+
 {% block version %}
 48.2
 {% endblock %}

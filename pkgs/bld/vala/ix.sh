@@ -1,5 +1,9 @@
 {% extends '//die/std/ix.sh' %}
 
+{% block pkg_name %}
+vala
+{% endblock %}
+
 {% block version %}
 0.56.1
 {% endblock %}

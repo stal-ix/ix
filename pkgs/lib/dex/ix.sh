@@ -1,5 +1,9 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block pkg_name %}
+libdex
+{% endblock %}
+
 {% block version %}
 0.10.0
 {% endblock %}

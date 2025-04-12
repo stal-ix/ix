@@ -1,5 +1,9 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block pkg_name %}
+libspelling
+{% endblock %}
+
 {% block version %}
 0.4.7
 {% endblock %}

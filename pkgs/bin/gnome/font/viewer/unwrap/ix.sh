@@ -1,5 +1,9 @@
 {% extends '//die/c/gnome.sh' %}
 
+{% block pkg_name %}
+gnome-font-viewer
+{% endblock %}
+
 {% block version %}
 48.0
 {% endblock %}

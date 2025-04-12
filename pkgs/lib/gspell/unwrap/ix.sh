@@ -1,5 +1,9 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block pkg_name %}
+gspell
+{% endblock %}
+
 {% block version %}
 1.14.0
 {% endblock %}

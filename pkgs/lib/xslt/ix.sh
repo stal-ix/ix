@@ -1,5 +1,9 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block pkg_name %}
+libxslt
+{% endblock %}
+
 {% block version %}
 1.1.43
 {% endblock %}

@@ -1,5 +1,9 @@
 {% extends '//lib/gtk/t/ix.sh' %}
 
+{% block pkg_name %}
+gtk
+{% endblock %}
+
 {% block version %}
 3.24.49
 {% endblock %}

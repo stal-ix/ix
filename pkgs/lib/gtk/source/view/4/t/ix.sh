@@ -1,5 +1,9 @@
 {% extends '//die/c/gnome.sh' %}
 
+{% block pkg_name %}
+gtksourceview
+{% endblock %}
+
 {% block version %}
 4.8.4
 {% endblock %}

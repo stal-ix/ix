@@ -1,5 +1,9 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block pkg_name %}
+glib-networking
+{% endblock %}
+
 {% block version %}
 2.80.0
 {% endblock %}

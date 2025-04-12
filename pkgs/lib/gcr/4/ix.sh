@@ -1,5 +1,9 @@
 {% extends '//lib/gcr/t/ix.sh' %}
 
+{% block pkg_name %}
+gcr
+{% endblock %}
+
 {% block version %}
 4.4.0.1
 {% endblock %}

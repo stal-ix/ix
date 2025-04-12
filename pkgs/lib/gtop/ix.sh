@@ -1,5 +1,9 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block pkg_name %}
+libgtop
+{% endblock %}
+
 {% block version %}
 2.40.0
 {% endblock %}
