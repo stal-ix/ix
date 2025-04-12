@@ -86,11 +86,14 @@ def add_ver(data):
 
 def parse_name(url):
     if 'github.com' in url:
-        return url.split('/')[5]
+        return url.split('/')[4]
 
 
 def add_name(data):
     if 'block version' not in data:
+        return data
+
+    if 'block pkg_name' in data:
         return data
 
     url = get_url_2(data)
@@ -98,13 +101,22 @@ def add_name(data):
     if not url:
         return data
 
-    ver = parse_name(url)
+    name = parse_name(url)
 
-    if not ver:
+    if not name:
         print(f'unknown url {url}')
         return data
 
-    return data
+    print(name, url)
+
+    prep = '{% block pkg_name %}'
+    prep += '\n'
+    prep += name
+    prep += '\n'
+    prep += '{% endblock %}'
+    prep += '\n'
+
+    return '\n'.join(prepend(data, prep)).strip() + '\n'
 
 def patch(path):
     with open(path) as f:
@@ -120,7 +132,8 @@ def patch(path):
         with open(path, 'w') as f:
             f.write(data)
     else:
-        print(f'skip {path}')
+        pass
+        #print(f'skip {path}')
 
 for a, b, c in os.walk('.'):
     for x in c:
