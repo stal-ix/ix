@@ -1,7 +1,11 @@
 {% extends '//die/rust/cargo.sh' %}
 
+{% block version %}
+8.0.0
+{% endblock %}
+
 {% block cargo_url %}
-https://github.com/ikatson/rqbit/archive/refs/tags/v8.0.0.tar.gz
+https://github.com/ikatson/rqbit/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 {% endblock %}
 
 {% block cargo_sha %}

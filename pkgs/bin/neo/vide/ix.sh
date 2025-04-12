@@ -1,7 +1,11 @@
 {% extends '//die/rust/cargo.sh' %}
 
+{% block version %}
+0.12.2
+{% endblock %}
+
 {% block cargo_url %}
-https://github.com/neovide/neovide/archive/refs/tags/0.12.2.tar.gz
+https://github.com/neovide/neovide/archive/refs/tags/{{self.version().strip()}}.tar.gz
 {% endblock %}
 
 {% block cargo_sha %}

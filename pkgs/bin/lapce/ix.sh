@@ -1,7 +1,11 @@
 {% extends '//die/rust/cargo.sh' %}
 
+{% block version %}
+0.4.2
+{% endblock %}
+
 {% block cargo_url %}
-https://github.com/lapce/lapce/archive/refs/tags/v0.4.2.tar.gz
+https://github.com/lapce/lapce/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 {% endblock %}
 
 {% block cargo_sha %}

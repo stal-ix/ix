@@ -1,7 +1,11 @@
 {% extends '//die/rust/cargo.sh' %}
 
+{% block version %}
+0.2.3
+{% endblock %}
+
 {% block cargo_url %}
-https://github.com/pythops/impala/archive/refs/tags/v0.2.3.tar.gz
+https://github.com/pythops/impala/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 {% endblock %}
 
 {% block cargo_sha %}

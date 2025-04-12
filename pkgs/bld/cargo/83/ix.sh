@@ -1,7 +1,11 @@
 {% extends '//bld/cargo/80/ix.sh' %}
 
+{% block version %}
+0.83.0
+{% endblock %}
+
 {% block cargo_url %}
-https://github.com/rust-lang/cargo/archive/refs/tags/0.83.0.tar.gz
+https://github.com/rust-lang/cargo/archive/refs/tags/{{self.version().strip()}}.tar.gz
 {% endblock %}
 
 {% block cargo_sha %}

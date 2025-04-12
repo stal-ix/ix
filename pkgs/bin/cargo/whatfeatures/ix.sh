@@ -1,7 +1,11 @@
 {% extends '//die/rust/cargo.sh' %}
 
+{% block version %}
+0.9.9
+{% endblock %}
+
 {% block cargo_url %}
-https://github.com/museun/cargo-whatfeatures/archive/refs/tags/v0.9.9.tar.gz
+https://github.com/museun/cargo-whatfeatures/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 {% endblock %}
 
 {% block cargo_sha %}

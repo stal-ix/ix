@@ -1,7 +1,11 @@
 {% extends '//die/rust/cargo.sh' %}
 
+{% block version %}
+0.9.0
+{% endblock %}
+
 {% block cargo_url %}
-https://git.sr.ht/~kennylevinsen/greetd/archive/0.9.0.tar.gz
+https://git.sr.ht/~kennylevinsen/greetd/archive/{{self.version().strip()}}.tar.gz
 {% endblock %}
 
 {% block cargo_sha %}
