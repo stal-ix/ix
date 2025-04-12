@@ -1,11 +1,17 @@
 import os
 import sys
+
 def get_url(data):
     for l in data.split('\n'):
         if l.startswith('http://'):
             return l
 
         if l.startswith('https://'):
+            return l
+
+def get_url_2(data):
+    for l in data.split('\n'):
+        if 'http' in l and 'self.version' in l:
             return l
 
 def check_ver(v):
@@ -78,7 +84,26 @@ def add_ver(data):
 
     return '\n'.join(prepend(data, prep)).strip() + '\n'
 
+def parse_name(url):
+    if 'github.com' in url:
+        return url.split('/')[5]
+
+
 def add_name(data):
+    if 'block version' not in data:
+        return data
+
+    url = get_url_2(data)
+
+    if not url:
+        return data
+
+    ver = parse_name(url)
+
+    if not ver:
+        print(f'unknown url {url}')
+        return data
+
     return data
 
 def patch(path):
@@ -86,7 +111,7 @@ def patch(path):
         orig = f.read()
 
     data = orig
-    data = add_ver(data)
+    #data = add_ver(data)
     data = add_name(data)
 
     if data != orig:
