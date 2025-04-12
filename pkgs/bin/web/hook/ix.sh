@@ -1,7 +1,11 @@
 {% extends '//die/go/build.sh' %}
 
+{% block version %}
+2.8.2
+{% endblock %}
+
 {% block go_url %}
-https://github.com/adnanh/webhook/archive/refs/tags/2.8.2.tar.gz
+https://github.com/adnanh/webhook/archive/refs/tags/{{self.version().strip()}}.tar.gz
 {% endblock %}
 
 {% block go_sha %}

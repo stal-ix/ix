@@ -1,7 +1,11 @@
 {% extends '//die/go/build.sh' %}
 
+{% block version %}
+4.2.0
+{% endblock %}
+
 {% block go_url %}
-https://github.com/xxxserxxx/gotop/archive/refs/tags/v4.2.0.tar.gz
+https://github.com/xxxserxxx/gotop/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 {% endblock %}
 
 {% block go_sha %}

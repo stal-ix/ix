@@ -33,7 +33,7 @@ def add_ver(data):
     if 'block version' in data:
         return data
 
-    if 'block cargo_url' not in data:
+    if 'block go_url' not in data:
         return data
 
     url = get_url(data)

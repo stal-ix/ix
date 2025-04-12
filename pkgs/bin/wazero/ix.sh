@@ -1,7 +1,11 @@
 {% extends '//die/go/build.sh' %}
 
+{% block version %}
+1.9.0
+{% endblock %}
+
 {% block go_url %}
-https://github.com/tetratelabs/wazero/archive/refs/tags/v1.9.0.tar.gz
+https://github.com/tetratelabs/wazero/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 {% endblock %}
 
 {% block go_sha %}

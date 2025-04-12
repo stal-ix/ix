@@ -1,7 +1,11 @@
 {% extends '//die/go/build.sh' %}
 
+{% block version %}
+2.4.0
+{% endblock %}
+
 {% block go_url %}
-https://github.com/gcla/termshark/archive/refs/tags/v2.4.0.tar.gz
+https://github.com/gcla/termshark/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 {% endblock %}
 
 {% block go_sha %}

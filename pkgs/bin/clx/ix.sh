@@ -1,7 +1,11 @@
 {% extends '//die/go/build.sh' %}
 
+{% block version %}
+3.5
+{% endblock %}
+
 {% block go_url %}
-https://github.com/bensadeh/circumflex/archive/refs/tags/3.5.tar.gz
+https://github.com/bensadeh/circumflex/archive/refs/tags/{{self.version().strip()}}.tar.gz
 {% endblock %}
 
 {% block go_sha %}

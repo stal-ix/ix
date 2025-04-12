@@ -1,7 +1,11 @@
 {% extends '//die/go/build.sh' %}
 
+{% block version %}
+0.3.2
+{% endblock %}
+
 {% block go_url %}
-https://github.com/rgburke/grv/archive/refs/tags/v0.3.2.tar.gz
+https://github.com/rgburke/grv/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 {% endblock %}
 
 {% block go_sha %}

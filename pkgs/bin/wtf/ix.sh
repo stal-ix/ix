@@ -1,7 +1,11 @@
 {% extends '//die/go/build.sh' %}
 
+{% block version %}
+0.41.0
+{% endblock %}
+
 {% block go_url %}
-https://github.com/wtfutil/wtf/archive/refs/tags/v0.41.0.tar.gz
+https://github.com/wtfutil/wtf/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 {% endblock %}
 
 {% block go_sha %}

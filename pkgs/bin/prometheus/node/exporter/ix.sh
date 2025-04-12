@@ -1,7 +1,11 @@
 {% extends '//die/go/build.sh' %}
 
+{% block version %}
+1.7.0
+{% endblock %}
+
 {% block go_url %}
-https://github.com/prometheus/node_exporter/archive/refs/tags/v1.7.0.tar.gz
+https://github.com/prometheus/node_exporter/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 {% endblock %}
 
 {% block go_sha %}

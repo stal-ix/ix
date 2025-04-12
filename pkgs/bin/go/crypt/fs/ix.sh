@@ -1,7 +1,11 @@
 {% extends '//die/go/build.sh' %}
 
+{% block version %}
+2.5.2
+{% endblock %}
+
 {% block go_url %}
-https://github.com/rfjakob/gocryptfs/archive/refs/tags/v2.5.2.tar.gz
+https://github.com/rfjakob/gocryptfs/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 {% endblock %}
 
 {% block go_sha %}

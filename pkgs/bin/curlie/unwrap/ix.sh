@@ -1,7 +1,11 @@
 {% extends '//die/go/build.sh' %}
 
+{% block version %}
+1.8.1
+{% endblock %}
+
 {% block go_url %}
-https://github.com/rs/curlie/archive/refs/tags/v1.8.1.tar.gz
+https://github.com/rs/curlie/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 {% endblock %}
 
 {% block go_sha %}

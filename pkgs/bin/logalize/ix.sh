@@ -1,7 +1,11 @@
 {% extends '//die/go/build.sh' %}
 
+{% block version %}
+0.4.2
+{% endblock %}
+
 {% block go_url %}
-https://github.com/deponian/logalize/archive/refs/tags/v0.4.2.tar.gz
+https://github.com/deponian/logalize/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 {% endblock %}
 
 {% block go_sha %}

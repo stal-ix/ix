@@ -1,7 +1,11 @@
 {% extends '//die/go/build.sh' %}
 
+{% block version %}
+1.0.9
+{% endblock %}
+
 {% block go_url %}
-https://github.com/xyproto/gendesk/archive/refs/tags/1.0.9.tar.gz
+https://github.com/xyproto/gendesk/archive/refs/tags/{{self.version().strip()}}.tar.gz
 {% endblock %}
 
 {% block go_sha %}

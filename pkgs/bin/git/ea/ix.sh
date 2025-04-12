@@ -1,7 +1,11 @@
 {% extends '//die/go/build.sh' %}
 
+{% block version %}
+1.22.3
+{% endblock %}
+
 {% block go_url %}
-https://github.com/go-gitea/gitea/archive/refs/tags/v1.22.3.tar.gz
+https://github.com/go-gitea/gitea/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 {% endblock %}
 
 {% block go_sha %}

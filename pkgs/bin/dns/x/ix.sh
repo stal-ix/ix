@@ -1,7 +1,11 @@
 {% extends '//die/go/build.sh' %}
 
+{% block version %}
+1.1.6
+{% endblock %}
+
 {% block go_url %}
-https://github.com/projectdiscovery/dnsx/archive/refs/tags/v1.1.6.tar.gz
+https://github.com/projectdiscovery/dnsx/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 {% endblock %}
 
 {% block go_sha %}

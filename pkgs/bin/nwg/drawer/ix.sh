@@ -1,9 +1,13 @@
 {% extends '//die/go/build.sh' %}
 
+{% block version %}
+0.6.1
+{% endblock %}
+
 {# hard x11 deps #}
 
 {% block go_url %}
-https://github.com/nwg-piotr/nwg-drawer/archive/refs/tags/v0.6.1.tar.gz
+https://github.com/nwg-piotr/nwg-drawer/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 {% endblock %}
 
 {% block go_sha %}

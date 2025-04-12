@@ -1,7 +1,11 @@
 {% extends '//die/go/build.sh' %}
 
+{% block version %}
+0.61.0
+{% endblock %}
+
 {% block go_url %}
-https://github.com/junegunn/fzf/archive/refs/tags/v0.61.0.tar.gz
+https://github.com/junegunn/fzf/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 {% endblock %}
 
 {% block go_sha %}

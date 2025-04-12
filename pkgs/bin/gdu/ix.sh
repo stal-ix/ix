@@ -1,7 +1,11 @@
 {% extends '//die/go/build.sh' %}
 
+{% block version %}
+5.28.0
+{% endblock %}
+
 {% block go_url %}
-https://github.com/dundee/gdu/archive/refs/tags/v5.28.0.tar.gz
+https://github.com/dundee/gdu/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 {% endblock %}
 
 {% block go_sha %}
@@ -17,4 +21,3 @@ cd cmd/gdu
 mkdir ${out}/bin
 cp gdu ${out}/bin/
 {% endblock %}
-

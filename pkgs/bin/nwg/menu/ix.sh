@@ -1,7 +1,11 @@
 {% extends '//bin/nwg/t/ix.sh' %}
 
+{% block version %}
+0.1.5
+{% endblock %}
+
 {% block go_url %}
-https://github.com/nwg-piotr/nwg-menu/archive/refs/tags/v0.1.5.tar.gz
+https://github.com/nwg-piotr/nwg-menu/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 {% endblock %}
 
 {% block go_sha %}

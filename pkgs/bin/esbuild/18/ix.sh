@@ -1,7 +1,11 @@
 {% extends '//bin/esbuild/ix.sh' %}
 
+{% block version %}
+0.18.20
+{% endblock %}
+
 {% block go_url %}
-https://github.com/evanw/esbuild/archive/refs/tags/v0.18.20.tar.gz
+https://github.com/evanw/esbuild/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 {% endblock %}
 
 {% block go_sha %}

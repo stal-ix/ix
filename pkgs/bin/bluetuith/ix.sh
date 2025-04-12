@@ -1,7 +1,11 @@
 {% extends '//die/go/build.sh' %}
 
+{% block version %}
+0.2.3
+{% endblock %}
+
 {% block go_url %}
-https://github.com/darkhz/bluetuith/archive/refs/tags/v0.2.3.tar.gz
+https://github.com/darkhz/bluetuith/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 {% endblock %}
 
 {% block go_sha %}
