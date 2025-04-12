@@ -665,6 +665,7 @@ https://ftp.gnu.org/gnu/grub/grub-2.12.tar.xz
 https://ftp.gnu.org/gnu/gsl/gsl-2.7.1.tar.gz
 https://ftp.gnu.org/gnu/gsl/gsl-2.8.tar.gz
 https://ftp.gnu.org/gnu/gzip/gzip-1.13.tar.xz
+https://ftp.gnu.org/gnu/gzip/gzip-1.14.tar.xz
 https://ftp.gnu.org/gnu/inetutils/inetutils-2.4.tar.xz
 https://ftp.gnu.org/gnu/inetutils/inetutils-2.5.tar.xz
 https://ftp.gnu.org/gnu/inetutils/inetutils-2.6.tar.xz
@@ -1983,6 +1984,7 @@ https://github.com/go-gost/gost/archive/refs/tags/v3.0.0-nightly.20240927.tar.gz
 https://github.com/go-task/task/archive/refs/tags/v3.14.0.tar.gz
 https://github.com/gohugoio/hugo/archive/refs/tags/v0.143.1.tar.gz
 https://github.com/gohugoio/hugo/archive/refs/tags/v0.145.0.tar.gz
+https://github.com/gohugoio/hugo/archive/refs/tags/v0.146.2.tar.gz
 https://github.com/gokcehan/lf/archive/refs/tags/r27.tar.gz
 https://github.com/gokcehan/lf/archive/refs/tags/r31.tar.gz
 https://github.com/gokcehan/lf/archive/refs/tags/r32.tar.gz
@@ -2187,6 +2189,7 @@ https://github.com/hyprwm/hyprpicker/archive/refs/tags/v0.3.0.tar.gz
 https://github.com/hyprwm/hyprpicker/archive/refs/tags/v0.4.1.tar.gz
 https://github.com/hyprwm/hyprpicker/archive/refs/tags/v0.4.2.tar.gz
 https://github.com/hyprwm/hyprpicker/archive/refs/tags/v0.4.3.tar.gz
+https://github.com/hyprwm/hyprpicker/archive/refs/tags/v0.4.4.tar.gz
 https://github.com/hyprwm/hyprutils/archive/refs/tags/v0.2.1.tar.gz
 https://github.com/hyprwm/hyprutils/archive/refs/tags/v0.2.2.tar.gz
 https://github.com/hyprwm/hyprutils/archive/refs/tags/v0.2.3.tar.gz
@@ -2472,6 +2475,7 @@ https://github.com/libffi/libffi/archive/refs/tags/v3.4.4.tar.gz
 https://github.com/libffi/libffi/archive/refs/tags/v3.4.5.tar.gz
 https://github.com/libffi/libffi/archive/refs/tags/v3.4.6.tar.gz
 https://github.com/libffi/libffi/archive/refs/tags/v3.4.7.tar.gz
+https://github.com/libffi/libffi/archive/refs/tags/v3.4.8.tar.gz
 https://github.com/libffi/libffi/commit/8308bed5b2423878aa20d7884a99cf2e30b8daf7.diff
 https://github.com/libfuse/libfuse/archive/refs/tags/fuse-2.9.9.tar.gz
 https://github.com/libfuse/libfuse/archive/refs/tags/fuse-3.16.1.tar.gz
@@ -2584,6 +2588,7 @@ https://github.com/linux-nvme/libnvme/archive/refs/tags/v1.10.tar.gz
 https://github.com/linux-nvme/libnvme/archive/refs/tags/v1.11.1.tar.gz
 https://github.com/linux-nvme/libnvme/archive/refs/tags/v1.11.tar.gz
 https://github.com/linux-nvme/libnvme/archive/refs/tags/v1.12.tar.gz
+https://github.com/linux-nvme/libnvme/archive/refs/tags/v1.13.tar.gz
 https://github.com/linux-nvme/libnvme/archive/refs/tags/v1.5.tar.gz
 https://github.com/linux-nvme/libnvme/archive/refs/tags/v1.6.tar.gz
 https://github.com/linux-nvme/libnvme/archive/refs/tags/v1.8.tar.gz
@@ -2591,6 +2596,7 @@ https://github.com/linux-nvme/libnvme/archive/refs/tags/v1.9.tar.gz
 https://github.com/linux-nvme/nvme-cli/archive/refs/tags/v2.10.2.tar.gz
 https://github.com/linux-nvme/nvme-cli/archive/refs/tags/v2.11.tar.gz
 https://github.com/linux-nvme/nvme-cli/archive/refs/tags/v2.12.tar.gz
+https://github.com/linux-nvme/nvme-cli/archive/refs/tags/v2.13.tar.gz
 https://github.com/linux-nvme/nvme-cli/archive/refs/tags/v2.5.tar.gz
 https://github.com/linux-nvme/nvme-cli/archive/refs/tags/v2.6.tar.gz
 https://github.com/linux-nvme/nvme-cli/archive/refs/tags/v2.8.tar.gz
@@ -4309,6 +4315,7 @@ https://mirrors.edge.kernel.org/pub/linux/libs/ell/ell-0.72.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/libs/ell/ell-0.73.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/libs/ell/ell-0.74.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/libs/ell/ell-0.75.tar.xz
+https://mirrors.edge.kernel.org/pub/linux/libs/ell/ell-0.76.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/network/wireless/iwd-2.10.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/network/wireless/iwd-2.11.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/network/wireless/iwd-2.12.tar.xz
@@ -4416,6 +4423,7 @@ https://salsa.debian.org/debian/netcat-openbsd/-/archive/debian/1.218-3/netcat-o
 https://salsa.debian.org/iso-codes-team/iso-codes/-/archive/v4.12.0/iso-codes-v4.12.0.tar.gz
 https://salsa.debian.org/iso-codes-team/iso-codes/-/archive/v4.16.0/iso-codes-v4.16.0.tar.gz
 https://salsa.debian.org/iso-codes-team/iso-codes/-/archive/v4.17.0/iso-codes-v4.17.0.tar.gz
+https://salsa.debian.org/iso-codes-team/iso-codes/-/archive/v4.18.0/iso-codes-v4.18.0.tar.gz
 https://secure.nic.cz/files/knot-dns/knot-3.2.9.tar.xz
 https://secure.nic.cz/files/knot-dns/knot-3.3.2.tar.xz
 https://secure.nic.cz/files/knot-dns/knot-3.3.3.tar.xz
@@ -4709,6 +4717,7 @@ https://www.mpg123.org/download/mpg123-1.32.6.tar.bz2
 https://www.nano-editor.org/dist/v7/nano-7.2.tar.xz
 https://www.nano-editor.org/dist/v8/nano-8.2.tar.xz
 https://www.nano-editor.org/dist/v8/nano-8.3.tar.xz
+https://www.nano-editor.org/dist/v8/nano-8.4.tar.xz
 https://www.nasm.us/pub/nasm/releasebuilds/2.16.01/nasm-2.16.01.tar.gz
 https://www.nasm.us/pub/nasm/releasebuilds/2.16.02/nasm-2.16.02.tar.gz
 https://www.nasm.us/pub/nasm/releasebuilds/2.16.03/nasm-2.16.03.tar.gz
