@@ -1,5 +1,9 @@
 {% extends '//bin/gawk/t/ix.sh' %}
 
+{% block pkg_name %}
+gawk
+{% endblock %}
+
 {% block version %}
 5.1.1
 {% endblock %}

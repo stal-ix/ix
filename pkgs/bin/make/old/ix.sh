@@ -1,5 +1,9 @@
 {% extends '//bin/make/ix.sh' %}
 
+{% block pkg_name %}
+make
+{% endblock %}
+
 {% block version %}
 4.3
 {% endblock %}

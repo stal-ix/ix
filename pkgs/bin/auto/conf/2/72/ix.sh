@@ -1,5 +1,9 @@
 {% extends '//bin/auto/conf/2/71/ix.sh' %}
 
+{% block pkg_name %}
+autoconf
+{% endblock %}
+
 {% block version %}
 2.72
 {% endblock %}

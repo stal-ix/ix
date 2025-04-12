@@ -1,5 +1,9 @@
 {% extends 'old/ix.sh' %}
 
+{% block pkg_name %}
+findutils
+{% endblock %}
+
 {% block version %}
 4.10.0
 {% endblock %}

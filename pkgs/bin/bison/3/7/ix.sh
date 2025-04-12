@@ -1,5 +1,9 @@
 {% extends '//die/c/autohell.sh' %}
 
+{% block pkg_name %}
+bison
+{% endblock %}
+
 {% block version %}
 3.7.6
 {% endblock %}

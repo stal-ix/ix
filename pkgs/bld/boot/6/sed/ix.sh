@@ -1,5 +1,9 @@
 {% extends '//bin/sed/ix.sh' %}
 
+{% block pkg_name %}
+sed
+{% endblock %}
+
 {% block version %}
 4.8
 {% endblock %}

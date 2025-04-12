@@ -1,5 +1,9 @@
 {% extends '//bld/boot/10/bison/t/ix.sh' %}
 
+{% block pkg_name %}
+bison
+{% endblock %}
+
 {% block version %}
 3.5.1
 {% endblock %}

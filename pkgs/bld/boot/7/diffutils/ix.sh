@@ -1,5 +1,9 @@
 {% extends '//bin/diffutils/ix.sh' %}
 
+{% block pkg_name %}
+diffutils
+{% endblock %}
+
 {% block version %}
 3.7
 {% endblock %}

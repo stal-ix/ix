@@ -1,5 +1,9 @@
 {% extends '//die/c/autohell.sh' %}
 
+{% block pkg_name %}
+findutils
+{% endblock %}
+
 {% block version %}
 4.8.0
 {% endblock %}

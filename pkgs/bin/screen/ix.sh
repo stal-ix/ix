@@ -1,5 +1,9 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block pkg_name %}
+screen
+{% endblock %}
+
 {% block version %}
 5.0.0
 {% endblock %}

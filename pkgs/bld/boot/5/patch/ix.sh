@@ -1,5 +1,9 @@
 {% extends '//bin/patch/ix.sh' %}
 
+{% block pkg_name %}
+patch
+{% endblock %}
+
 {% block version %}
 2.7.6
 {% endblock %}

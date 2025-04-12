@@ -1,5 +1,9 @@
 {% extends '//die/c/autohell.sh' %}
 
+{% block pkg_name %}
+libsigsegv
+{% endblock %}
+
 {% block version %}
 2.13
 {% endblock %}

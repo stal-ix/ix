@@ -1,5 +1,9 @@
 {% extends '//bin/coreutils/8/31/ix.sh' %}
 
+{% block pkg_name %}
+coreutils
+{% endblock %}
+
 {% block version %}
 8.32
 {% endblock %}

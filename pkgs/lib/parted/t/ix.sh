@@ -1,5 +1,9 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block pkg_name %}
+parted
+{% endblock %}
+
 {% block version %}
 3.6
 {% endblock %}

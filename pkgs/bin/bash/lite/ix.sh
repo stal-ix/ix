@@ -1,5 +1,9 @@
 {% extends '//bin/bash/5/t/ix.sh' %}
 
+{% block pkg_name %}
+bash
+{% endblock %}
+
 {% block version %}
 5.1.16
 {% endblock %}

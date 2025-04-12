@@ -1,5 +1,9 @@
 {% extends '//bin/bison/3/7/ix.sh' %}
 
+{% block pkg_name %}
+bison
+{% endblock %}
+
 {% block version %}
 3.8.2
 {% endblock %}

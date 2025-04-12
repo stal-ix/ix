@@ -1,5 +1,9 @@
 {% extends '//bin/gdb/13/ix.sh' %}
 
+{% block pkg_name %}
+gdb
+{% endblock %}
+
 {% block version %}
 12.1
 {% endblock %}

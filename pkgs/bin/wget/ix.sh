@@ -1,5 +1,9 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block pkg_name %}
+wget
+{% endblock %}
+
 {% block version %}
 1.25.0
 {% endblock %}

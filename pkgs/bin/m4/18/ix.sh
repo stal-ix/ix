@@ -1,5 +1,9 @@
 {% extends '//bin/m4/19/ix.sh' %}
 
+{% block pkg_name %}
+m4
+{% endblock %}
+
 {% block version %}
 1.4.18
 {% endblock %}

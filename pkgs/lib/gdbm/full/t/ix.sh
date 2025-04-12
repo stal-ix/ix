@@ -1,5 +1,9 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block pkg_name %}
+gdbm
+{% endblock %}
+
 {% block version %}
 1.24
 {% endblock %}

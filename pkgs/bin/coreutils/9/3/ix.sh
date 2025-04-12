@@ -1,5 +1,9 @@
 {% extends '//bin/coreutils/9/1/ix.sh' %}
 
+{% block pkg_name %}
+coreutils
+{% endblock %}
+
 {% block version %}
 9.3
 {% endblock %}

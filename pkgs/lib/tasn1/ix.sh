@@ -1,5 +1,9 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block pkg_name %}
+libtasn1
+{% endblock %}
+
 {% block version %}
 4.19.0
 {% endblock %}

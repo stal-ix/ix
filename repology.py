@@ -94,6 +94,9 @@ def parse_name(url):
     if 'gitlab.freedesktop.org' in url:
         return url.split('/')[4]
 
+    if 'ftp.gnu.org' in url:
+        return url.split('/')[4]
+
 def add_name(data):
     if 'block version' not in data:
         return data

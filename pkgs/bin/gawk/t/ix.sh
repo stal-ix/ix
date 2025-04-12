@@ -1,5 +1,9 @@
 {% extends '//die/c/autohell.sh' %}
 
+{% block pkg_name %}
+gawk
+{% endblock %}
+
 {% block version %}
 5.3.1
 {% endblock %}
