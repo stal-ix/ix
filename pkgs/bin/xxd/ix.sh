@@ -1,5 +1,9 @@
 {% extends '//die/c/ix.sh' %}
 
+{% block pkg_name %}
+vim
+{% endblock %}
+
 {% block version %}
 9.0.0006
 {% endblock %}

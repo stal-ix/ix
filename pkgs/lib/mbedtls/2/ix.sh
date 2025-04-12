@@ -1,5 +1,9 @@
 {% extends '//lib/mbedtls/t/ix.sh' %}
 
+{% block pkg_name %}
+mbedtls
+{% endblock %}
+
 {% block version %}
 2.28.10
 {% endblock %}

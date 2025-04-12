@@ -1,5 +1,9 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+porto
+{% endblock %}
+
 {% block version %}
 5.3.15
 {% endblock %}

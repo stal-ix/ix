@@ -1,5 +1,9 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block pkg_name %}
+c-rbtree
+{% endblock %}
+
 {% block version %}
 3.2.0
 {% endblock %}

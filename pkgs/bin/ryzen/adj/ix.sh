@@ -1,5 +1,9 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+RyzenAdj
+{% endblock %}
+
 {% block version %}
 0.16.0
 {% endblock %}

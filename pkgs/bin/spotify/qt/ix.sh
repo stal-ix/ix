@@ -1,5 +1,9 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+spotify-qt
+{% endblock %}
+
 {% block version %}
 3.9
 {% endblock %}

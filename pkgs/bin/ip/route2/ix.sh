@@ -1,5 +1,9 @@
 {% extends '//die/c/make.sh' %}
 
+{% block pkg_name %}
+iproute2
+{% endblock %}
+
 {% block version %}
 6.14.0
 {% endblock %}

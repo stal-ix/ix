@@ -1,5 +1,9 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+crc32c
+{% endblock %}
+
 {% block version %}
 1.1.2
 {% endblock %}

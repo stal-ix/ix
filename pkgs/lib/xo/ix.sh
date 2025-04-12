@@ -1,5 +1,9 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block pkg_name %}
+libxo
+{% endblock %}
+
 {% block version %}
 1.7.5
 {% endblock %}

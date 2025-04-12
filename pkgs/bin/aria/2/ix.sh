@@ -1,5 +1,9 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block pkg_name %}
+aria2
+{% endblock %}
+
 {% block version %}
 1.37.0
 {% endblock %}

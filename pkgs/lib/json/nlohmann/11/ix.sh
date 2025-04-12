@@ -1,5 +1,9 @@
 {% extends '//lib/json/nlohmann/t/ix.sh' %}
 
+{% block pkg_name %}
+json
+{% endblock %}
+
 {% block version %}
 3.11.2
 {% endblock %}

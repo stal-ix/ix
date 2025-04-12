@@ -1,5 +1,9 @@
 {% extends '//die/c/autorehell.sh'%}
 
+{% block pkg_name %}
+libxcrypt
+{% endblock %}
+
 {% block version %}
 4.4.37
 {% endblock %}

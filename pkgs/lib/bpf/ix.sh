@@ -1,5 +1,9 @@
 {% extends '//die/c/make.sh' %}
 
+{% block pkg_name %}
+libbpf
+{% endblock %}
+
 {% block version %}
 1.5.0
 {% endblock %}

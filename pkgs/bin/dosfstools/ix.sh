@@ -1,5 +1,9 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block pkg_name %}
+dosfstools
+{% endblock %}
+
 {% block version %}
 4.2
 {% endblock %}

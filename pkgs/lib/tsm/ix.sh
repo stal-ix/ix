@@ -1,5 +1,9 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+libtsm
+{% endblock %}
+
 {% block version %}
 4.0.2
 {% endblock %}

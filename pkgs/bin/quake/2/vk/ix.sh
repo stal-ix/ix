@@ -1,5 +1,9 @@
 {% extends '//die/c/make.sh' %}
 
+{% block pkg_name %}
+vkQuake2
+{% endblock %}
+
 {% block version %}
 1.5.8
 {% endblock %}

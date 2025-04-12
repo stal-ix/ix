@@ -1,5 +1,9 @@
 {% extends '//die/c/ix.sh' %}
 
+{% block pkg_name %}
+u-config
+{% endblock %}
+
 {% block version %}
 0.33.3
 {% endblock %}

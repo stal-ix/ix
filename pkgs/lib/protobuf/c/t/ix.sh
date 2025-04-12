@@ -1,5 +1,9 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block pkg_name %}
+protobuf-c
+{% endblock %}
+
 {% block version %}
 1.5.2
 {% endblock %}

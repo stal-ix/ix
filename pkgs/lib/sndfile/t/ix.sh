@@ -1,5 +1,9 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+libsndfile
+{% endblock %}
+
 {% block version %}
 1.2.2
 {% endblock %}

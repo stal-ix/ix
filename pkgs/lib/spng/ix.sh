@@ -1,5 +1,9 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block pkg_name %}
+libspng
+{% endblock %}
+
 {% block version %}
 0.7.4
 {% endblock %}

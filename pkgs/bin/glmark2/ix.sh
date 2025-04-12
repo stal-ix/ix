@@ -1,5 +1,9 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block pkg_name %}
+glmark2
+{% endblock %}
+
 {% block version %}
 2023.01
 {% endblock %}

@@ -1,5 +1,9 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block pkg_name %}
+libwacom
+{% endblock %}
+
 {% block version %}
 2.15.0
 {% endblock %}

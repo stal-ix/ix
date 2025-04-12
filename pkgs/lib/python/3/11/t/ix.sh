@@ -1,5 +1,9 @@
 {% extends '//lib/python/3/10/ix.sh' %}
 
+{% block pkg_name %}
+cpython
+{% endblock %}
+
 {% block version %}
 3.11.8
 {% endblock %}

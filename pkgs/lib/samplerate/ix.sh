@@ -1,5 +1,9 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+libsamplerate
+{% endblock %}
+
 {% block version %}
 0.2.2
 {% endblock %}

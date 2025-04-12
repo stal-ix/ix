@@ -1,5 +1,9 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+clifm
+{% endblock %}
+
 {% block version %}
 1.24
 {% endblock %}

@@ -1,5 +1,9 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+librsync
+{% endblock %}
+
 {% block version %}
 2.3.4
 {% endblock %}

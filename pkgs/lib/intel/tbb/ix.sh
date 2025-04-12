@@ -1,5 +1,9 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+oneTBB
+{% endblock %}
+
 {% block version %}
 2021.13.0
 {% endblock %}

@@ -1,5 +1,9 @@
 {% extends '//die/go/build.sh' %}
 
+{% block pkg_name %}
+sftpgo
+{% endblock %}
+
 {% block version %}
 2.6.0
 {% endblock %}

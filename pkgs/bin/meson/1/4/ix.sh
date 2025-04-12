@@ -1,5 +1,9 @@
 {% extends '//bin/meson/1/3/ix.sh' %}
 
+{% block pkg_name %}
+meson
+{% endblock %}
+
 {% block version %}
 1.4.1
 {% endblock %}

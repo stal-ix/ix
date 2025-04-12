@@ -1,5 +1,9 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block pkg_name %}
+libnvme
+{% endblock %}
+
 {% block version %}
 1.13
 {% endblock %}

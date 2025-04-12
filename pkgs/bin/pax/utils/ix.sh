@@ -1,5 +1,9 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block pkg_name %}
+pax-utils
+{% endblock %}
+
 {% block version %}
 1.3.8
 {% endblock %}

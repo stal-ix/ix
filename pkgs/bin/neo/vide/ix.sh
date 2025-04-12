@@ -1,5 +1,9 @@
 {% extends '//die/rust/cargo.sh' %}
 
+{% block pkg_name %}
+neovide
+{% endblock %}
+
 {% block version %}
 0.12.2
 {% endblock %}

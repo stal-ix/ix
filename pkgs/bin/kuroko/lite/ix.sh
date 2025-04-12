@@ -1,5 +1,9 @@
 {% extends '//bin/kuroko/t/ix.sh' %}
 
+{% block pkg_name %}
+kuroko
+{% endblock %}
+
 {% block version %}
 1.3.1
 {% endblock %}

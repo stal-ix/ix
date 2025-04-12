@@ -1,5 +1,9 @@
 {% extends '//bin/u/config/ix.sh' %}
 
+{% block pkg_name %}
+u-config
+{% endblock %}
+
 {% block version %}
 0.31.1
 {% endblock %}

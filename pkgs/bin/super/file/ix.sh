@@ -1,5 +1,9 @@
 {% extends '//die/go/build.sh' %}
 
+{% block pkg_name %}
+superfile
+{% endblock %}
+
 {% block version %}
 1.1.3
 {% endblock %}

@@ -1,5 +1,9 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+wireshark
+{% endblock %}
+
 {% block version %}
 4.4.5
 {% endblock %}

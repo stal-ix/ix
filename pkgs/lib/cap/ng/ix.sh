@@ -1,5 +1,9 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block pkg_name %}
+libcap-ng
+{% endblock %}
+
 {% block version %}
 0.8.5
 {% endblock %}

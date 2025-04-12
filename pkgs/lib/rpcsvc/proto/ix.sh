@@ -1,5 +1,9 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block pkg_name %}
+rpcsvc-proto
+{% endblock %}
+
 {% block version %}
 1.4.3
 {% endblock %}

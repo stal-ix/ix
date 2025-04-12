@@ -1,5 +1,9 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block pkg_name %}
+ddcutil
+{% endblock %}
+
 {% block version %}
 2.1.4
 {% endblock %}

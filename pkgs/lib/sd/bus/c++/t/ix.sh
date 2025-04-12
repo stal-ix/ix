@@ -1,5 +1,9 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+sdbus-cpp
+{% endblock %}
+
 {% block version %}
 1.6.0
 {% endblock %}

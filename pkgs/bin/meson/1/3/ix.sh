@@ -1,5 +1,9 @@
 {% extends '//die/std/ix.sh' %}
 
+{% block pkg_name %}
+meson
+{% endblock %}
+
 {% block version %}
 1.3.2
 {% endblock %}

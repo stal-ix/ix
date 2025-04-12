@@ -1,5 +1,9 @@
 {% extends '//die/rust/cargo.sh' %}
 
+{% block pkg_name %}
+shadowsocks-rust
+{% endblock %}
+
 {% block version %}
 1.22.0
 {% endblock %}

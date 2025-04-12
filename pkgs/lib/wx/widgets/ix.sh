@@ -1,5 +1,9 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+wxWidgets
+{% endblock %}
+
 {% block version_major %}
 3.2
 {% endblock %}

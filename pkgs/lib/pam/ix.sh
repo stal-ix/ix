@@ -1,5 +1,9 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block pkg_name %}
+linux-pam
+{% endblock %}
+
 {% block version %}
 1.6.1
 {% endblock %}

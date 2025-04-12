@@ -1,5 +1,9 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+jansson
+{% endblock %}
+
 {% block version %}
 2.14.1
 {% endblock %}

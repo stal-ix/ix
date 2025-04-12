@@ -1,5 +1,9 @@
 {% extends '//bin/sway/compositor/ix.sh' %}
 
+{% block pkg_name %}
+swayfx
+{% endblock %}
+
 {% block version %}
 0.4
 {% endblock %}

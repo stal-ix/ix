@@ -1,5 +1,9 @@
 {% extends '//die/c/make.sh' %}
 
+{% block pkg_name %}
+p7zip
+{% endblock %}
+
 {% block version %}
 17.06
 {% endblock %}

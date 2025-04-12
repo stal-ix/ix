@@ -1,5 +1,9 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block pkg_name %}
+swayidle
+{% endblock %}
+
 {% block version %}
 1.8.0
 {% endblock %}

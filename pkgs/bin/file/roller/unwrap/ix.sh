@@ -1,5 +1,9 @@
 {% extends '//die/c/gnome.sh' %}
 
+{% block pkg_name %}
+file-roller
+{% endblock %}
+
 {% block version %}
 43.1
 {% endblock %}

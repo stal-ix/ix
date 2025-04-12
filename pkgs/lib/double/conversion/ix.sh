@@ -1,5 +1,9 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+double-conversion
+{% endblock %}
+
 {% block version %}
 3.3.1
 {% endblock %}

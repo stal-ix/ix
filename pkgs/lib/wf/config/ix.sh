@@ -1,5 +1,9 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block pkg_name %}
+wf-config
+{% endblock %}
+
 {% block version %}
 0.9.0
 {% endblock %}

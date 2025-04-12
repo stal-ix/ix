@@ -1,5 +1,9 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block pkg_name %}
+rasdaemon
+{% endblock %}
+
 {% block version %}
 0.8.0
 {% endblock %}

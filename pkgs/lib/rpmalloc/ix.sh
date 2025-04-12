@@ -1,5 +1,9 @@
 {% extends '//die/c/ninja.sh' %}
 
+{% block pkg_name %}
+rpmalloc
+{% endblock %}
+
 {% block version %}
 1.4.4
 {% endblock %}

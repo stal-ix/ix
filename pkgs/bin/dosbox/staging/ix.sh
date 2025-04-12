@@ -1,5 +1,9 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block pkg_name %}
+dosbox-staging
+{% endblock %}
+
 {% block version %}
 0.82.1
 {% endblock %}

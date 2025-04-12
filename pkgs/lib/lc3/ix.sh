@@ -1,5 +1,9 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block pkg_name %}
+liblc3
+{% endblock %}
+
 {% block version %}
 1.1.1
 {% endblock %}

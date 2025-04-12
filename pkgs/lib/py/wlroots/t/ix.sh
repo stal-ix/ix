@@ -1,5 +1,9 @@
 {% extends '//die/c/ix.sh' %}
 
+{% block pkg_name %}
+pywlroots
+{% endblock %}
+
 {% block version %}
 0.16.6
 {% endblock %}

@@ -1,5 +1,9 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+tea-qt
+{% endblock %}
+
 {% block version %}
 63.0.2
 {% endblock %}

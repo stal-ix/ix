@@ -1,5 +1,9 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+iir1
+{% endblock %}
+
 {% block version %}
 1.9.4
 {% endblock %}

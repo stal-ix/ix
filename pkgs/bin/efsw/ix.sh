@@ -1,5 +1,9 @@
 {% extends '//die/c/premake.sh' %}
 
+{% block pkg_name %}
+efsw
+{% endblock %}
+
 {% block version %}
 1.3.1
 {% endblock %}

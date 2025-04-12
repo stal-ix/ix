@@ -1,5 +1,9 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block pkg_name %}
+adwaita-icon-theme
+{% endblock %}
+
 {% block version %}
 48.0
 {% endblock %}

@@ -1,5 +1,9 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+opencv
+{% endblock %}
+
 {% block version %}
 4.11.0
 {% endblock %}

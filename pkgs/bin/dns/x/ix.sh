@@ -1,5 +1,9 @@
 {% extends '//die/go/build.sh' %}
 
+{% block pkg_name %}
+dnsx
+{% endblock %}
+
 {% block version %}
 1.1.6
 {% endblock %}

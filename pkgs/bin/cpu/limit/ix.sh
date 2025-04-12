@@ -1,5 +1,9 @@
 {% extends '//die/c/make.sh' %}
 
+{% block pkg_name %}
+cpulimit
+{% endblock %}
+
 {% block version %}
 0.2
 {% endblock %}

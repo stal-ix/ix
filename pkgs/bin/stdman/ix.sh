@@ -1,5 +1,9 @@
 {% extends '//die/c/make.sh' %}
 
+{% block pkg_name %}
+stdman
+{% endblock %}
+
 {% block version %}
 2024.07.05
 {% endblock %}

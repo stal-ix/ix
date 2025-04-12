@@ -1,5 +1,9 @@
 {% extends '//die/fonts.sh' %}
 
+{% block pkg_name %}
+cascadia-code
+{% endblock %}
+
 {% block version %}
 2404.23
 {% endblock %}

@@ -1,5 +1,9 @@
 {% extends '//die/go/build.sh' %}
 
+{% block pkg_name %}
+gitea
+{% endblock %}
+
 {% block version %}
 1.22.3
 {% endblock %}

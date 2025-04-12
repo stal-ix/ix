@@ -1,5 +1,9 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block pkg_name %}
+usrsctp
+{% endblock %}
+
 {% block version %}
 0.9.5.0
 {% endblock %}

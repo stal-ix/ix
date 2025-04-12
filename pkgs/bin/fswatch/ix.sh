@@ -1,5 +1,9 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block pkg_name %}
+fswatch
+{% endblock %}
+
 {% block version %}
 1.17.1
 {% endblock %}

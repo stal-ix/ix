@@ -1,5 +1,9 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+leptonica
+{% endblock %}
+
 {% block version %}
 1.85.0
 {% endblock %}

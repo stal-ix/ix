@@ -1,5 +1,9 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+bpftrace
+{% endblock %}
+
 {% block version %}
 0.23.0
 {% endblock %}

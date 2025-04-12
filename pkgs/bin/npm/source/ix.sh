@@ -1,5 +1,9 @@
 {% extends '//die/std/ix.sh' %}
 
+{% block pkg_name %}
+cli
+{% endblock %}
+
 {% block version %}
 11.1.0
 {% endblock %}

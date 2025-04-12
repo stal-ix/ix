@@ -1,5 +1,9 @@
 {% extends '//die/c/ix.sh' %}
 
+{% block pkg_name %}
+catboost
+{% endblock %}
+
 {% block version %}
 1.0.6
 {% endblock %}

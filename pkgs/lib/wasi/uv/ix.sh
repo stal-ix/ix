@@ -1,5 +1,9 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+uvwasi
+{% endblock %}
+
 {% block version %}
 0.0.18
 {% endblock %}

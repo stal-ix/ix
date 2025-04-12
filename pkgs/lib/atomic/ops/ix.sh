@@ -1,5 +1,9 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+libatomic_ops
+{% endblock %}
+
 {% block version %}
 7.8.2
 {% endblock %}

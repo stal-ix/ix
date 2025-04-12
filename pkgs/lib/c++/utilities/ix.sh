@@ -1,5 +1,9 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+cpp-utilities
+{% endblock %}
+
 {% block version %}
 5.21.0
 {% endblock %}

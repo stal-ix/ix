@@ -1,5 +1,9 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block pkg_name %}
+libqrencode
+{% endblock %}
+
 {% block version %}
 4.1.1
 {% endblock %}

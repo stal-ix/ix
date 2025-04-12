@@ -1,5 +1,9 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+glaze
+{% endblock %}
+
 {% block version %}
 4.4.3
 {% endblock %}

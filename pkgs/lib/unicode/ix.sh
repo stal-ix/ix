@@ -1,5 +1,9 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+libunicode
+{% endblock %}
+
 {% block version %}
 0.6.0
 {% endblock %}

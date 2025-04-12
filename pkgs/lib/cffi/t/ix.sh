@@ -1,5 +1,9 @@
 {% extends '//die/c/ix.sh' %}
 
+{% block pkg_name %}
+cffi
+{% endblock %}
+
 {% block version %}
 1.16.0
 {% endblock %}

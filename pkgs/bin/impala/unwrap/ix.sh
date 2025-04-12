@@ -1,5 +1,9 @@
 {% extends '//die/rust/cargo.sh' %}
 
+{% block pkg_name %}
+impala
+{% endblock %}
+
 {% block version %}
 0.2.3
 {% endblock %}

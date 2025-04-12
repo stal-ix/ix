@@ -1,5 +1,9 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+libarchive
+{% endblock %}
+
 {% block version %}
 3.7.9
 {% endblock %}

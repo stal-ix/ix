@@ -1,5 +1,9 @@
 {% extends '//die/c/make.sh' %}
 
+{% block pkg_name %}
+mujs
+{% endblock %}
+
 {% block version %}1.3.5{% endblock %}
 
 {% block fetch %}

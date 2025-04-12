@@ -1,5 +1,9 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+qtkeychain
+{% endblock %}
+
 {% block version %}
 0.14.3
 {% endblock %}

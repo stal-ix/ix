@@ -1,5 +1,9 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+shaderc
+{% endblock %}
+
 {% block version %}v2025.1{% endblock %}
 
 {% block fetch %}

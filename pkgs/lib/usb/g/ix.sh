@@ -1,5 +1,9 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block pkg_name %}
+libgusb
+{% endblock %}
+
 {% block version %}
 0.4.9
 {% endblock %}

@@ -1,5 +1,9 @@
 {% extends '//bin/grpc/java/ix.sh' %}
 
+{% block pkg_name %}
+grpc-java
+{% endblock %}
+
 {% block version %}
 1.51.3
 {% endblock %}

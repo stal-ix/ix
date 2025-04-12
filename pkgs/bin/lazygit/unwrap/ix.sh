@@ -1,5 +1,9 @@
 {% extends '//die/go/build.sh' %}
 
+{% block pkg_name %}
+lazygit
+{% endblock %}
+
 {% block version %}
 0.48.0
 {% endblock %}

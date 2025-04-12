@@ -1,5 +1,9 @@
 {% extends '//die/c/gnome.sh' %}
 
+{% block pkg_name %}
+geany
+{% endblock %}
+
 {% block version %}
 2.0.0
 {% endblock %}

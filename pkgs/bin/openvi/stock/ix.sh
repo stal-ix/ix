@@ -1,5 +1,9 @@
 {% extends '//die/c/make.sh' %}
 
+{% block pkg_name %}
+OpenVi
+{% endblock %}
+
 {% block version %}
 7.6.30
 {% endblock %}

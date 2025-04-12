@@ -1,5 +1,9 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+openjpeg
+{% endblock %}
+
 {% block version %}2.5{% endblock %}
 
 {% block fetch %}

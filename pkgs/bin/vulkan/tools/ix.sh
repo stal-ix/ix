@@ -1,5 +1,9 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+Vulkan-Tools
+{% endblock %}
+
 {% block version %}
 1.3.290.0
 {% endblock %}

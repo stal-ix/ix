@@ -1,5 +1,9 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block pkg_name %}
+squashfuse
+{% endblock %}
+
 {% block version %}
 0.5.0
 {% endblock %}

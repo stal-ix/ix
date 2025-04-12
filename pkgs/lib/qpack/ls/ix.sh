@@ -1,5 +1,9 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+ls-qpack
+{% endblock %}
+
 {% block version %}
 2.6.0
 {% endblock %}

@@ -1,5 +1,9 @@
 {% extends '//die/std/ix.sh' %}
 
+{% block pkg_name %}
+cmrc
+{% endblock %}
+
 {% block version %}
 2.0.1
 {% endblock %}

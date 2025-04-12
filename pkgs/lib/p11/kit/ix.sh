@@ -1,5 +1,9 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block pkg_name %}
+p11-kit
+{% endblock %}
+
 {% block version %}
 0.25.4
 {% endblock %}

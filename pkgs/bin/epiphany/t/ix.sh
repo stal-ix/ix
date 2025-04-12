@@ -1,5 +1,9 @@
 {% extends '//die/c/gnome.sh' %}
 
+{% block pkg_name %}
+epiphany
+{% endblock %}
+
 {% block version %}
 47.2
 {% endblock %}

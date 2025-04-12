@@ -1,5 +1,9 @@
 {% extends '//lib/fmt/t/ix.sh' %}
 
+{% block pkg_name %}
+fmt
+{% endblock %}
+
 {% block version %}
 10.2.1
 {% endblock %}

@@ -1,5 +1,9 @@
 {% extends '//die/c/ix.sh' %}
 
+{% block pkg_name %}
+glm
+{% endblock %}
+
 {% block version %}
 1.0.1
 {% endblock %}

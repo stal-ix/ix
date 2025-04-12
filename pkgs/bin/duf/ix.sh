@@ -1,5 +1,9 @@
 {% extends '//die/go/build.sh' %}
 
+{% block pkg_name %}
+duf
+{% endblock %}
+
 {% block version %}
 0.8.1
 {% endblock %}

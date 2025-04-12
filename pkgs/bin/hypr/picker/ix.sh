@@ -1,5 +1,9 @@
 {% extends '//bin/hypr/t/ix.sh' %}
 
+{% block pkg_name %}
+hyprpicker
+{% endblock %}
+
 {% block version %}
 0.4.4
 {% endblock %}

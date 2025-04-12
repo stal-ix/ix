@@ -1,5 +1,9 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block pkg_name %}
+swayimg
+{% endblock %}
+
 {% block version %}
 3.9
 {% endblock %}

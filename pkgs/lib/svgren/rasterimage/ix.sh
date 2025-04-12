@@ -1,5 +1,9 @@
 {% extends '//lib/svgren/t/ix.sh' %}
 
+{% block pkg_name %}
+rasterimage
+{% endblock %}
+
 {% block version %}
 0.1.8
 {% endblock %}

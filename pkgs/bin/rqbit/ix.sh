@@ -1,5 +1,9 @@
 {% extends '//die/rust/cargo.sh' %}
 
+{% block pkg_name %}
+rqbit
+{% endblock %}
+
 {% block version %}
 8.0.0
 {% endblock %}

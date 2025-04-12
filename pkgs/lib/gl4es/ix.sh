@@ -1,5 +1,9 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+gl4es
+{% endblock %}
+
 {% block version %}
 1.1.4
 {% endblock %}

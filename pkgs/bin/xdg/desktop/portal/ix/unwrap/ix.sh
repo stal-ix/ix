@@ -1,5 +1,9 @@
 {% extends '//die/go/build.sh' %}
 
+{% block pkg_name %}
+portal
+{% endblock %}
+
 {% block version %}
 6b4069b1d1ed82c4d8a4b64054bf7fa719ead62e
 {% endblock %}

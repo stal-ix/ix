@@ -1,5 +1,9 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block pkg_name %}
+libusb
+{% endblock %}
+
 {% block version %}
 1.0.27
 {% endblock %}

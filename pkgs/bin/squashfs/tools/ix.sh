@@ -1,5 +1,9 @@
 {% extends '//die/c/make.sh' %}
 
+{% block pkg_name %}
+squashfs-tools
+{% endblock %}
+
 {% block version %}
 4.6.1
 {% endblock %}

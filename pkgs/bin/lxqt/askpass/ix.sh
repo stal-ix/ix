@@ -1,5 +1,9 @@
 {% extends '//die/c/lxqt.sh' %}
 
+{% block pkg_name %}
+lxqt-openssh-askpass
+{% endblock %}
+
 {% block version %}
 2.0.0
 {% endblock %}

@@ -1,5 +1,9 @@
 {% extends '//die/go/build.sh' %}
 
+{% block pkg_name %}
+nwg-drawer
+{% endblock %}
+
 {% block version %}
 0.6.1
 {% endblock %}

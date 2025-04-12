@@ -1,5 +1,9 @@
 {% extends '//die/std/ix.sh' %}
 
+{% block pkg_name %}
+prometheus
+{% endblock %}
+
 {% block version %}
 2.50.1
 {% endblock %}

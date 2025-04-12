@@ -1,5 +1,9 @@
 {% extends '//die/go/build.sh' %}
 
+{% block pkg_name %}
+yggdrasil-go
+{% endblock %}
+
 {% block version %}
 0.5.9
 {% endblock %}

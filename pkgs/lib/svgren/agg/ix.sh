@@ -1,5 +1,9 @@
 {% extends '//lib/svgren/t/ix.sh' %}
 
+{% block pkg_name %}
+agg
+{% endblock %}
+
 {% block version %}
 2.8.22
 {% endblock %}

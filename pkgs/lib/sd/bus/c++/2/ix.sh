@@ -1,5 +1,9 @@
 {% extends '//lib/sd/bus/c++/ix.sh' %}
 
+{% block pkg_name %}
+sdbus-cpp
+{% endblock %}
+
 {% block version %}
 2.0.0
 {% endblock %}

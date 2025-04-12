@@ -1,5 +1,9 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block pkg_name %}
+dosbox-x
+{% endblock %}
+
 {% block version %}
 2025.01.01
 {% endblock %}

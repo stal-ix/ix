@@ -1,5 +1,9 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block pkg_name %}
+chafa
+{% endblock %}
+
 {% block version %}
 1.14.5
 {% endblock %}

@@ -1,5 +1,9 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block pkg_name %}
+libgd
+{% endblock %}
+
 {% block version %}
 2.3.3
 {% endblock %}

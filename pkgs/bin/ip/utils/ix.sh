@@ -1,5 +1,9 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block pkg_name %}
+iputils
+{% endblock %}
+
 {% block version %}
 20240905
 {% endblock %}

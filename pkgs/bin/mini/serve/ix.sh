@@ -1,5 +1,9 @@
 {% extends '//die/rust/cargo.sh' %}
 
+{% block pkg_name %}
+miniserve
+{% endblock %}
+
 {% block version %}
 0.29.0
 {% endblock %}

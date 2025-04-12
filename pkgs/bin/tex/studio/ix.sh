@@ -1,5 +1,9 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+texstudio
+{% endblock %}
+
 {% block version %}
 4.7.2
 {% endblock %}

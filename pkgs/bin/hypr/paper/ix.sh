@@ -1,5 +1,9 @@
 {% extends '//bin/hypr/t/ix.sh' %}
 
+{% block pkg_name %}
+hyprpaper
+{% endblock %}
+
 {% block version %}
 0.7.4
 {% endblock %}

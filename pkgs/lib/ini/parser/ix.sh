@@ -1,5 +1,9 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+iniparser
+{% endblock %}
+
 {% block version %}
 4.2.6
 {% endblock %}

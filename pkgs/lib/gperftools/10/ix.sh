@@ -1,5 +1,9 @@
 {% extends '//lib/gperftools/t/ix.sh' %}
 
+{% block pkg_name %}
+gperftools
+{% endblock %}
+
 {% block version %}
 2.10
 {% endblock %}

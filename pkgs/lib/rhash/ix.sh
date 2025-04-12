@@ -1,5 +1,9 @@
 {% extends '//die/c/make.sh' %}
 
+{% block pkg_name %}
+RHash
+{% endblock %}
+
 {% block version %}
 1.4.5
 {% endblock %}

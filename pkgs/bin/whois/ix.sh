@@ -1,5 +1,9 @@
 {% extends '//die/c/make.sh' %}
 
+{% block pkg_name %}
+whois
+{% endblock %}
+
 {% block version %}
 5.5.23
 {% endblock %}

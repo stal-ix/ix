@@ -1,5 +1,9 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+nvtop
+{% endblock %}
+
 {% block version %}
 3.2.0
 {% endblock %}

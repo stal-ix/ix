@@ -1,5 +1,9 @@
 {% extends '//die/rust/cargo.sh' %}
 
+{% block pkg_name %}
+niri
+{% endblock %}
+
 {% block version %}
 25.02
 {% endblock %}

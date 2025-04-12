@@ -1,5 +1,9 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block pkg_name %}
+libyaml
+{% endblock %}
+
 {% block version %}
 0.2.5
 {% endblock %}

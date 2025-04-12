@@ -1,5 +1,9 @@
 {% extends '//die/c/autohell.sh' %}
 
+{% block pkg_name %}
+ghostpdl-downloads
+{% endblock %}
+
 {% block version %}
 10.05.0
 {% endblock %}

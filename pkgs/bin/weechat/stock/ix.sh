@@ -1,5 +1,9 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+weechat
+{% endblock %}
+
 {% block version %}
 4.6.0
 {% endblock %}

@@ -1,5 +1,9 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block pkg_name %}
+libgudev
+{% endblock %}
+
 {% block version %}
 238
 {% endblock %}

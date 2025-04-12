@@ -1,5 +1,9 @@
 {% extends '//die/rust/cargo.sh' %}
 
+{% block pkg_name %}
+i3status-rust
+{% endblock %}
+
 {% block version %}
 0.33.0
 {% endblock %}

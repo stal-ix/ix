@@ -1,5 +1,9 @@
 {% extends '//die/c/configure.sh' %}
 
+{% block pkg_name %}
+chrony
+{% endblock %}
+
 {% block version %}
 4.6.1
 {% endblock %}

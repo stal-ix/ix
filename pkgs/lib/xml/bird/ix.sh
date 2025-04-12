@@ -1,5 +1,9 @@
 {% extends '//die/c/ix.sh' %}
 
+{% block pkg_name %}
+xmlbird
+{% endblock %}
+
 {% block version %}
 1.2.14
 {% endblock %}

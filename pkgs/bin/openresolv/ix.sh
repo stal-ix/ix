@@ -1,5 +1,9 @@
 {% extends '//die/c/make.sh' %}
 
+{% block pkg_name %}
+openresolv
+{% endblock %}
+
 {% block version %}
 3.14.1
 {% endblock %}

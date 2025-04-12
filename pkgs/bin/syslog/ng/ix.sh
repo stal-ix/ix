@@ -1,5 +1,9 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block pkg_name %}
+syslog-ng
+{% endblock %}
+
 {% block version %}
 4.8.0
 {% endblock %}

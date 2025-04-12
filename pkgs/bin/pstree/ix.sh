@@ -1,5 +1,9 @@
 {% extends '//die/inline/program.sh' %}
 
+{% block pkg_name %}
+pstree
+{% endblock %}
+
 {% block version %}
 2.40
 {% endblock %}

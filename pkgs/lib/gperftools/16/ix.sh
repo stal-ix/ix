@@ -1,5 +1,9 @@
 {% extends '//die/c/autohell.sh' %}
 
+{% block pkg_name %}
+gperftools
+{% endblock %}
+
 {% block version %}
 2.16
 {% endblock %}

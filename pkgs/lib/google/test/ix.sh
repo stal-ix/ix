@@ -1,5 +1,9 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+googletest
+{% endblock %}
+
 {% block version %}
 1.16.0
 {% endblock %}

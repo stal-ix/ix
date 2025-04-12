@@ -1,5 +1,9 @@
 {% extends '//die/c/make.sh' %}
 
+{% block pkg_name %}
+tree-sitter-vimdoc
+{% endblock %}
+
 {% block version %}
 3.0.0
 {% endblock %}

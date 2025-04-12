@@ -1,5 +1,9 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+re2c
+{% endblock %}
+
 {% block version %}
 4.1
 {% endblock %}

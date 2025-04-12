@@ -1,5 +1,9 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block pkg_name %}
+shadowsocks-libev
+{% endblock %}
+
 {% block version %}
 3.3.5
 {% endblock %}

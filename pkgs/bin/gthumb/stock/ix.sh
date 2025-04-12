@@ -1,5 +1,9 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block pkg_name %}
+gthumb
+{% endblock %}
+
 {% block version %}
 3.12.2
 {% endblock %}

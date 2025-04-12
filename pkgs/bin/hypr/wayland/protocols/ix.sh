@@ -1,5 +1,9 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block pkg_name %}
+hyprland-protocols
+{% endblock %}
+
 {% block version %}
 0.6.2
 {% endblock %}

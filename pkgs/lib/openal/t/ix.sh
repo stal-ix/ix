@@ -1,5 +1,9 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+openal-soft
+{% endblock %}
+
 {% block version %}
 1.24.3
 {% endblock %}

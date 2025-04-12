@@ -1,5 +1,9 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+spdlog
+{% endblock %}
+
 {% block version %}
 1.15.2
 {% endblock %}

@@ -1,5 +1,9 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block pkg_name %}
+s3backer
+{% endblock %}
+
 {% block version %}
 2.1.3
 {% endblock %}

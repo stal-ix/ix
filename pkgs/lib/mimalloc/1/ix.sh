@@ -1,5 +1,9 @@
 {% extends '//lib/mimalloc/2/ix.sh' %}
 
+{% block pkg_name %}
+mimalloc
+{% endblock %}
+
 {% block version %}
 1.8.9
 {% endblock %}

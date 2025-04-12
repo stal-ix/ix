@@ -1,5 +1,9 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block pkg_name %}
+libproxy
+{% endblock %}
+
 {% block version %}
 0.5.9
 {% endblock %}

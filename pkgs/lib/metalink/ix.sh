@@ -1,5 +1,9 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block pkg_name %}
+libmetalink
+{% endblock %}
+
 {% block version %}
 0.1.3
 {% endblock %}

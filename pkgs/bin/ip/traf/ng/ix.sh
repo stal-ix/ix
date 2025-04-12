@@ -1,5 +1,9 @@
 {% extends '//die/c/make.sh' %}
 
+{% block pkg_name %}
+iptraf-ng
+{% endblock %}
+
 {% block version %}
 1.2.2
 {% endblock %}

@@ -1,5 +1,9 @@
 {% extends '//die/c/make.sh' %}
 
+{% block pkg_name %}
+acpica
+{% endblock %}
+
 {% block version %}
 20240827
 {% endblock %}

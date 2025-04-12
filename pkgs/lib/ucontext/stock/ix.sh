@@ -1,5 +1,9 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block pkg_name %}
+libucontext
+{% endblock %}
+
 {% block version %}
 1.3.2
 {% endblock %}

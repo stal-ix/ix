@@ -1,5 +1,9 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+neovim
+{% endblock %}
+
 {% block version %}
 0.11.0
 {% endblock %}

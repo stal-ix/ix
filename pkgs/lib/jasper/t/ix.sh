@@ -1,5 +1,9 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+jasper
+{% endblock %}
+
 {% block version %}
 4.2.5
 {% endblock %}

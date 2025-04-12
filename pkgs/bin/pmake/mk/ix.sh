@@ -1,5 +1,9 @@
 {% extends '//die/std/ix.sh' %}
 
+{% block pkg_name %}
+freebsd-src
+{% endblock %}
+
 {% block version %}
 14.0.0
 {% endblock %}

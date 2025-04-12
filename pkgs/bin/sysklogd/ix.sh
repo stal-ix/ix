@@ -1,5 +1,9 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block pkg_name %}
+sysklogd
+{% endblock %}
+
 {% block version %}
 2.7.1
 {% endblock %}

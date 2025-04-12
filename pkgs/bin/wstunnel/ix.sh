@@ -1,5 +1,9 @@
 {% extends '//die/rust/cargo.sh' %}
 
+{% block pkg_name %}
+wstunnel
+{% endblock %}
+
 {% block version %}
 10.1.6
 {% endblock %}

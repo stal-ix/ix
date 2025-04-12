@@ -1,5 +1,9 @@
 {% extends '//die/c/ix.sh' %}
 
+{% block pkg_name %}
+sources
+{% endblock %}
+
 {% block version %}
 20210808
 {% endblock %}

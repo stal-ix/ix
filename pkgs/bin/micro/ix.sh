@@ -1,5 +1,9 @@
 {% extends '//die/go/build.sh' %}
 
+{% block pkg_name %}
+micro
+{% endblock %}
+
 {% block version %}
 2.0.14
 {% endblock %}

@@ -1,5 +1,9 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block pkg_name %}
+libffi
+{% endblock %}
+
 {% block version %}
 3.4.8
 {% endblock %}

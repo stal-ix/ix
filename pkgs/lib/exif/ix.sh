@@ -1,5 +1,9 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block pkg_name %}
+libexif
+{% endblock %}
+
 {% block version %}
 0.6.24
 {% endblock %}

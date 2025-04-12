@@ -1,5 +1,9 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+extra-cmake-modules
+{% endblock %}
+
 {% block version %}
 6.1.0
 {% endblock %}

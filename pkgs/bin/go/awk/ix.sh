@@ -1,5 +1,9 @@
 {% extends '//die/go/build.sh' %}
 
+{% block pkg_name %}
+goawk
+{% endblock %}
+
 {% block version %}
 1.28.1
 {% endblock %}

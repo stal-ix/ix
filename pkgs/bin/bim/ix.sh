@@ -1,5 +1,9 @@
 {% extends '//die/c/make.sh' %}
 
+{% block pkg_name %}
+bim
+{% endblock %}
+
 {% block version %}
 3.1.0
 {% endblock %}

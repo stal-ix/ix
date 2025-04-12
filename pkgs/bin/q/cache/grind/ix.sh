@@ -1,5 +1,9 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+kcachegrind
+{% endblock %}
+
 {% block version %}
 24.04.80
 {% endblock %}

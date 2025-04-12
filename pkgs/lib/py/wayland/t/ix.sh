@@ -1,5 +1,9 @@
 {% extends '//die/c/ix.sh' %}
 
+{% block pkg_name %}
+pywayland
+{% endblock %}
+
 {% block version %}
 0.4.17
 {% endblock %}

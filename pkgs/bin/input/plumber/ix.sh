@@ -1,5 +1,9 @@
 {% extends '//die/rust/cargo.sh' %}
 
+{% block pkg_name %}
+InputPlumber
+{% endblock %}
+
 {% block version %}
 0.46.0
 {% endblock %}

@@ -1,5 +1,9 @@
 {% extends '//die/fonts.sh' %}
 
+{% block pkg_name %}
+inter
+{% endblock %}
+
 {% block version %}
 4.0
 {% endblock %}

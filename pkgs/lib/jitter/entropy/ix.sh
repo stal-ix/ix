@@ -1,5 +1,9 @@
 {% extends '//die/c/make.sh' %}
 
+{% block pkg_name %}
+jitterentropy-library
+{% endblock %}
+
 {% block version %}
 3.6.0
 {% endblock %}

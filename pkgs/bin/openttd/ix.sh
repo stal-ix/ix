@@ -1,5 +1,9 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+OpenTTD
+{% endblock %}
+
 {% block version %}
 14.1
 {% endblock %}

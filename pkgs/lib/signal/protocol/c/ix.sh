@@ -1,5 +1,9 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+libsignal-protocol-c
+{% endblock %}
+
 {% block version %}
 2.3.3
 {% endblock %}

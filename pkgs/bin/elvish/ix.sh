@@ -1,5 +1,9 @@
 {% extends '//die/go/build.sh' %}
 
+{% block pkg_name %}
+elvish
+{% endblock %}
+
 {% block version %}
 0.21.0
 {% endblock %}

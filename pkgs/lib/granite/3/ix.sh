@@ -1,5 +1,9 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block pkg_name %}
+granite
+{% endblock %}
+
 {% block version %}
 6.2.0
 {% endblock %}

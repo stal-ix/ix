@@ -1,5 +1,9 @@
 {% extends '//die/std/ix.sh' %}
 
+{% block pkg_name %}
+libglvnd
+{% endblock %}
+
 {% block version %}
 1.7.0
 {% endblock %}

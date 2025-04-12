@@ -1,5 +1,9 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block pkg_name %}
+emacs
+{% endblock %}
+
 {% block version %}
 30.1
 {% endblock %}

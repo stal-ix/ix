@@ -1,5 +1,9 @@
 {% extends '//lib/lua/modules/t.sh' %}
 
+{% block pkg_name %}
+libmpack-lua
+{% endblock %}
+
 {% block version %}
 1.0.9
 {% endblock %}

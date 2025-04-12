@@ -1,5 +1,9 @@
 {% extends '//die/rust/cargo.sh' %}
 
+{% block pkg_name %}
+bpftop
+{% endblock %}
+
 {% block version %}
 0.6.0
 {% endblock %}

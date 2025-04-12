@@ -1,5 +1,9 @@
 {% extends '//die/fonts.sh' %}
 
+{% block pkg_name %}
+Font-Awesome
+{% endblock %}
+
 {% block version %}
 6.6.0
 {% endblock %}

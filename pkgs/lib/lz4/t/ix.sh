@@ -1,5 +1,9 @@
 {% extends '//die/c/make.sh' %}
 
+{% block pkg_name %}
+lz4
+{% endblock %}
+
 {% block version %}
 1.10.0
 {% endblock %}

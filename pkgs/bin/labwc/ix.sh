@@ -1,5 +1,9 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block pkg_name %}
+labwc
+{% endblock %}
+
 {% block version %}
 0.8.3
 {% endblock %}

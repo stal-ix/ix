@@ -1,5 +1,9 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block pkg_name %}
+argp-standalone
+{% endblock %}
+
 {% block version %}
 1.5.0
 {% endblock %}

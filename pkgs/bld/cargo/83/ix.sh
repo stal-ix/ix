@@ -1,5 +1,9 @@
 {% extends '//bld/cargo/80/ix.sh' %}
 
+{% block pkg_name %}
+cargo
+{% endblock %}
+
 {% block version %}
 0.83.0
 {% endblock %}

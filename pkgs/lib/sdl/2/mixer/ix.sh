@@ -1,5 +1,9 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+SDL_mixer
+{% endblock %}
+
 {% block version %}
 2.8.0
 {% endblock %}

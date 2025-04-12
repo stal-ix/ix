@@ -1,5 +1,9 @@
 {% extends '//die/go/build.sh' %}
 
+{% block pkg_name %}
+gocryptfs
+{% endblock %}
+
 {% block version %}
 2.5.2
 {% endblock %}

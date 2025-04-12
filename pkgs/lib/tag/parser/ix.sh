@@ -1,5 +1,9 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+tagparser
+{% endblock %}
+
 {% block version %}
 12.3.1
 {% endblock %}

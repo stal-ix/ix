@@ -1,5 +1,9 @@
 {% extends '//die/c/autohell.sh' %}
 
+{% block pkg_name %}
+WavPack
+{% endblock %}
+
 {% block version %}
 5.6.0
 {% endblock %}

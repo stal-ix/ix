@@ -1,5 +1,9 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+SDL_image
+{% endblock %}
+
 {% block version %}
 3.2.4
 {% endblock %}

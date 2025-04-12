@@ -1,5 +1,9 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+cereal
+{% endblock %}
+
 {% block version %}
 1.3.2
 {% endblock %}

@@ -1,5 +1,9 @@
 {% extends '//die/c/make.sh' %}
 
+{% block pkg_name %}
+mDNSResponder
+{% endblock %}
+
 {% block version %}
 2559.1.1
 {% endblock %}

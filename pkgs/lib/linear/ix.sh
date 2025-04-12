@@ -1,5 +1,9 @@
 {% extends '//die/c/make.sh' %}
 
+{% block pkg_name %}
+liblinear
+{% endblock %}
+
 {% block version %}
 248
 {% endblock %}

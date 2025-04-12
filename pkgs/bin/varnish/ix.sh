@@ -1,5 +1,9 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block pkg_name %}
+varnish-cache
+{% endblock %}
+
 {% block version %}
 7.7.0
 {% endblock %}

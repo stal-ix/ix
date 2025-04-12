@@ -1,5 +1,9 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block pkg_name %}
+bsdutils
+{% endblock %}
+
 {% block version %}
 13.1
 {% endblock %}

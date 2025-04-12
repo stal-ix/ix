@@ -1,5 +1,9 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+qBittorrent
+{% endblock %}
+
 {% block version %}
 5.0.2
 {% endblock %}

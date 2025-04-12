@@ -1,5 +1,9 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block pkg_name %}
+jsoncpp
+{% endblock %}
+
 {% block version %}
 1.9.5
 {% endblock %}

@@ -1,5 +1,9 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+boxed-cpp
+{% endblock %}
+
 {% block version %}
 1.4.3
 {% endblock %}

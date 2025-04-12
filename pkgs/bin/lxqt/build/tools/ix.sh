@@ -1,5 +1,9 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+lxqt-build-tools
+{% endblock %}
+
 {% block version %}
 2.1.0
 {% endblock %}

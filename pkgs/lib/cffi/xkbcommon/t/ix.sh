@@ -1,5 +1,9 @@
 {% extends '//die/c/ix.sh' %}
 
+{% block pkg_name %}
+python-xkbcommon
+{% endblock %}
+
 {% block version %}
 0.8
 {% endblock %}

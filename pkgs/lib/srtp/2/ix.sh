@@ -1,5 +1,9 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block pkg_name %}
+libsrtp
+{% endblock %}
+
 {% block version %}
 2.6.0
 {% endblock %}

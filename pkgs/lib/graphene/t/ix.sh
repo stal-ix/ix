@@ -1,5 +1,9 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block pkg_name %}
+graphene
+{% endblock %}
+
 {% block version %}
 1.10.8
 {% endblock %}

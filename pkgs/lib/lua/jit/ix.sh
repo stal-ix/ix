@@ -1,5 +1,9 @@
 {% extends '//lib/lua/t/ix.sh' %}
 
+{% block pkg_name %}
+LuaJIT
+{% endblock %}
+
 {% block version %}
 2.0.5
 {% endblock %}

@@ -1,5 +1,9 @@
 {% extends '//die/c/autohell.sh' %}
 
+{% block pkg_name %}
+gambit
+{% endblock %}
+
 {% block version %}
 4.9.5
 {% endblock %}

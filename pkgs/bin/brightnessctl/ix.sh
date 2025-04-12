@@ -1,5 +1,9 @@
 {% extends '//die/c/make.sh' %}
 
+{% block pkg_name %}
+brightnessctl
+{% endblock %}
+
 {% block version %}
 0.5.1
 {% endblock %}

@@ -1,5 +1,9 @@
 {% extends '//die/go/build.sh' %}
 
+{% block pkg_name %}
+curlie
+{% endblock %}
+
 {% block version %}
 1.8.1
 {% endblock %}

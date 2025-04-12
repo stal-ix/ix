@@ -1,5 +1,9 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block pkg_name %}
+nghttp2
+{% endblock %}
+
 {% block version %}
 1.65.0
 {% endblock %}

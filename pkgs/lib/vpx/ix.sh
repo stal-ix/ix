@@ -1,5 +1,9 @@
 {% extends '//die/c/make.sh' %}
 
+{% block pkg_name %}
+libvpx
+{% endblock %}
+
 {% block version %}
 1.15.0
 {% endblock %}

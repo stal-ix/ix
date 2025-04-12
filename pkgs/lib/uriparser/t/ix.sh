@@ -1,5 +1,9 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+uriparser
+{% endblock %}
+
 {% block version %}
 0.9.6
 {% endblock %}

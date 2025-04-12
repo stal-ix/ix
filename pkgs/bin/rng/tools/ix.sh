@@ -1,5 +1,9 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block pkg_name %}
+rng-tools
+{% endblock %}
+
 {% block version %}
 6.15
 {% endblock %}

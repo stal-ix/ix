@@ -1,5 +1,9 @@
 {% extends '//die/rust/cargo.sh' %}
 
+{% block pkg_name %}
+findutils
+{% endblock %}
+
 {% block version %}
 0.7.0
 {% endblock %}

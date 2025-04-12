@@ -1,5 +1,9 @@
 {% extends '//die/go/build.sh' %}
 
+{% block pkg_name %}
+webhook
+{% endblock %}
+
 {% block version %}
 2.8.2
 {% endblock %}

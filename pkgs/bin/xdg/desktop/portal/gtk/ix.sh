@@ -1,5 +1,9 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block pkg_name %}
+xdg-desktop-portal-gtk
+{% endblock %}
+
 {% block version %}
 1.14.1
 {% endblock %}

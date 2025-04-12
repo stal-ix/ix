@@ -1,5 +1,9 @@
 {% extends '//die/go/build.sh' %}
 
+{% block pkg_name %}
+prometheus
+{% endblock %}
+
 {% block version %}
 3.2.1
 {% endblock %}

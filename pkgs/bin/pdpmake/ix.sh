@@ -1,5 +1,9 @@
 {% extends '//die/c/make.sh' %}
 
+{% block pkg_name %}
+pdpmake
+{% endblock %}
+
 {% block version %}
 2.0.3
 {% endblock %}

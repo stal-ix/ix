@@ -1,5 +1,9 @@
 {% extends '//lib/jpeg/turbo/ix.sh' %}
 
+{% block pkg_name %}
+mozjpeg
+{% endblock %}
+
 {% block version %}
 4.1.5
 {% endblock %}

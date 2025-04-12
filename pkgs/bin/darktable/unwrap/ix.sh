@@ -1,5 +1,9 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+darktable
+{% endblock %}
+
 {% block version %}
 4.0.0
 {% endblock %}

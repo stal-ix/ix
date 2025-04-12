@@ -1,5 +1,9 @@
 {% extends '//lib/svgren/t/ix.sh' %}
 
+{% block pkg_name %}
+papki
+{% endblock %}
+
 {% block version %}
 1.0.134
 {% endblock %}

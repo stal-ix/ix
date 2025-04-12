@@ -1,5 +1,9 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block pkg_name %}
+tinyproxy
+{% endblock %}
+
 {% block version %}
 1.11.2
 {% endblock %}

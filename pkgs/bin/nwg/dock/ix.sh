@@ -1,5 +1,9 @@
 {% extends '//bin/nwg/t/ix.sh' %}
 
+{% block pkg_name %}
+nwg-dock
+{% endblock %}
+
 {% block version %}
 0.3.1
 {% endblock %}

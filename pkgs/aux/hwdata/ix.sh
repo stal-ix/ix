@@ -1,5 +1,9 @@
 {% extends '//die/c/make.sh' %}
 
+{% block pkg_name %}
+hwdata
+{% endblock %}
+
 {% block version %}
 0.394
 {% endblock %}

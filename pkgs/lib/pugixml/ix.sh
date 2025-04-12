@@ -1,5 +1,9 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+pugixml
+{% endblock %}
+
 {% block version %}
 1.15
 {% endblock %}

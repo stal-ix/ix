@@ -1,5 +1,9 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+wxmaxima
+{% endblock %}
+
 {% block version %}
 24.11.0
 {% endblock %}

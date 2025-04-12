@@ -1,5 +1,9 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+libjpeg-turbo
+{% endblock %}
+
 {% block version %}
 3.1.0
 {% endblock %}

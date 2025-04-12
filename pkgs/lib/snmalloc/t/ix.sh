@@ -1,5 +1,9 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+snmalloc
+{% endblock %}
+
 {% block version %}
 0.7.1
 {% endblock %}

@@ -1,5 +1,9 @@
 {% extends '//die/vala/meson.sh' %}
 
+{% block pkg_name %}
+dock
+{% endblock %}
+
 {% block version %}
 8.0.0
 {% endblock %}

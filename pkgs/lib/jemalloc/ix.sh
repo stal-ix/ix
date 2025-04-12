@@ -1,5 +1,9 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block pkg_name %}
+jemalloc
+{% endblock %}
+
 {% block version %}
 5.3.0
 {% endblock %}

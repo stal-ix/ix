@@ -1,5 +1,9 @@
 {% extends '//lib/svgren/t/ix.sh' %}
 
+{% block pkg_name %}
+mikroxml
+{% endblock %}
+
 {% block version %}
 0.1.58
 {% endblock %}

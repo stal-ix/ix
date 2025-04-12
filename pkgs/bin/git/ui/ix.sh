@@ -1,5 +1,9 @@
 {% extends '//die/rust/cargo.sh' %}
 
+{% block pkg_name %}
+gitui
+{% endblock %}
+
 {% block version %}
 0.27.0
 {% endblock %}

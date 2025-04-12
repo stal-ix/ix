@@ -1,5 +1,9 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+libtorrent
+{% endblock %}
+
 {% block version %}
 2.0.11
 {% endblock %}

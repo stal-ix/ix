@@ -1,5 +1,9 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+editorconfig-core-c
+{% endblock %}
+
 {% block version %}
 0.12.6
 {% endblock %}

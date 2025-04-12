@@ -1,5 +1,9 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+oniguruma
+{% endblock %}
+
 {% block version %}
 6.9.9
 {% endblock %}

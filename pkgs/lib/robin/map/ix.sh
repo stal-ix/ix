@@ -1,5 +1,9 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+robin-map
+{% endblock %}
+
 {% block version %}
 1.4.0
 {% endblock %}

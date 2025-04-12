@@ -1,5 +1,9 @@
 {% extends '//lib/lua/jit/ix.sh' %}
 
+{% block pkg_name %}
+luajit2
+{% endblock %}
+
 {% block version %}
 20230911
 {% endblock %}

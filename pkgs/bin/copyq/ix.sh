@@ -1,5 +1,9 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+CopyQ
+{% endblock %}
+
 {% block version %}
 9.1.0
 {% endblock %}

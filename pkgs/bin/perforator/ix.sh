@@ -1,5 +1,9 @@
 {% extends '//bin/ya/t/ix.sh' %}
 
+{% block pkg_name %}
+perforator
+{% endblock %}
+
 {% block version %}
 0.0.1
 {% endblock %}

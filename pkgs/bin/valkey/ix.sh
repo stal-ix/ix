@@ -1,5 +1,9 @@
 {% extends '//bin/redis/t/ix.sh' %}
 
+{% block pkg_name %}
+valkey
+{% endblock %}
+
 {% block version %}
 8.1.0
 {% endblock %}

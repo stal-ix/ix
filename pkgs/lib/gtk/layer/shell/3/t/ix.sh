@@ -1,5 +1,9 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block pkg_name %}
+gtk-layer-shell
+{% endblock %}
+
 {% block version %}
 0.9.1
 {% endblock %}

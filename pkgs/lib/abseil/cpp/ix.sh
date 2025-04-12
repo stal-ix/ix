@@ -1,5 +1,9 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+abseil-cpp
+{% endblock %}
+
 {% block version %}
 20230802.1
 {% endblock %}

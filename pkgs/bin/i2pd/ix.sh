@@ -1,5 +1,9 @@
 {% extends '//die/c/make.sh' %}
 
+{% block pkg_name %}
+i2pd
+{% endblock %}
+
 {% block version %}
 2.56.0
 {% endblock %}

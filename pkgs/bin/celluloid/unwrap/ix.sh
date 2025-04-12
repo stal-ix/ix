@@ -1,5 +1,9 @@
 {% extends '//die/c/gnome.sh' %}
 
+{% block pkg_name %}
+celluloid
+{% endblock %}
+
 {% block version %}
 0.27
 {% endblock %}

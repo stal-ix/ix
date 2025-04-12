@@ -1,5 +1,9 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+yajl
+{% endblock %}
+
 {% block version %}
 2.1.0
 {% endblock %}

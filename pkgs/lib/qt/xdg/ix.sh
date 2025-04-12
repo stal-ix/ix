@@ -1,5 +1,9 @@
 {% extends '//die/c/lxqt.sh' %}
 
+{% block pkg_name %}
+libqtxdg
+{% endblock %}
+
 {% block version %}
 4.1.0
 {% endblock %}

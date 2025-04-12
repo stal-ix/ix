@@ -1,5 +1,9 @@
 {% extends '//die/go/build.sh' %}
 
+{% block pkg_name %}
+bluetuith
+{% endblock %}
+
 {% block version %}
 0.2.3
 {% endblock %}

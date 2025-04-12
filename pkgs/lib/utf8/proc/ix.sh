@@ -1,5 +1,9 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+utf8proc
+{% endblock %}
+
 {% block version %}
 2.10.0
 {% endblock %}

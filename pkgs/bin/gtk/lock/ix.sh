@@ -1,5 +1,9 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block pkg_name %}
+gtklock
+{% endblock %}
+
 {% block version %}
 4.0.0
 {% endblock %}

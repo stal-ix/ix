@@ -1,5 +1,9 @@
 {% extends '//lib/git/2/ix.sh' %}
 
+{% block pkg_name %}
+libgit2
+{% endblock %}
+
 {% block version %}
 1.0.1
 {% endblock %}

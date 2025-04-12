@@ -1,5 +1,9 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+utfcpp
+{% endblock %}
+
 {% block version %}
 4.0.6
 {% endblock %}

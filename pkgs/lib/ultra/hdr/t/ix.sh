@@ -1,5 +1,9 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+libultrahdr
+{% endblock %}
+
 {% block version %}
 1.3.0
 {% endblock %}

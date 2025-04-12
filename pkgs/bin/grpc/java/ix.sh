@@ -1,5 +1,9 @@
 {% extends '//die/c/ix.sh' %}
 
+{% block pkg_name %}
+grpc-java
+{% endblock %}
+
 {% block version %}
 1.63.1
 {% endblock %}

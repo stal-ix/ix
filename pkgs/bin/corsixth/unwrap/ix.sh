@@ -1,5 +1,9 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+CorsixTH
+{% endblock %}
+
 {% block version %}
 0.67
 {% endblock %}

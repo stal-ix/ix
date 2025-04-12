@@ -1,5 +1,9 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+dino
+{% endblock %}
+
 {% block version %}
 0.4.4
 {% endblock %}

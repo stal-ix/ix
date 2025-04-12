@@ -1,5 +1,9 @@
 {% extends '//die/c/make.sh' %}
 
+{% block pkg_name %}
+pcg-cpp
+{% endblock %}
+
 {% block version %}
 0.98.1
 {% endblock %}

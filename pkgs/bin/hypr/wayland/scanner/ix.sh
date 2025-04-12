@@ -1,5 +1,9 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+hyprwayland-scanner
+{% endblock %}
+
 {% block version %}
 0.4.4
 {% endblock %}

@@ -1,5 +1,9 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+sdl12-compat
+{% endblock %}
+
 {% block version %}
 1.2.64
 {% endblock %}

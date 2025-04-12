@@ -1,5 +1,9 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+hidapi
+{% endblock %}
+
 {% block version %}
 0.14.0
 {% endblock %}

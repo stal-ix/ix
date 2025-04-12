@@ -1,5 +1,9 @@
 {% extends '//die/rust/cargo.sh' %}
 
+{% block pkg_name %}
+amdgpu_top
+{% endblock %}
+
 {% block version %}
 0.10.0
 {% endblock %}

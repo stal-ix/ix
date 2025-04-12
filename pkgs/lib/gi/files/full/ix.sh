@@ -1,5 +1,9 @@
 {% extends '//die/std/ix.sh' %}
 
+{% block pkg_name %}
+gir-files
+{% endblock %}
+
 {% block version %}
 0.20.0
 {% endblock %}

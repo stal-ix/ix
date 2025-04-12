@@ -1,5 +1,9 @@
 {% extends '//die/std/ix.sh' %}
 
+{% block pkg_name %}
+Implib.so
+{% endblock %}
+
 {% block version %}
 4eab9f58090f6f53e78533ce53e65c4125600872
 {% endblock %}

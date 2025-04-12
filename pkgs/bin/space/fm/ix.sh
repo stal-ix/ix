@@ -1,5 +1,9 @@
 {% extends '//die/c/autohell.sh' %}
 
+{% block pkg_name %}
+spacefm
+{% endblock %}
+
 {% block version %}
 1.0.6
 {% endblock %}

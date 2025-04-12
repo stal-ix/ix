@@ -1,5 +1,9 @@
 {% extends '//die/fonts.sh' %}
 
+{% block pkg_name %}
+source-serif
+{% endblock %}
+
 {% block version %}
 4.004
 {% endblock %}

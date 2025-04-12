@@ -1,5 +1,9 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+Imath
+{% endblock %}
+
 {% block version %}
 3.1.12
 {% endblock %}

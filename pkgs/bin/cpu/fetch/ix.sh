@@ -1,5 +1,9 @@
 {% extends '//die/c/make.sh' %}
 
+{% block pkg_name %}
+cpufetch
+{% endblock %}
+
 {% block version %}
 1.06
 {% endblock %}

@@ -1,5 +1,9 @@
 {% extends '//die/c/make.sh' %}
 
+{% block pkg_name %}
+tinyssh
+{% endblock %}
+
 {% block version %}
 20250201
 {% endblock %}

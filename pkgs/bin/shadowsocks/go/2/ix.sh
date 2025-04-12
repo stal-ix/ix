@@ -1,5 +1,9 @@
 {% extends '//die/go/build.sh' %}
 
+{% block pkg_name %}
+go-shadowsocks2
+{% endblock %}
+
 {% block version %}
 0.1.5
 {% endblock %}

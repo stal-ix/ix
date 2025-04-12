@@ -1,5 +1,9 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block pkg_name %}
+musl-fts
+{% endblock %}
+
 {% block version %}
 1.2.7
 {% endblock %}

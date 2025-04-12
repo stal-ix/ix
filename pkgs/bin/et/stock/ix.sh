@@ -1,5 +1,9 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+EternalTerminal
+{% endblock %}
+
 {% block version %}
 6.2.4
 {% endblock %}

@@ -1,5 +1,9 @@
 {% extends 't/ix.sh' %}
 
+{% block pkg_name %}
+openssl
+{% endblock %}
+
 {% block version %}
 3.5.0
 {% endblock %}

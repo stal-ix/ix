@@ -1,5 +1,9 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block pkg_name %}
+fdupes
+{% endblock %}
+
 {% block version %}
 2.4.0
 {% endblock %}

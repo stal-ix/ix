@@ -1,5 +1,9 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+adwaita-qt
+{% endblock %}
+
 {% block version %}
 1.4.1
 {% endblock %}

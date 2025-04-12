@@ -1,5 +1,9 @@
 {% extends '//bin/cmake/t/ix.sh' %}
 
+{% block pkg_name %}
+CMake
+{% endblock %}
+
 {% block version %}
 3.24.1
 {% endblock %}

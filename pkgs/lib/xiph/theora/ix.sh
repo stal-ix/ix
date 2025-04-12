@@ -1,5 +1,9 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block pkg_name %}
+theora
+{% endblock %}
+
 {% block version %}
 1.2.0
 {% endblock %}

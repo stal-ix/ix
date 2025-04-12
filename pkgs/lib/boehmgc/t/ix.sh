@@ -1,5 +1,9 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+bdwgc
+{% endblock %}
+
 {% block version %}
 8.2.8
 {% endblock %}

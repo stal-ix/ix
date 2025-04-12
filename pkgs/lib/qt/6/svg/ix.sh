@@ -1,5 +1,9 @@
 {% extends '//die/c/qt.sh' %}
 
+{% block pkg_name %}
+qtsvg
+{% endblock %}
+
 {% block version %}
 6.6.0
 {% endblock %}

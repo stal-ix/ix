@@ -1,5 +1,9 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block pkg_name %}
+lite-xl
+{% endblock %}
+
 {% block version %}
 2.1.5
 {% endblock %}

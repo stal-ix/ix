@@ -1,5 +1,9 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block pkg_name %}
+LibRaw
+{% endblock %}
+
 {% block version %}
 0.21.3
 {% endblock %}

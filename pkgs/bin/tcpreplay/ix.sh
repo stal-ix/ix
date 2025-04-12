@@ -1,5 +1,9 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block pkg_name %}
+tcpreplay
+{% endblock %}
+
 {% block version %}
 4.5.1
 {% endblock %}

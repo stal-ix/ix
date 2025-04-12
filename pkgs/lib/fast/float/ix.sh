@@ -1,5 +1,9 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+fast_float
+{% endblock %}
+
 {% block version %}
 8.0.2
 {% endblock %}

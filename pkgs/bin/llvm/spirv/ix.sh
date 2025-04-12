@@ -1,5 +1,9 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+SPIRV-LLVM-Translator
+{% endblock %}
+
 {% block version %}
 19.1.0
 {% endblock %}

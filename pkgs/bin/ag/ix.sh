@@ -1,5 +1,9 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block pkg_name %}
+the_silver_searcher
+{% endblock %}
+
 {% block version %}
 2.2.0
 {% endblock %}

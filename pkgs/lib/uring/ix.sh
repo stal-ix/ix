@@ -1,5 +1,9 @@
 {% extends '//die/c/make.sh' %}
 
+{% block pkg_name %}
+liburing
+{% endblock %}
+
 {% block version %}
 2.9
 {% endblock %}

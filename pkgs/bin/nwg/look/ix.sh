@@ -1,5 +1,9 @@
 {% extends '//bin/nwg/t/ix.sh' %}
 
+{% block pkg_name %}
+nwg-look
+{% endblock %}
+
 {% block version %}
 0.2.4
 {% endblock %}

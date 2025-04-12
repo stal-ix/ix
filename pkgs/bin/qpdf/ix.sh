@@ -1,5 +1,9 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+qpdf
+{% endblock %}
+
 {% block version %}
 12.1.0
 {% endblock %}

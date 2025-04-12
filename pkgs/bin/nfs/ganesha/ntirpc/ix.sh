@@ -1,5 +1,9 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+ntirpc
+{% endblock %}
+
 {% block version %}
 5.0
 {% endblock %}

@@ -1,5 +1,9 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block pkg_name %}
+xarchiver
+{% endblock %}
+
 {% block version %}
 0.5.4.24
 {% endblock %}

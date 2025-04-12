@@ -1,5 +1,9 @@
 {% extends '//bin/zathura/t/ix.sh' %}
 
+{% block pkg_name %}
+zathura-pdf-mupdf
+{% endblock %}
+
 {% block version %}
 0.4.4
 {% endblock %}

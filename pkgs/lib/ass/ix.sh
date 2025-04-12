@@ -1,5 +1,9 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block pkg_name %}
+libass
+{% endblock %}
+
 {% block version %}
 0.17.3
 {% endblock %}

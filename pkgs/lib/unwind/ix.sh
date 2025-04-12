@@ -1,5 +1,9 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block pkg_name %}
+libunwind
+{% endblock %}
+
 {% block version %}
 1.8.1
 {% endblock %}

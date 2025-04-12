@@ -1,5 +1,9 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block pkg_name %}
+harfbuzz
+{% endblock %}
+
 {% block version %}
 11.0.1
 {% endblock %}

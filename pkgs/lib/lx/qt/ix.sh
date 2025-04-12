@@ -1,5 +1,9 @@
 {% extends '//die/c/lxqt.sh' %}
 
+{% block pkg_name %}
+liblxqt
+{% endblock %}
+
 {% block version %}
 2.1.0
 {% endblock %}

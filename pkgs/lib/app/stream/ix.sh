@@ -1,5 +1,9 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block pkg_name %}
+appstream
+{% endblock %}
+
 {% block version %}
 0.16.3
 {% endblock %}

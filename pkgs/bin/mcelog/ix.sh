@@ -1,5 +1,9 @@
 {% extends '//die/c/make.sh' %}
 
+{% block pkg_name %}
+mcelog
+{% endblock %}
+
 {% block version %}
 204
 {% endblock %}

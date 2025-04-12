@@ -1,5 +1,9 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block pkg_name %}
+libsrtp
+{% endblock %}
+
 {% block version %}
 1.6.0
 {% endblock %}

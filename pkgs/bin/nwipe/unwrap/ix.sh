@@ -1,5 +1,9 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block pkg_name %}
+nwipe
+{% endblock %}
+
 {% block version %}
 0.38
 {% endblock %}

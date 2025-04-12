@@ -1,5 +1,9 @@
 {% extends '//die/c/make.sh' %}
 
+{% block pkg_name %}
+prorab-extra
+{% endblock %}
+
 {% block version %}
 0.2.43
 {% endblock %}

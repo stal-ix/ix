@@ -1,5 +1,9 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block pkg_name %}
+musl-rpmatch
+{% endblock %}
+
 {% block version %}
 1.0
 {% endblock %}

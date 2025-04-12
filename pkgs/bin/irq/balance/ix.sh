@@ -1,5 +1,9 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block pkg_name %}
+irqbalance
+{% endblock %}
+
 {% block version %}
 1.9.4
 {% endblock %}

@@ -1,5 +1,9 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block pkg_name %}
+plutovg
+{% endblock %}
+
 {% block version %}
 0.0.12
 {% endblock %}

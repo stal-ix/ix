@@ -1,5 +1,9 @@
 {% extends '//die/go/build.sh' %}
 
+{% block pkg_name %}
+node_exporter
+{% endblock %}
+
 {% block version %}
 1.7.0
 {% endblock %}

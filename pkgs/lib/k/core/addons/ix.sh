@@ -1,5 +1,9 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+kcoreaddons
+{% endblock %}
+
 {% block version %}
 5.247.0
 {% endblock %}

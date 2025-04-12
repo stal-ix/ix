@@ -1,5 +1,9 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+libiio
+{% endblock %}
+
 {% block version %}
 0.26
 {% endblock %}

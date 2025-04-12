@@ -1,5 +1,9 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block pkg_name %}
+libxmlb
+{% endblock %}
+
 {% block version %}
 0.3.22
 {% endblock %}

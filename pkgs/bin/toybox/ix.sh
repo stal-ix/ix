@@ -1,5 +1,9 @@
 {% extends '//die/c/kconfig.sh' %}
 
+{% block pkg_name %}
+toybox
+{% endblock %}
+
 {% block version %}
 0.8.12
 {% endblock %}

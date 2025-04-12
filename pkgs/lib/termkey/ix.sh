@@ -1,5 +1,9 @@
 {% extends '//die/c/make.sh' %}
 
+{% block pkg_name %}
+libtermkey
+{% endblock %}
+
 {% block version %}
 0.20
 {% endblock %}

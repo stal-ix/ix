@@ -1,5 +1,9 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block pkg_name %}
+udis86
+{% endblock %}
+
 {% block version %}
 1.7.2
 {% endblock %}

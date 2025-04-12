@@ -1,5 +1,9 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+libobjc2
+{% endblock %}
+
 {% block version %}
 2.2
 {% endblock %}

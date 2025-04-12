@@ -1,5 +1,9 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+kimageformats
+{% endblock %}
+
 {% block version %}
 5.112.0
 {% endblock %}

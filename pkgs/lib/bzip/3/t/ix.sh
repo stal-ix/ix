@@ -1,5 +1,9 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block pkg_name %}
+bzip3
+{% endblock %}
+
 {% block version %}
 1.5.1
 {% endblock %}

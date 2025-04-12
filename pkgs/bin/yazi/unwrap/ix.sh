@@ -1,5 +1,9 @@
 {% extends '//die/rust/cargo.sh' %}
 
+{% block pkg_name %}
+yazi
+{% endblock %}
+
 {% block version %}
 0.4.1
 {% endblock %}

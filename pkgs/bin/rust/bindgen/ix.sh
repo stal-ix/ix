@@ -1,5 +1,9 @@
 {% extends '//die/rust/cargo.sh' %}
 
+{% block pkg_name %}
+rust-bindgen
+{% endblock %}
+
 {% block version %}
 0.71.1
 {% endblock %}

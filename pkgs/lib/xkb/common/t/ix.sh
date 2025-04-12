@@ -1,5 +1,9 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block pkg_name %}
+libxkbcommon
+{% endblock %}
+
 {% block version %}
 1.8.1
 {% endblock %}

@@ -1,5 +1,9 @@
 {% extends '//die/c/autohell.sh' %}
 
+{% block pkg_name %}
+dhcpcd
+{% endblock %}
+
 {% block version %}
 10.2.2
 {% endblock %}

@@ -1,5 +1,9 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+Vulkan-ValidationLayers
+{% endblock %}
+
 {% block version %}
 1.3.296.0
 {% endblock %}

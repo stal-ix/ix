@@ -1,5 +1,9 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+libical
+{% endblock %}
+
 {% block version %}
 3.0.20
 {% endblock %}

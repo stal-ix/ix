@@ -1,5 +1,9 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block pkg_name %}
+openvpn
+{% endblock %}
+
 {% block version %}
 2.6.14
 {% endblock %}

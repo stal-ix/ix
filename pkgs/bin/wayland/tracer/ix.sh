@@ -1,5 +1,9 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block pkg_name %}
+wayland-tracer
+{% endblock %}
+
 {% block version %}
 0.1.0
 {% endblock %}

@@ -1,5 +1,9 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block pkg_name %}
+gtk-session-lock
+{% endblock %}
+
 {% block version %}
 0.2.0
 {% endblock %}

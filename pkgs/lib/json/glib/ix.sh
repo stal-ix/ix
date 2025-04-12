@@ -1,5 +1,9 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block pkg_name %}
+json-glib
+{% endblock %}
+
 {% block version %}
 1.9.2
 {% endblock %}

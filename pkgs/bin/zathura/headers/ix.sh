@@ -1,5 +1,9 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block pkg_name %}
+zathura
+{% endblock %}
+
 {% block version %}
 0.5.11
 {% endblock %}

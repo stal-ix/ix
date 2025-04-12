@@ -1,5 +1,9 @@
 {% extends '//die/go/build.sh' %}
 
+{% block pkg_name %}
+nebula
+{% endblock %}
+
 {% block version %}
 1.9.1
 {% endblock %}

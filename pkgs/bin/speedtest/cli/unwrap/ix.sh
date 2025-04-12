@@ -1,5 +1,9 @@
 {% extends '//die/python/bin.sh' %}
 
+{% block pkg_name %}
+speedtest-cli
+{% endblock %}
+
 {% block version %}
 2.1.3
 {% endblock %}

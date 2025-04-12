@@ -1,5 +1,9 @@
 {% extends '//die/c/make.sh' %}
 
+{% block pkg_name %}
+kakoune
+{% endblock %}
+
 {% block version %}
 2024.05.18
 {% endblock %}

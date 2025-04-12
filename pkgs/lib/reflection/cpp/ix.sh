@@ -1,5 +1,9 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+reflection-cpp
+{% endblock %}
+
 {% block version %}
 0.1.0
 {% endblock %}

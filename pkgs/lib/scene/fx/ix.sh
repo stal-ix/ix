@@ -1,5 +1,9 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block pkg_name %}
+scenefx
+{% endblock %}
+
 {% block version %}
 0.1
 {% endblock %}

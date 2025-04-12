@@ -1,5 +1,9 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+libxmp
+{% endblock %}
+
 {% block version %}
 4.6.0
 {% endblock %}

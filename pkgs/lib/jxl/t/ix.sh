@@ -1,5 +1,9 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+libjxl
+{% endblock %}
+
 {% block version %}
 0.11.1
 {% endblock %}

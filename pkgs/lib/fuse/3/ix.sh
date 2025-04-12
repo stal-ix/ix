@@ -1,5 +1,9 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block pkg_name %}
+libfuse
+{% endblock %}
+
 {% block version %}
 3.17.1
 {% endblock %}

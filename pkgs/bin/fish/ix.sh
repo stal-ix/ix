@@ -1,5 +1,9 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+fish-shell
+{% endblock %}
+
 {% block version %}
 3.7.1
 {% endblock %}

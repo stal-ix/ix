@@ -1,5 +1,9 @@
 {% extends '//die/go/build.sh' %}
 
+{% block pkg_name %}
+dnsproxy
+{% endblock %}
+
 {% block version %}
 0.75.1
 {% endblock %}

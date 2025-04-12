@@ -1,5 +1,9 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block pkg_name %}
+jbig2dec
+{% endblock %}
+
 {% block version %}
 0.20
 {% endblock %}

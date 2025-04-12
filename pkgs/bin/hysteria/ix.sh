@@ -1,5 +1,9 @@
 {% extends '//die/go/build.sh' %}
 
+{% block pkg_name %}
+hysteria
+{% endblock %}
+
 {% block version %}
 2.6.1
 {% endblock %}

@@ -1,5 +1,9 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+simdjson
+{% endblock %}
+
 {% block version %}
 3.12.3
 {% endblock %}

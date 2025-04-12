@@ -1,5 +1,9 @@
 {% extends '//lib/placebo/t/ix.sh' %}
 
+{% block pkg_name %}
+libplacebo
+{% endblock %}
+
 {% block version %}
 5.264.1
 {% endblock %}

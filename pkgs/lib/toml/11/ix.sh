@@ -1,5 +1,9 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+toml11
+{% endblock %}
+
 {% block version %}
 4.1.0
 {% endblock %}

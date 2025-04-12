@@ -1,5 +1,9 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block pkg_name %}
+libpng
+{% endblock %}
+
 {% block version %}
 1.6.44
 {% endblock %}

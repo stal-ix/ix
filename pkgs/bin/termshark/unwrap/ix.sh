@@ -1,5 +1,9 @@
 {% extends '//die/go/build.sh' %}
 
+{% block pkg_name %}
+termshark
+{% endblock %}
+
 {% block version %}
 2.4.0
 {% endblock %}

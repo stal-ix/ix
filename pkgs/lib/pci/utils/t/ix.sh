@@ -1,5 +1,9 @@
 {% extends '//die/c/make.sh' %}
 
+{% block pkg_name %}
+pciutils
+{% endblock %}
+
 {% block version %}
 3.13.0
 {% endblock %}

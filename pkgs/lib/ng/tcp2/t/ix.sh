@@ -1,5 +1,9 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+ngtcp2
+{% endblock %}
+
 {% block version %}
 1.11.0
 {% endblock %}

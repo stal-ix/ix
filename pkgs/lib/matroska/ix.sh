@@ -1,5 +1,9 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+libmatroska
+{% endblock %}
+
 {% block version %}
 1.7.1
 {% endblock %}

@@ -1,5 +1,9 @@
 {% extends '//die/c/ix.sh' %}
 
+{% block pkg_name %}
+serf
+{% endblock %}
+
 {% block version %}
 1.3.9
 {% endblock %}

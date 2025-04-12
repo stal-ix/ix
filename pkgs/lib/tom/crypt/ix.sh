@@ -1,5 +1,9 @@
 {% extends '//die/c/make.sh' %}
 
+{% block pkg_name %}
+libtomcrypt
+{% endblock %}
+
 {% block version %}
 1.18.2
 {% endblock %}

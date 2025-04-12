@@ -1,5 +1,9 @@
 {% extends '//die/c/waf.sh' %}
 
+{% block pkg_name %}
+jack2
+{% endblock %}
+
 {% block version %}
 1.9.19
 {% endblock %}

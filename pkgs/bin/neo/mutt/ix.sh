@@ -1,5 +1,9 @@
 {% extends '//die/c/make.sh' %}
 
+{% block pkg_name %}
+neomutt
+{% endblock %}
+
 {% block version %}
 20231006
 {% endblock %}

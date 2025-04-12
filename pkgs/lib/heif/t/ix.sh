@@ -1,5 +1,9 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+libheif
+{% endblock %}
+
 {% block version %}
 1.19.7
 {% endblock %}

@@ -1,5 +1,9 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+fastfetch
+{% endblock %}
+
 {% block version %}
 2.40.3
 {% endblock %}

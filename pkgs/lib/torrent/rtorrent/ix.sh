@@ -1,5 +1,9 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block pkg_name %}
+libtorrent
+{% endblock %}
+
 {% block version %}
 0.15.2
 {% endblock %}

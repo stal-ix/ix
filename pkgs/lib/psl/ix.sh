@@ -1,5 +1,9 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block pkg_name %}
+libpsl
+{% endblock %}
+
 {% block version %}
 0.21.5
 {% endblock %}

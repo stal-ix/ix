@@ -1,5 +1,9 @@
 {% extends '//bin/zathura/t/ix.sh' %}
 
+{% block pkg_name %}
+zathura-ps
+{% endblock %}
+
 {% block version %}
 0.2.8
 {% endblock %}

@@ -1,5 +1,9 @@
 {% extends '//die/c/make.sh' %}
 
+{% block pkg_name %}
+netbsd-curses
+{% endblock %}
+
 {% block version %}
 0.3.2
 {% endblock %}

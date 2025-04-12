@@ -1,5 +1,9 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+date
+{% endblock %}
+
 {% block version %}3.0.1{% endblock %}
 
 {% block fetch %}

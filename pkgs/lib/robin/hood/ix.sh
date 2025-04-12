@@ -1,5 +1,9 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+robin-hood-hashing
+{% endblock %}
+
 {% block version %}
 3.11.3
 {% endblock %}

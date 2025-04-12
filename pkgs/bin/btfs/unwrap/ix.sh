@@ -1,5 +1,9 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block pkg_name %}
+btfs
+{% endblock %}
+
 {% block version %}
 2.24
 {% endblock %}

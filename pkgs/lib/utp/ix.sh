@@ -1,5 +1,9 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+transmission
+{% endblock %}
+
 {% block version %}
 3.00
 {% endblock %}

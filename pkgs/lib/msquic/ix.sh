@@ -1,5 +1,9 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+msquic
+{% endblock %}
+
 {% block version %}
 2.4.8
 {% endblock %}

@@ -1,5 +1,9 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+libde265
+{% endblock %}
+
 {% block version %}
 1.0.15
 {% endblock %}

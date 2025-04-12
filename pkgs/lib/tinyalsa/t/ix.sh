@@ -1,5 +1,9 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block pkg_name %}
+tinyalsa
+{% endblock %}
+
 {% block version %}
 2.0.0
 {% endblock %}

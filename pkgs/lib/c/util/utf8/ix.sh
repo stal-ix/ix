@@ -1,5 +1,9 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block pkg_name %}
+c-utf8
+{% endblock %}
+
 {% block version %}
 1.1.0
 {% endblock %}

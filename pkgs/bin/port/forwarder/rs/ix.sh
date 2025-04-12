@@ -1,5 +1,9 @@
 {% extends '//die/rust/cargo.sh' %}
 
+{% block pkg_name %}
+portforwarder-rs
+{% endblock %}
+
 {% block version %}
 0.1.0
 {% endblock %}

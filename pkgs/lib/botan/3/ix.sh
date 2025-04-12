@@ -1,5 +1,9 @@
 {% extends '//lib/botan/ix.sh' %}
 
+{% block pkg_name %}
+botan
+{% endblock %}
+
 {% block version %}
 3.7.0
 {% endblock %}

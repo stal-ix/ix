@@ -1,5 +1,9 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block pkg_name %}
+vte
+{% endblock %}
+
 {% block version %}
 0.80.0
 {% endblock %}

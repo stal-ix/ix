@@ -1,5 +1,9 @@
 {% extends '//die/go/build.sh' %}
 
+{% block pkg_name %}
+miller
+{% endblock %}
+
 {% block version %}
 6.11.0
 {% endblock %}

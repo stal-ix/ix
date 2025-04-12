@@ -1,5 +1,9 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+cJSON
+{% endblock %}
+
 {% block version %}
 1.7.18
 {% endblock %}

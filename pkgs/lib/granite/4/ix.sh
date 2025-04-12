@@ -1,5 +1,9 @@
 {% extends '//die/vala/meson.sh' %}
 
+{% block pkg_name %}
+granite
+{% endblock %}
+
 {% block version %}
 7.6.0
 {% endblock %}

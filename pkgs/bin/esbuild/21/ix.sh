@@ -1,5 +1,9 @@
 {% extends '//bin/esbuild/ix.sh' %}
 
+{% block pkg_name %}
+esbuild
+{% endblock %}
+
 {% block version %}
 0.21.5
 {% endblock %}

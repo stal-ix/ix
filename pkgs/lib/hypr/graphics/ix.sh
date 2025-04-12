@@ -1,5 +1,9 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+hyprgraphics
+{% endblock %}
+
 {% block version %}
 0.1.3
 {% endblock %}

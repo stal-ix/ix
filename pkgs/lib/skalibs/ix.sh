@@ -1,5 +1,9 @@
 {% extends '//die/c/autohell.sh' %}
 
+{% block pkg_name %}
+skalibs
+{% endblock %}
+
 {% block version %}
 2.14.3.0
 {% endblock %}

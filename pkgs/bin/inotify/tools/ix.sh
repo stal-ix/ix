@@ -1,5 +1,9 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block pkg_name %}
+inotify-tools
+{% endblock %}
+
 {% block version %}
 3.20.11.0
 {% endblock %}
