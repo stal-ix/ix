@@ -90,3 +90,13 @@
 {% block build_fetch %}
 {{ix.urls_to_json(fetch)}}
 {% endblock %}
+
+{% block version %}
+{% endblock %}
+
+{% block repo_version %}{{self.version().strip()}}{% endblock %}
+
+{% block pkg_name %}
+{% endblock %}
+
+{% block repo_name %}{{self.pkg_name().strip()}}{% endblock %}
