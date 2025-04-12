@@ -618,6 +618,7 @@ https://ftp.gnu.org/gnu/coreutils/coreutils-9.3.tar.gz
 https://ftp.gnu.org/gnu/coreutils/coreutils-9.4.tar.gz
 https://ftp.gnu.org/gnu/coreutils/coreutils-9.5.tar.gz
 https://ftp.gnu.org/gnu/coreutils/coreutils-9.6.tar.gz
+https://ftp.gnu.org/gnu/coreutils/coreutils-9.7.tar.gz
 https://ftp.gnu.org/gnu/cpio/cpio-2.14.tar.bz2
 https://ftp.gnu.org/gnu/cpio/cpio-2.15.tar.bz2
 https://ftp.gnu.org/gnu/diffutils/diffutils-3.10.tar.xz
@@ -656,6 +657,7 @@ https://ftp.gnu.org/gnu/gdbm/gdbm-1.19.tar.gz
 https://ftp.gnu.org/gnu/gdbm/gdbm-1.24.tar.gz
 https://ftp.gnu.org/gnu/gmp/gmp-6.3.0.tar.xz
 https://ftp.gnu.org/gnu/grep/grep-3.11.tar.xz
+https://ftp.gnu.org/gnu/grep/grep-3.12.tar.xz
 https://ftp.gnu.org/gnu/grep/grep-3.6.tar.xz
 https://ftp.gnu.org/gnu/groff/groff-1.23.0.tar.gz
 https://ftp.gnu.org/gnu/grub/grub-2.06.tar.xz
@@ -1006,6 +1008,7 @@ https://github.com/GNOME/libadwaita/archive/refs/tags/1.6.1.tar.gz
 https://github.com/GNOME/libadwaita/archive/refs/tags/1.6.2.tar.gz
 https://github.com/GNOME/libadwaita/archive/refs/tags/1.6.3.tar.gz
 https://github.com/GNOME/libadwaita/archive/refs/tags/1.7.0.tar.gz
+https://github.com/GNOME/libadwaita/archive/refs/tags/1.7.1.tar.gz
 https://github.com/GNOME/libgudev/archive/refs/tags/237.tar.gz
 https://github.com/GNOME/libgudev/archive/refs/tags/238.tar.gz
 https://github.com/GNOME/libshumate/archive/refs/tags/1.0.5.tar.gz
@@ -1497,6 +1500,7 @@ https://github.com/ascent12/drm_info/archive/refs/tags/v2.3.0.tar.gz
 https://github.com/astral-sh/ruff/archive/refs/tags/0.11.0.tar.gz
 https://github.com/astral-sh/ruff/archive/refs/tags/0.11.2.tar.gz
 https://github.com/astral-sh/ruff/archive/refs/tags/0.11.4.tar.gz
+https://github.com/astral-sh/ruff/archive/refs/tags/0.11.5.tar.gz
 https://github.com/astral-sh/ruff/archive/refs/tags/0.9.6.tar.gz
 https://github.com/avahi/avahi/releases/download/v0.8/avahi-0.8.tar.gz
 https://github.com/axboe/liburing/archive/refs/tags/liburing-2.2.tar.gz
@@ -2108,6 +2112,7 @@ https://github.com/hramrach/lm-sensors/archive/refs/tags/V3-6-2.tar.gz
 https://github.com/htop-dev/htop/archive/refs/tags/3.2.2.tar.gz
 https://github.com/htop-dev/htop/archive/refs/tags/3.3.0.tar.gz
 https://github.com/htop-dev/htop/archive/refs/tags/3.4.0.tar.gz
+https://github.com/htop-dev/htop/archive/refs/tags/3.4.1.tar.gz
 https://github.com/hufrea/byedpi/archive/refs/tags/v0.14.1.tar.gz
 https://github.com/hughsie/libgusb/archive/refs/tags/0.4.6.tar.gz
 https://github.com/hughsie/libgusb/archive/refs/tags/0.4.7.tar.gz
@@ -2769,6 +2774,7 @@ https://github.com/mm2/Little-CMS/archive/refs/tags/lcms2.15.tar.gz
 https://github.com/mm2/Little-CMS/archive/refs/tags/lcms2.16.tar.gz
 https://github.com/mm2/Little-CMS/archive/refs/tags/lcms2.17.tar.gz
 https://github.com/mobile-shell/mosh/archive/refs/tags/mosh-1.4.0.tar.gz
+https://github.com/moriyoshi/s3-sftp-proxy/archive/d292467c629fd57c6d8471b324d8987a734b8c99.zip
 https://github.com/mozilla/mozjpeg/archive/refs/tags/v4.1.4.tar.gz
 https://github.com/mozilla/mozjpeg/archive/refs/tags/v4.1.5.tar.gz
 https://github.com/mpv-player/mpv/archive/refs/tags/v0.36.0.tar.gz
@@ -2862,6 +2868,7 @@ https://github.com/ninja-build/ninja/archive/refs/tags/v1.12.0.tar.gz
 https://github.com/ninja-build/ninja/archive/refs/tags/v1.12.1.tar.gz
 https://github.com/nlohmann/json/archive/refs/tags/v3.10.5.tar.gz
 https://github.com/nlohmann/json/archive/refs/tags/v3.11.2.tar.gz
+https://github.com/nlohmann/json/archive/refs/tags/v3.12.0.tar.gz
 https://github.com/nodejs/uvwasi/archive/refs/tags/v0.0.18.tar.gz
 https://github.com/noocsharp/wayclip/archive/refs/tags/0.4.1.tar.gz
 https://github.com/noocsharp/wayclip/archive/refs/tags/0.4.2.tar.gz
@@ -3849,6 +3856,7 @@ https://gitlab.freedesktop.org/cairo/cairo/-/archive/1.18.2/cairo-1.18.2.tar.bz2
 https://gitlab.freedesktop.org/cairo/cairo/-/archive/1.18.4/cairo-1.18.4.tar.bz2
 https://gitlab.freedesktop.org/emersion/libdisplay-info/-/archive/0.2.0/libdisplay-info-0.2.0.tar.bz2
 https://gitlab.freedesktop.org/fontconfig/fontconfig/-/archive/2.16.1/fontconfig-2.16.1.tar.bz2
+https://gitlab.freedesktop.org/fontconfig/fontconfig/-/archive/2.16.2/fontconfig-2.16.2.tar.bz2
 https://gitlab.freedesktop.org/freetype/freetype-demos/-/archive/VER-2-13-0/freetype-demos-VER-2-13-0.tar.bz2
 https://gitlab.freedesktop.org/gstreamer/gstreamer/-/archive/1.22.10/gstreamer-1.22.10.tar.gz
 https://gitlab.freedesktop.org/gstreamer/gstreamer/-/archive/1.22.5/gstreamer-1.22.5.tar.gz
@@ -3902,6 +3910,7 @@ https://gitlab.freedesktop.org/slirp/libslirp/-/archive/v4.7.0/libslirp-v4.7.0.t
 https://gitlab.freedesktop.org/upower/upower/-/archive/v1.90.1/upower-v1.90.1.tar.bz2
 https://gitlab.freedesktop.org/upower/upower/-/archive/v1.90.7/upower-v1.90.7.tar.bz2
 https://gitlab.freedesktop.org/upower/upower/-/archive/v1.90.8/upower-v1.90.8.tar.bz2
+https://gitlab.freedesktop.org/upower/upower/-/archive/v1.90.9/upower-v1.90.9.tar.bz2
 https://gitlab.freedesktop.org/vyivel/libsfdo/-/archive/v0.1.3/libsfdo-v0.1.3.tar.bz2
 https://gitlab.freedesktop.org/wayland/wayland-protocols/-/archive/1.32/wayland-protocols-1.32.tar.bz2
 https://gitlab.freedesktop.org/wayland/wayland-protocols/-/archive/1.33/wayland-protocols-1.33.tar.bz2
@@ -4581,6 +4590,7 @@ https://www.crufty.net/ftp/pub/sjg/bmake-20250120.tar.gz
 https://www.crufty.net/ftp/pub/sjg/bmake-20250125.tar.gz
 https://www.crufty.net/ftp/pub/sjg/bmake-20250225.tar.gz
 https://www.crufty.net/ftp/pub/sjg/bmake-20250308.tar.gz
+https://www.crufty.net/ftp/pub/sjg/bmake-20250404.tar.gz
 https://www.eecis.udel.edu/~ntp/ntp_spool/ntp4/ntp-4.2/ntp-4.2.8p15.tar.gz
 https://www.freedesktop.org/software/colord/releases/colord-1.4.6.tar.xz
 https://www.freedesktop.org/software/fontconfig/release/fontconfig-2.14.2.tar.xz
