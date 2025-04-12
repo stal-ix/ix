@@ -1,7 +1,11 @@
 {% extends '//die/c/make.sh' %}
 
+{% block version %}
+4.3
+{% endblock %}
+
 {% block fetch %}
-https://distfiles.macports.org/bsdiff/bsdiff-4.3.tar.gz
+https://distfiles.macports.org/bsdiff/bsdiff-{{self.version().strip()}}.tar.gz
 sha:18821588b2dc5bf159aa37d3bcb7b885d85ffd1e19f23a0c57a58723fea85f48
 {% endblock %}
 

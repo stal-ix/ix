@@ -1,7 +1,11 @@
 {% extends '//die/c/autohell.sh' %}
 
+{% block version %}
+0.6.0
+{% endblock %}
+
 {% block fetch %}
-https://git.midipix.org/slibtool/snapshot/slibtool-0.6.0.tar.bz2
+https://git.midipix.org/slibtool/snapshot/slibtool-{{self.version().strip()}}.tar.bz2
 sha:f4fd554da3744ddf356ae391ed3385054cbbee6ff6df86da20cd23479604d621
 {% endblock %}
 

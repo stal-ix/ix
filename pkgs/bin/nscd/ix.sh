@@ -1,7 +1,11 @@
 {% extends '//die/c/make.sh' %}
 
+{% block version %}
+1.1.1
+{% endblock %}
+
 {% block fetch %}
-https://github.com/pikhq/musl-nscd/archive/refs/tags/v1.1.1.tar.gz
+https://github.com/pikhq/musl-nscd/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 sha:ddd5924f0355568a483cb8c83e63c7e3425b8c3f1dce4b9883ca75ed1a276675
 {% endblock %}
 

@@ -1,7 +1,11 @@
 {% extends '//lib/gtk/t/ix.sh' %}
 
+{% block version %}
+3.24.49
+{% endblock %}
+
 {% block fetch %}
-https://gitlab.gnome.org/GNOME/gtk/-/archive/3.24.49/gtk-3.24.49.tar.bz2
+https://gitlab.gnome.org/GNOME/gtk/-/archive/{{self.version().strip()}}/gtk-{{self.version().strip()}}.tar.bz2
 sha:3645e0624badf47307d0885a8ef2fdb00dafee45e2c435cff9c205c892311a6f
 {% endblock %}
 

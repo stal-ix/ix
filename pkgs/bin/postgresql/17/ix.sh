@@ -1,7 +1,11 @@
 {% extends '//bin/postgresql/t/ix.sh' %}
 
+{% block version %}
+17.3
+{% endblock %}
+
 {% block fetch %}
-https://ftp.postgresql.org/pub/source/v17.3/postgresql-17.3.tar.bz2
+https://ftp.postgresql.org/pub/source/v{{self.version().strip()}}/postgresql-{{self.version().strip()}}.tar.bz2
 sha:13c18b35bf67a97bd639925fc581db7fd2aae4d3548eac39fcdb8da74ace2bea
 {% endblock %}
 

@@ -1,7 +1,11 @@
 {% extends '//die/c/make.sh' %}
 
+{% block version %}
+7.4.2
+{% endblock %}
+
 {% block fetch %}
-https://github.com/redis/redis/archive/refs/tags/7.4.2.tar.gz
+https://github.com/redis/redis/archive/refs/tags/{{self.version().strip()}}.tar.gz
 sha:199ebc73ff858ae3ac122ebea7e483d5da0c1ee2f1de73b6404d4780036e9474
 {% endblock %}
 

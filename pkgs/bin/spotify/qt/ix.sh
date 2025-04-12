@@ -1,7 +1,11 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block version %}
+3.9
+{% endblock %}
+
 {% block fetch %}
-https://github.com/kraxarn/spotify-qt/archive/refs/tags/v3.9.tar.gz
+https://github.com/kraxarn/spotify-qt/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 sha:db1bc50fe4f31fc021db722eb85e59db543a104255a0a07f2e923d7a69195e42
 {% endblock %}
 

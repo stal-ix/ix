@@ -1,7 +1,11 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block version %}
+2.24.0
+{% endblock %}
+
 {% block fetch %}
-https://github.com/libsdl-org/SDL_ttf/archive/refs/tags/release-2.24.0.tar.gz
+https://github.com/libsdl-org/SDL_ttf/archive/refs/tags/release-{{self.version().strip()}}.tar.gz
 sha:2c45241a56203a59d66ec6b4eae9457e5675fc609376566a257391fd29d341a2
 {% endblock %}
 

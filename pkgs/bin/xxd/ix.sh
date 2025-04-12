@@ -1,7 +1,11 @@
 {% extends '//die/c/ix.sh' %}
 
+{% block version %}
+9.0.0006
+{% endblock %}
+
 {% block fetch %}
-https://github.com/vim/vim/archive/refs/tags/v9.0.0006.tar.gz
+https://github.com/vim/vim/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 sha:e5ece8e5b530561a5ab732c793e7e247f3c472bce57b09cead3b58f2d4f9b3f4
 {% endblock %}
 

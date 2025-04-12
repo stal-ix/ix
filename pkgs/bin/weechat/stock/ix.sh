@@ -1,7 +1,11 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block version %}
+4.6.0
+{% endblock %}
+
 {% block fetch %}
-https://github.com/weechat/weechat/archive/refs/tags/v4.6.0.tar.gz
+https://github.com/weechat/weechat/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 sha:11d4914c5b51482c8ade026c3889b68e0c3e1938a0ce6127e36faba48f76e633
 {% endblock %}
 

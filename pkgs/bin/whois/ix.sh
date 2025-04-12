@@ -1,7 +1,11 @@
 {% extends '//die/c/make.sh' %}
 
+{% block version %}
+5.5.23
+{% endblock %}
+
 {% block fetch %}
-https://github.com/rfc1036/whois/archive/refs/tags/v5.5.23.tar.gz
+https://github.com/rfc1036/whois/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 sha:dcfc08f3362c74ec8ae30691941909ebccf0cb3d27da04236f7e2790dbc7757c
 {% endblock %}
 

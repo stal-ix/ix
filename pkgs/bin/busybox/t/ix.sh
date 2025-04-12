@@ -1,7 +1,11 @@
 {% extends '//die/c/kconfig2.sh' %}
 
+{% block version %}
+1.37.0
+{% endblock %}
+
 {% block fetch %}
-https://busybox.net/downloads/busybox-1.37.0.tar.bz2
+https://busybox.net/downloads/busybox-{{self.version().strip()}}.tar.bz2
 sha:3311dff32e746499f4df0d5df04d7eb396382d7e108bb9250e7b519b837043a4
 {% endblock %}
 

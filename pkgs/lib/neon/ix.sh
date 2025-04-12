@@ -1,7 +1,11 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block version %}
+0.34.0
+{% endblock %}
+
 {% block fetch %}
-https://notroj.github.io/neon/neon-0.34.0.tar.gz
+https://notroj.github.io/neon/neon-{{self.version().strip()}}.tar.gz
 sha:2e3ee8535039966c80764f539d5c9bfee1651a17e2f36e5ca462632181253977
 {% endblock %}
 

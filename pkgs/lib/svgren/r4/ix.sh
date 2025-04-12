@@ -1,7 +1,11 @@
 {% extends '//lib/svgren/t/ix.sh' %}
 
+{% block version %}
+1.0.77
+{% endblock %}
+
 {% block fetch %}
-https://github.com/cppfw/r4/archive/refs/tags/1.0.77.tar.gz
+https://github.com/cppfw/r4/archive/refs/tags/{{self.version().strip()}}.tar.gz
 sha:f80543e2519a22c25a453b2e5450a9ab82a2b5c4e93d0e6d70ad042081458b21
 {% endblock %}
 

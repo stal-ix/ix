@@ -1,9 +1,13 @@
 {% extends '//die/c/configure.sh' %}
 
+{% block version %}
+1.5
+{% endblock %}
+
 {#libmpcodecs/ve_raw.c:166:19: error: incompatible function pointer types assigning to 'int (*)(struct vf_instance *, mp_image_t *, double, double)' (aka 'int (*)(struct vf_instance *, struct mp_image *, double, double)') from 'int (struct vf_instance *, mp_image_t *, double)' (aka 'int (struct vf_instance *, struct mp_image *, double)') [-Wincompatible-function-pointer-types] vf->put_image = put_image;#}
 
 {% block fetch %}
-https://mplayerhq.hu/MPlayer/releases/MPlayer-1.5.tar.xz
+https://mplayerhq.hu/MPlayer/releases/MPlayer-{{self.version().strip()}}.tar.xz
 sha:650cd55bb3cb44c9b39ce36dac488428559799c5f18d16d98edb2b7256cbbf85
 {% endblock %}
 

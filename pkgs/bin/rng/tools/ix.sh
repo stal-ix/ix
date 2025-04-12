@@ -1,7 +1,11 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block version %}
+6.15
+{% endblock %}
+
 {% block fetch %}
-https://github.com/nhorman/rng-tools/archive/refs/tags/v6.15.tar.gz
+https://github.com/nhorman/rng-tools/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 sha:bff0c58dff90ec10bd61f672e48618e045155eabd60b32d63a9c4ffbdad05f3a
 {% endblock %}
 

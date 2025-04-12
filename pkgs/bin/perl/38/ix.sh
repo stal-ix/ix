@@ -1,7 +1,11 @@
 {% extends '//bin/perl/host/ix.sh' %}
 
+{% block version %}
+5.38.2
+{% endblock %}
+
 {% block fetch %}
-https://www.cpan.org/src/5.0/perl-5.38.2.tar.gz
+https://www.cpan.org/src/5.0/perl-{{self.version().strip()}}.tar.gz
 sha:a0a31534451eb7b83c7d6594a497543a54d488bc90ca00f5e34762577f40655e
 {% endblock %}
 

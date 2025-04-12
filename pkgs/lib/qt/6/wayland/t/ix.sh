@@ -1,7 +1,11 @@
 {% extends '//die/c/qt.sh' %}
 
+{% block version %}
+6.7.2
+{% endblock %}
+
 {% block fetch %}
-https://github.com/qt/qtwayland/archive/refs/tags/v6.7.2.tar.gz
+https://github.com/qt/qtwayland/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 sha:e4cb055bca9a76266821bc2320ff9feaae96eaca0a6a453e99722410b2a5fff2
 {% endblock %}
 

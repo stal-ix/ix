@@ -1,7 +1,11 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block version %}
+1.7.3
+{% endblock %}
+
 {% block fetch %}
-https://github.com/hyperrealm/libconfig/archive/refs/tags/v1.7.3.tar.gz
+https://github.com/hyperrealm/libconfig/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 sha:68757e37c567fd026330c8a8449aa5f9cac08a642f213f2687186b903bd7e94e
 {% endblock %}
 

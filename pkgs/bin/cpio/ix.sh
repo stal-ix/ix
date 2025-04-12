@@ -1,7 +1,11 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block version %}
+2.15
+{% endblock %}
+
 {% block fetch %}
-https://ftp.gnu.org/gnu/cpio/cpio-2.15.tar.bz2
+https://ftp.gnu.org/gnu/cpio/cpio-{{self.version().strip()}}.tar.bz2
 sha:937610b97c329a1ec9268553fb780037bcfff0dcffe9725ebc4fd9c1aa9075db
 {% endblock %}
 

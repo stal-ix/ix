@@ -1,7 +1,11 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block version %}
+1.0.16
+{% endblock %}
+
 {% block fetch %}
-https://github.com/fribidi/fribidi/archive/refs/tags/v1.0.16.tar.gz
+https://github.com/fribidi/fribidi/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 sha:5a1d187a33daa58fcee2ad77f0eb9d136dd6fa4096239199ba31e850d397e8a8
 {% endblock %}
 

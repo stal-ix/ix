@@ -1,7 +1,11 @@
 {% extends '//die/c/gnome.sh' %}
 
+{% block version %}
+47.2
+{% endblock %}
+
 {% block fetch %}
-https://github.com/GNOME/epiphany/archive/refs/tags/47.2.tar.gz
+https://github.com/GNOME/epiphany/archive/refs/tags/{{self.version().strip()}}.tar.gz
 sha:c7b21f89e3f74c4304cc76fc98d9152b153613dcecd73f54f0a1de8ab30f053d
 {% endblock %}
 

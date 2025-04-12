@@ -1,7 +1,11 @@
 {% extends '//die/c/autohell.sh' %}
 
+{% block version %}
+1.11.0
+{% endblock %}
+
 {% block fetch %}
-https://gnupg.org/ftp/gcrypt/libgcrypt/libgcrypt-1.11.0.tar.bz2
+https://gnupg.org/ftp/gcrypt/libgcrypt/libgcrypt-{{self.version().strip()}}.tar.bz2
 sha:09120c9867ce7f2081d6aaa1775386b98c2f2f246135761aae47d81f58685b9c
 {% endblock %}
 

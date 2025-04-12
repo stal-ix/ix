@@ -1,7 +1,11 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block version %}
+0.6.1
+{% endblock %}
+
 {% block fetch %}
-https://github.com/Rafostar/clapper/archive/refs/tags/0.6.1.tar.gz
+https://github.com/Rafostar/clapper/archive/refs/tags/{{self.version().strip()}}.tar.gz
 sha:d244ec6108ebff5ccc817a5888f3f73f52cac129fe480d480cb3f6b9db19cfbe
 {% endblock %}
 

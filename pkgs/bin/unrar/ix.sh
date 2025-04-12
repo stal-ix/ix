@@ -1,7 +1,11 @@
 {% extends '//die/c/make.sh' %}
 
+{% block version %}
+7.1.6
+{% endblock %}
+
 {% block fetch %}
-https://www.rarlab.com/rar/unrarsrc-7.1.6.tar.gz
+https://www.rarlab.com/rar/unrarsrc-{{self.version().strip()}}.tar.gz
 sha:ca5e1da37dd6fa1b78bb5ed675486413f79e4a917709744aa04b6f93dfd914f0
 {% endblock %}
 

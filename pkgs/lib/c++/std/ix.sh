@@ -1,7 +1,11 @@
 {% extends '//die/c/autohell.sh' %}
 
+{% block version %}
+11.2.0
+{% endblock %}
+
 {% block fetch %}
-http://mirror.koddos.net/gcc/releases/gcc-11.2.0/gcc-11.2.0.tar.xz
+http://mirror.koddos.net/gcc/releases/gcc-{{self.version().strip()}}/gcc-{{self.version().strip()}}.tar.xz
 md5:31c86f2ced76acac66992eeedce2fce2
 {% endblock %}
 

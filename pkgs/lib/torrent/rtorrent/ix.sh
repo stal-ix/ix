@@ -1,7 +1,11 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block version %}
+0.15.2
+{% endblock %}
+
 {% block fetch %}
-https://github.com/rakshasa/libtorrent/archive/refs/tags/v0.15.2.tar.gz
+https://github.com/rakshasa/libtorrent/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 sha:045cfc796579dd08445745c3cd38427004202eaa7529d349e482c2b67f3b52b0
 {% endblock %}
 

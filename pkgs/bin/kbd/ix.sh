@@ -1,7 +1,11 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block version %}
+2.7.1
+{% endblock %}
+
 {% block fetch %}
-https://mirrors.edge.kernel.org/pub/linux/utils/kbd/kbd-2.7.1.tar.xz
+https://mirrors.edge.kernel.org/pub/linux/utils/kbd/kbd-{{self.version().strip()}}.tar.xz
 sha:f167d899d92b56ccf12f6f49355173f93870a95f15d8aeebf5fdcd28a621aca8
 {% endblock %}
 

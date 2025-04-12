@@ -1,7 +1,11 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block version %}
+1.4.1
+{% endblock %}
+
 {% block fetch %}
-https://git.sr.ht/~emersion/grim/archive/v1.4.1.tar.gz
+https://git.sr.ht/~emersion/grim/archive/v{{self.version().strip()}}.tar.gz
 sha:5ed8e70fcd83a7e203e92d34dbb82a1342d3f13ad98a6b0310cc97e1a9342ded
 {% endblock %}
 

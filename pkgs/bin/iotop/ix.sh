@@ -1,7 +1,11 @@
 {% extends '//die/c/make.sh' %}
 
+{% block version %}
+1.26
+{% endblock %}
+
 {% block fetch %}
-https://github.com/Tomas-M/iotop/archive/refs/tags/v1.26.tar.gz
+https://github.com/Tomas-M/iotop/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 sha:b0a334cba89249bc7cbb87cf92cf4166911bf00dd2ea8841b572fd776018c487
 {% endblock %}
 

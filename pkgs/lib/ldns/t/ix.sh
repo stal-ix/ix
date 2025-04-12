@@ -1,7 +1,11 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block version %}
+1.8.4
+{% endblock %}
+
 {% block fetch %}
-https://github.com/NLnetLabs/ldns/archive/refs/tags/1.8.4.tar.gz
+https://github.com/NLnetLabs/ldns/archive/refs/tags/{{self.version().strip()}}.tar.gz
 sha:b64a0f619ecb74aaf5fe4fbbb4640b150aec55f9a708031a68b3b4fae95326a2
 {% endblock %}
 

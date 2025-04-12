@@ -1,7 +1,11 @@
 {% extends '//die/c/autohell.sh' %}
 
+{% block version %}
+2.12
+{% endblock %}
+
 {% block fetch %}
-https://ftp.gnu.org/gnu/grub/grub-2.12.tar.xz
+https://ftp.gnu.org/gnu/grub/grub-{{self.version().strip()}}.tar.xz
 sha:f3c97391f7c4eaa677a78e090c7e97e6dc47b16f655f04683ebd37bef7fe0faa
 {% endblock %}
 

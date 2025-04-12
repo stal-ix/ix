@@ -1,7 +1,11 @@
 {% extends '//die/c/make.sh' %}
 
+{% block version %}
+2.11
+{% endblock %}
+
 {% block fetch %}
-https://w1.fi/releases/wpa_supplicant-2.11.tar.gz
+https://w1.fi/releases/wpa_supplicant-{{self.version().strip()}}.tar.gz
 sha:912ea06f74e30a8e36fbb68064d6cdff218d8d591db0fc5d75dee6c81ac7fc0a
 {% endblock %}
 

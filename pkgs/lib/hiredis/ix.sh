@@ -1,7 +1,11 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block version %}
+1.2.0
+{% endblock %}
+
 {% block fetch %}
-https://github.com/redis/hiredis/archive/refs/tags/v1.2.0.tar.gz
+https://github.com/redis/hiredis/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 sha:82ad632d31ee05da13b537c124f819eb88e18851d9cb0c30ae0552084811588c
 {% endblock %}
 

@@ -1,7 +1,11 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block version %}
+3.0.20
+{% endblock %}
+
 {% block fetch %}
-https://github.com/libical/libical/archive/refs/tags/v3.0.20.tar.gz
+https://github.com/libical/libical/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 sha:e73de92f5a6ce84c1b00306446b290a2b08cdf0a80988eca0a2c9d5c3510b4c2
 {% endblock %}
 

@@ -1,7 +1,11 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block version %}
+0.0.18
+{% endblock %}
+
 {% block fetch %}
-https://github.com/nodejs/uvwasi/archive/refs/tags/v0.0.18.tar.gz
+https://github.com/nodejs/uvwasi/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 sha:4e5d2447df0922eda42488c411cd07806f0a6b55e7f98edecd5562b317daf8e3
 {% endblock %}
 

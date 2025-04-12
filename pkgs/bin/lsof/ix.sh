@@ -1,7 +1,11 @@
 {% extends '//die/c/make.sh' %}
 
+{% block version %}
+4.99.4
+{% endblock %}
+
 {% block fetch %}
-https://github.com/lsof-org/lsof/archive/refs/tags/4.99.4.tar.gz
+https://github.com/lsof-org/lsof/archive/refs/tags/{{self.version().strip()}}.tar.gz
 sha:90d02ae35cd14341bfb04ce80e0030767476b0fc414a0acb115d49e79b13d56c
 {% endblock %}
 

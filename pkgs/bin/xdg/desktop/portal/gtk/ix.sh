@@ -1,7 +1,11 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block version %}
+1.14.1
+{% endblock %}
+
 {% block fetch %}
-https://github.com/flatpak/xdg-desktop-portal-gtk/archive/refs/tags/1.14.1.tar.gz
+https://github.com/flatpak/xdg-desktop-portal-gtk/archive/refs/tags/{{self.version().strip()}}.tar.gz
 sha:79992b308246eb9965a1589a321271def3b4bed6a2b84fffd1916f8d6ea3bc9f
 {% endblock %}
 

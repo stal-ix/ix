@@ -1,7 +1,11 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block version %}
+0.1.3
+{% endblock %}
+
 {% block fetch %}
-https://github.com/hyprwm/hyprgraphics/archive/refs/tags/v0.1.3.tar.gz
+https://github.com/hyprwm/hyprgraphics/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 sha:0e11457135a9e7160cf147d361fae3c5dc40035a4ebd894c5d409baa896f43cf
 {% endblock %}
 

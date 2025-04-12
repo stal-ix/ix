@@ -1,9 +1,13 @@
 {% extends '//die/c/autohell.sh' %}
 
+{% block version %}
+3.0.17.3
+{% endblock %}
+
 {# configure: error: VLC is based on plugins. Shared libraries cannot be disabled. #}
 
 {% block fetch %}
-http://get.videolan.org/vlc/3.0.17.3/vlc-3.0.17.3.tar.xz
+http://get.videolan.org/vlc/{{self.version().strip()}}/vlc-{{self.version().strip()}}.tar.xz
 sha:6f7e90ef8973d31d96de64db817173e345150829717a94084b1bb8321cde2014
 {% endblock %}
 

@@ -1,7 +1,11 @@
 {% extends '//lib/mimalloc/2/ix.sh' %}
 
+{% block version %}
+3.0.1
+{% endblock %}
+
 {% block fetch %}
-https://github.com/microsoft/mimalloc/archive/refs/tags/v3.0.1.tar.gz
+https://github.com/microsoft/mimalloc/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 sha:6a514ae31254b43e06e2a89fe1cbc9c447fdbf26edc6f794f3eb722f36e28261
 {% endblock %}
 

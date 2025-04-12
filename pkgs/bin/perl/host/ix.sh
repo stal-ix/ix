@@ -1,7 +1,11 @@
 {% extends '//die/c/make.sh' %}
 
+{% block version %}
+5.36.0
+{% endblock %}
+
 {% block fetch %}
-https://www.cpan.org/src/5.0/perl-5.36.0.tar.gz
+https://www.cpan.org/src/5.0/perl-{{self.version().strip()}}.tar.gz
 sha:e26085af8ac396f62add8a533c3a0ea8c8497d836f0689347ac5abd7b7a4e00a
 {% endblock %}
 

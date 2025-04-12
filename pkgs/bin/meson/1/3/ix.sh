@@ -1,7 +1,11 @@
 {% extends '//die/std/ix.sh' %}
 
+{% block version %}
+1.3.2
+{% endblock %}
+
 {% block fetch %}
-https://github.com/mesonbuild/meson/archive/refs/tags/1.3.2.tar.gz
+https://github.com/mesonbuild/meson/archive/refs/tags/{{self.version().strip()}}.tar.gz
 sha:6c4b4f35b51a260b362535fd32fee6d244871be38a2880f4de3ea9c6e69a0808
 {% endblock %}
 

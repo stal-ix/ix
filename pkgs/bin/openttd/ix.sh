@@ -1,7 +1,11 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block version %}
+14.1
+{% endblock %}
+
 {% block fetch %}
-https://github.com/OpenTTD/OpenTTD/archive/refs/tags/14.1.tar.gz
+https://github.com/OpenTTD/OpenTTD/archive/refs/tags/{{self.version().strip()}}.tar.gz
 sha:56f30930e9bef5b97ebcfc643c35708429a9b1ad80f9ff80e4ead5935b745d82
 {% endblock %}
 

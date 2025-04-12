@@ -1,7 +1,11 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block version %}
+2.2
+{% endblock %}
+
 {% block fetch %}
-https://github.com/epasveer/seer/archive/refs/tags/v2.2.tar.gz
+https://github.com/epasveer/seer/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 sha:9aea234a4b499ca9f4f3bd170bdda84f1d7076938bb77d59d2294b3339a469c4
 {% endblock %}
 

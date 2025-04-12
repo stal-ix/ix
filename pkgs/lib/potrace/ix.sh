@@ -1,7 +1,11 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block version %}
+1.16
+{% endblock %}
+
 {% block fetch %}
-http://potrace.sourceforge.net/download/1.16/potrace-1.16.tar.gz
+http://potrace.sourceforge.net/download/{{self.version().strip()}}/potrace-{{self.version().strip()}}.tar.gz
 sha:be8248a17dedd6ccbaab2fcc45835bb0502d062e40fbded3bc56028ce5eb7acc
 {% endblock %}
 

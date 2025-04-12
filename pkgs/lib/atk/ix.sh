@@ -1,7 +1,11 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block version %}
+2.56.1
+{% endblock %}
+
 {% block fetch %}
-https://download.gnome.org/sources/at-spi2-core/2.56/at-spi2-core-2.56.1.tar.xz
+https://download.gnome.org/sources/at-spi2-core/2.56/at-spi2-core-{{self.version().strip()}}.tar.xz
 sha:fd177fecd8c95006ff0a355eafd7066fe110a2e17eb5eb5fe17ff70e49a4eace
 {% endblock %}
 

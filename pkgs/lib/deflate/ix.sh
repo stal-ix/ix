@@ -1,7 +1,11 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block version %}
+1.23
+{% endblock %}
+
 {% block fetch %}
-https://github.com/ebiggers/libdeflate/archive/refs/tags/v1.23.tar.gz
+https://github.com/ebiggers/libdeflate/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 sha:1ab18349b9fb0ce8a0ca4116bded725be7dcbfa709e19f6f983d99df1fb8b25f
 {% endblock %}
 

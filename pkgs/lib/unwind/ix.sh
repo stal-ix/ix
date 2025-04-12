@@ -1,7 +1,11 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block version %}
+1.8.1
+{% endblock %}
+
 {% block fetch %}
-https://github.com/libunwind/libunwind/archive/refs/tags/v1.8.1.tar.gz
+https://github.com/libunwind/libunwind/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 sha:38833b7b1582db7d76485a62a213706c9252b3dab7380069fea5824e823d8e41
 {% endblock %}
 

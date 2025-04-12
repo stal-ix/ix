@@ -1,7 +1,11 @@
 {% extends '//die/c/make.sh' %}
 
+{% block version %}
+0.2
+{% endblock %}
+
 {% block fetch %}
-https://github.com/opsengine/cpulimit/archive/refs/tags/v0.2.tar.gz
+https://github.com/opsengine/cpulimit/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 sha:64312f9ac569ddcadb615593cd002c94b76e93a0d4625d3ce1abb49e08e2c2da
 {% endblock %}
 

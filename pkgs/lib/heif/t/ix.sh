@@ -1,7 +1,11 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block version %}
+1.19.7
+{% endblock %}
+
 {% block fetch %}
-https://github.com/strukturag/libheif/archive/refs/tags/v1.19.7.tar.gz
+https://github.com/strukturag/libheif/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 sha:8334c7c418f82c30c9bec1f46e6abfd5a8d3c420a3210d5505eb1868696ce0cc
 {% endblock %}
 

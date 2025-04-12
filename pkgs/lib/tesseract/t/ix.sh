@@ -1,7 +1,11 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block version %}
+5.2.0
+{% endblock %}
+
 {% block fetch %}
-https://github.com/tesseract-ocr/tesseract/archive/refs/tags/5.2.0.tar.gz
+https://github.com/tesseract-ocr/tesseract/archive/refs/tags/{{self.version().strip()}}.tar.gz
 sha:eba4deb2f92a3f89a6623812074af8c53b772079525b3c263aa70bbf7b748b3c
 {% endblock %}
 

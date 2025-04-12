@@ -1,7 +1,11 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block version %}
+1.11.1
+{% endblock %}
+
 {% block fetch %}
-https://codeberg.org/dnkl/fuzzel/archive/1.11.1.tar.gz
+https://codeberg.org/dnkl/fuzzel/archive/{{self.version().strip()}}.tar.gz
 sha:7b22fefdada10e4658ec1f914a7296ddde73a5d20a2a1ed3c02c50bf2e701d3b
 {% endblock %}
 

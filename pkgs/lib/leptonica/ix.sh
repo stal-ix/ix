@@ -1,7 +1,11 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block version %}
+1.85.0
+{% endblock %}
+
 {% block fetch %}
-https://github.com/DanBloomberg/leptonica/archive/refs/tags/1.85.0.tar.gz
+https://github.com/DanBloomberg/leptonica/archive/refs/tags/{{self.version().strip()}}.tar.gz
 sha:c01376bce0379d4ea4bc2ec5d5cbddaa49e2f06f88242619ab8c059e21adf233
 {% endblock %}
 

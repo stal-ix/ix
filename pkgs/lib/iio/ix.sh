@@ -1,7 +1,11 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block version %}
+0.26
+{% endblock %}
+
 {% block fetch %}
-https://github.com/analogdevicesinc/libiio/archive/refs/tags/v0.26.tar.gz
+https://github.com/analogdevicesinc/libiio/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 sha:fb445fb860ef1248759f45d4273a4eff360534480ec87af64c6b8db3b99be7e5
 {% endblock %}
 

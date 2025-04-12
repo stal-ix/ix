@@ -1,7 +1,11 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block version %}
+0.10
+{% endblock %}
+
 {% block fetch %}
-https://github.com/wolfpld/tracy/archive/refs/tags/v0.10.tar.gz
+https://github.com/wolfpld/tracy/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 sha:a76017d928f3f2727540fb950edd3b736caa97b12dbb4e5edce66542cbea6600
 {% endblock %}
 

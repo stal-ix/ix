@@ -1,7 +1,11 @@
 {% extends '//die/c/autohell.sh' %}
 
+{% block version %}
+1.8.6
+{% endblock %}
+
 {% block fetch %}
-https://www.x.org/releases/individual/lib/libX11-1.8.6.tar.xz
+https://www.x.org/releases/individual/lib/libX11-{{self.version().strip()}}.tar.xz
 sha:59535b7cc6989ba806a022f7e8533b28c4397b9d86e9d07b6df0c0703fa25cc9
 {% endblock %}
 

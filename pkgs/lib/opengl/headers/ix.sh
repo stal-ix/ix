@@ -1,7 +1,11 @@
 {% extends '//die/std/ix.sh' %}
 
+{% block version %}
+1.7.0
+{% endblock %}
+
 {% block fetch %}
-https://github.com/NVIDIA/libglvnd/archive/refs/tags/v1.7.0.tar.gz
+https://github.com/NVIDIA/libglvnd/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 sha:073e7292788d4d3eeb45ea6c7bdcce9bfdb3b3eef8d7dbd47f2f30dce046ef98
 {% endblock %}
 

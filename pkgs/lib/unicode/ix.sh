@@ -1,7 +1,11 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block version %}
+0.6.0
+{% endblock %}
+
 {% block fetch %}
-https://github.com/contour-terminal/libunicode/archive/refs/tags/v0.6.0.tar.gz
+https://github.com/contour-terminal/libunicode/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 sha:0c217f8264000f1b8c36e78969cb9cf91ac97de937cc141ab78e6b1ad7f404ef
 https://www.unicode.org/Public/16.0.0/ucd/UCD.zip
 sha:c86dd81f2b14a43b0cc064aa5f89aa7241386801e35c59c7984e579832634eb2

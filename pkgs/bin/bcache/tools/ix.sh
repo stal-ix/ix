@@ -1,7 +1,11 @@
 {% extends '//die/c/make.sh' %}
 
+{% block version %}
+1.1
+{% endblock %}
+
 {% block fetch %}
-https://git.kernel.org/pub/scm/linux/kernel/git/colyli/bcache-tools.git/snapshot/bcache-tools-1.1.tar.gz
+https://git.kernel.org/pub/scm/linux/kernel/git/colyli/bcache-tools.git/snapshot/bcache-tools-{{self.version().strip()}}.tar.gz
 sha:d1c92274ae03b414dd1a05277bf89dd2a8395496c692e3b143d9e6112d3421f8
 {% endblock %}
 

@@ -1,7 +1,11 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block version %}
+3.4.1
+{% endblock %}
+
 {% block fetch %}
-https://github.com/htop-dev/htop/archive/refs/tags/3.4.1.tar.gz
+https://github.com/htop-dev/htop/archive/refs/tags/{{self.version().strip()}}.tar.gz
 sha:af9ec878f831b7c27d33e775c668ec79d569aa781861c995a0fbadc1bdb666cf
 {% endblock %}
 

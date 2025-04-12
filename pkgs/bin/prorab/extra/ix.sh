@@ -1,7 +1,11 @@
 {% extends '//die/c/make.sh' %}
 
+{% block version %}
+0.2.43
+{% endblock %}
+
 {% block fetch %}
-https://github.com/cppfw/prorab-extra/archive/refs/tags/0.2.43.tar.gz
+https://github.com/cppfw/prorab-extra/archive/refs/tags/{{self.version().strip()}}.tar.gz
 sha:2bd27a510b2451cc799a1928c66b47102241cd603c08a15798de4920e079c4da
 {% endblock %}
 

@@ -1,7 +1,11 @@
 {% extends '//die/c/ix.sh' %}
 
+{% block version %}
+1.63.1
+{% endblock %}
+
 {% block fetch %}
-https://github.com/grpc/grpc-java/archive/refs/tags/v1.63.1.tar.gz
+https://github.com/grpc/grpc-java/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 sha:9a63053966eaee1af608f5ba898522d448ebc8fc31be277e861aa3c45dec966f
 {% endblock %}
 

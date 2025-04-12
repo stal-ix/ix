@@ -1,7 +1,11 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block version %}
+0.16.4
+{% endblock %}
+
 {% block fetch %}
-https://codeberg.org/tenacityteam/libmad/archive/0.16.4.tar.gz
+https://codeberg.org/tenacityteam/libmad/archive/{{self.version().strip()}}.tar.gz
 sha:f4eb229452252600ce48f3c2704c9e6d97b789f81e31c37b0c67dd66f445ea35
 {% endblock %}
 

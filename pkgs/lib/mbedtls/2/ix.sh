@@ -1,7 +1,11 @@
 {% extends '//lib/mbedtls/t/ix.sh' %}
 
+{% block version %}
+2.28.10
+{% endblock %}
+
 {% block fetch %}
-https://github.com/ARMmbed/mbedtls/archive/refs/tags/v2.28.10.tar.gz
+https://github.com/ARMmbed/mbedtls/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 sha:0f2e0525903a89ae1d39ce439d858be66933bda54c5b6102b72a29ed8fe7c088
 {% endblock %}
 

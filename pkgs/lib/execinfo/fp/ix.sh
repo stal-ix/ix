@@ -1,7 +1,11 @@
 {% extends '//die/c/ix.sh' %}
 
+{% block version %}
+1.1
+{% endblock %}
+
 {% block fetch %}
-http://distcache.freebsd.org/local-distfiles/itetcu/libexecinfo-1.1.tar.bz2
+http://distcache.freebsd.org/local-distfiles/itetcu/libexecinfo-{{self.version().strip()}}.tar.bz2
 sha:c9a21913e7fdac8ef6b33250b167aa1fc0a7b8a175145e26913a4c19d8a59b1f
 {% endblock %}
 

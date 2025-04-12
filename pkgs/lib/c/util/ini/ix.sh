@@ -1,7 +1,11 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block version %}
+1.1.0
+{% endblock %}
+
 {% block fetch %}
-https://github.com/c-util/c-ini/archive/refs/tags/v1.1.0.tar.gz
+https://github.com/c-util/c-ini/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 sha:df01f3e2bd20a3857d9b9d7e4d13c6bf6cda69580ca110e7e41f14ad5423c950
 {% endblock %}
 

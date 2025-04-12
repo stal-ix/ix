@@ -1,7 +1,11 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block version %}
+1.03
+{% endblock %}
+
 {% block fetch %}
-http://www.oberhumer.com/opensource/ucl/download/ucl-1.03.tar.gz
+http://www.oberhumer.com/opensource/ucl/download/ucl-{{self.version().strip()}}.tar.gz
 sha:b865299ffd45d73412293369c9754b07637680e5c826915f097577cd27350348
 {% endblock %}
 

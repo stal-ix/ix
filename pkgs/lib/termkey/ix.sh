@@ -1,7 +1,11 @@
 {% extends '//die/c/make.sh' %}
 
+{% block version %}
+0.20
+{% endblock %}
+
 {% block fetch %}
-https://github.com/neovim/libtermkey/archive/refs/tags/v0.20.tar.gz
+https://github.com/neovim/libtermkey/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 sha:7567e1de8232bf4a35cb713456c63b329755b56182bdc2c9cebfa0f0192615dd
 {% endblock %}
 

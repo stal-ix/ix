@@ -1,7 +1,11 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block version %}
+2.13
+{% endblock %}
+
 {% block fetch %}
-https://github.com/linux-nvme/nvme-cli/archive/refs/tags/v2.13.tar.gz
+https://github.com/linux-nvme/nvme-cli/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 sha:43797e5b146ef5d4a67120fcdf38bb8254dcafefa714467d3f08dd675ebd40bb
 {% endblock %}
 

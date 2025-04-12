@@ -1,7 +1,11 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block version %}
+4.11.0
+{% endblock %}
+
 {% block fetch %}
-https://github.com/opencv/opencv/archive/refs/tags/4.11.0.tar.gz
+https://github.com/opencv/opencv/archive/refs/tags/{{self.version().strip()}}.tar.gz
 sha:9a7c11f924eff5f8d8070e297b322ee68b9227e003fd600d4b8122198091665f
 {% endblock %}
 

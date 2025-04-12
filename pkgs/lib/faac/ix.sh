@@ -1,7 +1,11 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block version %}
+1.31.1
+{% endblock %}
+
 {% block fetch %}
-https://github.com/knik0/faac/archive/refs/tags/faac-1.31.1.tar.gz
+https://github.com/knik0/faac/archive/refs/tags/faac-{{self.version().strip()}}.tar.gz
 sha:3191bf1b131f1213221ed86f65c2dfabf22d41f6b3771e7e65b6d29478433527
 {% endblock %}
 

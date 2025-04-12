@@ -1,7 +1,11 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block version %}
+1.20
+{% endblock %}
+
 {% block fetch %}
-https://dev.yorhel.nl/download/ncdu-1.20.tar.gz
+https://dev.yorhel.nl/download/ncdu-{{self.version().strip()}}.tar.gz
 sha:5fe2bb841abe72374bb242dbb93293c4ae053078432d896a7481b2ff10be9572
 {% endblock %}
 

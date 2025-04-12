@@ -1,7 +1,11 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block version %}
+3.3.1
+{% endblock %}
+
 {% block fetch %}
-https://codeberg.org/dnkl/fcft/archive/3.3.1.tar.gz
+https://codeberg.org/dnkl/fcft/archive/{{self.version().strip()}}.tar.gz
 sha:f18bf79562e06d41741690cd1e07a02eb2600ae39eb5752eef8a698f603a482c
 {% endblock %}
 

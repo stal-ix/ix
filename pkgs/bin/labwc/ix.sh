@@ -1,7 +1,11 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block version %}
+0.8.3
+{% endblock %}
+
 {% block fetch %}
-https://github.com/labwc/labwc/archive/refs/tags/0.8.3.tar.gz
+https://github.com/labwc/labwc/archive/refs/tags/{{self.version().strip()}}.tar.gz
 sha:746be2ff2d0c0c0b795c97fa24c7058f75586685c88a1194c243b6a846f938a5
 {% endblock %}
 

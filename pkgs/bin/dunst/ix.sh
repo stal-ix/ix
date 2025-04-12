@@ -1,7 +1,11 @@
 {% extends '//die/c/make.sh' %}
 
+{% block version %}
+1.10.0
+{% endblock %}
+
 {% block fetch %}
-https://github.com/dunst-project/dunst/archive/refs/tags/v1.10.0.tar.gz
+https://github.com/dunst-project/dunst/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 sha:d1fbeba329b3801b931ad804f1fadd96a36be5edf2e49c8e30f081443079759f
 {% endblock %}
 

@@ -1,7 +1,11 @@
 {% extends '//die/c/ix.sh' %}
 
+{% block version %}
+0.16.6
+{% endblock %}
+
 {% block fetch %}
-https://github.com/flacjacket/pywlroots/archive/refs/tags/v0.16.6.tar.gz
+https://github.com/flacjacket/pywlroots/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 sha:9620095d04f51271d3b071dd2c7b52b20f33b077de7785afbe037e743ae0311c
 {% endblock %}
 

@@ -1,7 +1,11 @@
 {% extends '//die/vala/meson.sh' %}
 
+{% block version %}
+7.6.0
+{% endblock %}
+
 {% block fetch %}
-https://github.com/elementary/granite/archive/refs/tags/7.6.0.tar.gz
+https://github.com/elementary/granite/archive/refs/tags/{{self.version().strip()}}.tar.gz
 sha:4b4e4f7f86eb3f55116faec42ebd87e04c3e424d82715ecd967ed39540dca5ef
 {% endblock %}
 

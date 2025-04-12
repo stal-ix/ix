@@ -1,7 +1,11 @@
 {% extends '//bin/hypr/t/ix.sh' %}
 
+{% block version %}
+0.4.4
+{% endblock %}
+
 {% block fetch %}
-https://github.com/hyprwm/hyprpicker/archive/refs/tags/v0.4.4.tar.gz
+https://github.com/hyprwm/hyprpicker/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 sha:90e9dce28176d5998bf3afeeb30382317e206a166729d980499974c0d756ec31
 {% endblock %}
 

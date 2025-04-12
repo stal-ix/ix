@@ -1,7 +1,11 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block version %}
+3.1
+{% endblock %}
+
 {% block fetch %}
-http://www.kroah.com/linux/usb/usbview-3.1.tar.gz
+http://www.kroah.com/linux/usb/usbview-{{self.version().strip()}}.tar.gz
 sha:362cee689e11f7d36ebedccd188c3f777791c7b9c18a9d0bdb74bf69f5a08358
 {% endblock %}
 

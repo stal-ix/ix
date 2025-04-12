@@ -1,7 +1,11 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block version %}
+0.16.3
+{% endblock %}
+
 {% block fetch %}
-https://github.com/ximion/appstream/archive/refs/tags/v0.16.3.tar.gz
+https://github.com/ximion/appstream/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 sha:4470a27474dc3cc4938552fbf0394b6a65d8a2055d4f4418df086d65d8f2ba29
 {% endblock %}
 

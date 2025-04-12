@@ -1,7 +1,11 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block version %}
+1.2.13
+{% endblock %}
+
 {% block fetch %}
-http://www.alsa-project.org/files/pub/utils/alsa-utils-1.2.13.tar.bz2
+http://www.alsa-project.org/files/pub/utils/alsa-utils-{{self.version().strip()}}.tar.bz2
 sha:1702a6b1cdf9ba3e996ecbc1ddcf9171e6808f5961d503d0f27e80ee162f1daa
 {% endblock %}
 

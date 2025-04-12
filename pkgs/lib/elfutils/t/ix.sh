@@ -1,7 +1,11 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block version %}
+0.192
+{% endblock %}
+
 {% block fetch %}
-http://sourceware.org/elfutils/ftp/0.192/elfutils-0.192.tar.bz2
+http://sourceware.org/elfutils/ftp/{{self.version().strip()}}/elfutils-{{self.version().strip()}}.tar.bz2
 sha:616099beae24aba11f9b63d86ca6cc8d566d968b802391334c91df54eab416b4
 {% endblock %}
 

@@ -1,7 +1,11 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block version %}
+6.0.1
+{% endblock %}
+
 {% block fetch %}
-https://downloads.sourceforge.net/project/gnuplot/gnuplot/6.0.1/gnuplot-6.0.1.tar.gz
+https://downloads.sourceforge.net/project/gnuplot/gnuplot/{{self.version().strip()}}/gnuplot-{{self.version().strip()}}.tar.gz
 sha:e85a660c1a2a1808ff24f7e69981ffcbac66a45c9dcf711b65610b26ea71379a
 {% endblock %}
 

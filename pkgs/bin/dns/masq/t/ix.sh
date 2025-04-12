@@ -1,7 +1,11 @@
 {% extends '//die/c/make.sh' %}
 
+{% block version %}
+2.91
+{% endblock %}
+
 {% block fetch %}
-https://thekelleys.org.uk/dnsmasq/dnsmasq-2.91.tar.xz
+https://thekelleys.org.uk/dnsmasq/dnsmasq-{{self.version().strip()}}.tar.xz
 sha:f622682848b33677adb2b6ad08264618a2ae0a01da486a93fd8cd91186b3d153
 {% endblock %}
 

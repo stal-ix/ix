@@ -1,7 +1,11 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block version %}
+4.0.0
+{% endblock %}
+
 {% block fetch %}
-https://github.com/jovanlanik/gtklock/archive/refs/tags/v4.0.0.tar.gz
+https://github.com/jovanlanik/gtklock/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 sha:db20bf27bd5dd01901ea1753c89c170777dd7cf8fca19130cf90f5f4e3fb9633
 {% endblock %}
 

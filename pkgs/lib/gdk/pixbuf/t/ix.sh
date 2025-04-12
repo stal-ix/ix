@@ -1,7 +1,11 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block version %}
+2.42.6
+{% endblock %}
+
 {% block fetch %}
-https://download.gnome.org/sources/gdk-pixbuf/2.42/gdk-pixbuf-2.42.6.tar.xz
+https://download.gnome.org/sources/gdk-pixbuf/2.42/gdk-pixbuf-{{self.version().strip()}}.tar.xz
 sha:c4a6b75b7ed8f58ca48da830b9fa00ed96d668d3ab4b1f723dcf902f78bde77f
 #segfaults waybar, epiphany
 #https://download.gnome.org/sources/gdk-pixbuf/2.42/gdk-pixbuf-2.42.11.tar.xz

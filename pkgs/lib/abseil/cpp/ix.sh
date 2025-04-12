@@ -1,7 +1,11 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block version %}
+20230802.1
+{% endblock %}
+
 {% block fetch %}
-https://github.com/abseil/abseil-cpp/archive/refs/tags/20230802.1.tar.gz
+https://github.com/abseil/abseil-cpp/archive/refs/tags/{{self.version().strip()}}.tar.gz
 sha:987ce98f02eefbaf930d6e38ab16aa05737234d7afbab2d5c4ea7adbe50c28ed
 {% endblock %}
 

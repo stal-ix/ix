@@ -1,7 +1,11 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block version %}
+3.7.9
+{% endblock %}
+
 {% block fetch %}
-https://github.com/libarchive/libarchive/archive/refs/tags/v3.7.9.tar.gz
+https://github.com/libarchive/libarchive/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 sha:6191ea9756a7a0b116d701f3bce30ee3dc8c1f0a16b1e6221d273c85b57ce8c6
 {% endblock %}
 

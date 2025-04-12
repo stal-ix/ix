@@ -1,7 +1,11 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block version %}
+2.14.1
+{% endblock %}
+
 {% block fetch %}
-https://github.com/akheron/jansson/archive/refs/tags/v2.14.1.tar.gz
+https://github.com/akheron/jansson/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 sha:979210eaffdffbcf54cfc34d047fccde13f21b529a381df26db871d886f729a4
 {% endblock %}
 

@@ -1,7 +1,11 @@
 {% extends '//die/c/autohell.sh' %}
 
+{% block version %}
+1.51
+{% endblock %}
+
 {% block fetch %}
-https://gnupg.org/ftp/gcrypt/libgpg-error/libgpg-error-1.51.tar.bz2
+https://gnupg.org/ftp/gcrypt/libgpg-error/libgpg-error-{{self.version().strip()}}.tar.bz2
 sha:be0f1b2db6b93eed55369cdf79f19f72750c8c7c39fc20b577e724545427e6b2
 {% endblock %}
 

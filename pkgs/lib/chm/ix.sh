@@ -1,7 +1,11 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block version %}
+0.40
+{% endblock %}
+
 {% block fetch %}
-http://www.jedrea.com/chmlib/chmlib-0.40.tar.bz2
+http://www.jedrea.com/chmlib/chmlib-{{self.version().strip()}}.tar.bz2
 sha:3449d64b0cf71578b2c7e3ddc048d4af3661f44a83941ea074a7813f3a59ffa3
 {% endblock %}
 

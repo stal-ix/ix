@@ -1,7 +1,11 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block version %}
+1.3.296.0
+{% endblock %}
+
 {% block fetch %}
-https://github.com/KhronosGroup/glslang/archive/refs/tags/vulkan-sdk-1.3.296.0.tar.gz
+https://github.com/KhronosGroup/glslang/archive/refs/tags/vulkan-sdk-{{self.version().strip()}}.tar.gz
 sha:a7a5e845ee46b02a762c137e35245079774b8b830034883d6b73ba0023e24f56
 {% endblock %}
 

@@ -1,7 +1,11 @@
 {% extends '//die/c/autohell.sh' %}
 
+{% block version %}
+2.4.8
+{% endblock %}
+
 {% block fetch %}
-https://github.com/OpenPrinting/cups/archive/refs/tags/v2.4.8.tar.gz
+https://github.com/OpenPrinting/cups/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 sha:4cca3693f076542006c663a8debc883ddac3050da3d4a4a43e760efcb12cd4b3
 {% endblock %}
 

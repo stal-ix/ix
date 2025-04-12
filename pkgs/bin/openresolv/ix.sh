@@ -1,7 +1,11 @@
 {% extends '//die/c/make.sh' %}
 
+{% block version %}
+3.14.1
+{% endblock %}
+
 {% block fetch %}
-https://github.com/NetworkConfiguration/openresolv/archive/refs/tags/v3.14.1.tar.gz
+https://github.com/NetworkConfiguration/openresolv/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 sha:72ae29f2e207039a8c55857fadc428026c26e9aa358cf772aa59cf635e643d4a
 {% endblock %}
 

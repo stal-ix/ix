@@ -1,7 +1,11 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block version %}
+1.3.2
+{% endblock %}
+
 {% block fetch %}
-https://github.com/lxde/pcmanfm/archive/refs/tags/1.3.2.tar.gz
+https://github.com/lxde/pcmanfm/archive/refs/tags/{{self.version().strip()}}.tar.gz
 sha:66ee6b1a5907bb519d5b175e379f975acfcdaa68b6cbbc72d168b3ff935e6fea
 {% endblock %}
 

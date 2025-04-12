@@ -1,7 +1,11 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block version %}
+2.10.0
+{% endblock %}
+
 {% block fetch %}
-https://github.com/JuliaStrings/utf8proc/archive/refs/tags/v2.10.0.tar.gz
+https://github.com/JuliaStrings/utf8proc/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 sha:6f4f1b639daa6dca9f80bc5db1233e9cbaa31a67790887106160b33ef743f136
 {% endblock %}
 

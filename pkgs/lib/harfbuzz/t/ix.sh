@@ -1,7 +1,11 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block version %}
+11.0.1
+{% endblock %}
+
 {% block fetch %}
-https://github.com/harfbuzz/harfbuzz/archive/refs/tags/11.0.1.tar.gz
+https://github.com/harfbuzz/harfbuzz/archive/refs/tags/{{self.version().strip()}}.tar.gz
 sha:c9cd31190f4b2845937899df3035b3f9b2f775cbe76a6051be60411e59639d45
 {% endblock %}
 

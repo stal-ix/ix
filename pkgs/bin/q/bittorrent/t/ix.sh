@@ -1,7 +1,11 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block version %}
+5.0.2
+{% endblock %}
+
 {% block fetch %}
-https://github.com/qbittorrent/qBittorrent/archive/refs/tags/release-5.0.2.tar.gz
+https://github.com/qbittorrent/qBittorrent/archive/refs/tags/release-{{self.version().strip()}}.tar.gz
 sha:ba46f7ac0c530ab6ba81fdce6f4488393cd67dd1a9d823660e26081773569274
 {% endblock %}
 

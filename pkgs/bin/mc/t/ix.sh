@@ -1,7 +1,11 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block version %}
+4.8.33
+{% endblock %}
+
 {% block fetch %}
-https://github.com/MidnightCommander/mc/archive/refs/tags/4.8.33.tar.gz
+https://github.com/MidnightCommander/mc/archive/refs/tags/{{self.version().strip()}}.tar.gz
 sha:092e440930fda43574739e45a8b41af384b974e6720184b6707d127b84082c51
 {% endblock %}
 

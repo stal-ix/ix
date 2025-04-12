@@ -1,7 +1,11 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block version %}
+8.4
+{% endblock %}
+
 {% block fetch %}
-https://www.nano-editor.org/dist/v8/nano-8.4.tar.xz
+https://www.nano-editor.org/dist/v8/nano-{{self.version().strip()}}.tar.xz
 sha:5ad29222bbd55624d87ea677928b3106a743114d6c6f9b41f36c97be2a8e628d
 {% endblock %}
 

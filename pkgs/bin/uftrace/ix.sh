@@ -1,9 +1,13 @@
 {% extends '//die/c/make.sh' %}
 
+{% block version %}
+0.12
+{% endblock %}
+
 {# broken for static binaries #}
 
 {% block fetch %}
-https://github.com/namhyung/uftrace/archive/refs/tags/v0.12.tar.gz
+https://github.com/namhyung/uftrace/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 sha:2aad01f27d4f18717b681824c7a28ac3e1efd5e7bbed3ec888a3ea5af60e3700
 {% endblock %}
 

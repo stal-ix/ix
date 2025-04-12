@@ -1,7 +1,11 @@
 {% extends '//die/c/gnome.sh' %}
 
+{% block version %}
+48.0
+{% endblock %}
+
 {% block fetch %}
-https://gitlab.gnome.org/GNOME/console/-/archive/48.0/console-48.0.tar.bz2
+https://gitlab.gnome.org/GNOME/console/-/archive/{{self.version().strip()}}/console-{{self.version().strip()}}.tar.bz2
 sha:c5c733817aff61871bccf2d676ed308f53db15ce354394c839b2992f78fbc4b1
 {% endblock %}
 

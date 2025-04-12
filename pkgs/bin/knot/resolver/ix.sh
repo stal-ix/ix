@@ -1,7 +1,11 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block version %}
+6.0.10
+{% endblock %}
+
 {% block fetch %}
-https://secure.nic.cz/files/knot-resolver/knot-resolver-6.0.10.tar.xz
+https://secure.nic.cz/files/knot-resolver/knot-resolver-{{self.version().strip()}}.tar.xz
 sha:b7cb0b3672836114581747cc5edde4c65b9d07f8d6628a00bceb0b56a14be395
 {% endblock %}
 

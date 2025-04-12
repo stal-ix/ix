@@ -1,7 +1,11 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block version %}
+2.9.9
+{% endblock %}
+
 {% block fetch %}
-https://github.com/libfuse/libfuse/archive/refs/tags/fuse-2.9.9.tar.gz
+https://github.com/libfuse/libfuse/archive/refs/tags/fuse-{{self.version().strip()}}.tar.gz
 sha:e57a24721177c3b3dd71cb9239ca46b4dee283db9388d48f7ccd256184982194
 {% endblock %}
 

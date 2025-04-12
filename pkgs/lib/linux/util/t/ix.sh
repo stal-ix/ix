@@ -1,7 +1,11 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block version %}
+2.41
+{% endblock %}
+
 {% block fetch %}
-https://github.com/util-linux/util-linux/archive/refs/tags/v2.41.tar.gz
+https://github.com/util-linux/util-linux/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 sha:277407acf21815006eb4bb2ee9c2fa2ea6f4f84bfc57486c460c6bc8c77a4445
 {% endblock %}
 

@@ -1,7 +1,11 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block version %}
+0.1.8
+{% endblock %}
+
 {% block fetch %}
-https://git.sr.ht/~adnano/wmenu/archive/0.1.8.tar.gz
+https://git.sr.ht/~adnano/wmenu/archive/{{self.version().strip()}}.tar.gz
 sha:0079d3bbe82e0b02035450b4b31609dd5b822116ea4c14979d2e26d91db3c461
 {% endblock %}
 

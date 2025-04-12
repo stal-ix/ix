@@ -1,7 +1,11 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block version %}
+1.10.4
+{% endblock %}
+
 {% block fetch %}
-https://www.tcpdump.org/release/libpcap-1.10.4.tar.gz
+https://www.tcpdump.org/release/libpcap-{{self.version().strip()}}.tar.gz
 sha:ed19a0383fad72e3ad435fd239d7cd80d64916b87269550159d20e47160ebe5f
 {% endblock %}
 

@@ -1,5 +1,9 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block version %}
+4.0.0
+{% endblock %}
+
 {# TODO(pg): implement plugins support #}
 
 {#
@@ -11,7 +15,7 @@ WXS schema /home/ci/ix_root/build/rMBCFa4qkoGgeRF6/src/src/external/rawspeed/dat
 #}
 
 {% block fetch %}
-https://github.com/darktable-org/darktable/releases/download/release-4.0.0/darktable-4.0.0.tar.xz
+https://github.com/darktable-org/darktable/releases/download/release-{{self.version().strip()}}/darktable-{{self.version().strip()}}.tar.xz
 sha:1416f8f59717e65a6220541aaa12eacca93888ce5176f2c9ab6c17b9cc53cc2d
 {% endblock %}
 

@@ -1,7 +1,11 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block version %}
+3.31.6
+{% endblock %}
+
 {% block fetch %}
-https://github.com/Kitware/CMake/archive/refs/tags/v3.31.6.tar.gz
+https://github.com/Kitware/CMake/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 sha:a325dc0566c1421c611dd7507dabd2706419081af8126273dc436d4b1066873c
 {% endblock %}
 

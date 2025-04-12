@@ -1,7 +1,11 @@
 {% extends '//die/c/autohell.sh' %}
 
+{% block version %}
+0.14
+{% endblock %}
+
 {% block fetch %}
-http://0pointer.de/lennart/projects/libdaemon/libdaemon-0.14.tar.gz
+http://0pointer.de/lennart/projects/libdaemon/libdaemon-{{self.version().strip()}}.tar.gz
 sha:fd23eb5f6f986dcc7e708307355ba3289abe03cc381fc47a80bca4a50aa6b834
 {% endblock %}
 

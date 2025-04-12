@@ -1,9 +1,13 @@
 {% extends '//die/c/autohell.sh' %}
 
+{% block version %}
+0.3.5
+{% endblock %}
+
 {# hard rust dep #}
 
 {% block fetch %}
-https://libopenraw.freedesktop.org/download/libopenraw-0.3.5.tar.bz2
+https://libopenraw.freedesktop.org/download/libopenraw-{{self.version().strip()}}.tar.bz2
 sha:9a93d92d55066b9d88df84a58f75095654c31dddb92021b47baa0f3f482fb2e7
 {% endblock %}
 

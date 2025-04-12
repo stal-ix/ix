@@ -1,7 +1,11 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block version %}
+1.11.3
+{% endblock %}
+
 {% block fetch %}
-https://libzip.org/download/libzip-1.11.3.tar.xz
+https://libzip.org/download/libzip-{{self.version().strip()}}.tar.xz
 sha:9509d878ba788271c8b5abca9cfde1720f075335686237b7e9a9e7210fe67c1b
 {% endblock %}
 

@@ -1,7 +1,11 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block version %}
+0.2.5
+{% endblock %}
+
 {% block fetch %}
-https://github.com/yaml/libyaml/archive/refs/tags/0.2.5.tar.gz
+https://github.com/yaml/libyaml/archive/refs/tags/{{self.version().strip()}}.tar.gz
 sha:fa240dbf262be053f3898006d502d514936c818e422afdcf33921c63bed9bf2e
 {% endblock %}
 

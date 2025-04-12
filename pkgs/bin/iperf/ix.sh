@@ -1,7 +1,11 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block version %}
+2.2.1
+{% endblock %}
+
 {% block fetch %}
-https://downloads.sourceforge.net/iperf2/iperf-2.2.1.tar.gz
+https://downloads.sourceforge.net/iperf2/iperf-{{self.version().strip()}}.tar.gz
 sha:754ab0a7e28033dbea81308ef424bc7df4d6e2fe31b60cc536b61b51fefbd8fb
 {% endblock %}
 

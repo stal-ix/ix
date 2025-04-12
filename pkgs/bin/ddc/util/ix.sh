@@ -1,7 +1,11 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block version %}
+2.1.4
+{% endblock %}
+
 {% block fetch %}
-https://github.com/rockowitz/ddcutil/archive/refs/tags/v2.1.4.tar.gz
+https://github.com/rockowitz/ddcutil/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 sha:cd8325d399399edba3df4ec58a4051c7c54fcf4fbc8f62937c6f19adb303f4ba
 {% endblock %}
 

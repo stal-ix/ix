@@ -1,7 +1,11 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block version %}
+0.30
+{% endblock %}
+
 {% block fetch %}
-http://0pointer.de/lennart/projects/libcanberra/libcanberra-0.30.tar.xz
+http://0pointer.de/lennart/projects/libcanberra/libcanberra-{{self.version().strip()}}.tar.xz
 sha:c2b671e67e0c288a69fc33dc1b6f1b534d07882c2aceed37004bf48c601afa72
 {% endblock %}
 

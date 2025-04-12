@@ -1,7 +1,11 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block version %}
+0.12.0
+{% endblock %}
+
 {% block fetch %}
-https://github.com/Alexays/Waybar/archive/refs/tags/0.12.0.tar.gz
+https://github.com/Alexays/Waybar/archive/refs/tags/{{self.version().strip()}}.tar.gz
 sha:80454a0778176f575c112bdef9107f272621b578aa629bcc257ad9844a6c7165
 {% endblock %}
 

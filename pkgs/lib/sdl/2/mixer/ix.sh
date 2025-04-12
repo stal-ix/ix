@@ -1,7 +1,11 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block version %}
+2.8.0
+{% endblock %}
+
 {% block fetch %}
-https://github.com/libsdl-org/SDL_mixer/archive/refs/tags/release-2.8.0.tar.gz
+https://github.com/libsdl-org/SDL_mixer/archive/refs/tags/release-{{self.version().strip()}}.tar.gz
 sha:1146f00815c8ad22c3d48fbe31ae23dc5997936ebf30b4b3aeab6eab7ea1db3e
 {% endblock %}
 

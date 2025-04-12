@@ -1,7 +1,11 @@
 {% extends '//die/c/ix.sh' %}
 
+{% block version %}
+1.3.9
+{% endblock %}
+
 {% block fetch %}
-https://github.com/apache/serf/archive/refs/tags/1.3.9.tar.gz
+https://github.com/apache/serf/archive/refs/tags/{{self.version().strip()}}.tar.gz
 sha:ebeb4904692e68469de7fdedf99f1fc102d3fc922c9bb811231c7ff7395b9c9c
 {% endblock %}
 

@@ -1,7 +1,11 @@
 {% extends '//die/c/autohell.sh' %}
 
+{% block version %}
+3.6
+{% endblock %}
+
 {% block fetch %}
-https://ftp.gnu.org/gnu/grep/grep-3.6.tar.xz
+https://ftp.gnu.org/gnu/grep/grep-{{self.version().strip()}}.tar.xz
 sha:667e15e8afe189e93f9f21a7cd3a7b3f776202f417330b248c2ad4f997d9373e
 {% endblock %}
 

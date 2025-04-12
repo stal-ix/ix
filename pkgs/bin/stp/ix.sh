@@ -1,7 +1,11 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block version %}
+2.3.3
+{% endblock %}
+
 {% block fetch %}
-https://github.com/stp/stp/archive/refs/tags/2.3.3.tar.gz
+https://github.com/stp/stp/archive/refs/tags/{{self.version().strip()}}.tar.gz
 sha:ea6115c0fc11312c797a4b7c4db8734afcfce4908d078f386616189e01b4fffa
 {% endblock %}
 

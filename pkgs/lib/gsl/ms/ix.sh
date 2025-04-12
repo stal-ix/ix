@@ -1,7 +1,11 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block version %}
+4.0.0
+{% endblock %}
+
 {% block fetch %}
-https://github.com/microsoft/GSL/archive/refs/tags/v4.0.0.tar.gz
+https://github.com/microsoft/GSL/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 sha:f0e32cb10654fea91ad56bde89170d78cfbf4363ee0b01d8f097de2ba49f6ce9
 {% endblock %}
 

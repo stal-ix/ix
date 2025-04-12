@@ -1,7 +1,11 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block version %}
+2.6.0
+{% endblock %}
+
 {% block fetch %}
-https://github.com/seccomp/libseccomp/archive/refs/tags/v2.6.0.tar.gz
+https://github.com/seccomp/libseccomp/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 sha:0889a8da98e37f86019c90789fd4ff7eda6e1ceb9ef07d4c51c67aeb50a77860
 {% endblock %}
 

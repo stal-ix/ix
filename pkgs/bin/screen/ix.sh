@@ -1,9 +1,13 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block version %}
+5.0.0
+{% endblock %}
+
 {% block fetch %}
 #http://ftp.gnu.org/gnu/screen/screen-4.9.1.tar.gz
 #sha:26cef3e3c42571c0d484ad6faf110c5c15091fbf872b06fa7aa4766c7405ac69
-http://ftp.gnu.org/gnu/screen/screen-5.0.0.tar.gz
+http://ftp.gnu.org/gnu/screen/screen-{{self.version().strip()}}.tar.gz
 sha:f04a39d00a0e5c7c86a55338808903082ad5df4d73df1a2fd3425976aed94971
 {% endblock %}
 

@@ -1,7 +1,11 @@
 {% extends '//die/c/make.sh' %}
 
+{% block version %}
+0.1.35
+{% endblock %}
+
 {% block fetch %}
-https://github.com/akamai/re2g/archive/refs/tags/v0.1.35.tar.gz
+https://github.com/akamai/re2g/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 sha:e4876e4128773e9466ed4d95af116a89f840baeb8c69985b0632781500630542
 {% endblock %}
 

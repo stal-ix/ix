@@ -1,7 +1,11 @@
 {% extends '//die/c/make.sh' %}
 
+{% block version %}
+1.7.2
+{% endblock %}
+
 {% block fetch %}
-https://github.com/adsr/mle/archive/refs/tags/v1.7.2.tar.gz
+https://github.com/adsr/mle/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 sha:5275fcfc58d3d4890d074077d94497db488b2648287b3e48e67b00ea517b02ba
 {% endblock %}
 

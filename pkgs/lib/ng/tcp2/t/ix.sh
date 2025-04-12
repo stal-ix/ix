@@ -1,7 +1,11 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block version %}
+1.11.0
+{% endblock %}
+
 {% block fetch %}
-https://github.com/ngtcp2/ngtcp2/archive/refs/tags/v1.11.0.tar.gz
+https://github.com/ngtcp2/ngtcp2/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 sha:144b169aa98ba2ca1f74cf40ff5e93b90a7bb1292f62b7998a8dd5c2a5eb102a
 {% endblock %}
 

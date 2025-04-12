@@ -1,7 +1,11 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block version %}
+0.1.8
+{% endblock %}
+
 {% block fetch %}
-https://dev-www.libreoffice.org/src/libvisio/libvisio-0.1.8.tar.xz
+https://dev-www.libreoffice.org/src/libvisio/libvisio-{{self.version().strip()}}.tar.xz
 sha:b4098ffbf4dcb9e71213fa0acddbd928f27bed30db2d80234813b15d53d0405b
 {% endblock %}
 

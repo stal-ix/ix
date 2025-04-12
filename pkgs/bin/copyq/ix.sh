@@ -1,9 +1,13 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block version %}
+9.1.0
+{% endblock %}
+
 {# no wayland support currently #}
 
 {% block fetch %}
-https://github.com/hluk/CopyQ/archive/refs/tags/v9.1.0.tar.gz
+https://github.com/hluk/CopyQ/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 sha:500893c01b662d1f157e26432f75ffeaef61862e551b831d53a79b14579ad0b3
 {% endblock %}
 

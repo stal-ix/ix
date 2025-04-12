@@ -1,7 +1,11 @@
 {% extends '//lib/wlroots/14/ix.sh' %}
 
+{% block version %}
+0.15.1
+{% endblock %}
+
 {% block fetch %}
-https://gitlab.freedesktop.org/wlroots/wlroots/-/archive/0.15.1/wlroots-0.15.1.tar.bz2
+https://gitlab.freedesktop.org/wlroots/wlroots/-/archive/{{self.version().strip()}}/wlroots-{{self.version().strip()}}.tar.bz2
 sha:8bb791aed9405abc20253c570de1a3b7af91ad65bee2b60293fbbab27ea62c8d
 {% endblock %}
 

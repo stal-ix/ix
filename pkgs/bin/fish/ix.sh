@@ -1,7 +1,11 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block version %}
+3.7.1
+{% endblock %}
+
 {% block fetch %}
-https://github.com/fish-shell/fish-shell/archive/refs/tags/3.7.1.tar.gz
+https://github.com/fish-shell/fish-shell/archive/refs/tags/{{self.version().strip()}}.tar.gz
 sha:a3ea79c8affb9fa3c510ec6f12b9a8d176fec2d532ea7c41dfd4da4205272f19
 {% endblock %}
 

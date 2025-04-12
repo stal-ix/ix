@@ -1,7 +1,11 @@
 {% extends '//die/c/make.sh' %}
 
+{% block version %}
+2.1.2
+{% endblock %}
+
 {% block fetch %}
-http://smarden.org/runit/runit-2.1.2.tar.gz
+http://smarden.org/runit/runit-{{self.version().strip()}}.tar.gz
 sha:6fd0160cb0cf1207de4e66754b6d39750cff14bb0aa66ab49490992c0c47ba18
 {% endblock %}
 

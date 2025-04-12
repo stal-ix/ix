@@ -1,7 +1,11 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block version %}
+0.7.4
+{% endblock %}
+
 {% block fetch %}
-https://github.com/rizinorg/rizin/releases/download/v0.7.4/rizin-src-v0.7.4.tar.xz
+https://github.com/rizinorg/rizin/releases/download/v{{self.version().strip()}}/rizin-src-v{{self.version().strip()}}.tar.xz
 sha:f7118910e5dc843c38baa3e00b30ec019a1cdd5c132ba2bc16cf0c7497631201
 {% endblock %}
 

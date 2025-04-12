@@ -1,7 +1,11 @@
 {% extends '//die/c/autohell.sh' %}
 
+{% block version %}
+1.24.2
+{% endblock %}
+
 {% block fetch %}
-https://www.gnupg.org/ftp/gcrypt/gpgme/gpgme-1.24.2.tar.bz2
+https://www.gnupg.org/ftp/gcrypt/gpgme/gpgme-{{self.version().strip()}}.tar.bz2
 sha:e11b1a0e361777e9e55f48a03d89096e2abf08c63d84b7017cfe1dce06639581
 {% endblock %}
 

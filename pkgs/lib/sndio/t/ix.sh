@@ -1,7 +1,11 @@
 {% extends '//die/c/make.sh' %}
 
+{% block version %}
+1.10.0
+{% endblock %}
+
 {% block fetch %}
-https://sndio.org/sndio-1.10.0.tar.gz
+https://sndio.org/sndio-{{self.version().strip()}}.tar.gz
 sha:bebd3bfd01c50c9376cf3e7814b9379bed9e17d0393b5113b7eb7a3d0d038c54
 {% endblock %}
 

@@ -1,7 +1,11 @@
 {% extends '//die/c/make.sh' %}
 
+{% block version %}
+3.0.15
+{% endblock %}
+
 {% block fetch %}
-https://downloads.sourceforge.net/project/gnu-efi/gnu-efi-3.0.15.tar.bz2
+https://downloads.sourceforge.net/project/gnu-efi/gnu-efi-{{self.version().strip()}}.tar.bz2
 sha:931a257b9c5c1ba65ff519f18373c438a26825f2db7866b163e96d1b168f20ea
 {% endblock %}
 

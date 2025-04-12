@@ -1,7 +1,11 @@
 {% extends '//die/c/make.sh' %}
 
+{% block version %}
+2024.05.18
+{% endblock %}
+
 {% block fetch %}
-https://github.com/mawww/kakoune/archive/refs/tags/v2024.05.18.tar.gz
+https://github.com/mawww/kakoune/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 sha:50f2920db8ab8f71556b73dfd6d53fb924f67d1c60b9882050cfecfaa3aed31f
 {% endblock %}
 

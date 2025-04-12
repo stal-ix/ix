@@ -1,7 +1,11 @@
 {% extends '//die/c/make.sh' %}
 
+{% block version %}
+0.394
+{% endblock %}
+
 {% block fetch %}
-https://github.com/vcrhonek/hwdata/archive/refs/tags/v0.394.tar.gz
+https://github.com/vcrhonek/hwdata/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 sha:b7c3fd7214a3b7c49d2661db127a712dc11cffd1799f793947aa1cb20aaf3298
 {% endblock %}
 

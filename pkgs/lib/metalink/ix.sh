@@ -1,7 +1,11 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block version %}
+0.1.3
+{% endblock %}
+
 {% block fetch %}
-https://github.com/metalink-dev/libmetalink/releases/download/release-0.1.3/libmetalink-0.1.3.tar.bz2
+https://github.com/metalink-dev/libmetalink/releases/download/release-{{self.version().strip()}}/libmetalink-{{self.version().strip()}}.tar.bz2
 sha:0753ae1152d970dc3bf327d0ce5cfefeca2f1ab13294b115e64811163a68fd4f
 {% endblock %}
 

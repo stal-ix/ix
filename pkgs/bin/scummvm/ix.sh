@@ -1,7 +1,11 @@
 {% extends '//die/c/configure.sh' %}
 
+{% block version %}
+2.9.0
+{% endblock %}
+
 {% block fetch %}
-https://downloads.scummvm.org/frs/scummvm/2.9.0/scummvm-2.9.0.tar.xz
+https://downloads.scummvm.org/frs/scummvm/{{self.version().strip()}}/scummvm-{{self.version().strip()}}.tar.xz
 sha:d5b33532bd70d247f09127719c670b4b935810f53ebb6b7b6eafacaa5da99452
 {% endblock %}
 

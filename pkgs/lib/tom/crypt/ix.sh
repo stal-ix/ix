@@ -1,7 +1,11 @@
 {% extends '//die/c/make.sh' %}
 
+{% block version %}
+1.18.2
+{% endblock %}
+
 {% block fetch %}
-https://github.com/libtom/libtomcrypt/releases/download/v1.18.2/crypt-1.18.2.tar.xz
+https://github.com/libtom/libtomcrypt/releases/download/v{{self.version().strip()}}/crypt-{{self.version().strip()}}.tar.xz
 sha:96ad4c3b8336050993c5bc2cf6c057484f2b0f9f763448151567fbab5e767b84
 {% endblock %}
 

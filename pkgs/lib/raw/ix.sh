@@ -1,7 +1,11 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block version %}
+0.21.3
+{% endblock %}
+
 {% block fetch %}
-https://github.com/LibRaw/LibRaw/archive/refs/tags/0.21.3.tar.gz
+https://github.com/LibRaw/LibRaw/archive/refs/tags/{{self.version().strip()}}.tar.gz
 sha:dc3d8b54e333d9d5441336049db255d14b27f19bd326a306cf5aea866806780a
 {% endblock %}
 

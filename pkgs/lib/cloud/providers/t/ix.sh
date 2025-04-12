@@ -1,7 +1,11 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block version %}
+0.3.6
+{% endblock %}
+
 {% block fetch %}
-https://gitlab.gnome.org/World/libcloudproviders/-/archive/0.3.6/libcloudproviders-0.3.6.tar.bz2
+https://gitlab.gnome.org/World/libcloudproviders/-/archive/{{self.version().strip()}}/libcloudproviders-{{self.version().strip()}}.tar.bz2
 sha:316975e2e04588e44808cc7e4ff2800444103843e9533bd17ac0f4964c094f83
 {% endblock %}
 

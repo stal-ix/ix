@@ -1,7 +1,11 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block version %}
+2.6.5
+{% endblock %}
+
 {% block fetch %}
-https://libopenraw.freedesktop.org/download/exempi-2.6.5.tar.xz
+https://libopenraw.freedesktop.org/download/exempi-{{self.version().strip()}}.tar.xz
 sha:ff538114e82c51e5287064dfbec7d9790ac91479bf2390bcc6408fad4d77fb12
 {% endblock %}
 

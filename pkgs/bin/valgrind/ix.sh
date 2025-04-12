@@ -1,7 +1,11 @@
 {% extends '//die/c/autohell.sh' %}
 
+{% block version %}
+3.24.0
+{% endblock %}
+
 {% block fetch %}
-https://sourceware.org/pub/valgrind/valgrind-3.24.0.tar.bz2
+https://sourceware.org/pub/valgrind/valgrind-{{self.version().strip()}}.tar.bz2
 sha:71aee202bdef1ae73898ccf7e9c315134fa7db6c246063afc503aef702ec03bd
 {% endblock %}
 

@@ -1,9 +1,13 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block version %}
+5.7.0
+{% endblock %}
+
 {# hard glibc and dynlib deps #}
 
 {% block fetch %}
-https://github.com/rr-debugger/rr/archive/refs/tags/5.7.0.tar.gz
+https://github.com/rr-debugger/rr/archive/refs/tags/{{self.version().strip()}}.tar.gz
 sha:f7affaaee7316effd3f0924c94bc452ef50d372b94470cafe8568efd88451447
 {% endblock %}
 

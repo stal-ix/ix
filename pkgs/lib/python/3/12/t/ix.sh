@@ -1,7 +1,11 @@
 {% extends '//lib/python/3/11/ix.sh' %}
 
+{% block version %}
+3.12.7
+{% endblock %}
+
 {% block fetch %}
-https://github.com/python/cpython/archive/refs/tags/v3.12.7.tar.gz
+https://github.com/python/cpython/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 sha:0c4db8f00ab490bfb5a4b0d0e763319d017226b5521f97e851412342ff04d459
 {% endblock %}
 

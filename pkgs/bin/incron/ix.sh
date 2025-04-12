@@ -1,7 +1,11 @@
 {% extends '//die/c/make.sh' %}
 
+{% block version %}
+0.5.12
+{% endblock %}
+
 {% block fetch %}
-https://github.com/ar-/incron/archive/refs/tags/0.5.12.tar.gz
+https://github.com/ar-/incron/archive/refs/tags/{{self.version().strip()}}.tar.gz
 sha:cce80bd723bafce59f35464f2f851d02707e32efa102e2b941ed0e42bdd38f91
 {% endblock %}
 

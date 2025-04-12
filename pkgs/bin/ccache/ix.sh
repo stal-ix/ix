@@ -1,7 +1,11 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block version %}
+4.11.2
+{% endblock %}
+
 {% block fetch %}
-https://github.com/ccache/ccache/archive/refs/tags/v4.11.2.tar.gz
+https://github.com/ccache/ccache/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 sha:6e9342ab2906a501561ee46d98b1e48e2edd39ef7f43b6abf4b8025ccfe7d060
 {% endblock %}
 

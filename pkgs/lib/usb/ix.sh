@@ -1,7 +1,11 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block version %}
+1.0.27
+{% endblock %}
+
 {% block fetch %}
-https://github.com/libusb/libusb/releases/download/v1.0.27/libusb-1.0.27.tar.bz2
+https://github.com/libusb/libusb/releases/download/v{{self.version().strip()}}/libusb-{{self.version().strip()}}.tar.bz2
 sha:ffaa41d741a8a3bee244ac8e54a72ea05bf2879663c098c82fc5757853441575
 {% endblock %}
 

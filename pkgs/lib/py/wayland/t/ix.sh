@@ -1,7 +1,11 @@
 {% extends '//die/c/ix.sh' %}
 
+{% block version %}
+0.4.17
+{% endblock %}
+
 {% block fetch %}
-https://github.com/flacjacket/pywayland/archive/refs/tags/v0.4.17.tar.gz
+https://github.com/flacjacket/pywayland/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 sha:e04befb267069ae317cd1a07f1d85b4bfc059090255e61b3efe49691a506aebd
 {% endblock %}
 

@@ -1,7 +1,11 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block version %}
+2.2
+{% endblock %}
+
 {% block fetch %}
-https://github.com/gnustep/libobjc2/archive/refs/tags/v2.2.tar.gz
+https://github.com/gnustep/libobjc2/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 sha:c4c5cede579949249f16736c9b1f85c58c44addb013f59970dcb566d9069152a
 {% endblock %}
 

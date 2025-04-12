@@ -1,7 +1,11 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block version %}
+1.1.7
+{% endblock %}
+
 {% block fetch %}
-https://github.com/ihhub/fheroes2/archive/refs/tags/1.1.7.tar.gz
+https://github.com/ihhub/fheroes2/archive/refs/tags/{{self.version().strip()}}.tar.gz
 sha:6419ad0bd0f1f684a9256c39fb6c02a026fc76581b0bc9632a597fbc8443fc03
 {% endblock %}
 

@@ -1,7 +1,11 @@
 {% extends '//die/c/make.sh' %}
 
+{% block version %}
+3.1.6
+{% endblock %}
+
 {% block fetch %}
-http://www.haproxy.org/download/3.1/src/haproxy-3.1.6.tar.gz
+http://www.haproxy.org/download/3.1/src/haproxy-{{self.version().strip()}}.tar.gz
 sha:21852e4a374bb8d9b3dda5dc834afe6557f422d7029f4fe3eac3c305f5124760
 {% endblock %}
 

@@ -1,7 +1,11 @@
 {% extends '//die/c/gnome.sh' %}
 
+{% block version %}
+43.1
+{% endblock %}
+
 {% block fetch %}
-https://github.com/GNOME/file-roller/archive/refs/tags/43.1.tar.gz
+https://github.com/GNOME/file-roller/archive/refs/tags/{{self.version().strip()}}.tar.gz
 sha:f564f9ad6faf0bfd634b8986242b847ddf457040e9bbf62be286fa2d20e25e54
 {% endblock %}
 

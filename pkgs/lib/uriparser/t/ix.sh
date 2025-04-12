@@ -1,7 +1,11 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block version %}
+0.9.6
+{% endblock %}
+
 {% block fetch %}
-https://github.com/uriparser/uriparser/archive/refs/tags/uriparser-0.9.6.tar.gz
+https://github.com/uriparser/uriparser/archive/refs/tags/uriparser-{{self.version().strip()}}.tar.gz
 sha:defaf550bf6fe05e89afb9814dccc6bd643a3b0a8308801a2c04b76682b87383
 {% endblock %}
 

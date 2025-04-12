@@ -1,7 +1,11 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block version %}
+0.67
+{% endblock %}
+
 {% block fetch %}
-https://github.com/CorsixTH/CorsixTH/archive/refs/tags/v0.67.tar.gz
+https://github.com/CorsixTH/CorsixTH/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 sha:4e88cf1916bf4d7c304b551ddb91fb9194f110bad4663038ca73d31b939d69e3
 {% endblock %}
 

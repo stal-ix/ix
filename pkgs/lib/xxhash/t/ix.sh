@@ -1,7 +1,11 @@
 {% extends '//die/c/make.sh' %}
 
+{% block version %}
+0.8.2
+{% endblock %}
+
 {% block fetch %}
-https://github.com/Cyan4973/xxHash/archive/refs/tags/v0.8.2.tar.gz
+https://github.com/Cyan4973/xxHash/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 sha:baee0c6afd4f03165de7a4e67988d16f0f2b257b51d0e3cb91909302a26a79c4
 {% endblock %}
 

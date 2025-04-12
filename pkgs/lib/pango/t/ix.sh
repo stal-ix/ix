@@ -1,7 +1,11 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block version %}
+1.56.3
+{% endblock %}
+
 {% block fetch %}
-https://gitlab.gnome.org/GNOME/pango/-/archive/1.56.3/pango-1.56.3.tar.bz2
+https://gitlab.gnome.org/GNOME/pango/-/archive/{{self.version().strip()}}/pango-{{self.version().strip()}}.tar.bz2
 sha:f57538307be7db3c44a731a1966393366fb4d017f47876573a534595585f033c
 {% endblock %}
 

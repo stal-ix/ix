@@ -1,7 +1,11 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block version %}
+3.3.5
+{% endblock %}
+
 {% block fetch %}
-https://github.com/shadowsocks/shadowsocks-libev/releases/download/v3.3.5/shadowsocks-libev-3.3.5.tar.gz
+https://github.com/shadowsocks/shadowsocks-libev/releases/download/v{{self.version().strip()}}/shadowsocks-libev-{{self.version().strip()}}.tar.gz
 sha:cfc8eded35360f4b67e18dc447b0c00cddb29cc57a3cec48b135e5fb87433488
 {% endblock %}
 

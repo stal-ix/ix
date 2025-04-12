@@ -1,7 +1,11 @@
 {% extends '//die/std/ix.sh' %}
 
+{% block version %}
+11.1.0
+{% endblock %}
+
 {% block fetch %}
-https://github.com/npm/cli/archive/refs/tags/v11.1.0.tar.gz
+https://github.com/npm/cli/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 sha:74ab2ea044ba55447e5d65f31a9ab6aefe9224eb755cbdf64a1b6c057e777992
 {% endblock %}
 

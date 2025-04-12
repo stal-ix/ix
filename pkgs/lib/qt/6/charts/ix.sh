@@ -1,7 +1,11 @@
 {% extends '//die/c/qt.sh' %}
 
+{% block version %}
+6.7.2
+{% endblock %}
+
 {% block fetch %}
-https://github.com/qt/qtcharts/archive/refs/tags/v6.7.2.tar.gz
+https://github.com/qt/qtcharts/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 sha:ec6e44444a49a976bfbe993a2a8f5d8a35de66c06fdf16cd2c9a426331477cc3
 {% endblock %}
 

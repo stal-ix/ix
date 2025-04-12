@@ -1,7 +1,11 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block version %}
+5.3.0
+{% endblock %}
+
 {% block fetch %}
-https://github.com/jemalloc/jemalloc/archive/refs/tags/5.3.0.tar.gz
+https://github.com/jemalloc/jemalloc/archive/refs/tags/{{self.version().strip()}}.tar.gz
 sha:ef6f74fd45e95ee4ef7f9e19ebe5b075ca6b7fbe0140612b2a161abafb7ee179
 {% endblock %}
 

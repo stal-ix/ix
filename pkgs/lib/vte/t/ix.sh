@@ -1,7 +1,11 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block version %}
+0.80.0
+{% endblock %}
+
 {% block fetch %}
-https://github.com/GNOME/vte/archive/refs/tags/0.80.0.tar.gz
+https://github.com/GNOME/vte/archive/refs/tags/{{self.version().strip()}}.tar.gz
 sha:c81b765b0f2cd9e823684c3ae5bb6fb30f08b8e2e9ff31accc239ddfa7f07be3
 {% endblock %}
 

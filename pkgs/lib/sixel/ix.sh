@@ -1,7 +1,11 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block version %}
+1.10.5
+{% endblock %}
+
 {% block fetch %}
-https://github.com/libsixel/libsixel/archive/refs/tags/v1.10.5.tar.gz
+https://github.com/libsixel/libsixel/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 sha:b6654928bd423f92e6da39eb1f40f10000ae2cc6247247fc1882dcff6acbdfc8
 {% endblock %}
 

@@ -1,7 +1,11 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block version %}
+0.9.1
+{% endblock %}
+
 {% block fetch %}
-https://git.sr.ht/~kennylevinsen/seatd/archive/0.9.1.tar.gz
+https://git.sr.ht/~kennylevinsen/seatd/archive/{{self.version().strip()}}.tar.gz
 sha:819979c922a0be258aed133d93920bce6a3d3565a60588d6d372ce9db2712cd3
 {% endblock %}
 

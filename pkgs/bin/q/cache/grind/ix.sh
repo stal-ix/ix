@@ -1,7 +1,11 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block version %}
+24.04.80
+{% endblock %}
+
 {% block fetch %}
-https://github.com/KDE/kcachegrind/archive/refs/tags/v24.04.80.tar.gz
+https://github.com/KDE/kcachegrind/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 sha:b6482fe45ff9fe976845499b9f833e5ea8544eb63ecebb9a1b428cb4e8a982e9
 {% endblock %}
 

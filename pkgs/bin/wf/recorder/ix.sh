@@ -1,7 +1,11 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block version %}
+0.4.1
+{% endblock %}
+
 {% block fetch %}
-https://github.com/ammen99/wf-recorder/archive/refs/tags/v0.4.1.tar.gz
+https://github.com/ammen99/wf-recorder/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 sha:486e9c03693026e7e287e9cddda5b78488b22706aed1ab789e19ffd09e4adfda
 {% endblock %}
 

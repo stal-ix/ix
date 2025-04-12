@@ -1,7 +1,11 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block version %}
+4.4.5
+{% endblock %}
+
 {% block fetch %}
-https://github.com/wireshark/wireshark/archive/refs/tags/v4.4.5.tar.gz
+https://github.com/wireshark/wireshark/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 sha:0ca2cf833636931a0bdcc85f10784b2180bf50df4c3bc6b8b315841a6e33e30b
 {% endblock %}
 

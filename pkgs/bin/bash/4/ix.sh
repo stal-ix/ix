@@ -1,7 +1,11 @@
 {% extends '//bin/bash/5/ix.sh' %}
 
+{% block version %}
+4.4.18
+{% endblock %}
+
 {% block fetch %}
-https://ftp.gnu.org/gnu/bash/bash-4.4.18.tar.gz
+https://ftp.gnu.org/gnu/bash/bash-{{self.version().strip()}}.tar.gz
 sha:604d9eec5e4ed5fd2180ee44dd756ddca92e0b6aa4217bbab2b6227380317f23
 {% endblock %}
 

@@ -1,7 +1,11 @@
 {% extends '//die/c/make.sh' %}
 
+{% block version %}
+1.6
+{% endblock %}
+
 {% block fetch %}
-https://sourceforge.net/projects/s-tar/files/star-1.6.tar.bz2
+https://sourceforge.net/projects/s-tar/files/star-{{self.version().strip()}}.tar.bz2
 sha:1b18662ebae6c3509020953d4464e654c7ded4752774de987d8dc307dc43f776
 {% endblock %}
 

@@ -1,7 +1,11 @@
 {% extends '//die/c/make.sh' %}
 
+{% block version %}
+0.84
+{% endblock %}
+
 {% block fetch %}
-https://github.com/mentebinaria/readpe/archive/refs/tags/v0.84.tar.gz
+https://github.com/mentebinaria/readpe/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 sha:2d0dc383735802db62234297ae1703ccbf4b6d2f2754e284eb90d6f0a57aa670
 {% endblock %}
 

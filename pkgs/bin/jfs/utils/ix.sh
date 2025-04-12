@@ -1,7 +1,11 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block version %}
+1.1.15
+{% endblock %}
+
 {% block fetch %}
-http://jfs.sourceforge.net/project/pub/jfsutils-1.1.15.tar.gz
+http://jfs.sourceforge.net/project/pub/jfsutils-{{self.version().strip()}}.tar.gz
 sha:244a15f64015ce3ea17e49bdf6e1a0fb4f9af92b82fa9e05aa64cb30b5f07a4d
 {% endblock %}
 

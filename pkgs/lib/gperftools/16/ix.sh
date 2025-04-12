@@ -1,7 +1,11 @@
 {% extends '//die/c/autohell.sh' %}
 
+{% block version %}
+2.16
+{% endblock %}
+
 {% block fetch %}
-https://github.com/gperftools/gperftools/releases/download/gperftools-2.16/gperftools-2.16.tar.gz
+https://github.com/gperftools/gperftools/releases/download/gperftools-{{self.version().strip()}}/gperftools-{{self.version().strip()}}.tar.gz
 sha:f12624af5c5987f2cc830ee534f754c3c5961eec08004c26a8b80de015cf056f
 {% endblock %}
 

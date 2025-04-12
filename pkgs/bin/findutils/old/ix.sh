@@ -1,7 +1,11 @@
 {% extends '//die/c/autohell.sh' %}
 
+{% block version %}
+4.8.0
+{% endblock %}
+
 {% block fetch %}
-https://ftp.gnu.org/gnu/findutils/findutils-4.8.0.tar.xz
+https://ftp.gnu.org/gnu/findutils/findutils-{{self.version().strip()}}.tar.xz
 sha:57127b7e97d91282c6ace556378d5455a9509898297e46e10443016ea1387164
 {% endblock %}
 
