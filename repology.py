@@ -1,11 +1,5 @@
 import os
 import sys
-
-path = sys.argv[1]
-
-with open(path) as f:
-    orig = f.read()
-
 def get_url(data):
     for l in data.split('\n'):
         if l.startswith('http://'):
@@ -87,14 +81,23 @@ def add_ver(data):
 def add_name(data):
     return data
 
-data = orig
-data = add_ver(data)
-data = add_name(data)
+def patch(path):
+    with open(path) as f:
+        orig = f.read()
 
-if data != orig:
-    print(f'fix {path}')
+    data = orig
+    data = add_ver(data)
+    data = add_name(data)
 
-    with open(path, 'w') as f:
-        f.write(data)
-else:
-    print(f'skip {path}')
+    if data != orig:
+        print(f'fix {path}')
+
+        with open(path, 'w') as f:
+            f.write(data)
+    else:
+        print(f'skip {path}')
+
+for a, b, c in os.walk('.'):
+    for x in c:
+        if 'ix.sh' in x:
+            patch(a + '/' + x)
