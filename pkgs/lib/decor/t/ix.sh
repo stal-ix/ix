@@ -1,5 +1,9 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block pkg_name %}
+libdecor
+{% endblock %}
+
 {% block version %}
 0.2.2
 {% endblock %}

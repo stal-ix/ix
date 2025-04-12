@@ -1,5 +1,9 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block pkg_name %}
+libdisplay-info
+{% endblock %}
+
 {% block version %}
 0.2.0
 {% endblock %}

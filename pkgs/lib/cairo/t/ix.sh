@@ -1,5 +1,9 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block pkg_name %}
+cairo
+{% endblock %}
+
 {% block version %}
 1.18.4
 {% endblock %}

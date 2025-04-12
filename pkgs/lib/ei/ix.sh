@@ -1,5 +1,9 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block pkg_name %}
+libei
+{% endblock %}
+
 {% block version %}
 1.4.0
 {% endblock %}

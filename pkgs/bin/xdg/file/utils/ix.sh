@@ -1,5 +1,9 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block pkg_name %}
+desktop-file-utils
+{% endblock %}
+
 {% block version %}
 0.27
 {% endblock %}

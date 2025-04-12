@@ -1,5 +1,9 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block pkg_name %}
+libslirp
+{% endblock %}
+
 {% block version %}
 4.7.0
 {% endblock %}

@@ -1,5 +1,9 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block pkg_name %}
+upower
+{% endblock %}
+
 {% block version %}
 1.90.9
 {% endblock %}

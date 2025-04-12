@@ -1,5 +1,9 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block pkg_name %}
+libinput
+{% endblock %}
+
 {% block version %}
 1.28.1
 {% endblock %}

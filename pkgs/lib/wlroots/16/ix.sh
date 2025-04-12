@@ -1,5 +1,9 @@
 {% extends '//lib/wlroots/15/ix.sh' %}
 
+{% block pkg_name %}
+wlroots
+{% endblock %}
+
 {% block version %}
 0.16.2
 {% endblock %}

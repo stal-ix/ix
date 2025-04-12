@@ -1,5 +1,9 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block pkg_name %}
+xkeyboard-config
+{% endblock %}
+
 {% block version %}
 2.44
 {% endblock %}

@@ -1,5 +1,9 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block pkg_name %}
+fontconfig
+{% endblock %}
+
 {% block version %}
 2.16.2
 {% endblock %}

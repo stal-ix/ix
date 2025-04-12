@@ -1,5 +1,9 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block pkg_name %}
+libxcvt
+{% endblock %}
+
 {% block version %}
 0.1.2
 {% endblock %}
