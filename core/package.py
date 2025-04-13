@@ -139,6 +139,10 @@ def remsuf(s, suf):
     return s
 
 
+def mine_urls(data):
+    return [x['url'] for x in data['bld']['fetch']]
+
+
 class Package:
     def __init__(self, selector, mngr):
         self.manager = mngr
@@ -156,6 +160,10 @@ class Package:
                         'pkg_ver': pkg_ver,
                         'pkg_name': pkg_name,
                         'recipe': 'https://github.com/stal-ix/ix/blob/main/pkgs/' + self.name,
+                        'maintainers': [
+                            'anton@samokhvalov.xyz',
+                        ],
+                        'upstream_urls': mine_urls(self.descr),
                     }))
 
             self.uid = cs.UID
