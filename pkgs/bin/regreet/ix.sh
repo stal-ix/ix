@@ -1,7 +1,15 @@
 {% extends '//die/rust/cargo.sh' %}
 
+{% block pkg_name %}
+ReGreet
+{% endblock %}
+
+{% block version %}
+0.2.0
+{% endblock %}
+
 {% block cargo_url %}
-https://github.com/rharish101/ReGreet/archive/refs/tags/0.2.0.tar.gz
+https://github.com/rharish101/ReGreet/archive/refs/tags/{{self.version().strip()}}.tar.gz
 {% endblock %}
 
 {% block cargo_sha %}

@@ -1,5 +1,9 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block pkg_name %}
+jq
+{% endblock %}
+
 {% block version %}1.7.1{% endblock %}
 
 {% block fetch %}

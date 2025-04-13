@@ -1,7 +1,11 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block version %}
+0.3.3
+{% endblock %}
+
 {% block fetch %}
-https://downloads.sourceforge.net/project/libwpg/libwpg/libwpg-0.3.3/libwpg-0.3.3.tar.xz
+https://downloads.sourceforge.net/project/libwpg/libwpg/libwpg-{{self.version().strip()}}/libwpg-{{self.version().strip()}}.tar.xz
 sha:99b3f7f8832385748582ab8130fbb9e5607bd5179bebf9751ac1d51a53099d1c
 {% endblock %}
 

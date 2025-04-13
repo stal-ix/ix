@@ -1,7 +1,11 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block version %}
+1.4.0
+{% endblock %}
+
 {% block fetch %}
-https://gitlab.com/sebholt/qastools/-/archive/v1.4.0/qastools-v1.4.0.tar.bz2
+https://gitlab.com/sebholt/qastools/-/archive/v{{self.version().strip()}}/qastools-v{{self.version().strip()}}.tar.bz2
 sha:1f16a09a8693791b3f450c3de53320ac718309b82115cf6c567623b77b0f7154
 {% endblock %}
 

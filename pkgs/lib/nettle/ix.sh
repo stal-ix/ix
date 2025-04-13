@@ -1,7 +1,15 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block pkg_name %}
+nettle
+{% endblock %}
+
+{% block version %}
+3.10.1
+{% endblock %}
+
 {% block fetch %}
-https://ftp.gnu.org/gnu/nettle/nettle-3.10.1.tar.gz
+https://ftp.gnu.org/gnu/nettle/nettle-{{self.version().strip()}}.tar.gz
 sha:b0fcdd7fc0cdea6e80dcf1dd85ba794af0d5b4a57e26397eee3bc193272d9132
 {% endblock %}
 

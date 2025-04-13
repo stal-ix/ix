@@ -1,7 +1,15 @@
 {% extends '//die/go/build.sh' %}
 
+{% block pkg_name %}
+micro
+{% endblock %}
+
+{% block version %}
+2.0.14
+{% endblock %}
+
 {% block go_url %}
-https://github.com/zyedidia/micro/archive/refs/tags/v2.0.14.tar.gz
+https://github.com/zyedidia/micro/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 {% endblock %}
 
 {% block go_sha %}

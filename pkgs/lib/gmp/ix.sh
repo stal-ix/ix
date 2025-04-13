@@ -1,7 +1,15 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block pkg_name %}
+gmp
+{% endblock %}
+
+{% block version %}
+6.3.0
+{% endblock %}
+
 {% block fetch %}
-https://ftp.gnu.org/gnu/gmp/gmp-6.3.0.tar.xz
+https://ftp.gnu.org/gnu/gmp/gmp-{{self.version().strip()}}.tar.xz
 sha:a3c2b80201b89e68616f4ad30bc66aee4927c3ce50e33929ca819d5c43538898
 {% endblock %}
 

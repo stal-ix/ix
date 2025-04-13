@@ -1,7 +1,15 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+highway
+{% endblock %}
+
+{% block version %}
+1.1.0
+{% endblock %}
+
 {% block fetch %}
-https://github.com/google/highway/archive/refs/tags/1.1.0.tar.gz
+https://github.com/google/highway/archive/refs/tags/{{self.version().strip()}}.tar.gz
 sha:354a8b4539b588e70b98ec70844273e3f2741302c4c377bcc4e81b3d1866f7c9
 {% endblock %}
 

@@ -1,7 +1,15 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block pkg_name %}
+unbound
+{% endblock %}
+
+{% block version %}
+1.22.0
+{% endblock %}
+
 {% block fetch %}
-https://github.com/NLnetLabs/unbound/archive/refs/tags/release-1.22.0.tar.gz
+https://github.com/NLnetLabs/unbound/archive/refs/tags/release-{{self.version().strip()}}.tar.gz
 sha:4e32a36d57cda666b1c8ee02185ba73462330452162d1b9c31a5b91a853ba946
 {% endblock %}
 

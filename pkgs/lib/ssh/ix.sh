@@ -1,7 +1,11 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block version %}
+0.11.1
+{% endblock %}
+
 {% block fetch %}
-https://www.libssh.org/files/0.11/libssh-0.11.1.tar.xz
+https://www.libssh.org/files/0.11/libssh-{{self.version().strip()}}.tar.xz
 sha:14b7dcc72e91e08151c58b981a7b570ab2663f630e7d2837645d5a9c612c1b79
 {% endblock %}
 

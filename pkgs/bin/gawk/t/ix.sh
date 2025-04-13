@@ -1,7 +1,15 @@
 {% extends '//die/c/autohell.sh' %}
 
+{% block pkg_name %}
+gawk
+{% endblock %}
+
+{% block version %}
+5.3.1
+{% endblock %}
+
 {% block fetch %}
-https://ftp.gnu.org/gnu/gawk/gawk-5.3.1.tar.xz
+https://ftp.gnu.org/gnu/gawk/gawk-{{self.version().strip()}}.tar.xz
 sha:694db764812a6236423d4ff40ceb7b6c4c441301b72ad502bb5c27e00cd56f78
 {% endblock %}
 

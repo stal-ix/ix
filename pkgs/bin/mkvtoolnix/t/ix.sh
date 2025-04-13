@@ -1,7 +1,11 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block version %}
+91.0
+{% endblock %}
+
 {% block fetch %}
-https://codeberg.org/mbunkus/mkvtoolnix/archive/release-91.0.tar.gz
+https://codeberg.org/mbunkus/mkvtoolnix/archive/release-{{self.version().strip()}}.tar.gz
 sha:0e53c3b6bce5c48f420fe6e120219839a1fa4169812b8502c706b808e260e459
 {% endblock %}
 

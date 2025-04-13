@@ -1,7 +1,15 @@
 {% extends '//die/c/make.sh' %}
 
+{% block pkg_name %}
+OpenVi
+{% endblock %}
+
+{% block version %}
+7.6.30
+{% endblock %}
+
 {% block fetch %}
-https://github.com/johnsonjh/OpenVi/archive/refs/tags/7.6.30.tar.gz
+https://github.com/johnsonjh/OpenVi/archive/refs/tags/{{self.version().strip()}}.tar.gz
 sha:1ac5487280deca5fe539d5b6302bfbc95a9eb52aa2e3807d30f5dd82f0bdb355
 {% endblock %}
 

@@ -1,7 +1,15 @@
 {% extends '//die/c/ix.sh' %}
 
+{% block pkg_name %}
+u-config
+{% endblock %}
+
+{% block version %}
+0.33.3
+{% endblock %}
+
 {% block fetch %}
-https://github.com/skeeto/u-config/archive/refs/tags/v0.33.3.tar.gz
+https://github.com/skeeto/u-config/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 sha:91fcec533a5987e44460d6499c30bdcb490ce89f8d31abd83e4fb6b16e510dc3
 {% endblock %}
 

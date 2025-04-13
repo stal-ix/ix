@@ -1,7 +1,15 @@
 {% extends '//die/c/make.sh' %}
 
+{% block pkg_name %}
+quirc
+{% endblock %}
+
+{% block version %}
+1.2
+{% endblock %}
+
 {% block fetch %}
-https://github.com/dlbeer/quirc/archive/refs/tags/v1.2.tar.gz
+https://github.com/dlbeer/quirc/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 sha:73c12ea33d337ec38fb81218c7674f57dba7ec0570bddd5c7f7a977c0deb64c5
 {% endblock %}
 

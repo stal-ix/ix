@@ -1,7 +1,15 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block pkg_name %}
+gtk4-layer-shell
+{% endblock %}
+
+{% block version %}
+1.1.1
+{% endblock %}
+
 {% block fetch %}
-https://github.com/wmww/gtk4-layer-shell/archive/refs/tags/v1.1.1.tar.gz
+https://github.com/wmww/gtk4-layer-shell/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 sha:5db158d570e28f56625d5fb2022bc487c0f1b1b21a965702e461a5a5a049a439
 {% endblock %}
 

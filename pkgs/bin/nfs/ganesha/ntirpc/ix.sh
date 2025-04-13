@@ -1,7 +1,15 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+ntirpc
+{% endblock %}
+
+{% block version %}
+5.0
+{% endblock %}
+
 {% block fetch %}
-https://github.com/nfs-ganesha/ntirpc/archive/refs/tags/v5.0.tar.gz
+https://github.com/nfs-ganesha/ntirpc/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 sha:c831398aa282cfb8b554c3301e7edb3334342405d222d88e1bef255d9a2b964f
 {% endblock %}
 

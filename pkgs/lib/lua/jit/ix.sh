@@ -1,7 +1,15 @@
 {% extends '//lib/lua/t/ix.sh' %}
 
+{% block pkg_name %}
+LuaJIT
+{% endblock %}
+
+{% block version %}
+2.0.5
+{% endblock %}
+
 {% block fetch %}
-https://github.com/LuaJIT/LuaJIT/archive/refs/tags/v2.0.5.tar.gz
+https://github.com/LuaJIT/LuaJIT/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 sha:8bb29d84f06eb23c7ea4aa4794dbb248ede9fcb23b6989cbef81dc79352afc97
 {% endblock %}
 

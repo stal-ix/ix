@@ -1,7 +1,15 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+Vulkan-Utility-Libraries
+{% endblock %}
+
+{% block version %}
+1.3.296.0
+{% endblock %}
+
 {% block fetch %}
-https://github.com/KhronosGroup/Vulkan-Utility-Libraries/archive/refs/tags/vulkan-sdk-1.3.296.0.tar.gz
+https://github.com/KhronosGroup/Vulkan-Utility-Libraries/archive/refs/tags/vulkan-sdk-{{self.version().strip()}}.tar.gz
 sha:125cdf5f867532e26516e988ae
 {% endblock %}
 

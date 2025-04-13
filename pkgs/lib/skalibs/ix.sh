@@ -1,7 +1,15 @@
 {% extends '//die/c/autohell.sh' %}
 
+{% block pkg_name %}
+skalibs
+{% endblock %}
+
+{% block version %}
+2.14.3.0
+{% endblock %}
+
 {% block fetch %}
-https://github.com/skarnet/skalibs/archive/refs/tags/v2.14.3.0.tar.gz
+https://github.com/skarnet/skalibs/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 sha:d4d46b4a1a8418de638beecc6f063f6a87027e000ba8a2ab90033580f73e5e8f
 {% endblock %}
 

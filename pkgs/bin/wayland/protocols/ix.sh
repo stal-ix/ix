@@ -1,7 +1,15 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block pkg_name %}
+wayland-protocols
+{% endblock %}
+
+{% block version %}
+1.43
+{% endblock %}
+
 {% block fetch %}
-https://gitlab.freedesktop.org/wayland/wayland-protocols/-/archive/1.43/wayland-protocols-1.43.tar.bz2
+https://gitlab.freedesktop.org/wayland/wayland-protocols/-/archive/{{self.version().strip()}}/wayland-protocols-{{self.version().strip()}}.tar.bz2
 sha:6fe9872d5f884a2ac4d65ecee49dce2f1672b022af9bcccfea7950086808e093
 {% endblock %}
 

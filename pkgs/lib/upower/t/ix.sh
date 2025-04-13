@@ -1,7 +1,15 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block pkg_name %}
+upower
+{% endblock %}
+
+{% block version %}
+1.90.9
+{% endblock %}
+
 {% block fetch %}
-https://gitlab.freedesktop.org/upower/upower/-/archive/v1.90.9/upower-v1.90.9.tar.bz2
+https://gitlab.freedesktop.org/upower/upower/-/archive/v{{self.version().strip()}}/upower-v{{self.version().strip()}}.tar.bz2
 sha:ca6018535817c2ea687e389e6b47583342154123c0eea0497b409c49dff319b6
 {% endblock %}
 

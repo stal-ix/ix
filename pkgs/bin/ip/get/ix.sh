@@ -1,7 +1,15 @@
 {% extends '//die/go/build.sh' %}
 
+{% block pkg_name %}
+ipget
+{% endblock %}
+
+{% block version %}
+0.10.0
+{% endblock %}
+
 {% block go_url %}
-https://github.com/ipfs/ipget/archive/refs/tags/v0.10.0.tar.gz
+https://github.com/ipfs/ipget/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 {% endblock %}
 
 {% block go_sha %}

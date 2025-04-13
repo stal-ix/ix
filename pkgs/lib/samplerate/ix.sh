@@ -1,7 +1,15 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+libsamplerate
+{% endblock %}
+
+{% block version %}
+0.2.2
+{% endblock %}
+
 {% block fetch %}
-https://github.com/libsndfile/libsamplerate/archive/refs/tags/0.2.2.tar.gz
+https://github.com/libsndfile/libsamplerate/archive/refs/tags/{{self.version().strip()}}.tar.gz
 sha:16e881487f184250deb4fcb60432d7556ab12cb58caea71ef23960aec6c0405a
 {% endblock %}
 

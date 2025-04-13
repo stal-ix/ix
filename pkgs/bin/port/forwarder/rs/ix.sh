@@ -1,7 +1,15 @@
 {% extends '//die/rust/cargo.sh' %}
 
+{% block pkg_name %}
+portforwarder-rs
+{% endblock %}
+
+{% block version %}
+0.1.0
+{% endblock %}
+
 {% block cargo_url %}
-https://github.com/pzmarzly/portforwarder-rs/archive/refs/tags/0.1.0.tar.gz
+https://github.com/pzmarzly/portforwarder-rs/archive/refs/tags/{{self.version().strip()}}.tar.gz
 {% endblock %}
 
 {% block cargo_sha %}

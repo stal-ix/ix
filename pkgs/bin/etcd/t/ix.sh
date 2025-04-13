@@ -1,7 +1,15 @@
 {% extends '//die/go/build.sh' %}
 
+{% block pkg_name %}
+etcd
+{% endblock %}
+
+{% block version %}
+3.5.21
+{% endblock %}
+
 {% block go_url %}
-https://github.com/etcd-io/etcd/archive/refs/tags/v3.5.21.tar.gz
+https://github.com/etcd-io/etcd/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 {% endblock %}
 
 {% block go_sha %}

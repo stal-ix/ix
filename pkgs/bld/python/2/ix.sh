@@ -1,7 +1,11 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block version %}
+2.7.18
+{% endblock %}
+
 {% block fetch %}
-https://www.python.org/ftp/python/2.7.18/Python-2.7.18.tar.xz
+https://www.python.org/ftp/python/{{self.version().strip()}}/Python-{{self.version().strip()}}.tar.xz
 md5:fd6cc8ec0a78c44036f825e739f36e5a
 {% endblock %}
 

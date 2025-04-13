@@ -1,7 +1,15 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+expected
+{% endblock %}
+
+{% block version %}
+1.1.0
+{% endblock %}
+
 {% block fetch %}
-https://github.com/TartanLlama/expected/archive/refs/tags/v1.1.0.tar.gz
+https://github.com/TartanLlama/expected/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 sha:1db357f46dd2b24447156aaf970c4c40a793ef12a8a9c2ad9e096d9801368df6
 {% endblock %}
 

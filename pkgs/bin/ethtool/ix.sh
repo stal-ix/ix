@@ -1,7 +1,11 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block version %}
+6.14
+{% endblock %}
+
 {% block fetch %}
-https://mirrors.edge.kernel.org/pub/software/network/ethtool/ethtool-6.14.tar.xz
+https://mirrors.edge.kernel.org/pub/software/network/ethtool/ethtool-{{self.version().strip()}}.tar.xz
 sha:9338bb00e492878d3bbe3cd2894e60db35813634c208db0b20f5c7ee84da69b1
 {% endblock %}
 

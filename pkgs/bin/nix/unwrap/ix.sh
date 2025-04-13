@@ -1,7 +1,15 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block pkg_name %}
+nix
+{% endblock %}
+
+{% block version %}
+2.28.1
+{% endblock %}
+
 {% block fetch %}
-https://github.com/NixOS/nix/archive/refs/tags/2.28.1.tar.gz
+https://github.com/NixOS/nix/archive/refs/tags/{{self.version().strip()}}.tar.gz
 sha:5081f335d5d4754e0a34f47ea76b3826faa1108f464aa5b7f6c4d43034b07bc1
 {% endblock %}
 

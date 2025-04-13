@@ -1,7 +1,11 @@
 {% extends '//die/c/gn.sh' %}
 
+{% block version %}
+115.0.5790.90
+{% endblock %}
+
 {% block fetch %}
-https://commondatastorage.googleapis.com/chromium-browser-official/chromium-115.0.5790.90.tar.xz
+https://commondatastorage.googleapis.com/chromium-browser-official/chromium-{{self.version().strip()}}.tar.xz
 sha:82e802bcd2ae8d575d7fda9ec82db83d04d5453e9304cb482644f629232bd394
 {% endblock %}
 

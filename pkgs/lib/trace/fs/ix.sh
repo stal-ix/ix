@@ -1,7 +1,11 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block version %}
+1.8.1
+{% endblock %}
+
 {% block fetch %}
-https://git.kernel.org/pub/scm/libs/libtrace/libtracefs.git/snapshot/libtracefs-1.8.1.tar.gz
+https://git.kernel.org/pub/scm/libs/libtrace/libtracefs.git/snapshot/libtracefs-{{self.version().strip()}}.tar.gz
 sha:d295aa20d711c313a9e229dbd15ba14026f0c1a50d57ae8b0823cc561b23745f
 {% endblock %}
 

@@ -1,7 +1,15 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block pkg_name %}
+irqbalance
+{% endblock %}
+
+{% block version %}
+1.9.4
+{% endblock %}
+
 {% block fetch %}
-https://github.com/Irqbalance/irqbalance/archive/refs/tags/v1.9.4.tar.gz
+https://github.com/Irqbalance/irqbalance/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 sha:f37bb2e27c2e9ec609131d0ee3f770185d3845f79ee6ef11477ea0ffb600a561
 {% endblock %}
 

@@ -1,7 +1,11 @@
 {% extends '//die/c/make.sh' %}
 
+{% block version %}
+0.3.113
+{% endblock %}
+
 {% block fetch %}
-https://releases.pagure.org/libaio/libaio-0.3.113.tar.gz
+https://releases.pagure.org/libaio/libaio-{{self.version().strip()}}.tar.gz
 sha:2c44d1c5fd0d43752287c9ae1eb9c023f04ef848ea8d4aafa46e9aedb678200b
 {% endblock %}
 

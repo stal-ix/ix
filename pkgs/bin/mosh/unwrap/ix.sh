@@ -1,7 +1,15 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block pkg_name %}
+mosh
+{% endblock %}
+
+{% block version %}
+1.4.0
+{% endblock %}
+
 {% block fetch %}
-https://github.com/mobile-shell/mosh/archive/refs/tags/mosh-1.4.0.tar.gz
+https://github.com/mobile-shell/mosh/archive/refs/tags/mosh-{{self.version().strip()}}.tar.gz
 sha:ae581fbddf038730af9eee4d319a483288395a0722d0c94c7efb7fdbdbb0dbac
 {% endblock %}
 

@@ -1,7 +1,15 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block pkg_name %}
+swaylock
+{% endblock %}
+
+{% block version %}
+1.8.2
+{% endblock %}
+
 {% block fetch %}
-https://github.com/swaywm/swaylock/archive/refs/tags/v1.8.2.tar.gz
+https://github.com/swaywm/swaylock/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 sha:a7ea1ad1e3689697e628d37ccffb2ac6bedb70fe51ddad27e4fb7e6849924686
 {% endblock %}
 

@@ -1,7 +1,15 @@
 {% extends '//die/c/make.sh' %}
 
+{% block pkg_name %}
+jitterentropy-library
+{% endblock %}
+
+{% block version %}
+3.6.0
+{% endblock %}
+
 {% block fetch %}
-https://github.com/smuellerDD/jitterentropy-library/archive/refs/tags/v3.6.0.tar.gz
+https://github.com/smuellerDD/jitterentropy-library/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 sha:e2af325cdc7d951a66af782fad4bcdd622e9d8355dd024b7562e2f8b3f6079cd
 {% endblock %}
 

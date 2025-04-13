@@ -1,7 +1,11 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block version %}
+4.18.0
+{% endblock %}
+
 {% block fetch %}
-https://download.gnome.org/sources/gtkmm/4.18/gtkmm-4.18.0.tar.xz
+https://download.gnome.org/sources/gtkmm/4.18/gtkmm-{{self.version().strip()}}.tar.xz
 sha:2ee31c15479fc4d8e958b03c8b5fbbc8e17bc122c2a2f544497b4e05619e33ec
 {% endblock %}
 

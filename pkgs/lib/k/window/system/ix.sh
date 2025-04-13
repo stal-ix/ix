@@ -1,7 +1,11 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block version %}
+6.1.0
+{% endblock %}
+
 {% block fetch %}
-https://invent.kde.org/frameworks/kwindowsystem/-/archive/v6.1.0/kwindowsystem-v6.1.0.tar.bz2
+https://invent.kde.org/frameworks/kwindowsystem/-/archive/v{{self.version().strip()}}/kwindowsystem-v{{self.version().strip()}}.tar.bz2
 sha:62c1ef619daf1972b18fd81a69e31e8698b013d5c17b44adf5289d3d60556e8e
 {% endblock %}
 

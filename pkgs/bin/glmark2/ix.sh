@@ -1,7 +1,15 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block pkg_name %}
+glmark2
+{% endblock %}
+
+{% block version %}
+2023.01
+{% endblock %}
+
 {% block fetch %}
-https://github.com/glmark2/glmark2/archive/refs/tags/2023.01.tar.gz
+https://github.com/glmark2/glmark2/archive/refs/tags/{{self.version().strip()}}.tar.gz
 sha:8fece3fc323b643644a525be163dc4931a4189971eda1de8ad4c1712c5db3d67
 {% endblock %}
 

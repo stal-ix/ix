@@ -1,7 +1,15 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+iniparser
+{% endblock %}
+
+{% block version %}
+4.2.6
+{% endblock %}
+
 {% block fetch %}
-https://github.com/ndevilla/iniparser/archive/refs/tags/v4.2.6.tar.gz
+https://github.com/ndevilla/iniparser/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 sha:a0bd370713a744b1fa8ec27bba889ebf9dbd43060ec92e07fbe91fb43e3cb3ac
 {% endblock %}
 

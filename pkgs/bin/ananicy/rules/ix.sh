@@ -1,7 +1,15 @@
 {% extends '//die/c/make.sh' %}
 
+{% block pkg_name %}
+Ananicy
+{% endblock %}
+
+{% block version %}
+2.2.1
+{% endblock %}
+
 {% block fetch %}
-https://github.com/Nefelim4ag/Ananicy/archive/refs/tags/2.2.1.tar.gz
+https://github.com/Nefelim4ag/Ananicy/archive/refs/tags/{{self.version().strip()}}.tar.gz
 sha:3e33c3c84d29f93b64079e67eb56c39a4d40b0591e52db171156981b72f648b1
 {% endblock %}
 

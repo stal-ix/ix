@@ -1,7 +1,11 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block version %}
+25.02.0
+{% endblock %}
+
 {% block fetch %}
-https://poppler.freedesktop.org/poppler-25.02.0.tar.xz
+https://poppler.freedesktop.org/poppler-{{self.version().strip()}}.tar.xz
 sha:21234cb2a9647d73c752ce4031e65a79d11a511a835f2798284c2497b8701dee
 {% endblock %}
 

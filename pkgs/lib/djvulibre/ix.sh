@@ -1,7 +1,11 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block version %}
+3.5.28
+{% endblock %}
+
 {% block fetch %}
-http://downloads.sourceforge.net/djvu/djvulibre-3.5.28.tar.gz
+http://downloads.sourceforge.net/djvu/djvulibre-{{self.version().strip()}}.tar.gz
 sha:fcd009ea7654fde5a83600eb80757bd3a76998e47d13c66b54c8db849f8f2edc
 {% endblock %}
 

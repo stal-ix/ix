@@ -1,7 +1,15 @@
 {% extends '//die/go/build.sh' %}
 
+{% block pkg_name %}
+task
+{% endblock %}
+
+{% block version %}
+3.14.0
+{% endblock %}
+
 {% block go_url %}
-https://github.com/go-task/task/archive/refs/tags/v3.14.0.tar.gz
+https://github.com/go-task/task/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 {% endblock %}
 
 {% block go_sha %}

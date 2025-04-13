@@ -1,7 +1,15 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block pkg_name %}
+libtasn1
+{% endblock %}
+
+{% block version %}
+4.19.0
+{% endblock %}
+
 {% block fetch %}
-https://ftp.gnu.org/gnu/libtasn1/libtasn1-4.19.0.tar.gz
+https://ftp.gnu.org/gnu/libtasn1/libtasn1-{{self.version().strip()}}.tar.gz
 sha:1613f0ac1cf484d6ec0ce3b8c06d56263cc7242f1c23b30d82d23de345a63f7a
 {% endblock %}
 

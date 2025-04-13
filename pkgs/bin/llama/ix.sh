@@ -1,7 +1,15 @@
 {% extends '//die/go/build.sh' %}
 
+{% block pkg_name %}
+llama
+{% endblock %}
+
+{% block version %}
+1.4.0
+{% endblock %}
+
 {% block go_url %}
-https://github.com/antonmedv/llama/archive/refs/tags/v1.4.0.tar.gz
+https://github.com/antonmedv/llama/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 {% endblock %}
 
 {% block go_sha %}

@@ -1,7 +1,15 @@
 {% extends '//die/go/build.sh' %}
 
+{% block pkg_name %}
+nebula
+{% endblock %}
+
+{% block version %}
+1.9.1
+{% endblock %}
+
 {% block go_url %}
-https://github.com/slackhq/nebula/archive/refs/tags/v1.9.1.tar.gz
+https://github.com/slackhq/nebula/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 {% endblock %}
 
 {% block go_sha %}

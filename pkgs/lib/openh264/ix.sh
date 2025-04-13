@@ -1,7 +1,15 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block pkg_name %}
+openh264
+{% endblock %}
+
+{% block version %}
+2.6.0
+{% endblock %}
+
 {% block fetch %}
-https://github.com/cisco/openh264/archive/refs/tags/v2.6.0.tar.gz
+https://github.com/cisco/openh264/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 sha:558544ad358283a7ab2930d69a9ceddf913f4a51ee9bf1bfb9e377322af81a69
 {% endblock %}
 

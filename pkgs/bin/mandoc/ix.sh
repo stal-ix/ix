@@ -1,7 +1,11 @@
 {% extends '//die/c/autohell.sh' %}
 
+{% block version %}
+1.14.6
+{% endblock %}
+
 {% block fetch %}
-http://mandoc.bsd.lv/snapshots/mandoc-1.14.6.tar.gz
+http://mandoc.bsd.lv/snapshots/mandoc-{{self.version().strip()}}.tar.gz
 sha:8bf0d570f01e70a6e124884088870cbed7537f36328d512909eb10cd53179d9c
 {% endblock %}
 

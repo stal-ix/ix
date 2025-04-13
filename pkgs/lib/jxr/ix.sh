@@ -1,7 +1,15 @@
 {% extends '//die/c/make.sh' %}
 
+{% block pkg_name %}
+jxrlib
+{% endblock %}
+
+{% block version %}
+0.2.4
+{% endblock %}
+
 {% block fetch %}
-https://github.com/glencoesoftware/jxrlib/archive/refs/tags/v0.2.4.tar.gz
+https://github.com/glencoesoftware/jxrlib/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 sha:324af02e341bcb9e3b31a6d6892f47231f95f9f87ab4fe7645be619dcaf965a7
 {% endblock %}
 

@@ -1,7 +1,15 @@
 {% extends '//die/rust/cargo.sh' %}
 
+{% block pkg_name %}
+niri
+{% endblock %}
+
+{% block version %}
+25.02
+{% endblock %}
+
 {% block cargo_url %}
-https://github.com/YaLTeR/niri/archive/refs/tags/v25.02.tar.gz
+https://github.com/YaLTeR/niri/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 {% endblock %}
 
 {% block cargo_sha %}

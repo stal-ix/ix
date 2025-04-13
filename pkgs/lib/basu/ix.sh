@@ -1,7 +1,11 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block version %}
+0.2.1
+{% endblock %}
+
 {% block fetch %}
-https://git.sr.ht/~emersion/basu/archive/v0.2.1.tar.gz
+https://git.sr.ht/~emersion/basu/archive/v{{self.version().strip()}}.tar.gz
 sha:43b327073d1ac7bc6cbc0d3dfff729348fc970dfff0551ad40e366332e990204
 {% endblock %}
 

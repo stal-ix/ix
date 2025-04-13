@@ -1,7 +1,15 @@
 {% extends '//bin/nwg/t/ix.sh' %}
 
+{% block pkg_name %}
+nwg-look
+{% endblock %}
+
+{% block version %}
+0.2.4
+{% endblock %}
+
 {% block go_url %}
-https://github.com/nwg-piotr/nwg-look/archive/refs/tags/v0.2.4.tar.gz
+https://github.com/nwg-piotr/nwg-look/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 {% endblock %}
 
 {% block go_sha %}

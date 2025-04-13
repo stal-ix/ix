@@ -1,7 +1,15 @@
 {% extends '//die/rust/cargo.sh' %}
 
+{% block pkg_name %}
+amdgpu_top
+{% endblock %}
+
+{% block version %}
+0.10.0
+{% endblock %}
+
 {% block cargo_url %}
-https://github.com/Umio-Yasuno/amdgpu_top/archive/refs/tags/v0.10.0.tar.gz
+https://github.com/Umio-Yasuno/amdgpu_top/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 {% endblock %}
 
 {% block cargo_sha %}

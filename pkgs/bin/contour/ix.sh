@@ -1,7 +1,15 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+contour
+{% endblock %}
+
+{% block version %}
+0.6.1.7494
+{% endblock %}
+
 {% block fetch %}
-https://github.com/contour-terminal/contour/archive/refs/tags/v0.6.1.7494.tar.gz
+https://github.com/contour-terminal/contour/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 sha:15090a08cf05124bf05074130cc6460d1d34c6d80f1058c63202effa032b8f6f
 {% endblock %}
 

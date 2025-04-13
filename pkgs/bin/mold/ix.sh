@@ -1,7 +1,15 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+mold
+{% endblock %}
+
+{% block version %}
+2.37.1
+{% endblock %}
+
 {% block fetch %}
-https://github.com/rui314/mold/archive/refs/tags/v2.37.1.tar.gz
+https://github.com/rui314/mold/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 sha:b8e36086c95bd51e9829c9755c138f5c4daccdd63b6c35212b84229419f3ccbe
 {% endblock %}
 

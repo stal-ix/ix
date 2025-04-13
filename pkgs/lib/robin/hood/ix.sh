@@ -1,7 +1,15 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+robin-hood-hashing
+{% endblock %}
+
+{% block version %}
+3.11.3
+{% endblock %}
+
 {% block fetch %}
-https://github.com/martinus/robin-hood-hashing/archive/refs/tags/3.11.3.tar.gz
+https://github.com/martinus/robin-hood-hashing/archive/refs/tags/{{self.version().strip()}}.tar.gz
 md5:4690c87ee1d402548cae96e541b41b5e
 {% endblock %}
 

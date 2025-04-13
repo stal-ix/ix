@@ -1,7 +1,15 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block pkg_name %}
+swayidle
+{% endblock %}
+
+{% block version %}
+1.8.0
+{% endblock %}
+
 {% block fetch %}
-https://github.com/swaywm/swayidle/archive/refs/tags/1.8.0.tar.gz
+https://github.com/swaywm/swayidle/archive/refs/tags/{{self.version().strip()}}.tar.gz
 sha:0fba74c520a2bd64acd00bc3bce7bc8c7b84a2609c0f66329d72dfb33cca03d7
 {% endblock %}
 

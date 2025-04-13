@@ -1,7 +1,15 @@
 {% extends '//die/go/build.sh' %}
 
+{% block pkg_name %}
+pwru
+{% endblock %}
+
+{% block version %}
+1.0.5
+{% endblock %}
+
 {% block go_url %}
-https://github.com/cilium/pwru/archive/refs/tags/v1.0.5.tar.gz
+https://github.com/cilium/pwru/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 {% endblock %}
 
 {% block go_sha %}

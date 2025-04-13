@@ -1,7 +1,15 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block pkg_name %}
+swayimg
+{% endblock %}
+
+{% block version %}
+3.9
+{% endblock %}
+
 {% block fetch %}
-https://github.com/artemsen/swayimg/archive/refs/tags/v3.9.tar.gz
+https://github.com/artemsen/swayimg/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 sha:d21a7ca9ef4d21cf852889932999e9edd4ecf2c587321120f5b4d6147580e7cb
 {% endblock %}
 

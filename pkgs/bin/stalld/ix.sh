@@ -1,7 +1,11 @@
 {% extends '//die/c/make.sh' %}
 
+{% block version %}
+1.19.4
+{% endblock %}
+
 {% block fetch %}
-https://git.kernel.org/pub/scm/utils/stalld/stalld.git/snapshot/stalld-1.19.4.tar.gz
+https://git.kernel.org/pub/scm/utils/stalld/stalld.git/snapshot/stalld-{{self.version().strip()}}.tar.gz
 sha:cc5c6ef7811da280931e33cdaf4e03b9acaf4bf3e6670e4de6cec593024d75a7
 {% endblock %}
 

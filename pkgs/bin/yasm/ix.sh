@@ -1,7 +1,15 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block pkg_name %}
+yasm
+{% endblock %}
+
+{% block version %}
+1.3.0
+{% endblock %}
+
 {% block fetch %}
-https://github.com/yasm/yasm/releases/download/v1.3.0/yasm-1.3.0.tar.gz
+https://github.com/yasm/yasm/releases/download/v{{self.version().strip()}}/yasm-{{self.version().strip()}}.tar.gz
 sha:3dce6601b495f5b3d45b59f7d2492a340ee7e84b5beca17e48f862502bd5603f
 {% endblock %}
 

@@ -1,7 +1,15 @@
 {% extends '//die/rust/cargo.sh' %}
 
+{% block pkg_name %}
+shadowsocks-rust
+{% endblock %}
+
+{% block version %}
+1.22.0
+{% endblock %}
+
 {% block cargo_url %}
-https://github.com/shadowsocks/shadowsocks-rust/archive/refs/tags/v1.22.0.tar.gz
+https://github.com/shadowsocks/shadowsocks-rust/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 {% endblock %}
 
 {% block cargo_sha %}

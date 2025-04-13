@@ -1,7 +1,15 @@
 {% extends '//die/c/make.sh' %}
 
+{% block pkg_name %}
+dcron
+{% endblock %}
+
+{% block version %}
+4.5
+{% endblock %}
+
 {% block fetch %}
-https://github.com/dubiousjim/dcron/archive/refs/tags/v4.5.tar.gz
+https://github.com/dubiousjim/dcron/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 sha:7c047194b9339b781971b000bf5512c11e856d20a14fe5323d5a1823f04c2a3f
 {% endblock %}
 

@@ -1,7 +1,15 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block pkg_name %}
+rlottie
+{% endblock %}
+
+{% block version %}
+0.2
+{% endblock %}
+
 {% block fetch %}
-https://github.com/Samsung/rlottie/archive/refs/tags/v0.2.tar.gz
+https://github.com/Samsung/rlottie/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 sha:030ccbc270f144b4f3519fb3b86e20dd79fb48d5d55e57f950f12bab9b65216a
 {% endblock %}
 

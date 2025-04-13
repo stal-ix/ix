@@ -1,7 +1,15 @@
 {% extends '//bin/gcc/8/unwrap/ix.sh' %}
 
+{% block pkg_name %}
+gcc
+{% endblock %}
+
+{% block version %}
+7.5.0
+{% endblock %}
+
 {% block fetch %}
-https://ftp.gnu.org/gnu/gcc/gcc-7.5.0/gcc-7.5.0.tar.xz
+https://ftp.gnu.org/gnu/gcc/gcc-{{self.version().strip()}}/gcc-{{self.version().strip()}}.tar.xz
 sha:b81946e7f01f90528a1f7352ab08cc602b9ccc05d4e44da4bd501c5a189ee661
 {% endblock %}
 

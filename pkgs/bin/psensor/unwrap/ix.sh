@@ -1,7 +1,11 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block version %}
+1.2.1
+{% endblock %}
+
 {% block fetch %}
-https://gitlab.com/jeanfi/psensor/-/archive/1.2.1/psensor-1.2.1.tar.bz2
+https://gitlab.com/jeanfi/psensor/-/archive/{{self.version().strip()}}/psensor-{{self.version().strip()}}.tar.bz2
 sha:95086ace5ef9bfbea5642ca436d3b84695d5e5d26324a39a13664da47d89248b
 {% endblock %}
 

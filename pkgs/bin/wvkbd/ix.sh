@@ -1,7 +1,15 @@
 {% extends '//die/c/make.sh' %}
 
+{% block pkg_name %}
+wvkbd
+{% endblock %}
+
+{% block version %}
+0.16
+{% endblock %}
+
 {% block fetch %}
-https://github.com/jjsullivan5196/wvkbd/archive/refs/tags/v0.16.tar.gz
+https://github.com/jjsullivan5196/wvkbd/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 sha:1d58f43447d612c5d63b48db224175050e38f31f52032ae9328b051c25040ee4
 {% endblock %}
 

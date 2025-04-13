@@ -1,7 +1,15 @@
 {% extends '//die/c/ix.sh' %}
 
+{% block pkg_name %}
+kitty
+{% endblock %}
+
+{% block version %}
+0.31.0
+{% endblock %}
+
 {% block fetch %}
-https://github.com/kovidgoyal/kitty/archive/refs/tags/v0.31.0.tar.gz
+https://github.com/kovidgoyal/kitty/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 sha:d1fa72c9d16eedec43ba99de9f1ad511c8246cbe4e70dd1f9d865ef72984829d
 {% endblock %}
 

@@ -1,7 +1,15 @@
 {% extends '//die/c/make.sh' %}
 
+{% block pkg_name %}
+libbpf
+{% endblock %}
+
+{% block version %}
+1.5.0
+{% endblock %}
+
 {% block fetch %}
-https://github.com/libbpf/libbpf/archive/refs/tags/v1.5.0.tar.gz
+https://github.com/libbpf/libbpf/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 sha:53492aff6dd47e4da04ef5e672d753b9743848bdb38e9d90eafbe190b7983c44
 {% endblock %}
 

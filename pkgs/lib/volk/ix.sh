@@ -1,7 +1,15 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+volk
+{% endblock %}
+
+{% block version %}
+1.3.290.0
+{% endblock %}
+
 {% block fetch %}
-https://github.com/zeux/volk/archive/refs/tags/vulkan-sdk-1.3.290.0.tar.gz
+https://github.com/zeux/volk/archive/refs/tags/vulkan-sdk-{{self.version().strip()}}.tar.gz
 sha:bb6a6d616c0f2bbd5d180da982a6d92a0948581cec937de69f17883980c6ca06
 {% endblock %}
 

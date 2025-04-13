@@ -1,7 +1,15 @@
 {% extends '//die/c/kconfig.sh' %}
 
+{% block pkg_name %}
+toybox
+{% endblock %}
+
+{% block version %}
+0.8.12
+{% endblock %}
+
 {% block fetch %}
-https://github.com/landley/toybox/archive/refs/tags/0.8.12.tar.gz
+https://github.com/landley/toybox/archive/refs/tags/{{self.version().strip()}}.tar.gz
 sha:3c529d93923dde67d048e7bcbd5d1bc0dd1ad09362269e2415f5f2eaab349b5b
 {% endblock %}
 

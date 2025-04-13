@@ -1,7 +1,15 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block pkg_name %}
+transmission-remote-gtk
+{% endblock %}
+
+{% block version %}
+1.5.1
+{% endblock %}
+
 {% block fetch %}
-https://github.com/transmission-remote-gtk/transmission-remote-gtk/archive/refs/tags/1.5.1.tar.gz
+https://github.com/transmission-remote-gtk/transmission-remote-gtk/archive/refs/tags/{{self.version().strip()}}.tar.gz
 sha:9d30211b2bd85c4b39b9ac287b315a60776f8d54592ab380aea3fa679aceb3b0
 {% endblock %}
 

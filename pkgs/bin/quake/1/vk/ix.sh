@@ -1,7 +1,15 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block pkg_name %}
+vkQuake
+{% endblock %}
+
+{% block version %}
+1.32.0
+{% endblock %}
+
 {% block fetch %}
-https://github.com/Novum/vkQuake/archive/refs/tags/1.32.0.tar.gz
+https://github.com/Novum/vkQuake/archive/refs/tags/{{self.version().strip()}}.tar.gz
 sha:c9f5d305358fb44c5e0944c4f73d2d4887574178253ad092d11489925d7ef433
 {% endblock %}
 

@@ -1,7 +1,15 @@
 {% extends '//die/go/build.sh' %}
 
+{% block pkg_name %}
+elvish
+{% endblock %}
+
+{% block version %}
+0.21.0
+{% endblock %}
+
 {% block go_url %}
-https://github.com/elves/elvish/archive/refs/tags/v0.21.0.tar.gz
+https://github.com/elves/elvish/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 {% endblock %}
 
 {% block go_sha %}

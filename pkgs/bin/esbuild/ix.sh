@@ -1,7 +1,15 @@
 {% extends '//die/go/build.sh' %}
 
+{% block pkg_name %}
+esbuild
+{% endblock %}
+
+{% block version %}
+0.22.0
+{% endblock %}
+
 {% block go_url %}
-https://github.com/evanw/esbuild/archive/refs/tags/v0.22.0.tar.gz
+https://github.com/evanw/esbuild/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 {% endblock %}
 
 {% block go_sha %}

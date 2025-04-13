@@ -1,7 +1,11 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block version %}
+1.1.7
+{% endblock %}
+
 {% block fetch %}
-https://cmocka.org/files/1.1/cmocka-1.1.7.tar.xz
+https://cmocka.org/files/1.1/cmocka-{{self.version().strip()}}.tar.xz
 sha:810570eb0b8d64804331f82b29ff47c790ce9cd6b163e98d47a4807047ecad82
 {% endblock %}
 

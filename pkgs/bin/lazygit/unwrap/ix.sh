@@ -1,7 +1,15 @@
 {% extends '//die/go/build.sh' %}
 
+{% block pkg_name %}
+lazygit
+{% endblock %}
+
+{% block version %}
+0.48.0
+{% endblock %}
+
 {% block go_url %}
-https://github.com/jesseduffield/lazygit/archive/refs/tags/v0.48.0.tar.gz
+https://github.com/jesseduffield/lazygit/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 {% endblock %}
 
 {% block go_sha %}

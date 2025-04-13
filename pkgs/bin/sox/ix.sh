@@ -1,7 +1,11 @@
 {% extends '//die/c/autohell.sh' %}
 
+{% block version %}
+14.4.2
+{% endblock %}
+
 {% block fetch %}
-https://downloads.sourceforge.net/project/sox/sox/14.4.2/sox-14.4.2.tar.bz2
+https://downloads.sourceforge.net/project/sox/sox/{{self.version().strip()}}/sox-{{self.version().strip()}}.tar.bz2
 sha:81a6956d4330e75b5827316e44ae381e6f1e8928003c6aa45896da9041ea149c
 {% endblock %}
 

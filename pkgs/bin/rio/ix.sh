@@ -1,7 +1,15 @@
 {% extends '//die/rust/cargo.sh' %}
 
+{% block pkg_name %}
+rio
+{% endblock %}
+
+{% block version %}
+0.0.34
+{% endblock %}
+
 {% block cargo_url %}
-https://github.com/raphamorim/rio/archive/refs/tags/v0.0.34.tar.gz
+https://github.com/raphamorim/rio/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 {% endblock %}
 
 {% block cargo_sha %}

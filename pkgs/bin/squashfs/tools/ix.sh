@@ -1,7 +1,15 @@
 {% extends '//die/c/make.sh' %}
 
+{% block pkg_name %}
+squashfs-tools
+{% endblock %}
+
+{% block version %}
+4.6.1
+{% endblock %}
+
 {% block fetch %}
-https://github.com/plougher/squashfs-tools/archive/refs/tags/4.6.1.tar.gz
+https://github.com/plougher/squashfs-tools/archive/refs/tags/{{self.version().strip()}}.tar.gz
 sha:94201754b36121a9f022a190c75f718441df15402df32c2b520ca331a107511c
 {% endblock %}
 

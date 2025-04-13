@@ -1,7 +1,15 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+hyprlock
+{% endblock %}
+
+{% block version %}
+0.8.0
+{% endblock %}
+
 {% block fetch %}
-https://github.com/hyprwm/hyprlock/archive/refs/tags/v0.8.0.tar.gz
+https://github.com/hyprwm/hyprlock/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 sha:70154a004a270cd91cb62031314e8371dc32c636d68b8bb979afd238dd501ccf
 {% endblock %}
 

@@ -1,7 +1,15 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+libavif
+{% endblock %}
+
+{% block version %}
+1.2.1
+{% endblock %}
+
 {% block fetch %}
-https://github.com/AOMediaCodec/libavif/archive/refs/tags/v1.2.1.tar.gz
+https://github.com/AOMediaCodec/libavif/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 sha:9c859c7c12ccb0f407511bfe303e6a7247f5f6738f54852662c6df8048daddf4
 {% endblock %}
 

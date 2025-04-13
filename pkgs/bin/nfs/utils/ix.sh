@@ -1,7 +1,11 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block version %}
+2.8.3
+{% endblock %}
+
 {% block fetch %}
-https://downloads.sourceforge.net/project/nfs/nfs-utils/2.8.3/nfs-utils-2.8.3.tar.xz
+https://downloads.sourceforge.net/project/nfs/nfs-utils/{{self.version().strip()}}/nfs-utils-{{self.version().strip()}}.tar.xz
 sha:7251a867f6be8c681bc92e4671c983be09c06a053e514c4b486de36fb8221f65
 {% endblock %}
 

@@ -1,7 +1,11 @@
 {% extends '//die/c/make.sh' %}
 
+{% block version %}
+1.14
+{% endblock %}
+
 {% block fetch %}
-https://download.savannah.gnu.org/releases/zutils/zutils-1.14.tar.lz
+https://download.savannah.gnu.org/releases/zutils/zutils-{{self.version().strip()}}.tar.lz
 sha:0225a7cbe3bdeade33ef08323d7fe7fb0c6edb1e8e0955287d50b21b7b5d989e
 {% endblock %}
 

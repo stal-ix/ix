@@ -1,7 +1,11 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block version %}
+1.7.1
+{% endblock %}
+
 {% block fetch %}
-https://codeberg.org/dnkl/fnott/archive/1.7.1.tar.gz
+https://codeberg.org/dnkl/fnott/archive/{{self.version().strip()}}.tar.gz
 sha:39c732f2ac57d18f24ef9112524d71090e2b68b72a892f4a44f3a77a1f067487
 {% endblock %}
 

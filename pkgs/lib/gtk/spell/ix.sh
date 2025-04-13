@@ -1,7 +1,11 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block version %}
+3.0.10
+{% endblock %}
+
 {% block fetch %}
-https://downloads.sourceforge.net/project/gtkspell/3.0.10/gtkspell3-3.0.10.tar.xz
+https://downloads.sourceforge.net/project/gtkspell/{{self.version().strip()}}/gtkspell3-{{self.version().strip()}}.tar.xz
 sha:b040f63836b347eb344f5542443dc254621805072f7141d49c067ecb5a375732
 {% endblock %}
 

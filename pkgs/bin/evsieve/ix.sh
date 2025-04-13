@@ -1,7 +1,15 @@
 {% extends '//die/rust/cargo.sh' %}
 
+{% block pkg_name %}
+evsieve
+{% endblock %}
+
+{% block version %}
+1.4.0
+{% endblock %}
+
 {% block cargo_url %}
-https://github.com/KarsMulder/evsieve/archive/refs/tags/v1.4.0.tar.gz
+https://github.com/KarsMulder/evsieve/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 {% endblock %}
 
 {% block cargo_sha %}

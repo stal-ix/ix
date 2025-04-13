@@ -1,7 +1,15 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block pkg_name %}
+libsass
+{% endblock %}
+
+{% block version %}
+3.6.6
+{% endblock %}
+
 {% block fetch %}
-https://github.com/sass/libsass/archive/refs/tags/3.6.6.tar.gz
+https://github.com/sass/libsass/archive/refs/tags/{{self.version().strip()}}.tar.gz
 sha:11f0bb3709a4f20285507419d7618f3877a425c0131ea8df40fe6196129df15d
 {% endblock %}
 

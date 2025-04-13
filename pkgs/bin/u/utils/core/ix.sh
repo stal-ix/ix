@@ -1,7 +1,15 @@
 {% extends '//die/rust/cargo.sh' %}
 
+{% block pkg_name %}
+coreutils
+{% endblock %}
+
+{% block version %}
+0.0.30
+{% endblock %}
+
 {% block cargo_url %}
-https://github.com/uutils/coreutils/archive/refs/tags/0.0.30.tar.gz
+https://github.com/uutils/coreutils/archive/refs/tags/{{self.version().strip()}}.tar.gz
 {% endblock %}
 
 {% block cargo_sha %}

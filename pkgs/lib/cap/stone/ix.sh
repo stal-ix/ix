@@ -1,5 +1,9 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+capstone
+{% endblock %}
+
 {% block version %}
 5.0.6
 {% endblock %}

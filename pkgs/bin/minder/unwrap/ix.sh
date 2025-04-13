@@ -1,7 +1,15 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block pkg_name %}
+Minder
+{% endblock %}
+
+{% block version %}
+1.16.4
+{% endblock %}
+
 {% block fetch %}
-https://github.com/phase1geo/Minder/archive/refs/tags/1.16.4.tar.gz
+https://github.com/phase1geo/Minder/archive/refs/tags/{{self.version().strip()}}.tar.gz
 sha:3a9c2831d36a7744f7df27412b2f75b2bec38f5974984a027d6fa7f634a37c7e
 {% endblock %}
 

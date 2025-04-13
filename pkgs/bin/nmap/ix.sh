@@ -1,7 +1,11 @@
 {% extends '//die/c/autohell.sh' %}
 
+{% block version %}
+7.95
+{% endblock %}
+
 {% block fetch %}
-https://nmap.org/dist/nmap-7.95.tar.bz2
+https://nmap.org/dist/nmap-{{self.version().strip()}}.tar.bz2
 sha:e14ab530e47b5afd88f1c8a2bac7f89cd8fe6b478e22d255c5b9bddb7a1c5778
 {% endblock %}
 
@@ -14,4 +18,3 @@ lib/pcre/2
 lib/linear
 lib/openssl
 {% endblock %}
-

@@ -1,7 +1,15 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block pkg_name %}
+xarchiver
+{% endblock %}
+
+{% block version %}
+0.5.4.24
+{% endblock %}
+
 {% block fetch %}
-https://github.com/ib/xarchiver/archive/refs/tags/0.5.4.24.tar.gz
+https://github.com/ib/xarchiver/archive/refs/tags/{{self.version().strip()}}.tar.gz
 sha:ac5775309820196761a7fab4355251e0e74b7fa09156db279b3a440183f97bd7
 {% endblock %}
 

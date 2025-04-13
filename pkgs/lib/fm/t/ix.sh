@@ -1,9 +1,17 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block pkg_name %}
+libfm
+{% endblock %}
+
+{% block version %}
+1.4.0
+{% endblock %}
+
 {# TODO(pg): X, gtk-doc #}
 
 {% block fetch %}
-https://github.com/lxde/libfm/archive/refs/tags/1.4.0.tar.gz
+https://github.com/lxde/libfm/archive/refs/tags/{{self.version().strip()}}.tar.gz
 sha:7d7b616411992389a4b7f35796109d605f30bc2ceab84d4081d1665254ebbf82
 {% endblock %}
 

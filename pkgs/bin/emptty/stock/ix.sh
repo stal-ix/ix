@@ -1,9 +1,17 @@
 {% extends '//die/go/build.sh' %}
 
+{% block pkg_name %}
+emptty
+{% endblock %}
+
+{% block version %}
+0.13.0
+{% endblock %}
+
 {# TODO(pg): get rid of /usr/bin/getent reference #}
 
 {% block go_url %}
-https://github.com/tvrzna/emptty/archive/refs/tags/v0.13.0.tar.gz
+https://github.com/tvrzna/emptty/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 {% endblock %}
 
 {% block go_sha %}

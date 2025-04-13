@@ -1,7 +1,15 @@
 {% extends '//die/rust/cargo.sh' %}
 
+{% block pkg_name %}
+cargo
+{% endblock %}
+
+{% block version %}
+0.80.0
+{% endblock %}
+
 {% block cargo_url %}
-https://github.com/rust-lang/cargo/archive/refs/tags/0.80.0.tar.gz
+https://github.com/rust-lang/cargo/archive/refs/tags/{{self.version().strip()}}.tar.gz
 {% endblock %}
 
 {% block cargo_sha %}

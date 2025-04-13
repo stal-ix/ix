@@ -1,7 +1,11 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block version %}
+2.74.2
+{% endblock %}
+
 {% block fetch %}
-https://download.gnome.org/sources/libsoup/2.74/libsoup-2.74.2.tar.xz
+https://download.gnome.org/sources/libsoup/2.74/libsoup-{{self.version().strip()}}.tar.xz
 sha:f0a427656e5fe19e1df71c107e88dfa1b2e673c25c547b7823b6018b40d01159
 {% endblock %}
 

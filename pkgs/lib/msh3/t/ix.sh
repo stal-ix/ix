@@ -1,7 +1,15 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+msh3
+{% endblock %}
+
+{% block version %}
+0.8.0
+{% endblock %}
+
 {% block fetch %}
-https://github.com/nibanks/msh3/archive/refs/tags/v0.8.0.tar.gz
+https://github.com/nibanks/msh3/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 sha:a99e5c513db3824d16ac188ae64fbdf6ae45d256ebfbeddb895d5d815ef5e644
 {% endblock %}
 

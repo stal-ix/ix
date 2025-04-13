@@ -1,7 +1,15 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block pkg_name %}
+libgusb
+{% endblock %}
+
+{% block version %}
+0.4.9
+{% endblock %}
+
 {% block fetch %}
-https://github.com/hughsie/libgusb/archive/refs/tags/0.4.9.tar.gz
+https://github.com/hughsie/libgusb/archive/refs/tags/{{self.version().strip()}}.tar.gz
 sha:aa1242a308183d4ca6c2e8c9e3f2e345370b94308ef2d4b6e9c10d5ff6d7763e
 {% endblock %}
 

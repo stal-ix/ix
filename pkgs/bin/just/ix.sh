@@ -1,7 +1,15 @@
 {% extends '//die/rust/cargo.sh' %}
 
+{% block pkg_name %}
+just
+{% endblock %}
+
+{% block version %}
+1.40.0
+{% endblock %}
+
 {% block cargo_url %}
-https://github.com/casey/just/archive/refs/tags/1.40.0.tar.gz
+https://github.com/casey/just/archive/refs/tags/{{self.version().strip()}}.tar.gz
 {% endblock %}
 
 {% block cargo_sha %}

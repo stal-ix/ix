@@ -1,7 +1,15 @@
 {% extends '//die/c/autohell.sh' %}
 
+{% block pkg_name %}
+wget
+{% endblock %}
+
+{% block version %}
+2.2.0
+{% endblock %}
+
 {% block fetch %}
-https://ftp.gnu.org/gnu/wget/wget2-2.2.0.tar.gz
+https://ftp.gnu.org/gnu/wget/wget2-{{self.version().strip()}}.tar.gz
 sha:2b3b9c85b7fb26d33ca5f41f1f8daca71838d869a19b406063aa5c655294d357
 {% endblock %}
 

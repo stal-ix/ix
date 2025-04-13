@@ -1,7 +1,11 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block version %}
+0.1.22
+{% endblock %}
+
 {% block fetch %}
-https://libnice.freedesktop.org/releases/libnice-0.1.22.tar.gz
+https://libnice.freedesktop.org/releases/libnice-{{self.version().strip()}}.tar.gz
 sha:a5f724cf09eae50c41a7517141d89da4a61ec9eaca32da4a0073faed5417ad7e
 {% endblock %}
 
@@ -14,4 +18,3 @@ lib/gnutls
 {% block bld_tool %}
 bld/glib
 {% endblock %}
-

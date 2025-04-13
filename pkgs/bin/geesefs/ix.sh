@@ -1,7 +1,15 @@
 {% extends '//die/go/build.sh' %}
 
+{% block pkg_name %}
+geesefs
+{% endblock %}
+
+{% block version %}
+0.42.4
+{% endblock %}
+
 {% block go_url %}
-https://github.com/yandex-cloud/geesefs/archive/refs/tags/v0.42.4.tar.gz
+https://github.com/yandex-cloud/geesefs/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 {% endblock %}
 
 {% block go_sha %}

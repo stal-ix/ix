@@ -1,7 +1,11 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block version %}
+0.114
+{% endblock %}
+
 {% block fetch %}
-https://dbus.freedesktop.org/releases/dbus-glib/dbus-glib-0.114.tar.gz
+https://dbus.freedesktop.org/releases/dbus-glib/dbus-glib-{{self.version().strip()}}.tar.gz
 sha:c09c5c085b2a0e391b8ee7d783a1d63fe444e96717cc1814d61b5e8fc2827a7c
 {% endblock %}
 

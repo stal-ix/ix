@@ -1,7 +1,15 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+Vulkan-ValidationLayers
+{% endblock %}
+
+{% block version %}
+1.3.296.0
+{% endblock %}
+
 {% block fetch %}
-https://github.com/KhronosGroup/Vulkan-ValidationLayers/archive/refs/tags/vulkan-sdk-1.3.296.0.tar.gz
+https://github.com/KhronosGroup/Vulkan-ValidationLayers/archive/refs/tags/vulkan-sdk-{{self.version().strip()}}.tar.gz
 sha:968e612df9aae5247cb7b7e9d5322e
 {% endblock %}
 

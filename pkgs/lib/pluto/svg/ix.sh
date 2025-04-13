@@ -1,7 +1,15 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block pkg_name %}
+plutosvg
+{% endblock %}
+
+{% block version %}
+0.0.5
+{% endblock %}
+
 {% block fetch %}
-https://github.com/sammycage/plutosvg/archive/refs/tags/v0.0.5.tar.gz
+https://github.com/sammycage/plutosvg/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 sha:b82fa5e361d841a8c1c3471060d9b87148169d5401592c23be5084cfb3b825b5
 {% endblock %}
 

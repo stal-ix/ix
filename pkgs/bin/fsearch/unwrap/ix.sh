@@ -1,7 +1,15 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block pkg_name %}
+fsearch
+{% endblock %}
+
+{% block version %}
+0.2.3
+{% endblock %}
+
 {% block fetch %}
-https://github.com/cboxdoerfer/fsearch/archive/refs/tags/0.2.3.tar.gz
+https://github.com/cboxdoerfer/fsearch/archive/refs/tags/{{self.version().strip()}}.tar.gz
 sha:b3c576bf1230da7c374d00bb32d72686b940b4dee80d941495acfdd5437bf117
 {% endblock %}
 

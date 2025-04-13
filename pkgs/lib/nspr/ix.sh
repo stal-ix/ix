@@ -1,7 +1,11 @@
 {% extends '//die/c/autohell.sh' %}
 
+{% block version %}
+4.36
+{% endblock %}
+
 {% block fetch %}
-https://ftp.mozilla.org/pub/nspr/releases/v4.36/src/nspr-4.36.tar.gz
+https://ftp.mozilla.org/pub/nspr/releases/v{{self.version().strip()}}/src/nspr-{{self.version().strip()}}.tar.gz
 sha:55dec317f1401cd2e5dba844d340b930ab7547f818179a4002bce62e6f1c6895
 {% endblock %}
 

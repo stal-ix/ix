@@ -1,7 +1,15 @@
 {% extends '//die/rust/cargo.sh' %}
 
+{% block pkg_name %}
+gitui
+{% endblock %}
+
+{% block version %}
+0.27.0
+{% endblock %}
+
 {% block cargo_url %}
-https://github.com/extrawurst/gitui/archive/refs/tags/v0.27.0.tar.gz
+https://github.com/extrawurst/gitui/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 {% endblock %}
 
 {% block cargo_sha %}

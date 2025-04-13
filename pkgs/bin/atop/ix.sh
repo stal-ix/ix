@@ -1,7 +1,11 @@
 {% extends '//die/c/make.sh' %}
 
+{% block version %}
+2.11.1
+{% endblock %}
+
 {% block fetch %}
-https://www.atoptool.nl/download/atop-2.11.1.tar.gz
+https://www.atoptool.nl/download/atop-{{self.version().strip()}}.tar.gz
 sha:77650f79f9e388b6f5666dc113849894575a29bb4de21b8cd58767bf8a905154
 {% endblock %}
 

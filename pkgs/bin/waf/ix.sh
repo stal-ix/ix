@@ -1,7 +1,11 @@
 {% extends '//die/c/ix.sh' %}
 
+{% block version %}
+2.1.3
+{% endblock %}
+
 {% block fetch %}
-https://waf.io/waf-2.1.3.tar.bz2
+https://waf.io/waf-{{self.version().strip()}}.tar.bz2
 sha:d580873e9461c55fb91fa03d21eb9872c3acbdec6793448ab50746958d3d7757
 {% endblock %}
 

@@ -1,7 +1,15 @@
 {% extends '//die/c/lxqt.sh' %}
 
+{% block pkg_name %}
+liblxqt
+{% endblock %}
+
+{% block version %}
+2.1.0
+{% endblock %}
+
 {% block fetch %}
-https://github.com/lxqt/liblxqt/archive/refs/tags/2.1.0.tar.gz
+https://github.com/lxqt/liblxqt/archive/refs/tags/{{self.version().strip()}}.tar.gz
 sha:549ce9547a70ac1947a59bfc41cd62d71851f2c06964ee6e77d3f6643413d2c0
 {% endblock %}
 

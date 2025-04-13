@@ -1,7 +1,15 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block pkg_name %}
+sway
+{% endblock %}
+
+{% block version %}
+1.10.1
+{% endblock %}
+
 {% block fetch %}
-https://github.com/swaywm/sway/archive/refs/tags/1.10.1.tar.gz
+https://github.com/swaywm/sway/archive/refs/tags/{{self.version().strip()}}.tar.gz
 sha:8565ab3b359780f02b1dcb24dc48e5b6b82c64dd97ca795782c2fb4cab62457b
 {% endblock %}
 

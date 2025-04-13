@@ -1,7 +1,15 @@
 {% extends '//die/go/build.sh' %}
 
+{% block pkg_name %}
+console
+{% endblock %}
+
+{% block version %}
+1.3.0
+{% endblock %}
+
 {% block go_url %}
-https://github.com/minio/console/archive/refs/tags/v1.3.0.tar.gz
+https://github.com/minio/console/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 {% endblock %}
 
 {% block go_sha %}

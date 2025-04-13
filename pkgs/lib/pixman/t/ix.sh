@@ -1,7 +1,11 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block version %}
+0.44.2
+{% endblock %}
+
 {% block fetch %}
-https://www.cairographics.org/releases/pixman-0.44.2.tar.gz
+https://www.cairographics.org/releases/pixman-{{self.version().strip()}}.tar.gz
 sha:6349061ce1a338ab6952b92194d1b0377472244208d47ff25bef86fc71973466
 {% endblock %}
 

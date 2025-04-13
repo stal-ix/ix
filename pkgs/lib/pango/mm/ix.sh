@@ -1,7 +1,11 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block version %}
+2.46.2
+{% endblock %}
+
 {% block fetch %}
-https://download.gnome.org/sources/pangomm/2.46/pangomm-2.46.2.tar.xz
+https://download.gnome.org/sources/pangomm/2.46/pangomm-{{self.version().strip()}}.tar.xz
 sha:57442ab4dc043877bfe3839915731ab2d693fc6634a71614422fb530c9eaa6f4
 {% endblock %}
 

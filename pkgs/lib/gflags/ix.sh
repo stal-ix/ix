@@ -1,7 +1,15 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+gflags
+{% endblock %}
+
+{% block version %}
+2.2.2
+{% endblock %}
+
 {% block fetch %}
-https://github.com/gflags/gflags/archive/refs/tags/v2.2.2.tar.gz
+https://github.com/gflags/gflags/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 sha:34af2f15cf7367513b352bdcd2493ab14ce43692d2dcd9dfc499492966c64dcf
 {% endblock %}
 

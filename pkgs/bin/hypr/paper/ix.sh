@@ -1,7 +1,15 @@
 {% extends '//bin/hypr/t/ix.sh' %}
 
+{% block pkg_name %}
+hyprpaper
+{% endblock %}
+
+{% block version %}
+0.7.4
+{% endblock %}
+
 {% block fetch %}
-https://github.com/hyprwm/hyprpaper/archive/refs/tags/v0.7.4.tar.gz
+https://github.com/hyprwm/hyprpaper/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 sha:a2375dae58d29293b942a60cd465771b2c3c85cfcac628ec4897f11e7008666f
 {% endblock %}
 

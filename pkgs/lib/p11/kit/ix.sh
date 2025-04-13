@@ -1,7 +1,15 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block pkg_name %}
+p11-kit
+{% endblock %}
+
+{% block version %}
+0.25.4
+{% endblock %}
+
 {% block fetch %}
-https://github.com/p11-glue/p11-kit/releases/download/0.25.4/p11-kit-0.25.4.tar.xz
+https://github.com/p11-glue/p11-kit/releases/download/{{self.version().strip()}}/p11-kit-{{self.version().strip()}}.tar.xz
 sha:4c4153f81167444ff6d5e7ca118472ae607bd25c0cf6346fcc5dcc30451e97ce
 {% endblock %}
 

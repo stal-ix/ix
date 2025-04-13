@@ -1,7 +1,15 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block pkg_name %}
+libproxy
+{% endblock %}
+
+{% block version %}
+0.5.9
+{% endblock %}
+
 {% block fetch %}
-https://github.com/libproxy/libproxy/archive/refs/tags/0.5.9.tar.gz
+https://github.com/libproxy/libproxy/archive/refs/tags/{{self.version().strip()}}.tar.gz
 sha:a1976c3ac4affedc17e6d40cf78c9d8eca6751520ea3cbbec1a8850f7ded1565
 {% endblock %}
 

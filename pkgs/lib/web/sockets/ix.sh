@@ -1,7 +1,15 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+libwebsockets
+{% endblock %}
+
+{% block version %}
+4.3.5
+{% endblock %}
+
 {% block fetch %}
-https://github.com/warmcat/libwebsockets/archive/refs/tags/v4.3.5.tar.gz
+https://github.com/warmcat/libwebsockets/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 sha:87f99ad32803ed325fceac5327aae1f5c1b417d54ee61ad36cffc8df5f5ab276
 {% endblock %}
 

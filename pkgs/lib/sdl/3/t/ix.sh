@@ -1,7 +1,15 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+SDL
+{% endblock %}
+
+{% block version %}
+3.2.10
+{% endblock %}
+
 {% block fetch %}
-https://github.com/libsdl-org/SDL/archive/refs/tags/release-3.2.10.tar.gz
+https://github.com/libsdl-org/SDL/archive/refs/tags/release-{{self.version().strip()}}.tar.gz
 sha:8a6ddc3e70de897f7921da275ac71e375de89dad802aa2932649d1fea9068478
 {% endblock %}
 

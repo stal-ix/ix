@@ -1,7 +1,15 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block pkg_name %}
+orc
+{% endblock %}
+
+{% block version %}
+0.4.41
+{% endblock %}
+
 {% block fetch %}
-https://gitlab.freedesktop.org/gstreamer/orc/-/archive/0.4.40/orc-0.4.41.tar.bz2
+https://gitlab.freedesktop.org/gstreamer/orc/-/archive/0.4.40/orc-{{self.version().strip()}}.tar.bz2
 sha:29b6114976f0cd50b78eeb2cce06bf3436f2d72ea787a1b03317ac01bac96432
 {% endblock %}
 

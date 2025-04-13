@@ -1,7 +1,15 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block pkg_name %}
+cage
+{% endblock %}
+
+{% block version %}
+0.2.0
+{% endblock %}
+
 {% block fetch %}
-https://github.com/cage-kiosk/cage/archive/refs/tags/v0.2.0.tar.gz
+https://github.com/cage-kiosk/cage/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 sha:9d3f659e0f19636a958f9e1bf4d22268d7e2705d7e2989888401ec443c1cb6c3
 {% endblock %}
 

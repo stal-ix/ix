@@ -1,7 +1,15 @@
 {% extends '//die/rust/cargo.sh' %}
 
+{% block pkg_name %}
+zed
+{% endblock %}
+
+{% block version %}
+0.148.1
+{% endblock %}
+
 {% block cargo_url %}
-https://github.com/zed-industries/zed/archive/refs/tags/v0.148.1.tar.gz
+https://github.com/zed-industries/zed/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 {% endblock %}
 
 {% block cargo_sha %}

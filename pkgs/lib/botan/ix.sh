@@ -1,7 +1,15 @@
 {% extends '//die/c/make.sh' %}
 
+{% block pkg_name %}
+botan
+{% endblock %}
+
+{% block version %}
+2.19.5
+{% endblock %}
+
 {% block fetch %}
-https://github.com/randombit/botan/archive/refs/tags/2.19.5.tar.gz
+https://github.com/randombit/botan/archive/refs/tags/{{self.version().strip()}}.tar.gz
 sha:8d4a3826787f9febbdc225172ad2d39d7d3960346c5721fe46cb27d480d7e1de
 {% endblock %}
 

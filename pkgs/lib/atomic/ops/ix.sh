@@ -1,7 +1,15 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+libatomic_ops
+{% endblock %}
+
+{% block version %}
+7.8.2
+{% endblock %}
+
 {% block fetch %}
-https://github.com/ivmai/libatomic_ops/archive/refs/tags/v7.8.2.tar.gz
+https://github.com/ivmai/libatomic_ops/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 sha:ad8428a40e01d41bc4ddad3166afa1fc175c9e58d8ef7ddbd7ef3298e32ac37b
 {% endblock %}
 

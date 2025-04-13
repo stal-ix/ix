@@ -1,7 +1,15 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+openexr
+{% endblock %}
+
+{% block version %}
+3.3.3
+{% endblock %}
+
 {% block fetch %}
-https://github.com/AcademySoftwareFoundation/openexr/archive/refs/tags/v3.3.3.tar.gz
+https://github.com/AcademySoftwareFoundation/openexr/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 sha:0ffbd842a7ee2128d44affdea30f42294b4061293cde3aa75b61a53573413d1e
 {% endblock %}
 

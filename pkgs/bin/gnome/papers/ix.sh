@@ -1,7 +1,15 @@
 {% extends '//die/c/gnome.sh' %}
 
+{% block pkg_name %}
+Incubator
+{% endblock %}
+
+{% block version %}
+46.1
+{% endblock %}
+
 {% block fetch %}
-https://gitlab.gnome.org/GNOME/Incubator/papers/-/archive/46.1/papers-46.1.tar.bz2
+https://gitlab.gnome.org/GNOME/Incubator/papers/-/archive/{{self.version().strip()}}/papers-{{self.version().strip()}}.tar.bz2
 sha:73b16f0f93479d0b94c3209c595e91dfd805fd3b4eab59551bfda4f2cfb22559
 {% endblock %}
 

@@ -1,7 +1,15 @@
 {% extends '//die/rust/cargo.sh' %}
 
+{% block pkg_name %}
+diffutils
+{% endblock %}
+
+{% block version %}
+0.4.2
+{% endblock %}
+
 {% block cargo_url %}
-https://github.com/uutils/diffutils/archive/refs/tags/v0.4.2.tar.gz
+https://github.com/uutils/diffutils/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 {% endblock %}
 
 {% block cargo_sha %}

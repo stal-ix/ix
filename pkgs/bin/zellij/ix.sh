@@ -1,7 +1,15 @@
 {% extends '//die/rust/cargo.sh' %}
 
+{% block pkg_name %}
+zellij
+{% endblock %}
+
+{% block version %}
+0.41.2
+{% endblock %}
+
 {% block cargo_url %}
-https://github.com/zellij-org/zellij/archive/refs/tags/v0.41.2.tar.gz
+https://github.com/zellij-org/zellij/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 {% endblock %}
 
 {% block cargo_sha %}

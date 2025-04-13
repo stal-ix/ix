@@ -1,7 +1,15 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block pkg_name %}
+libucontext
+{% endblock %}
+
+{% block version %}
+1.3.2
+{% endblock %}
+
 {% block fetch %}
-https://github.com/kaniini/libucontext/archive/refs/tags/libucontext-1.3.2.tar.gz
+https://github.com/kaniini/libucontext/archive/refs/tags/libucontext-{{self.version().strip()}}.tar.gz
 sha:4faf1838a15d61efe27ddac24fded2c290929eb3a1fefc72f952ae96d5bda006
 {% endblock %}
 

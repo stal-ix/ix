@@ -1,7 +1,15 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+yaml-cpp
+{% endblock %}
+
+{% block version %}
+0.7.0
+{% endblock %}
+
 {% block fetch %}
-https://github.com/jbeder/yaml-cpp/archive/refs/tags/yaml-cpp-0.7.0.tar.gz
+https://github.com/jbeder/yaml-cpp/archive/refs/tags/yaml-cpp-{{self.version().strip()}}.tar.gz
 sha:43e6a9fcb146ad871515f0d0873947e5d497a1c9c60c58cb102a97b47208b7c3
 {% endblock %}
 

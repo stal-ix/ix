@@ -1,7 +1,15 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block pkg_name %}
+libdazzle
+{% endblock %}
+
+{% block version %}
+3.44.0
+{% endblock %}
+
 {% block fetch %}
-https://gitlab.gnome.org/GNOME/libdazzle/-/archive/3.44.0/libdazzle-3.44.0.tar.bz2
+https://gitlab.gnome.org/GNOME/libdazzle/-/archive/{{self.version().strip()}}/libdazzle-{{self.version().strip()}}.tar.bz2
 sha:845b068013fce8975b83571172b3718c3e61fd1c53b01e74abc66c52a62ed53a
 {% endblock %}
 

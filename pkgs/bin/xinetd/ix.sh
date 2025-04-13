@@ -1,7 +1,15 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block pkg_name %}
+xinetd
+{% endblock %}
+
+{% block version %}
+2.3.15.4
+{% endblock %}
+
 {% block fetch %}
-https://github.com/openSUSE/xinetd/archive/refs/tags/2.3.15.4.tar.gz
+https://github.com/openSUSE/xinetd/archive/refs/tags/{{self.version().strip()}}.tar.gz
 sha:cbb6d078a8e4d0297cbfc146d5acd0b598de7d30dd0f76301a52ca923b42129a
 {% endblock %}
 

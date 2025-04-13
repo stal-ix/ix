@@ -1,7 +1,15 @@
 {% extends '//die/c/make.sh' %}
 
+{% block pkg_name %}
+netbsd-curses
+{% endblock %}
+
+{% block version %}
+0.3.2
+{% endblock %}
+
 {% block fetch %}
-https://github.com/sabotage-linux/netbsd-curses/archive/refs/tags/v0.3.2.tar.gz
+https://github.com/sabotage-linux/netbsd-curses/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 sha:9d3ebd651e5f70b87b1327b01cbd7e0c01a0f036b4c1371f653b7704b11daf23
 {% endblock %}
 

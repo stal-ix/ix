@@ -1,7 +1,15 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+neovim
+{% endblock %}
+
+{% block version %}
+0.11.0
+{% endblock %}
+
 {% block fetch %}
-https://github.com/neovim/neovim/archive/refs/tags/v0.11.0.tar.gz
+https://github.com/neovim/neovim/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 sha:6826c4812e96995d29a98586d44fbee7c9b2045485d50d174becd6d5242b3319
 {% endblock %}
 

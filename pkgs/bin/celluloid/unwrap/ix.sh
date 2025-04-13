@@ -1,7 +1,15 @@
 {% extends '//die/c/gnome.sh' %}
 
+{% block pkg_name %}
+celluloid
+{% endblock %}
+
+{% block version %}
+0.27
+{% endblock %}
+
 {% block fetch %}
-https://github.com/celluloid-player/celluloid/archive/refs/tags/v0.27.tar.gz
+https://github.com/celluloid-player/celluloid/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 sha:6c216a3dead5baf931bd52876cab7e08abcb9aef2132ca3a9ea35bf9dffe7644
 {% endblock %}
 

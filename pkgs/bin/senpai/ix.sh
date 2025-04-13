@@ -1,7 +1,11 @@
 {% extends '//die/go/build.sh' %}
 
+{% block version %}
+0.3.0
+{% endblock %}
+
 {% block go_url %}
-https://git.sr.ht/~delthas/senpai/archive/v0.3.0.tar.gz
+https://git.sr.ht/~delthas/senpai/archive/v{{self.version().strip()}}.tar.gz
 {% endblock %}
 
 {% block go_sha %}

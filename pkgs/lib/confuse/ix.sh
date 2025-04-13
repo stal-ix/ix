@@ -1,7 +1,15 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block pkg_name %}
+libconfuse
+{% endblock %}
+
+{% block version %}
+3.3
+{% endblock %}
+
 {% block fetch %}
-https://github.com/libconfuse/libconfuse/archive/refs/tags/v3.3.tar.gz
+https://github.com/libconfuse/libconfuse/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 sha:cb90c06f2dbec971792af576d5b9a382fb3c4ca2b1deea55ea262b403f4e641e
 {% endblock %}
 

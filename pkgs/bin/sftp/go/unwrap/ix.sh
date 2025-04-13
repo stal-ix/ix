@@ -1,7 +1,15 @@
 {% extends '//die/go/build.sh' %}
 
+{% block pkg_name %}
+sftpgo
+{% endblock %}
+
+{% block version %}
+2.6.0
+{% endblock %}
+
 {% block go_url %}
-https://github.com/drakkan/sftpgo/archive/refs/tags/v2.6.0.tar.gz
+https://github.com/drakkan/sftpgo/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 {% endblock %}
 
 {% block go_sha %}

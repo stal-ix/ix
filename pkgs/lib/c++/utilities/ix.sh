@@ -1,7 +1,15 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+cpp-utilities
+{% endblock %}
+
+{% block version %}
+5.21.0
+{% endblock %}
+
 {% block fetch %}
-https://github.com/Martchus/cpp-utilities/archive/refs/tags/v5.21.0.tar.gz
+https://github.com/Martchus/cpp-utilities/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 sha:8c94bead63eaa17346438f1ed7df13d58006ae753a39fe21185d48303df1aa27
 {% endblock %}
 

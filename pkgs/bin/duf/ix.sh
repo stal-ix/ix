@@ -1,7 +1,15 @@
 {% extends '//die/go/build.sh' %}
 
+{% block pkg_name %}
+duf
+{% endblock %}
+
+{% block version %}
+0.8.1
+{% endblock %}
+
 {% block go_url %}
-https://github.com/muesli/duf/archive/refs/tags/v0.8.1.tar.gz
+https://github.com/muesli/duf/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 {% endblock %}
 
 {% block go_sha %}

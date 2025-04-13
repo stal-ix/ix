@@ -1,7 +1,15 @@
 {% extends '//die/go/build.sh' %}
 
+{% block pkg_name %}
+dnsproxy
+{% endblock %}
+
+{% block version %}
+0.75.1
+{% endblock %}
+
 {% block go_url %}
-https://github.com/AdguardTeam/dnsproxy/archive/refs/tags/v0.75.1.tar.gz
+https://github.com/AdguardTeam/dnsproxy/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 {% endblock %}
 
 {% block go_sha %}

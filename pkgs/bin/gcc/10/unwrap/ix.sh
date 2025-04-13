@@ -1,7 +1,15 @@
 {% extends '//die/c/autohell.sh' %}
 
+{% block pkg_name %}
+gcc
+{% endblock %}
+
+{% block version %}
+10.5.0
+{% endblock %}
+
 {% block fetch %}
-https://ftp.gnu.org/gnu/gcc/gcc-10.5.0/gcc-10.5.0.tar.xz
+https://ftp.gnu.org/gnu/gcc/gcc-{{self.version().strip()}}/gcc-{{self.version().strip()}}.tar.xz
 sha:25109543fdf46f397c347b5d8b7a2c7e5694a5a51cce4b9c6e1ea8a71ca307c1
 {% endblock %}
 

@@ -1,7 +1,11 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block version %}
+6.14
+{% endblock %}
+
 {% block fetch %}
-https://strace.io/files/6.14/strace-6.14.tar.xz
+https://strace.io/files/{{self.version().strip()}}/strace-{{self.version().strip()}}.tar.xz
 sha:244f3b5c20a32854ca9b7ca7a3ee091dd3d4bd20933a171ecee8db486c77d3c9
 {% endblock %}
 

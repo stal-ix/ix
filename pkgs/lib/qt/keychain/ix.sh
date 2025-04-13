@@ -1,7 +1,15 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+qtkeychain
+{% endblock %}
+
+{% block version %}
+0.14.3
+{% endblock %}
+
 {% block fetch %}
-https://github.com/frankosterfeld/qtkeychain/archive/refs/tags/0.14.3.tar.gz
+https://github.com/frankosterfeld/qtkeychain/archive/refs/tags/{{self.version().strip()}}.tar.gz
 sha:a22c708f351431d8736a0ac5c562414f2b7bb919a6292cbca1ff7ac0849cb0a7
 {% endblock %}
 

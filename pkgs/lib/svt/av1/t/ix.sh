@@ -1,7 +1,11 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block version %}
+3.0.2
+{% endblock %}
+
 {% block fetch %}
-https://gitlab.com/AOMediaCodec/SVT-AV1/-/archive/v3.0.2/SVT-AV1-v3.0.2.tar.bz2
+https://gitlab.com/AOMediaCodec/SVT-AV1/-/archive/v{{self.version().strip()}}/SVT-AV1-v{{self.version().strip()}}.tar.bz2
 sha:7548a380cd58a46998ab4f1a02901ef72c37a7c6317c930cde5df2e6349e437b
 {% endblock %}
 

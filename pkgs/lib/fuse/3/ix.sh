@@ -1,7 +1,15 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block pkg_name %}
+libfuse
+{% endblock %}
+
+{% block version %}
+3.17.1
+{% endblock %}
+
 {% block fetch %}
-https://github.com/libfuse/libfuse/archive/refs/tags/fuse-3.17.1.tar.gz
+https://github.com/libfuse/libfuse/archive/refs/tags/fuse-{{self.version().strip()}}.tar.gz
 sha:b81027fc8f444fb574de7f13edf0cf9810643d2935670c4fe19f140354241208
 {% endblock %}
 

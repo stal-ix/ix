@@ -1,7 +1,15 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+kimageformats
+{% endblock %}
+
+{% block version %}
+5.112.0
+{% endblock %}
+
 {% block fetch %}
-https://github.com/KDE/kimageformats/archive/refs/tags/v5.112.0.tar.gz
+https://github.com/KDE/kimageformats/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 sha:e2d0b190b09e84de6cb01bf2282b808790f87d188d6b48be476a89d469dc83a1
 {% endblock %}
 

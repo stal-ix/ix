@@ -1,7 +1,15 @@
 {% extends '//die/c/ix.sh' %}
 
+{% block pkg_name %}
+xmlbird
+{% endblock %}
+
+{% block version %}
+1.2.14
+{% endblock %}
+
 {% block fetch %}
-https://github.com/johanmattssonm/xmlbird/archive/refs/tags/v1.2.14.tar.gz
+https://github.com/johanmattssonm/xmlbird/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 sha:fb0ea7b60400de3f50af803a71b971ac064bdb56a2b3e4e4bcbeb5c317dcb2d6
 {% endblock %}
 

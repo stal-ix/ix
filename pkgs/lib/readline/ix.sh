@@ -1,7 +1,15 @@
 {% extends '//die/c/autohell.sh' %}
 
+{% block pkg_name %}
+readline
+{% endblock %}
+
+{% block version %}
+8.2
+{% endblock %}
+
 {% block fetch %}
-https://ftp.gnu.org/gnu/readline/readline-8.2.tar.gz
+https://ftp.gnu.org/gnu/readline/readline-{{self.version().strip()}}.tar.gz
 sha:3feb7171f16a84ee82ca18a36d7b9be109a52c04f492a053331d7d1095007c35
 https://ftp.gnu.org/gnu/readline/readline-8.2-patches/readline82-001
 sha:bbf97f1ec40a929edab5aa81998c1e2ef435436c597754916e6a5868f273aff7

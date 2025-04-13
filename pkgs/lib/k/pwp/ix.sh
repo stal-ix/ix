@@ -1,7 +1,11 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block version %}
+1.7.0
+{% endblock %}
+
 {% block fetch %}
-https://download.kde.org/stable/plasma-wayland-protocols/plasma-wayland-protocols-1.7.0.tar.xz
+https://download.kde.org/stable/plasma-wayland-protocols/plasma-wayland-protocols-{{self.version().strip()}}.tar.xz
 sha:084e2685caa61d94c6fe86dce006b22474d7bb4b34c4cb96bd763b97e305fad6
 {% endblock %}
 

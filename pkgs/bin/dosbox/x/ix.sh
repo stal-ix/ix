@@ -1,7 +1,15 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block pkg_name %}
+dosbox-x
+{% endblock %}
+
+{% block version %}
+2025.01.01
+{% endblock %}
+
 {% block fetch %}
-https://github.com/joncampbell123/dosbox-x/archive/refs/tags/dosbox-x-v2025.01.01.tar.gz
+https://github.com/joncampbell123/dosbox-x/archive/refs/tags/dosbox-x-v{{self.version().strip()}}.tar.gz
 sha:40290a073f6b8894d9c2b8c3d9c39a410f84fe89837c87148653ea03e89cf7b2
 {% endblock %}
 

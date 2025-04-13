@@ -1,7 +1,15 @@
 {% extends '//die/rust/cargo.sh' %}
 
+{% block pkg_name %}
+eza
+{% endblock %}
+
+{% block version %}
+0.21.0
+{% endblock %}
+
 {% block cargo_url %}
-https://github.com/eza-community/eza/archive/refs/tags/v0.21.0.tar.gz
+https://github.com/eza-community/eza/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 {% endblock %}
 
 {% block cargo_sha %}

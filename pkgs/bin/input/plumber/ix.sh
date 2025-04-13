@@ -1,7 +1,15 @@
 {% extends '//die/rust/cargo.sh' %}
 
+{% block pkg_name %}
+InputPlumber
+{% endblock %}
+
+{% block version %}
+0.46.0
+{% endblock %}
+
 {% block cargo_url %}
-https://github.com/ShadowBlip/InputPlumber/archive/refs/tags/v0.46.0.tar.gz
+https://github.com/ShadowBlip/InputPlumber/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 {% endblock %}
 
 {% block cargo_sha %}

@@ -1,7 +1,15 @@
 {% extends '//die/go/build.sh' %}
 
+{% block pkg_name %}
+chroma
+{% endblock %}
+
+{% block version %}
+2.13.0
+{% endblock %}
+
 {% block go_url %}
-https://github.com/alecthomas/chroma/archive/refs/tags/v2.13.0.tar.gz
+https://github.com/alecthomas/chroma/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 {% endblock %}
 
 {% block go_sha %}

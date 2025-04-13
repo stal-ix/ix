@@ -1,9 +1,17 @@
 {% extends '//die/rust/cargo.sh' %}
 
+{% block pkg_name %}
+xplr
+{% endblock %}
+
+{% block version %}
+0.21.5
+{% endblock %}
+
 {# hard luajit vendor #}
 
 {% block cargo_url %}
-https://github.com/sayanarijit/xplr/archive/refs/tags/v0.21.5.tar.gz
+https://github.com/sayanarijit/xplr/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 {% endblock %}
 
 {% block cargo_sha %}

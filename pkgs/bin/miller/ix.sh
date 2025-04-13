@@ -1,7 +1,15 @@
 {% extends '//die/go/build.sh' %}
 
+{% block pkg_name %}
+miller
+{% endblock %}
+
+{% block version %}
+6.11.0
+{% endblock %}
+
 {% block go_url %}
-https://github.com/johnkerl/miller/archive/refs/tags/v6.11.0.tar.gz
+https://github.com/johnkerl/miller/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 {% endblock %}
 
 {% block go_sha %}

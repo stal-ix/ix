@@ -1,7 +1,15 @@
 {% extends '//die/rust/cargo.sh' %}
 
+{% block pkg_name %}
+miniserve
+{% endblock %}
+
+{% block version %}
+0.29.0
+{% endblock %}
+
 {% block cargo_url %}
-https://github.com/svenstaro/miniserve/archive/refs/tags/v0.29.0.tar.gz
+https://github.com/svenstaro/miniserve/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 {% endblock %}
 
 {% block cargo_sha %}

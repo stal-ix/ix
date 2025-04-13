@@ -1,7 +1,15 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block pkg_name %}
+files
+{% endblock %}
+
+{% block version %}
+7.1.0
+{% endblock %}
+
 {% block fetch %}
-https://github.com/elementary/files/archive/refs/tags/7.1.0.tar.gz
+https://github.com/elementary/files/archive/refs/tags/{{self.version().strip()}}.tar.gz
 sha:d26ca8e95a61052ab3d5ac65abd355209458dba4b94b09108718ce1bbc58d701
 {% endblock %}
 

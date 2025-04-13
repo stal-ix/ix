@@ -1,7 +1,15 @@
 {% extends '//die/c/gnome.sh' %}
 
+{% block pkg_name %}
+sysprof
+{% endblock %}
+
+{% block version %}
+48.0
+{% endblock %}
+
 {% block fetch %}
-https://gitlab.gnome.org/GNOME/sysprof/-/archive/48.0/sysprof-48.0.tar.bz2
+https://gitlab.gnome.org/GNOME/sysprof/-/archive/{{self.version().strip()}}/sysprof-{{self.version().strip()}}.tar.bz2
 sha:bc6d5774cf6734a94484e6160ed476a86c38030cede6444b874c2767c011dddd
 {% endblock %}
 

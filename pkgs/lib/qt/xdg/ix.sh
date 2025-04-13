@@ -1,7 +1,15 @@
 {% extends '//die/c/lxqt.sh' %}
 
+{% block pkg_name %}
+libqtxdg
+{% endblock %}
+
+{% block version %}
+4.1.0
+{% endblock %}
+
 {% block fetch %}
-https://github.com/lxqt/libqtxdg/archive/refs/tags/4.1.0.tar.gz
+https://github.com/lxqt/libqtxdg/archive/refs/tags/{{self.version().strip()}}.tar.gz
 sha:23015b9a834ecec6b67a96fb06297d6c7496cbb58b4b70183e101c7a92db7ed3
 {% endblock %}
 

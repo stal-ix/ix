@@ -1,7 +1,15 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+libde265
+{% endblock %}
+
+{% block version %}
+1.0.15
+{% endblock %}
+
 {% block fetch %}
-https://github.com/strukturag/libde265/archive/refs/tags/v1.0.15.tar.gz
+https://github.com/strukturag/libde265/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 sha:d4e55706dfc5b2c5c9702940b675ce2d3e7511025c6894eaddcdbaf0b15fd3f3
 {% endblock %}
 

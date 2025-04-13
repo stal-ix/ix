@@ -1,7 +1,15 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block pkg_name %}
+ugrep
+{% endblock %}
+
+{% block version %}
+7.3.0
+{% endblock %}
+
 {% block fetch %}
-https://github.com/Genivia/ugrep/archive/refs/tags/v7.3.0.tar.gz
+https://github.com/Genivia/ugrep/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 sha:79c10e24422372718eb8e6869451f0ecaf21586a534d259809f9d1ca8e891e96
 {% endblock %}
 

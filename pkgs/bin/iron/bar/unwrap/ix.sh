@@ -1,7 +1,15 @@
 {% extends '//die/rust/cargo.sh' %}
 
+{% block pkg_name %}
+ironbar
+{% endblock %}
+
+{% block version %}
+0.15.1
+{% endblock %}
+
 {% block cargo_url %}
-https://github.com/JakeStanger/ironbar/archive/refs/tags/v0.15.1.tar.gz
+https://github.com/JakeStanger/ironbar/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 {% endblock %}
 
 {% block cargo_sha %}

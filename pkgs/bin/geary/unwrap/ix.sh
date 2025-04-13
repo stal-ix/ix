@@ -1,9 +1,17 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block pkg_name %}
+geary
+{% endblock %}
+
+{% block version %}
+46.0
+{% endblock %}
+
 {# WIP #}
 
 {% block fetch %}
-https://gitlab.gnome.org/GNOME/geary/-/archive/46.0/geary-46.0.tar.bz2
+https://gitlab.gnome.org/GNOME/geary/-/archive/{{self.version().strip()}}/geary-{{self.version().strip()}}.tar.bz2
 sha:0bac78c2dd2736518dd277edfabba6b40a4eacef6f6e27c9468c09be62e10311
 {% endblock %}
 

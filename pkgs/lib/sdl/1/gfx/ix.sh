@@ -1,7 +1,11 @@
 {% extends '//die/c/autohell.sh' %}
 
+{% block version %}
+2.0.25
+{% endblock %}
+
 {% block fetch %}
-https://downloads.sourceforge.net/project/sdlgfx/SDL_gfx-2.0.25.tar.gz
+https://downloads.sourceforge.net/project/sdlgfx/SDL_gfx-{{self.version().strip()}}.tar.gz
 sha:556eedc06b6cf29eb495b6d27f2dcc51bf909ad82389ba2fa7bdc4dec89059c0
 {% endblock %}
 

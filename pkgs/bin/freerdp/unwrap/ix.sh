@@ -1,7 +1,15 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+FreeRDP
+{% endblock %}
+
+{% block version %}
+3.14.1
+{% endblock %}
+
 {% block fetch %}
-https://github.com/FreeRDP/FreeRDP/archive/refs/tags/3.14.1.tar.gz
+https://github.com/FreeRDP/FreeRDP/archive/refs/tags/{{self.version().strip()}}.tar.gz
 sha:8f4de354f51b5b957032446608bcc337a96f4c69928ba0c3b607a01417d694d9
 {% endblock %}
 

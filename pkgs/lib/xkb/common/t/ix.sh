@@ -1,7 +1,15 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block pkg_name %}
+libxkbcommon
+{% endblock %}
+
+{% block version %}
+1.8.1
+{% endblock %}
+
 {% block fetch %}
-https://github.com/xkbcommon/libxkbcommon/archive/refs/tags/xkbcommon-1.8.1.tar.gz
+https://github.com/xkbcommon/libxkbcommon/archive/refs/tags/xkbcommon-{{self.version().strip()}}.tar.gz
 sha:c65c668810db305c4454ba26a10b6d84a96b5469719fe3c729e1c6542b8d0d87
 {% endblock %}
 

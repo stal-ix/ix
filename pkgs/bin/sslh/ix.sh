@@ -1,7 +1,15 @@
 {% extends '//die/c/autohell.sh' %}
 
+{% block pkg_name %}
+sslh
+{% endblock %}
+
+{% block version %}
+2.1.3
+{% endblock %}
+
 {% block fetch %}
-https://github.com/yrutschle/sslh/archive/refs/tags/v2.1.3.tar.gz
+https://github.com/yrutschle/sslh/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 sha:e5d55db40cd2e0dd886e226465d68e7a3503ca116b2e685d20423be0a7e3b8ab
 {% endblock %}
 

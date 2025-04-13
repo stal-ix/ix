@@ -1,7 +1,15 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block pkg_name %}
+granite
+{% endblock %}
+
+{% block version %}
+6.2.0
+{% endblock %}
+
 {% block fetch %}
-https://github.com/elementary/granite/archive/refs/tags/6.2.0.tar.gz
+https://github.com/elementary/granite/archive/refs/tags/{{self.version().strip()}}.tar.gz
 sha:067d31445da9808a802fca523630c3e4b84d2d7c78ae547ced017cb7f3b9c6b5
 {% endblock %}
 

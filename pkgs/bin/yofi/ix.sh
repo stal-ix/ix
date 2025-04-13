@@ -1,7 +1,15 @@
 {% extends '//die/rust/cargo.sh' %}
 
+{% block pkg_name %}
+yofi
+{% endblock %}
+
+{% block version %}
+0.2.2
+{% endblock %}
+
 {% block cargo_url %}
-https://github.com/l4l/yofi/archive/refs/tags/0.2.2.tar.gz
+https://github.com/l4l/yofi/archive/refs/tags/{{self.version().strip()}}.tar.gz
 {% endblock %}
 
 {% block cargo_sha %}

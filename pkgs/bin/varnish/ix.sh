@@ -1,9 +1,17 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block pkg_name %}
+varnish-cache
+{% endblock %}
+
+{% block version %}
+7.7.0
+{% endblock %}
+
 {# broken libtool #}
 
 {% block fetch %}
-https://github.com/varnishcache/varnish-cache/archive/refs/tags/varnish-7.7.0.tar.gz
+https://github.com/varnishcache/varnish-cache/archive/refs/tags/varnish-{{self.version().strip()}}.tar.gz
 sha:5c90b75e548585f940b6abee8a5805738698d70fb4e09780142953f9d72ac7a7
 {% endblock %}
 

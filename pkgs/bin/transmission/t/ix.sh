@@ -1,7 +1,15 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+transmission
+{% endblock %}
+
+{% block version %}
+4.0.5
+{% endblock %}
+
 {% block fetch %}
-https://github.com/transmission/transmission/archive/refs/tags/4.0.5.tar.gz
+https://github.com/transmission/transmission/archive/refs/tags/{{self.version().strip()}}.tar.gz
 sha:3493b715087b2d453e8ea5b6d3e44ac751c39d492c59feb2baf2674d57afd56a
 {% endblock %}
 

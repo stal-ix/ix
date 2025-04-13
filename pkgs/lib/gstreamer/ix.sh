@@ -1,7 +1,15 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block pkg_name %}
+gstreamer
+{% endblock %}
+
+{% block version %}
+1.24.12
+{% endblock %}
+
 {% block fetch %}
-https://gitlab.freedesktop.org/gstreamer/gstreamer/-/archive/1.24.12/gstreamer-1.24.12.tar.gz
+https://gitlab.freedesktop.org/gstreamer/gstreamer/-/archive/{{self.version().strip()}}/gstreamer-{{self.version().strip()}}.tar.gz
 sha:e9394dc14d981891bd92d72a1d03c5c0ca5d04febcbb83b01fb62c67b21bc449
 {% endblock %}
 

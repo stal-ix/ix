@@ -1,7 +1,15 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block pkg_name %}
+avizo
+{% endblock %}
+
+{% block version %}
+1.3
+{% endblock %}
+
 {% block fetch %}
-https://github.com/heyjuvi/avizo/archive/refs/tags/1.3.tar.gz
+https://github.com/heyjuvi/avizo/archive/refs/tags/{{self.version().strip()}}.tar.gz
 sha:2b1f5817a916e518b0c10c4c94a3678a5054b879eb32c10b5d1425faa6387127
 {% endblock %}
 

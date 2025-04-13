@@ -1,7 +1,15 @@
 {% extends '//die/go/build.sh' %}
 
+{% block pkg_name %}
+gost
+{% endblock %}
+
+{% block version %}
+2.12.0
+{% endblock %}
+
 {% block go_url %}
-https://github.com/ginuerzh/gost/archive/refs/tags/v2.12.0.tar.gz
+https://github.com/ginuerzh/gost/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 {% endblock %}
 
 {% block go_sha %}

@@ -1,7 +1,15 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+tomlplusplus
+{% endblock %}
+
+{% block version %}
+3.4.0
+{% endblock %}
+
 {% block fetch %}
-https://github.com/marzer/tomlplusplus/archive/refs/tags/v3.4.0.tar.gz
+https://github.com/marzer/tomlplusplus/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 sha:8517f65938a4faae9ccf8ebb36631a38c1cadfb5efa85d9a72e15b9e97d25155
 {% endblock %}
 

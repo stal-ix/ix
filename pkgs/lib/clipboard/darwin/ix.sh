@@ -1,7 +1,15 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+libclipboard
+{% endblock %}
+
+{% block version %}
+1.1
+{% endblock %}
+
 {% block fetch %}
-https://github.com/jtanx/libclipboard/archive/refs/tags/v1.1.tar.gz
+https://github.com/jtanx/libclipboard/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 md5:bddc22070b6804ed63994af49b778b70
 {% endblock %}
 

@@ -1,7 +1,15 @@
 {% extends '//die/c/qt.sh' %}
 
+{% block pkg_name %}
+qt5compat
+{% endblock %}
+
+{% block version %}
+6.7.2
+{% endblock %}
+
 {% block fetch %}
-https://github.com/qt/qt5compat/archive/refs/tags/v6.7.2.tar.gz
+https://github.com/qt/qt5compat/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 sha:331a1e617952217868beeef7964828500388abeeb502ea3436f16eec816426c4
 {% endblock %}
 

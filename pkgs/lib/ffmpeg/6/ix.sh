@@ -1,7 +1,11 @@
 {% extends '//lib/ffmpeg/4/ix.sh' %}
 
+{% block version %}
+6.1.2
+{% endblock %}
+
 {% block fetch %}
-https://ffmpeg.org/releases/ffmpeg-6.1.2.tar.xz
+https://ffmpeg.org/releases/ffmpeg-{{self.version().strip()}}.tar.xz
 sha:3b624649725ecdc565c903ca6643d41f33bd49239922e45c9b1442c63dca4e38
 {% endblock %}
 

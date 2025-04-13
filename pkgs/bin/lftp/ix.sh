@@ -1,7 +1,15 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block pkg_name %}
+lftp
+{% endblock %}
+
+{% block version %}
+4.9.3
+{% endblock %}
+
 {% block fetch %}
-https://github.com/lavv17/lftp/releases/download/v4.9.3/lftp-4.9.3.tar.gz
+https://github.com/lavv17/lftp/releases/download/v{{self.version().strip()}}/lftp-{{self.version().strip()}}.tar.gz
 sha:68116cc184ab660a78a4cef323491e89909e5643b59c7b5f0a14f7c2b20e0a29
 {% endblock %}
 

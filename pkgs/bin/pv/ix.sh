@@ -1,7 +1,11 @@
 {% extends '//die/c/autohell.sh' %}
 
+{% block version %}
+1.9.31
+{% endblock %}
+
 {% block fetch %}
-https://www.ivarch.com/programs/sources/pv-1.9.31.tar.gz
+https://www.ivarch.com/programs/sources/pv-{{self.version().strip()}}.tar.gz
 sha:a35e92ec4ac0e8f380e8e840088167ae01014bfa008a3a9d6506b848079daedf
 {% endblock %}
 

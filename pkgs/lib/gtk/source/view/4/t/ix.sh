@@ -1,7 +1,15 @@
 {% extends '//die/c/gnome.sh' %}
 
+{% block pkg_name %}
+gtksourceview
+{% endblock %}
+
+{% block version %}
+4.8.4
+{% endblock %}
+
 {% block fetch %}
-https://gitlab.gnome.org/GNOME/gtksourceview/-/archive/4.8.4/gtksourceview-4.8.4.tar.bz2
+https://gitlab.gnome.org/GNOME/gtksourceview/-/archive/{{self.version().strip()}}/gtksourceview-{{self.version().strip()}}.tar.bz2
 sha:890c3761343d986625a5297a648c3ac7e34703580dd2d927706f6c6bd0f231fc
 {% endblock %}
 

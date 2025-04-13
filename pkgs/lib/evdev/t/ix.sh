@@ -1,7 +1,11 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block version %}
+1.13.4
+{% endblock %}
+
 {% block fetch %}
-https://www.freedesktop.org/software/libevdev/libevdev-1.13.4.tar.xz
+https://www.freedesktop.org/software/libevdev/libevdev-{{self.version().strip()}}.tar.xz
 sha:f00ab8d42ad8b905296fab67e13b871f1a424839331516642100f82ad88127cd
 {% endblock %}
 

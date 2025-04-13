@@ -1,7 +1,15 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+dino
+{% endblock %}
+
+{% block version %}
+0.4.4
+{% endblock %}
+
 {% block fetch %}
-https://github.com/dino/dino/archive/refs/tags/v0.4.4.tar.gz
+https://github.com/dino/dino/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 sha:29f37dc3a54fb123f223964d01de76fcea038ca6d134aa35b75c62b07acb9d03
 {% endblock %}
 

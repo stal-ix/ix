@@ -1,7 +1,15 @@
 {% extends '//die/go/build.sh' %}
 
+{% block pkg_name %}
+yggdrasil-go
+{% endblock %}
+
+{% block version %}
+0.5.9
+{% endblock %}
+
 {% block go_url %}
-https://github.com/yggdrasil-network/yggdrasil-go/archive/refs/tags/v0.5.9.tar.gz
+https://github.com/yggdrasil-network/yggdrasil-go/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 {% endblock %}
 
 {% block go_sha %}

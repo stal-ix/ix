@@ -1,7 +1,15 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block pkg_name %}
+bind9
+{% endblock %}
+
+{% block version %}
+9.20.6
+{% endblock %}
+
 {% block fetch %}
-https://github.com/isc-projects/bind9/archive/refs/tags/v9.20.6.tar.gz
+https://github.com/isc-projects/bind9/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 sha:8f1e36a3cec8af29a19d8f7db9570a0fd3800ffe4fedaea901749e4a2cad650f
 {% endblock %}
 

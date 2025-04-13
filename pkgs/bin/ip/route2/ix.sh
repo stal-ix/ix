@@ -1,7 +1,15 @@
 {% extends '//die/c/make.sh' %}
 
+{% block pkg_name %}
+iproute2
+{% endblock %}
+
+{% block version %}
+6.14.0
+{% endblock %}
+
 {% block fetch %}
-https://github.com/iproute2/iproute2/archive/refs/tags/v6.14.0.tar.gz
+https://github.com/iproute2/iproute2/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 sha:96aa279cd044098daf715f691f4a3891f44221e9d3d844084dadfee01e42142f
 {% endblock %}
 

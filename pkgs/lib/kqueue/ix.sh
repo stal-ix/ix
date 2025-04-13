@@ -1,7 +1,15 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+libkqueue
+{% endblock %}
+
+{% block version %}
+2.6.1
+{% endblock %}
+
 {% block fetch %}
-https://github.com/mheily/libkqueue/archive/refs/tags/v2.6.1.tar.gz
+https://github.com/mheily/libkqueue/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 sha:666e26b8c2fb597fc686534bd8eb6c3733ce6d0750bf13f0323c95040ca6cb92
 {% endblock %}
 

@@ -1,7 +1,11 @@
 {% extends '//die/c/configure.sh' %}
 
+{% block version %}
+6.2.32
+{% endblock %}
+
 {% block fetch %}
-https://download.oracle.com/berkeley-db/db-6.2.32.tar.gz
+https://download.oracle.com/berkeley-db/db-{{self.version().strip()}}.tar.gz
 sha:a9c5e2b004a5777aa03510cfe5cd766a4a3b777713406b02809c17c8e0e7a8fb
 {% endblock %}
 
@@ -27,5 +31,3 @@ cd build_unix
 {% block build_flags %}
 shut_up
 {% endblock %}
-
-

@@ -1,7 +1,11 @@
 {% extends '//die/go/build.sh' %}
 
+{% block version %}
+10.0.3
+{% endblock %}
+
 {% block go_url %}
-https://codeberg.org/forgejo/forgejo/archive/v10.0.3.tar.gz
+https://codeberg.org/forgejo/forgejo/archive/v{{self.version().strip()}}.tar.gz
 {% endblock %}
 
 {% block go_sha %}

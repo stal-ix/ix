@@ -1,7 +1,15 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+protobuf
+{% endblock %}
+
+{% block version %}
+25.3
+{% endblock %}
+
 {% block fetch %}
-https://github.com/protocolbuffers/protobuf/archive/refs/tags/v25.3.tar.gz
+https://github.com/protocolbuffers/protobuf/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 sha:d19643d265b978383352b3143f04c0641eea75a75235c111cc01a1350173180e
 {#
 broke mingw64 protoc, protoc/c

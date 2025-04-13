@@ -22,5 +22,10 @@
     },
     "net": {% block use_network %}false{% endblock %},
     "predict_outputs": {% block predict_outputs %}[]{% endblock %},
-    "task_pool": "{% block task_pool %}slot{% endblock %}"
+    "task_pool": "{% block task_pool %}slot{% endblock %}",
+    "repo": {
+        "version": "{% block repo_version %}{% endblock %}",
+        "name": "{% block repo_name %}{% endblock %}",
+        "recipe": "{% block repo_recipe %}{% endblock %}"
+    }
 }

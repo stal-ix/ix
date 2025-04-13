@@ -1,7 +1,11 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block version %}
+1.1.7
+{% endblock %}
+
 {% block fetch %}
-https://bitmath.org/code/mtdev/mtdev-1.1.7.tar.bz2
+https://bitmath.org/code/mtdev/mtdev-{{self.version().strip()}}.tar.bz2
 sha:a107adad2101fecac54ac7f9f0e0a0dd155d954193da55c2340c97f2ff1d814e
 {% endblock %}
 

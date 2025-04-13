@@ -1,7 +1,15 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block pkg_name %}
+libidn
+{% endblock %}
+
+{% block version %}
+2.3.8
+{% endblock %}
+
 {% block fetch %}
-https://ftp.gnu.org/gnu/libidn/libidn2-2.3.8.tar.gz
+https://ftp.gnu.org/gnu/libidn/libidn2-{{self.version().strip()}}.tar.gz
 sha:f557911bf6171621e1f72ff35f5b1825bb35b52ed45325dcdee931e5d3c0787a
 {% endblock %}
 

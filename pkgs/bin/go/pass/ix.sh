@@ -1,7 +1,15 @@
 {% extends '//die/go/build.sh' %}
 
+{% block pkg_name %}
+gopass
+{% endblock %}
+
+{% block version %}
+1.14.3
+{% endblock %}
+
 {% block go_url %}
-https://github.com/gopasspw/gopass/archive/refs/tags/v1.14.3.tar.gz
+https://github.com/gopasspw/gopass/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 {% endblock %}
 
 {% block go_sha %}

@@ -1,7 +1,15 @@
 {% extends '//die/std/ix.sh' %}
 
+{% block pkg_name %}
+cli
+{% endblock %}
+
+{% block version %}
+9.8.0
+{% endblock %}
+
 {% block fetch %}
-https://github.com/npm/cli/archive/refs/tags/v9.8.0.tar.gz
+https://github.com/npm/cli/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 sha:7a6c27c9c0fe6f39069365c33a93e43f5ae2b09f80943ec9309240f809440128
 {% endblock %}
 

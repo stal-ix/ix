@@ -1,7 +1,15 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block pkg_name %}
+libxslt
+{% endblock %}
+
+{% block version %}
+1.1.43
+{% endblock %}
+
 {% block fetch %}
-https://gitlab.gnome.org/GNOME/libxslt/-/archive/v1.1.43/libxslt-v1.1.43.tar.bz2
+https://gitlab.gnome.org/GNOME/libxslt/-/archive/v{{self.version().strip()}}/libxslt-v{{self.version().strip()}}.tar.bz2
 sha:4e574ba219df34495f2ee63ae27bf904afa477c40d9a2969a330cf87f48053b6
 {% endblock %}
 

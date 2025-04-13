@@ -1,7 +1,11 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block version %}
+4.0.0
+{% endblock %}
+
 {% block fetch %}
-https://ftp.openbsd.org/pub/OpenBSD/LibreSSL/libressl-4.0.0.tar.gz
+https://ftp.openbsd.org/pub/OpenBSD/LibreSSL/libressl-{{self.version().strip()}}.tar.gz
 sha:4d841955f0acc3dfc71d0e3dd35f283af461222350e26843fea9731c0246a1e4
 {% endblock %}
 

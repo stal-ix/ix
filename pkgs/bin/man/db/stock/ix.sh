@@ -1,7 +1,11 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block version %}
+2.12.0
+{% endblock %}
+
 {% block fetch %}
-http://download.savannah.nongnu.org/releases/man-db/man-db-2.12.0.tar.xz
+http://download.savannah.nongnu.org/releases/man-db/man-db-{{self.version().strip()}}.tar.xz
 sha:415a6284a22764ad22ff0f66710d853be7790dd451cd71436e3d25c74d996a95
 {% endblock %}
 

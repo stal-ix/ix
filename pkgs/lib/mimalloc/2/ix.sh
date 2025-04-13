@@ -1,7 +1,15 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+mimalloc
+{% endblock %}
+
+{% block version %}
+2.1.8
+{% endblock %}
+
 {% block fetch %}
-https://github.com/microsoft/mimalloc/archive/refs/tags/v2.1.8.tar.gz
+https://github.com/microsoft/mimalloc/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 sha:4d7e771b51ba0d3c4a5850d3f7f7f82c1b04af318e1351553f46aa3336439540
 {% endblock %}
 

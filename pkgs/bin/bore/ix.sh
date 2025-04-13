@@ -1,7 +1,15 @@
 {% extends '//die/rust/cargo.sh' %}
 
+{% block pkg_name %}
+bore
+{% endblock %}
+
+{% block version %}
+0.5.0
+{% endblock %}
+
 {% block cargo_url %}
-https://github.com/ekzhang/bore/archive/refs/tags/v0.5.0.tar.gz
+https://github.com/ekzhang/bore/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 {% endblock %}
 
 {% block cargo_sha %}

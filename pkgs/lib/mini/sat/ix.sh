@@ -1,7 +1,15 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+minisat
+{% endblock %}
+
+{% block version %}
+2.2.1
+{% endblock %}
+
 {% block fetch %}
-https://github.com/msoos/minisat/archive/refs/tags/2.2.1.tar.gz
+https://github.com/msoos/minisat/archive/refs/tags/{{self.version().strip()}}.tar.gz
 sha:2cd8e9282d0f50f6bdac2cd001c95f66c1de9b2dec61391652c68729c347290f
 {% endblock %}
 

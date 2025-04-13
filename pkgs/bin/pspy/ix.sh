@@ -1,7 +1,15 @@
 {% extends '//die/go/build.sh' %}
 
+{% block pkg_name %}
+pspy
+{% endblock %}
+
+{% block version %}
+1.2.1
+{% endblock %}
+
 {% block go_url %}
-https://github.com/DominicBreuker/pspy/archive/refs/tags/v1.2.1.tar.gz
+https://github.com/DominicBreuker/pspy/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 {% endblock %}
 
 {% block go_sha %}

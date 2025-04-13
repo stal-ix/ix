@@ -1,7 +1,15 @@
 {% extends '//die/c/waf.sh' %}
 
+{% block pkg_name %}
+jack2
+{% endblock %}
+
+{% block version %}
+1.9.19
+{% endblock %}
+
 {% block fetch %}
-https://github.com/jackaudio/jack2/archive/v1.9.19.tar.gz
+https://github.com/jackaudio/jack2/archive/v{{self.version().strip()}}.tar.gz
 sha:9030f4dc11773351b6ac96affd9c89803a5587ebc1b091e5ff866f433327e4b0
 {% endblock %}
 

@@ -1,5 +1,9 @@
 {% extends '//die/c/make.sh' %}
 
+{% block pkg_name %}
+earlyoom
+{% endblock %}
+
 {% block version %}
 1.8.2
 {% endblock %}

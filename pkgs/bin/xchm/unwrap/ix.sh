@@ -1,7 +1,15 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block pkg_name %}
+xCHM
+{% endblock %}
+
+{% block version %}
+1.37
+{% endblock %}
+
 {% block fetch %}
-https://github.com/rzvncj/xCHM/archive/refs/tags/1.37.tar.gz
+https://github.com/rzvncj/xCHM/archive/refs/tags/{{self.version().strip()}}.tar.gz
 sha:16d10b52bd98706c639866eebc30b904a963d10dc76ea7dc65fb20342e9f70a7
 {% endblock %}
 

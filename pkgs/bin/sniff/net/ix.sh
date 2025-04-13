@@ -1,7 +1,15 @@
 {% extends '//die/rust/cargo.sh' %}
 
+{% block pkg_name %}
+sniffnet
+{% endblock %}
+
+{% block version %}
+1.3.2
+{% endblock %}
+
 {% block cargo_url %}
-https://github.com/GyulyVGC/sniffnet/archive/refs/tags/v1.3.2.tar.gz
+https://github.com/GyulyVGC/sniffnet/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 {% endblock %}
 
 {% block cargo_sha %}

@@ -1,7 +1,15 @@
 {% extends '//die/rust/cargo.sh' %}
 
+{% block pkg_name %}
+rust-bindgen
+{% endblock %}
+
+{% block version %}
+0.71.1
+{% endblock %}
+
 {% block cargo_url %}
-https://github.com/rust-lang/rust-bindgen/archive/refs/tags/v0.71.1.tar.gz
+https://github.com/rust-lang/rust-bindgen/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 {% endblock %}
 
 {% block cargo_sha %}

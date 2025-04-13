@@ -1,7 +1,15 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+hyprutils
+{% endblock %}
+
+{% block version %}
+0.6.0
+{% endblock %}
+
 {% block fetch %}
-https://github.com/hyprwm/hyprutils/archive/refs/tags/v0.6.0.tar.gz
+https://github.com/hyprwm/hyprutils/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 sha:1c113058881121fdb2575573ed9a59d78dbdf1ae2ae95c6dac647e608548263b
 {% endblock %}
 

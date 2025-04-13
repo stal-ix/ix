@@ -1,7 +1,15 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+jpegoptim
+{% endblock %}
+
+{% block version %}
+1.5.2
+{% endblock %}
+
 {% block fetch %}
-https://github.com/tjko/jpegoptim/archive/refs/tags/v1.5.2.tar.gz
+https://github.com/tjko/jpegoptim/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 sha:e8701cc85c065e05747a15da72ebb403056ebecaa98e2806cf69cdd443397910
 {% endblock %}
 

@@ -1,7 +1,15 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block pkg_name %}
+libgee
+{% endblock %}
+
+{% block version %}
+0.20.8
+{% endblock %}
+
 {% block fetch %}
-https://gitlab.gnome.org/GNOME/libgee/-/archive/0.20.8/libgee-0.20.8.tar.bz2
+https://gitlab.gnome.org/GNOME/libgee/-/archive/{{self.version().strip()}}/libgee-{{self.version().strip()}}.tar.bz2
 sha:fe3d412f206ba2603dc9f26cf14b9049d9311e745bff27bd93863c961c65f2f3
 {% endblock %}
 

@@ -1,7 +1,15 @@
 {% extends '//die/go/build.sh' %}
 
+{% block pkg_name %}
+go-git
+{% endblock %}
+
+{% block version %}
+5.4.2
+{% endblock %}
+
 {% block go_url %}
-https://github.com/go-git/go-git/archive/refs/tags/v5.4.2.tar.gz
+https://github.com/go-git/go-git/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 {% endblock %}
 
 {% block go_sha %}

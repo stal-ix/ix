@@ -1,7 +1,15 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+yajl
+{% endblock %}
+
+{% block version %}
+2.1.0
+{% endblock %}
+
 {% block fetch %}
-https://github.com/lloyd/yajl/archive/refs/tags/2.1.0.tar.gz
+https://github.com/lloyd/yajl/archive/refs/tags/{{self.version().strip()}}.tar.gz
 md5:6887e0ed7479d2549761a4d284d3ecb0
 {% endblock %}
 

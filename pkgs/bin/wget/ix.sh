@@ -1,7 +1,15 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block pkg_name %}
+wget
+{% endblock %}
+
+{% block version %}
+1.25.0
+{% endblock %}
+
 {% block fetch %}
-https://ftp.gnu.org/gnu/wget/wget-1.25.0.tar.lz
+https://ftp.gnu.org/gnu/wget/wget-{{self.version().strip()}}.tar.lz
 sha:19225cc756b0a088fc81148dc6a40a0c8f329af7fd8483f1c7b2fe50f4e08a1f
 {% endblock %}
 
