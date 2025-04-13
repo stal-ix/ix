@@ -139,8 +139,36 @@ def remsuf(s, suf):
     return s
 
 
-def mine_urls(data):
+def mine_urls_1(data):
     return [x['url'] for x in data['bld']['fetch']]
+
+
+def parse_url(l):
+    l = l[l.index('http'):]
+
+    for v in ',"':
+        if v in l:
+            l = l[:l.index(v)]
+
+    return l
+
+
+def mine_urls_2(data):
+    for l in json.dumps(data, indent=4, sort_keys=True).split('\n'):
+        if 'http://' in l or 'https://' in l:
+            if 'proxy.golang.org' in l:
+                pass
+            else:
+                url = parse_url(l)
+
+                if ' ' in url:
+                    pass
+                else:
+                    yield url
+
+
+def mine_urls(data):
+    return list(sorted(frozenset(list(mine_urls_1(data)) + list(mine_urls_2(data)))))
 
 
 class Package:
