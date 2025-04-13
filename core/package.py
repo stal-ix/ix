@@ -157,8 +157,10 @@ class Package:
 
                 if pkg_ver and pkg_name:
                     print(json.dumps({
-                        'pkg_ver': pkg_ver,
+                        'ix_pkg_name': self.norm_name.removesuffix('/unwrap'),
+                        'ix_pkg_full_name': self.norm_name,
                         'pkg_name': pkg_name,
+                        'pkg_ver': pkg_ver,
                         'recipe': 'https://github.com/stal-ix/ix/blob/main/pkgs/' + self.name,
                         'maintainers': [
                             'anton@samokhvalov.xyz',
