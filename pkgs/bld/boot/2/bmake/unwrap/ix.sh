@@ -1,7 +1,7 @@
 {% extends '//die/c/ix.sh' %}
 
 {% block pkg_name %}
-sources
+bmake
 {% endblock %}
 
 {% block version %}

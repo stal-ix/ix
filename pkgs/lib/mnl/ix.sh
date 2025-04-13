@@ -1,7 +1,7 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block pkg_name %}
-sources
+libmnl
 {% endblock %}
 
 {% block version %}
