@@ -25,7 +25,6 @@
     "task_pool": "{% block task_pool %}slot{% endblock %}",
     "repo": {
         "version": "{% block repo_version %}{% endblock %}",
-        "name": "{% block repo_name %}{% endblock %}",
-        "recipe": "{% block repo_recipe %}{% endblock %}"
+        "name": "{% block repo_name %}{% endblock %}"
     }
 }

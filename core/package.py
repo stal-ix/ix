@@ -1,3 +1,4 @@
+import json
 import itertools
 
 import core.sign as cs
@@ -146,6 +147,17 @@ class Package:
         self.descr = cr.RenderContext(self).render()
 
         if self.buildable():
+            if self.config.repo:
+                pkg_ver = self.descr['repo']['version'].strip()
+                pkg_name = self.descr['repo']['name'].strip()
+
+                if pkg_ver and pkg_name:
+                    print(json.dumps({
+                        'pkg_ver': pkg_ver,
+                        'pkg_name': pkg_name,
+                        'recipe': 'https://github.com/stal-ix/ix/blob/main/pkgs/' + self.name,
+                    }))
+
             self.uid = cs.UID
             self.uid = list(self.iter_build_commands())[-1]['uid']
         else:
