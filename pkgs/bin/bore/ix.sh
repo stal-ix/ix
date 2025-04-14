@@ -5,7 +5,7 @@ bore
 {% endblock %}
 
 {% block version %}
-0.5.0
+0.5.2
 {% endblock %}
 
 {% block cargo_url %}
@@ -13,7 +13,7 @@ https://github.com/ekzhang/bore/archive/refs/tags/v{{self.version().strip()}}.ta
 {% endblock %}
 
 {% block cargo_sha %}
-5afaad495162d5f82b095ca225ec845abb383248764c82976d74584119d96f99
+da1368e0ea741c850de71f41af856761216cde8885400f8aa55e6ed24cc19df9
 {% endblock %}
 
 {% block install %}
