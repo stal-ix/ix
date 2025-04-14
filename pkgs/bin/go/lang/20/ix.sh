@@ -1,7 +1,11 @@
 {% extends '//bin/go/lang/19/t/ix.sh' %}
 
+{% block version %}
+1.20.14
+{% endblock %}
+
 {% block fetch %}
-https://github.com/golang/go/archive/refs/tags/go1.20.14.tar.gz
+https://github.com/golang/go/archive/refs/tags/go{{self.version().strip()}}.tar.gz
 sha:d300b7572b3763216bfaeeb8d4405052548c18c70f6a9e1d64f552515141a63a
 {% endblock %}
 
