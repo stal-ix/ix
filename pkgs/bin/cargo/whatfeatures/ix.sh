@@ -5,7 +5,7 @@ cargo-whatfeatures
 {% endblock %}
 
 {% block version %}
-0.9.9
+0.9.13
 {% endblock %}
 
 {% block cargo_url %}
@@ -13,7 +13,7 @@ https://github.com/museun/cargo-whatfeatures/archive/refs/tags/v{{self.version()
 {% endblock %}
 
 {% block cargo_sha %}
-307a2fcb6b36dab511ffbb18403f16c382e0529aec7188e07158b2e007fb7de5
+3bfff6b9e33bb5fe1fbffb97a8785fc9e9cc77f250f2168646a56ad1775c0ec1
 {% endblock %}
 
 {% block bld_libs %}
