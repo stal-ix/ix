@@ -1,7 +1,11 @@
 {% extends '//die/c/autohell.sh' %}
 
+{% block version %}
+23.9.9
+{% endblock %}
+
 {% block fetch %}
-https://common-lisp.net/project/ecl/static/files/release/ecl-23.9.9.tgz
+https://common-lisp.net/project/ecl/static/files/release/ecl-{{self.version().strip()}}.tgz
 sha:c51bdab4ca6c1173dd3fe9cfe9727bcefb97bb0a3d6434b627ca6bdaeb33f880
 {% endblock %}
 
