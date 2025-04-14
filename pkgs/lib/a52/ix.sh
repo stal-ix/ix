@@ -5,12 +5,12 @@ a52dec
 {% endblock %}
 
 {% block version %}
-0.7.4
+0.8.0
 {% endblock %}
 
 {% block fetch %}
-https://liba52.sourceforge.io/files/a52dec-{{self.version().strip()}}.tar.gz
-sha:a21d724ab3b3933330194353687df82c475b5dfb997513eef4c25de6c865ec33
+https://git.adelielinux.org/community/a52dec/-/archive/v{{self.version().strip()}}/a52dec-v{{self.version().strip()}}.tar.bz2
+sha:d4f26685d32a8c85f86a5cb800554160fb85400298a0a27151c3d1e63a170943
 {% endblock %}
 
 {% block lib_deps %}

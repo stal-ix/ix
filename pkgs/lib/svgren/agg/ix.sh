@@ -5,12 +5,12 @@ agg
 {% endblock %}
 
 {% block version %}
-2.8.22
+2.8.33
 {% endblock %}
 
 {% block fetch %}
 https://github.com/cppfw/agg/archive/refs/tags/{{self.version().strip()}}.tar.gz
-sha:532363aa9040a4b197ece95eea92fc0c1ce20ff385823735bc0c17ef60e1b01c
+sha:949f5d116143fd009e85f4667e0c9466784966acaf1f878f1c45f2b61c5e7607
 {% endblock %}
 
 {% block lib_deps %}
