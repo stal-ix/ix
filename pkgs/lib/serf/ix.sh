@@ -5,12 +5,12 @@ serf
 {% endblock %}
 
 {% block version %}
-1.3.9
+1.3.10
 {% endblock %}
 
 {% block fetch %}
 https://github.com/apache/serf/archive/refs/tags/{{self.version().strip()}}.tar.gz
-sha:ebeb4904692e68469de7fdedf99f1fc102d3fc922c9bb811231c7ff7395b9c9c
+sha:d4369d3be425617e36be92f47136002a3b4e4320065445ba4db74e58c93813c4
 {% endblock %}
 
 {% block lib_deps %}
@@ -29,16 +29,7 @@ bld/fake/binutils
 
 {% block build_flags %}
 shut_up
-{% endblock %}
-
-{% block patch %}
-(base64 -d | patch -p1) << EOF
-{% include '0.diff/base64' %}
-EOF
-
-(base64 -d | patch -p1) << EOF
-{% include '1.diff/base64' %}
-EOF
+wrap_cc
 {% endblock %}
 
 {% block build %}
