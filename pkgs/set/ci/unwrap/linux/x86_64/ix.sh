@@ -48,6 +48,7 @@
 #}
 
 {% block run_deps %}
+bin/coreutils/9/7
 bin/unshield
 bin/kernel/6/14
 bin/ip/tables
