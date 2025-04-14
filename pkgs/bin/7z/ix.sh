@@ -1,7 +1,15 @@
 {% extends '//die/c/make.sh' %}
 
+{% block version %}
+2409
+{% endblock %}
+
+{% block pkg_name %}
+7z
+{% endblock %}
+
 {% block fetch %}
-https://www.7-zip.org/a/7z2409-src.tar.xz
+https://www.7-zip.org/a/7z{{self.version().strip()}}-src.tar.xz
 sha:49c05169f49572c1128453579af1632a952409ced028259381dac30726b6133a
 {% endblock %}
 
