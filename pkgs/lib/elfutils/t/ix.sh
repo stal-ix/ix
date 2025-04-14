@@ -1,5 +1,9 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block pkg_name %}
+elfutils
+{% endblock %}
+
 {% block version %}
 0.192
 {% endblock %}

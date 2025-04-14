@@ -1,5 +1,9 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block pkg_name %}
+psmisc
+{% endblock %}
+
 {% block version %}
 23.7
 {% endblock %}

@@ -1,5 +1,9 @@
 {% extends '//die/c/configure.sh' %}
 
+{% block pkg_name %}
+node-v
+{% endblock %}
+
 {% block version %}
 23.9.0
 {% endblock %}

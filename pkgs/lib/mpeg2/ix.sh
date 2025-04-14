@@ -1,5 +1,9 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block pkg_name %}
+libmpeg2
+{% endblock %}
+
 {% block version %}
 0.5.1
 {% endblock %}

@@ -1,5 +1,9 @@
 {% extends '//die/c/make.sh' %}
 
+{% block pkg_name %}
+libstemmer_c
+{% endblock %}
+
 {% block version %}
 2.2.0
 {% endblock %}

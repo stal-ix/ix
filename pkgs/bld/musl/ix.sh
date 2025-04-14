@@ -1,5 +1,9 @@
 {% extends '//die/c/make.sh' %}
 
+{% block pkg_name %}
+musl
+{% endblock %}
+
 {% block version %}
 1.2.4
 {% endblock %}

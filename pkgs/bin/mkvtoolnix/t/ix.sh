@@ -1,5 +1,9 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block pkg_name %}
+mkvtoolnix
+{% endblock %}
+
 {% block version %}
 91.0
 {% endblock %}

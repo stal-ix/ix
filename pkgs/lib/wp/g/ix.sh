@@ -1,5 +1,9 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block pkg_name %}
+libwpg
+{% endblock %}
+
 {% block version %}
 0.3.3
 {% endblock %}

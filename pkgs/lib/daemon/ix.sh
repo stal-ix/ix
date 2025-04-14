@@ -1,5 +1,9 @@
 {% extends '//die/c/autohell.sh' %}
 
+{% block pkg_name %}
+libdaemon
+{% endblock %}
+
 {% block version %}
 0.14
 {% endblock %}

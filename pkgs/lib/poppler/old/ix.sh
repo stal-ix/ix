@@ -1,5 +1,9 @@
 {% extends '//lib/poppler/ix.sh' %}
 
+{% block pkg_name %}
+poppler
+{% endblock %}
+
 {% block version %}
 24.02.0
 {% endblock %}

@@ -1,5 +1,9 @@
 {% extends '//die/std/ix.sh' %}
 
+{% block pkg_name %}
+uClibc
+{% endblock %}
+
 {% block version %}
 0.9.33
 {% endblock %}

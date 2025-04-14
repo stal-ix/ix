@@ -1,5 +1,9 @@
 {% extends '//die/c/autohell.sh' %}
 
+{% block pkg_name %}
+autoconf-archive
+{% endblock %}
+
 {% block version %}
 2023.02.20
 {% endblock %}

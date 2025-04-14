@@ -1,5 +1,9 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+poppler
+{% endblock %}
+
 {% block version %}
 25.02.0
 {% endblock %}

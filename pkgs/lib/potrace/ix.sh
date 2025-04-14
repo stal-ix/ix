@@ -1,5 +1,9 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block pkg_name %}
+potrace
+{% endblock %}
+
 {% block version %}
 1.16
 {% endblock %}

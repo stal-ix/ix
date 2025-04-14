@@ -1,5 +1,9 @@
 {% extends '//die/c/make.sh' %}
 
+{% block pkg_name %}
+gptfdisk
+{% endblock %}
+
 {% block version %}
 1.0.10
 {% endblock %}

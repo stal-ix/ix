@@ -1,5 +1,9 @@
 {% extends '//die/rust/cargo.sh' %}
 
+{% block pkg_name %}
+sydbox
+{% endblock %}
+
 {% block version %}
 3.32.7
 {% endblock %}

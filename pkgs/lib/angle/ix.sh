@@ -1,5 +1,9 @@
 {% extends '//die/c/gn.sh' %}
 
+{% block pkg_name %}
+chromium
+{% endblock %}
+
 {% block version %}
 115.0.5790.90
 {% endblock %}

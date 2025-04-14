@@ -1,5 +1,9 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block pkg_name %}
+dbus-glib
+{% endblock %}
+
 {% block version %}
 0.114
 {% endblock %}

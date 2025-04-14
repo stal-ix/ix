@@ -1,5 +1,9 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+webp
+{% endblock %}
+
 {% block version %}
 1.5.0
 {% endblock %}

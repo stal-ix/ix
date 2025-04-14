@@ -1,5 +1,9 @@
 {% extends '//die/c/autohell.sh' %}
 
+{% block pkg_name %}
+xorgproto
+{% endblock %}
+
 {% block version %}
 2023.2
 {% endblock %}

@@ -1,5 +1,9 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block pkg_name %}
+libdbusmenu
+{% endblock %}
+
 {% block version %}
 16.04.0
 {% endblock %}

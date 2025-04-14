@@ -1,5 +1,9 @@
 {% extends '//lib/cap/t/ix.sh' %}
 
+{% block pkg_name %}
+libcap
+{% endblock %}
+
 {% block version %}
 2.74
 {% endblock %}

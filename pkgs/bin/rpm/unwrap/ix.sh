@@ -1,5 +1,9 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+rpm
+{% endblock %}
+
 {% block version %}
 4.19.0
 {% endblock %}

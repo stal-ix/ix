@@ -1,5 +1,9 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block pkg_name %}
+nfs-utils
+{% endblock %}
+
 {% block version %}
 2.8.3
 {% endblock %}

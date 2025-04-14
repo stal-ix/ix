@@ -1,5 +1,9 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+olm
+{% endblock %}
+
 {% block version %}
 3.2.15
 {% endblock %}

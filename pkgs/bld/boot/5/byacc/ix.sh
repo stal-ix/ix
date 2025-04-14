@@ -1,7 +1,15 @@
 {% extends '//bin/byacc/yacc/ix.sh' %}
 
+{% block pkg_name %}
+byacc
+{% endblock %}
+
+{% block version %}
+20211224
+{% endblock %}
+
 {% block fetch %}
-https://invisible-mirror.net/archives/byacc/byacc-20211224.tgz
+https://invisible-mirror.net/archives/byacc/byacc-{{self.version().strip()}}.tgz
 sha:7bc42867a095df2189618b64497016298818e88e513fca792cb5adc9a68ebfb8
 {% endblock %}
 

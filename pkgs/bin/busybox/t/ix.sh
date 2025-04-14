@@ -1,5 +1,9 @@
 {% extends '//die/c/kconfig2.sh' %}
 
+{% block pkg_name %}
+busybox
+{% endblock %}
+
 {% block version %}
 1.37.0
 {% endblock %}

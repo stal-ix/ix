@@ -1,5 +1,9 @@
 {% extends '//die/c/make.sh' %}
 
+{% block pkg_name %}
+cgit
+{% endblock %}
+
 {% block version %}
 1.2.3
 {% endblock %}

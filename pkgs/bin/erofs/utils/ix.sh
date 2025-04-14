@@ -1,5 +1,9 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block pkg_name %}
+erofs-utils
+{% endblock %}
+
 {% block version %}
 1.8.4
 {% endblock %}

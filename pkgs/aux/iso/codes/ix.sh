@@ -1,5 +1,9 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block pkg_name %}
+iso-codes
+{% endblock %}
+
 {% block version %}
 4.18.0
 {% endblock %}

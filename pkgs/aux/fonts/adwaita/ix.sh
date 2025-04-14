@@ -1,5 +1,9 @@
 {% extends '//die/fonts.sh' %}
 
+{% block pkg_name %}
+adwaita-fonts
+{% endblock %}
+
 {% block version %}
 48.2
 {% endblock %}

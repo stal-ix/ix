@@ -1,5 +1,9 @@
 {% extends '//die/c/autohell.sh' %}
 
+{% block pkg_name %}
+vlc
+{% endblock %}
+
 {% block version %}
 3.0.17.3
 {% endblock %}

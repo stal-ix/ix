@@ -1,5 +1,9 @@
 {% extends '//die/c/autohell.sh' %}
 
+{% block pkg_name %}
+libksba
+{% endblock %}
+
 {% block version %}
 1.6.6
 {% endblock %}

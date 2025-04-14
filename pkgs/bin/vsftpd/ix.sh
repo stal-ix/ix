@@ -1,5 +1,9 @@
 {% extends '//die/c/make.sh' %}
 
+{% block pkg_name %}
+sftpd
+{% endblock %}
+
 {% block version %}
 3.0.5
 {% endblock %}

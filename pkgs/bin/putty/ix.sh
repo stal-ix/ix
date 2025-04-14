@@ -1,5 +1,9 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block pkg_name %}
+putty
+{% endblock %}
+
 {% block version %}
 0.76
 {% endblock %}

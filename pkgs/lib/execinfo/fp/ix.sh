@@ -1,5 +1,9 @@
 {% extends '//die/c/ix.sh' %}
 
+{% block pkg_name %}
+libexecinfo
+{% endblock %}
+
 {% block version %}
 1.1
 {% endblock %}

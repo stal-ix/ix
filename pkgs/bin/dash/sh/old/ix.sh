@@ -1,5 +1,9 @@
 {% extends '//bin/dash/sh/ix.sh' %}
 
+{% block pkg_name %}
+dash
+{% endblock %}
+
 {% block version %}
 0.5.11.3
 {% endblock %}

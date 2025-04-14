@@ -1,5 +1,9 @@
 {% extends '//lib/firmware/ix.sh' %}
 
+{% block pkg_name %}
+linux-firmware
+{% endblock %}
+
 {% block version %}
 20240312
 {% endblock %}

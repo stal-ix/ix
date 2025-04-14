@@ -1,5 +1,9 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block pkg_name %}
+usbutils
+{% endblock %}
+
 {% block version %}
 018
 {% endblock %}

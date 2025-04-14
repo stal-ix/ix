@@ -1,5 +1,9 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block pkg_name %}
+at-spi2-core
+{% endblock %}
+
 {% block version %}
 2.56.1
 {% endblock %}

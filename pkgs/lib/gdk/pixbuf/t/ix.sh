@@ -1,5 +1,9 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block pkg_name %}
+gdk-pixbuf
+{% endblock %}
+
 {% block version %}
 2.42.6
 {% endblock %}

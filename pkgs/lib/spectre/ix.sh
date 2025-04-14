@@ -1,5 +1,9 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block pkg_name %}
+libspectre
+{% endblock %}
+
 {% block version %}
 0.2.12
 {% endblock %}

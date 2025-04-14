@@ -1,5 +1,9 @@
 {% extends '//die/c/configure.sh' %}
 
+{% block pkg_name %}
+berkeley-db
+{% endblock %}
+
 {% block version %}
 6.2.32
 {% endblock %}

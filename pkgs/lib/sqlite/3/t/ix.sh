@@ -1,5 +1,9 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block pkg_name %}
+sqlite
+{% endblock %}
+
 {% block version %}
 3470200
 {% endblock %}

@@ -1,5 +1,9 @@
 {% extends '//bin/zathura/t/ix.sh' %}
 
+{% block pkg_name %}
+zathura-djvu
+{% endblock %}
+
 {% block version %}
 0.2.10
 {% endblock %}

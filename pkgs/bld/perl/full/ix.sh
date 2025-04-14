@@ -1,12 +1,8 @@
 {% extends '//bin/perl/ix.sh' %}
 
-{% block version %}
-2.46
-{% endblock %}
-
 {% block fetch %}
 {{super()}}
-https://cpan.metacpan.org/authors/id/T/TO/TODDR/XML-Parser-{{self.version().strip()}}.tar.gz
+https://cpan.metacpan.org/authors/id/T/TO/TODDR/XML-Parser-2.46.tar.gz
 md5:80bb18a8e6240fcf7ec2f7b57601c170
 {% endblock %}
 

@@ -1,7 +1,7 @@
 {% extends '//die/std/ix.sh' %}
 
 {% block pkg_name %}
-cli
+npm
 {% endblock %}
 
 {% block version %}

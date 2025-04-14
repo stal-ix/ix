@@ -2,7 +2,11 @@
 
 set -ue
 
-cd $(dirname ${IX_BINARY})/pkgs/die/scripts/
+cd $(dirname ${IX_BINARY})
+
+ix_repo_export
+
+cd pkgs/die/scripts/
 
 export LANG=C
 export LC_ALL=C

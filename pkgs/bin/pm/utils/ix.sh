@@ -1,5 +1,9 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block pkg_name %}
+pm-utils
+{% endblock %}
+
 {% block version %}
 1.4.1
 {% endblock %}

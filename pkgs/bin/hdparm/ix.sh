@@ -1,5 +1,9 @@
 {% extends '//die/c/make.sh' %}
 
+{% block pkg_name %}
+hdparm
+{% endblock %}
+
 {% block version %}
 9.64
 {% endblock %}

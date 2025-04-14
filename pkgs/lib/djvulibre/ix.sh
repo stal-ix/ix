@@ -1,5 +1,9 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block pkg_name %}
+djvu
+{% endblock %}
+
 {% block version %}
 3.5.28
 {% endblock %}

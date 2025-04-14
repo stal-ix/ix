@@ -1,5 +1,9 @@
 {% extends '//die/c/autohell.sh' %}
 
+{% block pkg_name %}
+libopenraw
+{% endblock %}
+
 {% block version %}
 0.3.5
 {% endblock %}

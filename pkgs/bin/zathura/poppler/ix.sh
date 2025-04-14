@@ -1,5 +1,9 @@
 {% extends '//bin/zathura/t/ix.sh' %}
 
+{% block pkg_name %}
+zathura-pdf-poppler
+{% endblock %}
+
 {% block version %}
 0.3.3
 {% endblock %}

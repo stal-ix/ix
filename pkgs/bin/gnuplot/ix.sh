@@ -1,5 +1,9 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block pkg_name %}
+gnuplot
+{% endblock %}
+
 {% block version %}
 6.0.1
 {% endblock %}

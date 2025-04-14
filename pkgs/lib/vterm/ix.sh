@@ -1,5 +1,9 @@
 {% extends '//die/c/make.sh' %}
 
+{% block pkg_name %}
+libvterm
+{% endblock %}
+
 {% block version %}
 0.3.3
 {% endblock %}

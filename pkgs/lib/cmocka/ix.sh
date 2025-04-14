@@ -1,5 +1,9 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+cmocka
+{% endblock %}
+
 {% block version %}
 1.1.7
 {% endblock %}

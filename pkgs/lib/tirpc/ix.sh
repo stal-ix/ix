@@ -1,5 +1,9 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block pkg_name %}
+libtirpc
+{% endblock %}
+
 {% block version %}
 1.3.6
 {% endblock %}

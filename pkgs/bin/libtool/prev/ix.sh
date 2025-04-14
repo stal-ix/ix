@@ -1,5 +1,9 @@
 {% extends '//bin/libtool/ix.sh' %}
 
+{% block pkg_name %}
+libtool
+{% endblock %}
+
 {% block version %}
 2.4.6
 {% endblock %}

@@ -1,5 +1,9 @@
 {% extends '//die/c/make.sh' %}
 
+{% block pkg_name %}
+hikari
+{% endblock %}
+
 {% block version %}
 2.3.3
 {% endblock %}

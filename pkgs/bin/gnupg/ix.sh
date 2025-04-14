@@ -1,5 +1,9 @@
 {% extends 't/ix.sh' %}
 
+{% block pkg_name %}
+gnupg
+{% endblock %}
+
 {% block version %}
 2.5.4
 {% endblock %}

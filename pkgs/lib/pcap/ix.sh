@@ -1,5 +1,9 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block pkg_name %}
+libpcap
+{% endblock %}
+
 {% block version %}
 1.10.4
 {% endblock %}

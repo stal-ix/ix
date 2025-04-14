@@ -1,5 +1,9 @@
 {% extends '//die/c/make.sh' %}
 
+{% block pkg_name %}
+libpfm
+{% endblock %}
+
 {% block version %}
 4.13.0
 {% endblock %}

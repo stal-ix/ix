@@ -1,5 +1,9 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block pkg_name %}
+libnice
+{% endblock %}
+
 {% block version %}
 0.1.22
 {% endblock %}

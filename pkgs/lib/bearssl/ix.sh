@@ -1,5 +1,9 @@
 {% extends '//die/c/make.sh' %}
 
+{% block pkg_name %}
+bearssl
+{% endblock %}
+
 {% block version %}
 0.6
 {% endblock %}

@@ -1,5 +1,9 @@
 {% extends '//die/c/make.sh' %}
 
+{% block pkg_name %}
+unifdef
+{% endblock %}
+
 {% block version %}
 2.12
 {% endblock %}

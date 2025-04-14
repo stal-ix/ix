@@ -3,10 +3,12 @@ import sys
 
 def get_url(data):
     for l in data.split('\n'):
-        if l.startswith('http://'):
-            return l
+        if 'http' in l and '://' in l:
+            l = l[l.index('http'):]
 
-        if l.startswith('https://'):
+            for v in ',"':
+                l = l.removesuffix(v)
+
             return l
 
 def get_url_2(data):
@@ -39,7 +41,7 @@ def add_ver(data):
     if 'block version' in data:
         return data
 
-    if 'block go_url' not in data:
+    if 'block git_sha' in data:
         return data
 
     url = get_url(data)
@@ -59,14 +61,14 @@ def add_ver(data):
         bn = bn[bn.index('-') + 1:]
 
     for i in range(0, 3):
-        for p in ['tar', 'gz', 'xz', 'bz2', 'zip', 'lz']:
+        for p in ['tar', 'gz', 'xz', 'bz2', 'zip', 'lz', 'tgz']:
             bn = bn.removesuffix('.' + p)
 
     bn = bn.removeprefix('v')
     bn = bn.removeprefix('V')
 
     if not check_ver(bn):
-        print(f'unsupported ver {bn}')
+        print(f'unsupported ver {url} -> {bn}')
 
         return data
 
@@ -84,6 +86,16 @@ def add_ver(data):
 
     return '\n'.join(prepend(data, prep)).strip() + '\n'
 
+def parse_1(url):
+    parts = url.split('/')
+
+    for p in parts[2:-1]:
+        if '{{' in p:
+            continue
+
+        if p in parts[-1]:
+            yield p
+
 def parse_name(url):
     if 'github.com' in url:
         return url.split('/')[4]
@@ -96,6 +108,24 @@ def parse_name(url):
 
     if 'ftp.gnu.org' in url:
         return url.split('/')[4]
+
+    if 0:
+        v = list(parse_1(url))
+
+        if v:
+            return list(sorted(v, key=lambda x: len(x)))[-1]
+
+    if 1:
+        bn = os.path.basename(url)
+
+        if '{{' in bn:
+            bn = bn[:bn.index('{{')]
+            bn = bn.removesuffix('_')
+            bn = bn.removesuffix('-')
+            bn = bn.removeprefix('v')
+            bn = bn.removeprefix('V')
+
+            return bn
 
 def add_name(data):
     if 'block version' not in data:

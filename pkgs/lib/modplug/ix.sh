@@ -1,5 +1,9 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block pkg_name %}
+libmodplug
+{% endblock %}
+
 {% block version %}
 0.8.9.0
 {% endblock %}

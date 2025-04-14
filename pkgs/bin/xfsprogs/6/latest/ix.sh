@@ -1,5 +1,9 @@
 {% extends '//bin/xfsprogs/t/ix.sh' %}
 
+{% block pkg_name %}
+xfsprogs
+{% endblock %}
+
 {% block version %}
 6.13.0
 {% endblock %}

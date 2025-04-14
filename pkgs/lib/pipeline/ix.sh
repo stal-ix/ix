@@ -1,5 +1,9 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block pkg_name %}
+libpipeline
+{% endblock %}
+
 {% block version %}
 1.5.8
 {% endblock %}

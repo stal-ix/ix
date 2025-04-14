@@ -1,5 +1,9 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+libtiff
+{% endblock %}
+
 {% block version %}
 4.7.0
 {% endblock %}

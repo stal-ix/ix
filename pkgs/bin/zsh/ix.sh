@@ -1,5 +1,9 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block pkg_name %}
+zsh
+{% endblock %}
+
 {% block version %}
 5.9
 {% endblock %}

@@ -1,5 +1,9 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block pkg_name %}
+smartmontools
+{% endblock %}
+
 {% block version %}
 7.4
 {% endblock %}

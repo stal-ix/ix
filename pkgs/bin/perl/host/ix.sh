@@ -1,5 +1,9 @@
 {% extends '//die/c/make.sh' %}
 
+{% block pkg_name %}
+perl
+{% endblock %}
+
 {% block version %}
 5.36.0
 {% endblock %}

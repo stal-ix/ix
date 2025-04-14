@@ -1,5 +1,9 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block pkg_name %}
+libmikmod
+{% endblock %}
+
 {% block version %}
 3.3.11.1
 {% endblock %}

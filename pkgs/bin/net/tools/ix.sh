@@ -1,5 +1,9 @@
 {% extends '//die/c/make.sh' %}
 
+{% block pkg_name %}
+net-tools
+{% endblock %}
+
 {% block version %}
 2.10
 {% endblock %}

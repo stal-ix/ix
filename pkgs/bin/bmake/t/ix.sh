@@ -1,5 +1,9 @@
 {% extends '//die/c/autohell.sh' %}
 
+{% block pkg_name %}
+bmake
+{% endblock %}
+
 {% block version %}
 20250404
 {% endblock %}
