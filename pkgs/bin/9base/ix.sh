@@ -1,7 +1,15 @@
 {% extends '//die/c/make.sh' %}
 
+{% block version %}
+6
+{% endblock %}
+
+{% block pkg_name %}
+9base
+{% endblock %}
+
 {% block fetch %}
-https://dl.suckless.org/tools/9base-6.tar.gz
+https://dl.suckless.org/tools/9base-{{self.version().strip()}}.tar.gz
 sha:2997480eb5b4cf3092c0896483cd2de625158bf51c501aea2dc5cf74176d6de9
 {% endblock %}
 
