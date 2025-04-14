@@ -1,5 +1,9 @@
 {% extends '//lib/ffmpeg/4/ix.sh' %}
 
+{% block pkg_name %}
+ffmpeg
+{% endblock %}
+
 {% block version %}
 7.1.1
 {% endblock %}

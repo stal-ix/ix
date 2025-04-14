@@ -1,5 +1,9 @@
 {% extends '//die/std/ix.sh' %}
 
+{% block pkg_name %}
+SCons
+{% endblock %}
+
 {% block version %}
 4.5.2
 {% endblock %}

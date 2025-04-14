@@ -1,5 +1,9 @@
 {% extends '//lib/web/kit/t/ix.sh' %}
 
+{% block pkg_name %}
+webkitgtk
+{% endblock %}
+
 {% block version %}
 2.48.1
 {% endblock %}

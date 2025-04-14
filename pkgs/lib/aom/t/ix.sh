@@ -1,5 +1,9 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+libaom
+{% endblock %}
+
 {% block version %}
 3.12.0
 {% endblock %}

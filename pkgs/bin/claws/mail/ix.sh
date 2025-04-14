@@ -1,5 +1,9 @@
 {% extends '//die/c/autohell.sh' %}
 
+{% block pkg_name %}
+claws-mail
+{% endblock %}
+
 {% block version %}
 4.1.0
 {% endblock %}

@@ -1,5 +1,9 @@
 {% extends '//die/c/autohell.sh' %}
 
+{% block pkg_name %}
+SDL_gfx
+{% endblock %}
+
 {% block version %}
 2.0.25
 {% endblock %}

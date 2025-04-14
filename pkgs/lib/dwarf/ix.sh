@@ -1,5 +1,9 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block pkg_name %}
+libdwarf
+{% endblock %}
+
 {% block version %}
 0.12.0
 {% endblock %}

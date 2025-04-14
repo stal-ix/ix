@@ -1,5 +1,9 @@
 {% extends '//bin/perl/host/ix.sh' %}
 
+{% block pkg_name %}
+perl
+{% endblock %}
+
 {% block version %}
 5.38.2
 {% endblock %}

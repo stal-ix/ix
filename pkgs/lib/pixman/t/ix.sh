@@ -1,5 +1,9 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block pkg_name %}
+pixman
+{% endblock %}
+
 {% block version %}
 0.44.2
 {% endblock %}

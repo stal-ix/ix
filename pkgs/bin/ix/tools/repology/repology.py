@@ -109,10 +109,23 @@ def parse_name(url):
     if 'ftp.gnu.org' in url:
         return url.split('/')[4]
 
-    v = list(parse_1(url))
+    if 0:
+        v = list(parse_1(url))
 
-    if v:
-        return list(sorted(v, key=lambda x: len(x)))[-1]
+        if v:
+            return list(sorted(v, key=lambda x: len(x)))[-1]
+
+    if 1:
+        bn = os.path.basename(url)
+
+        if '{{' in bn:
+            bn = bn[:bn.index('{{')]
+            bn = bn.removesuffix('_')
+            bn = bn.removesuffix('-')
+            bn = bn.removeprefix('v')
+            bn = bn.removeprefix('V')
+
+            return bn
 
 def add_name(data):
     if 'block version' not in data:

@@ -1,5 +1,9 @@
 {% extends '//bin/postgresql/t/ix.sh' %}
 
+{% block pkg_name %}
+postgresql
+{% endblock %}
+
 {% block version %}
 17.3
 {% endblock %}

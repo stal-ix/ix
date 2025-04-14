@@ -1,5 +1,9 @@
 {% extends '//lib/lua/puc/5/t/ix.sh' %}
 
+{% block pkg_name %}
+lua
+{% endblock %}
+
 {% block version %}
 5.1.5
 {% endblock %}

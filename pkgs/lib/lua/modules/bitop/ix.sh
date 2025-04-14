@@ -1,5 +1,9 @@
 {% extends '//lib/lua/modules/t.sh' %}
 
+{% block pkg_name %}
+LuaBitOp
+{% endblock %}
+
 {% block version %}
 1.0.2
 {% endblock %}

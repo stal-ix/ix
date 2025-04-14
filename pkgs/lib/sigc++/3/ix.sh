@@ -1,5 +1,9 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block pkg_name %}
+libsigc++
+{% endblock %}
+
 {% block version %}
 3.4.0
 {% endblock %}

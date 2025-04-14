@@ -1,5 +1,9 @@
 {% extends '//lib/linux/headers/t/ix.sh' %}
 
+{% block pkg_name %}
+linux-headers
+{% endblock %}
+
 {% block version %}
 6.14
 {% endblock %}

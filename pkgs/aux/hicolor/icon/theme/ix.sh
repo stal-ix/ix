@@ -1,5 +1,9 @@
 {% extends '//die/c/autohell.sh' %}
 
+{% block pkg_name %}
+hicolor-icon-theme
+{% endblock %}
+
 {% block version %}
 0.17
 {% endblock %}
