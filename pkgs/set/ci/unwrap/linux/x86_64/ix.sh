@@ -48,6 +48,7 @@
 #}
 
 {% block run_deps %}
+bin/cmake/4
 bin/auto/make/1/17
 bin/coreutils/9/7
 bin/unshield
