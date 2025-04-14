@@ -1,5 +1,9 @@
 {% extends '//die/c/autohell.sh' %}
 
+{% block pkg_name %}
+w3m
+{% endblock %}
+
 {% block version %}
 0.5.3
 {% endblock %}

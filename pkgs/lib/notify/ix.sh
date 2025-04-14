@@ -1,5 +1,9 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block pkg_name %}
+libnotify
+{% endblock %}
+
 {% block version %}
 0.8.6
 {% endblock %}

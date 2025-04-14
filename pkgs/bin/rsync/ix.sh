@@ -1,5 +1,9 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block pkg_name %}
+rsync
+{% endblock %}
+
 {% block version %}
 3.4.1
 {% endblock %}

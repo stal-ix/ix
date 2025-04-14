@@ -1,5 +1,9 @@
 {% extends '//die/c/autohell.sh' %}
 
+{% block pkg_name %}
+libassuan
+{% endblock %}
+
 {% block version %}
 3.0.2
 {% endblock %}

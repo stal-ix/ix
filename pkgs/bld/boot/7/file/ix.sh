@@ -1,5 +1,9 @@
 {% extends '//bin/file/host/ix.sh' %}
 
+{% block pkg_name %}
+file
+{% endblock %}
+
 {% block version %}
 5.45
 {% endblock %}

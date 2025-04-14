@@ -1,5 +1,9 @@
 {% extends '//die/c/autohell.sh' %}
 
+{% block pkg_name %}
+mingw-w64
+{% endblock %}
+
 {% block version %}
 11.0.1
 {% endblock %}

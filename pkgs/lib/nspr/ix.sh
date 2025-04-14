@@ -1,5 +1,9 @@
 {% extends '//die/c/autohell.sh' %}
 
+{% block pkg_name %}
+nspr
+{% endblock %}
+
 {% block version %}
 4.36
 {% endblock %}

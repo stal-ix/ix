@@ -1,5 +1,9 @@
 {% extends '//die/c/autohell.sh' %}
 
+{% block pkg_name %}
+slibtool
+{% endblock %}
+
 {% block version %}
 0.6.0
 {% endblock %}

@@ -1,5 +1,9 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block pkg_name %}
+xmlto
+{% endblock %}
+
 {% block version %}
 0.0.28
 {% endblock %}

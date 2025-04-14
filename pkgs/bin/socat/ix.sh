@@ -1,5 +1,9 @@
 {% extends '//die/c/autohell.sh' %}
 
+{% block pkg_name %}
+socat
+{% endblock %}
+
 {% block version %}
 1.8.0.3
 {% endblock %}

@@ -1,5 +1,9 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block pkg_name %}
+ethtool
+{% endblock %}
+
 {% block version %}
 6.14
 {% endblock %}

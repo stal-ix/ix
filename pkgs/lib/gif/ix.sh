@@ -1,5 +1,9 @@
 {% extends '//die/c/make.sh' %}
 
+{% block pkg_name %}
+giflib
+{% endblock %}
+
 {% block version %}
 5.2.2
 {% endblock %}

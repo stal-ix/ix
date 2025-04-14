@@ -1,5 +1,9 @@
 {% extends '//die/c/autohell.sh' %}
 
+{% block pkg_name %}
+mawk
+{% endblock %}
+
 {% block version %}
 1.3.4-20230203
 {% endblock %}

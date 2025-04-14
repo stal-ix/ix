@@ -1,5 +1,9 @@
 {% extends '//die/c/ix.sh' %}
 
+{% block pkg_name %}
+minised
+{% endblock %}
+
 {% block version %}
 1.16
 {% endblock %}

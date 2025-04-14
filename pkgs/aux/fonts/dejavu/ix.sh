@@ -1,5 +1,9 @@
 {% extends '//die/fonts.sh' %}
 
+{% block pkg_name %}
+dejavu
+{% endblock %}
+
 {% block version %}
 2.37
 {% endblock %}

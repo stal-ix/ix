@@ -1,5 +1,9 @@
 {% extends '//die/c/autohell.sh' %}
 
+{% block pkg_name %}
+dialog
+{% endblock %}
+
 {% block version %}
 1.3-20240101
 {% endblock %}

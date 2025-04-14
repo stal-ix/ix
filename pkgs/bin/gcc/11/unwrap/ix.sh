@@ -1,5 +1,9 @@
 {% extends '//bin/gcc/10/unwrap/ix.sh' %}
 
+{% block pkg_name %}
+gcc
+{% endblock %}
+
 {% block version %}
 11.5.0
 {% endblock %}

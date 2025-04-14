@@ -1,5 +1,9 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block pkg_name %}
+btrfs-progs
+{% endblock %}
+
 {% block version %}
 6.14
 {% endblock %}

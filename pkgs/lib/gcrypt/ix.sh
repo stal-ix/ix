@@ -1,5 +1,9 @@
 {% extends '//die/c/autohell.sh' %}
 
+{% block pkg_name %}
+libgcrypt
+{% endblock %}
+
 {% block version %}
 1.11.0
 {% endblock %}

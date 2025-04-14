@@ -1,5 +1,9 @@
 {% extends '//bin/glib/codegen/ix.sh' %}
 
+{% block pkg_name %}
+glib
+{% endblock %}
+
 {% block version %}
 2.74.5
 {% endblock %}

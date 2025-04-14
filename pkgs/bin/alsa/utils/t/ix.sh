@@ -1,5 +1,9 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block pkg_name %}
+alsa-utils
+{% endblock %}
+
 {% block version %}
 1.2.13
 {% endblock %}

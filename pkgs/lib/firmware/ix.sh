@@ -1,5 +1,9 @@
 {% extends '//die/std/ix.sh' %}
 
+{% block pkg_name %}
+linux-firmware
+{% endblock %}
+
 {% block version %}
 20220209
 {% endblock %}

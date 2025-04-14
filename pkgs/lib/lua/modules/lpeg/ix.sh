@@ -1,5 +1,9 @@
 {% extends '//lib/lua/modules/t.sh' %}
 
+{% block pkg_name %}
+lpeg
+{% endblock %}
+
 {% block version %}
 1.1.0
 {% endblock %}

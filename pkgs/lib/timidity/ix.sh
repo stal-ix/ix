@@ -1,5 +1,9 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block pkg_name %}
+libtimidity
+{% endblock %}
+
 {% block version %}
 0.2.7
 {% endblock %}

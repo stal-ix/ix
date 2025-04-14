@@ -1,5 +1,9 @@
 {% extends '//die/c/wafbase.sh' %}
 
+{% block pkg_name %}
+samba
+{% endblock %}
+
 {% block version %}
 4.20.4
 {% endblock %}

@@ -1,5 +1,9 @@
 {% extends '//die/c/autohell.sh' %}
 
+{% block pkg_name %}
+libX11-locale
+{% endblock %}
+
 {% block version %}
 1.8.6
 {% endblock %}

@@ -1,5 +1,9 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block pkg_name %}
+usb
+{% endblock %}
+
 {% block version %}
 3.1
 {% endblock %}

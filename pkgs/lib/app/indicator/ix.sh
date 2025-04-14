@@ -1,5 +1,9 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block pkg_name %}
+libappindicator
+{% endblock %}
+
 {% block version %}
 12.10.0
 {% endblock %}

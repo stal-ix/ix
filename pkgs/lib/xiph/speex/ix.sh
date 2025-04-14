@@ -1,5 +1,9 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block pkg_name %}
+speex
+{% endblock %}
+
 {% block version %}
 1.2.1
 {% endblock %}

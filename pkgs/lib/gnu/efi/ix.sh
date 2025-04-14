@@ -1,5 +1,9 @@
 {% extends '//die/c/make.sh' %}
 
+{% block pkg_name %}
+gnu-efi
+{% endblock %}
+
 {% block version %}
 3.0.15
 {% endblock %}

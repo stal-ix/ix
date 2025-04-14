@@ -1,5 +1,9 @@
 {% extends '//die/c/configure.sh' %}
 
+{% block pkg_name %}
+scummvm
+{% endblock %}
+
 {% block version %}
 2.9.0
 {% endblock %}

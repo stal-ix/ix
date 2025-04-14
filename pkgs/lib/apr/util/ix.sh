@@ -1,5 +1,9 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block pkg_name %}
+apr-util
+{% endblock %}
+
 {% block version %}
 1.6.2
 {% endblock %}

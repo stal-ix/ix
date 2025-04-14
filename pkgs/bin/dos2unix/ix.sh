@@ -1,5 +1,9 @@
 {% extends '//die/c/make.sh' %}
 
+{% block pkg_name %}
+dos2unix
+{% endblock %}
+
 {% block version %}
 7.5.2
 {% endblock %}

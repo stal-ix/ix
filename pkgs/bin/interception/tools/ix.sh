@@ -1,5 +1,9 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+interception-tools
+{% endblock %}
+
 {% block version %}
 0.6.8
 {% endblock %}

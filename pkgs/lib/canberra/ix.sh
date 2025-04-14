@@ -1,5 +1,9 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block pkg_name %}
+libcanberra
+{% endblock %}
+
 {% block version %}
 0.30
 {% endblock %}

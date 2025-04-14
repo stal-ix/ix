@@ -1,5 +1,9 @@
 {% extends '//bin/byacc/yacc/ix.sh' %}
 
+{% block pkg_name %}
+byacc
+{% endblock %}
+
 {% block version %}
 20211224
 {% endblock %}

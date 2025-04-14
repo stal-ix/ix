@@ -1,5 +1,9 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+SVT-AV1
+{% endblock %}
+
 {% block version %}
 3.0.2
 {% endblock %}

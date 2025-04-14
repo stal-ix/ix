@@ -1,5 +1,9 @@
 {% extends '//lib/z/adler/t/ix.sh' %}
 
+{% block pkg_name %}
+libz
+{% endblock %}
+
 {% block version %}
 1.2.8.2015.12.26
 {% endblock %}

@@ -1,5 +1,9 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+qjackctl
+{% endblock %}
+
 {% block version %}
 1.0.4
 {% endblock %}

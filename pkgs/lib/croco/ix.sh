@@ -1,5 +1,9 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block pkg_name %}
+libcroco
+{% endblock %}
+
 {% block version %}
 0.6.12
 {% endblock %}

@@ -1,5 +1,9 @@
 {% extends '//die/c/make.sh' %}
 
+{% block pkg_name %}
+bzip2
+{% endblock %}
+
 {% block version %}
 1.0.8
 {% endblock %}

@@ -1,5 +1,9 @@
 {% extends '//die/c/autohell.sh' %}
 
+{% block pkg_name %}
+xorg-util-macros
+{% endblock %}
+
 {% block version %}
 1.19.3
 {% endblock %}

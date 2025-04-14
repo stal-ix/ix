@@ -86,6 +86,16 @@ def add_ver(data):
 
     return '\n'.join(prepend(data, prep)).strip() + '\n'
 
+def parse_1(url):
+    parts = url.split('/')
+
+    for p in parts[2:-1]:
+        if '{{' in p:
+            continue
+
+        if p in parts[-1]:
+            yield p
+
 def parse_name(url):
     if 'github.com' in url:
         return url.split('/')[4]
@@ -98,6 +108,11 @@ def parse_name(url):
 
     if 'ftp.gnu.org' in url:
         return url.split('/')[4]
+
+    v = list(parse_1(url))
+
+    if v:
+        return list(sorted(v, key=lambda x: len(x)))[-1]
 
 def add_name(data):
     if 'block version' not in data:
@@ -133,8 +148,8 @@ def patch(path):
         orig = f.read()
 
     data = orig
-    data = add_ver(data)
-    #data = add_name(data)
+    #data = add_ver(data)
+    data = add_name(data)
 
     if data != orig:
         print(f'fix {path}')

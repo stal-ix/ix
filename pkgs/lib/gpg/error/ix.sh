@@ -1,5 +1,9 @@
 {% extends '//die/c/autohell.sh' %}
 
+{% block pkg_name %}
+libgpg-error
+{% endblock %}
+
 {% block version %}
 1.51
 {% endblock %}

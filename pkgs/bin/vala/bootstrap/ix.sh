@@ -1,5 +1,9 @@
 {% extends '//die/c/autohell.sh' %}
 
+{% block pkg_name %}
+vala
+{% endblock %}
+
 {% block version %}
 0.48.25
 {% endblock %}

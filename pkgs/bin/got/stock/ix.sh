@@ -1,5 +1,9 @@
 {% extends '//die/c/autohell.sh' %}
 
+{% block pkg_name %}
+got-portable
+{% endblock %}
+
 {% block version %}
 0.93
 {% endblock %}

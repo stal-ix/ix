@@ -1,5 +1,9 @@
 {% extends '//die/c/ix.sh' %}
 
+{% block pkg_name %}
+linux-headers
+{% endblock %}
+
 {% block std_box %}
 bld/make
 {{super()}}

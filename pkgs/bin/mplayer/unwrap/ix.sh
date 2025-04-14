@@ -1,5 +1,9 @@
 {% extends '//die/c/configure.sh' %}
 
+{% block pkg_name %}
+MPlayer
+{% endblock %}
+
 {% block version %}
 1.5
 {% endblock %}

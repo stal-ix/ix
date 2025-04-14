@@ -1,5 +1,9 @@
 {% extends '//die/c/make.sh' %}
 
+{% block pkg_name %}
+unrar
+{% endblock %}
+
 {% block version %}
 7.1.6
 {% endblock %}

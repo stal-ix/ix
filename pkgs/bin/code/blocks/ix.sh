@@ -1,5 +1,9 @@
 {% extends '//die/c/autohell.sh' %}
 
+{% block pkg_name %}
+codeblocks
+{% endblock %}
+
 {% block version %}
 20.03
 {% endblock %}

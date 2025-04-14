@@ -1,5 +1,9 @@
 {% extends '//bin/mawk/t/ix.sh' %}
 
+{% block pkg_name %}
+mawk
+{% endblock %}
+
 {% block version %}
 20200120
 {% endblock %}
