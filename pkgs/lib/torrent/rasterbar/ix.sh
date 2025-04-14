@@ -1,7 +1,7 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block pkg_name %}
-libtorrent
+libtorrent-rasterbar
 {% endblock %}
 
 {% block version %}
