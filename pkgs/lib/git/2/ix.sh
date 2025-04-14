@@ -1,8 +1,16 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+libgit2
+{% endblock %}
+
+{% block version %}
+1.9.0
+{% endblock %}
+
 {% block fetch %}
-https://github.com/libgit2/libgit2/archive/c6111ec06cc0b0126cd67bdab78f8091e4cfaa10.tar.gz
-sha:fddbd9a4ad953dbfe9c42ef906cc0a4bc73fbd1f2cb3511fff05ddde4a7d90df
+https://github.com/libgit2/libgit2/archive/refs/tags/v{{self.version().strip()}}.tar.gz
+sha:75b27d4d6df44bd34e2f70663cfd998f5ec41e680e1e593238bbe517a84c7ed2
 {% endblock %}
 
 {% block lib_deps %}
