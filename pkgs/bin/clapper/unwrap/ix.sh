@@ -5,12 +5,12 @@ clapper
 {% endblock %}
 
 {% block version %}
-0.6.1
+0.8.0
 {% endblock %}
 
 {% block fetch %}
 https://github.com/Rafostar/clapper/archive/refs/tags/{{self.version().strip()}}.tar.gz
-sha:d244ec6108ebff5ccc817a5888f3f73f52cac129fe480d480cb3f6b9db19cfbe
+sha:f0d6faea1285ff4b3a1c3c758181cd1b501cd066f87afd0d6fde5fc7e83eba60
 {% endblock %}
 
 {% block bld_libs %}
@@ -35,6 +35,7 @@ bld/fake(tool_name=update-mime-database)
 
 {% block meson_flags %}
 clapper-app=enabled
+enhancers-loader=disabled
 {% endblock %}
 
 {% block build_flags %}
