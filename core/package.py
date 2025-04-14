@@ -184,7 +184,13 @@ class Package:
                 pkg_name = self.descr['repo']['name'].strip()
 
                 if pkg_ver and pkg_name:
-                    print(json.dumps({
+                    if ':' in pkg_name:
+                        lang, pkg_name = pkg_name.split(':')
+                    else:
+                        lang = None
+
+                    rec = {
+                        'category': self.norm_name.split('/')[0],
                         'ix_pkg_name': self.norm_name.removesuffix('/unwrap'),
                         'ix_pkg_full_name': self.norm_name,
                         'pkg_name': pkg_name,
@@ -194,7 +200,12 @@ class Package:
                             'anton@samokhvalov.xyz',
                         ],
                         'upstream_urls': mine_urls(self.descr),
-                    }))
+                    }
+
+                    if lang:
+                        rec['lang_module'] = lang
+
+                    print(json.dumps(rec))
 
             self.uid = cs.UID
             self.uid = list(self.iter_build_commands())[-1]['uid']
