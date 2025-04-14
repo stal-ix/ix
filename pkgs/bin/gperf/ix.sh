@@ -5,12 +5,12 @@ gperf
 {% endblock %}
 
 {% block version %}
-3.2
+3.2.1
 {% endblock %}
 
 {% block fetch %}
 http://ftp.gnu.org/pub/gnu/gperf/gperf-{{self.version().strip()}}.tar.gz
-sha:e0ddadebb396906a3e3e4cac2f697c8d6ab92dffa5d365a5bc23c7d41d30ef62
+sha:ed5ad317858e0a9badbbada70df40194002e16e8834ac24491307c88f96f9702
 {% endblock %}
 
 {% block bld_libs %}

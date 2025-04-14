@@ -5,12 +5,12 @@ fluidsynth
 {% endblock %}
 
 {% block version %}
-2.4.4
+2.4.5
 {% endblock %}
 
 {% block fetch %}
 https://github.com/FluidSynth/fluidsynth/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:fc492a255f453e65ac5b99a25e6ffbe0fbd64d6a4fe824bacd68de16fe8af7ba
+sha:2d2a5ca35bbb3f3fd241ef388a0cb3ae5755ebbb78121c7869f02b021d694810
 {% endblock %}
 
 {% block lib_deps %}

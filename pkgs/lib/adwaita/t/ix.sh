@@ -5,12 +5,12 @@ libadwaita
 {% endblock %}
 
 {% block version %}
-1.7.1
+1.7.2
 {% endblock %}
 
 {% block fetch %}
 https://github.com/GNOME/libadwaita/archive/refs/tags/{{self.version().strip()}}.tar.gz
-sha:1f8919146d82f23b5cb233aad127a2d27c51fecb1c7242768e82ba90742d307f
+sha:2bb5c2182ccf6dd29518043df66038020abfa738683de30fc1b8a16203d03723
 {% endblock %}
 
 {% block lib_deps %}

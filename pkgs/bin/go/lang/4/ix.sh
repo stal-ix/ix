@@ -5,11 +5,11 @@ go
 {% endblock %}
 
 {% block version %}
-20170531
+1.4-bootstrap-20170531
 {% endblock %}
 
 {% block fetch %}
-https://golang.org/dl/go1.4-bootstrap-{{self.version().strip()}}.tar.gz
+https://golang.org/dl/go{{self.version().strip()}}.tar.gz
 sha:49f806f66762077861b7de7081f586995940772d29d4c45068c134441a743fa2
 {% endblock %}
 

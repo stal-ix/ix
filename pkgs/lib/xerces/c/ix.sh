@@ -1,7 +1,7 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block pkg_name %}
-xerces
+xerces-c
 {% endblock %}
 
 {% block version %}
