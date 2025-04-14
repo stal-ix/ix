@@ -162,7 +162,11 @@ def patch(path):
 
     data = orig
     #data = add_ver(data)
-    data = add_name(data)
+    #data = add_name(data)
+
+    if 'block fetch' in data:
+        if 'block version' not in data:
+            print(path)
 
     if data != orig:
         print(f'fix {path}')
