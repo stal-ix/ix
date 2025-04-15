@@ -4,5 +4,5 @@
 bld/sh
 bld/box
 bld/python
-bin/ix/tools/urls/scripts
+bin/ix/tools/regen/scripts
 {% endblock %}
