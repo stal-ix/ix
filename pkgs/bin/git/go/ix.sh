@@ -5,7 +5,7 @@ go-git
 {% endblock %}
 
 {% block version %}
-5.4.2
+5.10.0
 {% endblock %}
 
 {% block go_url %}
@@ -13,7 +13,7 @@ https://github.com/go-git/go-git/archive/refs/tags/v{{self.version().strip()}}.t
 {% endblock %}
 
 {% block go_sha %}
-88947a372e5ebe0a107dc331c4dde9610ec94396b57ee986bb6f018602ca41c0
+1678a321a00f69a48629ea79ae2f8db420a44c8750346fc48ad832c745465ad5
 {% endblock %}
 
 {% block unpack %}
