@@ -5,12 +5,12 @@ dte
 {% endblock %}
 
 {% block version %}
-1.10
+1.11.1
 {% endblock %}
 
 {% block fetch %}
 https://gitlab.com/craigbarnes/dte/-/archive/v{{self.version().strip()}}/dte-v{{self.version().strip()}}.tar.bz2
-sha:10eb58a8639a56ad9305d6a39ac104bb4c4239ba17c850d4399bcffb50e96c14
+sha:d6260e35b833ec7f20b1260ad669ebc39ef7a8da3e6591b848e5a45fef5ea651
 {% endblock %}
 
 {% block bld_libs %}
