@@ -5,12 +5,12 @@ console
 {% endblock %}
 
 {% block version %}
-48.0
+48.0.1
 {% endblock %}
 
 {% block fetch %}
 https://gitlab.gnome.org/GNOME/console/-/archive/{{self.version().strip()}}/console-{{self.version().strip()}}.tar.bz2
-sha:c5c733817aff61871bccf2d676ed308f53db15ce354394c839b2992f78fbc4b1
+sha:a10e3a6f90bbcbb2b304d8c60c027983e19d6753c15d4b040414aec931f6f678
 {% endblock %}
 
 {% block bld_libs %}
