@@ -1,9 +1,15 @@
 {% extends '//die/c/make.sh' %}
 
-{% set version %}23.4{% endset %}
+{% block version %}
+23.4
+{% endblock %}
+
+{% block pkg_name %}
+hwinfo
+{% endblock %}
 
 {% block fetch %}
-https://github.com/openSUSE/hwinfo/archive/refs/tags/{{version}}.tar.gz
+https://github.com/openSUSE/hwinfo/archive/refs/tags/{{self.version().strip()}}.tar.gz
 sha:375ee9affbfbcf61a897cfe5ef3698cf32674a3c66fca6ce108d97f5c30c7416
 {% endblock %}
 
@@ -24,7 +30,7 @@ bld/flex/lex
 
 {% block patch %}
 rm git2log
-echo '{{version}}' > VERSION
+echo '{{self.version().strip()}}' > VERSION
 >src/version.h
 {% endblock %}
 
@@ -35,7 +41,7 @@ shut_up
 
 {% block make_flags %}
 DESTDIR=${out}/
-HWINFO_VERSION={{version}}
+HWINFO_VERSION={{self.version().strip()}}
 {% endblock %}
 
 {% block make_target %}
