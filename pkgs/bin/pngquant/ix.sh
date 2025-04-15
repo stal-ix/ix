@@ -1,7 +1,15 @@
 {% extends '//die/c/autohell.sh' %}
 
+{% block version %}
+2.9.1
+{% endblock %}
+
+{% block pkg_name %}
+pngquant
+{% endblock %}
+
 {% block fetch %}
-http://pngquant.org/pngquant-2.9.1-src.tar.gz
+http://pngquant.org/pngquant-{{self.version().strip()}}-src.tar.gz
 sha:ac2138207ef40acd4e5fdae18798139a9d75dae4f1d0837aea918a2a8c433481
 {% endblock %}
 
