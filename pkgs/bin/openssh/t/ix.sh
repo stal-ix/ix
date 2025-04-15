@@ -1,7 +1,15 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block version %}
+10_0_P1
+{% endblock %}
+
+{% block pkg_name %}
+openssh
+{% endblock %}
+
 {% block fetch %}
-https://github.com/openssh/openssh-portable/archive/refs/tags/V_10_0_P1.tar.gz
+https://github.com/openssh/openssh-portable/archive/refs/tags/V_{{self.version().strip()}}.tar.gz
 sha:3915c75ef231f82692a9128ed1570f77e113c816002308ad8a2a7c34ce9926c0
 {% endblock %}
 
