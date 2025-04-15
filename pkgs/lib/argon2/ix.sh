@@ -1,7 +1,7 @@
 {% extends '//die/c/make.sh' %}
 
 {% block pkg_name %}
-phc-winner-argon2
+argon2
 {% endblock %}
 
 {% block version %}
