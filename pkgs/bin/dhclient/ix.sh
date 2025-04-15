@@ -1,7 +1,7 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block version %}
-4.4.2-P1
+4.4.3-P1
 {% endblock %}
 
 {% block pkg_name %}
@@ -10,7 +10,7 @@ dhcp
 
 {% block fetch %}
 https://ftp.isc.org/isc/dhcp/{{self.version().strip()}}/dhcp-{{self.version().strip()}}.tar.gz
-sha:b05e04337539545a8faa0d6ac518defc61a07e5aec66a857f455e7f218c85a1a
+sha:0ac416bb55997ca8632174fd10737fd61cdb8dba2752160a335775bc21dc73c7
 {% endblock %}
 
 {% block bld_libs %}
