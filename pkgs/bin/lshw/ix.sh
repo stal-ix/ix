@@ -1,7 +1,15 @@
 {% extends '//die/c/make.sh' %}
 
+{% block version %}
+B.02.20
+{% endblock %}
+
+{% block pkg_name %}
+lshw
+{% endblock %}
+
 {% block fetch %}
-https://github.com/lyonel/lshw/archive/refs/tags/B.02.20.tar.gz
+https://github.com/lyonel/lshw/archive/refs/tags/{{self.version().strip()}}.tar.gz
 sha:6b8346a89fb0f0f1798e66f6a707a881d38b9b3a67256b30fc4628dac09f291a
 {% endblock %}
 
