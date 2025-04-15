@@ -1,7 +1,15 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block version %}
+3-2-8
+{% endblock %}
+
+{% block pkg_name %}
+netatalk
+{% endblock %}
+
 {% block fetch %}
-https://github.com/Netatalk/netatalk/archive/refs/tags/netatalk-3-2-8.tar.gz
+https://github.com/Netatalk/netatalk/archive/refs/tags/netatalk-{{self.version().strip()}}.tar.gz
 sha:1984a6e2b80fcf5681f4c16ff82b10508cbe85a6e792f02f13e0d6f9cf3807bc
 {% endblock %}
 
