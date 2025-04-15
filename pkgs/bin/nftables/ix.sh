@@ -4,12 +4,20 @@
 git://git.netfilter.org/nftables
 {% endblock %}
 
+{% block version %}
+1.1.2
+{% endblock %}
+
+{% block pkg_name %}
+nftables
+{% endblock %}
+
 {% block git_branch %}
-v1.1.1
+v{{self.version().strip()}}
 {% endblock %}
 
 {% block git_sha %}
-d79d1e76b4e6ee69edf41bdd33a382b52b0055984ad66e9498b735420f8b616e
+96b6557c1d1d882e81a1ac28bf551ee983fcfadb8a775640c2ebd7a5cdb3a214
 {% endblock %}
 
 {% block bld_libs %}

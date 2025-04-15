@@ -2,7 +2,7 @@
 
 {% block install %}
 mkdir ${out}/bin
-base64 -d << EOF > ${out}/bin/ix_urls
+base64 -d << EOF > ${out}/bin/ix_regen
 {% include 'urls/base64' %}
 EOF
 base64 -d << EOF > ${out}/bin/ix_urls_flt

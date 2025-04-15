@@ -5,14 +5,14 @@ xfsprogs
 {% endblock %}
 
 {% block version %}
-6.13.0
+6.14.0
 {% endblock %}
 
 {# grub can't see it :( #}
 
 {% block fetch %}
 https://www.kernel.org/pub/linux/utils/fs/xfs/xfsprogs/xfsprogs-{{self.version().strip()}}.tar.xz
-sha:0459933f93d94c82bc2789e7bd63742273d9d74207cdae67dc3032038da08337
+sha:fa5ab77f8b5169ce48dd8de09446ad7e29834a05b8f52012bae411cf53ec1f58
 {% endblock %}
 
 {% block bld_libs %}
