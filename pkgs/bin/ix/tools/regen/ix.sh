@@ -2,7 +2,7 @@
 
 {% block run_deps %}
 bld/sh
-bin/wget
+bld/box
 bld/python
-bin/ix/tools/upver/scripts
+bin/ix/tools/regen/scripts
 {% endblock %}

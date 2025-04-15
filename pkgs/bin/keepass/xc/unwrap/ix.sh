@@ -1,7 +1,15 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block version %}
+2.7.6
+{% endblock %}
+
+{% block pkg_name %}
+keepassxc
+{% endblock %}
+
 {% block fetch %}
-https://github.com/keepassxreboot/keepassxc/releases/download/2.7.6/keepassxc-2.7.6-src.tar.xz
+https://github.com/keepassxreboot/keepassxc/releases/download/{{self.version().strip()}}/keepassxc-{{self.version().strip()}}-src.tar.xz
 sha:a58074509fa8e90f152c6247f73e75e126303081f55eedb4ea0cbb6fa980d670
 https://raw.githubusercontent.com/orsonteodoro/oiledmachine-overlay/master/app-admin/keepassxc/files/keepassxc-2.7.6-qt6-support.patch
 sha:0814865e9273223a33c22548850c38fbe49a9fff561a7a032a5be0236e44f0af

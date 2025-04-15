@@ -1,8 +1,11 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block pkg_name %}
+dropbear
+{% endblock %}
+
 {% block fetch %}
-https://github.com/mkj/dropbear/archive/refs/tags/DROPBEAR_2022.83.tar.gz
-sha:e02c5c36eb53bfcd3f417c6e40703a50ec790a1a772269ea156a2ccef14998d2
+https://github.com/mkj/dropbear/archive/refs/tags/DROPBEAR_{{self.version().strip()}}.tar.gz
 {% endblock %}
 
 {% block bld_libs %}

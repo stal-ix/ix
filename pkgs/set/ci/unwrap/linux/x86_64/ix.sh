@@ -48,6 +48,9 @@
 #}
 
 {% block run_deps %}
+bin/dropbear/2025
+bin/dropbear/2024
+bin/dropbear/2022
 bin/cmake/4
 bin/auto/make/1/17
 bin/coreutils/9/7

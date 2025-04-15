@@ -1,7 +1,15 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block version %}
+2-13-0
+{% endblock %}
+
+{% block pkg_name %}
+freetype-demos
+{% endblock %}
+
 {% block fetch %}
-https://gitlab.freedesktop.org/freetype/freetype-demos/-/archive/VER-2-13-0/freetype-demos-VER-2-13-0.tar.bz2
+https://gitlab.freedesktop.org/freetype/freetype-demos/-/archive/VER-{{self.version().strip()}}/freetype-demos-VER-{{self.version().strip()}}.tar.bz2
 sha:afcc45109122cc4c805b20883033423e7740baf6d54b180bf9568f34790e9e3b
 {% endblock %}
 
