@@ -13,6 +13,8 @@
 for name in ${CC} ${CXX}; do
     cat << EOF > ${name}
 #!$(which sh)
+export tmp=${tmp}
+export PATH=${PATH}
 exec wrapcc "$(which ${name})" "\${@}"
 EOF
 

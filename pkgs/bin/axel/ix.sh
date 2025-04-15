@@ -5,12 +5,16 @@ axel
 {% endblock %}
 
 {% block version %}
-2.17.13
+2.17.14
 {% endblock %}
 
 {% block fetch %}
 https://github.com/axel-download-accelerator/axel/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:b10cb89b8a6b31fab2e5183c7a461a95691c5a5344d466f4ef47aa62e5c456a2
+sha:f6f2a5369d78003ab162a774cff0be71096bea6929333a79c8168c82caced07d
+{% endblock %}
+
+{% block conf_ver %}
+2/72
 {% endblock %}
 
 {% block bld_libs %}

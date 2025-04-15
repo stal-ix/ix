@@ -5,7 +5,7 @@ circumflex
 {% endblock %}
 
 {% block version %}
-3.5
+3.8
 {% endblock %}
 
 {% block go_url %}
@@ -13,10 +13,14 @@ https://github.com/bensadeh/circumflex/archive/refs/tags/{{self.version().strip(
 {% endblock %}
 
 {% block go_sha %}
-2c8c5594176cf067025a538474255d7aba9b360022e5961fb100ae5534a0099c
+8dfe90e029c9a656e43a2bd7d120c0e17d6dc4fe3af3c5014969fa4cf2e14b5f
 {% endblock %}
 
 {% block install %}
 mkdir ${out}/bin
 cp clx ${out}/bin/
+{% endblock %}
+
+{% block go_tool %}
+bin/go/lang/24
 {% endblock %}

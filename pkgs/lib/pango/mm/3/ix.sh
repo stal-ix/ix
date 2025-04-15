@@ -18,5 +18,5 @@ lib/c
 lib/c++
 lib/pango
 lib/glib/mm/3
-lib/cairo/mm/16
+lib/cairo/mm/18
 {% endblock %}

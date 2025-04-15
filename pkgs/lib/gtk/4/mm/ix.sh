@@ -20,5 +20,5 @@ lib/gtk/4
 lib/sigc++/3
 lib/glib/mm/3
 lib/pango/mm/3
-lib/cairo/mm/16
+lib/cairo/mm/18
 {% endblock %}
