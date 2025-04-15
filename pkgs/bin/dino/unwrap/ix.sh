@@ -1,16 +1,16 @@
-{% extends '//die/c/cmake.sh' %}
+{% extends '//die/c/meson.sh' %}
 
 {% block pkg_name %}
 dino
 {% endblock %}
 
 {% block version %}
-0.4.4
+0.5.0
 {% endblock %}
 
 {% block fetch %}
 https://github.com/dino/dino/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:29f37dc3a54fb123f223964d01de76fcea038ca6d134aa35b75c62b07acb9d03
+sha:4c57f20677f47f41b440b7d6eebb697ee89d5d8c38d334ad47c6b5de19894768
 {% endblock %}
 
 {% block bld_libs %}
@@ -44,10 +44,6 @@ lib/gi/repository/gir
 bld/glib
 bin/vala
 bld/gettext
-{% endblock %}
-
-{% block cmake_flags %}
-USE_SOUP3=ON
 {% endblock %}
 
 {% block build_flags %}
