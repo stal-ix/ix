@@ -1,7 +1,15 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block version %}
+1_13_2
+{% endblock %}
+
+{% block pkg_name %}
+doxygen
+{% endblock %}
+
 {% block fetch %}
-https://github.com/doxygen/doxygen/archive/refs/tags/Release_1_13_2.tar.gz
+https://github.com/doxygen/doxygen/archive/refs/tags/Release_{{self.version().strip()}}.tar.gz
 sha:4c9d9c8e95c2af4163ee92bcb0f3af03b2a4089402a353e4715771e8d3701c48
 {% endblock %}
 
