@@ -5,7 +5,7 @@ dnsx
 {% endblock %}
 
 {% block version %}
-1.1.6
+1.2.2
 {% endblock %}
 
 {% block go_url %}
@@ -13,7 +13,7 @@ https://github.com/projectdiscovery/dnsx/archive/refs/tags/v{{self.version().str
 {% endblock %}
 
 {% block go_sha %}
-feb0072a980a2fad7a7d5c1a7a3d1e463043b5d4e536ae1936d36a9ec845aab2
+a08515029243cc464da5cca0ff36df1432c94b278bda62e45d31bbb99dcaf1fa
 {% endblock %}
 
 {% block unpack %}
