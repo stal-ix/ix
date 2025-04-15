@@ -5,7 +5,7 @@ aux/entropy(entropy_seed={{seed | b64e}}ksjfhbgasfdg76,entropy_size=1000000)
 {% endblock %}
 
 {% block bld_tool %}
-bin/dropbear/stock
+bin/dropbear/2022
 bin/dropbear/runit/keygen
 {% endblock %}
 

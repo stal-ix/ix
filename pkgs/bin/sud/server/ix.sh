@@ -1,4 +1,4 @@
-{% extends '//bin/dropbear/stock/ix.sh' %}
+{% extends '//bin/dropbear/2022/ix.sh' %}
 
 {% block patch %}
 find . -name '*.c' | while read l; do
