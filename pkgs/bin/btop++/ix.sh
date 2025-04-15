@@ -5,17 +5,18 @@ btop
 {% endblock %}
 
 {% block version %}
-1.3.2
+1.4.0
 {% endblock %}
 
 {% block fetch %}
 https://github.com/aristocratos/btop/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:331d18488b1dc7f06cfa12cff909230816a24c57790ba3e8224b117e3f0ae03e
+sha:ac0d2371bf69d5136de7e9470c6fb286cbee2e16b4c7a6d2cd48a14796e86650
 {% endblock %}
 
 {% block bld_libs %}
 lib/c
 lib/c++
+lib/kernel
 {% endblock %}
 
 {% block make_flags %}
