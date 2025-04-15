@@ -1,3 +1,6 @@
+<a href="https://repology.org/repository/stalix">
+    <img src="https://repology.org/badge/repository-big/stalix.svg" alt="Repository status">
+</a>
 <picture>
 <source media="(prefers-color-scheme: dark)" srcset="https://github.com/stal-ix/stal-ix.github.io/blob/main/images/ixpm_02.png" width="250px" height="94px">
 <source media="(prefers-color-scheme: light)" srcset="https://github.com/stal-ix/stal-ix.github.io/blob/main/images/ixpm_01.png" width="250px" height="94px">
