@@ -5,11 +5,11 @@ acpica
 {% endblock %}
 
 {% block version %}
-R2025_04_04
+2025.04.04
 {% endblock %}
 
 {% block fetch %}
-https://github.com/acpica/acpica/archive/refs/tags/{{self.version().strip()}}.tar.gz
+https://github.com/acpica/acpica/archive/refs/tags/R{{self.version().strip().replace('.', '_')}}.tar.gz
 sha:9991ec103b3660d17715780406ee7409f705cf87ac55e9a32374affe1a6f275a
 {% endblock %}
 

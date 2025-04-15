@@ -5,12 +5,12 @@ editorconfig-core-c
 {% endblock %}
 
 {% block version %}
-0.12.6
+0.12.9
 {% endblock %}
 
 {% block fetch %}
 https://github.com/editorconfig/editorconfig-core-c/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:36052a5371731d915b53d9c7a24a11c4032585ccacb392ec9d58656eef4c0edf
+sha:4aaa4e3883332aac7ec19c169dcf128f5f0f963f61d09beb299eb2bce5944e2c
 {% endblock %}
 
 {% block lib_deps %}

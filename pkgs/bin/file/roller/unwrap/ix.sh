@@ -5,20 +5,20 @@ file-roller
 {% endblock %}
 
 {% block version %}
-43.1
+44.5
 {% endblock %}
 
 {% block fetch %}
 https://github.com/GNOME/file-roller/archive/refs/tags/{{self.version().strip()}}.tar.gz
-sha:f564f9ad6faf0bfd634b8986242b847ddf457040e9bbf62be286fa2d20e25e54
+sha:23f574efdbdc574dee8b853057e5aa7504419138e14c392472902130f94a8f84
 {% endblock %}
 
 {% block bld_libs %}
 lib/c
 lib/gtk
 lib/glib
-lib/handy
 lib/portal
+lib/adwaita
 lib/archive
 lib/gtk/deps
 {% endblock %}

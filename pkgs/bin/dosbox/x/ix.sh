@@ -5,12 +5,12 @@ dosbox-x
 {% endblock %}
 
 {% block version %}
-2025.01.01
+2025.02.01
 {% endblock %}
 
 {% block fetch %}
 https://github.com/joncampbell123/dosbox-x/archive/refs/tags/dosbox-x-v{{self.version().strip()}}.tar.gz
-sha:40290a073f6b8894d9c2b8c3d9c39a410f84fe89837c87148653ea03e89cf7b2
+sha:3a6fdfd659bb05db82bf2d850af806f666562cce9a37609fd33b59f7e4bd8fa4
 {% endblock %}
 
 {% block bld_libs %}

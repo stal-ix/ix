@@ -3,6 +3,6 @@
 {% block run_deps %}
 set/compress
 org/freedesktop/portal/desktop
-bin/file/roller/unwrap(gtk_ver=3)
+bin/file/roller/unwrap(gtk_ver=4)
 bin/xdg/er(wrap=file-roller)
 {% endblock %}

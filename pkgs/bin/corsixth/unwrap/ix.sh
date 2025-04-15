@@ -5,18 +5,19 @@ CorsixTH
 {% endblock %}
 
 {% block version %}
-0.67
+0.68.0
 {% endblock %}
 
 {% block fetch %}
 https://github.com/CorsixTH/CorsixTH/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:4e88cf1916bf4d7c304b551ddb91fb9194f110bad4663038ca73d31b939d69e3
+sha:54034b8434f5c583178405d2c84477f903fe2b15933b611f42230668e35d632e
 {% endblock %}
 
 {% block bld_libs %}
 lib/c
 lib/c++
 lib/lua
+lib/curl
 lib/sdl/2
 lib/ffmpeg
 lib/sdl/deps

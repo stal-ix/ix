@@ -5,12 +5,12 @@ ecl
 {% endblock %}
 
 {% block version %}
-23.9.9
+24.5.10
 {% endblock %}
 
 {% block fetch %}
 https://common-lisp.net/project/ecl/static/files/release/ecl-{{self.version().strip()}}.tgz
-sha:c51bdab4ca6c1173dd3fe9cfe9727bcefb97bb0a3d6434b627ca6bdaeb33f880
+sha:e4ea65bb1861e0e495386bfa8bc673bd014e96d3cf9d91e9038f91435cbe622b
 {% endblock %}
 
 {% block bld_libs %}

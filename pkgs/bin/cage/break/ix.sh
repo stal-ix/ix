@@ -5,12 +5,12 @@ cagebreak
 {% endblock %}
 
 {% block version %}
-2.4.0
+3.0.0
 {% endblock %}
 
 {% block fetch %}
 https://github.com/project-repo/cagebreak/archive/refs/tags/{{self.version().strip()}}.tar.gz
-sha:5c2d1688a231dd1a311143aa595637078d2161789c735aad994622a021f84e6f
+sha:884cd70445bed1c45116e01e9ddab28b756416b3fb5cc7b6a3057895b64fba03
 {% endblock %}
 
 {% block bld_libs %}

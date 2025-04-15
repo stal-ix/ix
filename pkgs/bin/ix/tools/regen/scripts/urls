@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 
-set -ue
+set -xue
 
 cd $(dirname ${IX_BINARY})
 
@@ -13,7 +13,7 @@ export LC_ALL=C
 
 (
 cat urls.txt
-IX_DUMP_GRAPH=1 IX_EXEC_KIND=fake "${IX_BINARY}" build set/ci | grep -v GOPROXY | grep '"http' | sed -e 's|.*"http|http|' | sed -e 's|".*||'
+IX_DUMP_GRAPH=1 IX_EXEC_KIND=fake "${IX_BINARY}" build set/ci --seed=1 | grep -v GOPROXY | grep '"http' | sed -e 's|.*"http|http|' | sed -e 's|".*||'
 find ${IX_PKGS_ROOT} -name '*.sh' | xargs cat | grep "http[s]*://"
 ) | grep -v '#'  \
   | grep -v ' '  \
