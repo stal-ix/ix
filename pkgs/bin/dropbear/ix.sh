@@ -1,4 +1,4 @@
-{% extends 'stock/ix.sh' %}
+{% extends '2022/ix.sh' %}
 
 {# TODO(pg) - discuss with upstream #}
 

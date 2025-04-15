@@ -1,14 +1,10 @@
 {% extends '//bin/dropbear/t/ix.sh' %}
 
 {% block version %}
-2025.87
+2022.83
 {% endblock %}
 
 {% block fetch %}
 {{super()}}
-sha:ca32b32280546dfafe474d3976fc80f337cc91f529f05772ea27eafe43a74051
-{% endblock %}
-
-{% block conf_ver %}
-2/71
+sha:e02c5c36eb53bfcd3f417c6e40703a50ec790a1a772269ea156a2ccef14998d2
 {% endblock %}
