@@ -5,12 +5,12 @@ fetchmail
 {% endblock %}
 
 {% block version %}
-6.4.36
+6.5.2
 {% endblock %}
 
 {% block fetch %}
-https://downloads.sourceforge.net/project/fetchmail/branch_6.4/fetchmail-{{self.version().strip()}}.tar.xz
-sha:700d433838d3e29e304452aec56b21874f538ec24113fdcbb25139c5f2edc23a
+https://downloads.sourceforge.net/project/fetchmail/branch_{{self.version().strip()[:3]}}/fetchmail-{{self.version().strip()}}.tar.xz
+sha:8fd0477408620ae382c1d0ef83d8946a95e5be0c2e582dd4ebe55cba513a45fe
 {% endblock %}
 
 {% block bld_libs %}
@@ -23,4 +23,8 @@ lib/openssl
 bld/flex
 bld/bison
 bld/gettext
+{% endblock %}
+
+{% block conf_ver %}
+2/72
 {% endblock %}
