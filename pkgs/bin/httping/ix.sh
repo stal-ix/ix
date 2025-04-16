@@ -5,12 +5,12 @@ HTTPing
 {% endblock %}
 
 {% block version %}
-4.2.0
+4.4.0
 {% endblock %}
 
 {% block fetch %}
 https://github.com/folkertvanheusden/HTTPing/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:d6eb16a1f7d8724b883f07ffe71f75ae13f0535dbab077ff19ab8f36ab90d96a
+sha:87fa2da5ac83c4a0edf4086161815a632df38e1cc230e1e8a24a8114c09da8fd
 {% endblock %}
 
 {% block bld_libs %}
