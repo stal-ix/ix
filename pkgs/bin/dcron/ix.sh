@@ -5,12 +5,12 @@ dcron
 {% endblock %}
 
 {% block version %}
-4.5
+4.6
 {% endblock %}
 
 {% block fetch %}
-https://github.com/dubiousjim/dcron/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:7c047194b9339b781971b000bf5512c11e856d20a14fe5323d5a1823f04c2a3f
+https://github.com/ptchinster/dcron/archive/refs/tags/v{{self.version().strip()}}.tar.gz
+sha:d1dced1554213225f5ca333ebc5eab96ab80fa30800d9420782d5dfa6e2a15e7
 {% endblock %}
 
 {% block bld_libs %}
