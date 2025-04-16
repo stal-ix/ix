@@ -34,6 +34,9 @@ class Manager:
             except KeyError:
                 self.cache[key] = func()
 
+    def load_descriptor(self, s):
+        return self.cached(cu.struct_hash([s, 'd']), lambda: cp.Descriptor(s, self))
+
     def load_package(self, s, sfrom):
         if self.config.verbose:
             print(fmt_sel(sfrom) + ' -> ' + fmt_sel(s))

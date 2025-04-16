@@ -171,47 +171,12 @@ def mine_urls(data):
     return list(sorted(frozenset(list(mine_urls_1(data)) + list(mine_urls_2(data)))))
 
 
-class Package:
+class Descriptor:
     def __init__(self, selector, mngr):
         self.manager = mngr
         self.selector = fix_selector(selector, self.config)
         self.pkg_name = self.calc_pkg_name()
         self.descr = cr.RenderContext(self).render()
-
-        if self.buildable():
-            if self.config.repo:
-                pkg_ver = self.descr['repo']['version'].strip()
-                pkg_name = self.descr['repo']['name'].strip()
-
-                if pkg_ver and pkg_name:
-                    if ':' in pkg_name:
-                        lang, pkg_name = pkg_name.split(':')
-                    else:
-                        lang = None
-
-                    rec = {
-                        'category': self.norm_name.split('/')[0],
-                        'ix_pkg_name': self.norm_name.removesuffix('/unwrap'),
-                        'ix_pkg_full_name': self.norm_name,
-                        'pkg_name': pkg_name,
-                        'pkg_ver': pkg_ver,
-                        'recipe': 'https://github.com/stal-ix/ix/blob/main/pkgs/' + self.name,
-                        'maintainers': [
-                            'anton@samokhvalov.xyz',
-                        ],
-                        'upstream_urls': mine_urls(self.descr),
-                    }
-
-                    if lang:
-                        rec['lang_module'] = lang
-
-                    print(json.dumps(rec))
-
-            self.uid = cs.UID
-            self.uid = list(self.iter_build_commands())[-1]['uid']
-        else:
-            # TODO(pg): check it
-            self.uid = cu.struct_hash([x.uid for x in self.iter_all_runtime_depends()])
 
     @property
     def norm_name(self):
@@ -260,6 +225,46 @@ class Package:
     @property
     def host(self):
         return self.config.host
+
+
+class Package(Descriptor):
+    def __init__(self, selector, mngr):
+        Descriptor.__init__(self, selector, mngr)
+
+        if self.buildable():
+            if self.config.repo:
+                pkg_ver = self.descr['repo']['version'].strip()
+                pkg_name = self.descr['repo']['name'].strip()
+
+                if pkg_ver and pkg_name:
+                    if ':' in pkg_name:
+                        lang, pkg_name = pkg_name.split(':')
+                    else:
+                        lang = None
+
+                    rec = {
+                        'category': self.norm_name.split('/')[0],
+                        'ix_pkg_name': self.norm_name.removesuffix('/unwrap'),
+                        'ix_pkg_full_name': self.norm_name,
+                        'pkg_name': pkg_name,
+                        'pkg_ver': pkg_ver,
+                        'recipe': 'https://github.com/stal-ix/ix/blob/main/pkgs/' + self.name,
+                        'maintainers': [
+                            'anton@samokhvalov.xyz',
+                        ],
+                        'upstream_urls': mine_urls(self.descr),
+                    }
+
+                    if lang:
+                        rec['lang_module'] = lang
+
+                    print(json.dumps(rec))
+
+            self.uid = cs.UID
+            self.uid = list(self.iter_build_commands())[-1]['uid']
+        else:
+            # TODO(pg): check it
+            self.uid = cu.struct_hash([x.uid for x in self.iter_all_runtime_depends()])
 
     def host_lib_flags(self):
         return {'target': self.host, 'kind': 'lib'}
