@@ -5,7 +5,7 @@ highway
 {% endblock %}
 
 {% block version %}
-1.1.0
+1.2.0
 {% endblock %}
 
 {% block fetch %}
