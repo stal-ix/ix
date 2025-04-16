@@ -1561,6 +1561,7 @@ https://github.com/bfgroup/b2/archive/refs/tags/4.9.2.tar.gz
 https://github.com/bfgroup/b2/archive/refs/tags/5.1.0.tar.gz
 https://github.com/bfgroup/b2/archive/refs/tags/5.2.0.tar.gz
 https://github.com/bfgroup/b2/archive/refs/tags/5.3.1.tar.gz
+https://github.com/bfgroup/b2/archive/refs/tags/5.3.2.tar.gz
 https://github.com/biojppm/rapidyaml/releases/download/v0.4.1/rapidyaml-0.4.1-src.tgz
 https://github.com/bpftrace/bpftrace/archive/refs/tags/v0.21.2.tar.gz
 https://github.com/bpftrace/bpftrace/archive/refs/tags/v0.23.0.tar.gz
@@ -1898,6 +1899,7 @@ https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.4.0.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.40.0.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.40.3.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.40.4.tar.gz
+https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.41.0.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.5.0.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.6.0.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.6.1.tar.gz
@@ -2145,6 +2147,7 @@ https://github.com/harfbuzz/harfbuzz/archive/refs/tags/8.5.0.tar.gz
 https://github.com/harfbuzz/harfbuzz/archive/refs/tags/9.0.0.tar.gz
 https://github.com/hboetes/mg/archive/refs/tags/20221112.tar.gz
 https://github.com/heyjuvi/avizo/archive/refs/tags/1.3.tar.gz
+https://github.com/hluk/CopyQ/archive/refs/tags/v10.0.0.tar.gz
 https://github.com/hluk/CopyQ/archive/refs/tags/v7.0.0.tar.gz
 https://github.com/hluk/CopyQ/archive/refs/tags/v7.1.0.tar.gz
 https://github.com/hluk/CopyQ/archive/refs/tags/v9.1.0.tar.gz
@@ -3089,6 +3092,7 @@ https://github.com/protocolbuffers/protobuf/archive/refs/tags/v27.1.tar.gz
 https://github.com/psemiletov/tea-qt/archive/refs/tags/62.0.2.tar.gz
 https://github.com/psemiletov/tea-qt/archive/refs/tags/63.0.1.tar.gz
 https://github.com/psemiletov/tea-qt/archive/refs/tags/63.0.2.tar.gz
+https://github.com/ptchinster/dcron/archive/refs/tags/v4.6.tar.gz
 https://github.com/ptitSeb/gl4es/archive/refs/tags/v1.1.4.tar.gz
 https://github.com/pullmoll/musl-rpmatch/archive/refs/tags/v1.0.tar.gz
 https://github.com/pwmt/girara/archive/refs/tags/0.4.5.tar.gz
@@ -4003,6 +4007,7 @@ https://gitlab.freedesktop.org/wlroots/wlroots/-/archive/0.18.0/wlroots-0.18.0.t
 https://gitlab.freedesktop.org/wlroots/wlroots/-/archive/0.18.1/wlroots-0.18.1.tar.bz2
 https://gitlab.freedesktop.org/wlroots/wlroots/-/archive/0.18.2/wlroots-0.18.2.tar.bz2
 https://gitlab.freedesktop.org/xdg/desktop-file-utils/-/archive/0.27/desktop-file-utils-0.27.tar.bz2
+https://gitlab.freedesktop.org/xdg/desktop-file-utils/-/archive/0.28/desktop-file-utils-0.28.tar.bz2
 https://gitlab.freedesktop.org/xkeyboard-config/xkeyboard-config/-/archive/xkeyboard-config-2.39/xkeyboard-config-xkeyboard-config-2.39.tar.bz2
 https://gitlab.freedesktop.org/xkeyboard-config/xkeyboard-config/-/archive/xkeyboard-config-2.40/xkeyboard-config-xkeyboard-config-2.40.tar.bz2
 https://gitlab.freedesktop.org/xkeyboard-config/xkeyboard-config/-/archive/xkeyboard-config-2.41/xkeyboard-config-xkeyboard-config-2.41.tar.bz2
