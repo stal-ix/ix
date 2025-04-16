@@ -5,7 +5,7 @@ gdbm
 {% endblock %}
 
 {% block version %}
-1.24
+1.25
 {% endblock %}
 
 {#

@@ -5,12 +5,12 @@ gmime
 {% endblock %}
 
 {% block version %}
-3.2.13
+3.2.15
 {% endblock %}
 
 {% block fetch %}
 https://github.com/jstedfast/gmime/archive/refs/tags/{{self.version().strip()}}.tar.gz
-sha:1ba533e4fbc9da7059b5c5dd8b4e0b4cf60731e86fbc3d8f547b305d3e1e1471
+sha:06662db189ce56782c23c7c4adfebfa512350c2fa9514f0d551df42c7f940076
 {% endblock %}
 
 {% block conf_ver %}2/71{% endblock %}

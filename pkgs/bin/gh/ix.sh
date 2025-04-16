@@ -5,7 +5,7 @@ cli
 {% endblock %}
 
 {% block version %}
-2.14.4
+2.70.0
 {% endblock %}
 
 {% block go_url %}
@@ -13,7 +13,7 @@ https://github.com/cli/cli/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 {% endblock %}
 
 {% block go_sha %}
-4390612d4739b90b539d713d6c566fa79f5641d7b5e5d30d4686e85136c6b8c3
+5a973d27649b619ae59c6fee90bbc49cc79733d479593dad31723a0325cce279
 {% endblock %}
 
 {% block unpack %}
@@ -24,4 +24,8 @@ cd cmd/gh
 {% block install %}
 mkdir ${out}/bin
 cp gh ${out}/bin/
+{% endblock %}
+
+{% block go_tool %}
+bin/go/lang/24
 {% endblock %}

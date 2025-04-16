@@ -5,7 +5,7 @@ halloy
 {% endblock %}
 
 {% block version %}
-2025.2
+2025.4
 {% endblock %}
 
 {% block cargo_url %}
@@ -13,11 +13,7 @@ https://github.com/squidowl/halloy/archive/refs/tags/{{self.version().strip()}}.
 {% endblock %}
 
 {% block cargo_sha %}
-8058f54ef893deb96d1385d677210eca7b9282cb9fcfd1b7b1f24cdf19d822ad
-{% endblock %}
-
-{% block cargoc_ver %}
-bld/cargo/80
+eccddc71ebbce5de6079926f3fc6f05a3315278e93e92c8051173e004913a015
 {% endblock %}
 
 {% block bld_libs %}
@@ -35,4 +31,12 @@ lib/xkb/common/dl
 {% block install %}
 mkdir ${out}/bin
 cp ${tmp}/out/halloy ${out}/bin/
+{% endblock %}
+
+{% block cargoc_ver %}
+bld/cargo/86
+{% endblock %}
+
+{% block rustc_ver %}
+86
 {% endblock %}

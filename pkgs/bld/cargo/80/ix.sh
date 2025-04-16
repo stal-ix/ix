@@ -18,8 +18,8 @@ https://github.com/rust-lang/cargo/archive/refs/tags/{{self.version().strip()}}.
 
 {% block bld_libs %}
 lib/curl
+lib/git/2
 lib/openssl
-lib/git/2/old
 {% endblock %}
 
 {% block cargo_bins %}

@@ -1,7 +1,15 @@
 {% extends '//die/c/pmake.sh' %}
 
+{% block version %}
+0-9-0
+{% endblock %}
+
+{% block pkg_name %}
+gbsddialog
+{% endblock %}
+
 {% block fetch %}
-https://github.com/khorben/gbsddialog/archive/refs/tags/gbsddialog_0-9-0.tar.gz
+https://github.com/khorben/gbsddialog/archive/refs/tags/gbsddialog_{{self.version().strip()}}.tar.gz
 sha:b10d7b7eec643b3246d494c0b2275180ea2606839f82741a24cafa3649a74631
 {% endblock %}
 

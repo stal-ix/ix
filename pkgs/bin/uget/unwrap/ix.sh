@@ -1,7 +1,15 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block version %}
+2.2.3-1
+{% endblock %}
+
+{% block pkg_name %}
+uget
+{% endblock %}
+
 {% block fetch %}
-https://downloads.sourceforge.net/urlget/uget-2.2.3-1.tar.gz
+https://downloads.sourceforge.net/urlget/uget-{{self.version().strip()}}.tar.gz
 sha:11356e4242151b9014fa6209c1f0360b699b72ef8ab47dbeb81cc23be7db9049
 {% endblock %}
 

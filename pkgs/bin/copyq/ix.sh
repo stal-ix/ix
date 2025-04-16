@@ -5,14 +5,14 @@ CopyQ
 {% endblock %}
 
 {% block version %}
-9.1.0
+10.0.0
 {% endblock %}
 
 {# no wayland support currently #}
 
 {% block fetch %}
 https://github.com/hluk/CopyQ/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:500893c01b662d1f157e26432f75ffeaef61862e551b831d53a79b14579ad0b3
+sha:ffbae7a71c55cd89dfd88a6d184c7a5c7a8c4c948e9df11c10640c246d9c5f53
 {% endblock %}
 
 {% block bld_libs %}

@@ -1,7 +1,9 @@
 {% extends '//die/rust/cargo.sh' %}
 
-{% block cargo_url %}
 {% include '//bin/scx/c/ver.sh' %}
+
+{% block cargo_url %}
+{{self.source_url().strip()}}
 {% endblock %}
 
 {% block cargo_sha %}

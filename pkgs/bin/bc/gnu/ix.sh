@@ -5,12 +5,12 @@ bc
 {% endblock %}
 
 {% block version %}
-1.08.0
+1.08.1
 {% endblock %}
 
 {% block fetch %}
 https://ftp.gnu.org/gnu/bc/bc-{{self.version().strip()}}.tar.gz
-sha:7db49996cbe16d7602936fef586e69e492c3df65765c0a891841025a1ad741ef
+sha:b71457ffeb210d7ea61825ff72b3e49dc8f2c1a04102bbe23591d783d1bfe996
 {% endblock %}
 
 {% block bld_libs %}

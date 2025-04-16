@@ -1,7 +1,15 @@
 {% extends '//bin/sbcl/t/ix.sh' %}
 
+{% block version %}
+2.5.3
+{% endblock %}
+
+{% block pkg_name %}
+sbcl
+{% endblock %}
+
 {% block fetch %}
-https://downloads.sourceforge.net/project/sbcl/sbcl/2.5.3/sbcl-2.5.3-source.tar.bz2
+https://downloads.sourceforge.net/project/sbcl/sbcl/{{self.version().strip()}}/sbcl-{{self.version().strip()}}-source.tar.bz2
 sha:8a1e76e75bb73eaec2df1ee0541aab646caa1042c71e256aaa67f7aff3ab16d5
 {% endblock %}
 

@@ -1,7 +1,9 @@
 {% extends '//die/c/meson.sh' %}
 
-{% block fetch %}
 {% include 'ver.sh' %}
+
+{% block fetch %}
+{{self.source_url().strip()}}
 sha:7e357cec1855153fca0e48925210ca8d876dcba8c6a1a62139c429c024d49949
 {% endblock %}
 
