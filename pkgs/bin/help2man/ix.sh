@@ -5,12 +5,12 @@ help2man
 {% endblock %}
 
 {% block version %}
-1.49.2
+1.49.3
 {% endblock %}
 
 {% block fetch %}
 https://mirror.tochlab.net/pub/gnu/help2man/help2man-{{self.version().strip()}}.tar.xz
-sha:9e2e0e213a7e0a36244eed6204d902b6504602a578b6ecd15268b1454deadd36
+sha:4d7e4fdef2eca6afe07a2682151cea78781e0a4e8f9622142d9f70c083a2fd4f
 {% endblock %}
 
 {% block bld_tool %}

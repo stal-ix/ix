@@ -41,3 +41,7 @@ lib/zstd
 {{super()}}
 --config 'target.x86_64-pc-windows-gnullvm.linker = "clang"'
 {% endblock %}
+
+{% block rustc_ver %}
+86
+{% endblock %}
