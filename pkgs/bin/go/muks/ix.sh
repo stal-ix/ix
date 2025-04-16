@@ -5,7 +5,7 @@ gomuks
 {% endblock %}
 
 {% block version %}
-0.3.0
+0.3.1
 {% endblock %}
 
 {% block go_url %}
@@ -13,7 +13,7 @@ https://github.com/tulir/gomuks/archive/refs/tags/v{{self.version().strip()}}.ta
 {% endblock %}
 
 {% block go_sha %}
-46ac07dd18576172081302702280e1fa97a029f4088c8f9550113dbf9317de2d
+4574987269769d1d6cb6a2c66ae7e66ff43263b8817bea4841fb7762c932508c
 {% endblock %}
 
 {% block bld_libs %}
