@@ -5,7 +5,7 @@ i3status-rust
 {% endblock %}
 
 {% block version %}
-0.33.0
+0.33.2
 {% endblock %}
 
 {% block cargo_url %}
@@ -13,7 +13,7 @@ https://github.com/greshake/i3status-rust/archive/refs/tags/v{{self.version().st
 {% endblock %}
 
 {% block cargo_sha %}
-1db61f3eab477cc9eedb8c0b33eb2d3dc18e72a5a80551b15fcee862be527501
+8e830f2e65eb4efb60a18698108ff51c8ec6d92ab959612c1c610811d039bd3c
 {% endblock %}
 
 {% block bld_libs %}
@@ -27,4 +27,8 @@ lib/openssl
 {% block install %}
 mkdir ${out}/bin
 cp ${tmp}/out/i3status-rs ${out}/bin/
+{% endblock %}
+
+{% block cargoc_ver %}
+bld/cargo/86
 {% endblock %}
