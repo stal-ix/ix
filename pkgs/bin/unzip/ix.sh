@@ -1,5 +1,13 @@
 {% extends '//die/c/make.sh' %}
 
+{% block version %}
+6.0
+{% endblock %}
+
+{% block pkg_name %}
+unzip
+{% endblock %}
+
 {% block fetch %}
 https://downloads.sourceforge.net/project/infozip/UnZip%206.x%20%28latest%29/UnZip%206.0/unzip60.tar.gz
 sha:036d96991646d0449ed0aa952e4fbe21b476ce994abc276e49d30e686708bd37
