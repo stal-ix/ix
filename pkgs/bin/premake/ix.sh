@@ -1,8 +1,6 @@
 {% extends '//die/c/premake.sh' %}
 
-{% block fetch %}
 {% include '//bld/premake/boot/ver.sh' %}
-{% endblock %}
 
 {% block bld_libs %}
 lib/c
