@@ -1,7 +1,15 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block version %}
+6.13
+{% endblock %}
+
+{% block pkg_name %}
+squid
+{% endblock %}
+
 {% block fetch %}
-https://github.com/squid-cache/squid/archive/refs/tags/SQUID_6_13.tar.gz
+https://github.com/squid-cache/squid/archive/refs/tags/SQUID_{{self.version().strip().replace('.', '_')}}.tar.gz
 sha:83a8e2f6ea2a6f62e36bd36d5448af787121cf61796069c73edd09b7f31bef14
 {% endblock %}
 
