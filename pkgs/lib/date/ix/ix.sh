@@ -2,7 +2,7 @@
 
 {% block lib_deps %}
 {{super()}}
-lib/shim/fake/pkg(pkg_name=date,pkg_ver={{self.version()}})
+lib/shim/fake/pkg(pkg_name=date,pkg_ver={{self.version().strip()}})
 {% endblock %}
 
 {% block patch %}
