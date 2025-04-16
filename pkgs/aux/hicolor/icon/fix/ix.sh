@@ -11,6 +11,6 @@ ls share/icons/ | while read l; do
     iconker share/icons/\${l}/scalable share/icons/\${l}
     gtk4-update-icon-cache share/icons/\${l}
 done
-rm *.png
+rm -f *.png
 EOF
 {% endblock %}
