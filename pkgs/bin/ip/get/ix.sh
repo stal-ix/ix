@@ -16,10 +16,6 @@ https://github.com/ipfs/ipget/archive/refs/tags/v{{self.version().strip()}}.tar.
 eb8e74125475a271cb408226cd10b7c8c697f0fc94da948c3359c5dd9f91fa9b
 {% endblock %}
 
-{% block go_compiler %}
-bin/go/lang/20
-{% endblock %}
-
 {% block install %}
 mkdir ${out}/bin
 cp ipget ${out}/bin/
