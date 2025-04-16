@@ -5,12 +5,12 @@ libipt
 {% endblock %}
 
 {% block version %}
-2.0.6
+2.1.2
 {% endblock %}
 
 {% block fetch %}
 https://github.com/intel/libipt/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:631f4ebc81e12c0493288af3cc307b0de5b65f018d3e3839c87014b0d26acd75
+sha:713d3e76b6c3073b122a9f5b6c025bc301a0436582f132caf782814363acf60f
 {% endblock %}
 
 {% block env %}

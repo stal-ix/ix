@@ -1,16 +1,16 @@
-{% extends '//die/c/autorehell.sh' %}
+{% extends '//die/c/autohell.sh' %}
 
 {% block pkg_name %}
 libpcap
 {% endblock %}
 
 {% block version %}
-1.10.4
+1.10.5
 {% endblock %}
 
 {% block fetch %}
 https://www.tcpdump.org/release/libpcap-{{self.version().strip()}}.tar.gz
-sha:ed19a0383fad72e3ad435fd239d7cd80d64916b87269550159d20e47160ebe5f
+sha:37ced90a19a302a7f32e458224a00c365c117905c2cd35ac544b6880a81488f0
 {% endblock %}
 
 {% block lib_deps %}

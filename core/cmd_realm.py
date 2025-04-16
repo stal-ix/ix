@@ -41,6 +41,19 @@ def prepare(ctx, args):
         yield n.from_prepared()
 
 
+def cli_dep(ctx):
+    args = ctx['args']
+    mngr = cm.Manager(cf.config_from(ctx))
+
+    for d in cc.lex(args):
+        if d[0] == 'p':
+            mngr.load_descriptor({'name': d[2]['p']})
+
+    for k in mngr.fs.cache.keys():
+        if 'die/' not in k:
+            print(k.removeprefix('//'))
+
+
 def cli_mut(ctx):
     for r in list(prepare(ctx, ctx['args'])):
         r.install()

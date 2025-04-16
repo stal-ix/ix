@@ -1,7 +1,7 @@
 {% extends '//die/c/pmake.sh' %}
 
 {% block version %}
-0-9-0
+0.9.1
 {% endblock %}
 
 {% block pkg_name %}
@@ -9,8 +9,8 @@ gbsddialog
 {% endblock %}
 
 {% block fetch %}
-https://github.com/khorben/gbsddialog/archive/refs/tags/gbsddialog_{{self.version().strip()}}.tar.gz
-sha:b10d7b7eec643b3246d494c0b2275180ea2606839f82741a24cafa3649a74631
+https://github.com/khorben/gbsddialog/archive/refs/tags/gbsddialog_{{self.version().strip().replace('.', '-')}}.tar.gz
+sha:95bc5e57d09a26f2ba5529c82e63b71249f3ea2ba288d9c8cea4895a14877fdb
 {% endblock %}
 
 {% block bld_libs %}

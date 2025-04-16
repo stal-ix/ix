@@ -5,12 +5,12 @@ libhandy
 {% endblock %}
 
 {% block version %}
-1.8.2
+1.8.3
 {% endblock %}
 
 {% block fetch %}
 https://gitlab.gnome.org/GNOME/libhandy/-/archive/{{self.version().strip()}}/libhandy-{{self.version().strip()}}.tar.bz2
-sha:67bea0c4afa56f0512a9d872ffc6b8335236f38164b245d1baf85dccde26c05c
+sha:1c8403a467bdd16b84bb423573fc0da4b7bc2ba74dc1729ac5e385de35b662b7
 {% endblock %}
 
 {% block lib_deps %}

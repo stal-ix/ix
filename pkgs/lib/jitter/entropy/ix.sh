@@ -5,12 +5,12 @@ jitterentropy-library
 {% endblock %}
 
 {% block version %}
-3.6.0
+3.6.1
 {% endblock %}
 
 {% block fetch %}
 https://github.com/smuellerDD/jitterentropy-library/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:e2af325cdc7d951a66af782fad4bcdd622e9d8355dd024b7562e2f8b3f6079cd
+sha:783e71bf5c805a68510511e0da177560123a71c86f0efc5a6a21cf5d9cea3ea9
 {% endblock %}
 
 {% block lib_deps %}

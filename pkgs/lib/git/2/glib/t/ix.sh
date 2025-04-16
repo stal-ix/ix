@@ -5,12 +5,12 @@ libgit2-glib
 {% endblock %}
 
 {% block version %}
-1.2.0
+1.2.1
 {% endblock %}
 
 {% block fetch %}
 https://gitlab.gnome.org/GNOME/libgit2-glib/-/archive/v{{self.version().strip()}}/libgit2-glib-v{{self.version().strip()}}.tar.bz2
-sha:421ac5c99e02c5b6235842e60eb7f9fa8dc580d2500fb1eb521ced8a22de9f29
+sha:e15d98cf15cd9dc8aaae8a11ab44f51f3a0da3ad4ace80ede3831c934e1897d7
 {% endblock %}
 
 {% block lib_deps %}

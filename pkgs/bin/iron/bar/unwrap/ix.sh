@@ -5,7 +5,7 @@ ironbar
 {% endblock %}
 
 {% block version %}
-0.15.1
+0.16.1
 {% endblock %}
 
 {% block cargo_url %}
@@ -13,7 +13,7 @@ https://github.com/JakeStanger/ironbar/archive/refs/tags/v{{self.version().strip
 {% endblock %}
 
 {% block cargo_sha %}
-38e6f763426123b6a00663cf9a554f8fbe0f12115a7175d8a21830653a05ce9c
+012add37012d127b7d95b84d6b33f9df23ced30e8509a63de5b8a0896084071c
 {% endblock %}
 
 {% block bld_libs %}
