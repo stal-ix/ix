@@ -1,7 +1,15 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block version %}
+dc898cac4d7075b45fe9294acb959b07cd7ecf6a
+{% endblock %}
+
+{% block pkg_name %}
+xdg-desktop-portal
+{% endblock %}
+
 {% block fetch %}
-https://github.com/flatpak/xdg-desktop-portal/archive/dc898cac4d7075b45fe9294acb959b07cd7ecf6a.tar.gz
+https://github.com/flatpak/xdg-desktop-portal/archive/{{self.version().strip()}}.tar.gz
 sha:6ef03771e58625b0fa041d33afdfb5f3b6b88c0243e8f43507a829e4640401bb
 {% endblock %}
 
