@@ -40,3 +40,9 @@ xrealloc
 {{super()}}
 rm ${out}/bin/gawk-*
 {% endblock %}
+
+{% block cpp_missing %}
+{% if darwin %}
+mach-o/dyld.h
+{% endif %}
+{% endblock %}
