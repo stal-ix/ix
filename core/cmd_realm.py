@@ -50,9 +50,8 @@ def cli_dep(ctx):
             mngr.load_descriptor({'name': d[2]['p']})
 
     for k in mngr.fs.cache.keys():
-        if k.startswith('//'):
-            if '//die' not in k:
-                print(k)
+        if 'die/' not in k:
+            print(k.removeprefix('//'))
 
 
 def cli_mut(ctx):
