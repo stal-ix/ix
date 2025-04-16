@@ -439,6 +439,7 @@ https://download.kde.org/stable/frameworks/5.112/extra-cmake-modules-5.112.0.tar
 https://download.kde.org/stable/frameworks/5.99/extra-cmake-modules-5.99.0.tar.xz
 https://download.kde.org/stable/plasma-wayland-protocols/plasma-wayland-protocols-1.7.0.tar.xz
 https://download.netsurf-browser.org/libs/releases/libnsgif-0.2.1-src.tar.gz
+https://download.open-mpi.org/release/hwloc/v2.12/hwloc-2.12.0.tar.bz2
 https://download.open-mpi.org/release/hwloc/v2.9/hwloc-2.9.0.tar.bz2
 https://download.oracle.com/berkeley-db/db-6.2.32.tar.gz
 https://download.qemu.org/qemu-8.0.0.tar.xz
@@ -1957,6 +1958,7 @@ https://github.com/fmtlib/fmt/archive/refs/tags/11.1.4.tar.gz
 https://github.com/fmtlib/fmt/archive/refs/tags/9.1.0.tar.gz
 https://github.com/folkertvanheusden/HTTPing/archive/refs/tags/v4.1.0.tar.gz
 https://github.com/folkertvanheusden/HTTPing/archive/refs/tags/v4.2.0.tar.gz
+https://github.com/folkertvanheusden/HTTPing/archive/refs/tags/v4.4.0.tar.gz
 https://github.com/francma/wob/archive/refs/tags/0.14.2.tar.gz
 https://github.com/francma/wob/archive/refs/tags/0.15.1.tar.gz
 https://github.com/francma/wob/archive/refs/tags/0.15.tar.gz
@@ -2370,6 +2372,7 @@ https://github.com/johnsonjh/OpenVi/archive/refs/tags/7.4.27.tar.gz
 https://github.com/johnsonjh/OpenVi/archive/refs/tags/7.5.28.tar.gz
 https://github.com/johnsonjh/OpenVi/archive/refs/tags/7.5.29.tar.gz
 https://github.com/johnsonjh/OpenVi/archive/refs/tags/7.6.30.tar.gz
+https://github.com/johnsonjh/OpenVi/archive/refs/tags/7.6.31.tar.gz
 https://github.com/jonas/tig/archive/refs/tags/tig-2.5.11.tar.gz
 https://github.com/jonas/tig/archive/refs/tags/tig-2.5.8.tar.gz
 https://github.com/jonas/tig/archive/refs/tags/tig-2.5.9.tar.gz
@@ -2962,6 +2965,7 @@ https://github.com/open-source-parsers/jsoncpp/archive/refs/tags/1.9.5.tar.gz
 https://github.com/openSUSE/hwinfo/archive/refs/tags/23.2.tar.gz
 https://github.com/openSUSE/hwinfo/archive/refs/tags/23.3.tar.gz
 https://github.com/openSUSE/hwinfo/archive/refs/tags/23.4.tar.gz
+https://github.com/openSUSE/hwinfo/archive/refs/tags/23.5.tar.gz
 https://github.com/openSUSE/xinetd/archive/refs/tags/2.3.15.4.tar.gz
 https://github.com/opencv/opencv/archive/refs/tags/4.10.0.tar.gz
 https://github.com/opencv/opencv/archive/refs/tags/4.11.0.tar.gz
@@ -2970,6 +2974,7 @@ https://github.com/opencv/opencv/archive/refs/tags/4.8.1.tar.gz
 https://github.com/opencv/opencv/archive/refs/tags/4.9.0.tar.gz
 https://github.com/openresty/luajit2/archive/refs/tags/v2.1-20230911.tar.gz
 https://github.com/openssh/openssh-portable/archive/refs/tags/V_10_0_P1.tar.gz
+https://github.com/openssh/openssh-portable/archive/refs/tags/V_10_0_P2.tar.gz
 https://github.com/openssh/openssh-portable/archive/refs/tags/V_9_4_P1.tar.gz
 https://github.com/openssh/openssh-portable/archive/refs/tags/V_9_5_P1.tar.gz
 https://github.com/openssh/openssh-portable/archive/refs/tags/V_9_6_P1.tar.gz
@@ -4220,6 +4225,7 @@ https://gitlab.gnome.org/chergert/ptyxis/-/archive/47.6/ptyxis-47.6.tar.bz2
 https://gitlab.gnome.org/chergert/ptyxis/-/archive/47.7/ptyxis-47.7.tar.bz2
 https://gitlab.gnome.org/chergert/ptyxis/-/archive/47.8/ptyxis-47.8.tar.bz2
 https://gitlab.gnome.org/chergert/ptyxis/-/archive/48.0/ptyxis-48.0.tar.bz2
+https://gitlab.gnome.org/chergert/ptyxis/-/archive/48.1/ptyxis-48.1.tar.bz2
 https://gitlab.gnome.org/chergert/ptyxis/-/raw/08564402b8a9bc53bc2dbd3ff14f9d9598c14b7b/build-aux/0001-add-notification-and-shell-precmd-preexec.patch
 https://gitlab.gnome.org/crab2313/evince/-/archive/4c91df66ca83f8f1d057f0aa9069675b8bf5b6d6/evince-4c91df66ca83f8f1d057f0aa9069675b8bf5b6d6.tar.bz2
 https://gitlab.gnome.org/jadahl/libdecor/-/archive/0.1.1/libdecor-0.1.1.tar.bz2
