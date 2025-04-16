@@ -5,12 +5,12 @@ coeurl
 {% endblock %}
 
 {% block version %}
-0.3.0
+0.3.1
 {% endblock %}
 
 {% block fetch %}
 https://nheko.im/nheko-reborn/coeurl/-/archive/v{{self.version().strip()}}/coeurl-v{{self.version().strip()}}.tar.bz2
-sha:a80f0cb449df5719c70ce34a00a95191c1e27f79ec6bef1e72be5d4d97c95f9d
+sha:3c0a63c9faec23494ca60ee729e876ec1fc4df453a1dfce201d1a8ac6ae5c9d5
 {% endblock %}
 
 {% block lib_deps %}
