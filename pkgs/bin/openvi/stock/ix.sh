@@ -5,12 +5,12 @@ OpenVi
 {% endblock %}
 
 {% block version %}
-7.6.30
+7.6.31
 {% endblock %}
 
 {% block fetch %}
 https://github.com/johnsonjh/OpenVi/archive/refs/tags/{{self.version().strip()}}.tar.gz
-sha:1ac5487280deca5fe539d5b6302bfbc95a9eb52aa2e3807d30f5dd82f0bdb355
+sha:75ef62fd882d8a18e388509f5fe4eca6b241f3286f6121e2bcbea65ec592ae11
 {% endblock %}
 
 {% block bld_libs %}
