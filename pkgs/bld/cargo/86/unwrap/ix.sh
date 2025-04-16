@@ -1,4 +1,4 @@
-{% extends '//bld/cargo/83/ix.sh' %}
+{% extends '//bld/cargo/80/ix.sh' %}
 
 {% block version %}
 0.86.0
