@@ -5,12 +5,12 @@ knot
 {% endblock %}
 
 {% block version %}
-3.4.5
+3.4.6
 {% endblock %}
 
 {% block fetch %}
 https://secure.nic.cz/files/knot-dns/knot-{{self.version().strip()}}.tar.xz
-sha:359af70afafa7ccaa18439a7c1eb35270ff9eece81d0756ae4ca716b1433cb4b
+sha:d19c5a1ff94b4f26027d635de108dbfc88f5652be86ccb3ba9a44ee9be0e5839
 {% endblock %}
 
 {% block lib_deps %}
