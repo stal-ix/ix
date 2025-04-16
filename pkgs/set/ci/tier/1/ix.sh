@@ -8,6 +8,7 @@
 #bin/xplr
 #bin/wez/term
 #bin/rqbit
+#bin/iron/bar
 bin/amd/gpu/top
 bin/u/utils
 bin/cargo/whatfeatures
@@ -30,7 +31,6 @@ bin/rtorrent
 bin/halloy
 bin/wstunnel
 bin/evsieve
-bin/iron/bar
 bin/yazi
 bin/niri
 bin/alacritty
