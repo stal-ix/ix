@@ -1,0 +1,16 @@
+#!/usr/bin/env sh
+
+set -xue
+
+cd $(dirname ${IX_BINARY})
+
+curl 'https://repology.org/api/v1/projects/?maintainer=anton%40samokhvalov.xyz&outdated=1' | ix_flt | while read l; do
+    echo ${l}
+
+    if ix_up ${l}; then
+        git add -A
+        git commit -m "up"
+    else
+        git checkout .
+    fi
+done
