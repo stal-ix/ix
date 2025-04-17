@@ -59,13 +59,14 @@ def fix(n, fr, to):
     with open(pn, 'w') as f:
         f.write(res)
 
-pkg = sys.argv[1]
-fr = sys.argv[2]
-to = sys.argv[2]
-
 def it_recs():
+    pkg = sys.argv[1]
+
     with open('pkgs/die/scripts/dump.json') as f:
         for l in f.read().split('\n'):
+            if not l.strip():
+                continue
+
             rec = json.loads(l)
 
             if rec['pkg_name'].startswith(pkg):
@@ -79,4 +80,5 @@ def it_files():
     for p in it_pkgs():
         yield from subprocess.check_output(['./ix', 'dep', p]).decode().split('\n')
 
-print(frozenset(it_files()))
+for f in frozenset(it_files()):
+    fix(os.path.dirname(f), sys.argv[2], sys.argv[3])
