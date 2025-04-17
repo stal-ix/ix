@@ -5,7 +5,7 @@ miller
 {% endblock %}
 
 {% block version %}
-6.11.0
+6.13.0
 {% endblock %}
 
 {% block go_url %}
@@ -13,7 +13,7 @@ https://github.com/johnkerl/miller/archive/refs/tags/v{{self.version().strip()}}
 {% endblock %}
 
 {% block go_sha %}
-c4bb6a2091ff8c4acd5a2a584267f6bb794108bce19c23a12d1067d6d686941d
+fc454bb888d18117729d0e15e24c74f2a074d52781058e9d88a9ea3d58701458
 {% endblock %}
 
 {% block unpack %}
