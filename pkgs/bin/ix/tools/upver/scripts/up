@@ -12,9 +12,12 @@ sent = '1' * 64
 def call1(*cmd):
     return subprocess.check_output(list(cmd), stdin=None)
 
+def call_eat(*cmd):
+    return subprocess.check_output(list(cmd), stdin=None, stderr=subprocess.STDOUT)
+
 def call(*cmd):
     try:
-        return subprocess.check_output(list(cmd), stdin=None, stderr=subprocess.STDOUT)
+        return call_eat(*cmd)
     except Exception as e:
         return e.stdout
 
@@ -85,7 +88,7 @@ def process(pkgs, fr, to):
 
         return 1
 
-    run('./ix', 'build', *pkgs)
+    call_eat('./ix', 'build', *pkgs)
 
     files = list(sorted(frozenset(it_files(pkgs))))
 
