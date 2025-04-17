@@ -60,10 +60,11 @@ def fix2(pn, sha):
 
 def it_recs():
     pkg = sys.argv[1]
+    fr = sys.argv[2]
 
     with open('pkgs/die/scripts/dump.json') as f:
         for l in f.read().split('\n'):
-            if not l.strip():
+            if fr not in l:
                 continue
 
             rec = json.loads(l)
