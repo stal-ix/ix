@@ -86,6 +86,9 @@ def it_files(pkgs):
                 yield x.strip()
 
 pkgs = list(it_pkgs())
+
+call('./ix', 'build', *pkgs).decode()
+
 files = frozenset(it_files(pkgs))
 
 for f in files:
