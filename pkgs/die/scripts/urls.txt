@@ -382,6 +382,7 @@ https://download.gnome.org/sources/at-spi2-core/2.56/at-spi2-core-2.56.0.tar.xz
 https://download.gnome.org/sources/at-spi2-core/2.56/at-spi2-core-2.56.1.tar.xz
 https://download.gnome.org/sources/atkmm/2.28/atkmm-2.28.2.tar.xz
 https://download.gnome.org/sources/atkmm/2.28/atkmm-2.28.3.tar.xz
+https://download.gnome.org/sources/atkmm/2.28/atkmm-2.28.4.tar.xz
 https://download.gnome.org/sources/atkmm/2.28/atkmm-2.36.3.tar.xz
 https://download.gnome.org/sources/dconf/0.40/dconf-0.40.0.tar.xz
 https://download.gnome.org/sources/evince/44/evince-44.3.tar.xz
@@ -2924,6 +2925,7 @@ https://github.com/neovim/unibilium/archive/refs/tags/v2.1.2.tar.gz
 https://github.com/netblue30/firejail/archive/refs/tags/0.9.74.tar.gz
 https://github.com/netblue30/firejail/archive/refs/tags/landlock-split.tar.gz
 https://github.com/netwide-assembler/nasm/archive/refs/tags/nasm-2.16.01.tar.gz
+https://github.com/netwide-assembler/nasm/archive/refs/tags/nasm-2.16.03.tar.gz
 https://github.com/nfs-ganesha/ntirpc/archive/refs/tags/v5.0.tar.gz
 https://github.com/nghttp2/nghttp2/archive/refs/tags/v1.56.0.tar.gz
 https://github.com/nghttp2/nghttp2/archive/refs/tags/v1.57.0.tar.gz
@@ -4865,6 +4867,7 @@ https://www.nano-editor.org/dist/v7/nano-7.2.tar.xz
 https://www.nano-editor.org/dist/v8/nano-8.2.tar.xz
 https://www.nano-editor.org/dist/v8/nano-8.3.tar.xz
 https://www.nano-editor.org/dist/v8/nano-8.4.tar.xz
+https://www.nasm.us/pub/nasm/releasebuilds/2.16.0.1/nasm-2.16.01.tar.gz
 https://www.nasm.us/pub/nasm/releasebuilds/2.16.01/nasm-2.16.01.tar.gz
 https://www.nasm.us/pub/nasm/releasebuilds/2.16.02/nasm-2.16.02.tar.gz
 https://www.nasm.us/pub/nasm/releasebuilds/2.16.03/nasm-2.16.03.tar.gz
