@@ -5,12 +5,12 @@ libultrahdr
 {% endblock %}
 
 {% block version %}
-1.3.0
+1.4.0
 {% endblock %}
 
 {% block fetch %}
 https://github.com/google/libultrahdr/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:bf425e10a1a36507d47eb2711018e90effe11c76db8ecd4f10f4e1af9cb5288c
+sha:e7e1252e2c44d8ed6b99ee0f67a3caf2d8a61c43834b13b1c3cd485574c03ab9
 {% endblock %}
 
 {% block lib_deps %}
