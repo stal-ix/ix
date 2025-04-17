@@ -4,13 +4,8 @@
 libxml2
 {% endblock %}
 
-{% block version %}
-2.14.1
-{% endblock %}
-
 {% block fetch %}
 https://gitlab.gnome.org/GNOME/libxml2/-/archive/v{{self.version().strip()}}/libxml2-v{{self.version().strip()}}.tar.bz2
-sha:08d80cd5f5b340b0c6803239fafed480eccf33a0c9b474ae020912c87f19380e
 {% endblock %}
 
 {% block lib_deps %}
@@ -27,4 +22,15 @@ lib/iconv
 --without-python
 --with-legacy
 --with-sax1
+{% endblock %}
+
+{% block cpp_defines %}
+LIBXML_STATIC=1
+{% endblock %}
+
+{% block env %}
+{% if lib %}
+export COFLAGS="--with-libxml2-prefix=${out} \${COFLAGS}"
+export CPPFLAGS="-DLIBXML_STATIC=1 -I${out}/include/libxml2 \${CPPFLAGS}"
+{% endif %}
 {% endblock %}
