@@ -5,12 +5,12 @@ libsigsegv
 {% endblock %}
 
 {% block version %}
-2.13
+2.14
 {% endblock %}
 
 {% block fetch %}
 https://ftp.gnu.org/gnu/libsigsegv/libsigsegv-{{self.version().strip()}}.tar.gz
-sha:be78ee4176b05f7c75ff03298d84874db90f4b6c9d5503f0da1226b3a3c48119
+sha:cdac3941803364cf81a908499beb79c200ead60b6b5b40cad124fd1e06caa295
 {% endblock %}
 
 {% block lib_deps %}
