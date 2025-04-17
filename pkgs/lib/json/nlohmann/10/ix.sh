@@ -5,12 +5,12 @@ json
 {% endblock %}
 
 {% block version %}
-3.10.5
+3.12.0
 {% endblock %}
 
 {% block fetch %}
 https://github.com/nlohmann/json/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:5daca6ca216495edf89d167f808d1d03c4a4d929cef7da5e10f135ae1540c7e4
+sha:4b92eb0c06d10683f7447ce9406cb97cd4b453be18d7279320f7b2f025c10187
 {% endblock %}
 
 {% block install %}
