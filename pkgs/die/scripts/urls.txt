@@ -1659,6 +1659,7 @@ https://github.com/cjlin1/liblinear/archive/v247/liblinear-247.tar.gz
 https://github.com/cjlin1/liblinear/archive/v247/liblinear-248.tar.gz
 https://github.com/cli/cli/archive/refs/tags/v2.14.4.tar.gz
 https://github.com/commonmark/cmark/archive/refs/tags/0.30.3.tar.gz
+https://github.com/commonmark/cmark/archive/refs/tags/0.31.1.tar.gz
 https://github.com/containers/crun/releases/download/1.9/crun-1.9.tar.xz
 https://github.com/contour-terminal/boxed-cpp/archive/refs/tags/v1.4.3.tar.gz
 https://github.com/contour-terminal/contour/archive/refs/tags/v0.6.1.7494.tar.gz
@@ -4191,6 +4192,7 @@ https://gitlab.gnome.org/GNOME/libxml2/-/archive/v2.13.2/libxml2-v2.13.2.tar.bz2
 https://gitlab.gnome.org/GNOME/libxml2/-/archive/v2.13.4/libxml2-v2.13.4.tar.bz2
 https://gitlab.gnome.org/GNOME/libxml2/-/archive/v2.13.5/libxml2-v2.13.5.tar.bz2
 https://gitlab.gnome.org/GNOME/libxml2/-/archive/v2.13.7/libxml2-v2.13.7.tar.bz2
+https://gitlab.gnome.org/GNOME/libxml2/-/archive/v2.14.1/libxml2-v2.14.1.tar.bz2
 https://gitlab.gnome.org/GNOME/libxslt/-/archive/v1.1.38/libxslt-v1.1.38.tar.bz2
 https://gitlab.gnome.org/GNOME/libxslt/-/archive/v1.1.39/libxslt-v1.1.39.tar.bz2
 https://gitlab.gnome.org/GNOME/libxslt/-/archive/v1.1.40/libxslt-v1.1.40.tar.bz2
@@ -4495,6 +4497,7 @@ https://notroj.github.io/neon/neon-0.32.5.tar.gz
 https://notroj.github.io/neon/neon-0.33.0.tar.gz
 https://notroj.github.io/neon/neon-0.34.0.tar.gz
 https://notroj.github.io/neon/neon-0.34.1.tar.gz
+https://notroj.github.io/neon/neon-0.34.2.tar.gz
 https://pawsa.fedorapeople.org/balsa/balsa-2.6.4.tar.xz
 https://pkg-config.freedesktop.org/releases/pkg-config-0.29.2.tar.gz
 https://pm-utils.freedesktop.org/releases/pm-utils-1.4.1.tar.gz
