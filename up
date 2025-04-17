@@ -90,7 +90,7 @@ for f in files:
 
 subprocess.check_call(['git', 'diff'])
 
-out = call('./ix', 'build', pkgs).decode()
+out = call('./ix', 'build', *pkgs).decode()
 sha = parse_sha(out.replace(sent, ''))
 
 for f in files:
