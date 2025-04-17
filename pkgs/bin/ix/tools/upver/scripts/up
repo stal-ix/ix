@@ -10,9 +10,11 @@ GOOD = frozenset('0123456789abcdef')
 sent = '1' * 64
 
 def call1(*cmd):
+    print(f'run {cmd}')
     return subprocess.check_output(list(cmd), stdin=None)
 
 def call_eat(*cmd):
+    print(f'run {cmd}')
     return subprocess.check_output(list(cmd), stdin=None, stderr=subprocess.STDOUT)
 
 def call(*cmd):
@@ -22,6 +24,7 @@ def call(*cmd):
         return e.stdout
 
 def run(*cmd):
+    print(f'run {cmd}')
     return subprocess.check_call(list(cmd), stdin=None)
 
 def is_sha(x):
