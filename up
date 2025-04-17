@@ -31,7 +31,7 @@ def parse_sha(data):
     for l in data.split('\n'):
         for x in l.split(' '):
             if is_sha(x):
-                return x
+                return x.removeprefix('sha:')
 
     raise Exception('no sha')
 
@@ -92,7 +92,7 @@ def process(pkg, fr, to):
 
     call('./ix', 'build', *pkgs).decode()
 
-    files = frozenset(it_files(pkgs))
+    files = list(sorted(frozenset(it_files(pkgs))))
 
     for f in files:
         print(f'prepare {f}')
@@ -113,5 +113,6 @@ def process(pkg, fr, to):
 try:
     run(sys.argv[1], sys.argv[2], sys.argv[3])
 except Exception as e:
+    print('revert all')
     subprocess.check_call(['git', 'checkout', '.'])
     raise e
