@@ -57,7 +57,7 @@ def fix1(pn, fr, to):
         data = f.read()
 
     if fr not in data:
-        return
+        return 0
 
     nd = subst_sha(data, sent).replace(fr, to)
 
@@ -65,7 +65,9 @@ def fix1(pn, fr, to):
         with open(pn, 'w') as f:
             f.write(nd)
 
-        return True
+        return 1
+
+    return 0
 
 def fix2(pn, sha):
     with open(pn) as f:
@@ -94,9 +96,10 @@ def process(pkgs, fr, to):
     call_eat('./ix', 'build', *pkgs)
 
     files = list(sorted(frozenset(it_files(pkgs))))
+    fixed = sum((fix1('pkgs/' + f, fr, to) for f in files), 0)
 
-    if not any(fix1('pkgs/' + f, fr, to) for f in files):
-        print(f'nothing to do')
+    if fixed != 1:
+        print(f'nothing to do, fixed {fixed}')
 
         return 1
 
