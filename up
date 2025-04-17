@@ -78,7 +78,10 @@ def it_pkgs():
 
 def it_files():
     for p in it_pkgs():
-        yield from subprocess.check_output(['./ix', 'dep', p]).decode().split('\n')
+        for x in subprocess.check_output(['./ix', 'dep', p]).decode().split('\n'):
+            if x.strip():
+                yield x.strip()
 
 for f in frozenset(it_files()):
+    print(f'fix {f}')
     fix(os.path.dirname(f), sys.argv[2], sys.argv[3])
