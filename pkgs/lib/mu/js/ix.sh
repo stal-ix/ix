@@ -4,11 +4,11 @@
 mujs
 {% endblock %}
 
-{% block version %}1.3.5{% endblock %}
+{% block version %}1.3.6{% endblock %}
 
 {% block fetch %}
 https://github.com/ccxvii/mujs/archive/refs/tags/{{self.version()}}.tar.gz
-sha:78a311ae4224400774cb09ef5baa2633c26971513f8b931d3224a0eb85b13e0b
+sha:7cf3a5e622cff41903efff0334518fc94af063256752c38ba4618a5191e44f18
 {% endblock %}
 
 {% block lib_deps %}
