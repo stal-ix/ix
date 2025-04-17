@@ -7,6 +7,7 @@ import time
 import subprocess
 
 GOOD = frozenset('0123456789abcdef')
+sent = '1' * 64
 
 def call(*cmd):
     try:
@@ -37,16 +38,14 @@ def parse_sha(data):
 def subst_sha(data, to):
     return data.replace(parse_sha(data), to)
 
-sent = '1' * 64
-
 def fix1(pn, fr, to):
     with open(pn) as f:
         data = f.read()
 
-    try:
-        nd = subst_sha(data, sent).replace(fr, to)
-    except Exception:
-        nd = None
+    if fr not in data:
+        return
+
+    nd = subst_sha(data, sent).replace(fr, to)
 
     if nd:
         with open(pn, 'w') as f:
@@ -61,10 +60,7 @@ def fix2(pn, sha):
     with open(pn, 'w') as f:
         f.write(nd)
 
-def it_recs():
-    pkg = sys.argv[1]
-    fr = sys.argv[2]
-
+def it_recs(pkg, fr):
     with open('pkgs/die/scripts/dump.json') as f:
         for l in f.read().split('\n'):
             if fr not in l:
@@ -75,8 +71,8 @@ def it_recs():
             if rec['pkg_name'].startswith(pkg):
                 yield rec
 
-def it_pkgs():
-    for c in it_recs():
+def it_pkgs(recs):
+    for c in recs:
         yield c['ix_pkg_full_name']
 
 def it_files(pkgs):
@@ -85,23 +81,37 @@ def it_files(pkgs):
             if x.strip():
                 yield x.strip()
 
-pkgs = list(it_pkgs())
+def process(pkg, fr, to):
+    recs = list(it_recs(pkg, fr))
+    pkgs = list(it_pkgs(recs))
 
-call('./ix', 'build', *pkgs).decode()
+    if not pkgs:
+        print(f'nothing to do')
 
-files = frozenset(it_files(pkgs))
+        return
 
-for f in files:
-    print(f'prepare {f}')
-    fix1('pkgs/' + f, sys.argv[2], sys.argv[3])
+    call('./ix', 'build', *pkgs).decode()
 
-subprocess.check_call(['git', 'diff'])
+    files = frozenset(it_files(pkgs))
 
-out = call('./ix', 'build', *pkgs).decode()
-sha = parse_sha(out.replace(sent, ''))
+    for f in files:
+        print(f'prepare {f}')
+        fix1('pkgs/' + f, fr, to)
 
-for f in files:
-    print(f'fix {f}')
-    fix2('pkgs/' + f, sha)
+    subprocess.check_call(['git', 'diff'])
 
-subprocess.check_call(['git', 'diff'])
+    out = call('./ix', 'build', *pkgs).decode()
+    sha = parse_sha(out.replace(sent, ''))
+
+    for f in files:
+        print(f'fix {f}')
+        fix2('pkgs/' + f, sha)
+
+    subprocess.check_call(['git', 'diff'])
+    subprocess.check_call(['./ix', 'build'] + pkgs)
+
+try:
+    run(sys.argv[1], sys.argv[2], sys.argv[3])
+except Exception as e:
+    subprocess.check_call(['git', 'checkout', '.'])
+    raise e
