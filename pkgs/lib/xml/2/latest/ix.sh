@@ -1,10 +1,5 @@
 {% extends '//lib/xml/2/t/ix.sh' %}
 
-{% block lib_deps %}
-lib/z
-{{super()}}
-{% endblock %}
-
 {% block cpp_defines %}
 {{super()}}
 LIBXML_STATIC=1

@@ -15,6 +15,7 @@ sha:08d80cd5f5b340b0c6803239fafed480eccf33a0c9b474ae020912c87f19380e
 
 {% block lib_deps %}
 lib/c
+lib/z
 lib/iconv
 {% endblock %}
 
