@@ -5,12 +5,12 @@ sysklogd
 {% endblock %}
 
 {% block version %}
-2.7.1
+2.7.2
 {% endblock %}
 
 {% block fetch %}
 https://github.com/troglobit/sysklogd/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:7ed9a40f4e79e697a41222e39afed1328cf82766116aaa40de3b3933cfee790d
+sha:baae08ffd1391dc5d6b233c716e52f82836eda4c6bb4870c858b8957c79e5028
 {% endblock %}
 
 {% block bld_libs %}
