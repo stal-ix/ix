@@ -107,7 +107,7 @@ def process(pkgs, fr, to):
         fix2('pkgs/' + f, sha)
 
     run('git', 'diff')
-    run('./ix', 'build', *pkgs)
+    call_eat('./ix', 'build', *pkgs)
 
     return 0
 
