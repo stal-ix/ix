@@ -1,0 +1,82 @@
+#!/usr/bin/env python3
+
+import os
+import sys
+import json
+import time
+import subprocess
+
+GOOD = frozenset('0123456789abcdef')
+
+def call(*cmd):
+    try:
+        return subprocess.check_output(list(cmd), stderr=subprocess.STDOUT)
+    except Exception as e:
+        return e.stdout
+
+def is_sha(x):
+    x = x.removeprefix('sha:')
+
+    if len(x) != 64:
+        return False
+
+    for ch in x:
+        if ch not in GOOD:
+            return False
+
+    return True
+
+def parse_sha(data):
+    for l in data.split('\n'):
+        for x in l.split(' '):
+            if is_sha(x):
+                return x
+
+    raise Exception('no sha')
+
+def subst_sha(data, to):
+    return data.replace(parse_sha(data), to)
+
+def fix(n, fr, to):
+    sent = '1' * 64
+    pn = 'pkgs/' + n + '/ix.sh'
+
+    with open(pn) as f:
+        data = f.read()
+
+    nd = subst_sha(data, sent).replace(fr, to)
+
+    if not nd or nd == data:
+        raise Exception('nothing to do')
+
+    with open(pn, 'w') as f:
+        f.write(nd)
+
+    out = call('./ix', 'build', n, '--rebuild=' + str(time.time()).replace('.', '_')).decode()
+    sha = parse_sha(out.replace(sent))
+    res = subst_sha(nd, sha)
+
+    with open(pn, 'w') as f:
+        f.write(res)
+
+pkg = sys.argv[1]
+fr = sys.argv[2]
+to = sys.argv[2]
+
+def it_recs():
+    with open('pkgs/die/scripts/dump.json') as f:
+        for l in f.read().split('\n'):
+            rec = json.loads(l)
+
+            if rec['pkg_name'].startswith(pkg):
+                yield rec
+
+def it_pkgs():
+    for c in it_recs():
+        yield c['ix_pkg_full_name']
+
+def it_files():
+    for p in it_pkgs():
+        yield from subprocess.check_output(['./ix', 'dep', p]).decode().split('\n')
+
+print(frozenset(it_files()))
