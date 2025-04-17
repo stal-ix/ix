@@ -15,6 +15,10 @@ sha:6a0721b52027415f53abcbf63b5c37776a0f774d9126d560a3ce76c0eb42903f
 
 {% block lib_deps %}
 lib/c
+{% if mingw32 %}
+lib/shim/dll(dll_name=user32)
+lib/shim/dll(dll_name=advapi32)
+{% endif %}
 {% endblock %}
 
 {% block host_libs %}
@@ -22,6 +26,7 @@ lib/c
 {% endblock %}
 
 {% block bld_tool %}
+bld/gettext
 bld/prepend
 bld/fake/binutils(bin_prefix={{target.gnu.three}}-)
 {% endblock %}
