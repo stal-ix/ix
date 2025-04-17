@@ -110,7 +110,7 @@ def process(pkgs, fr, to):
 
     files = list(sorted(frozenset(it_files(pkgs))))
 
-    if not any(check1(x, fr) for x in files):
+    if not any(check1('pkgs/' + x, fr) for x in files):
         print(f'nothing to do')
 
         return 1
