@@ -111,7 +111,7 @@ def process(pkg, fr, to):
     subprocess.check_call(['./ix', 'build'] + pkgs)
 
 try:
-    run(sys.argv[1], sys.argv[2], sys.argv[3])
+    process(sys.argv[1], sys.argv[2], sys.argv[3])
 except Exception as e:
     print('revert all')
     subprocess.check_call(['git', 'checkout', '.'])
