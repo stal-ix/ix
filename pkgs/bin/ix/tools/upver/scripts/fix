@@ -9,7 +9,7 @@ curl -k 'https://repology.org/api/v1/projects/?maintainer=anton%40samokhvalov.xy
 
     if ix_up ${l}; then
         git add -A
-        git commit -m "up"
+        git commit -m "up" || true
     else
         git checkout .
     fi
