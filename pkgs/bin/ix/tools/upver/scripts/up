@@ -45,6 +45,8 @@ def subst_sha(data, to):
     return data.replace(parse_sha(data), to)
 
 def fix1(pn, fr, to):
+    print(f'prepare {pn}')
+
     with open(pn) as f:
         data = f.read()
 
@@ -56,6 +58,8 @@ def fix1(pn, fr, to):
     if nd:
         with open(pn, 'w') as f:
             f.write(nd)
+
+        return True
 
 def fix2(pn, sha):
     with open(pn) as f:
@@ -85,9 +89,10 @@ def process(pkgs, fr, to):
 
     files = list(sorted(frozenset(it_files(pkgs))))
 
-    for f in files:
-        print(f'prepare {f}')
-        fix1('pkgs/' + f, fr, to)
+    if not any(fix1('pkgs/' + f, fr, to) for f in files):
+        print(f'nothing to do')
+
+        return
 
     run('git', 'diff')
 
