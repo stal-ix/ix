@@ -5,12 +5,12 @@ libxml2
 {% endblock %}
 
 {% block version %}
-2.13.7
+2.14.1
 {% endblock %}
 
 {% block fetch %}
 https://gitlab.gnome.org/GNOME/libxml2/-/archive/v{{self.version().strip()}}/libxml2-v{{self.version().strip()}}.tar.bz2
-sha:b940402ba9f89cd6ddc0a80b12d748587efef68e335ec7fb17b32303db868563
+sha:08d80cd5f5b340b0c6803239fafed480eccf33a0c9b474ae020912c87f19380e
 {% endblock %}
 
 {% block lib_deps %}
