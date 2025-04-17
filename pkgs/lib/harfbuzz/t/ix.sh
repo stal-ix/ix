@@ -5,12 +5,12 @@ harfbuzz
 {% endblock %}
 
 {% block version %}
-11.0.1
+11.1.0
 {% endblock %}
 
 {% block fetch %}
 https://github.com/harfbuzz/harfbuzz/archive/refs/tags/{{self.version().strip()}}.tar.gz
-sha:c9cd31190f4b2845937899df3035b3f9b2f775cbe76a6051be60411e59639d45
+sha:0342d39eb802e5b0d9f319edf7a8b3d9a814c94e0df5711d646cf7ab6e29288d
 {% endblock %}
 
 {% block lib_deps %}
