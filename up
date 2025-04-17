@@ -9,11 +9,17 @@ import subprocess
 GOOD = frozenset('0123456789abcdef')
 sent = '1' * 64
 
+def call1(*cmd):
+    return subprocess.check_output(list(cmd), stdin=None)
+
 def call(*cmd):
     try:
-        return subprocess.check_output(list(cmd), stderr=subprocess.STDOUT)
+        return subprocess.check_output(list(cmd), stdin=None, stderr=subprocess.STDOUT)
     except Exception as e:
         return e.stdout
+
+def run(*cmd):
+    return subprocess.check_call(list(cmd), stdin=None)
 
 def is_sha(x):
     x = x.removeprefix('sha:')
@@ -77,7 +83,7 @@ def it_pkgs(recs):
 
 def it_files(pkgs):
     for p in pkgs:
-        for x in subprocess.check_output(['./ix', 'dep', p]).decode().split('\n'):
+        for x in call1('./ix', 'dep', p).decode().split('\n'):
             if x.strip():
                 yield x.strip()
 
@@ -93,7 +99,7 @@ def process(pkg, fr, to):
 
         return
 
-    call('./ix', 'build', *pkgs).decode()
+    run('./ix', 'build', *pkgs)
 
     files = list(sorted(frozenset(it_files(pkgs))))
 
@@ -101,7 +107,7 @@ def process(pkg, fr, to):
         print(f'prepare {f}')
         fix1('pkgs/' + f, fr, to)
 
-    subprocess.check_call(['git', 'diff'])
+    run('git', 'diff')
 
     out = call('./ix', 'build', *pkgs).decode()
     sha = revstr(parse_sha(revstr(out.replace(sent, ''))))
@@ -110,12 +116,12 @@ def process(pkg, fr, to):
         print(f'fix {f}')
         fix2('pkgs/' + f, sha)
 
-    subprocess.check_call(['git', 'diff'])
-    subprocess.check_call(['./ix', 'build'] + pkgs)
+    run('git', 'diff')
+    run('./ix', 'build', *pkgs)
 
 try:
     process(sys.argv[1], sys.argv[2], sys.argv[3])
 except Exception as e:
     print('revert all')
-    subprocess.check_call(['git', 'checkout', '.'])
+    run('git', 'checkout', '.')
     raise e
