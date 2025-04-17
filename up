@@ -66,21 +66,6 @@ def fix2(pn, sha):
     with open(pn, 'w') as f:
         f.write(nd)
 
-def it_recs(pkg, fr):
-    with open('pkgs/die/scripts/dump.json') as f:
-        for l in f.read().split('\n'):
-            if fr not in l:
-                continue
-
-            rec = json.loads(l)
-
-            if rec['pkg_name'].startswith(pkg):
-                yield rec
-
-def it_pkgs(recs):
-    for c in recs:
-        yield c['ix_pkg_full_name']
-
 def it_files(pkgs):
     for p in pkgs:
         for x in call1('./ix', 'dep', p).decode().split('\n'):
@@ -90,10 +75,7 @@ def it_files(pkgs):
 def revstr(s):
     return ''.join(reversed(s))
 
-def process(pkg, fr, to):
-    recs = list(it_recs(pkg, fr))
-    pkgs = list(it_pkgs(recs))
-
+def process(pkgs, fr, to):
     if not pkgs:
         print(f'nothing to do')
 
@@ -119,9 +101,4 @@ def process(pkg, fr, to):
     run('git', 'diff')
     run('./ix', 'build', *pkgs)
 
-try:
-    process(sys.argv[1], sys.argv[2], sys.argv[3])
-except Exception as e:
-    print('revert all')
-    run('git', 'checkout', '.')
-    raise e
+process(sys.argv[3:], sys.argv[1], sys.argv[2])

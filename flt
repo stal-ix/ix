@@ -39,4 +39,4 @@ for name in sorted(data.keys()):
         elif len(rold) != len(rnew):
             print(f'skip {name} {old} {new}', file=sys.stderr)
         else:
-            print(' '.join(get_pkgs(rec)) + f' {old} {new}')
+            print(f'{old} {new} ' + ' '.join(get_pkgs(rec)))
