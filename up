@@ -37,27 +37,26 @@ def parse_sha(data):
 def subst_sha(data, to):
     return data.replace(parse_sha(data), to)
 
-def fix(n, fr, to):
-    sent = '1' * 64
-    pn = 'pkgs/' + n + '/ix.sh'
+sent = '1' * 64
 
+def fix1(pn, fr, to):
     with open(pn) as f:
         data = f.read()
 
     nd = subst_sha(data, sent).replace(fr, to)
 
-    if not nd or nd == data:
-        raise Exception('nothing to do')
+    if nd:
+        with open(pn, 'w') as f:
+            f.write(nd)
+
+def fix2(pn, sha):
+    with open(pn) as f:
+        data = f.read()
+
+    nd = data.replace(sent, sha)
 
     with open(pn, 'w') as f:
         f.write(nd)
-
-    out = call('./ix', 'build', n, '--rebuild=' + str(time.time()).replace('.', '_')).decode()
-    sha = parse_sha(out.replace(sent))
-    res = subst_sha(nd, sha)
-
-    with open(pn, 'w') as f:
-        f.write(res)
 
 def it_recs():
     pkg = sys.argv[1]
@@ -76,12 +75,26 @@ def it_pkgs():
     for c in it_recs():
         yield c['ix_pkg_full_name']
 
-def it_files():
-    for p in it_pkgs():
+def it_files(pkgs):
+    for p in pkgs:
         for x in subprocess.check_output(['./ix', 'dep', p]).decode().split('\n'):
             if x.strip():
                 yield x.strip()
 
-for f in frozenset(it_files()):
+pkgs = list(it_pkgs())
+files = frozenset(it_files(pkgs))
+
+for f in files:
+    print(f'prepare {f}')
+    fix1('pkgs/' + f, sys.argv[2], sys.argv[3])
+
+subprocess.check_call(['git', 'diff'])
+
+out = call('./ix', 'build', pkgs).decode()
+sha = parse_sha(out.replace(sent, ''))
+
+for f in files:
     print(f'fix {f}')
-    fix(os.path.dirname(f), sys.argv[2], sys.argv[3])
+    fix2('pkgs/' + f, sha)
+
+subprocess.check_call(['git', 'diff'])
