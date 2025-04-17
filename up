@@ -81,6 +81,9 @@ def it_files(pkgs):
             if x.strip():
                 yield x.strip()
 
+def revstr(s):
+    return ''.join(reversed(s))
+
 def process(pkg, fr, to):
     recs = list(it_recs(pkg, fr))
     pkgs = list(it_pkgs(recs))
@@ -101,7 +104,7 @@ def process(pkg, fr, to):
     subprocess.check_call(['git', 'diff'])
 
     out = call('./ix', 'build', *pkgs).decode()
-    sha = parse_sha(out.replace(sent, ''))
+    sha = revstr(parse_sha(revstr(out.replace(sent, ''))))
 
     for f in files:
         print(f'fix {f}')
