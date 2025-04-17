@@ -5,12 +5,12 @@ uriparser
 {% endblock %}
 
 {% block version %}
-0.9.6
+0.9.8
 {% endblock %}
 
 {% block fetch %}
 https://github.com/uriparser/uriparser/archive/refs/tags/uriparser-{{self.version().strip()}}.tar.gz
-sha:defaf550bf6fe05e89afb9814dccc6bd643a3b0a8308801a2c04b76682b87383
+sha:d6289387eaf2495e38ed80d709ad673fe04d63fad707badfee96f3d2dabc7c35
 {% endblock %}
 
 {% block lib_deps %}
