@@ -699,7 +699,9 @@ https://ftp.gnu.org/gnu/libmicrohttpd/libmicrohttpd-0.9.76.tar.gz
 https://ftp.gnu.org/gnu/libmicrohttpd/libmicrohttpd-1.0.0.tar.gz
 https://ftp.gnu.org/gnu/libmicrohttpd/libmicrohttpd-1.0.1.tar.gz
 https://ftp.gnu.org/gnu/libsigsegv/libsigsegv-2.13.tar.gz
+https://ftp.gnu.org/gnu/libsigsegv/libsigsegv-2.14.tar.gz
 https://ftp.gnu.org/gnu/libtasn1/libtasn1-4.19.0.tar.gz
+https://ftp.gnu.org/gnu/libtasn1/libtasn1-4.20.0.tar.gz
 https://ftp.gnu.org/gnu/libunistring/libunistring-1.1.tar.xz
 https://ftp.gnu.org/gnu/libunistring/libunistring-1.2.tar.xz
 https://ftp.gnu.org/gnu/libunistring/libunistring-1.3.tar.xz
@@ -1651,6 +1653,7 @@ https://github.com/cilium/pwru/archive/refs/tags/v1.0.4.tar.gz
 https://github.com/cilium/pwru/archive/refs/tags/v1.0.5.tar.gz
 https://github.com/cisco/libsrtp/archive/refs/tags/v1.6.0.tar.gz
 https://github.com/cisco/libsrtp/archive/refs/tags/v2.6.0.tar.gz
+https://github.com/cisco/libsrtp/archive/refs/tags/v2.7.0.tar.gz
 https://github.com/cisco/openh264/archive/refs/tags/v2.3.1.tar.gz
 https://github.com/cisco/openh264/archive/refs/tags/v2.4.0.tar.gz
 https://github.com/cisco/openh264/archive/refs/tags/v2.4.1.tar.gz
@@ -2154,6 +2157,7 @@ https://github.com/harfbuzz/harfbuzz/archive/refs/tags/10.3.0.tar.gz
 https://github.com/harfbuzz/harfbuzz/archive/refs/tags/10.4.0.tar.gz
 https://github.com/harfbuzz/harfbuzz/archive/refs/tags/11.0.0.tar.gz
 https://github.com/harfbuzz/harfbuzz/archive/refs/tags/11.0.1.tar.gz
+https://github.com/harfbuzz/harfbuzz/archive/refs/tags/11.1.0.tar.gz
 https://github.com/harfbuzz/harfbuzz/archive/refs/tags/8.2.0.tar.gz
 https://github.com/harfbuzz/harfbuzz/archive/refs/tags/8.2.1.tar.gz
 https://github.com/harfbuzz/harfbuzz/archive/refs/tags/8.2.2.tar.gz
@@ -2540,6 +2544,7 @@ https://github.com/libconfuse/libconfuse/archive/refs/tags/v3.3.tar.gz
 https://github.com/libcxxrt/libcxxrt/archive/fd484be8d1e94a1fcf6bc5c67e5c07b65ada19b6.tar.gz
 https://github.com/libevent/libevent/archive/refs/tags/release-2.1.12-stable.tar.gz
 https://github.com/libexif/libexif/archive/refs/tags/v0.6.24.tar.gz
+https://github.com/libexif/libexif/archive/refs/tags/v0.6.25.tar.gz
 https://github.com/libexpat/libexpat/archive/refs/tags/R_2_5_0.tar.gz
 https://github.com/libexpat/libexpat/archive/refs/tags/R_2_6_0.tar.gz
 https://github.com/libexpat/libexpat/archive/refs/tags/R_2_6_1.tar.gz
@@ -2643,6 +2648,7 @@ https://github.com/libsixel/libsixel/archive/refs/tags/v1.10.5.tar.gz
 https://github.com/libsndfile/libsamplerate/archive/refs/tags/0.2.2.tar.gz
 https://github.com/libsndfile/libsndfile/releases/download/1.2.2/libsndfile-1.2.2.tar.xz
 https://github.com/libssh2/libssh2/archive/refs/tags/libssh2-1.11.0.tar.gz
+https://github.com/libssh2/libssh2/archive/refs/tags/libssh2-1.11.1.tar.gz
 https://github.com/libtom/libtomcrypt/releases/download/v1.18.2/crypt-1.18.2.tar.xz
 https://github.com/libtom/libtommath/releases/download/v1.2.1/ltm-1.2.1.tar.xz
 https://github.com/libtom/libtommath/releases/download/v1.3.0/ltm-1.3.0.tar.xz
@@ -2896,6 +2902,7 @@ https://github.com/neomutt/neomutt/archive/refs/tags/20220429.tar.gz
 https://github.com/neomutt/neomutt/archive/refs/tags/20231006.tar.gz
 https://github.com/neovide/neovide/archive/refs/tags/0.12.2.tar.gz
 https://github.com/neovim/libtermkey/archive/refs/tags/v0.20.tar.gz
+https://github.com/neovim/libtermkey/archive/refs/tags/v0.22.tar.gz
 https://github.com/neovim/neovim/archive/refs/tags/v0.10.1.tar.gz
 https://github.com/neovim/neovim/archive/refs/tags/v0.10.2.tar.gz
 https://github.com/neovim/neovim/archive/refs/tags/v0.10.3.tar.gz
@@ -4005,11 +4012,13 @@ https://gitlab.freedesktop.org/serebit/waycheck/-/archive/v1.3.1/waycheck-v1.3.1
 https://gitlab.freedesktop.org/serebit/waycheck/-/archive/v1.4.0/waycheck-v1.4.0.tar.bz2
 https://gitlab.freedesktop.org/serebit/waycheck/-/archive/v1.6.0/waycheck-v1.6.0.tar.bz2
 https://gitlab.freedesktop.org/slirp/libslirp/-/archive/v4.7.0/libslirp-v4.7.0.tar.bz2
+https://gitlab.freedesktop.org/slirp/libslirp/-/archive/v4.9.0/libslirp-v4.9.0.tar.bz2
 https://gitlab.freedesktop.org/upower/upower/-/archive/v1.90.1/upower-v1.90.1.tar.bz2
 https://gitlab.freedesktop.org/upower/upower/-/archive/v1.90.7/upower-v1.90.7.tar.bz2
 https://gitlab.freedesktop.org/upower/upower/-/archive/v1.90.8/upower-v1.90.8.tar.bz2
 https://gitlab.freedesktop.org/upower/upower/-/archive/v1.90.9/upower-v1.90.9.tar.bz2
 https://gitlab.freedesktop.org/vyivel/libsfdo/-/archive/v0.1.3/libsfdo-v0.1.3.tar.bz2
+https://gitlab.freedesktop.org/vyivel/libsfdo/-/archive/v0.1.4/libsfdo-v0.1.4.tar.bz2
 https://gitlab.freedesktop.org/wayland/wayland-protocols/-/archive/1.32/wayland-protocols-1.32.tar.bz2
 https://gitlab.freedesktop.org/wayland/wayland-protocols/-/archive/1.33/wayland-protocols-1.33.tar.bz2
 https://gitlab.freedesktop.org/wayland/wayland-protocols/-/archive/1.34/wayland-protocols-1.34.tar.bz2
@@ -4287,6 +4296,7 @@ https://gnupg.org/ftp/gcrypt/libgpg-error/libgpg-error-1.49.tar.bz2
 https://gnupg.org/ftp/gcrypt/libgpg-error/libgpg-error-1.50.tar.bz2
 https://gnupg.org/ftp/gcrypt/libgpg-error/libgpg-error-1.51.tar.bz2
 https://gnupg.org/ftp/gcrypt/libgpg-error/libgpg-error-1.52.tar.bz2
+https://gnupg.org/ftp/gcrypt/libgpg-error/libgpg-error-1.53.tar.bz2
 https://golang.org/dl/go1.4-bootstrap-20170531.tar.gz
 https://hewlettpackard.github.io/wireless-tools/wireless_tools.29.tar.gz
 https://hg.sr.ht/~scoopta/wofi/archive/v1.2.4.tar.gz
@@ -4322,6 +4332,7 @@ https://imagemagick.org/archive/releases/ImageMagick-7.1.1-45.tar.xz
 https://imagemagick.org/archive/releases/ImageMagick-7.1.1-46.tar.xz
 https://imagemagick.org/archive/releases/ImageMagick-7.1.1-47.tar.xz
 https://invent.kde.org/frameworks/kwindowsystem/-/archive/v6.1.0/kwindowsystem-v6.1.0.tar.bz2
+https://invent.kde.org/frameworks/kwindowsystem/-/archive/v6.13.0/kwindowsystem-v6.13.0.tar.bz2
 https://invisible-island.net/archives/dialog/dialog-1.3-20240101.tgz
 https://invisible-island.net/archives/dialog/dialog-1.3-20250116.tgz
 https://invisible-mirror.net/archives/byacc/byacc-20211224.tgz
