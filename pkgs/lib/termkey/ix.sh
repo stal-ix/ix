@@ -5,12 +5,12 @@ libtermkey
 {% endblock %}
 
 {% block version %}
-0.20
+0.22
 {% endblock %}
 
 {% block fetch %}
 https://github.com/neovim/libtermkey/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:7567e1de8232bf4a35cb713456c63b329755b56182bdc2c9cebfa0f0192615dd
+sha:81cac2b685c9ada4ead4ea788fb69ff74fc1947ad188ed0264c646fe12b496ba
 {% endblock %}
 
 {% block lib_deps %}
