@@ -26,6 +26,11 @@ for name in sorted(data.keys()):
 
         continue
 
+    if 'unclassified' in name:
+        print(f'skip {name}', file=sys.stderr)
+
+        continue
+
     rec = data[name]
     old = get_our_ver(rec)
     new = get_new_ver(rec)
