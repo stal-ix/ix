@@ -5,12 +5,12 @@ SDL_mixer
 {% endblock %}
 
 {% block version %}
-2.8.0
+2.8.1
 {% endblock %}
 
 {% block fetch %}
 https://github.com/libsdl-org/SDL_mixer/archive/refs/tags/release-{{self.version().strip()}}.tar.gz
-sha:1146f00815c8ad22c3d48fbe31ae23dc5997936ebf30b4b3aeab6eab7ea1db3e
+sha:63804b4b2ba503865c0853f102231aeff489b1dfc6dea4750a69e2a8ef54b2bb
 {% endblock %}
 
 {% block lib_deps %}
