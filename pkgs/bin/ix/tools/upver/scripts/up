@@ -56,6 +56,9 @@ def fix1(pn, fr, to):
     with open(pn) as f:
         data = f.read()
 
+    if 'noauto' in data:
+        return 0
+
     if fr not in data:
         return 0
 
