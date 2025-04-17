@@ -110,7 +110,7 @@ def process(pkg, fr, to):
     run('git', 'diff')
 
     out = call('./ix', 'build', *pkgs).decode()
-    sha = revstr(parse_sha(revstr(out.replace(sent, ''))))
+    sha = revstr(parse_sha(revstr(out.replace(sent, '').replace('sha:', ''))))
 
     for f in files:
         print(f'fix {f}')
