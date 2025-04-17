@@ -83,7 +83,7 @@ def process(pkgs, fr, to):
     if not pkgs:
         print(f'nothing to do')
 
-        return
+        return 1
 
     run('./ix', 'build', *pkgs)
 
@@ -92,7 +92,7 @@ def process(pkgs, fr, to):
     if not any(fix1('pkgs/' + f, fr, to) for f in files):
         print(f'nothing to do')
 
-        return
+        return 1
 
     run('git', 'diff')
 
@@ -106,4 +106,6 @@ def process(pkgs, fr, to):
     run('git', 'diff')
     run('./ix', 'build', *pkgs)
 
-process(sys.argv[3:], sys.argv[1], sys.argv[2])
+    return 0
+
+sys.exit(process(sys.argv[3:], sys.argv[1], sys.argv[2]))
