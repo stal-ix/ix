@@ -5,12 +5,12 @@ tracy
 {% endblock %}
 
 {% block version %}
-0.10
+0.11.1
 {% endblock %}
 
 {% block fetch %}
 https://github.com/wolfpld/tracy/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:a76017d928f3f2727540fb950edd3b736caa97b12dbb4e5edce66542cbea6600
+sha:2c11ca816f2b756be2730f86b0092920419f3dabc7a7173829ffd897d91888a1
 {% endblock %}
 
 {% block lib_deps %}
