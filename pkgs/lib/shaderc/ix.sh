@@ -4,10 +4,12 @@
 shaderc
 {% endblock %}
 
-{% block version %}v2025.1{% endblock %}
+{% block version %}
+2025.1
+{% endblock %}
 
 {% block fetch %}
-https://github.com/google/shaderc/archive/refs/tags/{{self.version()}}.tar.gz
+https://github.com/google/shaderc/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 sha:d5c68b5de5d4c7859d9699054493e0a42a2a5eb21b425d63f7b7dd543db0d708
 {% endblock %}
 
@@ -35,9 +37,9 @@ sed '/examples/d;/third_party/d' -i CMakeLists.txt
 sed '/build-version/d' -i glslc/CMakeLists.txt
 
 cat <<- EOF > glslc/src/build-version.inc
-"{{self.version()}}\\n"
-"{{self.version()}}\\n"
-"{{self.version()}}\\n"
+"{{self.version().strip()}}\\n"
+"{{self.version().strip()}}\\n"
+"{{self.version().strip()}}\\n"
 EOF
 
 sed -e 's|env python|env python3|' -i utils/add_copyright.py
