@@ -5,7 +5,7 @@ nwg-dock
 {% endblock %}
 
 {% block version %}
-0.3.1
+0.4.3
 {% endblock %}
 
 {% block go_url %}
@@ -13,10 +13,15 @@ https://github.com/nwg-piotr/nwg-dock/archive/refs/tags/v{{self.version().strip(
 {% endblock %}
 
 {% block go_sha %}
-1a9425a48b43770aa5d24c106b0eea002fb9c299f9fb33773e2e3f7b24a256bd
+7fe1ab31d418bb19b21cc32bbb3f7046eda70768b48768d7301be32a813e6858
 {% endblock %}
 
 {% block install %}
 mkdir ${out}/bin
 cp nwg-dock ${out}/bin/
+{% endblock %}
+
+
+{% block go_tool %}
+bin/go/lang/24
 {% endblock %}
