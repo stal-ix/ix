@@ -1,7 +1,7 @@
 {% extends '//die/c/make.sh' %}
 
 {% block version %}
-1.9.2-2
+1.9.2
 {% endblock %}
 
 {% block pkg_name %}
@@ -9,8 +9,8 @@ timelimit
 {% endblock %}
 
 {% block fetch %}
-https://gitlab.com/timelimit/timelimit/-/archive/archive/debian/{{self.version().strip()}}/timelimit-archive-debian-{{self.version().strip()}}.tar.bz2
-sha:0e5a020872d72fa99a5cf6e9c63a75525a8157b1550be0311deefd47e5a369a2
+https://devel.ringlet.net/files/sys/timelimit/timelimit-{{self.version().strip()}}.tar.xz
+sha:9cdd1f06049b9e1a4b7a8a93a0d4d0e1920bd617e7cd005525261a3f91386796
 {% endblock %}
 
 {% block bld_libs %}
