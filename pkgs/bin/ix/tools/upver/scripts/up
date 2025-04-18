@@ -9,11 +9,11 @@ import subprocess
 GOOD = frozenset('0123456789abcdef')
 sent = '1' * 64
 go_latest = 24
-go_tool = f'''
+go_tool = '''
 {% block go_tool %}
 bin/go/lang/{go_latest}
 {% endblock %}
-'''
+'''.replace('{go_latest}', str(go_latest))
 
 def call1(*cmd):
     print(f'run {cmd}')
