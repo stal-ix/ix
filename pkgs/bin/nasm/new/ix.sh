@@ -16,3 +16,13 @@ sha:e525fa6fdc3df33cec6b499111f44afa78ce50bf260158580dcf014015a21ba9
 {% block bld_libs %}
 lib/c
 {% endblock %}
+
+{% block conf_ver %}
+2/71
+{% endblock %}
+
+{% block build %}
+{{super()}}
+>nasm.1
+>ndisasm.1
+{% endblock %}
