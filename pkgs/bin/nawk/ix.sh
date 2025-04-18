@@ -5,12 +5,12 @@ awk
 {% endblock %}
 
 {% block version %}
-20240422
+20250116
 {% endblock %}
 
 {% block fetch %}
 https://github.com/onetrueawk/awk/archive/refs/tags/{{self.version().strip()}}.tar.gz
-sha:4793404735db5ea79f790cf865bf4fe875f9c5c23b1b8da186349f54b3a32281
+sha:e031b1e1d2b230f276f975bffb923f0ea15f798c839d15a3f26a1a39448e32d7
 {% endblock %}
 
 {% block bld_tool %}
