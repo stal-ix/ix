@@ -5,12 +5,12 @@ less
 {% endblock %}
 
 {% block version %}
-661
+668
 {% endblock %}
 
 {% block fetch %}
 https://www.greenwoodsoftware.com/less/less-{{self.version().strip()}}.tar.gz
-sha:2b5f0167216e3ef0ffcb0c31c374e287eb035e4e223d5dae315c2783b6e738ed
+sha:2819f55564d86d542abbecafd82ff61e819a3eec967faa36cd3e68f1596a44b8
 {% endblock %}
 
 {% block bld_libs %}
