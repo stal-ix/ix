@@ -39,9 +39,7 @@ for name in sorted(data.keys()):
         rold = old.split('.')
         rnew = new.split('.')
 
-        if rold[0] != rnew[0]:
-            print(f'skip {name} {old} {new}', file=sys.stderr)
-        elif len(rold) != len(rnew):
+        if len(rold) > 1 and rold[0] != rnew[0]:
             print(f'skip {name} {old} {new}', file=sys.stderr)
         else:
             print(f'{old} {new} ' + ' '.join(get_pkgs(rec)))
