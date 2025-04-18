@@ -62,6 +62,13 @@ def check1(pn, fr):
 
     return True
 
+go_tool = '''
+
+{% block go_tool %}
+bin/go/lang/24
+{% endblock %}
+'''
+
 def fix1(pn, fr, to):
     print(f'prepare {pn}')
 
@@ -77,6 +84,14 @@ def fix1(pn, fr, to):
     nd = subst_sha(data, sent).replace(fr, to)
 
     if nd:
+        if 'go_url' in nd:
+            if 'go_tool' not in nd:
+                nd += go_tool
+
+            nd = nd.replace('bin/go/lang/21', 'bin/go/lang/24')
+            nd = nd.replace('bin/go/lang/22', 'bin/go/lang/24')
+            nd = nd.replace('bin/go/lang/23', 'bin/go/lang/24')
+
         with open(pn, 'w') as f:
             f.write(nd)
 
