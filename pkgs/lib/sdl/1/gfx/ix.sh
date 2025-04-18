@@ -5,12 +5,12 @@ SDL_gfx
 {% endblock %}
 
 {% block version %}
-2.0.25
+2.0.27
 {% endblock %}
 
 {% block fetch %}
 https://downloads.sourceforge.net/project/sdlgfx/SDL_gfx-{{self.version().strip()}}.tar.gz
-sha:556eedc06b6cf29eb495b6d27f2dcc51bf909ad82389ba2fa7bdc4dec89059c0
+sha:dfb15ac5f8ce7a4952dc12d2aed9747518c5e6b335c0e31636d23f93c630f419
 {% endblock %}
 
 {% block lib_deps %}

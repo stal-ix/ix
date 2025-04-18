@@ -5,12 +5,12 @@ neon
 {% endblock %}
 
 {% block version %}
-0.34.1
+0.34.2
 {% endblock %}
 
 {% block fetch %}
 https://notroj.github.io/neon/neon-{{self.version().strip()}}.tar.gz
-sha:29a9a8ee1468e7224eb4e4deb4445ef9c56940b41d50941570aac78a6021d461
+sha:f98ce3c74300be05eddf05dccbdca498b14d40c289f773195dd1a559cffa5856
 {% endblock %}
 
 {% block lib_deps %}

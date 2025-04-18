@@ -5,12 +5,12 @@ libssh2
 {% endblock %}
 
 {% block version %}
-1.11.0
+1.11.1
 {% endblock %}
 
 {% block fetch %}
 https://github.com/libssh2/libssh2/archive/refs/tags/libssh2-{{self.version().strip()}}.tar.gz
-sha:a842b6778b32d99e3ec83f8d7d1ac449853e41892f3c09bc3d7017e8e246b1cd
+sha:82b35c61c78b475647bdc981a183c5b5ab0d979e1caee94186e8f9150f2b0d0d
 {% endblock %}
 
 {% block lib_deps %}

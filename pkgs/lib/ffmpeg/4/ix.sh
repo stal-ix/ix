@@ -1,5 +1,7 @@
 {% extends '//die/c/autohell.sh' %}
 
+# noauto
+
 {% block fetch %}
 https://github.com/FFmpeg/FFmpeg/archive/refs/tags/n4.4.2.tar.gz
 sha:2378c6ec0b0b7b4df4f87411afe72997e9d6803b1884398c1ef665c69e01eaea
@@ -73,7 +75,7 @@ CXX=clang++
 mkdir -p ${out}/lib/cmake/FFmpeg
 cat << EOF > ${out}/lib/cmake/FFmpeg/FFmpegConfig.cmake
 set(ffmpeg_path "${out}")
-set(prefix "\${ffmpeg_path}") 
+set(prefix "\${ffmpeg_path}")
 set(exec_prefix "\${prefix}")
 set(libdir "\${exec_prefix}/lib")
 set(FFMPEG_PREFIX "\${ffmpeg_path}")

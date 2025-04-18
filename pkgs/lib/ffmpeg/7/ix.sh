@@ -1,5 +1,7 @@
 {% extends '//lib/ffmpeg/4/ix.sh' %}
 
+# noauto
+
 {% block pkg_name %}
 ffmpeg
 {% endblock %}

@@ -5,12 +5,12 @@ oniguruma
 {% endblock %}
 
 {% block version %}
-6.9.9
+6.9.10
 {% endblock %}
 
 {% block fetch %}
 https://github.com/kkos/oniguruma/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:001aa1202e78448f4c0bf1a48c76e556876b36f16d92ce3207eccfd61d99f2a0
+sha:ad92309d0d13eebc27f6592e875f3efbfa3dda2bf6da5952e00f0a2120c921a8
 {% endblock %}
 
 {% block env %}

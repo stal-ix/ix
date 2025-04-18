@@ -5,12 +5,12 @@ procps
 {% endblock %}
 
 {% block version %}
-4.0.4
+4.0.5
 {% endblock %}
 
 {% block fetch %}
 https://gitlab.com/procps-ng/procps/-/archive/v{{self.version().strip()}}/procps-v{{self.version().strip()}}.tar.bz2
-sha:08dbaaaae6afe8d5fbeee8aa3f8b460b01c5e09ce4706b161846f067103a2cf2
+sha:7e4b385e8f3e426089f3bb04e3bf150c710b875bd005474f034486b2379ce221
 {% endblock %}
 
 {% block lib_deps %}

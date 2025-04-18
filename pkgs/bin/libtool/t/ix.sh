@@ -1,5 +1,7 @@
 {% extends '//die/c/autohell.sh' %}
 
+# noauto
+
 {% block pkg_name %}
 libtool
 {% endblock %}

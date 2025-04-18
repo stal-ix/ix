@@ -1,0 +1,156 @@
+#!/usr/bin/env python3
+
+import os
+import sys
+import json
+import time
+import subprocess
+
+GOOD = frozenset('0123456789abcdef')
+sent = '1' * 64
+
+def call1(*cmd):
+    print(f'run {cmd}')
+    return subprocess.check_output(list(cmd), stdin=None)
+
+def call_eat(*cmd):
+    print(f'run {cmd}')
+    return subprocess.check_output(list(cmd), stdin=None, stderr=subprocess.STDOUT)
+
+def call(*cmd):
+    try:
+        return call_eat(*cmd)
+    except Exception as e:
+        return e.stdout
+
+def run(*cmd):
+    print(f'run {cmd}')
+    return subprocess.check_call(list(cmd), stdin=None)
+
+def is_sha(x):
+    x = x.removeprefix('sha:')
+
+    if len(x) != 64:
+        return False
+
+    for ch in x:
+        if ch not in GOOD:
+            return False
+
+    return True
+
+def parse_sha(data):
+    for l in data.split('\n'):
+        for x in l.split(' '):
+            if is_sha(x):
+                return x.removeprefix('sha:')
+
+    raise Exception('no sha')
+
+def subst_sha(data, to):
+    return data.replace(parse_sha(data), to)
+
+def check1(pn, fr):
+    with open(pn) as f:
+        data = f.read()
+
+    if 'noauto' in data:
+        return False
+
+    if fr not in data:
+        return False
+
+    return True
+
+go_tool = '''
+
+{% block go_tool %}
+bin/go/lang/24
+{% endblock %}
+'''
+
+def fix1(pn, fr, to):
+    print(f'prepare {pn}')
+
+    with open(pn) as f:
+        data = f.read()
+
+    if 'noauto' in data:
+        return 0
+
+    if fr not in data:
+        return 0
+
+    nd = subst_sha(data, sent).replace(fr, to)
+
+    if nd:
+        if 'go_url' in nd:
+            if 'go_tool' not in nd:
+                nd += go_tool
+
+            nd = nd.replace('bin/go/lang/21', 'bin/go/lang/24')
+            nd = nd.replace('bin/go/lang/22', 'bin/go/lang/24')
+            nd = nd.replace('bin/go/lang/23', 'bin/go/lang/24')
+
+        with open(pn, 'w') as f:
+            f.write(nd)
+
+        return 1
+
+    return 0
+
+def fix2(pn, sha):
+    with open(pn) as f:
+        data = f.read()
+
+    nd = data.replace(sent, sha)
+
+    with open(pn, 'w') as f:
+        f.write(nd)
+
+def it_files(pkgs):
+    for p in pkgs:
+        for x in call1('./ix', 'dep', p).decode().split('\n'):
+            if x.strip():
+                yield x.strip()
+
+def revstr(s):
+    return ''.join(reversed(s))
+
+def process(pkgs, fr, to):
+    if not pkgs:
+        print(f'nothing to do')
+
+        return 1
+
+    files = list(sorted(frozenset(it_files(pkgs))))
+
+    if not any(check1('pkgs/' + x, fr) for x in files):
+        print(f'nothing to do')
+
+        return 1
+
+    call_eat('./ix', 'build', *pkgs)
+
+    fixed = sum((fix1('pkgs/' + f, fr, to) for f in files), 0)
+
+    if fixed != 1:
+        print(f'nothing to do, fixed {fixed}')
+
+        return 1
+
+    run('git', 'diff')
+
+    out = call('./ix', 'build', *pkgs).decode()
+    sha = revstr(parse_sha(revstr(out.replace(sent, '').replace('sha:', ''))))
+
+    for f in files:
+        print(f'fix {f}')
+        fix2('pkgs/' + f, sha)
+
+    run('git', 'diff')
+    call_eat('./ix', 'build', *pkgs)
+
+    return 0
+
+sys.exit(process(sys.argv[3:], sys.argv[1], sys.argv[2]))

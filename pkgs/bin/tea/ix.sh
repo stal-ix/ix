@@ -5,12 +5,12 @@ tea-qt
 {% endblock %}
 
 {% block version %}
-63.0.2
+63.3.1
 {% endblock %}
 
 {% block fetch %}
 https://github.com/psemiletov/tea-qt/archive/refs/tags/{{self.version().strip()}}.tar.gz
-sha:0726011d96ff1a09424d618d47a0d2110b229c3c8dd8a9e8b91a48a811ce2bb2
+sha:105a4d02164279d61f868d8e07b382f598fa34918a588b35010dcdd1fa27e540
 {% endblock %}
 
 {% block bld_libs %}

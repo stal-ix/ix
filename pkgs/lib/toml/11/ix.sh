@@ -5,12 +5,12 @@ toml11
 {% endblock %}
 
 {% block version %}
-4.1.0
+4.4.0
 {% endblock %}
 
 {% block fetch %}
 https://github.com/ToruNiina/toml11/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:fb4c02cc708ae28e6fc3496514e3625e4b6738ed4ce40897710ca4d7a29de4f7
+sha:815bfe6792aa11a13a133b86e7f0f45edc5d71eb78f5fb6686c49c7f792b9049
 {% endblock %}
 
 {% block lib_deps %}

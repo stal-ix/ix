@@ -5,12 +5,12 @@ sdl12-compat
 {% endblock %}
 
 {% block version %}
-1.2.64
+1.2.68
 {% endblock %}
 
 {% block fetch %}
 https://github.com/libsdl-org/sdl12-compat/archive/refs/tags/release-{{self.version().strip()}}.tar.gz
-sha:3e308e817c7f0c6383225485e9a67bf1119ad684b8cc519038671cc1b5d29861
+sha:63c6e4dcc1154299e6f363c872900be7f3dcb3e42b9f8f57e05442ec3d89d02d
 {% endblock %}
 
 {% block lib_deps %}

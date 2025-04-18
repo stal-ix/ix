@@ -1,5 +1,7 @@
 {% extends '//die/c/cmake.sh' %}
 
+# noauto
+
 {% block version %}
 2.7.6
 {% endblock %}

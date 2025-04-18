@@ -1,16 +1,18 @@
 {% extends '//die/c/meson.sh' %}
 
+# noauto
+
 {% block pkg_name %}
 atkmm
 {% endblock %}
 
 {% block version %}
-2.28.3
+2.28.4
 {% endblock %}
 
 {% block fetch %}
 https://download.gnome.org/sources/atkmm/2.28/atkmm-{{self.version().strip()}}.tar.xz
-sha:7c2088b486a909be8da2b18304e56c5f90884d1343c8da7367ea5cd3258b9969
+sha:0a142a8128f83c001efb8014ee463e9a766054ef84686af953135e04d28fdab3
 {% endblock %}
 
 {% block lib_deps %}

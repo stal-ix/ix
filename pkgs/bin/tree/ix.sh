@@ -5,12 +5,12 @@ tree
 {% endblock %}
 
 {% block version %}
-2.1.1
+2.2.1
 {% endblock %}
 
 {% block fetch %}
 https://github.com/Old-Man-Programmer/tree/archive/refs/tags/{{self.version().strip()}}.tar.gz
-sha:1b70253994dca48a59d6ed99390132f4d55c486bf0658468f8520e7e63666a06
+sha:5caddcbca805131ff590b126d3218019882e4ca10bc9eb490bba51c05b9b3b75
 {% endblock %}
 
 {% block bld_libs %}

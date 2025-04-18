@@ -5,12 +5,12 @@ menu-cache
 {% endblock %}
 
 {% block version %}
-1.1.0
+1.1.1
 {% endblock %}
 
 {% block fetch %}
 https://github.com/lxde/menu-cache/archive/refs/tags/{{self.version().strip()}}.tar.gz
-sha:990857aa61a2894730e3749b6bc0f905967eed0c21aa2b62a7694007bdccbe8d
+sha:e8af90467df271c3c8700c840ca470ca2915699c6f213c502a87d74608748f08
 {% endblock %}
 
 {% block lib_deps %}

@@ -1,5 +1,7 @@
 {% extends '//lib/png/stock/ix.sh' %}
 
+# noauto
+
 {% block fetch %}
 {{super()}}
 https://downloads.sourceforge.net/project/libpng-apng/libpng16/1.6.43/libpng-1.6.43-apng.patch.gz

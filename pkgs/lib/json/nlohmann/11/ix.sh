@@ -1,5 +1,7 @@
 {% extends '//lib/json/nlohmann/t/ix.sh' %}
 
+# noauto
+
 {% block pkg_name %}
 json
 {% endblock %}

@@ -5,12 +5,12 @@ libsfdo
 {% endblock %}
 
 {% block version %}
-0.1.3
+0.1.4
 {% endblock %}
 
 {% block fetch %}
 https://gitlab.freedesktop.org/vyivel/libsfdo/-/archive/v{{self.version().strip()}}/libsfdo-v{{self.version().strip()}}.tar.bz2
-sha:3798657acd816e0e735703396b9c79d8dfcd4971bbc3dcad4292e1cfa468e084
+sha:155702f21c282693ead7818198fde194ab7c76e0cf1a21bc7b404e5f9ec2c369
 {% endblock %}
 
 {% block lib_deps %}

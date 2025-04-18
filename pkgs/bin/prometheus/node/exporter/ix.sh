@@ -5,7 +5,7 @@ node_exporter
 {% endblock %}
 
 {% block version %}
-1.7.0
+1.9.1
 {% endblock %}
 
 {% block go_url %}
@@ -13,10 +13,15 @@ https://github.com/prometheus/node_exporter/archive/refs/tags/v{{self.version().
 {% endblock %}
 
 {% block go_sha %}
-bd32277c8a742bb73a9e4be101439da7ecd3101887e3e378b16c6c48f0cbdd37
+243349e243ad0af465cdef883bca21a4c0532392469cd21a43f47aa585ccd42e
 {% endblock %}
 
 {% block install %}
 mkdir ${out}/bin
 cp node_exporter ${out}/bin/
+{% endblock %}
+
+
+{% block go_tool %}
+bin/go/lang/24
 {% endblock %}

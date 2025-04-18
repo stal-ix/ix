@@ -5,12 +5,12 @@ libtasn1
 {% endblock %}
 
 {% block version %}
-4.19.0
+4.20.0
 {% endblock %}
 
 {% block fetch %}
 https://ftp.gnu.org/gnu/libtasn1/libtasn1-{{self.version().strip()}}.tar.gz
-sha:1613f0ac1cf484d6ec0ce3b8c06d56263cc7242f1c23b30d82d23de345a63f7a
+sha:92e0e3bd4c02d4aeee76036b2ddd83f0c732ba4cda5cb71d583272b23587a76c
 {% endblock %}
 
 {% block bld_tool %}

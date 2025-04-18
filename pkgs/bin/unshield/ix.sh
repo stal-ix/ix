@@ -5,12 +5,12 @@ unshield
 {% endblock %}
 
 {% block version %}
-1.6.0
+1.6.2
 {% endblock %}
 
 {% block fetch %}
 https://github.com/twogood/unshield/archive/refs/tags/{{self.version().strip()}}.tar.gz
-sha:c3974a906ddbdc2805b3f6b36cb01f11fe0ede7a7702514acb2ad4a66ec7ae62
+sha:a937ef596ad94d16e7ed2c8553ad7be305798dcdcfd65ae60210b1e54ab51a2f
 {% endblock %}
 
 {% block bld_libs %}

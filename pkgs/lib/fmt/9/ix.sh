@@ -1,5 +1,7 @@
 {% extends '//lib/fmt/t/ix.sh' %}
 
+# noauto
+
 {% block pkg_name %}
 fmt
 {% endblock %}

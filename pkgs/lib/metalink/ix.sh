@@ -1,4 +1,4 @@
-{% extends '//die/c/autorehell.sh' %}
+{% extends '//die/c/autohell.sh' %}
 
 {% block pkg_name %}
 libmetalink

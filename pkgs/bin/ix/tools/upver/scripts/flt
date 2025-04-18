@@ -1,0 +1,47 @@
+#!/usr/bin/env python3
+
+import sys
+import json
+
+data = json.loads(sys.stdin.read())
+
+def get_new_ver(rec):
+    for x in rec:
+        if x['status'] == 'newest':
+            return x['version']
+
+def get_our_ver(rec):
+    for x in rec:
+        if x['repo'] == 'stalix':
+            return x['version']
+
+def get_pkgs(rec):
+    for x in rec:
+        if x['repo'] == 'stalix':
+            yield x['srcname']
+
+for name in sorted(data.keys()):
+    if ':' in name:
+        print(f'skip {name}', file=sys.stderr)
+
+        continue
+
+    if 'unclassified' in name:
+        print(f'skip {name}', file=sys.stderr)
+
+        continue
+
+    rec = data[name]
+    old = get_our_ver(rec)
+    new = get_new_ver(rec)
+
+    if old and new:
+        rold = old.split('.')
+        rnew = new.split('.')
+
+        if rold[0] != rnew[0]:
+            print(f'skip {name} {old} {new}', file=sys.stderr)
+        elif len(rold) != len(rnew):
+            print(f'skip {name} {old} {new}', file=sys.stderr)
+        else:
+            print(f'{old} {new} ' + ' '.join(get_pkgs(rec)))
