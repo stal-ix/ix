@@ -1,7 +1,5 @@
 {% extends '//die/c/autorehell.sh' %}
 
-# noauto
-
 {% block pkg_name %}
 ddcutil
 {% endblock %}
