@@ -26,6 +26,8 @@ lib/bsd/overlay
 {{super()}}
 sed -e 's|.*LINK.*XXH.*||' \
     -i ${out}/lib/cmake/ls-qpack/ls-qpack-config.cmake
+sed -e 's|.*LINK.*XXH.*||' \
+    -i ${out}/lib/cmake/ls-qpack/ls-qpack-targets.cmake
 {% endblock %}
 
 {% block cmake_flags %}
