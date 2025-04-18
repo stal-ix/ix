@@ -35,3 +35,7 @@ export CFLAGS="-Wno-incompatible-function-pointer-types ${CFLAGS}"
 {% block patch %}
 sed -e 's|GLIB_MKENUMS=.*|GLIB_MKENUMS=glib-mkenums|' -i configure.ac
 {% endblock %}
+
+{% block cpp_missing %}
+libxml/tree.h
+{% endblock %}
