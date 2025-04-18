@@ -5,12 +5,12 @@ lzip
 {% endblock %}
 
 {% block version %}
-1.24.1
+1.25
 {% endblock %}
 
 {% block fetch %}
 https://download.savannah.gnu.org/releases/lzip/lzip-{{self.version().strip()}}.tar.gz
-sha:30c9cb6a0605f479c496c376eb629a48b0a1696d167e3c1e090c5defa481b162
+sha:09418a6d8fb83f5113f5bd856e09703df5d37bae0308c668d0f346e3d3f0a56f
 {% endblock %}
 
 {% block bld_libs %}
