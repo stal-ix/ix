@@ -16,9 +16,7 @@ lib/basu
 
 {% block install %}
 {{super()}}
-{% if lib %}
 sed -e 's|PkgConfig::Systemd;||' \
     -e 's|Threads::Threads||' \
     -i ${out}/lib/cmake/sdbus-c++/sdbus-c++-targets.cmake
-{% endif %}
 {% endblock %}

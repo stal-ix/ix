@@ -1,5 +1,7 @@
 {% extends '//die/c/gn.sh' %}
 
+# noauto
+
 {% block pkg_name %}
 chromium
 {% endblock %}
