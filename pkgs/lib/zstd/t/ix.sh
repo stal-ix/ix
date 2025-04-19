@@ -5,12 +5,12 @@ zstd
 {% endblock %}
 
 {% block version %}
-1.5.6
+1.5.7
 {% endblock %}
 
 {% block fetch %}
 https://github.com/facebook/zstd/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:30f35f71c1203369dc979ecde0400ffea93c27391bfd2ac5a9715d2173d92ff7
+sha:37d7284556b20954e56e1ca85b80226768902e2edabd3b649e9e72c0c9012ee3
 {% endblock %}
 
 {% block lib_deps %}
