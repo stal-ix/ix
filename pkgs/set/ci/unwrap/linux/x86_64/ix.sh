@@ -186,7 +186,7 @@ bin/gdu
 bin/mount
 bin/btfs
 bin/tinc
-bin/yggdrasil/go
+#bin/yggdrasil/go
 bin/fire/jail
 bin/minio
 bin/dropbear/2024
