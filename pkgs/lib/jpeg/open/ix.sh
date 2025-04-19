@@ -12,7 +12,7 @@ BUILD_PKGCONFIG_FILES=ON
 
 {% block install %}
 {{super()}}
->${out}/lib/cmake/openjpeg-{{self.version()}}/OpenJPEGTargets.cmake
+>${out}/lib/cmake/openjpeg-2.5/OpenJPEGTargets.cmake
 for i in ${out}/lib/pkgconfig/*.pc; do
     sed -e 's|bindir.*||' -i ${i}
 done
