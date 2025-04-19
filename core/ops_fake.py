@@ -1,4 +1,7 @@
+import os
 import sys
+
+import core.utils as cu
 
 
 class Ops:
@@ -14,8 +17,9 @@ class Ops:
     def extract(self):
         return []
 
+    @cu.cached_method
     def boot_path(self):
-        return ''
+        return os.environ['PATH'] + ':/ix/realm/boot/bin:/bin:/usr/bin:/usr/local/bin'
 
     def fetch(self, sb, url, path, md5):
         return [url]
