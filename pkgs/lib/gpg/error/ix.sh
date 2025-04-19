@@ -5,12 +5,12 @@ libgpg-error
 {% endblock %}
 
 {% block version %}
-1.53
+1.54
 {% endblock %}
 
 {% block fetch %}
 https://gnupg.org/ftp/gcrypt/libgpg-error/libgpg-error-{{self.version().strip()}}.tar.bz2
-sha:6a0721b52027415f53abcbf63b5c37776a0f774d9126d560a3ce76c0eb42903f
+sha:607dcadfd722120188eca5cd07193158b9dd906b578a557817ec779bd5e16d0e
 {% endblock %}
 
 {% block lib_deps %}
