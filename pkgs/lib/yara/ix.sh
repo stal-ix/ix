@@ -5,12 +5,12 @@ yara
 {% endblock %}
 
 {% block version %}
-4.2.2
+4.5.2
 {% endblock %}
 
 {% block fetch %}
 https://github.com/VirusTotal/yara/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:20bd56857c4b037c4baae71587b7d22d0b7bbb075a7afa516ba35dae50fadd25
+sha:1f87056fcb10ee361936ee7b0548444f7974612ebb0e681734d8de7df055d1ec
 {% endblock %}
 
 {% block lib_deps %}
