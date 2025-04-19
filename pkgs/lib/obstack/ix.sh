@@ -5,12 +5,12 @@ musl-obstack
 {% endblock %}
 
 {% block version %}
-1.2.2
+1.2.3
 {% endblock %}
 
 {% block fetch %}
 https://github.com/void-linux/musl-obstack/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-md5:edee8cb45ca351de5759b85f2aca0f3b
+sha:9ffb3479b15df0170eba4480e51723c3961dbe0b461ec289744622db03a69395
 {% endblock %}
 
 {% block patch %}
