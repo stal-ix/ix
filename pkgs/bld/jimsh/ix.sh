@@ -1,4 +1,4 @@
-{% extends '//lib/sqlite/3/t/ix.sh' %}
+{% extends '//lib/sqlite/3/t/t/ix.sh' %}
 
 {% block build %}
 test -f jimsh0
