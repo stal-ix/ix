@@ -1,16 +1,18 @@
 {% extends '//die/c/autorehell.sh' %}
 
+# noauto
+
 {% block pkg_name %}
 musl-obstack
 {% endblock %}
 
 {% block version %}
-1.2.3
+1.2.2
 {% endblock %}
 
 {% block fetch %}
 https://github.com/void-linux/musl-obstack/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:9ffb3479b15df0170eba4480e51723c3961dbe0b461ec289744622db03a69395
+sha:6eac88961c58a53f31cccd719b97d1b33c65436c51664e760a9582e2659c1314
 {% endblock %}
 
 {% block patch %}
