@@ -20,12 +20,3 @@ sha:106642d8ccb36c5f7323b64e4152e9b719f7c0215acf5bfeac3d5e7f97b59254
 {% block lib_deps %}
 lib/c
 {% endblock %}
-
-{% block build_flags %}
-wrap_cc
-{% endblock %}
-
-{% block cpp_defines %}
-SQLITE_OMIT_LOAD_EXTENSION=1
-SQLITE_ENABLE_COLUMN_METADATA=1
-{% endblock %}
