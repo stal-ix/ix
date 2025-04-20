@@ -5,16 +5,12 @@ wrap_cc
 {% endblock %}
 
 {% block bld_tool %}
-{% if not native %}
 bld/jimsh
-{% endif %}
 {% endblock %}
 
 {% block configure_flags %}
-{% if not native %}
 --build={{host.gnu.three}}
 --host={{target.gnu.three}}
-{% endif %}
 {% endblock %}
 
 {% block cpp_defines %}
