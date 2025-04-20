@@ -1,7 +1,7 @@
 {% extends '//die/c/make.sh' %}
 
 {% block version %}
-18
+2024.05.22
 {% endblock %}
 
 {% block pkg_name %}
@@ -10,7 +10,7 @@ minijail
 
 {% block fetch %}
 https://github.com/google/minijail/archive/refs/tags/linux-v{{self.version().strip()}}.tar.gz
-sha:006ca2c78d11e12dd3d32705f97cda8c597ba38b32b09bfa10654b4dec6d1664
+sha:3136365ca3762da3e725f734fbdc544d8c82d6a763f803b2850ed3c993c216f0
 {% endblock %}
 
 {% block bld_libs %}

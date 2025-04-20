@@ -5,7 +5,7 @@ wtf
 {% endblock %}
 
 {% block version %}
-0.41.0
+0.43.0
 {% endblock %}
 
 {% block go_url %}
@@ -13,7 +13,7 @@ https://github.com/wtfutil/wtf/archive/refs/tags/v{{self.version().strip()}}.tar
 {% endblock %}
 
 {% block go_sha %}
-0cf27a0b438cb6d4f25806cb3f407c99d1f3a0722305347effda92715e11fdba
+f4c94dcbed1c8db336e30d23c7e71a7c3162d79cea2e8e857a898f1adc62e4ee
 {% endblock %}
 
 {% block go_build_flags %}
@@ -23,4 +23,8 @@ https://github.com/wtfutil/wtf/archive/refs/tags/v{{self.version().strip()}}.tar
 {% block install %}
 mkdir ${out}/bin
 cp wtfutil ${out}/bin/
+{% endblock %}
+
+{% block go_tool %}
+bin/go/lang/24
 {% endblock %}

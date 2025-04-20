@@ -5,12 +5,12 @@ lite-xl
 {% endblock %}
 
 {% block version %}
-2.1.5
+2.1.7
 {% endblock %}
 
 {% block fetch %}
 https://github.com/lite-xl/lite-xl/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:b1a4dc1ad8ed8e0c822a4381131a21db4f81edae84259da556a4435d0be12de9
+sha:69d1ce4c1d148d382ccb06f45feca2565c5c8fe9d0b1b9bc1cbe014f6826ce6b
 {% endblock %}
 
 {% block bld_libs %}

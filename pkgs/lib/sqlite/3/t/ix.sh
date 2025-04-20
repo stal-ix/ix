@@ -1,24 +1,17 @@
-{% extends '//die/c/autorehell.sh' %}
+{% extends 't/ix.sh' %}
 
-{% block pkg_name %}
-sqlite
+{% block bld_tool %}
+{{super()}}
+bld/jimsh
 {% endblock %}
 
-{% block version %}
-3470200
-{% endblock %}
-
-{% block fetch %}
-https://www.sqlite.org/2024/sqlite-autoconf-{{self.version().strip()}}.tar.gz
-sha:f1b2ee412c28d7472bc95ba996368d6f0cdcf00362affdadb27ed286c179540b
-{% endblock %}
-
-{% block lib_deps %}
-lib/c
+{% block build_flags %}
+wrap_cc
 {% endblock %}
 
 {% block configure_flags %}
---enable-dynamic-extensions=no
+--build={{host.gnu.three}}
+--host={{target.gnu.three}}
 {% endblock %}
 
 {% block cpp_defines %}

@@ -5,12 +5,12 @@ uClibc
 {% endblock %}
 
 {% block version %}
-0.9.33
+0.9.33.2
 {% endblock %}
 
 {% block fetch %}
 https://www.uclibc.org/downloads/uClibc-{{self.version().strip()}}.tar.xz
-sha:1588b603d87aa460eae64f097db71de534c3b9e8dd904e3989a6be82649f8bb2
+sha:62333167b79afb0b25a843513288c67b59547acf653e8fbe62ee64e71ebd1587
 {% endblock %}
 
 {% block build_flags %}

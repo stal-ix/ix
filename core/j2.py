@@ -96,6 +96,21 @@ def flt_strip_prefix(v, s):
     return v.removeprefix(s)
 
 
+def field(v, n):
+    return v.split('.')[n]
+
+
+def strip(v):
+    return v.strip()
+
+
+def pad(v, n):
+    while len(v) < n:
+        v += '0'
+
+    return v
+
+
 class Env(jinja2.Environment):
     def __init__(self, fs):
         jinja2.Environment.__init__(self, loader=fs, auto_reload=False, cache_size=-1, trim_blocks=True, lstrip_blocks=True, optimized=True)
@@ -112,7 +127,10 @@ class Env(jinja2.Environment):
         self.filters['eval'] = self.eval
         self.filters['defined'] = flt_defined
         self.filters['strip_prefix'] = flt_strip_prefix
+        self.filters['strip'] = strip
         self.filters['print'] = print
+        self.filters['field'] = field
+        self.filters['pad'] = pad
         self.kv = {}
 
     def eval(self, v, code, *args):

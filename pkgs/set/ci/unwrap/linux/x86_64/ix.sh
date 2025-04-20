@@ -48,6 +48,7 @@
 #}
 
 {% block run_deps %}
+bin/meson/1/7
 bin/dropbear/2025
 bin/dropbear/2024
 bin/dropbear/2022
@@ -185,7 +186,7 @@ bin/gdu
 bin/mount
 bin/btfs
 bin/tinc
-bin/yggdrasil/go
+#bin/yggdrasil/go
 bin/fire/jail
 bin/minio
 bin/dropbear/2024

@@ -7,16 +7,20 @@ libwpg
 {% endblock %}
 
 {% block version %}
-0.3.3
+0.3.4
 {% endblock %}
 
 {% block fetch %}
 https://downloads.sourceforge.net/project/libwpg/libwpg/libwpg-{{self.version().strip()}}/libwpg-{{self.version().strip()}}.tar.xz
-sha:99b3f7f8832385748582ab8130fbb9e5607bd5179bebf9751ac1d51a53099d1c
+sha:b55fda9440d1e070630eb2487d8b8697cf412c214a27caee9df69cec7c004de3
 {% endblock %}
 
 {% block lib_deps %}
 lib/c
 lib/wp/d
 lib/revenge
+{% endblock %}
+
+{% block conf_ver %}
+2/71
 {% endblock %}

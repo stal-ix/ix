@@ -1,3 +1,4 @@
+import os
 import itertools
 import multiprocessing
 
@@ -56,7 +57,7 @@ def slots(t):
 
 
 def build_graph(n):
-    t = multiprocessing.cpu_count()
+    t = int(os.environ.get('IX_THREADS') or multiprocessing.cpu_count())
 
     return {
         'nodes': list(validate(cu.iter_uniq_list(build_commands(n)))),

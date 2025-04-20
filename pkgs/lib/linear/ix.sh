@@ -5,11 +5,11 @@ liblinear
 {% endblock %}
 
 {% block version %}
-248
+2.48
 {% endblock %}
 
 {% block fetch %}
-https://github.com/cjlin1/liblinear/archive/v247/liblinear-{{self.version().strip()}}.tar.gz
+https://github.com/cjlin1/liblinear/archive/v247/liblinear-{{self.version().strip().replace('.', '')}}.tar.gz
 sha:a62c46f20a01a4626260462c905721f5471da4550d38c3b68ffacf0aa64067b4
 {% endblock %}
 
