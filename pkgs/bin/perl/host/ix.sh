@@ -50,16 +50,21 @@ sed -e 's|/lib/libc|/xxx/libc|g' \
 {% endblock %}
 
 {% block configure %}
-bash Configure -des    \
-    -Dusethreads       \
-    -Dprefix="${out}"  \
-    -Duseperlio        \
-    -Uusesfio          \
-    -Duseshrplib=false \
-    -Dusedl=false      \
-    -Duselibc=c        \
-    -Dlibc=c           \
-    -Dcc=clang
+bash Configure -des        \
+    -Dusethreads           \
+    -Dprefix="${out}"      \
+    -Duseperlio            \
+    -Uusesfio              \
+    -Duseshrplib=false     \
+    -Dusedl=false          \
+    -Duselibc=c            \
+    -Dlibc=c               \
+    -Dcc=clang             \
+    -Dglibpth="/nowhere"   \
+    -Dplibpth="/nowhere"   \
+    -Dxlibpth="/nowhere"   \
+    -Dlocincpth="/nowhere" \
+    -Dloclibpth="/nowhere"
 
 sed -e 's|/.*/bin/sh|/bin/sh|' -e 's|/.*/bin/sed|sed|' -i config.h
 
