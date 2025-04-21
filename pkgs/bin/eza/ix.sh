@@ -23,7 +23,3 @@ lib/git/2
 {% block cargo_bins %}
 eza
 {% endblock %}
-
-{% block go_tool %}
-bin/go/lang/24
-{% endblock %}

@@ -45,7 +45,3 @@ lib/zstd
 {% block rustc_ver %}
 86
 {% endblock %}
-
-{% block go_tool %}
-bin/go/lang/24
-{% endblock %}
