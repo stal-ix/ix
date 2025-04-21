@@ -1,7 +1,7 @@
 {% extends '//die/c/make.sh' %}
 
 {% block pkg_name %}
-download.php?file=miniupnpc
+miniupnpc
 {% endblock %}
 
 {% block version %}

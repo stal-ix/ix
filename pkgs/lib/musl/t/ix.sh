@@ -1,7 +1,16 @@
 {% extends '//die/c/configure.sh' %}
 
+{% block pkg_name %}
+musl
+{% endblock %}
+
+{% block version %}
+1.2.5
+{% endblock %}
+
 {% block fetch %}
-{% include 'ver.sh' %}
+http://musl.libc.org/releases/musl-{{self.version().strip()}}.tar.gz
+sha:a9a118bbe84d8764da0ea0d28b3ab3fae8477fc7e4085d90102b8596fc7c75e4
 {% endblock %}
 
 {% block lib_deps %}
