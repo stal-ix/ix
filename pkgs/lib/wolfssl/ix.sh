@@ -1,7 +1,15 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block pkg_name %}
+wolfssl
+{% endblock %}
+
+{% block version %}
+5.7.4
+{% endblock %}
+
 {% block fetch %}
-https://github.com/wolfSSL/wolfssl/archive/refs/tags/v5.7.4-stable.tar.gz
+https://github.com/wolfSSL/wolfssl/archive/refs/tags/v{{self.version().strip()}}-stable.tar.gz
 sha:6c70f6fab34e2f963a255c3637c0c6f7250df2d1ef7c34eebca4f8e8d7323399
 {% endblock %}
 

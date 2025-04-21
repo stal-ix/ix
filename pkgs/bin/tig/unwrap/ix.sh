@@ -5,12 +5,12 @@ tig
 {% endblock %}
 
 {% block version %}
-2.5.11
+2.5.12
 {% endblock %}
 
 {% block fetch %}
 https://github.com/jonas/tig/archive/refs/tags/tig-{{self.version().strip()}}.tar.gz
-sha:f54f720378c4105a5d3df257e59386b2bd892bd01437f2c5769bd1813300d0b3
+sha:5e18e0404d2cb9657e9eff6cdbb2a073fe11449ae8cc0c779be0151fd9d46bdd
 {% endblock %}
 
 {% block bld_libs %}

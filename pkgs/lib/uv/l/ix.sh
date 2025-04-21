@@ -1,5 +1,13 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+luv
+{% endblock %}
+
+{% block version %}
+1.48.0-2
+{% endblock %}
+
 {% block git_sha %}
 591d2be312f7e2c7912b772f172e3b4b71f6f0029b86f667dfcecfe717a647f6
 {% endblock %}
@@ -9,7 +17,7 @@ https://github.com/luvit/luv
 {% endblock %}
 
 {% block git_branch %}
-1.48.0-2
+{{self.version().strip()}}
 {% endblock %}
 
 {% block cmake_flags %}

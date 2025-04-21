@@ -1,7 +1,7 @@
 {% extends '//die/c/autohell.sh' %}
 
 {% block version %}
-4.2.8p15
+4.2.8p18
 {% endblock %}
 
 {% block pkg_name %}
@@ -10,7 +10,7 @@ ntp
 
 {% block fetch %}
 https://www.eecis.udel.edu/~ntp/ntp_spool/ntp4/ntp-{{self.version().strip()[:3]}}/ntp-{{self.version().strip()}}.tar.gz
-sha:f65840deab68614d5d7ceb2d0bb9304ff70dcdedd09abb79754a87536b849c19
+sha:cf84c5f3fb1a295284942624d823fffa634144e096cfc4f9969ac98ef5f468e5
 {% endblock %}
 
 {% block bld_libs %}
@@ -18,6 +18,7 @@ lib/c
 lib/cap
 lib/event
 lib/readline
+lib/bsd/overlay
 {% endblock %}
 
 {% block configure_flags %}

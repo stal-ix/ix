@@ -5,12 +5,12 @@ xarchiver
 {% endblock %}
 
 {% block version %}
-0.5.4.24
+0.5.4.25
 {% endblock %}
 
 {% block fetch %}
 https://github.com/ib/xarchiver/archive/refs/tags/{{self.version().strip()}}.tar.gz
-sha:ac5775309820196761a7fab4355251e0e74b7fa09156db279b3a440183f97bd7
+sha:dfd70c9081790399c32d9d716a55060e5136ff0ad1a94a84988a55fd6f771ceb
 {% endblock %}
 
 {% block bld_libs %}

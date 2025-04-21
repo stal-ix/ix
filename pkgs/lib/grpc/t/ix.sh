@@ -1,11 +1,19 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+grpc
+{% endblock %}
+
+{% block version %}
+1.62.2
+{% endblock %}
+
 {% block git_repo %}
 https://github.com/grpc/grpc
 {% endblock %}
 
 {% block git_branch %}
-v1.62.2
+v{{self.version().strip()}}
 {% endblock %}
 
 {% block git_sha %}

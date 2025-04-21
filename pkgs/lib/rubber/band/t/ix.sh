@@ -5,12 +5,12 @@ rubberband
 {% endblock %}
 
 {% block version %}
-3.1.1
+4.0.0
 {% endblock %}
 
 {% block fetch %}
 https://breakfastquay.com/files/releases/rubberband-{{self.version().strip()}}.tar.bz2
-sha:a442551fe7d26fb4a54dd1c34178733dc9c76ac9ce051a02325f5cb35d154381
+sha:af050313ee63bc18b35b2e064e5dce05b276aaf6d1aa2b8a82ced1fe2f8028e9
 {% endblock %}
 
 {% block lib_deps %}

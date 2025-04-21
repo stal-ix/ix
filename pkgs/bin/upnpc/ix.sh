@@ -1,8 +1,4 @@
-{% extends '//die/c/cmake.sh' %}
-
-{% block fetch %}
-{% include '//lib/mini/upnpc/new/ver.sh' %}
-{% endblock %}
+{% include '//lib/mini/upnpc/new/t/ix.sh' %}
 
 {% block unpack %}
 {{super()}}

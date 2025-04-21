@@ -1,11 +1,19 @@
 {% extends '//lib/mbedtls/t/ix.sh' %}
 
+{% block pkg_name %}
+mbedtls
+{% endblock %}
+
+{% block version %}
+3.6.3
+{% endblock %}
+
 {% block git_repo %}
 https://github.com/ARMmbed/mbedtls
 {% endblock %}
 
 {% block git_branch %}
-v3.6.3
+v{{self.version().strip()}}
 {% endblock %}
 
 {% block git_sha %}

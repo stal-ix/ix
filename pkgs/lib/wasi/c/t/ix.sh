@@ -1,11 +1,19 @@
 {% extends '//die/c/make.sh' %}
 
+{% block pkg_name %}
+wasi-libc
+{% endblock %}
+
+{% block version %}
+25
+{% endblock %}
+
 {% block git_repo %}
 https://github.com/WebAssembly/wasi-libc
 {% endblock %}
 
 {% block git_branch %}
-wasi-sdk-25
+wasi-sdk-{{self.version().strip()}}
 {% endblock %}
 
 {% block git_sha %}

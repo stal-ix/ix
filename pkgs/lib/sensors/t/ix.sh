@@ -1,7 +1,15 @@
 {% extends '//die/c/make.sh'  %}
 
+{% block pkg_name %}
+lm-sensors
+{% endblock %}
+
+{% block version %}
+3.6.2
+{% endblock %}
+
 {% block fetch %}
-https://github.com/hramrach/lm-sensors/archive/refs/tags/V3-6-2.tar.gz
+https://github.com/hramrach/lm-sensors/archive/refs/tags/V{{self.version().strip().replace('.', '-')}}.tar.gz
 sha:c6a0587e565778a40d88891928bf8943f27d353f382d5b745a997d635978a8f0
 {% endblock %}
 

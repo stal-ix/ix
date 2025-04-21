@@ -1,7 +1,15 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block pkg_name %}
+libevent
+{% endblock %}
+
+{% block version %}
+2.1.12
+{% endblock %}
+
 {% block fetch %}
-https://github.com/libevent/libevent/archive/refs/tags/release-2.1.12-stable.tar.gz
+https://github.com/libevent/libevent/archive/refs/tags/release-{{self.version().strip()}}-stable.tar.gz
 md5:0d5a27436bf7ff8253420c8cf09f47ca
 {% endblock %}
 

@@ -1,7 +1,15 @@
 {% extends '//lib/openssl/t/ix.sh' %}
 
+{% block pkg_name %}
+openssl
+{% endblock %}
+
+{% block version %}
+1.1.1j
+{% endblock %}
+
 {% block fetch %}
-https://www.openssl.org/source/old/1.1.1/openssl-1.1.1j.tar.gz
+https://www.openssl.org/source/old/{{self.version().strip()[:-1]}}/openssl-{{self.version().strip()}}.tar.gz
 md5:cccaa064ed860a2b4d1303811bf5c682
 {% endblock %}
 

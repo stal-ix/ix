@@ -1,11 +1,19 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block pkg_name %}
+sbc
+{% endblock %}
+
+{% block version %}
+2.0
+{% endblock %}
+
 {% block git_repo %}
 https://kernel.googlesource.com/pub/scm/bluetooth/sbc
 {% endblock %}
 
 {% block git_branch %}
-2.0
+{{self.version().strip()}}
 {% endblock %}
 
 {% block git_sha %}

@@ -1,7 +1,15 @@
 {% extends '//die/c/make.sh' %}
 
+{% block pkg_name %}
+mupdf
+{% endblock %}
+
+{% block version %}
+1.25.6
+{% endblock %}
+
 {% block fetch %}
-https://mupdf.com/downloads/archive/mupdf-1.25.6-source.tar.gz
+https://mupdf.com/downloads/archive/mupdf-{{self.version().strip()}}-source.tar.gz
 sha:5a51d8bd5ed690d3c8bf82b3c7c3f1cf5f9dde40887a36e3b5aa78a7e3ccd1bb
 {% endblock %}
 
