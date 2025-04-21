@@ -1,5 +1,7 @@
 {% extends '//lib/poppler/ix.sh' %}
 
+# noauto
+
 {% block pkg_name %}
 poppler
 {% endblock %}
