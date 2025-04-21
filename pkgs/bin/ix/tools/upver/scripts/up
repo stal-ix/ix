@@ -14,6 +14,12 @@ go_tool = '''
 bin/go/lang/{go_latest}
 {% endblock %}
 '''.replace('{go_latest}', str(go_latest))
+cargo_latest = 86
+cargo_tool = '''
+{% block cargoc_ver %}
+bld/cargo/{cargo_latest}
+{% endblock %}
+'''.replace('{cargo_latest}', str(cargo_latest))
 
 def call1(*cmd):
     print(f'run {cmd}')
@@ -83,7 +89,13 @@ def fix1(pn, fr, to):
     nd = subst_sha(data, sent).replace(fr, to)
 
     if nd:
-        if 'go_url' in nd:
+        if 'cargo_url' in nd:
+            if 'cargoc_ver' not in nd:
+                nd += cargo_tool
+
+            for ver in range(75, cargo_latest):
+                nd = nd.replace(f'bld/cargo/{ver}', f'bld/cargo/{cargo_latest}')
+        elif 'go_url' in nd:
             if 'go_tool' not in nd:
                 nd += go_tool
 
