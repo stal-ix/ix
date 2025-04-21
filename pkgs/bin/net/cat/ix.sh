@@ -1,7 +1,7 @@
 {% extends '//die/c/make.sh' %}
 
 {% block version %}
-1.218-3
+1.228-1
 {% endblock %}
 
 {% block pkg_name %}
@@ -10,7 +10,7 @@ netcat-openbsd
 
 {% block fetch %}
 https://salsa.debian.org/debian/netcat-openbsd/-/archive/debian/{{self.version().strip()}}/netcat-openbsd-debian-{{self.version().strip()}}.tar.bz2
-sha:609ac7de4078f8fe05306081f8f428e8e03441c675ba07ee4bddbe0730b7666d
+sha:3292f900bb7ca8ece205de0873df392a476617c441b90f1e16bd9602ea5fb3bc
 {% endblock %}
 
 {% block bld_libs %}
