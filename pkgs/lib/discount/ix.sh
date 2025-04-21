@@ -1,7 +1,15 @@
 {% extends '//die/c/make.sh' %}
 
+{% block pkg_name %}
+discount
+{% endblock %}
+
+{% block version %}
+2.2.7d
+{% endblock %}
+
 {% block fetch %}
-https://www.pell.portland.or.us/~orc/Code/discount/discount-2.2.7d.tar.bz2
+https://www.pell.portland.or.us/~orc/Code/discount/discount-{{self.version().strip()}}.tar.bz2
 sha:12a2041e96ae8cde17e08ff1a215d331580a5c58688daa5a18842b6bb5b77b52
 {% endblock %}
 
