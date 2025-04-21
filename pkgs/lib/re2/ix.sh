@@ -1,7 +1,15 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+re2
+{% endblock %}
+
+{% block version %}
+2024-04-01
+{% endblock %}
+
 {% block fetch %}
-https://github.com/google/re2/archive/refs/tags/2024-04-01.tar.gz
+https://github.com/google/re2/archive/refs/tags/{{self.version().strip().replace('.', '-')}}.tar.gz
 sha:3f6690c3393a613c3a0b566309cf04dc381d61470079b653afc47c67fb898198
 {% endblock %}
 

@@ -1,7 +1,15 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+libutp
+{% endblock %}
+
+{% block version %}
+c95738b1a6644b919e5b64d3ea9736cfc5894e0b
+{% endblock %}
+
 {% block fetch %}
-https://github.com/transmission/libutp/archive/c95738b1a6644b919e5b64d3ea9736cfc5894e0b.tar.gz
+https://github.com/transmission/libutp/archive/{{self.version().strip()}}.tar.gz
 sha:d856fde68828d52eb39df40e15ad5dc4efaa9a51d4121bcbfbe47fed2163d20a
 {% endblock %}
 

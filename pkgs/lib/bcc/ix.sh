@@ -1,11 +1,19 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+bcc
+{% endblock %}
+
+{% block version %}
+0.31.0
+{% endblock %}
+
 {% block git_repo %}
 https://github.com/iovisor/bcc
 {% endblock %}
 
 {% block git_branch %}
-v0.31.0
+v{{self.version().strip()}}
 {% endblock %}
 
 {% block git_sha %}

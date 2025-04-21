@@ -1,7 +1,15 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+x265
+{% endblock %}
+
+{% block version %}
+4.1
+{% endblock %}
+
 {% block fetch %}
-https://bitbucket.org/multicoreware/x265_git/downloads/x265_4.1.tar.gz
+https://bitbucket.org/multicoreware/x265_git/downloads/x265_{{self.version().strip()}}.tar.gz
 sha:a31699c6a89806b74b0151e5e6a7df65de4b49050482fe5ebf8a4379d7af8f29
 {% endblock %}
 
