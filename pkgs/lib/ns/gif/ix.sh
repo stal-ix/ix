@@ -5,12 +5,12 @@ libnsgif
 {% endblock %}
 
 {% block version %}
-0.2.1
+1.0.0
 {% endblock %}
 
 {% block fetch %}
 https://download.netsurf-browser.org/libs/releases/libnsgif-{{self.version().strip()}}-src.tar.gz
-sha:9eaea534cd70b53c5aaf45317ae957701685a6b4a88dbe34ed26f4faae879a4b
+sha:6014c842f61454d2f5a0f8243d7a8d7bde9b7da3ccfdca2d346c7c0b2c4c061b
 {% endblock %}
 
 {% block bld_tool %}
