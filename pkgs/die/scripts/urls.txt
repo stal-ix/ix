@@ -454,6 +454,7 @@ https://download.kde.org/stable/frameworks/5.99/extra-cmake-modules-5.99.0.tar.x
 https://download.kde.org/stable/plasma-wayland-protocols/plasma-wayland-protocols-1.17.0.tar.xz
 https://download.kde.org/stable/plasma-wayland-protocols/plasma-wayland-protocols-1.7.0.tar.xz
 https://download.netsurf-browser.org/libs/releases/libnsgif-0.2.1-src.tar.gz
+https://download.netsurf-browser.org/libs/releases/libnsgif-1.0.0-src.tar.gz
 https://download.open-mpi.org/release/hwloc/v2.12/hwloc-2.12.0.tar.bz2
 https://download.open-mpi.org/release/hwloc/v2.9/hwloc-2.9.0.tar.bz2
 https://download.oracle.com/berkeley-db/db-6.2.32.tar.gz
@@ -1357,6 +1358,7 @@ https://github.com/OpenVPN/openvpn/archive/refs/tags/v2.6.8.tar.gz
 https://github.com/OpenVPN/openvpn/archive/refs/tags/v2.6.9.tar.gz
 https://github.com/OpenVisualCloud/SVT-HEVC/archive/refs/tags/v1.5.1.tar.gz
 https://github.com/OpenVisualCloud/SVT-VP9/archive/refs/tags/v0.3.0.tar.gz
+https://github.com/Orc/discount/archive/refs/tags/v3.0.0d.tar.gz
 https://github.com/P-H-C/phc-winner-argon2/archive/refs/tags/20190702.tar.gz
 https://github.com/PCRE2Project/pcre2/releases/download/pcre2-10.45/pcre2-10.45.tar.bz2
 https://github.com/PhilipHazel/pcre2/archive/refs/tags/pcre2-10.42.tar.gz
@@ -4982,6 +4984,7 @@ https://www.python.org/ftp/python/3.10.13/Python-3.10.13.tar.xz
 https://www.python.org/ftp/python/3.13.0/Python-3.13.0.tar.xz
 https://www.python.org/ftp/python/3.13.0/Python-3.13.0rc1.tar.xz
 https://www.python.org/ftp/python/3.13.2/Python-3.13.2.tar.xz
+https://www.python.org/ftp/python/3.13.3/Python-3.13.3.tar.xz
 https://www.python.org/ftp/python/3.8.17/Python-3.8.17.tgz
 https://www.python.org/ftp/python/3.9.17/Python-3.9.17.tar.xz
 https://www.python.org/ftp/python/3.9.18/Python-3.9.18.tar.xz
