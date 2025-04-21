@@ -5,12 +5,12 @@ vis
 {% endblock %}
 
 {% block version %}
-0.8
+0.9
 {% endblock %}
 
 {% block fetch %}
 https://github.com/martanne/vis/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:61b10d40f15c4db2ce16e9acf291dbb762da4cbccf0cf2a80b28d9ac998a39bd
+sha:bd37ffba5535e665c1e883c25ba5f4e3307569b6d392c60f3c7d5dedd2efcfca
 {% endblock %}
 
 {% block bld_libs %}
