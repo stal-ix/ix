@@ -5,12 +5,12 @@ libmpack-lua
 {% endblock %}
 
 {% block version %}
-1.0.9
+1.0.12
 {% endblock %}
 
 {% block fetch %}
 https://github.com/libmpack/libmpack-lua/archive/refs/tags/{{self.version().strip()}}.tar.gz
-md5:a2d0d5e25aefc7b3b51c816de8096fd6
+sha:7c3f0a5fcd0d7c169fd7bc95978412628d8f59eb9da1d32cf3e8a864b741ec92
 {% endblock %}
 
 {% block lib_deps %}
