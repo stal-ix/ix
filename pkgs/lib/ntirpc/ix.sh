@@ -5,12 +5,12 @@ ntirpc
 {% endblock %}
 
 {% block version %}
-5.0
+6.3
 {% endblock %}
 
 {% block fetch %}
 https://github.com/nfs-ganesha/ntirpc/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:c831398aa282cfb8b554c3301e7edb3334342405d222d88e1bef255d9a2b964f
+sha:6f97a9992961c49a7994fd94e866bacddfc00d9369493cf071be46b33c7dbac5
 {% endblock %}
 
 {% block lib_deps %}
