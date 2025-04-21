@@ -49,6 +49,7 @@ http://ftp.gnu.org/gnu/screen/screen-5.0.0.tar.gz
 http://ftp.gnu.org/pub/gnu/gperf/gperf-3.1.tar.gz
 http://ftp.gnu.org/pub/gnu/gperf/gperf-3.2.1.tar.gz
 http://ftp.gnu.org/pub/gnu/gperf/gperf-3.2.tar.gz
+http://ftp.gnu.org/pub/gnu/gperf/gperf-3.3.tar.gz
 http://ftp.rpm.org/popt/releases/popt-1.x/popt-1.19.tar.gz
 http://geeqie.org/cgi-bin/gitweb.cgi?p=geeqie.git;a=snapshot;h=24407f761ea43dbe22436f8dd197df482a907af6;sf=tgz
 http://geeqie.org/cgi-bin/gitweb.cgi?p=geeqie.git;a=snapshot;h=f8c3ab333e95d45d4e68007256362dbdbdb3de3a;sf=tbz2
@@ -525,6 +526,7 @@ https://downloads.sourceforge.net/project/linux-diag/sysfsutils/2.1.0/sysfsutils
 https://downloads.sourceforge.net/project/maxima/Maxima-source/5.47.0-source/maxima-5.47.0.tar.gz
 https://downloads.sourceforge.net/project/mikmod/libmikmod/3.3.11.1/libmikmod-3.3.11.1.tar.gz
 https://downloads.sourceforge.net/project/mikmod/libmikmod/3.3.12/libmikmod-3.3.12.tar.gz
+https://downloads.sourceforge.net/project/mikmod/libmikmod/3.3.13/libmikmod-3.3.13.tar.gz
 https://downloads.sourceforge.net/project/mingw-w64/mingw-w64/mingw-w64-release/mingw-w64-v11.0.1.tar.bz2
 https://downloads.sourceforge.net/project/mpg123/mpg123/1.32.10/mpg123-1.32.10.tar.bz2
 https://downloads.sourceforge.net/project/mpg123/mpg123/1.32.7/mpg123-1.32.7.tar.bz2
@@ -2312,6 +2314,7 @@ https://github.com/hyprwm/hyprwayland-scanner/archive/refs/tags/v0.4.4.tar.gz
 https://github.com/ib/xarchiver/archive/refs/tags/0.5.4.20.tar.gz
 https://github.com/ib/xarchiver/archive/refs/tags/0.5.4.23.tar.gz
 https://github.com/ib/xarchiver/archive/refs/tags/0.5.4.24.tar.gz
+https://github.com/ib/xarchiver/archive/refs/tags/0.5.4.25.tar.gz
 https://github.com/ihhub/fheroes2/archive/refs/tags/1.0.10.tar.gz
 https://github.com/ihhub/fheroes2/archive/refs/tags/1.0.11.tar.gz
 https://github.com/ihhub/fheroes2/archive/refs/tags/1.0.12.tar.gz
@@ -2376,6 +2379,7 @@ https://github.com/janmojzis/tinyssh/archive/refs/tags/20241111.tar.gz
 https://github.com/janmojzis/tinyssh/archive/refs/tags/20241201.tar.gz
 https://github.com/janmojzis/tinyssh/archive/refs/tags/20250126.tar.gz
 https://github.com/janmojzis/tinyssh/archive/refs/tags/20250201.tar.gz
+https://github.com/janmojzis/tinyssh/archive/refs/tags/20250411.tar.gz
 https://github.com/jarun/nnn/archive/refs/tags/v4.9.tar.gz
 https://github.com/jarun/nnn/archive/refs/tags/v5.0.tar.gz
 https://github.com/jarun/nnn/archive/refs/tags/v5.1.tar.gz
@@ -2431,6 +2435,7 @@ https://github.com/johnsonjh/OpenVi/archive/refs/tags/7.5.29.tar.gz
 https://github.com/johnsonjh/OpenVi/archive/refs/tags/7.6.30.tar.gz
 https://github.com/johnsonjh/OpenVi/archive/refs/tags/7.6.31.tar.gz
 https://github.com/jonas/tig/archive/refs/tags/tig-2.5.11.tar.gz
+https://github.com/jonas/tig/archive/refs/tags/tig-2.5.12.tar.gz
 https://github.com/jonas/tig/archive/refs/tags/tig-2.5.8.tar.gz
 https://github.com/jonas/tig/archive/refs/tags/tig-2.5.9.tar.gz
 https://github.com/joncampbell123/dosbox-x/archive/refs/tags/dosbox-x-v2023.10.06.tar.gz
@@ -2813,6 +2818,7 @@ https://github.com/magicant/yash/releases/download/2.58/yash-2.58.tar.xz
 https://github.com/managarm/mlibc/archive/refs/tags/3.0.0-rc2.tar.gz
 https://github.com/maratik123/runsvdir/archive/0cbddbc386a66f9bbec1be0e1277d6ad85224eb2.zip
 https://github.com/martanne/vis/archive/refs/tags/v0.8.tar.gz
+https://github.com/martanne/vis/archive/refs/tags/v0.9.tar.gz
 https://github.com/martijnvanbrummelen/nwipe/archive/refs/tags/v0.34.tar.gz
 https://github.com/martijnvanbrummelen/nwipe/archive/refs/tags/v0.35.tar.gz
 https://github.com/martijnvanbrummelen/nwipe/archive/refs/tags/v0.36.tar.gz
