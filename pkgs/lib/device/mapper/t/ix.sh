@@ -5,12 +5,12 @@ lvm2
 {% endblock %}
 
 {% block version %}
-2.03.28
+2.03.31
 {% endblock %}
 
 {% block fetch %}
 http://mirrors.kernel.org/sourceware/lvm2/LVM2.{{self.version().strip()}}.tgz
-sha:b822baff6b62df36382c717ceba98a2688ebb31bf2b768f3ffa2b6d5e2557242
+sha:5db2956a00fbf87d92274cccc92436387ec0c3faadece7413ece1ba1c10c98ff
 {% endblock %}
 
 {% block lib_deps %}
