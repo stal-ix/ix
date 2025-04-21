@@ -1,7 +1,15 @@
 {% extends '//die/c/make.sh' %}
 
+{% block pkg_name %}
+ladspa_sdk
+{% endblock %}
+
+{% block version %}
+1.17
+{% endblock %}
+
 {% block fetch %}
-http://www.ladspa.org/download/ladspa_sdk_1.17.tgz
+http://www.ladspa.org/download/ladspa_sdk_{{self.version().script()}}.tgz
 sha:27d24f279e4b81bd17ecbdcc38e4c42991bb388826c0b200067ce0eb59d3da5b
 {% endblock %}
 

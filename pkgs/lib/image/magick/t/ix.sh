@@ -1,7 +1,15 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block pkg_name %}
+ImageMagick
+{% endblock %}
+
+{% block version %}
+7.1.1-47
+{% endblock %}
+
 {% block fetch %}
-https://imagemagick.org/archive/releases/ImageMagick-7.1.1-47.tar.xz
+https://imagemagick.org/archive/releases/ImageMagick-{{self.version().strip()}}.tar.xz
 sha:2396cd3c4237cfbc09a89d31d1cee157ee11fbc8ec1e540530e10175cb707160
 {% endblock %}
 

@@ -1,7 +1,15 @@
 {% extends '//die/c/make.sh' %}
 
+{% block pkg_name %}
+LMDB
+{% endblock %}
+
+{% block version %}
+0.9.33
+{% endblock %}
+
 {% block fetch %}
-https://git.openldap.org/openldap/openldap/-/archive/LMDB_0.9.33/openldap-LMDB_0.9.33.tar.bz2
+https://git.openldap.org/openldap/openldap/-/archive/LMDB_{{self.version().strip()}}/openldap-LMDB_{{self.version().strip()}}.tar.bz2
 sha:d19d52725800177b89d235161c0af8ae8b2932207e3c9eb87e95b61f1925206d
 {% endblock %}
 

@@ -1,7 +1,15 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+libdispatch
+{% endblock %}
+
+{% block version %}
+6.1
+{% endblock %}
+
 {% block fetch %}
-https://github.com/apple/swift-corelibs-libdispatch/archive/refs/tags/swift-6.1-RELEASE.tar.gz
+https://github.com/apple/swift-corelibs-libdispatch/archive/refs/tags/swift-{{self.version().strip()}}-RELEASE.tar.gz
 sha:5bba8d7442890f7dbd37a9245340c5bb0c4c924dee6180ba30385b24e3fdf121
 {% endblock %}
 

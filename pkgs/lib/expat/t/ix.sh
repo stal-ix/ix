@@ -1,7 +1,15 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+libexpat
+{% endblock %}
+
+{% block version %}
+2.7.1
+{% endblock %}
+
 {% block fetch %}
-https://github.com/libexpat/libexpat/archive/refs/tags/R_2_7_1.tar.gz
+https://github.com/libexpat/libexpat/archive/refs/tags/R_{{self.version().strip().replace('.', '_')}}.tar.gz
 sha:85372797ff0673a8fc4a6be16466bb5a0ca28c0dcf3c6f7ac1686b4a3ba2aabb
 {% endblock %}
 
