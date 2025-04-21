@@ -5,7 +5,7 @@ ruff
 {% endblock %}
 
 {% block version %}
-0.11.5
+0.11.6
 {% endblock %}
 
 {% block cargo_url %}
@@ -13,7 +13,7 @@ https://github.com/astral-sh/ruff/archive/refs/tags/{{self.version().strip()}}.t
 {% endblock %}
 
 {% block cargo_sha %}
-4f6e8306bbc7541af73ee699a3e8a71202552fa5090588160e4529d0d3194868
+b1dc21ca690a1ba78ea328f8f56ea516680b531440eae279db8d374147ed3408
 {% endblock %}
 
 {% block cargo_bins %}
@@ -44,4 +44,8 @@ lib/zstd
 
 {% block rustc_ver %}
 86
+{% endblock %}
+
+{% block go_tool %}
+bin/go/lang/24
 {% endblock %}
