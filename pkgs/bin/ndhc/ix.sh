@@ -1,7 +1,7 @@
 {% extends '//die/c/make.sh' %}
 
 {% block version %}
-2022-03-08-v2
+2024.05.24
 {% endblock %}
 
 {% block pkg_name %}
@@ -9,8 +9,8 @@ ndhc
 {% endblock %}
 
 {% block fetch %}
-https://github.com/niklata/ndhc/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:24892e29ce27a57dfff8dc3a854da64220dee4ac770dd3f94a2866b4601b57a5
+https://github.com/niklata/ndhc/archive/refs/tags/v{{self.version().strip().replace('.', '-')}}.tar.gz
+sha:4612e1b01e65e3c64b39e39d8e67e46e571ed651b33e3087d6c0d257cd25644c
 {% endblock %}
 
 {% block bld_libs %}
