@@ -79,3 +79,7 @@ export CPPFLAGS="-I${out}/lib/include \${CPPFLAGS}"
 export CPPFLAGS="-I${out}/lib/gstreamer-1.0/include \${CPPFLAGS}"
 export CPPFLAGS="-I${out}/include/gstreamer-1.0 \${CPPFLAGS}"
 {% endblock %}
+
+{% block c_rename_symbol %}
+properties
+{% endblock %}
