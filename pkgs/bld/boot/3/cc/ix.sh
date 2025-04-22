@@ -8,7 +8,7 @@ bld/boot/2/env
 echo "{{ix_boot_path}}"
 mkdir ${out}/bin
 {% if ix_boot_tool('clang++') %}
-{% for x in ['clang', 'clang++', 'clang-cpp', 'llvm-ar', 'llvm-nm', 'llvm-ranlib'] %}
+{% for x in ['clang', 'clang++', 'clang-cpp', 'llvm-ar', 'llvm-nm', 'llvm-ranlib', 'lld'] %}
 {% if not ix_boot_tool(x) %}
 {{ix.error(x + ' not in path')}}
 {% endif %}
