@@ -1,7 +1,7 @@
 {% extends '//die/c/autohell.sh' %}
 
 {% block pkg_name %}
-iconv
+libiconv
 {% endblock %}
 
 {% block version %}
