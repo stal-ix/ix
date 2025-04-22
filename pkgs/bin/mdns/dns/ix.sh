@@ -1,7 +1,15 @@
 {% extends '//die/go/build.sh' %}
 
+{% block pkg_name %}
+mdns2dns
+{% endblock %}
+
+{% block version %}
+1
+{% endblock %}
+
 {% block go_url %}
-https://github.com/pg83/mdns2dns/archive/refs/tags/v1.tar.gz
+https://github.com/pg83/mdns2dns/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 {% endblock %}
 
 {% block go_sha %}

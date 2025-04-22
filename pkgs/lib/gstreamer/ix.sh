@@ -5,12 +5,12 @@ gstreamer
 {% endblock %}
 
 {% block version %}
-1.24.12
+1.26.0
 {% endblock %}
 
 {% block fetch %}
 https://gitlab.freedesktop.org/gstreamer/gstreamer/-/archive/{{self.version().strip()}}/gstreamer-{{self.version().strip()}}.tar.gz
-sha:e9394dc14d981891bd92d72a1d03c5c0ca5d04febcbb83b01fb62c67b21bc449
+sha:a469a8d2ea58b361bed29c585dbb1b834cbffb0e82c9c7e28dd75999297c579c
 {% endblock %}
 
 {% block lib_deps %}
@@ -78,4 +78,8 @@ sed -e "s|'auto'|'disabled'|g" \
 export CPPFLAGS="-I${out}/lib/include \${CPPFLAGS}"
 export CPPFLAGS="-I${out}/lib/gstreamer-1.0/include \${CPPFLAGS}"
 export CPPFLAGS="-I${out}/include/gstreamer-1.0 \${CPPFLAGS}"
+{% endblock %}
+
+{% block c_rename_symbol %}
+properties
 {% endblock %}

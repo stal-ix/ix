@@ -5,7 +5,7 @@ re2
 {% endblock %}
 
 {% block version %}
-2024-04-01
+2024.04.01
 {% endblock %}
 
 {% block fetch %}

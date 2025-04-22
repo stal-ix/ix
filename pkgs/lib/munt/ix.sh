@@ -5,12 +5,12 @@ libmt32emu
 {% endblock %}
 
 {% block version %}
-2.7.1
+2.7.2
 {% endblock %}
 
 {% block fetch %}
 https://github.com/munt/munt/archive/refs/tags/libmt32emu_{{self.version().strip().replace('.', '_')}}.tar.gz
-sha:e4524d52d6799a4e32a961a2e92074f14adcb2f110a4e7a06bede77050cfdaf4
+sha:3b0beff64e83d2b4879baba2326eed1300edc9663b3dc52621fc74d196ca9a80
 {% endblock %}
 
 {% block step_unpack %}

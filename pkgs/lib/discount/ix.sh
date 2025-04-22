@@ -5,12 +5,12 @@ discount
 {% endblock %}
 
 {% block version %}
-2.2.7d
+3.0.0d
 {% endblock %}
 
 {% block fetch %}
-https://www.pell.portland.or.us/~orc/Code/discount/discount-{{self.version().strip()}}.tar.bz2
-sha:12a2041e96ae8cde17e08ff1a215d331580a5c58688daa5a18842b6bb5b77b52
+https://github.com/Orc/discount/archive/refs/tags/v{{self.version().strip()}}.tar.gz
+sha:0ed8cc27ac5d46dc6a8beedd5e5673ac8b466a6474bdb7d35f37c815f670385f
 {% endblock %}
 
 {% block lib_deps %}

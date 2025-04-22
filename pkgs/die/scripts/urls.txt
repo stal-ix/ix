@@ -84,6 +84,7 @@ http://mirrors.kernel.org/sourceware/lvm2/LVM2.2.03.25.tgz
 http://mirrors.kernel.org/sourceware/lvm2/LVM2.2.03.26.tgz
 http://mirrors.kernel.org/sourceware/lvm2/LVM2.2.03.27.tgz
 http://mirrors.kernel.org/sourceware/lvm2/LVM2.2.03.28.tgz
+http://mirrors.kernel.org/sourceware/lvm2/LVM2.2.03.31.tgz
 http://musl.libc.org/releases/musl-1.2.4.tar.gz
 http://musl.libc.org/releases/musl-1.2.5.tar.gz
 http://penma.de/code/gettext-stub/gettext-stub-1.tar.gz
@@ -134,6 +135,7 @@ http://www.haproxy.org/download/3.1/src/haproxy-3.1.4.tar.gz
 http://www.haproxy.org/download/3.1/src/haproxy-3.1.6.tar.gz
 http://www.haproxy.org/download/3.1/src/haproxy-3.1.7.tar.gz
 http://www.ijg.org/files/jpegsrc.v9e.tar.gz
+http://www.ijg.org/files/jpegsrc.v9f.tar.gz
 http://www.inf.puc-rio.br/~roberto/lpeg/lpeg-1.1.0.tar.gz
 http://www.jedrea.com/chmlib/chmlib-0.40.tar.bz2
 http://www.kroah.com/linux/usb/usbview-3.1.tar.gz
@@ -452,6 +454,7 @@ https://download.kde.org/stable/frameworks/5.99/extra-cmake-modules-5.99.0.tar.x
 https://download.kde.org/stable/plasma-wayland-protocols/plasma-wayland-protocols-1.17.0.tar.xz
 https://download.kde.org/stable/plasma-wayland-protocols/plasma-wayland-protocols-1.7.0.tar.xz
 https://download.netsurf-browser.org/libs/releases/libnsgif-0.2.1-src.tar.gz
+https://download.netsurf-browser.org/libs/releases/libnsgif-1.0.0-src.tar.gz
 https://download.open-mpi.org/release/hwloc/v2.12/hwloc-2.12.0.tar.bz2
 https://download.open-mpi.org/release/hwloc/v2.9/hwloc-2.9.0.tar.bz2
 https://download.oracle.com/berkeley-db/db-6.2.32.tar.gz
@@ -1209,6 +1212,7 @@ https://github.com/Kistler-Group/sdbus-cpp/archive/refs/tags/v1.4.0.tar.gz
 https://github.com/Kistler-Group/sdbus-cpp/archive/refs/tags/v1.5.0.tar.gz
 https://github.com/Kistler-Group/sdbus-cpp/archive/refs/tags/v1.6.0.tar.gz
 https://github.com/Kistler-Group/sdbus-cpp/archive/refs/tags/v2.0.0.tar.gz
+https://github.com/Kistler-Group/sdbus-cpp/archive/refs/tags/v2.1.0.tar.gz
 https://github.com/Kitware/CMake/archive/refs/tags/v3.24.1.tar.gz
 https://github.com/Kitware/CMake/archive/refs/tags/v3.27.4.tar.gz
 https://github.com/Kitware/CMake/archive/refs/tags/v3.27.5.tar.gz
@@ -1355,6 +1359,7 @@ https://github.com/OpenVPN/openvpn/archive/refs/tags/v2.6.8.tar.gz
 https://github.com/OpenVPN/openvpn/archive/refs/tags/v2.6.9.tar.gz
 https://github.com/OpenVisualCloud/SVT-HEVC/archive/refs/tags/v1.5.1.tar.gz
 https://github.com/OpenVisualCloud/SVT-VP9/archive/refs/tags/v0.3.0.tar.gz
+https://github.com/Orc/discount/archive/refs/tags/v3.0.0d.tar.gz
 https://github.com/P-H-C/phc-winner-argon2/archive/refs/tags/20190702.tar.gz
 https://github.com/PCRE2Project/pcre2/releases/download/pcre2-10.45/pcre2-10.45.tar.bz2
 https://github.com/PhilipHazel/pcre2/archive/refs/tags/pcre2-10.42.tar.gz
@@ -2738,6 +2743,7 @@ https://github.com/linux-nvme/nvme-cli/archive/refs/tags/v2.8.tar.gz
 https://github.com/linux-nvme/nvme-cli/archive/refs/tags/v2.9.1.tar.gz
 https://github.com/linux-pam/linux-pam/archive/refs/tags/v1.5.3.tar.gz
 https://github.com/linux-pam/linux-pam/archive/refs/tags/v1.6.1.tar.gz
+https://github.com/linux-ras/sysfsutils/archive/refs/tags/v2.1.1.tar.gz
 https://github.com/linuxwacom/libwacom/releases/download/libwacom-2.10.0/libwacom-2.10.0.tar.xz
 https://github.com/linuxwacom/libwacom/releases/download/libwacom-2.11.0/libwacom-2.11.0.tar.xz
 https://github.com/linuxwacom/libwacom/releases/download/libwacom-2.12.0/libwacom-2.12.0.tar.xz
@@ -2906,6 +2912,7 @@ https://github.com/minio/minio/archive/refs/tags/RELEASE.2024-04-06T05-26-02Z.ta
 https://github.com/miniupnp/miniupnp/archive/refs/tags/miniupnpd_2_3_3.tar.gz
 https://github.com/miniupnp/miniupnp/archive/refs/tags/miniupnpd_2_3_4.tar.gz
 https://github.com/miniupnp/miniupnp/archive/refs/tags/miniupnpd_2_3_6.tar.gz
+https://github.com/miniupnp/miniupnp/archive/refs/tags/miniupnpd_2_3_8.tar.gz
 https://github.com/miniupnp/miniupnp/commit/ed1dc4bb.patch
 https://github.com/misterdanb/avizo/archive/refs/tags/1.2.1.tar.gz
 https://github.com/mity/md4c/archive/refs/tags/release-0.5.1.tar.gz
@@ -2935,6 +2942,7 @@ https://github.com/msgpack/msgpack-c/archive/refs/tags/c-6.1.0.tar.gz
 https://github.com/msoos/minisat/archive/refs/tags/2.2.1.tar.gz
 https://github.com/muesli/duf/archive/refs/tags/v0.8.1.tar.gz
 https://github.com/munt/munt/archive/refs/tags/libmt32emu_2_7_1.tar.gz
+https://github.com/munt/munt/archive/refs/tags/libmt32emu_2_7_2.tar.gz
 https://github.com/museun/cargo-whatfeatures/archive/refs/tags/v0.9.9.tar.gz
 https://github.com/mvdan/sh/archive/refs/tags/v3.10.0.tar.gz
 https://github.com/mvdan/sh/archive/refs/tags/v3.5.1.tar.gz
@@ -3016,6 +3024,7 @@ https://github.com/nhorman/rng-tools/archive/refs/tags/v6.17.tar.gz
 https://github.com/nibanks/msh3/archive/refs/tags/v0.6.0.tar.gz
 https://github.com/nibanks/msh3/archive/refs/tags/v0.8.0.tar.gz
 https://github.com/niklata/ndhc/archive/refs/tags/v2022-03-08-v2.tar.gz
+https://github.com/niklata/ndhc/archive/refs/tags/v2024-05-24.tar.gz
 https://github.com/ninja-build/ninja/archive/refs/tags/v1.11.1.tar.gz
 https://github.com/ninja-build/ninja/archive/refs/tags/v1.12.0.tar.gz
 https://github.com/ninja-build/ninja/archive/refs/tags/v1.12.1.tar.gz
@@ -3713,6 +3722,7 @@ https://github.com/transmission/dht/commit/b02da598.patch
 https://github.com/transmission/libutp/archive/c95738b1a6644b919e5b64d3ea9736cfc5894e0b.tar.gz
 https://github.com/transmission/transmission/archive/refs/tags/4.0.4.tar.gz
 https://github.com/transmission/transmission/archive/refs/tags/4.0.5.tar.gz
+https://github.com/transmission/transmission/archive/refs/tags/4.0.6.tar.gz
 https://github.com/transmission/transmission/releases/download/3.00/transmission-3.00.tar.xz
 https://github.com/tree-sitter/tree-sitter-python/archive/refs/tags/v0.21.0.tar.gz
 https://github.com/tree-sitter/tree-sitter/archive/refs/tags/v0.20.8.tar.gz
@@ -3806,6 +3816,7 @@ https://github.com/varnishcache/varnish-cache/archive/refs/tags/varnish-7.6.0.ta
 https://github.com/varnishcache/varnish-cache/archive/refs/tags/varnish-7.7.0.tar.gz
 https://github.com/vasi/squashfuse/archive/1f980303b89c779eabfd0a0fdd36d6a7a311bf92.zip
 https://github.com/vasi/squashfuse/archive/refs/tags/0.4.0.tar.gz
+https://github.com/vasi/squashfuse/archive/refs/tags/0.6.0.tar.gz
 https://github.com/vasi/squashfuse/archive/refs/tags/v0.5.0.tar.gz
 https://github.com/vcrhonek/hwdata/archive/refs/tags/v0.374.tar.gz
 https://github.com/vcrhonek/hwdata/archive/refs/tags/v0.375.tar.gz
@@ -3911,6 +3922,7 @@ https://github.com/wolfSSL/wolfssl/archive/refs/tags/v5.6.6-stable.tar.gz
 https://github.com/wolfSSL/wolfssl/archive/refs/tags/v5.7.0-stable.tar.gz
 https://github.com/wolfSSL/wolfssl/archive/refs/tags/v5.7.2-stable.tar.gz
 https://github.com/wolfSSL/wolfssl/archive/refs/tags/v5.7.4-stable.tar.gz
+https://github.com/wolfSSL/wolfssl/archive/refs/tags/v5.7.6-stable.tar.gz
 https://github.com/wolfpld/tracy/archive/refs/tags/v0.10.tar.gz
 https://github.com/wolfpld/tracy/archive/refs/tags/v0.11.1.tar.gz
 https://github.com/wtfutil/wtf/archive/refs/tags/v0.41.0.tar.gz
@@ -4039,6 +4051,7 @@ https://gitlab.com/procps-ng/procps/-/archive/v4.0.5/procps-v4.0.5.tar.bz2
 https://gitlab.com/psmisc/psmisc/-/archive/v23.6/psmisc-v23.6.tar.bz2
 https://gitlab.com/psmisc/psmisc/-/archive/v23.7/psmisc-v23.7.tar.bz2
 https://gitlab.com/qemu-project/keycodemapdb/-/archive/22b8996dba9041874845c7446ce89ec4ae2b713d/keycodemapdb-22b8996dba9041874845c7446ce89ec4ae2b713d.tar.bz2
+https://gitlab.com/rt-linux-tools/stalld/-/archive/v1.19.6/stalld-v1.19.6.tar.bz2
 https://gitlab.com/sebholt/qastools/-/archive/v1.3.0/qastools-v1.3.0.tar.bz2
 https://gitlab.com/sebholt/qastools/-/archive/v1.4.0/qastools-v1.4.0.tar.bz2
 https://gitlab.com/timelimit/timelimit/-/archive/archive/debian/1.9.2-2/timelimit-archive-debian-1.9.2-2.tar.bz2
@@ -4070,6 +4083,7 @@ https://gitlab.freedesktop.org/gstreamer/gstreamer/-/archive/1.24.4/gstreamer-1.
 https://gitlab.freedesktop.org/gstreamer/gstreamer/-/archive/1.24.5/gstreamer-1.24.5.tar.gz
 https://gitlab.freedesktop.org/gstreamer/gstreamer/-/archive/1.24.6/gstreamer-1.24.6.tar.gz
 https://gitlab.freedesktop.org/gstreamer/gstreamer/-/archive/1.24.9/gstreamer-1.24.9.tar.gz
+https://gitlab.freedesktop.org/gstreamer/gstreamer/-/archive/1.26.0/gstreamer-1.26.0.tar.gz
 https://gitlab.freedesktop.org/gstreamer/orc/-/archive/0.4.40/orc-0.4.40.tar.bz2
 https://gitlab.freedesktop.org/gstreamer/orc/-/archive/0.4.40/orc-0.4.41.tar.bz2
 https://gitlab.freedesktop.org/libdecor/libdecor/-/archive/0.2.0/libdecor-0.2.0.tar.bz2
@@ -4977,6 +4991,7 @@ https://www.python.org/ftp/python/3.10.13/Python-3.10.13.tar.xz
 https://www.python.org/ftp/python/3.13.0/Python-3.13.0.tar.xz
 https://www.python.org/ftp/python/3.13.0/Python-3.13.0rc1.tar.xz
 https://www.python.org/ftp/python/3.13.2/Python-3.13.2.tar.xz
+https://www.python.org/ftp/python/3.13.3/Python-3.13.3.tar.xz
 https://www.python.org/ftp/python/3.8.17/Python-3.8.17.tgz
 https://www.python.org/ftp/python/3.9.17/Python-3.9.17.tar.xz
 https://www.python.org/ftp/python/3.9.18/Python-3.9.18.tar.xz

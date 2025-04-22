@@ -1,5 +1,8 @@
 {% extends '//die/c/cmake.sh' %}
 
+# noauto
+# check bin/transmission/cli
+
 {% block pkg_name %}
 miniupnpd
 {% endblock %}

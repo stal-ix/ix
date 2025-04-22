@@ -5,12 +5,12 @@ stalld
 {% endblock %}
 
 {% block version %}
-1.19.4
+1.19.6
 {% endblock %}
 
 {% block fetch %}
-https://git.kernel.org/pub/scm/utils/stalld/stalld.git/snapshot/stalld-{{self.version().strip()}}.tar.gz
-sha:cc5c6ef7811da280931e33cdaf4e03b9acaf4bf3e6670e4de6cec593024d75a7
+https://gitlab.com/rt-linux-tools/stalld/-/archive/v{{self.version().strip()}}/stalld-v{{self.version().strip()}}.tar.bz2
+sha:7ecbb8fd7b2efd928ecbd1b3ce2b72cb7c486885f09f5ead15e1a5e0891c40e2
 {% endblock %}
 
 {% block bld_libs %}
