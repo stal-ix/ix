@@ -20,6 +20,7 @@ sed -e 's|wayland-protocols.*,||' -i ${out}/lib/pkgconfig/gtk4.pc
 
 {% block c_rename_symbol %}
 {{super()}}
+properties
 wl_cursor_image_get_buffer
 wl_cursor_theme_destroy
 wl_cursor_theme_get_cursor
