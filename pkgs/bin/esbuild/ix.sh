@@ -5,7 +5,7 @@ esbuild
 {% endblock %}
 
 {% block version %}
-0.25.2
+0.25.3
 {% endblock %}
 
 {% block go_url %}
@@ -13,7 +13,7 @@ https://github.com/evanw/esbuild/archive/refs/tags/v{{self.version().strip()}}.t
 {% endblock %}
 
 {% block go_sha %}
-b4512e5e18ed9ee8050d09c0ef0ffd85f1902730218b3c7377f38e526a1158d7
+ea8f6ffa6dcce1e59f06f39c549dc7faaa6db9427412656e006f7fdbaf0bc3ed
 {% endblock %}
 
 {% block unpack %}
@@ -24,4 +24,8 @@ cd cmd/esbuild
 {% block install %}
 mkdir ${out}/bin
 cp esbuild ${out}/bin/
+{% endblock %}
+
+{% block go_tool %}
+bin/go/lang/24
 {% endblock %}
