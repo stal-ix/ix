@@ -5,7 +5,7 @@ fzf
 {% endblock %}
 
 {% block version %}
-0.61.2
+0.61.3
 {% endblock %}
 
 {% block go_url %}
@@ -13,7 +13,7 @@ https://github.com/junegunn/fzf/archive/refs/tags/v{{self.version().strip()}}.ta
 {% endblock %}
 
 {% block go_sha %}
-2e025e63e9b9b880278f0f8a3903dae253ff7561cd2842c09cd291e832e48916
+4495caa2e41748d0e8763b83312c3f792559fce70dc5eb82ca709577c42db4f5
 {% endblock %}
 
 {% block install %}
