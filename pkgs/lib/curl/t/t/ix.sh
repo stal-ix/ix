@@ -1,5 +1,7 @@
 {% extends '//die/c/autorehell.sh' %}
 
+# noauto
+
 {% block pkg_name %}
 curl
 {% endblock %}
