@@ -1,7 +1,7 @@
 {% extends '//die/c/make.sh' %}
 
 {% block version %}
-20250316
+20250419
 {% endblock %}
 
 {% block pkg_name %}
@@ -10,7 +10,7 @@ cpuid
 
 {% block fetch %}
 http://www.etallen.com/cpuid/cpuid-{{self.version().strip()}}.src.tar.gz
-sha:3ef849e964a027c9575470c4dcc80944b4cb6ac214aca02feec6b249308fa0f5
+sha:31ccfc03f93dd8848a6798f274fa03791f5c3bfbb1a767fe2086a69ce3727acb
 {% endblock %}
 
 {% block bld_libs %}

@@ -24,6 +24,9 @@ cd libcxx
 {% endblock %}
 
 {% block patch %}
+patch -p2 << EOF
+{% include '//lib/c++/13/gcc-13.patch' %}
+EOF
 cat << EOF > include/__config_site
 #pragma once
 

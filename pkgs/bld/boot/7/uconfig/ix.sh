@@ -23,3 +23,7 @@ bld/boot/6/env/std
 {% block env %}
 export PKG_CONFIG=${out}/bin/pkg-config
 {% endblock %}
+
+{% block build %}
+cc -o pkg-config generic_main.c
+{% endblock %}

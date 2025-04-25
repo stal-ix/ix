@@ -111,6 +111,7 @@ http://www.dest-unreach.org/socat/download/socat-1.8.0.2.tar.gz
 http://www.dest-unreach.org/socat/download/socat-1.8.0.3.tar.gz
 http://www.etallen.com/cpuid/cpuid-20230120.src.tar.gz
 http://www.etallen.com/cpuid/cpuid-20250316.src.tar.gz
+http://www.etallen.com/cpuid/cpuid-20250419.src.tar.gz
 http://www.haproxy.org/download/2.8/src/haproxy-2.8.3.tar.gz
 http://www.haproxy.org/download/2.8/src/haproxy-2.8.4.tar.gz
 http://www.haproxy.org/download/2.9/src/haproxy-2.9.0.tar.gz
@@ -1130,6 +1131,7 @@ https://github.com/Genivia/ugrep/archive/refs/tags/v7.2.0.tar.gz
 https://github.com/Genivia/ugrep/archive/refs/tags/v7.2.1.tar.gz
 https://github.com/Genivia/ugrep/archive/refs/tags/v7.2.2.tar.gz
 https://github.com/Genivia/ugrep/archive/refs/tags/v7.3.0.tar.gz
+https://github.com/Genivia/ugrep/archive/refs/tags/v7.4.1.tar.gz
 https://github.com/GrapheneOS/hardened_malloc/archive/refs/tags/11.tar.gz
 https://github.com/GyulyVGC/sniffnet/archive/refs/tags/v1.3.2.tar.gz
 https://github.com/Hjdskes/cage/archive/refs/tags/v0.1.4.tar.gz
@@ -1277,6 +1279,7 @@ https://github.com/NLnetLabs/unbound/archive/refs/tags/release-1.20.0.tar.gz
 https://github.com/NLnetLabs/unbound/archive/refs/tags/release-1.21.0.tar.gz
 https://github.com/NLnetLabs/unbound/archive/refs/tags/release-1.21.1.tar.gz
 https://github.com/NLnetLabs/unbound/archive/refs/tags/release-1.22.0.tar.gz
+https://github.com/NLnetLabs/unbound/archive/refs/tags/release-1.23.0.tar.gz
 https://github.com/NOBLES5E/cproxy/archive/refs/tags/v4.1.6.post1.tar.gz
 https://github.com/NVIDIA/libglvnd/archive/refs/tags/v1.7.0.tar.gz
 https://github.com/NagyD/SDLPoP/archive/refs/tags/v1.23.tar.gz
@@ -3341,6 +3344,7 @@ https://github.com/randy408/libspng/archive/refs/tags/v0.7.4.tar.gz
 https://github.com/raphamorim/rio/archive/refs/tags/v0.0.34.tar.gz
 https://github.com/raygard/wak/archive/dca8c09e9e20581330dd930b0219b07f431f2388.tar.gz
 https://github.com/redis/hiredis/archive/refs/tags/v1.2.0.tar.gz
+https://github.com/redis/hiredis/archive/refs/tags/v1.3.0.tar.gz
 https://github.com/redis/redis/archive/refs/tags/7.2.0.tar.gz
 https://github.com/redis/redis/archive/refs/tags/7.2.2.tar.gz
 https://github.com/redis/redis/archive/refs/tags/7.2.3.tar.gz
@@ -3348,6 +3352,7 @@ https://github.com/redis/redis/archive/refs/tags/7.2.4.tar.gz
 https://github.com/redis/redis/archive/refs/tags/7.4.0.tar.gz
 https://github.com/redis/redis/archive/refs/tags/7.4.1.tar.gz
 https://github.com/redis/redis/archive/refs/tags/7.4.2.tar.gz
+https://github.com/redis/redis/archive/refs/tags/7.4.3.tar.gz
 https://github.com/relan/exfat/releases/download/v1.4.0/exfat-utils-1.4.0.tar.gz
 https://github.com/rfc1036/whois/archive/refs/tags/v5.5.18.tar.gz
 https://github.com/rfc1036/whois/archive/refs/tags/v5.5.19.tar.gz
@@ -3513,6 +3518,7 @@ https://github.com/skvadrik/re2c/archive/refs/tags/4.0.1.tar.gz
 https://github.com/skvadrik/re2c/archive/refs/tags/4.0.2.tar.gz
 https://github.com/skvadrik/re2c/archive/refs/tags/4.0.tar.gz
 https://github.com/skvadrik/re2c/archive/refs/tags/4.1.tar.gz
+https://github.com/skvadrik/re2c/archive/refs/tags/4.2.tar.gz
 https://github.com/slackhq/nebula/archive/refs/tags/v1.8.2.tar.gz
 https://github.com/slackhq/nebula/archive/refs/tags/v1.9.0.tar.gz
 https://github.com/slackhq/nebula/archive/refs/tags/v1.9.1.tar.gz
@@ -3810,6 +3816,7 @@ https://github.com/valkey-io/valkey/archive/refs/tags/7.2.6.tar.gz
 https://github.com/valkey-io/valkey/archive/refs/tags/8.0.0.tar.gz
 https://github.com/valkey-io/valkey/archive/refs/tags/8.0.1.tar.gz
 https://github.com/valkey-io/valkey/archive/refs/tags/8.1.0.tar.gz
+https://github.com/valkey-io/valkey/archive/refs/tags/8.1.1.tar.gz
 https://github.com/varlink/libvarlink/archive/refs/tags/23.tar.gz
 https://github.com/varlink/libvarlink/archive/refs/tags/24.tar.gz
 https://github.com/varnishcache/varnish-cache/archive/refs/tags/varnish-7.6.0.tar.gz
@@ -4309,6 +4316,7 @@ https://gitlab.gnome.org/GNOME/libxml2/-/archive/v2.13.4/libxml2-v2.13.4.tar.bz2
 https://gitlab.gnome.org/GNOME/libxml2/-/archive/v2.13.5/libxml2-v2.13.5.tar.bz2
 https://gitlab.gnome.org/GNOME/libxml2/-/archive/v2.13.7/libxml2-v2.13.7.tar.bz2
 https://gitlab.gnome.org/GNOME/libxml2/-/archive/v2.14.1/libxml2-v2.14.1.tar.bz2
+https://gitlab.gnome.org/GNOME/libxml2/-/archive/v2.14.2/libxml2-v2.14.2.tar.bz2
 https://gitlab.gnome.org/GNOME/libxslt/-/archive/v1.1.38/libxslt-v1.1.38.tar.bz2
 https://gitlab.gnome.org/GNOME/libxslt/-/archive/v1.1.39/libxslt-v1.1.39.tar.bz2
 https://gitlab.gnome.org/GNOME/libxslt/-/archive/v1.1.40/libxslt-v1.1.40.tar.bz2
