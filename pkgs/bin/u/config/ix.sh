@@ -5,12 +5,12 @@ u-config
 {% endblock %}
 
 {% block version %}
-0.33.3
+0.34.0
 {% endblock %}
 
 {% block fetch %}
 https://github.com/skeeto/u-config/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:91fcec533a5987e44460d6499c30bdcb490ce89f8d31abd83e4fb6b16e510dc3
+sha:68b98bb42635b7c16263aeb762e92d6e7049e4937a987d9b0c5c78935485992f
 {% endblock %}
 
 {% block bld_libs %}
@@ -18,7 +18,7 @@ lib/c
 {% endblock %}
 
 {% block build %}
-cc -o pkg-config generic_main.c
+cc -o pkg-config main_posix.c
 {% endblock %}
 
 {% block install %}
