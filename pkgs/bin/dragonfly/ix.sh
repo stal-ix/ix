@@ -1,5 +1,13 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+dragonfly
+{% endblock %}
+
+{% block version %}
+1.0.0
+{% endblock %}
+
 {% block git_repo %}
 https://github.com/dragonflydb/dragonfly
 {% endblock %}
@@ -9,7 +17,7 @@ https://github.com/dragonflydb/dragonfly
 {% endblock %}
 
 {% block git_branch %}
-v1.0.0
+v{{self.version().strip()}}
 {% endblock %}
 
 {% block bld_libs %}
