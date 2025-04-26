@@ -38,6 +38,7 @@ http://ftp.gnome.org/pub/gnome/sources/libcroco/0.6/libcroco-0.6.12.tar.xz
 http://ftp.gnome.org/pub/gnome/sources/libcroco/0.6/libcroco-0.6.13.tar.xz
 http://ftp.gnu.org/gnu/gcc/gcc-14.1.0/gcc-14.1.0.tar.xz
 http://ftp.gnu.org/gnu/gcc/gcc-14.2.0/gcc-14.2.0.tar.xz
+http://ftp.gnu.org/gnu/gcc/gcc-15.1.0/gcc-15.1.0.tar.xz
 http://ftp.gnu.org/gnu/mtools/mtools-4.0.43.tar.lz
 http://ftp.gnu.org/gnu/mtools/mtools-4.0.44.tar.lz
 http://ftp.gnu.org/gnu/mtools/mtools-4.0.45.tar.lz
@@ -1160,6 +1161,7 @@ https://github.com/KDE/kcachegrind/archive/refs/tags/v24.04.80.tar.gz
 https://github.com/KDE/kcoreaddons/archive/refs/tags/v5.247.0.tar.gz
 https://github.com/KDE/kimageformats/archive/refs/tags/v5.112.0.tar.gz
 https://github.com/KDE/kimageformats/archive/refs/tags/v5.98.0.tar.gz
+https://github.com/KDE/kimageformats/archive/refs/tags/v6.13.0.tar.gz
 https://github.com/KarsMulder/evsieve/archive/refs/tags/v1.4.0.tar.gz
 https://github.com/KhronosGroup/SPIRV-Cross/archive/refs/tags/sdk-1.3.261.1.tar.gz
 https://github.com/KhronosGroup/SPIRV-Cross/archive/refs/tags/vulkan-sdk-1.3.268.0.tar.gz
@@ -1465,6 +1467,7 @@ https://github.com/a-j-wood/pv/releases/download/v1.7.24/pv-1.7.24.tar.gz
 https://github.com/abseil/abseil-cpp/archive/refs/tags/20230125.3.tar.gz
 https://github.com/abseil/abseil-cpp/archive/refs/tags/20230802.1.tar.gz
 https://github.com/abseil/abseil-cpp/archive/refs/tags/20240116.0.tar.gz
+https://github.com/abseil/abseil-cpp/archive/refs/tags/20250127.1.tar.gz
 https://github.com/acpica/acpica/archive/refs/tags/R2025_04_04.tar.gz
 https://github.com/acpica/acpica/archive/refs/tags/version-20240827.tar.gz
 https://github.com/ada-url/ada/archive/refs/tags/v2.9.0.tar.gz
@@ -1996,6 +1999,7 @@ https://github.com/fish-shell/fish-shell/archive/refs/tags/3.6.4.tar.gz
 https://github.com/fish-shell/fish-shell/archive/refs/tags/3.7.0.tar.gz
 https://github.com/fish-shell/fish-shell/archive/refs/tags/3.7.1.tar.gz
 https://github.com/flacjacket/pywayland/archive/refs/tags/v0.4.17.tar.gz
+https://github.com/flacjacket/pywayland/archive/refs/tags/v0.4.18.tar.gz
 https://github.com/flacjacket/pywlroots/archive/refs/tags/v0.16.6.tar.gz
 https://github.com/flatpak/libportal/archive/refs/tags/0.7.1.tar.gz
 https://github.com/flatpak/libportal/archive/refs/tags/0.8.0.tar.gz
@@ -2162,6 +2166,7 @@ https://github.com/google/re2/archive/refs/tags/2023-11-01.tar.gz
 https://github.com/google/re2/archive/refs/tags/2024-02-01.tar.gz
 https://github.com/google/re2/archive/refs/tags/2024-03-01.tar.gz
 https://github.com/google/re2/archive/refs/tags/2024-04-01.tar.gz
+https://github.com/google/re2/archive/refs/tags/2024-07-02.tar.gz
 https://github.com/google/shaderc/archive/refs/tags/v2023.6.tar.gz
 https://github.com/google/shaderc/archive/refs/tags/v2023.7.tar.gz
 https://github.com/google/shaderc/archive/refs/tags/v2023.8.tar.gz
@@ -2905,6 +2910,7 @@ https://github.com/microsoft/msquic/archive/refs/tags/v2.4.4.tar.gz
 https://github.com/microsoft/msquic/archive/refs/tags/v2.4.5.tar.gz
 https://github.com/microsoft/msquic/archive/refs/tags/v2.4.7.tar.gz
 https://github.com/microsoft/msquic/archive/refs/tags/v2.4.8.tar.gz
+https://github.com/microsoft/msquic/archive/refs/tags/v2.4.9.tar.gz
 https://github.com/microsoft/snmalloc/archive/refs/tags/0.6.0.tar.gz
 https://github.com/microsoft/snmalloc/archive/refs/tags/0.7.1.tar.gz
 https://github.com/microsoft/vcpkg-tool/archive/refs/tags/2022-11-10.tar.gz
@@ -3550,6 +3556,7 @@ https://github.com/stevegrubb/libcap-ng/archive/refs/tags/v0.8.3.tar.gz
 https://github.com/stevegrubb/libcap-ng/archive/refs/tags/v0.8.4.tar.gz
 https://github.com/stevegrubb/libcap-ng/archive/refs/tags/v0.8.5.tar.gz
 https://github.com/stp/stp/archive/refs/tags/2.3.3.tar.gz
+https://github.com/stp/stp/archive/refs/tags/2.3.4.tar.gz
 https://github.com/strawberrymusicplayer/strawberry/archive/refs/tags/1.0.18.tar.gz
 https://github.com/strawberrymusicplayer/strawberry/archive/refs/tags/1.0.20.tar.gz
 https://github.com/strawberrymusicplayer/strawberry/archive/refs/tags/1.0.21.tar.gz
@@ -3730,6 +3737,7 @@ https://github.com/tmux/tmux/releases/download/3.4/tmux-3.4.tar.gz
 https://github.com/tmux/tmux/releases/download/3.5/tmux-3.5.tar.gz
 https://github.com/tpoechtrager/cctools-port/archive/236a426c1205a3bfcf0dbb2e2faf2296f0a100e5.tar.gz
 https://github.com/transmission-remote-gtk/transmission-remote-gtk/archive/refs/tags/1.5.1.tar.gz
+https://github.com/transmission-remote-gtk/transmission-remote-gtk/archive/refs/tags/1.6.0.tar.gz
 https://github.com/transmission/dht/commit/b02da598.patch
 https://github.com/transmission/libutp/archive/c95738b1a6644b919e5b64d3ea9736cfc5894e0b.tar.gz
 https://github.com/transmission/transmission/archive/refs/tags/4.0.4.tar.gz
@@ -3791,6 +3799,7 @@ https://github.com/unicode-org/icu/archive/refs/tags/release-70-1.tar.gz
 https://github.com/unicode-org/icu/archive/refs/tags/release-73-2.tar.gz
 https://github.com/unicode-org/icu/archive/refs/tags/release-75-1.tar.gz
 https://github.com/unicode-org/icu/archive/refs/tags/release-76-1.tar.gz
+https://github.com/unicode-org/icu/archive/refs/tags/release-77-1.tar.gz
 https://github.com/upx/upx/releases/download/v4.1.0/upx-4.1.0-src.tar.xz
 https://github.com/upx/upx/releases/download/v4.2.0/upx-4.2.0-src.tar.xz
 https://github.com/upx/upx/releases/download/v4.2.1/upx-4.2.1-src.tar.xz
@@ -3907,6 +3916,7 @@ https://github.com/weechat/weechat/archive/refs/tags/v4.4.1.tar.gz
 https://github.com/weechat/weechat/archive/refs/tags/v4.4.2.tar.gz
 https://github.com/weechat/weechat/archive/refs/tags/v4.4.3.tar.gz
 https://github.com/weechat/weechat/archive/refs/tags/v4.6.0.tar.gz
+https://github.com/weechat/weechat/archive/refs/tags/v4.6.2.tar.gz
 https://github.com/westes/flex/archive/refs/tags/flex-2-5-10.tar.gz
 https://github.com/westes/flex/files/981163/flex-2.6.4.tar.gz
 https://github.com/wez/wezterm/archive/refs/tags/20230712-072601-f4abf8fd.tar.gz
@@ -3924,6 +3934,7 @@ https://github.com/wireshark/wireshark/archive/refs/tags/v4.4.1.tar.gz
 https://github.com/wireshark/wireshark/archive/refs/tags/v4.4.2.tar.gz
 https://github.com/wireshark/wireshark/archive/refs/tags/v4.4.3.tar.gz
 https://github.com/wireshark/wireshark/archive/refs/tags/v4.4.5.tar.gz
+https://github.com/wireshark/wireshark/archive/refs/tags/v4.4.6.tar.gz
 https://github.com/wlrfx/scenefx/archive/refs/tags/0.1.tar.gz
 https://github.com/wmww/gtk-layer-shell/archive/refs/tags/v0.8.0.tar.gz
 https://github.com/wmww/gtk-layer-shell/archive/refs/tags/v0.9.0.tar.gz
@@ -3947,6 +3958,7 @@ https://github.com/wxWidgets/wxWidgets/releases/download/v3.2.2.1/wxWidgets-3.2.
 https://github.com/wxWidgets/wxWidgets/releases/download/v3.2.3/wxWidgets-3.2.3.tar.bz2
 https://github.com/wxWidgets/wxWidgets/releases/download/v3.2.4/wxWidgets-3.2.4.tar.bz2
 https://github.com/wxWidgets/wxWidgets/releases/download/v3.2.5/wxWidgets-3.2.5.tar.bz2
+https://github.com/wxWidgets/wxWidgets/releases/download/v3.2.8/wxWidgets-3.2.8.tar.bz2
 https://github.com/ximion/appstream/archive/refs/tags/v0.16.3.tar.gz
 https://github.com/xiph/flac/archive/refs/tags/1.4.3.tar.gz
 https://github.com/xiph/flac/archive/refs/tags/1.5.0.tar.gz
@@ -4471,6 +4483,7 @@ https://invisible-mirror.net/archives/mawk/mawk-1.3.4-20250131.tgz
 https://jfs.sourceforge.net/project/pub/jfsutils-1.1.15.tar.gz
 https://jugit.fz-juelich.de/mlz/libcerf/-/archive/v2.4/libcerf-v2.4.tar.bz2
 https://jugit.fz-juelich.de/mlz/libcerf/-/archive/v2.5/libcerf-v2.5.tar.bz2
+https://jugit.fz-juelich.de/mlz/libcerf/-/archive/v3.0/libcerf-v3.0.tar.bz2
 https://launchpad.net/icontool/trunk/0.1/+download/icontool-0.1.0.tar.gz
 https://launchpad.net/intltool/trunk/0.51.0/+download/intltool-0.51.0.tar.gz
 https://launchpad.net/libappindicator/12.10/12.10.0/+download/libappindicator-12.10.0.tar.gz
@@ -5050,6 +5063,7 @@ https://www.stunnel.org/downloads/stunnel-5.74.tar.gz
 https://www.tcpdump.org/release/libpcap-1.10.4.tar.gz
 https://www.tcpdump.org/release/libpcap-1.10.5.tar.gz
 https://www.tcpdump.org/release/tcpdump-4.99.4.tar.gz
+https://www.tcpdump.org/release/tcpdump-4.99.5.tar.gz
 https://www.thrysoee.dk/editline/libedit-20230827-3.1.tar.gz
 https://www.thrysoee.dk/editline/libedit-20240808-3.1.tar.gz
 https://www.thrysoee.dk/editline/libedit-20250104-3.1.tar.gz
@@ -5059,5 +5073,6 @@ https://www.unicode.org/Public/16.0.0/ucd/UCD.zip
 https://www.x.org/pub/individual/util/util-macros-1.19.3.tar.bz2
 https://www.x.org/releases/individual/lib/libX11-1.8.6.tar.xz
 https://www.x.org/releases/individual/proto/xorgproto-2023.2.tar.xz
+https://www.x.org/releases/individual/proto/xorgproto-2024.1.tar.xz
 https://www.zsh.org/pub/zsh-5.9.tar.xz
 
