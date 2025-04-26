@@ -1,11 +1,19 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+DirectXShaderCompiler
+{% endblock %}
+
+{% block version %}
+1.7.2308
+{% endblock %}
+
 {% block git_repo %}
 https://github.com/microsoft/DirectXShaderCompiler
 {% endblock %}
 
 {% block git_branch %}
-v1.7.2308
+v{{self.version().strip()}}
 {% endblock %}
 
 {% block git_sha %}
