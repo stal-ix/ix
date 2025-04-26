@@ -13,6 +13,10 @@ for l in sys.stdin.read().split('\n'):
         continue
 
     rec = json.loads(l)
+
+    if rec['ix_pkg_name'].startswith('bld/'):
+        continue
+
     groups[rec['pkg_name']].append(rec)
 
 def norm_ver(v):
@@ -23,7 +27,11 @@ def norm_ver(v):
             yield x
 
 def calc_max_ver(recs):
-    return list(sorted(recs, key=lambda x: list(norm_ver(x['pkg_ver']))))[-1]['pkg_ver']
+    try:
+        return list(sorted(recs, key=lambda x: list(norm_ver(x['pkg_ver']))))[-1]['pkg_ver']
+    except Exception as e:
+        print(recs, file=sys.stderr)
+        raise e
 
 def flt_ver(recs, ver):
     for x in recs:
