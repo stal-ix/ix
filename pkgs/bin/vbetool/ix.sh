@@ -1,18 +1,23 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block version %}
-1.1
+1.2.2
 {% endblock %}
 
 {% block pkg_name %}
 vbetool
 {% endblock %}
 
-{% block fetch %}
-https://ftp.debian.org/debian/pool/main/v/vbetool/vbetool_{{self.version().strip()}}.orig.tar.gz
-sha:55a1e667249b4b38b6d48e74950c1dadd4d8b9802e358956fd4050508aae12d3
-https://ftp.debian.org/debian/pool/main/v/vbetool/vbetool_{{self.version().strip()}}-5.debian.tar.xz
-sha:ea60c703b11b7c659924ec5b44a01733baa0ca3c7933acc6ba781086591e45e2
+{% block git_repo %}
+git://people.freedesktop.org/~airlied/vbetool
+{% endblock %}
+
+{% block git_branch %}
+vbetool-{{self.version().strip()}}
+{% endblock %}
+
+{% block git_sha %}
+fd974e4e5e767b3c5ecc9a939b9438dcdc2ead47acfd0699fbd83e9d7fc2fd31
 {% endblock %}
 
 {% block bld_libs %}
@@ -21,8 +26,12 @@ lib/z
 lib/x86
 lib/kernel
 lib/pci/utils
+lib/pci/access
 {% endblock %}
 
 {% block patch %}
 sed -e 's|vbetool_LDADD = .*||' -i Makefile.am
+(base64 -d | patch -p1) << EOF
+{% include 'no_x86_check.patch/base64' %}
+EOF
 {% endblock %}
