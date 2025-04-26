@@ -10,5 +10,7 @@ for a, b, c in os.walk('.'):
             with open(pp) as f:
                 data = f.read()
 
-            if '://' in data and 'version' not in data and 'git_commit' not in data:
-                print(pp)
+            if '://' in data:
+                if 'version' not in data:
+                    if 'git_commit' not in data:
+                        print(pp)
