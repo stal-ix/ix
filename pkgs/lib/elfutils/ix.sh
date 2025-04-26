@@ -1,5 +1,10 @@
 {% extends 't/ix.sh' %}
 
+{% block bld_libs %}
+{{super()}}
+lib/kernel
+{% endblock %}
+
 {% block patch %}
 sed -e 's|error.*;|abort();|' -i libdw/libdw_alloc.c
 # lib/argp/standalone dep
