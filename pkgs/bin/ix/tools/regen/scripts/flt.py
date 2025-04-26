@@ -16,7 +16,7 @@ for l in sys.stdin.read().split('\n'):
     groups[rec['pkg_name']].append(rec)
 
 def calc_max_ver(recs):
-    return list(sorted(recs, lambda x: x['pkg_ver'].split('.')))[-1]['pkg_ver']
+    return list(sorted(recs, key=lambda x: x['pkg_ver'].split('.')))[-1]['pkg_ver']
 
 def flt_ver(recs, ver):
     for x in recs:
