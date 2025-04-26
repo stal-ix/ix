@@ -243,7 +243,7 @@ bin/copyq
 bin/keepass/xc
 bin/psensor
 bin/mplayer
-bin/wx/maxima
+#bin/wx/maxima
 bin/maxima
 bin/sbcl
 bin/ddc/control
