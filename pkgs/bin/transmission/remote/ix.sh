@@ -5,12 +5,12 @@ transmission-remote-gtk
 {% endblock %}
 
 {% block version %}
-1.5.1
+1.6.0
 {% endblock %}
 
 {% block fetch %}
 https://github.com/transmission-remote-gtk/transmission-remote-gtk/archive/refs/tags/{{self.version().strip()}}.tar.gz
-sha:9d30211b2bd85c4b39b9ac287b315a60776f8d54592ab380aea3fa679aceb3b0
+sha:92ca12aa94d14d6c9ce2b8e4d12c5e44f85f748348e3b0d54126de56ee5dc841
 {% endblock %}
 
 {% block bld_libs %}
@@ -18,6 +18,7 @@ lib/c
 lib/glib
 lib/curl
 lib/gtk/3
+lib/soup/3
 lib/json/glib
 lib/app/indicator
 {% endblock %}

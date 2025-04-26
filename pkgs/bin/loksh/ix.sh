@@ -1,11 +1,19 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block pkg_name %}
+loksh
+{% endblock %}
+
+{% block version %}
+7.6
+{% endblock %}
+
 {% block git_repo %}
 https://github.com/dimkr/loksh
 {% endblock %}
 
 {% block git_branch %}
-7.6
+{{self.version().strip()}}
 {% endblock %}
 
 {% block git_sha %}

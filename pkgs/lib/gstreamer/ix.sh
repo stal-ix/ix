@@ -5,12 +5,12 @@ gstreamer
 {% endblock %}
 
 {% block version %}
-1.26.0
+1.26.1
 {% endblock %}
 
 {% block fetch %}
 https://gitlab.freedesktop.org/gstreamer/gstreamer/-/archive/{{self.version().strip()}}/gstreamer-{{self.version().strip()}}.tar.gz
-sha:a469a8d2ea58b361bed29c585dbb1b834cbffb0e82c9c7e28dd75999297c579c
+sha:1cac791ecb88620cb2a8e4b615116c696c0ba8ba1e0ca8f36a9270cab554f4a2
 {% endblock %}
 
 {% block lib_deps %}

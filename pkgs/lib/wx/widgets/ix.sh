@@ -5,16 +5,16 @@ wxWidgets
 {% endblock %}
 
 {% block version_major %}
-3.2
+{{self.version().strip()[:3]}}
 {% endblock %}
 
 {% block version %}
-{{self.version_major().strip()}}.5
+3.2.8
 {% endblock %}
 
 {% block fetch %}
 https://github.com/wxWidgets/wxWidgets/releases/download/v{{self.version().strip()}}/wxWidgets-{{self.version().strip()}}.tar.bz2
-sha:0ad86a3ad3e2e519b6a705248fc9226e3a09bbf069c6c692a02acf7c2d1c6b51
+sha:c74784904109d7229e6894c85cfa068f1106a4a07c144afd78af41f373ee0fe6
 {% endblock %}
 
 {% block lib_deps %}

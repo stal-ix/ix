@@ -38,6 +38,7 @@ http://ftp.gnome.org/pub/gnome/sources/libcroco/0.6/libcroco-0.6.12.tar.xz
 http://ftp.gnome.org/pub/gnome/sources/libcroco/0.6/libcroco-0.6.13.tar.xz
 http://ftp.gnu.org/gnu/gcc/gcc-14.1.0/gcc-14.1.0.tar.xz
 http://ftp.gnu.org/gnu/gcc/gcc-14.2.0/gcc-14.2.0.tar.xz
+http://ftp.gnu.org/gnu/gcc/gcc-15.1.0/gcc-15.1.0.tar.xz
 http://ftp.gnu.org/gnu/mtools/mtools-4.0.43.tar.lz
 http://ftp.gnu.org/gnu/mtools/mtools-4.0.44.tar.lz
 http://ftp.gnu.org/gnu/mtools/mtools-4.0.45.tar.lz
@@ -1160,6 +1161,7 @@ https://github.com/KDE/kcachegrind/archive/refs/tags/v24.04.80.tar.gz
 https://github.com/KDE/kcoreaddons/archive/refs/tags/v5.247.0.tar.gz
 https://github.com/KDE/kimageformats/archive/refs/tags/v5.112.0.tar.gz
 https://github.com/KDE/kimageformats/archive/refs/tags/v5.98.0.tar.gz
+https://github.com/KDE/kimageformats/archive/refs/tags/v6.13.0.tar.gz
 https://github.com/KarsMulder/evsieve/archive/refs/tags/v1.4.0.tar.gz
 https://github.com/KhronosGroup/SPIRV-Cross/archive/refs/tags/sdk-1.3.261.1.tar.gz
 https://github.com/KhronosGroup/SPIRV-Cross/archive/refs/tags/vulkan-sdk-1.3.268.0.tar.gz
@@ -1465,10 +1467,12 @@ https://github.com/a-j-wood/pv/releases/download/v1.7.24/pv-1.7.24.tar.gz
 https://github.com/abseil/abseil-cpp/archive/refs/tags/20230125.3.tar.gz
 https://github.com/abseil/abseil-cpp/archive/refs/tags/20230802.1.tar.gz
 https://github.com/abseil/abseil-cpp/archive/refs/tags/20240116.0.tar.gz
+https://github.com/abseil/abseil-cpp/archive/refs/tags/20250127.1.tar.gz
 https://github.com/acpica/acpica/archive/refs/tags/R2025_04_04.tar.gz
 https://github.com/acpica/acpica/archive/refs/tags/version-20240827.tar.gz
 https://github.com/ada-url/ada/archive/refs/tags/v2.9.0.tar.gz
 https://github.com/ada-url/ada/archive/refs/tags/v3.2.2.tar.gz
+https://github.com/ada-url/ada/archive/refs/tags/v3.2.3.tar.gz
 https://github.com/adah1972/libunibreak/archive/refs/tags/libunibreak_5_1.tar.gz
 https://github.com/adah1972/libunibreak/archive/refs/tags/libunibreak_6_0.tar.gz
 https://github.com/adah1972/libunibreak/archive/refs/tags/libunibreak_6_1.tar.gz
@@ -1995,6 +1999,7 @@ https://github.com/fish-shell/fish-shell/archive/refs/tags/3.6.4.tar.gz
 https://github.com/fish-shell/fish-shell/archive/refs/tags/3.7.0.tar.gz
 https://github.com/fish-shell/fish-shell/archive/refs/tags/3.7.1.tar.gz
 https://github.com/flacjacket/pywayland/archive/refs/tags/v0.4.17.tar.gz
+https://github.com/flacjacket/pywayland/archive/refs/tags/v0.4.18.tar.gz
 https://github.com/flacjacket/pywlroots/archive/refs/tags/v0.16.6.tar.gz
 https://github.com/flatpak/libportal/archive/refs/tags/0.7.1.tar.gz
 https://github.com/flatpak/libportal/archive/refs/tags/0.8.0.tar.gz
@@ -2026,6 +2031,7 @@ https://github.com/francoismichel/ssh3/archive/refs/tags/v0.1.6.tar.gz
 https://github.com/francoismichel/ssh3/archive/refs/tags/v0.1.7.tar.gz
 https://github.com/frankosterfeld/qtkeychain/archive/refs/tags/0.14.1.tar.gz
 https://github.com/frankosterfeld/qtkeychain/archive/refs/tags/0.14.3.tar.gz
+https://github.com/frankosterfeld/qtkeychain/archive/refs/tags/0.15.0.tar.gz
 https://github.com/freebsd/freebsd-src/archive/refs/tags/release/14.0.0.tar.gz
 https://github.com/freequaos/schedtool/archive/refs/tags/schedtool-1.3.0.tar.gz
 https://github.com/fribidi/fribidi/archive/refs/tags/v1.0.13.tar.gz
@@ -2160,6 +2166,7 @@ https://github.com/google/re2/archive/refs/tags/2023-11-01.tar.gz
 https://github.com/google/re2/archive/refs/tags/2024-02-01.tar.gz
 https://github.com/google/re2/archive/refs/tags/2024-03-01.tar.gz
 https://github.com/google/re2/archive/refs/tags/2024-04-01.tar.gz
+https://github.com/google/re2/archive/refs/tags/2024-07-02.tar.gz
 https://github.com/google/shaderc/archive/refs/tags/v2023.6.tar.gz
 https://github.com/google/shaderc/archive/refs/tags/v2023.7.tar.gz
 https://github.com/google/shaderc/archive/refs/tags/v2023.8.tar.gz
@@ -2520,6 +2527,7 @@ https://github.com/koverstreet/bcachefs-tools/archive/refs/tags/v1.20.0.tar.gz
 https://github.com/koverstreet/bcachefs-tools/archive/refs/tags/v1.25.0.tar.gz
 https://github.com/kovidgoyal/kitty/archive/refs/tags/v0.25.0.tar.gz
 https://github.com/kovidgoyal/kitty/archive/refs/tags/v0.31.0.tar.gz
+https://github.com/kraxarn/spotify-qt/archive/refs/tags/v3.12.tar.gz
 https://github.com/kraxarn/spotify-qt/archive/refs/tags/v3.9.tar.gz
 https://github.com/kristapsdz/lowdown/archive/refs/tags/VERSION_1_0_2.tar.gz
 https://github.com/kristapsdz/lowdown/archive/refs/tags/VERSION_1_1_0.tar.gz
@@ -2724,6 +2732,7 @@ https://github.com/libuv/libuv/archive/refs/tags/v1.49.0.tar.gz
 https://github.com/libuv/libuv/archive/refs/tags/v1.49.1.tar.gz
 https://github.com/libuv/libuv/archive/refs/tags/v1.49.2.tar.gz
 https://github.com/libuv/libuv/archive/refs/tags/v1.50.0.tar.gz
+https://github.com/libuv/libuv/archive/refs/tags/v1.51.0.tar.gz
 https://github.com/libxmp/libxmp/archive/refs/tags/libxmp-4.6.0.tar.gz
 https://github.com/libxmp/libxmp/archive/refs/tags/libxmp-4.6.2.tar.gz
 https://github.com/limine-bootloader/limine/releases/download/v5.20230801.0/limine-5.20230801.0.tar.xz
@@ -2820,6 +2829,7 @@ https://github.com/lxqt/libqtxdg/archive/refs/tags/4.0.1.tar.gz
 https://github.com/lxqt/libqtxdg/archive/refs/tags/4.1.0.tar.gz
 https://github.com/lxqt/lxqt-build-tools/archive/refs/tags/2.0.0.tar.gz
 https://github.com/lxqt/lxqt-build-tools/archive/refs/tags/2.1.0.tar.gz
+https://github.com/lxqt/lxqt-build-tools/archive/refs/tags/2.2.0.tar.gz
 https://github.com/lxqt/lxqt-openssh-askpass/archive/refs/tags/2.0.0.tar.gz
 https://github.com/lyonel/lshw/archive/refs/tags/B.02.19.tar.gz
 https://github.com/lyonel/lshw/archive/refs/tags/B.02.20.tar.gz
@@ -2900,6 +2910,7 @@ https://github.com/microsoft/msquic/archive/refs/tags/v2.4.4.tar.gz
 https://github.com/microsoft/msquic/archive/refs/tags/v2.4.5.tar.gz
 https://github.com/microsoft/msquic/archive/refs/tags/v2.4.7.tar.gz
 https://github.com/microsoft/msquic/archive/refs/tags/v2.4.8.tar.gz
+https://github.com/microsoft/msquic/archive/refs/tags/v2.4.9.tar.gz
 https://github.com/microsoft/snmalloc/archive/refs/tags/0.6.0.tar.gz
 https://github.com/microsoft/snmalloc/archive/refs/tags/0.7.1.tar.gz
 https://github.com/microsoft/vcpkg-tool/archive/refs/tags/2022-11-10.tar.gz
@@ -3513,6 +3524,7 @@ https://github.com/skeeto/u-config/archive/refs/tags/v0.31.1.tar.gz
 https://github.com/skeeto/u-config/archive/refs/tags/v0.33.0.tar.gz
 https://github.com/skeeto/u-config/archive/refs/tags/v0.33.2.tar.gz
 https://github.com/skeeto/u-config/archive/refs/tags/v0.33.3.tar.gz
+https://github.com/skeeto/u-config/archive/refs/tags/v0.34.0.tar.gz
 https://github.com/skvadrik/re2c/archive/refs/tags/3.1.tar.gz
 https://github.com/skvadrik/re2c/archive/refs/tags/4.0.1.tar.gz
 https://github.com/skvadrik/re2c/archive/refs/tags/4.0.2.tar.gz
@@ -3544,6 +3556,7 @@ https://github.com/stevegrubb/libcap-ng/archive/refs/tags/v0.8.3.tar.gz
 https://github.com/stevegrubb/libcap-ng/archive/refs/tags/v0.8.4.tar.gz
 https://github.com/stevegrubb/libcap-ng/archive/refs/tags/v0.8.5.tar.gz
 https://github.com/stp/stp/archive/refs/tags/2.3.3.tar.gz
+https://github.com/stp/stp/archive/refs/tags/2.3.4.tar.gz
 https://github.com/strawberrymusicplayer/strawberry/archive/refs/tags/1.0.18.tar.gz
 https://github.com/strawberrymusicplayer/strawberry/archive/refs/tags/1.0.20.tar.gz
 https://github.com/strawberrymusicplayer/strawberry/archive/refs/tags/1.0.21.tar.gz
@@ -3724,6 +3737,7 @@ https://github.com/tmux/tmux/releases/download/3.4/tmux-3.4.tar.gz
 https://github.com/tmux/tmux/releases/download/3.5/tmux-3.5.tar.gz
 https://github.com/tpoechtrager/cctools-port/archive/236a426c1205a3bfcf0dbb2e2faf2296f0a100e5.tar.gz
 https://github.com/transmission-remote-gtk/transmission-remote-gtk/archive/refs/tags/1.5.1.tar.gz
+https://github.com/transmission-remote-gtk/transmission-remote-gtk/archive/refs/tags/1.6.0.tar.gz
 https://github.com/transmission/dht/commit/b02da598.patch
 https://github.com/transmission/libutp/archive/c95738b1a6644b919e5b64d3ea9736cfc5894e0b.tar.gz
 https://github.com/transmission/transmission/archive/refs/tags/4.0.4.tar.gz
@@ -3785,6 +3799,7 @@ https://github.com/unicode-org/icu/archive/refs/tags/release-70-1.tar.gz
 https://github.com/unicode-org/icu/archive/refs/tags/release-73-2.tar.gz
 https://github.com/unicode-org/icu/archive/refs/tags/release-75-1.tar.gz
 https://github.com/unicode-org/icu/archive/refs/tags/release-76-1.tar.gz
+https://github.com/unicode-org/icu/archive/refs/tags/release-77-1.tar.gz
 https://github.com/upx/upx/releases/download/v4.1.0/upx-4.1.0-src.tar.xz
 https://github.com/upx/upx/releases/download/v4.2.0/upx-4.2.0-src.tar.xz
 https://github.com/upx/upx/releases/download/v4.2.1/upx-4.2.1-src.tar.xz
@@ -3824,6 +3839,7 @@ https://github.com/varnishcache/varnish-cache/archive/refs/tags/varnish-7.7.0.ta
 https://github.com/vasi/squashfuse/archive/1f980303b89c779eabfd0a0fdd36d6a7a311bf92.zip
 https://github.com/vasi/squashfuse/archive/refs/tags/0.4.0.tar.gz
 https://github.com/vasi/squashfuse/archive/refs/tags/0.6.0.tar.gz
+https://github.com/vasi/squashfuse/archive/refs/tags/0.6.1.tar.gz
 https://github.com/vasi/squashfuse/archive/refs/tags/v0.5.0.tar.gz
 https://github.com/vcrhonek/hwdata/archive/refs/tags/v0.374.tar.gz
 https://github.com/vcrhonek/hwdata/archive/refs/tags/v0.375.tar.gz
@@ -3900,6 +3916,7 @@ https://github.com/weechat/weechat/archive/refs/tags/v4.4.1.tar.gz
 https://github.com/weechat/weechat/archive/refs/tags/v4.4.2.tar.gz
 https://github.com/weechat/weechat/archive/refs/tags/v4.4.3.tar.gz
 https://github.com/weechat/weechat/archive/refs/tags/v4.6.0.tar.gz
+https://github.com/weechat/weechat/archive/refs/tags/v4.6.2.tar.gz
 https://github.com/westes/flex/archive/refs/tags/flex-2-5-10.tar.gz
 https://github.com/westes/flex/files/981163/flex-2.6.4.tar.gz
 https://github.com/wez/wezterm/archive/refs/tags/20230712-072601-f4abf8fd.tar.gz
@@ -3917,6 +3934,7 @@ https://github.com/wireshark/wireshark/archive/refs/tags/v4.4.1.tar.gz
 https://github.com/wireshark/wireshark/archive/refs/tags/v4.4.2.tar.gz
 https://github.com/wireshark/wireshark/archive/refs/tags/v4.4.3.tar.gz
 https://github.com/wireshark/wireshark/archive/refs/tags/v4.4.5.tar.gz
+https://github.com/wireshark/wireshark/archive/refs/tags/v4.4.6.tar.gz
 https://github.com/wlrfx/scenefx/archive/refs/tags/0.1.tar.gz
 https://github.com/wmww/gtk-layer-shell/archive/refs/tags/v0.8.0.tar.gz
 https://github.com/wmww/gtk-layer-shell/archive/refs/tags/v0.9.0.tar.gz
@@ -3930,6 +3948,7 @@ https://github.com/wolfSSL/wolfssl/archive/refs/tags/v5.7.0-stable.tar.gz
 https://github.com/wolfSSL/wolfssl/archive/refs/tags/v5.7.2-stable.tar.gz
 https://github.com/wolfSSL/wolfssl/archive/refs/tags/v5.7.4-stable.tar.gz
 https://github.com/wolfSSL/wolfssl/archive/refs/tags/v5.7.6-stable.tar.gz
+https://github.com/wolfSSL/wolfssl/archive/refs/tags/v5.8.0-stable.tar.gz
 https://github.com/wolfpld/tracy/archive/refs/tags/v0.10.tar.gz
 https://github.com/wolfpld/tracy/archive/refs/tags/v0.11.1.tar.gz
 https://github.com/wtfutil/wtf/archive/refs/tags/v0.41.0.tar.gz
@@ -3939,6 +3958,7 @@ https://github.com/wxWidgets/wxWidgets/releases/download/v3.2.2.1/wxWidgets-3.2.
 https://github.com/wxWidgets/wxWidgets/releases/download/v3.2.3/wxWidgets-3.2.3.tar.bz2
 https://github.com/wxWidgets/wxWidgets/releases/download/v3.2.4/wxWidgets-3.2.4.tar.bz2
 https://github.com/wxWidgets/wxWidgets/releases/download/v3.2.5/wxWidgets-3.2.5.tar.bz2
+https://github.com/wxWidgets/wxWidgets/releases/download/v3.2.8/wxWidgets-3.2.8.tar.bz2
 https://github.com/ximion/appstream/archive/refs/tags/v0.16.3.tar.gz
 https://github.com/xiph/flac/archive/refs/tags/1.4.3.tar.gz
 https://github.com/xiph/flac/archive/refs/tags/1.5.0.tar.gz
@@ -4091,6 +4111,7 @@ https://gitlab.freedesktop.org/gstreamer/gstreamer/-/archive/1.24.5/gstreamer-1.
 https://gitlab.freedesktop.org/gstreamer/gstreamer/-/archive/1.24.6/gstreamer-1.24.6.tar.gz
 https://gitlab.freedesktop.org/gstreamer/gstreamer/-/archive/1.24.9/gstreamer-1.24.9.tar.gz
 https://gitlab.freedesktop.org/gstreamer/gstreamer/-/archive/1.26.0/gstreamer-1.26.0.tar.gz
+https://gitlab.freedesktop.org/gstreamer/gstreamer/-/archive/1.26.1/gstreamer-1.26.1.tar.gz
 https://gitlab.freedesktop.org/gstreamer/orc/-/archive/0.4.40/orc-0.4.40.tar.bz2
 https://gitlab.freedesktop.org/gstreamer/orc/-/archive/0.4.40/orc-0.4.41.tar.bz2
 https://gitlab.freedesktop.org/libdecor/libdecor/-/archive/0.2.0/libdecor-0.2.0.tar.bz2
@@ -4413,6 +4434,7 @@ https://gnupg.org/ftp/gcrypt/libgpg-error/libgpg-error-1.51.tar.bz2
 https://gnupg.org/ftp/gcrypt/libgpg-error/libgpg-error-1.52.tar.bz2
 https://gnupg.org/ftp/gcrypt/libgpg-error/libgpg-error-1.53.tar.bz2
 https://gnupg.org/ftp/gcrypt/libgpg-error/libgpg-error-1.54.tar.bz2
+https://gnupg.org/ftp/gcrypt/libgpg-error/libgpg-error-1.55.tar.bz2
 https://golang.org/dl/go1.4-bootstrap-20170531.tar.gz
 https://hewlettpackard.github.io/wireless-tools/wireless_tools.29.tar.gz
 https://hg.sr.ht/~scoopta/wofi/archive/v1.2.4.tar.gz
@@ -4461,6 +4483,7 @@ https://invisible-mirror.net/archives/mawk/mawk-1.3.4-20250131.tgz
 https://jfs.sourceforge.net/project/pub/jfsutils-1.1.15.tar.gz
 https://jugit.fz-juelich.de/mlz/libcerf/-/archive/v2.4/libcerf-v2.4.tar.bz2
 https://jugit.fz-juelich.de/mlz/libcerf/-/archive/v2.5/libcerf-v2.5.tar.bz2
+https://jugit.fz-juelich.de/mlz/libcerf/-/archive/v3.0/libcerf-v3.0.tar.bz2
 https://launchpad.net/icontool/trunk/0.1/+download/icontool-0.1.0.tar.gz
 https://launchpad.net/intltool/trunk/0.51.0/+download/intltool-0.51.0.tar.gz
 https://launchpad.net/libappindicator/12.10/12.10.0/+download/libappindicator-12.10.0.tar.gz
@@ -4627,6 +4650,7 @@ https://notroj.github.io/neon/neon-0.33.0.tar.gz
 https://notroj.github.io/neon/neon-0.34.0.tar.gz
 https://notroj.github.io/neon/neon-0.34.1.tar.gz
 https://notroj.github.io/neon/neon-0.34.2.tar.gz
+https://pagure.io/xmlto/archive/0.0.29/xmlto-0.0.29.tar.gz
 https://pawsa.fedorapeople.org/balsa/balsa-2.6.4.tar.xz
 https://pkg-config.freedesktop.org/releases/pkg-config-0.29.2.tar.gz
 https://pm-utils.freedesktop.org/releases/pm-utils-1.4.1.tar.gz
@@ -4684,6 +4708,7 @@ https://secure.nic.cz/files/knot-resolver/knot-resolver-5.6.0.tar.xz
 https://secure.nic.cz/files/knot-resolver/knot-resolver-5.7.4.tar.xz
 https://secure.nic.cz/files/knot-resolver/knot-resolver-6.0.10.tar.xz
 https://secure.nic.cz/files/knot-resolver/knot-resolver-6.0.11.tar.xz
+https://secure.nic.cz/files/knot-resolver/knot-resolver-6.0.12.tar.xz
 https://security.appspot.com/downloads/vsftpd-3.0.5.tar.gz
 https://skarnet.org/software/execline/execline-2.8.2.0.tar.gz
 https://skarnet.org/software/mdevd/mdevd-0.1.5.1.tar.gz
@@ -4717,6 +4742,7 @@ https://sourceware.org/pub/valgrind/valgrind-3.19.0.tar.bz2
 https://sourceware.org/pub/valgrind/valgrind-3.22.0.tar.bz2
 https://sourceware.org/pub/valgrind/valgrind-3.23.0.tar.bz2
 https://sourceware.org/pub/valgrind/valgrind-3.24.0.tar.bz2
+https://sourceware.org/pub/valgrind/valgrind-3.25.0.tar.bz2
 https://sqlite.org/2023/sqlite-autoconf-3430000.tar.gz
 https://sqlite.org/2023/sqlite-autoconf-3430100.tar.gz
 https://sqlite.org/2023/sqlite-autoconf-3430200.tar.gz
@@ -5037,6 +5063,7 @@ https://www.stunnel.org/downloads/stunnel-5.74.tar.gz
 https://www.tcpdump.org/release/libpcap-1.10.4.tar.gz
 https://www.tcpdump.org/release/libpcap-1.10.5.tar.gz
 https://www.tcpdump.org/release/tcpdump-4.99.4.tar.gz
+https://www.tcpdump.org/release/tcpdump-4.99.5.tar.gz
 https://www.thrysoee.dk/editline/libedit-20230827-3.1.tar.gz
 https://www.thrysoee.dk/editline/libedit-20240808-3.1.tar.gz
 https://www.thrysoee.dk/editline/libedit-20250104-3.1.tar.gz
@@ -5046,5 +5073,6 @@ https://www.unicode.org/Public/16.0.0/ucd/UCD.zip
 https://www.x.org/pub/individual/util/util-macros-1.19.3.tar.bz2
 https://www.x.org/releases/individual/lib/libX11-1.8.6.tar.xz
 https://www.x.org/releases/individual/proto/xorgproto-2023.2.tar.xz
+https://www.x.org/releases/individual/proto/xorgproto-2024.1.tar.xz
 https://www.zsh.org/pub/zsh-5.9.tar.xz
 

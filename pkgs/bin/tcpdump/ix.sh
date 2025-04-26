@@ -1,16 +1,16 @@
-{% extends '//die/c/autorehell.sh' %}
+{% extends '//die/c/autohell.sh' %}
 
 {% block pkg_name %}
 tcpdump
 {% endblock %}
 
 {% block version %}
-4.99.4
+4.99.5
 {% endblock %}
 
 {% block fetch %}
 https://www.tcpdump.org/release/tcpdump-{{self.version().strip()}}.tar.gz
-sha:0232231bb2f29d6bf2426e70a08a7e0c63a0d59a9b44863b7f5e2357a6e49fea
+sha:8c75856e00addeeadf70dad67c9ff3dd368536b2b8563abf6854d7c764cd3adb
 {% endblock %}
 
 {% block lib_deps %}

@@ -4,12 +4,20 @@
 https://github.com/eranif/codelite
 {% endblock %}
 
-{% block git_tag %}
+{% block pkg_name %}
+codelite
+{% endblock %}
+
+{% block version %}
 17.7.0
 {% endblock %}
 
+{% block git_branch %}
+{{self.version().strip()}}
+{% endblock %}
+
 {% block git_sha %}
-cbe20359de50272802ed676797db9dbfbd065a16eb9ec737462c2193fa900c73
+fd0ec6fa3bde2348dfff15f88c020f376ca6bc7fedeef205fcc92d6d45a43923
 {% endblock %}
 
 {% block bld_libs %}
@@ -18,6 +26,7 @@ lib/c++
 lib/ssh
 lib/glib
 lib/pcre/2
+lib/kernel
 lib/hunspell
 lib/sqlite/3
 lib/wx/widgets

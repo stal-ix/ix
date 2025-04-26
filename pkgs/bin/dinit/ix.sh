@@ -4,8 +4,16 @@
 https://github.com/davmac314/dinit
 {% endblock %}
 
+{% block pkg_name %}
+dinit
+{% endblock %}
+
+{% block version %}
+0.19.3
+{% endblock %}
+
 {% block git_branch %}
-v0.19.3
+v{{self.version().strip()}}
 {% endblock %}
 
 {% block git_sha %}

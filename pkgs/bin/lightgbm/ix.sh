@@ -1,11 +1,19 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+LightGBM
+{% endblock %}
+
+{% block version %}
+4.6.0
+{% endblock %}
+
 {% block git_repo %}
 https://github.com/microsoft/LightGBM
 {% endblock %}
 
 {% block git_branch %}
-v4.6.0
+v{{self.version().strip()}}
 {% endblock %}
 
 {% block git_sha %}

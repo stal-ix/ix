@@ -5,12 +5,12 @@ libfuse
 {% endblock %}
 
 {% block version %}
-3.17.1
+3.17.2
 {% endblock %}
 
 {% block fetch %}
 https://github.com/libfuse/libfuse/archive/refs/tags/fuse-{{self.version().strip()}}.tar.gz
-sha:b81027fc8f444fb574de7f13edf0cf9810643d2935670c4fe19f140354241208
+sha:9d34adf5bd979cd62479340d9854e6a424a7ead7ee632e4a6da104ec0796f923
 {% endblock %}
 
 {% block lib_deps %}

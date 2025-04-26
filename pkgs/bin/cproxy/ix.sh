@@ -1,14 +1,25 @@
 {% extends '//die/rust/cargo.sh' %}
 
+{% block pkg_name %}
+cproxy
+{% endblock %}
+
+{% block version %}
+4.2.2
+{% endblock %}
+
 {% block cargo_url %}
-https://github.com/NOBLES5E/cproxy/archive/refs/tags/v4.1.6.post1.tar.gz
+https://github.com/NOBLES5E/cproxy/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 {% endblock %}
 
 {% block cargo_sha %}
-37e95b716448e30944030fb4e5d7c679ae039dd97394d9fe43a0d49166ad8a7a
+4e95738985235007422f7e1fa65e485ff6dbdf6160da489f5d71aec8fbeeb675
 {% endblock %}
 
-{% block install %}
-mkdir ${out}/bin
-cp ${tmp}/out/cproxy ${out}/bin/
+{% block cargo_bins %}
+cproxy
+{% endblock %}
+
+{% block cargoc_ver %}
+bld/cargo/86
 {% endblock %}

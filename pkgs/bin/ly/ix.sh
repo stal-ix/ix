@@ -1,11 +1,19 @@
 {% extends '//die/c/make.sh' %}
 
+{% block pkg_name %}
+ly
+{% endblock %}
+
+{% block version %}
+0.6.0
+{% endblock %}
+
 {% block git_repo %}
 https://github.com/fairyglade/ly
 {% endblock %}
 
 {% block git_branch %}
-v0.6.0
+v{{self.version().strip()}}
 {% endblock %}
 
 {% block git_sha %}

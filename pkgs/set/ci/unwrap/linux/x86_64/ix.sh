@@ -48,6 +48,7 @@
 #}
 
 {% block run_deps %}
+bin/gcc/15
 bin/meson/1/7
 bin/dropbear/2025
 bin/dropbear/2024
@@ -186,7 +187,7 @@ bin/gdu
 bin/mount
 bin/btfs
 bin/tinc
-#bin/yggdrasil/go
+bin/yggdrasil/go
 bin/fire/jail
 bin/minio
 bin/dropbear/2024
@@ -242,7 +243,7 @@ bin/copyq
 bin/keepass/xc
 bin/psensor
 bin/mplayer
-bin/wx/maxima
+#bin/wx/maxima
 bin/maxima
 bin/sbcl
 bin/ddc/control

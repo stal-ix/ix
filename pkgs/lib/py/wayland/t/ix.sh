@@ -5,12 +5,12 @@ pywayland
 {% endblock %}
 
 {% block version %}
-0.4.17
+0.4.18
 {% endblock %}
 
 {% block fetch %}
 https://github.com/flacjacket/pywayland/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:e04befb267069ae317cd1a07f1d85b4bfc059090255e61b3efe49691a506aebd
+sha:89fb8585457f6e67313b461e2ebc2d8c06c751d2f3b45e7839dd957185496d86
 {% endblock %}
 
 {% block lib_deps %}

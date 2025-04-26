@@ -1,7 +1,7 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block pkg_name %}
-wayland-utils
+wayland-info
 {% endblock %}
 
 {% block version %}
