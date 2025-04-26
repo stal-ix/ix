@@ -4,8 +4,10 @@ set -xue
 
 cd $(dirname ${IX_BINARY})
 
-curl -k 'https://repology.org/api/v1/projects/?maintainer=anton%40samokhvalov.xyz&outdated=1' | ix_flt | grep -v apr | grep -v qt | grep -v vulkan | grep -v mesa | grep -v spirv | grep -v freeglut | grep -v gdk | grep -v 'bld/' | grep -v meson | grep -v musl | grep -v python | grep -v perl | grep -v postgre | grep -v rio | grep -v ruby | grep -v vim | grep -v firmware | while read l; do
+curl -k 'https://repology.org/api/v1/projects/?maintainer=anton%40samokhvalov.xyz&outdated=1' | ix_flt | grep -v apr | grep -v vulkan | grep -v mesa | grep -v spirv | grep -v freeglut | grep -v gdk | grep -v 'bld/' | grep -v meson | grep -v musl | grep -v python | grep -v perl | grep -v postgre | grep -v rio | grep -v ruby | grep -v vim | grep -v firmware | while read l; do (
     echo ${l}
+
+    exit 0
 
     if ix_up ${l}; then
         git add -A
@@ -13,4 +15,4 @@ curl -k 'https://repology.org/api/v1/projects/?maintainer=anton%40samokhvalov.xy
     else
         git checkout .
     fi
-done
+) done
