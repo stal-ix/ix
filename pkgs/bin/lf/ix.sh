@@ -1,7 +1,15 @@
 {% extends '//die/go/build.sh' %}
 
+{% block pkg_name %}
+lf
+{% endblock %}
+
+{% block version %}
+34
+{% endblock %}
+
 {% block go_url %}
-https://github.com/gokcehan/lf/archive/refs/tags/r34.tar.gz
+https://github.com/gokcehan/lf/archive/refs/tags/r{{self.version().strip()}}.tar.gz
 {% endblock %}
 
 {% block go_sha %}
