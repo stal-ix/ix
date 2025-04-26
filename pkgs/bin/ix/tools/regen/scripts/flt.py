@@ -15,8 +15,15 @@ for l in sys.stdin.read().split('\n'):
     rec = json.loads(l)
     groups[rec['pkg_name']].append(rec)
 
+def norm_ver(v):
+    for x in v.split('.'):
+        try:
+            yield int(x)
+        except Exception as e:
+            yield x
+
 def calc_max_ver(recs):
-    return list(sorted(recs, key=lambda x: x['pkg_ver'].split('.')))[-1]['pkg_ver']
+    return list(sorted(recs, key=lambda x: list(norm_ver(x['pkg_ver']))))[-1]['pkg_ver']
 
 def flt_ver(recs, ver):
     for x in recs:
@@ -25,4 +32,4 @@ def flt_ver(recs, ver):
 
 for recs in groups.values():
     for rec in flt_ver(recs, calc_max_ver(recs)):
-        print(json.dumps(rec, sort_keys=True))
+        print(json.dumps(rec))
