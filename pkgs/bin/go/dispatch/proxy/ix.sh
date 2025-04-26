@@ -1,7 +1,15 @@
 {% extends '//die/go/build.sh' %}
 
+{% block pkg_name %}
+go-dispatch-proxy
+{% endblock %}
+
+{% block version %}
+7
+{% endblock %}
+
 {% block go_url %}
-https://github.com/extremecoders-re/go-dispatch-proxy/archive/refs/tags/v7.tar.gz
+https://github.com/extremecoders-re/go-dispatch-proxy/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 {% endblock %}
 
 {% block go_sha %}
