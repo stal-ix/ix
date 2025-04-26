@@ -1,8 +1,4 @@
-{% extends '//die/c/make.sh' %}
-
-{% block fetch %}
-{% include '//bin/git/unwrap/ver.sh' %}
-{% endblock %}
+{% extends '//bin/git/unwrap/t/ix.sh' %}
 
 {% block bld_libs %}
 lib/c
