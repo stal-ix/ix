@@ -40,3 +40,6 @@ class Ops:
     @cu.cached_method
     def boot_path(self):
         return os.environ['PATH']
+
+    def flags(self):
+        return {}

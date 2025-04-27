@@ -94,7 +94,9 @@ class RenderContext:
         tp = pkg.flags['target']
         bp = pkg.config.ops.boot_path()
 
-        args = cu.dict_dict_update({
+        args = pkg.config.ops.flags()
+
+        args = cu.dict_dict_update(args, {
             'ix': self,
             'ix_extract': ' '.join(pkg.config.ops.extract()),
             'ix_boot_path': bp,
@@ -114,7 +116,9 @@ class RenderContext:
             kind: True,
             tp['os']: True,
             tp['arch']: True,
-        }, pkg.flags)
+        })
+
+        args = cu.dict_dict_update(args, pkg.flags)
 
         if args['boot']:
             args['setx'] = '1'

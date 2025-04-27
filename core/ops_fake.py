@@ -32,3 +32,6 @@ class Ops:
 
     def execute_graph(self, graph):
         sys.exit(0)
+
+    def flags(self):
+        return {}

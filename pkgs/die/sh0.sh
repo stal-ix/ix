@@ -29,6 +29,7 @@ exit 1
 {% endblock %}
 
 {% block script_confine %}
+{% if stalix %}
 {% if isfile('/bin/confine') %}
 /ix/realm/system/bin/confine
 {{ix_dir}}
@@ -38,6 +39,7 @@ exit 1
 {% if isfile('/bin/tmpfs') %}
 /ix/realm/system/bin/tmpfs
 {{ix_dir}}
+{% endif %}
 {% endif %}
 {% endif %}
 {% if jail or tmpfs %}
