@@ -1,9 +1,7 @@
 {% extends '//lib/gtk/t/ix.sh' %}
 
-# noauto
-
 {% block pkg_name %}
-gtk3
+gtk
 {% endblock %}
 
 {% block version %}
