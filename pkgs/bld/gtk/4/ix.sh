@@ -1,8 +1,6 @@
 {% extends '//die/c/ix.sh' %}
 
-{% block fetch %}
 {% include '//lib/gtk/4/t/ver.sh' %}
-{% endblock %}
 
 {% block bld_libs %}
 lib/c

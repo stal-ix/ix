@@ -1,8 +1,6 @@
 {% extends '//lib/gtk/t/ix.sh' %}
 
-{% block fetch %}
 {% include 'ver.sh' %}
-{% endblock %}
 
 {% block lib_deps %}
 {{super()}}
