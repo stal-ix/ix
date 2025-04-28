@@ -1,11 +1,19 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+wabt
+{% endblock %}
+
+{% block version %}
+1.0.37
+{% endblock %}
+
 {% block git_repo %}
 https://github.com/WebAssembly/wabt
 {% endblock %}
 
 {% block git_branch %}
-1.0.37
+{{self.version().strip()}}
 {% endblock %}
 
 {% block git_sha %}
