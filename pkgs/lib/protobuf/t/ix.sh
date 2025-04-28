@@ -5,12 +5,12 @@ protobuf
 {% endblock %}
 
 {% block version %}
-30.2
+25.7
 {% endblock %}
 
 {% block fetch %}
 https://github.com/protocolbuffers/protobuf/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:07a43d88fe5a38e434c7f94129cad56a4c43a51f99336074d0799c2f7d4e44c5
+sha:af034f71287cff2f1691649772c61b13696787a06ff616cadf9869611491fabe
 {% endblock %}
 
 {% block lib_deps %}
