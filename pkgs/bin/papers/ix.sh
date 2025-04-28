@@ -1,11 +1,19 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block pkg_name %}
+papers
+{% endblock %}
+
+{% blcok version %}
+48.0
+{% endblock %}
+
 {% block git_repo %}
 https://gitlab.gnome.org/GNOME/Incubator/papers
 {% endblock %}
 
 {% block git_branch %}
-48.0
+{{self.version().strip()}}
 {% endblock %}
 
 {% block git_sha %}
