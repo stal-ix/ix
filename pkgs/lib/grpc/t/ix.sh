@@ -5,7 +5,7 @@ grpc
 {% endblock %}
 
 {% block version %}
-1.62.2
+1.72.0
 {% endblock %}
 
 {% block git_repo %}
@@ -17,7 +17,7 @@ v{{self.version().strip()}}
 {% endblock %}
 
 {% block git_sha %}
-332d4c260df9b13ad85d70e812d1720242f594eee8102f1552fb567ada853e83
+97434560ae08af1d90ecaec3640090377e2a47474772e46b97e8e25e2361366a
 {% endblock %}
 
 {% block lib_deps %}

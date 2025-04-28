@@ -1,11 +1,19 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+nfs-ganesha
+{% endblock %}
+
+{% block version %}
+5.7
+{% endblock %}
+
 {% block git_repo %}
 https://github.com/nfs-ganesha/nfs-ganesha
 {% endblock %}
 
 {% block git_branch %}
-V5.7
+V{{self.version().strip()}}
 {% endblock %}
 
 {% block git_sha %}

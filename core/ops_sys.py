@@ -145,3 +145,8 @@ class Ops:
 
     def boot_path(self):
         return '/ix/realm/boot/bin:/bin:/usr/bin:/usr/local/bin'
+
+    def flags(self):
+        return {
+            'stalix': True,
+        }
