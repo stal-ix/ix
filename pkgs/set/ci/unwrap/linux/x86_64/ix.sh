@@ -70,7 +70,7 @@ bin/contour
 bin/nix
 bin/coreutils/9/6
 bin/inkscape
-bin/fizzy
+#bin/fizzy
 bin/kernel/6/13
 bin/gdb/16
 bin/gdb/15

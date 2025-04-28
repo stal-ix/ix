@@ -5,12 +5,12 @@ uvwasi
 {% endblock %}
 
 {% block version %}
-0.0.18
+0.0.21
 {% endblock %}
 
 {% block fetch %}
 https://github.com/nodejs/uvwasi/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:4e5d2447df0922eda42488c411cd07806f0a6b55e7f98edecd5562b317daf8e3
+sha:5cf32f166c493f41c0de7f3fd578d0be1b692c81c54f0c68889e62240fe9ab60
 {% endblock %}
 
 {% block lib_deps %}
@@ -30,4 +30,12 @@ CMAKE_INSTALL_INCLUDEDIR=include
 base64 -d << EOF >> CMakeLists.txt
 {% include 'cmake/base64' %}
 EOF
+{% endblock %}
+
+{% block install %}
+{{super()}}
+sed -e 's|exec_prefix=.*||' \
+    -e 's|bindir=.*||' \
+    -e 's|;.*||' \
+    -i ${out}/lib/pkgconfig/uvwasi.pc
 {% endblock %}
