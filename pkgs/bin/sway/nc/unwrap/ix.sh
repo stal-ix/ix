@@ -5,12 +5,12 @@ SwayNotificationCenter
 {% endblock %}
 
 {% block version %}
-0.10.1
+0.11.0
 {% endblock %}
 
 {% block fetch %}
 https://github.com/ErikReider/SwayNotificationCenter/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:5586d8a679dde5e530cb8b6f0c86abdd0d5e41362fc1c4e56e2211edea0f7a13
+sha:7f69fe248994404af4115d335929b3bd2faf8c6321374b5b3e3fa2c97d169c90
 {% endblock %}
 
 {% block lib_deps %}
@@ -45,6 +45,7 @@ bin/vala
 bin/sassc
 bld/gnome
 bin/scdoc
+bld/wayland
 {% endblock %}
 
 {% block meson_flags %}
