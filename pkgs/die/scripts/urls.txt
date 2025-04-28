@@ -814,6 +814,7 @@ https://ftp.postgresql.org/pub/source/v16.4/postgresql-16.4.tar.bz2
 https://ftp.postgresql.org/pub/source/v17.0/postgresql-17.0.tar.bz2
 https://ftp.postgresql.org/pub/source/v17.2/postgresql-17.2.tar.bz2
 https://ftp.postgresql.org/pub/source/v17.3/postgresql-17.3.tar.bz2
+https://ftp.postgresql.org/pub/source/v17.4/postgresql-17.4.tar.bz2
 https://ftpmirror.gnu.org/libtool/libtool-2.4.6.tar.gz
 https://ftpmirror.gnu.org/libtool/libtool-2.4.7.tar.gz
 https://gameoftrees.org/releases/portable/got-portable-0.92.tar.gz
@@ -989,6 +990,7 @@ https://github.com/DaveGamble/cJSON/archive/refs/tags/v1.7.18.tar.gz
 https://github.com/DominicBreuker/pspy/archive/refs/tags/v1.2.1.tar.gz
 https://github.com/Dr-Noob/cpufetch/archive/refs/tags/v1.06.tar.gz
 https://github.com/ErikReider/SwayNotificationCenter/archive/refs/tags/v0.10.1.tar.gz
+https://github.com/ErikReider/SwayNotificationCenter/archive/refs/tags/v0.11.0.tar.gz
 https://github.com/Esri/lerc/archive/refs/tags/js_v4.0.4.tar.gz
 https://github.com/Esri/lerc/archive/refs/tags/v4.0.0.tar.gz
 https://github.com/Exiv2/exiv2/archive/refs/tags/v0.27.6.tar.gz
@@ -3764,6 +3766,7 @@ https://github.com/transmission/transmission/archive/refs/tags/4.0.5.tar.gz
 https://github.com/transmission/transmission/archive/refs/tags/4.0.6.tar.gz
 https://github.com/transmission/transmission/releases/download/3.00/transmission-3.00.tar.xz
 https://github.com/tree-sitter/tree-sitter-python/archive/refs/tags/v0.21.0.tar.gz
+https://github.com/tree-sitter/tree-sitter-python/archive/refs/tags/v0.23.6.tar.gz
 https://github.com/tree-sitter/tree-sitter/archive/refs/tags/v0.20.8.tar.gz
 https://github.com/tree-sitter/tree-sitter/archive/refs/tags/v0.23.0.tar.gz
 https://github.com/tree-sitter/tree-sitter/archive/refs/tags/v0.24.0.tar.gz
