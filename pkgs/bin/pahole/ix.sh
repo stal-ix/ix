@@ -1,11 +1,19 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+pahole
+{% endblock %}
+
+{% block version %}
+1.29
+{% endblock %}
+
 {% block git_repo %}
 https://git.kernel.org/pub/scm/devel/pahole/pahole.git
 {% endblock %}
 
 {% block git_branch %}
-v1.29
+v{{self.version().strip()}}
 {% endblock %}
 
 {% block git_sha %}
