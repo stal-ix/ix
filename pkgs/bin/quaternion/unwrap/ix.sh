@@ -1,11 +1,19 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+Quaternion
+{% endblock %}
+
+{% block version %}
+0.0.96
+{% endblock %}
+
 {% block git_repo %}
 https://github.com/quotient-im/Quaternion
 {% endblock %}
 
 {% block git_branch %}
-0.0.96
+{{self.version().strip()}}
 {% endblock %}
 
 {% block git_sha %}

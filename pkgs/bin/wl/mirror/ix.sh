@@ -1,11 +1,19 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+wl-mirror
+{% endblock %}
+
+{% block version %}
+0.18.1
+{% endblock %}
+
 {% block git_repo %}
 https://github.com/Ferdi265/wl-mirror
 {% endblock %}
 
 {% block git_branch %}
-v0.18.1
+v{{self.version().strip()}}
 {% endblock %}
 
 {% block git_sha %}

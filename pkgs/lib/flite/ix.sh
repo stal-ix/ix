@@ -15,3 +15,8 @@ https://github.com/festvox/flite
 {% block lib_deps %}
 lib/c
 {% endblock %}
+
+{% block c_rename_symbol %}
+# lib/xkb/common conflict
+utf8_sequence_length
+{% endblock %}

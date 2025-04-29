@@ -6,8 +6,6 @@ cd $(dirname ${IX_BINARY})
 
 ix_repo_export
 
-exit 0
-
 cd pkgs/die/scripts/
 
 export LANG=C

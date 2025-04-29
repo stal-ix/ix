@@ -1,11 +1,19 @@
 {% extends '//die/c/make.sh' %}
 
+{% block pkg_name %}
+bpftool
+{% endblock %}
+
+{% block version %}
+7.4.0
+{% endblock %}
+
 {% block git_repo %}
 https://github.com/libbpf/bpftool
 {% endblock %}
 
 {% block git_branch %}
-v7.4.0
+v{{self.version().strip()}}
 {% endblock %}
 
 {% block git_sha %}

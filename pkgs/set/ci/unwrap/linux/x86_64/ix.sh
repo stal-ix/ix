@@ -48,6 +48,8 @@
 #}
 
 {% block run_deps %}
+bin/meson/1/8
+bin/libtool/next
 bin/gcc/15
 bin/meson/1/7
 bin/dropbear/2025
@@ -70,7 +72,7 @@ bin/contour
 bin/nix
 bin/coreutils/9/6
 bin/inkscape
-bin/fizzy
+#bin/fizzy
 bin/kernel/6/13
 bin/gdb/16
 bin/gdb/15

@@ -1,8 +1,6 @@
 {% extends '//die/c/autohell.sh' %}
 
-{% block fetch %}
 {% include 'ver.sh' %}
-{% endblock %}
 
 {% block bld_tool %}
 bld/perl

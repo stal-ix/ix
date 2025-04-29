@@ -1,11 +1,19 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block pkg_name %}
+wf-shell
+{% endblock %}
+
+{% block version %}
+0.9.0
+{% endblock %}
+
 {% block git_repo %}
 https://github.com/WayfireWM/wf-shell
 {% endblock %}
 
 {% block git_branch %}
-v0.9.0
+v{{self.version().strip()}}
 {% endblock %}
 
 {% block git_sha %}

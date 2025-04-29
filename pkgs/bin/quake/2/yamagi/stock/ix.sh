@@ -1,7 +1,15 @@
 {% extends '//die/c/make.sh' %}
 
+{% block pkg_name %}
+yquake2
+{% endblock %}
+
+{% block version %}
+8.40
+{% endblock %}
+
 {% block fetch %}
-https://github.com/yquake2/yquake2/archive/refs/tags/QUAKE2_8_40.tar.gz
+https://github.com/yquake2/yquake2/archive/refs/tags/QUAKE2_{{self.version().strip().replace('.', '_')}}.tar.gz
 sha:02c8c8e7b090d24e960c7575c07110154691ba3987daf996f24370a3449714af
 {% endblock %}
 
