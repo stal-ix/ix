@@ -5,12 +5,12 @@ yquake2
 {% endblock %}
 
 {% block version %}
-8.40
+8.50
 {% endblock %}
 
 {% block fetch %}
 https://github.com/yquake2/yquake2/archive/refs/tags/QUAKE2_{{self.version().strip().replace('.', '_')}}.tar.gz
-sha:02c8c8e7b090d24e960c7575c07110154691ba3987daf996f24370a3449714af
+sha:d6c08878de2c96ea8f964d9b53692082f58fc4f016617a1e6a2f6095f4237eae
 {% endblock %}
 
 {% block bld_libs %}
