@@ -5,7 +5,7 @@ luv
 {% endblock %}
 
 {% block version %}
-1.48.0-2
+1.48.0.2
 {% endblock %}
 
 {% block git_sha %}
@@ -17,7 +17,7 @@ https://github.com/luvit/luv
 {% endblock %}
 
 {% block git_branch %}
-{{self.version().strip()}}
+{{self.version().strip()[:-2]}}-{{self.version().strip()[-1:]}}
 {% endblock %}
 
 {% block cmake_flags %}
