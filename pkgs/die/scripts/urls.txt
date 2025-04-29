@@ -727,6 +727,7 @@ https://ftp.gnu.org/gnu/libmicrohttpd/libmicrohttpd-1.0.0.tar.gz
 https://ftp.gnu.org/gnu/libmicrohttpd/libmicrohttpd-1.0.1.tar.gz
 https://ftp.gnu.org/gnu/libsigsegv/libsigsegv-2.13.tar.gz
 https://ftp.gnu.org/gnu/libsigsegv/libsigsegv-2.14.tar.gz
+https://ftp.gnu.org/gnu/libsigsegv/libsigsegv-2.15.tar.gz
 https://ftp.gnu.org/gnu/libtasn1/libtasn1-4.19.0.tar.gz
 https://ftp.gnu.org/gnu/libtasn1/libtasn1-4.20.0.tar.gz
 https://ftp.gnu.org/gnu/libunistring/libunistring-1.1.tar.xz
@@ -1979,6 +1980,7 @@ https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.40.0.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.40.3.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.40.4.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.41.0.tar.gz
+https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.42.0.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.5.0.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.6.0.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.6.1.tar.gz
@@ -2267,6 +2269,7 @@ https://github.com/hughsie/libxmlb/archive/refs/tags/0.3.22.tar.gz
 https://github.com/hunspell/hunspell/archive/refs/tags/v1.7.1.tar.gz
 https://github.com/hunspell/hunspell/archive/refs/tags/v1.7.2.tar.gz
 https://github.com/hyperrealm/libconfig/archive/refs/tags/v1.7.3.tar.gz
+https://github.com/hyperrealm/libconfig/archive/refs/tags/v1.8.tar.gz
 https://github.com/hyprwm/Hyprland/releases/download/v0.29.0/source-v0.29.0.tar.gz
 https://github.com/hyprwm/Hyprland/releases/download/v0.30.0/source-v0.30.0.tar.gz
 https://github.com/hyprwm/Hyprland/releases/download/v0.31.0/source-v0.31.0.tar.gz
@@ -4032,6 +4035,7 @@ https://github.com/yorukot/superfile/archive/refs/tags/v1.1.3.tar.gz
 https://github.com/yquake2/yquake2/archive/refs/tags/QUAKE2_8_20.tar.gz
 https://github.com/yquake2/yquake2/archive/refs/tags/QUAKE2_8_30.tar.gz
 https://github.com/yquake2/yquake2/archive/refs/tags/QUAKE2_8_40.tar.gz
+https://github.com/yquake2/yquake2/archive/refs/tags/QUAKE2_8_50.tar.gz
 https://github.com/yrutschle/sslh/archive/refs/tags/v2.0.0.tar.gz
 https://github.com/yrutschle/sslh/archive/refs/tags/v2.0.1.tar.gz
 https://github.com/yrutschle/sslh/archive/refs/tags/v2.1.0.tar.gz
