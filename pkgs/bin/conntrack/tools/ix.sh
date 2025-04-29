@@ -1,11 +1,19 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block pkg_name %}
+conntrack-tools
+{% endblock %}
+
+{% block version %}
+1.4.8
+{% endblock %}
+
 {% block git_repo %}
 git://git.netfilter.org/conntrack-tools
 {% endblock %}
 
 {% block git_branch %}
-conntrack-tools-1.4.8
+conntrack-tools-{{self.version().strip()}}
 {% endblock %}
 
 {% block git_sha %}
