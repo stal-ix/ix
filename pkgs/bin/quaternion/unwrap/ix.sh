@@ -5,7 +5,7 @@ Quaternion
 {% endblock %}
 
 {% block version %}
-0.0.96
+0.0.97.1
 {% endblock %}
 
 {% block git_repo %}
@@ -17,7 +17,7 @@ https://github.com/quotient-im/Quaternion
 {% endblock %}
 
 {% block git_sha %}
-244084db9a99df244a9be714d1456d3a641b159d10a67dfb50c4ed22672f8ed3
+a3f3afa8bf99a231fd85f477570be25da50ed574af6be116c946c721fcdea653
 {% endblock %}
 
 {% block bld_libs %}
