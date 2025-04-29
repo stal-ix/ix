@@ -48,6 +48,7 @@
 #}
 
 {% block run_deps %}
+bin/meson/1/8
 bin/libtool/next
 bin/gcc/15
 bin/meson/1/7
