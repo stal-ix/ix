@@ -1,8 +1,6 @@
 {% extends '//die/c/ix.sh' %}
 
-{% block fetch %}
 {% include '//lib/lunasvg/ver.sh' %}
-{% endblock %}
 
 {% block bld_libs %}
 lib/lunasvg

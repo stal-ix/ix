@@ -1,8 +1,6 @@
 {% extends '//die/c/meson.sh' %}
 
-{% block fetch %}
 {% include 'ver.sh' %}
-{% endblock %}
 
 {% block lib_deps %}
 lib/c
