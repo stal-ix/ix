@@ -25,6 +25,7 @@ bin/bzip2
 
 {% block build_flags %}
 shut_up
+wrap_cc
 {% endblock%}
 
 {% block setup_target_flags %}
