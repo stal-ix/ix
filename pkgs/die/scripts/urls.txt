@@ -817,6 +817,7 @@ https://ftp.postgresql.org/pub/source/v17.3/postgresql-17.3.tar.bz2
 https://ftp.postgresql.org/pub/source/v17.4/postgresql-17.4.tar.bz2
 https://ftpmirror.gnu.org/libtool/libtool-2.4.6.tar.gz
 https://ftpmirror.gnu.org/libtool/libtool-2.4.7.tar.gz
+https://ftpmirror.gnu.org/libtool/libtool-2.5.4.tar.gz
 https://gameoftrees.org/releases/portable/got-portable-0.92.tar.gz
 https://gameoftrees.org/releases/portable/got-portable-0.93.tar.gz
 https://git.adelielinux.org/community/a52dec/-/archive/v0.8.0/a52dec-v0.8.0.tar.bz2
