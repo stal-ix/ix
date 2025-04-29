@@ -39,4 +39,6 @@ xkb-config-root=${XKB_CONFIG}
 
 {% block c_rename_symbol %}
 parse_string
+# lib/flite conflict
+utf8_sequence_length
 {% endblock %}
