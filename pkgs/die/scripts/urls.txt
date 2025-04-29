@@ -393,6 +393,7 @@ https://download.gnome.org/sources/at-spi2-core/2.54/at-spi2-core-2.54.0.tar.xz
 https://download.gnome.org/sources/at-spi2-core/2.54/at-spi2-core-2.54.1.tar.xz
 https://download.gnome.org/sources/at-spi2-core/2.56/at-spi2-core-2.56.0.tar.xz
 https://download.gnome.org/sources/at-spi2-core/2.56/at-spi2-core-2.56.1.tar.xz
+https://download.gnome.org/sources/at-spi2-core/2.56/at-spi2-core-2.56.2.tar.xz
 https://download.gnome.org/sources/atkmm/2.28/atkmm-2.28.2.tar.xz
 https://download.gnome.org/sources/atkmm/2.28/atkmm-2.28.3.tar.xz
 https://download.gnome.org/sources/atkmm/2.28/atkmm-2.28.4.tar.xz
@@ -1483,6 +1484,7 @@ https://github.com/acpica/acpica/archive/refs/tags/version-20240827.tar.gz
 https://github.com/ada-url/ada/archive/refs/tags/v2.9.0.tar.gz
 https://github.com/ada-url/ada/archive/refs/tags/v3.2.2.tar.gz
 https://github.com/ada-url/ada/archive/refs/tags/v3.2.3.tar.gz
+https://github.com/ada-url/ada/archive/refs/tags/v3.2.4.tar.gz
 https://github.com/adah1972/libunibreak/archive/refs/tags/libunibreak_5_1.tar.gz
 https://github.com/adah1972/libunibreak/archive/refs/tags/libunibreak_6_0.tar.gz
 https://github.com/adah1972/libunibreak/archive/refs/tags/libunibreak_6_1.tar.gz
@@ -2223,6 +2225,7 @@ https://github.com/harfbuzz/harfbuzz/archive/refs/tags/10.4.0.tar.gz
 https://github.com/harfbuzz/harfbuzz/archive/refs/tags/11.0.0.tar.gz
 https://github.com/harfbuzz/harfbuzz/archive/refs/tags/11.0.1.tar.gz
 https://github.com/harfbuzz/harfbuzz/archive/refs/tags/11.1.0.tar.gz
+https://github.com/harfbuzz/harfbuzz/archive/refs/tags/11.2.0.tar.gz
 https://github.com/harfbuzz/harfbuzz/archive/refs/tags/8.2.0.tar.gz
 https://github.com/harfbuzz/harfbuzz/archive/refs/tags/8.2.1.tar.gz
 https://github.com/harfbuzz/harfbuzz/archive/refs/tags/8.2.2.tar.gz
@@ -3422,6 +3425,7 @@ https://github.com/rockowitz/ddcutil/archive/refs/tags/v2.1.4.tar.gz
 https://github.com/rpodgorny/unionfs-fuse/archive/refs/tags/v3.4.tar.gz
 https://github.com/rpodgorny/unionfs-fuse/archive/refs/tags/v3.6.tar.gz
 https://github.com/rr-debugger/rr/archive/refs/tags/5.7.0.tar.gz
+https://github.com/rrthomas/enchant/releases/download/v2.8.3/enchant-2.8.3.tar.gz
 https://github.com/rrthomas/libpaper/releases/download/v2.1.1/libpaper-2.1.1.tar.gz
 https://github.com/rrthomas/libpaper/releases/download/v2.1.2/libpaper-2.1.2.tar.gz
 https://github.com/rrthomas/libpaper/releases/download/v2.1.3/libpaper-2.1.3.tar.gz
@@ -3793,6 +3797,7 @@ https://github.com/tsl0922/ttyd/archive/refs/tags/1.7.5.tar.gz
 https://github.com/tsl0922/ttyd/archive/refs/tags/1.7.7.tar.gz
 https://github.com/tsujan/FeatherPad/archive/refs/tags/V1.3.4.tar.gz
 https://github.com/tsujan/FeatherPad/archive/refs/tags/V1.6.1.tar.gz
+https://github.com/tsujan/FeatherPad/archive/refs/tags/V1.6.2.tar.gz
 https://github.com/tukaani-project/xz/releases/download/v5.4.6/xz-5.4.6.tar.gz
 https://github.com/tukaani-project/xz/releases/download/v5.6.0/xz-5.6.0.tar.gz
 https://github.com/tukaani-project/xz/releases/download/v5.6.1/xz-5.6.1.tar.gz

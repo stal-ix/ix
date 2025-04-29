@@ -5,12 +5,12 @@ enchant
 {% endblock %}
 
 {% block version %}
-2.8.2
+2.8.3
 {% endblock %}
 
 {% block fetch %}
-https://github.com/AbiWord/enchant/releases/download/v{{self.version().strip()}}/enchant-{{self.version().strip()}}.tar.gz
-sha:8f19535adb5577b83b00e02f330fe9b9eb40dd21f19e2899636fc4d3a7696375
+https://github.com/rrthomas/enchant/releases/download/v{{self.version().strip()}}/enchant-{{self.version().strip()}}.tar.gz
+sha:31bb3df74cb60d6150f8611a7875d915f15d070e5a68687e075876faebef7ef7
 {% endblock %}
 
 {% block conf_ver %}
