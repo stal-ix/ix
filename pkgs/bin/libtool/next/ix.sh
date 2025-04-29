@@ -5,10 +5,10 @@ libtool
 {% endblock %}
 
 {% block version %}
-2.5.2
+2.5.4
 {% endblock %}
 
 {% block fetch %}
-https://alpha.gnu.org/gnu/libtool/libtool-{{self.version().strip()}}.tar.xz
-sha:7b60b4f4c364e8785130d34a98ff07bfa9a6172c20c5db708ab49c6913e48263
+https://ftpmirror.gnu.org/libtool/libtool-{{self.version().strip()}}.tar.gz
+sha:da8ebb2ce4dcf46b90098daf962cffa68f4b4f62ea60f798d0ef12929ede6adf
 {% endblock %}

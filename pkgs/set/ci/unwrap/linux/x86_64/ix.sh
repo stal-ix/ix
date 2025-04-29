@@ -48,6 +48,7 @@
 #}
 
 {% block run_deps %}
+bin/libtool/next
 bin/gcc/15
 bin/meson/1/7
 bin/dropbear/2025
