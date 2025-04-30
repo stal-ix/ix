@@ -21,6 +21,10 @@ lib/c
 bld/fake(tool_name=objcopy)
 {% endblock %}
 
+{% block build_flags %}
+wrap_cc
+{% endblock %}
+
 {% block make_target %}
 bin/base64
 {% endblock %}
