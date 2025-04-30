@@ -65,4 +65,5 @@ for l in sys.stdin.readlines():
     if not l:
         continue
 
-    print(json.dumps(export_repology(json.loads(l))))
+    if res := export_repology(json.loads(l)):
+        print(json.dumps(res))
