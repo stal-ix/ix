@@ -176,7 +176,15 @@ class Descriptor:
         self.manager = mngr
         self.selector = fix_selector(selector, self.config)
         self.pkg_name = self.calc_pkg_name()
-        self.descr = cr.RenderContext(self).render()
+        self.descr, args = cr.RenderContext(self).render()
+
+        if self.buildable():
+            if args['boot']:
+                self.selector['flags']['boot'] = True
+                #print(self.name, True)
+            else:
+                #print(self.name, False)
+                pass
 
     @property
     def norm_name(self):
@@ -225,6 +233,9 @@ class Descriptor:
     @property
     def host(self):
         return self.config.host
+
+    def buildable(self):
+        return not not self.descr['bld']['script']
 
 
 class Package(Descriptor):
@@ -384,9 +395,6 @@ class Package(Descriptor):
 
     def iter_all_runtime_depends(self):
         return filter(lambda x: x.buildable(), self.run_closure())
-
-    def buildable(self):
-        return not not self.descr['bld']['script']
 
     def iter_build_commands(self):
         return cg.iter_build_commands(self)

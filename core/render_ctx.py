@@ -54,7 +54,9 @@ class RenderContext:
         self.package = package
 
     def render(self):
-        return json.loads(self.template(self.package.name))
+        res, flags = self.template(self.package.name)
+
+        return json.loads(res), flags
 
     def fix_list(self, lst):
         return cononize(lst)
@@ -124,7 +126,7 @@ class RenderContext:
             args['setx'] = '1'
 
         try:
-            return self.strip_template(tmpl.render(args))
+            return self.strip_template(tmpl.render(args)), args
         except Exception as e:
             raise ce.Error(f'can not render {path}', exception=e)
 
