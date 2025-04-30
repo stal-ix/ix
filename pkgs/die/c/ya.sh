@@ -15,7 +15,6 @@ export ENFORCE_TTY=1
 export CFLAGS=
 export LDFLAGS=
 export CTRFLAGS=
-export OPTFLAGS=
 export CPPFLAGS=
 export CXXFLAGS=
 export CONLYFLAGS=

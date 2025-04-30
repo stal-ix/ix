@@ -39,7 +39,6 @@ setup_tc() {
 export CFLAGS=
 export LDFLAGS=
 export CTRFLAGS=
-export OPTFLAGS=
 export CPPFLAGS=
 export CXXFLAGS=
 export CONLYFLAGS=

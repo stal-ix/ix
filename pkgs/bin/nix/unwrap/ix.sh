@@ -84,7 +84,7 @@ SYS_close_range=436
 
 {% block setup_target_flags %}
 # https://github.com/NixOS/nix/pull/9997/commits/64cbd4c05a413eae55cde784594472f921fc7367
-export OPTFLAGS="${OPTFLAGS} -UNDEBUG"
+export CFLAGS="${CFLAGS} -UNDEBUG"
 {% endblock %}
 
 {% block install %}

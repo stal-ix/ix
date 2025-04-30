@@ -8,14 +8,14 @@ cat << EOF > c++
 #!/usr/bin/env sh
 set -e
 . __realm__/env
-exec __realm__/bin/clang++ \${CPPFLAGS} \${CFLAGS} \${CXXFLAGS} \${LDFLAGS} \${OPTFLAGS} "\${@}"
+exec __realm__/bin/clang++ \${CPPFLAGS} \${CFLAGS} \${CXXFLAGS} \${LDFLAGS} "\${@}"
 EOF
 
 cat << EOF > cc
 #!/usr/bin/env sh
 set -e
 . __realm__/env
-exec __realm__/bin/clang \${CPPFLAGS} \${CFLAGS} \${LDFLAGS} \${OPTFLAGS} "\${@}"
+exec __realm__/bin/clang \${CPPFLAGS} \${CFLAGS} \${LDFLAGS} "\${@}"
 EOF
 
 cat << EOF > cpp

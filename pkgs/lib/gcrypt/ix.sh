@@ -23,7 +23,7 @@ lib/c
 {% endblock %}
 
 {% block setup_target_flags %}
-export OPTFLAGS="${OPTFLAGS} -O2"
+export CFLAGS="${CFLAGS} -O2"
 {% endblock %}
 
 {% block patch %}

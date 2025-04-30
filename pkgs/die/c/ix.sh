@@ -9,9 +9,6 @@
 {% block ld_flags %}
 {% endblock %}
 
-{% block opt_flags %}
-{% endblock %}
-
 {% block script_functions %}
 {{super()}}
 
@@ -78,9 +75,6 @@ setup_target_env() {
 {% endfor %}
 {% for f in ix.parse_list(self.ld_flags()) %}
     export LDFLAGS="{{f}} ${LDFLAGS}"
-{% endfor %}
-{% for f in ix.parse_list(self.opt_flags()) %}
-    export OPTFLAGS="{{f}} ${OPTFLAGS}"
 {% endfor %}
 {% endblock %}
 }

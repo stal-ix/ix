@@ -1,5 +1,5 @@
 {% extends '//die/env.sh' %}
 
 {% block env %}
-export OPTFLAGS="-Wl,-icf=all ${OPTFLAGS}"
+export LDFLAGS="-Wl,-icf=all ${LDFLAGS}"
 {% endblock %}

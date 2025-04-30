@@ -1,5 +1,6 @@
 {% extends '//die/env.sh' %}
 
 {% block env %}
-export OPTFLAGS="-DNDEBUG -g ${OPTFLAGS}"
+export CPPFLAGS="-DNDEBUG ${CPPFLAGS}"
+export CFLAGS="-g ${CFLAGS}"
 {% endblock %}
