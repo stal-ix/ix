@@ -1,4 +1,3 @@
-import json
 import itertools
 
 import core.sign as cs
