@@ -22,10 +22,6 @@ lib/gpg/error
 lib/c
 {% endblock %}
 
-{% block setup_target_flags %}
-export CFLAGS="${CFLAGS} -O2"
-{% endblock %}
-
 {% block patch %}
 sed -e 's|#error|#warning|' -i random/jitterentropy-base.c
 {% endblock %}
