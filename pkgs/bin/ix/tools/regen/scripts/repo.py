@@ -41,7 +41,7 @@ def export_repology(rec):
         else:
             lang = None
 
-        rec = {
+        res = {
             'category': rec['norm_name'].split('/')[0],
             'ix_pkg_name': rec['norm_name'].removesuffix('/unwrap'),
             'ix_pkg_full_name': rec['norm_name'],
@@ -55,11 +55,11 @@ def export_repology(rec):
         }
 
         if lang:
-            rec['lang_module'] = lang
+            res['lang_module'] = lang
 
-        print(json.dumps(rec))
+        return res
 
-for l in sys.stdin.read().split('\n'):
+for l in sys.stdin.readlines():
     l = l.strip()
 
     if not l:
