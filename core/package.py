@@ -5,7 +5,6 @@ import core.sign as cs
 import core.utils as cu
 import core.gen_cmds as cg
 import core.render_ctx as cr
-import core.repology as crp
 
 
 def parse_pkg_flags(v):
