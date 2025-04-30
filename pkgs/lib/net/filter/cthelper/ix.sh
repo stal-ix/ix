@@ -13,7 +13,7 @@ git://git.netfilter.org/libnetfilter_cthelper
 {% endblock %}
 
 {% block git_branch %}
-libnetfilter_cthelper-{{self.version().script()}}
+libnetfilter_cthelper-{{self.version().strip()}}
 {% endblock %}
 
 {% block git_sha %}
