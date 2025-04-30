@@ -5,6 +5,9 @@ mkdir ${out}/bin
 base64 -d << EOF > ${out}/bin/ix_flt
 {% include 'flt.py/base64' %}
 EOF
+base64 -d << EOF > ${out}/bin/ix_repo
+{% include 'repo.py/base64' %}
+EOF
 base64 -d << EOF > ${out}/bin/ix_regen
 {% include 'urls/base64' %}
 EOF

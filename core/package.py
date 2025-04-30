@@ -1,3 +1,4 @@
+import json
 import itertools
 
 import core.sign as cs
@@ -208,7 +209,11 @@ class Package(Descriptor):
 
         if self.buildable():
             if self.config.repo:
-                crp.export_repology(self)
+                print(json.dumps({
+                    'descr': self.descr,
+                    'norm_name': self.norm_name,
+                    'name': self.name,
+                }, sort_keys=True))
 
             self.uid = cs.UID
             self.uid = list(self.iter_build_commands())[-1]['uid']
