@@ -1,7 +1,9 @@
 {% extends '//die/c/ix.sh' %}
 
-{% block fetch %}
 {% include 'ver.sh' %}
+
+{% block fetch %}
+{{self.fetch_impl()}}
 {% endblock %}
 
 {% block unpack %}
