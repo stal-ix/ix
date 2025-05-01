@@ -5,12 +5,12 @@ pixman
 {% endblock %}
 
 {% block version %}
-0.44.2
+0.46.0
 {% endblock %}
 
 {% block fetch %}
 https://www.cairographics.org/releases/pixman-{{self.version().strip()}}.tar.gz
-sha:6349061ce1a338ab6952b92194d1b0377472244208d47ff25bef86fc71973466
+sha:02d9ff7b8458ef61731c3d355f854bbf461fd0a4d3563c51f1c1c7b00638050d
 {% endblock %}
 
 {% block lib_deps %}
