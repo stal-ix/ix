@@ -8,5 +8,5 @@
 {% endblock %}
 
 {% block host_libs %}
-lib/musl/pure(std_env={{std_env}},std_box={{std_box}})
+lib/musl/pure(std_env={{std_env}},std_box={{std_box}},boot={{boot}})
 {% endblock %}

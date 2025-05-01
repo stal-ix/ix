@@ -15,5 +15,6 @@ mv _ .config
 {% endblock %}
 
 {% block make_flags %}
+CC=${CC}
 HOSTCC=${HOST_CC}
 {% endblock %}

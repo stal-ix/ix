@@ -32,7 +32,7 @@ lib/kernel
 {% endblock %}
 
 {% block setup_target_flags %}
-export OPTFLAGS="${OPTFLAGS} -O0"
+export CFLAGS="${CFLAGS} -O0"
 {% endblock %}
 
 {% block patch %}

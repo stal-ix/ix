@@ -1,11 +1,19 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block pkg_name %}
+libnfnetlink
+{% endblock %}
+
+{% block version %}
+1.0.2
+{% endblock %}
+
 {% block git_repo %}
 git://git.netfilter.org/libnfnetlink
 {% endblock %}
 
 {% block git_branch %}
-libnfnetlink-1.0.2
+libnfnetlink-{{self.version().strip()}}
 {% endblock %}
 
 {% block git_sha %}

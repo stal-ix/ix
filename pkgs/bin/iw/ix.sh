@@ -24,6 +24,10 @@ bld/gzip
 bld/pkg/config
 {% endblock %}
 
+{% block ld_flags %}
+-Wl,-z,nostart-stop-gc
+{% endblock %}
+
 {% block make_flags %}
 SBINDIR="${out}/bin"
 {% endblock %}

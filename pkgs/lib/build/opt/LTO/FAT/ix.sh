@@ -1,5 +1,5 @@
 {% extends '//die/env.sh' %}
 
 {% block env %}
-export OPTFLAGS="-flto ${OPTFLAGS}"
+export CFLAGS="-flto ${CFLAGS}"
 {% endblock %}

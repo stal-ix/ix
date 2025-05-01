@@ -1,11 +1,19 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block pkg_name %}
+libnetfilter_conntrack
+{% endblock %}
+
+{% block version %}
+1.1.0
+{% endblock %}
+
 {% block git_repo %}
 git://git.netfilter.org/libnetfilter_conntrack
 {% endblock %}
 
 {% block git_branch %}
-libnetfilter_conntrack-1.1.0
+libnetfilter_conntrack-{{self.version().strip()}}
 {% endblock %}
 
 {% block git_sha %}
@@ -21,4 +29,3 @@ lib/nfnetlink
 {% block bld_libs %}
 lib/kernel
 {% endblock %}
-

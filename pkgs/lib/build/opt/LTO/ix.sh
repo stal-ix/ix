@@ -1,5 +1,6 @@
 {% extends '//die/env.sh' %}
 
 {% block env %}
-export OPTFLAGS="-flto=thin -Wl,--thinlto-jobs=8 ${OPTFLAGS}"
+export CFLAGS="-flto=thin ${CFLAGS}"
+export LDFLAGS="-Wl,--thinlto-jobs=8 ${LDFLAGS}"
 {% endblock %}

@@ -5,7 +5,7 @@ pahole
 {% endblock %}
 
 {% block version %}
-1.29
+1.30
 {% endblock %}
 
 {% block git_repo %}
@@ -17,7 +17,7 @@ v{{self.version().strip()}}
 {% endblock %}
 
 {% block git_sha %}
-0d7e240e7bf3023344e37518ebae1986db96d5e99571ec6c6584bd262e43a646
+d1aefe5026c38e3fc6c6da0d6f96777e4cb9e6d82165124ed307454bdf6e3860
 {% endblock %}
 
 {% block bld_libs %}

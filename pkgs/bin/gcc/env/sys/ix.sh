@@ -6,7 +6,7 @@ export CC=gcc
 export CPP=cpp
 export CXX=g++
 
-C="-fdiagnostics-color -nodefaultlibs -static -nostartfiles -nostdinc -nostdlib ${CPPFLAGS} ${CFLAGS} ${LDFLAGS} ${OPTFLAGS}"
+C="-fdiagnostics-color -nodefaultlibs -static -nostartfiles -nostdinc -nostdlib ${CPPFLAGS} ${LDFLAGS} ${CFLAGS}"
 
 A="${CONLYFLAGS} ${C}"
 B="-nostdinc++ ${CXXFLAGS} ${C}"

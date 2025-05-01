@@ -1,5 +1,5 @@
 {% extends '//die/env.sh' %}
 
 {% block env %}
-export OPTFLAGS="-fsanitize=address -fno-omit-frame-pointer ${OPTFLAGS}"
+export CFLAGS="-fsanitize=address -fno-omit-frame-pointer ${CFLAGS}"
 {% endblock %}

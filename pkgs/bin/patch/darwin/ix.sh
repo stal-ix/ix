@@ -41,5 +41,5 @@ sed -e 's|util.c|util.c vcs.c|' -i Makefile
 
 {% block setup_target_flags %}
 {{super()}}
-export OPTFLAGS="${OPTFLAGS} -UNDEBUG"
+export CFLAGS="${CFLAGS} -UNDEBUG"
 {% endblock %}

@@ -18,5 +18,5 @@ ${out}/bin/tst
 {% endblock %}
 
 {% block setup_target_flags %}
-export OPTFLAGS="${OPTFLAGS} -std=c++2a -O0"
+export CFLAGS="${CFLAGS} -std=c++2a -O0"
 {% endblock %}

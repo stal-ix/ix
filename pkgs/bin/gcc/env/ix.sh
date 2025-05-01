@@ -8,7 +8,7 @@ export CXX=g++
 
 BD="-B$(dirname $(which {{target.gnu.three}}ld))/{{target.gnu.three}}/ -B$(dirname $(which {{target.gnu.three}}as))/{{target.gnu.three}}"
 
-C="-fdiagnostics-color -nostdinc -nostdlib ${CPPFLAGS} ${CFLAGS} ${LDFLAGS} ${OPTFLAGS}"
+C="-fdiagnostics-color -nostdinc -nostdlib ${CPPFLAGS} ${CFLAGS} ${LDFLAGS}"
 
 A="${CONLYFLAGS} ${C}"
 B="-nostdinc++ ${CXXFLAGS} ${C}"

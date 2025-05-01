@@ -1,5 +1,5 @@
 {% extends '//die/env.sh' %}
 
 {% block env %}
-export OPTFLAGS="-faddrsig -ffunction-sections -fdata-sections -Wl,-icf=safe ${OPTFLAGS}"
+export LDFLAGS="-Wl,-icf=safe ${LDFLAGS}"
 {% endblock %}

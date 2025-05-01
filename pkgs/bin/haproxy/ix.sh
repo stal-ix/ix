@@ -21,6 +21,9 @@ lib/openssl
 lib/execinfo
 {% endblock %}
 
+{% block ld_flags %}
+-Wl,-z,nostart-stop-gc
+{% endblock %}
 
 {% block make_flags %}
 TARGET=linux-musl

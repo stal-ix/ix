@@ -1,5 +1,5 @@
 {% extends '//die/env.sh' %}
 
 {% block env %}
-export CFLAGS="-Os ${CFLAGS}"
+export LDFLAGS="-Wl,--gc-sections ${LDFLAGS}"
 {% endblock %}
