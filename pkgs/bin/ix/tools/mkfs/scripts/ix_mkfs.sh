@@ -2,7 +2,7 @@
 
 set -xue
 
-cd $(dirname ${IX_BINARY})
+cd ${IX_DIR}
 
 rm -f /ix/realm/mkfs
 
@@ -17,7 +17,9 @@ cd ${1}
 mkdir ix
 mkdir -m 01777 ix/realm
 mkdir -m 01777 ix/trash
-mkdir -p ix/store home/root var sys proc dev
+mkdir -p ix/store home/ix var sys proc dev
+
+cp -R ${IX_DIR} home/ix/
 
 ix_sync ./ ${realm}
 

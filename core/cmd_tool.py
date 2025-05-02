@@ -20,4 +20,5 @@ def cli_tool(ctx):
     env['IX_PKGS_ROOT'] = pkgs
     env['IX_BINARY'] = ctx['binary']
     env['IX_WHERE'] = where
+    env['IX_DIR'] = os.path.dirname(ctx['binary'])
     os.execvpe(script, [script] + args, env)
