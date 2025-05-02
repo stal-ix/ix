@@ -7,10 +7,11 @@ bld/fake(tool_name=check_realm)
 {% else %}
 bld/realm/checker
 {% endif %}
-bld/realm/common
 {% if target_materialize %}
+bld/realm/common
 bld/realm/materialize
 {% else %}
+bld/realm/common
 bld/realm/symlink
 {% endif %}
 {{target_fixers}}
