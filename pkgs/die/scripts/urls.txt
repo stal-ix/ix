@@ -24,6 +24,7 @@ http://download.savannah.gnu.org/releases/dmidecode/dmidecode-3.5.tar.xz
 http://download.savannah.nongnu.org/releases/man-db/man-db-2.11.2.tar.xz
 http://download.savannah.nongnu.org/releases/man-db/man-db-2.12.0.tar.xz
 http://download.savannah.nongnu.org/releases/man-db/man-db-2.13.0.tar.xz
+http://download.savannah.nongnu.org/releases/man-db/man-db-2.13.1.tar.xz
 http://download.windowsupdate.com/msdownload/update/software/svpk/2011/02/windows6.1-kb976932-x86_c3516bc5c9e69fee6d9ac4f981f5b95977a8a2fa.exe
 http://downloads.sourceforge.net/djvu/djvulibre-3.5.28.tar.gz
 http://downloads.sourceforge.net/freeimage/FreeImage3180.zip
@@ -238,6 +239,7 @@ https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.13.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.14.2.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.14.3.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.14.4.tar.xz
+https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.14.5.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.14.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.2.14.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.3.13.tar.xz
@@ -1362,6 +1364,7 @@ https://github.com/Novum/vkQuake/archive/refs/tags/1.31.2.tar.gz
 https://github.com/Novum/vkQuake/archive/refs/tags/1.31.3.tar.gz
 https://github.com/Novum/vkQuake/archive/refs/tags/1.32.0.tar.gz
 https://github.com/Novum/vkQuake/archive/refs/tags/1.32.1.tar.gz
+https://github.com/Novum/vkQuake/archive/refs/tags/1.32.2.tar.gz
 https://github.com/Old-Man-Programmer/tree/archive/refs/tags/2.1.1.tar.gz
 https://github.com/Old-Man-Programmer/tree/archive/refs/tags/2.2.1.tar.gz
 https://github.com/OpenPrinting/cups/archive/refs/tags/v2.4.8.tar.gz
@@ -1584,6 +1587,7 @@ https://github.com/aristocratos/btop/archive/refs/tags/v1.2.0.tar.gz
 https://github.com/aristocratos/btop/archive/refs/tags/v1.3.2.tar.gz
 https://github.com/aristocratos/btop/archive/refs/tags/v1.4.0.tar.gz
 https://github.com/aristocratos/btop/archive/refs/tags/v1.4.1.tar.gz
+https://github.com/aristocratos/btop/archive/refs/tags/v1.4.2.tar.gz
 https://github.com/artemsen/swayimg/archive/refs/tags/v1.12.tar.gz
 https://github.com/artemsen/swayimg/archive/refs/tags/v2.0.tar.gz
 https://github.com/artemsen/swayimg/archive/refs/tags/v2.1.tar.gz
@@ -1732,6 +1736,7 @@ https://github.com/contour-terminal/contour/archive/refs/tags/v0.6.1.7494.tar.gz
 https://github.com/contour-terminal/libunicode/archive/refs/tags/v0.6.0.tar.gz
 https://github.com/contour-terminal/reflection-cpp/archive/refs/tags/v0.1.0.tar.gz
 https://github.com/contour-terminal/reflection-cpp/archive/refs/tags/v0.2.0.tar.gz
+https://github.com/contour-terminal/reflection-cpp/archive/refs/tags/v0.3.0.tar.gz
 https://github.com/cppfw/agg/archive/refs/tags/2.8.17.tar.gz
 https://github.com/cppfw/agg/archive/refs/tags/2.8.22.tar.gz
 https://github.com/cppfw/agg/archive/refs/tags/2.8.33.tar.gz
@@ -2425,6 +2430,7 @@ https://github.com/janmojzis/tinyssh/archive/refs/tags/20241201.tar.gz
 https://github.com/janmojzis/tinyssh/archive/refs/tags/20250126.tar.gz
 https://github.com/janmojzis/tinyssh/archive/refs/tags/20250201.tar.gz
 https://github.com/janmojzis/tinyssh/archive/refs/tags/20250411.tar.gz
+https://github.com/janmojzis/tinyssh/archive/refs/tags/20250501.tar.gz
 https://github.com/jarun/nnn/archive/refs/tags/v4.9.tar.gz
 https://github.com/jarun/nnn/archive/refs/tags/v5.0.tar.gz
 https://github.com/jarun/nnn/archive/refs/tags/v5.1.tar.gz
@@ -3590,6 +3596,7 @@ https://github.com/stedolan/jq/archive/refs/tags/jq-1.7.1.tar.gz
 https://github.com/stephenberry/glaze/archive/refs/tags/v4.4.3.tar.gz
 https://github.com/stephenberry/glaze/archive/refs/tags/v5.1.0.tar.gz
 https://github.com/stephenberry/glaze/archive/refs/tags/v5.1.1.tar.gz
+https://github.com/stephenberry/glaze/archive/refs/tags/v5.1.2.tar.gz
 https://github.com/stevegrubb/libcap-ng/archive/refs/tags/v0.8.3.tar.gz
 https://github.com/stevegrubb/libcap-ng/archive/refs/tags/v0.8.4.tar.gz
 https://github.com/stevegrubb/libcap-ng/archive/refs/tags/v0.8.5.tar.gz
