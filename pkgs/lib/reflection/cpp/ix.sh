@@ -5,12 +5,12 @@ reflection-cpp
 {% endblock %}
 
 {% block version %}
-0.2.0
+0.3.0
 {% endblock %}
 
 {% block fetch %}
 https://github.com/contour-terminal/reflection-cpp/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:3cf15cee33f39914a7d5c36347f0638bd39af210dcd3a07836300ab4aaf91250
+sha:2c8a520c3e69a874e78b0ca50f8e0254cd30fbeca9e6b965567a72ef6ba17ff6
 {% endblock %}
 
 {% block lib_deps %}
