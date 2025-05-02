@@ -6,7 +6,7 @@ cd ${IX_DIR}
 
 rm -f /ix/realm/mkfs
 
-./ix mut mkfs set/stalix set/boot
+./ix mut mkfs set/rootfs set/boot
 
 realm=$(readlink /ix/realm/mkfs)
 
