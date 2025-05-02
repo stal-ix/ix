@@ -54,11 +54,6 @@ if os.path.isdir('fix'):
 with open('meta.json', 'w') as f:
     f.write(json.dumps(meta, indent=4, sort_keys=True))
 
-try:
-    os.unlink('env')
-except Exception:
-    pass
-
 with open('env', 'w') as f:
     f.write('\n'.join(f'. {x}/env' for x in reversed(meta['links'])) + '\n')
 

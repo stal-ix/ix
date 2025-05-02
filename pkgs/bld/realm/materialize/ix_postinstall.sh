@@ -2,4 +2,5 @@
 
 set -xue
 
-exec chrw ${PWD}
+chrw ${PWD}
+rm env
