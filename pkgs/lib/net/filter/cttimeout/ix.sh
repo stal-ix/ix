@@ -5,7 +5,7 @@ libnetfilter_cttimeout
 {% endblock %}
 
 {% block version %}
-1.0.0
+1.0.1
 {% endblock %}
 
 {% block git_repo %}
@@ -17,7 +17,7 @@ libnetfilter_cttimeout-{{self.version().strip()}}
 {% endblock %}
 
 {% block git_sha %}
-fb5940f89ad8d5c415a50a5c9851359ae986cb7dcaa9913eef07ef9fc2498107
+48d05f36407df8800c5bf35fcc24f8a82ad945579941b2b321edc86f660c769f
 {% endblock %}
 
 {% block lib_deps %}
