@@ -5,12 +5,12 @@ man-db
 {% endblock %}
 
 {% block version %}
-2.13.0
+2.13.1
 {% endblock %}
 
 {% block fetch %}
 http://download.savannah.nongnu.org/releases/man-db/man-db-{{self.version().strip()}}.tar.xz
-sha:82f0739f4f61aab5eb937d234de3b014e777b5538a28cbd31433c45ae09aefb9
+sha:8afebb6f7eb6bb8542929458841f5c7e6f240e30c86358c1fbcefbea076c87d9
 {% endblock %}
 
 {% block bld_libs %}
