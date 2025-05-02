@@ -5,12 +5,12 @@ vkQuake
 {% endblock %}
 
 {% block version %}
-1.32.1
+1.32.2
 {% endblock %}
 
 {% block fetch %}
 https://github.com/Novum/vkQuake/archive/refs/tags/{{self.version().strip()}}.tar.gz
-sha:f6d2f9c708b16e56aa13b29d8dfaf3faab970ec4da18e878997dc627a35731f8
+sha:e3278c329c17087816b95fa8997cb83fd8233393be242e49c97c71f9cc9395ab
 {% endblock %}
 
 {% block bld_libs %}
