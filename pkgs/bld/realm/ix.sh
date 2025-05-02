@@ -7,6 +7,7 @@ bld/fake(tool_name=check_realm)
 {% else %}
 bld/realm/checker
 {% endif %}
+bld/realm/common
 {% if target_materialize %}
 bld/realm/materialize
 {% else %}
