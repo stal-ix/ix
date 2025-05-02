@@ -1,12 +1,8 @@
-{% extends '//die/gen.sh' %}
+{% extends '//die/hub.sh' %}
 
-{% block install %}
-mkdir ${out}/bin
-base64 -d << EOF > ${out}/bin/ix_mkfs
-{% include 'ix_mkfs.sh/base64' %}
-EOF
-base64 -d << EOF > ${out}/bin/ix_sync
-{% include 'ix_sync.py/base64' %}
-EOF
-chmod +x ${out}/bin/*
+{% block run_deps %}
+bld/box
+bin/rsync
+bld/python
+bin/ix/tools/mkfs/scripts
 {% endblock %}
