@@ -5,12 +5,12 @@ googletest
 {% endblock %}
 
 {% block version %}
-1.16.0
+1.17.0
 {% endblock %}
 
 {% block fetch %}
 https://github.com/google/googletest/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:78c676fc63881529bf97bf9d45948d905a66833fbfa5318ea2cd7478cb98f399
+sha:65fab701d9829d38cb77c14acdc431d2108bfdbf8979e40eb8ae567edf10b27c
 {% endblock %}
 
 {% block lib_deps %}

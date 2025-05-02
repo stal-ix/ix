@@ -1,5 +1,5 @@
 {% extends '//die/env.sh' %}
 
 {% block env %}
-export CFLAGS="-faddrsig -ffunction-sections -fdata-sections ${CFLAGS}"
+export CFLAGS="-ffunction-sections -fdata-sections ${CFLAGS}"
 {% endblock %}

@@ -5,12 +5,12 @@ smartmontools
 {% endblock %}
 
 {% block version %}
-7.4
+7.5
 {% endblock %}
 
 {% block fetch %}
 https://downloads.sourceforge.net/sourceforge/smartmontools/smartmontools-{{self.version().strip()}}.tar.gz
-sha:e9a61f641ff96ca95319edfb17948cd297d0cd3342736b2c49c99d4716fb993d
+sha:690b83ca331378da9ea0d9d61008c4b22dde391387b9bbad7f29387f2595f76e
 {% endblock %}
 
 {% block bld_libs %}
