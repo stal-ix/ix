@@ -2,6 +2,8 @@
 
 set -xue
 
+cd $(dirname ${IX_BINARY})
+
 rm -f /ix/realm/mkfs
 
 ./ix mut mkfs set/stalix set/boot
@@ -17,7 +19,7 @@ mkdir -m 01777 ix/realm
 mkdir -m 01777 ix/trash
 mkdir -p ix/store home/root var sys proc dev
 
-ix_sync ix/store ${realm}
+ix_sync ./ ${realm}
 
 ln -s ${realm} ix/realm/system
 ln -s ${realm} ix/realm/boot
