@@ -47,7 +47,7 @@ def print_help():
             print('    ' + v.replace('_', ' '))
 
 
-def main_func(args, binary, seed):
+def main_func(args, binary):
     hndl = find_handler(args)
 
     if not hndl:
@@ -59,7 +59,6 @@ def main_func(args, binary, seed):
     ctx = {
         'args': a,
         'binary': binary,
-        'seed': seed,
     }
 
     def run():
@@ -69,11 +68,9 @@ def main_func(args, binary, seed):
     run()
 
 
-def main(argv, ix, seed):
-    random.seed(seed)
-
+def main(argv, ix):
     try:
-        main_func(argv[1:], ix, seed)
+        main_func(argv[1:], ix)
     except subprocess.CalledProcessError as e:
         return e.returncode
     except ce.Error as e:
