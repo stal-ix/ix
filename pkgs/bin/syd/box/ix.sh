@@ -5,7 +5,7 @@ sydbox
 {% endblock %}
 
 {% block version %}
-3.32.7
+3.33.0
 {% endblock %}
 
 {% block cargo_url %}
@@ -13,7 +13,7 @@ https://gitlab.exherbo.org/sydbox/sydbox/-/archive/v{{self.version().strip()}}/s
 {% endblock %}
 
 {% block cargo_sha %}
-b2ae323da876bf268545d0ae105d47ddf6b1a23989d06146224024fea3a026d5
+2db7376c53b18f2d03ac7b1c12bc08091765a6e4b60a5510a368120694bd4e1e
 {% endblock %}
 
 {% block bld_libs %}
@@ -23,4 +23,8 @@ lib/seccomp
 {% block install %}
 mkdir ${out}/bin
 cp ${tmp}/out/syd ${out}/bin/
+{% endblock %}
+
+{% block cargoc_ver %}
+bld/cargo/86
 {% endblock %}
