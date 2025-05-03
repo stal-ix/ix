@@ -1427,6 +1427,7 @@ https://github.com/Tessil/robin-map/archive/refs/tags/v1.4.0.tar.gz
 https://github.com/Tomas-M/iotop/archive/refs/tags/v1.23.tar.gz
 https://github.com/Tomas-M/iotop/archive/refs/tags/v1.26.tar.gz
 https://github.com/Tomas-M/iotop/archive/refs/tags/v1.27.tar.gz
+https://github.com/Tomas-M/iotop/archive/refs/tags/v1.28.tar.gz
 https://github.com/ToruNiina/toml11/archive/refs/tags/v4.1.0.tar.gz
 https://github.com/ToruNiina/toml11/archive/refs/tags/v4.4.0.tar.gz
 https://github.com/USCiLab/cereal/archive/refs/tags/v1.3.2.tar.gz
@@ -1704,6 +1705,7 @@ https://github.com/ccache/ccache/archive/refs/tags/v4.10.2.tar.gz
 https://github.com/ccache/ccache/archive/refs/tags/v4.10.tar.gz
 https://github.com/ccache/ccache/archive/refs/tags/v4.11.1.tar.gz
 https://github.com/ccache/ccache/archive/refs/tags/v4.11.2.tar.gz
+https://github.com/ccache/ccache/archive/refs/tags/v4.11.3.tar.gz
 https://github.com/ccache/ccache/archive/refs/tags/v4.11.tar.gz
 https://github.com/ccache/ccache/releases/download/v4.8.3/ccache-4.8.3.tar.xz
 https://github.com/ccache/ccache/releases/download/v4.9.1/ccache-4.9.1.tar.xz
@@ -2589,6 +2591,7 @@ https://github.com/labwc/labwc/archive/refs/tags/0.8.0.tar.gz
 https://github.com/labwc/labwc/archive/refs/tags/0.8.1.tar.gz
 https://github.com/labwc/labwc/archive/refs/tags/0.8.2.tar.gz
 https://github.com/labwc/labwc/archive/refs/tags/0.8.3.tar.gz
+https://github.com/labwc/labwc/archive/refs/tags/0.8.4.tar.gz
 https://github.com/landley/toybox/archive/refs/tags/0.8.10.tar.gz
 https://github.com/landley/toybox/archive/refs/tags/0.8.11.tar.gz
 https://github.com/landley/toybox/archive/refs/tags/0.8.12.tar.gz
@@ -4021,6 +4024,7 @@ https://github.com/xkbcommon/libxkbcommon/archive/refs/tags/xkbcommon-1.7.0.tar.
 https://github.com/xkbcommon/libxkbcommon/archive/refs/tags/xkbcommon-1.8.0.tar.gz
 https://github.com/xkbcommon/libxkbcommon/archive/refs/tags/xkbcommon-1.8.1.tar.gz
 https://github.com/xkbcommon/libxkbcommon/archive/refs/tags/xkbcommon-1.9.0.tar.gz
+https://github.com/xkbcommon/libxkbcommon/archive/refs/tags/xkbcommon-1.9.1.tar.gz
 https://github.com/xxxserxxx/gotop/archive/refs/tags/v4.2.0.tar.gz
 https://github.com/xyproto/gendesk/archive/refs/tags/1.0.9.tar.gz
 https://github.com/xyproto/orbiton/archive/refs/tags/v2.68.0.tar.gz
