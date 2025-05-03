@@ -2,6 +2,10 @@
 
 {% block make_no_thrs %}{% endblock %}
 
+{% block configure_flags %}
+--without-guile
+{% endblock %}
+
 {% block bld_libs %}
 bld/boot/1/lib/c
 {% endblock %}
