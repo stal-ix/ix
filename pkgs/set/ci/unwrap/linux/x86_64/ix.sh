@@ -632,7 +632,6 @@ bin/curl
 bin/curl/wolf
 bin/curl/gnutls
 bin/wayland/utils
-bin/wayland/info
 bin/wayland/protocols
 bin/wayland/scanner
 bin/wev
