@@ -4227,6 +4227,7 @@ https://gitlab.freedesktop.org/wayland/wayland-protocols/-/archive/1.41/wayland-
 https://gitlab.freedesktop.org/wayland/wayland-protocols/-/archive/1.42/wayland-protocols-1.42.tar.bz2
 https://gitlab.freedesktop.org/wayland/wayland-protocols/-/archive/1.43/wayland-protocols-1.43.tar.bz2
 https://gitlab.freedesktop.org/wayland/wayland-protocols/-/archive/1.44/wayland-protocols-1.44.tar.bz2
+https://gitlab.freedesktop.org/wayland/wayland-utils/-/archive/1.2.0/wayland-utils-1.2.0.tar.bz2
 https://gitlab.freedesktop.org/wayland/wayland-utils/-/archive/wayland-info-1.0.0/wayland-utils-wayland-info-1.0.0.tar.bz2
 https://gitlab.freedesktop.org/wayland/wayland-utils/-/archive/wayland-utils-1.0.0/wayland-utils-wayland-utils-1.0.0.tar.bz2
 https://gitlab.freedesktop.org/wayland/wayland/-/archive/1.23.1/wayland-1.23.1.tar.bz2
