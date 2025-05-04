@@ -352,6 +352,7 @@ https://codeberg.org/grisha/gumbo-parser/archive/0.12.1.tar.gz
 https://codeberg.org/grisha/gumbo-parser/archive/0.12.3.tar.gz
 https://codeberg.org/grisha/gumbo-parser/archive/0.13.0.tar.gz
 https://codeberg.org/mbunkus/mkvtoolnix/archive/release-91.0.tar.gz
+https://codeberg.org/mbunkus/mkvtoolnix/archive/release-92.0.tar.gz
 https://codeberg.org/soundtouch/soundtouch/archive/2.3.1.tar.gz
 https://codeberg.org/tenacityteam/libmad/archive/0.16.3.tar.gz
 https://codeberg.org/tenacityteam/libmad/archive/0.16.4.tar.gz
@@ -2428,6 +2429,7 @@ https://github.com/ivmai/bdwgc/archive/refs/tags/v8.2.8.tar.gz
 https://github.com/ivmai/libatomic_ops/archive/refs/tags/v7.8.0.tar.gz
 https://github.com/ivmai/libatomic_ops/archive/refs/tags/v7.8.2.tar.gz
 https://github.com/jackaudio/jack2/archive/v1.9.19.tar.gz
+https://github.com/jackaudio/jack2/archive/v1.9.22.tar.gz
 https://github.com/janmojzis/tinyssh/archive/refs/tags/20220801.tar.gz
 https://github.com/janmojzis/tinyssh/archive/refs/tags/20240101.tar.gz
 https://github.com/janmojzis/tinyssh/archive/refs/tags/20241111.tar.gz
