@@ -11,7 +11,8 @@ curl -k 'https://repology.org/api/v1/projects/?maintainer=anton%40samokhvalov.xy
         git add -A
         git commit -m "up ${l}" || true
     else
-        git checkout .
         echo "FAILED ${l}"
     fi
+
+    git checkout .
 ) done
