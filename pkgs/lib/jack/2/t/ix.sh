@@ -5,12 +5,12 @@ jack2
 {% endblock %}
 
 {% block version %}
-1.9.19
+1.9.22
 {% endblock %}
 
 {% block fetch %}
 https://github.com/jackaudio/jack2/archive/v{{self.version().strip()}}.tar.gz
-sha:9030f4dc11773351b6ac96affd9c89803a5587ebc1b091e5ff866f433327e4b0
+sha:1e42b9fc4ad7db7befd414d45ab2f8a159c0b30fcd6eee452be662298766a849
 {% endblock %}
 
 {% block lib_deps %}
