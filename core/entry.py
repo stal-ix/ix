@@ -25,10 +25,7 @@ except ImportError:
 import fcntl
 fcntl.fcntl(1, fcntl.F_SETFL, 0)
 
-import time
-
 import core.main as cm
 
 def entry(me):
-    seed = os.environ.get('IX_SEED', str(time.time()))
-    sys.exit(cm.main(sys.argv, me, seed))
+    sys.exit(cm.main(sys.argv, me))

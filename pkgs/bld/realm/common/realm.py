@@ -6,7 +6,6 @@ import json
 import shutil
 import subprocess
 
-
 meta = json.loads(sys.stdin.read())
 path = sys.argv[1]
 
@@ -25,23 +24,8 @@ def col(v, color='r', bright=False):
 
     return f'\x1b[{n}m{v}\x1b[0m'
 
-def iter_dir_1(w):
-    for a, b, c in os.walk(w):
-        for x in c:
-            yield os.path.join(a, x)
-
-        for x in b:
-            dl = os.path.join(a, x)
-
-            if os.path.islink(dl):
-                yield dl
-
-def iter_dir(w):
-    for x in iter_dir_1(w):
-        yield x[len(w) + 1:]
-
 def install(fr, to):
-    subprocess.check_call(['rsync', '-a', '--exclude=touch', fr + '/', to + '/'])
+    subprocess.check_call(['ix_install', fr, to])
 
 try:
     shutil.rmtree(path)
@@ -54,7 +38,7 @@ os.chdir(path)
 for p in reversed(meta['links']):
     install(p, path)
 
-subprocess.run(['chrw', path], check=True)
+subprocess.check_call(['ix_postinstall'])
 
 if os.path.isdir('fix'):
     for x in sorted(os.listdir('fix')):
@@ -67,8 +51,6 @@ if os.path.isdir('fix'):
 
     shutil.rmtree('fix')
 
-os.unlink('env')
-
 with open('meta.json', 'w') as f:
     f.write(json.dumps(meta, indent=4, sort_keys=True))
 
@@ -76,4 +58,8 @@ with open('env', 'w') as f:
     f.write('\n'.join(f'. {x}/env' for x in reversed(meta['links'])) + '\n')
 
 subprocess.run(['chro', path], check=True)
-subprocess.run(['check_realm', 'meta.json'], check=True)
+
+try:
+    subprocess.run(['check_realm', 'meta.json'], check=True)
+except subprocess.CalledProcessError as e:
+    sys.exit(e.returncode)

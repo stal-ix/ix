@@ -227,12 +227,11 @@ def arch(n):
 
 
 class Config:
-    def __init__(self, binary, overlays, root, verbose, seed, repo):
+    def __init__(self, binary, overlays, root, verbose, repo):
         self.binary = binary
         self.overlays = overlays
         self.ix_dir = root
         self.verbose = verbose
-        self.seed = seed
         self.repo = repo
         # circular ref
         self.ops = co.construct(self)
@@ -291,4 +290,4 @@ def config_from(ctx):
     verbose = os.environ.get('IX_VERBOSE', '')
     repo = os.environ.get('IX_DUMP_REPO', '')
 
-    return Config(binary, overlays, root, verbose, ctx['seed'], repo)
+    return Config(binary, overlays, root, verbose, repo)
