@@ -9,8 +9,8 @@ wayland
 {% endblock %}
 
 {% block fetch %}
-https://gitlab.freedesktop.org/wayland/wayland/-/releases/{{self.version().strip()}}/downloads/wayland-{{self.version().strip()}}.tar.xz
-sha:864fb2a8399e2d0ec39d56e9d9b753c093775beadc6022ce81f441929a81e5ed
+https://gitlab.freedesktop.org/wayland/wayland/-/archive/{{self.version().strip()}}/wayland-{{self.version().strip()}}.tar.bz2
+sha:4afcf2942a39d8276d06dcefc89dfaf029222994778fd4c49aa68a702ebf698f
 {% endblock %}
 
 {% block meson_flags %}
