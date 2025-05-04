@@ -21,6 +21,7 @@ bld/gettext
 
 {% block lib_deps %}
 lib/c
+lib/dlfcn
 {% endblock %}
 
 {% block bld_libs %}
