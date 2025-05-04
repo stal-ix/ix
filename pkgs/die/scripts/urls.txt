@@ -627,6 +627,7 @@ https://files.pythonhosted.org/packages/ec/5f/d922519ac948491915ab5b3270a88b0f51
 https://files.pythonhosted.org/packages/f0/eb/fcb708c7bf5056045e9e98f62b93bd7467eb718b0202e7698eb11d66416c/attrs-23.1.0-py3-none-any.whl
 https://files.pythonhosted.org/packages/f3/d4/25cc1e670f7ae478ffaefeecd6b968c049486c812e67e6e9fcc684bc0195/qtile-0.23.0.tar.gz
 https://files.pythonhosted.org/packages/fa/7f/4c07234086edbce4a0a446209dc0cb08a19bb206a3ea53b2f56a403f983b/wheel-0.41.3-py3-none-any.whl
+https://fossies.org/linux/misc/libev-4.33.tar.gz
 https://ftp.debian.org/debian/pool/main/v/vbetool/vbetool_1.1-5.debian.tar.xz
 https://ftp.debian.org/debian/pool/main/v/vbetool/vbetool_1.1.orig.tar.gz
 https://ftp.gnu.org/gnu/autoconf/autoconf-2.69.tar.xz
@@ -4221,6 +4222,7 @@ https://gitlab.freedesktop.org/wayland/wayland-protocols/-/archive/1.43/wayland-
 https://gitlab.freedesktop.org/wayland/wayland-protocols/-/archive/1.44/wayland-protocols-1.44.tar.bz2
 https://gitlab.freedesktop.org/wayland/wayland-utils/-/archive/wayland-info-1.0.0/wayland-utils-wayland-info-1.0.0.tar.bz2
 https://gitlab.freedesktop.org/wayland/wayland-utils/-/archive/wayland-utils-1.0.0/wayland-utils-wayland-utils-1.0.0.tar.bz2
+https://gitlab.freedesktop.org/wayland/wayland/-/archive/1.23.1/wayland-1.23.1.tar.bz2
 https://gitlab.freedesktop.org/wayland/wayland/-/releases/1.22.0/downloads/wayland-1.22.0.tar.xz
 https://gitlab.freedesktop.org/wayland/wayland/-/releases/1.23.0/downloads/wayland-1.23.0.tar.xz
 https://gitlab.freedesktop.org/wayland/wayland/-/releases/1.23.1/downloads/wayland-1.23.1.tar.xz
@@ -4715,6 +4717,7 @@ https://pagure.io/xmlto/archive/0.0.29/xmlto-0.0.29.tar.gz
 https://pawsa.fedorapeople.org/balsa/balsa-2.6.4.tar.xz
 https://pkg-config.freedesktop.org/releases/pkg-config-0.29.2.tar.gz
 https://pm-utils.freedesktop.org/releases/pm-utils-1.4.1.tar.gz
+https://pngquant.org/pngquant-2.9.1-src.tar.gz
 https://poppler.freedesktop.org/poppler-23.09.0.tar.xz
 https://poppler.freedesktop.org/poppler-23.10.0.tar.xz
 https://poppler.freedesktop.org/poppler-23.11.0.tar.xz
@@ -4894,6 +4897,7 @@ https://www.alsa-project.org/files/pub/lib/alsa-lib-1.2.11.tar.bz2
 https://www.alsa-project.org/files/pub/lib/alsa-lib-1.2.12.tar.bz2
 https://www.alsa-project.org/files/pub/lib/alsa-lib-1.2.13.tar.bz2
 https://www.alsa-project.org/files/pub/lib/alsa-lib-1.2.14.tar.bz2
+https://www.alsa-project.org/files/pub/utils/alsa-utils-1.2.14.tar.bz2
 https://www.atoptool.nl/download/atop-2.10.0.tar.gz
 https://www.atoptool.nl/download/atop-2.11.0.tar.gz
 https://www.atoptool.nl/download/atop-2.11.1.tar.gz
@@ -4986,6 +4990,7 @@ https://www.greenwoodsoftware.com/less/less-633.tar.gz
 https://www.greenwoodsoftware.com/less/less-661.tar.gz
 https://www.greenwoodsoftware.com/less/less-668.tar.gz
 https://www.ibiblio.org/pub/Linux/libs/graphics/t1lib-5.1.2.tar.gz
+https://www.inf.puc-rio.br/~roberto/lpeg/lpeg-1.1.0.tar.gz
 https://www.iozone.org/src/current/iozone3_494.tgz
 https://www.iozone.org/src/current/iozone3_507.tgz
 https://www.ivarch.com/programs/sources/pv-1.8.0.tar.gz
