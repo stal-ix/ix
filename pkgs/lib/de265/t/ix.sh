@@ -5,12 +5,12 @@ libde265
 {% endblock %}
 
 {% block version %}
-1.0.15
+1.0.16
 {% endblock %}
 
 {% block fetch %}
 https://github.com/strukturag/libde265/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:d4e55706dfc5b2c5c9702940b675ce2d3e7511025c6894eaddcdbaf0b15fd3f3
+sha:ed12c931759c1575848832f70db5071a001ac813db4e4f568ee08aef6e234d4e
 {% endblock %}
 
 {% block lib_deps %}

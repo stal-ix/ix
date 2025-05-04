@@ -1,16 +1,18 @@
 {% extends '//die/c/make.sh' %}
 
+# check bin/transmission/cli
+
 {% block pkg_name %}
 libnatpmp
 {% endblock %}
 
 {% block version %}
-20150609
+20230423
 {% endblock %}
 
 {% block fetch %}
-https://launchpad.net/ubuntu/+archive/primary/+sourcefiles/libnatpmp/{{self.version().strip()}}-7.1build2/libnatpmp_{{self.version().strip()}}.orig.tar.gz
-sha:e1aa9c4c4219bc06943d6b2130f664daee213fb262fcb94dd355815b8f4536b0
+https://miniupnp.tuxfamily.org/files/libnatpmp-{{self.version().strip()}}.tar.gz
+sha:0684ed2c8406437e7519a1bd20ea83780db871b3a3a5d752311ba3e889dbfc70
 {% endblock %}
 
 {% block lib_deps %}
@@ -26,7 +28,7 @@ CC=clang
 INSTALLPREFIX=${out}
 {% endblock %}
 
-{% block build %}
+{% block install %}
 {{super()}}
->natpmpc-shared
+cp natpmp_declspec.h ${out}/include/
 {% endblock %}

@@ -5,12 +5,12 @@ msh3
 {% endblock %}
 
 {% block version %}
-0.8.0
+0.8.1
 {% endblock %}
 
 {% block fetch %}
 https://github.com/nibanks/msh3/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:a99e5c513db3824d16ac188ae64fbdf6ae45d256ebfbeddb895d5d815ef5e644
+sha:80087dab9a22253c224aaee5bef8c870519dc0a362b9c9bb60e9aca8bec5e1c4
 {% endblock %}
 
 {% block lib_deps %}

@@ -1,17 +1,16 @@
-{% extends '//die/c/autorehell.sh' %}
+{% extends '//die/c/meson.sh' %}
 
 {% block pkg_name %}
 linux-pam
 {% endblock %}
 
 {% block version %}
-1.6.1
+1.7.0
 {% endblock %}
 
 {% block fetch %}
-{# 1.7.0 - broken meson build #}
 https://github.com/linux-pam/linux-pam/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:2d7bd19782ede2a8284e1dfede70c01e81ee7bc8e05b91fe00aac85d2cc7d2c4
+sha:1dad9cb50b4a19accd7d7b9716777caf5a0f33d26f018f27d63e9e095998f12b
 {% endblock %}
 
 {% block bld_tool %}
@@ -22,14 +21,12 @@ bld/gettext
 
 {% block lib_deps %}
 lib/c
+lib/dlfcn
 {% endblock %}
 
 {% block bld_libs %}
 lib/kernel
-{% endblock %}
-
-{% block configure_flags %}
---disable-doc
+lib/build/muldefs
 {% endblock %}
 
 {% block install %}
@@ -38,6 +35,9 @@ cd ${out}/include
 ln -s ../include security
 {% endblock %}
 
-{% block patch %}
-echo 'int main() {}' > examples/tty_conv.c
+{% block meson_strip_dirs %}
+{% endblock %}
+
+{% block build_flags %}
+wrap_cc
 {% endblock %}

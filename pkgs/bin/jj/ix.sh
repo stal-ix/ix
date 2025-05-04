@@ -5,7 +5,7 @@ jj
 {% endblock %}
 
 {% block version %}
-0.26.0
+0.28.2
 {% endblock %}
 
 {% block cargo_url %}
@@ -13,7 +13,7 @@ https://github.com/martinvonz/jj/archive/refs/tags/v{{self.version().strip()}}.t
 {% endblock %}
 
 {% block cargo_sha %}
-1e9a3ae078be571ff0fff154ae7f631bc049d6e67618ef6b50ef2a60c06aae75
+867f495506342e88b1a0933b9005b41608e29c58cc5fd5e4668c84f6d5a1185b
 {% endblock %}
 
 {% block unpack %}
@@ -30,4 +30,12 @@ lib/openssl
 {% block install %}
 mkdir ${out}/bin
 cp ${tmp}/out/jj ${out}/bin/
+{% endblock %}
+
+{% block cargoc_ver %}
+bld/cargo/86
+{% endblock %}
+
+{% block rustc_ver %}
+86
 {% endblock %}

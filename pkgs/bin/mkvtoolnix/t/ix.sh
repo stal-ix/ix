@@ -5,12 +5,12 @@ mkvtoolnix
 {% endblock %}
 
 {% block version %}
-91.0
+92.0
 {% endblock %}
 
 {% block fetch %}
 https://codeberg.org/mbunkus/mkvtoolnix/archive/release-{{self.version().strip()}}.tar.gz
-sha:0e53c3b6bce5c48f420fe6e120219839a1fa4169812b8502c706b808e260e459
+sha:dda998e790c0e657dab2f247eb8014518eaa52790f33591ebe9695e31718e7e4
 {% endblock %}
 
 {% block bld_libs %}
@@ -27,6 +27,7 @@ lib/utf8/cpp
 lib/xiph/ogg
 lib/qt/6/svg
 lib/qt/6/base
+lib/xiph/flac
 lib/xiph/vorbis
 lib/json/nlohmann
 lib/shim/fake(lib_name=stdc++)

@@ -5,12 +5,12 @@ msquic
 {% endblock %}
 
 {% block version %}
-2.4.9
+2.4.11
 {% endblock %}
 
 {% block fetch %}
 https://github.com/microsoft/msquic/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:b0298fcec4e11ce4561284dea24f6a63f0610bbcf93072ce949dc509470d8abb
+sha:dcea437d27cef03a9c69873ffdbd78013e1a280a9bcb40475eab2048ad7d926d
 {% endblock %}
 
 {% block lib_deps %}

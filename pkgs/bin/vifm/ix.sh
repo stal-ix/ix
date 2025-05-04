@@ -5,12 +5,12 @@ vifm
 {% endblock %}
 
 {% block version %}
-0.14
+0.14.1
 {% endblock %}
 
 {% block fetch %}
 https://github.com/vifm/vifm/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:c78d585327571f5572ecc5636571086d0247158d9ff56f2bd53f016cd0b2e3b5
+sha:a372f97b7bffef9ace49a168bb281f4f48e04aa6826ccb78ed251e9eead60488
 {% endblock %}
 
 {% block bld_libs %}
@@ -21,4 +21,8 @@ lib/curses
 {% block bld_tool %}
 bld/perl
 bin/mandoc
+{% endblock %}
+
+{% block cpp_defines %}
+LONG_LONG_MAX=LLONG_MAX
 {% endblock %}

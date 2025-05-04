@@ -142,7 +142,7 @@ def process(pkgs, fr, to):
     if not any(check1('pkgs/' + x, fr) for x in files):
         print(f'nothing to do')
 
-        return 1
+        return 0
 
     bld_pkgs = list(flt_pkgs(pkgs))
 

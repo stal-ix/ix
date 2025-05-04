@@ -1,15 +1,17 @@
 {% extends '//die/c/cmake.sh' %}
 
+# check bin/neo/vim
+
 {% block pkg_name %}
 luv
 {% endblock %}
 
 {% block version %}
-1.48.0.2
+1.50.0.1
 {% endblock %}
 
 {% block git_sha %}
-591d2be312f7e2c7912b772f172e3b4b71f6f0029b86f667dfcecfe717a647f6
+b2c6c6ae9c990784f7755966c5261fde544c555b0a948c27b4e71a09700466a2
 {% endblock %}
 
 {% block git_repo %}
