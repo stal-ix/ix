@@ -807,6 +807,7 @@ https://ftp.mozilla.org/pub/security/nss/releases/NSS_3_106_RTM/src/nss-3.106.ta
 https://ftp.mozilla.org/pub/security/nss/releases/NSS_3_107_RTM/src/nss-3.107.tar.gz
 https://ftp.mozilla.org/pub/security/nss/releases/NSS_3_109_RTM/src/nss-3.109.tar.gz
 https://ftp.mozilla.org/pub/security/nss/releases/NSS_3_110_RTM/src/nss-3.110.tar.gz
+https://ftp.mozilla.org/pub/security/nss/releases/NSS_3_111_RTM/src/nss-3.111.tar.gz
 https://ftp.mozilla.org/pub/security/nss/releases/NSS_3_93_RTM/src/nss-3.93.tar.gz
 https://ftp.mozilla.org/pub/security/nss/releases/NSS_3_94_RTM/src/nss-3.94.tar.gz
 https://ftp.mozilla.org/pub/security/nss/releases/NSS_3_96_RTM/src/nss-3.96.tar.gz
@@ -1015,6 +1016,7 @@ https://github.com/FluidSynth/fluidsynth/archive/refs/tags/v2.4.0.tar.gz
 https://github.com/FluidSynth/fluidsynth/archive/refs/tags/v2.4.1.tar.gz
 https://github.com/FluidSynth/fluidsynth/archive/refs/tags/v2.4.4.tar.gz
 https://github.com/FluidSynth/fluidsynth/archive/refs/tags/v2.4.5.tar.gz
+https://github.com/FluidSynth/fluidsynth/archive/refs/tags/v2.4.6.tar.gz
 https://github.com/FlyGoat/RyzenAdj/archive/refs/tags/v0.13.0.tar.gz
 https://github.com/FlyGoat/RyzenAdj/archive/refs/tags/v0.14.0.tar.gz
 https://github.com/FlyGoat/RyzenAdj/archive/refs/tags/v0.16.0.tar.gz
@@ -2725,6 +2727,7 @@ https://github.com/libsdl-org/SDL/archive/refs/tags/release-2.32.0.tar.gz
 https://github.com/libsdl-org/SDL/archive/refs/tags/release-2.32.2.tar.gz
 https://github.com/libsdl-org/SDL/archive/refs/tags/release-2.32.4.tar.gz
 https://github.com/libsdl-org/SDL/archive/refs/tags/release-3.2.10.tar.gz
+https://github.com/libsdl-org/SDL/archive/refs/tags/release-3.2.12.tar.gz
 https://github.com/libsdl-org/SDL/archive/refs/tags/release-3.2.4.tar.gz
 https://github.com/libsdl-org/SDL/archive/refs/tags/release-3.2.6.tar.gz
 https://github.com/libsdl-org/SDL/releases/download/release-2.28.3/SDL2-2.28.3.tar.gz
@@ -3320,6 +3323,7 @@ https://github.com/qpdf/qpdf/archive/refs/tags/v11.8.0.tar.gz
 https://github.com/qpdf/qpdf/archive/refs/tags/v11.9.0.tar.gz
 https://github.com/qpdf/qpdf/archive/refs/tags/v12.0.0.tar.gz
 https://github.com/qpdf/qpdf/archive/refs/tags/v12.1.0.tar.gz
+https://github.com/qpdf/qpdf/archive/refs/tags/v12.2.0.tar.gz
 https://github.com/qt/qt5compat/archive/refs/tags/v6.5.2.tar.gz
 https://github.com/qt/qt5compat/archive/refs/tags/v6.5.3.tar.gz
 https://github.com/qt/qt5compat/archive/refs/tags/v6.6.0.tar.gz
@@ -3425,6 +3429,7 @@ https://github.com/rfc1036/whois/archive/refs/tags/v5.5.20.tar.gz
 https://github.com/rfc1036/whois/archive/refs/tags/v5.5.21.tar.gz
 https://github.com/rfc1036/whois/archive/refs/tags/v5.5.22.tar.gz
 https://github.com/rfc1036/whois/archive/refs/tags/v5.5.23.tar.gz
+https://github.com/rfc1036/whois/archive/refs/tags/v5.6.0.tar.gz
 https://github.com/rfjakob/earlyoom/archive/refs/tags/v1.7.tar.gz
 https://github.com/rfjakob/earlyoom/archive/refs/tags/v1.8.1.tar.gz
 https://github.com/rfjakob/earlyoom/archive/refs/tags/v1.8.2.tar.gz
@@ -3490,6 +3495,7 @@ https://github.com/rui314/mold/archive/refs/tags/v2.36.0.tar.gz
 https://github.com/rui314/mold/archive/refs/tags/v2.37.0.tar.gz
 https://github.com/rui314/mold/archive/refs/tags/v2.37.1.tar.gz
 https://github.com/rui314/mold/archive/refs/tags/v2.38.1.tar.gz
+https://github.com/rui314/mold/archive/refs/tags/v2.39.0.tar.gz
 https://github.com/rui314/mold/archive/refs/tags/v2.4.0.tar.gz
 https://github.com/rui314/mold/archive/refs/tags/v2.4.1.tar.gz
 https://github.com/rust-lang/cargo/archive/refs/tags/0.80.0.tar.gz
@@ -4623,6 +4629,7 @@ https://mesa.freedesktop.org/archive/mesa-24.2.5.tar.xz
 https://mesa.freedesktop.org/archive/mesa-24.2.6.tar.xz
 https://mesa.freedesktop.org/archive/mesa-24.2.8.tar.xz
 https://mesa.freedesktop.org/archive/mesa-24.3.4.tar.xz
+https://miniupnp.tuxfamily.org/files/libnatpmp-20230423.tar.gz
 https://mirror.tochlab.net/pub/gnu/autoconf-archive/autoconf-archive-2023.02.20.tar.xz
 https://mirror.tochlab.net/pub/gnu/autoconf-archive/autoconf-archive-2024.10.16.tar.xz
 https://mirror.tochlab.net/pub/gnu/help2man/help2man-1.49.2.tar.xz
@@ -4669,6 +4676,7 @@ https://mirrors.edge.kernel.org/pub/linux/network/wireless/iwd-3.3.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/network/wireless/iwd-3.4.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/network/wireless/iwd-3.5.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/network/wireless/iwd-3.6.tar.xz
+https://mirrors.edge.kernel.org/pub/linux/network/wireless/iwd-3.7.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/utils/kbd/kbd-2.6.1.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/utils/kbd/kbd-2.6.3.tar.xz
 https://mirrors.edge.kernel.org/pub/linux/utils/kbd/kbd-2.6.4.tar.xz
@@ -4743,6 +4751,7 @@ https://poppler.freedesktop.org/poppler-24.10.0.tar.xz
 https://poppler.freedesktop.org/poppler-24.11.0.tar.xz
 https://poppler.freedesktop.org/poppler-25.02.0.tar.xz
 https://poppler.freedesktop.org/poppler-25.04.0.tar.xz
+https://poppler.freedesktop.org/poppler-25.05.0.tar.xz
 https://potrace.sourceforge.net/download/1.16/potrace-1.16.tar.gz
 https://pwmt.org/projects/zathura-djvu/download/zathura-djvu-0.2.10.tar.xz
 https://pwmt.org/projects/zathura-djvu/download/zathura-djvu-0.2.9.tar.xz
