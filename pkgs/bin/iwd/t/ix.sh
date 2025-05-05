@@ -5,12 +5,12 @@ iwd
 {% endblock %}
 
 {% block version %}
-3.6
+3.7
 {% endblock %}
 
 {% block fetch %}
 https://mirrors.edge.kernel.org/pub/linux/network/wireless/iwd-{{self.version().strip()}}.tar.xz
-sha:cc5e02068d7407b9dac000429d667af32e9d91c7bff3183a241d8fdb0f75734b
+sha:ba3e577a61e78f860f376025c3243bbf19eac7ccbfdfac3aebe566556ace2e08
 {% endblock %}
 
 {% block bld_libs %}
