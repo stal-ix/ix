@@ -1,6 +1,6 @@
 {% extends '//bin/neo/vim/unwrap/t/ix.sh' %}
 
-# noauto
+# check bin/neo/vim
 
 {% block bld_tool %}
 {{super()}}
