@@ -127,9 +127,22 @@ def it_files(pkgs):
 def revstr(s):
     return ''.join(reversed(s))
 
+def parse_redir(data):
+    for l in data.split('\n'):
+        if '# check' in data:
+            yield from data.strip().split(' ')[2:]
+
 def flt_pkgs(pkgs):
     for x in pkgs:
-        yield x.removesuffix('/unwrap')
+        x = x.removesuffix('/unwrap')
+
+        with open('pkgs/' + x) as f:
+            data = f.read
+
+        if '# check' in data:
+            yield from parse_redir(data)
+        else:
+            yield x
 
 def process(pkgs, fr, to):
     if not pkgs:
