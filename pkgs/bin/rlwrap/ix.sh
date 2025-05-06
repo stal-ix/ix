@@ -5,12 +5,12 @@ rlwrap
 {% endblock %}
 
 {% block version %}
-0.46.1
+0.46.2
 {% endblock %}
 
 {% block fetch %}
-https://github.com/hanslub42/rlwrap/archive/refs/tags/{{self.version().strip()}}.tar.gz
-sha:c537e8a53df36f1f996601d776203478ad56fab1d67b3c1a63057badb0851cec
+https://github.com/hanslub42/rlwrap/archive/refs/tags/v{{self.version().strip()}}.tar.gz
+sha:9abb0a0dc19e85794d9b8e72e480530563eb4ee1bf243e87c0e0dd05ea4a2f09
 {% endblock %}
 
 {% block bld_libs %}
