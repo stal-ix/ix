@@ -5,16 +5,21 @@ mdevd
 {% endblock %}
 
 {% block version %}
-0.1.6.5
+0.1.7.0
 {% endblock %}
 
 {% block fetch %}
 https://github.com/skarnet/mdevd/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:e06b541d092e98b5bc9b92f5833ce4e56da10c0457444bcacf83604957b48ace
+sha:55596f1702207093dd59a3aee4ba68c5e53e08335c27ec6f18444aaf5231679a
 {% endblock %}
 
 {% block bld_libs %}
 lib/c
 lib/kernel
 lib/skalibs
+{% endblock %}
+
+{% block configure %}
+{{super()}}
+>-lskarnet
 {% endblock %}
