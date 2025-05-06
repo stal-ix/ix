@@ -24,7 +24,5 @@ lib/skalibs
 
 {% block configure %}
 {{super()}}
-find . -type f | while read l; do
-    sed -e 's|-lskarnet||g' -i ${l}
-done
+>-lskarnet
 {% endblock %}
