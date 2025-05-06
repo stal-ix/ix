@@ -137,7 +137,7 @@ def flt_pkgs(pkgs):
         x = x.removesuffix('/unwrap')
 
         with open('pkgs/' + x + '/ix.sh') as f:
-            data = f.read
+            data = f.read()
 
         if '# check' in data:
             yield from parse_redir(data)
