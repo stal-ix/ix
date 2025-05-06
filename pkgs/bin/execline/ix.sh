@@ -5,12 +5,12 @@ execline
 {% endblock %}
 
 {% block version %}
-2.9.6.1
+2.9.7.0
 {% endblock %}
 
 {% block fetch %}
 https://github.com/skarnet/execline/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:e718d73a0fa667f270763776a58213a027cb85dd5db9ad8331fa62b123911b29
+sha:a2794477b31d66cc301d0e97f182e2be736ee763291335412792cbc7e301d964
 {% endblock %}
 
 {% block lib_deps %}
@@ -20,4 +20,11 @@ lib/skalibs
 
 {% block configure_flags %}
 --enable-multicall
+{% endblock %}
+
+{% block configure %}
+{{super()}}
+find . -type f | while read l; do
+    sed -e 's|-lskarnet||g' -i ${l}
+done
 {% endblock %}
