@@ -87,6 +87,7 @@ http://mirrors.kernel.org/sourceware/lvm2/LVM2.2.03.26.tgz
 http://mirrors.kernel.org/sourceware/lvm2/LVM2.2.03.27.tgz
 http://mirrors.kernel.org/sourceware/lvm2/LVM2.2.03.28.tgz
 http://mirrors.kernel.org/sourceware/lvm2/LVM2.2.03.31.tgz
+http://mirrors.kernel.org/sourceware/lvm2/LVM2.2.03.32.tgz
 http://musl.libc.org/releases/musl-1.2.4.tar.gz
 http://musl.libc.org/releases/musl-1.2.5.tar.gz
 http://penma.de/code/gettext-stub/gettext-stub-1.tar.gz
@@ -1266,6 +1267,7 @@ https://github.com/Kitware/CMake/archive/refs/tags/v3.31.3.tar.gz
 https://github.com/Kitware/CMake/archive/refs/tags/v3.31.4.tar.gz
 https://github.com/Kitware/CMake/archive/refs/tags/v3.31.6.tar.gz
 https://github.com/Kitware/CMake/archive/refs/tags/v4.0.1.tar.gz
+https://github.com/Kitware/CMake/archive/refs/tags/v4.0.2.tar.gz
 https://github.com/LBCrion/sfwbar/archive/refs/tags/v1.0_beta13.tar.gz
 https://github.com/LBCrion/sfwbar/archive/refs/tags/v1.0_beta9.tar.gz
 https://github.com/LibRaw/LibRaw/archive/refs/tags/0.21.1.tar.gz
@@ -2235,6 +2237,7 @@ https://github.com/haasn/libplacebo/archive/refs/tags/v6.338.1.tar.gz
 https://github.com/haasn/libplacebo/archive/refs/tags/v6.338.2.tar.gz
 https://github.com/haikarainen/light/archive/refs/tags/v1.2.2.tar.gz
 https://github.com/hanslub42/rlwrap/archive/refs/tags/0.46.1.tar.gz
+https://github.com/hanslub42/rlwrap/archive/refs/tags/v0.46.2.tar.gz
 https://github.com/harfbuzz/harfbuzz/archive/refs/tags/10.0.0.tar.gz
 https://github.com/harfbuzz/harfbuzz/archive/refs/tags/10.0.1.tar.gz
 https://github.com/harfbuzz/harfbuzz/archive/refs/tags/10.1.0.tar.gz
@@ -3579,10 +3582,13 @@ https://github.com/skarnet/execline/archive/refs/tags/v2.9.4.0.tar.gz
 https://github.com/skarnet/execline/archive/refs/tags/v2.9.5.0.tar.gz
 https://github.com/skarnet/execline/archive/refs/tags/v2.9.5.1.tar.gz
 https://github.com/skarnet/execline/archive/refs/tags/v2.9.6.1.tar.gz
+https://github.com/skarnet/execline/archive/refs/tags/v2.9.7.0.tar.gz
 https://github.com/skarnet/mdevd/archive/refs/tags/v0.1.6.3.tar.gz
 https://github.com/skarnet/mdevd/archive/refs/tags/v0.1.6.5.tar.gz
+https://github.com/skarnet/mdevd/archive/refs/tags/v0.1.7.0.tar.gz
 https://github.com/skarnet/skalibs/archive/refs/tags/v2.14.1.0.tar.gz
 https://github.com/skarnet/skalibs/archive/refs/tags/v2.14.3.0.tar.gz
+https://github.com/skarnet/skalibs/archive/refs/tags/v2.14.4.0.tar.gz
 https://github.com/skeeto/u-config/archive/refs/tags/v0.31.1.tar.gz
 https://github.com/skeeto/u-config/archive/refs/tags/v0.33.0.tar.gz
 https://github.com/skeeto/u-config/archive/refs/tags/v0.33.2.tar.gz
@@ -4094,6 +4100,7 @@ https://github.com/zellij-org/zellij/archive/refs/tags/v0.41.2.tar.gz
 https://github.com/zeux/volk/archive/refs/tags/vulkan-sdk-1.3.275.0.tar.gz
 https://github.com/zeux/volk/archive/refs/tags/vulkan-sdk-1.3.290.0.tar.gz
 https://github.com/zeux/volk/archive/refs/tags/vulkan-sdk-1.4.309.0.tar.gz
+https://github.com/zeux/volk/archive/refs/tags/vulkan-sdk-1.4.313.0.tar.gz
 https://github.com/zlib-ng/zlib-ng/archive/refs/tags/2.1.3.tar.gz
 https://github.com/zlib-ng/zlib-ng/archive/refs/tags/2.1.4.tar.gz
 https://github.com/zlib-ng/zlib-ng/archive/refs/tags/2.1.5.tar.gz
@@ -4923,6 +4930,7 @@ https://www.atoptool.nl/download/atop-2.11.1.tar.gz
 https://www.atoptool.nl/download/atop-2.9.0.tar.gz
 https://www.bytereef.org/software/mpdecimal/releases/mpdecimal-2.5.1.tar.gz
 https://www.bytereef.org/software/mpdecimal/releases/mpdecimal-4.0.0.tar.gz
+https://www.bytereef.org/software/mpdecimal/releases/mpdecimal-4.0.1.tar.gz
 https://www.cabextract.org.uk/cabextract-1.11.tar.gz
 https://www.cairographics.org/releases/cairomm-1.14.0.tar.xz
 https://www.cairographics.org/releases/cairomm-1.16.1.tar.xz
