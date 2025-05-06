@@ -10,7 +10,7 @@ neovim
 
 {% block fetch %}
 https://github.com/neovim/neovim/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:6826c4812e96995d29a98586d44fbee
+sha:ffe7f9a7633ed895ff6adb1039af7516cd6453715c8889ad844b6fa39c3df443
 {% endblock %}
 
 {% block bld_libs %}
