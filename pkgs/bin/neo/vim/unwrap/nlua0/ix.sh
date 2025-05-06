@@ -1,5 +1,7 @@
 {% extends '//bin/neo/vim/unwrap/t/ix.sh' %}
 
+# noauto
+
 {% block bld_tool %}
 {{super()}}
 bin/neo/vim/0(lua_ver=puc/5/2)
