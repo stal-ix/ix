@@ -1,5 +1,7 @@
 {% extends '//die/c/make.sh' %}
 
+# check bin/bcache/fs/tools
+
 {% include '//bin/bcache/fs/tools/ver.sh' %}
 
 {% block fetch %}

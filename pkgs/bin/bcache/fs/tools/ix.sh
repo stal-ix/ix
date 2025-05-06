@@ -2,6 +2,8 @@
 
 {% include 'ver.sh' %}
 
+# noauto
+
 {% block bld_libs %}
 lib/bcache/fs
 {% endblock %}
