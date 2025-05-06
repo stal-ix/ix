@@ -5,7 +5,7 @@ halloy
 {% endblock %}
 
 {% block version %}
-2025.4
+2025.5
 {% endblock %}
 
 {% block cargo_url %}
@@ -13,7 +13,7 @@ https://github.com/squidowl/halloy/archive/refs/tags/{{self.version().strip()}}.
 {% endblock %}
 
 {% block cargo_sha %}
-eccddc71ebbce5de6079926f3fc6f05a3315278e93e92c8051173e004913a015
+0cd218eee2043826e8a1b83b008f9b8ab6b8d4b546a19da75b591b88f09aed3f
 {% endblock %}
 
 {% block bld_libs %}
