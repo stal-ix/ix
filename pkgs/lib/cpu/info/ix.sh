@@ -5,12 +5,12 @@ cpuinfo
 {% endblock %}
 
 {% block version %}
-5e3d2445e6a84d9599bee2bf78edbb4d80865e1d
+2025.02.11
 {% endblock %}
 
 {% block fetch %}
 https://github.com/pytorch/cpuinfo/archive/{{self.version().strip()}}.zip
-sha:f335b437ef06ddc8916129d3baf423e986d70dd31aa2b8b8a752c36bcfa040a2
+sha:1111111111111111111111111111111111111111111111111111111111111111
 {% endblock %}
 
 {% block lib_deps %}
