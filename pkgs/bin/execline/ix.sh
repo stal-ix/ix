@@ -22,7 +22,7 @@ lib/skalibs
 --enable-multicall
 {% endblock %}
 
-{% block configure %}
+{% block make_flags %}
 {{super()}}
->-lskarnet
+VPATH=${MAKE_VPATH}
 {% endblock %}
