@@ -8,10 +8,5 @@ MANPATH=${out}/man
 STARTUPSCRIPTDIR=${out}/share/mdns
 RUNLEVELSCRIPTSDIR=
 OPTINSTALL=
-{% endblock %}
-
-{% block patch %}
-{{super()}}
->-lmbedtls
->-lmbedcrypto
+VPATH=${MAKE_VPATH}
 {% endblock %}
