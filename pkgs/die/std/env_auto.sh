@@ -24,6 +24,10 @@ if test -d ${out}/bin; then
     echo 'export PATH="'${out}'/bin:${PATH}"'
 fi
 
+if test -d ${out}/lib; then
+    echo 'export MAKE_VPATH="'${out}'/lib:${MAKE_VPATH}"'
+fi
+
 if test -d ${out}/lib/aux/aclocal; then
     echo 'export ACLOCAL_PATH="'${out}'/lib/aux/aclocal:${ACLOCAL_PATH}"'
 fi

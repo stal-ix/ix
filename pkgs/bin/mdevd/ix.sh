@@ -19,7 +19,7 @@ lib/kernel
 lib/skalibs
 {% endblock %}
 
-{% block configure %}
+{% block make_flags %}
 {{super()}}
->-lskarnet
+VPATH=${MAKE_VPATH}
 {% endblock %}

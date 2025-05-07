@@ -17,6 +17,7 @@ export GIRPATH=
 export VALAFLAGS=
 export GIRSFLAGS=
 export GIRCFLAGS=
+export MAKE_VPATH=
 export PYTHONPATH=
 export ACLOCAL_PATH=
 export PKG_CONFIG_PATH=
