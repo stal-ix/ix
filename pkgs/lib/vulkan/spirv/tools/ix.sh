@@ -5,12 +5,12 @@ SPIRV-Tools
 {% endblock %}
 
 {% block version %}
-1.3.296.0
+1.4.313.0
 {% endblock %}
 
 {% block fetch %}
 https://github.com/KhronosGroup/SPIRV-Tools/archive/refs/tags/vulkan-sdk-{{self.version().strip()}}.zip
-sha:d923995bac2f34645dbdcf42f3585140e6a3a41a6f33e2acdf3a8e04f377bd83
+sha:def5f8e9ec40a2d5c56b5e32d5f6ca9d7a1a7024dcff1f59fa0b02232f8110b9
 {% include '//lib/vulkan/spirv/headers/ver.sh' %}
 {% endblock %}
 

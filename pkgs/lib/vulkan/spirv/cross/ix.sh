@@ -5,12 +5,12 @@ SPIRV-Cross
 {% endblock %}
 
 {% block version %}
-1.3.296.0
+1.4.313.0
 {% endblock %}
 
 {% block fetch %}
 https://github.com/KhronosGroup/SPIRV-Cross/archive/refs/tags/vulkan-sdk-{{self.version().strip()}}.tar.gz
-sha:4f7f9a8a643e6694f155712016b9b572c13a9444e65b3f43b27bb464c0ab76e0
+sha:7d1de24918bea9897753f7561d4d154f68ec89c36bb70c13598222b8039d4212
 {% endblock %}
 
 {% block lib_deps %}
