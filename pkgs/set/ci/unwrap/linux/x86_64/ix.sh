@@ -48,6 +48,10 @@
 #}
 
 {% block run_deps %}
+#bin/vulkan/tools
+#bin/fizzy
+#bin/strawberry
+#bin/wx/maxima
 bin/meson/1/8
 bin/libtool/next
 bin/gcc/15
@@ -72,7 +76,6 @@ bin/contour
 bin/nix
 bin/coreutils/9/6
 bin/inkscape
-#bin/fizzy
 bin/kernel/6/13
 bin/gdb/16
 bin/gdb/15
@@ -245,7 +248,6 @@ bin/copyq
 bin/keepass/xc
 bin/psensor
 bin/mplayer
-#bin/wx/maxima
 bin/maxima
 bin/sbcl
 bin/ddc/control
@@ -701,7 +703,6 @@ bin/sassc
 bin/vte
 bin/wayfire/shell
 bin/wayfire
-bin/vulkan/tools
 bin/sndfile
 bin/openal
 bin/harfbuzz
@@ -820,7 +821,6 @@ bin/squid
 bin/inotify/tools
 bin/cras
 bin/redis
-#bin/strawberry
 bin/bind
 bin/lisgd
 bin/mariadb/10
