@@ -27,7 +27,7 @@ sed -e 's|#error|#warning|' -i random/jitterentropy-base.c
 {% endblock %}
 
 {% block configure_flags %}
-{% if darwin %}
+{% if darwin or riscv64 %}
 --disable-asm
 {% endif %}
 --disable-O-flag-munging
