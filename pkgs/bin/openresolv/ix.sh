@@ -5,12 +5,12 @@ openresolv
 {% endblock %}
 
 {% block version %}
-3.16.0
+3.16.2
 {% endblock %}
 
 {% block fetch %}
 https://github.com/NetworkConfiguration/openresolv/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:c63a747c39eef2ea505a6c2ae1f1dad8a286053f57dbd01820f2d14362cf635f
+sha:747ffde6d2b6507a984f54946a16d02eb03f12c981869550950f7a025bc3136b
 {% endblock %}
 
 {% block make_flags %}

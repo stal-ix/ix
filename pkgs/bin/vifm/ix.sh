@@ -5,12 +5,12 @@ vifm
 {% endblock %}
 
 {% block version %}
-0.14.1
+0.14.2
 {% endblock %}
 
 {% block fetch %}
 https://github.com/vifm/vifm/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:a372f97b7bffef9ace49a168bb281f4f48e04aa6826ccb78ed251e9eead60488
+sha:f0e06b50d756ab621a4b7494598a02c5911d422dc69e14f27017883672a72301
 {% endblock %}
 
 {% block bld_libs %}

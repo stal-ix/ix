@@ -5,12 +5,12 @@ iotop
 {% endblock %}
 
 {% block version %}
-1.28
+1.29
 {% endblock %}
 
 {% block fetch %}
 https://github.com/Tomas-M/iotop/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:b83e5c7d82da3bfb3e46b74e91b24a52fc65d44ff268ace95b613972e27fc678
+sha:8afcd3f2a91a5246c4b187e39cb87fafdb5c2dd27a0386fb8381361c271f8f60
 {% endblock %}
 
 {% block bld_libs %}
