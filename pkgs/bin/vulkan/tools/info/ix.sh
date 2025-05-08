@@ -1,8 +1,40 @@
 {% extends '//bin/vulkan/tools/t/ix.sh' %}
 
-{% block bld_libs %}
+{% block c_rename_symbol %}
 {{super()}}
-lib/build/muldefs
+vkCreateDevice
+vkCreateImage
+vkCreateInstance
+vkCreateWaylandSurfaceKHR
+vkDestroyDevice
+vkDestroyImage
+vkDestroyInstance
+vkDestroySurfaceKHR
+vkEnumerateDeviceExtensionProperties
+vkEnumerateInstanceExtensionProperties
+vkEnumerateInstanceLayerProperties
+vkEnumerateInstanceVersion
+vkEnumeratePhysicalDevices
+vkGetDeviceGroupPresentCapabilitiesKHR
+vkGetDisplayModePropertiesKHR
+vkGetDisplayPlaneCapabilitiesKHR
+vkGetDisplayPlaneSupportedDisplaysKHR
+vkGetImageMemoryRequirements
+vkGetInstanceProcAddr
+vkGetPhysicalDeviceDisplayPlanePropertiesKHR
+vkGetPhysicalDeviceDisplayPropertiesKHR
+vkGetPhysicalDeviceFeatures
+vkGetPhysicalDeviceFormatProperties
+vkGetPhysicalDeviceImageFormatProperties
+vkGetPhysicalDeviceMemoryProperties
+vkGetPhysicalDeviceProperties
+vkGetPhysicalDeviceQueueFamilyProperties
+vkGetPhysicalDeviceSurfaceCapabilities2KHR
+vkGetPhysicalDeviceSurfaceCapabilitiesKHR
+vkGetPhysicalDeviceSurfaceFormats2KHR
+vkGetPhysicalDeviceSurfaceFormatsKHR
+vkGetPhysicalDeviceSurfacePresentModesKHR
+vkGetPhysicalDeviceSurfaceSupportKHR
 {% endblock %}
 
 {% block cmake_flags %}

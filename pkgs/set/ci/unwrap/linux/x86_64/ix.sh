@@ -48,10 +48,10 @@
 #}
 
 {% block run_deps %}
-#bin/vulkan/tools
 #bin/fizzy
 #bin/strawberry
 #bin/wx/maxima
+bin/vulkan/tools
 bin/meson/1/8
 bin/libtool/next
 bin/gcc/15
