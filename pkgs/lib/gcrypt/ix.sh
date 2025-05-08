@@ -5,12 +5,12 @@ libgcrypt
 {% endblock %}
 
 {% block version %}
-1.11.0
+1.11.1
 {% endblock %}
 
 {% block fetch %}
 https://gnupg.org/ftp/gcrypt/libgcrypt/libgcrypt-{{self.version().strip()}}.tar.bz2
-sha:09120c9867ce7f2081d6aaa1775386b98c2f2f246135761aae47d81f58685b9c
+sha:24e91c9123a46c54e8371f3a3a2502f1198f2893fbfbf59af95bc1c21499b00e
 {% endblock %}
 
 {% block lib_deps %}
@@ -27,7 +27,7 @@ sed -e 's|#error|#warning|' -i random/jitterentropy-base.c
 {% endblock %}
 
 {% block configure_flags %}
-{% if darwin %}
+{% if darwin or riscv64 %}
 --disable-asm
 {% endif %}
 --disable-O-flag-munging

@@ -5,12 +5,12 @@ ptyxis
 {% endblock %}
 
 {% block version %}
-48.1
+48.3
 {% endblock %}
 
 {% block fetch %}
 https://gitlab.gnome.org/chergert/ptyxis/-/archive/{{self.version().strip()}}/ptyxis-{{self.version().strip()}}.tar.bz2
-sha:d4bd4e91d1d7466641591aa30fa7bac2387a33bd31f16f121fb6bfcf1affee26
+sha:9dc7addeca9311d32c07152af5337d9186400f9d50441848a63aa22764aa3651
 {% endblock %}
 
 {% block bld_libs %}

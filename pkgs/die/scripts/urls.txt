@@ -355,6 +355,7 @@ https://codeberg.org/grisha/gumbo-parser/archive/0.13.0.tar.gz
 https://codeberg.org/mbunkus/mkvtoolnix/archive/release-91.0.tar.gz
 https://codeberg.org/mbunkus/mkvtoolnix/archive/release-92.0.tar.gz
 https://codeberg.org/soundtouch/soundtouch/archive/2.3.1.tar.gz
+https://codeberg.org/sox_ng/sox_ng/archive/sox_ng-14.5.1.2.tar.gz
 https://codeberg.org/tenacityteam/libmad/archive/0.16.3.tar.gz
 https://codeberg.org/tenacityteam/libmad/archive/0.16.4.tar.gz
 https://common-lisp.net/project/ecl/static/files/release/ecl-21.2.1.tgz
@@ -824,6 +825,7 @@ https://ftp.postgresql.org/pub/source/v17.0/postgresql-17.0.tar.bz2
 https://ftp.postgresql.org/pub/source/v17.2/postgresql-17.2.tar.bz2
 https://ftp.postgresql.org/pub/source/v17.3/postgresql-17.3.tar.bz2
 https://ftp.postgresql.org/pub/source/v17.4/postgresql-17.4.tar.bz2
+https://ftp.postgresql.org/pub/source/v17.5/postgresql-17.5.tar.bz2
 https://ftpmirror.gnu.org/libtool/libtool-2.4.6.tar.gz
 https://ftpmirror.gnu.org/libtool/libtool-2.4.7.tar.gz
 https://ftpmirror.gnu.org/libtool/libtool-2.5.4.tar.gz
@@ -2346,6 +2348,7 @@ https://github.com/hyprwm/hyprlang/archive/refs/tags/v0.5.1.tar.gz
 https://github.com/hyprwm/hyprlang/archive/refs/tags/v0.5.3.tar.gz
 https://github.com/hyprwm/hyprlang/archive/refs/tags/v0.6.0.tar.gz
 https://github.com/hyprwm/hyprlang/archive/refs/tags/v0.6.1.tar.gz
+https://github.com/hyprwm/hyprlang/archive/refs/tags/v0.6.3.tar.gz
 https://github.com/hyprwm/hyprlock/archive/refs/tags/v0.5.0.tar.gz
 https://github.com/hyprwm/hyprlock/archive/refs/tags/v0.7.0.tar.gz
 https://github.com/hyprwm/hyprlock/archive/refs/tags/v0.8.0.tar.gz
@@ -2372,6 +2375,7 @@ https://github.com/hyprwm/hyprutils/archive/refs/tags/v0.5.0.tar.gz
 https://github.com/hyprwm/hyprutils/archive/refs/tags/v0.5.2.tar.gz
 https://github.com/hyprwm/hyprutils/archive/refs/tags/v0.6.0.tar.gz
 https://github.com/hyprwm/hyprutils/archive/refs/tags/v0.7.0.tar.gz
+https://github.com/hyprwm/hyprutils/archive/refs/tags/v0.7.1.tar.gz
 https://github.com/hyprwm/hyprwayland-scanner/archive/refs/tags/v0.3.4.tar.gz
 https://github.com/hyprwm/hyprwayland-scanner/archive/refs/tags/v0.3.9.tar.gz
 https://github.com/hyprwm/hyprwayland-scanner/archive/refs/tags/v0.4.0.tar.gz
@@ -3963,6 +3967,7 @@ https://github.com/vifm/vifm/archive/refs/tags/v0.14.1.tar.gz
 https://github.com/vifm/vifm/archive/refs/tags/v0.14.2.tar.gz
 https://github.com/vifm/vifm/archive/refs/tags/v0.14.tar.gz
 https://github.com/vim/vim/archive/refs/tags/v9.0.0006.tar.gz
+https://github.com/vim/vim/archive/refs/tags/v9.1.1366.tar.gz
 https://github.com/vmatare/thinkfan/archive/refs/tags/1.3.1.tar.gz
 https://github.com/vmt/udis86/archive/refs/tags/v1.7.2.tar.gz
 https://github.com/void-linux/musl-fts/archive/refs/tags/v1.2.7.tar.gz
@@ -4499,6 +4504,7 @@ https://gitlab.gnome.org/chergert/ptyxis/-/archive/47.7/ptyxis-47.7.tar.bz2
 https://gitlab.gnome.org/chergert/ptyxis/-/archive/47.8/ptyxis-47.8.tar.bz2
 https://gitlab.gnome.org/chergert/ptyxis/-/archive/48.0/ptyxis-48.0.tar.bz2
 https://gitlab.gnome.org/chergert/ptyxis/-/archive/48.1/ptyxis-48.1.tar.bz2
+https://gitlab.gnome.org/chergert/ptyxis/-/archive/48.3/ptyxis-48.3.tar.bz2
 https://gitlab.gnome.org/chergert/ptyxis/-/raw/08564402b8a9bc53bc2dbd3ff14f9d9598c14b7b/build-aux/0001-add-notification-and-shell-precmd-preexec.patch
 https://gitlab.gnome.org/crab2313/evince/-/archive/4c91df66ca83f8f1d057f0aa9069675b8bf5b6d6/evince-4c91df66ca83f8f1d057f0aa9069675b8bf5b6d6.tar.bz2
 https://gitlab.gnome.org/jadahl/libdecor/-/archive/0.1.1/libdecor-0.1.1.tar.bz2
@@ -4527,6 +4533,7 @@ https://gnupg.org/ftp/gcrypt/libassuan/libassuan-3.0.2.tar.bz2
 https://gnupg.org/ftp/gcrypt/libgcrypt/libgcrypt-1.10.2.tar.bz2
 https://gnupg.org/ftp/gcrypt/libgcrypt/libgcrypt-1.10.3.tar.bz2
 https://gnupg.org/ftp/gcrypt/libgcrypt/libgcrypt-1.11.0.tar.bz2
+https://gnupg.org/ftp/gcrypt/libgcrypt/libgcrypt-1.11.1.tar.bz2
 https://gnupg.org/ftp/gcrypt/libgpg-error/libgpg-error-1.47.tar.bz2
 https://gnupg.org/ftp/gcrypt/libgpg-error/libgpg-error-1.48.tar.bz2
 https://gnupg.org/ftp/gcrypt/libgpg-error/libgpg-error-1.49.tar.bz2
@@ -4746,6 +4753,7 @@ https://nheko.im/nheko-reborn/coeurl/-/archive/v0.3.0/coeurl-v0.3.0.tar.bz2
 https://nheko.im/nheko-reborn/coeurl/-/archive/v0.3.1/coeurl-v0.3.1.tar.bz2
 https://nmap.org/dist/nmap-7.93.tar.bz2
 https://nmap.org/dist/nmap-7.95.tar.bz2
+https://nmap.org/dist/nmap-7.96.tar.bz2
 https://nodejs.org/dist/v18.16.1/node-v18.16.1.tar.gz
 https://nodejs.org/dist/v23.4.0/node-v23.4.0.tar.gz
 https://nodejs.org/dist/v23.6.0/node-v23.6.0.tar.gz
