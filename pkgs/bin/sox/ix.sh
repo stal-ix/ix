@@ -1,16 +1,16 @@
-{% extends '//die/c/autohell.sh' %}
+{% extends '//die/c/autorehell.sh' %}
 
 {% block pkg_name %}
 sox
 {% endblock %}
 
 {% block version %}
-14.4.2
+14.5.1.2
 {% endblock %}
 
 {% block fetch %}
-https://downloads.sourceforge.net/project/sox/sox/{{self.version().strip()}}/sox-{{self.version().strip()}}.tar.bz2
-sha:81a6956d4330e75b5827316e44ae381e6f1e8928003c6aa45896da9041ea149c
+https://codeberg.org/sox_ng/sox_ng/archive/sox_ng-{{self.version().strip()}}.tar.gz
+sha:e5fe64d0192ca38428fd6a776c58bff415810627ae81266e95f1c5f8b3af5bc0
 {% endblock %}
 
 {% block bld_libs %}
@@ -26,5 +26,17 @@ lib/xiph/vorbis
 {% endblock %}
 
 {% block patch %}
-sed -e 's|.*#error.*FIX.*NEED.*||' -i src/formats.c
+cat << EOF > test/Makefile
+all:
+install:
+EOF
 {% endblock %}
+
+{% block bld_tool %}
+bin/bash/lite/sh
+bin/auto/conf/archive
+{% endblock %}
+
+{% block conf_ver %}
+2/71
+{% endblock  %}
