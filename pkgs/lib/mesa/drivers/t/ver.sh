@@ -1,2 +1,2 @@
-https://mesa.freedesktop.org/archive/mesa-24.3.4.tar.xz
-sha:e641ae27191d387599219694560d221b7feaa91c900bcec46bf444218ed66025
+https://mesa.freedesktop.org/archive/mesa-25.0.5.tar.xz
+sha:c0d245dea0aa4b49f74b3d474b16542e4a8799791cd33d676c69f650ad4378d0

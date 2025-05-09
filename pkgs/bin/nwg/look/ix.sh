@@ -5,7 +5,7 @@ nwg-look
 {% endblock %}
 
 {% block version %}
-0.2.4
+1.0.5
 {% endblock %}
 
 {% block go_url %}
@@ -13,7 +13,7 @@ https://github.com/nwg-piotr/nwg-look/archive/refs/tags/v{{self.version().strip(
 {% endblock %}
 
 {% block go_sha %}
-718ae175227f7b119edfcc8343ee9bd24981267739b1f016aa9f363f3bcda495
+cb9dc8994029e3588844572333122e13bf45bcd20848d2e122590e5b3a9f20fd
 {% endblock %}
 
 {% block bld_tool %}
@@ -31,4 +31,8 @@ sed -e 's|"/usr/share|"/'${out}'/share|' -i tools.go
 mkdir bin
 cp nwg-look bin/
 make DESTDIR=${out} install
+{% endblock %}
+
+{% block go_tool %}
+bin/go/lang/24
 {% endblock %}
