@@ -5,7 +5,7 @@ appstream
 {% endblock %}
 
 {% block version %}
-0.16.3
+1.0.5
 {% endblock %}
 
 {% block fetch %}
