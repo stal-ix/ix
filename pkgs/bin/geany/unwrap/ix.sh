@@ -16,7 +16,6 @@ sha:a744ab9ae3e58b371de4b50990c44227c499f82e2a8ee6753307ef107748e4df
 {% block bld_libs %}
 lib/c
 lib/gtk/3
-lib/gdk/pixbuf/svg
 {% endblock %}
 
 {% block cpp_defines %}

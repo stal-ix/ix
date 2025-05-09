@@ -20,8 +20,8 @@ sha:0814865e9273223a33c22548850c38fbe49a9fff561a7a032a5be0236e44f0af
 {% block bld_libs %}
 lib/c
 lib/c++
-lib/botan
 lib/argon2
+lib/botan/3
 lib/qrencode
 lib/qt/6/base
 lib/qt/6/deps

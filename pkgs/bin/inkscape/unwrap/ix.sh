@@ -40,7 +40,6 @@ lib/dbus/glib
 lib/fontconfig
 lib/poppler/old
 lib/image/magick
-lib/gdk/pixbuf/svg
 lib/double/conversion
 {% endblock %}
 

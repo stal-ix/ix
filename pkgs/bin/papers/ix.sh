@@ -36,7 +36,6 @@ lib/spectre
 lib/archive
 lib/poppler
 lib/djvulibre
-lib/gdk/pixbuf/svg
 lib/gsettings/desktop/schemas
 {% endblock %}
 
