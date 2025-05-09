@@ -6,5 +6,5 @@
 lib/vulkan/loader/dl
 lib/mesa/vulkan(driver=nvk)
 lib/mesa/opengl(driver=zink)
-lib/mesa/valve(vulkan=nvk,opengl=zink)
+lib/mesa/valve(vulkan=nouveau,opengl=zink)
 {% endblock %}
