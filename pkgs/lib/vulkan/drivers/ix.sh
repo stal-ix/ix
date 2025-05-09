@@ -6,7 +6,7 @@ lib/swift/shader/driver
 {% elif amd_vlk %}
 lib/amd/vlk/driver
 {% elif mesa_driver %}
-lib/mesa/drivers
+lib/mesa
 {% endif %}
 lib/vulkan/loader/dl
 {% endblock %}

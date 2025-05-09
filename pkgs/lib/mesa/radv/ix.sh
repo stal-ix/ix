@@ -4,7 +4,7 @@
 
 {% block lib_deps %}
 lib/vulkan/loader/dl
-lib/mesa/drivers/opengl(driver=zink)
-lib/mesa/drivers/vulkan(driver=radeon)
-lib/mesa/drivers/valve(vulkan=amd,opengl=zink)
+lib/mesa/opengl(driver=zink)
+lib/mesa/vulkan(driver=radeon)
+lib/mesa/valve(vulkan=amd,opengl=zink)
 {% endblock %}

@@ -1,4 +1,4 @@
-{% extends '//lib/mesa/drivers/t/ix.sh' %}
+{% extends '//lib/mesa/t/ix.sh' %}
 
 {% block install %}
 {{super()}}

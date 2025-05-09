@@ -1,4 +1,4 @@
-{% extends '//lib/mesa/drivers/llvm/ix.sh' %}
+{% extends '//lib/mesa/llvm/ix.sh' %}
 
 {% block bld_tool %}
 {{super()}}

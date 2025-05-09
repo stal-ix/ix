@@ -1,7 +1,7 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block fetch %}
-{% include '//lib/mesa/drivers/t/ver.sh' %}
+{% include '//lib/mesa/t/ver.sh' %}
 {% endblock %}
 
 {% block bld_libs %}

@@ -1,4 +1,4 @@
-{% extends '//lib/mesa/drivers/base/ix.sh' %}
+{% extends '//lib/mesa/base/ix.sh' %}
 
 {% block lib_deps %}
 lib/elfutils

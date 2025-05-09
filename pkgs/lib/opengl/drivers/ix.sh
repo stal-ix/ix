@@ -2,6 +2,6 @@
 
 {% block lib_deps %}
 {% if mesa_driver %}
-lib/mesa/drivers
+lib/mesa
 {% endif %}
 {% endblock %}
