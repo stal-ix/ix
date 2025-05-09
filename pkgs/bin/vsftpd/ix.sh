@@ -1,7 +1,7 @@
 {% extends '//die/c/make.sh' %}
 
 {% block pkg_name %}
-sftpd
+vsftpd
 {% endblock %}
 
 {% block version %}
