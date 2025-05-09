@@ -1,2 +1,2 @@
-https://github.com/KhronosGroup/SPIRV-Headers/archive/refs/tags/vulkan-sdk-1.3.296.0.tar.gz
-sha:1423d58a1171611d5aba2bf6f8c69c72ef9c38a0aca12c3493e4fda64c9b2dc6
+https://github.com/KhronosGroup/SPIRV-Headers/archive/refs/tags/vulkan-sdk-1.4.313.0.tar.gz
+sha:f68be549d74afb61600a1e3a7d1da1e6b7437758c8e77d664909f88f302c5ac1

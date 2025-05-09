@@ -1,7 +1,7 @@
 {% extends '//die/c/ix.sh' %}
 
 {% block pkg_name %}
-cffi
+python-cffi
 {% endblock %}
 
 {% block version %}

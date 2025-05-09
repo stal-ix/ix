@@ -4,7 +4,7 @@ set -xue
 
 cd ${IX_DIR}
 
-curl -k 'https://repology.org/api/v1/projects/?maintainer=anton%40samokhvalov.xyz&outdated=1' | ix_flt | grep -v apr | grep -v vulkan | grep -v mesa | grep -v spirv | grep -v freeglut | grep -v gdk | grep -v 'bld/' | grep -v 'lib/qt' | grep -v meson | grep -v musl | grep -v python | grep -v perl | grep -v rio | grep -v ruby | grep -v firmware | while read l; do (
+curl -k 'https://repology.org/api/v1/projects/?maintainer=anton%40samokhvalov.xyz&outdated=1' | ix_flt | grep -v apr | grep -v mesa | grep -v gdk | grep -v 'bld/' | grep -v 'lib/qt' | grep -v meson | grep -v musl | grep -v python | grep -v perl | grep -v rio | grep -v ruby | grep -v firmware | grep "(vulkan|spirv)" | while read l; do (
     echo ${l}
 
     if ix_up ${l}; then
