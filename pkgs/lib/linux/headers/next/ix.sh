@@ -5,12 +5,12 @@ linux-headers
 {% endblock %}
 
 {% block version %}
-6.14.5
+6.14.6
 {% endblock %}
 
 {% block fetch %}
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-{{self.version().strip()}}.tar.xz
-sha:28207ec52bbeaa3507010aeff944f442f7d9f22b286b79caf45ec6df1b24f409
+sha:21817f1998e2230f81f7e4f605fa6fdcb040e14fa27d99c27ddb16ce749797a9
 {% endblock %}
 
 {% block host_libs %}
