@@ -22,7 +22,6 @@ lib/json/c
 lib/notify
 #lib/micro/httpd
 lib/app/indicator
-lib/gdk/pixbuf/svg
 {% endblock %}
 
 {% block bld_tool %}

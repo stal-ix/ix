@@ -2,5 +2,4 @@
 
 {% block lib_deps %}
 lib/drivers/3d
-lib/gdk/pixbuf/svg
 {% endblock %}

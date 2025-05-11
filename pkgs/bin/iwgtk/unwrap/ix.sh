@@ -18,7 +18,6 @@ lib/c
 lib/gtk
 lib/glib
 lib/qrencode
-lib/gdk/pixbuf/svg
 {% endblock %}
 
 {% block bld_tool %}

@@ -4,7 +4,6 @@
 lib/notify
 lib/gtk/3/mm
 lib/app/indicator
-lib/gdk/pixbuf/svg
 {{super()}}
 {% endblock %}
 

@@ -5,7 +5,7 @@ lib/c
 lib/c++
 lib/glib
 lib/lunasvg
-lib/gdk/pixbuf
+lib/gdk/pixbuf/unwrap
 {% endblock %}
 
 {% block cpp_defines %}
