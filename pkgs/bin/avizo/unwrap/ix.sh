@@ -27,7 +27,7 @@ bld/gir
 bin/vala
 bld/glib
 bld/wayland
-lib/gdk/pixbuf
+bld/gdk/pixbuf
 {% endblock %}
 
 {% block bld_data %}
