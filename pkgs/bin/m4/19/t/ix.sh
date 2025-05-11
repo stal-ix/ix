@@ -5,12 +5,12 @@ m4
 {% endblock %}
 
 {% block version %}
-1.4.19
+1.4.20
 {% endblock %}
 
 {% block fetch %}
 https://ftp.gnu.org/gnu/m4/m4-{{self.version().strip()}}.tar.xz
-sha:63aede5c6d33b6d9b13511cd0be2cac046f2e70fd0a07aa9573a04a82783af96
+sha:e236ea3a1ccf5f6c270b1c4bb60726f371fa49459a8eaaebc90b216b328daf2b
 {% endblock %}
 
 {% block bld_libs %}
