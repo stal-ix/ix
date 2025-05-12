@@ -1,5 +1,7 @@
 {% extends '//bin/weechat/static/ix.sh' %}
 
+# check bin/weechat
+
 {% block cmake_flags %}
 {{super()}}
 ENABLE_NCURSES=OFF

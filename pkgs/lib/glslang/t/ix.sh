@@ -5,12 +5,12 @@ glslang
 {% endblock %}
 
 {% block version %}
-1.4.313.0
+15.3.0
 {% endblock %}
 
 {% block fetch %}
-https://github.com/KhronosGroup/glslang/archive/refs/tags/vulkan-sdk-{{self.version().strip()}}.tar.gz
-sha:555ac780ccceca926fa25775834639ce6ffc744120bfb68fb8657dd4032d21ee
+https://github.com/KhronosGroup/glslang/archive/refs/tags/{{self.version().strip()}}.tar.gz
+sha:c6c21fe1873c37e639a6a9ac72d857ab63a5be6893a589f34e09a6c757174201
 {% endblock %}
 
 {% block bld_tool %}
