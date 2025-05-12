@@ -1,7 +1,16 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block version %}
+0.48.0
+{% endblock %}
+
+{% block pkg_name %}
+Hyprland
+{% endblock %}
+
 {% block fetch %}
-{% include 'ver.sh' %}
+https://github.com/hyprwm/Hyprland/releases/download/v{{self.version().strip()}}/source-v{{self.version().strip()}}.tar.gz
+sha:12695d075add1f6e076f3376efa91c3946892303259041098dbc78553e6dbfa9
 {% endblock %}
 
 {% block bld_libs %}
