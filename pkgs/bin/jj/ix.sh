@@ -1,7 +1,7 @@
 {% extends '//die/rust/cargo.sh' %}
 
 {% block pkg_name %}
-jj
+jujutsu
 {% endblock %}
 
 {% block version %}
