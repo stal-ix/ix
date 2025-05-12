@@ -5,7 +5,7 @@ zellij
 {% endblock %}
 
 {% block version %}
-0.41.2
+0.42.2
 {% endblock %}
 
 {% block cargo_url %}
@@ -13,7 +13,7 @@ https://github.com/zellij-org/zellij/archive/refs/tags/v{{self.version().strip()
 {% endblock %}
 
 {% block cargo_sha %}
-2d053f573276a92f000308e59456a6bf3f121ef23099b060fb3471344cb559b0
+640f1dfe062c45bdf476fedd65f0072bc67841650330b43d7db8211a2738436b
 {% endblock %}
 
 {% block bld_libs %}
@@ -24,4 +24,12 @@ lib/openssl
 {% block install %}
 mkdir ${out}/bin
 cp ${tmp}/out/zellij ${out}/bin/
+{% endblock %}
+
+{% block cargoc_ver %}
+bld/cargo/86
+{% endblock %}
+
+{% block rustc_ver %}
+86
 {% endblock %}
