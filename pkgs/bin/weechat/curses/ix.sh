@@ -1,5 +1,7 @@
 {% extends '//bin/weechat/static/ix.sh' %}
 
+# check bin/weechat
+
 {% block bld_libs %}
 lib/curses
 {{super()}}
