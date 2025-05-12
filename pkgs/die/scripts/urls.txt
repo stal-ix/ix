@@ -562,6 +562,7 @@ https://downloads.sourceforge.net/project/pcre/pcre/8.45/pcre-8.45.tar.bz2
 https://downloads.sourceforge.net/project/perfmon2/libpfm4/libpfm-4.13.0.tar.gz
 https://downloads.sourceforge.net/project/podofo/podofo/0.9.8/podofo-0.9.8.tar.gz
 https://downloads.sourceforge.net/project/qmmp-dev/qmmp/2.1/qmmp-2.1.4.tar.bz2
+https://downloads.sourceforge.net/project/qmmp-dev/qmmp/2.2/qmmp-2.2.5.tar.bz2
 https://downloads.sourceforge.net/project/sbcl/sbcl/2.3.10/sbcl-2.3.10-source.tar.bz2
 https://downloads.sourceforge.net/project/sbcl/sbcl/2.3.11/sbcl-2.3.11-source.tar.bz2
 https://downloads.sourceforge.net/project/sbcl/sbcl/2.4.0/sbcl-2.4.0-source.tar.bz2
@@ -4045,6 +4046,7 @@ https://github.com/weechat/weechat/archive/refs/tags/v4.4.2.tar.gz
 https://github.com/weechat/weechat/archive/refs/tags/v4.4.3.tar.gz
 https://github.com/weechat/weechat/archive/refs/tags/v4.6.0.tar.gz
 https://github.com/weechat/weechat/archive/refs/tags/v4.6.2.tar.gz
+https://github.com/weechat/weechat/archive/refs/tags/v4.6.3.tar.gz
 https://github.com/westes/flex/archive/refs/tags/flex-2-5-10.tar.gz
 https://github.com/westes/flex/files/981163/flex-2.6.4.tar.gz
 https://github.com/wez/wezterm/archive/refs/tags/20230712-072601-f4abf8fd.tar.gz
