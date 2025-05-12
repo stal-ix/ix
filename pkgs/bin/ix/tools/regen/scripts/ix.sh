@@ -17,5 +17,8 @@ EOF
 base64 -d << EOF > ${out}/bin/ix_repo_export
 {% include 'repo_export.sh/base64' %}
 EOF
+base64 -d << EOF > ${out}/bin/ix_flt_upstream
+{% include 'ix_flt_upstream.py/base64' %}
+EOF
 chmod +x ${out}/bin/*
 {% endblock %}
