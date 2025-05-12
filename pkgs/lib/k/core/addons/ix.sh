@@ -9,8 +9,6 @@ kcoreaddons
 {% endblock %}
 
 {% block fetch %}
-#https://github.com/KDE/kcoreaddons/archive/refs/tags/v5.113.0.tar.gz
-#sha:9f5f87608638229ecd99eb21791112c9fc58bfd144510af51614542af874d1c3
 https://github.com/KDE/kcoreaddons/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 sha:7d7ae4d787a4d91d7553ec6e7ef258547a874bceff40000a561c5fd2aac50a6c
 {% endblock %}
