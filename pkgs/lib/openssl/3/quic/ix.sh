@@ -1,7 +1,7 @@
 {% extends '//lib/openssl/3/t/ix.sh' %}
 
 {% block pkg_name %}
-quictls
+quictls-openssl
 {% endblock %}
 
 {% block version %}
