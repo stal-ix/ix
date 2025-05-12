@@ -470,6 +470,7 @@ https://download.kde.org/stable/plasma-wayland-protocols/plasma-wayland-protocol
 https://download.netsurf-browser.org/libs/releases/libnsgif-0.2.1-src.tar.gz
 https://download.netsurf-browser.org/libs/releases/libnsgif-1.0.0-src.tar.gz
 https://download.open-mpi.org/release/hwloc/v2.12/hwloc-2.12.0.tar.bz2
+https://download.open-mpi.org/release/hwloc/v2.12/hwloc-2.12.1.tar.bz2
 https://download.open-mpi.org/release/hwloc/v2.9/hwloc-2.9.0.tar.bz2
 https://download.oracle.com/berkeley-db/db-6.2.32.tar.gz
 https://download.qemu.org/qemu-8.0.0.tar.xz
