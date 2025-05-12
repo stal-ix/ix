@@ -5,31 +5,21 @@ apr
 {% endblock %}
 
 {% block version %}
-1.7.0
+1.7.5
 {% endblock %}
 
 {% block fetch %}
 https://archive.apache.org/dist/apr/apr-{{self.version().strip()}}.tar.bz2
-sha:e2e148f0b2e99b8e5c6caa09f6d4fb4dd3e83f744aa72a952f94f5a14436f7ea
+sha:cd0f5d52b9ab1704c72160c5ee3ed5d3d4ca2df4a7f8ab564e3cb352b67232f2
 {% endblock %}
 
-{% block install %}
-{{super()}}
-cd ${out}
-for x in "bin/apr-1-config" "build-1/libtool" "build-1/apr_rules.mk"; do
-    cat ${x} \
-        | grep -v '/build/.*tools' \
-        | grep -v '/build/.*src'   \
-        | grep -v '/build/.*host'  \
-        > _
-    mv _ ${x}
-    chmod +x ${x}
-done
+{% block postinstall %}
+:
 {% endblock %}
 
 {% block env %}
 export CPPFLAGS="-I${out}/include/apr-1 \${CPPFLAGS}"
-export COFLAGS="--with-apr=${out}/lib/bin/apr-1-config \${COFLAGS}"
+export COFLAGS="--with-apr=${out}/bin/apr-1-config \${COFLAGS}"
 {% endblock %}
 
 {% block lib_deps %}
@@ -40,6 +30,7 @@ lib/c
 {% if linux %}
 --with-devrandom=/dev/random
 {% endif %}
+--with-installbuilddir=${out}/share/build
 {% endblock %}
 
 {% block setup_target_flags %}
@@ -47,4 +38,24 @@ lib/c
 export ac_cv_type_pid_t=yes
 export ac_cv_sizeof_pid_t=4
 export ac_cv_sizeof_struct_iovec=16
+{% if linux %}
+export ac_cv_file__dev_zero=yes
+export apr_cv_tcp_nodelay_with_cork=yes
+export ac_cv_define_PTHREAD_PROCESS_SHARED=yes
+export apr_cv_process_shared_works=yes
+export apr_cv_mutex_robust_shared=yes
+export ap_cv_atomic_builtins=yes
+export apr_cv_mutex_recursive=yes
+export apr_cv_epoll=yes
+export apr_cv_epoll_create1=yes
+export apr_cv_dup3=yes
+export apr_cv_accept4=yes
+export apr_cv_sock_cloexec=yes
+export ac_cv_struct_rlimit=yes
+export ac_cv_func_sem_open=yes
+export ac_cv_negative_eai=yes
+export apr_cv_gai_addrconfig=yes
+export ac_cv_o_nonblock_inherited=no
+export apr_cv_pthreads_lib=-lpthread
+{% endif %}
 {% endblock %}
