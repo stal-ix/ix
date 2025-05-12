@@ -129,8 +129,10 @@ def revstr(s):
 
 def parse_redir(data):
     for l in data.split('\n'):
-        if '# check' in data:
-            yield from data.strip().split(' ')[2:]
+        l = l.strip()
+
+        if '# check' in l:
+            yield from l.strip().split(' ')[2:]
 
 def flt_pkgs(pkgs):
     for x in pkgs:

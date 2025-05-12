@@ -162,6 +162,7 @@ https://7-zip.org/a/7z2301-src.tar.xz
 https://alpha.gnu.org/gnu/libtool/libtool-2.5.1.tar.xz
 https://alpha.gnu.org/gnu/libtool/libtool-2.5.2.tar.xz
 https://archive.apache.org/dist/apr/apr-1.7.0.tar.bz2
+https://archive.apache.org/dist/apr/apr-1.7.5.tar.bz2
 https://archive.apache.org/dist/apr/apr-util-1.6.2.tar.bz2
 https://archive.apache.org/dist/apr/apr-util-1.6.3.tar.bz2
 https://archive.apache.org/dist/subversion/subversion-1.14.2.tar.bz2
@@ -1852,6 +1853,7 @@ https://github.com/ebiggers/libdeflate/archive/refs/tags/v1.20.tar.gz
 https://github.com/ebiggers/libdeflate/archive/refs/tags/v1.21.tar.gz
 https://github.com/ebiggers/libdeflate/archive/refs/tags/v1.22.tar.gz
 https://github.com/ebiggers/libdeflate/archive/refs/tags/v1.23.tar.gz
+https://github.com/ebiggers/libdeflate/archive/refs/tags/v1.24.tar.gz
 https://github.com/editorconfig/editorconfig-core-c/archive/refs/tags/v0.12.6.tar.gz
 https://github.com/editorconfig/editorconfig-core-c/archive/refs/tags/v0.12.9.tar.gz
 https://github.com/ekzhang/bore/archive/refs/tags/v0.5.0.tar.gz
@@ -3535,6 +3537,7 @@ https://github.com/rui314/mold/archive/refs/tags/v2.37.0.tar.gz
 https://github.com/rui314/mold/archive/refs/tags/v2.37.1.tar.gz
 https://github.com/rui314/mold/archive/refs/tags/v2.38.1.tar.gz
 https://github.com/rui314/mold/archive/refs/tags/v2.39.0.tar.gz
+https://github.com/rui314/mold/archive/refs/tags/v2.39.1.tar.gz
 https://github.com/rui314/mold/archive/refs/tags/v2.4.0.tar.gz
 https://github.com/rui314/mold/archive/refs/tags/v2.4.1.tar.gz
 https://github.com/rust-lang/cargo/archive/refs/tags/0.80.0.tar.gz
@@ -3865,6 +3868,7 @@ https://github.com/tree-sitter/tree-sitter/archive/refs/tags/v0.24.3.tar.gz
 https://github.com/tree-sitter/tree-sitter/archive/refs/tags/v0.24.4.tar.gz
 https://github.com/tree-sitter/tree-sitter/archive/refs/tags/v0.24.7.tar.gz
 https://github.com/tree-sitter/tree-sitter/archive/refs/tags/v0.25.3.tar.gz
+https://github.com/tree-sitter/tree-sitter/archive/refs/tags/v0.25.4.tar.gz
 https://github.com/troglobit/editline/archive/refs/tags/1.17.1.tar.gz
 https://github.com/troglobit/sysklogd/archive/refs/tags/v2.5.1.tar.gz
 https://github.com/troglobit/sysklogd/archive/refs/tags/v2.5.2.tar.gz
@@ -3992,6 +3996,7 @@ https://github.com/vifm/vifm/archive/refs/tags/v0.14.tar.gz
 https://github.com/vim/vim/archive/refs/tags/v9.0.0006.tar.gz
 https://github.com/vim/vim/archive/refs/tags/v9.1.1366.tar.gz
 https://github.com/vim/vim/archive/refs/tags/v9.1.1379.tar.gz
+https://github.com/vim/vim/archive/refs/tags/v9.1.1382.tar.gz
 https://github.com/vmatare/thinkfan/archive/refs/tags/1.3.1.tar.gz
 https://github.com/vmt/udis86/archive/refs/tags/v1.7.2.tar.gz
 https://github.com/void-linux/musl-fts/archive/refs/tags/v1.2.7.tar.gz
