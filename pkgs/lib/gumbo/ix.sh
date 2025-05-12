@@ -4,6 +4,10 @@
 0.13.0
 {% endblock %}
 
+{% block pkg_name %}
+gumbo-parser
+{% endblock %}
+
 {% block fetch %}
 https://codeberg.org/grisha/gumbo-parser/archive/{{self.version().strip()}}.tar.gz
 sha:7ad2ee259f35e8951233e4c9ad80968fb880f20d8202cb9c48f0b65f67d38e61
