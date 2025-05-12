@@ -242,6 +242,7 @@ https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.14.2.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.14.3.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.14.4.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.14.5.tar.xz
+https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.14.6.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.14.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.2.14.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.3.13.tar.xz
@@ -744,6 +745,7 @@ https://ftp.gnu.org/gnu/libunistring/libunistring-1.2.tar.xz
 https://ftp.gnu.org/gnu/libunistring/libunistring-1.3.tar.xz
 https://ftp.gnu.org/gnu/m4/m4-1.4.18.tar.xz
 https://ftp.gnu.org/gnu/m4/m4-1.4.19.tar.xz
+https://ftp.gnu.org/gnu/m4/m4-1.4.20.tar.xz
 https://ftp.gnu.org/gnu/make/make-4.3.tar.gz
 https://ftp.gnu.org/gnu/make/make-4.4.1.tar.gz
 https://ftp.gnu.org/gnu/make/make-4.4.tar.gz
@@ -923,6 +925,7 @@ https://github.com/AOMediaCodec/libavif/archive/refs/tags/v1.1.0.tar.gz
 https://github.com/AOMediaCodec/libavif/archive/refs/tags/v1.1.1.tar.gz
 https://github.com/AOMediaCodec/libavif/archive/refs/tags/v1.2.0.tar.gz
 https://github.com/AOMediaCodec/libavif/archive/refs/tags/v1.2.1.tar.gz
+https://github.com/AOMediaCodec/libavif/archive/refs/tags/v1.3.0.tar.gz
 https://github.com/ARMmbed/mbedtls/archive/refs/tags/v2.28.10.tar.gz
 https://github.com/ARMmbed/mbedtls/archive/refs/tags/v2.28.2.tar.gz
 https://github.com/ARMmbed/mbedtls/archive/refs/tags/v2.28.9.tar.gz
@@ -1181,11 +1184,13 @@ https://github.com/KDAB/KDSingleApplication/archive/refs/tags/v1.1.0.tar.gz
 https://github.com/KDE/extra-cmake-modules/archive/refs/tags/v5.247.0.tar.gz
 https://github.com/KDE/extra-cmake-modules/archive/refs/tags/v6.1.0.tar.gz
 https://github.com/KDE/extra-cmake-modules/archive/refs/tags/v6.13.0.tar.gz
+https://github.com/KDE/extra-cmake-modules/archive/refs/tags/v6.14.0.tar.gz
 https://github.com/KDE/kcachegrind/archive/refs/tags/v24.04.80.tar.gz
 https://github.com/KDE/kcoreaddons/archive/refs/tags/v5.247.0.tar.gz
 https://github.com/KDE/kimageformats/archive/refs/tags/v5.112.0.tar.gz
 https://github.com/KDE/kimageformats/archive/refs/tags/v5.98.0.tar.gz
 https://github.com/KDE/kimageformats/archive/refs/tags/v6.13.0.tar.gz
+https://github.com/KDE/kimageformats/archive/refs/tags/v6.14.0.tar.gz
 https://github.com/KarsMulder/evsieve/archive/refs/tags/v1.4.0.tar.gz
 https://github.com/KhronosGroup/SPIRV-Cross/archive/refs/tags/sdk-1.3.261.1.tar.gz
 https://github.com/KhronosGroup/SPIRV-Cross/archive/refs/tags/vulkan-sdk-1.3.268.0.tar.gz
@@ -1336,6 +1341,7 @@ https://github.com/NetworkConfiguration/openresolv/archive/refs/tags/v3.14.1.tar
 https://github.com/NetworkConfiguration/openresolv/archive/refs/tags/v3.15.0.tar.gz
 https://github.com/NetworkConfiguration/openresolv/archive/refs/tags/v3.16.0.tar.gz
 https://github.com/NetworkConfiguration/openresolv/archive/refs/tags/v3.16.2.tar.gz
+https://github.com/NetworkConfiguration/openresolv/archive/refs/tags/v3.16.3.tar.gz
 https://github.com/NixOS/nix/archive/refs/tags/2.17.0.tar.gz
 https://github.com/NixOS/nix/archive/refs/tags/2.18.0.tar.gz
 https://github.com/NixOS/nix/archive/refs/tags/2.19.1.tar.gz
@@ -1502,6 +1508,7 @@ https://github.com/Z3Prover/z3/archive/refs/tags/z3-4.13.3.tar.gz
 https://github.com/Z3Prover/z3/archive/refs/tags/z3-4.13.4.tar.gz
 https://github.com/Z3Prover/z3/archive/refs/tags/z3-4.14.0.tar.gz
 https://github.com/Z3Prover/z3/archive/refs/tags/z3-4.14.1.tar.gz
+https://github.com/Z3Prover/z3/archive/refs/tags/z3-4.15.0.tar.gz
 https://github.com/a-j-wood/pv/releases/download/v1.7.24/pv-1.7.24.tar.gz
 https://github.com/abseil/abseil-cpp/archive/refs/tags/20230125.3.tar.gz
 https://github.com/abseil/abseil-cpp/archive/refs/tags/20230802.1.tar.gz
@@ -1601,6 +1608,7 @@ https://github.com/appneta/tcpreplay/releases/download/v4.4.4/tcpreplay-4.4.4.ta
 https://github.com/appneta/tcpreplay/releases/download/v4.5.1/tcpreplay-4.5.1.tar.xz
 https://github.com/ar-/incron/archive/refs/tags/0.5.12.tar.gz
 https://github.com/archiecobbs/s3backer/archive/refs/tags/2.1.3.tar.gz
+https://github.com/archiecobbs/s3backer/archive/refs/tags/2.1.4.tar.gz
 https://github.com/archlinux/svntogit-community/archive/515367ae9616cb3fa53eaf041634dd6e0637a774.tar.gz
 https://github.com/argp-standalone/argp-standalone/archive/refs/tags/1.5.0.tar.gz
 https://github.com/aria2/aria2/archive/refs/tags/release-1.36.0.tar.gz
@@ -1610,6 +1618,7 @@ https://github.com/aristocratos/btop/archive/refs/tags/v1.3.2.tar.gz
 https://github.com/aristocratos/btop/archive/refs/tags/v1.4.0.tar.gz
 https://github.com/aristocratos/btop/archive/refs/tags/v1.4.1.tar.gz
 https://github.com/aristocratos/btop/archive/refs/tags/v1.4.2.tar.gz
+https://github.com/aristocratos/btop/archive/refs/tags/v1.4.3.tar.gz
 https://github.com/artemsen/swayimg/archive/refs/tags/v1.12.tar.gz
 https://github.com/artemsen/swayimg/archive/refs/tags/v2.0.tar.gz
 https://github.com/artemsen/swayimg/archive/refs/tags/v2.1.tar.gz
@@ -2224,6 +2233,7 @@ https://github.com/google/shaderc/archive/refs/tags/v2024.1.tar.gz
 https://github.com/google/shaderc/archive/refs/tags/v2024.2.tar.gz
 https://github.com/google/shaderc/archive/refs/tags/v2024.3.tar.gz
 https://github.com/google/shaderc/archive/refs/tags/v2025.1.tar.gz
+https://github.com/google/shaderc/archive/refs/tags/v2025.2.tar.gz
 https://github.com/google/snappy/archive/refs/tags/1.1.10.tar.gz
 https://github.com/google/snappy/archive/refs/tags/1.1.9.tar.gz
 https://github.com/google/snappy/archive/refs/tags/1.2.2.tar.gz
@@ -2805,6 +2815,7 @@ https://github.com/libuv/libuv/archive/refs/tags/v1.50.0.tar.gz
 https://github.com/libuv/libuv/archive/refs/tags/v1.51.0.tar.gz
 https://github.com/libxmp/libxmp/archive/refs/tags/libxmp-4.6.0.tar.gz
 https://github.com/libxmp/libxmp/archive/refs/tags/libxmp-4.6.2.tar.gz
+https://github.com/libxmp/libxmp/archive/refs/tags/libxmp-4.6.3.tar.gz
 https://github.com/limine-bootloader/limine/releases/download/v5.20230801.0/limine-5.20230801.0.tar.xz
 https://github.com/linux-nvme/libnvme/archive/refs/tags/v1.10.tar.gz
 https://github.com/linux-nvme/libnvme/archive/refs/tags/v1.11.1.tar.gz
@@ -3056,6 +3067,7 @@ https://github.com/nemtrif/utfcpp/archive/refs/tags/v4.0.6.tar.gz
 https://github.com/neomutt/neomutt/archive/refs/tags/20220429.tar.gz
 https://github.com/neomutt/neomutt/archive/refs/tags/20231006.tar.gz
 https://github.com/neomutt/neomutt/archive/refs/tags/20250404.tar.gz
+https://github.com/neomutt/neomutt/archive/refs/tags/20250510.tar.gz
 https://github.com/neovide/neovide/archive/refs/tags/0.12.2.tar.gz
 https://github.com/neovim/libtermkey/archive/refs/tags/v0.20.tar.gz
 https://github.com/neovim/libtermkey/archive/refs/tags/v0.22.tar.gz
@@ -3716,6 +3728,7 @@ https://github.com/syslog-ng/syslog-ng/releases/download/syslog-ng-4.6.0/syslog-
 https://github.com/syslog-ng/syslog-ng/releases/download/syslog-ng-4.7.1/syslog-ng-4.7.1.tar.gz
 https://github.com/syslog-ng/syslog-ng/releases/download/syslog-ng-4.8.0/syslog-ng-4.8.0.tar.gz
 https://github.com/syslog-ng/syslog-ng/releases/download/syslog-ng-4.8.1/syslog-ng-4.8.1.tar.gz
+https://github.com/syslog-ng/syslog-ng/releases/download/syslog-ng-4.8.2/syslog-ng-4.8.2.tar.gz
 https://github.com/tdlib/td/archive/refs/tags/v1.8.0.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v4.10.1/tdesktop-4.10.1-full.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v4.10.2/tdesktop-4.10.2-full.tar.gz
@@ -3978,6 +3991,7 @@ https://github.com/vifm/vifm/archive/refs/tags/v0.14.2.tar.gz
 https://github.com/vifm/vifm/archive/refs/tags/v0.14.tar.gz
 https://github.com/vim/vim/archive/refs/tags/v9.0.0006.tar.gz
 https://github.com/vim/vim/archive/refs/tags/v9.1.1366.tar.gz
+https://github.com/vim/vim/archive/refs/tags/v9.1.1379.tar.gz
 https://github.com/vmatare/thinkfan/archive/refs/tags/1.3.1.tar.gz
 https://github.com/vmt/udis86/archive/refs/tags/v1.7.2.tar.gz
 https://github.com/void-linux/musl-fts/archive/refs/tags/v1.2.7.tar.gz
@@ -4590,6 +4604,7 @@ https://imagemagick.org/archive/releases/ImageMagick-7.1.1-46.tar.xz
 https://imagemagick.org/archive/releases/ImageMagick-7.1.1-47.tar.xz
 https://invent.kde.org/frameworks/kwindowsystem/-/archive/v6.1.0/kwindowsystem-v6.1.0.tar.bz2
 https://invent.kde.org/frameworks/kwindowsystem/-/archive/v6.13.0/kwindowsystem-v6.13.0.tar.bz2
+https://invent.kde.org/frameworks/kwindowsystem/-/archive/v6.14.0/kwindowsystem-v6.14.0.tar.bz2
 https://invisible-island.net/archives/dialog/dialog-1.3-20240101.tgz
 https://invisible-island.net/archives/dialog/dialog-1.3-20250116.tgz
 https://invisible-mirror.net/archives/byacc/byacc-20211224.tgz
@@ -5027,6 +5042,7 @@ https://www.gnupg.org/ftp/gcrypt/gnupg/gnupg-2.4.5.tar.bz2
 https://www.gnupg.org/ftp/gcrypt/gnupg/gnupg-2.5.1.tar.bz2
 https://www.gnupg.org/ftp/gcrypt/gnupg/gnupg-2.5.3.tar.bz2
 https://www.gnupg.org/ftp/gcrypt/gnupg/gnupg-2.5.4.tar.bz2
+https://www.gnupg.org/ftp/gcrypt/gnupg/gnupg-2.5.6.tar.bz2
 https://www.gnupg.org/ftp/gcrypt/gnutls/v3.8/gnutls-3.8.1.tar.xz
 https://www.gnupg.org/ftp/gcrypt/gnutls/v3.8/gnutls-3.8.2.tar.xz
 https://www.gnupg.org/ftp/gcrypt/gnutls/v3.8/gnutls-3.8.3.tar.xz
