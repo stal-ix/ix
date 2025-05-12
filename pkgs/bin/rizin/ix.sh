@@ -5,12 +5,12 @@ rizin
 {% endblock %}
 
 {% block version %}
-0.7.4
+0.8.1
 {% endblock %}
 
 {% block fetch %}
 https://github.com/rizinorg/rizin/releases/download/v{{self.version().strip()}}/rizin-src-v{{self.version().strip()}}.tar.xz
-sha:f7118910e5dc843c38baa3e00b30ec019a1cdd5c132ba2bc16cf0c7497631201
+sha:ef2b1e6525d7dc36ac43525b956749c1cca07bf17c1fed8b66402d82010a4ec2
 {% endblock %}
 
 {% block bld_libs %}
@@ -55,6 +55,7 @@ use_sys_pcre2=enabled
 find . -type f | while read l; do
     sed -e 's|include <capstone.h>|include <capstone/capstone.h>|' -i "${l}"
 done
+cp -R subprojects/softfloat subprojects/softfloat_cross_native
 {% endblock %}
 
 {% block c_rename_symbol %}
