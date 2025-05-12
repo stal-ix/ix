@@ -3463,6 +3463,7 @@ https://github.com/redis/redis/archive/refs/tags/7.4.0.tar.gz
 https://github.com/redis/redis/archive/refs/tags/7.4.1.tar.gz
 https://github.com/redis/redis/archive/refs/tags/7.4.2.tar.gz
 https://github.com/redis/redis/archive/refs/tags/7.4.3.tar.gz
+https://github.com/redis/redis/archive/refs/tags/8.0.0.tar.gz
 https://github.com/relan/exfat/releases/download/v1.4.0/exfat-utils-1.4.0.tar.gz
 https://github.com/rfc1036/whois/archive/refs/tags/v5.5.18.tar.gz
 https://github.com/rfc1036/whois/archive/refs/tags/v5.5.19.tar.gz
