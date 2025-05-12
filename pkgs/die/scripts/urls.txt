@@ -1292,6 +1292,7 @@ https://github.com/Kitware/CMake/archive/refs/tags/v3.31.6.tar.gz
 https://github.com/Kitware/CMake/archive/refs/tags/v4.0.1.tar.gz
 https://github.com/Kitware/CMake/archive/refs/tags/v4.0.2.tar.gz
 https://github.com/LBCrion/sfwbar/archive/refs/tags/v1.0_beta13.tar.gz
+https://github.com/LBCrion/sfwbar/archive/refs/tags/v1.0_beta16.tar.gz
 https://github.com/LBCrion/sfwbar/archive/refs/tags/v1.0_beta9.tar.gz
 https://github.com/LibRaw/LibRaw/archive/refs/tags/0.21.1.tar.gz
 https://github.com/LibRaw/LibRaw/archive/refs/tags/0.21.2.tar.gz
