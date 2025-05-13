@@ -1,7 +1,7 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block version %}
-0.48.0
+0.49.0
 {% endblock %}
 
 {% block pkg_name %}
@@ -10,7 +10,7 @@ Hyprland
 
 {% block fetch %}
 https://github.com/hyprwm/Hyprland/releases/download/v{{self.version().strip()}}/source-v{{self.version().strip()}}.tar.gz
-sha:12695d075add1f6e076f3376efa91c3946892303259041098dbc78553e6dbfa9
+sha:fd96fb043cfeda09a1ab9a5eb69fee55562475c0c6a41f79dad2bcc652dc5730
 {% endblock %}
 
 {% block bld_libs %}
@@ -54,8 +54,9 @@ EOF
 
 chmod +x scripts/generateVersion.sh
 
-sed -e 's|logOfs.native_handle.*|-1;|' \
-    -i src/debug/Log.cpp
+prepend hyprpm/src/helpers/Sys.cpp << EOF
+#include <sstream>
+EOF
 {% endblock %}
 
 {% block build_flags %}
