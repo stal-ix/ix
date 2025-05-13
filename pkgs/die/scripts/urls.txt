@@ -1192,6 +1192,7 @@ https://github.com/KDE/extra-cmake-modules/archive/refs/tags/v6.13.0.tar.gz
 https://github.com/KDE/extra-cmake-modules/archive/refs/tags/v6.14.0.tar.gz
 https://github.com/KDE/kcachegrind/archive/refs/tags/v24.04.80.tar.gz
 https://github.com/KDE/kcoreaddons/archive/refs/tags/v5.247.0.tar.gz
+https://github.com/KDE/kcoreaddons/archive/refs/tags/v6.14.0.tar.gz
 https://github.com/KDE/kimageformats/archive/refs/tags/v5.112.0.tar.gz
 https://github.com/KDE/kimageformats/archive/refs/tags/v5.98.0.tar.gz
 https://github.com/KDE/kimageformats/archive/refs/tags/v6.13.0.tar.gz
@@ -2103,6 +2104,7 @@ https://github.com/fmtlib/fmt/archive/refs/tags/11.1.1.tar.gz
 https://github.com/fmtlib/fmt/archive/refs/tags/11.1.2.tar.gz
 https://github.com/fmtlib/fmt/archive/refs/tags/11.1.3.tar.gz
 https://github.com/fmtlib/fmt/archive/refs/tags/11.1.4.tar.gz
+https://github.com/fmtlib/fmt/archive/refs/tags/11.2.0.tar.gz
 https://github.com/fmtlib/fmt/archive/refs/tags/9.1.0.tar.gz
 https://github.com/folkertvanheusden/HTTPing/archive/refs/tags/v4.1.0.tar.gz
 https://github.com/folkertvanheusden/HTTPing/archive/refs/tags/v4.2.0.tar.gz
@@ -2554,6 +2556,7 @@ https://github.com/jjsullivan5196/wvkbd/archive/refs/tags/v0.14.tar.gz
 https://github.com/jjsullivan5196/wvkbd/archive/refs/tags/v0.15.tar.gz
 https://github.com/jjsullivan5196/wvkbd/archive/refs/tags/v0.16.tar.gz
 https://github.com/johang/btfs/archive/refs/tags/v2.24.tar.gz
+https://github.com/johang/btfs/archive/refs/tags/v3.1.tar.gz
 https://github.com/johanmattssonm/xmlbird/archive/refs/tags/v1.2.14.tar.gz
 https://github.com/johnkerl/miller/archive/refs/tags/v6.11.0.tar.gz
 https://github.com/johnkerl/miller/archive/refs/tags/v6.13.0.tar.gz
