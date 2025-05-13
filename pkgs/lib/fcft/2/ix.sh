@@ -1,5 +1,9 @@
 {% extends '//lib/fcft/3/ix.sh' %}
 
+{% block pkg_name %}
+fcft
+{% endblock %}
+
 {% block version %}
 2.5.0
 {% endblock %}
