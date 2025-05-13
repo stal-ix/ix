@@ -5,16 +5,16 @@ python:pywlroots
 {% endblock %}
 
 {% block version %}
-0.16.6
+0.17.0
 {% endblock %}
 
 {% block fetch %}
 https://github.com/flacjacket/pywlroots/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:9620095d04f51271d3b071dd2c7b52b20f33b077de7785afbe037e743ae0311c
+sha:667b0cca499a99183c7834d0f656a0ed699a2b7d8b04939fabf0df575fd30bbe
 {% endblock %}
 
 {% block lib_deps %}
-lib/wlroots/16
+lib/wlroots/17
 {% endblock %}
 
 {% block bld_libs %}
