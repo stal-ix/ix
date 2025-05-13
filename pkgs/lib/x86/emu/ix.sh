@@ -1,9 +1,15 @@
 {% extends '//die/c/make.sh' %}
 
-{% set version %}3.5{% endset %}
+{% block pkg_name %}
+libx86emu
+{% endblock %}
+
+{% block version %}
+3.5
+{% endset %}
 
 {% block fetch %}
-https://github.com/wfeldt/libx86emu/archive/refs/tags/{{version}}.tar.gz
+https://github.com/wfeldt/libx86emu/archive/refs/tags/{{sef.version().strip()}}.tar.gz
 sha:91da55f5da55017d5a80e2364de30f9520aa8df2744ff587a09ba58d6e3536c8
 {% endblock %}
 
@@ -21,16 +27,16 @@ wrap_cc
 
 {% block make_flags %}
 CC=clang
-VERSION={{version}}
+VERSION={{self.version().strip()}}
 LIBDIR=lib
 DESTDIR=${out}/
-BRANCH={{version}}
+BRANCH={{self.version().strip()}}
 MAJOR_VERSION‎=1
 {% endblock %}
 
 {% block patch %}
 rm git2log
-echo '{{version}}' > VERSION
+echo '{{self.version().strip()}}' > VERSION
 {% endblock %}
 
 {% block install %}
