@@ -1,11 +1,19 @@
 {% extends '//die/c/autorehell.sh' %}
 
+{% block pkg_name %}
+crun
+{% endblock %}
+
+{% block version %}
+1.20
+{% endblock %}
+
 {% block git_repo %}
 https://github.com/containers/crun
 {% endblock %}
 
 {% block git_branch %}
-1.20
+{{self.version().strip()}}
 {% endblock %}
 
 {% block git_sha %}
