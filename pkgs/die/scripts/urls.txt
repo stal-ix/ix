@@ -355,6 +355,7 @@ https://codeberg.org/grisha/gumbo-parser/archive/0.12.0.tar.gz
 https://codeberg.org/grisha/gumbo-parser/archive/0.12.1.tar.gz
 https://codeberg.org/grisha/gumbo-parser/archive/0.12.3.tar.gz
 https://codeberg.org/grisha/gumbo-parser/archive/0.13.0.tar.gz
+https://codeberg.org/grisha/gumbo-parser/archive/0.13.1.tar.gz
 https://codeberg.org/mbunkus/mkvtoolnix/archive/release-91.0.tar.gz
 https://codeberg.org/mbunkus/mkvtoolnix/archive/release-92.0.tar.gz
 https://codeberg.org/soundtouch/soundtouch/archive/2.3.1.tar.gz
@@ -970,6 +971,7 @@ https://github.com/AdguardTeam/dnsproxy/archive/refs/tags/v0.73.2.tar.gz
 https://github.com/AdguardTeam/dnsproxy/archive/refs/tags/v0.74.1.tar.gz
 https://github.com/AdguardTeam/dnsproxy/archive/refs/tags/v0.75.1.tar.gz
 https://github.com/AdguardTeam/dnsproxy/archive/refs/tags/v0.75.4.tar.gz
+https://github.com/AdguardTeam/dnsproxy/archive/refs/tags/v0.75.5.tar.gz
 https://github.com/Aetf/kmscon/archive/refs/tags/v9.0.0.tar.gz
 https://github.com/Aetf/libtsm/archive/refs/tags/v4.0.2.tar.gz
 https://github.com/Alexays/Waybar/archive/refs/tags/0.10.0.tar.gz
@@ -2973,6 +2975,7 @@ https://github.com/magicant/yash/releases/download/2.56.1/yash-2.56.1.tar.xz
 https://github.com/magicant/yash/releases/download/2.57/yash-2.57.tar.xz
 https://github.com/magicant/yash/releases/download/2.58.1/yash-2.58.1.tar.xz
 https://github.com/magicant/yash/releases/download/2.58/yash-2.58.tar.xz
+https://github.com/magicant/yash/releases/download/2.59/yash-2.59.tar.xz
 https://github.com/managarm/mlibc/archive/refs/tags/3.0.0-rc2.tar.gz
 https://github.com/maratik123/runsvdir/archive/0cbddbc386a66f9bbec1be0e1277d6ad85224eb2.zip
 https://github.com/martanne/vis/archive/refs/tags/v0.8.tar.gz
@@ -4865,6 +4868,7 @@ https://nheko.im/nheko-reborn/coeurl/-/archive/v0.3.1/coeurl-v0.3.1.tar.bz2
 https://nmap.org/dist/nmap-7.93.tar.bz2
 https://nmap.org/dist/nmap-7.95.tar.bz2
 https://nmap.org/dist/nmap-7.96.tar.bz2
+https://nmap.org/dist/nmap-7.97.tar.bz2
 https://nodejs.org/dist/v18.16.1/node-v18.16.1.tar.gz
 https://nodejs.org/dist/v23.4.0/node-v23.4.0.tar.gz
 https://nodejs.org/dist/v23.6.0/node-v23.6.0.tar.gz
