@@ -1,11 +1,19 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+inkscape
+{% endblock %}
+
+{% block version %}
+1.4.1
+{% endblock %}
+
 {% block git_repo %}
 https://gitlab.com/inkscape/inkscape
 {% endblock %}
 
 {% block git_branch %}
-INKSCAPE_1_4_1
+INKSCAPE_{{self.version().strip().replace('.', '_')}}
 {% endblock %}
 
 {% block git_sha %}
