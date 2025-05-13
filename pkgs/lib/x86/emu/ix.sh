@@ -9,7 +9,7 @@ libx86emu
 {% endblock %}
 
 {% block fetch %}
-https://github.com/wfeldt/libx86emu/archive/refs/tags/{{sef.version().strip()}}.tar.gz
+https://github.com/wfeldt/libx86emu/archive/refs/tags/{{self.version().strip()}}.tar.gz
 sha:91da55f5da55017d5a80e2364de30f9520aa8df2744ff587a09ba58d6e3536c8
 {% endblock %}
 
