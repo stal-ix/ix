@@ -1,5 +1,9 @@
 {% extends '//die/c/meson.sh' %}
 
+{% block pkg_name %}
+imv
+{% endblock %}
+
 {% block version %}
 4.5.0
 {% endblock %}
