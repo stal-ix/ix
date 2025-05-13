@@ -1,6 +1,6 @@
 {% extends '//die/c/meson.sh' %}
 
-{% blo0ck pkg_name %}
+{% block pkg_name %}
 seatd
 {% endblock %}
 
