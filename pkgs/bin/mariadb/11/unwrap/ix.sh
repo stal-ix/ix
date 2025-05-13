@@ -1,5 +1,13 @@
 {% extends '//bin/mariadb/t/ix.sh' %}
 
+{% block pkg_name %}
+MariaDB
+{% endblock %}
+
+{% block version %}
+11.8.0
+{% endblock %}
+
 {% block git_sha %}
 903e27dcfd8df4b8fcc8bd5e076924ce4586a89dcb307d6d88d81ece2e372907
 {% endblock %}
@@ -9,7 +17,7 @@ https://github.com/MariaDB/server.git
 {% endblock %}
 
 {% block git_branch %}
-mariadb-11.8.0
+mariadb-{{self.version().strip()}}
 {% endblock %}
 
 {% block git_refine %}
