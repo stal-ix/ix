@@ -4,6 +4,10 @@
 1.11.0
 {% endblock %}
 
+{% block pkg_name %}
+yambar
+{% endblock %}
+
 {% block fetch %}
 https://codeberg.org/dnkl/yambar/archive/{{self.version().strip()}}.tar.gz
 sha:3649878ae7282203b4ff2aa9f45afad32a6fc8c921d94b6abdac2a1d21045aaf

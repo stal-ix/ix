@@ -4,6 +4,10 @@
 2.1.1
 {% endblock %}
 
+{% block pkg_name %}
+lavalauncher
+{% endblock %}
+
 {% block fetch %}
 https://git.sr.ht/~leon_plickat/lavalauncher/archive/v{{self.version().strip()}}.tar.gz
 sha:951edb0e00a118cd57d54349349d4898cfc18c6208a7c4d7f6e892eec1497c3b

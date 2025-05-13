@@ -1,5 +1,9 @@
 {% extends '//die/go/build.sh' %}
 
+{% block pkg_name %}
+forgejo
+{% endblock %}
+
 {% block version %}
 10.0.3
 {% endblock %}

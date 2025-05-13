@@ -2087,6 +2087,7 @@ https://github.com/fish-shell/fish-shell/archive/refs/tags/3.7.1.tar.gz
 https://github.com/flacjacket/pywayland/archive/refs/tags/v0.4.17.tar.gz
 https://github.com/flacjacket/pywayland/archive/refs/tags/v0.4.18.tar.gz
 https://github.com/flacjacket/pywlroots/archive/refs/tags/v0.16.6.tar.gz
+https://github.com/flacjacket/pywlroots/archive/refs/tags/v0.17.0.tar.gz
 https://github.com/flatpak/libportal/archive/refs/tags/0.7.1.tar.gz
 https://github.com/flatpak/libportal/archive/refs/tags/0.8.0.tar.gz
 https://github.com/flatpak/libportal/archive/refs/tags/0.8.1.tar.gz
@@ -2917,6 +2918,7 @@ https://github.com/llvm/llvm-project/archive/refs/tags/llvmorg-19.1.7.tar.gz
 https://github.com/llvm/llvm-project/archive/refs/tags/llvmorg-20.1.0.tar.gz
 https://github.com/llvm/llvm-project/archive/refs/tags/llvmorg-20.1.1.tar.gz
 https://github.com/llvm/llvm-project/archive/refs/tags/llvmorg-20.1.2.tar.gz
+https://github.com/llvm/llvm-project/archive/refs/tags/llvmorg-20.1.4.tar.gz
 https://github.com/llvm/llvm-project/commit/e9f851de24baefd5710c3cac6ef3cafaea0eeb9d.diff
 https://github.com/llvm/llvm-project/releases/download/llvmorg-13.0.1/llvm-project-13.0.1.src.tar.xz
 https://github.com/llvm/llvm-project/releases/download/llvmorg-16.0.6/llvm-project-16.0.6.src.tar.xz

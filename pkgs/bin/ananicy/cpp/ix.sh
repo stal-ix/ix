@@ -1,11 +1,19 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+ananicy-cpp
+{% endblock %}
+
+{% block version %}
+1.0.2
+{% endblock %}
+
 {% block git_repo %}
 https://gitlab.com/ananicy-cpp/ananicy-cpp
 {% endblock %}
 
 {% block git_branch %}
-v1.0.2
+v{{self.version().strip()}}
 {% endblock %}
 
 {% block git_sha %}

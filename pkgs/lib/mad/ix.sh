@@ -1,5 +1,9 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+libmad
+{% endblock %}
+
 {% block version %}
 0.16.4
 {% endblock %}
