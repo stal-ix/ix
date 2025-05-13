@@ -1,9 +1,10 @@
 {% extends '//die/c/ix.sh' %}
 
-{% block std_box %}
-{% block go_compiler %}
-bin/go/lang
+{% block go_tool %}
 {% endblock %}
+
+{% block std_box %}
+{{self.go_tool().strip() or 'bin/go/lang'}}
 {{super()}}
 {% endblock %}
 

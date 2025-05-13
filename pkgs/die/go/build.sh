@@ -17,16 +17,12 @@ des ${src}/*.pzd .
 {% block go_refine %}
 {% endblock %}
 
-{% block go_tool %}
-bin/go/lang/21
-{% endblock %}
-
 {% block go_args %}
 url={{self.go_url().strip()}}
 sha={{self.go_sha().strip()}}
 parent_id={{self.go_sha().strip()}}
 go_refine={{self.go_refine().strip() | b64e}}
-go_tool={{self.go_tool().strip() | b64e}}
+go_tool={{(self.go_tool().strip() or 'bin/go/lang/21') | b64e}}
 {% endblock %}
 
 {% block bld_data %}
