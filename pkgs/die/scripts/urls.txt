@@ -1949,6 +1949,7 @@ https://github.com/exfatprogs/exfatprogs/archive/refs/tags/1.2.4.tar.gz
 https://github.com/exfatprogs/exfatprogs/archive/refs/tags/1.2.5.tar.gz
 https://github.com/exfatprogs/exfatprogs/archive/refs/tags/1.2.7.tar.gz
 https://github.com/exfatprogs/exfatprogs/archive/refs/tags/1.2.8.tar.gz
+https://github.com/exfatprogs/exfatprogs/archive/refs/tags/1.2.9.tar.gz
 https://github.com/exfatprogs/exfatprogs/releases/download/1.2.0/exfatprogs-1.2.0.tar.xz
 https://github.com/extrawurst/gitui/archive/refs/tags/v0.24.3.tar.gz
 https://github.com/extrawurst/gitui/archive/refs/tags/v0.26.1.tar.gz
@@ -3520,6 +3521,7 @@ https://github.com/redis/redis/archive/refs/tags/7.4.1.tar.gz
 https://github.com/redis/redis/archive/refs/tags/7.4.2.tar.gz
 https://github.com/redis/redis/archive/refs/tags/7.4.3.tar.gz
 https://github.com/redis/redis/archive/refs/tags/8.0.0.tar.gz
+https://github.com/redis/redis/archive/refs/tags/8.0.1.tar.gz
 https://github.com/relan/exfat/releases/download/v1.4.0/exfat-utils-1.4.0.tar.gz
 https://github.com/rfc1036/whois/archive/refs/tags/v5.5.18.tar.gz
 https://github.com/rfc1036/whois/archive/refs/tags/v5.5.19.tar.gz
@@ -3796,6 +3798,7 @@ https://github.com/syslog-ng/syslog-ng/releases/download/syslog-ng-4.7.1/syslog-
 https://github.com/syslog-ng/syslog-ng/releases/download/syslog-ng-4.8.0/syslog-ng-4.8.0.tar.gz
 https://github.com/syslog-ng/syslog-ng/releases/download/syslog-ng-4.8.1/syslog-ng-4.8.1.tar.gz
 https://github.com/syslog-ng/syslog-ng/releases/download/syslog-ng-4.8.2/syslog-ng-4.8.2.tar.gz
+https://github.com/syslog-ng/syslog-ng/releases/download/syslog-ng-4.8.3/syslog-ng-4.8.3.tar.gz
 https://github.com/tdlib/td/archive/refs/tags/v1.8.0.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v4.10.1/tdesktop-4.10.1-full.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v4.10.2/tdesktop-4.10.2-full.tar.gz
@@ -4852,6 +4855,7 @@ https://mupdf.com/downloads/archive/mupdf-1.25.3-source.tar.gz
 https://mupdf.com/downloads/archive/mupdf-1.25.4-source.tar.gz
 https://mupdf.com/downloads/archive/mupdf-1.25.5-source.tar.gz
 https://mupdf.com/downloads/archive/mupdf-1.25.6-source.tar.gz
+https://mupdf.com/downloads/archive/mupdf-1.26.0-source.tar.gz
 https://nav.dl.sourceforge.net/project/sbcl/sbcl/2.2.1/sbcl-2.2.1-source.tar.bz2
 https://nav.dl.sourceforge.net/project/sbcl/sbcl/2.3.7/sbcl-2.3.7-source.tar.bz2
 https://nav.dl.sourceforge.net/project/sbcl/sbcl/2.3.9/sbcl-2.3.9-source.tar.bz2
