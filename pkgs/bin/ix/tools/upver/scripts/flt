@@ -21,11 +21,6 @@ def get_pkgs(rec):
             yield x['srcname']
 
 for name in sorted(data.keys()):
-    if ':' in name:
-        print(f'skip {name}', file=sys.stderr)
-
-        continue
-
     if 'unclassified' in name:
         print(f'skip {name}', file=sys.stderr)
 

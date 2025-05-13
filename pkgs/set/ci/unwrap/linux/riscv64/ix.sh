@@ -8,12 +8,12 @@ bin/dash
 bin/bash
 bin/curl
 bin/wget
-#bin/sway
+bin/sway
 bin/foot
 bin/make
 bin/ninja
 bin/bsdtar
-#bin/convert
+bin/convert
 set/box/gnu
 bin/coreutils
 {% endblock %}

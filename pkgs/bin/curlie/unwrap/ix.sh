@@ -24,7 +24,3 @@ cp curlie ${out}/bin/
 {% block go_tool %}
 bin/go/lang/24
 {% endblock %}
-
-{% block go_compiler %}
-bin/go/lang/24
-{% endblock %}
