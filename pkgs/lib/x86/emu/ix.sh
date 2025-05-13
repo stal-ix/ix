@@ -6,7 +6,7 @@ libx86emu
 
 {% block version %}
 3.5
-{% endset %}
+{% endblock %}
 
 {% block fetch %}
 https://github.com/wfeldt/libx86emu/archive/refs/tags/{{sef.version().strip()}}.tar.gz
