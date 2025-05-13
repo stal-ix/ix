@@ -4,6 +4,10 @@
 0.4.0
 {% endblock %}
 
+{% block pkg_name %}
+lisgd
+{% endblock %}
+
 {% block fetch %}
 https://git.sr.ht/~mil/lisgd/archive/{{self.version().strip()}}.tar.gz
 sha:1eef0a3c4c297714b52dd061d40611c955ea8479ef3e60cfb0f7ab9cb22e65e7
