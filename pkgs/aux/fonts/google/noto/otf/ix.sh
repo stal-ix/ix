@@ -1,7 +1,7 @@
 {% extends '//die/fonts.sh' %}
 
 {% block pkg_name %}
-notofonts.github.io
+notofonts
 {% endblock %}
 
 {% block version %}
