@@ -2,5 +2,5 @@
 
 {% block run_deps %}
 bin/btfs/unwrap
-bin/fusermount/2
+bin/fusermount/3
 {% endblock %}
