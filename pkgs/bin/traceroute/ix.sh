@@ -1,16 +1,16 @@
 {% extends '//die/c/make.sh' %}
 
 {% block pkg_name %}
-traceroute
+traceroute-for-linux
 {% endblock %}
 
 {% block version %}
-2.1.1
+2.1.6
 {% endblock %}
 
 {% block fetch %}
 https://downloads.sourceforge.net/project/traceroute/traceroute/traceroute-{{self.version().strip()}}/traceroute-{{self.version().strip()}}.tar.gz
-sha:8fc8d5046e855d7588607bb319f5b82e3ba13e91d5d4636863262e6386bbaf76
+sha:9ccef9cdb9d7a98ff7fbf93f79ebd0e48881664b525c4b232a0fcec7dcb9db5e
 {% endblock %}
 
 {% block bld_libs %}
