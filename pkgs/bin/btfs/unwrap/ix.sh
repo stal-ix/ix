@@ -5,17 +5,17 @@ btfs
 {% endblock %}
 
 {% block version %}
-2.24
+3.1
 {% endblock %}
 
 {% block fetch %}
 https://github.com/johang/btfs/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:d71ddefe3c572e05362542a0d9fd0240d8d4e1578ace55a8b3245176e7fd8935
+sha:c363f04149f97baf1c5e10ac90677b8309724f2042ab045a45041cfb7b44649b
 {% endblock %}
 
 {% block bld_libs %}
 lib/c
 lib/curl
-lib/fuse/2
+lib/fuse/3
 lib/torrent/rasterbar
 {% endblock %}

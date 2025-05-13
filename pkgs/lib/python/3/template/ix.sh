@@ -112,7 +112,9 @@ export CMFLAGS="-DPython_ROOT_DIR=${out} -DPython3_ROOT_DIR=${out} \${CMFLAGS}"
 {% endblock %}
 
 {% block configure %}
-{{super()}}{% if jail %}
+{{super()}}
+{% if linux %}
+# fix for broken configure script in some containerized env, without mounted /dev/shm
 cat << EOF >> pyconfig.h
 #undef HAVE_BROKEN_SEM_GETVALUE
 #define HAVE_DEV_PTMX 1

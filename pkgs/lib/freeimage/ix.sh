@@ -5,11 +5,11 @@ FreeImage
 {% endblock %}
 
 {% block version %}
-3180
+3.18.0
 {% endblock %}
 
 {% block fetch %}
-http://downloads.sourceforge.net/freeimage/FreeImage{{self.version().strip()}}.zip
+http://downloads.sourceforge.net/freeimage/FreeImage{{self.version().strip().replace('.', '')}}.zip
 sha:f41379682f9ada94ea7b34fe86bf9ee00935a3147be41b6569c9605a53e438fd
 https://github.com/archlinux/svntogit-community/archive/515367ae9616cb3fa53eaf041634dd6e0637a774.tar.gz
 sha:a09027386b523124e63a671218007004c0a6c0720857445a6bae0b5c5b980466
