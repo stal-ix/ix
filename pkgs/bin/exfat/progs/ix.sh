@@ -5,12 +5,12 @@ exfatprogs
 {% endblock %}
 
 {% block version %}
-1.2.8
+1.2.9
 {% endblock %}
 
 {% block fetch %}
 https://github.com/exfatprogs/exfatprogs/archive/refs/tags/{{self.version().strip()}}.tar.gz
-sha:33ecb1c5d6bccb2f09925291bce918785269270b11a349bc45c8008b76de7e31
+sha:a9d2722a4190a6d4080df6a447498886cc566ae22bb721e3405bb82f423d51d1
 {% endblock %}
 
 {% block conf_ver %}
