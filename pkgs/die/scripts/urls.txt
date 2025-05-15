@@ -48,6 +48,7 @@ http://ftp.gnu.org/gnu/mtools/mtools-4.0.47.tar.lz
 http://ftp.gnu.org/gnu/mtools/mtools-4.0.48.tar.lz
 http://ftp.gnu.org/gnu/screen/screen-4.9.1.tar.gz
 http://ftp.gnu.org/gnu/screen/screen-5.0.0.tar.gz
+http://ftp.gnu.org/gnu/screen/screen-5.0.1.tar.gz
 http://ftp.gnu.org/pub/gnu/gperf/gperf-3.1.tar.gz
 http://ftp.gnu.org/pub/gnu/gperf/gperf-3.2.1.tar.gz
 http://ftp.gnu.org/pub/gnu/gperf/gperf-3.2.tar.gz
@@ -339,10 +340,12 @@ https://codeberg.org/dnkl/foot/archive/1.19.0.tar.gz
 https://codeberg.org/dnkl/foot/archive/1.20.1.tar.gz
 https://codeberg.org/dnkl/foot/archive/1.20.2.tar.gz
 https://codeberg.org/dnkl/foot/archive/1.21.0.tar.gz
+https://codeberg.org/dnkl/foot/archive/1.22.3.tar.gz
 https://codeberg.org/dnkl/fuzzel/archive/1.10.0.tar.gz
 https://codeberg.org/dnkl/fuzzel/archive/1.10.2.tar.gz
 https://codeberg.org/dnkl/fuzzel/archive/1.11.0.tar.gz
 https://codeberg.org/dnkl/fuzzel/archive/1.11.1.tar.gz
+https://codeberg.org/dnkl/fuzzel/archive/1.12.0.tar.gz
 https://codeberg.org/dnkl/fuzzel/archive/1.9.2.tar.gz
 https://codeberg.org/dnkl/tllist/archive/1.1.0.tar.gz
 https://codeberg.org/dnkl/yambar/archive/1.10.0.tar.gz
@@ -901,6 +904,7 @@ https://git.sr.ht/~adnano/wmenu/archive/0.1.7.tar.gz
 https://git.sr.ht/~adnano/wmenu/archive/0.1.8.tar.gz
 https://git.sr.ht/~brocellous/wlrctl/archive/v0.2.2.tar.gz
 https://git.sr.ht/~delthas/senpai/archive/v0.3.0.tar.gz
+https://git.sr.ht/~delthas/senpai/archive/v0.4.1.tar.gz
 https://git.sr.ht/~emersion/basu/archive/v0.2.1.tar.gz
 https://git.sr.ht/~emersion/grim/archive/v1.4.1.tar.gz
 https://git.sr.ht/~emersion/kanshi/archive/v1.5.0.tar.gz
@@ -913,6 +917,7 @@ https://git.sr.ht/~kennylevinsen/seatd/archive/0.8.0.tar.gz
 https://git.sr.ht/~kennylevinsen/seatd/archive/0.9.0.tar.gz
 https://git.sr.ht/~kennylevinsen/seatd/archive/0.9.1.tar.gz
 https://git.sr.ht/~kennylevinsen/wlsunset/archive/0.2.0.tar.gz
+https://git.sr.ht/~kennylevinsen/wlsunset/archive/0.4.0.tar.gz
 https://git.sr.ht/~leon_plickat/lavalauncher/archive/v2.1.1.tar.gz
 https://git.sr.ht/~leon_plickat/wlopm/archive/v0.1.0.tar.gz
 https://git.sr.ht/~mcf/samurai/refs/download/1.2/samurai-1.2.tar.gz
@@ -1356,6 +1361,7 @@ https://github.com/NetworkConfiguration/openresolv/archive/refs/tags/v3.15.0.tar
 https://github.com/NetworkConfiguration/openresolv/archive/refs/tags/v3.16.0.tar.gz
 https://github.com/NetworkConfiguration/openresolv/archive/refs/tags/v3.16.2.tar.gz
 https://github.com/NetworkConfiguration/openresolv/archive/refs/tags/v3.16.3.tar.gz
+https://github.com/NetworkConfiguration/openresolv/archive/refs/tags/v3.16.4.tar.gz
 https://github.com/NixOS/nix/archive/refs/tags/2.17.0.tar.gz
 https://github.com/NixOS/nix/archive/refs/tags/2.18.0.tar.gz
 https://github.com/NixOS/nix/archive/refs/tags/2.19.1.tar.gz
@@ -1794,6 +1800,7 @@ https://github.com/contour-terminal/libunicode/archive/refs/tags/v0.6.0.tar.gz
 https://github.com/contour-terminal/reflection-cpp/archive/refs/tags/v0.1.0.tar.gz
 https://github.com/contour-terminal/reflection-cpp/archive/refs/tags/v0.2.0.tar.gz
 https://github.com/contour-terminal/reflection-cpp/archive/refs/tags/v0.3.0.tar.gz
+https://github.com/contour-terminal/reflection-cpp/archive/refs/tags/v0.4.0.tar.gz
 https://github.com/cppfw/agg/archive/refs/tags/2.8.17.tar.gz
 https://github.com/cppfw/agg/archive/refs/tags/2.8.22.tar.gz
 https://github.com/cppfw/agg/archive/refs/tags/2.8.33.tar.gz
@@ -2055,6 +2062,7 @@ https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.40.3.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.40.4.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.41.0.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.42.0.tar.gz
+https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.43.0.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.5.0.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.6.0.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.6.1.tar.gz
@@ -2474,6 +2482,7 @@ https://github.com/imneme/pcg-cpp/archive/refs/tags/v0.98.1.tar.gz
 https://github.com/inotify-tools/inotify-tools/archive/refs/tags/3.20.11.0.tar.gz
 https://github.com/inotify-tools/inotify-tools/archive/refs/tags/4.23.9.0.tar.gz
 https://github.com/intel/intel-one-mono/releases/download/V1.2.1/otf.zip
+https://github.com/intel/intel-one-mono/releases/download/V1.4.0/otf.zip
 https://github.com/intel/libipt/archive/refs/tags/v2.0.6.tar.gz
 https://github.com/intel/libipt/archive/refs/tags/v2.1.2.tar.gz
 https://github.com/intel/thermal_daemon/archive/refs/tags/v2.5.3.tar.gz
@@ -3547,6 +3556,7 @@ https://github.com/rharish101/ReGreet/archive/refs/tags/0.1.3.tar.gz
 https://github.com/rharish101/ReGreet/archive/refs/tags/0.2.0.tar.gz
 https://github.com/rhash/RHash/archive/refs/tags/v1.4.4.tar.gz
 https://github.com/rhash/RHash/archive/refs/tags/v1.4.5.tar.gz
+https://github.com/rhash/RHash/archive/refs/tags/v1.4.6.tar.gz
 https://github.com/rhboot/efibootmgr/archive/refs/tags/18.tar.gz
 https://github.com/rhboot/efivar/archive/refs/tags/38.tar.gz
 https://github.com/rhboot/efivar/archive/refs/tags/39.tar.gz
@@ -3580,6 +3590,7 @@ https://github.com/rs/curlie/archive/refs/tags/v1.8.1.tar.gz
 https://github.com/rs/curlie/archive/refs/tags/v1.8.2.tar.gz
 https://github.com/rsms/inter/releases/download/v3.19/Inter-3.19.zip
 https://github.com/rsms/inter/releases/download/v4.0/Inter-4.0.zip
+https://github.com/rsms/inter/releases/download/v4.1/Inter-4.1.zip
 https://github.com/rsteube/carapace-bin/archive/refs/tags/v0.28.3.tar.gz
 https://github.com/rsteube/carapace-bin/archive/refs/tags/v0.29.0.tar.gz
 https://github.com/rsteube/carapace-bin/archive/refs/tags/v0.29.1.tar.gz
@@ -3613,6 +3624,7 @@ https://github.com/rust-lang/rust-bindgen/archive/refs/tags/v0.71.1.tar.gz
 https://github.com/rvaiya/keyd/archive/refs/tags/v2.4.3.tar.gz
 https://github.com/rvaiya/keyd/archive/refs/tags/v2.5.0.tar.gz
 https://github.com/ryanoasis/nerd-fonts/releases/download/v3.3.0/NerdFontsSymbolsOnly.zip
+https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/NerdFontsSymbolsOnly.zip
 https://github.com/rzvncj/xCHM/archive/refs/tags/1.35.tar.gz
 https://github.com/rzvncj/xCHM/archive/refs/tags/1.36.tar.gz
 https://github.com/rzvncj/xCHM/archive/refs/tags/1.37.tar.gz
@@ -4122,6 +4134,7 @@ https://github.com/westes/flex/archive/refs/tags/flex-2-5-10.tar.gz
 https://github.com/westes/flex/files/981163/flex-2.6.4.tar.gz
 https://github.com/wez/wezterm/archive/refs/tags/20230712-072601-f4abf8fd.tar.gz
 https://github.com/wfeldt/libx86emu/archive/refs/tags/3.5.tar.gz
+https://github.com/wfeldt/libx86emu/archive/refs/tags/3.7.tar.gz
 https://github.com/wireshark/wireshark/archive/refs/tags/v4.1.0.tar.gz
 https://github.com/wireshark/wireshark/archive/refs/tags/v4.2.0.tar.gz
 https://github.com/wireshark/wireshark/archive/refs/tags/v4.2.1.tar.gz
@@ -4212,6 +4225,7 @@ https://github.com/yquake2/yquake2/archive/refs/tags/QUAKE2_8_20.tar.gz
 https://github.com/yquake2/yquake2/archive/refs/tags/QUAKE2_8_30.tar.gz
 https://github.com/yquake2/yquake2/archive/refs/tags/QUAKE2_8_40.tar.gz
 https://github.com/yquake2/yquake2/archive/refs/tags/QUAKE2_8_50.tar.gz
+https://github.com/yquake2/yquake2/archive/refs/tags/QUAKE2_8_51.tar.gz
 https://github.com/yrutschle/sslh/archive/refs/tags/v2.0.0.tar.gz
 https://github.com/yrutschle/sslh/archive/refs/tags/v2.0.1.tar.gz
 https://github.com/yrutschle/sslh/archive/refs/tags/v2.1.0.tar.gz
@@ -4331,6 +4345,7 @@ https://gitlab.freedesktop.org/gstreamer/orc/-/archive/0.4.40/orc-0.4.41.tar.bz2
 https://gitlab.freedesktop.org/libdecor/libdecor/-/archive/0.2.0/libdecor-0.2.0.tar.bz2
 https://gitlab.freedesktop.org/libdecor/libdecor/-/archive/0.2.1/libdecor-0.2.1.tar.bz2
 https://gitlab.freedesktop.org/libdecor/libdecor/-/archive/0.2.2/libdecor-0.2.2.tar.bz2
+https://gitlab.freedesktop.org/libdecor/libdecor/-/archive/0.2.3/libdecor-0.2.3.tar.bz2
 https://gitlab.freedesktop.org/libfprint/libfprint/-/archive/v1.94.5/libfprint-v1.94.5.tar.bz2
 https://gitlab.freedesktop.org/libfprint/libfprint/-/archive/v1.94.7/libfprint-v1.94.7.tar.bz2
 https://gitlab.freedesktop.org/libfprint/libfprint/-/archive/v1.94.8/libfprint-v1.94.8.tar.bz2
@@ -4557,6 +4572,7 @@ https://gitlab.gnome.org/GNOME/libxml2/-/archive/v2.13.5/libxml2-v2.13.5.tar.bz2
 https://gitlab.gnome.org/GNOME/libxml2/-/archive/v2.13.7/libxml2-v2.13.7.tar.bz2
 https://gitlab.gnome.org/GNOME/libxml2/-/archive/v2.14.1/libxml2-v2.14.1.tar.bz2
 https://gitlab.gnome.org/GNOME/libxml2/-/archive/v2.14.2/libxml2-v2.14.2.tar.bz2
+https://gitlab.gnome.org/GNOME/libxml2/-/archive/v2.14.3/libxml2-v2.14.3.tar.bz2
 https://gitlab.gnome.org/GNOME/libxslt/-/archive/v1.1.38/libxslt-v1.1.38.tar.bz2
 https://gitlab.gnome.org/GNOME/libxslt/-/archive/v1.1.39/libxslt-v1.1.39.tar.bz2
 https://gitlab.gnome.org/GNOME/libxslt/-/archive/v1.1.40/libxslt-v1.1.40.tar.bz2
