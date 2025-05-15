@@ -1,7 +1,7 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block version %}
-1.5.1
+1.7.0
 {% endblock %}
 
 {% block pkg_name %}
@@ -10,11 +10,12 @@ kanshi
 
 {% block fetch %}
 https://git.sr.ht/~emersion/kanshi/archive/v{{self.version().strip()}}.tar.gz
-sha:d403d2a99170261baa6606336724bc9721f779dc39294d2e088745d7bd41f427
+sha:d35b2a0b41a36cc55066320ae7ae5b176450546a4ed67ee09e7241ecd36bfc73
 {% endblock %}
 
 {% block bld_libs %}
 lib/c
+lib/scfg
 lib/varlink
 lib/wayland
 {% endblock %}
