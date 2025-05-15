@@ -11,5 +11,5 @@ int main() {
     setsid();
     setpgid(0, 0);
 
-    return execve("/etc/rc", (char *[]){ "rc", 0 }, (char *[]){ 0 });
+    return execve("/bin/rc", (char *[]){ "rc", 0 }, (char *[]){ 0 });
 }
