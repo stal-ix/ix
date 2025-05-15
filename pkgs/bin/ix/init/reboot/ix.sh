@@ -5,7 +5,7 @@ lib/c
 {% endblock %}
 
 {% block name %}
-init
+reboot
 {% endblock %}
 
 {% block sources %}

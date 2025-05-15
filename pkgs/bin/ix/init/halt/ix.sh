@@ -5,7 +5,7 @@ lib/c
 {% endblock %}
 
 {% block name %}
-init
+halt
 {% endblock %}
 
 {% block sources %}
