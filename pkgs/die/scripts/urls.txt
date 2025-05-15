@@ -2661,6 +2661,7 @@ https://github.com/kovidgoyal/kitty/archive/refs/tags/v0.25.0.tar.gz
 https://github.com/kovidgoyal/kitty/archive/refs/tags/v0.31.0.tar.gz
 https://github.com/kraxarn/spotify-qt/archive/refs/tags/v3.12.tar.gz
 https://github.com/kraxarn/spotify-qt/archive/refs/tags/v3.9.tar.gz
+https://github.com/kraxarn/spotify-qt/archive/refs/tags/v4.0.0.tar.gz
 https://github.com/kristapsdz/lowdown/archive/refs/tags/VERSION_1_0_2.tar.gz
 https://github.com/kristapsdz/lowdown/archive/refs/tags/VERSION_1_1_0.tar.gz
 https://github.com/kristapsdz/lowdown/archive/refs/tags/VERSION_1_1_1.tar.gz
@@ -2875,6 +2876,7 @@ https://github.com/libxmp/libxmp/archive/refs/tags/libxmp-4.6.0.tar.gz
 https://github.com/libxmp/libxmp/archive/refs/tags/libxmp-4.6.2.tar.gz
 https://github.com/libxmp/libxmp/archive/refs/tags/libxmp-4.6.3.tar.gz
 https://github.com/limine-bootloader/limine/releases/download/v5.20230801.0/limine-5.20230801.0.tar.xz
+https://github.com/limine-bootloader/limine/releases/download/v9.3.0/limine-9.3.0.tar.xz
 https://github.com/linux-nvme/libnvme/archive/refs/tags/v1.10.tar.gz
 https://github.com/linux-nvme/libnvme/archive/refs/tags/v1.11.1.tar.gz
 https://github.com/linux-nvme/libnvme/archive/refs/tags/v1.11.tar.gz
@@ -3036,6 +3038,7 @@ https://github.com/mheily/libkqueue/archive/refs/tags/v2.6.1.tar.gz
 https://github.com/microsoft/GSL/archive/refs/tags/v4.0.0.tar.gz
 https://github.com/microsoft/GSL/archive/refs/tags/v4.2.0.tar.gz
 https://github.com/microsoft/cascadia-code/archive/refs/tags/v2404.23.tar.gz
+https://github.com/microsoft/cascadia-code/archive/refs/tags/v2407.24.tar.gz
 https://github.com/microsoft/mimalloc/archive/refs/tags/v1.7.6.tar.gz
 https://github.com/microsoft/mimalloc/archive/refs/tags/v1.8.2.tar.gz
 https://github.com/microsoft/mimalloc/archive/refs/tags/v1.8.9.tar.gz
