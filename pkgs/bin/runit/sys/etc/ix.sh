@@ -1,37 +1,11 @@
 {% extends '//die/gen.sh' %}
 
 {% block install %}
-cd ${out}; mkdir bin; cd bin
+cd ${out}
 
-cat << EOF > halt
-#!/bin/sh
-sync
-sync
-exec runit-init 0
-EOF
+mkdir fix
 
-chmod +x halt
-
-cat << EOF > reboot
-#!/bin/sh
-sync
-sync
-exec runit-init 6
-EOF
-
-chmod +x reboot
-
-cat << EOF > init
-#!/bin/sh
-export PATH=/bin
-exec chpst -0 -1 -2 runit
-EOF
-
-chmod +x init
-
-cd ..
-
-mkdir fix; base64 -d << EOF > fix/00-run1.sh
+base64 -d << EOF > fix/00-run1.sh
 {% include 'run1.sh/base64' %}
 EOF
 
