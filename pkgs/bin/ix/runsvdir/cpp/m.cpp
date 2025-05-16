@@ -99,7 +99,9 @@ namespace {
         void run() {
             while (true) {
                 try {
-                    step();
+                    do {
+                        step();
+                    } while (getpid() == 1 && killStale() > 0);
                 } catch (...) {
                     log("step error " + currentException());
                 }
@@ -147,12 +149,6 @@ namespace {
                     log("complete " + std::to_string(pid));
                 } else {
                     log("unknown pid " + std::to_string(pid));
-                }
-            }
-
-            if (getpid() == 1) {
-                while (killStale() > 0) {
-                    log("retry stale cycle");
                 }
             }
         }
