@@ -1,6 +1,6 @@
 {% extends '//die/c/make.sh' %}
 
-{% include '//bin/kernel/6/13/ver.sh' %}
+{% include '//bin/kernel/6/14/ver.sh' %}
 
 {% block fetch %}
 {{self.kernel_url().strip()}}

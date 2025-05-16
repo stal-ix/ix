@@ -76,7 +76,6 @@ bin/contour
 bin/nix
 bin/coreutils/9/6
 bin/inkscape
-bin/kernel/6/13
 bin/gdb/16
 bin/gdb/15
 bin/ddc/util
@@ -154,7 +153,6 @@ bin/dino
 bin/vala
 bin/vala/bootstrap
 bin/clapper
-bin/kernel/6/11
 bin/nftables
 bin/bpf/tool
 bin/gdb/14

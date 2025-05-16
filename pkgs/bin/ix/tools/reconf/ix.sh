@@ -1,5 +1,6 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
-bin/ya/bootstrap/4
+set/menuconfig
+bin/ix/tools/reconf/scripts
 {% endblock %}
