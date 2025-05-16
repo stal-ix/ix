@@ -1,11 +1,13 @@
 {% extends '//die/c/cmake.sh' %}
 
+# check bin/ananicy
+
 {% block pkg_name %}
 ananicy-cpp
 {% endblock %}
 
 {% block version %}
-1.0.2
+1.1.1
 {% endblock %}
 
 {% block git_repo %}
@@ -17,7 +19,7 @@ v{{self.version().strip()}}
 {% endblock %}
 
 {% block git_sha %}
-647783ec95e2fcd78bc55fb679b1e9c3ea62824c4690e3df238e8913af9fc8ca
+e0e110890778f7bbe756e8d93c0f7b8b95af3f224f5e3b15bb477d7f48235916
 {% endblock %}
 
 {% block bld_libs %}

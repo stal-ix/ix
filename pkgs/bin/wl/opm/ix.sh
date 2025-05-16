@@ -1,7 +1,7 @@
 {% extends '//die/c/make.sh' %}
 
 {% block version %}
-0.1.0
+1.0.0
 {% endblock %}
 
 {% block pkg_name %}
@@ -10,7 +10,7 @@ wlopm
 
 {% block fetch %}
 https://git.sr.ht/~leon_plickat/wlopm/archive/v{{self.version().strip()}}.tar.gz
-sha:f9a7ec03a412e602420ab11d0eea872f6d30dfe5cfee93cd3d0289e4fbbb3aa1
+sha:15f31bbd855131943397dded3a26003f2f5056e4c6a1a93d35ff7697b3f1e439
 {% endblock %}
 
 {% block bld_libs %}
@@ -24,4 +24,9 @@ bld/wayland
 
 {% block build_flags %}
 shut_up
+{% endblock %}
+
+{% block install %}
+mkdir -p ${out}/share/bash-completion/completions/wlopm
+{{super()}}
 {% endblock %}

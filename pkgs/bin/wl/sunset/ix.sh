@@ -1,7 +1,7 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block version %}
-0.2.0
+0.4.0
 {% endblock %}
 
 {% block pkg_name %}
@@ -10,7 +10,7 @@ wlsunset
 
 {% block fetch %}
 https://git.sr.ht/~kennylevinsen/wlsunset/archive/{{self.version().strip()}}.tar.gz
-sha:88bce695722a09d79545f14d404cc0659f7176bb08d5db5f4f23228b6ba8bb03
+sha:a86ffb1793fe622802ec25795b69df864715986ecc175f7734e739c9e264ed72
 {% endblock %}
 
 {% block bld_libs %}

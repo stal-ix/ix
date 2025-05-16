@@ -5,10 +5,10 @@ intel-one-mono
 {% endblock %}
 
 {% block version %}
-1.2.1
+1.4.0
 {% endblock %}
 
 {% block fetch %}
 https://github.com/intel/intel-one-mono/releases/download/V{{self.version().strip()}}/otf.zip
-sha:44127021492601921168811653115995131f15350574b6c708c4646a0534814d
+sha:74ef8ee667403c760745bc12fc5e2cb1684544194fad3d5340919c173a8227fc
 {% endblock %}

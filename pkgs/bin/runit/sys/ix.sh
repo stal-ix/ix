@@ -2,5 +2,6 @@
 
 {% block run_deps %}
 bin/runit
-bin/runit/sys/scripts
+bin/runit/sys/bin
+bin/runit/sys/etc
 {% endblock %}

@@ -5,12 +5,12 @@ RHash
 {% endblock %}
 
 {% block version %}
-1.4.5
+1.4.6
 {% endblock %}
 
 {% block fetch %}
 https://github.com/rhash/RHash/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:6db837e7bbaa7c72c5fd43ca5af04b1d370c5ce32367b9f6a1f7b49b2338c09a
+sha:9f6019cfeeae8ace7067ad22da4e4f857bb2cfa6c2deaa2258f55b2227ec937a
 {% endblock %}
 
 {% block lib_deps %}

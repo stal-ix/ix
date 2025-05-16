@@ -31,10 +31,4 @@ for name in sorted(data.keys()):
     new = get_new_ver(rec)
 
     if old and new:
-        rold = old.split('.')
-        rnew = new.split('.')
-
-        if len(rold) > 1 and rold[0] != rnew[0]:
-            print(f'skip {name} {old} {new}', file=sys.stderr)
-        else:
-            print(f'{old} {new} ' + ' '.join(get_pkgs(rec)))
+        print(f'{old} {new} ' + ' '.join(get_pkgs(rec)))
