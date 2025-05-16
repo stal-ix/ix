@@ -154,7 +154,6 @@ bin/dino
 bin/vala
 bin/vala/bootstrap
 bin/clapper
-bin/kernel/6/11
 bin/nftables
 bin/bpf/tool
 bin/gdb/14
