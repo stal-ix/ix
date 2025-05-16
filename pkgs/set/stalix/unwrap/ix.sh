@@ -14,7 +14,7 @@ bin/acpi/d/runit
 set/stalix/dev/{{dev_mngr or 'fs'}}
 
 bin/ix
-bin/ix/init
+bin/runit/sys
 bin/dbus/runit
 bin/dhcpcd/runit
 bin/openresolv/runit

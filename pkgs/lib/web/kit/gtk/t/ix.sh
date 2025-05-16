@@ -9,8 +9,6 @@ webkitgtk
 {% endblock %}
 
 {% block fetch %}
-#https://webkitgtk.org/releases/webkitgtk-2.46.5.tar.xz
-#sha:bad4020bb0cfb3e740df3082c2d9cbf67cf4095596588a56aecdde6702137805
 https://webkitgtk.org/releases/webkitgtk-{{self.version().strip()}}.tar.xz
 sha:98efdf21c4cdca0fe0b73ab5a8cb52093b5aa52d9b1b016a93f71dbfa1eb258f
 {% endblock %}
