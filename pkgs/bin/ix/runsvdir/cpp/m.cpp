@@ -159,12 +159,12 @@ namespace {
 
         unsigned int killStale() {
             unsigned int stale = 0;
-            auto childs = readf("/proc/thread-self/children");
+            auto childs = readf("/proc/1/task/1/children");
 
             std::stringstream ss(childs);
             std::string item;
 
-            while (std::getline(ss, item, '\n')) {
+            while (std::getline(ss, item, ' ')) {
                 auto pid = std::stol(item);
 
                 if (pids.find(pid) == pids.end()) {
