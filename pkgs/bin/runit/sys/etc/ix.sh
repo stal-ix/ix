@@ -43,7 +43,7 @@ exec 2>&1
 set -x
 cat /var/log/boot
 rm -rf /var/log
-exec runsvdir -P /etc/services
+exec pid1
 EOF
 
 cat << EOF > 3

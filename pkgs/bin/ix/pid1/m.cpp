@@ -176,14 +176,6 @@ namespace {
     };
 }
 
-int main(int argc, char** argv) {
-    if (argc < 3) {
-        abort();
-    }
-
-    if (!argv[2]) {
-        abort();
-    }
-
-    Context(argv[2]).run();
+int main() {
+    Context("/etc/services").run();
 }

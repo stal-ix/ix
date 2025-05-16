@@ -7,7 +7,7 @@ lib/xxhash
 {% endblock %}
 
 {% block name %}
-runsvdir
+pid1
 {% endblock %}
 
 {% block cxx_flags %}
