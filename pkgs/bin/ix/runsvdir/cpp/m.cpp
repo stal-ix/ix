@@ -149,6 +149,32 @@ namespace {
                     log("unknown pid " + std::to_string(pid));
                 }
             }
+
+            if (getpid() == 1) {
+                while (killStale() > 0) {
+                    log("retry stale cycle");
+                }
+            }
+        }
+
+        unsigned int killStale() {
+            unsigned int stale = 0;
+            auto childs = readf("/proc/thread-self/children");
+
+            std::stringstream ss(childs);
+            std::string item;
+
+            while (std::getline(ss, item, '\n')) {
+                auto pid = std::stol(item);
+
+                if (pids.find(pid) == pids.end()) {
+                    ++stale;
+                    log("stale pid " + std::to_string(pid));
+                    kill(pid, SIGKILL);
+                }
+            }
+
+            return stale;
         }
     };
 }
