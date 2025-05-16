@@ -99,7 +99,10 @@ namespace {
         void run() {
             while (true) {
                 try {
-                    step();
+                    do {
+                        step();
+                        usleep(10000);
+                    } while (getpid() == 1 && killStale() > 0);
                 } catch (...) {
                     log("step error " + currentException());
                 }
@@ -140,7 +143,7 @@ namespace {
                 }
             }
 
-            for (int pid = wait_pid(); pid  > 0; pid = wait_pid()) {
+            for (int pid = wait_pid(); pid > 0; pid = wait_pid()) {
                 if (auto it = pids.find(pid); it != pids.end()) {
                     running.erase(it->second);
                     pids.erase(it);
@@ -149,22 +152,16 @@ namespace {
                     log("unknown pid " + std::to_string(pid));
                 }
             }
-
-            if (getpid() == 1) {
-                while (killStale() > 0) {
-                    log("retry stale cycle");
-                }
-            }
         }
 
         unsigned int killStale() {
             unsigned int stale = 0;
-            auto childs = readf("/proc/thread-self/children");
+            auto childs = readf("/proc/1/task/1/children");
 
             std::stringstream ss(childs);
             std::string item;
 
-            while (std::getline(ss, item, '\n')) {
+            while (std::getline(ss, item, ' ')) {
                 auto pid = std::stol(item);
 
                 if (pids.find(pid) == pids.end()) {
