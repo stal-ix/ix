@@ -3,5 +3,5 @@
 {% include 'ver.sh' %}
 
 {% block kernel_flags %}
-{% include '//bin/kernel/configs/cfg_6_12' %}
+{% include '//bin/kernel/configs/cfg_6_14' %}
 {% endblock %}
