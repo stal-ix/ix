@@ -76,7 +76,6 @@ bin/contour
 bin/nix
 bin/coreutils/9/6
 bin/inkscape
-bin/kernel/6/13
 bin/gdb/16
 bin/gdb/15
 bin/ddc/util
