@@ -143,7 +143,7 @@ namespace {
                 }
             }
 
-            for (int pid = wait_pid(); pid  > 0; pid = wait_pid()) {
+            for (int pid = wait_pid(); pid > 0; pid = wait_pid()) {
                 if (auto it = pids.find(pid); it != pids.end()) {
                     running.erase(it->second);
                     pids.erase(it);
