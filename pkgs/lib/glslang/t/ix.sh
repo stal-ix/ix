@@ -20,8 +20,8 @@ bld/python
 
 {% block lib_deps %}
 lib/c
-lib/vulkan/spirv/tools
-lib/vulkan/spirv/headers
+lib/spirv/tools
+lib/spirv/headers
 {% endblock %}
 
 {% block cmake_flags %}

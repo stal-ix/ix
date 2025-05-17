@@ -85,7 +85,7 @@ bin/ya
 bin/gg
 bin/deya
 bin/ip/traf/ng
-bin/ix/pid1
+bin/ix/init
 bin/kernel/6/12
 bin/lzfse
 bin/uncrustify

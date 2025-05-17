@@ -11,7 +11,7 @@ lib/clc
 lib/kernel
 lib/llvm/19
 bin/llvm/spirv
-lib/vulkan/spirv/tools
+lib/spirv/tools
 {% endblock %}
 
 {% block bld_tool %}

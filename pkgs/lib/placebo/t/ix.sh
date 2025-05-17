@@ -10,8 +10,8 @@ lib/shaderc
 lib/execinfo
 lib/vulkan/loader
 lib/vulkan/headers
-lib/vulkan/spirv/tools
-lib/vulkan/spirv/headers
+lib/spirv/tools
+lib/spirv/headers
 {% endblock %}
 
 {% block bld_libs %}
