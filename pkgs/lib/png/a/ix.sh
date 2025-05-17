@@ -5,14 +5,14 @@ libpng-apng
 {% endblock %}
 
 {% block version %}
-1.6.43
+1.6.48
 {% endblock %}
 
 {% block fetch %}
 https://github.com/glennrp/libpng/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:fecc95b46cf05e8e3fc8a414750e0ba5aad00d89e9fdf175e94ff041caf1a03a
+sha:b17e99026055727e8cba99160c3a9a7f9af788e9f786daeadded5a42243f1dd0
 https://downloads.sourceforge.net/project/libpng-apng/libpng16/{{self.version().strip()}}/libpng-{{self.version().strip()}}-apng.patch.gz
-sha:d107579e90d55386d00e6086ea750942f22a04b9ab476bba0c660770cefafe22
+sha:b68e523146dc326d6fd3cd49d55f9ca2d73f4a4d6e3d0f095bcc8988ffe8db2b
 {% endblock %}
 
 {% block unpack %}
