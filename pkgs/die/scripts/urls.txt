@@ -5205,6 +5205,8 @@ https://www.ivarch.com/programs/sources/pv-1.9.7.tar.gz
 https://www.jedsoft.org/releases/jed/jed-0.99-19.tar.bz2
 https://www.jedsoft.org/releases/most/most-5.2.0.tar.gz
 https://www.jedsoft.org/releases/slang/slang-2.3.3.tar.bz2
+https://www.kernel.org/pub/linux/kernel/firmware/linux-firmware-20220209.tar.xz
+https://www.kernel.org/pub/linux/kernel/firmware/linux-firmware-20240312.tar.xz
 https://www.kernel.org/pub/linux/kernel/people/kdave/btrfs-progs/btrfs-progs-v6.10.1.tar.xz
 https://www.kernel.org/pub/linux/kernel/people/kdave/btrfs-progs/btrfs-progs-v6.10.tar.xz
 https://www.kernel.org/pub/linux/kernel/people/kdave/btrfs-progs/btrfs-progs-v6.11.tar.xz
