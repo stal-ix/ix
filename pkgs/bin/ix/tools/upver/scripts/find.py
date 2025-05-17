@@ -11,6 +11,6 @@ for a, b, c in os.walk('.'):
                 data = f.read()
 
             if '://' in data:
-                if 'pkg_name' not in data:
+                if 'pkg_name' not in data or 'version' not in data:
                     if 'git_commit' not in data:
                         print(pp)
