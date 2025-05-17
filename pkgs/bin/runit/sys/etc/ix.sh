@@ -43,15 +43,10 @@ exec 2>&1
 set -x
 cat /var/log/boot
 rm -rf /var/log
-exec runsvdir -P /etc/services
+exec pid1
 EOF
 
-cat << EOF > 3
-#!/bin/sh
-mount -o remount,ro /
-EOF
-
-chmod +x 2 3
+chmod +x 2
 
 mkdir 1.d; cd 1.d
 

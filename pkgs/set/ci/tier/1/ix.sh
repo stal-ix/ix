@@ -12,7 +12,6 @@
 bin/amd/gpu/top
 bin/u/utils
 bin/cargo/whatfeatures
-bin/ix/runsvdir/rust
 bin/greetd
 bin/impala
 bin/just

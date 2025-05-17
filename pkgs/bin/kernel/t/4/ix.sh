@@ -5,10 +5,6 @@
 {{self.kernel_sha().strip()}}
 {% endblock %}
 
-{% block bld_libs %}
-lib/firmware/full
-{% endblock %}
-
 {% block amd_gpu %}
 amdgpu/cyan_skillfish2_sdma.bin
 amdgpu/arcturus_asd.bin

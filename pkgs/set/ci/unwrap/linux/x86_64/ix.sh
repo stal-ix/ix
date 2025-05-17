@@ -85,8 +85,7 @@ bin/ya
 bin/gg
 bin/deya
 bin/ip/traf/ng
-bin/ix/runsvdir/cpp
-bin/ix/runsvdir/python
+bin/ix/pid1
 bin/kernel/6/12
 bin/lzfse
 bin/uncrustify

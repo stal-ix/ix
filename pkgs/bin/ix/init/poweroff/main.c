@@ -4,5 +4,5 @@
 int main() {
     sync();
     sync();
-    reboot(RB_HALT_SYSTEM);
+    reboot(RB_POWER_OFF);
 }

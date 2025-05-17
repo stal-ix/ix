@@ -101,6 +101,7 @@ namespace {
                 try {
                     do {
                         step();
+                        waitPending();
                         usleep(10000);
                     } while (getpid() == 1 && killStale() > 0);
                 } catch (...) {
@@ -142,7 +143,9 @@ namespace {
                     proc->terminate();
                 }
             }
+        }
 
+        void waitPending() {
             for (int pid = wait_pid(); pid > 0; pid = wait_pid()) {
                 if (auto it = pids.find(pid); it != pids.end()) {
                     running.erase(it->second);
@@ -176,14 +179,6 @@ namespace {
     };
 }
 
-int main(int argc, char** argv) {
-    if (argc < 3) {
-        abort();
-    }
-
-    if (!argv[2]) {
-        abort();
-    }
-
-    Context(argv[2]).run();
+int main() {
+    Context("/etc/services").run();
 }
