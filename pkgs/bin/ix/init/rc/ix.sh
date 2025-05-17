@@ -7,11 +7,8 @@ cd bin
 cat << EOF > rc
 #!/bin/sh
 export PATH=/bin
-if /etc/runit/1; then
-    exec /etc/runit/2
-else
-    exec /etc/runit/3
-fi
+/etc/runit/1
+exec /etc/runit/2
 EOF
 chmod +x *
 {% endblock %}

@@ -46,12 +46,7 @@ rm -rf /var/log
 exec pid1
 EOF
 
-cat << EOF > 3
-#!/bin/sh
-exec /bin/sh
-EOF
-
-chmod +x 2 3
+chmod +x 2
 
 mkdir 1.d; cd 1.d
 
