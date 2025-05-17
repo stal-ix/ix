@@ -24,6 +24,10 @@ cat << EOF > etc/sysctl.d/swap.conf
 vm.swappiness = 10
 EOF
 
+cat << EOF > etc/sysctl.d/maxpid.conf
+kernel.pid_max = 4194304
+EOF
+
 {# https://github.com/quic-go/quic-go/wiki/UDP-Buffer-Sizes #}
 cat << EOF > etc/sysctl.d/quic.conf
 net.core.rmem_max = 2500000
