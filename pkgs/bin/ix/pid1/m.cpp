@@ -66,7 +66,7 @@ namespace {
     }
 
     struct Proc {
-        int pid;
+        pid_t pid;
 
         Proc(const std::string& p) {
             char* cmd[] = {
@@ -89,7 +89,7 @@ namespace {
     struct Context {
         const std::string where;
         std::map<ProcID, std::shared_ptr<Proc>> running;
-        std::map<uint32_t, ProcID> pids;
+        std::map<pid_t, ProcID> pids;
 
         Context(const std::string& where_)
             : where(where_)
@@ -146,7 +146,7 @@ namespace {
         }
 
         void waitPending() {
-            for (int pid = wait_pid(); pid > 0; pid = wait_pid()) {
+            for (auto pid = wait_pid(); pid > 0; pid = wait_pid()) {
                 if (auto it = pids.find(pid); it != pids.end()) {
                     running.erase(it->second);
                     pids.erase(it);
