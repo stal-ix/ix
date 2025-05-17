@@ -20,14 +20,14 @@ lib/wayland
 lib/robin/hood
 lib/vulkan/headers
 lib/vulkan/utility
-lib/vulkan/spirv/headers
-lib/vulkan/spirv/tools
+lib/spirv/headers
+lib/spirv/tools
 {% endblock %}
 
 {% block bld_tool %}
 bld/python
 bld/pkg/config
-lib/vulkan/spirv/tools
+lib/spirv/tools
 {% endblock %}
 
 {% block cmake_flags %}

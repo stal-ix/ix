@@ -17,8 +17,8 @@ sha:b53f74299ee44e4052a004196dc2bd1bb587f430028a668631fea06ed2b2253c
 lib/c
 lib/c++
 lib/llvm/19
-lib/vulkan/spirv/tools
-lib/vulkan/spirv/headers
+lib/spirv/tools
+lib/spirv/headers
 {% endblock %}
 
 {% block bld_tool %}

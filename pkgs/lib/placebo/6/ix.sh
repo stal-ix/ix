@@ -16,7 +16,7 @@ sha:2f1e624e09d72a8c9db70f910f7560e764a1c126dae42acc5b3bcef836a7aec6
 {% block lib_deps %}
 lib/xxhash
 lib/fast/float
-lib/vulkan/spirv/cross
+lib/spirv/cross
 {{super()}}
 {% endblock %}
 

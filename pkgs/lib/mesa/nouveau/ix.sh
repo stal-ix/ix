@@ -3,7 +3,7 @@
 {% block bld_libs %}
 {{super()}}
 lib/clc
-lib/vulkan/spirv/llvm/translator
+lib/spirv/llvm/translator
 {% endblock %}
 
 {% block bld_tool %}

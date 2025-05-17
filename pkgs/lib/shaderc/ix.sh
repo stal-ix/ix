@@ -17,8 +17,8 @@ sha:3fddc13bbb87411c6f7b8f447e87c1637933450087e70fc21da650041f4e0132
 lib/c
 lib/c++
 lib/glslang
-lib/vulkan/spirv/tools
-lib/vulkan/spirv/headers
+lib/spirv/tools
+lib/spirv/headers
 {% endblock %}
 
 {% block bld_tool %}

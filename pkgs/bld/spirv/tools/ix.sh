@@ -1,1 +1,1 @@
-{% extends '//lib/vulkan/spirv/tools/ix.sh' %}
+{% extends '//lib/spirv/tools/ix.sh' %}
