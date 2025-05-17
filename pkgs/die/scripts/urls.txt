@@ -543,6 +543,7 @@ https://downloads.sourceforge.net/project/infozip/UnZip%206.x%20%28latest%29/UnZ
 https://downloads.sourceforge.net/project/lame/lame/3.100/lame-3.100.tar.gz
 https://downloads.sourceforge.net/project/libb64/libb64/libb64/libb64-1.2.src.zip
 https://downloads.sourceforge.net/project/libpng-apng/libpng16/1.6.43/libpng-1.6.43-apng.patch.gz
+https://downloads.sourceforge.net/project/libpng-apng/libpng16/1.6.48/libpng-1.6.48-apng.patch.gz
 https://downloads.sourceforge.net/project/libwpd/librevenge/librevenge-0.0.4/librevenge-0.0.4.tar.xz
 https://downloads.sourceforge.net/project/libwpd/librevenge/librevenge-0.0.5/librevenge-0.0.5.tar.xz
 https://downloads.sourceforge.net/project/libwpd/libwpd/libwpd-0.10.3/libwpd-0.10.3.tar.xz
@@ -2195,6 +2196,7 @@ https://github.com/glennrp/libpng/archive/refs/tags/v1.6.41.tar.gz
 https://github.com/glennrp/libpng/archive/refs/tags/v1.6.42.tar.gz
 https://github.com/glennrp/libpng/archive/refs/tags/v1.6.43.tar.gz
 https://github.com/glennrp/libpng/archive/refs/tags/v1.6.44.tar.gz
+https://github.com/glennrp/libpng/archive/refs/tags/v1.6.48.tar.gz
 https://github.com/glfw/glfw/archive/refs/tags/3.3.10.tar.gz
 https://github.com/glfw/glfw/archive/refs/tags/3.3.8.tar.gz
 https://github.com/glfw/glfw/archive/refs/tags/3.3.9.tar.gz
