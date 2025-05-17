@@ -32,6 +32,7 @@ bld/rust/helpers/patch/bindgen
 
 {% block patch %}
 {{super()}}
+ln -s vendored/clang-sys ./
 patch_bindgen .
 {% endblock %}
 
