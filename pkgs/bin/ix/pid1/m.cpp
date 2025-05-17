@@ -101,6 +101,7 @@ namespace {
                 try {
                     do {
                         step();
+                        waitPending();
                         usleep(10000);
                     } while (getpid() == 1 && killStale() > 0);
                 } catch (...) {
@@ -142,7 +143,9 @@ namespace {
                     proc->terminate();
                 }
             }
+        }
 
+        void waitPending() {
             for (int pid = wait_pid(); pid > 0; pid = wait_pid()) {
                 if (auto it = pids.find(pid); it != pids.end()) {
                     running.erase(it->second);
