@@ -6,8 +6,12 @@ sha:1b0da12d0bdaca6f17da4355422e45d393213ba03f183d2bf29e1b695cac8345
 {% endblock %}
 
 {% block lib_deps %}
-lib/c
-lib/c++
+lib/reallocarray
+lib/c++/dispatch
+{% endblock %}
+
+{% block bld_libs %}
+lib/c/naked
 {% endblock %}
 
 {% block unpack %}
