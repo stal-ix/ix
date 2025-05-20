@@ -5,6 +5,12 @@ libGLESv2.so
 libEGL.so
 {% endblock %}
 
+{% block bld_tool %}
+bin/wayland/scanner
+bld/wrapcc/link/exe/host
+{{super()}}
+{% endblock %}
+
 {% block install %}
 mkdir ${out}/lib
 cp ${tmp}/lib/*.a ${out}/lib/
@@ -28,8 +34,9 @@ export ANGLE_DIR=${out}/lib
 
 {% block patch %}
 {{super()}}
->third_party/wayland/src/src/wayland-client.c
->third_party/wayland/src/src/wayland-server.c
+find third_party/wayland/src -type f -name '*.c' | while read l; do
+    echo > ${l}
+done
 {% endblock %}
 
 {% block c_rename_symbol %}

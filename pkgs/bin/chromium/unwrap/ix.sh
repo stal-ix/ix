@@ -90,6 +90,7 @@ bld/bison
 bin/brotli
 bin/nodejs
 bld/prepend
+bld/wayland
 bld/de/bloat
 bld/devendor
 bld/elfutils
