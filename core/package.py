@@ -97,6 +97,7 @@ ONE_LEVEL = (
     'nostrip',
     'simulate_failure',
     'show_script',
+    'skipsrc_one',
 )
 
 

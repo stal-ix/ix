@@ -54,7 +54,7 @@ cleanup_f() {
 {% if simulate_failure %}
     exit 1
 {% endif %}
-{% if not skipsrc %}
+{% if not skipsrc and not skipsrc_one %}
     fast_rm 3 ${tmp}
 {% endif %}
 }
