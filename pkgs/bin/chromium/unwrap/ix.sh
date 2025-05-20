@@ -84,7 +84,6 @@ lib/shim/fake/pkg(pkg_name=dri,pkg_ver=100500,pkg_extra=dridriverdir: /nowhere)
 {% block bld_tool %}
 bin/gzip
 bld/flex
-bin/gperf
 bld/bison
 bin/brotli
 bin/nodejs
@@ -92,6 +91,7 @@ bld/prepend
 bld/de/bloat
 bld/devendor
 bld/elfutils
+bin/gperf/prev
 {% endblock %}
 
 {% block cxx_flags %}
