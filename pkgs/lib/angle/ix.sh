@@ -1,19 +1,21 @@
 {% extends '//die/c/gn.sh' %}
 
-{% block pkg_name %}
-chromium
+{% block git_repo %}
+https://github.com/google/angle
 {% endblock %}
 
-{% block version %}
-115.0.5790.90
+{% block git_commit %}
+dcbcee8ab32af9ddc7ae1e91c42d995e5281602c
 {% endblock %}
 
-{% block fetch %}
-https://commondatastorage.googleapis.com/chromium-browser-official/chromium-{{self.version().strip()}}.tar.xz
-sha:82e802bcd2ae8d575d7fda9ec82db83d04d5453e9304cb482644f629232bd394
+{% block git_sha %}
+b1f884f1fcf87bfe168a4f1d734eb68c1884d28f6b413f783325dda6a57bfb1e
 {% endblock %}
 
-{% block task_pool %}full{% endblock %}
+{% block git_hook_1 %}
+git rm third_party/gles1_conform
+git rm third_party/dawn
+{% endblock %}
 
 {% block bld_libs %}
 lib/c
@@ -22,11 +24,6 @@ lib/c++
 
 {% block build_flags %}
 wrap_cc
-{% endblock %}
-
-{% block step_unpack %}
-{{super()}}
-cd third_party/angle
 {% endblock %}
 
 {% block gn_args %}

@@ -26,9 +26,22 @@ bld/pzd/des
 {{super()}}
 {% endblock %}
 
+{% block git_hook_1 %}
+{% endblock %}
+
+{% block git_args %}
+parent_id=src_{{self.git_sha().strip()}}
+sha={{self.git_sha().strip()}}
+branch={{self.git_branch().strip()}}
+repo={{self.git_repo().strip()}}
+commit={{self.git_commit().strip()}}
+refine={{self.git_refine().strip() | b64e}}
+git_hook_1={{self.git_hook_1() | b64e}}
+{% endblock %}
+
 {% block bld_data %}
 {% if self.git_sha().strip() %}
-aux/git/{{self.git_version().strip()}}(parent_id=src_{{self.git_sha().strip()}},sha={{self.git_sha().strip()}},branch={{self.git_branch().strip()}},repo={{self.git_repo().strip()}},commit={{self.git_commit().strip()}},refine={{self.git_refine().strip() | b64e}})
+aux/git/{{self.git_version().strip()}}({{self.git_args().strip().replace('\n', ',')}})
 {% endif %}
 {{super()}}
 {% endblock %}
