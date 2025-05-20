@@ -25,3 +25,12 @@ angle_enable_glsl=false
 {% block env %}
 export ANGLE_DIR=${out}/lib
 {% endblock %}
+
+{% block patch %}
+{{super()}}
+>third_party/wayland/src/src/wayland-client.c
+>third_party/wayland/src/src/wayland-server.c
+{% endblock %}
+
+{% block c_rename_symbol %}
+{% endblock %}
