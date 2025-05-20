@@ -1,7 +1,7 @@
 {% extends '//die/gen.sh' %}
 
-{% block bld_tool %}
-bld/genpc
+{% block lib_deps %}
+lib/shim/fake/pkg(pkg_name=glew,pkg_ver=1.0.0)
 {% endblock %}
 
 {% block install %}
@@ -11,5 +11,4 @@ cat << EOF > ${out}/include/GL/glew.h
 #include <GL/gl.h>
 #define glewInit(...)
 EOF
-genpc glew "1.0.0"
 {% endblock %}
