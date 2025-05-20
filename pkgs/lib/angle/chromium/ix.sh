@@ -10,6 +10,18 @@ mkdir ${out}/lib
 cp ${tmp}/lib/*.a ${out}/lib/
 {% endblock %}
 
+{% block gn_args %}
+{{super()}}
+angle_enable_d3d9=false
+angle_enable_d3d11=false
+angle_enable_gl=false
+angle_enable_metal=false
+angle_enable_null=false
+angle_enable_vulkan=true
+angle_enable_essl=false
+angle_enable_glsl=false
+{% endblock %}
+
 {% block env %}
 export ANGLE_DIR=${out}/lib
 {% endblock %}
