@@ -6,7 +6,9 @@ lib/sndio
 lib/sdl/gl
 lib/wayland
 lib/xkb/common
+{% if vulkan %}
 lib/vulkan/loader
+{% endif %}
 {{super()}}
 {% endblock %}
 
@@ -23,7 +25,11 @@ SDL_ALSA_SHARED=OFF
 SDL_SNDIO=ON
 SDL_SNDIO_SHARED=OFF
 SDL_X11=OFF
+{% if vulkan %}
 SDL_VULKAN=ON
+{% else %}
+SDL_VULKAN=OFF
+{% endif %}
 SDL_WAYLAND=ON
 SDL_WAYLAND_SHARED=OFF
 SDL_PIPEWIRE=OFF

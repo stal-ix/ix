@@ -6,7 +6,9 @@ lib/sndio
 lib/sdl/gl
 lib/wayland
 lib/xkb/common
+{% if vulkan %}
 lib/vulkan/loader
+{% endif %}
 {{super()}}
 {% endblock %}
 
@@ -17,7 +19,11 @@ bld/wayland
 
 {% block cmake_flags %}
 {{super()}}
+{% if vulkan %}
 SDL_VULKAN=ON
+{% else %}
+SDL_VULKAN=OFF
+{% endif %}
 SDL_OSS=OFF
 SDL_ALSA=OFF
 SDL_ALSA_SHARED=OFF

@@ -15,22 +15,27 @@ sha:8bb791aed9405abc20253c570de1a3b7af91ad65bee2b60293fbbab27ea62c8d
 
 {% block lib_deps %}
 {{super()}}
+{% if vulkan %}
 lib/vulkan/loader
 lib/vulkan/headers
+{% endif %}
 {% endblock %}
 
 {% block bld_tool %}
 {{super()}}
+{% if vulkan %}
 bin/glslang
+{% endif %}
 {% endblock %}
 
 {% block patch %}
+{% if vulkan %}
 sed -e 's|unsigned layer_count.*|unsigned layer_count = 0;|' -i render/vulkan/vulkan.c
+{% endif %}
 {{super()}}
 {% endblock %}
 
 {% block meson_flags %}
 # yeah, baby
-{{super().strip()}},vulkan
 backends=drm,libinput
 {% endblock %}

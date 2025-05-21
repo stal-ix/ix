@@ -15,24 +15,35 @@ md5:7c8a3246e7ddb724bf7397a2f8f9b782
 
 {% block lib_deps %}
 lib/c
-lib/gbm
 lib/drm
 lib/udev
 lib/seat
 lib/input
-lib/opengl
 lib/pixman
 lib/wayland
 lib/xkb/common
+{% if opengl %}
+lib/gbm
+lib/opengl
+{% endif %}
 {% endblock %}
 
 {% block bld_tool %}
 bld/wayland
 {% endblock %}
 
+{% block wlr_renderers %}
+{% if opengl %}
+gles2
+{% endif %}
+{% if vulkan %}
+vulkan
+{% endif %}
+{% endblock %}
+
 {% block meson_flags %}
 xwayland=disabled
-renderers=gles2
+renderers={{self.renderers().strip().replace('\n', ',')}}
 {% endblock %}
 
 {% block c_rename_symbol %}
