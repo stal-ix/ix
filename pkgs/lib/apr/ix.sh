@@ -5,12 +5,12 @@ apr
 {% endblock %}
 
 {% block version %}
-1.7.5
+1.7.6
 {% endblock %}
 
 {% block fetch %}
 https://archive.apache.org/dist/apr/apr-{{self.version().strip()}}.tar.bz2
-sha:cd0f5d52b9ab1704c72160c5ee3ed5d3d4ca2df4a7f8ab564e3cb352b67232f2
+sha:49030d92d2575da735791b496dc322f3ce5cff9494779ba8cc28c7f46c5deb32
 {% endblock %}
 
 {% block postinstall %}
