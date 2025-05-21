@@ -107,10 +107,6 @@ devendor_c third_party/vulkan-deps/vulkan-loader
 {{super()}}
 find ${tmp}/obj -type f -name '*.ninja' | while read l; do
     sed -e 's|../../../../lib/clang/19/lib/x86_64-unknown-linux-gnu/libclang_rt.builtins.a||' \
-        -e 's|/bin/clang++|clang++|g' \
-        -e 's|/bin/clang|clang|g' \
-        -e 's|/bin/llvm-readelf|llvm-readelf|g' \
-        -e 's|/bin/llvm-nm|llvm-nm|g' \
         -e 's|-Wno-nontrivial-memcall||g' \
         -i ${l}
 done
