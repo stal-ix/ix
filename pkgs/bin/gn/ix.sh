@@ -5,11 +5,11 @@ https://gn.googlesource.com/gn
 {% endblock %}
 
 {% block git_commit %}
-4bd1a77e67958fb7f6739bd4542641646f264e5d
+cad8f67e2dd0cea00bbe4566efe2fdf4c1821563
 {% endblock %}
 
 {% block git_sha %}
-df85614c3baccb8ef74a0211dae9bd9a9fe9281d413984466aa7514e6c085ee7
+54447fb0b5080cb502f3cbd95b141c150dac96423a5542f595c76125ad39ace1
 {% endblock %}
 
 {% block bld_libs %}
