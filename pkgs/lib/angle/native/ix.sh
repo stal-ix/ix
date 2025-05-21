@@ -18,6 +18,7 @@ git rm third_party/dawn
 {% endblock %}
 
 {% block bld_tool %}
+bld/devendor
 bld/fake/binutils
 {% endblock %}
 
@@ -68,6 +69,9 @@ use_static_angle=true
 use_x11=false
 ozone_platform_x11=false
 vulkan_use_x11=false
+ozone_platform="wayland"
+angle_use_custom_libvulkan=false
+angle_shared_libvulkan=false
 {% endblock %}
 
 {% block ninja_build_targets %}
@@ -95,6 +99,8 @@ find third_party/wayland/src -type f -name '*.c' | while read l; do
 done
 sed -e 's|directory + libraryName|libraryName|' \
     -i src/common/system_utils_posix.cpp
+devendor_c third_party/vulkan-loader
+devendor_c third_party/vulkan-deps/vulkan-loader
 {% endblock %}
 
 {% block configure %}
