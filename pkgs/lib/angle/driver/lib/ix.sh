@@ -15,7 +15,7 @@ bld/librarian
 {% endblock %}
 
 {% block bld_libs %}
-lib/angle(libopenssl_ver=fake,libcurl_ver=lite)
+lib/angle
 {% endblock %}
 
 {% block install %}
