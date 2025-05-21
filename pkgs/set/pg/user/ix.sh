@@ -13,7 +13,6 @@ bin/grim
 bin/wget
 bin/curl
 bin/htop
-bin/niri
 bin/bash
 bin/less
 set/debug
@@ -34,6 +33,7 @@ bin/fontconfig
 bin/brightnessctl
 set/pg/user/scripts
 bin/coreutils/uutils
+bin/niri(opengl=mesa/aco,vulkan=mesa/aco)
 {% endblock %}
 
 {% block run_data %}
