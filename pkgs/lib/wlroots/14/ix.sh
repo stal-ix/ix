@@ -16,6 +16,7 @@ md5:7c8a3246e7ddb724bf7397a2f8f9b782
 {% block lib_deps %}
 lib/c
 lib/drm
+lib/gbm
 lib/udev
 lib/seat
 lib/input
@@ -23,7 +24,6 @@ lib/pixman
 lib/wayland
 lib/xkb/common
 {% if opengl %}
-lib/gbm
 lib/opengl
 {% endif %}
 {% endblock %}
