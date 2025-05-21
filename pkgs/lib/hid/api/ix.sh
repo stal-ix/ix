@@ -5,12 +5,12 @@ hidapi
 {% endblock %}
 
 {% block version %}
-0.14.0
+0.15.0
 {% endblock %}
 
 {% block fetch %}
 https://github.com/libusb/hidapi/archive/refs/tags/hidapi-{{self.version().strip()}}.tar.gz
-sha:a5714234abe6e1f53647dd8cba7d69f65f71c558b7896ed218864ffcf405bcbd
+sha:5d84dec684c27b97b921d2f3b73218cb773cf4ea915caee317ac8fc73cef8136
 {% endblock %}
 
 {% block lib_deps %}
