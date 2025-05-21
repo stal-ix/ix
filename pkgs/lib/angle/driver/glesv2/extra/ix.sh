@@ -5,7 +5,7 @@ angle_
 {% endblock %}
 
 {% block export_lib %}
-QUAKE2libGLESv2
+GLESv2
 {% endblock %}
 
 {% block export_symbols %}

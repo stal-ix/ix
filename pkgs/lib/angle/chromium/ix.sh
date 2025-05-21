@@ -37,6 +37,8 @@ export ANGLE_DIR=${out}/lib
 find third_party/wayland/src -type f -name '*.c' | while read l; do
     echo > ${l}
 done
+sed -e 's|directory + libraryName|libraryName|' \
+    -i third_party/angle/src/common/system_utils_posix.cpp
 {% endblock %}
 
 {% block c_rename_symbol %}
