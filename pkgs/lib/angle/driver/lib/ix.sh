@@ -20,8 +20,6 @@ lib/angle(libopenssl_ver=fake,libcurl_ver=lite)
 
 {% block install %}
 mkdir ${out}/lib
-cp ${ANGLE_DIR}/libEGL.a ${out}/lib/libangle_EGL.a
-cp ${ANGLE_DIR}/libGLESv2.a ${out}/lib/libangle_GLESv2.a
-patchns ${out}/lib/libangle_EGL.a angle_
-patchns ${out}/lib/libangle_GLESv2.a angle_
+cp ${ANGLE_DIR}/libangle.a ${out}/lib/
+patchns ${out}/lib/libangle.a angle_
 {% endblock %}

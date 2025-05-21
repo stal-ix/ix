@@ -13,7 +13,7 @@ bld/wrapcc/link/exe/host
 
 {% block install %}
 mkdir ${out}/lib
-cp ${tmp}/lib/*.a ${out}/lib/
+llvm-ar qL ${out}/lib/libangle.a ${tmp}/lib/libGLESv2.a ${tmp}/lib/libEGL.a
 {% endblock %}
 
 {% block gn_args %}
