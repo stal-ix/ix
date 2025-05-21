@@ -15,7 +15,7 @@ sha:54c530305dd96cf4536dee3633864f3e326a5efd33528314ac64e009201318e7
 
 {% block bld_libs %}
 lib/c
-lib/sdl/2
+lib/sdl/3
 lib/opengl
 lib/curl/dl
 lib/sdl/deps
@@ -27,11 +27,16 @@ lib/vulkan/headers
 
 {% block bld_tool %}
 bld/dlfcn
+bin/pkg/conf
 bld/librarian
 {% endblock %}
 
 {% block build_flags %}
 wrap_cc
+{% endblock %}
+
+{% block make_flags %}
+WITH_SDL3=yes
 {% endblock %}
 
 {% block install %}
