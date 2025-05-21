@@ -5,12 +5,12 @@ abseil-cpp
 {% endblock %}
 
 {% block version %}
-20250127.1
+20250512.0
 {% endblock %}
 
 {% block fetch %}
 https://github.com/abseil/abseil-cpp/archive/refs/tags/{{self.version().strip()}}.tar.gz
-sha:b396401fd29e2e679cace77867481d388c807671dc2acc602a0259eeb79b7811
+sha:7262daa7c1711406248c10f41026d685e88223bc92817d16fb93c19adb57f669
 {% endblock %}
 
 {% block lib_deps %}
