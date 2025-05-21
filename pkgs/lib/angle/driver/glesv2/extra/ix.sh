@@ -80,7 +80,6 @@ EGL_ProgramCacheResizeANGLE
 EGL_QuerySurfacePointerANGLE
 EGL_CreateStreamProducerD3DTextureANGLE
 EGL_StreamPostD3DTextureANGLE
-EGL_SwapBuffersWithFrameTokenANGLE
 EGL_GetMscRateANGLE
 EGL_ExportVkImageANGLE
 EGL_WaitUntilWorkScheduledANGLE
@@ -119,4 +118,10 @@ EGL_SwapBuffersWithDamageKHR
 EGL_WaitSyncKHR
 EGL_PostSubBufferNV
 EGL_StreamConsumerGLTextureExternalAttribsNV
+EGL_LockVulkanQueueANGLE
+EGL_UnlockVulkanQueueANGLE
+EGL_AcquireExternalContextANGLE
+EGL_ReleaseExternalContextANGLE
+EGL_SetValidationEnabledANGLE
+EGL_QuerySupportedCompressionRatesEXT
 {% endblock %}

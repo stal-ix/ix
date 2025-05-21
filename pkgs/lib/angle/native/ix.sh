@@ -90,6 +90,11 @@ cros_boards_with_qemu_images = ""
 generate_location_tags = false
 EOF
 mkdir -p build/linux/debian_bullseye_amd64-sysroot
+find third_party/wayland/src -type f -name '*.c' | while read l; do
+    echo > ${l}
+done
+sed -e 's|directory + libraryName|libraryName|' \
+    -i src/common/system_utils_posix.cpp
 {% endblock %}
 
 {% block configure %}
@@ -118,4 +123,8 @@ rm -rf third_party/libc++/src/include
 {% block install %}
 mkdir ${out}/lib
 llvm-ar qL ${out}/lib/libangle.a ${tmp}/lib/libGLESv2.a ${tmp}/lib/libEGL.a
+{% endblock %}
+
+{% block env %}
+export ANGLE_DIR=${out}/lib
 {% endblock %}
