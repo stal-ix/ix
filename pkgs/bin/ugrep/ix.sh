@@ -5,12 +5,12 @@ ugrep
 {% endblock %}
 
 {% block version %}
-7.4.2
+7.4.3
 {% endblock %}
 
 {% block fetch %}
 https://github.com/Genivia/ugrep/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:402be01d327e4b65a0f93683bdb9859e4daa7aca29d85b00e668de4e42831c78
+sha:105b495f4d2773802b5a71e2375ba07bca4e67fd6837e5fc1d00be5cf4938f16
 {% endblock %}
 
 {% block bld_libs %}
