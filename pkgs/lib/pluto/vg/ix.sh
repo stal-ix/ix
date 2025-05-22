@@ -5,12 +5,12 @@ plutovg
 {% endblock %}
 
 {% block version %}
-1.0.0
+1.1.0
 {% endblock %}
 
 {% block fetch %}
 https://github.com/sammycage/plutovg/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:d4a8015aee9eefc29b01e6dabfd3d4b371ae12f9d5e9be09798deb77a528a794
+sha:8aa9860519c407890668c29998e8bb88896ef6a2e6d7ce5ac1e57f18d79e1525
 {% endblock %}
 
 {% block lib_deps %}

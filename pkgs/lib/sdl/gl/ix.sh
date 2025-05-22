@@ -1,7 +1,7 @@
 {% extends '//die/hub.sh' %}
 
 {% block lib_deps %}
-  {% if mesa_driver %}
+  {% if opengl %}
     lib/opengl
     lib/sdl/gl/on
   {% else %}

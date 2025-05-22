@@ -8,5 +8,6 @@ bin/intel/clc
 
 {% block meson_flags %}
 {{super()}}
+mesa-clc=system
 intel-clc=system
 {% endblock %}

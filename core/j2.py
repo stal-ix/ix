@@ -85,9 +85,19 @@ def group_by(k):
     return do
 
 
+def fmt_error(s):
+    if s == 'vulkan':
+        return 'please provide vulkan driver via --vulkan= switch'
+
+    if s == 'opengl':
+        return 'please provide opengl driver via --opengl= switch'
+
+    return f'{s} undefined'
+
+
 def flt_defined(v, s):
     if 'jinja2.runtime.Undefined' in str(type(v)):
-        raise Exception(f'{s} undefined')
+        raise Exception(fmt_error(s))
 
     return v
 

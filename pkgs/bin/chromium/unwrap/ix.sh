@@ -72,7 +72,9 @@ lib/xiph/speex
 lib/fontconfig
 lib/xkb/common
 lib/shim/extra
+{% if bin %}
 lib/drivers/3d
+{% endif %}
 lib/bsd/overlay
 lib/nss/nssckbi
 lib/build/errlimit
@@ -84,14 +86,15 @@ lib/shim/fake/pkg(pkg_name=dri,pkg_ver=100500,pkg_extra=dridriverdir: /nowhere)
 {% block bld_tool %}
 bin/gzip
 bld/flex
-bin/gperf
 bld/bison
 bin/brotli
 bin/nodejs
 bld/prepend
+bld/wayland
 bld/de/bloat
 bld/devendor
 bld/elfutils
+bin/gperf/prev
 {% endblock %}
 
 {% block cxx_flags %}
@@ -244,7 +247,7 @@ build_with_tflite_lib=false
 chrome_pgo_phase=0
 clang_base_path=""
 clang_use_chrome_plugins=false
-clang_version={{clang_ver}}
+clang_version={{clang_ver or '19'}}
 custom_toolchain="//build/toolchain/linux/unbundle:default"
 dawn_enable_vulkan_validation_layers=false
 disable_fieldtrial_testing_config=true

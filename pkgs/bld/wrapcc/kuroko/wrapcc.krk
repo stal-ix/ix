@@ -20,6 +20,13 @@ def flt_args(argv):
         if '-D-pthread' in x:
             continue
 
+        if 'third_party/libc++' in x:
+            if '-isystem' in x:
+                continue
+
+            if '-I' in x:
+                continue
+
         if '-no-integrated-as' in x:
             continue
 

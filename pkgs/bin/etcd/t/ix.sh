@@ -5,7 +5,7 @@ etcd
 {% endblock %}
 
 {% block version %}
-3.5.21
+3.6.0
 {% endblock %}
 
 {% block go_url %}
@@ -13,7 +13,7 @@ https://github.com/etcd-io/etcd/archive/refs/tags/v{{self.version().strip()}}.ta
 {% endblock %}
 
 {% block go_sha %}
-7fe8b7346312b96bb787c4b83bd370a66edc333608dca888f87c84cc2d3c9f3f
+935b1dc21a400cff25b55c98bcc22f79de5c35e0b8bb0211317d7a3d96b60489
 {% endblock %}
 
 {% block bld_libs %}
@@ -21,5 +21,5 @@ lib/c
 {% endblock %}
 
 {% block go_tool %}
-bin/go/lang/23
+bin/go/lang/24
 {% endblock %}

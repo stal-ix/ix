@@ -7,6 +7,7 @@ pip/jinja2
 bin/glslang
 bld/wayland
 bld/pzd/des
+pip/markupsafe
 pip/ruamel.yaml
 bld/fake/binutils
 {% endblock %}

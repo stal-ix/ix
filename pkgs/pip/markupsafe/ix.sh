@@ -1,5 +1,7 @@
 {% extends '//die/std/ix.sh' %}
 
+# noauto
+
 {% block pkg_name %}
 python:MarkupSafe
 {% endblock %}

@@ -34,7 +34,7 @@ exit 1
 /ix/realm/system/bin/confine
 {{ix_dir}}
 {% endif %}
-{% if skipsrc %}
+{% if skipsrc or skipsrc_one %}
 {% else %}
 {% if isfile('/bin/tmpfs') %}
 /ix/realm/system/bin/tmpfs

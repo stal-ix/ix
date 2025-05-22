@@ -5,12 +5,12 @@ wob
 {% endblock %}
 
 {% block version %}
-0.15.1
+0.16
 {% endblock %}
 
 {% block fetch %}
 https://github.com/francma/wob/archive/refs/tags/{{self.version().strip()}}.tar.gz
-sha:094f666e799a7fa0914192d041032f4e9a28a87486d024db80ade010988b218a
+sha:8a5850beec72b5b19be631a6eb21315a20082bf9135447080f9e9045f143938b
 {% endblock %}
 
 {% block bld_libs %}

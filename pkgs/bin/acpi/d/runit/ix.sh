@@ -1,9 +1,8 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
-bin/runsrv
 bin/acpi/d/d
-bin/acpi/d/runit/scripts
+etc/services/runit(srv_deps=bin/acpi/d/d,srv_dir=acpid2,srv_command=exec acpid -c /etc/acpi -d -f -l -m 0777 -p pid -l lockf)
 {% endblock %}
 
 {% block run_data %}

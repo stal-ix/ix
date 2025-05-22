@@ -10,6 +10,13 @@ def mkdir(x):
     except OSError:
         pass
 
+def flt(lst):
+    for x in lst:
+        if x.startswith('/lib'):
+            continue
+        else:
+            yield x
+
 def link_lib(x, objs):
     if '/' in x:
         mkdir(os.path.dirname(x))
@@ -28,4 +35,4 @@ def link_lib(x, objs):
         subprocess.check_call(['cp', x, tmpdir + '/' + f[:f.index('.')] + '.a'])
 
 print(f'LIBLINK {sys.argv}', file=sys.stderr)
-link_lib(sys.argv[1], sys.argv[2:])
+link_lib(sys.argv[1], list(flt(sys.argv[2:])))

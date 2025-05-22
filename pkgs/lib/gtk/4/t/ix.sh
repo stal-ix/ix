@@ -4,7 +4,7 @@
 
 {% block lib_deps %}
 {{super()}}
-lib/gbm
+lib/drm
 lib/vulkan/loader
 {% endblock %}
 

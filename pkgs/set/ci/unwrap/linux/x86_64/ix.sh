@@ -132,8 +132,8 @@ bin/bloaty
 bin/ultra/hdr/app
 bin/xdg/dbus/proxy
 bin/elementary/screenshot
-bin/sway(mesa_driver=iris)
-bin/sway(mesa_driver=radeonsi)
+bin/sway(opengl=mesa/iris,vulkan=mesa/iris)
+bin/sway(opengl=mesa/radeonsi,vulkan=mesa/radeonsi)
 bin/llvm/spirv
 bin/elementary/dock
 bin/ebpf/verifier

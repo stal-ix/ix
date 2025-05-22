@@ -1,5 +1,7 @@
 {% extends '//lib/web/kit/gtk/t/ix.sh' %}
 
+# noauto
+
 {% block bld_libs %}
 lib/web/kit/deps
 lib/{{allocator}}/trim(delay=1,bytes=10000000)

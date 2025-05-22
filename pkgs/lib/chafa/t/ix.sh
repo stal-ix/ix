@@ -5,12 +5,12 @@ chafa
 {% endblock %}
 
 {% block version %}
-1.14.5
+1.16.1
 {% endblock %}
 
 {% block fetch %}
 https://github.com/hpjansson/chafa/archive/refs/tags/{{self.version().strip()}}.tar.gz
-sha:788cb29e6d9cd29578c2040b3a11f69f4c9408e04f6c93c994c071e2a85d5ba4
+sha:37957e7e660e5be6f4947702d1ebca72234babffdfac56f3a93093109e5ac9a2
 {% endblock %}
 
 {% block lib_deps %}

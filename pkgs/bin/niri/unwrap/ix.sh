@@ -5,7 +5,7 @@ niri
 {% endblock %}
 
 {% block version %}
-25.02
+25.05
 {% endblock %}
 
 {% block cargo_url %}
@@ -13,7 +13,7 @@ https://github.com/YaLTeR/niri/archive/refs/tags/v{{self.version().strip()}}.tar
 {% endblock %}
 
 {% block cargo_sha %}
-3a25af6b676f2ccbe2b9f0a2df438d104a10b911aec19b04170d6a3d5279cf4e
+84cdfa309d10f1b43b40197b5543865a8ddafe4a08e5f1d9fea02a7d70e22fee
 {% endblock %}
 
 {% block lib_deps %}
@@ -40,4 +40,8 @@ dbus
 {% block install %}
 mkdir ${out}/bin
 cp ${tmp}/out/niri ${out}/bin/
+{% endblock %}
+
+{% block cargoc_ver %}
+bld/cargo/86
 {% endblock %}

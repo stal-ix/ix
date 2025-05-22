@@ -17,6 +17,6 @@ libc_lite=1
 set/pg/system({{self.sys_args().strip().replace('\n', ',')}})
 {% else %}
 # ix mut set/pg
-set/pg/user(mesa_driver=aco)
+set/pg/user(opengl=angle,vulkan=amd/vlk)
 {% endif %}
 {% endblock %}
