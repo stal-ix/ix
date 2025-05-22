@@ -1,5 +1,7 @@
 #!/usr/bin/env sh
 
+echo 'tools available:'
+
 (
     find . -type f -executable | sed -e 's|\./||'
     cd ${IX_PKGS_ROOT}/pkgs/bin/ix/tools

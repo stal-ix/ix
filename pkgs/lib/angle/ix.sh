@@ -94,13 +94,8 @@ cros_boards_with_qemu_images = ""
 generate_location_tags = false
 EOF
 mkdir -p build/linux/debian_bullseye_amd64-sysroot
-find third_party/wayland/src -type f -name '*.c' | while read l; do
-    echo > ${l}
-done
 sed -e 's|directory + libraryName|libraryName|' \
     -i src/common/system_utils_posix.cpp
-devendor_c third_party/vulkan-loader
-devendor_c third_party/vulkan-deps/vulkan-loader
 {% endblock %}
 
 {% block configure %}
@@ -110,16 +105,11 @@ find ${tmp}/obj -type f -name '*.ninja' | while read l; do
         -e 's|-Wno-nontrivial-memcall||g' \
         -i ${l}
 done
-find third_party/libc++abi -type f | while read l; do
-    echo > ${l}
-done
-find third_party/libc++abi -type f -name '*.h' -delete
-rm -rf third_party/libc++abi/src/include
-find third_party/libc++ -type f | while read l; do
-    echo > ${l}
-done
-find third_party/libc++ -type f -name '*.h' -delete
-rm -rf third_party/libc++/src/include
+devendor third_party/libc++
+devendor third_party/libc++abi
+devendor third_party/vulkan-loader
+devendor third_party/vulkan-deps/vulkan-loader
+devendor third_party/wayland/src
 {% endblock %}
 
 {% block install %}

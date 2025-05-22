@@ -3697,6 +3697,7 @@ https://github.com/sammycage/lunasvg/archive/refs/tags/v3.0.1.tar.gz
 https://github.com/sammycage/lunasvg/archive/refs/tags/v3.1.0.tar.gz
 https://github.com/sammycage/lunasvg/archive/refs/tags/v3.1.1.tar.gz
 https://github.com/sammycage/lunasvg/archive/refs/tags/v3.2.1.tar.gz
+https://github.com/sammycage/lunasvg/archive/refs/tags/v3.3.0.tar.gz
 https://github.com/sammycage/plutosvg/archive/refs/tags/v0.0.5.tar.gz
 https://github.com/sammycage/plutosvg/archive/refs/tags/v0.0.6.tar.gz
 https://github.com/sammycage/plutosvg/archive/refs/tags/v0.0.7.tar.gz
@@ -4385,6 +4386,7 @@ https://gitlab.freedesktop.org/cairo/cairo/-/archive/1.18.0/cairo-1.18.0.tar.bz2
 https://gitlab.freedesktop.org/cairo/cairo/-/archive/1.18.2/cairo-1.18.2.tar.bz2
 https://gitlab.freedesktop.org/cairo/cairo/-/archive/1.18.4/cairo-1.18.4.tar.bz2
 https://gitlab.freedesktop.org/emersion/libdisplay-info/-/archive/0.2.0/libdisplay-info-0.2.0.tar.bz2
+https://gitlab.freedesktop.org/emersion/libliftoff/-/archive/v0.5.0/libliftoff-v0.5.0.tar.bz2
 https://gitlab.freedesktop.org/fontconfig/fontconfig/-/archive/2.16.1/fontconfig-2.16.1.tar.bz2
 https://gitlab.freedesktop.org/fontconfig/fontconfig/-/archive/2.16.2/fontconfig-2.16.2.tar.bz2
 https://gitlab.freedesktop.org/freetype/freetype-demos/-/archive/VER-2-13-0/freetype-demos-VER-2-13-0.tar.bz2

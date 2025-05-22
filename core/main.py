@@ -40,6 +40,7 @@ def find_handler(args):
 
 
 def print_help():
+    print('more docs at https://stal-ix.github.io/IX.html')
     print('usage: ix <command>:')
 
     for k, v, hide in CLIS:
