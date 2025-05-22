@@ -25,6 +25,8 @@ bld/spirv/tools
 
 {% block ninja_build_targets %}
 src/intel/compiler/intel_clc
+src/compiler/clc/mesa_clc
+src/compiler/spirv/vtn_bindgen2
 {% endblock %}
 
 {% block meson_flags %}
@@ -32,6 +34,7 @@ gallium-drivers=
 vulkan-drivers=
 platforms=
 tools=
+install-mesa-clc=true
 mesa-clc=enabled
 intel-bvh-grl=true
 install-intel-clc=true
@@ -50,5 +53,7 @@ intel-rt=disabled
 
 {% block install %}
 mkdir ${out}/bin
-cp ${tmp}/obj/src/intel/compiler/intel_clc ${out}/bin
+cp ${tmp}/obj/src/intel/compiler/intel_clc ${out}/bin/
+cp ${tmp}/obj/src/compiler/clc/mesa_clc ${out}/bin/
+cp ${tmp}/obj/src/compiler/spirv/vtn_bindgen2 ${out}/bin/
 {% endblock %}
