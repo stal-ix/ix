@@ -18,7 +18,9 @@ lib/c
 {% if linux %}
 lib/glu
 {% endif %}
+{% if opengl %}
 lib/opengl
+{% endif %}
 {% endblock %}
 
 {% block bld_libs %}
