@@ -35,6 +35,7 @@ lib/xkb/common
 lib/drivers/3d
 lib/wlroots/17
 lib/json/nlohmann
+# {{opengl | defined('opengl')}}
 {% endblock %}
 
 {% block bld_tool %}
