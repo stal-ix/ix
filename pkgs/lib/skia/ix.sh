@@ -1,11 +1,9 @@
-{% extends 't/ix.sh' %}
+{% extends '//die/hub.sh' %}
 
 {% block lib_deps %}
-{{super()}}
-lib/opengl
-{% endblock %}
-
-{% block gn_args %}
-{{super()}}
-skia_use_egl=true
+{% if opengl %}
+lib/skia/full
+{% else %}
+lib/skia/lite
+{% endif %}
 {% endblock %}

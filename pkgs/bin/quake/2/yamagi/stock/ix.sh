@@ -21,8 +21,6 @@ lib/curl/dl
 lib/sdl/deps
 lib/execinfo
 lib/openal/dl
-lib/vulkan/loader
-lib/vulkan/headers
 {% endblock %}
 
 {% block bld_tool %}

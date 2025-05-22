@@ -3,7 +3,7 @@
 {% block bld_libs %}
 lib/c
 lib/c++
-lib/skia/lite
+lib/skia
 {% endblock %}
 
 {% block name %}
