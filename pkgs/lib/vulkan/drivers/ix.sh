@@ -5,7 +5,7 @@
 {% if 'mesa' in vulkan %}
 lib/mesa(mesa_driver={{vulkan | basename}},opengl=,vulkan=)
 {% else %}
-lib/{{vulkan}}
+lib/{{vulkan}}/driver
 {% endif %}
 lib/vulkan/loader/dl
 {% endif %}
