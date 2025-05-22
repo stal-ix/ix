@@ -1,8 +1,9 @@
 #!/usr/bin/env sh
 
 C=${1}
-
 shift
+
+cd ${IX_WHERE}
 
 if test -f ${C}; then
     exec ./${C} ${@}
