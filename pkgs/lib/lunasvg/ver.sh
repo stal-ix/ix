@@ -3,10 +3,10 @@ lunasvg
 {% endblock %}
 
 {% block version %}
-3.2.1
+3.3.0
 {% endblock %}
 
 {% block fetch %}
 https://github.com/sammycage/lunasvg/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:3420175c9632007edfcd0198001abc116c5c646af8e928d393cd029985cc4ee8
+sha:06045afc30dbbdd87e219e0f5bc0526214a9d8059087ac67ce9df193a682c4b3
 {% endblock %}
