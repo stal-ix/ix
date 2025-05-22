@@ -21,6 +21,7 @@ curl -k 'https://repology.org/api/v1/projects/?maintainer=anton%40samokhvalov.xy
     | grep -v spirv \
     | grep -v vulkan \
     | grep -v webkit \
+    | grep -v wlroots \
     | while read l; do (
     echo ${l}
 
