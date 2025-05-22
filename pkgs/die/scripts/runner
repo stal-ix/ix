@@ -8,5 +8,6 @@ cd ${IX_WHERE}
 if test -f ${C}; then
     exec ./${C} ${@}
 else
+    cd ${IX_PKGS_ROOT}
     exec ${IX_BINARY} run --inherit bin/ix/tools/${C} -- ix_${C} ${@}
 fi
