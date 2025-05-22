@@ -7,6 +7,7 @@ set/ci/tier/2
 # for repology
 lib/fmt/11
 lib/botan/3
+lib/wlroots/19
 lib/json/nlohmann/12
 aux/fonts/adobe/source/code-pro
 aux/fonts/adobe/source/sans
