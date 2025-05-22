@@ -10,8 +10,8 @@ lib/z
 lib/clc
 lib/kernel
 lib/llvm/19
-bin/llvm/spirv
 lib/spirv/tools
+lib/spirv/llvm/translator
 {% endblock %}
 
 {% block bld_tool %}
@@ -32,6 +32,9 @@ gallium-drivers=
 vulkan-drivers=
 platforms=
 tools=
+mesa-clc=enabled
+intel-bvh-grl=true
+install-intel-clc=true
 intel-clc=enabled
 video-codecs=
 xmlconfig=disabled
