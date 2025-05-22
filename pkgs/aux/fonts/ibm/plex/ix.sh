@@ -5,10 +5,10 @@ IBM-plex
 {% endblock %}
 
 {% block version %}
-6.4.0
+6.4.2
 {% endblock %}
 
 {% block fetch %}
-https://github.com/IBM/plex/releases/download/v{{self.version().strip()}}/OpenType.zip
-sha:e8e502823a9c6c7dda9ebb1710c5f6c4001db4ab15067d9ec373a6d39844fc1d
+https://github.com/IBM/plex/archive/refs/tags/v{{self.version().strip()}}.tar.gz
+sha:fef6219ddad5dca93ad6973910606ec63d9ee94ddf9171e8a09a78a8e349d59e
 {% endblock %}
