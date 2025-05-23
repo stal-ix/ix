@@ -249,6 +249,7 @@ https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.14.4.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.14.5.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.14.6.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.14.7.tar.xz
+https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.14.8.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.14.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.2.14.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.3.13.tar.xz
@@ -1508,6 +1509,7 @@ https://github.com/Umio-Yasuno/amdgpu_top/archive/refs/tags/v0.10.0.tar.gz
 https://github.com/Umio-Yasuno/amdgpu_top/archive/refs/tags/v0.10.4.tar.gz
 https://github.com/VirusTotal/yara/archive/refs/tags/v4.2.2.tar.gz
 https://github.com/VirusTotal/yara/archive/refs/tags/v4.5.2.tar.gz
+https://github.com/VirusTotal/yara/archive/refs/tags/v4.5.3.tar.gz
 https://github.com/WasmEdge/WasmEdge/archive/refs/tags/0.13.3.tar.gz
 https://github.com/WasmEdge/WasmEdge/archive/refs/tags/0.13.5.tar.gz
 https://github.com/WasmEdge/WasmEdge/archive/refs/tags/0.14.1.tar.gz
@@ -1694,6 +1696,7 @@ https://github.com/arvidn/libtorrent/releases/download/v2.0.9/libtorrent-rasterb
 https://github.com/ascent12/drm_info/archive/refs/tags/v2.3.0.tar.gz
 https://github.com/astral-sh/ruff/archive/refs/tags/0.11.0.tar.gz
 https://github.com/astral-sh/ruff/archive/refs/tags/0.11.10.tar.gz
+https://github.com/astral-sh/ruff/archive/refs/tags/0.11.11.tar.gz
 https://github.com/astral-sh/ruff/archive/refs/tags/0.11.2.tar.gz
 https://github.com/astral-sh/ruff/archive/refs/tags/0.11.4.tar.gz
 https://github.com/astral-sh/ruff/archive/refs/tags/0.11.5.tar.gz
@@ -2100,6 +2103,7 @@ https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.40.4.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.41.0.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.42.0.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.43.0.tar.gz
+https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.44.0.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.5.0.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.6.0.tar.gz
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/2.6.1.tar.gz
@@ -2245,6 +2249,7 @@ https://github.com/gohugoio/hugo/archive/refs/tags/v0.145.0.tar.gz
 https://github.com/gohugoio/hugo/archive/refs/tags/v0.146.2.tar.gz
 https://github.com/gohugoio/hugo/archive/refs/tags/v0.147.3.tar.gz
 https://github.com/gohugoio/hugo/archive/refs/tags/v0.147.4.tar.gz
+https://github.com/gohugoio/hugo/archive/refs/tags/v0.147.5.tar.gz
 https://github.com/gokcehan/lf/archive/refs/tags/r27.tar.gz
 https://github.com/gokcehan/lf/archive/refs/tags/r31.tar.gz
 https://github.com/gokcehan/lf/archive/refs/tags/r32.tar.gz
@@ -2604,6 +2609,7 @@ https://github.com/jesseduffield/lazygit/archive/refs/tags/v0.47.1.tar.gz
 https://github.com/jesseduffield/lazygit/archive/refs/tags/v0.47.2.tar.gz
 https://github.com/jesseduffield/lazygit/archive/refs/tags/v0.48.0.tar.gz
 https://github.com/jesseduffield/lazygit/archive/refs/tags/v0.50.0.tar.gz
+https://github.com/jesseduffield/lazygit/archive/refs/tags/v0.51.0.tar.gz
 https://github.com/jhawthorn/fzy/archive/refs/tags/1.0.tar.gz
 https://github.com/jirka-h/haveged/archive/refs/tags/v1.9.18.tar.gz
 https://github.com/jirka-h/haveged/archive/refs/tags/v1.9.19.tar.gz
@@ -2905,6 +2911,7 @@ https://github.com/libtom/libtommath/releases/download/v1.3.0/ltm-1.3.0.tar.xz
 https://github.com/libunwind/libunwind/archive/refs/tags/v1.7.2.tar.gz
 https://github.com/libunwind/libunwind/archive/refs/tags/v1.8.0.tar.gz
 https://github.com/libunwind/libunwind/archive/refs/tags/v1.8.1.tar.gz
+https://github.com/libunwind/libunwind/archive/refs/tags/v1.8.2.tar.gz
 https://github.com/libusb/hidapi/archive/refs/tags/hidapi-0.14.0.tar.gz
 https://github.com/libusb/hidapi/archive/refs/tags/hidapi-0.15.0.tar.gz
 https://github.com/libusb/libusb/releases/download/v1.0.26/libusb-1.0.26.tar.bz2
@@ -2930,6 +2937,7 @@ https://github.com/linux-nvme/libnvme/archive/refs/tags/v1.11.1.tar.gz
 https://github.com/linux-nvme/libnvme/archive/refs/tags/v1.11.tar.gz
 https://github.com/linux-nvme/libnvme/archive/refs/tags/v1.12.tar.gz
 https://github.com/linux-nvme/libnvme/archive/refs/tags/v1.13.tar.gz
+https://github.com/linux-nvme/libnvme/archive/refs/tags/v1.14.tar.gz
 https://github.com/linux-nvme/libnvme/archive/refs/tags/v1.5.tar.gz
 https://github.com/linux-nvme/libnvme/archive/refs/tags/v1.6.tar.gz
 https://github.com/linux-nvme/libnvme/archive/refs/tags/v1.8.tar.gz
@@ -2938,6 +2946,7 @@ https://github.com/linux-nvme/nvme-cli/archive/refs/tags/v2.10.2.tar.gz
 https://github.com/linux-nvme/nvme-cli/archive/refs/tags/v2.11.tar.gz
 https://github.com/linux-nvme/nvme-cli/archive/refs/tags/v2.12.tar.gz
 https://github.com/linux-nvme/nvme-cli/archive/refs/tags/v2.13.tar.gz
+https://github.com/linux-nvme/nvme-cli/archive/refs/tags/v2.14.tar.gz
 https://github.com/linux-nvme/nvme-cli/archive/refs/tags/v2.5.tar.gz
 https://github.com/linux-nvme/nvme-cli/archive/refs/tags/v2.6.tar.gz
 https://github.com/linux-nvme/nvme-cli/archive/refs/tags/v2.8.tar.gz
@@ -4150,6 +4159,7 @@ https://github.com/vim/vim/archive/refs/tags/v9.1.1382.tar.gz
 https://github.com/vim/vim/archive/refs/tags/v9.1.1385.tar.gz
 https://github.com/vim/vim/archive/refs/tags/v9.1.1398.tar.gz
 https://github.com/vim/vim/archive/refs/tags/v9.1.1401.tar.gz
+https://github.com/vim/vim/archive/refs/tags/v9.1.1404.tar.gz
 https://github.com/vmatare/thinkfan/archive/refs/tags/1.3.1.tar.gz
 https://github.com/vmt/udis86/archive/refs/tags/v1.7.2.tar.gz
 https://github.com/void-linux/musl-fts/archive/refs/tags/v1.2.7.tar.gz
@@ -4288,6 +4298,7 @@ https://github.com/yggdrasil-network/yggdrasil-go/archive/refs/tags/v0.5.8.tar.g
 https://github.com/yggdrasil-network/yggdrasil-go/archive/refs/tags/v0.5.9.tar.gz
 https://github.com/yorukot/superfile/archive/refs/tags/v1.1.3.tar.gz
 https://github.com/yorukot/superfile/archive/refs/tags/v1.2.1.tar.gz
+https://github.com/yorukot/superfile/archive/refs/tags/v1.3.0.tar.gz
 https://github.com/yquake2/yquake2/archive/refs/tags/QUAKE2_8_20.tar.gz
 https://github.com/yquake2/yquake2/archive/refs/tags/QUAKE2_8_30.tar.gz
 https://github.com/yquake2/yquake2/archive/refs/tags/QUAKE2_8_40.tar.gz
