@@ -18,7 +18,6 @@ https://github.com/alacritty/alacritty/archive/refs/tags/v{{self.version().strip
 
 {% block bld_libs %}
 lib/c
-lib/gbm
 lib/png
 lib/glib
 lib/iconv

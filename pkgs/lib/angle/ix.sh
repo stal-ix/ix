@@ -107,9 +107,9 @@ find ${tmp}/obj -type f -name '*.ninja' | while read l; do
 done
 devendor third_party/libc++
 devendor third_party/libc++abi
+devendor third_party/wayland/src
 devendor third_party/vulkan-loader
 devendor third_party/vulkan-deps/vulkan-loader
-devendor third_party/wayland/src
 {% endblock %}
 
 {% block install %}
