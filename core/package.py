@@ -213,6 +213,7 @@ class Package(Descriptor):
                     'descr': self.descr,
                     'norm_name': self.norm_name,
                     'name': self.name,
+                    'pkg_name': self.pkg_name,
                 }, sort_keys=True))
 
             self.uid = cs.UID
