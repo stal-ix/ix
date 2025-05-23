@@ -9,8 +9,8 @@ lib/c
 lib/z
 lib/clc
 lib/kernel
-lib/llvm/19
 lib/spirv/tools
+lib/llvm/{{default_clang}}
 lib/spirv/llvm/translator
 {% endblock %}
 
