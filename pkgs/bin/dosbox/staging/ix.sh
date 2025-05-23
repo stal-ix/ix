@@ -32,6 +32,7 @@ lib/opus/file
 lib/fluid/synth
 lib/xiph/speex/dsp
 lib/shim/fake(lib_name=GL)
+# {{opengl | defined('opengl')}}
 {% endblock %}
 
 {% block build_flags %}
