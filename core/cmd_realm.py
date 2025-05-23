@@ -63,11 +63,33 @@ def cli_let(ctx):
     list(prepare(ctx, ctx['args']))
 
 
+def mine_pkg_by_bin(binary, where):
+    for l in open(where + '/pkgs/die/scripts/bins.json').read().split('\n'):
+        l = l.strip()
+
+        if not l:
+            continue
+
+        rec = json.loads(l)
+
+        if rec['bin'] == binary:
+            return rec['ix_pkg_name']
+
+    raise Exception(f'no {binary} binary in IX database')
+
+
 def cli_run(ctx):
     args = ctx['args']
 
-    for r in reversed(list(prepare(ctx, ['ephemeral'] + args[:args.index('--')] + ['bin/ix/runner']))):
-        cmd = ['runner_entry', f'{r.path}/env'] + args[args.index('--') + 1:]
+    if '--' in args:
+        pkgs = args[:args.index('--')]
+        cmdl = args[args.index('--') + 1:]
+    else:
+        pkgs = [mine_pkg_by_bin(args[0], os.path.dirname(ctx['binary']))]
+        cmdl = args
+
+    for r in reversed(list(prepare(ctx, ['ephemeral'] + pkgs + ['bin/ix/runner']))):
+        cmd = ['runner_entry', f'{r.path}/env'] + cmdl
         env = os.environ.copy()
         env['OLDPATH'] = env.get('PATH', '')
         env['PATH'] = f'/nowhere:{r.path}/bin'
