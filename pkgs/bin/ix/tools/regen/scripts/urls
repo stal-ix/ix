@@ -22,3 +22,6 @@ find ${IX_PKGS_ROOT} -name '*.sh' | xargs cat | grep "http[s]*://"
   | ix_urls_flt \
   > _
 mv _ urls.txt
+
+ix_fetch | ix_match | sort > _
+mv _ bins.json
