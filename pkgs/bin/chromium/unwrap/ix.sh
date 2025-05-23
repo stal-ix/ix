@@ -72,9 +72,7 @@ lib/xiph/speex
 lib/fontconfig
 lib/xkb/common
 lib/shim/extra
-{% if bin %}
 lib/drivers/3d
-{% endif %}
 lib/bsd/overlay
 lib/nss/nssckbi
 lib/build/errlimit
