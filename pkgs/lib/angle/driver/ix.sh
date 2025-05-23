@@ -2,7 +2,6 @@
 
 {% block lib_deps %}
 lib/vulkan/drivers
-lib/angle/driver/gl
 lib/angle/driver/lib
 lib/angle/driver/egl
 lib/angle/driver/glesv2
