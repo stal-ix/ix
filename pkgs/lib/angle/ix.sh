@@ -1,5 +1,7 @@
 {% extends '//die/c/gn.sh' %}
 
+{% block task_pool %}full{% endblock %}
+
 {% block git_repo %}
 https://github.com/google/angle
 {% endblock %}
@@ -110,6 +112,8 @@ devendor third_party/libc++abi
 devendor third_party/wayland/src
 devendor third_party/vulkan-loader
 devendor third_party/vulkan-deps/vulkan-loader
+rm -rf third_party/SwiftShader
+rm -rf third_party/llvm
 {% endblock %}
 
 {% block install %}
