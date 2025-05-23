@@ -41,19 +41,3 @@ bin/protoc
 mkdir ${out}/bin
 cp ${tmp}/out/zed ${out}/bin/
 {% endblock %}
-
-{% block patch %}
-sed -e 's|profile.release|xxx|' -i Cargo.toml
-cat << EOF >> Cargo.toml
-[profile.release]
-opt-level = 0
-debug = false
-strip = "none"
-debug-assertions = false
-overflow-checks = false
-lto = false
-panic = 'unwind'
-incremental = false
-rpath = false
-EOF
-{% endblock %}
