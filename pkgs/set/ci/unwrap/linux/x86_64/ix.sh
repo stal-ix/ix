@@ -80,8 +80,8 @@ bin/inkscape
 bin/gdb/16
 bin/gdb/15
 bin/ddc/util
-#bin/ya/final
-#bin/ya
+bin/ya/final
+bin/ya
 bin/gg
 bin/pixman
 bin/deya
