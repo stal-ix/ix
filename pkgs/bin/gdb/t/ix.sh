@@ -24,6 +24,10 @@ bld/byacc
 bld/texinfo
 {% endblock %}
 
+{% block c_compiler %}
+bin/clang/18
+{% endblock %}
+
 {% block setup_target_flags %}
 export CFLAGS="-Wno-enum-constexpr-conversion ${CFLAGS}"
 export acx_cv_cc_gcc_supports_ada=no
