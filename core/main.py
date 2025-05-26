@@ -76,12 +76,6 @@ def main(argv, ix):
         return e.returncode
     except ce.Error as e:
         if e.visible:
-            if e.context:
-                if '\n' in e.context:
-                    print(f'Context:\n{e.context}')
-                else:
-                    print(f'Context: {e.context}')
-
             if e.exception:
                 print(f'{e.exception.__class__.__name__}: {e.exception}')
 
