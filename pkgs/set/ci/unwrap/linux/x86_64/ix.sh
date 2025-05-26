@@ -78,7 +78,6 @@ bin/nix
 bin/coreutils/9/6
 bin/inkscape
 bin/gdb/16
-bin/gdb/15
 bin/ddc/util
 bin/ya/final
 bin/ya
@@ -154,8 +153,6 @@ bin/vala/bootstrap
 bin/clapper
 bin/nftables
 bin/bpf/tool
-bin/gdb/14
-bin/gdb/15
 bin/skia/svg
 bin/ladybird
 bin/cvt
@@ -387,7 +384,6 @@ bin/gcc
 bin/gcc/cc/scripts
 bin/gcc/cc
 bin/zsh
-bin/gdb
 bin/btop++
 bin/mosh
 bin/dbus/sys
