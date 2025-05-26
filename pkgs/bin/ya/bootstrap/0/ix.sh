@@ -20,10 +20,10 @@ f900bf83c523e4ae2688381a15c8ff5915e160a45c6f94fdfed8d1f4172f2ea7
 {% block bld_tool %}
 bld/gzip
 bld/make
-bin/ya/tools/clang
-bld/compiler
 bin/util/linux
 bld/fake/binutils
+bin/ya/tools/clang
+bld/compiler(clang_ver={{clang_ver}})
 {% endblock %}
 
 {% block script_init_env %}
