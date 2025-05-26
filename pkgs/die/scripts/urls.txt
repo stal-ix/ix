@@ -1736,6 +1736,8 @@ https://github.com/bfgroup/b2/archive/refs/tags/5.2.0.tar.gz
 https://github.com/bfgroup/b2/archive/refs/tags/5.3.1.tar.gz
 https://github.com/bfgroup/b2/archive/refs/tags/5.3.2.tar.gz
 https://github.com/biojppm/rapidyaml/releases/download/v0.4.1/rapidyaml-0.4.1-src.tgz
+https://github.com/boostorg/boost/releases/download/boost-1.85.0/boost-1.85.0-b2-nodocs.tar.xz
+https://github.com/boostorg/boost/releases/download/boost-1.87.0/boost-1.87.0-b2-nodocs.tar.xz
 https://github.com/bpftrace/bpftrace/archive/refs/tags/v0.21.2.tar.gz
 https://github.com/bpftrace/bpftrace/archive/refs/tags/v0.23.0.tar.gz
 https://github.com/bugaevc/wl-clipboard/archive/refs/tags/v2.2.0.tar.gz
