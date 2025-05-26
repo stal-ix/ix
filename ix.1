@@ -1,0 +1,211 @@
+.TH ix 1 2025-05-26 stal/IX
+.SH NAME
+ix - statically build packages for Darwin/Linux with Clang
+.SH SYNOPSIS
+\fBix \fIsubcommand \fR[\fIargument\fR...]
+.SH DESCRIPTION
+\fBIX \fRis a source-based package manager that builds packages using static linking. It can be used standalone on any supported OS or as the base package manager in the \fBstal/IX \fRLinux distribution.
+.PP
+A \fIpackage \fRis the contents of a single folder in the /ix/store directory. All packages are identified by a 22-character hash consisting of lowercase letters (a-z), uppercase letters (A-Z), and numbers (0-9) which form a content-addressable store, essentially similar to the same structure in NixOS and Guix. For example, here are the contents of the bzip2 package:
+.RS
+.nf
+ix# find /ix/store/0GsKotnAh74LIcvO-bin-bzip2/
+/ix/store/0GsKotnAh74LIcvO-bin-bzip2/
+/ix/store/0GsKotnAh74LIcvO-bin-bzip2/bin
+/ix/store/0GsKotnAh74LIcvO-bin-bzip2/bin/bzip2
+/ix/store/0GsKotnAh74LIcvO-bin-bzip2/bin/bunzip2
+/ix/store/0GsKotnAh74LIcvO-bin-bzip2/bin/bzcat
+/ix/store/0GsKotnAh74LIcvO-bin-bzip2/bin/bzip2recover
+/ix/store/0GsKotnAh74LIcvO-bin-bzip2/bin/bzgrep
+/ix/store/0GsKotnAh74LIcvO-bin-bzip2/bin/bzegrep
+/ix/store/0GsKotnAh74LIcvO-bin-bzip2/bin/bzfgrep
+/ix/store/0GsKotnAh74LIcvO-bin-bzip2/bin/bzmore
+/ix/store/0GsKotnAh74LIcvO-bin-bzip2/bin/bzless
+/ix/store/0GsKotnAh74LIcvO-bin-bzip2/bin/bzdiff
+/ix/store/0GsKotnAh74LIcvO-bin-bzip2/bin/bzcmp
+/ix/store/0GsKotnAh74LIcvO-bin-bzip2/env
+/ix/store/0GsKotnAh74LIcvO-bin-bzip2/touch
+.fi
+.RE
+.PP
+A \fIrealm \fR is also a package that contains symbolic links to other packages:
+.RS
+.nf
+ix# find /ix/store/0Q4rkMy8J8D1WTVn-rlm-system
+...
+/ix/store/0Q4rkMy8J8D1WTVn-rlm-system/bin/runit
+/ix/store/0Q4rkMy8J8D1WTVn-rlm-system/bin/runit-init
+/ix/store/0Q4rkMy8J8D1WTVn-rlm-system/bin/runsvchdir
+/ix/store/0Q4rkMy8J8D1WTVn-rlm-system/bin/utmpset
+/ix/store/0Q4rkMy8J8D1WTVn-rlm-system/bin/iwctl
+/ix/store/0Q4rkMy8J8D1WTVn-rlm-system/bin/iwd
+/ix/store/0Q4rkMy8J8D1WTVn-rlm-system/bin/sud_client
+/ix/store/0Q4rkMy8J8D1WTVn-rlm-system/bin/sud_server
+/ix/store/0Q4rkMy8J8D1WTVn-rlm-system/bin/doas
+/ix/store/0Q4rkMy8J8D1WTVn-rlm-system/bin/sudo
+/ix/store/0Q4rkMy8J8D1WTVn-rlm-system/bin/setcwd
+/ix/store/0Q4rkMy8J8D1WTVn-rlm-system/bin/mdevd
+/ix/store/0Q4rkMy8J8D1WTVn-rlm-system/bin/mdevd-coldplug
+/ix/store/0Q4rkMy8J8D1WTVn-rlm-system/meta.json
+/ix/store/0Q4rkMy8J8D1WTVn-rlm-system/env
+/ix/store/0Q4rkMy8J8D1WTVn-rlm-system/touch
+.fi
+.RE
+.PP
+Some realms have anchor links that mark the current (used) version of a certain realm:
+.RS
+.nf
+ix# ls -la /ix/realm/
+total 0
+drwxrwxrwx .
+drwxr-xr-x ..
+lrwxrwxrwx boot -> /ix/store/RCa2L8DHZs71ArSI-rlm-boot
+lrwxrwxrwx kernel -> /ix/store/m3K7uWjZLVDshLNq-rlm-kernel
+lrwxrwxrwx pg -> /ix/store/QC6vXQZNfLfhT4t1-rlm-pg
+lrwxrwxrwx system -> /ix/store/PIYCjYiLy1AIxVVl-rlm-system
+.fi
+.RE
+.PP
+On a \fBstal/IX \fRsystem, only the "system" realm and the realm with your username are usable by default. To use the contents of a realm, simply add that realm to your PATH:
+.RS
+.nf
+ix# export PATH="/ix/realm/boot/bin:${PATH}"
+.fi
+.RE
+.PP
+Any user with sudo configured can install packages on the system. Using a content-addressable store, different versions of packages will not overlap. Different users can use different versions of the IX repository. The recommended way to customize the system is to clone the repository on GitHub and make the necessary changes to your branch. Perhaps someday there will be support for overlays.
+.SH SUBCOMMANDS
+.TP
+\fBmut \fR[\fIrealm \fR[\fIflag\fR...] [\fIpackage\fR [\fIflag\fR...]...]...]
+Modify one or more realms and optionally install or remove one or more packages in those realms. Flags can be specified using \fB--\fIname\fB=\fR[\fIvalue\fR], either on a per-package basis or for an entire realm. Package names can be prepended with a \fB- \fRto remove a package, or \fB+ \fR to add a package (the default). If no realms are specified, it defaults to the realm with your username. If no packages are specified, then it will update all packages in the specified realms.
+.TP
+\fBrun \fR[\fIpackage\fR [\fIflag\fR...]...] \fB-- \fIcommand \fR[\fIargument\fR...]
+Prepare a new realm and run an arbitrary command in that realm.
+.TP
+\fBlet \fR[\fIrealm \fR[\fIflag\fR...] [\fIpackage\fR [\fIflag\fR...]...]...]
+Does the same as \fBmut\fR, but does not switch the anchor link. The subcommand is useful for checking the contents of the resulting realm before switching.
+.TP
+\fBbuild [\fIpackage\fR [\fIflag\fR...]...]
+This is \fBlet \fRover a temporary (ephemeral) realm. This subcommand is useful for seeing how some set of packages (maybe just one) would look in a freshly created realm, without flags and other environments.
+.TP
+\fBgc \fR[\fIprefix\fR...]
+Find all unused packages in /ix/store/ and move them to the /ix/trash/ folder for asynchronous removal. A package is considered unused if there is no path to it from the anchor realms in /ix/realm/. Prefixes can be specified to control what kinds of packages go to the trash; the default prefixes are "lib", "bin", "lnk", "aux", and "rlm".
+.TP
+\fBlist \fR[\fIrealm\fR...]
+View a list of all realms or installed packages (with flags) in the specified realms.
+.TP
+\fBtool \fR[\fItool\fR [\fIargument\fR...]...]
+Use tools which are implemented as separate scripts and are not part of the core. For example, because they are not well implemented as a whole or their semantics are not well developed. If no tool is specified, then it defaults to "list" which does not exist. The following tools are available: \fBlistall\fR, \fBmkfs\fR, \fBpypi\fR, \fBreconf\fR, \fBregen\fR, \fBupver\fR.
+.TP
+\fBdep \fIpackage\fR...
+Print a list of ix.sh files for the specified packages.
+.TP
+\fBpurge \fIrealm\fR...
+Remove the anchor links for the specified realms.
+.SH EXIT STATUS
+0 if the operation is successful.
+.PP
+1 if \fBIX \fRwas invoked without a subcommand or with an invalid subcommand, an internal error was encountered, or a keyboard interrupt was triggered.
+.PP
+If a subprocess failed, then \fBIX \fRreturns the exit code of that subprocess.
+.SH ENVIRONMENT
+.TP
+.B IX_B_DIR
+The directory containing binaries on the host system during the build of a package.
+.TP
+.B IX_BINARY
+The path to the \fBIX \fRexecutable.
+.TP
+.B IX_DIR
+The directory containing the \fBIX \fRexecutable.
+.TP
+.B IX_DUMP_GRAPH
+If set, print the build graph in JSON format and exit.
+.TP
+.B IX_DUMP_REPO
+If set, print the build graph in JSON format.
+.TP
+.B IX_EXEC_KIND
+The mode of operation for the \fBIX \fRpackage manager. If set to \fBsystem\fR, \fBIX \fRwill be used as a system-wide package manager. If set to \fBlocal\fR, \fBIX \fRwill be used as a standalone package manager. If set to \fBfake\fR, \fBIX\fR will do almost nothing. Defaults to \fBsystem \fR if /bin/bin_ix/assemble exists, and \fBlocal \fR otherwise.
+.TP
+.B IX_H_DIR
+The directory containing libraries on the host system during the build of a package.
+.TP
+.B IX_PATH
+Paths to directories containing package recipes, separated by colons. Use \fB{builtin} \fRfor the default set of package recipes which are in the "pkgs" directory in the \fBIX \fRrepository. Defaults to \fB{builtin}\fR.
+.TP
+.B IX_PKGS_ROOT
+The path to the \fBIX \fR repository.
+.TP
+.B IX_RANDOM
+A random integer between 0 and 1,000,000,000 used by \fBIX\fR.
+.TP
+.B IX_ROOT
+The directory containing the IX store. Defaults to "/ix".
+.TP
+.B IX_T_DIR
+The directory containing libraries on the target system during the build of a package.
+.TP
+.B IX_THREADS
+The number of threads used by \fBIX\fR. Defaults to the number of CPUs in the system.
+.TP
+.B IX_VERBOSE
+If set, show package dependencies during the build of a package.
+.TP
+.B IX_WHERE
+The path to pkgs/die/scripts in the \fBIX \fRrepository.
+.SH EXAMPLES
+Install Sway in the gui realm:
+.RS
+.nf
+ix# ix mut gui bin/sway
+.fi
+.RE
+.PP
+Install Sway in the gui realm, specifying that it should use the 3D acceleration driver for AMD GPU:
+.RS
+.nf
+ix# ix mut gui bin/sway --mesa_driver=radv
+.fi
+.RE
+.PP
+Let’s assume that all programs in the gui realm should use AMD GPU:
+.RS
+.nf
+ix# ix mut gui --mesa_driver=radv
+.fi
+.RE
+.PP
+And remove the mesa_driver flag for software 3D:
+.RS
+.nf
+ix# ix mut system --mesa_driver=-
+.fi
+.RE
+.PP
+Add a browser to the gui realm:
+.RS
+.nf
+ix# ix mut gui bin/epiphany
+.fi
+.RE
+.PP
+We are tired of Sway and want to use Wayfire:
+.RS
+.nf
+ix# ix mut gui -bin/sway bin/wayfire
+.fi
+.RE
+.PP
+Update all installed programs in the gui realm:
+.RS
+.nf
+ix# ix mut gui
+.fi
+.RE
+.SH REPORTING BUGS
+To report bugs, create an issue at
+.UR https://github.com/stal-ix/ix/issues
+.UE . To submit patches, create a pull request at
+.UR https://github.com/pg83/ix/pulls
+.UE .
