@@ -6,6 +6,7 @@ lib/qt/6/base
 lib/drivers/3d
 lib/qt/6/wayland
 lib/qt/6/imageformats
+# {{opengl | defined('opengl')}}
 {% endblock %}
 
 {% block premain_lang %}c++ -std=c++20{% endblock %}
