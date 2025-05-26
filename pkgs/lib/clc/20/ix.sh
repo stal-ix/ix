@@ -8,3 +8,7 @@
 {{super()}}
 lib/llvm/20
 {% endblock %}
+
+{% block bld_tool %}
+bin/llvm/spirv/20
+{% endblock %}

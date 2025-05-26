@@ -12,7 +12,6 @@ cd libclc
 
 {% block bld_tool %}
 bld/python
-bin/llvm/spirv
 {% endblock %}
 
 {% block setup_target_flags %}
