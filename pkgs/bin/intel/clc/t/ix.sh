@@ -10,8 +10,6 @@ lib/z
 lib/clc
 lib/kernel
 lib/spirv/tools
-lib/llvm/{{default_clang}}
-lib/spirv/llvm/translator
 {% endblock %}
 
 {% block bld_tool %}
