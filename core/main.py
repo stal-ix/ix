@@ -75,11 +75,10 @@ def main(argv, ix):
     except subprocess.CalledProcessError as e:
         return e.returncode
     except ce.Error as e:
-        if e.visible:
-            if e.exception:
-                print(f'{e.exception.__class__.__name__}: {e.exception}')
+        if e.exception:
+            print(f'{e.exception.__class__.__name__}: {e.exception}')
 
-            print(f'{e}')
+        print(f'{e}')
 
         return 1
     except KeyboardInterrupt:

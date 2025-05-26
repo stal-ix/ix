@@ -1,5 +1,4 @@
 class Error(Exception):
-    def __init__(self, s, exception=None, visible=True):
+    def __init__(self, s, exception=None):
         Exception.__init__(self, s)
         self.exception = exception
-        self.visible = visible
