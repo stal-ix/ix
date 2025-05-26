@@ -79,7 +79,7 @@ bin/inkscape
 bin/gdb/16
 bin/gdb/15
 bin/ddc/util
-bin/ya/final
+#bin/ya/final
 bin/pixman
 bin/ya
 bin/gg
