@@ -1,5 +1,7 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block task_pool %}full{% endblock %}
+
 {% block git_repo %}
 https://github.com/google/swiftshader
 {% endblock %}
