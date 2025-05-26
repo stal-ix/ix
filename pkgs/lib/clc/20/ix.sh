@@ -10,5 +10,6 @@ lib/llvm/20
 {% endblock %}
 
 {% block bld_tool %}
+{{super()}}
 bin/llvm/spirv/20
 {% endblock %}
