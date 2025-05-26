@@ -34,6 +34,7 @@ lib/json/nlohmann
 lib/shim/fake(lib_name=GLX)
 lib/shim/fake(lib_name=glfw)
 lib/shim/fake(lib_name=OpenGL)
+# {{opengl | defined('opengl')}}
 {% endblock %}
 
 {% block bld_tool %}
