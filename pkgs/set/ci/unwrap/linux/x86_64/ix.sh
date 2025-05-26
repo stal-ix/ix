@@ -51,6 +51,7 @@
 #bin/fizzy
 #bin/strawberry
 #bin/wx/maxima
+bin/perl/latest
 bin/vulkan/tools
 bin/meson/1/8
 bin/libtool/next
