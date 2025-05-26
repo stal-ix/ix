@@ -57,7 +57,7 @@ angle_build_tests=false
 angle_enable_commit_id=false
 clang_base_path=""
 clang_use_chrome_plugins=false
-clang_version={{default_clang}}
+clang_version={{clang_ver or default_clang}}
 is_clang=true
 custom_toolchain="//build/toolchain/linux/unbundle:default"
 host_toolchain="//build/toolchain/linux/unbundle:default"
@@ -103,7 +103,7 @@ sed -e 's|directory + libraryName|libraryName|' \
 {% block configure %}
 {{super()}}
 find ${tmp}/obj -type f -name '*.ninja' | while read l; do
-    sed -e 's|../../../../lib/clang/{{default_clang}}/lib/x86_64-unknown-linux-gnu/libclang_rt.builtins.a||' \
+    sed -e 's|../../../../lib/clang/{{clang_ver or default_clang}}/lib/x86_64-unknown-linux-gnu/libclang_rt.builtins.a||' \
         -e 's|-Wno-nontrivial-memcall||g' \
         -i ${l}
 done
