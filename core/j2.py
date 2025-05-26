@@ -87,10 +87,10 @@ def group_by(k):
 
 def fmt_error(s):
     if s == 'vulkan':
-        return 'please provide vulkan driver via --vulkan= switch'
+        return 'please provide vulkan driver via --vulkan= switch, like in https://github.com/stal-ix/stal-ix.github.io/blob/main/ACCEL.md'
 
     if s == 'opengl':
-        return 'please provide opengl driver via --opengl= switch'
+        return 'please provide opengl driver via --opengl= switch, like in https://github.com/stal-ix/stal-ix.github.io/blob/main/ACCEL.md'
 
     return f'{s} undefined'
 

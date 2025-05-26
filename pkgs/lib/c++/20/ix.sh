@@ -4,7 +4,6 @@
 {% include '//lib/llvm/20/ver.sh' %}
 {% endblock %}
 
-{% block build_flags %}
-{{super()}}
-wrap_cc
+{% block step_patch %}
+:
 {% endblock %}

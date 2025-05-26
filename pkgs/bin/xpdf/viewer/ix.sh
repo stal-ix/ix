@@ -4,6 +4,7 @@
 lib/qt/6/base
 lib/qt/6/deps
 lib/{{allocator}}/trim(delay=1,bytes=1000000)
+# {{opengl | defined('opengl')}}
 {{super()}}
 {% endblock %}
 
