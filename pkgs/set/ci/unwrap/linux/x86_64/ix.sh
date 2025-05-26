@@ -80,9 +80,9 @@ bin/gdb/16
 bin/gdb/15
 bin/ddc/util
 #bin/ya/final
-bin/pixman
-bin/ya
+#bin/ya
 bin/gg
+bin/pixman
 bin/deya
 bin/ip/traf/ng
 bin/ix/init
