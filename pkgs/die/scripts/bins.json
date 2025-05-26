@@ -1290,7 +1290,6 @@
 {"bin": "llvm-config", "ix_pkg_name": "bin/dxsc"}
 {"bin": "llvm-diff", "ix_pkg_name": "bin/dxsc"}
 {"bin": "llvm-extract", "ix_pkg_name": "bin/dxsc"}
-{"bin": "llvm-spirv", "ix_pkg_name": "bin/llvm/spirv"}
 {"bin": "llvm-stress", "ix_pkg_name": "bin/dxsc"}
 {"bin": "llvm-tblgen", "ix_pkg_name": "bin/dxsc"}
 {"bin": "ln", "ix_pkg_name": "bin/coreutils/9/7"}
