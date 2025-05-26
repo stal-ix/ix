@@ -124,8 +124,8 @@ bin/e2tools
 bin/httping
 bin/cast/text
 bin/mrustc/cargo
-bin/mrustc
-bin/mrustc/boot
+#bin/mrustc
+#bin/mrustc/boot
 bin/curl/ngtcp2
 bin/evdev
 bin/bloaty
