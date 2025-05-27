@@ -5,7 +5,7 @@ liblinear
 {% endblock %}
 
 {% block version %}
-2.48
+2.49
 {% endblock %}
 
 {% block fetch %}
