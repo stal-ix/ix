@@ -5,12 +5,12 @@ mold
 {% endblock %}
 
 {% block version %}
-2.39.1
+2.40.0
 {% endblock %}
 
 {% block fetch %}
 https://github.com/rui314/mold/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:231ea3643a14fe5b88478c97b68b31f7c975b57b247a81356ffd889d015b5cc1
+sha:ee93ef0868cd54d1f30dfba1070dbacf04c1a35428bbea307a4b9242a883ad20
 {% endblock %}
 
 {% block bld_libs %}
