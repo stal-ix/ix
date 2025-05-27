@@ -1,3 +1,4 @@
+https://huggingface.co/datasets/stal-ix/pkgsrc/resolve/main/cas/
 http://ix-mirror-0.paroshin.xyz/
 http://ix-mirror.mooo.com/
 http://ix.kmeaw.com/
