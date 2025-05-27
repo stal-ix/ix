@@ -15,10 +15,10 @@ sha:63c6e4dcc1154299e6f363c872900be7f3dcb3e42b9f8f57e05442ec3d89d02d
 
 {% block lib_deps %}
 lib/c
+{% if opengl %}
 {% if linux %}
 lib/glu
 {% endif %}
-{% if opengl %}
 lib/opengl
 {% endif %}
 {% endblock %}

@@ -9,9 +9,7 @@ lib/c
 lib/z
 lib/clc
 lib/kernel
-lib/llvm/19
 lib/spirv/tools
-lib/spirv/llvm/translator
 {% endblock %}
 
 {% block bld_tool %}

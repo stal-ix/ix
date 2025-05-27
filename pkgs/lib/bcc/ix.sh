@@ -24,7 +24,7 @@ v{{self.version().strip()}}
 lib/c
 lib/xz
 lib/bpf
-lib/llvm/19
+lib/llvm
 lib/elfutils
 {% endblock %}
 

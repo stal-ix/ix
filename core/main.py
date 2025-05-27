@@ -7,7 +7,7 @@ import core.error as ce
 
 
 CLIS = [
-    ('core.cmd_realm', 'dep', False),
+    ('core.cmd_realm', 'dep', True),
     ('core.cmd_realm', 'mut', False),
     ('core.cmd_realm', 'let', False),
     ('core.cmd_realm', 'run', False),
@@ -75,17 +75,10 @@ def main(argv, ix):
     except subprocess.CalledProcessError as e:
         return e.returncode
     except ce.Error as e:
-        if e.visible:
-            if e.context:
-                if '\n' in e.context:
-                    print(f'Context:\n{e.context}')
-                else:
-                    print(f'Context: {e.context}')
+        if e.exception:
+            print(f'{e.exception.__class__.__name__}: {e.exception}')
 
-            if e.exception:
-                print(f'{e.exception.__class__.__name__}: {e.exception}')
-
-            print(f'{e}')
+        print(f'{e}')
 
         return 1
     except KeyboardInterrupt:

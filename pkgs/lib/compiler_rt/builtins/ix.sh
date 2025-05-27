@@ -1,12 +1,10 @@
 {% extends '//die/hub.sh' %}
 
 {% block lib_deps %}
-{% if linux %}
-{% if armv7 %}
+{% if linux and armv7 %}
 lib/compiler_rt/builtins/hack
-{% else %}
-lib/compiler_rt/builtins/{{crt_ver or '19'}}
-{% endif %}
+{% elif linux %}
+lib/compiler_rt/builtins/{{crt_ver or clang_ver or default_clang}}
 {% else %}
 # TODO(pg): fix builtins for darwin
 lib/compiler_rt/builtins/hack

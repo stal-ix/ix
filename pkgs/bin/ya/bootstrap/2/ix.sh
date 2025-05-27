@@ -10,6 +10,6 @@
 
 {% block bld_tool %}
 bin/gg
-bin/ya/bootstrap/1
+bin/ya/bootstrap/1(clang_ver=18)
 {{super()}}
 {% endblock %}

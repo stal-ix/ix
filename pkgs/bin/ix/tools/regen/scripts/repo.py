@@ -43,6 +43,7 @@ def export_repology(rec):
 
         res = {
             'category': rec['norm_name'].split('/')[0],
+            'ix_pkg_fs_name': rec['pkg_name'],
             'ix_pkg_name': rec['norm_name'].removesuffix('/unwrap'),
             'ix_pkg_full_name': rec['norm_name'],
             'pkg_name': pkg_name,

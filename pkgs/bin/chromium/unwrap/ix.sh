@@ -72,9 +72,7 @@ lib/xiph/speex
 lib/fontconfig
 lib/xkb/common
 lib/shim/extra
-{% if bin %}
 lib/drivers/3d
-{% endif %}
 lib/bsd/overlay
 lib/nss/nssckbi
 lib/build/errlimit
@@ -247,7 +245,7 @@ build_with_tflite_lib=false
 chrome_pgo_phase=0
 clang_base_path=""
 clang_use_chrome_plugins=false
-clang_version={{clang_ver or '19'}}
+clang_version={{clang_ver}}
 custom_toolchain="//build/toolchain/linux/unbundle:default"
 dawn_enable_vulkan_validation_layers=false
 disable_fieldtrial_testing_config=true

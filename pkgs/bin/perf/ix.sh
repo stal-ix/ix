@@ -1,6 +1,6 @@
 {% extends '//die/c/make.sh' %}
 
-{% include '//bin/kernel/6/14/ver.sh' %}
+{% include '//bin/kernel/6/15/ver.sh' %}
 
 {% block fetch %}
 {{self.kernel_url().strip()}}
@@ -13,12 +13,14 @@ lib/z
 lib/xz
 lib/c++
 lib/cap
+lib/bpf
 lib/bfd
 lib/ctf
 lib/pfm
 lib/glib
 lib/zstd
 lib/numa
+lib/llvm
 lib/slang
 lib/kernel
 lib/unwind
@@ -26,7 +28,7 @@ lib/iberty
 lib/curses
 lib/opcodes
 lib/openssl
-lib/llvm/19
+lib/trace/fs
 lib/elfutils
 lib/readline
 lib/cap/stone
@@ -52,6 +54,8 @@ bld/perl
 bld/bison
 bld/python
 bld/shebangs
+bin/bpf/tool
+bin/bpf/clang
 bld/pkg/config
 bld/llvm/config
 {% endblock %}
@@ -72,6 +76,10 @@ HOSTLD=${HOST_CC}
 V=1
 {% endif %}
 LIBTRACEEVENT_DIR=${PKG_CONFIG_PATH}
+BPFTOOL=${BPFTOOL}
+CLANG_SYS_INCLUDES=${CLANG_HEADERS}
+CLANG=bpf_clang
+LIBBPF_INCLUDE=${BPF_HEADERS}
 {% endblock %}
 
 {% block build_flags %}

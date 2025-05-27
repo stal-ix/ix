@@ -21,6 +21,7 @@ lib/sdl/2
 lib/sdl/deps
 lib/sdl/2/mixer
 lib/sdl/2/image
+# {{opengl | defined('opengl')}}
 {% endblock %}
 
 {% block bld_tool %}

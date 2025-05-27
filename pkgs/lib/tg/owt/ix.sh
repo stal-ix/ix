@@ -68,6 +68,9 @@ find . -type f | while read l; do
         -e 's|third_party/crc32c/src/include/crc32c|crc32c|' \
         -i ${l}
 done
+
+sed -e 's|ABSL_ATTRIBUTE_LIFETIME_BOUND||' \
+    -i src/api/candidate.h
 {% endblock %}
 
 {% block install %}

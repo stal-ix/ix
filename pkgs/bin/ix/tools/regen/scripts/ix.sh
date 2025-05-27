@@ -20,5 +20,11 @@ EOF
 base64 -d << EOF > ${out}/bin/ix_flt_upstream
 {% include 'ix_flt_upstream.py/base64' %}
 EOF
+base64 -d << EOF > ${out}/bin/ix_fetch
+{% include 'ix_fetch.sh/base64' %}
+EOF
+base64 -d << EOF > ${out}/bin/ix_match
+{% include 'ix_match.py/base64' %}
+EOF
 chmod +x ${out}/bin/*
 {% endblock %}

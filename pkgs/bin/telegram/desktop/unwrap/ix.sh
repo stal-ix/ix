@@ -32,7 +32,6 @@ lib/qt/6/base
 lib/qt/6/deps
 lib/glib/mm/3
 lib/tg/rlottie
-lib/drivers/3d
 lib/qt/6/compat
 lib/qt/6/wayland
 lib/xiph/rnnoise

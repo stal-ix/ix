@@ -51,6 +51,7 @@
 #bin/fizzy
 #bin/strawberry
 #bin/wx/maxima
+bin/perl/latest
 bin/vulkan/tools
 bin/meson/1/8
 bin/libtool/next
@@ -77,12 +78,11 @@ bin/nix
 bin/coreutils/9/6
 bin/inkscape
 bin/gdb/16
-bin/gdb/15
 bin/ddc/util
 bin/ya/final
-bin/pixman
 bin/ya
 bin/gg
+bin/pixman
 bin/deya
 bin/ip/traf/ng
 bin/ix/init
@@ -124,8 +124,8 @@ bin/e2tools
 bin/httping
 bin/cast/text
 bin/mrustc/cargo
-bin/mrustc
-bin/mrustc/boot
+#bin/mrustc
+#bin/mrustc/boot
 bin/curl/ngtcp2
 bin/evdev
 bin/bloaty
@@ -134,7 +134,6 @@ bin/xdg/dbus/proxy
 bin/elementary/screenshot
 bin/sway(opengl=mesa/iris,vulkan=mesa/iris)
 bin/sway(opengl=mesa/radeonsi,vulkan=mesa/radeonsi)
-bin/llvm/spirv
 bin/elementary/dock
 bin/ebpf/verifier
 bin/cpu/fetch
@@ -154,8 +153,6 @@ bin/vala/bootstrap
 bin/clapper
 bin/nftables
 bin/bpf/tool
-bin/gdb/14
-bin/gdb/15
 bin/skia/svg
 bin/ladybird
 bin/cvt
@@ -387,7 +384,6 @@ bin/gcc
 bin/gcc/cc/scripts
 bin/gcc/cc
 bin/zsh
-bin/gdb
 bin/btop++
 bin/mosh
 bin/dbus/sys

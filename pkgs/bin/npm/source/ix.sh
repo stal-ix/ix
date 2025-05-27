@@ -17,7 +17,7 @@ sha:74ab2ea044ba55447e5d65f31a9ab6aefe9224eb755cbdf64a1b6c057e777992
 
 {% block use_network %}true{% endblock %}
 
-{% set sum %}0c0e49109f87ae5b14254791d7f6b54f5498576a5d92dd2040e8f8235aeb0c86{% endset %}
+{% set sum %}17376f12bc40e867e5919911708a2650f66f96255e24fb74bb568af53eae5171{% endset %}
 {% set nam %}npm_{{sum}}.pzd{% endset %}
 
 {% block predict_outputs %}

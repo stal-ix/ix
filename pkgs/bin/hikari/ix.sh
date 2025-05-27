@@ -30,8 +30,8 @@ lib/drivers/3d
 
 {% block bld_tool %}
 bld/bmake
-bld/pkg/config
 bld/wayland
+bld/pkg/config
 {% endblock %}
 
 {% block make_flags %}

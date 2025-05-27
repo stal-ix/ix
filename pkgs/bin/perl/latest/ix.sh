@@ -5,12 +5,12 @@ perl
 {% endblock %}
 
 {% block version %}
-5.38.2
+5.40.2
 {% endblock %}
 
 {% block fetch %}
 https://www.cpan.org/src/5.0/perl-{{self.version().strip()}}.tar.gz
-sha:a0a31534451eb7b83c7d6594a497543a54d488bc90ca00f5e34762577f40655e
+sha:10d4647cfbb543a7f9ae3e5f6851ec49305232ea7621aed24c7cfbb0bef4b70d
 {% endblock %}
 
 {% block dup_symbols %}
@@ -24,7 +24,7 @@ Perl_set_ANYOF_arg
 Perl_reg_add_data
 {% endblock %}
 
-{% block build %}
+{% block build1 %}
 make libperl.a
 llvm-objcopy \
 {% for x in ix.parse_list(self.dup_symbols()) %}

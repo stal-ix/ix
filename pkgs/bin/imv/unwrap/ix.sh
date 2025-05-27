@@ -27,6 +27,7 @@ lib/wayland
 lib/freeimage
 lib/drivers/3d
 lib/xkb/common
+# {{opengl | defined('opengl')}}
 {% endblock %}
 
 {% block bld_tool %}

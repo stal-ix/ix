@@ -17,3 +17,7 @@ FREEGLUT_BUILD_DEMOS=ON
 {{super()}}
 GL/glu.h
 {% endblock %}
+
+{% block install %}
+cp -R ${tmp}/obj/bin ${out}/
+{% endblock %}

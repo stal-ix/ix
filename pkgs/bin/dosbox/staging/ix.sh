@@ -24,14 +24,16 @@ lib/slirp
 lib/iir/1
 lib/sdl/2
 lib/expat
-lib/opengl
 lib/kernel
 lib/sdl/deps
 lib/sdl/2/net
 lib/opus/file
 lib/fluid/synth
 lib/xiph/speex/dsp
+{% if opengl %}
+lib/opengl
 lib/shim/fake(lib_name=GL)
+{% endif %}
 {% endblock %}
 
 {% block build_flags %}
@@ -41,6 +43,11 @@ wrap_cc
 {% block meson_flags %}
 use_alsa=false
 use_zlib_ng=false
+{% if opengl %}
+use_opengl=true
+{% else %}
+use_opengl=false
+{% endif %}
 {% endblock %}
 
 {% block bld_tool %}

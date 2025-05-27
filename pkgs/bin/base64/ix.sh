@@ -1,16 +1,16 @@
 {% extends '//die/c/make.sh' %}
 
 {% block pkg_name %}
-base64
+base64-aklomp
 {% endblock %}
 
 {% block version %}
-0.4.0
+0.5.2
 {% endblock %}
 
 {% block fetch %}
 https://github.com/aklomp/base64/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:1fce54059c504b2604c22c20cd930444a71b3340fc81334c037da63976d92002
+sha:723a0f9f4cf44cf79e97bcc315ec8f85e52eb104c8882942c3f2fba95acc080d
 {% endblock %}
 
 {% block bld_libs %}
