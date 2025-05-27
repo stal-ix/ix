@@ -8,11 +8,13 @@
 {% endblock %}
 
 {% block bld_libs %}
+lib/linux/headers/next
 lib/c
 lib/z
 lib/xz
 lib/c++
 lib/cap
+lib/bpf
 lib/bfd
 lib/ctf
 lib/pfm
@@ -54,6 +56,7 @@ bld/bison
 bld/python
 bld/shebangs
 bin/bpf/tool
+bin/bpf/clang
 bld/pkg/config
 bld/llvm/config
 {% endblock %}
@@ -75,6 +78,9 @@ V=1
 {% endif %}
 LIBTRACEEVENT_DIR=${PKG_CONFIG_PATH}
 BPFTOOL=${BPFTOOL}
+CLANG_SYS_INCLUDES=${CLANG_HEADERS}
+CLANG=bpf_clang
+LIBBPF_INCLUDE=${BPF_HEADERS}
 {% endblock %}
 
 {% block build_flags %}
