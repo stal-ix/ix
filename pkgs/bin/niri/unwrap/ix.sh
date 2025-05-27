@@ -5,7 +5,7 @@ niri
 {% endblock %}
 
 {% block version %}
-25.05
+25.05.1
 {% endblock %}
 
 {% block cargo_url %}
@@ -13,7 +13,7 @@ https://github.com/YaLTeR/niri/archive/refs/tags/v{{self.version().strip()}}.tar
 {% endblock %}
 
 {% block cargo_sha %}
-84cdfa309d10f1b43b40197b5543865a8ddafe4a08e5f1d9fea02a7d70e22fee
+2f925f9c8ed713ba2f7bbfc740ba623225f57b6457fd6e78b0e6e988b8740659
 {% endblock %}
 
 {% block lib_deps %}

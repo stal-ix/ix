@@ -5,12 +5,12 @@ libdispatch
 {% endblock %}
 
 {% block version %}
-6.1
+6.1.1
 {% endblock %}
 
 {% block fetch %}
 https://github.com/apple/swift-corelibs-libdispatch/archive/refs/tags/swift-{{self.version().strip()}}-RELEASE.tar.gz
-sha:5bba8d7442890f7dbd37a9245340c5bb0c4c924dee6180ba30385b24e3fdf121
+sha:6fc6f8b1767a1348e1d960647b2bfbc52fd7074b7aeab97bd0f4b21af58baa47
 {% endblock %}
 
 {% block lib_deps %}

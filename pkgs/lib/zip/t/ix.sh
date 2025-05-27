@@ -5,12 +5,12 @@ libzip
 {% endblock %}
 
 {% block version %}
-1.11.3
+1.11.4
 {% endblock %}
 
 {% block fetch %}
 https://libzip.org/download/libzip-{{self.version().strip()}}.tar.xz
-sha:9509d878ba788271c8b5abca9cfde1720f075335686237b7e9a9e7210fe67c1b
+sha:8a247f57d1e3e6f6d11413b12a6f28a9d388de110adc0ec608d893180ed7097b
 {% endblock %}
 
 {% block lib_deps %}
