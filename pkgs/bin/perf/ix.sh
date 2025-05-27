@@ -8,7 +8,6 @@
 {% endblock %}
 
 {% block bld_libs %}
-lib/linux/headers/next
 lib/c
 lib/z
 lib/xz
