@@ -10,7 +10,7 @@ rm -f /ix/realm/mkfs
 
 realm=$(readlink /ix/realm/mkfs)
 
-rm -rf ${TMPDIR}/mkfs
+rm -rf ${TMPDIR}/mkfs || sudo rm -rf ${TMPDIR}/mkfs
 mkdir -p ${TMPDIR}/mkfs
 cd ${TMPDIR}/mkfs
 
@@ -30,4 +30,3 @@ ln -s ix/realm/system/etc etc
 ln -s / usr
 
 bsdtar --uid 1000 --uname ix --gid 1000 --gname ix -cf ${1}/mkfs.tar .
-zstd -10 ${1}/mkfs.tar
