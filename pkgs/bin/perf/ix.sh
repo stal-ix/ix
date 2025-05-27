@@ -19,6 +19,7 @@ lib/pfm
 lib/glib
 lib/zstd
 lib/numa
+lib/llvm
 lib/slang
 lib/kernel
 lib/unwind
@@ -26,7 +27,7 @@ lib/iberty
 lib/curses
 lib/opcodes
 lib/openssl
-lib/llvm/19
+lib/trace/fs
 lib/elfutils
 lib/readline
 lib/cap/stone
@@ -52,6 +53,7 @@ bld/perl
 bld/bison
 bld/python
 bld/shebangs
+bin/bpf/tool
 bld/pkg/config
 bld/llvm/config
 {% endblock %}
@@ -72,6 +74,7 @@ HOSTLD=${HOST_CC}
 V=1
 {% endif %}
 LIBTRACEEVENT_DIR=${PKG_CONFIG_PATH}
+BPFTOOL=${BPFTOOL}
 {% endblock %}
 
 {% block build_flags %}

@@ -26,9 +26,9 @@ lib/z
 lib/cap
 lib/bpf
 lib/bfd
+lib/llvm
 lib/iberty
 lib/opcodes
-lib/llvm/19
 lib/elfutils
 {% endblock %}
 
@@ -59,4 +59,8 @@ mv ${out}/sbin ${out}/bin
 {% block bld_tool %}
 bld/pkg/config
 bld/llvm/config
+{% endblock %}
+
+{% block env %}
+export BPFTOOL=${out}/bin/bpftool
 {% endblock %}
