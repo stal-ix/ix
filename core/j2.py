@@ -106,6 +106,10 @@ def flt_strip_prefix(v, s):
     return v.removeprefix(s)
 
 
+def flt_strip_suffix(v, s):
+    return v.removesuffix(s)
+
+
 def field(v, n):
     return v.split('.')[n]
 
@@ -137,6 +141,7 @@ class Env(jinja2.Environment):
         self.filters['eval'] = self.eval
         self.filters['defined'] = flt_defined
         self.filters['strip_prefix'] = flt_strip_prefix
+        self.filters['strip_suffix'] = flt_strip_suffix
         self.filters['strip'] = strip
         self.filters['print'] = print
         self.filters['field'] = field
