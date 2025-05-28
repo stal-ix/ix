@@ -5,12 +5,12 @@ libslirp
 {% endblock %}
 
 {% block version %}
-4.9.0
+4.9.1
 {% endblock %}
 
 {% block fetch %}
 https://gitlab.freedesktop.org/slirp/libslirp/-/archive/v{{self.version().strip()}}/libslirp-v{{self.version().strip()}}.tar.bz2
-sha:0329092d1dbaf18a7ef640c4d9db54bba71af9e850437b5ff3b31f463951c8ab
+sha:3caff6e2de445f4995629d4929c55419f661b2b1d14f12481e155a71c1e8f811
 {% endblock %}
 
 {% block lib_deps %}
