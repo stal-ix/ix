@@ -5,12 +5,12 @@ smenu
 {% endblock %}
 
 {% block version %}
-1.4.0
+1.5.0
 {% endblock %}
 
 {% block fetch %}
 https://github.com/p-gen/smenu/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:76b5f2ba181ac4d377fde30181fc6f2ecc7cdef82cf78796c18e59b7a033b9c9
+sha:4903990aa870ced8bea48963a5430af170ad2ba3ffc0d3418fd78970fc470a3c
 {% endblock %}
 
 {% block conf_ver %}2/71{% endblock %}
