@@ -22,6 +22,7 @@ curl -k 'https://repology.org/api/v1/projects/?maintainer=anton%40samokhvalov.xy
     | grep -v vulkan \
     | grep -v webkit \
     | grep -v wlroots \
+    | grep -v 'auto/make' \
     | while read l; do (
     echo ${l}
 
