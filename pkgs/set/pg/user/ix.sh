@@ -24,9 +24,10 @@ bin/sway/bg
 bin/iwd/ctl
 bin/swayimg
 bin/tcpdump
+bin/git/lfs
 bin/sing/box
 bin/telegram
-bin/epiphany
+#bin/epiphany
 bin/xdg/open
 bin/tun2socks
 bin/alacritty
