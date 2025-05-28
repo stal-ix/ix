@@ -48,6 +48,7 @@
 #}
 
 {% block run_deps %}
+bin/auto/make/1/18
 #bin/fizzy
 #bin/strawberry
 #bin/wx/maxima

@@ -666,6 +666,7 @@ https://ftp.gnu.org/gnu/automake/automake-1.16.1.tar.xz
 https://ftp.gnu.org/gnu/automake/automake-1.16.3.tar.xz
 https://ftp.gnu.org/gnu/automake/automake-1.16.5.tar.xz
 https://ftp.gnu.org/gnu/automake/automake-1.17.tar.xz
+https://ftp.gnu.org/gnu/automake/automake-1.18.tar.xz
 https://ftp.gnu.org/gnu/bash/bash-3.2.57.tar.gz
 https://ftp.gnu.org/gnu/bash/bash-4.4.18.tar.gz
 https://ftp.gnu.org/gnu/bash/bash-5.1.16.tar.gz
