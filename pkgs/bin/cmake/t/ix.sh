@@ -42,3 +42,8 @@ CMAKE_USE_SYSTEM_LIBARCHIVE=ON
 # for meson
 export CMAKE=${out}/bin/cmake
 {% endblock %}
+
+{% block patch %}
+sed -e 's|CURL_NETRC_OPTION curl_netrc_level|long curl_netrc_level|' \
+    -i Source/cmCurl.cxx
+{% endblock %}

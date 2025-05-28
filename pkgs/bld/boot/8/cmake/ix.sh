@@ -1,4 +1,4 @@
-{% extends '//bin/cmake/t/ix.sh' %}
+{% extends '//die/c/cmake.sh' %}
 
 {% block pkg_name %}
 CMake
@@ -57,4 +57,9 @@ sh bootstrap \
     --generator=Ninja \
     --parallel=${make_thrs}
 {{super()}}
+{% endblock %}
+
+{% block env %}
+# for meson
+export CMAKE=${out}/bin/cmake
 {% endblock %}
