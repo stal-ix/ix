@@ -6,7 +6,7 @@ cd ${IX_DIR}
 
 rm -f /ix/realm/mkfs
 
-./ix mut mkfs set/rootfs set/boot
+./ix mut mkfs set/rootfs set/boot/all set/install
 
 realm=$(readlink /ix/realm/mkfs)
 
@@ -23,8 +23,9 @@ cp -R ${IX_DIR} home/ix/
 
 ix_sync ./ ${realm}
 
-ln -s ${realm} ix/realm/system
 ln -s ${realm} ix/realm/boot
+ln -s ${realm} ix/realm/system
+ln -s ${realm} ix/realm/install
 ln -s ix/realm/system/bin bin
 ln -s ix/realm/system/etc etc
 ln -s / usr

@@ -11,4 +11,5 @@ echo 'host-key:' >> Makefile.in
 {{super()}}
 rm -r ${out}/etc ${out}/share
 rm ${out}/bin/sshd
+chmod +r ${out}/bin/bin_*/ssh-keysign
 {% endblock %}
