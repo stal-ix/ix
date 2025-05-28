@@ -11,12 +11,14 @@ dcbcee8ab32af9ddc7ae1e91c42d995e5281602c
 {% endblock %}
 
 {% block git_sha %}
-b1f884f1fcf87bfe168a4f1d734eb68c1884d28f6b413f783325dda6a57bfb1e
+9d008bd0fa627fe29281925ae437bb32cdcf4ebb0c4bc4e50f5a8f8e13a5a057
 {% endblock %}
 
 {% block git_hook_1 %}
 git rm third_party/gles1_conform
 git rm third_party/dawn
+git rm third_party/SwiftShader
+git rm -r third_party/llvm
 {% endblock %}
 
 {% block bld_tool %}
