@@ -35,6 +35,7 @@ bin/fontconfig
 bin/brightnessctl
 set/pg/user/scripts
 bin/coreutils/uutils
+bin/minio/client/patched
 bin/niri(opengl=mesa/aco,vulkan=mesa/aco)
 {% endblock %}
 
