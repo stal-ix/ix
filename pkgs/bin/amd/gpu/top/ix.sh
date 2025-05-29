@@ -5,7 +5,7 @@ amdgpu_top
 {% endblock %}
 
 {% block version %}
-0.10.4
+0.10.5
 {% endblock %}
 
 {% block cargo_url %}
@@ -13,7 +13,7 @@ https://github.com/Umio-Yasuno/amdgpu_top/archive/refs/tags/v{{self.version().st
 {% endblock %}
 
 {% block cargo_sha %}
-1fe91e95e3eb5f9cf4c409a5b684581d4361734ea4d052ca076d9bed838331b6
+3e75f56d83735e174710472a3e0e95b044e2c91c9db80ed134f753e1878dd71a
 {% endblock %}
 
 {% block bld_libs %}
