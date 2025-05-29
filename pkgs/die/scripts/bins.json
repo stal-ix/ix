@@ -2727,6 +2727,7 @@
 {"bin": "waypaste", "ix_pkg_name": "bin/wayclip"}
 {"bin": "wazero", "ix_pkg_name": "bin/wazero"}
 {"bin": "wc", "ix_pkg_name": "bin/coreutils/9/7"}
+{"bin": "wcurl", "ix_pkg_name": "bin/curl/ngtcp2"}
 {"bin": "wdctl", "ix_pkg_name": "bin/util/linux"}
 {"bin": "webhook", "ix_pkg_name": "bin/web/hook"}
 {"bin": "webpinfo", "ix_pkg_name": "bin/webp"}
