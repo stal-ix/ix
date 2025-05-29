@@ -1766,6 +1766,7 @@ https://github.com/bytecodealliance/wasm-micro-runtime/archive/refs/tags/WAMR-1.
 https://github.com/bytecodealliance/wasm-micro-runtime/archive/refs/tags/WAMR-1.3.2.tar.gz
 https://github.com/bytecodealliance/wasm-micro-runtime/archive/refs/tags/WAMR-2.1.1.tar.gz
 https://github.com/bytecodealliance/wasm-micro-runtime/archive/refs/tags/WAMR-2.2.0.tar.gz
+https://github.com/bytecodealliance/wasm-micro-runtime/archive/refs/tags/WAMR-2.3.0.tar.gz
 https://github.com/c-ares/c-ares/archive/refs/tags/cares-1_19_1.tar.gz
 https://github.com/c-ares/c-ares/archive/refs/tags/cares-1_20_0.tar.gz
 https://github.com/c-ares/c-ares/archive/refs/tags/cares-1_20_1.tar.gz
