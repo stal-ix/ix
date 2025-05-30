@@ -5,12 +5,12 @@ libconfig
 {% endblock %}
 
 {% block version %}
-1.8
+1.8.1
 {% endblock %}
 
 {% block fetch %}
 https://github.com/hyperrealm/libconfig/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:22e13253e652ec583ba0dd5b474bd9c7bd85dc724f2deb0d76a6299c421358ef
+sha:e95798d2992a66ecd547ce3651d7e10642ff2211427c43a7238186ff4c372627
 {% endblock %}
 
 {% block lib_deps %}
