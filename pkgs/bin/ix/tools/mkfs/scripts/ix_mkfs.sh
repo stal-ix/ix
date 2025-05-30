@@ -24,8 +24,8 @@ cp -R ${IX_DIR} home/ix/
 ix_sync ./ ${realm}
 
 ln -s ${realm} ix/realm/boot
+ln -s ${realm} ix/realm/root
 ln -s ${realm} ix/realm/system
-ln -s ${realm} ix/realm/install
 ln -s ix/realm/system/bin bin
 ln -s ix/realm/system/etc etc
 ln -s / usr
