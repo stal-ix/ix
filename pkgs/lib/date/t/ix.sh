@@ -5,12 +5,12 @@ date
 {% endblock %}
 
 {% block version %}
-3.0.3
+3.0.4
 {% endblock %}
 
 {% block fetch %}
 https://github.com/HowardHinnant/date/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:7a390f200f0ccd207e8cff6757e04817c1a0aec3e327b006b7eb451c57ee3538
+sha:56e05531ee8994124eeb498d0e6a5e1c3b9d4fccbecdf555fe266631368fb55f
 {% endblock %}
 
 {% block lib_deps %}
