@@ -1719,6 +1719,7 @@ https://github.com/ascent12/drm_info/archive/refs/tags/v2.3.0.tar.gz
 https://github.com/astral-sh/ruff/archive/refs/tags/0.11.0.tar.gz
 https://github.com/astral-sh/ruff/archive/refs/tags/0.11.10.tar.gz
 https://github.com/astral-sh/ruff/archive/refs/tags/0.11.11.tar.gz
+https://github.com/astral-sh/ruff/archive/refs/tags/0.11.12.tar.gz
 https://github.com/astral-sh/ruff/archive/refs/tags/0.11.2.tar.gz
 https://github.com/astral-sh/ruff/archive/refs/tags/0.11.4.tar.gz
 https://github.com/astral-sh/ruff/archive/refs/tags/0.11.5.tar.gz
