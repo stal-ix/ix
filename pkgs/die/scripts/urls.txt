@@ -1725,6 +1725,7 @@ https://github.com/astral-sh/ruff/archive/refs/tags/0.11.5.tar.gz
 https://github.com/astral-sh/ruff/archive/refs/tags/0.11.9.tar.gz
 https://github.com/astral-sh/ruff/archive/refs/tags/0.9.6.tar.gz
 https://github.com/avahi/avahi/releases/download/v0.8/avahi-0.8.tar.gz
+https://github.com/axboe/liburing/archive/refs/tags/liburing-2.10.tar.gz
 https://github.com/axboe/liburing/archive/refs/tags/liburing-2.2.tar.gz
 https://github.com/axboe/liburing/archive/refs/tags/liburing-2.6.tar.gz
 https://github.com/axboe/liburing/archive/refs/tags/liburing-2.7.tar.gz
