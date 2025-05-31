@@ -4,6 +4,8 @@ set -xue
 
 cd ${IX_DIR}
 
+ref=$(git rev-parse HEAD)
+
 rm -f /ix/realm/mkfs
 
 ./ix mut mkfs set/rootfs set/boot/all set/install
@@ -31,3 +33,6 @@ ln -s ix/realm/system/etc etc
 ln -s / usr
 
 bsdtar --uid 1000 --uname ix --gid 1000 --gname ix -cf ${1}/mkfs.tar .
+zstd -10 -o ${1}/${ref}.tar.zst ${1}/mkfs.tar
+rm -f ${1}/mkfs.tar
+rm -rf ${TMPDIR}/mkfs || sudo rm -rf ${TMPDIR}/mkfs

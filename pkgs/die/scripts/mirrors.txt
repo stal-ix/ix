@@ -1,4 +1,4 @@
-https://huggingface.co/datasets/stal-ix/pkgsrc/resolve/main/cas/
+https://huggingface.co/datasets/stal-ix/pkgsrc/resolve/main/cas/{two}/{sha}
 http://ix-mirror-0.paroshin.xyz/
 http://ix-mirror.mooo.com/
 http://ix.kmeaw.com/

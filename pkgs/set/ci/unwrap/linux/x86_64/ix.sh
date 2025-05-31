@@ -52,6 +52,7 @@ bin/auto/make/1/18
 #bin/fizzy
 #bin/strawberry
 #bin/wx/maxima
+bin/bfs
 bin/perl/latest
 bin/vulkan/tools
 bin/meson/1/8

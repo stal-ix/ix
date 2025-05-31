@@ -52,9 +52,16 @@ def calc_chksum(path, old_cs):
     return chksum(path, 'sha')
 
 
+def fmt_url(url, sha):
+    if '{' in url:
+        return url.replace('{sha}', sha).replace('{two}', sha[:2])
+    else:
+        return url + sha
+
+
 def iter_cached(sha, mirrors):
     for x in mirrors:
-        yield x + sha[4:]
+        yield fmt_url(x, sha[4:])
 
 
 def iter_urls(url, sha, mirrors):

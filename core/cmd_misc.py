@@ -63,9 +63,16 @@ def cli_misc_fetch(ctx):
         do_fetch(*args)
 
 
+def fmt_url(url, sha):
+    if '{' in url:
+        return url.replace('{sha}', sha).replace('{two}', sha[:2])
+    else:
+        return url + sha
+
+
 def iter_cached(sha, mirrors):
     for x in mirrors:
-        yield x + sha[4:]
+        yield fmt_url(x, sha[4:])
 
 
 def iter_fetch(url, sha, mirrors):
