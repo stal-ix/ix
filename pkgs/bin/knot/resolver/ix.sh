@@ -5,12 +5,12 @@ knot-resolver
 {% endblock %}
 
 {% block version %}
-6.0.12
+6.0.13
 {% endblock %}
 
 {% block fetch %}
 https://secure.nic.cz/files/knot-resolver/knot-resolver-{{self.version().strip()}}.tar.xz
-sha:3215f3e9a7e9626cbd9f45a425b1e3734d32ab9a612d0d2aa5205e626c2fee9b
+sha:5e00f10948cc6c8b3eb22ff58fbd6f101f4b92a44e9e760d98519ada1076259f
 {% endblock %}
 
 {% block bld_libs %}

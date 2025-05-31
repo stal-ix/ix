@@ -30,7 +30,7 @@ def flt_host(cmd):
     return cmd
 
 fs_cc = [
-    'clang-19',
+    os.environ['FREESTANDING_CLANG'],
     '-fuse-ld=lld',
     '-nostdlib',
     '-nostdlib++',

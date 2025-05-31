@@ -16,8 +16,10 @@ sha:a7230d6d4959f26cf0c0ef6c9bb479bd94a8c0ec738bf6e164d66c3dc6397e66
 {% block lib_deps %}
 lib/c
 lib/dbus
+lib/uring
 lib/json/c
 lib/openssl
+lib/key/utils
 lib/linux/util
 {% endblock %}
 
