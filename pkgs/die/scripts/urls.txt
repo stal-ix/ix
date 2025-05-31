@@ -3935,6 +3935,7 @@ https://github.com/syslog-ng/syslog-ng/releases/download/syslog-ng-4.8.0/syslog-
 https://github.com/syslog-ng/syslog-ng/releases/download/syslog-ng-4.8.1/syslog-ng-4.8.1.tar.gz
 https://github.com/syslog-ng/syslog-ng/releases/download/syslog-ng-4.8.2/syslog-ng-4.8.2.tar.gz
 https://github.com/syslog-ng/syslog-ng/releases/download/syslog-ng-4.8.3/syslog-ng-4.8.3.tar.gz
+https://github.com/tavianator/bfs/archive/refs/tags/4.0.6.tar.gz
 https://github.com/tdlib/td/archive/refs/tags/v1.8.0.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v4.10.1/tdesktop-4.10.1-full.tar.gz
 https://github.com/telegramdesktop/tdesktop/releases/download/v4.10.2/tdesktop-4.10.2-full.tar.gz
