@@ -7,7 +7,7 @@ DirectXShaderCompiler
 {% endblock %}
 
 {% block version %}
-1.8.2502
+1.8.2505
 {% endblock %}
 
 {% block git_repo %}
@@ -19,7 +19,7 @@ v{{self.version().strip()}}
 {% endblock %}
 
 {% block git_sha %}
-ed3f9b20e5f851ede3dcec657aacca0af96ffe444771ad8889b09060be0e0c49
+69e251710023c80d990780480fe8667aa8e5da71e0cca9acf08273e6b9664f42
 {% endblock %}
 
 {% block git_refine %}
