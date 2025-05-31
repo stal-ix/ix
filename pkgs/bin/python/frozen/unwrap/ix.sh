@@ -13,3 +13,10 @@ cat << EOF > python3
 {% include 'py.py' %}
 EOF
 {% endblock %}
+
+{% block install %}
+{{super()}}
+{% if py_binary_name %}
+mv ${out}/bin/python3 ${out}/bin/{{py_binary_name}}
+{% endif %}
+{% endblock %}
