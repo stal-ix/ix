@@ -152,6 +152,7 @@
 {"bin": "bcomps", "ix_pkg_name": "bin/graphviz"}
 {"bin": "beep", "ix_pkg_name": "bin/busybox/ix"}
 {"bin": "benchmark", "ix_pkg_name": "bin/mbedtls/3"}
+{"bin": "bfs", "ix_pkg_name": "bin/bfs"}
 {"bin": "bim", "ix_pkg_name": "bin/bim"}
 {"bin": "binocle", "ix_pkg_name": "bin/binocle"}
 {"bin": "biosdecode", "ix_pkg_name": "bin/dmidecode"}
