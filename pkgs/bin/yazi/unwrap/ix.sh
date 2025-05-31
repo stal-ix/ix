@@ -5,7 +5,7 @@ yazi
 {% endblock %}
 
 {% block version %}
-25.5.28
+25.5.31
 {% endblock %}
 
 {% block cargo_url %}
@@ -13,7 +13,7 @@ https://github.com/sxyazi/yazi/archive/refs/tags/v{{self.version().strip()}}.tar
 {% endblock %}
 
 {% block cargo_sha %}
-bb270e1ed6860edc4bf18a717b4225fdf231ac129523cdb60ab9e94c85050289
+3d54aeef8977387f164dcfb88f13b44cf5e604b65bc298478c19c96fffdfa21e
 {% endblock %}
 
 {% block bld_libs %}
