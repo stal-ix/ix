@@ -1,7 +1,6 @@
 {% extends '//die/gen.sh' %}
 
 {% block bld_deps %}
-bld/boot/3/sh
 bld/boot/2/env
 {% endblock %}
 
