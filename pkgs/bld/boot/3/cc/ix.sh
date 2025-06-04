@@ -14,6 +14,7 @@ mkdir ${out}/bin
 {% endif %}
 cat << EOF > ${out}/bin/{{x}}
 #!/usr/bin/env sh
+export PATH={{ix_boot_tool(x) | dirname}}:${PATH}
 exec {{ix_boot_tool(x)}} "\${@}"
 EOF
 {% endfor %}

@@ -1,7 +1,6 @@
 {% extends '//bin/coreutils/8/31/ix.sh' %}
 
 {% block bld_libs %}
-bld/boot/5/lib/compiler_rt
 {% endblock %}
 
 {% block bld_deps %}
