@@ -1,6 +1,7 @@
 {% extends '//die/gen.sh' %}
 
 {% block bld_deps %}
+bld/boot/3/sh
 bld/boot/2/env
 {% endblock %}
 
@@ -23,11 +24,3 @@ EOF
 
 chmod +x ${out}/bin/egrep ${out}/bin/fgrep ${out}/bin/makeinfo
 {% endblock%}
-
-{% block script_parts %}
-/usr/bin/env
-PATH={{ix_boot_path}}
-env
-sh
--s
-{% endblock %}
