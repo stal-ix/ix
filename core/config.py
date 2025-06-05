@@ -62,8 +62,8 @@ def enrich(d):
         d['llvm_target'] = {
             'aarch64': 'AArch64',
             'x86_64': 'X86',
-            'armv7': 'TODO',
-            'riscv64': 'TODO',
+            'armv7': 'ARM',
+            'riscv64': 'RISCV',
             'wasm32': 'TODO',
             'wasm64': 'TODO',
         }[d['gnu_arch']]
