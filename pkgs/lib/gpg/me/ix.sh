@@ -5,12 +5,12 @@ gpgme
 {% endblock %}
 
 {% block version %}
-1.24.3
+2.0.0
 {% endblock %}
 
 {% block fetch %}
 https://www.gnupg.org/ftp/gcrypt/gpgme/gpgme-{{self.version().strip()}}.tar.bz2
-sha:bfc17f5bd1b178c8649fdd918956d277080f33df006a2dc40acdecdce68c50dd
+sha:ddf161d3c41ff6a3fcbaf4be6c6e305ca4ef1cc3f1ecdfce0c8c2a167c0cc36d
 {% endblock %}
 
 {% block lib_deps %}
