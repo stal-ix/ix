@@ -405,6 +405,7 @@ https://devimages-cdn.apple.com/design/resources/download/NY.dmg
 https://devimages-cdn.apple.com/design/resources/download/SF-Compact.dmg
 https://devimages-cdn.apple.com/design/resources/download/SF-Mono.dmg
 https://devimages-cdn.apple.com/design/resources/download/SF-Pro.dmg
+https://dist.torproject.org/tor-0.4.8.16.tar.gz
 https://distfiles.gentoo.org/distfiles/79/libmetalink-0.1.3.tar.bz2
 https://distfiles.macports.org/bsdiff/bsdiff-4.3.tar.gz
 https://dl.suckless.org/tools/9base-6.tar.gz
