@@ -5,12 +5,12 @@ dhcpcd
 {% endblock %}
 
 {% block version %}
-10.2.3
+10.2.4
 {% endblock %}
 
 {% block fetch %}
 https://github.com/NetworkConfiguration/dhcpcd/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:32f3b01489e545637dc444d83390d7eed1a9d675cb8c664e374a63bbbbd37512
+sha:85c8b2535ddf52091b30b31f29b0f9cafd9cd94dc6b78f1bd92db2afce4c1943
 {% endblock %}
 
 {% block bld_libs %}
