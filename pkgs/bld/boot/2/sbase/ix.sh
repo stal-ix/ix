@@ -14,6 +14,7 @@ bld/boot/1/env
 {% endblock %}
 
 {% block setup_compiler %}
+{{super()}}
 export PATH="${out}/bin:${PWD}:${PATH}"
 {% endblock %}
 
