@@ -24,5 +24,5 @@ Goals:
 * reproducible builds
 * pure builds if possible
 * serve as stalix foundation
+* as few binary seeds as possible
 * first-class support for darwin and linux
-* (almost)no binary seeds, only compiler and dash

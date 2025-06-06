@@ -8,7 +8,6 @@ bld/boot/8/lib/linux
 lib/darwin/framework/SystemConfiguration
 {% endif %}
 bld/boot/8/lib/z
-bld/boot/8/lib/compiler_rt
 {% endblock %}
 
 {% block bld_deps %}

@@ -14,6 +14,7 @@ mkdir ${out}/bin
 {% endif %}
 cat << EOF > ${out}/bin/{{x}}
 #!/usr/bin/env sh
+export PATH={{ix_boot_tool(x) | dirname}}:${PATH}
 exec {{ix_boot_tool(x)}} "\${@}"
 EOF
 {% endfor %}
@@ -31,12 +32,4 @@ EOF
 {{ix.error('shit happen')}}
 {% endif %}
 chmod +x ${out}/bin/*
-{% endblock%}
-
-{% block script_parts %}
-/usr/bin/env
-PATH={{ix_boot_path}}
-env
-sh
--s
 {% endblock %}

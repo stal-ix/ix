@@ -6,5 +6,5 @@ sha:beb902a5f69d9e57710112203db38111dad6d30556ea8ce389284c8077fe944d
 {% endblock %}
 
 {% block host_libs %}
-lib/musl/pure(std_env={{std_env}},std_box={{std_box}},boot={{boot}})
+lib/musl/unwrap(std_env={{std_env}},std_box={{std_box}},boot={{boot}},crt_ver=hack/ish,libc_lite=1)
 {% endblock %}

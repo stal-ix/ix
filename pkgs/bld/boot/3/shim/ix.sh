@@ -23,11 +23,3 @@ EOF
 
 chmod +x ${out}/bin/egrep ${out}/bin/fgrep ${out}/bin/makeinfo
 {% endblock%}
-
-{% block script_parts %}
-/usr/bin/env
-PATH={{ix_boot_path}}
-env
-sh
--s
-{% endblock %}

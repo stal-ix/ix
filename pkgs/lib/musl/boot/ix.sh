@@ -1,8 +1,5 @@
 {% extends '//lib/musl/pure/ix.sh' %}
 
-{% block make_no_thrs %}
-{% endblock %}
-
 {% block step_install %}
 {{super()}}
 

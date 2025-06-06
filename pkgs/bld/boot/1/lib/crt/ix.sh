@@ -1,16 +1,18 @@
-{% extends '//bld/boot/8/lib/compiler_rt/ix.sh' %}
+{% extends '//lib/compiler_rt/builtins/hack/ish/ix.sh' %}
 
 {% block lib_deps %}
 {% endblock %}
 
 {% block bld_libs %}
+bld/boot/1/lib/musl
 {% endblock %}
 
 {% block bld_deps %}
-bld/boot/4/env
+bld/boot/1/sh
+bld/boot/0/env
 {% endblock %}
 
 {% block patch %}
 {{super()}}
-rm lib/builtins/gcc_personality_v0*
+rm lib/builtins/int_util.c
 {% endblock %}

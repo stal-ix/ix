@@ -85,6 +85,16 @@
         ],
         "url": "https://files.pythonhosted.org/packages/b6/8c/d5cc5123e8e4bd6c54b781d3bf19139c4d591629c677d3d3529bfc8da127/glad2-2.0.4-py3-none-any.whl"
     },
+    "huggingface_hub/ix.sh": {
+        "md5": "378a75bb3723db1a3e9bc66c68363be4",
+        "run": [
+            "pip/tqdm",
+            "pip/PyYAML",
+            "pip/requests",
+            "pip/filelock"
+        ],
+        "url": "https://files.pythonhosted.org/packages/df/dc/4f4d8080cbce7a38c1d0f1ba4932f9134480b9761af8ef4c65d49254b2bd/huggingface_hub-0.32.3-py3-none-any.whl"
+    },
     "idna/ix.sh": {
         "md5": "6077da9f00e02686ad1bc7a3c0397edc",
         "url": "https://files.pythonhosted.org/packages/e5/3e/741d8c82801c347547f8a2a06aa57dbb1992be9e948df2ea0eda2c8b79e8/idna-3.7-py3-none-any.whl"
