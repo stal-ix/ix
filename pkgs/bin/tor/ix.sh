@@ -9,8 +9,8 @@ tor
 {% endblock %}
 
 {% block fetch %}
-https://gitlab.torproject.org/tpo/core/tor/-/archive/tor-{{self.version().strip()}}/tor-tor-{{self.version().strip()}}.tar.bz2
-sha:c8aaf88de08bc03d16dccd94a6fe93b313d7b3c01b31c79a8bdc2b6e20c928be
+https://dist.torproject.org/tor-{{self.version().strip()}}.tar.gz
+sha:6540dd377a120fb8e7d27530aa3b7ff72a0fa5b4f670fe1d64c987c1cfd390cb
 {% endblock %}
 
 {% block bld_libs %}
