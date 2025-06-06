@@ -5,7 +5,7 @@ tailspin
 {% endblock %}
 
 {% block version %}
-5.4.3
+5.4.4
 {% endblock %}
 
 {% block cargo_url %}
@@ -13,7 +13,7 @@ https://github.com/bensadeh/tailspin/archive/refs/tags/{{self.version().strip()}
 {% endblock %}
 
 {% block cargo_sha %}
-96bbd6626388a0ad32d857e6b9d2b7b46037b88ecf11de56d147db94688dae73
+40c773cb626a77b67dd9df81f2d12d95e9f2fa3d2bc547f4d5fab6bd0960bb08
 {% endblock %}
 
 {% block cargo_bins %}
