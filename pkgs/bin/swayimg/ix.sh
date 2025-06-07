@@ -5,12 +5,12 @@ swayimg
 {% endblock %}
 
 {% block version %}
-4.0
+4.1
 {% endblock %}
 
 {% block fetch %}
 https://github.com/artemsen/swayimg/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:e94eb66b028c57869b92a88935a7d959cae62943f7169dc9eeb9b309803a339f
+sha:500e6a7bc37319ed600fa950cf08a61c5b96a5ad9c667a60c4f1db596b6b5b21
 {% endblock %}
 
 {% block bld_libs %}

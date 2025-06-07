@@ -5,12 +5,12 @@ kakoune
 {% endblock %}
 
 {% block version %}
-2024.05.18
+2025.06.03
 {% endblock %}
 
 {% block fetch %}
 https://github.com/mawww/kakoune/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:50f2920db8ab8f71556b73dfd6d53fb924f67d1c60b9882050cfecfaa3aed31f
+sha:e065dbb715bfe6b0abdaeee775243115748bd540a346d0212fdca6c20c13d340
 {% endblock %}
 
 {% block bld_libs %}

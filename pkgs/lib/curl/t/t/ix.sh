@@ -5,12 +5,12 @@ curl
 {% endblock %}
 
 {% block version %}
-8.14.0
+8.14.1
 {% endblock %}
 
 {% block fetch %}
 https://github.com/curl/curl/archive/refs/tags/curl-{{self.version().strip().replace('.', '_')}}.tar.gz
-sha:93fc06e62db6c0ae8841d967179e04cc4e8b1837fa38d4db3d570eadd82be112
+sha:6cf947ec831e8522b30d7fa8784ce5fcdf1f21581111861d82085a2729c59ba9
 {% endblock %}
 
 {% block bld_tool %}

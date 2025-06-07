@@ -5,12 +5,12 @@ squashfs-tools
 {% endblock %}
 
 {% block version %}
-4.6.1
+4.7
 {% endblock %}
 
 {% block fetch %}
 https://github.com/plougher/squashfs-tools/archive/refs/tags/{{self.version().strip()}}.tar.gz
-sha:94201754b36121a9f022a190c75f718441df15402df32c2b520ca331a107511c
+sha:f1605ef720aa0b23939a49ef4491f6e734333ccc4bda4324d330da647e105328
 {% endblock %}
 
 {% block unpack %}
@@ -38,4 +38,9 @@ LZ4_SUPPORT=1
 LZO_SUPPORT=1
 ZSTD_SUPPORT=1
 INSTALL_PREFIX=${out}
+{% endblock %}
+
+{% block cpp_missing %}
+unistd.h
+pthread.h
 {% endblock %}
