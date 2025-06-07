@@ -1962,6 +1962,7 @@ https://github.com/drakkan/sftpgo/archive/refs/tags/v2.6.0.tar.gz
 https://github.com/dubiousjim/dcron/archive/refs/tags/v4.5.tar.gz
 https://github.com/dundee/gdu/archive/refs/tags/v5.28.0.tar.gz
 https://github.com/dundee/gdu/archive/refs/tags/v5.30.1.tar.gz
+https://github.com/dundee/gdu/archive/refs/tags/v5.31.0.tar.gz
 https://github.com/dunst-project/dunst/archive/refs/tags/v1.10.0.tar.gz
 https://github.com/dunst-project/dunst/archive/refs/tags/v1.9.2.tar.gz
 https://github.com/e2tools/e2tools/archive/refs/tags/v0.1.2.tar.gz
@@ -2034,6 +2035,7 @@ https://github.com/etcd-io/etcd/archive/refs/tags/v3.5.18.tar.gz
 https://github.com/etcd-io/etcd/archive/refs/tags/v3.5.20.tar.gz
 https://github.com/etcd-io/etcd/archive/refs/tags/v3.5.21.tar.gz
 https://github.com/etcd-io/etcd/archive/refs/tags/v3.6.0.tar.gz
+https://github.com/etcd-io/etcd/archive/refs/tags/v3.6.1.tar.gz
 https://github.com/evanw/esbuild/archive/refs/tags/v0.18.14.tar.gz
 https://github.com/evanw/esbuild/archive/refs/tags/v0.18.20.tar.gz
 https://github.com/evanw/esbuild/archive/refs/tags/v0.19.6.tar.gz
@@ -2302,6 +2304,7 @@ https://github.com/gohugoio/hugo/archive/refs/tags/v0.147.3.tar.gz
 https://github.com/gohugoio/hugo/archive/refs/tags/v0.147.4.tar.gz
 https://github.com/gohugoio/hugo/archive/refs/tags/v0.147.5.tar.gz
 https://github.com/gohugoio/hugo/archive/refs/tags/v0.147.7.tar.gz
+https://github.com/gohugoio/hugo/archive/refs/tags/v0.147.8.tar.gz
 https://github.com/gokcehan/lf/archive/refs/tags/r27.tar.gz
 https://github.com/gokcehan/lf/archive/refs/tags/r31.tar.gz
 https://github.com/gokcehan/lf/archive/refs/tags/r32.tar.gz
@@ -2668,6 +2671,7 @@ https://github.com/jesseduffield/lazygit/archive/refs/tags/v0.48.0.tar.gz
 https://github.com/jesseduffield/lazygit/archive/refs/tags/v0.50.0.tar.gz
 https://github.com/jesseduffield/lazygit/archive/refs/tags/v0.51.0.tar.gz
 https://github.com/jesseduffield/lazygit/archive/refs/tags/v0.51.1.tar.gz
+https://github.com/jesseduffield/lazygit/archive/refs/tags/v0.52.0.tar.gz
 https://github.com/jhawthorn/fzy/archive/refs/tags/1.0.tar.gz
 https://github.com/jirka-h/haveged/archive/refs/tags/v1.9.18.tar.gz
 https://github.com/jirka-h/haveged/archive/refs/tags/v1.9.19.tar.gz
@@ -2834,6 +2838,7 @@ https://github.com/libarchive/libarchive/archive/refs/tags/v3.8.1.tar.gz
 https://github.com/libass/libass/archive/refs/tags/0.17.1.tar.gz
 https://github.com/libass/libass/archive/refs/tags/0.17.2.tar.gz
 https://github.com/libass/libass/archive/refs/tags/0.17.3.tar.gz
+https://github.com/libass/libass/archive/refs/tags/0.17.4.tar.gz
 https://github.com/libbpf/libbpf/archive/refs/tags/v1.2.2.tar.gz
 https://github.com/libbpf/libbpf/archive/refs/tags/v1.3.0.tar.gz
 https://github.com/libbpf/libbpf/archive/refs/tags/v1.4.0.tar.gz
@@ -2882,6 +2887,7 @@ https://github.com/libgit2/libgit2/archive/refs/tags/v1.8.2.tar.gz
 https://github.com/libgit2/libgit2/archive/refs/tags/v1.8.3.tar.gz
 https://github.com/libgit2/libgit2/archive/refs/tags/v1.8.4.tar.gz
 https://github.com/libgit2/libgit2/archive/refs/tags/v1.9.0.tar.gz
+https://github.com/libgit2/libgit2/archive/refs/tags/v1.9.1.tar.gz
 https://github.com/libical/libical/archive/refs/tags/v3.0.16.tar.gz
 https://github.com/libical/libical/archive/refs/tags/v3.0.17.tar.gz
 https://github.com/libical/libical/archive/refs/tags/v3.0.18.tar.gz
@@ -3361,6 +3367,7 @@ https://github.com/nwg-piotr/nwg-look/archive/refs/tags/v1.0.5.tar.gz
 https://github.com/nwg-piotr/nwg-menu/archive/refs/tags/v0.1.1.tar.gz
 https://github.com/nwg-piotr/nwg-menu/archive/refs/tags/v0.1.5.tar.gz
 https://github.com/nwg-piotr/nwg-menu/archive/refs/tags/v0.1.8.tar.gz
+https://github.com/nwg-piotr/nwg-menu/archive/refs/tags/v0.1.9.tar.gz
 https://github.com/oneapi-src/oneTBB/archive/refs/tags/v2021.11.0.tar.gz
 https://github.com/oneapi-src/oneTBB/archive/refs/tags/v2021.13.0.tar.gz
 https://github.com/oneapi-src/oneTBB/archive/refs/tags/v2021.7.0.tar.gz
@@ -3683,6 +3690,7 @@ https://github.com/rfc1036/whois/archive/refs/tags/v5.5.22.tar.gz
 https://github.com/rfc1036/whois/archive/refs/tags/v5.5.23.tar.gz
 https://github.com/rfc1036/whois/archive/refs/tags/v5.6.0.tar.gz
 https://github.com/rfc1036/whois/archive/refs/tags/v5.6.1.tar.gz
+https://github.com/rfc1036/whois/archive/refs/tags/v5.6.2.tar.gz
 https://github.com/rfjakob/earlyoom/archive/refs/tags/v1.7.tar.gz
 https://github.com/rfjakob/earlyoom/archive/refs/tags/v1.8.1.tar.gz
 https://github.com/rfjakob/earlyoom/archive/refs/tags/v1.8.2.tar.gz
@@ -4252,6 +4260,7 @@ https://github.com/vim/vim/archive/refs/tags/v9.1.1414.tar.gz
 https://github.com/vim/vim/archive/refs/tags/v9.1.1415.tar.gz
 https://github.com/vim/vim/archive/refs/tags/v9.1.1418.tar.gz
 https://github.com/vim/vim/archive/refs/tags/v9.1.1432.tar.gz
+https://github.com/vim/vim/archive/refs/tags/v9.1.1435.tar.gz
 https://github.com/vmatare/thinkfan/archive/refs/tags/1.3.1.tar.gz
 https://github.com/vmt/udis86/archive/refs/tags/v1.7.2.tar.gz
 https://github.com/void-linux/musl-fts/archive/refs/tags/v1.2.7.tar.gz
@@ -5513,6 +5522,7 @@ https://www.sqlite.org/2024/sqlite-autoconf-3470200.tar.gz
 https://www.sqlite.org/2025/sqlite-autoconf-3490100.tar.gz
 https://www.sqlite.org/2025/sqlite-autoconf-3490200.tar.gz
 https://www.sqlite.org/2025/sqlite-autoconf-3500000.tar.gz
+https://www.sqlite.org/2025/sqlite-autoconf-3500100.tar.gz
 https://www.stunnel.org/downloads/stunnel-5.70.tar.gz
 https://www.stunnel.org/downloads/stunnel-5.71.tar.gz
 https://www.stunnel.org/downloads/stunnel-5.72.tar.gz
