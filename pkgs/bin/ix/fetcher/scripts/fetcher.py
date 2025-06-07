@@ -66,7 +66,7 @@ def iter_cached(sha, mirrors):
 
 def iter_urls(url, sha, mirrors):
     if sha.startswith('sha:') and len(sha) == 68:
-        for u in list(iter_cached(sha, mirrors))[:4]:
+        for u in list(iter_cached(sha, mirrors))[:5]:
             yield u, True
 
     while True:
@@ -82,7 +82,7 @@ def iter_tout():
         tout = min(tout * 1.5, 10000)
 
 
-def do_fetch(url, path, sha, *mirrors):
+def do_fetch(url, path, sha, mirrors):
     for (u, best_effort), tout, ff in zip(iter_urls(url, sha, mirrors), iter_tout(), iter_ff()):
         prepare_dir(os.path.dirname(path))
 
@@ -171,8 +171,10 @@ def iter_ff():
 
 def main():
     mirrors = list(M.strip().split('\n'))
-    random.shuffle(mirrors)
-    do_fetch(sys.argv[1], sys.argv[2], sys.argv[3], *mirrors)
+    best = mirrors[:1]
+    good = mirrors[1:]
+    random.shuffle(good)
+    do_fetch(sys.argv[1], sys.argv[2], sys.argv[3], best + good)
 
 
 sys.stdout = sys.stderr
