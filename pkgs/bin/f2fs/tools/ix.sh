@@ -15,6 +15,7 @@ sha:208c7a07e95383fbd7b466b5681590789dcb41f41bf197369c41a95383b57c5e
 
 {% block bld_libs %}
 lib/c
+lib/lz4
 lib/kernel
 lib/e2fsprogs
 lib/bsd/overlay
