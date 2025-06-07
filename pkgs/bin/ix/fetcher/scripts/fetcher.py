@@ -61,11 +61,13 @@ def fmt_url(url, sha):
 
 def iter_cached(sha, mirrors):
     for x in mirrors:
-        yield fmt_url(x, sha[4:])
+        yield fmt_url(x, sha)
 
 
 def iter_urls(url, sha, mirrors):
-    if sha.startswith('sha:') and len(sha) == 68:
+    sha = sha.removeprefix('sha:')
+
+    if len(sha) == 64:
         for u in list(iter_cached(sha, mirrors))[:5]:
             yield u, True
 
