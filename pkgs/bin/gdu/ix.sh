@@ -5,7 +5,7 @@ gdu
 {% endblock %}
 
 {% block version %}
-5.30.1
+5.31.0
 {% endblock %}
 
 {% block go_url %}
@@ -13,7 +13,7 @@ https://github.com/dundee/gdu/archive/refs/tags/v{{self.version().strip()}}.tar.
 {% endblock %}
 
 {% block go_sha %}
-03ac32fdeec0622790309742e48889df0709f56ca167ff1a050117bef137740d
+3c4cd5369f2390b282f6837a742cabc1ac602e21696c2d982a31274242c74781
 {% endblock %}
 
 {% block unpack %}
@@ -24,4 +24,8 @@ cd cmd/gdu
 {% block install %}
 mkdir ${out}/bin
 cp gdu ${out}/bin/
+{% endblock %}
+
+{% block go_tool %}
+bin/go/lang/24
 {% endblock %}
