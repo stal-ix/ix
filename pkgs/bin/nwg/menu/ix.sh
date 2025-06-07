@@ -5,7 +5,7 @@ nwg-menu
 {% endblock %}
 
 {% block version %}
-0.1.8
+0.1.9
 {% endblock %}
 
 {% block go_url %}
@@ -13,7 +13,7 @@ https://github.com/nwg-piotr/nwg-menu/archive/refs/tags/v{{self.version().strip(
 {% endblock %}
 
 {% block go_sha %}
-05936339d78893c23cd6a626f93e2ace86c50845c7a5110c7e96d6d846343b2d
+674eb73c6a274ce67f38a8df98c4372a0bff8e9fbb55f8c780d6cc4453c960e6
 {% endblock %}
 
 {% block go_tool %}
