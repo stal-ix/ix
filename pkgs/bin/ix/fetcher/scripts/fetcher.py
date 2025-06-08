@@ -53,10 +53,7 @@ def calc_chksum(path, old_cs):
 
 
 def fmt_url(url, sha):
-    if '{' in url:
-        return url.replace('{sha}', sha).replace('{two}', sha[:2]).replace('{one}', sha[:1])
-    else:
-        return url + sha
+    return url.replace('{sha}', sha).replace('{two}', sha[:2]).replace('{one}', sha[:1])
 
 
 def iter_cached(sha, mirrors):
