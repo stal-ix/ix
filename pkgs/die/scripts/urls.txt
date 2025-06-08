@@ -3123,6 +3123,7 @@ https://github.com/martijnvanbrummelen/nwipe/archive/refs/tags/v0.35.tar.gz
 https://github.com/martijnvanbrummelen/nwipe/archive/refs/tags/v0.36.tar.gz
 https://github.com/martijnvanbrummelen/nwipe/archive/refs/tags/v0.37.tar.gz
 https://github.com/martijnvanbrummelen/nwipe/archive/refs/tags/v0.38.tar.gz
+https://github.com/martinrotter/rssguard/archive/refs/tags/4.8.5.tar.gz
 https://github.com/martinus/robin-hood-hashing/archive/refs/tags/3.11.3.tar.gz
 https://github.com/martinvonz/jj/archive/refs/tags/v0.13.0.tar.gz
 https://github.com/martinvonz/jj/archive/refs/tags/v0.21.0.tar.gz

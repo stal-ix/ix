@@ -2105,6 +2105,7 @@
 {"bin": "rsa_sign_pss", "ix_pkg_name": "bin/mbedtls/3"}
 {"bin": "rsa_verify", "ix_pkg_name": "bin/mbedtls/3"}
 {"bin": "rsa_verify_pss", "ix_pkg_name": "bin/mbedtls/3"}
+{"bin": "rssguard", "ix_pkg_name": "bin/rss/guard"}
 {"bin": "rsync", "ix_pkg_name": "bin/rsync"}
 {"bin": "rsync-ssl", "ix_pkg_name": "bin/rsync"}
 {"bin": "rtacct", "ix_pkg_name": "bin/ip/route2"}
