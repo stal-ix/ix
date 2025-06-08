@@ -12,6 +12,10 @@ arti
 https://gitlab.torproject.org/tpo/core/arti/-/archive/arti-v{{self.version().strip()}}/arti-arti-v{{self.version().strip()}}.tar.bz2
 {% endblock %}
 
+{% block cargo_fetch_sha %}
+61a50b34bf9a9fc96b03a8652d8db4d2948fe63793f354a6a2f597245ca1f59d
+{% endblock %}
+
 {% block cargo_sha %}
 74c0b9beec842360dccb0e2eb200ce3c13d033d37c6fdf0292478e55206c72c3
 {% endblock %}

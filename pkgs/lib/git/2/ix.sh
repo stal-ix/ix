@@ -5,12 +5,12 @@ libgit2
 {% endblock %}
 
 {% block version %}
-1.9.0
+1.9.1
 {% endblock %}
 
 {% block fetch %}
 https://github.com/libgit2/libgit2/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:75b27d4d6df44bd34e2f70663cfd998f5ec41e680e1e593238bbe517a84c7ed2
+sha:14cab3014b2b7ad75970ff4548e83615f74d719afe00aa479b4a889c1e13fc00
 {% endblock %}
 
 {% block lib_deps %}

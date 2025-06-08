@@ -5,7 +5,7 @@ alsa_device=hw:1
 dev_mngr=fs
 failsafe=1
 kernel_boot_flags=amd_pstate=passive
-fetcher_socks5_proxy=lab1.local:8015;lab2.local:8015;lab3.local:8015
+fetcher_socks5_proxy=10.0.0.64:8015;10.0.0.72:8015;10.0.0.80:8015
 curses=netbsd
 intl_ver=no
 libc_lite=1

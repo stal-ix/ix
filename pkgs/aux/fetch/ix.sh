@@ -10,7 +10,7 @@ bld/extract
 set -xue
 mkdir net
 cd net
-fetch "{{url}}"
+fetch "{{url}}" "{{fetch_sha or '__skip__'}}"
 cd ..
 mkdir src
 cd src

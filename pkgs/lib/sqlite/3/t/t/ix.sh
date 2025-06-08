@@ -5,7 +5,7 @@ sqlite
 {% endblock %}
 
 {% block version %}
-3.50.0
+3.50.1
 {% endblock %}
 
 {% block sqlite_ver %}
@@ -14,7 +14,7 @@ sqlite
 
 {% block fetch %}
 https://www.sqlite.org/2025/sqlite-autoconf-{{self.sqlite_ver().strip()}}.tar.gz
-sha:3bc776a5f243897415f3b80fb74db3236501d45194c75c7f69012e4ec0128327
+sha:00a65114d697cfaa8fe0630281d76fd1b77afcd95cd5e40ec6a02cbbadbfea71
 {% endblock %}
 
 {% block lib_deps %}
