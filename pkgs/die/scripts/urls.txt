@@ -5493,6 +5493,7 @@ https://www.python.org/ftp/python/3.13.0/Python-3.13.0.tar.xz
 https://www.python.org/ftp/python/3.13.0/Python-3.13.0rc1.tar.xz
 https://www.python.org/ftp/python/3.13.2/Python-3.13.2.tar.xz
 https://www.python.org/ftp/python/3.13.3/Python-3.13.3.tar.xz
+https://www.python.org/ftp/python/3.13.4/Python-3.13.4.tar.xz
 https://www.python.org/ftp/python/3.8.17/Python-3.8.17.tgz
 https://www.python.org/ftp/python/3.9.17/Python-3.9.17.tar.xz
 https://www.python.org/ftp/python/3.9.18/Python-3.9.18.tar.xz
