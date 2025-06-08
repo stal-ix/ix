@@ -54,7 +54,7 @@ def calc_chksum(path, old_cs):
 
 def fmt_url(url, sha):
     if '{' in url:
-        return url.replace('{sha}', sha).replace('{two}', sha[:2])
+        return url.replace('{sha}', sha).replace('{two}', sha[:2]).replace('{one}', sha[:1])
     else:
         return url + sha
 
@@ -181,6 +181,7 @@ def main():
     mirrors = list(M.strip().split('\n'))
     dpos = mirrors.index('')
     best = mirrors[:dpos]
+    random.shuffle(best)
     good = mirrors[dpos + 1:]
     random.shuffle(good)
     do_fetch(sys.argv[1], sys.argv[2], sys.argv[3], best + good)
