@@ -130,6 +130,12 @@ def safe_decode(s):
     return str(s)
 
 
+def src_hacks(url):
+    if 'ghcr.io' in url:
+        yield '-H'
+        yield 'Authorization: Bearer QQ=='
+
+
 def fetch_url_curl(args, url, out, tout):
     cmd = tout_prefix(tout) + [
         'curl',
@@ -140,7 +146,7 @@ def fetch_url_curl(args, url, out, tout):
         '-k',
         '-L',
         '--output', out,
-    ] + args + [url]
+    ] + list(src_hacks(url)) + args + [url]
 
     print(f'run {cmd}')
 
@@ -173,8 +179,9 @@ def iter_ff():
 
 def main():
     mirrors = list(M.strip().split('\n'))
-    best = mirrors[:1]
-    good = mirrors[1:]
+    dpos = mirrors.index('')
+    best = mirrors[:dpos]
+    good = mirrors[dpos + 1:]
     random.shuffle(good)
     do_fetch(sys.argv[1], sys.argv[2], sys.argv[3], best + good)
 
