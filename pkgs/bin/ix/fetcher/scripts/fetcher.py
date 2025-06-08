@@ -68,7 +68,7 @@ def iter_urls(url, sha, mirrors):
     sha = sha.removeprefix('sha:')
 
     if len(sha) == 64:
-        for u in list(iter_cached(sha, mirrors))[:5]:
+        for u in list(iter_cached(sha, mirrors)):
             yield u, True
 
     while True:
@@ -179,12 +179,8 @@ def iter_ff():
 
 def main():
     mirrors = list(M.strip().split('\n'))
-    dpos = mirrors.index('')
-    best = mirrors[:dpos]
-    random.shuffle(best)
-    good = mirrors[dpos + 1:]
-    random.shuffle(good)
-    do_fetch(sys.argv[1], sys.argv[2], sys.argv[3], best + good)
+    random.shuffle(mirrors)
+    do_fetch(sys.argv[1], sys.argv[2], sys.argv[3], mirrors * 2)
 
 
 sys.stdout = sys.stderr

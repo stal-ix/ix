@@ -1,13 +1,2 @@
 https://huggingface.co/datasets/stal-ix/pkgsrc/resolve/main/cas/{two}/{sha}
 https://ghcr.io/v2/stal-ix/pkgsrc/{one}/blobs/sha256:{sha}
-
-http://ix-mirror-0.paroshin.xyz/
-http://ix-mirror.mooo.com/
-http://ix.kmeaw.com/
-http://ix.homelab.cam:8080/?
-https://ix.vvzvlad.xyz/
-https://ix.7mind.io/
-http://fin1.mirror.stal-ix.org/
-http://pl1.mirror.stal-ix.org/
-http://us1.mirror.stal-ix.org/
-https://ix.yusko.link/
