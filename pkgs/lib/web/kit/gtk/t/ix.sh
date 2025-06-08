@@ -5,12 +5,12 @@ webkitgtk
 {% endblock %}
 
 {% block version %}
-2.48.1
+2.48.3
 {% endblock %}
 
 {% block fetch %}
 https://webkitgtk.org/releases/webkitgtk-{{self.version().strip()}}.tar.xz
-sha:98efdf21c4cdca0fe0b73ab5a8cb52093b5aa52d9b1b016a93f71dbfa1eb258f
+sha:d4dc5970f0fc6a529ff7fd67bcbfab2bbb5e91be789b2e9279640b3217a782c3
 {% endblock %}
 
 {% block lib_deps %}
