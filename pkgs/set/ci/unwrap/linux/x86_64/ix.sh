@@ -48,6 +48,7 @@
 #}
 
 {% block run_deps %}
+bin/oras
 bin/rss/guard
 bin/auto/make/1/18
 #bin/fizzy
