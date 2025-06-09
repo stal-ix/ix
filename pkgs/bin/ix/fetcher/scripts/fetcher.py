@@ -53,10 +53,7 @@ def calc_chksum(path, old_cs):
 
 
 def fmt_url(url, sha):
-    if '{' in url:
-        return url.replace('{sha}', sha).replace('{two}', sha[:2])
-    else:
-        return url + sha
+    return url.replace('{sha}', sha).replace('{two}', sha[:2]).replace('{one}', sha[:1])
 
 
 def iter_cached(sha, mirrors):
@@ -68,7 +65,7 @@ def iter_urls(url, sha, mirrors):
     sha = sha.removeprefix('sha:')
 
     if len(sha) == 64:
-        for u in list(iter_cached(sha, mirrors))[:5]:
+        for u in list(iter_cached(sha, mirrors)):
             yield u, True
 
     while True:
@@ -130,6 +127,12 @@ def safe_decode(s):
     return str(s)
 
 
+def src_hacks(url):
+    if 'ghcr.io' in url:
+        yield '-H'
+        yield 'Authorization: Bearer QQ=='
+
+
 def fetch_url_curl(args, url, out, tout):
     cmd = tout_prefix(tout) + [
         'curl',
@@ -140,7 +143,7 @@ def fetch_url_curl(args, url, out, tout):
         '-k',
         '-L',
         '--output', out,
-    ] + args + [url]
+    ] + list(src_hacks(url)) + args + [url]
 
     print(f'run {cmd}')
 
@@ -173,10 +176,8 @@ def iter_ff():
 
 def main():
     mirrors = list(M.strip().split('\n'))
-    best = mirrors[:1]
-    good = mirrors[1:]
-    random.shuffle(good)
-    do_fetch(sys.argv[1], sys.argv[2], sys.argv[3], best + good)
+    random.shuffle(mirrors)
+    do_fetch(sys.argv[1], sys.argv[2], sys.argv[3], mirrors * 2)
 
 
 sys.stdout = sys.stderr
