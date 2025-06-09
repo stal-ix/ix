@@ -43,7 +43,6 @@ glx=disabled
 gles2=enabled
 opengl=true
 gallium-nine=false
-cpp_rtti=false
 shader-cache=disabled
 llvm=disabled
 shared-llvm=disabled
