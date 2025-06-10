@@ -19,7 +19,6 @@ lib/c++
 lib/kernel
 lib/openssl
 lib/boost/85
-lib/shim/fake(lib_name=atomic)
 {% endblock %}
 
 {% block bld_tool %}

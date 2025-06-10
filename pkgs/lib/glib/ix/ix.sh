@@ -82,7 +82,6 @@ endif
 #}
 sed -e 's|/run|/var/run|' \
     -e 's|export_dynamic_cflags =.*|export_dynamic_cflags = []|' \
-    -e 's|.*atomic_dep.*find_library.*||' \
     -i meson.build
 {% endblock %}
 

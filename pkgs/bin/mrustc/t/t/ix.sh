@@ -3,7 +3,6 @@
 {% block bld_libs %}
 bin/mrustc/std
 lib/shim/fake(lib_name=gcc_s)
-lib/shim/fake(lib_name=atomic)
 {% endblock %}
 
 {% block patch %}
