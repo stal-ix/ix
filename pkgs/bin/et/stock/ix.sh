@@ -24,7 +24,6 @@ lib/curses
 lib/unwind
 lib/openssl
 lib/protobuf
-lib/shim/fake(lib_name=atomic)
 lib/shim/fake(lib_name=stdc++fs)
 {% endblock %}
 

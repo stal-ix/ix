@@ -17,6 +17,9 @@ lib/llvm/20/tblgen
 {% block cmake_flags %}
 {{super()}}
 LLVM_ENABLE_PROJECTS="lld;clang"
+{% if lib %}
+LLVM_ENABLE_RTTI=ON
+{% endif %}
 {% endblock %}
 
 {% block postinstall %}

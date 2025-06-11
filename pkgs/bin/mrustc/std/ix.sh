@@ -6,7 +6,6 @@ lib/c
 
 {% block bld_libs %}
 lib/shim/fake(lib_name=gcc_s)
-lib/shim/fake(lib_name=atomic)
 {% endblock %}
 
 {% block build %}

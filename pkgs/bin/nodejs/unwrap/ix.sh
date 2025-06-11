@@ -29,7 +29,6 @@ lib/simd/json
 lib/ng/http/2
 lib/ng/http/3
 lib/ng/tcp2/openssl
-lib/shim/fake(lib_name=atomic)
 {% endblock %}
 
 {% block bld_tool %}

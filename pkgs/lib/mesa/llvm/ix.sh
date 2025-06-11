@@ -22,5 +22,7 @@ shared-llvm=disabled
 
 {% block patch %}
 {{super()}}
-sed -e 's|config-tool|auto|' -i meson.build
+sed -e 's|config-tool|auto|' \
+    -e 's|_llvm_rtti = .*|_llvm_rtti = true|' \
+    -i meson.build
 {% endblock %}

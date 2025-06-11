@@ -33,8 +33,3 @@ vapi=false
 introspection=disabled
 tests=false
 {% endblock %}
-
-{% block install %}
-{{super()}}
-sed -e 's|-latomic||g' -i ${out}/lib/pkgconfig/libdex-1.pc
-{% endblock %}

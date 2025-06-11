@@ -44,6 +44,7 @@ find ${out}/lib/python3.12/ -type f | while read l; do
     sed -e 's|Modules/_hacl/libHacl_Hash_SHA2.a||g' -i ${l}
 done
 cd ${out}/lib/python3.12
+>__init__.py
 py_exports > exports
 cat exports
 {% endif %}

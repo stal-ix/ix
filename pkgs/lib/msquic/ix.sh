@@ -20,7 +20,6 @@ lib/openssl
 
 {% block bld_libs %}
 lib/kernel
-lib/shim/fake(lib_name=atomic)
 {% endblock %}
 
 {% block build_flags %}

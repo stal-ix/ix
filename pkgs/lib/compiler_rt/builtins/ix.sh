@@ -9,4 +9,5 @@ lib/compiler_rt/builtins/{{crt_ver or clang_ver or default_clang}}
 # TODO(pg): fix builtins for darwin
 lib/compiler_rt/builtins/hack
 {% endif %}
+lib/shim/fake(lib_name=atomic)
 {% endblock %}

@@ -77,7 +77,6 @@ lib/bsd/overlay
 lib/nss/nssckbi
 lib/build/errlimit
 lib/vulkan/loader/dl
-lib/shim/fake(lib_name=atomic)
 lib/shim/fake/pkg(pkg_name=dri,pkg_ver=100500,pkg_extra=dridriverdir: /nowhere)
 {% endblock %}
 
