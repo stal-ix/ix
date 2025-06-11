@@ -1,15 +1,23 @@
 {% extends '//die/go/build.sh' %}
 
+{% block pkg_name %}
+tun2socks
+{% endblock %}
+
+{% block version %}
+2.6.0
+{% endblock %}
+
 {% block go_url %}
-https://github.com/xjasonlyu/tun2socks/archive/56786517dc3d4de051980a45dff71d33c924862b.zip
+https://github.com/xjasonlyu/tun2socks/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 {% endblock %}
 
 {% block go_sha %}
-7d77500e5cd5c3c81011aee9536d76c6a2197fe345437cd6b680f21e3987800a
+52b257ee7a7912b5c4daa996cc4f4eb7cfc825ca319abbecc0eae4cfa33d8caf
 {% endblock %}
 
 {% block go_tool %}
-bin/go/lang/23
+bin/go/lang/24
 {% endblock %}
 
 {% block build %}

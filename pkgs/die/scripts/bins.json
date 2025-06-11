@@ -2504,6 +2504,7 @@
 {"bin": "ttyd", "ix_pkg_name": "bin/tty/d"}
 {"bin": "ttyplot", "ix_pkg_name": "bin/tty/plot"}
 {"bin": "ttysize", "ix_pkg_name": "bin/busybox/ix"}
+{"bin": "tun2socks", "ix_pkg_name": "bin/tun2socks"}
 {"bin": "tunctl", "ix_pkg_name": "bin/busybox/ix"}
 {"bin": "tune.exfat", "ix_pkg_name": "bin/exfat/progs"}
 {"bin": "tune2fs", "ix_pkg_name": "bin/e2fsprogs"}

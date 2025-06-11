@@ -4367,6 +4367,7 @@ https://github.com/xiph/opus/archive/refs/tags/v1.5.1.tar.gz
 https://github.com/xiph/opus/archive/refs/tags/v1.5.2.tar.gz
 https://github.com/xiph/theora/archive/refs/tags/v1.2.0.tar.gz
 https://github.com/xjasonlyu/tun2socks/archive/56786517dc3d4de051980a45dff71d33c924862b.zip
+https://github.com/xjasonlyu/tun2socks/archive/refs/tags/v2.6.0.tar.gz
 https://github.com/xkbcommon/libxkbcommon/archive/refs/tags/xkbcommon-1.10.0.tar.gz
 https://github.com/xkbcommon/libxkbcommon/archive/refs/tags/xkbcommon-1.5.0.tar.gz
 https://github.com/xkbcommon/libxkbcommon/archive/refs/tags/xkbcommon-1.6.0.tar.gz
