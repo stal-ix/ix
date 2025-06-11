@@ -9,8 +9,8 @@ def cli_recache(ctx):
 def cli_tool(ctx):
     args = ctx['args']
     tool = args[0]
-    pkgs = os.path.dirname(ctx['binary'])
     ixbin = ctx['binary']
+    pkgs = os.path.dirname(ixbin)
 
     env = os.environ.copy()
 
