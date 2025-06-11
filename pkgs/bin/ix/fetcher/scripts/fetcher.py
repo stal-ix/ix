@@ -64,11 +64,11 @@ def iter_cached(sha, mirrors):
 def iter_urls(url, sha, mirrors):
     sha = sha.removeprefix('sha:')
 
-    if len(sha) == 64:
-        for u in list(iter_cached(sha, mirrors)):
-            yield u, True
-
     while True:
+        if len(sha) == 64:
+            for u in list(iter_cached(sha, mirrors)):
+                yield u, True
+
         yield url, False
 
 
