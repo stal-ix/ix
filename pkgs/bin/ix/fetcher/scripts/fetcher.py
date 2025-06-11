@@ -79,7 +79,7 @@ def iter_tout():
 def do_fetch(url, path, sha, mirrors):
     skip = set()
 
-    for (u, best_effort), tout, ff in zip(iter_urls(url, sha, mirrors), iter_tout(), iter_ff()):
+    for u, tout, ff in zip(iter_urls(url, sha, mirrors), iter_tout(), iter_ff()):
         if len(skip) >= len(frozenset(mirrors + [url])):
             raise Exception(f'can not fetch {url}, no attempts left')
 
