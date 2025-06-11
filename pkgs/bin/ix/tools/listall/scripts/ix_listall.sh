@@ -2,7 +2,7 @@
 
 set -ue
 
-cd "${IX_PKGS_ROOT}/pkgs"
+cd "${IX_DIR}/pkgs"
 
 find -type f -name ix.sh \
     | grep -v '/t/' \

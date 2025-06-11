@@ -2,7 +2,7 @@
 
 set -xue
 
-cd $(dirname ${IX_BINARY})
+cd ${IX_DIR}
 
 ix_repo_export
 
@@ -14,7 +14,7 @@ export LC_ALL=C
 (
 cat urls.txt
 cat dump.json | ix_flt_upstream
-find ${IX_PKGS_ROOT} -name '*.sh' | xargs cat | grep "http[s]*://"
+find ${IX_DIR} -name '*.sh' | xargs cat | grep "http[s]*://"
 ) | grep -v '#'  \
   | grep -v ' '  \
   | grep -v '{{' \

@@ -1,5 +1,0 @@
-#!/usr/bin/env sh
-C=${1}
-shift
-cd ${IX_PKGS_ROOT}
-exec ${IX_BINARY} run --inherit bin/ix/tools/${C} -- ix_${C} ${@}

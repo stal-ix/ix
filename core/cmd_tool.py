@@ -8,17 +8,24 @@ def cli_recache(ctx):
 
 def cli_tool(ctx):
     args = ctx['args']
-
-    if not args:
-        args = ['list']
-
+    tool = args[0]
     pkgs = os.path.dirname(ctx['binary'])
-    where = os.path.join(pkgs, 'pkgs', 'die', 'scripts')
-    script = os.path.join(where, 'runner')
+    ixbin = ctx['binary']
+
     env = os.environ.copy()
+
     env.pop('SSL_CERT_FILE')
-    env['IX_PKGS_ROOT'] = pkgs
-    env['IX_BINARY'] = ctx['binary']
-    env['IX_WHERE'] = where
-    env['IX_DIR'] = os.path.dirname(ctx['binary'])
-    os.execvpe(script, [script] + args, env)
+
+    env['IX_BINARY'] = ixbin
+    env['IX_DIR'] = pkgs
+
+    cmd = [ixbin] + [
+        'run',
+        '--inherit',
+        'bin/ix/tools/' + tool,
+        '--',
+        'ix_' + tool,
+    ] + args[1:]
+
+    os.setcwd(pkgs)
+    os.execvpe(cmd[0], cmd, env)
