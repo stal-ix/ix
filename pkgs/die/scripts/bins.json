@@ -1744,6 +1744,7 @@
 {"bin": "opj_jpip_addxml", "ix_pkg_name": "bin/opj"}
 {"bin": "opj_jpip_test", "ix_pkg_name": "bin/opj"}
 {"bin": "opj_jpip_transcode", "ix_pkg_name": "bin/opj"}
+{"bin": "oras", "ix_pkg_name": "bin/oras"}
 {"bin": "orcc", "ix_pkg_name": "bin/orc"}
 {"bin": "ostra-cg", "ix_pkg_name": "bin/pahole"}
 {"bin": "out123", "ix_pkg_name": "bin/mpg123"}
