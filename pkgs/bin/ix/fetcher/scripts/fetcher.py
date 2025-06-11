@@ -82,7 +82,14 @@ def iter_tout():
 
 
 def do_fetch(url, path, sha, mirrors):
+    skip = set()
+
     for (u, best_effort), tout, ff in zip(iter_urls(url, sha, mirrors), iter_tout(), iter_ff()):
+        if u in skip:
+            print(f'skip {u}')
+
+            continue
+
         prepare_dir(os.path.dirname(path))
 
         try:
@@ -100,6 +107,9 @@ def do_fetch(url, path, sha, mirrors):
                     raise e
 
                 print(f'while fetching {url}:\n{e}\nwill retry')
+
+            if '404' in str(e):
+                skip.add(u)
 
             time.sleep(1)
 
