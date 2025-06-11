@@ -27,5 +27,5 @@ def cli_tool(ctx):
         'ix_' + tool,
     ] + args[1:]
 
-    os.setcwd(pkgs)
+    os.chdir(pkgs)
     os.execvpe(cmd[0], cmd, env)
