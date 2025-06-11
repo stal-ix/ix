@@ -78,9 +78,10 @@ def iter_tout():
 
 def do_fetch(url, path, sha, mirrors):
     skip = set()
+    full = frozenset(mirrors + [url])
 
     for u, tout, ff in zip(iter_urls(url, sha, mirrors), iter_tout(), iter_ff()):
-        if len(skip) >= len(frozenset(mirrors + [url])):
+        if len(skip) >= len(full):
             raise Exception(f'can not fetch {url}, no attempts left')
 
         if u in skip:
@@ -93,12 +94,12 @@ def do_fetch(url, path, sha, mirrors):
 
             return check_md5(path, sha)
         except Exception as e:
-            print(f'while fetch {u}: {e}')
-
             if '404' in str(e):
                 skip.add(u)
             elif 'checksum' in str(e):
                 skip.add(u)
+            else:
+                print(f'while fetch {u}: {e}')
 
 
 def check_md5(path, old_cs):
