@@ -1,4 +1,0 @@
-#!/usr/bin/env sh
-
-echo 'tools available:'
-ls ${IX_PKGS_ROOT}/pkgs/bin/ix/tools | sort
