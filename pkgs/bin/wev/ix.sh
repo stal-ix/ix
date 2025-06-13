@@ -1,7 +1,7 @@
 {% extends '//die/c/make.sh' %}
 
 {% block version %}
-1.0.0
+1.1.0
 {% endblock %}
 
 {% block pkg_name %}
@@ -10,7 +10,7 @@ wev
 
 {% block fetch %}
 https://git.sr.ht/~sircmpwn/wev/archive/{{self.version().strip()}}.tar.gz
-sha:613a1df1a4879d50ce72023de14aaf05be2e6f51346e84a69f50fc6d8502bbf4
+sha:89b8d9bc756631795ee91c99a0d5b0877c9f5c3acfe81f77a2b69ecfc15daf16
 {% endblock %}
 
 {% block bld_libs %}
