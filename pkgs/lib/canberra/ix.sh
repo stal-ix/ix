@@ -10,7 +10,7 @@ libcanberra
 
 {% block fetch %}
 http://0pointer.de/lennart/projects/libcanberra/libcanberra-{{self.version().strip()}}.tar.xz
-sha:c2b671e67e0c288a69fc33dc1b6f1b534d07882c2aceed37004bf48c601afa72
+c2b671e67e0c288a69fc33dc1b6f1b534d07882c2aceed37004bf48c601afa72
 {% endblock %}
 
 {% block lib_deps %}

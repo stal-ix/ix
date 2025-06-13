@@ -10,7 +10,7 @@ libuv
 
 {% block fetch %}
 https://github.com/libuv/libuv/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:27e55cf7083913bfb6826ca78cde9de7647cded648d35f24163f2d31bb9f51cd
+27e55cf7083913bfb6826ca78cde9de7647cded648d35f24163f2d31bb9f51cd
 {% endblock %}
 
 {% block lib_deps %}

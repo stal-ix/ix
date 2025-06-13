@@ -10,7 +10,7 @@ wmenu
 
 {% block fetch %}
 https://codeberg.org/adnano/wmenu/archive/{{self.version().strip()}}.tar.gz
-sha:4e6aea3f8975fec720f6eb87aad620d5297a8a5a137615e4cf047e95d2b9d308
+4e6aea3f8975fec720f6eb87aad620d5297a8a5a137615e4cf047e95d2b9d308
 {% endblock %}
 
 {% block bld_libs %}

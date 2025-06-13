@@ -10,7 +10,7 @@ procps
 
 {% block fetch %}
 https://gitlab.com/procps-ng/procps/-/archive/v{{self.version().strip()}}/procps-v{{self.version().strip()}}.tar.bz2
-sha:7e4b385e8f3e426089f3bb04e3bf150c710b875bd005474f034486b2379ce221
+7e4b385e8f3e426089f3bb04e3bf150c710b875bd005474f034486b2379ce221
 {% endblock %}
 
 {% block lib_deps %}

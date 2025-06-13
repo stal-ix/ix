@@ -10,7 +10,7 @@ python
 
 {% block fetch %}
 https://github.com/python/cpython/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:a3ab44f08e52ce619aea4ea405cc3d9f040fec0d048d99ed96921c149a2cc3b5
+a3ab44f08e52ce619aea4ea405cc3d9f040fec0d048d99ed96921c149a2cc3b5
 {% endblock %}
 
 {% block bld_tool %}

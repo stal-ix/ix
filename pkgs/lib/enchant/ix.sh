@@ -10,7 +10,7 @@ enchant
 
 {% block fetch %}
 https://github.com/rrthomas/enchant/releases/download/v{{self.version().strip()}}/enchant-{{self.version().strip()}}.tar.gz
-sha:c4cd0889d8aff8248fc3913de5a83907013962f0e1895030a3836468cd40af5b
+c4cd0889d8aff8248fc3913de5a83907013962f0e1895030a3836468cd40af5b
 {% endblock %}
 
 {% block conf_ver %}

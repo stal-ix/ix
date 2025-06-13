@@ -10,7 +10,7 @@ Vulkan-Headers
 
 {% block fetch %}
 https://github.com/KhronosGroup/Vulkan-Headers/archive/refs/tags/vulkan-sdk-{{self.version().strip()}}.tar.gz
-sha:20743c99a96c07290f24377360e7a12bdd2c465ba202e0c7ef2ec25d446cf61d
+20743c99a96c07290f24377360e7a12bdd2c465ba202e0c7ef2ec25d446cf61d
 {% endblock %}
 
 {% block lib_deps %}

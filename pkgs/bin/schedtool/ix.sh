@@ -10,7 +10,7 @@ schedtool
 
 {% block fetch %}
 https://github.com/freequaos/schedtool/archive/refs/tags/schedtool-{{self.version().strip()}}.tar.gz
-sha:6c3388771849c96c4c3d4405096a3e147709ff48eb5f53adb8354735cf110500
+6c3388771849c96c4c3d4405096a3e147709ff48eb5f53adb8354735cf110500
 {% endblock %}
 
 {% block bld_libs %}

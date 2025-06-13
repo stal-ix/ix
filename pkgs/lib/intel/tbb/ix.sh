@@ -10,7 +10,7 @@ oneTBB
 
 {% block fetch %}
 https://github.com/oneapi-src/oneTBB/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:ed067603ece0dc832d2881ba5c516625ac2522c665d95f767ef6304e34f961b5
+ed067603ece0dc832d2881ba5c516625ac2522c665d95f767ef6304e34f961b5
 {% endblock %}
 
 {% block lib_deps %}

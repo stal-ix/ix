@@ -10,7 +10,7 @@ libcap-ng
 
 {% block fetch %}
 https://github.com/stevegrubb/libcap-ng/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:e4be07fdd234f10b866433f224d183626003c65634ed0552b02e654a380244c2
+e4be07fdd234f10b866433f224d183626003c65634ed0552b02e654a380244c2
 {% endblock %}
 
 {% block lib_deps %}

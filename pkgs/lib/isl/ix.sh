@@ -10,7 +10,7 @@ isl
 
 {% block fetch %}
 https://libisl.sourceforge.io/isl-{{self.version().strip()}}.tar.xz
-sha:6d8babb59e7b672e8cb7870e874f3f7b813b6e00e6af3f8b04f7579965643d5c
+6d8babb59e7b672e8cb7870e874f3f7b813b6e00e6af3f8b04f7579965643d5c
 {% endblock %}
 
 {% block lib_deps %}

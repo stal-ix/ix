@@ -8,7 +8,7 @@ mujs
 
 {% block fetch %}
 https://github.com/ccxvii/mujs/archive/refs/tags/{{self.version()}}.tar.gz
-sha:7cf3a5e622cff41903efff0334518fc94af063256752c38ba4618a5191e44f18
+7cf3a5e622cff41903efff0334518fc94af063256752c38ba4618a5191e44f18
 {% endblock %}
 
 {% block lib_deps %}

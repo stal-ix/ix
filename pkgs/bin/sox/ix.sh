@@ -10,7 +10,7 @@ sox
 
 {% block fetch %}
 https://codeberg.org/sox_ng/sox_ng/archive/sox_ng-{{self.version().strip()}}.tar.gz
-sha:e5fe64d0192ca38428fd6a776c58bff415810627ae81266e95f1c5f8b3af5bc0
+e5fe64d0192ca38428fd6a776c58bff415810627ae81266e95f1c5f8b3af5bc0
 {% endblock %}
 
 {% block bld_libs %}

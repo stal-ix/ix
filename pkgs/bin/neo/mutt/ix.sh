@@ -10,7 +10,7 @@ neomutt
 
 {% block fetch %}
 https://github.com/neomutt/neomutt/archive/refs/tags/{{self.version().strip()}}.tar.gz
-sha:12d225e270d8e16cda41d855880b9d938750a4f1d647f55c6353337d32ffd653
+12d225e270d8e16cda41d855880b9d938750a4f1d647f55c6353337d32ffd653
 {% endblock %}
 
 {% block bld_libs %}

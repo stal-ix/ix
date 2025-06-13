@@ -10,7 +10,7 @@ SDL_gfx
 
 {% block fetch %}
 https://downloads.sourceforge.net/project/sdlgfx/SDL_gfx-{{self.version().strip()}}.tar.gz
-sha:dfb15ac5f8ce7a4952dc12d2aed9747518c5e6b335c0e31636d23f93c630f419
+dfb15ac5f8ce7a4952dc12d2aed9747518c5e6b335c0e31636d23f93c630f419
 {% endblock %}
 
 {% block lib_deps %}

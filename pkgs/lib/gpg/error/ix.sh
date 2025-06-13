@@ -10,7 +10,7 @@ libgpg-error
 
 {% block fetch %}
 https://gnupg.org/ftp/gcrypt/libgpg-error/libgpg-error-{{self.version().strip()}}.tar.bz2
-sha:95b178148863f07d45df0cea67e880a79b9ef71f5d230baddc0071128516ef78
+95b178148863f07d45df0cea67e880a79b9ef71f5d230baddc0071128516ef78
 {% endblock %}
 
 {% block lib_deps %}

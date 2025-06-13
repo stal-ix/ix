@@ -10,7 +10,7 @@ nsss
 
 {% block fetch %}
 https://skarnet.org/software/nsss/nsss-{{self.version().strip()}}.tar.gz
-sha:954c1b25791cc36d07c3e123ec03436d3e296bf5233f1d08bc016d6d7e6279d2
+954c1b25791cc36d07c3e123ec03436d3e296bf5233f1d08bc016d6d7e6279d2
 {% endblock %}
 
 {% block lib_deps %}

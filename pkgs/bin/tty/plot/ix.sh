@@ -10,7 +10,7 @@ ttyplot
 
 {% block fetch %}
 https://github.com/tenox7/ttyplot/archive/refs/tags/{{self.version().strip()}}.tar.gz
-sha:d1624eea52abec5538c9b19bae00f81642c2d2886cd7755988466b74424ce9ca
+d1624eea52abec5538c9b19bae00f81642c2d2886cd7755988466b74424ce9ca
 {% endblock %}
 
 {% block bld_libs %}

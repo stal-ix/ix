@@ -10,7 +10,7 @@ Hyprland
 
 {% block fetch %}
 https://github.com/hyprwm/Hyprland/releases/download/v{{self.version().strip()}}/source-v{{self.version().strip()}}.tar.gz
-sha:fd96fb043cfeda09a1ab9a5eb69fee55562475c0c6a41f79dad2bcc652dc5730
+fd96fb043cfeda09a1ab9a5eb69fee55562475c0c6a41f79dad2bcc652dc5730
 {% endblock %}
 
 {% block bld_libs %}

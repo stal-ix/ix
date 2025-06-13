@@ -10,7 +10,7 @@ iso-codes
 
 {% block fetch %}
 https://salsa.debian.org/iso-codes-team/iso-codes/-/archive/v{{self.version().strip()}}/iso-codes-v{{self.version().strip()}}.tar.gz
-sha:511f67bf4b51aa77f17c45adbff533242b50f1e370fe49a5706b6341902fac87
+511f67bf4b51aa77f17c45adbff533242b50f1e370fe49a5706b6341902fac87
 {% endblock %}
 
 {% block bld_tool %}

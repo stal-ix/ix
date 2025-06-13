@@ -10,7 +10,7 @@ libsodium
 
 {% block fetch %}
 https://github.com/jedisct1/libsodium/archive/refs/tags/{{self.version().strip()}}-RELEASE.tar.gz
-sha:8e5aeca07a723a27bbecc3beef14b0068d37e7fc0e97f51b3f1c82d2a58005c1
+8e5aeca07a723a27bbecc3beef14b0068d37e7fc0e97f51b3f1c82d2a58005c1
 {% endblock %}
 
 {% block lib_deps %}

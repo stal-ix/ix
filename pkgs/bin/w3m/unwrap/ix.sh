@@ -10,7 +10,7 @@ w3m
 
 {% block fetch %}
 https://downloads.sourceforge.net/project/w3m/w3m/w3m-{{self.version().strip()}}/w3m-{{self.version().strip()}}.tar.gz
-sha:e994d263f2fd2c22febfbe45103526e00145a7674a0fda79c822b97c2770a9e3
+e994d263f2fd2c22febfbe45103526e00145a7674a0fda79c822b97c2770a9e3
 {% endblock %}
 
 {% block bld_libs %}

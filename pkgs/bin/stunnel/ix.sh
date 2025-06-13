@@ -10,7 +10,7 @@ stunnel
 
 {% block fetch %}
 https://www.stunnel.org/downloads/stunnel-{{self.version().strip()}}.tar.gz
-sha:0c1ef0ed85240974dccb94fe74fb92d6383474c7c0d10e8796d1f781a3ba5683
+0c1ef0ed85240974dccb94fe74fb92d6383474c7c0d10e8796d1f781a3ba5683
 {% endblock %}
 
 {% block bld_libs %}

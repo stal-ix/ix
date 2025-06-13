@@ -10,7 +10,7 @@ scummvm
 
 {% block fetch %}
 https://downloads.scummvm.org/frs/scummvm/{{self.version().strip()}}/scummvm-{{self.version().strip()}}.tar.xz
-sha:d5b33532bd70d247f09127719c670b4b935810f53ebb6b7b6eafacaa5da99452
+d5b33532bd70d247f09127719c670b4b935810f53ebb6b7b6eafacaa5da99452
 {% endblock %}
 
 {% block bld_libs %}

@@ -10,7 +10,7 @@ gnome-terminal
 
 {% block fetch %}
 https://github.com/GNOME/gnome-terminal/archive/refs/tags/{{self.version().strip()}}.tar.gz
-sha:ace8f4613da3162d1f857f5722964b4fa002d351228a32d6f94cb16e4c5bf802
+ace8f4613da3162d1f857f5722964b4fa002d351228a32d6f94cb16e4c5bf802
 {% endblock %}
 
 {% block bld_libs %}

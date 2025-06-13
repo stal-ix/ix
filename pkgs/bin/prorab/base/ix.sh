@@ -10,7 +10,7 @@ prorab
 
 {% block fetch %}
 https://github.com/cppfw/prorab/archive/refs/tags/{{self.version().strip()}}.tar.gz
-sha:e6ef4ab18f080b24735ac6b6434be97f685f4c3184d1f88b8dbabbbc5457e1eb
+e6ef4ab18f080b24735ac6b6434be97f685f4c3184d1f88b8dbabbbc5457e1eb
 {% endblock %}
 
 {% block postinstall %}

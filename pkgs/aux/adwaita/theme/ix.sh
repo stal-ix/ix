@@ -10,7 +10,7 @@ adwaita-icon-theme
 
 {% block fetch %}
 https://github.com/GNOME/adwaita-icon-theme/archive/refs/tags/{{self.version().strip()}}.tar.gz
-sha:403f650189cc41ba8321417470cbb7e484425374df7a52a3289421b9ac30e792
+403f650189cc41ba8321417470cbb7e484425374df7a52a3289421b9ac30e792
 {% endblock %}
 
 {% block bld_tool %}

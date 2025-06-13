@@ -10,7 +10,7 @@ dbus-broker
 
 {% block fetch %}
 https://github.com/bus1/dbus-broker/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:5058a81eea8086636ef09a670d103e35e650a6f0200aadc2f59f3fb6e76c37b8
+5058a81eea8086636ef09a670d103e35e650a6f0200aadc2f59f3fb6e76c37b8
 {% endblock %}
 
 {% block lib_deps %}

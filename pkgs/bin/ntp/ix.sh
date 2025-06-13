@@ -10,7 +10,7 @@ ntp
 
 {% block fetch %}
 https://www.eecis.udel.edu/~ntp/ntp_spool/ntp4/ntp-{{self.version().strip()[:3]}}/ntp-{{self.version().strip()}}.tar.gz
-sha:cf84c5f3fb1a295284942624d823fffa634144e096cfc4f9969ac98ef5f468e5
+cf84c5f3fb1a295284942624d823fffa634144e096cfc4f9969ac98ef5f468e5
 {% endblock %}
 
 {% block bld_libs %}

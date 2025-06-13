@@ -10,7 +10,7 @@ jack2
 
 {% block fetch %}
 https://github.com/jackaudio/jack2/archive/v{{self.version().strip()}}.tar.gz
-sha:1e42b9fc4ad7db7befd414d45ab2f8a159c0b30fcd6eee452be662298766a849
+1e42b9fc4ad7db7befd414d45ab2f8a159c0b30fcd6eee452be662298766a849
 {% endblock %}
 
 {% block lib_deps %}

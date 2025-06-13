@@ -10,7 +10,7 @@ mksh
 
 {% block fetch %}
 http://www.mirbsd.org/MirOS/dist/mir/mksh/mksh-{{self.version().strip()}}.tgz
-sha:77ae1665a337f1c48c61d6b961db3e52119b38e58884d1c89684af31f87bc506
+77ae1665a337f1c48c61d6b961db3e52119b38e58884d1c89684af31f87bc506
 {% endblock %}
 
 {% block bld_tool %}

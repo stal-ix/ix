@@ -10,7 +10,7 @@ qtwayland
 
 {% block fetch %}
 https://github.com/qt/qtwayland/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:e4cb055bca9a76266821bc2320ff9feaae96eaca0a6a453e99722410b2a5fff2
+e4cb055bca9a76266821bc2320ff9feaae96eaca0a6a453e99722410b2a5fff2
 {% endblock %}
 
 {% block lib_deps %}

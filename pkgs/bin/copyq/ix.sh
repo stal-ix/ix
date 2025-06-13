@@ -12,7 +12,7 @@ CopyQ
 
 {% block fetch %}
 https://github.com/hluk/CopyQ/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:ffbae7a71c55cd89dfd88a6d184c7a5c7a8c4c948e9df11c10640c246d9c5f53
+ffbae7a71c55cd89dfd88a6d184c7a5c7a8c4c948e9df11c10640c246d9c5f53
 {% endblock %}
 
 {% block bld_libs %}

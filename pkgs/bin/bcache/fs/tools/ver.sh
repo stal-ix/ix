@@ -7,7 +7,7 @@ bcachefs-tools
 {% endblock %}
 
 {% block http_sha %}
-sha:47a82e7f4199a75b6649face84c0a2f61ec9c0bb59b6ffdd3b2a1904d9909be4
+47a82e7f4199a75b6649face84c0a2f61ec9c0bb59b6ffdd3b2a1904d9909be4
 {% endblock %}
 
 {% block cargo_url %}

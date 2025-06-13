@@ -10,7 +10,7 @@ catimg
 
 {% block fetch %}
 https://github.com/posva/catimg/archive/refs/tags/{{self.version().strip()}}.tar.gz
-sha:3a6450316ff62fb07c3facb47ea208bf98f62abd02783e88c56f2a6508035139
+3a6450316ff62fb07c3facb47ea208bf98f62abd02783e88c56f2a6508035139
 {% endblock %}
 
 {% block bld_libs %}

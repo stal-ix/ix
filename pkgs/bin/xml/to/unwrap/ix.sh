@@ -10,7 +10,7 @@ xmlto
 
 {% block fetch %}
 https://pagure.io/xmlto/archive/{{self.version().strip()}}/xmlto-{{self.version().strip()}}.tar.gz
-sha:40504db68718385a4eaa9154a28f59e51e59d006d1aa14f5bc9d6fded1d6017a
+40504db68718385a4eaa9154a28f59e51e59d006d1aa14f5bc9d6fded1d6017a
 {% endblock %}
 
 {% block bld_libs %}

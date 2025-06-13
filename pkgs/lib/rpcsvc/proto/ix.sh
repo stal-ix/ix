@@ -10,7 +10,7 @@ rpcsvc-proto
 
 {% block fetch %}
 https://github.com/thkukuk/rpcsvc-proto/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:7988641deae8463303b6273d7af98ece09111c385d4c9134a142a5fad3cdfef8
+7988641deae8463303b6273d7af98ece09111c385d4c9134a142a5fad3cdfef8
 {% endblock %}
 
 {% block lib_deps %}

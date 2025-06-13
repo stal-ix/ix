@@ -10,7 +10,7 @@ tor
 
 {% block fetch %}
 https://dist.torproject.org/tor-{{self.version().strip()}}.tar.gz
-sha:6540dd377a120fb8e7d27530aa3b7ff72a0fa5b4f670fe1d64c987c1cfd390cb
+6540dd377a120fb8e7d27530aa3b7ff72a0fa5b4f670fe1d64c987c1cfd390cb
 {% endblock %}
 
 {% block bld_libs %}

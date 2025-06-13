@@ -10,7 +10,7 @@ chmlib
 
 {% block fetch %}
 http://www.jedrea.com/chmlib/chmlib-{{self.version().strip()}}.tar.bz2
-sha:3449d64b0cf71578b2c7e3ddc048d4af3661f44a83941ea074a7813f3a59ffa3
+3449d64b0cf71578b2c7e3ddc048d4af3661f44a83941ea074a7813f3a59ffa3
 {% endblock %}
 
 {% block lib_deps %}

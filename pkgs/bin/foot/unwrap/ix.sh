@@ -10,7 +10,7 @@ foot
 
 {% block fetch %}
 https://codeberg.org/dnkl/foot/archive/{{self.version().strip()}}.tar.gz
-sha:1c9f09c119c5b24bd1934ce515e70f402b7d1b2c55f8218a16eddaa26e3f6fb0
+1c9f09c119c5b24bd1934ce515e70f402b7d1b2c55f8218a16eddaa26e3f6fb0
 {% endblock %}
 
 {% block bld_libs %}

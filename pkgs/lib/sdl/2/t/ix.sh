@@ -10,7 +10,7 @@ SDL
 
 {% block fetch %}
 https://github.com/libsdl-org/SDL/archive/refs/tags/release-{{self.version().strip()}}.tar.gz
-sha:e1e42bc0d686e145f1df85ea1ba980b2cb79ad475c62098b77337e0ae67d3080
+e1e42bc0d686e145f1df85ea1ba980b2cb79ad475c62098b77337e0ae67d3080
 {% endblock %}
 
 {% block lib_deps %}

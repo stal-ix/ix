@@ -10,7 +10,7 @@ iproute2
 
 {% block fetch %}
 https://github.com/iproute2/iproute2/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:0b3b1c0b8f11a0e82c764bc291ce74bf03e778dc575b8097f5c440680150563b
+0b3b1c0b8f11a0e82c764bc291ce74bf03e778dc575b8097f5c440680150563b
 {% endblock %}
 
 {% block bld_libs %}

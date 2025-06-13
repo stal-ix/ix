@@ -10,7 +10,7 @@ waf
 
 {% block fetch %}
 https://waf.io/waf-{{self.version().strip()}}.tar.bz2
-sha:f9f1a8495ab7470844a05dd2e838017bcff969d92a9aeede7811d6ad74e04707
+f9f1a8495ab7470844a05dd2e838017bcff969d92a9aeede7811d6ad74e04707
 {% endblock %}
 
 {% block bld_tool %}

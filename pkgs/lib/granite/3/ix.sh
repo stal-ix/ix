@@ -10,7 +10,7 @@ granite
 
 {% block fetch %}
 https://github.com/elementary/granite/archive/refs/tags/{{self.version().strip()}}.tar.gz
-sha:067d31445da9808a802fca523630c3e4b84d2d7c78ae547ced017cb7f3b9c6b5
+067d31445da9808a802fca523630c3e4b84d2d7c78ae547ced017cb7f3b9c6b5
 {% endblock %}
 
 {% block lib_deps %}

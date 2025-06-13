@@ -10,7 +10,7 @@ qBittorrent
 
 {% block fetch %}
 https://github.com/qbittorrent/qBittorrent/archive/refs/tags/release-{{self.version().strip()}}.tar.gz
-sha:ac54cd8b3c6035cfcd684be5afd0eccc8c5fbbc3008a9b6f9ba42f6ef91105af
+ac54cd8b3c6035cfcd684be5afd0eccc8c5fbbc3008a9b6f9ba42f6ef91105af
 {% endblock %}
 
 {% block bld_libs %}

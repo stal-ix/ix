@@ -10,7 +10,7 @@ stalld
 
 {% block fetch %}
 https://gitlab.com/rt-linux-tools/stalld/-/archive/v{{self.version().strip()}}/stalld-v{{self.version().strip()}}.tar.bz2
-sha:7ecbb8fd7b2efd928ecbd1b3ce2b72cb7c486885f09f5ead15e1a5e0891c40e2
+7ecbb8fd7b2efd928ecbd1b3ce2b72cb7c486885f09f5ead15e1a5e0891c40e2
 {% endblock %}
 
 {% block bld_libs %}

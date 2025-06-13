@@ -10,7 +10,7 @@ sway
 
 {% block fetch %}
 https://github.com/swaywm/sway/archive/refs/tags/{{self.version().strip()}}.tar.gz
-sha:034ec4519326d6af5275814700dde46e852c5174614109affe4c86b2fbee062a
+034ec4519326d6af5275814700dde46e852c5174614109affe4c86b2fbee062a
 {% endblock %}
 
 {% block bld_libs %}

@@ -10,7 +10,7 @@ libxmp
 
 {% block fetch %}
 https://github.com/libxmp/libxmp/archive/refs/tags/libxmp-{{self.version().strip()}}.tar.gz
-sha:0871421a5ac54e7eefe4a5afc89f6411f6382aa7bbff8b916a9f243abe77e85f
+0871421a5ac54e7eefe4a5afc89f6411f6382aa7bbff8b916a9f243abe77e85f
 {% endblock %}
 
 {% block lib_deps %}

@@ -2,7 +2,7 @@
 
 {% block fetch %}
 https://devimages-cdn.apple.com/design/resources/download/SF-Pro.dmg
-sha:e084f247273c91513eb4d3927a78aee5f9bfc68daf79bb33b330afcbe7ffb7dc
+e084f247273c91513eb4d3927a78aee5f9bfc68daf79bb33b330afcbe7ffb7dc
 {% endblock %}
 
 {% block bld_tool %}

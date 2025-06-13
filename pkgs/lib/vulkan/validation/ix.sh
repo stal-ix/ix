@@ -10,7 +10,7 @@ Vulkan-ValidationLayers
 
 {% block fetch %}
 https://github.com/KhronosGroup/Vulkan-ValidationLayers/archive/refs/tags/vulkan-sdk-{{self.version().strip()}}.tar.gz
-sha:49b8ee6c2352157b12b1c87eb1165bc0f82a885bc2135ad97041ac84f79aacd0
+49b8ee6c2352157b12b1c87eb1165bc0f82a885bc2135ad97041ac84f79aacd0
 {% endblock %}
 
 {% block lib_deps %}

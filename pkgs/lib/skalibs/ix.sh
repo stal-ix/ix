@@ -10,7 +10,7 @@ skalibs
 
 {% block fetch %}
 https://github.com/skarnet/skalibs/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:369d21e9f1c3a851eeb2b03bee427c6d6d8b13eeff6cb6801f0013a840bda58d
+369d21e9f1c3a851eeb2b03bee427c6d6d8b13eeff6cb6801f0013a840bda58d
 {% endblock %}
 
 {% block lib_deps %}

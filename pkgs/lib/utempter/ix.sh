@@ -10,7 +10,7 @@ libutempter
 
 {% block fetch %}
 https://github.com/altlinux/libutempter/archive/refs/tags/{{self.version().strip()}}.tar.gz
-sha:52809c75af9b0e13249521177def85787f457888cbcee5511bf96fe06e146711
+52809c75af9b0e13249521177def85787f457888cbcee5511bf96fe06e146711
 {% endblock %}
 
 {% block lib_deps %}

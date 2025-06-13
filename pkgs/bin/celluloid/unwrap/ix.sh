@@ -10,7 +10,7 @@ celluloid
 
 {% block fetch %}
 https://github.com/celluloid-player/celluloid/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:c4fa8e21647f39253709bad1939fe3d376abd07e05c2c02fb235c23375aa810a
+c4fa8e21647f39253709bad1939fe3d376abd07e05c2c02fb235c23375aa810a
 {% endblock %}
 
 {% block bld_libs %}

@@ -10,7 +10,7 @@ squashfs-tools
 
 {% block fetch %}
 https://github.com/plougher/squashfs-tools/archive/refs/tags/{{self.version().strip()}}.tar.gz
-sha:f1605ef720aa0b23939a49ef4491f6e734333ccc4bda4324d330da647e105328
+f1605ef720aa0b23939a49ef4491f6e734333ccc4bda4324d330da647e105328
 {% endblock %}
 
 {% block unpack %}

@@ -2,7 +2,7 @@
 
 {% block fetch %}
 https://gitlab.com/qemu-project/keycodemapdb/-/archive/22b8996dba9041874845c7446ce89ec4ae2b713d/keycodemapdb-22b8996dba9041874845c7446ce89ec4ae2b713d.tar.bz2
-sha:4bc07b2298b517c86fad4b9f7514748d864311db4c88e8453fff4944a6b880ac
+4bc07b2298b517c86fad4b9f7514748d864311db4c88e8453fff4944a6b880ac
 {% endblock %}
 
 {% block git_repo %}

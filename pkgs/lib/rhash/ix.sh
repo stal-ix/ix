@@ -10,7 +10,7 @@ RHash
 
 {% block fetch %}
 https://github.com/rhash/RHash/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:9f6019cfeeae8ace7067ad22da4e4f857bb2cfa6c2deaa2258f55b2227ec937a
+9f6019cfeeae8ace7067ad22da4e4f857bb2cfa6c2deaa2258f55b2227ec937a
 {% endblock %}
 
 {% block lib_deps %}

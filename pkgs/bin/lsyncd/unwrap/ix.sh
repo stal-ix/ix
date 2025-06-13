@@ -10,7 +10,7 @@ lsyncd
 
 {% block fetch %}
 https://github.com/lsyncd/lsyncd/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:501f70368da8c43d3da81bf9bbb22f43dfcbc9f96b03c745842f326723c091c7
+501f70368da8c43d3da81bf9bbb22f43dfcbc9f96b03c745842f326723c091c7
 {% endblock %}
 
 {% block bld_libs %}

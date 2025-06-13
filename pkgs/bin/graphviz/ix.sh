@@ -10,7 +10,7 @@ graphviz
 
 {% block fetch %}
 https://gitlab.com/graphviz/graphviz/-/archive/{{self.version().strip()}}/graphviz-{{self.version().strip()}}.tar.bz2
-sha:d3926ff2c626b0825dd3e6172a21381000735a61586fc8bab3908abe3f635252
+d3926ff2c626b0825dd3e6172a21381000735a61586fc8bab3908abe3f635252
 {% endblock %}
 
 {% block make_no_thrs %}

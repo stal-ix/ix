@@ -10,7 +10,7 @@ man-db
 
 {% block fetch %}
 http://download.savannah.nongnu.org/releases/man-db/man-db-{{self.version().strip()}}.tar.xz
-sha:8afebb6f7eb6bb8542929458841f5c7e6f240e30c86358c1fbcefbea076c87d9
+8afebb6f7eb6bb8542929458841f5c7e6f240e30c86358c1fbcefbea076c87d9
 {% endblock %}
 
 {% block bld_libs %}

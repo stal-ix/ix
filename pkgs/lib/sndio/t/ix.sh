@@ -10,7 +10,7 @@ sndio
 
 {% block fetch %}
 https://sndio.org/sndio-{{self.version().strip()}}.tar.gz
-sha:bebd3bfd01c50c9376cf3e7814b9379bed9e17d0393b5113b7eb7a3d0d038c54
+bebd3bfd01c50c9376cf3e7814b9379bed9e17d0393b5113b7eb7a3d0d038c54
 {% endblock %}
 
 {% block lib_deps %}

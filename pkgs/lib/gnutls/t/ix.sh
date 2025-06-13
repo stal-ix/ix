@@ -10,7 +10,7 @@ gnutls
 
 {% block fetch %}
 https://www.gnupg.org/ftp/gcrypt/gnutls/v3.8/gnutls-{{self.version().strip()}}.tar.xz
-sha:69e113d802d1670c4d5ac1b99040b1f2d5c7c05daec5003813c049b5184820ed
+69e113d802d1670c4d5ac1b99040b1f2d5c7c05daec5003813c049b5184820ed
 {% endblock %}
 
 {% block conf_ver %}

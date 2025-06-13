@@ -10,7 +10,7 @@ maxima
 
 {% block fetch %}
 https://downloads.sourceforge.net/project/maxima/Maxima-source/{{self.version().strip()}}-source/maxima-{{self.version().strip()}}.tar.gz
-sha:9104021b24fd53e8c03a983509cb42e937a925e8c0c85c335d7709a14fd40f7a
+9104021b24fd53e8c03a983509cb42e937a925e8c0c85c335d7709a14fd40f7a
 {% endblock %}
 
 {% block bld_tool %}

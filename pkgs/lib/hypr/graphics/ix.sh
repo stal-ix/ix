@@ -10,7 +10,7 @@ hyprgraphics
 
 {% block fetch %}
 https://github.com/hyprwm/hyprgraphics/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:0e11457135a9e7160cf147d361fae3c5dc40035a4ebd894c5d409baa896f43cf
+0e11457135a9e7160cf147d361fae3c5dc40035a4ebd894c5d409baa896f43cf
 {% endblock %}
 
 {% block lib_deps %}

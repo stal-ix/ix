@@ -10,7 +10,7 @@ mpdecimal
 
 {% block fetch %}
 https://www.bytereef.org/software/mpdecimal/releases/mpdecimal-{{self.version().strip()}}.tar.gz
-sha:96d33abb4bb0070c7be0fed4246cd38416188325f820468214471938545b1ac8
+96d33abb4bb0070c7be0fed4246cd38416188325f820468214471938545b1ac8
 {% endblock %}
 
 {% block configure_flags %}

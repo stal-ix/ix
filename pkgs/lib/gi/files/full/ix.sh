@@ -10,7 +10,7 @@ gir-files
 
 {% block fetch %}
 https://github.com/gtk-rs/gir-files/archive/refs/tags/{{self.version().strip()}}.tar.gz
-sha:8d722e958244747989973c743d1b1e5d9b7adba0cf6f7193daef4045e79b896d
+8d722e958244747989973c743d1b1e5d9b7adba0cf6f7193daef4045e79b896d
 {% endblock %}
 
 {% block postinstall %}

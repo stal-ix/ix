@@ -10,7 +10,7 @@ vsftpd
 
 {% block fetch %}
 https://security.appspot.com/downloads/vsftpd-{{self.version().strip()}}.tar.gz
-sha:26b602ae454b0ba6d99ef44a09b6b9e0dfa7f67228106736df1f278c70bc91d3
+26b602ae454b0ba6d99ef44a09b6b9e0dfa7f67228106736df1f278c70bc91d3
 {% endblock %}
 
 {% block bld_libs %}

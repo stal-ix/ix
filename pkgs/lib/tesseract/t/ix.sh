@@ -10,7 +10,7 @@ tesseract
 
 {% block fetch %}
 https://github.com/tesseract-ocr/tesseract/archive/refs/tags/{{self.version().strip()}}.tar.gz
-sha:a7a3f2a7420cb6a6a94d80c24163e183cf1d2f1bed2df3bbc397c81808a57237
+a7a3f2a7420cb6a6a94d80c24163e183cf1d2f1bed2df3bbc397c81808a57237
 {% endblock %}
 
 {% block lib_deps %}

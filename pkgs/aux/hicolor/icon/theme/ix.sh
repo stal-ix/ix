@@ -10,7 +10,7 @@ hicolor-icon-theme
 
 {% block fetch %}
 https://icon-theme.freedesktop.org/releases/hicolor-icon-theme-{{self.version().strip()}}.tar.xz
-sha:db0e50a80aa3bf64bb45cbca5cf9f75efd9348cf2ac690b907435238c3cf81d7
+db0e50a80aa3bf64bb45cbca5cf9f75efd9348cf2ac690b907435238c3cf81d7
 {% endblock %}
 
 {% block run_data %}

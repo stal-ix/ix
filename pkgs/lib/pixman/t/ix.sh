@@ -10,7 +10,7 @@ pixman
 
 {% block fetch %}
 https://www.cairographics.org/releases/pixman-{{self.version().strip()}}.tar.gz
-sha:3e0de5ba6e356916946a3d958192f15505dcab85134771bfeab4ce4e29bbd733
+3e0de5ba6e356916946a3d958192f15505dcab85134771bfeab4ce4e29bbd733
 {% endblock %}
 
 {% block lib_deps %}

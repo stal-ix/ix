@@ -10,7 +10,7 @@ dhcp
 
 {% block fetch %}
 https://ftp.isc.org/isc/dhcp/{{self.version().strip()}}/dhcp-{{self.version().strip()}}.tar.gz
-sha:0ac416bb55997ca8632174fd10737fd61cdb8dba2752160a335775bc21dc73c7
+0ac416bb55997ca8632174fd10737fd61cdb8dba2752160a335775bc21dc73c7
 {% endblock %}
 
 {% block bld_libs %}

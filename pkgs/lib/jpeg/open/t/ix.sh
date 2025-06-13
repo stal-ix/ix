@@ -10,7 +10,7 @@ openjpeg
 
 {% block fetch %}
 https://github.com/uclouvain/openjpeg/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:368fe0468228e767433c9ebdea82ad9d801a3ad1e4234421f352c8b06e7aa707
+368fe0468228e767433c9ebdea82ad9d801a3ad1e4234421f352c8b06e7aa707
 {% endblock %}
 
 {% block lib_deps %}

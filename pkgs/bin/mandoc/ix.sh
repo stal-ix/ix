@@ -10,7 +10,7 @@ mandoc
 
 {% block fetch %}
 http://mandoc.bsd.lv/snapshots/mandoc-{{self.version().strip()}}.tar.gz
-sha:8bf0d570f01e70a6e124884088870cbed7537f36328d512909eb10cd53179d9c
+8bf0d570f01e70a6e124884088870cbed7537f36328d512909eb10cd53179d9c
 {% endblock %}
 
 {% block bld_libs %}

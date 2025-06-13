@@ -10,7 +10,7 @@ ttyd
 
 {% block fetch %}
 https://github.com/tsl0922/ttyd/archive/refs/tags/{{self.version().strip()}}.tar.gz
-sha:039dd995229377caee919898b7bd54484accec3bba49c118e2d5cd6ec51e3650
+039dd995229377caee919898b7bd54484accec3bba49c118e2d5cd6ec51e3650
 {% endblock %}
 
 {% block bld_libs %}

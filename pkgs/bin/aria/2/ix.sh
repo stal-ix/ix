@@ -10,7 +10,7 @@ aria2
 
 {% block fetch %}
 https://github.com/aria2/aria2/archive/refs/tags/release-{{self.version().strip()}}.tar.gz
-sha:9104878396cc30441976afdd3af9331ec51306fabf92fb82724c3b8fa7d72932
+9104878396cc30441976afdd3af9331ec51306fabf92fb82724c3b8fa7d72932
 {% endblock %}
 
 {% block bld_libs %}

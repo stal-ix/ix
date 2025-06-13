@@ -10,7 +10,7 @@ bc-gh
 
 {% block fetch %}
 https://github.com/gavinhoward/bc/archive/refs/tags/{{self.version().strip()}}.tar.gz
-sha:3c625e8034ef47c9ae11a1ed3dcc22314bf374144decf546647b9a722f7313d6
+3c625e8034ef47c9ae11a1ed3dcc22314bf374144decf546647b9a722f7313d6
 {% endblock %}
 
 {% block host_libs %}

@@ -10,7 +10,7 @@ execline
 
 {% block fetch %}
 https://github.com/skarnet/execline/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:a2794477b31d66cc301d0e97f182e2be736ee763291335412792cbc7e301d964
+a2794477b31d66cc301d0e97f182e2be736ee763291335412792cbc7e301d964
 {% endblock %}
 
 {% block lib_deps %}

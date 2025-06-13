@@ -10,7 +10,7 @@ vte
 
 {% block fetch %}
 https://github.com/GNOME/vte/archive/refs/tags/{{self.version().strip()}}.tar.gz
-sha:427f4e1eb7b438b8b5a01122f619d0f081e23e18c9935cc8c1248c562e57e49a
+427f4e1eb7b438b8b5a01122f619d0f081e23e18c9935cc8c1248c562e57e49a
 {% endblock %}
 
 {% block lib_deps %}

@@ -10,7 +10,7 @@ dos2unix
 
 {% block fetch %}
 https://waterlan.home.xs4all.nl/dos2unix/dos2unix-{{self.version().strip()}}.tar.gz
-sha:264742446608442eb48f96c20af6da303cb3a92b364e72cb7e24f88239c4bf3a
+264742446608442eb48f96c20af6da303cb3a92b364e72cb7e24f88239c4bf3a
 {% endblock %}
 
 {% block bld_libs %}

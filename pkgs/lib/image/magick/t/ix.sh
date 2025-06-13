@@ -10,7 +10,7 @@ ImageMagick
 
 {% block fetch %}
 https://imagemagick.org/archive/releases/ImageMagick-{{self.version().strip()}}.tar.xz
-sha:2396cd3c4237cfbc09a89d31d1cee157ee11fbc8ec1e540530e10175cb707160
+2396cd3c4237cfbc09a89d31d1cee157ee11fbc8ec1e540530e10175cb707160
 {% endblock %}
 
 {% block lib_deps %}

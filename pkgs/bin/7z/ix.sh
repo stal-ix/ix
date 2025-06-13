@@ -10,7 +10,7 @@
 
 {% block fetch %}
 https://www.7-zip.org/a/7z{{self.version().strip().replace('.', '')}}-src.tar.xz
-sha:49c05169f49572c1128453579af1632a952409ced028259381dac30726b6133a
+49c05169f49572c1128453579af1632a952409ced028259381dac30726b6133a
 {% endblock %}
 
 {% block lib_deps %}

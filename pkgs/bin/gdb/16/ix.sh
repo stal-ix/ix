@@ -10,7 +10,7 @@ gdb
 
 {% block fetch %}
 https://ftp.gnu.org/gnu/gdb/gdb-{{self.version().strip()}}.tar.xz
-sha:bcfcd095528a987917acf9fff3f1672181694926cc18d609c99d0042c00224c5
+bcfcd095528a987917acf9fff3f1672181694926cc18d609c99d0042c00224c5
 {% endblock %}
 
 {% block host_libs %}

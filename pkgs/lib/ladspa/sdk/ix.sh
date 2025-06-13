@@ -10,7 +10,7 @@ ladspa_sdk
 
 {% block fetch %}
 http://www.ladspa.org/download/ladspa_sdk_{{self.version().strip()}}.tgz
-sha:27d24f279e4b81bd17ecbdcc38e4c42991bb388826c0b200067ce0eb59d3da5b
+27d24f279e4b81bd17ecbdcc38e4c42991bb388826c0b200067ce0eb59d3da5b
 {% endblock %}
 
 {% block lib_deps %}

@@ -12,7 +12,7 @@ codeblocks
 
 {% block fetch %}
 https://downloads.sourceforge.net/project/codeblocks/Sources/{{self.version().strip()}}/codeblocks-{{self.version().strip()}}.tar.xz
-sha:15eeb3e28aea054e1f38b0c7f4671b4d4d1116fd05f63c07aa95a91db89eaac5
+15eeb3e28aea054e1f38b0c7f4671b4d4d1116fd05f63c07aa95a91db89eaac5
 {% endblock %}
 
 {% block bld_libs %}

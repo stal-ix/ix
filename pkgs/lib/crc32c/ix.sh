@@ -10,7 +10,7 @@ crc32c
 
 {% block fetch %}
 https://github.com/google/crc32c/archive/refs/tags/{{self.version().strip()}}.tar.gz
-sha:ac07840513072b7fcebda6e821068aa04889018f24e10e46181068fb214d7e56
+ac07840513072b7fcebda6e821068aa04889018f24e10e46181068fb214d7e56
 {% endblock %}
 
 {% block lib_deps %}

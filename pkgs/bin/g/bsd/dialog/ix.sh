@@ -10,7 +10,7 @@ gbsddialog
 
 {% block fetch %}
 https://github.com/khorben/gbsddialog/archive/refs/tags/gbsddialog_{{self.version().strip().replace('.', '-')}}.tar.gz
-sha:95bc5e57d09a26f2ba5529c82e63b71249f3ea2ba288d9c8cea4895a14877fdb
+95bc5e57d09a26f2ba5529c82e63b71249f3ea2ba288d9c8cea4895a14877fdb
 {% endblock %}
 
 {% block bld_libs %}

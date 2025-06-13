@@ -10,7 +10,7 @@ SDLPoP
 
 {% block fetch %}
 https://github.com/NagyD/SDLPoP/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:41a9aa64b4e8d0a9d7a84ffced48f74f9528d81adbffc08593ecf84776c5d77a
+41a9aa64b4e8d0a9d7a84ffced48f74f9528d81adbffc08593ecf84776c5d77a
 {% endblock %}
 
 {% block unpack %}

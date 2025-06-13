@@ -10,7 +10,7 @@ pcre
 
 {% block fetch %}
 https://downloads.sourceforge.net/project/pcre/pcre/{{self.version().strip()}}/pcre-{{self.version().strip()}}.tar.bz2
-sha:4dae6fdcd2bb0bb6c37b5f97c33c2be954da743985369cddac3546e3218bffb8
+4dae6fdcd2bb0bb6c37b5f97c33c2be954da743985369cddac3546e3218bffb8
 {% endblock %}
 
 {% block lib_deps %}

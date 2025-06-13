@@ -2,7 +2,7 @@
 
 {% block fetch %}
 https://github.com/tpoechtrager/cctools-port/archive/236a426c1205a3bfcf0dbb2e2faf2296f0a100e5.tar.gz
-sha:f7c73122ebb0ea2cf094639b9ae387857d528337fea3d07d9800d9d0980241af
+f7c73122ebb0ea2cf094639b9ae387857d528337fea3d07d9800d9d0980241af
 {% endblock %}
 
 {% block bld_libs %}

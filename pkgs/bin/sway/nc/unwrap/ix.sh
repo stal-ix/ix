@@ -10,7 +10,7 @@ SwayNotificationCenter
 
 {% block fetch %}
 https://github.com/ErikReider/SwayNotificationCenter/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:7f69fe248994404af4115d335929b3bd2faf8c6321374b5b3e3fa2c97d169c90
+7f69fe248994404af4115d335929b3bd2faf8c6321374b5b3e3fa2c97d169c90
 {% endblock %}
 
 {% block lib_deps %}

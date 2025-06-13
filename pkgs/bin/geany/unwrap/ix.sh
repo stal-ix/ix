@@ -10,7 +10,7 @@ geany
 
 {% block fetch %}
 https://github.com/geany/geany/archive/refs/tags/{{self.version().strip()}}.tar.gz
-sha:a744ab9ae3e58b371de4b50990c44227c499f82e2a8ee6753307ef107748e4df
+a744ab9ae3e58b371de4b50990c44227c499f82e2a8ee6753307ef107748e4df
 {% endblock %}
 
 {% block bld_libs %}

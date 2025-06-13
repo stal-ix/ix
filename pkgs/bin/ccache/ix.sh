@@ -10,7 +10,7 @@ ccache
 
 {% block fetch %}
 https://github.com/ccache/ccache/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:6502d63fbb236ed6bbc5c3405fddef57458cb74acd2141577250a8faa56c7d90
+6502d63fbb236ed6bbc5c3405fddef57458cb74acd2141577250a8faa56c7d90
 {% endblock %}
 
 {% block bld_libs %}

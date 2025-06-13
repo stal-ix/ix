@@ -10,7 +10,7 @@ btop
 
 {% block fetch %}
 https://github.com/aristocratos/btop/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:81b133e59699a7fd89c5c54806e16452232f6452be9c14b3a634122e3ebed592
+81b133e59699a7fd89c5c54806e16452232f6452be9c14b3a634122e3ebed592
 {% endblock %}
 
 {% block bld_libs %}

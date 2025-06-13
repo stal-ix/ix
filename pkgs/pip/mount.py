@@ -9,7 +9,7 @@ TMPL = r'''
 
 {% block fetch %}
 {url}
-sha:{sha}
+{sha}
 {% endblock %}
 
 {% block bld_tool %}

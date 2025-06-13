@@ -10,7 +10,7 @@ range-v3
 
 {% block fetch %}
 https://github.com/ericniebler/range-v3/archive/refs/tags/{{self.version().strip()}}.tar.gz
-sha:015adb2300a98edfceaf0725beec3337f542af4915cec4d0b89fa0886f4ba9cb
+015adb2300a98edfceaf0725beec3337f542af4915cec4d0b89fa0886f4ba9cb
 {% endblock %}
 
 {% block lib_deps %}

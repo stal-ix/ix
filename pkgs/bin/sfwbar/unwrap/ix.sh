@@ -10,7 +10,7 @@ sfwbar
 
 {% block fetch %}
 https://github.com/LBCrion/sfwbar/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:238d6394650dfdfc2f36374ec25702bbef57e2cff1d9a149ecb9a52f887c3cdf
+238d6394650dfdfc2f36374ec25702bbef57e2cff1d9a149ecb9a52f887c3cdf
 {% endblock %}
 
 {% block bld_libs %}

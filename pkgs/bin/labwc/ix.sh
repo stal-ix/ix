@@ -10,7 +10,7 @@ labwc
 
 {% block fetch %}
 https://github.com/labwc/labwc/archive/refs/tags/{{self.version().strip()}}.tar.gz
-sha:2d3ded90f78efb5060f7057ea802c78a79dc9b2e82ae7a2ad902af957b8b9797
+2d3ded90f78efb5060f7057ea802c78a79dc9b2e82ae7a2ad902af957b8b9797
 {% endblock %}
 
 {% block bld_libs %}

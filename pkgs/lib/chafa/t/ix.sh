@@ -10,7 +10,7 @@ chafa
 
 {% block fetch %}
 https://github.com/hpjansson/chafa/archive/refs/tags/{{self.version().strip()}}.tar.gz
-sha:37957e7e660e5be6f4947702d1ebca72234babffdfac56f3a93093109e5ac9a2
+37957e7e660e5be6f4947702d1ebca72234babffdfac56f3a93093109e5ac9a2
 {% endblock %}
 
 {% block lib_deps %}

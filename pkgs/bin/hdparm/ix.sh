@@ -10,7 +10,7 @@ hdparm
 
 {% block fetch %}
 https://downloads.sourceforge.net/hdparm/hdparm-{{self.version().strip()}}.tar.gz
-sha:d14929f910d060932e717e9382425d47c2e7144235a53713d55a94f7de535a4b
+d14929f910d060932e717e9382425d47c2e7144235a53713d55a94f7de535a4b
 {% endblock %}
 
 {% block bld_libs %}

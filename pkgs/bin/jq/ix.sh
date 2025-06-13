@@ -8,7 +8,7 @@ jq
 
 {% block fetch %}
 https://github.com/stedolan/jq/archive/refs/tags/jq-{{self.version()}}.tar.gz
-sha:6f4137cfb1744e9729d177707c3880957ec3fab621db921fcb4c04e62ed9e636
+6f4137cfb1744e9729d177707c3880957ec3fab621db921fcb4c04e62ed9e636
 {% endblock %}
 
 {% block bld_libs %}

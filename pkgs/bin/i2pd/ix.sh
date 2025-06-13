@@ -10,7 +10,7 @@ i2pd
 
 {% block fetch %}
 https://github.com/PurpleI2P/i2pd/archive/refs/tags/{{self.version().strip()}}.tar.gz
-sha:e2327f816d92a369eaaf9fd1661bc8b350495199e2f2cb4bfd4680107cd1d4b4
+e2327f816d92a369eaaf9fd1661bc8b350495199e2f2cb4bfd4680107cd1d4b4
 {% endblock %}
 
 {% block bld_libs %}

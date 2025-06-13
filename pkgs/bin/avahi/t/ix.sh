@@ -10,7 +10,7 @@ avahi
 
 {% block fetch %}
 https://github.com/avahi/avahi/releases/download/v{{self.version().strip()}}/avahi-{{self.version().strip()}}.tar.gz
-sha:060309d7a333d38d951bc27598c677af1796934dbd98e1024e7ad8de798fedda
+060309d7a333d38d951bc27598c677af1796934dbd98e1024e7ad8de798fedda
 {% endblock %}
 
 {% block bld_libs %}

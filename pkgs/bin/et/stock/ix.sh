@@ -10,7 +10,7 @@ EternalTerminal
 
 {% block fetch %}
 https://github.com/MisterTea/EternalTerminal/archive/refs/tags/et-v{{self.version().strip()}}.tar.gz
-sha:13bfb2722b011b5f0a28fa619508deca96deec9eee5e42b922add0c166d8185a
+13bfb2722b011b5f0a28fa619508deca96deec9eee5e42b922add0c166d8185a
 {% endblock %}
 
 {% block bld_libs %}

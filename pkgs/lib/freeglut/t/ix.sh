@@ -10,7 +10,7 @@ freeglut
 
 {% block fetch %}
 https://github.com/FreeGLUTProject/freeglut/releases/download/v{{self.version().strip()}}/freeglut-{{self.version().strip()}}.tar.gz
-sha:9c3d4d6516fbfa0280edc93c77698fb7303e443c1aaaf37d269e3288a6c3ea52
+9c3d4d6516fbfa0280edc93c77698fb7303e443c1aaaf37d269e3288a6c3ea52
 {% endblock %}
 
 {% block lib_deps %}

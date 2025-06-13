@@ -10,7 +10,7 @@ tinyssh
 
 {% block fetch %}
 https://github.com/janmojzis/tinyssh/archive/refs/tags/{{self.version().strip()}}.tar.gz
-sha:f3ae622c765db4e0d791ea90a9feba39d7f693ef9cb949a797f7ad6b404a2d61
+f3ae622c765db4e0d791ea90a9feba39d7f693ef9cb949a797f7ad6b404a2d61
 {% endblock %}
 
 {% block bld_libs %}

@@ -10,5 +10,5 @@ fmt
 
 {% block fetch %}
 https://github.com/fmtlib/fmt/archive/refs/tags/{{self.version().strip()}}.tar.gz
-sha:bc23066d87ab3168f27cef3e97d545fa63314f5c79df5ea444d41d56f962c6af
+bc23066d87ab3168f27cef3e97d545fa63314f5c79df5ea444d41d56f962c6af
 {% endblock %}

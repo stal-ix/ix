@@ -10,7 +10,7 @@ dav1d
 
 {% block fetch %}
 https://github.com/videolan/dav1d/archive/refs/tags/{{self.version().strip()}}.tar.gz
-sha:fa635e2bdb25147b1384007c83e15de44c589582bb3b9a53fc1579cb9d74b695
+fa635e2bdb25147b1384007c83e15de44c589582bb3b9a53fc1579cb9d74b695
 {% endblock %}
 
 {% block lib_deps %}

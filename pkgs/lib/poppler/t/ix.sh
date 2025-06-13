@@ -10,7 +10,7 @@ poppler
 
 {% block fetch %}
 https://poppler.freedesktop.org/poppler-{{self.version().strip()}}.tar.xz
-sha:8199532d38984fab46dbd0020ec9c40f20e928e33e9b4cc6043572603a821d83
+8199532d38984fab46dbd0020ec9c40f20e928e33e9b4cc6043572603a821d83
 {% endblock %}
 
 {% block lib_deps %}

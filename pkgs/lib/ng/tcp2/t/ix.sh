@@ -10,7 +10,7 @@ ngtcp2
 
 {% block fetch %}
 https://github.com/ngtcp2/ngtcp2/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:207c0daea888ae35092cd4762606adc2289a054cb4aae893cca8953cfa011442
+207c0daea888ae35092cd4762606adc2289a054cb4aae893cca8953cfa011442
 {% endblock %}
 
 {% block lib_deps %}

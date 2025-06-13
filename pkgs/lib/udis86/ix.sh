@@ -10,7 +10,7 @@ udis86
 
 {% block fetch %}
 https://github.com/vmt/udis86/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:43567f7e12168943c5b5ffb3d3f5b7a33cb36328f8938a993458f3ded0ba5779
+43567f7e12168943c5b5ffb3d3f5b7a33cb36328f8938a993458f3ded0ba5779
 {% endblock %}
 
 {% block lib_deps %}

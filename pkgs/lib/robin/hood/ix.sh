@@ -10,7 +10,7 @@ robin-hood-hashing
 
 {% block fetch %}
 https://github.com/martinus/robin-hood-hashing/archive/refs/tags/{{self.version().strip()}}.tar.gz
-sha:dcf2b7fa9ef9dd0c67102d94c28e8df3effbe1845e0ed1f31f4772ca5e857fc4
+dcf2b7fa9ef9dd0c67102d94c28e8df3effbe1845e0ed1f31f4772ca5e857fc4
 {% endblock %}
 
 {% block lib_deps %}

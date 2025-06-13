@@ -10,7 +10,7 @@ subversion
 
 {% block fetch %}
 https://archive.apache.org/dist/subversion/subversion-{{self.version().strip()}}.tar.bz2
-sha:e78a29e7766b8b7b354497d08f71a55641abc53675ce1875584781aae35644a1
+e78a29e7766b8b7b354497d08f71a55641abc53675ce1875584781aae35644a1
 {% endblock %}
 
 {% block bld_libs %}

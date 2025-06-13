@@ -12,7 +12,7 @@ gdbm
 
 {% block fetch %}
 https://ftp.gnu.org/gnu/gdbm/gdbm-{{self.version().strip()}}.tar.gz
-sha:37ed12214122b972e18a0d94995039e57748191939ef74115b1d41d8811364bc
+37ed12214122b972e18a0d94995039e57748191939ef74115b1d41d8811364bc
 {% endblock %}
 
 {% block lib_deps %}

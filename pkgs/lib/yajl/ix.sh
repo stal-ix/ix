@@ -10,7 +10,7 @@ yajl
 
 {% block fetch %}
 https://github.com/lloyd/yajl/archive/refs/tags/{{self.version().strip()}}.tar.gz
-sha:3fb73364a5a30efe615046d07e6db9d09fd2b41c763c5f7d3bfb121cd5c5ac5a
+3fb73364a5a30efe615046d07e6db9d09fd2b41c763c5f7d3bfb121cd5c5ac5a
 {% endblock %}
 
 {% block cmake_flags %}

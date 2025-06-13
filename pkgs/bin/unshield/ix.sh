@@ -10,7 +10,7 @@ unshield
 
 {% block fetch %}
 https://github.com/twogood/unshield/archive/refs/tags/{{self.version().strip()}}.tar.gz
-sha:a937ef596ad94d16e7ed2c8553ad7be305798dcdcfd65ae60210b1e54ab51a2f
+a937ef596ad94d16e7ed2c8553ad7be305798dcdcfd65ae60210b1e54ab51a2f
 {% endblock %}
 
 {% block bld_libs %}

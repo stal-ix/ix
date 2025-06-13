@@ -10,7 +10,7 @@ brotli
 
 {% block fetch %}
 https://github.com/google/brotli/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:e720a6ca29428b803f4ad165371771f5398faba397edf6778837a18599ea13ff
+e720a6ca29428b803f4ad165371771f5398faba397edf6778837a18599ea13ff
 {% endblock %}
 
 {% block lib_deps %}

@@ -10,7 +10,7 @@ bzip3
 
 {% block fetch %}
 https://github.com/kspalaiologos/bzip3/archive/refs/tags/{{self.version().strip()}}.tar.gz
-sha:1664d27a1ad3fdfecade917a7c2f7597cad4dbea4b1c526d3eedd7583b920bef
+1664d27a1ad3fdfecade917a7c2f7597cad4dbea4b1c526d3eedd7583b920bef
 {% endblock %}
 
 {% block lib_deps %}

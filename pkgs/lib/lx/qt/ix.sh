@@ -10,7 +10,7 @@ liblxqt
 
 {% block fetch %}
 https://github.com/lxqt/liblxqt/archive/refs/tags/{{self.version().strip()}}.tar.gz
-sha:5994024d06aba5d33e72b578d3c36d56942f43218ecceac6ff172e6499511066
+5994024d06aba5d33e72b578d3c36d56942f43218ecceac6ff172e6499511066
 {% endblock %}
 
 {% block lib_deps %}

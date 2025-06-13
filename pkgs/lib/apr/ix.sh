@@ -10,7 +10,7 @@ apr
 
 {% block fetch %}
 https://archive.apache.org/dist/apr/apr-{{self.version().strip()}}.tar.bz2
-sha:49030d92d2575da735791b496dc322f3ce5cff9494779ba8cc28c7f46c5deb32
+49030d92d2575da735791b496dc322f3ce5cff9494779ba8cc28c7f46c5deb32
 {% endblock %}
 
 {% block postinstall %}

@@ -10,7 +10,7 @@ wlroots
 
 {% block fetch %}
 https://gitlab.freedesktop.org/wlroots/wlroots/-/archive/{{self.version().strip()}}/wlroots-{{self.version().strip()}}.tar.bz2
-sha:d7890185b8990727b259907310823347277559caa0e7c7c671b6a19db5ff1aed
+d7890185b8990727b259907310823347277559caa0e7c7c671b6a19db5ff1aed
 {% endblock %}
 
 {% block lib_deps %}

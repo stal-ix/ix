@@ -10,7 +10,7 @@ rssguard
 
 {% block fetch %}
 https://github.com/martinrotter/rssguard/archive/refs/tags/{{self.version().strip()}}.tar.gz
-sha:e3d5cd31d24c92cd4b85eae6e961b19093fb965b6b34bff39dd030089f314598
+e3d5cd31d24c92cd4b85eae6e961b19093fb965b6b34bff39dd030089f314598
 {% endblock %}
 
 {% block bld_libs %}

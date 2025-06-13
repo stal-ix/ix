@@ -10,7 +10,7 @@ gthumb
 
 {% block fetch %}
 https://github.com/GNOME/gthumb/archive/refs/tags/{{self.version().strip()}}.tar.gz
-sha:386fabb6f4a780f723d27f268a1819d08dd7a6ebb3b5e52181d625f23c6d9188
+386fabb6f4a780f723d27f268a1819d08dd7a6ebb3b5e52181d625f23c6d9188
 {% endblock %}
 
 {% block bld_libs %}

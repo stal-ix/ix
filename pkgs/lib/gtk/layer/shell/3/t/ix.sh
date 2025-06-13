@@ -10,7 +10,7 @@ gtk-layer-shell
 
 {% block fetch %}
 https://github.com/wmww/gtk-layer-shell/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:526dd95c083e2a73eafd8baa1f5d676a36cb80fc8e7b304cbe3efebd62f0600c
+526dd95c083e2a73eafd8baa1f5d676a36cb80fc8e7b304cbe3efebd62f0600c
 {% endblock %}
 
 {% block lib_deps %}

@@ -10,7 +10,7 @@ mold
 
 {% block fetch %}
 https://github.com/rui314/mold/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:d1ce09a69941f8158604c3edcc96c7178231e7dba2da66b20f5ef6e112c443b7
+d1ce09a69941f8158604c3edcc96c7178231e7dba2da66b20f5ef6e112c443b7
 {% endblock %}
 
 {% block bld_libs %}

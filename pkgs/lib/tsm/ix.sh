@@ -10,7 +10,7 @@ libtsm
 
 {% block fetch %}
 https://github.com/Aetf/libtsm/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:ce51be564872d3e6a35fadab1f74b8804f72d8a92c0f378ca384155134d154e5
+ce51be564872d3e6a35fadab1f74b8804f72d8a92c0f378ca384155134d154e5
 {% endblock %}
 
 {% block lib_deps %}

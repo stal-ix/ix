@@ -10,7 +10,7 @@ libtracefs
 
 {% block fetch %}
 https://git.kernel.org/pub/scm/libs/libtrace/libtracefs.git/snapshot/libtracefs-{{self.version().strip()}}.tar.gz
-sha:255980e1da5648fbbc32777ed8457b485b2b96f3449674610b46d9c437271209
+255980e1da5648fbbc32777ed8457b485b2b96f3449674610b46d9c437271209
 {% endblock %}
 
 {% block lib_deps %}

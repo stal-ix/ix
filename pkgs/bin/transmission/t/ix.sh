@@ -10,7 +10,7 @@ transmission
 
 {% block fetch %}
 https://github.com/transmission/transmission/archive/refs/tags/{{self.version().strip()}}.tar.gz
-sha:bcc0e5f96497521e98fa7b224d1864f270484ad215a974f8dedeb818e6720d13
+bcc0e5f96497521e98fa7b224d1864f270484ad215a974f8dedeb818e6720d13
 {% endblock %}
 
 {% block bld_libs %}

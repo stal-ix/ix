@@ -10,7 +10,7 @@ nwipe
 
 {% block fetch %}
 https://github.com/martijnvanbrummelen/nwipe/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:0c1b19d1a721b995504fc01c21363555f207b25d6749650355a8cd7be09824dd
+0c1b19d1a721b995504fc01c21363555f207b25d6749650355a8cd7be09824dd
 {% endblock %}
 
 {% block conf_ver %}

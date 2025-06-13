@@ -10,7 +10,7 @@ strace
 
 {% block fetch %}
 https://strace.io/files/{{self.version().strip()}}/strace-{{self.version().strip()}}.tar.xz
-sha:8552dfab08abc22a0f2048c98fd9541fd4d71b6882507952780dab7c7c512f51
+8552dfab08abc22a0f2048c98fd9541fd4d71b6882507952780dab7c7c512f51
 {% endblock %}
 
 {% block bld_libs %}

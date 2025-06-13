@@ -10,7 +10,7 @@ lame
 
 {% block fetch %}
 https://downloads.sourceforge.net/project/lame/lame/{{self.version().strip()}}/lame-{{self.version().strip()}}.tar.gz
-sha:ddfe36cab873794038ae2c1210557ad34857a4b6bdc515785d1da9e175b1da1e
+ddfe36cab873794038ae2c1210557ad34857a4b6bdc515785d1da9e175b1da1e
 {% endblock %}
 
 {% block lib_deps %}

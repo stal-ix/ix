@@ -10,7 +10,7 @@ files
 
 {% block fetch %}
 https://github.com/elementary/files/archive/refs/tags/{{self.version().strip()}}.tar.gz
-sha:7d93a4551b9110e9a29a85d1aa40fadd7a104762f6aad8419c95d1e65e2f7b7a
+7d93a4551b9110e9a29a85d1aa40fadd7a104762f6aad8419c95d1e65e2f7b7a
 {% endblock %}
 
 {% block bld_libs %}

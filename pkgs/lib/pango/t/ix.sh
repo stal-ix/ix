@@ -10,7 +10,7 @@ pango
 
 {% block fetch %}
 https://gitlab.gnome.org/GNOME/pango/-/archive/{{self.version().strip()}}/pango-{{self.version().strip()}}.tar.bz2
-sha:f57538307be7db3c44a731a1966393366fb4d017f47876573a534595585f033c
+f57538307be7db3c44a731a1966393366fb4d017f47876573a534595585f033c
 {% endblock %}
 
 {% block lib_deps %}

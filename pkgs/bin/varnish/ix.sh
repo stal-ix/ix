@@ -12,7 +12,7 @@ varnish-cache
 
 {% block fetch %}
 https://github.com/varnishcache/varnish-cache/archive/refs/tags/varnish-{{self.version().strip()}}.tar.gz
-sha:5c90b75e548585f940b6abee8a5805738698d70fb4e09780142953f9d72ac7a7
+5c90b75e548585f940b6abee8a5805738698d70fb4e09780142953f9d72ac7a7
 {% endblock %}
 
 {% block bld_libs %}

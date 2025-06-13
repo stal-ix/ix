@@ -10,7 +10,7 @@ quirc
 
 {% block fetch %}
 https://github.com/dlbeer/quirc/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:73c12ea33d337ec38fb81218c7674f57dba7ec0570bddd5c7f7a977c0deb64c5
+73c12ea33d337ec38fb81218c7674f57dba7ec0570bddd5c7f7a977c0deb64c5
 {% endblock %}
 
 {% block lib_deps %}

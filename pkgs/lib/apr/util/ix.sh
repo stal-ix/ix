@@ -10,7 +10,7 @@ apr-util
 
 {% block fetch %}
 https://archive.apache.org/dist/apr/apr-util-{{self.version().strip()}}.tar.bz2
-sha:a41076e3710746326c3945042994ad9a4fcac0ce0277dd8fea076fec3c9772b5
+a41076e3710746326c3945042994ad9a4fcac0ce0277dd8fea076fec3c9772b5
 {% endblock %}
 
 {% block lib_deps %}

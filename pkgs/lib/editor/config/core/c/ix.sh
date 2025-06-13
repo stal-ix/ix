@@ -10,7 +10,7 @@ editorconfig-core-c
 
 {% block fetch %}
 https://github.com/editorconfig/editorconfig-core-c/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:4aaa4e3883332aac7ec19c169dcf128f5f0f963f61d09beb299eb2bce5944e2c
+4aaa4e3883332aac7ec19c169dcf128f5f0f963f61d09beb299eb2bce5944e2c
 {% endblock %}
 
 {% block lib_deps %}

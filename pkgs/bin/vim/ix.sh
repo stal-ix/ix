@@ -10,7 +10,7 @@ vim
 
 {% block fetch %}
 https://github.com/vim/vim/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:dec1068acea7a01e28e89ff18dd2200c3386d6b3baa63545172dcfff301b7869
+dec1068acea7a01e28e89ff18dd2200c3386d6b3baa63545172dcfff301b7869
 {% endblock %}
 
 {% block unpack %}

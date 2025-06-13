@@ -10,7 +10,7 @@ quictls-openssl
 
 {% block fetch %}
 https://github.com/quictls/openssl/archive/refs/tags/openssl-{{self.version().strip()}}-quic1.tar.gz
-sha:e7e514ea033c290f09c7250dd43a845bc1e08066b793274f3ad3fe04c76a5206
+e7e514ea033c290f09c7250dd43a845bc1e08066b793274f3ad3fe04c76a5206
 {% endblock %}
 
 {% block env %}

@@ -10,7 +10,7 @@ automake
 
 {% block fetch %}
 https://ftp.gnu.org/gnu/automake/automake-{{self.version().strip()}}.tar.xz
-sha:ff2bf7656c4d1c6fdda3b8bebb21f09153a736bcba169aaf65eab25fa113bf3a
+ff2bf7656c4d1c6fdda3b8bebb21f09153a736bcba169aaf65eab25fa113bf3a
 {% endblock %}
 
 {% block bld_tool %}

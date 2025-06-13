@@ -10,7 +10,7 @@ iwd
 
 {% block fetch %}
 https://mirrors.edge.kernel.org/pub/linux/network/wireless/iwd-{{self.version().strip()}}.tar.xz
-sha:c556a5a5376270af68940e04e26765026fbbbe4941668317c274c91042611cdf
+c556a5a5376270af68940e04e26765026fbbbe4941668317c274c91042611cdf
 {% endblock %}
 
 {% block bld_libs %}

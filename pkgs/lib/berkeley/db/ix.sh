@@ -10,7 +10,7 @@ berkeley-db
 
 {% block fetch %}
 https://download.oracle.com/berkeley-db/db-{{self.version().strip()}}.tar.gz
-sha:a9c5e2b004a5777aa03510cfe5cd766a4a3b777713406b02809c17c8e0e7a8fb
+a9c5e2b004a5777aa03510cfe5cd766a4a3b777713406b02809c17c8e0e7a8fb
 {% endblock %}
 
 {% block lib_deps %}

@@ -10,7 +10,7 @@ vorbis
 
 {% block fetch %}
 https://gitlab.xiph.org/xiph/vorbis/-/archive/v{{self.version().strip()}}/vorbis-v{{self.version().strip()}}.tar.bz2
-sha:db12631bedae30342304625d43cd8ec45462a3309087021ca3452b738e34981f
+db12631bedae30342304625d43cd8ec45462a3309087021ca3452b738e34981f
 {% endblock %}
 
 {% block lib_deps %}

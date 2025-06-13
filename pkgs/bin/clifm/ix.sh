@@ -10,7 +10,7 @@ clifm
 
 {% block fetch %}
 https://github.com/leo-arch/clifm/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:ac9156753338f6027d05551b1d02bcb6f3044348108b00b9cefd97f125fc95ee
+ac9156753338f6027d05551b1d02bcb6f3044348108b00b9cefd97f125fc95ee
 {% endblock %}
 
 {% block bld_libs %}

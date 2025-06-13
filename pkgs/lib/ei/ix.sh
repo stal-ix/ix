@@ -10,7 +10,7 @@ libei
 
 {% block fetch %}
 https://gitlab.freedesktop.org/libinput/libei/-/archive/{{self.version().strip()}}/libei-{{self.version().strip()}}.tar.bz2
-sha:4346b471d9635e64aff8ac3be7e07aaf2c0456d8332ab5934d53aae0e0f34162
+4346b471d9635e64aff8ac3be7e07aaf2c0456d8332ab5934d53aae0e0f34162
 {% endblock %}
 
 {% block lib_deps %}

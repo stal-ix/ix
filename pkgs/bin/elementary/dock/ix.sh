@@ -10,7 +10,7 @@ dock
 
 {% block fetch %}
 https://github.com/elementary/dock/archive/refs/tags/{{self.version().strip()}}.tar.gz
-sha:9aac9b6e5774adf5bd95605173b2d120036ee5605f28f8e12bc6d4a9bc9e78b8
+9aac9b6e5774adf5bd95605173b2d120036ee5605f28f8e12bc6d4a9bc9e78b8
 {% endblock %}
 
 {% block bld_libs %}

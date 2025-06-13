@@ -10,7 +10,7 @@ libunwind
 
 {% block fetch %}
 https://github.com/libunwind/libunwind/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:3b888e01f3d25f7914bbfd31139066bb4547e079322975134b03c92e4c6a2066
+3b888e01f3d25f7914bbfd31139066bb4547e079322975134b03c92e4c6a2066
 {% endblock %}
 
 {# can not use full lib/c here, cause libc++-16 contains incompatible libunwind.h #}

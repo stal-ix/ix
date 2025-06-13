@@ -2,7 +2,7 @@
 
 {% block fetch %}
 https://github.com/apple-oss-distributions/patch_cmds/archive/refs/tags/patch_cmds-61.tar.gz
-sha:ac3934304c25be001a189c26a7cd01dfa3817d0a0f6a25aafd3e1649489b047d
+ac3934304c25be001a189c26a7cd01dfa3817d0a0f6a25aafd3e1649489b047d
 {% endblock %}
 
 {% block unpack %}

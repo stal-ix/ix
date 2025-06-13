@@ -10,7 +10,7 @@ lite-xl
 
 {% block fetch %}
 https://github.com/lite-xl/lite-xl/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:fcaffb946bc60583369cb040d533a4ac18075a6d474d49a2a5ff4bf87e2e9a10
+fcaffb946bc60583369cb040d533a4ac18075a6d474d49a2a5ff4bf87e2e9a10
 {% endblock %}
 
 {% block bld_libs %}

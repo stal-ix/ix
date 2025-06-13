@@ -10,7 +10,7 @@ Minder
 
 {% block fetch %}
 https://github.com/phase1geo/Minder/archive/refs/tags/{{self.version().strip()}}.tar.gz
-sha:3a9c2831d36a7744f7df27412b2f75b2bec38f5974984a027d6fa7f634a37c7e
+3a9c2831d36a7744f7df27412b2f75b2bec38f5974984a027d6fa7f634a37c7e
 {% endblock %}
 
 {% block bld_libs %}

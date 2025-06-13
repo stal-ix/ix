@@ -10,7 +10,7 @@ libwebsockets
 
 {% block fetch %}
 https://github.com/warmcat/libwebsockets/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:87f99ad32803ed325fceac5327aae1f5c1b417d54ee61ad36cffc8df5f5ab276
+87f99ad32803ed325fceac5327aae1f5c1b417d54ee61ad36cffc8df5f5ab276
 {% endblock %}
 
 {% block lib_deps %}

@@ -10,7 +10,7 @@ openexr
 
 {% block fetch %}
 https://github.com/AcademySoftwareFoundation/openexr/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:63abac7c52f280e3e16fc868ac40e06449733bb19179008248ae7e34e4f19824
+63abac7c52f280e3e16fc868ac40e06449733bb19179008248ae7e34e4f19824
 {% endblock %}
 
 {% block lib_deps %}

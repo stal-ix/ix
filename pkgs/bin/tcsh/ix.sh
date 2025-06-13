@@ -10,7 +10,7 @@ tcsh
 
 {% block fetch %}
 https://astron.com/pub/tcsh/tcsh-{{self.version().strip()}}.tar.gz
-sha:d4d0b2a4df320f57a518e44c359ef36bbcf85d64f5146d0cb8ff34984e0d23fd
+d4d0b2a4df320f57a518e44c359ef36bbcf85d64f5146d0cb8ff34984e0d23fd
 {% endblock %}
 
 {% block conf_ver %}

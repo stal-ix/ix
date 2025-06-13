@@ -2,7 +2,7 @@
 
 {% block fetch %}
 http://penma.de/code/gettext-stub/gettext-stub-1.tar.gz
-sha:04af6ee6720c9a90b51f9e420e1b2e75e3ddaba23a30263bf6e10739d8e8f994
+04af6ee6720c9a90b51f9e420e1b2e75e3ddaba23a30263bf6e10739d8e8f994
 {% endblock %}
 
 {% block lib_deps %}

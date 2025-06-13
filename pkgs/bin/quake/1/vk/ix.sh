@@ -10,7 +10,7 @@ vkQuake
 
 {% block fetch %}
 https://github.com/Novum/vkQuake/archive/refs/tags/{{self.version().strip()}}.tar.gz
-sha:e3278c329c17087816b95fa8997cb83fd8233393be242e49c97c71f9cc9395ab
+e3278c329c17087816b95fa8997cb83fd8233393be242e49c97c71f9cc9395ab
 {% endblock %}
 
 {% block bld_libs %}

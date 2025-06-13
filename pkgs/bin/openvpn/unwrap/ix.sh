@@ -10,7 +10,7 @@ openvpn
 
 {% block fetch %}
 https://github.com/OpenVPN/openvpn/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:a48131afa86ad7c90d16748ecea76ae519a81f2dc37521941a373c54d41f4c77
+a48131afa86ad7c90d16748ecea76ae519a81f2dc37521941a373c54d41f4c77
 {% endblock %}
 
 {% block bld_libs %}

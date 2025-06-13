@@ -10,7 +10,7 @@ libheif
 
 {% block fetch %}
 https://github.com/strukturag/libheif/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:0d67481c2b3d855b27b162e21b39152100346098f75cb5da31db4003d9077680
+0d67481c2b3d855b27b162e21b39152100346098f75cb5da31db4003d9077680
 {% endblock %}
 
 {% block lib_deps %}

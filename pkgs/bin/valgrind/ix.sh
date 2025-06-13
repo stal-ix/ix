@@ -10,7 +10,7 @@ valgrind
 
 {% block fetch %}
 https://sourceware.org/pub/valgrind/valgrind-{{self.version().strip()}}.tar.bz2
-sha:61deb8d0727b45c268efdc1b3b6c9e679cd97cbf5ee4b28d1dead7c8b7a271af
+61deb8d0727b45c268efdc1b3b6c9e679cd97cbf5ee4b28d1dead7c8b7a271af
 {% endblock %}
 
 {% block bld_libs %}

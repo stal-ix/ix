@@ -10,7 +10,7 @@ qpdf
 
 {% block fetch %}
 https://github.com/qpdf/qpdf/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:2d004611699a94030a594318393f08a7352ab1cf3cee337c5312d4e7eb7f8a4f
+2d004611699a94030a594318393f08a7352ab1cf3cee337c5312d4e7eb7f8a4f
 {% endblock %}
 
 {% block bld_libs %}

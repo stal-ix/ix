@@ -10,7 +10,7 @@ kmscon
 
 {% block fetch %}
 https://github.com/Aetf/kmscon/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:eb594e48768962b665959aa9a643934f986bee68163b4ab593b9e6c987be825c
+eb594e48768962b665959aa9a643934f986bee68163b4ab593b9e6c987be825c
 {% endblock %}
 
 {% block bld_libs %}

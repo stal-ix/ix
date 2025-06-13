@@ -10,7 +10,7 @@ qtdeclarative
 
 {% block fetch %}
 https://github.com/qt/qtdeclarative/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:3b91d1b75f22221f39b93647d73c9fe7fc4b9c8d45ff0cec402626eab15d8dd8
+3b91d1b75f22221f39b93647d73c9fe7fc4b9c8d45ff0cec402626eab15d8dd8
 {% endblock %}
 
 {% block lib_deps %}

@@ -10,7 +10,7 @@ freetype-demos
 
 {% block fetch %}
 https://gitlab.freedesktop.org/freetype/freetype-demos/-/archive/VER-{{self.version().strip()}}/freetype-demos-VER-{{self.version().strip()}}.tar.bz2
-sha:afcc45109122cc4c805b20883033423e7740baf6d54b180bf9568f34790e9e3b
+afcc45109122cc4c805b20883033423e7740baf6d54b180bf9568f34790e9e3b
 {% endblock %}
 
 {% block bld_libs %}

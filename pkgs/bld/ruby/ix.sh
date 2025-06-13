@@ -10,7 +10,7 @@ ruby
 
 {% block fetch %}
 https://cache.ruby-lang.org/pub/ruby/3.1/ruby-{{self.version().strip()}}.tar.gz
-sha:5ea498a35f4cd15875200a52dde42b6eb179e1264e17d78732c3a57cd1c6ab9e
+5ea498a35f4cd15875200a52dde42b6eb179e1264e17d78732c3a57cd1c6ab9e
 {% endblock %}
 
 {% block bld_libs %}

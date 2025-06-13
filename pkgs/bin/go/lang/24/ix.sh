@@ -6,7 +6,7 @@
 
 {% block fetch %}
 https://github.com/golang/go/archive/refs/tags/go{{self.version().strip()}}.tar.gz
-sha:0ffcfbfb5cf7f29c7fe5383550f1212c577c4d8cb29d1470432f76e9859bd4c0
+0ffcfbfb5cf7f29c7fe5383550f1212c577c4d8cb29d1470432f76e9859bd4c0
 {% endblock %}
 
 {% block go_bootstrap %}

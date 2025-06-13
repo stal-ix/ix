@@ -10,7 +10,7 @@ gnome-text-editor
 
 {% block fetch %}
 https://gitlab.gnome.org/GNOME/gnome-text-editor/-/archive/{{self.version().strip()}}/gnome-text-editor-{{self.version().strip()}}.tar.bz2
-sha:cfd9453b11887fbcfd157a8f57e9eb7d8aca95768902b3e6c2a807d5ad826dad
+cfd9453b11887fbcfd157a8f57e9eb7d8aca95768902b3e6c2a807d5ad826dad
 {% endblock %}
 
 {% block bld_libs %}

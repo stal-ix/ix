@@ -10,7 +10,7 @@ spdlog
 
 {% block fetch %}
 https://github.com/gabime/spdlog/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:7a80896357f3e8e920e85e92633b14ba0f229c506e6f978578bdc35ba09e9a5d
+7a80896357f3e8e920e85e92633b14ba0f229c506e6f978578bdc35ba09e9a5d
 {% endblock %}
 
 {#

@@ -10,7 +10,7 @@ tracy
 
 {% block fetch %}
 https://github.com/wolfpld/tracy/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:03580b01df3c435f74eec165193d6557cdbf3a84d39582ca30969ef5354560aa
+03580b01df3c435f74eec165193d6557cdbf3a84d39582ca30969ef5354560aa
 {% endblock %}
 
 {% block lib_deps %}

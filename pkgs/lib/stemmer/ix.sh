@@ -10,7 +10,7 @@ libstemmer_c
 
 {% block fetch %}
 https://snowballstem.org/dist/libstemmer_c-{{self.version().strip()}}.tar.gz
-sha:419db89961cf2e30e6417265a4f3c903632d47d6917e7f8c6ae0e4d998743aad
+419db89961cf2e30e6417265a4f3c903632d47d6917e7f8c6ae0e4d998743aad
 {% endblock %}
 
 {% block lib_deps %}

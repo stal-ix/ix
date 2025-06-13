@@ -10,7 +10,7 @@ knot
 
 {% block fetch %}
 https://secure.nic.cz/files/knot-dns/knot-{{self.version().strip()}}.tar.xz
-sha:dd346ca6f3afabcdc5e9ba09dd667b010590bb66a42f4541021fb9d6f073dacc
+dd346ca6f3afabcdc5e9ba09dd667b010590bb66a42f4541021fb9d6f073dacc
 {% endblock %}
 
 {% block lib_deps %}

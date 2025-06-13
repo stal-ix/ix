@@ -10,7 +10,7 @@ hyprpicker
 
 {% block fetch %}
 https://github.com/hyprwm/hyprpicker/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:fe9611ec78524f9bbea0d39308da3d9c61cb20f6103179a269cad8013bb0c1f3
+fe9611ec78524f9bbea0d39308da3d9c61cb20f6103179a269cad8013bb0c1f3
 {% endblock %}
 
 {% block bld_libs %}

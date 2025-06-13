@@ -10,7 +10,7 @@ libavif
 
 {% block fetch %}
 https://github.com/AOMediaCodec/libavif/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:0a545e953cc049bf5bcf4ee467306a2f113a75110edf59e61248873101cd26c1
+0a545e953cc049bf5bcf4ee467306a2f113a75110edf59e61248873101cd26c1
 {% endblock %}
 
 {% block lib_deps %}

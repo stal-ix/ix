@@ -10,7 +10,7 @@ perl
 
 {% block fetch %}
 https://www.cpan.org/src/5.0/perl-{{self.version().strip()}}.tar.gz
-sha:10d4647cfbb543a7f9ae3e5f6851ec49305232ea7621aed24c7cfbb0bef4b70d
+10d4647cfbb543a7f9ae3e5f6851ec49305232ea7621aed24c7cfbb0bef4b70d
 {% endblock %}
 
 {% block dup_symbols %}

@@ -10,5 +10,5 @@ fcft
 
 {% block fetch %}
 https://codeberg.org/dnkl/fcft/archive/{{self.version().strip()}}.tar.gz
-sha:58663c684f04154674c52551daa604618e0bb3db6c62492b06b13768fb4f4b3c
+58663c684f04154674c52551daa604618e0bb3db6c62492b06b13768fb4f4b3c
 {% endblock %}

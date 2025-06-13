@@ -10,7 +10,7 @@ dbus
 
 {% block fetch %}
 https://dbus.freedesktop.org/releases/dbus/dbus-{{self.version().strip()}}.tar.xz
-sha:0ba2a1a4b16afe7bceb2c07e9ce99a8c2c3508e5dec290dbb643384bd6beb7e2
+0ba2a1a4b16afe7bceb2c07e9ce99a8c2c3508e5dec290dbb643384bd6beb7e2
 {% endblock %}
 
 {% block lib_deps %}

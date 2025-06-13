@@ -10,7 +10,7 @@ libipt
 
 {% block fetch %}
 https://github.com/intel/libipt/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:713d3e76b6c3073b122a9f5b6c025bc301a0436582f132caf782814363acf60f
+713d3e76b6c3073b122a9f5b6c025bc301a0436582f132caf782814363acf60f
 {% endblock %}
 
 {% block env %}

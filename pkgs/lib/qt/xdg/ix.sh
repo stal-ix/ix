@@ -10,7 +10,7 @@ libqtxdg
 
 {% block fetch %}
 https://github.com/lxqt/libqtxdg/archive/refs/tags/{{self.version().strip()}}.tar.gz
-sha:15925adba9deba7859557f995a57b2caa1e7425f4da4e67ce148608d65ecf6f9
+15925adba9deba7859557f995a57b2caa1e7425f4da4e67ce148608d65ecf6f9
 {% endblock %}
 
 {% block lib_deps %}

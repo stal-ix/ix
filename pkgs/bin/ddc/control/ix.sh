@@ -10,7 +10,7 @@ ddccontrol
 
 {% block fetch %}
 https://github.com/ddccontrol/ddccontrol/archive/refs/tags/{{self.version().strip()}}.tar.gz
-sha:4f3a3d9a00e09b07423d2aed308b21dccfe57642f5d9bbf79802a0656dd11d1e
+4f3a3d9a00e09b07423d2aed308b21dccfe57642f5d9bbf79802a0656dd11d1e
 {% endblock %}
 
 {% block bld_libs %}

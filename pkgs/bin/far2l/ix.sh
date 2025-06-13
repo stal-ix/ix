@@ -10,7 +10,7 @@ far2l
 
 {% block fetch %}
 https://github.com/elfmz/far2l/archive/refs/tags/v_{{self.version().strip()}}.tar.gz
-sha:0e68efff1c5d950c86cdad0387bf1aae7b152dbdd7d24b70bbefeeb4f873a9c9
+0e68efff1c5d950c86cdad0387bf1aae7b152dbdd7d24b70bbefeeb4f873a9c9
 {% endblock %}
 
 {% block bld_libs %}

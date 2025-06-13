@@ -10,7 +10,7 @@ libwacom
 
 {% block fetch %}
 https://github.com/linuxwacom/libwacom/releases/download/libwacom-{{self.version().strip()}}/libwacom-{{self.version().strip()}}.tar.xz
-sha:6c3eb173828174f39fb9af07c1fad80bf920358adbaf6236e4ae8490f7abe01f
+6c3eb173828174f39fb9af07c1fad80bf920358adbaf6236e4ae8490f7abe01f
 {% endblock %}
 
 {% block lib_deps %}

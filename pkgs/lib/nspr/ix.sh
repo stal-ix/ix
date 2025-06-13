@@ -10,7 +10,7 @@ nspr
 
 {% block fetch %}
 https://ftp.mozilla.org/pub/nspr/releases/v{{self.version().strip()}}/src/nspr-{{self.version().strip()}}.tar.gz
-sha:55dec317f1401cd2e5dba844d340b930ab7547f818179a4002bce62e6f1c6895
+55dec317f1401cd2e5dba844d340b930ab7547f818179a4002bce62e6f1c6895
 {% endblock %}
 
 {% block unpack %}

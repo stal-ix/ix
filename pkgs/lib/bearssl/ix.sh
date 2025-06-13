@@ -10,7 +10,7 @@ bearssl
 
 {% block fetch %}
 https://bearssl.org/bearssl-{{self.version().strip()}}.tar.gz
-sha:6705bba1714961b41a728dfc5debbe348d2966c117649392f8c8139efc83ff14
+6705bba1714961b41a728dfc5debbe348d2966c117649392f8c8139efc83ff14
 {% endblock %}
 
 {% block make_target %}

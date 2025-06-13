@@ -10,7 +10,7 @@ libsixel
 
 {% block fetch %}
 https://github.com/libsixel/libsixel/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:b6654928bd423f92e6da39eb1f40f10000ae2cc6247247fc1882dcff6acbdfc8
+b6654928bd423f92e6da39eb1f40f10000ae2cc6247247fc1882dcff6acbdfc8
 {% endblock %}
 
 {% block lib_deps %}

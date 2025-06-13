@@ -10,7 +10,7 @@ gtk4-layer-shell
 
 {% block fetch %}
 https://github.com/wmww/gtk4-layer-shell/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:5db158d570e28f56625d5fb2022bc487c0f1b1b21a965702e461a5a5a049a439
+5db158d570e28f56625d5fb2022bc487c0f1b1b21a965702e461a5a5a049a439
 {% endblock %}
 
 {% block lib_deps %}

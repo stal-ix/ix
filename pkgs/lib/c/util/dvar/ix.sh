@@ -10,7 +10,7 @@ c-dvar
 
 {% block fetch %}
 https://github.com/c-util/c-dvar/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:fa4b697532b6c56929106747eabd8cde792a280aa18883b2507037905e7547df
+fa4b697532b6c56929106747eabd8cde792a280aa18883b2507037905e7547df
 {% endblock %}
 
 {% block lib_deps %}

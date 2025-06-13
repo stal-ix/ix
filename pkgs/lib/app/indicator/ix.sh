@@ -10,7 +10,7 @@ libappindicator
 
 {% block fetch %}
 https://launchpad.net/libappindicator/12.10/{{self.version().strip()}}/+download/libappindicator-{{self.version().strip()}}.tar.gz
-sha:d5907c1f98084acf28fd19593cb70672caa0ca1cf82d747ba6f4830d4cc3b49f
+d5907c1f98084acf28fd19593cb70672caa0ca1cf82d747ba6f4830d4cc3b49f
 {% endblock %}
 
 {% block lib_deps %}

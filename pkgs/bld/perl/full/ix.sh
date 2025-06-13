@@ -3,7 +3,7 @@
 {% block fetch %}
 {{super()}}
 https://cpan.metacpan.org/authors/id/T/TO/TODDR/XML-Parser-2.46.tar.gz
-sha:d331332491c51cccfb4cb94ffc44f9cd73378e618498d4a37df9e043661c515d
+d331332491c51cccfb4cb94ffc44f9cd73378e618498d4a37df9e043661c515d
 {% endblock %}
 
 {% block bld_libs %}

@@ -10,7 +10,7 @@ ugrep
 
 {% block fetch %}
 https://github.com/Genivia/ugrep/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:105b495f4d2773802b5a71e2375ba07bca4e67fd6837e5fc1d00be5cf4938f16
+105b495f4d2773802b5a71e2375ba07bca4e67fd6837e5fc1d00be5cf4938f16
 {% endblock %}
 
 {% block bld_libs %}

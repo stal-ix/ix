@@ -10,7 +10,7 @@ mg
 
 {% block fetch %}
 https://github.com/hboetes/mg/archive/refs/tags/{{self.version().strip()}}.tar.gz
-sha:eeb4181fdb6f2bd3f9b5a3c8ccc5b71fbcf9c7f4a805a2f1858334359d44b545
+eeb4181fdb6f2bd3f9b5a3c8ccc5b71fbcf9c7f4a805a2f1858334359d44b545
 {% endblock %}
 
 {% block bld_libs %}

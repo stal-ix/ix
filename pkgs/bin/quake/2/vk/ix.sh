@@ -12,7 +12,7 @@ vkQuake2
 
 {% block fetch %}
 https://github.com/kondrak/vkQuake2/archive/refs/tags/{{self.version().strip()}}.tar.gz
-sha:4c131047d8d341523f94061b7c8d1983fb34b43afa0a8532a1f6008a7709b1be
+4c131047d8d341523f94061b7c8d1983fb34b43afa0a8532a1f6008a7709b1be
 {% endblock %}
 
 {% block unpack %}

@@ -10,7 +10,7 @@ weechat
 
 {% block fetch %}
 https://github.com/weechat/weechat/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:33680895840e3b6a95e62016b744fadd0bbe8ec5baf9ca0cbad04bf91e57d82b
+33680895840e3b6a95e62016b744fadd0bbe8ec5baf9ca0cbad04bf91e57d82b
 {% endblock %}
 
 {% block bld_libs %}

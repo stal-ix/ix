@@ -10,7 +10,7 @@ gtksourceview
 
 {% block fetch %}
 https://gitlab.gnome.org/GNOME/gtksourceview/-/archive/{{self.version().strip()}}/gtksourceview-{{self.version().strip()}}.tar.bz2
-sha:e7399ca309bde4b5f04d7ce443b1ab0077dc7cc18b6dfd13ab49f5305b00203c
+e7399ca309bde4b5f04d7ce443b1ab0077dc7cc18b6dfd13ab49f5305b00203c
 {% endblock %}
 
 {% block lib_deps %}

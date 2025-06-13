@@ -10,7 +10,7 @@ pkgconf
 
 {% block fetch %}
 https://github.com/pkgconf/pkgconf/archive/refs/tags/pkgconf-{{self.version().strip()}}.tar.gz
-sha:cea5b0ed69806b69c1900ce2f6f223a33f15230ad797243634df9fd56e64b156
+cea5b0ed69806b69c1900ce2f6f223a33f15230ad797243634df9fd56e64b156
 {% endblock %}
 
 {% block bld_libs %}

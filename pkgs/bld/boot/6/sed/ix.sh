@@ -10,7 +10,7 @@ sed
 
 {% block fetch %}
 https://ftp.gnu.org/gnu/sed/sed-{{self.version().strip()}}.tar.xz
-sha:f79b0cfea71b37a8eeec8490db6c5f7ae7719c35587f21edb0617f370eeff633
+f79b0cfea71b37a8eeec8490db6c5f7ae7719c35587f21edb0617f370eeff633
 {% endblock %}
 
 {% block bld_libs %}

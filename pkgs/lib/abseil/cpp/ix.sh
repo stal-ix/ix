@@ -10,7 +10,7 @@ abseil-cpp
 
 {% block fetch %}
 https://github.com/abseil/abseil-cpp/archive/refs/tags/{{self.version().strip()}}.tar.gz
-sha:7262daa7c1711406248c10f41026d685e88223bc92817d16fb93c19adb57f669
+7262daa7c1711406248c10f41026d685e88223bc92817d16fb93c19adb57f669
 {% endblock %}
 
 {% block lib_deps %}

@@ -12,7 +12,7 @@ gnome-keyring
 
 {% block fetch %}
 https://gitlab.gnome.org/GNOME/gnome-keyring/-/archive/{{self.version().strip()}}/gnome-keyring-{{self.version().strip()}}.tar.bz2
-sha:f0fb25865d13665c475cead8eb9ed6fee0780e04c7f7e8d2b3d18551b3aa0986
+f0fb25865d13665c475cead8eb9ed6fee0780e04c7f7e8d2b3d18551b3aa0986
 {% endblock %}
 
 {% block bld_libs %}

@@ -10,7 +10,7 @@ autoconf-archive
 
 {% block fetch %}
 https://mirror.tochlab.net/pub/gnu/autoconf-archive/autoconf-archive-{{self.version().strip()}}.tar.xz
-sha:7bcd5d001916f3a50ed7436f4f700e3d2b1bade3ed803219c592d62502a57363
+7bcd5d001916f3a50ed7436f4f700e3d2b1bade3ed803219c592d62502a57363
 {% endblock %}
 
 {% block bld_tool %}

@@ -10,7 +10,7 @@ swaybg
 
 {% block fetch %}
 https://github.com/swaywm/swaybg/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:45c4a1a3b83c86ddc321a6136402b708f195a022d0ccee4641b23d14c3a3c25e
+45c4a1a3b83c86ddc321a6136402b708f195a022d0ccee4641b23d14c3a3c25e
 {% endblock %}
 
 {% block bld_libs %}

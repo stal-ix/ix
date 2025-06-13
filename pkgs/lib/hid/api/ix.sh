@@ -10,7 +10,7 @@ hidapi
 
 {% block fetch %}
 https://github.com/libusb/hidapi/archive/refs/tags/hidapi-{{self.version().strip()}}.tar.gz
-sha:5d84dec684c27b97b921d2f3b73218cb773cf4ea915caee317ac8fc73cef8136
+5d84dec684c27b97b921d2f3b73218cb773cf4ea915caee317ac8fc73cef8136
 {% endblock %}
 
 {% block lib_deps %}

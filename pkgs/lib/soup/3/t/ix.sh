@@ -10,7 +10,7 @@ libsoup
 
 {% block fetch %}
 https://gitlab.gnome.org/GNOME/libsoup/-/archive/{{self.version().strip()}}/libsoup-{{self.version().strip()}}.tar.bz2
-sha:2048b4b554c16c0aa7fa51a9b12eab9162ec535d22d9c3d0eee135ec37e9a3a5
+2048b4b554c16c0aa7fa51a9b12eab9162ec535d22d9c3d0eee135ec37e9a3a5
 {% endblock %}
 
 {% block lib_deps %}

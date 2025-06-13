@@ -10,7 +10,7 @@ dtc
 
 {% block fetch %}
 https://www.kernel.org/pub/software/utils/dtc/dtc-{{self.version().strip()}}.tar.xz
-sha:29edce3d302a15563d8663198bbc398c5a0554765c83830d0d4c0409d21a16c4
+29edce3d302a15563d8663198bbc398c5a0554765c83830d0d4c0409d21a16c4
 {% endblock %}
 
 {% block lib_deps %}

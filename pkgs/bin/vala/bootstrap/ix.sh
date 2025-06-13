@@ -10,7 +10,7 @@ vala
 
 {% block fetch %}
 https://download.gnome.org/sources/vala/0.48/vala-{{self.version().strip()}}.tar.xz
-sha:50cb3c5eccddc7fd4368bfa96414a556045e79d2b15a68918c727b8c83b18a24
+50cb3c5eccddc7fd4368bfa96414a556045e79d2b15a68918c727b8c83b18a24
 {% endblock %}
 
 {% block bld_libs %}

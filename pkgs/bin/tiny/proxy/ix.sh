@@ -10,7 +10,7 @@ tinyproxy
 
 {% block fetch %}
 https://github.com/tinyproxy/tinyproxy/archive/refs/tags/{{self.version().strip()}}.tar.gz
-sha:10f4c18fb98db6431c8f0d5f0b9d00fefc98ac1ee270a8452a7c75ef2ba43675
+10f4c18fb98db6431c8f0d5f0b9d00fefc98ac1ee270a8452a7c75ef2ba43675
 {% endblock %}
 
 {% block bld_libs %}

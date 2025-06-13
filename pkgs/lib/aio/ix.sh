@@ -10,7 +10,7 @@ libaio
 
 {% block fetch %}
 https://releases.pagure.org/libaio/libaio-{{self.version().strip()}}.tar.gz
-sha:2c44d1c5fd0d43752287c9ae1eb9c023f04ef848ea8d4aafa46e9aedb678200b
+2c44d1c5fd0d43752287c9ae1eb9c023f04ef848ea8d4aafa46e9aedb678200b
 {% endblock %}
 
 {% block lib_deps %}

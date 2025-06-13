@@ -10,7 +10,7 @@ FreeRDP
 
 {% block fetch %}
 https://github.com/FreeRDP/FreeRDP/archive/refs/tags/{{self.version().strip()}}.tar.gz
-sha:9a922df0237a90a9cd15ec2261666cfcfaf29923278f0e463bb965059ac1b87d
+9a922df0237a90a9cd15ec2261666cfcfaf29923278f0e463bb965059ac1b87d
 {% endblock %}
 
 {% block bld_libs %}

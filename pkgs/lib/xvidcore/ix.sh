@@ -10,7 +10,7 @@ xvidcore
 
 {% block fetch %}
 https://downloads.xvid.com/downloads/xvidcore-{{self.version().strip()}}.tar.gz
-sha:abbdcbd39555691dd1c9b4d08f0a031376a3b211652c0d8b3b8aa9be1303ce2d
+abbdcbd39555691dd1c9b4d08f0a031376a3b211652c0d8b3b8aa9be1303ce2d
 {% endblock %}
 
 {% block unpack %}

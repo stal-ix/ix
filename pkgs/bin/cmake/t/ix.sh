@@ -10,7 +10,7 @@ CMake
 
 {% block fetch %}
 https://github.com/Kitware/CMake/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:a325dc0566c1421c611dd7507dabd2706419081af8126273dc436d4b1066873c
+a325dc0566c1421c611dd7507dabd2706419081af8126273dc436d4b1066873c
 {% endblock %}
 
 {% block bld_libs %}

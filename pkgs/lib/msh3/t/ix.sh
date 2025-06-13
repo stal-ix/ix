@@ -10,7 +10,7 @@ msh3
 
 {% block fetch %}
 https://github.com/nibanks/msh3/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:80087dab9a22253c224aaee5bef8c870519dc0a362b9c9bb60e9aca8bec5e1c4
+80087dab9a22253c224aaee5bef8c870519dc0a362b9c9bb60e9aca8bec5e1c4
 {% endblock %}
 
 {% block lib_deps %}

@@ -10,5 +10,5 @@ meson
 
 {% block fetch %}
 https://github.com/mesonbuild/meson/archive/refs/tags/{{self.version().strip()}}.tar.gz
-sha:a7efc72ecb873c5a62031ade1921a7177b67cfdcb2e9410a7ab023f9e8192f4b
+a7efc72ecb873c5a62031ade1921a7177b67cfdcb2e9410a7ab023f9e8192f4b
 {% endblock %}

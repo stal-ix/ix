@@ -10,7 +10,7 @@ mozjpeg
 
 {% block fetch %}
 https://github.com/mozilla/mozjpeg/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:9fcbb7171f6ac383f5b391175d6fb3acde5e64c4c4727274eade84ed0998fcc1
+9fcbb7171f6ac383f5b391175d6fb3acde5e64c4c4727274eade84ed0998fcc1
 {% endblock %}
 
 {% block lib_deps %}

@@ -10,7 +10,7 @@ s3backer
 
 {% block fetch %}
 https://github.com/archiecobbs/s3backer/archive/refs/tags/{{self.version().strip()}}.tar.gz
-sha:7650bd1f683e5a8c18c31a2e9f73d5f584b327952ceb22ee042a1ee6ecb737c5
+7650bd1f683e5a8c18c31a2e9f73d5f584b327952ceb22ee042a1ee6ecb737c5
 {% endblock %}
 
 {% block bld_libs %}

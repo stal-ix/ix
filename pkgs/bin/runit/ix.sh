@@ -10,7 +10,7 @@ runit
 
 {% block fetch %}
 https://smarden.org/runit/runit-{{self.version().strip()}}.tar.gz
-sha:95ef4d2868b978c7179fe47901e5c578e11cf273d292bd6208bd3a7ccb029290
+95ef4d2868b978c7179fe47901e5c578e11cf273d292bd6208bd3a7ccb029290
 {% endblock %}
 
 {% block bld_libs %}

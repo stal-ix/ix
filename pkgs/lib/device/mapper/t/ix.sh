@@ -10,7 +10,7 @@ lvm2
 
 {% block fetch %}
 http://mirrors.kernel.org/sourceware/lvm2/LVM2.{{self.version().strip()}}.tgz
-sha:2917832ddd4e46e593651e022bf122fd267ab5e6f74faee082484388c886d1ad
+2917832ddd4e46e593651e022bf122fd267ab5e6f74faee082484388c886d1ad
 {% endblock %}
 
 {% block lib_deps %}

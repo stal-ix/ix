@@ -10,7 +10,7 @@ perl:Parse-Yapp
 
 {% block fetch %}
 https://cpan.metacpan.org/authors/id/W/WB/WBRASWELL/Parse-Yapp-{{self.version().strip()}}.tar.gz
-sha:3810e998308fba2e0f4f26043035032b027ce51ce5c8a52a8b8e340ca65f13e5
+3810e998308fba2e0f4f26043035032b027ce51ce5c8a52a8b8e340ca65f13e5
 {% endblock %}
 
 {% block bld_tool %}

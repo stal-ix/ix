@@ -10,7 +10,7 @@ gtk-doc
 
 {% block fetch %}
 https://github.com/GNOME/gtk-doc/archive/refs/tags/{{self.version().strip()}}.tar.gz
-sha:e1d544fa70ae60014a241b674c9d989f4ad6a96554652ebf73bbe94b4da1aa35
+e1d544fa70ae60014a241b674c9d989f4ad6a96554652ebf73bbe94b4da1aa35
 {% endblock %}
 
 {% block bld_libs %}

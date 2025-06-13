@@ -10,7 +10,7 @@ tagparser
 
 {% block fetch %}
 https://github.com/Martchus/tagparser/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:16cbf52cdf7c996d77c9c5b5487177515329ce9c3f5e68d1bb19ae4a8f49fb1c
+16cbf52cdf7c996d77c9c5b5487177515329ce9c3f5e68d1bb19ae4a8f49fb1c
 {% endblock %}
 
 {% block lib_deps %}

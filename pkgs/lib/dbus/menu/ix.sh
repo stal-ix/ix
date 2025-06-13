@@ -10,7 +10,7 @@ libdbusmenu
 
 {% block fetch %}
 https://launchpad.net/libdbusmenu/16.04/{{self.version().strip()}}/+download/libdbusmenu-{{self.version().strip()}}.tar.gz
-sha:b9cc4a2acd74509435892823607d966d424bd9ad5d0b00938f27240a1bfa878a
+b9cc4a2acd74509435892823607d966d424bd9ad5d0b00938f27240a1bfa878a
 {% endblock %}
 
 {% block lib_deps %}

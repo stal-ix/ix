@@ -10,7 +10,7 @@ bsdiff
 
 {% block fetch %}
 https://distfiles.macports.org/bsdiff/bsdiff-{{self.version().strip()}}.tar.gz
-sha:18821588b2dc5bf159aa37d3bcb7b885d85ffd1e19f23a0c57a58723fea85f48
+18821588b2dc5bf159aa37d3bcb7b885d85ffd1e19f23a0c57a58723fea85f48
 {% endblock %}
 
 {% block bld_libs %}

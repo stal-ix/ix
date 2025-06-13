@@ -10,7 +10,7 @@ bpftrace
 
 {% block fetch %}
 https://github.com/bpftrace/bpftrace/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:bc9cbccdfdb7450edffad00db248f89b7036ac9944b566638df0b5685f2fda67
+bc9cbccdfdb7450edffad00db248f89b7036ac9944b566638df0b5685f2fda67
 {% endblock %}
 
 {% block bld_libs %}

@@ -10,7 +10,7 @@ fswatch
 
 {% block fetch %}
 https://github.com/emcrisostomo/fswatch/archive/refs/tags/{{self.version().strip()}}.tar.gz
-sha:07f9fec15138fe25ea92d869117811c7c4fba2e6c6231682d49b159bae2ebd53
+07f9fec15138fe25ea92d869117811c7c4fba2e6c6231682d49b159bae2ebd53
 {% endblock %}
 
 {% block bld_libs %}

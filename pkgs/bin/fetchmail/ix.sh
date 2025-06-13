@@ -10,7 +10,7 @@ fetchmail
 
 {% block fetch %}
 https://downloads.sourceforge.net/project/fetchmail/branch_{{self.version().strip()[:3]}}/fetchmail-{{self.version().strip()}}.tar.xz
-sha:d74e893b78ef29ebef375ab7e726d2977140f8f1208f5905569395cbdae4c23d
+d74e893b78ef29ebef375ab7e726d2977140f8f1208f5905569395cbdae4c23d
 {% endblock %}
 
 {% block bld_libs %}

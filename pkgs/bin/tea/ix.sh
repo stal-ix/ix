@@ -10,7 +10,7 @@ tea-qt
 
 {% block fetch %}
 https://github.com/psemiletov/tea-qt/archive/refs/tags/{{self.version().strip()}}.tar.gz
-sha:105a4d02164279d61f868d8e07b382f598fa34918a588b35010dcdd1fa27e540
+105a4d02164279d61f868d8e07b382f598fa34918a588b35010dcdd1fa27e540
 {% endblock %}
 
 {% block bld_libs %}

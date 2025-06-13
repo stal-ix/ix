@@ -2,7 +2,7 @@
 
 {% block fetch %}
 https://github.com/pg83/yaboot/archive/refs/tags/1.tar.gz
-sha:80266d00f71380ec78c7c31a52ef56d624030ffa636403b5f5c1f0f42e1927c5
+80266d00f71380ec78c7c31a52ef56d624030ffa636403b5f5c1f0f42e1927c5
 {% endblock %}
 
 {% block git_repo %}

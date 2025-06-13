@@ -10,7 +10,7 @@ swayimg
 
 {% block fetch %}
 https://github.com/artemsen/swayimg/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:1e4fa2027a91df86790a77449efe3515bbacc0564a85f980fc8631a30d5f242e
+1e4fa2027a91df86790a77449efe3515bbacc0564a85f980fc8631a30d5f242e
 {% endblock %}
 
 {% block bld_libs %}

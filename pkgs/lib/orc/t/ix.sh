@@ -10,7 +10,7 @@ orc
 
 {% block fetch %}
 https://gitlab.freedesktop.org/gstreamer/orc/-/archive/0.4.40/orc-{{self.version().strip()}}.tar.bz2
-sha:29b6114976f0cd50b78eeb2cce06bf3436f2d72ea787a1b03317ac01bac96432
+29b6114976f0cd50b78eeb2cce06bf3436f2d72ea787a1b03317ac01bac96432
 {% endblock %}
 
 {% block lib_deps %}

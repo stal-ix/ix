@@ -10,7 +10,7 @@ re2c
 
 {% block fetch %}
 https://github.com/skvadrik/re2c/archive/refs/tags/{{self.version().strip()}}.tar.gz
-sha:01b56c67ca2d5054b1aafc41ef5c15c50fbb6a7e760b1b2346e6116ef039525e
+01b56c67ca2d5054b1aafc41ef5c15c50fbb6a7e760b1b2346e6116ef039525e
 {% endblock %}
 
 {% block bld_libs %}

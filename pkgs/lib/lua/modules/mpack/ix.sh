@@ -10,7 +10,7 @@ libmpack-lua
 
 {% block fetch %}
 https://github.com/libmpack/libmpack-lua/archive/refs/tags/{{self.version().strip()}}.tar.gz
-sha:7c3f0a5fcd0d7c169fd7bc95978412628d8f59eb9da1d32cf3e8a864b741ec92
+7c3f0a5fcd0d7c169fd7bc95978412628d8f59eb9da1d32cf3e8a864b741ec92
 {% endblock %}
 
 {% block lib_deps %}

@@ -10,7 +10,7 @@ plutosvg
 
 {% block fetch %}
 https://github.com/sammycage/plutosvg/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:78561b571ac224030cdc450ca2986b4de915c2ba7616004a6d71a379bffd15f3
+78561b571ac224030cdc450ca2986b4de915c2ba7616004a6d71a379bffd15f3
 {% endblock %}
 
 {% block lib_deps %}

@@ -10,7 +10,7 @@ freebsd-src
 
 {% block fetch %}
 https://github.com/freebsd/freebsd-src/archive/refs/tags/release/{{self.version().strip()}}.tar.gz
-sha:ebdb7af04060d0a52e713bab4eba274ab2c9c6b94e657e67b32c80086ccbeabc
+ebdb7af04060d0a52e713bab4eba274ab2c9c6b94e657e67b32c80086ccbeabc
 {% endblock %}
 
 {% block install %}

@@ -10,5 +10,5 @@ automake
 
 {% block fetch %}
 https://ftp.gnu.org/gnu/automake/automake-{{self.version().strip()}}.tar.xz
-sha:f01d58cd6d9d77fbdca9eb4bbd5ead1988228fdb73d6f7a201f5f8d6b118b469
+f01d58cd6d9d77fbdca9eb4bbd5ead1988228fdb73d6f7a201f5f8d6b118b469
 {% endblock %}

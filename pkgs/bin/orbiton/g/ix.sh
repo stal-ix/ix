@@ -2,7 +2,7 @@
 
 {% block fetch %}
 {% include 'ver.sh' %}
-sha:acce203a95f1fbbcfdc75abdf88cbe6473e5ff97f99757263d7e195eb4f8640d
+acce203a95f1fbbcfdc75abdf88cbe6473e5ff97f99757263d7e195eb4f8640d
 {% endblock %}
 
 {% block bld_libs %}

@@ -10,7 +10,7 @@ base64-aklomp
 
 {% block fetch %}
 https://github.com/aklomp/base64/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:723a0f9f4cf44cf79e97bcc315ec8f85e52eb104c8882942c3f2fba95acc080d
+723a0f9f4cf44cf79e97bcc315ec8f85e52eb104c8882942c3f2fba95acc080d
 {% endblock %}
 
 {% block bld_libs %}

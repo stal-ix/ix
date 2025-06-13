@@ -10,7 +10,7 @@ libnsgif
 
 {% block fetch %}
 https://download.netsurf-browser.org/libs/releases/libnsgif-{{self.version().strip()}}-src.tar.gz
-sha:6014c842f61454d2f5a0f8243d7a8d7bde9b7da3ccfdca2d346c7c0b2c4c061b
+6014c842f61454d2f5a0f8243d7a8d7bde9b7da3ccfdca2d346c7c0b2c4c061b
 {% endblock %}
 
 {% block bld_tool %}

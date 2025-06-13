@@ -10,7 +10,7 @@ hyprpaper
 
 {% block fetch %}
 https://github.com/hyprwm/hyprpaper/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:93efc089c7051e6727ac5eac402ebd254199e93ac3efd6fe7dd37a52ddc1cc33
+93efc089c7051e6727ac5eac402ebd254199e93ac3efd6fe7dd37a52ddc1cc33
 {% endblock %}
 
 {% block bld_libs %}

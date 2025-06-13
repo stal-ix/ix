@@ -10,7 +10,7 @@ wireshark
 
 {% block fetch %}
 https://github.com/wireshark/wireshark/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:5477c8961321e47f0bf6b64c360bd84c4d79a6cdf6a57b534430f5cbae27bc7f
+5477c8961321e47f0bf6b64c360bd84c4d79a6cdf6a57b534430f5cbae27bc7f
 {% endblock %}
 
 {% block bld_libs %}

@@ -10,7 +10,7 @@ nano
 
 {% block fetch %}
 https://www.nano-editor.org/dist/v8/nano-{{self.version().strip()}}.tar.xz
-sha:000b011d339c141af9646d43288f54325ff5c6e8d39d6e482b787bbc6654c26a
+000b011d339c141af9646d43288f54325ff5c6e8d39d6e482b787bbc6654c26a
 {% endblock %}
 
 {% block bld_libs %}

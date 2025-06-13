@@ -10,7 +10,7 @@ qtkeychain
 
 {% block fetch %}
 https://github.com/frankosterfeld/qtkeychain/archive/refs/tags/{{self.version().strip()}}.tar.gz
-sha:f4254dc8f0933b06d90672d683eab08ef770acd8336e44dfa030ce041dc2ca22
+f4254dc8f0933b06d90672d683eab08ef770acd8336e44dfa030ce041dc2ca22
 {% endblock %}
 
 {% block lib_deps %}

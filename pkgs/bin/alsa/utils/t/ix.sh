@@ -10,7 +10,7 @@ alsa-utils
 
 {% block fetch %}
 https://www.alsa-project.org/files/pub/utils/alsa-utils-{{self.version().strip()}}.tar.bz2
-sha:0794c74d33fed943e7c50609c13089e409312b6c403d6ae8984fc429c0960741
+0794c74d33fed943e7c50609c13089e409312b6c403d6ae8984fc429c0960741
 {% endblock %}
 
 {% block bld_tool %}

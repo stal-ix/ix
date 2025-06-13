@@ -10,7 +10,7 @@ libdrm
 
 {% block fetch %}
 https://dri.freedesktop.org/libdrm/libdrm-{{self.version().strip()}}.tar.xz
-sha:d4bae92797a50f81a93524762e0410a49cd84cfa0f997795bc0172ac8fb1d96a
+d4bae92797a50f81a93524762e0410a49cd84cfa0f997795bc0172ac8fb1d96a
 {% endblock %}
 
 {% block lib_deps %}

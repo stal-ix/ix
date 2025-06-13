@@ -10,7 +10,7 @@ iotop
 
 {% block fetch %}
 https://github.com/Tomas-M/iotop/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:862e3d3d0263e4171aa9c5aaed2dd7d76ca746afa58ecbb6eca002717e9fa240
+862e3d3d0263e4171aa9c5aaed2dd7d76ca746afa58ecbb6eca002717e9fa240
 {% endblock %}
 
 {% block bld_libs %}

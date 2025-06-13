@@ -10,7 +10,7 @@ mimalloc
 
 {% block fetch %}
 https://github.com/microsoft/mimalloc/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:3aabe30485c4e908c1bf04136d5b95c08c6e73fa6fe6e1ec68b4851d3c60ee47
+3aabe30485c4e908c1bf04136d5b95c08c6e73fa6fe6e1ec68b4851d3c60ee47
 {% endblock %}
 
 {% block bld_libs %}

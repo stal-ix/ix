@@ -10,7 +10,7 @@ ecl
 
 {% block fetch %}
 https://common-lisp.net/project/ecl/static/files/release/ecl-{{self.version().strip()}}.tgz
-sha:e4ea65bb1861e0e495386bfa8bc673bd014e96d3cf9d91e9038f91435cbe622b
+e4ea65bb1861e0e495386bfa8bc673bd014e96d3cf9d91e9038f91435cbe622b
 {% endblock %}
 
 {% block bld_libs %}

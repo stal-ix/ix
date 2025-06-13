@@ -10,7 +10,7 @@ qjackctl
 
 {% block fetch %}
 https://download.sourceforge.net/qjackctl/qjackctl-{{self.version().strip()}}.tar.gz
-sha:e3eb6f989d947dcd97b4fe774294347106a0a6829c0480a965393ebca97514ae
+e3eb6f989d947dcd97b4fe774294347106a0a6829c0480a965393ebca97514ae
 {% endblock %}
 
 {% block bld_libs %}

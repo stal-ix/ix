@@ -12,7 +12,7 @@ vlc
 
 {% block fetch %}
 http://get.videolan.org/vlc/{{self.version().strip()}}/vlc-{{self.version().strip()}}.tar.xz
-sha:6f7e90ef8973d31d96de64db817173e345150829717a94084b1bb8321cde2014
+6f7e90ef8973d31d96de64db817173e345150829717a94084b1bb8321cde2014
 {% endblock %}
 
 {% block bld_libs %}

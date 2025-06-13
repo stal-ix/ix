@@ -10,7 +10,7 @@ seatd
 
 {% block fetch %}
 https://git.sr.ht/~kennylevinsen/seatd/archive/{{self.version().strip()}}.tar.gz
-sha:819979c922a0be258aed133d93920bce6a3d3565a60588d6d372ce9db2712cd3
+819979c922a0be258aed133d93920bce6a3d3565a60588d6d372ce9db2712cd3
 {% endblock %}
 
 {% block lib_deps %}

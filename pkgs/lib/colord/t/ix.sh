@@ -10,7 +10,7 @@ colord
 
 {% block fetch %}
 https://www.freedesktop.org/software/colord/releases/colord-{{self.version().strip()}}.tar.xz
-sha:7407631a27bfe5d1b672e7ae42777001c105d860b7b7392283c8c6300de88e6f
+7407631a27bfe5d1b672e7ae42777001c105d860b7b7392283c8c6300de88e6f
 {% endblock %}
 
 {% block lib_deps %}

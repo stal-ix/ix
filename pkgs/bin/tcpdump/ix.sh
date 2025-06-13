@@ -10,7 +10,7 @@ tcpdump
 
 {% block fetch %}
 https://www.tcpdump.org/release/tcpdump-{{self.version().strip()}}.tar.gz
-sha:8c75856e00addeeadf70dad67c9ff3dd368536b2b8563abf6854d7c764cd3adb
+8c75856e00addeeadf70dad67c9ff3dd368536b2b8563abf6854d7c764cd3adb
 {% endblock %}
 
 {% block lib_deps %}

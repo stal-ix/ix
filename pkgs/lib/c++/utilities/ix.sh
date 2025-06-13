@@ -10,7 +10,7 @@ cpp-utilities
 
 {% block fetch %}
 https://github.com/Martchus/cpp-utilities/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:8c94bead63eaa17346438f1ed7df13d58006ae753a39fe21185d48303df1aa27
+8c94bead63eaa17346438f1ed7df13d58006ae753a39fe21185d48303df1aa27
 {% endblock %}
 
 {% block lib_deps %}

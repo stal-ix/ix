@@ -11,7 +11,7 @@ pkg-config
 {% block fetch %}
 https://pkg-config.freedesktop.org/releases/pkg-config-{{self.version().strip()}}.tar.gz
 #http://distfiles.gentoo.org/distfiles/d3/pkg-config-0.29.2.tar.gz
-sha:6fc69c01688c9458a57eb9a1664c9aba372ccda420a02bf4429fe610e7e7d591
+6fc69c01688c9458a57eb9a1664c9aba372ccda420a02bf4429fe610e7e7d591
 {% endblock %}
 
 {% block bld_libs %}

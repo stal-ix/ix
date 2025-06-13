@@ -10,7 +10,7 @@ avizo
 
 {% block fetch %}
 https://github.com/heyjuvi/avizo/archive/refs/tags/{{self.version().strip()}}.tar.gz
-sha:2b1f5817a916e518b0c10c4c94a3678a5054b879eb32c10b5d1425faa6387127
+2b1f5817a916e518b0c10c4c94a3678a5054b879eb32c10b5d1425faa6387127
 {% endblock %}
 
 {% block bld_libs %}

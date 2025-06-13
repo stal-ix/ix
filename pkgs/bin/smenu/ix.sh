@@ -10,7 +10,7 @@ smenu
 
 {% block fetch %}
 https://github.com/p-gen/smenu/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:4903990aa870ced8bea48963a5430af170ad2ba3ffc0d3418fd78970fc470a3c
+4903990aa870ced8bea48963a5430af170ad2ba3ffc0d3418fd78970fc470a3c
 {% endblock %}
 
 {% block conf_ver %}2/71{% endblock %}

@@ -10,7 +10,7 @@ pcmanfm
 
 {% block fetch %}
 https://github.com/lxde/pcmanfm/archive/refs/tags/{{self.version().strip()}}.tar.gz
-sha:66ee6b1a5907bb519d5b175e379f975acfcdaa68b6cbbc72d168b3ff935e6fea
+66ee6b1a5907bb519d5b175e379f975acfcdaa68b6cbbc72d168b3ff935e6fea
 {% endblock %}
 
 {% block bld_libs %}

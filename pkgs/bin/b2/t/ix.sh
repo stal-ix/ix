@@ -10,7 +10,7 @@ b2
 
 {% block fetch %}
 https://github.com/bfgroup/b2/archive/refs/tags/{{self.version().strip()}}.tar.gz
-sha:a59c4e6093daad38f5f70fa7d83f93afeeca9c56a51e009009b7e3088735cc3e
+a59c4e6093daad38f5f70fa7d83f93afeeca9c56a51e009009b7e3088735cc3e
 {% endblock %}
 
 {% block bld_libs %}

@@ -10,7 +10,7 @@ libb64
 
 {% block fetch %}
 https://downloads.sourceforge.net/project/libb64/libb64/libb64/libb64-{{self.version().strip()}}.src.zip
-sha:343d8d61c5cbe3d3407394f16a5390c06f8ff907bd8d614c16546310b689bfd3
+343d8d61c5cbe3d3407394f16a5390c06f8ff907bd8d614c16546310b689bfd3
 {% endblock %}
 
 {% block lib_deps %}

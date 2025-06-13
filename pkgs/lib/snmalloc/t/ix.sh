@@ -10,7 +10,7 @@ snmalloc
 
 {% block fetch %}
 https://github.com/microsoft/snmalloc/archive/refs/tags/{{self.version().strip()}}.tar.gz
-sha:91824fdf553f03cf6ef8be57f29f1d4f79cd651667455e9fe4af8b7c09e705d3
+91824fdf553f03cf6ef8be57f29f1d4f79cd651667455e9fe4af8b7c09e705d3
 {% endblock %}
 
 {% block lib_deps %}

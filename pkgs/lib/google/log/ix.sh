@@ -10,7 +10,7 @@ glog
 
 {% block fetch %}
 https://github.com/google/glog/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:00e4a87e87b7e7612f519a41e491f16623b12423620006f59f5688bfd8d13b08
+00e4a87e87b7e7612f519a41e491f16623b12423620006f59f5688bfd8d13b08
 {% endblock %}
 
 {% block lib_deps %}

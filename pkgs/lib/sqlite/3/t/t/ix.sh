@@ -14,7 +14,7 @@ sqlite
 
 {% block fetch %}
 https://www.sqlite.org/2025/sqlite-autoconf-{{self.sqlite_ver().strip()}}.tar.gz
-sha:00a65114d697cfaa8fe0630281d76fd1b77afcd95cd5e40ec6a02cbbadbfea71
+00a65114d697cfaa8fe0630281d76fd1b77afcd95cd5e40ec6a02cbbadbfea71
 {% endblock %}
 
 {% block lib_deps %}

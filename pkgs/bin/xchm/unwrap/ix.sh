@@ -10,7 +10,7 @@ xCHM
 
 {% block fetch %}
 https://github.com/rzvncj/xCHM/archive/refs/tags/{{self.version().strip()}}.tar.gz
-sha:16d10b52bd98706c639866eebc30b904a963d10dc76ea7dc65fb20342e9f70a7
+16d10b52bd98706c639866eebc30b904a963d10dc76ea7dc65fb20342e9f70a7
 {% endblock %}
 
 {%block bld_libs %}
