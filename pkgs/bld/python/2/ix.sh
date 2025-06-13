@@ -10,7 +10,7 @@ python2
 
 {% block fetch %}
 https://www.python.org/ftp/python/{{self.version().strip()}}/Python-{{self.version().strip()}}.tar.xz
-md5:fd6cc8ec0a78c44036f825e739f36e5a
+sha:b62c0e7937551d0cc02b8fd5cb0f544f9405bafc9a54d3808ed4594812edef43
 {% endblock %}
 
 {% block bld_libs %}
