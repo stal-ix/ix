@@ -5,10 +5,10 @@ valkey
 {% endblock %}
 
 {% block version %}
-8.1.1
+8.1.2
 {% endblock %}
 
 {% block fetch %}
 https://github.com/valkey-io/valkey/archive/refs/tags/{{self.version().strip()}}.tar.gz
-sha:3355fbd5458d853ab201d2c046ffca9f078000587ccbe9a6c585110f146ad2c5
+sha:747b272191c15c7387f4ad3b3e7eda16deb1cffc6425e0571547f54e4d2e3646
 {% endblock %}
