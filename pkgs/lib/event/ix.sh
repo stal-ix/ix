@@ -10,7 +10,7 @@ libevent
 
 {% block fetch %}
 https://github.com/libevent/libevent/archive/refs/tags/release-{{self.version().strip()}}-stable.tar.gz
-md5:0d5a27436bf7ff8253420c8cf09f47ca
+sha:7180a979aaa7000e1264da484f712d403fcf7679b1e9212c4e3d09f5c93efc24
 {% endblock %}
 
 {% block lib_deps %}
