@@ -5,12 +5,12 @@ byedpi
 {% endblock %}
 
 {% block version %}
-0.16.6
+0.17
 {% endblock %}
 
 {% block fetch %}
 https://github.com/hufrea/byedpi/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:62e971bbdc34d7af1b875aba8dd98d9ff63a0748c8e50b84cf5c41d327d62e77
+sha:06a325e47eb10b7183d6d56381c2df5bf56ba9efbed003eae0344a7e6694315b
 {% endblock %}
 
 {% block bld_libs %}

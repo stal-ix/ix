@@ -73,16 +73,17 @@ def norm_sha(sha):
     return sha
 
 
-def iter_urls(url, sha, mirrors):
+def iter_urls_step(url, sha, mirrors):
     if sha := norm_sha(sha):
-        while True:
-            for x in iter_cached(sha, mirrors):
-                yield x, True
+        for x in iter_cached(sha, mirrors):
+            yield x, True
 
-            yield url, False
-    else:
-        while True:
-            yield url, False
+    yield url, False
+
+
+def iter_urls(url, sha, mirrors):
+    while True:
+        yield from iter_urls_step(url, sha, mirrors)
 
 
 def iter_tout():
@@ -96,13 +97,15 @@ def iter_tout():
 
 def do_fetch(url, path, sha, mirrors):
     skip = set()
-    full = frozenset(mirrors + [url])
+    full = frozenset(iter_urls_step(url, sha, mirrors))
 
     for (u, best_effort), tout, ff in zip(iter_urls(url, sha, mirrors), iter_tout(), iter_ff()):
         if len(skip) >= len(full):
-            raise Exception(f'can not fetch {url}, no attempts left')
+            raise Exception(f'can not fetch {url}, no sources left')
 
         if u in skip:
+            print(f'skip {u}')
+
             continue
 
         prepare_dir(os.path.dirname(path))
@@ -113,6 +116,7 @@ def do_fetch(url, path, sha, mirrors):
             return check_md5(path, sha)
         except Exception as e:
             if '404' in str(e):
+                print(f'404 {u}')
                 skip.add(u)
             elif 'checksum' in str(e):
                 if best_effort:
