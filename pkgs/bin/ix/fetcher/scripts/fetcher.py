@@ -63,8 +63,10 @@ def iter_cached(sha, mirrors):
 
 def iter_urls(url, sha, mirrors):
     while True:
-        yield from iter_cached(sha.removeprefix('sha:'), mirrors)
-        yield url
+        for x in iter_cached(sha.removeprefix('sha:'), mirrors):
+            yield x, True
+
+        yield url, False
 
 
 def iter_tout():
@@ -80,7 +82,7 @@ def do_fetch(url, path, sha, mirrors):
     skip = set()
     full = frozenset(mirrors + [url])
 
-    for u, tout, ff in zip(iter_urls(url, sha, mirrors), iter_tout(), iter_ff()):
+    for (u, best_effort), tout, ff in zip(iter_urls(url, sha, mirrors), iter_tout(), iter_ff()):
         if len(skip) >= len(full):
             raise Exception(f'can not fetch {url}, no attempts left')
 
@@ -97,7 +99,10 @@ def do_fetch(url, path, sha, mirrors):
             if '404' in str(e):
                 skip.add(u)
             elif 'checksum' in str(e):
-                skip.add(u)
+                if best_effort:
+                    skip.add(u)
+                else:
+                    raise e
             else:
                 print(f'while fetch {u}: {e}')
 
