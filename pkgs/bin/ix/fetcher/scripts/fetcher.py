@@ -115,8 +115,8 @@ def do_fetch(url, path, sha, mirrors):
 
             return check_md5(path, sha)
         except Exception as e:
-            if ' 404' in str(e):
-                print(f'404 {u} {e}')
+            if 'error: 404' in str(e):
+                print(f'404 {u}')
                 skip.add(u)
             elif 'checksum' in str(e):
                 if best_effort:
