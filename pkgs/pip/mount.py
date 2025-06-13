@@ -9,7 +9,7 @@ TMPL = r'''
 
 {% block fetch %}
 {url}
-md5:{md5}
+sha:{sha}
 {% endblock %}
 
 {% block bld_tool %}
@@ -53,7 +53,7 @@ def gen_pkg(rec):
     t = TMPL
 
     t = t.replace('{url}', rec['url'])
-    t = t.replace('{md5}', rec['md5'])
+    t = t.replace('{sha}', rec['sha'])
     t = t.replace('{run}', '\n'.join(x + '/ix.sh' for x in rec.get('run', [])))
 
     return t
