@@ -10,7 +10,7 @@ ogg
 
 {% block fetch %}
 https://gitlab.xiph.org/xiph/ogg/-/archive/v{{self.version().strip()}}/ogg-v{{self.version().strip()}}.tar.bz2
-md5:b1221346a0ed6b6369f8c69a2800050b
+sha:ff13fbddfd0ad5d3bc3ed5b62cb04edc13014d8072e954490dae65f16fa5a47a
 {% endblock %}
 
 {% block lib_deps %}
