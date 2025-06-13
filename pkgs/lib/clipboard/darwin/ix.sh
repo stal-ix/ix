@@ -10,7 +10,7 @@ libclipboard
 
 {% block fetch %}
 https://github.com/jtanx/libclipboard/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-md5:bddc22070b6804ed63994af49b778b70
+sha:253f34a770be7ad9193be890b395dd2256119c9e3aa66e157bd465960515d47a
 {% endblock %}
 
 {% block lib_deps %}
