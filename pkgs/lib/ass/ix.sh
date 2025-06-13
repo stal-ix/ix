@@ -10,7 +10,7 @@ libass
 
 {% block fetch %}
 https://github.com/libass/libass/archive/refs/tags/{{self.version().strip()}}.tar.gz
-sha:c287d180d93dc9c9021872574b618ac49027e84cc90e1289318b1ee68bb42251
+c287d180d93dc9c9021872574b618ac49027e84cc90e1289318b1ee68bb42251
 {% endblock %}
 
 {% block lib_deps %}

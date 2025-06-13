@@ -10,7 +10,7 @@ curl
 
 {% block fetch %}
 https://github.com/curl/curl/archive/refs/tags/curl-{{self.version().strip().replace('.', '_')}}.tar.gz
-sha:6cf947ec831e8522b30d7fa8784ce5fcdf1f21581111861d82085a2729c59ba9
+6cf947ec831e8522b30d7fa8784ce5fcdf1f21581111861d82085a2729c59ba9
 {% endblock %}
 
 {% block bld_tool %}

@@ -10,7 +10,7 @@ axel
 
 {% block fetch %}
 https://github.com/axel-download-accelerator/axel/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:f6f2a5369d78003ab162a774cff0be71096bea6929333a79c8168c82caced07d
+f6f2a5369d78003ab162a774cff0be71096bea6929333a79c8168c82caced07d
 {% endblock %}
 
 {% block conf_ver %}

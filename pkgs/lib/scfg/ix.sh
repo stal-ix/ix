@@ -10,7 +10,7 @@ libscfg
 
 {% block fetch %}
 https://codeberg.org/emersion/libscfg/archive/v{{self.version().strip()}}.tar.gz
-sha:851f889985e89637db430409431e63db5e0a150f1a9e18a4f4ccf1e6612c5915
+851f889985e89637db430409431e63db5e0a150f1a9e18a4f4ccf1e6612c5915
 {% endblock %}
 
 {% block lib_deps %}

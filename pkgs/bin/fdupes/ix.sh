@@ -10,7 +10,7 @@ fdupes
 
 {% block fetch %}
 https://github.com/adrianlopezroche/fdupes/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:2a11250ef0e9d82837dcf336853b2891732cc78e2888ccdc6b689ab7b47b0f5b
+2a11250ef0e9d82837dcf336853b2891732cc78e2888ccdc6b689ab7b47b0f5b
 {% endblock %}
 
 {% block bld_libs %}

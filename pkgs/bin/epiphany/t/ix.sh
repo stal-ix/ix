@@ -10,7 +10,7 @@ epiphany
 
 {% block fetch %}
 https://github.com/GNOME/epiphany/archive/refs/tags/{{self.version().strip()}}.tar.gz
-sha:76f35b69b9acb2d055d8927a618686e91886c301407881c237a239043420bda8
+76f35b69b9acb2d055d8927a618686e91886c301407881c237a239043420bda8
 {% endblock %}
 
 {% block bld_libs %}

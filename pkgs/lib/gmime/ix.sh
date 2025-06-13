@@ -10,7 +10,7 @@ gmime
 
 {% block fetch %}
 https://github.com/jstedfast/gmime/archive/refs/tags/{{self.version().strip()}}.tar.gz
-sha:06662db189ce56782c23c7c4adfebfa512350c2fa9514f0d551df42c7f940076
+06662db189ce56782c23c7c4adfebfa512350c2fa9514f0d551df42c7f940076
 {% endblock %}
 
 {% block conf_ver %}2/71{% endblock %}

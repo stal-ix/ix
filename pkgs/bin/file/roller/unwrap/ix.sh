@@ -10,7 +10,7 @@ file-roller
 
 {% block fetch %}
 https://github.com/GNOME/file-roller/archive/refs/tags/{{self.version().strip()}}.tar.gz
-sha:23f574efdbdc574dee8b853057e5aa7504419138e14c392472902130f94a8f84
+23f574efdbdc574dee8b853057e5aa7504419138e14c392472902130f94a8f84
 {% endblock %}
 
 {% block bld_libs %}

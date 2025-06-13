@@ -10,5 +10,5 @@ mingw-w64
 
 {% block fetch %}
 https://downloads.sourceforge.net/project/mingw-w64/mingw-w64/mingw-w64-release/mingw-w64-v{{self.version().strip()}}.tar.bz2
-sha:cc41898aac4b6e8dd5cffd7331b9d9515b912df4420a3a612b5ea2955bbeed2f
+cc41898aac4b6e8dd5cffd7331b9d9515b912df4420a3a612b5ea2955bbeed2f
 {% endblock %}

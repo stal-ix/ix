@@ -10,7 +10,7 @@ transmission-remote-gtk
 
 {% block fetch %}
 https://github.com/transmission-remote-gtk/transmission-remote-gtk/archive/refs/tags/{{self.version().strip()}}.tar.gz
-sha:92ca12aa94d14d6c9ce2b8e4d12c5e44f85f748348e3b0d54126de56ee5dc841
+92ca12aa94d14d6c9ce2b8e4d12c5e44f85f748348e3b0d54126de56ee5dc841
 {% endblock %}
 
 {% block bld_libs %}

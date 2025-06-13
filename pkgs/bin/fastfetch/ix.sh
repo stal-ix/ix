@@ -10,7 +10,7 @@ fastfetch
 
 {% block fetch %}
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/{{self.version().strip()}}.tar.gz
-sha:f336ab5fb651fc34759117d9ef081e8c9175cb1538900a8c7b4efdf94a1de85c
+f336ab5fb651fc34759117d9ef081e8c9175cb1538900a8c7b4efdf94a1de85c
 {% endblock %}
 
 {% block bld_libs %}

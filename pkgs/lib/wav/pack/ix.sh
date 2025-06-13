@@ -10,7 +10,7 @@ WavPack
 
 {% block fetch %}
 https://github.com/dbry/WavPack/releases/download/{{self.version().strip()}}/wavpack-{{self.version().strip()}}.tar.xz
-sha:7322775498602c8850afcfc1ae38f99df4cbcd51386e873d6b0f8047e55c0c26
+7322775498602c8850afcfc1ae38f99df4cbcd51386e873d6b0f8047e55c0c26
 {% endblock %}
 
 {% block lib_deps %}

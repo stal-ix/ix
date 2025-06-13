@@ -10,7 +10,7 @@ m4
 
 {% block fetch %}
 https://ftp.gnu.org/gnu/m4/m4-{{self.version().strip()}}.tar.xz
-sha:e236ea3a1ccf5f6c270b1c4bb60726f371fa49459a8eaaebc90b216b328daf2b
+e236ea3a1ccf5f6c270b1c4bb60726f371fa49459a8eaaebc90b216b328daf2b
 {% endblock %}
 
 {% block bld_libs %}

@@ -10,7 +10,7 @@ libcerf
 
 {% block fetch %}
 https://jugit.fz-juelich.de/mlz/libcerf/-/archive/v{{self.version().strip()}}/libcerf-v{{self.version().strip()}}.tar.bz2
-sha:e8b5be7cf8dc654e05c9fcaa8a7d93f4f287f248e2c58b696731102ccab2ff93
+e8b5be7cf8dc654e05c9fcaa8a7d93f4f287f248e2c58b696731102ccab2ff93
 {% endblock %}
 
 {% block lib_deps %}

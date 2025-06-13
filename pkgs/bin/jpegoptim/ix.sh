@@ -10,7 +10,7 @@ jpegoptim
 
 {% block fetch %}
 https://github.com/tjko/jpegoptim/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:90a309d1c092de358bb411d702281ac3039b489d03adb0bc3c4ef04cf0067d38
+90a309d1c092de358bb411d702281ac3039b489d03adb0bc3c4ef04cf0067d38
 {% endblock %}
 
 {% block bld_libs %}

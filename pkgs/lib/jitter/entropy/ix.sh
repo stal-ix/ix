@@ -10,7 +10,7 @@ jitterentropy-library
 
 {% block fetch %}
 https://github.com/smuellerDD/jitterentropy-library/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:783e71bf5c805a68510511e0da177560123a71c86f0efc5a6a21cf5d9cea3ea9
+783e71bf5c805a68510511e0da177560123a71c86f0efc5a6a21cf5d9cea3ea9
 {% endblock %}
 
 {% block lib_deps %}

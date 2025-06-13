@@ -5,12 +5,12 @@ xkeyboard-config
 {% endblock %}
 
 {% block version %}
-2.44
+2.45
 {% endblock %}
 
 {% block fetch %}
 https://gitlab.freedesktop.org/xkeyboard-config/xkeyboard-config/-/archive/xkeyboard-config-2.41/xkeyboard-config-xkeyboard-config-{{self.version().strip()}}.tar.bz2
-sha:076978baf61655d6d9404e6a7d8a4ba304256c301574e80007f6dd941f6ba349
+076978baf61655d6d9404e6a7d8a4ba304256c301574e80007f6dd941f6ba349
 {% endblock %}
 
 {% block bld_tool %}

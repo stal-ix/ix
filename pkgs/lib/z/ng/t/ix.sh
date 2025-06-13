@@ -10,7 +10,7 @@ zlib-ng
 
 {% block fetch %}
 https://github.com/zlib-ng/zlib-ng/archive/refs/tags/{{self.version().strip()}}.tar.gz
-sha:a73343c3093e5cdc50d9377997c3815b878fd110bf6511c2c7759f2afb90f5a3
+a73343c3093e5cdc50d9377997c3815b878fd110bf6511c2c7759f2afb90f5a3
 {% endblock %}
 
 {% block lib_deps %}

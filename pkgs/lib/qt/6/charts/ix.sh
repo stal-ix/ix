@@ -10,7 +10,7 @@ qtcharts
 
 {% block fetch %}
 https://github.com/qt/qtcharts/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:ec6e44444a49a976bfbe993a2a8f5d8a35de66c06fdf16cd2c9a426331477cc3
+ec6e44444a49a976bfbe993a2a8f5d8a35de66c06fdf16cd2c9a426331477cc3
 {% endblock %}
 
 {% block lib_deps %}

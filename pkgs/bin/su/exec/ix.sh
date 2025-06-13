@@ -10,7 +10,7 @@ su-exec
 
 {% block fetch %}
 https://github.com/ncopa/su-exec/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:ec4acbd8cde6ceeb2be67eda1f46c709758af6db35cacbcde41baac349855e25
+ec4acbd8cde6ceeb2be67eda1f46c709758af6db35cacbcde41baac349855e25
 {% endblock %}
 
 {% block bld_libs %}

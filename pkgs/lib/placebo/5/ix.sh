@@ -10,7 +10,7 @@ libplacebo
 
 {% block fetch %}
 https://github.com/haasn/libplacebo/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:1e8be260e104c0be061305e3c0f2099c79776528889d426c497da153e85f8b5c
+1e8be260e104c0be061305e3c0f2099c79776528889d426c497da153e85f8b5c
 {% endblock %}
 
 {% block bld_libs %}

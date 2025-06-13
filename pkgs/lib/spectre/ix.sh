@@ -10,7 +10,7 @@ libspectre
 
 {% block fetch %}
 https://libspectre.freedesktop.org/releases/libspectre-{{self.version().strip()}}.tar.gz
-sha:55a7517cd3572bd2565df0cf450944a04d5273b279ebb369a895391957f0f960
+55a7517cd3572bd2565df0cf450944a04d5273b279ebb369a895391957f0f960
 {% endblock %}
 
 {% block lib_deps %}

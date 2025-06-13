@@ -10,7 +10,7 @@ seer
 
 {% block fetch %}
 https://github.com/epasveer/seer/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:06f8eac1ab26149e6919c3bb021c1052f4da42c17b540d87db944682a81071b3
+06f8eac1ab26149e6919c3bb021c1052f4da42c17b540d87db944682a81071b3
 {% endblock %}
 
 {% block bld_libs %}

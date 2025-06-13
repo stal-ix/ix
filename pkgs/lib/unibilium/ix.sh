@@ -10,7 +10,7 @@ unibilium
 
 {% block fetch %}
 https://github.com/neovim/unibilium/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:370ecb07fbbc20d91d1b350c55f1c806b06bf86797e164081ccc977fc9b3af7a
+370ecb07fbbc20d91d1b350c55f1c806b06bf86797e164081ccc977fc9b3af7a
 {% endblock %}
 
 {% block lib_deps %}

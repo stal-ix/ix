@@ -10,7 +10,7 @@ libpcap
 
 {% block fetch %}
 https://www.tcpdump.org/release/libpcap-{{self.version().strip()}}.tar.gz
-sha:37ced90a19a302a7f32e458224a00c365c117905c2cd35ac544b6880a81488f0
+37ced90a19a302a7f32e458224a00c365c117905c2cd35ac544b6880a81488f0
 {% endblock %}
 
 {% block lib_deps %}

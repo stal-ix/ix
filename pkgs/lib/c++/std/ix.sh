@@ -10,7 +10,7 @@ gcc
 
 {% block fetch %}
 http://mirror.koddos.net/gcc/releases/gcc-{{self.version().strip()}}/gcc-{{self.version().strip()}}.tar.xz
-md5:31c86f2ced76acac66992eeedce2fce2
+d08edc536b54c372a1010ff6619dd274c0f1603aa49212ba20f7aa2cda36fa8b
 {% endblock %}
 
 {% block lib_deps %}

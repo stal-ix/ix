@@ -10,7 +10,7 @@ terminal
 
 {% block fetch %}
 https://github.com/elementary/terminal/archive/refs/tags/{{self.version().strip()}}.tar.gz
-sha:57f4c3670e74265cfcf6d6b03a29ea9677f1404d5fb62dd7fea1fcb45071d166
+57f4c3670e74265cfcf6d6b03a29ea9677f1404d5fb62dd7fea1fcb45071d166
 {% endblock %}
 
 {% block bld_libs %}

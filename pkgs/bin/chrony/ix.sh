@@ -10,7 +10,7 @@ chrony
 
 {% block fetch %}
 https://github.com/mlichvar/chrony/archive/refs/tags/{{self.version().strip()}}.tar.gz
-sha:f0d6c81ce4e0628b00a6da7b96d8f19e95d8f9e14e51395df63723e48d64e80f
+f0d6c81ce4e0628b00a6da7b96d8f19e95d8f9e14e51395df63723e48d64e80f
 {% endblock %}
 
 {% block bld_libs %}

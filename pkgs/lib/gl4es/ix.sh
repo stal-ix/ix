@@ -10,7 +10,7 @@ gl4es
 
 {% block fetch %}
 https://github.com/ptitSeb/gl4es/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:b565e717c7d192e936bda25f3cb90ad8db398af56414ec08294b6716574c1a6d
+b565e717c7d192e936bda25f3cb90ad8db398af56414ec08294b6716574c1a6d
 {% endblock %}
 
 {% block lib_deps %}

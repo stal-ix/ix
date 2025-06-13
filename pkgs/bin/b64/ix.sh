@@ -2,7 +2,7 @@
 
 {% block fetch %}
 http://base64.sourceforge.net/b64.c
-sha:539a31521e4ef51661ab4602bead39a77cecf459cb25915cf22dd2f171ed97bc
+539a31521e4ef51661ab4602bead39a77cecf459cb25915cf22dd2f171ed97bc
 {% endblock %}
 
 {% block unpack %}

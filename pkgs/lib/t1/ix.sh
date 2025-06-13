@@ -10,7 +10,7 @@ t1lib
 
 {% block fetch %}
 https://www.ibiblio.org/pub/Linux/libs/graphics/t1lib-{{self.version().strip()}}.tar.gz
-sha:821328b5054f7890a0d0cd2f52825270705df3641dbd476d58d17e56ed957b59
+821328b5054f7890a0d0cd2f52825270705df3641dbd476d58d17e56ed957b59
 {% endblock %}
 
 {% block lib_deps %}

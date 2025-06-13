@@ -10,7 +10,7 @@ clapper
 
 {% block fetch %}
 https://github.com/Rafostar/clapper/archive/refs/tags/{{self.version().strip()}}.tar.gz
-sha:f0d6faea1285ff4b3a1c3c758181cd1b501cd066f87afd0d6fde5fc7e83eba60
+f0d6faea1285ff4b3a1c3c758181cd1b501cd066f87afd0d6fde5fc7e83eba60
 {% endblock %}
 
 {% block bld_libs %}

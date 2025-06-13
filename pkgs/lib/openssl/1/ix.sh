@@ -10,7 +10,7 @@ openssl
 
 {% block fetch %}
 https://www.openssl.org/source/old/{{self.version().strip()[:-1]}}/openssl-{{self.version().strip()}}.tar.gz
-md5:cccaa064ed860a2b4d1303811bf5c682
+aaf2fcb575cdf6491b98ab4829abf78a3dec8402b8b81efc8f23c00d443981bf
 {% endblock %}
 
 {% block openssl_conf_opts %}

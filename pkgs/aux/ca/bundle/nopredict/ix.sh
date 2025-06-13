@@ -4,7 +4,7 @@
 
 {% block fetch %}
 https://github.com/curl/curl/archive/refs/tags/curl-7_80_0.tar.gz
-sha:798d2b9432c93c96e7c103568d60f84a50d90875aa8cf4f9fe340005c480f2ea
+798d2b9432c93c96e7c103568d60f84a50d90875aa8cf4f9fe340005c480f2ea
 {{self.fetch_impl()}}
 {% endblock %}
 

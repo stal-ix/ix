@@ -19,7 +19,7 @@ bmake
 
 {% block fetch %}
 https://github.com/kristapsdz/lowdown/archive/refs/tags/VERSION_{{self.version().strip().replace('.', '_')}}.tar.gz
-sha:9718c0f6c99a2cef923357feced0e0f86d8047260238c5c37fd2b51ca620e373
+9718c0f6c99a2cef923357feced0e0f86d8047260238c5c37fd2b51ca620e373
 {% endblock %}
 
 {% block lib_deps %}

@@ -10,7 +10,7 @@ wob
 
 {% block fetch %}
 https://github.com/francma/wob/archive/refs/tags/{{self.version().strip()}}.tar.gz
-sha:8a5850beec72b5b19be631a6eb21315a20082bf9135447080f9e9045f143938b
+8a5850beec72b5b19be631a6eb21315a20082bf9135447080f9e9045f143938b
 {% endblock %}
 
 {% block bld_libs %}

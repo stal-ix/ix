@@ -10,7 +10,7 @@ linux-pam
 
 {% block fetch %}
 https://github.com/linux-pam/linux-pam/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:1dad9cb50b4a19accd7d7b9716777caf5a0f33d26f018f27d63e9e095998f12b
+1dad9cb50b4a19accd7d7b9716777caf5a0f33d26f018f27d63e9e095998f12b
 {% endblock %}
 
 {% block bld_tool %}

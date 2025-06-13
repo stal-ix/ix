@@ -10,7 +10,7 @@ libproxy
 
 {% block fetch %}
 https://github.com/libproxy/libproxy/archive/refs/tags/{{self.version().strip()}}.tar.gz
-sha:a1976c3ac4affedc17e6d40cf78c9d8eca6751520ea3cbbec1a8850f7ded1565
+a1976c3ac4affedc17e6d40cf78c9d8eca6751520ea3cbbec1a8850f7ded1565
 {% endblock %}
 
 {% block lib_deps %}

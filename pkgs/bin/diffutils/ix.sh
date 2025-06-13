@@ -10,7 +10,7 @@ diffutils
 
 {% block fetch %}
 https://ftp.gnu.org/gnu/diffutils/diffutils-{{self.version().strip()}}.tar.xz
-sha:7c8b7f9fc8609141fdea9cece85249d308624391ff61dedaf528fcb337727dfd
+7c8b7f9fc8609141fdea9cece85249d308624391ff61dedaf528fcb337727dfd
 {% endblock %}
 
 {% block bld_libs %}

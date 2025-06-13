@@ -10,7 +10,7 @@ uncrustify
 
 {% block fetch %}
 https://github.com/uncrustify/uncrustify/archive/refs/tags/uncrustify-{{self.version().strip()}}.tar.gz
-sha:484623dc16b92206adc6ac0770077c6c67c6e441102148c2a121a19549330ff9
+484623dc16b92206adc6ac0770077c6c67c6e441102148c2a121a19549330ff9
 {% endblock %}
 
 {% block bld_libs %}

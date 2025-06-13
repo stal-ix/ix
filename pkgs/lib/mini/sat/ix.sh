@@ -10,7 +10,7 @@ minisat
 
 {% block fetch %}
 https://github.com/msoos/minisat/archive/refs/tags/{{self.version().strip()}}.tar.gz
-sha:2cd8e9282d0f50f6bdac2cd001c95f66c1de9b2dec61391652c68729c347290f
+2cd8e9282d0f50f6bdac2cd001c95f66c1de9b2dec61391652c68729c347290f
 {% endblock %}
 
 {% block lib_deps %}

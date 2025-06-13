@@ -6,5 +6,5 @@
 
 {% block fetch %}
 {{super()}}
-sha:e02c5c36eb53bfcd3f417c6e40703a50ec790a1a772269ea156a2ccef14998d2
+e02c5c36eb53bfcd3f417c6e40703a50ec790a1a772269ea156a2ccef14998d2
 {% endblock %}

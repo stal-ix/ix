@@ -10,7 +10,7 @@ cpuinfo
 
 {% block fetch %}
 https://github.com/pytorch/cpuinfo/archive/{{self.version().strip()}}.zip
-sha:f335b437ef06ddc8916129d3baf423e986d70dd31aa2b8b8a752c36bcfa040a2
+f335b437ef06ddc8916129d3baf423e986d70dd31aa2b8b8a752c36bcfa040a2
 {% endblock %}
 
 {% block lib_deps %}

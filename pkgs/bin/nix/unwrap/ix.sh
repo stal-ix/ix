@@ -10,7 +10,7 @@ nix
 
 {% block fetch %}
 https://github.com/NixOS/nix/archive/refs/tags/{{self.version().strip()}}.tar.gz
-sha:ffb860e7e6aae5a45bef4cb6d850a272c5f1d4d896a57087212111f110290df8
+ffb860e7e6aae5a45bef4cb6d850a272c5f1d4d896a57087212111f110290df8
 {% endblock %}
 
 {% block bld_libs %}

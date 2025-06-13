@@ -10,7 +10,7 @@ cpio
 
 {% block fetch %}
 https://ftp.gnu.org/gnu/cpio/cpio-{{self.version().strip()}}.tar.bz2
-sha:937610b97c329a1ec9268553fb780037bcfff0dcffe9725ebc4fd9c1aa9075db
+937610b97c329a1ec9268553fb780037bcfff0dcffe9725ebc4fd9c1aa9075db
 {% endblock %}
 
 {% block conf_ver %}

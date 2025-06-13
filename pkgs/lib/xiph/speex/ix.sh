@@ -10,7 +10,7 @@ speex
 
 {% block fetch %}
 https://gitlab.xiph.org/xiph/speex/-/archive/Speex-{{self.version().strip()}}/speex-Speex-{{self.version().strip()}}.tar.bz2
-sha:cc55cce69d8753940d56936f7a1fe6db4b302df144aec93a92de1c65b1a87681
+cc55cce69d8753940d56936f7a1fe6db4b302df144aec93a92de1c65b1a87681
 {% endblock %}
 
 {% block lib_deps %}

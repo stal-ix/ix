@@ -10,7 +10,7 @@ squashfuse
 
 {% block fetch %}
 https://github.com/vasi/squashfuse/archive/refs/tags/{{self.version().strip()}}.tar.gz
-sha:7730066d1e9baf0084c71674d168331296921e0d7ae0f34de7307744be4ed568
+7730066d1e9baf0084c71674d168331296921e0d7ae0f34de7307744be4ed568
 {% endblock %}
 
 {% block lib_deps %}

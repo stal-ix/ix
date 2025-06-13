@@ -10,7 +10,7 @@ utfcpp
 
 {% block fetch %}
 https://github.com/nemtrif/utfcpp/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:6920a6a5d6a04b9a89b2a89af7132f8acefd46e0c2a7b190350539e9213816c0
+6920a6a5d6a04b9a89b2a89af7132f8acefd46e0c2a7b190350539e9213816c0
 {% endblock %}
 
 {% block lib_deps %}

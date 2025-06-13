@@ -2,7 +2,7 @@
 
 {% block fetch %}
 https://github.com/System64fumo/syshud/archive/734d632ca0665a288d1308f883d974462fa2d349.zip
-sha:f129916b4e28145821496c19c00bcd4478ccb5e431e87944dc5d37f1a25481cb
+f129916b4e28145821496c19c00bcd4478ccb5e431e87944dc5d37f1a25481cb
 {% endblock %}
 
 {% block bld_libs %}

@@ -12,9 +12,9 @@ chromium
 
 {% block fetch %}
 https://commondatastorage.googleapis.com/chromium-browser-official/chromium-{{self.version().strip()}}.tar.xz
-sha:82e802bcd2ae8d575d7fda9ec82db83d04d5453e9304cb482644f629232bd394
+82e802bcd2ae8d575d7fda9ec82db83d04d5453e9304cb482644f629232bd394
 https://gitlab.alpinelinux.org/alpine/aports/-/archive/ed25dc0164fd410ab1866b69c949cb4747e69434/aports-ed25dc0164fd410ab1866b69c949cb4747e69434.tar.bz2
-sha:15bbbfd8d129cfa74aa13d51e5810943faca18f05096bb5aecb88f62c4cfc66e
+15bbbfd8d129cfa74aa13d51e5810943faca18f05096bb5aecb88f62c4cfc66e
 {% endblock %}
 
 {% block task_pool %}full{% endblock %}

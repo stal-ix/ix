@@ -10,7 +10,7 @@ lftp
 
 {% block fetch %}
 https://github.com/lavv17/lftp/releases/download/v{{self.version().strip()}}/lftp-{{self.version().strip()}}.tar.gz
-sha:68116cc184ab660a78a4cef323491e89909e5643b59c7b5f0a14f7c2b20e0a29
+68116cc184ab660a78a4cef323491e89909e5643b59c7b5f0a14f7c2b20e0a29
 {% endblock %}
 
 {% block conf_ver %}

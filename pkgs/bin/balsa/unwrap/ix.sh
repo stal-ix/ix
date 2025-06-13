@@ -10,7 +10,7 @@ balsa
 
 {% block fetch %}
 https://pawsa.fedorapeople.org/balsa/balsa-{{self.version().strip()}}.tar.xz
-sha:befa5984511db33d41f2b1ecbfc99e22a15d45d08efe5d737b5174a1a6ac8fc1
+befa5984511db33d41f2b1ecbfc99e22a15d45d08efe5d737b5174a1a6ac8fc1
 {% endblock %}
 
 {% block bld_libs %}

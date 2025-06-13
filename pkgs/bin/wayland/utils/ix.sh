@@ -10,7 +10,7 @@ wayland-utils
 
 {% block fetch %}
 https://gitlab.freedesktop.org/wayland/wayland-utils/-/archive/{{self.version().strip()}}/wayland-utils-{{self.version().strip()}}.tar.bz2
-sha:f38c6a4ca2113cf716ca687a4cd8e24a11cbeeb04759678b7bb2da7d16335d18
+f38c6a4ca2113cf716ca687a4cd8e24a11cbeeb04759678b7bb2da7d16335d18
 {% endblock %}
 
 {% block bld_libs %}

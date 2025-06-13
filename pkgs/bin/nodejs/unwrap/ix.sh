@@ -10,7 +10,7 @@ node-v
 
 {% block fetch %}
 https://nodejs.org/dist/v{{self.version().strip()}}/node-v{{self.version().strip()}}.tar.gz
-sha:164ec8fe82aac21f74efc0d5890d9f6c0e0ba22ca285d400c0266913fb4ff8a0
+164ec8fe82aac21f74efc0d5890d9f6c0e0ba22ca285d400c0266913fb4ff8a0
 {% endblock %}
 
 {% block bld_libs %}

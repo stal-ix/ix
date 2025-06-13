@@ -10,7 +10,7 @@ json-glib
 
 {% block fetch %}
 https://github.com/GNOME/json-glib/archive/refs/tags/{{self.version().strip()}}.tar.gz
-sha:d23cbd4094a32cc05cf22cd87a83da1f799e182e286133b49fde3c9241a32006
+d23cbd4094a32cc05cf22cd87a83da1f799e182e286133b49fde3c9241a32006
 {% endblock %}
 
 {% block lib_deps %}

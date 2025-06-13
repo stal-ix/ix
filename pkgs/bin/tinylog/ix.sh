@@ -10,7 +10,7 @@ perp
 
 {% block fetch %}
 http://b0llix.net/perp/distfiles/perp-{{self.version().strip()}}.tar.gz
-sha:1222fe31c16014d8b2a78416f93ba9f8c31eddbc381adc9021fa5d9764475815
+1222fe31c16014d8b2a78416f93ba9f8c31eddbc381adc9021fa5d9764475815
 {% endblock %}
 
 {% block bld_libs %}

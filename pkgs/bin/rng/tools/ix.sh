@@ -10,7 +10,7 @@ rng-tools
 
 {% block fetch %}
 https://github.com/nhorman/rng-tools/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:4aa50994232da74499b60b3ebf79118e30a1943be375b7d931dcf18df5442fd3
+4aa50994232da74499b60b3ebf79118e30a1943be375b7d931dcf18df5442fd3
 {% endblock %}
 
 {% block bld_libs %}

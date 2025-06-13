@@ -10,7 +10,7 @@ libcdr
 
 {% block fetch %}
 https://dev-www.libreoffice.org/src/libcdr/libcdr-{{self.version().strip()}}.tar.xz
-sha:ced677c8300b29c91d3004bb1dddf0b99761bf5544991c26c2ee8f427e87193c
+ced677c8300b29c91d3004bb1dddf0b99761bf5544991c26c2ee8f427e87193c
 {% endblock %}
 
 {% block lib_deps %}

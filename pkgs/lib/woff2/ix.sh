@@ -10,7 +10,7 @@ woff2
 
 {% block fetch %}
 https://github.com/google/woff2/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:add272bb09e6384a4833ffca4896350fdb16e0ca22df68c0384773c67a175594
+add272bb09e6384a4833ffca4896350fdb16e0ca22df68c0384773c67a175594
 {% endblock %}
 
 {% block lib_deps %}

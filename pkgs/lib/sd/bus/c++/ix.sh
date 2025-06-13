@@ -8,5 +8,5 @@
 
 {% block fetch %}
 {{super()}}
-sha:7ec8a2565bfc8f975c7ee528cb292021063ed793d6864c1c8733ca10ff906164
+7ec8a2565bfc8f975c7ee528cb292021063ed793d6864c1c8733ca10ff906164
 {% endblock %}

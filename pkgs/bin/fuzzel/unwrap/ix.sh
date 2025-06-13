@@ -10,7 +10,7 @@ fuzzel
 
 {% block fetch %}
 https://codeberg.org/dnkl/fuzzel/archive/{{self.version().strip()}}.tar.gz
-sha:7f23b86d8fc635c368c69be7227aa7f8068a6ec7d07305a33c12db259400d3e8
+7f23b86d8fc635c368c69be7227aa7f8068a6ec7d07305a33c12db259400d3e8
 {% endblock %}
 
 {% block bld_libs %}

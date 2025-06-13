@@ -10,7 +10,7 @@ atop
 
 {% block fetch %}
 https://www.atoptool.nl/download/atop-{{self.version().strip()}}.tar.gz
-sha:77650f79f9e388b6f5666dc113849894575a29bb4de21b8cd58767bf8a905154
+77650f79f9e388b6f5666dc113849894575a29bb4de21b8cd58767bf8a905154
 {% endblock %}
 
 {% block bld_libs %}

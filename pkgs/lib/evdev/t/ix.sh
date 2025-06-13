@@ -10,7 +10,7 @@ libevdev
 
 {% block fetch %}
 https://www.freedesktop.org/software/libevdev/libevdev-{{self.version().strip()}}.tar.xz
-sha:f00ab8d42ad8b905296fab67e13b871f1a424839331516642100f82ad88127cd
+f00ab8d42ad8b905296fab67e13b871f1a424839331516642100f82ad88127cd
 {% endblock %}
 
 {% block meson_flags %}

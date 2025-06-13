@@ -10,7 +10,7 @@ dcron
 
 {% block fetch %}
 https://github.com/ptchinster/dcron/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:d1dced1554213225f5ca333ebc5eab96ab80fa30800d9420782d5dfa6e2a15e7
+d1dced1554213225f5ca333ebc5eab96ab80fa30800d9420782d5dfa6e2a15e7
 {% endblock %}
 
 {% block bld_libs %}

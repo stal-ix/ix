@@ -10,7 +10,7 @@ theora
 
 {% block fetch %}
 https://github.com/xiph/theora/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:e0c35771b425c32a052ffb358a2aed14219340ab850b48dc85b01939c0513a31
+e0c35771b425c32a052ffb358a2aed14219340ab850b48dc85b01939c0513a31
 {% endblock %}
 
 {% block lib_deps %}

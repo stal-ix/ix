@@ -10,7 +10,7 @@ toybox
 
 {% block fetch %}
 https://github.com/landley/toybox/archive/refs/tags/{{self.version().strip()}}.tar.gz
-sha:3c529d93923dde67d048e7bcbd5d1bc0dd1ad09362269e2415f5f2eaab349b5b
+3c529d93923dde67d048e7bcbd5d1bc0dd1ad09362269e2415f5f2eaab349b5b
 {% endblock %}
 
 {% block bld_libs %}

@@ -12,7 +12,7 @@ texstudio
 
 {% block fetch %}
 https://github.com/texstudio-org/texstudio/archive/refs/tags/{{self.version().strip()}}.tar.gz
-sha:c40bcdd50bb97d0174a6f67c6e2e3e135b265579185490c6757c30689ff7353d
+c40bcdd50bb97d0174a6f67c6e2e3e135b265579185490c6757c30689ff7353d
 {% endblock %}
 
 {% block bld_libs %}

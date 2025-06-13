@@ -10,7 +10,7 @@ xorgproto
 
 {% block fetch %}
 https://www.x.org/releases/individual/proto/xorgproto-{{self.version().strip()}}.tar.xz
-sha:372225fd40815b8423547f5d890c5debc72e88b91088fbfb13158c20495ccb59
+372225fd40815b8423547f5d890c5debc72e88b91088fbfb13158c20495ccb59
 {% endblock %}
 
 {% block bld_libs %}

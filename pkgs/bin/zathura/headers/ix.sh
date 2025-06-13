@@ -10,7 +10,7 @@ zathura
 
 {% block fetch %}
 https://github.com/pwmt/zathura/archive/refs/tags/{{self.version().strip()}}.tar.gz
-sha:32540747a6fe3c4189ec9d5de46a455862c88e11e969adb5bc0ce8f9b25b52d4
+32540747a6fe3c4189ec9d5de46a455862c88e11e969adb5bc0ce8f9b25b52d4
 {% endblock %}
 
 {% block bld_libs %}

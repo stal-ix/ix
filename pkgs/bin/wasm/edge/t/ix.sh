@@ -10,7 +10,7 @@ WasmEdge
 
 {% block fetch %}
 https://github.com/WasmEdge/WasmEdge/archive/refs/tags/{{self.version().strip()}}.tar.gz
-sha:ff95d3b9d4736f36e31c0477208cc70f12a0a3f946bbf756f1e7b181877d5af3
+ff95d3b9d4736f36e31c0477208cc70f12a0a3f946bbf756f1e7b181877d5af3
 {% endblock %}
 
 {% block bld_libs %}

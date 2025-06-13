@@ -10,7 +10,7 @@ openresolv
 
 {% block fetch %}
 https://github.com/NetworkConfiguration/openresolv/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:13f9094edfd2b2b92fde53c07fb82f28ed83e5b128bd2dcfba46a737d3d81a4e
+13f9094edfd2b2b92fde53c07fb82f28ed83e5b128bd2dcfba46a737d3d81a4e
 {% endblock %}
 
 {% block make_flags %}

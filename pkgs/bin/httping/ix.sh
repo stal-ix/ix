@@ -10,7 +10,7 @@ HTTPing
 
 {% block fetch %}
 https://github.com/folkertvanheusden/HTTPing/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:87fa2da5ac83c4a0edf4086161815a632df38e1cc230e1e8a24a8114c09da8fd
+87fa2da5ac83c4a0edf4086161815a632df38e1cc230e1e8a24a8114c09da8fd
 {% endblock %}
 
 {% block bld_libs %}

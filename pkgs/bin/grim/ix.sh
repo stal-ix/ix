@@ -10,7 +10,7 @@ grim
 
 {% block fetch %}
 https://git.sr.ht/~emersion/grim/archive/v{{self.version().strip()}}.tar.gz
-sha:5ed8e70fcd83a7e203e92d34dbb82a1342d3f13ad98a6b0310cc97e1a9342ded
+5ed8e70fcd83a7e203e92d34dbb82a1342d3f13ad98a6b0310cc97e1a9342ded
 {% endblock %}
 
 {% block bld_libs %}

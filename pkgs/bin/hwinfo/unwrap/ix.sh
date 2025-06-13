@@ -10,7 +10,7 @@ hwinfo
 
 {% block fetch %}
 https://github.com/openSUSE/hwinfo/archive/refs/tags/{{self.version().strip()}}.tar.gz
-sha:875dba56c0fb7a05732cf56dfa0f988e380ca0860fa9ddd8cbbe4e99158ae7ee
+875dba56c0fb7a05732cf56dfa0f988e380ca0860fa9ddd8cbbe4e99158ae7ee
 {% endblock %}
 
 {% block bld_libs %}

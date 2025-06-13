@@ -10,7 +10,7 @@ zenity
 
 {% block fetch %}
 https://github.com/GNOME/zenity/archive/refs/tags/{{self.version().strip()}}.tar.gz
-sha:7c45847057b8be9c385a31055231f7efa3eff3bd4bd9ebd433675a78dca773d3
+7c45847057b8be9c385a31055231f7efa3eff3bd4bd9ebd433675a78dca773d3
 {% endblock %}
 
 {% block bld_libs %}

@@ -12,7 +12,7 @@ MPlayer
 
 {% block fetch %}
 https://mplayerhq.hu/MPlayer/releases/MPlayer-{{self.version().strip()}}.tar.xz
-sha:650cd55bb3cb44c9b39ce36dac488428559799c5f18d16d98edb2b7256cbbf85
+650cd55bb3cb44c9b39ce36dac488428559799c5f18d16d98edb2b7256cbbf85
 {% endblock %}
 
 {% block bld_libs %}

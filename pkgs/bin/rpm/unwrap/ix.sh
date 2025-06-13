@@ -10,7 +10,7 @@ rpm
 
 {% block fetch %}
 https://ftp.osuosl.org/pub/rpm/releases/rpm-4.19.x/rpm-{{self.version().strip()}}.tar.bz2
-sha:b30916dc148cbeab077797e9fc365702931e3a9a7eacf70add84153b549b3f77
+b30916dc148cbeab077797e9fc365702931e3a9a7eacf70add84153b549b3f77
 {% endblock %}
 
 {% block bld_libs %}

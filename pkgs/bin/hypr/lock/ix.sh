@@ -10,7 +10,7 @@ hyprlock
 
 {% block fetch %}
 https://github.com/hyprwm/hyprlock/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:14c47e71bdac9213909b11cdda16377dab12e27179d939df5ef2a0083a21e1e8
+14c47e71bdac9213909b11cdda16377dab12e27179d939df5ef2a0083a21e1e8
 {% endblock %}
 
 {% block bld_libs %}

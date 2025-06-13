@@ -10,7 +10,7 @@ musl-nscd
 
 {% block fetch %}
 https://github.com/pikhq/musl-nscd/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:ddd5924f0355568a483cb8c83e63c7e3425b8c3f1dce4b9883ca75ed1a276675
+ddd5924f0355568a483cb8c83e63c7e3425b8c3f1dce4b9883ca75ed1a276675
 {% endblock %}
 
 {% block bld_libs %}

@@ -10,7 +10,7 @@ xarchiver
 
 {% block fetch %}
 https://github.com/ib/xarchiver/archive/refs/tags/{{self.version().strip()}}.tar.gz
-sha:dfd70c9081790399c32d9d716a55060e5136ff0ad1a94a84988a55fd6f771ceb
+dfd70c9081790399c32d9d716a55060e5136ff0ad1a94a84988a55fd6f771ceb
 {% endblock %}
 
 {% block bld_libs %}

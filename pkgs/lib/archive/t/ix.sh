@@ -10,7 +10,7 @@ libarchive
 
 {% block fetch %}
 https://github.com/libarchive/libarchive/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:ad5dfe0d9a5999494c445b9bc3271d84160950bb1790cf892fb132f563d036b6
+ad5dfe0d9a5999494c445b9bc3271d84160950bb1790cf892fb132f563d036b6
 {% endblock %}
 
 {% block cmake_flags %}

@@ -10,7 +10,7 @@ zutils
 
 {% block fetch %}
 https://download.savannah.gnu.org/releases/zutils/zutils-{{self.version().strip()}}.tar.lz
-sha:05e6b03f333eabd78a1055139557e8ada6b634f1a58e8501f3b8f111a705cb87
+05e6b03f333eabd78a1055139557e8ada6b634f1a58e8501f3b8f111a705cb87
 {% endblock %}
 
 {% block bld_libs %}

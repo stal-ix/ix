@@ -10,7 +10,7 @@ rlottie
 
 {% block fetch %}
 https://github.com/Samsung/rlottie/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:030ccbc270f144b4f3519fb3b86e20dd79fb48d5d55e57f950f12bab9b65216a
+030ccbc270f144b4f3519fb3b86e20dd79fb48d5d55e57f950f12bab9b65216a
 {% endblock %}
 
 {% block lib_deps %}

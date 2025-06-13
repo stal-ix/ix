@@ -10,7 +10,7 @@ xmlbird
 
 {% block fetch %}
 https://github.com/johanmattssonm/xmlbird/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:fb0ea7b60400de3f50af803a71b971ac064bdb56a2b3e4e4bcbeb5c317dcb2d6
+fb0ea7b60400de3f50af803a71b971ac064bdb56a2b3e4e4bcbeb5c317dcb2d6
 {% endblock %}
 
 {% block lib_deps %}

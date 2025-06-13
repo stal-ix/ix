@@ -10,7 +10,7 @@ gnuplot
 
 {% block fetch %}
 https://downloads.sourceforge.net/project/gnuplot/gnuplot/{{self.version().strip()}}/gnuplot-{{self.version().strip()}}.tar.gz
-sha:2344e78bc78b296f66636a5d9e561b709b61d360185b718583c97a329f7ace5e
+2344e78bc78b296f66636a5d9e561b709b61d360185b718583c97a329f7ace5e
 {% endblock %}
 
 {% block bld_libs %}

@@ -10,7 +10,7 @@ swappy
 
 {% block fetch %}
 https://github.com/jtheoof/swappy/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:266fac289d4b903d80d44746044bafe8a8b663c6032be696c651ad390bcb1850
+266fac289d4b903d80d44746044bafe8a8b663c6032be696c651ad390bcb1850
 {% endblock %}
 
 {% block bld_libs %}

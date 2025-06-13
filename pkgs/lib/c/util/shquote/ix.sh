@@ -10,7 +10,7 @@ c-shquote
 
 {% block fetch %}
 https://github.com/c-util/c-shquote/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:396fddb4ad0855ae0c68ac104b9a7efd10d92c72eac60ba29e94abdb6dca3279
+396fddb4ad0855ae0c68ac104b9a7efd10d92c72eac60ba29e94abdb6dca3279
 {% endblock %}
 
 {% block lib_deps %}

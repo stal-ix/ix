@@ -10,7 +10,7 @@ libaom
 
 {% block fetch %}
 https://storage.googleapis.com/aom-releases/libaom-{{self.version().strip()}}.tar.gz
-sha:9e9775180dec7dfd61a79e00bda3809d43891aee6b2e331ff7f26986207ea22e
+9e9775180dec7dfd61a79e00bda3809d43891aee6b2e331ff7f26986207ea22e
 {% endblock %}
 
 {% block lib_deps %}

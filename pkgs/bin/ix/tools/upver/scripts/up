@@ -6,6 +6,8 @@ import json
 import time
 import subprocess
 
+sys.stdout = sys.stderr
+
 GOOD = frozenset('0123456789abcdef')
 sent = '1' * 64
 go_latest = 24
@@ -40,8 +42,6 @@ def run(*cmd):
     return subprocess.check_call(list(cmd), stdin=None)
 
 def is_sha(x):
-    x = x.removeprefix('sha:')
-
     if len(x) != 64:
         return False
 
@@ -55,7 +55,7 @@ def parse_sha(data):
     for l in data.split('\n'):
         for x in l.split(' '):
             if is_sha(x):
-                return x.removeprefix('sha:')
+                return x
 
     raise Exception('no sha')
 
@@ -173,7 +173,7 @@ def process(pkgs, fr, to):
     run('git', 'diff')
 
     out = call('./ix', 'build', *bld_pkgs).decode()
-    sha = revstr(parse_sha(revstr(out.replace(sent, '').replace('sha:', ''))))
+    sha = revstr(parse_sha(revstr(out.replace(sent, ''))))
 
     for f in files:
         print(f'fix {f}')

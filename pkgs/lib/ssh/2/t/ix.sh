@@ -10,7 +10,7 @@ libssh2
 
 {% block fetch %}
 https://github.com/libssh2/libssh2/archive/refs/tags/libssh2-{{self.version().strip()}}.tar.gz
-sha:82b35c61c78b475647bdc981a183c5b5ab0d979e1caee94186e8f9150f2b0d0d
+82b35c61c78b475647bdc981a183c5b5ab0d979e1caee94186e8f9150f2b0d0d
 {% endblock %}
 
 {% block lib_deps %}

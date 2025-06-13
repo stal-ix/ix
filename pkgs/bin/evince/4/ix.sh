@@ -2,7 +2,7 @@
 
 {% block fetch %}
 https://gitlab.gnome.org/crab2313/evince/-/archive/4c91df66ca83f8f1d057f0aa9069675b8bf5b6d6/evince-4c91df66ca83f8f1d057f0aa9069675b8bf5b6d6.tar.bz2
-sha:9e5a33675cfd312d92bcc78e72e48d8ecaadf2391057e610e4535a154de45627
+9e5a33675cfd312d92bcc78e72e48d8ecaadf2391057e610e4535a154de45627
 {% endblock %}
 
 {% block bld_libs %}

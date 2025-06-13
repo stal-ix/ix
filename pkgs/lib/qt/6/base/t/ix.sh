@@ -10,7 +10,7 @@ qtbase
 
 {% block fetch %}
 https://github.com/qt/qtbase/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:96b96e4fd0fc306502ed8b94a34cfa0bacc8a25d43c2e958dd6772b28f6b0e42
+96b96e4fd0fc306502ed8b94a34cfa0bacc8a25d43c2e958dd6772b28f6b0e42
 {% endblock %}
 
 {% block lib_deps %}

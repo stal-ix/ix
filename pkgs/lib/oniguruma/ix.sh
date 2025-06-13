@@ -10,7 +10,7 @@ oniguruma
 
 {% block fetch %}
 https://github.com/kkos/oniguruma/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:ad92309d0d13eebc27f6592e875f3efbfa3dda2bf6da5952e00f0a2120c921a8
+ad92309d0d13eebc27f6592e875f3efbfa3dda2bf6da5952e00f0a2120c921a8
 {% endblock %}
 
 {% block env %}

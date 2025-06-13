@@ -10,7 +10,7 @@ gnome-font-viewer
 
 {% block fetch %}
 https://gitlab.gnome.org/GNOME/gnome-font-viewer/-/archive/{{self.version().strip()}}/gnome-font-viewer-{{self.version().strip()}}.tar.bz2
-sha:7c713efe47d00d974b7da5b82173c24425745b661fa0947b7dbf24b913158da8
+7c713efe47d00d974b7da5b82173c24425745b661fa0947b7dbf24b913158da8
 {% endblock %}
 
 {% block bld_libs %}

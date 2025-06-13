@@ -10,7 +10,7 @@ shadow
 
 {% block fetch %}
 https://github.com/shadow-maint/shadow/archive/refs/tags/{{self.version().strip()}}.tar.gz
-sha:4d81469d9c61452306095a9f36dd4645f8e18e96a2aff944489a6484fe0ad4e9
+4d81469d9c61452306095a9f36dd4645f8e18e96a2aff944489a6484fe0ad4e9
 {% endblock %}
 
 {% block bld_libs %}

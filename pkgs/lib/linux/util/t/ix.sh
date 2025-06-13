@@ -10,7 +10,7 @@ util-linux
 
 {% block fetch %}
 https://github.com/util-linux/util-linux/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:277407acf21815006eb4bb2ee9c2fa2ea6f4f84bfc57486c460c6bc8c77a4445
+277407acf21815006eb4bb2ee9c2fa2ea6f4f84bfc57486c460c6bc8c77a4445
 {% endblock %}
 
 {% block lib_deps %}

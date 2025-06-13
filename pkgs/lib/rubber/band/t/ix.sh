@@ -10,7 +10,7 @@ rubberband
 
 {% block fetch %}
 https://breakfastquay.com/files/releases/rubberband-{{self.version().strip()}}.tar.bz2
-sha:af050313ee63bc18b35b2e064e5dce05b276aaf6d1aa2b8a82ced1fe2f8028e9
+af050313ee63bc18b35b2e064e5dce05b276aaf6d1aa2b8a82ced1fe2f8028e9
 {% endblock %}
 
 {% block lib_deps %}

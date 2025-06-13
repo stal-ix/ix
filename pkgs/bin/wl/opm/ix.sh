@@ -10,7 +10,7 @@ wlopm
 
 {% block fetch %}
 https://git.sr.ht/~leon_plickat/wlopm/archive/v{{self.version().strip()}}.tar.gz
-sha:15f31bbd855131943397dded3a26003f2f5056e4c6a1a93d35ff7697b3f1e439
+15f31bbd855131943397dded3a26003f2f5056e4c6a1a93d35ff7697b3f1e439
 {% endblock %}
 
 {% block bld_libs %}

@@ -15,7 +15,7 @@ iputils
 
 {% block fetch %}
 https://github.com/iputils/iputils/archive/refs/tags/{{self.version().strip()}}.tar.gz
-sha:19e680c9eef8c079da4da37040b5f5453763205b4edfb1e2c114de77908927e4
+19e680c9eef8c079da4da37040b5f5453763205b4edfb1e2c114de77908927e4
 {% endblock %}
 
 {% block bld_libs %}

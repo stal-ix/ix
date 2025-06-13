@@ -10,7 +10,7 @@ json-c
 
 {% block fetch %}
 https://s3.amazonaws.com/json-c_releases/releases/json-c-{{self.version().strip()}}.tar.gz
-sha:876ab046479166b869afc6896d288183bbc0e5843f141200c677b3e8dfb11724
+876ab046479166b869afc6896d288183bbc0e5843f141200c677b3e8dfb11724
 {% endblock %}
 
 {% block lib_deps %}

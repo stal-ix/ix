@@ -10,7 +10,7 @@ poedit
 
 {% block fetch %}
 https://github.com/vslavik/poedit/releases/download/v{{self.version().strip()}}-oss/poedit-{{self.version().strip()}}.tar.gz
-sha:ed37b8dee466ae5c4d8312391398d9b5c17933562e40691c881de17111d7f61e
+ed37b8dee466ae5c4d8312391398d9b5c17933562e40691c881de17111d7f61e
 {% endblock %}
 
 {% block bld_libs %}

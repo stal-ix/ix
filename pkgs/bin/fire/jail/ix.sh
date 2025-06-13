@@ -10,7 +10,7 @@ firejail
 
 {% block fetch %}
 https://github.com/netblue30/firejail/archive/refs/tags/{{self.version().strip()}}.tar.gz
-sha:fa54d64d1a6c9d45d72c37d1b8135c50f6e9468e75db7b2dd5ee66983f5a23dd
+fa54d64d1a6c9d45d72c37d1b8135c50f6e9468e75db7b2dd5ee66983f5a23dd
 {% endblock %}
 
 {% block bld_libs %}

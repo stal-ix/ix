@@ -10,7 +10,7 @@ snappy
 
 {% block fetch %}
 https://github.com/google/snappy/archive/refs/tags/{{self.version().strip()}}.tar.gz
-sha:90f74bc1fbf78a6c56b3c4a082a05103b3a56bb17bca1a27e052ea11723292dc
+90f74bc1fbf78a6c56b3c4a082a05103b3a56bb17bca1a27e052ea11723292dc
 {% endblock %}
 
 {% block lib_deps %}

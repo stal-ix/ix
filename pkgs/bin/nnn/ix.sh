@@ -10,7 +10,7 @@ nnn
 
 {% block fetch %}
 https://github.com/jarun/nnn/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:9faaff1e3f5a2fd3ed570a83f6fb3baf0bfc6ebd6a9abac16203d057ac3fffe3
+9faaff1e3f5a2fd3ed570a83f6fb3baf0bfc6ebd6a9abac16203d057ac3fffe3
 {% endblock %}
 
 {% block bld_libs %}

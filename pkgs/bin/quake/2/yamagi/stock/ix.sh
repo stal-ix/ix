@@ -10,7 +10,7 @@ yquake2
 
 {% block fetch %}
 https://github.com/yquake2/yquake2/archive/refs/tags/QUAKE2_{{self.version().strip().replace('.', '_')}}.tar.gz
-sha:54c530305dd96cf4536dee3633864f3e326a5efd33528314ac64e009201318e7
+54c530305dd96cf4536dee3633864f3e326a5efd33528314ac64e009201318e7
 {% endblock %}
 
 {% block bld_libs %}

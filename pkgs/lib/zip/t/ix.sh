@@ -10,7 +10,7 @@ libzip
 
 {% block fetch %}
 https://libzip.org/download/libzip-{{self.version().strip()}}.tar.xz
-sha:8a247f57d1e3e6f6d11413b12a6f28a9d388de110adc0ec608d893180ed7097b
+8a247f57d1e3e6f6d11413b12a6f28a9d388de110adc0ec608d893180ed7097b
 {% endblock %}
 
 {% block lib_deps %}

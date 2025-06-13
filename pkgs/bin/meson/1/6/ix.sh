@@ -10,7 +10,7 @@ meson
 
 {% block fetch %}
 https://github.com/mesonbuild/meson/archive/refs/tags/{{self.version().strip()}}.tar.gz
-sha:4889795777b536ea1a351982f3ef7c7b06a786ccb47036daba63cc5757c59edb
+4889795777b536ea1a351982f3ef7c7b06a786ccb47036daba63cc5757c59edb
 {% endblock %}
 
 {% block step_patch %}

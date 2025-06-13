@@ -10,7 +10,7 @@ gperftools
 
 {% block fetch %}
 https://github.com/gperftools/gperftools/archive/refs/tags/gperftools-{{self.version().strip()}}.tar.gz
-sha:b0d32b3d82da0ddac2a347412b50f97efddeae66dfbceb49455b7262fb965434
+b0d32b3d82da0ddac2a347412b50f97efddeae66dfbceb49455b7262fb965434
 {% endblock %}
 
 {% block configure %}

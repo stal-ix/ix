@@ -12,7 +12,7 @@ npm
 
 {% block fetch %}
 https://github.com/npm/cli/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:74ab2ea044ba55447e5d65f31a9ab6aefe9224eb755cbdf64a1b6c057e777992
+74ab2ea044ba55447e5d65f31a9ab6aefe9224eb755cbdf64a1b6c057e777992
 {% endblock %}
 
 {% block use_network %}true{% endblock %}

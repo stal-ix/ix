@@ -10,7 +10,7 @@ libedit
 
 {% block fetch %}
 https://www.thrysoee.dk/editline/libedit-{{self.version().strip()}}.tar.gz
-sha:23792701694550a53720630cd1cd6167101b5773adddcb4104f7345b73a568ac
+23792701694550a53720630cd1cd6167101b5773adddcb4104f7345b73a568ac
 {% endblock %}
 
 {% block lib_deps %}

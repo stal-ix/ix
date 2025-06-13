@@ -10,7 +10,7 @@ porto
 
 {% block fetch %}
 https://github.com/yandex/porto/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:b28e0e73d315f920a4aec248accc618782ce728441e6bc028954f76ffd26327a
+b28e0e73d315f920a4aec248accc618782ce728441e6bc028954f76ffd26327a
 {% endblock %}
 
 {% block lib_deps %}

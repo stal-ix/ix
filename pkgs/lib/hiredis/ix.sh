@@ -10,7 +10,7 @@ hiredis
 
 {% block fetch %}
 https://github.com/redis/hiredis/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:25cee4500f359cf5cad3b51ed62059aadfc0939b05150c1f19c7e2829123631c
+25cee4500f359cf5cad3b51ed62059aadfc0939b05150c1f19c7e2829123631c
 {% endblock %}
 
 {% block lib_deps %}

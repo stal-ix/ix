@@ -10,7 +10,7 @@ attr
 
 {% block fetch %}
 https://git.savannah.nongnu.org/cgit/attr.git/snapshot/attr-{{self.version().strip()}}.tar.gz
-sha:b266cf45e2256b4d85a86554b42c0218abce40356f5c3026f88e15dcf73df775
+b266cf45e2256b4d85a86554b42c0218abce40356f5c3026f88e15dcf73df775
 {% endblock %}
 
 {% block bld_tool %}

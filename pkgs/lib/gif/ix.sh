@@ -10,7 +10,7 @@ giflib
 
 {% block fetch %}
 https://downloads.sourceforge.net/project/giflib/giflib-{{self.version().strip()}}.tar.gz
-sha:be7ffbd057cadebe2aa144542fd90c6838c6a083b5e8a9048b8ee3b66b29d5fb
+be7ffbd057cadebe2aa144542fd90c6838c6a083b5e8a9048b8ee3b66b29d5fb
 {% endblock %}
 
 {% block lib_deps %}

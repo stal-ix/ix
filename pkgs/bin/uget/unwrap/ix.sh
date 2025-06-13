@@ -10,7 +10,7 @@ uget
 
 {% block fetch %}
 https://downloads.sourceforge.net/urlget/uget-{{self.version().strip()}}.tar.gz
-sha:11356e4242151b9014fa6209c1f0360b699b72ef8ab47dbeb81cc23be7db9049
+11356e4242151b9014fa6209c1f0360b699b72ef8ab47dbeb81cc23be7db9049
 {% endblock %}
 
 {% block bld_libs %}

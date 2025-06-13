@@ -10,5 +10,5 @@ libtool
 
 {% block fetch %}
 https://ftpmirror.gnu.org/libtool/libtool-{{self.version().strip()}}.tar.gz
-sha:da8ebb2ce4dcf46b90098daf962cffa68f4b4f62ea60f798d0ef12929ede6adf
+da8ebb2ce4dcf46b90098daf962cffa68f4b4f62ea60f798d0ef12929ede6adf
 {% endblock %}

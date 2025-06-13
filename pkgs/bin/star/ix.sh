@@ -10,7 +10,7 @@ star
 
 {% block fetch %}
 https://sourceforge.net/projects/s-tar/files/star-{{self.version().strip()}}.tar.bz2
-sha:1b18662ebae6c3509020953d4464e654c7ded4752774de987d8dc307dc43f776
+1b18662ebae6c3509020953d4464e654c7ded4752774de987d8dc307dc43f776
 {% endblock %}
 
 {% block bld_libs %}

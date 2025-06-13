@@ -10,7 +10,7 @@ libgit2
 
 {% block fetch %}
 https://github.com/libgit2/libgit2/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:14cab3014b2b7ad75970ff4548e83615f74d719afe00aa479b4a889c1e13fc00
+14cab3014b2b7ad75970ff4548e83615f74d719afe00aa479b4a889c1e13fc00
 {% endblock %}
 
 {% block lib_deps %}

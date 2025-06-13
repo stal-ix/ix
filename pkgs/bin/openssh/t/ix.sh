@@ -10,7 +10,7 @@ openssh
 
 {% block fetch %}
 https://github.com/openssh/openssh-portable/archive/refs/tags/V_{{self.version().strip()}}.tar.gz
-sha:a25b32645dc6b474064b9deb07afc9d8e37b127d026a1170b54feb929145140c
+a25b32645dc6b474064b9deb07afc9d8e37b127d026a1170b54feb929145140c
 {% endblock %}
 
 {% block bld_libs %}

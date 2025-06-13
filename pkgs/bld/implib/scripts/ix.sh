@@ -10,7 +10,7 @@ Implib.so
 
 {% block fetch %}
 https://github.com/yugr/Implib.so/archive/{{self.version().strip()}}.zip
-sha:ba1e05b89df39c414042cb042a6283f69d54222af9bf7d6fd6337d8554ededfc
+ba1e05b89df39c414042cb042a6283f69d54222af9bf7d6fd6337d8554ededfc
 {% endblock %}
 
 {% block step_unpack %}

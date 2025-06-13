@@ -10,7 +10,7 @@ opus
 
 {% block fetch %}
 http://downloads.xiph.org/releases/opus/opusfile-{{self.version().strip()}}.tar.gz
-sha:118d8601c12dd6a44f52423e68ca9083cc9f2bfe72da7a8c1acb22a80ae3550b
+118d8601c12dd6a44f52423e68ca9083cc9f2bfe72da7a8c1acb22a80ae3550b
 {% endblock %}
 
 {% block lib_deps %}

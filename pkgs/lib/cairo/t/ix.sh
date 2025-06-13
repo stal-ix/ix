@@ -10,7 +10,7 @@ cairo
 
 {% block fetch %}
 https://gitlab.freedesktop.org/cairo/cairo/-/archive/{{self.version().strip()}}/cairo-{{self.version().strip()}}.tar.bz2
-sha:6d9281e786fd289d382324d4588d59973a36911e1865b40e64f9ec39936ceba8
+6d9281e786fd289d382324d4588d59973a36911e1865b40e64f9ec39936ceba8
 {% endblock %}
 
 {% block lib_deps %}

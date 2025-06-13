@@ -10,7 +10,7 @@ efivar
 
 {% block fetch %}
 https://github.com/rhboot/efivar/archive/refs/tags/{{self.version().strip()}}.tar.gz
-sha:c9edd15f2eeeea63232f3e669a48e992c7be9aff57ee22672ac31f5eca1609a6
+c9edd15f2eeeea63232f3e669a48e992c7be9aff57ee22672ac31f5eca1609a6
 {% endblock %}
 
 {% block lib_deps %}

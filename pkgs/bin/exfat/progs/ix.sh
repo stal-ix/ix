@@ -10,7 +10,7 @@ exfatprogs
 
 {% block fetch %}
 https://github.com/exfatprogs/exfatprogs/archive/refs/tags/{{self.version().strip()}}.tar.gz
-sha:a9d2722a4190a6d4080df6a447498886cc566ae22bb721e3405bb82f423d51d1
+a9d2722a4190a6d4080df6a447498886cc566ae22bb721e3405bb82f423d51d1
 {% endblock %}
 
 {% block conf_ver %}

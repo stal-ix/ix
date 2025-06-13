@@ -10,7 +10,7 @@ wireless-tools
 
 {% block fetch %}
 https://hewlettpackard.github.io/wireless-tools/wireless_tools.{{self.version().strip()}}.tar.gz
-sha:6fb80935fe208538131ce2c4178221bab1078a1656306bce8909c19887e2e5a1
+6fb80935fe208538131ce2c4178221bab1078a1656306bce8909c19887e2e5a1
 {% endblock %}
 
 {% block bld_libs %}

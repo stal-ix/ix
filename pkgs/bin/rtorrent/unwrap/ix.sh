@@ -10,7 +10,7 @@ rtorrent
 
 {% block fetch %}
 https://github.com/rakshasa/rtorrent/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:17458249803042fdc21f9792ab670c49080466e3f0e045e1bca46c9f1def7701
+17458249803042fdc21f9792ab670c49080466e3f0e045e1bca46c9f1def7701
 {% endblock %}
 
 {% block lib_deps %}

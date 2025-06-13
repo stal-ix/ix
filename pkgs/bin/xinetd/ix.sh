@@ -10,7 +10,7 @@ xinetd
 
 {% block fetch %}
 https://github.com/openSUSE/xinetd/archive/refs/tags/{{self.version().strip()}}.tar.gz
-sha:cbb6d078a8e4d0297cbfc146d5acd0b598de7d30dd0f76301a52ca923b42129a
+cbb6d078a8e4d0297cbfc146d5acd0b598de7d30dd0f76301a52ca923b42129a
 {% endblock %}
 
 {% block lib_deps %}

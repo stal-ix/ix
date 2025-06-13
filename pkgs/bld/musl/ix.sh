@@ -10,7 +10,7 @@ musl
 
 {% block fetch %}
 http://musl.libc.org/releases/musl-{{self.version().strip()}}.tar.gz
-sha:7a35eae33d5372a7c0da1188de798726f68825513b7ae3ebe97aaaa52114f039
+7a35eae33d5372a7c0da1188de798726f68825513b7ae3ebe97aaaa52114f039
 {% endblock %}
 
 {% block bld_libs %}

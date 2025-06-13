@@ -10,7 +10,7 @@ tzdb
 
 {% block fetch %}
 https://data.iana.org/time-zones/releases/tzdb-{{self.version().strip()}}.tar.lz
-sha:ec2f98c739009fd81a654efe2ee75069f54bcee5e0d80f510ee7e1f469ed293a
+ec2f98c739009fd81a654efe2ee75069f54bcee5e0d80f510ee7e1f469ed293a
 {% endblock %}
 
 {% block bld_libs %}

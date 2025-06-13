@@ -10,7 +10,7 @@ tmux
 
 {% block fetch %}
 https://github.com/tmux/tmux/archive/refs/tags/{{self.version().strip()}}.tar.gz
-sha:49e68b41dec0bf408990160ee12fa29b06dee8f74c1f0b4b71c9d2a1477dd910
+49e68b41dec0bf408990160ee12fa29b06dee8f74c1f0b4b71c9d2a1477dd910
 {% endblock %}
 
 {% block bld_libs %}

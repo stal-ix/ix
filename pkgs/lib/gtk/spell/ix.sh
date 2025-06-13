@@ -10,7 +10,7 @@ gtkspell
 
 {% block fetch %}
 https://downloads.sourceforge.net/project/gtkspell/{{self.version().strip()}}/gtkspell3-{{self.version().strip()}}.tar.xz
-sha:b040f63836b347eb344f5542443dc254621805072f7141d49c067ecb5a375732
+b040f63836b347eb344f5542443dc254621805072f7141d49c067ecb5a375732
 {% endblock %}
 
 {% block lib_deps %}

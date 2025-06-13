@@ -10,7 +10,7 @@ wl-clipboard
 
 {% block fetch %}
 https://github.com/bugaevc/wl-clipboard/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:6eb8081207fb5581d1d82c4bcd9587205a31a3d47bea3ebeb7f41aa1143783eb
+6eb8081207fb5581d1d82c4bcd9587205a31a3d47bea3ebeb7f41aa1143783eb
 {% endblock %}
 
 {% block bld_libs %}

@@ -10,7 +10,7 @@ webkitgtk
 
 {% block fetch %}
 https://webkitgtk.org/releases/webkitgtk-{{self.version().strip()}}.tar.xz
-sha:d4dc5970f0fc6a529ff7fd67bcbfab2bbb5e91be789b2e9279640b3217a782c3
+d4dc5970f0fc6a529ff7fd67bcbfab2bbb5e91be789b2e9279640b3217a782c3
 {% endblock %}
 
 {% block lib_deps %}

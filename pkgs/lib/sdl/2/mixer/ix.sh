@@ -10,7 +10,7 @@ SDL_mixer
 
 {% block fetch %}
 https://github.com/libsdl-org/SDL_mixer/archive/refs/tags/release-{{self.version().strip()}}.tar.gz
-sha:63804b4b2ba503865c0853f102231aeff489b1dfc6dea4750a69e2a8ef54b2bb
+63804b4b2ba503865c0853f102231aeff489b1dfc6dea4750a69e2a8ef54b2bb
 {% endblock %}
 
 {% block lib_deps %}

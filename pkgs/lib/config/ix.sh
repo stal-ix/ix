@@ -10,7 +10,7 @@ libconfig
 
 {% block fetch %}
 https://github.com/hyperrealm/libconfig/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:e95798d2992a66ecd547ce3651d7e10642ff2211427c43a7238186ff4c372627
+e95798d2992a66ecd547ce3651d7e10642ff2211427c43a7238186ff4c372627
 {% endblock %}
 
 {% block lib_deps %}

@@ -10,7 +10,7 @@ qtmultimedia
 
 {% block fetch %}
 https://github.com/qt/qtmultimedia/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:2e95e71edb99e20176f52f81b93d872fc1b7c2b7a6b74e5893bb7efae45a7f25
+2e95e71edb99e20176f52f81b93d872fc1b7c2b7a6b74e5893bb7efae45a7f25
 {% endblock %}
 
 {% block lib_deps %}

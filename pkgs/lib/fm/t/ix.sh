@@ -12,7 +12,7 @@ libfm
 
 {% block fetch %}
 https://github.com/lxde/libfm/archive/refs/tags/{{self.version().strip()}}.tar.gz
-sha:7d7b616411992389a4b7f35796109d605f30bc2ceab84d4081d1665254ebbf82
+7d7b616411992389a4b7f35796109d605f30bc2ceab84d4081d1665254ebbf82
 {% endblock %}
 
 {% block lib_deps %}

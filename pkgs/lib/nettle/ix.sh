@@ -10,7 +10,7 @@ nettle
 
 {% block fetch %}
 https://ftp.gnu.org/gnu/nettle/nettle-{{self.version().strip()}}.tar.gz
-sha:b0fcdd7fc0cdea6e80dcf1dd85ba794af0d5b4a57e26397eee3bc193272d9132
+b0fcdd7fc0cdea6e80dcf1dd85ba794af0d5b4a57e26397eee3bc193272d9132
 {% endblock %}
 
 {% block lib_deps %}

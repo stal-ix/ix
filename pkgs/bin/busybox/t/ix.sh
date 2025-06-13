@@ -10,7 +10,7 @@ busybox
 
 {% block fetch %}
 https://busybox.net/downloads/busybox-{{self.version().strip()}}.tar.bz2
-sha:3311dff32e746499f4df0d5df04d7eb396382d7e108bb9250e7b519b837043a4
+3311dff32e746499f4df0d5df04d7eb396382d7e108bb9250e7b519b837043a4
 {% endblock %}
 
 {% block bld_libs %}

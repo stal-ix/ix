@@ -10,7 +10,7 @@ sysprof
 
 {% block fetch %}
 https://gitlab.gnome.org/GNOME/sysprof/-/archive/{{self.version().strip()}}/sysprof-{{self.version().strip()}}.tar.bz2
-sha:bc6d5774cf6734a94484e6160ed476a86c38030cede6444b874c2767c011dddd
+bc6d5774cf6734a94484e6160ed476a86c38030cede6444b874c2767c011dddd
 {% endblock %}
 
 {% block bld_libs %}

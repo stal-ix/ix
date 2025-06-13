@@ -10,7 +10,7 @@ libtomcrypt
 
 {% block fetch %}
 https://github.com/libtom/libtomcrypt/releases/download/v{{self.version().strip()}}/crypt-{{self.version().strip()}}.tar.xz
-sha:96ad4c3b8336050993c5bc2cf6c057484f2b0f9f763448151567fbab5e767b84
+96ad4c3b8336050993c5bc2cf6c057484f2b0f9f763448151567fbab5e767b84
 {% endblock %}
 
 {% block lib_deps %}

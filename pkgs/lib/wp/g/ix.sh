@@ -12,7 +12,7 @@ libwpg
 
 {% block fetch %}
 https://downloads.sourceforge.net/project/libwpg/libwpg/libwpg-{{self.version().strip()}}/libwpg-{{self.version().strip()}}.tar.xz
-sha:b55fda9440d1e070630eb2487d8b8697cf412c214a27caee9df69cec7c004de3
+b55fda9440d1e070630eb2487d8b8697cf412c214a27caee9df69cec7c004de3
 {% endblock %}
 
 {% block lib_deps %}

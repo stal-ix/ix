@@ -10,7 +10,7 @@ powertop
 
 {% block fetch %}
 https://github.com/fenrus75/powertop/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:e58ab3fd7b8ff5f4dd0d17f11848817e7d83c0a6918145ac81de03b5dccf8f49
+e58ab3fd7b8ff5f4dd0d17f11848817e7d83c0a6918145ac81de03b5dccf8f49
 {% endblock %}
 
 {% block bld_libs %}

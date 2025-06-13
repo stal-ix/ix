@@ -10,7 +10,7 @@ ispc
 
 {% block fetch %}
 https://github.com/ispc/ispc/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:5b004c121e7a39c8654bb61930a240e4bd3e432a80d851c6281fae49f9aca7b7
+5b004c121e7a39c8654bb61930a240e4bd3e432a80d851c6281fae49f9aca7b7
 {% endblock %}
 
 {% block bld_libs %}

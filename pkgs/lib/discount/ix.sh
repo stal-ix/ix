@@ -10,7 +10,7 @@ discount
 
 {% block fetch %}
 https://github.com/Orc/discount/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:0ed8cc27ac5d46dc6a8beedd5e5673ac8b466a6474bdb7d35f37c815f670385f
+0ed8cc27ac5d46dc6a8beedd5e5673ac8b466a6474bdb7d35f37c815f670385f
 {% endblock %}
 
 {% block lib_deps %}

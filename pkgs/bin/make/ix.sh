@@ -10,7 +10,7 @@ make
 
 {% block fetch %}
 https://ftp.gnu.org/gnu/make/make-{{self.version().strip()}}.tar.gz
-sha:dd16fb1d67bfab79a72f5e8390735c49e3e8e70b4945a15ab1f81ddb78658fb3
+dd16fb1d67bfab79a72f5e8390735c49e3e8e70b4945a15ab1f81ddb78658fb3
 {% endblock %}
 
 {% block bld_libs %}

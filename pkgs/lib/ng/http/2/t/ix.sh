@@ -10,7 +10,7 @@ nghttp2
 
 {% block fetch %}
 https://github.com/nghttp2/nghttp2/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:bcf08112bd583f8543776d086dcdede159b87e1261a36e6ae1d931c812a3ca70
+bcf08112bd583f8543776d086dcdede159b87e1261a36e6ae1d931c812a3ca70
 {% endblock %}
 
 {% block lib_deps %}

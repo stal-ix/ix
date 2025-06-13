@@ -6,7 +6,7 @@
 
 {% block fetch %}
 {{super()}}
-sha:93ebe1294ee3203d3bf548c78d51bde9494d3f24de64eaec380a2620f0431f20
+93ebe1294ee3203d3bf548c78d51bde9494d3f24de64eaec380a2620f0431f20
 {% endblock %}
 
 {% block conf_ver %}

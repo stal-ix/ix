@@ -10,7 +10,7 @@ Incubator
 
 {% block fetch %}
 https://gitlab.gnome.org/GNOME/Incubator/papers/-/archive/{{self.version().strip()}}/papers-{{self.version().strip()}}.tar.bz2
-sha:73b16f0f93479d0b94c3209c595e91dfd805fd3b4eab59551bfda4f2cfb22559
+73b16f0f93479d0b94c3209c595e91dfd805fd3b4eab59551bfda4f2cfb22559
 {% endblock %}
 
 {% block bld_libs %}

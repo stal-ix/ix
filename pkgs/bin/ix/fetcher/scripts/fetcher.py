@@ -26,30 +26,9 @@ def prepare_dir(d):
     os.makedirs(d)
 
 
-def hash(n):
-    if n == 'md5':
-        return hashlib.md5
-
-    if n == 'sha':
-        return hashlib.sha256
-
-    raise Exception(f'unsupported hash name {n}')
-
-
-def chksum(path, sch):
-    func = hash(sch)
-
+def calc_chksum(path):
     with open(path, 'rb') as f:
-        return func(f.read()).hexdigest()
-
-
-def calc_chksum(path, old_cs):
-    if ':' in old_cs:
-        sch = old_cs[:old_cs.index(':')]
-
-        return sch + ':' + chksum(path, sch)
-
-    return chksum(path, 'sha')
+        return hashlib.sha256(f.read()).hexdigest()
 
 
 def fmt_url(url, sha):
@@ -62,8 +41,6 @@ def iter_cached(sha, mirrors):
 
 
 def norm_sha(sha):
-    sha = sha.removeprefix('sha:')
-
     if len(sha) != 64:
         return None
 
@@ -115,7 +92,7 @@ def do_fetch(url, path, sha, mirrors):
 
             return check_md5(path, sha)
         except Exception as e:
-            if '404' in str(e):
+            if 'error: 404' in str(e):
                 print(f'404 {u}')
                 skip.add(u)
             elif 'checksum' in str(e):
@@ -131,7 +108,7 @@ def check_md5(path, old_cs):
     if '__skip__' in old_cs:
         return
 
-    new_cs = calc_chksum(path, old_cs)
+    new_cs = calc_chksum(path)
 
     if new_cs != old_cs:
         raise Exception(f'got {new_cs} checksum, not {old_cs}')
@@ -184,9 +161,7 @@ def fetch_url_curl(args, url, out, tout):
 def iter_ff_0():
     for meth in [fetch_url_curl]:
         for p in P.strip().split(';'):
-            p = p.strip()
-
-            if p:
+            if p := p.strip():
                 yield functools.partial(meth, ['--socks5', p])
 
         yield functools.partial(meth, [])
@@ -200,7 +175,7 @@ def iter_ff():
 def main():
     mirrors = list(M.strip().split('\n'))
     random.shuffle(mirrors)
-    do_fetch(sys.argv[1], sys.argv[2], sys.argv[3], mirrors * 2)
+    do_fetch(sys.argv[1], sys.argv[2], sys.argv[3], mirrors * 3)
 
 
 sys.stdout = sys.stderr

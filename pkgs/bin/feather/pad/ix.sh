@@ -10,7 +10,7 @@ FeatherPad
 
 {% block fetch %}
 https://github.com/tsujan/FeatherPad/archive/refs/tags/V{{self.version().strip()}}.tar.gz
-sha:9753796b2a525a4d6b13696681e9fbb094edcc20e8aadffcd5bb6fe22d0a5fdb
+9753796b2a525a4d6b13696681e9fbb094edcc20e8aadffcd5bb6fe22d0a5fdb
 {% endblock %}
 
 {% block bld_libs %}

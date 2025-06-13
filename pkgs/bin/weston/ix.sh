@@ -2,7 +2,7 @@
 
 {% block fetch %}
 https://gitlab.freedesktop.org/wayland/weston/-/archive/f2452d600617a4789e202c06d6d1055ace82258f/weston-f2452d600617a4789e202c06d6d1055ace82258f.tar.bz2
-sha:ad4863a7d87afcc3f63e9f646a934d99981cef2ae6106afe524d30ac84731c7f
+ad4863a7d87afcc3f63e9f646a934d99981cef2ae6106afe524d30ac84731c7f
 {% endblock %}
 
 {% block bld_libs %}

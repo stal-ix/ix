@@ -10,7 +10,7 @@ gperf
 
 {% block fetch %}
 http://ftp.gnu.org/pub/gnu/gperf/gperf-{{self.version().strip()}}.tar.gz
-sha:fd87e0aba7e43ae054837afd6cd4db03a3f2693deb3619085e6ed9d8d9604ad8
+fd87e0aba7e43ae054837afd6cd4db03a3f2693deb3619085e6ed9d8d9604ad8
 {% endblock %}
 
 {% block bld_libs %}

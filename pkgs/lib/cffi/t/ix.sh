@@ -10,7 +10,7 @@ python-cffi
 
 {% block fetch %}
 https://github.com/python-cffi/cffi/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:83414dab92270767261176d155908f18da846a4234dc195620f85a431d19e9d8
+83414dab92270767261176d155908f18da846a4234dc195620f85a431d19e9d8
 {% endblock %}
 
 {% block lib_deps %}

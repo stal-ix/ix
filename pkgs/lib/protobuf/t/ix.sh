@@ -10,7 +10,7 @@ protobuf
 
 {% block fetch %}
 https://github.com/protocolbuffers/protobuf/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:af034f71287cff2f1691649772c61b13696787a06ff616cadf9869611491fabe
+af034f71287cff2f1691649772c61b13696787a06ff616cadf9869611491fabe
 {% endblock %}
 
 {% block lib_deps %}

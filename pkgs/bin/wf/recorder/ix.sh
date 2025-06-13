@@ -10,7 +10,7 @@ wf-recorder
 
 {% block fetch %}
 https://github.com/ammen99/wf-recorder/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:486e9c03693026e7e287e9cddda5b78488b22706aed1ab789e19ffd09e4adfda
+486e9c03693026e7e287e9cddda5b78488b22706aed1ab789e19ffd09e4adfda
 {% endblock %}
 
 {% block bld_libs %}

@@ -10,7 +10,7 @@ gcc
 
 {% block fetch %}
 https://ftp.gnu.org/gnu/gcc/gcc-{{self.version().strip()}}/gcc-{{self.version().strip()}}.tar.xz
-sha:d308841a511bb830a6100397b0042db24ce11f642dab6ea6ee44842e5325ed50
+d308841a511bb830a6100397b0042db24ce11f642dab6ea6ee44842e5325ed50
 {% endblock %}
 
 {% block configure_flags %}

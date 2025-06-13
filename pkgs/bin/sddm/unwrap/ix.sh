@@ -10,7 +10,7 @@ sddm
 
 {% block fetch %}
 https://github.com/sddm/sddm/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:f895de2683627e969e4849dbfbbb2b500787481ca5ba0de6d6dfdae5f1549abf
+f895de2683627e969e4849dbfbbb2b500787481ca5ba0de6d6dfdae5f1549abf
 {% endblock %}
 
 {% block bld_libs %}

@@ -10,7 +10,7 @@ thermal_daemon
 
 {% block fetch %}
 https://github.com/intel/thermal_daemon/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:32fc75861e5e42b4b6ce0718af3e5b275f3febfccf6e7a3d3fbb5254791d7e74
+32fc75861e5e42b4b6ce0718af3e5b275f3febfccf6e7a3d3fbb5254791d7e74
 {% endblock %}
 
 {% block bld_libs %}

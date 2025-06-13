@@ -10,7 +10,7 @@ libde265
 
 {% block fetch %}
 https://github.com/strukturag/libde265/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:ed12c931759c1575848832f70db5071a001ac813db4e4f568ee08aef6e234d4e
+ed12c931759c1575848832f70db5071a001ac813db4e4f568ee08aef6e234d4e
 {% endblock %}
 
 {% block lib_deps %}

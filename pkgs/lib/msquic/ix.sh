@@ -10,7 +10,7 @@ msquic
 
 {% block fetch %}
 https://github.com/microsoft/msquic/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:dcea437d27cef03a9c69873ffdbd78013e1a280a9bcb40475eab2048ad7d926d
+dcea437d27cef03a9c69873ffdbd78013e1a280a9bcb40475eab2048ad7d926d
 {% endblock %}
 
 {% block lib_deps %}

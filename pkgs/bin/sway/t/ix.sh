@@ -5,12 +5,12 @@ sway
 {% endblock %}
 
 {% block version %}
-1.10.1
+1.11
 {% endblock %}
 
 {% block fetch %}
 https://github.com/swaywm/sway/archive/refs/tags/{{self.version().strip()}}.tar.gz
-sha:8565ab3b359780f02b1dcb24dc48e5b6b82c64dd97ca795782c2fb4cab62457b
+034ec4519326d6af5275814700dde46e852c5174614109affe4c86b2fbee062a
 {% endblock %}
 
 {% block bld_libs %}
@@ -21,7 +21,7 @@ lib/pango
 lib/pcre/2
 lib/json/c
 lib/wayland
-lib/wlroots/18
+lib/wlroots/19
 lib/gdk/pixbuf
 lib/vulkan/loader/dl
 {% endblock %}

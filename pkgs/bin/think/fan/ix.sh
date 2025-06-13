@@ -10,7 +10,7 @@ thinkfan
 
 {% block fetch %}
 https://github.com/vmatare/thinkfan/archive/refs/tags/{{self.version().strip()}}.tar.gz
-sha:9466c8c82b7c4333b280fa66445ab26185ffbb4aada6bcb4a164eed742f8d78c
+9466c8c82b7c4333b280fa66445ab26185ffbb4aada6bcb4a164eed742f8d78c
 {% endblock %}
 
 {% block bld_libs %}

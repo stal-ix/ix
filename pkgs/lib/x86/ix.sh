@@ -10,9 +10,9 @@ libx86
 
 {% block fetch %}
 http://deb.debian.org/debian/pool/main/libx/libx86/libx86_{{self.version().strip()}}+ds1.orig.tar.gz
-sha:3b48dc1880a1b4f8cef3934ae70e6609aa8d8fc3b1ea4cdcd4f19958d86bdbb3
+3b48dc1880a1b4f8cef3934ae70e6609aa8d8fc3b1ea4cdcd4f19958d86bdbb3
 http://deb.debian.org/debian/pool/main/libx/libx86/libx86_{{self.version().strip()}}+ds1-12.debian.tar.xz
-sha:9f94265ea18bc1fea15a15da95f0f0eac30beb47fcaed94472b1b97b52bff525
+9f94265ea18bc1fea15a15da95f0f0eac30beb47fcaed94472b1b97b52bff525
 {% endblock %}
 
 {% block lib_deps %}

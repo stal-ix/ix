@@ -10,7 +10,7 @@ SVT-VP9
 
 {% block fetch %}
 https://github.com/OpenVisualCloud/SVT-VP9/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:6ee01b81c43816170b18709c6045b6245cecc2953f01cecc9e98f82b49ea4f73
+6ee01b81c43816170b18709c6045b6245cecc2953f01cecc9e98f82b49ea4f73
 {% endblock %}
 
 {% block lib_deps %}

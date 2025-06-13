@@ -12,7 +12,7 @@ rr
 
 {% block fetch %}
 https://github.com/rr-debugger/rr/archive/refs/tags/{{self.version().strip()}}.tar.gz
-sha:f7affaaee7316effd3f0924c94bc452ef50d372b94470cafe8568efd88451447
+f7affaaee7316effd3f0924c94bc452ef50d372b94470cafe8568efd88451447
 {% endblock %}
 
 {% block bld_libs %}

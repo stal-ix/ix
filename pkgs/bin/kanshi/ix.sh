@@ -10,7 +10,7 @@ kanshi
 
 {% block fetch %}
 https://git.sr.ht/~emersion/kanshi/archive/v{{self.version().strip()}}.tar.gz
-sha:d35b2a0b41a36cc55066320ae7ae5b176450546a4ed67ee09e7241ecd36bfc73
+d35b2a0b41a36cc55066320ae7ae5b176450546a4ed67ee09e7241ecd36bfc73
 {% endblock %}
 
 {% block bld_libs %}

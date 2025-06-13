@@ -10,7 +10,7 @@ mlibc
 
 {% block fetch %}
 https://github.com/managarm/mlibc/archive/refs/tags/{{self.version().strip()}}.tar.gz
-sha:9d9acd6f87bf7ef3d7418e4a3fedeed616a8bb287e48d37e6e773e7cf3c17255
+9d9acd6f87bf7ef3d7418e4a3fedeed616a8bb287e48d37e6e773e7cf3c17255
 {% endblock %}
 
 {% block lib_deps %}

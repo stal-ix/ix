@@ -10,7 +10,7 @@ cagebreak
 
 {% block fetch %}
 https://github.com/project-repo/cagebreak/archive/refs/tags/{{self.version().strip()}}.tar.gz
-sha:884cd70445bed1c45116e01e9ddab28b756416b3fb5cc7b6a3057895b64fba03
+884cd70445bed1c45116e01e9ddab28b756416b3fb5cc7b6a3057895b64fba03
 {% endblock %}
 
 {% block bld_libs %}

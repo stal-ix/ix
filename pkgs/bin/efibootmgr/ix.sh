@@ -10,7 +10,7 @@ efibootmgr
 
 {% block fetch %}
 https://github.com/rhboot/efibootmgr/archive/refs/tags/{{self.version().strip()}}.tar.gz
-sha:442867d12f8525034a404fc8af3036dba8e1fc970998af2486c3b940dfad0874
+442867d12f8525034a404fc8af3036dba8e1fc970998af2486c3b940dfad0874
 {% endblock %}
 
 {% block bld_libs %}

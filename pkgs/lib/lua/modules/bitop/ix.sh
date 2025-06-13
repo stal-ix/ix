@@ -12,7 +12,7 @@ LuaBitOp
 
 {% block fetch %}
 http://bitop.luajit.org/download/LuaBitOp-{{self.version().strip()}}.tar.gz
-sha:d514a3d2cefa76c8d11c1b9ec740d5fae316a9c9764e1e12ddea21e4982fab4b
+d514a3d2cefa76c8d11c1b9ec740d5fae316a9c9764e1e12ddea21e4982fab4b
 {% endblock %}
 
 {% block cpp_defines %}

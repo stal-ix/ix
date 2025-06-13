@@ -10,7 +10,7 @@ traceroute-for-linux
 
 {% block fetch %}
 https://downloads.sourceforge.net/project/traceroute/traceroute/traceroute-{{self.version().strip()}}/traceroute-{{self.version().strip()}}.tar.gz
-sha:9ccef9cdb9d7a98ff7fbf93f79ebd0e48881664b525c4b232a0fcec7dcb9db5e
+9ccef9cdb9d7a98ff7fbf93f79ebd0e48881664b525c4b232a0fcec7dcb9db5e
 {% endblock %}
 
 {% block bld_libs %}

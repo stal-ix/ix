@@ -10,7 +10,7 @@ uvwasi
 
 {% block fetch %}
 https://github.com/nodejs/uvwasi/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:5cf32f166c493f41c0de7f3fd578d0be1b692c81c54f0c68889e62240fe9ab60
+5cf32f166c493f41c0de7f3fd578d0be1b692c81c54f0c68889e62240fe9ab60
 {% endblock %}
 
 {% block lib_deps %}

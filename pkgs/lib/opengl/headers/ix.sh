@@ -10,7 +10,7 @@ libglvnd
 
 {% block fetch %}
 https://github.com/NVIDIA/libglvnd/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:073e7292788d4d3eeb45ea6c7bdcce9bfdb3b3eef8d7dbd47f2f30dce046ef98
+073e7292788d4d3eeb45ea6c7bdcce9bfdb3b3eef8d7dbd47f2f30dce046ef98
 {% endblock %}
 
 {% block install %}

@@ -10,7 +10,7 @@ xdg-desktop-portal
 
 {% block fetch %}
 https://github.com/flatpak/xdg-desktop-portal/archive/{{self.version().strip()}}.tar.gz
-sha:6ef03771e58625b0fa041d33afdfb5f3b6b88c0243e8f43507a829e4640401bb
+6ef03771e58625b0fa041d33afdfb5f3b6b88c0243e8f43507a829e4640401bb
 {% endblock %}
 
 {% block lib_deps %}

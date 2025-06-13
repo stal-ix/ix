@@ -10,7 +10,7 @@ SCons
 
 {% block fetch %}
 https://downloads.sourceforge.net/project/scons/scons/{{self.version().strip()}}/SCons-{{self.version().strip()}}.tar.gz
-sha:e2d78aa56e4646e5dbaf50c0758c6d1e4b0418464d8d6d07a09beb6cf257538f
+e2d78aa56e4646e5dbaf50c0758c6d1e4b0418464d8d6d07a09beb6cf257538f
 {% endblock %}
 
 {% block install %}

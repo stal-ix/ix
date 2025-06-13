@@ -10,7 +10,7 @@ ba364cd54fd431c76c045393b6522b4bff547f50
 
 {% block fetch %}
 https://github.com/gpakosz/whereami/archive/{{self.version().strip()}}.tar.gz
-sha:1d8744177f37e8386ec2f6c5992592399040cb93535ed4fd253e1976f889a744
+1d8744177f37e8386ec2f6c5992592399040cb93535ed4fd253e1976f889a744
 {% endblock %}
 
 {% block lib_deps %}

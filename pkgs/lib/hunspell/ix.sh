@@ -10,7 +10,7 @@ hunspell
 
 {% block fetch %}
 https://github.com/hunspell/hunspell/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:69fa312d3586c988789266eaf7ffc9861d9f6396c31fc930a014d551b59bbd6e
+69fa312d3586c988789266eaf7ffc9861d9f6396c31fc930a014d551b59bbd6e
 {% endblock %}
 
 {% block lib_deps %}

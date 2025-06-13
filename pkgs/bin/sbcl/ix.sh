@@ -10,7 +10,7 @@ sbcl
 
 {% block fetch %}
 https://downloads.sourceforge.net/project/sbcl/sbcl/{{self.version().strip()}}/sbcl-{{self.version().strip()}}-source.tar.bz2
-sha:6502670afb361ba9be44a2fafe9af9b59e7b24ae509a791a66b5481f2955950b
+6502670afb361ba9be44a2fafe9af9b59e7b24ae509a791a66b5481f2955950b
 {% endblock %}
 
 {% block bld_tool %}

@@ -10,7 +10,7 @@ most
 
 {% block fetch %}
 https://www.jedsoft.org/releases/most/most-{{self.version().strip()}}.tar.gz
-sha:9455aeb8f826fa8385c850dc22bf0f22cf9069b3c3423fba4bf2c6f6226d9903
+9455aeb8f826fa8385c850dc22bf0f22cf9069b3c3423fba4bf2c6f6226d9903
 {% endblock %}
 
 {% block bld_libs %}

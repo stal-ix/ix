@@ -10,7 +10,7 @@ vifm
 
 {% block fetch %}
 https://github.com/vifm/vifm/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:9e21e69f0bfa00a470c01f4b83e011af6a4e69626237a8d12afc0d79a7819be8
+9e21e69f0bfa00a470c01f4b83e011af6a4e69626237a8d12afc0d79a7819be8
 {% endblock %}
 
 {% block bld_libs %}

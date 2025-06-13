@@ -2,7 +2,7 @@
 
 {% block fetch %}
 https://github.com/google/tcmalloc/archive/432d115adab8935b0a937d659c345aa8f82add57.tar.gz
-sha:a5480b4012f0e36ab03f47479c8ba2f27ea70607156825266e3da84f6a28caf9
+a5480b4012f0e36ab03f47479c8ba2f27ea70607156825266e3da84f6a28caf9
 {% endblock %}
 
 {% block lib_deps %}

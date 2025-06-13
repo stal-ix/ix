@@ -10,7 +10,7 @@ dbus-glib
 
 {% block fetch %}
 https://dbus.freedesktop.org/releases/dbus-glib/dbus-glib-{{self.version().strip()}}.tar.gz
-sha:c09c5c085b2a0e391b8ee7d783a1d63fe444e96717cc1814d61b5e8fc2827a7c
+c09c5c085b2a0e391b8ee7d783a1d63fe444e96717cc1814d61b5e8fc2827a7c
 {% endblock %}
 
 {% block lib_deps %}

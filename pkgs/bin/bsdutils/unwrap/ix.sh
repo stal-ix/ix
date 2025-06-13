@@ -10,7 +10,7 @@ bsdutils
 
 {% block fetch %}
 https://github.com/dcantrell/bsdutils/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:0c601613cbdfc224d280ef1980d6ec89911aba9679fff7b2249e9eb4439ca499
+0c601613cbdfc224d280ef1980d6ec89911aba9679fff7b2249e9eb4439ca499
 {% endblock %}
 
 {% block bld_libs %}

@@ -10,7 +10,7 @@ libepoxy
 
 {% block fetch %}
 https://github.com/anholt/libepoxy/archive/refs/tags/{{self.version().strip()}}.tar.gz
-sha:a7ced37f4102b745ac86d6a70a9da399cc139ff168ba6b8002b4d8d43c900c15
+a7ced37f4102b745ac86d6a70a9da399cc139ff168ba6b8002b4d8d43c900c15
 {% endblock %}
 
 {% block lib_deps %}

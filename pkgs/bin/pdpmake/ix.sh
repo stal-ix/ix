@@ -10,7 +10,7 @@ pdpmake
 
 {% block fetch %}
 https://github.com/rmyorston/pdpmake/archive/refs/tags/{{self.version().strip()}}.tar.gz
-sha:92fe09b614ebe94de25154b383cc136b07f75e26d5e2febf27a343c4b8fa18ad
+92fe09b614ebe94de25154b383cc136b07f75e26d5e2febf27a343c4b8fa18ad
 {% endblock %}
 
 {% block bld_libs %}

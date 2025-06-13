@@ -10,7 +10,7 @@ capstone
 
 {% block fetch %}
 https://github.com/capstone-engine/capstone/archive/refs/tags/{{self.version().strip()}}.tar.gz
-sha:240ebc834c51aae41ca9215d3190cc372fd132b9c5c8aa2d5f19ca0c325e28f9
+240ebc834c51aae41ca9215d3190cc372fd132b9c5c8aa2d5f19ca0c325e28f9
 {% endblock %}
 
 {% block lib_deps %}

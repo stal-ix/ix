@@ -10,7 +10,7 @@ lxqt-build-tools
 
 {% block fetch %}
 https://github.com/lxqt/lxqt-build-tools/archive/refs/tags/{{self.version().strip()}}.tar.gz
-sha:ecee3248c9435580e9eec844d8b2a989bbf1472cc292a04bc4f8708127fea1c5
+ecee3248c9435580e9eec844d8b2a989bbf1472cc292a04bc4f8708127fea1c5
 {% endblock %}
 
 {% block bld_libs %}

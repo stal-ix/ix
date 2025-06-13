@@ -10,7 +10,7 @@ adwaita-qt
 
 {% block fetch %}
 https://github.com/FedoraQt/adwaita-qt/archive/refs/tags/{{self.version().strip()}}.tar.gz
-sha:834f2caaf031306b63b31ad6fec489482feda35e9aa260f205cbb976cde97b1d
+834f2caaf031306b63b31ad6fec489482feda35e9aa260f205cbb976cde97b1d
 {% endblock %}
 
 {% block lib_deps %}

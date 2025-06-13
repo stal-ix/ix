@@ -10,7 +10,7 @@ bash
 
 {% block fetch %}
 https://ftp.gnu.org/gnu/bash/bash-{{self.version().strip()}}.tar.gz
-sha:3fa9daf85ebf35068f090ce51283ddeeb3c75eb5bc70b1a4a7cb05868bfe06a4
+3fa9daf85ebf35068f090ce51283ddeeb3c75eb5bc70b1a4a7cb05868bfe06a4
 {% endblock %}
 
 {% block bld_libs %}

@@ -10,7 +10,7 @@ stp
 
 {% block fetch %}
 https://github.com/stp/stp/archive/refs/tags/{{self.version().strip()}}.tar.gz
-sha:dc197e337c058dc048451b712169a610f7040b31d0078b6602b831fbdcbec990
+dc197e337c058dc048451b712169a610f7040b31d0078b6602b831fbdcbec990
 {% endblock %}
 
 {% block bld_libs %}

@@ -10,7 +10,7 @@ waycheck
 
 {% block fetch %}
 https://gitlab.freedesktop.org/serebit/waycheck/-/archive/v{{self.version().strip()}}/waycheck-v{{self.version().strip()}}.tar.bz2
-sha:822c0026f287d08744615598f145d8de95a5bca556e94ec63ca9740b5ceafede
+822c0026f287d08744615598f145d8de95a5bca556e94ec63ca9740b5ceafede
 {% endblock %}
 
 {% block bld_libs %}

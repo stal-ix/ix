@@ -2,7 +2,7 @@
 
 {% block fetch %}
 https://downloads.sourceforge.net/project/mscorefonts2/cabs/PowerPointViewer.exe
-sha:c4e753548d3092ffd7dd3849105e0a26d9b5a1afe46e6e667fe7c6887893701f
+c4e753548d3092ffd7dd3849105e0a26d9b5a1afe46e6e667fe7c6887893701f
 {% endblock %}
 
 {% block bld_tool %}

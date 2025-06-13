@@ -10,7 +10,7 @@ exiv2
 
 {% block fetch %}
 https://github.com/Exiv2/exiv2/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:e1671f744e379a87ba0c984617406fdf8c0ad0c594e5122f525b2fb7c28d394d
+e1671f744e379a87ba0c984617406fdf8c0ad0c594e5122f525b2fb7c28d394d
 {% endblock %}
 
 {% block lib_deps %}

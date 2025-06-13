@@ -10,7 +10,7 @@ lua
 
 {% block fetch %}
 https://www.lua.org/ftp/lua-{{self.version().strip()}}.tar.gz
-md5:2e115fe26e435e33b0d5c022e4490567
+2640fc56a795f29d28ef15e13c34a47e223960b0240e8cb0a82d9b0738695333
 {% endblock %}
 
 {% block make_target %}

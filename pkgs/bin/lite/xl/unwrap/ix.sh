@@ -5,18 +5,18 @@ lite-xl
 {% endblock %}
 
 {% block version %}
-2.1.7
+2.1.8
 {% endblock %}
 
 {% block fetch %}
 https://github.com/lite-xl/lite-xl/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:69d1ce4c1d148d382ccb06f45feca2565c5c8fe9d0b1b9bc1cbe014f6826ce6b
+fcaffb946bc60583369cb040d533a4ac18075a6d474d49a2a5ff4bf87e2e9a10
 {% endblock %}
 
 {% block bld_libs %}
 lib/c
 lib/lua
-lib/sdl/2
+lib/sdl/3
 lib/pcre/2
 lib/sdl/deps
 lib/freetype

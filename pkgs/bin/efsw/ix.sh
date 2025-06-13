@@ -10,7 +10,7 @@ efsw
 
 {% block fetch %}
 https://github.com/SpartanJ/efsw/archive/refs/tags/{{self.version().strip()}}.tar.gz
-sha:f0ddee587928737c6a3dc92eb88266a804c77279cbdf29d47e5e6f6ad6c7fd9a
+f0ddee587928737c6a3dc92eb88266a804c77279cbdf29d47e5e6f6ad6c7fd9a
 {% endblock %}
 
 {% block bld_libs %}

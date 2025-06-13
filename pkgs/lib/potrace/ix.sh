@@ -10,7 +10,7 @@ potrace
 
 {% block fetch %}
 https://potrace.sourceforge.net/download/{{self.version().strip()}}/potrace-{{self.version().strip()}}.tar.gz
-sha:be8248a17dedd6ccbaab2fcc45835bb0502d062e40fbded3bc56028ce5eb7acc
+be8248a17dedd6ccbaab2fcc45835bb0502d062e40fbded3bc56028ce5eb7acc
 {% endblock %}
 
 {% block lib_deps %}

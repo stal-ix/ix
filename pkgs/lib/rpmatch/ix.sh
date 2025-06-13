@@ -10,7 +10,7 @@ musl-rpmatch
 
 {% block fetch %}
 https://github.com/pullmoll/musl-rpmatch/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-md5:8f5a5022fa66d94b7b0934618dfa6350
+dcbd41909bd69eaeedd20f03435b165406b514465249186ff1ca68d04fd35953
 {% endblock %}
 
 {% block autoreconf %}

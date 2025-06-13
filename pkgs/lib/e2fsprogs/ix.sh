@@ -10,7 +10,7 @@ e2fsprogs
 
 {% block fetch %}
 https://github.com/tytso/e2fsprogs/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:be7edd7031734d1fef8a319f0901828f8ab89e8f3b5073e6b18740be3771a95c
+be7edd7031734d1fef8a319f0901828f8ab89e8f3b5073e6b18740be3771a95c
 {% endblock %}
 
 {% block conf_ver %}2/71{% endblock %}

@@ -5,12 +5,12 @@ waf
 {% endblock %}
 
 {% block version %}
-2.1.5
+2.1.6
 {% endblock %}
 
 {% block fetch %}
 https://waf.io/waf-{{self.version().strip()}}.tar.bz2
-sha:ca23407fe8169c9ca8c439fcc8ac143230da056678df279220ebf0c10091678a
+f9f1a8495ab7470844a05dd2e838017bcff969d92a9aeede7811d6ad74e04707
 {% endblock %}
 
 {% block bld_tool %}

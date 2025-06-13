@@ -10,7 +10,7 @@ libtirpc
 
 {% block fetch %}
 https://downloads.sourceforge.net/libtirpc/libtirpc-{{self.version().strip()}}.tar.bz2
-sha:bbd26a8f0df5690a62a47f6aa30f797f3ef8d02560d1bc449a83066b5a1d3508
+bbd26a8f0df5690a62a47f6aa30f797f3ef8d02560d1bc449a83066b5a1d3508
 {% endblock %}
 
 {% block lib_deps %}

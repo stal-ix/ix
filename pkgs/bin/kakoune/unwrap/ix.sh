@@ -10,7 +10,7 @@ kakoune
 
 {% block fetch %}
 https://github.com/mawww/kakoune/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:e065dbb715bfe6b0abdaeee775243115748bd540a346d0212fdca6c20c13d340
+e065dbb715bfe6b0abdaeee775243115748bd540a346d0212fdca6c20c13d340
 {% endblock %}
 
 {% block bld_libs %}

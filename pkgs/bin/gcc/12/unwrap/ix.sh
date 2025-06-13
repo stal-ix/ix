@@ -10,7 +10,7 @@ gcc
 
 {% block fetch %}
 http://mirror.koddos.net/gcc/releases/gcc-{{self.version().strip()}}/gcc-{{self.version().strip()}}.tar.xz
-sha:704f652604ccbccb14bdabf3478c9511c89788b12cb3bbffded37341916a9175
+704f652604ccbccb14bdabf3478c9511c89788b12cb3bbffded37341916a9175
 {% endblock %}
 
 {% block patch %}

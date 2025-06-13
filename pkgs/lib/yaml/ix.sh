@@ -10,7 +10,7 @@ libyaml
 
 {% block fetch %}
 https://github.com/yaml/libyaml/archive/refs/tags/{{self.version().strip()}}.tar.gz
-sha:fa240dbf262be053f3898006d502d514936c818e422afdcf33921c63bed9bf2e
+fa240dbf262be053f3898006d502d514936c818e422afdcf33921c63bed9bf2e
 {% endblock %}
 
 {% block lib_deps %}

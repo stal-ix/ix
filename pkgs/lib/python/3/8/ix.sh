@@ -10,7 +10,7 @@ python
 
 {% block fetch %}
 https://www.python.org/ftp/python/{{self.version().strip()}}/Python-{{self.version().strip()}}.tgz
-sha:def428fa6cf61b66bcde72e3d9f7d07d33b2e4226f04f9d6fce8384c055113ae
+def428fa6cf61b66bcde72e3d9f7d07d33b2e4226f04f9d6fce8384c055113ae
 {% endblock %}
 
 {% block patch %}

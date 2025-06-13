@@ -10,7 +10,7 @@ slang
 
 {% block fetch %}
 https://www.jedsoft.org/releases/slang/slang-{{self.version().strip()}}.tar.bz2
-sha:f9145054ae131973c61208ea82486d5dd10e3c5cdad23b7c4a0617743c8f5a18
+f9145054ae131973c61208ea82486d5dd10e3c5cdad23b7c4a0617743c8f5a18
 {% endblock %}
 
 {% block lib_deps %}

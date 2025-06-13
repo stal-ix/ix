@@ -10,7 +10,7 @@ texinfo
 
 {% block fetch %}
 https://ftp.gnu.org/gnu/texinfo/texinfo-{{self.version().strip()}}.tar.xz
-sha:0329d7788fbef113fa82cb80889ca197a344ce0df7646fe000974c5d714363a6
+0329d7788fbef113fa82cb80889ca197a344ce0df7646fe000974c5d714363a6
 {% endblock %}
 
 {% block bld_libs %}

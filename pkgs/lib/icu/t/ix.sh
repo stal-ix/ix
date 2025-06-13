@@ -10,13 +10,13 @@ icu
 
 {% block fetch %}
 https://github.com/unicode-org/icu/archive/refs/tags/release-{{self.version().strip().replace('.', '-')}}.tar.gz
-sha:ded3a96f6b7236d160df30af46593165b9c78a4ec72a414aa63cf50614e4c14e
+ded3a96f6b7236d160df30af46593165b9c78a4ec72a414aa63cf50614e4c14e
 {% endblock %}
 
 {#
 broken webkit build
 https://github.com/unicode-org/icu/archive/refs/tags/release-76-1.tar.gz
-sha:a2c443404f00098e9e90acf29dc318e049d2dc78d9ae5f46efb261934a730ce2
+a2c443404f00098e9e90acf29dc318e049d2dc78d9ae5f46efb261934a730ce2
 #}
 
 {% block unpack %}

@@ -10,7 +10,7 @@ libdazzle
 
 {% block fetch %}
 https://gitlab.gnome.org/GNOME/libdazzle/-/archive/{{self.version().strip()}}/libdazzle-{{self.version().strip()}}.tar.bz2
-sha:845b068013fce8975b83571172b3718c3e61fd1c53b01e74abc66c52a62ed53a
+845b068013fce8975b83571172b3718c3e61fd1c53b01e74abc66c52a62ed53a
 {% endblock %}
 
 {% block lib_deps %}

@@ -10,7 +10,7 @@ htop
 
 {% block fetch %}
 https://github.com/htop-dev/htop/archive/refs/tags/{{self.version().strip()}}.tar.gz
-sha:af9ec878f831b7c27d33e775c668ec79d569aa781861c995a0fbadc1bdb666cf
+af9ec878f831b7c27d33e775c668ec79d569aa781861c995a0fbadc1bdb666cf
 {% endblock %}
 
 {% block bld_libs %}

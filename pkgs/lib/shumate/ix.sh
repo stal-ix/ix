@@ -10,7 +10,7 @@ libshumate
 
 {% block fetch %}
 https://github.com/GNOME/libshumate/archive/refs/tags/{{self.version().strip()}}.tar.gz
-sha:8a348e753f9a6cef90e56c948a8604134bb23aa6935386f1728fb749c8a938d3
+8a348e753f9a6cef90e56c948a8604134bb23aa6935386f1728fb749c8a938d3
 {% endblock %}
 
 {% block lib_deps %}

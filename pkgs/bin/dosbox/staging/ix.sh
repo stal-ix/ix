@@ -10,7 +10,7 @@ dosbox-staging
 
 {% block fetch %}
 https://github.com/dosbox-staging/dosbox-staging/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:d84c87e4b6ec3bdaac126c6354a5d2a94429987c55afbe76d0cb4536bae98428
+d84c87e4b6ec3bdaac126c6354a5d2a94429987c55afbe76d0cb4536bae98428
 {% endblock %}
 
 {% block bld_libs %}

@@ -10,7 +10,7 @@ libpfm
 
 {% block fetch %}
 https://downloads.sourceforge.net/project/perfmon2/libpfm4/libpfm-{{self.version().strip()}}.tar.gz
-sha:d18b97764c755528c1051d376e33545d0eb60c6ebf85680436813fa5b04cc3d1
+d18b97764c755528c1051d376e33545d0eb60c6ebf85680436813fa5b04cc3d1
 {% endblock %}
 
 {% block unpack %}

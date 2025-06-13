@@ -12,7 +12,7 @@ xfsprogs
 
 {% block fetch %}
 https://www.kernel.org/pub/linux/utils/fs/xfs/xfsprogs/xfsprogs-{{self.version().strip()}}.tar.xz
-sha:fa5ab77f8b5169ce48dd8de09446ad7e29834a05b8f52012bae411cf53ec1f58
+fa5ab77f8b5169ce48dd8de09446ad7e29834a05b8f52012bae411cf53ec1f58
 {% endblock %}
 
 {% block bld_libs %}

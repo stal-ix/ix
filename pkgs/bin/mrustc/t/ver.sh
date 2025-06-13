@@ -1,2 +1,2 @@
 https://github.com/thepowersgang/mrustc/archive/c70b86e138018b0e144dd179a5bd6c6e0972b350.zip
-sha:f51d7f31dded1175dab105c7ced17781f98259ae1ed024459c7162cd3aa7ea9d
+f51d7f31dded1175dab105c7ced17781f98259ae1ed024459c7162cd3aa7ea9d

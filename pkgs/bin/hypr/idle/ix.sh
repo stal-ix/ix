@@ -10,7 +10,7 @@ hypridle
 
 {% block fetch %}
 https://github.com/hyprwm/hypridle/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:ea4faf92e7ef303a538551e2b0ea67a557b2d711574993a5a3fea3b27667dc63
+ea4faf92e7ef303a538551e2b0ea67a557b2d711574993a5a3fea3b27667dc63
 {% endblock %}
 
 {% block bld_libs %}

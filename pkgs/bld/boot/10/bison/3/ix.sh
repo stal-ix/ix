@@ -10,7 +10,7 @@ bison
 
 {% block fetch %}
 https://ftp.gnu.org/gnu/bison/bison-{{self.version().strip()}}.tar.xz
-sha:3e7e097bd9709a2d5e40e69446b74b149733b3de864fadb7a9b54eca7b2a4dd0
+3e7e097bd9709a2d5e40e69446b74b149733b3de864fadb7a9b54eca7b2a4dd0
 {% endblock %}
 
 {% block bison %}

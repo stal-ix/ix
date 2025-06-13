@@ -10,7 +10,7 @@ bc
 
 {% block fetch %}
 https://ftp.gnu.org/gnu/bc/bc-{{self.version().strip()}}.tar.gz
-sha:ae470fec429775653e042015edc928d07c8c3b2fc59765172a330d3d87785f86
+ae470fec429775653e042015edc928d07c8c3b2fc59765172a330d3d87785f86
 {% endblock %}
 
 {% block bld_libs %}

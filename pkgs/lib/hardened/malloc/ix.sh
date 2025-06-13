@@ -2,7 +2,7 @@
 
 {% block fetch %}
 https://github.com/GrapheneOS/hardened_malloc/archive/refs/tags/11.tar.gz
-sha:14331990899b91f9323230c280d66f0d1a77c386eb5d206d4cd0d8b5683098da
+14331990899b91f9323230c280d66f0d1a77c386eb5d206d4cd0d8b5683098da
 {% endblock %}
 
 {% block lib_deps %}

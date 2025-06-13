@@ -10,7 +10,7 @@ yash
 
 {% block fetch %}
 https://github.com/magicant/yash/releases/download/{{self.version().strip()}}/yash-{{self.version().strip()}}.tar.xz
-sha:299a50ea70f23dcbb94cf278f3e99e788b20b613185a0426ed5fdd189b1711ee
+299a50ea70f23dcbb94cf278f3e99e788b20b613185a0426ed5fdd189b1711ee
 {% endblock %}
 
 {% block c_rename_symbol %}

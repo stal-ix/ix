@@ -10,7 +10,7 @@ podofo
 
 {% block fetch %}
 https://github.com/podofo/podofo/archive/refs/tags/{{self.version().strip()}}.tar.gz
-sha:8800e16b8bd77cdb8881efca9d516976ec839cf736d27940977cc7f72d6d09d3
+8800e16b8bd77cdb8881efca9d516976ec839cf736d27940977cc7f72d6d09d3
 {% endblock %}
 
 {% block lib_deps %}

@@ -10,7 +10,7 @@ kitty
 
 {% block fetch %}
 https://github.com/kovidgoyal/kitty/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:d1fa72c9d16eedec43ba99de9f1ad511c8246cbe4e70dd1f9d865ef72984829d
+d1fa72c9d16eedec43ba99de9f1ad511c8246cbe4e70dd1f9d865ef72984829d
 {% endblock %}
 
 {% block lib_deps %}

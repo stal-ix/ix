@@ -12,7 +12,7 @@ ffmpeg
 
 {% block fetch %}
 https://ffmpeg.org/releases/ffmpeg-{{self.version().strip()}}.tar.xz
-sha:733984395e0dbbe5c046abda2dc49a5544e7e0e1e2366bba849222ae9e3a03b1
+733984395e0dbbe5c046abda2dc49a5544e7e0e1e2366bba849222ae9e3a03b1
 {% endblock %}
 
 {% block lib_deps %}

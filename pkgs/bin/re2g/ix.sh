@@ -10,7 +10,7 @@ re2g
 
 {% block fetch %}
 https://github.com/akamai/re2g/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:e4876e4128773e9466ed4d95af116a89f840baeb8c69985b0632781500630542
+e4876e4128773e9466ed4d95af116a89f840baeb8c69985b0632781500630542
 {% endblock %}
 
 {% block bld_libs %}

@@ -10,7 +10,7 @@ got-portable
 
 {% block fetch %}
 https://gameoftrees.org/releases/portable/got-portable-{{self.version().strip()}}.tar.gz
-sha:c2572726bedfdc177d48482b2a23e5afba534a36918f8eeac24b48da37a920d1
+c2572726bedfdc177d48482b2a23e5afba534a36918f8eeac24b48da37a920d1
 {% endblock %}
 
 {% block bld_libs %}

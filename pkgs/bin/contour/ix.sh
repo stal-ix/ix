@@ -10,7 +10,7 @@ contour
 
 {% block fetch %}
 https://github.com/contour-terminal/contour/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:15090a08cf05124bf05074130cc6460d1d34c6d80f1058c63202effa032b8f6f
+15090a08cf05124bf05074130cc6460d1d34c6d80f1058c63202effa032b8f6f
 {% endblock %}
 
 {% block bld_libs %}

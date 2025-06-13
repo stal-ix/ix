@@ -10,7 +10,7 @@ libspng
 
 {% block fetch %}
 https://github.com/randy408/libspng/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:47ec02be6c0a6323044600a9221b049f63e1953faf816903e7383d4dc4234487
+47ec02be6c0a6323044600a9221b049f63e1953faf816903e7383d4dc4234487
 {% endblock %}
 
 {% block lib_deps %}

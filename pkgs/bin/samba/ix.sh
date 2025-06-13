@@ -10,7 +10,7 @@ samba
 
 {% block fetch %}
 https://download.samba.org/pub/samba/stable/samba-{{self.version().strip()}}.tar.gz
-sha:3a92e97eaeb345b6b32232f503e14d34f03a7aa64c451fe8c258a11bbda908e5
+3a92e97eaeb345b6b32232f503e14d34f03a7aa64c451fe8c258a11bbda908e5
 {% endblock %}
 
 {% block bld_libs %}

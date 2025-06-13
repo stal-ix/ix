@@ -10,7 +10,7 @@ mkvtoolnix
 
 {% block fetch %}
 https://codeberg.org/mbunkus/mkvtoolnix/archive/release-{{self.version().strip()}}.tar.gz
-sha:dda998e790c0e657dab2f247eb8014518eaa52790f33591ebe9695e31718e7e4
+dda998e790c0e657dab2f247eb8014518eaa52790f33591ebe9695e31718e7e4
 {% endblock %}
 
 {% block bld_libs %}

@@ -10,7 +10,7 @@ efitools
 
 {% block fetch %}
 https://git.kernel.org/pub/scm/linux/kernel/git/jejb/efitools.git/snapshot/efitools-{{self.version().strip()}}.tar.gz
-sha:0f315b36e7d1ba74bfc97ab9f304f0a3072c47578bbe5e42594acae381f9acfe
+0f315b36e7d1ba74bfc97ab9f304f0a3072c47578bbe5e42594acae381f9acfe
 {% endblock %}
 
 {% block c_compiler %}

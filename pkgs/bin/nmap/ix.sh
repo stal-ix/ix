@@ -10,7 +10,7 @@ nmap
 
 {% block fetch %}
 https://nmap.org/dist/nmap-{{self.version().strip()}}.tar.bz2
-sha:af98f27925c670c257dd96a9ddf2724e06cb79b2fd1e0d08c9206316be1645c0
+af98f27925c670c257dd96a9ddf2724e06cb79b2fd1e0d08c9206316be1645c0
 {% endblock %}
 
 {% block bld_libs %}

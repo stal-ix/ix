@@ -10,7 +10,7 @@ serf
 
 {% block fetch %}
 https://github.com/apache/serf/archive/refs/tags/{{self.version().strip()}}.tar.gz
-sha:d4369d3be425617e36be92f47136002a3b4e4320065445ba4db74e58c93813c4
+d4369d3be425617e36be92f47136002a3b4e4320065445ba4db74e58c93813c4
 {% endblock %}
 
 {% block lib_deps %}

@@ -10,7 +10,7 @@ tree-sitter-python
 
 {% block fetch %}
 https://github.com/tree-sitter/tree-sitter-python/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:630a0f45eccd9b69a66a07bf47d1568e96a9c855a2f30e0921c8af7121e8af96
+630a0f45eccd9b69a66a07bf47d1568e96a9c855a2f30e0921c8af7121e8af96
 {% endblock %}
 
 {% block bld_libs %}

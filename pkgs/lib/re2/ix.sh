@@ -10,7 +10,7 @@ re2
 
 {% block fetch %}
 https://github.com/google/re2/archive/refs/tags/{{self.version().strip().replace('.', '-')}}.tar.gz
-sha:eb2df807c781601c14a260a507a5bb4509be1ee626024cb45acbd57cb9d4032b
+eb2df807c781601c14a260a507a5bb4509be1ee626024cb45acbd57cb9d4032b
 {% endblock %}
 
 {% block lib_deps %}

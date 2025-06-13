@@ -10,7 +10,7 @@ hyprcursor
 
 {% block fetch %}
 https://github.com/hyprwm/hyprcursor/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:3200a7a31e28884b9d046f8ec7b0aa67ede9ce0ab0d20193c2b61ee522d6b1f2
+3200a7a31e28884b9d046f8ec7b0aa67ede9ce0ab0d20193c2b61ee522d6b1f2
 {% endblock %}
 
 {% block lib_deps %}

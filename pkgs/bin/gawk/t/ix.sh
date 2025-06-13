@@ -10,7 +10,7 @@ gawk
 
 {% block fetch %}
 https://ftp.gnu.org/gnu/gawk/gawk-{{self.version().strip()}}.tar.xz
-sha:f8c3486509de705192138b00ef2c00bbbdd0e84c30d5c07d23fc73a9dc4cc9cc
+f8c3486509de705192138b00ef2c00bbbdd0e84c30d5c07d23fc73a9dc4cc9cc
 {% endblock %}
 
 {% block bld_libs %}

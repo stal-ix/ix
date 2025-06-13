@@ -10,7 +10,7 @@ libsecret
 
 {% block fetch %}
 https://gitlab.gnome.org/GNOME/libsecret/-/archive/{{self.version().strip()}}/libsecret-{{self.version().strip()}}.tar.bz2
-sha:e799f25cba4802874dc59a8d6ea69331bf10fde913b10e7fe7ab01de3853f3dc
+e799f25cba4802874dc59a8d6ea69331bf10fde913b10e7fe7ab01de3853f3dc
 {% endblock %}
 
 {% block lib_deps %}

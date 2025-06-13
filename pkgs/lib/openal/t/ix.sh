@@ -10,7 +10,7 @@ openal-soft
 
 {% block fetch %}
 https://github.com/kcat/openal-soft/archive/refs/tags/{{self.version().strip()}}.tar.gz
-sha:7e1fecdeb45e7f78722b776c5cf30bd33934b961d7fd2a11e0494e064cc631ce
+7e1fecdeb45e7f78722b776c5cf30bd33934b961d7fd2a11e0494e064cc631ce
 {% endblock %}
 
 {% block lib_deps %}

@@ -10,7 +10,7 @@ fontconfig
 
 {% block fetch %}
 https://gitlab.freedesktop.org/fontconfig/fontconfig/-/archive/{{self.version().strip()}}/fontconfig-{{self.version().strip()}}.tar.bz2
-sha:fd9dfb5fe4d4503ae286e95fd85973c3c0490cf5d88ebf49e7f943973443262b
+fd9dfb5fe4d4503ae286e95fd85973c3c0490cf5d88ebf49e7f943973443262b
 {% endblock %}
 
 {% block bld_tool %}

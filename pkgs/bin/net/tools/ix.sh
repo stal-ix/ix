@@ -10,7 +10,7 @@ net-tools
 
 {% block fetch %}
 https://downloads.sourceforge.net/project/net-tools/net-tools-{{self.version().strip()}}.tar.xz
-sha:b262435a5241e89bfa51c3cabd5133753952f7a7b7b93f32e08cb9d96f580d69
+b262435a5241e89bfa51c3cabd5133753952f7a7b7b93f32e08cb9d96f580d69
 {% endblock %}
 
 {% block bld_libs %}

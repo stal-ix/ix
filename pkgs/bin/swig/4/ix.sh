@@ -10,7 +10,7 @@ swig
 
 {% block fetch %}
 http://prdownloads.sourceforge.net/swig/swig-{{self.version().strip()}}.tar.gz
-sha:44fc829f70f1e17d635a2b4d69acab38896699ecc24aa023e516e0eabbec61b8
+44fc829f70f1e17d635a2b4d69acab38896699ecc24aa023e516e0eabbec61b8
 {% endblock %}
 
 {% block bld_libs %}

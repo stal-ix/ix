@@ -10,7 +10,7 @@ python
 
 {% block fetch %}
 https://www.python.org/ftp/python/{{self.version().strip()}}/Python-{{self.version().strip()}}.tar.xz
-sha:5c88848668640d3e152b35b4536ef1c23b2ca4bd2c957ef1ecbb053f571dd3f6
+5c88848668640d3e152b35b4536ef1c23b2ca4bd2c957ef1ecbb053f571dd3f6
 {% endblock %}
 
 {% block setup_target_flags %}

@@ -10,7 +10,7 @@ glib-networking
 
 {% block fetch %}
 https://gitlab.gnome.org/GNOME/glib-networking/-/archive/{{self.version().strip()}}/glib-networking-{{self.version().strip()}}.tar.bz2
-sha:06a8d5ea075e6dd6518af61e3c975d0adc80cba704387476b315561bfb6af88c
+06a8d5ea075e6dd6518af61e3c975d0adc80cba704387476b315561bfb6af88c
 {% endblock %}
 
 {% block lib_deps %}

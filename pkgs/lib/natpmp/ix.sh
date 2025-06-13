@@ -12,7 +12,7 @@ libnatpmp
 
 {% block fetch %}
 https://miniupnp.tuxfamily.org/files/libnatpmp-{{self.version().strip()}}.tar.gz
-sha:0684ed2c8406437e7519a1bd20ea83780db871b3a3a5d752311ba3e889dbfc70
+0684ed2c8406437e7519a1bd20ea83780db871b3a3a5d752311ba3e889dbfc70
 {% endblock %}
 
 {% block lib_deps %}

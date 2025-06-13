@@ -4,7 +4,7 @@
 
 {% block fetch %}
 https://github.com/FFmpeg/FFmpeg/archive/refs/tags/n4.4.2.tar.gz
-sha:2378c6ec0b0b7b4df4f87411afe72997e9d6803b1884398c1ef665c69e01eaea
+2378c6ec0b0b7b4df4f87411afe72997e9d6803b1884398c1ef665c69e01eaea
 {% endblock %}
 
 {% block lib_deps %}

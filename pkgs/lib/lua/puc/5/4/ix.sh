@@ -10,5 +10,5 @@ lua
 
 {% block fetch %}
 https://www.lua.org/ftp/lua-{{self.version().strip()}}.tar.gz
-sha:4f18ddae154e793e46eeab727c59ef1c0c0c2b744e7b94219710d76f530629ae
+4f18ddae154e793e46eeab727c59ef1c0c0c2b744e7b94219710d76f530629ae
 {% endblock %}

@@ -3,10 +3,10 @@ gtk
 {% endblock %}
 
 {% block version %}
-4.18.5
+4.18.6
 {% endblock %}
 
 {% block fetch %}
 https://gitlab.gnome.org/GNOME/gtk/-/archive/{{self.version().strip()}}/gtk-{{self.version().strip()}}.tar.bz2
-sha:a6ff77ea7a12b7c337cccff88cea542364a0768c7a43d48fee0c757d4843a221
+f1e94b13c998bc656efc535404821c57c5259e8cc4f3ff8b9262459521b8087f
 {% endblock %}

@@ -10,7 +10,7 @@ libfprint
 
 {% block fetch %}
 https://gitlab.freedesktop.org/libfprint/libfprint/-/archive/v{{self.version().strip()}}/libfprint-v{{self.version().strip()}}.tar.bz2
-sha:6f51d9b154c1874b22fff50c288a86584a59dd23b0f6b0a9aa4cdaffb3847ab1
+6f51d9b154c1874b22fff50c288a86584a59dd23b0f6b0a9aa4cdaffb3847ab1
 {% endblock %}
 
 {% block lib_deps %}

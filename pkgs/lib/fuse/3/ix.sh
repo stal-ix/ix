@@ -10,7 +10,7 @@ libfuse
 
 {% block fetch %}
 https://github.com/libfuse/libfuse/archive/refs/tags/fuse-{{self.version().strip()}}.tar.gz
-sha:9d34adf5bd979cd62479340d9854e6a424a7ead7ee632e4a6da104ec0796f923
+9d34adf5bd979cd62479340d9854e6a424a7ead7ee632e4a6da104ec0796f923
 {% endblock %}
 
 {% block lib_deps %}

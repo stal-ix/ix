@@ -10,7 +10,7 @@ libvisio
 
 {% block fetch %}
 https://dev-www.libreoffice.org/src/libvisio/libvisio-{{self.version().strip()}}.tar.xz
-sha:b4098ffbf4dcb9e71213fa0acddbd928f27bed30db2d80234813b15d53d0405b
+b4098ffbf4dcb9e71213fa0acddbd928f27bed30db2d80234813b15d53d0405b
 {% endblock %}
 
 {% block lib_deps %}

@@ -10,7 +10,7 @@ emacs
 
 {% block fetch %}
 https://github.com/emacs-mirror/emacs/archive/refs/tags/emacs-{{self.version().strip()}}.tar.gz
-sha:459e0524b1a5db42cd06c99be21d93d09768d2c3e642a1d1a9d239caea35384a
+459e0524b1a5db42cd06c99be21d93d09768d2c3e642a1d1a9d239caea35384a
 {% endblock %}
 
 {% block bld_libs %}

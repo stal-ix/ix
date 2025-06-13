@@ -10,7 +10,7 @@ haproxy
 
 {% block fetch %}
 https://github.com/haproxy/haproxy/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:7cbc8ac09e8059d90d4cbe3ccb32fec1ab19c39b372bf21e186c44346d1c854f
+7cbc8ac09e8059d90d4cbe3ccb32fec1ab19c39b372bf21e186c44346d1c854f
 {% endblock %}
 
 {% block bld_libs %}

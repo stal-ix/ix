@@ -10,7 +10,7 @@ libmodplug
 
 {% block fetch %}
 https://downloads.sourceforge.net/modplug-xmms/libmodplug-{{self.version().strip()}}.tar.gz
-sha:457ca5a6c179656d66c01505c0d95fafaead4329b9dbaa0f997d00a3508ad9de
+457ca5a6c179656d66c01505c0d95fafaead4329b9dbaa0f997d00a3508ad9de
 {% endblock %}
 
 {% block lib_deps %}

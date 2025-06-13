@@ -10,7 +10,7 @@ minijail
 
 {% block fetch %}
 https://github.com/google/minijail/archive/refs/tags/linux-v{{self.version().strip()}}.tar.gz
-sha:3136365ca3762da3e725f734fbdc544d8c82d6a763f803b2850ed3c993c216f0
+3136365ca3762da3e725f734fbdc544d8c82d6a763f803b2850ed3c993c216f0
 {% endblock %}
 
 {% block bld_libs %}

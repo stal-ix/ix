@@ -10,7 +10,7 @@ argon2
 
 {% block fetch %}
 https://github.com/P-H-C/phc-winner-argon2/archive/refs/tags/{{self.version().strip()}}.tar.gz
-sha:daf972a89577f8772602bf2eb38b6a3dd3d922bf5724d45e7f9589b5e830442c
+daf972a89577f8772602bf2eb38b6a3dd3d922bf5724d45e7f9589b5e830442c
 {% endblock %}
 
 {% block lib_deps %}

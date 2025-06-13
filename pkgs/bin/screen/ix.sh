@@ -10,7 +10,7 @@ screen
 
 {% block fetch %}
 https://ftp.gnu.org/gnu/screen/screen-{{self.version().strip()}}.tar.gz
-sha:2dae36f4db379ffcd14b691596ba6ec18ac3a9e22bc47ac239789ab58409869d
+2dae36f4db379ffcd14b691596ba6ec18ac3a9e22bc47ac239789ab58409869d
 {% endblock %}
 
 {% block bld_libs %}

@@ -10,7 +10,7 @@ jed
 
 {% block fetch %}
 https://www.jedsoft.org/releases/jed/jed-{{self.version().strip()}}.tar.bz2
-sha:97a339ce2fb0a446767ee550786e6914fa2e8cdbad39a402e48368cd0d6b5763
+97a339ce2fb0a446767ee550786e6914fa2e8cdbad39a402e48368cd0d6b5763
 {% endblock %}
 
 {% block bld_libs %}

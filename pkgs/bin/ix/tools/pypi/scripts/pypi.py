@@ -31,7 +31,7 @@ def iter_recs(args):
             if '.whl' in rec['url']:
                 yield f'{a}/ix.sh', {
                     'url': rec['url'],
-                    'md5': rec['md5_digest'],
+                    'sha': rec['digests']['sha256'],
                 }
 
 def dict_merge(it):

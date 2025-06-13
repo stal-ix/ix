@@ -10,7 +10,7 @@ tig
 
 {% block fetch %}
 https://github.com/jonas/tig/archive/refs/tags/tig-{{self.version().strip()}}.tar.gz
-sha:5e18e0404d2cb9657e9eff6cdbb2a073fe11449ae8cc0c779be0151fd9d46bdd
+5e18e0404d2cb9657e9eff6cdbb2a073fe11449ae8cc0c779be0151fd9d46bdd
 {% endblock %}
 
 {% block bld_libs %}

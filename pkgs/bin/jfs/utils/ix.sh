@@ -10,7 +10,7 @@ jfsutils
 
 {% block fetch %}
 https://jfs.sourceforge.net/project/pub/jfsutils-{{self.version().strip()}}.tar.gz
-sha:244a15f64015ce3ea17e49bdf6e1a0fb4f9af92b82fa9e05aa64cb30b5f07a4d
+244a15f64015ce3ea17e49bdf6e1a0fb4f9af92b82fa9e05aa64cb30b5f07a4d
 {% endblock %}
 
 {% block bld_libs %}

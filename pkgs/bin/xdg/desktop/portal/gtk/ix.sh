@@ -10,7 +10,7 @@ xdg-desktop-portal-gtk
 
 {% block fetch %}
 https://github.com/flatpak/xdg-desktop-portal-gtk/archive/refs/tags/{{self.version().strip()}}.tar.gz
-sha:79992b308246eb9965a1589a321271def3b4bed6a2b84fffd1916f8d6ea3bc9f
+79992b308246eb9965a1589a321271def3b4bed6a2b84fffd1916f8d6ea3bc9f
 {% endblock %}
 
 {% block bld_libs %}

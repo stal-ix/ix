@@ -10,7 +10,7 @@ dosbox-x
 
 {% block fetch %}
 https://github.com/joncampbell123/dosbox-x/archive/refs/tags/dosbox-x-v{{self.version().strip()}}.tar.gz
-sha:b29a2c9c38bfe1d1c1f2420d546b8c2456ae2ddce4c1f6b4d19f258841ce1581
+b29a2c9c38bfe1d1c1f2420d546b8c2456ae2ddce4c1f6b4d19f258841ce1581
 {% endblock %}
 
 {% block bld_libs %}

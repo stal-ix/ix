@@ -10,7 +10,7 @@ imv
 
 {% block fetch %}
 https://git.sr.ht/~exec64/imv/archive/v{{self.version().strip()}}.tar.gz
-sha:3b11991a86942d757830015033b1c3a3cc915be2f0c20fee7bc7493be560cbcb
+3b11991a86942d757830015033b1c3a3cc915be2f0c20fee7bc7493be560cbcb
 {% endblock %}
 
 {% block bld_libs %}

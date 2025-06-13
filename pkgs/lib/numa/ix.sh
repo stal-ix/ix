@@ -10,7 +10,7 @@ numactl
 
 {% block fetch %}
 https://github.com/numactl/numactl/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:8b84ffdebfa0d730fb2fc71bb7ec96bb2d38bf76fb67246fde416a68e04125e4
+8b84ffdebfa0d730fb2fc71bb7ec96bb2d38bf76fb67246fde416a68e04125e4
 {% endblock %}
 
 {% block lib_deps %}

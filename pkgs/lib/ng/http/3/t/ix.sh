@@ -10,7 +10,7 @@ nghttp3
 
 {% block fetch %}
 https://github.com/ngtcp2/nghttp3/releases/download/v{{self.version().strip()}}/nghttp3-{{self.version().strip()}}.tar.xz
-sha:e6b8ebaadf8e57cba77a3e34ee8de465fe952481fbf77c4f98d48737bdf50e03
+e6b8ebaadf8e57cba77a3e34ee8de465fe952481fbf77c4f98d48737bdf50e03
 {% endblock %}
 
 {% block lib_deps %}

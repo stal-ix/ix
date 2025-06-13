@@ -10,7 +10,7 @@ whois
 
 {% block fetch %}
 https://github.com/rfc1036/whois/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:0773cf51fc9a980af3954fb3859c7673f8bb7901c5be4041a12c926609edeb89
+0773cf51fc9a980af3954fb3859c7673f8bb7901c5be4041a12c926609edeb89
 {% endblock %}
 
 {% block bld_libs %}

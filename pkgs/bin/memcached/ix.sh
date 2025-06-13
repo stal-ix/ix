@@ -10,7 +10,7 @@ memcached
 
 {% block fetch %}
 https://memcached.org/files/memcached-{{self.version().strip()}}.tar.gz
-sha:334d792294e37738796b5b03375c47bb6db283b1152e2ea4ccb720152dd17c66
+334d792294e37738796b5b03375c47bb6db283b1152e2ea4ccb720152dd17c66
 {% endblock %}
 
 {% block bld_libs %}

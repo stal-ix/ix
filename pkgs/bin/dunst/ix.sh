@@ -10,7 +10,7 @@ dunst
 
 {% block fetch %}
 https://github.com/dunst-project/dunst/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:d1fbeba329b3801b931ad804f1fadd96a36be5edf2e49c8e30f081443079759f
+d1fbeba329b3801b931ad804f1fadd96a36be5edf2e49c8e30f081443079759f
 {% endblock %}
 
 {% block bld_libs %}

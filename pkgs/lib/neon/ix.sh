@@ -10,7 +10,7 @@ neon
 
 {% block fetch %}
 https://notroj.github.io/neon/neon-{{self.version().strip()}}.tar.gz
-sha:f98ce3c74300be05eddf05dccbdca498b14d40c289f773195dd1a559cffa5856
+f98ce3c74300be05eddf05dccbdca498b14d40c289f773195dd1a559cffa5856
 {% endblock %}
 
 {% block lib_deps %}

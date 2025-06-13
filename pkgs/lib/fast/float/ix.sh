@@ -10,7 +10,7 @@ fast_float
 
 {% block fetch %}
 https://github.com/fastfloat/fast_float/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:e14a33089712b681d74d94e2a11362643bd7d769ae8f7e7caefe955f57f7eacd
+e14a33089712b681d74d94e2a11362643bd7d769ae8f7e7caefe955f57f7eacd
 {% endblock %}
 
 {% block lib_deps %}

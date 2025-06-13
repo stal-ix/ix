@@ -10,7 +10,7 @@ Ananicy
 
 {% block fetch %}
 https://github.com/Nefelim4ag/Ananicy/archive/refs/tags/{{self.version().strip()}}.tar.gz
-sha:3e33c3c84d29f93b64079e67eb56c39a4d40b0591e52db171156981b72f648b1
+3e33c3c84d29f93b64079e67eb56c39a4d40b0591e52db171156981b72f648b1
 {% endblock %}
 
 {% block bld_tool %}

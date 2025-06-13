@@ -10,7 +10,7 @@ SDL_ttf
 
 {% block fetch %}
 https://github.com/libsdl-org/SDL_ttf/archive/refs/tags/release-{{self.version().strip()}}.tar.gz
-sha:2c45241a56203a59d66ec6b4eae9457e5675fc609376566a257391fd29d341a2
+2c45241a56203a59d66ec6b4eae9457e5675fc609376566a257391fd29d341a2
 {% endblock %}
 
 {% block lib_deps %}

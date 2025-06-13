@@ -10,7 +10,7 @@ dino
 
 {% block fetch %}
 https://github.com/dino/dino/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:4c57f20677f47f41b440b7d6eebb697ee89d5d8c38d334ad47c6b5de19894768
+4c57f20677f47f41b440b7d6eebb697ee89d5d8c38d334ad47c6b5de19894768
 {% endblock %}
 
 {% block bld_libs %}

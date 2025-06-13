@@ -10,7 +10,7 @@ iw
 
 {% block fetch %}
 https://www.kernel.org/pub/software/network/iw/iw-{{self.version().strip()}}.tar.xz
-sha:3f2db22ad41c675242b98ae3942dbf3112548c60a42ff739210f2de4e98e4894
+3f2db22ad41c675242b98ae3942dbf3112548c60a42ff739210f2de4e98e4894
 {% endblock %}
 
 {% block bld_libs %}

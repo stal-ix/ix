@@ -10,7 +10,7 @@ uclibc-ng
 
 {% block fetch %}
 http://downloads.uclibc-ng.org/releases/{{self.version().strip()}}/uClibc-ng-{{self.version().strip()}}.tar.xz
-sha:d6eb01fced11c5e3b319bf4132d67685b1c33494426e9426032e31979d7d8ad7
+d6eb01fced11c5e3b319bf4132d67685b1c33494426e9426032e31979d7d8ad7
 {% endblock %}
 
 {% block lib_deps %}

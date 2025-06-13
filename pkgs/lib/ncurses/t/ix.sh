@@ -10,7 +10,7 @@ ncurses
 
 {% block fetch %}
 https://ftp.gnu.org/pub/gnu/ncurses/ncurses-{{self.version().strip()}}.tar.gz
-sha:136d91bc269a9a5785e5f9e980bc76ab57428f604ce3e5a5a90cebc767971cc6
+136d91bc269a9a5785e5f9e980bc76ab57428f604ce3e5a5a90cebc767971cc6
 {% endblock %}
 
 {% block bld_tool %}

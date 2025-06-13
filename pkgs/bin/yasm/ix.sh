@@ -10,7 +10,7 @@ yasm
 
 {% block fetch %}
 https://github.com/yasm/yasm/releases/download/v{{self.version().strip()}}/yasm-{{self.version().strip()}}.tar.gz
-sha:3dce6601b495f5b3d45b59f7d2492a340ee7e84b5beca17e48f862502bd5603f
+3dce6601b495f5b3d45b59f7d2492a340ee7e84b5beca17e48f862502bd5603f
 {% endblock %}
 
 {% block bld_libs %}

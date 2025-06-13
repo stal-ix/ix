@@ -10,7 +10,7 @@ python:pywlroots
 
 {% block fetch %}
 https://github.com/flacjacket/pywlroots/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:667b0cca499a99183c7834d0f656a0ed699a2b7d8b04939fabf0df575fd30bbe
+667b0cca499a99183c7834d0f656a0ed699a2b7d8b04939fabf0df575fd30bbe
 {% endblock %}
 
 {% block lib_deps %}

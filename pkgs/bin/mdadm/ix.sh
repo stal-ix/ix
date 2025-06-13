@@ -10,7 +10,7 @@ mdadm
 
 {% block fetch %}
 https://git.kernel.org/pub/scm/utils/mdadm/mdadm.git/snapshot/mdadm-{{self.version().strip()}}.tar.gz
-sha:680fed532857088e0cd87c56c00033ae35eae0a3f9cb7e1523b345ba8717fb93
+680fed532857088e0cd87c56c00033ae35eae0a3f9cb7e1523b345ba8717fb93
 {% endblock %}
 
 {% block bld_libs %}

@@ -10,5 +10,5 @@ mawk
 
 {% block fetch %}
 https://invisible-mirror.net/archives/mawk/mawk-{{self.version().strip()[:5]}}-{{self.version() | strip | field(3)}}.tgz
-sha:51bcb82d577b141d896d9d9c3077d7aaa209490132e9f2b9573ba8511b3835be
+51bcb82d577b141d896d9d9c3077d7aaa209490132e9f2b9573ba8511b3835be
 {% endblock %}

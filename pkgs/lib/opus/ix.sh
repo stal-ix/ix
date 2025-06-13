@@ -10,7 +10,7 @@ opus
 
 {% block fetch %}
 https://github.com/xiph/opus/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:9480e329e989f70d69886ded470c7f8cfe6c0667cc4196d4837ac9e668fb7404
+9480e329e989f70d69886ded470c7f8cfe6c0667cc4196d4837ac9e668fb7404
 {% endblock %}
 
 {% block lib_deps %}

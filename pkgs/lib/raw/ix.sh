@@ -10,7 +10,7 @@ LibRaw
 
 {% block fetch %}
 https://github.com/LibRaw/LibRaw/archive/refs/tags/{{self.version().strip()}}.tar.gz
-sha:8baeb5253c746441fadad62e9c5c43ff4e414e41b0c45d6dcabccb542b2dff4b
+8baeb5253c746441fadad62e9c5c43ff4e414e41b0c45d6dcabccb542b2dff4b
 {% endblock %}
 
 {% block lib_deps %}

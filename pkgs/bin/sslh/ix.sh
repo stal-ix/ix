@@ -10,7 +10,7 @@ sslh
 
 {% block fetch %}
 https://github.com/yrutschle/sslh/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:e8aa59b4f190a89087eac2ec4e0f44f75d19767bb879907df11c142fa6a7d0d1
+e8aa59b4f190a89087eac2ec4e0f44f75d19767bb879907df11c142fa6a7d0d1
 {% endblock %}
 
 {% block bld_libs %}
