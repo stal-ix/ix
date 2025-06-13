@@ -10,7 +10,7 @@ libgd
 
 {% block fetch %}
 https://github.com/libgd/libgd/archive/refs/tags/gd-{{self.version().strip()}}.tar.gz
-md5:f75f9721b858f25acc5c7c917ab7ccba
+sha:24429f9d0dbe0f865aaa4b1a63558242396ba9134e6cfd32ca5e486a84483350
 {% endblock %}
 
 {% block lib_deps %}
