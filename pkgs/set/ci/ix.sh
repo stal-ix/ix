@@ -33,4 +33,5 @@ aux/fonts/sf/ny
 aux/fonts/sf/pro
 aux/fonts/nerd
 aux/fonts/adwaita
+aux/fonts/emoji
 {% endblock %}

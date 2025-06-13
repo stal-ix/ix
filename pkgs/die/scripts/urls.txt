@@ -1490,6 +1490,7 @@ https://github.com/P-H-C/phc-winner-argon2/archive/refs/tags/20190702.tar.gz
 https://github.com/PCRE2Project/pcre2/releases/download/pcre2-10.45/pcre2-10.45.tar.bz2
 https://github.com/PhilipHazel/pcre2/archive/refs/tags/pcre2-10.42.tar.gz
 https://github.com/PhilipHazel/pcre2/archive/refs/tags/pcre2-10.43.tar.gz
+https://github.com/PoomSmart/EmojiLibrary/releases/download/0.18.4/AppleColorEmoji-160px.ttf
 https://github.com/PurpleI2P/i2pd/archive/refs/tags/2.48.0.tar.gz
 https://github.com/PurpleI2P/i2pd/archive/refs/tags/2.49.0.tar.gz
 https://github.com/PurpleI2P/i2pd/archive/refs/tags/2.50.0.tar.gz
