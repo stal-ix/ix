@@ -9,10 +9,14 @@ https://skia.googlesource.com/skia.git
 {% endblock %}
 
 {% block git_sha %}
-6887d074c1849bbb7816afdd141a4d081db720783a9d727dff3f69b98fa80885
+60431f5b34bd5868dac5d504fab25410a2b66ca7c0ddf5c2441e6361e8ada4f6
 {% endblock %}
 
 {% block git_refine %}
+sed -e 's|.*angle2.*||' \
+    -e 's|.*dawn.*||' \
+    -e 's|.*swiftshader.*||' \
+    -i DEPS
 >bin/fetch-gn
 >bin/activate-emsdk
 python3 tools/git-sync-deps
