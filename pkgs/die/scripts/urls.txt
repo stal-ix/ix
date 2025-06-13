@@ -542,6 +542,7 @@ https://downloads.sourceforge.net/project/dosbox/dosbox/0.74-3/dosbox-0.74-3.tar
 https://downloads.sourceforge.net/project/empty/empty/empty-0.6.23c/empty-0.6.23c.tgz
 https://downloads.sourceforge.net/project/fetchmail/branch_6.4/fetchmail-6.4.36.tar.xz
 https://downloads.sourceforge.net/project/fetchmail/branch_6.5/fetchmail-6.5.2.tar.xz
+https://downloads.sourceforge.net/project/fetchmail/branch_6.5/fetchmail-6.5.3.tar.xz
 https://downloads.sourceforge.net/project/giflib/giflib-5.2.1.tar.gz
 https://downloads.sourceforge.net/project/giflib/giflib-5.2.2.tar.gz
 https://downloads.sourceforge.net/project/gnu-efi/gnu-efi-3.0.15.tar.bz2
@@ -576,6 +577,7 @@ https://downloads.sourceforge.net/project/mpg123/mpg123/1.32.10/mpg123-1.32.10.t
 https://downloads.sourceforge.net/project/mpg123/mpg123/1.32.7/mpg123-1.32.7.tar.bz2
 https://downloads.sourceforge.net/project/mpg123/mpg123/1.32.8/mpg123-1.32.8.tar.bz2
 https://downloads.sourceforge.net/project/mpg123/mpg123/1.32.9/mpg123-1.32.9.tar.bz2
+https://downloads.sourceforge.net/project/mpg123/mpg123/1.33.0/mpg123-1.33.0.tar.bz2
 https://downloads.sourceforge.net/project/mscorefonts2/cabs/PowerPointViewer.exe
 https://downloads.sourceforge.net/project/net-tools/net-tools-2.10.tar.xz
 https://downloads.sourceforge.net/project/nfs/nfs-utils/2.6.3/nfs-utils-2.6.3.tar.xz
@@ -627,6 +629,7 @@ https://dri.freedesktop.org/libdrm/libdrm-2.4.121.tar.xz
 https://dri.freedesktop.org/libdrm/libdrm-2.4.122.tar.xz
 https://dri.freedesktop.org/libdrm/libdrm-2.4.123.tar.xz
 https://dri.freedesktop.org/libdrm/libdrm-2.4.124.tar.xz
+https://dri.freedesktop.org/libdrm/libdrm-2.4.125.tar.xz
 https://evilpiepirate.org/bcachefs-tools/bcachefs-tools-1.4.1.tar.zst
 https://ffmpeg.org/releases/ffmpeg-5.1.2.tar.xz
 https://ffmpeg.org/releases/ffmpeg-6.0.1.tar.xz
@@ -1002,12 +1005,14 @@ https://github.com/AcademySoftwareFoundation/openexr/archive/refs/tags/v3.3.0.ta
 https://github.com/AcademySoftwareFoundation/openexr/archive/refs/tags/v3.3.1.tar.gz
 https://github.com/AcademySoftwareFoundation/openexr/archive/refs/tags/v3.3.2.tar.gz
 https://github.com/AcademySoftwareFoundation/openexr/archive/refs/tags/v3.3.3.tar.gz
+https://github.com/AcademySoftwareFoundation/openexr/archive/refs/tags/v3.3.4.tar.gz
 https://github.com/AdguardTeam/dnsproxy/archive/refs/tags/v0.71.0.tar.gz
 https://github.com/AdguardTeam/dnsproxy/archive/refs/tags/v0.73.2.tar.gz
 https://github.com/AdguardTeam/dnsproxy/archive/refs/tags/v0.74.1.tar.gz
 https://github.com/AdguardTeam/dnsproxy/archive/refs/tags/v0.75.1.tar.gz
 https://github.com/AdguardTeam/dnsproxy/archive/refs/tags/v0.75.4.tar.gz
 https://github.com/AdguardTeam/dnsproxy/archive/refs/tags/v0.75.5.tar.gz
+https://github.com/AdguardTeam/dnsproxy/archive/refs/tags/v0.75.6.tar.gz
 https://github.com/Aetf/kmscon/archive/refs/tags/v9.0.0.tar.gz
 https://github.com/Aetf/libtsm/archive/refs/tags/v4.0.2.tar.gz
 https://github.com/Alexays/Waybar/archive/refs/tags/0.10.0.tar.gz
@@ -1347,6 +1352,7 @@ https://github.com/Kitware/CMake/archive/refs/tags/v3.31.4.tar.gz
 https://github.com/Kitware/CMake/archive/refs/tags/v3.31.6.tar.gz
 https://github.com/Kitware/CMake/archive/refs/tags/v4.0.1.tar.gz
 https://github.com/Kitware/CMake/archive/refs/tags/v4.0.2.tar.gz
+https://github.com/Kitware/CMake/archive/refs/tags/v4.0.3.tar.gz
 https://github.com/LBCrion/sfwbar/archive/refs/tags/v1.0_beta13.tar.gz
 https://github.com/LBCrion/sfwbar/archive/refs/tags/v1.0_beta16.tar.gz
 https://github.com/LBCrion/sfwbar/archive/refs/tags/v1.0_beta9.tar.gz
@@ -1676,6 +1682,7 @@ https://github.com/apernet/hysteria/archive/refs/tags/app/v2.5.1.tar.gz
 https://github.com/apernet/hysteria/archive/refs/tags/app/v2.5.2.tar.gz
 https://github.com/apernet/hysteria/archive/refs/tags/app/v2.6.0.tar.gz
 https://github.com/apernet/hysteria/archive/refs/tags/app/v2.6.1.tar.gz
+https://github.com/apernet/hysteria/archive/refs/tags/app/v2.6.2.tar.gz
 https://github.com/apple-oss-distributions/mDNSResponder/archive/refs/tags/mDNSResponder-2200.80.16.tar.gz
 https://github.com/apple-oss-distributions/mDNSResponder/archive/refs/tags/mDNSResponder-2559.1.1.tar.gz
 https://github.com/apple-oss-distributions/mDNSResponder/archive/refs/tags/mDNSResponder-2559.80.8.tar.gz
@@ -1872,6 +1879,7 @@ https://github.com/cli/cli/archive/refs/tags/v2.14.4.tar.gz
 https://github.com/cli/cli/archive/refs/tags/v2.72.0.tar.gz
 https://github.com/cli/cli/archive/refs/tags/v2.73.0.tar.gz
 https://github.com/cli/cli/archive/refs/tags/v2.74.0.tar.gz
+https://github.com/cli/cli/archive/refs/tags/v2.74.1.tar.gz
 https://github.com/commonmark/cmark/archive/refs/tags/0.30.3.tar.gz
 https://github.com/commonmark/cmark/archive/refs/tags/0.31.1.tar.gz
 https://github.com/containers/crun/releases/download/1.9/crun-1.9.tar.xz
@@ -2298,6 +2306,7 @@ https://github.com/go-git/go-git/archive/refs/tags/v5.4.2.tar.gz
 https://github.com/go-gitea/gitea/archive/refs/tags/v1.22.3.tar.gz
 https://github.com/go-gitea/gitea/archive/refs/tags/v1.23.7.tar.gz
 https://github.com/go-gitea/gitea/archive/refs/tags/v1.23.8.tar.gz
+https://github.com/go-gitea/gitea/archive/refs/tags/v1.24.0.tar.gz
 https://github.com/go-gost/gost/archive/1fa5067d1450c7d0c7c4bfb5cbddc7ddbb49f76c.zip
 https://github.com/go-gost/gost/archive/refs/tags/v3.0.0-nightly.20240927.tar.gz
 https://github.com/go-task/task/archive/refs/tags/v3.14.0.tar.gz
@@ -2459,6 +2468,7 @@ https://github.com/htop-dev/htop/archive/refs/tags/3.4.0.tar.gz
 https://github.com/htop-dev/htop/archive/refs/tags/3.4.1.tar.gz
 https://github.com/hufrea/byedpi/archive/refs/tags/v0.14.1.tar.gz
 https://github.com/hufrea/byedpi/archive/refs/tags/v0.16.6.tar.gz
+https://github.com/hufrea/byedpi/archive/refs/tags/v0.17.tar.gz
 https://github.com/hughsie/libgusb/archive/refs/tags/0.4.6.tar.gz
 https://github.com/hughsie/libgusb/archive/refs/tags/0.4.7.tar.gz
 https://github.com/hughsie/libgusb/archive/refs/tags/0.4.8.tar.gz
@@ -2600,6 +2610,7 @@ https://github.com/intel/thermal_daemon/archive/refs/tags/v2.5.8.tar.gz
 https://github.com/intel/thermal_daemon/archive/refs/tags/v2.5.9.tar.gz
 https://github.com/ipfs/ipget/archive/refs/tags/v0.10.0.tar.gz
 https://github.com/ipfs/ipget/archive/refs/tags/v0.11.1.tar.gz
+https://github.com/ipfs/ipget/archive/refs/tags/v0.11.2.tar.gz
 https://github.com/ipfs/ipget/archive/refs/tags/v0.9.2.tar.gz
 https://github.com/iproute2/iproute2/archive/refs/tags/v6.10.0.tar.gz
 https://github.com/iproute2/iproute2/archive/refs/tags/v6.11.0.tar.gz
@@ -2874,6 +2885,7 @@ https://github.com/libffi/libffi/archive/refs/tags/v3.4.5.tar.gz
 https://github.com/libffi/libffi/archive/refs/tags/v3.4.6.tar.gz
 https://github.com/libffi/libffi/archive/refs/tags/v3.4.7.tar.gz
 https://github.com/libffi/libffi/archive/refs/tags/v3.4.8.tar.gz
+https://github.com/libffi/libffi/archive/refs/tags/v3.5.1.tar.gz
 https://github.com/libffi/libffi/commit/8308bed5b2423878aa20d7884a99cf2e30b8daf7.diff
 https://github.com/libfuse/libfuse/archive/refs/tags/fuse-2.9.9.tar.gz
 https://github.com/libfuse/libfuse/archive/refs/tags/fuse-3.16.1.tar.gz
@@ -2902,6 +2914,7 @@ https://github.com/libjpeg-turbo/libjpeg-turbo/archive/refs/tags/3.0.2.tar.gz
 https://github.com/libjpeg-turbo/libjpeg-turbo/archive/refs/tags/3.0.3.tar.gz
 https://github.com/libjpeg-turbo/libjpeg-turbo/archive/refs/tags/3.0.4.tar.gz
 https://github.com/libjpeg-turbo/libjpeg-turbo/archive/refs/tags/3.1.0.tar.gz
+https://github.com/libjpeg-turbo/libjpeg-turbo/archive/refs/tags/3.1.1.tar.gz
 https://github.com/libjxl/libjxl/archive/refs/tags/v0.10.0.tar.gz
 https://github.com/libjxl/libjxl/archive/refs/tags/v0.10.1.tar.gz
 https://github.com/libjxl/libjxl/archive/refs/tags/v0.10.2.tar.gz
@@ -3775,6 +3788,7 @@ https://github.com/rui314/mold/archive/refs/tags/v2.39.1.tar.gz
 https://github.com/rui314/mold/archive/refs/tags/v2.4.0.tar.gz
 https://github.com/rui314/mold/archive/refs/tags/v2.4.1.tar.gz
 https://github.com/rui314/mold/archive/refs/tags/v2.40.0.tar.gz
+https://github.com/rui314/mold/archive/refs/tags/v2.40.1.tar.gz
 https://github.com/rust-lang/cargo/archive/refs/tags/0.80.0.tar.gz
 https://github.com/rust-lang/cargo/archive/refs/tags/0.83.0.tar.gz
 https://github.com/rust-lang/rust-bindgen/archive/refs/tags/v0.71.1.tar.gz
@@ -3911,6 +3925,7 @@ https://github.com/stephenberry/glaze/archive/refs/tags/v5.2.1.tar.gz
 https://github.com/stephenberry/glaze/archive/refs/tags/v5.3.0.tar.gz
 https://github.com/stephenberry/glaze/archive/refs/tags/v5.3.1.tar.gz
 https://github.com/stephenberry/glaze/archive/refs/tags/v5.4.0.tar.gz
+https://github.com/stephenberry/glaze/archive/refs/tags/v5.4.1.tar.gz
 https://github.com/stevegrubb/libcap-ng/archive/refs/tags/v0.8.3.tar.gz
 https://github.com/stevegrubb/libcap-ng/archive/refs/tags/v0.8.4.tar.gz
 https://github.com/stevegrubb/libcap-ng/archive/refs/tags/v0.8.5.tar.gz
@@ -4290,6 +4305,7 @@ https://github.com/webmproject/libvpx/archive/refs/tags/v1.14.0.tar.gz
 https://github.com/webmproject/libvpx/archive/refs/tags/v1.14.1.tar.gz
 https://github.com/webmproject/libvpx/archive/refs/tags/v1.15.0.tar.gz
 https://github.com/webmproject/libvpx/archive/refs/tags/v1.15.1.tar.gz
+https://github.com/webmproject/libvpx/archive/refs/tags/v1.15.2.tar.gz
 https://github.com/weechat/weechat/archive/refs/tags/v4.0.4.tar.gz
 https://github.com/weechat/weechat/archive/refs/tags/v4.0.5.tar.gz
 https://github.com/weechat/weechat/archive/refs/tags/v4.1.0.tar.gz
@@ -4473,6 +4489,7 @@ https://gitlab.com/graphviz/graphviz/-/archive/12.1.1/graphviz-12.1.1.tar.bz2
 https://gitlab.com/graphviz/graphviz/-/archive/12.1.2/graphviz-12.1.2.tar.bz2
 https://gitlab.com/graphviz/graphviz/-/archive/12.2.0/graphviz-12.2.0.tar.bz2
 https://gitlab.com/graphviz/graphviz/-/archive/12.2.1/graphviz-12.2.1.tar.bz2
+https://gitlab.com/graphviz/graphviz/-/archive/13.0.0/graphviz-13.0.0.tar.bz2
 https://gitlab.com/graphviz/graphviz/-/archive/7.0.3/graphviz-7.0.3.tar.bz2
 https://gitlab.com/graphviz/graphviz/-/archive/8.1.0/graphviz-8.1.0.tar.bz2
 https://gitlab.com/graphviz/graphviz/-/archive/9.0.0/graphviz-9.0.0.tar.bz2
@@ -5463,6 +5480,7 @@ https://www.nano-editor.org/dist/v7/nano-7.2.tar.xz
 https://www.nano-editor.org/dist/v8/nano-8.2.tar.xz
 https://www.nano-editor.org/dist/v8/nano-8.3.tar.xz
 https://www.nano-editor.org/dist/v8/nano-8.4.tar.xz
+https://www.nano-editor.org/dist/v8/nano-8.5.tar.xz
 https://www.nasm.us/pub/nasm/releasebuilds/2.16.0.1/nasm-2.16.01.tar.gz
 https://www.nasm.us/pub/nasm/releasebuilds/2.16.01/nasm-2.16.01.tar.gz
 https://www.nasm.us/pub/nasm/releasebuilds/2.16.02/nasm-2.16.02.tar.gz
