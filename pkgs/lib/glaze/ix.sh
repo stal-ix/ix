@@ -5,12 +5,12 @@ glaze
 {% endblock %}
 
 {% block version %}
-5.4.0
+5.4.1
 {% endblock %}
 
 {% block fetch %}
 https://github.com/stephenberry/glaze/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-sha:b6f7f62dba80b863df16a9370f676bc32f72a2d2ee401952aa9305b202136476
+sha:a5d578e58fa0e0930eb02bf99ebcb0cb732ce04ce427ec608d773c6f5258e545
 {% endblock %}
 
 {% block lib_deps %}
