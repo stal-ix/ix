@@ -3983,6 +3983,7 @@ https://github.com/svenstaro/miniserve/archive/refs/tags/v0.26.0.tar.gz
 https://github.com/svenstaro/miniserve/archive/refs/tags/v0.29.0.tar.gz
 https://github.com/swaywm/sway/archive/refs/tags/1.10.1.tar.gz
 https://github.com/swaywm/sway/archive/refs/tags/1.10.tar.gz
+https://github.com/swaywm/sway/archive/refs/tags/1.11.tar.gz
 https://github.com/swaywm/sway/archive/refs/tags/1.8.1.tar.gz
 https://github.com/swaywm/sway/archive/refs/tags/1.9-rc1.tar.gz
 https://github.com/swaywm/sway/archive/refs/tags/1.9.tar.gz
