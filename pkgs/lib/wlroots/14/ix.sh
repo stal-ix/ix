@@ -10,7 +10,7 @@ wlroots
 
 {% block fetch %}
 https://gitlab.freedesktop.org/wlroots/wlroots/-/archive/{{self.version().strip()}}/wlroots-{{self.version().strip()}}.tar.bz2
-md5:7c8a3246e7ddb724bf7397a2f8f9b782
+sha:d7890185b8990727b259907310823347277559caa0e7c7c671b6a19db5ff1aed
 {% endblock %}
 
 {% block lib_deps %}
@@ -43,7 +43,7 @@ vulkan
 
 {% block meson_flags %}
 xwayland=disabled
-renderers={{self.renderers().strip().replace('\n', ',')}}
+renderers={{self.wlr_renderers().strip().replace('\n', ',')}}
 {% endblock %}
 
 {% block c_rename_symbol %}

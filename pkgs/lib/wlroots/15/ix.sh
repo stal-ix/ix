@@ -36,6 +36,6 @@ sed -e 's|unsigned layer_count.*|unsigned layer_count = 0;|' -i render/vulkan/vu
 {% endblock %}
 
 {% block meson_flags %}
-# yeah, baby
+{{super()}}
 backends=drm,libinput
 {% endblock %}
