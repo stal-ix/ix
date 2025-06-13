@@ -32,6 +32,7 @@ def iter_recs(args):
                 yield f'{a}/ix.sh', {
                     'url': rec['url'],
                     'md5': rec['md5_digest'],
+                    'sha': rec['digests']['sha256'],
                 }
 
 def dict_merge(it):
