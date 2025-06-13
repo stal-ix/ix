@@ -6,6 +6,8 @@ import json
 import time
 import subprocess
 
+sys.stdout = sys.stderr
+
 GOOD = frozenset('0123456789abcdef')
 sent = '1' * 64
 go_latest = 24
