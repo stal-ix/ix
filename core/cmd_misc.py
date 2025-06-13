@@ -20,30 +20,9 @@ def prepare_dir(d):
     os.makedirs(d)
 
 
-def hash(n):
-    if n == 'md5':
-        return hashlib.md5
-
-    if n == 'sha':
-        return hashlib.sha256
-
-    raise Exception(f'unsupported hash name {n}')
-
-
-def chksum(path, sch):
-    func = hash(sch)
-
+def calc_chksum(path):
     with open(path, 'rb') as f:
-        return func(f.read()).hexdigest()
-
-
-def calc_chksum(path, old_cs):
-    if ':' in old_cs:
-        sch = old_cs[:old_cs.index(':')]
-
-        return sch + ':' + chksum(path, sch)
-
-    return chksum(path, 'sha')
+        return hashlib.sha256(f.read()).hexdigest()
 
 
 def cli_misc_extract(ctx):
@@ -111,7 +90,7 @@ def do_fetch(url, path, sha, *mirrors):
 
 
 def check_md5(path, old_cs):
-    new_cs = calc_chksum(path, old_cs)
+    new_cs = calc_chksum(path)
 
     if new_cs != old_cs:
         cs_col = cl.col(new_cs, color='r')
