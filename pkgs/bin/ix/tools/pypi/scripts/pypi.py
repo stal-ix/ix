@@ -10,7 +10,6 @@ import itertools
 
 import urllib.request as ur
 
-
 try:
     import ssl
     ssl._create_default_https_context = ssl._create_unverified_context
@@ -47,7 +46,7 @@ def update(cur, pkg):
     return dict_merge(itertools.chain(cur.items(), iter_recs(pkg)))
 
 def main():
-    pip = os.environ['IX_PKGS_ROOT'] + '/pkgs/pip/pypi.json'
+    pip = os.environ['IX_DIR'] + '/pkgs/pip/pypi.json'
 
     with open(pip, 'r') as f:
         cur = json.loads(f.read())

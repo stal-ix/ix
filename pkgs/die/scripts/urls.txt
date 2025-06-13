@@ -254,6 +254,7 @@ https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.14.7.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.14.8.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.14.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.15.1.tar.xz
+https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.15.2.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.15.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.2.14.tar.xz
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.3.13.tar.xz
@@ -4367,6 +4368,7 @@ https://github.com/xiph/opus/archive/refs/tags/v1.5.1.tar.gz
 https://github.com/xiph/opus/archive/refs/tags/v1.5.2.tar.gz
 https://github.com/xiph/theora/archive/refs/tags/v1.2.0.tar.gz
 https://github.com/xjasonlyu/tun2socks/archive/56786517dc3d4de051980a45dff71d33c924862b.zip
+https://github.com/xjasonlyu/tun2socks/archive/refs/tags/v2.6.0.tar.gz
 https://github.com/xkbcommon/libxkbcommon/archive/refs/tags/xkbcommon-1.10.0.tar.gz
 https://github.com/xkbcommon/libxkbcommon/archive/refs/tags/xkbcommon-1.5.0.tar.gz
 https://github.com/xkbcommon/libxkbcommon/archive/refs/tags/xkbcommon-1.6.0.tar.gz
@@ -4834,19 +4836,6 @@ https://gitlab.gnome.org/crab2313/evince/-/archive/4c91df66ca83f8f1d057f0aa90696
 https://gitlab.gnome.org/jadahl/libdecor/-/archive/0.1.1/libdecor-0.1.1.tar.bz2
 https://gitlab.matrix.org/matrix-org/olm/-/archive/3.2.15/olm-3.2.15.tar.bz2
 https://gitlab.matrix.org/matrix-org/olm/-/archive/3.2.16/olm-3.2.16.tar.bz2
-https://gitlab.torproject.org/tpo/core/arti/-/archive/arti-v1.2.2/arti-arti-v1.2.2.tar.bz2
-https://gitlab.torproject.org/tpo/core/arti/-/archive/arti-v1.2.8/arti-arti-v1.2.8.tar.bz2
-https://gitlab.torproject.org/tpo/core/arti/-/archive/arti-v1.3.0/arti-arti-v1.3.0.tar.bz2
-https://gitlab.torproject.org/tpo/core/arti/-/archive/arti-v1.3.1/arti-arti-v1.3.1.tar.bz2
-https://gitlab.torproject.org/tpo/core/arti/-/archive/arti-v1.4.0/arti-arti-v1.4.0.tar.bz2
-https://gitlab.torproject.org/tpo/core/arti/-/archive/arti-v1.4.1/arti-arti-v1.4.1.tar.bz2
-https://gitlab.torproject.org/tpo/core/tor/-/archive/tor-0.4.7.14/tor-tor-0.4.7.14.tar.bz2
-https://gitlab.torproject.org/tpo/core/tor/-/archive/tor-0.4.7.15/tor-tor-0.4.7.15.tar.bz2
-https://gitlab.torproject.org/tpo/core/tor/-/archive/tor-0.4.8.11/tor-tor-0.4.8.11.tar.bz2
-https://gitlab.torproject.org/tpo/core/tor/-/archive/tor-0.4.8.12/tor-tor-0.4.8.12.tar.bz2
-https://gitlab.torproject.org/tpo/core/tor/-/archive/tor-0.4.8.13/tor-tor-0.4.8.13.tar.bz2
-https://gitlab.torproject.org/tpo/core/tor/-/archive/tor-0.4.8.15/tor-tor-0.4.8.15.tar.bz2
-https://gitlab.torproject.org/tpo/core/tor/-/archive/tor-0.4.8.16/tor-tor-0.4.8.16.tar.bz2
 https://gitlab.xiph.org/xiph/ogg/-/archive/v1.3.5/ogg-v1.3.5.tar.bz2
 https://gitlab.xiph.org/xiph/rnnoise/-/archive/7f449bf8bd3b933891d12c30112268c4090e4d59/rnnoise-7f449bf8bd3b933891d12c30112268c4090e4d59.tar.bz2
 https://gitlab.xiph.org/xiph/speex/-/archive/Speex-1.2.1/speex-Speex-1.2.1.tar.bz2

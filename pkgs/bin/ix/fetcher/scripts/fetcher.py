@@ -62,14 +62,9 @@ def iter_cached(sha, mirrors):
 
 
 def iter_urls(url, sha, mirrors):
-    sha = sha.removeprefix('sha:')
-
-    if len(sha) == 64:
-        for u in list(iter_cached(sha, mirrors)):
-            yield u, True
-
     while True:
-        yield url, False
+        yield from iter_cached(sha.removeprefix('sha:'), mirrors)
+        yield url
 
 
 def iter_tout():
@@ -82,7 +77,16 @@ def iter_tout():
 
 
 def do_fetch(url, path, sha, mirrors):
-    for (u, best_effort), tout, ff in zip(iter_urls(url, sha, mirrors), iter_tout(), iter_ff()):
+    skip = set()
+    full = frozenset(mirrors + [url])
+
+    for u, tout, ff in zip(iter_urls(url, sha, mirrors), iter_tout(), iter_ff()):
+        if len(skip) >= len(full):
+            raise Exception(f'can not fetch {url}, no attempts left')
+
+        if u in skip:
+            continue
+
         prepare_dir(os.path.dirname(path))
 
         try:
@@ -90,18 +94,12 @@ def do_fetch(url, path, sha, mirrors):
 
             return check_md5(path, sha)
         except Exception as e:
-            if best_effort:
-                print(f'while fetching cached {url}, with {sha}: {e}')
+            if '404' in str(e):
+                skip.add(u)
+            elif 'checksum' in str(e):
+                skip.add(u)
             else:
-                if '404' in str(e):
-                    raise Exception(f'can not fetch {url}:\n{e}'.strip())
-
-                if 'checksum' in str(e):
-                    raise e
-
-                print(f'while fetching {url}:\n{e}\nwill retry')
-
-            time.sleep(1)
+                print(f'while fetch {u}: {e}')
 
 
 def check_md5(path, old_cs):
