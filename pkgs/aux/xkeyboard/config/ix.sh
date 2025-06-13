@@ -5,7 +5,7 @@ xkeyboard-config
 {% endblock %}
 
 {% block version %}
-2.44
+2.45
 {% endblock %}
 
 {% block fetch %}
