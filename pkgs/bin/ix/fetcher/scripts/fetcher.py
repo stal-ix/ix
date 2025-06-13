@@ -184,9 +184,7 @@ def fetch_url_curl(args, url, out, tout):
 def iter_ff_0():
     for meth in [fetch_url_curl]:
         for p in P.strip().split(';'):
-            p = p.strip()
-
-            if p:
+            if p := p.strip():
                 yield functools.partial(meth, ['--socks5', p])
 
         yield functools.partial(meth, [])
