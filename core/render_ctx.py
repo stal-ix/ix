@@ -31,7 +31,7 @@ def parse_urls(urls):
         if '://' in l:
             cur['url'] = l
         else:
-            cur['md5'] = l
+            cur['md5'] = l.removeprefix('sha:')
 
         if len(cur) == 2:
             yield cur
