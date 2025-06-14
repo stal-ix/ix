@@ -21,3 +21,9 @@ lib/z
 {% block patch %}
 rm autogen.sh
 {% endblock %}
+
+{% block configure_flags %}
+{% if riscv64 %}
+--enable-riscv-rvv=off
+{% endif %}
+{% endblock %}
