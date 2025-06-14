@@ -13,14 +13,11 @@ pip/wheel
 {% block install %}
 {{super()}}
 cd ${out}
-mv cffi* lib
-cd lib
-cp -R EGG-INFO cffi-1.16-py3.12.egg-info
 py_exports > exports
 cat exports
 {% endblock %}
 
 {% block env %}
 {{super()}}
-export PYTHONPATH="${out}/lib:\${PYTHONPATH}"
+export PYTHONPATH="${out}:\${PYTHONPATH}"
 {% endblock %}

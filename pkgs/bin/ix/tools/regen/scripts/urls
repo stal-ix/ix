@@ -15,6 +15,7 @@ export LC_ALL=C
 cat urls.txt
 cat dump.json | ix_flt_upstream
 find ${IX_DIR} -name '*.sh' | xargs cat | grep "http[s]*://"
+cat ${IX_DIR}/pkgs/pip/pypi.json | grep '://' | sed -e 's|.* "||' | tr -d '"'
 ) | grep -v '#'  \
   | grep -v ' '  \
   | grep -v '{{' \

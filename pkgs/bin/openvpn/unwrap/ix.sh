@@ -24,11 +24,13 @@ lib/bsd/overlay
 lib/{{openvpnssl or 'openssl'}}
 {% endblock %}
 
-{% block bld_tool %}
-pip/docutils/scripts
-{% endblock %}
-
 {% block configure_flags %}
 --disable-plugin-auth-pam
 --disable-plugin-down-root
+{% endblock %}
+
+{% block build %}
+{{super()}}
+>doc/openvpn.8
+>doc/openvpn-examples.5
 {% endblock %}
