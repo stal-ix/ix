@@ -30,7 +30,6 @@ find . -type l -delete
 lib/c
 lib/z
 lib/c++
-lib/curses
 bin/dxsc/dll
 lib/execinfo
 {% endblock %}
