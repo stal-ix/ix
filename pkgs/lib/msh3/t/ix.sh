@@ -1,5 +1,7 @@
 {% extends '//die/c/cmake.sh' %}
 
+# check bin/curl/ms
+
 {% block pkg_name %}
 msh3
 {% endblock %}
