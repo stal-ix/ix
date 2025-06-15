@@ -2798,7 +2798,6 @@
 {"bin": "xb-tool", "ix_pkg_name": "bin/xml/b"}
 {"bin": "xconv.pl", "ix_pkg_name": "bin/xinetd"}
 {"bin": "xdg-dbus-proxy", "ix_pkg_name": "bin/xdg/dbus/proxy"}
-{"bin": "xdg-portal-ix", "ix_pkg_name": "bin/xdg/desktop/portal/ix"}
 {"bin": "xfs_admin", "ix_pkg_name": "bin/xfsprogs/6/latest"}
 {"bin": "xfs_bmap", "ix_pkg_name": "bin/xfsprogs/6/latest"}
 {"bin": "xfs_copy", "ix_pkg_name": "bin/xfsprogs/6/latest"}

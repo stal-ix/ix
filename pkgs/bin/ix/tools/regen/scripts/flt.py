@@ -17,6 +17,9 @@ for l in sys.stdin.read().split('\n'):
     if rec['ix_pkg_name'].startswith('bld/'):
         continue
 
+    if len(rec['pkg_ver']) == 40:
+        continue
+
     groups[rec['pkg_name']].append(rec)
 
 def norm_ver(v):
