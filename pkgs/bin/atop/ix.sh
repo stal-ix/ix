@@ -5,12 +5,12 @@ atop
 {% endblock %}
 
 {% block version %}
-2.11.1
+2.12.0
 {% endblock %}
 
 {% block fetch %}
 https://www.atoptool.nl/download/atop-{{self.version().strip()}}.tar.gz
-77650f79f9e388b6f5666dc113849894575a29bb4de21b8cd58767bf8a905154
+0d09ecc90c14e6ef41c22e3c57c142c3e4fb9cf3c94379077a33c961d5343086
 {% endblock %}
 
 {% block bld_libs %}
