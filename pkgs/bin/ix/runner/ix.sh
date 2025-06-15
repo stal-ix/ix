@@ -1,6 +1,6 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
-bin/dash
+bin/dash/lite
 bin/ix/runner/scripts
 {% endblock %}
