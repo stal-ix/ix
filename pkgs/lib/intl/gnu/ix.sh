@@ -13,9 +13,10 @@ lib/darwin/framework/CoreFoundation
 bin/gperf
 bld/bison
 bld/gettext
-{% if sanitize %}
-bld/redefiner
-{% endif %}
+{% endblock %}
+
+{% block build_flags %}
+san_intercept
 {% endblock %}
 
 {% block patch %}
@@ -51,8 +52,4 @@ export COFLAGS="--with-libintl-prefix=${out} \${COFLAGS}"
 {% block install %}
 {{super()}}
 test -f ${out}/lib/libintl.a
-{% if sanitize %}
-{# rename textdomain() #}
-ix_redefiner ${out}/lib/libintl.a ${IX_SANITIZER_INTERCEPT}
-{% endif %}
 {% endblock %}

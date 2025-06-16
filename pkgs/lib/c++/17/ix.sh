@@ -69,6 +69,7 @@ _LIBUNWIND_USE_DLADDR=0
 
 {% block build_flags %}
 shut_up
+san_intercept
 {% endblock %}
 
 {% block cpp_includes %}
@@ -102,11 +103,6 @@ mv include/c++/v1/* include/
 mv ${out}/lib/libunwind.a ${out}/lib/libc++unwind.a
 {% if darwin %}
 llvm-objcopy --redefine-sym ___muloti4=___libcplpl_muloti4 ${out}/lib/libc++.a
-{% endif %}
-{% if sanitize %}
-for lib in libc++unwind.a libc++abi.a; do
-    ix_redefiner ${out}/lib/${lib} ${IX_SANITIZER_INTERCEPT}
-done
 {% endif %}
 {% endblock %}
 

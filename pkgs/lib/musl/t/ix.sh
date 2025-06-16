@@ -18,11 +18,8 @@ lib/build
 lib/musl/env
 {% endblock %}
 
-{% block std_box %}
-{{super()}}
-{% if sanitize %}
-bld/redefiner
-{% endif %}
+{% block build_flags %}
+san_intercept
 {% endblock %}
 
 {% block configure_script %}
@@ -90,11 +87,6 @@ done
 cd ${out}/lib
 ar q libcrt.a crt1.o crti.o crtn.o
 ranlib libcrt.a
-{% if sanitize %}
-ls ${out}/lib/*.a ${out}/lib/*.o | while read l; do
-    ix_redefiner ${l} ${IX_SANITIZER_INTERCEPT}
-done
-{% endif %}
 {% endblock %}
 
 {% block env %}

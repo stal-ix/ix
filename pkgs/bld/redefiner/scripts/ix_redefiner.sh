@@ -1,5 +1,7 @@
 #!/usr/bin/env sh
 
+set -xue
+
 # Collect all defined global symbols from the given library,
 # then see which ones are intercepted.
 llvm-nm -AgjU ${1} | \
