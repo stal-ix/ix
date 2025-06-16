@@ -4,6 +4,9 @@
 lib/kernel
 lib/c/naked
 lib/shim/alloc
+{% if sanitize %}
+lib/build/sanitize/hack_cmake
+{% endif %}
 lib/compiler_rt/builtins/hack/ish
 {% endblock %}
 

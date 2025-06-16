@@ -3,6 +3,8 @@
 {% block lib_deps %}
 {% if force_allocator %}
 lib/{{force_allocator}}
+{% elif sanitize == 'address' %}
+{# AddressSanitizer already has a built-in allocator #}
 {% elif linux %}
 lib/{{allocator or default_allocator}}
 {% elif darwin %}
