@@ -5461,6 +5461,7 @@ https://www.gnupg.org/ftp/gcrypt/npth/npth-1.8.tar.bz2
 https://www.greenwoodsoftware.com/less/less-633.tar.gz
 https://www.greenwoodsoftware.com/less/less-661.tar.gz
 https://www.greenwoodsoftware.com/less/less-668.tar.gz
+https://www.haproxy.org/download/3.2/src/haproxy-3.2.1.tar.gz
 https://www.ibiblio.org/pub/Linux/libs/graphics/t1lib-5.1.2.tar.gz
 https://www.inf.puc-rio.br/~roberto/lpeg/lpeg-1.1.0.tar.gz
 https://www.iozone.org/src/current/iozone3_494.tgz

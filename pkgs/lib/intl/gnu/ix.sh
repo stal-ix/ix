@@ -15,6 +15,10 @@ bld/bison
 bld/gettext
 {% endblock %}
 
+{% block build_flags %}
+san_intercept
+{% endblock %}
+
 {% block patch %}
 {{super()}}
 # WASI fix

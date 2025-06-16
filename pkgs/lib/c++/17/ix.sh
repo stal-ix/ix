@@ -13,6 +13,16 @@ lib/c/naked
 lib/kernel
 lib/shim/alloc
 {% endif %}
+{% if sanitize %}
+lib/build/sanitize/hack_cmake
+{% endif %}
+{% endblock %}
+
+{% block std_box %}
+{{super()}}
+{% if sanitize %}
+bld/redefiner
+{% endif %}
 {% endblock %}
 
 {% block cmake_flags %}
@@ -59,6 +69,7 @@ _LIBUNWIND_USE_DLADDR=0
 
 {% block build_flags %}
 shut_up
+san_intercept
 {% endblock %}
 
 {% block cpp_includes %}

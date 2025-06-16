@@ -13,6 +13,9 @@
   {% if 'rename_dynlib' in build_flags %}
     bld/rename/dynlib
   {% endif %}
+  {% if sanitize and lib and 'san_intercept' in build_flags %}
+    bld/redefiner
+  {% endif %}
   {{super()}}
 {% endblock %}
 
@@ -30,6 +33,14 @@ done
 {% endif %}
 {% if 'fix_cmake_lib' in build_flags %}
 fix_cmake_lib ${out}/lib/cmake
+{% endif %}
+{% if sanitize and lib and 'san_intercept' in build_flags %}
+(
+    find ${out}/lib -type f -name '*.a'
+    find ${out}/lib -type f -name '*.o'
+) | while read l; do
+    ix_redefiner ${l} ${IX_SANITIZER_INTERCEPT}
+done
 {% endif %}
 {% endblock %}
 
