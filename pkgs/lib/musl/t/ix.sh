@@ -18,6 +18,13 @@ lib/build
 lib/musl/env
 {% endblock %}
 
+{% block std_box %}
+{{super()}}
+{% if sanitize %}
+bld/redefiner
+{% endif %}
+{% endblock %}
+
 {% block configure_script %}
 ./configure
 {% endblock %}
@@ -84,9 +91,9 @@ cd ${out}/lib
 ar q libcrt.a crt1.o crti.o crtn.o
 ranlib libcrt.a
 {% if sanitize %}
-find ${out}/lib \
-  '(' -name '*.a' -or -name '*.o' ')' \
-  -exec ${IX_SANITIZER_SYMBOL_REDEFINER} '{}' ';'
+ls ${out}/lib/*.a ${out}/lib/*.o | while read l; do
+    ix_redefiner ${l} ${IX_SANITIZER_INTERCEPT}
+done
 {% endif %}
 {% endblock %}
 

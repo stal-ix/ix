@@ -18,6 +18,13 @@ lib/build/sanitize/hack_cmake
 {% endif %}
 {% endblock %}
 
+{% block std_box %}
+{{super()}}
+{% if sanitize %}
+bld/redefiner
+{% endif %}
+{% endblock %}
+
 {% block cmake_flags %}
 {{super()}}
 
@@ -97,9 +104,8 @@ mv ${out}/lib/libunwind.a ${out}/lib/libc++unwind.a
 llvm-objcopy --redefine-sym ___muloti4=___libcplpl_muloti4 ${out}/lib/libc++.a
 {% endif %}
 {% if sanitize %}
-for lib in libc++unwind.a libc++abi.a
-do
-  ${IX_SANITIZER_SYMBOL_REDEFINER} ${out}/lib/${lib}
+for lib in libc++unwind.a libc++abi.a; do
+    ix_redefiner ${out}/lib/${lib} ${IX_SANITIZER_INTERCEPT}
 done
 {% endif %}
 {% endblock %}

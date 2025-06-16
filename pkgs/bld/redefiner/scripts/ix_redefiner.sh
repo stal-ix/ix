@@ -5,8 +5,9 @@
 llvm-nm -AgjU ${1} | \
   cut -d ' ' -f 2 | \
   sort -u | \
-  cat - $(dirname ${0})/intercepted_symbols.txt | \
+  cat - ${2} | \
   sort | \
   uniq -d | \
   sed 's/.*/& __real_&/' > ${TMPDIR}/redefs
+
 llvm-objcopy --redefine-syms=${TMPDIR}/redefs ${1}

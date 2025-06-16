@@ -1,10 +1,5 @@
 {% extends '//lib/compiler_rt/t/ix.sh' %}
 
-{% block fetch %}
-{# LLVM 20 contains this important commit: https://github.com/llvm/llvm-project/pull/108913 #}
-{% include '//lib/llvm/20/ver.sh' %}
-{% endblock %}
-
 {% block sanitizer_name %}
 {{ix.error('The sanitizer_name block was supposed to be overriden but it wasn\'t')}}
 {% endblock %}
@@ -69,7 +64,7 @@ cat << 'EOF' > compiler-rt/lib/sanitizer_common/sanitizer_fake_dlsym.cpp
 #include <stdlib.h>
 #include <string.h>
 extern "C"
-void* {{uniq_id}}_dlsym(void* handle, const char* symbol) {
+void* dlsym(void* handle, const char* symbol) {
   // Called from `InitializeSwiftDemangler()` in `compiler-rt/lib/sanitizer_common/sanitizer_symbolizer_posix_libcdep.cpp`
   bool known_call = handle == nullptr && strcmp(symbol, "swift_demangle") == 0;
   if (!known_call) {
@@ -111,7 +106,7 @@ dlsym
 
 {% block env %}
 export LDFLAGS="-resource-dir=${out} \${LDFLAGS}"
-export IX_SANITIZER_SYMBOL_REDEFINER="${out}/lib/aux/redefiner.sh"
+export IX_SANITIZER_INTERCEPT="${out}/lib/intercepted_symbols.txt"
 {% for x in ix.parse_list(self.non_intercepted_symbols()) %}
 export LDFLAGS="-Wl,--defsym=__real_{{x}}=0 \${LDFLAGS}"
 {% endfor %}
@@ -162,10 +157,6 @@ do
 done
 
 {# Any library that wants to define any of the intercepted symbols has to go through the redefiner. #}
-mkdir -p ${out}/share
-mv intercepted_symbols.txt ${out}/share/
-cat << 'EOF' > ${out}/share/redefiner.sh
-{% include 'redefiner.sh' %}
-EOF
-chmod +x ${out}/share/redefiner.sh
+mkdir -p ${out}/lib
+mv intercepted_symbols.txt ${out}/lib/
 {% endblock %}
