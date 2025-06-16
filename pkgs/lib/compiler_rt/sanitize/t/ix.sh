@@ -54,27 +54,6 @@ sed -i \
 ' \
   compiler-rt/lib/interception/interception.h
 
-{# With compile-time binding, dlsym() is not used and can be stubbed. #}
-sed -i \
-  '/SANITIZER_SOURCES_NOTERMINATION/a sanitizer_fake_dlsym.cpp' \
-  compiler-rt/lib/sanitizer_common/CMakeLists.txt
-
-cat << 'EOF' > compiler-rt/lib/sanitizer_common/sanitizer_fake_dlsym.cpp
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-extern "C"
-void* dlsym(void* handle, const char* symbol) {
-  // Called from `InitializeSwiftDemangler()` in `compiler-rt/lib/sanitizer_common/sanitizer_symbolizer_posix_libcdep.cpp`
-  bool known_call = handle == nullptr && strcmp(symbol, "swift_demangle") == 0;
-  if (!known_call) {
-    fprintf(stderr, "dlsym() was not supposed to be called with %p:%s\n", handle, symbol);
-    abort();
-  }
-  return nullptr;
-}
-EOF
-
 {# `__dn_comp` is called `dn_comp` in musl. #}
 sed -i \
   's/define DN_COMP_INTERCEPTOR_NAME __dn_comp/define DN_COMP_INTERCEPTOR_NAME dn_comp/' \
@@ -100,8 +79,8 @@ COMPILER_RT_SANITIZERS_TO_BUILD={{self.sanitizer_name()}}
 ${PWD}/compiler-rt/include
 {% endblock %}
 
-{% block c_rename_symbol %}
-dlsym
+{% block cpp_defines %}
+dlsym=stub_dlsym
 {% endblock %}
 
 {% block env %}

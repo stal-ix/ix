@@ -14,6 +14,7 @@ _Unwind_GetIP
 __real___cxa_throw
 __real___cxa_rethrow_primary_exception
 __real__Unwind_RaiseException
+stub_dlsym
 {% endblock %}
 
 {% block env %}
