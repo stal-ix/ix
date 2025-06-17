@@ -6,7 +6,7 @@ cargo_v3_{{parent_id}}.pzd
 
 {% block bld_tool %}
 bld/git
-{{cargoc_ver}}
+{{cargo_tool}}
 {{super()}}
 {% endblock %}
 

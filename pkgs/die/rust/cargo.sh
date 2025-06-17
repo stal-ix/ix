@@ -48,7 +48,7 @@ sha={{self.cargo_sha().strip()}}
 parent_id={{self.cargo_sha().strip()}}
 refine={{self.cargo_refine().strip() | b64e}}
 refine_tools={{self.cargo_refine_tools().strip() | b64e}}
-cargoc_ver={{self.cargo_tool().strip()}}
+cargo_tool={{self.cargo_tool().strip()}}
 fetch_sha={{self.cargo_fetch_sha().strip()}}
 {% endblock %}
 
