@@ -18,7 +18,7 @@ bin/go/lang/{go_latest}
 '''.replace('{go_latest}', str(go_latest))
 cargo_latest = 86
 cargo_tool = '''
-{% block cargoc_ver %}
+{% block cargo_tool %}
 bld/cargo/{cargo_latest}
 {% endblock %}
 '''.replace('{cargo_latest}', str(cargo_latest))
@@ -90,7 +90,7 @@ def fix1(pn, fr, to):
 
     if nd:
         if 'cargo_url' in nd:
-            if 'cargoc_ver' not in nd:
+            if 'cargo_tool' not in nd:
                 nd += cargo_tool
 
             for ver in range(75, cargo_latest):
