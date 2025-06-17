@@ -15,7 +15,7 @@ https://busybox.net/downloads/busybox-{{self.version().strip()}}.tar.bz2
 
 {% block bld_libs %}
 lib/c
-lib/linux/headers/prev
+lib/kernel
 {% endblock %}
 
 {% block bld_tool %}
