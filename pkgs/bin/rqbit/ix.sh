@@ -20,7 +20,7 @@ https://github.com/ikatson/rqbit/archive/refs/tags/v{{self.version().strip()}}.t
 v4
 {% endblock %}
 
-{% block cargoc_ver %}
+{% block cargo_tool %}
 bld/cargo/83
 {% endblock %}
 

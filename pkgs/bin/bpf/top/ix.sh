@@ -38,6 +38,6 @@ mkdir ${out}/bin
 cp ${tmp}/out/bpftop ${out}/bin/
 {% endblock %}
 
-{% block cargoc_ver %}
+{% block cargo_tool %}
 bld/cargo/83
 {% endblock %}

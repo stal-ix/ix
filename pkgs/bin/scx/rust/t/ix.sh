@@ -21,7 +21,7 @@ lib/bpf
 lib/llvm/19
 {% endblock %}
 
-{% block cargoc_ver %}
+{% block cargo_tool %}
 bld/cargo/83
 {% endblock %}
 

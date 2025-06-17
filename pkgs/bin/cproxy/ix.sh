@@ -20,6 +20,6 @@ https://github.com/NOBLES5E/cproxy/archive/refs/tags/v{{self.version().strip()}}
 cproxy
 {% endblock %}
 
-{% block cargoc_ver %}
+{% block cargo_tool %}
 bld/cargo/86
 {% endblock %}

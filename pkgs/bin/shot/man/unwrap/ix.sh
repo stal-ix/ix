@@ -17,6 +17,6 @@ mkdir ${out}/bin
 cp ${tmp}/out/shotman ${out}/bin/
 {% endblock %}
 
-{% block rustc_ver %}
-75
+{% block cargo_tool %}
+bld/cargo/75
 {% endblock %}

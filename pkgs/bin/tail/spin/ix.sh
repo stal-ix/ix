@@ -20,10 +20,6 @@ https://github.com/bensadeh/tailspin/archive/refs/tags/{{self.version().strip()}
 tspin
 {% endblock %}
 
-{% block cargoc_ver %}
+{% block cargo_tool %}
 bld/cargo/86
-{% endblock %}
-
-{% block rustc_ver %}
-86
 {% endblock %}

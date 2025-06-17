@@ -25,6 +25,6 @@ mkdir ${out}/bin
 cp ${tmp}/out/syd ${out}/bin/
 {% endblock %}
 
-{% block cargoc_ver %}
+{% block cargo_tool %}
 bld/cargo/86
 {% endblock %}

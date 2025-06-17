@@ -21,6 +21,6 @@ mkdir ${out}/bin
 cp ${tmp}/out/bore ${out}/bin/
 {% endblock %}
 
-{% block cargoc_ver %}
+{% block cargo_tool %}
 bld/cargo/86
 {% endblock %}

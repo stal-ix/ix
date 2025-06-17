@@ -29,6 +29,6 @@ mkdir ${out}/bin
 cp ${tmp}/out/sniffnet ${out}/bin
 {% endblock %}
 
-{% block cargoc_ver %}
+{% block cargo_tool %}
 bld/cargo/83
 {% endblock %}
