@@ -4,6 +4,7 @@
 {{super()}}
 CONFIG_SHA1_HWACCEL=n
 CONFIG_SHA256_HWACCEL=n
+CONFIG_TC=n
 {% endblock %}
 
 {% block patch %}

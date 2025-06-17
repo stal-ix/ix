@@ -18,13 +18,6 @@ lib/build/sanitize/hack_cmake
 {% endif %}
 {% endblock %}
 
-{% block std_box %}
-{{super()}}
-{% if sanitize %}
-bld/redefiner
-{% endif %}
-{% endblock %}
-
 {% block cmake_flags %}
 {{super()}}
 

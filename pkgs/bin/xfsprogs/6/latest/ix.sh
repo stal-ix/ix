@@ -16,7 +16,6 @@ fa5ab77f8b5169ce48dd8de09446ad7e29834a05b8f52012bae411cf53ec1f58
 {% endblock %}
 
 {% block bld_libs %}
-lib/linux/headers/prev
 {{super()}}
 lib/attr
 {% endblock %}
@@ -24,4 +23,9 @@ lib/attr
 {% block c_rename_symbol %}
 {{super()}}
 hist_init
+{% endblock %}
+
+{% block cpp_defines %}
+{{super()}}
+OVERRIDE_SYSTEM_STATX=1
 {% endblock %}
