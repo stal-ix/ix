@@ -2,8 +2,17 @@
 
 {% block task_pool %}full{% endblock %}
 
+{% block cargo_tool %}
+{% endblock %}
+
 {% block rustc_ver %}
-{{rustc_ver or '83'}}
+{% if rustc_ver %}
+{{rustc_ver}}
+{% elif self.cargo_tool().strip() %}
+{{self.cargo_tool().strip().split('/')[-1]}}
+{% else %}
+83
+{% endif %}
 {% endblock %}
 
 {% block std_env %}
@@ -35,7 +44,13 @@ v3
 {% endblock %}
 
 {% block cargoc_ver %}
+{% if cargoc_ver %}
+{{cargoc_ver}}
+{% elif self.cargo_tool().strip() %}
+{{self.cargo_tool().strip()}}
+{% else %}
 bld/cargo/75
+{% endif %}
 {% endblock %}
 
 {% block cargo_fetch_sha %}
