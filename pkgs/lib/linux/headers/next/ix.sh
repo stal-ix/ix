@@ -1,16 +1,18 @@
 {% extends '//lib/linux/headers/t/ix.sh' %}
 
+{% include '//bin/kernel/6/15/ver.sh' %}
+
 {% block pkg_name %}
 linux-headers
 {% endblock %}
 
 {% block version %}
-6.15.1
+{{self.kernel_version().strip()}}
 {% endblock %}
 
 {% block fetch %}
-https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-{{self.version().strip() | strip_suffix('.0')}}.tar.xz
-44f1bb84fe512e7bafe0e6dc85d38ec1c6c8fcbe97ccb51d8c19930b799f0d64
+{{self.kernel_url().strip()}}
+{{self.kernel_sha().strip()}}
 {% endblock %}
 
 {% block host_libs %}
