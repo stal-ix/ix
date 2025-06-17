@@ -47,7 +47,7 @@ bld/meson/6
 bld/glib
 bld/gnome
 bld/gettext
-bld/rust(rustc_ver=83)
+bld/rust/86
 {% endblock %}
 
 {% block build_flags %}
