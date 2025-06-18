@@ -13,7 +13,7 @@ https://github.com/RazrFalcon/resvg/archive/refs/tags/v{{self.version().strip()}
 {% endblock %}
 
 {% block cargo_sha %}
-146fc989731754be2fa3d65e00d0d44ec4a5ab255796d4449a89647c980e51c4
+fda07eac7d2115a89caf7557718c2818466c3ab60a3c77533fc2c614f7bed5cb
 {% endblock %}
 
 {% block unpack %}
@@ -24,4 +24,8 @@ cd crates/resvg
 {% block install %}
 mkdir ${out}/bin/
 cp ${tmp}/out/resvg ${out}/bin/
+{% endblock %}
+
+{% block cargo_tool %}
+bld/cargo/86
 {% endblock %}
