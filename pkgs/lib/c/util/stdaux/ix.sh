@@ -5,12 +5,12 @@ c-stdaux
 {% endblock %}
 
 {% block version %}
-1.5.0
+1.6.0
 {% endblock %}
 
 {% block fetch %}
 https://github.com/c-util/c-stdaux/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-19fb163160c25babf1f2ecf817e6eb696decfb5e33490dcd9cf68c2ecae97d13
+2ee2b7604a18b919f97f4357e61219520ec0b6e73f4d64ed9902cf1b5af047df
 {% endblock %}
 
 {% block lib_deps %}
