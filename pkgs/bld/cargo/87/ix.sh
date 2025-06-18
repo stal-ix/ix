@@ -5,7 +5,7 @@ cargo
 {% endblock %}
 
 {% block version %}
-0.88.0
+0.87.0
 {% endblock %}
 
 {% block cargo_url %}
@@ -13,7 +13,7 @@ https://github.com/rust-lang/cargo/archive/refs/tags/{{self.version().strip()}}.
 {% endblock %}
 
 {% block cargo_sha %}
-e8636cc371c845c797d29bf7fe06c0e6273aa6579786f9c0426fb54f3d735726
+31982949e65e6c16f921a329697a6e63c0a7cd6a0fb7369730dfab7da6c0e02f
 {% endblock %}
 
 {% block bld_libs %}
