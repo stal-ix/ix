@@ -5,12 +5,12 @@ enchant
 {% endblock %}
 
 {% block version %}
-2.8.6
+2.8.9
 {% endblock %}
 
 {% block fetch %}
 https://github.com/rrthomas/enchant/releases/download/v{{self.version().strip()}}/enchant-{{self.version().strip()}}.tar.gz
-c4cd0889d8aff8248fc3913de5a83907013962f0e1895030a3836468cd40af5b
+a1ea39b3f7dcd4a4149fd8c406183339eaad717bdb0ed1b4b274bc282cca0e62
 {% endblock %}
 
 {% block conf_ver %}
@@ -33,4 +33,9 @@ bld/fake(tool_name=groff)
 
 {% block configure_flags %}
 --enable-relocatable
+{% endblock %}
+
+{% block install %}
+mkdir -p ${out}/lib/enchant-2
+{{super()}}
 {% endblock %}
