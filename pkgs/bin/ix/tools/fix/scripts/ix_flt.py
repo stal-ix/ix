@@ -24,10 +24,11 @@ for l in sys.stdin.read().split('\n'):
         data = f.read()
 
         if 'cargo_sha' in data:
-            groups[rec['pkg_name']].append(rec)
+            if 'cargo_tool' not in data:
+                groups[rec['pkg_name']].append(rec)
 
 for k in sorted(groups.keys()):
     recs = groups[k]
     ver = recs[0]['pkg_ver']
 
-    print(f'{ver} {ver} ' + ' '.join(x['ix_pkg_full_name'] for x in recs))
+    print(' '.join(x['ix_pkg_full_name'] for x in recs))

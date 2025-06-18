@@ -9,14 +9,19 @@ import subprocess
 sys.stdout = sys.stderr
 
 GOOD = frozenset('0123456789abcdef')
+
 sent = '1' * 64
+
 go_latest = 24
+
 go_tool = '''
 {% block go_tool %}
 bin/go/lang/{go_latest}
 {% endblock %}
 '''.replace('{go_latest}', str(go_latest))
+
 cargo_latest = 86
+
 cargo_tool = '''
 {% block cargo_tool %}
 bld/cargo/{cargo_latest}
@@ -74,19 +79,8 @@ def check1(pn, fr):
 
     return True
 
-def fix1(pn, fr, to):
-    print(f'prepare {pn}')
-
-    with open(pn) as f:
-        data = f.read()
-
-    if 'noauto' in data:
-        return 0
-
-    if fr not in data:
-        return 0
-
-    nd = subst_sha(data, sent).replace(fr, to)
+def fix1(pn):
+    nd = subst_sha(data, sent)
 
     if nd:
         if 'cargo_url' in nd:
@@ -109,15 +103,6 @@ def fix1(pn, fr, to):
 
     return 0
 
-def fix2(pn, sha):
-    with open(pn) as f:
-        data = f.read()
-
-    nd = data.replace(sent, sha)
-
-    with open(pn, 'w') as f:
-        f.write(nd)
-
 def it_files(pkgs):
     for p in pkgs:
         for x in call1('./ix', 'dep', p).decode().split('\n'):
@@ -127,43 +112,18 @@ def it_files(pkgs):
 def revstr(s):
     return ''.join(reversed(s))
 
-def parse_redir(data):
-    for l in data.split('\n'):
-        l = l.strip()
-
-        if '# check' in l:
-            yield from l.strip().split(' ')[2:]
-
 def flt_pkgs(pkgs):
     for x in pkgs:
-        x = x.removesuffix('/unwrap')
+        yield x.removesuffix('/unwrap')
 
-        with open('pkgs/' + x + '/ix.sh') as f:
-            data = f.read()
-
-        if '# check' in data:
-            yield from parse_redir(data)
-        else:
-            yield x
-
-def process(pkgs, fr, to):
-    if not pkgs:
-        print(f'nothing to do')
-
-        return 1
-
+def process(pkgs):
     files = list(sorted(frozenset(it_files(pkgs))))
-
-    if not any(check1('pkgs/' + x, fr) for x in files):
-        print(f'nothing to do')
-
-        return 0
 
     bld_pkgs = list(flt_pkgs(pkgs))
 
     call_eat('./ix', 'build', *bld_pkgs)
 
-    fixed = sum((fix1('pkgs/' + f, fr, to) for f in files), 0)
+    fixed = sum((fix1('pkgs/' + f) for f in files), 0)
 
     if fixed != 1:
         print(f'nothing to do, fixed {fixed}')
@@ -184,4 +144,4 @@ def process(pkgs, fr, to):
 
     return 0
 
-#sys.exit(process(sys.argv[3:], sys.argv[1], sys.argv[2]))
+sys.exit(process(sys.argv[1:]))
