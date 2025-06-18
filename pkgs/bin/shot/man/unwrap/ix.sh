@@ -1,11 +1,19 @@
 {% extends '//die/rust/cargo.sh' %}
 
+{% block pkg_name %}
+shotman
+{% endblock %}
+
+{% block version %}
+0.4.7
+{% endblock %}
+
 {% block cargo_url %}
-https://git.sr.ht/~whynothugo/shotman/archive/99baca7747e6d48801f91b58bc392b7df46dc56b.tar.gz
+https://git.sr.ht/~whynothugo/shotman/archive/v{{self.version().strip()}}.tar.gz
 {% endblock %}
 
 {% block cargo_sha %}
-8b4619a1da74b843d3bb868faa8f972898cf7bd6591024aac3b7f717bc5f5b47
+a04882779c81368d7830cedc8fec549087cd3400b14d9a00704df788b96c1ac8
 {% endblock %}
 
 {% block bld_libs %}
@@ -18,5 +26,5 @@ cp ${tmp}/out/shotman ${out}/bin/
 {% endblock %}
 
 {% block cargo_tool %}
-bld/cargo/75
+bld/cargo/86
 {% endblock %}
