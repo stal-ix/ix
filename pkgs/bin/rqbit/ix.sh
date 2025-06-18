@@ -13,7 +13,7 @@ https://github.com/ikatson/rqbit/archive/refs/tags/v{{self.version().strip()}}.t
 {% endblock %}
 
 {% block cargo_sha %}
-001b6e18f854e622db4f80a2ac6e6eb722780c9821d9e35eefd68c76169d93aa
+broken
 {% endblock %}
 
 {% block cargo_ver %}
@@ -21,7 +21,7 @@ v4
 {% endblock %}
 
 {% block cargo_tool %}
-bld/cargo/83
+bld/cargo/86
 {% endblock %}
 
 {% block cargo_refine %}

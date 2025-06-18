@@ -5,15 +5,15 @@ ironbar
 {% endblock %}
 
 {% block version %}
-0.16.1
+f125058e7955891b5d0649eee8d8d28a6130a465
 {% endblock %}
 
 {% block cargo_url %}
-https://github.com/JakeStanger/ironbar/archive/refs/tags/v{{self.version().strip()}}.tar.gz
+https://github.com/JakeStanger/ironbar/archive/{{self.version().strip()}}.zip
 {% endblock %}
 
 {% block cargo_sha %}
-012add37012d127b7d95b84d6b33f9df23ced30e8509a63de5b8a0896084071c
+78ef18ff10515ee725da610143eb3b396409194adc5ab4258e79408f0435d9ae
 {% endblock %}
 
 {% block bld_libs %}
@@ -21,7 +21,10 @@ lib/lua
 lib/atk
 lib/gtk
 lib/glib
+lib/udev
+lib/input
 lib/openssl
+lib/dbus/menu
 lib/gtk/layer/shell/3
 {% endblock %}
 
@@ -35,5 +38,5 @@ cp ${tmp}/out/ironbar ${out}/bin/
 {% endblock %}
 
 {% block cargo_tool %}
-bld/cargo/75
+bld/cargo/86
 {% endblock %}

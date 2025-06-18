@@ -2,10 +2,6 @@
 
 {% block task_pool %}full{% endblock %}
 
-{% block cargo_tool %}
-bld/cargo/75
-{% endblock %}
-
 {% block rust_tool %}
 bld/rust/{{self.cargo_tool().strip().split('/')[-1]}}
 {% endblock %}

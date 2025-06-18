@@ -13,11 +13,11 @@ https://github.com/svenstaro/miniserve/archive/refs/tags/v{{self.version().strip
 {% endblock %}
 
 {% block cargo_sha %}
-c0e2a6db26a4dfa0697efaae02db2dad26d8bf5db074992ac244dbb7ede7d412
+807bb867a23ad84d5328f30d43135bc24bc0ef934a5452a3a960bcc09fa46a47
 {% endblock %}
 
 {% block cargo_tool %}
-bld/cargo/83
+bld/cargo/86
 {% endblock %}
 
 {% block bld_libs %}

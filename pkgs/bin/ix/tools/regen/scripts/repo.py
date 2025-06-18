@@ -66,5 +66,8 @@ for l in sys.stdin.readlines():
     if not l:
         continue
 
-    if res := export_repology(json.loads(l)):
-        print(json.dumps(res))
+    try:
+        if res := export_repology(json.loads(l)):
+            print(json.dumps(res))
+    except Exception as e:
+        print(f'{l} -> {e}', file=sys.stderr)

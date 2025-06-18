@@ -23,7 +23,6 @@ bin/sys/hud
 bin/regreet
 bin/scx
 bin/lapce
-bin/yofi
 bin/sniff/net
 bin/syd/box
 bin/ruff
