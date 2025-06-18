@@ -31,11 +31,15 @@ bld/make
 feat_os_unix_musl
 {% endblock %}
 
+{% block makefile %}
+list:
+    echo \$(INSTALLEES)
+{% endblock %}
+
 {% block patch %}
 {# tabs!!! #}
 cat << EOF >> GNUmakefile
-list:
-    echo \$(INSTALLEES)
+{{self.makefile().replace('    ', '\t')}}
 EOF
 make list
 {% endblock %}
