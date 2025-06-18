@@ -13,7 +13,7 @@ https://github.com/lapce/lapce/archive/refs/tags/v{{self.version().strip()}}.tar
 {% endblock %}
 
 {% block cargo_sha %}
-98d96bf6c5a4723fce7cf73ba19f16e058480e762f5d2ffb15efb11753ae71bb
+60dd59e4c3c9bfe60f148683c9e21af1a5227949d3de36c4903fda36bba74e10
 {% endblock %}
 
 {% block bld_libs %}
@@ -31,4 +31,8 @@ lib/tree/sitter/plugins
 {% block install %}
 mkdir ${out}/bin
 cp ${tmp}/out/lapce ${out}/bin/
+{% endblock %}
+
+{% block cargo_tool %}
+bld/cargo/86
 {% endblock %}
