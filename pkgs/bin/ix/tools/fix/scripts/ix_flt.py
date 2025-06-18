@@ -24,7 +24,7 @@ for l in sys.stdin.read().split('\n'):
         data = f.read()
 
         if 'cargo_sha' in data:
-            if 'cargo_tool' not in data:
+            if 'bld/cargo/86' not in data:
                 groups[rec['pkg_name']].append(rec)
 
 for k in sorted(groups.keys()):

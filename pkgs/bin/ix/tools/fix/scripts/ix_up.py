@@ -75,9 +75,6 @@ def fix1(pn):
 
     if nd:
         if 'cargo_url' in nd:
-            if 'cargo_tool' not in nd:
-                nd += cargo_tool
-
             for ver in range(75, cargo_latest):
                 nd = nd.replace(f'bld/cargo/{ver}', f'bld/cargo/{cargo_latest}')
         elif 'go_url' in nd:
