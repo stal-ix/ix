@@ -13,7 +13,7 @@ https://github.com/raphamorim/rio/archive/refs/tags/v{{self.version().strip()}}.
 {% endblock %}
 
 {% block cargo_sha %}
-4d0df148058032b2de78a719eecd055fd6da233036647af08b67e9160b4d74cd
+c23821273cf81c7161433661c89aebf0c4b60bf7a163315403d58068307660fc
 {% endblock %}
 
 {% block bld_libs %}
@@ -35,4 +35,8 @@ lib/xkb/common/dl
 {% block install %}
 mkdir ${out}/bin
 cp ${tmp}/out/rio ${out}/bin/
+{% endblock %}
+
+{% block cargo_tool %}
+bld/cargo/86
 {% endblock %}
