@@ -7,7 +7,7 @@
 {% endblock %}
 
 {% block cargo_sha %}
-bfa8e726032ea12b620d033e11970e607290781251fbabe41db820144211b38d
+9d5ca7956239ddae8714a71af15a3f47421642450516022d92836fa889e4150c
 {% endblock %}
 
 {% block bld_libs %}
@@ -22,7 +22,7 @@ lib/llvm/19
 {% endblock %}
 
 {% block cargo_tool %}
-bld/cargo/83
+bld/cargo/86
 {% endblock %}
 
 {% block bld_tool %}
