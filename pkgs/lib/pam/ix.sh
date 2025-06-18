@@ -5,12 +5,12 @@ linux-pam
 {% endblock %}
 
 {% block version %}
-1.7.0
+1.7.1
 {% endblock %}
 
 {% block fetch %}
 https://github.com/linux-pam/linux-pam/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-1dad9cb50b4a19accd7d7b9716777caf5a0f33d26f018f27d63e9e095998f12b
+82aadd97eb697965b577069c12046a4dd1be68361a9978c708698d2a1ee9b6d1
 {% endblock %}
 
 {% block bld_tool %}
