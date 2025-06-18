@@ -13,7 +13,7 @@ https://github.com/GyulyVGC/sniffnet/archive/refs/tags/v{{self.version().strip()
 {% endblock %}
 
 {% block cargo_sha %}
-1f1589fa2f545a23c0ccaf191caeb4cc98bb14633f512fe2db399e029d887500
+1e5ec4a0fba2267f9f5a30bb5ebc7e6b36762465149a7fe7d77b7e42099bca37
 {% endblock %}
 
 {% block bld_libs %}
@@ -30,5 +30,5 @@ cp ${tmp}/out/sniffnet ${out}/bin
 {% endblock %}
 
 {% block cargo_tool %}
-bld/cargo/83
+bld/cargo/86
 {% endblock %}
