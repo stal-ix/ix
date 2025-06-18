@@ -15,5 +15,5 @@ https://github.com/koverstreet/bcachefs-tools/archive/refs/tags/v{{self.version(
 {% endblock %}
 
 {% block cargo_sha %}
-1270b4c071ffb3754198fb7742e4854cdb20fc293b485bed9d7c86e084d0f18e
+84d0478604748ea9d3a824ef304501efb3b08b215733d2f3439d6a0ce0cf8e0f
 {% endblock %}
