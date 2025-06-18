@@ -67,18 +67,6 @@ def parse_sha(data):
 def subst_sha(data, to):
     return data.replace(parse_sha(data), to)
 
-def check1(pn, fr):
-    with open(pn) as f:
-        data = f.read()
-
-    if 'noauto' in data:
-        return False
-
-    if fr not in data:
-        return False
-
-    return True
-
 def fix1(pn):
     nd = subst_sha(data, sent)
 
@@ -103,6 +91,15 @@ def fix1(pn):
 
     return 0
 
+def fix2(pn, sha):
+    with open(pn) as f:
+        data = f.read()
+
+    nd = data.replace(sent, sha)
+
+    with open(pn, 'w') as f:
+        f.write(nd)
+
 def it_files(pkgs):
     for p in pkgs:
         for x in call1('./ix', 'dep', p).decode().split('\n'):
@@ -120,8 +117,6 @@ def process(pkgs):
     files = list(sorted(frozenset(it_files(pkgs))))
 
     bld_pkgs = list(flt_pkgs(pkgs))
-
-    call_eat('./ix', 'build', *bld_pkgs)
 
     fixed = sum((fix1('pkgs/' + f) for f in files), 0)
 
