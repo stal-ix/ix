@@ -4,7 +4,7 @@ set -xue
 
 cd ${IX_DIR}
 
-curl -k 'https://repology.org/api/v1/projects/?maintainer=anton%40samokhvalov.xyz&outdated=1' \
+curl -k 'https://repology.org/api/v1/projects/?inrepo=stalix_dev&outdated=1' \
     | ix_flt \
     | grep -v mesa \
     | grep -v 'bld/' \
