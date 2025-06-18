@@ -13,7 +13,7 @@ https://github.com/uutils/coreutils/archive/refs/tags/{{self.version().strip()}}
 {% endblock %}
 
 {% block cargo_sha %}
-a2c5e3263eda10a8df24efa24de948ad668c82d36ff3a32585089d673acd32c3
+94f7c4d5eeea76da0e00c1c48c0ab0e0619108429648261efd55f95d4d25eda3
 {% endblock %}
 
 {% block bld_libs %}
@@ -35,7 +35,7 @@ feat_os_unix_musl
 {# tabs!!! #}
 cat << EOF >> GNUmakefile
 list:
-	echo \$(INSTALLEES)
+    echo \$(INSTALLEES)
 EOF
 make list
 {% endblock %}
@@ -48,4 +48,8 @@ make list | tr ' ' '\n' | grep -v '^$' | sort | uniq | grep -v coreutils | while
     ln -s coreutils ${out}/bin/${l}
 done
 rm ${out}/bin/uptime
+{% endblock %}
+
+{% block cargo_tool %}
+bld/cargo/86
 {% endblock %}

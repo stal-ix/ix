@@ -13,9 +13,13 @@ https://github.com/uutils/diffutils/archive/refs/tags/v{{self.version().strip()}
 {% endblock %}
 
 {% block cargo_sha %}
-7485816a64e69842fcd22c7a0d12475ae318c2ec5e087510ada67a7017a481ba
+d4905302fb0337c2089c6bc1c2a12c11db7bac60fab9207987a76197d3c2fd76
 {% endblock %}
 
 {% block cargo_bins %}
 diffutils
+{% endblock %}
+
+{% block cargo_tool %}
+bld/cargo/86
 {% endblock %}
