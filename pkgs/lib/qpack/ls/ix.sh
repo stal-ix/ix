@@ -5,12 +5,12 @@ ls-qpack
 {% endblock %}
 
 {% block version %}
-2.6.1
+2.6.2
 {% endblock %}
 
 {% block fetch %}
 https://github.com/litespeedtech/ls-qpack/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-b6c91e8974876c69788fbb7d84c5d49a9a3c932c168fe353261923c742d3d635
+db1a83102bb7d2d946a910cb11a9d69c1c5b9fd9a40249c22c411fb9c429fe16
 {% endblock %}
 
 {% block lib_deps %}

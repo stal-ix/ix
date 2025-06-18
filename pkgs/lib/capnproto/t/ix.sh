@@ -5,12 +5,12 @@ capnproto
 {% endblock %}
 
 {% block version %}
-1.1.0
+1.2.0
 {% endblock %}
 
 {% block fetch %}
 https://github.com/capnproto/capnproto/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-c0a0d78a07e821f7bae26c7fcac20a9202eb3d639a673b2606b76092a1f35b6b
+763ecaa78e900101bc40c1c3397991413ff26996415b891ca9c310987fbdf3fb
 {% endblock %}
 
 {% block lib_deps %}

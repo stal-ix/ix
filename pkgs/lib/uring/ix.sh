@@ -5,12 +5,12 @@ liburing
 {% endblock %}
 
 {% block version %}
-2.10
+2.11
 {% endblock %}
 
 {% block fetch %}
 https://github.com/axboe/liburing/archive/refs/tags/liburing-{{self.version().strip()}}.tar.gz
-0a687616a6886cd82b746b79c4e33dc40b8d7c0c6e24d0f6f3fd7cf41886bf53
+462c35ef21d67e50490f8684c76641ee2c7796e83d43de796852ef4e40662e33
 {% endblock %}
 
 {% block lib_deps %}

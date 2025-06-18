@@ -5,7 +5,7 @@ nwg-look
 {% endblock %}
 
 {% block version %}
-1.0.5
+1.0.6
 {% endblock %}
 
 {% block go_url %}
@@ -13,7 +13,7 @@ https://github.com/nwg-piotr/nwg-look/archive/refs/tags/v{{self.version().strip(
 {% endblock %}
 
 {% block go_sha %}
-cb9dc8994029e3588844572333122e13bf45bcd20848d2e122590e5b3a9f20fd
+7a774199ec08dc102915f7011aebd946c046a0f5d16b2cad131f6af46a0eebcf
 {% endblock %}
 
 {% block bld_tool %}
