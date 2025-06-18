@@ -1,0 +1,38 @@
+#!/usr/bin/env sh
+
+set -xue
+
+cd ${IX_DIR}
+
+curl -k 'https://repology.org/api/v1/projects/?maintainer=anton%40samokhvalov.xyz&outdated=1' \
+    | ix_flt \
+    | grep -v mesa \
+    | grep -v 'bld/' \
+    | grep -v 'lib/qt' \
+    | grep -v meson \
+    | grep -v musl \
+    | grep -v python \
+    | grep -v perl \
+    | grep -v rio \
+    | grep -v ruby \
+    | grep -v firmware \
+    | grep -v chromium \
+    | grep -v protobuf \
+    | grep -v spirv \
+    | grep -v vulkan \
+    | grep -v webkit \
+    | grep -v wlroots \
+    | grep -v 'auto/make' \
+    | grep -v grpc \
+    | while read l; do (
+    echo ${l}
+
+    if ix_up ${l}; then
+        git add -A
+        git commit -m "up ${l}" || true
+    else
+        echo "FAILED ${l}"
+    fi
+
+    git checkout .
+) done
