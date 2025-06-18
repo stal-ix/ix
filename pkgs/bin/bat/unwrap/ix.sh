@@ -13,7 +13,7 @@ https://github.com/sharkdp/bat/archive/refs/tags/v{{self.version().strip()}}.tar
 {% endblock %}
 
 {% block cargo_sha %}
-0acc97b885c7fe9d00c63d6744f07353d72fc563c3772148fbb83f084a39a690
+ed475f95553546a342f4a139f5067f08499807466e4862b380dee35ad99336e9
 {% endblock %}
 
 {% block bld_libs %}
@@ -27,4 +27,8 @@ lib/oniguruma
 {% block install %}
 mkdir ${out}/bin
 cp ${tmp}/out/bat ${out}/bin/
+{% endblock %}
+
+{% block cargo_tool %}
+bld/cargo/86
 {% endblock %}
