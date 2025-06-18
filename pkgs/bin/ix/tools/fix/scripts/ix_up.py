@@ -68,6 +68,9 @@ def subst_sha(data, to):
     return data.replace(parse_sha(data), to)
 
 def fix1(pn):
+    with open(pn) as f:
+        data = f.read()
+
     nd = subst_sha(data, sent)
 
     if nd:
