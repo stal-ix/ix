@@ -2862,7 +2862,6 @@
 {"bin": "yes", "ix_pkg_name": "bin/coreutils/9/7"}
 {"bin": "yggdrasil", "ix_pkg_name": "bin/yggdrasil/go/daemon"}
 {"bin": "yggdrasilctl", "ix_pkg_name": "bin/yggdrasil/go/ctl"}
-{"bin": "yofi", "ix_pkg_name": "bin/yofi"}
 {"bin": "ypdomainname", "ix_pkg_name": "bin/net/tools"}
 {"bin": "ytasm", "ix_pkg_name": "bin/yasm"}
 {"bin": "z3", "ix_pkg_name": "bin/z3"}
