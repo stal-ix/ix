@@ -13,7 +13,7 @@ https://github.com/Netflix/bpftop/archive/refs/tags/v{{self.version().strip()}}.
 {% endblock %}
 
 {% block cargo_sha %}
-6bad6b1476335cc58f4779c764fc8091c7a3b28a925737e72266675b5580fc44
+6a51e18981b57a4e35b4a88d8155a6b8f25c2113eacff1865970fe78153866d3
 {% endblock %}
 
 {% block bld_libs %}
@@ -39,5 +39,5 @@ cp ${tmp}/out/bpftop ${out}/bin/
 {% endblock %}
 
 {% block cargo_tool %}
-bld/cargo/83
+bld/cargo/86
 {% endblock %}
