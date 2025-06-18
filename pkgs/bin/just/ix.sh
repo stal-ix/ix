@@ -13,10 +13,14 @@ https://github.com/casey/just/archive/refs/tags/{{self.version().strip()}}.tar.g
 {% endblock %}
 
 {% block cargo_sha %}
-61ead841da33cd639f995ab8ddc47294801c21823fb3ee43cb61d5ce1f4b766e
+6f6dbbe0eea956f484afa8cf85fc51382c3c5d0d006b7a76c48a35d6fe7830dd
 {% endblock %}
 
 {% block install %}
 mkdir ${out}/bin
 cp ${tmp}/out/just ${out}/bin/
+{% endblock %}
+
+{% block cargo_tool %}
+bld/cargo/86
 {% endblock %}
