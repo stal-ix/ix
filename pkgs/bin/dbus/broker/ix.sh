@@ -1,7 +1,7 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block version %}
-36
+37
 {% endblock %}
 
 {% block pkg_name %}
@@ -10,7 +10,7 @@ dbus-broker
 
 {% block fetch %}
 https://github.com/bus1/dbus-broker/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-5058a81eea8086636ef09a670d103e35e650a6f0200aadc2f59f3fb6e76c37b8
+c842f844cd052ef1ffacb11da41812c5801c6d1e32450ce26410f1a5143d71bc
 {% endblock %}
 
 {% block lib_deps %}
