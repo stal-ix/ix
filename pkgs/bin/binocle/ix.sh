@@ -13,7 +13,7 @@ https://github.com/sharkdp/binocle/archive/refs/tags/v{{self.version().strip()}}
 {% endblock %}
 
 {% block cargo_sha %}
-dfeeada61a338cd39d7c3c35b9a1559a1f90d3605286699eaf4cde0cd4b44813
+98b58ecea626793de0d77e7728043f332c48a83527c4144a8d50e0c66e5d9d03
 {% endblock %}
 
 {% block bld_libs %}
@@ -23,4 +23,8 @@ lib/c
 {% block install %}
 mkdir ${out}/bin
 cp ${tmp}/out/binocle ${out}/bin/
+{% endblock %}
+
+{% block cargo_tool %}
+bld/cargo/86
 {% endblock %}

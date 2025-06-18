@@ -13,7 +13,7 @@ https://github.com/uutils/findutils/archive/refs/tags/{{self.version().strip()}}
 {% endblock %}
 
 {% block cargo_sha %}
-d387e3a3e0677362bde5a4c1bc15cc10c85942af66b12c57456cf91750f4a721
+c67b91720693697048489f8bbd4e243f74dda841d4ce58a76401f309b98a180a
 {% endblock %}
 
 {% block bld_libs %}
@@ -23,4 +23,8 @@ lib/oniguruma
 {% block cargo_bins %}
 find
 xargs
+{% endblock %}
+
+{% block cargo_tool %}
+bld/cargo/86
 {% endblock %}

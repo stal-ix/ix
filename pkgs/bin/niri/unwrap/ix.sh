@@ -42,6 +42,6 @@ mkdir ${out}/bin
 cp ${tmp}/out/niri ${out}/bin/
 {% endblock %}
 
-{% block cargoc_ver %}
+{% block cargo_tool %}
 bld/cargo/86
 {% endblock %}

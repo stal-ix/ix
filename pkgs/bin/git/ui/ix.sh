@@ -13,7 +13,7 @@ https://github.com/extrawurst/gitui/archive/refs/tags/v{{self.version().strip()}
 {% endblock %}
 
 {% block cargo_sha %}
-58ec4734de029cf31ada0cc9bb41fba20d294471f45ecce40bdbb8e58cd7bf5f
+b8d1a421b4a43c264b94a9958a0fc540e37323f8edc75e9469598aa1e5268e60
 {% endblock %}
 
 {% block bld_libs %}
@@ -40,4 +40,8 @@ cp ${tmp}/out/gitui ${out}/bin/
 {% block patch %}
 {{super()}}
 rust_remove_c vendored/libz-ng-sys
+{% endblock %}
+
+{% block cargo_tool %}
+bld/cargo/86
 {% endblock %}

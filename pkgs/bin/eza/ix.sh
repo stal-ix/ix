@@ -24,6 +24,6 @@ lib/git/2
 eza
 {% endblock %}
 
-{% block cargoc_ver %}
+{% block cargo_tool %}
 bld/cargo/86
 {% endblock %}

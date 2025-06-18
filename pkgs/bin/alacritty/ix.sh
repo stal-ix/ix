@@ -13,7 +13,7 @@ https://github.com/alacritty/alacritty/archive/refs/tags/v{{self.version().strip
 {% endblock %}
 
 {% block cargo_sha %}
-92df8769a34e0ab2e909b1bd526517549fa7559c9849f85c50059f2dca888f34
+f81a8e2520eab747b6fc0f47ebcb891f8c130b25fda14c1c14e49f8cb2f17fa2
 {% endblock %}
 
 {% block bld_libs %}
@@ -44,4 +44,8 @@ wayland
 
 {% block cargo_bins %}
 alacritty
+{% endblock %}
+
+{% block cargo_tool %}
+bld/cargo/86
 {% endblock %}

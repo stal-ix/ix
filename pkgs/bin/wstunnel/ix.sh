@@ -13,7 +13,7 @@ https://github.com/erebe/wstunnel/archive/refs/tags/v{{self.version().strip()}}.
 {% endblock %}
 
 {% block cargo_sha %}
-ecc540ea2f35dcd5113cea04c02a0172a8fea439d97795d838f871fedeb1a592
+f8a4f414cc905a23fdf52bed7b20b8789b02b04757ae5ec96ead1a47f238325f
 {% endblock %}
 
 {% block bld_libs %}
@@ -23,4 +23,8 @@ lib/c
 {% block install %}
 mkdir ${out}/bin
 cp ${tmp}/out/wstunnel ${out}/bin/
+{% endblock %}
+
+{% block cargo_tool %}
+bld/cargo/86
 {% endblock %}

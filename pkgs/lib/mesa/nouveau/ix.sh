@@ -8,10 +8,10 @@ lib/spirv/llvm/translator
 
 {% block bld_tool %}
 {{super()}}
+bld/rust/86
 bin/cbindgen
 bin/llvm/spirv
 bin/rust/bindgen
-bld/rust(rustc_ver=86)
 {% endblock %}
 
 {% block step_setup %}

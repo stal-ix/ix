@@ -2,8 +2,12 @@
 
 {% block task_pool %}full{% endblock %}
 
-{% block rustc_ver %}
-{{rustc_ver or '83'}}
+{% block cargo_tool %}
+bld/cargo/75
+{% endblock %}
+
+{% block rust_tool %}
+bld/rust/{{self.cargo_tool().strip().split('/')[-1]}}
 {% endblock %}
 
 {% block std_env %}
@@ -14,7 +18,7 @@ bld/rust/helpers
 bin/cargo/whatfeatures
 {% endif %}
 {{super()}}
-bld/rust(rustc_ver={{self.rustc_ver().strip()}})
+{{self.rust_tool()}}
 {% endblock %}
 
 {% block unpack %}
@@ -34,10 +38,6 @@ rust_devendor vendored
 v3
 {% endblock %}
 
-{% block cargoc_ver %}
-bld/cargo/75
-{% endblock %}
-
 {% block cargo_fetch_sha %}
 __skip__
 {% endblock %}
@@ -48,7 +48,7 @@ sha={{self.cargo_sha().strip()}}
 parent_id={{self.cargo_sha().strip()}}
 refine={{self.cargo_refine().strip() | b64e}}
 refine_tools={{self.cargo_refine_tools().strip() | b64e}}
-cargoc_ver={{self.cargoc_ver().strip()}}
+cargo_tool={{self.cargo_tool().strip()}}
 fetch_sha={{self.cargo_fetch_sha().strip()}}
 {% endblock %}
 

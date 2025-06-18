@@ -25,10 +25,6 @@ lib/drm
 amdgpu_top
 {% endblock %}
 
-{% block cargoc_ver %}
+{% block cargo_tool %}
 bld/cargo/86
-{% endblock %}
-
-{% block rustc_ver %}
-86
 {% endblock %}

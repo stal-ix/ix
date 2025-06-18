@@ -13,7 +13,7 @@ https://github.com/museun/cargo-whatfeatures/archive/refs/tags/v{{self.version()
 {% endblock %}
 
 {% block cargo_sha %}
-3bfff6b9e33bb5fe1fbffb97a8785fc9e9cc77f250f2168646a56ad1775c0ec1
+42af9f2ab444f483cf10a0314923056aa1feaaa43a2299463a1aa179e2f899cb
 {% endblock %}
 
 {% block bld_libs %}
@@ -23,4 +23,8 @@ lib/openssl
 {% block install %}
 mkdir ${out}/bin
 cp ${tmp}/out/cargo-whatfeatures ${out}/bin/
+{% endblock %}
+
+{% block cargo_tool %}
+bld/cargo/86
 {% endblock %}

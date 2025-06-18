@@ -13,7 +13,7 @@ https://github.com/rharish101/ReGreet/archive/refs/tags/{{self.version().strip()
 {% endblock %}
 
 {% block cargo_sha %}
-3f38c0214b998b4215f29258c588a3800c0f4fb0a7a8fdc136ace20483f77e80
+83f27ae53e2fdbe42607de896917cac399aba6b3ecc12c1b70e557f4ea365e01
 {% endblock %}
 
 {% block bld_libs %}
@@ -23,4 +23,8 @@ lib/gtk/4
 {% block install %}
 mkdir ${out}/bin
 cp ${tmp}/out/regreet ${out}/bin/
+{% endblock %}
+
+{% block cargo_tool %}
+bld/cargo/86
 {% endblock %}

@@ -29,6 +29,6 @@ mkdir ${out}/bin
 cp ${tmp}/out/i3status-rs ${out}/bin/
 {% endblock %}
 
-{% block cargoc_ver %}
+{% block cargo_tool %}
 bld/cargo/86
 {% endblock %}

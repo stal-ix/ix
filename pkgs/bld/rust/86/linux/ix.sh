@@ -1,4 +1,4 @@
-{% extends '//bld/rust/linux/83/ix.sh' %}
+{% extends '//bld/rust/83/linux/ix.sh' %}
 
 {% block fetch %}
 https://static.rust-lang.org/dist/rust-1.86.0-x86_64-unknown-linux-musl.tar.gz

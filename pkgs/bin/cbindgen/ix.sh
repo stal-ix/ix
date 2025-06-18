@@ -20,6 +20,6 @@ https://github.com/mozilla/cbindgen/archive/refs/tags/{{self.version().strip()}}
 cbindgen
 {% endblock %}
 
-{% block cargoc_ver %}
+{% block cargo_tool %}
 bld/cargo/86
 {% endblock %}

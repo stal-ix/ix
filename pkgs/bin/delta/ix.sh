@@ -13,7 +13,7 @@ https://github.com/dandavison/delta/archive/refs/tags/{{self.version().strip()}}
 {% endblock %}
 
 {% block cargo_sha %}
-35924167131b9adf4837f4ceaee7a97b0da7aa811451fc3c2d6dacf2f61681b6
+5948d95177802904dda67e0f4bc54a682f3ae5d42ac6322ff6cc3ef08f2b7e03
 {% endblock %}
 
 {% block bld_libs %}
@@ -24,4 +24,8 @@ lib/oniguruma
 {% block install %}
 mkdir ${out}/bin
 cp ${tmp}/out/delta ${out}/bin/
+{% endblock %}
+
+{% block cargo_tool %}
+bld/cargo/86
 {% endblock %}

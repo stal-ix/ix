@@ -33,10 +33,6 @@ mkdir ${out}/bin
 cp ${tmp}/out/halloy ${out}/bin/
 {% endblock %}
 
-{% block cargoc_ver %}
+{% block cargo_tool %}
 bld/cargo/86
-{% endblock %}
-
-{% block rustc_ver %}
-86
 {% endblock %}

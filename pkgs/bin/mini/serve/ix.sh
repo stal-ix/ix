@@ -16,7 +16,7 @@ https://github.com/svenstaro/miniserve/archive/refs/tags/v{{self.version().strip
 c0e2a6db26a4dfa0697efaae02db2dad26d8bf5db074992ac244dbb7ede7d412
 {% endblock %}
 
-{% block cargoc_ver %}
+{% block cargo_tool %}
 bld/cargo/83
 {% endblock %}
 

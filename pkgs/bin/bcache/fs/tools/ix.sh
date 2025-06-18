@@ -32,3 +32,7 @@ patch_bindgen vendored
 mkdir ${out}/bin
 cp ${tmp}/out/bcachefs ${out}/bin/
 {% endblock %}
+
+{% block cargo_tool %}
+bld/cargo/86
+{% endblock %}

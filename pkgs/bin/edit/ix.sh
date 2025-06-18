@@ -1,23 +1,23 @@
 {% extends '//die/rust/cargo.sh' %}
 
 {% block pkg_name %}
-cproxy
+microsoft-edit
 {% endblock %}
 
 {% block version %}
-4.2.2
+1.2.0
 {% endblock %}
 
 {% block cargo_url %}
-https://github.com/NOBLES5E/cproxy/archive/refs/tags/v{{self.version().strip()}}.tar.gz
+https://github.com/microsoft/edit/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 {% endblock %}
 
 {% block cargo_sha %}
-4e95738985235007422f7e1fa65e485ff6dbdf6160da489f5d71aec8fbeeb675
+ca088e62f30e077c0590d1edd59ba3dd1fb5c5ab292fe0438582f1133a424f07
 {% endblock %}
 
 {% block cargo_bins %}
-cproxy
+edit
 {% endblock %}
 
 {% block cargo_tool %}
