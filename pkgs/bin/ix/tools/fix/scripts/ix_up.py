@@ -184,4 +184,4 @@ def process(pkgs, fr, to):
 
     return 0
 
-sys.exit(process(sys.argv[3:], sys.argv[1], sys.argv[2]))
+#sys.exit(process(sys.argv[3:], sys.argv[1], sys.argv[2]))

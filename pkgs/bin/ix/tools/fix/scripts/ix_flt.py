@@ -2,33 +2,32 @@
 
 import sys
 import json
+import collections
 
-data = json.loads(sys.stdin.read())
+groups = collections.defaultdict(list)
 
-def get_new_ver(rec):
-    for x in rec:
-        if x['status'] == 'newest':
-            return x['version']
+for l in sys.stdin.read().split('\n'):
+    l = l.strip()
 
-def get_our_ver(rec):
-    for x in rec:
-        if x['repo'] == 'stalix':
-            return x['version']
-
-def get_pkgs(rec):
-    for x in rec:
-        if x['repo'] == 'stalix':
-            yield x['srcname']
-
-for name in sorted(data.keys()):
-    if 'unclassified' in name:
-        print(f'skip {name}', file=sys.stderr)
-
+    if not l:
         continue
 
-    rec = data[name]
-    old = get_our_ver(rec)
-    new = get_new_ver(rec)
+    rec = json.loads(l)
 
-    if old and new:
-        print(f'{old} {new} ' + ' '.join(get_pkgs(rec)))
+    if rec['ix_pkg_name'].startswith('bld/'):
+        continue
+
+    if len(rec['pkg_ver']) == 40:
+        continue
+
+    with open('pkgs/' + rec['ix_pkg_full_name'] + '/ix.sh') as f:
+        data = f.read()
+
+        if 'cargo_sha' in data:
+            groups[rec['pkg_name']].append(rec)
+
+for k in sorted(groups.keys()):
+    recs = groups[k]
+    ver = recs[0]['pkg_ver']
+
+    print(f'{ver} {ver} ' + ' '.join(x['ix_pkg_full_name'] for x in recs))
