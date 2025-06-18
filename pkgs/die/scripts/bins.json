@@ -2147,6 +2147,7 @@
 {"bin": "s3backer", "ix_pkg_name": "bin/s3/baker"}
 {"bin": "s3fs", "ix_pkg_name": "bin/s3/fs/fuse"}
 {"bin": "sam", "ix_pkg_name": "bin/9base"}
+{"bin": "samples", "ix_pkg_name": "bin/sox"}
 {"bin": "samu", "ix_pkg_name": "bin/samurai"}
 {"bin": "sassc", "ix_pkg_name": "bin/sassc"}
 {"bin": "sbcl", "ix_pkg_name": "bin/sbcl"}
