@@ -1008,6 +1008,7 @@ https://git.sr.ht/~sircmpwn/scdoc/archive/1.11.3.tar.gz
 https://git.sr.ht/~sircmpwn/wev/archive/1.0.0.tar.gz
 https://git.sr.ht/~sircmpwn/wev/archive/1.1.0.tar.gz
 https://git.sr.ht/~whynothugo/shotman/archive/99baca7747e6d48801f91b58bc392b7df46dc56b.tar.gz
+https://git.sr.ht/~whynothugo/shotman/archive/v0.4.7.tar.gz
 https://git.zx2c4.com/cgit/snapshot/cgit-1.2.3.tar.xz
 https://github.com/AOMediaCodec/libavif/archive/refs/tags/v1.0.1.tar.gz
 https://github.com/AOMediaCodec/libavif/archive/refs/tags/v1.0.2.tar.gz

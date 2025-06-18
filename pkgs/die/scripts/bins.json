@@ -2230,6 +2230,7 @@
 {"bin": "shfmt", "ix_pkg_name": "bin/sh/fmt"}
 {"bin": "shift", "ix_pkg_name": "bin/execline"}
 {"bin": "shlibsign", "ix_pkg_name": "bin/nsstools"}
+{"bin": "shotman", "ix_pkg_name": "bin/shot/man"}
 {"bin": "showconsolefont", "ix_pkg_name": "bin/kbd"}
 {"bin": "showkey", "ix_pkg_name": "bin/busybox/ix"}
 {"bin": "showmount", "ix_pkg_name": "bin/nfs/utils"}
