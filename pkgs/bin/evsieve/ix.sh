@@ -26,3 +26,7 @@ lib/evdev
 mkdir ${out}/bin
 cp ${tmp}/out/evsieve ${out}/bin/
 {% endblock %}
+
+{% block cargo_tool %}
+bld/cargo/86
+{% endblock %}
