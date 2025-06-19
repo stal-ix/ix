@@ -5,12 +5,12 @@ ninja
 {% endblock %}
 
 {% block version %}
-1.12.1
+1.13.0
 {% endblock %}
 
 {% block fetch %}
 https://github.com/ninja-build/ninja/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-821bdff48a3f683bc4bb3b6f0b5fe7b2d647cf65d52aeb63328c91a6c6df285a
+f08641d00099a9e40d44ec0146f841c472ae58b7e6dd517bee3945cfd923cedf
 {% endblock %}
 
 {% block bld_libs %}
