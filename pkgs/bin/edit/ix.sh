@@ -21,5 +21,5 @@ edit
 {% endblock %}
 
 {% block cargo_tool %}
-bld/cargo/86
+bld/cargo/87
 {% endblock %}

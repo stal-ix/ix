@@ -14,6 +14,7 @@ bld/rust/helpers
 bin/cargo/whatfeatures
 {% endif %}
 {{super()}}
+{{self.cargo_tool()}}
 {{self.rust_tool()}}
 {% endblock %}
 
