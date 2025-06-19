@@ -37,7 +37,6 @@ lib/shim/fake(lib_name=xkbcommon-x11)
 bin/protoc
 {% endblock %}
 
-{% block install %}
-mkdir ${out}/bin
-cp ${tmp}/out/zed ${out}/bin/
+{% block cargo_bins %}
+zed
 {% endblock %}

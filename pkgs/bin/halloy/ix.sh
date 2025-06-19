@@ -28,9 +28,8 @@ lib/drivers/3d
 lib/xkb/common/dl
 {% endblock %}
 
-{% block install %}
-mkdir ${out}/bin
-cp ${tmp}/out/halloy ${out}/bin/
+{% block cargo_bins %}
+halloy
 {% endblock %}
 
 {% block cargo_tool %}

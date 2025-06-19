@@ -16,7 +16,6 @@ lib/pixman
 {{super()}}
 {% endblock %}
 
-{% block install %}
-mkdir ${out}/bin
-cp ${tmp}/out/cosmic-comp ${out}/bin/
+{% block cargo_bins %}
+cosmic-comp
 {% endblock %}

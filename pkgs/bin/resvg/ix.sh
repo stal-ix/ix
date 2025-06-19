@@ -21,9 +21,8 @@ fda07eac7d2115a89caf7557718c2818466c3ab60a3c77533fc2c614f7bed5cb
 cd crates/resvg
 {% endblock %}
 
-{% block install %}
-mkdir ${out}/bin/
-cp ${tmp}/out/resvg ${out}/bin/
+{% block cargo_bins %}
+resvg
 {% endblock %}
 
 {% block cargo_tool %}

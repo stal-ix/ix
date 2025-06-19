@@ -44,9 +44,8 @@ EOF
 make list
 {% endblock %}
 
-{% block install %}
-mkdir ${out}/bin
-cp ${tmp}/out/coreutils ${out}/bin/
+{% block cargo_bins %}
+coreutils
 set -xue
 make list | tr ' ' '\n' | grep -v '^$' | sort | uniq | grep -v coreutils | while read l; do
     ln -s coreutils ${out}/bin/${l}

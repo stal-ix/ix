@@ -16,9 +16,8 @@ https://github.com/pythops/impala/archive/refs/tags/v{{self.version().strip()}}.
 2c9694251be4bb868cbc36e1d5bdd2f82e8d805ef51ed64329378006bf494063
 {% endblock %}
 
-{% block install %}
-mkdir ${out}/bin
-cp ${tmp}/out/impala ${out}/bin/
+{% block cargo_bins %}
+impala
 {% endblock %}
 
 {% block cargo_tool %}

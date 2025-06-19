@@ -21,9 +21,8 @@ lib/git/2
 lib/oniguruma
 {% endblock %}
 
-{% block install %}
-mkdir ${out}/bin
-cp ${tmp}/out/delta ${out}/bin/
+{% block cargo_bins %}
+delta
 {% endblock %}
 
 {% block cargo_tool %}

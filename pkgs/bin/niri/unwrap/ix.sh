@@ -37,9 +37,8 @@ lib/wayland/dl/server
 dbus
 {% endblock %}
 
-{% block install %}
-mkdir ${out}/bin
-cp ${tmp}/out/niri ${out}/bin/
+{% block cargo_bins %}
+niri
 {% endblock %}
 
 {% block cargo_tool %}

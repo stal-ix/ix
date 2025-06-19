@@ -12,7 +12,6 @@ https://github.com/optozorax/car_drift/archive/8fbfd0f82f614d9d32bbf78176b77e98a
 v4
 {% endblock %}
 
-{% block install %}
-mkdir ${out}/bin
-cp ${tmp}/out/eframe_template ${out}/bin/car_drift
+{% block cargo_bins %}
+eframe_template
 {% endblock %}

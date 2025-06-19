@@ -28,7 +28,6 @@ lib/openssl
 lib/sqlite/3
 {% endblock %}
 
-{% block install %}
-mkdir ${out}/bin
-cp ${tmp}/out/arti ${out}/bin/
+{% block cargo_bins %}
+arti
 {% endblock %}

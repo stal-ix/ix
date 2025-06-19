@@ -20,9 +20,8 @@ https://github.com/erebe/wstunnel/archive/refs/tags/v{{self.version().strip()}}.
 lib/c
 {% endblock %}
 
-{% block install %}
-mkdir ${out}/bin
-cp ${tmp}/out/wstunnel ${out}/bin/
+{% block cargo_bins %}
+wstunnel
 {% endblock %}
 
 {% block cargo_tool %}

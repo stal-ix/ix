@@ -20,9 +20,8 @@ https://github.com/sharkdp/binocle/archive/refs/tags/v{{self.version().strip()}}
 lib/c
 {% endblock %}
 
-{% block install %}
-mkdir ${out}/bin
-cp ${tmp}/out/binocle ${out}/bin/
+{% block cargo_bins %}
+binocle
 {% endblock %}
 
 {% block cargo_tool %}

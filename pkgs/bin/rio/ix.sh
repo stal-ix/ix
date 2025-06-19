@@ -32,9 +32,8 @@ lib/drivers/3d
 lib/xkb/common/dl
 {% endblock %}
 
-{% block install %}
-mkdir ${out}/bin
-cp ${tmp}/out/rio ${out}/bin/
+{% block cargo_bins %}
+rio
 {% endblock %}
 
 {% block cargo_tool %}

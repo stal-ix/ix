@@ -24,7 +24,6 @@ bld/cargo/86
 lib/zstd
 {% endblock %}
 
-{% block install %}
-mkdir ${out}/bin
-cp ${tmp}/out/miniserve ${out}/bin/
+{% block cargo_bins %}
+miniserve
 {% endblock %}

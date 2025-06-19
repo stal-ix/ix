@@ -24,9 +24,8 @@ lib/drivers/3d
 lib/xkb/common/dl
 {% endblock %}
 
-{% block install %}
-mkdir ${out}/bin
-cp ${tmp}/out/sniffnet ${out}/bin
+{% block cargo_bins %}
+sniffnet
 {% endblock %}
 
 {% block cargo_tool %}

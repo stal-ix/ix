@@ -21,9 +21,8 @@ lib/curl
 lib/openssl
 {% endblock %}
 
-{% block install %}
-mkdir ${out}/bin
-cp ${tmp}/out/zellij ${out}/bin/
+{% block cargo_bins %}
+zellij
 {% endblock %}
 
 {% block cargo_tool %}

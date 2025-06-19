@@ -27,9 +27,8 @@ lib/git/2
 lib/openssl
 {% endblock %}
 
-{% block install %}
-mkdir ${out}/bin
-cp ${tmp}/out/jj ${out}/bin/
+{% block cargo_bins %}
+jj
 {% endblock %}
 
 {% block cargo_tool %}

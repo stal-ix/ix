@@ -24,9 +24,8 @@ lib/openssl
 {% block cargo_features %}
 {% endblock %}
 
-{% block install %}
-mkdir ${out}/bin
-cp ${tmp}/out/i3status-rs ${out}/bin/
+{% block cargo_bins %}
+i3status-rs
 {% endblock %}
 
 {% block cargo_tool %}
