@@ -168,6 +168,7 @@
 {"bin": "blockdev", "ix_pkg_name": "bin/busybox/ix"}
 {"bin": "bluetuith", "ix_pkg_name": "bin/bluetuith"}
 {"bin": "bmake", "ix_pkg_name": "bin/bmake"}
+{"bin": "bomtool", "ix_pkg_name": "bin/pkg/conf"}
 {"bin": "bootchartd", "ix_pkg_name": "bin/busybox/ix"}
 {"bin": "bore", "ix_pkg_name": "bin/bore"}
 {"bin": "bpftool", "ix_pkg_name": "bin/bpf/tool"}
