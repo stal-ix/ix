@@ -15,3 +15,8 @@ go build main.go
 {% block go_bins %}
 main
 {% endblock %}
+
+{% block install %}
+{{super()}}
+mv ${out}/bin/main ${out}/bin/muslstack
+{% endblock %}
