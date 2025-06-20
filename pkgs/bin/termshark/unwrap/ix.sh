@@ -21,7 +21,6 @@ https://github.com/gcla/termshark/archive/refs/tags/v{{self.version().strip()}}.
 cd cmd/termshark
 {% endblock %}
 
-{% block install %}
-mkdir ${out}/bin
-cp termshark ${out}/bin/
+{% block go_bins %}
+termshark
 {% endblock %}

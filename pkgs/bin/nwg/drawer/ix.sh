@@ -30,7 +30,6 @@ lib/gi/repository
 lib/gtk/layer/shell/3
 {% endblock %}
 
-{% block install %}
-mkdir ${out}/bin
-cp nwg-drawer ${out}/bin/
+{% block go_bins %}
+nwg-drawer
 {% endblock %}

@@ -26,7 +26,6 @@ lib/c
 lib/git/2
 {% endblock %}
 
-{% block install %}
-mkdir ${out}/bin
-cp grv ${out}/bin/
+{% block go_bins %}
+grv
 {% endblock %}

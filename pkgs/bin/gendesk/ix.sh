@@ -16,7 +16,6 @@ https://github.com/xyproto/gendesk/archive/refs/tags/{{self.version().strip()}}.
 1441a2f11499fc6bdb6b61ec9be3d25fca3ea7bb42981cca364193b96fd2ca26
 {% endblock %}
 
-{% block install %}
-mkdir ${out}/bin
-cp gendesk ${out}/bin/
+{% block go_bins %}
+gendesk
 {% endblock %}

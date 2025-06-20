@@ -17,7 +17,6 @@ bin/go/lang/23
 cd v2
 {% endblock %}
 
-{% block install %}
-mkdir ${out}/bin
-cp orbiton ${out}/bin/o
+{% block go_bins %}
+orbiton
 {% endblock %}

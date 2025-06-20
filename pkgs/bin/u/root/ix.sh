@@ -16,9 +16,8 @@ https://github.com/u-root/u-root/archive/refs/tags/v{{self.version().strip()}}.t
 d09be6f411cc9d1d58c284fa98d025dcf30f5f03da7ce4b01cf32393e9efb3c9
 {% endblock %}
 
-{% block install %}
-mkdir ${out}/bin
-cp u-root ${out}/bin/
+{% block go_bins %}
+u-root
 {% endblock %}
 
 {% block go_tool %}

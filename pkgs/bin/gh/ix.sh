@@ -21,9 +21,8 @@ https://github.com/cli/cli/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 cd cmd/gh
 {% endblock %}
 
-{% block install %}
-mkdir ${out}/bin
-cp gh ${out}/bin/
+{% block go_bins %}
+gh
 {% endblock %}
 
 {% block go_tool %}

@@ -20,7 +20,6 @@ efba1751f2762c6fc0d19871d4ca3309f21703b873b8f8b100fb17dacfbf2950
 bin/go/lang/24
 {% endblock %}
 
-{% block install %}
-mkdir ${out}/bin
-cp lazygit ${out}/bin/
+{% block go_bins %}
+lazygit
 {% endblock %}

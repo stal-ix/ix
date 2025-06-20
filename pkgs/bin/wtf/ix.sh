@@ -20,9 +20,8 @@ f4c94dcbed1c8db336e30d23c7e71a7c3162d79cea2e8e857a898f1adc62e4ee
 -o wtfutil
 {% endblock %}
 
-{% block install %}
-mkdir ${out}/bin
-cp wtfutil ${out}/bin/
+{% block go_bins %}
+wtfutil
 {% endblock %}
 
 {% block go_tool %}

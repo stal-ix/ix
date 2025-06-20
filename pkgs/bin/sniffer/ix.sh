@@ -22,7 +22,6 @@ lib/pcap
 lib/kernel
 {% endblock %}
 
-{% block install %}
-mkdir ${out}/bin
-cp sniffer ${out}/bin/
+{% block go_bins %}
+sniffer
 {% endblock %}

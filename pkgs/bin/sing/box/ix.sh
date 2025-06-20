@@ -21,9 +21,8 @@ aac13e2bb160ed88d21ddf08f4c6e03336dee053d193954aa322bbdd25ccc76f
 cd cmd/sing-box
 {% endblock %}
 
-{% block install %}
-mkdir ${out}/bin
-cp sing-box ${out}/bin/
+{% block go_bins %}
+sing-box
 {% endblock %}
 
 

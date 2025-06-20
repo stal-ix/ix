@@ -26,9 +26,8 @@ go mod tidy -compat=1.21
 cd cmd/senpai
 {% endblock %}
 
-{% block install %}
-mkdir ${out}/bin
-cp senpai ${out}/bin/
+{% block go_bins %}
+senpai
 {% endblock %}
 
 {% block go_tool %}

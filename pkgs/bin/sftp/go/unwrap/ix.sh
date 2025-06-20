@@ -20,7 +20,6 @@ ccfb1525ace51b0b122b2dedbcba0b3dc05ecddd381eee0435fb80140774d863
 bin/go/lang/22
 {% endblock %}
 
-{% block install %}
-mkdir ${out}/bin
-cp sftpgo ${out}/bin
+{% block go_bins %}
+sftpgo
 {% endblock %}

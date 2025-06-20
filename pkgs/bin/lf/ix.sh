@@ -20,7 +20,6 @@ https://github.com/gokcehan/lf/archive/refs/tags/r{{self.version().strip()}}.tar
 bin/go/lang/24
 {% endblock %}
 
-{% block install %}
-mkdir ${out}/bin
-cp lf ${out}/bin/
+{% block go_bins %}
+lf
 {% endblock %}

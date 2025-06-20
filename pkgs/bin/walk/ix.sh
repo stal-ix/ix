@@ -21,7 +21,6 @@ sed -e 's|go 1.17|go 1.21|' -i go.mod
 go mod tidy -compat=1.21
 {% endblock %}
 
-{% block install %}
-mkdir ${out}/bin
-cp walk ${out}/bin/
+{% block go_bins %}
+walk
 {% endblock %}

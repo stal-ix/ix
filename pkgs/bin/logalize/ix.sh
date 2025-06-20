@@ -20,7 +20,6 @@ https://github.com/deponian/logalize/archive/refs/tags/v{{self.version().strip()
 bin/go/lang/24
 {% endblock %}
 
-{% block install %}
-mkdir ${out}/bin
-cp logalize ${out}/bin/
+{% block go_bins %}
+logalize
 {% endblock %}

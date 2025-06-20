@@ -21,9 +21,8 @@ https://github.com/alecthomas/chroma/archive/refs/tags/v{{self.version().strip()
 cd cmd/chroma
 {% endblock %}
 
-{% block install %}
-mkdir ${out}/bin
-cp chroma ${out}/bin/
+{% block go_bins %}
+chroma
 {% endblock %}
 
 {% block go_tool %}

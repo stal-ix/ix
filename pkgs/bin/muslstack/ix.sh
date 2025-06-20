@@ -12,7 +12,6 @@ e044e27f1948ce305b159cef01e754f5e50fa342f07582a515482c2127c9e5bd
 go build main.go
 {% endblock %}
 
-{% block install %}
-mkdir ${out}/bin
-cp main ${out}/bin/muslstack
+{% block go_bins %}
+main
 {% endblock %}

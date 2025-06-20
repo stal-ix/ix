@@ -16,9 +16,8 @@ https://github.com/gopasspw/gopass/archive/refs/tags/v{{self.version().strip()}}
 412dbd291d0be464bf19dd0e0fc371cf437188038be3ef98ef005d37d07e6980
 {% endblock %}
 
-{% block install %}
-mkdir ${out}/bin
-cp gopass ${out}/bin/
+{% block go_bins %}
+gopass
 {% endblock %}
 
 {% block go_tool %}

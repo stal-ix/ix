@@ -24,9 +24,8 @@ noxlib
 noutmp
 {% endblock %}
 
-{% block install %}
-mkdir ${out}/bin
-cp emptty ${out}/bin/
+{% block go_bins %}
+emptty
 {% endblock %}
 
 {% block go_tool %}

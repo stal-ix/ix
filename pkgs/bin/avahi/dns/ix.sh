@@ -8,7 +8,6 @@ https://github.com/LouisBrunner/avahi2dns/archive/9349a6495ad4cafcd1d44e089b8ea2
 c88ea94823aa15625f23b7401c0b0d2138ddffea016828b148328c3d9e27f2c4
 {% endblock %}
 
-{% block install %}
-mkdir ${out}/bin
-cp avahi2dns ${out}/bin/
+{% block go_bins %}
+avahi2dns
 {% endblock %}

@@ -21,7 +21,6 @@ https://github.com/go-git/go-git/archive/refs/tags/v{{self.version().strip()}}.t
 cd cli/go-git
 {% endblock %}
 
-{% block install %}
-mkdir ${out}/bin
-cp go-git ${out}/bin/
+{% block go_bins %}
+go-git
 {% endblock %}

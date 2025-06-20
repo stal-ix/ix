@@ -16,9 +16,8 @@ https://github.com/ipfs/ipget/archive/refs/tags/v{{self.version().strip()}}.tar.
 e6d13a1006949bf5785d9b3860a5dbb01fb2b3093ca56fc51f224f464eb6f1b2
 {% endblock %}
 
-{% block install %}
-mkdir ${out}/bin
-cp ipget ${out}/bin/
+{% block go_bins %}
+ipget
 {% endblock %}
 
 {% block go_tool %}

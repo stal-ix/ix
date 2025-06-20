@@ -21,7 +21,6 @@ https://github.com/go-task/task/archive/refs/tags/v{{self.version().strip()}}.ta
 cd cmd/task
 {% endblock %}
 
-{% block install %}
-mkdir ${out}/bin
-cp task ${out}/bin/
+{% block go_bins %}
+task
 {% endblock %}

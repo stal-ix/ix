@@ -12,7 +12,6 @@ https://github.com/pg83/gg/archive/9b25bd18cc9528933fc9ba3ff483ad3ac3136f31.zip
 bin/go/lang/23
 {% endblock %}
 
-{% block install %}
-mkdir ${out}/bin
-cp gg ${out}/bin/ya
+{% block go_bins %}
+gg
 {% endblock %}

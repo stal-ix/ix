@@ -16,9 +16,8 @@ https://github.com/chmouel/gosmee/archive/refs/tags/v{{self.version().strip()}}.
 3e46385324740daaab407bb0b8e70eb9b723735e9d2e0942907ff1124eb88045
 {% endblock %}
 
-{% block install %}
-mkdir ${out}/bin
-cp gosmee.bin ${out}/bin/gosmee
+{% block go_bins %}
+gosmee.bin
 {% endblock %}
 
 {% block go_build_flags %}

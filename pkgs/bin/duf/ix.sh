@@ -16,7 +16,6 @@ https://github.com/muesli/duf/archive/refs/tags/v{{self.version().strip()}}.tar.
 87e574a7c998142ee1e9b1b57062edfba4fe0ee1308def9d386b71e6abc5c119
 {% endblock %}
 
-{% block install %}
-mkdir ${out}/bin
-cp duf ${out}/bin/
+{% block go_bins %}
+duf
 {% endblock %}

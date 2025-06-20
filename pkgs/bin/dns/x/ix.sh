@@ -21,7 +21,6 @@ a08515029243cc464da5cca0ff36df1432c94b278bda62e45d31bbb99dcaf1fa
 cd cmd/dnsx
 {% endblock %}
 
-{% block install %}
-mkdir ${out}/bin
-cp dnsx ${out}/bin/
+{% block go_bins %}
+dnsx
 {% endblock %}

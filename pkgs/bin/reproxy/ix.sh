@@ -25,7 +25,6 @@ bin/go/lang/23
 cd app
 {% endblock %}
 
-{% block install %}
-mkdir ${out}/bin
-cp app ${out}/bin/reproxy
+{% block go_bins %}
+app
 {% endblock %}
