@@ -4,5 +4,5 @@
 int main() {
     sync();
     sync();
-    return reboot(RB_AUTOBOOT);
+    return reboot(IX_ACTION);
 }

@@ -5,7 +5,11 @@ lib/c
 {% endblock %}
 
 {% block name %}
-reboot
+{{prog_name}}
+{% endblock %}
+
+{% block cpp_defines %}
+IX_ACTION={{prog_action}}
 {% endblock %}
 
 {% block sources %}
