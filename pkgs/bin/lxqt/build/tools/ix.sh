@@ -5,12 +5,12 @@ lxqt-build-tools
 {% endblock %}
 
 {% block version %}
-2.2.0
+2.2.1
 {% endblock %}
 
 {% block fetch %}
 https://github.com/lxqt/lxqt-build-tools/archive/refs/tags/{{self.version().strip()}}.tar.gz
-ecee3248c9435580e9eec844d8b2a989bbf1472cc292a04bc4f8708127fea1c5
+a2728eea1fa7096522a2016f1d24f074669984cca470e81db6d1870c7681607a
 {% endblock %}
 
 {% block bld_libs %}
