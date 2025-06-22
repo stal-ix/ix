@@ -28,3 +28,8 @@ cd app
 {% block go_bins %}
 app
 {% endblock %}
+
+{% block install %}
+{{super()}}
+mv ${out}/bin/app ${out}/bin/reproxy
+{% endblock %}
