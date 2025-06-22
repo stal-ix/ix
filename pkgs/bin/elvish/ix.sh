@@ -21,7 +21,6 @@ e89800f0c41135b1a7b7717036fa47e4e4ef6f99d38863d89ccd71de16bf60f6
 cd cmd/elvish
 {% endblock %}
 
-{% block install %}
-mkdir ${out}/bin
-cp elvish ${out}/bin/
+{% block go_bins %}
+elvish
 {% endblock %}

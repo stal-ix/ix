@@ -20,9 +20,8 @@ a04882779c81368d7830cedc8fec549087cd3400b14d9a00704df788b96c1ac8
 lib/xkb/common
 {% endblock %}
 
-{% block install %}
-mkdir ${out}/bin
-cp ${tmp}/out/shotman ${out}/bin/
+{% block cargo_bins %}
+shotman
 {% endblock %}
 
 {% block cargo_tool %}

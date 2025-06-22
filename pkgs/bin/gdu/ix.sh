@@ -21,9 +21,8 @@ https://github.com/dundee/gdu/archive/refs/tags/v{{self.version().strip()}}.tar.
 cd cmd/gdu
 {% endblock %}
 
-{% block install %}
-mkdir ${out}/bin
-cp gdu ${out}/bin/
+{% block go_bins %}
+gdu
 {% endblock %}
 
 {% block go_tool %}

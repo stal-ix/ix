@@ -21,9 +21,8 @@ https://github.com/oras-project/oras/archive/refs/tags/v{{self.version().strip()
 cd cmd/oras
 {% endblock %}
 
-{% block install %}
-mkdir ${out}/bin
-cp oras ${out}/bin/
+{% block go_bins %}
+oras
 {% endblock %}
 
 {% block go_tool %}

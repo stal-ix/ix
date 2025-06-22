@@ -20,7 +20,6 @@ acf22cbd1e1f9911d4c168bddef4cb6a588c17c1c7e108db074961c12dc4ec81
 bin/go/lang/24
 {% endblock %}
 
-{% block install %}
-mkdir ${out}/bin
-cp superfile ${out}/bin/spf
+{% block go_bins %}
+superfile
 {% endblock %}

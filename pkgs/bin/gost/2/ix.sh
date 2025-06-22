@@ -25,7 +25,6 @@ bin/go/lang/22
 cd cmd/gost
 {% endblock %}
 
-{% block install %}
-mkdir ${out}/bin
-cp gost ${out}/bin/
+{% block go_bins %}
+gost
 {% endblock %}

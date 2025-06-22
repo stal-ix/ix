@@ -21,9 +21,8 @@ c2fe5d883dc6bc14f700a2cb1de2db572f30eaad77135c62b7cd605e190a2522
 cd cmd/esbuild
 {% endblock %}
 
-{% block install %}
-mkdir ${out}/bin
-cp esbuild ${out}/bin/
+{% block go_bins %}
+esbuild
 {% endblock %}
 
 {% block go_tool %}

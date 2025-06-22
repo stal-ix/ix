@@ -48,7 +48,6 @@ export BPF_CLANG=bpf_clang
 {{super()}}
 {% endblock %}
 
-{% block install %}
-mkdir ${out}/bin
-cp ${tmp}/out/{{self.binary().strip()}} ${out}/bin/
+{% block cargo_bins %}
+{{self.binary().strip()}}
 {% endblock %}

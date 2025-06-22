@@ -44,9 +44,8 @@ bld/de/bloat
 bin/esbuild/21
 {% endblock %}
 
-{% block install %}
-mkdir ${out}/bin
-cp ${tmp}/out/rqbit ${out}/bin/
+{% block cargo_bins %}
+rqbit
 {% endblock %}
 
 {% block bld_libs %}

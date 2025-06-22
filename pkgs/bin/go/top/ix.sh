@@ -27,7 +27,6 @@ go mod tidy -compat=1.21
 cd cmd/gotop
 {% endblock %}
 
-{% block install %}
-mkdir ${out}/bin
-cp gotop ${out}/bin/
+{% block go_bins %}
+gotop
 {% endblock %}

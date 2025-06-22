@@ -20,8 +20,6 @@ https://codeberg.org/forgejo/forgejo/archive/v{{self.version().strip()}}.tar.gz
 bin/go/lang/24
 {% endblock %}
 
-{% block install %}
-mkdir ${out}/bin
-ls -la .
-cp forgejo.org ${out}/bin/
+{% block go_bins %}
+forgejo.org
 {% endblock %}

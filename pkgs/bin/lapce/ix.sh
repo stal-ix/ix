@@ -28,9 +28,8 @@ lib/xkb/common/dl
 lib/tree/sitter/plugins
 {% endblock %}
 
-{% block install %}
-mkdir ${out}/bin
-cp ${tmp}/out/lapce ${out}/bin/
+{% block cargo_bins %}
+lapce
 {% endblock %}
 
 {% block cargo_tool %}

@@ -21,7 +21,6 @@ fc454bb888d18117729d0e15e24c74f2a074d52781058e9d88a9ea3d58701458
 cd cmd/mlr
 {% endblock %}
 
-{% block install %}
-mkdir ${out}/bin
-cp mlr ${out}/bin/
+{% block go_bins %}
+mlr
 {% endblock %}

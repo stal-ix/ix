@@ -20,7 +20,6 @@ https://github.com/nwg-piotr/nwg-menu/archive/refs/tags/v{{self.version().strip(
 bin/go/lang/24
 {% endblock %}
 
-{% block install %}
-mkdir ${out}/bin
-cp nwg-menu ${out}/bin/
+{% block go_bins %}
+nwg-menu
 {% endblock %}

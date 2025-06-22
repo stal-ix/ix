@@ -21,7 +21,6 @@ https://github.com/minio/console/archive/refs/tags/v{{self.version().strip()}}.t
 cd cmd/console
 {% endblock %}
 
-{% block install %}
-mkdir ${out}/bin
-cp console ${out}/bin/minio-console
+{% block go_bins %}
+console
 {% endblock %}

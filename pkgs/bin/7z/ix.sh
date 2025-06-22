@@ -55,12 +55,3 @@ shut_up
 _7ZIP_AFFINITY_DISABLE=1
 Z7_AFFINITY_DISABLE=1
 {% endblock %}
-
-{% block patch %}
-echo 'patch'
-{% if not linux %}
-for f in Common/FileStreams.cpp UI/Common/UpdateCallback.cpp; do
-    sed -e 's|<sys/sysmacros.h>|<sys/types.h>|' -i ../../${f}
-done
-{% endif %}
-{% endblock %}

@@ -25,7 +25,6 @@ export GO111MODULE=on
 {{super()}}
 {% endblock %}
 
-{% block install %}
-mkdir ${out}/bin
-cp tun2socks ${out}/bin/
+{% block go_bins %}
+tun2socks
 {% endblock %}

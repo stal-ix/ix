@@ -33,9 +33,8 @@ base64 -d << EOF > build.rs
 EOF
 {% endblock %}
 
-{% block install %}
-mkdir ${out}/bin
-cp ${tmp}/out/bpftop ${out}/bin/
+{% block cargo_bins %}
+bpftop
 {% endblock %}
 
 {% block cargo_tool %}

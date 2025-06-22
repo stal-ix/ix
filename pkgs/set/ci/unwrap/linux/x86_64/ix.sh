@@ -45,16 +45,17 @@
 #bin/qemu/8/1
 #bin/qemu/8/2
 #bin/curl/ms
+#bin/fizzy
+#bin/strawberry
+#bin/wx/maxima
 #}
 
 {% block run_deps %}
+bin/wlogout
 lib/compiler_rt/sanitize/address/bin(kind=bin,sanitize=address)
 bin/oras
 bin/rss/guard
 bin/auto/make/1/18
-#bin/fizzy
-#bin/strawberry
-#bin/wx/maxima
 bin/huggingface/cli
 bin/bfs
 bin/perl/latest

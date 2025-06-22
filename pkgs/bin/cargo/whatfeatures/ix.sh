@@ -20,9 +20,8 @@ https://github.com/museun/cargo-whatfeatures/archive/refs/tags/v{{self.version()
 lib/openssl
 {% endblock %}
 
-{% block install %}
-mkdir ${out}/bin
-cp ${tmp}/out/cargo-whatfeatures ${out}/bin/
+{% block cargo_bins %}
+cargo-whatfeatures
 {% endblock %}
 
 {% block cargo_tool %}

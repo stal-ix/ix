@@ -33,3 +33,12 @@ aux/go/{{self.go_version().strip()}}({{self.go_args().strip().replace('\n', ',')
 {{super()}}
 -mod=vendor
 {% endblock %}
+
+{% block install %}
+{% if bin %}
+mkdir ${out}/bin
+{% for x in ix.parse_list(self.go_bins()) %}
+cp {{x}}{{target.exe_suffix}} ${out}/bin/
+{% endfor %}
+{% endif %}
+{% endblock %}

@@ -36,7 +36,6 @@ ln -s vendored/clang-sys ./
 patch_bindgen .
 {% endblock %}
 
-{% block install %}
-mkdir ${out}/bin
-cp ${tmp}/out/bindgen ${out}/bin/
+{% block cargo_bins %}
+bindgen
 {% endblock %}

@@ -16,9 +16,8 @@ https://github.com/prometheus/node_exporter/archive/refs/tags/v{{self.version().
 243349e243ad0af465cdef883bca21a4c0532392469cd21a43f47aa585ccd42e
 {% endblock %}
 
-{% block install %}
-mkdir ${out}/bin
-cp node_exporter ${out}/bin/
+{% block go_bins %}
+node_exporter
 {% endblock %}
 
 

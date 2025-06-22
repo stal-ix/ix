@@ -25,9 +25,8 @@ bin/go/lang/24
 cd app
 {% endblock %}
 
-{% block install %}
-mkdir ${out}/bin
-cp app ${out}/bin/hysteria
+{% block go_bins %}
+app
 {% endblock %}
 
 {% block setup_target_flags %}

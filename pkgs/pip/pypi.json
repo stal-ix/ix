@@ -118,6 +118,10 @@
         "sha": "a462455f19f5faf404a7902952b6f0e3ce868f3ee09a359b05eca6673bd8412d",
         "url": "https://files.pythonhosted.org/packages/a2/3d/023389198f69c722d039351050738d6755376c8fd343e91dc493ea485905/jsonschema-4.24.0-py3-none-any.whl"
     },
+    "markupsafe/ix.sh": {
+        "sha": "6e296a513ca3d94054c2c881cc913116e90fd030ad1c656b3869762b754f5f8a",
+        "url": "https://files.pythonhosted.org/packages/b3/73/085399401383ce949f727afec55ec3abd76648d04b9f22e1c0e99cb4bec3/MarkupSafe-3.0.2-cp39-cp39-win_amd64.whl"
+    },
     "minio/ix.sh": {
         "run": [
             "pip/certifi",

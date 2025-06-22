@@ -16,9 +16,8 @@ https://github.com/casey/just/archive/refs/tags/{{self.version().strip()}}.tar.g
 6f6dbbe0eea956f484afa8cf85fc51382c3c5d0d006b7a76c48a35d6fe7830dd
 {% endblock %}
 
-{% block install %}
-mkdir ${out}/bin
-cp ${tmp}/out/just ${out}/bin/
+{% block cargo_bins %}
+just
 {% endblock %}
 
 {% block cargo_tool %}

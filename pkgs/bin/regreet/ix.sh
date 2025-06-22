@@ -20,9 +20,8 @@ https://github.com/rharish101/ReGreet/archive/refs/tags/{{self.version().strip()
 lib/gtk/4
 {% endblock %}
 
-{% block install %}
-mkdir ${out}/bin
-cp ${tmp}/out/regreet ${out}/bin/
+{% block cargo_bins %}
+regreet
 {% endblock %}
 
 {% block cargo_tool %}

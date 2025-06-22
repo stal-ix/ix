@@ -22,9 +22,8 @@ lib/c++
 lib/evdev
 {% endblock %}
 
-{% block install %}
-mkdir ${out}/bin
-cp ${tmp}/out/evsieve ${out}/bin/
+{% block cargo_bins %}
+evsieve
 {% endblock %}
 
 {% block cargo_tool %}

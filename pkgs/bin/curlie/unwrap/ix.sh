@@ -16,9 +16,8 @@ https://github.com/rs/curlie/archive/refs/tags/v{{self.version().strip()}}.tar.g
 9e36af1f7f963d06b31ec743c73fb9b592e6a79f9bc29f85e4ad447b615309c5
 {% endblock %}
 
-{% block install %}
-mkdir ${out}/bin
-cp curlie ${out}/bin/
+{% block go_bins %}
+curlie
 {% endblock %}
 
 {% block go_tool %}

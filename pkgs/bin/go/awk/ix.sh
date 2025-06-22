@@ -16,7 +16,6 @@ https://github.com/benhoyt/goawk/archive/refs/tags/v{{self.version().strip()}}.t
 a440f669087a76f4b0bafe597f31fa9829af3ecd8fc16ad995ae95e548321f08
 {% endblock %}
 
-{% block install %}
-mkdir ${out}/bin
-cp goawk ${out}/bin/
+{% block go_bins %}
+goawk
 {% endblock %}

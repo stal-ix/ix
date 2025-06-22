@@ -15,7 +15,6 @@ lib/input
 {{super()}}
 {% endblock %}
 
-{% block install %}
-mkdir ${out}/bin
-cp ${tmp}/out/cosmic-workspaces ${out}/bin/
+{% block cargo_bins %}
+cosmic-workspaces
 {% endblock %}

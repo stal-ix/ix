@@ -32,9 +32,8 @@ bld/cmake
 bld/fakegit
 {% endblock %}
 
-{% block install %}
-mkdir ${out}/bin
-cp ${tmp}/out/gitui ${out}/bin/
+{% block cargo_bins %}
+gitui
 {% endblock %}
 
 {% block patch %}

@@ -20,7 +20,6 @@ https://github.com/AdguardTeam/dnsproxy/archive/refs/tags/v{{self.version().stri
 bin/go/lang/24
 {% endblock %}
 
-{% block install %}
-mkdir ${out}/bin
-cp dnsproxy ${out}/bin/
+{% block go_bins %}
+dnsproxy
 {% endblock %}

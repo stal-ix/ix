@@ -25,9 +25,8 @@ lib/oniguruma
 cd yazi-fm
 {% endblock %}
 
-{% block install %}
-mkdir ${out}/bin
-cp ${tmp}/out/yazi ${out}/bin/
+{% block cargo_bins %}
+yazi
 {% endblock %}
 
 {% block cargo_tool %}

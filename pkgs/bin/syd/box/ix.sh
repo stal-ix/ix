@@ -20,9 +20,8 @@ https://gitlab.exherbo.org/sydbox/sydbox/-/archive/v{{self.version().strip()}}/s
 lib/seccomp
 {% endblock %}
 
-{% block install %}
-mkdir ${out}/bin
-cp ${tmp}/out/syd ${out}/bin/
+{% block cargo_bins %}
+syd
 {% endblock %}
 
 {% block cargo_tool %}

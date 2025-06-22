@@ -16,7 +16,6 @@ https://github.com/git-lfs/git-lfs/archive/refs/tags/v{{self.version().strip()}}
 2a1f031b45960621119c571c4e82b2418567e7ebdd45514f6dded55e615312b3
 {% endblock %}
 
-{% block install %}
-mkdir ${out}/bin
-cp git-lfs ${out}/bin/
+{% block go_bins %}
+git-lfs
 {% endblock %}

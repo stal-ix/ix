@@ -13,7 +13,6 @@ https://github.com/isacikgoz/tldr/archive/refs/tags/v1.0.0-alpha.tar.gz
 cd cmd/tldr
 {% endblock %}
 
-{% block install %}
-mkdir ${out}/bin
-cp tldr ${out}/bin/
+{% block go_bins %}
+tldr
 {% endblock %}

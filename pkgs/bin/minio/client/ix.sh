@@ -8,7 +8,6 @@ https://github.com/minio/mc/archive/refs/tags/RELEASE.2024-03-30T15-29-52Z.tar.g
 e8baf6877a73bda833ef2b80dc27e5d0edaeb7f4b44ce46ae66ed873da5d977d
 {% endblock %}
 
-{% block install %}
-mkdir ${out}/bin
-cp mc ${out}/bin/
+{% block go_bins %}
+mc
 {% endblock %}

@@ -21,7 +21,6 @@ lib/olm
 lib/shim/fake(lib_name=stdc++)
 {% endblock %}
 
-{% block install %}
-mkdir ${out}/bin
-cp gomuks ${out}/bin/
+{% block go_bins %}
+gomuks
 {% endblock %}

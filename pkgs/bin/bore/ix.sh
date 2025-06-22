@@ -16,9 +16,8 @@ https://github.com/ekzhang/bore/archive/refs/tags/v{{self.version().strip()}}.ta
 9847b4774e6fb718c096febc6f3b7ce4731cb4d1f753325efae0e3891b08f5df
 {% endblock %}
 
-{% block install %}
-mkdir ${out}/bin
-cp ${tmp}/out/bore ${out}/bin/
+{% block cargo_bins %}
+bore
 {% endblock %}
 
 {% block cargo_tool %}

@@ -12,7 +12,6 @@ bc6036393794c97638c3510ba69381bb7087b0335281f652bddfc76c2cb263e6
 bin/go/lang/22
 {% endblock %}
 
-{% block install %}
-mkdir ${out}/bin
-cp bcrypt ${out}/bin/
+{% block go_bins %}
+bcrypt
 {% endblock %}

@@ -16,9 +16,8 @@ https://github.com/bensadeh/circumflex/archive/refs/tags/{{self.version().strip(
 8dfe90e029c9a656e43a2bd7d120c0e17d6dc4fe3af3c5014969fa4cf2e14b5f
 {% endblock %}
 
-{% block install %}
-mkdir ${out}/bin
-cp clx ${out}/bin/
+{% block go_bins %}
+clx
 {% endblock %}
 
 {% block go_tool %}

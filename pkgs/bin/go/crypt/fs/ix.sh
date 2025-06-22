@@ -25,7 +25,6 @@ lib/openssl
 cd gocryptfs-xray
 {% endblock %}
 
-{% block install %}
-mkdir ${out}/bin
-cp gocryptfs-xray ${out}/bin/
+{% block go_bins %}
+gocryptfs-xray
 {% endblock %}

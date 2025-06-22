@@ -32,9 +32,8 @@ lib/gtk/layer/shell/3
 sed -e 's|.*"volume".*||' -i Cargo.toml
 {% endblock %}
 
-{% block install %}
-mkdir ${out}/bin
-cp ${tmp}/out/ironbar ${out}/bin/
+{% block cargo_bins %}
+ironbar
 {% endblock %}
 
 {% block cargo_tool %}
