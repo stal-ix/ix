@@ -21,6 +21,5 @@ bin/go/lang/24
 {% endblock %}
 
 {% block go_bins %}
-ls -la .
 forgejo.org
 {% endblock %}
