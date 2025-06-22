@@ -1,5 +1,5 @@
 {% extends 'nopredict/ix.sh' %}
 
 {% block predict_outputs %}
-[{"path": "{{self.pem_path().strip()}}", "sum": "63f3242a11feff47283f7755abe57813418435e8e424c157f789a824946a5b5e"}]
+[{"path": "{{self.pem_path().strip()}}", "sum": "3295b332d2ab01332154aba7f94435022513ec0ac6e523acc66f9bf81ecfa89e"}]
 {% endblock %}

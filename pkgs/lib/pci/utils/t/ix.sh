@@ -5,12 +5,12 @@ pciutils
 {% endblock %}
 
 {% block version %}
-3.13.0
+3.14.0
 {% endblock %}
 
 {% block fetch %}
 https://github.com/pciutils/pciutils/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-861fc26151a4596f5c3cb6f97d6c75c675051fa014959e26fb871c8c932ebc67
+9f99bb89876510435fbfc47bbc8653bc57e736a21915ec0404e0610460756cb8
 {% endblock %}
 
 {% block lib_deps %}

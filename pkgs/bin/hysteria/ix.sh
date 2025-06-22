@@ -32,3 +32,8 @@ app
 {% block setup_target_flags %}
 export GOWORK=off
 {% endblock %}
+
+{% block install %}
+{{super()}}
+mv ${out}/bin/app ${out}/bin/hysteria
+{% endblock %}
