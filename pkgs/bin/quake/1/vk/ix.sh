@@ -5,12 +5,12 @@ vkQuake
 {% endblock %}
 
 {% block version %}
-1.32.2
+1.32.3
 {% endblock %}
 
 {% block fetch %}
 https://github.com/Novum/vkQuake/archive/refs/tags/{{self.version().strip()}}.tar.gz
-e3278c329c17087816b95fa8997cb83fd8233393be242e49c97c71f9cc9395ab
+75696a57fae258813a8ce256ed82f77c952f24c9108e4028cee55e70813cddf8
 {% endblock %}
 
 {% block bld_libs %}
@@ -25,6 +25,8 @@ lib/opus/file
 lib/xiph/flac
 lib/xiph/vorbis
 bin/quake/1/vk/dl
+lib/vulkan/loader
+lib/vulkan/headers
 lib/vulkan/drivers
 {% endblock %}
 
