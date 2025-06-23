@@ -10,11 +10,11 @@ https://github.com/yandex/yatool
 {% endblock %}
 
 {% block git_commit %}
-645493a0af867b356ecf11435dcf020ad2233d53
+680419f91ada0bced3af3c874d4028b19335dee3
 {% endblock %}
 
 {% block git_sha %}
-025ed8999ff0d817a5be687f0837931876fc8698c1d39e9a1c5b7345fb33e8f2
+42bbcc73b7cc5d85a630740f4320c3b4c9f4cc78e7da43ba665b12b51a7730d8
 {% endblock %}
 
 {% block step_unpack %}
