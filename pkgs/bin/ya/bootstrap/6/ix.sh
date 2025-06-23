@@ -10,11 +10,11 @@ https://github.com/yandex/yatool
 {% endblock %}
 
 {% block git_commit %}
-c35932419f4f9a4de7727108039ffceb1bc32c38
+ba37755bec2ae37800faa78a72b710677a920a88
 {% endblock %}
 
 {% block git_sha %}
-2808e91fa4c6df9ff195c51b70896f79c708250ce6ca17ff56fdba671d25d2df
+281e3d35cbaff9bc0600bf0965f5306d74885b75279688b725a6d87d91625768
 {% endblock %}
 
 {% block step_unpack %}
@@ -32,7 +32,7 @@ devtools/ymake/bin/ymake
 
 {% block bld_tool %}
 bin/gg
-bin/ya/bootstrap/4(clang_ver=18)
+bin/ya/bootstrap/5(clang_ver=18)
 {{super()}}
 {% endblock %}
 
