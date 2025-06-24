@@ -53,18 +53,26 @@ def norm_sha(sha):
 def iter_urls_step(url, sha, mirrors):
     if sha := norm_sha(sha):
         for x in iter_cached(sha, mirrors):
-            yield x, True
+            yield {
+                'url': x,
+                'cache': True,
+            }
 
-    yield url, False
+    yield {
+        'url': url,
+        'cache': False,
+    }
 
 
 def iter_urls(url, sha, mirrors, good):
     while good:
-        for a, b in iter_urls_step(url, sha, mirrors):
-            if a in good:
-                yield a, b
+        for rec in iter_urls_step(url, sha, mirrors):
+            u = rec['url']
+
+            if u in good:
+                yield rec
             else:
-                print(f'skip {a}')
+                print(f'skip {u}')
 
     raise Exception(f'can not fetch {url}, no sources left')
 
@@ -81,8 +89,10 @@ def iter_tout():
 def do_fetch(url, path, sha, mirrors):
     good = set(a for a, b in iter_urls_step(url, sha, mirrors))
 
-    for (u, best_effort), tout, ff in zip(iter_urls(url, sha, mirrors, good), iter_tout(), iter_ff()):
+    for rec, tout, ff in zip(iter_urls(url, sha, mirrors, good), iter_tout(), iter_ff()):
         prepare_dir(os.path.dirname(path))
+
+        u = rec['url']
 
         try:
             ff(u, path, int(tout))
@@ -93,7 +103,7 @@ def do_fetch(url, path, sha, mirrors):
                 print(f'404 {u}')
                 good.remove(u)
             elif 'checksum' in str(e):
-                if best_effort:
+                if rec['cache']:
                     good.remove(u)
                 else:
                     raise e
