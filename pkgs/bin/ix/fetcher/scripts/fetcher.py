@@ -87,7 +87,7 @@ def iter_tout():
 
 
 def do_fetch(url, path, sha, mirrors):
-    good = set(a for a, b in iter_urls_step(url, sha, mirrors))
+    good = set(r['url'] for r in iter_urls_step(url, sha, mirrors))
 
     for rec, tout, ff in zip(iter_urls(url, sha, mirrors, good), iter_tout(), iter_ff()):
         prepare_dir(os.path.dirname(path))
