@@ -1,4 +1,4 @@
-{% extends '//bin/ya/bootstrap/t/ix.sh' %}
+{% extends '//bin/ya/t/1/ix.sh' %}
 
 {% block git_commit %}
 46ab84268076f9b4cb8406f7844ee5e389295ca4

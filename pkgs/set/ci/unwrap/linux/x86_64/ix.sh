@@ -51,6 +51,7 @@
 #}
 
 {% block run_deps %}
+bin/sudo
 bin/wlogout
 lib/compiler_rt/sanitize/address/bin(kind=bin,sanitize=address)
 bin/oras
