@@ -64,17 +64,9 @@ def iter_urls_step(url, sha, mirrors):
     }
 
 
-def iter_urls(url, sha, mirrors, good):
+def iter_urls(good):
     while good:
-        for rec in iter_urls_step(url, sha, mirrors):
-            u = rec['url']
-
-            if u in good:
-                yield rec
-            else:
-                print(f'skip {u}')
-
-    raise Exception(f'can not fetch {url}, no sources left')
+        yield from list(good.items())
 
 
 def iter_tout():
@@ -87,12 +79,10 @@ def iter_tout():
 
 
 def do_fetch(url, path, sha, mirrors):
-    good = set(r['url'] for r in iter_urls_step(url, sha, mirrors))
+    good = dict((r['url'], r) for r in iter_urls_step(url, sha, mirrors))
 
-    for rec, tout, ff in zip(iter_urls(url, sha, mirrors, good), iter_tout(), iter_ff()):
+    for (u, rec), tout, ff in zip(iter_urls(good), iter_tout(), iter_ff()):
         prepare_dir(os.path.dirname(path))
-
-        u = rec['url']
 
         try:
             ff(u, path, int(tout))
@@ -101,15 +91,16 @@ def do_fetch(url, path, sha, mirrors):
         except Exception as e:
             if 'error: 404' in str(e):
                 print(f'404 {u}')
-                good.remove(u)
+                good.pop(u)
             elif 'checksum' in str(e):
                 if rec['cache']:
-                    good.remove(u)
+                    good.pop(u)
                 else:
                     raise e
             else:
                 print(f'while fetch {u}: {e}')
 
+    raise Exception(f'can not fetch {url}, no sources left')
 
 def check_md5(path, old_cs):
     if '__skip__' in old_cs:
