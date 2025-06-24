@@ -58,9 +58,15 @@ def iter_urls_step(url, sha, mirrors):
     yield url, False
 
 
-def iter_urls(url, sha, mirrors):
-    while True:
-        yield from iter_urls_step(url, sha, mirrors)
+def iter_urls(url, sha, mirrors, good):
+    while good:
+        for x in iter_urls_step(url, sha, mirrors):
+            if x in good:
+                yield x
+            else:
+                print(f'skip {x}')
+
+    raise Exception(f'can not fetch {url}, no sources left')
 
 
 def iter_tout():
@@ -73,18 +79,9 @@ def iter_tout():
 
 
 def do_fetch(url, path, sha, mirrors):
-    skip = set()
-    full = frozenset(iter_urls_step(url, sha, mirrors))
+    good = set(iter_urls_step(url, sha, mirrors))
 
-    for (u, best_effort), tout, ff in zip(iter_urls(url, sha, mirrors), iter_tout(), iter_ff()):
-        if len(skip) >= len(full):
-            raise Exception(f'can not fetch {url}, no sources left')
-
-        if u in skip:
-            print(f'skip {u}')
-
-            continue
-
+    for (u, best_effort), tout, ff in zip(iter_urls(url, sha, mirrors, good), iter_tout(), iter_ff()):
         prepare_dir(os.path.dirname(path))
 
         try:
@@ -94,10 +91,10 @@ def do_fetch(url, path, sha, mirrors):
         except Exception as e:
             if 'error: 404' in str(e):
                 print(f'404 {u}')
-                skip.add(u)
+                good.remove(u)
             elif 'checksum' in str(e):
                 if best_effort:
-                    skip.add(u)
+                    good.remove(u)
                 else:
                     raise e
             else:
