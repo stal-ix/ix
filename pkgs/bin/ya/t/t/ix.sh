@@ -1,8 +1,16 @@
 {% extends '//die/c/ya.sh' %}
 
+{% block git_repo %}
+https://github.com/yandex/yatool
+{% endblock %}
+
 {% block bld_tool %}
 bin/ya/tools/java
 {{super()}}
+{% endblock %}
+
+{% block ya_c_flags %}
+-Wno-error
 {% endblock %}
 
 {% block ya_make_flags %}
