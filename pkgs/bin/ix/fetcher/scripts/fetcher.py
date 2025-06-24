@@ -60,11 +60,11 @@ def iter_urls_step(url, sha, mirrors):
 
 def iter_urls(url, sha, mirrors, good):
     while good:
-        for x in iter_urls_step(url, sha, mirrors):
-            if x in good:
-                yield x
+        for a, b in iter_urls_step(url, sha, mirrors):
+            if a in good:
+                yield a, b
             else:
-                print(f'skip {x}')
+                print(f'skip {a}')
 
     raise Exception(f'can not fetch {url}, no sources left')
 
@@ -79,7 +79,7 @@ def iter_tout():
 
 
 def do_fetch(url, path, sha, mirrors):
-    good = set(iter_urls_step(url, sha, mirrors))
+    good = set(a for a, b in iter_urls_step(url, sha, mirrors))
 
     for (u, best_effort), tout, ff in zip(iter_urls(url, sha, mirrors, good), iter_tout(), iter_ff()):
         prepare_dir(os.path.dirname(path))
