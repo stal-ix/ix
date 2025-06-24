@@ -13,6 +13,10 @@ bin/ya/tools/java
 -Wno-error
 {% endblock %}
 
+{% block ya_make_targets %}
+devtools/ymake/bin/ymake
+{% endblock %}
+
 {% block ya_make_flags %}
 {% if linux %}
 MUSL=yes
