@@ -28,3 +28,7 @@ bld/cargo/87
 export RUSTC_BOOTSTRAP=1
 {{super()}}
 {% endblock %}
+
+{% block bld_libs %}
+lib/icu/dl
+{% endblock %}
