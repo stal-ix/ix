@@ -30,7 +30,7 @@ namespace {
         }
 
         inline void out(const void* buf, size_t len) noexcept {
-            write(1, buf, len);
+            write(FD, buf, len);
         }
 
         inline void out(const char* s) noexcept {
