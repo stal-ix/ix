@@ -23,3 +23,8 @@ edit
 {% block cargo_tool %}
 bld/cargo/87
 {% endblock %}
+
+{% block build %}
+export RUSTC_BOOTSTRAP=1
+{{super()}}
+{% endblock %}
