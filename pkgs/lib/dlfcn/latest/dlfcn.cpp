@@ -10,27 +10,25 @@
 #include <unordered_map>
 
 namespace {
-    struct Dbg {
-        int FD;
+    struct XFD {
+        int FD = -1;
 
-        Dbg() {
+        XFD() {
             if (auto env = getenv("DL_STUB_DEBUG"); env && env[0] == '/') {
                 FD = open(env, O_WRONLY | O_CREAT | O_APPEND, 0644);
-            } else {
-                FD = dup(1);
             }
 
             if (FD < 0) {
-                abort();
+                FD = 1;
             }
         }
+    };
 
-        ~Dbg() noexcept {
-            close(FD);
-        }
-
+    struct Dbg {
         inline void out(const void* buf, size_t len) noexcept {
-            write(FD, buf, len);
+            static auto xfd = new XFD();
+
+            write(xfd->FD, buf, len);
         }
 
         inline void out(const char* s) noexcept {
