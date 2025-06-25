@@ -239,6 +239,23 @@ extern "C" int stub_dladdr(const void* /*addr*/, Dl_info* /*info*/) {
     return 0;
 }
 
+#define DL_LIB(name)                    \
+    namespace { namespace DL_UID(Reg) { \
+        static struct Reg {             \
+            inline Reg() {              \
+                const char* lib = name; \
+
+#define DL_S_2(name, ptr) \
+                stub_dlregister(lib, name, (void*)ptr);
+
+#define DL_S_1(name) \
+                DL_S_2(DL_STR(name), name)
+
+#define DL_END()           \
+            };             \
+        } LIB_REG; \
+    }}
+
 DL_LIB("dl")
 DL_S_2("dlopen", stub_dlopen)
 DL_S_2("dlsym", stub_dlsym)

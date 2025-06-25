@@ -56,20 +56,3 @@ int   stub_dladdr(const void* addr, Dl_info* info);
 #if defined(__cplusplus)
 }
 #endif
-
-#define DL_LIB(name)                    \
-    namespace { namespace DL_UID(Reg) { \
-        static struct Reg {             \
-            inline Reg() {              \
-                const char* lib = name; \
-
-#define DL_S_2(name, ptr) \
-                stub_dlregister(lib, name, (void*)ptr);
-
-#define DL_S_1(name) \
-                DL_S_2(DL_STR(name), name)
-
-#define DL_END()           \
-            };             \
-        } LIB_REG; \
-    }}
