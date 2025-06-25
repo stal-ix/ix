@@ -10,25 +10,21 @@
 #include <unordered_map>
 
 namespace {
-    struct XFD {
-        int FD = -1;
-
-        XFD() {
-            if (auto env = getenv("DL_STUB_DEBUG"); env && env[0] == '/') {
-                FD = open(env, O_WRONLY | O_CREAT | O_APPEND, 0644);
-            }
-
-            if (FD < 0) {
-                FD = 1;
+    static int OpenFD() {
+        if (auto env = getenv("DL_STUB_DEBUG"); env && env[0] == '/') {
+            if (int fd = open(env, O_WRONLY | O_CREAT | O_APPEND, 0644); fd >= 0) {
+                return fd;
             }
         }
-    };
+
+        return 1;
+    }
 
     struct Dbg {
         inline void out(const void* buf, size_t len) noexcept {
-            static auto xfd = new XFD();
+            static auto xfd = OpenFD();
 
-            write(xfd->FD, buf, len);
+            write(xfd, buf, len);
         }
 
         inline void out(const char* s) noexcept {
