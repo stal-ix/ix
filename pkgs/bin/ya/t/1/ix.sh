@@ -9,7 +9,3 @@ https://github.com/pg83/yaboot/archive/refs/tags/1.tar.gz
 {{super()}}
 extract 1 ${src}/1.tar.gz
 {% endblock %}
-
-{% block ya_make_targets %}
-devtools/ymake/bin/ymake
-{% endblock %}

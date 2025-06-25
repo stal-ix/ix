@@ -53,14 +53,20 @@ def norm_sha(sha):
 def iter_urls_step(url, sha, mirrors):
     if sha := norm_sha(sha):
         for x in iter_cached(sha, mirrors):
-            yield x, True
+            yield {
+                'url': x,
+                'cache': True,
+            }
 
-    yield url, False
+    yield {
+        'url': url,
+        'cache': False,
+    }
 
 
-def iter_urls(url, sha, mirrors):
-    while True:
-        yield from iter_urls_step(url, sha, mirrors)
+def iter_urls(good):
+    while good:
+        yield from list(good.items())
 
 
 def iter_tout():
@@ -73,18 +79,9 @@ def iter_tout():
 
 
 def do_fetch(url, path, sha, mirrors):
-    skip = set()
-    full = frozenset(iter_urls_step(url, sha, mirrors))
+    good = dict((r['url'], r) for r in iter_urls_step(url, sha, mirrors))
 
-    for (u, best_effort), tout, ff in zip(iter_urls(url, sha, mirrors), iter_tout(), iter_ff()):
-        if len(skip) >= len(full):
-            raise Exception(f'can not fetch {url}, no sources left')
-
-        if u in skip:
-            print(f'skip {u}')
-
-            continue
-
+    for (u, rec), tout, ff in zip(iter_urls(good), iter_tout(), iter_ff()):
         prepare_dir(os.path.dirname(path))
 
         try:
@@ -94,15 +91,16 @@ def do_fetch(url, path, sha, mirrors):
         except Exception as e:
             if 'error: 404' in str(e):
                 print(f'404 {u}')
-                skip.add(u)
+                good.pop(u)
             elif 'checksum' in str(e):
-                if best_effort:
-                    skip.add(u)
+                if rec['cache']:
+                    good.pop(u)
                 else:
                     raise e
             else:
                 print(f'while fetch {u}: {e}')
 
+    raise Exception(f'can not fetch {url}, no sources left')
 
 def check_md5(path, old_cs):
     if '__skip__' in old_cs:
