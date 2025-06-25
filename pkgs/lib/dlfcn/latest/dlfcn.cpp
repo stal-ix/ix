@@ -1,5 +1,6 @@
 #include "dlfcn.h"
 
+#include <fcntl.h>
 #include <unistd.h>
 #include <string.h>
 #include <stdlib.h>
@@ -10,6 +11,24 @@
 
 namespace {
     struct Dbg {
+        int FD;
+
+        Dbg() {
+            if (auto env = getenv("DL_STUB_DEBUG"); env && env[0] == '/') {
+                FD = open(env, O_WRONLY | O_CREAT | O_APPEND, 0644);
+            } else {
+                FD = dup(1);
+            }
+
+            if (FD < 0) {
+                abort();
+            }
+        }
+
+        ~Dbg() noexcept {
+            close(FD);
+        }
+
         inline void out(const void* buf, size_t len) noexcept {
             write(1, buf, len);
         }
