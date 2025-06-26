@@ -30,6 +30,7 @@ cp $(command -v sh) bin/
 mkdir -p usr/bin
 cp $(command -v env) usr/bin/
 mkdir etc
+cp -L /etc/resolv.conf etc/
 cp -R /etc/ssl etc/
 cat << EOF > etc/passwd
 root:x:0:0:none:/home/root:/bin/sh
