@@ -1523,6 +1523,7 @@ https://github.com/Novum/vkQuake/archive/refs/tags/1.31.3.tar.gz
 https://github.com/Novum/vkQuake/archive/refs/tags/1.32.0.tar.gz
 https://github.com/Novum/vkQuake/archive/refs/tags/1.32.1.tar.gz
 https://github.com/Novum/vkQuake/archive/refs/tags/1.32.2.tar.gz
+https://github.com/Novum/vkQuake/archive/refs/tags/1.32.3.tar.gz
 https://github.com/Old-Man-Programmer/tree/archive/refs/tags/2.1.1.tar.gz
 https://github.com/Old-Man-Programmer/tree/archive/refs/tags/2.2.1.tar.gz
 https://github.com/OpenPrinting/cups/archive/refs/tags/v2.4.8.tar.gz
@@ -3167,6 +3168,7 @@ https://github.com/llvm/llvm-project/archive/refs/tags/llvmorg-20.1.1.tar.gz
 https://github.com/llvm/llvm-project/archive/refs/tags/llvmorg-20.1.2.tar.gz
 https://github.com/llvm/llvm-project/archive/refs/tags/llvmorg-20.1.4.tar.gz
 https://github.com/llvm/llvm-project/archive/refs/tags/llvmorg-20.1.5.tar.gz
+https://github.com/llvm/llvm-project/archive/refs/tags/llvmorg-20.1.7.tar.gz
 https://github.com/llvm/llvm-project/commit/e9f851de24baefd5710c3cac6ef3cafaea0eeb9d.diff
 https://github.com/llvm/llvm-project/releases/download/llvmorg-13.0.1/llvm-project-13.0.1.src.tar.xz
 https://github.com/llvm/llvm-project/releases/download/llvmorg-16.0.6/llvm-project-16.0.6.src.tar.xz
@@ -3277,6 +3279,7 @@ https://github.com/microsoft/GSL/archive/refs/tags/v4.0.0.tar.gz
 https://github.com/microsoft/GSL/archive/refs/tags/v4.2.0.tar.gz
 https://github.com/microsoft/cascadia-code/archive/refs/tags/v2404.23.tar.gz
 https://github.com/microsoft/cascadia-code/archive/refs/tags/v2407.24.tar.gz
+https://github.com/microsoft/edit/archive/refs/tags/v1.2.0.tar.gz
 https://github.com/microsoft/mimalloc/archive/refs/tags/v1.7.6.tar.gz
 https://github.com/microsoft/mimalloc/archive/refs/tags/v1.8.2.tar.gz
 https://github.com/microsoft/mimalloc/archive/refs/tags/v1.8.9.tar.gz
@@ -3553,6 +3556,7 @@ https://github.com/pg83/ssh3/archive/75d80cf4e6a372ffed22a2254f6e3d67373fdc61.zi
 https://github.com/pg83/ssh3/archive/d900eb49a68945f924d6308765eead9f9eec7c27.zip
 https://github.com/pg83/ted/archive/refs/tags/v6.tar.gz
 https://github.com/pg83/yaboot/archive/refs/tags/1.tar.gz
+https://github.com/pg83/yaboot/archive/refs/tags/2.tar.gz
 https://github.com/phase1geo/Minder/archive/refs/tags/1.16.4.tar.gz
 https://github.com/phillipberndt/pqiv/archive/refs/tags/2.12.tar.gz
 https://github.com/phillipberndt/pqiv/archive/refs/tags/2.13.1.tar.gz
@@ -3798,6 +3802,7 @@ https://github.com/redis/redis/archive/refs/tags/8.0.0.tar.gz
 https://github.com/redis/redis/archive/refs/tags/8.0.1.tar.gz
 https://github.com/redis/redis/archive/refs/tags/8.0.2.tar.gz
 https://github.com/relan/exfat/releases/download/v1.4.0/exfat-utils-1.4.0.tar.gz
+https://github.com/reubeno/brush/archive/refs/tags/brush-shell-v0.2.19.tar.gz
 https://github.com/rfc1036/whois/archive/refs/tags/v5.5.18.tar.gz
 https://github.com/rfc1036/whois/archive/refs/tags/v5.5.19.tar.gz
 https://github.com/rfc1036/whois/archive/refs/tags/v5.5.20.tar.gz
@@ -4068,6 +4073,7 @@ https://github.com/strukturag/libheif/archive/refs/tags/v1.19.3.tar.gz
 https://github.com/strukturag/libheif/archive/refs/tags/v1.19.5.tar.gz
 https://github.com/strukturag/libheif/archive/refs/tags/v1.19.7.tar.gz
 https://github.com/strukturag/libheif/archive/refs/tags/v1.19.8.tar.gz
+https://github.com/sudo-project/sudo/archive/refs/tags/v1.9.17.tar.gz
 https://github.com/svenstaro/miniserve/archive/172c321c0809198ef7cafffc81aa3f8f688c5544.zip
 https://github.com/svenstaro/miniserve/archive/refs/tags/v0.26.0.tar.gz
 https://github.com/svenstaro/miniserve/archive/refs/tags/v0.29.0.tar.gz
@@ -4279,6 +4285,7 @@ https://github.com/tvrzna/emptty/archive/refs/tags/v0.13.0.tar.gz
 https://github.com/tvrzna/emptty/archive/refs/tags/v0.14.0.tar.gz
 https://github.com/twogood/unshield/archive/refs/tags/1.6.0.tar.gz
 https://github.com/twogood/unshield/archive/refs/tags/1.6.2.tar.gz
+https://github.com/twvd/snow/archive/aa17746213d285e04251a4b904fab161a662d67f.zip
 https://github.com/tytso/e2fsprogs/archive/refs/tags/v1.46.6.tar.gz
 https://github.com/tytso/e2fsprogs/archive/refs/tags/v1.47.2.tar.gz
 https://github.com/u-root/u-root/archive/refs/tags/v0.13.0.tar.gz
