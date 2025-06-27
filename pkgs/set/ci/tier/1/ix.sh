@@ -9,6 +9,7 @@
 #bin/wez/term
 #bin/rqbit
 #bin/iron/bar
+bin/edit
 bin/cbindgen
 bin/amd/gpu/top
 bin/u/utils

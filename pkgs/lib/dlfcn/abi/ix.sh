@@ -1,7 +1,7 @@
 {% extends '//die/inline/library.sh' %}
 
 {% block lib_deps %}
-lib/dlfcn/unwrap
+lib/dlfcn/dispatch
 {% endblock %}
 
 {% block sources %}
