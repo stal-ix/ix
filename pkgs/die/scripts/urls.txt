@@ -422,6 +422,7 @@ https://dl.xpdfreader.com/xpdf-4.04.tar.gz
 https://dl.xpdfreader.com/xpdf-4.05.tar.gz
 https://dotat.at/prog/unifdef/unifdef-2.12.tar.xz
 https://download.gnome.org/sources/adwaita-fonts/48/adwaita-fonts-48.2.tar.xz
+https://download.gnome.org/sources/adwaita-fonts/49/adwaita-fonts-49.0.tar.xz
 https://download.gnome.org/sources/at-spi2-core/2.52/at-spi2-core-2.52.0.tar.xz
 https://download.gnome.org/sources/at-spi2-core/2.54/at-spi2-core-2.54.0.tar.xz
 https://download.gnome.org/sources/at-spi2-core/2.54/at-spi2-core-2.54.1.tar.xz
@@ -1286,6 +1287,7 @@ https://github.com/Genivia/ugrep/archive/refs/tags/v7.4.3.tar.gz
 https://github.com/Genivia/ugrep/archive/refs/tags/v7.5.0.tar.gz
 https://github.com/GrapheneOS/hardened_malloc/archive/refs/tags/11.tar.gz
 https://github.com/GyulyVGC/sniffnet/archive/refs/tags/v1.3.2.tar.gz
+https://github.com/GyulyVGC/sniffnet/archive/refs/tags/v1.4.0.tar.gz
 https://github.com/Hjdskes/cage/archive/refs/tags/v0.1.4.tar.gz
 https://github.com/HowardHinnant/date/archive/refs/tags/v3.0.1.tar.gz
 https://github.com/HowardHinnant/date/archive/refs/tags/v3.0.3.tar.gz
@@ -1825,6 +1827,7 @@ https://github.com/astral-sh/ruff/archive/refs/tags/0.11.4.tar.gz
 https://github.com/astral-sh/ruff/archive/refs/tags/0.11.5.tar.gz
 https://github.com/astral-sh/ruff/archive/refs/tags/0.11.9.tar.gz
 https://github.com/astral-sh/ruff/archive/refs/tags/0.12.0.tar.gz
+https://github.com/astral-sh/ruff/archive/refs/tags/0.12.1.tar.gz
 https://github.com/astral-sh/ruff/archive/refs/tags/0.9.6.tar.gz
 https://github.com/avahi/avahi/releases/download/v0.8/avahi-0.8.tar.gz
 https://github.com/axboe/liburing/archive/refs/tags/liburing-2.10.tar.gz
@@ -3713,6 +3716,7 @@ https://github.com/qbittorrent/qBittorrent/archive/refs/tags/release-5.0.1.tar.g
 https://github.com/qbittorrent/qBittorrent/archive/refs/tags/release-5.0.2.tar.gz
 https://github.com/qbittorrent/qBittorrent/archive/refs/tags/release-5.0.5.tar.gz
 https://github.com/qbittorrent/qBittorrent/archive/refs/tags/release-5.1.0.tar.gz
+https://github.com/qbittorrent/qBittorrent/archive/refs/tags/release-5.1.1.tar.gz
 https://github.com/qpdf/qpdf/archive/refs/tags/v11.10.0.tar.gz
 https://github.com/qpdf/qpdf/archive/refs/tags/v11.10.1.tar.gz
 https://github.com/qpdf/qpdf/archive/refs/tags/v11.6.1.tar.gz
@@ -4651,6 +4655,7 @@ https://gitlab.com/inkscape/lib2geom/-/archive/1.4/lib2geom-1.4.tar.bz2
 https://gitlab.com/interception/linux/tools/-/archive/v0.6.8/tools-v0.6.8.tar.bz2
 https://gitlab.com/jeanfi/psensor/-/archive/1.2.1/psensor-1.2.1.tar.bz2
 https://gitlab.com/libtiff/libtiff/-/archive/v4.7.0/libtiff-v4.7.0.tar.bz2
+https://gitlab.com/lvmteam/lvm2/-/archive/v2_03_33/lvm2-v2_03_33.tar.bz2
 https://gitlab.com/mbunkus/mkvtoolnix/-/archive/release-79.0/mkvtoolnix-release-79.0.tar.bz2
 https://gitlab.com/mbunkus/mkvtoolnix/-/archive/release-80.0/mkvtoolnix-release-80.0.tar.bz2
 https://gitlab.com/mbunkus/mkvtoolnix/-/archive/release-81.0/mkvtoolnix-release-81.0.tar.bz2
@@ -5622,6 +5627,7 @@ https://www.kernel.org/pub/linux/utils/fs/xfs/xfsprogs/xfsprogs-6.10.1.tar.xz
 https://www.kernel.org/pub/linux/utils/fs/xfs/xfsprogs/xfsprogs-6.11.0.tar.xz
 https://www.kernel.org/pub/linux/utils/fs/xfs/xfsprogs/xfsprogs-6.13.0.tar.xz
 https://www.kernel.org/pub/linux/utils/fs/xfs/xfsprogs/xfsprogs-6.14.0.tar.xz
+https://www.kernel.org/pub/linux/utils/fs/xfs/xfsprogs/xfsprogs-6.15.0.tar.xz
 https://www.kernel.org/pub/linux/utils/fs/xfs/xfsprogs/xfsprogs-6.4.0.tar.xz
 https://www.kernel.org/pub/linux/utils/fs/xfs/xfsprogs/xfsprogs-6.5.0.tar.xz
 https://www.kernel.org/pub/linux/utils/fs/xfs/xfsprogs/xfsprogs-6.6.0.tar.xz
