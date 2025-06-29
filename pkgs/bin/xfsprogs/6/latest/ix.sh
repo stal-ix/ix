@@ -5,14 +5,14 @@ xfsprogs
 {% endblock %}
 
 {% block version %}
-6.14.0
+6.15.0
 {% endblock %}
 
 {# grub can't see it :( #}
 
 {% block fetch %}
 https://www.kernel.org/pub/linux/utils/fs/xfs/xfsprogs/xfsprogs-{{self.version().strip()}}.tar.xz
-fa5ab77f8b5169ce48dd8de09446ad7e29834a05b8f52012bae411cf53ec1f58
+13b91f74beef8ad11137f7d9d71055573d91e961bc55bb0245956f69b84cd704
 {% endblock %}
 
 {% block bld_libs %}
@@ -28,4 +28,5 @@ hist_init
 {% block cpp_defines %}
 {{super()}}
 OVERRIDE_SYSTEM_STATX=1
+STATX__RESERVED=0x80000000U
 {% endblock %}
