@@ -603,6 +603,7 @@ https://downloads.sourceforge.net/project/podofo/podofo/0.9.8/podofo-0.9.8.tar.g
 https://downloads.sourceforge.net/project/qmmp-dev/qmmp/2.1/qmmp-2.1.4.tar.bz2
 https://downloads.sourceforge.net/project/qmmp-dev/qmmp/2.2/qmmp-2.2.5.tar.bz2
 https://downloads.sourceforge.net/project/qmmp-dev/qmmp/2.2/qmmp-2.2.6.tar.bz2
+https://downloads.sourceforge.net/project/qmmp-dev/qmmp/2.2/qmmp-2.2.7.tar.bz2
 https://downloads.sourceforge.net/project/sbcl/sbcl/2.2.1/sbcl-2.2.1-source.tar.bz2
 https://downloads.sourceforge.net/project/sbcl/sbcl/2.3.10/sbcl-2.3.10-source.tar.bz2
 https://downloads.sourceforge.net/project/sbcl/sbcl/2.3.11/sbcl-2.3.11-source.tar.bz2
@@ -4745,6 +4746,7 @@ https://gitlab.freedesktop.org/serebit/waycheck/-/archive/v1.3.0/waycheck-v1.3.0
 https://gitlab.freedesktop.org/serebit/waycheck/-/archive/v1.3.1/waycheck-v1.3.1.tar.bz2
 https://gitlab.freedesktop.org/serebit/waycheck/-/archive/v1.4.0/waycheck-v1.4.0.tar.bz2
 https://gitlab.freedesktop.org/serebit/waycheck/-/archive/v1.6.0/waycheck-v1.6.0.tar.bz2
+https://gitlab.freedesktop.org/serebit/waycheck/-/archive/v1.7.0/waycheck-v1.7.0.tar.bz2
 https://gitlab.freedesktop.org/slirp/libslirp/-/archive/v4.7.0/libslirp-v4.7.0.tar.bz2
 https://gitlab.freedesktop.org/slirp/libslirp/-/archive/v4.9.0/libslirp-v4.9.0.tar.bz2
 https://gitlab.freedesktop.org/slirp/libslirp/-/archive/v4.9.1/libslirp-v4.9.1.tar.bz2
@@ -5256,6 +5258,7 @@ https://mupdf.com/downloads/archive/mupdf-1.25.6-source.tar.gz
 https://mupdf.com/downloads/archive/mupdf-1.26.0-source.tar.gz
 https://mupdf.com/downloads/archive/mupdf-1.26.1-source.tar.gz
 https://mupdf.com/downloads/archive/mupdf-1.26.2-source.tar.gz
+https://mupdf.com/downloads/archive/mupdf-1.26.3-source.tar.gz
 https://nav.dl.sourceforge.net/project/sbcl/sbcl/2.2.1/sbcl-2.2.1-source.tar.bz2
 https://nav.dl.sourceforge.net/project/sbcl/sbcl/2.3.7/sbcl-2.3.7-source.tar.bz2
 https://nav.dl.sourceforge.net/project/sbcl/sbcl/2.3.9/sbcl-2.3.9-source.tar.bz2
