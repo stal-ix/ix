@@ -5,12 +5,12 @@ waycheck
 {% endblock %}
 
 {% block version %}
-1.6.0
+1.7.0
 {% endblock %}
 
 {% block fetch %}
 https://gitlab.freedesktop.org/serebit/waycheck/-/archive/v{{self.version().strip()}}/waycheck-v{{self.version().strip()}}.tar.bz2
-822c0026f287d08744615598f145d8de95a5bca556e94ec63ca9740b5ceafede
+658caca3d967d9b23bb1f6d42c6fd67832263bb60fd600a26e97748d0e47e105
 {% endblock %}
 
 {% block bld_libs %}
