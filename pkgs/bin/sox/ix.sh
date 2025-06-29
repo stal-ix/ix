@@ -5,12 +5,12 @@ sox
 {% endblock %}
 
 {% block version %}
-14.6.0
+14.6.0.1
 {% endblock %}
 
 {% block fetch %}
 https://codeberg.org/sox_ng/sox_ng/archive/sox_ng-{{self.version().strip()}}.tar.gz
-0d0ba0dc4079790043916f8a84daa14ef4e9036986c9dfeb07c7221fa4a3759f
+61b9d6f93374a4d6d5c7fc1aa31e0af83be645e268c2492c8026f166e8b7bcf3
 {% endblock %}
 
 {% block bld_libs %}
