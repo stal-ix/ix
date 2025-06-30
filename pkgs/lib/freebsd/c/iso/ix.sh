@@ -8,7 +8,14 @@ https://download.freebsd.org/snapshots/amd64/amd64/ISO-IMAGES/14.3/FreeBSD-14.3-
 {% block unpack %}
 mkdir src
 cd src
-extract 0 ${src}/F* || true
+7z x ${src}/F*
+7z x F*
+cd usr/freebsd-dist
+bsdtar --no-same-permissions --no-same-owner -x -f base.txz
+{% endblock %}
+
+{% block bld_tool %}
+bin/p7zip
 {% endblock %}
 
 {% block install %}
@@ -17,10 +24,6 @@ cp -R libexec ${out}/
 cp -R lib ${out}/
 cp -R usr/include ${out}/usr/
 cp -R usr/lib ${out}/usr/
-chmod -R +X ${out}/
-chmod -R +r ${out}/
-sed -e 's|/usr/lib/libc_nonshared.a|/usr/lib/libc_pic.a|' \
-    -i ${out}/usr/lib/libc.so
 {% endblock %}
 
 {% block postinstall %}
