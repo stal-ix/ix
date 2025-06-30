@@ -1,8 +1,10 @@
 {% extends '//lib/unbound/t/ix.sh' %}
 
 {% block bld_libs %}
+{% if linux %}
 lib/mnl
 lib/bsd
+{% endif %}
 lib/event
 lib/openssl
 {{super()}}

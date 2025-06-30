@@ -31,5 +31,5 @@ cp -R usr/lib ${out}/usr/
 {% endblock %}
 
 {% block env %}
-export CPPFLAGS="--sysroot=${out} -isystem${out}/usr/include -lc"
+export CPPFLAGS="--sysroot=${out} -isystem${out}/usr/include"
 {% endblock %}
