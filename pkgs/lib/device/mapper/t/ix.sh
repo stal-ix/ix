@@ -5,12 +5,12 @@ lvm2
 {% endblock %}
 
 {% block version %}
-2.03.32
+2.03.33
 {% endblock %}
 
 {% block fetch %}
-http://mirrors.kernel.org/sourceware/lvm2/LVM2.{{self.version().strip()}}.tgz
-2917832ddd4e46e593651e022bf122fd267ab5e6f74faee082484388c886d1ad
+https://gitlab.com/lvmteam/lvm2/-/archive/v{{self.version().strip().replace('.', '_')}}/lvm2-v{{self.version().strip().replace('.', '_')}}.tar.bz2
+b574a8bcdd6638ddce6e0a5e80f42e10b393fc2c8038594a296de6a6d5cc1a9c
 {% endblock %}
 
 {% block lib_deps %}

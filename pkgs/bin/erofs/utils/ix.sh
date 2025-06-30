@@ -5,12 +5,12 @@ erofs-utils
 {% endblock %}
 
 {% block version %}
-1.8.7
+1.8.9
 {% endblock %}
 
 {% block fetch %}
 https://git.kernel.org/pub/scm/linux/kernel/git/xiang/erofs-utils.git/snapshot/erofs-utils-{{self.version().strip()}}.tar.gz
-d84941a83369a9128f2d57b3014aac86e63ca1ab03000a9f5bb21c703f10d272
+145a6f7fe4941814d30099c3568448d37c819ccd030fc5bfbcaab21134e6176e
 {% endblock %}
 
 {% block bld_libs %}

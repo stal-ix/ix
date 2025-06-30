@@ -5,12 +5,12 @@ fontconfig
 {% endblock %}
 
 {% block version %}
-2.16.2
+2.17.0
 {% endblock %}
 
 {% block fetch %}
 https://gitlab.freedesktop.org/fontconfig/fontconfig/-/archive/{{self.version().strip()}}/fontconfig-{{self.version().strip()}}.tar.bz2
-fd9dfb5fe4d4503ae286e95fd85973c3c0490cf5d88ebf49e7f943973443262b
+486c53e63c07cefd56ccd1234a665bc45fa2f37072c189ccb06373b97c7d73c2
 {% endblock %}
 
 {% block bld_tool %}

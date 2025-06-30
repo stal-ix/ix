@@ -134,6 +134,15 @@ def get_raw_arch(n):
             'cmake_system_name': 'WASI', # wild guess
         }
 
+    if n == 'freebsd':
+        return {
+            'os': 'freebsd',
+            'kernel': 'freebsd',
+            'obj_fmt': 'elf',
+            'cmake_system_name': 'FreeBSD',
+            'rust_os': 'freebsd',
+        }
+
     if n == 'linux':
         return {
             'os': 'linux',

@@ -5,12 +5,12 @@ libdex
 {% endblock %}
 
 {% block version %}
-0.10.0
+0.10.1
 {% endblock %}
 
 {% block fetch %}
 https://gitlab.gnome.org/GNOME/libdex/-/archive/{{self.version().strip()}}/libdex-{{self.version().strip()}}.tar.bz2
-afbe81ac5258844be14db1205687d3caf699dd268ce03c6171ffd83b45b92041
+532a8830b336c4b0ef77f860f23d8cd9d6cbcacf42ac7ad5daf7750c498d97a1
 {% endblock %}
 
 {% block lib_deps %}

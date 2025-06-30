@@ -1,2 +1,2 @@
-https://github.com/llvm/llvm-project/archive/refs/tags/llvmorg-20.1.5.tar.gz
-205c436f93a7e185cf9d63ae57e645f23561a4d1bf854f2c5bd78995a43a5c05
+https://github.com/llvm/llvm-project/archive/refs/tags/llvmorg-20.1.7.tar.gz
+91865189d0ca30ca81b7f7af637aca745b6eeeba97c5dfb0ab7d79a1d9659289

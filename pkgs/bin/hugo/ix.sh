@@ -5,7 +5,7 @@ hugo
 {% endblock %}
 
 {% block version %}
-0.147.8
+0.147.9
 {% endblock %}
 
 {% block go_url %}
@@ -13,7 +13,7 @@ https://github.com/gohugoio/hugo/archive/refs/tags/v{{self.version().strip()}}.t
 {% endblock %}
 
 {% block go_sha %}
-811ead8eb61d3287fabdb349500102700af5fa0dbc248f35d71a82bb6252236e
+5e6bf14a28f15f944df367580eaeea3eac48fd9e30e03d15cf4189ad950bd296
 {% endblock %}
 
 {% block go_tool %}

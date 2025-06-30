@@ -5,12 +5,12 @@ re2
 {% endblock %}
 
 {% block version %}
-2024.07.02
+2025-06-26b
 {% endblock %}
 
 {% block fetch %}
 https://github.com/google/re2/archive/refs/tags/{{self.version().strip().replace('.', '-')}}.tar.gz
-eb2df807c781601c14a260a507a5bb4509be1ee626024cb45acbd57cb9d4032b
+641a3ca337814a6c3676a389ea065812e00ff796f31a427038bc010bae0b86e3
 {% endblock %}
 
 {% block lib_deps %}

@@ -159,9 +159,10 @@ def process(pkgs, fr, to):
 
         return 0
 
+    bld_flag = ['--opengl=fake', '--vulkan=fake']
     bld_pkgs = list(flt_pkgs(pkgs))
 
-    call_eat('./ix', 'build', *bld_pkgs)
+    call_eat('./ix', 'build', *(bld_flag + bld_pkgs))
 
     fixed = sum((fix1('pkgs/' + f, fr, to) for f in files), 0)
 
@@ -172,7 +173,7 @@ def process(pkgs, fr, to):
 
     run('git', 'diff')
 
-    out = call('./ix', 'build', *bld_pkgs).decode()
+    out = call('./ix', 'build', *(bld_flag + bld_pkgs)).decode()
     sha = revstr(parse_sha(revstr(out.replace(sent, ''))))
 
     for f in files:
@@ -180,7 +181,7 @@ def process(pkgs, fr, to):
         fix2('pkgs/' + f, sha)
 
     run('git', 'diff')
-    call_eat('./ix', 'build', *bld_pkgs)
+    call_eat('./ix', 'build', *(bld_flag + bld_pkgs))
 
     return 0
 
