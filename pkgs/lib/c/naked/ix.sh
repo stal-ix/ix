@@ -17,4 +17,7 @@ lib/wasi/c
 {% if mingw32 %}
 lib/mingw/w64
 {% endif %}
+{% if freebsd %}
+lib/freebsd/c
+{% endif %}
 {% endblock %}
