@@ -8,6 +8,9 @@ bld/wayland/scanner
 {% block lib_deps %}
 lib/c
 lib/ffi
+{% if freebsd %}
+lib/epoll/shim
+{% endif %}
 {% endblock %}
 
 {% block use_data %}
