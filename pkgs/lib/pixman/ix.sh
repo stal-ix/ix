@@ -2,6 +2,7 @@
 
 {% block meson_flags %}
 {{super()}}
+tests=disabled
 demos=disabled
 {% endblock %}
 
