@@ -15,6 +15,13 @@ bld/glib
 {{super()}}
 {% endblock %}
 
+{% block meson_flags %}
+{% if freebsd %}
+xattr=false
+{% endif %}
+{{super()}}
+{% endblock %}
+
 {% block install %}
 {{super()}}
 find ${out}/ -type f -name '*.pc' | while read i; do
