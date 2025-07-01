@@ -16,3 +16,15 @@ c9cc77c7c560c543135edc555af609d5619dbef011997e988ce40a3d75d86088
 {% block lib_deps %}
 lib/c
 {% endblock %}
+
+{% block configure_flags %}
+--disable-elf
+--disable-elf-core
+--disable-zlib
+--disable-bzlib
+--disable-xzlib
+--disable-zstdlib
+--disable-lzlib
+--disable-lrziplib
+--disable-libseccomp
+{% endblock %}
