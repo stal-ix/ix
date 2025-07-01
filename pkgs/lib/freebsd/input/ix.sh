@@ -4,5 +4,5 @@
 
 {% block install %}
 mkdir -p ${out}/include
-cp -R include/linux ${out}/include/
+cp -R include/linux/freebsd ${out}/include/linux
 {% endblock %}

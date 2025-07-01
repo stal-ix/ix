@@ -4,6 +4,7 @@
 bin/wget
 bin/curl
 bin/wmenu
+bin/hikari
 bin/unbound
 set/box/gnu
 set/compress
