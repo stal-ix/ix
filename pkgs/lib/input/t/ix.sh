@@ -23,6 +23,9 @@ lib/udev
 lib/mtdev
 lib/wacom
 lib/evdev
+{% if freebsd %}
+lib/epoll/shim
+{% endif %}
 {% endblock %}
 
 {% block meson_flags %}

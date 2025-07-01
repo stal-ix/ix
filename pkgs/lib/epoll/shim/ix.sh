@@ -20,3 +20,12 @@ lib/c
 {% block cmake_flags %}
 ALLOWS_ONESHOT_TIMERS_WITH_TIMEOUT_ZERO_EXITCODE=ON
 {% endblock %}
+
+{% block install %}
+{{super()}}
+mv ${out}/libdata/* ${out}/lib/
+{% endblock %}
+
+{% block env %}
+export CPPFLAGS="-I${out}/include/libepoll-shim \${CPPFLAGS}"
+{% endblock %}
