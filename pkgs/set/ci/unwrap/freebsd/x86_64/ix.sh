@@ -4,5 +4,5 @@
 bin/wget
 bin/unbound
 set/compress
-sert/box/gnu
+set/box/gnu
 {% endblock %}
