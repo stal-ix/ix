@@ -3,7 +3,7 @@
 {% block lib_deps %}
 {% if linux and armv7 %}
 lib/compiler_rt/builtins/hack
-{% elif linux %}
+{% elif linux or freebsd %}
 lib/compiler_rt/builtins/{{crt_ver or clang_ver or default_clang}}
 {% else %}
 # TODO(pg): fix builtins for darwin
