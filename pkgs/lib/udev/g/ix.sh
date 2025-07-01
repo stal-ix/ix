@@ -1,16 +1,18 @@
 {% extends '//die/c/meson.sh' %}
 
+# noauto
+
 {% block pkg_name %}
 libgudev
 {% endblock %}
 
 {% block version %}
-238
+237
 {% endblock %}
 
 {% block fetch %}
 https://github.com/GNOME/libgudev/archive/refs/tags/{{self.version().strip()}}.tar.gz
-443c702c6339775f413f45d13309b2c641a94530bb27981142a2605eedb0aafd
+4565d5abce6f71198c7c8ac3cecb30a007df7caf230094e09a6d61763f452a80
 {% endblock %}
 
 {% block lib_deps %}
