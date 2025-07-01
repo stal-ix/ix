@@ -2,4 +2,5 @@
 
 {% block run_deps %}
 bin/unbound
+set/compress
 {% endblock %}

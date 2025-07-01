@@ -50,6 +50,8 @@ stdint.h
 {% endblock %}
 
 {% block cpp_defines %}
+{% if not freebsd %}
 _UINT64_T_DECLARED
+{% endif %}
 {{super()}}
 {% endblock %}
