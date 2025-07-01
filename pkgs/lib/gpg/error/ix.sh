@@ -32,6 +32,9 @@ bld/fake/binutils(bin_prefix={{target.gnu.three}}-)
 {% endblock %}
 
 {% block patch %}
+{% if freebsd %}
+sed -e 's|linux-musl|freebsd|' -i configure
+{% endif %}
 prepend src/spawn-posix.c << EOF
 extern char** environ;
 EOF
