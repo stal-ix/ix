@@ -4,9 +4,7 @@
 lib/c
 lib/z
 lib/b2
-{% if freebsd %}
 lib/md
-{% endif %}
 lib/xz
 lib/lz4
 lib/lzo

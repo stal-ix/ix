@@ -24,9 +24,7 @@ lib/c
 {% else %}
 --disable-fat
 {% endif %}
-{% if freebsd %}
 --disable-openmp
-{% endif %}
 {% endblock %}
 
 {% block configure %}
