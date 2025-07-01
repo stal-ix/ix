@@ -2,6 +2,7 @@
 
 {% block run_deps %}
 bin/wget
+bin/wmenu
 bin/unbound
 set/box/gnu
 set/compress
