@@ -22,7 +22,7 @@ bld/fake(tool_name=javac)
 {% endblock %}
 
 {% block cmake_flags %}
-{% if mingw32 %}
+{% if mingw32 or freebsd %}
 BUILD_JPIP=OFF
 {% else %}
 BUILD_JPIP=ON
