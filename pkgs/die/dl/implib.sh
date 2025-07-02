@@ -8,12 +8,6 @@
 lib/c
 {% endblock %}
 
-{% block impllib_name %}
-{% endblock %}
-
-{% block implib_symbols %}
-{% endblock %}
-
 {% block bld_tool %}
 bld/python
 bld/implib
