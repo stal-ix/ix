@@ -23,6 +23,8 @@ rm autogen.sh
 {% endblock %}
 
 {% block configure_flags %}
+--disable-tests
+--disable-tools
 {% if riscv64 %}
 --enable-riscv-rvv=off
 {% endif %}

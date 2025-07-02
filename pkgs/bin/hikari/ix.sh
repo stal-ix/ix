@@ -15,7 +15,9 @@ https://hikari.acmelabs.space/releases/hikari-{{self.version().strip()}}.tar.gz
 
 {% block bld_libs %}
 lib/c
+{% if linux %}
 lib/pam
+{% endif %}
 lib/pango
 lib/cairo
 lib/input

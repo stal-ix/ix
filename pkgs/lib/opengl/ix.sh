@@ -1,7 +1,7 @@
 {% extends '//die/hub.sh' %}
 
 {% block lib_deps %}
-  {% if linux %}
+  {% if linux or freebsd %}
     lib/opengl/loader
   {% elif darwin %}
     lib/darwin/framework/Carbon

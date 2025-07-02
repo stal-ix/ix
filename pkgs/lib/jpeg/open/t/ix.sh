@@ -29,3 +29,9 @@ BUILD_JPIP=ON
 {% endif %}
 BUILD_JAVA=OFF
 {% endblock %}
+
+{% block cpp_missing %}
+{% if freebsd %}
+netinet/in.h
+{% endif %}
+{% endblock %}
