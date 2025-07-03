@@ -6,6 +6,7 @@ bin/wget
 bin/curl
 bin/wmenu
 bin/hikari
+bin/aria/2
 bin/convert
 bin/unbound
 set/box/gnu
