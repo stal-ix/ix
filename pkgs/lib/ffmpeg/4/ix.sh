@@ -20,7 +20,9 @@ lib/x265
 lib/dav1d
 lib/modplug
 lib/xvidcore
+{% if not freebsd %}
 lib/openh264
+{% endif %}
 lib/jpeg/open
 lib/xiph/speex
 lib/xiph/vorbis
@@ -40,6 +42,7 @@ wrap_cc
 {% endblock %}
 
 {% block configure_all_flags %}
+--enable-cross-compile
 --prefix=${out}
 --enable-gpl
 --enable-static
@@ -51,7 +54,9 @@ wrap_cc
 
 --enable-libaom
 --enable-libdav1d
+{% if not freebsd %}
 --enable-libopenh264
+{% endif %}
 --enable-libopenjpeg
 --enable-libopus
 --enable-libvorbis
