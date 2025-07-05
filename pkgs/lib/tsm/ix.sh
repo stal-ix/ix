@@ -5,12 +5,12 @@ libtsm
 {% endblock %}
 
 {% block version %}
-4.0.2
+4.1.0
 {% endblock %}
 
 {% block fetch %}
 https://github.com/Aetf/libtsm/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-ce51be564872d3e6a35fadab1f74b8804f72d8a92c0f378ca384155134d154e5
+879a166a07aed63146ffe3e2afe803c0c3e22f264db0f1fa6fdb44687adeeef8
 {% endblock %}
 
 {% block lib_deps %}
