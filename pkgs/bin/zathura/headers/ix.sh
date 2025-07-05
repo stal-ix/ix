@@ -5,12 +5,12 @@ zathura
 {% endblock %}
 
 {% block version %}
-0.5.11
+0.5.12
 {% endblock %}
 
 {% block fetch %}
 https://github.com/pwmt/zathura/archive/refs/tags/{{self.version().strip()}}.tar.gz
-32540747a6fe3c4189ec9d5de46a455862c88e11e969adb5bc0ce8f9b25b52d4
+5cd95407d30d892ab1c957e3da38ca2ebb5528b432f898df1d66f637d9c4120d
 {% endblock %}
 
 {% block bld_libs %}
