@@ -5,12 +5,12 @@ lsof
 {% endblock %}
 
 {% block version %}
-4.99.4
+4.99.5
 {% endblock %}
 
 {% block fetch %}
 https://github.com/lsof-org/lsof/archive/refs/tags/{{self.version().strip()}}.tar.gz
-90d02ae35cd14341bfb04ce80e0030767476b0fc414a0acb115d49e79b13d56c
+3c591556c665196e0aada5982ff43c75e248187bad78bb1368d8fb9c1c527e6e
 {% endblock %}
 
 {% block bld_libs %}
