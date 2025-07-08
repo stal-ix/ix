@@ -1,5 +1,7 @@
 {% extends '//bin/kms/con/stock/ix.sh' %}
 
+# check bin/kms/con
+
 {% block bld_tool %}
 {{super()}}
 bld/dlfcn
