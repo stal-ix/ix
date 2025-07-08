@@ -17,7 +17,9 @@ https://github.com/mpv-player/mpv/archive/refs/tags/v{{self.version().strip()}}.
 lib/c
 lib/ass
 lib/zimg
+{% if linux %}
 lib/sndio
+{% endif %}
 lib/ffmpeg
 lib/archive
 lib/uchardet
@@ -29,5 +31,7 @@ bld/perl
 {% endblock %}
 
 {% block meson_flags %}
+{% if linux %}
 sndio=enabled
+{% endif %}
 {% endblock %}
