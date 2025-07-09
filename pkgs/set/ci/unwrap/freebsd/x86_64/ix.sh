@@ -4,8 +4,11 @@
 bin/mc
 bin/zsh
 bin/mpv
+bin/git
+bin/tmux
 bin/wget
 bin/curl
+bin/ugrep
 bin/wmenu
 bin/hikari
 bin/aria/2
