@@ -5,6 +5,7 @@ import shutil
 import core.gg as cg
 import core.lex as cc
 import core.repo as cr
+import core.utils as cu
 import core.config as cf
 import core.manager as cm
 
@@ -51,7 +52,7 @@ def cli_dep(ctx):
 
     for k in mngr.fs.cache.keys():
         if 'die/' not in k:
-            print(k.removeprefix('//'))
+            print(cu.strip_prefix(k, '//'))
 
 
 def cli_mut(ctx):

@@ -31,8 +31,6 @@ set/stalix/dns(dns_mngr={{dns_mngr or 'dnsproxy'}})
 
 {% if vt %}
 bin/dm(getty=vt)
-{% elif mingetty %}
-bin/dm(getty=mingetty)
 {% elif emptty %}
 bin/dm(getty=emptty)
 {% else %}

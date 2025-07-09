@@ -4,6 +4,8 @@ import base64
 import jinja2
 import hashlib
 
+import core.utils as cu
+
 
 def b64e(data):
     return base64.b64encode(data.encode()).decode()
@@ -102,14 +104,6 @@ def flt_defined(v, s):
     return v
 
 
-def flt_strip_prefix(v, s):
-    return v.removeprefix(s)
-
-
-def flt_strip_suffix(v, s):
-    return v.removesuffix(s)
-
-
 def field(v, n):
     return v.split('.')[n]
 
@@ -140,8 +134,8 @@ class Env(jinja2.Environment):
         self.filters['lines'] = lambda x: list(x.strip().split('\n'))
         self.filters['eval'] = self.eval
         self.filters['defined'] = flt_defined
-        self.filters['strip_prefix'] = flt_strip_prefix
-        self.filters['strip_suffix'] = flt_strip_suffix
+        self.filters['strip_prefix'] = cu.strip_prefix
+        self.filters['strip_suffix'] = cu.strip_suffix
         self.filters['strip'] = strip
         self.filters['print'] = print
         self.filters['field'] = field
