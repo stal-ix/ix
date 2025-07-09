@@ -104,3 +104,17 @@ SYM = dict(gen_sym())
 
 def canon_name(n):
     return replace_all(''.join(SYM.get(x, '-') for x in n), '--', '-').rstrip('-').lower()
+
+
+def strip_prefix(v, s):
+    if v.startswith(s):
+        return v[len(s):]
+
+    return v
+
+
+def strip_suffix(v, s):
+    if v.endswith(s):
+        return v[:len(v) - len(s)]
+
+    return v
