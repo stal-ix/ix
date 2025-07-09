@@ -5,12 +5,12 @@ kmscon
 {% endblock %}
 
 {% block version %}
-9.0.0
+9.1.0
 {% endblock %}
 
 {% block fetch %}
 https://github.com/Aetf/kmscon/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-eb594e48768962b665959aa9a643934f986bee68163b4ab593b9e6c987be825c
+56427c29cb581db22f7ebf76bc8678dc8948700cce39b60be001a88d1d297beb
 {% endblock %}
 
 {% block bld_libs %}
@@ -18,11 +18,9 @@ lib/c
 lib/drm
 lib/tsm
 lib/udev
-lib/xkb/common
-{% if kmscon_pretty %}
 lib/pango
-{% endif %}
-{% if kmscon_fast %}
+lib/xkb/common
+{% if opengl %}
 lib/drivers/3d
 {% endif %}
 {% endblock %}

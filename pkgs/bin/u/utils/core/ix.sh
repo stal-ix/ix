@@ -37,16 +37,16 @@ list:
 {% endblock %}
 
 {% block patch %}
-{# tabs!!! #}
 cat << EOF >> GNUmakefile
 {{self.makefile().replace('    ', '\t')}}
 EOF
 make list
 {% endblock %}
 
-{% block cargo_bins %}
-coreutils
+{% block install %}
 set -xue
+mkdir ${out}/bin
+cp ${tmp}/out/coreutils ${out}/bin/
 make list | tr ' ' '\n' | grep -v '^$' | sort | uniq | grep -v coreutils | while read l; do
     ln -s coreutils ${out}/bin/${l}
 done
