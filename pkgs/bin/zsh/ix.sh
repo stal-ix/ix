@@ -15,8 +15,10 @@ https://www.zsh.org/pub/zsh-{{self.version().strip()}}.tar.xz
 
 {% block bld_libs %}
 lib/c
+{% if linux %}
 lib/cap
 lib/pam
+{% endif %}
 lib/curses
 {% endblock %}
 

@@ -1,6 +1,8 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
+bin/mc
+bin/zsh
 bin/mpv
 bin/wget
 bin/curl
