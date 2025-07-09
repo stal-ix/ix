@@ -23,8 +23,9 @@ cat << EOF >> netbsd_sys/cdefs.h
 #undef __strong_alias
 #define __strong_alias(a, b)
 EOF
-
+{% if not freebsd %}
 sed -e 's|fpurge|curses_fpurge|' -i libcurses/tty.c
+{% endif %}
 {% endblock %}
 
 {% block make_flags %}
