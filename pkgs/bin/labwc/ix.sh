@@ -25,7 +25,7 @@ lib/wayland
 lib/shim/x11
 lib/xkb/common
 lib/drivers/3d
-lib/wlroots/1{{self.version().strip() | field(1)}}
+lib/wlroots/{{self.version().strip() | field(1) | add(10)}}
 {% endblock %}
 
 {% block bld_tool %}
