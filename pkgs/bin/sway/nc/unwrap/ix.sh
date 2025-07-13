@@ -1,5 +1,7 @@
 {% extends '//die/c/meson.sh' %}
 
+{# data/meson.build:40:4: ERROR: Program 'blueprint-compiler' not found or not executable #}
+
 {% block pkg_name %}
 SwayNotificationCenter
 {% endblock %}
