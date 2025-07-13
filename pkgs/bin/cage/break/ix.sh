@@ -5,12 +5,12 @@ cagebreak
 {% endblock %}
 
 {% block version %}
-3.0.0
+3.0.1
 {% endblock %}
 
 {% block fetch %}
 https://github.com/project-repo/cagebreak/archive/refs/tags/{{self.version().strip()}}.tar.gz
-884cd70445bed1c45116e01e9ddab28b756416b3fb5cc7b6a3057895b64fba03
+31e5a7860d0eef21c3bd2a848ae98a019df2cd1d2b8943918ad1c680d3ee0511
 {% endblock %}
 
 {% block bld_libs %}
@@ -18,7 +18,7 @@ lib/c
 lib/pango
 lib/cairo
 lib/wayland
-lib/wlroots/18
+lib/wlroots/19
 lib/xkb/common
 {% endblock %}
 
