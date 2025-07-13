@@ -5,7 +5,7 @@ ruff
 {% endblock %}
 
 {% block version %}
-0.12.2
+0.12.3
 {% endblock %}
 
 {% block cargo_url %}
@@ -13,7 +13,7 @@ https://github.com/astral-sh/ruff/archive/refs/tags/{{self.version().strip()}}.t
 {% endblock %}
 
 {% block cargo_sha %}
-0338ea4b3c9fc378e5fbfa0b0d018dbcb17c99a7b4c920d69fbac610a67a4517
+e3745101f75124f545c477785bcba4ac3d5887d2c2253be18b4822e9ee5d696a
 {% endblock %}
 
 {% block cargo_bins %}
