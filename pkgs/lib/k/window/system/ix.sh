@@ -5,12 +5,12 @@ kwindowsystem
 {% endblock %}
 
 {% block version %}
-6.14.0
+6.16.0
 {% endblock %}
 
 {% block fetch %}
 https://invent.kde.org/frameworks/kwindowsystem/-/archive/v{{self.version().strip()}}/kwindowsystem-v{{self.version().strip()}}.tar.bz2
-095c0d42876b17ce086043e8b8196cecc2e12949d64071cd4708d743da73dba3
+e05d1e8deea4447e8c93d50b1a6b875ee844d6e4e1068f4eab218c8e905ebd80
 {% endblock %}
 
 {% block lib_deps %}
