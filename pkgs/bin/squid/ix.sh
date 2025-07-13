@@ -1,7 +1,7 @@
 {% extends '//die/c/autorehell.sh' %}
 
 {% block version %}
-6.14
+7.1
 {% endblock %}
 
 {% block pkg_name %}
@@ -10,7 +10,7 @@ squid
 
 {% block fetch %}
 https://github.com/squid-cache/squid/archive/refs/tags/SQUID_{{self.version().strip().replace('.', '_')}}.tar.gz
-ed3207e0ca82a927ecc8b9ef2e1d4808c335f99dc34acafdd7ee6fcd301aebaf
+c38a7fd015c73ba52f8010c9a63e4885f4d9d5963e1285aab8fa4d9cadf147d0
 {% endblock %}
 
 {% block bld_libs %}
