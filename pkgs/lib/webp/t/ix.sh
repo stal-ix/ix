@@ -5,12 +5,12 @@ webp
 {% endblock %}
 
 {% block version %}
-1.5.0
+1.6.0
 {% endblock %}
 
 {% block fetch %}
 https://storage.googleapis.com/downloads.webmproject.org/releases/webp/libwebp-{{self.version().strip()}}.tar.gz
-7d6fab70cf844bf6769077bd5d7a74893f8ffd4dfb42861745750c63c2a5c92c
+e4ab7009bf0629fd11982d4c2aa83964cf244cffba7347ecd39019a9e38c4564
 {% endblock %}
 
 {% block lib_deps %}
