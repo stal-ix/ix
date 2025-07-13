@@ -5,12 +5,12 @@ hyprgraphics
 {% endblock %}
 
 {% block version %}
-0.1.4
+0.1.5
 {% endblock %}
 
 {% block fetch %}
 https://github.com/hyprwm/hyprgraphics/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-8b4662a0e687351da703a19e9cd9fdbe4b4b053e7380957584cda112c96feb9f
+03bdd5a6e456c31cc17f973656326220f94e58a5f4ab33b2450ccb5d6a697a4c
 {% endblock %}
 
 {% block lib_deps %}
