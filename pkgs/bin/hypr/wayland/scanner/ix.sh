@@ -5,12 +5,12 @@ hyprwayland-scanner
 {% endblock %}
 
 {% block version %}
-0.4.4
+0.4.5
 {% endblock %}
 
 {% block fetch %}
 https://github.com/hyprwm/hyprwayland-scanner/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-ac73f626019f8d819ff79a5fca06ce4768ce8a3bded6f48c404445f3afaa25ac
+2125d279eea106e3e6c8dc9fa15181c75d67467b5352d24e2a07903b10abad62
 {% endblock %}
 
 {% block bld_libs %}
