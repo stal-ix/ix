@@ -2560,6 +2560,7 @@ https://github.com/gperftools/gperftools/releases/download/gperftools-2.16/gperf
 https://github.com/gphoto/libgphoto2/archive/refs/tags/v2.5.30.tar.gz
 https://github.com/greshake/i3status-rust/archive/refs/tags/v0.33.0.tar.gz
 https://github.com/greshake/i3status-rust/archive/refs/tags/v0.33.2.tar.gz
+https://github.com/greshake/i3status-rust/archive/refs/tags/v0.34.0.tar.gz
 https://github.com/grpc/grpc-java/archive/refs/tags/v1.51.3.tar.gz
 https://github.com/grpc/grpc-java/archive/refs/tags/v1.63.1.tar.gz
 https://github.com/gtk-rs/gir-files/archive/refs/tags/0.20.0.tar.gz
@@ -2980,6 +2981,7 @@ https://github.com/labwc/labwc/archive/refs/tags/0.8.1.tar.gz
 https://github.com/labwc/labwc/archive/refs/tags/0.8.2.tar.gz
 https://github.com/labwc/labwc/archive/refs/tags/0.8.3.tar.gz
 https://github.com/labwc/labwc/archive/refs/tags/0.8.4.tar.gz
+https://github.com/labwc/labwc/archive/refs/tags/0.9.0.tar.gz
 https://github.com/landley/toybox/archive/refs/tags/0.8.10.tar.gz
 https://github.com/landley/toybox/archive/refs/tags/0.8.11.tar.gz
 https://github.com/landley/toybox/archive/refs/tags/0.8.12.tar.gz
@@ -3697,6 +3699,7 @@ https://github.com/project-repo/cagebreak/archive/refs/tags/2.3.0.tar.gz
 https://github.com/project-repo/cagebreak/archive/refs/tags/2.3.1.tar.gz
 https://github.com/project-repo/cagebreak/archive/refs/tags/2.4.0.tar.gz
 https://github.com/project-repo/cagebreak/archive/refs/tags/3.0.0.tar.gz
+https://github.com/project-repo/cagebreak/archive/refs/tags/3.0.1.tar.gz
 https://github.com/projectdiscovery/dnsx/archive/refs/tags/v1.1.6.tar.gz
 https://github.com/projectdiscovery/dnsx/archive/refs/tags/v1.2.2.tar.gz
 https://github.com/prometheus/node_exporter/archive/refs/tags/v1.7.0.tar.gz
@@ -4763,6 +4766,7 @@ https://gitlab.freedesktop.org/cairo/cairo/-/archive/1.17.8/cairo-1.17.8.tar.bz2
 https://gitlab.freedesktop.org/cairo/cairo/-/archive/1.18.0/cairo-1.18.0.tar.bz2
 https://gitlab.freedesktop.org/cairo/cairo/-/archive/1.18.2/cairo-1.18.2.tar.bz2
 https://gitlab.freedesktop.org/cairo/cairo/-/archive/1.18.4/cairo-1.18.4.tar.bz2
+https://gitlab.freedesktop.org/emersion/grim/-/archive/v1.5.0/grim-v1.5.0.tar.bz2
 https://gitlab.freedesktop.org/emersion/libdisplay-info/-/archive/0.2.0/libdisplay-info-0.2.0.tar.bz2
 https://gitlab.freedesktop.org/emersion/libliftoff/-/archive/v0.5.0/libliftoff-v0.5.0.tar.bz2
 https://gitlab.freedesktop.org/fontconfig/fontconfig/-/archive/2.16.1/fontconfig-2.16.1.tar.bz2
