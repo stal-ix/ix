@@ -5,7 +5,7 @@ logalize
 {% endblock %}
 
 {% block version %}
-0.4.8
+0.5.0
 {% endblock %}
 
 {% block go_url %}
@@ -13,7 +13,7 @@ https://github.com/deponian/logalize/archive/refs/tags/v{{self.version().strip()
 {% endblock %}
 
 {% block go_sha %}
-8e5eb5618479173a43934426a778a32bba4dfbf10eddd6782a761f0fdaf35b6e
+32ccfa5e87ab339dfb665cb5d1c42be91a4799d08a3d432d0b987c160387cdb9
 {% endblock %}
 
 {% block go_tool %}

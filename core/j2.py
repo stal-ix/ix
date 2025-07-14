@@ -108,6 +108,10 @@ def field(v, n):
     return v.split('.')[n]
 
 
+def add(v, n):
+    return int(v) + int(n)
+
+
 def strip(v):
     return v.strip()
 
@@ -140,6 +144,7 @@ class Env(jinja2.Environment):
         self.filters['print'] = print
         self.filters['field'] = field
         self.filters['pad'] = pad
+        self.filters['add'] = add
         self.kv = {}
 
     def eval(self, v, code, *args):

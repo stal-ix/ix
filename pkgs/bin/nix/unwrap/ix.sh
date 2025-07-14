@@ -5,12 +5,12 @@ nix
 {% endblock %}
 
 {% block version %}
-2.29.1
+2.30.1
 {% endblock %}
 
 {% block fetch %}
 https://github.com/NixOS/nix/archive/refs/tags/{{self.version().strip()}}.tar.gz
-31b5a217003f9ee535c8c6a48c6fec2323e86d77f360c8257dc9b88f8853c2e0
+b7416989005f672625c2602612c692b7bdfc8126163477ebbc8349a9a8005e9c
 {% endblock %}
 
 {% block bld_libs %}

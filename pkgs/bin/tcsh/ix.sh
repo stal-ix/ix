@@ -5,12 +5,12 @@ tcsh
 {% endblock %}
 
 {% block version %}
-6.24.15
+6.24.16
 {% endblock %}
 
 {% block fetch %}
 https://astron.com/pub/tcsh/tcsh-{{self.version().strip()}}.tar.gz
-d4d0b2a4df320f57a518e44c359ef36bbcf85d64f5146d0cb8ff34984e0d23fd
+4208cf4630fb64d91d81987f854f9570a5a0e8a001a92827def37d0ed8f37364
 {% endblock %}
 
 {% block conf_ver %}

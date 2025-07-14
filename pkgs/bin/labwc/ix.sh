@@ -5,12 +5,12 @@ labwc
 {% endblock %}
 
 {% block version %}
-0.8.4
+0.9.0
 {% endblock %}
 
 {% block fetch %}
 https://github.com/labwc/labwc/archive/refs/tags/{{self.version().strip()}}.tar.gz
-2d3ded90f78efb5060f7057ea802c78a79dc9b2e82ae7a2ad902af957b8b9797
+d06f89fb2bbd4be73e7bba9fb57017054d61868fe24db361d1ded87470329e63
 {% endblock %}
 
 {% block bld_libs %}
@@ -24,8 +24,8 @@ lib/input
 lib/wayland
 lib/shim/x11
 lib/xkb/common
-lib/wlroots/18
 lib/drivers/3d
+lib/wlroots/{{self.version().strip() | field(1) | add(10)}}
 {% endblock %}
 
 {% block bld_tool %}

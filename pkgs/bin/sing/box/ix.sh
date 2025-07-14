@@ -5,7 +5,7 @@ sing-box
 {% endblock %}
 
 {% block version %}
-1.11.14
+1.11.15
 {% endblock %}
 
 {% block go_url %}
@@ -13,7 +13,7 @@ https://github.com/SagerNet/sing-box/archive/refs/tags/v{{self.version().strip()
 {% endblock %}
 
 {% block go_sha %}
-aac13e2bb160ed88d21ddf08f4c6e03336dee053d193954aa322bbdd25ccc76f
+678974d72ab8f10721a8bf78cac9580000e8d4dfaf8cd55c2f20ffc3ffdb1be2
 {% endblock %}
 
 {% block step_unpack %}
