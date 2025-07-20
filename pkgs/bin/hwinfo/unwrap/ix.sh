@@ -1,7 +1,7 @@
 {% extends '//die/c/make.sh' %}
 
 {% block version %}
-24.1
+25.0
 {% endblock %}
 
 {% block pkg_name %}
@@ -10,7 +10,7 @@ hwinfo
 
 {% block fetch %}
 https://github.com/openSUSE/hwinfo/archive/refs/tags/{{self.version().strip()}}.tar.gz
-7785de34e3f6a8e35e8ce1f496159bf46674034770684da6e685225a2783a7fa
+e0da9aace379fe2025f18c2ddab3aef79528a6abab03c0a6f547453274fbe6cf
 {% endblock %}
 
 {% block bld_libs %}
