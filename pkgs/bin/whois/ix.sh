@@ -5,12 +5,12 @@ whois
 {% endblock %}
 
 {% block version %}
-5.6.2
+5.6.3
 {% endblock %}
 
 {% block fetch %}
 https://github.com/rfc1036/whois/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-0773cf51fc9a980af3954fb3859c7673f8bb7901c5be4041a12c926609edeb89
+5bdaf291465ef185384d9b5c4482f377a8040c008433b51d3cb8a4627f7aab14
 {% endblock %}
 
 {% block bld_libs %}
