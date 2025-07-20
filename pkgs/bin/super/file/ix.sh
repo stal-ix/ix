@@ -5,7 +5,7 @@ superfile
 {% endblock %}
 
 {% block version %}
-1.3.1
+1.3.2
 {% endblock %}
 
 {% block go_url %}
@@ -13,7 +13,7 @@ https://github.com/yorukot/superfile/archive/refs/tags/v{{self.version().strip()
 {% endblock %}
 
 {% block go_sha %}
-acf22cbd1e1f9911d4c168bddef4cb6a588c17c1c7e108db074961c12dc4ec81
+2ac0dcb64aaa0ef032d979bacf3e1083322f526505ecd976820dee9b141f3aee
 {% endblock %}
 
 {% block go_tool %}
