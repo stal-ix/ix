@@ -5215,6 +5215,7 @@ https://imagemagick.org/archive/releases/ImageMagick-7.1.1-44.tar.xz
 https://imagemagick.org/archive/releases/ImageMagick-7.1.1-45.tar.xz
 https://imagemagick.org/archive/releases/ImageMagick-7.1.1-46.tar.xz
 https://imagemagick.org/archive/releases/ImageMagick-7.1.1-47.tar.xz
+https://imagemagick.org/archive/releases/ImageMagick-7.1.2-0.tar.xz
 https://invent.kde.org/frameworks/kwindowsystem/-/archive/v6.1.0/kwindowsystem-v6.1.0.tar.bz2
 https://invent.kde.org/frameworks/kwindowsystem/-/archive/v6.13.0/kwindowsystem-v6.13.0.tar.bz2
 https://invent.kde.org/frameworks/kwindowsystem/-/archive/v6.14.0/kwindowsystem-v6.14.0.tar.bz2
