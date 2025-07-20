@@ -2059,6 +2059,7 @@ https://github.com/curl/curl/archive/refs/tags/curl-8_12_1.tar.gz
 https://github.com/curl/curl/archive/refs/tags/curl-8_13_0.tar.gz
 https://github.com/curl/curl/archive/refs/tags/curl-8_14_0.tar.gz
 https://github.com/curl/curl/archive/refs/tags/curl-8_14_1.tar.gz
+https://github.com/curl/curl/archive/refs/tags/curl-8_15_0.tar.gz
 https://github.com/curl/curl/archive/refs/tags/curl-8_2_1.tar.gz
 https://github.com/curl/curl/archive/refs/tags/curl-8_3_0.tar.gz
 https://github.com/curl/curl/archive/refs/tags/curl-8_4_0.tar.gz
