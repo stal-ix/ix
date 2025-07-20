@@ -5,7 +5,7 @@ ipget
 {% endblock %}
 
 {% block version %}
-0.11.2
+0.11.3
 {% endblock %}
 
 {% block go_url %}
@@ -13,7 +13,7 @@ https://github.com/ipfs/ipget/archive/refs/tags/v{{self.version().strip()}}.tar.
 {% endblock %}
 
 {% block go_sha %}
-e6d13a1006949bf5785d9b3860a5dbb01fb2b3093ca56fc51f224f464eb6f1b2
+25f929db6d1ddaa6da00c952301fba0a906fb6d62829c893265c3262c30d7342
 {% endblock %}
 
 {% block go_bins %}
