@@ -5,7 +5,7 @@ bpftool
 {% endblock %}
 
 {% block version %}
-7.5.0
+7.6.0
 {% endblock %}
 
 {% block git_repo %}
@@ -17,7 +17,7 @@ v{{self.version().strip()}}
 {% endblock %}
 
 {% block git_sha %}
-70881109c37632f8cd490c73d06941a70464007e6df1bef5d38cf0cea8206543
+2c1e48ee9aaa8ca81d309e53a1e723e16113182619f5a02113b217347b57cecd
 {% endblock %}
 
 {% block bld_libs %}
