@@ -5,7 +5,7 @@ just
 {% endblock %}
 
 {% block version %}
-1.41.0
+1.42.3
 {% endblock %}
 
 {% block cargo_url %}
@@ -13,7 +13,7 @@ https://github.com/casey/just/archive/refs/tags/{{self.version().strip()}}.tar.g
 {% endblock %}
 
 {% block cargo_sha %}
-a79cbfcb9f1b39ce62188dd09f70c4e2f3f7fcc54ef79e2fe401ac65b2dd8b7a
+547c2615e66eee39dd65f34ab049f72f2767aff3bfb8041f1ad3cd73cc9f8fdc
 {% endblock %}
 
 {% block cargo_bins %}
