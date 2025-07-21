@@ -5,12 +5,12 @@ fnott
 {% endblock %}
 
 {% block version %}
-1.7.1
+1.8.0
 {% endblock %}
 
 {% block fetch %}
 https://codeberg.org/dnkl/fnott/archive/{{self.version().strip()}}.tar.gz
-39c732f2ac57d18f24ef9112524d71090e2b68b72a892f4a44f3a77a1f067487
+7e784133bec7cc197bbeed18daf92192f297f7c60d1c25cce318ae09f70ab0e1
 {% endblock %}
 
 {% block bld_libs %}

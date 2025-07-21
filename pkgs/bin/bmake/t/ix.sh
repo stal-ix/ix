@@ -5,12 +5,12 @@ bmake
 {% endblock %}
 
 {% block version %}
-20250618
+20250707
 {% endblock %}
 
 {% block fetch %}
 https://www.crufty.net/ftp/pub/sjg/bmake-{{self.version().strip()}}.tar.gz
-9651ce09d31b64a90625ab52af54fd90bf78cfe706c86991d0b44cb3033c0eb7
+a61240a4065d90c3925dd774f8fa3d73deec1a73228a86ee95fcd82063d28b08
 {% endblock %}
 
 {% block bld_libs %}

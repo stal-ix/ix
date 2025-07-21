@@ -5,12 +5,12 @@ nspr
 {% endblock %}
 
 {% block version %}
-4.36
+4.37
 {% endblock %}
 
 {% block fetch %}
 https://ftp.mozilla.org/pub/nspr/releases/v{{self.version().strip()}}/src/nspr-{{self.version().strip()}}.tar.gz
-55dec317f1401cd2e5dba844d340b930ab7547f818179a4002bce62e6f1c6895
+5f9344ed0e31855bd38f88b33c9d9ab94f70ce547ef3213e488d1520f61840fa
 {% endblock %}
 
 {% block unpack %}

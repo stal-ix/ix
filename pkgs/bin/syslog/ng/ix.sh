@@ -5,12 +5,12 @@ syslog-ng
 {% endblock %}
 
 {% block version %}
-4.8.3
+4.9.0
 {% endblock %}
 
 {% block fetch %}
 https://github.com/syslog-ng/syslog-ng/releases/download/syslog-ng-{{self.version().strip()}}/syslog-ng-{{self.version().strip()}}.tar.gz
-f82732a8e639373037d2b69c0e6d5d6594290f0350350f7a146af4cd8ab9e2c7
+6959545cb9aaa694e4514f472c69d6e5a908abb5161861a0082c917cdf7184e2
 {% endblock %}
 
 {% block bld_libs %}

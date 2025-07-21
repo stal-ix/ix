@@ -625,7 +625,6 @@ bin/keyd
 bin/cpio
 bin/xml/lint
 bin/curl/mbedtls
-bin/curl/bearssl
 bin/curl/openssl
 bin/curl
 bin/curl/wolf
