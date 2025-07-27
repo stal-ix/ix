@@ -5,12 +5,12 @@ spotify-qt
 {% endblock %}
 
 {% block version %}
-4.0.0
+4.0.1
 {% endblock %}
 
 {% block fetch %}
 https://github.com/kraxarn/spotify-qt/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-358da63abf1bd0528c7b5e53aa72f2a5df265e9b0b4710cafefba0d0f633a672
+75e735fa66eb7d20fd90a9600313a0bb78e071256e528554041641b6076a6b96
 {% endblock %}
 
 {% block bld_libs %}
