@@ -5,12 +5,12 @@ zenity
 {% endblock %}
 
 {% block version %}
-4.1.90
+4.0.5
 {% endblock %}
 
 {% block fetch %}
 https://github.com/GNOME/zenity/archive/refs/tags/{{self.version().strip()}}.tar.gz
-7c45847057b8be9c385a31055231f7efa3eff3bd4bd9ebd433675a78dca773d3
+63e8db0261bb9d38402ff6899c49e225d5f24bf3b104a2848ada542c3eca2668
 {% endblock %}
 
 {% block bld_libs %}
