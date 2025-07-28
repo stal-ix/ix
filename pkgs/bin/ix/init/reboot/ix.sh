@@ -1,17 +1,13 @@
-{% extends '//die/inline/program.sh' %}
+{% extends '//die/gen.sh' %}
 
-{% block bld_libs %}
-lib/tiny
-{% endblock %}
-
-{% block name %}
-{{prog_name}}
-{% endblock %}
-
-{% block cpp_defines %}
-IX_ACTION={{prog_action}}
-{% endblock %}
-
-{% block sources %}
-main.c
+{% block install %}
+mkdir ${out}/bin
+cat << EOF > ${out}/bin/{{prog_name}}
+#!/bin/sh
+umount -a -r
+sync
+sync
+exec ix_reboot {{prog_action}}
+EOF
+chmod +x ${out}/bin/*
 {% endblock %}
