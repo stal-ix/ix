@@ -5,12 +5,12 @@ libinput
 {% endblock %}
 
 {% block version %}
-1.28.1
+1.29.0
 {% endblock %}
 
 {% block fetch %}
 https://gitlab.freedesktop.org/libinput/libinput/-/archive/{{self.version().strip()}}/libinput-{{self.version().strip()}}.tar.bz2
-19e5337ec10fdf920c8d1f4ece63cd7d1c12279ee26e347e30e98e2942d9e1aa
+7160c16c409c9ea4f7da9d91923ae0a92df7f3453a292bf684bed071acd7b4ff
 {% endblock %}
 
 {% block bld_libs %}
