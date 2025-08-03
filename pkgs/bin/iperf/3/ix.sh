@@ -5,12 +5,12 @@ iperf
 {% endblock %}
 
 {% block version %}
-3.19
+3.19.1
 {% endblock %}
 
 {% block fetch %}
 https://github.com/esnet/iperf/archive/refs/tags/{{self.version().strip()}}.tar.gz
-da5cff29e4945b2ee05dcf9a0c67768cc000dc1b122935bce3492c4e36f6b5e9
+85e480d7fffdcb1368888aaee9d76bcfc211e17c2a6dcb2060b281498f82c97b
 {% endblock %}
 
 {% block bld_libs %}

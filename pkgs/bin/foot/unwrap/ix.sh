@@ -5,12 +5,12 @@ foot
 {% endblock %}
 
 {% block version %}
-1.23.0
+1.23.1
 {% endblock %}
 
 {% block fetch %}
 https://codeberg.org/dnkl/foot/archive/{{self.version().strip()}}.tar.gz
-74c874feb5ae0277a9f19fbd6418a40524cd71d629784276d109ebfe4e786421
+02072b8f0aaf26907b6b02293c875539ce52fc59079344e7cf811ab03394cfa3
 {% endblock %}
 
 {% block bld_libs %}

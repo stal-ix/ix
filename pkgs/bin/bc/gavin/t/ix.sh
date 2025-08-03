@@ -5,12 +5,12 @@ bc-gh
 {% endblock %}
 
 {% block version %}
-7.0.3
+7.1.0
 {% endblock %}
 
 {% block fetch %}
 https://github.com/gavinhoward/bc/archive/refs/tags/{{self.version().strip()}}.tar.gz
-3c625e8034ef47c9ae11a1ed3dcc22314bf374144decf546647b9a722f7313d6
+e30f44bcf6ea4f2a7a25de06267df17d0a9dfef8a9d4e59822d0b794bfc15b24
 {% endblock %}
 
 {% block host_libs %}

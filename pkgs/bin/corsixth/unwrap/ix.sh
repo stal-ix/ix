@@ -5,12 +5,12 @@ CorsixTH
 {% endblock %}
 
 {% block version %}
-0.68.0
+0.69.0
 {% endblock %}
 
 {% block fetch %}
 https://github.com/CorsixTH/CorsixTH/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-54034b8434f5c583178405d2c84477f903fe2b15933b611f42230668e35d632e
+0f2dbdc2b8b6b2e4d5e80a6be02a72d586d0072efe867750a424746bd318f1f5
 {% endblock %}
 
 {% block bld_libs %}

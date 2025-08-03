@@ -18,6 +18,7 @@ def cli_tool(ctx):
 
     env['IX_BINARY'] = ixbin
     env['IX_DIR'] = pkgs
+    env['IX_PWD'] = os.getcwd()
 
     cmd = [ixbin] + [
         'run',
