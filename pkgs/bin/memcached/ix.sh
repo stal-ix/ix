@@ -5,12 +5,12 @@ memcached
 {% endblock %}
 
 {% block version %}
-1.6.38
+1.6.39
 {% endblock %}
 
 {% block fetch %}
 https://memcached.org/files/memcached-{{self.version().strip()}}.tar.gz
-334d792294e37738796b5b03375c47bb6db283b1152e2ea4ccb720152dd17c66
+23e5507e933b15463161d4c5d3921b0c5f340b542d6edd7f6c5e17c34f11a363
 {% endblock %}
 
 {% block bld_libs %}
