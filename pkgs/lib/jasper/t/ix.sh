@@ -5,12 +5,12 @@ jasper
 {% endblock %}
 
 {% block version %}
-4.2.5
+4.2.7
 {% endblock %}
 
 {% block fetch %}
 https://github.com/jasper-software/jasper/archive/refs/tags/version-{{self.version().strip()}}.tar.gz
-3f4b1df7cab7a3cc67b9f6e28c730372f030b54b0faa8548a9ee04ae83fffd44
+93d3472ae50b2cc6547d3d8ea53de7e820588a0e5be6557a7fe0b1d94eb1e5ca
 {% endblock %}
 
 {% block lib_deps %}
