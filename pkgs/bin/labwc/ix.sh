@@ -5,12 +5,12 @@ labwc
 {% endblock %}
 
 {% block version %}
-0.9.0
+0.9.1
 {% endblock %}
 
 {% block fetch %}
 https://github.com/labwc/labwc/archive/refs/tags/{{self.version().strip()}}.tar.gz
-d06f89fb2bbd4be73e7bba9fb57017054d61868fe24db361d1ded87470329e63
+bf7a245d5fc5665329b3f5c9cb589eb33e658b8eb638cf4f4c9ad68f4b5979f0
 {% endblock %}
 
 {% block bld_libs %}
