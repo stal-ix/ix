@@ -5,12 +5,12 @@ mpg123
 {% endblock %}
 
 {% block version %}
-1.33.0
+1.33.1
 {% endblock %}
 
 {% block fetch %}
 https://downloads.sourceforge.net/project/mpg123/mpg123/{{self.version().strip()}}/mpg123-{{self.version().strip()}}.tar.bz2
-2290e3aede6f4d163e1a17452165af33caad4b5f0948f99429cfa2d8385faa9d
+1181f65eb3c8a0a8eed8b595a811988f53c82b0916b58d3c8cc9c3ced66f0312
 {% endblock %}
 
 {% block lib_deps %}

@@ -5,12 +5,12 @@ iproute2
 {% endblock %}
 
 {% block version %}
-6.15.0
+6.16.0
 {% endblock %}
 
 {% block fetch %}
 https://github.com/iproute2/iproute2/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-0b3b1c0b8f11a0e82c764bc291ce74bf03e778dc575b8097f5c440680150563b
+2dacd086b01cedef96f93a6dac3872a0a6c8ac97adf1a6544195ef3029264761
 {% endblock %}
 
 {% block bld_libs %}

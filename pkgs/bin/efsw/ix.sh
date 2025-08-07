@@ -5,12 +5,12 @@ efsw
 {% endblock %}
 
 {% block version %}
-1.4.1
+1.5.0
 {% endblock %}
 
 {% block fetch %}
 https://github.com/SpartanJ/efsw/archive/refs/tags/{{self.version().strip()}}.tar.gz
-f0ddee587928737c6a3dc92eb88266a804c77279cbdf29d47e5e6f6ad6c7fd9a
+20421778fd59a845393ff6a7a1f461228574fe5062b1bf5f82d533c0d25a41bd
 {% endblock %}
 
 {% block bld_libs %}

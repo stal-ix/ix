@@ -5,12 +5,12 @@ mkvtoolnix
 {% endblock %}
 
 {% block version %}
-93.0
+94.0
 {% endblock %}
 
 {% block fetch %}
 https://codeberg.org/mbunkus/mkvtoolnix/archive/release-{{self.version().strip()}}.tar.gz
-95a053102ca2a7719a52054e040a57391ecf90339cadd325382a90c2220664b3
+c6594ec8ece8f61fa0c3b4a9ea02187d2a8ff6caf8d4bd26e25f446f0404fa6c
 {% endblock %}
 
 {% block bld_libs %}
