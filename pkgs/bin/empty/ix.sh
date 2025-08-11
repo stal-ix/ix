@@ -1,7 +1,7 @@
 {% extends '//die/c/make.sh' %}
 
 {% block version %}
-0.6.23c
+0.6.23d
 {% endblock %}
 
 {% block pkg_name %}
@@ -10,7 +10,7 @@ empty
 
 {% block fetch %}
 https://downloads.sourceforge.net/project/empty/empty/empty-{{self.version().strip()}}/empty-{{self.version().strip()}}.tgz
-8a7ca8c7099dc6d6743ac7eafc0be3b1f8991d2c8f20cf66ce900c7f08e010bd
+9ad495d52b942e3fd858643536d8d12e282568214300954d4518d8c22b893585
 {% endblock %}
 
 {% block bld_libs %}
