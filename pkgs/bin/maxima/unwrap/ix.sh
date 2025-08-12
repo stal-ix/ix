@@ -5,12 +5,12 @@ maxima
 {% endblock %}
 
 {% block version %}
-5.48.0
+5.48.1
 {% endblock %}
 
 {% block fetch %}
 https://downloads.sourceforge.net/project/maxima/Maxima-source/{{self.version().strip()}}-source/maxima-{{self.version().strip()}}.tar.gz
-75af2bf1894df2a17aef8a5c378d72d4d53c669b9f47d60ec5ba8c8676c4aaab
+b0916b5fb37b6eeaae400083175e68e28f80b9a1ab580c106a05448cf1c496b2
 {% endblock %}
 
 {% block bld_tool %}
