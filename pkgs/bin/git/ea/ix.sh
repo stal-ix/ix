@@ -5,7 +5,7 @@ gitea
 {% endblock %}
 
 {% block version %}
-1.24.3
+1.24.4
 {% endblock %}
 
 {% block go_url %}
@@ -13,7 +13,7 @@ https://github.com/go-gitea/gitea/archive/refs/tags/v{{self.version().strip()}}.
 {% endblock %}
 
 {% block go_sha %}
-871dbb475a4ac31e5b68515dcb0d28bc34229964fdce8c8092d785f32d9c8262
+af37e3e9af5242911ea4fdd7af2cff8728e6f6434a0853dd313911b8fa32250a
 {% endblock %}
 
 {% block go_tool %}
