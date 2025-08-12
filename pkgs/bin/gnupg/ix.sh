@@ -5,10 +5,10 @@ gnupg
 {% endblock %}
 
 {% block version %}
-2.5.10
+2.4.8
 {% endblock %}
 
 {% block fetch %}
 https://www.gnupg.org/ftp/gcrypt/gnupg/gnupg-{{self.version().strip()}}.tar.bz2
-5a2f2faf411bbf87ed1a3e557cf20e05f75b050b3ae8a5ef7837aabd065f9d70
+b58c80d79b04d3243ff49c1c3fc6b5f83138eb3784689563bcdd060595318616
 {% endblock %}
