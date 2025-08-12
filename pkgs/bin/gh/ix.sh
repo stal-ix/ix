@@ -5,7 +5,7 @@ cli
 {% endblock %}
 
 {% block version %}
-2.76.1
+2.76.2
 {% endblock %}
 
 {% block go_url %}
@@ -13,7 +13,7 @@ https://github.com/cli/cli/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 {% endblock %}
 
 {% block go_sha %}
-aa3e2a6c55ee918954677b1fa441bdc26b1eec4eb563872386c7ecbf57d6d37d
+7ec764bc0bfaaed0857f0cc4acc70509303bf94483e2d797641645a7842b184f
 {% endblock %}
 
 {% block unpack %}
