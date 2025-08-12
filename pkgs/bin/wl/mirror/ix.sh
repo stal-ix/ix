@@ -5,7 +5,7 @@ wl-mirror
 {% endblock %}
 
 {% block version %}
-0.18.2
+0.18.3
 {% endblock %}
 
 {% block git_repo %}
@@ -17,7 +17,7 @@ v{{self.version().strip()}}
 {% endblock %}
 
 {% block git_sha %}
-6d8b2c7ab6a6fd3103eaa66aebef702477e2a8ab520c1ec581db51c297343039
+21e8727f2af7b8a948cf719602305783f426a12dff4365be09bcb88d28693ffe
 {% endblock %}
 
 {% block bld_libs %}
