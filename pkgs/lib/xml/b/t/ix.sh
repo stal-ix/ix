@@ -5,12 +5,12 @@ libxmlb
 {% endblock %}
 
 {% block version %}
-0.3.22
+0.3.23
 {% endblock %}
 
 {% block fetch %}
 https://github.com/hughsie/libxmlb/archive/refs/tags/{{self.version().strip()}}.tar.gz
-103684ed37a45d0aed8f95e97294ed26945b5aeebf44734f3994081eecebb11c
+3d9b7334e7ab32837ebc1d902620b7938f46c59353e61bf933521acb75181476
 {% endblock %}
 
 {% block lib_deps %}
