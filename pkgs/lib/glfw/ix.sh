@@ -5,12 +5,12 @@ glfw
 {% endblock %}
 
 {% block version %}
-3.4
+3.5.0
 {% endblock %}
 
 {% block fetch %}
 https://github.com/glfw/glfw/archive/refs/tags/{{self.version().strip()}}.tar.gz
-c038d34200234d071fae9345bc455e4a8f2f544ab60150765d7704e08f3dac01
+1abba4007c81bb3c21dad0f1cfff65cf71a5f92d1421016ce7eb236c7458ba9f
 {% endblock %}
 
 {% block lib_deps %}
