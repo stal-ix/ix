@@ -94,7 +94,7 @@ bin/pixman
 bin/deya
 bin/ip/traf/ng
 bin/ix/init
-bin/kernel/6/15
+bin/kernel/6/16
 bin/lzfse
 bin/uncrustify
 bin/hefur
