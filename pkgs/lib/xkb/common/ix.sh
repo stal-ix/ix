@@ -12,4 +12,5 @@ list_insert
 list_append
 list_remove
 list_empty
+expand_path
 {% endblock %}
