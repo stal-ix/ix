@@ -5,12 +5,12 @@ libcerf
 {% endblock %}
 
 {% block version %}
-3.0
+3.1
 {% endblock %}
 
 {% block fetch %}
 https://jugit.fz-juelich.de/mlz/libcerf/-/archive/v{{self.version().strip()}}/libcerf-v{{self.version().strip()}}.tar.bz2
-e8b5be7cf8dc654e05c9fcaa8a7d93f4f287f248e2c58b696731102ccab2ff93
+8ab960951172035d3cf957db7ac0fe01b3504c5d7cde5ef56afdf39837604bed
 {% endblock %}
 
 {% block lib_deps %}

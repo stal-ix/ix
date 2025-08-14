@@ -5,12 +5,12 @@ strace
 {% endblock %}
 
 {% block version %}
-6.15
+6.16
 {% endblock %}
 
 {% block fetch %}
 https://strace.io/files/{{self.version().strip()}}/strace-{{self.version().strip()}}.tar.xz
-8552dfab08abc22a0f2048c98fd9541fd4d71b6882507952780dab7c7c512f51
+3d7aee7e4f044b2f67f3d51a8a76eda18076e9fb2774de54ac351d777d4ebffa
 {% endblock %}
 
 {% block bld_libs %}

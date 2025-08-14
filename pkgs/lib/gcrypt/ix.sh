@@ -5,12 +5,12 @@ libgcrypt
 {% endblock %}
 
 {% block version %}
-1.11.1
+1.11.2
 {% endblock %}
 
 {% block fetch %}
 https://gnupg.org/ftp/gcrypt/libgcrypt/libgcrypt-{{self.version().strip()}}.tar.bz2
-24e91c9123a46c54e8371f3a3a2502f1198f2893fbfbf59af95bc1c21499b00e
+6ba59dd192270e8c1d22ddb41a07d95dcdbc1f0fb02d03c4b54b235814330aac
 {% endblock %}
 
 {% block lib_deps %}

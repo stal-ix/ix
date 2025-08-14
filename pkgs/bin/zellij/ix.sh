@@ -5,7 +5,7 @@ zellij
 {% endblock %}
 
 {% block version %}
-0.42.2
+0.43.1
 {% endblock %}
 
 {% block cargo_url %}
@@ -13,7 +13,7 @@ https://github.com/zellij-org/zellij/archive/refs/tags/v{{self.version().strip()
 {% endblock %}
 
 {% block cargo_sha %}
-640f1dfe062c45bdf476fedd65f0072bc67841650330b43d7db8211a2738436b
+c3febff26619ebfe614a8f45a2b1df46b3d07b5f17ea1256be553cf4ba53ad75
 {% endblock %}
 
 {% block bld_libs %}

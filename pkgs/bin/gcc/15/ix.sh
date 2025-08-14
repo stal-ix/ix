@@ -5,10 +5,10 @@ gcc
 {% endblock %}
 
 {% block version %}
-15.1.0
+15.2.0
 {% endblock %}
 
 {% block fetch %}
-http://ftp.gnu.org/gnu/gcc/gcc-{{self.version().strip()}}/gcc-{{self.version().strip()}}.tar.xz
-e2b09ec21660f01fecffb715e0120265216943f038d0e48a9868713e54f06cea
+https://ftp.fu-berlin.de/unix/languages/gcc/releases/gcc-{{self.version().strip()}}/gcc-{{self.version().strip()}}.tar.xz
+438fd996826b0c82485a29da03a72d71d6e3541a83ec702df4271f6fe025d24e
 {% endblock %}

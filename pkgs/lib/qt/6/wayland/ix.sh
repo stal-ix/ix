@@ -26,3 +26,10 @@ zwp_linux_buffer_params_v1_interface
 {{super()}}
 export QT_PATH="\${QT_PATH}:${out}"
 {% endblock %}
+
+{% block install %}
+{{super()}}
+llvm-ar d ${out}/lib/libQt6WlShellIntegration.a wayland-wayland-protocol.c.o
+llvm-ar d ${out}/lib/libQt6WaylandCompositor.a wayland-wayland-protocol.c.o
+llvm-ar d ${out}/lib/libQt6WaylandClient.a wayland-wayland-protocol.c.o
+{% endblock %}

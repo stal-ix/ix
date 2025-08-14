@@ -5,12 +5,12 @@ kimageformats
 {% endblock %}
 
 {% block version %}
-6.16.0
+6.17.0
 {% endblock %}
 
 {% block fetch %}
 https://github.com/KDE/kimageformats/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-636dfac4ce3a15874fb95088c6eae73fb41bd0eca0e7c724deb10c82db136b0c
+59e442de50d2099e7e73a687aa667edc02924c4e627350420373ba296ca9edc0
 {% endblock %}
 
 {% block lib_deps %}

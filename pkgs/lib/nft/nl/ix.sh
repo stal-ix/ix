@@ -5,7 +5,7 @@ git://git.netfilter.org/libnftnl
 {% endblock %}
 
 {% block version %}
-1.2.9
+1.3.0
 {% endblock %}
 
 {% block pkg_name %}
@@ -17,7 +17,7 @@ libnftnl-{{self.version().strip()}}
 {% endblock %}
 
 {% block git_sha %}
-0bb3ea8d7108e4b8377c27c343a7484a7fb9fab45fed72ad7ee57eb58e4b2a23
+283954ba6f718767d9850e8e53fa6ef4996dc8e79fee1b1dab5624e6e0ff6b27
 {% endblock %}
 
 {% block lib_deps %}

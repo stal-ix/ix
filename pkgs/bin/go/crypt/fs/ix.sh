@@ -5,7 +5,7 @@ gocryptfs
 {% endblock %}
 
 {% block version %}
-2.6.0
+2.6.1
 {% endblock %}
 
 {% block go_url %}
@@ -13,7 +13,7 @@ https://github.com/rfjakob/gocryptfs/archive/refs/tags/v{{self.version().strip()
 {% endblock %}
 
 {% block go_sha %}
-dfb8bc3f052cf7aa944c60138890fefdbe5f0ef5640847beebbe308d5dfb96fa
+9f639b8ced4285439ffb5d32925e78fdf2c2b94fa705c308861273b5f6f87924
 {% endblock %}
 
 {% block bld_libs %}
