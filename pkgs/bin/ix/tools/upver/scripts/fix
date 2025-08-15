@@ -23,6 +23,7 @@ curl -k 'https://repology.org/api/v1/projects/?inrepo=stalix_dev&outdated=1' \
     | grep -v webkit \
     | grep -v wlroots \
     | grep -v 'auto/make' \
+    | grep -v 'bin/kernel' \
     | grep -v grpc \
     | while read l; do (
     echo ${l}
