@@ -20,3 +20,7 @@ lib/c
 {% block bld_libs %}
 lib/kernel
 {% endblock %}
+
+{% block build_flags %}
+wrap_cc
+{% endblock %}
