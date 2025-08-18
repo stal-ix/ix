@@ -24,3 +24,7 @@ lib/kernel
 {% block build_flags %}
 wrap_cc
 {% endblock %}
+
+{% block meson_flags %}
+zlib=disabled
+{% endblock %}
