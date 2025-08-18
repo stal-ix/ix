@@ -29,33 +29,30 @@ exit 1
 {% endblock %}
 
 {% block script_confine %}
-{% if stalix %}
-{% if isfile('/bin/confine') %}
-/ix/realm/system/bin/confine
-{{ix_dir}}
-{% endif %}
-{% if skipsrc or skipsrc_one %}
-{% else %}
-{% if isfile('/bin/tmpfs') %}
-/ix/realm/system/bin/tmpfs
-{{ix_dir}}
-{% endif %}
-{% endif %}
-{% endif %}
 {% if jail or tmpfs %}
-unshare
--r
--U
--m
-{% endif %}
-{% if jail %}
-jail
-/sys
-{{ix_dir}}
-{% endif %}
-{% if tmpfs %}
-tmpfs
-{{ix_dir}}
+  unshare
+  -r
+  -U
+  -m
+  {% if jail %}
+    jail
+    /sys
+    {{ix_dir}}
+  {% endif %}
+  {% if tmpfs %}
+    tmpfs
+    {{ix_dir}}
+  {% endif %}
+{% elif stalix %}
+  {% if isfile('/bin/confine') %}
+    /ix/realm/system/bin/confine
+    {{ix_dir}}
+  {% endif %}
+  {% if skipsrc or skipsrc_one %}
+  {% elif isfile('/bin/tmpfs') %}
+    /ix/realm/system/bin/tmpfs
+    {{ix_dir}}
+  {% endif %}
 {% endif %}
 {% block script_parts %}
 sh
