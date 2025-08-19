@@ -21,5 +21,5 @@ u-root
 {% endblock %}
 
 {% block go_tool %}
-bin/go/lang/24
+bin/go/lang/23
 {% endblock %}
