@@ -13,7 +13,7 @@ https://github.com/mvdan/sh/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 {% endblock %}
 
 {% block go_sha %}
-397b064471141cbd25bc4dcbb5b824b42ad41b0aa09c889ae3e04622027aa3c5
+b455663d65dace341c233c11b68c0d9b5dbdcf541b8754f45642b01dd6af762c
 {% endblock %}
 
 {% block go_tool %}
