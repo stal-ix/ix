@@ -173,7 +173,7 @@ def iter_ff():
 def main():
     mirrors = list(M.strip().split('\n'))
     random.shuffle(mirrors)
-    do_fetch(sys.argv[1], sys.argv[2], sys.argv[3], mirrors * 3)
+    do_fetch(sys.argv[1], sys.argv[2], sys.argv[3].removeprefix('sha:'), mirrors * 3)
 
 
 sys.stdout = sys.stderr

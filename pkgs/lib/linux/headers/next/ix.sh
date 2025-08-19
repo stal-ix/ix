@@ -1,6 +1,6 @@
 {% extends '//lib/linux/headers/t/ix.sh' %}
 
-{% include '//bin/kernel/6/15/ver.sh' %}
+{% include '//bin/kernel/6/16/ver.sh' %}
 
 {% block pkg_name %}
 linux-headers

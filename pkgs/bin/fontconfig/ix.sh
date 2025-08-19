@@ -1,4 +1,4 @@
-{% extends '//lib/fontconfig/t/ix.sh' %}
+{% extends '//lib/fontconfig/t/t/ix.sh' %}
 
 {% block bld_libs %}
 lib/intl

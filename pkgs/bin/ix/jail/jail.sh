@@ -24,7 +24,7 @@ cp -P /dev/stderr dev/
 mkdir dev/shm
 mount --bind /dev/shm dev/shm
 mkdir proc
-mount --bind /proc proc
+mount --rbind /proc proc
 mkdir bin
 cp $(command -v sh) bin/
 mkdir -p usr/bin

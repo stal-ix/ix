@@ -5,12 +5,12 @@ libdisplay-info
 {% endblock %}
 
 {% block version %}
-0.2.0
+0.3.0
 {% endblock %}
 
 {% block fetch %}
 https://gitlab.freedesktop.org/emersion/libdisplay-info/-/archive/{{self.version().strip()}}/libdisplay-info-{{self.version().strip()}}.tar.bz2
-f6cf2ddbba3753ae38de5113d1fcb8fab977dfaf5fb07b38cd68d8482765e208
+915cc6713b7b2e173a90f9db248fb8994f9668171fecc1e9fded5e36bb34d890
 {% endblock %}
 
 {% block lib_deps %}

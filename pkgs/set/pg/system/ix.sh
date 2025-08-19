@@ -7,7 +7,8 @@ ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDGZ3aEKhxpG9JHG3uso/gUuUKe9NzHOXKAenZIDiDq
 {% block run_deps %}
 etc/tmpfs
 set/stalix
-bin/kernel/6/15
+set/pg/secrets
+bin/kernel/6/16
 bin/ix/keyboard
 bin/kernel/gengrub
 set/pg/system/hosts
