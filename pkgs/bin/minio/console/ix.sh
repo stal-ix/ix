@@ -24,3 +24,8 @@ cd cmd/console
 {% block go_bins %}
 console
 {% endblock %}
+
+{% block install %}
+{{super()}}
+mv ${out}/bin/console ${out}/bin/minio-console
+{% endblock %}
