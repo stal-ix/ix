@@ -5,12 +5,12 @@ SVT-AV1
 {% endblock %}
 
 {% block version %}
-3.1.0
+3.1.2
 {% endblock %}
 
 {% block fetch %}
 https://gitlab.com/AOMediaCodec/SVT-AV1/-/archive/v{{self.version().strip()}}/SVT-AV1-v{{self.version().strip()}}.tar.bz2
-8231b63ea6c50bae46a019908786ebfa2696e5743487270538f3c25fddfa215a
+802e9bb2b14f66e8c638f54857ccb84d3536144b0ae18b9f568bbf2314d2de88
 {% endblock %}
 
 {% block lib_deps %}
