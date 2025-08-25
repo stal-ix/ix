@@ -5,7 +5,7 @@ sniffer
 {% endblock %}
 
 {% block version %}
-0.6.2
+0.6.3
 {% endblock %}
 
 {% block go_url %}
@@ -13,7 +13,7 @@ https://github.com/chenjiandongx/sniffer/archive/refs/tags/v{{self.version().str
 {% endblock %}
 
 {% block go_sha %}
-1b6adf32e3ee8422d0e10c2b9acee673b756d905669f748a1e11e0333d9e57b8
+fbbcbd160b928fee54e86f39fff4fd8570fcf83e4a8cf5cfdb595ebb05913df7
 {% endblock %}
 
 {% block bld_libs %}
@@ -24,4 +24,8 @@ lib/kernel
 
 {% block go_bins %}
 sniffer
+{% endblock %}
+
+{% block go_tool %}
+bin/go/lang/24
 {% endblock %}
