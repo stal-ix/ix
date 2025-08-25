@@ -5,7 +5,7 @@ bluetuith
 {% endblock %}
 
 {% block version %}
-0.2.3
+0.2.5
 {% endblock %}
 
 {% block go_url %}
@@ -13,9 +13,13 @@ https://github.com/darkhz/bluetuith/archive/refs/tags/v{{self.version().strip()}
 {% endblock %}
 
 {% block go_sha %}
-2d815d153e0c5ab01911a3031eb185d036d61d241676444711a153fe309c7ce5
+30f7962a15f0c5084753e3ab895254073f63a8de383da05aaacf81ea5826db97
 {% endblock %}
 
 {% block go_bins %}
 bluetuith
+{% endblock %}
+
+{% block go_tool %}
+bin/go/lang/24
 {% endblock %}
