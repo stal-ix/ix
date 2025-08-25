@@ -5,12 +5,12 @@ redis
 {% endblock %}
 
 {% block version %}
-8.2.0
+8.2.1
 {% endblock %}
 
 {% block fetch %}
 https://github.com/redis/redis/archive/refs/tags/{{self.version().strip()}}.tar.gz
-c64219bdcba407d18c8dde1fb87b86945aebf75e60f5b44ff463785a962645ed
+517e47ebce911ebbed2fe86047a871d9cbeadc7d2de15ffca37a1540eb4d588f
 {% endblock %}
 
 {% block bld_libs %}
