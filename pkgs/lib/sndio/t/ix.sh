@@ -23,6 +23,8 @@ lib/bsd
 find . -name '*.h' -type f | while read l; do
     sed -e 's|/tmp/sndio|/var/run/sndiod|' -i ${l}
 done
+{% else %}
+:
 {% endif %}
 {% endblock %}
 
