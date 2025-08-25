@@ -5,12 +5,12 @@ z3
 {% endblock %}
 
 {% block version %}
-4.15.2
+4.15.3
 {% endblock %}
 
 {% block fetch %}
 https://github.com/Z3Prover/z3/archive/refs/tags/z3-{{self.version().strip()}}.tar.gz
-3486bf5b35b185981cab0b0a81f870547648a1ca433085aa79afd17c44959751
+8cfd4d6ab47cafe931446e2c03e10df651d40487730c819f1bf420987144824f
 {% endblock %}
 
 {% block bld_libs %}
