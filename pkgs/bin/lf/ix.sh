@@ -5,7 +5,7 @@ lf
 {% endblock %}
 
 {% block version %}
-36
+37
 {% endblock %}
 
 {% block go_url %}
@@ -13,7 +13,7 @@ https://github.com/gokcehan/lf/archive/refs/tags/r{{self.version().strip()}}.tar
 {% endblock %}
 
 {% block go_sha %}
-e38e7041ebc075680952421f039ddc3e1dbd728d478dbfbb79032bdc12a49d81
+7ecb5b66fed1d55cab0a6a71cf5f1ff1c3b15ae1944a8952072e17a2961f89ae
 {% endblock %}
 
 {% block go_tool %}
