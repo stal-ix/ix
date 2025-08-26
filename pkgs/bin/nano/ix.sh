@@ -5,12 +5,12 @@ nano
 {% endblock %}
 
 {% block version %}
-8.5
+8.6
 {% endblock %}
 
 {% block fetch %}
 https://www.nano-editor.org/dist/v8/nano-{{self.version().strip()}}.tar.xz
-000b011d339c141af9646d43288f54325ff5c6e8d39d6e482b787bbc6654c26a
+f7abfbf0eed5f573ab51bd77a458f32d82f9859c55e9689f819d96fe1437a619
 {% endblock %}
 
 {% block bld_libs %}

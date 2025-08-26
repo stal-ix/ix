@@ -5,12 +5,12 @@ ttyplot
 {% endblock %}
 
 {% block version %}
-1.7.3
+1.7.4
 {% endblock %}
 
 {% block fetch %}
 https://github.com/tenox7/ttyplot/archive/refs/tags/{{self.version().strip()}}.tar.gz
-a1abc172bba435a0302de9b31ccc66183a7dd2d3480180253cf2feb973c01268
+d4a690cb4ca6d52885ebfdc6230bfb550eecf4b8edb9b54453829a77f63ea7b9
 {% endblock %}
 
 {% block bld_libs %}

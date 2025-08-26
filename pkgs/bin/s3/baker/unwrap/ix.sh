@@ -5,12 +5,12 @@ s3backer
 {% endblock %}
 
 {% block version %}
-2.1.5
+2.1.6
 {% endblock %}
 
 {% block fetch %}
 https://github.com/archiecobbs/s3backer/archive/refs/tags/{{self.version().strip()}}.tar.gz
-7650bd1f683e5a8c18c31a2e9f73d5f584b327952ceb22ee042a1ee6ecb737c5
+52f6257d3ca2b17d51d8c7a2c4c96cb0bcfdb55e4cbb9a27622c0028a521a2fb
 {% endblock %}
 
 {% block bld_libs %}

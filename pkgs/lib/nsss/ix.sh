@@ -23,7 +23,9 @@ lib/kernel
 {% endblock %}
 
 {% block configure_flags %}
+{% if stalix %}
 --with-nsssd-socket=/var/run/nsssd/nsssd.sock
+{% endif %}
 {% endblock %}
 
 {% block env %}

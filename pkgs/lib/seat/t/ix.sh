@@ -26,5 +26,7 @@ bin/scdoc
 {% endblock %}
 
 {% block meson_flags %}
+{% if stalix %}
 defaultpath=/var/run/seatd/seatd.sock
+{% endif %}
 {% endblock %}

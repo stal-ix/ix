@@ -19,7 +19,9 @@ lib/expat
 {% endblock %}
 
 {% block meson_flags %}
+{% if stalix %}
 system_socket="/var/run/dbus/system_bus_socket"
+{% endif %}
 {% endblock %}
 
 {% block install %}

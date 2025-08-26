@@ -5,12 +5,12 @@ emacs
 {% endblock %}
 
 {% block version %}
-30.1
+30.2
 {% endblock %}
 
 {% block fetch %}
 https://github.com/emacs-mirror/emacs/archive/refs/tags/emacs-{{self.version().strip()}}.tar.gz
-459e0524b1a5db42cd06c99be21d93d09768d2c3e642a1d1a9d239caea35384a
+67e6954e759f3602817e833a46d9f6383ae84ff96872c159601a3807dcc9f1d3
 {% endblock %}
 
 {% block bld_libs %}

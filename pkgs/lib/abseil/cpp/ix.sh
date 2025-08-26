@@ -1,5 +1,7 @@
 {% extends '//die/c/cmake.sh' %}
 
+# check bin/telegram/desktop
+
 {% block pkg_name %}
 abseil-cpp
 {% endblock %}
