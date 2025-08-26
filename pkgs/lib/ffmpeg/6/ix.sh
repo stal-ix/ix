@@ -16,8 +16,10 @@ https://ffmpeg.org/releases/ffmpeg-{{self.version().strip()}}.tar.xz
 {% endblock %}
 
 {% block lib_deps %}
+{% if vulkan %}
 lib/vulkan/headers
 lib/vulkan/loader
+{% endif %}
 {{super()}}
 {% endblock %}
 
