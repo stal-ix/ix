@@ -6,16 +6,19 @@ lib/epoxy
 lib/opengl
 lib/lcms/2
 lib/glslang
-lib/shaderc
 lib/execinfo
+{% if vulkan %}
+lib/shaderc
 lib/vulkan/loader
 lib/vulkan/headers
 lib/spirv/tools
 lib/spirv/headers
+{% endif %}
 {% endblock %}
 
 {% block bld_libs %}
 pip/Mako
+lib/vulkan/headers
 {% endblock %}
 
 {% block bld_tool %}
@@ -24,7 +27,11 @@ bin/glslang
 {% endblock %}
 
 {% block meson_flags %}
-vulkan=enabled
 opengl=enabled
+{% if vulkan %}
+vulkan=enabled
 vulkan-registry="${VK_XML}"
+{% else %}
+vulkan=disabled
+{% endif %}
 {% endblock %}
