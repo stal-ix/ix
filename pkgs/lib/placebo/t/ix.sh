@@ -5,9 +5,9 @@ lib/c
 lib/epoxy
 lib/opengl
 lib/lcms/2
-lib/glslang
 lib/execinfo
 {% if vulkan %}
+lib/glslang
 lib/shaderc
 lib/vulkan/loader
 lib/vulkan/headers
@@ -23,7 +23,9 @@ lib/vulkan/headers
 
 {% block bld_tool %}
 bld/python
+{% if vulkan %}
 bin/glslang
+{% endif %}
 {% endblock %}
 
 {% block meson_flags %}
