@@ -16,11 +16,8 @@ https://github.com/haasn/libplacebo/archive/refs/tags/v{{self.version().strip()}
 {% block lib_deps %}
 lib/xxhash
 lib/fast/float
+{% if vulkan %}
 lib/spirv/cross
-{{super()}}
-{% endblock %}
-
-{% block bld_libs %}
-lib/shim/fake/pkg(pkg_name=spirv-cross-c-shared,pkg_ver=1.3.261)
+{% endif %}
 {{super()}}
 {% endblock %}

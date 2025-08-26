@@ -16,4 +16,5 @@ https://github.com/KhronosGroup/SPIRV-Cross/archive/refs/tags/vulkan-sdk-{{self.
 {% block lib_deps %}
 lib/c
 lib/c++
+lib/shim/fake/pkg(pkg_name=spirv-cross-c-shared,pkg_ver={{self.version().strip()}})
 {% endblock %}
