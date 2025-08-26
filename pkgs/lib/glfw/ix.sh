@@ -18,8 +18,10 @@ lib/c
 lib/opengl
 lib/wayland
 lib/xkb/common
+{% if vulkan %}
 lib/vulkan/loader
 lib/vulkan/headers
+{% endif %}
 {% endblock %}
 
 {% block bld_libs %}
