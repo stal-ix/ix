@@ -22,14 +22,18 @@ class Ops:
     def misc(self):
         return self.respawn() + ['misc']
 
-    def misc_cmd(self, sb, *args):
-        return [sb.cmd(self.misc() + list(args))]
+    def misc_cmd(self, sb, *args, env={}):
+        return [sb.cmd(self.misc() + list(args), env=env)]
 
     def extract(self):
         return self.misc() + ['extract']
 
     def fetch(self, sb, url, path, md5):
-        return self.misc_cmd(sb, 'fetch', url, path, md5, *sb.package.manager.mirrors)
+        env = {
+            'PATH': self.boot_path(),
+        }
+
+        return self.misc_cmd(sb, 'fetch', url, path, md5, *sb.package.manager.mirrors, env=env)
 
     def link(self, sb, files, out):
         return self.misc_cmd(sb, 'link', out, *files)
