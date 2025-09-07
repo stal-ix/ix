@@ -5,12 +5,12 @@ libatomic_ops
 {% endblock %}
 
 {% block version %}
-7.8.2
+7.8.4
 {% endblock %}
 
 {% block fetch %}
 https://github.com/ivmai/libatomic_ops/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-ad8428a40e01d41bc4ddad3166afa1fc175c9e58d8ef7ddbd7ef3298e32ac37b
+ea8295ac627646e37fd194d31535bbc02da60b908c8166c5e04d2461a53cb059
 {% endblock %}
 
 {% block lib_deps %}
