@@ -5,12 +5,12 @@ libtirpc
 {% endblock %}
 
 {% block version %}
-1.3.6
+1.3.7
 {% endblock %}
 
 {% block fetch %}
 https://downloads.sourceforge.net/libtirpc/libtirpc-{{self.version().strip()}}.tar.bz2
-bbd26a8f0df5690a62a47f6aa30f797f3ef8d02560d1bc449a83066b5a1d3508
+b47d3ac19d3549e54a05d0019a6c400674da716123858cfdb6d3bdd70a66c702
 {% endblock %}
 
 {% block lib_deps %}
