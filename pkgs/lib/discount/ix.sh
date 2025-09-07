@@ -5,12 +5,12 @@ discount
 {% endblock %}
 
 {% block version %}
-3.0.0d
+3.0.1
 {% endblock %}
 
 {% block fetch %}
 https://github.com/Orc/discount/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-0ed8cc27ac5d46dc6a8beedd5e5673ac8b466a6474bdb7d35f37c815f670385f
+045fe1b57e44bbc47cecf9611861178449c999fe22921252ae80f0dddd517687
 {% endblock %}
 
 {% block lib_deps %}
