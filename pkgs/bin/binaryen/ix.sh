@@ -1,7 +1,7 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block version %}
-123
+124
 {% endblock %}
 
 {% block pkg_name %}
@@ -10,7 +10,7 @@ binaryen
 
 {% block fetch %}
 https://github.com/WebAssembly/binaryen/archive/refs/tags/version_{{self.version().strip()}}.tar.gz
-a1e1caf250cab3a83938713594e55b6762591208e82087e3337f793e8c8eb7ab
+b8d06af81a8c2bb27c34d1f9e3cf7c621f93fc901f896809e0490f3586a63ca4
 {% endblock %}
 
 {% block bld_libs %}
