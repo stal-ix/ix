@@ -5,12 +5,12 @@ freetype
 {% endblock %}
 
 {% block version %}
-2.13.3
+2.14.0
 {% endblock %}
 
 {% block fetch %}
 https://gitlab.com/freetype/freetype/-/archive/VER-{{self.version().strip().replace('.', '-')}}/freetype-VER-{{self.version().strip().replace('.', '-')}}.tar.bz2
-2f8aa590bbb4deaf77c530b77e4c5c636ae365403b8793b9841f09faf32f3a06
+a84e167dcc3858418e8022c742007da13aeed7d6c457a739ee0568583a1e612d
 {% endblock %}
 
 {% block lib_deps %}
