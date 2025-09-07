@@ -5,7 +5,7 @@ git://git.netfilter.org/nftables
 {% endblock %}
 
 {% block version %}
-1.1.4
+1.1.5
 {% endblock %}
 
 {% block pkg_name %}
@@ -17,7 +17,7 @@ v{{self.version().strip()}}
 {% endblock %}
 
 {% block git_sha %}
-e8aa32516cb572dca3d6728afac4ffc89de03538c681d0bf2288f5ba2b85070f
+e682b1ac9a19aa9fef6b37e7518b168a352517c62c425d59961d1c88c749a784
 {% endblock %}
 
 {% block bld_libs %}
