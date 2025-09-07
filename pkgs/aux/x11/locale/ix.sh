@@ -5,12 +5,12 @@ libX11-locale
 {% endblock %}
 
 {% block version %}
-1.8.6
+1.8.12
 {% endblock %}
 
 {% block fetch %}
 https://www.x.org/releases/individual/lib/libX11-{{self.version().strip()}}.tar.xz
-59535b7cc6989ba806a022f7e8533b28c4397b9d86e9d07b6df0c0703fa25cc9
+fa026f9bb0124f4d6c808f9aef4057aad65e7b35d8ff43951cef0abe06bb9a9a
 {% endblock %}
 
 {% block bld_libs %}
