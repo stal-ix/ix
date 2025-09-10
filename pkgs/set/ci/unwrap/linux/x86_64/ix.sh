@@ -323,7 +323,7 @@ bin/knot/resolver
 bin/whois
 bin/esbuild
 bin/redo
-bin/ip/route2
+#bin/ip/route2
 bin/sddm
 bin/ghost/script
 bin/havoc
