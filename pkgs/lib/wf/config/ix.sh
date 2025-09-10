@@ -5,12 +5,12 @@ wf-config
 {% endblock %}
 
 {% block version %}
-0.9.0
+0.10.0
 {% endblock %}
 
 {% block fetch %}
 https://github.com/WayfireWM/wf-config/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-973a47795d3397d281d89c561903867f691c9fe8c3d141ba887afd12902c790d
+4264edf9f5f5ff9bccaee1ab3f5b2613a0db526bc90c15d7c82eb05a3fc81307
 {% endblock %}
 
 {% block lib_deps %}

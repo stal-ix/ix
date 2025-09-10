@@ -5,12 +5,12 @@ sysprof
 {% endblock %}
 
 {% block version %}
-48.0
+48.1
 {% endblock %}
 
 {% block fetch %}
 https://gitlab.gnome.org/GNOME/sysprof/-/archive/{{self.version().strip()}}/sysprof-{{self.version().strip()}}.tar.bz2
-bc6d5774cf6734a94484e6160ed476a86c38030cede6444b874c2767c011dddd
+8f62c1fb9bf1b49cde304d96edb2de3c0cfd254f0731a813b48afdfd543be2e6
 {% endblock %}
 
 {% block bld_libs %}

@@ -23,12 +23,10 @@ lib/json/c
 lib/wayland
 lib/wlroots/19
 lib/gdk/pixbuf
-lib/vulkan/loader/dl
 {% endblock %}
 
 {% block bld_tool %}
 bin/scdoc
-bin/glslang
 bld/wayland
 {% endblock %}
 

@@ -5,12 +5,12 @@ readpe
 {% endblock %}
 
 {% block version %}
-0.85
+0.85.1
 {% endblock %}
 
 {% block fetch %}
 https://github.com/mentebinaria/readpe/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-2747a3ee87c7fb1ed0a13242816752a94603adb6ae0d9f507b019ac582c394eb
+3218099d94c81488a4b042d86f64a4076835e1f2f2aff8ed4d58f01c20567507
 {% endblock %}
 
 {% block bld_libs %}

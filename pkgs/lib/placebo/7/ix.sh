@@ -12,3 +12,13 @@ libplacebo
 https://code.videolan.org/videolan/libplacebo/-/archive/v{{self.version().strip()}}/libplacebo-v{{self.version().strip()}}.tar.bz2
 d68159280842a7f0482dcea44a440f4c9a8e9403b82eccf185e46394dfc77e6a
 {% endblock %}
+
+{% block meson_flags %}
+{{super()}}
+demos=false
+unwind=disabled
+{% if vulkan %}
+vk-proc-addr=disabled
+{% endif %}
+gl-proc-addr=disabled
+{% endblock %}

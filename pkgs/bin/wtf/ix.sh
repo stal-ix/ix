@@ -5,7 +5,7 @@ wtf
 {% endblock %}
 
 {% block version %}
-0.46.0
+0.46.1
 {% endblock %}
 
 {% block go_url %}
@@ -13,7 +13,7 @@ https://github.com/wtfutil/wtf/archive/refs/tags/v{{self.version().strip()}}.tar
 {% endblock %}
 
 {% block go_sha %}
-4ad0313ac6401bf2c687e27300d685261f726cff50d477a53d527d53d31815bc
+c0e7b311a2fe51d847ea8ad7032d1cb5a784513dd8de13b84c68878c749b29c7
 {% endblock %}
 
 {% block go_build_flags %}

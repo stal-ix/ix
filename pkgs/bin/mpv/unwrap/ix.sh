@@ -3,6 +3,8 @@
 {% block bld_libs %}
 lib/lua
 lib/drm
+lib/jpeg
+lib/sixel
 lib/mu/js
 lib/opengl
 lib/kernel
@@ -13,7 +15,9 @@ lib/xkb/common
 lib/drivers/3d
 lib/rubber/band
 lib/display/info
+{% if vulkan %}
 lib/vulkan/headers
+{% endif %}
 {{super()}}
 {% endblock %}
 

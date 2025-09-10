@@ -5,12 +5,12 @@ swappy
 {% endblock %}
 
 {% block version %}
-1.7.1
+1.8.0
 {% endblock %}
 
 {% block fetch %}
 https://github.com/jtheoof/swappy/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-5c0d9b473bf123514e8aa6ccfcb865d61d117ad0a5f7687a18e98f9746ea4d8b
+11f5bedde6cce4db0d27eb7107d7ce46e20d021255450eeba2c2036e10570520
 {% endblock %}
 
 {% block bld_libs %}

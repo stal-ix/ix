@@ -5,12 +5,12 @@ iw
 {% endblock %}
 
 {% block version %}
-6.9
+6.17
 {% endblock %}
 
 {% block fetch %}
 https://www.kernel.org/pub/software/network/iw/iw-{{self.version().strip()}}.tar.xz
-3f2db22ad41c675242b98ae3942dbf3112548c60a42ff739210f2de4e98e4894
+7d182e498289ab39b257da6780d562e415377107f50358ee5b55b8cfe40b1e33
 {% endblock %}
 
 {% block bld_libs %}

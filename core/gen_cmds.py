@@ -14,12 +14,12 @@ class ScriptBuilder:
     def fix(self, rec):
         return cs.replace_sentinel(self.config.ops.fix(self, rec))
 
-    def cmd(self, args):
+    def cmd(self, args, env={}):
         try:
             args['args']
             return args
         except TypeError:
-            return self.build_cmd_script(args, '', {})
+            return self.build_cmd_script(args, '', env)
 
     def cmds(self, cmds):
         return [self.cmd(x) for x in cmds]

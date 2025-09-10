@@ -5,12 +5,12 @@ kbd
 {% endblock %}
 
 {% block version %}
-2.8.0
+2.9.0
 {% endblock %}
 
 {% block fetch %}
 https://mirrors.edge.kernel.org/pub/linux/utils/kbd/kbd-{{self.version().strip()}}.tar.xz
-01f5806da7d1d34f594b7b2a6ae1ab23215344cf1064e8edcd3a90fef9776a11
+fb3197f17a99eb44d22a3a1a71f755f9622dd963e66acfdea1a45120951b02ed
 {% endblock %}
 
 {% block conf_ver %}

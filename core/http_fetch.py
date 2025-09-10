@@ -1,48 +1,34 @@
 import os
+import sys
+import shutil
 import functools
 import subprocess
 
-import urllib.request as ur
+import core.error as ce
 
 
+def call(cmd):
+    print(cmd, file=sys.stderr)
 
-def fetch_url_data(url):
-    return ur.urlopen(url).read()
-
-
-def fetch_url_impl(url, out, tout):
-    print(f'fetch {url} into {out}')
-
-    def iter_chunks():
-        r = ur.urlopen(url, timeout=tout)
-
-        while True:
-            c = r.read(1 * 1024 * 1024)
-
-            if c:
-                yield c
-            else:
-                return
-
-    with open(out, 'wb') as f:
-        cnt = 0
-
-        for c in iter_chunks():
-            cnt += len(c)
-
-            print('\r' + chr(27) + '[0K' + f'got {cnt} bytes', end='')
-
-            f.write(c)
-
-        print('')
+    return subprocess.check_call(cmd, shell=False)
 
 
 def fetch_url_wget(wget, url, out, tout):
-    return subprocess.check_call([wget, '--timeout', str(tout), '-t', '1', '--no-check-certificate', '-O', out, url], shell=False)
+    extra = []
+
+    if 'ghcr.io' in url:
+        extra = ['--header=Authorization: Bearer QQ==']
+
+    return call([wget] + extra + ['--timeout', str(tout), '-t', '1', '--no-check-certificate', '-O', out, url])
 
 
 def fetch_url_curl(curl, url, out, tout):
-    return subprocess.check_call([curl, '--connect-timeout', str(tout), '--retry', '0', '-k', '-L', '--output', out, url], shell=False)
+    extra = []
+
+    if 'ghcr.io' in url:
+        extra = ['-H', 'Authorization: Bearer QQ==']
+
+    return call([curl] + extra + ['--connect-timeout', str(tout), '--retry', '0', '-k', '-L', '--output', out, url])
 
 
 def iter_bin():
@@ -51,14 +37,16 @@ def iter_bin():
 
 
 def iter_meth():
-    for p in ['/bin', '/bin/bin_ix', '/ix/realm/boot/bin', '/usr/bin']:
-        for n, m in iter_bin():
-            pp = os.path.join(p, n)
+    cnt = 0
 
-            if os.path.isfile(pp):
-                yield functools.partial(m, pp)
+    for n, m in iter_bin():
+        if p := shutil.which(n):
+            cnt += 1
 
-    yield fetch_url_impl
+            yield functools.partial(m, p)
+
+    if cnt == 0:
+        raise ce.Error('can not find curl or wget binary')
 
 
 def iter_fetch_url(url):

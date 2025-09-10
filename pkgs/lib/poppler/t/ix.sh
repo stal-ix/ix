@@ -5,12 +5,12 @@ poppler
 {% endblock %}
 
 {% block version %}
-25.08.0
+25.09.1
 {% endblock %}
 
 {% block fetch %}
 https://poppler.freedesktop.org/poppler-{{self.version().strip()}}.tar.xz
-425ed4d4515a093bdcdbbaac6876f20617451edc710df6a4fd6c45dd67eb418d
+0c1091d01d3dd1664a13816861e812d02b29201e96665454b81b52d261fad658
 {% endblock %}
 
 {% block lib_deps %}

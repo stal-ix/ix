@@ -1,5 +1,8 @@
 {% extends '//die/c/autorehell.sh' %}
 
+# check bin/nfs/utils
+# check bin/ip/route2
+
 {% block pkg_name %}
 libtirpc
 {% endblock %}

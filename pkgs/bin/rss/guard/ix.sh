@@ -5,12 +5,12 @@ rssguard
 {% endblock %}
 
 {% block version %}
-4.8.5
+4.8.6
 {% endblock %}
 
 {% block fetch %}
 https://github.com/martinrotter/rssguard/archive/refs/tags/{{self.version().strip()}}.tar.gz
-e3d5cd31d24c92cd4b85eae6e961b19093fb965b6b34bff39dd030089f314598
+c29bdda08ece8de113dbdb87e8e23491221ba9ddbacd26141d6a00e04888972e
 {% endblock %}
 
 {% block bld_libs %}

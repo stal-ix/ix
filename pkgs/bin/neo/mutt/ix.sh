@@ -5,12 +5,12 @@ neomutt
 {% endblock %}
 
 {% block version %}
-20250510
+20250905
 {% endblock %}
 
 {% block fetch %}
 https://github.com/neomutt/neomutt/archive/refs/tags/{{self.version().strip()}}.tar.gz
-12d225e270d8e16cda41d855880b9d938750a4f1d647f55c6353337d32ffd653
+f409fa3803bfc540869b78719400bceda216842e4da024f83ca3060241d9c516
 {% endblock %}
 
 {% block bld_libs %}

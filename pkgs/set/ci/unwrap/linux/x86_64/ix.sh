@@ -51,6 +51,7 @@
 #}
 
 {% block run_deps %}
+bin/dsvpn
 bin/sudo
 bin/wlogout
 lib/compiler_rt/sanitize/address/bin(kind=bin,sanitize=address)
@@ -105,7 +106,7 @@ bin/git/ea
 bin/geesefs
 bin/orbiton
 bin/logalize
-bin/curl/ressl
+#bin/curl/ressl
 bin/pahole
 bin/read/pe
 bin/s3/baker
