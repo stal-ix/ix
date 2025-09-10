@@ -106,7 +106,7 @@ bin/git/ea
 bin/geesefs
 bin/orbiton
 bin/logalize
-bin/curl/ressl
+#bin/curl/ressl
 bin/pahole
 bin/read/pe
 bin/s3/baker
