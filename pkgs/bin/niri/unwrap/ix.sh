@@ -28,8 +28,8 @@ lib/bzip/2
 lib/opengl
 lib/drivers/3d
 lib/wayland/dl
-lib/display/info
 lib/xkb/common/dl
+lib/display/info/old
 lib/wayland/dl/server
 {% endblock %}
 
