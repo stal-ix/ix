@@ -1,3 +1,3 @@
 #!/usr/bin/env sh
 
-exec unshare -f -m -p --mount-proc "${@}"
+exec unshare -U -f -r -m -p pidns_chroot "${@}"
