@@ -26,7 +26,7 @@ bin/swayimg
 bin/tcpdump
 bin/git/lfs
 bin/sing/box
-bin/telegram
+#bin/telegram
 #bin/epiphany
 bin/xdg/open
 bin/tun2socks
