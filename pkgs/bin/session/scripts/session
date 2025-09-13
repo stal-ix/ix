@@ -7,8 +7,7 @@ unset LANG
 unset LOGIN_SCRIPT
 
 export XDG_SESSION_ID=$$
-export IX_SDIR="${TMPDIR}/$(id -u)"
-export TMPDIR="${IX_SDIR}/${XDG_SESSION_ID}"
+export TMPDIR="${TMPDIR}/$(id -u)/${XDG_SESSION_ID}"
 export XDG_DATA_DIRS="/ix/realm/${USER}/share"
 export XDG_RUNTIME_DIR="${TMPDIR}"
 
