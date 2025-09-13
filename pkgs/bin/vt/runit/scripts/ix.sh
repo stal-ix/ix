@@ -14,7 +14,7 @@ mkdir -p \${TMPDIR}
 chmod 01777 \${TMPDIR}
 exec \
 {% if pidns %}
-    pidns \
+    unshare -f -m -p --mount-proc \
 {% else %}
     subreaper \
 {% endif %}

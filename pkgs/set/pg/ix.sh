@@ -9,6 +9,8 @@ fetcher_socks5_proxy=10.0.0.64:8015;10.0.0.72:8015;10.0.0.80:8015
 curses=netbsd
 intl_ver=no
 libc_lite=1
+pidns=1
+enclave=1
 {% endblock %}
 
 {% block run_deps %}
