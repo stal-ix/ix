@@ -29,4 +29,4 @@ umount -l /var/mnt/root
 rmdir /var/mnt/root
 rmdir /var/mnt
 
-exec "${@}"
+exec unshare --map-user ${USER} --map-group ${USER} "${@}"
