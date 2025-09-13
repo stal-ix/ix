@@ -44,12 +44,12 @@ exit 1
     {{ix_dir}}
   {% endif %}
 {% elif stalix %}
-  {% if isfile('/bin/confine') %}
+  {% if isfile('/ix/realm/system/bin/confine') %}
     /ix/realm/system/bin/confine
     {{ix_dir}}
   {% endif %}
   {% if skipsrc or skipsrc_one %}
-  {% elif isfile('/bin/tmpfs') %}
+  {% elif isfile('/ix/realm/system/bin/tmpfs') %}
     /ix/realm/system/bin/tmpfs
     {{ix_dir}}
   {% endif %}

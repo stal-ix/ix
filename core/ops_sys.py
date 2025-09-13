@@ -1,6 +1,7 @@
 import os
 import sys
 import json
+import shutil
 import getpass
 import subprocess
 
@@ -99,22 +100,21 @@ def add_checks(sb, node):
     return node
 
 
-def choice(*args):
-    for x in args:
-        if os.path.isfile(x):
-            return x
+def choice(b):
+    if r := shutil.which(b, path='/ix/realm/system/bin:/bin:/bin/bin_ix'):
+        return r
 
-    raise Exception(f'can not find any of {args}')
+    raise Exception(f'can not find any of {b}')
 
 
 class Ops:
     def __init__(self, cfg):
         self.cfg = cfg
-        self.assemble = choice('/bin/assemble', '/bin/bin_ix/assemble')
-        self.bsdtar = choice('/ix/realm/system/bin/bsdtar', '/bin/bin_ix/bsdtar')
+        self.assemble = choice('assemble')
+        self.bsdtar = choice('bsdtar')
 
         try:
-            self.fetcher = choice('/bin/fetcher')
+            self.fetcher = choice('fetcher')
         except Exception:
             self.fetcher = None
             self.loc = co.Ops(self.cfg)
