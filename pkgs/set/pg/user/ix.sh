@@ -36,7 +36,6 @@ set/pg/user/scripts
 bin/coreutils/uutils
 bin/minio/client/patched
 bin/niri(opengl=mesa/aco,vulkan=mesa/aco)
-etc/user/0(hash=x,user=pg,login_shell=/bin/bash)
 set/enclave
 {% endblock %}
 
