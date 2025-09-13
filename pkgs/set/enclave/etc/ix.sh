@@ -5,7 +5,7 @@ mkdir ${out}/fix
 
 cat << EOF > ${out}/fix/00-symlinks.sh
 cd etc
-for x in ssl passwd group hostname machine-id hosts; do
+for x in ssl passwd group hostname machine-id hosts profile; do
     ln -s /ix/realm/system/etc/\${x} \${x}
 done
 EOF

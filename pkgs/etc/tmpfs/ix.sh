@@ -1,7 +1,7 @@
 {% extends '//die/gen.sh' %}
 
 {% block install %}
-mkdir -p ${out}/etc/env.d ${out}/etc/runit/1.d
+mkdir -p ${out}/etc/profile.d ${out}/etc/runit/1.d
 
 cat << EOF > ${out}/etc/runit/1.d/00-01-immutable.sh
 # prepare tmpfs root
