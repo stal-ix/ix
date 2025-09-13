@@ -1,5 +1,5 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
-bin/session/scripts
+bin/ix/session/scripts
 {% endblock %}

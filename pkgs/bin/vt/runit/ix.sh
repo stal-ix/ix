@@ -3,7 +3,7 @@
 {% block run_deps %}
 bin/fixtty
 bin/runsrv
-bin/session
+bin/ix/session
 {% if pidns %}
 bin/ix/pidns
 {% endif %}
