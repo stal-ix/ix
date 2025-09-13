@@ -9,9 +9,9 @@ base64 -d << EOF > fix/00-run1.sh
 {% include 'run1.sh/base64' %}
 EOF
 
-mkdir -p etc/env.d
+mkdir -p etc/profile.d
 
-cat << EOF > etc/env.d/00-env.sh
+cat << EOF > etc/profile.d/00-env.sh
 EOF
 
 mkdir -p etc/sysctl.d
