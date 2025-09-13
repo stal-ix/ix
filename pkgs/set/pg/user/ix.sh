@@ -30,6 +30,7 @@ bin/xdg/open
 bin/tun2socks
 bin/alacritty
 bin/fontconfig
+bin/python/frozen
 bin/brightnessctl
 set/pg/user/scripts
 bin/coreutils/uutils

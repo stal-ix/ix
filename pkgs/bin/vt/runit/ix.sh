@@ -4,7 +4,9 @@
 bin/fixtty
 bin/runsrv
 bin/session
+{% if pidns %}
 bin/ix/pidns
+{% endif %}
 bin/subreaper
 bin/vt/runit/scripts(slot={{vt_slot}})
 {% endblock %}
