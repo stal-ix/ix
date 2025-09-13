@@ -2,8 +2,8 @@
 
 {% block install %}
 mkdir ${out}/bin
-base64 -d << EOF > ${out}/bin/pidns
-{% include 'pidns.sh/base64' %}
+base64 -d << EOF > ${out}/bin/enclave
+{% include 'enclave.sh/base64' %}
 EOF
 chmod +x ${out}/bin/*
 {% endblock %}
