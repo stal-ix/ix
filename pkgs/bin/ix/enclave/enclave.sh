@@ -11,7 +11,7 @@ mount ${TMPDIR} var/tmp
 ln -s / usr
 pivot_root /sys /sys/var/mnt/root
 cd /
-mkdir -p dev sys proc var/run var/log
+mkdir -p dev sys proc var/run
 export TMPDIR=/var/tmp
 /var/mnt/root/bin/mount -t proc proc proc
 /var/mnt/root/bin/mount --rbind /var/mnt/root/dev /dev
