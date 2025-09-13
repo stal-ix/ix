@@ -34,6 +34,7 @@ bin/python/frozen
 bin/brightnessctl
 set/pg/user/scripts
 bin/coreutils/uutils
+bin/telegram/desktop
 bin/minio/client/patched
 bin/niri(opengl=mesa/aco,vulkan=mesa/aco)
 set/enclave
