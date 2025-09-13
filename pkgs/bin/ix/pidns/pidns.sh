@@ -1,3 +1,3 @@
 #!/usr/bin/env sh
 
-exec unshare -U -f -r -m -p "${@}"
+exec unshare -f -m -p --mount-proc "${@}"
