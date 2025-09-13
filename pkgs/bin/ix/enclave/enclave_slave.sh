@@ -5,6 +5,7 @@ mount -t tmpfs tmpfs /sys
 cd /sys
 
 mkdir -p var/mnt/root tmp ix home/${USER}
+ln -s ${USER} home/root
 ln -s ix/realm/${USER}/bin bin
 ln -s ix/realm/${USER}/etc etc
 mount /ix ix
