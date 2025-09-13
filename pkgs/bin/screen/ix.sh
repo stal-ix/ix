@@ -26,9 +26,9 @@ lib/curses
 2/71
 {% endblock %}
 
-{% block setup_target_flags %}
+{% block c_flags %}
 {# no select - no screen! #}
-export CFLAGS="-Wno-implicit-function-declaration ${CFLAGS}"
+-Wno-implicit-function-declaration
 {% endblock %}
 
 {% block bld_tool %}

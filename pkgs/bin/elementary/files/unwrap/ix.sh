@@ -56,8 +56,8 @@ lib/granite/{{gtk_ver}}/gir
 lib/portal/gir(gtk_ver={{gtk_ver}})
 {% endblock %}
 
-{% block setup_target_flags %}
-export CFLAGS="-Wno-implicit-function-declaration ${CFLAGS}"
+{% block c_flags %}
+-Wno-implicit-function-declaration
 {% endblock %}
 
 {% block postinstall %}

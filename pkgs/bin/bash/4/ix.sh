@@ -15,7 +15,7 @@ https://ftp.gnu.org/gnu/bash/bash-{{self.version().strip()}}.tar.gz
 
 {#parse.y:5741:21: error: call to undeclared function 'count_all_jobs'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]#}
 
-{% block setup_target_flags %}
-export CFLAGS="-Wno-implicit-function-declaration ${CFLAGS}"
+{% block c_flags %}
+-Wno-implicit-function-declaration
 {{super()}}
 {% endblock %}

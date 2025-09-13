@@ -34,6 +34,6 @@ find . -type f | while read l; do
 done
 {% endblock %}
 
-{% block setup_target_flags %}
-export CFLAGS="-Wno-implicit-function-declaration ${CFLAGS}"
+{% block c_flags %}
+-Wno-implicit-function-declaration
 {% endblock %}

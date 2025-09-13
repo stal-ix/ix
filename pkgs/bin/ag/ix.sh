@@ -20,6 +20,6 @@ lib/xz
 lib/pcre
 {% endblock %}
 
-{% block setup_target_flags %}
-export CFLAGS="-fcommon ${CFLAGS}"
+{% block c_flags %}
+-fcommon
 {% endblock %}

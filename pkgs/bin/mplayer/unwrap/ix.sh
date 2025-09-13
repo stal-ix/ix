@@ -51,6 +51,6 @@ bin/yasm
 shut_up
 {% endblock %}
 
-{% block setup_target_flags %}
-export CFLAGS="-Wno-incompatible-function-pointer-types ${CFLAGS}"
+{% block c_flags %}
+-Wno-incompatible-function-pointer-types
 {% endblock %}
