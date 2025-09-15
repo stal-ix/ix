@@ -16,9 +16,11 @@ bin/htop
 bin/bash
 bin/less
 set/debug
+bin/psmisc
 bin/fuzzel
 bin/waybar
 bin/evince
+set/box/gnu
 bin/openssl
 bin/sway/bg
 bin/iwd/ctl
