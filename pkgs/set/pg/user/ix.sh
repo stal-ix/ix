@@ -20,7 +20,6 @@ bin/psmisc
 bin/fuzzel
 bin/waybar
 bin/evince
-set/box/gnu
 bin/openssl
 bin/sway/bg
 bin/iwd/ctl
@@ -32,6 +31,7 @@ bin/xdg/open
 bin/tun2socks
 bin/alacritty
 bin/fontconfig
+set/box/gnu/tools
 bin/python/frozen
 bin/brightnessctl
 set/pg/user/scripts

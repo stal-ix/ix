@@ -1,12 +1,6 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
-bin/sed
-bin/grep
-bin/file
-bin/gawk
-bin/patch
-bin/diffutils
-bin/findutils
+set/box/gnu/tools
 bin/coreutils
 {% endblock %}
