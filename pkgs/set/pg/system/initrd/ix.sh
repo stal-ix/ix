@@ -14,8 +14,7 @@ btrfs device scan
 mount /dev/nvme0n1p2 /tmp
 cd /tmp
 mount --move . /
-chroot . /bin/init
-exec /bin/sh
+exec chroot . /bin/init
 EOF
 chmod +x ${out}/bin/initrd
 {% endblock %}
