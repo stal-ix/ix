@@ -10,6 +10,7 @@ set/stalix
 set/pg/secrets
 bin/kernel/6/16
 bin/ix/keyboard
+bin/btrfs/progs
 set/pg/system/hosts
 set/pg/system/nebula
 set/pg/system/initrd

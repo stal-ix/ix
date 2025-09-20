@@ -4,8 +4,17 @@
 mkdir -p ${out}/bin
 cat << EOF > ${out}/bin/initrd
 #!/bin/sh
+set -ue
 export PATH=/bin
-echo XXXXXXXXXXXX
+mkdir -p /dev /sys /proc /tmp
+mount -t devtmpfs devtmpfs /dev
+mount -t proc proc /proc
+mount -t sysfs sysfs /sys
+btrfs device scan
+mount /dev/nvme0n1p2 /tmp
+cd /tmp
+mount --move . /
+chroot . /bin/init
 exec /bin/sh
 EOF
 chmod +x ${out}/bin/initrd
