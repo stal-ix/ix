@@ -5,6 +5,7 @@ test -f bin/initrd
 mkdir -p tmp/bin
 copybin bin tmp/bin
 cd tmp
+chmod +x bin/*
 cp bin/initrd init
 ln -s . usr
 ln -s bin sbin
