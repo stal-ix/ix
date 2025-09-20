@@ -24,8 +24,12 @@ mkdir -p dev sys proc var/run
 mount --rbind /var/mnt/root/dev /dev
 mount --rbind /var/mnt/root/sys /sys
 mount --rbind /var/mnt/root/proc /proc
-mkdir -p /var/run/seatd
-mount --rbind /var/mnt/root/var/run/seatd /var/run/seatd
+
+for d in dbus seatd sndiod; do
+    mkdir -p /var/run/${d}
+    mount --rbind /var/mnt/root/var/run/${d} /var/run/${d}
+done
+
 umount -l /var/mnt/root
 rmdir /var/mnt/root
 rmdir /var/mnt
