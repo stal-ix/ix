@@ -12,6 +12,7 @@ bin/kernel/6/16
 bin/ix/keyboard
 set/pg/system/hosts
 set/pg/system/nebula
+set/pg/system/initrd
 bin/dropbear/runit(dropbear_flags=-p 192.168.100.64:22)
 etc/user/0(hash={{pg_hash}},user=pg,pubkey={{self.pg_pubkey().strip()}},login_shell=/ix/realm/pg/bin/bash)
 {% endblock %}
