@@ -11,6 +11,7 @@ intl_ver=no
 libc_lite=1
 pidns=1
 enclave=1
+initrd=1
 {% endblock %}
 
 {% block run_deps %}
