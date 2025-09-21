@@ -5,7 +5,7 @@ duf
 {% endblock %}
 
 {% block version %}
-0.8.1
+0.9.1
 {% endblock %}
 
 {% block go_url %}
@@ -13,9 +13,13 @@ https://github.com/muesli/duf/archive/refs/tags/v{{self.version().strip()}}.tar.
 {% endblock %}
 
 {% block go_sha %}
-87e574a7c998142ee1e9b1b57062edfba4fe0ee1308def9d386b71e6abc5c119
+0e5abe616e361bd84358f0b3af0040bfd185deb17f34eeac6e358b5b4673e72b
 {% endblock %}
 
 {% block go_bins %}
 duf
+{% endblock %}
+
+{% block go_tool %}
+bin/go/lang/24
 {% endblock %}
