@@ -5,12 +5,12 @@ gsettings-desktop-schemas
 {% endblock %}
 
 {% block version %}
-48.0
+49.0
 {% endblock %}
 
 {% block fetch %}
 https://github.com/GNOME/gsettings-desktop-schemas/archive/refs/tags/{{self.version().strip()}}.tar.gz
-0819caff9e179d3e144acc38fa694e468fec1742be8be28c88126aa3a69aef2d
+eba76a4965f3be005b7c413b71bc8933e04c5a81dd37c936416281dd44bcff30
 {% endblock %}
 
 {% block bld_tool %}
