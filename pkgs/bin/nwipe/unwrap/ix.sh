@@ -5,12 +5,12 @@ nwipe
 {% endblock %}
 
 {% block version %}
-0.38
+0.39
 {% endblock %}
 
 {% block fetch %}
 https://github.com/martijnvanbrummelen/nwipe/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-0c1b19d1a721b995504fc01c21363555f207b25d6749650355a8cd7be09824dd
+1038386b0c745ce418a43bf09ecf3a4ff17072961f4a3be0e940dfa45b10e9e4
 {% endblock %}
 
 {% block conf_ver %}
