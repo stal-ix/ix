@@ -5,12 +5,12 @@ libproxy
 {% endblock %}
 
 {% block version %}
-0.5.10
+0.5.11
 {% endblock %}
 
 {% block fetch %}
 https://github.com/libproxy/libproxy/archive/refs/tags/{{self.version().strip()}}.tar.gz
-84734a0b89c95f4834fd55c26b362be2fb846445383e37f5209691694ad2b5de
+b364f4dbbffc5bdf196330cb76b48abcb489f38b1543e67595ca6cb7ec45d265
 {% endblock %}
 
 {% block lib_deps %}
