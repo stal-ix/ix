@@ -5,12 +5,12 @@ lvm2
 {% endblock %}
 
 {% block version %}
-2.03.34
+2.03.35
 {% endblock %}
 
 {% block fetch %}
 https://gitlab.com/lvmteam/lvm2/-/archive/v{{self.version().strip().replace('.', '_')}}/lvm2-v{{self.version().strip().replace('.', '_')}}.tar.bz2
-c952e6365c9181a19cacbb46b3b4b0717832945065e34f6f4efc86e197ade373
+f63565f7138827a6760b55e8467a856765231c27d439bffa50370566ace2c8c2
 {% endblock %}
 
 {% block lib_deps %}
