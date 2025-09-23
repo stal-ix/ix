@@ -5,12 +5,12 @@ earlyoom
 {% endblock %}
 
 {% block version %}
-1.8.2
+1.9.0
 {% endblock %}
 
 {% block fetch %}
 https://github.com/rfjakob/earlyoom/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-13869413dc0d973e454854077be7a2049d350f77a97f6911b654e88dc4b20346
+b2fe5e1e071a5a000b22fb9602c068fd69d09c057f0ba972dfc5d85daf464b2a
 {% endblock %}
 
 {% block bld_libs %}

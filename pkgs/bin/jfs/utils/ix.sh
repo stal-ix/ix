@@ -23,8 +23,8 @@ lib/shim/gnu/basename/overlay
 _PATH_MNTTAB=\\\"/proc/mounts\\\"
 {% endblock %}
 
-{% block setup_target_flags %}
-export CFLAGS="-fcommon ${CFLAGS}"
+{% block c_flags %}
+-fcommon
 {% endblock %}
 
 {% block cpp_missing %}

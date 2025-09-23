@@ -5,7 +5,7 @@ forgejo
 {% endblock %}
 
 {% block version %}
-12.0.3
+12.0.4
 {% endblock %}
 
 {% block go_url %}
@@ -13,7 +13,7 @@ https://codeberg.org/forgejo/forgejo/archive/v{{self.version().strip()}}.tar.gz
 {% endblock %}
 
 {% block go_sha %}
-b1deff9ef69e82f992940a0fee698360baf6cd49f2aac5891393cbc0d61ecc88
+45e9724c431a9a1ab7b19d78c9f47fd8351e56dacc89bab3824681e167aa673e
 {% endblock %}
 
 {% block go_tool %}

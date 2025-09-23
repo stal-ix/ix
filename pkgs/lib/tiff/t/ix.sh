@@ -1,5 +1,7 @@
 {% extends '//die/c/cmake.sh' %}
 
+# check lib/qt/6/imageformats
+
 {% block pkg_name %}
 libtiff
 {% endblock %}

@@ -30,6 +30,7 @@ lib/freetype
 lib/harfbuzz
 lib/wayland/dl
 lib/drivers/3d
+lib/display/info
 lib/xkb/common/dl
 {% endblock %}
 

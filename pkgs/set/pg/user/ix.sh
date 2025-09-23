@@ -16,6 +16,7 @@ bin/htop
 bin/bash
 bin/less
 set/debug
+bin/psmisc
 bin/fuzzel
 bin/waybar
 bin/evince
@@ -26,17 +27,19 @@ bin/swayimg
 bin/tcpdump
 bin/git/lfs
 bin/sing/box
-bin/telegram
-#bin/epiphany
 bin/xdg/open
 bin/tun2socks
 bin/alacritty
 bin/fontconfig
+set/box/gnu/tools
+bin/python/frozen
 bin/brightnessctl
 set/pg/user/scripts
 bin/coreutils/uutils
+bin/telegram/desktop
 bin/minio/client/patched
 bin/niri(opengl=mesa/aco,vulkan=mesa/aco)
+set/enclave
 {% endblock %}
 
 {% block run_data %}

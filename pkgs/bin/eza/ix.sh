@@ -5,7 +5,7 @@ eza
 {% endblock %}
 
 {% block version %}
-0.23.2
+0.23.3
 {% endblock %}
 
 {% block cargo_url %}
@@ -13,7 +13,7 @@ https://github.com/eza-community/eza/archive/refs/tags/v{{self.version().strip()
 {% endblock %}
 
 {% block cargo_sha %}
-4437ba8abc9f2b50b4634e1eb7a6561745174aa7dcdaebfc31262c3aed1c25c4
+91405d8bca0c118d12463953e8f8bd4ab6e23f78f69cb4a98cab8101d7fd4666
 {% endblock %}
 
 {% block bld_libs %}

@@ -5,12 +5,12 @@ gnome-font-viewer
 {% endblock %}
 
 {% block version %}
-48.0
+49.0
 {% endblock %}
 
 {% block fetch %}
 https://gitlab.gnome.org/GNOME/gnome-font-viewer/-/archive/{{self.version().strip()}}/gnome-font-viewer-{{self.version().strip()}}.tar.bz2
-7c713efe47d00d974b7da5b82173c24425745b661fa0947b7dbf24b913158da8
+cb44e1401180ce3851fbb3282e1b0113c243e15b5b9ff6263fe7c81dbc8bb82c
 {% endblock %}
 
 {% block bld_libs %}

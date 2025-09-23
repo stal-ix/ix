@@ -1,0 +1,10 @@
+#!/bin/sh -l
+
+reset
+clear
+
+unset LANG
+unset LOGIN_SCRIPT
+
+# will run /bin/init from user's realm
+exec enclave init

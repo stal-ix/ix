@@ -5,12 +5,12 @@ cJSON
 {% endblock %}
 
 {% block version %}
-1.7.18
+1.7.19
 {% endblock %}
 
 {% block fetch %}
 https://github.com/DaveGamble/cJSON/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-3aa806844a03442c00769b83e99970be70fbef03735ff898f4811dd03b9f5ee5
+7fa616e3046edfa7a28a32d5f9eacfd23f92900fe1f8ccd988c1662f30454562
 {% endblock %}
 
 {% block lib_deps %}

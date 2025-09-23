@@ -51,6 +51,7 @@ make list | tr ' ' '\n' | grep -v '^$' | sort | uniq | grep -v coreutils | while
     ln -s coreutils ${out}/bin/${l}
 done
 rm ${out}/bin/uptime
+rm ${out}/bin/env
 {% endblock %}
 
 {% block cargo_tool %}

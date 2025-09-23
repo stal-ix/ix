@@ -5,7 +5,7 @@ niri
 {% endblock %}
 
 {% block version %}
-25.05.1
+25.08
 {% endblock %}
 
 {% block cargo_url %}
@@ -13,7 +13,7 @@ https://github.com/YaLTeR/niri/archive/refs/tags/v{{self.version().strip()}}.tar
 {% endblock %}
 
 {% block cargo_sha %}
-2f925f9c8ed713ba2f7bbfc740ba623225f57b6457fd6e78b0e6e988b8740659
+811391bf6524e42d2a59e769e9227a2ec4631f0477cbe81a5d35d6860fb93e9b
 {% endblock %}
 
 {% block lib_deps %}
@@ -28,8 +28,8 @@ lib/bzip/2
 lib/opengl
 lib/drivers/3d
 lib/wayland/dl
-lib/display/info
 lib/xkb/common/dl
+lib/display/info/old
 lib/wayland/dl/server
 {% endblock %}
 

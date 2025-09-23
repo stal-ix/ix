@@ -1,7 +1,7 @@
 {% extends '//die/inline/library.sh' %}
 
-{% block setup_target_flags %}
-export CFLAGS="-fno-builtin ${CFLAGS}"
+{% block c_flags %}
+-fno-builtin
 {% endblock %}
 
 {% block sources %}

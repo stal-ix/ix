@@ -5,12 +5,12 @@ openssl
 {% endblock %}
 
 {% block version %}
-3.5.2
+3.5.3
 {% endblock %}
 
 {% block fetch %}
 https://github.com/openssl/openssl/archive/refs/tags/openssl-{{self.version().strip()}}.tar.gz
-ab2c26cc1ffead456bafdb920c90216a727a060d727b305e44f1e4f6dbf4c6cb
+073f7c905a676586c334e6ae420c7ac4f4082ccb2104e8a369308d10b35ba973
 {% endblock %}
 
 {% block env %}

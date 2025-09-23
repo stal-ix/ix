@@ -5,12 +5,12 @@ openjpeg
 {% endblock %}
 
 {% block version %}
-2.5.3
+2.5.4
 {% endblock %}
 
 {% block fetch %}
 https://github.com/uclouvain/openjpeg/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-368fe0468228e767433c9ebdea82ad9d801a3ad1e4234421f352c8b06e7aa707
+a695fbe19c0165f295a8531b1e4e855cd94d0875d2f88ec4b61080677e27188a
 {% endblock %}
 
 {% block lib_deps %}

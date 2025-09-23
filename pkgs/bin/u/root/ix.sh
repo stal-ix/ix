@@ -5,7 +5,7 @@ u-root
 {% endblock %}
 
 {% block version %}
-0.14.0
+0.15.0
 {% endblock %}
 
 {% block go_url %}
@@ -13,7 +13,7 @@ https://github.com/u-root/u-root/archive/refs/tags/v{{self.version().strip()}}.t
 {% endblock %}
 
 {% block go_sha %}
-d09be6f411cc9d1d58c284fa98d025dcf30f5f03da7ce4b01cf32393e9efb3c9
+6c1c7e0a876e99dc4e95b00dd321395d50a1cfbc8eb77524ee1094b1e423b69f
 {% endblock %}
 
 {% block go_bins %}
@@ -21,5 +21,5 @@ u-root
 {% endblock %}
 
 {% block go_tool %}
-bin/go/lang/23
+bin/go/lang/24
 {% endblock %}

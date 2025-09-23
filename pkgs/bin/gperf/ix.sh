@@ -18,6 +18,6 @@ lib/c
 lib/c++
 {% endblock %}
 
-{% block setup_target_flags %}
-export CFLAGS="-Wno-register ${CFLAGS}"
+{% block c_flags %}
+-Wno-register
 {% endblock %}

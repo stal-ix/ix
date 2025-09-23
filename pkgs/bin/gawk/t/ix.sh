@@ -38,6 +38,7 @@ xrealloc
 
 {% block install %}
 {{super()}}
+rm -rf ${out}/etc
 rm ${out}/bin/gawk-*
 {% endblock %}
 

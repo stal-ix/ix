@@ -5,12 +5,12 @@ ccache
 {% endblock %}
 
 {% block version %}
-4.11.3
+4.12
 {% endblock %}
 
 {% block fetch %}
 https://github.com/ccache/ccache/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-6502d63fbb236ed6bbc5c3405fddef57458cb74acd2141577250a8faa56c7d90
+07f97141e9ced495f524f69e4e824f185c8698b60a3fc2ed7ee010da4500d45b
 {% endblock %}
 
 {% block bld_libs %}

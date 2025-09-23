@@ -1,6 +1,8 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
+bin/kernel
+
 bin/irq/balance/ix/runit
 
 {% if not server %}

@@ -1,13 +1,13 @@
 {% extends '//die/gen.sh' %}
 
 {% block install %}
-mkdir -p ${out}/etc/env.d
+mkdir -p ${out}/etc/profile.d
 
-cat << EOF > ${out}/etc/env.d/ix_root.sh
+cat << EOF > ${out}/etc/profile.d/ix_root.sh
 export IX_ROOT=/ix
 EOF
 
-cat << EOF > ${out}/etc/env.d/ix_exec_kind.sh
+cat << EOF > ${out}/etc/profile.d/ix_exec_kind.sh
 export IX_EXEC_KIND=system
 EOF
 {% endblock %}

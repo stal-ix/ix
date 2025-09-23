@@ -12,7 +12,13 @@ fixtty /dev/tty{{slot}}
 rm -rf \${TMPDIR}
 mkdir -p \${TMPDIR}
 chmod 01777 \${TMPDIR}
-exec subreaper setsid openvt -c {{slot}} -f -e -- /bin/sh -c 'reset; clear; exec login -p'
+exec \
+{% if pidns %}
+    unshare -f -m -p --mount-proc \
+{% else %}
+    subreaper \
+{% endif %}
+    setsid openvt -c {{slot}} -f -e -- /bin/sh -c 'reset; clear; exec login -p'
 EOF
 
 cat << EOF > run

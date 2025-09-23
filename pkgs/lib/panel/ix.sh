@@ -5,12 +5,12 @@ libpanel
 {% endblock %}
 
 {% block version %}
-1.10.1
+1.10.2
 {% endblock %}
 
 {% block fetch %}
 https://gitlab.gnome.org/GNOME/libpanel/-/archive/{{self.version().strip()}}/libpanel-{{self.version().strip()}}.tar.bz2
-edeef046efc8643a29305f5dac6daec37d6a5091351bec4a2a2903ce70ed4d73
+cbc69348edc3385d36c9af2770c12f6214f6700b52957aa1e1665aee9662233d
 {% endblock %}
 
 {% block bld_libs %}

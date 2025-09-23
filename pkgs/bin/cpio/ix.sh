@@ -28,13 +28,13 @@ bld/bison
 bld/gettext
 {% endblock %}
 
-{% block setup_target_flags %}
-export ac_cv_rettype_minor=int
-export ac_cv_rettype_major=int
-export CFLAGS="-fcommon ${CFLAGS}"
+{% block c_flags %}
+-fcommon
 {% endblock %}
 
 {% block configure %}
+export ac_cv_rettype_minor=int
+export ac_cv_rettype_major=int
 {{super()}}
 sed -e 's|\[\[__maybe_unused__\]\]||' -i config.h
 {% endblock %}

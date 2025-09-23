@@ -5,12 +5,12 @@ libobjc2
 {% endblock %}
 
 {% block version %}
-2.2.1
+2.3
 {% endblock %}
 
 {% block fetch %}
 https://github.com/gnustep/libobjc2/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-768ea8c5bd0999a29b5d15781125494f986456c1dc5c51d370fb31852cd31ea1
+5ead2276b42a534ac40437ce53b2231320b985539dc325453d93874be8d92869
 {% endblock %}
 
 {% block cmake_flags %}

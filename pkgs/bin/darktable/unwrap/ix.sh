@@ -63,8 +63,8 @@ bld/xml/lint
 shut_up
 {% endblock %}
 
-{% block setup_target_flags %}
-export CFLAGS="-Wno-register ${CFLAGS}"
+{% block c_flags %}
+-Wno-register
 {% endblock %}
 
 {% block cpp_defines %}

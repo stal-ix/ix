@@ -5,12 +5,12 @@ c-dvar
 {% endblock %}
 
 {% block version %}
-1.1.0
+1.2.0
 {% endblock %}
 
 {% block fetch %}
 https://github.com/c-util/c-dvar/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-fa4b697532b6c56929106747eabd8cde792a280aa18883b2507037905e7547df
+e4b0661e29611eccccbca122f91e9c0cb161e8c44382f80a77f1b95a0007c264
 {% endblock %}
 
 {% block lib_deps %}

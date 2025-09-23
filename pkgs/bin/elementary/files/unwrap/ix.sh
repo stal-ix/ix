@@ -5,12 +5,12 @@ files
 {% endblock %}
 
 {% block version %}
-7.1.4
+7.1.5
 {% endblock %}
 
 {% block fetch %}
 https://github.com/elementary/files/archive/refs/tags/{{self.version().strip()}}.tar.gz
-9b4bc1fa9e721cdd5b67fefdabc1b16fb89bd71181b4c8e90f52abb8b8f924eb
+7ecd25c33d21a5748c462298cad8be9307c6f44764edcfb2f84a9db982f56bc4
 {% endblock %}
 
 {% block bld_libs %}
@@ -56,8 +56,8 @@ lib/granite/{{gtk_ver}}/gir
 lib/portal/gir(gtk_ver={{gtk_ver}})
 {% endblock %}
 
-{% block setup_target_flags %}
-export CFLAGS="-Wno-implicit-function-declaration ${CFLAGS}"
+{% block c_flags %}
+-Wno-implicit-function-declaration
 {% endblock %}
 
 {% block postinstall %}

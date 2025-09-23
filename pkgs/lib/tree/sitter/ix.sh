@@ -1,5 +1,7 @@
 {% extends '//die/c/make.sh' %}
 
+# check bin/neo/vim
+
 {% block pkg_name %}
 tree-sitter
 {% endblock %}

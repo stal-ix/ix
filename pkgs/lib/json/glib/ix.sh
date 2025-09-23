@@ -5,12 +5,12 @@ json-glib
 {% endblock %}
 
 {% block version %}
-1.10.6
+1.10.8
 {% endblock %}
 
 {% block fetch %}
 https://github.com/GNOME/json-glib/archive/refs/tags/{{self.version().strip()}}.tar.gz
-d23cbd4094a32cc05cf22cd87a83da1f799e182e286133b49fde3c9241a32006
+7a114bdac0b2611a7207e981c37fa9b1e70d9cb642470cd9e967b135428cec52
 {% endblock %}
 
 {% block lib_deps %}

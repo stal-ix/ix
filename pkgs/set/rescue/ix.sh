@@ -5,8 +5,8 @@ set/fs
 bld/all
 set/boot
 set/debug
+bin/kernel
 set/install
 set/boot/efi
-bin/kernel/gengrub
 set/stalix(failsafe=1,seed=1,hostname=rescue)
 {% endblock %}

@@ -5,12 +5,12 @@ inih
 {% endblock %}
 
 {% block version %}
-61
+62
 {% endblock %}
 
 {% block fetch %}
 https://github.com/benhoyt/inih/archive/refs/tags/r{{self.version().strip()}}.tar.gz
-7caf26a2202a4ca689df3fe4175dfa74e0faa18fcca07331bba934fd0ecb8f12
+9c15fa751bb8093d042dae1b9f125eb45198c32c6704cd5481ccde460d4f8151
 {% endblock %}
 
 {% block lib_deps %}

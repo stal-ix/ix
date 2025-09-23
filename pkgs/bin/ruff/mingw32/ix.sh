@@ -11,8 +11,8 @@ lib/shim/fake(lib_name=windows.0.52.0)
 lib/shim/fake(lib_name=windows.0.48.5)
 {% endblock %}
 
-{% block setup_target_flags %}
-export CFLAGS="-fno-builtin ${CFLAGS}"
+{% block c_flags %}
+-fno-builtin
 {% endblock %}
 
 {% block sources %}
