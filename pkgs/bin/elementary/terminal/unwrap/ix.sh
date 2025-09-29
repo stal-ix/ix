@@ -5,12 +5,12 @@ terminal
 {% endblock %}
 
 {% block version %}
-7.1.1
+7.1.2
 {% endblock %}
 
 {% block fetch %}
 https://github.com/elementary/terminal/archive/refs/tags/{{self.version().strip()}}.tar.gz
-9fc85f51ea142ebea8b1a589b4719d4cc5704a97f8502fcbe9b65c21868536bb
+486d8e6c49e786aab61d9e6c70f5f06bfb7fa2ec6502aa540f94ee2998e13e8b
 {% endblock %}
 
 {% block bld_libs %}
