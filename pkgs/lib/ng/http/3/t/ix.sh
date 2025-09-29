@@ -5,12 +5,12 @@ nghttp3
 {% endblock %}
 
 {% block version %}
-1.11.0
+1.12.0
 {% endblock %}
 
 {% block fetch %}
 https://github.com/ngtcp2/nghttp3/releases/download/v{{self.version().strip()}}/nghttp3-{{self.version().strip()}}.tar.xz
-27d084518f06d78279b050cc9cdff2418f80fb753da019427ce853cec920f33f
+6ca1e523b7edd75c02502f2bcf961125c25577e29405479016589c5da48fc43d
 {% endblock %}
 
 {% block lib_deps %}
