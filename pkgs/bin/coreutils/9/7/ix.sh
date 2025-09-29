@@ -5,10 +5,10 @@ coreutils
 {% endblock %}
 
 {% block version %}
-9.7
+9.8
 {% endblock %}
 
 {% block fetch %}
 https://ftp.gnu.org/gnu/coreutils/coreutils-{{self.version().strip()}}.tar.gz
-0898a90191c828e337d5e4e4feb71f8ebb75aacac32c434daf5424cda16acb42
+1be88d53f694671cf7fb85e7723dbd1de9131d031880161b452a0685b986296e
 {% endblock %}
