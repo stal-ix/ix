@@ -554,7 +554,6 @@
 {"bin": "e2undo", "ix_pkg_name": "bin/e2fsprogs"}
 {"bin": "e4crypt", "ix_pkg_name": "bin/e2fsprogs"}
 {"bin": "e4defrag", "ix_pkg_name": "bin/e2fsprogs"}
-{"bin": "earlyoom", "ix_pkg_name": "bin/earlyoom"}
 {"bin": "ebrowse", "ix_pkg_name": "bin/emacs/gtk"}
 {"bin": "ebtables", "ix_pkg_name": "bin/ip/tables"}
 {"bin": "ebtables-nft", "ix_pkg_name": "bin/ip/tables"}
