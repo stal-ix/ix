@@ -10,7 +10,7 @@ ls bin/kernel-* | sort -r | while read l; do
     cat << EOF >> etc/grub.cfg
 menuentry "${l}" {
     linux /${l} __flags__
-    initrd /bin/initrd.gz
+    initrd /bin/initrd.zstd
     boot
 }
 EOF
