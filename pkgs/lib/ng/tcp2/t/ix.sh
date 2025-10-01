@@ -34,6 +34,12 @@ ENABLE_SHARED_LIB=ON
 >third-party/CMakeLists.txt
 {% endblock %}
 
+{% block bld_tool %}
+{% if darwin %}
+bld/fake(tool_name=install_name_tool)
+{% endif %}
+{% endblock %}
+
 {% block env %}
 export COFLAGS="--with-ngtcp2=${out} \${COFLAGS}"
 {% endblock %}
