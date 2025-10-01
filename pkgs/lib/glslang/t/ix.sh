@@ -1,7 +1,5 @@
 {% extends '//die/c/cmake.sh' %}
 
-# check lib/amd/vlk
-
 {% block pkg_name %}
 glslang
 {% endblock %}

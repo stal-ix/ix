@@ -6,10 +6,10 @@
 bin/dxsc
 bld/perl
 pip/jinja2
-bin/glslang
 bld/wayland
 bld/pzd/des
 pip/markupsafe
+bin/glslang/old
 pip/ruamel.yaml
 bld/fake/binutils
 {% endblock %}
