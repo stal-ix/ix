@@ -5943,6 +5943,7 @@ https://the.earth.li/~sgtatham/putty/0.76/putty-0.76.tar.gz
 https://thekelleys.org.uk/dnsmasq/dnsmasq-2.89.tar.xz
 https://thekelleys.org.uk/dnsmasq/dnsmasq-2.90.tar.xz
 https://thekelleys.org.uk/dnsmasq/dnsmasq-2.91.tar.xz
+https://tinc-vpn.org/packages/tinc-1.0.36.tar.gz
 https://tukaani.org/xz/xz-5.4.4.tar.xz
 https://tukaani.org/xz/xz-5.4.5.tar.xz
 https://w1.fi/releases/wpa_supplicant-2.10.tar.gz
