@@ -142,6 +142,9 @@ prepend Telegram/lib_webview/webview/webview_data_stream_memory.cpp << EOF
 #include <unistd.h>
 EOF
 
+sed -e 's|Gio::DesktopAppInfo::new_.*|nullptr;|' -i \
+    Telegram/lib_base/base/platform/linux/base_url_scheme_linux.cpp
+
 cd Telegram/ThirdParty/jemalloc
 
 find . -type f -name '*.c' | while read l; do
