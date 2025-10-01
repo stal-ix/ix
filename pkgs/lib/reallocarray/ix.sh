@@ -1,4 +1,4 @@
-{% extends '//die/inline/library.sh' %}
+{% extends '//die/hub.sh' %}
 
 {% block lib_deps %}
 lib/c/naked
