@@ -72,6 +72,7 @@ bin/dropbear/2022
 bin/cmake/4
 bin/auto/make/1/17
 bin/coreutils/9/7
+bin/coreutils/9/8
 bin/unshield
 bin/kernel/6/14
 bin/ip/tables
