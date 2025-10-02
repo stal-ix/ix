@@ -5,12 +5,12 @@ SPIRV-LLVM-Translator
 {% endblock %}
 
 {% block version %}
-20.1.3
+20.1.7
 {% endblock %}
 
 {% block fetch %}
 https://github.com/KhronosGroup/SPIRV-LLVM-Translator/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-8e953931a09b0a4c2a77ddc8f1df4783571d8ffca9546150346c401573866062
+dd8a018becb2ed3647478744549b09372308f763d37d5fcde137fd9e129a7354
 {% endblock %}
 
 {% block lib_deps %}
