@@ -5,12 +5,12 @@ ada
 {% endblock %}
 
 {% block version %}
-3.2.7
+3.3.0
 {% endblock %}
 
 {% block fetch %}
 https://github.com/ada-url/ada/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-91094beb8090875b03af74549f03b9ad3f21545d29c18e88dff0d8004d7c1417
+75565e2d4cc8e3ce2dd7927f5c75cc5ebbd3b620468cb0226501dae68d8fe1cd
 {% endblock %}
 
 {% block lib_deps %}

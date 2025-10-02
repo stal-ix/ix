@@ -5,12 +5,12 @@ ngtcp2
 {% endblock %}
 
 {% block version %}
-1.15.1
+1.16.0
 {% endblock %}
 
 {% block fetch %}
 https://github.com/ngtcp2/ngtcp2/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-1119e0c661cda5234cf6c3b9cbd17a16081730df18d5d0484c97e4a407dc6a97
+1f16fbd1c46cc8b8b76106ef890777dec73ef57c1cd567bf6d208f5a2c12ed5e
 {% endblock %}
 
 {% block lib_deps %}
@@ -32,6 +32,12 @@ ENABLE_SHARED_LIB=ON
 {{super()}}
 >examples/CMakeLists.txt
 >third-party/CMakeLists.txt
+{% endblock %}
+
+{% block bld_tool %}
+{% if darwin %}
+bld/fake(tool_name=install_name_tool)
+{% endif %}
 {% endblock %}
 
 {% block env %}

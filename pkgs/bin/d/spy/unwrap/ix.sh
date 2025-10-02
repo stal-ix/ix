@@ -5,17 +5,19 @@ d-spy
 {% endblock %}
 
 {% block version %}
-48.0
+49.1
 {% endblock %}
 
 {% block fetch %}
 https://gitlab.gnome.org/GNOME/d-spy/-/archive/{{self.version().strip()}}/d-spy-{{self.version().strip()}}.tar.bz2
-ea985ac78980b0664464ce94f01ef2375e2829f0d0c3018ceca1dfa53de371d8
+d014d28979576926cbc522f89f75325cb4298b5f8d1ff92d12dbc631923011ba
 {% endblock %}
 
 {% block bld_libs %}
 lib/c
 lib/gtk
+lib/dex
 lib/glib
 lib/adwaita
+lib/ucontext
 {% endblock %}

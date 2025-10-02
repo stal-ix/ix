@@ -5,12 +5,12 @@ btrfs-progs
 {% endblock %}
 
 {% block version %}
-6.16.1
+6.17
 {% endblock %}
 
 {% block fetch %}
 https://www.kernel.org/pub/linux/kernel/people/kdave/btrfs-progs/btrfs-progs-v{{self.version().strip()}}.tar.xz
-70aa3f954017ca743529828deb2a10dceab2d41321583ad157e967847ddb24fc
+277d696c9d79713ff5afb53c7efebdcead2e6a6007789b1742ec411f4e4ca229
 {% endblock %}
 
 {% block bld_libs %}

@@ -5,7 +5,7 @@ at-spi2-core
 {% endblock %}
 
 {% block version %}
-2.56.4
+2.58.0
 {% endblock %}
 
 {% block fetch %}
