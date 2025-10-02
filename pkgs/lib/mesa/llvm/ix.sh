@@ -13,6 +13,7 @@ bld/llvm/config
 
 {% block meson_flags %}
 {{super()}}
+amd-use-llvm=true
 llvm=enabled
 shared-llvm=disabled
 {% endblock %}

@@ -29,6 +29,7 @@ vkGetBufferDeviceAddress
 
 {% block meson_flags %}
 {{super()}}
+amd-use-llvm=false
 vulkan-drivers={{vulkan}}
 gallium-drivers={{opengl}}
 {% endblock %}
