@@ -42,7 +42,6 @@ egl=enabled
 glx=disabled
 gles2=enabled
 opengl=true
-gallium-nine=false
 shader-cache=disabled
 llvm=disabled
 shared-llvm=disabled

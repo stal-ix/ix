@@ -9,5 +9,4 @@ bin/intel/clc/{{clang_ver or default_clang}}
 {% block meson_flags %}
 {{super()}}
 mesa-clc=system
-intel-clc=system
 {% endblock %}
