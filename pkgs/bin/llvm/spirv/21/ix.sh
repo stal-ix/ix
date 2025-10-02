@@ -1,1 +1,1 @@
-{% extends '//lib/spirv/llvm/translator/21/ix.sh' %}
+{% extends '//lib/spirv/llvm/translator/21/impl/ix.sh' %}
