@@ -21,5 +21,9 @@ static inline int regexec(regex_t* r, const char* s, int n, void* p, int f) {
 
 static inline void regfree(regex_t* r) {
 }
+
+static inline size_t regerror(int errcode, const regex_t* r, char* errbuf, size_t errbuf_size) {
+    return snprintf(errbuf, errbuf_size, "regerror (%d)", errcode);
+}
 EOF
 {% endblock %}
