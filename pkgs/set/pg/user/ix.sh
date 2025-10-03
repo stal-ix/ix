@@ -26,6 +26,7 @@ bin/iwd/ctl
 bin/swayimg
 bin/tcpdump
 bin/git/lfs
+bin/fheroes2
 bin/sing/box
 bin/xdg/open
 bin/tun2socks
