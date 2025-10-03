@@ -1,2 +1,2 @@
-https://archive.mesa3d.org/mesa-25.1.3.tar.xz
-ffcb6cadb5fd356d56008e6308641dfe4b2929f30139f6585436ca6e3cddba7f
+https://archive.mesa3d.org/mesa-25.2.4.tar.xz
+a370b4c549cbfbe646b319e34d73edb50ed883978f5e95133f282f0eae39ab52

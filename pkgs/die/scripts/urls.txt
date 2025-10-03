@@ -182,6 +182,7 @@ https://archive.apache.org/dist/xerces/c/3/sources/xerces-c-3.3.0.tar.gz
 https://archive.mesa3d.org/mesa-25.1.0.tar.xz
 https://archive.mesa3d.org/mesa-25.1.1.tar.xz
 https://archive.mesa3d.org/mesa-25.1.3.tar.xz
+https://archive.mesa3d.org/mesa-25.2.4.tar.xz
 https://astron.com/pub/file/file-5.45.tar.gz
 https://astron.com/pub/file/file-5.46.tar.gz
 https://astron.com/pub/tcsh/tcsh-6.24.10.tar.gz
@@ -1437,6 +1438,8 @@ https://github.com/KhronosGroup/SPIRV-Cross/archive/refs/tags/vulkan-sdk-1.3.275
 https://github.com/KhronosGroup/SPIRV-Cross/archive/refs/tags/vulkan-sdk-1.3.290.0.tar.gz
 https://github.com/KhronosGroup/SPIRV-Cross/archive/refs/tags/vulkan-sdk-1.3.296.0.tar.gz
 https://github.com/KhronosGroup/SPIRV-Cross/archive/refs/tags/vulkan-sdk-1.4.313.0.tar.gz
+https://github.com/KhronosGroup/SPIRV-Cross/archive/refs/tags/vulkan-sdk-1.4.321.0.tar.gz
+https://github.com/KhronosGroup/SPIRV-Headers/archive/9e3836d7d6023843a72ecd3fbf3f09b1b6747a9e.tar.gz
 https://github.com/KhronosGroup/SPIRV-Headers/archive/refs/tags/sdk-1.3.250.0.tar.gz
 https://github.com/KhronosGroup/SPIRV-Headers/archive/refs/tags/sdk-1.3.261.1.tar.gz
 https://github.com/KhronosGroup/SPIRV-Headers/archive/refs/tags/vulkan-sdk-1.3.268.0.tar.gz
@@ -1444,11 +1447,13 @@ https://github.com/KhronosGroup/SPIRV-Headers/archive/refs/tags/vulkan-sdk-1.3.2
 https://github.com/KhronosGroup/SPIRV-Headers/archive/refs/tags/vulkan-sdk-1.3.290.0.tar.gz
 https://github.com/KhronosGroup/SPIRV-Headers/archive/refs/tags/vulkan-sdk-1.3.296.0.tar.gz
 https://github.com/KhronosGroup/SPIRV-Headers/archive/refs/tags/vulkan-sdk-1.4.313.0.tar.gz
+https://github.com/KhronosGroup/SPIRV-Headers/archive/refs/tags/vulkan-sdk-1.4.321.0.tar.gz
 https://github.com/KhronosGroup/SPIRV-LLVM-Translator/archive/refs/tags/v18.1.3.tar.gz
 https://github.com/KhronosGroup/SPIRV-LLVM-Translator/archive/refs/tags/v19.1.0.tar.gz
 https://github.com/KhronosGroup/SPIRV-LLVM-Translator/archive/refs/tags/v19.1.7.tar.gz
 https://github.com/KhronosGroup/SPIRV-LLVM-Translator/archive/refs/tags/v20.1.2.tar.gz
 https://github.com/KhronosGroup/SPIRV-LLVM-Translator/archive/refs/tags/v20.1.3.tar.gz
+https://github.com/KhronosGroup/SPIRV-LLVM-Translator/archive/refs/tags/v21.1.1.tar.gz
 https://github.com/KhronosGroup/SPIRV-Tools/archive/refs/tags/sdk-1.3.261.1.zip
 https://github.com/KhronosGroup/SPIRV-Tools/archive/refs/tags/v2023.2.tar.gz
 https://github.com/KhronosGroup/SPIRV-Tools/archive/refs/tags/vulkan-sdk-1.3.268.0.zip
@@ -1456,6 +1461,7 @@ https://github.com/KhronosGroup/SPIRV-Tools/archive/refs/tags/vulkan-sdk-1.3.275
 https://github.com/KhronosGroup/SPIRV-Tools/archive/refs/tags/vulkan-sdk-1.3.290.0.zip
 https://github.com/KhronosGroup/SPIRV-Tools/archive/refs/tags/vulkan-sdk-1.3.296.0.zip
 https://github.com/KhronosGroup/SPIRV-Tools/archive/refs/tags/vulkan-sdk-1.4.313.0.zip
+https://github.com/KhronosGroup/SPIRV-Tools/archive/refs/tags/vulkan-sdk-1.4.321.0.zip
 https://github.com/KhronosGroup/Vulkan-Headers/archive/refs/tags/sdk-1.3.250.0.tar.gz
 https://github.com/KhronosGroup/Vulkan-Headers/archive/refs/tags/sdk-1.3.261.1.tar.gz
 https://github.com/KhronosGroup/Vulkan-Headers/archive/refs/tags/vulkan-sdk-1.3.268.0.tar.gz
@@ -1463,6 +1469,7 @@ https://github.com/KhronosGroup/Vulkan-Headers/archive/refs/tags/vulkan-sdk-1.3.
 https://github.com/KhronosGroup/Vulkan-Headers/archive/refs/tags/vulkan-sdk-1.3.290.0.tar.gz
 https://github.com/KhronosGroup/Vulkan-Headers/archive/refs/tags/vulkan-sdk-1.3.296.0.tar.gz
 https://github.com/KhronosGroup/Vulkan-Headers/archive/refs/tags/vulkan-sdk-1.4.313.0.tar.gz
+https://github.com/KhronosGroup/Vulkan-Headers/archive/refs/tags/vulkan-sdk-1.4.321.0.tar.gz
 https://github.com/KhronosGroup/Vulkan-Loader/archive/refs/tags/sdk-1.3.250.0.tar.gz
 https://github.com/KhronosGroup/Vulkan-Loader/archive/refs/tags/sdk-1.3.261.1.tar.gz
 https://github.com/KhronosGroup/Vulkan-Loader/archive/refs/tags/vulkan-sdk-1.3.268.0.tar.gz
@@ -1470,12 +1477,14 @@ https://github.com/KhronosGroup/Vulkan-Loader/archive/refs/tags/vulkan-sdk-1.3.2
 https://github.com/KhronosGroup/Vulkan-Loader/archive/refs/tags/vulkan-sdk-1.3.290.0.tar.gz
 https://github.com/KhronosGroup/Vulkan-Loader/archive/refs/tags/vulkan-sdk-1.3.296.0.tar.gz
 https://github.com/KhronosGroup/Vulkan-Loader/archive/refs/tags/vulkan-sdk-1.4.313.0.tar.gz
+https://github.com/KhronosGroup/Vulkan-Loader/archive/refs/tags/vulkan-sdk-1.4.321.0.tar.gz
 https://github.com/KhronosGroup/Vulkan-Tools/archive/refs/tags/sdk-1.3.250.0.tar.gz
 https://github.com/KhronosGroup/Vulkan-Tools/archive/refs/tags/sdk-1.3.261.1.tar.gz
 https://github.com/KhronosGroup/Vulkan-Tools/archive/refs/tags/vulkan-sdk-1.3.268.0.tar.gz
 https://github.com/KhronosGroup/Vulkan-Tools/archive/refs/tags/vulkan-sdk-1.3.275.0.tar.gz
 https://github.com/KhronosGroup/Vulkan-Tools/archive/refs/tags/vulkan-sdk-1.3.290.0.tar.gz
 https://github.com/KhronosGroup/Vulkan-Tools/archive/refs/tags/vulkan-sdk-1.4.313.0.tar.gz
+https://github.com/KhronosGroup/Vulkan-Tools/archive/refs/tags/vulkan-sdk-1.4.321.0.tar.gz
 https://github.com/KhronosGroup/Vulkan-Utility-Libraries/archive/refs/tags/vulkan-sdk-1.3.275.0.tar.gz
 https://github.com/KhronosGroup/Vulkan-Utility-Libraries/archive/refs/tags/vulkan-sdk-1.3.290.0.tar.gz
 https://github.com/KhronosGroup/Vulkan-Utility-Libraries/archive/refs/tags/vulkan-sdk-1.3.296.0.tar.gz
@@ -3512,6 +3521,7 @@ https://github.com/llvm/llvm-project/archive/refs/tags/llvmorg-20.1.2.tar.gz
 https://github.com/llvm/llvm-project/archive/refs/tags/llvmorg-20.1.4.tar.gz
 https://github.com/llvm/llvm-project/archive/refs/tags/llvmorg-20.1.5.tar.gz
 https://github.com/llvm/llvm-project/archive/refs/tags/llvmorg-20.1.7.tar.gz
+https://github.com/llvm/llvm-project/archive/refs/tags/llvmorg-21.1.2.tar.gz
 https://github.com/llvm/llvm-project/commit/e9f851de24baefd5710c3cac6ef3cafaea0eeb9d.diff
 https://github.com/llvm/llvm-project/releases/download/llvmorg-13.0.1/llvm-project-13.0.1.src.tar.xz
 https://github.com/llvm/llvm-project/releases/download/llvmorg-16.0.6/llvm-project-16.0.6.src.tar.xz

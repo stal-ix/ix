@@ -9,6 +9,7 @@ etc/tmpfs
 set/stalix
 set/pg/secrets
 bin/kernel/6/16
+bin/kernel/6/17
 bin/ix/keyboard
 bin/btrfs/progs
 set/pg/system/hosts

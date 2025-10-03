@@ -59,3 +59,7 @@ ENABLE_UNICODE_DATABASE_DOWNLOAD=OFF
 {% block cxx_flags %}
 -Wno-delete-incomplete
 {% endblock %}
+
+{% block build_flags %}
+no_werror
+{% endblock %}

@@ -9,7 +9,9 @@ lib/c
 lib/z
 lib/clc
 lib/kernel
+lib/llvm/21
 lib/spirv/tools
+lib/spirv/llvm/translator/21
 {% endblock %}
 
 {% block bld_tool %}
@@ -22,7 +24,6 @@ bld/spirv/tools
 {% endblock %}
 
 {% block ninja_build_targets %}
-src/intel/compiler/intel_clc
 src/compiler/clc/mesa_clc
 src/compiler/spirv/vtn_bindgen2
 {% endblock %}
@@ -34,9 +35,6 @@ platforms=
 tools=
 install-mesa-clc=true
 mesa-clc=enabled
-intel-bvh-grl=true
-install-intel-clc=true
-intel-clc=enabled
 video-codecs=
 xmlconfig=disabled
 llvm=enabled
@@ -51,7 +49,6 @@ intel-rt=disabled
 
 {% block install %}
 mkdir ${out}/bin
-cp ${tmp}/obj/src/intel/compiler/intel_clc ${out}/bin/
 cp ${tmp}/obj/src/compiler/clc/mesa_clc ${out}/bin/
 cp ${tmp}/obj/src/compiler/spirv/vtn_bindgen2 ${out}/bin/
 {% endblock %}
