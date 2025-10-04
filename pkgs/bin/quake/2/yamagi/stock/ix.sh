@@ -1,5 +1,7 @@
 {% extends '//die/c/make.sh' %}
 
+# check bin/quake/2/yamagi
+
 {% block pkg_name %}
 yquake2
 {% endblock %}
