@@ -5,12 +5,12 @@ aquamarine
 {% endblock %}
 
 {% block version %}
-0.9.4
+0.9.5
 {% endblock %}
 
 {% block fetch %}
 https://github.com/hyprwm/aquamarine/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-fccc7c4e9b42b34082690ba672ba54025b781eca46c48ec304b7e5b2ba775893
+657e4752542872549a556d9facb8a525276b4edd5ca197818835904768aaad40
 {% endblock %}
 
 {% block lib_deps %}
