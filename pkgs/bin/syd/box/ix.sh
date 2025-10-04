@@ -5,7 +5,7 @@ sydbox
 {% endblock %}
 
 {% block version %}
-3.39.0
+3.39.2
 {% endblock %}
 
 {% block cargo_url %}
@@ -13,7 +13,7 @@ https://gitlab.exherbo.org/sydbox/sydbox/-/archive/v{{self.version().strip()}}/s
 {% endblock %}
 
 {% block cargo_sha %}
-caf1ccb3f0f6094c3fa776a6b4273e000cd7f77edfce1315528564f778381790
+38075f8b994ca44021a9ecaaed3ffd01096b38e0245c7962be9c22483cf83984
 {% endblock %}
 
 {% block bld_libs %}
