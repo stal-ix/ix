@@ -5,12 +5,12 @@ libdrm
 {% endblock %}
 
 {% block version %}
-2.4.125
+2.4.126
 {% endblock %}
 
 {% block fetch %}
 https://dri.freedesktop.org/libdrm/libdrm-{{self.version().strip()}}.tar.xz
-d4bae92797a50f81a93524762e0410a49cd84cfa0f997795bc0172ac8fb1d96a
+6cab16d4d259b6abc9f485233863454114a3c307eca806679aad3edbe967bf42
 {% endblock %}
 
 {% block lib_deps %}
