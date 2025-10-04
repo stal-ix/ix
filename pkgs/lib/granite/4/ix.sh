@@ -5,12 +5,12 @@ granite
 {% endblock %}
 
 {% block version %}
-7.6.0
+7.7.0
 {% endblock %}
 
 {% block fetch %}
 https://github.com/elementary/granite/archive/refs/tags/{{self.version().strip()}}.tar.gz
-4b4e4f7f86eb3f55116faec42ebd87e04c3e424d82715ecd967ed39540dca5ef
+e1fe86f95a528fbcc45bbf85b668935dbd2cbf5d128f824d100ff02031ab5441
 {% endblock %}
 
 {% block lib_deps %}
