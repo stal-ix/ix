@@ -5,17 +5,17 @@ cage-kiosk
 {% endblock %}
 
 {% block version %}
-0.2.0
+0.2.1
 {% endblock %}
 
 {% block fetch %}
 https://github.com/cage-kiosk/cage/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-9d3f659e0f19636a958f9e1bf4d22268d7e2705d7e2989888401ec443c1cb6c3
+acab0c83175164a788d7b9f89338cbdebdc4f7197aff6fdc267c32f7181234a9
 {% endblock %}
 
 {% block bld_libs %}
 lib/c
-lib/wlroots/18
+lib/wlroots/19
 {% endblock %}
 
 {% block bld_tool %}
