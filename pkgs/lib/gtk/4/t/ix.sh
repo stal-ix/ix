@@ -5,6 +5,7 @@
 {% block lib_deps %}
 {{super()}}
 lib/drm
+lib/rsvg
 lib/vulkan/loader
 {% endblock %}
 
@@ -12,6 +13,10 @@ lib/vulkan/loader
 bin/glslc
 bin/sassc
 {{super()}}
+{% endblock %}
+
+{% block meson_tool %}
+bld/meson/6
 {% endblock %}
 
 {% block meson_flags %}
