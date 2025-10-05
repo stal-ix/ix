@@ -5,12 +5,12 @@ acpica
 {% endblock %}
 
 {% block version %}
-20250404
+20250807
 {% endblock %}
 
 {% block fetch %}
-https://github.com/acpica/acpica/archive/refs/tags/R{{self.version().strip()[:4]}}_{{self.version().strip()[4:6]}}_{{self.version().strip()[6:]}}.tar.gz
-9991ec103b3660d17715780406ee7409f705cf87ac55e9a32374affe1a6f275a
+https://github.com/acpica/acpica/archive/refs/tags/{{self.version().strip()}}.tar.gz
+971df1f78944e5f3bb314209acbf8a127c0db34b4a3c26e011b4076eba1c2bbc
 {% endblock %}
 
 {% block bld_libs %}

@@ -5,17 +5,21 @@ vim
 {% endblock %}
 
 {% block version %}
-9.1.1473
+9.1.1825
 {% endblock %}
 
 {% block fetch %}
 https://github.com/vim/vim/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-8528a6c69401e16245b2dcf320f1f46e6130d53ab4042fd1e43eaca3291ff622
+68ded7e051a54c9ec0fc697da25ae96efe3290730b983b5858aa33b82247e1a5
 {% endblock %}
 
 {% block unpack %}
 {{super()}}
 cd src
+{% endblock %}
+
+{% block conf_ver %}
+2/71
 {% endblock %}
 
 {% block autoreconf %}

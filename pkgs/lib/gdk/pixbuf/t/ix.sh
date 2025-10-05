@@ -5,12 +5,12 @@ gdk-pixbuf
 {% endblock %}
 
 {% block version %}
-2.44.2
+2.44.3
 {% endblock %}
 
 {% block fetch %}
 https://github.com/GNOME/gdk-pixbuf/archive/refs/tags/{{self.version().strip()}}.tar.gz
-90339a000a193383a6d7731dea807bccdfc0610bd185c9a07357fce1c5752969
+cc591e3949a95e2f7b50173c9373df8846648b15aa596d9e7ec7258381bfac0d
 {% endblock %}
 
 {% block bld_tool %}

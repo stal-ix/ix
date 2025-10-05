@@ -1,5 +1,7 @@
 {% extends '//lib/tiff/t/ix.sh' %}
 
+# check lib/qt/6/imageformats
+
 {% block cmake_flags %}
 {{super()}}
 tiff-opengl=OFF

@@ -5,7 +5,7 @@ dnsproxy
 {% endblock %}
 
 {% block version %}
-0.76.1
+0.76.2
 {% endblock %}
 
 {% block go_url %}
@@ -13,7 +13,7 @@ https://github.com/AdguardTeam/dnsproxy/archive/refs/tags/v{{self.version().stri
 {% endblock %}
 
 {% block go_sha %}
-e0a49dd19678e57af0cde9ece5dde06bec40216fc14170bd13764c3ebc844b84
+b2d34f9e484237a754e5ebe78b68ca2aeecd9fcd3d3f842474d57638fa1b8762
 {% endblock %}
 
 {% block go_tool %}

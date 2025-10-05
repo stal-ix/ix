@@ -1,6 +1,6 @@
 {% extends '//lib/gtk/4/t/ix.sh' %}
 
-{% block patch %}
+{% block patch1 %}
 {{super()}}
 patch -p1 << EOF
 {% include '0.diff' %}

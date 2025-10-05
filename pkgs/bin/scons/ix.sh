@@ -5,12 +5,12 @@ SCons
 {% endblock %}
 
 {% block version %}
-4.9.1
+4.10.0
 {% endblock %}
 
 {% block fetch %}
 https://downloads.sourceforge.net/project/scons/scons/{{self.version().strip()}}/SCons-{{self.version().strip()}}.tar.gz
-e2d78aa56e4646e5dbaf50c0758c6d1e4b0418464d8d6d07a09beb6cf257538f
+61e2fc42e0e2c750105d61f26cc1dfebcae9f4103d3dc0e9aeb373016b0d208c
 {% endblock %}
 
 {% block install %}

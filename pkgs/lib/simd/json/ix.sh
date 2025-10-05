@@ -5,12 +5,12 @@ simdjson
 {% endblock %}
 
 {% block version %}
-4.0.6
+4.0.7
 {% endblock %}
 
 {% block fetch %}
 https://github.com/simdjson/simdjson/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-84b90eaff91c8a4ac40feff1fffa9d13d706f914413dd41351644038a14079b6
+d2d15490605858d3dd42e90d25e0fde31c53446b7d3cde9ef334449236927916
 {% endblock %}
 
 {% block lib_deps %}

@@ -10,23 +10,6 @@ lib/elfutils
 bld/librarian
 {% endblock %}
 
-{% block c_rename_symbol %}
-{{super()}}
-vkCmdBindPipeline
-vkCmdDispatch
-vkCmdDispatchIndirect
-vkCmdFillBuffer
-vkCmdPipelineBarrier
-vkCmdPushConstants
-vkCreateComputePipelines
-vkCreatePipelineLayout
-vkCreateShaderModule
-vkDestroyPipeline
-vkDestroyPipelineLayout
-vkDestroyShaderModule
-vkGetBufferDeviceAddress
-{% endblock %}
-
 {% block meson_flags %}
 {{super()}}
 amd-use-llvm=false
@@ -55,36 +38,4 @@ patchns ${out}/lib/libGLESv2.a mesa_glesv2_
 mv ${out}/lib/libGLESv2.a ${out}/lib/libmesa_GLESv2.a
 patchns ${out}/lib/libgbm.a mesa_gbm_
 mv ${out}/lib/libgbm.a ${out}/lib/libmesa_gbm.a
-{% endblock %}
-
-{% block patch %}
-(
-{{super()}}
-)
-
-(
-cd src/gallium/frontends/dri
-
-for l in *.c *.h; do
-    for x in dri2_lookup_egl_image dri2_lookup_egl_image_validated dri2_validate_egl_image; do
-        sed -e "s|${x}|${x}_xxx|g" -i ${l}
-    done
-done
-)
-
-(
-cd src/gallium/drivers/radeonsi
-
-for l in *.c *.h *.cpp; do
-    for x in vi_alpha_is_on_msb si_emit_cache_flush si_cp_dma_prefetch si_cp_dma_clear_buffer si_cp_dma_wait_for_idle; do
-        sed -e "s|${x}|${x}_xxx|g" -i ${l}
-    done
-done
-)
-{% endblock %}
-
-{% block cpp_defines %}
-{{super()}}
-VK_COMPONENT_TYPE_MAX_ENUM_NV=VK_COMPONENT_TYPE_MAX_ENUM_KHR
-VK_SCOPE_MAX_ENUM_NV=VK_SCOPE_MAX_ENUM_KHR
 {% endblock %}

@@ -5,12 +5,12 @@ hyprlock
 {% endblock %}
 
 {% block version %}
-0.9.1
+0.9.2
 {% endblock %}
 
 {% block fetch %}
 https://github.com/hyprwm/hyprlock/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-03f26ceba049546767a903a5e5bcd78fa4d261a5d116febd45633b88b9f16a97
+d4a8ef9115232b3545dd517e96f1251f91022765eb272b5e7057c20e3e7e8837
 {% endblock %}
 
 {% block bld_libs %}

@@ -5,12 +5,12 @@ gspell
 {% endblock %}
 
 {% block version %}
-1.14.0
+1.14.1
 {% endblock %}
 
 {% block fetch %}
 https://gitlab.gnome.org/GNOME/gspell/-/archive/{{self.version().strip()}}/gspell-{{self.version().strip()}}.tar.bz2
-0b400f2057092c947f270325a0107c1ee8e781914e8e28488b04385c15cea8fe
+31c1ee70e730a45964ad12da0b1f49426878e8a670edd22b03f5cdc54a186237
 {% endblock %}
 
 {% block lib_deps %}

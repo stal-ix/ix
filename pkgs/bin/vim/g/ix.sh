@@ -11,3 +11,8 @@ lib/gtk/3
 {{super()}}
 --enable-gui=gtk3
 {% endblock %}
+
+{% block bld_tool %}
+{{super()}}
+bld/wayland
+{% endblock %}

@@ -1,7 +1,7 @@
 {% extends '//die/c/meson.sh' %}
 
 {% block version %}
-1.7.0
+1.8.0
 {% endblock %}
 
 {% block pkg_name %}
@@ -9,8 +9,8 @@ kanshi
 {% endblock %}
 
 {% block fetch %}
-https://git.sr.ht/~emersion/kanshi/archive/v{{self.version().strip()}}.tar.gz
-d35b2a0b41a36cc55066320ae7ae5b176450546a4ed67ee09e7241ecd36bfc73
+https://gitlab.freedesktop.org/emersion/kanshi/-/archive/v{{self.version().strip()}}/kanshi-v{{self.version().strip()}}.tar.bz2
+8a65921458e1ff7e5368d6911538b8c2b432ed0ac4884db7abcca90ca0528853
 {% endblock %}
 
 {% block bld_libs %}

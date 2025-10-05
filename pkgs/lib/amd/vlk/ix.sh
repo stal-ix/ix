@@ -102,6 +102,10 @@ popd
 cd xgl
 {% endblock %}
 
+{% block ninja_build_targets %}
+icd/amdvlk64.so
+{% endblock %}
+
 {% block install %}
 mkdir ${out}/lib
 cp ${tmp}/lib/amdvlk64.a ${out}/lib/libamdvlk64.a

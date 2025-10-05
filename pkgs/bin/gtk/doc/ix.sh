@@ -5,12 +5,12 @@ gtk-doc
 {% endblock %}
 
 {% block version %}
-1.34.0
+1.35.1
 {% endblock %}
 
 {% block fetch %}
 https://github.com/GNOME/gtk-doc/archive/refs/tags/{{self.version().strip()}}.tar.gz
-e1d544fa70ae60014a241b674c9d989f4ad6a96554652ebf73bbe94b4da1aa35
+f40f6e79d555c00bc0aa9f5cc8e7bee5545758965bc2f6f23812a442d6cd0996
 {% endblock %}
 
 {% block bld_libs %}

@@ -5,12 +5,12 @@ wireshark
 {% endblock %}
 
 {% block version %}
-4.4.7
+4.4.9
 {% endblock %}
 
 {% block fetch %}
 https://github.com/wireshark/wireshark/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-5477c8961321e47f0bf6b64c360bd84c4d79a6cdf6a57b534430f5cbae27bc7f
+e1b7786ce8be7969565932f9c710afb1f081973d5d810b6375fbd26b648adab8
 {% endblock %}
 
 {% block bld_libs %}

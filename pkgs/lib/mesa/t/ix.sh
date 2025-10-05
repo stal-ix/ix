@@ -5,13 +5,7 @@
 {% endblock %}
 
 {% block lib_deps %}
-lib/c
-lib/z
-lib/drm
-lib/expat
-lib/wayland
-lib/vulkan/loader
-lib/vulkan/headers
+lib/mesa/deps
 {% endblock %}
 
 {% block bld_libs %}
@@ -66,11 +60,6 @@ cat << EOF > bin/install_megadrivers.py
 EOF
 
 chmod +x bin/install_megadrivers.py
-
-sed -e 's|with_dri = .*|with_dri = true|'         \
-    -e 's|with_any_vk = .*|with_any_vk = true|'   \
-    -e 's|with_gallium = .*|with_gallium = true|' \
-    -i meson.build
 
 sed -e 's|disk_cache_get_function_timestamp|disk_cache_get_function_timestamp_xxx|' \
     -e 's|disk_cache_get_function_identifier|disk_cache_get_function_identifier_xxx|' \

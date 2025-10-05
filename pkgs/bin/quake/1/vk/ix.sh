@@ -31,7 +31,7 @@ lib/vulkan/drivers
 {% endblock %}
 
 {% block bld_tool %}
-bin/glslang
+bin/glslang/old
 {% if linux %}
 bin/muslstack
 {% endif %}

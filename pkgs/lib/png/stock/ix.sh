@@ -5,12 +5,12 @@ libpng
 {% endblock %}
 
 {% block version %}
-1.6.49
+1.6.50
 {% endblock %}
 
 {% block fetch %}
 https://github.com/glennrp/libpng/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-e425762fdfb9bb30a5d2da29c0067570e96b5d41d79c659cf0dad861e9df738e
+71158e53cfdf2877bc99bcab33641d78df3f48e6e0daad030afe9cb8c031aa46
 {% endblock %}
 
 {% block lib_deps %}

@@ -5,12 +5,12 @@ leptonica
 {% endblock %}
 
 {% block version %}
-1.85.0
+1.86.0
 {% endblock %}
 
 {% block fetch %}
 https://github.com/DanBloomberg/leptonica/archive/refs/tags/{{self.version().strip()}}.tar.gz
-c01376bce0379d4ea4bc2ec5d5cbddaa49e2f06f88242619ab8c059e21adf233
+b4447faf61a8786a9b211d58d4103d85d47fd3a5dd418d5a6bc525d41db54ccc
 {% endblock %}
 
 {% block lib_deps %}
@@ -32,6 +32,5 @@ BUILD_PROG=OFF
 {% block install %}
 {{super()}}
 sed -e 's|if ()|if (TRUE)|' -i ${out}/lib/cmake/leptonica/LeptonicaConfig.cmake
-sed -e 's|.*exec_prefix.*||' -i ${out}/lib/pkgconfig/lept_Release.pc
-cp ${out}/lib/pkgconfig/lept_Release.pc ${out}/lib/pkgconfig/lept.pc
+sed -e 's|.*exec_prefix.*||' -i ${out}/lib/pkgconfig/lept.pc
 {% endblock %}
