@@ -1,26 +1,10 @@
-{% extends '//lib/mesa/base/ix.sh' %}
-
-{% block lib_deps %}
-lib/elfutils
-{{super()}}
-{% endblock %}
+{% extends '//lib/mesa/t/vulkan/ix.sh' %}
 
 {% block meson_flags %}
-valgrind=disabled
-libunwind=disabled
-platforms=wayland
-egl-native-platform=wayland
-egl=disabled
-glx=disabled
-gles2=disabled
-opengl=false
-shader-cache=disabled
+{{super()}}
 llvm=disabled
-shared-llvm=disabled
-lmsensors=disabled
 amd-use-llvm=false
 vulkan-drivers=amd
-gallium-drivers=
 {% endblock %}
 
 {% block env %}
