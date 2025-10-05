@@ -82,9 +82,3 @@ for l in *.c *.h *.cpp; do
 done
 )
 {% endblock %}
-
-{% block cpp_defines %}
-{{super()}}
-VK_COMPONENT_TYPE_MAX_ENUM_NV=VK_COMPONENT_TYPE_MAX_ENUM_KHR
-VK_SCOPE_MAX_ENUM_NV=VK_SCOPE_MAX_ENUM_KHR
-{% endblock %}
