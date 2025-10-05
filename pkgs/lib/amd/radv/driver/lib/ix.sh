@@ -9,11 +9,11 @@ bld/librarian
 {% endblock %}
 
 {% block bld_libs %}
-lib/amd/mesa
+lib/amd/radv
 {% endblock %}
 
 {% block install %}
 mkdir ${out}/lib
 cp ${VULKAN_LIB} ${out}/lib/
-patchns ${out}/lib/*.a amdmesa_
+patchns ${out}/lib/*.a radv_
 {% endblock %}

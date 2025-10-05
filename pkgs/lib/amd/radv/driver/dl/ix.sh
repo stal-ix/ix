@@ -2,7 +2,7 @@
 
 {% block lib_deps %}
 lib/dlfcn
-lib/amd/mesa/driver/lib
+lib/amd/radv/driver/lib
 {% endblock %}
 
 {% block export_symbols %}
@@ -12,7 +12,7 @@ vk_icdNegotiateLoaderICDInterfaceVersion
 {% endblock %}
 
 {% block export_prefix %}
-amdmesa_
+radv_
 {% endblock %}
 
 {% block export_lib %}
