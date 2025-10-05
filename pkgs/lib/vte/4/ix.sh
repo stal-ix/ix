@@ -1,5 +1,7 @@
 {% extends '//lib/vte/t/ix.sh' %}
 
+# check bin/ptyxis
+
 {% block lib_deps %}
 {{super()}}
 lib/gtk/4
