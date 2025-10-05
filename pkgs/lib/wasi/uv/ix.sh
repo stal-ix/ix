@@ -1,21 +1,28 @@
 {% extends '//die/c/cmake.sh' %}
 
+# check bin/wasm/3
+
 {% block pkg_name %}
 uvwasi
 {% endblock %}
 
 {% block version %}
-0.0.21
+0.0.23
 {% endblock %}
 
 {% block fetch %}
 https://github.com/nodejs/uvwasi/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-5cf32f166c493f41c0de7f3fd578d0be1b692c81c54f0c68889e62240fe9ab60
+cdb148aac298883b51da887657deca910c7c02f35435e24f125cef536fe8d5e1
 {% endblock %}
 
 {% block lib_deps %}
 lib/c
 lib/uv
+lib/shim/fake(lib_name=uvwasi_a)
+{% endblock %}
+
+{% block build_flags %}
+wrap_cc
 {% endblock %}
 
 {% block cmake_flags %}
