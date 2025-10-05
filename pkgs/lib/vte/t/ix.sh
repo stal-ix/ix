@@ -77,9 +77,6 @@ EOF
 prepend src/parser.hh << EOF
 #include <algorithm>
 EOF
-prepend src/color-parser.cc << EOF
-#include "xxx.hh"
-EOF
 prepend src/boxed.hh << EOF
 #include <utility>
 EOF
