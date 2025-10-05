@@ -10,23 +10,6 @@ lib/elfutils
 bld/librarian
 {% endblock %}
 
-{% block c_rename_symbol %}
-{{super()}}
-vkCmdBindPipeline
-vkCmdDispatch
-vkCmdDispatchIndirect
-vkCmdFillBuffer
-vkCmdPipelineBarrier
-vkCmdPushConstants
-vkCreateComputePipelines
-vkCreatePipelineLayout
-vkCreateShaderModule
-vkDestroyPipeline
-vkDestroyPipelineLayout
-vkDestroyShaderModule
-vkGetBufferDeviceAddress
-{% endblock %}
-
 {% block meson_flags %}
 {{super()}}
 amd-use-llvm=false
