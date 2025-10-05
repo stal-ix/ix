@@ -47,10 +47,6 @@ _systemd=false
 {% endblock %}
 
 {% block patch %}
-echo 'int main() {}'  > src/color-test.cc
-prepend src/icu-glue.hh << EOF
-#include <string_view>
-EOF
 cat << EOF > src/xxx.hh
 #pragma once
 template <class S>
