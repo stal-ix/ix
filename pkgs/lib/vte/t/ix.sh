@@ -47,7 +47,6 @@ _systemd=false
 {% endblock %}
 
 {% block patch %}
-sed -e 's|+ debug_sources||' -i src/app/meson.build
 echo 'int main() {}'  > src/color-test.cc
 prepend src/icu-glue.hh << EOF
 #include <string_view>
