@@ -5,14 +5,7 @@
 {% endblock %}
 
 {% block lib_deps %}
-lib/c
-lib/z
-lib/drm
-lib/expat
-lib/wayland
-lib/elfutils
-lib/vulkan/loader
-lib/vulkan/headers
+lib/mesa/deps
 {% endblock %}
 
 {% block bld_libs %}
