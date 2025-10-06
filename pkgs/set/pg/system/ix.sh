@@ -8,7 +8,6 @@ ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDGZ3aEKhxpG9JHG3uso/gUuUKe9NzHOXKAenZIDiDq
 etc/tmpfs
 set/stalix
 set/pg/secrets
-bin/kernel/6/16
 bin/kernel/6/17
 bin/ix/keyboard
 bin/btrfs/progs
