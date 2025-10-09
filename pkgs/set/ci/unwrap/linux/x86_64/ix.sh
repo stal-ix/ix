@@ -51,6 +51,7 @@
 #}
 
 {% block run_deps %}
+bin/python/14
 bin/dsvpn
 bin/sudo
 bin/wlogout

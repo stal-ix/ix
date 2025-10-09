@@ -1,6 +1,7 @@
 {% extends 't/ix.sh' %}
 
 {% block lib_deps %}
+lib/zstd
 lib/dlfcn
 {{super()}}
 {% endblock %}
@@ -22,6 +23,14 @@ sed -e 's|MACHDEP=.*unknown.*|:|' \
     -e 's|.*ERROR.*cross build not.*||' \
     -i configure.ac
 {{super()}}
+{% endblock %}
+
+{% block ensure_static_build %}
+{{super()}}
+sed -e 's|.*_zstd.*||' -i Modules/Setup.local
+cat << EOF >> Modules/Setup.local
+_zstd _zstd/_zstdmodule.c _zstd/zstddict.c _zstd/compressor.c _zstd/decompressor.c
+EOF
 {% endblock %}
 
 {% block configure %}
