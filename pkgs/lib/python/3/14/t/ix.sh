@@ -8,7 +8,6 @@ lib/dlfcn
 
 {% block bld_tool %}
 bld/python/14
-bld/pip/scripts
 {{super()}}
 {% endblock %}
 

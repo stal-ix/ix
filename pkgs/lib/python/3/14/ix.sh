@@ -1,5 +1,10 @@
 {% extends 't/ix.sh' %}
 
+{% block bld_tool %}
+bld/pip/scripts
+{{super()}}
+{% endblock %}
+
 {% block install %}
 {{super()}}
 cp Modules/_hacl/libH*.a ${out}/lib/
