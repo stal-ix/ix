@@ -12,9 +12,15 @@ bld/python/14
 {% endblock %}
 
 {% block configure_flags %}
+{{super()}}
 --disable-test-modules
 --with-build-python=${NATIVE_PYTHON}
-{{super()}}
+{% if py_no_gil %}
+--without-gil
+{% endif %}
+{% if py_jit %}
+--enable-experimental-jit
+{% endif %}
 {% endblock %}
 
 {% block patch %}
