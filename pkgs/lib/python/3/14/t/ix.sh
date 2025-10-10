@@ -1,45 +1,46 @@
-{% extends '//lib/python/3/12/t/ix.sh' %}
+{% extends 't/ix.sh' %}
 
-{% block pkg_name %}
-python
+{% block lib_deps %}
+lib/zstd
+lib/dlfcn
+{{super()}}
 {% endblock %}
 
-{% block version %}
-3.14.0
-{% endblock %}
-
-{% block conf_ver %}
-2/72
-{% endblock %}
-
-{% block fetch %}
-https://www.python.org/ftp/python/{{self.version().strip()}}/Python-{{self.version().strip()}}.tar.xz
-2299dae542d395ce3883aca00d3c910307cd68e0b2f7336098c8e7b7eee9f3e9
+{% block bld_tool %}
+bld/python/14
+bld/pip/scripts
+{{super()}}
 {% endblock %}
 
 {% block configure_flags %}
+--disable-test-modules
+--with-build-python=${NATIVE_PYTHON}
 {{super()}}
-{% if py_no_gil %}
---without-gil
-{% endif %}
-{% if py_jit %}
---enable-experimental-jit
-{% endif %}
 {% endblock %}
 
-{% block bld_libs %}
+{% block patch %}
+sed -e 's|MACHDEP=.*unknown.*|:|' \
+    -e 's|.*ERROR.*cross build not.*||' \
+    -i configure.ac
 {{super()}}
-lib/build/muldefs
 {% endblock %}
 
-{% block cpp_defines %}
-USE_SSL=1
-USE_NDBM=1
-HAVE_NDBM_H=1
-SQLITE_OMIT_LOAD_EXTENSION=1
+{% block ensure_static_build %}
+{{super()}}
+sed -e 's|.*_zstd.*||' -i Modules/Setup.local
+cat << EOF >> Modules/Setup.local
+_zstd _zstd/_zstdmodule.c _zstd/zstddict.c _zstd/compressor.c _zstd/decompressor.c
+EOF
 {% endblock %}
 
-{% block setup_target_flags %}
+{% block configure %}
+export READELF=llvm-readelf
+export MACHDEP={{target.os}}
+export ac_sys_system={{target.cmake_system_name}}
+export ac_sys_release=
+export ac_md_system=${ac_sys_system}
+export ac_md_release=${ac_sys_release}
+export ac_cv_file__dev_ptc=no
+export ac_cv_file__dev_ptmx=yes
 {{super()}}
-export CFLAGS="-Wno-incompatible-function-pointer-types ${CFLAGS}"
 {% endblock %}

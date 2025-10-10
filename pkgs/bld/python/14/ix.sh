@@ -1,4 +1,4 @@
-{% extends '//lib/python/3/14/t/ix.sh' %}
+{% extends '//lib/python/3/14/t/t/ix.sh' %}
 
 {% block lib_deps %}
 lib/c
