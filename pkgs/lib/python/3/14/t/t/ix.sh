@@ -17,11 +17,6 @@ https://www.python.org/ftp/python/{{self.version().strip()}}/Python-{{self.versi
 2299dae542d395ce3883aca00d3c910307cd68e0b2f7336098c8e7b7eee9f3e9
 {% endblock %}
 
-{% block bld_libs %}
-{{super()}}
-lib/build/muldefs
-{% endblock %}
-
 {% block cpp_defines %}
 USE_SSL=1
 USE_NDBM=1
