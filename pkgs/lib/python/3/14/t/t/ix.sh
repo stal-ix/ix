@@ -39,7 +39,7 @@ HAVE_NDBM_H=1
 SQLITE_OMIT_LOAD_EXTENSION=1
 {% endblock %}
 
-{% block setup_target_flags %}
+{% block c_flags %}
 {{super()}}
-export CFLAGS="-Wno-incompatible-function-pointer-types ${CFLAGS}"
+-Wno-incompatible-function-pointer-types
 {% endblock %}
