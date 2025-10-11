@@ -27,6 +27,8 @@ bld/python/14
 sed -e 's|MACHDEP=.*unknown.*|:|' \
     -e 's|.*ERROR.*cross build not.*||' \
     -i configure.ac
+sed -e 's|= 19|= '${CLANG_VERSION}'|' \
+    -i Tools/jit/_llvm.py
 {{super()}}
 {% endblock %}
 
