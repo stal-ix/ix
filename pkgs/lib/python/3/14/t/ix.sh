@@ -33,8 +33,8 @@ sed -e 's|= 19|= '${CLANG_VERSION}'|' \
 
 {% block ensure_static_build %}
 {{super()}}
-sed -e 's|.*_zstd.*|_zstd _zstd/_zstdmodule.c _zstd/zstddict.c _zstd/compressor.c _zstd/decompressor.c|' \
-    -i Modules/Setup.local
+sed -e 's|.*_zstd.*||' -i Modules/Setup.local
+cat Modules/Setup.stdlib.in | grep '_zstd' | sed -e 's|.*@||' >> Modules/Setup.local
 {% endblock %}
 
 {% block configure %}
