@@ -13,7 +13,6 @@ bld/python/14
 
 {% block configure_flags %}
 {{super()}}
---disable-test-modules
 --with-build-python=${NATIVE_PYTHON}
 {% if py_no_gil %}
 --without-gil

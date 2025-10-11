@@ -28,3 +28,8 @@ SQLITE_OMIT_LOAD_EXTENSION=1
 {{super()}}
 -Wno-incompatible-function-pointer-types
 {% endblock %}
+
+{% block configure_flags %}
+{{super()}}
+--disable-test-modules
+{% endblock %}
