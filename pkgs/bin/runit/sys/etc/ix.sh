@@ -12,6 +12,7 @@ EOF
 mkdir -p etc/profile.d
 
 cat << EOF > etc/profile.d/00-env.sh
+export PATH=/ix/realm/\${USER}/bin:/bin
 EOF
 
 mkdir -p etc/sysctl.d

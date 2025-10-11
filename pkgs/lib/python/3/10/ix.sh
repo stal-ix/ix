@@ -14,6 +14,7 @@ https://www.python.org/ftp/python/{{self.version().strip()}}/Python-{{self.versi
 {% endblock %}
 
 {% block setup_target_flags %}
+{{super()}}
 export COFLAGS=$(echo "${COFLAGS}" | tr ' ' '\n' | grep -v 'with-readline' | tr '\n' ' ')
 {% if (edit or 'edit') == 'readline' %}
 export COFLAGS="--with-readline=yes ${COFLAGS}"

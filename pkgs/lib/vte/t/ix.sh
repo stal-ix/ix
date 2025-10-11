@@ -47,11 +47,6 @@ _systemd=false
 {% endblock %}
 
 {% block patch %}
-sed -e 's|+ debug_sources||' -i src/app/meson.build
-echo 'int main() {}'  > src/color-test.cc
-prepend src/icu-glue.hh << EOF
-#include <string_view>
-EOF
 cat << EOF > src/xxx.hh
 #pragma once
 template <class S>
@@ -81,9 +76,6 @@ prepend src/minifont.cc << EOF
 EOF
 prepend src/parser.hh << EOF
 #include <algorithm>
-EOF
-prepend src/color-parser.cc << EOF
-#include "xxx.hh"
 EOF
 prepend src/boxed.hh << EOF
 #include <utility>

@@ -30,6 +30,10 @@ lib/vulkan/headers
 lib/vulkan/drivers
 {% endblock %}
 
+{% block host_libs %}
+lib/c
+{% endblock %}
+
 {% block bld_tool %}
 bin/glslang/old
 {% if linux %}

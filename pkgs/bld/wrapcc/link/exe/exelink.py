@@ -8,4 +8,16 @@ import subprocess
 if 'conftest' not in str(sys.argv):
     print(f'EXELINK {sys.argv}', file=sys.stderr)
 
-subprocess.check_call(sys.argv[1:] + ['-L' + os.environ['tmp'] + '/lib'])
+# fix for python3.14
+def flt_args(cmd):
+    s = set()
+
+    for x in cmd:
+        if x.endswith('.o') and x in s:
+            pass
+        else:
+            s.add(x)
+
+            yield x
+
+subprocess.check_call(list(flt_args(sys.argv[1:] + ['-L' + os.environ['tmp'] + '/lib'])))
