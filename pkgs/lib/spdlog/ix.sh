@@ -5,12 +5,12 @@ spdlog
 {% endblock %}
 
 {% block version %}
-1.15.2
+1.16.0
 {% endblock %}
 
 {% block fetch %}
 https://github.com/gabime/spdlog/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-7a80896357f3e8e920e85e92633b14ba0f229c506e6f978578bdc35ba09e9a5d
+8741753e488a78dd0d0024c980e1fb5b5c85888447e309d9cb9d949bdb52aa3e
 {% endblock %}
 
 {#
