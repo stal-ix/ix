@@ -17,7 +17,7 @@ b2d34f9e484237a754e5ebe78b68ca2aeecd9fcd3d3f842474d57638fa1b8762
 {% endblock %}
 
 {% block go_tool %}
-bin/go/lang/24
+bin/go/lang/25
 {% endblock %}
 
 {% block go_bins %}
