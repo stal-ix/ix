@@ -5,12 +5,12 @@ slibtool
 {% endblock %}
 
 {% block version %}
-0.7.3
+0.7.4
 {% endblock %}
 
 {% block fetch %}
 https://git.midipix.org/slibtool/snapshot/slibtool-{{self.version().strip()}}.tar.bz2
-d5d847c350b3025642eb21f6079ecb858192e8e855be5dc1c9cf75a8affc5365
+699f36513ba785c1981cb929d3654074b040139efbba8c0cd1ba69edb8770bf1
 {% endblock %}
 
 {% block bld_libs %}
