@@ -5,7 +5,7 @@ nebula
 {% endblock %}
 
 {% block version %}
-1.9.6
+1.9.7
 {% endblock %}
 
 {% block go_url %}
@@ -13,7 +13,7 @@ https://github.com/slackhq/nebula/archive/refs/tags/v{{self.version().strip()}}.
 {% endblock %}
 
 {% block go_sha %}
-a4b7bd63e6c3c183b2e0c4f77794f9c02d813536c065050f9fb4c7cfc189f1bc
+4eb9fed4c34ecb9328aba7e269e86a60d09739046d4c2a6cf436de9205148ea7
 {% endblock %}
 
 {% block go_tool %}
