@@ -5,12 +5,12 @@ hyprpaper
 {% endblock %}
 
 {% block version %}
-0.7.5
+0.7.6
 {% endblock %}
 
 {% block fetch %}
 https://github.com/hyprwm/hyprpaper/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-93efc089c7051e6727ac5eac402ebd254199e93ac3efd6fe7dd37a52ddc1cc33
+a19f59e21abb8b1e3f4103ffeeac7c4658c1c09433047979836b2210a4edc40e
 {% endblock %}
 
 {% block bld_libs %}
