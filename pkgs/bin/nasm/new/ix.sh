@@ -33,5 +33,6 @@ lib/c
 
 {% block patch %}
 sed -e 's|ifdef bool|ifdef xxx|' \
+    -e 's|.*typedef enum bool.*||' \
     -i include/compiler.h
 {% endblock %}
