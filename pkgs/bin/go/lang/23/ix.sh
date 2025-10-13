@@ -1,10 +1,10 @@
 {% extends '//bin/go/lang/22/ix.sh' %}
 
 {% block version %}
-1.23.6
+1.23.12
 {% endblock %}
 
 {% block fetch %}
 https://github.com/golang/go/archive/refs/tags/go{{self.version().strip()}}.tar.gz
-06ca9da2305302a7ca1593afadf012494debf658a11e4e41119ee1ee160f77c7
+0b10c15101a9f219492c4cfcf12b589c2d315075323512e720476a1747434c91
 {% endblock %}

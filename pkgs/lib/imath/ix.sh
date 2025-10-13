@@ -5,12 +5,12 @@ Imath
 {% endblock %}
 
 {% block version %}
-3.2.1
+3.2.2
 {% endblock %}
 
 {% block fetch %}
 https://github.com/AcademySoftwareFoundation/Imath/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-b2c8a44c3e4695b74e9644c76f5f5480767355c6f98cde58ba0e82b4ad8c63ce
+b4275d83fb95521510e389b8d13af10298ed5bed1c8e13efd961d91b1105e462
 {% endblock %}
 
 {% block lib_deps %}

@@ -5,12 +5,12 @@ su-exec
 {% endblock %}
 
 {% block version %}
-0.2
+0.3
 {% endblock %}
 
 {% block fetch %}
 https://github.com/ncopa/su-exec/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-ec4acbd8cde6ceeb2be67eda1f46c709758af6db35cacbcde41baac349855e25
+1de7479857879b6d14772792375290a87eac9a37b0524d39739a4a0739039620
 {% endblock %}
 
 {% block bld_libs %}

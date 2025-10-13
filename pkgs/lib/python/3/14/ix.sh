@@ -7,9 +7,9 @@ bld/pip/scripts
 
 {% block install %}
 {{super()}}
-cp Modules/_hacl/libH*.a ${out}/lib/
+llvm-ar qL ${out}/lib/libhacl.a Modules/_hacl/*.o
 find ${out}/lib/python3.14/ -type f | while read l; do
-    sed -e 's|Modules/_hacl/libHacl_Hash_SHA2.a||g' -i ${l}
+    sed -e 's|.*Modules/_hacl/.*||g' -i ${l}
 done
 cd ${out}/lib/python3.14
 >__init__.py
