@@ -5,12 +5,12 @@ nix
 {% endblock %}
 
 {% block version %}
-2.31.2
+2.32.0
 {% endblock %}
 
 {% block fetch %}
 https://github.com/NixOS/nix/archive/refs/tags/{{self.version().strip()}}.tar.gz
-dd969817b388f9899afae5ba2447eb8486cd6c88af1e6d79f522d46931fc839d
+870ea4d3360fa01b778108c57ab8277a2ccbe7d2af81a1a36b46532dacf454ad
 {% endblock %}
 
 {% block bld_libs %}
@@ -43,8 +43,8 @@ lib/json/nlohmann
 bin/jq
 bld/bash
 bld/flex
-bld/bison
 bin/lowdown
+bin/bison/3/8
 bld/auto/archive
 {% endblock %}
 
