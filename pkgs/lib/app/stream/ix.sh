@@ -2,7 +2,7 @@
 
 {% block bld_libs %}
 {{super()}}
-lib/shim/fake/pkg(pkg_name=appstream,pkg_ver=1.1.0)
+lib/shim/fake/pkg(pkg_name=appstream,pkg_ver={{self.version().strip()}})
 {% endblock %}
 
 {% block bld_tool %}
