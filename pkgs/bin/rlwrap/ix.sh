@@ -5,15 +5,16 @@ rlwrap
 {% endblock %}
 
 {% block version %}
-0.46.2
+0.47.1
 {% endblock %}
 
 {% block fetch %}
 https://github.com/hanslub42/rlwrap/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-9abb0a0dc19e85794d9b8e72e480530563eb4ee1bf243e87c0e0dd05ea4a2f09
+944bc0e4812e61b2b7c4cd17b1b37b41325deffa0b84192aff8c0eace1a5da4c
 {% endblock %}
 
 {% block bld_libs %}
 lib/c
+lib/pty/tty
 lib/readline
 {% endblock %}
