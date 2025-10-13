@@ -1,7 +1,15 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+libptytty
+{% endblock %}
+
+{% block version %}
+2.0
+{% endblock %}
+
 {% block fetch %}
-https://dist.schmorp.de/libptytty/libptytty-2.0.tar.gz
+https://dist.schmorp.de/libptytty/libptytty-{{self.version().strip()}}.tar.gz
 8033ed3aadf28759660d4f11f2d7b030acf2a6890cb0f7926fb0cfa6739d31f7
 {% endblock %}
 
