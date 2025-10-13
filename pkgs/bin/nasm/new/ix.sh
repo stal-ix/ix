@@ -5,12 +5,12 @@ nasm
 {% endblock %}
 
 {% block version %}
-2.16.03
+3.01
 {% endblock %}
 
 {% block fetch %}
 https://github.com/netwide-assembler/nasm/archive/refs/tags/nasm-{{self.version().strip()}}.tar.gz
-e525fa6fdc3df33cec6b499111f44afa78ce50bf260158580dcf014015a21ba9
+af2f241ecc061205d73ba4f781f075d025dabaeab020b676b7db144bf7015d6d
 {% endblock %}
 
 {% block bld_libs %}
@@ -25,4 +25,13 @@ lib/c
 {{super()}}
 >nasm.1
 >ndisasm.1
+{% endblock %}
+
+{% block c_flags %}
+-Wno-keyword-macro
+{% endblock %}
+
+{% block patch %}
+sed -e 's|ifdef bool|ifdef xxx|' \
+    -i include/compiler.h
 {% endblock %}
