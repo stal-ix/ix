@@ -5,12 +5,12 @@ at-spi2-core
 {% endblock %}
 
 {% block version %}
-2.58.0
+2.58.1
 {% endblock %}
 
 {% block fetch %}
-https://download.gnome.org/sources/at-spi2-core/2.56/at-spi2-core-{{self.version().strip()}}.tar.xz
-dbe35b951499e1d6f1fb552c2e0a09cea7cba2adf6c2eba0b2c85b6c094a3a02
+https://github.com/GNOME/at-spi2-core/archive/refs/tags/{{self.version().strip()}}.tar.gz
+780544354db3f6b3e4cc0c6dcdf3bfbaac93970a7a1e7e659f24c7308e2b0a1a
 {% endblock %}
 
 {% block lib_deps %}
