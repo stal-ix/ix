@@ -5,12 +5,12 @@ dialog
 {% endblock %}
 
 {% block version %}
-1.3-20250817
+1.3.20251001
 {% endblock %}
 
 {% block fetch %}
-https://invisible-island.net/archives/dialog/dialog-{{self.version().strip()}}.tgz
-6c59b4671616041dcd75d0d4a1d8646e8ca6b10a1ae534d3b9368c4c4ba29aa7
+https://invisible-island.net/archives/dialog/dialog-{{self.version().strip()[:3]}}-{{self.version().strip()[4:]}}.tgz
+bee47347a983312facc4dbcccd7fcc86608d684e1f119d9049c4692213db96c3
 {% endblock %}
 
 {% block bld_libs %}
