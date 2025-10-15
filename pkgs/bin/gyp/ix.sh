@@ -5,15 +5,16 @@ https://chromium.googlesource.com/external/gyp
 {% endblock %}
 
 {% block git_commit %}
-d6c5dd51dc3a60bf4ff32a5256713690a1a10376
+1615ec326858f8c2bd8f30b3a86ea71830409ce4
 {% endblock %}
 
 {% block git_sha %}
-7a6b73d97878eeb2ae967a9bb5b62bea7529f791007430a322a98c12f04bf99f
+27bae2707dad28020df033fd9052434baf0d1135f5a976b408f481d6d8a2dd6f
 {% endblock %}
 
 {% block bld_tool %}
-bld/python/2
+pip/six
+bld/python
 {% endblock %}
 
 {% block install %}
