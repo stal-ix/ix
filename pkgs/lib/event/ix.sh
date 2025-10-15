@@ -27,10 +27,6 @@ lib/bsd/overlay
 bld/python
 {% endblock %}
 
-{% block setup_tools %}
-ln -s $(which python3) python
-{% endblock %}
-
 {% block env %}
 export COFLAGS="--with-libevent=${out} \${COFLAGS}"
 {% endblock %}
