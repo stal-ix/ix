@@ -28,8 +28,9 @@ lib/utf8/proc
 {% endblock %}
 
 {% block bld_tool %}
+bld/python
 bin/libtool/prev
-bld/python/2
+bld/redir(from=python,to=python3)
 {% endblock %}
 
 {% block setup_target_flags %}
@@ -40,10 +41,6 @@ export COFLAGS="${COFLAGS} --with-expat=${expat}/include:${expat}/lib:-lexpat"
 
 {% block patch %}
 rm autogen.sh
-{% endblock %}
-
-{% block setup_tools %}
-ln -s $(which python2) python
 {% endblock %}
 
 {% block install %}
