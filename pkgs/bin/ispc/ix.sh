@@ -27,6 +27,7 @@ bld/m4
 bld/flex
 bld/bison
 bld/python
+bld/llvm/config
 {% endblock %}
 
 {% block cmake_flags %}
@@ -43,19 +44,4 @@ ISPCRT_BUILD_TASK_MODEL=TBB
 -DCLANGPP_EXECUTABLE=$(which clang++)
 -DLLVM_AS_EXECUTABLE=$(which llvm-as)
 -DLLVM_DIS_EXECUTABLE=$(which llvm-dis)
-{% endblock %}
-
-{% block setup_tools %}
-cat << EOF > llvm-config
-#!/usr/bin/env sh
-
-case "\${1}" in
-    --version)
-        echo "14.0.6"
-        exit 0
-    ;;
-esac
-EOF
-
-chmod +x llvm-config
 {% endblock %}
