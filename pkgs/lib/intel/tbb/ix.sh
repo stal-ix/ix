@@ -23,10 +23,6 @@ lib/ucontext
 lib/kernel
 {% endblock %}
 
-{% block setup_tools %}
-ln -s $(which llvm-install-name-tool) install_name_tool
-{% endblock %}
-
 {% block patch %}
 sed -e 's|.*#pragma weak.*||' -i src/tbb/itt_notify.cpp
 {% endblock %}
