@@ -33,13 +33,9 @@ bld/gyp
 bld/perl
 bld/bash
 bld/ninja
-bld/python/2
+bld/python
+bld/redir(from=python,to=python3)
 bin/binutils(for_target={{target.gnu.three}})
-{% endblock %}
-
-{% block setup_tools %}
-ln -s $(which python2) python
-{{super()}}
 {% endblock %}
 
 {% block build %}
