@@ -5,12 +5,12 @@ wayclip
 {% endblock %}
 
 {% block version %}
-0.4.2
+0.5
 {% endblock %}
 
 {% block fetch %}
 https://github.com/noocsharp/wayclip/archive/refs/tags/{{self.version().strip()}}.tar.gz
-2a557e5bc713fdc64da5d957001f05330afbc88b2c59bef056623cfd2809816d
+a73a6f59bf974f5ad5eafe5ce16921083fca05b5b1ddc979023c082be8dc23e6
 {% endblock %}
 
 {% block bld_libs %}
