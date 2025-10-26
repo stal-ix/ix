@@ -5,12 +5,12 @@ libdecor
 {% endblock %}
 
 {% block version %}
-0.2.3
+0.2.4
 {% endblock %}
 
 {% block fetch %}
 https://gitlab.freedesktop.org/libdecor/libdecor/-/archive/{{self.version().strip()}}/libdecor-{{self.version().strip()}}.tar.bz2
-704138616a96eafbe68bbd5e55df2c8adb21ae5ec165ba56b6ea1f99869167d5
+c3510083742e940a169bb3787ff96241167b01a7205c1ed9a9061536770dac8c
 {% endblock %}
 
 {% block lib_deps %}
