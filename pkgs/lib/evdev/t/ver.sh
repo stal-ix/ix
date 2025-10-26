@@ -3,10 +3,10 @@ libevdev
 {% endblock %}
 
 {% block version %}
-1.13.4
+1.13.5
 {% endblock %}
 
 {% block fetch %}
 https://www.freedesktop.org/software/libevdev/libevdev-{{self.version().strip()}}.tar.xz
-f00ab8d42ad8b905296fab67e13b871f1a424839331516642100f82ad88127cd
+89918ae7b7c13936e6482604a77a2bfbbb74544c5d039fde01c3fa1bdf639987
 {% endblock %}
