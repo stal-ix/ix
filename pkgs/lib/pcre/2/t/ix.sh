@@ -5,12 +5,12 @@ pcre2
 {% endblock %}
 
 {% block version %}
-10.46
+10.47
 {% endblock %}
 
 {% block fetch %}
 https://github.com/PCRE2Project/pcre2/releases/download/pcre2-{{self.version().strip()}}/pcre2-{{self.version().strip()}}.tar.bz2
-15fbc5aba6beee0b17aecb04602ae39432393aba1ebd8e39b7cabf7db883299f
+47fe8c99461250d42f89e6e8fdaeba9da057855d06eb7fc08d9ca03fd08d7bc7
 {% endblock %}
 
 {% block lib_deps %}
