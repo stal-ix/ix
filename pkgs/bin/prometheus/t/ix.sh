@@ -5,7 +5,7 @@ prometheus
 {% endblock %}
 
 {% block version %}
-3.6.0
+3.7.2
 {% endblock %}
 
 {% block go_url %}
@@ -13,7 +13,7 @@ https://github.com/prometheus/prometheus/archive/refs/tags/v{{self.version().str
 {% endblock %}
 
 {% block go_sha %}
-7100d2df948e5ee1919d996b2c8667b2e0b5998257232ee98d60cbd6d7c19cb8
+d53e1f48155c6a9cfe5142e7e4714e2d7c0bffa675b7035cc02834e68c421ea6
 {% endblock %}
 
 {% block go_tool %}
