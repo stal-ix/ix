@@ -5,12 +5,12 @@ glm
 {% endblock %}
 
 {% block version %}
-1.0.1
+1.0.2
 {% endblock %}
 
 {% block fetch %}
 https://github.com/g-truc/glm/archive/refs/tags/{{self.version().strip()}}.tar.gz
-9f3174561fd26904b23f0db5e560971cbf9b3cbda0b280f04d5c379d03bf234c
+19edf2e860297efab1c74950e6076bf4dad9de483826bc95e2e0f2c758a43f65
 {% endblock %}
 
 {% block lib_deps %}
