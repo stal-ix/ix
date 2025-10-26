@@ -5,12 +5,12 @@ ngtcp2
 {% endblock %}
 
 {% block version %}
-1.16.0
+1.17.0
 {% endblock %}
 
 {% block fetch %}
 https://github.com/ngtcp2/ngtcp2/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-1f16fbd1c46cc8b8b76106ef890777dec73ef57c1cd567bf6d208f5a2c12ed5e
+6bc477ff47eb62c9be2edd84c58662b180a66c9e9ee546308c65565a6146216f
 {% endblock %}
 
 {% block lib_deps %}
