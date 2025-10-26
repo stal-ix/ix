@@ -5,12 +5,12 @@ toybox
 {% endblock %}
 
 {% block version %}
-0.8.12
+0.8.13
 {% endblock %}
 
 {% block fetch %}
 https://github.com/landley/toybox/archive/refs/tags/{{self.version().strip()}}.tar.gz
-3c529d93923dde67d048e7bcbd5d1bc0dd1ad09362269e2415f5f2eaab349b5b
+fa84ca399c2a88c3d841db943052911355b817f8151cd6bfb9e0b12541e4828c
 {% endblock %}
 
 {% block bld_libs %}
