@@ -5,10 +5,10 @@ git
 {% endblock %}
 
 {% block version %}
-2.51.0
+2.51.1
 {% endblock %}
 
 {% block fetch %}
 https://github.com/git/git/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-3524fc5fd81f16f80e1696a8281bd8ad831048b67848015d7b7382bf365ae685
+586fc2c8ba466c1f2122d44047e5fb575a5c0a7620840d3ab5f6943fc281c8c4
 {% endblock %}

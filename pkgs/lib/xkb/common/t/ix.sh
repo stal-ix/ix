@@ -5,12 +5,12 @@ libxkbcommon
 {% endblock %}
 
 {% block version %}
-1.12.0
+1.12.2
 {% endblock %}
 
 {% block fetch %}
 https://github.com/xkbcommon/libxkbcommon/archive/refs/tags/xkbcommon-{{self.version().strip()}}.tar.gz
-bf9d9e0283ef4211f1f3f228787d38ba095fe9f0e84c5f798b6a8661033a9b51
+40a333433d850c308f6fe8b15b57c54c769aad655e9c6563cc288bc650111ecf
 {% endblock %}
 
 {% block bld_tool %}
@@ -41,4 +41,8 @@ xkb-config-root=${XKB_CONFIG}
 parse_string
 # lib/flite conflict
 utf8_sequence_length
+{% endblock %}
+
+{% block patch %}
+sed -e 's|locale.h||' -i meson.build
 {% endblock %}

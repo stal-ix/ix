@@ -5,12 +5,12 @@ ImageMagick
 {% endblock %}
 
 {% block version %}
-7.1.2.5
+7.1.2.8
 {% endblock %}
 
 {% block fetch %}
 https://imagemagick.org/archive/releases/ImageMagick-{{self.version().strip() | field(0)}}.{{self.version().strip() | field(1)}}.{{self.version().strip() | field(2)}}-{{self.version().strip() | field(3)}}.tar.xz
-3f8a2ef3744a704edec90734106107a6f4548e65a30d91d4dedce4c17c6f9e75
+a4bc9a9b1cdc1fac9ba78b29027378334a6a9221b101560ea97b967c9520f9af
 {% endblock %}
 
 {% block lib_deps %}
