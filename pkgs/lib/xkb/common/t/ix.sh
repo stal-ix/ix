@@ -42,3 +42,7 @@ parse_string
 # lib/flite conflict
 utf8_sequence_length
 {% endblock %}
+
+{% block patch %}
+sed -e 's|locale.h||' -i meson.build
+{% endblock %}
