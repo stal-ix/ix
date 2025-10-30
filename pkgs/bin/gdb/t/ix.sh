@@ -44,6 +44,7 @@ export ac_cv_search_tgetent=no
 --with-xxhash=yes
 --with-lzma=yes
 --with-expat=yes
+--with-zstd=yes
 --disable-werror
 {% endblock %}
 
