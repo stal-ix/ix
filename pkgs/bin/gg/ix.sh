@@ -15,8 +15,3 @@ bin/go/lang/23
 {% block go_bins %}
 gg
 {% endblock %}
-
-{% block install %}
-{{super()}}
-mv ${out}/bin/gg ${out}/bin/ya
-{% endblock %}
