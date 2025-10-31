@@ -66,7 +66,7 @@ def build_graph(n):
             'full': 2 if t > 32 else 1,
             'slot': slots(t),
             'misc': 4,
-            'threads': t,
+            'threads': 1,
             'network': 16,
         },
     }
