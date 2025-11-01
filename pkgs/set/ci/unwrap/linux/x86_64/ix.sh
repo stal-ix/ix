@@ -51,6 +51,7 @@
 #}
 
 {% block run_deps %}
+bin/curl/aws
 bin/python/14
 bin/dsvpn
 bin/sudo
