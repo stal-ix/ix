@@ -7,6 +7,7 @@ https://github.com/aws/aws-lc/archive/refs/tags/v1.63.0.tar.gz
 
 {% block lib_deps %}
 lib/c
+lib/c++
 {% endblock %}
 
 {% block cmake_flags %}
