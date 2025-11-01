@@ -12,9 +12,12 @@ lib/c++
 
 {% block cmake_flags %}
 BUILD_TESTING=OFF
-DISABLE_PERL=ON
-DISABLE_GO=ON
 DISABLE_CPU_JITTER_ENTROPY=ON
+{% endblock %}
+
+{% block bld_tool %}
+bld/perl
+bin/go/lang
 {% endblock %}
 
 {% block env %}
