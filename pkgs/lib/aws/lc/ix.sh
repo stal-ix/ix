@@ -13,9 +13,10 @@ lib/c
 BUILD_TESTING=OFF
 DISABLE_PERL=ON
 DISABLE_GO=ON
+DISABLE_CPU_JITTER_ENTROPY=ON
 {% endblock %}
 
-{% block patch %}
-sed -e 's|.*#error.*||' \
-    -i third_party/jitterentropy/jitterentropy-library/src/jitterentropy-base.c
+{% block env %}
+export SSL_DIR="${out}"
+export COFLAGS="--with-ssl=${out} --with-openssl=${out} --with-openssldir=${out} --with-ssl-dir=$out \${COFLAGS}"
 {% endblock %}
