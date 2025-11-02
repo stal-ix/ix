@@ -20,10 +20,10 @@ bin/impala
 bin/just
 bin/bcache/fs/tools
 bin/bpf/top
-bin/scx/rust/land/runit
+#bin/scx/rust/land/runit
 bin/sys/hud
 bin/regreet
-bin/scx
+#bin/scx
 bin/lapce
 bin/sniff/net
 bin/syd/box
