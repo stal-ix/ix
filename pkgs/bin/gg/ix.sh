@@ -18,5 +18,5 @@ gg
 
 {% block install %}
 {{super()}}
-mv ${out}/bin/gg ${out}/bin/ya
+mv ${out}/bin/gg{{target.exe_suffix}} ${out}/bin/ya{{target.exe_suffix}}
 {% endblock %}
