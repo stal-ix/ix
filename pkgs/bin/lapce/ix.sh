@@ -33,5 +33,5 @@ lapce
 {% endblock %}
 
 {% block cargo_tool %}
-bld/cargo/86
+bld/rust/86
 {% endblock %}

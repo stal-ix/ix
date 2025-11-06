@@ -2,6 +2,7 @@
 
 {% block run_deps %}
 bin/jq
+bin/gg
 bin/b64
 bin/sed
 bin/idn

@@ -59,7 +59,7 @@ def slots(t):
 def build_graph(n):
     t = int(os.environ.get('IX_THREADS') or multiprocessing.cpu_count())
 
-    return {
+    res = {
         'nodes': list(validate(cu.iter_uniq_list(build_commands(n)))),
         'targets': [(x.out_dir + '/touch') for x in n],
         'pools': {
@@ -70,3 +70,14 @@ def build_graph(n):
             'network': 16,
         },
     }
+
+    if t == 1:
+        res['pools'] = {
+            'full': 1,
+            'slot': 1,
+            'misc': 1,
+            'threads': 1,
+            'network': 1,
+        }
+
+    return res

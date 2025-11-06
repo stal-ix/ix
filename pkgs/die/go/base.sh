@@ -13,7 +13,11 @@ lib/c
 {% endblock %}
 
 {% block step_setup %}
+{% if mingw32 %}
+export GOOS=windows
+{% else %}
 export GOOS={{target.os}}
+{% endif %}
 export GOARCH={{target.go_arch}}
 export GOCACHE=${tmp}/cgo
 export GOMODCACHE=${tmp}/gmc

@@ -2,5 +2,5 @@
 
 {% block bld_libs %}
 {{super()}}
-lib/ng/tcp2/openssl
+lib/ng/tcp2
 {% endblock %}
