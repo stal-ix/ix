@@ -5,12 +5,12 @@ hyprutils
 {% endblock %}
 
 {% block version %}
-0.10.0
+0.10.1
 {% endblock %}
 
 {% block fetch %}
 https://github.com/hyprwm/hyprutils/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-0e2d2495166e314a4ef52d97bcae6f82ee10a1247a60e42b2087d876a7563b0c
+052d6081e44ee8d4ee8e623b6b01108a9f61fec34bf396071196fdf69929d273
 {% endblock %}
 
 {% block lib_deps %}
