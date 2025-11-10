@@ -5,12 +5,12 @@ swaylock
 {% endblock %}
 
 {% block version %}
-1.8.3
+1.8.4
 {% endblock %}
 
 {% block fetch %}
 https://github.com/swaywm/swaylock/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-642d9c497f451c7f015ca550362e5250503daddd327846b266db4affd568ab95
+08f85975fb605f60dfd4f3a3be3eae2fd59f884a510fbff702ea5f6ee8ef14df
 {% endblock %}
 
 {% block bld_libs %}
