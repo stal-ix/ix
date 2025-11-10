@@ -5,12 +5,12 @@ robin-map
 {% endblock %}
 
 {% block version %}
-1.4.0
+1.4.1
 {% endblock %}
 
 {% block fetch %}
 https://github.com/Tessil/robin-map/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-7930dbf9634acfc02686d87f615c0f4f33135948130b8922331c16d90a03250c
+0e3f53a377fdcdc5f9fed7a4c0d4f99e82bbb64175233bd13427fef9a771f4a1
 {% endblock %}
 
 {% block lib_deps %}
