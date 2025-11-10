@@ -5,12 +5,12 @@ libnvme
 {% endblock %}
 
 {% block version %}
-1.15
+1.16.1
 {% endblock %}
 
 {% block fetch %}
 https://github.com/linux-nvme/libnvme/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-c21cd9379390bdc52c9d9569a241274f8115fc247b76a5d922d639f48c8174a2
+ce1d9d393feb84c4e82ca096db2bdb7dd4a5fd1997d711cc1904796944f2c579
 {% endblock %}
 
 {% block lib_deps %}
