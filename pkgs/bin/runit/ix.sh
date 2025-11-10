@@ -5,12 +5,12 @@ runit
 {% endblock %}
 
 {% block version %}
-2.2.0
+2.3.0
 {% endblock %}
 
 {% block fetch %}
 https://smarden.org/runit/runit-{{self.version().strip()}}.tar.gz
-95ef4d2868b978c7179fe47901e5c578e11cf273d292bd6208bd3a7ccb029290
+190e11c1f8072b543bb6bd53850555c458d6e306d53df3fc1232d300c3e21b51
 {% endblock %}
 
 {% block bld_libs %}
