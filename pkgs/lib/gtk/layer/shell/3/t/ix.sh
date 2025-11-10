@@ -5,12 +5,12 @@ gtk-layer-shell
 {% endblock %}
 
 {% block version %}
-0.9.2
+0.10.0
 {% endblock %}
 
 {% block fetch %}
 https://github.com/wmww/gtk-layer-shell/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-526dd95c083e2a73eafd8baa1f5d676a36cb80fc8e7b304cbe3efebd62f0600c
+ed9bb801d6d9252defba41104820ace595dac824dc8972a758ee2ad134e10505
 {% endblock %}
 
 {% block lib_deps %}
