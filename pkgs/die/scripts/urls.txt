@@ -416,6 +416,7 @@ https://codeberg.org/mbunkus/mkvtoolnix/archive/release-92.0.tar.gz
 https://codeberg.org/mbunkus/mkvtoolnix/archive/release-93.0.tar.gz
 https://codeberg.org/mbunkus/mkvtoolnix/archive/release-94.0.tar.gz
 https://codeberg.org/mbunkus/mkvtoolnix/archive/release-95.0.tar.gz
+https://codeberg.org/mbunkus/mkvtoolnix/archive/release-96.0.tar.gz
 https://codeberg.org/soundtouch/soundtouch/archive/2.3.1.tar.gz
 https://codeberg.org/sox_ng/sox_ng/archive/sox_ng-14.5.1.2.tar.gz
 https://codeberg.org/sox_ng/sox_ng/archive/sox_ng-14.6.0.1.tar.gz
@@ -423,6 +424,7 @@ https://codeberg.org/sox_ng/sox_ng/archive/sox_ng-14.6.0.2.tar.gz
 https://codeberg.org/sox_ng/sox_ng/archive/sox_ng-14.6.0.3.tar.gz
 https://codeberg.org/sox_ng/sox_ng/archive/sox_ng-14.6.0.4.tar.gz
 https://codeberg.org/sox_ng/sox_ng/archive/sox_ng-14.6.0.tar.gz
+https://codeberg.org/sox_ng/sox_ng/archive/sox_ng-14.6.1.2.tar.gz
 https://codeberg.org/sox_ng/sox_ng/archive/sox_ng-14.6.1.tar.gz
 https://codeberg.org/tenacityteam/libmad/archive/0.16.3.tar.gz
 https://codeberg.org/tenacityteam/libmad/archive/0.16.4.tar.gz
@@ -616,6 +618,7 @@ https://downloads.sourceforge.net/project/fetchmail/branch_6.5/fetchmail-6.5.4.t
 https://downloads.sourceforge.net/project/fetchmail/branch_6.5/fetchmail-6.5.5.tar.xz
 https://downloads.sourceforge.net/project/fetchmail/branch_6.5/fetchmail-6.5.6.tar.xz
 https://downloads.sourceforge.net/project/fetchmail/branch_6.5/fetchmail-6.5.7.tar.xz
+https://downloads.sourceforge.net/project/fetchmail/branch_6.6/fetchmail-6.6.0.tar.xz
 https://downloads.sourceforge.net/project/giflib/giflib-5.2.1.tar.gz
 https://downloads.sourceforge.net/project/giflib/giflib-5.2.2.tar.gz
 https://downloads.sourceforge.net/project/gnu-efi/gnu-efi-3.0.15.tar.bz2
@@ -690,6 +693,7 @@ https://downloads.sourceforge.net/project/sbcl/sbcl/2.4.7/sbcl-2.4.7-source.tar.
 https://downloads.sourceforge.net/project/sbcl/sbcl/2.4.8/sbcl-2.4.8-source.tar.bz2
 https://downloads.sourceforge.net/project/sbcl/sbcl/2.4.9/sbcl-2.4.9-source.tar.bz2
 https://downloads.sourceforge.net/project/sbcl/sbcl/2.5.1/sbcl-2.5.1-source.tar.bz2
+https://downloads.sourceforge.net/project/sbcl/sbcl/2.5.10/sbcl-2.5.10-source.tar.bz2
 https://downloads.sourceforge.net/project/sbcl/sbcl/2.5.2/sbcl-2.5.2-source.tar.bz2
 https://downloads.sourceforge.net/project/sbcl/sbcl/2.5.3/sbcl-2.5.3-source.tar.bz2
 https://downloads.sourceforge.net/project/sbcl/sbcl/2.5.4/sbcl-2.5.4-source.tar.bz2
@@ -723,6 +727,7 @@ https://dri.freedesktop.org/libdrm/libdrm-2.4.124.tar.xz
 https://dri.freedesktop.org/libdrm/libdrm-2.4.125.tar.xz
 https://dri.freedesktop.org/libdrm/libdrm-2.4.126.tar.xz
 https://dri.freedesktop.org/libdrm/libdrm-2.4.127.tar.xz
+https://dri.freedesktop.org/libdrm/libdrm-2.4.128.tar.xz
 https://evilpiepirate.org/bcachefs-tools/bcachefs-tools-1.4.1.tar.zst
 https://ffmpeg.org/releases/ffmpeg-5.1.2.tar.xz
 https://ffmpeg.org/releases/ffmpeg-6.0.1.tar.xz
@@ -984,6 +989,7 @@ https://ftp.isc.org/isc/dhcp/4.4.3-P1/dhcp-4.4.3-P1.tar.gz
 https://ftp.mozilla.org/pub/nspr/releases/v4.35/src/nspr-4.35.tar.gz
 https://ftp.mozilla.org/pub/nspr/releases/v4.36/src/nspr-4.36.tar.gz
 https://ftp.mozilla.org/pub/nspr/releases/v4.37/src/nspr-4.37.tar.gz
+https://ftp.mozilla.org/pub/nspr/releases/v4.38/src/nspr-4.38.tar.gz
 https://ftp.mozilla.org/pub/security/nss/releases/NSS_3_100_RTM/src/nss-3.100.tar.gz
 https://ftp.mozilla.org/pub/security/nss/releases/NSS_3_102_RTM/src/nss-3.102.tar.gz
 https://ftp.mozilla.org/pub/security/nss/releases/NSS_3_103_RTM/src/nss-3.103.tar.gz
@@ -1378,6 +1384,7 @@ https://github.com/GNOME/zenity/archive/refs/tags/4.0.3.tar.gz
 https://github.com/GNOME/zenity/archive/refs/tags/4.0.5.tar.gz
 https://github.com/GNOME/zenity/archive/refs/tags/4.1.90.tar.gz
 https://github.com/GNOME/zenity/archive/refs/tags/4.2.0.tar.gz
+https://github.com/GNOME/zenity/archive/refs/tags/4.2.1.tar.gz
 https://github.com/GStreamer/orc/archive/refs/tags/0.4.34.tar.gz
 https://github.com/GStreamer/orc/archive/refs/tags/0.4.35.tar.gz
 https://github.com/GStreamer/orc/archive/refs/tags/0.4.37.tar.gz
@@ -1705,6 +1712,7 @@ https://github.com/NixOS/nix/archive/refs/tags/2.31.1.tar.gz
 https://github.com/NixOS/nix/archive/refs/tags/2.31.2.tar.gz
 https://github.com/NixOS/nix/archive/refs/tags/2.32.0.tar.gz
 https://github.com/NixOS/nix/archive/refs/tags/2.32.1.tar.gz
+https://github.com/NixOS/nix/archive/refs/tags/2.32.3.tar.gz
 https://github.com/NixOS/patchelf/archive/refs/tags/0.18.0.tar.gz
 https://github.com/Novum/vkQuake/archive/refs/tags/1.30.1.tar.gz
 https://github.com/Novum/vkQuake/archive/refs/tags/1.31.2.tar.gz
@@ -1774,6 +1782,7 @@ https://github.com/SagerNet/sing-box/archive/refs/tags/v1.11.14.tar.gz
 https://github.com/SagerNet/sing-box/archive/refs/tags/v1.11.15.tar.gz
 https://github.com/SagerNet/sing-box/archive/refs/tags/v1.12.1.tar.gz
 https://github.com/SagerNet/sing-box/archive/refs/tags/v1.12.11.tar.gz
+https://github.com/SagerNet/sing-box/archive/refs/tags/v1.12.12.tar.gz
 https://github.com/SagerNet/sing-box/archive/refs/tags/v1.12.3.tar.gz
 https://github.com/SagerNet/sing-box/archive/refs/tags/v1.12.4.tar.gz
 https://github.com/SagerNet/sing-box/archive/refs/tags/v1.12.8.tar.gz
@@ -1796,6 +1805,7 @@ https://github.com/Terraspace/UASM/archive/refs/tags/v2.56.2.tar.gz
 https://github.com/Terraspace/UASM/archive/refs/tags/v2.57r.tar.gz
 https://github.com/Tessil/robin-map/archive/refs/tags/v1.2.1.tar.gz
 https://github.com/Tessil/robin-map/archive/refs/tags/v1.4.0.tar.gz
+https://github.com/Tessil/robin-map/archive/refs/tags/v1.4.1.tar.gz
 https://github.com/Tomas-M/iotop/archive/refs/tags/v1.23.tar.gz
 https://github.com/Tomas-M/iotop/archive/refs/tags/v1.26.tar.gz
 https://github.com/Tomas-M/iotop/archive/refs/tags/v1.27.tar.gz
@@ -1812,6 +1822,7 @@ https://github.com/VirusTotal/yara/archive/refs/tags/v4.2.2.tar.gz
 https://github.com/VirusTotal/yara/archive/refs/tags/v4.5.2.tar.gz
 https://github.com/VirusTotal/yara/archive/refs/tags/v4.5.3.tar.gz
 https://github.com/VirusTotal/yara/archive/refs/tags/v4.5.4.tar.gz
+https://github.com/VirusTotal/yara/archive/refs/tags/v4.5.5.tar.gz
 https://github.com/WasmEdge/WasmEdge/archive/refs/tags/0.13.3.tar.gz
 https://github.com/WasmEdge/WasmEdge/archive/refs/tags/0.13.5.tar.gz
 https://github.com/WasmEdge/WasmEdge/archive/refs/tags/0.14.1.tar.gz
@@ -1869,6 +1880,7 @@ https://github.com/Z3Prover/z3/archive/refs/tags/z3-4.15.0.tar.gz
 https://github.com/Z3Prover/z3/archive/refs/tags/z3-4.15.1.tar.gz
 https://github.com/Z3Prover/z3/archive/refs/tags/z3-4.15.2.tar.gz
 https://github.com/Z3Prover/z3/archive/refs/tags/z3-4.15.3.tar.gz
+https://github.com/Z3Prover/z3/archive/refs/tags/z3-4.15.4.tar.gz
 https://github.com/a-j-wood/pv/releases/download/v1.7.24/pv-1.7.24.tar.gz
 https://github.com/abseil/abseil-cpp/archive/refs/tags/20230125.3.tar.gz
 https://github.com/abseil/abseil-cpp/archive/refs/tags/20230802.1.tar.gz
@@ -2051,6 +2063,7 @@ https://github.com/astral-sh/ruff/archive/refs/tags/0.12.5.tar.gz
 https://github.com/astral-sh/ruff/archive/refs/tags/0.12.8.tar.gz
 https://github.com/astral-sh/ruff/archive/refs/tags/0.9.6.tar.gz
 https://github.com/avahi/avahi/releases/download/v0.8/avahi-0.8.tar.gz
+https://github.com/aws/aws-lc/archive/refs/tags/v1.63.0.tar.gz
 https://github.com/axboe/liburing/archive/refs/tags/liburing-2.10.tar.gz
 https://github.com/axboe/liburing/archive/refs/tags/liburing-2.11.tar.gz
 https://github.com/axboe/liburing/archive/refs/tags/liburing-2.12.tar.gz
@@ -2067,6 +2080,7 @@ https://github.com/benhoyt/goawk/archive/refs/tags/v1.25.0.tar.gz
 https://github.com/benhoyt/goawk/archive/refs/tags/v1.26.0.tar.gz
 https://github.com/benhoyt/goawk/archive/refs/tags/v1.28.1.tar.gz
 https://github.com/benhoyt/goawk/archive/refs/tags/v1.29.1.tar.gz
+https://github.com/benhoyt/goawk/archive/refs/tags/v1.30.0.tar.gz
 https://github.com/benhoyt/inih/archive/refs/tags/r57.tar.gz
 https://github.com/benhoyt/inih/archive/refs/tags/r58.tar.gz
 https://github.com/benhoyt/inih/archive/refs/tags/r59.tar.gz
@@ -2331,6 +2345,7 @@ https://github.com/ebiggers/libdeflate/archive/refs/tags/v1.21.tar.gz
 https://github.com/ebiggers/libdeflate/archive/refs/tags/v1.22.tar.gz
 https://github.com/ebiggers/libdeflate/archive/refs/tags/v1.23.tar.gz
 https://github.com/ebiggers/libdeflate/archive/refs/tags/v1.24.tar.gz
+https://github.com/ebiggers/libdeflate/archive/refs/tags/v1.25.tar.gz
 https://github.com/editorconfig/editorconfig-core-c/archive/refs/tags/v0.12.10.tar.gz
 https://github.com/editorconfig/editorconfig-core-c/archive/refs/tags/v0.12.6.tar.gz
 https://github.com/editorconfig/editorconfig-core-c/archive/refs/tags/v0.12.9.tar.gz
@@ -2345,6 +2360,7 @@ https://github.com/elementary/files/archive/refs/tags/7.1.2.tar.gz
 https://github.com/elementary/files/archive/refs/tags/7.1.3.tar.gz
 https://github.com/elementary/files/archive/refs/tags/7.1.4.tar.gz
 https://github.com/elementary/files/archive/refs/tags/7.1.5.tar.gz
+https://github.com/elementary/files/archive/refs/tags/7.1.6.tar.gz
 https://github.com/elementary/granite/archive/refs/tags/6.2.0.tar.gz
 https://github.com/elementary/granite/archive/refs/tags/7.5.0.tar.gz
 https://github.com/elementary/granite/archive/refs/tags/7.6.0.tar.gz
@@ -2423,6 +2439,7 @@ https://github.com/evanw/esbuild/archive/refs/tags/v0.25.5.tar.gz
 https://github.com/evanw/esbuild/archive/refs/tags/v0.25.6.tar.gz
 https://github.com/evanw/esbuild/archive/refs/tags/v0.25.8.tar.gz
 https://github.com/evanw/esbuild/archive/refs/tags/v0.25.9.tar.gz
+https://github.com/evanw/esbuild/archive/refs/tags/v0.27.0.tar.gz
 https://github.com/exfatprogs/exfatprogs/archive/refs/tags/1.2.2.tar.gz
 https://github.com/exfatprogs/exfatprogs/archive/refs/tags/1.2.4.tar.gz
 https://github.com/exfatprogs/exfatprogs/archive/refs/tags/1.2.5.tar.gz
@@ -2610,6 +2627,7 @@ https://github.com/fmtlib/fmt/archive/refs/tags/11.1.3.tar.gz
 https://github.com/fmtlib/fmt/archive/refs/tags/11.1.4.tar.gz
 https://github.com/fmtlib/fmt/archive/refs/tags/11.2.0.tar.gz
 https://github.com/fmtlib/fmt/archive/refs/tags/12.0.0.tar.gz
+https://github.com/fmtlib/fmt/archive/refs/tags/12.1.0.tar.gz
 https://github.com/fmtlib/fmt/archive/refs/tags/9.1.0.tar.gz
 https://github.com/folkertvanheusden/HTTPing/archive/refs/tags/v4.1.0.tar.gz
 https://github.com/folkertvanheusden/HTTPing/archive/refs/tags/v4.2.0.tar.gz
@@ -2680,6 +2698,7 @@ https://github.com/git/git/archive/refs/tags/v2.50.0.tar.gz
 https://github.com/git/git/archive/refs/tags/v2.50.1.tar.gz
 https://github.com/git/git/archive/refs/tags/v2.51.0.tar.gz
 https://github.com/git/git/archive/refs/tags/v2.51.1.tar.gz
+https://github.com/git/git/archive/refs/tags/v2.51.2.tar.gz
 https://github.com/glencoesoftware/jxrlib/archive/refs/tags/v0.2.4.tar.gz
 https://github.com/glennrp/libpng/archive/refs/tags/v1.6.40.tar.gz
 https://github.com/glennrp/libpng/archive/refs/tags/v1.6.41.tar.gz
@@ -2776,6 +2795,7 @@ https://github.com/golang/go/archive/refs/tags/go1.25.0.tar.gz
 https://github.com/golang/go/archive/refs/tags/go1.25.1.tar.gz
 https://github.com/golang/go/archive/refs/tags/go1.25.2.tar.gz
 https://github.com/google/brotli/archive/refs/tags/v1.1.0.tar.gz
+https://github.com/google/brotli/archive/refs/tags/v1.2.0.tar.gz
 https://github.com/google/crc32c/archive/refs/tags/1.1.2.tar.gz
 https://github.com/google/double-conversion/archive/refs/tags/v3.3.0.tar.gz
 https://github.com/google/double-conversion/archive/refs/tags/v3.3.1.tar.gz
@@ -2813,6 +2833,7 @@ https://github.com/google/re2/archive/refs/tags/2025-07-17.tar.gz
 https://github.com/google/re2/archive/refs/tags/2025-07-22.tar.gz
 https://github.com/google/re2/archive/refs/tags/2025-08-05.tar.gz
 https://github.com/google/re2/archive/refs/tags/2025-08-12.tar.gz
+https://github.com/google/re2/archive/refs/tags/2025-11-05.tar.gz
 https://github.com/google/shaderc/archive/refs/tags/v2023.6.tar.gz
 https://github.com/google/shaderc/archive/refs/tags/v2023.7.tar.gz
 https://github.com/google/shaderc/archive/refs/tags/v2023.8.tar.gz
@@ -2875,6 +2896,7 @@ https://github.com/harfbuzz/harfbuzz/archive/refs/tags/11.4.1.tar.gz
 https://github.com/harfbuzz/harfbuzz/archive/refs/tags/11.4.5.tar.gz
 https://github.com/harfbuzz/harfbuzz/archive/refs/tags/11.5.0.tar.gz
 https://github.com/harfbuzz/harfbuzz/archive/refs/tags/12.1.0.tar.gz
+https://github.com/harfbuzz/harfbuzz/archive/refs/tags/12.2.0.tar.gz
 https://github.com/harfbuzz/harfbuzz/archive/refs/tags/8.2.0.tar.gz
 https://github.com/harfbuzz/harfbuzz/archive/refs/tags/8.2.1.tar.gz
 https://github.com/harfbuzz/harfbuzz/archive/refs/tags/8.2.2.tar.gz
@@ -2901,6 +2923,7 @@ https://github.com/hpjansson/chafa/archive/refs/tags/1.14.4.tar.gz
 https://github.com/hpjansson/chafa/archive/refs/tags/1.14.5.tar.gz
 https://github.com/hpjansson/chafa/archive/refs/tags/1.16.1.tar.gz
 https://github.com/hpjansson/chafa/archive/refs/tags/1.16.2.tar.gz
+https://github.com/hpjansson/chafa/archive/refs/tags/1.18.0.tar.gz
 https://github.com/hramrach/lm-sensors/archive/refs/tags/V3-6-2.tar.gz
 https://github.com/htop-dev/htop/archive/refs/tags/3.2.2.tar.gz
 https://github.com/htop-dev/htop/archive/refs/tags/3.3.0.tar.gz
@@ -3015,6 +3038,7 @@ https://github.com/hyprwm/hyprpicker/archive/refs/tags/v0.4.3.tar.gz
 https://github.com/hyprwm/hyprpicker/archive/refs/tags/v0.4.4.tar.gz
 https://github.com/hyprwm/hyprpicker/archive/refs/tags/v0.4.5.tar.gz
 https://github.com/hyprwm/hyprutils/archive/refs/tags/v0.10.0.tar.gz
+https://github.com/hyprwm/hyprutils/archive/refs/tags/v0.10.1.tar.gz
 https://github.com/hyprwm/hyprutils/archive/refs/tags/v0.2.1.tar.gz
 https://github.com/hyprwm/hyprutils/archive/refs/tags/v0.2.2.tar.gz
 https://github.com/hyprwm/hyprutils/archive/refs/tags/v0.2.3.tar.gz
@@ -3087,6 +3111,7 @@ https://github.com/ipfs/ipget/archive/refs/tags/v0.11.1.tar.gz
 https://github.com/ipfs/ipget/archive/refs/tags/v0.11.2.tar.gz
 https://github.com/ipfs/ipget/archive/refs/tags/v0.11.3.tar.gz
 https://github.com/ipfs/ipget/archive/refs/tags/v0.12.0.tar.gz
+https://github.com/ipfs/ipget/archive/refs/tags/v0.12.1.tar.gz
 https://github.com/ipfs/ipget/archive/refs/tags/v0.9.2.tar.gz
 https://github.com/iproute2/iproute2/archive/refs/tags/v6.10.0.tar.gz
 https://github.com/iproute2/iproute2/archive/refs/tags/v6.11.0.tar.gz
@@ -3484,6 +3509,7 @@ https://github.com/libsdl-org/SDL/archive/refs/tags/release-3.2.18.tar.gz
 https://github.com/libsdl-org/SDL/archive/refs/tags/release-3.2.20.tar.gz
 https://github.com/libsdl-org/SDL/archive/refs/tags/release-3.2.22.tar.gz
 https://github.com/libsdl-org/SDL/archive/refs/tags/release-3.2.24.tar.gz
+https://github.com/libsdl-org/SDL/archive/refs/tags/release-3.2.26.tar.gz
 https://github.com/libsdl-org/SDL/archive/refs/tags/release-3.2.4.tar.gz
 https://github.com/libsdl-org/SDL/archive/refs/tags/release-3.2.6.tar.gz
 https://github.com/libsdl-org/SDL/releases/download/release-2.28.3/SDL2-2.28.3.tar.gz
@@ -3511,6 +3537,7 @@ https://github.com/libsdl-org/SDL_ttf/archive/refs/tags/release-3.2.2.tar.gz
 https://github.com/libsdl-org/sdl12-compat/archive/refs/tags/release-1.2.60.tar.gz
 https://github.com/libsdl-org/sdl12-compat/archive/refs/tags/release-1.2.64.tar.gz
 https://github.com/libsdl-org/sdl12-compat/archive/refs/tags/release-1.2.68.tar.gz
+https://github.com/libsdl-org/sdl12-compat/archive/refs/tags/release-1.2.70.tar.gz
 https://github.com/libsixel/libsixel/archive/refs/tags/v1.10.3.tar.gz
 https://github.com/libsixel/libsixel/archive/refs/tags/v1.10.5.tar.gz
 https://github.com/libsndfile/libsamplerate/archive/refs/tags/0.2.2.tar.gz
@@ -3559,6 +3586,7 @@ https://github.com/linux-nvme/libnvme/archive/refs/tags/v1.12.tar.gz
 https://github.com/linux-nvme/libnvme/archive/refs/tags/v1.13.tar.gz
 https://github.com/linux-nvme/libnvme/archive/refs/tags/v1.14.tar.gz
 https://github.com/linux-nvme/libnvme/archive/refs/tags/v1.15.tar.gz
+https://github.com/linux-nvme/libnvme/archive/refs/tags/v1.16.1.tar.gz
 https://github.com/linux-nvme/libnvme/archive/refs/tags/v1.5.tar.gz
 https://github.com/linux-nvme/libnvme/archive/refs/tags/v1.6.tar.gz
 https://github.com/linux-nvme/libnvme/archive/refs/tags/v1.8.tar.gz
@@ -3569,6 +3597,7 @@ https://github.com/linux-nvme/nvme-cli/archive/refs/tags/v2.12.tar.gz
 https://github.com/linux-nvme/nvme-cli/archive/refs/tags/v2.13.tar.gz
 https://github.com/linux-nvme/nvme-cli/archive/refs/tags/v2.14.tar.gz
 https://github.com/linux-nvme/nvme-cli/archive/refs/tags/v2.15.tar.gz
+https://github.com/linux-nvme/nvme-cli/archive/refs/tags/v2.16.tar.gz
 https://github.com/linux-nvme/nvme-cli/archive/refs/tags/v2.5.tar.gz
 https://github.com/linux-nvme/nvme-cli/archive/refs/tags/v2.6.tar.gz
 https://github.com/linux-nvme/nvme-cli/archive/refs/tags/v2.8.tar.gz
@@ -3665,6 +3694,7 @@ https://github.com/lxqt/lxqt-build-tools/archive/refs/tags/2.0.0.tar.gz
 https://github.com/lxqt/lxqt-build-tools/archive/refs/tags/2.1.0.tar.gz
 https://github.com/lxqt/lxqt-build-tools/archive/refs/tags/2.2.0.tar.gz
 https://github.com/lxqt/lxqt-build-tools/archive/refs/tags/2.2.1.tar.gz
+https://github.com/lxqt/lxqt-build-tools/archive/refs/tags/2.3.0.tar.gz
 https://github.com/lxqt/lxqt-openssh-askpass/archive/refs/tags/2.0.0.tar.gz
 https://github.com/lxqt/lxqt-openssh-askpass/archive/refs/tags/2.2.0.tar.gz
 https://github.com/lyonel/lshw/archive/refs/tags/B.02.19.tar.gz
@@ -3859,6 +3889,7 @@ https://github.com/neovim/neovim/archive/refs/tags/v0.11.1.tar.gz
 https://github.com/neovim/neovim/archive/refs/tags/v0.11.2.tar.gz
 https://github.com/neovim/neovim/archive/refs/tags/v0.11.3.tar.gz
 https://github.com/neovim/neovim/archive/refs/tags/v0.11.4.tar.gz
+https://github.com/neovim/neovim/archive/refs/tags/v0.11.5.tar.gz
 https://github.com/neovim/neovim/archive/refs/tags/v0.9.2.tar.gz
 https://github.com/neovim/neovim/archive/refs/tags/v0.9.4.tar.gz
 https://github.com/neovim/neovim/archive/refs/tags/v0.9.5.tar.gz
@@ -3974,6 +4005,7 @@ https://github.com/oneapi-src/oneTBB/archive/refs/tags/v2021.13.0.tar.gz
 https://github.com/oneapi-src/oneTBB/archive/refs/tags/v2021.7.0.tar.gz
 https://github.com/oneapi-src/oneTBB/archive/refs/tags/v2022.1.0.tar.gz
 https://github.com/oneapi-src/oneTBB/archive/refs/tags/v2022.2.0.tar.gz
+https://github.com/oneapi-src/oneTBB/archive/refs/tags/v2022.3.0.tar.gz
 https://github.com/onetrueawk/awk/archive/refs/tags/20220122.tar.gz
 https://github.com/onetrueawk/awk/archive/refs/tags/20240311.tar.gz
 https://github.com/onetrueawk/awk/archive/refs/tags/20240422.tar.gz
@@ -4075,6 +4107,7 @@ https://github.com/pkgconf/pkgconf/archive/refs/tags/pkgconf-2.5.0.tar.gz
 https://github.com/pkgconf/pkgconf/archive/refs/tags/pkgconf-2.5.1.tar.gz
 https://github.com/plougher/squashfs-tools/archive/refs/tags/4.6.1.tar.gz
 https://github.com/plougher/squashfs-tools/archive/refs/tags/4.7.2.tar.gz
+https://github.com/plougher/squashfs-tools/archive/refs/tags/4.7.4.tar.gz
 https://github.com/plougher/squashfs-tools/archive/refs/tags/4.7.tar.gz
 https://github.com/podofo/podofo/archive/refs/tags/0.10.2.tar.gz
 https://github.com/podofo/podofo/archive/refs/tags/0.10.3.tar.gz
@@ -4108,6 +4141,7 @@ https://github.com/project-repo/cagebreak/archive/refs/tags/2.3.1.tar.gz
 https://github.com/project-repo/cagebreak/archive/refs/tags/2.4.0.tar.gz
 https://github.com/project-repo/cagebreak/archive/refs/tags/3.0.0.tar.gz
 https://github.com/project-repo/cagebreak/archive/refs/tags/3.0.1.tar.gz
+https://github.com/project-repo/cagebreak/archive/refs/tags/3.1.0.tar.gz
 https://github.com/projectdiscovery/dnsx/archive/refs/tags/v1.1.6.tar.gz
 https://github.com/projectdiscovery/dnsx/archive/refs/tags/v1.2.2.tar.gz
 https://github.com/prometheus/node_exporter/archive/refs/tags/v1.10.2.tar.gz
@@ -4135,6 +4169,7 @@ https://github.com/prometheus/prometheus/archive/refs/tags/v3.4.2.tar.gz
 https://github.com/prometheus/prometheus/archive/refs/tags/v3.5.0.tar.gz
 https://github.com/prometheus/prometheus/archive/refs/tags/v3.6.0.tar.gz
 https://github.com/prometheus/prometheus/archive/refs/tags/v3.7.2.tar.gz
+https://github.com/prometheus/prometheus/archive/refs/tags/v3.7.3.tar.gz
 https://github.com/prometheus/prometheus/releases/download/v2.50.1/prometheus-web-ui-2.50.1.tar.gz
 https://github.com/protobuf-c/protobuf-c/archive/refs/tags/v1.4.1.tar.gz
 https://github.com/protobuf-c/protobuf-c/archive/refs/tags/v1.5.0.tar.gz
@@ -4164,6 +4199,7 @@ https://github.com/pwmt/zathura-ps/archive/refs/tags/0.2.8.tar.gz
 https://github.com/pwmt/zathura/archive/refs/tags/0.5.11.tar.gz
 https://github.com/pwmt/zathura/archive/refs/tags/0.5.12.tar.gz
 https://github.com/pwmt/zathura/archive/refs/tags/0.5.13.tar.gz
+https://github.com/pwmt/zathura/archive/refs/tags/0.5.14.tar.gz
 https://github.com/pwmt/zathura/archive/refs/tags/0.5.6.tar.gz
 https://github.com/pwmt/zathura/archive/refs/tags/0.5.8.tar.gz
 https://github.com/pwmt/zathura/archive/refs/tags/0.5.9.tar.gz
@@ -4287,6 +4323,7 @@ https://github.com/rakshasa/rtorrent/archive/refs/tags/v0.15.0.tar.gz
 https://github.com/rakshasa/rtorrent/archive/refs/tags/v0.15.2.tar.gz
 https://github.com/randombit/botan/archive/refs/tags/2.19.3.tar.gz
 https://github.com/randombit/botan/archive/refs/tags/2.19.5.tar.gz
+https://github.com/randombit/botan/archive/refs/tags/3.10.0.tar.gz
 https://github.com/randombit/botan/archive/refs/tags/3.3.0.tar.gz
 https://github.com/randombit/botan/archive/refs/tags/3.4.0.tar.gz
 https://github.com/randombit/botan/archive/refs/tags/3.5.0.tar.gz
@@ -4316,6 +4353,7 @@ https://github.com/redis/redis/archive/refs/tags/8.0.3.tar.gz
 https://github.com/redis/redis/archive/refs/tags/8.2.0.tar.gz
 https://github.com/redis/redis/archive/refs/tags/8.2.1.tar.gz
 https://github.com/redis/redis/archive/refs/tags/8.2.2.tar.gz
+https://github.com/redis/redis/archive/refs/tags/8.2.3.tar.gz
 https://github.com/relan/exfat/releases/download/v1.4.0/exfat-utils-1.4.0.tar.gz
 https://github.com/reubeno/brush/archive/refs/tags/brush-shell-v0.2.19.tar.gz
 https://github.com/reubeno/brush/archive/refs/tags/brush-shell-v0.2.20.tar.gz
@@ -4514,6 +4552,7 @@ https://github.com/simdjson/simdjson/archive/refs/tags/v3.12.3.tar.gz
 https://github.com/simdjson/simdjson/archive/refs/tags/v3.13.0.tar.gz
 https://github.com/simdjson/simdjson/archive/refs/tags/v4.0.6.tar.gz
 https://github.com/simdjson/simdjson/archive/refs/tags/v4.0.7.tar.gz
+https://github.com/simdjson/simdjson/archive/refs/tags/v4.2.1.tar.gz
 https://github.com/simdutf/simdutf/archive/refs/tags/v7.4.0.tar.gz
 https://github.com/simdutf/simdutf/archive/refs/tags/v7.5.0.tar.gz
 https://github.com/sivel/speedtest-cli/archive/refs/tags/v2.1.3.tar.gz
@@ -4557,6 +4596,7 @@ https://github.com/squid-cache/squid/archive/refs/tags/SQUID_6_13.tar.gz
 https://github.com/squid-cache/squid/archive/refs/tags/SQUID_6_14.tar.gz
 https://github.com/squid-cache/squid/archive/refs/tags/SQUID_7_1.tar.gz
 https://github.com/squid-cache/squid/archive/refs/tags/SQUID_7_2.tar.gz
+https://github.com/squid-cache/squid/archive/refs/tags/SQUID_7_3.tar.gz
 https://github.com/squidowl/halloy/archive/refs/tags/2024.14.tar.gz
 https://github.com/squidowl/halloy/archive/refs/tags/2025.1.tar.gz
 https://github.com/squidowl/halloy/archive/refs/tags/2025.2.tar.gz
@@ -4590,6 +4630,7 @@ https://github.com/stephenberry/glaze/archive/refs/tags/v5.7.1.tar.gz
 https://github.com/stephenberry/glaze/archive/refs/tags/v5.7.2.tar.gz
 https://github.com/stephenberry/glaze/archive/refs/tags/v6.0.0.tar.gz
 https://github.com/stephenberry/glaze/archive/refs/tags/v6.0.1.tar.gz
+https://github.com/stephenberry/glaze/archive/refs/tags/v6.0.2.tar.gz
 https://github.com/stevegrubb/libcap-ng/archive/refs/tags/v0.8.3.tar.gz
 https://github.com/stevegrubb/libcap-ng/archive/refs/tags/v0.8.4.tar.gz
 https://github.com/stevegrubb/libcap-ng/archive/refs/tags/v0.8.5.tar.gz
@@ -4650,6 +4691,7 @@ https://github.com/swaywm/swaylock/archive/refs/tags/v1.7.2.tar.gz
 https://github.com/swaywm/swaylock/archive/refs/tags/v1.8.0.tar.gz
 https://github.com/swaywm/swaylock/archive/refs/tags/v1.8.2.tar.gz
 https://github.com/swaywm/swaylock/archive/refs/tags/v1.8.3.tar.gz
+https://github.com/swaywm/swaylock/archive/refs/tags/v1.8.4.tar.gz
 https://github.com/swaywm/wlroots/archive/refs/tags/0.12.0.tar.gz
 https://github.com/sxyazi/yazi/archive/refs/tags/v0.2.5.tar.gz
 https://github.com/sxyazi/yazi/archive/refs/tags/v0.3.1.tar.gz
@@ -4766,6 +4808,7 @@ https://github.com/tenox7/ttyplot/archive/refs/tags/1.7.4.tar.gz
 https://github.com/tesseract-ocr/tesseract/archive/refs/tags/5.2.0.tar.gz
 https://github.com/tesseract-ocr/tesseract/archive/refs/tags/5.5.0.tar.gz
 https://github.com/tesseract-ocr/tesseract/archive/refs/tags/5.5.1.tar.gz
+https://github.com/tetratelabs/wazero/archive/refs/tags/v1.10.0.tar.gz
 https://github.com/tetratelabs/wazero/archive/refs/tags/v1.5.0.tar.gz
 https://github.com/tetratelabs/wazero/archive/refs/tags/v1.7.0.tar.gz
 https://github.com/tetratelabs/wazero/archive/refs/tags/v1.7.1.tar.gz
@@ -4956,6 +4999,7 @@ https://github.com/vcrhonek/hwdata/archive/refs/tags/v0.397.tar.gz
 https://github.com/vcrhonek/hwdata/archive/refs/tags/v0.398.tar.gz
 https://github.com/vcrhonek/hwdata/archive/refs/tags/v0.399.tar.gz
 https://github.com/vcrhonek/hwdata/archive/refs/tags/v0.400.tar.gz
+https://github.com/vcrhonek/hwdata/archive/refs/tags/v0.401.tar.gz
 https://github.com/vector-of-bool/cmrc/archive/refs/tags/2.0.1.tar.gz
 https://github.com/videolabs/libmicrodns/archive/refs/tags/0.2.0.tar.gz
 https://github.com/videolan/dav1d/archive/refs/tags/1.2.1.tar.gz
@@ -4965,6 +5009,7 @@ https://github.com/videolan/dav1d/archive/refs/tags/1.4.1.tar.gz
 https://github.com/videolan/dav1d/archive/refs/tags/1.4.3.tar.gz
 https://github.com/videolan/dav1d/archive/refs/tags/1.5.0.tar.gz
 https://github.com/videolan/dav1d/archive/refs/tags/1.5.1.tar.gz
+https://github.com/videolan/dav1d/archive/refs/tags/1.5.2.tar.gz
 https://github.com/vifm/vifm/archive/refs/tags/v0.13.tar.gz
 https://github.com/vifm/vifm/archive/refs/tags/v0.14.1.tar.gz
 https://github.com/vifm/vifm/archive/refs/tags/v0.14.2.tar.gz
@@ -4990,6 +5035,7 @@ https://github.com/vim/vim/archive/refs/tags/v9.1.1473.tar.gz
 https://github.com/vim/vim/archive/refs/tags/v9.1.1825.tar.gz
 https://github.com/vim/vim/archive/refs/tags/v9.1.1850.tar.gz
 https://github.com/vim/vim/archive/refs/tags/v9.1.1871.tar.gz
+https://github.com/vim/vim/archive/refs/tags/v9.1.1901.tar.gz
 https://github.com/vmatare/thinkfan/archive/refs/tags/1.3.1.tar.gz
 https://github.com/vmt/udis86/archive/refs/tags/v1.7.2.tar.gz
 https://github.com/void-linux/musl-fts/archive/refs/tags/v1.2.7.tar.gz
@@ -5061,6 +5107,7 @@ https://github.com/wireshark/wireshark/archive/refs/tags/v4.4.6.tar.gz
 https://github.com/wireshark/wireshark/archive/refs/tags/v4.4.7.tar.gz
 https://github.com/wireshark/wireshark/archive/refs/tags/v4.4.9.tar.gz
 https://github.com/wlrfx/scenefx/archive/refs/tags/0.1.tar.gz
+https://github.com/wmww/gtk-layer-shell/archive/refs/tags/v0.10.0.tar.gz
 https://github.com/wmww/gtk-layer-shell/archive/refs/tags/v0.8.0.tar.gz
 https://github.com/wmww/gtk-layer-shell/archive/refs/tags/v0.9.0.tar.gz
 https://github.com/wmww/gtk-layer-shell/archive/refs/tags/v0.9.1.tar.gz
@@ -5068,6 +5115,7 @@ https://github.com/wmww/gtk-layer-shell/archive/refs/tags/v0.9.2.tar.gz
 https://github.com/wmww/gtk4-layer-shell/archive/refs/tags/v1.0.4.tar.gz
 https://github.com/wmww/gtk4-layer-shell/archive/refs/tags/v1.1.1.tar.gz
 https://github.com/wmww/gtk4-layer-shell/archive/refs/tags/v1.2.0.tar.gz
+https://github.com/wmww/gtk4-layer-shell/archive/refs/tags/v1.3.0.tar.gz
 https://github.com/wolfSSL/wolfssl/archive/refs/tags/v5.6.3-stable.tar.gz
 https://github.com/wolfSSL/wolfssl/archive/refs/tags/v5.6.4-stable.tar.gz
 https://github.com/wolfSSL/wolfssl/archive/refs/tags/v5.6.6-stable.tar.gz
@@ -5114,6 +5162,7 @@ https://github.com/xkbcommon/libxkbcommon/archive/refs/tags/xkbcommon-1.10.0.tar
 https://github.com/xkbcommon/libxkbcommon/archive/refs/tags/xkbcommon-1.11.0.tar.gz
 https://github.com/xkbcommon/libxkbcommon/archive/refs/tags/xkbcommon-1.12.0.tar.gz
 https://github.com/xkbcommon/libxkbcommon/archive/refs/tags/xkbcommon-1.12.2.tar.gz
+https://github.com/xkbcommon/libxkbcommon/archive/refs/tags/xkbcommon-1.13.0.tar.gz
 https://github.com/xkbcommon/libxkbcommon/archive/refs/tags/xkbcommon-1.5.0.tar.gz
 https://github.com/xkbcommon/libxkbcommon/archive/refs/tags/xkbcommon-1.6.0.tar.gz
 https://github.com/xkbcommon/libxkbcommon/archive/refs/tags/xkbcommon-1.7.0.tar.gz
@@ -5431,6 +5480,7 @@ https://gitlab.gnome.org/GNOME/d-spy/-/archive/1.9.0/d-spy-1.9.0.tar.bz2
 https://gitlab.gnome.org/GNOME/d-spy/-/archive/47.0/d-spy-47.0.tar.bz2
 https://gitlab.gnome.org/GNOME/d-spy/-/archive/48.0/d-spy-48.0.tar.bz2
 https://gitlab.gnome.org/GNOME/d-spy/-/archive/49.1/d-spy-49.1.tar.bz2
+https://gitlab.gnome.org/GNOME/d-spy/-/archive/49.2/d-spy-49.2.tar.bz2
 https://gitlab.gnome.org/GNOME/gcr/-/archive/3.41.1/gcr-3.41.1.tar.bz2
 https://gitlab.gnome.org/GNOME/gcr/-/archive/4.1.0/gcr-4.1.0.tar.bz2
 https://gitlab.gnome.org/GNOME/gcr/-/archive/4.2.0/gcr-4.2.0.tar.bz2
@@ -5543,6 +5593,7 @@ https://gitlab.gnome.org/GNOME/libhandy/-/archive/1.8.3/libhandy-1.8.3.tar.bz2
 https://gitlab.gnome.org/GNOME/libpanel/-/archive/1.10.0/libpanel-1.10.0.tar.bz2
 https://gitlab.gnome.org/GNOME/libpanel/-/archive/1.10.1/libpanel-1.10.1.tar.bz2
 https://gitlab.gnome.org/GNOME/libpanel/-/archive/1.10.2/libpanel-1.10.2.tar.bz2
+https://gitlab.gnome.org/GNOME/libpanel/-/archive/1.10.3/libpanel-1.10.3.tar.bz2
 https://gitlab.gnome.org/GNOME/libpanel/-/archive/1.6.0/libpanel-1.6.0.tar.bz2
 https://gitlab.gnome.org/GNOME/libpanel/-/archive/1.8.0/libpanel-1.8.0.tar.bz2
 https://gitlab.gnome.org/GNOME/libpanel/-/archive/1.8.1/libpanel-1.8.1.tar.bz2
@@ -5784,6 +5835,7 @@ https://lttng.org/files/urcu/userspace-rcu-0.14.0.tar.bz2
 https://lttng.org/files/urcu/userspace-rcu-0.14.1.tar.bz2
 https://lttng.org/files/urcu/userspace-rcu-0.15.2.tar.bz2
 https://lttng.org/files/urcu/userspace-rcu-0.15.3.tar.bz2
+https://lttng.org/files/urcu/userspace-rcu-0.15.4.tar.bz2
 https://luajit.org/download/LuaJIT-2.0.5.tar.gz
 https://memcached.org/files/memcached-1.6.21.tar.gz
 https://memcached.org/files/memcached-1.6.22.tar.gz
@@ -5922,6 +5974,7 @@ https://mupdf.com/downloads/archive/mupdf-1.25.6-source.tar.gz
 https://mupdf.com/downloads/archive/mupdf-1.26.0-source.tar.gz
 https://mupdf.com/downloads/archive/mupdf-1.26.1-source.tar.gz
 https://mupdf.com/downloads/archive/mupdf-1.26.10-source.tar.gz
+https://mupdf.com/downloads/archive/mupdf-1.26.11-source.tar.gz
 https://mupdf.com/downloads/archive/mupdf-1.26.2-source.tar.gz
 https://mupdf.com/downloads/archive/mupdf-1.26.3-source.tar.gz
 https://mupdf.com/downloads/archive/mupdf-1.26.4-source.tar.gz
@@ -5974,6 +6027,7 @@ https://poppler.freedesktop.org/poppler-25.07.0.tar.xz
 https://poppler.freedesktop.org/poppler-25.08.0.tar.xz
 https://poppler.freedesktop.org/poppler-25.09.1.tar.xz
 https://poppler.freedesktop.org/poppler-25.10.0.tar.xz
+https://poppler.freedesktop.org/poppler-25.11.0.tar.xz
 https://potrace.sourceforge.net/download/1.16/potrace-1.16.tar.gz
 https://pwmt.org/projects/zathura-djvu/download/zathura-djvu-0.2.10.tar.xz
 https://pwmt.org/projects/zathura-djvu/download/zathura-djvu-0.2.9.tar.xz
@@ -5994,6 +6048,7 @@ https://salsa.debian.org/iso-codes-team/iso-codes/-/archive/v4.12.0/iso-codes-v4
 https://salsa.debian.org/iso-codes-team/iso-codes/-/archive/v4.16.0/iso-codes-v4.16.0.tar.gz
 https://salsa.debian.org/iso-codes-team/iso-codes/-/archive/v4.17.0/iso-codes-v4.17.0.tar.gz
 https://salsa.debian.org/iso-codes-team/iso-codes/-/archive/v4.18.0/iso-codes-v4.18.0.tar.gz
+https://salsa.debian.org/iso-codes-team/iso-codes/-/archive/v4.19.0/iso-codes-v4.19.0.tar.gz
 https://secure.nic.cz/files/knot-dns/knot-3.2.9.tar.xz
 https://secure.nic.cz/files/knot-dns/knot-3.3.2.tar.xz
 https://secure.nic.cz/files/knot-dns/knot-3.3.3.tar.xz
@@ -6021,6 +6076,7 @@ https://secure.nic.cz/files/knot-resolver/knot-resolver-6.0.12.tar.xz
 https://secure.nic.cz/files/knot-resolver/knot-resolver-6.0.13.tar.xz
 https://secure.nic.cz/files/knot-resolver/knot-resolver-6.0.14.tar.xz
 https://secure.nic.cz/files/knot-resolver/knot-resolver-6.0.15.tar.xz
+https://secure.nic.cz/files/knot-resolver/knot-resolver-6.0.16.tar.xz
 https://security.appspot.com/downloads/vsftpd-3.0.5.tar.gz
 https://skarnet.org/software/execline/execline-2.8.2.0.tar.gz
 https://skarnet.org/software/mdevd/mdevd-0.1.5.1.tar.gz
@@ -6029,6 +6085,7 @@ https://skarnet.org/software/nsss/nsss-0.2.0.5.tar.gz
 https://skarnet.org/software/skalibs/skalibs-2.11.1.0.tar.gz
 https://smarden.org/runit/runit-2.1.2.tar.gz
 https://smarden.org/runit/runit-2.2.0.tar.gz
+https://smarden.org/runit/runit-2.3.0.tar.gz
 https://sndio.org/sndio-1.10.0.tar.gz
 https://sndio.org/sndio-1.9.0.tar.gz
 https://snowballstem.org/dist/libstemmer_c-2.2.0.tar.gz
@@ -6128,6 +6185,7 @@ https://waf.io/waf-2.1.2.tar.bz2
 https://waf.io/waf-2.1.3.tar.bz2
 https://waf.io/waf-2.1.5.tar.bz2
 https://waf.io/waf-2.1.6.tar.bz2
+https://waf.io/waf-2.1.7.tar.bz2
 https://waterlan.home.xs4all.nl/dos2unix/dos2unix-7.5.1.tar.gz
 https://waterlan.home.xs4all.nl/dos2unix/dos2unix-7.5.2.tar.gz
 https://waterlan.home.xs4all.nl/dos2unix/dos2unix-7.5.3.tar.gz
@@ -6284,10 +6342,12 @@ https://www.haproxy.org/download/3.2/src/haproxy-3.2.4.tar.gz
 https://www.haproxy.org/download/3.2/src/haproxy-3.2.5.tar.gz
 https://www.haproxy.org/download/3.2/src/haproxy-3.2.6.tar.gz
 https://www.haproxy.org/download/3.2/src/haproxy-3.2.7.tar.gz
+https://www.haproxy.org/download/3.2/src/haproxy-3.2.8.tar.gz
 https://www.ibiblio.org/pub/Linux/libs/graphics/t1lib-5.1.2.tar.gz
 https://www.inf.puc-rio.br/~roberto/lpeg/lpeg-1.1.0.tar.gz
 https://www.iozone.org/src/current/iozone3_494.tgz
 https://www.iozone.org/src/current/iozone3_507.tgz
+https://www.ivarch.com/programs/sources/pv-1.10.0.tar.gz
 https://www.ivarch.com/programs/sources/pv-1.8.0.tar.gz
 https://www.ivarch.com/programs/sources/pv-1.8.5.tar.gz
 https://www.ivarch.com/programs/sources/pv-1.8.9.tar.gz
@@ -6314,6 +6374,7 @@ https://www.kernel.org/pub/linux/kernel/people/kdave/btrfs-progs/btrfs-progs-v6.
 https://www.kernel.org/pub/linux/kernel/people/kdave/btrfs-progs/btrfs-progs-v6.15.tar.xz
 https://www.kernel.org/pub/linux/kernel/people/kdave/btrfs-progs/btrfs-progs-v6.16.1.tar.xz
 https://www.kernel.org/pub/linux/kernel/people/kdave/btrfs-progs/btrfs-progs-v6.16.tar.xz
+https://www.kernel.org/pub/linux/kernel/people/kdave/btrfs-progs/btrfs-progs-v6.17.1.tar.xz
 https://www.kernel.org/pub/linux/kernel/people/kdave/btrfs-progs/btrfs-progs-v6.17.tar.xz
 https://www.kernel.org/pub/linux/kernel/people/kdave/btrfs-progs/btrfs-progs-v6.5.1.tar.xz
 https://www.kernel.org/pub/linux/kernel/people/kdave/btrfs-progs/btrfs-progs-v6.5.2.tar.xz
@@ -6439,6 +6500,7 @@ https://www.rarlab.com/rar/unrarsrc-7.1.6.tar.gz
 https://www.rarlab.com/rar/unrarsrc-7.1.7.tar.gz
 https://www.rarlab.com/rar/unrarsrc-7.1.8.tar.gz
 https://www.rarlab.com/rar/unrarsrc-7.1.9.tar.gz
+https://www.rarlab.com/rar/unrarsrc-7.2.1.tar.gz
 https://www.sqlite.org/2024/sqlite-autoconf-3450000.tar.gz
 https://www.sqlite.org/2024/sqlite-autoconf-3450100.tar.gz
 https://www.sqlite.org/2024/sqlite-autoconf-3450200.tar.gz
@@ -6455,6 +6517,7 @@ https://www.sqlite.org/2025/sqlite-autoconf-3500100.tar.gz
 https://www.sqlite.org/2025/sqlite-autoconf-3500200.tar.gz
 https://www.sqlite.org/2025/sqlite-autoconf-3500300.tar.gz
 https://www.sqlite.org/2025/sqlite-autoconf-3500400.tar.gz
+https://www.sqlite.org/2025/sqlite-autoconf-3510000.tar.gz
 https://www.stunnel.org/downloads/stunnel-5.70.tar.gz
 https://www.stunnel.org/downloads/stunnel-5.71.tar.gz
 https://www.stunnel.org/downloads/stunnel-5.72.tar.gz
