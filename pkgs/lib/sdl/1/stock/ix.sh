@@ -27,6 +27,12 @@ lib/opengl
 lib/sdl/2
 {% endblock %}
 
+{% block bld_tool %}
+{% if darwin %}
+bld/fake(tool_name=install_name_tool)
+{% endif %}
+{% endblock %}
+
 {% block install %}
 {{super()}}
 cd ${out}/lib
