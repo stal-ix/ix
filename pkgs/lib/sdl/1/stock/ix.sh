@@ -5,12 +5,12 @@ sdl12-compat
 {% endblock %}
 
 {% block version %}
-1.2.68
+1.2.70
 {% endblock %}
 
 {% block fetch %}
 https://github.com/libsdl-org/sdl12-compat/archive/refs/tags/release-{{self.version().strip()}}.tar.gz
-63c6e4dcc1154299e6f363c872900be7f3dcb3e42b9f8f57e05442ec3d89d02d
+b8350cc400b9605dd5e319f451f09d5d6e70bb1dfc22cd67f718b3ffc16ebb7c
 {% endblock %}
 
 {% block lib_deps %}
@@ -25,6 +25,12 @@ lib/opengl
 
 {% block bld_libs %}
 lib/sdl/2
+{% endblock %}
+
+{% block bld_tool %}
+{% if darwin %}
+bld/fake(tool_name=install_name_tool)
+{% endif %}
 {% endblock %}
 
 {% block install %}

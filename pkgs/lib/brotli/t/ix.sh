@@ -5,12 +5,12 @@ brotli
 {% endblock %}
 
 {% block version %}
-1.1.0
+1.2.0
 {% endblock %}
 
 {% block fetch %}
 https://github.com/google/brotli/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-e720a6ca29428b803f4ad165371771f5398faba397edf6778837a18599ea13ff
+816c96e8e8f193b40151dad7e8ff37b1221d019dbcb9c35cd3fadbfe6477dfec
 {% endblock %}
 
 {% block lib_deps %}

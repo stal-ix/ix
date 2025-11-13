@@ -5,7 +5,7 @@ wazero
 {% endblock %}
 
 {% block version %}
-1.9.0
+1.10.0
 {% endblock %}
 
 {% block go_url %}
@@ -13,11 +13,11 @@ https://github.com/tetratelabs/wazero/archive/refs/tags/v{{self.version().strip(
 {% endblock %}
 
 {% block go_sha %}
-36237923ef1010af6b8b0f87025dfe798ad9182a1b2515dd59db949cc3d4e2f0
+3cf766aa4ede658cd3db01b11be22bcad6782b7193210bc88f86715ecdf25466
 {% endblock %}
 
 {% block go_tool %}
-bin/go/lang/23
+bin/go/lang/24
 {% endblock %}
 
 {% block unpack %}

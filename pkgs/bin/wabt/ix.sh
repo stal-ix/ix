@@ -5,7 +5,7 @@ wabt
 {% endblock %}
 
 {% block version %}
-1.0.37
+1.0.39
 {% endblock %}
 
 {% block git_repo %}
@@ -17,7 +17,7 @@ https://github.com/WebAssembly/wabt
 {% endblock %}
 
 {% block git_sha %}
-dd29693af8ac0d879af210f78165ab24a7866fcbc59655ba70d6170652acb126
+957295b7dd5a31573a5116f76cd551e26853855897067e6643adc0cdf2b57258
 {% endblock %}
 
 {% block bld_libs %}

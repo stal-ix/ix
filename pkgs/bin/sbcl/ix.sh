@@ -1,7 +1,7 @@
 {% extends '//bin/sbcl/t/ix.sh' %}
 
 {% block version %}
-2.5.9
+2.5.10
 {% endblock %}
 
 {% block pkg_name %}
@@ -10,7 +10,7 @@ sbcl
 
 {% block fetch %}
 https://downloads.sourceforge.net/project/sbcl/sbcl/{{self.version().strip()}}/sbcl-{{self.version().strip()}}-source.tar.bz2
-d1b19022d43dc493edc972b6e59c93ae6684c963fdd2b413b0965e18cd6bd1e2
+bf5fb49f2a42f36b3e003d2e4d234386addf07d9dd8ca8634656927cc96ce125
 {% endblock %}
 
 {% block bld_tool %}

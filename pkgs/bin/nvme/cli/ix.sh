@@ -5,12 +5,12 @@ nvme-cli
 {% endblock %}
 
 {% block version %}
-2.15
+2.16
 {% endblock %}
 
 {% block fetch %}
 https://github.com/linux-nvme/nvme-cli/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-93282c426f22dd1ea6d172dec8af043c4e9ff80189becfbbb5378fe1ca0a74ad
+989682ed7b250a2c7a8127e362ffc5d29f5c370127abe405be09c73216da2b97
 {% endblock %}
 
 {% block bld_libs %}
