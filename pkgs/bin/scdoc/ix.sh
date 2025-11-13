@@ -1,7 +1,7 @@
 {% extends '//die/c/make.sh' %}
 
 {% block version %}
-1.11.3
+1.11.4
 {% endblock %}
 
 {% block pkg_name %}
@@ -10,7 +10,7 @@ scdoc
 
 {% block fetch %}
 https://git.sr.ht/~sircmpwn/scdoc/archive/{{self.version().strip()}}.tar.gz
-4c5c6136540384e5455b250f768e7ca11b03fdba1a8efc2341ee0f1111e57612
+e1a9c2000f855123a1a50c8f897073e0ee95fc41787431efe3864c2f1c2e7092
 {% endblock %}
 
 {% block build_flags %}
