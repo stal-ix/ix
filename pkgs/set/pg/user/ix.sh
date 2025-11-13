@@ -32,6 +32,7 @@ bin/xdg/open
 bin/tun2socks
 bin/alacritty
 bin/fontconfig
+bin/quake/1/vk
 set/box/gnu/tools
 bin/python/frozen
 bin/brightnessctl
