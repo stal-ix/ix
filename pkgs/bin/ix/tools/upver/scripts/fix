@@ -29,6 +29,7 @@ curl -k 'https://repology.org/api/v1/projects/?inrepo=stalix_dev&outdated=1' \
     | grep -v 'lib/ffmpeg' \
     | grep -v 'go/lang' \
     | grep -v 'lib/fmt' \
+    | grep -v 'bin/mariadb' \
     | grep -v grpc \
     | while read l; do (
     echo ${l}
