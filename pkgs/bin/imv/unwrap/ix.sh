@@ -5,12 +5,12 @@ imv
 {% endblock %}
 
 {% block version %}
-4.5.0
+5.0.0
 {% endblock %}
 
 {% block fetch %}
 https://git.sr.ht/~exec64/imv/archive/v{{self.version().strip()}}.tar.gz
-3b11991a86942d757830015033b1c3a3cc915be2f0c20fee7bc7493be560cbcb
+fe4c954da6578d476cb6a57677d958fbc2cfeb7c5d9a3bfc5f18c9f21a7170d8
 {% endblock %}
 
 {% block bld_libs %}
