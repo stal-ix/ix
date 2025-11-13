@@ -5,12 +5,12 @@ libtraceevent
 {% endblock %}
 
 {% block version %}
-1.8.4
+1.8.5
 {% endblock %}
 
 {% block fetch %}
 https://git.kernel.org/pub/scm/libs/libtrace/libtraceevent.git/snapshot/libtraceevent-{{self.version().strip()}}.tar.gz
-dc456d4d2bf4b4cd4d0c737d3374a8093f9e5ca18c1d7fc2279a4bf41e613121
+1f2f5b8981818638ed51cdafc9b5e95316b5602255aa8ae19a3a5c8abede0e9a
 {% endblock %}
 
 {% block lib_deps %}
@@ -21,6 +21,7 @@ lib/kernel
 
 {% block bld_tool %}
 bld/pkg/config
+bld/fake/binutils
 {% endblock %}
 
 {% block build_flags %}
