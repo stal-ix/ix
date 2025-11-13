@@ -3,7 +3,7 @@
 {% block task_pool %}full{% endblock %}
 
 {% block rust_tool %}
-bld/rust/{{self.cargo_tool().strip().split('/')[-1]}}
+{{self.cargo_tool().strip().replace('/cargo/', '/rust/')}}
 {% endblock %}
 
 {% block std_env %}
@@ -150,6 +150,7 @@ export HOST_CC=${CC}
 export HOST_CXX=${CXX}
 export TARGET_CC=${CC}
 export TARGET_CXX=${CXX}
+export RUSTC_BOOTSTRAP=1
 {% if self.cargo_packages().strip() %}
 {% for x in ix.parse_list(self.cargo_packages()) %}
 cargo {{ix.fix_list(self.cargo_flags().strip())}} --package {{x}}

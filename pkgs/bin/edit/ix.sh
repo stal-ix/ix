@@ -24,11 +24,6 @@ edit
 bld/cargo/87
 {% endblock %}
 
-{% block build %}
-export RUSTC_BOOTSTRAP=1
-{{super()}}
-{% endblock %}
-
 {% block bld_libs %}
 lib/icu/dl
 {% endblock %}
