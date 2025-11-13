@@ -5,12 +5,12 @@ mDNSResponder
 {% endblock %}
 
 {% block version %}
-2600.140.3
+2881.0.25
 {% endblock %}
 
 {% block fetch %}
 https://github.com/apple-oss-distributions/mDNSResponder/archive/refs/tags/mDNSResponder-{{self.version().strip()}}.tar.gz
-8c187cb10aa8b2e7d788f8e5fc60987f72a379f2d5876561e91dd262f6beaba4
+aa6718b757dcccb9fc6549e0f566cd03eaa7314426f2856e0da08c966d7da41c
 {% endblock %}
 
 {% block bld_libs %}
@@ -25,9 +25,6 @@ lib/mbedtls/2
 find . -type f | while read l; do
     sed -e 's|/var/run|/var/run/mdnsd|g' -i "${l}"
 done
-patch mDNSShared/dnssd_clientstub.c << EOF
-{% include '0.diff' %}
-EOF
 cd mDNSPosix
 {% endblock %}
 
