@@ -5,19 +5,13 @@ icu
 {% endblock %}
 
 {% block version %}
-77.1
+78.1
 {% endblock %}
 
 {% block fetch %}
-https://github.com/unicode-org/icu/archive/refs/tags/release-{{self.version().strip().replace('.', '-')}}.tar.gz
-ded3a96f6b7236d160df30af46593165b9c78a4ec72a414aa63cf50614e4c14e
+https://github.com/unicode-org/icu/archive/refs/tags/release-{{self.version().strip()}}.tar.gz
+813f6c02009f608be69dad8184ff4feab561b1ac45fed45b57e4345ad4298a71
 {% endblock %}
-
-{#
-broken webkit build
-https://github.com/unicode-org/icu/archive/refs/tags/release-76-1.tar.gz
-a2c443404f00098e9e90acf29dc318e049d2dc78d9ae5f46efb261934a730ce2
-#}
 
 {% block unpack %}
 {{super()}}
