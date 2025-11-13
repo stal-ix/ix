@@ -5,12 +5,12 @@ tor
 {% endblock %}
 
 {% block version %}
-0.4.8.19
+0.4.8.20
 {% endblock %}
 
 {% block fetch %}
 https://dist.torproject.org/tor-{{self.version().strip()}}.tar.gz
-3cb649a1d33ba6a65f109d224534e93aaf0a6de84a5b1cb4b054bfa06bb74f5a
+1bb22328cdd1ee948647bfced571efa78c12fc5064187b41d5254085b5282fa7
 {% endblock %}
 
 {% block bld_libs %}
