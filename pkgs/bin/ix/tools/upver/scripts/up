@@ -10,7 +10,7 @@ sys.stdout = sys.stderr
 
 GOOD = frozenset('0123456789abcdef')
 sent = '1' * 64
-go_latest = 24
+go_latest = 25
 go_tool = '''
 {% block go_tool %}
 bin/go/lang/{go_latest}
