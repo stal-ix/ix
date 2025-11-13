@@ -3,10 +3,10 @@ binutils
 {% endblock %}
 
 {% block version %}
-2.45
+2.45.1
 {% endblock %}
 
 {% block fetch %}
 https://ftp.gnu.org/gnu/binutils/binutils-{{self.version().strip()}}.tar.bz2
-1393f90db70c2ebd785fb434d6127f8888c559d5eeb9c006c354b203bab3473e
+860daddec9085cb4011279136fc8ad29eb533e9446d7524af7f517dd18f00224
 {% endblock %}
