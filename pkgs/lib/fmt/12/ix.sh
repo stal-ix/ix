@@ -5,10 +5,10 @@ fmt
 {% endblock %}
 
 {% block version %}
-11.2.0
+12.1.0
 {% endblock %}
 
 {% block fetch %}
 https://github.com/fmtlib/fmt/archive/refs/tags/{{self.version().strip()}}.tar.gz
-bc23066d87ab3168f27cef3e97d545fa63314f5c79df5ea444d41d56f962c6af
+ea7de4299689e12b6dddd392f9896f08fb0777ac7168897a244a6d6085043fea
 {% endblock %}

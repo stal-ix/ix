@@ -7,6 +7,7 @@ cargo_v3_{{parent_id}}.pzd
 {% block bld_tool %}
 bld/git
 {{cargo_tool}}
+{{cargo_tool.replace('/cargo/', '/rust/')}}
 {{super()}}
 {% endblock %}
 

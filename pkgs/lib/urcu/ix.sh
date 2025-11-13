@@ -5,12 +5,12 @@ userspace-rcu
 {% endblock %}
 
 {% block version %}
-0.15.4
+0.15.5
 {% endblock %}
 
 {% block fetch %}
 https://lttng.org/files/urcu/userspace-rcu-{{self.version().strip()}}.tar.bz2
-11a14a7660ac9ba9c0bbd3b2d81718523d27dc6c8a9dfabd5e401b406673ee3a
+b2f787a8a83512c32599e71cdabcc5131464947b82014896bd11413b2d782de1
 {% endblock %}
 
 {% block lib_deps %}

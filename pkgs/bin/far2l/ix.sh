@@ -1,7 +1,7 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block version %}
-2.6.5
+2.7.0
 {% endblock %}
 
 {% block pkg_name %}
@@ -10,7 +10,7 @@ far2l
 
 {% block fetch %}
 https://github.com/elfmz/far2l/archive/refs/tags/v_{{self.version().strip()}}.tar.gz
-0e68efff1c5d950c86cdad0387bf1aae7b152dbdd7d24b70bbefeeb4f873a9c9
+712ab8e5b40482ddd68e33f870e4c3d7e8f8c44b90fb9fe91288a00cb27dff48
 {% endblock %}
 
 {% block bld_libs %}
@@ -56,4 +56,9 @@ USEWX=no
 
 {% block build_flags %}
 wrap_cc
+{% endblock %}
+
+{% block patch %}
+sed -e 's|.*if.*dlinfo.*|{|' \
+    -i arclite/src/Patch7zCP.cpp
 {% endblock %}

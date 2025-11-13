@@ -5,12 +5,12 @@ bsdutils
 {% endblock %}
 
 {% block version %}
-13.1
+13.2
 {% endblock %}
 
 {% block fetch %}
 https://github.com/dcantrell/bsdutils/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-0c601613cbdfc224d280ef1980d6ec89911aba9679fff7b2249e9eb4439ca499
+eebd30141ff0d92b77627f4286fd21f8d22d01d175eb28e31daab1857e654b48
 {% endblock %}
 
 {% block bld_libs %}
@@ -32,6 +32,7 @@ lib/rpmatch
 {% block bld_tool %}
 bld/flex
 bld/byacc
+bld/prepend
 {% endblock %}
 
 {% block install %}
@@ -46,6 +47,7 @@ wrap_cc
 {% endblock %}
 
 {% block patch %}
-# TODO(pg): fix fts/rpmatch lookup
-sed -e 's|, static.*||' -i meson.build
+prepend src/df/df.c << EOF
+#include <err.h>
+EOF
 {% endblock %}
