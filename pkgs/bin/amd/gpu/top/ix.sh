@@ -5,7 +5,7 @@ amdgpu_top
 {% endblock %}
 
 {% block version %}
-0.10.5
+0.11.0
 {% endblock %}
 
 {% block cargo_url %}
@@ -13,7 +13,7 @@ https://github.com/Umio-Yasuno/amdgpu_top/archive/refs/tags/v{{self.version().st
 {% endblock %}
 
 {% block cargo_sha %}
-3e75f56d83735e174710472a3e0e95b044e2c91c9db80ed134f753e1878dd71a
+4e3efa3390e9c66934d92b725a0eca5280cc81cba310f60b5f837cc9c612ad4c
 {% endblock %}
 
 {% block bld_libs %}
@@ -26,5 +26,5 @@ amdgpu_top
 {% endblock %}
 
 {% block cargo_tool %}
-bld/rust/86
+bld/rust/91
 {% endblock %}
