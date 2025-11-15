@@ -5,12 +5,12 @@ swayidle
 {% endblock %}
 
 {% block version %}
-1.8.0
+1.9.0
 {% endblock %}
 
 {% block fetch %}
-https://github.com/swaywm/swayidle/archive/refs/tags/{{self.version().strip()}}.tar.gz
-0fba74c520a2bd64acd00bc3bce7bc8c7b84a2609c0f66329d72dfb33cca03d7
+https://github.com/swaywm/swayidle/archive/refs/tags/v{{self.version().strip()}}.tar.gz
+161f5827b8c79bc486a472d27690e98d75da6615bb2dee9f24393cbbb13af656
 {% endblock %}
 
 {% block bld_libs %}
