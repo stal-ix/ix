@@ -5,12 +5,12 @@ WasmEdge
 {% endblock %}
 
 {% block version %}
-0.14.1
+0.15.0
 {% endblock %}
 
 {% block fetch %}
 https://github.com/WasmEdge/WasmEdge/archive/refs/tags/{{self.version().strip()}}.tar.gz
-ff95d3b9d4736f36e31c0477208cc70f12a0a3f946bbf756f1e7b181877d5af3
+6bb5d07a39df6afb4acf2f1859b15a2ed36f376ea973217047004d7ebdfead2e
 {% endblock %}
 
 {% block bld_libs %}
@@ -21,6 +21,7 @@ lib/spdlog
 {% endblock %}
 
 {% block cmake_flags %}
+WASMEDGE_FORCE_DISABLE_LTO=ON
 SUPPORT_EXCLUDE_LIBS=OFF
 WASMEDGE_BUILD_PLUGINS=OFF
 WASMEDGE_LINK_LLVM_STATIC=ON
