@@ -10,13 +10,15 @@ sys.stdout = sys.stderr
 
 GOOD = frozenset('0123456789abcdef')
 sent = '1' * 64
+
 go_latest = 25
 go_tool = '''
 {% block go_tool %}
 bin/go/lang/{go_latest}
 {% endblock %}
 '''.replace('{go_latest}', str(go_latest))
-cargo_latest = 86
+
+cargo_latest = 91
 cargo_tool = '''
 {% block cargo_tool %}
 bld/cargo/{cargo_latest}
@@ -94,6 +96,7 @@ def fix1(pn, fr, to):
                 nd += cargo_tool
 
             for ver in range(75, cargo_latest):
+                nd = nd.replace(f'bld/rust/{ver}', f'bld/rust/{cargo_latest}')
                 nd = nd.replace(f'bld/cargo/{ver}', f'bld/cargo/{cargo_latest}')
         elif 'go_url' in nd:
             if 'go_tool' not in nd:
