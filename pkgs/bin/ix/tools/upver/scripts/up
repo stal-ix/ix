@@ -159,7 +159,7 @@ def process(pkgs, fr, to):
 
         return 0
 
-    bld_flag = ['--opengl=fake', '--vulkan=fake']
+    bld_flag = ['--opengl=fake', '--vulkan=fake', '--seed=1']
     bld_pkgs = list(flt_pkgs(pkgs))
 
     call_eat('./ix', 'build', *(bld_flag + bld_pkgs))
