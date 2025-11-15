@@ -5,12 +5,12 @@ utf8proc
 {% endblock %}
 
 {% block version %}
-2.11.0
+2.11.1
 {% endblock %}
 
 {% block fetch %}
 https://github.com/JuliaStrings/utf8proc/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-c24379b5fa0a429a1f9a3fc23b44a75f2b141a34c09146a529a55d20a5808070
+dc146fd279eacbbf399d3f70932ce66f516aac2d13f8ec2d26a30f8ed70aa5b4
 {% endblock %}
 
 {% block lib_deps %}
