@@ -1841,6 +1841,7 @@ https://github.com/VirusTotal/yara/archive/refs/tags/v4.5.5.tar.gz
 https://github.com/WasmEdge/WasmEdge/archive/refs/tags/0.13.3.tar.gz
 https://github.com/WasmEdge/WasmEdge/archive/refs/tags/0.13.5.tar.gz
 https://github.com/WasmEdge/WasmEdge/archive/refs/tags/0.14.1.tar.gz
+https://github.com/WasmEdge/WasmEdge/archive/refs/tags/0.15.0.tar.gz
 https://github.com/WayfireWM/wayfire/releases/download/v0.7.5/wayfire-0.7.5.tar.xz
 https://github.com/WayfireWM/wayfire/releases/download/v0.8.0/wayfire-0.8.0.tar.xz
 https://github.com/WayfireWM/wayfire/releases/download/v0.8.1/wayfire-0.8.1.tar.xz
@@ -4728,6 +4729,7 @@ https://github.com/swaywm/sway/archive/refs/tags/1.9.tar.gz
 https://github.com/swaywm/swaybg/archive/refs/tags/v1.2.0.tar.gz
 https://github.com/swaywm/swaybg/archive/refs/tags/v1.2.1.tar.gz
 https://github.com/swaywm/swayidle/archive/refs/tags/1.8.0.tar.gz
+https://github.com/swaywm/swayidle/archive/refs/tags/v1.9.0.tar.gz
 https://github.com/swaywm/swaylock/archive/refs/tags/v1.7.2.tar.gz
 https://github.com/swaywm/swaylock/archive/refs/tags/v1.8.0.tar.gz
 https://github.com/swaywm/swaylock/archive/refs/tags/v1.8.2.tar.gz
