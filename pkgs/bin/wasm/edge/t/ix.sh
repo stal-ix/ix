@@ -16,6 +16,7 @@ https://github.com/WasmEdge/WasmEdge/archive/refs/tags/{{self.version().strip()}
 {% block bld_libs %}
 lib/c
 lib/c++
+lib/zstd
 lib/boost
 lib/spdlog
 {% endblock %}

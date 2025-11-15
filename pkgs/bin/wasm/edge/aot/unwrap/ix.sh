@@ -2,6 +2,7 @@
 
 {% block bld_libs %}
 {{super()}}
+lib/curses
 lib/llvm/19
 {% endblock %}
 
