@@ -5,7 +5,7 @@ gopass
 {% endblock %}
 
 {% block version %}
-1.15.18
+1.16.0
 {% endblock %}
 
 {% block go_url %}
@@ -13,7 +13,7 @@ https://github.com/gopasspw/gopass/archive/refs/tags/v{{self.version().strip()}}
 {% endblock %}
 
 {% block go_sha %}
-1f88e4ea624688250b5700fbb214f32aabdf1b46d75b2270ed186984f5e602fa
+34c90b262d9db7440cd48dca8b20ef4ffd5ab858a8fb69ef3af59b7474d9d01a
 {% endblock %}
 
 {% block go_bins %}
@@ -21,5 +21,5 @@ gopass
 {% endblock %}
 
 {% block go_tool %}
-bin/go/lang/24
+bin/go/lang/25
 {% endblock %}

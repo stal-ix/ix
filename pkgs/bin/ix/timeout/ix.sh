@@ -1,7 +1,5 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
-{# UTC-only date in uclibc/ng #}
-bin/busybox/ix
-bin/ix/timeout
+bin/ix/timeout/unwrap(bumpalloc_buf=100000)
 {% endblock %}

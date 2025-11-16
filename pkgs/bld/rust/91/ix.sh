@@ -1,7 +1,8 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
-{# UTC-only date in uclibc/ng #}
-bin/busybox/ix
-bin/ix/timeout
+bld/rust/91/{{target.os}}
+{% if linux %}
+bld/musl
+{% endif %}
 {% endblock %}

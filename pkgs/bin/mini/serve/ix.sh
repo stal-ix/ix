@@ -5,7 +5,7 @@ miniserve
 {% endblock %}
 
 {% block version %}
-0.29.0
+0.32.0
 {% endblock %}
 
 {% block cargo_url %}
@@ -13,11 +13,11 @@ https://github.com/svenstaro/miniserve/archive/refs/tags/v{{self.version().strip
 {% endblock %}
 
 {% block cargo_sha %}
-807bb867a23ad84d5328f30d43135bc24bc0ef934a5452a3a960bcc09fa46a47
+238e402413105d33426bd1c3bd1467d6229f0832b93950660c3edea1129a0c53
 {% endblock %}
 
 {% block cargo_tool %}
-bld/cargo/86
+bld/cargo/91
 {% endblock %}
 
 {% block bld_libs %}

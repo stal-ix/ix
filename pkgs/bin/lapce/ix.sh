@@ -5,7 +5,7 @@ lapce
 {% endblock %}
 
 {% block version %}
-0.4.2
+0.4.5
 {% endblock %}
 
 {% block cargo_url %}
@@ -13,7 +13,7 @@ https://github.com/lapce/lapce/archive/refs/tags/v{{self.version().strip()}}.tar
 {% endblock %}
 
 {% block cargo_sha %}
-60dd59e4c3c9bfe60f148683c9e21af1a5227949d3de36c4903fda36bba74e10
+1a8999ebb9048af518068857576105cdc7a1aaa2eb653c3b28f02e8e373f716f
 {% endblock %}
 
 {% block bld_libs %}
@@ -33,5 +33,5 @@ lapce
 {% endblock %}
 
 {% block cargo_tool %}
-bld/rust/86
+bld/rust/91
 {% endblock %}
