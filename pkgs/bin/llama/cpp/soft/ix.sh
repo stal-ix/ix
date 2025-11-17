@@ -1,7 +1,15 @@
 {% extends '//die/c/cmake.sh' %}
 
+{% block pkg_name %}
+llama.cpp
+{% endblock %}
+
+{% block version %}
+b7086
+{% endblock %}
+
 {% block fetch %}
-https://github.com/ggml-org/llama.cpp/archive/refs/tags/b7086.tar.gz
+https://github.com/ggml-org/llama.cpp/archive/refs/tags/{{self.version().strip()}}.tar.gz
 166c7135ba5cc43b2b650b5b7d49059778757ff09b5dc12358910aa5712ccf00
 {% endblock %}
 
