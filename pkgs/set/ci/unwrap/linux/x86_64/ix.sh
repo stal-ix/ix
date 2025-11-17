@@ -51,6 +51,8 @@
 #}
 
 {% block run_deps %}
+bin/llama/cpp/soft
+bin/llama/cpp/vulkan
 bin/ojph
 bin/curl/aws
 bin/python/14

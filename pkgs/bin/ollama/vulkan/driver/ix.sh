@@ -20,6 +20,10 @@ wrap_cc
 bin/glslc
 {% endblock %}
 
+{% block ninja_build_targets %}
+lib/ollama/libggml-vulkan.so
+{% endblock %}
+
 {% block install %}
 mkdir ${out}/lib
 cp ${tmp}/obj/lib/ollama/libggml-vulkan.so ${out}/lib/libggml-vulkan.a
