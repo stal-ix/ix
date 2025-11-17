@@ -9,9 +9,3 @@ bin/ollama/blas/driver
 GGML_USE_BLAS=1
 {{super()}}
 {% endblock %}
-
-{% block patch %}
-{{super()}}
-sed -e 's|_USE_CPU|_USE_CPU_XXX|' \
-    -i ml/backend/ggml/ggml/src/ggml.go
-{% endblock %}
