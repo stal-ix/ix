@@ -21,6 +21,10 @@ GGML_BLAS=ON
 GGML_BLAS_VENDOR=OpenBLAS
 {% endblock %}
 
+{% block ninja_build_targets %}
+lib/ollama/libggml-blas.so
+{% endblock %}
+
 {% block install %}
 mkdir ${out}/lib
 cp ${tmp}/obj/lib/ollama/libggml-blas.so ${out}/lib/libggml-blas.a
