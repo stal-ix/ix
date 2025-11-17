@@ -9,6 +9,7 @@ https://github.com/ggml-org/llama.cpp/archive/refs/tags/b7086.tar.gz
 lib/c
 lib/c++
 lib/curl
+lib/kernel
 {% endblock %}
 
 {% block cmake_flags %}
