@@ -5,7 +5,7 @@ lowdown
 {% endblock %}
 
 {% block version %}
-2.0.2
+2.0.4
 {% endblock %}
 
 {% block make_tool %}
@@ -19,7 +19,7 @@ bmake
 
 {% block fetch %}
 https://github.com/kristapsdz/lowdown/archive/refs/tags/VERSION_{{self.version().strip().replace('.', '_')}}.tar.gz
-9718c0f6c99a2cef923357feced0e0f86d8047260238c5c37fd2b51ca620e373
+d366866f34de35a64a366efcf15dd787960ca25d986bb8780fb04a4306999eec
 {% endblock %}
 
 {% block lib_deps %}
