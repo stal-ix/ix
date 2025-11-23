@@ -5,12 +5,12 @@ ell
 {% endblock %}
 
 {% block version %}
-0.80
+0.81
 {% endblock %}
 
 {% block fetch %}
 https://mirrors.edge.kernel.org/pub/linux/libs/ell/ell-{{self.version().strip()}}.tar.xz
-6efc70ae6d3e2ca1ec255ecd855a3d5fadefe59897f4307816e3ba7a771f3d00
+672ca1e44dc0ddce1665941754b4e2b3b9203481d7d7a60e0b5f39829d73fa14
 {% endblock %}
 
 {% block lib_deps %}
