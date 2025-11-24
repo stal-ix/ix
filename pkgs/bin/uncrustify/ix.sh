@@ -5,12 +5,12 @@ uncrustify
 {% endblock %}
 
 {% block version %}
-0.81.0
+0.82.0
 {% endblock %}
 
 {% block fetch %}
 https://github.com/uncrustify/uncrustify/archive/refs/tags/uncrustify-{{self.version().strip()}}.tar.gz
-484623dc16b92206adc6ac0770077c6c67c6e441102148c2a121a19549330ff9
+e05f8d5ee36aaa1acfa032fe97546b7be46b1f4620e7c38037f8a42e25fe676f
 {% endblock %}
 
 {% block bld_libs %}
