@@ -5,12 +5,12 @@ wolfssl
 {% endblock %}
 
 {% block version %}
-5.8.2
+5.8.4
 {% endblock %}
 
 {% block fetch %}
 https://github.com/wolfSSL/wolfssl/archive/refs/tags/v{{self.version().strip()}}-stable.tar.gz
-3ef126e3466e2f8f6ebb62b916a7f8fb26c6709dbdf2b63a167759f2fdb53068
+2b702b7a66b0067bfd284408827b1e59288b357b0dd758d0089c062395f2a522
 {% endblock %}
 
 {% block conf_ver %}
