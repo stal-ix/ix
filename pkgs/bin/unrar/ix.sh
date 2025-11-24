@@ -5,12 +5,12 @@ unrar
 {% endblock %}
 
 {% block version %}
-7.2.1
+7.2.2
 {% endblock %}
 
 {% block fetch %}
 https://www.rarlab.com/rar/unrarsrc-{{self.version().strip()}}.tar.gz
-3fe3b4d710da45521625353dc2e023dad48c010f02a93302756e1061a8f3ae8e
+41c00c8755cf5bf6b5d7f0d2d167ee889c2c5352e17e5c9470dbc354af1e71ab
 {% endblock %}
 
 {% block bld_libs %}
