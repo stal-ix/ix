@@ -5,7 +5,7 @@ brush
 {% endblock %}
 
 {% block version %}
-0.2.23
+0.3.0
 {% endblock %}
 
 {% block cargo_url %}
@@ -13,7 +13,7 @@ https://github.com/reubeno/brush/archive/refs/tags/brush-shell-v{{self.version()
 {% endblock %}
 
 {% block cargo_sha %}
-3946d1c1454d0662a1a2894a90b23cae92f58a5ff04b68ea673f0a9e91069440
+dc1c8a7f85ad4637163d624355ed09b1c13cba4817781a0e33434cc84aa86012
 {% endblock %}
 
 {% block cargo_bins %}
@@ -21,5 +21,5 @@ brush
 {% endblock %}
 
 {% block cargo_tool %}
-bld/cargo/87
+bld/cargo/91
 {% endblock %}

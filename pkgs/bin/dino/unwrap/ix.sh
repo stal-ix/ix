@@ -5,12 +5,12 @@ dino
 {% endblock %}
 
 {% block version %}
-0.5.0
+0.5.1
 {% endblock %}
 
 {% block fetch %}
 https://github.com/dino/dino/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-4c57f20677f47f41b440b7d6eebb697ee89d5d8c38d334ad47c6b5de19894768
+2658b83abe1203b2dd4d6444519f615b979faaac7e97f384e655bff85769584b
 {% endblock %}
 
 {% block bld_libs %}

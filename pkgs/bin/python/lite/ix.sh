@@ -6,6 +6,7 @@
 {% block bld_libs %}
 lib/c
 lib/z
+lib/xz
 lib/ffi
 {% if darwin %}
 lib/darwin/framework/SystemConfiguration
@@ -19,6 +20,7 @@ bld/auto
 {% endblock %}
 
 {% block extra_modules %}
+_lzma _lzmamodule.c
 _ctypes _ctypes/_ctypes.c _ctypes/callbacks.c _ctypes/callproc.c _ctypes/stgdict.c _ctypes/cfield.c _ctypes/malloc_closure.c
 {% endblock %}
 

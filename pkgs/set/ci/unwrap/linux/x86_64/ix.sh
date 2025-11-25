@@ -51,6 +51,13 @@
 #}
 
 {% block run_deps %}
+bin/ollama
+bin/ollama/soft
+bin/ollama/blas
+bin/ollama/vulkan
+bin/llama/cpp
+bin/llama/cpp/soft
+bin/llama/cpp/vulkan
 bin/ojph
 bin/curl/aws
 bin/python/14

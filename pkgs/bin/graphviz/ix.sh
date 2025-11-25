@@ -5,12 +5,12 @@ graphviz
 {% endblock %}
 
 {% block version %}
-14.0.2
+14.0.4
 {% endblock %}
 
 {% block fetch %}
 https://gitlab.com/graphviz/graphviz/-/archive/{{self.version().strip()}}/graphviz-{{self.version().strip()}}.tar.bz2
-d4d8baa81471166a3d81670cc38870b37f1a4f6f0c473ad7a2f0a74c9914a8e0
+b654dc2fbf944994892dc76549ad67e735787a973e66c98cf95e314311766e26
 {% endblock %}
 
 {% block make_no_thrs %}
