@@ -18,5 +18,5 @@ bld/gettext
 {% endblock %}
 
 {% block postinstall %}
-echo 'skip'
+rm ${out}/lib/libguile*
 {% endblock %}

@@ -23,5 +23,10 @@ cat << EOF > {{bin_prefix}}ar
 exec llvm-ar "\${@}"
 EOF
 
+cat << EOF > {{bin_prefix}}as
+#!/usr/bin/env sh
+exec llvm-as "\${@}"
+EOF
+
 chmod +x *
 {% endblock %}
