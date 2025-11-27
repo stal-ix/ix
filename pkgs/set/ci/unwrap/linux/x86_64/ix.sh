@@ -51,6 +51,7 @@
 #}
 
 {% block run_deps %}
+bin/jikes
 bin/ollama
 bin/ollama/soft
 bin/ollama/blas
