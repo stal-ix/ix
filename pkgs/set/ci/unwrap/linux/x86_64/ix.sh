@@ -51,6 +51,7 @@
 #}
 
 {% block run_deps %}
+bin/fastjar
 bin/jikes
 bin/ollama
 bin/ollama/soft
