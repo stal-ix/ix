@@ -8,9 +8,6 @@ https://github.com/ocaml/ocaml/archive/refs/tags/4.07.1.tar.gz
 {% block bld_tool %}
 bin/gas
 bld/bash
-bld/make
-bld/prepend
-bld/ocaml/boot
 {% endblock %}
 
 {% block bld_libs %}
@@ -23,7 +20,7 @@ bash ./configure -prefix ${out}
 {% endblock %}
 
 {% block make_target %}
-world.opt
+world
 {% endblock %}
 
 {% block patch %}
@@ -31,12 +28,11 @@ echo > byterun/win32.c
 sed -e 's|.*section.*rodata.cst8.*progbits.*||' \
     -i asmrun/amd64.S
 rm boot/*
-cp $(which ocamlc) boot/
-cp $(which ocamllex) boot/
 {% endblock %}
 
 {% block cpp_defines %}
 HAS_GETCWD=1
+HAS_SYMLINK=1
 HAS_SOCKETS=1
 HAS_INET_ATON=1
 {% endblock %}
