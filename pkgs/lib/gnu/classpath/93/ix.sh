@@ -39,5 +39,14 @@ sed -e 's|/tmp/|'${TMPDIR}'|' \
 {% endblock %}
 
 {% block postinstall %}
-:
+mv ${out}/lib/classpath/*.a ${out}/lib/
+rm -rf ${out}/lib/classpath
+{% endblock %}
+
+{% block env %}
+export GNU_CLASSPATH=${out}
+{% endblock %}
+
+{% block c_rename_symbol %}
+fabsf
 {% endblock %}
