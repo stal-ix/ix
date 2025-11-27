@@ -54,6 +54,8 @@ no_werror
 {% block install %}
 mkdir ${out}/bin
 cp _boot/ocamlc ${out}/bin/
+cp _boot/byterun/ocamlrun ${out}/bin/
 cp miniml/interp/lex.byte ${out}/bin/ocamllex
+cp miniml/interp/makedepend.byte ${out}/bin/ocamldep
 chmod +x ${out}/bin/*
 {% endblock %}
