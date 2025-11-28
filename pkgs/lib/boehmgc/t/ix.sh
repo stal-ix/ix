@@ -38,3 +38,7 @@ enable_large_config=ON
 enable_dynamic_loading=OFF
 with_libatomic_ops=ON
 {% endblock %}
+
+{% block cpp_defines %}
+USE_PROG_DATA_START=1
+{% endblock %}

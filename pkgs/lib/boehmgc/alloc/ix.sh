@@ -1,6 +1,7 @@
 {% extends '//lib/boehmgc/ix.sh' %}
 
 {% block lib_deps %}
+lib/dlfcn
 lib/c/naked
 lib/atomic/ops
 {% endblock %}
@@ -24,6 +25,10 @@ int posix_memalign(void** memptr, size_t alignment, size_t size) {
 
 void *memalign(size_t alignment, size_t size) {
     return GC_memalign(alignment, size);
+}
+
+void* aligned_alloc(size_t alignment, size_t size) {
+    return memalign(size, alignment);
 }
 EOF
 
