@@ -13,3 +13,7 @@ lib/c++
 {% block cxx_flags %}
 -std=c++11
 {% endblock %}
+
+{% block env %}
+export JAVAC=${out}/bin/jikes
+{% endblock %}

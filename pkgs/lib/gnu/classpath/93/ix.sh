@@ -25,10 +25,6 @@ bin/fastjar
 --disable-gjdoc
 {% endblock %}
 
-{% block setup_target_flags %}
-export JAVAC=$(which jikes)
-{% endblock %}
-
 {% block cpp_missing %}
 stdlib.h
 {% endblock %}
