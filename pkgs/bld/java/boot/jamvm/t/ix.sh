@@ -37,7 +37,7 @@ prepend src/properties.c << EOF
 EOF
 {% endblock %}
 
-{% block install %}
+{% block build %}
 cp -R ${GNU_CLASSPATH}/share ${out}/
 {{super()}}
 {% endblock %}

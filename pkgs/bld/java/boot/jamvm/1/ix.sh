@@ -10,3 +10,14 @@ https://downloads.sourceforge.net/project/jamvm/jamvm/JamVM%201.5.1/jamvm-1.5.1.
 bld/java/boot/classpath/93
 bld/java/boot/classpath/93/dl
 {% endblock %}
+
+{% block bld_tool %}
+{{super()}}
+bin/zip
+bld/java/boot/jikes
+{% endblock %}
+
+{% block patch %}
+{{super()}}
+rm lib/classes.zip
+{% endblock %}

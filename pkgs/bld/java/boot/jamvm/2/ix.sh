@@ -15,3 +15,14 @@ bld/java/boot/classpath/99/dl
 --disable-int-inlining
 {{super()}}
 {% endblock %}
+
+{% block bld_tool %}
+{{super()}}
+bin/zip
+bld/java/boot/ecj/3/javac
+{% endblock %}
+
+{% block patch %}
+{{super()}}
+rm src/classlib/gnuclasspath/lib/classes.zip
+{% endblock %}
