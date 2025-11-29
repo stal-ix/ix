@@ -40,3 +40,7 @@ rm -rf ${out}/lib/classpath
 {% block env %}
 export GNU_CLASSPATH=${out}
 {% endblock %}
+
+{% block c_rename_symbol %}
+fabsf
+{% endblock %}

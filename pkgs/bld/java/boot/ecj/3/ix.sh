@@ -8,8 +8,8 @@ http://archive.eclipse.org/eclipse/downloads/drops/R-3.2.2-200702121330/ecjsrc.z
 {% block bld_tool %}
 bin/fastjar
 bld/java/boot/ant/8
-bld/java/boot/jamvm
 bld/java/boot/jikes
+bld/java/boot/jamvm/1
 {% endblock %}
 
 {% block skip_dirs %}0{% endblock %}
