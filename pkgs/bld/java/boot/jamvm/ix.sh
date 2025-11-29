@@ -10,8 +10,8 @@ lib/c
 lib/z
 lib/ffi
 lib/shim/ix
-lib/gnu/classpath/93
-lib/gnu/classpath/93/dl
+bld/java/boot/classpath/93
+bld/java/boot/classpath/93/dl
 {% endblock %}
 
 {% block bld_tool %}

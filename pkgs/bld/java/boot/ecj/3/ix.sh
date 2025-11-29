@@ -6,10 +6,10 @@ http://archive.eclipse.org/eclipse/downloads/drops/R-3.2.2-200702121330/ecjsrc.z
 {% endblock %}
 
 {% block bld_tool %}
-bld/ant/8
-bld/jamvm
-bld/jikes
 bin/fastjar
+bld/java/boot/ant/8
+bld/java/boot/jamvm
+bld/java/boot/jikes
 {% endblock %}
 
 {% block skip_dirs %}0{% endblock %}

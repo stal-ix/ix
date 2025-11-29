@@ -10,8 +10,8 @@ lib/c
 {% endblock %}
 
 {% block bld_tool %}
-bld/jikes
 bin/fastjar
+bld/java/boot/jikes
 {% endblock %}
 
 {% block configure_flags %}

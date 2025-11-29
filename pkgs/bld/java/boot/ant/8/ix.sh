@@ -7,8 +7,8 @@ https://archive.apache.org/dist/ant/source/apache-ant-1.8.4-src.tar.bz2
 
 {% block bld_tool %}
 bld/bash
-bld/jikes
-bld/jamvm
+bld/java/boot/jikes
+bld/java/boot/jamvm
 {% endblock %}
 
 {% block patch %}
