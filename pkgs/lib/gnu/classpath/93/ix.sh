@@ -10,7 +10,7 @@ lib/c
 {% endblock %}
 
 {% block bld_tool %}
-bin/jikes
+bld/jikes
 bin/fastjar
 {% endblock %}
 
