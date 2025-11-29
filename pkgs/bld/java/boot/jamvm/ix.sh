@@ -55,6 +55,7 @@ cp -R ${GNU_CLASSPATH}/share ${out}/
 
 {% block env %}
 export JAVA_HOME=${out}
+export JAVA=${out}/bin/jamvm
 export JAVACMD=${out}/bin/jamvm
 export CLASSPATH=${out}/lib/rt.jar
 {% endblock %}
