@@ -9,15 +9,20 @@ https://downloads.sourceforge.net/project/jamvm/jamvm/JamVM%201.5.1/jamvm-1.5.1.
 lib/c
 lib/z
 lib/ffi
+lib/shim/ix
 lib/gnu/classpath/93
 lib/gnu/classpath/93/dl
 {% endblock %}
 
+{% block bld_tool %}
+bld/prepend
+{% endblock %}
+
 {% block configure_flags %}
---with-classpath-install-dir=${out}
+--enable-ffi
 --disable-int-caching
 --enable-runtime-reloc-checks
---enable-ffi
+--with-classpath-install-dir=${out}
 {% endblock %}
 
 {% block c_flags %}
@@ -33,6 +38,10 @@ no_werror
 (base64 -d | patch -p2) << EOF
 {% include 'fenv.patch/base64' %}
 EOF
+sed -e 's|"/tmp"|ix_temp_dir()|' -i src/properties.c
+prepend src/properties.c << EOF
+#include <ix.h>
+EOF
 {% endblock %}
 
 {% block install %}
@@ -40,7 +49,12 @@ cp -R ${GNU_CLASSPATH}/share ${out}/
 {{super()}}
 {% endblock %}
 
+{% block postinstall %}
+:
+{% endblock %}
+
 {% block env %}
 export JAVA_HOME=${out}
 export JAVACMD=${out}/bin/jamvm
+export CLASSPATH=${out}/lib/rt.jar
 {% endblock %}

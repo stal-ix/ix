@@ -30,6 +30,9 @@ stdlib.h
 {% endblock %}
 
 {% block patch %}
+(base64 -d | patch -p1) << EOF
+{% include 'classpath-miscompilation.patch/base64' %}
+EOF
 sed -e 's|/tmp/|'${TMPDIR}'|' \
     -i scripts/check_jni_methods.sh
 {% endblock %}
