@@ -5,11 +5,11 @@ https://github.com/7mind/jopa
 {% endblock %}
 
 {% block git_commit %}
-9ba3c83a90660ec34b72ebf0475752233b876833
+1609fe6e2bad76eb350b844b5ee576a391434757
 {% endblock %}
 
 {% block git_sha %}
-f84e891b7d77afa85d2a3a13d9a7b737d6d584d1d03d54512efa1ac01028493e
+64b37bedcade355c9838732ce6442143ef7018ff68729e8b5345841916b68038
 {% endblock %}
 
 {% block bld_libs %}
