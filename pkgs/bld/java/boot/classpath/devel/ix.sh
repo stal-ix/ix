@@ -13,10 +13,10 @@ https://git.savannah.gnu.org/git/classpath.git
 {% endblock %}
 
 {% block bld_tool %}
+bin/zip
 bld/perl
 bld/gettext
 bld/texinfo
-{{super()}}
 bld/java/boot/ecj/3/javac
 bld/java/boot/classpath/99
 {% endblock %}

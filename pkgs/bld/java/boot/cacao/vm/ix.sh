@@ -18,7 +18,7 @@ lib/z
 lib/c++
 lib/ffi
 lib/boehmgc
-bld/java/boot/classpath/99/dl
+bld/java/boot/classpath/devel/dl
 {% endblock %}
 
 {% block configure_flags %}
@@ -35,7 +35,7 @@ bld/java/boot/classpath/99/dl
 {% block bld_tool %}
 bin/fastjar
 bld/java/boot/ecj/4/javac
-bld/java/boot/classpath/99
+bld/java/boot/classpath/devel
 {% endblock %}
 
 {% block configure %}
