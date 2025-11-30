@@ -43,6 +43,10 @@ static void XcursorImagesDestroy(XcursorImages*) {
 }
 EOF
 
+cat << EOF > ${out}/include/X11/X.h
+#pragma once
+EOF
+
 cat << EOF > ${out}/include/X11/Xlib.h
 #pragma once
 typedef void* Display;
