@@ -22,6 +22,9 @@ bin/fastjar
 {% block postinstall %}
 mv ${out}/lib/classpath/*.a ${out}/lib/
 rm -rf ${out}/lib/classpath
+{% if lib %}
+rm -rf ${out}/bin
+{% endif %}
 {% endblock %}
 
 {% block env %}

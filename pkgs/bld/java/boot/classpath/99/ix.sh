@@ -12,7 +12,7 @@ bld/java/boot/ecj/3/javac
 {% endblock %}
 
 {% block configure_flags %}
---with-ecj-jar=${ECJ_JAR}
+--with-ecj-jar=${IX_ECJ_JAR}
 {{super()}}
 {% endblock %}
 

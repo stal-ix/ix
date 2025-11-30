@@ -22,7 +22,7 @@ bld/java/boot/classpath/99
 {% endblock %}
 
 {% block configure_flags %}
---with-ecj-jar=${ECJ_JAR}
+--with-ecj-jar=${IX_ECJ_JAR}
 {{super()}}
 {% endblock %}
 

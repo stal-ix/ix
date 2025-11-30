@@ -40,5 +40,5 @@ cp ecj-bootstrap.jar ${out}/share/
 {% endblock %}
 
 {% block env %}
-export ECJ_JAR="${out}/share/ecj-bootstrap.jar"
+export IX_ECJ_JAR="${out}/share/ecj-bootstrap.jar"
 {% endblock %}
