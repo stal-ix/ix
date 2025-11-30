@@ -16,15 +16,37 @@ https://bitbucket.org/cacaovm/cacao
 lib/c
 lib/z
 lib/c++
+lib/ffi
+lib/boehmgc
 bld/java/boot/classpath/99
 bld/java/boot/classpath/99/dl
 {% endblock %}
 
 {% block configure_flags %}
+--with-ffi
+--disable-libjvm
+--enable-gc=none
+--enable-staticvm
 --with-java-runtime-library-prefix=${GNU_CLASSPATH}
 {% endblock %}
 
 {% block bld_tool %}
 bin/fastjar
-bld/java/boot/ecj/3/javac
+bld/java/boot/ecj/4/javac
+{% endblock %}
+
+{% block configure %}
+export ac_cv_prog_junit_works=yes
+export ac_cv_prog_jasmin_works=yes
+{{super()}}
+{% endblock %}
+
+{% block cpp_defines %}
+__va_copy=va_copy
+__SIGRTMAX=SIGRTMAX
+{% endblock %}
+
+{% block patch %}
+sed -e 's|(jobjectRefType) NULL|JNIInvalidRefType|' \
+    -i src/native/jni.cpp
 {% endblock %}
