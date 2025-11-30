@@ -37,7 +37,7 @@ for x in corba hotspot jaxp jaxws jdk langtools openjdk; do (
 {% block bld_libs %}
 lib/c
 lib/c++
-bld/java/boot/classpath/devel
+lib/shim/x11
 {% endblock %}
 
 {% block bld_tool %}
@@ -55,11 +55,13 @@ bld/java/boot/ecj/4/javac/final
 {% endblock %}
 
 {% block configure_flags %}
---enable-bootstrap
---with-openjdk-src-dir=openjdk.src
+--disable-docs
 --without-rhino
+--enable-bootstrap
 --with-java=${JAVA}
---disable-system-kerberos
+--disable-downloading
 --with-ecj=$(which javac)
+--disable-system-kerberos
 --with-jdk-home=${GNU_CLASSPATH}
+--with-openjdk-src-dir=openjdk.src
 {% endblock %}

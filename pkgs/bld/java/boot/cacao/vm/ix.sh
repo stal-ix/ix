@@ -18,7 +18,6 @@ lib/z
 lib/c++
 lib/ffi
 lib/boehmgc
-bld/java/boot/classpath/99
 bld/java/boot/classpath/99/dl
 {% endblock %}
 
@@ -27,12 +26,16 @@ bld/java/boot/classpath/99/dl
 --disable-libjvm
 --enable-gc=none
 --enable-staticvm
+--with-jni_h=${JNI_DIR}/include
+--with-jni_md_h=${JNI_DIR}/include
+--with-java-runtime-library-libdir=${JNI_DIR}/lib
 --with-java-runtime-library-prefix=${GNU_CLASSPATH}
 {% endblock %}
 
 {% block bld_tool %}
 bin/fastjar
 bld/java/boot/ecj/4/javac
+bld/java/boot/classpath/99
 {% endblock %}
 
 {% block configure %}

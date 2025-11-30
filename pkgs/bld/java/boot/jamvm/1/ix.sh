@@ -7,7 +7,6 @@ https://downloads.sourceforge.net/project/jamvm/jamvm/JamVM%201.5.1/jamvm-1.5.1.
 
 {% block bld_libs %}
 {{super()}}
-bld/java/boot/classpath/93
 bld/java/boot/classpath/93/dl
 {% endblock %}
 
@@ -15,6 +14,7 @@ bld/java/boot/classpath/93/dl
 {{super()}}
 bin/zip
 bld/java/boot/jikes
+bld/java/boot/classpath/93
 {% endblock %}
 
 {% block patch %}

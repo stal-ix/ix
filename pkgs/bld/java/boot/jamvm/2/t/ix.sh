@@ -7,7 +7,6 @@ https://downloads.sourceforge.net/project/jamvm/jamvm/JamVM%202.0.0/jamvm-2.0.0.
 
 {% block bld_libs %}
 {{super()}}
-bld/java/boot/classpath/devel
 bld/java/boot/classpath/devel/dl
 {% endblock %}
 
@@ -19,6 +18,7 @@ bld/java/boot/classpath/devel/dl
 {% block bld_tool %}
 {{super()}}
 bin/zip
+bld/java/boot/classpath/devel
 {% endblock %}
 
 {% block patch %}
