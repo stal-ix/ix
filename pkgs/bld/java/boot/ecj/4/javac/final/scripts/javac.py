@@ -18,9 +18,7 @@ for x in sys.argv[1:]:
     else:
         rest.append(x)
 
-os.environ['CLASSPATH'] = os.environ['CLASSPATH'] + ':' + os.environ['IX_ECJ_JAR']
-
-cmd = ['jamvm'] + vm + ['org.eclipse.jdt.internal.compiler.batch.Main']
+cmd = ['jamvm', '-classpath', os.environ['IX_ECJ_JAR']] + vm + ['org.eclipse.jdt.internal.compiler.batch.Main']
 
 if '-source' not in rest:
     cmd += ['-source', '1.5']

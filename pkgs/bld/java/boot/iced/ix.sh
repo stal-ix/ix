@@ -23,15 +23,14 @@ https://icedtea.classpath.org/download/drops/icedtea7/2.6.13/openjdk.tar.bz2
 bin/bash/lite/sh
 {% endblock %}
 
-{% block step_unpack %}
-{{super()}}
-mkdir openjdk.src
-for x in corba hotspot jaxp jaxws jdk langtools openjdk; do (
-    cd openjdk.src
-    mkdir ${x}
-    cd ${x}
-    extract 1 ${src}/${x}.tar.bz2
-) done
+{% block parts %}
+corba
+hotspot
+jaxp
+jaxws
+jdk
+langtools
+openjdk
 {% endblock %}
 
 {% block bld_libs %}
@@ -42,9 +41,16 @@ lib/c++
 lib/png
 lib/jpeg
 lib/cups
+lib/alsa
 lib/lcms/2
 lib/freetype
 aux/x11/proto
+lib/shim/fake/pkg(pkg_name=xt,pkg_ver=100500)
+lib/shim/fake/pkg(pkg_name=x11,pkg_ver=100500)
+lib/shim/fake/pkg(pkg_name=xinerama,pkg_ver=100500)
+lib/shim/fake/pkg(pkg_name=xrender,pkg_ver=100500)
+lib/shim/fake/pkg(pkg_name=xcomposite,pkg_ver=100500)
+lib/shim/fake/pkg(pkg_name=xtst,pkg_ver=100500)
 {% endblock %}
 
 {% block bld_tool %}
@@ -74,7 +80,13 @@ bld/java/boot/ecj/4/javac/final
 --disable-system-gconf
 --with-ecj=$(which javac)
 --disable-system-kerberos
---with-jdk-home=${GNU_CLASSPATH}
---with-openjdk-src-dir=openjdk.src
+--with-jdk-home=${JAVA_HOME}
 --disable-compile-against-syscalls
+{% for x in ix.parse_list(self.parts()) %}
+--with-{{x}}-src-zip=${src}/{{x}}.tar.bz2
+{% endfor %}
+{% endblock %}
+
+{% block patch %}
+sed -e 's|jre/lib/rt.jar|lib/rt.jar|' -i Makefile.in
 {% endblock %}

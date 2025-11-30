@@ -12,3 +12,7 @@ lib/c
 {% block bld_libs %}
 lib/kernel
 {% endblock %}
+
+{% block env %}
+export CUPS_HEADERS_PATH=${out}/include
+{% endblock %}

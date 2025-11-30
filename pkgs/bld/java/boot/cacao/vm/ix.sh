@@ -28,8 +28,8 @@ bld/java/boot/classpath/99/dl
 --enable-staticvm
 --with-jni_h=${JNI_DIR}/include
 --with-jni_md_h=${JNI_DIR}/include
+--with-java-runtime-library-prefix=${out}
 --with-java-runtime-library-libdir=${JNI_DIR}/lib
---with-java-runtime-library-prefix=${GNU_CLASSPATH}
 {% endblock %}
 
 {% block bld_tool %}
@@ -41,6 +41,7 @@ bld/java/boot/classpath/99
 {% block configure %}
 export ac_cv_prog_junit_works=yes
 export ac_cv_prog_jasmin_works=yes
+cp -R ${GNU_CLASSPATH}/share ${out}/
 {{super()}}
 {% endblock %}
 
