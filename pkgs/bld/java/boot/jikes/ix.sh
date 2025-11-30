@@ -1,8 +1,5 @@
-{% extends '//bin/jikes/ix.sh' %}
+{% extends '//die/hub.sh' %}
 
-{% block env %}
-{{super()}}
-export JAVAC=${out}/bin/jikes
-export ANT_OPTS="-Dbuild.compiler=jikes"
-export BOOTJAVAC_OPTS="-nowarn"
+{% block run_deps %}
+bld/java/boot/jikes/good
 {% endblock %}
