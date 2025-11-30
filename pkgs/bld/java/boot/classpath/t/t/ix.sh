@@ -19,16 +19,20 @@ bin/fastjar
 --disable-gjdoc
 {% endblock %}
 
-{% block postinstall %}
+{% block install %}
+{{super()}}
+{% if lib %}
 mv ${out}/lib/classpath/*.a ${out}/lib/
 rm -rf ${out}/lib/classpath
-{% if lib %}
-rm -rf ${out}/bin
 {% endif %}
 {% endblock %}
 
 {% block env %}
+{% if bin %}
 export GNU_CLASSPATH=${out}
+{% else %}
+export JNI_DIR=${out}
+{% endif %}
 {% endblock %}
 
 {% block c_rename_symbol %}

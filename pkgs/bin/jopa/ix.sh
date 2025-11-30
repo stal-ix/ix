@@ -1,8 +1,15 @@
 {% extends '//die/c/cmake.sh' %}
 
-{% block fetch %}
-https://github.com/7mind/jopa/archive/refs/tags/v2.0.0.tar.gz
-1145a481872b4b044eb7d2f8f142fd71c1f0b6f4999965e327496b61bc776b89
+{% block git_repo %}
+https://github.com/7mind/jopa
+{% endblock %}
+
+{% block git_commit %}
+9ba3c83a90660ec34b72ebf0475752233b876833
+{% endblock %}
+
+{% block git_sha %}
+f84e891b7d77afa85d2a3a13d9a7b737d6d584d1d03d54512efa1ac01028493e
 {% endblock %}
 
 {% block bld_libs %}
@@ -13,6 +20,7 @@ lib/zip
 {% endblock %}
 
 {% block bld_tool %}
+bin/zip
 bld/make
 bld/python
 bld/fake(tool_name=jar)
