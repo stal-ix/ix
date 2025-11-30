@@ -54,3 +54,10 @@ __SIGRTMAX=SIGRTMAX
 sed -e 's|(jobjectRefType) NULL|JNIInvalidRefType|' \
     -i src/native/jni.cpp
 {% endblock %}
+
+{% block env %}
+export JAVA_HOME=${out}
+export JAVA=${out}/bin/java
+export JAVACMD=${out}/bin/java
+export CLASSPATH=${out}/share/cacao/vm.zip
+{% endblock %}
