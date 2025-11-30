@@ -19,6 +19,10 @@ https://icedtea.classpath.org/download/drops/icedtea7/2.6.13/openjdk.tar.bz2
 14a9f90e2fe5c0bb73dc8ffcc9ea5dc76d3ce7a74a0c901cfd0b0ae3fc8c6450
 {% endblock %}
 
+{% block shell %}
+bin/bash/lite/sh
+{% endblock %}
+
 {% block step_unpack %}
 {{super()}}
 mkdir openjdk.src

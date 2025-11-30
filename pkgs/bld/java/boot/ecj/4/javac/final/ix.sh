@@ -4,5 +4,5 @@
 bld/python
 bld/java/boot/ecj/4
 bld/java/boot/jamvm/good
-bld/java/boot/ecj/4/javac/final/scripts
+bld/java/boot/ecj/3/javac/scripts
 {% endblock %}
