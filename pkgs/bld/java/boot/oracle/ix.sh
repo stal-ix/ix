@@ -160,6 +160,6 @@ BUILD_JDK=true
 DISABLE_HOTSPOT_OS_VERSION_CHECK=yes
 {% endblock %}
 
-{% block make_target %}
+{% block make_target1 %}
 langtools
 {% endblock %}
