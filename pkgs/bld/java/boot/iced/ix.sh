@@ -59,26 +59,21 @@ bin/wget
 bin/gzip
 bld/perl
 bin/unzip
-bin/fastjar
 bin/getconf
 bin/xsltproc
-bld/java/boot/ant/9
-bld/java/boot/classpath/devel
-bld/java/boot/ecj/5/javac/final
+bld/java/boot/jamvm/jdk
 {% endblock %}
 
 {% block configure_flags %}
 --disable-docs
 --without-rhino
 --enable-bootstrap
---with-java=${JAVA}
 --disable-system-gtk
 --disable-system-gio
 --disable-downloading
 --disable-system-sctp
 --disable-system-pcsc
 --disable-system-gconf
---with-ecj=$(which javac)
 --disable-system-kerberos
 --with-jdk-home=${JAVA_HOME}
 --disable-compile-against-syscalls
