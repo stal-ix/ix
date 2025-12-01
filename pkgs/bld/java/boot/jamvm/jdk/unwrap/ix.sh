@@ -32,4 +32,5 @@ EOF
 {% endfor %}
 chmod +x ${out}/bin/*
 ln -s jamvm ${out}/bin/java
+ln -s . ${out}/jre
 {% endblock %}

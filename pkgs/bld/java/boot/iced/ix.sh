@@ -61,6 +61,7 @@ bld/perl
 bin/unzip
 bin/getconf
 bin/xsltproc
+bld/java/boot/free
 bld/java/boot/jamvm/jdk
 {% endblock %}
 
@@ -85,3 +86,5 @@ bld/java/boot/jamvm/jdk
 {% block patch %}
 sed -e 's|jre/lib/rt.jar|lib/rt.jar|' -i Makefile.in
 {% endblock %}
+
+{% block make_thrs %}1{% endblock %}

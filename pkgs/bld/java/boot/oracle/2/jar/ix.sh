@@ -33,14 +33,11 @@ langtools
 {% endblock %}
 
 {% block install %}
-cp -R build/linux-amd64/langtools/dist/bootstrap ${out}/
-cp -R build/linux-amd64/langtools/dist/lib ${out}/lib/
-{% endblock %}
-
-{% block postinstall %}
-:
+mkdir ${out}/share
+cp -R build/linux-amd64/langtools/dist/bootstrap ${out}/share/
+cp -R build/linux-amd64/langtools/dist/lib ${out}/share/
 {% endblock %}
 
 {% block env %}
-export JDK_BOOT_PATH=${out}
+export JDK_BOOT_PATH=${out}/share
 {% endblock %}
