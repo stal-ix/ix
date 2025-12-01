@@ -62,9 +62,9 @@ bin/unzip
 bin/fastjar
 bin/getconf
 bin/xsltproc
-bld/java/boot/ant/8
+bld/java/boot/ant/9
 bld/java/boot/classpath/devel
-bld/java/boot/ecj/4/javac/final
+bld/java/boot/ecj/5/javac/final
 {% endblock %}
 
 {% block configure_flags %}

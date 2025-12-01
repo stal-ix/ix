@@ -7,7 +7,7 @@ https://archive.apache.org/dist/ant/source/apache-ant-1.9.0-src.tar.bz2
 
 {% block bld_tool %}
 bld/bash
-bld/java/boot/ecj/4/javac/final
+bld/java/boot/ecj/4/javac
 {% endblock %}
 
 {% block patch %}

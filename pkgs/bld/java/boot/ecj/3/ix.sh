@@ -20,9 +20,7 @@ Manifest-Version: 1.0
 Main-Class: org.eclipse.jdt.internal.compiler.batch.Main
 EOF
 set -x
-find . -type f -name '*.java' | while read l; do
-    jikes -nowarn ${l}
-done
+find . -type f -name '*.java' | xargs jikes -nowarn
 fastjar cvfm ecj-bootstrap.jar manifest .
 {% endblock %}
 

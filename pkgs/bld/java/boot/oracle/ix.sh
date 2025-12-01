@@ -69,10 +69,10 @@ bin/fastjar
 bin/getconf
 bin/xsltproc
 bld/fake/binutils
-bld/java/boot/ant/8
+bld/java/boot/ant/9
 bld/java/boot/oracle/free
 bld/java/boot/classpath/devel
-bld/java/boot/ecj/4/javac/final
+bld/java/boot/ecj/5/javac/final
 {% endblock %}
 
 {% block step_unpack %}
@@ -99,14 +99,16 @@ cp -R ${JAVA_HOME}/* prev/
 {% for x in ix.parse_list(self.bins()) %}
 cat << EOF > prev/bin/{{x}}
 #!/usr/bin/env sh
-export CLASSPATH=\${IX_CLASSPATH}
 exec g{{x}} "\${@}"
 EOF
 {% endfor %}
 cat << EOF > prev/bin/javac
 #!/usr/bin/env sh
-export CLASSPATH=\${IX_CLASSPATH}
 exec $(which javac) "\${@}"
+EOF
+cat << EOF > prev/bin/ant
+#!/usr/bin/env sh
+exec $(which ant) -debug "\${@}"
 EOF
 cat << EOF > prev/bin/java
 #!/usr/bin/env sh
@@ -115,6 +117,7 @@ EOF
 chmod +x prev/bin/*
 unset CLASSPATH
 unset JAVA_HOME
+export PATH=${PWD}/prev/bin:${PATH}
 mkdir -p ./build/linux-amd64
 {{super()}}
 {% endblock %}
@@ -134,12 +137,12 @@ LOGNAME=root
 ALT_OBJCOPY=$(which objcopy)
 ALT_BOOTDIR=${PWD}/prev
 ALT_JDK_IMPORT_PATH=${PWD}/prev
-JAVAC_CMD=${PWD}/prev/bin/javac
+JAVAC_CMD=${PWD}/prev/javac
 BUILD_LANGTOOLS=true
 BUILD_JAXP=false
 BUILD_JAXWS=false
 BUILD_CORBA=false
-BUILD_HOTSPOT=true
-BUILD_JDK=true
+BUILD_HOTSPOT=false
+BUILD_JDK=false
 DISABLE_HOTSPOT_OS_VERSION_CHECK=yes
 {% endblock %}

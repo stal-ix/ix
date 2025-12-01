@@ -15,6 +15,10 @@ for x in sys.argv[1:]:
         pass
     elif x.startswith('-J'):
         vm.append(x[2:])
+    elif x.startswith('-Xboot'):
+        for cp in x.split(':')[1:]:
+            rest.append('-cp')
+            rest.append(cp)
     else:
         rest.append(x)
 
@@ -27,6 +31,7 @@ if '-target' not in rest:
     cmd += ['-target', '1.5']
 
 if '-cp' not in rest:
-    cmd += ['-cp', os.environ.get('CLASSPATH', '.')]
+    if '-classpath' not in rest:
+        cmd += ['-cp', os.environ.get('CLASSPATH', '.')]
 
 subprocess.check_call(cmd + ['-nowarn'] + rest)

@@ -3,32 +3,30 @@
 {% block bld_tool %}
 bld/python
 bin/fastjar
-bld/java/boot/ant/8
-bld/java/boot/ecj/3
-bld/java/boot/jamvm/2
-bld/java/boot/ecj/3/javac/scripts
+bld/java/boot/ant/9
+bld/java/boot/ecj/4/javac
 {% endblock %}
 
 {% block skip_dirs %}0{% endblock %}
 
 {% block fetch %}
-http://archive.eclipse.org/eclipse/downloads/drops4/R-4.2.1-201209141800/ecjsrc-4.2.1.jar
-d261b2158f598640f1923805d2e9bf47eb21d8333f4e1b37f59f847ad00d48f4
+http://archive.eclipse.org/eclipse/downloads/drops4/R-4.3.2-201402211700/ecjsrc-4.3.2.jar
+5515a358486559c3b4b53840654378a19db89d232a7bdb978c20ffa9e1ed77ac
 {% endblock %}
 
 {% block patch %}
-find . -type f -name '*.java' | while read l; do
-    sed -e 's|@Override||' -i ${l}
-done
 rm org/eclipse/jdt/core/JDTCompilerAdapter.java
 rm -rf org/eclipse/jdt/internal/antadapter
+{% endblock %}
+
+{% block build %}
+set -x
+find . -type f -name '*.java' | xargs javac -target 6 -source 6 -classpath . -nowarn
 mkdir -p META-INF
 cat << EOF > manifest
 Manifest-Version: 1.0
 Main-Class: org.eclipse.jdt.internal.compiler.batch.Main
 EOF
-set -x
-find . -type f -name '*.java' | xargs javac -nowarn
 fastjar cvfm ecj-bootstrap.jar manifest .
 {% endblock %}
 
