@@ -70,9 +70,9 @@ bin/getconf
 bin/xsltproc
 bld/fake/binutils
 bld/java/boot/ant/9
+bld/java/boot/ecj/5/javac
 bld/java/boot/oracle/free
 bld/java/boot/classpath/devel
-bld/java/boot/ecj/5/javac/final
 {% endblock %}
 
 {% block step_unpack %}
@@ -108,15 +108,18 @@ exec $(which javac) "\${@}"
 EOF
 cat << EOF > prev/bin/ant
 #!/usr/bin/env sh
-exec $(which ant) -debug "\${@}"
+exec $(which ant) -verbose "\${@}"
 EOF
 cat << EOF > prev/bin/java
 #!/usr/bin/env sh
-exec jamvm "\${@}"
+exec jamvm -classpath \${IX_CLASSPATH} "\${@}"
 EOF
 chmod +x prev/bin/*
 unset CLASSPATH
 unset JAVA_HOME
+export JAVA=${PWD}/prev/bin/java
+export JAVACMD=${PWD}/prev/bin/java
+export IX_JAVACMD=${PWD}/prev/bin/java
 export PATH=${PWD}/prev/bin:${PATH}
 mkdir -p ./build/linux-amd64
 {{super()}}
@@ -136,8 +139,11 @@ USER=root
 LOGNAME=root
 ALT_OBJCOPY=$(which objcopy)
 ALT_BOOTDIR=${PWD}/prev
+BOOTDIR=${PWD}/prev
+BOOT_JAVA_HOME=${PWD}/prev
 ALT_JDK_IMPORT_PATH=${PWD}/prev
-JAVAC_CMD=${PWD}/prev/javac
+JAVAC_CMD=${PWD}/prev/bin/javac
+JAVACMD=${PWD}/prev/bin/java
 BUILD_LANGTOOLS=true
 BUILD_JAXP=false
 BUILD_JAXWS=false
