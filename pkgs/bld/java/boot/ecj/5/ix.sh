@@ -10,8 +10,8 @@ bld/java/boot/ecj/4/javac
 {% block skip_dirs %}0{% endblock %}
 
 {% block fetch %}
-http://archive.eclipse.org/eclipse/downloads/drops4/R-4.3.2-201402211700/ecjsrc-4.3.2.jar
-5515a358486559c3b4b53840654378a19db89d232a7bdb978c20ffa9e1ed77ac
+http://archive.eclipse.org/eclipse/downloads/drops4/R-4.4.2-201502041700/ecjsrc-4.4.2.jar
+ad3daf77ab710268f88c41fba87218dcdf502b423217a3799b5227ddf03b5858
 {% endblock %}
 
 {% block patch %}
