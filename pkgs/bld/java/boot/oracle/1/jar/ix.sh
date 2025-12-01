@@ -1,4 +1,4 @@
-{% extends '//die/c/make.sh' %}
+{% extends '//die/c/ix.sh' %}
 
 {% block fetch %}
 https://icedtea.classpath.org/download/drops/icedtea7/2.6.13/openjdk.tar.bz2
@@ -45,34 +45,10 @@ rmid
 rmic
 {% endblock %}
 
-{% block bld_libs %}
-lib/c
-lib/z
-lib/gif
-lib/c++
-lib/png
-lib/jpeg
-lib/cups
-lib/alsa
-lib/lcms/2
-lib/freetype
-aux/x11/proto
-{% endblock %}
-
 {% block bld_tool %}
-bin/zip
-bin/wget
-bin/gzip
-bld/perl
-bin/unzip
-bin/fastjar
-bin/getconf
-bin/xsltproc
-bld/fake/binutils
 bld/java/boot/free
 bld/java/boot/ant/9
-bld/java/boot/oracle/1
-bld/java/boot/jamvm/good
+bld/java/boot/ecj/5/javac
 bld/java/boot/classpath/devel
 {% endblock %}
 
@@ -115,51 +91,34 @@ cat << EOF > prev/bin/java
 #!/usr/bin/env sh
 exec jamvm -classpath \${IX_CLASSPATH} "\${@}"
 EOF
-mkdir prev/jre
-cp -R prev/lib prev/jre/
 chmod +x prev/bin/*
-unset CLASSPATH
-unset JAVA_HOME
 export IX_JAVACMD=${PWD}/prev/bin/java
 export PATH=${PWD}/prev/bin:${PATH}
-mkdir -p ./build/linux-amd64
-mkdir -p build/linux-amd64/langtools/build/genstubs/java/io
-base64 -d << EOF > build/linux-amd64/langtools/build/genstubs/java/io/File.java
-{% include 'File.java/base64' %}
-EOF
-base64 -d << EOF > build/linux-amd64/langtools/build/genstubs/java/io/FileSystem.java
-{% include 'FileSystem.java/base64' %}
-EOF
-{{super()}}
+export IMPORT_JDK=${PWD}/jdk
+export JAVA_HOME=${PWD}/prev
+export ANT_OPTS=-Djava.io.tmpdir=${TMPDIR}
+export BUILD_DIR=${PWD}/build
+
+cd langtools/make
+
+ant -Djdk.version=1.7.0 \
+    -Dfull.version='1.7.0-internal-root_2025_12_01_15_31-b00' \
+    -Dmilestone=internal \
+    -Dbuild.number=b00 \
+    -Djavac.target=7 \
+    -Djavac.source=7 \
+    -Dboot.java.home=${JAVA_HOME} \
+    -Dimport.jdk=${IMPORT_JDK} \
+    -Dbuild.dir=${BUILD_DIR} \
+    -Ddist.dir=${BUILD_DIR} \
+    build-bootstrap-javac
 {% endblock %}
 
-{% block make_flags %}
-CC=cc
-UNIXCOMMAND_PATH=" "
-USRBIN_PATH=" "
-UTILS_COMMAND_PATH=" "
-UTILS_USR_BIN_PATH=" "
-CUPS_HEADERS_PATH=${CUPS_HEADERS_PATH}
-REQUIRED_FREETYPE_VERSION=2.14.1
-REQUIRED_ALSA_VERSION=
-REQUIRED_BOOT_VER=1.5.0
-USER=root
-LOGNAME=root
-ALT_OBJCOPY=$(which objcopy)
-ALT_BOOTDIR=${PWD}/prev
-BOOTDIR=${PWD}/prev
-BOOT_JAVA_HOME=${PWD}/prev
-ALT_JDK_IMPORT_PATH=${PWD}/prev
-JAVAC_CMD=${PWD}/prev/bin/javac
-BUILD_LANGTOOLS=true
-BUILD_JAXP=false
-BUILD_JAXWS=false
-BUILD_CORBA=false
-BUILD_HOTSPOT=false
-BUILD_JDK=true
-DISABLE_HOTSPOT_OS_VERSION_CHECK=yes
+{% block install %}
+mkdir ${out}/share
+cp build/bootstrap/lib/javac.jar ${out}/share/
 {% endblock %}
 
-{% block make_target %}
-langtools
+{% block env %}
+export JAVAC_JAR=${out}/share/javac.jar
 {% endblock %}
