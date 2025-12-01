@@ -90,6 +90,11 @@ find . -type f -name '*.gmk' | while read l; do
         -e 's|/bin/echo|echo|' \
         -i ${l}
 done
+cat jdk/make/tools/Makefile \
+    | grep -v compile_font_config \
+    | grep -v dtdbuilder \
+    > _
+mv _ jdk/make/tools/Makefile
 {% endblock %}
 
 {% block build %}
@@ -130,6 +135,8 @@ EOF
 base64 -d << EOF > build/linux-amd64/langtools/build/genstubs/java/io/FileSystem.java
 {% include 'FileSystem.java/base64' %}
 EOF
+mkdir -p build/linux-amd64/btjars
+>build/linux-amd64/btjars/jarreorder.jar
 {{super()}}
 {% endblock %}
 
@@ -158,8 +165,4 @@ BUILD_CORBA=false
 BUILD_HOTSPOT=false
 BUILD_JDK=true
 DISABLE_HOTSPOT_OS_VERSION_CHECK=yes
-{% endblock %}
-
-{% block make_target1 %}
-langtools
 {% endblock %}
