@@ -30,7 +30,6 @@ jaxp
 jaxws
 jdk
 langtools
-openjdk
 {% endblock %}
 
 {% block bld_libs %}
@@ -77,14 +76,52 @@ bld/java/boot/jamvm/jdk
 --disable-system-gconf
 --disable-system-kerberos
 --with-jdk-home=${JAVA_HOME}
+--with-parallel-jobs=${make_thrs}
 --disable-compile-against-syscalls
+--with-openjdk-src-dir=${PWD}/openjdk.src
+{% endblock %}
+
+{% block step_unpack %}
+{{super()}}
+mkdir openjdk.src
+cd openjdk.src
+extract 1 ${src}/openjdk.tar.bz2
 {% for x in ix.parse_list(self.parts()) %}
---with-{{x}}-src-zip=${src}/{{x}}.tar.bz2
+extract 0 ${src}/{{x}}.tar.bz2
+mv {{x}}-* {{x}}
 {% endfor %}
+cd ..
 {% endblock %}
 
 {% block patch %}
-sed -e 's|jre/lib/rt.jar|lib/rt.jar|' -i Makefile.in
+find . -type f -name '*.gmk' | while read l; do
+    sed -e 's|/usr/bin/echo|echo|' \
+        -e 's|/bin/echo|echo|' \
+        -i ${l}
+done
+export X=openjdk.build-boot/langtools/build/genstubs
+mkdir -p ${X}/java/io
+base64 -d << EOF > ${X}/java/io/File.java
+{% include 'File.java/base64' %}
+EOF
+base64 -d << EOF > ${X}/java/io/FileSystem.java
+{% include 'FileSystem.java/base64' %}
+EOF
 {% endblock %}
 
-{% block make_thrs %}1{% endblock %}
+{% block make_flags %}
+UNIXCOMMAND_PATH=" "
+USRBIN_PATH=" "
+UTILS_COMMAND_PATH=" "
+UTILS_USR_BIN_PATH=" "
+USER=root
+LOGNAME=root
+CUPS_HEADERS_PATH=${CUPS_HEADERS_PATH}
+REQUIRED_FREETYPE_VERSION=2.14.1
+REQUIRED_ALSA_VERSION=
+{% endblock %}
+
+{% block build %}
+export IX_EXTRA_SP=${PWD}/openjdk-boot/jaxws/src/share/jaxws_classes
+{{super()}}
+{% endblock %}
