@@ -94,6 +94,10 @@ cd ..
 {% endblock %}
 
 {% block patch %}
+find patches -type f -name 'ecj*' | while read l; do
+    rm ${l}
+    touch ${l}
+done
 find . -type f -name '*.gmk' | while read l; do
     sed -e 's|/usr/bin/echo|echo|' \
         -e 's|/bin/echo|echo|' \

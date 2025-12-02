@@ -23,6 +23,8 @@ rmic
 
 {% block install %}
 {{super()}}
+rm -rf ${out}/share/classpath/examples
+cp ${out}/share/classpath/tools.zip ${out}/lib/tools.jar
 cp $(which javac) ${out}/bin/
 {% for x in ix.parse_list(self.bins()) %}
 cat << EOF > ${out}/bin/{{x}}
