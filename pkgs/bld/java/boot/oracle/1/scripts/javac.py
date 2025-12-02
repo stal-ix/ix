@@ -27,6 +27,9 @@ if '-sourcepath' in rest:
         idx = rest.index('-sourcepath') + 1
         rest[idx] = os.environ['IX_EXTRA_SP'] + ':' + rest[idx]
 
+        if os.getcwd().endswith('/jaxp'):
+            rest[idx] = os.environ['IX_EXTRA_SP_JAXP'] + ':' + rest[idx]
+
 cmd = [os.environ['JAVACMD'], '-classpath', os.environ['JAVAC_JAR']] + vm + ['com.sun.tools.javac.Main'] + rest
 
 try:

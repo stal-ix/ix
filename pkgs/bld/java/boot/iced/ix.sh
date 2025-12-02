@@ -127,5 +127,6 @@ REQUIRED_ALSA_VERSION=
 
 {% block build %}
 export IX_EXTRA_SP=${PWD}/openjdk-boot/jaxws/src/share/jaxws_classes
+export IX_EXTRA_SP_JAXP=${PWD}/openjdk-boot/jdk/src/solaris/classes:${PWD}/openjdk-boot/jdk/src/share/classes:${PWD}/generated.build
 {{super()}}
 {% endblock %}
