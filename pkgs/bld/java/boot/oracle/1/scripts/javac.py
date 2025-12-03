@@ -8,17 +8,14 @@ import subprocess
 rest = []
 vm = []
 
-def it_tokens(lst):
-    for x in lst:
-        if x.startswith('@'):
-            with open(x[1:]) as f:
-                yield from it_tokens(list(f.read().strip().split('\n')))
-        else:
-            yield x
-
-for x in it_tokens(sys.argv[1:]):
+for x in sys.argv[1:]:
     if x.startswith('-J'):
-        vm.append(x[2:])
+        v = x[2:]
+
+        if v.startswith('-Xboot'):
+            pass
+        else:
+            vm.append(v)
     else:
         rest.append(x)
 
@@ -40,6 +37,18 @@ except Exception as e:
             print(f'export {k}="{v}"', file=f)
 
         for x in cmd:
+            if x[0] == '@':
+                op = x[1:]
+                np = os.path.basename(op)
+
+                with open(op, 'r') as ff:
+                    data = ff.read()
+
+                with open(np, 'w') as ff:
+                    ff.write(data)
+
+                x = '@./' + np
+
             print(x + ' \\', file=f)
 
     raise e

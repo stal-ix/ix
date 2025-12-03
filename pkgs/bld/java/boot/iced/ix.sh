@@ -123,10 +123,15 @@ LOGNAME=root
 CUPS_HEADERS_PATH=${CUPS_HEADERS_PATH}
 REQUIRED_FREETYPE_VERSION=2.14.1
 REQUIRED_ALSA_VERSION=
+DISABLE_HOTSPOT_OS_VERSION_CHECK=1
 {% endblock %}
 
 {% block build %}
 export IX_EXTRA_SP=${PWD}/openjdk-boot/jaxws/src/share/jaxws_classes
 export IX_EXTRA_SP_JAXP=${PWD}/openjdk-boot/jdk/src/solaris/classes:${PWD}/openjdk-boot/jdk/src/share/classes:${PWD}/generated.build
 {{super()}}
+{% endblock %}
+
+{% block build_flags %}
+wrap_cc
 {% endblock %}

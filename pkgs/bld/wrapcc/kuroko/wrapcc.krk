@@ -39,6 +39,9 @@ def flt_args(argv):
         if x.startswith('-mcpu'):
             continue
 
+        if x == '-fno-lifetime-dse':
+            continue
+
         if x == '-L/lib':
             continue
 
@@ -145,6 +148,9 @@ def main():
         return
 
     if '-print-search-dirs' in raw_args:
+        return
+
+    if '-dumpspecs' in raw_args:
         return
 
     if '-print-multi-os-directory' in raw_args:
