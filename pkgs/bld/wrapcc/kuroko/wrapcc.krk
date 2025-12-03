@@ -42,6 +42,9 @@ def flt_args(argv):
         if x == '-fno-lifetime-dse':
             continue
 
+        if x == '-fpch-deps':
+            continue
+
         if x == '-L/lib':
             continue
 

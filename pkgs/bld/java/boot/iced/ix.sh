@@ -41,9 +41,11 @@ lib/png
 lib/jpeg
 lib/cups
 lib/alsa
+lib/kernel
 lib/lcms/2
 lib/freetype
 aux/x11/proto
+lib/shim/redir(from=sys/sysctl.h,to=linux/sysctl.h)
 lib/shim/fake/pkg(pkg_name=xt,pkg_ver=100500)
 lib/shim/fake/pkg(pkg_name=x11,pkg_ver=100500)
 lib/shim/fake/pkg(pkg_name=xinerama,pkg_ver=100500)
@@ -58,6 +60,7 @@ bin/wget
 bin/gzip
 bld/perl
 bin/unzip
+bld/prepend
 bin/getconf
 bin/xsltproc
 bld/java/boot/free
@@ -94,6 +97,14 @@ cd ..
 {% endblock %}
 
 {% block patch %}
+base64 -d << EOF > openjdk.src/hotspot/src/share/vm/code/dependencies.hpp
+{% include 'dependencies.hpp/base64' %}
+EOF
+find openjdk.src/hotspot/make -type f -name '*.make' | while read l; do
+prepend ${l} << EOF
+USE_PRECOMPILED_HEADER=0
+EOF
+done
 find patches -type f -name 'ecj*' | while read l; do
     rm ${l}
     touch ${l}
@@ -124,6 +135,7 @@ CUPS_HEADERS_PATH=${CUPS_HEADERS_PATH}
 REQUIRED_FREETYPE_VERSION=2.14.1
 REQUIRED_ALSA_VERSION=
 DISABLE_HOTSPOT_OS_VERSION_CHECK=1
+USE_PRECOMPILED_HEADER=0
 {% endblock %}
 
 {% block build %}
@@ -134,4 +146,5 @@ export IX_EXTRA_SP_JAXP=${PWD}/openjdk-boot/jdk/src/solaris/classes:${PWD}/openj
 
 {% block build_flags %}
 wrap_cc
+shut_up
 {% endblock %}
