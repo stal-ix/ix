@@ -2,8 +2,8 @@
 
 {% block bld_tool %}
 {{super()}}
-bld/java/boot/oracle/1
 bld/java/boot/jamvm/good
+bld/java/boot/ecj/5/javac
 {% endblock %}
 
 {% block bins %}

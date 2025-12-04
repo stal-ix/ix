@@ -64,7 +64,7 @@ bld/prepend
 bin/getconf
 bin/xsltproc
 bld/java/boot/free
-bld/java/boot/jamvm/jdk
+bld/java/boot/ecj/jdk
 {% endblock %}
 
 {% block configure_flags %}
@@ -97,9 +97,12 @@ cd ..
 {% endblock %}
 
 {% block patch %}
-base64 -d << EOF > openjdk.src/hotspot/src/share/vm/code/dependencies.hpp
-{% include 'dependencies.hpp/base64' %}
+prepend openjdk.src/hotspot/src/share/vm/utilities/globalDefinitions_gcc.hpp << EOF
+#include <math.h>
 EOF
+find openjdk.src/hotspot -type f -name '*.hpp' | while read l; do
+    sed -e 's|(-1) <<|((unsigned)(-1)) << |' -i ${l}
+done
 find openjdk.src/hotspot/make -type f -name '*.make' | while read l; do
 prepend ${l} << EOF
 USE_PRECOMPILED_HEADER=0
