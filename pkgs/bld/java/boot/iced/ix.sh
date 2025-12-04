@@ -45,6 +45,9 @@ lib/kernel
 lib/lcms/2
 lib/freetype
 aux/x11/proto
+bld/java/boot/iced/fakes
+lib/shim/redir(from=fpu_control.h,to=fakes.h)
+lib/shim/redir(from=gnu/libc-version.h,to=fakes.h)
 lib/shim/redir(from=sys/sysctl.h,to=linux/sysctl.h)
 lib/shim/fake/pkg(pkg_name=xt,pkg_ver=100500)
 lib/shim/fake/pkg(pkg_name=x11,pkg_ver=100500)
@@ -97,9 +100,11 @@ cd ..
 {% endblock %}
 
 {% block patch %}
-prepend openjdk.src/hotspot/src/share/vm/utilities/globalDefinitions_gcc.hpp << EOF
-#include <math.h>
+cd openjdk.src/hotspot
+(base64 -d | patch -p1) << EOF
+{% include 'icedtea-7-hotspot-pointer-comparison.patch/base64' %}
 EOF
+cd ../../
 find openjdk.src/hotspot -type f -name '*.hpp' | while read l; do
     sed -e 's|(-1) <<|((unsigned)(-1)) << |' -i ${l}
 done
@@ -150,4 +155,9 @@ export IX_EXTRA_SP_JAXP=${PWD}/openjdk-boot/jdk/src/solaris/classes:${PWD}/openj
 {% block build_flags %}
 wrap_cc
 shut_up
+{% endblock %}
+
+{% block cpp_defines %}
+isnanf=isnan
+SIGCLD=SIGCHLD
 {% endblock %}

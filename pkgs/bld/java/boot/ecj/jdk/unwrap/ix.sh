@@ -35,4 +35,6 @@ EOF
 chmod +x ${out}/bin/*
 ln -s jamvm ${out}/bin/java
 ln -s . ${out}/jre
+rm -rf ${out}/include
+rm -rf ${out}/lib/libjvm*
 {% endblock %}
