@@ -68,6 +68,8 @@ bin/getconf
 bin/xsltproc
 bld/java/boot/free
 bld/java/boot/ecj/jdk
+bld/fake(tool_name=ldd)
+bld/java/boot/iced/readelf
 {% endblock %}
 
 {% block configure_flags %}
@@ -144,6 +146,7 @@ REQUIRED_FREETYPE_VERSION=2.14.1
 REQUIRED_ALSA_VERSION=
 DISABLE_HOTSPOT_OS_VERSION_CHECK=1
 USE_PRECOMPILED_HEADER=0
+SORT=sort
 {% endblock %}
 
 {% block build %}
