@@ -102,17 +102,14 @@ cd ..
 {% endblock %}
 
 {% block patch %}
-export S=${PWD}
-cd openjdk.src/jdk/make/tools/src/build/tools/generatecurrencydata
-(base64 -d | patch -p8) << EOF
-{% include '4f3b76ff496e7423e5c43ca62cef019e4f4292ec.patch/base64' %}
-EOF
-cd ${S}
-cd openjdk.src/hotspot
-(base64 -d | patch -p1) << EOF
+>openjdk.src/jdk/src/solaris/native/java/net/linux_close.c
+>openjdk.src/jdk/src/solaris/native/java/net/NetworkInterface.c
+>openjdk.src/jdk/src/solaris/native/java/net/Inet4AddressImpl.c
+sed -e 's|.*throw.*RuntimeException.*time.*10.*||' \
+    -i openjdk.src/jdk/make/tools/src/build/tools/generatecurrencydata/GenerateCurrencyData.java
+(cd openjdk.src/hotspot; base64 -d | patch -p1) << EOF
 {% include 'icedtea-7-hotspot-pointer-comparison.patch/base64' %}
 EOF
-cd ${S}
 find openjdk.src/hotspot -type f -name '*.hpp' | while read l; do
     sed -e 's|(-1) <<|((unsigned)(-1)) << |' -i ${l}
 done
@@ -169,6 +166,7 @@ shut_up
 {% block cpp_defines %}
 isnanf=isnan
 SIGCLD=SIGCHLD
+__SIGRTMAX=SIGRTMAX
 {% endblock %}
 
 {% block c_flags %}
