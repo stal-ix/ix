@@ -131,7 +131,10 @@ def link(objs, args):
             continue
 
         if '.so' in x:
-            return link_lib(x, objs)
+            if '-soname=' in x:
+                pass
+            else:
+                return link_lib(x, objs)
 
         if '.dylib' in x:
             return link_lib(x, objs)
