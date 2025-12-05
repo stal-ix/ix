@@ -159,14 +159,7 @@ REQUIRED_ALSA_VERSION=
 DISABLE_HOTSPOT_OS_VERSION_CHECK=1
 USE_PRECOMPILED_HEADER=0
 SORT=sort
-OHACK=true
 BUILD_HEADLESS_ONLY=yes
-{% endblock %}
-
-{% block build %}
-export IX_EXTRA_SP=${PWD}/openjdk-boot/jaxws/src/share/jaxws_classes
-export IX_EXTRA_SP_JAXP=${PWD}/openjdk-boot/jdk/src/solaris/classes:${PWD}/openjdk-boot/jdk/src/share/classes:${PWD}/generated.build
-{{super()}}
 {% endblock %}
 
 {% block build_flags %}
@@ -182,4 +175,12 @@ __SIGRTMAX=SIGRTMAX
 
 {% block c_flags %}
 -Wno-implicit-function-declaration
+{% endblock %}
+
+{% block make_target %}
+stamps/icedtea-boot.stamp
+{% endblock %}
+
+{% block install %}
+cp -R ${tmp}/lib ${out}/
 {% endblock %}
