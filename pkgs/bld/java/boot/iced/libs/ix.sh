@@ -7,6 +7,7 @@ stamps/icedtea-boot.stamp
 {% block install %}
 cp -R ${tmp}/lib ${out}/
 cp openjdk.build-boot/tmp/java/fdlibm/obj64/libfdlibm.amd64.a ${out}/lib/
+llvm-ar qL ${out}/lib/libjsig.a openjdk.build-boot/lib/amd64/libjsig.so
 {% endblock %}
 
 {% block c_rename_symbol %}

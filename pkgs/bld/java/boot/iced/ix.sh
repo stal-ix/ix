@@ -5,6 +5,7 @@
 lib/dl/plugin(dl_for=bld/java/boot/iced/libs,dl_lib=java)
 lib/dl/plugin(dl_for=bld/java/boot/iced/libs,dl_lib=zip)
 lib/dl/plugin(dl_for=bld/java/boot/iced/libs,dl_lib=jvm)
+lib/dl/plugin(dl_for=bld/java/boot/iced/libs,dl_lib=jsig)
 {% endblock %}
 
 {% block bld_tool %}

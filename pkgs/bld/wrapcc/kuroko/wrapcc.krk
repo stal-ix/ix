@@ -173,6 +173,8 @@ def main():
         return exec(args)
     elif '-fsyntax-only' in args:
         return exec(args)
+    elif 'libjsig.so' in args:
+        return exec(args + ['-c'])
     elif '-P' in args or '-E' in args:
         return exec(['clang-cpp'] + args[1:])
     elif is_link_lib(sa, raw_args):
