@@ -136,14 +136,6 @@ find . -type f -name '*.gmk' | while read l; do
         -e 's|/bin/echo|echo|' \
         -i ${l}
 done
-export X=openjdk.build-boot/langtools/build/genstubs
-mkdir -p ${X}/java/io
-base64 -d << EOF > ${X}/java/io/File.java
-{% include 'File.java/base64' %}
-EOF
-base64 -d << EOF > ${X}/java/io/FileSystem.java
-{% include 'FileSystem.java/base64' %}
-EOF
 {% endblock %}
 
 {% block make_flags %}
