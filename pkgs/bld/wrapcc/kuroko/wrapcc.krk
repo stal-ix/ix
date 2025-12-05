@@ -129,17 +129,15 @@ def link(objs, args):
     for x in args:
         if '-Wl' in x:
             continue
-
-        if '.so' in x:
-            if '-soname=' in x:
-                pass
-            else:
-                return link_lib(x, objs)
-
-        if '.dylib' in x:
+        elif '-soname=' in x:
+            continue
+        elif '.so.' in x:
             return link_lib(x, objs)
-
-        if '.dll' in x:
+        elif x.endswith('.so'):
+            return link_lib(x, objs)
+        elif '.dylib' in x:
+            return link_lib(x, objs)
+        elif '.dll' in x:
             return link_lib(x, objs)
 
     return link_lib(args[args.index('-o') + 1], objs)

@@ -66,6 +66,7 @@ bin/unzip
 bld/prepend
 bin/getconf
 bin/xsltproc
+bld/devendor
 bld/java/boot/free
 bld/java/boot/ecj/jdk
 bld/fake(tool_name=ldd)
@@ -102,6 +103,14 @@ cd ..
 {% endblock %}
 
 {% block patch %}
+sed -e 's|xawt||g' -i openjdk.src/jdk/make/sun/Makefile
+sed -e 's|headless||g' -i openjdk.src/jdk/make/sun/Makefile
+devendor openjdk.src/jdk/src/share/native/sun/font
+devendor openjdk.src/jdk/src/solaris/native/sun/font
+devendor openjdk.src/jdk/src/share/native/sun/awt
+devendor openjdk.src/jdk/src/solaris/native/sun/awt
+devendor openjdk.src/jdk/src/share/native/sun/java2d
+devendor openjdk.src/jdk/src/solaris/native/sun/java2d
 >openjdk.src/jdk/src/solaris/native/java/net/linux_close.c
 >openjdk.src/jdk/src/solaris/native/java/net/NetworkInterface.c
 >openjdk.src/jdk/src/solaris/native/java/net/Inet4AddressImpl.c
@@ -150,6 +159,8 @@ REQUIRED_ALSA_VERSION=
 DISABLE_HOTSPOT_OS_VERSION_CHECK=1
 USE_PRECOMPILED_HEADER=0
 SORT=sort
+OHACK=true
+BUILD_HEADLESS_ONLY=yes
 {% endblock %}
 
 {% block build %}
