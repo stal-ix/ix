@@ -2,6 +2,7 @@
 
 {% block bld_libs %}
 {{super()}}
+bld/java/boot/iced/rt
 lib/dl/plugin(dl_for=bld/java/boot/iced/libs,dl_lib=java)
 lib/dl/plugin(dl_for=bld/java/boot/iced/libs,dl_lib=zip)
 lib/dl/plugin(dl_for=bld/java/boot/iced/libs,dl_lib=jvm)
@@ -16,4 +17,10 @@ bld/java/boot/iced/exe
 {% block script_init_env %}
 export PLUGINS=
 {{super()}}
+{% endblock %}
+
+{% block c_rename_symbol %}
+signal
+sigset
+sigaction
 {% endblock %}
