@@ -7,12 +7,15 @@ stamps/icedtea-boot.stamp
 {% block install %}
 cp -R ${tmp}/lib ${out}/
 cp openjdk.build-boot/tmp/java/fdlibm/obj64/libfdlibm.amd64.a ${out}/lib/
+rm ${out}/lib/libsaproc.a
 llvm-ar qL ${out}/lib/libjsig.a openjdk.build-boot/lib/amd64/libjsig.so
-llvm-objcopy \
-    --redefine-sym=signal=bin_java_boot_iced_signal \
-    --redefine-sym=sigset=bin_java_boot_iced_sigset \
-    --redefine-sym=sigaction=bin_java_boot_iced_sigaction \
-    ${out}/lib/libjsig.a
+find ${out} -type f -name '*.a' | while read l; do
+    llvm-objcopy \
+        --redefine-sym=signal=bin_java_boot_iced_signal \
+        --redefine-sym=sigset=bin_java_boot_iced_sigset \
+        --redefine-sym=sigaction=bin_java_boot_iced_sigaction \
+        ${l}
+done
 {% endblock %}
 
 {% block c_rename_symbol %}
