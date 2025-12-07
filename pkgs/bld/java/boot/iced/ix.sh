@@ -36,4 +36,23 @@ stamps/icedtea-boot.stamp
 {% block install %}
 cp -R openjdk.build-boot/j2sdk-image/* ${out}/
 cp -R openjdk.build-boot/hotspot/outputdir/linux_amd64_compiler2/product/gamma ${out}/bin/hotspot
+cat << EOF > launcher
+#!/usr/bin/env python3
+D = '''
+EOF
+base64 -d << EOF > flt.py
+{% include 'flt.py/base64' %}
+EOF
+cat openjdk.src/jdk/make/launchers/Makefile | python3 flt.py >> launcher
+cat << EOF >> launcher
+'''
+EOF
+base64 -d << EOF >> launcher
+{% include 'launcher.py/base64' %}
+EOF
+chmod +x launcher
+mv launcher ${out}/bin/
+python3 ${out}/bin/launcher install ${out}/bin
+rm -rf ${out}/jre/bin
+ln -s ../bin ${out}/jre/bin
 {% endblock %}
