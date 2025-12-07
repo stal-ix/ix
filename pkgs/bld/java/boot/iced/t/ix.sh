@@ -46,6 +46,7 @@ lib/lcms/2
 lib/freetype
 aux/x11/proto
 bld/java/boot/iced/fakes
+lib/shim/fake(lib_name=stdc++)
 lib/shim/redir(from=fpu_control.h,to=fakes.h)
 lib/shim/redir(from=gnu/libc-version.h,to=fakes.h)
 lib/shim/redir(from=sys/sysctl.h,to=linux/sysctl.h)
@@ -59,7 +60,6 @@ lib/shim/fake/pkg(pkg_name=xtst,pkg_ver=100500)
 
 {% block bld_tool %}
 bin/zip
-bin/wget
 bin/gzip
 bld/perl
 bin/unzip
@@ -70,6 +70,7 @@ bld/devendor
 bld/java/boot/free
 bld/java/boot/ecj/jdk
 bld/fake(tool_name=ldd)
+bld/fake(tool_name=wget)
 bld/java/boot/iced/readelf
 {% endblock %}
 

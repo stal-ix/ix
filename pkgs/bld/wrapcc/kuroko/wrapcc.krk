@@ -117,29 +117,9 @@ def is_link_lib(sa, raw_args):
     if '-bundle' in raw_args:
         return True
 
-    if '--soname' in sa:
-        return True
-
-    if '-Wl,-soname' in sa:
-        return True
-
     return False
 
 def link(objs, args):
-    for x in args:
-        if '-Wl' in x:
-            continue
-        elif '-soname=' in x:
-            continue
-        elif '.so.' in x:
-            return link_lib(x, objs)
-        elif x.endswith('.so'):
-            return link_lib(x, objs)
-        elif '.dylib' in x:
-            return link_lib(x, objs)
-        elif '.dll' in x:
-            return link_lib(x, objs)
-
     return link_lib(args[args.index('-o') + 1], objs)
 
 def exec(args):

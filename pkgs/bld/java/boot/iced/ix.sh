@@ -2,6 +2,7 @@
 
 {% block bld_libs %}
 {{super()}}
+lib/build/muldefs
 bld/java/boot/iced/rt
 lib/shim/fake/symbol(symbol_name=NET_Poll)
 lib/shim/fake/symbol(symbol_name=NET_Timeout0)
