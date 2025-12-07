@@ -39,6 +39,12 @@ def flt_args(argv):
         if x.startswith('-mcpu'):
             continue
 
+        if x == '-fno-lifetime-dse':
+            continue
+
+        if x == '-fpch-deps':
+            continue
+
         if x == '-L/lib':
             continue
 
@@ -123,14 +129,15 @@ def link(objs, args):
     for x in args:
         if '-Wl' in x:
             continue
-
-        if '.so' in x:
+        elif '-soname=' in x:
+            continue
+        elif '.so.' in x:
             return link_lib(x, objs)
-
-        if '.dylib' in x:
+        elif x.endswith('.so'):
             return link_lib(x, objs)
-
-        if '.dll' in x:
+        elif '.dylib' in x:
+            return link_lib(x, objs)
+        elif '.dll' in x:
             return link_lib(x, objs)
 
     return link_lib(args[args.index('-o') + 1], objs)
@@ -145,6 +152,9 @@ def main():
         return
 
     if '-print-search-dirs' in raw_args:
+        return
+
+    if '-dumpspecs' in raw_args:
         return
 
     if '-print-multi-os-directory' in raw_args:
@@ -163,6 +173,8 @@ def main():
         return exec(args)
     elif '-fsyntax-only' in args:
         return exec(args)
+    elif 'libjsig.so' in args:
+        return exec(args + ['-c'])
     elif '-P' in args or '-E' in args:
         return exec(['clang-cpp'] + args[1:])
     elif is_link_lib(sa, raw_args):

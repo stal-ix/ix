@@ -12,3 +12,8 @@ export CFLAGS="-fno-builtin ${CFLAGS}"
 {% block sources %}
 symbol.c
 {% endblock %}
+
+{% block install %}
+{{super()}}
+mv ${out}/lib/lib*.a ${out}/lib/libfake_symbol_{{symbol_name}}.a
+{% endblock %}

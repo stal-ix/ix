@@ -5,11 +5,11 @@ https://github.com/7mind/jopa
 {% endblock %}
 
 {% block git_commit %}
-d63f7c1f7cc6a50c3bbbb2ae2a2297b87331a766
+1609fe6e2bad76eb350b844b5ee576a391434757
 {% endblock %}
 
 {% block git_sha %}
-a08c322254f038c692b2d9ea307635efdd3bea02e1b5d64fe383016f776da7a8
+64b37bedcade355c9838732ce6442143ef7018ff68729e8b5345841916b68038
 {% endblock %}
 
 {% block bld_libs %}
@@ -17,4 +17,28 @@ lib/c
 lib/c++
 lib/icu
 lib/zip
+{% endblock %}
+
+{% block bld_tool %}
+bin/zip
+bld/make
+bld/python
+bld/fake(tool_name=jar)
+{% endblock %}
+
+{% block cmake_flags %}
+JOPA_BUILD_JAMVM=OFF
+{% endblock %}
+
+{% block build_flags %}
+no_werror
+{% endblock %}
+
+{% block ninja_targets %}
+src/jopa
+{% endblock %}
+
+{% block install %}
+mkdir ${out}/bin
+cp ${tmp}/obj/src/jopa ${out}/bin/
 {% endblock %}
