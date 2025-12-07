@@ -2,7 +2,6 @@
 
 {% block bld_libs %}
 {{super()}}
-lib/build/muldefs
 bld/java/boot/iced/rt
 lib/shim/fake/symbol(symbol_name=NET_Poll)
 lib/shim/fake/symbol(symbol_name=NET_Timeout0)
@@ -55,4 +54,8 @@ mv launcher ${out}/bin/
 python3 ${out}/bin/launcher install ${out}/bin
 rm -rf ${out}/jre/bin
 ln -s ../bin ${out}/jre/bin
+{% endblock %}
+
+{% block postinstall %}
+:
 {% endblock %}

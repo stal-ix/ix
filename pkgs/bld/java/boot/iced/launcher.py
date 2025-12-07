@@ -12,7 +12,7 @@ def split(v):
 
 def java_home():
     if 'JAVA_HOME' in os.environ:
-        return os.environ('JAVA_HOME')
+        return os.environ['JAVA_HOME']
 
     return os.path.dirname(os.path.dirname(os.path.abspath(sys.argv[0])))
 
