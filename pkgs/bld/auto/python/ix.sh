@@ -2,8 +2,8 @@
 
 {% block run_deps %}
 {% if native %}
-bin/xz(std_box=bld/boot/box,intl_ver=no)
+bld/auto(conf_ver=2/71,std_box=bld/boot/box)
 {% else %}
-bin/xz(intl_ver=no)
+bld/auto(conf_ver=2/71)
 {% endif %}
 {% endblock %}
