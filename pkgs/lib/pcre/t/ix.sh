@@ -21,7 +21,7 @@ lib/c
 PCRE_BUILD_PCRE16=ON
 PCRE_BUILD_PCRE32=ON
 PCRE_BUILD_PCRECPP=OFF
-{% if wasm32 or wasm64 %}
+{% if wasm32 or wasm64 or riscv64 %}
 PCRE_SUPPORT_JIT=OFF
 PCRE_SUPPORT_PCREGREP_JIT=OFF
 {% else %}
