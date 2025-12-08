@@ -4,9 +4,8 @@
 {{super()}}
 lib/build/muldefs
 bld/java/boot/iced/rt
-lib/shim/fake/symbol(symbol_name=NET_Poll)
-lib/shim/fake/symbol(symbol_name=NET_Timeout0)
 lib/dl/plugin(dl_for=bld/java/boot/iced/libs,dl_lib=zip)
+lib/dl/plugin(dl_for=bld/java/boot/iced/libs,dl_lib=nio)
 lib/dl/plugin(dl_for=bld/java/boot/iced/libs,dl_lib=net)
 lib/dl/plugin(dl_for=bld/java/boot/iced/libs,dl_lib=jvm)
 lib/dl/plugin(dl_for=bld/java/boot/iced/libs,dl_lib=java)

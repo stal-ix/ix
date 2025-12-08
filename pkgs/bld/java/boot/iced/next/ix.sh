@@ -69,7 +69,7 @@ bin/xsltproc
 bld/devendor
 bld/java/boot
 bld/java/boot/free
-/bld/java/boot/ant/9
+bld/java/boot/ant/9
 bld/fake(tool_name=ldd)
 bld/fake(tool_name=wget)
 bld/java/boot/iced/readelf
@@ -109,6 +109,8 @@ cd ..
 {% endblock %}
 
 {% block patch %}
+mkdir -p bootstrap/boot/jre/lib
+cp ${JAVA_HOME}/jre/lib/currency.data bootstrap/boot/jre/lib/
 sed -e 's|const char \* const|extern const char \* const|' \
     -i openjdk.src/jdk/src/solaris/native/java/lang/childproc.h
 echo 'const char * const *parentPathv;' >> openjdk.src/jdk/src/solaris/native/java/lang/childproc.c
