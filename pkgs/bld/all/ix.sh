@@ -3,8 +3,10 @@
 {# all (std_box=) targets should be mentioned here #}
 
 {% block run_deps %}
+{% if x86_64 %}
 bld/nasm
-bld/auto(conf_ver=2/71,std_box=bld/boot/box)
+{% endif %}
+bld/auto/python
 bld/auto/archive
 bld/glib/old
 bld/auto
@@ -16,11 +18,9 @@ bld/cmake
 bld/flex
 bld/glib
 bld/gzip
-bld/help2man
 bld/m4
 bld/make
 bld/meson/1
-bld/meson/2
 bld/ninja
 bld/perl
 bld/pkg/config
@@ -31,9 +31,10 @@ bld/tar
 bld/texinfo
 bld/texinfo/lite
 bld/compiler
-bld/mold
 bld/libtool
+{% if not riscv64 %}
 bld/cctools
+{% endif %}
 bld/kuroko
 bld/xz
 bin/dash

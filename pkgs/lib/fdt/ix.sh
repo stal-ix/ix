@@ -27,3 +27,7 @@ bld/pkg/config
 {% block build_flags %}
 wrap_cc
 {% endblock %}
+
+{% block make_flags %}
+INSTALL=install
+{% endblock %}

@@ -15,7 +15,6 @@ https://downloads.sourceforge.net/gptfdisk/gptfdisk-{{self.version().strip()}}.t
 
 {% block bld_libs %}
 lib/c
-lib/icu
 lib/c++
 lib/popt
 lib/curses
