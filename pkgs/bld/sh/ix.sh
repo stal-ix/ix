@@ -4,6 +4,6 @@
 {% if native %}
 bin/dash/sh(std_box=bld/boot/box)
 {% else %}
-bin/dash/sh
+bin/dash/lite/sh
 {% endif %}
 {% endblock %}
