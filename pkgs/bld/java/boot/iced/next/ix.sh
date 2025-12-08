@@ -48,7 +48,6 @@ aux/x11/proto
 bld/java/boot/iced/fakes
 lib/shim/fake(lib_name=stdc++)
 lib/shim/redir(from=fpu_control.h,to=fakes.h)
-lib/shim/redir(from=bits/ioctls.h,to=fakes.h)
 lib/shim/redir(from=gnu/libc-version.h,to=fakes.h)
 lib/shim/redir(from=sys/sysctl.h,to=linux/sysctl.h)
 lib/shim/fake/pkg(pkg_name=xt,pkg_ver=100500)
@@ -68,17 +67,22 @@ bld/prepend
 bin/getconf
 bin/xsltproc
 bld/devendor
+bld/java/boot
 bld/java/boot/free
-bld/java/boot/ecj/jdk
+/bld/java/boot/ant/9
 bld/fake(tool_name=ldd)
 bld/fake(tool_name=wget)
 bld/java/boot/iced/readelf
 {% endblock %}
 
+{% block script_init_env %}
+export CLASSPATH=
+{{super()}}
+{% endblock %}
+
 {% block configure_flags %}
 --disable-docs
 --without-rhino
---enable-bootstrap
 --disable-system-gtk
 --disable-system-gio
 --disable-downloading
@@ -105,9 +109,6 @@ cd ..
 {% endblock %}
 
 {% block patch %}
-base64 -d << EOF > openjdk.src/jdk/src/solaris/native/java/net/linux_close.c
-{% include 'linux_close.c/base64' %}
-EOF
 sed -e 's|const char \* const|extern const char \* const|' \
     -i openjdk.src/jdk/src/solaris/native/java/lang/childproc.h
 echo 'const char * const *parentPathv;' >> openjdk.src/jdk/src/solaris/native/java/lang/childproc.c
@@ -119,6 +120,9 @@ devendor openjdk.src/jdk/src/share/native/sun/awt
 devendor openjdk.src/jdk/src/solaris/native/sun/awt
 devendor openjdk.src/jdk/src/share/native/sun/java2d
 devendor openjdk.src/jdk/src/solaris/native/sun/java2d
+>openjdk.src/jdk/src/solaris/native/java/net/linux_close.c
+>openjdk.src/jdk/src/solaris/native/java/net/NetworkInterface.c
+>openjdk.src/jdk/src/solaris/native/java/net/Inet4AddressImpl.c
 sed -e 's|.*throw.*RuntimeException.*time.*10.*||' \
     -i openjdk.src/jdk/make/tools/src/build/tools/generatecurrencydata/GenerateCurrencyData.java
 (cd openjdk.src/hotspot; base64 -d | patch -p1) << EOF
@@ -168,7 +172,6 @@ shut_up
 isnanf=isnan
 SIGCLD=SIGCHLD
 __SIGRTMAX=SIGRTMAX
-HAS_GLIBC_GETHOSTBY_R=1
 {% endblock %}
 
 {% block c_flags %}

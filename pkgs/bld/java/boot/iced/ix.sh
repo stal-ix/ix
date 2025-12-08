@@ -2,10 +2,12 @@
 
 {% block bld_libs %}
 {{super()}}
+lib/build/muldefs
 bld/java/boot/iced/rt
 lib/shim/fake/symbol(symbol_name=NET_Poll)
 lib/shim/fake/symbol(symbol_name=NET_Timeout0)
 lib/dl/plugin(dl_for=bld/java/boot/iced/libs,dl_lib=zip)
+lib/dl/plugin(dl_for=bld/java/boot/iced/libs,dl_lib=net)
 lib/dl/plugin(dl_for=bld/java/boot/iced/libs,dl_lib=jvm)
 lib/dl/plugin(dl_for=bld/java/boot/iced/libs,dl_lib=java)
 lib/dl/plugin(dl_for=bld/java/boot/iced/libs,dl_lib=jsig)
@@ -63,4 +65,10 @@ ln -s ../bin ${out}/jre/bin
 
 {% block postinstall %}
 :
+{% endblock %}
+
+{% block env %}
+export JAVA_HOME=${out}
+export JAVA=${out}/bin/java
+export JAVACMD=${out}/bin/java
 {% endblock %}
