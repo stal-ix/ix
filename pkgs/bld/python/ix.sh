@@ -4,6 +4,6 @@
 {% if native %}
 bin/python/lite(std_box=bld/boot/box,intl_ver=no)
 {% else %}
-bin/python/lite(intl_ver=no)
+bin/python/12(intl_ver=no)
 {% endif %}
 {% endblock %}
