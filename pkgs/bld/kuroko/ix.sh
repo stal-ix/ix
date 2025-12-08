@@ -4,6 +4,6 @@
 {% if native %}
 bin/kuroko/lite(std_box=bld/boot/box)
 {% else %}
-bin/kuroko
+bin/kuroko/lite
 {% endif %}
 {% endblock %}
