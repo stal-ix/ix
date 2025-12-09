@@ -93,6 +93,15 @@ def flt_objs(argv):
         elif x.endswith('.a'):
             yield x
 
+def flt_srcs(argv):
+    for x in argv:
+        if x.endswith('.c'):
+            yield x
+        elif x.endswith('.cpp'):
+            yield x
+        elif x.endswith('.S'):
+            yield x
+
 def have_objs(args):
     for x in args:
         if x.endswith('.o'):
@@ -159,11 +168,14 @@ def main():
         return exec(args)
     elif '-fsyntax-only' in args:
         return exec(args)
-    elif 'libjsig.so' in args:
-        return exec(args + ['-c'])
     elif '-P' in args or '-E' in args:
         return exec(['clang-cpp'] + args[1:])
     elif is_link_lib(sa, raw_args):
+        let srcs = list(flt_srcs(args))
+
+        if len(srcs) == 1:
+            return exec(args + ['-c'])
+
         return link(list(flt_objs(args)), args)
     elif have_objs(args):
         if '-rdynamic' in sa or '-export-dynamic' in sa:
