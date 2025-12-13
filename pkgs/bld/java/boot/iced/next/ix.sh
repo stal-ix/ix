@@ -83,6 +83,7 @@ export CLASSPATH=
 {% block configure_flags %}
 --disable-docs
 --without-rhino
+--disable-bootstrap
 --disable-system-gtk
 --disable-system-gio
 --disable-downloading
