@@ -30,10 +30,6 @@ sigset=jdk_sigset
 sigaction=jdk_sigaction
 {% endblock %}
 
-{% block make_target %}
-stamps/icedtea-boot.stamp
-{% endblock %}
-
 {% block install %}
 cp -R openjdk.build-boot/j2sdk-image/* ${out}/
 cp -R openjdk.build-boot/hotspot/outputdir/linux_amd64_compiler2/product/gamma ${out}/bin/hotspot

@@ -177,3 +177,7 @@ HAS_GLIBC_GETHOSTBY_R=1
 {% block c_flags %}
 -Wno-implicit-function-declaration
 {% endblock %}
+
+{% block make_target %}
+stamps/icedtea-boot.stamp
+{% endblock %}

@@ -21,6 +21,37 @@ https://icedtea.classpath.org/download/drops/icedtea7/2.6.13/langtools.tar.bz2
 bin/bash/lite/sh
 {% endblock %}
 
+{% block bld_libs %}
+lib/c
+lib/z
+lib/gif
+lib/c++
+lib/png
+lib/jpeg
+lib/cups
+lib/alsa
+lib/kernel
+lib/lcms/2
+lib/freetype
+bld/java/boot/iced/fakes
+lib/shim/fake(lib_name=stdc++)
+lib/shim/redir(from=fpu_control.h,to=fakes.h)
+lib/shim/redir(from=bits/ioctls.h,to=fakes.h)
+lib/shim/redir(from=gnu/libc-version.h,to=fakes.h)
+lib/shim/redir(from=sys/sysctl.h,to=linux/sysctl.h)
+{% endblock %}
+
+{% block bld_tool %}
+bin/zip
+bin/unzip
+bld/devendor
+bld/java/boot
+bld/java/boot/free
+bld/java/boot/ant/10
+bld/fake(tool_name=ldd)
+bld/java/boot/iced/readelf
+{% endblock %}
+
 {% block parts %}
 corba
 hotspot
@@ -39,6 +70,31 @@ mv {{x}}-* {{x}}
 {% endblock %}
 
 {% block patch %}
+(cd hotspot/src/share/vm/runtime; base64 -d | patch -p1) << EOF
+{% include '//bld/java/boot/iced/t/so.patch/base64' %}
+EOF
+(cd jdk/src/solaris/native/java/net; base64 -d | patch -p1) << EOF
+{% include '//bld/java/boot/iced/t/lc.patch/base64' %}
+EOF
+sed -e 's|const char \* const|extern const char \* const|' \
+    -i jdk/src/solaris/native/java/lang/childproc.h
+echo 'const char * const *parentPathv;' >> jdk/src/solaris/native/java/lang/childproc.c
+sed -e 's|xawt||g' -i jdk/make/sun/Makefile
+sed -e 's|headless||g' -i jdk/make/sun/Makefile
+devendor jdk/src/share/native/sun/font
+devendor jdk/src/solaris/native/sun/font
+devendor jdk/src/share/native/sun/awt
+devendor jdk/src/solaris/native/sun/awt
+devendor jdk/src/share/native/sun/java2d
+devendor jdk/src/solaris/native/sun/java2d
+sed -e 's|.*throw.*RuntimeException.*time.*10.*||' \
+    -i jdk/make/tools/src/build/tools/generatecurrencydata/GenerateCurrencyData.java
+(cd hotspot; base64 -d | patch -p1) << EOF
+{% include '//bld/java/boot/iced/t/icedtea-7-hotspot-pointer-comparison.patch/base64' %}
+EOF
+find hotspot -type f -name '*.hpp' | while read l; do
+    sed -e 's|(-1) <<|((unsigned)(-1)) << |' -i ${l}
+done
 find . -type f -name '*.gmk' | while read l; do
     sed -e 's|/usr/bin/echo|echo|' \
         -e 's|/bin/echo|echo|' \
@@ -46,16 +102,13 @@ find . -type f -name '*.gmk' | while read l; do
 done
 {% endblock %}
 
-{% block bld_tool %}
-bld/java/boot
-bld/java/boot/free
-bld/java/boot/ant/10
-{% endblock %}
-
 {% block build %}
+export IX_JAVA_HOME=${JAVA_HOME}
 export IMPORT_JDK=${PWD}/jdk
 export BUILD_DIR=${PWD}/build
 export ANT_OPTS=-Djava.io.tmpdir=${TMPDIR}
+unset CLASSPATH
+unset JAVA_HOME
 mkdir -p build/linux-amd64
 {{super()}}
 {% endblock %}
@@ -67,12 +120,20 @@ export CLASSPATH=
 {% endblock %}
 
 {% block make_flags %}
+CC=${CC}
+CXX=${CXX}
+CCC=${CXX}
+BUILD_GCC=${CC}
+BUILD_CPP=${CXX}
+COMPILER_PATH=" "
+ALT_BOOTDIR=${IX_JAVA_HOME}
 UNIXCOMMAND_PATH=" "
 USRBIN_PATH=" "
 UTILS_COMMAND_PATH=" "
 UTILS_USR_BIN_PATH=" "
 USER=root
 LOGNAME=root
+TEST_IN_BUILD=false
 CUPS_HEADERS_PATH=${CUPS_HEADERS_PATH}
 REQUIRED_FREETYPE_VERSION=2.14.1
 REQUIRED_ALSA_VERSION=
@@ -91,6 +152,7 @@ shut_up
 isnanf=isnan
 SIGCLD=SIGCHLD
 __SIGRTMAX=SIGRTMAX
+HAS_GLIBC_GETHOSTBY_R=1
 {% endblock %}
 
 {% block c_flags %}
