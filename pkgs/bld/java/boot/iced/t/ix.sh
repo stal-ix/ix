@@ -122,6 +122,8 @@ devendor openjdk.src/jdk/src/share/native/sun/awt
 devendor openjdk.src/jdk/src/solaris/native/sun/awt
 devendor openjdk.src/jdk/src/share/native/sun/java2d
 devendor openjdk.src/jdk/src/solaris/native/sun/java2d
+sed -e 's|.*Using java runtime at.*||' \
+    -i openjdk.src/hotspot/src/share/tools/launcher/java.c
 sed -e 's|.*throw.*RuntimeException.*time.*10.*||' \
     -i openjdk.src/jdk/make/tools/src/build/tools/generatecurrencydata/GenerateCurrencyData.java
 (cd openjdk.src/hotspot; base64 -d | patch -p1) << EOF
