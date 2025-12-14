@@ -1,0 +1,11 @@
+--- a/linux_close.c	2018-02-26 06:33:05.000000000 +0300
++++ b/linux_close.c	2025-12-08 22:53:58.947882660 +0300
+@@ -75,7 +75,7 @@
+ #ifdef _AIX
+ static int sigWakeup = (SIGRTMAX - 1);
+ #else
+-static int sigWakeup = (__SIGRTMAX - 2);
++#define sigWakeup (__SIGRTMAX - 2)
+ #endif
+ 
+ /*

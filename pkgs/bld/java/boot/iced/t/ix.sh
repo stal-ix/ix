@@ -108,8 +108,8 @@ cd ..
 (cd openjdk.src/hotspot/src/share/vm/runtime; base64 -d | patch -p1) << EOF
 {% include 'so.patch/base64' %}
 EOF
-base64 -d << EOF > openjdk.src/jdk/src/solaris/native/java/net/linux_close.c
-{% include 'linux_close.c/base64' %}
+(cd openjdk.src/jdk/src/solaris/native/java/net; base64 -d | patch -p1) << EOF
+{% include 'lc.patch/base64' %}
 EOF
 sed -e 's|const char \* const|extern const char \* const|' \
     -i openjdk.src/jdk/src/solaris/native/java/lang/childproc.h
