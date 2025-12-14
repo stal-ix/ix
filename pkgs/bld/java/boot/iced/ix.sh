@@ -3,7 +3,6 @@
 {% block bld_libs %}
 {{super()}}
 lib/build/muldefs
-bld/java/boot/iced/rt
 lib/dl/plugin(dl_for=bld/java/boot/iced/libs,dl_lib=zip)
 lib/dl/plugin(dl_for=bld/java/boot/iced/libs,dl_lib=nio)
 lib/dl/plugin(dl_for=bld/java/boot/iced/libs,dl_lib=net)
