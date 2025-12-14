@@ -105,6 +105,17 @@ cd ..
 {% endblock %}
 
 {% block patch %}
+{#
+base64 -d << EOF > openjdk.src/hotspot/src/os/linux/vm/os_linux.cpp
+{% include 'os_linux.cpp/base64' %}
+EOF
+base64 -d << EOF > openjdk.src/hotspot/src/os/posix/launcher/java_md.c
+{% include 'java_md.c/base64' %}
+EOF
+#}
+base64 -d << EOF > openjdk.src/hotspot/src/share/vm/runtime/javaCalls.cpp
+{% include 'javaCalls.cpp/base64' %}
+EOF
 base64 -d << EOF > openjdk.src/jdk/src/solaris/native/java/net/linux_close.c
 {% include 'linux_close.c/base64' %}
 EOF

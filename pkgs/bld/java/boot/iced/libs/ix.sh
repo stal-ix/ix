@@ -11,9 +11,9 @@ rm ${out}/lib/libsaproc.a
 llvm-ar qL ${out}/lib/libjsig.a openjdk.build-boot/lib/amd64/libjsig.so
 find ${out} -type f -name '*.a' | while read l; do
     llvm-objcopy \
-        --redefine-sym=signal=bin_java_boot_iced_signal \
-        --redefine-sym=sigset=bin_java_boot_iced_sigset \
-        --redefine-sym=sigaction=bin_java_boot_iced_sigaction \
+        --redefine-sym=signal=jdk_signal \
+        --redefine-sym=sigset=jdk_sigset \
+        --redefine-sym=sigaction=jdk_sigaction \
         ${l}
 done
 {% endblock %}

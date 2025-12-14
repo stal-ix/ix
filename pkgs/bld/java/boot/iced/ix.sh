@@ -23,10 +23,11 @@ export PLUGINS=
 {{super()}}
 {% endblock %}
 
-{% block c_rename_symbol %}
-signal
-sigset
-sigaction
+{% block cpp_defines %}
+{{super()}}
+signal=jdk_signal
+sigset=jdk_sigset
+sigaction=jdk_sigaction
 {% endblock %}
 
 {% block make_target %}

@@ -56,29 +56,43 @@ bld/java/boot/ant/10
 export IMPORT_JDK=${PWD}/jdk
 export BUILD_DIR=${PWD}/build
 export ANT_OPTS=-Djava.io.tmpdir=${TMPDIR}
-
-cd langtools/make
-
-ulimit -s 60000
-
-ant -silent \
-    -Dbuild.compiler=extJavac \
-    -Djava.io.tmpdir=${TMPDIR} \
-    -Djdk.version=1.7.0 \
-    -Dfull.version='1.7.0' \
-    -Dmilestone=internal \
-    -Dbuild.number=b00 \
-    -Djavac.target=7 \
-    -Djavac.source=7 \
-    -Dboot.java.home=${JAVA_HOME} \
-    -Dimport.jdk=${IMPORT_JDK} \
-    -Dbuild.dir=${BUILD_DIR} \
-    -Ddist.dir=${BUILD_DIR} \
-    build-bootstrap-javac
+mkdir -p build/linux-amd64
+{{super()}}
 {% endblock %}
 
 {% block script_init_env %}
 export PLUGINS=
 export CLASSPATH=
 {{super()}}
+{% endblock %}
+
+{% block make_flags %}
+UNIXCOMMAND_PATH=" "
+USRBIN_PATH=" "
+UTILS_COMMAND_PATH=" "
+UTILS_USR_BIN_PATH=" "
+USER=root
+LOGNAME=root
+CUPS_HEADERS_PATH=${CUPS_HEADERS_PATH}
+REQUIRED_FREETYPE_VERSION=2.14.1
+REQUIRED_ALSA_VERSION=
+DISABLE_HOTSPOT_OS_VERSION_CHECK=1
+USE_PRECOMPILED_HEADER=0
+SORT=sort
+BUILD_HEADLESS_ONLY=yes
+{% endblock %}
+
+{% block build_flags %}
+wrap_cc
+shut_up
+{% endblock %}
+
+{% block cpp_defines %}
+isnanf=isnan
+SIGCLD=SIGCHLD
+__SIGRTMAX=SIGRTMAX
+{% endblock %}
+
+{% block c_flags %}
+-Wno-implicit-function-declaration
 {% endblock %}
