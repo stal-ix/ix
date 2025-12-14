@@ -70,6 +70,7 @@ mv {{x}}-* {{x}}
 {% endblock %}
 
 {% block patch %}
+cp jdk/src/share/lib/security/nss.cfg.in jdk/src/share/lib/security/nss.cfg
 (cd hotspot/src/share/vm/runtime; base64 -d | patch -p1) << EOF
 {% include '//bld/java/boot/iced/t/so.patch/base64' %}
 EOF
@@ -126,6 +127,7 @@ CCC=${CXX}
 BUILD_GCC=${CC}
 BUILD_CPP=${CXX}
 COMPILER_PATH=" "
+RMIC_JAVA=${JAVA}
 ALT_BOOTDIR=${IX_JAVA_HOME}
 UNIXCOMMAND_PATH=" "
 USRBIN_PATH=" "
@@ -141,6 +143,8 @@ DISABLE_HOTSPOT_OS_VERSION_CHECK=1
 USE_PRECOMPILED_HEADER=0
 SORT=sort
 BUILD_HEADLESS_ONLY=yes
+IMAGES_TARGET=
+GENERATE_DOCS=false
 {% endblock %}
 
 {% block build_flags %}
@@ -157,4 +161,7 @@ HAS_GLIBC_GETHOSTBY_R=1
 
 {% block c_flags %}
 -Wno-implicit-function-declaration
+{% endblock %}
+
+{% block make_no_thrs %}
 {% endblock %}
