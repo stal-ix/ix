@@ -33,3 +33,8 @@ done
 scalbn
 copysign
 {% endblock %}
+
+{% block make_flags %}
+{{super()}}
+IMAGES_TARGET=
+{% endblock %}

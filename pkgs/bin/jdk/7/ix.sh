@@ -63,6 +63,12 @@ rm -rf ${out}/jre/bin
 ln -s ../bin ${out}/jre/bin
 {% endblock %}
 
+{% block patch %}
+{{super()}}
+cat jdk/make/common/Release.gmk | grep -v 'CD.*swing' > _
+mv _ jdk/make/common/Release.gmk
+{% endblock %}
+
 {% block postinstall %}
 :
 {% endblock %}
