@@ -13,7 +13,7 @@ lib/dl/plugin(dl_for=bld/java/boot/iced/libs,dl_lib=verify)
 {% endblock %}
 
 {% block bld_tool %}
-bld/java/boot/iced/exe
+bld/wrapcc/link/plg(bins=gamma)
 {{super()}}
 {% endblock %}
 
