@@ -3,7 +3,7 @@
 {% block std_box %}
 {% if bin %}
 bld/wrapcc/link/xxx
-bld/wrapcc/link/new
+bld/wrapcc/link/plugins/gnome
 {% endif %}
 bld/glib
 bld/gnome

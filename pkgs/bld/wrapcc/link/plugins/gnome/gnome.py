@@ -6,12 +6,9 @@ import json
 import hashlib
 import subprocess
 
-print(f'EXELINK {sys.argv}', file=sys.stderr)
-
-uuid = hashlib.md5(json.dumps(sys.argv).encode()).hexdigest()
+args = json.loads(sys.stdin.read())['cmd']
+uuid = hashlib.md5(json.dumps(args).encode()).hexdigest()
 temp = os.environ['tmp'] + f'/{uuid}.o'
-comp = sys.argv[1]
-args = sys.argv[2:]
 
 def it_linkable():
     for x in args:
@@ -58,8 +55,6 @@ def it_init():
         elif l.endswith('_get_resource'):
             yield f'void* {l}(void)', f'{l}()'
 
-sa = str(sys.argv)
-
 def it_parts():
     prot = []
     call = []
@@ -73,18 +68,12 @@ def it_parts():
     yield '\n'.join([x + ';' for x in call])
     yield '}'
 
-def main():
-    try:
-        cprog = '\n'.join(it_parts()).strip() + '\n'
-    except Exception as e:
-        return subprocess.check_call(sys.argv[1:])
+cprog = '\n'.join(it_parts()).strip() + '\n'
 
-    print(cprog, file=sys.stderr)
+print(cprog, file=sys.stderr)
 
-    try:
-        subprocess.check_output(['clang', '-o', temp, '-c', '-x', 'c', '-'], input=cprog.encode())
-        subprocess.check_output([comp] + args + [temp])
-    finally:
-        os.unlink(temp)
 
-main()
+subprocess.check_output(['clang', '-o', temp, '-c', '-x', 'c', '-'], input=cprog.encode())
+sys.stdout.write(json.dumps({
+    'cmd': args + [temp],
+}))

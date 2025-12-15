@@ -26,10 +26,10 @@ lib/gstreamer/dl
 {% endblock %}
 
 {% block bld_tool %}
-bld/wrapcc/link/new
 bld/glib
 bld/gnome
 bld/gettext
+bld/wrapcc/link/plugins/gnome
 bld/fake(tool_name=update-mime-database)
 {% endblock %}
 
