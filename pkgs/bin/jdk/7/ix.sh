@@ -13,7 +13,7 @@ lib/dl/plugin(dl_for=bin/jdk/7/libs,dl_lib=verify)
 {% endblock %}
 
 {% block bld_tool %}
-bld/wrapcc/link/plg(bins=gamma)
+bld/wrapcc/link/plugins/reg(bins=gamma)
 {{super()}}
 {% endblock %}
 

@@ -41,7 +41,7 @@ bin/cvt
 bld/glib
 bld/gettext
 bld/wayland
-bld/wrapcc/link/plg(bins=src/mutter)
+bld/wrapcc/link/plugins/reg(bins=src/mutter)
 {% endblock %}
 
 {% block meson_flags %}
