@@ -169,7 +169,7 @@ def main():
     elif '-fsyntax-only' in args:
         return exec(args)
     elif '-P' in args or '-E' in args:
-        return exec(['clang-cpp'] + args[1:])
+        return exec(args)
     elif is_link_lib(sa, raw_args):
         let srcs = list(flt_srcs(args))
 

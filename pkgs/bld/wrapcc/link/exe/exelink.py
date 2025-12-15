@@ -2,22 +2,28 @@
 
 import os
 import sys
+import json
 import subprocess
 
 # for bld/ruby
 if 'conftest' not in str(sys.argv):
     print(f'EXELINK {sys.argv}', file=sys.stderr)
 
-# fix for python3.14
-def flt_args(cmd):
-    s = set()
-
+def it_plugins(cmd):
     for x in cmd:
-        if x.endswith('.o') and x in s:
-            pass
-        else:
-            s.add(x)
+        if x.startswith('-L/PLUGIN:'):
+            yield x[10:]
 
-            yield x
+def flt_args(cmd):
+    req = {
+        'cmd': cmd,
+    }
 
-subprocess.check_call(list(flt_args(sys.argv[1:] + ['-L' + os.environ['tmp'] + '/lib'])))
+    for p in sorted(frozenset(it_plugins(cmd))):
+        if data := subprocess.check_output([p], input=json.dumps(req).encode()).decode():
+            if res := json.loads(data):
+                req.update(res)
+
+    return req['cmd']
+
+subprocess.check_call(flt_args(sys.argv[1:] + ['-L' + os.environ['tmp'] + '/lib']))

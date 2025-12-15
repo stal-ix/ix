@@ -33,3 +33,8 @@ SQLITE_OMIT_LOAD_EXTENSION=1
 {{super()}}
 --disable-test-modules
 {% endblock %}
+
+{% block bld_tool %}
+{{super()}}
+bld/wrapcc/link/plugins/dedup
+{% endblock %}

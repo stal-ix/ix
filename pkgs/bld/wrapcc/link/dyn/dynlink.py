@@ -3,6 +3,7 @@
 import os
 import sys
 import json
+import shutil
 import hashlib
 import subprocess
 
@@ -59,13 +60,8 @@ def it_syms():
 dprog = '\n'.join(sorted(frozenset(it_syms())))
 cprog = subprocess.check_output(['dl_stubs'], input=dprog.encode())
 
-if comp.endswith('++'):
-    xcomp = comp[:-2]
-else:
-    xcomp = comp
-
 try:
-    subprocess.check_output([xcomp, '-fno-builtin', '-o', temp, '-c', '-x', 'c', '-'], input=cprog)
+    subprocess.check_output(['clang', '-fno-builtin', '-o', temp, '-c', '-x', 'c', '-'], input=cprog)
     subprocess.check_output(['exelink', comp] + args + [temp])
 finally:
     os.unlink(temp)

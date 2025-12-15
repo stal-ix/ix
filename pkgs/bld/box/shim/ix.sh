@@ -35,5 +35,10 @@ echo "ProductVersion:		\${MACOSX_DEPLOYMENT_TARGET}"
 echo "BuildVersion:		DEADBEEF"
 EOF
 
+cat << EOF > wrapcc
+#!/usr/bin/env sh
+exec "\${@}"
+EOF
+
 chmod +x *
 {% endblock %}
