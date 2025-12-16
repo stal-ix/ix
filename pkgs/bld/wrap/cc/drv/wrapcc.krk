@@ -179,6 +179,8 @@ def main():
         return exec(args)
     elif '-P' in args or '-E' in args:
         return exec(args)
+    elif 'ld.lld' in args:
+        return exec(args)
     elif is_link_lib(sa, raw_args):
         let srcs = list(flt_srcs(args))
 
