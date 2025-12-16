@@ -4,6 +4,13 @@ import os
 import fileio
 import kuroko as sys
 
+def join_args(args, a, s):
+    while a in args:
+        let p = args.index(a)
+        args = args[:p] + [s + args[p + 1]] + args[p + 2:]
+
+    return args
+
 def it_args():
     for x in sys.argv[1:]:
         if x:
@@ -16,6 +23,11 @@ def it_args():
                 yield x
 
 def flt_args(argv):
+    argv = join_args(argv, '-Xlinker', '-Wl,')
+    argv = join_args(argv, '-isystem', '-isystem')
+    argv = join_args(argv, '-I', '-I')
+    argv = join_args(argv, '-L', '-L')
+
     for x in argv:
         if '-D-pthread' in x:
             continue

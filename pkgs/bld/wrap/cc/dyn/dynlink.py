@@ -12,14 +12,6 @@ print(f'DYNLINK {sys.argv}', file=sys.stderr)
 uuid = hashlib.md5(json.dumps(sys.argv).encode()).hexdigest()
 temp = os.environ['tmp'] + f'/{uuid}.o'
 
-def fix_xlinker(args):
-    while True:
-        try:
-            p = args.index('-Xlinker')
-            args = args[:p] + ['-Wl,' + args[p + 1]] + args[p + 2:]
-        except ValueError:
-            return args
-
 def flt_args(args):
     for x in args:
         if x in ('-rdynamic', '-export-dynamic'):
@@ -27,7 +19,7 @@ def flt_args(args):
         else:
             yield x
 
-args = list(flt_args(fix_xlinker(sys.argv[1:])))
+args = list(flt_args(sys.argv[1:]))
 
 def it_obj():
     for x in args:
