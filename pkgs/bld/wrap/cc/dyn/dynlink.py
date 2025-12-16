@@ -7,9 +7,10 @@ import shutil
 import hashlib
 import subprocess
 
+print(f'DYNLINK {sys.argv}', file=sys.stderr)
+
 uuid = hashlib.md5(json.dumps(sys.argv).encode()).hexdigest()
 temp = os.environ['tmp'] + f'/{uuid}.o'
-comp = sys.argv[1]
 
 def fix_xlinker(args):
     while True:
@@ -26,9 +27,7 @@ def flt_args(args):
         else:
             yield x
 
-args = list(flt_args(fix_xlinker(sys.argv[2:])))
-
-print(f'DYNLINK {sys.argv}', file=sys.stderr)
+args = list(flt_args(fix_xlinker(sys.argv[1:])))
 
 def it_obj():
     for x in args:
@@ -62,6 +61,6 @@ cprog = subprocess.check_output(['dl_stubs'], input=dprog.encode())
 
 try:
     subprocess.check_output(['clang', '-fno-builtin', '-o', temp, '-c', '-x', 'c', '-'], input=cprog)
-    subprocess.check_output(['exelink', comp] + args + [temp])
+    subprocess.check_output(['exelink'] + args + [temp])
 finally:
     os.unlink(temp)
