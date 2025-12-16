@@ -6,7 +6,7 @@ bld/gnome
 bld/gettext
 {{super()}}
 {% if bin %}
-bld/wrapcc/link/plugins/gnome
+bld/wrap/cc/plugins/gnome
 {% endif %}
 {% endblock %}
 

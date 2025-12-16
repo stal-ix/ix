@@ -2,7 +2,7 @@
 
 {% block bld_tool %}
 {{super()}}
-bld/wrapcc
+bld/wrap/cc
 bld/rename/dynlib
 {% endblock %}
 

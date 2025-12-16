@@ -4,8 +4,8 @@
 bld/dlfcn
 bld/python
 bld/kuroko
-bld/wrapcc/kuroko
-bld/wrapcc/link/exe
-bld/wrapcc/link/dyn
-bld/wrapcc/link/lib
+bld/wrap/cc/drv
+bld/wrap/cc/exe
+bld/wrap/cc/dyn
+bld/wrap/cc/lib
 {% endblock %}

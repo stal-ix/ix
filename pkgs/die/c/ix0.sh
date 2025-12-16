@@ -2,7 +2,7 @@
 
 {% block std_box %}
   {% if 'wrap_cc' in build_flags %}
-    bld/wrapcc
+    bld/wrap/cc
   {% endif %}
   {{super()}}
 {% endblock %}

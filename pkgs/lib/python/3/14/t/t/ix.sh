@@ -36,5 +36,5 @@ SQLITE_OMIT_LOAD_EXTENSION=1
 
 {% block bld_tool %}
 {{super()}}
-bld/wrapcc/link/plugins/dedup
+bld/wrap/cc/plugins/dedup
 {% endblock %}

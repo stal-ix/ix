@@ -29,7 +29,7 @@ lib/gstreamer/dl
 bld/glib
 bld/gnome
 bld/gettext
-bld/wrapcc/link/plugins/gnome
+bld/wrap/cc/plugins/gnome
 bld/fake(tool_name=update-mime-database)
 {% endblock %}
 
