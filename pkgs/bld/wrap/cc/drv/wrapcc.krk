@@ -72,11 +72,20 @@ def replace(lst, x, y):
         else:
             yield el
 
+def flt_lld(lst):
+    for x in lst:
+        if x.endswith('.o'):
+            yield x
+        elif x == '-r':
+            yield x
+        elif x == '-o':
+            yield x
+
 def calc_args(argv):
     let args = list(replace(flt_args(argv), '-Ur', '-r'))
 
     if '-r' in args:
-        args = ['ld.lld'] + args[1:]
+        args = ['ld.lld'] + list(flt_lld(args[1:]))
 
     return args
 
