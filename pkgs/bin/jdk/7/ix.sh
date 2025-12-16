@@ -2,6 +2,7 @@
 
 {% block bld_libs %}
 {{super()}}
+lib/shim/iced
 lib/build/muldefs
 lib/dl(dl_for=bin/jdk/7/libs,dl_lib=zip)
 lib/dl(dl_for=bin/jdk/7/libs,dl_lib=nio)

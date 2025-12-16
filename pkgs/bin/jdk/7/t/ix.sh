@@ -24,12 +24,8 @@ bin/bash/lite/sh
 {% block bld_tool %}
 bin/zip
 bin/unzip
+bld/java/7
 bld/devendor
-bld/java/boot
-bld/java/boot/free
-bld/java/boot/ant/10
-bld/fake(tool_name=ldd)
-bld/java/boot/iced/readelf
 {% endblock %}
 
 {% block parts %}
