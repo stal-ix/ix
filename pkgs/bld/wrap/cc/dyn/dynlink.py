@@ -51,13 +51,8 @@ def it_syms():
 dprog = '\n'.join(sorted(frozenset(it_syms())))
 cprog = subprocess.check_output(['dl_stubs'], input=dprog.encode())
 
-if '-L/MARK:host' in args:
-    cc = os.environ['HOST_CC']
-else:
-    cc = 'clang'
-
 try:
-    subprocess.check_output([cc, '-fno-builtin', '-o', temp, '-c', '-x', 'c', '-'], input=cprog)
+    subprocess.check_output([os.environ['SELF'], '-fno-builtin', '-o', temp, '-c', '-x', 'c', '-'], input=cprog)
     subprocess.check_output(['exelink'] + args + [temp])
 finally:
     os.unlink(temp)

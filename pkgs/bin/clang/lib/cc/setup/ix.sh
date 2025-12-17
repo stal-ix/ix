@@ -8,17 +8,26 @@ LC="${CTRFLAGS}"
 
 cat << EOF > cc
 #!$(which sh)
-exec $(which wrapcc) "$(which clang)" ${LC} "\${@}" ${CONLYFLAGS} ${L} ${C}
+export tmp=${tmp}
+export PATH=${PATH}
+export SELF=${PWD}/cc
+exec wrapcc clang ${LC} "\${@}" ${CONLYFLAGS} ${L} ${C}
 EOF
 
 cat << EOF > c++
 #!$(which sh)
-exec $(which wrapcc) "$(which clang++)" ${LC} "\${@}" ${CXXFLAGS} ${L} ${C}
+export tmp=${tmp}
+export PATH=${PATH}
+export SELF=${PWD}/c++
+exec wrapcc clang++ ${LC} "\${@}" ${CXXFLAGS} ${L} ${C}
 EOF
 
 cat << EOF > preproc
 #!$(which sh)
-exec $(which wrapcc) "$(which clang-cpp)" ${LC} "\${@}" ${C}
+export tmp=${tmp}
+export PATH=${PATH}
+export SELF=${PWD}/preproc
+exec wrapcc clang-cpp ${LC} "\${@}" ${C}
 EOF
 
 chmod +x cc c++ preproc

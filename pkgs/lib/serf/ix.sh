@@ -32,16 +32,6 @@ shut_up
 wrap_cc
 {% endblock %}
 
-{% block setup_tools %}
-cat << EOF > clang
-#!/bin/sh
-export tmp=${tmp}
-export PATH=${PATH}
-exec $(which clang) "\${@}"
-EOF
-chmod +x clang
-{% endblock %}
-
 {% block build %}
 scons \
     CC=$(which clang)    \
