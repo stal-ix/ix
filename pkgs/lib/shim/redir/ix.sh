@@ -7,3 +7,8 @@ cat << EOF > ${out}/include/{{from}}
 #include <{{to}}>
 EOF
 {% endblock %}
+
+{% block env %}
+{{super()}}
+export IX_{{from.replace('/', '_').replace('-','_').replace('.', '_').upper()}}_DIR=${out}
+{% endblock %}
