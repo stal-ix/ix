@@ -11,6 +11,7 @@ lib/readline
 {% block host_libs %}
 {{super()}}
 lib/c
+lib/shim/mark/host
 {% endblock %}
 
 {% block bld_tool %}
