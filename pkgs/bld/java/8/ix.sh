@@ -1,4 +1,4 @@
-{% extends '//die/c/make.sh' %}
+{% extends '//die/c/configure.sh' %}
 
 {% block fetch %}
 https://icedtea.classpath.org/download/drops/icedtea8/3.19.0/openjdk.tar.xz
@@ -84,33 +84,6 @@ export CLASSPATH=
 {{super()}}
 {% endblock %}
 
-{% block make_flags %}
-CC=${CC}
-CXX=${CXX}
-CCC=${CXX}
-BUILD_GCC=${CC}
-BUILD_CPP=${CXX}
-COMPILER_PATH=" "
-RMIC_JAVA=${JAVA}
-ALT_BOOTDIR=${IX_JAVA_HOME}
-UNIXCOMMAND_PATH=" "
-USRBIN_PATH=" "
-UTILS_COMMAND_PATH=" "
-UTILS_USR_BIN_PATH=" "
-USER=root
-LOGNAME=root
-TEST_IN_BUILD=false
-CUPS_HEADERS_PATH=${CUPS_HEADERS_PATH}
-REQUIRED_FREETYPE_VERSION=2.14.1
-REQUIRED_ALSA_VERSION=
-DISABLE_HOTSPOT_OS_VERSION_CHECK=1
-USE_PRECOMPILED_HEADER=0
-SORT=sort
-BUILD_HEADLESS_ONLY=yes
-NO_DOCS=true
-HOTSPOT_BUILD_JOBS=8
-{% endblock %}
-
 {% block build_flags %}
 wrap_cc
 shut_up
@@ -130,6 +103,8 @@ HAS_GLIBC_GETHOSTBY_R=1
 {% block make_no_thrs %}
 {% endblock %}
 
-{% block configure %}
-sh ./configure
+{% block configure_flags %}
+--with-toolchain-type=clang
+--disable-headful
+--without-x
 {% endblock %}
