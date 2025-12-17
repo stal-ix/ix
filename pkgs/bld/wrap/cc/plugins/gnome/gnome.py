@@ -72,7 +72,7 @@ cprog = '\n'.join(it_parts()).strip() + '\n'
 
 print(cprog, file=sys.stderr)
 
-subprocess.check_output(['clang', '-o', temp, '-c', '-x', 'c', '-'], input=cprog.encode())
+subprocess.check_output([os.environ['SELF'], '-o', temp, '-c', '-x', 'c', '-'], input=cprog.encode())
 
 sys.stdout.write(json.dumps({
     'cmd': args + [temp],
