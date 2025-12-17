@@ -11,18 +11,9 @@ lib/alsa
 lib/kernel
 lib/lcms/2
 lib/freetype
-aux/x11/proto
+lib/shim/x11
 lib/shim/iced
-lib/shim/fake(lib_name=cups)
-lib/shim/fake/symbol(symbol_name=cupsServer)
-lib/shim/fake/header(header=cups/cups.h)
-lib/shim/fake/header(header=cups/ppd.h)
-lib/shim/fake/pkg(pkg_name=xt,pkg_ver=100500)
-lib/shim/fake/pkg(pkg_name=x11,pkg_ver=100500)
-lib/shim/fake/pkg(pkg_name=xtst,pkg_ver=100500)
-lib/shim/fake/pkg(pkg_name=xrender,pkg_ver=100500)
-lib/shim/fake/pkg(pkg_name=xinerama,pkg_ver=100500)
-lib/shim/fake/pkg(pkg_name=xcomposite,pkg_ver=100500)
+lib/shim/fake/cups
 {% endblock %}
 
 {% block install %}

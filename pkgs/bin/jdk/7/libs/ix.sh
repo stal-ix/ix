@@ -7,12 +7,12 @@ lib/gif
 lib/c++
 lib/png
 lib/jpeg
-lib/cups
 lib/alsa
 lib/kernel
 lib/lcms/2
 lib/freetype
 lib/shim/iced
+lib/shim/fake/cups
 {% endblock %}
 
 {% block install %}
