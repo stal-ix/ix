@@ -3,22 +3,17 @@
 {% block bld_libs %}
 {{super()}}
 lib/build/muldefs
-lib/dl/plugin(dl_for=bld/java/boot/iced/libs,dl_lib=zip)
-lib/dl/plugin(dl_for=bld/java/boot/iced/libs,dl_lib=nio)
-lib/dl/plugin(dl_for=bld/java/boot/iced/libs,dl_lib=net)
-lib/dl/plugin(dl_for=bld/java/boot/iced/libs,dl_lib=jvm)
-lib/dl/plugin(dl_for=bld/java/boot/iced/libs,dl_lib=java)
-lib/dl/plugin(dl_for=bld/java/boot/iced/libs,dl_lib=jsig)
-lib/dl/plugin(dl_for=bld/java/boot/iced/libs,dl_lib=verify)
+lib/dl(dl_for=bld/java/boot/iced/libs,dl_lib=zip)
+lib/dl(dl_for=bld/java/boot/iced/libs,dl_lib=nio)
+lib/dl(dl_for=bld/java/boot/iced/libs,dl_lib=net)
+lib/dl(dl_for=bld/java/boot/iced/libs,dl_lib=jvm)
+lib/dl(dl_for=bld/java/boot/iced/libs,dl_lib=java)
+lib/dl(dl_for=bld/java/boot/iced/libs,dl_lib=jsig)
+lib/dl(dl_for=bld/java/boot/iced/libs,dl_lib=verify)
 {% endblock %}
 
 {% block bld_tool %}
-bld/wrap/cc/plugins/reg(bins=gamma)
-{{super()}}
-{% endblock %}
-
-{% block script_init_env %}
-export PLUGINS=
+bld/wrap/cc/plugins/unreg(bins=gamma)
 {{super()}}
 {% endblock %}
 

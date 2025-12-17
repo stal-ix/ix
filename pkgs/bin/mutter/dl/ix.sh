@@ -7,7 +7,3 @@ meta_plugin_register_type
 {% block export_lib %}
 default
 {% endblock %}
-
-{% block env %}
-export PLUGIN=${out}/lib/reg.o
-{% endblock %}
