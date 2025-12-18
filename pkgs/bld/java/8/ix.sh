@@ -90,6 +90,8 @@ shut_up
 
 {% block cpp_defines %}
 isnanf=isnan
+CLONE_VM=0
+CLONE_VFORK=0
 SIGCLD=SIGCHLD
 __SIGRTMAX=SIGRTMAX
 HAS_GLIBC_GETHOSTBY_R=1
@@ -151,4 +153,5 @@ find jdk/src/solaris/classes/sun/awt/X11 -type f -name '*.java' -delete
 {% block make_flags %}
 TOOL_AWT_TOBIN=echo
 GENSRC_SWING_BEANINFO=
+C_FLAG_DEPS="-MMD -MF"
 {% endblock %}

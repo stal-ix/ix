@@ -1,0 +1,211 @@
+#!/usr/bin/env kuroko
+
+import os
+import fileio
+import kuroko as sys
+
+def join_args(args, a, s):
+    while a in args:
+        let p = args.index(a)
+        args = args[:p] + [s + args[p + 1]] + args[p + 2:]
+
+    return args
+
+def it_args():
+    for x in sys.argv[1:]:
+        if x:
+            if x[0] == '@' and '.dylib' not in x:
+                yield from fileio.open(x[1:], 'r').read().split()
+            elif x.startswith('-o/'):
+                yield '-o'
+                yield x[2:]
+            else:
+                yield x
+
+def flt_args(argv):
+    argv = join_args(argv, '-Xlinker', '-Wl,')
+    argv = join_args(argv, '-isystem', '-isystem')
+    argv = join_args(argv, '-I', '-I')
+    argv = join_args(argv, '-L', '-L')
+
+    for x in argv:
+        if '-D-pthread' in x:
+            continue
+
+        if 'third_party/libc++' in x:
+            if '-isystem' in x:
+                continue
+
+            if '-I' in x:
+                continue
+
+        if '-no-integrated-as' in x:
+            continue
+
+        if x.startswith('-L/usr/'):
+            continue
+
+        if x.startswith('-L/lib/'):
+            continue
+
+        if x.startswith('-mcpu'):
+            continue
+
+        if x == '-fno-lifetime-dse':
+            continue
+
+        if x == '-fpch-deps':
+            continue
+
+        if x == '-L/lib':
+            continue
+
+        if x.startswith('-I/usr/'):
+            continue
+
+        if x.startswith('/usr/lib') and '.so' in x:
+            continue
+
+        if x.startswith('/usr/lib') and '.dylib' in x:
+            continue
+
+        if x.startswith('/lib') and '.so' in x:
+            continue
+
+        if x.startswith('/lib') and '.dylib' in x:
+            continue
+
+        yield x
+
+def replace(lst, x, y):
+    for el in lst:
+        if el == x:
+            yield y
+        else:
+            yield el
+
+def flt_lld(lst):
+    for x in lst:
+        if x.endswith('.o'):
+            yield x
+        elif x == '-r':
+            yield x
+        elif x == '-o':
+            yield x
+
+def calc_args(argv):
+    let args = list(replace(flt_args(argv), '-Ur', '-r'))
+
+    if '-r' in args:
+        args = ['ld.lld'] + list(flt_lld(args[1:]))
+
+    return args
+
+def flt_objs(argv):
+    for x in argv:
+        if x.endswith('.o'):
+            yield x
+        elif x.endswith('.os'):
+            yield x
+        elif x.startswith('-Wl,'):
+            pass
+        elif '/store/' in x:
+            pass
+        elif x.endswith('.a'):
+            yield x
+
+def flt_srcs(argv):
+    for x in argv:
+        if x.endswith('.c'):
+            yield x
+        elif x.endswith('.cpp'):
+            yield x
+        elif x.endswith('.S'):
+            yield x
+
+def have_objs(args):
+    for x in args:
+        if x.endswith('.o'):
+            return True
+
+        if x.endswith('.os'):
+            return True
+
+def link_lib(x, objs):
+    exec(['liblink'] + [x] + objs)
+
+def is_link_lib(sa, raw_args):
+    if 'chrome' in raw_args:
+        return False
+
+    if '-shared' in raw_args:
+        return True
+
+    if '--shared' in raw_args:
+        return True
+
+    if '-bundle' in raw_args:
+        return True
+
+    if '--soname' in sa:
+        return True
+
+    if '-Wl,-soname' in sa:
+        return True
+
+    return False
+
+def link(objs, args):
+    return link_lib(args[args.index('-o') + 1], objs)
+
+def exec(args):
+    os.execvp(args[0], args)
+
+def main():
+    fileio.stderr.write(str(sys.argv) + '\n')
+
+    let raw_args = list(it_args())
+
+    if '--print-search-dirs' in raw_args:
+        return
+
+    if '-print-search-dirs' in raw_args:
+        return
+
+    if '-dumpspecs' in raw_args:
+        return
+
+    if '-print-multi-os-directory' in raw_args:
+        return
+
+    let sa = str(raw_args)
+    let args = calc_args(raw_args)
+
+    if '-c' in args:
+        return exec(args)
+    elif '--version' in args:
+        return exec(args)
+    elif '-dumpversion' in args:
+        return exec(args)
+    elif '-Wl,--version' in args:
+        return exec(args)
+    elif '-fsyntax-only' in args:
+        return exec(args)
+    elif '-P' in args or '-E' in args:
+        return exec(args)
+    elif 'ld.lld' in args:
+        return exec(args)
+    elif is_link_lib(sa, raw_args):
+        let srcs = list(flt_srcs(args))
+
+        if len(srcs) == 1:
+            return exec(args + ['-c'])
+
+        return link(list(flt_objs(args)), args)
+    elif have_objs(args):
+        if '-rdynamic' in sa or '-export-dynamic' in sa:
+            return exec(['dynlink'] + args)
+
+    return exec(['exelink'] + args)
+
+main()
