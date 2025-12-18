@@ -115,6 +115,12 @@ HAS_GLIBC_GETHOSTBY_R=1
 {% endblock %}
 
 {% block patch %}
+devendor jdk/src/share/native/sun/font
+devendor jdk/src/solaris/native/sun/font
+devendor jdk/src/share/native/sun/awt
+devendor jdk/src/solaris/native/sun/awt
+devendor jdk/src/share/native/sun/java2d
+devendor jdk/src/solaris/native/sun/java2d
 find langtools/src/share/classes/com/sun/tools/javac/parser -type f -name '*.java' | while read l; do
     sed \
         -e 's| Token | XXToken |g' \
@@ -145,8 +151,17 @@ done
 find hotspot -type f -name '*.hpp' | while read l; do
     sed -e 's|(-1) <<|((unsigned)(-1)) << |' -i ${l}
 done
+find jdk -type f -name '*.h' | while read l; do
+    sed -e 's|(-1)<<|((unsigned)(-1)) << |' -i ${l}
+done
+sed -e 's|.*static int sigWakeup.*|#define sigWakeup (__SIGRTMAX - 2)|' \
+    -i jdk/src/solaris/native/java/net/linux_close.c
 >jdk/make/gensrc/GensrcX11Wrappers.gmk
 mkdir -p build/linux-x86_64-normal-server-release/jdk/gensrc_no_srczip
+mkdir -p build/linux-x86_64-normal-server-release/jdk/classes/javax/swing
+>build/linux-x86_64-normal-server-release/jdk/classes/javax/swing/SwingBeanInfoBase.class
+mkdir -p build/linux-x86_64-normal-server-release/jdk/classes/sun/swing
+>build/linux-x86_64-normal-server-release/jdk/classes/sun/swing/BeanInfoUtils.class
 find jdk/src/solaris/classes/sun/awt/X11 -type f -name '*.java' -delete
 {% endblock %}
 
