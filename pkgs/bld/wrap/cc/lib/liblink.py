@@ -7,6 +7,19 @@ import subprocess
 if os.environ.get('IX_VERBOSE'):
     print(f'LIBLINK {sys.argv}', file=sys.stderr)
 
+def flt_objs(argv):
+    for x in argv:
+        if x.endswith('.o'):
+            yield x
+        elif x.endswith('.os'):
+            yield x
+        elif x.startswith('-Wl,'):
+            pass
+        elif '/store/' in x:
+            pass
+        elif x.endswith('.a'):
+            yield x
+
 def mkdir(x):
     try:
         os.makedirs(x)
@@ -39,4 +52,6 @@ def link_lib(x, objs):
         mkdir(tmpdir)
         subprocess.check_call(['cp', x, tmpdir + '/' + f[:f.index('.')] + '.a'])
 
-link_lib(sys.argv[1], list(flt(sys.argv[2:])))
+args = sys.argv[1:]
+
+link_lib(args[args.index('-o') + 1], list(flt(flt_objs(args))))

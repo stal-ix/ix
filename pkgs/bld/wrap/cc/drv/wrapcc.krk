@@ -101,19 +101,6 @@ def calc_args(argv):
 
     return args
 
-def flt_objs(argv):
-    for x in argv:
-        if x.endswith('.o'):
-            yield x
-        elif x.endswith('.os'):
-            yield x
-        elif x.startswith('-Wl,'):
-            pass
-        elif '/store/' in x:
-            pass
-        elif x.endswith('.a'):
-            yield x
-
 def flt_srcs(argv):
     for x in argv:
         if x.endswith('.c'):
@@ -130,9 +117,6 @@ def have_objs(args):
 
         if x.endswith('.os'):
             return True
-
-def link_lib(x, objs):
-    exec(['liblink'] + [x] + objs)
 
 def is_link_lib(sa, raw_args):
     if 'chrome' in raw_args:
@@ -153,10 +137,16 @@ def is_link_lib(sa, raw_args):
     if '-Wl,-soname' in sa:
         return True
 
-    return False
+    if '-o' in raw_args:
+        let out = raw_args[raw_args.index('-o') + 1]
 
-def link(objs, args):
-    return link_lib(args[args.index('-o') + 1], objs)
+        if out.endswith('.so'):
+            return True
+
+        if out.endswith('.dylib'):
+            return True
+
+    return False
 
 def exec(args):
     os.execvp(args[0], args)
@@ -199,7 +189,7 @@ def main():
         if len(srcs) == 1:
             return exec(args + ['-c'])
 
-        return link(list(flt_objs(args)), args)
+        return exec(['liblink'] + args)
     elif have_objs(args):
         if '-rdynamic' in sa or '-export-dynamic' in sa:
             return exec(['dynlink'] + args)

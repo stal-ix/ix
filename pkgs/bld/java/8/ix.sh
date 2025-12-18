@@ -154,4 +154,5 @@ find jdk/src/solaris/classes/sun/awt/X11 -type f -name '*.java' -delete
 TOOL_AWT_TOBIN=echo
 GENSRC_SWING_BEANINFO=
 C_FLAG_DEPS="-MMD -MF"
+CXX_FLAG_DEPS="-MMD -MF"
 {% endblock %}
