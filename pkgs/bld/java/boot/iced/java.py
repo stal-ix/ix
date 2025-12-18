@@ -9,6 +9,9 @@ import subprocess
 vm = []
 cl = []
 
+if ecp := os.environ.get('CLASSPATH'):
+    vm.append(f'-Denv.class.path={ecp}')
+
 for x in sys.argv[1:]:
     if x.startswith('-J'):
         vm.append(x[2:])
