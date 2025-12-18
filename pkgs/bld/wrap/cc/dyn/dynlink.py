@@ -7,7 +7,8 @@ import shutil
 import hashlib
 import subprocess
 
-print(f'DYNLINK {sys.argv}', file=sys.stderr)
+if os.environ.get('IX_VERBOSE'):
+    print(f'DYNLINK {sys.argv}', file=sys.stderr)
 
 uuid = hashlib.md5(json.dumps(sys.argv).encode()).hexdigest()
 temp = os.environ['tmp'] + f'/{uuid}.o'
@@ -52,7 +53,7 @@ dprog = '\n'.join(sorted(frozenset(it_syms())))
 cprog = subprocess.check_output(['dl_stubs'], input=dprog.encode())
 
 try:
-    subprocess.check_output([os.environ['SELF'], '-fno-builtin', '-o', temp, '-c', '-x', 'c', '-'], input=cprog)
+    subprocess.check_output([os.environ['SELF'].replace('/c++', '/cc'), '-fno-builtin', '-o', temp, '-c', '-x', 'c', '-'], input=cprog)
     subprocess.check_output(['exelink'] + args + [temp])
 finally:
     os.unlink(temp)

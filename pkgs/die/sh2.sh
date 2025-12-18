@@ -11,6 +11,9 @@ cd /
 
 {% block script_init_env %}
 {{super()}}
+{% if verbose %}
+export IX_VERBOSE=1
+{% endif %}
 export COFLAGS=
 export CMFLAGS=
 export GIRPATH=

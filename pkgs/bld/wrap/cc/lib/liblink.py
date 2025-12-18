@@ -4,6 +4,9 @@ import os
 import sys
 import subprocess
 
+if os.environ.get('IX_VERBOSE'):
+    print(f'LIBLINK {sys.argv}', file=sys.stderr)
+
 def mkdir(x):
     try:
         os.makedirs(x)
@@ -13,7 +16,9 @@ def mkdir(x):
 def flt(lst):
     for x in lst:
         if x.startswith('/lib'):
-            continue
+            pass
+        elif x.endswith('/lib/reg.o'):
+            pass
         else:
             yield x
 
@@ -34,5 +39,4 @@ def link_lib(x, objs):
         mkdir(tmpdir)
         subprocess.check_call(['cp', x, tmpdir + '/' + f[:f.index('.')] + '.a'])
 
-print(f'LIBLINK {sys.argv}', file=sys.stderr)
 link_lib(sys.argv[1], list(flt(sys.argv[2:])))

@@ -57,6 +57,8 @@ nashorn
 {% endblock %}
 
 {% block step_unpack %}
+mkdir src
+cd src
 extract 1 ${src}/openjdk.tar.xz
 {% for x in ix.parse_list(self.parts()) %}
 mkdir {{x}}
@@ -86,15 +88,19 @@ wrap_cc
 shut_up
 {% endblock %}
 
-{% block cpp_defines1 %}
+{% block cpp_defines %}
 isnanf=isnan
 SIGCLD=SIGCHLD
 __SIGRTMAX=SIGRTMAX
 HAS_GLIBC_GETHOSTBY_R=1
 {% endblock %}
 
-{% block c_flags1 %}
+{% block c_flags %}
 -Wno-implicit-function-declaration
+{% endblock %}
+
+{% block cxx_flags %}
+-std=c++98
 {% endblock %}
 
 {% block make_no_thrs %}
@@ -104,4 +110,45 @@ HAS_GLIBC_GETHOSTBY_R=1
 --with-toolchain-type=clang
 --disable-headful
 --without-x
+{% endblock %}
+
+{% block patch %}
+find langtools/src/share/classes/com/sun/tools/javac/parser -type f -name '*.java' | while read l; do
+    sed \
+        -e 's| Token | XXToken |g' \
+        -e 's| Token(| XXToken(|g' \
+        -e 's| Token\.| XXToken\.|g' \
+        -e 's| Token\[| XXToken\[|g' \
+        -e 's| Token<| XXToken<|g' \
+        -e 's|(Token |(XXToken |g' \
+        -e 's|(Token(|(XXToken(|g' \
+        -e 's|(Token\.|(XXToken\.|g' \
+        -e 's|(Token\[|(XXToken\[|g' \
+        -e 's|(Token<|(XXToken<|g' \
+        -e 's|\.Token |\.XXToken |g' \
+        -e 's|\.Token(|\.XXToken(|g' \
+        -e 's|\.Token\.|\.XXToken\.|g' \
+        -e 's|\.Token\[|\.XXToken\[|g' \
+        -e 's|\.Token<|\.XXToken<|g' \
+        -e 's|<Token |<XXToken |g' \
+        -e 's|<Token(|<XXToken(|g' \
+        -e 's|<Token\.|<XXToken\.|g' \
+        -e 's|<Token\[|<XXToken\[|g' \
+        -e 's|<Token>|<XXToken>|g' \
+        -e 's|NamedXXToken|NamedToken|' \
+        -e 's|StringXXToken|StringToken|' \
+        -e 's|NumericXXToken|NumericToken|' \
+        -i ${l}
+done
+find hotspot -type f -name '*.hpp' | while read l; do
+    sed -e 's|(-1) <<|((unsigned)(-1)) << |' -i ${l}
+done
+>jdk/make/gensrc/GensrcX11Wrappers.gmk
+mkdir -p build/linux-x86_64-normal-server-release/jdk/gensrc_no_srczip
+find jdk/src/solaris/classes/sun/awt/X11 -type f -name '*.java' -delete
+{% endblock %}
+
+{% block make_flags %}
+TOOL_AWT_TOBIN=echo
+GENSRC_SWING_BEANINFO=
 {% endblock %}

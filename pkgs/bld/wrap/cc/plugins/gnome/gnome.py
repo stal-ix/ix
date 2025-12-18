@@ -70,7 +70,8 @@ def it_parts():
 
 cprog = '\n'.join(it_parts()).strip() + '\n'
 
-print(cprog, file=sys.stderr)
+if os.environ.get('IX_VERBOSE'):
+    print(cprog, file=sys.stderr)
 
 subprocess.check_output([os.environ['SELF'], '-o', temp, '-c', '-x', 'c', '-'], input=cprog.encode())
 

@@ -7,7 +7,8 @@ import subprocess
 
 # for bld/ruby
 if 'conftest' not in str(sys.argv):
-    print(f'EXELINK {sys.argv}', file=sys.stderr)
+    if os.environ.get('IX_VERBOSE'):
+        print(f'EXELINK {sys.argv}', file=sys.stderr)
 
 def it_plugins(cmd):
     for x in cmd:
