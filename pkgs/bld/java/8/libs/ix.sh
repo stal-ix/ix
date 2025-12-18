@@ -1,0 +1,22 @@
+{% extends '//bld/java/8/t/ix.sh' %}
+
+{% block lib_deps %}
+lib/c
+lib/z
+lib/gif
+lib/c++
+lib/png
+lib/jpeg
+lib/cups
+lib/alsa
+lib/kernel
+lib/lcms/2
+lib/freetype
+lib/shim/iced
+{% endblock %}
+
+{% block install %}
+cp -R ${tmp}/lib ${out}/
+cp build/linux-x86_64-normal-server-release/jdk/objs/libfdlibm.a ${out}/lib/
+rm ${out}/lib/libsaproc.a
+{% endblock %}
