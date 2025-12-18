@@ -66,7 +66,6 @@ cd ..
 {% endfor %}
 {% endblock %}
 
-
 {% block build %}
 export IX_JAVA_HOME=${JAVA_HOME}
 export IMPORT_JDK=${PWD}/jdk
@@ -74,12 +73,10 @@ export BUILD_DIR=${PWD}/build
 export ANT_OPTS=-Djava.io.tmpdir=${TMPDIR}
 unset CLASSPATH
 unset JAVA_HOME
-#mkdir -p build/linux-amd64
 {{super()}}
 {% endblock %}
 
 {% block script_init_env %}
-export PLUGINS=
 export CLASSPATH=
 {{super()}}
 {% endblock %}
