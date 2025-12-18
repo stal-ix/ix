@@ -20,3 +20,17 @@ cp -R ${tmp}/lib ${out}/
 cp build/linux-x86_64-normal-server-release/jdk/objs/libfdlibm.a ${out}/lib/
 rm ${out}/lib/libsaproc.a
 {% endblock %}
+
+{% block c_rename_symbol %}
+atanh
+copysign
+finite
+frexp
+ilogb
+ldexp
+logb
+modf
+nextafter
+rint
+scalbn
+{% endblock %}

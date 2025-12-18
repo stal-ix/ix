@@ -13,8 +13,18 @@ def it_bins():
             yield x
 
 def need_plugins():
+    if '-o' in args:
+        o = args[args.index('-o') + 1]
+    else:
+        o = ''
+
+    if '/' in o:
+        a = frozenset(args + [os.path.basename(o)])
+    else:
+        a = frozenset(args)
+
     for x in it_bins():
-        if x in args:
+        if x in a:
             return True
 
 def flt_plugins(args):
