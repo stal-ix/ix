@@ -13,7 +13,7 @@ https://github.com/umputun/reproxy/archive/refs/tags/v{{self.version().strip()}}
 {% endblock %}
 
 {% block go_sha %}
-1adc0e896ca52d5c09007f56cfaf05f2db45e7f975a6457c78ba3961f533feb7
+cf1b2a889aa50c05a49309aa438d17ca0206565c1677d0f37a1d6114f44ce2a3
 {% endblock %}
 
 {% block go_tool %}
