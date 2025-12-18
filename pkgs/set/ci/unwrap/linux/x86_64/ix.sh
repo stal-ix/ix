@@ -51,7 +51,7 @@
 #}
 
 {% block run_deps %}
-bin/jdk/7
+#bin/jdk/7
 bin/fastjar
 bin/ollama
 bin/ollama/soft
