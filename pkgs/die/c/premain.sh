@@ -1,11 +1,19 @@
 {% extends 'ix.sh' %}
 
+{% block shell %}
+bin/bash/lite/sh
+{% endblock %}
+
 {% block step_unpack %}
 : nothing to unpack
 {% endblock %}
 
 {% block build %}
+set -xue -o pipefail
+
 (
+set -xue -o pipefail
+
 cat << EOF
 {% block premain_code %}
 {% endblock %}
