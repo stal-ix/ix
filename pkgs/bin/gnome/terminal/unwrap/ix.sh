@@ -36,6 +36,7 @@ bld/fake/er(tool_name=itstool)
 bld/fake/er(tool_name=xsltproc)
 {% endblock %}
 
-{% block c_rename_symbol %}
-g_module_open
+{% block patch %}
+sed -e 's|^g_module_open|xxx_g_module_open|' \
+    -i src/server.cc
 {% endblock %}
