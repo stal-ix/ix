@@ -8,14 +8,13 @@ import subprocess
 
 args = json.loads(sys.stdin.read())['cmd']
 uuid = hashlib.md5(json.dumps(args).encode()).hexdigest()
-temp = os.environ['tmp'] + f'/{uuid}.o'
+temp = os.environ['tmp'] + f'/gnome_{uuid}.o'
 
 def it_linkable():
     for x in args:
         if x.startswith('/'):
-            continue
-
-        if x.endswith('.o'):
+            pass
+        elif x.endswith('.o'):
             yield x
         elif x.endswith('.a'):
             yield x
