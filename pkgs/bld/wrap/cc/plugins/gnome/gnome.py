@@ -25,9 +25,10 @@ def it_linkable():
             yield x
 
 def it_funcs():
-    data = subprocess.check_output(['llvm-nm', '-j', '-g'] + list(it_linkable()))
-    yield from data.decode().split('\n')
-    yield 'g_signal_group_get_type'
+    if lst := list(it_linkable()):
+        data = subprocess.check_output(['llvm-nm', '-j', '-g'] + lst)
+        yield from data.decode().split('\n')
+        yield 'g_signal_group_get_type'
 
 def it_init():
     yield 'void gobject_init(void)', 'gobject_init()'
