@@ -17,6 +17,7 @@ https://github.com/linux-pam/linux-pam/archive/refs/tags/v{{self.version().strip
 bld/flex
 bld/byacc
 bld/gettext
+bld/wrap/cc/plugins/rdynamic/fake
 {% endblock %}
 
 {% block lib_deps %}
