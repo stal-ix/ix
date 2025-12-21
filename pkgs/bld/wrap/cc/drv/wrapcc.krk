@@ -190,9 +190,6 @@ def main():
             return exec(args + ['-c'])
 
         return exec(['liblink'] + args)
-    elif have_objs(args):
-        if '-rdynamic' in sa or '-export-dynamic' in sa:
-            return exec(['dynlink'] + args)
 
     return exec(['exelink'] + args)
 

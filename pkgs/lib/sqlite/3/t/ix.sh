@@ -12,6 +12,7 @@ wrap_cc
 {% block configure_flags %}
 --build={{host.gnu.three}}
 --host={{target.gnu.three}}
+--disable-load-extension
 {% endblock %}
 
 {% block cpp_defines %}

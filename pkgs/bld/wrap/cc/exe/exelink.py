@@ -27,4 +27,10 @@ def flt_args(cmd):
 
     return req['cmd']
 
-subprocess.check_call(flt_args(sys.argv[1:] + ['-L' + os.environ['tmp'] + '/lib']))
+cmd = flt_args(sys.argv[1:] + ['-L' + os.environ['tmp'] + '/lib'])
+
+for x in ('-rdynamic', '-export-dynamic'):
+    if x in str(cmd):
+        raise Exception('please add bld/wrap/cc/plugins/rdynamic into bld_tool')
+
+subprocess.check_call(cmd)

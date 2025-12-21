@@ -77,7 +77,7 @@ done | dl_stubs > stub.c
 
 find .
 
-clang -o evincexxx stub.c $(find -type f -name '*.o' | grep -v 'gnome_' | grep -v 'evinced.p' | grep -v 'test-')
+clang -o evincexxx stub.c $(find -type f -name '*.o' | grep -v 'gnome_' | grep -v dynlink_ | grep -v 'evinced.p' | grep -v 'test-')
 {% endblock %}
 
 {% block install %}
