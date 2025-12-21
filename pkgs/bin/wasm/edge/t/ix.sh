@@ -21,6 +21,10 @@ lib/boost
 lib/spdlog
 {% endblock %}
 
+{% block bld_tool %}
+bld/wrap/cc/plugins/rdynamic
+{% endblock %}
+
 {% block cmake_flags %}
 WASMEDGE_FORCE_DISABLE_LTO=ON
 SUPPORT_EXCLUDE_LIBS=OFF
