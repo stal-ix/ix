@@ -22,5 +22,5 @@ lib/shim/fake/pkg(pkg_name=libyuv,pkg_ver=100.0.0)
 
 {% block build_flags %}
 wrap_cc
-wrap_rdynamic_fake
+wrap_rdynamic
 {% endblock %}

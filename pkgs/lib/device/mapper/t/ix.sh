@@ -28,4 +28,5 @@ bld/auto/archive
 
 {% block build_flags %}
 wrap_cc
+wrap_rdynamic
 {% endblock %}
