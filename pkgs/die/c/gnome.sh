@@ -1,14 +1,13 @@
 {% extends 'meson.sh' %}
 
 {% block std_box %}
-{% if bin %}
-bld/wrapcc/link/xxx
-bld/wrapcc/link/new
-{% endif %}
 bld/glib
 bld/gnome
 bld/gettext
 {{super()}}
+{% if bin %}
+bld/wrap/cc/plugins/gnome
+{% endif %}
 {% endblock %}
 
 {% block build_flags %}

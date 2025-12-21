@@ -23,6 +23,6 @@ cd wak*
 {% endblock %}
 
 {% block build %}
-mkdir -p ${out}/bin
+mkdir ${out}/bin
 ${CC} ${CPPFLAGS} ${CFLAGS} ${LDFLAGS} monosrc/mono.c -o ${out}/bin/awk
 {% endblock %}

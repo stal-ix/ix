@@ -4,7 +4,14 @@
 lib/c
 lib/shim/fake(lib_name=X11)
 lib/shim/fake(lib_name=xcb)
+lib/shim/fake/pkg(pkg_name=xt,pkg_ver=100500)
+lib/shim/fake/pkg(pkg_name=x11,pkg_ver=100500)
+lib/shim/fake/pkg(pkg_name=xtst,pkg_ver=100500)
+lib/shim/fake/pkg(pkg_name=xproto,pkg_ver=100500)
 lib/shim/fake/pkg(pkg_name=xcursor,pkg_ver=100500)
+lib/shim/fake/pkg(pkg_name=xrender,pkg_ver=100500)
+lib/shim/fake/pkg(pkg_name=xinerama,pkg_ver=100500)
+lib/shim/fake/pkg(pkg_name=xcomposite,pkg_ver=100500)
 {% endblock %}
 
 {% block install %}

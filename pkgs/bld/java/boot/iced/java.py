@@ -3,16 +3,14 @@
 import os
 import sys
 import json
+import shutil
 import subprocess
-
-def java_home():
-    if 'JAVA_HOME' in os.environ:
-        return os.environ['JAVA_HOME']
-
-    return os.path.dirname(os.path.dirname(os.path.abspath(sys.argv[0])))
 
 vm = []
 cl = []
+
+if ecp := os.environ.get('CLASSPATH'):
+    vm.append(f'-Denv.class.path={ecp}')
 
 for x in sys.argv[1:]:
     if x.startswith('-J'):
@@ -20,9 +18,11 @@ for x in sys.argv[1:]:
     else:
         cl.append(x)
 
+hs = shutil.which('hotspot')
+
 env = os.environ.copy()
-env['JAVA_HOME'] = java_home()
-cmd = ['hotspot'] + vm + cl
+env['JAVA_HOME'] = os.path.dirname(os.path.dirname(hs))
+cmd = [hs] + vm + cl
 
 try:
     subprocess.check_call(cmd, env=env)

@@ -37,11 +37,11 @@ lib/shim/fake/pkg(pkg_name=libelogind,pkg_ver=100.500)
 {% endblock %}
 
 {% block bld_tool %}
-bin/mutter/exe
 bin/cvt
 bld/glib
 bld/gettext
 bld/wayland
+bld/wrap/cc/plugins/unreg(bins=src/mutter)
 {% endblock %}
 
 {% block meson_flags %}

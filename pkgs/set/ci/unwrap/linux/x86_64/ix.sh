@@ -51,6 +51,7 @@
 #}
 
 {% block run_deps %}
+#bin/jdk/7
 bin/fastjar
 bin/ollama
 bin/ollama/soft
@@ -297,7 +298,7 @@ bin/less/gnu
 #bin/kitty
 bin/xfsprogs/6/1
 bin/xfsprogs/6/latest
-bin/qtile
+#bin/qtile
 bin/dconf
 bin/fastfetch
 bin/gnome/terminal

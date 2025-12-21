@@ -1,0 +1,18 @@
+--- a/javaCalls.cpp	2018-02-26 06:33:05.000000000 +0300
++++ b/javaCalls.cpp	2025-12-14 15:37:22.369141943 +0300
+@@ -391,6 +391,7 @@
+     thread->reguard_stack();
+   }
+ 
++  if (0) {
+   // Check that there are shadow pages available before changing thread state
+   // to Java
+   if (!os::stack_shadow_pages_available(THREAD, method)) {
+@@ -401,6 +402,7 @@
+     // Touch pages checked if the OS needs them to be touched to be mapped.
+     os::bang_stack_shadow_pages();
+   }
++  }
+ 
+   // do call
+   { JavaCallWrapper link(method, receiver, result, CHECK);

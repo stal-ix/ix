@@ -32,33 +32,6 @@ jdk
 langtools
 {% endblock %}
 
-{% block bld_libs %}
-lib/c
-lib/z
-lib/gif
-lib/c++
-lib/png
-lib/jpeg
-lib/cups
-lib/alsa
-lib/kernel
-lib/lcms/2
-lib/freetype
-aux/x11/proto
-bld/java/boot/iced/fakes
-lib/shim/fake(lib_name=stdc++)
-lib/shim/redir(from=fpu_control.h,to=fakes.h)
-lib/shim/redir(from=bits/ioctls.h,to=fakes.h)
-lib/shim/redir(from=gnu/libc-version.h,to=fakes.h)
-lib/shim/redir(from=sys/sysctl.h,to=linux/sysctl.h)
-lib/shim/fake/pkg(pkg_name=xt,pkg_ver=100500)
-lib/shim/fake/pkg(pkg_name=x11,pkg_ver=100500)
-lib/shim/fake/pkg(pkg_name=xinerama,pkg_ver=100500)
-lib/shim/fake/pkg(pkg_name=xrender,pkg_ver=100500)
-lib/shim/fake/pkg(pkg_name=xcomposite,pkg_ver=100500)
-lib/shim/fake/pkg(pkg_name=xtst,pkg_ver=100500)
-{% endblock %}
-
 {% block bld_tool %}
 bin/zip
 bin/gzip
@@ -105,8 +78,11 @@ cd ..
 {% endblock %}
 
 {% block patch %}
-base64 -d << EOF > openjdk.src/jdk/src/solaris/native/java/net/linux_close.c
-{% include 'linux_close.c/base64' %}
+(cd openjdk.src/hotspot/src/share/vm/runtime; base64 -d | patch -p1) << EOF
+{% include 'so.patch/base64' %}
+EOF
+(cd openjdk.src/jdk/src/solaris/native/java/net; base64 -d | patch -p1) << EOF
+{% include 'lc.patch/base64' %}
 EOF
 sed -e 's|const char \* const|extern const char \* const|' \
     -i openjdk.src/jdk/src/solaris/native/java/lang/childproc.h
@@ -119,6 +95,8 @@ devendor openjdk.src/jdk/src/share/native/sun/awt
 devendor openjdk.src/jdk/src/solaris/native/sun/awt
 devendor openjdk.src/jdk/src/share/native/sun/java2d
 devendor openjdk.src/jdk/src/solaris/native/sun/java2d
+sed -e 's|.*Using java runtime at.*||' \
+    -i openjdk.src/hotspot/src/share/tools/launcher/java.c
 sed -e 's|.*throw.*RuntimeException.*time.*10.*||' \
     -i openjdk.src/jdk/make/tools/src/build/tools/generatecurrencydata/GenerateCurrencyData.java
 (cd openjdk.src/hotspot; base64 -d | patch -p1) << EOF
@@ -144,19 +122,19 @@ done
 {% endblock %}
 
 {% block make_flags %}
-UNIXCOMMAND_PATH=" "
-USRBIN_PATH=" "
-UTILS_COMMAND_PATH=" "
-UTILS_USR_BIN_PATH=" "
+SORT=sort
 USER=root
 LOGNAME=root
-CUPS_HEADERS_PATH=${CUPS_HEADERS_PATH}
-REQUIRED_FREETYPE_VERSION=2.14.1
+USRBIN_PATH=" "
+UNIXCOMMAND_PATH=" "
+UTILS_COMMAND_PATH=" "
+UTILS_USR_BIN_PATH=" "
 REQUIRED_ALSA_VERSION=
-DISABLE_HOTSPOT_OS_VERSION_CHECK=1
-USE_PRECOMPILED_HEADER=0
-SORT=sort
 BUILD_HEADLESS_ONLY=yes
+USE_PRECOMPILED_HEADER=0
+REQUIRED_FREETYPE_VERSION=2.14.1
+DISABLE_HOTSPOT_OS_VERSION_CHECK=1
+ALT_CUPS_HEADERS_PATH=${IX_CUPS_CUPS_H_DIR}/include
 {% endblock %}
 
 {% block build_flags %}
@@ -173,4 +151,8 @@ HAS_GLIBC_GETHOSTBY_R=1
 
 {% block c_flags %}
 -Wno-implicit-function-declaration
+{% endblock %}
+
+{% block make_target %}
+stamps/icedtea-boot.stamp
 {% endblock %}

@@ -3,37 +3,29 @@
 {% block bld_libs %}
 {{super()}}
 lib/build/muldefs
-bld/java/boot/iced/rt
-lib/dl/plugin(dl_for=bld/java/boot/iced/libs,dl_lib=zip)
-lib/dl/plugin(dl_for=bld/java/boot/iced/libs,dl_lib=nio)
-lib/dl/plugin(dl_for=bld/java/boot/iced/libs,dl_lib=net)
-lib/dl/plugin(dl_for=bld/java/boot/iced/libs,dl_lib=jvm)
-lib/dl/plugin(dl_for=bld/java/boot/iced/libs,dl_lib=java)
-lib/dl/plugin(dl_for=bld/java/boot/iced/libs,dl_lib=jsig)
-lib/dl/plugin(dl_for=bld/java/boot/iced/libs,dl_lib=verify)
+lib/dl(dl_for=bld/java/boot/iced/libs,dl_lib=zip)
+lib/dl(dl_for=bld/java/boot/iced/libs,dl_lib=nio)
+lib/dl(dl_for=bld/java/boot/iced/libs,dl_lib=net)
+lib/dl(dl_for=bld/java/boot/iced/libs,dl_lib=jvm)
+lib/dl(dl_for=bld/java/boot/iced/libs,dl_lib=java)
+lib/dl(dl_for=bld/java/boot/iced/libs,dl_lib=jsig)
+lib/dl(dl_for=bld/java/boot/iced/libs,dl_lib=verify)
 {% endblock %}
 
 {% block bld_tool %}
-bld/java/boot/iced/exe
+bld/wrap/cc/plugins/unreg(bins=gamma)
 {{super()}}
 {% endblock %}
 
-{% block script_init_env %}
-export PLUGINS=
+{% block cpp_defines %}
 {{super()}}
-{% endblock %}
-
-{% block c_rename_symbol %}
-signal
-sigset
-sigaction
-{% endblock %}
-
-{% block make_target %}
-stamps/icedtea-boot.stamp
+signal=jdk_signal
+sigset=jdk_sigset
+sigaction=jdk_sigaction
 {% endblock %}
 
 {% block install %}
+set -x
 cp -R openjdk.build-boot/j2sdk-image/* ${out}/
 cp -R openjdk.build-boot/hotspot/outputdir/linux_amd64_compiler2/product/gamma ${out}/bin/hotspot
 >${out}/bin/libjvm.so
@@ -48,7 +40,12 @@ EOF
 base64 -d << EOF > flt.py
 {% include 'flt.py/base64' %}
 EOF
-cat openjdk.src/jdk/make/launchers/Makefile | python3 flt.py >> launcher
+(
+    find openjdk.src/jdk -type f -name Makefile | grep -v launchers | while read l; do
+        cat ${l}
+    done
+    cat openjdk.src/jdk/make/launchers/Makefile
+) | python3 flt.py >> launcher
 cat << EOF >> launcher
 '''
 EOF
