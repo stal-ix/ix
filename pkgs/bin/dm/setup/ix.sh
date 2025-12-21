@@ -9,6 +9,7 @@ lib/readline
 {% block bld_tool %}
 {{super()}}
 bld/elfutils
+bld/wrap/cc/plugins/rdynamic
 {% endblock %}
 
 {% block configure_flags %}
