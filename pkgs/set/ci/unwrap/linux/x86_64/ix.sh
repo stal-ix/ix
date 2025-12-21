@@ -298,7 +298,7 @@ bin/less/gnu
 #bin/kitty
 bin/xfsprogs/6/1
 bin/xfsprogs/6/latest
-bin/qtile
+#bin/qtile
 bin/dconf
 bin/fastfetch
 bin/gnome/terminal
