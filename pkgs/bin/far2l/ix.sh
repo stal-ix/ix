@@ -33,6 +33,7 @@ bld/m4
 bld/perl
 bld/dlfcn
 bld/pkg/config
+bld/wrap/cc/plugins/rdynamic
 {% endblock %}
 
 {% block c_rename_symbol %}
