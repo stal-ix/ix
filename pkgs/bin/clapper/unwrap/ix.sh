@@ -26,11 +26,8 @@ lib/gstreamer/dl
 {% endblock %}
 
 {% block bld_tool %}
-bld/glib
 bld/gnome
-bld/gettext
 bld/wrap/cc/plugins/gnome
-bld/fake(tool_name=update-mime-database)
 {% endblock %}
 
 {% block meson_flags %}

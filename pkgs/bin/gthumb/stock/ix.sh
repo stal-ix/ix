@@ -37,9 +37,7 @@ libbrasero=false
 {% endblock %}
 
 {% block bld_tool %}
-bld/glib
 bld/gnome
-bld/gettext
 {% endblock %}
 
 {% block patch %}

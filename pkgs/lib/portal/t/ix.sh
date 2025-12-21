@@ -19,7 +19,6 @@ lib/gtk/{{gtk_ver}}
 {% endblock %}
 
 {% block bld_tool %}
-bld/glib
 bld/gnome
 {% endblock %}
 

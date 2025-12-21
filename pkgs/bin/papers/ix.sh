@@ -44,9 +44,7 @@ bld/meson/6
 {% endblock %}
 
 {% block bld_tool %}
-bld/glib
 bld/gnome
-bld/gettext
 bld/rust/86
 {% endblock %}
 
