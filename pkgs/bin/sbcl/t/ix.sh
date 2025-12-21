@@ -12,6 +12,7 @@ bld/make
 
 {% block build_flags %}
 wrap_cc
+wrap_rdynamic
 {% endblock %}
 
 {% block c_flags %}
