@@ -2,6 +2,7 @@
 
 {% block bld_tool %}
 {{super()}}
+bld/wrap/cc/plugins/rdynamic
 bld/fake/er(tool_name=g-ir-scanner)
 {% endblock %}
 

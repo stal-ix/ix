@@ -5,7 +5,7 @@ mkdir ${out}/bin
 
 cat << EOF > ${out}/bin/gircc
 #!/usr/bin/env sh
-exec girlink \${REALCC} -U__OPTIMIZE__ "\${@}"
+exec girlink \${REALCC} -U__OPTIMIZE__ -L/PLUGIN:\$(which plg_rdynamic) "\${@}"
 EOF
 
 cat << EOF > ${out}/bin/g-ir-scanner

@@ -10,6 +10,7 @@ lib/gi/repository/bootstrap/shim
 {% block bld_tool %}
 {{super()}}
 bld/gir/scanner
+bld/wrap/cc/plugins/rdynamic
 {% endblock %}
 
 {% block meson_flags %}
