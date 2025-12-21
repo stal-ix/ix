@@ -11,4 +11,5 @@ soinstall
 {% block build_flags %}
 {{super()}}
 wrap_cc
+wrap_rdynamic
 {% endblock %}
