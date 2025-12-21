@@ -57,4 +57,5 @@ sed -e 's|typedef.*_t;||' -i include/nlm4.h
 {% block build_flags %}
 shut_up
 wrap_cc
+wrap_rdynamic
 {% endblock %}
