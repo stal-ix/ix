@@ -13,3 +13,8 @@ device-mapper
 {% block make_install_target %}
 install_device-mapper
 {% endblock %}
+
+{% block build_flags %}
+{{super()}}
+wrap_rdynamic_fake
+{% endblock %}
