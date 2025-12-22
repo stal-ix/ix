@@ -61,5 +61,5 @@ sh
 {% endblock %}
 
 {% block script_exec %}
-{{ix.list_to_json(self.script_confine())}}
+{{self.script_confine() | list_to_json}}
 {% endblock %}
