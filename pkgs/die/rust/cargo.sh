@@ -153,10 +153,10 @@ export TARGET_CXX=${CXX}
 export RUSTC_BOOTSTRAP=1
 {% if self.cargo_packages().strip() %}
 {% for x in self.cargo_packages() | parse_list %}
-cargo {{ix.fix_list(self.cargo_flags().strip())}} --package {{x}}
+cargo {{self.cargo_flags().strip() | fix_list}} --package {{x}}
 {% endfor %}
 {% else %}
-cargo {{ix.fix_list(self.cargo_flags().strip())}}
+cargo {{self.cargo_flags().strip() | fix_list}}
 {% endif %}
 ln -s ${tmp}/{{target.rust}}/{{self.cargo_profile().strip()}} ${tmp}/out
 {% endblock %}

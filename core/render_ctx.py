@@ -24,9 +24,6 @@ class RenderContext:
 
         return json.loads(res), flags
 
-    def fix_list(self, lst):
-        return self.package.manager.env.filters['cononize'](lst)
-
     def load_file(self, name):
         n = os.path.join(os.path.dirname(self.package.name), name)
 

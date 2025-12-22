@@ -65,7 +65,7 @@ PLATFORM_linux_armv7="linux-generic32"
 
 perl ./Configure \
     ${PLATFORM_{{target.os}}_{{target.arch}}} \
-    {{ix.fix_list(openssl_conf_opts)}}
+    {{openssl_conf_opts | fix_list}}
 {% endblock %}
 
 {% block env %}

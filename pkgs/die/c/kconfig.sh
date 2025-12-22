@@ -18,7 +18,7 @@ defconfig
 {% endblock %}
 {% endset %}
 
-{{ix.fix_list(make_cmd)}}
+{{make_cmd | fix_list}}
 {% endblock %}
 
 {% block make_flags %}

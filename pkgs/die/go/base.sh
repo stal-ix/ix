@@ -47,5 +47,5 @@ go build
 {% endset %}
 
 {% block build %}
-{{ix.fix_list(go_command)}}
+{{go_command | fix_list}}
 {% endblock %}

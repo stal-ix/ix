@@ -49,7 +49,7 @@ make
 {% endblock %}
 
 {% block build %}
-{{ix.fix_list(self.ya_make_cmd())}}
+{{self.ya_make_cmd() | fix_list}}
 {% endblock %}
 
 {% block install %}

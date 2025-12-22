@@ -203,7 +203,7 @@ class Env(jinja2.Environment):
         self.filters['pad'] = pad
         self.filters['add'] = add
         self.filters['preproc'] = preproc
-        self.filters['cononize'] = cononize
+        self.filters['fix_list'] = cononize
         self.filters['parse_urls'] = parse_urls
         self.filters['parse_list'] = parse_list
         self.filters['list_to_json'] = list_to_json

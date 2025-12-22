@@ -84,7 +84,7 @@ b_lundef=false
 
 {{ninja_build_dir}}
 {% endset %}
-{{ix.fix_list(command_args)}}
+{{command_args | fix_list}}
 {% endif %}
 {% endblock %}
 

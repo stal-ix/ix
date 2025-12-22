@@ -35,7 +35,7 @@ done
 python3 {{waf}} --help
 exit 1
 {% else %}
-python3 {{waf}} configure {{ix.fix_list(waf_flags)}}
+python3 {{waf}} configure {{waf_flags | fix_list}}
 {% endif %}
 {% endblock %}
 

@@ -51,7 +51,7 @@ V=0
 {{make_target}}
 {% endset %}
 
-{{ix.fix_list(cmd_args1)}} || {{ix.fix_list(cmd_args2)}}
+{{cmd_args1 | fix_list}} || {{cmd_args2 | fix_list}}
 {% endblock %}
 
 {% block install %}
@@ -62,5 +62,5 @@ install
 {% endblock %}
 {% endset %}
 
-{{ix.fix_list(cmd_args)}}
+{{cmd_args | fix_list}}
 {% endblock %}
