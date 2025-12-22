@@ -2,7 +2,7 @@
 
 {% block build_script %}
 {
-    "data": {{ix.string_to_json(self.script_body())}},
+    "data": {{self.script_body() | jd}},
     "exec": {{self.script_exec().strip()}}
 }
 {% endblock %}
