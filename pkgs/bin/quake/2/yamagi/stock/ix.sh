@@ -29,6 +29,7 @@ lib/openal/dl
 bld/dlfcn
 bin/pkg/conf
 bld/librarian
+bld/wrap/cc/plugins/rdynamic/fake
 {% endblock %}
 
 {% block build_flags %}
