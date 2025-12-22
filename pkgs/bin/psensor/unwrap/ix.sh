@@ -40,6 +40,7 @@ export GLIB_COMPILE_SCHEMAS=glib-compile-schemas
 
 {% block build_flags %}
 wrap_cc
+wrap_rdynamic
 {% endblock %}
 
 {% block patch %}
