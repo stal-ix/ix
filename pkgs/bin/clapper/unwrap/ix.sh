@@ -27,7 +27,6 @@ lib/gstreamer/dl
 
 {% block bld_tool %}
 bld/gnome
-bld/wrap/cc/plugins/gnome
 {% endblock %}
 
 {% block meson_flags %}
@@ -37,4 +36,5 @@ enhancers-loader=disabled
 
 {% block build_flags %}
 wrap_cc
+wrap_rdynamic
 {% endblock %}
