@@ -33,7 +33,7 @@ go build
 
 {% if go_tags %}
 -tags
-{{','.join(ix.parse_list(go_tags))}}
+{{go_tags | parse_list | fjoin(',')}}
 {% endif %}
 
 -p ${make_thrs}

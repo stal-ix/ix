@@ -123,6 +123,10 @@ def pad(v, n):
     return v
 
 
+def fjoin(v, f):
+    return f.join(v)
+
+
 def preproc_it(d):
     for x in d.split('\n'):
         x = x.strip()
@@ -203,6 +207,7 @@ class Env(jinja2.Environment):
         self.filters['parse_urls'] = parse_urls
         self.filters['parse_list'] = parse_list
         self.filters['list_to_json'] = list_to_json
+        self.filters['fjoin'] = fjoin
         self.kv = {}
 
     def eval(self, v, code, *args):

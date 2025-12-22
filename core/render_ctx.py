@@ -27,9 +27,6 @@ class RenderContext:
     def fix_list(self, lst):
         return self.package.manager.env.filters['cononize'](lst)
 
-    def parse_list(self, lst):
-        return self.package.manager.env.filters['parse_list'](lst)
-
     def load_file(self, name):
         n = os.path.join(os.path.dirname(self.package.name), name)
 
