@@ -16,6 +16,7 @@ https://github.com/kuroko-lang/kuroko/archive/refs/tags/v{{self.version().strip(
 {% block build_flags %}
 {{super()}}
 wrap_cc
+wrap_rdynamic
 {% endblock %}
 
 {% block modules %}
