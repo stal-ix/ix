@@ -41,6 +41,7 @@ bld/prepend
 bld/wayland
 bld/fakegit
 bin/hypr/wayland/scanner
+bld/wrap/cc/plugins/rdynamic/fake
 {% endblock %}
 
 {% block patch %}
