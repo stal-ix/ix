@@ -47,6 +47,8 @@ def it_syms():
     for s in sorted(sym_list()):
         if s.startswith('_'):
             pass
+        elif '.' in s:
+            pass
         elif s == 'main':
             pass
         else:
