@@ -27,7 +27,7 @@ valloc
 
 {% block env %}
 {{super()}}
-{% for x in ix.parse_list(self.allocator_syms()) %}
+{% for x in self.allocator_syms() | parse_list %}
 export LDFLAGS="-Wl,--defsym=__real_{{x}}=0 \${LDFLAGS}"
 {% endfor %}
 {% endblock %}

@@ -28,7 +28,7 @@ wl_surface_damage
 
 __attribute__((__constructor__))
 void init_wayland_protocol() {
-{% for x in ix.parse_list(self.export_symbols()) %}
+{% for x in self.export_symbols() | parse_list %}
     stub_dlregister("wayland-protocols", "{{x}}", (void*)&{{x}});
 {% endfor %}
 }

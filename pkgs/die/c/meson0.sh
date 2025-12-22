@@ -78,7 +78,7 @@ b_lundef=false
 {% endblock %}
 {% endset %}
 
-{% for f in ix.parse_list(meson_flags) %}
+{% for f in meson_flags | parse_list %}
 -D{{f}}
 {% endfor %}
 

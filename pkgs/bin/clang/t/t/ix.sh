@@ -43,7 +43,7 @@ llvm
 {% endblock %}
 
 {% block ninja_install_targets %}
-{% for t in ix.parse_list(self.llvm_all_targets()) %}
+{% for t in self.llvm_all_targets() | parse_list %}
 install-{{t}}
 {% endfor %}
 {% endblock %}

@@ -27,7 +27,7 @@ bld/librarian
 cp -R ${tmp}/lib ${out}/
 rm ${out}/lib/libevdocument3.a
 rm ${out}/lib/libevview3.a
-{% for m in ix.parse_list(self.modules()) %}
+{% for m in self.modules() | parse_list %}
 patchns ${out}/lib/lib{{m}}document.a {{m}}_
 {% endfor %}
 {% endblock %}

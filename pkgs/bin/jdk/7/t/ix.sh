@@ -39,7 +39,7 @@ langtools
 
 {% block step_unpack %}
 extract 1 ${src}/openjdk.tar.bz2
-{% for x in ix.parse_list(self.parts()) %}
+{% for x in self.parts() | parse_list %}
 extract 0 ${src}/{{x}}.tar.bz2
 mv {{x}}-* {{x}}
 {% endfor %}

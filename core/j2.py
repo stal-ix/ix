@@ -162,10 +162,14 @@ def parse_urls(urls):
     return list(parse_urls_it(urls))
 
 
-def parse_list(lst):
+def parse_list_it(lst):
     for x in cononize(lst).split(' '):
         if x:
             yield x
+
+
+def parse_list(lst):
+    return list(parse_list_it(lst))
 
 
 def list_to_json(lst):

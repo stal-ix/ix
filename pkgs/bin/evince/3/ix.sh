@@ -2,7 +2,7 @@
 
 {% block bld_libs %}
 bin/evince/3/modules
-{% for m in ix.parse_list(self.modules()) %}
+{% for m in self.modules() | parse_list %}
 lib/dl/fix(dl_lib={{m}}document,dl_symbols=register_evince_backend={{m}}_register_evince_backend)
 {% endfor %}
 {% endblock %}

@@ -46,7 +46,7 @@ _ZNK6skjson11ObjectValue4findEPKc
 {% block ld_flags %}
 {{super()}}
 -Wl,--no-demangle
-{% for x in ix.parse_list(self.undef()) %}
+{% for x in self.undef() | parse_list %}
 -Wl,--defsym={{x}}=abort
 {% endfor %}
 {% endblock %}

@@ -140,7 +140,7 @@ temp-failure-retry.patch
 {% block patch %}
 ulimit -n 4096
 debloat .
-{% for i in ix.parse_list(self.patches()) %}
+{% for i in self.patches() | parse_list %}
 patch -p1 < aports/community/chromium/{{i}}
 {% endfor %}
 mkdir -p third_party/node/linux/node-linux-x64/bin

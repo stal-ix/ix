@@ -112,7 +112,7 @@ build
   --no-default-features
 {% endif %}
 
-{% for x in ix.parse_list(self.cargo_features()) %}
+{% for x in self.cargo_features() | parse_list %}
   {% if x != '__default__' %}
     --features {{x}}
   {% endif %}
@@ -152,7 +152,7 @@ export TARGET_CC=${CC}
 export TARGET_CXX=${CXX}
 export RUSTC_BOOTSTRAP=1
 {% if self.cargo_packages().strip() %}
-{% for x in ix.parse_list(self.cargo_packages()) %}
+{% for x in self.cargo_packages() | parse_list %}
 cargo {{ix.fix_list(self.cargo_flags().strip())}} --package {{x}}
 {% endfor %}
 {% else %}
@@ -167,7 +167,7 @@ ln -s ${tmp}/{{target.rust}}/{{self.cargo_profile().strip()}} ${tmp}/out
 {% block install %}
 {% if bin %}
 mkdir ${out}/bin
-{% for x in ix.parse_list(self.cargo_bins()) %}
+{% for x in self.cargo_bins() | parse_list %}
 cp ${tmp}/out/{{x}}{{target.exe_suffix}} ${out}/bin/
 {% endfor %}
 {% endif %}

@@ -82,7 +82,7 @@ CMAKE_SYSTEM_PROCESSOR={{target.arch}}
 {% endblock %}
 {% endset %}
 
-{% for f in ix.parse_list(cmake_flags) %}
+{% for f in cmake_flags | parse_list %}
 -D{{f}}
 {% endfor %}
 

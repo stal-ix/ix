@@ -10,7 +10,7 @@ mkdir src; cd src
 {% endset %}
 
 {% block build %}
-{% for x in ix.parse_list(sources) %}
+{% for x in sources | parse_list %}
 cat << EOF > {{x}}
 {{ix.load_file(x)}}
 EOF
