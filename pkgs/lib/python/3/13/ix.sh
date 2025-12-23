@@ -1,10 +1,5 @@
 {% extends 't/ix.sh' %}
 
-{% block lib_deps %}
-lib/dlfcn
-{{super()}}
-{% endblock %}
-
 {% block bld_tool %}
 bld/python/13
 bld/pip/scripts

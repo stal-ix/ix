@@ -17,12 +17,10 @@ https://github.com/linux-pam/linux-pam/archive/refs/tags/v{{self.version().strip
 bld/flex
 bld/byacc
 bld/gettext
-bld/wrap/cc/plugins/rdynamic/fake
 {% endblock %}
 
 {% block lib_deps %}
 lib/c
-lib/dlfcn
 {% endblock %}
 
 {% block bld_libs %}
@@ -41,4 +39,5 @@ ln -s ../include security
 
 {% block build_flags %}
 wrap_cc
+wrap_rdynamic
 {% endblock %}

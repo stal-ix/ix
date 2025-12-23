@@ -3,7 +3,9 @@
 {% block std_box %}
   {% if 'wrap_cc' in build_flags %}
     bld/wrap/cc
-    {% if 'wrap_rdynamic' in build_flags %}
+    {% if 'wrap_rdynamic_fake' in build_flags %}
+      bld/wrap/cc/plugins/rdynamic/fake
+    {% elif 'wrap_rdynamic' in build_flags %}
       {% if bin %}
         bld/wrap/cc/plugins/rdynamic
       {% else %}
