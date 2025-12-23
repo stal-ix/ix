@@ -1,7 +1,6 @@
 {% extends '//die/hub.sh' %}
 
 {# broken or too heavy
-#bin/gthumb
 #bin/re2g
 #bin/lldb
 #bin/minibrowser
