@@ -18,7 +18,9 @@ print(f'GIRLINK {sys.argv}', file=sys.stderr)
 
 def flt_args(args):
     for x in args:
-        if x.startswith('-L/'):
+        if x.startswith('-L/PLUGIN:'):
+            yield x
+        elif x.startswith('-L/'):
             pass
         elif x.startswith('-l'):
             pass
@@ -27,5 +29,4 @@ def flt_args(args):
         else:
             yield x
 
-subprocess.check_call(['dynlink'] + list(flt_args(sys.argv[1:])))
-#subprocess.check_call(['dynlink', sys.argv[1], '-Wl,--whole-archive', '-Wl,--no-as-needed', '-Wl,-z,muldefs'] + sys.argv[2:])
+subprocess.check_call(['exelink'] + list(flt_args(sys.argv[1:])))

@@ -123,6 +123,63 @@ def pad(v, n):
     return v
 
 
+def fjoin(v, f):
+    return f.join(v)
+
+
+def preproc_it(d):
+    for x in d.split('\n'):
+        x = x.strip()
+
+        if not x:
+            continue
+
+        if x[0] == '#':
+            continue
+
+        yield x
+
+
+def preproc(d):
+    return list(preproc_it(d))
+
+
+def cononize(v):
+    return cu.replace_all(' '.join(preproc_it(v)), '  ', ' ')
+
+
+def parse_urls_it(urls):
+    cur = {}
+
+    for l in cononize(urls).split(' '):
+        if '://' in l:
+            cur['url'] = l
+        else:
+            cur['md5'] = cu.strip_prefix(l, 'sha:')
+
+        if len(cur) == 2:
+            yield cur
+            cur = {}
+
+
+def parse_urls(urls):
+    return list(parse_urls_it(urls))
+
+
+def parse_list_it(lst):
+    for x in cononize(lst).split(' '):
+        if x:
+            yield x
+
+
+def parse_list(lst):
+    return list(parse_list_it(lst))
+
+
+def list_to_json(lst):
+    return json.dumps(preproc(lst))
+
+
 class Env(jinja2.Environment):
     def __init__(self, fs):
         jinja2.Environment.__init__(self, loader=fs, auto_reload=False, cache_size=-1, trim_blocks=True, lstrip_blocks=True, optimized=True)
@@ -145,6 +202,12 @@ class Env(jinja2.Environment):
         self.filters['field'] = field
         self.filters['pad'] = pad
         self.filters['add'] = add
+        self.filters['preproc'] = preproc
+        self.filters['fix_list'] = cononize
+        self.filters['parse_urls'] = parse_urls
+        self.filters['parse_list'] = parse_list
+        self.filters['list_to_json'] = list_to_json
+        self.filters['fjoin'] = fjoin
         self.kv = {}
 
     def eval(self, v, code, *args):

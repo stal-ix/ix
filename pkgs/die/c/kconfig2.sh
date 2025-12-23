@@ -5,13 +5,13 @@ lib/c
 {% endblock %}
 
 {% block configure %}
-{{ix.fix_list(make_cmd_args)}} defconfig
+{{make_cmd_args | fix_list}} defconfig
 cat - .config << EOF > _
 {% block kconfig_flags %}
 {% endblock %}
 EOF
 mv _ .config
-{{ix.fix_list(make_cmd_args)}} oldconfig
+{{make_cmd_args | fix_list}} oldconfig
 {% endblock %}
 
 {% block make_flags %}

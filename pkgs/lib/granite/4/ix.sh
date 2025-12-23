@@ -32,5 +32,4 @@ lib/gdk/pixbuf/gir
 {% block bld_tool %}
 bin/sassc
 bld/gnome
-bld/gettext
 {% endblock %}

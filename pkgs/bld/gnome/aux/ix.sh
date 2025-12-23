@@ -1,5 +1,6 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
-bin/evince/{{gtk_ver}}
+bld/gnome
+bld/wrap/cc/plugins/rdynamic/fake
 {% endblock %}

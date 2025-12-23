@@ -28,7 +28,7 @@ bld/fake/binutils
 cat << EOF > {{self.implib_name().strip()}}.def
 LIBRARY lib{{self.implib_name().strip()}}.so
 EXPORTS
-{% for x in ix.parse_list(self.implib_symbols()) %}
+{% for x in self.implib_symbols() | parse_list %}
   {{x}}
 {% endfor %}
 EOF

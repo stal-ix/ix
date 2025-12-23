@@ -29,6 +29,7 @@ bld/flex
 bin/scdoc
 bld/bison
 bld/wayland
+bld/wrap/cc/plugins/rdynamic/fake
 {% endblock %}
 
 {% block meson_flags %}

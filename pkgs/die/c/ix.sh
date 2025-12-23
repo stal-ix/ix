@@ -33,12 +33,12 @@
       {% endblock %}
     {% endset %}
 
-    {% for f in ix.parse_list(c_rename_symbol) %}
+    {% for f in c_rename_symbol | parse_list %}
       {{f}}={{uniq_id}}_{{f}}
     {% endfor %}
   {% endset %}
 
-  {% for f in ix.parse_list(cpp_defines) %}
+  {% for f in cpp_defines | parse_list %}
     -D{{f}}
   {% endfor %}
 
@@ -52,28 +52,28 @@
     {% endblock %}
   {% endset %}
 
-  {% for f in ix.parse_list(cpp_includes) %}
+  {% for f in cpp_includes | parse_list %}
     -I{{f}}
   {% endfor %}
 
-  {% for f in ix.parse_list(cpp_missing) %}
+  {% for f in cpp_missing | parse_list %}
     -include{{f}}
   {% endfor %}
 {% endset %}
 
 setup_target_env() {
     echo 'setup target env'
-{% for f in ix.parse_list(cpp_flags) %}
+{% for f in cpp_flags | parse_list %}
     export CPPFLAGS="{{f}} ${CPPFLAGS}"
 {% endfor %}
 {% block setup_target_flags %}
-{% for f in ix.parse_list(self.cxx_flags()) %}
+{% for f in self.cxx_flags() | parse_list %}
     export CXXFLAGS="{{f}} ${CXXFLAGS}"
 {% endfor %}
-{% for f in ix.parse_list(self.c_flags()) %}
+{% for f in self.c_flags() | parse_list %}
     export CFLAGS="{{f}} ${CFLAGS}"
 {% endfor %}
-{% for f in ix.parse_list(self.ld_flags()) %}
+{% for f in self.ld_flags() | parse_list %}
     export LDFLAGS="{{f}} ${LDFLAGS}"
 {% endfor %}
 {% endblock %}

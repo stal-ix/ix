@@ -26,7 +26,7 @@ rmic
 rm -rf ${out}/share/classpath/examples
 cp ${out}/share/classpath/tools.zip ${out}/lib/tools.jar
 cp $(which javac) ${out}/bin/
-{% for x in ix.parse_list(self.bins()) %}
+{% for x in self.bins() | parse_list %}
 cat << EOF > ${out}/bin/{{x}}
 #!/usr/bin/env sh
 exec g{{x}} "\${@}"

@@ -38,6 +38,7 @@ lib/shim/fake(lib_name=GL)
 
 {% block build_flags %}
 wrap_cc
+wrap_rdynamic
 {% endblock %}
 
 {% block meson_flags %}

@@ -4,6 +4,7 @@
 {{super()}}
 bld/wrap/cc
 bld/rename/dynlib
+bld/wrap/cc/plugins/rdynamic/fake
 {% endblock %}
 
 {% block env %}

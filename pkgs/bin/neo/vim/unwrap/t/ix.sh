@@ -53,4 +53,5 @@ chmod +x luajit
 {% block build_flags %}
 shut_up
 wrap_cc
+wrap_rdynamic
 {% endblock %}

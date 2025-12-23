@@ -45,7 +45,7 @@ nashorn
 mkdir src
 cd src
 extract 1 ${src}/openjdk.tar.xz
-{% for x in ix.parse_list(self.parts()) %}
+{% for x in self.parts() | parse_list %}
 mkdir {{x}}
 cd {{x}}
 extract 1 ${src}/{{x}}.tar.xz

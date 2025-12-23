@@ -53,6 +53,7 @@ LOAD_LIBRARY=
 {% block build_flags %}
 wrap_cc
 shut_up
+wrap_rdynamic
 {% endblock %}
 
 {% block cmake_flags %}

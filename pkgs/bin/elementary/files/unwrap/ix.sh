@@ -36,9 +36,7 @@ lib/shim/fake/pkg(pkg_name=gdk-x11-3.0,pkg_ver=100500)
 {% block bld_tool %}
 bld/gir
 bin/vala
-bld/glib
 bld/gnome
-bld/gettext
 {% endblock %}
 
 {% block meson_flags %}

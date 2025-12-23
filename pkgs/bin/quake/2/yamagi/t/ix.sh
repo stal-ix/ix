@@ -1,7 +1,5 @@
 {% extends '//die/c/make.sh' %}
 
-# check bin/quake/2/yamagi
-
 {% block pkg_name %}
 yquake2
 {% endblock %}
@@ -15,20 +13,15 @@ https://github.com/yquake2/yquake2/archive/refs/tags/QUAKE2_{{self.version().str
 7d7feb96cabdcf823273ef5056b20bd36fe5e1c5f20f476ef32b94a1ae37967a
 {% endblock %}
 
-{% block bld_libs %}
-lib/c
-lib/sdl/3
-lib/opengl
-lib/curl/dl
-lib/sdl/deps
-lib/execinfo
-lib/openal/dl
+{% block modules %}
+game
+ref_soft
+ref_gles3
 {% endblock %}
 
 {% block bld_tool %}
-bld/dlfcn
 bin/pkg/conf
-bld/librarian
+bld/wrap/cc/plugins/rdynamic/fake
 {% endblock %}
 
 {% block build_flags %}
@@ -39,7 +32,13 @@ wrap_cc
 WITH_SDL3=yes
 {% endblock %}
 
-{% block install %}
-mkdir ${out}/bin
-cp quake2 ${out}/bin/
+{% block patch %}
+sed -e 's|path = FS_.*|path = "";|' \
+    -e 's|fp == NULL|false|' \
+    -e 's|fclose(fp);||' \
+    -i src/backends/unix/system.c
+sed -e 's|if (!VID_Has.*|if (false)|' -i src/client/vid/vid.c
+base64 -d << EOF > src/client/refresh/gl3/gl3_sdl.c
+{% include 'gl3_sdl.c/base64' %}
+EOF
 {% endblock %}

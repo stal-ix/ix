@@ -2,7 +2,7 @@
 
 {% block bld_libs %}
 {{super()}}
-{% for x in ix.parse_list(self.modules()) %}
+{% for x in self.modules() | parse_list %}
 lib/dl(dl_for=bin/kuroko/modules,dl_lib={{x}})
 {% endfor %}
 {% endblock %}

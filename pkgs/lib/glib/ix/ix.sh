@@ -30,6 +30,8 @@ find ${out}/ -type f -name '*.pc' | while read i; do
 {% if darwin %}
         -e 's|Libs: .*||' \
 {% endif %}
+        -e 's|.*-export-dynamic.*||' \
+        -e 's|.*-rdynamic.*||' \
         -i ${i}
 done
 {% endblock %}

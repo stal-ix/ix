@@ -78,13 +78,13 @@ b_lundef=false
 {% endblock %}
 {% endset %}
 
-{% for f in ix.parse_list(meson_flags) %}
+{% for f in meson_flags | parse_list %}
 -D{{f}}
 {% endfor %}
 
 {{ninja_build_dir}}
 {% endset %}
-{{ix.fix_list(command_args)}}
+{{command_args | fix_list}}
 {% endif %}
 {% endblock %}
 

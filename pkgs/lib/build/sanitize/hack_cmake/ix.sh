@@ -18,7 +18,7 @@ stub_dlsym
 {% endblock %}
 
 {% block env %}
-{% for x in ix.parse_list(self.undef()) %}
+{% for x in self.undef() | parse_list %}
 export LDFLAGS="-Wl,--defsym={{x}}=0 ${LDFLAGS}"
 {% endfor %}
 {% endblock %}

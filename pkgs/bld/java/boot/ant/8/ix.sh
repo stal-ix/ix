@@ -49,7 +49,7 @@ ant.jar
 {% endblock %}
 
 {% block env %}
-{% for x in ix.parse_list(self.ant_jars()) %}
+{% for x in self.ant_jars() | parse_list %}
 export CLASSPATH="${out}/lib/{{x}}:\${CLASSPATH}"
 {% endfor %}
 {% endblock %}

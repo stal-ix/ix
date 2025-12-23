@@ -86,7 +86,7 @@ dlsym=stub_dlsym
 {% block env %}
 export LDFLAGS="-resource-dir=${out} \${LDFLAGS}"
 export IX_SANITIZER_INTERCEPT="${out}/lib/intercepted_symbols.txt"
-{% for x in ix.parse_list(self.non_intercepted_symbols()) %}
+{% for x in self.non_intercepted_symbols() | parse_list %}
 export LDFLAGS="-Wl,--defsym=__real_{{x}}=0 \${LDFLAGS}"
 {% endfor %}
 {% endblock %}

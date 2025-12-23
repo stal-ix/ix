@@ -23,7 +23,7 @@ flang
 {% block cmake_flags %}
 {{super()}}
 LLVM_ENABLE_TERMINFO=OFF
-LLVM_ENABLE_PROJECTS="{{';'.join(ix.parse_list(self.llvm_projects()))}}"
+LLVM_ENABLE_PROJECTS="{{self.llvm_projects() | parse_list | fjoin(';')}}"
 CLANG_ENABLE_STATIC_ANALYZER=OFF
 CLANG_ENABLE_ARCMT=OFF
 {% endblock %}
@@ -43,7 +43,7 @@ llvm
 {% endblock %}
 
 {% block ninja_install_targets %}
-{% for t in ix.parse_list(self.llvm_all_targets()) %}
+{% for t in self.llvm_all_targets() | parse_list %}
 install-{{t}}
 {% endfor %}
 {% endblock %}

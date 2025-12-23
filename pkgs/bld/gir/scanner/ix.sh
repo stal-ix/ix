@@ -4,8 +4,8 @@
 bld/dlfcn
 bld/python
 bld/wrap/cc/exe
-bld/wrap/cc/dyn
 bld/fake(tool_name=ldd)
 bld/gir/scanner/scripts
+bld/wrap/cc/plugins/rdynamic
 bld/gir/scanner/unwrap(python_ver=10)
 {% endblock %}

@@ -23,11 +23,13 @@ lib/readline
 {% block bld_tool %}
 bld/flex
 bld/bison
+bld/wrap/cc/plugins/rdynamic/fake
 {% endblock %}
 
 {% block cmake_flags %}
 WITH_LIBFMT=system
 DISABLE_SHARED=ON
+WITH_UNIT_TESTS=OFF
 {% endblock %}
 
 {% block build_flags %}

@@ -32,5 +32,4 @@ lib/gdk/pixbuf/gir
 bld/gir
 bin/vala
 bld/gnome
-bld/gettext
 {% endblock %}

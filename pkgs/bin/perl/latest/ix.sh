@@ -27,7 +27,7 @@ Perl_reg_add_data
 {% block build1 %}
 make libperl.a
 llvm-objcopy \
-{% for x in ix.parse_list(self.dup_symbols()) %}
+{% for x in self.dup_symbols() | parse_list %}
     --redefine-sym {{x}}=xxx_{{x}} \
 {% endfor %}
     libperl.a

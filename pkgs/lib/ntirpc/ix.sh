@@ -27,6 +27,7 @@ assert.h
 {% block build_flags %}
 shut_up
 wrap_cc
+wrap_rdynamic
 {% endblock %}
 
 {% block patch %}

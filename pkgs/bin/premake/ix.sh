@@ -9,6 +9,7 @@ lib/linux/util
 
 {% block build_flags %}
 wrap_cc
+wrap_rdynamic
 {% endblock %}
 
 {% block premake_flags %}

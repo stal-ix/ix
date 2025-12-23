@@ -42,7 +42,6 @@ lib/gtk/layer/shell/{{gtk_ver}}/gir
 {% endblock %}
 
 {% block bld_tool %}
-bld/glib
 bin/vala
 bin/sassc
 bld/gnome

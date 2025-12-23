@@ -6,7 +6,7 @@
 {% endset %}
 
 {% block premain_code %}
-{% for x in ix.parse_list(constructors) %}
+{% for x in constructors | parse_list %}
 void {{x}}(void);
 {% endfor %}
 
@@ -15,7 +15,7 @@ void {{x}}(void);
 
 __attribute__((constructor))
 static void construct_{{uniq_id}}() {
-{% for x in ix.parse_list(constructors) %}
+{% for x in constructors | parse_list %}
     {{x}}();
 {% endfor %}
 }

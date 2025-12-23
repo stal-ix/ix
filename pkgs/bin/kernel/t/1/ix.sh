@@ -15,6 +15,6 @@ regulatory.db.p7s
 {% endblock %}
 
 {% block kconfig_flags %}
-CONFIG_EXTRA_FIRMWARE="{{ix.fix_list(self.firmware())}}"
+CONFIG_EXTRA_FIRMWARE="{{self.firmware() | fix_list}}"
 CONFIG_EXTRA_FIRMWARE_DIR="${LINUX_FIRMWARE}"
 {% endblock %}

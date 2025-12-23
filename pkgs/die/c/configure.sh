@@ -35,7 +35,7 @@ configure
 {% endif %}
 {% endset %}
 
-{{ix.fix_list(command_args)}}
+{{command_args | fix_list}}
 {% endblock %}
 {% if help %}
 exit 1

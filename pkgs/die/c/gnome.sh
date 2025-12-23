@@ -1,13 +1,8 @@
 {% extends 'meson.sh' %}
 
 {% block std_box %}
-bld/glib
-bld/gnome
-bld/gettext
 {{super()}}
-{% if bin %}
-bld/wrap/cc/plugins/gnome
-{% endif %}
+bld/gnome/{{kind}}
 {% endblock %}
 
 {% block build_flags %}

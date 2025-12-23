@@ -6,6 +6,5 @@ bld/python
 bld/kuroko
 bld/wrap/cc/drv
 bld/wrap/cc/exe
-bld/wrap/cc/dyn
 bld/wrap/cc/lib
 {% endblock %}

@@ -39,22 +39,22 @@ make
 --host-platform=default-{{host.os}}-{{host.gnu_arch}}
 --target-platform=default-{{target.os}}-{{target.gnu_arch}}
 {% endblock %}
-{% for x in ix.parse_list(self.ya_make_flags()) %}
+{% for x in self.ya_make_flags() | parse_list %}
 -D{{x}}
 --host-platform-flag={{x}}
 {% endfor %}
-{% for x in ix.parse_list(self.ya_make_targets()) %}
+{% for x in self.ya_make_targets() | parse_list %}
 {{x | dirname}}
 {% endfor %}
 {% endblock %}
 
 {% block build %}
-{{ix.fix_list(self.ya_make_cmd())}}
+{{self.ya_make_cmd() | fix_list}}
 {% endblock %}
 
 {% block install %}
 mkdir ${out}/bin
-{% for x in ix.parse_list(self.ya_make_targets()) %}
+{% for x in self.ya_make_targets() | parse_list %}
 cp {{x}} ${out}/bin/
 {% endfor %}
 {% endblock %}

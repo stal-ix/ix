@@ -64,7 +64,7 @@ sh ./configure \
 {% if help %}
 --help
 {% else %}
-{{ix.fix_list(self.configure_flags())}}
+{{self.configure_flags() | fix_list}}
 {% endif %}
 {% endblock %}
 

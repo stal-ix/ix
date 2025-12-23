@@ -37,7 +37,7 @@ aux/go/{{self.go_version().strip()}}({{self.go_args().strip().replace('\n', ',')
 {% block install %}
 {% if bin %}
 mkdir ${out}/bin
-{% for x in ix.parse_list(self.go_bins()) %}
+{% for x in self.go_bins() | parse_list %}
 cp {{x}}{{target.exe_suffix}} ${out}/bin/
 {% endfor %}
 {% endif %}

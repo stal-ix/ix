@@ -82,7 +82,7 @@ CMAKE_SYSTEM_PROCESSOR={{target.arch}}
 {% endblock %}
 {% endset %}
 
-{% for f in ix.parse_list(cmake_flags) %}
+{% for f in cmake_flags | parse_list %}
 -D{{f}}
 {% endfor %}
 
@@ -94,7 +94,7 @@ CMAKE_SYSTEM_PROCESSOR={{target.arch}}
 {% endblock %}
 {% endset %}
 
-{{ix.fix_list(command_args)}}
+{{command_args | fix_list}}
 {% if help %}
 cmake -LA {{ninja_build_dir}} | grep -v 'CMAKE_'
 exit 1

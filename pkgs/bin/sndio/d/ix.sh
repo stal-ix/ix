@@ -16,3 +16,8 @@ wrap_cc
 {{super()}}
 rm -rf ${out}/bin/aucat ${out}/bin/midicut
 {% endblock %}
+
+{% block bld_tool %}
+{{super()}}
+bld/wrap/cc/plugins/rdynamic/fake
+{% endblock %}

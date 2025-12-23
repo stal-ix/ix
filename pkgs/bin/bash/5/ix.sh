@@ -15,6 +15,7 @@ lib/c
 
 {% block bld_tool %}
 bld/bison
+bld/wrap/cc/plugins/rdynamic
 {{super()}}
 {% endblock %}
 

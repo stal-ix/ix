@@ -26,3 +26,8 @@ ${PWD}/Modules/_hacl/include
 {{super()}}
 wrap_cc
 {% endblock %}
+
+{% block bld_tool %}
+{{super()}}
+bld/wrap/cc/plugins/rdynamic/fake
+{% endblock %}
