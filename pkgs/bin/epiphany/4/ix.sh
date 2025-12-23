@@ -4,6 +4,7 @@
 lib/adwaita
 lib/shim/xdg
 lib/drivers/3d
+lib/build/muldefs
 {{super()}}
 {% endblock %}
 
