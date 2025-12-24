@@ -561,7 +561,7 @@ bin/turbo
 bin/dhclient
 bin/busybox
 bin/swig/4
-#bin/epiphany
+bin/epiphany
 bin/dosfstools
 bin/openssh
 bin/openssh/client
