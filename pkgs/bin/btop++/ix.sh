@@ -5,12 +5,12 @@ btop
 {% endblock %}
 
 {% block version %}
-1.4.5
+1.4.6
 {% endblock %}
 
 {% block fetch %}
 https://github.com/aristocratos/btop/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-0ffe03d3e26a3e9bbfd5375adf34934137757994f297d6b699a46edd43c3fc02
+4beb90172c6acaac08c1b4a5112fb616772e214a7ef992bcbd461453295a58be
 {% endblock %}
 
 {% block bld_libs %}
