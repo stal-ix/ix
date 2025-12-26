@@ -5,7 +5,7 @@ bat
 {% endblock %}
 
 {% block version %}
-0.26.0
+0.26.1
 {% endblock %}
 
 {% block cargo_url %}
@@ -13,7 +13,7 @@ https://github.com/sharkdp/bat/archive/refs/tags/v{{self.version().strip()}}.tar
 {% endblock %}
 
 {% block cargo_sha %}
-e5c01be77390fe629674c2baf70cb6fdc5d83460ccc3a513974348bf68e67e9a
+b0b46e0f9d4c9bc4817c1051ea2cba763b103977349e2c503d91dbabb11a12d9
 {% endblock %}
 
 {% block bld_libs %}
@@ -29,5 +29,5 @@ bat
 {% endblock %}
 
 {% block cargo_tool %}
-bld/cargo/86
+bld/cargo/91
 {% endblock %}
