@@ -5,7 +5,7 @@ i3status-rust
 {% endblock %}
 
 {% block version %}
-0.34.0
+0.35.0
 {% endblock %}
 
 {% block cargo_url %}
@@ -13,7 +13,7 @@ https://github.com/greshake/i3status-rust/archive/refs/tags/v{{self.version().st
 {% endblock %}
 
 {% block cargo_sha %}
-bbefe6b1af93c8ae81afaab594e9c3c1e809993cc6672cf9d895e9e984742e34
+bdb42e225a8abfbe7cdc2b8854e87d7ed0c9f8621d78e578cbba471cb6f075b4
 {% endblock %}
 
 {% block bld_libs %}
@@ -29,5 +29,5 @@ i3status-rs
 {% endblock %}
 
 {% block cargo_tool %}
-bld/rust/87
+bld/rust/91
 {% endblock %}
