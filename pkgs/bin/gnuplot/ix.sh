@@ -5,12 +5,12 @@ gnuplot
 {% endblock %}
 
 {% block version %}
-6.0.3
+6.0.4
 {% endblock %}
 
 {% block fetch %}
 https://downloads.sourceforge.net/project/gnuplot/gnuplot/{{self.version().strip()}}/gnuplot-{{self.version().strip()}}.tar.gz
-2344e78bc78b296f66636a5d9e561b709b61d360185b718583c97a329f7ace5e
+458d94769625e73d5f6232500f49cbadcb2b183380d43d2266a0f9701aeb9c5b
 {% endblock %}
 
 {% block bld_libs %}
