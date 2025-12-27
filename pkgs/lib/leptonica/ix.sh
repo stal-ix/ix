@@ -5,12 +5,12 @@ leptonica
 {% endblock %}
 
 {% block version %}
-1.86.0
+1.87.0
 {% endblock %}
 
 {% block fetch %}
 https://github.com/DanBloomberg/leptonica/archive/refs/tags/{{self.version().strip()}}.tar.gz
-b4447faf61a8786a9b211d58d4103d85d47fd3a5dd418d5a6bc525d41db54ccc
+fa2b40c5caea96d1bb93a97486262aed8731b69ce25a84a6bf5d25323e33f631
 {% endblock %}
 
 {% block lib_deps %}
