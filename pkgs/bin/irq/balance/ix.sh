@@ -5,12 +5,12 @@ irqbalance
 {% endblock %}
 
 {% block version %}
-1.9.4
+1.9.5
 {% endblock %}
 
 {% block fetch %}
 https://github.com/Irqbalance/irqbalance/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-f37bb2e27c2e9ec609131d0ee3f770185d3845f79ee6ef11477ea0ffb600a561
+c5fc3b1880136437d297afe9a7833781e7849939e104d0780888ffcafc37e339
 {% endblock %}
 
 {% block bld_libs %}
