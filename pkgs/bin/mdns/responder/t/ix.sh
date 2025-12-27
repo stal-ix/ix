@@ -5,12 +5,12 @@ mDNSResponder
 {% endblock %}
 
 {% block version %}
-2881.0.25
+2881.40.18
 {% endblock %}
 
 {% block fetch %}
 https://github.com/apple-oss-distributions/mDNSResponder/archive/refs/tags/mDNSResponder-{{self.version().strip()}}.tar.gz
-aa6718b757dcccb9fc6549e0f566cd03eaa7314426f2856e0da08c966d7da41c
+b04b88a579fbc303f32d8c8194d5562b7b825f3f3ff52e883c6300038ff30b34
 {% endblock %}
 
 {% block bld_libs %}
