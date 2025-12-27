@@ -5,12 +5,12 @@ ed
 {% endblock %}
 
 {% block version %}
-1.22.2
+1.22.3
 {% endblock %}
 
 {% block fetch %}
 https://ftp.gnu.org/gnu/ed/ed-{{self.version().strip()}}.tar.lz
-f58d15242056e15af76f13f34c60d890fa2a2d5cb0abef91c115e4d83794ffe3
+47a55ddfc52d4a1ff6f7559fbd00cf948a16b6cf151ec520392761aeae4e97be
 {% endblock %}
 
 {% block bld_libs %}
