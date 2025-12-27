@@ -5,7 +5,7 @@ gopass
 {% endblock %}
 
 {% block version %}
-1.16.0
+1.16.1
 {% endblock %}
 
 {% block go_url %}
@@ -13,7 +13,7 @@ https://github.com/gopasspw/gopass/archive/refs/tags/v{{self.version().strip()}}
 {% endblock %}
 
 {% block go_sha %}
-34c90b262d9db7440cd48dca8b20ef4ffd5ab858a8fb69ef3af59b7474d9d01a
+e78e0e4bc99a81614e3b39c56b7238d7a5e4d0476893e78dcb5fd6950728c3a2
 {% endblock %}
 
 {% block go_bins %}
