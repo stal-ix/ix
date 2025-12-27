@@ -5,14 +5,14 @@ libfm
 {% endblock %}
 
 {% block version %}
-1.4.0
+1.4.1
 {% endblock %}
 
 {# TODO(pg): X, gtk-doc #}
 
 {% block fetch %}
 https://github.com/lxde/libfm/archive/refs/tags/{{self.version().strip()}}.tar.gz
-7d7b616411992389a4b7f35796109d605f30bc2ceab84d4081d1665254ebbf82
+1dff59162eb1ca5d1a6b945de4d0bdf2256a5264f54c9225b8599adce45dcb05
 {% endblock %}
 
 {% block lib_deps %}
