@@ -5,12 +5,12 @@ pax-utils
 {% endblock %}
 
 {% block version %}
-1.3.9
+1.3.10
 {% endblock %}
 
 {% block fetch %}
 https://github.com/gentoo/pax-utils/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-d8db28f8f55d03b1f302b719857e9ffd6574ecade0c3b762ebd1c215e0a68754
+4ee86899b0cb8b702f443908dc4e9e5e19a2bd870d0520cbae4066658c89df14
 {% endblock %}
 
 {% block bld_libs %}
