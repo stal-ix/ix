@@ -18,6 +18,8 @@ lib/shim/iced
 {% block install %}
 cp -R ${tmp}/lib ${out}/
 cp build/linux-x86_64-normal-server-release/jdk/objs/libfdlibm.a ${out}/lib/
+find ${tmp} | grep libjsig
+exit 1
 rm ${out}/lib/libsaproc.a
 {% endblock %}
 

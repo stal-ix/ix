@@ -8,6 +8,8 @@ def construct(cfg, kind=None):
     if not kind:
         if os.path.isfile('/bin/bin_ix/assemble'):
             kind = 'system'
+        elif os.path.isfile('/bin/assemble'):
+            kind = 'system'
 
     if not kind:
         kind = 'local'

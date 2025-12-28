@@ -140,6 +140,7 @@ ALT_CUPS_HEADERS_PATH=${IX_CUPS_CUPS_H_DIR}/include
 {% block build_flags %}
 wrap_cc
 shut_up
+wrap_rdynamic
 {% endblock %}
 
 {% block cpp_defines %}
