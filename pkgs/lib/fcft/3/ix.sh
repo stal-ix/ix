@@ -5,12 +5,12 @@ fcft
 {% endblock %}
 
 {% block version %}
-3.3.2
+3.3.3
 {% endblock %}
 
 {% block fetch %}
 https://codeberg.org/dnkl/fcft/archive/{{self.version().strip()}}.tar.gz
-79e52aaafc0b57fa2b68ed6127de13e98318050399a939691b8ca30d44d48591
+c0d8d485b45b1af829f73101d6588f404a32bf3c7543236b1a4707d44be81b60
 {% endblock %}
 
 {% block lib_deps %}

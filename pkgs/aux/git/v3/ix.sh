@@ -15,6 +15,10 @@ cd src
 {% endblock %}
 
 {% block build %}
+{% if socks5_proxy %}
+git config --global http.proxy 'socks5://{{socks5_proxy}}'
+git config --global https.proxy 'socks5://{{socks5_proxy}}'
+{% endif %}
 git init
 git remote add origin {{repo}}
 git fetch origin --depth 1 {{commit or branch}}

@@ -5,12 +5,12 @@ clapper
 {% endblock %}
 
 {% block version %}
-0.8.0
+0.10.0
 {% endblock %}
 
 {% block fetch %}
 https://github.com/Rafostar/clapper/archive/refs/tags/{{self.version().strip()}}.tar.gz
-f0d6faea1285ff4b3a1c3c758181cd1b501cd066f87afd0d6fde5fc7e83eba60
+344c0f20e540a63c6fb44cdd5de88c168ed145bb66c1307e79b2b08124780118
 {% endblock %}
 
 {% block bld_libs %}

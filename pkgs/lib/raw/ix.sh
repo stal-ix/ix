@@ -5,12 +5,12 @@ LibRaw
 {% endblock %}
 
 {% block version %}
-0.21.4
+0.21.5
 {% endblock %}
 
 {% block fetch %}
 https://github.com/LibRaw/LibRaw/archive/refs/tags/{{self.version().strip()}}.tar.gz
-8baeb5253c746441fadad62e9c5c43ff4e414e41b0c45d6dcabccb542b2dff4b
+4b7f183a68f6e46e579e80ba32ab121687e75bd30a2e5566f34c36a6bcba1679
 {% endblock %}
 
 {% block lib_deps %}

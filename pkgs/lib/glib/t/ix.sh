@@ -5,12 +5,12 @@ glib
 {% endblock %}
 
 {% block version %}
-2.86.2
+2.86.3
 {% endblock %}
 
 {% block fetch %}
 https://download.gnome.org/sources/glib/{{self.version()[:4]}}/glib-{{self.version().strip()}}.tar.xz
-8a724e970855357ea8101e27727202392a0ffd5410a98336aed54ec59113e611
+b3211d8d34b9df5dca05787ef0ad5d7ca75dec998b970e1aab0001d229977c65
 {% endblock %}
 
 {% block lib_deps %}

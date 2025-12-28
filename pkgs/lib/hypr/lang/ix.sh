@@ -5,12 +5,12 @@ hyprlang
 {% endblock %}
 
 {% block version %}
-0.6.6
+0.6.7
 {% endblock %}
 
 {% block fetch %}
 https://github.com/hyprwm/hyprlang/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-9895fbbf0e4c0fd34148476941bd9ed7d0ca5e4dca1c3f7ee9e7e173121755f2
+e8d54af895ec04fe99553c68d1255dceddb43723ada4a134acdd46bfe1dbf924
 {% endblock %}
 
 {% block lib_deps %}

@@ -5,7 +5,7 @@ goawk
 {% endblock %}
 
 {% block version %}
-1.30.1
+1.31.0
 {% endblock %}
 
 {% block go_url %}
@@ -13,7 +13,7 @@ https://github.com/benhoyt/goawk/archive/refs/tags/v{{self.version().strip()}}.t
 {% endblock %}
 
 {% block go_sha %}
-533b1f61ab36b25a292d3de12f90d9d9c4e02d8441c8f85fc4c8620391df59d2
+2135ab54abb82f1e60eeaa0fc5d5ebf019fa423cc2fdfe53a46958e40b936571
 {% endblock %}
 
 {% block go_bins %}

@@ -31,9 +31,7 @@ lib/execinfo/fake
 {% block bld_tool %}
 bld/m4
 bld/perl
-bld/dlfcn
 bld/pkg/config
-bld/wrap/cc/plugins/rdynamic
 {% endblock %}
 
 {% block c_rename_symbol %}
@@ -57,6 +55,7 @@ USEWX=no
 
 {% block build_flags %}
 wrap_cc
+wrap_rdynamic
 {% endblock %}
 
 {% block patch %}

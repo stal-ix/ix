@@ -2,7 +2,9 @@
 
 {% block std_box %}
 {{super()}}
+{% block gnome_tool %}
 bld/gnome/{{kind}}
+{% endblock %}
 {% endblock %}
 
 {% block build_flags %}

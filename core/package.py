@@ -7,16 +7,6 @@ import core.gen_cmds as cg
 import core.render_ctx as cr
 
 
-def parse_pkg_flags(v):
-    def it():
-        for x in v.split(','):
-            a, b, c = x.partition('=')
-
-            yield a, c
-
-    return dict(it())
-
-
 def parse_pkg_name(v):
     a, b, c = v.partition('(')
 
@@ -25,7 +15,7 @@ def parse_pkg_name(v):
     }
 
     if b:
-        r['flags'] = parse_pkg_flags(c[:-1])
+        r['flags'] = cr.parse_pkg_flags(c[:-1])
 
     return r
 

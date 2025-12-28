@@ -5,12 +5,12 @@ hwdata
 {% endblock %}
 
 {% block version %}
-0.401
+0.402
 {% endblock %}
 
 {% block fetch %}
 https://github.com/vcrhonek/hwdata/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-e9ff93b9807cc014ed8f7f5cb5dc2c31e714058c82ddc59b7355f5c57c9b759e
+e390fe2f5f5ef7ed9ccbe62eb7cd40d4ee2b57389e7869c0dc96433c81812e7a
 {% endblock %}
 
 {% block configure %}

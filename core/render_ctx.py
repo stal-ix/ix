@@ -7,6 +7,16 @@ import core.utils as cu
 import core.error as ce
 
 
+def parse_pkg_flags(v):
+    def it():
+        for x in v.split(','):
+            a, b, c = x.partition('=')
+
+            yield a, c
+
+    return dict(it())
+
+
 @functools.lru_cache
 def ix_which(cmd, path):
     if ret := shutil.which(cmd, path=path):
@@ -46,6 +56,7 @@ class RenderContext:
         bp = pkg.config.ops.boot_path()
 
         args = pkg.config.ops.flags()
+        args = cu.dict_dict_update(args, parse_pkg_flags(os.environ.get('IX_FLAGS', '')))
 
         args = cu.dict_dict_update(args, {
             'ix': self,

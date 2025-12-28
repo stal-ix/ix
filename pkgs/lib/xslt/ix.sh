@@ -5,12 +5,12 @@ libxslt
 {% endblock %}
 
 {% block version %}
-1.1.43
+1.1.45
 {% endblock %}
 
 {% block fetch %}
 https://gitlab.gnome.org/GNOME/libxslt/-/archive/v{{self.version().strip()}}/libxslt-v{{self.version().strip()}}.tar.bz2
-4e574ba219df34495f2ee63ae27bf904afa477c40d9a2969a330cf87f48053b6
+8e00aa4e1749ee7244d08683ce2bb6fec7fd99baa6ef5d5f091274b318e6925e
 {% endblock %}
 
 {% block lib_deps %}

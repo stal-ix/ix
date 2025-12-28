@@ -1,7 +1,6 @@
 {% extends '//die/hub.sh' %}
 
 {# broken or too heavy
-#bin/gthumb
 #bin/re2g
 #bin/lldb
 #bin/minibrowser
@@ -562,7 +561,7 @@ bin/turbo
 bin/dhclient
 bin/busybox
 bin/swig/4
-#bin/epiphany
+bin/epiphany
 bin/dosfstools
 bin/openssh
 bin/openssh/client

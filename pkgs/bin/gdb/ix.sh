@@ -1,5 +1,5 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
-bin/gdb/16
+bin/gdb/17
 {% endblock %}

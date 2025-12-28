@@ -5,12 +5,12 @@ gflags
 {% endblock %}
 
 {% block version %}
-2.2.2
+2.3.0
 {% endblock %}
 
 {% block fetch %}
 https://github.com/gflags/gflags/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-34af2f15cf7367513b352bdcd2493ab14ce43692d2dcd9dfc499492966c64dcf
+f619a51371f41c0ad6837b2a98af9d4643b3371015d873887f7e8d3237320b2f
 {% endblock %}
 
 {% block lib_deps %}

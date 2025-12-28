@@ -5,12 +5,12 @@ openvpn
 {% endblock %}
 
 {% block version %}
-2.6.16
+2.6.17
 {% endblock %}
 
 {% block fetch %}
 https://github.com/OpenVPN/openvpn/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-80256bf2f9f4c912dbc72e8b00180f6c30fb40a1bb2122fb5e686e71af6a06e7
+bfb421053d3f6610d4e1779a49b2e2de49f6ae928ae19b5516b705f256ca8b6d
 {% endblock %}
 
 {% block bld_libs %}

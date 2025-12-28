@@ -5,12 +5,12 @@ glslang
 {% endblock %}
 
 {% block version %}
-16.0.0
+16.1.0
 {% endblock %}
 
 {% block fetch %}
 https://github.com/KhronosGroup/glslang/archive/refs/tags/{{self.version().strip()}}.tar.gz
-172385478520335147d3b03a1587424af0935398184095f24beab128a254ecc7
+32c605822ed63a0cdc2d24f318c3d912fa14e58573aff1d8eac0cf69f1a6b6d2
 {% endblock %}
 
 {% block bld_tool %}

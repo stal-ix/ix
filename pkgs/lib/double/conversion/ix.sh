@@ -5,12 +5,12 @@ double-conversion
 {% endblock %}
 
 {% block version %}
-3.3.1
+3.4.0
 {% endblock %}
 
 {% block fetch %}
 https://github.com/google/double-conversion/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-fe54901055c71302dcdc5c3ccbe265a6c191978f3761ce1414d0895d6b0ea90e
+42fd4d980ea86426e457b24bdfa835a6f5ad9517ddb01cdb42b99ab9c8dd5dc9
 {% endblock %}
 
 {% block lib_deps %}

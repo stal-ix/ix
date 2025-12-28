@@ -2,7 +2,6 @@
 
 {% block lib_deps %}
 lib/zstd
-lib/dlfcn
 {{super()}}
 {% endblock %}
 

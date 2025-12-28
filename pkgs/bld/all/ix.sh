@@ -6,6 +6,9 @@
 {% if x86_64 %}
 bld/nasm
 {% endif %}
+{% if darwin %}
+bld/cctools
+{% endif %}
 bld/auto/python
 bld/auto/archive
 bld/glib/old
@@ -32,9 +35,6 @@ bld/texinfo
 bld/texinfo/lite
 bld/compiler
 bld/libtool
-{% if not riscv64 %}
-bld/cctools
-{% endif %}
 bld/kuroko
 bld/xz
 bin/dash
