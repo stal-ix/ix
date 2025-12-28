@@ -96,6 +96,7 @@ HAS_GLIBC_GETHOSTBY_R=1
 
 {% block configure_flags %}
 --with-toolchain-type=clang
+--with-jvm-variants=zero
 --disable-headful
 --without-x
 {% endblock %}
@@ -143,11 +144,11 @@ done
 sed -e 's|.*static int sigWakeup.*|#define sigWakeup (__SIGRTMAX - 2)|' \
     -i jdk/src/solaris/native/java/net/linux_close.c
 >jdk/make/gensrc/GensrcX11Wrappers.gmk
-mkdir -p build/linux-x86_64-normal-server-release/jdk/gensrc_no_srczip
-mkdir -p build/linux-x86_64-normal-server-release/jdk/classes/javax/swing
->build/linux-x86_64-normal-server-release/jdk/classes/javax/swing/SwingBeanInfoBase.class
-mkdir -p build/linux-x86_64-normal-server-release/jdk/classes/sun/swing
->build/linux-x86_64-normal-server-release/jdk/classes/sun/swing/BeanInfoUtils.class
+mkdir -p build/linux-x86_64-normal-zero-release/jdk/gensrc_no_srczip
+mkdir -p build/linux-x86_64-normal-zero-release/jdk/classes/javax/swing
+>build/linux-x86_64-normal-zero-release/jdk/classes/javax/swing/SwingBeanInfoBase.class
+mkdir -p build/linux-x86_64-normal-zero-release/jdk/classes/sun/swing
+>build/linux-x86_64-normal-zero-release/jdk/classes/sun/swing/BeanInfoUtils.class
 find jdk/src/solaris/classes/sun/awt/X11 -type f -name '*.java' -delete
 {% endblock %}
 
