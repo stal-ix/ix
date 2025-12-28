@@ -18,9 +18,15 @@ lib/shim/iced
 {% block install %}
 cp -R ${tmp}/lib ${out}/
 cp build/linux-x86_64-normal-server-release/jdk/objs/libfdlibm.a ${out}/lib/
-find ${tmp} | grep libjsig
-exit 1
+llvm-ar qL ${out}/lib/libjsig.a build/linux-x86_64-normal-server-release/hotspot/dist/jre/lib/amd64/libjsig.so
 rm ${out}/lib/libsaproc.a
+find ${out} -type f -name '*.a' | while read l; do
+    llvm-objcopy \
+        --redefine-sym=signal=jdk_signal \
+        --redefine-sym=sigset=jdk_sigset \
+        --redefine-sym=sigaction=jdk_sigaction \
+        ${l}
+done
 {% endblock %}
 
 {% block c_rename_symbol %}

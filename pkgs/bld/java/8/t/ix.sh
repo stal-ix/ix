@@ -71,6 +71,7 @@ export CLASSPATH=
 {% block build_flags %}
 wrap_cc
 shut_up
+wrap_rdynamic
 {% endblock %}
 
 {% block cpp_defines %}
