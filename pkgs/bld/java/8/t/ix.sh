@@ -143,6 +143,8 @@ find jdk -type f -name '*.h' | while read l; do
 done
 sed -e 's|.*static int sigWakeup.*|#define sigWakeup (__SIGRTMAX - 2)|' \
     -i jdk/src/solaris/native/java/net/linux_close.c
+sed -e 's|.*fpu_control.*||' \
+    -i hotspot/src/os/linux/vm/os_linux.cpp
 >jdk/make/gensrc/GensrcX11Wrappers.gmk
 mkdir -p build/linux-x86_64-normal-zero-release/jdk/gensrc_no_srczip
 mkdir -p build/linux-x86_64-normal-zero-release/jdk/classes/javax/swing
