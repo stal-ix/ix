@@ -26,10 +26,6 @@ def norm(cmd):
     for x in o:
         if x.startswith('-l'):
             yield res_path(l, 'lib' + x[2:] + '.a')
-        elif x.startswith('-D'):
-            pass
-        elif x.startswith('-I'):
-            pass
         else:
             yield x
 
