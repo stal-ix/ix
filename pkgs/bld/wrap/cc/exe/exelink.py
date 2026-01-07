@@ -5,10 +5,12 @@ import sys
 import json
 import subprocess
 
-# for bld/ruby
-if 'conftest' not in str(sys.argv):
-    if os.environ.get('IX_VERBOSE'):
-        print(f'EXELINK {sys.argv}', file=sys.stderr)
+verbose = os.environ.get('IX_VERBOSE')
+
+if os.environ.get('IX_STEP', '') == 'configure':
+    pass
+elif verbose:
+    print(f'EXELINK {sys.argv}', file=sys.stderr)
 
 def it_plugins(cmd):
     for x in cmd:
@@ -31,6 +33,9 @@ cmd = flt_args(sys.argv[1:] + ['-L' + os.environ['tmp'] + '/lib'])
 
 for x in ('-rdynamic', '-export-dynamic'):
     if x in str(cmd):
-        raise Exception('please add bld/wrap/cc/plugins/rdynamic into bld_tool')
+        raise Exception('please add wrap_rdynamic into build_flags')
 
-subprocess.check_call(cmd)
+if verbose:
+    subprocess.check_call(cmd)
+else:
+    os.execvp(cmd[0], cmd)
