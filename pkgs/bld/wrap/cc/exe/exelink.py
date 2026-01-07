@@ -23,9 +23,8 @@ def flt_args(cmd):
     }
 
     for p in sorted(frozenset(it_plugins(cmd))):
-        if data := subprocess.check_output([p], input=json.dumps(req).encode()).decode():
-            if res := json.loads(data):
-                req.update(res)
+        if data := subprocess.check_output([p], input=json.dumps(req).encode()):
+           req.update(json.loads(data.decode()))
 
     return req['cmd']
 
