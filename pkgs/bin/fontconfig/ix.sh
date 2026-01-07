@@ -7,6 +7,7 @@ lib/freetype
 {% endblock %}
 
 {% block bld_tool %}
+bld/wrap/cc/plugins/norm
 bld/wrap/cc/plugins/logcmd
 {{super()}}
 {% endblock %}

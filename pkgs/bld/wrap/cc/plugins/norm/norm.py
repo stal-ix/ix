@@ -31,7 +31,7 @@ def norm(cmd):
         elif x.startswith('-I'):
             pass
         else:
-            yield
+            yield x
 
 print(json.dumps({
     'cmd': list(norm(json.loads(sys.stdin.read())['cmd'])),
