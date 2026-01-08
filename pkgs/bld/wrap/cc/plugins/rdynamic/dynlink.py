@@ -24,12 +24,21 @@ if os.environ.get('IX_VERBOSE'):
 uuid = hashlib.md5(json.dumps(args).encode()).hexdigest()
 temp = os.environ['tmp'] + f'/dynlink_{uuid}.o'
 
+def is_local(x):
+    return os.environ['tmp'] in os.path.abspath(x)
+
+def is_linkable(x):
+    if x.endswith('.o'):
+        return True
+
+    if x.endswith('.a'):
+        return True
+
 def it_obj():
     for x in args:
-        if x.endswith('.o'):
-            yield x
-        elif x.endswith('.a'):
-            yield x
+        if is_linkable(x):
+            if is_local(x):
+                yield x
 
 def sym_list():
     if lst := list(it_obj()):
