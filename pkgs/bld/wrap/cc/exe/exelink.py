@@ -56,6 +56,9 @@ def flt_args(cmd):
         if data := subprocess.check_output([p], input=json.dumps(req).encode()):
             req.update(json.loads(data.decode()))
 
+            if verbose:
+                print(f'after {p}:\n' + json.dumps(req, indent=4), file=sys.stderr)
+
     return req['cmd']
 
 cmd = flt_args(sys.argv[1:] + ['-L' + os.environ['tmp'] + '/lib'])

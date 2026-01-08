@@ -127,6 +127,8 @@ def main():
         return exec(args)
     elif '-dumpversion' in args:
         return exec(args)
+    elif '-dumpmachine' in args:
+        return exec(args)
     elif '-Wl,--version' in args:
         return exec(args)
     elif '-fsyntax-only' in args:

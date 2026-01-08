@@ -18,9 +18,6 @@ def flt_args(args):
 
 args = list(flt_args(json.loads(sys.stdin.read())['cmd']))
 
-if os.environ.get('IX_VERBOSE'):
-    print(f'DYNLINK {args}', file=sys.stderr)
-
 uuid = hashlib.md5(json.dumps(args).encode()).hexdigest()
 temp = os.environ['tmp'] + f'/dynlink_{uuid}.o'
 
