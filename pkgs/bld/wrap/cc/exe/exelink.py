@@ -10,7 +10,7 @@ verbose = os.environ.get('IX_VERBOSE')
 if os.environ.get('IX_STEP', '') == 'configure':
     pass
 elif verbose:
-    print(f'EXELINK {sys.argv}', file=sys.stderr)
+    print(f'LINK {sys.argv}', file=sys.stderr)
 
 def is_link_lib(raw_args):
     if 'chrome' in raw_args:
@@ -68,7 +68,7 @@ for x in ('-rdynamic', '-export-dynamic'):
         raise Exception('please add wrap_rdynamic into build_flags')
 
 if verbose:
-    print(f'EXELINK_CMD {cmd}', file=sys.stderr)
+    print(f'EXELINK {cmd}', file=sys.stderr)
     subprocess.check_call(cmd)
 else:
     os.execvp(cmd[0], cmd)
