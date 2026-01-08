@@ -3,6 +3,10 @@
 import os
 import sys
 import json
+import hashlib
+import subprocess
+
+verbose = os.environ.get('IX_VERBOSE')
 
 def res_path(where, f):
     for x in where:
@@ -13,8 +17,33 @@ def res_path(where, f):
 
     raise Exception(f'no {f} in {where}')
 
-def compile_src(s):
-    return os.path.abspath(s)
+def is_src(x):
+    if x.endswith('.c'):
+        return True
+    elif x.endswith('.cpp'):
+        return True
+    elif x.endswith('.S'):
+        return True
+
+def flt_srcs(cmd):
+    for x in cmd:
+        if is_src(x):
+            pass
+        else:
+            yield x
+
+def compile_src(s, cmd):
+    cmd = list(flt_srcs(cmd))
+    uid = hashlib.md5(json.dumps(cmd + [os.path.abspath(s)]).encode()).hexdigest()
+    tmp = os.environ['tmp'] + f'/norm_{uid}.o'
+    cmd = cmd + ['-c', s, '-o', tmp]
+
+    if verbose:
+        print(f'COMPILE {cmd}', file=sys.stderr)
+
+    subprocess.check_output(cmd)
+
+    return tmp
 
 def norm(cmd):
     l = []
@@ -33,12 +62,8 @@ def norm(cmd):
             yield os.path.abspath(x)
         elif x.endswith('.a'):
             yield os.path.abspath(x)
-        elif x.endswith('.c'):
-            yield compile_src(x)
-        elif x.endswith('.cpp'):
-            yield compile_src(x)
-        elif x.endswith('.S'):
-            yield compile_src(x)
+        elif is_src(x):
+            yield compile_src(x, o)
         else:
             yield x
 
