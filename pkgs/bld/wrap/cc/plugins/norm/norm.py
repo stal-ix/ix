@@ -64,6 +64,12 @@ def norm(cmd):
             yield os.path.abspath(x)
         elif is_src(x):
             yield compile_src(x, o)
+        elif x.startswith('-D'):
+            pass
+        elif x.startswith('-I'):
+            pass
+        elif x.startswith('-isystem'):
+            pass
         else:
             yield x
 
