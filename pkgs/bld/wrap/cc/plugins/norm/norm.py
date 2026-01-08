@@ -13,6 +13,9 @@ def res_path(where, f):
 
     raise Exception(f'no {f} in {where}')
 
+def compile_src(s):
+    return s
+
 def norm(cmd):
     l = []
     o = []
@@ -26,6 +29,16 @@ def norm(cmd):
     for x in o:
         if x.startswith('-l'):
             yield res_path(l, 'lib' + x[2:] + '.a')
+        elif x.endswith('.o'):
+            yield os.path.abspath(x)
+        elif x.endswith('.a'):
+            yield os.path.abspath(x)
+        elif x.endswith('.c'):
+            yield compile_src(x)
+        elif x.endswith('.cpp'):
+            yield compile_src(x)
+        elif x.endswith('.S'):
+            yield compile_src(x)
         else:
             yield x
 

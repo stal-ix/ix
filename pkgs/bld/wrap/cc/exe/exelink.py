@@ -35,6 +35,7 @@ for x in ('-rdynamic', '-export-dynamic'):
         raise Exception('please add wrap_rdynamic into build_flags')
 
 if verbose:
+    print(f'EXELINK_CMD {cmd}', file=sys.stderr)
     subprocess.check_call(cmd)
 else:
     os.execvp(cmd[0], cmd)
