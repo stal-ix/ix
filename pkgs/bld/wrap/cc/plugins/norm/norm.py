@@ -14,7 +14,7 @@ def res_path(where, f):
     raise Exception(f'no {f} in {where}')
 
 def compile_src(s):
-    return s
+    return os.path.abspath(s)
 
 def norm(cmd):
     l = []

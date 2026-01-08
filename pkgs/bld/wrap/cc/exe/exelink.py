@@ -12,6 +12,36 @@ if os.environ.get('IX_STEP', '') == 'configure':
 elif verbose:
     print(f'EXELINK {sys.argv}', file=sys.stderr)
 
+def is_link_lib(raw_args):
+    if 'chrome' in raw_args:
+        return False
+
+    if '-shared' in raw_args:
+        return True
+
+    if '--shared' in raw_args:
+        return True
+
+    if '-bundle' in raw_args:
+        return True
+
+    if '--soname' in str(raw_args):
+        return True
+
+    if '-Wl,-soname' in str(raw_args):
+        return True
+
+    if '-o' in raw_args:
+        out = raw_args[raw_args.index('-o') + 1]
+
+        if out.endswith('.so'):
+            return True
+
+        if out.endswith('.dylib'):
+            return True
+
+    return False
+
 def it_plugins(cmd):
     for x in cmd:
         if x.startswith('-L/PLUGIN:'):
@@ -29,6 +59,9 @@ def flt_args(cmd):
     return req['cmd']
 
 cmd = flt_args(sys.argv[1:] + ['-L' + os.environ['tmp'] + '/lib'])
+
+if is_link_lib(cmd):
+    os.execvp('liblink', ['liblink'] + cmd)
 
 for x in ('-rdynamic', '-export-dynamic'):
     if x in str(cmd):
