@@ -72,6 +72,5 @@ for x in ('-rdynamic', '-export-dynamic'):
 
 if verbose:
     print(f'EXELINK {cmd}', file=sys.stderr)
-    subprocess.check_call(cmd)
-else:
-    os.execvp(cmd[0], cmd)
+
+os.execvp(cmd[0], cmd)
