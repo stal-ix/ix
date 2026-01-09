@@ -4,6 +4,8 @@ import os
 import sys
 import subprocess
 
+special = os.environ['tmp'] + '/lib/'
+
 if os.environ.get('IX_VERBOSE'):
     print(f'LIBLINK {sys.argv}', file=sys.stderr)
 
@@ -16,6 +18,8 @@ def flt_objs(argv):
         elif x.startswith('-Wl,'):
             pass
         elif '/store/' in x:
+            pass
+        elif special in x:
             pass
         elif x.endswith('.a'):
             yield x

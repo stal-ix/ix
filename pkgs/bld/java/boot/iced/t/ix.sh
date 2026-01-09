@@ -49,6 +49,7 @@ bld/java/boot/iced/readelf
 {% endblock %}
 
 {% block configure_flags %}
+--enable-zero
 --disable-docs
 --without-rhino
 --enable-bootstrap
