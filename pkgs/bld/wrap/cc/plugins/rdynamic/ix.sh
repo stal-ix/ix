@@ -2,12 +2,12 @@
 
 {% block install %}
 mkdir ${out}/bin
-base64 -d << EOF > ${out}/bin/plg_rdynamic
+base64 -d << EOF > ${out}/bin/plg_10_rdynamic
 {% include 'dynlink.py/base64' %}
 EOF
 chmod +x ${out}/bin/*
 {% endblock %}
 
 {% block env %}
-export LDFLAGS="-L/PLUGIN:${out}/bin/plg_rdynamic \${LDFLAGS}"
+export LDFLAGS="-L/PLUGIN:${out}/bin/plg_10_rdynamic \${LDFLAGS}"
 {% endblock %}

@@ -2,12 +2,12 @@
 
 {% block install %}
 mkdir ${out}/bin
-base64 -d << EOF >> ${out}/bin/plg_norm
+base64 -d << EOF >> ${out}/bin/plg_00_norm
 {% include 'norm.py/base64' %}
 EOF
 chmod +x ${out}/bin/*
 {% endblock %}
 
 {% block env %}
-export LDFLAGS="-L/PLUGIN:${out}/bin/plg_norm \${LDFLAGS}"
+export LDFLAGS="-L/PLUGIN:${out}/bin/plg_00_norm \${LDFLAGS}"
 {% endblock %}
