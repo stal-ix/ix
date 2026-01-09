@@ -52,7 +52,7 @@ def flt_args(cmd):
         'cmd': cmd,
     }
 
-    for p in sorted(frozenset(it_plugins(cmd))):
+    for p in sorted(frozenset(it_plugins(cmd)), key=os.path.basename):
         if data := subprocess.check_output([p], input=json.dumps(req).encode()):
             req.update(json.loads(data.decode()))
 

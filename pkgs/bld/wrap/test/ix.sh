@@ -10,6 +10,7 @@ wrap_cc
 {% block bld_tool %}
 {{super()}}
 bld/wrap/cc/plugins/norm
+bld/wrap/cc/plugins/compile
 {% endblock %}
 
 {% block build %}
