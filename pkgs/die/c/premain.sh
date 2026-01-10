@@ -21,7 +21,9 @@ EOF
 
 {% block premain_code_gen %}
 {% endblock %}
-) | cc -c -o reg.o -x {% block premain_lang %}c{% endblock %} -
+) > reg.c
+cat reg.c
+cc -c -o reg.o -x {% block premain_lang %}c{% endblock %} reg.c
 {% endblock %}
 
 {% block install %}

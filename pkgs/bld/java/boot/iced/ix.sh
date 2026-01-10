@@ -27,7 +27,7 @@ sigaction=jdk_sigaction
 {% block install %}
 set -x
 cp -R openjdk.build-boot/j2sdk-image/* ${out}/
-cp -R openjdk.build-boot/hotspot/outputdir/linux_amd64_compiler2/product/gamma ${out}/bin/hotspot
+cp -R openjdk.build-boot/hotspot/outputdir/linux_amd64_zero/product/gamma ${out}/bin/hotspot
 >${out}/bin/libjvm.so
 base64 -d << EOF > ${out}/bin/java
 {% include 'java.py/base64' %}

@@ -79,6 +79,8 @@ cd ..
 {% endblock %}
 
 {% block patch %}
+sed -e 's|.*fpu_control.*||' \
+    -i openjdk.src/hotspot/src/os/linux/vm/os_linux.cpp
 (cd openjdk.src/hotspot/src/share/vm/runtime; base64 -d | patch -p1) << EOF
 {% include 'so.patch/base64' %}
 EOF

@@ -25,7 +25,6 @@ bld/wrap/cc/plugins/compile
 
 {% block install %}
 cp -R ${tmp}/lib ${out}/
-cp openjdk.build-boot/tmp/java/fdlibm/obj64/libfdlibm.amd64.a ${out}/lib/
 find ${out} -type f -name '*.a' | while read l; do
     llvm-objcopy \
         --redefine-sym=signal=jdk_signal \
@@ -38,4 +37,13 @@ done
 {% block c_rename_symbol %}
 scalbn
 copysign
+atanh
+finite
+frexp
+ilogb
+ldexp
+logb
+modf
+nextafter
+rint
 {% endblock %}
