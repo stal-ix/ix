@@ -8,7 +8,3 @@ DxcCreateInstance2
 {% block export_lib %}
 dxcompiler
 {% endblock %}
-
-{% block env %}
-export PLUGIN=${out}/lib/reg.o
-{% endblock %}
