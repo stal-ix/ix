@@ -13,6 +13,9 @@ def it_bins():
             yield x
 
 def need_plugins():
+    if os.environ.get('IX_STEP', '') == 'configure':
+        return False
+
     if '-o' in args:
         o = args[args.index('-o') + 1]
     else:
