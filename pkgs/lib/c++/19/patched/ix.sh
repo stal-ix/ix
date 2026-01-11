@@ -9,6 +9,9 @@ https://github.com/llvm/llvm-project/commit/e9f851de24baefd5710c3cac6ef3cafaea0e
 {% block patch %}
 {{super()}}
 patch -p1 < ${src}/e9f851de24baefd5710c3cac6ef3cafaea0eeb9d.diff
+find libcxx libunwind libcxxabi -type f | grep -v cmake | while read l; do
+    sed -e 's|.*#.*pragma.*lib.*||' -i ${l}
+done
 {% endblock %}
 
 {% block install %}

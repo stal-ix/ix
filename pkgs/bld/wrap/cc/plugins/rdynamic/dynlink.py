@@ -7,6 +7,8 @@ import shutil
 import hashlib
 import subprocess
 
+verbose = os.environ.get('IX_VERBOSE')
+
 def flt_args(args):
     for x in args:
         if '-rdynamic' in x:
@@ -18,18 +20,29 @@ def flt_args(args):
 
 args = list(flt_args(json.loads(sys.stdin.read())['cmd']))
 
-if os.environ.get('IX_VERBOSE'):
-    print(f'DYNLINK {args}', file=sys.stderr)
+if '-shared' in args:
+    sys.exit(0)
 
 uuid = hashlib.md5(json.dumps(args).encode()).hexdigest()
 temp = os.environ['tmp'] + f'/dynlink_{uuid}.o'
 
+def is_local(x):
+    return os.environ['tmp'] in os.path.abspath(x)
+
+def is_linkable(x):
+    if x.endswith('.o'):
+        return True
+
+    if x.endswith('.a'):
+        return True
+
 def it_obj():
     for x in args:
-        if x.endswith('.o'):
-            yield x
-        elif x.endswith('.a'):
-            yield x
+        if is_linkable(x):
+            if is_local(x):
+                yield x
+            elif verbose:
+                print(f'SKIP NON LOCAL {x}', file=sys.stderr)
 
 def sym_list():
     if lst := list(it_obj()):

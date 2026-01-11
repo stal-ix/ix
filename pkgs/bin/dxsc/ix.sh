@@ -34,10 +34,19 @@ bin/dxsc/dll
 lib/execinfo
 {% endblock %}
 
+{% block bins %}
+dxa-3.7
+dxc-3.7
+dxl-3.7
+dxr-3.7
+dxv-3.7
+dxopt-3.7
+{% endblock %}
+
 {% block bld_tool %}
 bld/python
-bin/dxsc/exe
 bld/fake/error(tool_name=git)
+bld/wrap/cc/plugins/unreg(bins={{self.bins() | parse_list | fjoin(';')}})
 {% endblock %}
 
 {% block cmake_extra_flags %}
@@ -62,6 +71,7 @@ LLVM_INCLUDE_TESTS=OFF
 
 {% block build_flags %}
 wrap_cc
+wrap_rdynamic
 {% endblock %}
 
 {% block patch %}

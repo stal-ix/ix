@@ -14,13 +14,17 @@ lib/freetype
 lib/shim/x11
 lib/shim/iced
 lib/shim/fake/cups
+lib/shim/fake(lib_name=mawt)
+{% endblock %}
+
+{% block bld_tool %}
+{{super()}}
+bld/wrap/cc/plugins/norm
+bld/wrap/cc/plugins/compile
 {% endblock %}
 
 {% block install %}
 cp -R ${tmp}/lib ${out}/
-cp openjdk.build-boot/tmp/java/fdlibm/obj64/libfdlibm.amd64.a ${out}/lib/
-rm ${out}/lib/libsaproc.a
-llvm-ar qL ${out}/lib/libjsig.a openjdk.build-boot/lib/amd64/libjsig.so
 find ${out} -type f -name '*.a' | while read l; do
     llvm-objcopy \
         --redefine-sym=signal=jdk_signal \
@@ -33,4 +37,13 @@ done
 {% block c_rename_symbol %}
 scalbn
 copysign
+atanh
+finite
+frexp
+ilogb
+ldexp
+logb
+modf
+nextafter
+rint
 {% endblock %}

@@ -4,6 +4,7 @@
 {{super()}}
 
 step_unpack() {
+export IX_STEP=unpack
 {% block step_unpack %}
 {% block unpack %}
 echo 'no unpack'
@@ -12,6 +13,7 @@ echo 'no unpack'
 }
 
 step_patch() (
+export IX_STEP=patch
 {% block step_patch %}
 {% block patch %}
 echo 'no patch'
@@ -20,18 +22,21 @@ echo 'no patch'
 )
 
 step_setup() {
+export IX_STEP=setup
 {% block step_setup %}
 echo 'no setup'
 {% endblock %}
 }
 
 step_configure() (
+export IX_STEP=configure
 {% block configure %}
 echo 'no configure'
 {% endblock %}
 )
 
 step_build() (
+export IX_STEP=build
 {% block step_build %}
 {% block build %}
 echo 'no build'
@@ -40,12 +45,14 @@ echo 'no build'
 )
 
 step_test() (
+export IX_STEP=test
 {% block test %}
 echo 'no tests'
 {% endblock %}
 )
 
 step_install() (
+export IX_STEP=install
 {% block step_install %}
 echo 'no install'
 {% endblock %}

@@ -7,6 +7,10 @@ import hashlib
 import subprocess
 
 args = json.loads(sys.stdin.read())['cmd']
+
+if '-shared' in args:
+    sys.exit(0)
+
 uuid = hashlib.md5(json.dumps(args).encode()).hexdigest()
 temp = os.environ['tmp'] + f'/gnome_{uuid}.o'
 

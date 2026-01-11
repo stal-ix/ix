@@ -17,9 +17,9 @@ lib/shim/iced
 
 {% block install %}
 cp -R ${tmp}/lib ${out}/
-cp build/linux-x86_64-normal-server-release/jdk/objs/libfdlibm.a ${out}/lib/
-llvm-ar qL ${out}/lib/libjsig.a build/linux-x86_64-normal-server-release/hotspot/dist/jre/lib/amd64/libjsig.so
-rm ${out}/lib/libsaproc.a
+cp build/linux-x86_64-normal-zero-release/jdk/objs/libfdlibm.a ${out}/lib/
+llvm-ar qL ${out}/lib/libjsig.a build/linux-x86_64-normal-zero-release/hotspot/dist/jre/lib/amd64/libjsig.so
+rm -rf ${out}/lib/libsaproc.a
 find ${out} -type f -name '*.a' | while read l; do
     llvm-objcopy \
         --redefine-sym=signal=jdk_signal \

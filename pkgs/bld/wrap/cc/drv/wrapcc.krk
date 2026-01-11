@@ -101,53 +101,6 @@ def calc_args(argv):
 
     return args
 
-def flt_srcs(argv):
-    for x in argv:
-        if x.endswith('.c'):
-            yield x
-        elif x.endswith('.cpp'):
-            yield x
-        elif x.endswith('.S'):
-            yield x
-
-def have_objs(args):
-    for x in args:
-        if x.endswith('.o'):
-            return True
-
-        if x.endswith('.os'):
-            return True
-
-def is_link_lib(sa, raw_args):
-    if 'chrome' in raw_args:
-        return False
-
-    if '-shared' in raw_args:
-        return True
-
-    if '--shared' in raw_args:
-        return True
-
-    if '-bundle' in raw_args:
-        return True
-
-    if '--soname' in sa:
-        return True
-
-    if '-Wl,-soname' in sa:
-        return True
-
-    if '-o' in raw_args:
-        let out = raw_args[raw_args.index('-o') + 1]
-
-        if out.endswith('.so'):
-            return True
-
-        if out.endswith('.dylib'):
-            return True
-
-    return False
-
 def exec(args):
     os.execvp(args[0], args)
 
@@ -166,7 +119,6 @@ def main():
     if '-print-multi-os-directory' in raw_args:
         return
 
-    let sa = str(raw_args)
     let args = calc_args(raw_args)
 
     if '-c' in args:
@@ -174,6 +126,8 @@ def main():
     elif '--version' in args:
         return exec(args)
     elif '-dumpversion' in args:
+        return exec(args)
+    elif '-dumpmachine' in args:
         return exec(args)
     elif '-Wl,--version' in args:
         return exec(args)
@@ -183,13 +137,6 @@ def main():
         return exec(args)
     elif 'ld.lld' in args:
         return exec(args)
-    elif is_link_lib(sa, raw_args):
-        let srcs = list(flt_srcs(args))
-
-        if len(srcs) == 1:
-            return exec(args + ['-c'])
-
-        return exec(['liblink'] + args)
 
     return exec(['exelink'] + args)
 
