@@ -19,6 +19,10 @@ def flt_args(args):
             yield x
 
 args = list(flt_args(json.loads(sys.stdin.read())['cmd']))
+
+if '-shared' in args:
+    sys.exit(0)
+
 uuid = hashlib.md5(json.dumps(args).encode()).hexdigest()
 temp = os.environ['tmp'] + f'/dynlink_{uuid}.o'
 
