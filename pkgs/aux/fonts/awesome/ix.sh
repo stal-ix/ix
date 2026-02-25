@@ -5,12 +5,12 @@ Font-Awesome
 {% endblock %}
 
 {% block version %}
-7.1.0
+7.2.0
 {% endblock %}
 
 {% block fetch %}
 https://github.com/FortAwesome/Font-Awesome/archive/refs/tags/{{self.version().strip()}}.tar.gz
-5b54f06149974ca7d160e76129e3473c64349c3653c95a1490817c6603f12295
+8f433b74d3d4bbba2a6374a0a0ddf53be8e127809341e4c2578719229b43903a
 {% endblock %}
 
 {% block unpack %}

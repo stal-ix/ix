@@ -5,7 +5,7 @@ iptables
 {% endblock %}
 
 {% block version %}
-1.8.11
+1.8.12
 {% endblock %}
 
 {% block git_repo %}
@@ -17,7 +17,7 @@ v{{self.version().strip()}}
 {% endblock %}
 
 {% block git_sha %}
-b99b603ff20cd976ba9181034ffbd130e702b3e4601e71caf7b89346efefbe3d
+9eb2a01f898f52b35bc68a2145ffdd648f6195012e7619ddd159dd350d8a807b
 {% endblock %}
 
 {% block bld_libs %}

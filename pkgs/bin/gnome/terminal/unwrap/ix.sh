@@ -5,12 +5,12 @@ gnome-terminal
 {% endblock %}
 
 {% block version %}
-3.58.0
+3.58.1
 {% endblock %}
 
 {% block fetch %}
 https://github.com/GNOME/gnome-terminal/archive/refs/tags/{{self.version().strip()}}.tar.gz
-098ebd149b17e77218fd66f69d1c613dc644d27b6b7239b18ac72ac85db7b742
+6165f671fb26d8b724f22a185d90212787512e375108b02a27df5069efb846c9
 {% endblock %}
 
 {% block bld_libs %}

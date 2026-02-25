@@ -5,12 +5,12 @@ jpeg
 {% endblock %}
 
 {% block version %}
-9f
+10
 {% endblock %}
 
 {% block fetch %}
 http://www.ijg.org/files/jpegsrc.v{{self.version().strip()}}.tar.gz
-04705c110cb2469caa79fb71fba3d7bf834914706e9641a4589485c1f832565b
+8b9eaa13242690ebd03e1728ab1edf97a81a78ed6e83624d493655f31ac95ab5
 {% endblock %}
 
 {% block lib_deps %}

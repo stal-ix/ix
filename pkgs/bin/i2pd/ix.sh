@@ -5,12 +5,12 @@ i2pd
 {% endblock %}
 
 {% block version %}
-2.58.0
+2.59.0
 {% endblock %}
 
 {% block fetch %}
 https://github.com/PurpleI2P/i2pd/archive/refs/tags/{{self.version().strip()}}.tar.gz
-5ff650c6da8fda3522c10ec22889a7fd1c6b5d1af42c24531d84c36f6cc49019
+0ebeb05e4f36ab3809449561a095dc767ad821ac6a61c95623ab49be4ffd398b
 {% endblock %}
 
 {% block bld_libs %}

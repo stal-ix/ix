@@ -5,12 +5,12 @@ fastfetch
 {% endblock %}
 
 {% block version %}
-2.56.1
+2.59.0
 {% endblock %}
 
 {% block fetch %}
 https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/{{self.version().strip()}}.tar.gz
-6ffd75c32b2a885fd8497867645ac837ed37d588c94e0df05408cdaa0c8fd2c7
+978e2524d0dc1ff9fd8c89fb24ae5b131af18ff108da82c6d99823712557e499
 {% endblock %}
 
 {% block bld_libs %}

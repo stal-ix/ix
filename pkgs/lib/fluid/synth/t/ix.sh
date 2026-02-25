@@ -5,7 +5,7 @@ fluidsynth
 {% endblock %}
 
 {% block version %}
-2.5.2
+2.5.3
 {% endblock %}
 
 {% block git_repo %}
@@ -17,7 +17,7 @@ v{{self.version().strip()}}
 {% endblock %}
 
 {% block git_sha %}
-d675840ea80f812c815f34e1695660880ba6918a1dbc1ecf0ab438cdb0982abe
+cab473179ca6a0f861ff7e5958a562e825ef68f4e086a51dfa6703acdb712d1e
 {% endblock %}
 
 {% block lib_deps %}

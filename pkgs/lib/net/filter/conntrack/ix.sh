@@ -5,7 +5,7 @@ libnetfilter_conntrack
 {% endblock %}
 
 {% block version %}
-1.1.0
+1.1.1
 {% endblock %}
 
 {% block git_repo %}
@@ -17,7 +17,7 @@ libnetfilter_conntrack-{{self.version().strip()}}
 {% endblock %}
 
 {% block git_sha %}
-260dacf58b18f9661fd67b62ae13af09f53244e1968b145fefb76407b7f43dbd
+4556744b45b5b666d2ba3845902d3b729c974f8f977795d8eb7d2f2eca6e839b
 {% endblock %}
 
 {% block lib_deps %}

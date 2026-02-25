@@ -5,12 +5,12 @@ BLAKE3
 {% endblock %}
 
 {% block version %}
-1.8.2
+1.8.3
 {% endblock %}
 
 {% block fetch %}
 https://github.com/BLAKE3-team/BLAKE3/archive/refs/tags/{{self.version().strip()}}.tar.gz
-6b51aefe515969785da02e87befafc7fdc7a065cd3458cf1141f29267749e81f
+5a11e3f834719b6c1cae7aced1e848a37013f6f10f97272e7849aa0da769f295
 {% endblock %}
 
 {% block lib_deps %}

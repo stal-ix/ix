@@ -5,7 +5,7 @@ impala
 {% endblock %}
 
 {% block version %}
-0.6.0
+0.7.4
 {% endblock %}
 
 {% block cargo_url %}
@@ -13,7 +13,7 @@ https://github.com/pythops/impala/archive/refs/tags/v{{self.version().strip()}}.
 {% endblock %}
 
 {% block cargo_sha %}
-7cce81baa4b32ecef59c12051b9708d062241b5a2e01e02f9e3b80d26834b66d
+e245a21979628faf84cf433a71186acd6d536e2279768919e150a42dd402246e
 {% endblock %}
 
 {% block cargo_bins %}

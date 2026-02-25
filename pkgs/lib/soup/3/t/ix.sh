@@ -5,12 +5,12 @@ libsoup
 {% endblock %}
 
 {% block version %}
-3.6.5
+3.6.6
 {% endblock %}
 
 {% block fetch %}
 https://gitlab.gnome.org/GNOME/libsoup/-/archive/{{self.version().strip()}}/libsoup-{{self.version().strip()}}.tar.bz2
-2048b4b554c16c0aa7fa51a9b12eab9162ec535d22d9c3d0eee135ec37e9a3a5
+49a0c07b77f7b1e1a49ca38832750971152968f19c7d1814721ab5117f2e7d10
 {% endblock %}
 
 {% block lib_deps %}

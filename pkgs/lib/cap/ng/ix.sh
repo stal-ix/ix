@@ -5,12 +5,12 @@ libcap-ng
 {% endblock %}
 
 {% block version %}
-0.8.5
+0.9.1
 {% endblock %}
 
 {% block fetch %}
 https://github.com/stevegrubb/libcap-ng/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-e4be07fdd234f10b866433f224d183626003c65634ed0552b02e654a380244c2
+52418b8940f83dcc00dcd01d187e67c3399ff65f3fa558442e3a21b415cc46c0
 {% endblock %}
 
 {% block lib_deps %}

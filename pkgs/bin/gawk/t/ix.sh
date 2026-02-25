@@ -5,12 +5,12 @@ gawk
 {% endblock %}
 
 {% block version %}
-5.3.2
+5.4.0
 {% endblock %}
 
 {% block fetch %}
 https://ftp.gnu.org/gnu/gawk/gawk-{{self.version().strip()}}.tar.xz
-f8c3486509de705192138b00ef2c00bbbdd0e84c30d5c07d23fc73a9dc4cc9cc
+3dd430f0cd3b4428c6c3f6afc021b9cd3c1f8c93f7a688dc268ca428a90b4ac1
 {% endblock %}
 
 {% block bld_libs %}

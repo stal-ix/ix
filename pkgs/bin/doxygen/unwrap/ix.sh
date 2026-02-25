@@ -1,7 +1,7 @@
 {% extends '//die/c/cmake.sh' %}
 
 {% block version %}
-1.15.0
+1.16.1
 {% endblock %}
 
 {% block pkg_name %}
@@ -10,7 +10,7 @@ doxygen
 
 {% block fetch %}
 https://github.com/doxygen/doxygen/archive/refs/tags/Release_{{self.version().strip().replace('.', '_')}}.tar.gz
-b2a79d92a934d4dcda2bb0006e65adbabfcfe83343e024d5f598ff3a62c23dda
+cdf9d614ee8ed6a939ad12ab31a6aaa1b0c089dff2a4ce20aa008893b686d636
 {% endblock %}
 
 {% block bld_libs %}

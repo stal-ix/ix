@@ -5,12 +5,12 @@ alsa-lib
 {% endblock %}
 
 {% block version %}
-1.2.15.1
+1.2.15.3
 {% endblock %}
 
 {% block fetch %}
 https://www.alsa-project.org/files/pub/lib/alsa-lib-{{self.version().strip()}}.tar.bz2
-7f983ca89ca420872ca16e8a9f8f97fb63db6c1c6e2585b91737a08bb03f566c
+7b079d614d582cade7ab8db2364e65271d0877a37df8757ac4ac0c8970be861e
 {% endblock %}
 
 {% block lib_deps %}

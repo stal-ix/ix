@@ -5,12 +5,12 @@ libdwarf
 {% endblock %}
 
 {% block version %}
-2.2.0
+2.3.0
 {% endblock %}
 
 {% block fetch %}
 https://www.prevanders.net/libdwarf-{{self.version().strip()}}.tar.xz
-54c0abbbeb4190bd1babb5d28574d2b20c2309343ec764cc7ca611e527ee4a42
+a153e8101828a478f88d18341267b59c19a3fc794bea47388347ce994ba90c17
 {% endblock %}
 
 {% block lib_deps %}

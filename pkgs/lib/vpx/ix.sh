@@ -5,12 +5,12 @@ libvpx
 {% endblock %}
 
 {% block version %}
-1.15.2
+1.16.0
 {% endblock %}
 
 {% block fetch %}
 https://github.com/webmproject/libvpx/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-26fcd3db88045dee380e581862a6ef106f49b74b6396ee95c2993a260b4636aa
+7a479a3c66b9f5d5542a4c6a1b7d3768a983b1e5c14c60a9396edc9b649e015c
 {% endblock %}
 
 {% block lib_deps %}

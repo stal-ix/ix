@@ -5,12 +5,12 @@ b2
 {% endblock %}
 
 {% block version %}
-5.3.3
+5.4.2
 {% endblock %}
 
 {% block fetch %}
 https://github.com/bfgroup/b2/archive/refs/tags/{{self.version().strip()}}.tar.gz
-400a4671a58531f53e2b2d9526e6bd0b92535391ff8e906f2e6bd201f7b8c327
+ea896b678bc1972233cc7671b78c276a39f2cb9ebfd8a4e22b7fd00c7d95b0be
 {% endblock %}
 
 {% block bld_libs %}

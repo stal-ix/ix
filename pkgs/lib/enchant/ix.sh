@@ -5,12 +5,12 @@ enchant
 {% endblock %}
 
 {% block version %}
-2.8.14
+2.8.15
 {% endblock %}
 
 {% block fetch %}
 https://github.com/rrthomas/enchant/releases/download/v{{self.version().strip()}}/enchant-{{self.version().strip()}}.tar.gz
-d04588769399ff7140fa214b9731e6fc6eda9bb2e75df9f67263717710bb4c4b
+d3fd9e4170bfb5110b0bda577fe764a38fb606b3c25d2f0c3840234521ff1252
 {% endblock %}
 
 {% block conf_ver %}

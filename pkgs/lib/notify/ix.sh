@@ -5,12 +5,12 @@ libnotify
 {% endblock %}
 
 {% block version %}
-0.8.7
+0.8.8
 {% endblock %}
 
 {% block fetch %}
 https://download.gnome.org/sources/libnotify/0.8/libnotify-{{self.version().strip()}}.tar.xz
-4be15202ec4184fce1ac15997ece5530d2be32fe9573875aeb10e3b573858748
+23420ef619dc2cb5aebad613f4823a2fa41c07e5a1d05628d40f6ec4b35bfddd
 {% endblock %}
 
 {% block lib_deps %}

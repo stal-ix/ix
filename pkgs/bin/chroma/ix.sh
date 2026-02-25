@@ -5,7 +5,7 @@ chroma
 {% endblock %}
 
 {% block version %}
-2.21.1
+2.23.1
 {% endblock %}
 
 {% block go_url %}
@@ -13,7 +13,7 @@ https://github.com/alecthomas/chroma/archive/refs/tags/v{{self.version().strip()
 {% endblock %}
 
 {% block go_sha %}
-993266ab0af6bd43153b08931b8be4ca04fd742fbf3546be2d2ed32a37d91d77
+6b46c090b175bdb0baaae6c8d54863e454601ef48911d86cab5fa3ba524b8f72
 {% endblock %}
 
 {% block unpack %}

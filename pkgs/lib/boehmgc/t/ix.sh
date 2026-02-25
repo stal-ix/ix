@@ -5,12 +5,12 @@ bdwgc
 {% endblock %}
 
 {% block version %}
-8.2.10
+8.2.12
 {% endblock %}
 
 {% block fetch %}
 https://github.com/ivmai/bdwgc/archive/refs/tags/v{{self.version().strip()}}.tar.gz
-5858a417ab3eaac2add0daf79cd29ddf248c9f648e6c08092b775dcbfcbe1edb
+d09001f45dabf1c29a5df3e63020a4bab5ad4aad69137bb07100c717e2ecba0b
 {% endblock %}
 
 {% block lib_deps %}

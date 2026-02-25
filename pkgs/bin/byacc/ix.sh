@@ -5,12 +5,12 @@ byacc
 {% endblock %}
 
 {% block version %}
-20241231
+20260126
 {% endblock %}
 
 {% block fetch %}
 https://invisible-mirror.net/archives/byacc/byacc-{{self.version().strip()}}.tgz
-192c2fae048d4e7f514ba451627f9c4e612765099f819c19191f9fde3e609673
+b618c5fb44c2f5f048843db90f7d1b24f78f47b07913c8c7ba8c942d3eb24b00
 {% endblock %}
 
 {% block bld_libs %}

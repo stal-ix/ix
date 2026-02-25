@@ -5,12 +5,12 @@ cmark
 {% endblock %}
 
 {% block version %}
-0.31.1
+0.31.2
 {% endblock %}
 
 {% block fetch %}
 https://github.com/commonmark/cmark/archive/refs/tags/{{self.version().strip()}}.tar.gz
-3da93db5469c30588cfeb283d9d62edfc6ded9eb0edc10a4f5bbfb7d722ea802
+f9bc5ca38bcb0b727f0056100fac4d743e768872e3bacec7746de28f5700d697
 {% endblock %}
 
 {% block lib_deps %}
