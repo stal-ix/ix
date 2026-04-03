@@ -11,3 +11,7 @@ https://github.com/v-byte-cpu/wirez/archive/2628dbf16fd4ed7c3943476d313bd4266db2
 {% block go_bins %}
 wirez
 {% endblock %}
+
+{% block go_tool %}
+bin/go/lang/19
+{% endblock %}
