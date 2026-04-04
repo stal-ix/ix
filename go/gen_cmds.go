@@ -232,9 +232,7 @@ func (p *Package) iterBuildCommands() []map[string]any {
 			srcDir = lnkDirSlice[0]
 		}
 
-		extraDirs := lnkDirSlice
-
-		rec := p.buildMainCmd(srcDir, extraDirs)
+		rec := p.buildMainCmd(srcDir, lnkDirSlice)
 		cmds = append(cmds, fixNode(cfg, rec))
 	} else {
 		rec := p.buildMainCmd("", nil)

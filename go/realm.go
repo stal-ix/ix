@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"strings"
+	"sync"
 )
 
 type RealmPkgs struct {
@@ -79,10 +80,25 @@ func (rc *RealmCtx) flatPkgs() []Selector {
 }
 
 func (rc *RealmCtx) loadPackages(sels []Selector) []*Package {
-	var result []*Package
-	for _, s := range sels {
-		result = append(result, rc.mgr.LoadPackage(s.Flags, s.Name))
+	if len(sels) <= 1 {
+		var result []*Package
+		for _, s := range sels {
+			result = append(result, rc.mgr.LoadPackage(s.Flags, s.Name))
+		}
+		return result
 	}
+
+	result := make([]*Package, len(sels))
+	var wg sync.WaitGroup
+	wg.Add(len(sels))
+	for i, s := range sels {
+		i, s := i, s
+		go func() {
+			defer wg.Done()
+			result[i] = rc.mgr.LoadPackage(s.Flags, s.Name)
+		}()
+	}
+	wg.Wait()
 	return result
 }
 

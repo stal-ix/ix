@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"strings"
+	"sync"
 )
 
 var ONE_LEVEL = map[string]bool{
@@ -156,10 +157,25 @@ func (p *Package) loadPackage(n string, flags map[string]any) *Package {
 }
 
 func (p *Package) loadPackages(names []string, flags map[string]any) []*Package {
-	var result []*Package
-	for _, n := range names {
-		result = append(result, p.loadPackage(n, flags))
+	if len(names) <= 1 {
+		var result []*Package
+		for _, n := range names {
+			result = append(result, p.loadPackage(n, flags))
+		}
+		return result
 	}
+
+	result := make([]*Package, len(names))
+	var wg sync.WaitGroup
+	wg.Add(len(names))
+	for i, n := range names {
+		i, n := i, n
+		go func() {
+			defer wg.Done()
+			result[i] = p.loadPackage(n, flags)
+		}()
+	}
+	wg.Wait()
 	return result
 }
 

@@ -2,19 +2,26 @@ package main
 
 import (
 	"fmt"
+	"sync"
 )
+
+type future struct {
+	done chan struct{}
+	pkg  *Package
+}
 
 type Manager struct {
 	config   *Config
 	renderer *Renderer
-	cache    map[string]*Package
+	mu       sync.Mutex
+	futures  map[string]*future
 }
 
 func NewManager(config *Config, renderer *Renderer) *Manager {
 	return &Manager{
 		config:   config,
 		renderer: renderer,
-		cache:    make(map[string]*Package),
+		futures:  make(map[string]*future),
 	}
 }
 
@@ -50,11 +57,28 @@ func (m *Manager) LoadPackage(flags map[string]any, name string) *Package {
 	sel := m.fixSelector(name, flags)
 	key := sel.cacheKey()
 
-	if p, ok := m.cache[key]; ok {
-		return p
+	m.mu.Lock()
+	if f, ok := m.futures[key]; ok {
+		// Someone else is already computing this — wait for them
+		m.mu.Unlock()
+		<-f.done
+		return f.pkg
 	}
 
-	// Render template
+	// Register ourselves
+	f := &future{done: make(chan struct{})}
+	m.futures[key] = f
+	m.mu.Unlock()
+
+	pkg := m.doLoad(sel)
+
+	f.pkg = pkg
+	close(f.done)
+
+	return pkg
+}
+
+func (m *Manager) doLoad(sel Selector) *Package {
 	resp, err := m.renderer.Render(sel.Name, sel.Flags)
 	if err != nil {
 		panic(fmt.Sprintf("render %s: %v", sel.Name, err))
@@ -79,10 +103,9 @@ func (m *Manager) LoadPackage(flags map[string]any, name string) *Package {
 		pkg.selector.Flags["boot"] = true
 	}
 
-	// Cache early to handle cycles
-	m.cache[key] = pkg
-
-	// Compute UID
+	// Compute UID — triggers recursive dep loading.
+	// Also eagerly compute all closures so that by the time the future
+	// is resolved, no other goroutine will race on lazy caches.
 	if pkg.Buildable() {
 		cmds := pkg.iterBuildCommands()
 		if len(cmds) > 0 {
@@ -91,6 +114,9 @@ func (m *Manager) LoadPackage(flags map[string]any, name string) *Package {
 				pkg.uid = uid
 			}
 		}
+		// Pre-fill closures so concurrent readers don't race
+		pkg.runClosure()
+		pkg.libClosure()
 	} else {
 		var uids []string
 		for _, rp := range pkg.iterAllRuntimeDepends() {
