@@ -1,8 +1,33 @@
+# Package naming conventions
+
+Package path = package name. The directory path under `pkgs/` is the package identifier:
+`pkgs/bin/neo/vim/ix.sh` → package `bin/neo/vim`.
+
+## Rules
+
+- Compound project names are split into path components by word boundaries:
+  `neovim` → `bin/neo/vim`, `autoconf` → `bin/auto/conf`, `ghostscript` → `bin/ghost/script`,
+  `firejail` → `bin/fire/jail`, `netcat` → `bin/net/cat`, `nettools` → `bin/net/tools`.
+- Hyphens and underscores in upstream names become `/`:
+  `terminal-use` → `bin/terminal/use`.
+- Well-known project names that are a single established word stay as-is:
+  `wireshark`, `openssh`, `openssl`, `darktable`, `coreutils`, `fontconfig`, `wirez`.
+- Version numbers become path components:
+  `autoconf 2.72` → `bin/auto/conf/2/72`, `bash 5` → `bin/bash/5`.
+- Variants and sub-packages are nested:
+  `bin/curl/openssl`, `bin/curl/gnutls`, `bin/neo/vim/unwrap`.
+- `unwrap` suffix = full package with runtime deps; base = minimal/library version.
+- `runit` suffix = service/init scripts for runit.
+- `t` suffix = intermediate template package.
+
+---
+
 # Package update procedure
 
 ## General
 
 - Build output goes through the `assemble` subprocess. Use `>/path/to/log 2>&1` to capture it — output can be large.
+- Builds from scratch can be very slow (compiling toolchains like cargo/rust/go from source). Always wait for the build to finish — do not interrupt or timeout.
 - When checking GitHub tags, use `git ls-remote --tags <repo>` to verify exact tag names (e.g. `2` vs `v2`).
 - Refer to `PKGS.md` for full package development documentation (template hierarchy, blocks, etc.).
 
