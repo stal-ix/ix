@@ -20,6 +20,16 @@ Package path = package name. The directory path under `pkgs/` is the package ide
 - `runit` suffix = service/init scripts for runit.
 - `t` suffix = intermediate template package.
 
+## Top-level directories
+
+- `bin/` — executable binaries (built for target)
+- `lib/` — libraries (built for target)
+- `bld/` — build-time host tools (compilers, code generators, build systems). Built for host, not target. Used only during build of other packages.
+- `aux/` — runtime data (fonts, terminfo, vendored source archives)
+- `etc/` — configuration and init scripts
+- `set/` — meta-package sets
+- Everything outside `bld/` must be able to cross-compile for the target platform. `bld/` packages only need to run on the host.
+
 ---
 
 # Package update procedure
@@ -28,6 +38,8 @@ Package path = package name. The directory path under `pkgs/` is the package ide
 
 - Build output goes through the `assemble` subprocess. Use `>/path/to/log 2>&1` to capture it — output can be large.
 - Builds from scratch can be very slow (compiling toolchains like cargo/rust/go from source). Always wait for the build to finish — do not interrupt or timeout.
+- `loadinternal: cannot find runtime/cgo` in build logs is harmless — it's an artifact of how Go is built in ix. Ignore it.
+- If a build fails, re-run with `--setx --verbose` for more detail: `./ix build <package> --setx --verbose >/path/to/log 2>&1`.
 - When checking GitHub tags, use `git ls-remote --tags <repo>` to verify exact tag names (e.g. `2` vs `v2`).
 - Refer to `PKGS.md` for full package development documentation (template hierarchy, blocks, etc.).
 
