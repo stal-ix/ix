@@ -99,12 +99,6 @@ When upstream uses both C++ and Rust via cxx/cxx-build, split into two packages:
 2. **`bin/foo`** — extends `die/c/make.sh`. Patches out cargo invocations from Makefile,
    points include path to prebuilt cxxbridge headers from `lib/foo`.
 
-Key details:
-- Don't run upstream `config.sh` if it checks for `cargo` — generate `config.mk` manually
-  from pkg-config in the `patch` block instead.
-- Use `shut_up` in `build_flags` when upstream sets `-Werror` and clang is stricter than gcc.
-  Alternative: `no_werror` (adds `-Wno-error` instead of `-w`).
-
 ## Three types of sha in packages
 
 ### 1. `fetch` block sha (C/C++ packages)
