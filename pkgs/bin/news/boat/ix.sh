@@ -19,11 +19,11 @@ lib/c++
 lib/stfl
 lib/curl
 lib/xml/2
-lib/json/c
-lib/sqlite/3
-lib/ncurses
-lib/intl/gnu
 lib/iconv
+lib/json/c
+lib/ncurses
+lib/sqlite/3
+lib/intl/gnu
 lib/news/boat
 lib/shim/redir(from=json.h,to=json-c/json.h)
 {% endblock %}
