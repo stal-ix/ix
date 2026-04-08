@@ -1211,7 +1211,9 @@ Use `sed` in `patch` block only for changes that are not about compiler/linker f
 ## 20. Shim Packages
 
 Shim packages under `lib/shim/` solve common build-system integration problems without
-patching source code. Use them in `bld_libs` or `lib_deps`.
+patching source code. **Prefer `bld_libs`** for shims — this keeps the workaround local to
+the current package. Only put shims in `lib_deps` when downstream consumers genuinely need
+the same fix (rare).
 
 ### `lib/shim/fake` — empty stub library
 

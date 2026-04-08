@@ -81,6 +81,9 @@ Reserve `sed` in `patch` block for non-flag changes (removing targets, fixing bu
 | `pkg-config foo` fails | `lib/shim/fake/pkg(pkg_name=foo,pkg_ver=1)` | patching configure |
 | Need `-lfoo` in LDFLAGS | `lib/shim/dll(dll_name=foo)` | manual `export LDFLAGS` |
 
+Shims should go in `bld_libs`, not `lib_deps`, so they don't propagate to downstream packages.
+Only use `lib_deps` for shims when downstream genuinely needs the same workaround.
+
 See PKGS.md §20 for the full shim catalog.
 
 **Rule of thumb:** if you're about to `sed` a Makefile or source file, check if a compiler
