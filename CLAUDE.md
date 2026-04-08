@@ -198,6 +198,15 @@ change a refine block, you must re-derive the sha (set to zeros and rebuild).
 
 See PKGS.md §24 for detailed recipes and examples.
 
+## CI sets — register new packages
+
+Every new package must be added to a CI set so it gets built in CI:
+
+- **C/C++/Go packages** → `set/ci/unwrap/linux/x86_64` (append to `run_deps` block)
+- **Rust packages** → `set/ci/tier/1` (append to `run_deps` block)
+
+Do this after the package builds successfully and is committed.
+
 ## Three types of sha in packages
 
 ### 1. `fetch` block sha (C/C++ packages)
