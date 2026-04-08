@@ -13,7 +13,7 @@ https://github.com/BurntSushi/ripgrep/archive/refs/tags/{{self.version().strip()
 {% endblock %}
 
 {% block cargo_sha %}
-78bf3b2819083df2927b36070fa889e98154beb7fd74829e3130cb2b35ff7fe7
+771395c43ed19a170608489296e63964b9ea8ee5d4b608347da1891ff6bf319a
 {% endblock %}
 
 {% block patch %}
