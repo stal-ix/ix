@@ -31,6 +31,8 @@ This document explains everything needed to write new packages.
 21. [Content Addressing and UIDs](#21-content-addressing-and-uids)
 22. [Complete Examples](#22-complete-examples)
 23. [Common Pitfalls](#23-common-pitfalls)
+24. [Packaging Recipes and Patterns](#24-packaging-recipes-and-patterns)
+25. [Build Tools and Helpers Reference](#25-build-tools-and-helpers-reference)
 
 ---
 
@@ -1802,3 +1804,134 @@ bin/foo/unwrap(lua_ver=puc/5/4)
 ```
 
 Grep `lua_ver=` or `python_ver=` in the repo for examples.
+
+---
+
+## 25. Build Tools and Helpers Reference
+
+This section catalogs `bld/` tools and helpers that package authors explicitly add to
+`bld_tool` or `bld_libs`. Template-internal tools (like `bld/make`, `bld/cmake`, `bld/ninja`,
+`bld/compiler`) that are pulled in automatically by `die/` templates are not listed.
+
+### Core infrastructure
+
+| Tool | ~Packages | Provides | When to use |
+|------|-----------|----------|-------------|
+| `bld/pkg/config` | 76 | `pkg-config` | When the build system calls `pkg-config` to find libraries |
+| `bld/python` | 130 | `python3` | Build scripts, code generators, meson, waf, gyp |
+| `bld/perl` | 76 | `perl` | Build scripts, autotools `config.sub`, OpenSSL `Configure` |
+| `bld/bash` | 45 | `bash` | Build scripts that use bash-isms (`[[`, arrays, etc.) |
+| `bld/m4` | 16 | `m4` macro processor | Autotools internals, sendmail, rarely needed explicitly |
+
+### Parser and lexer generators
+
+| Tool | ~Packages | Provides | When to use |
+|------|-----------|----------|-------------|
+| `bld/bison` | 80 | `bison` (also `yacc`) | Packages with `.y` grammar files |
+| `bld/flex` | 65 | `flex` (also `lex`) | Packages with `.l` lexer files |
+| `bld/byacc` | 12 | `byacc` | When package specifically requires Berkeley yacc, not bison |
+| `bld/gperf` | varies | `gperf` perfect hash generator | Packages generating perfect hash tables (glibc, glib, etc.) |
+
+Note: `bin/flex` (6 packages) is occasionally used instead of `bld/flex` when the package
+needs flex at runtime or links against libfl. Prefer `bld/flex` for build-time-only use.
+
+### Internationalization and documentation
+
+| Tool | ~Packages | Provides | When to use |
+|------|-----------|----------|-------------|
+| `bld/gettext` | 111 | `msgfmt`, `xgettext`, `msgmerge` | Packages with `.po` translation files |
+| `bld/intltool` | 11 | `intltool-merge`, `intltool-update` | GNOME/GTK packages with `.desktop`/`.xml` i18n |
+| `bld/texinfo` | 33 | `makeinfo` | Packages that build `.info` documentation |
+| `bld/gtkdoc` | 9 | `gtkdoc-scan`, `gtkdoc-mkdb` | GTK/GNOME libraries generating API docs |
+| `bin/scdoc` | 25 | `scdoc` man page generator | Wayland/wlroots ecosystem man pages |
+
+### Autotools support
+
+| Tool | ~Packages | Provides | When to use |
+|------|-----------|----------|-------------|
+| `bld/auto/archive` | 13 | Autoconf-archive `AX_*` m4 macros | When `configure.ac` uses `AX_WITH_CURSES`, `AX_PTHREAD`, etc. |
+
+This is needed in `bld_tool` when a package extends `die/c/autorehell.sh` and its
+`configure.ac` references macros from the GNU Autoconf Archive. Without it, `autoreconf`
+generates a broken `configure` script. Example:
+
+```jinja2
+{% block bld_tool %}
+bld/auto/archive
+{% endblock %}
+```
+
+### GUI framework tools
+
+| Tool | ~Packages | Provides | When to use |
+|------|-----------|----------|-------------|
+| `bld/wayland` | 87 | `wayland-scanner` | Packages generating C stubs from `.xml` Wayland protocols |
+| `bld/glib` | 67 | `glib-compile-schemas`, `glib-mkenums`, `glib-genmarshal`, `gdbus-codegen` | GLib/GTK code generation (schemas, enums, D-Bus bindings) |
+| `bld/gir` | 36 | `g-ir-scanner`, `g-ir-compiler` | GObject Introspection typelib generation |
+
+### Assembly
+
+| Tool | ~Packages | Provides | When to use |
+|------|-----------|----------|-------------|
+| `bld/nasm` | 19 | `nasm` assembler | x86/x86_64 assembly (codecs, crypto, bootloaders) |
+
+### Fake and stub tools
+
+These create no-op executables to satisfy build system checks without installing
+heavy dependencies. Place them in `bld_tool`.
+
+| Tool | ~Packages | Provides | When to use |
+|------|-----------|----------|-------------|
+| `bld/fake/er(tool_name=X)` | 15 | A Python script named `X` that creates empty output files | Doc generators (asciidoctor, sphinx-build, rst2man, xsltproc) |
+| `bld/fake(tool_name=X)` | — | An empty shell script named `X` | When the tool is called but its output is never used |
+| `bld/fakegit` | 22 | A no-op `git` | Builds that call `git describe` or `git rev-parse` for version info |
+| `bld/fake/binutils` | 9 | LLVM-backed `readelf`, `objdump`, `objcopy`, `ar`, `as` | When the build expects GNU binutils but LLVM tools suffice |
+
+**`bld/fake/er` vs `bld/fake`:** `bld/fake/er` is smarter — it detects `-o`/`--output`
+arguments and creates empty output files so that downstream `install` targets don't fail
+on missing generated files. Use `bld/fake/er` by default; use `bld/fake` only when the
+simpler stub works.
+
+**`bld/fakegit`:** equivalent to `bld/fake(tool_name=git)`. Many packages call `git describe`
+during build to embed version strings. Use `bld/fakegit` in `bld_tool` and provide the
+version string through a patch (e.g. writing a `VERSION` file or patching `version.h`).
+
+### ELF and library manipulation
+
+These are infrastructure tools used by templates and advanced packages:
+
+| Tool | ~Packages | Provides | When to use |
+|------|-----------|----------|-------------|
+| `bld/librarian` | 15 | `patchns`, `listsym`, `findlib` | Namespace patching and symbol inspection of static libraries |
+| `bld/devendor` | 10 | `devendor`, `devendor_c`, `devendor_h` | Removing vendor prefixes from bundled library headers/symbols |
+| `bld/reloc` | 8 | Binary relocation tool | Adjusting RPATH/RUNPATH in installed ELF binaries |
+| `bld/dlfcn` | 8 | `dl_stubs`, `cut_prefix` | dlfcn.h compatibility stubs (static linking without libdl) |
+| `bld/prepend` | 16 | `prepend` | Prepending content to files (used in postinstall scripts) |
+| `bld/shebangs` | 9 | Shebang fixer | Rewriting `#!/usr/bin/env python3` to absolute paths |
+
+### Python build dependencies (`pip/` packages)
+
+`pip/` packages provide Python modules for build-time use. They go in `bld_libs`, not
+`bld_tool`, because they are importable libraries, not executables.
+
+| Package | ~Packages | Provides |
+|---------|-----------|----------|
+| `pip/setuptools` | 7 | Python packaging tools (`setup.py` support) |
+| `pip/PyYAML` | 3 | YAML parser (build scripts reading `.yaml` configs) |
+| `pip/Mako` | 3 | Template engine (mesa, code generation) |
+| `pip/jinja2` | 3 | Template engine (code generation) |
+| `pip/scripts` | 4 | Build script helpers |
+
+Example — mesa needs Mako templates and YAML during build:
+
+```jinja2
+{% block bld_libs %}
+pip/Mako
+pip/PyYAML
+lib/mesa/fakes
+{% endblock %}
+```
+
+`pip/` packages are generated dynamically from PyPI metadata (see `pkgs/pip/pypi.json`).
+Any PyPI package can be used as `pip/<PackageName>` — the name must match the PyPI
+distribution name exactly (case-sensitive).
