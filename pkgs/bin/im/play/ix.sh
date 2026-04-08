@@ -54,5 +54,5 @@ sed -i '/GLFW_CONTEXT_CREATION_API/d' source/window.cpp
 {% block cmake_flags %}
 USE_PATCHED_GLFW=OFF
 USE_XDG_PORTAL=ON
-USE_OPENGL_ES3=ON
+#USE_OPENGL_ES3=ON
 {% endblock %}
