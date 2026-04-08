@@ -11,7 +11,7 @@ me = os.path.normpath(os.path.abspath(__file__))
 
 sys.path.append(os.path.dirname(me))
 
-for x in ('jinja-3.1.2/src', 'markupsafe-2.1.1/src'):
+for x in ('jinja-3.1.6/src', 'markupsafe-3.0.3/src'):
     sys.path.append(os.path.join(os.path.dirname(me), 'deps', x))
 
 if __name__ == '__main__':
