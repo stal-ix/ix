@@ -80,6 +80,7 @@ Reserve `sed` in `patch` block for non-flag changes (removing targets, fixing bu
 | `#include <old/path.h>` wrong | `lib/shim/redir(from=old/path.h,to=new.h)` | `sed` on source files |
 | `pkg-config foo` fails | `lib/shim/fake/pkg(pkg_name=foo,pkg_ver=1)` | patching configure |
 | Need `-lfoo` in LDFLAGS | `lib/shim/dll(dll_name=foo)` | manual `export LDFLAGS` |
+| Build needs tool (e.g. asciidoctor) but output unused | `bld/fake/er(tool_name=foo)` in `bld_tool` | installing heavy toolchains |
 
 Shims should go in `bld_libs`, not `lib_deps`, so they don't propagate to downstream packages.
 Only use `lib_deps` for shims when downstream genuinely needs the same workaround.

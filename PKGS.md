@@ -1301,6 +1301,27 @@ lib/shim/dll(dll_name=m)
 | `lib/shim/utmp` | Stub `login()` for musl |
 | `lib/shim/egl` | Custom `eglplatform.h` |
 
+### `bld/fake/er` — stub out build-time tools
+
+`bld/fake/er(tool_name=<name>)` creates a no-op executable named `<name>` that exits
+successfully. Use it in `bld_tool` when a build system requires a tool that isn't needed
+for the actual build (e.g. doc generators).
+
+```jinja2
+{% block bld_tool %}
+bld/fake/er(tool_name=asciidoctor)
+{% endblock %}
+```
+
+Common use cases:
+- `bld/fake/er(tool_name=asciidoctor)` — skip doc generation (Ruby dependency)
+- `bld/fake/er(tool_name=xsltproc)` — skip XSLT-based doc/manpage generation
+- `bld/fake/er(tool_name=rst2man)` — skip reStructuredText manpages
+- `bld/fake/er(tool_name=sphinx-build)` — skip Sphinx documentation
+
+Note: if the build system tries to use the tool's output (e.g. `install` copies generated
+files), you may also need to patch out those install targets.
+
 ### When to use shims vs other approaches
 
 | Problem | Solution | Not this |
