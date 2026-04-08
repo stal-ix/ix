@@ -1108,6 +1108,105 @@ export COFLAGS="--with-my-feature ${COFLAGS}"
 
 ---
 
+## 19. Compiler Flags Blocks
+
+These blocks (defined in `die/c/ix.sh`) let you inject compiler and linker flags without
+patching Makefiles or build scripts with `sed`. All items are whitespace-separated lists.
+
+### `cpp_defines` — preprocessor defines
+
+Each item becomes `-D<item>` in `CPPFLAGS`. Use `NAME=VALUE` for defines with values.
+
+```jinja2
+{% block cpp_defines %}
+_GNU_SOURCE
+NCURSES_WIDECHAR=1
+HAVE_OPENSSL=1
+{% endblock %}
+```
+
+### `cpp_includes` — extra include paths
+
+Each item becomes `-I<item>` in `CPPFLAGS`.
+
+```jinja2
+{% block cpp_includes %}
+${PWD}/lib/fizzy
+${PWD}
+{% endblock %}
+```
+
+### `cpp_missing` — force-include headers
+
+Each item becomes `-include<item>` in `CPPFLAGS`. Used to inject missing headers that
+upstream code forgot to include.
+
+```jinja2
+{% block cpp_missing %}
+stdint.h
+limits.h
+{% endblock %}
+```
+
+### `cpp_flags` — raw preprocessor flags
+
+Raw flags appended to `CPPFLAGS`. Use for flags that don't fit the above blocks
+(e.g. `-isystem`).
+
+```jinja2
+{% block cpp_flags %}
+-isystem${NSS_HEADERS}
+{% endblock %}
+```
+
+### `c_flags` — C compiler flags
+
+Appended to `CFLAGS`. For C-specific compiler flags.
+
+```jinja2
+{% block c_flags %}
+-fcommon
+-std=c11
+{% endblock %}
+```
+
+### `cxx_flags` — C++ compiler flags
+
+Appended to `CXXFLAGS`. For C++-specific compiler flags.
+
+```jinja2
+{% block cxx_flags %}
+-Wno-missing-template-arg-list-after-template-kw
+{% endblock %}
+```
+
+### `ld_flags` — linker flags
+
+Appended to `LDFLAGS`.
+
+```jinja2
+{% block ld_flags %}
+-Wl,-z,nostart-stop-gc
+{% endblock %}
+```
+
+### When to use flag blocks vs `sed`
+
+Prefer flag blocks over patching Makefiles with `sed`:
+
+| Need | Block | Not this |
+|------|-------|----------|
+| Add a `-D` define | `cpp_defines` | `sed -i 's\|CFLAGS\|CFLAGS -DFOO\|'` |
+| Add an include path | `cpp_includes` | `sed -i 's\|CPPFLAGS\|CPPFLAGS -I...\|'` |
+| Force-include a header | `cpp_missing` | `sed -i 's\|#include\|#include <missing.h>\n#include\|'` |
+| Add a C/C++ flag | `c_flags` / `cxx_flags` | `sed` on Makefile |
+| Add a linker flag | `ld_flags` | `sed` on Makefile |
+
+Use `sed` in `patch` block only for changes that are not about compiler/linker flags
+(fixing paths, removing targets, patching source logic).
+
+---
+
 ## 20. Content Addressing and UIDs
 
 Every package gets a UID: a base-62-encoded hash of all its inputs — source URL, dependencies,

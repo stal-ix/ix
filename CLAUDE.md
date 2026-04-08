@@ -36,12 +36,40 @@ Package path = package name. The directory path under `pkgs/` is the package ide
 
 ## General
 
+- Commit intermediate results: added a new lib — commit before moving on to the bin package
+  that depends on it. This gives rollback points and keeps the history bisectable.
 - Build output goes through the `assemble` subprocess. Use `>/path/to/log 2>&1` to capture it — output can be large.
 - Builds from scratch can be very slow (compiling toolchains like cargo/rust/go from source). Always wait for the build to finish — do not interrupt or timeout.
 - `loadinternal: cannot find runtime/cgo` in build logs is harmless — it's an artifact of how Go is built in ix. Ignore it.
 - If a build fails, re-run with `--setx --verbose` for more detail: `./ix build <package> --setx --verbose >/path/to/log 2>&1`.
 - When checking GitHub tags, use `git ls-remote --tags <repo>` to verify exact tag names (e.g. `2` vs `v2`).
 - Refer to `PKGS.md` for full package development documentation (template hierarchy, blocks, etc.).
+
+## Compiler flags — use blocks, not sed
+
+When a package needs extra defines, includes, or compiler/linker flags, use the dedicated
+blocks from `die/c/ix.sh` instead of patching Makefiles with `sed`:
+
+| Need | Block | Result |
+|------|-------|--------|
+| `-DFOO=1` | `cpp_defines` | Each item → `-D<item>` in CPPFLAGS |
+| `-I<path>` | `cpp_includes` | Each item → `-I<item>` in CPPFLAGS |
+| `-include<hdr>` | `cpp_missing` | Each item → `-include<item>` in CPPFLAGS |
+| Raw CPPFLAGS | `cpp_flags` | Items appended to CPPFLAGS as-is |
+| CFLAGS | `c_flags` | Items appended to CFLAGS |
+| CXXFLAGS | `cxx_flags` | Items appended to CXXFLAGS |
+| LDFLAGS | `ld_flags` | Items appended to LDFLAGS |
+
+Example — instead of `sed -i 's|_GNU_SOURCE|_GNU_SOURCE -DNCURSES_WIDECHAR=1|' Makefile`:
+
+```jinja2
+{% block cpp_defines %}
+NCURSES_WIDECHAR=1
+{% endblock %}
+```
+
+Reserve `sed` in `patch` block for non-flag changes (fixing paths, removing targets, etc.).
+See PKGS.md §19 for full details and examples.
 
 ## Three types of sha in packages
 
