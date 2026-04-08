@@ -1,13 +1,17 @@
 {% extends '//die/go/build.sh' %}
 
 {% block go_url %}
-https://github.com/v-byte-cpu/wirez/archive/2628dbf16fd4ed7c3943476d313bd4266db2eff9.zip
+https://github.com/pg83/wirez/archive/refs/tags/2.tar.gz
 {% endblock %}
 
 {% block go_sha %}
-9985187e54e0822da1f64b5b346a49393ba9a807f02846c9b8e32b050b7fa2a1
+39db59729754e05a89dcb0dd4e915d60f09be22d546bf881bcaba0d01c6974a2
 {% endblock %}
 
 {% block go_bins %}
 wirez
+{% endblock %}
+
+{% block go_tool %}
+bin/go/lang/25
 {% endblock %}

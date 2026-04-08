@@ -2,8 +2,7 @@
 
 {% block bld_libs %}
 lib/c
-lib/c++
-lib/xxhash
+lib/std
 {% endblock %}
 
 {% block name %}
@@ -11,7 +10,7 @@ pid1
 {% endblock %}
 
 {% block cxx_flags %}
--std=c++20
+-std=c++26
 {% endblock %}
 
 {% block sources %}
