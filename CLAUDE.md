@@ -116,6 +116,72 @@ In the consumer's `patch` block, use `${MY_LIB_INCLUDE}` directly.
 
 See PKGS.md §18 for the full reference.
 
+## Rust linking: how `rustcc` works and why errors appear 3 times
+
+Rust packages in ix use a `cc` wrapper (`bld/rust/helpers/cc/cc.py`) that tries **three
+compilers** in sequence for every link invocation:
+
+1. **freestanding clang** — `-nostdlib -nostdlib++ -fuse-ld=lld`
+2. **target_cc** — the target C compiler with full flags
+3. **host_cc** — the host C compiler
+
+For each compiler it tries the raw command, then a filtered version (strips `-lunwind`,
+`-lgcc_s`, `-lc`, self-contained `.o` files). That's up to **6 attempts** total.
+
+**Consequence:** when a library is missing from `bld_libs`, the linker error (`undefined
+symbol: ...`) appears **multiple times** in the log — once per failed attempt. This is
+normal, not a sign of multiple distinct failures. Read the **symbol names** to diagnose:
+
+| Undefined symbols | Missing dependency |
+|---|----|
+| `onig_*` | `lib/oniguruma` |
+| `sdallocx`, `mallocx`, `rallocx` | jemalloc (bundled, needs `lib/c`) |
+| `_Unwind_*`, `memcpy`, `memset` | freestanding attempt — ignore, look at target_cc error |
+| `pcre2_*` | `lib/pcre/2` |
+| `SSL_*`, `EVP_*` | `lib/openssl` |
+
+**Rule:** if a Rust package fails to link, check `bld_libs` first. Add the missing C
+library — don't assume OOM or compiler bug.
+
+## Refine blocks — patching sources during fetch
+
+The `*_refine` blocks run **during the fetch/vendor step** (inside `aux/fetch`), before
+the `.pzd` archive is packed. Use them when sources need modification before dependency
+resolution (e.g. fixing `go.mod` version before `go mod tidy`).
+
+| Template | Refine block | Runs during | Use case |
+|----------|-------------|-------------|----------|
+| `die/go/build.sh` | `go_refine` | `aux/go/v3` fetch, before `go mod tidy` | Fix go.mod version, add/remove deps |
+| `die/rust/cargo.sh` | `cargo_refine` | `aux/cargo/v3` fetch, after download | Run npm/make for codegen before cargo vendor |
+| `die/std/ix0.sh` | `git_refine` | `aux/fetch` for git repos | Patch sources before packing |
+
+The refine content is base64-encoded and passed to the fetch job. If the refine block
+needs build tools, list them in `*_refine_tools` (e.g. `cargo_refine_tools`).
+
+**`go_refine` example** — fix old go.mod (e.g. `go 1.16` with deps needing 1.17+):
+```jinja2
+{% block go_refine %}
+sed -e 's|go 1.16|go 1.21|' -i go.mod
+go mod tidy -compat=1.21
+{% endblock %}
+```
+
+**`cargo_refine` example** — run npm to generate webui before cargo vendor:
+```jinja2
+{% block cargo_refine %}
+make webui-deps
+{% endblock %}
+
+{% block cargo_refine_tools %}
+bld/npm
+bld/make
+{% endblock %}
+```
+
+**Key difference from `patch`:** `patch` runs during the main build (after fetch/unpack).
+`*_refine` runs during fetch — changes affect the `.pzd` archive and its sha. If you
+change a refine block, you must re-derive the sha (set to zeros and rebuild).
+
 ## Packaging patterns
 
 - **autorehell > autohell** — always use `die/c/autorehell.sh`; `autohell.sh` only if autoreconf fails.
