@@ -1684,3 +1684,121 @@ During development, add `--help` as a flag to print all available options and ex
 Local relative templates (`t/ix.sh`) are useful for sharing a base template among several
 versioned sub-packages (e.g., `lib/openssl/3/`, `lib/openssl/1/` both extend `t/ix.sh`
 which lives at `lib/openssl/t/ix.sh`).
+
+## 24. Packaging Recipes and Patterns
+
+### Autotools: prefer autorehell
+
+Always use `die/c/autorehell.sh` (runs `autoreconf`) over `die/c/autohell.sh` (uses
+pre-generated `configure`). Fall back to `autohell.sh` only if autoreconf fails.
+
+When `configure.ac` uses `AX_*` macros (from autoconf-archive), add `bld/auto/archive`
+to `bld_tool`.
+
+### Go packages with multiple binaries
+
+Use the `t/` template pattern (see `bin/nebula/` for reference):
+
+```
+bin/foo/t/ix.sh      # shared template: go_url, go_sha, go_tool
+bin/foo/bar/ix.sh    # extends t/ix.sh, cd cmd/bar in unpack, go_bins=bar
+bin/foo/baz/ix.sh    # extends t/ix.sh, cd cmd/baz in unpack, go_bins=baz
+bin/foo/ix.sh        # die/hub.sh, run_deps: bin/foo/bar + bin/foo/baz
+```
+
+### Build-time host tools: use bld/, not bin/
+
+For build-time tools (bison, flex, perl, python), use `bld/` packages:
+`bld/bison`, `bld/perl`, not `bin/bison/3/8`, `bin/perl`. `bin/` packages
+are target binaries and may trigger full source builds.
+
+### Python build dependencies: pip/ packages
+
+For build-time Python modules, use `pip/<ModuleName>` in `bld_libs`:
+
+```jinja2
+{% block bld_libs %}
+pip/PyYAML
+pip/Mako
+{% endblock %}
+```
+
+See `lib/mesa/t/ix.sh` for reference.
+
+### Bypassing cmake FindPackage detection
+
+`wrap_cc` already injects correct include/library paths. When cmake's
+`find_package()` fails to find a library that `bld_libs` provides, replace
+detection with explicit settings in `patch`:
+
+```sh
+sed -i 's|find_package(Curses)|set(CURSES_FOUND TRUE)\nset(CURSES_LIBRARIES ncursesw)\nset(CURSES_INCLUDE_DIRS "")|' CMakeLists.txt
+```
+
+### Changing directory into source subdirectory
+
+Use `step_unpack` (not `patch`) — `step_unpack` runs in current shell `{}`,
+so `cd` persists. `step_patch` runs in subshell `()`, cd is lost.
+
+```jinja2
+{% block step_unpack %}
+{{super()}}
+cd crawl-ref/source
+{% endblock %}
+```
+
+### git-sourced packages needing version at build time
+
+Packages using `git describe` fail without `.git`. Create a version file in `patch`:
+
+```sh
+echo "1.2.3" > util/release_ver
+```
+
+or
+
+```sh
+echo "1.2.3" > VERSION.txt
+```
+
+### Don't fake tools that exist in the repo
+
+Before using `bld/fake/er(tool_name=X)`, search the repo:
+`find pkgs -path '*X*' -name ix.sh`. Only fake when the tool genuinely doesn't exist.
+
+### When a build error occurs, grep the repo first
+
+When hitting an unknown type, missing header, or musl incompatibility, grep the
+token across the repo — there's often an existing recipe:
+
+```sh
+grep -r 'execinfo' pkgs/lib/   # → lib/execinfo/fake
+grep -r '__BEGIN_DECLS' pkgs/   # → cpp_defines pattern
+```
+
+### Studying other distros
+
+When a package has a non-standard build system (NetHack hints, custom configure),
+check how Arch Linux (PKGBUILD), Void Linux (template), and Alpine (APKBUILD)
+handle it. Search: `"<package> PKGBUILD"`, `"<package> void linux template"`.
+
+### Fixing broken vendored/bundled code
+
+Don't skip a package because bundled third-party code fails with modern compilers.
+Fix the specific issue in `patch`:
+
+```sh
+# fix const assignment in bundled flatbuffers (clang 21)
+sed -i 's|const size_type count_;|size_type count_;|' src/third-party/flatbuffers/stl_emulation.h
+```
+
+### Parameterized dependencies
+
+For libraries with version variants (Lua, Python, etc.), use the parameterized
+form with `/unwrap` pattern rather than hardcoding a specific version:
+
+```jinja2
+bin/foo/unwrap(lua_ver=puc/5/4)
+```
+
+Grep `lua_ver=` or `python_ver=` in the repo for examples.

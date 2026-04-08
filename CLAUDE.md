@@ -116,6 +116,22 @@ In the consumer's `patch` block, use `${MY_LIB_INCLUDE}` directly.
 
 See PKGS.md §18 for the full reference.
 
+## Packaging patterns
+
+- **autorehell > autohell** — always use `die/c/autorehell.sh`; `autohell.sh` only if autoreconf fails.
+- **Build tools from bld/, not bin/** — `bld/bison`, `bld/perl`, not `bin/bison/3/8`. `bin/` may trigger full source builds.
+- **`bld/auto/archive`** — add to `bld_tool` when `configure.ac` uses `AX_*` macros.
+- **`pip/PyYAML`, `pip/Mako`** — for python build deps in `bld_libs` (see mesa).
+- **Go multi-binary repos** — use `t/` template + per-binary packages + hub (see `bin/nebula/`).
+- **`step_unpack` for cd** — `step_unpack` runs in `{}` (cd persists), `step_patch` in `()` (cd lost).
+- **Bypass cmake FindPackage** — `wrap_cc` provides paths; sed away `find_package()` and set vars directly.
+- **Grep error tokens in repo** — unknown type/header? grep the repo first — often there's an existing recipe.
+- **Don't fake tools that exist** — search `pkgs/` before using `bld/fake/er`.
+- **Fix vendored code, don't skip** — broken bundled third-party code is usually a one-line sed fix.
+- **Study Arch/Void/Alpine** — when stuck, check how other distros package it.
+
+See PKGS.md §24 for detailed recipes and examples.
+
 ## Three types of sha in packages
 
 ### 1. `fetch` block sha (C/C++ packages)
