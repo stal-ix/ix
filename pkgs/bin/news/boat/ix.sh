@@ -31,6 +31,7 @@ lib/shim/redir(from=json.h,to=json-c/json.h)
 {% block bld_tool %}
 bld/gettext
 bld/pkg/config
+bld/fake/er(tool_name=asciidoctor)
 {% endblock %}
 
 {% block build_flags %}
@@ -49,14 +50,7 @@ HAVE_OPENSSL=1
 sed -i 's|+$(CARGO).*||' Makefile
 sed -i 's|$(NEWSBOATLIB_OUTPUT)||g' Makefile
 sed -i "s|-I\$(CARGO_TARGET_DIR)/cxxbridge/|-I${NEWSBOAT_CXX_INCLUDE}/|" Makefile
-{% endblock %}
 
-{% block make_target %}
-newsboat podboat
-{% endblock %}
-
-{% block install %}
-mkdir -p ${out}/bin
-cp newsboat ${out}/bin/
-cp podboat ${out}/bin/
+# asciidoctor is faked out — skip doc-dependent install targets
+sed -i 's|install-docs install-examples||' Makefile
 {% endblock %}
