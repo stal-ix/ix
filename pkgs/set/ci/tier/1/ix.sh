@@ -50,4 +50,15 @@ bin/coreutils/uutils
 bin/mini/serve
 bin/tail/spin
 bin/rio
+bin/rip/grep
+bin/fd
+bin/dust
+bin/hyper/fine
+bin/tokei
+bin/zoxide
+bin/procs
+bin/xh
+bin/viu
+bin/band/which
+bin/lolcat
 {% endblock %}
