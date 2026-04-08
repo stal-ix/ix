@@ -1093,19 +1093,31 @@ _LARGEFILE64_SOURCE
 {% endblock %}
 ```
 
-### Exporting flags to downstream consumers
+### The `env` block — exporting variables to consumers
 
-If your library needs to propagate flags to packages that link against it, use the `env` block
-(visible in `lib/openssl/3/ix.sh`):
+The `env` block lets a library export environment variables that are visible to every package
+that depends on it (via `bld_libs` or `lib_deps`). Variables are sourced into the consumer's
+build environment before `patch` and `build` run.
+
+Common use cases:
+
+| Use case | Example |
+|----------|---------|
+| Configure flag for downstream | `export COFLAGS="--with-bearssl=${out} ${COFLAGS}"` |
+| Path to data/resources | `export ALSA_LIB_DATA="${out}"` |
+| Path to headers for non-standard layout | `export NEWSBOAT_CXX_INCLUDE="${out}/include"` |
+| Extra include path | `export CPPFLAGS="-I${out}/include/apr-1 ${CPPFLAGS}"` |
 
 ```jinja2
 {% block env %}
-{{super()}}
-export COFLAGS="--with-my-feature ${COFLAGS}"
+export MY_LIB_PREFIX="${out}"
 {% endblock %}
 ```
 
-`COFLAGS` gets sourced when another package's configure script runs with this library in scope.
+The consumer then uses `${MY_LIB_PREFIX}` directly — no need to parse `CPPFLAGS`/`LDFLAGS`
+with `sed`/`grep`/`tr`.
+
+Use `{{super()}}` if the parent template already defines `env` and you want to extend it.
 
 ---
 

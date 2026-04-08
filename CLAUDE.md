@@ -99,6 +99,22 @@ When upstream uses both C++ and Rust via cxx/cxx-build, split into two packages:
 2. **`bin/foo`** — extends `die/c/make.sh`. Patches out cargo invocations from Makefile,
    points include path to prebuilt cxxbridge headers from `lib/foo`.
 
+## The `env` block — exporting paths to consumers
+
+When a library needs to expose a path or variable to its consumers, use the `env` block
+instead of parsing `CPPFLAGS`/`LDFLAGS` with `sed`/`grep`/`tr` in the consumer.
+
+In the library:
+```jinja2
+{% block env %}
+export MY_LIB_INCLUDE="${out}/include"
+{% endblock %}
+```
+
+In the consumer's `patch` block, use `${MY_LIB_INCLUDE}` directly.
+
+See PKGS.md §18 for the full reference.
+
 ## Three types of sha in packages
 
 ### 1. `fetch` block sha (C/C++ packages)
