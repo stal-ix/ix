@@ -22,10 +22,13 @@ lib/ncurses
 wrap_cc
 {% endblock %}
 
+{% block bld_libs %}
+lib/shim/fake(lib_name=ncursesw)
+{% endblock %}
+
 {% block patch %}
 >Makefile.deps
 sed -i 's|include Makefile.deps||' Makefile
-sed -i 's|-lncursesw||' Makefile
 sed -i 's|ncursesw/ncurses.h|ncurses.h|' stfl_internals.h
 {% endblock %}
 
@@ -37,15 +40,4 @@ NCURSES_WIDECHAR=1
 DESTDIR=${out}
 prefix=
 libdir=lib
-{% endblock %}
-
-{% block make_target %}
-libstfl.a
-{% endblock %}
-
-{% block install %}
-mkdir -p ${out}/lib/pkgconfig ${out}/include
-cp libstfl.a ${out}/lib/
-cp stfl.h ${out}/include/
-cat stfl.pc.in | sed "s|@VERSION@|{{self.version().strip()}}|;s|@PREFIX@|${out}|" > ${out}/lib/pkgconfig/stfl.pc
 {% endblock %}
