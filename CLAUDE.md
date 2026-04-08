@@ -68,8 +68,23 @@ NCURSES_WIDECHAR=1
 {% endblock %}
 ```
 
-Reserve `sed` in `patch` block for non-flag changes (fixing paths, removing targets, etc.).
-See PKGS.md §19 for full details and examples.
+Reserve `sed` in `patch` block for non-flag changes (removing targets, fixing build logic).
+
+## Shim packages — avoid patching sources and Makefiles
+
+`lib/shim/*` packages solve common portability issues declaratively via `bld_libs`/`lib_deps`.
+
+| Problem | Shim | Instead of |
+|---------|------|------------|
+| `-lfoo` fails, symbols in another lib | `lib/shim/fake(lib_name=foo)` | `sed` removing `-lfoo` from Makefile |
+| `#include <old/path.h>` wrong | `lib/shim/redir(from=old/path.h,to=new.h)` | `sed` on source files |
+| `pkg-config foo` fails | `lib/shim/fake/pkg(pkg_name=foo,pkg_ver=1)` | patching configure |
+| Need `-lfoo` in LDFLAGS | `lib/shim/dll(dll_name=foo)` | manual `export LDFLAGS` |
+
+See PKGS.md §20 for the full shim catalog.
+
+**Rule of thumb:** if you're about to `sed` a Makefile or source file, check if a compiler
+flag block (§19) or a shim (§20) can do it instead. `sed` in `patch` should be the last resort.
 
 ## Three types of sha in packages
 

@@ -27,9 +27,10 @@ This document explains everything needed to write new packages.
 17. [Cross-compilation](#17-cross-compilation)
 18. [Environment During Build](#18-environment-during-build)
 19. [Compiler Flags Blocks](#19-compiler-flags-blocks)
-20. [Content Addressing and UIDs](#20-content-addressing-and-uids)
-21. [Complete Examples](#21-complete-examples)
-22. [Common Pitfalls](#22-common-pitfalls)
+20. [Shim Packages](#20-shim-packages)
+21. [Content Addressing and UIDs](#21-content-addressing-and-uids)
+22. [Complete Examples](#22-complete-examples)
+23. [Common Pitfalls](#23-common-pitfalls)
 
 ---
 
@@ -1207,7 +1208,97 @@ Use `sed` in `patch` block only for changes that are not about compiler/linker f
 
 ---
 
-## 20. Content Addressing and UIDs
+## 20. Shim Packages
+
+Shim packages under `lib/shim/` solve common build-system integration problems without
+patching source code. Use them in `bld_libs` or `lib_deps`.
+
+### `lib/shim/fake` — empty stub library
+
+Creates an empty `lib<name>.a` so that `-l<name>` doesn't fail at link time. Used when
+the real symbols come from another package under a different name (e.g. `lib/ncurses`
+provides ncursesw symbols but installs as `libncurses.a`, not `libncursesw.a`).
+
+```jinja2
+{% block bld_libs %}
+lib/shim/fake(lib_name=ncursesw)
+lib/shim/fake(lib_name=stdc++fs)
+{% endblock %}
+```
+
+### `lib/shim/fake/pkg` — fake pkg-config `.pc` file
+
+Generates a `.pc` file for pkg-config so that `pkg-config --cflags/--libs <name>` succeeds.
+Used when a dependency check must pass but the real library is provided differently.
+
+```jinja2
+lib/shim/fake/pkg(pkg_name=glew,pkg_ver=1.0.0)
+lib/shim/fake/pkg(pkg_name=dri,pkg_ver=100500,pkg_extra=dridriverdir: /nowhere)
+```
+
+### `lib/shim/fake/header` — stub header
+
+Creates a header file that redirects to `stdio.h` (effectively a no-op include).
+
+```jinja2
+lib/shim/fake/header(header=cups/cups.h)
+```
+
+### `lib/shim/fake/symbol` — single symbol stub
+
+Creates a library with a single exported symbol (function returning 0). Used when a
+package references a symbol that doesn't exist in this environment.
+
+```jinja2
+lib/shim/fake/symbol(symbol_name=cupsServer)
+```
+
+### `lib/shim/redir` — header redirect
+
+Creates a header at path `from` that `#include`s `to`. Used when upstream includes
+a header under a path that differs from where ix installs it.
+
+```jinja2
+{% block bld_libs %}
+lib/shim/redir(from=ncursesw/ncurses.h,to=ncurses.h)
+lib/shim/redir(from=sys/sysctl.h,to=linux/sysctl.h)
+{% endblock %}
+```
+
+This is better than `sed -i 's|old/path.h|new/path.h|' source.c` because it works for
+all source files and doesn't modify the source tree.
+
+### `lib/shim/dll` — inject `-l` flag
+
+Adds `-l<name>` to `LDFLAGS` via environment. Used when you need to force-link a library
+that the build system doesn't know about.
+
+```jinja2
+lib/shim/dll(dll_name=m)
+```
+
+### Other shims
+
+| Shim | Purpose |
+|------|---------|
+| `lib/shim/x11` | Stub X11/Xcursor headers + fake libs for Wayland-only builds |
+| `lib/shim/systemd` | Stub `sd-login.h` with no-op defines |
+| `lib/shim/gnu` | glibc-isms (`error()`, `qsort_r`, etc.) for musl |
+| `lib/shim/utmp` | Stub `login()` for musl |
+| `lib/shim/egl` | Custom `eglplatform.h` |
+
+### When to use shims vs other approaches
+
+| Problem | Solution | Not this |
+|---------|----------|----------|
+| `-lfoo` fails, real symbols in another lib | `lib/shim/fake(lib_name=foo)` | `sed` to remove `-lfoo` from Makefile |
+| `#include <old/path.h>` wrong path | `lib/shim/redir(from=old/path.h,to=new/path.h)` | `sed` on source files |
+| `pkg-config --cflags foo` fails | `lib/shim/fake/pkg(pkg_name=foo,...)` | Patching configure scripts |
+| Missing preprocessor define | `cpp_defines` block (§19) | `sed` on Makefile CFLAGS |
+
+---
+
+## 21. Content Addressing and UIDs
 
 Every package gets a UID: a base-62-encoded hash of all its inputs — source URL, dependencies,
 flags, build script, and the UID of every dependency. This means:
@@ -1231,7 +1322,7 @@ gitexecdir=bin/{{uniq_id}}
 
 ---
 
-## 21. Complete Examples
+## 22. Complete Examples
 
 ### C library with Autotools (`lib/mylib/ix.sh`)
 
@@ -1495,7 +1586,7 @@ bin/btrfs/progs
 
 ---
 
-## 22. Common Pitfalls
+## 23. Common Pitfalls
 
 ### Missing `lib/c` in `bld_libs`
 
