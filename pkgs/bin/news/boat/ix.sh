@@ -25,6 +25,7 @@ lib/ncurses
 lib/intl/gnu
 lib/iconv
 lib/news/boat
+lib/shim/redir(from=json.h,to=json-c/json.h)
 {% endblock %}
 
 {% block bld_tool %}
@@ -36,17 +37,13 @@ bld/pkg/config
 shut_up
 {% endblock %}
 
+{% block cpp_defines %}
+HAVE_OPENSSL=1
+{% endblock %}
+
 {% block patch %}
-# generate config.mk from pkg-config, skip config.sh (it checks for cargo)
+# skip config.sh (it checks for cargo) — deps come from bld_libs
 : > config.mk
-for pkg in sqlite3 libcurl libxml-2.0 stfl json-c ncursesw libcrypto libssl; do
-    if pkg-config --exists "${pkg}" 2>/dev/null; then
-        cflags=$(pkg-config --cflags "${pkg}")
-        libs=$(pkg-config --libs "${pkg}")
-        test -n "${cflags}" && echo "DEFINES+=${cflags}" >> config.mk
-        test -n "${libs}" && echo "LDFLAGS+=${libs}" >> config.mk
-    fi
-done
 
 # find prebuilt cxxbridge headers from lib/news/boat
 nb_inc=$(echo ${CPPFLAGS} | tr ' ' '\n' | grep news | head -1 | sed 's|-I||')
