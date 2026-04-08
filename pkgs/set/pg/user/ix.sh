@@ -20,6 +20,7 @@ bin/psmisc
 bin/fuzzel
 bin/waybar
 bin/evince
+bin/im/play
 bin/openssl
 bin/sway/bg
 bin/iwd/ctl
