@@ -1,0 +1,11 @@
+.idea/
+.vscode/
+__pycache__/
+*.egg-info/
+*.so
+build/
+dist/
+.coverage*
+htmlcov/
+.tox/
+docs/_build/
