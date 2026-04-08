@@ -10,4 +10,6 @@ base64 -d << EOF > ${out}/bin/init
 {% include 'init.sh/base64' %}
 EOF
 chmod +x ${out}/bin/*
+mkdir ${out}/etc
+echo > ${out}/etc/resolv.conf
 {% endblock %}
