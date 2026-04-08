@@ -24,12 +24,12 @@ wrap_cc
 
 {% block bld_libs %}
 lib/shim/fake(lib_name=ncursesw)
+lib/shim/redir(from=ncursesw/ncurses.h,to=ncurses.h)
 {% endblock %}
 
 {% block patch %}
 >Makefile.deps
 sed -i 's|include Makefile.deps||' Makefile
-sed -i 's|ncursesw/ncurses.h|ncurses.h|' stfl_internals.h
 {% endblock %}
 
 {% block cpp_defines %}
