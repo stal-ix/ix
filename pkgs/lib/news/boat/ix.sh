@@ -32,6 +32,10 @@ libnewsboat-ffi
 {% block cargo_features %}
 {% endblock %}
 
+{% block env %}
+export NEWSBOAT_CXX_INCLUDE="${out}/include"
+{% endblock %}
+
 {% block install %}
 mkdir -p ${out}/lib ${out}/include/libnewsboat-ffi/src
 cp ${tmp}/out/libnewsboat.a ${out}/lib/

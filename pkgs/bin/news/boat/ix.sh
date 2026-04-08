@@ -45,13 +45,10 @@ HAVE_OPENSSL=1
 # skip config.sh (it checks for cargo) — deps come from bld_libs
 : > config.mk
 
-# find prebuilt cxxbridge headers from lib/news/boat
-nb_inc=$(echo ${CPPFLAGS} | tr ' ' '\n' | grep news | head -1 | sed 's|-I||')
-
 # remove cargo dependency — we use prebuilt lib/news/boat
 sed -i 's|+$(CARGO).*||' Makefile
 sed -i 's|$(NEWSBOATLIB_OUTPUT)||g' Makefile
-sed -i "s|-I\$(CARGO_TARGET_DIR)/cxxbridge/|-I${nb_inc}/|" Makefile
+sed -i "s|-I\$(CARGO_TARGET_DIR)/cxxbridge/|-I${NEWSBOAT_CXX_INCLUDE}/|" Makefile
 {% endblock %}
 
 {% block make_target %}
