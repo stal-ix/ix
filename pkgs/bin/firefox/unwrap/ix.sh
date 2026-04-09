@@ -233,6 +233,15 @@ sys.exit(1)
 CLEOF
 chmod +x build/cargo-linker
 
+# disable post-link ELF checks (static binaries have no dynamic section)
+sed -i '/check_textrel/d' config/rules.mk 2>/dev/null || true
+
+# disable pingsender (Mozilla telemetry, not needed; fails to link in static builds)
+echo '# disabled for static build' > toolkit/components/telemetry/pingsender/moz.build
+
+# disable glxtest (GL probe subprocess; fails to link in static builds)
+echo '# disabled for static build' > toolkit/xre/glxtest/moz.build
+
 # create mozconfig
 cat > mozconfig << 'MOZEOF'
 ac_add_options --disable-bootstrap
@@ -311,10 +320,6 @@ if test -n "${CLANG_HEADERS}"; then
     echo "export CXXFLAGS=\"-isystem ${CLANG_HEADERS} \${CXXFLAGS}\"" >> mozconfig
 fi
 
-# pass wrap_cc plugin flags to Firefox build
-# LDFLAGS contains -L/PLUGIN:... from wrap_cc rdynamic plugin
-echo "LDFLAGS from env: ${LDFLAGS}" >&2
-echo "export LDFLAGS=\"${LDFLAGS}\"" >> mozconfig
 {% endblock %}
 
 {% block configure %}
@@ -345,6 +350,12 @@ if test -n "${CLANG_HEADERS}"; then
 fi
 export BINDGEN_CFLAGS="${BINDGEN_CXX} ${BINDGEN_CLANG} ${BINDGEN_REST}"
 
+# pass wrap_cc plugin paths to Firefox LDFLAGS
+_plg=$(which plg_10_rdynamic 2>/dev/null || true)
+if test -n "${_plg}"; then
+    echo "export LDFLAGS=\"-L/PLUGIN:${_plg}\"" >> mozconfig
+fi
+
 python3 ./mach configure
 {% endblock %}
 
@@ -353,7 +364,7 @@ export LIBCLANG_PATH=${LLVM_DIR}/lib
 export LIBCLANG_STATIC_PATH=${LLVM_DIR}/lib
 export MOZBUILD_STATE_PATH=${tmp}/.mozbuild
 export MOZ_NOSPAM=1
-export MOZ_MAKE_FLAGS="-j$((make_thrs / 2 > 1 ? make_thrs / 2 : 2))"
+export MOZ_MAKE_FLAGS="-j4"
 export MACH_BUILD_PYTHON_NATIVE_PACKAGE_SOURCE=system
 
 python3 ./mach build
