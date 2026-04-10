@@ -234,13 +234,25 @@ CLEOF
 chmod +x build/cargo-linker
 
 # disable post-link ELF checks (static binaries have no dynamic section)
-sed -i '/check_textrel/d' config/rules.mk 2>/dev/null || true
+sed -i '/check_textrel/d; /check_binary/d' config/rules.mk 2>/dev/null || true
 
-# disable pingsender (Mozilla telemetry, not needed; fails to link in static builds)
-echo '# disabled for static build' > toolkit/components/telemetry/pingsender/moz.build
+# disable NSS command-line tools (certutil etc. - fail to link statically, not needed)
+sed -i "/cmd\/certutil/d; /cmd\/pk12util/d" security/nss/nss.gyp 2>/dev/null || true
 
-# disable glxtest (GL probe subprocess; fails to link in static builds)
-echo '# disabled for static build' > toolkit/xre/glxtest/moz.build
+# disable standalone binaries that can't resolve libxul symbols in static build
+echo '# disabled for static build' > ipc/app/moz.build
+echo '# disabled for static build' > js/xpconnect/shell/moz.build
+
+# stub dependentlibs.py (static build: libxul.so is ar archive, not ELF)
+cat > toolkit/library/build/dependentlibs.py << 'DEPEOF'
+import os
+def gen_list(output, libxul):
+    output.write("\n")
+    # also create .gtest variant
+    gtest = output.name + ".gtest"
+    with open(gtest, "w") as f:
+        f.write("\n")
+DEPEOF
 
 # create mozconfig
 cat > mozconfig << 'MOZEOF'
@@ -376,7 +388,7 @@ export MACH_BUILD_PYTHON_NATIVE_PACKAGE_SOURCE=system
 
 DESTDIR=${tmp}/install python3 ./mach install
 
-mkdir -p ${out}/bin ${out}/lib
-cp -a ${tmp}/install/${out}/lib/firefox ${out}/lib/
-ln -s ../lib/firefox/firefox ${out}/bin/firefox
+mkdir -p ${out}/bin ${out}/share
+cp -a ${tmp}/install/${out}/lib/firefox ${out}/share/firefox
+ln -s ../share/firefox/firefox ${out}/bin/firefox
 {% endblock %}
