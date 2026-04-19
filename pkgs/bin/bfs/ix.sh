@@ -22,5 +22,5 @@ lib/oniguruma
 {% endblock %}
 
 {% block configure %}
-./configure RELEASE=y
+./configure --enable-release --prefix=${out}
 {% endblock %}
