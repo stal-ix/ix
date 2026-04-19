@@ -1,4 +1,3 @@
-import os
 import json
 import shutil
 import subprocess
@@ -34,10 +33,7 @@ class Ops(os_sys.Ops):
         if not self.molot:
             raise ce.Error('molot binary not found on PATH')
 
-        hash_out = subprocess.check_output([self.molot, 'hash']).decode().strip()
-        extra = f'molot={hash_out}'
-        cur = os.environ.get('IX_FLAGS', '').strip()
-        os.environ['IX_FLAGS'] = f'{cur},{extra}' if cur else extra
+        self.molot_hash = subprocess.check_output([self.molot, 'hash']).decode().strip()
 
     def execute_graph(self, graph):
         try:
@@ -50,4 +46,7 @@ class Ops(os_sys.Ops):
             raise ce.Error('molot failed', exception=e)
 
     def flags(self):
-        return {}
+        # No stalix (molot handles isolation itself); expose molot hash
+        # so die/sh0.sh's `# {{molot}}` comment bakes it into every
+        # build script's stdin → mixes into every uid.
+        return {'molot': self.molot_hash}
