@@ -20,6 +20,11 @@ https://github.com/rfjakob/gocryptfs/archive/refs/tags/v{{self.version().strip()
 lib/openssl
 {% endblock %}
 
+{% block bld_tool %}
+{{super()}}
+bld/pkg/config
+{% endblock %}
+
 {% block unpack %}
 {{super()}}
 cd gocryptfs-xray
