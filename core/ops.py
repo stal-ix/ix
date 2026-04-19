@@ -24,6 +24,11 @@ def construct(cfg, kind=None):
 
         return o.Ops()
 
+    if kind == 'molot':
+        import core.ops_molot as o
+
+        return o.Ops(cfg)
+
     import core.ops_sys as o
 
     return o.Ops(cfg)

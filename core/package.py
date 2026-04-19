@@ -84,6 +84,7 @@ ONE_LEVEL = (
     'verbose',
     'stage',
     'rebuild',
+    'molot',
     'nostrip',
     'simulate_failure',
     'show_script',
