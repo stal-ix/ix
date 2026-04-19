@@ -8,12 +8,22 @@ console
 1.3.0
 {% endblock %}
 
+{# Upstream github.com/minio/console is gone (removed in 2025). Fetch
+ # from Go's module proxy — same source tree at commit
+ # 6625d54d6766a3d267546d190660755bf5bfc5fe, just packaged as a Go
+ # module zip (github.com/minio/console@v1.3.0/... inside). The
+ # go_refine block flattens that nesting back to src/ root. #}
 {% block go_url %}
-https://github.com/minio/console/archive/refs/tags/v{{self.version().strip()}}.tar.gz
+https://proxy.golang.org/github.com/minio/console/@v/v{{self.version().strip()}}.zip
+{% endblock %}
+
+{% block go_refine %}
+(cd minio/console@v{{self.version().strip()}} && find . -mindepth 1 -maxdepth 1 -exec mv {} ../../ \;)
+rmdir minio/console@v{{self.version().strip()}} minio
 {% endblock %}
 
 {% block go_sha %}
-8585d73d45ca42b4c2bea76e5e067306d7fb36a9e04a3c31515e4627df0b7084
+909719e46558bd0ef2594bdeebaef4c7f143a1eab7e9868732d594ec5a87e490
 {% endblock %}
 
 {% block unpack %}
