@@ -19,6 +19,11 @@ lib/c++
 lib/qt/6/base
 {% endblock %}
 
+{% block bld_tool %}
+{{super()}}
+bld/qt/6
+{% endblock %}
+
 {% block cmake_flags %}
 KDSingleApplication_QT6=true
 KDSingleApplication_STATIC=true
