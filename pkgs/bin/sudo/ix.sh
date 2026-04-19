@@ -14,3 +14,11 @@ _PATH_SUDO_LOGSRVD_PID=\\\"/var/run/sudo/sudo_logsrvd.pid\\\"
 _PATH_MV=\\\"/bin/mv\\\"
 _PATH_SUDO_TIMEDIR=\\\"/var/run/sudo/ts\\\"
 {% endblock %}
+
+{% block make_flags %}
+{{super()}}
+rundir=${out}/var/run/sudo
+vardir=${out}/var/db/sudo
+iolog_dir=${out}/var/log/sudo-io
+relaydir=${out}/var/log/sudo_logsrvd
+{% endblock %}
