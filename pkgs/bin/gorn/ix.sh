@@ -5,7 +5,7 @@ bin/go/lang/22
 {% endblock %}
 
 {% block go_url %}
-https://github.com/pg83/gorn/archive/refs/tags/6.tar.gz
+https://github.com/pg83/gorn/archive/refs/tags/7.tar.gz
 {% endblock %}
 
 {% block go_sha %}
