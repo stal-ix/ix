@@ -1,15 +1,15 @@
 {% extends '//die/go/build.sh' %}
 
 {% block go_tool %}
-bin/go/lang/22
+bin/go/lang/25
 {% endblock %}
 
 {% block go_url %}
-https://github.com/pg83/gorn/archive/refs/tags/7.tar.gz
+https://github.com/pg83/gorn/archive/refs/tags/8.tar.gz
 {% endblock %}
 
 {% block go_sha %}
-f2f8d61b564b82d8798a7e4dfc6a39dfdaa2c573f598139261f41b9511212895
+a196c51e31c392e27b62993be1404b637728a7bee0581272e2ca663f298a616a
 {% endblock %}
 
 {% block go_bins %}
