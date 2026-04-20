@@ -266,3 +266,8 @@ The sha changes whenever source code OR resolved dependencies change.
 2. Compute the new tarball hash: `curl -sL <new_url> | sha256sum`.
 3. Replace the old hash in the `fetch` block.
 4. Run `./ix build <package> >/path/to/log 2>&1` and fix any build errors.
+
+## Misc
+
+- Go toolchains live at `bin/go/lang/<N>`. Each version extends a predecessor (`{% extends '//bin/go/lang/22/ix.sh' %}`) and declares a `{% block go_bootstrap %}` pointing at the intermediate version used to compile it — e.g. 25 extends 22 but bootstraps from 23. To add a minor, clone the closest neighbour and adjust `version`/`fetch`/`go_bootstrap`.
+- Services are supervised by `bin/runsrv` (package) — the runit template in `pkgs/etc/services/runit/script/ix.sh` just emits a thin `run` that execs `srv <sd> /bin/sh ${PWD}/hi`. The service stdout/stderr pipe through `bin/tinylog` into `/var/run/<sd>/std/current` (live) with rotated `_<ts>.s` archives. There is no `sv` command; status is "does the process exist + does the log move".
