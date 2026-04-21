@@ -13,7 +13,7 @@ https://github.com/cli/cli/archive/refs/tags/v{{self.version().strip()}}.tar.gz
 {% endblock %}
 
 {% block go_sha %}
-2dd27bca70dfab350ac44b1c5333f64aa75de7882684edf8631d9e23b1dfc6dd
+2a584a8d82aa65bff0976b69c4cfa337079e2d8048660ecd2d12ccf47a51c7c1
 {% endblock %}
 
 {% block unpack %}
