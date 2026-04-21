@@ -21,6 +21,11 @@ lib/qt/6/base
 lib/qt/6/deps
 {% endblock %}
 
+{% block bld_tool %}
+bld/qt/6
+bld/qt/6/tools
+{% endblock %}
+
 {% block patch %}
 base64 -d << EOF > CMakeLists.txt
 {% include 'CMakeLists.txt/base64' %}
