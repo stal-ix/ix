@@ -5,11 +5,11 @@ bin/go/lang/25
 {% endblock %}
 
 {% block go_url %}
-https://github.com/pg83/samogon/archive/refs/tags/4.tar.gz
+https://github.com/pg83/samogon/archive/refs/tags/5.tar.gz
 {% endblock %}
 
 {% block go_sha %}
-2112e117ed91a707bea6b5ec72f75b0dcb05ace87efd55549a67670f650dc51f
+aeafc3a87e15e470d9c2b202eff534cfd2d69cde48a338efa4cbd635a66920e5
 {% endblock %}
 
 {% block go_bins %}
