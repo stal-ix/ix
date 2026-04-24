@@ -5,11 +5,11 @@ bin/go/lang/25
 {% endblock %}
 
 {% block go_url %}
-https://github.com/pg83/gorn/archive/refs/tags/21.tar.gz
+https://github.com/pg83/gorn/archive/refs/tags/22.tar.gz
 {% endblock %}
 
 {% block go_sha %}
-9a0d2da030022dba4d607d7cef3e7070c3bd1021d259d08bc4ae1da535edd0de
+bfaac8c307245f75b00ad233fb719892cf2a3c4c29fb670f142bd3a4c663a60c
 {% endblock %}
 
 {% block go_bins %}
