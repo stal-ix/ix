@@ -5,11 +5,11 @@ bin/go/lang/25
 {% endblock %}
 
 {% block go_url %}
-https://github.com/pg83/ogorod/archive/05da389e11df452e92c82ed402872035e673628f.tar.gz
+https://github.com/pg83/ogorod/archive/9febdb23233090b86dae4e300b1fed640fa3015b.tar.gz
 {% endblock %}
 
 {% block go_sha %}
-81270a8eb0d84d2704baf20f9bdbaca05fbaf6a2b4d5538a4a2dab606feae67c
+9fb89a1d5bed2434ea9ec9959b69bff09520706acbe024c2112a3a18b27e8df7
 {% endblock %}
 
 {% block go_bins %}
