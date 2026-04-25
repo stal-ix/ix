@@ -21,3 +21,13 @@ py_exports > exports
 cat exports
 {% endif %}
 {% endblock %}
+
+{% block env %}
+{{super()}}
+{# freeze.sh's configure scans ${PYTHONPATH} for `exports` files; the
+   py_exports written above only matters if our lib dir is on that
+   path at consumer build time. Mirror what 3/12+ do in their env. #}
+{% if lib %}
+export PYTHONPATH="${out}/lib/python3.10:\${PYTHONPATH}"
+{% endif %}
+{% endblock %}
