@@ -1,33 +1,23 @@
-{% extends '//lib/python/3/8/ix.sh' %}
+{% extends 't/ix.sh' %}
 
-{% block pkg_name %}
-python
-{% endblock %}
-
-{% block version %}
-3.10.13
-{% endblock %}
-
-{% block fetch %}
-https://www.python.org/ftp/python/{{self.version().strip()}}/Python-{{self.version().strip()}}.tar.xz
-5c88848668640d3e152b35b4536ef1c23b2ca4bd2c957ef1ecbb053f571dd3f6
-{% endblock %}
-
-{% block setup_target_flags %}
+{% block bld_tool %}
 {{super()}}
-export COFLAGS=$(echo "${COFLAGS}" | tr ' ' '\n' | grep -v 'with-readline' | tr '\n' ' ')
-{% if (edit or 'edit') == 'readline' %}
-export COFLAGS="--with-readline=yes ${COFLAGS}"
-{% else %}
-export COFLAGS="--with-readline=edit ${COFLAGS}"
+bld/pip/scripts
+{% endblock %}
+
+{% block install %}
+{{super()}}
+{# Generate the `exports` module list so freeze.sh embeds every .py
+   under lib/python<X.Y>/ — including dynamically-imported names like
+   `_sysconfigdata__linux_` that modulefinder can't trace from
+   sysconfig._init_posix. Without this, frozen binaries (g-ir-scanner,
+   etc.) abort at runtime with ModuleNotFoundError on workers that
+   don't have lib/python in their fs. 3/12+ already do this in their
+   own install. #}
+{% if lib %}
+cd ${out}/lib/python*
+>__init__.py
+py_exports > exports
+cat exports
 {% endif %}
-{% endblock %}
-
-{% block patch_sqlite_modname %}
-# fixed in 3.10
-{% endblock %}
-
-{% block patch %}
-{{super()}}
-sed -e 's|(VFunction \*)||' -i Modules/readline.c
 {% endblock %}

@@ -1,4 +1,4 @@
-{% extends '//lib/python/3/10/ix.sh' %}
+{% extends '//lib/python/3/10/t/ix.sh' %}
 
 {% block pkg_name %}
 python
