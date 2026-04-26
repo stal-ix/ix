@@ -6,6 +6,11 @@ lib/gtk/3
 lib/gtk/layer/shell/3
 {% endblock %}
 
+{% block bld_tool %}
+{{super()}}
+bld/pkg/config
+{% endblock %}
+
 {% block go_tags %}
 no_x11
 {% endblock %}

@@ -11,8 +11,8 @@ bison
 {% block fetch %}
 https://ftp.gnu.org/gnu/bison/bison-{{self.version().strip()}}.tar.xz
 27159ac5ebf736dffd5636fd2cd625767c9e437de65baa63cb0de83570bd820d
-https://github.com/stal-ix/sources/raw/main/bison-bootstrap-master.tar.bz2
-be50cb3cb8698d07318adfce8df916f0c0a15a5647154d73b555bb8a1515706f
+https://github.com/stal-ix/sources/raw/main/bison-bootstrap-master.tar
+089375c564e4f743ab0b5d4f6d23a871189e03110ed0ef56185ce783aa4a7cd3
 {% endblock %}
 
 {% block unpack %}

@@ -25,7 +25,7 @@ exit 1
 {% endblock %}
 
 {% block script_body_sh %}
-# {{rebuild}}
+# {{rebuild}}{{molot}}
 {% endblock %}
 
 {% block script_confine %}

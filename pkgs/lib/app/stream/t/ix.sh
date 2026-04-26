@@ -42,4 +42,13 @@ bld/fake/er(tool_name=xsltproc)
 
 {% block patch %}
 sed -e 's|/usr/include||' -i meson.build
+
+# data/gen-output invokes the just-built `appstreamcli news-to-metainfo`
+# during the build, which aborts with SIGABRT (exit 134) in the
+# sandbox. The tool's only job here is to splice release info from
+# NEWS into the metainfo XML; skip that and just pass the plain
+# metainfo through — the installed package loses per-release notes,
+# but the binary itself is unchanged.
+sed -e "s|command : \[ascli_exe, 'news-to-metainfo'.*$|command : ['cp', '@INPUT1@', '@OUTPUT@']|" \
+    -i data/meson.build
 {% endblock %}

@@ -34,7 +34,7 @@ perl lib/mk-ca-bundle.pl -n -k - > ca-bundle.crt
 
 {% block install %}
 mkdir -p ${out}/{{self.pem_dir().strip()}}
-cat ca-bundle.crt | grep -v '\##' > ${out}/{{self.pem_path().strip()}}
+cat ca-bundle.crt | grep -v '##' > ${out}/{{self.pem_path().strip()}}
 sha256sum ${out}/{{self.pem_path().strip()}}
 {% endblock %}
 

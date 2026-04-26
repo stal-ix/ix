@@ -32,6 +32,8 @@ docdir=${out}/doc
 confdir=${out}/share
 includedir=${out}/include
 localedir=${out}/share/locale
+libexecdir=${out}/libexec
+unitdir=${out}/share/systemd/system
 bash_completion_dir=${out}/share/bash-completion/completions
 {% endblock %}
 

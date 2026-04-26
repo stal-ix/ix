@@ -22,6 +22,11 @@ lib/qt/6/deps
 lib/qt/6/charts
 {% endblock %}
 
+{% block bld_tool %}
+bld/qt/6
+bld/qt/6/tools
+{% endblock %}
+
 {% block unpack %}
 {{super()}}
 cd src

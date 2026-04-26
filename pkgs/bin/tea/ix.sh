@@ -23,6 +23,11 @@ lib/qt/6/deps
 lib/qt/6/compat
 {% endblock %}
 
+{% block bld_tool %}
+bld/qt/6
+bld/qt/6/tools
+{% endblock %}
+
 {% block cmake_flags %}
 USE_DJVU=ON
 USE_PDF=ON

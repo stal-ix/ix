@@ -20,6 +20,11 @@ lib/qt/6/base
 lib/qt/6/deps
 {% endblock %}
 
+{% block bld_tool %}
+bld/qt/6
+bld/qt/6/tools
+{% endblock %}
+
 {% block cmake_flags %}
 ENABLE_QT5=OFF
 WITHOUT_X11=ON

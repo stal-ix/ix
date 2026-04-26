@@ -26,7 +26,7 @@ def group_realms(l):
         yield d
 
 
-def prepare(ctx, args):
+def prepare(ctx, args, realize=True):
     mngr = cm.Manager(cf.config_from(ctx))
     nodes = [mngr.ensure_realm(d[0][2]['r']).mut(d) for d in group_realms(cc.lex(args))]
     graph = cg.build_graph(nodes)
@@ -37,6 +37,9 @@ def prepare(ctx, args):
         return
 
     mngr.config.ops.execute_graph(graph)
+
+    if not realize:
+        return
 
     for n in nodes:
         yield n.from_prepared()
@@ -100,7 +103,13 @@ def cli_run(ctx):
 
 
 def cli_build(ctx):
-    list(prepare(ctx, ['ephemeral'] + ctx['args']))
+    # realize=False: don't open the realm output dirs after building.
+    # Under IX_EXEC_KIND=molot the build artifact lives in S3 and is
+    # never extracted into local /ix/store, so reading <out>/touch
+    # would fail with FileNotFoundError. We only need execute_graph
+    # to run; the from_prepared loop is for callers that go on to
+    # install() (mut) or use r.path (run).
+    list(prepare(ctx, ['ephemeral'] + ctx['args'], realize=False))
 
 
 def cli_list(ctx):
