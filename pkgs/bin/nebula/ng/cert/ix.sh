@@ -7,5 +7,5 @@ cd cmd/nebula-cert
 
 {% block install %}
 mkdir ${out}/bin
-cp nebula-cert ${out}/bin
+cp nebula-cert ${out}/bin/nebula_ng_cert
 {% endblock %}

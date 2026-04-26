@@ -7,5 +7,5 @@ cd cmd/nebula
 
 {% block install %}
 mkdir ${out}/bin
-cp nebula ${out}/bin
+cp nebula ${out}/bin/nebula_ng
 {% endblock %}
