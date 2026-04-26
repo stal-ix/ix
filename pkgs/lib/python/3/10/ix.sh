@@ -5,6 +5,17 @@
 bld/pip/scripts
 {% endblock %}
 
+{% block configure_flags %}
+{{super()}}
+{# Drop test modules from the install — both removes the freeze-only
+   `__phello__.foo.py` file (handled defensively in py_exports too)
+   and avoids listing lib2to3/tests/* whose test_*.py files import
+   sibling fixtures from a tests/data/ dir that has no __init__.py,
+   which makes freeze.py's modulefinder bail on `lib2to3.tests.data`.
+   Available since CPython 3.10. 3/12+ already pass this. #}
+--disable-test-modules
+{% endblock %}
+
 {% block install %}
 {{super()}}
 {# Generate the `exports` module list so freeze.sh embeds every .py
