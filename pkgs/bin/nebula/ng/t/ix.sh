@@ -5,7 +5,7 @@ nebula_ng
 {% endblock %}
 
 {% block version %}
-21f8627a82cb697be09224382042dbcfdfc53a35
+e2554afe994e35855b28ea12d43877ac89e2be76
 {% endblock %}
 
 {% block go_url %}
@@ -13,7 +13,7 @@ https://github.com/pg83/nebula/archive/{{self.version().strip()}}.tar.gz
 {% endblock %}
 
 {% block go_sha %}
-ac64f8792804991ca13b52dbbf70046549b90d4be092b0e136a4e0001babd49e
+478381d72ab5c22f7bf4819eebf7dd5745dbcebcbbfce15e1fe3da7c77bdff8a
 {% endblock %}
 
 {% block go_tool %}
