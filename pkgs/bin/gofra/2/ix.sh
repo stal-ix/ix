@@ -5,8 +5,8 @@ gofra2
 {% endblock %}
 
 {% block fetch %}
-https://github.com/pg83/gofra/archive/0aa1e6f7c8ded5b0a47cfc0eb4928536526bbd93.tar.gz
-c988f83bd6409c96d307ccb5d2ca1e1bc56246580776c3987af63d04064466de
+https://github.com/pg83/gofra/archive/6103176536e46765524bd63d12c32beb51ebc913.tar.gz
+40ca36e43640a56a04bda6e113fe25ac47b657a78a79f4b662e22d314ebe4951
 {% endblock %}
 
 {% block bld_libs %}
