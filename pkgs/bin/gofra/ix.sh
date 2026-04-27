@@ -5,7 +5,7 @@ gofra
 {% endblock %}
 
 {% block version %}
-5c90477041c50f60a49d8da968ad56a5e0499396
+72e8fe8408f2df1b461c4c6a7de2e28d8b5de99d
 {% endblock %}
 
 {% block go_url %}
@@ -13,7 +13,7 @@ https://github.com/pg83/gofra/archive/{{self.version().strip()}}.tar.gz
 {% endblock %}
 
 {% block go_sha %}
-cf5ddbfc6290ed61c3affb52106e462c0f85698b9acc3170e5435599345b96e0
+a9bfd8c4128c756fe0f41c4e7f34778755163269ec03c99eb7d34294db65375e
 {% endblock %}
 
 {% block go_tool %}
