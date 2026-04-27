@@ -1,8 +1,8 @@
 {% extends '//die/c/make.sh' %}
 
 {% block fetch %}
-https://github.com/pg83/std/archive/refs/tags/8.tar.gz
-6b41b7fb14580dd4b132ac487947189eaccc1ced3bcd03afc39bc2ed5a7e461c
+https://github.com/pg83/std/archive/f14cc2379834cf0560d9bfab4f646163766f4915.tar.gz
+71271e058ac9cf41fe84720b25f22f9fe4d2b9156d45c5904d06bb445b2c213c
 {% endblock %}
 
 {% block lib_deps %}
@@ -11,6 +11,7 @@ lib/c++/dispatch
 
 {% block bld_libs %}
 lib/rapidhash
+lib/linux/headers
 {% endblock %}
 
 {% block install %}
