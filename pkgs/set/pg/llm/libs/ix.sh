@@ -3,6 +3,7 @@
 {% block lib_deps %}
 lib/c
 lib/c++
+lib/mnl
 lib/uring
 lib/kernel
 lib/aws/lc
