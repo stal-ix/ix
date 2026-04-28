@@ -1,12 +1,12 @@
 {% extends '//die/c/make.sh' %}
 
 {% block pkg_name %}
-gofra2
+gofra
 {% endblock %}
 
 {% block fetch %}
-https://github.com/pg83/gofra/archive/6103176536e46765524bd63d12c32beb51ebc913.tar.gz
-40ca36e43640a56a04bda6e113fe25ac47b657a78a79f4b662e22d314ebe4951
+https://github.com/pg83/gofra/archive/da0bb234e743aafe07646d7dd38bf476238e3288.tar.gz
+e4b3ede41d795f03376b0716bd6adfe6c696fec00086879cc9f7683e137edca8
 {% endblock %}
 
 {% block bld_libs %}
@@ -17,10 +17,10 @@ lib/linux/headers
 {% endblock %}
 
 {% block make_target %}
-gofra2
+gofra
 {% endblock %}
 
 {% block install %}
 mkdir ${out}/bin
-cp gofra2 ${out}/bin/
+cp gofra ${out}/bin/
 {% endblock %}
