@@ -1018,4 +1018,5 @@ bin/net/hack
 bin/stone/soup
 bin/cata/dda
 bin/pipes
+bin/warp
 {% endblock %}
