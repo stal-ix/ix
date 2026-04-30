@@ -9,6 +9,7 @@ etc/tmpfs
 set/stalix
 set/pg/vpn
 set/pg/secrets
+bin/kernel/7/0
 bin/kernel/6/17
 bin/ix/keyboard
 bin/btrfs/progs
