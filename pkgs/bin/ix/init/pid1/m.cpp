@@ -5,6 +5,7 @@
 #include <std/str/hash.h>
 #include <std/sym/i_map.h>
 #include <std/sys/throw.h>
+#include <std/mem/obj_pool.h>
 #include <std/ios/in_fd.h>
 #include <std/ios/in_mem.h>
 #include <std/lib/vector.h>
@@ -18,7 +19,7 @@
 #include <unistd.h>
 #include <sys/wait.h>
 
-using namespace Std;
+using namespace stl;
 
 namespace {
     static inline auto& e() {
@@ -70,9 +71,18 @@ namespace {
     };
 
     struct Context {
+        ObjPool::Ref pool;
         Buffer where;
         IntMap<Proc> running;
         IntMap<ProcID> pids;
+
+        Context(Buffer w)
+            : pool(ObjPool::fromMemory())
+            , where(w)
+            , running(pool.mutPtr())
+            , pids(pool.mutPtr())
+        {
+        }
 
         inline void run() {
             while (true) {
@@ -94,7 +104,8 @@ namespace {
         }
 
         void step() {
-            IntMap<bool> cur;
+            auto stepPool = ObjPool::fromMemory();
+            IntMap<bool> cur(stepPool.mutPtr());
 
             StringBuilder pb;
 
@@ -182,7 +193,5 @@ namespace {
 }
 
 int main() {
-    Context{
-        .where = StringView(u8"/etc/services"),
-    }.run();
+    Context(StringView(u8"/etc/services")).run();
 }
