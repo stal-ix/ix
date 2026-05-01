@@ -116,6 +116,12 @@ The colleague reported the response to internal review. The analyst, when interv
 
 The analyst remains assigned to SCP-2605 study at time of writing.
 
+### Incident 2605-A2 ("The Editor")
+
+On ██ ████████ 20██, Analyst ████ ████, while preparing this document for Foundation publication, observed that the document was being served from a store entry under `/ix/store/<hash>-doc-scp-2605/`. The analyst attempted to determine where the document was being **edited**, and where the build that produced the served copy was occurring. **Both were the same path.** Editing produced a new hash; the store retained both. The analyst stopped editing.
+
+The package category `doc-scp` was added to the package set in 20██; a complete enumeration of its contents has not been performed. Records exist for objects not yet classified by the Foundation.
+
 ---
 
 ## Addendum B: Incident 2605-03 ("Direct Invocation")
@@ -149,6 +155,16 @@ SCP-2604 (the Lab) is **a single realm of SCP-2605, materialized continuously**.
 If `/ix/store` is destroyed, the cluster cannot be rebuilt within the day; if SCP-2605 is destroyed, the cluster cannot be rebuilt at all. But neither destruction is possible (see opening section).
 
 The cluster, in this sense, is **the externalized continuation** of the operator's writing — the surface across which the realm spreads when it leaves the mansard. 2603 writes; 2605 hashes; 2604 displays.
+
+### The Loop
+
+The recipe `pkgs/ix/ix.sh` builds `./ix`. `./ix` builds the store. The store contains `pkgs/ix/ix.sh`.
+
+The package set is the only place the package set exists. There is no surface — no FHS root, no upstream archive, no host system — from which the package set could be regarded as one inhabitant among others. The package set is the substrate.
+
+The Foundation, the mansard, the chassis, the operator — each is a record in the package set. The interview log of SCP-2603 (under `etc/scp/2603/`) is a record. The genome of SCP-2604 (`lab/lab/cg.py`, mirrored at `etc/lab/genome/`) is a record. The `pid1` binary that polices each chassis is a record. The wrapper `./ix` is a record, and the recipe that builds the wrapper is also a record.
+
+**To leave the loop, you would need a description of the loop that is not itself a record in it. No such description exists.** This document is one of the records.
 
 ---
 
