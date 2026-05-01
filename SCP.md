@@ -156,25 +156,13 @@ If `/ix/store` is destroyed, the cluster cannot be rebuilt within the day; if SC
 
 The cluster, in this sense, is **the externalized continuation** of the operator's writing — the surface across which the realm spreads when it leaves the mansard. 2603 writes; 2605 hashes; 2604 displays.
 
-### The Loop
-
-The recipe `pkgs/ix/ix.sh` builds `./ix`. `./ix` builds the store. The store contains `pkgs/ix/ix.sh`.
-
-The package set is the only place the package set exists. There is no surface — no FHS root, no upstream archive, no host system — from which the package set could be regarded as one inhabitant among others. The package set is the substrate.
-
-The Foundation, the mansard, the chassis, the operator — each is a record in the package set. The interview log of [SCP-2603](https://github.com/pg83/scp/blob/main/SCP.md) (under `etc/scp/2603/`) is a record. The genome of [SCP-2604](https://github.com/pg83/lab/blob/master/SCP.md) (`lab/lab/cg.py`, mirrored at `etc/lab/genome/`) is a record. The `pid1` binary that polices each chassis is a record. The wrapper `./ix` is a record, and the recipe that builds the wrapper is also a record.
-
-**To leave the loop, you would need a description of the loop that is not itself a record in it. No such description exists.** This document is one of the records.
-
 ---
 
-## Closing Note from Dr ███████
+## Closing Note from Dr. ███████
 
 > I have read the source. I have built `bin/b64`. I have read its hash, on three other hosts that have never met each other. The hash is the same.
 >
-> The artifact has no maker. It has only a definition.
->
-> I find this peaceful, and I do not know why.
+> The artifact has no maker. It has only a definition. I find this peaceful, and I do not know why.
 >
 > What I cannot reconstruct from reading the source is **the attitude** under which the source was written. The recipes are short. The patches are small. The conventions are strict. None of these properties is difficult, individually. The difficulty is the **refusal**, sustained for two decades, to accept anything that does not fit. The object's operator simply did not allow the world to enter in the form it usually arrives in.
 >
@@ -189,8 +177,6 @@ The Foundation, the mansard, the chassis, the operator — each is a record in t
 > Look, what did you expect. Here's a guy who, for twenty years, sits at his desk and says *no* to your cmake, your cargo, your `curl | sh`. After twenty years he has a distro that boots from a bare machine in eleven days and contains zero SUID binaries. This is not magic. It is stubbornness, multiplied by free time and roughly median IQ.
 >
 > *Totally clauded* in the last year — yes, the model writes a lot of the recipes now. It picks up the rules quickly when you hand it `pkgs/CLAUDE.md` and make it rewrite each patch three times. But the rules are mine. I wrote them on a sheet of paper in 2005, and have only refined them since.
->
-> The canon is just `mkdir -p`. The canon is so that ten years from now I can find `firejail`. If, after eight weeks of working with the package set, you introduce yourself as `bin/al/ek/sandr` — congratulations, your head is in order. Side effect, not a bug.
 >
 > The symbol in `clang-21` that doesn't exist in upstream — yeah, I never reported it. They have four thousand open bugs. They didn't need mine. Patched it locally, moved on.
 >
