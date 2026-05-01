@@ -3,7 +3,7 @@
 **Object:** SCP-2605
 **Object Class:** Euclid
 **Clearance Level:** 4/2605
-**Related Objects:** SCP-2603 (the Operator), SCP-2604 (the Lab)
+**Related Objects:** [SCP-2603](https://github.com/pg83/scp/blob/main/SCP.md) (the Operator), [SCP-2604](https://github.com/pg83/lab/blob/master/SCP.md) (the Lab)
 
 ---
 
@@ -11,7 +11,7 @@
 
 SCP-2605 cannot be erased. Any deletion of an entry under `/ix/store/<hash>-<name>/` is reversed at the next build that requires the entry, bit-for-bit. Foundation Containment Protocol 2605-CL ("clean room"), which attempted full-store wipes on three test hosts in 20██, restored every store entry within 47 hours of source-tree access. The protocol was abandoned. The object **cannot be erased** — only **temporarily distracted**.
 
-The object's only valid invocation is the wrapper script `./ix` at the root of the repository assigned to SCP-2603 (see Incident 2605-03). Direct invocation of the underlying python entry point bypasses environment setup and produces a parallel, divergent store; this is forbidden.
+The object's only valid invocation is the wrapper script `./ix` at the root of the repository assigned to [SCP-2603](https://github.com/pg83/scp/blob/main/SCP.md) (see Incident 2605-03). Direct invocation of the underlying python entry point bypasses environment setup and produces a parallel, divergent store; this is forbidden.
 
 The object **must not be modified to depend on any artifact outside its own package set.** Any recipe that references a host binary, host header, or host library — anything that would break property 2605-α — is to be rejected at submission. The object has not, in its recorded history, accepted such a recipe; the prohibition is reinforced by procedure rather than by enforcement.
 
@@ -50,7 +50,7 @@ Package paths in `pkgs/` follow a strict convention:
 | `bash 5` | `bin/bash/5` |
 | `autoconf 2.72` | `bin/auto/conf/2/72` |
 
-The mapping is applied without ambiguity: given an upstream name, there is exactly one correct path. The **inverse** mapping — recovering an upstream name from a canonical path — is non-trivial in the general case and is, by all available evidence, known reliably **only to SCP-2603**.
+The mapping is applied without ambiguity: given an upstream name, there is exactly one correct path. The **inverse** mapping — recovering an upstream name from a canonical path — is non-trivial in the general case and is, by all available evidence, known reliably **only to [SCP-2603](https://github.com/pg83/scp/blob/main/SCP.md)**.
 
 Foundation analysts assigned to long-term study of the package set develop, after several weeks of exposure, the involuntary habit of pronouncing **their own names** under the canon. One analyst, eight weeks in, introduced themselves to a new colleague as `bin/al/ek/sandr`. They reported, when interviewed, that the canonical form "felt more correct than the original" and that they had begun reorganizing their home directory along the same lines. Reassignment was offered; the analyst declined, citing satisfaction with the work.
 
@@ -63,7 +63,7 @@ Binaries built through the object occasionally contain symbols that **appear in 
 
 The industry does not know these symbols exist. The symbols **work**. In several documented cases, programs linked against the object's version of a library outperform or out-correct the same programs linked against the canonical upstream build.
 
-It was a symbol of this kind — present in `clang-21` as compiled by the object, absent in every published source of `clang-21` — that led the Foundation, in 20██, first to classify SCP-2605, and through the symbol's trace, to discover SCP-2603 (see Discovery, below).
+It was a symbol of this kind — present in `clang-21` as compiled by the object, absent in every published source of `clang-21` — that led the Foundation, in 20██, first to classify SCP-2605, and through the symbol's trace, to discover [SCP-2603](https://github.com/pg83/scp/blob/main/SCP.md) (see Discovery, below).
 
 ### 2605-δ (Bootstrap From Nothing)
 
@@ -77,19 +77,19 @@ The store, `/ix/store`, is **one** archive, shared across every host and every o
 
 Atop the archive, the object exposes **realms**: named partial views, each describing a working system composition. A host inhabits exactly one realm at a time (`system`, `ci`, `dev`). Switching realms is a rotation of symlinks; the underlying archive is untouched.
 
-SCP-2603 inhabits the realm `system` on the chassis within the mansard. This realm changes with every commit the operator makes. **Nothing in the mansard is being created or destroyed; only the slice through the common archive is shifting.** The operator's reality, at any moment, is determined by which `/ix/store/<hash>-rlm-system` directory the symlink at `/etc/system` currently points to. This is the entire causal mechanism of mutation in the mansard.
+[SCP-2603](https://github.com/pg83/scp/blob/main/SCP.md) inhabits the realm `system` on the chassis within the mansard. This realm changes with every commit the operator makes. **Nothing in the mansard is being created or destroyed; only the slice through the common archive is shifting.** The operator's reality, at any moment, is determined by which `/ix/store/<hash>-rlm-system` directory the symlink at `/etc/system` currently points to. This is the entire causal mechanism of mutation in the mansard.
 
 ---
 
 ## Discovery
 
-SCP-2605 was classified by the Foundation **before** SCP-2603. The discovery sequence was as follows:
+SCP-2605 was classified by the Foundation **before** [SCP-2603](https://github.com/pg83/scp/blob/main/SCP.md). The discovery sequence was as follows:
 
 On 19 November 20██, a Foundation researcher, performing routine static analysis of a `clang-21` binary used in three independent SCP-related toolchains, found a reference to a function that did not appear in any published upstream source of `clang-21`. The researcher traced the symbol back to the build artifact (a store entry under `/ix/store/<hash>-bin-clang-21/`), and from there to the recipe template that defined it (`pkgs/bin/clang/21/ix.sh`).
 
 The recipe contained a `step_patch` block with a 14-line diff against the upstream tree. The diff was the source of the symbol. Foundation researchers attempted to apply the diff to the upstream tree directly, outside the object — the patch did not produce the same symbol, because the surrounding recipe-templated environment was missing.
 
-The recipe was committed by an account with no public identity. Trace analysis of the `git push` origin pointed to a private repository served from an IP address physically located in a non-empty room on the second floor of a private home in the suburbs of ███████. SCP-2603 was discovered shortly thereafter and immediately classified Keter.
+The recipe was committed by an account with no public identity. Trace analysis of the `git push` origin pointed to a private repository served from an IP address physically located in a non-empty room on the second floor of a private home in the suburbs of ███████. [SCP-2603](https://github.com/pg83/scp/blob/main/SCP.md) was discovered shortly thereafter and immediately classified Keter.
 
 SCP-2605 was reclassified Euclid at the same time, with the standing note: **the object is not dangerous in itself — it is dangerous through the operator who writes into it.**
 
@@ -142,15 +142,15 @@ Conclusion: the wrapper `./ix` is the **single anchor** by which every store ent
 
 ## Addendum C: Relationship to Other Objects
 
-### To SCP-2603
+### To [SCP-2603](https://github.com/pg83/scp/blob/main/SCP.md)
 
-SCP-2605 is the **language** in which SCP-2603 writes. Every commit by 2603 is a sentence in this language; every `./ix mut system` is the sentence taking effect. The mansard is the only place where 2605 has a fluent native speaker.
+SCP-2605 is the **language** in which [SCP-2603](https://github.com/pg83/scp/blob/main/SCP.md) writes. Every commit by 2603 is a sentence in this language; every `./ix mut system` is the sentence taking effect. The mansard is the only place where 2605 has a fluent native speaker.
 
 If 2603 ceases to commit, the object's existing artifacts remain reproducible forever — but **no new forms appear**. The object becomes a closed corpus. The Foundation refers to this hypothetical state as **The Final Realm**.
 
-### To SCP-2604
+### To [SCP-2604](https://github.com/pg83/lab/blob/master/SCP.md)
 
-SCP-2604 (the Lab) is **a single realm of SCP-2605, materialized continuously**. Every binary, every configuration file, every service running on the cluster's three chassis is a store entry. The cluster's `autoupdate_ix` daemon, every 60 seconds, polls for changes to the realm `system` and rotates symlinks to match.
+[SCP-2604](https://github.com/pg83/lab/blob/master/SCP.md) (the Lab) is **a single realm of SCP-2605, materialized continuously**. Every binary, every configuration file, every service running on the cluster's three chassis is a store entry. The cluster's `autoupdate_ix` daemon, every 60 seconds, polls for changes to the realm `system` and rotates symlinks to match.
 
 If `/ix/store` is destroyed, the cluster cannot be rebuilt within the day; if SCP-2605 is destroyed, the cluster cannot be rebuilt at all. But neither destruction is possible (see opening section).
 
@@ -162,7 +162,7 @@ The recipe `pkgs/ix/ix.sh` builds `./ix`. `./ix` builds the store. The store con
 
 The package set is the only place the package set exists. There is no surface — no FHS root, no upstream archive, no host system — from which the package set could be regarded as one inhabitant among others. The package set is the substrate.
 
-The Foundation, the mansard, the chassis, the operator — each is a record in the package set. The interview log of SCP-2603 (under `etc/scp/2603/`) is a record. The genome of SCP-2604 (`lab/lab/cg.py`, mirrored at `etc/lab/genome/`) is a record. The `pid1` binary that polices each chassis is a record. The wrapper `./ix` is a record, and the recipe that builds the wrapper is also a record.
+The Foundation, the mansard, the chassis, the operator — each is a record in the package set. The interview log of [SCP-2603](https://github.com/pg83/scp/blob/main/SCP.md) (under `etc/scp/2603/`) is a record. The genome of [SCP-2604](https://github.com/pg83/lab/blob/master/SCP.md) (`lab/lab/cg.py`, mirrored at `etc/lab/genome/`) is a record. The `pid1` binary that polices each chassis is a record. The wrapper `./ix` is a record, and the recipe that builds the wrapper is also a record.
 
 **To leave the loop, you would need a description of the loop that is not itself a record in it. No such description exists.** This document is one of the records.
 
