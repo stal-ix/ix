@@ -71,6 +71,8 @@ The object can be reconstructed from a host containing only `/bin/sh` and a sing
 
 The mainstream industry consensus regards this property as impractical at the scale of a complete distribution. The object is the only known counterexample under continuous operation.
 
+The bootstrap chain has been complete and self-contained since **14 March 2006**; before that date, recipes still referenced host-system tooling on certain edge paths.
+
 ### 2605-ε (Realms)
 
 The store, `/ix/store`, is **one** archive, shared across every host and every operator that has ever interacted with the object. There is no notion of "active version" within the archive — every artifact ever produced remains, indexed by hash.
