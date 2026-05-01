@@ -25,13 +25,13 @@ Prohibited:
 
 ## Description
 
-SCP-2605 — referred to in the operator's nomenclature as **ix** — is a source-based, content-addressed package manager and build system. It is not the description of a build system; it is **a working demonstration of a position rejected by the rest of the industry**: full static linking, hermetic builds without exception, cross-target without emulation, no SUID binaries, no runtime-loaded plugins, no host dependencies. Each property, individually, is regarded by mainstream Linux distributions as impractical at scale. The object exists, has existed continuously since 2005, and contains on the order of 10⁵ store entries demonstrating that the position is practical.
+SCP-2605 — referred to in the Operator's nomenclature as **ix** — is a source-based, content-addressed package manager and build system. It is not the description of a build system; it is **a working demonstration of a position rejected by the rest of the industry**: full static linking, hermetic builds without exception, cross-target without emulation, no SUID binaries, no runtime-loaded plugins, no host dependencies. Each property, individually, is regarded by mainstream Linux distributions as impractical at scale. The object exists, has existed continuously since 2005, and contains on the order of 10⁵ store entries demonstrating that the position is practical.
 
 The object does not write code. It **rewrites the world into a corrected form** — every upstream source, on entering the package set, is fitted into a recipe that compiles, links, and installs it under the object's rules. Any deviation between the upstream form and the object's expectation is patched in the recipe, never in the source. The corrected form is sealed by hash into the store and persists indefinitely.
 
 ### 2605-α (Self-Reference)
 
-Every recipe declares its dependencies in terms of other recipes within the object. Host `gcc`, host `make`, host `glibc`, host headers, host `pkg-config` — none appear anywhere in the package set. The object speaks only to itself.
+Every recipe declares its dependencies in terms of other recipes within the object. No host toolchain, no host headers, no host-side configuration appears anywhere in the package set. The object speaks only to itself.
 
 Consequence: a recipe built outside the object produces an artifact that **looks** like the object's output but is not bit-identical, and differs in subtle edge-case behavior. The object's outputs are valid only **within** the object. Removing the wrapper invalidates the artifact.
 
@@ -62,11 +62,11 @@ The bootstrap chain has been complete and self-contained since **14 March 2006**
 
 ### 2605-ε (Realms)
 
-The archive of all artifacts ever produced by the object is single — shared across every host and every operator. There is no notion of an "active version" within it. Every form ever assembled remains.
+The archive of all artifacts ever produced by the object is single — shared across every host and every Operator. There is no notion of an "active version" within it. Every form ever assembled remains.
 
 Atop the archive, the object exposes **realms**: named partial views, each describing a coherent system composition. A host inhabits exactly one realm at a time. Switching realms is the redirection of a single pointer; the underlying archive is untouched.
 
-[SCP-2603](https://github.com/pg83/scp/blob/main/SCP.md) inhabits one such realm. This realm changes with every commit the operator makes. **Nothing in the mansard is being created or destroyed; only the slice through the common archive is shifting.** The operator's reality, at any moment, is one slice of the archive.
+[SCP-2603](https://github.com/pg83/scp/blob/main/SCP.md) inhabits one such realm. This realm changes with every commit the Operator makes. **Nothing in the mansard is being created or destroyed; only the slice through the common archive is shifting.** The Operator's reality, at any moment, is one slice of the archive. The Foundation's reality, at any moment, is some other slice — but no analyst has been able to determine which.
 
 ---
 
@@ -80,7 +80,7 @@ The recipe contained a 14-line patch against the upstream tree. The patch was th
 
 The recipe was committed by an account with no public identity. Trace analysis of the `git push` origin pointed to a private repository served from an IP address physically located in a non-empty room on the second floor of a private home in the suburbs of ███████. [SCP-2603](https://github.com/pg83/scp/blob/main/SCP.md) was discovered shortly thereafter and immediately classified Keter.
 
-SCP-2605 was reclassified Euclid at the same time, with the standing note: **the object is not dangerous in itself — it is dangerous through the operator who writes into it.**
+SCP-2605 was reclassified Euclid at the same time, with the standing note: **the object is not dangerous in itself — it is dangerous through the Operator who writes into it.** The Operator's writing has not been observed to slow.
 
 ---
 
@@ -128,7 +128,7 @@ If 2603 ceases to commit, the object's existing artifacts remain reproducible fo
 
 If the store is destroyed, the cluster cannot be rebuilt within the day; if SCP-2605 is destroyed, the cluster cannot be rebuilt at all. But neither destruction is possible (see opening section).
 
-The cluster, in this sense, is **the externalized continuation** of the operator's writing — the surface across which the realm spreads when it leaves the mansard. 2603 writes; 2605 hashes; 2604 displays.
+The cluster, in this sense, is **the externalized continuation** of the Operator's writing — the surface across which the realm spreads when it leaves the mansard. 2603 writes; 2605 hashes; 2604 displays.
 
 ---
 
@@ -138,7 +138,7 @@ The cluster, in this sense, is **the externalized continuation** of the operator
 >
 > The artifact has no maker. It has only a definition. I find this peaceful, and I do not know why.
 >
-> What I cannot reconstruct from reading the source is **the attitude** under which the source was written. The recipes are short. The patches are small. The conventions are strict. None of these properties is difficult, individually. The difficulty is the **refusal**, sustained for two decades, to accept anything that does not fit. The object's operator simply did not allow the world to enter in the form it usually arrives in.
+> What I cannot reconstruct from reading the source is **the attitude** under which the source was written. The recipes are short. The patches are small. The conventions are strict. None of these properties is difficult, individually. The difficulty is the **refusal**, sustained for two decades, to accept anything that does not fit. The object's Operator simply did not allow the world to enter in the form it usually arrives in.
 >
 > Twenty years of saying *no* to the host's `gcc`. Twenty years of saying *no* to the dynamic loader. Twenty years of saying *no* to the SUID bit, to upstream `Makefile` ergonomics, to the assumption that `host == target`. Twenty years of writing the patch instead of filing the bug.
 >
