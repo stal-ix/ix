@@ -33,7 +33,7 @@ The object does not write code. It **rewrites the world into a corrected form** 
 
 Every recipe declares its dependencies in terms of other recipes within the object. Host `gcc`, host `make`, host `glibc`, host headers, host `pkg-config` — none appear anywhere in the package set. The object speaks only to itself.
 
-Consequence: a recipe lifted from the package set and built outside of `./ix` produces an artifact that **looks** like the object's output but is not bit-identical, and frequently differs in edge-case behavior (signal handling, locale resolution, link order). The object's outputs are valid only **within** the object. Removing the wrapper invalidates the artifact.
+Consequence: a recipe built outside the object produces an artifact that **looks** like the object's output but is not bit-identical, and differs in subtle edge-case behavior. The object's outputs are valid only **within** the object. Removing the wrapper invalidates the artifact.
 
 ### 2605-β (The Canon)
 
@@ -124,7 +124,7 @@ If 2603 ceases to commit, the object's existing artifacts remain reproducible fo
 
 ### To [SCP-2604](https://github.com/pg83/lab/blob/master/SCP.md)
 
-[SCP-2604](https://github.com/pg83/lab/blob/master/SCP.md) (the Lab) is **a single realm of SCP-2605, materialized continuously**. Every binary, every configuration file, every service running on the cluster's three chassis is a store entry. The cluster's `autoupdate_ix` daemon, every 60 seconds, polls for changes to the realm `system` and rotates symlinks to match.
+[SCP-2604](https://github.com/pg83/lab/blob/master/SCP.md) (the Lab) is **a single realm of SCP-2605, materialized continuously**. Everything that runs on the Lab is a store entry within the object. The Lab keeps itself in sync with the realm: when the realm advances, the Lab advances within minutes.
 
 If the store is destroyed, the cluster cannot be rebuilt within the day; if SCP-2605 is destroyed, the cluster cannot be rebuilt at all. But neither destruction is possible (see opening section).
 
