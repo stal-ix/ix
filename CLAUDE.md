@@ -3,6 +3,10 @@
 Package path = package name. The directory path under `pkgs/` is the package identifier:
 `pkgs/bin/neo/vim/ix.sh` → package `bin/neo/vim`.
 
+## Coding conventions
+
+- Git author: `claude <claude@users.noreply.github.com>`. Commit messages in English.
+
 ## Rules
 
 - Compound project names are split into path components by word boundaries:

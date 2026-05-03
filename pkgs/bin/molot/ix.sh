@@ -1,15 +1,15 @@
 {% extends '//die/go/build.sh' %}
 
 {% block go_tool %}
-bin/go/lang/22
+bin/go/lang/25
 {% endblock %}
 
 {% block go_url %}
-https://github.com/pg83/molot/archive/refs/tags/11.tar.gz
+https://github.com/pg83/molot/archive/refs/tags/22.tar.gz
 {% endblock %}
 
 {% block go_sha %}
-c2b84e2c9d2104028c2e53948a76d68698c27d52f0eb08773fc3910cdfca58e8
+f6a260aca8c2d451d79804f24e605ed896f5ca2457ed44fa7f88a33fe8da39d5
 {% endblock %}
 
 {% block go_bins %}

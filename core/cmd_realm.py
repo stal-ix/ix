@@ -26,10 +26,26 @@ def group_realms(l):
         yield d
 
 
-def prepare(ctx, args, realize=True):
+def prepare(ctx, args, realize=True, assemble=True):
     mngr = cm.Manager(cf.config_from(ctx))
-    nodes = [mngr.ensure_realm(d[0][2]['r']).mut(d) for d in group_realms(cc.lex(args))]
-    graph = cg.build_graph(nodes)
+    realm_nodes = [mngr.ensure_realm(d[0][2]['r']).mut(d) for d in group_realms(cc.lex(args))]
+
+    if assemble:
+        build_nodes = realm_nodes
+    else:
+        # Skip realm assembly: target the package leaves directly,
+        # not the realm root that would `prepare_realm` them all
+        # together. Under IX_EXEC_KIND=molot the realm command
+        # downloads every dep's result tarball from S3 onto one
+        # machine, which is pure I/O for `ix build`'s "did this
+        # compile?" check. iter_all_runtime_depends returns the
+        # same flattened package set the realm would link, and
+        # build_graph's rec_nodes dedup is uid-keyed — so the
+        # resulting graph is exactly build_graph(realm_nodes)
+        # minus the realm node and its bld/realm toolchain.
+        build_nodes = [d for n in realm_nodes for d in n.iter_all_runtime_depends()]
+
+    graph = cg.build_graph(build_nodes)
 
     if os.environ.get('IX_DUMP_GRAPH', ''):
         print(json.dumps(graph, indent=4, sort_keys=True))
@@ -41,7 +57,7 @@ def prepare(ctx, args, realize=True):
     if not realize:
         return
 
-    for n in nodes:
+    for n in realm_nodes:
         yield n.from_prepared()
 
 
@@ -103,13 +119,15 @@ def cli_run(ctx):
 
 
 def cli_build(ctx):
-    # realize=False: don't open the realm output dirs after building.
-    # Under IX_EXEC_KIND=molot the build artifact lives in S3 and is
-    # never extracted into local /ix/store, so reading <out>/touch
-    # would fail with FileNotFoundError. We only need execute_graph
-    # to run; the from_prepared loop is for callers that go on to
-    # install() (mut) or use r.path (run).
-    list(prepare(ctx, ['ephemeral'] + ctx['args'], realize=False))
+    # realize=False: don't open the realm output dirs after building
+    # (under IX_EXEC_KIND=molot the build artifact lives in S3 and
+    # is never extracted into local /ix/store).
+    # assemble=False: don't build the realm assembly node either —
+    # `ix build` only needs to know each package compiled, not to
+    # gather their tarballs into one place. Skipping the realm
+    # avoids molot fetching every dep's result.zstd onto the
+    # caller's worker.
+    list(prepare(ctx, ['ephemeral'] + ctx['args'], realize=False, assemble=False))
 
 
 def cli_list(ctx):
