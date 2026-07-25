@@ -21,3 +21,8 @@ lib/png
 {% block env %}
 export CPPFLAGS="-I${out}/include/plutovg \${CPPFLAGS}"
 {% endblock %}
+
+{% block install %}
+{{super()}}
+sed -i 's| -pthread||g' ${out}/lib/pkgconfig/plutovg.pc
+{% endblock %}

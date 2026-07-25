@@ -13,6 +13,13 @@ https://github.com/glfw/glfw/archive/refs/tags/{{self.version().strip()}}.tar.gz
 c038d34200234d071fae9345bc455e4a8f2f544ab60150765d7704e08f3dac01
 {% endblock %}
 
+{# Backport https://github.com/glfw/glfw/commit/bb8048122a8ef5a12e60d2ab3c8586961ae2366c #}
+{% block patch %}
+patch -p1 << EOF
+{% include 'post-empty-event-wayland.patch' %}
+EOF
+{% endblock %}
+
 {% block lib_deps %}
 lib/c
 lib/wayland

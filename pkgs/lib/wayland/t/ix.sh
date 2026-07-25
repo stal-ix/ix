@@ -21,3 +21,17 @@ tests=false
 {% block c_rename_symbol %}
 os_create_anonymous_file
 {% endblock %}
+
+{% block install %}
+{{super()}}
+# The ix libc closure already supplies pthread support. Keeping the compiler
+# driver flag in public metadata makes -nostdlib consumers warn that it is
+# unused, and every reverse dependency inherits the noise.
+for pc in wayland-client wayland-server; do
+    file=${out}/lib/pkgconfig/${pc}.pc
+
+    if test -f ${file}; then
+        sed -i 's| -pthread||g' ${file}
+    fi
+done
+{% endblock %}
