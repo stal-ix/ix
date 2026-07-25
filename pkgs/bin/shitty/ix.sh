@@ -9,11 +9,11 @@ https://github.com/pg83/shitty
 {% endblock %}
 
 {% block git_commit %}
-06bd29adf4664c262210ab8fffe91ba2580123b5
+59f69588b0161f41425e3c33bf0a257a06c39bc0
 {% endblock %}
 
 {% block git_sha %}
-70a96c24991256f9d85bd49f4afd6b5ce8a4d579eb99fc388dab36a121d00580
+3cc8264c1970d72dccf030b2e579f46a2e3d6b342813a7ba70af86924a966dca
 {% endblock %}
 
 {% block pybuild_target %}
