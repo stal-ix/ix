@@ -9,6 +9,7 @@ export XCURSOR_SIZE=48
 export QT_FONT_DPI=192
 export GTK_A11Y=none
 export ZUTTY_FONT_SIZE=32
+export SHITTY_FONT_SIZE=32
 
 eval $(ssh-agent)
 
