@@ -23,8 +23,8 @@ bin/ninja
 bin/patch
 set/debug
 bin/wirez
-bin/shitty
 bin/imway
+bin/shitty
 bin/psmisc
 bin/evince
 bin/strace
@@ -70,6 +70,7 @@ set/pg/user/scripts
 bin/claude/code/wrap
 bin/minio/client/patched
 bin/imway/session(stalix=1)
+bin/alacritty(opengl=mesa/radv,vulkan=mesa/radv)
 {% endblock %}
 
 {% block run_data %}

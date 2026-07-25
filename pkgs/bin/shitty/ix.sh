@@ -9,15 +9,15 @@ https://github.com/pg83/shitty
 {% endblock %}
 
 {% block git_commit %}
-74d98246b2d5af573cbe3a6616215a981f115682
+06bd29adf4664c262210ab8fffe91ba2580123b5
 {% endblock %}
 
 {% block git_sha %}
-0c08085cc429aec346d7cdc0babb7a9ebf3f1d8f5e9269820537d063d638b1cf
+70a96c24991256f9d85bd49f4afd6b5ce8a4d579eb99fc388dab36a121d00580
 {% endblock %}
 
 {% block pybuild_target %}
-zutty
+st
 {% endblock %}
 
 {% block git_hook_1 %}
@@ -28,7 +28,9 @@ git config submodule.third_party/libstd.url https://github.com/pg83/std.git
 lib/c
 lib/glfw
 lib/freetype
+lib/harfbuzz
 lib/utf8/proc
+lib/simd/utf
 lib/linux/headers
 lib/glfw/deps
 lib/fontconfig
@@ -45,7 +47,7 @@ bin/glslang
 mkdir -p ${out}/bin
 mkdir -p ${out}/share/applications
 mkdir -p ${out}/share/icons/hicolor/scalable/apps
-cp zutty ${out}/bin/
-cp zutty.desktop ${out}/share/applications/
-cp zutty.svg ${out}/share/icons/hicolor/scalable/apps/
+cp st ${out}/bin/
+cp shitty.desktop ${out}/share/applications/
+cp shitty.svg ${out}/share/icons/hicolor/scalable/apps/
 {% endblock %}
