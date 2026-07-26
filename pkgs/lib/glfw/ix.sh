@@ -5,19 +5,12 @@ glfw
 {% endblock %}
 
 {% block version %}
-3.4
+2e873b83e0da32de1696e45461847fbca25b167f
 {% endblock %}
 
 {% block fetch %}
-https://github.com/glfw/glfw/archive/refs/tags/{{self.version().strip()}}.tar.gz
-c038d34200234d071fae9345bc455e4a8f2f544ab60150765d7704e08f3dac01
-{% endblock %}
-
-{# Backport https://github.com/glfw/glfw/commit/bb8048122a8ef5a12e60d2ab3c8586961ae2366c #}
-{% block patch %}
-patch -p1 << EOF
-{% include 'post-empty-event-wayland.patch' %}
-EOF
+https://github.com/pg83/glfw/archive/{{self.version().strip()}}.tar.gz
+0a1289d5a0b16e3dad79c556ecc35a9369b54df9037b563e5d93ad99b08de302
 {% endblock %}
 
 {% block lib_deps %}
@@ -37,11 +30,9 @@ lib/vulkan/headers
 lib/kernel
 {% endblock %}
 
-{# glfw bundles its own wayland-protocol code and privatizes most of the
-   generated interface objects with a _glfw_ prefix — but the fractional-scale
-   manager interface leaks unprefixed and collides with a consumer that ships
-   its own copy (imway generates the same protocol). rename it private so glfw
-   stops exporting it. #}
+{# The fork privatizes cursor-shape interfaces at source level. The
+   fractional-scale manager still leaks unprefixed and collides with consumers
+   such as imway that generate their own protocol code. #}
 {% block c_rename_symbol %}
 wp_fractional_scale_manager_v1_interface
 {% endblock %}
