@@ -5,12 +5,12 @@ glfw
 {% endblock %}
 
 {% block version %}
-33e7d5cc1e949afce2bc03a2f2c6f6b25ef306c1
+a2b295420d899be60c6a27ced21eb172bf51f675
 {% endblock %}
 
 {% block fetch %}
 https://github.com/pg83/glfw/archive/{{self.version().strip()}}.tar.gz
-8cc51df8b91a50e203c25ac7f3624959d8a910717a9e0e52d1aa86a064473637
+069e8d784766ea77685f19031a3d0f699afef0f8a9e577c3ec641ccaea26bbcd
 {% endblock %}
 
 {% block lib_deps %}
