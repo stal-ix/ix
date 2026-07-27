@@ -8,7 +8,7 @@ cat << EOF > imway-session
 # the session bus wraps the compositor; no env preseeding needed — imway
 # pushes its real socket name into the bus activation environment itself
 # (org.freedesktop.DBus.UpdateActivationEnvironment)
-exec dbus-exec-session imway "\${@}"
+exec dbus-exec-session /home/pg/monorepo/imway/imway "\${@}"
 EOF
 
 chmod +x *
