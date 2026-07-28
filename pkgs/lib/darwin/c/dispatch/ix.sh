@@ -9,6 +9,6 @@ lib/darwin/c/native
 lib/darwin/c/native/crt
 {% endif %}
 {% else %}
-lib/darwin/c/phracker
+lib/darwin/c/sdk/15/5(sdk_target={{sdk_target}})
 {% endif %}
 {% endblock %}
