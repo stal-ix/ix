@@ -1023,4 +1023,5 @@ bin/stone/soup
 bin/cata/dda
 bin/pipes
 bin/warp
+bin/sync/thing
 {% endblock %}
