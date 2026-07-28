@@ -1024,4 +1024,5 @@ bin/cata/dda
 bin/pipes
 bin/warp
 bin/sync/thing
+bin/thingd
 {% endblock %}
