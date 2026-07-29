@@ -5,7 +5,7 @@ thingd
 {% endblock %}
 
 {% block version %}
-13b058eac374ac9a9d6a9bdf8a40bd4f76ee83af
+70d8c2424ade4c328da74ba9278158354feb6ef6
 {% endblock %}
 
 {% block go_url %}
@@ -13,7 +13,7 @@ https://github.com/pg83/thingd/archive/{{self.version().strip()}}.tar.gz
 {% endblock %}
 
 {% block go_sha %}
-33e23d6052f7d510e66da40405621539754722f6d85635822da66cd225f8e68c
+19ff58208efdb0217a5ce6130f59a6669b57c2eae842173895a87914018cbfa0
 {% endblock %}
 
 {% block go_tags %}
