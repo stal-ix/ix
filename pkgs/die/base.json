@@ -21,6 +21,8 @@
         "deps": {% block induced_depends %}[]{% endblock %}
     },
     "net": {% block use_network %}false{% endblock %},
+    "tmpfs": {% block use_tmpfs %}true{% endblock %},
+    "isolate": {% block use_isolate %}{% if boot %}false{% else %}true{% endif %}{% endblock %},
     "predict_outputs": {% block predict_outputs %}[]{% endblock %},
     "task_pool": "{% block task_pool %}slot{% endblock %}",
     "repo": {

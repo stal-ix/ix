@@ -9,23 +9,9 @@ source_env() {
     done; IFS=${OFS}
 }
 
-fast_rm() (
-{% if notrash %}
-    rm -rf "${2}"
-{% else %}
-    mv "${2}" "{{ix_trash_dir}}/${IX_RANDOM}_${1}" || rm -rf "${2}"
-{% endif %}
-)
-
 prepare_f() {
     source_env "${IX_B_DIR}"
-
-    fast_rm 1 ${out}
-    mkdir -p ${out}
-
-    fast_rm 2 ${tmp}
     mkdir -p ${tmp}
-
     cd ${tmp}
     mkdir tmp
 }
@@ -53,9 +39,6 @@ cleanup_f() {
     chmod_ro_f
 {% if simulate_failure %}
     exit 1
-{% endif %}
-{% if not skipsrc and not skipsrc_one %}
-    fast_rm 3 ${tmp}
 {% endif %}
 }
 

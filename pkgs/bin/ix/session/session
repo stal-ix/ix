@@ -1,0 +1,12 @@
+#!/bin/sh -l
+
+export PATH=/bin
+
+reset
+clear
+
+unset LANG
+unset LOGIN_SCRIPT
+
+# will run /bin/init from user's realm
+exec /ix/realm/${USER}/bin/init

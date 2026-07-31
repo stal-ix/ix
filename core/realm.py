@@ -159,6 +159,9 @@ class RealmCtx:
             'out_dir': [self.out_dir],
             'cmd': [self.build_cmd()],
             'pool': 'misc',
+            'isolate': False,
+            'tmpfs': False,
+            'tmp': '',
         })
 
     def buildable(self):

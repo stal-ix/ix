@@ -5,12 +5,6 @@
 {% if show_script %}
 bin/sh/fmt
 {% endif %}
-{% if jail %}
-bld/jail
-{% endif %}
-{% if tmpfs %}
-bld/tmpfs
-{% endif %}
 {% endblock %}
 
 {% block script_body %}
@@ -25,41 +19,14 @@ exit 1
 {% endblock %}
 
 {% block script_body_sh %}
-# {{rebuild}}{{molot}}
+# {{rebuild}}
 {% endblock %}
 
-{% block script_confine %}
-{% if jail or tmpfs %}
-  unshare
-  -r
-  -U
-  -m
-  {% if jail %}
-    jail
-    /sys
-    {{ix_dir}}
-  {% endif %}
-  {% if tmpfs %}
-    tmpfs
-    {{ix_dir}}
-  {% endif %}
-{% elif stalix %}
-  {% if isfile('/ix/realm/system/bin/confine') %}
-    /ix/realm/system/bin/confine
-    {{ix_dir}}
-  {% endif %}
-  {% if skipsrc or skipsrc_one %}
-  {% elif isfile('/ix/realm/system/bin/tmpfs') %}
-    /ix/realm/system/bin/tmpfs
-    {{ix_dir}}
-  {% endif %}
-{% endif %}
 {% block script_parts %}
 sh
 -s
 {% endblock %}
-{% endblock %}
 
 {% block script_exec %}
-{{self.script_confine() | list_to_json}}
+{{self.script_parts() | list_to_json}}
 {% endblock %}

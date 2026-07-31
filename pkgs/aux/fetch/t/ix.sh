@@ -8,6 +8,7 @@ bld/pzd/ser
 {% endblock %}
 
 {% block use_network %}true{% endblock %}
+{% block use_isolate %}false{% endblock %}
 
 {% block predict_outputs %}
 [{"path": "share/{{self.fname().strip()}}", "sum": "{{sha}}"}]

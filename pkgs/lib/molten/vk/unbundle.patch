@@ -1,0 +1,117 @@
+diff --git a/cmake/recipes/SPIRV-Cross.cmake b/cmake/recipes/SPIRV-Cross.cmake
+index bdfc6d9..2c45e02 100644
+--- a/cmake/recipes/SPIRV-Cross.cmake
++++ b/cmake/recipes/SPIRV-Cross.cmake
+@@ -9,3 +9,14 @@ message(STATUS "External: creating target 'SPRIV-Cross::SPRIV-Cross'")
+-# Read Git commit hash from ExternalRevisions file
+-file(READ "${MOLTEN_VK_EXTERNAL_REVISIONS_DIR}/SPIRV-Cross_repo_revision" SPIRV_CROSS_COMMIT_HASH)
+-string(STRIP "${SPIRV_CROSS_COMMIT_HASH}" SPIRV_CROSS_COMMIT_HASH)
++find_path(SPIRV_CROSS_INCLUDE_DIR NAMES spirv_msl.hpp PATH_SUFFIXES spirv_cross REQUIRED)
++foreach(component IN ITEMS core reflect glsl msl)
++    string(TOUPPER "${component}" component_upper)
++    find_library(
++        SPIRV_CROSS_${component_upper}_LIBRARY
++        NAMES spirv-cross-${component}
++        REQUIRED
++    )
++    add_library(spirv-cross-${component} STATIC IMPORTED GLOBAL)
++    set_target_properties(spirv-cross-${component} PROPERTIES
++        IMPORTED_LOCATION "${SPIRV_CROSS_${component_upper}_LIBRARY}"
++        INTERFACE_INCLUDE_DIRECTORIES "${SPIRV_CROSS_INCLUDE_DIR}"
++    )
++endforeach()
+@@ -13,18 +24,5 @@ string(STRIP "${SPIRV_CROSS_COMMIT_HASH}" SPIRV_CROSS_COMMIT_HASH)
+-include(CPM)
+-CPMAddPackage(
+-  NAME SPIRV-Cross
+-  GITHUB_REPOSITORY KhronosGroup/SPIRV-Cross
+-  GIT_TAG ${SPIRV_CROSS_COMMIT_HASH}
+-  SYSTEM TRUE
+-  OPTIONS
+-    "SPIRV_CROSS_CLI OFF"
+-    "SPIRV_CROSS_ENABLE_TESTS OFF"
+-    "SPIRV_CROSS_ENABLE_GLSL ON"
+-    "SPIRV_CROSS_ENABLE_HLSL OFF"
+-    "SPIRV_CROSS_ENABLE_MSL ON"
+-    "SPIRV_CROSS_ENABLE_CPP OFF"
+-    "SPIRV_CROSS_ENABLE_REFLECT ON"
+-    "SPIRV_CROSS_ENABLE_C_API OFF"
+-    "SPIRV_CROSS_ENABLE_UTIL OFF"
+-    "SPIRV_CROSS_NAMESPACE_OVERRIDE MVK_spirv_cross"
+-    "SPIRV_CROSS_SKIP_INSTALL ON"
++set_target_properties(spirv-cross-glsl PROPERTIES
++    INTERFACE_LINK_LIBRARIES spirv-cross-core
++)
++set_target_properties(spirv-cross-msl PROPERTIES
++    INTERFACE_LINK_LIBRARIES spirv-cross-glsl
+diff --git a/cmake/recipes/SPIRV-Headers.cmake b/cmake/recipes/SPIRV-Headers.cmake
+index 6268948..b2c98d4 100644
+--- a/cmake/recipes/SPIRV-Headers.cmake
++++ b/cmake/recipes/SPIRV-Headers.cmake
+@@ -9,6 +9 @@ message(STATUS "External: creating target 'SPIRV-Headers::SPIRV-Headers'")
+-# Read Git commit hash from ExternalRevisions file
+-file(READ "${MOLTEN_VK_EXTERNAL_REVISIONS_DIR}/SPIRV-Headers_repo_revision" SPIRV_HEADERS_COMMIT_HASH)
+-string(STRIP "${SPIRV_HEADERS_COMMIT_HASH}" SPIRV_HEADERS_COMMIT_HASH)
+-
+-include(CPM)
+-CPMAddPackage("gh:KhronosGroup/SPIRV-Headers#${SPIRV_HEADERS_COMMIT_HASH}")
+\ No newline at end of file
++find_package(SPIRV-Headers CONFIG REQUIRED)
+diff --git a/cmake/recipes/SPIRV-Tools.cmake b/cmake/recipes/SPIRV-Tools.cmake
+index 3a79bb6..63dc39e 100644
+--- a/cmake/recipes/SPIRV-Tools.cmake
++++ b/cmake/recipes/SPIRV-Tools.cmake
+@@ -12,10 +12,8 @@ include(SPIRV-Headers)
+-set(SPIRV_TOOLS_BUILD_STATIC ON)
+-
+-# Read Git commit hash from ExternalRevisions file
+-file(READ "${MOLTEN_VK_EXTERNAL_REVISIONS_DIR}/SPIRV-Tools_repo_revision" SPIRV_TOOLS_COMMIT_HASH)
+-string(STRIP "${SPIRV_TOOLS_COMMIT_HASH}" SPIRV_TOOLS_COMMIT_HASH)
+-
+-include(CPM)
+-CPMAddPackage("gh:KhronosGroup/SPIRV-Tools#${SPIRV_TOOLS_COMMIT_HASH}")
+-
+-add_library(SPIRV-Tools::SPIRV-Tools ALIAS SPIRV-Tools-static)
+\ No newline at end of file
++find_package(SPIRV-Tools CONFIG REQUIRED)
++if(TARGET SPIRV-Tools-static)
++    add_library(SPIRV-Tools::SPIRV-Tools ALIAS SPIRV-Tools-static)
++elseif(TARGET SPIRV-Tools)
++    add_library(SPIRV-Tools::SPIRV-Tools ALIAS SPIRV-Tools)
++else()
++    message(FATAL_ERROR "SPIRV-Tools package does not provide a library target")
++endif()
+diff --git a/cmake/recipes/Vulkan-Headers.cmake b/cmake/recipes/Vulkan-Headers.cmake
+index 42a9fb9..e0263ae 100644
+--- a/cmake/recipes/Vulkan-Headers.cmake
++++ b/cmake/recipes/Vulkan-Headers.cmake
+@@ -9,6 +9 @@ message(STATUS "External: creating target 'Vulkan::Headers'")
+-# Read Git commit hash from ExternalRevisions file
+-file(READ "${MOLTEN_VK_EXTERNAL_REVISIONS_DIR}/Vulkan-Headers_repo_revision" VULKAN_HEADERS_COMMIT_HASH)
+-string(STRIP "${VULKAN_HEADERS_COMMIT_HASH}" VULKAN_HEADERS_COMMIT_HASH)
+-
+-include(CPM)
+-CPMAddPackage("gh:KhronosGroup/Vulkan-Headers#${VULKAN_HEADERS_COMMIT_HASH}")
+\ No newline at end of file
++find_package(VulkanHeaders CONFIG REQUIRED)
+diff --git a/cmake/recipes/cereal.cmake b/cmake/recipes/cereal.cmake
+index d618e9f..a352266 100644
+--- a/cmake/recipes/cereal.cmake
++++ b/cmake/recipes/cereal.cmake
+@@ -9,15 +9 @@ message(STATUS "External: creating target 'cereal::cereal'")
+-# Read Git commit hash from ExternalRevisions file
+-file(READ "${MOLTEN_VK_EXTERNAL_REVISIONS_DIR}/cereal_repo_revision" CEREAL_COMMIT_HASH)
+-string(STRIP "${CEREAL_COMMIT_HASH}" CEREAL_COMMIT_HASH)
+-
+-include(CPM)
+-CPMAddPackage(
+-  NAME cereal
+-  GITHUB_REPOSITORY USCiLab/cereal
+-  GIT_TAG ${CEREAL_COMMIT_HASH}
+-  SYSTEM TRUE
+-  OPTIONS
+-    "BUILD_DOC OFF"
+-    "BUILD_SANDBOX OFF"
+-    "SKIP_PERFORMANCE_COMPARISON ON"
+-)
++find_package(cereal CONFIG REQUIRED)

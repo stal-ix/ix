@@ -61,4 +61,5 @@ bin/xh
 bin/viu
 bin/band/which
 bin/lolcat
+bin/codex
 {% endblock %}

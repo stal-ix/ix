@@ -7,10 +7,13 @@ bld/boot/2/lib/c
 {% block bld_deps %}
 bld/boot/3/cc
 bld/boot/2/env
+bld/boot/3/shim
 {% endblock %}
 
 {% block patch %}
 {% if linux %}
+
+
 >lib/fnmatch.c
 {% endif %}
 {% endblock %}

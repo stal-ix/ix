@@ -1,9 +1,22 @@
+import os
 import sys
 import random
 import importlib
 import subprocess
 
 import core.error as ce
+
+
+def cwd_git_rev():
+    try:
+        r = subprocess.run(['git', 'rev-parse', 'HEAD'], capture_output=True, text=True, cwd=os.getcwd())
+    except Exception:
+        return ''
+
+    if r.returncode != 0:
+        return ''
+
+    return r.stdout.strip()
 
 
 CLIS = [
@@ -20,6 +33,7 @@ CLIS = [
     ('core.cmd_misc', 'misc_extract', True),
     ('core.cmd_misc', 'misc_fetch', True),
     ('core.cmd_misc', 'misc_link', True),
+    ('core.cmd_exec', 'exec', True),
 ]
 
 
@@ -60,6 +74,7 @@ def main_func(args, binary):
     ctx = {
         'args': a,
         'binary': binary,
+        'git_rev': cwd_git_rev(),
     }
 
     def run():

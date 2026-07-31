@@ -27,9 +27,6 @@ class Ops:
     def link(self, sb, files, out):
         return []
 
-    def fix(self, sb, node):
-        return node
-
     def execute_graph(self, graph):
         sys.exit(0)
 

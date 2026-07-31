@@ -1,5 +1,7 @@
 {% extends 'script.json' %}
 
+{% block use_isolate %}false{% endblock %}
+
 {% block script_body %}
 set -xue
 rm -rf ${out}

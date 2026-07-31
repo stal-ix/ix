@@ -31,6 +31,9 @@ rust_devendor vendored
 {% block cargo_refine_tools %}
 {% endblock %}
 
+{% block cargo_refine_unpack %}
+{% endblock %}
+
 {% block cargo_ver %}
 v3
 {% endblock %}
@@ -45,6 +48,7 @@ sha={{self.cargo_sha().strip()}}
 parent_id={{self.cargo_sha().strip()}}
 refine={{self.cargo_refine().strip() | b64e}}
 refine_tools={{self.cargo_refine_tools().strip() | b64e}}
+refine_unpack={{self.cargo_refine_unpack().strip() | b64e}}
 cargo_tool={{self.cargo_tool().strip()}}
 fetch_sha={{self.cargo_fetch_sha().strip()}}
 {% endblock %}

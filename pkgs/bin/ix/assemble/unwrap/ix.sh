@@ -1,4 +1,4 @@
-{% extends '//bin/assemble/ix.sh' %}
+{% extends '//bin/assemble/ng/ix.sh' %}
 
 {% block build_flags %}
 {{super()}}

@@ -13,4 +13,5 @@ def untar(path):
     print(f'untar {path}')
 
     with tarfile.open(path) as f:
+        f.chown = lambda *a, **kw: None
         f.extractall()

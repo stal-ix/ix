@@ -8,12 +8,14 @@ ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDGZ3aEKhxpG9JHG3uso/gUuUKe9NzHOXKAenZIDiDq
 etc/tmpfs
 set/stalix
 set/pg/vpn
+bin/thingd
 set/pg/secrets
 bin/kernel/7/0
-bin/kernel/6/17
+bin/kernel/7/1
 bin/btrfs/progs
 set/pg/system/hosts
 set/pg/system/nebula
+set/pg/system/thingd
 set/pg/system/initrd
 bin/dropbear/runit(dropbear_flags=-p 0.0.0.0:22)
 etc/user/0(hash={{pg_hash}},user=pg,pubkey={{self.pg_pubkey().strip()}},login_shell=/ix/realm/pg/bin/bash)

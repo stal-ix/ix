@@ -5,19 +5,21 @@ glfw
 {% endblock %}
 
 {% block version %}
-3.4
+a2b295420d899be60c6a27ced21eb172bf51f675
 {% endblock %}
 
 {% block fetch %}
-https://github.com/glfw/glfw/archive/refs/tags/{{self.version().strip()}}.tar.gz
-c038d34200234d071fae9345bc455e4a8f2f544ab60150765d7704e08f3dac01
+https://github.com/pg83/glfw/archive/{{self.version().strip()}}.tar.gz
+069e8d784766ea77685f19031a3d0f699afef0f8a9e577c3ec641ccaea26bbcd
 {% endblock %}
 
 {% block lib_deps %}
 lib/c
-lib/opengl
 lib/wayland
 lib/xkb/common
+{% if opengl %}
+lib/opengl
+{% endif %}
 {% if vulkan %}
 lib/vulkan/loader
 lib/vulkan/headers
@@ -26,6 +28,13 @@ lib/vulkan/headers
 
 {% block bld_libs %}
 lib/kernel
+{% endblock %}
+
+{# The fork privatizes cursor-shape interfaces at source level. The
+   fractional-scale manager still leaks unprefixed and collides with consumers
+   such as imway that generate their own protocol code. #}
+{% block c_rename_symbol %}
+wp_fractional_scale_manager_v1_interface
 {% endblock %}
 
 {% block bld_tool %}

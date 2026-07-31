@@ -32,6 +32,7 @@ find ${out}/ -type f -name '*.pc' | while read i; do
 {% endif %}
         -e 's|.*-export-dynamic.*||' \
         -e 's|.*-rdynamic.*||' \
+        -e 's| -pthread||g' \
         -i ${i}
 done
 {% endblock %}

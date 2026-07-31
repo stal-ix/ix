@@ -11,7 +11,7 @@ class Ops:
         self.cfg = cfg
 
     def execute_graph(self, graph):
-        ce.execute(graph, self.cfg.ensure_trash_dir())
+        ce.execute(graph, self.cfg.binary)
 
     def gc(self, kind):
         cr.Repo(self.cfg).gc_cycle(kind)
@@ -37,9 +37,6 @@ class Ops:
 
     def link(self, sb, files, out):
         return self.misc_cmd(sb, 'link', out, *files)
-
-    def fix(self, sb, node):
-        return node
 
     @cu.cached_method
     def boot_path(self):

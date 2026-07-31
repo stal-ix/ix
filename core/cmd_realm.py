@@ -45,7 +45,7 @@ def prepare(ctx, args, realize=True, assemble=True):
         # minus the realm node and its bld/realm toolchain.
         build_nodes = [d for n in realm_nodes for d in n.iter_all_runtime_depends()]
 
-    graph = cg.build_graph(build_nodes)
+    graph = cg.build_graph(build_nodes, mngr.config)
 
     if os.environ.get('IX_DUMP_GRAPH', ''):
         print(json.dumps(graph, indent=4, sort_keys=True))
@@ -112,7 +112,7 @@ def cli_run(ctx):
         cmd = ['runner_entry', f'{r.path}/env'] + cmdl
         env = os.environ.copy()
         env['OLDPATH'] = env.get('PATH', '')
-        env['PATH'] = f'/nowhere:{r.path}/bin'
+        env['PATH'] = f'/nowhere:{r.path}/bin:{env["OLDPATH"]}'
         exe = shutil.which(cmd[0], path=env['PATH'])
 
         return os.execvpe(exe, cmd, env)

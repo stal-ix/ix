@@ -1,4 +1,5 @@
 import os
+import sys
 import itertools
 import multiprocessing
 
@@ -37,6 +38,12 @@ def validate(nodes):
             if not n.get('predict', None):
                 raise Exception(f'invalid node {n}')
 
+        if n['isolate'] and not n['tmpfs']:
+            raise Exception(f'isolate=true without tmpfs=true is not supported: {n}')
+
+        if len(n['cmd']) > 1 and n['tmpfs']:
+            raise Exception(f'multi-cmd node must have tmpfs=false: {n}')
+
         yield n
 
 
@@ -56,7 +63,7 @@ def slots(t):
     return 1
 
 
-def build_graph(n):
+def build_graph(n, config):
     t = int(os.environ.get('IX_THREADS') or multiprocessing.cpu_count())
 
     res = {
@@ -69,6 +76,10 @@ def build_graph(n):
             'threads': t,
             'network': 16,
         },
+        'ix_root': config.ix_dir,
+        'trash_dir': config.trash_dir,
+        'argv': list(sys.argv),
+        'git_rev': config.git_rev,
     }
 
     if t == 1:

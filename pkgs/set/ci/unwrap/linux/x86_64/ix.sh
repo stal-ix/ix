@@ -98,6 +98,8 @@ bin/contour
 bin/nix
 bin/coreutils/9/6
 bin/inkscape
+bin/imway
+bin/shitty
 bin/gdb/16
 bin/ddc/util
 bin/ya/final
@@ -206,6 +208,7 @@ bin/btfs
 bin/tinc
 bin/yggdrasil/go
 bin/fire/jail
+bin/bubble/wrap
 bin/minio
 bin/dropbear/2024
 bin/nebula
@@ -410,6 +413,7 @@ bin/dbus/runit/scripts
 bin/dbus
 bin/dbus/session
 bin/patch/elf
+bin/glibc
 bin/dwl
 bin/cctools
 bin/syslog/ng
@@ -912,7 +916,7 @@ bin/go/pass
 bin/shadowsocks/go/2
 bin/shadowsocks/libev
 bin/task
-bin/assemble
+bin/assemble/ng
 bin/duf
 bin/lf
 bin/lazygit
@@ -1019,4 +1023,6 @@ bin/stone/soup
 bin/cata/dda
 bin/pipes
 bin/warp
+bin/sync/thing
+bin/thingd
 {% endblock %}

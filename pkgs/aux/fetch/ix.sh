@@ -15,6 +15,9 @@ cd ..
 mkdir src
 cd src
 extract 1 ../net/*
+{% if refine_unpack %}
+{{refine_unpack | b64d}}
+{% endif %}
 {% endblock %}
 
 {% block env %}

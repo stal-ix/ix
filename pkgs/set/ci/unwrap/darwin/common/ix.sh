@@ -19,7 +19,6 @@ bin/bison/3/6
 bin/bison/3/8
 bin/flex
 bin/u/config
-bin/assemble
 bin/byacc
 bin/make
 bin/ninja

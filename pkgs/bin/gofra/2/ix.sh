@@ -1,12 +1,12 @@
-{% extends '//die/c/make.sh' %}
+{% extends '//die/c/pybuild.sh' %}
 
 {% block pkg_name %}
 gofra
 {% endblock %}
 
 {% block fetch %}
-https://github.com/pg83/gofra/archive/2.tar.gz
-cb38df6dcbe28321239803aad4bf1a3e2787f64937c3e314dd59403702b697f3
+https://github.com/pg83/gofra/archive/bd5c2a44ce62d1cd36455c3eb55f8af2497383b6.tar.gz
+0e36e041443db1e0b9550b7f0a2c7de6933eefd3e3e90c81bd4c469b10ea5f6a
 {% endblock %}
 
 {% block bld_libs %}
@@ -14,10 +14,6 @@ lib/c
 lib/std
 lib/mnl
 lib/linux/headers
-{% endblock %}
-
-{% block make_target %}
-gofra
 {% endblock %}
 
 {% block install %}
