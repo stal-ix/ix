@@ -8,6 +8,7 @@ ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDGZ3aEKhxpG9JHG3uso/gUuUKe9NzHOXKAenZIDiDq
 etc/tmpfs
 set/stalix
 set/pg/vpn
+bin/thingd
 set/pg/secrets
 bin/kernel/7/0
 bin/kernel/7/1
