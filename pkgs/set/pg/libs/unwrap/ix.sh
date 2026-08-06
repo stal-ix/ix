@@ -4,11 +4,12 @@
 lib/c
 lib/ev
 lib/c++
+lib/shim/fake(lib_name=gcc_s)
 lib/jxl
 lib/drm
 lib/png
 lib/mnl
-lib/std
+#lib/std
 lib/curses
 lib/glfw
 lib/dbus
