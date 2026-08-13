@@ -6,11 +6,13 @@
 {% block run_deps %}
 bin/mc
 bin/jq
+bin/gh
 bin/git
 bin/mpv
 bin/ted
 bin/gdb
 bin/sed
+bin/foot
 bin/make
 bin/wget
 bin/curl
@@ -70,7 +72,6 @@ set/pg/user/scripts
 bin/claude/code/wrap
 bin/minio/client/patched
 bin/imway/session(stalix=1)
-bin/alacritty(opengl=mesa/radv,vulkan=mesa/radv)
 {% endblock %}
 
 {% block run_data %}
