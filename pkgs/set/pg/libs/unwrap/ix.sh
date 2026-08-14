@@ -2,6 +2,7 @@
 
 {% block lib_deps %}
 lib/c
+lib/c/dl
 lib/ev
 lib/c++
 lib/shim/fake(lib_name=gcc_s)
