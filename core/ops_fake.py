@@ -1,6 +1,7 @@
 import os
 import sys
 
+import core.ops as co
 import core.utils as cu
 
 
@@ -31,4 +32,4 @@ class Ops:
         sys.exit(0)
 
     def flags(self):
-        return {}
+        return co.flags_from_env()

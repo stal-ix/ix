@@ -28,6 +28,11 @@ export PC_T=$(
 )
 
 cat << EOF > ${tmp}/cross.ini
+{% if all_system or system_pkg_config %}
+[binaries]
+pkg-config = '$(which pkg-config)'
+
+{% endif %}
 [host_machine]
 system = '{{target.os}}'
 cpu_family = '{{target.gnu_arch}}'

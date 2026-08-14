@@ -1,6 +1,7 @@
 import os
 import sys
 
+import core.ops as co
 import core.repo as cr
 import core.utils as cu
 import core.execute as ce
@@ -43,4 +44,4 @@ class Ops:
         return os.environ['PATH']
 
     def flags(self):
-        return {}
+        return co.flags_from_env()

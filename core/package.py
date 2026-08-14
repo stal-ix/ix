@@ -5,6 +5,7 @@ import core.sign as cs
 import core.utils as cu
 import core.gen_cmds as cg
 import core.render_ctx as cr
+import core.error as ce
 
 
 def parse_pkg_name(v):
@@ -137,6 +138,9 @@ class Descriptor:
         self.selector = fix_selector(selector, self.config)
         self.pkg_name = self.calc_pkg_name()
         self.descr, args = cr.RenderContext(self).render()
+
+        if args.get('all_system') and self.norm_name.startswith('bld/boot/'):
+            raise ce.Error(f'bootstrap dependency reached in all_system mode: {self.norm_name}')
 
         if self.buildable():
             if args['boot']:

@@ -1,7 +1,9 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
-{% if native %}
+{% if all_system or system_bash %}
+bld/system
+{% elif native %}
 bin/bash/lite(std_box=bld/boot/box)
 {% else %}
 bin/bash/lite

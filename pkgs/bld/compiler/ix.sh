@@ -5,7 +5,9 @@ bin/clang/lib
 {% endblock %}
 
 {% block run_deps %}
-{% if clang_ver %}
+{% if all_system or system_compiler %}
+bld/compiler/system
+{% elif clang_ver %}
 bld/compiler/unwrap
 {% elif native %}
 bld/compiler/unwrap(clang_ver={{default_clang}},std_env=bld/boot/10/clang/env,execinfo_ver=fake)

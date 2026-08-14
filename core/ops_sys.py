@@ -7,6 +7,7 @@ import subprocess
 
 import core.utils as cu
 import core.error as ce
+import core.ops as cops
 import core.ops_loc as co
 
 
@@ -86,4 +87,4 @@ class Ops:
         return '/ix/realm/boot/bin:/bin:/usr/bin:/usr/local/bin'
 
     def flags(self):
-        return {}
+        return cops.flags_from_env()
