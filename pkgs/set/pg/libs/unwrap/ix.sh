@@ -5,21 +5,18 @@ lib/c
 lib/c/dl
 lib/ev
 lib/c++
-lib/shim/fake(lib_name=gcc_s)
 lib/jxl
 lib/drm
 lib/png
 lib/mnl
-#lib/std
-lib/curses
 lib/glfw
 lib/dbus
 lib/seat
 lib/udev
 lib/input
-lib/sdl/3
 lib/sndio
 lib/uring
+lib/curses
 lib/kernel
 lib/aws/lc
 lib/c/ares
@@ -29,11 +26,10 @@ lib/wayland
 lib/lunasvg
 lib/freetype
 lib/utf8/proc
-lib/glfw/deps
 lib/xkb/common
 lib/display/info
 lib/vulkan/loader
-lib/vulkan/drivers
 lib/vulkan/headers
 lib/wayland/protocols
+lib/shim/fake(lib_name=gcc_s)
 {% endblock %}
