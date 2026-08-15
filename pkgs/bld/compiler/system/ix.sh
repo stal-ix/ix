@@ -6,6 +6,7 @@ bin/clang/lib
 
 {% block env %}
 {{super()}}
+export CPPFLAGS="-isystem $(clang -print-resource-dir)/include ${CPPFLAGS}"
 {% if system_cppflags %}
 export CPPFLAGS="{{system_cppflags}} ${CPPFLAGS}"
 {% endif %}
