@@ -173,19 +173,11 @@ class RealmCtx:
             'links': [p.out_dir for p in self.iter_all_runtime_depends()],
         }
 
-        path = [x.out_dir + '/bin' for x in self.iter_all_build_depends()]
-
-        flags = self.mngr.config.ops.flags()
-
-        if flags.get('all_system'):
-            path.append(flags.get(
-                'system_path', '/usr/local/bin:/usr/bin:/bin'))
-
         return {
             'args': ['prepare_realm', self.out_dir],
             'stdin': json.dumps(descr),
             'env': {
-                'PATH': ':'.join(path),
+                'PATH': ':'.join((x.out_dir + '/bin' for x in self.iter_all_build_depends())),
             },
         }
 
