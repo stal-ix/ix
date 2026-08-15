@@ -1,7 +1,9 @@
 {% extends '//die/hub.sh' %}
 
 {% block run_deps %}
-{% if all_system or system_glib %}
+{% if all_system %}
+bin/glib/codegen(std_box=bld/system/box,intl_ver=stub,libc_lite=1)
+{% elif system_glib %}
 bld/system
 {% else %}
 bld/python
