@@ -1,8 +1,8 @@
 {% extends '//die/c/pybuild.sh' %}
 
 {% block fetch %}
-https://github.com/pg83/solo/archive/refs/tags/1.tar.gz
-4d703ee2f30309a4f39addd9813ad7c3ac26bf93463da3e9adeb1724456f7284
+https://github.com/pg83/solo/archive/refs/tags/2.tar.gz
+eb28c43dc2eadb14dcdfc3768b2831ff42311f9f0a1001b1891faaf1f98de55a
 {% endblock %}
 
 {% block std_box %}
@@ -23,7 +23,7 @@ dlfcn
 mkdir -p ${out}/lib
 mkdir -p ${out}/include
 cp dlfcn ${out}/lib/libdlstub.a
-cp dlfcn.h ${out}/include/
+cp lib/dlfcn.h ${out}/include/
 {% endblock %}
 
 {% block env %}
