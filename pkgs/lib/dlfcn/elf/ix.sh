@@ -1,8 +1,8 @@
 {% extends '//die/c/pybuild.sh' %}
 
 {% block fetch %}
-https://github.com/pg83/solo/archive/refs/tags/3.tar.gz
-82bd474e21fdb4cce9d0e8979cb801370f960da3f50b64e57a882cab554baf07
+https://github.com/pg83/solo/archive/refs/tags/4.tar.gz
+8d13135eb5704dc3def034e472e3a6f42837f7113758cca13a3fcd11ca8a20f6
 {% endblock %}
 
 {% block std_box %}
