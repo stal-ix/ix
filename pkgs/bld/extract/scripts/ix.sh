@@ -7,6 +7,8 @@ cat << 'EOF' > ${out}/bin/ix_system_extract
 {% include 'system_extract.py' %}
 EOF
 chmod +x ${out}/bin/ix_system_extract
+{% else %}
+: the extractor is a shell function, nothing to install
 {% endif %}
 {% endblock %}
 
