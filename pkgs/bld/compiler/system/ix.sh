@@ -5,7 +5,6 @@ bin/clang/lib
 {% endblock %}
 
 {% block env %}
-{{super()}}
 export CPPFLAGS="-isystem $(clang -print-resource-dir)/include ${CPPFLAGS}"
 {% if system_cppflags %}
 export CPPFLAGS="{{system_cppflags}} ${CPPFLAGS}"
@@ -19,4 +18,11 @@ export CXXFLAGS="{{system_cxxflags}} ${CXXFLAGS}"
 {% if system_ldflags %}
 export LDFLAGS="{{system_ldflags}} ${LDFLAGS}"
 {% endif %}
+{% endblock %}
+
+{% block script_body %}
+{{super()}}
+for tool in clang clang++ clang-cpp; do
+    ln -s "$(command -v ${tool})" "${out}/bin/${tool}"
+done
 {% endblock %}
